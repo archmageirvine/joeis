@@ -1,0 +1,33 @@
+package irvine.oeis.a011;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A011800.
+ * @author Sean A. Irvine
+ */
+public class A011800 implements Sequence {
+
+  private Z mA = Z.ONE;
+  private Z mB = Z.ONE;
+  private Z mC = Z.TWO;
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    if (++mN <= 1) {
+      return Z.ONE;
+    } else if (mN > 2) {
+      final Z t = mC.multiply(2 * mN - 1).multiply2()
+        .subtract(mB.multiply(mN - 1).multiply(mN - 1).multiply2())
+        .add(mA.multiply(mN - 1).multiply(mN - 2))
+        .divide2();
+      mA = mB;
+      mB = mC;
+      mC = t;
+    }
+    return mC;
+  }
+}
+

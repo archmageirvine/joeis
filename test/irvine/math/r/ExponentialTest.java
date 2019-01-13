@@ -1,0 +1,197 @@
+package irvine.math.r;
+
+import static irvine.TestUtils.assertEqualsLocal;
+import static irvine.math.r.Exponential.e;
+import static irvine.math.r.Exponential.ei;
+import static java.lang.Double.NEGATIVE_INFINITY;
+import static java.lang.Double.NaN;
+import static java.lang.Double.POSITIVE_INFINITY;
+import junit.framework.TestCase;
+
+/**
+ * Tests the corresponding class.
+ *
+ * @author Sean A. Irvine
+ */
+public class ExponentialTest extends TestCase {
+
+  public void testE() {
+    // negative n is undefined
+    for (int n = -1; n > -1000000; n *= 10) {
+      assertEqualsLocal(NaN, e(n, NaN), 0.0);
+      assertEqualsLocal(NaN, e(n, POSITIVE_INFINITY), 0.0);
+      assertEqualsLocal(NaN, e(n, NEGATIVE_INFINITY), 0.0);
+      assertEqualsLocal(NaN, e(n, 0.0), 0.0);
+      assertEqualsLocal(NaN, e(n, 1.0), 0.0);
+      assertEqualsLocal(NaN, e(n, -1.0), 0.0);
+      assertEqualsLocal(NaN, e(n, 0.5), 0.0);
+      assertEqualsLocal(NaN, e(n, -1.0E306), 0.0);
+    }
+    assertEqualsLocal(NaN, e(0, NEGATIVE_INFINITY), 0.0);
+    assertEqualsLocal(NEGATIVE_INFINITY, e(1, NEGATIVE_INFINITY), 0.0);
+    assertEqualsLocal(NaN, e(10000, NEGATIVE_INFINITY), 0.0);
+    assertEqualsLocal(NaN, e(1000000, NEGATIVE_INFINITY), 0.0);
+    assertEqualsLocal(NaN, e(10000000, NEGATIVE_INFINITY), 0.0);
+    assertEqualsLocal(-2.7182818284590455, e(0, -1.0), 1e-8);
+    assertEqualsLocal(NaN, e(0, NaN), 0.0);
+    assertEqualsLocal(NaN, e(1, NaN), 0.0);
+    assertEqualsLocal(NaN, e(100, NaN), 0.0);
+    // n = 0 case is equivalent to exp(-x)/x
+    assertEqualsLocal(POSITIVE_INFINITY, e(0, 0.0), 0.0);
+    for (double x = 1.0; x < 1.0E308; x *= Math.PI) {
+      final double a = Math.exp(-x) / x;
+      final double b = e(0, x);
+      if (a != b) {
+        assertEquals("x=" + x, 0.0, (a - b) / (a + b), 1.0E-13);
+      }
+    }
+    assertEqualsLocal(0.25, e(5, 0), 1E-12);
+    // large n
+    assertEqualsLocal(1.2129400011639235E-4, e(5001, 0.5), 1E-18);
+    assertEqualsLocal(8.187962551405057E-5, e(10000, 0.2), 1E-18);
+    assertEqualsLocal(3.0118818453396404E-5, e(10000, 1.2), 1E-18);
+    assertEqualsLocal(4.535910203836684E-9, e(10000, 10), 1E-22);
+  }
+
+  public void testn1() {
+    assertEquals(1.82292395841939066608091365824, e(1, 0.1), 1E-12);
+    assertEquals(1.222650544183893088334772577524, e(1, 0.2), 1E-12);
+    assertEquals(0.90567665167584671243032752210, e(1, 0.3), 1E-12);
+    assertEquals(0.454379503189402108155988238828, e(1, 0.6), 1E-12);
+    assertEquals(0.373768843233509144266618925388, e(1, 0.7), 1E-12);
+    assertEquals(0.310596578545543034654824554979, e(1, 0.8), 1E-12);
+    assertEquals(0.185990904536040155697221974228, e(1, 1.1), 1E-12);
+    assertEquals(0.158408436851462561424955970480, e(1, 1.2), 1E-12);
+    assertEquals(0.00129148336270598516349618461512, e(1, 4.9), 1E-12);
+    assertEquals(0.00114829559127532579733056082984, e(1, 5.0), 1E-12);
+    assertEquals(0.00090862161244865958470928409165, e(1, 5.2), 1E-12);
+    assertEquals(0.000065830893267080230616903126341, e(1, 7.5), 1E-12);
+    assertEquals(0.000052632613115921788667593526928, e(1, 7.7), 1E-12);
+    assertEquals(0.0000470716537720277674618651849065, e(1, 7.8), 1E-12);
+    assertEquals(0.0000421039971315420026686260048235, e(1, 7.9), 1E-12);
+    assertEquals(0.0000376656228439249017725565227361, e(1, 8.0), 1E-12);
+    assertEquals(0.00000140030030424744177544468717026, e(1, 11.0), 1E-12);
+    assertEquals(0.0000000449634936354378499119041127959, e(1, 14.2), 1E-12);
+    assertEquals(0.0000000363314287707545540406817025818, e(1, 14.4), 1E-12);
+    assertEquals(0.0000000237328411808284083094657324349, e(1, 14.8), 1E-12);
+    assertEquals(0.0000000213383819923321376673525077761, e(1, 14.9), 1E-12);
+    assertEquals(0.0000000191862789214786697680150278988, e(1, 15.0), 1E-12);
+  }
+
+  public void testn2() {
+    assertEquals(0.326643862324553017730401540122, e(2, 0.5), 1E-12);
+    assertEquals(0.148495506775922047918360004428, e(2, 1.0), 1E-12);
+    assertEquals(0.073100786538480851080416457255, e(2, 1.5), 1E-12);
+    assertEquals(0.0375342618204904527595198220730, e(2, 2.0), 1E-12);
+    assertEquals(0.0197977039482244564304586422141, e(2, 2.5), 1E-12);
+    assertEquals(0.00177869314202654154815796163357, e(2, 4.5), 1E-12);
+    assertEquals(0.00099646904270883810998323842537, e(2, 5.0), 1E-12);
+    assertEquals(0.00056167816420237245697189127178, e(2, 5.5), 1E-12);
+    assertEquals(0.000318257463690406467272802679629, e(2, 6.0), 1E-12);
+    assertEquals(0.000181145058521484164452986744027, e(2, 6.5), 1E-12);
+    assertEquals(0.000103509844282148692986055870832, e(2, 7.0), 1E-12);
+    assertEquals(0.0000196888401410355134742736409930, e(2, 8.5), 1E-12);
+    assertEquals(0.0000113836164846231004072996006117, e(2, 9.0), 1E-12);
+    assertEquals(0.0000065964703100447034723523533233, e(2, 9.5), 1E-12);
+    assertEquals(0.00000383024046563160876156291634941, e(2, 10.0), 1E-12);
+    assertEquals(0.00000075779051235802439016079431171, e(2, 11.5), 1E-12);
+    assertEquals(0.000000151903322539191593915480556617, e(2, 13.0), 1E-12);
+    assertEquals(0.000000089118194839571824258984964996, e(2, 13.5), 1E-12);
+    assertEquals(0.000000052340363543242387965396156947, e(2, 14.0), 1E-12);
+    assertEquals(0.0000000307714724448551758327077321028, e(2, 14.5), 1E-12);
+  }
+
+  public void testn3() {
+    assertEquals(0.221604364275178457369299344688, e(3, 0.5), 1E-12);
+    assertEquals(0.109691967197760136838581886689, e(3, 1.0), 1E-12);
+    assertEquals(0.056739490170354276156327885545, e(3, 1.5), 1E-12);
+    assertEquals(0.0301333797978158931874799203130, e(3, 2.0), 1E-12);
+    assertEquals(0.0162953693766688270466910308332, e(3, 2.5), 1E-12);
+    assertEquals(0.0089306465560227253769109395314, e(3, 3.0), 1E-12);
+    assertEquals(0.00494537734958578070581379686211, e(3, 3.5), 1E-12);
+    assertEquals(0.00276136094568998139042184874709, e(3, 4.0), 1E-12);
+    assertEquals(0.00155243869956143476471615267885, e(3, 4.5), 1E-12);
+    assertEquals(0.00087780089277063827335992762352, e(3, 5.0), 1E-12);
+    assertEquals(0.000498770767675509240059649998419, e(3, 5.5), 1E-12);
+    assertEquals(0.000284603697261959809704175449176, e(3, 6.0), 1E-12);
+    assertEquals(0.000162998156293962689219244600022, e(3, 6.5), 1E-12);
+    assertEquals(0.000093656527789737678550372398214, e(3, 7.0), 1E-12);
+    assertEquals(0.000053969670156172341018951695625, e(3, 7.5), 1E-12);
+    assertEquals(0.0000311807333468054208469939221053, e(3, 8.0), 1E-12);
+    assertEquals(0.0000180566139059211549188037153846, e(3, 8.5), 1E-12);
+    assertEquals(0.0000104786278625358229159701262142, e(3, 9.0), 1E-12);
+    assertEquals(0.0000060926809711379542419209709310, e(3, 9.5), 1E-12);
+    assertEquals(0.00000354876255308438195998116937224, e(3, 10.0), 1E-12);
+    assertEquals(0.00000207036747770422950183829893441, e(3, 10.5), 1E-12);
+    assertEquals(0.00000120966445574193085133954917476, e(3, 11.0), 1E-12);
+    assertEquals(0.00000070775135325671512104610888606, e(3, 11.5), 1E-12);
+    assertEquals(0.000000414621194336802641928516278442, e(3, 12.0), 1E-12);
+    assertEquals(0.000000243186010588578801530263030762, e(3, 12.5), 1E-12);
+    assertEquals(0.000000142793106985781802442014477824, e(3, 13.0), 1E-12);
+    assertEquals(0.000000083931728024932368503150444721, e(3, 13.5), 1E-12);
+    assertEquals(0.0000000493818147490872262742189400750, e(3, 14.0), 1E-12);
+    assertEquals(0.0000000290806560587440131589797248478, e(3, 14.5), 1E-12);
+  }
+
+  public void testbign() {
+    // n = 10
+    assertEquals(0.063458300427127218305273962042, e(10, 0.5), 1E-12);
+    assertEquals(0.0363939940314164016341645254552, e(10, 1.0), 1E-12);
+    assertEquals(0.0209461403956525329865318557384, e(10, 1.5), 1E-12);
+    assertEquals(0.0120920851364002958665705124185, e(10, 2.0), 1E-12);
+    assertEquals(0.0069993277336423060072448894509, e(10, 2.5), 1E-12);
+    assertEquals(0.00406103295098416733544348285909, e(10, 3.0), 1E-12);
+    assertEquals(0.00236119854545371740478899977260, e(10, 3.5), 1E-12);
+    assertEquals(0.00137547611231746423559861999339, e(10, 4.0), 1E-12);
+    assertEquals(0.00080264017258476069328727882044, e(10, 4.5), 1E-12);
+    assertEquals(0.000469104807657811890255863151337, e(10, 5.0), 1E-12);
+    assertEquals(0.000274563529466924498617810109639, e(10, 5.5), 1E-12);
+    assertEquals(0.000160912560639674165844332247598, e(10, 6.0), 1E-12);
+    assertEquals(0.000094420741321039008738094917869, e(10, 6.5), 1E-12);
+    assertEquals(0.000055467238099530989874616982780, e(10, 7.0), 1E-12);
+    assertEquals(0.0000326184227094080413354976806726, e(10, 7.5), 1E-12);
+    assertEquals(0.0000000352300739938671755481881602844, e(10, 14.0), 1E-12);
+    assertEquals(0.0000000209179292394526230707093616051, e(10, 14.5), 1E-12);
+    // n = 100
+    assertEquals(0.0060954745873189090949765239857, e(100, 0.5), 1E-12);
+    assertEquals(0.00367842293039681336029007735984, e(100, 1.0), 1E-12);
+    assertEquals(0.00221986771185892884073691481247, e(100, 1.5), 1E-12);
+    assertEquals(0.00133968812167217577124843082130, e(100, 2.0), 1E-12);
+    assertEquals(0.00080852114484131775218996063768, e(100, 2.5), 1E-12);
+    assertEquals(0.000487966499125982883335663236775, e(100, 3.0), 1E-12);
+    assertEquals(0.000294509608541055097990837992996, e(100, 3.5), 1E-12);
+    assertEquals(0.000177754112055934424874663761617, e(100, 4.0), 1E-12);
+    assertEquals(0.000107287830015476526897123188143, e(100, 4.5), 1E-12);
+    assertEquals(0.000064757753882665091880246184585, e(100, 5.0), 1E-12);
+    assertEquals(0.0000390880042704188233070007627217, e(100, 5.5), 1E-12);
+    assertEquals(0.000000091588174479321014368023004571, e(100, 11.5), 1E-12);
+    assertEquals(0.000000055299024748745727972783885269, e(100, 12.0), 1E-12);
+    assertEquals(0.0000000333890931737681740578518005926, e(100, 12.5), 1E-12);
+    assertEquals(0.0000000201604756353572884002200239187, e(100, 13.0), 1E-12);
+    assertEquals(0.0000000121732303083294233142017440977, e(100, 13.5), 1E-12);
+    assertEquals(0.0000000073505483035110050838145843008, e(100, 14.0), 1E-12);
+    assertEquals(0.00000000443856296087129084041776358333, e(100, 14.5), 1E-12);
+    // n = 1000
+    assertEquals(0.00060683377272660641154865197476, e(1000, 0.5), 1E-12);
+    assertEquals(0.000367879072924860782071268259555, e(1000, 1.0), 1E-12);
+    assertEquals(0.000223018316296465828725177307800, e(1000, 1.5), 1E-12);
+    assertEquals(0.000135199813025044267872373670837, e(1000, 2.0), 1E-12);
+    assertEquals(0.000081961851046127101024443955357, e(1000, 2.5), 1E-12);
+    assertEquals(0.0000496875443663045307191264791976, e(1000, 3.0), 1E-12);
+    assertEquals(0.0000301219732209986336000058526623, e(1000, 3.5), 1E-12);
+    assertEquals(0.0000182607836410525598218944625949, e(1000, 4.0), 1E-12);
+    assertEquals(0.0000110702011430112451242444216224, e(1000, 4.5), 1E-12);
+    assertEquals(0.0000067110692673674796280746918600, e(1000, 5.0), 1E-12);
+  }
+
+  public void testEi() {
+    for (double x = -15.0; x < 1.0; x += 0.1) {
+      assertEqualsLocal(-e(1, -x), ei(x), 1E-12);
+    }
+    assertEqualsLocal(-e(1, -NaN), ei(NaN), 1E-12);
+    assertEqualsLocal(-e(1, -POSITIVE_INFINITY), ei(POSITIVE_INFINITY), 1E-12);
+    assertEqualsLocal(-e(1, -NEGATIVE_INFINITY), ei(NEGATIVE_INFINITY), 1E-12);
+  }
+
+
+}

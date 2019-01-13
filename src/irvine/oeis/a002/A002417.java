@@ -1,0 +1,20 @@
+package irvine.oeis.a002;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.math.z.Binomial;
+
+/**
+ * A002417.
+ * @author Sean A. Irvine
+ */
+public class A002417 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    ++mN;
+    return Binomial.binomial(mN + 2, 3).multiply(mN);
+  }
+}

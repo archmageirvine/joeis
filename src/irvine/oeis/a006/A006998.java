@@ -1,0 +1,20 @@
+package irvine.oeis.a006;
+
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+
+/**
+ * A006998.
+ * @author Sean A. Irvine
+ */
+public class A006998 extends MemorySequence {
+
+  @Override
+  protected Z computeNext() {
+    final int n = size();
+    if (n <= 2) {
+      return Z.valueOf(n);
+    }
+    return get(2 * n / 3).add(get((2 * n + 1) / 3));
+  }
+}

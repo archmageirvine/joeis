@@ -1,0 +1,45 @@
+package irvine.oeis.a083;
+
+import irvine.math.q.Q;
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.math.q.BernoulliSequence;
+import irvine.oeis.Sequence;
+
+import java.util.ArrayList;
+
+/**
+ * A083006.
+ * @author Sean A. Irvine
+ */
+public class A083006 implements Sequence {
+
+  private int mN = -1;
+  private final BernoulliSequence mBS = new BernoulliSequence(0);
+  private final ArrayList<Q> mBern = new ArrayList<>();
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+
+  @Override
+  public Z next() {
+    while (true) {
+      Q sum = Q.ZERO;
+      if (++mN > 0) {
+        mBern.add(mBS.next());
+        for (int k = 0; k < mN; ++k) {
+          final Q b = mBern.get(k);
+          if (!Q.ZERO.equals(b)) {
+            // Avoid computing binomial if multiplying by 0
+            sum = sum.add(b.multiply(Binomial.binomial(mN, k).square()));
+          }
+        }
+        if (mVerbose && mN % 100 == 0) {
+          System.err.println("[" + mN + "]");
+        }
+      }
+      if (sum.isInteger()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}
+

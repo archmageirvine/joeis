@@ -1,0 +1,30 @@
+package irvine.oeis.a001;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+import java.util.TreeSet;
+
+/**
+ * A001983.
+ * @author Sean A. Irvine
+ */
+public class A001983 implements Sequence {
+
+  private Z mX = Z.ZERO;
+  private final TreeSet<Z> mSeq = new TreeSet<>();
+
+  @Override
+  public Z next() {
+    while (mSeq.isEmpty() || mX.add(1).square().compareTo(mSeq.first()) <= 0) {
+      final Z yl = mX.add(1);
+      final Z ys = yl.square();
+      // deal with new max for y and x
+      for (Z x = Z.ZERO; x.compareTo(mX) <= 0; x = x.add(1)) {
+        mSeq.add(ys.add(x.square()));
+      }
+      mX = yl;
+    }
+    return mSeq.pollFirst();
+  }
+}

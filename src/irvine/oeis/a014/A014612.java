@@ -1,0 +1,23 @@
+package irvine.oeis.a014;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A014612.
+ * @author Sean A. Irvine
+ */
+public class A014612 implements Sequence {
+
+  private long mN = 7;
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (Cheetah.factor(++mN).bigOmega() == 3) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

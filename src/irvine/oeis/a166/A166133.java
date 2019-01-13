@@ -1,0 +1,66 @@
+package irvine.oeis.a166;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.array.LongDynamicBooleanArray;
+
+import java.util.Arrays;
+import java.util.HashSet;
+
+/**
+ * A166133.
+ * @author Sean A. Irvine
+ */
+public class A166133 implements Sequence {
+
+  private final LongDynamicBooleanArray mUsed = new LongDynamicBooleanArray();
+  private final HashSet<Z> mLargeUsed = new HashSet<>();
+  private Z mA = null;
+
+  private void use(final Z n) {
+    final long v = n.longValueExact();
+    if (v >= 1L << 40) {
+      mLargeUsed.add(n);
+      return;
+    }
+    mUsed.set(v);
+  }
+
+  private boolean isUsed(final Z n) {
+    final long v = n.longValueExact();
+    if (v >= 1L << 40) {
+      return mLargeUsed.contains(n);
+    }
+    return mUsed.isSet(v);
+  }
+
+  @Override
+  public Z next() {
+    if (mA == null) {
+      mA = Z.ONE;
+    } else if (Z.ONE.equals(mA)) {
+      mA = Z.TWO;
+    } else if (Z.TWO.equals(mA)) {
+      mA = Z.FOUR;
+    } else {
+      // Use a naive search for the divisor
+      final Z n = mA.square().subtract(1);
+      final Z[] divisors = Cheetah.factor(n).divisors();
+      Arrays.sort(divisors);
+      boolean found = false;
+      for (final Z dd : divisors) {
+        if (!isUsed(dd)) {
+          mA = dd;
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        throw new UnsupportedOperationException();
+      }
+    }
+    use(mA);
+    return mA;
+  }
+}

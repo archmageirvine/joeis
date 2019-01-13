@@ -1,0 +1,27 @@
+package irvine.oeis.a163;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A163808.
+ * @author Sean A. Irvine
+ */
+public class A163808 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    String b = Long.toBinaryString(++mN);
+    int p = 0;
+    while ((p = b.indexOf("11", p) + 1) != 0) {
+      b = b.substring(0, p) + "0" + b.substring(p);
+    }
+    if (b.endsWith("1")) {
+      b = b + "0";
+    }
+    return new Z(b, 2);
+  }
+}
+

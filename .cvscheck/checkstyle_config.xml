@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Puppy Crawl//DTD Check Configuration 1.2//EN" "http://www.puppycrawl.com/dtds/configuration_1_2.dtd">
+<module name="Checker">
+    <property name="severity" value="warning"/>
+    <module name="SuppressionFilter">
+        <property name="file" value="${checkstyle.suppressions.file}"/>
+    </module>
+    <module name="TreeWalker">
+        <module name="FileContentsHolder"/>
+        <module name="JavadocType">
+            <property name="scope" value="public"/>
+            <property name="authorFormat" value="\S"/>
+        </module>
+        <module name="ConstantName">
+            <property name="format" value="^[A-Z](_?[A-Z0-9]+)*$"/>
+        </module>
+        <module name="LocalFinalVariableName"/>
+        <module name="LocalVariableName"/>
+        <module name="MemberName">
+            <property name="format" value="^m[A-Z](_?[a-zA-Z0-9]+)*$"/>
+        </module>
+        <module name="MethodName">
+            <property name="format" value="^(native_)?[a-z][a-zA-Z0-9]*$"/>
+        </module>
+        <module name="PackageName"/>
+        <module name="ParameterName"/>
+        <module name="StaticVariableName">
+            <property name="format" value="^s[A-Z](_?[a-zA-Z0-9]+)*$"/>
+        </module>
+        <module name="TypeName">
+            <property name="format" value="^([A-Z][a-zA-Z0-9]*|Apostol[0-9_]*|CP[0-9_]*)$"/>
+        </module>
+        <module name="AvoidStarImport"/>
+        <module name="IllegalImport"/>
+        <module name="RedundantImport"/>
+        <module name="DefaultComesLast"/>
+        <module name="FinalClass"/>
+        <module name="CovariantEquals"/>
+        <module name="UnusedImports"/>
+        <module name="IllegalThrows">
+            <property name="illegalClassNames" value="java.lang.Throwable,java.lang.Error"/>
+        </module>
+        <module name="IllegalTokenText">
+            <property name="tokens" value="NUM_INT,NUM_LONG"/>
+            <property name="format" value="^0[^lxb]"/>
+            <property name="ignoreCase" value="true"/>
+        </module>
+        <module name="MethodLength"/>
+        <module name="ParameterNumber">
+            <property name="max" value="8"/>
+            <property name="tokens" value="METHOD_DEF"/>
+        </module>
+        <module name="MethodParamPad"/>
+        <module name="NoWhitespaceAfter"/>
+        <module name="NoWhitespaceBefore">
+            <property name="tokens" value="POST_DEC,POST_INC"/>
+        </module>
+        <module name="OperatorWrap"/>
+        <module name="ParenPad"/>
+        <module name="TypecastParenPad"/>
+        <module name="WhitespaceAfter"/>
+        <module name="WhitespaceAround">
+            <property name="tokens" value="ASSIGN, BAND,BAND_ASSIGN,BOR,BOR_ASSIGN,BSR,BSR_ASSIGN,BXOR,BXOR_ASSIGN,COLON,DIV,DIV_ASSIGN,EQUAL,GE,GT,LAND,LCURLY,LE,LITERAL_ASSERT,LITERAL_CATCH,LITERAL_DO,LITERAL_ELSE,LITERAL_FINALLY,LITERAL_FOR,LITERAL_IF,LITERAL_RETURN,LITERAL_SYNCHRONIZED,LITERAL_TRY,LITERAL_WHILE,LOR,LT,MINUS,MINUS_ASSIGN,MOD,MOD_ASSIGN,NOT_EQUAL,PLUS,PLUS_ASSIGN,SL,SLIST,SL_ASSIGN,SR,SR_ASSIGN,STAR,STAR_ASSIGN,QUESTION"/>
+        </module>
+        <module name="ModifierOrder"/>
+        <module name="RedundantModifier">
+          <property name="tokens" value="ANNOTATION_FIELD_DEF, INTERFACE_DEF, CTOR_DEF, CLASS_DEF, ENUM_DEF"/>
+        </module>
+        <module name="AvoidNestedBlocks"/>
+        <module name="LeftCurly"/>
+        <module name="NeedBraces"/>
+        <module name="RightCurly"/>
+        <module name="EqualsHashCode"/>
+        <module name="HiddenField"/>
+        <module name="IllegalInstantiation"/>
+        <module name="MissingSwitchDefault"/>
+        <module name="SimplifyBooleanExpression"/>
+        <module name="SimplifyBooleanReturn"/>
+        <module name="SuperClone"/>
+        <module name="UnnecessaryParentheses"/>
+        <module name="HideUtilityClassConstructor"/>
+        <module name="InterfaceIsType"/>
+        <module name="VisibilityModifier">
+            <property name="packageAllowed" value="true"/>
+            <property name="protectedAllowed" value="true"/>
+        </module>
+        <module name="ArrayTypeStyle"/>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^[^&quot;]+\s+\[\]"/>
+            <property name="message" value="Array brackets must not have preceeding spaces"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="\snew\s\S+\s+\["/>
+            <property name="message" value="Array brackets must not have preceeding spaces"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^[^&quot;/\*]+\][a-zA-Z_]"/>
+            <property name="message" value="Array brackets must have following space"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^\s+/\*\*\s+.*[^/]$"/>
+            <property name="message" value="Start multiline javadoc comments on the next line, please"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="^\s+\*\s.*\*/"/>
+            <property name="message" value="End multiline javadoc comments on the next line, please"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="&lt;\s+\?"/>
+            <property name="message" value="Remove space before wildcard type"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="\?\s+&gt;"/>
+            <property name="message" value="Remove space after wildcard type"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="[^\\]&quot;&quot; \+"/>
+            <property name="message" value="Use String.valueOf rather than &quot;&quot; +"/>
+        </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="[A-Za-z]+\[\](\[\])*\s+[A-Za-z0-9_]+\s+=\s+new\s+[A-Za-z]+\[\](\[\])*\s+\{"/>
+            <property name="message" value="Unnecessary use of new type in constant array declaration"/>
+        </module>
+        <module name="TodoComment"/>
+        <module name="UpperEll"/>
+        <module name="JavadocType">
+            <property name="scope" value="public"/>
+            <property name="authorFormat" value="\S"/>
+        </module>
+        <module name="JavadocMethod">
+            <property name="scope" value="public"/>
+            <property name="allowUndeclaredRTE" value="true"/>
+            <property name="allowMissingPropertyJavadoc" value="true"/>
+        </module>
+        <module name="JavadocVariable">
+            <property name="scope" value="public"/>
+        </module>
+        <module name="JavadocStyle">
+            <property name="scope" value="public"/>
+            <property name="checkFirstSentence" value="false"/>
+        </module>
+        <module name="FinalLocalVariable">
+            <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
+        </module>
+    </module>
+    <module name="FileLength">
+      <property name="max" value="750"/>
+    </module>
+    <module name="FileTabCharacter"/>
+    <module name="NewlineAtEndOfFile"/>
+    <module name="Translation"/>
+    <module name="SuppressionCommentFilter"/>
+</module>

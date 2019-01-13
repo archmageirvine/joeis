@@ -1,0 +1,22 @@
+package irvine.oeis.a005;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A005477.
+ * @author Sean A. Irvine
+ */
+public class A005477 implements Sequence {
+
+  private int mN = 0;
+  private Z mP = Z.ONE;
+
+  @Override
+  public Z next() {
+    if (++mN > 1) {
+      mP = mP.multiply(Z.ONE.shiftLeft(mN - 1).add(1));
+    }
+    return mP.multiply(Z.ONE.shiftLeft(mN).subtract(1)).shiftLeft(mN - 1);
+  }
+}

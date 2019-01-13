@@ -1,0 +1,38 @@
+package irvine.oeis.a002;
+
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
+import irvine.math.IntegerUtils;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A002100.
+ * @author Sean A. Irvine
+ */
+public class A002100 implements Sequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    ++mN;
+    Polynomial<Z> den = RING.one();
+    for (int k = 6; k <= mN; ++k) {
+      final int s = IntegerUtils.sqrt(k);
+      if (s * s != k) {
+        final int semi = Cheetah.factor(k).isSemiprime();
+        if (semi == FactorSequence.UNKNOWN) {
+          throw new UnsupportedOperationException();
+        } else if (semi == FactorSequence.YES) {
+          den = RING.multiply(den, RING.oneMinusXToTheN(k), mN);
+        }
+      }
+    }
+    return RING.coeff(RING.one(), den, mN);
+  }
+}

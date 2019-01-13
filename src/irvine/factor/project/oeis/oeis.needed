@@ -1,0 +1,94 @@
+# http://oeis.org/wiki/OEIS_sequences_needing_factors
+
+# The following table lists some OEIS entries for which computing further
+# terms is blocked by finding at least one factor of an integer.  In some,
+# cases a complete factorization is required, in others only the smallest
+# factor, or any factor.
+#
+# The list is unlikely to be exhaustive nor does inclusion or exclusion
+# from the list indicate any kind or importance or mathematical utility.
+# As near as I can tell many of these sequences have no utility beyond
+# their OEIS entry.
+#
+# Rows marked with "*" indicate more terms are needed for the initial
+# sequence lines in the corresponding OEIS entry.  That is, the OEIS
+# entry has (or should have) the "more" keyword.  As above, it is not
+# an indication of the importance of the sequence.
+#
+# In some cases it is possible or likely that considerably more ECM
+# effort has been expended than is indicated below.
+#
+# Please check with corresponding OEIS entry and with factordb.com to make
+# sure number still needed before embarking on a signficiant effort.
+
+id      size          description                       known ecm effort
+--------------------------------------------------------------------------------
+A000945 C335          EuclidMullin52                    7557@43e6
+A000946 C332          A000946(15)                       1000@85e7
+A005265 C367                                            4590@11e6
+A005266 C211                                            7771@43e6
+A016047 C303          Cofactor of Mersenne 1237         112000@26e7 [likely more]
+A037274 C210          HP49(117)                         132@85e7 [likely more]
+A048986 C157          HP[2]2295                         
+A046461 C1252       * Sm(1051)                          1000@1e6
+A051308 C347          EuclidMullin[5]58                 7771@43e6
+A051309 C315          EuclidMullin[11]56                7771@43e6
+A051334 C328          EuclidMullin[8191]60              4590@11e6
+A051335 C564          EuclidMullin[127]66               4590@11e6
+A056756 C335        * EuclidMullin52                    7557@43e6
+A057204 C163        *                                   t40
+A057207 C572        *                                   t45
+A063684 C187        * 114!+1                            17900@11e7,20084@85e7
+A072288 Cbig        * 10^(10^100)+2, need factor > 16
+A076670 Cbig        * (10^9)^(10^9)+1                   
+A078778 C187        * 114!+1                            17900@11e7,20084@85e7
+A078781 C265        * 151!-1                            17900@11e7
+A078814 Cbig        * 10^(10^100)-7, need factor > 16
+A080802 C265          151!-1                            17900@11e7
+A080892 C241        * 3^505-2                           4590@11e6
+A081715 C246        * 3^514+2                           4590@11e6
+A082869 C286        * 3^599-2^599                       4590@11e6
+A085745 C373        * 2^1239+1239                       7771@43e6
+A085747 C158          100!+179                          4590@11e6
+A087021 C242,C271   * 10^646-1
+A091335 C416        * Sylvester(11)                     4590@11e6
+A093782 C429        * EuclidMullin[8581]31              4590@11e6
+A094152 C398          EuclidMullin[32687]51             1000@1e6
+A095194 C163          10*102!+1                         4600@11e6
+A096225 C106520655  * 15750503!+1                       factor exceeds 20149043
+A098594 C2356       * 929!+1                            1000@1e6 [@home]
+A099954 C377        * F(1801) [F^R(1801) is semiprime]  15000@11e7
+A100013 C154          105!+7                            4590@11e6
+A101757 C288        * Tribonacci(1091)                  4590@11e6
+A102050 C16385      * 10^(2^14)+1                       200@1e6
+A102926 C472          a(112)=spf(a(1)*...*a(111) +/- 1)   ?   cf. http://mersenneforum.org/showpost.php?p=334282&postcount=59
+A109757 C414        * tens_complement_factorial(191)+1  4590@11e6
+A109758 C183        * tens_complement_factorial(112)-1  4590@11e6
+A113773 C285        *                                   4590@11e6
+A113913 C318        * 3^(3^7)+1                         4590@11e6
+A115101 C387        * L(2602)                           7771@43e6
+A115973 C214        * 137^137+1                         4590@11e6
+A122119 C716        * 2^(2^10)+5^(2^10)                 100@10000,440@1e6,[1431459829606245207173905329679749121 swellman]
+A125037 C2117                                           1000@1e6
+A125038 C1164       *                                   1000@1e6
+A125039 C160        *                                   4590@11e6
+A125040 C593        *                                   4590@11e6
+A125041 C160        *                                   4590@11e6
+A125042 C193        *                                   4590@11e6
+A125043 C1766       *                                   1000@1e6
+A125044 C2995                                           1000@1e6 [@home][to confirm smallest]
+A125045 C347        *                                   4590@11e6
+A130139 C364        *                                   4590@11e6
+A130140 C36562      *                                   100@10000
+A130141 C235        *                                   4590@11e6
+A153357 C160          Wol(371)                          4600@11e6
+A165767 C202        * 2^669-669                         7771@43e6
+A177892 C241        *                                   4590@11e6
+A181186 C162          (2^101-1)*101!+1                  7590@11e6
+A181764 C187        * 114!+1                            17900@11e7,20084@85e7
+A185121 C16385      * 10^(2^14)+1                       200@1e6
+A195264 C156        * Alonso20(102)                     4600@11e6
+A199295 C15151336   * 8^(8^8)+1
+A200918 C479894     * (3^1006003-3)/1006003^2           2@1000,1@2000,1@5000,1@10000
+A217759 
+A218467

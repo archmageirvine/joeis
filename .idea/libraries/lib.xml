@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/scribe-1.0.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/js-1.6R5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cmu_us_kal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/freetts.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/commons-codec-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xercesImpl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsapi.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cmutimelex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/xercesAPI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jtidy-r938.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cmu_time_awb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cmudict04.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/httpunit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/apfloat.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/en_us.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/handlechecker.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/cmulex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jumble-annotations.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/chesspresso-lib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/antlr-4.5-complete.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/transform-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/musicg-1.4.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mp3plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

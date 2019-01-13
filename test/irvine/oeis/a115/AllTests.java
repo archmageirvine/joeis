@@ -1,0 +1,66 @@
+package irvine.oeis.a115;
+
+import junit.framework.Test;
+import junit.framework.TestSuite;
+
+/**
+ * Test class for all tests in this directory.
+ *
+ * @author Sean A. Irvine
+ */
+public class AllTests extends TestSuite {
+
+  public static Test suite() {
+    final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A115006Test.class);
+    suite.addTestSuite(A115032Test.class);
+    suite.addTestSuite(A115052Test.class);
+    suite.addTestSuite(A115056Test.class);
+    suite.addTestSuite(A115067Test.class);
+    suite.addTestSuite(A115098Test.class);
+    suite.addTestSuite(A115099Test.class);
+    suite.addTestSuite(A115101Test.class);
+    suite.addTestSuite(A115102Test.class);
+    suite.addTestSuite(A115129Test.class);
+    suite.addTestSuite(A115133Test.class);
+    suite.addTestSuite(A115135Test.class);
+    suite.addTestSuite(A115217Test.class);
+    suite.addTestSuite(A115264Test.class);
+    suite.addTestSuite(A115266Test.class);
+    suite.addTestSuite(A115269Test.class);
+    suite.addTestSuite(A115271Test.class);
+    suite.addTestSuite(A115274Test.class);
+    suite.addTestSuite(A115283Test.class);
+    suite.addTestSuite(A115339Test.class);
+    suite.addTestSuite(A115357Test.class);
+    suite.addTestSuite(A115360Test.class);
+    suite.addTestSuite(A115390Test.class);
+    suite.addTestSuite(A115391Test.class);
+    suite.addTestSuite(A115412Test.class);
+    suite.addTestSuite(A115413Test.class);
+    suite.addTestSuite(A115419Test.class);
+    suite.addTestSuite(A115451Test.class);
+    suite.addTestSuite(A115489Test.class);
+    suite.addTestSuite(A115490Test.class);
+    suite.addTestSuite(A115491Test.class);
+    suite.addTestSuite(A115492Test.class);
+    suite.addTestSuite(A115504Test.class);
+    suite.addTestSuite(A115523Test.class);
+    suite.addTestSuite(A115525Test.class);
+    suite.addTestSuite(A115565Test.class);
+    suite.addTestSuite(A115598Test.class);
+    suite.addTestSuite(A115599Test.class);
+    suite.addTestSuite(A115605Test.class);
+    suite.addTestSuite(A115635Test.class);
+    suite.addTestSuite(A115714Test.class);
+    suite.addTestSuite(A115730Test.class);
+    suite.addTestSuite(A115851Test.class);
+    suite.addTestSuite(A115953Test.class);
+    return suite;
+  }
+
+  public static void main(final String[] args) {
+    junit.textui.TestRunner.run(suite());
+  }
+}
+

@@ -1,0 +1,16 @@
+package irvine.oeis.a000;
+
+import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.a003.A003190;
+
+/**
+ * A000665.
+ * @author Sean A. Irvine
+ */
+public class A000665 extends EulerTransformSequence {
+
+  /** Construct the sequence. */
+  public A000665() {
+    super(new A003190(), 0);
+  }
+}

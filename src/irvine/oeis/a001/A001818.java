@@ -1,0 +1,23 @@
+package irvine.oeis.a001;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A001818.
+ * @author Sean A. Irvine
+ */
+public class A001818 implements Sequence {
+
+  private long mN = -3;
+  private Z mA = Z.ONE;
+
+  @Override
+  public Z next() {
+    mN += 2;
+    if (mN > 0) {
+      mA = mA.multiply(Z.valueOf(mN).square());
+    }
+    return mA;
+  }
+}

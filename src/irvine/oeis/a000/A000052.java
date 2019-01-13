@@ -1,0 +1,37 @@
+package irvine.oeis.a000;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.string.English;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+/**
+ * A000052.
+ * @author Sean A. Irvine
+ */
+public class A000052 implements Sequence {
+
+  private int mLow = 0;
+  private int mHigh = 10;
+  private final TreeMap<String, Integer> mMap = new TreeMap<>();
+
+  @Override
+  public Z next() {
+    if (mMap.isEmpty()) {
+      if (mHigh < 0) {
+        throw new UnsupportedOperationException();
+      }
+      for (int k = mLow; k < mHigh; ++k) {
+        mMap.put(English.toEnglish(k), k);
+      }
+      mLow = mHigh;
+      mHigh *= 10;
+    }
+    final Map.Entry<String, Integer> pair = mMap.firstEntry();
+    mMap.remove(pair.getKey());
+    return Z.valueOf(pair.getValue());
+  }
+}
+

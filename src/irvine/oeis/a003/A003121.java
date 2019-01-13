@@ -1,0 +1,25 @@
+package irvine.oeis.a003;
+
+import irvine.math.factorial.MemoryFactorial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A003121.
+ * @author Sean A. Irvine
+ */
+public class A003121 implements Sequence {
+
+  private final MemoryFactorial mF = new MemoryFactorial();
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    Z p = mF.factorial((mN * mN + mN) / 2);
+    for (int k = 1; k <= mN; ++k) {
+      p = p.multiply(mF.factorial(k - 1)).divide(mF.factorial(2 * k - 1));
+    }
+    return p;
+  }
+}

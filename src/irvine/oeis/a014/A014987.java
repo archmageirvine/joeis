@@ -1,0 +1,19 @@
+package irvine.oeis.a014;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A014987.
+ * @author Sean A. Irvine
+ */
+public class A014987 implements Sequence {
+
+  private Z mT = Z.ONE;
+
+  @Override
+  public Z next() {
+    mT = mT.multiply(-6);
+    return Z.ONE.subtract(mT).divide(7);
+  }
+}

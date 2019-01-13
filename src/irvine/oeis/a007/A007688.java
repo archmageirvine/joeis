@@ -1,0 +1,17 @@
+package irvine.oeis.a007;
+
+import irvine.math.z.Z;
+
+/**
+ * A007688.
+ * @author Sean A. Irvine
+ */
+public class A007688 extends A007687 {
+
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    return Z.valueOf(colorings(5, ++mN));
+  }
+}

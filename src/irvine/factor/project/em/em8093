@@ -1,0 +1,20 @@
+# Factorizations of Euclid-Mullin sequence starting with 8093.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 8093
+2 2.3.19.71
+3 16187
+4 3.7.12476323
+5 103.7631149
+6 7.14057.822761
+7 566712017467
+8 4198153819.76500891722317
+9 13.375083.276511028838283851760515461
+10 5.3505553014565550742582262418249287
+11 87638825364138768564556560456232171
+12 85772813827.125736999253.84751460337667.8402976648524265233023650733268923

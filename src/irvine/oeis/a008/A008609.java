@@ -1,0 +1,19 @@
+package irvine.oeis.a008;
+
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+
+/**
+ * A008609.
+ * @author Sean A. Irvine
+ */
+public class A008609 extends MemorySequence {
+
+  private static final int[] INITIAL = {1, 2, 4, 7, 12, 19, 30, 45, 68, 99, 146};
+
+  @Override
+  protected Z computeNext() {
+    final int n = size();
+    return n < INITIAL.length ? Z.valueOf(INITIAL[n]) : get(n - 3).multiply(3).add(n);
+  }
+}

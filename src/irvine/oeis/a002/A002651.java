@@ -1,0 +1,24 @@
+package irvine.oeis.a002;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+/**
+ * A002651.
+ * @author Sean A. Irvine
+ */
+public class A002651 implements Sequence {
+
+  // WARNING This sequence is poorly defined for what happens after 400 years.
+
+  private final GregorianCalendar mCal = new GregorianCalendar(2000, Calendar.JANUARY, 0);
+
+  @Override
+  public Z next() {
+    mCal.add(Calendar.DAY_OF_MONTH, 16);
+    return Z.valueOf(mCal.get(Calendar.DAY_OF_MONTH));
+  }
+}

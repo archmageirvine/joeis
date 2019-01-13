@@ -1,0 +1,27 @@
+package irvine.oeis.a006;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.a001.A001430;
+import irvine.oeis.a001.A001433;
+
+/**
+ * A006647.
+ * @author Sean A. Irvine
+ */
+public class A006647 extends A001430 {
+
+  private Sequence mA = new A001433();
+  {
+    mA.next();
+    mA.next();
+    super.next();
+    super.next();
+    super.next();
+  }
+
+  @Override
+  public Z next() {
+    return super.next().subtract(mA.next());
+  }
+}

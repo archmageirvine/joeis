@@ -1,0 +1,19 @@
+# Factorizations of Euclid-Mullin sequence starting with 11783.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 11783
+2 2.2.2.3.491
+3 23567
+4 3.7.26446663
+5 211.7896397
+6 11.149.214493893
+7 1051.3679458037
+8 8807.257861.1789681
+9 1125631601.31799552303
+10 7.3100351.5192783.14395061.24836533
+11 5.59.997.471185472629.2035178628269

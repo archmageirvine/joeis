@@ -1,0 +1,26 @@
+package irvine.oeis.a007;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A007918.
+ * @author Sean A. Irvine
+ */
+public class A007918 implements Sequence {
+
+  private final Fast mPrime = new Fast();
+  protected Z mN = Z.NEG_ONE;
+  private Z mP = Z.TWO;
+
+  @Override
+  public Z next() {
+    mN = mN.add(1);
+    if (mN.equals(mP)) {
+      mP = mPrime.nextPrime(mP);
+      return mN;
+    }
+    return mP;
+  }
+}

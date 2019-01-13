@@ -1,0 +1,30 @@
+package irvine.oeis.a014;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A014402.
+ * @author Sean A. Irvine
+ */
+public class A014402 implements Sequence {
+
+  protected int mN = -1;
+  private int mM = 1;
+  private Z mF = Z.ONE;
+
+  @Override
+  public Z next() {
+    ++mN;
+    final long h = mN + mN / 2;
+    while (h > mM) {
+      mF = mF.multiply(++mM);
+    }
+    Z r = mF;
+    for (int k = 0; k < mN / 2; ++k) {
+      r = r.divide(3 * k + 1 + (mN & 1));
+    }
+    return r;
+  }
+}
+

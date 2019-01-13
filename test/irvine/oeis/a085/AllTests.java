@@ -1,0 +1,92 @@
+package irvine.oeis.a085;
+
+import junit.framework.Test;
+import junit.framework.TestSuite;
+
+/**
+ * Test class for all tests in this directory.
+ *
+ * @author Sean A. Irvine
+ */
+public class AllTests extends TestSuite {
+
+  public static Test suite() {
+    final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A085001Test.class);
+    suite.addTestSuite(A085025Test.class);
+    suite.addTestSuite(A085026Test.class);
+    suite.addTestSuite(A085027Test.class);
+    suite.addTestSuite(A085036Test.class);
+    suite.addTestSuite(A085046Test.class);
+    suite.addTestSuite(A085059Test.class);
+    suite.addTestSuite(A085121Test.class);
+    suite.addTestSuite(A085250Test.class);
+    suite.addTestSuite(A085260Test.class);
+    suite.addTestSuite(A085278Test.class);
+    suite.addTestSuite(A085282Test.class);
+    suite.addTestSuite(A085284Test.class);
+    suite.addTestSuite(A085292Test.class);
+    suite.addTestSuite(A085293Test.class);
+    suite.addTestSuite(A085304Test.class);
+    suite.addTestSuite(A085349Test.class);
+    suite.addTestSuite(A085350Test.class);
+    suite.addTestSuite(A085354Test.class);
+    suite.addTestSuite(A085385Test.class);
+    suite.addTestSuite(A085438Test.class);
+    suite.addTestSuite(A085439Test.class);
+    suite.addTestSuite(A085440Test.class);
+    suite.addTestSuite(A085441Test.class);
+    suite.addTestSuite(A085442Test.class);
+    suite.addTestSuite(A085447Test.class);
+    suite.addTestSuite(A085461Test.class);
+    suite.addTestSuite(A085462Test.class);
+    suite.addTestSuite(A085463Test.class);
+    suite.addTestSuite(A085465Test.class);
+    suite.addTestSuite(A085473Test.class);
+    suite.addTestSuite(A085474Test.class);
+    suite.addTestSuite(A085480Test.class);
+    suite.addTestSuite(A085482Test.class);
+    suite.addTestSuite(A085487Test.class);
+    suite.addTestSuite(A085490Test.class);
+    suite.addTestSuite(A085502Test.class);
+    suite.addTestSuite(A085537Test.class);
+    suite.addTestSuite(A085538Test.class);
+    suite.addTestSuite(A085539Test.class);
+    suite.addTestSuite(A085540Test.class);
+    suite.addTestSuite(A085583Test.class);
+    suite.addTestSuite(A085587Test.class);
+    suite.addTestSuite(A085588Test.class);
+    suite.addTestSuite(A085589Test.class);
+    suite.addTestSuite(A085590Test.class);
+    suite.addTestSuite(A085591Test.class);
+    suite.addTestSuite(A085592Test.class);
+    suite.addTestSuite(A085593Test.class);
+    suite.addTestSuite(A085594Test.class);
+    suite.addTestSuite(A085595Test.class);
+    suite.addTestSuite(A085613Test.class);
+    suite.addTestSuite(A085624Test.class);
+    suite.addTestSuite(A085688Test.class);
+    suite.addTestSuite(A085689Test.class);
+    suite.addTestSuite(A085696Test.class);
+    suite.addTestSuite(A085697Test.class);
+    suite.addTestSuite(A085717Test.class);
+    suite.addTestSuite(A085740Test.class);
+    suite.addTestSuite(A085745Test.class);
+    suite.addTestSuite(A085747Test.class);
+    suite.addTestSuite(A085750Test.class);
+    suite.addTestSuite(A085786Test.class);
+    suite.addTestSuite(A085787Test.class);
+    suite.addTestSuite(A085788Test.class);
+    suite.addTestSuite(A085789Test.class);
+    suite.addTestSuite(A085810Test.class);
+    suite.addTestSuite(A085903Test.class);
+    suite.addTestSuite(A085939Test.class);
+    suite.addTestSuite(A085959Test.class);
+    return suite;
+  }
+
+  public static void main(final String[] args) {
+    junit.textui.TestRunner.run(suite());
+  }
+}
+

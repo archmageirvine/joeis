@@ -1,0 +1,18 @@
+package irvine.oeis.a008;
+
+import irvine.oeis.CoordinationSequence;
+
+/**
+ * A008706.
+ * @author Sean A. Irvine
+ */
+public class A008706 extends CoordinationSequence {
+
+  /** Construct the sequence. */
+  public A008706() {
+    super(
+      new long[] {1, 3, 1},
+      new int[] {1, 1});
+  }
+}
+

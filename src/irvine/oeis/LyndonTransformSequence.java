@@ -1,0 +1,33 @@
+package irvine.oeis;
+
+import irvine.math.z.Z;
+
+/**
+ * A sequence comprising the Lyndon transform of another sequence.
+ * @author Sean A. Irvine
+ */
+public class LyndonTransformSequence extends InverseEulerTransformSequence {
+
+  private boolean mFirst = true;
+
+  /**
+   * Creates a new Lyndon transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   *
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   */
+  public LyndonTransformSequence(final Sequence seq, final int skip) {
+    super(new NegationTransformSequence(seq), skip);
+  }
+
+  @Override
+  public Z next() {
+    final Z t = super.next();
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
+    return t == null ? null : t.negate();
+  }
+}

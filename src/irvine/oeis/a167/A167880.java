@@ -1,0 +1,17 @@
+package irvine.oeis.a167;
+
+import irvine.math.z.Z;
+import irvine.oeis.LinearRecurrence;
+
+/**
+ * A167880.
+ * @author Sean A. Irvine
+ */
+public class A167880 extends LinearRecurrence {
+
+  /** Construct the sequence. */
+  public A167880() {
+    super(new long[] {-1176, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48, 48},
+      new Z[] {Z.ONE, Z.valueOf(50), Z.valueOf(2450), Z.valueOf(120050), Z.valueOf(5882450), Z.valueOf(288240050), Z.valueOf(14123762450L), Z.valueOf(692064360050L), Z.valueOf(33911153642450L), Z.valueOf(1661646528480050L), Z.valueOf(81420679895522450L), Z.valueOf(3989613314880600050L), new Z("195491052429149402450"), new Z("9579061569028320720050"), new Z("469374016882387715282450")});
+  }
+}

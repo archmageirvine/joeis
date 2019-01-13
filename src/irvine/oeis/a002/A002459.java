@@ -1,0 +1,20 @@
+package irvine.oeis.a002;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.math.cr.ComputableReals;
+import irvine.math.cr.CR;
+
+/**
+ * A002459.
+ * @author Sean A. Irvine
+ */
+public class A002459 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return ComputableReals.SINGLETON.cosh(CR.valueOf(++mN)).add(CR.HALF).floor(32);
+  }
+}

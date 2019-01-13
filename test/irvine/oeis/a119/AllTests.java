@@ -1,0 +1,56 @@
+package irvine.oeis.a119;
+
+import junit.framework.Test;
+import junit.framework.TestSuite;
+
+/**
+ * Test class for all tests in this directory.
+ *
+ * @author Sean A. Irvine
+ */
+public class AllTests extends TestSuite {
+
+  public static Test suite() {
+    final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A119008Test.class);
+    suite.addTestSuite(A119016Test.class);
+    suite.addTestSuite(A119032Test.class);
+    suite.addTestSuite(A119259Test.class);
+    suite.addTestSuite(A119282Test.class);
+    suite.addTestSuite(A119283Test.class);
+    suite.addTestSuite(A119284Test.class);
+    suite.addTestSuite(A119285Test.class);
+    suite.addTestSuite(A119286Test.class);
+    suite.addTestSuite(A119287Test.class);
+    suite.addTestSuite(A119306Test.class);
+    suite.addTestSuite(A119330Test.class);
+    suite.addTestSuite(A119332Test.class);
+    suite.addTestSuite(A119336Test.class);
+    suite.addTestSuite(A119407Test.class);
+    suite.addTestSuite(A119412Test.class);
+    suite.addTestSuite(A119413Test.class);
+    suite.addTestSuite(A119435Test.class);
+    suite.addTestSuite(A119436Test.class);
+    suite.addTestSuite(A119501Test.class);
+    suite.addTestSuite(A119536Test.class);
+    suite.addTestSuite(A119587Test.class);
+    suite.addTestSuite(A119610Test.class);
+    suite.addTestSuite(A119617Test.class);
+    suite.addTestSuite(A119633Test.class);
+    suite.addTestSuite(A119749Test.class);
+    suite.addTestSuite(A119826Test.class);
+    suite.addTestSuite(A119827Test.class);
+    suite.addTestSuite(A119852Test.class);
+    suite.addTestSuite(A119910Test.class);
+    suite.addTestSuite(A119915Test.class);
+    suite.addTestSuite(A119916Test.class);
+    suite.addTestSuite(A119996Test.class);
+    suite.addTestSuite(A119997Test.class);
+    return suite;
+  }
+
+  public static void main(final String[] args) {
+    junit.textui.TestRunner.run(suite());
+  }
+}
+

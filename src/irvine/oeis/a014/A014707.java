@@ -1,0 +1,16 @@
+package irvine.oeis.a014;
+
+import irvine.math.z.Z;
+
+/**
+ * A014707.
+ * @author Sean A. Irvine
+ */
+public class A014707 extends A014577 {
+
+  @Override
+  public Z next() {
+    return Z.ONE.subtract(super.next());
+  }
+}
+

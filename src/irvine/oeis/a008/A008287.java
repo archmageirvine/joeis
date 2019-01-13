@@ -1,0 +1,33 @@
+package irvine.oeis.a008;
+
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A008287.
+ * @author Sean A. Irvine
+ */
+public class A008287 implements Sequence {
+
+  protected Z quadrinomial(final long n, final long k) {
+    Z sum = Z.ZERO;
+    for (long i = 0; i <= k / 2; ++i) {
+      sum = sum.add(Binomial.binomial(n, i).multiply(Binomial.binomial(n, k - 2 * i)));
+    }
+    return sum;
+  }
+
+  private long mN = -1;
+  private long mM = 0;
+
+  @Override
+  public Z next() {
+    if (++mM > 3 * mN) {
+      ++mN;
+      mM = 0;
+    }
+    return quadrinomial(mN, mM);
+  }
+}
+

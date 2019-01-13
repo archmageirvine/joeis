@@ -1,0 +1,26 @@
+package irvine.oeis.a000;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A000776.
+ * @author Sean A. Irvine
+ */
+public class A000776 implements Sequence {
+
+  private Z mPrev = Z.ONE;
+  private Z mF = Z.ONE;
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    if (++mN > 0) {
+      mPrev = mPrev.multiply(mN).add(mF.multiply2());
+      if (mN > 1) {
+        mF = mF.multiply(mN);
+      }
+    }
+    return mPrev;
+  }
+}

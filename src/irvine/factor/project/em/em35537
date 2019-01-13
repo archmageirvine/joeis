@@ -1,0 +1,22 @@
+# Factorizations of Euclid-Mullin sequence starting with 35537.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 35537
+2 2.3.5923
+3 5.5.2843
+4 3.118457
+5 1066111
+6 61.18632649151
+7 23.3014438586557
+8 515089.3095849479
+9 42473.19338885859528127
+10 177776132497.196238344533463
+11 7.419.523.1008607199.4008620691661666413631
+12 17.17.41.348463.10514544143540094698249352893
+13 4714331.242549017.645443379082778155462553
+14 3479347551007640375596173004976092624311147631

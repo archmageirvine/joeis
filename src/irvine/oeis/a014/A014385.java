@@ -1,0 +1,32 @@
+package irvine.oeis.a014;
+
+import irvine.math.graph.Graph;
+import irvine.math.nauty.GenerateGraphs;
+import irvine.oeis.ParallelGenerateGraphsSequence;
+
+/**
+ * A014385.
+ * @author Sean A. Irvine
+ */
+public class A014385 extends ParallelGenerateGraphsSequence {
+
+  /** Construct the sequence. */
+  public A014385() {
+    super(5, -1, true, false, false);
+  }
+
+  @Override
+  protected boolean accept(final Graph graph) {
+    return true;
+  }
+
+  @Override
+  protected void graphGenInit(final GenerateGraphs gg) {
+    gg.setVertices(2 * mN);
+    gg.setMinEdges(0);
+    gg.setMaxEdges(mN * (2 * mN - 1));
+    gg.setMinDeg(6);
+    gg.setMaxDeg(6);
+    gg.setConnectionLevel(1);
+  }
+}

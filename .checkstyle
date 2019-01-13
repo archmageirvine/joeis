@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fileset-config file-format-version="1.2.0" simple-config="false" sync-formatter="false">
+  <local-check-config name="chaos standard" location=".cvscheck/checkstyle_config.xml" type="project" description="">
+    <property name="checkstyle.suppressions.file" value="${project_loc}/.cvscheck/checkstyle_suppressions.xml"/>
+    <additional-data name="protect-config-file" value="false"/>
+  </local-check-config>
+  <fileset name="sun" enabled="false" check-config-name="Sun Checks (Eclipse)" local="false">
+    <file-match-pattern match-pattern=".java$" include-pattern="true"/>
+  </fileset>
+  <fileset name="all" enabled="true" check-config-name="chaos standard" local="true">
+    <file-match-pattern match-pattern="java" include-pattern="true"/>
+    <file-match-pattern match-pattern="properties" include-pattern="true"/>
+  </fileset>
+  <filter name="FileTypesFilter" enabled="true">
+    <filter-data value="java"/>
+  </filter>
+  <filter name="NonSrcDirs" enabled="true"/>
+</fileset-config>

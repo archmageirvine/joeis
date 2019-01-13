@@ -1,0 +1,25 @@
+package irvine.oeis.a004;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
+
+/**
+ * A004207.
+ * @author Sean A. Irvine
+ */
+public class A004207 implements Sequence {
+
+  private Z mA = null;
+  private boolean mFirst = true;
+
+  @Override
+  public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
+    mA = mA == null ? Z.ONE : mA.add(ZUtils.digitSum(mA));
+    return mA;
+  }
+}

@@ -1,0 +1,30 @@
+package irvine.oeis.a016;
+
+import irvine.math.z.Z;
+import irvine.oeis.RecordSequence;
+import irvine.oeis.Sequence;
+
+/**
+ * A016043.
+ * @author Sean A. Irvine
+ */
+public class A016043 extends RecordSequence {
+
+  /** Construct the sequence. */
+  public A016043() {
+    super(new Sequence() {
+
+      private long mDelta = 1;
+      private int mN = -1;
+
+      @Override
+      public Z next() {
+        mDelta = -mDelta;
+        if (mDelta < 0) {
+          ++mN;
+        }
+        return Z.ONE.shiftLeft(1 << mN).add(mDelta);
+      }
+    });
+  }
+}

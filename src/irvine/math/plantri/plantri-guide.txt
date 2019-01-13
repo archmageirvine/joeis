@@ -1,0 +1,1318 @@
+
+Guide to using plantri (version 4.5)
+====================================
+
+Gunnar Brinkmann    
+  University of Ghent
+  Gunnar.Brinkmann@ugent.be
+
+Brendan McKay 
+  Australian National University
+  bdm@cs.anu.edu.au
+
+
+INTRODUCTION.
+
+  plantri is a program that generates certain types of graphs that are
+  imbedded on the sphere.
+ 
+  Exactly one member of each isomorphism class is output, using an amount
+  of memory almost independent of the number of graphs produced.  This,
+  together with the exceptionally fast operation and careful validation,
+  makes the program suitable for processing very large numbers of graphs.
+
+  Isomorphisms are defined with respect to the imbeddings, so in some
+  cases outputs may be isomorphic as abstract graphs.
+
+DEFINITIONS.
+
+  When a graph is drawn on the sphere without edges crossing, the sphere is
+  thereby divided into regions called FACES.  If the graph is connected, each
+  face is homeomorphic to a disk (which in this case just means that it has
+  no holes).  We can cut a hole in the sphere in the middle of a face and
+  open the sphere into a plane, but we must remember that the outside region
+  is as much a face as the other regions even though it is no longer a disk.
+
+  The combinatorial structure of a graph drawn on the sphere is represented
+  by the cyclic order of the edges at each vertex, where (according to the
+  arbitrary choice we will adopt) the order is clockwise if we look at
+  the sphere from the outside.
+
+                          a
+                    3------------4
+                   / \          /|
+                  /   \ b    c / |
+               d /     \      /  | e         FIGURE 1.
+                /       \    /   |
+               /         \  /    |
+              0 --------- 2 ---- 1
+                    f         g
+
+  In the above example, the abstract graph is given by the edges
+      a={3,4}, b={2,3}, c={2,4}, d={0,3}, e={1,4}, f={0,2}, g={1,2}.
+  The imbedding is given by listing the edges in clockwise order for
+  each vertex:
+      0: d,f  1: e,g  2: b,c,g,f  3: a,b,d  4: a,c,e
+  Note that the cyclic order b,c,g,f is the same as c,g,f,b - the
+  starting point doesn't matter.
+
+  To fully represent the imbedded graph we need both the abstract graph
+  and the cyclic edge orders.  In the case of a graph with no parallel
+  edges (more than one edge with the same endpoints), it is conventional
+  to give both at once by listing neighbours in clockwise order:
+      0: 2,3  1: 2,4  2: 0,3,4,1  3: 0,4,2  4: 1,2,3
+  Later we will describe a convention for representing even imbeddings of
+  some graphs with parallel edges by cyclic neighbour lists.
+
+  The MIRROR IMAGE of an imbedded graph is obtained by reversing all the
+  cyclic orders.  That corresponds to turning the sphere inside out.
+  The mirror image of the above graph is
+
+                        a
+                  4------------3
+                  |\          / \
+                  | \ c    b /   \
+                e |  \      /     \ d        FIGURE 2.
+                  |   \    /       \
+                  |    \  /         \
+                  1---- 2 ---------- 0
+                    g          f
+
+  In defining "isomorphism" for two imbedded graphs, we have the choice of
+  whether or not to automatically regard a graph and its mirror image as
+  isomorphic.  plantri knows both definitions:
+
+  Let G and H be two connected imbedded graphs with the same numbers of
+  vertices and the same number of edges.
+
+  An ORIENTATION-PRESERVING (O-P) ISOMORPHISM from G to H is a bijection fv
+  from V(G) to V(H), and a bijection fe from E(G) to E(H), such that
+    (1) If e = {v1,v2} is in E(G), then fe(e) = {fv(v1),fv(v2)} and fe(e)
+        is in E(H).
+    (2) If (e1,e2,...,ek) is the set of edges incident with a vertex v of G,
+        in clockwise order, then (fe(e1),fe(e2),...,f(ek)) is the set of
+        edges incident with the vertex fv(v) of G, in clockwise order.
+
+  An ORIENTATION-REVERSING (O-R) ISOMORPHISM from G to H is a bijection fv
+  from V(G) to V(H), and a bijection fe from E(G) to E(H), such that
+    (1) If e = {v1,v2} is in E(G), then fe(e) = {fv(v1),fv(v2)} and fe(e)
+        is in E(H).
+    (2) If (e1,e2,...,ek) is the set of edges incident with a vertex v of G,
+        in clockwise order, then (fe(e1),fe(e2),...,f(ek)) is the set of 
+        edges incident with the vertex fv(v) of G, in anti-clockwise order.
+
+  Note that the two definitions differ only in the penultimate word.
+
+  An ISOMORPHISM from G to H is either an O-P isomorphism or an O-R
+  isomorphism.  Isomorphism and O-P isomorphism (but not O-R isomorphism)
+  are equivalence relations, so we can speak of ISOMORPHISM CLASSES and
+  O-P ISOMORPHISM CLASSES.  Similarly, the set of all isomorphisms and
+  the set all O-P isomorphisms (but not the set of all O-R isomorphisms)
+  from an imbedded graph to itself form groups under composition: the
+  AUTOMORPHISM GROUP and the O-P AUTOMORPHISM GROUP.
+
+  Given an imbedded graph G, we can form another imbedded graph called its
+  PLANAR DUAL (or just DUAL) D.  The vertices of D are the faces of G.
+  The edges of D are in 1-1 correspondence with the edges of G: the
+  two endpoints of an edge in D are the faces that are on either side of
+  the corresponding edge in G.  Finally, the cyclic order of edges around
+  a vertex in D (which is a face in G) is the clockwise order of the
+  corresponding edges bounding the face in G.  The graph in Figure 2 has
+  the following dual:
+
+         ----------------------
+        |                 d    |
+        |    ----------        |
+        |   / a        |       |
+        |  /           C------ D
+        | /         c /    b   |
+        |/    e      /         |     FIGURE 3.
+        A --------- B          |
+        |\    g     |          |
+        | ----------           |
+        |              f       |
+         ----------------------
+
+  The vertex A corresponds to the outside face of Figure 2.  Note that the
+  faces of the dual correspond to the vertices of the original graph.  In
+  fact, it is not hard to see that the dual of the dual of an imbedded
+  graph is the original graph.  Also note how the existence of vertices of
+  degree 2 in the original graph led to parallel edges in the dual.
+
+  If all the faces of an imbedded graph are triangles (i.e. bounded by 3
+  edges) the imbedded graph is called a TRIANGULATION.  The literature
+  is divided over whether the outside face must be a triangle, but we will
+  take it that ALL faces are triangles.  The dual of a triangulation is an
+  imbedded cubic (trivalent) graph.   A triangulation with n vertices has
+  exactly 3n-6 edges and 2n-4 faces.
+
+  A graph (imbedded or not) is k-CONNECTED if it cannot be disconnected by
+  removing k or fewer vertices.  It is convenient to revise the definition
+  slightly for the complete graph K4: it is 3-connected but not 4-connected.
+  A standard theorem says that a triangulation is 3-connected if and only
+  if it has no loops or parallel edges.  It is impossible for a planar
+  graph to be k-connected for k greater than 5.
+
+  A graph (imbedded or not) is CYCLICALLY K-CONNECTED if it is impossible
+  to remove k or fewer vertices so that the graph breaks into components of
+  which at least two have cycles.  As before, K4 is defined to be cyclically
+  3-connected but not cyclically 4-connected.  Planar graphs can have
+  arbitrarily high cyclic connectivity.
+
+  In many circumstances there are relationships between the connectivity of
+  an imbedded graph and the cyclic connectivity of its dual.  For example,
+  a triangulation is k-connected if and only if its dual is cyclically
+  k-connected.
+
+  A SIMPLE graph is one with no parallel edges or loops.
+
+
+INSTALLING plantri.
+
+  The latest edition of plantri can be obtained from
+     http://cs.anu.edu.au/~bdm/plantri
+
+  plantri.c is a C program written as a single file plantri.c.  It should
+  compile immediately with most modern C compilers, as it only contains
+  code that is very standard.  (The only thing we have not tested is the
+  use of 16-bit arithmetic.  If you can, ensure that the type "int" is at
+  least 32 bits.)
+
+  To compile plantri.c under Unix, you can use
+    cc -o plantri -O4 plantri.c
+  where "4" is the highest number your compiler accepts, or just
+    make plantri      (but check makefile first).
+
+RUNNING plantri.
+
+  To run plantri, you need to be able to enter command-line parameters.
+  All our examples will use standard Unix syntax.
+
+  An example of a plantri run is:  
+      plantri -d 16
+  which makes the duals (because -d is present) of the 3-connected
+  triangulations with 16 vertices.  In other words, it makes the
+  3-connected cubic planar graphs with 28 vertices.
+
+  The only compulsory parameter is the number of vertices ("16" in the
+  example).  This can also be given as "28d" (the suffix 'd' means 'dual')
+  in which case it is converted by adding 4 then dividing by 2:
+  (28+4)/2 = 16.  In the case of triangulations, this calculation yields
+  the number of faces, which is the number of vertices in the dual cubic
+  graph.
+
+  Apart from the one compulsory parameter, there are three types of optional
+  parameters:
+
+  *  SWITCHES are introduced by a '-' character.  If there are more than one
+     they can be arbitrarily concatenated or separated.  They can also appear
+     anywhere.  For example, these command lines are all equivalent:
+        plantri -m4u 10
+        plantri -u -m4 10
+        plantri 10 -um4
+        plantri -u 10 -m4
+     The meanings of the switches are explained in the next sections.
+     In the case of a switch taking a numerical value, such as -m, giving
+     it without a value is the same as giving value 0.  That is, -m is
+     the same as -m0 .
+
+  *  An OUTPUT FILE can be given, if you want the graphs to be sent somewhere
+     other than standard output.  Information other than graphs (such as
+     statistics) is written to the standard error stream.  It is permitted
+     to use a lonely '-' to explicitly request graph output to standard
+     output.   Example:
+        plantri 20 tri.20   --Send 20-vertex triangulations to file tri.20
+
+  *  A RES/MOD pair can be given to select only a portion of the graphs that
+     would otherwise be produced.  This pair comprises two integers with
+     '/' between, such as 13/100.  The first integer can be from 0 to one
+     less than the second number.  This example selects portion 13 from
+     portions 0, 1, ..., 99.  In total, these 100 portions will be a
+     partition of all the graphs into 100 roughly equal parts.  This is
+     provided to enable you to divide your computing task into pieces of
+     manageable size.
+     More information on RES/MOD pairs is given later.
+
+  Parameters and switches may appear in any order with one exception:
+  the compulsory parameter (number of vertices) must precede any
+  output file or res/mod parameters.
+
+OUTPUT FORMATS.
+
+  plantri can write graphs in a variety of different formats.
+
+  PLANAR CODE is the default format.  It is the preferred format if you plan
+     to feed the graph into a program that needs the imbedding, and also
+     convenient if you don't need the imbedding.  However, it uses characters
+     which are not printable so it is not suitable for looking at by eye.
+
+  ASCII CODE is a human-readable version of planar code.  The vertices of
+     the graph are named by ASCII characters starting with 'a'.  Example:
+        7 bcdefg,agfdc,abd,acbfe,adf,aedbg,afb
+     This is a graph with 7 vertices a,b,c,d,e,f,g.  The neighbours of
+     'a' in clockwise order are b,c,d,e,f,g; and so on.  Each graph occupies
+     one line of output.  Ascii code is convenient if you just want to draw
+     a few graphs by hand.
+     To select ascii code use -a.
+
+  EDGE CODE is an alternative for planar code that enables all plane graphs
+     to be encoded unambiguously even if there are multiple loops.
+     To select edge code use -E.
+
+  GRAPH6 is a compact code for the abstract structure of a graph.
+     The imbedding is not represented, so this is not a suitable code to
+     use if you want the imbedding.  It is also restricted to simple
+     graphs.  graph6 is one of the formats supported by Brendan McKay's
+     'nauty' package.  Each graph occupies one line.
+     To select graph6 code use -g.
+
+  SPARSE6 is a compact code for the abstract structure of a graph which is
+     optimized for sparse graphs.  If you don't want the imbedding and are
+     dealing with cubic graphs of 20 or more vertices, sparse6 is a good
+     choice.  sparse6 is one of the formats supported by Brendan McKay's
+     'nauty' package.  Each graph occupies one line.
+     To select sparse6 code use -s.
+
+  Each of those formats except for ascii code also has a standard header,
+  which may be written to the output at the beginning:
+
+      format           header            written by default?
+   
+    planar code     >>planar_code<<             yes
+      edge code     >>edge_code<<               yes
+      graph6        >>graph6<<                  no
+     sparse6        >>sparse6<<                 no
+
+  In each case the header is written with no end-of-line characters after
+  it (for portability reasons).  To write a header when the default is not
+  to, or vice-versa, use -h.
+
+  If you only want to count the graphs and not write them, use -u to 
+  select no output.
+
+  Details of these formats is given in Appendices A-C.
+
+MISCELLANEOUS SWITCHES.
+
+  -d   causes the dual graph to be written instead of the original graph.
+       Note that it is applied only at the output stage.  All other switches
+       refer to the original graph before the dual is taken.  For example,
+       -m4 (minimum degree at least 4) refers to the original graph and
+       not to the dual.
+
+  -o   Normally, one member of each isomorphism class is written.  If this
+       switch is given, one member of each O-P isomorphism class is written.
+       Since graph6 and sparse6 formats don't encode the imbedding anyway,
+       this switch is ignored for output purposes if you use -g or -s.
+       -o also implies -G.
+
+  -G   This switch is only of interest if you are using a plug-in (see
+       Appendix D).  It ensures that the full automorphism group is
+       computed for each output graph.  If you are not using a plug-in,
+       -G will just slow things down.
+
+  -V   Only output graphs with non-trivial group.  If -o is given, the
+       O-P group is used.  Otherwise, the full group.  Implies -G.
+
+  -v   plantri will always tell you (by a message to standard error) the
+       number of graphs that were produced.  If you specify -v, it might
+       tell you some additional statistical information.  For example, if
+       you use -o, -v will cause it to also inform you of the number of
+       isomorphism classes as well as the number of isomorphism classes
+       which are O-P isomorphic to their mirror images.
+
+SELECTING THE GRAPH CLASS.
+
+  In these instructions, the word 'primal' refers to the graph you will get
+  if you don't use -d, and 'dual' refers to the dual of that graph (which
+  you get instead by using -d).
+
+  The character # refers to a non-negative integer.
+
+  We begin with a few switches available in multiple circumstances.
+
+  -m#  Specify a lower bound on the minimum degree.  In the dual graph this
+       means a lower bound on the minimum face size.  The default is -m3.
+
+  -c#  Specify a lower bound on the connectivity.  The meaning in the dual
+       graph will be explained in each case.  The default is -c3.
+       (-c4 has a slightly weaker meaning with -q, see below.)
+
+  -x   When used in combination with -c#, the connectivity must be exactly #,
+       rather than at least #.  (Some exceptions are noted below.)
+ 
+  Now we can explain the graph classes which can be produced by plantri.  
+
+  -b but not -p
+       Select eulerian triangulations, where "eulerian" means that every
+       vertex has even degree.  -m is not available except for the default
+       -m4  (the minimum degree is always 4 anyway).
+
+       -c3  (default) 3-connected eulerian planar triangulation.
+            The dual is a 3-connected bipartite cubic graph.
+
+       -c4  4-connected eulerian planar triangulation.
+            The dual is a cyclically 4-connected bipartite cubic graph.
+
+       -c3x The difference between -c3 and -c4, namely those 3-connected
+            eulerian planar triangulations which have a triangle that is
+            not a face.
+
+  -p but not -b
+       Select general planar simple graphs.  In the 3-connected case, these
+       are also called convex polytopes.  Note that isomorphism is defined
+       with reference to the imbedding on a sphere, which means that outputs
+       may be isomorphic as abstract graphs if the connectivity is less 
+       than 3.
+
+       -m1  The minimum degree is at least 1.
+       -m2  The minimum degree is at least 2.
+       -m3  (default) The minimum degree is a least 3.
+       -m4  The minimum degree is at least 4.
+       -m5  The minimum degree is at least 5 (and so exactly 5).
+ 
+       -c3  (default) The connectivity is at least 3.
+       -c2  The connectivity is at least 2.
+       -c1  The connectivity is at least 1.
+       -c2x The difference between -c2 and -c3, namely connectivity exactly 2.
+       -c1x The difference between -c1 and -c2, namely connectivity exactly 1.
+
+       If the -c switch is used but not the -m switch, the minimum degree is
+       set to the same value.  For example, -c2 is the same as -c2m2.
+
+       If the -m switch is used but not the -c switch, 3-connectivity is
+       assumed.  This means that -m1 and -m2 are ineffective without using
+       -c1 or -c2 as well.
+
+       In addition, two limits can be imposed:
+
+       -e   Specify bounds on the number of edges (which is equal to the
+            number of edges in the dual).  The default is no bounds.
+            For n vertices, the number of edges can be from ceil(3n/2)
+            (2n for -m4, ceil(5n/2) for -m5) to 3n-6.
+            There are four possible forms:
+              -e#    number of edges exactly #
+              -e:#   number of edges at most #
+              -e#:   number of edges at least #
+              -e#:#  number of edges from # to #
+            Only the lower bound is efficiently implemented.  Generally
+            speaking, it is more efficient to do a range of edge counts
+            at once rather than one edge count at a time.
+
+       -f#  Specify an upper bound on the size of a face (in the dual: an
+            upper bound on the maximum degree).  The default is no bound.
+            For n vertices, the largest face size can be from 3 to n-1.
+
+  -bp or -pb
+       Select general planar simple bipartite graphs.  These are a subset
+       of the class generated by -p alone, namely those which are bipartite.
+       The minimum degree is always at most 3, so all the parameters
+       available with -p are available except -m4, -m5 and -f3.
+
+       The duals are a subclass of planar eulerian graphs.
+       For -c3, the duals are the 3-connected planar eulerian graphs.
+
+  -P#  Select triangulations of a disk.  These are imbedded simple graphs
+       with a distinguished "outer" face.  The outer face can be any size
+       (here called the disk size) but the other faces must be triangles.
+       
+       The argument to -P is the disk size.  If no argument (or 0) is given,
+       all disk sizes are permitted.  If all disk sizes are needed, it is a
+       lot more efficient to do them all at once rather than one at a time.
+
+       Except for the outer face, all vertices must have degree at least 3.
+       On the outer face, vertices of degree 2 may be permitted, according
+       to the -m parameter.  Also, the only 2-cuts which may exist are
+       chords of the outer face: they are permitted for -c2 but not for -c3.
+       Since a vertex of degree 2 on the outer face implies a chord, the
+       combination -m2c3 is the same as -m3c3.
+
+       The useful combinations of -c, -m and -x are listed:
+
+       -c3m3 (default)     no chords, no vertices degree 2
+       -c2                 chords allowed, no vertices degree 2
+       -c2x                chords required, no vertices degree 2
+       -c2m2               chords allowed, degree 2 allowed
+       -c2xm2              chords required, degree 2 allowed
+
+       We have c2P = c3m3P + c2xP and c2m2P = c3m3P + c2xm2P.
+
+       The output graphs are labelled in such a way that v-w is an
+       edge and the outer face is on the left when looking from v-w,
+       where v is the first vertex and w is the second vertex.
+       For dual output, the first vertex corresponds to the outer
+       face. The dual graph is a graph which has every vertex of
+       degree 3 except possibly the first vertex.
+
+       When interpretting the output, remember that the outer face is
+       distinguished and that this is taken into account in determining
+       isomorphisms.  It means, for example, that some of the outputs with
+       outer face of size 3 will be isomorphic as abstract graphs even in
+       the 3-connected case.
+
+  -q   Select simple quadrangulations.  These are simple planar graphs for
+       which every face has length 4.  The dual graphs are planar quartic
+       graphs.
+
+       -x is not implemented.
+       The useful combinations of -c and -m are listed:
+       
+       -c3m3 (default)  3-connected
+		        dual: 3-connected simple quartic graphs
+       -c2m2            arbitrary
+			dual: 4-edge-connected (maybe not simple)
+                              quartic multigraphs
+       -c2              minimum degree 3
+			dual: 4-edge-connected simple quartic graphs
+       -c4              3-connected, no non-facial 4-cycles
+			dual: 3-connected, 6-cyclically-edge-connected
+			      (simple) quartic graphs
+
+  If -b, -q, -p and -P are absent, the graphs found are triangulations
+  only restricted by connectivity and minimum degree.  In this case,
+  there is the possibility of connectivity lower than 3.
+
+  The useful combinations of -c, -m, -x and -t are:
+
+       -c3m3 (default)  3-connected planar triangulation.  
+               The dual is a 3-connected planar cubic graph.
+               Both primal and dual graphs are simple.
+
+       -m5  3-connected planar triangulation with minimum degree 5.
+            The dual is a 3-connected planar cubic graph with no faces
+            smaller than pentagons.  Both primal and dual graphs are simple.
+
+       -c5  5-connected planar triangulation (implies minimum degree 5).
+            The dual is a cyclically 5-connected planar cubic graph.
+            Both primal and dual graphs are simple.
+
+       -m5c4  4-connected planar triangulation with minimum degree 5. The
+            The dual is a cyclically 4-connected planar cubic graph with
+            no faces smaller than pentagons.  Both primal and dual graphs
+            are simple.
+
+       -m5c3x  3-connected planar triangulation with minimum degree 5
+            and at least one non-facial triangle.  The dual is a
+            3-connected planar cubic graph with no faces smaller than
+            pentagons but at least one cyclic 3-cut.  Both primal and
+            dual graphs are simple.
+
+       -m5c4x  3-connected planar triangulation with minimum degree 5
+            and at least one separating 4-cycle.  The dual is a
+            4-connected planar cubic graph with no faces smaller than
+            pentagons but at least one cyclic 4-cut.  Both primal and
+            dual graphs are simple.
+
+       -m4  3-connected planar triangulation with minimum degree at least 4.
+            The dual is a 3-connected planar cubic graph with no triangles.  
+            Both primal and dual graphs are simple.
+
+       -c4  4-connected planar triangulation (implies minimum degree >= 4).
+            The dual is a cyclically 4-connected planar cubic graph.
+            Both primal and dual graphs are simple.
+
+       -m4c3x  3-connected planar triangulation with minimum degree at
+            least 4 and at least one non-facial triangle.  The dual is a 
+            3-connected planar cubic graph with no triangles but at least
+            one cyclic 3-cut.  Both primal and dual graphs are simple.
+
+       -c2  2-connected planar triangulation with minimum degree at least 3.
+            There may be parallel edges (but remember it is a triangulation
+            so there must be things between each pair of them).  There are
+            no loops.  The dual is a 2-connected simple planar cubic graph.  
+
+       -c2x  Same as -c2 except that there must be at least one pair of
+            parallel edges.  In the dual, at least one cutset of size 2.
+
+       -c1  1-connected planar triangulation with minimum degree at least 3
+            and no two faces sharing more than one edge.  There can be both
+            parallel edges and loops.  The dual is a 1-connected simple
+            planar cubic graph.
+
+       -c1x  Same as -c1 except that there must be at least one loop.
+            In the dual, at least one cutset of one vertex.
+
+       -c1t  1-connected planar triangulation with minimum degree at least 3.
+            The dual is a 1-connected planar cubic graph, possibly with
+            double edges but with no faces of size less than 3.
+
+       -c1tx  Same as -c1t except that there must be at least one loop.
+            In the dual, at least one cutset of one vertex.
+
+      We have c2 = c2x + c3, c1 = c1x + c2, and c1t = c1tx + c2.
+      Also m4 = c4 + m4c3x, m5c4 = c5 + m5c4x, and m5 = c5 + m5c4x + m5c3x.
+
+MORE ON RES/MOD SPLITTING.
+
+  The feature selected by the optional res/mod parameter to plantri is one
+  of its greatest strengths.  The set of objects is divided into mod disjoint
+  classes and only the res-th class is generated.  It is necessary that
+  0 <= res <= mod-1.  The splitting is designed so that the overhead is at
+  most 5 seconds per run for a 500MHz machine.  Also, for problems where
+  there are very many objects altogether, the value of mod can be at least
+  as large as 10,000 and still have reasonable uniformity of class size.
+
+  The definition of the classes obeys the normal laws of modulo arithmetic.
+  For example, class  1/5 is the union of 1/10 and 6/10 (since the numbers
+  equal to 1 modulo 5 are the numbers equal to 1 or 6 modulo 10).  This
+  enables classes to be further split into smaller pieces if the need arises.
+
+  To determine the actual cost of splitting, and the maximum number of
+  classes available, run the program plantri_s (known to the makefile).
+  For example:
+        % plantri_s -b 30 
+        219258 splitting cases at level=21; cpu=2.97 sec
+  This says that splitting into up to 219,258 cases is feasible (though the
+  splitting won't be very uniform if you use that many) and the cost of the
+  splitting is about 3 seconds for each run.   (In this case, it means that
+  using 400 classes incurs a splitting penalty of only one percent.)
+
+  Plugins can change the splitting level by defining splithint in the
+  expansion of PLUGIN_INIT.
+
+APPENDIX A.  Definition of PLANAR CODE.
+
+  PLANAR CODE is the default output format for plantri.  The vertices of
+  the graph are numbered starting at 1.  PLANAR CODE represents the graph
+  by a series of bytes, whose unsigned numerical values (0..255) are
+  significant.  The first byte gives the number of vertices n.  Then there
+  are n sections, where section v contains the neighbours of vertex v in
+  clockwise order followed by a zero byte.   There is no end-of-line
+  character appended.
+
+  For example, the graph of Figure 1 is represented by the following
+  byte values:
+
+          5  3 4 0  3 5 0  1 4 5 2 0  1 5 3 0  2 3 4 0
+
+  In case there are parallel edges, there might be more than one graph
+  whose PLANAR CODE is the same up to rotation of the neighbour lists. 
+  To resolve this ambiguity, plantri makes the following convention:
+  for each vertex v except for the first vertex, if the least numbered
+  vertex that has v as a neighbour is w, then the first w in the section
+  for v represents the same edge as the first v in the section for w.
+  
+  In case of all the graph classes generated by plantri that have no
+  multiple loops, and also for all classes of triangulations, it can be
+  proved that for every v > 1 we have w < v and the embedded graph is
+  uniquely reconstructible from the code.
+
+  In addition to the encodings of graphs, a PLANAR CODE file by default
+  begins with the 15 characters >>planar_code<< without end-of-line
+  characters.
+
+APPENDIX B.  Definition of EDGE CODE.
+
+  EDGE CODE is an alternative to PLANAR CODE that has the advantage of
+  being uniquely decodable for all plane graphs (even with multiple loops).
+  The undirected edges are numbered 0,1,... consecutively but in
+  no particular order, and for each vertex a list of the incident
+  edge numbers in clockwise order is given. Note that a loop appears
+  twice in such a list, and in general each edge number appears
+  exactly twice altogether.
+
+  The code consists of a header and a body.  The header has one of
+  two forms:
+    1. A single byte of value 1-255.  In this case, the value of the
+       byte is the size of the body in bytes.  All edge numbers in the
+       body will be encoded using L=1 bytes.
+    2. The byte 0, a byte (K<<4)+L (where 1<=K,L<=15), and a bigendian
+       unsigned number S stored in K bytes. In this case, S is the size
+       of the body in bytes and L is the number of bytes used for edge
+       numbers in the body. The size of the header is 1+1+K bytes.
+
+  The body has a section for each vertex.  In each section, the edge
+  numbers for the incident edges are given in clockwise order, using
+  an L-byte bigendian integer for each.  Each vertex section except
+  the last is followed by a single byte of value 255.  (Note that this
+  implies L is large enough that the largest edge number has first
+  byte value at most 254.)
+
+  In plantri, the only possibility for the second header type is K=2, L=1.
+
+  In addition to the encodings of graphs, an EDGE CODE file by default
+  begins with the 13 characters >>edge_code<< without end-of-line
+  characters.
+
+APPENDIX C.  Definition of GRAPH6 and SPARSE6.
+
+  All numbers in this description are in decimal unless obviously in
+  binary.  GRAPH6 and SPARSE6 are text formats, and a file containing
+  them is a text file.
+
+  Apart from the header, there is one object per line.  Apart from the
+  header and the end-of-line characters, all bytes have a value in the
+  range 63-126 (which are all printable ASCII characters).
+
+  BIT VECTORS:
+
+  A bit vector x of length k can be represented as follows.  
+      Example:  1000101100011100
+
+  (1) Pad on the right with 0 to make the length a multiple of 6.
+      Example:  100010110001110000
+
+  (2) Split into groups of 6 bits each.
+      Example:  100010 110001 110000
+
+  (3) Add 63 to each group, considering them as bigendian binary numbers.
+      Example:  97 112 111
+
+  These values are then stored one per byte.  
+  So, the number of bytes required is ceiling(k/6).
+
+  Let R(x) denote this representation of x as a string of bytes.
+      
+  SMALL NONNEGATIVE INTEGERS:
+ 
+  Let n be an integer in the range 0-262143 (262143 = 2^18-1).
+
+  If 0 <= n <= 62, define N(n) to be the single byte n+63.
+  If n >= 63, define N(n) to be the four bytes 126 R(x), where
+    x is the bigendian 18-bit binary form of n.
+
+  Examples:  N(30) = 93
+             N(12345) = N(000011 000000 111001) = 126 69 63 120
+
+
+  GRAPH6 format:
+
+  Suppose G has n vertices.  Write the upper triangle of the adjacency
+  matrix of G as a bit vector x of length n(n-1)/2, using the ordering
+  (0,1),(0,2),(1,2),(0,3),(1,3),(2,3),...,(n-1,n).
+
+  Then the graph is represented as  N(n) R(x).
+
+    Example: Suppose n=5 and G has edges 0-2, 0-4, 1-3 and 3-4.
+
+       x = 0 10 010 1001
+    
+       Then N(n) = 68 and R(x) = R(010010 100100) = 81 99.
+       So, the graph is  68 81 99.
+
+  Note that GRAPH6 format cannot represent loops or parallel edges.
+
+  SPARSE6 format:
+
+  The encoded graph consists of:
+     (1) The character ':'.   (This is present to distinguish
+                                  the code from GRAPH6 format.)
+     (2) The number of vertices.
+     (3) A list of edges.
+     (4) end-of-line
+
+  Loops and multiple edges are supported, but not directed edges.
+
+  Number of vertices n:  Represented as N(n) like in GRAPH6 format.
+
+  List of edges:
+
+    Let k be the number of bits needed to represent n-1 in binary.
+    The remaining bytes encode a sequence R(z) where
+      z = b[0] x[0] b[1] x[1] b[2] x[2] ... b[m] x[m] ...
+
+    Each b[i] occupies 1 bit, and each x[i] occupies k bits.
+    Padding at the end is chosen so that the decoding algorithm below
+    does not imply any spurious edges.
+
+    The vertices of the graph are 0..n-1.
+    The edges encoded by this sequence are determined thus:
+
+       v = 0
+       for i from 0 to m do
+          if b[i] = 1 then v = v+1 endif;
+          if x[i] > v then v = x[i] else output {x[i],v} endif
+       endfor
+
+    Example:    :Fa@x^
+    ':' indicates sparse6 format.
+    Subtract 63 from the other bytes and write them in binary, six bits each.
+         000111 100010 000001 111001 011111
+    The first byte is not 63, so it is n.  n=7
+    n-1 needs 3 bits (k=3).  Write the other bits in groups of 1 and k:
+      1 000  1 000  0 001  1 110   0 101  1 111
+    This is the b/x sequence  1,0 1,0 0,1 1,6 0,5 1,7.
+    The 1,7 at the end is just padding.
+    The remaining pairs give the edges 0-1 1-2 5-6.
+
+
+APPENDIX D.  Writing Plug-ins for plantri.
+
+  plantri has a facility for making certain compile-time changes to its
+  behaviour.  This requires some amount of knowledge of how the program
+  works, and here we will give a little of that.  A typical use for
+  a plug-in is to filter the output graphs before they are written.
+  This is a good idea if you are only wanting some subset of the graphs,
+  because plantri is so fast that writing graphs out and reading them
+  into another program takes about as long as generating them.
+  
+  Vertices in plantri are numbered starting at 0.  There are global
+  variables nv and ne which contain the number of vertices and the
+  number of DIRECTED edges (which is twice the number of edges).
+
+  In the case of disk triangulations, there are some occasions when
+  one vertex number is unused.  In this case, the global int variable
+  missing_vertex indicates what is missing.  If nothing is missing,
+  missing_vertex < 0.  For example, if nv=7 and missing_vertex=2, the
+  vertices are actually numbered 0,1,3,4,5,6,7.
+
+  The graph is held as a collection of directed edges (type EDGE).
+  These edges are structures referenced by pointers.  They have these
+  fields, amongst others:
+
+    int  start;    the vertex at the start of the edge
+    int  end;      the vertex at the end of the edge
+    EDGE *invers;  the directed edge which is the reverse of this one
+    EDGE *next;    the next edge in clockwise order around vertex start
+    EDGE *prev;    the previous edge in clockwise order around vertex start
+ 
+  To find the edges, there is an array firstedge[0..], type EDGE*.
+  The value of firstedge[i] is a pointer to one of the edges starting
+  at vertex v.
+
+  For example, to "look at" all the neighbours of vertex v we can do:
+
+      EDGE *e,*elast;
+
+      e = elast = firstedge[v];
+      do 
+      {
+          look at e->end;
+          e = e->next;
+      } while (e != elast);
+
+  Another example is the tracing of a face.  Suppose we have an edge e and
+  we want to "look at" all the edges bounding the face on the right of e.
+
+      elast = e;
+      do
+      {
+          look at e;
+          e = e->invers->prev;
+      } while (e != elast);
+
+  Use  e = e->invers->next  instead if you are interested in the face on
+  the left of e.
+
+  Another useful global array is degree[0..], which contains the 
+  degrees of the vertices.  Another way to "look at" all the neighbours
+  of vertex v is this:
+
+     for (count = degree[v], e = firstedge[v]; --count >= 0; e = e->next)
+     {
+         look at e->end
+     }
+
+
+  To write a plug-in, you need to define some things in a separate source
+  file (let's call it plugin.c), and make the name of that source file
+  available when compiling plantri.c.  For example, on most Unix systems:
+     cc -o plantri_plugin -O4 '-DPLUGIN="plugin.c"' plantri.c
+  All the quotes of both types are required.
+
+  This process causes the text of plugin.c to be read into the text of
+  plantri.c, so everything defined in each file is available in both.
+  The work of the plug-in is achieved by defining macros.  Here we list
+  the macros that might be defined, and their meanings.  If you don't
+  want these functions, just don't define the macros.
+
+  FILTER   This is the name of a procedure that is called for each
+           isomorphism type of graph that would normally be output (except
+           that in the case of -d it is the original graph before taking
+           the dual).  The calling sequence is like this:
+                 int FILTER(int nbtot, int nbop, int doflip)
+           The procedure must return an int value.  If the value 0 is
+           returned, the graph is not written.  Otherwise it is written.
+
+           The meanings of the parameters:
+               nbtot = total number of automorphisms
+               nbop  = number of canonical labellings which are O-P.
+                  If there are O-R automorphisms, nbop=nbtot/2, while if
+                  there are none nbop=0 or nbop=nbtot.
+               doflip = 0 if there is an orientation-reversing automorphism,
+                  otherwise 1
+
+           nbtot, nbop, doflip are only guaranteed correct if -G or -o is
+           given.  In that case the full automorphism group is available;
+           contact the authors for details.
+
+           Without -G and -o, doflip=0 and the other parameters are undefined.
+
+           These rules mean that doflip+1 is the number of graphs which are
+           to be written (except for the imbedding-insensitive formats graph6
+           and sparse6, for which only one will be written).  If you are using
+           FILTER to count outputs with a particular property, count each
+           graph with a weight of doflip+1.
+     
+           This procedure can be used to write the graph in another format.
+           The normal output file (an open text file) is outfile, except
+           if -u is given, in which case you will have to open a file
+           yourself or use stdout.
+
+  SUMMARY  This is called at the end of the computation before the final
+           summary statistics are produced by plantri.  Type:
+                 void SUMMARY(void)
+           Its main use is to write information gathered by FILTER and other
+           plug-in components.  If you don't want the normal summary as well,
+           set the global variable dosummary to 0 before returning.
+
+           Look in plantri.c to see how statistics are collected and written.
+           All statistics should be written to the file msgfile.
+
+  PLUGIN_INIT  This is called at the start of execution, after the 
+           command-line switches have been decoded but before any graphs
+           are generated.  You can use it to perform tasks such as:
+           (a) Test if the switches are valid for this plug-in.
+           (b) Set switch values to appropriate default values.
+           (c) Initialize data-structures used by this plug-in.
+
+  PLUGIN_SWITCHES  This can be defined to add extra switches.  The mechanism
+           for detecting switches, and their values, can be best seen by
+           examining plantri.c.  Here are two simple cases:
+           (a) Add a boolean switch -z:
+              #define PLUGIN_SWITCHES else if (arg[j] == 'z') zswitch = TRUE;
+           (b) Add a switch -z that takes an integer value:
+              #define PLUGIN_SWITCHES else if (arg[j] == 'z') \
+                        zvalue = getswitchvalue(arg,&j);
+           In each case you have to define and initialize the new variables.
+           You can do that at the top level in plugin.c:
+             (a) static int zswitch = FALSE;
+             (b) static int zvalue = -1;
+           Checking that zvalue is valid, or giving it a default value if it
+           is not specified (i.e. is still -1), can be done using PLUGIN_INIT.
+
+           If you change the switches, you should also redefine the macro
+           SWITCHES that appears in the first line of plantri.c.  It is
+           only used in error messages.
+
+  PRE_FILTER_*  These are the most difficult macros to use, as considerable
+           knowledge of the internals of the program is required.  plantri
+           operates by starting with the smallest graphs in the required
+           class, then expanding them by a few vertices at a time until the
+           output size is reached.  The exact method for expanding a graph
+           depends on the graph class.  The value of PRE_FILTER_* is an
+           expression that is evaluated for each intermediate graph computed
+           during the generation process that is smaller (or less constructed
+           in some other sense) than the output size.  If the value of the
+           expression is 0, that intermediate graph is not expanded (so none
+           of its descendants appear in the output).  If the value is not 0,
+           expansion proceeds as normal.
+
+           The actual macros available are
+               PRE_FILTER_SIMPLE, PRE_FILTER_MIN4, PRE_FILTER_BIP,
+               PRE_FILTER_POLY, PRE_FILTER_DOUBLE, PRE_FILTER_ORDLOOP,
+               PRE_FILTER_SPECIALLOOP, PRE_FILTER_QUAD, PRE_FILTER_MIN5.
+
+  A few more complex macros are available, but describing them would
+  require too much detail about plantri internals.
+
+  Some examples of plug-ins are distributed with plantri:
+    mdcount.c (makes plantri_mdcount) - count graphs by minimum degree
+    degseq.c (makes plantri_deg) - counts graphs by degree sequence
+    nft.c (makes plantri_nft) - counts graphs by non-facial triangles
+    maxdeg.c (makes plantri_md) - imposes a bound on the maximum degree
+    allowed_deg.c (makes plantri_ad) - specify which degrees are permitted
+    faceorbits.c (makes plantri_fo) - count plane imbeddings with 
+                                      distinguished outer face
+
+APPENDIX E.  Graph Counts.
+
+  In this section we list some counts of the graph classes that can be
+  generated using plantri.  If you compute any additional numbers in
+  any of these classes, please send them to us for inclusion.
+
+  The column headings in these tables are:
+
+  nv = number of vertices (or faces in the dual)
+  ne = number of edges (same in the dual)
+  nf = number of faces (or vertices in the dual)
+
+  all = count of isomorphism classes
+  O-P = count of orientation-preserving isomorphism classes.
+
+   ----------------------------------------------------------------
+
+  3-connected planar triangulations (plantri).
+
+   nv  ne  nf            all            O-P  
+             
+    4   6   4 |              1              1
+    5   9   6 |              1              1
+    6  12   8 |              2              2
+    7  15  10 |              5              6
+    8  18  12 |             14             17
+    9  21  14 |             50             73
+   10  24  16 |            233            389
+   11  27  18 |           1249           2274
+   12  30  20 |           7595          14502
+   13  33  22 |          49566          97033
+   14  36  24 |         339722         672781
+   15  39  26 |        2406841        4792530
+   16  42  28 |       17490241       34911786
+   17  45  30 |      129664753      259106122
+   18  48  32 |      977526957     1954315346
+   19  51  34 |     7475907149    14949368524
+   20  54  36 |    57896349553   115784496932
+   21  57  38 |   453382272049   906736988527
+   22  60  40 |  3585853662949  7171613842488
+   23  63  42 | 28615703421545 57231089062625
+
+   ----------------------------------------------------------------
+
+  3-connected planar triangulations with minimum degree at least 4,
+  (plantri -m4), and 4-connected planar triangulations (plantri -c4).
+
+                               m4                            c4
+ 
+   nv  ne  nf            all           O-P              all           O-P
+
+    6  12   8 |              1             1 |              1             1
+    7  15  10 |              1             1 |              1             1
+    8  18  12 |              2             2 |              2             2
+    9  21  14 |              5             5 |              4             4
+   10  24  16 |             12            14 |             10            12
+   11  27  18 |             34            45 |             25            32
+   12  30  20 |            130           194 |             87           128
+   13  33  22 |            525           891 |            313           519
+   14  36  24 |           2472          4499 |           1357          2430
+   15  39  26 |          12400         23603 |           6244         11765
+   16  42  28 |          65619        127887 |          30926         59915
+   17  45  30 |         357504        705770 |         158428        311744
+   18  48  32 |        1992985       3959653 |         836749       1659633
+   19  51  34 |       11284042      22494163 |        4504607       8971845
+   20  54  36 |       64719885     129227103 |       24649284      49195863
+   21  57  38 |      375126827     749646288 |      136610879     272940855
+   22  60  40 |     2194439398    4387116659 |      765598927    1530417953
+   23  63  42 |    12941995397   25878895923 |     4332047595    8661936137
+   24  66  44 |    76890024027  153765144588 |    24724362117   49442678322
+   25  69  46 |   459873914230  919704309272 |   142205424580  284393946501
+   26  72  48 |  2767364341936 5534600480206 |   823687567019 1647327455726
+   27  75  50 | 16747182732792               |  4801749063379
+
+   Note: An earlier version of this table gave a different value for
+   the first count on the nv=23 row.  That was due to a clerical error
+   and not to a program bug.
+
+   ----------------------------------------------------------------
+
+  planar triangulations without 3-connectivity requirement:
+  2-connected with minimum degree at least 3 (plantri -c2)
+  1-connected with minimum degree at least 3 and no two faces
+        sharing more than one edge (plantri -c1)
+  1-connected with minimum degree at least 3 (plantri -c1t).
+  Those connectivities are lower bounds, not exact values.
+
+                   c2 
+ 
+   nv          all            O-P
+
+    4 |             1              1
+    5 |             1              1
+    6 |             3              3
+    7 |             8              9
+    8 |            32             37
+    9 |           131            183
+   10 |           723           1156
+   11 |          4360           7713
+   12 |         29632          55436
+   13 |        213168         412193
+   14 |       1606633        3158392
+   15 |      12473723       24736138
+   16 |      99141919      197448348
+   17 |     802392930     1601481238
+   18 |    6593377305    13173471151
+   19 |   54883010885   109712447949
+   20 |  462038444588   923858502128
+   21 | 3928893849911  7856893675780
+
+
+                      c1                             c1t
+
+   nv           all            O-P             all            O-P
+
+    4 |             1              1 |             1              1
+    5 |             1              1 |             1              1
+    6 |             3              3 |             3              3
+    7 |             9             10 |             9             10
+    8 |            37             42 |            38             43
+    9 |           172            230 |           178            236
+   10 |           993           1523 |          1041           1577
+   11 |          6308          10737 |          6652          11188
+   12 |         44145          80319 |         46738          84194
+   13 |        327051         620134 |        347050         653271
+   14 |       2530761        4913112 |       2691419        5198809
+   15 |      20179785       39705720 |      21509955       42184083
+   16 |     164672106      326420796 |     175969274      348088277
+   17 |    1368137926     2723097802 |    1465921468     2913967487
+   18 |   11536196188    23012381739 |   12395111621    24706425434
+   19 |   98494508358   196713776094 |  106126249031   211856940558
+   20 |  850073936750  1698875856077 |  918520748281  1835160731391
+   21 | 7406965136219 14808015829668 | 8025676381104 16042357404748
+
+   ----------------------------------------------------------------
+
+  3-connected planar Eulerian triangulations (plantri -b),
+  and 4-connected planar Eulerian triangulations (plantri -bc4).
+
+                             b                            bc4
+   
+   nv  ne  nf           all            O-P            all          O-P
+
+    6  12   8 |             1              1 |            1            1
+    7  15  10 |             0              0 |            0            0
+    8  18  12 |             1              1 |            1            1
+    9  21  14 |             1              1 |            0            0
+   10  24  16 |             2              2 |            2            2
+   11  27  18 |             2              2 |            1            1
+   12  30  20 |             8              9 |            5            6
+   13  33  22 |             8             11 |            3            3
+   14  36  24 |            32             41 |           18           22
+   15  39  26 |            57             89 |           19           25
+   16  42  28 |           185            296 |           79          112
+   17  45  30 |           466            829 |          134          214
+   18  48  32 |          1543           2772 |          501          817
+   19  51  34 |          4583           8746 |         1147         2058
+   20  54  36 |         15374          29461 |         3976         7188
+   21  57  38 |         50116          98342 |        11055        21036
+   22  60  40 |        171168         336881 |        37231        71185
+   23  63  42 |        582603        1156559 |       114560       224103
+   24  66  44 |       2024119        4024297 |       384053       753561
+   25  69  46 |       7057472       14075250 |      1244056      2464355
+   26  72  48 |      24873248       49638364 |      4193857      8321649
+   27  75  50 |      88111772      176037177 |     13977946     27841706
+   28  78  52 |     314301078      628107157 |     47522279     94737950
+   29  81  54 |    1126716000     2252541666 |    161222224    321889797
+   30  84  56 |    4060375677     8118442511 |    553033544   1104620101
+   31  87  58 |   14697571234    29390845869 |   1899744032   3796766424
+   32  90  60 |   53432834170   106854715443 |   6571595339  13136256710
+   33  93  62 |  195015189626   390009407529 |  22793047258  45572625554
+   34  96  64 |  714404259151  1428755867040 |  79449718217 158865787212 
+   35  99  66 | 2626130395699  5252157292165 | 277760027418 555452882736
+   36 102  68 | 9685071313079                | 974836112457
+
+   ----------------------------------------------------------------
+
+   Convex polytopes (3-connected planar simple graphs, plantri -p),
+   and convex polytopes with minimum degree at least 4 (plantri -pm4).
+
+                         p                        pm4
+
+   nv            all            O-P             all          O-P
+
+    4                1              1 |
+    5                2              2 |
+    6                7              8 |             1             1
+    7               34             45 |             1             1
+    8              257            419 |             4             4
+    9             2606           4798 |            14            16
+   10            32300          62754 |            67            99
+   11           440564         872411 |           428           720
+   12          6384634       12728018 |          3515          6531
+   13         96262938      192324654 |         31763         61677
+   14       1496225352     2991463239 |        307543        607787
+   15      23833988129    47663036427 |       3064701       6101800
+   16     387591510244   775158142233 |      31199068      62288750
+   17    6415851530241 12831576165782 |     322264655     644101914
+   18  107854282197058                |    3369911732    6738127018
+   19                                 |   35611596455   71216447022
+   20                                 |  379881408164  759735751770
+   21                                 | 4086847012014 8173585336482
+
+   ----------------------------------------------------------------
+
+  Triangulations of a disk: 3-connected (plantri -P), or exactly
+  2-connected but without vertices of degree 2 (plantri -Pc2x),
+  or exactly 2-connected with vertices of degree 2 on the outer
+  face permitted (plantri -Pc2m2).
+
+                     P  
+
+   nv           all             O-P
+
+    4               1               1
+    5               2               2
+    6               7               8
+    7              27              37
+    8             132             213
+    9             773            1386
+   10            5017            9524
+   11           34861           68057
+   12          253676          501858
+   13         1903584         3788747
+   14        14616442        29170667
+   15       114254053       228295618
+   16       906266345      1811802818
+   17      7277665889     14552804492
+   18     59066524810    118124257451
+   19    483864411124    967698049455
+   20   3996427278475   7992746427963
+   21  33250623548406  66500865364037
+
+                 Pc2x                             Pc2xm2
+
+   nv         all            O-P               all             O-P
+
+    3                               |              1               1
+    4                               |              1               1
+    5                               |              2               2
+    6              1              1 |              9              12
+    7              4              5 |             36              56
+    8             27             42 |            196             341
+    9            163            289 |           1160            2168
+   10           1131           2130 |           7616           14732
+   11           8030          15631 |          52605          103619
+   12          59412         117319 |         379339          753336
+   13         448361         891666 |        2814161         5610649
+   14        3447550        6877352 |       21363658        42666989
+   15       26887369       53713758 |      165164873       330125084
+   16      212338376      424461698 |     1296637273      2592566706
+   17     1695218973     3389687444 |    10312933521     20623423424
+   18    13666153626    27329645755 |    82959235392    165909929181
+   19   111136594337   222263795690 |   674004472100   1347979078869
+   20   910959545329  1821885598755 |  5524400982592  11048696658907
+   21  7520705838434 15041292477945 | 45637448298918  91274524809807
+
+   ----------------------------------------------------------------
+
+  3-connected planar triangulations with minimum degree 5 (plantri -m5),
+  and 3-connected planar graphs (convex polytopes) with minimum degree 5
+  (plantri -pm5). 
+
+                       triangulations                polytopes
+
+   nv  ne  nf            all            O-P             all             O-P
+ 
+   12  30  20 |              1              1 |              1              1
+   13  33  22 |              0              0 |              0              0
+   14  36  24 |              1              1 |              1              1
+   15  39  26 |              1              1 |              1              1
+   16  42  28 |              3              4 |              5              6
+   17  45  30 |              4              4 |              8              8
+   18  48  32 |             12             17 |             30             46
+   19  51  34 |             23             33 |             85            135
+   20  54  36 |             73            117 |            392            686
+   21  57  38 |            192            331 |           1587           2961
+   22  60  40 |            651           1180 |           7657          14744
+   23  63  42 |           2070           3899 |          36291          71207
+   24  66  44 |           7290          14052 |         180444         357308
+   25  69  46 |          25381          49667 |         898310        1787611
+   26  72  48 |          91441         180502 |        4532719        9042238
+   27  75  50 |         329824         654674 |       22949165       45839601
+   28  78  52 |        1204737        2398527 |      116805726      233457359
+   29  81  54 |        4412031        8800984 |      596228948     1192066180
+   30  84  56 |       16248772       32447008 |     3052696452     6104366484
+   31  87  58 |       59995535      119883207 |    15667197926    31331752928
+   32  90  60 |      222231424      444226539 |    80591725752   161176530535
+   33  93  62 |      825028656     1649550311 |   415411427833   830804928594
+   34  96  64 |     3069993552     6138874486 |  2145396827091  4290746578254
+   35  99  66 |    11446245342    22890091062 | 11100060860777 22199999305869
+   36 102  68 |    42758608761    85511947468 |
+   37 105  70 |   160012226334   320013030067 |
+   38 108  72 |   599822851579  1199620598580 |
+   39 111  74 |  2252137171764  4504219709753 |
+   40 114  76 |  8469193859271 16938267502048 |
+
+   A previous version of this table had the nv=29 value 8800984 incorrect
+   for unknown reasons.  It does seem that the program always got the
+   right answer.
+
+   ----------------------------------------------------------------
+
+  3-connected planar quadrangulations (plantri -q).
+
+                     quadrangulations  
+
+   nv  ne  nf              all            O-P  
+
+    8  12   6 |             1              1
+    9  14   7 |             0              0
+   10  16   8 |             1              1
+   11  18   9 |             1              1
+   12  20  10 |             3              4
+   13  22  11 |             3              3
+   14  24  12 |            11             15
+   15  26  13 |            18             25
+   16  28  14 |            58             92
+   17  30  15 |           139            234
+   18  32  16 |           451            803
+   19  34  17 |          1326           2469
+   20  36  18 |          4461           8512
+   21  38  19 |         14554          28290
+   22  40  20 |         49957          98148
+   23  42  21 |        171159         338673
+   24  44  22 |        598102        1188338
+   25  46  23 |       2098675        4180854
+   26  48  24 |       7437910       14840031
+   27  50  25 |      26490072       52904562
+   28  52  26 |      94944685      189724510
+   29  54  27 |     341867921      683384218
+   30  56  28 |    1236864842     2472961423
+   31  58  29 |    4493270976     8984888982 
+   32  60  30 |   16387852863    32772085447
+   33  62  31 |   59985464681   119963084542 
+   34  64  32 |  220320405895   440623586740
+   35  66  33 |  811796327750  1623555117611
+   36  68  34 | 3000183106119  6000283550482
+
+   (In a previous version of this table, the two values for nv=31 were
+    interchanged.  Thanks to Hugo Pfoertner for noticing.)
+   
+
+APPENDIX F.  Version History
+
+The original edition of plantri, which performed only a few of the
+functions of the current edition, was released in June 1996.  Here
+we will list the changes made in the functionality of recent editions
+only.  Internal changes are listed in plantri.c.
+
+Version 3.0:
+  Released on April 25, 2000.
+
+Version 3.1:
+  Released on July 3, 2000.
+
+  It was discovered by Thom Sulanke that the code for simple
+  triangulations stopped working correctly at 26 or more vertices.
+  The bug does not affect any of the calculation sizes listed in
+  Appendix E.  We believe that the only possible way of encountering
+  the bug with the distributed software was to use the maxdeg or
+  allowed_deg programs for 26 or more vertices.  Correct operation
+  with -m4, -c4, -b and the min5 plugin was not affected.
+
+  Version 3.1 corrects the bug without otherwise changing program
+  behaviour.  Many thanks to Thom for his assistance.
+
+Version 4.0:
+  Released on April 20, 2001.
+
+  Added -q for 3-connected quadrangulations.
+  Added -pc1 and -pc2 for general planar graphs.
+  Added -m5 and variants.  The plug-in min5.c is no longer required.
+  sparse6 output now represents loops only once.
+
+Version 4.1:
+  Released on November 30, 2001.
+
+  Added -qc2, -qc4, -qm2c2 for types of quadrangulation.
+
+Version 4.3:
+  Released on August 5, 2007.
+
+  Added -V  : write only those with non-trivial groups
+  Added -E  : write output in edge code
+  Added -bp : general bipartite graphs
+  -p can now make graphs of 2 or 3 vertices
+
+Version 4.4:
+  Released on May 2, 2009.
+
+  Fixed -pc1x and -pc2x
+  Fixed incorrect connectivity computation in -p and -pb,
+        only known problems were with -c1x, -c2x and statistics
+        reported by -v
+
+Version 4.5:
+  Released on September 5, 2011.
+
+  Also apply FAST_FILTER_* to starting graphs  (all uses need checking
+        against the code as more than one filter might need defining)

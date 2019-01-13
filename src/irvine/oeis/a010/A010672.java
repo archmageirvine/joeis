@@ -1,0 +1,39 @@
+package irvine.oeis.a010;
+
+import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+
+/**
+ * A010672.
+ * @author Sean A. Irvine
+ */
+public class A010672 extends MemorySequence {
+
+  private final HashSet<Z> mSums = new HashSet<>();
+
+  @Override
+  protected Z computeNext() {
+    if (isEmpty()) {
+      return Z.ZERO;
+    }
+    Z n = get(size() - 1);
+    while (true) {
+      n = n.add(1);
+      boolean ok = true;
+      for (final Z m : this) {
+        if (mSums.contains(n.add(m))) {
+          ok = false;
+          break;
+        }
+      }
+      if (ok) {
+        for (final Z m : this) {
+          mSums.add(n.add(m));
+        }
+        return n;
+      }
+    }
+  }
+}

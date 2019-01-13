@@ -1,0 +1,20 @@
+# Factorizations of Euclid-Mullin sequence starting with 10631.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 10631
+2 2.2.2.3.443
+3 11.1933
+4 3.3.13.1999
+5 101.6947
+6 53.937.1427
+7 251.14963789
+8 18149.51944111
+9 17109673386594163
+10 985830605371567.296948503932470521
+11 7.41.419.773.20789.139791027354913309.1068310324870557787
+12 5.37.34351.952297612367.333810479757207619465823661727

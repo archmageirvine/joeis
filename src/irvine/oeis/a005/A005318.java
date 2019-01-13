@@ -1,0 +1,21 @@
+package irvine.oeis.a005;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+
+/**
+ * A005318.
+ * @author Sean A. Irvine
+ */
+public class A005318 extends MemorySequence {
+
+  @Override
+  protected Z computeNext() {
+    final int n = size();
+    if (n <= 2) {
+      return Z.valueOf(n);
+    }
+    return get(n - 1).multiply2().subtract(get(n - 1 - CR.HALF.add(CR.valueOf(2L * n - 2).sqrt()).floor(32).intValueExact()));
+  }
+}

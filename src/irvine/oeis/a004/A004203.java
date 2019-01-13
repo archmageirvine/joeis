@@ -1,0 +1,25 @@
+package irvine.oeis.a004;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A004203.
+ * @author Sean A. Irvine
+ */
+public class A004203 implements Sequence {
+
+  private Z mA = Z.valueOf(54);
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      ++mN;
+      mA = mA.multiply(10);
+      if (mA.add(1).isProbablePrime()) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

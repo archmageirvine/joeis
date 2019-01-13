@@ -1,0 +1,18 @@
+package irvine.oeis.a001;
+
+import irvine.math.z.Z;
+import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.PrependSequence;
+import irvine.oeis.a000.A000041;
+
+/**
+ * A001383.
+ * @author Sean A. Irvine
+ */
+public class A001383 extends PrependSequence {
+
+  /** Construct the sequence. */
+  public A001383() {
+    super(new EulerTransformSequence(new A000041(), 0), Z.ONE);
+  }
+}

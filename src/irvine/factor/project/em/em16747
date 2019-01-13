@@ -1,0 +1,23 @@
+# Factorizations of Euclid-Mullin sequence starting with 16747.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 16747
+2 2.2.53.79
+3 3.5.7.11.29
+4 100483
+5 7.1442390401
+6 10223.6913541
+7 23.31414447666529
+8 127.28541.4584713417
+9 13.41.3083.3457.371525569
+10 17.97.170393.97647194167
+11 461.4903.206356558495229
+12 350261309929.613889001823
+13 5.223.557.25969.1222003.100370003.38072613473
+14 5627717.6490793.76223220929.135246765179
+15 2119221943685789707858848843435728841923191

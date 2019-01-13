@@ -1,0 +1,21 @@
+# Factorizations of Euclid-Mullin sequence starting with 27823.
+# Each term of this sequence is 1 + the product of the least prime factors of
+# all preceding values.  Thus to determine the sequence it is sufficient to
+# find the smallest prime factor of each term.  However, here we list as much
+# of each factorization as is known.
+#
+# Sean A. Irvine
+#
+1 27823
+2 2.2.2.2.37.47
+3 3.3.3.3.3.229
+4 139.1201
+5 23204383
+6 29881.18019589947
+7 16089226255491629587
+8 79.151.157.8209.3288193.5120579001193481686603
+9 29.503.1090255417.1285888087993774022855686201
+10 593055594637419159113026153579353070809763
+11 2400943870999748149.P66
+12 5.11.1781190781.153601893718399023719.P71
+13 7.7.13.81233.5979138002357983220056873681504389103.P59

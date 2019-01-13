@@ -1,0 +1,17 @@
+package irvine.oeis.a010;
+
+import irvine.math.q.Q;
+import irvine.oeis.PisotSequence;
+
+/**
+ * A010921.
+ * @author Sean A. Irvine
+ */
+public class A010921 extends PisotSequence {
+
+  /** Construct the sequence. */
+  public A010921() {
+    super(3, 13, Q.ONE);
+  }
+}
+

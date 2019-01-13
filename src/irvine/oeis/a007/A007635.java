@@ -1,0 +1,25 @@
+package irvine.oeis.a007;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A007635.
+ * @author Sean A. Irvine
+ */
+public class A007635 implements Sequence {
+
+  private Z mN = Z.NEG_ONE;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mN = mN.add(1);
+      final Z p = mN.square().add(mN).add(17);
+      if (p.isProbablePrime()) {
+        return p;
+      }
+    }
+  }
+}
+

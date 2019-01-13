@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<project name="chaos" default="release">
+
+  <property name="src.dir" value="src"/>
+  <property name="test.dir" value="test"/>
+  <property name="internal.dir" value="internal"/>
+  <property name="build.dir" value="build.tmp"/>
+  <property name="lib.dir" value="lib"/>
+
+  <taskdef resource="net/sf/antcontrib/antlib.xml">
+    <classpath>
+      <pathelement location="lib/ant-contrib-1.0b3.jar"/>
+    </classpath>
+  </taskdef>
+
+  <target name="compile-src" description="Compile the source">
+    <javac srcdir="${src.dir}" source="1.8">
+      <classpath>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="compile-internal" description="Compile the internal">
+    <javac srcdir="${internal.dir}" source="1.8">
+      <classpath>
+        <pathelement path="${src.dir}"/>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="compile-test" description="Compile the tests">
+    <javac srcdir="${test.dir}" source="1.8">
+      <classpath>
+        <pathelement path="${src.dir}"/>
+        <pathelement path="${internal.dir}"/>
+        <fileset dir="${lib.dir}" includes="**/*.jar" />
+      </classpath>
+    </javac>
+  </target>
+
+  <target name="joeis" description="Make a release of OEIS">
+    <delete dir="${build.dir}/classes"/>
+    <mkdir dir="${build.dir}/classes"/>
+    <javac destdir="${build.dir}/classes" srcdir="${src.dir}" nowarn="true" source="1.8" target="1.8" classpath="${src.dir}:${lib.dir}/apfloat.jar">
+      <include name="irvine/nt/**/*.java"/>
+      <include name="irvine/graph/**/*.java"/>
+      <include name="irvine/math/**/*.java"/>
+      <include name="irvine/factor/**/*.java"/>
+      <include name="irvine/util/array/**/*.java"/>
+      <include name="irvine/util/string/**/*.java"/>
+      <include name="irvine/util/time/**/*.java"/>
+      <include name="irvine/util/io/**/*.java"/>
+      <include name="irvine/util/*.java"/>
+      <exclude name="irvine/math/expression/**"/>
+      <exclude name="irvine/math/probability/**"/>
+    </javac>
+    <javac destdir="${build.dir}/classes" srcdir="${test.dir}" nowarn="true" source="1.8" target="1.8" classpath="${test.dir}:${lib.dir}/apfloat.jar:${lib.dir}/junit.jar" debug="on">
+      <include name="irvine/TestUtils.java"/>
+      <include name="irvine/nt/**/*.java"/>
+      <include name="irvine/math/**/*.java"/>
+      <exclude name="irvine/math/expression/**"/>
+      <exclude name="irvine/math/probability/**"/>
+    </javac>
+
+    <jar destfile="${build.dir}/joeis.jar" update="false">
+      <fileset dir="${build.dir}/classes"/>
+      <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/nt/fibonacci/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/data/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
+      <manifest>
+        <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
+        <attribute name="Implementation-Title" value="jOEIS"/>
+        <attribute name="Implementation-Version" value="1.1"/>
+        <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <property name="pitest.dir" value="pitest"/>
+  <path id="pitest.classpath">
+    <pathelement location="${pitest.dir}/pitest-ant-1.1.10.jar"/>
+    <pathelement location="${pitest.dir}/junit-4.12.jar"/>
+    <pathelement location="${pitest.dir}/pitest-1.1.10.jar"/>
+  </path>
+
+  <taskdef name="pitest" classname="org.pitest.ant.PitestTask" classpathref="pitest.classpath" onerror="report"/>
+  
+  <target name="pitest" depends="compile-test" description="Run pitest mutation testing. -Djava.class=xxx">
+    <path id="mutation.path">
+      <pathelement path="${src.dir}"/>
+      <pathelement path="${test.dir}"/>
+      <path refid="pitest.classpath"/>
+      <pathelement location="lib/jumble-annotations.jar"/>
+    </path>
+    <java classpathref="mutation.path" classname="FindTestClasses" outputproperty="test.class">
+      <arg value="${java.class}"/>
+    </java>
+
+    <pitest
+        pitClasspath="pitest.classpath"
+        classPath="mutation.path"
+        targetClasses="${java.class}"
+        targetTests="${test.class}"
+        reportDir="/tmp/pitest"
+        sourceDir="src,test"
+        outputFormats="HTML,XML,CSV"
+        />
+  </target>
+
+</project>

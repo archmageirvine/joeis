@@ -1,0 +1,25 @@
+package irvine.oeis.a016;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.string.English;
+
+/**
+ * A016037.
+ * @author Sean A. Irvine
+ */
+public class A016037 implements Sequence {
+
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    long c = 0;
+    int m = ++mN;
+    while (m != 4) {
+      m = English.toRawEnglish(m).length();
+      ++c;
+    }
+    return Z.valueOf(c);
+  }
+}

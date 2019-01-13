@@ -1,0 +1,16 @@
+package irvine.oeis.a004;
+
+import irvine.oeis.Stirling2TransformSequence;
+import irvine.oeis.a000.A000085;
+
+/**
+ * A004211.
+ * @author Sean A. Irvine
+ */
+public class A004211 extends Stirling2TransformSequence {
+
+  /** Construct the sequence. */
+  public A004211() {
+    super(new A000085(), 0);
+  }
+}

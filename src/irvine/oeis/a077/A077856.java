@@ -1,0 +1,15 @@
+package irvine.oeis.a077;
+
+import irvine.oeis.LinearRecurrence;
+
+/**
+ * A077856.
+ * @author Sean A. Irvine
+ */
+public class A077856 extends LinearRecurrence {
+
+  /** Construct the sequence. */
+  public A077856() {
+    super(new long[] {1, 0, -3, 3}, new long[] {1, 3, 6, 9});
+  }
+}

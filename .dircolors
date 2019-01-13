@@ -1,0 +1,108 @@
+# Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+
+# The keywords COLOR, OPTIONS, and EIGHTBIT (honored by the
+# slackware version of dircolors) are recognized but ignored.
+
+# Below, there should be one TERM entry for each termtype that is colorizable
+TERM linux
+TERM rxvt
+TERM console
+TERM con132x25
+TERM con132x30
+TERM con132x43
+TERM con132x60
+TERM con80x25
+TERM con80x28
+TERM con80x30
+TERM con80x43
+TERM con80x50
+TERM con80x60
+TERM xterm
+TERM eterm
+TERM vt100
+
+# Below are the color init strings for the basic file types. A color init
+# string consists of one or more of the following numeric codes:
+# Attribute codes:
+# 00=none 01=bold 04=underscore 05=blink 07=reverse 08=concealed
+# Text color codes:
+# 30=black 31=red 32=green 33=yellow 34=blue 35=magenta 36=cyan 37=white
+# Background color codes:
+# 40=black 41=red 42=green 43=yellow 44=blue 45=magenta 46=cyan 47=white
+NORMAL 00	# global default, although everything should be something.
+FILE 00 	# normal file
+DIR 01;36 	# directory
+LINK 01;36 	# symbolic link
+ORPHAN 01;41;36 # symlink to nonexistent file
+FIFO 47;33	# pipe
+SOCK 01;35	# socket
+BLK 47;33;01	# block device driver
+CHR 47;33;01 	# character device driver
+
+# This is for files with execute permission:
+EXEC 01;32
+
+# List any file extensions like '.gz' or '.tar' that you would like ls
+# to colorize below. Put the extension, a space, and the color init string.
+# (and any comments you want to add after a '#')
+
+# If you use DOS-style suffixes, you may want to uncomment the following:
+#.cmd 01;32 # executables (bright green)
+#.exe 01;32
+#.com 01;32
+#.btm 01;32
+#.bat 01;32
+
+# archives or compressed (bright red)
+.tar  31
+.tgz  31
+.arj  31
+.taz  31
+.lzh  31
+.zip  31
+.z    31
+.Z    31
+.gz   31
+.bz2  31
+.deb  31
+.rpm  31
+.jar  31
+.zip  31
+.ZIP  31
+# Audio formats
+.mp3  33
+.MP3  33
+.au   33
+.wav  33
+.WAV  33
+# image formats
+.jpg  35
+.jpeg 35
+.JPG  35
+.JPEG 35
+.gif  35
+.GIF  35
+.bmp  35
+.ppm  35
+.png  35
+.tga  35
+.xbm  35
+.xpm  35
+.tif  35
+# Video formats
+.mpg  01;35
+.mpeg 01;35
+.MPG  01;35
+.MPEG 01;35
+.avi  01;35
+.AVI  01;35
+.gl   01;35
+.dl   01;35
+.ram  01;35
+.mov  01;35
+.MOV  01;35
+# Misc data formats I like
+.arff 36
+.csv  36
+.xml  36

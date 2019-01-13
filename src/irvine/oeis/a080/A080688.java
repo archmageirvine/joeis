@@ -1,0 +1,42 @@
+package irvine.oeis.a080;
+
+import irvine.math.z.Z;
+import irvine.oeis.a064.A064553;
+import irvine.util.array.DynamicIntArray;
+
+/**
+ * A080688.
+ * @author Sean A. Irvine
+ */
+public class A080688 extends A080444 {
+
+  private final DynamicIntArray mA = new DynamicIntArray();
+  private final A064553 mSeq = new A064553();
+  private int mFirstUnused = 0;
+
+  private int index(final int y) {
+    int pos = mFirstUnused;
+    while (true) {
+      int v = mA.get(++pos);
+      if (v == 0) {
+        final Z vv = mSeq.next();
+        v = vv.intValueExact();
+        mA.set(pos, v);
+      }
+      if (v == y) {
+        if (pos == mFirstUnused + 1) {
+          ++mFirstUnused;
+        }
+        mA.set(pos, -v);
+        return pos;
+      }
+    }
+  }
+
+  @Override
+  public Z next() {
+    final Z yy = super.next();
+    final int y = yy.intValueExact();
+    return Z.valueOf(index(y));
+  }
+}

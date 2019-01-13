@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC "-//Puppy Crawl//DTD Suppressions 1.0//EN" "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+    <suppress checks="PackageHtml" files=".*test/.*"/>
+    <suppress checks="FileLength" files=".*AllTests.java"/>
+    <suppress checks="FileLength" files=".*CR.java"/>
+    <suppress checks="FileLength" files=".*CliFlags.java"/>
+    <suppress checks="FileLength" files=".*DisassemblerTest.java"/>
+    <suppress checks="FileLength" files=".*GenerateGraphs.java"/>
+    <suppress checks="FileLength" files=".*HumanEngine.java"/>
+    <suppress checks="FileLength" files=".*Lanczos.java"/>
+    <suppress checks="FileLength" files=".*LanczosReadMatrix.java"/>
+    <suppress checks="FileLength" files=".*Min4Scanner.java"/>
+    <suppress checks="FileLength" files=".*Min5Scanner.java"/>
+    <suppress checks="FileLength" files=".*MockResultSet.java"/>
+    <suppress checks="FileLength" files=".*Modulo.java"/>
+    <suppress checks="FileLength" files=".*MoveMasterTest.java"/>
+    <suppress checks="FileLength" files=".*Plantri.java"/>
+    <suppress checks="FileLength" files=".*PlantriTest.java"/>
+    <suppress checks="FileLength" files=".*PrimitiveTimings.java"/>
+    <suppress checks="FileLength" files=".*SchreierSims.java"/>
+    <suppress checks="FileLength" files=".*SymmetricGroupTest.java"/>
+    <suppress checks="FileLength" files=".*Twiddler.java"/>
+    <suppress checks="FileLength" files=".*Z.java"/>
+    <suppress checks="JavadocMethod" files=".*Tests?.java"/>
+    <suppress checks="JavadocVariable" files=".*/heroes/Actor.java"/>
+    <suppress checks="JavadocVariable" files=".*/heroes/Action.java"/>
+    <suppress checks="JavadocVariable" files=".*/heroes/Artifact.java"/>
+    <suppress checks="MethodLength" files=".*AllTests.java"/>
+    <suppress checks="MethodLength" files=".*BipScanner.java"/>
+    <suppress checks="MethodLength" files=".*Discriminant.java"/>
+    <suppress checks="MethodLength" files=".*Euler262.java"/>
+    <suppress checks="MethodLength" files=".*InverseMonotone.java"/>
+    <suppress checks="MethodLength" files=".*Lanczos.java"/>
+    <suppress checks="MethodLength" files=".*LanczosReadMatrix.java"/>
+    <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
+    <suppress checks="MethodLength" files=".*Planarity.java"/>
+    <suppress checks="MethodLength" files=".*Plantri.java"/>
+    <suppress checks="MethodLength" files=".*PolytopeC3Scanner.java"/>
+    <suppress checks="MethodLength" files=".*PolytopeScanner.java"/>
+    <suppress checks="MethodLength" files=".*A010089.java"/>
+    <suppress checks="ParameterNumber" files=".*BipExtensionFinder.java"/>
+    <suppress checks="ParameterNumber" files=".*BipScanner.java"/>
+    <suppress checks="ParameterNumber" files=".*Canon.java"/>
+    <suppress checks="ParameterNumber" files=".*DispatchVec.java"/>
+    <suppress checks="ParameterNumber" files=".*InvarProc.java"/>
+    <suppress checks="ParameterNumber" files=".*Min4Scanner.java"/>
+    <suppress checks="ParameterNumber" files=".*Min5AExtenderReducer.java"/>
+    <suppress checks="ParameterNumber" files=".*Min5C4ExtensionFinder.java"/>
+    <suppress checks="ParameterNumber" files=".*Min5ExtensionFinder.java"/>
+    <suppress checks="ParameterNumber" files=".*MockGraphics.java"/>
+    <suppress checks="ParameterNumber" files=".*Multigraph.java"/>
+    <suppress checks="ParameterNumber" files=".*NauGraph.java"/>
+    <suppress checks="ParameterNumber" files=".*NauGroup.java"/>
+    <suppress checks="ParameterNumber" files=".*NautyUtil.java"/>
+    <suppress checks="ParameterNumber" files=".*Planarity.java"/>
+    <suppress checks="ParameterNumber" files=".*Plantri.java"/>
+    <suppress checks="ParameterNumber" files=".*PolytopeC3Scanner.java"/>
+    <suppress checks="ParameterNumber" files=".*PolytopeScanner.java"/>
+    <suppress checks="ParameterNumber" files=".*QuadrangulationP1ExtenderReducer.java"/>
+    <suppress checks="ParameterNumber" files=".*QuadrangulationMin3Scanner.java"/>
+    <suppress checks="ParameterNumber" files=".*QuadrangulationNf4Scanner.java"/>
+    <suppress checks="ParameterNumber" files=".*UserLevelProc.java"/>
+</suppressions>
+

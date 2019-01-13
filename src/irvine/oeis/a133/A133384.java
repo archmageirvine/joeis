@@ -1,0 +1,15 @@
+package irvine.oeis.a133;
+
+import irvine.oeis.LinearRecurrence;
+
+/**
+ * A133384.
+ * @author Sean A. Irvine
+ */
+public class A133384 extends LinearRecurrence {
+
+  /** Construct the sequence. */
+  public A133384() {
+    super(new long[] {-10, 11}, new long[] {12, 102});
+  }
+}

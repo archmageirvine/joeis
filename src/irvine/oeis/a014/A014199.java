@@ -1,0 +1,16 @@
+package irvine.oeis.a014;
+
+import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.oeis.PeriodicSequence;
+
+/**
+ * A014199.
+ * @author Sean A. Irvine
+ */
+public class A014199 extends PeriodicSequence {
+
+  /** Construct the sequence. */
+  public A014199() {
+    super(Cyclotomic.inverse(190));
+  }
+}

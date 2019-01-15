@@ -4,8 +4,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * Tests the PollardRho factoring algorithm
- *
+ * Tests the corresponding class.
  * @author Sean A. Irvine
  */
 public class PollardRhoTest extends AbstractFactorTest {

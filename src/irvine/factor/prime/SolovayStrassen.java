@@ -21,14 +21,14 @@ public class SolovayStrassen extends AbstractPrime {
   private int mCount = 32;
 
   /**
-   * Construct a new SolovayStrassen primality tester with the default number of
+   * Construct a new Solovay-Strassen primality tester with the default number of
    * iterations.
    *
    */
   public SolovayStrassen() { }
 
   /**
-   * Construct a SolovayStrassen primality test with the specified number of iterations.
+   * Construct a Solovay-Strassen primality test with the specified number of iterations.
    *
    * @param count number of iterations
    */

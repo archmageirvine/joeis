@@ -1,16 +1,14 @@
 package irvine.factor.factor;
 
-import irvine.factor.util.FactorSequence;
-import irvine.math.z.Z;
-
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
+import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+
 /**
- * Tests the PMinusOne factoring algorithm
- *
+ * Tests the corresponding class.
  * @author Sean A. Irvine
- *
  */
 public class PMinusOneTest extends AbstractFactorTest {
 

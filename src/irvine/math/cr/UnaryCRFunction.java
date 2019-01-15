@@ -44,7 +44,7 @@ import java.io.Serializable;
  * Unary functions on constructive reals implemented as objects.
  * The <tt>execute</tt> member computes the function result.
  * Unary function objects on constructive reals inherit from
- * <tt>UnaryCRFunction</tt>.
+ * <code>UnaryCRFunction</code>.
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */

@@ -4,8 +4,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * Tests the PrimeDivision factoring algorithm
- *
+ * Tests the corresponding class.
  * @author Sean A. Irvine
  */
 public class PrimeDivisionTest extends AbstractFactorTest {

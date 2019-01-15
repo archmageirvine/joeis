@@ -6,7 +6,7 @@ import com.reeltwo.jumble.annotations.TestClass;
 
 /**
  * Main class for locating the test class for a list of targets.
- * Inspects the class for jumble TestClass annotations or reliess
+ * Inspects the class for jumble <code>TestClass</code> annotations or relies
  * on class naming conventions if that is missing
  * @author Kurt Gaastra
  */

@@ -9,7 +9,7 @@ import junit.framework.TestCase;
  */
 public abstract class AbstractPrimeTest extends TestCase {
 
-  /** The prime validater to be tested */
+  /** The prime validator to be tested */
   protected Prime mP = null;
 
   @Override

@@ -13,7 +13,7 @@ public abstract class AbstractFactorTest extends TestCase {
   /** Set this to true to include some slower tests. */
   protected static final boolean FULL = "true".equals(System.getProperty("irvine.factor.factor.extra-tests"));
 
-  /** The prime validater to be tested */
+  /** The prime validator to be tested */
   protected Factorizer mF = null;
 
 

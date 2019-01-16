@@ -27,6 +27,6 @@ done
 
 
 # Getting lists of smallest composites
-#grep '(' ~/chaos/src/irvine/factor/project/em/em[0-9]*[^~] | sed 's/:[0-9]* .*(/ /;s/).*//;s|^.*/||' | gawk '{print length($2),$1,$2}' | sort -rn
+#grep '(' ~/joeis/src/irvine/factor/project/em/em[0-9]*[^~] | sed 's/:[0-9]* .*(/ /;s/).*//;s|^.*/||' | gawk '{print length($2),$1,$2}' | sort -rn
 
-#cat ~/chaos/src/irvine/factor/project/em/em[0-9]*[^~] | grep '(\|#' | grep -v -- -- | sed 's/.*(//;s/).*//' | tr '\n' '%' | sed 's/%#/@/g' | tr '%' '\n' | grep -v '@' | gawk '{print length($0),$0}' | sort -rn
+#cat ~/joeis/src/irvine/factor/project/em/em[0-9]*[^~] | grep '(\|#' | grep -v -- -- | sed 's/.*(//;s/).*//' | tr '\n' '%' | sed 's/%#/@/g' | tr '%' '\n' | grep -v '@' | gawk '{print length($0),$0}' | sort -rn

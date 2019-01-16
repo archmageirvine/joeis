@@ -3,7 +3,7 @@
 # Factorizations of (2^n-1)n! + 1
 #
 # Print OEIS sequence using:
-# grep '^[0-9]' ~/chaos/src/irvine/factor/project/oeis/a181186 | gawk -F. '{printf NF", "}END{printf "\n"}'
+# grep '^[0-9]' ~/joeis/src/irvine/factor/project/oeis/a181186 | gawk -F. '{printf NF", "}END{printf "\n"}'
 #
 1 2
 2 7

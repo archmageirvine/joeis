@@ -7,11 +7,11 @@ if [ ! "${HOME}" ]; then
 fi
 
 export JAVA=/usr/local/java/jdk
-export SYSNAME=cvscheck_chaos
+export SYSNAME=cvscheck_joeis
 
-export WEB=${HOME}/public_html/cvscheck_chaos
+export WEB=${HOME}/public_html/cvscheck_joeis
 
-export CODEHOME=${HOME}/chaos
+export CODEHOME=${HOME}/joeis
 
 export MAIN_MODULE="."
 export SRC_MODULES="src internal"
@@ -33,7 +33,7 @@ export STYLE_EXCLUDES="Beta.java LineOfSight.java GrammarParser.java GrammarLexe
 export PATH=${HOME}/java_apps/findbugs/bin:${PATH}
 export STYLE_CHECKERS="asciiall checkstyleall findbugsall javacpd"
 export CPD_TOKENS=250
-export PLOT_PACKAGE_DEPENDENCIES_OPTS='irvine\|chaos irvine\|chaos 2 2'
+export PLOT_PACKAGE_DEPENDENCIES_OPTS='irvine\|joeis irvine 2 2'
 export LINKAGE_OPTS="--alltests"
 export FINDBUGS_OPTS="-pluginList ${HOME}/java_apps/spotbugs-3.1.0-RC5/lib/fb-contrib-7.0.5.sb.jar"
 

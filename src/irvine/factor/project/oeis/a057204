@@ -5,7 +5,7 @@
 # Next term is lpf p of 3+4R^2, such that p%6==1.
 # There is A057204.java that reads and checks this file.
 #
-# grep -v '^#' chaos/src/irvine/factor/project/oeis/a057204 | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | sed 's/^/3+4*(/;s/\*$/)^2\n/'
+# grep -v '^#' joeis/src/irvine/factor/project/oeis/a057204 | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | sed 's/^/3+4*(/;s/\*$/)^2\n/'
 #
 1 7
 2 199

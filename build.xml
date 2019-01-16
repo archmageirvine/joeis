@@ -53,15 +53,11 @@
       <include name="irvine/util/time/**/*.java"/>
       <include name="irvine/util/io/**/*.java"/>
       <include name="irvine/util/*.java"/>
-      <exclude name="irvine/math/expression/**"/>
-      <exclude name="irvine/math/probability/**"/>
     </javac>
     <javac destdir="${build.dir}/classes" srcdir="${test.dir}" nowarn="true" source="1.8" target="1.8" classpath="${test.dir}:${lib.dir}/apfloat.jar:${lib.dir}/junit.jar" debug="on">
       <include name="irvine/TestUtils.java"/>
       <include name="irvine/nt/**/*.java"/>
       <include name="irvine/math/**/*.java"/>
-      <exclude name="irvine/math/expression/**"/>
-      <exclude name="irvine/math/probability/**"/>
     </javac>
 
     <jar destfile="${build.dir}/joeis.jar" update="false">

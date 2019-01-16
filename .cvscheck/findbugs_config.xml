@@ -58,15 +58,6 @@
      <Match classregex="irvine.util.CliFlags\$1" >
        <BugPattern name="DM_EXIT" />
      </Match>
-     <Match classregex="chaos.graphics.HandleExit">
-       <BugPattern name="DM_EXIT" />
-     </Match>
-     <Match classregex="irvine.util.graphics.Plasma\$1">
-       <BugPattern name="DM_EXIT" />
-     </Match>
-     <Match classregex="irvine.util.graphics.ParticleExplosion\$1">
-       <BugPattern name="DM_EXIT" />
-     </Match>
 
      <!-- Math code making careful use of equality on floating-point -->
      <Match classregex="irvine.math.c.C">
@@ -132,11 +123,6 @@
        <BugCode name="UM"/>
      </Match>
 
-     <!-- Intentional naked notify -->
-     <Match classregex="chaos.util.BooleanLockTest">
-       <BugCode name="NN"/>
-     </Match>
-
      <Match classregex="irvine.math.PowerSetTest">
        <BugCode name="ITA"/>
      </Match>
@@ -178,22 +164,10 @@
      </Match>
 
      <!-- Special return -->
-     <Match classregex="chaos.selector.OrdinarySelector">
-       <BugCode name="EI"/>
-     </Match>
      <Match classregex="irvine.math.elliptic.EllipticCurveMod">
        <BugCode name="EI"/>
      </Match>
 
-     <!-- Too many dependencies -->
-     <Match classregex="chaos.graphics.GenericScreen\$2">
-       <BugCode name="SIC"/>
-     </Match>
-
-     <!-- This class is never serialized anyway -->
-     <Match classregex="chaos.graphics.ImageList">
-       <BugCode name="Se"/>
-     </Match>
      <!-- Don't care about serialization in the OEIS -->
      <Match classregex="irvine.oeis.*">
        <BugCode name="Se"/>
@@ -202,9 +176,6 @@
      <!-- Fingbugs false-positive -->
      <Match classregex="irvine.math.r.Bessel">
        <BugCode name="DLS"/>
-     </Match>
-     <Match classregex="irvine.solve.Puzzle009">
-       <BugCode name="IM"/>
      </Match>
      <Match classregex="irvine.oeis.a003.A003294">
        <BugCode name="BIT"/>
@@ -265,17 +236,9 @@
        <BugCode name="IICU"/>
      </Match>
 
-     <Match classregex="chaos.util.BooleanLockTest">
-       <BugCode name="FCBL"/>
-     </Match>
-
      <!-- false-positive -->
      <Match classregex="irvine.oeis.a008.A008866">
        <BugCode name="FCBL"/>
-     </Match>
-
-     <Match classregex="chaos.graphics.Animator\$1">
-       <BugCode name="STS"/>
      </Match>
 
      <Match classregex="irvine.util.CliFlags\$Flag">
@@ -289,9 +252,6 @@
        <BugCode name="LEST"/>
      </Match>
 
-     <!-- false-positives? -->                                                                           <Match classregex="irvine.solve.Puzzle084">
-       <BugCode name="SEO"/>
-     </Match>
      <!-- false-positives? -->                                                                           <Match classregex="irvine.oeis.a007.A007756">
        <BugCode name="SEO"/>
      </Match>
@@ -304,9 +264,6 @@
      <Match classregex="irvine.oeis.*">
        <BugCode name="PCAIL"/>
      </Match>
-     <Match classregex="irvine.euler.Euler44">
-       <BugCode name="PCAIL"/>
-     </Match>
 
      <!-- We have some iterators over infinite sets.  In those circumstances
           this is a false positive.  Also, it is really the programmers job
@@ -315,8 +272,4 @@
        <Bug pattern="IT_NO_SUCH_ELEMENT" />
      </Match>
 
-     <!-- Whole point of this method is to allow external statement. -->
-     <Match classregex="irvine.totara.TotaraConnection">
-       <BugCode name="SQL"/>
-     </Match>
 </FindBugsFilter>

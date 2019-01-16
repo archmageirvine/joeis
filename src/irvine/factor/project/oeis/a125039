@@ -6,7 +6,7 @@
 # Each prime in the sequence satisfies 8 | (p-1)
 #
 # To get next number to factor, something like:
-# cat ~/chaos/src/irvine/factor/project/oeis/a125039 | grep -v '^#' | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | gawk '{print "("$0"2)^4+1"}'
+# cat ~/joeis/src/irvine/factor/project/oeis/a125039 | grep -v '^#' | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | gawk '{print "("$0"2)^4+1"}'
 #
 1 17
 2 1336337

@@ -1,6 +1,6 @@
 # Factorizations of n!+7.
 # Needed for A100013
-# grep '^[0-9]' ~/chaos/src/irvine/factor/project/factorial/f7+ | gawk -F. '{printf NF", "}END{printf "\n"}'
+# grep '^[0-9]' ~/joeis/src/irvine/factor/project/factorial/f7+ | gawk -F. '{printf NF", "}END{printf "\n"}'
 0 2.2.2
 1 2.2.2
 2 3.3

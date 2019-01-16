@@ -5,7 +5,7 @@
 # Next term is lpf of R^4+1 such that term is 17 (mod 24).
 #
 # To get next number to factor, something like:
-# cat ~/chaos/src/irvine/factor/project/oeis/a125041 | grep -v '^#' | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | gawk '{print "("$0"2)^4+1;"}'
+# cat ~/joeis/src/irvine/factor/project/oeis/a125041 | grep -v '^#' | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | gawk '{print "("$0"2)^4+1;"}'
 # of better, run
 # java irvine.oeis.SequenceFactory A125041
 #

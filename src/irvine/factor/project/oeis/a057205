@@ -6,7 +6,7 @@
 # The lowest qualifying factor appears first in the following factorizations.
 # There is A057205.java that reads and checks this file.
 #
-# grep -v '^#' chaos/src/irvine/factor/project/oeis/a057205 | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | sed 's/^/4*/;s/\*$/-1\n/'
+# grep -v '^#' joeis/src/irvine/factor/project/oeis/a057205 | gawk '{print $2}' | sed 's/\..*//' | tr '\n' '*' | sed 's/^/4*/;s/\*$/-1\n/'
 #
 1 3
 2 11

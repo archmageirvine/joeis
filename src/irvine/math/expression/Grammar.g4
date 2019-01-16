@@ -1,7 +1,7 @@
 /**
  * Grammar. Build with:
  * <pre>
- * antlr4 -o /home/sean/chaos/src/irvine/math/expression -package irvine.math.expression -Dlanguage=Java -no-listener -no-visitor -lib /home/sean/chaos/src/irvine/math/expression /home/sean/chaos/src/irvine/math/expression/Grammar.g4
+ * antlr4 -o /home/sean/joeis/src/irvine/math/expression -package irvine.math.expression -Dlanguage=Java -no-listener -no-visitor -lib /home/sean/joeis/src/irvine/math/expression /home/sean/joeis/src/irvine/math/expression/Grammar.g4
  * </pre>
  * @author Sean A. Irvine
  */

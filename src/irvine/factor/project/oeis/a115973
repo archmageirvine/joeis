@@ -1,7 +1,7 @@
 # Factorizations of p^p+1, A115973 is number of distinct prime factors
 #
 # Following command produced A115973 from this file:
-# cat ~/chaos/src/irvine/factor/project/oeis/a115973 | grep -v '#\|(\|^ *$' | gawk -F. '{print NF}' | tr '\n' ',' | sed 's/,/, /g'
+# cat ~/joeis/src/irvine/factor/project/oeis/a115973 | grep -v '#\|(\|^ *$' | gawk -F. '{print NF}' | tr '\n' ',' | sed 's/,/, /g'
 2 5
 3 2^2.7
 5 2.3.521

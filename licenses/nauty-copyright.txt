@@ -1,0 +1,35 @@
+Taken from nauty.h
+
+/*****************************************************************************
+*                                                                            *
+*    AUTHOR: Brendan D. McKay                                                *
+*            Research School of Computer Science                             *
+*            Australian National University                                  *
+*            Canberra, ACT 2601, Australia                                   *
+*            phone:  +61 2 6125 3845                                         *
+*            email:  Brendan.McKay@anu.edu.au                                *
+*                                                                            *
+*   Nauty is copyright (1984-2015) Brendan McKay.  All rights reserved.      *
+*   Permission 
+*   is hereby given for use and/or distribution with the exception of        *
+*   sale for profit or application with nontrivial military significance.    *
+*   You must not remove this copyright notice, and you must document any     *
+*   changes that you make to this program.                                   *
+*   This software is subject to this copyright only, irrespective of         *
+*   any copyright attached to any package of which this is a part.           *
+*                                                                            *
+*   This program is only provided "as is".  No responsibility will be taken  *
+*   by the author, his employer or his pet rabbit* for any misfortune which  *
+*   befalls you because of its use.  I don't think it will delete all your   *
+*   files, burn down your computer room or turn your children against you,   *
+*   but if it does: stiff cheddar.  On the other hand, I very much welcome   *
+*   bug reports, or at least I would if there were any bugs.                 *
+*                                                       * RIP, 1989          *
+*   Traces is copyright Adolfo Piperno (2011-).                              *
+*                                                                            *
+*   Reference manual:                                                        *
+*     B. D. McKay and A. Piperno, nauty User's Guide (Version 2.5),          *
+*         http://pallini.di.uniroma1.it                                      *
+*         http://cs.anu.edu.au/~bdm/nauty/                                   *
+*                                                                            *
+*****************************************************************************/

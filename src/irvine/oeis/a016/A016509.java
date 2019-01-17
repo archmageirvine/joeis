@@ -1,0 +1,15 @@
+package irvine.oeis.a016;
+
+import irvine.oeis.ContinuedFractionSequence;
+
+/**
+ * A016509.
+ * @author Sean A. Irvine
+ */
+public class A016509 extends ContinuedFractionSequence {
+
+  /** Construct the sequence. */
+  public A016509() {
+    super(new A016704());
+  }
+}

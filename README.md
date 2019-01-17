@@ -37,6 +37,11 @@ Certain sequences requiring factorizations of large integers are backed by queri
 
 Certain sequences involving counting positions in chess make use of the Chesspresso library by Bernhard Seybold [http://www.chesspresso.org/].
 
+Testing
+-------
+
+The individual sequence implementations are tested again the data lines of the corresponding OEIS entries. In order to run the tests, the ```stripped.gz``` must first be retrieved from the OEIS server and layed out in a way the tests expect.  This is accomplished by ```test/irvine/oeis/Makefile```.  In addition to tests for individual sequences, the test suite also covers functionality of shared library code.
+
 Other Acknowledgements
 ----------------------
 

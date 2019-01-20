@@ -48,12 +48,13 @@ This project has benefited immensely and on numerous occasions by other contribu
 References
 ----------
 
-* A. K. Lenstra, lip: long integer package. Bellcore, 1989. [http://read.pudn.com/downloads103/doc/comm/422470/freelip_1.1/lipdoc.pdf]
-
-* B. D. McKay and A. Piperno, Practical Graph Isomorphism, II, ''J. Symbolic Computation'', (2013) *60* 94-112. [http://dx.doi.org/10.1016/j.jsc.2013.09.003]
+* H-J. Boehm, The constructive reals as a Java library, ''The Journal of Logic and Algebraic Programming'', *64*, (2005), 3-11. [https://doi.org/10.1016/j.jlap.2004.07.002]
 
 * G. Brinkmann and B. D. McKay, Fast generation of planar graphs (expanded edition). [https://users.cecs.anu.edu.au/~bdm/papers/plantri-full.pdf]
 
 * G. Brinkmann, S. Greenberg, C. Greenhill, B. D. McKay, R. Thomas and P. Wollan, Generation of simple quadrangulations of the sphere, ''Discrete Mathematics'', 305 (2005) 33-54. [https://users.cecs.anu.edu.au/~bdm/plantri/quad.pdf]
 
-* H-J. Boehm, The constructive reals as a Java library, ''The Journal of Logic and Algebraic Programming'', *64*, (2005), 3-11. [https://doi.org/10.1016/j.jlap.2004.07.002]
+* A. K. Lenstra, lip: long integer package. Bellcore, 1989. [http://read.pudn.com/downloads103/doc/comm/422470/freelip_1.1/lipdoc.pdf]
+
+* B. D. McKay and A. Piperno, Practical Graph Isomorphism, II, ''J. Symbolic Computation'', (2013) *60* 94-112. [http://dx.doi.org/10.1016/j.jsc.2013.09.003]
+

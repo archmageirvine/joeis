@@ -1,9 +1,7 @@
 jOEIS
 =====
 
-A collection of Java programs implementing sequences from the OEIS.
-
-[https://oeis.org/]
+A collection of Java programs implementing sequences from [The On-Line Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
 
 This is likely the largest coherent collection of programs for OEIS sequences beyond the Maple, Mathematics, and Pari programs directly associated with many entries.  The following plot shows the number of sequences implemented (in bins of 1000):
 

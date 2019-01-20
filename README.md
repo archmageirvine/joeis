@@ -25,15 +25,15 @@ Because Java does not come with libraries supporting all the things we need to d
 
 Although Java has its own BigInteger class for large integers, this project uses a big integer type based originally on the Lenstra's lip C package.
 
-Most sequences requiring real number arithmetic are handled using classes based on Hans-J. Boehm's constructible real arithmetic. [http://www.hboehm.info/crcalc/CRCalc.html]  A smaller number of real number based sequences make use of Mikko Tommila's apfloat library [http://www.apfloat.org/apfloat_java/].
+Most sequences requiring real number arithmetic are handled using classes based on Hans-J. Boehm's [constructible real arithmetic](http://www.hboehm.info/crcalc/CRCalc.html).  A smaller number of real number based sequences make use of Mikko Tommila's [apfloat library](http://www.apfloat.org/apfloat_java/).
 
-Certain parts of the nauty package for computing automorphism groups of graphs and digraphs were ported to Java.  Included here by permission (see associated copyright).  For serious work needing this functionality, I would recommend using the C implementations available from [http://users.cecs.anu.edu.au/~bdm/nauty/].
+Certain parts of the nauty package for computing automorphism groups of graphs and digraphs were ported to Java.  Included here by permission (see associated copyright).  For serious work needing this functionality, I would recommend using the C implementations available from [nauty](http://users.cecs.anu.edu.au/~bdm/nauty/).
 
-Similarly, parts of the plantri package for generating planar graphs were ported to Java. Included here by permission (see associated copyright).  Again canonical implementation is available from [https://users.cecs.anu.edu.au/~bdm/plantri/]
+Similarly, parts of the plantri package for generating planar graphs were ported to Java. Included here by permission (see associated copyright).  Again canonical implementation is available from [plantri](https://users.cecs.anu.edu.au/~bdm/plantri/).
 
-Certain sequences requiring factorizations of large integers are backed by queries to [http://factordb.com].
+Certain sequences requiring factorization of large integers are backed by queries to [factordb.com](http://factordb.com).
 
-Certain sequences involving counting positions in chess make use of the Chesspresso library by Bernhard Seybold [http://www.chesspresso.org/].
+Certain sequences involving counting positions in chess make use of the [Chesspresso library](http://www.chesspresso.org/) by Bernhard Seybold.
 
 Testing
 -------

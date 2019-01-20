@@ -19,7 +19,7 @@ done >oeis_done.dat
 
 gnuplot <<EOF
    set term pngcairo size 900,500
-   set output "oeis_done.png"
+   set output "oeis-done.png"
    set xlabel "Sequence Bin"
    set ylabel "Implemented"
    set tics out
@@ -44,3 +44,4 @@ EOF
     done
 } | awk -vmax=${max} '{pix[$1,$2]=$3}END{print "P6 1000 "max" 1"; for (y=0;y<max;y++) for(x=0; x<1000;x++) {val=pix[y,x]; if (val=="r") {printf "%c%c%c", 1, 0, 0} else if (val=="g") {printf "%c%c%c", 0, 1, 0} else {printf "%c%c%c", 0, 0, 0 }}}' | pnmtopng >oeis-implemented.png
 
+mv *.png ../../../doc

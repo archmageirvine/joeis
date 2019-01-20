@@ -40,5 +40,3 @@ src/irvine/factor/project/em/*.plot
 src/irvine/factor/project/em/mesh
 src/irvine/factor/dist/*.out
 oeis_done.dat
-oeis_done.png
-oeis-implemented.png

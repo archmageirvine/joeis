@@ -7,11 +7,11 @@ A collection of Java programs implementing sequences from the OEIS.
 
 This is likely the largest coherent collection of programs for OEIS sequences beyond the Maple, Mathematics, and Pari programs directly associated with many entries.  The following plot shows the number of sequences implemented (in bins of 1000):
 
-![implemented-plot](src/irvine/oeis_done.png)
+![implemented-plot](doc/oeis-done.png)
 
 A similar plot with one pixel for each sequence. Green indicates an implemented sequence, red a dead sequence (where an implementation is not needed).
 
-![implemented-plot](src/irvine/oeis-implemented.png)
+![implemented-plot](doc/oeis-implemented.png)
 
 Implementations of specific sequences implement the ```Sequence``` interface which provides a single method ```next()```.  The contract requires this to produce either the next member of the sequence or ```null``` in the case of reaching the end of a finite sequence.  In addition, it might sometimes throw an ``UnsupportedOperationException`` if the computing the next value is beyond the current implementation or if it would exceed the values that can be represneted by the bit integer class.
 

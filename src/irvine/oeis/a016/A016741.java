@@ -18,20 +18,20 @@ public class A016741 implements Sequence {
     @Override
     protected Boolean compute(final Integer n, final Integer prevA, final Integer prevB) {
       if (n <= 1) {
-        return false; // A can simply pick up remaining stone
+        return Boolean.FALSE; // A can simply pick up remaining stone
       }
       final int limit = Math.min(n, 2 * prevB);
       if (n == limit && prevA != limit) {
-        return false; // A can simply pick up all remaining stones
+        return Boolean.FALSE; // A can simply pick up all remaining stones
       }
       for (int k = 1; k <= limit; ++k) {
         if (k != prevA) {
           if (!mPlayerBCache.get(n - k, k, prevB)) {
-            return false;
+            return Boolean.FALSE;
           }
         }
       }
-      return true;
+      return Boolean.TRUE;
     }
   };
 
@@ -41,20 +41,20 @@ public class A016741 implements Sequence {
     @Override
     protected Boolean compute(final Integer n, final Integer prevA, final Integer prevB) {
       if (n <= 1) {
-        return true; // B can simply pick up remaining stone
+        return Boolean.TRUE; // B can simply pick up remaining stone
       }
       final int limit = Math.min(n, 2 * prevA);
       if (n == limit && prevB != limit) {
-        return true; // B can simply pick up all remaining stones
+        return Boolean.TRUE; // B can simply pick up all remaining stones
       }
       for (int k = 1; k <= limit; ++k) {
         if (k != prevB) {
           if (mPlayerACache.get(n - k, prevA, k)) {
-            return true;
+            return Boolean.TRUE;
           }
         }
       }
-      return false;
+      return Boolean.FALSE;
     }
   };
 

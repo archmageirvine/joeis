@@ -742,11 +742,13 @@ public final class CliFlags {
    */
   public static final boolean EXIT_OK;
   static {
-    final StackTraceElement[] trace = new Throwable().getStackTrace();
     boolean exitOk = true;
-    for (int i = 0; i < trace.length && exitOk; ++i) {
-      if (trace[i].getClassName().startsWith("junit")) {
-        exitOk = false;
+    for (StackTraceElement[] trace : Thread.getAllStackTraces().values()) {
+      for (int i = 0; i < trace.length && exitOk; ++i) {
+        if (trace[i].getClassName().startsWith("junit")) {
+          exitOk = false;
+          break;
+        }
       }
     }
     EXIT_OK = exitOk;

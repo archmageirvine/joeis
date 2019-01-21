@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTest(irvine.factor.dist.AllTests.suite());
     suite.addTest(irvine.factor.factor.AllTests.suite());
-    suite.addTest(irvine.factor.gnfs.AllTests.suite());
     suite.addTest(irvine.factor.prime.AllTests.suite());
     suite.addTest(irvine.factor.project.AllTests.suite());
     suite.addTest(irvine.factor.prover.AllTests.suite());

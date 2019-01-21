@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<project name="chaos" default="release">
+<project name="joeis" default="jar">
 
   <property name="src.dir" value="src"/>
   <property name="test.dir" value="test"/>
@@ -13,8 +13,13 @@
     </classpath>
   </taskdef>
 
+  <target name="clean">
+    <delete dir="${build.dir}"/>
+  </target>
+
   <target name="compile-src" description="Compile the source">
-    <javac srcdir="${src.dir}" source="1.8">
+    <mkdir dir="${build.dir}/classes"/>
+    <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.8" includeantruntime="false">
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
@@ -22,7 +27,7 @@
   </target>
 
   <target name="compile-internal" description="Compile the internal">
-    <javac srcdir="${internal.dir}" source="1.8">
+    <javac srcdir="${internal.dir}" source="1.8" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
@@ -31,7 +36,7 @@
   </target>
 
   <target name="compile-test" description="Compile the tests">
-    <javac srcdir="${test.dir}" source="1.8">
+    <javac srcdir="${test.dir}" source="1.8" destdir="${build.dir}/classes" includeantruntime="false">
       <classpath>
         <pathelement path="${src.dir}"/>
         <pathelement path="${internal.dir}"/>
@@ -40,41 +45,25 @@
     </javac>
   </target>
 
-  <target name="joeis" description="Make a release of OEIS">
-    <delete dir="${build.dir}/classes"/>
-    <mkdir dir="${build.dir}/classes"/>
-    <javac destdir="${build.dir}/classes" srcdir="${src.dir}" nowarn="true" source="1.8" target="1.8" classpath="${src.dir}:${lib.dir}/apfloat.jar">
-      <include name="irvine/nt/**/*.java"/>
-      <include name="irvine/graph/**/*.java"/>
-      <include name="irvine/math/**/*.java"/>
-      <include name="irvine/factor/**/*.java"/>
-      <include name="irvine/util/array/**/*.java"/>
-      <include name="irvine/util/string/**/*.java"/>
-      <include name="irvine/util/time/**/*.java"/>
-      <include name="irvine/util/io/**/*.java"/>
-      <include name="irvine/util/*.java"/>
-    </javac>
-    <javac destdir="${build.dir}/classes" srcdir="${test.dir}" nowarn="true" source="1.8" target="1.8" classpath="${test.dir}:${lib.dir}/apfloat.jar:${lib.dir}/junit.jar" debug="on">
-      <include name="irvine/TestUtils.java"/>
-      <include name="irvine/nt/**/*.java"/>
-      <include name="irvine/math/**/*.java"/>
-    </javac>
-
-    <jar destfile="${build.dir}/joeis.jar" update="false">
+  <target name="jar" description="Make a release of OEIS" depends="clean,compile-src">
+    <jar destfile="${build.dir}/joeis.jar" update="false" zip64Mode="as-needed">
       <fileset dir="${build.dir}/classes"/>
-      <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat.gz"/>
       <fileset dir="${src.dir}" includes="irvine/nt/fibonacci/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/factor/data/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
-      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
       <manifest>
         <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
         <attribute name="Implementation-Title" value="jOEIS"/>
@@ -84,6 +73,42 @@
     </jar>
   </target>
 
+  <target name="all-jar" description="Make a jar including tests" depends="clean,compile-src,compile-internal,compile-test">
+    <jar destfile="${build.dir}/joeis.jar" update="false" zip64Mode="always">
+      <fileset dir="${build.dir}/classes"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/nt/fibonacci/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/ag/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/gl/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/math/group/resources/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
+      <fileset dir="${src.dir}" includes="irvine/factor/data/*.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+
+      <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
+      <fileset dir="${test.dir}" includes="irvine/math/nauty/*.lst"/>
+      <fileset dir="${test.dir}" includes="irvine/factor/**/*.dat"/>
+      <fileset dir="${test.dir}" includes="irvine/graph/*.gph"/>
+      <fileset dir="${test.dir}" includes="irvine/math/long-suck.dat"/>
+
+      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/chesspresso-lib.jar" excludes="META-INF/**"/>
+      <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
+      <manifest>
+        <attribute name="Main-Class" value="irvine.oeis.SequenceFactory"/>
+        <attribute name="Implementation-Title" value="jOEIS"/>
+        <attribute name="Implementation-Version" value="1.1"/>
+        <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
+      </manifest>
+    </jar>
+  </target>
+
+  <!--
   <property name="pitest.dir" value="pitest"/>
   <path id="pitest.classpath">
     <pathelement location="${pitest.dir}/pitest-ant-1.1.10.jar"/>
@@ -114,5 +139,6 @@
         outputFormats="HTML,XML,CSV"
         />
   </target>
+-->
 
 </project>

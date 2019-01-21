@@ -30,7 +30,6 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.c.AllTests.suite());
     suite.addTest(irvine.math.cc.AllTests.suite());
     suite.addTest(irvine.math.cr.AllTests.suite());
-    suite.addTest(irvine.math.diophantine.AllTests.suite());
     suite.addTest(irvine.math.elliptic.AllTests.suite());
     suite.addTest(irvine.math.expression.AllTests.suite());
     suite.addTest(irvine.math.factorial.AllTests.suite());

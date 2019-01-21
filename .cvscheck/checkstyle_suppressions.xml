@@ -7,16 +7,11 @@
     <suppress checks="FileLength" files=".*AllTests.java"/>
     <suppress checks="FileLength" files=".*CR.java"/>
     <suppress checks="FileLength" files=".*CliFlags.java"/>
-    <suppress checks="FileLength" files=".*DisassemblerTest.java"/>
     <suppress checks="FileLength" files=".*GenerateGraphs.java"/>
-    <suppress checks="FileLength" files=".*HumanEngine.java"/>
-    <suppress checks="FileLength" files=".*Lanczos.java"/>
-    <suppress checks="FileLength" files=".*LanczosReadMatrix.java"/>
     <suppress checks="FileLength" files=".*Min4Scanner.java"/>
     <suppress checks="FileLength" files=".*Min5Scanner.java"/>
     <suppress checks="FileLength" files=".*MockResultSet.java"/>
     <suppress checks="FileLength" files=".*Modulo.java"/>
-    <suppress checks="FileLength" files=".*MoveMasterTest.java"/>
     <suppress checks="FileLength" files=".*Plantri.java"/>
     <suppress checks="FileLength" files=".*PlantriTest.java"/>
     <suppress checks="FileLength" files=".*PrimitiveTimings.java"/>
@@ -25,16 +20,10 @@
     <suppress checks="FileLength" files=".*Twiddler.java"/>
     <suppress checks="FileLength" files=".*Z.java"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>
-    <suppress checks="JavadocVariable" files=".*/heroes/Actor.java"/>
-    <suppress checks="JavadocVariable" files=".*/heroes/Action.java"/>
-    <suppress checks="JavadocVariable" files=".*/heroes/Artifact.java"/>
     <suppress checks="MethodLength" files=".*AllTests.java"/>
     <suppress checks="MethodLength" files=".*BipScanner.java"/>
     <suppress checks="MethodLength" files=".*Discriminant.java"/>
-    <suppress checks="MethodLength" files=".*Euler262.java"/>
     <suppress checks="MethodLength" files=".*InverseMonotone.java"/>
-    <suppress checks="MethodLength" files=".*Lanczos.java"/>
-    <suppress checks="MethodLength" files=".*LanczosReadMatrix.java"/>
     <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
     <suppress checks="MethodLength" files=".*Planarity.java"/>
     <suppress checks="MethodLength" files=".*Plantri.java"/>
@@ -50,7 +39,6 @@
     <suppress checks="ParameterNumber" files=".*Min5AExtenderReducer.java"/>
     <suppress checks="ParameterNumber" files=".*Min5C4ExtensionFinder.java"/>
     <suppress checks="ParameterNumber" files=".*Min5ExtensionFinder.java"/>
-    <suppress checks="ParameterNumber" files=".*MockGraphics.java"/>
     <suppress checks="ParameterNumber" files=".*Multigraph.java"/>
     <suppress checks="ParameterNumber" files=".*NauGraph.java"/>
     <suppress checks="ParameterNumber" files=".*NauGroup.java"/>

@@ -21,7 +21,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FinnishTest.class);
     suite.addTestSuite(FrenchTest.class);
     suite.addTestSuite(GermanTest.class);
-    suite.addTestSuite(HtmlEscapeFilterTest.class);
     suite.addTestSuite(HungarianTest.class);
     suite.addTestSuite(IrishGaelicTest.class);
     suite.addTestSuite(NorwegianTest.class);
@@ -34,7 +33,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(TelephoneTest.class);
     suite.addTestSuite(TeXTest.class);
     suite.addTestSuite(TextTableTest.class);
-    suite.addTestSuite(UnicodeRemapTest.class);
     suite.addTestSuite(WrappingStringBufferTest.class);
     return suite;
   }

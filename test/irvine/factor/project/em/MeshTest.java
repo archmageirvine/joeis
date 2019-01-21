@@ -14,7 +14,7 @@ public class MeshTest extends StandardIoTestCase {
 
   public void test() throws IOException {
     // Cut down input file for testing
-    final File mesh = TestUtils.resourceToFile("irvine/factor/project/em/mesh.test", new File("mesh-junit"));
+    final File mesh = TestUtils.resourceToFile("irvine/factor/project/em/mesh.dat", new File("mesh-junit"));
     try {
       System.setProperty("no.ecm", "true");
       Mesh.main("-l", "-s", "-v", "-i", mesh.getPath());

@@ -51,7 +51,7 @@ public class DirectedGraphTest extends StandardIoTestCase {
   }
 
   public void testCli1() throws IOException {
-    try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
+    try (final InputStream is = DirectedGraphTest.class.getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
       check(is, new String[] {"-o", "-T"},
         "3 2 0 2 1 2",
         "3 2 0 2 2 1",
@@ -64,7 +64,7 @@ public class DirectedGraphTest extends StandardIoTestCase {
   }
 
   public void testCli2() throws IOException {
-    try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
+    try (final InputStream is = DirectedGraphTest.class.getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
       check(is, new String[] {"-T"},
         "3 2 0 2 1 2",
         "3 2 0 2 2 1",
@@ -78,19 +78,18 @@ public class DirectedGraphTest extends StandardIoTestCase {
   }
 
   public void testCli3() throws IOException {
-    try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen2.lst")) {
+    try (final InputStream is = DirectedGraphTest.class.getClassLoader().getResourceAsStream("irvine/math/nauty/gen2.lst")) {
       check(is, new String[] {"-T", "-u"},
         ">Z 6 graphs read from stdin; 5000 digraphs generated;");
     }
   }
 
   public void testCli4() throws IOException {
-    try (final InputStream is = getClass().getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
+    try (final InputStream is = DirectedGraphTest.class.getClassLoader().getResourceAsStream("irvine/math/nauty/gen1.lst")) {
       check(is, new String[] {"-e", "2:3", "-T"},
         "3 3 0 1 2 0 1 2",
         ">Z 2 graphs read from stdin; 7 digraphs written to stdout;",
         "sec");
     }
   }
-
 }

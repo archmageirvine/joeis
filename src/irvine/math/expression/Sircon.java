@@ -3,13 +3,10 @@ package irvine.math.expression;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 
-import com.reeltwo.jumble.annotations.TestClass;
-
 /**
  * Expression evaluator.
  * @author Sean A. Irvine
  */
-@TestClass("irvine.math.expression.GrammarParserTest")
 public final class Sircon {
 
   private Sircon() { }

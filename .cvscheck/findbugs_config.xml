@@ -216,9 +216,6 @@
      <Match classregex="irvine.math.r.TrigonometricIntegralTest">
        <BugCode name="CNT"/>
      </Match>
-     <Match classregex="irvine.factor.gnfs.VectorTimesVectorTest">
-       <BugCode name="BSHIFT"/>
-     </Match>
      <!-- Going straight to a string afterwards so I don't think this is a problem -->
      <Match classregex="irvine.math.polynomial.CycleIndexReadBigN">
        <BugCode name="DMI"/>

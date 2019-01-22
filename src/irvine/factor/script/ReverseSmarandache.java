@@ -1,5 +1,6 @@
 package irvine.factor.script;
 
+import irvine.factor.project.smarandache.Smarandache;
 import irvine.math.z.Z;
 
 import java.io.BufferedReader;
@@ -41,7 +42,7 @@ public final class ReverseSmarandache {
           System.err.println("WARNING: Couldn't parse: " + line);
           continue;
         }
-        Z n = irvine.nt.smarandache.Smarandache.reverseSmarandacheZ(rsm).makeOdd();
+        Z n = Smarandache.reverseSmarandacheZ(rsm).makeOdd();
         final String[] factors = line.substring(space + 1).split("\\.");
         final StringBuilder sb = new StringBuilder();
         for (String f : factors) {

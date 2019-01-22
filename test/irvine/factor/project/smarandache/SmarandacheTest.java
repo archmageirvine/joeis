@@ -1,11 +1,10 @@
-package irvine.nt.smarandache;
+package irvine.factor.project.smarandache;
 
 import irvine.math.z.Z;
 import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class SmarandacheTest extends TestCase {

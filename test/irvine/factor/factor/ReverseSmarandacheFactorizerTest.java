@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.nt.smarandache.Smarandache;
+import irvine.factor.project.smarandache.Smarandache;
 
 /**
  * Tests the corresponding class.

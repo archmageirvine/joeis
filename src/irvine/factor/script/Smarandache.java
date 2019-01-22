@@ -42,7 +42,7 @@ public final class Smarandache {
           System.err.println("WARNING: Couldn't parse: " + line);
           continue;
         }
-        Z n = irvine.nt.smarandache.Smarandache.smarandacheZ(sm).makeOdd();
+        Z n = irvine.factor.project.smarandache.Smarandache.smarandacheZ(sm).makeOdd();
         final String[] factors = line.substring(space + 1).split("\\.");
         final StringBuilder sb = new StringBuilder();
         for (String f : factors) {

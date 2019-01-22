@@ -1,10 +1,9 @@
-package irvine.nt.smarandache;
+package irvine.factor.project.smarandache;
 
 import irvine.math.z.Z;
 
 /**
- * Routines relating to Smarandache and Lucas numbers.
- *
+ * Routines relating to Smarandache numbers.
  * @author Sean A. Irvine
  */
 public final class Smarandache {

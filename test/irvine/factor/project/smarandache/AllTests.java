@@ -1,4 +1,4 @@
-package irvine.nt.smarandache;
+package irvine.factor.project.smarandache;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;

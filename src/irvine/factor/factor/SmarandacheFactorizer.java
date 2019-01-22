@@ -5,7 +5,7 @@ import java.io.IOException;
 
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
-import irvine.nt.smarandache.Smarandache;
+import irvine.factor.project.smarandache.Smarandache;
 import irvine.util.io.IOUtils;
 
 /**

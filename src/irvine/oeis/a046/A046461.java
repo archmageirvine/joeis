@@ -7,7 +7,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Semiprime;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.nt.smarandache.Smarandache;
+import irvine.factor.project.smarandache.Smarandache;
 
 /**
  * A046461.

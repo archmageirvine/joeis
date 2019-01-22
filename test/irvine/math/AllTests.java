@@ -1,5 +1,6 @@
 package irvine.math;
 
+import irvine.oeis.MobiusTransformSequence;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
@@ -16,6 +17,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(FourByteVectorTest.class);
     suite.addTestSuite(IntegerUtilsTest.class);
     suite.addTestSuite(LongUtilsTest.class);
+    suite.addTestSuite(MobiusTest.class);
     suite.addTestSuite(MutableIntegerTest.class);
     suite.addTestSuite(OrderedPairTest.class);
     suite.addTestSuite(PolyominoTest.class);

@@ -8,7 +8,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
 import irvine.math.PopCount;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.util.AbstractIterator;
 
 /**

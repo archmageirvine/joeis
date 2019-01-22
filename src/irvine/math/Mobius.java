@@ -1,6 +1,5 @@
-package irvine.nt.mobius;
+package irvine.math;
 
-import irvine.math.LongUtils;
 import irvine.util.array.LongDynamicIntArray;
 
 /**

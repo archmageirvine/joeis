@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 
 /**
  * Generate A081237.

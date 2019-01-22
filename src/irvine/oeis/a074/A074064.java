@@ -5,7 +5,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.a000.A000793;
 
 /**

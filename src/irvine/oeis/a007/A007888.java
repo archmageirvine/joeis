@@ -12,7 +12,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

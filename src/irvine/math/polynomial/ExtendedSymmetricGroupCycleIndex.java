@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 
 /**
  * Cycle index for <code>S_n^{(m)}</code>.

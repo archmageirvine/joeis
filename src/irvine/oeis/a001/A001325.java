@@ -9,7 +9,7 @@ import irvine.math.polynomial.HararyMultiply;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

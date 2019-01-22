@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

@@ -2,7 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

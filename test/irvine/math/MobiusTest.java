@@ -1,14 +1,12 @@
-package irvine.nt.mobius;
-
-import irvine.util.array.LongDynamicIntArray;
+package irvine.math;
 
 import java.lang.reflect.Field;
 
+import irvine.util.array.LongDynamicIntArray;
 import junit.framework.TestCase;
 
 /**
- * Tests the corresponding class.
- *
+ * Test the corresponding class.
  * @author Sean A. Irvine
  */
 public class MobiusTest extends TestCase {

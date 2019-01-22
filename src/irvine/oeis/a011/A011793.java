@@ -6,7 +6,7 @@ import java.util.HashSet;
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
-import irvine.nt.mobius.Mobius;
+import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**

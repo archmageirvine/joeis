@@ -1,6 +1,5 @@
 package irvine.math;
 
-import irvine.oeis.MobiusTransformSequence;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 

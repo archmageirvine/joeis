@@ -1095,3 +1095,4 @@ A016106 Nonpalindromic and "non-core" numbers that when squared give palindrome 
 A016119 Minimal number of cosets in an orthogonal sublattice of A_n (minimal number of paths in any trellis diagram), likely hard
 A016120 Minimal number of cosets in an orthogonal sublattice of {A_n}* (minimal number of paths in any trellis diagram), likely hard
 A016729 Highest minimal Hamming distance of any Type 4^H+ Hermitian additive self-dual code over GF(4) of length n
+A018189 Population of "Triangle" cellular automaton at n-th generation, insufficient detail

@@ -13,11 +13,18 @@ public class Marks {
   private final int[] mMarks;
   private int mMarkValueVertex = 30000;
 
-  Marks(final int size) {
+  /**
+   * Construct marks of specified size.
+   * @param size number of marks
+   */
+  public Marks(final int size) {
     mMarks = new int[size];
   }
 
-  void resetMarksVertex() {
+  /**
+   * Reset all marks.
+   */
+  public void resetMarksVertex() {
     if ((++mMarkValueVertex) > 30000) {
       mMarkValueVertex = 1;
       Arrays.fill(mMarks, 0);
@@ -28,11 +35,20 @@ public class Marks {
     mMarks[x] = 0;
   }
 
-  boolean isMarkedVertex(final int x) {
+  /**
+   * Check if a vertex is marked.
+   * @param x vertex
+   * @return true iff marked
+   */
+  public boolean isMarkedVertex(final int x) {
     return mMarks[x] == mMarkValueVertex;
   }
 
-  void markVertex(final int x) {
+  /**
+   * Mark a vertex.
+   * @param x place to mark
+   */
+  public void markVertex(final int x) {
     mMarks[x] = mMarkValueVertex;
   }
 

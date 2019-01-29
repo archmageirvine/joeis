@@ -38,7 +38,7 @@ public class A018192 extends A081054 {
   }
 
   private Polynomial<Z> lambdaStarSeries(final int k, final int c, final int n) {
-    Z[] series = new Z[n + 1];
+    final Z[] series = new Z[n + 1];
     for (int d = 0; d <= n; ++d) {
       series[d] = lambda(d, k, c);
     }

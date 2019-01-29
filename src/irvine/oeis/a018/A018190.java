@@ -66,7 +66,7 @@ public class A018190 implements Sequence {
     private int mDummy1;
     private int mDummy2;   /* ints for temporary use. Every function may use
                               them but may NEVER rely on them not having changed
-				                      after another function has been called */
+                              after another function has been called */
     private int mFwdLbl;   // for the canonLabel function
     private int mBwdLbl;
   }
@@ -74,11 +74,11 @@ public class A018190 implements Sequence {
   /* The shortened data type used for edges in the triangular net */
   private static final class Edge2 {
     /* char pointer to where the edge starts. The real name in the
-			 net is never needed. This is the name of the vertex mapped
-			 here and 0 in case no vertex was already mapped here. It is used
-			 as an integer pointer with all edges around one vertex pointing
-			 to the same integer, so that modification of the value can be
-			 done faster */
+       net is never needed. This is the name of the vertex mapped
+       here and 0 in case no vertex was already mapped here. It is used
+       as an integer pointer with all edges around one vertex pointing
+       to the same integer, so that modification of the value can be
+       done faster */
     private MutableInteger mStart;
     private MutableInteger mEnd;
     private Edge2 mNext;     // previous edge in clockwise direction
@@ -90,9 +90,9 @@ public class A018190 implements Sequence {
   private final Edge[] mMap = new Edge[MAXNV];
   /* map[i] is an arbitrary edge starting at vertex i.
      WHICH edge is chosen is arbitrary. No function can rely
-		 on this edge not changing after something "has been done
-		 to the graph" -- when returning, it might be another
-		 arbitrary edge. */
+     on this edge not changing after something "has been done
+     to the graph" -- when returning, it might be another
+     arbitrary edge. */
 
 
   private int mMaxNumVertices = 0;
@@ -108,12 +108,12 @@ public class A018190 implements Sequence {
 
   /* This is always an edge with the boundary on the left side
      (mPrev-direction). It may only be altered in delete-vertex and
-		 add-vertex. It is always the edge leaving the last vertex
-		 and having the outer face on the left. */
+     add-vertex. It is always the edge leaving the last vertex
+     and having the outer face on the left. */
   private Edge mBoundaryEdge;
 
   /* Here the old boundary edges are stored in order to
-		 repair the boundary edge value after deletion of a vertex */
+     repair the boundary edge value after deletion of a vertex */
   private final Edge[] mBoundaryEdges = new Edge[MAXNV];
 
 
@@ -134,11 +134,11 @@ public class A018190 implements Sequence {
   private final int[] mDegree = new int[MAXNV]; /* The valency of the vertices */
 
   /* The number of boundary components of the vertex = the number of
-	   times it occurs in the boundary. For mDegree 6 it is 0, for
-	   mDegree 5 or 1 it is one, for 2,4 it is one or two and for 3
-		 it is one, two or three. The entry mComponents[i] gives the
-		 number of components of vertex i for 0<=i<=mNumVertices. For larger i it
-		 is undefined. */
+     times it occurs in the boundary. For mDegree 6 it is 0, for
+     mDegree 5 or 1 it is one, for 2,4 it is one or two and for 3
+     it is one, two or three. The entry mComponents[i] gives the
+     number of components of vertex i for 0<=i<=mNumVertices. For larger i it
+     is undefined. */
   private final int[] mComponents = new int[MAXNV];
 
   private final Edge[][] mCanNumberings = new Edge[MAXAUTS][MAXE]; /* the canonical numberings */
@@ -147,32 +147,31 @@ public class A018190 implements Sequence {
   /* The number of canonical numberings and orientation preserving canonical numberings */
 
   /* When a new vertex is added to the boundary, it is taken from this
-		 list. The list contains (pointers to) edges leaving a vertex with some
-		 pre-initialised edges and their inverse. mNewVertex[a][b] contains
-		 an edge starting at vertex a and being pre-initialised to form
-		 a star with b edges. mNewVertex[x][0] is not used. */
+     list. The list contains (pointers to) edges leaving a vertex with some
+     pre-initialised edges and their inverse. mNewVertex[a][b] contains
+     an edge starting at vertex a and being pre-initialised to form
+     a star with b edges. mNewVertex[x][0] is not used. */
   private final Edge[][] mNewVertex = new Edge[MAXNV][6];
 
   /* mPossibleLabels[i][j] contains the number of labels
-	   for a vertex with mDegree i and j components.
-	   Fields corresponding to impossible combinations
-	   like mPossibleLabels[6][2] are not initialized,
-	   so they contain a random value. */
+     for a vertex with mDegree i and j components.
+     Fields corresponding to impossible combinations
+     like mPossibleLabels[6][2] are not initialized,
+     so they contain a random value. */
   private final char[][] mPossibleLabels = new char[7][4];
 
   /* The labels of the skeleton describing the helicene (1,2 or
-		 maximally 3) interpreted as: 1,2 or 3 boundary edges when
-		 occurring on the boundary for the first time after
-		 "mBoundaryEdge" */
+     maximally 3) interpreted as: 1,2 or 3 boundary edges when
+     occurring on the boundary for the first time after
+     "mBoundaryEdge" */
   private final char[] mLabel = new char[MAXNV];
 
 
   //private final int[] variable_positions = new int[MAXNV]; /* list of vertices, where more than one mLabel is possible */
-  private final int[] mNumberOfPossibilities = new int[MAXNV]; /* how many possibilities are there ? This field is used
-				       differently in case of mBenzenoids and helicenes. For
-				       helicenes it gives the number of possibilities at the
-				       [i]th variable position -- for mBenzenoids it gives
-				       the number at vertex [i] */
+  /* How many possibilities are there ? This field is used differently in case of benzenoids
+     and helicenes. For helicenes it gives the number of possibilities at the [i]-th variable
+     position -- for benzenoids it gives the number at vertex [i] */
+  private final int[] mNumberOfPossibilities = new int[MAXNV];
   //private int maxlevel; /* number of variable positions minus 1 */
   /* These variables are global in order not to pass them in the recursive call of construct_labels */
 
@@ -187,33 +186,33 @@ public class A018190 implements Sequence {
   //private int just_count = 0; /* by default all isomers are really formed in the memory of the computer -- this can be switched off */
   private boolean mBenzenoids = false; /* shall just benzenoid structures be generated ? */
   private boolean mDetailed = false; /* shall additional data like the mGroupName and the formula be computed and
-		   displayed ? Option: d */
+       displayed ? Option: d */
   //FILE *outfile; /* The file to write data to -- default: stdout */
 
 
   /* for the embedding in the net in case of benzenoids, the following variables are  used: */
   private final Edge2[] mEdgeNet = initEdge2(MAXNV); /* This is an edge in the net that has the outer face of the
-			   embedding on the right and is the first edge of 
-			   the vertex [number] when running around the boundary
-			   starting from mBoundaryEdge in clockwise direction. So
-			   the direction of the edge is against the running direction.*/
+         embedding on the right and is the first edge of 
+         the vertex [number] when running around the boundary
+         starting from mBoundaryEdge in clockwise direction. So
+         the direction of the edge is against the running direction.*/
 
   private final int[][] mEmbedFromHere = new int[MAXNV + 1][2]; /* which vertices are embedded from here -- at most two
-				    they are listed in clockwise direction */
+            they are listed in clockwise direction */
 
 
   /* How many edges must(may) be checked when the vertex is embedded.
-		 The checking starts at the second edge in .mNext direction
-		 after the reference edge for the embedding.
-		 This is sometimes more than just the number of boundary edges. */
+     The checking starts at the second edge in .mNext direction
+     after the reference edge for the embedding.
+     This is sometimes more than just the number of boundary edges. */
   private final int[] mCheckEdges = new int[MAXNV + 1];
 
   /* An edge in the center of the net used for embedding the helicenes when testing for being benzenoid */
   private Edge2 mStartNet;
 
   /* How many edges are BETWEEN the first edge with boundary on the left
-		 leaving this vertex and the mNext one in clockwise direction ?
-		 This field is only valid for vertices with 2 boundary components. */
+     leaving this vertex and the mNext one in clockwise direction ?
+     This field is only valid for vertices with 2 boundary components. */
   private final int[] mJump = new int[MAXNV];
   //private final int[] jumpname = new int[MAXNV]; /* What is the name of the vertex at the mEnd of that edge ? */
 
@@ -248,8 +247,6 @@ public class A018190 implements Sequence {
 //  }
 
 //
-//  /******************************WRITEMAP_EXPLICITLY***************************/
-//
 //  void writemap_explicitly()
 //
 //  {
@@ -267,8 +264,6 @@ public class A018190 implements Sequence {
 //    fprintf(stderr,"\n");
 //  }
 //
-//  /*****************************WRITEPOSITIONS******************************/
-//
 //  void writepositions(Edge *starts[], int how_much[][6])
 //  {
 //    int i,j;
@@ -282,8 +277,6 @@ public class A018190 implements Sequence {
 //  }
 //
 //#endif
-//
-//  /******************************WRITECODE***********************************/
 //
 //  void writecode(FILE *fil)
 //
@@ -310,8 +303,6 @@ public class A018190 implements Sequence {
 //      putc(0,fil0);
 //    }
 //  }
-//
-//  /****************************FILL_IN**********************************************/
 //
 //  void fill_in(FILE *fil, Edge *edge, int *number , int mPrev[], int mNext[], int how_many)
 //
@@ -340,8 +331,6 @@ public class A018190 implements Sequence {
 //    }
 //  }
 //
-//
-//  /************************COMPUTE_BEC***********************************/
 //
 //  void compute_bec(char bec[])
 //  {
@@ -396,10 +385,10 @@ public class A018190 implements Sequence {
 //        alt++;
 //
 //        if(bec[alt] >= bec[0]) {
-//	/*
-//	found an alternative possible mStart
-//	try foreward
-//	*/
+//  /*
+//  found an alternative possible mStart
+//  try foreward
+//  */
 //          pos = alt;
 //          worse = 0;
 //          for(i=0;i<lbec && !improved && !worse;++i) {
@@ -440,8 +429,7 @@ public class A018190 implements Sequence {
 //    bec[lbec] = '\0';
 //    return;
 //  }
-//  /*************************WRITE_BEC************************************/
-//
+
 //  void write_bec(FILE *fil)
 //  {
 //    char code[4*MAXNV];
@@ -451,8 +439,6 @@ public class A018190 implements Sequence {
 //    return;
 //  }
 //
-//
-//  /******************************WRITE_HELICENE_PL***********************************/
 //
 //  void write_helicene_pl(FILE *fil)
 //
@@ -464,10 +450,10 @@ public class A018190 implements Sequence {
 //    static int first_write=1;
 //    Edge *run;
 //    static Edge *where[4*MAXNV+2]; /* where[x] is a pointer to an edge with the helicene vertex
-//				  number x on the left hand side */
+//          number x on the left hand side */
 //    static int i,j, vertex, runvertex, valency, visited[MAXNV];
 //    static int mPrev[4*MAXNV+2], mNext[4*MAXNV+2]; /* The vertex previous and mNext on the boundary
-//						of the vertex [x] */
+//            of the vertex [x] */
 //    static int total_vertices, deg2_vertices, deg3_vertices;
 //
 //
@@ -501,7 +487,7 @@ public class A018190 implements Sequence {
 //
 //
 //    for (i=0, vertex=deg2_vertices; i<mNumVertices; ++i) /* the mDegree 2 vertices get the smallest numbers,
-//					    so these ones mStart at deg2_vertices+1*/
+//              so these ones mStart at deg2_vertices+1*/
 //    { run=mMap[i];
 //      for (j=0; j<mDegree[i];++j)
 //      { /* every vertex is on the left hand side of some edge -- so we only do lefts */
@@ -529,18 +515,18 @@ public class A018190 implements Sequence {
 //        case 1: { fill_in(fil, run, &runvertex, mPrev, mNext, 4);
 //          break; } /* occurs only once in the boundary */
 //        case 2: { if (mComponents[vertex]==1) fill_in(fil, run, &runvertex, mPrev, mNext, 3);
-//		else
+//    else
 //          {
 //            switch(mLabel[vertex])
 //            {
 //              case 3: { if (!visited[vertex])
 //                fill_in(fil, run, &runvertex, mPrev, mNext, 2);
-//				else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
+//        else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
 //                break; }
 //              case 2: { fill_in(fil, run, &runvertex, mPrev, mNext, 1); break; }
 //              case 1: { if (visited[vertex])
 //                fill_in(fil, run, &runvertex, mPrev, mNext, 2);
-//				else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
+//        else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
 //                break; }
 //            }
 //            visited[vertex]=1;
@@ -548,18 +534,18 @@ public class A018190 implements Sequence {
 //          break;
 //        }
 //        case 3: { if (mComponents[vertex]==1) fill_in(fil, run, &runvertex, mPrev, mNext, 2);
-//		else
+//    else
 //          if (mComponents[vertex]==2)
 //          {
 //            switch(mLabel[vertex])
 //            {
 //              case 2: { if (visited[vertex])
 //                fill_in(fil, run, &runvertex, mPrev, mNext, 0);
-//				else fill_in(fil, run, &runvertex, mPrev, mNext, 1);
+//        else fill_in(fil, run, &runvertex, mPrev, mNext, 1);
 //                break; }
 //              case 1: { if (visited[vertex])
 //                fill_in(fil, run, &runvertex, mPrev, mNext, 1);
-//				else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
+//        else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
 //                break; }
 //            }
 //          }
@@ -568,7 +554,7 @@ public class A018190 implements Sequence {
 //          break;
 //        }
 //        case 4: { if (mComponents[vertex]==1) fill_in(fil, run, &runvertex, mPrev, mNext, 1);
-//		else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
+//    else fill_in(fil, run, &runvertex, mPrev, mNext, 0);
 //          break;
 //        }
 //        case 5: { fill_in(fil, run, &runvertex, mPrev, mNext, 0); break; }
@@ -590,10 +576,6 @@ public class A018190 implements Sequence {
 //
 //  }
 //
-//
-//
-//  /****************************WRITECOMPONENTS*****************************/
-//
 //  void writecomponents()
 //  {
 //    int i;
@@ -601,14 +583,12 @@ public class A018190 implements Sequence {
 //    for (i=0; i<mNumVertices; ++i) fprintf(stderr,"%d:%d ",i,mComponents[i]);
 //  }
 //
-//
-//
 
   private final char[] mRefStart = new char[2 * MAXNV]; /* .mStart from the reference edge for that mLabel in list */
   private final char[] mBakVal = new char[2 * MAXNV];          /* 0 if first time encountered 6 - deg[v] otherwise*/
-  private int mListLen = 0;/* how many elements in the list */
+  private int mListLen = 0; /* how many elements in the list */
 
-  private boolean canonLabel(final Edge[] starts, int orPres, int total, int init) {
+  private boolean canonLabel(final Edge[] starts, int orPres, final int total, final int init) {
     if (orPres == 0) {
       orPres = total; // All automorphisms are orientation preserving
     }
@@ -821,7 +801,7 @@ public class A018190 implements Sequence {
 //    labelp=mLabel+variable_positions[level];
 //    for (i=mNumberOfPossibilities[level]; i != 0 ;--i)
 //    { *labelp=i;
-//      if (level==maxlevel) 	{ writeUp(); }
+//      if (level==maxlevel)   { writeUp(); }
 //      else construct_labels(level+1);
 //    }
 //  }
@@ -865,7 +845,7 @@ public class A018190 implements Sequence {
 //    }
 //
 //    mGlobalInit=1; /* mNext time the canonLabel routine is called, it must
-//		  be initialised for a new skeleton */
+//      be initialised for a new skeleton */
 //
 //    /* compute the positions where various labels are possible */
 //    num_labels=1;
@@ -924,7 +904,7 @@ public class A018190 implements Sequence {
   private void embedBenzenoid(final int[] which, final int wp) {
 
     MutableInteger delete = null; // Is there an entry that must be reset to UNNAMED
-    int vertex = which[wp];
+    final int vertex = which[wp];
     final Edge2 startEdge = mEdgeNet[vertex];
     final Edge2 startEdgenn = startEdge.mNextNext;
 
@@ -1106,7 +1086,7 @@ public class A018190 implements Sequence {
         Edge2 runNet = startEdgenn;
         if (runNet.mInverse.mNextNext.mNextNext.mEnd.get() != UNNAMED) {
           /* At a position neighbouring both the faces where the hexagon is placed for
-	          label 1 and 2 a forbidden neighbour was detected, so only 3 is possible */
+            label 1 and 2 a forbidden neighbour was detected, so only 3 is possible */
           runNet = runNet.mNextNext;
           final Edge2 buffer = runNet.mInverse;
           Edge2 run2 = buffer.mNextNext;
@@ -1451,7 +1431,7 @@ public class A018190 implements Sequence {
         Edge2 runNet = startEdgeNN;
         if (runNet.mInverse.mNextNext.mNextNext.mEnd.get() != UNNAMED) {
           /* At a position neighbouring both the faces where the hexagon is placed for
-	           label 1 and 2 a forbidden neighbour was detected, so only 3 is possible */
+             label 1 and 2 a forbidden neighbour was detected, so only 3 is possible */
           runNet = runNet.mNextNext;
           final Edge2 buffer = runNet.mInverse;
           Edge2 run2 = buffer.mNextNext;
@@ -1679,7 +1659,7 @@ public class A018190 implements Sequence {
 
     /* First the order in that the vertices have to be placed is determined. They are
        just taken by running in clockwise direction around the inner dual: */
-    int vertex = mBoundaryEdge.mStart;
+    final int vertex = mBoundaryEdge.mStart;
 
     for (int i = 0; i < mMaxNumVertices; ++i) {
       first[i] = 1;
@@ -1779,7 +1759,7 @@ public class A018190 implements Sequence {
     mStartNet.mStart = mStartNet.mEnd;
   }
 
-  private final Edge[] startsBenz = new Edge[MAXAUTS];
+  private final Edge[] mStartsBenz = new Edge[MAXAUTS];
 
   private void nextStepBenzenoids() {
 
@@ -1820,9 +1800,9 @@ public class A018190 implements Sequence {
       }
       /* write them all to starts: */
       for (int dummyBenz = 0; dummyBenz < mNumberCanNumberings; dummyBenz++) {
-        startsBenz[dummyBenz] = mCanNumberings[dummyBenz][iBenz];
+        mStartsBenz[dummyBenz] = mCanNumberings[dummyBenz][iBenz];
       }
-      constructLabelsBenzenoid(startsBenz);
+      constructLabelsBenzenoid(mStartsBenz);
     }
 
   }
@@ -1905,7 +1885,7 @@ public class A018190 implements Sequence {
   /* Adds a new vertex starting at mStart.mStart and in mPrev direction from
      mStart and connected also to the mNext valency-1 vertices in clockwise orientation
      along the boundary. */
-  private void addVertex(Edge start, int valency) {
+  private void addVertex(Edge start, final int valency) {
     int vertex;
 
     Edge newEdge = mNewVertex[mNumVertices][valency];
@@ -2109,7 +2089,7 @@ public class A018190 implements Sequence {
       // Now we know that all numbers have been given
       for (Edge run = temp.mNext; run != temp; run = run.mNext) {
         // this loop marks all edges around temp.origin.
-        int vertex = number[run.mEnd];
+        final int vertex = number[run.mEnd];
         if (vertex > representation[rep]) {
           return 0;
         }
@@ -2180,7 +2160,7 @@ public class A018190 implements Sequence {
 
     while (actualNumber <= mNumVertices) {
       for (Edge run = temp.mPrev; run != temp; run = run.mPrev) {
-        int vertex = number[run.mEnd];
+        final int vertex = number[run.mEnd];
         if (vertex > representation[rep]) {
           return 0;
         }
@@ -2305,7 +2285,7 @@ public class A018190 implements Sequence {
 
     while (actualNumber <= mNumVertices) {
       for (Edge run = temp.mNext; run != temp; run = run.mNext) {
-        int vertex = number[run.mEnd];
+        final int vertex = number[run.mEnd];
         if (better) {
           representation[rep] = vertex;
         } else {
@@ -2390,7 +2370,7 @@ public class A018190 implements Sequence {
 
     while (actualNumber <= mNumVertices) {
       for (Edge run = temp.mPrev; run != temp; run = run.mPrev) {
-        int vertex = number[run.mEnd];
+        final int vertex = number[run.mEnd];
         if (better) {
           representation[rep] = vertex;
         } else {
@@ -2572,7 +2552,7 @@ public class A018190 implements Sequence {
     final Edge[] startListLast = new Edge[5];
     final Edge[] startList = new Edge[5 * MAXNV];
     final Edge[] numblist = new Edge[MAXE];
-    final Edge[] numbListMirror = new Edge[MAXE]; // lists of edges where	starting gives a canonical representation
+    final Edge[] numbListMirror = new Edge[MAXE]; // lists of edges where  starting gives a canonical representation
     final int[] colour = new int[MAXNV];
     final int[] representation = new int[2 * MAXE + MAXNV];
     int numbs = 1;
@@ -2702,7 +2682,7 @@ public class A018190 implements Sequence {
       }
     }
 
-	  /* In case of maxDegree<3 numbs and numbsMirror are not correct. In case of a path the mGroupName
+    /* In case of maxDegree<3 numbs and numbsMirror are not correct. In case of a path the mGroupName
        must be recomputed depending on the labels anyway, so only the case of a cycle -- to be exact:
        of a 3-cycle must be detected: */
     if (mDetailed && mNumEdges == 6 && mNumVertices == 3) {
@@ -2915,8 +2895,7 @@ public class A018190 implements Sequence {
               howMuch[numberStarts][0] = 1;
               diffPos = 1;
             }
-            if (endpoint[next.mStart] != 0 &&
-              (mDegree[run.mStart] == 1 || mDegree[next.mStart] == 1)) {
+            if (endpoint[next.mStart] != 0 && (mDegree[run.mStart] == 1 || mDegree[next.mStart] == 1)) {
               if (diffPos == 0) {
                 starts[numberStarts] = run;
               }
@@ -2932,7 +2911,7 @@ public class A018190 implements Sequence {
         while (run != mBoundaryEdge);
       } else {
         /* That is: either the special case mNumVertices=2 which doesn't hurt or there
-	         is absolutely no one -- noone there ? :-)*/
+           is absolutely no one -- noone there ? :-)*/
         Edge next = run.mInverse.mNext;
         Edge overNext = next.mInverse.mNext;
         do {
@@ -2959,12 +2938,10 @@ public class A018190 implements Sequence {
                 ++sum;
               }
               if (sum >= twos) {
-                {
-                  if (diffPos == 0) {
-                    starts[numberStarts] = run;
-                  }
-                  howMuch[numberStarts][diffPos++] = 3;
+                if (diffPos == 0) {
+                  starts[numberStarts] = run;
                 }
+                howMuch[numberStarts][diffPos++] = 3;
               }
             }
             if (diffPos != 0) {
@@ -3028,8 +3005,6 @@ public class A018190 implements Sequence {
 
   }
 
-//  /****************************USAGE****************************************/
-//
 //  void usage(char *name)
 //  {
 //    fprintf(stderr,"Usage: %s x [B] [b] [c] [d] [f outfile] [m a b] [p] [s] \n\n",name);
@@ -3052,7 +3027,6 @@ public class A018190 implements Sequence {
 //
 //
 //#ifndef NOLOG
-//  /*****************************WRITE_RESULTS*******************************/
 //
 //  void write_results(FILE *outfile, Horloge *watch)
 //  {

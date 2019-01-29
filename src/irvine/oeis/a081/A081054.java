@@ -26,11 +26,11 @@ public class A081054 implements Sequence {
     // inner element is x, outer is y
     Polynomial<Polynomial<Z>> series = RING2.zero();
     for (int l = 0; l <= n; ++l) {
-      Polynomial<Z> t = RING.zero();
+      final Z[] t = new Z[n + 1];
       for (int i = 0; i <= n; ++i) {
-        t = RING.add(t, RING.monomial(lambda(i, l + 1), i));
+        t[i] = lambda(i, l + 1);
       }
-      series = RING2.add(series, RING2.monomial(t, l));
+      series = RING2.add(series, RING2.monomial(Polynomial.create(t), l));
     }
     return series;
   }

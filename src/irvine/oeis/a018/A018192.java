@@ -38,11 +38,11 @@ public class A018192 extends A081054 {
   }
 
   private Polynomial<Z> lambdaStarSeries(final int k, final int c, final int n) {
-    Polynomial<Z> sum = RING.zero();
+    Z[] series = new Z[n + 1];
     for (int d = 0; d <= n; ++d) {
-      sum = RING.add(sum, RING.monomial(lambda(d, k, c), d));
+      series[d] = lambda(d, k, c);
     }
-    return sum;
+    return Polynomial.create(series);
   }
 
   private Z zeta(final int c, final int d, final int k) {
@@ -60,7 +60,8 @@ public class A018192 extends A081054 {
 
   private Z gammaTilde(final int d, final int c) {
     if (c == 1) {
-      return (d & 1) == 0 ? psiBarSeries(d / 2).coeff(d / 2) : Z.ZERO;
+      System.out.println("gamma tilde d==" + d);
+      return (d & 1) == 0 ? psiBarSeries(d / 2).coeff(d / 2) : Z.ZERO; // todo this might be the problem, should be psi not psiBar
     }
     if (c == 2) {
       final Z eta = eta(2, d).add((d & 1) == 1 ? psiBarSeries(d / 2).coeff((d - 1) / 2).multiply(d) : Z.ZERO);
@@ -77,6 +78,7 @@ public class A018192 extends A081054 {
   @Override
   public Z next() {
     ++mN;
+    System.out.println("n=" + mN);
     Z sum = Z.ZERO;
     final int n2 = 2 * mN;
     for (final Z dd : Cheetah.factor(n2).divisors()) {

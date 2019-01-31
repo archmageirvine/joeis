@@ -30,22 +30,16 @@ import java.util.Arrays;
  * A value of this type represents a non-negative integer that can be very large
  * (like those that occur as numeric values of high power towers, much larger
  * than those that can be represented by <code>Z.class</code> within feasible
- * memory limits), subject to a condition that either:
- * <list type="bullet">
- * <item>
- * the number fits into long type verbatim, or
- * </item>
- * <item>
- * the number of 1's in its binary form is a moderate number (such that an array of that size can be allocated),
- * and each of the positions of 1's in its binary form is, recursively, a number that can be represented
+ * memory limits), subject to a condition that either: the number fits into long
+ * type verbatim, or the number of 1's in its binary form is a moderate number
+ * (such that an array of that size can be allocated), and each of the positions
+ * of 1's in its binary form is, recursively, a number that can be represented
  * by <code>SparseInteger</code>.
- * </item>
- * </list>
- * 
+ *
  * @author Vladimir Reshetnikov
  * @author Sean A. Irvine (port to Java)
  */
-public class SparseInteger implements Comparable<SparseInteger> {
+public final class SparseInteger implements Comparable<SparseInteger> {
 
   // Original in C# uses unsigned long for base type.  Java lacks a native unsigned long type.
   // While it would be possible to work around this, it is simpler to sacrifice one more bit
@@ -222,7 +216,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
   // Special value used to indicate item was not removed
   private static final SparseInteger[] NOT_REMOVED = new SparseInteger[0];
 
-  public static SparseInteger[] remove(final SparseInteger[] array, final SparseInteger item)  {
+  private static SparseInteger[] remove(final SparseInteger[] array, final SparseInteger item)  {
     if (array == null || array.length == 0) {
       return NOT_REMOVED;
     }
@@ -273,7 +267,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
       return x;
     }
     if (x.isSmall() && y.isSmall()) {
-      long sum = x.mValue + y.mValue;
+      final long sum = x.mValue + y.mValue;
       if (sum > x.mValue) {
         return SparseInteger.create(sum); // if no overflow
       }
@@ -388,7 +382,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
    * @param exponent exponent to apply
    * @return <code>this^exponent</code>
    */
-  public SparseInteger power(SparseInteger exponent) {
+  public SparseInteger power(final SparseInteger exponent) {
     return multiply(log2(), exponent).exp2();
   }
 }

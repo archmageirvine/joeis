@@ -68,7 +68,7 @@ public class A002845 implements Sequence {
   // Fetches the result from <see cref="mExpressionsOfSize"/> if it has been already computed;
   // otherwise computes the set by constructing expressions using smaller expressions for bases and exponents
   // and removing duplicates, and then returns the result after storing it in <see cref="mExpressionsOfSize"/>.
-  private Set<SparseInteger> getExpressionsOfSize(int size) {
+  private Set<SparseInteger> getExpressionsOfSize(final int size) {
     assert size > 0;
     while (size >= mExpressionsOfSize.size()) {
       final int n = mExpressionsOfSize.size();

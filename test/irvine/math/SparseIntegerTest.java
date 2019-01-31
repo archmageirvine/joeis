@@ -39,9 +39,8 @@ public class SparseIntegerTest extends TestCase {
     assertTrue(0 == six.compareTo(six));
     assertTrue(six.equals(six));
 
-    final SparseInteger big = SparseInteger.create(Long.MAX_VALUE); // redo with -1L
-    SparseInteger huge = SparseInteger.multiply(big, big);
-
+    final SparseInteger big = SparseInteger.create(Long.MAX_VALUE);
+    final SparseInteger huge = SparseInteger.multiply(big, big);
     assertTrue(huge.equals(huge));
     assertEquals(0, huge.compareTo(huge));
     assertTrue(three.compareTo(huge) < 0);

@@ -80,7 +80,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
   /// a list of positions of 1's in its binary form (provided through <paramref name="positions"/>) or
   /// </item>
   /// <item>
-  /// its verbatim representation in <see cref="long"/> type (provided through <paramref name="value"/>).
+  //  its verbatim representation in <see cref="long"/> type (provided through <paramref name="value"/>).
   /// </item>
   /// </list>
   /// </summary>
@@ -133,7 +133,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
       v >>>= 1;
       ++position;
     }
-    assert k == positions.length : k + " " + positions.length;
+    assert k == positions.length;
     return positions;
   }
 
@@ -338,7 +338,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
    * @return <code>2^this</code>
    */
   public SparseInteger exp2() {
-    return isSmall() && mValue < 64
+    return isSmall() && mValue < 63
       ? create(1L << mValue)
       : create(this);
   }
@@ -369,7 +369,7 @@ public class SparseInteger implements Comparable<SparseInteger> {
 
     if (isSmall() && power.isSmall() && power.mValue < 62) {
       final long result = mValue << power.mValue;
-      if ((result >>> power.mValue) == mValue) {
+      if ((result >> power.mValue) == mValue) { // Use >>> if trying to handle 64 bits here!
         // if no overflow
         return create(result);
       }

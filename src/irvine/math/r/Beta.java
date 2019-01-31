@@ -64,7 +64,7 @@ public class Beta {
     return y == 0 ? POSITIVE_INFINITY : a > b ? (gamma(a) / y) * gamma(b) : (gamma(b) / y) * gamma(a);
   }
 
-  // Power series for incomplete beta used when b*x is small and x not
+  // power series for incomplete beta used when b*x is small and x not
   // too close to 1
   private static double ibetaPowerSeries(final double a, final double b, final double x) {
     final double ai = 1 / a;

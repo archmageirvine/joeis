@@ -211,7 +211,6 @@ A002833 Boolean fns, have paper, seq. is in table, but origin unclear
 A002839 Counting squares in rectangle, possible? but hard
 A002841 Number of 3-connected self-dual planar graphs with 2n edges
 A002844 Nonisentropic binary rooted trees with n nodes, insufficient detail
-A002845 2^2^... distinct values with different parentheses (likely to overflow quickly)
 A002853 Maximal set of equiangular lines, hard
 A002860 Simple dependency of A000479 or A000315
 A002863 Number of prime knots with n crossings
@@ -258,7 +257,6 @@ A003007 Ladder, have paper
 A003008 Ladder, have paper
 A003012 Packing cubes in torus, have paper, backtrack search is too slow
 A003018 3^3^... distinct values with different parentheses (likely to overflow quickly)
-A003019 4^4^... distinct values with different parentheses (likely to overflow quickly)
 A003034 Sylvester's problem: minimal number of ordinary lines through n points in the plan, hard
 A003035 Maximal number of 3-tree rows in n-tree orchard problem
 A003036 Number of simplicial arrangements of n lines in the plane

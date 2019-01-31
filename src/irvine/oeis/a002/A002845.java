@@ -30,8 +30,10 @@ import java.util.HashSet;
 import java.util.Set;
 
 import irvine.math.SparseInteger;
+import irvine.math.r.DoubleUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
 
 /**
  * A002845.
@@ -39,6 +41,9 @@ import irvine.oeis.Sequence;
  * @author Sean A. Irvine (port to Java)
  */
 public class A002845 implements Sequence {
+
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+
   /*
    * A lazily computed sequence of terms of https://oeis.org/A002845:
    * "Number of distinct values taken by 2^2^...^2
@@ -87,9 +92,14 @@ public class A002845 implements Sequence {
   }
 
   private int mN = 0;
+  private long mStart = System.currentTimeMillis();
 
   @Override
   public Z next() {
-    return Z.valueOf(getExpressionsOfSize(++mN).size());
+    final int count = getExpressionsOfSize(++mN).size();
+    if (mVerbose) {
+      StringUtils.message("a(" + mN + ")=" + count + " " + DoubleUtils.NF2.format((System.currentTimeMillis() - mStart) / 1000.0) + "s");
+    }
+    return Z.valueOf(count);
   }
 }

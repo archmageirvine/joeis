@@ -151,7 +151,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
       return false;
     }
     final SparseInteger o = (SparseInteger) other;
-    return isSmall() ? mValue == o.mValue : Arrays.equals(mPositions, o.mPositions);
+    return mValue == o.mValue && Arrays.equals(mPositions, o.mPositions);
   }
 
   @Override

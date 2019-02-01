@@ -1,0 +1,87 @@
+#!/bin/bash
+
+# Pre-flight safety-belts
+if [[ "$(uname -s)" != "Linux" ]] && [[ "$(uname -s)" != "Darwin" ]]; then
+    # If you comment this check out you are on your own :-)
+    echo "Sorry, only Linux and MacOS are supported."
+    exit 1
+elif [[ "$(uname -m)" != "x86_64" ]]; then
+    # If you comment this check out you are on your own :-)
+    echo "Sorry, you must be running a 64bit operating system."
+    exit 1
+fi
+
+if [[ "$(uname -s)" == "Darwin" ]]; then
+    # Determine the directory that this script is installed in
+    # MacOS X doesn't support readlink -f, so do it slow and crufty
+    THIS_DIR="$(set -e; cd "$(dirname "$0")"; TARGET=$(basename "$0"); while [ -L "${TARGET}" ]; do TARGET="$(readlink "${TARGET}")"; cd "$(dirname "${TARGET}")"; TARGET="$(basename "${TARGET}")"; done; pwd -P)"
+else
+    # Determine the canonical directory that this script is installed in, using readlink -f if possible
+    THIS_SCRIPT="$(readlink -f "$0" 2>/dev/null || echo "$0")"
+    THIS_DIR="$(cd "$(dirname "${THIS_SCRIPT}")" 2>/dev/null && pwd -P)"
+fi
+
+# Allow JOEIS_MEM/JOEIS_JAVA_OPTS to be set before subcommand name
+while [[ "${1:0:4}" == "JOEIS_" ]]; do
+    if [[ "${1:0:8}" == "JOEIS_MEM=" ]]; then
+        JOEIS_MEM=${1:8}
+    elif [[ "${1:0:14}" == "JOEIS_JAVA_OPTS=" ]]; then
+        JOEIS_JAVA_OPTS=${1:14}
+    else
+        echo "Error: expected JOEIS_MEM=NNg or JOEIS_JAVA_OPTS=\"<jvm arguments>\", e.g.:"
+        echo "    $0 JOEIS_MEM=16g A45"
+        exit 1
+    fi
+    shift
+done
+
+JOEIS_JAVA="java"
+JAR="$THIS_DIR/joeis.jar"
+JOEIS_JAVA_OPTS=''         # Additional JVM options (e.g.: "-Djava.io.tmpdir=XXYY")
+JOEIS_MEM=''               # Maximum memory to use (e.g. 48g)
+JOEIS_MEM_PCT=90           # If JOEIS_MEM is not defined use this percentage of total RAM
+
+JOEIS_JAVA_OPTS_ARRAY=(${JOEIS_JAVA_OPTS})  # explicit word split into array
+
+# Check that the config is suitable
+java_path=$(which "${JOEIS_JAVA}" 2> /dev/null)
+if [[ -z "${java_path}" ]] || [[ ! -x "${java_path}" ]]; then
+  echo "Unable to execute ${JOEIS_JAVA}"
+  exit 1
+fi
+
+version=$("$JOEIS_JAVA" -Xmx64m -version 2>&1 | awk '/version "/ {gsub(/"/, "", $3); print $3}')
+if [[ "${version}" =~ ^1.[0-7] ]]; then
+  echo "${JOEIS_JAVA} is not Java 8 or later"
+  exit 1
+fi
+
+if [[ ! -r ${JAR} ]]; then
+  echo "Unable to read ${JAR}"
+  exit 1
+fi
+
+JOEIS_PROXY_ARRAY=()
+if [[ ! -z ${JOEIS_PROXY} ]]; then
+  proxy_host=${JOEIS_PROXY%%:*}
+  proxy_port=${JOEIS_PROXY#*:}
+  if [[ -z "$proxy_port" ]]; then
+    proxy_port=80
+  fi
+  JOEIS_PROXY_ARRAY=("-Dhttp.proxyHost=${proxy_host}" "-Dhttp.proxyPort=${proxy_port}")
+fi
+
+if [[ -z "$JOEIS_MEM" ]]; then
+  JOEIS_MEM=$("$JOEIS_JAVA" -Xmx64m -cp "${JAR}" irvine.util.ChooseMemory ${JOEIS_MEM_PCT})
+fi
+
+# Now run the primary joeis command
+HSLOG=./hs_err_pid$$.log
+"$JOEIS_JAVA" -Djava.library.path="$THIS_DIR" -XX:ErrorFile=${HSLOG} "${JOEIS_JAVA_OPTS_ARRAY[@]}" "${JOEIS_PROXY_ARRAY[@]}" "-Xmx$JOEIS_MEM" -jar "${JAR}" "$@"
+ECODE=$?
+if [[ -f "${HSLOG}" ]]; then
+    if grep -q "insufficient memory" "${HSLOG}"; then
+        echo "The operating system did not make requested memory available to the JVM.  Try removing other jobs on this machine, adjusting allocated memory appropriate to currently available memory, or adjusting command parameters to reduce memory requirements. More information is contained in the file: ${HSLOG}" >&2
+    fi
+fi
+exit ${ECODE}

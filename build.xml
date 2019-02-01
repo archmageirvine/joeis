@@ -45,7 +45,7 @@
     </javac>
   </target>
 
-  <target name="jar" description="Make a release of OEIS" depends="clean,compile-src">
+  <target name="jar" description="Make a release jar" depends="clean,compile-src">
     <jar destfile="${build.dir}/joeis.jar" update="false" zip64Mode="as-needed">
       <fileset dir="${build.dir}/classes"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
@@ -71,6 +71,14 @@
         <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
       </manifest>
     </jar>
+  </target>
+
+  <target name="release" description="Make a release of OEIS" depends="jar">
+    <property name="outdir" value="joeis-201902" />
+    <zip destfile="joeis.zip" duplicate="fail" >
+      <zipfileset fullpath="${outdir}/joeis.jar" dir="${build.dir}" includes="joeis.jar"/>
+      <zipfileset fullpath="${outdir}/joeis" dir="resources" includes="joeis" filemode="755"/>
+    </zip>
   </target>
 
   <target name="all-jar" description="Make a jar including tests" depends="clean,compile-src,compile-internal,compile-test">

@@ -17,6 +17,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.util.string.AllTests.suite());
     suite.addTest(irvine.util.time.AllTests.suite());
 
+    suite.addTestSuite(ChooseMemoryTest.class);
     suite.addTestSuite(CliFlagsTest.class);
     suite.addTestSuite(CollectionUtilsTest.class);
     suite.addTestSuite(DummyIteratorTest.class);

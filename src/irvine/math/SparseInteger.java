@@ -66,19 +66,6 @@ public final class SparseInteger implements Comparable<SparseInteger> {
   // to represent such "small" number verbatim.
   private SparseInteger[] mPositions;
 
-  /// <summary>
-  /// Initializes a value of <see cref="SparseInteger"/> type,
-  /// from either:
-  /// <list type="bullet">
-  /// <item>
-  /// a list of positions of 1's in its binary form (provided through <paramref name="positions"/>) or
-  /// </item>
-  /// <item>
-  //  its verbatim representation in <see cref="long"/> type (provided through <paramref name="value"/>).
-  /// </item>
-  /// </list>
-  /// </summary>
-  /// <remarks>At most one of the parameters can have a non-default value.</remarks>
   private SparseInteger(final SparseInteger[] positions, final long value) {
     assert value == 0 || positions == null;
     if (positions != null && positions.length == 0) {

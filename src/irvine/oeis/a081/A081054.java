@@ -18,7 +18,7 @@ public class A081054 implements Sequence {
   private static final PolynomialRing<Polynomial<Z>> RING2 = new PolynomialRing<>(RING);
   protected final MemoryFactorial mF = new MemoryFactorial();
 
-  private Z lambda(final int d, final int k) {
+  protected Z lambda(final int d, final int k) {
     return Binomial.binomial(2L * d + k - 1, 2L * d).multiply(mF.doubleFactorial(2 * d - 1));
   }
 

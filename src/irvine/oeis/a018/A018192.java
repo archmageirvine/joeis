@@ -33,7 +33,7 @@ public class A018192 extends A081054 {
     }
   }
 
-  private Z lambda(final int e, final int d, final int c) {
+  protected Z lambda(final int e, final int d, final int c) {
     return Binomial.binomial(e + d - 1, e).multiply(gamma(e, c));
   }
 
@@ -45,12 +45,12 @@ public class A018192 extends A081054 {
     return Polynomial.create(series);
   }
 
-  private Z zeta(final int c, final int d, final int k) {
+  protected Z zeta(final int c, final int d, final int k) {
     final int n = d - 2 * k;
     return RING.multiply(RING.pow(psiBarSeries(n).substitutePower(2, n), k, n), lambdaStarSeries(k, c, n), n).coeff(n);
   }
 
-  private Z eta(final int c, final int d) {
+  protected Z eta(final int c, final int d) {
     Z sum = Z.ZERO;
     for (int k = 1; k <= d / 2; ++k) {
       sum = sum.signedAdd((k & 1) == 1, zeta(c, d, k));
@@ -58,7 +58,7 @@ public class A018192 extends A081054 {
     return sum;
   }
 
-  private Z gammaTilde(final int d, final int c) {
+  protected Z gammaTilde(final int d, final int c) {
     if (c == 1) {
       System.out.println("gamma tilde d==" + d);
       return (d & 1) == 0 ? psiBarSeries(d / 2).coeff(d / 2) : Z.ZERO; // todo this might be the problem, should be psi not psiBar

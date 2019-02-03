@@ -17,7 +17,7 @@ public final class ChooseMemory {
     Class<?> c;
     try {
       c = Class.forName("com.sun.management.OperatingSystemMXBean");
-    } catch (ClassNotFoundException e) {
+    } catch (final ClassNotFoundException e) {
       c = null;
     }
     return c;
@@ -51,7 +51,7 @@ public final class ChooseMemory {
    * Main method for getting RAM.
    * @param args the command line arguments.
    */
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     final CliFlags flags = new CliFlags("ChooseMemory", "Program to get the appropriate RAM to use");
     flags.registerRequired(Integer.class, "int", "Percentage of RAM to use (1-100)");
     flags.setValidator(flags1 -> {
@@ -72,7 +72,7 @@ public final class ChooseMemory {
     final int megs;
     try {
       megs = (int) (getTotalMemory() * percentage / 1024.0 / 1024.0);
-    } catch (RuntimeException e) {
+    } catch (final RuntimeException e) {
       System.err.println("Cannot determine system memory!");
       return;
     }

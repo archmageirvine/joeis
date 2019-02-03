@@ -906,87 +906,17 @@ public class A018190 implements Sequence {
     MutableInteger delete = null; // Is there an entry that must be reset to UNNAMED
     final int vertex = which[wp];
     final Edge2 startEdge = mEdgeNet[vertex];
-    final Edge2 startEdgenn = startEdge.mNextNext;
+    final Edge2 startEdgeNN = startEdge.mNextNext;
 
     // OK -- then let's embed the vertex
     if (mNumberOfPossibilities[vertex] == 1) {
       // Some mEdgeNet[] entries have to be initialised
       if (mComponents[vertex] == 1) {
         // One vertex has to be embedded from here
-        final int fixVertex = mEmbedFromHere[vertex][0];
-        final Edge2 runNet = nthEdge(startEdgenn, mCheckEdges[vertex]);
-        final Edge2 buffer = runNet.mInverse;
-        final int poss = mCheckEdges[fixVertex];
-        Edge2 run2 = buffer.mNextNext;
-        if (poss == 3) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              run2 = run2.mNext;
-              if (run2.mEnd.get() == UNNAMED) {
-                mEdgeNet[fixVertex] = buffer;
-                delete = buffer.mStart;
-                delete.set(OCCUPIED);
-              } else {
-                return;
-              }
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 4) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              run2 = run2.mNext;
-              if (run2.mEnd.get() == UNNAMED) {
-                run2 = run2.mNext;
-                if (run2.mEnd.get() == UNNAMED) {
-                  mEdgeNet[fixVertex] = buffer;
-                  delete = buffer.mStart;
-                  delete.set(OCCUPIED);
-                } else {
-                  return;
-                }
-              } else {
-                return;
-              }
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 2) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              mEdgeNet[fixVertex] = buffer;
-              delete = buffer.mStart;
-              delete.set(OCCUPIED);
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 1) {
-          if (run2.mEnd.get() == UNNAMED) {
-            mEdgeNet[fixVertex] = buffer;
-            delete = buffer.mStart;
-            delete.set(OCCUPIED);
-          } else {
-            return;
-          }
-        } else if (poss == 0) {
-          mEdgeNet[fixVertex] = buffer;
-          delete = buffer.mStart;
-          delete.set(OCCUPIED);
+        delete = findPlace(vertex, startEdgeNN);
+        if (delete == null) {
+          return;
         }
-
-
         if (which[wp + 1] == EMPTY) {
           writeUp();
         } else {
@@ -995,7 +925,7 @@ public class A018190 implements Sequence {
       } else if (mComponents[vertex] == 2) {
         final int jumpVertex = mEmbedFromHere[vertex][1];
         if (jumpVertex >= 0) {
-          final Edge2 runNet = nthEdge(startEdgenn, mCheckEdges[vertex]);
+          final Edge2 runNet = nthEdge(startEdgeNN, mCheckEdges[vertex]);
           final Edge2 buffer = runNet.mInverse;
           int test = 1;
           Edge2 run2 = buffer.mNextNext;
@@ -1015,7 +945,7 @@ public class A018190 implements Sequence {
 
         final int fixVertex = mEmbedFromHere[vertex][0];
         // This one is ALWAYS embedded after vertex
-        final Edge2 buffer = startEdgenn.mInverse;
+        final Edge2 buffer = startEdgeNN.mInverse;
         int test = 1;
         Edge2 run2 = buffer.mNextNext;
         for (int j = mCheckEdges[fixVertex]; j != 0; run2 = run2.mNext, --j) {
@@ -1036,7 +966,7 @@ public class A018190 implements Sequence {
         }
       } else {
         // that is: (mComponents[vertex]==3) -- the other vertices MUST be embedded later and we know that 3 places must be checked
-        Edge2 buffer = startEdgenn.mInverse;
+        Edge2 buffer = startEdgeNN.mInverse;
         int fixVertex = mEmbedFromHere[vertex][0];
         Edge2 run2 = buffer.mNextNext;
         if (run2.mEnd.get() == UNNAMED) {
@@ -1058,7 +988,7 @@ public class A018190 implements Sequence {
         }
 
         fixVertex = mEmbedFromHere[vertex][1];
-        buffer = startEdgenn.mNextNext.mInverse;
+        buffer = startEdgeNN.mNextNext.mInverse;
 
         run2 = buffer.mNextNext;
         if (run2.mEnd.get() == UNNAMED) {
@@ -1083,7 +1013,7 @@ public class A018190 implements Sequence {
       final int poss = mNumberOfPossibilities[vertex];
       if (poss == 3) {
         final int fixVertex = mEmbedFromHere[vertex][0];
-        Edge2 runNet = startEdgenn;
+        Edge2 runNet = startEdgeNN;
         if (runNet.mInverse.mNextNext.mNextNext.mEnd.get() != UNNAMED) {
           /* At a position neighbouring both the faces where the hexagon is placed for
             label 1 and 2 a forbidden neighbour was detected, so only 3 is possible */
@@ -1172,7 +1102,7 @@ public class A018190 implements Sequence {
         final int jumpVertex = mEmbedFromHere[vertex][1];
         if (jumpVertex >= 0) {
           // First fix the mEdgeNet entry that will stay constant
-          final Edge2 runNet = nthEdge(startEdgenn, mCheckEdges[vertex]);
+          final Edge2 runNet = nthEdge(startEdgeNN, mCheckEdges[vertex]);
           final Edge2 buffer = runNet.mInverse;
           int test = 1;
           Edge2 run2 = buffer.mNextNext;
@@ -1193,7 +1123,7 @@ public class A018190 implements Sequence {
         // Now the other one
         final int fixVertex = mEmbedFromHere[vertex][0];
         // fixVertex must ALWAYS be embedded after vertex
-        Edge2 runNet = startEdgenn;  // One extra .mNext for the boundary edge (it must AT LEAST be one)
+        Edge2 runNet = startEdgeNN;  // One extra .mNext for the boundary edge (it must AT LEAST be one)
         // Now runNet is correct for the MINIMAL possible mLabel (that is 1)
         Edge2 buffer = runNet.mInverse;
         runNet = runNet.mNext;
@@ -1244,6 +1174,84 @@ public class A018190 implements Sequence {
     }
   }
 
+  private MutableInteger findPlace(final int vertex, final Edge2 start) {
+    MutableInteger delete = null;
+    final int fixVertex = mEmbedFromHere[vertex][0];
+    final Edge2 runNet = nthEdge(start, mCheckEdges[vertex]);
+    // To find the place to insert the vertex
+    final Edge2 buffer = runNet.mInverse;
+    final int poss = mCheckEdges[fixVertex];
+    Edge2 run2 = buffer.mNextNext;
+    if (poss == 3) {
+      if (run2.mEnd.get() == UNNAMED) {
+        run2 = run2.mNext;
+        if (run2.mEnd.get() == UNNAMED) {
+          run2 = run2.mNext;
+          if (run2.mEnd.get() == UNNAMED) {
+            mEdgeNet[fixVertex] = buffer;
+            delete = buffer.mStart;
+            delete.set(OCCUPIED);
+          } else {
+            return null;
+          }
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
+    } else if (poss == 4) {
+      if (run2.mEnd.get() == UNNAMED) {
+        run2 = run2.mNext;
+        if (run2.mEnd.get() == UNNAMED) {
+          run2 = run2.mNext;
+          if (run2.mEnd.get() == UNNAMED) {
+            run2 = run2.mNext;
+            if (run2.mEnd.get() == UNNAMED) {
+              mEdgeNet[fixVertex] = buffer;
+              delete = buffer.mStart;
+              delete.set(OCCUPIED);
+            } else {
+              return null;
+            }
+          } else {
+            return null;
+          }
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
+    } else if (poss == 2) {
+      if (run2.mEnd.get() == UNNAMED) {
+        run2 = run2.mNext;
+        if (run2.mEnd.get() == UNNAMED) {
+          mEdgeNet[fixVertex] = buffer;
+          delete = buffer.mStart;
+          delete.set(OCCUPIED);
+        } else {
+          return null;
+        }
+      } else {
+        return null;
+      }
+    } else if (poss == 1) {
+      if (run2.mEnd.get() == UNNAMED) {
+        mEdgeNet[fixVertex] = buffer;
+        delete = buffer.mStart;
+        delete.set(OCCUPIED);
+      } else {
+        return null;
+      }
+    } else if (poss == 0) {
+      mEdgeNet[fixVertex] = buffer;
+      delete = buffer.mStart;
+      delete.set(OCCUPIED);
+    }
+    return delete;
+  }
+
   /* This function continues the construction of the labels and
      simultaneously embeds the structures into the hexagonal net.
      Whenever it embeds a vertex, it checks whether the edges that are assumed
@@ -1271,78 +1279,9 @@ public class A018190 implements Sequence {
     if (mNumberOfPossibilities[vertex] == 1) {
       // Some mEdgeNet[] entries have to be initialised
       if (mComponents[vertex] == 1) { // One vertex has to be embedded from here.
-        final int fixVertex = mEmbedFromHere[vertex][0];
-        final Edge2 runNet = nthEdge(startEdgeNN, mCheckEdges[vertex]);
-        // To find the place to insert the vertex
-        final Edge2 buffer = runNet.mInverse;
-        final int poss = mCheckEdges[fixVertex];
-        Edge2 run2 = buffer.mNextNext;
-        if (poss == 3) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              run2 = run2.mNext;
-              if (run2.mEnd.get() == UNNAMED) {
-                mEdgeNet[fixVertex] = buffer;
-                delete = buffer.mStart;
-                delete.set(OCCUPIED);
-              } else {
-                return;
-              }
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 4) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              run2 = run2.mNext;
-              if (run2.mEnd.get() == UNNAMED) {
-                run2 = run2.mNext;
-                if (run2.mEnd.get() == UNNAMED) {
-                  mEdgeNet[fixVertex] = buffer;
-                  delete = buffer.mStart;
-                  delete.set(OCCUPIED);
-                } else {
-                  return;
-                }
-              } else {
-                return;
-              }
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 2) {
-          if (run2.mEnd.get() == UNNAMED) {
-            run2 = run2.mNext;
-            if (run2.mEnd.get() == UNNAMED) {
-              mEdgeNet[fixVertex] = buffer;
-              delete = buffer.mStart;
-              delete.set(OCCUPIED);
-            } else {
-              return;
-            }
-          } else {
-            return;
-          }
-        } else if (poss == 1) {
-          if (run2.mEnd.get() == UNNAMED) {
-            mEdgeNet[fixVertex] = buffer;
-            delete = buffer.mStart;
-            delete.set(OCCUPIED);
-          } else {
-            return;
-          }
-        } else if (poss == 0) {
-          mEdgeNet[fixVertex] = buffer;
-          delete = buffer.mStart;
-          delete.set(OCCUPIED);
+        delete = findPlace(vertex, startEdgeNN);
+        if (delete == null) {
+          return;
         }
         embedBenzenoidSym(which, wp + 1, starts);
       } else if (mComponents[vertex] == 2) {

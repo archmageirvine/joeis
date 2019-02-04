@@ -52,7 +52,7 @@ References
 
 * G. Brinkmann and B. D. McKay, Fast generation of planar graphs (expanded edition). [https://users.cecs.anu.edu.au/~bdm/papers/plantri-full.pdf]
 
-* G. Brinkmann, S. Greenberg, C. Greenhill, B. D. McKay, R. Thomas and P. Wollan, Generation of simple quadrangulations of the sphere, ''Discrete Mathematics'', 305 (2005) 33-54. [https://users.cecs.anu.edu.au/~bdm/plantri/quad.pdf]
+* G. Brinkmann, S. Greenberg, C. Greenhill, B. D. McKay, R. Thomas and P. Wollan, Generation of simple quadrangulations of the sphere, ''Discrete Mathematics'', *305* (2005) 33-54. [https://users.cecs.anu.edu.au/~bdm/plantri/quad.pdf]
 
 * A. K. Lenstra, lip: long integer package. Bellcore, 1989. [http://read.pudn.com/downloads103/doc/comm/422470/freelip_1.1/lipdoc.pdf]
 

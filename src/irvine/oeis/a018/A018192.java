@@ -13,6 +13,8 @@ import irvine.oeis.a081.A081054;
  */
 public class A018192 extends A081054 {
 
+  // After Alexander Stoimenow
+
   private Z gamma(final int d, final int c) {
     if ((c & 1) == 0) {
       Z sum = Z.ZERO;
@@ -35,7 +37,7 @@ public class A018192 extends A081054 {
     return Binomial.binomial(e + d - 1, e).multiply(gamma(e, c));
   }
 
-  private Polynomial<Z> lambdaStarSeries(final int k, final int c, final int n) {
+  protected Polynomial<Z> lambdaStarSeries(final int k, final int c, final int n) {
     final Z[] series = new Z[n + 1];
     for (int d = 0; d <= n; ++d) {
       series[d] = lambda(d, k, c);
@@ -51,12 +53,12 @@ public class A018192 extends A081054 {
     return Polynomial.create(t);
   }
 
-  private Z xiBar(final int c, final int d, final int k) {
+  protected Z xiBar(final int c, final int d, final int k) {
     final int n = d - 2;
     return RING.multiply(RING.diff(psiBarSeries(n).substitutePower(2, n).shift(1)), xiSeries(c, k - 1, n), n).coeff(n);
   }
 
-  private Z xi(final int c, final int d, final int k) {
+  protected Z xi(final int c, final int d, final int k) {
     final int n = d - 2 * k;
     if (n < 0 || k < 0) {
       return Z.ZERO;
@@ -76,7 +78,7 @@ public class A018192 extends A081054 {
     return sum;
   }
 
-  private Z lambda(final int n) {
+  protected Z lambda(final int n) {
     return mF.doubleFactorial(2 * n - 1);
   }
 

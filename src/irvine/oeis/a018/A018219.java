@@ -31,7 +31,6 @@ public class A018219 extends MemoryFunction2<Long, Long> implements Sequence {
       v.add(get(a - k, b));
     }
     addAndClear(mex, v);
-    int j;
     for (int k = 1; k <= b; ++k) {
       v.add(get(a, b - k));
     }

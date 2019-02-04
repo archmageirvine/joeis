@@ -1094,7 +1094,6 @@ A016119 Minimal number of cosets in an orthogonal sublattice of A_n (minimal num
 A016120 Minimal number of cosets in an orthogonal sublattice of {A_n}* (minimal number of paths in any trellis diagram), likely hard
 A016729 Highest minimal Hamming distance of any Type 4^H+ Hermitian additive self-dual code over GF(4) of length n
 A018189 Population of "Triangle" cellular automaton at n-th generation, insufficient detail
-A018193 Number of chord diagrams of degree n with an isolated chord of length 1, have attempt
 A018195 Possible numbers of complements of topologies on 4 points, pos, just powers of 2 afterwards
 A018196 Possible numbers of complements of topologies on 5 points
 A018197 Possible numbers of complements of topologies on 6 points

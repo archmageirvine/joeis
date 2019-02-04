@@ -17,6 +17,8 @@ public class A081054 implements Sequence {
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final PolynomialRing<Polynomial<Z>> RING2 = new PolynomialRing<>(RING);
   protected final MemoryFactorial mF = new MemoryFactorial();
+  private Polynomial<Z> mPsiBarCache = null;
+  private int mPsiBarCacheIndex = -1;
 
   protected Z lambda(final int d, final int k) {
     return Binomial.binomial(2L * d + k - 1, 2L * d).multiply(mF.doubleFactorial(2 * d - 1));
@@ -37,11 +39,16 @@ public class A081054 implements Sequence {
 
   protected Polynomial<Z> psiBarSeries(final int n) {
     // P(x) = L(x, -x * P(x))
+    if (n < mPsiBarCacheIndex) {
+      return mPsiBarCache;
+    }
     final Polynomial<Polynomial<Z>> lamdaSeries = lambdaSeries(n);
     Polynomial<Z> s = RING.one();
     for (int k = 0; k <= n; ++k) {
       s = RING2.eval(lamdaSeries, RING.negate(s.shift(1))).truncate(n);
     }
+    mPsiBarCacheIndex = n;
+    mPsiBarCache = s;
     return s;
   }
 

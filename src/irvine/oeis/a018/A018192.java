@@ -13,8 +13,6 @@ import irvine.oeis.a081.A081054;
  */
 public class A018192 extends A081054 {
 
-  // todo not yet right, factor of approx 2 missing somewhere
-
   private Z gamma(final int d, final int c) {
     if ((c & 1) == 0) {
       Z sum = Z.ZERO;
@@ -45,9 +43,29 @@ public class A018192 extends A081054 {
     return Polynomial.create(series);
   }
 
-  protected Z zeta(final int c, final int d, final int k) {
+  private Polynomial<Z> xiSeries(final int c, final int k, final int n) {
+    final Z[] t = new Z[n + 1];
+    for (int d = 0; d <= n; ++d) {
+      t[d] = xi(c, d, k);
+    }
+    return Polynomial.create(t);
+  }
+
+  private Z xiBar(final int c, final int d, final int k) {
+    final int n = d - 2;
+    return RING.multiply(RING.diff(psiBarSeries(n).substitutePower(2, n).shift(1)), xiSeries(c, k - 1, n), n).coeff(n);
+  }
+
+  private Z xi(final int c, final int d, final int k) {
     final int n = d - 2 * k;
-    return RING.multiply(RING.pow(psiBarSeries(n).substitutePower(2, n), k, n), lambdaStarSeries(k, c, n), n).coeff(n);
+    if (n < 0 || k < 0) {
+      return Z.ZERO;
+    }
+    return RING.multiply(RING.pow(psiBarSeries(n).substitutePower(2, n), k, n), lambdaStarSeries(k + 1, c, n), n).coeff(n);
+  }
+
+  protected Z zeta(final int c, final int d, final int k) {
+    return xi(c, d, k).add(xiBar(c, d, k));
   }
 
   protected Z eta(final int c, final int d) {
@@ -58,15 +76,40 @@ public class A018192 extends A081054 {
     return sum;
   }
 
+  private Z lambda(final int n) {
+    return mF.doubleFactorial(2 * n - 1);
+  }
+
+  private Z psi(final int n) {
+    return lambda(n).subtract(psiBarSeries(n).coeff(n));
+  }
+
+  private Z psiBar2(final int n, final int i) {
+    return RING.multiply(RING.pow(psiBarSeries(n - 1), i), lambda2Series(i + 1, n), n).coeff(n - i);
+  }
+
+  private Polynomial<Z> lambda2Series(final int i, final int n) {
+    final Z[] series = new Z[n + 1];
+    for (int d = 0; d <= n; ++d) {
+      series[d] = lambda(d, i);
+    }
+    return Polynomial.create(series);
+  }
+
+  private Z psiBar(final int n) {
+    Z sum = Z.ZERO;
+    for (int i = 0; i <= n; ++i) {
+      sum = sum.signedAdd((i & 1) == 0, psiBar2(n, i));
+    }
+    return sum;
+  }
+
   protected Z gammaTilde(final int d, final int c) {
     if (c == 1) {
-      System.out.println("gamma tilde d==" + d);
-      return (d & 1) == 0 ? psiBarSeries(d / 2).coeff(d / 2) : Z.ZERO; // todo this might be the problem, should be psi not psiBar
+      return (d & 1) == 0 ? psi(d / 2) : Z.ZERO;
     }
     if (c == 2) {
-      final Z eta = eta(2, d).add((d & 1) == 1 ? psiBarSeries(d / 2).coeff((d - 1) / 2).multiply(d) : Z.ZERO);
-      System.out.println("gamma~ c==2 d==" + d + " psibar=" + psiBarSeries(d / 2).coeff((d - 1) / 2) + " -> eta=" + eta);
-      return eta;
+      return eta(2, d).add((d & 1) == 1 ? psiBar((d - 1) / 2).multiply(d) : Z.ZERO);
     } else {
       assert c > 2;
       return eta(c, d);
@@ -78,16 +121,13 @@ public class A018192 extends A081054 {
   @Override
   public Z next() {
     ++mN;
-    System.out.println("n=" + mN);
     Z sum = Z.ZERO;
     final int n2 = 2 * mN;
     for (final Z dd : Cheetah.factor(n2).divisors()) {
       final int d = dd.intValue();
       final int c = n2 / d;
       sum = sum.add(gammaTilde(d, c).multiply(LongUtils.phi(c)));
-      System.out.println(mN + " " + d + " " + c + " -> " + sum);
     }
-    //return sum.divide(mN);
     return sum.divide(n2);
   }
 }

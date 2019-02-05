@@ -10,7 +10,7 @@ public class A018193 extends A018192 {
 
   // After Alexander Stoimenow
 
-  private Z psiTildeBar(final int d) {
+  protected Z psiTildeBar(final int d) {
     if (d == 1) {
       return Z.ZERO;
     }
@@ -34,7 +34,7 @@ public class A018193 extends A018192 {
     return xi(c, d - 2, k - 1);
   }
 
-  private Z psiTilde(final int d) {
+  protected Z psiTilde(final int d) {
     return lambda(d).subtract(psiTildeBar(d));
   }
 
@@ -49,6 +49,5 @@ public class A018193 extends A018192 {
       return eta(c, d);
     }
   }
-
 }
 

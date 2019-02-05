@@ -37,7 +37,7 @@ public class A018192 extends A081054 {
     return Binomial.binomial(e + d - 1, e).multiply(gamma(e, c));
   }
 
-  protected Polynomial<Z> lambdaStarSeries(final int k, final int c, final int n) {
+  protected Polynomial<Z> lambdaStarSeries(final int c, final int k, final int n) {
     final Z[] series = new Z[n + 1];
     for (int d = 0; d <= n; ++d) {
       series[d] = lambda(d, k, c);
@@ -63,7 +63,7 @@ public class A018192 extends A081054 {
     if (n < 0 || k < 0) {
       return Z.ZERO;
     }
-    return RING.multiply(RING.pow(psiBarSeries(n).substitutePower(2, n), k, n), lambdaStarSeries(k + 1, c, n), n).coeff(n);
+    return RING.multiply(RING.pow(psiBarSeries(n).substitutePower(2, n), k, n), lambdaStarSeries(c, k + 1, n), n).coeff(n);
   }
 
   protected Z zeta(final int c, final int d, final int k) {
@@ -90,7 +90,7 @@ public class A018192 extends A081054 {
     return RING.multiply(RING.pow(psiBarSeries(n - 1), i), lambda2Series(i + 1, n), n).coeff(n - i);
   }
 
-  private Polynomial<Z> lambda2Series(final int i, final int n) {
+  protected Polynomial<Z> lambda2Series(final int i, final int n) {
     final Z[] series = new Z[n + 1];
     for (int d = 0; d <= n; ++d) {
       series[d] = lambda(d, i);

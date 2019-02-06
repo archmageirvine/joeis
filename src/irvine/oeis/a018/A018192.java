@@ -15,7 +15,7 @@ public class A018192 extends A081054 {
 
   // After Alexander Stoimenow
 
-  private Z gamma(final int d, final int c) {
+  protected Z gamma(final int d, final int c) {
     if ((c & 1) == 0) {
       Z sum = Z.ZERO;
       Z zc = Z.ONE;

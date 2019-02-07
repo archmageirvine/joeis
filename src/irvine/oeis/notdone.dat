@@ -1106,3 +1106,4 @@ A018203 Possible numbers of complements of topologies on 10 points
 A018204 Possible numbers of complements of topologies on 10 points
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
+A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, couldn't find ref

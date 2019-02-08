@@ -1108,3 +1108,4 @@ A018216 Maximal number of subgroups in a group with n elements, needs all groups
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
 A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, couldn't find ref
 A018240 Rational knots with n crossings (up to mirroring)
+A018242 Number of projective order types; number of simple arrangements of n lines, hard?

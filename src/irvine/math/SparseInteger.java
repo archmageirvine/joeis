@@ -24,6 +24,7 @@ SOFTWARE.
 
 package irvine.math;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -371,5 +372,59 @@ public final class SparseInteger implements Comparable<SparseInteger> {
    */
   public SparseInteger power(final SparseInteger exponent) {
     return multiply(log2(), exponent).exp2();
+  }
+
+  /**
+   * Parse a sparse integer given in the form of a string.
+   * @param spec string representation
+   * @return sparse value
+   */
+  public static SparseInteger parse(final String spec) {
+    final int bracketOpen = spec.indexOf('[');
+    final long value = Long.parseLong(spec.substring(0, bracketOpen));
+    if (value != 0) {
+      return create(value);
+    }
+    final ArrayList<SparseInteger> p = new ArrayList<>();
+    for (int k = bracketOpen + 1, open = 0, lastStart = k; k < spec.length() - 1; ++k) {
+      switch (spec.charAt(k)) {
+        case '[':
+          ++open;
+          break;
+        case ']':
+          if (--open == 0) {
+            p.add(parse(spec.substring(lastStart, k)));
+            lastStart = k + 1;
+            if (spec.charAt(lastStart) == ',') {
+              ++k;
+              ++lastStart;
+            }
+          }
+          break;
+        default:
+          // no action
+          break;
+      }
+    }
+    return new SparseInteger(p.toArray(new SparseInteger[p.size()]), value);
+  }
+
+  @Override
+  public String toString() {
+    final StringBuilder sb = new StringBuilder();
+    sb.append(mValue).append('[');
+    if (mPositions != null) {
+      boolean first = true;
+      for (final SparseInteger sp : mPositions) {
+        if (first) {
+          first = false;
+        } else {
+          sb.append(',');
+        }
+        sb.append(sp);
+      }
+    }
+    sb.append(']');
+    return sb.toString();
   }
 }

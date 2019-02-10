@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * Prepend some terms in front of another sequence.
@@ -25,6 +26,15 @@ public class PrependSequence implements Sequence {
   public PrependSequence(final Sequence seq, final Z... terms) {
     mSeq = seq;
     mTerms = terms;
+  }
+
+  /**
+   * Create a new sequence with additional terms at the front.
+   * @param seq main sequence
+   * @param terms additional terms
+   */
+  public PrependSequence(final Sequence seq, final long... terms) {
+    this(seq, ZUtils.toZ(terms));
   }
 
   @Override

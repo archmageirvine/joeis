@@ -507,4 +507,17 @@ public final class ZUtils {
     }
     return counts;
   }
+
+  /**
+   * Return longs as an array of integers.
+   * @param a array
+   * @return Z array
+   */
+  public static Z[] toZ(final long... a) {
+    final Z[] res = new Z[a.length];
+    for (int k = 0; k < res.length; ++k) {
+      res[k] = Z.valueOf(a[k]);
+    }
+    return res;
+  }
 }

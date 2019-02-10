@@ -45,6 +45,9 @@ public class SparseIntegerTest extends TestCase {
     assertEquals(0, huge.compareTo(huge));
     assertTrue(three.compareTo(huge) < 0);
     assertTrue(huge.compareTo(two) > 0);
+    assertEquals("2[]", two.toString());
+    assertEquals("6[]", six.toString());
+    assertEquals(two, SparseInteger.parse(two.toString()));
   }
 
   public void testLargeArithmetic() {
@@ -58,5 +61,13 @@ public class SparseIntegerTest extends TestCase {
     assertTrue(two.compareTo(big) < 0);
     assertTrue(two.compareTo(huge) < 0);
     assertTrue(huge.compareTo(two) > 0);
+    assertEquals("0[4000[]]", big.toString());
+    assertEquals("0[8000[]]", huge.toString());
+    assertEquals(huge, SparseInteger.parse(huge.toString()));
+  }
+
+  public void testParse() {
+    final SparseInteger sp = SparseInteger.parse("0[65[],69[]]");
+    assertEquals("0[65[],69[]]", sp.toString());
   }
 }

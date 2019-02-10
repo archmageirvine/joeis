@@ -1,7 +1,5 @@
 package irvine.oeis.a007;
 
-import java.util.Arrays;
-
 import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
@@ -32,8 +30,7 @@ public class A007546 extends MemorySequence {
   }
 
   private Z f(final long n) {
-    final Z[] divisors = Cheetah.factor(n).divisors();
-    Arrays.sort(divisors);
+    final Z[] divisors = Cheetah.factor(n).divisorsSorted();
     final long b = divisors[divisors.length - 2].longValue();
     Z sum = Z.ZERO;
     for (long d = b; d < n; ++d) {
@@ -55,10 +52,4 @@ public class A007546 extends MemorySequence {
     }
     return sum;
   }
-
-  /*
-  with(numtheory):
-  f:= proc(n) local l, b, d; l:= sort([divisors (n)[]]); b:= l[nops(l)-1]; n-1 +(6*n+2)*(n-b) +2*add(floor(n/d), d=b..n-1) end:
-   a:= proc(n) option remember; `if`(n=1, f(2), a(n-1) +add(f(i), i=ithprime(n-1)+1..ithprime(n))) end: seq(a(n), n=1..40);
-   */
 }

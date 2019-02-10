@@ -1,6 +1,5 @@
 package irvine.oeis.a161;
 
-import java.util.Arrays;
 import java.util.LinkedList;
 
 import irvine.factor.factor.Cheetah;
@@ -25,9 +24,7 @@ public class A161908 implements Sequence {
       mN = mN.add(1);
       final Z[] sr = mN.sqrtAndRemainder();
       final Z sqrt = sr[1].equals(Z.ZERO) ? sr[0] : sr[0].add(1);
-      final Z[] divs = Cheetah.factor(mN).divisors();
-      Arrays.sort(divs);
-      for (final Z d : divs) {
+      for (final Z d : Cheetah.factor(mN).divisorsSorted()) {
         if (d.compareTo(sqrt) >= 0) {
           mLinkedList.add(d);
         }

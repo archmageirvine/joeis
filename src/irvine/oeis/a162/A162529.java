@@ -5,8 +5,6 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
-import java.util.Arrays;
-
 /**
  * A162529.
  * @author Sean A. Irvine
@@ -19,8 +17,7 @@ public class A162529 implements Sequence {
   public Z next() {
     while (true) {
       mN += 9;
-      final Z[] d = Cheetah.factor(mN).divisors();
-      Arrays.sort(d);
+      final Z[] d = Cheetah.factor(mN).divisorsSorted();
       final long s = LongUtils.sqrt(mN);
       for (int k = d.length - 1; k >= 0; --k) {
         final long w = d[k].longValue();

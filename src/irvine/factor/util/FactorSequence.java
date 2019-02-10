@@ -409,6 +409,16 @@ public final class FactorSequence {
   }
 
   /**
+   * Return the divisors sorted in numerical order.
+   * @return divisors
+   */
+  public Z[] divisorsSorted() {
+    final Z[] d = divisors();
+    Arrays.sort(d);
+    return d;
+  }
+
+  /**
    * Return the sum of the divisors.
    *
    * @return sum of the divisors

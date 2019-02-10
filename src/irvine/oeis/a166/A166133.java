@@ -1,12 +1,11 @@
 package irvine.oeis.a166;
 
+import java.util.HashSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
-
-import java.util.Arrays;
-import java.util.HashSet;
 
 /**
  * A166133.
@@ -46,10 +45,8 @@ public class A166133 implements Sequence {
     } else {
       // Use a naive search for the divisor
       final Z n = mA.square().subtract(1);
-      final Z[] divisors = Cheetah.factor(n).divisors();
-      Arrays.sort(divisors);
       boolean found = false;
-      for (final Z dd : divisors) {
+      for (final Z dd : Cheetah.factor(n).divisorsSorted()) {
         if (!isUsed(dd)) {
           mA = dd;
           found = true;

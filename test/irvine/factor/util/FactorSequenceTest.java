@@ -1,10 +1,10 @@
 package irvine.factor.util;
 
+import java.util.Arrays;
+
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
-
-import java.util.Arrays;
 
 /**
  * Tests the corresponding class.
@@ -403,12 +403,12 @@ public class FactorSequenceTest extends TestCase {
     assertEquals(Z.FOUR, d[3]);
     assertEquals(Z.SIX, d[4]);
     assertEquals(Z.valueOf(12), d[5]);
+    assertTrue(Arrays.equals(d, fs.divisorsSorted()));
     fs.remove(Z.TWO);
     fs.add(3, FactorSequence.PRIME);
     fs.add(3, FactorSequence.PRIME);
-    d = fs.divisors();
+    d = fs.divisorsSorted();
     assertEquals(4, d.length);
-    Arrays.sort(d);
     assertEquals(Z.ONE, d[0]);
     assertEquals(Z.THREE, d[1]);
     assertEquals(Z.NINE, d[2]);
@@ -416,9 +416,8 @@ public class FactorSequenceTest extends TestCase {
     fs.add(5, FactorSequence.PRIME);
     fs.add(5, FactorSequence.PRIME);
     fs.add(7, FactorSequence.PRIME);
-    d = fs.divisors();
+    d = fs.divisorsSorted();
     assertEquals(24, d.length);
-    Arrays.sort(d);
     assertEquals(Z.ONE, d[0]);
     assertEquals(Z.THREE, d[1]);
     assertEquals(Z.FIVE, d[2]);

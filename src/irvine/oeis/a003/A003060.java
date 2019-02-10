@@ -5,8 +5,6 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
-import java.util.Arrays;
-
 /**
  * A003060.
  * @author Sean A. Irvine
@@ -22,8 +20,7 @@ public class A003060 implements Sequence {
       return Z.ONE;
     }
     mTen = mTen.multiply(10);
-    final Z[] divisors = Cheetah.factor(mTen.subtract(1)).divisors();
-    Arrays.sort(divisors);
+    final Z[] divisors = Cheetah.factor(mTen.subtract(1)).divisorsSorted();
     // skip 1 | 10^n-1
     for (int k = 1; k < divisors.length; ++k) {
       ZUtils.ord(divisors[k], Z.TEN);

@@ -52,8 +52,7 @@ public class A130142 implements Sequence {
       if (!fs.isComplete()) {
         throw new UnsupportedOperationException("n=" + mN + " f=" + n);
       }
-      final Z[] d = fs.divisors();
-      Arrays.sort(d);
+      final Z[] d = fs.divisorsSorted();
       if (d[1].equals(Z.TWO)) {
         // If we ever get two as last digit, we will never get rid of it
         return Z.NEG_ONE;

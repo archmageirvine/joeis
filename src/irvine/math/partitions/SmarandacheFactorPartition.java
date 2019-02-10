@@ -4,8 +4,6 @@ import irvine.factor.factor.PrimeDivision;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
-import java.util.Arrays;
-
 /**
  * Compute the number of Smarandache factor partitions based on a method
  * described by Amarnath Murphy and Charles Ashbacher in "Generalized
@@ -44,9 +42,7 @@ public final class SmarandacheFactorPartition {
     final FactorSequence fs = new FactorSequence();
     fs.add(2, FactorSequence.PRIME, n);
     fs.add(3, FactorSequence.PRIME, m);
-    final Z[] d = fs.divisors();
-    Arrays.sort(d);
-    return count(d, 0, 1, Z.ONE);
+    return count(fs.divisorsSorted(), 0, 1, Z.ONE);
   }
 
   /**
@@ -61,9 +57,7 @@ public final class SmarandacheFactorPartition {
     if (!fs.isComplete()) {
       throw new UnsupportedOperationException();
     }
-    final Z[] d = fs.divisors();
-    Arrays.sort(d);
-    return count(d, 0, 1, Z.ONE);
+    return count(fs.divisorsSorted(), 0, 1, Z.ONE);
   }
 
   /**

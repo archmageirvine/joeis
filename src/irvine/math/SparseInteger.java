@@ -380,6 +380,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
    * @return sparse value
    */
   public static SparseInteger parse(final String spec) {
+    //System.out.println("Parsing " + spec);
     final int bracketOpen = spec.indexOf('[');
     final long value = Long.parseLong(spec.substring(0, bracketOpen));
     if (value != 0) {
@@ -393,7 +394,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
           break;
         case ']':
           if (--open == 0) {
-            p.add(parse(spec.substring(lastStart, k)));
+            p.add(parse(spec.substring(lastStart, k + 1)));
             lastStart = k + 1;
             if (spec.charAt(lastStart) == ',') {
               ++k;
@@ -401,12 +402,17 @@ public final class SparseInteger implements Comparable<SparseInteger> {
             }
           }
           break;
+        case ',':
+          if (open == 0) {
+            p.add(parse(spec.substring(lastStart, k)));
+            lastStart = k + 1;
+          }
         default:
           // no action
           break;
       }
     }
-    return new SparseInteger(p.toArray(new SparseInteger[p.size()]), value);
+    return p.isEmpty() ? create(value) : new SparseInteger(p.toArray(new SparseInteger[p.size()]), value);
   }
 
   @Override

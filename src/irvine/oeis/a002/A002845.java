@@ -24,10 +24,21 @@ SOFTWARE.
 
 package irvine.oeis.a002;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
+import java.util.zip.GZIPInputStream;
 
 import irvine.math.SparseInteger;
 import irvine.math.r.DoubleUtils;
@@ -63,6 +74,7 @@ public class A002845 implements Sequence {
 
   // A map from an expression size to the set of all expressions of that size
   private ArrayList<Set<SparseInteger>> mExpressionsOfSize = new ArrayList<>();
+
   {
     mExpressionsOfSize.add(null); // 0th
     mExpressionsOfSize.add(Collections.singleton(SparseInteger.create(base())));
@@ -101,5 +113,65 @@ public class A002845 implements Sequence {
       StringUtils.message("a(" + mN + ")=" + count + " " + DoubleUtils.NF2.format((System.currentTimeMillis() - mStart) / 1000.0) + "s");
     }
     return Z.valueOf(count);
+  }
+
+  private static void dumpSet(final File file, final HashSet<SparseInteger> set) throws FileNotFoundException {
+    final TreeSet<String> localSort = new TreeSet<>();
+    for (final SparseInteger sp : set) {
+      localSort.add(sp.toString());
+    }
+    set.clear();
+    try (final PrintStream out = new PrintStream(new FileOutputStream(file))) {
+      for (final String sp : localSort) {
+        out.println(sp);
+      }
+    }
+  }
+
+  private static BufferedReader reader(final String rootDir, final int n) throws IOException {
+    final File gz = new File(new File(rootDir), "A002845." + n + ".dat.gz");
+    return gz.exists()
+      ? new BufferedReader(new InputStreamReader(new GZIPInputStream(new FileInputStream(gz))))
+      : new BufferedReader(new FileReader(new File(new File(rootDir), "A002845." + n + ".dat")));
+  }
+
+
+  /**
+   * A file based approach to this problem.  Experimental attempts to get large terms
+   * without using lots of memory. Assumes all previous sizes are available on disk.
+   * @param args index
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    final String rootDir = args[0];
+    final int n = Integer.parseInt(args[1]);
+    final String fOut = "A002845." + n + ".dat";
+    int part = 0;
+    if (n == 1) {
+      try (final PrintStream out = new PrintStream(new FileOutputStream(new File(new File(rootDir), fOut)))) {
+        out.println(SparseInteger.create(2).toString());
+      }
+    } else {
+      final HashSet<SparseInteger> result = new HashSet<>();
+      for (int i = 1; i < n; ++i) {
+        try (final BufferedReader rBase = reader(rootDir, i)) {
+          String rLine;
+          while ((rLine = rBase.readLine()) != null) {
+            final SparseInteger base = SparseInteger.parse(rLine);
+            try (final BufferedReader eBase = reader(rootDir, n - i)) {
+              String eLine;
+              while ((eLine = eBase.readLine()) != null) {
+                final SparseInteger exponent = SparseInteger.parse(eLine);
+                result.add(base.power(exponent));
+                if (result.size() > 10000000) {
+                  dumpSet(new File(new File(rootDir), fOut + "." + ++part), result);
+                }
+              }
+            }
+          }
+        }
+      }
+      dumpSet(new File(new File(rootDir), fOut + "." + ++part), result);
+    }
   }
 }

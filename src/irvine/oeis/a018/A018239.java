@@ -12,7 +12,7 @@ public class A018239 extends A006862 {
   @Override
   public Z next() {
     while (true) {
-      final Z t =super.next();
+      final Z t = super.next();
       if (t.isProbablePrime()) {
         return t;
       }

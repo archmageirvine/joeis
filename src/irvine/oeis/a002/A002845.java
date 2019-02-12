@@ -36,6 +36,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.zip.GZIPInputStream;
@@ -135,6 +136,17 @@ public class A002845 implements Sequence {
       : new BufferedReader(new FileReader(new File(new File(rootDir), "A002845." + n + ".dat")));
   }
 
+  private static List<SparseInteger> load(final String rootDir, final int n) throws IOException {
+    final ArrayList<SparseInteger> list = new ArrayList<>();
+    try (final BufferedReader eBase = reader(rootDir, n)) {
+      String eLine;
+      while ((eLine = eBase.readLine()) != null) {
+        list.add(SparseInteger.parse(eLine));
+      }
+    }
+    return list;
+  }
+
 
   /**
    * A file based approach to this problem.  Experimental attempts to get large terms
@@ -145,17 +157,20 @@ public class A002845 implements Sequence {
   public static void main(final String[] args) throws IOException {
     final String rootDir = args[0];
     final int n = Integer.parseInt(args[1]);
-    final int slice = args.length > 2 ? Integer.parseInt(args[2]) : 0;
+    // Make it so slice is actually the larger of two numbers adding up to n
+    // this improves efficiency in the inner loop.  The use should supply
+    // values in the range 1..n/2
+    final int slice =args.length > 2 ? Integer.parseInt(args[2]) : 0;
     final String fOut = "A002845." + n + ".dat";
     int part = 0;
     if (n == 1) {
       try (final PrintStream out = new PrintStream(new FileOutputStream(new File(new File(rootDir), fOut)))) {
         out.println(SparseInteger.create(2).toString());
       }
-    } else {
+    } else if (slice == 0) {
+      // This is only useful for smaller n, does all slices, in a non-efficient manner
       final HashSet<SparseInteger> result = new HashSet<>();
-      final int limit = slice == 0 ? n : slice + 1;
-      for (int i = slice == 0 ? 1 : slice; i < limit; ++i) {
+      for (int i = 1; i < n; ++i) {
         try (final BufferedReader rBase = reader(rootDir, i)) {
           String rLine;
           while ((rLine = rBase.readLine()) != null) {
@@ -169,6 +184,27 @@ public class A002845 implements Sequence {
                   dumpSet(new File(new File(rootDir), fOut + "." + slice + "." + ++part), result);
                 }
               }
+            }
+          }
+        }
+      }
+      dumpSet(new File(new File(rootDir), fOut + "." + slice + "." + ++part), result);
+    } else {
+      // We are going to do slice + m == n with slice < m
+      if (2 * slice > n) {
+        throw new RuntimeException("Slice should be smaller of numbers slice + m == n");
+      }
+      final List<SparseInteger> inner = load(rootDir, slice);
+      final HashSet<SparseInteger> result = new HashSet<>();
+      try (final BufferedReader rBase = reader(rootDir, n - slice)) {
+        String rLine;
+        while ((rLine = rBase.readLine()) != null) {
+          final SparseInteger a = SparseInteger.parse(rLine);
+          for (final SparseInteger b : inner) {
+            result.add(a.power(b));
+            result.add(b.power(a));
+            if (result.size() > 10000000) {
+              dumpSet(new File(new File(rootDir), fOut + "." + slice + "." + ++part), result);
             }
           }
         }

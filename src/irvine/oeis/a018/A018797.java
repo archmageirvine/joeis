@@ -1,0 +1,26 @@
+package irvine.oeis.a018;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A018797.
+ * @author Sean A. Irvine
+ */
+public class A018797 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    final String target = String.valueOf(++mN);
+    Z b = Z.NEG_ONE;
+    while (true) {
+      b = b.add(1);
+      final Z cube = b.pow(3);
+      if (cube.toString().startsWith(target)) {
+        return cube;
+      }
+    }
+  }
+}

@@ -145,6 +145,7 @@ public class A002845 implements Sequence {
   public static void main(final String[] args) throws IOException {
     final String rootDir = args[0];
     final int n = Integer.parseInt(args[1]);
+    final int slice = args.length > 2 ? Integer.parseInt(args[2]) : 0;
     final String fOut = "A002845." + n + ".dat";
     int part = 0;
     if (n == 1) {
@@ -153,7 +154,8 @@ public class A002845 implements Sequence {
       }
     } else {
       final HashSet<SparseInteger> result = new HashSet<>();
-      for (int i = 1; i < n; ++i) {
+      final int limit = slice == 0 ? n : slice + 1;
+      for (int i = slice == 0 ? 1 : slice; i < limit; ++i) {
         try (final BufferedReader rBase = reader(rootDir, i)) {
           String rLine;
           while ((rLine = rBase.readLine()) != null) {
@@ -164,14 +166,14 @@ public class A002845 implements Sequence {
                 final SparseInteger exponent = SparseInteger.parse(eLine);
                 result.add(base.power(exponent));
                 if (result.size() > 10000000) {
-                  dumpSet(new File(new File(rootDir), fOut + "." + ++part), result);
+                  dumpSet(new File(new File(rootDir), fOut + "." + slice + "." + ++part), result);
                 }
               }
             }
           }
         }
       }
-      dumpSet(new File(new File(rootDir), fOut + "." + ++part), result);
+      dumpSet(new File(new File(rootDir), fOut + "." + slice + "." + ++part), result);
     }
   }
 }

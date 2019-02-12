@@ -407,6 +407,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
             p.add(parse(spec.substring(lastStart, k)));
             lastStart = k + 1;
           }
+          break;
         default:
           // no action
           break;

@@ -21,11 +21,14 @@ import irvine.oeis.Sequence;
 public class A007716 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    final CycleIndex z = SymmetricGroup.create(++mN).cycleIndex();
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    final CycleIndex z = SymmetricGroup.create(mN).cycleIndex();
     final CycleIndex z2 = z.op(HararyMultiply.OP, z);
     final List<Polynomial<Q>> subs = new ArrayList<>(z2.maxIndex());
     for (int k = 1; k <= z2.maxIndex(); ++k) {

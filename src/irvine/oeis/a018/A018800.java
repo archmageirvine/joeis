@@ -21,7 +21,7 @@ public class A018800 implements Sequence {
     long y = 1;
     while (true) {
       y *= 10;
-      Z x = Z.valueOf(mN).multiply(y);
+      final Z x = Z.valueOf(mN).multiply(y);
       for (long r = 1; r < y; r += 2) {
         final Z t = x.add(r);
         if (mPrime.isPrime(t)) {

@@ -160,7 +160,7 @@ public class A002845 implements Sequence {
     // Make it so slice is actually the larger of two numbers adding up to n
     // this improves efficiency in the inner loop.  The use should supply
     // values in the range 1..n/2
-    final int slice =args.length > 2 ? Integer.parseInt(args[2]) : 0;
+    final int slice = args.length > 2 ? Integer.parseInt(args[2]) : 0;
     final String fOut = "A002845." + n + ".dat";
     int part = 0;
     if (n == 1) {

@@ -26,8 +26,6 @@ public class A018809 extends MemoryFunction2<Integer, Z> implements Sequence {
     return sum.multiply(4);
   }
 
-
-
   @Override
   public Z next() {
     if (++mN == 2) {

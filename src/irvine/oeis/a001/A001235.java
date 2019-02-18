@@ -23,7 +23,7 @@ public class A001235 implements Sequence {
       while (n.compareTo(mC) > 0) {
         ++mS;
         mC = Z.valueOf(mS).pow(3);
-        for (long k = 0; k <= mS; ++k) {
+        for (long k = 1; k <= mS; ++k) {
           final Z u = mC.add(Z.valueOf(k).pow(3));
           mCount.put(u, 1 + mCount.getOrDefault(u, 0));
         }

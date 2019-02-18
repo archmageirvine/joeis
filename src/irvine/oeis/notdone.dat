@@ -1111,3 +1111,8 @@ A018240 Rational knots with n crossings (up to mirroring)
 A018242 Number of projective order types; number of simple arrangements of n lines, hard?
 A018807 Number of ways to place n^2 nonattacking kings on 2n X 2n chessboard
 A018835 Minimal number of smaller integer-sided squares that tile an n X n square, base on plantri?, lots of work for one sequence
+A018843 Number of n-dimensional unimodular lattices without roots
+A018887 Waring's problem: historical upper bounds on A079611, as stated in a web page in 1996
+A018891 Number of positive knots with n crossings
+A018895 Weight distribution of [ 512,130,64 ] third-order Reed-Muller code, fini
+A018898 Theta series of 14-dimensional lattice of det 3^7 and minimal norm 2, possible dupe

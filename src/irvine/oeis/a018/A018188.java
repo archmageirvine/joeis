@@ -16,8 +16,8 @@ import irvine.oeis.FiniteSequence;
  */
 public class A018188 extends FiniteSequence {
 
-  private static List<Z> suckInNumbers() {
-    try (final BufferedReader reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(A018188.class.getClassLoader().getResourceAsStream("irvine/oeis/a018/a018188.dat.gz"))))) {
+  static List<Z> suckInNumbers(final String res) {
+    try (final BufferedReader reader = new BufferedReader(new InputStreamReader(new GZIPInputStream(A018188.class.getClassLoader().getResourceAsStream(res))))) {
       return ZUtils.suckInNumbers(reader);
     } catch (final IOException e) {
       throw new RuntimeException(e);
@@ -26,7 +26,7 @@ public class A018188 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A018188() {
-    super(suckInNumbers());
+    super(suckInNumbers("irvine/oeis/a018/a018188.dat.gz"));
   }
 }
 

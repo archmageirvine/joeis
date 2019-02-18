@@ -9,39 +9,44 @@ import irvine.oeis.Sequence;
  */
 public class A000787 implements Sequence {
 
-  private long mN = -1;
+  private Z mN = Z.NEG_ONE;
+
+  /**
+   * Test if the given number is strobogrammatic.
+   * @param n number to test
+   * @return true iff number is strobogrammatic
+   */
+  public static boolean isStrobogrammatic(final Z n) {
+    final long last = n.mod(10);
+    if ((last >= 2 && last <= 5) || last == 7) {
+      return false;
+    }
+    final String s = n.toString();
+    for (int k = 0, j = s.length() - 1; k < (s.length() + 1) / 2; ++k, --j) {
+      final char c = s.charAt(k);
+      if ("23457".indexOf(c) != -1) {
+        return false;
+      } else if (c == '6') {
+        if (s.charAt(j) != '9') {
+          return false;
+        }
+      } else if (c == '9') {
+        if (s.charAt(j) != '6') {
+          return false;
+        }
+      } else if (c != s.charAt(j)) {
+        return false;
+      }
+    }
+    return true;
+  }
 
   @Override
   public Z next() {
     while (true) {
-      ++mN;
-      final long last = mN % 10;
-      if (last == 0 || last == 1 || last == 6 || last == 8 || last == 9) {
-        final String n = String.valueOf(mN);
-        boolean ok = true;
-        for (int k = 0, j = n.length() - 1; k < (n.length() + 1) / 2; ++k, --j) {
-          final char c = n.charAt(k);
-          if ("23457".indexOf(c) != -1) {
-            ok = false;
-            break;
-          } else if (c == '6') {
-            if (n.charAt(j) != '9') {
-              ok = false;
-              break;
-            }
-          } else if (c == '9') {
-            if (n.charAt(j) != '6') {
-              ok = false;
-              break;
-            }
-          } else if (c != n.charAt(j)) {
-            ok = false;
-            break;
-          }
-        }
-        if (ok) {
-          return Z.valueOf(mN);
-        }
+      mN = mN.add(1);
+      if (isStrobogrammatic(mN)) {
+        return mN;
       }
     }
   }

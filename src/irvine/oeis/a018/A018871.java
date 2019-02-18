@@ -5,20 +5,24 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018802.
+ * A018871.
  * @author Sean A. Irvine
  */
-public class A018802 implements Sequence {
+public class A018871 implements Sequence {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
-  private int mM = -1;
-  private int mN = 0;
+  private int mN = -1;
 
-  protected String pow2(final int n) {
+  protected int exp() {
+    return 5;
+  }
+
+  protected String pow(final int n) {
     // We only need to keep the first 10 digits (keeps memory down)
     while (n >= mCache.length()) {
-      final String s = Z.ONE.shiftLeft(++mM).toString();
-      mCache.set(mM, s.length() <= 10 ? s : s.substring(0, 10));
+      final Z t = Z.valueOf(mCache.length()).pow(exp());
+      final String s = t.toString();
+      mCache.set(mCache.length(), s.length() <= 10 ? s : s.substring(0, 10));
     }
     return mCache.get(n);
   }
@@ -28,8 +32,8 @@ public class A018802 implements Sequence {
     final String target = String.valueOf(++mN);
     int b = -1;
     while (true) {
-      if (pow2(++b).startsWith(target)) {
-        return Z.ONE.shiftLeft(b);
+      if (pow(++b).startsWith(target)) {
+        return Z.valueOf(b).pow(exp());
       }
     }
   }

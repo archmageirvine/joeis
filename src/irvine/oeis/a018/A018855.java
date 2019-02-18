@@ -1,24 +1,21 @@
 package irvine.oeis.a018;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000217;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018802.
+ * A018801.
  * @author Sean A. Irvine
  */
-public class A018802 implements Sequence {
+public class A018855 extends A000217 {
 
   private DynamicArray<String> mCache = new DynamicArray<>();
-  private int mM = -1;
   private int mN = 0;
 
-  protected String pow2(final int n) {
-    // We only need to keep the first 10 digits (keeps memory down)
+  private String triangular(final int n) {
     while (n >= mCache.length()) {
-      final String s = Z.ONE.shiftLeft(++mM).toString();
-      mCache.set(mM, s.length() <= 10 ? s : s.substring(0, 10));
+      mCache.set(mCache.length(), super.next().toString());
     }
     return mCache.get(n);
   }
@@ -28,8 +25,8 @@ public class A018802 implements Sequence {
     final String target = String.valueOf(++mN);
     int b = -1;
     while (true) {
-      if (pow2(++b).startsWith(target)) {
-        return Z.ONE.shiftLeft(b);
+      if (triangular(++b).startsWith(target)) {
+        return new Z(triangular(b));
       }
     }
   }

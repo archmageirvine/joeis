@@ -4,7 +4,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A018840.
+ * A018841.
  * @author Sean A. Irvine
  */
 public class A018841 extends PrependSequence {

@@ -22,11 +22,10 @@ class PrescaledCos extends SlowCR {
       return Z.ZERO;
     }
     final int iterationsNeeded = -p / 2 + 4;  // conservative estimate > 0.
-    //  Claim: each intermediate term is accurate
-    //  to 2*2^calcPrecision.
-    //  Total rounding error in series computation is
-    //  2*iterations_needed*2^calcPrecision,
-    //  exclusive of error in op.
+    // Claim: each intermediate term is accurate to 2*2^calcPrecision.
+    // Total rounding error in series computation is
+    // 2*iterations_needed*2^calcPrecision,
+    // exclusive of error in op.
     final int calcPrecision = p - boundLog2(2 * iterationsNeeded) - 4; // -4 for error in op, truncation.
     final int opPrec = p - 2;
     final Z opAppr = mOp.getApprox(opPrec);

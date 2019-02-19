@@ -15,7 +15,7 @@ public class A018849 extends A000290 {
       final Z p = super.next();
       final String s = p.toString();
       final StringBuilder sb = new StringBuilder();
-      for (int k = s.length()- 1; k >= 0; --k) {
+      for (int k = s.length() - 1; k >= 0; --k) {
         sb.append(A018846.INVERT[s.charAt(k) - '0']);
       }
       if (sb.toString().equals(s)) {

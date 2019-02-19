@@ -876,6 +876,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return exponential
    */
   public CR exp() {
+    System.out.println("exp(" + this.toString(100) +")");
     final int lowPrec = -10;
     final Z roughAppr = getApprox(lowPrec);
     if (roughAppr.signum() < 0) {

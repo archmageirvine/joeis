@@ -145,4 +145,9 @@ public class CRTest extends TestCase {
   public void testSignum() {
     assertEquals(-1, CR.valueOf(4).sin().signum(-32));
   }
+
+  public void testExpNear0() {
+    assertEquals(Z.ONE, CR.valueOf(Double.MIN_VALUE).exp().floor(32));
+    assertEquals(Z.ONE, CR.valueOf(Double.MIN_VALUE).negate().exp().floor(32));
+  }
 }

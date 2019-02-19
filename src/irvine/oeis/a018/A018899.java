@@ -3,6 +3,8 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 import irvine.util.array.DynamicLongArray;
+import irvine.util.array.LongDynamicBooleanArray;
+import irvine.util.string.StringUtils;
 
 /**
  * A018899.
@@ -10,41 +12,64 @@ import irvine.util.array.DynamicLongArray;
  */
 public class A018899 extends A003586 {
 
-  private final DynamicLongArray mA = new DynamicLongArray();
-  {
-    mA.set(0, super.next().longValueExact());
-  }
-  private long mN = -1;
-  private long mM = 0;
+  // After Jack Brennan
 
-  private boolean isRepresentable(final long m, final int start, final int k) {
-    if (k == mN) {
-      return false;
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
+  private final DynamicLongArray mL = new DynamicLongArray();
+  private long mLimit = 1L << 16;
+  private int mTerms;
+  {
+    // Precompute 2^a * 3^b list
+    final A003586 mSeq = new A003586();
+    final Z lim = Z.valueOf(Long.MAX_VALUE);
+    Z t;
+    while ((t = mSeq.next()).compareTo(lim) < 0) {
+      mL.set(mL.length(), t.longValueExact());
     }
-    for (int j = start; j < mA.length(); ++j) {
-      final long v = m - mA.get(j);
-      if (v < 0) {
-        break;
-      }
-      if (isRepresentable(v, j + 1, k + 1)) {
-        return true;
+  }
+
+  private long getN() {
+    long n = mLimit;
+    while (n != 0) {
+      if (mA.isSet(--n)) {
+        for (int j = 0; j < mL.length() && n + mL.get(j) < mLimit; ++j) {
+          mA.set(n + mL.get(j));
+        }
       }
     }
-    return false;
+    n = 0;
+    while (mA.isSet(n) && ++n < mLimit) {
+    }
+    return n;
   }
 
   @Override
   public Z next() {
-    ++mN;
+    if (!mA.isSet(0)) {
+      mA.set(0);
+      return Z.ONE;
+    }
     while (true) {
-      if (++mM >= mA.get(mA.length() - 1)) {
-        mA.set(mA.length(), super.next().longValueExact());
+      long n = getN();
+      if (n != mLimit) {
+        ++mTerms;
+        return Z.valueOf(n);
       }
-      if (!isRepresentable(mM, 0, 0)) {
-        return Z.valueOf(mM);
+      mLimit <<= 6; // Expand search region by factor of 64
+      if (mLimit <= 0) {
+        throw new UnsupportedOperationException();
+      }
+      mA = new LongDynamicBooleanArray();
+      mA.set(0);
+      // Run up, skip over already produced terms
+      for (int k = 0; k < mTerms; ++k) {
+        getN();
+      }
+      if (mVerbose) {
+        StringUtils.message("Limit increased to " + mLimit);
       }
     }
   }
-
 }
 

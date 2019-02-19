@@ -18,7 +18,7 @@ public class A018846 implements Sequence {
       mN = mN.add(1);
       final String s = mN.toString();
       final StringBuilder sb = new StringBuilder();
-      for (int k = s.length()- 1; k >= 0; --k) {
+      for (int k = s.length() - 1; k >= 0; --k) {
         sb.append(INVERT[s.charAt(k) - '0']);
       }
       if (sb.toString().equals(s)) {

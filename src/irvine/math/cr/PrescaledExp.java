@@ -26,8 +26,7 @@ class PrescaledExp extends CR {
       return Z.ZERO;
     }
     final int iterationsNeeded = -p / 2 + 2;  // conservative estimate > 0.
-    //  Claim: each intermediate term is accurate
-    //  to 2*2^calcPrecision.
+    //  Claim: each intermediate term is accurate to 2*2^calcPrecision.
     //  Total rounding error in series computation is
     //  2*iterations_needed*2^calcPrecision,
     //  exclusive of error in op.

@@ -4,13 +4,13 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotSequence;
 
 /**
- * A018906.
+ * A018908.
  * @author Sean A. Irvine
  */
-public class A018906 extends PisotSequence {
+public class A018908 extends PisotSequence {
 
   /** Construct the sequence. */
-  public A018906() {
-    super(2, 6, Q.ONE);
+  public A018908() {
+    super(3, 4, Q.ONE);
   }
 }

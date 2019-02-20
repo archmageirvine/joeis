@@ -51,7 +51,7 @@ public class A018899 extends A003586 {
       return Z.ONE;
     }
     while (true) {
-      long n = getN();
+      final long n = getN();
       if (n != mLimit) {
         ++mTerms;
         return Z.valueOf(n);

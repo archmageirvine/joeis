@@ -1,11 +1,8 @@
 package irvine.oeis.a018;
 
-import java.util.TreeSet;
-
-import irvine.math.LongUtils;
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a006.A006016;
 
 /**
  * A018926.
@@ -13,46 +10,59 @@ import irvine.oeis.a006.A006016;
  */
 public class A018926 implements Sequence {
 
-  // todo differs at a(3), am I counting the right thing?
-  // todo using long for dimensions a bit optimisitic -- unlikely we can get to the 33-cube with this approach!
-
-  // Uses the sub-cubes of n-cubes definition
+  // Uses the sub-cubes of n-cubes definition.  Brute force, does every arrangement
+  // making no attempt to account for possible symmetries.
 
   private int mN = -1;
   private long mCount = 0;
+  private int mLimit = 0;
 
-  private long next(final long x, final long m) {
-    long y = x;
-    while ((++y & m) == x) {
+  private int next(final int x, final int m) {
+    assert m != 0;
+    assert x <= m;
+    if (x == m) {
+      return m + 1;
+    }
+    int y = x;
+    while ((++y & m) <= x) {
       // do nothing
     }
     return y;
   }
 
-  private boolean isAvailable(final TreeSet<Long> used, final long least, final long dimensionMask) {
+  private boolean isAvailable(final boolean[] used, final int least, final int dimensionMask) {
     if ((least & dimensionMask) != 0) {
       return false; // cannot go further in directions where already at edge of cube
     }
-    for (long x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
-      final long pt = least + x;
-      if (used.contains(pt)) {
+    for (int x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
+      final int pt = least + x;
+      if (used[pt]) {
         return false;
       }
     }
     return true;
   }
 
-  private void add(final TreeSet<Long> used, final long least, final long dimensionMask) {
+  private void add(final boolean[] used, final int least, final int dimensionMask) {
     // All the points we need are guaranteed to not be already present in "used"
-    for (long x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
-      used.add(least + x);
+    for (int x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
+      used[least + x] = true;
     }
   }
 
-  private void remove(final TreeSet<Long> used, final long least, final long dimensionMask) {
-    for (long x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
-      used.remove(least + x);
+  private void remove(final boolean[] used, final int least, final int dimensionMask) {
+    for (int x = 0; x <= dimensionMask; x = next(x, dimensionMask)) {
+      used[least + x] = false;
     }
+  }
+
+  private int mex(final boolean[] set) {
+    for (int k = 0; k < set.length; ++k) {
+      if (!set[k]) {
+        return k;
+      }
+    }
+    return set.length;
   }
 
   /*
@@ -63,40 +73,34 @@ public class A018926 implements Sequence {
    * each possible selection of d directions, extract a sub-cube, then
    * recursively continue the search.
    */
-  private void search(final TreeSet<Long> used) {
-    final long least = A006016.mex(used);
+  private void search(final boolean[] used) {
+    final int least = mex(used);
     //System.out.println(used + " least=" + least);
-    if (least >= 1L << mN) {
+    if (least >= mLimit) {
       // partitioning is complete
       ++mCount;
-//      if (least != used.size()) {
-//        throw new RuntimeException(); // Huh?
-//      }
       return;
     }
-    for (int numDim = mN - Long.bitCount(least); numDim >= 0; --numDim) {
-      if (numDim == 0) {
-        // Handle special case of single point
-        used.add(least);
-        search(used);
-        used.remove(least);
-      } else {
-        for (long selectedDimensions = (1L << numDim) - 1; selectedDimensions < 1L << mN; selectedDimensions = LongUtils.swizzle(selectedDimensions)) {
-          if (isAvailable(used, least, selectedDimensions)) {
-            add(used, least, selectedDimensions);
-            search(used);
-            remove(used, least, selectedDimensions);
-          }
+    for (int numDim = mN - Long.bitCount(least); numDim > 0; --numDim) {
+      for (int selectedDimensions = (1 << numDim) - 1; selectedDimensions < mLimit; selectedDimensions = IntegerUtils.swizzle(selectedDimensions)) {
+        if (isAvailable(used, least, selectedDimensions)) {
+          add(used, least, selectedDimensions);
+          search(used);
+          remove(used, least, selectedDimensions);
         }
       }
     }
+    // Do dimension 0 case (i.e. treating "least" as a point)
+    used[least] = true;
+    search(used);
+    used[least] = false;
   }
 
   @Override
   public Z next() {
-    ++mN;
+    mLimit = 1 << ++mN;
     mCount = 0;
-    search(new TreeSet<>());
+    search(new boolean[mLimit]);
     return Z.valueOf(mCount);
   }
 }

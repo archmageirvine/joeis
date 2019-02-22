@@ -75,7 +75,6 @@ public class A018926 implements Sequence {
    */
   private void search(final boolean[] used) {
     final int least = mex(used);
-    //System.out.println(used + " least=" + least);
     if (least >= mLimit) {
       // partitioning is complete
       ++mCount;

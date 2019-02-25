@@ -21,22 +21,27 @@ public class A003609 implements Sequence {
 
   // T(x,y) = x + (1/2)T(x,y)^2 + (y-1/2)T(x^2,y^2)
 
-  private static final PolynomialRing<Q> RING_Y = new PolynomialRing<>("y", Rationals.SINGLETON);
-  private static final PolynomialRing<Polynomial<Q>> RING = new PolynomialRing<>(RING_Y);
+  protected static final PolynomialRing<Q> RING_Y = new PolynomialRing<>("y", Rationals.SINGLETON);
+  protected static final PolynomialRing<Polynomial<Q>> RING = new PolynomialRing<>(RING_Y);
   private static final Polynomial<Q> C0 = RING_Y.monomial(Q.HALF, 0);
   private static final Polynomial<Q> C1 = RING_Y.create(Arrays.asList(Q.HALF.negate(), Q.ONE));
-  private Polynomial<Polynomial<Q>> mT = RING.x();
-  private int mN = 0;
+  protected Polynomial<Polynomial<Q>> mT = RING.x();
+  protected int mN = 0;
+
+  protected Polynomial<Polynomial<Q>> innerSubstitute(final Polynomial<Polynomial<Q>> t, final int power, final int n) {
+    final Polynomial<Polynomial<Q>> subs = RING.create(Collections.emptyList());
+    for (final Polynomial<Q> v : t) {
+      subs.add(v.substitutePower(power, n));
+    }
+    return subs;
+  }
 
   @Override
   public Z next() {
     ++mN;
 
     // Do the y^2 substitution
-    final Polynomial<Polynomial<Q>> subs = RING.create(Collections.emptyList());
-    for (final Polynomial<Q> v : mT) {
-      subs.add(v.substitutePower(2, mN));
-    }
+    final Polynomial<Polynomial<Q>> subs = innerSubstitute(mT, 2, mN);
 
     // Apply the T(x,y) relation
     final Polynomial<Polynomial<Q>> s = RING.multiply(subs.substitutePower(2, mN), C1);

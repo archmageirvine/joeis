@@ -36,8 +36,6 @@ periodicity 3
   };
 
 
-  // Ugh! This "smarter" way is not yet working ...
-
   // Vertices are fixed in number (here 4), but repeat indefinitely through the structure
   // Pack the "name" of a vertex into a long
   // If n is current node, then next node is something like
@@ -55,14 +53,17 @@ periodicity 3
       delta[v] = new long[neighbours];
       for (int k = 0; k < neighbours; ++k) {
         final int[] s = mQuotientGraph[v][k];
-        delta[v][k] = s[0] + 4 * s[1] + 8 * s[2] + 16 * s[3];
+        //delta[v][k] = s[0] + 4 * s[1] + 8 * s[2] + 16 * s[3];
+        delta[v][k] = s[0] + 4 * s[1] + 32 * s[2] + 128 * s[3]; // todo spacing here is critical to correct behavior
+        // todo need to make spacing bigger for higher entries -- this is still way tooooo slow
       }
     }
     return delta;
   }
 
   private final long[][] mQuotientDelta = quotientToLongDeltas(mQuotientGraph);
-  private final long mOrigin = 0b11100 << 10; // todo fix this magic constant 1000
+  // Move out into the grid, so we never end up at a negative coordinate
+  private final long mOrigin = 4 << 12; // todo fix this magic constant 1000
 
   private final LongDynamicBooleanArray mVisited = new LongDynamicBooleanArray();
 
@@ -74,11 +75,7 @@ periodicity 3
       return;
     }
 
-    // Check if we are too far away to make in back
-    //final int m = mN - n;
-//    if (Math.abs(point.b()) + Math.abs(point.c()) + Math.abs(point.d()) > m + 1) { // todo hmmm, some moves reduce 2 coords by 2 -- this might not be enough
-//      return; // will never make it back in time
-//    }
+    // todo Check if we are too far away to make in back
 
     if (!mVisited.isSet(point)) {
       mVisited.set(point);
@@ -128,8 +125,8 @@ periodicity 3
   public Z next() {
     mN += 2; // AWB always even cycle length
     mCount = 0;
-    search(ORIGIN, 0);
-//    search(mOrigin, 0);
+//    search(ORIGIN, 0);
+    search(mOrigin, 0);
     return Z.valueOf(mCount / 2); // why this /2? -- direction around cycle?
   }
 }

@@ -1,5 +1,8 @@
 package irvine.oeis.a018;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -46,38 +49,84 @@ public class A018940 implements Sequence {
 
   /** Construct the sequence. */
   public A018940() {
-    final int[][][] graph = quotientGraph();
+    final int[][][] graph = topolanNeighbourhoodToQuotientGraph(getNeighbourhoodDescription());
     mBitsPerNode = IntegerUtils.lg(graph.length - 1);
     final int b = mBitsPerNode + 3 * BITS_PER_COORD;
     mC = mBitsPerNode + 2 * BITS_PER_COORD;
     mD = mBitsPerNode + BITS_PER_COORD;
     mNodeMask = (1 << mBitsPerNode) - 1;
-    mOrigin = startNode() + (1 << (b - 1)) + (1 << (mC - 1)) + (1 << (mD - 1));
+    mOrigin = mNodeToIndex.get(startNode()) + (1 << (b - 1)) + (1 << (mC - 1)) + (1 << (mD - 1));
     mDistance = new byte[2 * mOrigin];
     mDistance[mOrigin] = 1;
     mVisited = new boolean[2 * mOrigin];
     mQuotientDelta = quotientToLongDeltas(graph);
   }
 
-  /*  The neighbourhood table of ABW (from Topolan).
-        periodicity 3
-       No. of vertices: 4
-       No. of edges: 8
-       a-1:    a-4(000)    a-3(+0+)    a-3(000)    a-2(0+0)
-       a-2:    a-4(+0+)    a-4(000)    a-3(0-+)
-       a-3:    a-4(0+0)
-   */
-  protected int[][][] quotientGraph() {
-    return new int[][][] {
-      {{3, 0, 0, 0}, {2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, 1, 0}},
-      {{2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, -1, 1}, {-1, 0, -1, 0}},
-      {{1, 0, 1, 0}, {-1, 0, 1, -1}, {-2, 0, 0, 0}, {-2, -1, 0, -1}},
-      {{-1, 0, -1, 0}, {-2, 0, 0, 0}, {-2, -1, 0, -1}, {-3, 0, 0, 0}},
-    };
+  private static int getNodeId(final HashMap<String, Integer> nodeToIndex, final ArrayList<ArrayList<int[]>> q, final String node) {
+    if (!nodeToIndex.containsKey(node)) {
+      nodeToIndex.put(node, nodeToIndex.size());
+      q.add(new ArrayList<>());
+    }
+    return nodeToIndex.get(node);
   }
 
-  protected int startNode() {
-    return 0;
+  private static int dir(final char c) {
+    switch (c) {
+      case '+':
+        return 1;
+      case '-':
+        return -1;
+      default:
+        return 0;
+    }
+  }
+
+  private final HashMap<String, Integer> mNodeToIndex = new HashMap<>();
+
+  private int[][][] topolanNeighbourhoodToQuotientGraph(final String topolan) {
+    final ArrayList<ArrayList<int[]>> q = new ArrayList<>();
+    for (final String line : topolan.replace(":", "").split("\n")) {
+      if (!line.isEmpty()) {
+        final String[] p = line.split("\\s+");
+        final String node = p[0];
+        final int id = getNodeId(mNodeToIndex, q, node);
+        for (int k = 1; k < p.length; ++k) {
+          final String n = p[k];
+          final int open = n.indexOf('(');
+          final int nid = getNodeId(mNodeToIndex, q, n.substring(0, open));
+          final int[] forward = new int[4];
+          forward[0] = nid - id;
+          forward[1] = dir(n.charAt(open + 1));
+          forward[2] = dir(n.charAt(open + 2));
+          forward[3] = dir(n.charAt(open + 3));
+          final int[] reverse = new int[4];
+          for (int j = 0; j < reverse.length; ++j) {
+            reverse[j] = -forward[j];
+          }
+          q.get(id).add(forward);
+          q.get(nid).add(reverse);
+        }
+      }
+    }
+    final int[][][] quotientGraph = new int[q.size()][][];
+    for (int k = 0; k < quotientGraph.length; ++k) {
+      quotientGraph[k] = new int[q.get(k).size()][];
+      for (int j = 0; j < q.get(k).size(); ++j) {
+        quotientGraph[k][j] = q.get(k).get(j);
+      }
+    }
+    return quotientGraph;
+  }
+
+  protected String getNeighbourhoodDescription() {
+    // ABW
+    return "a-1: a-4(000) a-3(+0+) a-3(000) a-2(0+0)\n"
+      + "a-2: a-4(+0+) a-4(000) a-3(0-+)\n"
+      + "a-3: a-4(0+0)\n";
+  }
+
+  protected String startNode() {
+    return "a-1";
   }
 
   // Convert to packed representation -- happens once during initialization

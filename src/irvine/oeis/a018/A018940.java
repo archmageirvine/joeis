@@ -1,5 +1,6 @@
 package irvine.oeis.a018;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -26,15 +27,37 @@ public class A018940 implements Sequence {
   // then.
 
   private static final int BITS_PER_COORD = 7;
-  private static final int BITS_PER_NODE = 2;
-  private static final int B = BITS_PER_NODE + 3 * BITS_PER_COORD;
-  private static final int C = BITS_PER_NODE + 2 * BITS_PER_COORD;
-  private static final int D = BITS_PER_NODE + BITS_PER_COORD;
-  private static final int NODE_MASK = (1 << BITS_PER_NODE) - 1;
-  private static final int ORIGIN = (1 << (B - 1)) + (1 << (C - 1)) + (1 << (D - 1));
 
   private int mN = 2;
   private long mCount = 0;
+  private final int mBitsPerNode;
+  private final int mC;
+  private final int mD;
+  private final int mNodeMask;
+  private final int mOrigin;
+
+  // Minimum distance from origin + 1 (uses 0 as sentinel)
+  private final byte[] mDistance;
+  private int mDistanceDone = 0;
+  // Keep track of nodes on current path in depth first search
+  private final boolean[] mVisited;
+  // Stores the delta to step from one node to next for each neighbour of a node
+  private final int[][] mQuotientDelta;
+
+  /** Construct the sequence. */
+  public A018940() {
+    final int[][][] graph = quotientGraph();
+    mBitsPerNode = IntegerUtils.lg(graph.length - 1);
+    final int b = mBitsPerNode + 3 * BITS_PER_COORD;
+    mC = mBitsPerNode + 2 * BITS_PER_COORD;
+    mD = mBitsPerNode + BITS_PER_COORD;
+    mNodeMask = (1 << mBitsPerNode) - 1;
+    mOrigin = startNode() + (1 << (b - 1)) + (1 << (mC - 1)) + (1 << (mD - 1));
+    mDistance = new byte[2 * mOrigin];
+    mDistance[mOrigin] = 1;
+    mVisited = new boolean[2 * mOrigin];
+    mQuotientDelta = quotientToLongDeltas(graph);
+  }
 
   /*  The neighbourhood table of ABW (from Topolan).
         periodicity 3
@@ -44,37 +67,32 @@ public class A018940 implements Sequence {
        a-2:    a-4(+0+)    a-4(000)    a-3(0-+)
        a-3:    a-4(0+0)
    */
+  protected int[][][] quotientGraph() {
+    return new int[][][] {
+      {{3, 0, 0, 0}, {2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, 1, 0}},
+      {{2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, -1, 1}, {-1, 0, -1, 0}},
+      {{1, 0, 1, 0}, {-1, 0, 1, -1}, {-2, 0, 0, 0}, {-2, -1, 0, -1}},
+      {{-1, 0, -1, 0}, {-2, 0, 0, 0}, {-2, -1, 0, -1}, {-3, 0, 0, 0}},
+    };
+  }
 
-  // Quadruples giving change in node number and change in each coordinate for each neighbour
-  private final int[][][] mQuotientGraph = {
-    {{3, 0, 0, 0}, {2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, 1, 0}},
-    {{2, 1, 0, 1}, {2, 0, 0, 0}, {1, 0, -1, 1}, {-1, 0, -1, 0}},
-    {{1, 0, 1, 0}, {-1, 0, 1, -1}, {-2, 0, 0, 0}, {-2, -1, 0, -1}},
-    {{-1, 0, -1, 0}, {-2, 0, 0, 0}, {-2, -1, 0, -1}, {-3, 0, 0, 0}},
-  };
+  protected int startNode() {
+    return 0;
+  }
 
   // Convert to packed representation -- happens once during initialization
   private int[][] quotientToLongDeltas(final int[][][] graph) {
     final int vertices = graph.length;
     final int[][] delta = new int[vertices][];
     for (int v = 0; v < vertices; ++v) {
-      final int neighbours = mQuotientGraph[v].length;
+      final int neighbours = graph[v].length;
       delta[v] = new int[neighbours];
       for (int k = 0; k < neighbours; ++k) {
-        final int[] s = mQuotientGraph[v][k];
-        delta[v][k] = s[0] + (s[1] << C) + (s[2] << D) + (s[3] << BITS_PER_NODE);
+        final int[] s = graph[v][k];
+        delta[v][k] = s[0] + (s[1] << mC) + (s[2] << mD) + (s[3] << mBitsPerNode);
       }
     }
     return delta;
-  }
-
-  private final int[][] mQuotientDelta = quotientToLongDeltas(mQuotientGraph);
-
-  // Minimum distance from origin + 1 (uses 0 as sentinel)
-  private final byte[] mDistance = new byte[2 * ORIGIN];
-  private int mDistanceDone = 0;
-  {
-    mDistance[ORIGIN] = 1;
   }
 
   // Ensure the minimum distance cache goes out to distance n
@@ -84,7 +102,7 @@ public class A018940 implements Sequence {
       final byte d = (byte) (mDistanceDone + 1);
       for (int k = 0; k < mDistance.length; ++k) {
         if (mDistance[k] == mDistanceDone) {
-          for (final int delta : mQuotientDelta[k & NODE_MASK]) {
+          for (final int delta : mQuotientDelta[k & mNodeMask]) {
             final int j = k + delta;
             if (j >= 0 && j < mDistance.length && mDistance[j] == 0) {
               mDistance[j] = d;
@@ -95,12 +113,9 @@ public class A018940 implements Sequence {
     }
   }
 
-  // Keep track of nodes on current path in depth first search
-  private final boolean[] mVisited = new boolean[2 * ORIGIN];
-
   private void search(final int point, final int n) {
     if (n == mN) {
-      if (point == ORIGIN) {
+      if (point == mOrigin) {
         ++mCount;
       }
       return;
@@ -117,7 +132,7 @@ public class A018940 implements Sequence {
 
     if (!mVisited[point]) {
       mVisited[point] = true;
-      for (final int delta : mQuotientDelta[point & NODE_MASK]) {
+      for (final int delta : mQuotientDelta[point & mNodeMask]) {
         search(point + delta, n + 1);
       }
       mVisited[point] = false;
@@ -132,7 +147,7 @@ public class A018940 implements Sequence {
     }
     stepDistance(mN);
     mCount = 0;
-    search(ORIGIN, 0);
+    search(mOrigin, 0);
     return Z.valueOf(mCount / 2); // halve count, two directions around each cycle
   }
 }

@@ -6,6 +6,7 @@ import java.util.HashMap;
 import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.RuntimeUtils;
 
 /**
  * A018940.
@@ -29,7 +30,9 @@ public class A018940 implements Sequence {
   // up to 64 terms of the sequence, but we would get sick of waiting long before
   // then.
 
-  private static final int BITS_PER_COORD = 7;
+  // To make tests run faster and in less memory use a smaller number of bits
+  // in that case (note this limits output to n = 16).
+  private static final int BITS_PER_COORD = RuntimeUtils.isTest() ? 5 : 7;
 
   private int mN = 2;
   private long mCount = 0;
@@ -191,7 +194,7 @@ public class A018940 implements Sequence {
   @Override
   public Z next() {
     mN += 2; // AWB always even cycle length
-    if (mN >= 64) {
+    if (mN >= (1 << (BITS_PER_COORD - 1))) {
       throw new UnsupportedOperationException(); // exceeds implementation limits
     }
     stepDistance(mN);

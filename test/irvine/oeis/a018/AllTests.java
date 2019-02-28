@@ -938,6 +938,33 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A018949Test.class);
     suite.addTestSuite(A018950Test.class);
     suite.addTestSuite(A018951Test.class);
+    suite.addTestSuite(A018952Test.class);
+    suite.addTestSuite(A018953Test.class);
+    suite.addTestSuite(A018954Test.class);
+    suite.addTestSuite(A018955Test.class);
+    suite.addTestSuite(A018956Test.class);
+    suite.addTestSuite(A018957Test.class);
+    suite.addTestSuite(A018958Test.class);
+    suite.addTestSuite(A018959Test.class);
+    suite.addTestSuite(A018960Test.class);
+    suite.addTestSuite(A018961Test.class);
+    suite.addTestSuite(A018962Test.class);
+    suite.addTestSuite(A018963Test.class);
+    suite.addTestSuite(A018964Test.class);
+    suite.addTestSuite(A018965Test.class);
+    suite.addTestSuite(A018966Test.class);
+    suite.addTestSuite(A018967Test.class);
+    suite.addTestSuite(A018968Test.class);
+    suite.addTestSuite(A018969Test.class);
+    suite.addTestSuite(A018970Test.class);
+    suite.addTestSuite(A018971Test.class);
+    suite.addTestSuite(A018972Test.class);
+    suite.addTestSuite(A018973Test.class);
+    suite.addTestSuite(A018974Test.class);
+    suite.addTestSuite(A018975Test.class);
+    suite.addTestSuite(A018976Test.class);
+    suite.addTestSuite(A018977Test.class);
+    suite.addTestSuite(A018978Test.class);
     return suite;
   }
 

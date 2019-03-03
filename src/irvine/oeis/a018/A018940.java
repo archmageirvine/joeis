@@ -191,9 +191,13 @@ public class A018940 implements Sequence {
     }
   }
 
+  protected int step() {
+    return 2;
+  }
+
   @Override
   public Z next() {
-    mN += 2; // AWB always even cycle length
+    mN += step();
     if (mN >= (1 << (BITS_PER_COORD - 1))) {
       throw new UnsupportedOperationException(); // exceeds implementation limits
     }

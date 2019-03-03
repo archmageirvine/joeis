@@ -1,14 +1,14 @@
 package irvine.oeis.a019;
 
 /**
- * A019079.
+ * A019080.
  * @author Sean A. Irvine
  */
-public class A019079 extends A019078 {
+public class A019080 extends A019078 {
 
   @Override
   protected String startNode() {
-    return "e-5";
+    return "f-6";
   }
 }
 

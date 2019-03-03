@@ -7,15 +7,20 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019049.
+ * A019120.
  * @author Sean A. Irvine
  */
-public class A019049 extends A018940 {
+public class A019120 extends A018940 {
+
+  @Override
+  protected int step() {
+    return 1;
+  }
 
   @Override
   protected String getNeighbourhoodDescription() {
-    // PAU
-    try (final BufferedReader reader = IOUtils.reader("irvine/oeis/a019/a019049.dat.gz")) {
+    // EUO
+    try (final BufferedReader reader = IOUtils.reader("irvine/oeis/a019/a019120.dat.gz")) {
       return IOUtils.readAll(reader);
     } catch (final IOException e) {
       throw new RuntimeException(e);

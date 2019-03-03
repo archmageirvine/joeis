@@ -1,16 +1,12 @@
 package irvine.oeis.a019;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-
 import irvine.oeis.a018.A018940;
-import irvine.util.io.IOUtils;
 
 /**
- * A019067.
+ * A019076.
  * @author Sean A. Irvine
  */
-public class A019067 extends A018940 {
+public class A019076 extends A018940 {
 
   @Override
   protected int step() {
@@ -19,12 +15,12 @@ public class A019067 extends A018940 {
 
   @Override
   protected String getNeighbourhoodDescription() {
-    // BEA
-    try (final BufferedReader reader = IOUtils.reader("irvine/oeis/a019/a019067.dat.gz")) {
-      return IOUtils.readAll(reader);
-    } catch (final IOException e) {
-      throw new RuntimeException(e);
-    }
+    // BIK
+    return "a-1: b-6(000) a-3(00+) a-3(000) b-2(000)\n"
+      + "b-2: b-6(--0) b-4(0-+) b-4(0-0)\n"
+      + "a-3: b-5(000) b-4(000)\n"
+      + "b-4: b-5(++0)\n"
+      + "b-5: b-6(-00) b-6(-0-)\n";
   }
 }
 

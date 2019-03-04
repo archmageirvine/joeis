@@ -8,6 +8,6 @@ public class A019169 extends A019158 {
 
   @Override
   protected String startNode() {
-    return "e-5";
+    return "j-10";
   }
 }

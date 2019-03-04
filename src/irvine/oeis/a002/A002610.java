@@ -25,7 +25,7 @@ public class A002610 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    int m = 4 * n + 1;
+    final int m = 4 * n + 1;
     Z sum = Z.ZERO;
     boolean sign = true;
     for (int k = 1, j = 0; n - j >= 0; k += 2, j += k - 1, sign = !sign) {

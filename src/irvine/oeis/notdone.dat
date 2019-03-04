@@ -161,10 +161,6 @@ A002218 Very complicated looking cycle index, paper available
 A002268 Irreducible lattice
 A002272 Theta series, paper available, but insufficient detail?
 A002273 Theta series, paper available, but insufficient detail?
-A002286 Simple dependency A002470
-A002287 Simple dependency A002470
-A002291 Insufficient detail, sum of squares
-A002292 Insufficient detail, sum of squares
 A002304 Partially done, can't quite make it work, papers are available
 A002305 Simple dependency on A002304
 A002319 Finite groups, conjugacy classes
@@ -178,7 +174,6 @@ A002402 Coefficients for integration, have paper, hard to understand
 A002403 Coefficients for integration, have paper, hard to understand
 A002404 Coefficients for integration, have paper, hard to understand
 A002406 Coefficients for integration, have paper, hard to understand
-A002470 Sum of squares, insufficient detail, paywall
 A002490 Theta sum, insufficient detail
 A002495 Theta sum, insufficient detail
 A002497 Composite sequence, not obvious criteria, have dependencies
@@ -186,10 +181,7 @@ A002498 Depends A002497
 A002543 Post functions, insufficient detail
 A002558 Insufficient detail, Bernoulli numbers, Dirichlet series [ens-001_1960_6_1_a_003_d.pdf]
 A002560 Graph counting, paper in French, have paper, no obvious formula
-A002608 Insufficient detail, sum of squares
 A002609 Insufficient detail, sum of squares
-A002610 Insufficient detail, sum of squares
-A002611 Insufficient detail, sum of squares
 A002612 Insufficient detail, sum of squares
 A002613 Insufficient detail, sum of squares
 A002614 Insufficient detail, sum of squares

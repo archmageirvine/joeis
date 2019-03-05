@@ -12,12 +12,22 @@ public class A001615 implements Sequence {
 
   private long mN = 0;
 
-  @Override
-  public Z next() {
-    Z prod = Z.valueOf(++mN);
-    for (final Z p : Cheetah.factor(mN).toZArray()) {
+  /**
+   * Dedekind psi function.
+   * @param n number
+   * @return <code>psi(n)</code>
+   */
+  public static Z dedekindPsi(final long n) {
+    Z prod = Z.valueOf(n);
+    for (final Z p : Cheetah.factor(n).toZArray()) {
       prod = prod.divide(p).multiply(p.add(1));
     }
     return prod;
   }
+
+  @Override
+  public Z next() {
+    return dedekindPsi(++mN);
+  }
+
 }

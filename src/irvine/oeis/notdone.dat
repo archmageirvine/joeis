@@ -181,11 +181,6 @@ A002498 Depends A002497
 A002543 Post functions, insufficient detail
 A002558 Insufficient detail, Bernoulli numbers, Dirichlet series [ens-001_1960_6_1_a_003_d.pdf]
 A002560 Graph counting, paper in French, have paper, no obvious formula
-A002609 Insufficient detail, sum of squares
-A002612 Insufficient detail, sum of squares
-A002613 Insufficient detail, sum of squares
-A002614 Insufficient detail, sum of squares
-A002615 Insufficient detail, sum of squares
 A002631 Insufficient detail, foster1932.pdf, possibly in error
 A002632 Insufficient detail, foster1932.pdf, possibly in error
 A002685 Numerical integration coefficients, have paper, might be possible
@@ -329,7 +324,7 @@ A003497 Internal energy series for b.c.c. lattice
 A003498 Internal energy series for f.c.c. lattice
 A003505 Number of simple tournaments with n nodes, existing paper does not have method
 A003507 Number of rigid tournaments with n nodes, existing paper does not have method
-A003521 Extreme values of Dirichlet series, could not find paper
+A003521 Extreme values of Dirichlet series
 A003611 Symmetries in planted 3-trees on n+1 vertices, could not get exact paper, cf. A003609
 A003612 Symmetries in unrooted 3-trees on n+1 vertices, could not get exact paper
 A003613 Number of symmetries in planted (1,4) trees on 3n-1 vertices, could not get exact paper
@@ -1107,3 +1102,4 @@ A018891 Number of positive knots with n crossings
 A018895 Weight distribution of [ 512,130,64 ] third-order Reed-Muller code, fini
 A018898 Theta series of 14-dimensional lattice of det 3^7 and minimal norm 2, possible dupe
 A018924 Isotropic subspaces of an n-dimensional symplectic space over GF(4)
+A019267 From an asymptotic expansion for Pi

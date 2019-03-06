@@ -230,6 +230,10 @@ public final class FactorSequence {
    * @return true if the factorization is complete
    */
   public boolean isComplete() {
+    // Factorization of 1 is complete
+    if (mFactors.size() == 1 && mFactors.containsKey(Z.ONE)) {
+      return true;
+    }
     for (final Factor f : mFactors.values()) {
       if (f.mStatus != PRIME && f.mStatus != PROB_PRIME) {
         return false;
@@ -432,7 +436,9 @@ public final class FactorSequence {
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
-      prod = prod.multiply(p.pow(f.getValue().mExponent + 1).subtract(1)).divide(p.subtract(1));
+      if (!p.equals(Z.ONE)) {
+        prod = prod.multiply(p.pow(f.getValue().mExponent + 1).subtract(1)).divide(p.subtract(1));
+      }
     }
     return prod;
   }

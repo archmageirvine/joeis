@@ -10,6 +10,9 @@ import irvine.math.z.Z;
  */
 public class A003610 extends A003609 {
 
+  private static final Q M0 = new Q(3, 2);
+  private static final Q M1 = new Q(13, 3);
+
   {
     super.next();
   }
@@ -23,10 +26,9 @@ public class A003610 extends A003609 {
     final Polynomial<Q> d = innerSubstitute(mT, 3, mN).substitutePower(3, mN).coeff(mN);
     return RING_Y.eval(a, Q.TWO).divide(Q.TWO)
       .subtract(RING_Y.eval(b, Q.TWO).divide(Q.THREE))
-      .add(RING_Y.eval(c, Q.TWO).multiply(new Q(3, 2)))
-      .add(RING_Y.eval(d, Q.TWO).multiply(new Q(13, 3)))
+      .add(RING_Y.eval(c, Q.TWO).multiply(M0))
+      .add(RING_Y.eval(d, Q.TWO).multiply(M1))
       .toZ();
   }
-
 }
 

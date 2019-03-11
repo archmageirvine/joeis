@@ -1101,3 +1101,5 @@ A018895 Weight distribution of [ 512,130,64 ] third-order Reed-Muller code, fini
 A018898 Theta series of 14-dimensional lattice of det 3^7 and minimal norm 2, possible dupe
 A018924 Isotropic subspaces of an n-dimensional symplectic space over GF(4)
 A019267 From an asymptotic expansion for Pi
+A019311 Number of words of length n (n >= 1) over a two-letter alphabet having a minimal period of size n-2, have paper, see blog2019.tex
+A019317 Place n queens on an n X n board so as to leave the maximal number of unattacked squares; sequence gives number of different solutions (exact symmetries unspecified)

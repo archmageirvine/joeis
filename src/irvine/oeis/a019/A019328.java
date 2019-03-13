@@ -10,11 +10,11 @@ import irvine.oeis.Sequence;
  */
 public class A019328 implements Sequence {
 
-  private int mN = -1;
+  private int mN = 0;
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.TEN : Cyclotomic.cyclotomic(mN, 10);
+    return Cyclotomic.cyclotomic(++mN, 10);
   }
 }
 

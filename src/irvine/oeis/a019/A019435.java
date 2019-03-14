@@ -1,4 +1,4 @@
-package irvine.oeis.a016;
+package irvine.oeis.a019;
 
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
@@ -9,18 +9,17 @@ import irvine.oeis.Sequence;
  * A016274.
  * @author Sean A. Irvine
  */
-public class A016274 implements Sequence {
+public class A019435 implements Sequence {
 
-  // Actually ordinary IEEE double precision arithmetic is sufficient for known
-  // terms up to at least 8984683956L.  But more careful here for later terms ...
+  // Cf. A016274
 
-  private CR mBest = CR.ONE;
+  private CR mBest = CR.ZERO;
   private long mN = 0;
 
   @Override
   public Z next() {
     // This should be safe down to mBest of about 10^-12 and is definitely safe to the value below
-    if (mN < 8984683956L) {
+    if (mN <= 267241724L) {
       final double best = mBest.doubleValue();
       while (true) {
         final double d = Math.tan(++mN);
@@ -28,7 +27,7 @@ public class A016274 implements Sequence {
         if (frac < 0) {
           frac = 1 + frac;
         }
-        if (frac < best) {
+        if (frac > best) {
            mBest = CR.valueOf(frac);
           return Z.valueOf(mN);
         }
@@ -42,7 +41,7 @@ public class A016274 implements Sequence {
       if (frac.signum() < 0) {
         frac = CR.ONE.add(frac);
       }
-      if (frac.compareTo(mBest) < 0) {
+      if (frac.compareTo(mBest) > 0) {
         mBest = frac;
         return Z.valueOf(mN);
       }

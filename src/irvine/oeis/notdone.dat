@@ -325,9 +325,7 @@ A003498 Internal energy series for f.c.c. lattice
 A003505 Number of simple tournaments with n nodes, existing paper does not have method
 A003507 Number of rigid tournaments with n nodes, existing paper does not have method
 A003521 Extreme values of Dirichlet series
-A003613 Number of symmetries in planted (1,4) trees on 3n-1 vertices, could not get exact paper
 A003614 Number of symmetries in unrooted (1,4) trees on 3n-1 vertices, could not get exact paper
-A003615 Symmetries in planted 4-trees on n+1 vertices, could not get exact paper
 A003616 Symmetries in unrooted 4-trees on n+1 vertices, could not get exact paper
 A003646 Class number of binary quadratic forms with fundamental discriminant A003658(n),n>=2, cf. also A003636
 A003647 Class number of real quadratic forms with discriminant 4n+1

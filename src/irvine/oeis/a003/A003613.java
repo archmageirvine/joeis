@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.expression.Expression;
-import irvine.math.expression.Identifier;
-import irvine.math.expression.LiteralZ;
-import irvine.math.expression.Sircon;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Triple;
@@ -18,30 +14,34 @@ import irvine.util.Triple;
  */
 public class A003613 implements Sequence {
 
-  // Tricky because not a polynomial until substitution for y
-  // T(x,y) = x + (1/6x)T(x,y)^3 + (1/x)(y-1/2)T(x^2,y^2)T(x,y) + (1/x)(y^(log_2(3!))-y+1/3)T(x^3,y^3)
+  // Tricky because this g.f. is not really a polynomial until after substitution for y
+  // T(x,y) = x + (1/6x)T(x,y)^3 + (1/x)(y-1/2)T(x^2,y^2)T(x,y) + (1/x)(y^L-y+1/3)T(x^3,y^3),
+  // where L = log_2(3!).
+  // To avoid rational intermediate results, do the 1/6 part last
+  // 6T(x,y) = 6x + (1/x)T(x,y)^3 + (1/x)(6y-3)T(x^2,y^2)T(x,y) + (1/x)(6y^L-6y+2)T(x^3,y^3).
+  // We do a special purpose calculation, based on the triples and proceed computing
+  // one new power of x at each iteration.
+  // A triple (a,b,c) corresponds to c*y^(a*L+b).
 
-  // todo hmm symbolic expansion does not look good -- negative powers, poor simplification
-  // todo currently some of the intermediate results are rationals, need to multiply through by 6
+  protected static final Triple<Z> ONE = new Triple<>(Z.ZERO, Z.ZERO, Z.ONE);
+  protected static final Triple<Z> Y6 = new Triple<>(Z.ZERO, Z.ONE, Z.SIX);
+  protected static final Triple<Z> NEG_Y6 = new Triple<>(Z.ZERO, Z.ONE, Z.valueOf(-6));
+  protected static final Triple<Z> YL6 = new Triple<>(Z.ONE, Z.ZERO, Z.SIX);
 
-  // A triple (a,b,c) corresponds to c*y^(a*L+b), where L = log_2(3!).
-  private static final Triple<Z> ONE = new Triple<>(Z.ZERO, Z.ZERO, Z.ONE);
-  private static final Triple<Z> Y = new Triple<>(Z.ZERO, Z.ONE, Z.ONE);
-  private static final Triple<Z> NEG_Y = new Triple<>(Z.ZERO, Z.ONE, Z.NEG_ONE);
-  private static final Triple<Z> YL = new Triple<>(Z.ONE, Z.ZERO, Z.ONE);
+  private int mN = 0;
 
   // Outer list in powers of x, inner list terms in y.
-  private final ArrayList<List<Triple<Z>>> mT = new ArrayList<>();
+  protected final ArrayList<List<Triple<Z>>> mT = new ArrayList<>();
   {
-    mT.add(null);
+    mT.add(null); // 0th term, never consulted
     mT.add(Collections.singletonList(ONE));
   }
 
-  private Triple<Z> substitutePower(final Triple<Z> t, final int n) {
+  private static Triple<Z> substitutePower(final Triple<Z> t, final int n) {
     return new Triple<>(t.left().multiply(n), t.mid().multiply(n), t.right());
   }
 
-  private List<Triple<Z>> substitutePower(final List<Triple<Z>> lst, final int n) {
+  protected static List<Triple<Z>> substitutePower(final List<Triple<Z>> lst, final int n) {
     final List<Triple<Z>> res = new ArrayList<>(lst.size());
     for (final Triple<Z> t : lst) {
       res.add(substitutePower(t, n));
@@ -49,11 +49,11 @@ public class A003613 implements Sequence {
     return res;
   }
 
-  private Triple<Z> divide(final Triple<Z> t, final long n) {
+  private static Triple<Z> divide(final Triple<Z> t, final long n) {
     return new Triple<>(t.left(), t.mid(), t.right().divide(n));
   }
 
-  private List<Triple<Z>> divide(final List<Triple<Z>> lst, final long n) {
+  protected static List<Triple<Z>> divide(final List<Triple<Z>> lst, final long n) {
     final List<Triple<Z>> res = new ArrayList<>(lst.size());
     for (final Triple<Z> t : lst) {
       res.add(divide(t, n));
@@ -61,11 +61,23 @@ public class A003613 implements Sequence {
     return res;
   }
 
-  private Triple<Z> multiply(final Triple<Z> a, final Triple<Z> b) {
+  private static Triple<Z> multiply(final Triple<Z> t, final long n) {
+    return new Triple<>(t.left(), t.mid(), t.right().multiply(n));
+  }
+
+  protected static List<Triple<Z>> multiply(final List<Triple<Z>> lst, final long n) {
+    final List<Triple<Z>> res = new ArrayList<>(lst.size());
+    for (final Triple<Z> t : lst) {
+      res.add(multiply(t, n));
+    }
+    return res;
+  }
+
+  private static Triple<Z> multiply(final Triple<Z> a, final Triple<Z> b) {
     return new Triple<>(a.left().add(b.left()), a.mid().add(b.mid()), a.right().multiply(b.right()));
   }
 
-  private List<Triple<Z>> multiply(final List<Triple<Z>> lst, final Triple<Z> a) {
+  protected static List<Triple<Z>> multiply(final List<Triple<Z>> lst, final Triple<Z> a) {
     final List<Triple<Z>> res = new ArrayList<>(lst.size());
     for (final Triple<Z> t : lst) {
       res.add(multiply(t, a));
@@ -73,8 +85,7 @@ public class A003613 implements Sequence {
     return res;
   }
 
-  private List<Triple<Z>> multiply(final List<Triple<Z>> a, final List<Triple<Z>> b) {
-    // todo collapse like terms
+  protected static List<Triple<Z>> multiply(final List<Triple<Z>> a, final List<Triple<Z>> b) {
     final List<Triple<Z>> res = new ArrayList<>(a.size() * b.size());
     for (final Triple<Z> t : b) {
       res.addAll(multiply(a, t));
@@ -82,82 +93,98 @@ public class A003613 implements Sequence {
     return res;
   }
 
-  // (1/6x)*T(x,y)^3
+  // (1/x)*T(x,y)^3
   private List<Triple<Z>> cube(final int n) {
     final List<Triple<Z>> res = new ArrayList<>();
-    for (int i = 1; i < n - 2; ++i) {
-      for (int j = 1; j + i < n - 2; ++j) {
-        final int k = n - i - j - 1;
+    for (int i = 1; i < n; ++i) {
+      for (int j = 1; j + i <= n; ++j) {
+        final int k = n + 1 - i - j;
         assert k > 0;
         res.addAll(multiply(multiply(mT.get(i), mT.get(j)), mT.get(k)));
       }
     }
-    return divide(res, 6);
+    return res;
   }
 
-  // (1/x)*(y-1/2)T(x^2,y^2)T(x,y)
+  // (1/x)*(6y-3)T(x^2,y^2)T(x,y)
   private List<Triple<Z>> subs2(final int n) {
     final ArrayList<Triple<Z>> res = new ArrayList<>();
-    for (int i = 2; i < n - 2; i += 2) {
-      final int j = n - i;
+    for (int i = 2; i <= n; i += 2) {
+      final int j = n + 1 - i;
       final List<Triple<Z>> lst = substitutePower(mT.get(i / 2), 2);
       final List<Triple<Z>> m = multiply(lst, mT.get(j));
-      res.addAll(multiply(m, Y));
-      res.addAll(divide(m, -2));
+      res.addAll(multiply(m, Y6));
+      res.addAll(multiply(m, -3));
     }
     return res;
   }
 
-  // (1/x)*(y^L-y+1/3)*T(x^3,y^3)
+  // (1/x)*(6y^L-6y+2)*T(x^3,y^3)
   private List<Triple<Z>> subs3(final int n) {
     final int m = n + 1;
     if (m % 3 == 0) {
       final List<Triple<Z>> lst = substitutePower(mT.get(m / 3), 3);
-      final ArrayList<Triple<Z>> res = new ArrayList<>();
-      res.addAll(multiply(lst, YL));
-      res.addAll(multiply(lst, NEG_Y));
-      res.addAll(divide(lst, 3));
+      final ArrayList<Triple<Z>> res = new ArrayList<>(3 * lst.size());
+      res.addAll(multiply(lst, YL6));
+      res.addAll(multiply(lst, NEG_Y6));
+      res.addAll(multiply(lst, 2));
       return res;
     } else {
       return Collections.emptyList();
     }
   }
 
-  private List<Triple<Z>> step(final int n) {
-    final ArrayList<Triple<Z>> res = new ArrayList<>();
-    res.addAll(cube(n));
-    res.addAll(subs2(n));
-    res.addAll(subs3(n));
+  protected List<Triple<Z>> collect(final List<Triple<Z>> lst) {
+    // Collect like terms together
+    final ArrayList<Triple<Z>> res = new ArrayList<>(lst.size());
+    for (final Triple<Z> t : lst) {
+      boolean found = false;
+      for (int k = 0; k < res.size(); ++k) {
+        final Triple<Z> a = res.get(k);
+        if (t.left().equals(a.left()) && t.mid().equals(a.mid())) {
+          found = true;
+          res.remove(k);
+          final Z mul = t.right().add(a.right());
+          if (!Z.ZERO.equals(mul)) {
+            final Triple<Z> b = new Triple<>(a.left(), a.mid(), mul);
+            res.add(b);
+          }
+          break;
+        }
+      }
+      if (!found && !Z.ZERO.equals(t.right())) {
+        res.add(t);
+      }
+    }
     return res;
   }
 
-  private long mN = -1;
-  private String mTString = "x";
-
-  private String substitutePower(final String t, final int power) {
-    return t.replace("x", "(x^" + power + ")").replace("y", "(y^" + power + ")");
+  // (1/6)
+  protected List<Triple<Z>> step(final int n) {
+    final ArrayList<Triple<Z>> res = new ArrayList<>(cube(n));
+    res.addAll(subs2(n));
+    res.addAll(subs3(n));
+    return divide(collect(res), 6);
   }
 
-  private String step(final String t) {
-    final String s = "x+(1/6)*((" + t + ")^3/x)+(y-1/2)*((" + substitutePower(t, 2) + ")/x)*(" + t + ")+(y^l-y+1/3)*((" + substitutePower(t, 3) + ")/x)";
-    final Expression e = Sircon.parse(s).expand().eval();
-    return e.toString();
+  private Z eval(final Triple<Z> t) {
+    // substitute 2 for y
+    return Z.SIX.pow(t.left()).shiftLeft(t.mid().intValueExact()).multiply(t.right());
   }
 
-  private String replaceLog(final String t) {
-    // todo ugh not enough because things like y^2^2^2^l are occurring
-    return t.replace("y^l", "6").replaceAll("y\\^([0-9]+)\\^l", "(6^$1)");
+  private Z eval(final int n) {
+    Z sum = Z.ZERO;
+    for (final Triple<Z> t : mT.get(n)) {
+      sum = sum.add(eval(t));
+    }
+    return sum;
   }
 
   @Override
   public Z next() {
-    for (int k = 0; k < 3; ++k) {
+    if (++mN > 0) {
       mT.add(step(mT.size()));
-      System.out.println("x^" + (mT.size() - 1) + ": " + mT.get(mT.size() - 1));
-      mTString = step(mTString);
-      System.out.println(mTString);
     }
-    System.out.println("T(x,2)=" + Sircon.parse(replaceLog(mTString)).substitute(new Identifier("y"), new LiteralZ(2)).expand().eval().toString().replace("+ -", "-").replace(" ", ""));
-    return null;
+    return eval(mN);
   }
 }

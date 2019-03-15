@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016274.
+ * A019435.
  * @author Sean A. Irvine
  */
 public class A019435 implements Sequence {

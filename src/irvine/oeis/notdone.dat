@@ -1082,9 +1082,9 @@ A018198 Possible numbers of complements of topologies on 7 points
 A018199 Possible numbers of complements of topologies on 8 points
 A018200 Possible numbers of complements of topologies on 9 points
 A018201 Possible numbers of complements of topologies on 10 points
-A018202 Possible numbers of complements of topologies on 10 points
-A018203 Possible numbers of complements of topologies on 10 points
-A018204 Possible numbers of complements of topologies on 10 points
+A018202 Possible numbers of complements of topologies on 11 points
+A018203 Possible numbers of complements of topologies on 12 points
+A018204 Possible numbers of complements of topologies on 13 points
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
 A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, couldn't find ref
@@ -1101,3 +1101,5 @@ A018924 Isotropic subspaces of an n-dimensional symplectic space over GF(4)
 A019267 From an asymptotic expansion for Pi
 A019311 Number of words of length n (n >= 1) over a two-letter alphabet having a minimal period of size n-2, have paper, see blog2019.tex
 A019317 Place n queens on an n X n board so as to leave the maximal number of unattacked squares; sequence gives number of different solutions (exact symmetries unspecified)
+A019436 Size of smallest directed 1-covering code of length n with banded structure, hard, have paper
+A019440 Integers in alphabetical order in British English, dumb

@@ -1103,3 +1103,4 @@ A019311 Number of words of length n (n >= 1) over a two-letter alphabet having a
 A019317 Place n queens on an n X n board so as to leave the maximal number of unattacked squares; sequence gives number of different solutions (exact symmetries unspecified)
 A019436 Size of smallest directed 1-covering code of length n with banded structure, hard, have paper
 A019440 Integers in alphabetical order in British English, dumb
+A019441 Coefficients in generating function for radius of curvature of the sequence A066158

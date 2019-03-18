@@ -170,6 +170,31 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
   }
 
   /**
+   * Add this polynomial to another.
+   * @param p the other polynomial
+   * @return the sum
+   */
+  public MultivariatePolynomial add(final MultivariatePolynomial p) {
+    checkVariables(p);
+    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables);
+    res.putAll(this);
+    for (final Map.Entry<Term, Z> e : p.entrySet()) {
+      final Term term = e.getKey();
+      if (res.containsKey(term)) {
+        final Z v = e.getValue().add(res.get(term));
+        if (Z.ZERO.equals(v)) {
+          res.remove(term);
+        } else {
+          res.put(term, v);
+        }
+      } else {
+        res.put(term, e.getValue());
+      }
+    }
+    return res;
+  }
+
+  /**
    * Multiply this polynomial by another.
    * @param p the other polynomial
    * @param degreeLimits maximum retained degree for each variable

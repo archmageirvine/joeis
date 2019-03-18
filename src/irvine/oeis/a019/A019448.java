@@ -9,23 +9,23 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019447.
+ * A019448.
  * @author Sean A. Irvine
  */
-public class A019447 implements Sequence {
+public class A019448 implements Sequence {
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    final MultivariatePolynomialRing poly = new MultivariatePolynomialRing(++mN);
+    final MultivariatePolynomialRing poly = new MultivariatePolynomialRing(2 * ++mN);
     final MatrixRing<MultivariatePolynomial> ring = new MatrixRing<>(mN, poly);
-    final Matrix<MultivariatePolynomial> toeplitz = new DefaultMatrix<>(mN, mN, poly.zero());
+    final Matrix<MultivariatePolynomial> hankel = new DefaultMatrix<>(mN, mN, poly.zero());
     for (int i = 0; i < mN; ++i) {
       for (int j = 0; j < mN; ++j) {
-        toeplitz.set(i, j, poly.var(Math.abs(i - j)));
+        hankel.set(i, j, poly.var(i + j));
       }
     }
-    return Z.valueOf(ring.det(toeplitz).keySet().size());
+    return Z.valueOf(ring.det(hankel).keySet().size());
   }
 }

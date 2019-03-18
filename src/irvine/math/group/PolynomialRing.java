@@ -10,7 +10,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A polynomial where individuals elements are drawn from a ring.
+ * A polynomial ring where individuals elements are drawn from a ring.
  * @author Sean A. Irvine
  * @param <E> underlying type of polynomial elements
  */

@@ -10,6 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A019442 extends BinomialTransformSequence {
 
+  /** Construct the sequence. */
   public A019442() {
     super(new Sequence() {
 

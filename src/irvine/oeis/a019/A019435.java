@@ -19,7 +19,7 @@ public class A019435 implements Sequence {
   @Override
   public Z next() {
     // This should be safe down to mBest of about 10^-12 and is definitely safe to the value below
-    if (mN <= 267241724L) {
+    if (mN <= 6167950454L) {
       final double best = mBest.doubleValue();
       while (true) {
         final double d = Math.tan(++mN);

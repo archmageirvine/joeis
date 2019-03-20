@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
  */
 public class A000670 implements Sequence {
 
-  private int mN = -1;
-  private final MemoryFactorial mF = new MemoryFactorial();
+  protected int mN = -1;
+  protected final MemoryFactorial mF = new MemoryFactorial();
 
   @Override
   public Z next() {

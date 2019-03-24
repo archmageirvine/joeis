@@ -1,0 +1,103 @@
+jOEIS
+=====
+
+Some brief notes for developers.
+
+Sequence Implementations
+------------------------
+
+The sequence A123456 is implemented in the class file located at
+
+src/irvine/oeis/a123/A123456.java
+
+The implementation must (ultimately) implement irvine.oeis.Sequence, which
+has a single method "next()".  Of course, this implementation can be
+indirect, by extending some other class which in turn implements Sequence.
+
+A number of useful base sequence classes can be found in the irvine/oeis
+package; for example, irvine.oeis.DecimalExpansionSequence,
+irvine.oeis.EulerTransformSequence, etc.
+
+In general there should be no other classes (non-sequence implementations)
+in the annn subdirectories.  Other new support code, can be added into
+appropriate locations in irvine/math etc.
+
+Tests
+-----
+
+For each sequence implementation, there is a corresponding JUnit 3 test class:
+
+test/irvine/oeis/a123/A123456Test.java
+
+All the tests are linked together via AllTests.java files in each package.
+
+The tests themselves should extend AbstractTestSequence, which (by default)
+will test the implementation against all the terms currently defined in the
+data lines of the corresponding sequence.  However, in some instances, this
+is computationally impractical, and the test can limit the number of terms
+tested by over-riding the maxTerms() method.
+
+There is a convenience script "make_oeis_test.sh" which can automatically
+create a test class, link it into AllTests, and add it to the git repository.
+For example, "make_oeis_test.sh Annnnnn" will generate a test file for Annnnnn,
+an optional argument can be given limiting the number of terms to test, e.g.
+"make_oeis_test.sh A123456 5".  Note, if a test already exists, this script
+will simply overwrite the existing test.
+
+Of course, test classes can test any other functionality by adding extra
+test methods to the corresponding test class.
+
+Style Guidelines
+----------------
+
+The style of the code files including spelling is checked on a daily basis
+using a continuous integration system.  The style rules generally follow
+the Sun Java style guide, with the following specifics:
+
+* Indentation is 2 spaces (no tabs).
+
+* The class comment should start with the sequence number and contain
+  appropriate "@author" tag(s).  These comments are processed by the
+  javadoc system, so must be valid for that purpose.  For example, "<"
+  must be escaped as "&lt;", etc.  Appropriate <code> tags and similar
+  should be used where appropriate.
+
+* Member variables match the pattern m[A-Z][A-Za-z0-9]*
+
+* Class variables match the pattern [A-Z][A-Z0-9_]*
+
+* Local variables match the pattern [a-z][A-Za-z]*
+
+* Abstract classes have names starting with Abstract.
+
+* Methods should be private unless actually needed for implementation of
+  multiple sequences.
+
+* The "final" keyword should be used whereever it is allowed.
+
+* When splitting an expression across lines, the operator is carried to
+  the next line.
+
+Implementation Hints
+--------------------
+
+The best option is probably to find a similar already implementd sequence
+as a starting point.  Simply copy the class, update the documentation
+and change the implementation.  Make sure the right package is being used.
+
+For sequences requiring stepping over primes, the Fast class provides a
+sieve-backed sequence of primes.  For factorization use the Cheetah class
+if only "small" factorizations are required; otherwise perhaps Jaguar.
+
+The integers are not a field of course, but there is a class IntegerField
+which allows you to operate as if they are.  It will do truncating division.
+This is helpful, if you're wanting to work over polynomials.  For example,
+the following line is common in many sequences using a generating function
+approach:
+
+private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+
+Actually the above variable would be better called FIELD rather than RING, but
+the above is way more common usage in the current code.
+
+

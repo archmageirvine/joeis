@@ -27,8 +27,8 @@ public class A077363 implements Sequence {
     for (int k = 1; k < mN; ++k) {
       base.append('0');
     }
-    Z b = new Z(base.toString()).sqrt();
-    final Z lim = new Z(base.append('0').toString()).sqrt();
+    Z b = new Z(base).sqrt();
+    final Z lim = new Z(base.append('0')).sqrt();
     //System.out.println("base=" + base + " lim="+lim);
     while (b.compareTo(lim) <= 0) {
       final Z s = b.square();

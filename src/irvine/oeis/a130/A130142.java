@@ -64,7 +64,7 @@ public class A130142 implements Sequence {
           sb.append(new StringBuilder(z.toString()).reverse());
         }
       }
-      n = new Z(sb.toString());
+      n = new Z(sb);
     }
   }
 

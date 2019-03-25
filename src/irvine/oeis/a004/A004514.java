@@ -24,7 +24,7 @@ public class A004514 implements Sequence {
       final int r = (r(as, as.length() - k) + r(bs, bs.length() - k)) % base;
       sb.append(r);
     }
-    return new Z(sb.toString(), base);
+    return new Z(sb, base);
   }
 
   private Z mN = Z.NEG_ONE;

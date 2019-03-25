@@ -24,6 +24,6 @@ public class A001292 implements Sequence {
       sb.append(j);
       j %= mN;
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

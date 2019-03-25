@@ -26,7 +26,7 @@ public class BinaryToDecimalExpansionSequence extends DecimalExpansionSequence {
       mBuf.append(mBinarySeq.next());
       ++mSteps;
     }
-    return CR.valueOf(new Q(new Z(mBuf.toString(), 2), Z.ONE.shiftLeft(mBuf.length())));
+    return CR.valueOf(new Q(new Z(mBuf, 2), Z.ONE.shiftLeft(mBuf.length())));
   }
 
   @Override

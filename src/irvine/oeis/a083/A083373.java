@@ -1,11 +1,11 @@
 package irvine.oeis.a083;
 
+import java.util.Arrays;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A083373.
@@ -29,7 +29,7 @@ public class A083373 implements Sequence {
         mBuffer.append(k);
       }
     }
-    return new Z(mBuffer.toString());
+    return new Z(mBuffer);
   }
 
   @Override

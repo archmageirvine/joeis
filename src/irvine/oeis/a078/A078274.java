@@ -20,7 +20,7 @@ public class A078274 implements Sequence {
     for (int k = 0; k < mCat.length(); ++k) {
       s.append(mCat.charAt(k)).append(mCat.charAt(mCat.length() - k - 1));
     }
-    return new Z(s.toString());
+    return new Z(s);
   }
 }
 

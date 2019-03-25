@@ -1,9 +1,9 @@
 package irvine.oeis.a179;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Arrays;
 
 /**
  * A179310.
@@ -45,7 +45,7 @@ public class A179310 implements Sequence {
           for (int k = 0; k < min; ++k) {
             sb.append('9');
           }
-          mN = new Z(sb.toString());
+          mN = new Z(sb);
           mPrevMin = min;
         }
         return r;

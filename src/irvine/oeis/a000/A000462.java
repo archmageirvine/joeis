@@ -1,9 +1,9 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A000462.
@@ -37,6 +37,6 @@ public class A000462 implements Sequence {
       sb.append(qr[0]);
       m = qr[1];
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

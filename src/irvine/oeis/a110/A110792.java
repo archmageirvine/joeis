@@ -14,7 +14,7 @@ public class A110792 implements Sequence {
   private Z mS = Z.ZERO;
 
   protected Z output(final StringBuilder t) {
-    return new Z(t.toString());
+    return new Z(t);
   }
 
   protected long[] candidates() {

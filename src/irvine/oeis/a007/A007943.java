@@ -21,6 +21,6 @@ public class A007943 implements Sequence {
     for (long k = 2 * mN; k > 0; k -= 2) {
       sb.append(k);
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

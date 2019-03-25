@@ -1109,3 +1109,4 @@ A019473 Number of stable n-celled patterns ("still lifes") in Conway's game of L
 A019502 Number of simplices in minimal decomposition of n-cube, hard
 A019503 Simplexity of the n-cube: minimal cardinality of triangulation of n-cube using n-simplices whose vertices are vertices of the n-cube, hard
 A019504 Number of simplices in minimal corner-slicing triangulation of n-cube, hard
+A019513 Numbers written in base of double factorial numbers, can't match a(30)

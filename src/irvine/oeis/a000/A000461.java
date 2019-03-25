@@ -26,6 +26,6 @@ public class A000461 implements Sequence {
     for (int k = q >>> 1; k < mN; ++k) {
       sb.append(mN);
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

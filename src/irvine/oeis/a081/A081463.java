@@ -23,7 +23,7 @@ public class A081463 implements Sequence {
       c = m / 10;
       k = m % 10;
     }
-    return new Z(v.reverse().toString());
+    return new Z(v.reverse());
   }
 
   private final Iterator<Z> mIt;
@@ -42,9 +42,4 @@ public class A081463 implements Sequence {
     }
     return null;
   }
-
 }
-
-/*
-(PARI) {f(digit)=local(v, m, k, c, s); v=""; m=0; k=digit; c=0; while(m!=digit, v=concat(k, v); m=digit*k+c; s=divrem(m, 10); c=s[1]; k=s[2]); eval(v)}
- */

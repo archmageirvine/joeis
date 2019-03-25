@@ -15,6 +15,6 @@ public class A007908 implements Sequence {
   @Override
   public Z next() {
     mS.append(++mN);
-    return new Z(mS.toString());
+    return new Z(mS);
   }
 }

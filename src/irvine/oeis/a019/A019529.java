@@ -1,0 +1,29 @@
+package irvine.oeis.a019;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A019529.
+ * @author Sean A. Irvine
+ */
+public class A019529 implements Sequence {
+
+  private long mN = -1;
+  private long mK = 2;
+  private CR mSum = CR.ONE.add(CR.TWO.sqrt().inverse());
+
+  @Override
+  public Z next() {
+    if (++mN <= 1) {
+      return Z.valueOf(mN + 1); // Avoid cases of integers
+    }
+    final CR n = CR.valueOf(mN);
+    while (mSum.compareTo(n) < 0) {
+      mSum = mSum.add(CR.valueOf(++mK).sqrt().inverse());
+    }
+    return Z.valueOf(mK);
+  }
+}
+

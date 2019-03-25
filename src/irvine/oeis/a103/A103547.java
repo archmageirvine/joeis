@@ -1,10 +1,10 @@
 package irvine.oeis.a103;
 
+import java.util.HashSet;
+
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A103547.
@@ -35,7 +35,7 @@ public class A103547 implements Sequence {
       for (int k = pos + 1; k < mBase.length(); ++k) {
         q.append(extend);
       }
-      return new Z(q.toString()).add(add);
+      return new Z(q).add(add);
     }
     return n;
   }

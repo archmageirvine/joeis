@@ -23,6 +23,6 @@ public class A001369 implements Sequence {
       ++mPos;
       mPos %= DIGITS.length();
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

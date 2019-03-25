@@ -21,7 +21,7 @@ public class A155514 implements Sequence {
       if (!StringUtils.isPalindrome(ss)) {
         final Z z = new Z(ss);
         if (z.isProbablePrime()) {
-          final Z t = new Z(s.reverse().toString());
+          final Z t = new Z(s.reverse());
           if (z.compareTo(t) > 0 && t.isProbablePrime()) {
             return z;
           }

@@ -21,7 +21,7 @@ public class A004489 implements Sequence {
       final int r = (r(as, as.length() - k) + r(bs, bs.length() - k)) % 3;
       sb.append(r);
     }
-    return new Z(sb.toString(), 3);
+    return new Z(sb, 3);
   }
 
   private long mN = -1;

@@ -29,7 +29,7 @@ public class A173448 implements Sequence {
     if (!z.isProbablePrime(2)) {
       return false;
     }
-    final Z e = new Z(sb.reverse().toString());
+    final Z e = new Z(sb.reverse());
     return e.isProbablePrime(4) && z.isProbablePrime(28) && e.isProbablePrime(26);
   }
 

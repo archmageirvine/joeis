@@ -20,6 +20,6 @@ public class A007923 implements Sequence {
       mM = (mM + 1) % 9;
       sb.append(mM + 1);
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

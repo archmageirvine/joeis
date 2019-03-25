@@ -20,7 +20,7 @@ public class A155512 implements Sequence {
       final String ss = s.toString();
       if (!StringUtils.isPalindrome(ss)) {
         final Z z = new Z(ss);
-        if (z.isProbablePrime() && new Z(s.reverse().toString()).isProbablePrime()) {
+        if (z.isProbablePrime() && new Z(s.reverse()).isProbablePrime()) {
           return z;
         }
       }

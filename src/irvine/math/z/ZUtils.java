@@ -212,7 +212,7 @@ public final class ZUtils {
       }
     }
     sb.append(c).append(b);
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 
   /**

@@ -35,6 +35,6 @@ public class A006920 implements Sequence {
     for (final int cnt : mCounts) {
       sb.append(cnt);
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

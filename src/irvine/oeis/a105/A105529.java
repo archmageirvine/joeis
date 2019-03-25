@@ -20,7 +20,7 @@ public class A105529 implements Sequence {
       v %= 3;
       sb.append(v);
     }
-    return new Z(sb.toString(), 3);
+    return new Z(sb, 3);
   }
 }
 

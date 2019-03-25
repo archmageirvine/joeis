@@ -31,6 +31,6 @@ public class A007924 implements Sequence {
       p = mPrime.prevPrime(p);
     }
     sb.append(n >= 1 ? '1' : '0');
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

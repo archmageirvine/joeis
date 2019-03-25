@@ -38,7 +38,7 @@ public class A137833 implements Sequence {
       mN = mPrime.nextPrime(mN);
       final String s = mN.toString();
       if (mPrime.isPrime(s.length())) {
-        if (valid(s) && new Z(new StringBuilder(s).reverse().toString()).isPrime()) {
+        if (valid(s) && new Z(new StringBuilder(s).reverse()).isPrime()) {
           return mN;
         }
       } else {
@@ -47,7 +47,7 @@ public class A137833 implements Sequence {
         for (int k = 0; k < s.length(); ++k) {
           sb.append('2');
         }
-        mN = new Z(sb.toString());
+        mN = new Z(sb);
       }
     }
   }

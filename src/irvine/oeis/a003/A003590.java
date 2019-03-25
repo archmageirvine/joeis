@@ -19,6 +19,6 @@ public class A003590 implements Sequence {
     for (int k = 0; k <= mN; ++k) {
       sb.append(Binomial.binomial(mN, k));
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

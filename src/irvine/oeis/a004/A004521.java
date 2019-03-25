@@ -24,7 +24,7 @@ public class A004521 implements Sequence {
       final int r = (r(as, as.length() - k, base) + r(bs, bs.length() - k, base)) % base;
       sb.append(Integer.toString(r, base));
     }
-    return new Z(sb.toString(), base);
+    return new Z(sb, base);
   }
 
   @Override

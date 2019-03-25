@@ -37,7 +37,7 @@ public class AlonsoSequence implements Sequence {
         sb.append(Integer.toString(fs.getExponent(p), base));
       }
     }
-    return new Z(sb.toString(), base);
+    return new Z(sb, base);
   }
 
   @Override

@@ -27,6 +27,6 @@ public class A007961 implements Sequence {
       v -= d * s;
       --m;
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

@@ -20,7 +20,7 @@ public class A048346 implements Sequence {
     for (int k = 0; k < mN; ++k) {
       sb.append('1');
     }
-    final Z min = new Z(sb.toString());
+    final Z min = new Z(sb);
     Z n = min.sqrt();
     Z s = n.square();
     while (true) {

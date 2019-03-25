@@ -27,7 +27,7 @@ public class A007623 implements Sequence {
       sb.append(qr[0]);
       m = qr[1];
     } while (b > 1);
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }
 

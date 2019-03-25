@@ -32,7 +32,7 @@ public class HomePrimeSequence {
         sb.append(s);
       }
     }
-    return new Z(sb.toString(), mBase);
+    return new Z(sb, mBase);
   }
 
   void sequence(Z n) {

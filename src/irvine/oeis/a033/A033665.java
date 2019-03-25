@@ -19,7 +19,7 @@ public class A033665 implements Sequence {
     Z m = mN;
     String n = m.toString();
     while (!StringUtils.isPalindrome(n)) {
-      m = m.add(new Z(new StringBuilder(n).reverse().toString()));
+      m = m.add(new Z(new StringBuilder(n).reverse()));
       n = m.toString();
       ++c;
     }

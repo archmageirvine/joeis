@@ -21,7 +21,7 @@ public class A108963 implements Sequence {
     for (int k = 2; k <= mN; ++k) {
       sb.append(k);
     }
-    final Z modulus = new Z(sb.toString());
+    final Z modulus = new Z(sb);
     Z p = modulus.add(1);
     while (!p.isProbablePrime()) {
       p = p.add(modulus);

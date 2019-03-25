@@ -29,7 +29,7 @@ public class A113572 implements Sequence {
     for (int k = 2; k <= n; ++k) {
       sb.append(mPrime.isPrime(k) ? "2" : "4");
     }
-    final Z b = new Z(sb.toString());
+    final Z b = new Z(sb);
     return b.add(n - 1).divide(n).multiply(n);
   }
 

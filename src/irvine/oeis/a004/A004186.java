@@ -17,6 +17,6 @@ public class A004186 implements Sequence {
   public Z next() {
     final char[] s = String.valueOf(++mN).toCharArray();
     Arrays.sort(s);
-    return new Z(new StringBuilder(new String(s)).reverse().toString());
+    return new Z(new StringBuilder(new String(s)).reverse());
   }
 }

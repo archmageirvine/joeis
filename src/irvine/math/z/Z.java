@@ -126,7 +126,7 @@ public class Z extends Number implements Comparable<Z> {
    * 2 to 36 inclusive.
    * @exception NullPointerException if <code>val</code> is null.
    */
-  public Z(final String val, final int radix) {
+  public Z(final CharSequence val, final int radix) {
     // this is ugly!!!!
     final Z a = Convert.valueOf(val, radix);
     mSign = a.mSign;
@@ -139,7 +139,7 @@ public class Z extends Number implements Comparable<Z> {
    * @param val number represented as a string
    * @exception NullPointerException if <code>val</code> is null.
    */
-  public Z(final String val) {
+  public Z(final CharSequence val) {
     this(val, 10);
   }
 

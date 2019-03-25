@@ -53,7 +53,7 @@ public class FactorDbFactorizer extends AbstractFactorizer {
         sb.append(c);
       }
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 
   private Z getNumberFromId(final String id) throws IOException {

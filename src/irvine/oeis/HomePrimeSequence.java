@@ -44,7 +44,7 @@ public class HomePrimeSequence implements Sequence {
         sb.append(rep);
       }
     }
-    final Z res = new Z(sb.toString(), mBase);
+    final Z res = new Z(sb, mBase);
     mA = mTerminateOnPrime && res.isProbablePrime() ? null : res;
     return res;
   }

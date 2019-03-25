@@ -84,7 +84,7 @@ public final class HomePrimeVerify {
             out.println(expected + ": PRODUCT ERROR: " + t + " != " + n);
           }
           try {
-            n = new Z(next.toString(), base);
+            n = new Z(next, base);
           } catch (final IllegalArgumentException e) {
             // this means we have a trailing composite
             n = Z.ZERO;

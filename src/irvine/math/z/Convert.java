@@ -1,8 +1,8 @@
 package irvine.math.z;
 
-import irvine.math.IntegerUtils;
-
 import java.math.BigInteger;
+
+import irvine.math.IntegerUtils;
 
 /**
  * Conversion functions.
@@ -20,7 +20,7 @@ public final class Convert {
    * @param radix base of string
    * @return integer representation
    */
-  public static Z valueOf(final String val, final int radix) {
+  public static Z valueOf(final CharSequence val, final int radix) {
     if (radix < 2 || radix > 36) {
       throw new IllegalArgumentException("Radix must be in [2,36].");
     }

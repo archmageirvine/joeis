@@ -24,6 +24,6 @@ public class A000433 implements Sequence {
       sb.append(n / base);
       n = n % base;
     }
-    return new Z(sb.toString());
+    return new Z(sb);
   }
 }

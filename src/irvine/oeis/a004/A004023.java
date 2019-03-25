@@ -15,7 +15,7 @@ public class A004023 implements Sequence {
   public Z next() {
     while (true) {
       mS.append('1');
-      if (new Z(mS.toString()).isProbablePrime()) {
+      if (new Z(mS).isProbablePrime()) {
         return Z.valueOf(mS.length());
       }
     }

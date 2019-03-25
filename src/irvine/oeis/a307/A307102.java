@@ -1,25 +1,19 @@
-package irvine.oeis.a019;
+package irvine.oeis.a307;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019513.
+ * A307102.
  * @author Sean A. Irvine
  */
-public class A019513 implements Sequence {
-
-  // todo not right from a(30)
-  // There are two representations of 30, namely 20000 and 11201.
-  // Sequence requires the small of these.
+public class A307102 implements Sequence {
 
   private final MemoryFactorial mF = new MemoryFactorial();
   private Z mN = Z.ZERO;
 
-  @Override
-  public Z next() {
-    mN = mN.add(1);
+  Z compute(final Z mN) {
     int b = 1;
     while (mF.doubleFactorial(b).compareTo(mN) <= 0) {
       ++b;
@@ -28,10 +22,19 @@ public class A019513 implements Sequence {
     Z m = mN;
     do {
       final Z[] qr = m.divideAndRemainder(mF.doubleFactorial(--b));
+      if (qr[0].compareTo(Z.TEN) >= 0) {
+        throw new UnsupportedOperationException();
+      }
       sb.append(qr[0]);
       m = qr[1];
     } while (b > 1);
-    return new Z(sb.toString());
+    return new Z(sb);
+  }
+
+  @Override
+  public Z next() {
+    mN = mN.add(1);
+    return compute(mN);
   }
 }
 

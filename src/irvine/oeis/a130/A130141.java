@@ -61,7 +61,7 @@ public class A130141 implements Sequence {
           sb.append(z);
         }
       }
-      n = new Z(sb.toString());
+      n = new Z(sb);
     }
   }
 

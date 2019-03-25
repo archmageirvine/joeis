@@ -14,7 +14,7 @@ public class A155509 extends A155507 {
       final String s = step();
       final Z n = new Z(s);
       if (n.isPrime()) {
-        final Z t = new Z(new StringBuilder(s).reverse().toString());
+        final Z t = new Z(new StringBuilder(s).reverse());
         if (n.compareTo(t) > 0 && t.isProbablePrime()) {
           return n;
         }

@@ -1109,4 +1109,7 @@ A019473 Number of stable n-celled patterns ("still lifes") in Conway's game of L
 A019502 Number of simplices in minimal decomposition of n-cube, hard
 A019503 Simplexity of the n-cube: minimal cardinality of triangulation of n-cube using n-simplices whose vertices are vertices of the n-cube, hard
 A019504 Number of simplices in minimal corner-slicing triangulation of n-cube, hard
-A019513 Numbers written in base of double factorial numbers, can't match a(30)
+A019531 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,4), unclear
+A019533 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(n,5), unclear
+A019534 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,6), unclear
+A019535 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,7), unclear

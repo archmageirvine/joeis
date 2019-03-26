@@ -13,13 +13,13 @@ public class A307102 implements Sequence {
   private final MemoryFactorial mF = new MemoryFactorial();
   private Z mN = Z.ZERO;
 
-  Z compute(final Z mN) {
+  Z compute(final Z n) {
     int b = 1;
-    while (mF.doubleFactorial(b).compareTo(mN) <= 0) {
+    while (mF.doubleFactorial(b).compareTo(n) <= 0) {
       ++b;
     }
     final StringBuilder sb = new StringBuilder();
-    Z m = mN;
+    Z m = n;
     do {
       final Z[] qr = m.divideAndRemainder(mF.doubleFactorial(--b));
       if (qr[0].compareTo(Z.TEN) >= 0) {

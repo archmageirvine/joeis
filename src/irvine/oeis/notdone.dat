@@ -1113,3 +1113,8 @@ A019531 Let I_c(n,d) be maximal number of independent sets in d-regular simple c
 A019533 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(n,5), unclear
 A019534 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,6), unclear
 A019535 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,7), unclear
+A019539 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
+A019540 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
+A019541 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
+A019542 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
+A019543 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail

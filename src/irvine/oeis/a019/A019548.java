@@ -26,7 +26,7 @@ public class A019548 implements Sequence {
       }
       final String v = String.valueOf(mN);
       for (int split = 1; split < v.length(); ++split) {
-        if (mConcatOfCubes.contains(Long.parseLong(v.substring(0, split))) && mConcatOfCubes.contains(Long.parseLong(v.substring(split)))) {
+        if (mConcatOfCubes.contains(Long.valueOf(v.substring(0, split))) && mConcatOfCubes.contains(Long.valueOf(v.substring(split)))) {
           mConcatOfCubes.add(mN);
           if (mN == oldS) {
             return Z.valueOf(mN);

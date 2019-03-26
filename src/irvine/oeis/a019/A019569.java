@@ -14,22 +14,18 @@ import irvine.oeis.MemorySequence;
  */
 public class A019569 extends MemorySequence {
 
-  // todo formula in entry does not appear to work
-  // ideas? offset is wrong
-  // k_i is actually p_(k_i)
-
   private final TreeMap<Long, Integer> mInversePi = new TreeMap<>();
   private final Fast mPrime = new Fast();
   private int mPi = 0;
   private long mP = 1;
   {
-    add(Z.ZERO);
+    add(null);
   }
 
   private int inversePi(final long p) {
     while (p > mP) {
       mP = mPrime.nextPrime(mP);
-      mInversePi.put(mP, ++mPi == 1 ? 0 : mPi);
+      mInversePi.put(mP, ++mPi);
     }
     return mInversePi.get(p);
   }
@@ -37,29 +33,17 @@ public class A019569 extends MemorySequence {
   @Override
   protected Z computeNext() {
     final int n = size();
-    if (n <= 3) {
+    if (n <= 2) {
       return Z.valueOf(n - 1);
     }
-    if (n == 14) {
-      return Z.FOUR;
-    }
     final FactorSequence fs = Cheetah.factor(n);
-    Z sum = Z.ONE;
+    Z sum = Z.ZERO;
     int prevPi = 0;
     for (final Z pp : fs.toZArray()) {
       final int pi = inversePi(pp.longValueExact());
-      sum = sum.add(get(fs.getExponent(pp)));
-      sum = sum.add(get(pi - prevPi));
+      sum = sum.add(get(fs.getExponent(pp))).add(get(pi - prevPi)).add(1);
       prevPi = pi;
     }
-//    long prevP = 0;
-//    for (final Z pp : fs.toZArray()) {
-//      sum = sum.add(get(fs.getExponent(pp)));
-//      if (prevP != 0) {
-//        sum = sum.add(get((int) (pp.longValueExact() - prevP)));
-//      }
-//      prevP = pp.longValueExact();
-//    }
     return sum;
   }
 }

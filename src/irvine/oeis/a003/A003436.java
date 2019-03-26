@@ -1,22 +1,22 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
+import irvine.oeis.PrependSequence;
 
 /**
  * A003436.
  * @author Sean A. Irvine
  */
-public class A003436 extends A003435 {
+public class A003436 extends PrependSequence {
 
-  private boolean mFirst = true;
-
-  @Override
-  public Z next() {
-    if (mFirst) {
-      mFirst = false;
-      return Z.ZERO;
-    }
-    return super.next().shiftRight(mN).divide(mF.factorial(mN));
+  /** Construct the sequence. */
+  public A003436() {
+    super(new A003435() {
+      @Override
+      public Z next() {
+        return super.next().shiftRight(mN).divide(mF.factorial(mN));
+      }
+    }, Z.ONE, Z.ZERO);
   }
 }
 

@@ -26,7 +26,7 @@ public class A019547 implements Sequence {
       }
       final String v = String.valueOf(mN);
       for (int split = 1; split < v.length(); ++split) {
-        if (mConcatOfSquares.contains(Long.parseLong(v.substring(0, split))) && mConcatOfSquares.contains(Long.parseLong(v.substring(split)))) {
+        if (mConcatOfSquares.contains(Long.valueOf(v.substring(0, split))) && mConcatOfSquares.contains(Long.valueOf(v.substring(split)))) {
           mConcatOfSquares.add(mN);
           if (mN == oldS) {
             return Z.valueOf(mN);

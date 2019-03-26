@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A000939 implements Sequence {
 
-  private int mN = 2;
+  private int mN = 0;
   private final MemoryFactorial mF = new MemoryFactorial();
 
   private Z sum(final Z initial) {
@@ -36,7 +36,10 @@ public class A000939 implements Sequence {
 
   @Override
   public Z next() {
-    return (++mN & 1) == 0 ? even() : odd();
+    if (++mN < 3) {
+      return Z.ONE;
+    }
+    return (mN & 1) == 0 ? even() : odd();
   }
 }
 

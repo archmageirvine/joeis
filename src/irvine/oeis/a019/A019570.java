@@ -13,6 +13,12 @@ import irvine.oeis.a001.A001057;
  */
 public class A019570 implements Sequence {
 
+  // The original algorithm is described in terms of two lists List I and List II,
+  // starting with all the integers, and thereafter removing integers according to
+  // a pair of processes.  Here instead we keep track of the items already removed
+  // from the lists (the complements if you like), and generate the list on the fly
+  // as required using A001057 (0, 1, -1, 2, -2, 3, -3, ...).
+
   private final HashSet<Long> mComplementList1 = new HashSet<>();
   private final HashSet<Long> mComplementList2 = new HashSet<>();
   //private final HashMap<Long, Long> mB = new HashMap<>();

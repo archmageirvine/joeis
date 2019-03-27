@@ -79,12 +79,16 @@ public class A019570 implements Sequence {
     }
   }
 
+  protected long side() {
+    return 1;
+  }
+
   @Override
   public Z next() {
     if ((++mN & 1) == 0) {
       process1(-mN);
       process2(mN);
     }
-    return Z.valueOf(mC.get(mN));
+    return Z.valueOf(mC.get(side() * mN));
   }
 }

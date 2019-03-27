@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BiconnectedComponentsTest.class);
     suite.addTestSuite(CliqueCoversIteratorTest.class);
+    suite.addTestSuite(CountIndependentSetsTest.class);
     suite.addTestSuite(DummyGraphTest.class);
     suite.addTestSuite(Graph6Test.class);
     suite.addTestSuite(GraphFactoryTest.class);

@@ -34,9 +34,9 @@ public final class CountIndependentSets {
   }
 
   /**
-   * Compute a maximum independent set for a graph
+   * Count the number of independent sets in a graph.
    * @param graph the graph
-   * @return list of vertices in maximum independent set
+   * @return number of independent sets
    */
   public static long count(final Graph graph) {
     final CountIndependentSets mis = new CountIndependentSets(graph);

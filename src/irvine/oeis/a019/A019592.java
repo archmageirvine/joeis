@@ -2,6 +2,7 @@ package irvine.oeis.a019;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.util.array.LongDynamicLongArray;
 
 /**
  * A019592.
@@ -9,50 +10,45 @@ import irvine.oeis.Sequence;
  */
 public class A019592 implements Sequence {
 
-  // todo this is kind of interesting but doesn't reproduce expected sequence.
+  // Each entry points to next node in the circle.  Those with index < mN are original points
+  private final LongDynamicLongArray mNextPosition = new LongDynamicLongArray();
+  private long mN = 0;
+  private long mBest = 0;
 
-  private static final class Node {
-    Node mNext;
-    final boolean mOriginal;
-
-    private Node(final boolean original) {
-      mOriginal = original;
+  // Count the number of steps needed to solve circle starting with n points
+  private long count(final long n) {
+    // Form initial circle of points
+    for (long k = 0; k < n - 1; ++k) {
+      mNextPosition.set(k, k + 1);
     }
-  }
-
-  private int mN = 0;
-
-  private Node makeCircle(final int n) {
-    final Node first = new Node(true);
-    Node prev = first;
-    for (int k = 1; k < n; ++k) {
-      final Node t = new Node(true);
-      prev.mNext = t;
-      prev = t;
+    mNextPosition.set(n - 1, 0);
+    long free = n;
+    // Insert extra points
+    long position = 0;
+    long remaining = n;
+    while (remaining > 0) {
+      position = mNextPosition.get(mNextPosition.get(mNextPosition.get(mNextPosition.get(position))));
+      // Are we splitting two of the original points
+      if (position < mN && mNextPosition.get(position) < mN) {
+        --remaining;
+      }
+      // Insert a new node
+      mNextPosition.set(free, mNextPosition.get(position));
+      mNextPosition.set(position, free);
+      ++free;
     }
-    prev.mNext = first;
-    return first;
+    return free - n;
   }
 
   @Override
   public Z next() {
-    Node circle = makeCircle(++mN);
-    int remaining = mN;
-    long count = 0;
-    while (remaining > 0) {
-      circle = circle.mNext.mNext.mNext;
-      // Are we splitting two of the original points
-      if (circle.mOriginal && circle.mNext.mOriginal) {
-        --remaining;
+    // Sequence gives progressive records of positions needing a greater number of steps
+    while (true) {
+      final long count = count(++mN);
+      if (count > mBest) {
+        mBest = count;
+        return Z.valueOf(mN);
       }
-      // Insert a new node
-      final Node next = new Node(false);
-      next.mNext = circle.mNext;
-      circle.mNext = next;
-      circle = next;
-      ++count;
     }
-    return Z.valueOf(count);
   }
-
 }

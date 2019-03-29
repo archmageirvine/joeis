@@ -13,8 +13,6 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(EuclidMullinVerifyTest.class);
-    suite.addTestSuite(MeshIncrementTest.class);
-    suite.addTestSuite(MeshTest.class);
     return suite;
   }
 

@@ -16,7 +16,7 @@ public class A019592 implements Sequence {
   private long mBest = 0;
 
   // Count the number of steps needed to solve circle starting with n points
-  private long count(final long n) {
+  protected long count(final long n) {
     // Form initial circle of points
     for (long k = 0; k < n - 1; ++k) {
       mNextPosition.set(k, k + 1);
@@ -29,7 +29,7 @@ public class A019592 implements Sequence {
     while (remaining > 0) {
       position = mNextPosition.get(mNextPosition.get(mNextPosition.get(mNextPosition.get(position))));
       // Are we splitting two of the original points
-      if (position < mN && mNextPosition.get(position) < mN) {
+      if (position < n && mNextPosition.get(position) < n) {
         --remaining;
       }
       // Insert a new node
@@ -39,6 +39,10 @@ public class A019592 implements Sequence {
     }
     return free - n;
   }
+
+  // The graph of the count function has a kind of saw-tooth shape, so it might be possible to
+  // make this faster by doing some kind of binary search, but care would be need to ensure
+  // intervening local maxima are not skipped
 
   @Override
   public Z next() {

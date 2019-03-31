@@ -28,7 +28,7 @@ public class A003613 implements Sequence {
   protected static final Triple<Z> NEG_Y6 = new Triple<>(Z.ZERO, Z.ONE, Z.valueOf(-6));
   protected static final Triple<Z> YL6 = new Triple<>(Z.ONE, Z.ZERO, Z.SIX);
 
-  private int mN = 0;
+  protected int mN = 0;
 
   // Outer list in powers of x, inner list terms in y.
   protected final ArrayList<List<Triple<Z>>> mT = new ArrayList<>();
@@ -73,7 +73,7 @@ public class A003613 implements Sequence {
     return res;
   }
 
-  private static Triple<Z> multiply(final Triple<Z> a, final Triple<Z> b) {
+  protected static Triple<Z> multiply(final Triple<Z> a, final Triple<Z> b) {
     return new Triple<>(a.left().add(b.left()), a.mid().add(b.mid()), a.right().multiply(b.right()));
   }
 
@@ -134,7 +134,7 @@ public class A003613 implements Sequence {
     }
   }
 
-  protected List<Triple<Z>> collect(final List<Triple<Z>> lst) {
+  protected static List<Triple<Z>> collect(final List<Triple<Z>> lst) {
     // Collect like terms together
     final ArrayList<Triple<Z>> res = new ArrayList<>(lst.size());
     for (final Triple<Z> t : lst) {
@@ -172,12 +172,16 @@ public class A003613 implements Sequence {
     return Z.SIX.pow(t.left()).shiftLeft(t.mid().intValueExact()).multiply(t.right());
   }
 
-  private Z eval(final int n) {
+  protected Z eval(final List<Triple<Z>> lst) {
     Z sum = Z.ZERO;
-    for (final Triple<Z> t : mT.get(n)) {
+    for (final Triple<Z> t : lst) {
       sum = sum.add(eval(t));
     }
     return sum;
+  }
+
+  private Z eval(final int n) {
+    return eval(mT.get(n));
   }
 
   @Override

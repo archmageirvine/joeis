@@ -23,7 +23,7 @@ import static java.lang.Math.sqrt;
  *
  * @author Sean A. Irvine
  */
-public class Beta {
+public final class Beta {
 
   private Beta() { }
 
@@ -182,7 +182,7 @@ public class Beta {
     double qkm2 = 1;
     double pkm1 = 1;
     double qkm1 = 1;
-    double z = x / (1 - x);
+    final double z = x / (1 - x);
     double ans = 1;
     double r = 1;
     final double thres = 3 * MACHINE_PRECISION;
@@ -281,7 +281,7 @@ public class Beta {
       xc = x;
       xx = 1 - x;
       if (bb * xx <= 1 && xx <= 0.95) {
-        double t = ibetaPowerSeries(aa, bb, xx);
+        final double t = ibetaPowerSeries(aa, bb, xx);
         return 1 - (t <= MACHINE_PRECISION ? MACHINE_PRECISION : t);
       }
     } else {
@@ -338,7 +338,8 @@ public class Beta {
       y = ibeta(a, b, x);
     } else {
       final double yp;
-      if ((rflg = yy0 > 0.5)) {
+      rflg = yy0 > 0.5;
+      if (rflg) {
         a = bb;
         b = aa;
         y0 = 1 - yy0;

@@ -23,6 +23,7 @@
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>
     <suppress checks="MethodLength" files=".*AllTests.java"/>
     <suppress checks="MethodLength" files=".*BipScanner.java"/>
+    <suppress checks="MethodLength" files=".*Beta.java"/>
     <suppress checks="MethodLength" files=".*Discriminant.java"/>
     <suppress checks="MethodLength" files=".*InverseMonotone.java"/>
     <suppress checks="MethodLength" files=".*Min5AExtenderReducer.java"/>
@@ -53,5 +54,7 @@
     <suppress checks="ParameterNumber" files=".*QuadrangulationMin3Scanner.java"/>
     <suppress checks="ParameterNumber" files=".*QuadrangulationNf4Scanner.java"/>
     <suppress checks="ParameterNumber" files=".*UserLevelProc.java"/>
+    <suppress checks="" files=".*GrammarLexer.java"/>
+    <suppress checks="" files=".*GrammarParser.java"/>
 </suppressions>
 

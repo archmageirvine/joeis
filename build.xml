@@ -17,7 +17,20 @@
     <delete dir="${build.dir}"/>
   </target>
 
-  <target name="compile-src" description="Compile the source">
+  <target name="compile-grammar" description="Compile the ANTLR grammar">
+    <java classname="org.antlr.v4.Tool" fork="true" failonerror="true">
+      <arg value="-Dlanguage=Java"/>
+      <arg value="-no-visitor"/>
+      <arg value="-no-listener"/>
+      <arg value="-package"/>
+      <arg value="irvine.math.expression"/>
+      <arg value="-lib"/>
+      <arg value="${src.dir}/irvine/math/expression"/>
+      <arg value="${src.dir}/irvine/math/expression/Grammar.g4"/>
+    </java>
+  </target>
+
+  <target name="compile-src" description="Compile the source" depends="compile-grammar">
     <mkdir dir="${build.dir}/classes"/>
     <javac srcdir="${src.dir}" destdir="${build.dir}/classes" source="1.8" includeantruntime="false">
       <classpath>

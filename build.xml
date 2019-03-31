@@ -167,9 +167,6 @@
   <property name="checkstyle.suppressions.file" location=".cvscheck/checkstyle_suppressions.xml" />
   <target name="checkstyle" depends="compile-src,compile-internal,compile-test" description="Run checkstyle">
     <checkstyle config=".cvscheck/checkstyle_config.xml">
-<!--      <classpath>
-        <resources refid="${build.dir}/classes" />
-      </classpath> -->
       <fileset dir="${src.dir}" includes="**/*.java" />
       <fileset dir="${internal.dir}" includes="**/*.java" />
       <fileset dir="${test.dir}" includes="**/*.java" />

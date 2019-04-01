@@ -6,6 +6,7 @@
   <property name="internal.dir" value="internal"/>
   <property name="build.dir" value="build.tmp"/>
   <property name="lib.dir" value="lib"/>
+  <property name="tools.dir" value="tools"/>
 
   <taskdef resource="net/sf/antcontrib/antlib.xml">
     <classpath>
@@ -160,7 +161,7 @@
   </target>
 -->
 
-  <property name="checkstyle.basedir" location="${internal.dir}/checkstyle"/>
+  <property name="checkstyle.basedir" location="${tools.dir}/checkstyle"/>
   <taskdef resource="com/puppycrawl/tools/checkstyle/ant/checkstyle-ant-task.properties" classpath="${checkstyle.basedir}/lib/checkstyle-7.6-all.jar" />
   <property name="checkstyle.suppressions.file" location=".cvscheck/checkstyle_suppressions.xml" />
   <target name="checkstyle" depends="compile-src,compile-internal,compile-test" description="Run checkstyle">

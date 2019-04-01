@@ -70,7 +70,6 @@
       <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
-      <fileset dir="${src.dir}" includes="irvine/factor/data/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
 
@@ -106,7 +105,6 @@
       <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/em/em*"/>
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
-      <fileset dir="${src.dir}" includes="irvine/factor/data/*.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
 

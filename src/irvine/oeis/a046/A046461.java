@@ -2,12 +2,12 @@ package irvine.oeis.a046;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.factor.Factorizer;
-import irvine.factor.factor.SmarandacheFactorizer;
+import irvine.factor.factor.Jaguar;
+import irvine.factor.project.smarandache.Smarandache;
 import irvine.factor.util.FactorSequence;
 import irvine.math.z.Semiprime;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.factor.project.smarandache.Smarandache;
 
 /**
  * A046461.
@@ -16,7 +16,6 @@ import irvine.factor.project.smarandache.Smarandache;
 public class A046461 implements Sequence {
 
   private final Factorizer mFactor = new Cheetah(false);
-  private final Factorizer mSmarandacheFactor = new SmarandacheFactorizer();
   private final Semiprime mSemiprime = new Semiprime("irvine/oeis/a046/a046461.dat");
 
   private int mN = 2;
@@ -29,8 +28,7 @@ public class A046461 implements Sequence {
       if (mVerbose) {
         System.err.println("[Sm(" + mN + ")]");
       }
-      final FactorSequence fs = new FactorSequence(candidate);
-      mSmarandacheFactor.factor(fs);
+      final FactorSequence fs = Jaguar.factor(candidate);
       if (fs.isSemiprime() != FactorSequence.NO) {
         mFactor.factor(fs);
         final int sp = fs.isSemiprime();

@@ -23,8 +23,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PPlusOneTest.class);
     suite.addTestSuite(PrimeDivisionTest.class);
     suite.addTestSuite(QuadraticSieveTest.class);
-    suite.addTestSuite(ReverseSmarandacheFactorizerTest.class);
-    suite.addTestSuite(SmarandacheFactorizerTest.class);
     suite.addTestSuite(SqufofTest.class);
     return suite;
   }

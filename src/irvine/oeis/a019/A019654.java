@@ -25,6 +25,8 @@ public class A019654 implements Sequence {
   // Partially inspired by C code by Manfred Scheucher
   // todo make this its own class
 
+  // todo this is too slow to be much use ... a(8) not yet verified
+
   private static final int QUEEN_BIT = 1 << 9; // first 8 bits used for directions
 
   private int mSize = 0;

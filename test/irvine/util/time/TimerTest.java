@@ -4,8 +4,7 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
- * @author <a href="mailto:len@reeltwo.com">len</a>
+ * @author Len Trigg
  */
 public class TimerTest extends TestCase {
 

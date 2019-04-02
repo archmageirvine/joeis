@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009112.
+ * A009112 Areas of Pythagorean triangles: numbers which can be the area of a right-angled triangle with integer sides.
  * @author Sean A. Irvine
  */
 public class A009112 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a001.A001223;
 
 /**
- * A005250.
+ * A005250 Increasing gaps between primes.
  * @author Sean A. Irvine
  */
 public class A005250 extends RecordSequence {

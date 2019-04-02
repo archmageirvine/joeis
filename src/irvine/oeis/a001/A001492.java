@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001492.
+ * A001492 Clock chimes with a quarter-hour bell.
  * @author Sean A. Irvine
  */
 public class A001492 implements Sequence {

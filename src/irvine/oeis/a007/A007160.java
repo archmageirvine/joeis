@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007160.
+ * A007160 Number of diagonal dissections of a convex (n+6)-gon into n regions.
  * @author Sean A. Irvine
  */
 public class A007160 implements Sequence {

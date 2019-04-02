@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002233.
+ * A002233 a(1) = 1; for n &gt; 1, a(n) = least positive prime primitive root of n-th prime.
  * @author Sean A. Irvine
  */
 public class A002233 implements Sequence {

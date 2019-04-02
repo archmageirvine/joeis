@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014029.
+ * A014029 Inverse of 20th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014029 extends PeriodicSequence {

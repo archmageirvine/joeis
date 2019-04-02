@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276042.
+ * A276042 Exponential convolution of central polygonal numbers (A000124) with themselves.
  * @author Sean A. Irvine
  */
 public class A276042 extends LinearRecurrence {

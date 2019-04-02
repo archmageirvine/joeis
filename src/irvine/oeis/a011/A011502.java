@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011502.
+ * A011502 Decimal expansion of 83rd root of 83.
  * @author Sean A. Irvine
  */
 public class A011502 extends DecimalExpansionSequence {

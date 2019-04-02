@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.math.z.Z;
 
 /**
- * A002525.
+ * A002525 Number of permutations according to distance.
  * @author Sean A. Irvine
  */
 public class A002525 extends PartialSumSequence {

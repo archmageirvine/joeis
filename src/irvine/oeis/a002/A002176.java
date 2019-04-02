@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a100.A100640;
 
 /**
- * A002176.
+ * A002176 a(n) = LCM of denominators of Cotesian numbers {C(n,k), 0 &lt;= k &lt;= n}.
  * @author Sean A. Irvine
  */
 public class A002176 implements Sequence {

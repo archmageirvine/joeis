@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011551.
+ * A011551 Decimal expansion of phi truncated to n places.
  * @author Sean A. Irvine
  */
 public class A011551 implements Sequence {

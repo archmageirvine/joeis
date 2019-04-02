@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005905.
+ * A005905 Number of points on surface of truncated tetrahedron: 14n^2 + 2 for n&gt;0, a(0)=1.
  * @author Sean A. Irvine
  */
 public class A005905 implements Sequence {

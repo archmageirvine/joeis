@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005279;
 
 /**
- * A010814.
+ * A010814 Perimeters of integer-sided right triangles.
  * @author Sean A. Irvine
  */
 public class A010814 extends A005279 {

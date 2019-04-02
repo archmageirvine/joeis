@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094707.
+ * A094707 Partial sums of repeated Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A094707 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005566.
+ * A005566 Number of walks of length n on square lattice, starting at origin, staying in first quadrant.
  * @author Sean A. Irvine
  */
 public class A005566 implements Sequence {

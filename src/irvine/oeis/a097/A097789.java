@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097789.
+ * A097789 a(n)=4a(n-1)+C(n+4,4),n&gt;0, a(0)=1.
  * @author Sean A. Irvine
  */
 public class A097789 extends LinearRecurrence {

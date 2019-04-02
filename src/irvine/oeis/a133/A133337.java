@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133337.
+ * A133337 a(3n) = 0, a(3n+1) = a(3n+2) = 5^n.
  * @author Sean A. Irvine
  */
 public class A133337 extends LinearRecurrence {

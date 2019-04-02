@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
 /**
- * A005896.
+ * A005896 Weighted count of partitions with odd parts.
  * @author Sean A. Irvine
  */
 public class A005896 extends A000009 {

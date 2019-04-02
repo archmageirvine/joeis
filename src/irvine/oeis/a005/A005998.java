@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005998.
+ * A005998 Number of paraffins.
  * @author Sean A. Irvine
  */
 public class A005998 implements Sequence {

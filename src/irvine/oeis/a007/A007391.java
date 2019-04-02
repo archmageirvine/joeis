@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001608;
 
 /**
- * A007391.
+ * A007391 Number of strict first-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007391 extends A001608 {

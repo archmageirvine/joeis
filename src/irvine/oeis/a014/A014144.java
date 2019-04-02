@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a003.A003422;
 
 /**
- * A014144.
+ * A014144 Apply partial sum operator twice to factorials.
  * @author Sean A. Irvine
  */
 public class A014144 extends PartialSumSequence {

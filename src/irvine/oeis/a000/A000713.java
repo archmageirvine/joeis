@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000713.
+ * A000713 EULER transform of 3, 2, 2, 2, 2, 2, 2, 2, ...
  * @author Sean A. Irvine
  */
 public class A000713 extends EulerTransformSequence {

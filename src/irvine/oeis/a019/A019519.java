@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019519.
+ * A019519 Concatenate odd numbers.
  * @author Sean A. Irvine
  */
 public class A019519 implements Sequence {

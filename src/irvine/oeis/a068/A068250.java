@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068250.
+ * A068250 1/24 the number of colorings of a 3 X 3 octagonal array with n colors.
  * @author Sean A. Irvine
  */
 public class A068250 extends LinearRecurrence {

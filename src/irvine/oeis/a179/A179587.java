@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179587.
+ * A179587 Decimal expansion of the volume of square cupola with edge length 1.
  * @author Sean A. Irvine
  */
 public class A179587 extends DecimalExpansionSequence {

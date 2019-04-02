@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003557.
+ * A003557 n divided by largest squarefree divisor of n.
  * @author Sean A. Irvine
  */
 public class A003557 implements Sequence {

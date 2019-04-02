@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A074651.
+ * A074651 (1/n) * sum over d|n of {mu(n/d) * (3d)! / d!^3}.
  * @author Sean A. Irvine
  */
 public class A074651 implements Sequence {

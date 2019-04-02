@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059570.
+ * A059570 Number of fixed points in all 231-avoiding involutions in S_n.
  * @author Sean A. Irvine
  */
 public class A059570 extends LinearRecurrence {

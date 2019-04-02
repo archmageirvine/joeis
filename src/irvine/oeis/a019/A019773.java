@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019773.
+ * A019773 Decimal expansion of 2*e/23.
  * @author Sean A. Irvine
  */
 public class A019773 extends DecimalExpansionSequence {

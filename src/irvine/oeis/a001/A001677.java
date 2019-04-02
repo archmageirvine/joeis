@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000084;
 import java.util.ArrayList;
 
 /**
- * A001677.
+ * A001677 Number of series-parallel networks with n edges.
  * @author Sean A. Irvine
  */
 public class A001677 extends A000084 {

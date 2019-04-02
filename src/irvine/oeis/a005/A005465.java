@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005465.
+ * A005465 Number of n-dimensional hypotheses allowing for conditional independence.
  * @author Sean A. Irvine
  */
 public class A005465 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.oeis.a000.A000005;
 
 /**
- * A002746.
+ * A002746 Sum of logarithmic numbers.
  * @author Sean A. Irvine
  */
 public class A002746 implements Sequence {

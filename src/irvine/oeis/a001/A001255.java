@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A001255.
+ * A001255 Squares of partition numbers.
  * @author Sean A. Irvine
  */
 public class A001255 extends A000041 {

@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118870.
+ * A118870 Number of binary sequences of length n with no subsequence 0101.
  * @author Sean A. Irvine
  */
 public class A118870 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007436.
+ * A007436 Moebius transform of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A007436 implements Sequence {

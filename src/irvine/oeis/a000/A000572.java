@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.BeattySequence;
 
 /**
- * A000572.
+ * A000572 A Beatty sequence: [ n(e+1) ].
  * @author Sean A. Irvine
  */
 public class A000572 extends BeattySequence {

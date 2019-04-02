@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173521.
+ * A173521 a(n) is the concatenation of n 1's, 0, n 1's and 0.
  * @author Sean A. Irvine
  */
 public class A173521 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006784.
+ * A006784 Engel expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A006784 implements Sequence {

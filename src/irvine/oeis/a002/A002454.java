@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002454.
+ * A002454 Central factorial numbers: a(n) = 4^n (n!)^2.
  * @author Sean A. Irvine
  */
 public class A002454 implements Sequence {

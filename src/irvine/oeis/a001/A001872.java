@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001872.
+ * A001872 Convolved Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A001872 extends A000045 {

@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064680.
+ * A064680 Halve every even number, double every odd number.
  * @author Sean A. Irvine
  */
 public class A064680 extends LinearRecurrence {

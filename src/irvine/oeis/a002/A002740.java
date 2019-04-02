@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A002740.
+ * A002740 Number of tree-rooted bridgeless planar maps with two vertices and n faces.
  * @author Sean A. Irvine
  */
 public class A002740 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006307.
+ * A006307 Number of ways writing 2^n as unordered sums of 2 primes.
  * @author Sean A. Irvine
  */
 public class A006307 implements Sequence {

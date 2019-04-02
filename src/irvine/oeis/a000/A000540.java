@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000540.
+ * A000540 Sum of 6th powers: 0^6 + 1^6 + 2^6 + ... + n^6.
  * @author Sean A. Irvine
  */
 public class A000540 implements Sequence {

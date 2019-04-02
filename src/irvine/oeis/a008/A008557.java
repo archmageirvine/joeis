@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008557.
+ * A008557 Repeatedly convert from decimal to octal.
  * @author Sean A. Irvine
  */
 public class A008557 implements Sequence {

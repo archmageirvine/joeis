@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004826.
+ * A004826 Numbers that are the sum of at most 4 positive cubes.
  * @author Sean A. Irvine
  */
 public class A004826 extends A004825 {

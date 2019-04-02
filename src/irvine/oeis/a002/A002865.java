@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A002865.
+ * A002865 Number of partitions of n that do not contain 1 as a part.
  * @author Sean A. Irvine
  */
 public class A002865 extends A000041 {

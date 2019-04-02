@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019294.
+ * A019294 Number (&gt;0) of iteration of sigma (A000203) required to reach a value divisible by n when starting with n.
  * @author Sean A. Irvine
  */
 public class A019294 implements Sequence {

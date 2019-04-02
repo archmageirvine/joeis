@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000990.
+ * A000990 Number of plane partitions of n with at most two rows.
  * @author Sean A. Irvine
  */
 public class A000990 implements Sequence {

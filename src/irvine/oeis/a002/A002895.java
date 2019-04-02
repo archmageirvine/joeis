@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002895.
+ * A002895 Domb numbers: number of 2n-step polygons on diamond lattice.
  * @author Sean A. Irvine
  */
 public class A002895 implements Sequence {

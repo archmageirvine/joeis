@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a259.A259095;
 
 /**
- * A005577.
+ * A005577 Maxima of the rows of the triangle A259095.
  * @author Sean A. Irvine
  */
 public class A005577 extends A259095 {

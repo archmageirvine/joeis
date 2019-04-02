@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285194.
+ * A285194 Expansion of (1+x^2)/(1+x+x^4) mod 3.
  * @author Sean A. Irvine
  */
 public class A285194 extends LinearRecurrence {

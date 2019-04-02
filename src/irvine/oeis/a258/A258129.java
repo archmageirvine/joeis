@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258129.
+ * A258129 Octagonal numbers (A000567) that are the sum of three consecutive octagonal numbers.
  * @author Sean A. Irvine
  */
 public class A258129 extends LinearRecurrence {

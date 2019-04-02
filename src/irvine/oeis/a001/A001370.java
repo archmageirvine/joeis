@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001370.
+ * A001370 Sum of digits of 2^n.
  * @author Sean A. Irvine
  */
 public class A001370 implements Sequence {

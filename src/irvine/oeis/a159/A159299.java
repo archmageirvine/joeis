@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159299.
+ * A159299 Number of n-colorings of the 4 X 4 Sudoku graph.
  * @author Sean A. Irvine
  */
 public class A159299 extends LinearRecurrence {

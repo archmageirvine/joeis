@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109498.
+ * A109498 Number of closed walks of length 2n on the Heawood graph from a given node.
  * @author Sean A. Irvine
  */
 public class A109498 extends LinearRecurrence {

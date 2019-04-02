@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002212.
+ * A002212 Number of restricted hexagonal polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A002212 implements Sequence {

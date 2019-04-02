@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012302.
+ * A012302 Expansion of e.g.f. sec(sin(x)*sin(x)), even powers only.
  * @author Sean A. Irvine
  */
 public class A012302 implements Sequence {

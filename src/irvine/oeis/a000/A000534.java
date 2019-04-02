@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000534.
+ * A000534 Numbers that are not the sum of 4 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000534 implements Sequence {

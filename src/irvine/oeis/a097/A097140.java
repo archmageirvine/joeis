@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097140.
+ * A097140 Interleave n and 1-n.
  * @author Sean A. Irvine
  */
 public class A097140 extends LinearRecurrence {

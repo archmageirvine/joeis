@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000984.
+ * A000984 Central binomial coefficients: binomial(2*n,n) = (2*n)!/(n!)^2.
  * @author Sean A. Irvine
  */
 public class A000984 implements Sequence {

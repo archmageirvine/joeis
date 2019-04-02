@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019588.
+ * A019588 The right budding sequence: # of i such that 0&lt;i&lt;=n and {tau*n} &lt;= {tau*i} &lt; 1, where {} is fractional part.
  * @author Sean A. Irvine
  */
 public class A019588 implements Sequence {

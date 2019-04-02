@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001698.
+ * A001698 a(n) = ceiling(sqrt( 2*Pi )^n).
  * @author Sean A. Irvine
  */
 public class A001698 implements Sequence {

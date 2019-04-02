@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003343.
+ * A003343 Numbers that are the sum of 9 nonzero 4th powers.
  * @author Sean A. Irvine
  */
 public class A003343 implements Sequence {

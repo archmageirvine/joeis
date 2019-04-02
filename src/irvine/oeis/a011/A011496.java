@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011496.
+ * A011496 Decimal expansion of 77th root of 77.
  * @author Sean A. Irvine
  */
 public class A011496 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195043.
+ * A195043 Concentric 11-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A195043 extends LinearRecurrence {

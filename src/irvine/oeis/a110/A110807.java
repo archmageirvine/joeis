@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110807.
+ * A110807 n times largest n-digit number.
  * @author Sean A. Irvine
  */
 public class A110807 extends LinearRecurrence {

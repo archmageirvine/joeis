@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014979.
+ * A014979 Numbers that are both triangular and pentagonal.
  * @author Sean A. Irvine
  */
 public class A014979 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190718.
+ * A190718 Quadruplicated tetrahedral numbers A000292.
  * @author Sean A. Irvine
  */
 public class A190718 extends LinearRecurrence {

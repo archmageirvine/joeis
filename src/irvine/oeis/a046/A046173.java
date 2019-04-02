@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046173.
+ * A046173 Indices of square numbers that are also pentagonal.
  * @author Sean A. Irvine
  */
 public class A046173 extends LinearRecurrence {

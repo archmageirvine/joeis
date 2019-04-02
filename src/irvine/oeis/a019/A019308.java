@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A019308.
+ * A019308 Number of "bifix-free" words of length n over a three-letter alphabet.
  * @author Sean A. Irvine
  */
 public class A019308 extends MemorySequence {

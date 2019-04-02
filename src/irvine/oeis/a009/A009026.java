@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009026.
+ * A009026 Expansion of cos(log(1+x))/cosh(x).
  * @author Sean A. Irvine
  */
 public class A009026 implements Sequence {

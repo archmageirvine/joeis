@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006318.
+ * A006318 Large Schr&#246;der numbers (or large Schroeder numbers, or big Schroeder numbers).
  * @author Sean A. Irvine
  */
 public class A006318 implements Sequence {

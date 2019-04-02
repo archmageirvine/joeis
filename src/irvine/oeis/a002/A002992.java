@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a052.A052329;
 
 /**
- * A002992.
+ * A002992 Number of n-node trees with a forbidden limb of length 6.
  * @author Sean A. Irvine
  */
 public class A002992 extends A052329 {

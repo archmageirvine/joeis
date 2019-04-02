@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000166;
 
 /**
- * A001277.
+ * A001277 Number of permutations of length n by rises.
  * @author Sean A. Irvine
  */
 public class A001277 extends PartialSumSequence {

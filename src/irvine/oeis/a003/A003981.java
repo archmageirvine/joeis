@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A003981.
+ * A003981 Inverse M&#246;bius transform of A003965.
  * @author Sean A. Irvine
  */
 public class A003981 extends A003965 {

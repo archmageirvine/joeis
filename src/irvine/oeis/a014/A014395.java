@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014395.
+ * A014395 Number of multigraphs with 5 nodes and n edges.
  * @author Sean A. Irvine
  */
 public class A014395 implements Sequence {

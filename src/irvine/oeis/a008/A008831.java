@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008831.
+ * A008831 Log_2 (n) mod 13.
  * @author Sean A. Irvine
  */
 public class A008831 extends FiniteSequence {

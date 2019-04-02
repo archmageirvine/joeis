@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180274.
+ * A180274 Integers whose squares are the sums of 24 consecutive squares.
  * @author Sean A. Irvine
  */
 public class A180274 extends LinearRecurrence {

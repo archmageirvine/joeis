@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002838.
+ * A002838 Balancing weights on the integer line.
  * @author Sean A. Irvine
  */
 public class A002838 implements Sequence {

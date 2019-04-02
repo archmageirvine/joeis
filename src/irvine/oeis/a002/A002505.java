@@ -6,7 +6,7 @@ import irvine.math.r.LambertW;
 import irvine.math.r.Constants;
 
 /**
- * A002505.
+ * A002505 Nearest integer to the n-th Gram point.
  * @author Sean A. Irvine
  */
 public class A002505 implements Sequence {

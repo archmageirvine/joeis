@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007010.
+ * A007010 Number of 4-voter voting schemes with n linearly ranked choices.
  * @author Sean A. Irvine
  */
 public class A007010 extends LinearRecurrence {

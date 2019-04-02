@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005598.
+ * A005598 a(n) = 1 + Sum_{i=1..n} (n-i+1)*phi(i).
  * @author Sean A. Irvine
  */
 public class A005598 implements Sequence {

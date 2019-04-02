@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
 
 /**
- * A006059.
+ * A006059 Number of connected labeled T_0-T_4-topologies with n points.
  * @author Sean A. Irvine
  */
 public class A006059 extends A001035 {

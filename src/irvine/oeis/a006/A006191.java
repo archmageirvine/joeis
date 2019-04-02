@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A006191.
+ * A006191 Number of paths on square lattice.
  * @author Sean A. Irvine
  */
 public class A006191 extends PartialSumSequence {

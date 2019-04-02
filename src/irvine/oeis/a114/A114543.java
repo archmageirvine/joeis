@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114543.
+ * A114543 Expansion of x*(1+x)/((1+2x)(1-2x-768x^2)).
  * @author Sean A. Irvine
  */
 public class A114543 extends LinearRecurrence {

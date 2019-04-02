@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005955.
+ * A005955 Number of acyclic secondary alcohols with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A005955 extends A000625 {

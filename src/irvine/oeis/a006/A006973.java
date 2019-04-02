@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006973.
+ * A006973 Dimensions of representations by Witt vectors.
  * @author Sean A. Irvine
  */
 public class A006973 implements Sequence {

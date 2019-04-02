@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008971;
 
 /**
- * A000363.
+ * A000363 Number of permutations of [n] with exactly 2 increasing runs of length at least 2.
  * @author Sean A. Irvine
  */
 public class A000363 extends A008971 {

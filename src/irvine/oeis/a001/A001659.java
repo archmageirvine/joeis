@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001659.
+ * A001659 Expansion of bracket function.
  * @author Sean A. Irvine
  */
 public class A001659 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A000105.
+ * A000105 Number of free polyominoes (or square animals) with n cells.
  * @author Sean A. Irvine
  */
 public class A000105 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002003.
+ * A002003 2*Sum_{k=0..n-1} C(n-1,k)*C(n+k,k).
  * @author Sean A. Irvine
  */
 public class A002003 implements Sequence {

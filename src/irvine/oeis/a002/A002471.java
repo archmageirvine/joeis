@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002471.
+ * A002471 Number of partitions of n into a prime and a square.
  * @author Sean A. Irvine
  */
 public class A002471 implements Sequence {

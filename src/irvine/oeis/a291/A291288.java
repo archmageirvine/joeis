@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291288.
+ * A291288 a(n) = binomial(n+3, 3)*(1 + binomial(n+2, 3)/4).
  * @author Sean A. Irvine
  */
 public class A291288 extends LinearRecurrence {

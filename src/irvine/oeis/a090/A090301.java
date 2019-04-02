@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090301.
+ * A090301 a(n) = 15a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 15.
  * @author Sean A. Irvine
  */
 public class A090301 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A001363.
+ * A001363 Primes in ternary.
  * @author Sean A. Irvine
  */
 public class A001363 extends A000040 {

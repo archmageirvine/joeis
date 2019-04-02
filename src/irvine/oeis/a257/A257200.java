@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257200.
+ * A257200 a(n) = n*(n+1)*(n+2)*(n+3)*(n^2+3*n+26)/720.
  * @author Sean A. Irvine
  */
 public class A257200 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049668.
+ * A049668 a(n) = Fibonacci(8*n)/21.
  * @author Sean A. Irvine
  */
 public class A049668 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123890.
+ * A123890 G.f.: x/((1-x^2)^5-1+x).
  * @author Sean A. Irvine
  */
 public class A123890 extends LinearRecurrence {

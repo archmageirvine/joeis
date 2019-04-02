@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056585.
+ * A056585 Eighth power of Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A056585 extends LinearRecurrence {

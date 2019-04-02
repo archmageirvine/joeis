@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018160.
+ * A018160 Powers of fifth root of 16 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018160 implements Sequence {

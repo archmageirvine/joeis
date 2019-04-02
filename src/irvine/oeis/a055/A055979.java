@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055979.
+ * A055979 Solutions (value of r) of the Diophantine equation 2*x^2 + 3*x + 2 = r^2.
  * @author Sean A. Irvine
  */
 public class A055979 extends LinearRecurrence {

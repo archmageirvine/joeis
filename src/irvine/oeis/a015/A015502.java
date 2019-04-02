@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A015502.
+ * A015502 a(1)=1, a(n) = Sum_{k=1..n-1} (3^k-1)/2 * a(k).
  * @author Sean A. Irvine
  */
 public class A015502 extends MemorySequence {

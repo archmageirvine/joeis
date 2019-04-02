@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012254.
+ * A012254 exp(arcsinh(arctanh(x)))=1+x+1/2!*x^2+2/3!*x^3+5/4!*x^4+24/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012254 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018175.
+ * A018175 Powers of fifth root of 21 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018175 implements Sequence {

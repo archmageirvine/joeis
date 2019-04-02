@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016114.
+ * A016114 Circular primes (numbers that remain prime under cyclic shifts of digits).
  * @author Sean A. Irvine
  */
 public class A016114 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018184.
+ * A018184 Powers of fifth root of 24 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018184 implements Sequence {

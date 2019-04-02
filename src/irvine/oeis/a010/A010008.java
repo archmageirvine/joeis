@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010008.
+ * A010008 a(0) = 1, a(n) = 18*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A010008 implements Sequence {

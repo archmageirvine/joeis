@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127193.
+ * A127193 A 9th-order Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A127193 extends LinearRecurrence {

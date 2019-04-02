@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003661.
+ * A003661 Number of bipartite Steinhaus graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A003661 extends MemorySequence {

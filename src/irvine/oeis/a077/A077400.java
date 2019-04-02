@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077400.
+ * A077400 Triangular numbers that are 7 times triangular numbers.
  * @author Sean A. Irvine
  */
 public class A077400 extends LinearRecurrence {

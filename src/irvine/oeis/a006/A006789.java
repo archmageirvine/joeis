@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006789.
+ * A006789 Bessel numbers: the number of nonoverlapping partitions of an n-set into equivalence classes.
  * @author Sean A. Irvine
  */
 public class A006789 implements Sequence {

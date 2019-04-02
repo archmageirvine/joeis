@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicLongArray;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000119.
+ * A000119 Number of representations of n as a sum of distinct Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A000119 implements Sequence {

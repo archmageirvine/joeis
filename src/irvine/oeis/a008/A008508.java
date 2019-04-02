@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008508.
+ * A008508 Number of odd primes less than n-th odd composite number.
  * @author Sean A. Irvine
  */
 public class A008508 implements Sequence {

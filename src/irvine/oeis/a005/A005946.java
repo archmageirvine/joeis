@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005946.
+ * A005946 Number of n-step mappings with 5 inputs.
  * @author Sean A. Irvine
  */
 public class A005946 extends MemoryFunction2<Integer, Z> implements Sequence {

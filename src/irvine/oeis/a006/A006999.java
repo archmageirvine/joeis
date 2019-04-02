@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006999.
+ * A006999 Partitioning integers to avoid arithmetic progressions of length 3.
  * @author Sean A. Irvine
  */
 public class A006999 implements Sequence {

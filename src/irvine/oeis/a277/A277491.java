@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277491.
+ * A277491 Number of triangles in the standard triangulation of the n-th approximation of the Koch snowflake fractal.
  * @author Sean A. Irvine
  */
 public class A277491 extends LinearRecurrence {

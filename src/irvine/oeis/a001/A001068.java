@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001068.
+ * A001068 a(n) = floor(5*n/4), numbers that are congruent to {0, 1, 2, 3} mod 5.
  * @author Sean A. Irvine
  */
 public class A001068 implements Sequence {

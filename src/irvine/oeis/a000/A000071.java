@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000071.
+ * A000071 a(n) = Fibonacci(n) - 1.
  * @author Sean A. Irvine
  */
 public class A000071 extends A000045 {

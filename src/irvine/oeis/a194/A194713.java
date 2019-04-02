@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194713.
+ * A194713 13 times hexagonal numbers: 13*n*(2*n-1).
  * @author Sean A. Irvine
  */
 public class A194713 extends LinearRecurrence {

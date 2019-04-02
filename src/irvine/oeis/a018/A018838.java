@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018838.
+ * A018838 Number of steps for knight to reach (n,n) on infinite chessboard.
  * @author Sean A. Irvine
  */
 public class A018838 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a003.A003190;
 
 /**
- * A000665.
+ * A000665 Number of 3-uniform hypergraphs on n unlabeled nodes, or equivalently number of relations with 3 arguments on n nodes.
  * @author Sean A. Irvine
  */
 public class A000665 extends EulerTransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037255.
+ * A037255 For n weights, number of combinations when limited to two weights per pan.
  * @author Sean A. Irvine
  */
 public class A037255 extends LinearRecurrence {

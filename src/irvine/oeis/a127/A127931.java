@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127931.
+ * A127931 Numbers n such that 13 divides 11*n + 2^n.
  * @author Sean A. Irvine
  */
 public class A127931 extends LinearRecurrence {

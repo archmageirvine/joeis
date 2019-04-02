@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003102.
+ * A003102 Largest number divisible by all numbers &lt; its n-th root.
  * @author Sean A. Irvine
  */
 public class A003102 implements Sequence {

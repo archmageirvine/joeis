@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009799.
+ * A009799 E.g.f. tanh(sin(x)*exp(x)).
  * @author Sean A. Irvine
  */
 public class A009799 implements Sequence {

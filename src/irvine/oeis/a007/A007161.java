@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A007161.
+ * A007161 Number of blobs with vertical symmetry.
  * @author Sean A. Irvine
  */
 public class A007161 extends A007165 {

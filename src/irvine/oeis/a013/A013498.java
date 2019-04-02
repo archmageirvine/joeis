@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013498.
+ * A013498 Number of permutations in S_n with a certain property.
  * @author Sean A. Irvine
  */
 public class A013498 implements Sequence {

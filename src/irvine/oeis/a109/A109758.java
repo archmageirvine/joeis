@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A109758.
+ * A109758 Numbers n such that (10's complement factorial of n) - 1 is semiprime.
  * @author Sean A. Irvine
  */
 public class A109758 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A000682.
+ * A000682 Semi-meanders: number of ways a semi-infinite directed curve can cross a straight line n times.
  * @author Sean A. Irvine
  */
 public class A000682 implements Sequence {

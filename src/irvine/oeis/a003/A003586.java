@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003586.
+ * A003586 3-smooth numbers: numbers of the form 2^i*3^j with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A003586 implements Sequence {

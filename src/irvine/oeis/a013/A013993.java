@@ -7,7 +7,7 @@ import java.util.Map;
 import irvine.math.z.Z;
 
 /**
- * A013993.
+ * A013993 Number of edge-disjoint paths between opposite corners of 4 X n grid.
  * @author Sean A. Irvine
  */
 public class A013993 extends A013990 {

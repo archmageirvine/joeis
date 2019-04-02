@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000055.
+ * A000055 Number of trees with n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A000055 extends A000081 {

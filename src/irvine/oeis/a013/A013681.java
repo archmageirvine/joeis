@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A013681.
+ * A013681 Continued fraction for zeta(5).
  * @author Sean A. Irvine
  */
 public class A013681 extends ContinuedFractionSequence {

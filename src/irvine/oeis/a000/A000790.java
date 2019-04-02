@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000790.
+ * A000790 Primary pretenders: least composite c such that n^c == n (mod c).
  * @author Sean A. Irvine
  */
 public class A000790 implements Sequence {

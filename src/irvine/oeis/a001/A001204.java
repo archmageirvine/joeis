@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001204.
+ * A001204 Continued fraction for e^2.
  * @author Sean A. Irvine
  */
 public class A001204 implements Sequence {

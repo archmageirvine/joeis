@@ -4,7 +4,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A018842.
+ * A018842 Number of squares on infinite chessboard at n knight's moves from center.
  * @author Sean A. Irvine
  */
 public class A018842 extends PrependSequence {

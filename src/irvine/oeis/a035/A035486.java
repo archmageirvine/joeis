@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035486.
+ * A035486 Kimberling's expulsion array read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A035486 implements Sequence {

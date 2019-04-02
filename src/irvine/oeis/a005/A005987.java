@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.io.Serializable;
 
 /**
- * A005987.
+ * A005987 Number of symmetric plane partitions of n.
  * @author Sean A. Irvine
  */
 public class A005987 implements Sequence, Serializable {

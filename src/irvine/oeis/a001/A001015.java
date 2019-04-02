@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001015.
+ * A001015 Seventh powers: a(n) = n^7.
  * @author Sean A. Irvine
  */
 public class A001015 implements Sequence {

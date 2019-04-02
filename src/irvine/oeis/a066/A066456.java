@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066456.
+ * A066456 Upper bound on number of regular triangulations of cyclic polytope C(n, n-4).
  * @author Sean A. Irvine
  */
 public class A066456 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137247.
+ * A137247 a(n) = 4a(n-1) - 6a(n-2) + 6a(n-3) - 3a(n-4), with initial terms 0, 0, 0, 1.
  * @author Sean A. Irvine
  */
 public class A137247 extends LinearRecurrence {

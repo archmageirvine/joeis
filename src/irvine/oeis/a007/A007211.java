@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007211.
+ * A007211 Oscillates under partition transform.
  * @author Sean A. Irvine
  */
 public class A007211 extends A007210 {

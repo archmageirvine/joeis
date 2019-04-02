@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005904.
+ * A005904 Centered dodecahedral numbers.
  * @author Sean A. Irvine
  */
 public class A005904 implements Sequence {

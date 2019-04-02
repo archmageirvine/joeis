@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107857.
+ * A107857 a(n) = floor[(phi + n mod 2)*a(n-1)], a(1)=1.
  * @author Sean A. Irvine
  */
 public class A107857 extends LinearRecurrence {

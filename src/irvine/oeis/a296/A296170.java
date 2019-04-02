@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A296170.
+ * A296170 E.g.f. A(x) satisfies: [x^(n-1)] A(x)^(n^2) = [x^n] A(x)^(n^2) for n&gt;=1.
  * @author Sean A. Irvine
  */
 public class A296170 implements Sequence {

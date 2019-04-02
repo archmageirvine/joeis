@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004734.
+ * A004734 Numerator of average distance traveled by n-dimensional fly.
  * @author Sean A. Irvine
  */
 public class A004734 implements Sequence {

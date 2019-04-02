@@ -6,7 +6,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.cr.CR;
 
 /**
- * A002459.
+ * A002459 Nearest integer to cosh(n).
  * @author Sean A. Irvine
  */
 public class A002459 implements Sequence {

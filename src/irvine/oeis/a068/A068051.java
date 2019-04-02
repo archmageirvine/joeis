@@ -4,7 +4,7 @@ import irvine.oeis.DikTransformSequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A068051.
+ * A068051 Number of n-node connected graphs with one cycle, possibly of length 1 or 2.
  * @author Sean A. Irvine
  */
 public class A068051 extends DikTransformSequence {

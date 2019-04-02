@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048395.
+ * A048395 Sum of consecutive nonsquares.
  * @author Sean A. Irvine
  */
 public class A048395 extends LinearRecurrence {

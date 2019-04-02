@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156797.
+ * A156797 Numbers k such that k^2 + 2 == 0 (mod (9^2)).
  * @author Sean A. Irvine
  */
 public class A156797 extends LinearRecurrence {

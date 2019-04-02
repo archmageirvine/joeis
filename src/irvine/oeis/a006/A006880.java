@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006880.
+ * A006880 Number of primes &lt; 10^n.
  * @author Sean A. Irvine
  */
 public class A006880 implements Sequence {

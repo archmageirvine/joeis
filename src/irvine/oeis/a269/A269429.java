@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269429.
+ * A269429 Alternating sum of octagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A269429 extends LinearRecurrence {

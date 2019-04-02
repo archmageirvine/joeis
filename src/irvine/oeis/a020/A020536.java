@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020536.
+ * A020536 a(n) = 10th Fibonacci polynomial evaluated at 2^n.
  * @author Sean A. Irvine
  */
 public class A020536 extends LinearRecurrence {

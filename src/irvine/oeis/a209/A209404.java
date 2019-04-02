@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209404.
+ * A209404 Coefficients of Chebyshev polynomials.
  * @author Sean A. Irvine
  */
 public class A209404 extends LinearRecurrence {

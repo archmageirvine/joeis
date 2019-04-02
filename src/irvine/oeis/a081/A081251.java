@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081251.
+ * A081251 Numbers n such that A081249(m)/m^2 has a local maximum for m = n.
  * @author Sean A. Irvine
  */
 public class A081251 extends LinearRecurrence {

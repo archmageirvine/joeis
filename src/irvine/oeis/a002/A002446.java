@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002446.
+ * A002446 2^(2n+1) - 2.
  * @author Sean A. Irvine
  */
 public class A002446 implements Sequence {

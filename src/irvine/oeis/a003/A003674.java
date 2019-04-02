@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003674.
+ * A003674 2^(n-1)*( 2^n - (-1)^n ).
  * @author Sean A. Irvine
  */
 public class A003674 implements Sequence {

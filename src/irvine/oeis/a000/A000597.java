@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000597.
+ * A000597 Central factorial numbers.
  * @author Sean A. Irvine
  */
 public class A000597 implements Sequence {

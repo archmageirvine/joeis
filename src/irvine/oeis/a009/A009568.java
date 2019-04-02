@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009568.
+ * A009568 Expansion of e.g.f.: sinh(log(1+sinh(x))).
  * @author Sean A. Irvine
  */
 public class A009568 implements Sequence {

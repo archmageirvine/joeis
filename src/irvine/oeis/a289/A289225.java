@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289225.
+ * A289225 Number of ways to select 4 disjoint point triples from an n X n X n triangular point grid, each point triple forming a 2 X 2 X 2 triangle.
  * @author Sean A. Irvine
  */
 public class A289225 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A001927.
+ * A001927 Number of connected partially ordered sets with n labeled points.
  * @author Sean A. Irvine
  */
 public class A001927 extends A001035 {

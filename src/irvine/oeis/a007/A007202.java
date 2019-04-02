@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007202.
+ * A007202 Crystal ball sequence for hexagonal close-packing.
  * @author Sean A. Irvine
  */
 public class A007202 extends LinearRecurrence {

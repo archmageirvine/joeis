@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
 /**
- * A011636.
+ * A011636 45th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A011636 extends A011632 {

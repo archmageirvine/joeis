@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245019.
+ * A245019 Number of ordered n-tuples of positive integers, whose minimum is 0 and maximum is 4.
  * @author Sean A. Irvine
  */
 public class A245019 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186439.
+ * A186439 Numbers whose squares end in three identical digits.
  * @author Sean A. Irvine
  */
 public class A186439 extends LinearRecurrence {

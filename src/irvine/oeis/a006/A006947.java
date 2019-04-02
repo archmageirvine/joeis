@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A006947.
+ * A006947 Two-rowed truncated monotone triangles.
  * @author Sean A. Irvine
  */
 public class A006947 implements Sequence {

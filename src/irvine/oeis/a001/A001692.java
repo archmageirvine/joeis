@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001692.
+ * A001692 Number of irreducible polynomials of degree n over GF(5); dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
 public class A001692 implements Sequence {

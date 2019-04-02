@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A067553.
+ * A067553 Sum of products of terms in all partitions of n into odd parts.
  * @author Sean A. Irvine
  */
 public class A067553 implements Sequence {

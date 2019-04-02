@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005612.
+ * A005612 Number of Boolean functions of n variables that are variously called "unate cascades" or "1-decision list functions" or "read-once threshold functions".
  * @author Sean A. Irvine
  */
 public class A005612 extends MemoryFunction1<Z> implements Sequence {

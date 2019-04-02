@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007549.
+ * A007549 Number of increasing rooted connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
 public class A007549 extends MemorySequence {

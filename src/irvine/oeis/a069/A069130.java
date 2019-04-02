@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069130.
+ * A069130 Centered 17-gonal numbers: (17*n^2 - 17*n + 2)/2.
  * @author Sean A. Irvine
  */
 public class A069130 extends LinearRecurrence {

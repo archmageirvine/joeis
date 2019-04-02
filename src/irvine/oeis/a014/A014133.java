@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014133.
+ * A014133 Sum of a square and a triangular number.
  * @author Sean A. Irvine
  */
 public class A014133 implements Sequence {

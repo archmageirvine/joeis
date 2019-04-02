@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002372.
+ * A002372 Goldbach conjecture: number of decompositions of 2n into ordered sums of two odd primes.
  * @author Sean A. Irvine
  */
 public class A002372 implements Sequence {

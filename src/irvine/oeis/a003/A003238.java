@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003238.
+ * A003238 Number of rooted trees with n vertices in which vertices at the same level have the same degree.
  * @author Sean A. Irvine
  */
 public class A003238 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292056.
+ * A292056 Wiener index of the n-Keller graph.
  * @author Sean A. Irvine
  */
 public class A292056 extends LinearRecurrence {

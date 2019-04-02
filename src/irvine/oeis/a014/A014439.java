@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014439.
+ * A014439 Differences between two positive cubes in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A014439 implements Sequence {

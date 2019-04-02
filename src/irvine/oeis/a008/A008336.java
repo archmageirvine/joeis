@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008336.
+ * A008336 a(n+1) = a(n)/n if n|a(n) else a(n)*n, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A008336 implements Sequence {

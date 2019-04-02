@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
 /**
- * A005649.
+ * A005649 Expansion of e.g.f. (2 - e^x)^(-2).
  * @author Sean A. Irvine
  */
 public class A005649 extends A000670 {

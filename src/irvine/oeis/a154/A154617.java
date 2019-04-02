@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154617.
+ * A154617 Eleven times hexagonal numbers: 11*n*(2*n-1).
  * @author Sean A. Irvine
  */
 public class A154617 extends LinearRecurrence {

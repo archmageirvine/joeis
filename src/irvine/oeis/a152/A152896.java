@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152896.
+ * A152896 a=b=c=0;c(n)=c+n+a;b(n)=b+n+c;a(n)=a+n+b.
  * @author Sean A. Irvine
  */
 public class A152896 extends LinearRecurrence {

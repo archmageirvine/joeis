@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001378.
+ * A001378 Degrees of irreducible representations of Baby Monster group B.
  * @author Sean A. Irvine
  */
 public class A001378 extends FiniteSequence {

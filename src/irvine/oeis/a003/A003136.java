@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003136.
+ * A003136 Loeschian numbers: numbers of the form x^2 + xy + y^2; norms of vectors in A2 lattice.
  * @author Sean A. Irvine
  */
 public class A003136 implements Sequence {

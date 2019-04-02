@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267128.
+ * A267128 Decimal representation of the n-th iteration of the "Rule 99" elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A267128 extends LinearRecurrence {

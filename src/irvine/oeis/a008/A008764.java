@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008764.
+ * A008764 Number of 3 X 3 symmetric stochastic matrices under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A008764 extends CoordinationSequence {

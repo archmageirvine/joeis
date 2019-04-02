@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215053.
+ * A215053 a(n) = 1/7*( binomial(n,7) - floor(n/7) ).
  * @author Sean A. Irvine
  */
 public class A215053 extends LinearRecurrence {

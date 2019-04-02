@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204457.
+ * A204457 Odd numbers not divisible by 13.
  * @author Sean A. Irvine
  */
 public class A204457 extends LinearRecurrence {

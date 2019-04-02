@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A170896.
+ * A170896 Number of ON cells after n generations of the Schrandt-Ulam cellular automaton on the square grid that is described in the Comments.
  * @author Sean A. Irvine
  */
 public class A170896 implements Sequence {

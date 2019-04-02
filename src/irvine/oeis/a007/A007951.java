@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007951.
+ * A007951 Ternary sieve: delete every 3rd number, then every 9th, 27th, etc.
  * @author Sean A. Irvine
  */
 public class A007951 implements Sequence {

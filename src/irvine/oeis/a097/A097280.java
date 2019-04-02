@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097280.
+ * A097280 Perimeter of integer triangle (A001611(n), A001611(n+1), A001611(n+2)).
  * @author Sean A. Irvine
  */
 public class A097280 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293005.
+ * A293005 Number of associative, quasitrivial, and order-preserving binary operations on the n-element set {1,...,n}.
  * @author Sean A. Irvine
  */
 public class A293005 extends LinearRecurrence {

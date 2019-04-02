@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130893.
+ * A130893 Lucas numbers (beginning with 1) mod 10.
  * @author Sean A. Irvine
  */
 public class A130893 extends LinearRecurrence {

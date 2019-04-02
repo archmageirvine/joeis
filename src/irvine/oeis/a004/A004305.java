@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004305.
+ * A004305 Simple triangulations of a disk: column 4 of square array in A210664.
  * @author Sean A. Irvine
  */
 public class A004305 implements Sequence {

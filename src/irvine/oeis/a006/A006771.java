@@ -4,7 +4,7 @@ import irvine.oeis.ExponentialConvolutionSequence;
 import irvine.oeis.a000.A000055;
 
 /**
- * A006771.
+ * A006771 Exponential self-convolution of numbers of trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A006771 extends ExponentialConvolutionSequence {

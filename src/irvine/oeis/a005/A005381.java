@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005381.
+ * A005381 Numbers n such that n and n-1 are composite.
  * @author Sean A. Irvine
  */
 public class A005381 implements Sequence {

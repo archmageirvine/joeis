@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141523.
+ * A141523 Expansion of (3-2*x-3*x^2)/(1-x-x^2-x^3).
  * @author Sean A. Irvine
  */
 public class A141523 extends LinearRecurrence {

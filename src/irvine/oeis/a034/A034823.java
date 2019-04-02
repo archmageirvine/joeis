@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001385;
 
 /**
- * A034823.
+ * A034823 Number of n-node rooted trees of height at most 6.
  * @author Sean A. Irvine
  */
 public class A034823 extends PrependSequence {

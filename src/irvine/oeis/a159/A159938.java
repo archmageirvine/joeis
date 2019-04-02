@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159938.
+ * A159938 The number of homogeneous trisubstituted linear alkanes.
  * @author Sean A. Irvine
  */
 public class A159938 extends LinearRecurrence {

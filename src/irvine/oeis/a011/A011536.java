@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011536.
+ * A011536 Numbers that contain a 6.
  * @author Sean A. Irvine
  */
 public class A011536 implements Sequence {

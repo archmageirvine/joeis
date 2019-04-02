@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156859.
+ * A156859 The main column of a version of the square spiral.
  * @author Sean A. Irvine
  */
 public class A156859 extends LinearRecurrence {

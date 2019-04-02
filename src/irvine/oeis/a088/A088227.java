@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088227.
+ * A088227 Solutions x to x^n == 7 mod 13.
  * @author Sean A. Irvine
  */
 public class A088227 extends LinearRecurrence {

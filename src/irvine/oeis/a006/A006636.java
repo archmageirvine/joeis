@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006636.
+ * A006636 From generalized Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A006636 implements Sequence {

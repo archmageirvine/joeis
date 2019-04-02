@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174685.
+ * A174685 Indices of Sophie Germain pentagonal numbers: indices i of pentagonal numbers P(i) = A000326(i) such that 2*P(i)+1 is also a pentagonal number.
  * @author Sean A. Irvine
  */
 public class A174685 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003484.
+ * A003484 Radon function, also called Hurwitz-Radon numbers.
  * @author Sean A. Irvine
  */
 public class A003484 implements Sequence {

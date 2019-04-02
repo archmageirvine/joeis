@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179111.
+ * A179111 Partial sums of round(Fibonacci(n)/11).
  * @author Sean A. Irvine
  */
 public class A179111 extends LinearRecurrence {

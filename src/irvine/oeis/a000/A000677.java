@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A000677.
+ * A000677 Number of bicentered trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000677 implements Sequence, Serializable {

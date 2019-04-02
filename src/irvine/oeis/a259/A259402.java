@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259402.
+ * A259402 Pentagonal numbers (A000326) that are the sum of seven consecutive pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A259402 extends LinearRecurrence {

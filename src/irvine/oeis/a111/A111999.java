@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A111999.
+ * A111999 A triangle that converts certain binomials into triangle A008276 (diagonals of signed Stirling1 triangle A008275).
  * @author Sean A. Irvine
  */
 public class A111999 extends MemoryFunction2<Long, Z> implements Sequence {

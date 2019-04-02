@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002713.
+ * A002713 Triangulations of the disk R_{n,0}.
  * @author Sean A. Irvine
  */
 public class A002713 extends A002712 {

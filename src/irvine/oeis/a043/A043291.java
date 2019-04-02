@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A043291.
+ * A043291 Every run length in base 2 is 2.
  * @author Sean A. Irvine
  */
 public class A043291 extends LinearRecurrence {

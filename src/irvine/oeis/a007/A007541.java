@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001203;
 
 /**
- * A007541.
+ * A007541 Incrementally largest terms in the continued fraction for Pi-2 (cf. A001203).
  * @author Sean A. Irvine
  */
 public class A007541 extends RecordSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A016040.
+ * A016040 Integer part of Chebyshev's theta function: floor( log(prod_{k=1..n} prime(k)) ).
  * @author Sean A. Irvine
  */
 public class A016040 extends A002110 {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A010268.
+ * A010268 Continued fraction for cube root of 39.
  * @author Sean A. Irvine
  */
 public class A010268 extends ContinuedFractionSequence {

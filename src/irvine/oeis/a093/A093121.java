@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093121.
+ * A093121 A Jacobsthal Fibonacci product.
  * @author Sean A. Irvine
  */
 public class A093121 extends LinearRecurrence {

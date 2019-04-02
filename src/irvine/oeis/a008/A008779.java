@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008779.
+ * A008779 Number of n-dimensional partitions of 5.
  * @author Sean A. Irvine
  */
 public class A008779 extends LinearRecurrence {

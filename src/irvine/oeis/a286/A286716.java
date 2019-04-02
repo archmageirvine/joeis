@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286716.
+ * A286716 a(n) = floor(n/2) - floor((n+1)/5), n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A286716 extends LinearRecurrence {

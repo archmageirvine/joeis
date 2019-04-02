@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272871.
+ * A272871 Imaginary part of (n + i)^4.
  * @author Sean A. Irvine
  */
 public class A272871 extends LinearRecurrence {

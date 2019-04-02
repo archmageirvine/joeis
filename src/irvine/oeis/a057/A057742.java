@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051593;
 
 /**
- * A057742.
+ * A057742 Maximal order of element of alternating group A_{2n}.
  * @author Sean A. Irvine
  */
 public class A057742 extends A051593 {

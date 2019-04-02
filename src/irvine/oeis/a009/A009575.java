@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009575.
+ * A009575 E.g.f. sinh(log(1+x))*log(1+x).
  * @author Sean A. Irvine
  */
 public class A009575 implements Sequence {

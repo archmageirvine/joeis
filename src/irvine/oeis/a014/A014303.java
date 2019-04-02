@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014303.
+ * A014303 Prime(n)*(prime(n+1)-1)/2.
  * @author Sean A. Irvine
  */
 public class A014303 extends A000040 {

@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122678.
+ * A122678 Related to number of n-circum-C_5 H_5 systems.
  * @author Sean A. Irvine
  */
 public class A122678 extends LinearRecurrence {

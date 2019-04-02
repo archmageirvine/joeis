@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003785.
+ * A003785 Coefficients of Jacobi cusp form of index 1 and weight 12.
  * @author Sean A. Irvine
  */
 public class A003785 implements Sequence {

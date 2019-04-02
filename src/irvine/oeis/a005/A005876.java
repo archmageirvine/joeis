@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004013;
 
 /**
- * A005876.
+ * A005876 Theta series of cubic lattice with respect to edge.
  * @author Sean A. Irvine
  */
 public class A005876 implements Sequence {

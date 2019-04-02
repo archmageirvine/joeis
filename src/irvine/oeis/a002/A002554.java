@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001824;
 
 /**
- * A002554.
+ * A002554 Numerators of coefficients for numerical differentiation.
  * @author Sean A. Irvine
  */
 public class A002554 extends A001824 {

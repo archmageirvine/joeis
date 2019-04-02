@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192742.
+ * A192742 Number of matchings in the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A192742 extends LinearRecurrence {

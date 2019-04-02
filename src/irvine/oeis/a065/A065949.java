@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065949.
+ * A065949 Bessel polynomial {y_n}'''(0).
  * @author Sean A. Irvine
  */
 public class A065949 extends LinearRecurrence {

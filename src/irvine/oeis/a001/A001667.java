@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001667.
+ * A001667 2n-step polygons on b.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A001667 extends A001666 {

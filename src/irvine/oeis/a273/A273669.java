@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273669.
+ * A273669 Decimal representation ends with either 2 or 9.
  * @author Sean A. Irvine
  */
 public class A273669 extends LinearRecurrence {

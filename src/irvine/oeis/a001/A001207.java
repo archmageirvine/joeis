@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * A001207.
+ * A001207 Number of fixed hexagonal polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A001207 extends A001931 {

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084159.
+ * A084159 Pell oblongs.
  * @author Sean A. Irvine
  */
 public class A084159 extends LinearRecurrence {

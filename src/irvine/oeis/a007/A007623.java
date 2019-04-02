@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007623.
+ * A007623 Integers written in factorial base.
  * @author Sean A. Irvine
  */
 public class A007623 implements Sequence {

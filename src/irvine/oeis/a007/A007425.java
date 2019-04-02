@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007425.
+ * A007425 d_3(n), or tau_3(n), the number of ordered factorizations of n as n = r s t.
  * @author Sean A. Irvine
  */
 public class A007425 implements Sequence {

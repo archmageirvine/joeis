@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004138.
+ * A004138 From a counter moving problem.
  * @author Sean A. Irvine
  */
 public class A004138 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A002954.
+ * A002954 Smallest number such that n-th iterate of Chowla function is 0.
  * @author Sean A. Irvine
  */
 public class A002954 implements Sequence {

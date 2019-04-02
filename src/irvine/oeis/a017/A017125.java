@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017125.
+ * A017125 Table read by antidiagonals of Fibonacci-type sequences.
  * @author Sean A. Irvine
  */
 public class A017125 extends MemoryFunction2<Long, Z> implements Sequence {

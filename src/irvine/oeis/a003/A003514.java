@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003514.
+ * A003514 Number of series-reduced labeled graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003514 implements Sequence {

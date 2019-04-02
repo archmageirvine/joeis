@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290700.
+ * A290700 Number of minimal edge covers in the n-prism graph.
  * @author Sean A. Irvine
  */
 public class A290700 extends LinearRecurrence {

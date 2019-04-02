@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002352.
+ * A002352 Numerators of convergents to cube root of 2.
  * @author Sean A. Irvine
  */
 public class A002352 extends A002945 {

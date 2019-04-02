@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133142.
+ * A133142 Numbers which are both centered square and decagonal numbers.
  * @author Sean A. Irvine
  */
 public class A133142 extends LinearRecurrence {

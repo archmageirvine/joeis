@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.Collection;
 
 /**
- * A002831.
+ * A002831 Number of 3-edge-colored connected trivalent graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A002831 implements Sequence {

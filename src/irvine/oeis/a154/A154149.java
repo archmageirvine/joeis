@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154149.
+ * A154149 Indices k such that 22 plus the k-th triangular number is a perfect square.
  * @author Sean A. Irvine
  */
 public class A154149 extends LinearRecurrence {

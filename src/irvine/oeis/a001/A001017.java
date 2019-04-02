@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001017.
+ * A001017 Ninth powers: a(n) = n^9.
  * @author Sean A. Irvine
  */
 public class A001017 implements Sequence {

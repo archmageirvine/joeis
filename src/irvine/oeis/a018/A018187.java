@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018187.
+ * A018187 Restricted Perrin pseudoprimes.
  * @author Sean A. Irvine
  */
 public class A018187 implements Sequence {

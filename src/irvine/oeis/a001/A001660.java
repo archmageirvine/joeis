@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000905;
 
 /**
- * A001660.
+ * A001660 Hypotenusal numbers.
  * @author Sean A. Irvine
  */
 public class A001660 extends A000905 {

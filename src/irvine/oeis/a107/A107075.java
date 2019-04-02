@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107075.
+ * A107075 Centered square numbers that are also centered pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A107075 extends LinearRecurrence {

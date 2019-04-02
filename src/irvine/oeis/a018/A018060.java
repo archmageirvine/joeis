@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018060.
+ * A018060 Powers of fourth root of 6 rounded down.
  * @author Sean A. Irvine
  */
 public class A018060 implements Sequence {

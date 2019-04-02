@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103975.
+ * A103975 Smaller side in (a,a+1,a+1)-integer triangle with integer area.
  * @author Sean A. Irvine
  */
 public class A103975 extends LinearRecurrence {

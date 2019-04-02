@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106607.
+ * A106607 G.f.: (1+t^3)^2/((1-t)*(1-t^2)^2*(1-t^4)).
  * @author Sean A. Irvine
  */
 public class A106607 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008442.
+ * A008442 Expansion of Jacobi theta constant (theta_2(2z))^2/4.
  * @author Sean A. Irvine
  */
 public class A008442 extends EulerTransformSequence {

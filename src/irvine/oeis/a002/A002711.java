@@ -6,7 +6,7 @@ import irvine.oeis.a210.A210696;
 
 
 /**
- * A002711.
+ * A002711 Triangulations of the disk G_{n,2}.
  * @author Sean A. Irvine
  */
 public class A002711 implements Sequence {

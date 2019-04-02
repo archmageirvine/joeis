@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007188.
+ * A007188 Multiplicative encoding of Pascal triangle: Product p(i+1)^C(n,i).
  * @author Sean A. Irvine
  */
 public class A007188 implements Sequence {

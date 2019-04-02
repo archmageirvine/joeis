@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.q.Q;
 
 /**
- * A002701.
+ * A002701 Coefficients for numerical differentiation.
  * @author Sean A. Irvine
  */
 public class A002701 extends A002455 {

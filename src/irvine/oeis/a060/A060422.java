@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060422.
+ * A060422 Number of acute triangles made from vertices of a regular n-gon.
  * @author Sean A. Irvine
  */
 public class A060422 extends LinearRecurrence {

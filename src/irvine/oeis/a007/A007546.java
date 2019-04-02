@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A007546.
+ * A007546 Number of steps to compute n-th prime in PRIMEGAME (fast version).
  * @author Sean A. Irvine
  */
 public class A007546 extends MemorySequence {

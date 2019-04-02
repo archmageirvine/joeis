@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import irvine.math.group.IntegerField;
 
 /**
- * A002945.
+ * A002945 Continued fraction for cube root of 2.
  * @author Sean A. Irvine
  */
 public class A002945 implements Sequence {

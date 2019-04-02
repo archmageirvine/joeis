@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A007096.
+ * A007096 Expansion of theta_3 / theta_4.
  * @author Sean A. Irvine
  */
 public class A007096 extends EulerTransformSequence {

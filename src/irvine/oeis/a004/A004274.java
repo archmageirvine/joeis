@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004274.
+ * A004274 0, 2 and the odd numbers.
  * @author Sean A. Irvine
  */
 public class A004274 implements Sequence {

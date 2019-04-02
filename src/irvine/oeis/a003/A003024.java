@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003024.
+ * A003024 Number of acyclic digraphs (or DAGs) with n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A003024 extends MemorySequence {

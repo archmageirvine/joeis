@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060628;
 
 /**
- * A002753.
+ * A002753 Coefficients of elliptic function sn.
  * @author Sean A. Irvine
  */
 public class A002753 extends A060628 {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003267.
+ * A003267 Central Fibonomial coefficients.
  * @author Sean A. Irvine
  */
 public class A003267 extends A003268 {

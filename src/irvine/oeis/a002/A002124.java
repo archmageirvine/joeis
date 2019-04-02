@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002124.
+ * A002124 Number of compositions of n into a sum of odd primes.
  * @author Sean A. Irvine
  */
 public class A002124 extends MemorySequence {

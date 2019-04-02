@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007852.
+ * A007852 Antichains in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007852 implements Sequence {

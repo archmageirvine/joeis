@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001057.
+ * A001057 Canonical enumeration of integers: interleaved positive and negative integers with zero prepended.
  * @author Sean A. Irvine
  */
 public class A001057 implements Sequence {

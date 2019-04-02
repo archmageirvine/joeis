@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092796.
+ * A092796 Number of connected relations.
  * @author Sean A. Irvine
  */
 public class A092796 extends LinearRecurrence {

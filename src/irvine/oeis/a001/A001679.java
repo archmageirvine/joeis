@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A001679.
+ * A001679 Number of series-reduced rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A001679 extends A001678 {

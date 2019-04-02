@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a002.A002851;
 
 /**
- * A005638.
+ * A005638 Number of unlabeled trivalent (or cubic) graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005638 extends EulerTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017923.
+ * A017923 Powers of sqrt(6) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017923 implements Sequence {

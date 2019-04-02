@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007381.
+ * A007381 7th order maximal independent sets in path graph.
  * @author Sean A. Irvine
  */
 public class A007381 implements Sequence {

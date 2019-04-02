@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005345.
+ * A005345 Number of elements of a free idempotent monoid on n letters.
  * @author Sean A. Irvine
  */
 public class A005345 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007304.
+ * A007304 Sphenic numbers: products of 3 distinct primes.
  * @author Sean A. Irvine
  */
 public class A007304 implements Sequence {

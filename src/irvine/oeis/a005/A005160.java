@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005160.
+ * A005160 Number of alternating sign n X n matrices invariant under a quarter turn.
  * @author Sean A. Irvine
  */
 public class A005160 implements Sequence {

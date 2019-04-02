@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145700.
+ * A145700 Numbers x such that there exists n in N with (x+1)^3-x^3=37*n^2.
  * @author Sean A. Irvine
  */
 public class A145700 extends LinearRecurrence {

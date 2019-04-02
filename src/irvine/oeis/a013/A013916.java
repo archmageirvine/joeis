@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013916.
+ * A013916 Numbers k such that the sum of the first k primes is prime.
  * @author Sean A. Irvine
  */
 public class A013916 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004105;
 
 /**
- * A001375.
+ * A001375 Relational systems on n nodes.
  * @author Sean A. Irvine
  */
 public class A001375 extends A004105 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007671.
+ * A007671 Numbers n such that 2^n + 2^(n + 1)/2 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A007671 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008947.
+ * A008947 Degrees of irreducible representations of group U5(2).
  * @author Sean A. Irvine
  */
 public class A008947 extends FiniteSequence {

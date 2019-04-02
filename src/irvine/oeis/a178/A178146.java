@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178146.
+ * A178146 a(n) is the number of distinct divisors d of n of the form d=2,3 or 5.
  * @author Sean A. Irvine
  */
 public class A178146 extends LinearRecurrence {

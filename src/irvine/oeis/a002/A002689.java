@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A002689.
+ * A002689 Denominators of coefficients for repeated integration.
  * @author Sean A. Irvine
  */
 public class A002689 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175887.
+ * A175887 Numbers that are congruent to {1, 14} mod 15.
  * @author Sean A. Irvine
  */
 public class A175887 extends LinearRecurrence {

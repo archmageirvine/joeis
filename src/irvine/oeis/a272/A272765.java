@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272765.
+ * A272765 Expansion of (1 + 80*x + 2592*x^2 + 29360*x^3 + 138124*x^4 + 295552*x^5 + 299984*x^6 + 144016*x^7 + 31146*x^8 + 2688*x^9 + 72*x^10)/(1-x)^16.
  * @author Sean A. Irvine
  */
 public class A272765 extends LinearRecurrence {

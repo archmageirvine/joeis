@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008777.
+ * A008777 Number of dots and dashes used when representing n-th letter in Morse code.
  * @author Sean A. Irvine
  */
 public class A008777 extends FiniteSequence {

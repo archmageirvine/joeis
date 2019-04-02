@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007773.
+ * A007773 For any circular arrangement of 0..n-1, let S = sum of squares of every sum of two contiguous numbers; then a(n) = # of distinct values of S.
  * @author Sean A. Irvine
  */
 public class A007773 implements Sequence {

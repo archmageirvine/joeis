@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020985;
 
 /**
- * A005943.
+ * A005943 Number of subwords of length n in the Golay-Rudin-Shapiro binary word A020987.
  * @author Sean A. Irvine
  */
 public class A005943 extends A020985 {

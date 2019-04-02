@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000055;
 
 /**
- * A001256.
+ * A001256 Squares of numbers of trees.
  * @author Sean A. Irvine
  */
 public class A001256 extends A000055 {

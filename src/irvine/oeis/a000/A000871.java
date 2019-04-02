@@ -5,7 +5,7 @@ import irvine.math.group.GeneralLinearCycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000871.
+ * A000871 Number of switching networks with S(n) acting on the domain and GL(2,2) acting on the range.
  * @author Sean A. Irvine
  */
 public class A000871 extends A000721 {

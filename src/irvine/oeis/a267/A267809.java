@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267809.
+ * A267809 a(1)=a(2)=1; if n&gt;2 then a(n) = a(n-2) + (a(n-1) mod 10).
  * @author Sean A. Irvine
  */
 public class A267809 extends LinearRecurrence {

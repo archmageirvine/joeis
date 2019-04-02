@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A006569.
+ * A006569 Numerators of generalized Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A006569 extends A006568 {

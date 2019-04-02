@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001054.
+ * A001054 a(n) = a(n-1)*a(n-2) - 1.
  * @author Sean A. Irvine
  */
 public class A001054 implements Sequence {

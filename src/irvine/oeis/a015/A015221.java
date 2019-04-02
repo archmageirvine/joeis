@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015221.
+ * A015221 Odd square pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A015221 extends LinearRecurrence {

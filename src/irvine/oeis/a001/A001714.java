@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001714.
+ * A001714 Generalized Stirling numbers.
  * @author Sean A. Irvine
  */
 public class A001714 extends A001711 {

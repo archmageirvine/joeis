@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092431.
+ * A092431 Numbers having in binary representation a leading 1 followed by n zeros and n-1 ones.
  * @author Sean A. Irvine
  */
 public class A092431 extends LinearRecurrence {

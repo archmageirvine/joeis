@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A158997.
+ * A158997 Palindromes of the form m*reversal(m)+1 where m &gt;= reversal(m), sorted on m.
  * @author Sean A. Irvine
  */
 public class A158997 implements Sequence {

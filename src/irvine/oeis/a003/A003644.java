@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003644.
+ * A003644 Discriminants of the known imaginary quadratic fields with 1 class per genus (a finite sequence).
  * @author Sean A. Irvine
  */
 public class A003644 extends FiniteSequence {

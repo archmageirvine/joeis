@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123009.
+ * A123009 Expansion of -x * (5*x+1) / (49*x^2+2*x-1).
  * @author Sean A. Irvine
  */
 public class A123009 extends LinearRecurrence {

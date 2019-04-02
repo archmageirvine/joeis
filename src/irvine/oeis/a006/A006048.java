@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006048.
+ * A006048 Number of entries in first n rows of Pascal's triangle not divisible by 3.
  * @author Sean A. Irvine
  */
 public class A006048 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A083759.
+ * A083759 Primes arising in A083758.
  * @author Sean A. Irvine
  */
 public class A083759 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211522.
+ * A211522 Number of ordered triples (w,x,y) with all terms in {1,...,n} and w + 5y = 2x.
  * @author Sean A. Irvine
  */
 public class A211522 extends LinearRecurrence {

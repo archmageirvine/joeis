@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002407.
+ * A002407 Cuban primes: primes which are the difference of two consecutive cubes.
  * @author Sean A. Irvine
  */
 public class A002407 implements Sequence {

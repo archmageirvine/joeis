@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007148.
+ * A007148 Number of self-complementary 2-colored bracelets (turn over necklaces) with 2n beads.
  * @author Sean A. Irvine
  */
 public class A007148 implements Sequence {

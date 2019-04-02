@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064831.
+ * A064831 Partial sums of A001654, or sum of the areas of the first n Fibonacci rectangles.
  * @author Sean A. Irvine
  */
 public class A064831 extends LinearRecurrence {

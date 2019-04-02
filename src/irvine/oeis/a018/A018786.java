@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018786.
+ * A018786 Numbers that are the sum of two 4th powers in more than one way.
  * @author Sean A. Irvine
  */
 public class A018786 implements Sequence {

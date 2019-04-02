@@ -5,7 +5,7 @@ import irvine.oeis.a064.A064553;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A080688.
+ * A080688 Resort the index of A064553 using A080444 and maintaining ascending order within each grouping: seen as a triangle read by rows, the n-th row contains the A001055(n) numbers m with A064553(m)=n.
  * @author Sean A. Irvine
  */
 public class A080688 extends A080444 {

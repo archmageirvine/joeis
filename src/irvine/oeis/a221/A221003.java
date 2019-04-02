@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221003.
+ * A221003 The hyper-Wiener index of the nanostar dendrimer G[n], defined pictorially in the Karbasioun-Ashrafi reference.
  * @author Sean A. Irvine
  */
 public class A221003 extends LinearRecurrence {

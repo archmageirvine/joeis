@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004260.
+ * A004260 10*log_2 (n) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A004260 implements Sequence {

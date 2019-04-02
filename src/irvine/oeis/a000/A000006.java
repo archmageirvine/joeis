@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000006.
+ * A000006 Integer part of square root of n-th prime.
  * @author Sean A. Irvine
  */
 public class A000006 implements Sequence {

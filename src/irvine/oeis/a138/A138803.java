@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138803.
+ * A138803 Imaginary parts of terms (1,1), (2,2) of matrix [1,(1+I); 1,1]^n.
  * @author Sean A. Irvine
  */
 public class A138803 extends LinearRecurrence {

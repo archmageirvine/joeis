@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002723.
+ * A002723 Rotatable partitions.
  * @author Sean A. Irvine
  */
 public class A002723 extends MemoryFunction1<Long> implements Sequence {

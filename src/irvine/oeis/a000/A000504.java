@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000504.
+ * A000504 S2(j,2j+3) where S2(n,k) is a 2-associated Stirling number of the second kind.
  * @author Sean A. Irvine
  */
 public class A000504 implements Sequence {

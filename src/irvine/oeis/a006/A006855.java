@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006855.
+ * A006855 Maximal edges in n-node squarefree graph.
  * @author Sean A. Irvine
  */
 public class A006855 implements Sequence, GraphProcessor {

@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181106.
+ * A181106 Largest odd number strictly less than a square.
  * @author Sean A. Irvine
  */
 public class A181106 extends LinearRecurrence {

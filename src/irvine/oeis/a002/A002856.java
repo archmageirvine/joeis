@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002856.
+ * A002856 Number of polyhedra with n nodes and n faces.
  * @author Sean A. Irvine
  */
 public class A002856 implements Sequence {

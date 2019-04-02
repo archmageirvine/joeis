@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009927.
+ * A009927 Coordination sequence for Cr3Si, Si position.
  * @author Sean A. Irvine
  */
 public class A009927 extends CoordinationSequence {

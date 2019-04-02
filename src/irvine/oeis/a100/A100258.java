@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A100258.
+ * A100258 Triangle of coefficients of normalized Legendre polynomials, with increasing exponents.
  * @author Sean A. Irvine
  */
 public class A100258 implements Sequence {

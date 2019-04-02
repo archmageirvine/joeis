@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188640.
+ * A188640 Decimal expansion of e + sqrt(1+e^2).
  * @author Sean A. Irvine
  */
 public class A188640 extends DecimalExpansionSequence {

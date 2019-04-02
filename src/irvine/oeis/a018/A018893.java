@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A018893.
+ * A018893 Blasius sequence: from coefficients in expansion of solution to Blasius's equation in boundary layer theory.
  * @author Sean A. Irvine
  */
 public class A018893 extends MemorySequence {

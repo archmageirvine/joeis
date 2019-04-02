@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008310.
+ * A008310 Triangle of coefficients of Chebyshev polynomials T_n (x).
  * @author Sean A. Irvine
  */
 public class A008310 implements Sequence {

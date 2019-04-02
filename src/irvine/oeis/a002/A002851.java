@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A002851.
+ * A002851 Number of unlabeled trivalent (or cubic) connected graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A002851 extends ParallelGenerateGraphsSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001278.
+ * A001278 Number of permutations of length n by rises.
  * @author Sean A. Irvine
  */
 public class A001278 implements Sequence {

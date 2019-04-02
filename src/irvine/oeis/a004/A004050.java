@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A004050.
+ * A004050 Numbers of the form 2^j + 3^k, for j and k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A004050 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005048.
+ * A005048 Minimal span of set of n elements with no 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A005048 implements Sequence {

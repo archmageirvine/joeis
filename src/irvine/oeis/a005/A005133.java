@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a121.A121355;
 
 /**
- * A005133.
+ * A005133 Number of index n subgroups of modular group PSL_2(Z).
  * @author Sean A. Irvine
  */
 public class A005133 extends A121355 {

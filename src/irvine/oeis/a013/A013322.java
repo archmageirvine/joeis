@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A013322.
+ * A013322 Golomb-type sequence over triangular numbers.
  * @author Sean A. Irvine
  */
 public class A013322 extends MemorySequence {

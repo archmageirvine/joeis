@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003662.
+ * A003662 a(n) is smallest number != a(j)+a(k), j&lt;k.
  * @author Sean A. Irvine
  */
 public class A003662 implements Sequence {

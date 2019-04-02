@@ -8,7 +8,7 @@ import irvine.math.q.Rationals;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002639.
+ * A002639 Numerators of expansion of Jacobi nome q in parameter m.
  * @author Sean A. Irvine
  */
 public class A002639 implements Sequence {

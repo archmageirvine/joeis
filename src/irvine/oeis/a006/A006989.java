@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
 /**
- * A006989.
+ * A006989 Log of g.f. of numbers of preferential arrangements.
  * @author Sean A. Irvine
  */
 public class A006989 extends A000670 {

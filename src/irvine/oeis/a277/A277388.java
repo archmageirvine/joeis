@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277388.
+ * A277388 Number of nonnegative solutions of a certain system of linear Diophantine equations depending on an odd parameter.
  * @author Sean A. Irvine
  */
 public class A277388 extends LinearRecurrence {

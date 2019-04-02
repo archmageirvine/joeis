@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104683.
+ * A104683 Interlaces "2*n^2 - 1 is a square" with NSW numbers.
  * @author Sean A. Irvine
  */
 public class A104683 extends LinearRecurrence {

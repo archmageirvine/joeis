@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a082.A082042;
 
 /**
- * A018932.
+ * A018932 The number of permutations of n cards in which 4 will be the next hit after 2.
  * @author Sean A. Irvine
  */
 public class A018932 extends PrependSequence {

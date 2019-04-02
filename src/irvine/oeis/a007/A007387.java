@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007387.
+ * A007387 Number of 3rd order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007387 extends LinearRecurrence {

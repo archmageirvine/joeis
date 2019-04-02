@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135493.
+ * A135493 Number of ways to toss a coin n times and not get a run of six.
  * @author Sean A. Irvine
  */
 public class A135493 extends LinearRecurrence {

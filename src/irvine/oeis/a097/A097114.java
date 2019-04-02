@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097114.
+ * A097114 Expansion of (1+8x-42x^2-392x^3)/(1-99x^2+2450x^4).
  * @author Sean A. Irvine
  */
 public class A097114 extends LinearRecurrence {

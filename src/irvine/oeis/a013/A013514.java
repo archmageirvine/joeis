@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013514.
+ * A013514 sec(sec(x)-sech(x)) = 1+12/4!*x^4+15232/8!*x^8+128432832/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A013514 implements Sequence {

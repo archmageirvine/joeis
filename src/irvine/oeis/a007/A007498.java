@@ -5,7 +5,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A007498.
+ * A007498 Unique period lengths of primes mentioned in A007615.
  * @author Sean A. Irvine
  */
 public class A007498 implements Sequence {

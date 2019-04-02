@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008784.
+ * A008784 Numbers n such that sqrt(-1) mod n exists; or, numbers n that are primitively represented by x^2 + y^2.
  * @author Sean A. Irvine
  */
 public class A008784 implements Sequence {

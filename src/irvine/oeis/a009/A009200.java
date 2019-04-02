@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009200.
+ * A009200 E.g.f. exp(sin(log(1+x))).
  * @author Sean A. Irvine
  */
 public class A009200 implements Sequence {

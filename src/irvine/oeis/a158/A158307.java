@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158307.
+ * A158307 361n^2 - 2n.
  * @author Sean A. Irvine
  */
 public class A158307 extends LinearRecurrence {

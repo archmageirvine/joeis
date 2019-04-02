@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001292.
+ * A001292 Concatenations of cyclic permutations of initial positive integers.
  * @author Sean A. Irvine
  */
 public class A001292 implements Sequence {

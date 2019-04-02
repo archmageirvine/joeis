@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005827.
+ * A005827 Worst case of a Jacobi symbol algorithm.
  * @author Sean A. Irvine
  */
 public class A005827 extends LinearRecurrence {

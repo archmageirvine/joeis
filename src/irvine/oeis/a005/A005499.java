@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a210.A210696;
 
 /**
- * A005499.
+ * A005499 Triangulations of the disk G_{3,n}.
  * @author Sean A. Irvine
  */
 public class A005499 extends A210696 {

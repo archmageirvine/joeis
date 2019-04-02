@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247919.
+ * A247919 Expansion of 1 / (1 + x^4 - x^5) in powers of x.
  * @author Sean A. Irvine
  */
 public class A247919 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A000173.
+ * A000173 Unitary-sociable numbers (smallest member of each cycle).
  * @author Sean A. Irvine
  */
 public class A000173 implements Sequence {

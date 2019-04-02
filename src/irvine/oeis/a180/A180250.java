@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180250.
+ * A180250 a(n) = 5*a(n-1) + 10*a(n-2), with a(1)=0 and a(2)=1.
  * @author Sean A. Irvine
  */
 public class A180250 extends LinearRecurrence {

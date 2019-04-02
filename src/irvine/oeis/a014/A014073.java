@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014073.
+ * A014073 Number of vectors abcdefg with a,b,... &gt;= 0, a+...+g=n, a&gt;={b,...g}.
  * @author Sean A. Irvine
  */
 public class A014073 implements Sequence {

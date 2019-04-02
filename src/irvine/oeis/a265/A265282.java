@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265282.
+ * A265282 Number of triangles in a certain geometric structure: see "Illustration of initial terms" link for precise definition.
  * @author Sean A. Irvine
  */
 public class A265282 extends LinearRecurrence {

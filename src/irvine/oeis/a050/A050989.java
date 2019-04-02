@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050989.
+ * A050989 7-idempotent numbers.
  * @author Sean A. Irvine
  */
 public class A050989 extends LinearRecurrence {

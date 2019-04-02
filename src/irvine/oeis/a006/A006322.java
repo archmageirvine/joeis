@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a004.A004068;
 
 /**
- * A006322.
+ * A006322 4-dimensional analog of centered polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A006322 extends PartialSumSequence {

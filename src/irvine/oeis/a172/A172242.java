@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172242.
+ * A172242 Number of 10-D hypercubes in an n-dimensional hypercube.
  * @author Sean A. Irvine
  */
 public class A172242 extends LinearRecurrence {

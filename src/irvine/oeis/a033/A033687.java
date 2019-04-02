@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A033687.
+ * A033687 Theta series of hexagonal lattice A_2 with respect to deep hole divided by 3.
  * @author Sean A. Irvine
  */
 public class A033687 extends EulerTransformSequence {

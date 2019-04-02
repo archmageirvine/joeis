@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007787.
+ * A007787 Number of nonintersecting rook paths joining opposite corners of 5 X n board.
  * @author Sean A. Irvine
  */
 public class A007787 extends LinearRecurrence {

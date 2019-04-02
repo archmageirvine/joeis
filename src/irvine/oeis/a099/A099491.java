@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099491.
+ * A099491 A Chebyshev transform of Padovan numbers.
  * @author Sean A. Irvine
  */
 public class A099491 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081353.
+ * A081353 Diagonal of square maze arrangement of natural numbers A081349.
  * @author Sean A. Irvine
  */
 public class A081353 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137693.
+ * A137693 Numbers n such that 3n^2-n = 6k^2-2k for some integer k&gt;0.
  * @author Sean A. Irvine
  */
 public class A137693 extends LinearRecurrence {

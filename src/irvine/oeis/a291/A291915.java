@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291915.
+ * A291915 Number of 6-cycles in the n-Fibonacci cube graph.
  * @author Sean A. Irvine
  */
 public class A291915 extends LinearRecurrence {

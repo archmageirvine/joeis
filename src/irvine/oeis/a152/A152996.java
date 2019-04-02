@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152996.
+ * A152996 9 times pentagonal numbers: 9*n*(3*n-1)/2.
  * @author Sean A. Irvine
  */
 public class A152996 extends LinearRecurrence {

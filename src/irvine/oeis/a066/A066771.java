@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066771.
+ * A066771 5^n cos(2n arctan(1/2)) or denominator of tan(2n arctan(1/2)).
  * @author Sean A. Irvine
  */
 public class A066771 extends LinearRecurrence {

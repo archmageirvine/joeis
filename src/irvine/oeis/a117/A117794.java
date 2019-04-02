@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117794.
+ * A117794 Hexagonal numbers divisible by 6.
  * @author Sean A. Irvine
  */
 public class A117794 extends LinearRecurrence {

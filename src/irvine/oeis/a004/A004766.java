@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004766.
+ * A004766 Numbers whose binary expansion ends 01.
  * @author Sean A. Irvine
  */
 public class A004766 implements Sequence {

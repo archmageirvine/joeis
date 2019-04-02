@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011235.
+ * A011235 Decimal expansion of 11th root of 7.
  * @author Sean A. Irvine
  */
 public class A011235 extends DecimalExpansionSequence {

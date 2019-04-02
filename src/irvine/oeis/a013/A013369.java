@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013369.
+ * A013369 exp(sin(x)-sinh(x))=1-2/3!*x^3+40/6!*x^6-2/7!*x^7-2240/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013369 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051303.
+ * A051303 Number of 3-element proper antichains of an n-element set.
  * @author Sean A. Irvine
  */
 public class A051303 extends LinearRecurrence {

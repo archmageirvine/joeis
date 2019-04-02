@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007154.
+ * A007154 Spectrum of the free Kleene algebra on n free variables.
  * @author Sean A. Irvine
  */
 public class A007154 implements Sequence {

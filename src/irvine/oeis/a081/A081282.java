@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081282.
+ * A081282 Generalized centered polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A081282 extends LinearRecurrence {

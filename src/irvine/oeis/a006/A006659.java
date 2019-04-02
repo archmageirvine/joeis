@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006659.
+ * A006659 Closed meander systems of order n+1 with n components.
  * @author Sean A. Irvine
  */
 public class A006659 implements Sequence {

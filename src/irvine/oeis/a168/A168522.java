@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168522.
+ * A168522 a(n) = 98*a(n-1) - 2*a(n-2); a(0) = 0, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A168522 extends LinearRecurrence {

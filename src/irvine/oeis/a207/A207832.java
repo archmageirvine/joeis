@@ -3,7 +3,7 @@ package irvine.oeis.a207;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A207832.
+ * A207832 20*x^2+1 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A207832 extends LinearRecurrence {

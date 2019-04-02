@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A002499.
+ * A002499 Number of self-converse digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A002499 implements Sequence {

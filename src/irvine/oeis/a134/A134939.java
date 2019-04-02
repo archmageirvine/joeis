@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134939.
+ * A134939 Numerator of the expected number of random moves in Tower of Hanoi problem with n disks starting on peg 1 and ending on peg 3.
  * @author Sean A. Irvine
  */
 public class A134939 extends LinearRecurrence {

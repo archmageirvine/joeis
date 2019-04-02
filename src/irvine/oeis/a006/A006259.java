@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A006259.
+ * A006259 Denominators of approximations to e.
  * @author Sean A. Irvine
  */
 public class A006259 extends A006258 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269920;
 
 /**
- * A006294.
+ * A006294 Number of rooted planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006294 extends A269920 {

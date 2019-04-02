@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081410.
+ * A081410 a(1)=a(2)=1; a(n)=a(n-1)+a(n-2) + n (mod 3).
  * @author Sean A. Irvine
  */
 public class A081410 extends LinearRecurrence {

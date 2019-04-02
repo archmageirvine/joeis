@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165259.
+ * A165259 Sum of odd powers of 4 and 9 divided by 13.
  * @author Sean A. Irvine
  */
 public class A165259 extends LinearRecurrence {

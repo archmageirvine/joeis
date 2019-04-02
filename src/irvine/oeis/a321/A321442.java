@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A321442.
+ * A321442 Length of Beanstalk game.
  * @author Sean A. Irvine
  */
 public class A321442 implements Sequence {

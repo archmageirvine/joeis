@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008513.
+ * A008513 Number of points on surface of 6-dimensional cube.
  * @author Sean A. Irvine
  */
 public class A008513 implements Sequence {

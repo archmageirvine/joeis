@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A130827.
+ * A130827 Least k &gt;= 1 such that k^n+n is semiprime, or 0 if no such k exists.
  * @author Sean A. Irvine
  */
 public class A130827 implements Sequence {

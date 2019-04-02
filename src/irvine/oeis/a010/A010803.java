@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010803.
+ * A010803 15th powers: a(n) = n^15.
  * @author Sean A. Irvine
  */
 public class A010803 implements Sequence {

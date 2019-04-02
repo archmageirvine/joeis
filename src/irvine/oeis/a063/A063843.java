@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063843.
+ * A063843 Number of n-multigraphs on 5 nodes.
  * @author Sean A. Irvine
  */
 public class A063843 extends LinearRecurrence {

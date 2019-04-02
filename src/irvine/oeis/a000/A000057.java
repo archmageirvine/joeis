@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000057.
+ * A000057 Primes dividing all Fibonacci sequences.
  * @author Sean A. Irvine
  */
 public class A000057 implements Sequence {

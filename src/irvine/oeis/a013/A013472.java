@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013472.
+ * A013472 Coefficient of [x^(4*n+2)] in e.g.f. tan(cosh(x) - cos(x)).
  * @author Sean A. Irvine
  */
 public class A013472 implements Sequence {

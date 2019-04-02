@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028249.
+ * A028249 Molien series for complete weight enumerator of self-dual code over GF(4) containing 1^n.
  * @author Sean A. Irvine
  */
 public class A028249 extends LinearRecurrence {

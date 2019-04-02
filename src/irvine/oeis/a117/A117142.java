@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117142.
+ * A117142 Number of partitions of n in which any two parts differ by at most 2.
  * @author Sean A. Irvine
  */
 public class A117142 extends LinearRecurrence {

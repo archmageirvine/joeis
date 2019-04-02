@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012700.
+ * A012700 Expansion of e.g.f. tan(arctanh(x) * log(x+1)).
  * @author Sean A. Irvine
  */
 public class A012700 implements Sequence {

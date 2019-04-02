@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A000229.
+ * A000229 a(n) is the least number such that the n-th prime is the least quadratic nonresidue (not necessarily coprime) modulo a(n).
  * @author Sean A. Irvine
  */
 public class A000229 implements Sequence {

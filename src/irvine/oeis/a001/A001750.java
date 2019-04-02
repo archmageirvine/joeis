@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001750.
+ * A001750 Primes multiplied by 5.
  * @author Sean A. Irvine
  */
 public class A001750 implements Sequence {

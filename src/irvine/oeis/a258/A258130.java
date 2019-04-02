@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258130.
+ * A258130 Octagonal numbers (A000567) that are the sum of ten consecutive octagonal numbers.
  * @author Sean A. Irvine
  */
 public class A258130 extends LinearRecurrence {

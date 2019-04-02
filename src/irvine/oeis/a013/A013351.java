@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013351.
+ * A013351 exp(sin(x)-tan(x))=1-3/3!*x^3-15/5!*x^5+90/6!*x^6-273/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013351 implements Sequence {

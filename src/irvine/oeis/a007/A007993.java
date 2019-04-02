@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007993.
+ * A007993 Poincar&#233; series [or Poincare series] of Lie algebra associated with a certain braid group.
  * @author Sean A. Irvine
  */
 public class A007993 implements Sequence {

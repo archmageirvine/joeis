@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005840.
+ * A005840 Expansion of (1-x)*e^x/(2-e^x).
  * @author Sean A. Irvine
  */
 public class A005840 extends MemorySequence {

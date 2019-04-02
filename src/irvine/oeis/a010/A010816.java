@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010816.
+ * A010816 Expansion of Product_{k&gt;=1} (1 - x^k)^3.
  * @author Sean A. Irvine
  */
 public class A010816 implements Sequence {

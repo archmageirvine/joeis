@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002671.
+ * A002671 a(n) = 4^n*(2*n+1)!.
  * @author Sean A. Irvine
  */
 public class A002671 implements Sequence {

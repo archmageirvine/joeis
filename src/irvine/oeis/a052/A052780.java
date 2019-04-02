@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052780.
+ * A052780 Expansion of e.g.f. x^2*exp(x)^4.
  * @author Sean A. Irvine
  */
 public class A052780 extends LinearRecurrence {

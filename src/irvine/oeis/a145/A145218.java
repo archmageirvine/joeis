@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145218.
+ * A145218 a(n) is the self-convolution series of the sum of 5th powers of the first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A145218 extends LinearRecurrence {

@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A003087.
+ * A003087 Number of acyclic digraphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A003087 implements Sequence {

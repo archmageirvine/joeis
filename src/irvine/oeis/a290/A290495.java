@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A290495.
+ * A290495 The number of self-inverse Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A290495 implements Sequence {

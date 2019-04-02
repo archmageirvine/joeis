@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001018.
+ * A001018 Powers of 8: a(n) = 8^n.
  * @author Sean A. Irvine
  */
 public class A001018 implements Sequence {

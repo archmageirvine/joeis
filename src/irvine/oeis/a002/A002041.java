@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002041.
+ * A002041 Expansion of x/((1-x)(1-4x^2)(1-5x)).
  * @author Sean A. Irvine
  */
 public class A002041 implements Sequence {

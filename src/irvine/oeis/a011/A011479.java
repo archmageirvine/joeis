@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011479.
+ * A011479 Decimal expansion of 60th root of 60.
  * @author Sean A. Irvine
  */
 public class A011479 extends DecimalExpansionSequence {

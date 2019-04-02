@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159233.
+ * A159233 Number of edge colorings of the Petersen graph.
  * @author Sean A. Irvine
  */
 public class A159233 extends LinearRecurrence {

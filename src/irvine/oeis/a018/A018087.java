@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018087.
+ * A018087 Powers of fourth root of 15 rounded down.
  * @author Sean A. Irvine
  */
 public class A018087 implements Sequence {

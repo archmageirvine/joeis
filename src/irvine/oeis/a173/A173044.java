@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173044.
+ * A173044 Product plus sum of five consecutive nonnegative numbers.
  * @author Sean A. Irvine
  */
 public class A173044 extends LinearRecurrence {

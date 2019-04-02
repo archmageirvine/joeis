@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007863;
 
 /**
- * A011272.
+ * A011272 Hybrid binary rooted trees with n nodes whose root is labeled by "a".
  * @author Sean A. Irvine
  */
 public class A011272 extends A007863 {

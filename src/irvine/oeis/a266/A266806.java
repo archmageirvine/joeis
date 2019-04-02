@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266806.
+ * A266806 Coefficient of x^2 in the minimal polynomial of the continued fraction [1^n,sqrt(6),1,1,...], where 1^n means n ones. S.
  * @author Sean A. Irvine
  */
 public class A266806 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055156.
+ * A055156 Powers of 3 which are not powers of 3^3.
  * @author Sean A. Irvine
  */
 public class A055156 extends LinearRecurrence {

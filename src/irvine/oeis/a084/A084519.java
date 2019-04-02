@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084519.
+ * A084519 Number of indecomposable ground-state 3-ball juggling sequences of period n.
  * @author Sean A. Irvine
  */
 public class A084519 extends LinearRecurrence {

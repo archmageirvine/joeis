@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164856.
+ * A164856 Row sums of generalized Lucas-Pascal triangle: A164855.
  * @author Sean A. Irvine
  */
 public class A164856 extends LinearRecurrence {

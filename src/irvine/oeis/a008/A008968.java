@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008968.
+ * A008968 Triangle of distribution of rank sums: Wilcoxon's statistic.
  * @author Sean A. Irvine
  */
 public class A008968 implements Sequence {

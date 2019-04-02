@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164576.
+ * A164576 Integer averages of the set of the first positive squares up to some n^2.
  * @author Sean A. Irvine
  */
 public class A164576 extends LinearRecurrence {

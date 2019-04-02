@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * A001856.
+ * A001856 A self-generating sequence: every positive integer occurs as a(i)-a(j) for a unique pair i,j.
  * @author Sean A. Irvine
  */
 public class A001856 implements Sequence {

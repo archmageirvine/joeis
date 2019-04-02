@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000940.
+ * A000940 Number of n-gons with n vertices.
  * @author Sean A. Irvine
  */
 public class A000940 implements Sequence {

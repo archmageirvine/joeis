@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001981.
+ * A001981 Restricted partitions.
  * @author Sean A. Irvine
  */
 public class A001981 implements Sequence {

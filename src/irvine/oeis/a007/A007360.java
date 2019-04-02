@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051424;
 
 /**
- * A007360.
+ * A007360 Number of partitions of n into distinct and pairwise relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A007360 extends A051424 {

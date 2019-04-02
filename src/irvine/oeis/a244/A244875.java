@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244875.
+ * A244875 Number of magic labelings with magic sum n of 7th graph shown in link.
  * @author Sean A. Irvine
  */
 public class A244875 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A000408.
+ * A000408 Numbers that are the sum of three nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000408 implements Sequence {

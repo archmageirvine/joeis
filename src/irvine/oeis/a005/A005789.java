@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005789.
+ * A005789 3-dimensional Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A005789 implements Sequence {

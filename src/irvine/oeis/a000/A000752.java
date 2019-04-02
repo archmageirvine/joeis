@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000752.
+ * A000752 Boustrophedon transform of powers of 2.
  * @author Sean A. Irvine
  */
 public class A000752 extends A000674 {

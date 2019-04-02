@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013346.
+ * A013346 cos(sin(x)-arcsin(x))=1-40/6!*x^6-896/8!*x^8-62304/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013346 implements Sequence {

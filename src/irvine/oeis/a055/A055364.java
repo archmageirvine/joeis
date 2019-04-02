@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055364.
+ * A055364 Number of asymmetric mobiles (circular rooted trees) with n nodes and 3 leaves.
  * @author Sean A. Irvine
  */
 public class A055364 extends LinearRecurrence {

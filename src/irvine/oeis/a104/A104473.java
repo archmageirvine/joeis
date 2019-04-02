@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104473.
+ * A104473 a(n) = binomial(n+2,2)*binomial(n+6,2).
  * @author Sean A. Irvine
  */
 public class A104473 extends LinearRecurrence {

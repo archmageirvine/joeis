@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005040.
+ * A005040 Number of nonequivalent dissections of a polygon into n pentagons by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A005040 implements Sequence {

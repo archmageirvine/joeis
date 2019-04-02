@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264236.
+ * A264236 Number of vertices at level n of the hyperbolic Pascal pyramid.
  * @author Sean A. Irvine
  */
 public class A264236 extends LinearRecurrence {

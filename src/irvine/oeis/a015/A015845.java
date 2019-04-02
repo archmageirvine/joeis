@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015845.
+ * A015845 Numbers n such that phi(n) | sigma(n + 7).
  * @author Sean A. Irvine
  */
 public class A015845 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260585.
+ * A260585 Number of ways to place 2n rooks on an n X n board, with 2 rooks in each row and each column, multiple rooks in a cell allowed, and exactly 2 rooks below the main diagonal.
  * @author Sean A. Irvine
  */
 public class A260585 extends LinearRecurrence {

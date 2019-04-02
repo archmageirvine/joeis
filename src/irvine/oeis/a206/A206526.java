@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206526.
+ * A206526 a(n) = 137*(n-1) - a(n-1) with n&gt;1, a(1)=31.
  * @author Sean A. Irvine
  */
 public class A206526 extends LinearRecurrence {

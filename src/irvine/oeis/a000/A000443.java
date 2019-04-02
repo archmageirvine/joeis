@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A000443.
+ * A000443 Numbers that are the sum of 2 squares in exactly 3 ways.
  * @author Sean A. Irvine
  */
 public class A000443 implements Sequence {

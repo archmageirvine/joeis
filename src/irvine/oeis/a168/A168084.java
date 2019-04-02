@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168084.
+ * A168084 Fibonacci 13-step numbers.
  * @author Sean A. Irvine
  */
 public class A168084 extends LinearRecurrence {

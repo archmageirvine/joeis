@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019507.
+ * A019507 Droll numbers: sum of even prime divisors equals sum of odd prime divisors.
  * @author Sean A. Irvine
  */
 public class A019507 implements Sequence {

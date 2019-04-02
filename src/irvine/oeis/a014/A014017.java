@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014017.
+ * A014017 Inverse of 8th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014017 extends PeriodicSequence {

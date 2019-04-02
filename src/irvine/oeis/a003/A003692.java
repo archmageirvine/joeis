@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003692.
+ * A003692 Number of trees on n labeled vertices with degree at most 3.
  * @author Sean A. Irvine
  */
 public class A003692 implements Sequence {

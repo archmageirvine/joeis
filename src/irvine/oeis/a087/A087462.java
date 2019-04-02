@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087462.
+ * A087462 Generalized mod 3 multiplicative Jacobsthal sequence.
  * @author Sean A. Irvine
  */
 public class A087462 extends LinearRecurrence {

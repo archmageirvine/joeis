@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018154.
+ * A018154 Powers of fifth root of 14 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018154 implements Sequence {

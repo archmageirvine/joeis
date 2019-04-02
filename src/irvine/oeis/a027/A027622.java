@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027622.
+ * A027622 a(n) = n + (n+1)^2 + (n+2)^3 + (n+3)^4 + (n+4)^5.
  * @author Sean A. Irvine
  */
 public class A027622 extends LinearRecurrence {

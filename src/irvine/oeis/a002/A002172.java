@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002172.
+ * A002172 Glaisher's chi numbers chi(p) for p a prime of the form 4m+1.
  * @author Sean A. Irvine
  */
 public class A002172 implements Sequence {

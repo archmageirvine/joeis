@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017672.
+ * A017672 Denominator of sum of -4th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017672 implements Sequence {

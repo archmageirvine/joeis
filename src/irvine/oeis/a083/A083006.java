@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A083006.
+ * A083006 Numbers k such that Sum_{j=0..k-1} Bernoulli(j)*binomial(k,j)^2 is an integer.
  * @author Sean A. Irvine
  */
 public class A083006 implements Sequence {

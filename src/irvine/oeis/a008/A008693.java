@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008693.
+ * A008693 Theta series of Niemeier lattice of type D_8^3.
  * @author Sean A. Irvine
  */
 public class A008693 implements Sequence {

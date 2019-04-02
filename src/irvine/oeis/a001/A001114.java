@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001114.
+ * A001114 Increasing blocks of digits of e.
  * @author Sean A. Irvine
  */
 public class A001114 extends A001113 {

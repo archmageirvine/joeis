@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009609.
+ * A009609 sinh(tan(x)*sin(x))=2/2!*x^2+4/4!*x^4+182/6!*x^6+4744/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A009609 implements Sequence {

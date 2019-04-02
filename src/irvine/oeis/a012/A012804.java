@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012804.
+ * A012804 tan(sec(x)*arctan(x))=x+3/3!*x^3+65/5!*x^5+2051/7!*x^7+154209/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012804 implements Sequence {

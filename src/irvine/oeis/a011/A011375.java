@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006960;
 
 /**
- * A011375.
+ * A011375 Length of n-th term in A006960.
  * @author Sean A. Irvine
  */
 public class A011375 extends A006960 {

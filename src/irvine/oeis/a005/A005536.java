@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005536.
+ * A005536 a(0) = 0, a(2n) = n - a(n) - a(n-1), a(2n+1) = n - 2a(n) + 1.
  * @author Sean A. Irvine
  */
 public class A005536 extends MemorySequence {

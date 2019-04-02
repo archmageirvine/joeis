@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007921.
+ * A007921 Numbers that are not the difference of two primes.
  * @author Sean A. Irvine
  */
 public class A007921 implements Sequence {

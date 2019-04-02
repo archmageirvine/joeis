@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018109.
+ * A018109 Powers of fourth root of 22 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018109 implements Sequence {

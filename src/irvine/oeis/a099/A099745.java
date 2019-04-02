@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099745.
+ * A099745 Number of permutations of [n] with exactly 2 valleys which avoid the permutation 1324.
  * @author Sean A. Irvine
  */
 public class A099745 extends LinearRecurrence {

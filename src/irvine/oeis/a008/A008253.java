@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008253.
+ * A008253 Coordination sequence for diamond.
  * @author Sean A. Irvine
  */
 public class A008253 extends LinearRecurrence {

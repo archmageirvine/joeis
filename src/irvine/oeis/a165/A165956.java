@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A165956.
+ * A165956 a(0) = 1. For n &gt;=1, a(n) = the number of earlier terms that, when written in binary, are substrings in binary n.
  * @author Sean A. Irvine
  */
 public class A165956 implements Sequence {

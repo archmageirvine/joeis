@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000595;
 
 /**
- * A003180.
+ * A003180 Number of equivalence classes of Boolean functions of n variables under action of symmetric group.
  * @author Sean A. Irvine
  */
 public class A003180 extends A000595 {

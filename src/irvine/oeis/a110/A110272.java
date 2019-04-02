@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110272.
+ * A110272 Pell(n)^3.
  * @author Sean A. Irvine
  */
 public class A110272 extends LinearRecurrence {

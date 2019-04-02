@@ -5,7 +5,7 @@ import irvine.oeis.a022.A022843;
 import irvine.oeis.a054.A054385;
 
 /**
- * A014246.
+ * A014246 (n-th term of Beatty sequence for e) - (n-th term of Beatty sequence for e/(e-1)).
  * @author Sean A. Irvine
  */
 public class A014246 extends A022843 {

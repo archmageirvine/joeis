@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.a244.A244160;
 
 /**
- * A014418.
+ * A014418 Representation of n in base of Catalan numbers (a classic greedy version).
  * @author Sean A. Irvine
  */
 public class A014418 extends MemorySequence {

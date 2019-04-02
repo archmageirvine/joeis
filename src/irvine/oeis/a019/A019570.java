@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001057;
 
 /**
- * A019570.
+ * A019570 Zeroth row of infinite Latin square.
  * @author Sean A. Irvine
  */
 public class A019570 implements Sequence {

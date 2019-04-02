@@ -14,7 +14,7 @@ import irvine.oeis.a000.A000521;
 import irvine.oeis.a054.A054891;
 
 /**
- * A013975.
+ * A013975 Modular form of level 4 and weight 1/2.
  * @author Sean A. Irvine
  */
 public class A013975 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000678.
+ * A000678 Number of carbon (rooted) trees with n carbon atoms = unordered 4-tuples of ternary trees.
  * @author Sean A. Irvine
  */
 public class A000678 extends A000598 {

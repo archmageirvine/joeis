@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167808.
+ * A167808 Numerator of x(n) = x(n-1) + x(n-2), x(0)=0, x(1)=1/2.
  * @author Sean A. Irvine
  */
 public class A167808 extends LinearRecurrence {

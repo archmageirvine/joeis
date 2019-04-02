@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006785.
+ * A006785 Number of triangle-free graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A006785 implements Sequence {

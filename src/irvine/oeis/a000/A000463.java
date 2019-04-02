@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000463.
+ * A000463 n followed by n^2.
  * @author Sean A. Irvine
  */
 public class A000463 implements Sequence {

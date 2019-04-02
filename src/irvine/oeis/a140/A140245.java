@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140245.
+ * A140245 Decimal expansion of 180*arccos(-1/4)/Pi.
  * @author Sean A. Irvine
  */
 public class A140245 extends DecimalExpansionSequence {

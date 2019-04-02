@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009947.
+ * A009947 Sequence of nonnegative integers, but insert n/2 after every even number n.
  * @author Sean A. Irvine
  */
 public class A009947 implements Sequence {

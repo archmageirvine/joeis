@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006407.
+ * A006407 Number of unsensed 2-connected planar maps.
  * @author Sean A. Irvine
  */
 public class A006407 extends A006395 {

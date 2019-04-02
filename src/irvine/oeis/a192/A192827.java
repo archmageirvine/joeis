@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192827.
+ * A192827 Molecular topological indices of the gear graphs.
  * @author Sean A. Irvine
  */
 public class A192827 extends LinearRecurrence {

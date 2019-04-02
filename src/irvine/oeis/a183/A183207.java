@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183207.
+ * A183207 Termwise products of the natural numbers and odd integers repeated.
  * @author Sean A. Irvine
  */
 public class A183207 extends LinearRecurrence {

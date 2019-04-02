@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186235.
+ * A186235 Total Wiener index of double-star trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A186235 extends LinearRecurrence {

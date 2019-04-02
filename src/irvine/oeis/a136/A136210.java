@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136210.
+ * A136210 Numerators in continued fraction [0; 1, 3, 1, 3, 1, 3,...].
  * @author Sean A. Irvine
  */
 public class A136210 extends LinearRecurrence {

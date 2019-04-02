@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002950.
+ * A002950 Continued fraction for fifth root of 2.
  * @author Sean A. Irvine
  */
 public class A002950 extends A002945 {

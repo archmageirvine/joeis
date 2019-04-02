@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004233.
+ * A004233 Ceiling(log(n)).
  * @author Sean A. Irvine
  */
 public class A004233 implements Sequence {

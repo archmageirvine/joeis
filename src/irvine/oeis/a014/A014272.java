@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A014272.
+ * A014272 Number of trees on n nodes with forbidden limbs.
  * @author Sean A. Irvine
  */
 public class A014272 extends A014271 {

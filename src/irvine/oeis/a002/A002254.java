@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002254.
+ * A002254 Numbers k such that 5*2^k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002254 implements Sequence {

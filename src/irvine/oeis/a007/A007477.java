@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007477.
+ * A007477 Shifts 2 places left when convolved with itself.
  * @author Sean A. Irvine
  */
 public class A007477 extends MemorySequence {

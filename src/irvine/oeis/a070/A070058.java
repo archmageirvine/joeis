@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A070058.
+ * A070058 Decimal expansion of Newton's gravitational constant in SI units.
  * @author Sean A. Irvine
  */
 public class A070058 extends DoubleDecimalExpansionSequence {

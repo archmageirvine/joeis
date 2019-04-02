@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257826.
+ * A257826 Positive integers whose square is the sum of 88 consecutive squares.
  * @author Sean A. Irvine
  */
 public class A257826 extends LinearRecurrence {

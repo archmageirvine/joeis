@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008264.
+ * A008264 Coordination sequence for tridymite, lonsdaleite, and wurtzite.
  * @author Sean A. Irvine
  */
 public class A008264 extends CoordinationSequence {

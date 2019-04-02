@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177747.
+ * A177747 Convolution of A008805 (triangular numbers repeated) with itself.
  * @author Sean A. Irvine
  */
 public class A177747 extends LinearRecurrence {

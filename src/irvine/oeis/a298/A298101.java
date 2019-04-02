@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298101.
+ * A298101 Expansion of x*(1 + x)/((1 - x)*(1 - 322*x + x^2)).
  * @author Sean A. Irvine
  */
 public class A298101 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005958.
+ * A005958 Number of esters with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A005958 extends A000625 {

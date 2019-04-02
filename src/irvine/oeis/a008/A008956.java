@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008956.
+ * A008956 Triangle of central factorial numbers |4^k t(2n+1,2n+1-2k)| read by rows (n&gt;=0, k=0..n).
  * @author Sean A. Irvine
  */
 public class A008956 extends MemoryFunction2<Integer, Z> implements Sequence {

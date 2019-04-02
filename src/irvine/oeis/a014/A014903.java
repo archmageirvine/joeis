@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014903.
+ * A014903 a(1)=1, a(n) = 19*a(n-1) + n.
  * @author Sean A. Irvine
  */
 public class A014903 implements Sequence {

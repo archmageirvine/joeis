@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056021.
+ * A056021 Numbers k such that k^4 == 1 (mod 5^2).
  * @author Sean A. Irvine
  */
 public class A056021 extends LinearRecurrence {

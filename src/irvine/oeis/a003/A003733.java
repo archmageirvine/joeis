@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003733.
+ * A003733 Number of spanning trees in C_5 X P_n.
  * @author Sean A. Irvine
  */
 public class A003733 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005079.
+ * A005079 Sum of squares of primes = 1 mod 4 dividing n.
  * @author Sean A. Irvine
  */
 public class A005079 implements Sequence {

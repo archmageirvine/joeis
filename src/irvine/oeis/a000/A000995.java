@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000995.
+ * A000995 Shifts left two terms under the binomial transform.
  * @author Sean A. Irvine
  */
 public class A000995 extends MemorySequence {

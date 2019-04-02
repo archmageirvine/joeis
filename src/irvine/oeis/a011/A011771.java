@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011771.
+ * A011771 Days per century for Roman calendar from first century, following Gregorian calendar after A.D. 1582.
  * @author Sean A. Irvine
  */
 public class A011771 implements Sequence {

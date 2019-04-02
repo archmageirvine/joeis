@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002705.
+ * A002705 Sets with a congruence property.
  * @author Sean A. Irvine
  */
 public class A002705 extends A002704 {

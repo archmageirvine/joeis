@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005322.
+ * A005322 Column of Motzkin triangle.
  * @author Sean A. Irvine
  */
 public class A005322 implements Sequence {

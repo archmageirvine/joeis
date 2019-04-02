@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A019270.
+ * A019270 A self-descriptive sequence: positions of vowels in "one, three, seven,...".
  * @author Sean A. Irvine
  */
 public class A019270 implements Sequence {

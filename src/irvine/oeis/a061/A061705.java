@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061705.
+ * A061705 Number of matchings in the wheel graph with n spokes.
  * @author Sean A. Irvine
  */
 public class A061705 extends LinearRecurrence {

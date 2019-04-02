@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A009843.
+ * A009843 E.g.f. x/cos(x) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A009843 extends A000364 {

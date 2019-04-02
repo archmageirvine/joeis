@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129868.
+ * A129868 Binary palindromic numbers with only one 0 bit.
  * @author Sean A. Irvine
  */
 public class A129868 extends LinearRecurrence {

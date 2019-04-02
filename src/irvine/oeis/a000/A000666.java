@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000666.
+ * A000666 Number of symmetric relations on n nodes.
  * @author Sean A. Irvine
  */
 public class A000666 implements Sequence {

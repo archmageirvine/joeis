@@ -3,7 +3,7 @@ package irvine.oeis.a040;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A040977.
+ * A040977 a(n) = binomial(n+5,5)*(n+3)/3.
  * @author Sean A. Irvine
  */
 public class A040977 extends LinearRecurrence {

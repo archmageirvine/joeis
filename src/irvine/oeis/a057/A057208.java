@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.z.Z;
 
 /**
- * A057208.
+ * A057208 Primes of the form 8k+5 generated recursively: a(1)=5, a(n) = least prime p == 5 (mod 8) with p | 4+Q^2, where Q is the product of all previous terms in the sequence.
  * @author Sean A. Irvine
  */
 public class A057208 extends A057205 {

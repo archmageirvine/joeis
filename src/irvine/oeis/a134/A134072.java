@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000204;
 
 /**
- * A134072.
+ * A134072 Concatenation of A000204 Lucas numbers (beginning at 1) in reverse order.
  * @author Sean A. Irvine
  */
 public class A134072 implements Sequence {

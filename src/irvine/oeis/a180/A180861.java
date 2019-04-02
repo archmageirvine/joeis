@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180861.
+ * A180861 Wiener index of the n-pan graph.
  * @author Sean A. Irvine
  */
 public class A180861 extends LinearRecurrence {

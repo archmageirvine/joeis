@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011489.
+ * A011489 Decimal expansion of 70th root of 70.
  * @author Sean A. Irvine
  */
 public class A011489 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193398.
+ * A193398 Hyper-Wiener index of a benzenoid consisting of a double-step spiral chain of n hexagons (n &gt;= 2, s = 21; see the Gutman et al. reference).
  * @author Sean A. Irvine
  */
 public class A193398 extends LinearRecurrence {

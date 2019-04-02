@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010539.
+ * A010539 Decimal expansion of square root of 88.
  * @author Sean A. Irvine
  */
 public class A010539 extends A002193 {

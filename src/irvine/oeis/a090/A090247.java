@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090247.
+ * A090247 a(n) = 26*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 26.
  * @author Sean A. Irvine
  */
 public class A090247 extends LinearRecurrence {

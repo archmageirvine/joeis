@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005740.
+ * A005740 Number of fanout-free Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A005740 extends A005617 {

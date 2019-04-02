@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274603.
+ * A274603 Numbers n such that 2*n+1 and 3*n+1 are both triangular numbers.
  * @author Sean A. Irvine
  */
 public class A274603 extends LinearRecurrence {

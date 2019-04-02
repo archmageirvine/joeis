@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000254;
 import java.util.ArrayList;
 
 /**
- * A001706.
+ * A001706 Generalized Stirling numbers.
  * @author Sean A. Irvine
  */
 public class A001706 extends A000254 {

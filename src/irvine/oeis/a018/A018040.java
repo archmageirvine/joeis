@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018040.
+ * A018040 Powers of cube root of 22 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018040 implements Sequence {

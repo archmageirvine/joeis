@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000178.
+ * A000178 Superfactorials: product of first n factorials.
  * @author Sean A. Irvine
  */
 public class A000178 implements Sequence {

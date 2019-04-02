@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232492.
+ * A232492 Number of symmetry classes of 3-eared triangulations of an n-gon.
  * @author Sean A. Irvine
  */
 public class A232492 extends LinearRecurrence {

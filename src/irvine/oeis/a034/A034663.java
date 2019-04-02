@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034663.
+ * A034663 Sum of n-th powers of divisors of 21.
  * @author Sean A. Irvine
  */
 public class A034663 extends LinearRecurrence {

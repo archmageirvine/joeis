@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A215782.
+ * A215782 Odd tribonacci non-divisors.
  * @author Sean A. Irvine
  */
 public class A215782 implements Sequence {

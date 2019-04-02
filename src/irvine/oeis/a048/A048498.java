@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048498.
+ * A048498 2^(n-1)*(5n-8)+5.
  * @author Sean A. Irvine
  */
 public class A048498 extends LinearRecurrence {

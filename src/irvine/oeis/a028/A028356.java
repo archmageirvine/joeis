@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028356.
+ * A028356 Simple periodic sequence underlying clock sequence A028354.
  * @author Sean A. Irvine
  */
 public class A028356 extends LinearRecurrence {

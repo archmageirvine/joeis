@@ -5,7 +5,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A087989.
+ * A087989 a(n) = M(n!), the value of Mertens's function at the n-th factorial.
  * @author Sean A. Irvine
  */
 public class A087989 implements Sequence {

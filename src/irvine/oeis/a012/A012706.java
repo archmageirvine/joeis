@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012706.
+ * A012706 Expansion of e.g.f.: cosh(arctanh(x)*log(x+1)) = 1+12/4!*x^4-60/5!*x^5+570/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A012706 implements Sequence {

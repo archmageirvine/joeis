@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159626.
+ * A159626 Positive numbers y such that y^2 is of the form x^2+(x+577)^2 with integer x.
  * @author Sean A. Irvine
  */
 public class A159626 extends LinearRecurrence {

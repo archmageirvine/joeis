@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004207.
+ * A004207 a(0) = 1, a(n) = sum of digits of all previous terms.
  * @author Sean A. Irvine
  */
 public class A004207 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129638.
+ * A129638 Number of meaningful differential operations of the k-th order on the space R^11.
  * @author Sean A. Irvine
  */
 public class A129638 extends LinearRecurrence {

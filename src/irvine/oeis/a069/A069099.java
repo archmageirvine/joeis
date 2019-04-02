@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069099.
+ * A069099 Centered heptagonal numbers.
  * @author Sean A. Irvine
  */
 public class A069099 extends LinearRecurrence {

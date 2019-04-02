@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A008912.
+ * A008912 Truncated triangular numbers (of form n*(n-3)/2 - k^2+k*n+1 for 1&lt;=k&lt;n).
  * @author Sean A. Irvine
  */
 public class A008912 extends A008867 {

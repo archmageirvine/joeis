@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002263.
+ * A002263 Numbers n such that 25*4^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002263 implements Sequence {

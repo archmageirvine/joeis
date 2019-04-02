@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A134808.
+ * A134808 Cyclops numbers.
  * @author Sean A. Irvine
  */
 public class A134808 implements Sequence {

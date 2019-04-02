@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075298.
+ * A075298 Inverted (definition in A075193) generalized tribonacci numbers A001644.
  * @author Sean A. Irvine
  */
 public class A075298 extends LinearRecurrence {

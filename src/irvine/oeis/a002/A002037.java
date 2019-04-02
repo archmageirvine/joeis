@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002037.
+ * A002037 Product of all primes up to 3^n.
  * @author Sean A. Irvine
  */
 public class A002037 implements Sequence {

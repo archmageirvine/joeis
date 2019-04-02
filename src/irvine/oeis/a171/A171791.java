@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A171791.
+ * A171791 G.f. A(x) satisfies: [x^n] A(x)^((n+1)^2) = 0 for n&gt;1 with a(0)=a(1)=1.
  * @author Sean A. Irvine
  */
 public class A171791 implements Sequence {

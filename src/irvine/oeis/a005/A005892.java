@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005892.
+ * A005892 Truncated square numbers: 7*n^2 + 4*n + 1.
  * @author Sean A. Irvine
  */
 public class A005892 implements Sequence {

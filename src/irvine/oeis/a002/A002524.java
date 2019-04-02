@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002524.
+ * A002524 Number of permutations of length n within distance 2 of a fixed permutation.
  * @author Sean A. Irvine
  */
 public class A002524 implements Sequence {

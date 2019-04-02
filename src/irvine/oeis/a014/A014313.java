@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014313.
+ * A014313 Numbers with exactly 5 ones in binary expansion.
  * @author Sean A. Irvine
  */
 public class A014313 implements Sequence {

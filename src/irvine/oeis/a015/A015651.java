@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015651.
+ * A015651 Number of ordered 5-tuples of integers from [ 2,n ] with no global factor.
  * @author Sean A. Irvine
  */
 public class A015651 extends A015650 {

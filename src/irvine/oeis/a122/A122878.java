@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122878.
+ * A122878 Periodic sequence of period 21 related to a simple scheduling problem.
  * @author Sean A. Irvine
  */
 public class A122878 extends LinearRecurrence {

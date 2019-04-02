@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192796.
+ * A192796 Molecular topological indices of the crown graphs.
  * @author Sean A. Irvine
  */
 public class A192796 extends LinearRecurrence {

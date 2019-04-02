@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001499.
+ * A001499 Number of n X n matrices with exactly 2 1's in each row and column, other entries 0.
  * @author Sean A. Irvine
  */
 public class A001499 implements Sequence {

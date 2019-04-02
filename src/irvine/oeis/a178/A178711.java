@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178711.
+ * A178711 Partial sums of floor(5^n/7).
  * @author Sean A. Irvine
  */
 public class A178711 extends LinearRecurrence {

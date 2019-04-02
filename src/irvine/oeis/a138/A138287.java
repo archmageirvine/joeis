@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138287.
+ * A138287 Palindromic period 10: repeat 0, 2, 8, 4, 6, 6, 4, 8, 2, 0.
  * @author Sean A. Irvine
  */
 public class A138287 extends LinearRecurrence {

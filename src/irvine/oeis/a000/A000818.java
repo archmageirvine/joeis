@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000818.
+ * A000818 Number of switching networks under action of GL_n(Z_2).
  * @author Sean A. Irvine
  */
 public class A000818 implements Sequence {

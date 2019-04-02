@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182866.
+ * A182866 Number of edges in the n^2 X n^2 Sudoku graph.
  * @author Sean A. Irvine
  */
 public class A182866 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292061.
+ * A292061 a(n) = (n-3)*(n-2)^2*(n-1)^2*n/24.
  * @author Sean A. Irvine
  */
 public class A292061 extends LinearRecurrence {

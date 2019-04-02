@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A016115.
+ * A016115 Number of prime palindromes with n digits.
  * @author Sean A. Irvine
  */
 public class A016115 extends A002385 {

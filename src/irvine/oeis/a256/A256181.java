@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256181.
+ * A256181 The number of permutations of length n sortable by 3 block interchanges.
  * @author Sean A. Irvine
  */
 public class A256181 extends LinearRecurrence {

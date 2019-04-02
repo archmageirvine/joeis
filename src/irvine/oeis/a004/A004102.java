@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a063.A063841;
 
 /**
- * A004102.
+ * A004102 Number of signed graphs with n nodes. Also number of 2-multigraphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A004102 extends A063841 {

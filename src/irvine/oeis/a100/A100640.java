@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A100640.
+ * A100640 Triangle read by rows: numerators of Cotesian numbers C(n,k) (0 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A100640 implements Sequence {

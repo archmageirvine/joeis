@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019810.
+ * A019810 Decimal expansion of sine of 1 degree.
  * @author Sean A. Irvine
  */
 public class A019810 extends DecimalExpansionSequence {

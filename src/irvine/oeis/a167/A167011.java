@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167011.
+ * A167011 Number of Level 1 hexagonal polyominoes with cheesy blocks and n cells.
  * @author Sean A. Irvine
  */
 public class A167011 extends LinearRecurrence {

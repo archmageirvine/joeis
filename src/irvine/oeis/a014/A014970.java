@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014970.
+ * A014970 Expansion of (theta_3 / theta_4)^3.
  * @author Sean A. Irvine
  */
 public class A014970 implements Sequence {

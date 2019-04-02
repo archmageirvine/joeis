@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a006.A006752;
 
 /**
- * A014538.
+ * A014538 Continued fraction for Catalan's constant 1 - 1/9 + 1/25 - 1/49 + 1/81 - ...
  * @author Sean A. Irvine
  */
 public class A014538 extends ContinuedFractionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014279.
+ * A014279 Number of trees on n nodes with forbidden limbs.
  * @author Sean A. Irvine
  */
 public class A014279 extends A014278 {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003456.
+ * A003456 Number of nonequivalent dissections of an n-gon by nonintersecting diagonals rooted at a cell up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A003456 extends A003447 {

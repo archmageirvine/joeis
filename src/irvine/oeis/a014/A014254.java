@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.French;
 
 /**
- * A014254.
+ * A014254 Liponombres: numbers whose French name does not contain the letter "e".
  * @author Sean A. Irvine
  */
 public class A014254 implements Sequence {

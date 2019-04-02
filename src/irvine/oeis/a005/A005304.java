@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005304.
+ * A005304 Representation degeneracies for Ramond strings.
  * @author Sean A. Irvine
  */
 public class A005304 extends A005303 {

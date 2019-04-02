@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000521;
 import java.util.ArrayList;
 
 /**
- * A028520.
+ * A028520 Character of extremal vertex operator algebra of rank 48.
  * @author Sean A. Irvine
  */
 public class A028520 implements Sequence {

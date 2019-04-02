@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002489.
+ * A002489 a(n) = n^(n^2), or (n^n)^n.
  * @author Sean A. Irvine
  */
 public class A002489 implements Sequence {

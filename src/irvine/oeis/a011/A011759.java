@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A011759.
+ * A011759 Barker sequence of length 13.
  * @author Sean A. Irvine
  */
 public class A011759 extends FiniteSequence {

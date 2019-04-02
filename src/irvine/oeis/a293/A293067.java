@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293067.
+ * A293067 Sum of values of vertices of type A at level n of the hyperbolic Pascal pyramid PP_(4,5).
  * @author Sean A. Irvine
  */
 public class A293067 extends LinearRecurrence {

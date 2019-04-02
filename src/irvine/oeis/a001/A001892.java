@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001892.
+ * A001892 Number of permutations of (1,...,n) having n-2 inversions (n&gt;=2).
  * @author Sean A. Irvine
  */
 public class A001892 implements Sequence {

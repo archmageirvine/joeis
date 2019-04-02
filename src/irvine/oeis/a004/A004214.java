@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a000.A000408;
 
 /**
- * A004214.
+ * A004214 Positive numbers that are not the sum of three nonzero squares.
  * @author Sean A. Irvine
  */
 public class A004214 extends ComplementSequence {

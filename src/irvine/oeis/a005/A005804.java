@@ -4,7 +4,7 @@ import irvine.oeis.Stirling2TransformSequence;
 import irvine.oeis.a000.A000311;
 
 /**
- * A005804.
+ * A005804 Number of phylogenetic rooted trees with n labels.
  * @author Sean A. Irvine
  */
 public class A005804 extends Stirling2TransformSequence {

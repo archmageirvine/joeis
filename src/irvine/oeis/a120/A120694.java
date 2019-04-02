@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120694.
+ * A120694 Sequence demonstrating the Pythagorean theorem.
  * @author Sean A. Irvine
  */
 public class A120694 extends LinearRecurrence {

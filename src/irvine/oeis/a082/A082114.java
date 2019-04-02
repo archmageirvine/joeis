@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082114.
+ * A082114 Diagonal sums of number array A082110.
  * @author Sean A. Irvine
  */
 public class A082114 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109243.
+ * A109243 2^(n-1)J(n,1/2) where J(n,x)=n-th Jacobsthal polynomial.
  * @author Sean A. Irvine
  */
 public class A109243 extends LinearRecurrence {

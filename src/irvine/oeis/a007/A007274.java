@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.a001.A001334;
 
 /**
- * A007274.
+ * A007274 Walks on hexagonal lattice using each point at most twice.
  * @author Sean A. Irvine
  */
 public class A007274 extends A001334 {

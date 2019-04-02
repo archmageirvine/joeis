@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002383.
+ * A002383 Primes of form n^2 + n + 1.
  * @author Sean A. Irvine
  */
 public class A002383 implements Sequence {

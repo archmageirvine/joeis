@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133068.
+ * A133068 Number of surjections from an n-element set to an eight-element set.
  * @author Sean A. Irvine
  */
 public class A133068 extends LinearRecurrence {

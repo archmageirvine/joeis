@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257198.
+ * A257198 Number of permutations of length n having exactly one descent such that the first element of the permutation is an odd number.
  * @author Sean A. Irvine
  */
 public class A257198 extends LinearRecurrence {

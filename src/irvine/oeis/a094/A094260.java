@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094260.
+ * A094260 Sum of next n numbers/n if n divides the sum else n times the sum of next n numbers.
  * @author Sean A. Irvine
  */
 public class A094260 extends LinearRecurrence {

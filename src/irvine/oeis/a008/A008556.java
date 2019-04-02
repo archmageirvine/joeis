@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008556.
+ * A008556 Triangle of coefficients of Legendre polynomials 2^n P_n (x).
  * @author Sean A. Irvine
  */
 public class A008556 implements Sequence {

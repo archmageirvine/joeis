@@ -8,7 +8,7 @@ import irvine.util.Point;
 import java.util.HashMap;
 
 /**
- * A162663.
+ * A162663 Table by antidiagonals, T(n,k) is the number of partitions of {1..(nk)} that are invariant under a permutation consisting of n k-cycles.
  * @author Sean A. Irvine
  */
 public class A162663 implements Sequence {

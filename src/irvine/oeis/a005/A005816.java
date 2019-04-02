@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005816.
+ * A005816 Number of 4-valent labeled graphs with n nodes where multiple edges and loops are allowed.
  * @author Sean A. Irvine
  */
 public class A005816 implements Sequence {

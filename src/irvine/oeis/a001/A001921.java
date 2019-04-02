@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001921.
+ * A001921 a(n) = 14*a(n-1) - a(n-2) + 6 for n&gt;1, a(0)=0, a(1)=7.
  * @author Sean A. Irvine
  */
 public class A001921 implements Sequence {

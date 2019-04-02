@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001671.
+ * A001671 Powers of e rounded up.
  * @author Sean A. Irvine
  */
 public class A001671 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135036.
+ * A135036 Sums of the products of n consecutive pairs of numbers.
  * @author Sean A. Irvine
  */
 public class A135036 extends LinearRecurrence {

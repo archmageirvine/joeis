@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274681.
+ * A274681 Numbers k such that 4*k + 1 is a triangular number.
  * @author Sean A. Irvine
  */
 public class A274681 extends LinearRecurrence {

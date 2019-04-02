@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099322.
+ * A099322 An inverse Catalan transform of J(3n)/J(3).
  * @author Sean A. Irvine
  */
 public class A099322 extends LinearRecurrence {

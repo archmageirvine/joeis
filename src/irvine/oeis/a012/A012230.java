@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012230.
+ * A012230 sech(arctan(tanh(x)))=1-1/2!*x^2+21/4!*x^4-1101/6!*x^6+109001/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012230 implements Sequence {

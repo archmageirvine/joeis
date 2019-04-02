@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055277.
+ * A055277 Triangle T(n,k) of number of rooted trees with n nodes and k leaves, 1 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A055277 implements Sequence {

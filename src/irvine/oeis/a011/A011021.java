@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011021.
+ * A011021 Decimal expansion of 4th root of 26.
  * @author Sean A. Irvine
  */
 public class A011021 extends DecimalExpansionSequence {

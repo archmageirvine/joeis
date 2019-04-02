@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008292;
 
 /**
- * A014468.
+ * A014468 Triangular array formed from elements to right of middle of rows of the triangle of Eulerian numbers that are greater than 1.
  * @author Sean A. Irvine
  */
 public class A014468 extends A008292 {

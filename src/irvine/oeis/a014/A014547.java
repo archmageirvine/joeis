@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A014547.
+ * A014547 n-th Euler number A000364(n) is prime.
  * @author Sean A. Irvine
  */
 public class A014547 extends A000364 {

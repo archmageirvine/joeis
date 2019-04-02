@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065262.
+ * A065262 The nonpositive side (-1, -2, -3, ...) of the site swap sequence A065261. The bisection of odd terms of A065261.
  * @author Sean A. Irvine
  */
 public class A065262 extends LinearRecurrence {

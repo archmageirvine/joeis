@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A062546.
+ * A062546 Decimal expansion of the 2nd Du Bois-Reymond constant.
  * @author Sean A. Irvine
  */
 public class A062546 extends DecimalExpansionSequence {

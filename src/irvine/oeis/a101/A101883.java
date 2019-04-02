@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101883.
+ * A101883 Write four numbers, skip one, write four, skip two, write four, skip three... and so on.
  * @author Sean A. Irvine
  */
 public class A101883 extends LinearRecurrence {

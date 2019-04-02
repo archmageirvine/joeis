@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266883.
+ * A266883 Numbers of the form m*(4*m+1)+1, where m = 0,-1,1,-2,2,-3,3,...
  * @author Sean A. Irvine
  */
 public class A266883 extends LinearRecurrence {

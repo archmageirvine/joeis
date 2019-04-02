@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138384.
+ * A138384 Reverse groups of five Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A138384 extends LinearRecurrence {

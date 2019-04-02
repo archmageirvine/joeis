@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102000.
+ * A102000 Sequence generated from a lattice packing matrix.
  * @author Sean A. Irvine
  */
 public class A102000 extends LinearRecurrence {

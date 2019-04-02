@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.ZUtils;
 
 /**
- * A029932.
+ * A029932 Primes with record values of the least positive prime primitive root.
  * @author Sean A. Irvine
  */
 public class A029932 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144928.
+ * A144928 Values of k arising in A144927.
  * @author Sean A. Irvine
  */
 public class A144928 extends LinearRecurrence {

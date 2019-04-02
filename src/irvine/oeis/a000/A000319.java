@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000319.
+ * A000319 a(n) = floor(b(n)), where b(n)=tan(b(n-1)), b(0)=1.
  * @author Sean A. Irvine
  */
 public class A000319 implements Sequence {

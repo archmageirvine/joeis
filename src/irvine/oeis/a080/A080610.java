@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080610.
+ * A080610 Partial sums of Jacobsthal gap sequence.
  * @author Sean A. Irvine
  */
 public class A080610 extends LinearRecurrence {

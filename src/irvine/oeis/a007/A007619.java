@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007619.
+ * A007619 Wilson quotients: ((p-1)! + 1)/p where p is the n-th prime.
  * @author Sean A. Irvine
  */
 public class A007619 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007107.
+ * A007107 Number of labeled 2-regular digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007107 implements Sequence {

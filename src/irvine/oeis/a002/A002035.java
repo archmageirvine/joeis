@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002035.
+ * A002035 Numbers that contain primes to odd powers only.
  * @author Sean A. Irvine
  */
 public class A002035 implements Sequence {

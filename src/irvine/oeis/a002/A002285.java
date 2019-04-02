@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002285.
+ * A002285 Decimal expansion of common logarithm of e.
  * @author Sean A. Irvine
  */
 public class A002285 extends DecimalExpansionSequence {

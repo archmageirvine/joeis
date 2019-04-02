@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057570.
+ * A057570 Numbers of the form n*(7n+-1)/2.
  * @author Sean A. Irvine
  */
 public class A057570 extends LinearRecurrence {

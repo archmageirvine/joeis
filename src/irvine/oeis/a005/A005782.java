@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005782.
+ * A005782 Number of n-gons in cubic curve.
  * @author Sean A. Irvine
  */
 public class A005782 implements Sequence {

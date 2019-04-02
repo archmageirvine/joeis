@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048584.
+ * A048584 Pisot sequence L(5,7).
  * @author Sean A. Irvine
  */
 public class A048584 extends LinearRecurrence {

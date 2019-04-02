@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007971.
+ * A007971 INVERTi transform of central trinomial coefficients (A002426).
  * @author Sean A. Irvine
  */
 public class A007971 implements Sequence {

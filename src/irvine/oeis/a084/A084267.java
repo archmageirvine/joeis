@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084267.
+ * A084267 Partial sums of a binomial quotient.
  * @author Sean A. Irvine
  */
 public class A084267 extends LinearRecurrence {

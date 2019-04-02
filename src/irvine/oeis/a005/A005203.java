@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005203.
+ * A005203 Fibonacci numbers (or rabbit sequence) converted to decimal.
  * @author Sean A. Irvine
  */
 public class A005203 extends A000045 {

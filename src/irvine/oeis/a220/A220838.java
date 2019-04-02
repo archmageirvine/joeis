@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220838.
+ * A220838 Tropical version of Somos-4 sequence A006720.
  * @author Sean A. Irvine
  */
 public class A220838 extends LinearRecurrence {

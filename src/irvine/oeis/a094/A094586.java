@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094586.
+ * A094586 Central numbers of the triangle T of all positive differences of distinct Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A094586 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076295.
+ * A076295 Consider all Pythagorean triples (Y-7,Y,Z); sequence gives Y values.
  * @author Sean A. Irvine
  */
 public class A076295 extends LinearRecurrence {

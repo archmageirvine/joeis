@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005733.
+ * A005733 Least k such that binomial(k,n) has n or more distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A005733 implements Sequence {

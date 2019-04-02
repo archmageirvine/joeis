@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063842.
+ * A063842 Number of colorings of K_4 using at most n colors.
  * @author Sean A. Irvine
  */
 public class A063842 extends LinearRecurrence {

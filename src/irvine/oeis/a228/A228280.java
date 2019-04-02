@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228280.
+ * A228280 Number of nX5 binary arrays with top left value 1 and no two ones adjacent horizontally, vertically or nw-se diagonally.
  * @author Sean A. Irvine
  */
 public class A228280 extends LinearRecurrence {

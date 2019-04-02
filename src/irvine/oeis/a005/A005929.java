@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005929.
+ * A005929 Theta series of hexagonal net with respect to midpoint of edge.
  * @author Sean A. Irvine
  */
 public class A005929 implements Sequence {

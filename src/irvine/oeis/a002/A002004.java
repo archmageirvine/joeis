@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A002004.
+ * A002004 Davenport-Schinzel numbers of degree 4 on n symbols.
  * @author Sean A. Irvine
  */
 public class A002004 implements Sequence {

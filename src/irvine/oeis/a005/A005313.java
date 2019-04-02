@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005313.
+ * A005313 Number of triangular anti-Hadamard matrices of order n.
  * @author Sean A. Irvine
  */
 public class A005313 extends LinearRecurrence {

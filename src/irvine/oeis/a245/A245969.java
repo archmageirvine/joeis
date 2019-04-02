@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245969.
+ * A245969 The average Wiener index of the set of all fibonacenes with n hexagons.
  * @author Sean A. Irvine
  */
 public class A245969 extends LinearRecurrence {

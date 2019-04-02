@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016254.
+ * A016254 Expansion of 1/((1-x)(1-7x)(1-11x)).
  * @author Sean A. Irvine
  */
 public class A016254 implements Sequence {

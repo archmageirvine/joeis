@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013616.
+ * A013616 Triangle of coefficients in expansion of (1+9x)^n.
  * @author Sean A. Irvine
  */
 public class A013616 implements Sequence {

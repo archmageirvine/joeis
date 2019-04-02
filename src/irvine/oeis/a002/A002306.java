@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A002306.
+ * A002306 Numerators of Hurwitz numbers H_n (coefficients in expansion of Weierstrass P-function).
  * @author Sean A. Irvine
  */
 public class A002306 implements Sequence {

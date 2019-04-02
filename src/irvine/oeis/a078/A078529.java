@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078529.
+ * A078529 Exponent sequence for a bilinear recursive sequence.
  * @author Sean A. Irvine
  */
 public class A078529 extends LinearRecurrence {

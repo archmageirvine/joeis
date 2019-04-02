@@ -5,7 +5,7 @@ import java.util.HashSet;
 import irvine.util.Pair;
 
 /**
- * A006395.
+ * A006395 Number of unsensed connected planar maps with n nodes and without loops or parallel edges.
  * @author Sean A. Irvine
  */
 public class A006395 extends A006385 {

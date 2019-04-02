@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013074.
+ * A013074 cos(arcsinh(x)+log(x+1)) = 1-4/2!*x^2+6/3!*x^3+5/4!*x^4-10/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013074 implements Sequence {

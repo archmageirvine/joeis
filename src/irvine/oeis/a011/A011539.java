@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011539.
+ * A011539 "9ish numbers": decimal representation contains at least one nine.
  * @author Sean A. Irvine
  */
 public class A011539 implements Sequence {

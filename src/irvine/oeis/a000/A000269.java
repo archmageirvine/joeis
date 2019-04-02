@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000269.
+ * A000269 Number of trees with n nodes, 3 of which are labeled.
  * @author Sean A. Irvine
  */
 public class A000269 implements Sequence {

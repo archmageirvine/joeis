@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006856.
+ * A006856 Maximal number of edges in n-node graph of girth at least 5.
  * @author Sean A. Irvine
  */
 public class A006856 implements Sequence, GraphProcessor {

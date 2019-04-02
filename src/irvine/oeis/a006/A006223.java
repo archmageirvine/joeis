@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006223.
+ * A006223 Number of binary rooted trees of height n requiring 3 registers.
  * @author Sean A. Irvine
  */
 public class A006223 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002599.
+ * A002599 A generalized partition function.
  * @author Sean A. Irvine
  */
 public class A002599 implements Sequence {

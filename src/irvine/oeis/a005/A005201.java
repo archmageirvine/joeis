@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A005201.
+ * A005201 Total number of fixed points in trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005201 extends A005200 {

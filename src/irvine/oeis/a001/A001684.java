@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001684.
+ * A001684 From a continued fraction.
  * @author Sean A. Irvine
  */
 public class A001684 extends A001685 {

@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202141.
+ * A202141 a(n) = 13*n^2 - 16*n + 5.
  * @author Sean A. Irvine
  */
 public class A202141 extends LinearRecurrence {

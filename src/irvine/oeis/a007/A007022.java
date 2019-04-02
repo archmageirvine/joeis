@@ -6,7 +6,7 @@ import irvine.oeis.ParallelPlantriSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A007022.
+ * A007022 Number of 4-regular polyhedra with n nodes.
  * @author Sean A. Irvine
  */
 public class A007022 extends ParallelPlantriSequence implements Sequence {

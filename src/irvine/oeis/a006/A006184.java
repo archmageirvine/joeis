@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A006184.
+ * A006184 Number of cycles in the complement of a path.
  * @author Sean A. Irvine
  */
 public class A006184 implements Sequence {

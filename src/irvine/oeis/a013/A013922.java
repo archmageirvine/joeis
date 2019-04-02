@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001187;
 
 /**
- * A013922.
+ * A013922 Number of labeled connected graphs with n nodes and 0 cutpoints (blocks or nonseparable graphs).
  * @author Sean A. Irvine
  */
 public class A013922 extends A001187 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a128.A128663;
 
 /**
- * A003295.
+ * A003295 McKay-Thompson series of class 11A for the Monster group with a(0) = -5.
  * @author Sean A. Irvine
  */
 public class A003295 extends A128663 {

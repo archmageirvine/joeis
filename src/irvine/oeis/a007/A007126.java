@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000088;
 import irvine.oeis.a002.A002854;
 
 /**
- * A007126.
+ * A007126 Number of connected rooted strength 1 Eulerian graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007126 extends MemorySequence {

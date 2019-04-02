@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003467.
+ * A003467 Number of minimal covers of an n-set that cover exactly 3 points uniquely.
  * @author Sean A. Irvine
  */
 public class A003467 implements Sequence {

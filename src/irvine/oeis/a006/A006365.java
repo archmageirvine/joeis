@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006365.
+ * A006365 Number of binary tree partitions.
  * @author Sean A. Irvine
  */
 public class A006365 implements Sequence {

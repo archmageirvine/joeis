@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018096.
+ * A018096 Powers of fourth root of 18 rounded down.
  * @author Sean A. Irvine
  */
 public class A018096 implements Sequence {

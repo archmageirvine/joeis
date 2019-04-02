@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259966.
+ * A259966 Total binary weight (cf. A000120) of all A005251(n) binary sequences of length n not containing any isolated 1's.
  * @author Sean A. Irvine
  */
 public class A259966 extends LinearRecurrence {

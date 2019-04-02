@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002252.
+ * A002252 Order of letters on standard U.S. typewriter keyboard.
  * @author Sean A. Irvine
  */
 public class A002252 extends FiniteSequence {

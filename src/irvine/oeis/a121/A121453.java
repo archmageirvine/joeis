@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121453.
+ * A121453 Numbers m such that (m mod k) &gt; (m+2 mod k) with least value of k = 5.
  * @author Sean A. Irvine
  */
 public class A121453 extends LinearRecurrence {

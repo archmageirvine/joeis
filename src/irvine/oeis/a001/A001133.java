@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001133.
+ * A001133 Primes p such that the multiplicative order of 2 modulo p is (p-1)/3.
  * @author Sean A. Irvine
  */
 public class A001133 implements Sequence {

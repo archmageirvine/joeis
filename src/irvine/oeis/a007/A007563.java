@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007563.
+ * A007563 Number of rooted connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
 public class A007563 extends MemorySequence {

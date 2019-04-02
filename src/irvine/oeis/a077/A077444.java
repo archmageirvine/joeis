@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077444.
+ * A077444 Numbers n such that (n^2 + 4)/2 is a square.
  * @author Sean A. Irvine
  */
 public class A077444 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259322.
+ * A259322 Sum of sixth powers of odd numbers.
  * @author Sean A. Irvine
  */
 public class A259322 extends LinearRecurrence {

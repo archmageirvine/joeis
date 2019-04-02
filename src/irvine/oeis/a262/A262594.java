@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262594.
+ * A262594 Expansion of (1-2*x)^2/((1-x)^4*(1-4*x)).
  * @author Sean A. Irvine
  */
 public class A262594 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001624.
+ * A001624 Related to Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001624 extends MemorySequence {

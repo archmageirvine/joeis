@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078617.
+ * A078617 Floor(average of first n squares).
  * @author Sean A. Irvine
  */
 public class A078617 extends LinearRecurrence {

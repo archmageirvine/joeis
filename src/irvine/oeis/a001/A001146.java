@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001146.
+ * A001146 a(n) = 2^(2^n).
  * @author Sean A. Irvine
  */
 public class A001146 implements Sequence {

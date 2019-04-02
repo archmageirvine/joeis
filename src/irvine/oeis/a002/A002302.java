@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002302.
+ * A002302 Generalized tangent numbers.
  * @author Sean A. Irvine
  */
 public class A002302 extends MemoryFunction2<Long, Z> implements Sequence {

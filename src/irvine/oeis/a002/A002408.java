@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 
 
 /**
- * A002408.
+ * A002408 Expansion of 8-dimensional cusp form.
  * @author Sean A. Irvine
  */
 public class A002408 implements Sequence {

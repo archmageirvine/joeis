@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013092.
+ * A013092 sin(arcsinh(x)+tan(x))=2*x-7/3!*x^3+17/5!*x^5-1761/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013092 implements Sequence {

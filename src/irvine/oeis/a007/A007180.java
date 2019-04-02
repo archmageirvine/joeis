@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007180.
+ * A007180 Expansion of critical exponent for walks on tetrahedral lattice.
  * @author Sean A. Irvine
  */
 public class A007180 implements Sequence {

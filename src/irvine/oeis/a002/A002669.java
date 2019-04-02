@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a265.A265607;
 
 /**
- * A002669.
+ * A002669 Numerator of constant term in polynomial arising from numerical integration formula.
  * @author Sean A. Irvine
  */
 public class A002669 extends A265607 {

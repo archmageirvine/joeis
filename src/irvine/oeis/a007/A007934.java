@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.Permutation;
 
 /**
- * A007934.
+ * A007934 Some nontrivial permutation of digits is a prime.
  * @author Sean A. Irvine
  */
 public class A007934 extends A007933 {

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053441.
+ * A053441 Moments of generalized Motzkin paths.
  * @author Sean A. Irvine
  */
 public class A053441 extends LinearRecurrence {

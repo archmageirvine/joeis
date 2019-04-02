@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007970.
+ * A007970 Rhombic numbers.
  * @author Sean A. Irvine
  */
 public class A007970 extends A007968 {

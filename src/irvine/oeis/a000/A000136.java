@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000136.
+ * A000136 Number of ways of folding a strip of n labeled stamps.
  * @author Sean A. Irvine
  */
 public class A000136 implements Sequence {

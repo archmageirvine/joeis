@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005997.
+ * A005997 Number of paraffins.
  * @author Sean A. Irvine
  */
 public class A005997 extends LinearRecurrence {

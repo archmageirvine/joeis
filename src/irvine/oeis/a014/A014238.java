@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014238.
+ * A014238 (n-th number that is 1 or prime) - (n-th composite number).
  * @author Sean A. Irvine
  */
 public class A014238 extends A000040 {

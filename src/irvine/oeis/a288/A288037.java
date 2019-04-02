@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288037.
+ * A288037 Number of (undirected) paths in the n-web graph.
  * @author Sean A. Irvine
  */
 public class A288037 extends LinearRecurrence {

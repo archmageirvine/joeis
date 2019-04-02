@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020725.
+ * A020725 Integers &gt;= 2. a(n) = n+1.
  * @author Sean A. Irvine
  */
 public class A020725 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.util.string.French;
 import irvine.util.string.Roman;
 
 /**
- * A014287.
+ * A014287 Value of the name of n as a Roman number, keeping only relevant letters, zero if none (v=u). French version.
  * @author Sean A. Irvine
  */
 public class A014287 implements Sequence {

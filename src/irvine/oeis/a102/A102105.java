@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102105.
+ * A102105 a(n) = (19*5^n - 16*3^n + 1) / 4.
  * @author Sean A. Irvine
  */
 public class A102105 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005819.
+ * A005819 Number of words of length n in a certain language.
  * @author Sean A. Irvine
  */
 public class A005819 implements Sequence {

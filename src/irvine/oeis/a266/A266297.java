@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266297.
+ * A266297 Numbers whose last digit is a square.
  * @author Sean A. Irvine
  */
 public class A266297 extends LinearRecurrence {

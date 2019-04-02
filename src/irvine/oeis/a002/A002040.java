@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A002040.
+ * A002040 Related to partitions.
  * @author Sean A. Irvine
  */
 public class A002040 implements Sequence {

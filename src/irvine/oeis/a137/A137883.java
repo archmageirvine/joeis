@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137883.
+ * A137883 Number of (directed) Hamiltonian paths in the n-M&#246;bius ladder graph.
  * @author Sean A. Irvine
  */
 public class A137883 extends LinearRecurrence {

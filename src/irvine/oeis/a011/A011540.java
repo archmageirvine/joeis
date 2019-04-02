@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011540.
+ * A011540 Numbers that contain a digit 0.
  * @author Sean A. Irvine
  */
 public class A011540 implements Sequence {

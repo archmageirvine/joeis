@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106257.
+ * A106257 Numbers k such that k^2 = 12*n^2 + 13.
  * @author Sean A. Irvine
  */
 public class A106257 extends LinearRecurrence {

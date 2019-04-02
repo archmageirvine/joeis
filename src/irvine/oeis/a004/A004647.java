@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004647.
+ * A004647 Powers of 2 written in base 8.
  * @author Sean A. Irvine
  */
 public class A004647 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281584.
+ * A281584 Solutions x to the negative Pell equation x^2 - 15*y^2 = -11 with x, y &gt; 0.
  * @author Sean A. Irvine
  */
 public class A281584 extends LinearRecurrence {

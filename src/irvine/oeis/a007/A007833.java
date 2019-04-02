@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007833.
+ * A007833 Number of point-labeled reduced two-graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007833 implements Sequence {

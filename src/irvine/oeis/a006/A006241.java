@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006241.
+ * A006241 Number of minimal plane trees with n terminal nodes.
  * @author Sean A. Irvine
  */
 public class A006241 extends MemorySequence {

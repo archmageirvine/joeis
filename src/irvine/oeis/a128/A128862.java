@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128862.
+ * A128862 Numbers simultaneously triangular and centered triangular.
  * @author Sean A. Irvine
  */
 public class A128862 extends LinearRecurrence {

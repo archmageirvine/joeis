@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003137.
+ * A003137 Write n in base 3 and juxtapose.
  * @author Sean A. Irvine
  */
 public class A003137 implements Sequence {

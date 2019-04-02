@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023549.
+ * A023549 Convolution of natural numbers &gt;= 2 and Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A023549 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165249.
+ * A165249 Those positive integers n where the number of 1's, when n is written in binary, on the left half of the binary representation equals the number of 1's on the right half of the binary representation.
  * @author Sean A. Irvine
  */
 public class A165249 implements Sequence {

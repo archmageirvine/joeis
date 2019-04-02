@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004137.
+ * A004137 Maximal number of edges in a graceful graph on n nodes.
  * @author Sean A. Irvine
  */
 public class A004137 implements Sequence {

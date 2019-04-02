@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014781.
+ * A014781 Seidel's triangle, read by rows.
  * @author Sean A. Irvine
  */
 public class A014781 extends MemoryFunction2<Integer, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167423.
+ * A167423 Hankel transform of a simple Catalan convolution.
  * @author Sean A. Irvine
  */
 public class A167423 extends LinearRecurrence {

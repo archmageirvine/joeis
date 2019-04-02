@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001925.
+ * A001925 From rook polynomials.
  * @author Sean A. Irvine
  */
 public class A001925 implements Sequence {

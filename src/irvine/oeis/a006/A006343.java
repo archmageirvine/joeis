@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006343.
+ * A006343 Arkons: number of elementary maps with n-1 nodes.
  * @author Sean A. Irvine
  */
 public class A006343 implements Sequence {

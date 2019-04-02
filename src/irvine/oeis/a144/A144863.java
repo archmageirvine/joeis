@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144863.
+ * A144863 Start with 1, then at each step prepend 10 and append 01.
  * @author Sean A. Irvine
  */
 public class A144863 extends LinearRecurrence {

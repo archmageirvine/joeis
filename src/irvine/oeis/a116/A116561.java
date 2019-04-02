@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116561.
+ * A116561 Sequentially switched Markov of six determinant one matrices.
  * @author Sean A. Irvine
  */
 public class A116561 extends LinearRecurrence {

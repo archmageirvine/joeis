@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MobiusTransformSequence;
 
 /**
- * A006208.
+ * A006208 Generalized Fibonacci numbers A_{n,3}.
  * @author Sean A. Irvine
  */
 public class A006208 extends MobiusTransformSequence {

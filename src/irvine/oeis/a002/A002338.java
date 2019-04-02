@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002338.
+ * A002338 x such that p = (x^2 + 27*y^2)/4, where p is the n-th prime of the form 3k+1.
  * @author Sean A. Irvine
  */
 public class A002338 implements Sequence {

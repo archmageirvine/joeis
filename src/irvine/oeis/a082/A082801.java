@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082801.
+ * A082801 Smallest multiple of 6 beginning with n.
  * @author Sean A. Irvine
  */
 public class A082801 extends LinearRecurrence {

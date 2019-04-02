@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000311.
+ * A000311 Schroeder's fourth problem; also number of phylogenetic trees with n nodes; also number of total partitions of n.
  * @author Sean A. Irvine
  */
 public class A000311 implements Sequence {

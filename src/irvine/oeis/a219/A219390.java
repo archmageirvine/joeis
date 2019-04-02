@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219390.
+ * A219390 Numbers k such that 14*k+1 is a square.
  * @author Sean A. Irvine
  */
 public class A219390 extends LinearRecurrence {

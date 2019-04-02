@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097472.
+ * A097472 Number of different candle trees having a total of m edges.
  * @author Sean A. Irvine
  */
 public class A097472 extends LinearRecurrence {

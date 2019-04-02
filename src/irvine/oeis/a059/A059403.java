@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059403.
+ * A059403 Quarter-squared applied twice.
  * @author Sean A. Irvine
  */
 public class A059403 extends LinearRecurrence {

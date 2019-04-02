@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004747.
+ * A004747 Triangle read by rows: the Bell transform of the triple factorial numbers A008544 without column 0.
  * @author Sean A. Irvine
  */
 public class A004747 extends MemoryFunction2<Long, Z> implements Sequence {

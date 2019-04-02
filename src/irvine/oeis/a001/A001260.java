@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001260.
+ * A001260 Number of permutations of length n with 4 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
 public class A001260 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A081821.
+ * A081821 Rydberg constant, in inverse meters.
  * @author Sean A. Irvine
  */
 public class A081821 extends DoubleDecimalExpansionSequence {

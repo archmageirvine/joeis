@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003438.
+ * A003438 Number of 5 X 5 matrices with nonnegative integer entries and row and column sums equal to n.
  * @author Sean A. Irvine
  */
 public class A003438 implements Sequence {

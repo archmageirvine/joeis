@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013146.
+ * A013146 sinh(tanh(x)+arctan(x))=2*x+4/3!*x^3-88/5!*x^5+2496/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013146 implements Sequence {

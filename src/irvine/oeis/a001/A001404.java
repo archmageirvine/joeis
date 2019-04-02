@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001404.
+ * A001404 Triangle of values of 2-d recurrence.
  * @author Sean A. Irvine
  */
 public class A001404 extends MemoryFunction2<Long, Z> implements Sequence {

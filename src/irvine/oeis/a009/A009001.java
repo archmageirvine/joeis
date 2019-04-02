@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009001.
+ * A009001 Expansion of e.g.f: (1+x)*cos(x).
  * @author Sean A. Irvine
  */
 public class A009001 implements Sequence {

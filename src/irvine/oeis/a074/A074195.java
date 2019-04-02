@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060681;
 
 /**
- * A074195.
+ * A074195 Sum of the primes from smallest prime factor of n to the largest prime factor of n = largest difference between consecutive divisors of n (ordered by size).
  * @author Sean A. Irvine
  */
 public class A074195 extends A060681 {

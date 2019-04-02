@@ -6,7 +6,7 @@ import irvine.oeis.a047.A047874;
 import java.util.ArrayList;
 
 /**
- * A001455.
+ * A001455 Number of permutations of length n with longest increasing subsequence of length 4.
  * @author Sean A. Irvine
  */
 public class A001455 extends A047874 {

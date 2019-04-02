@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A002635.
+ * A002635 Number of partitions of n into 4 squares.
  * @author Sean A. Irvine
  */
 public class A002635 implements Sequence {

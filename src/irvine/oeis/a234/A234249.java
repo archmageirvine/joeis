@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234249.
+ * A234249 Number of ways to choose 4 points in an n X n X n triangular grid.
  * @author Sean A. Irvine
  */
 public class A234249 extends LinearRecurrence {

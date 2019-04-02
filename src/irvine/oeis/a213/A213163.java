@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213163.
+ * A213163 Sequence of coefficients of x in marked mesh pattern generating function Q_{n,132}^(3,0,-,0)(x).
  * @author Sean A. Irvine
  */
 public class A213163 extends LinearRecurrence {

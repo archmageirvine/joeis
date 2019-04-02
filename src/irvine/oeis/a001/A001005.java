@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001005.
+ * A001005 Number of ways of partitioning n points on a circle into subsets only of sizes 2 and 3.
  * @author Sean A. Irvine
  */
 public class A001005 implements Sequence {

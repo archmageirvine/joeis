@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008451.
+ * A008451 Number of ways of writing n as a sum of 7 squares.
  * @author Sean A. Irvine
  */
 public class A008451 implements Sequence {

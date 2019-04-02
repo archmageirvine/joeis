@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015744.
+ * A015744 Number of partitions of n into distinct parts, none being 2.
  * @author Sean A. Irvine
  */
 public class A015744 implements Sequence {

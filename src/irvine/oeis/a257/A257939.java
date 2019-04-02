@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257939.
+ * A257939 x-values in the solutions to x^2 + x = 5*y^2 + y.
  * @author Sean A. Irvine
  */
 public class A257939 extends LinearRecurrence {

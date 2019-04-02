@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255353.
+ * A255353 Denominators in an expansion of 3 - sqrt(5) as a sum of fractions +-1/d.
  * @author Sean A. Irvine
  */
 public class A255353 extends LinearRecurrence {

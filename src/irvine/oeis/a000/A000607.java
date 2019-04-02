@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000607.
+ * A000607 Number of partitions of n into prime parts.
  * @author Sean A. Irvine
  */
 public class A000607 implements Sequence {

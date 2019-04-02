@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002527.
+ * A002527 Number of permutations p on the set [n] with the properties that abs(p(i)-i) &lt;= 3 for all i and p(1) &lt;= 3.
  * @author Sean A. Irvine
  */
 public class A002527 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290027.
+ * A290027 Number of 4-cycles in the n-halved cube graph.
  * @author Sean A. Irvine
  */
 public class A290027 extends LinearRecurrence {

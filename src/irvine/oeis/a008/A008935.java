@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008935.
+ * A008935 If 2n = Sum 2^e(k) then a(n) = Sum e(k)^2.
  * @author Sean A. Irvine
  */
 public class A008935 implements Sequence {

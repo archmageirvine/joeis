@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081686.
+ * A081686 A sum of decreasing powers.
  * @author Sean A. Irvine
  */
 public class A081686 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010545.
+ * A010545 Decimal expansion of square root of 94.
  * @author Sean A. Irvine
  */
 public class A010545 extends A002193 {

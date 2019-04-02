@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056565.
+ * A056565 Fibonomial coefficients.
  * @author Sean A. Irvine
  */
 public class A056565 extends LinearRecurrence {

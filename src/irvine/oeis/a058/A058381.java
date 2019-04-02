@@ -5,7 +5,7 @@ import irvine.oeis.Stirling1TransformSequence;
 import irvine.oeis.a006.A006351;
 
 /**
- * A058381.
+ * A058381 Number of series-parallel networks with n labeled edges, multiple edges not allowed.
  * @author Sean A. Irvine
  */
 public class A058381 extends Stirling1TransformSequence {

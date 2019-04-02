@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007122;
 
 /**
- * A005219.
+ * A005219 Number of unlabeled identity unit interval graphs.
  * @author Sean A. Irvine
  */
 public class A005219 extends A007122 {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011396.
+ * A011396 Decimal expansion of 7th root of 18.
  * @author Sean A. Irvine
  */
 public class A011396 extends DecimalExpansionSequence {

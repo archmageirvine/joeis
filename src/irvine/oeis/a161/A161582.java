@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161582.
+ * A161582 The list of the k values in the common solutions to the 2 equations 5*k+1=A^2, 9*k+1=B^2.
  * @author Sean A. Irvine
  */
 public class A161582 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001076.
+ * A001076 Denominators of continued fraction convergents to sqrt(5).
  * @author Sean A. Irvine
  */
 public class A001076 implements Sequence {

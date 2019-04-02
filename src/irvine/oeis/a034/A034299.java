@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034299.
+ * A034299 Alternating sum transform (PSumSIGN) of A000975.
  * @author Sean A. Irvine
  */
 public class A034299 extends LinearRecurrence {

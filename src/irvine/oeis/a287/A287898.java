@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287898.
+ * A287898 Number of ways to go up and down n stairs, with fewer than 4 stairs at a time, stepping on each stair at least once.
  * @author Sean A. Irvine
  */
 public class A287898 extends LinearRecurrence {

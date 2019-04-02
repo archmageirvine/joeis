@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000163.
+ * A000163 Series-parallel numbers.
  * @author Sean A. Irvine
  */
 public class A000163 implements Sequence {

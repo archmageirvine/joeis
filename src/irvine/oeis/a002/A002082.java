@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002082.
+ * A002082 2nd differences are periodic.
  * @author Sean A. Irvine
  */
 public class A002082 implements Sequence {

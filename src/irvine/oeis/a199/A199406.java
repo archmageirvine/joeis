@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199406.
+ * A199406 The number of inequivalent ways to color the edges of a cube using at most n colors.
  * @author Sean A. Irvine
  */
 public class A199406 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001350.
+ * A001350 Associated Mersenne numbers.
  * @author Sean A. Irvine
  */
 public class A001350 implements Sequence {

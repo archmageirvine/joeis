@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048904.
+ * A048904 Indices of heptagonal numbers (A000566) which are also octagonal.
  * @author Sean A. Irvine
  */
 public class A048904 extends LinearRecurrence {

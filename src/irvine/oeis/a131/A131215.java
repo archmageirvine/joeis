@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131215.
+ * A131215 Numbers which are both 11-gonal and centered 11-gonal.
  * @author Sean A. Irvine
  */
 public class A131215 extends LinearRecurrence {

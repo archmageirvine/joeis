@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210429.
+ * A210429 Number of semistandard Young tableaux over all partitions of 7 with maximal element &lt;= n.
  * @author Sean A. Irvine
  */
 public class A210429 extends LinearRecurrence {

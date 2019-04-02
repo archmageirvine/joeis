@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012828.
+ * A012828 arcsinh(sec(x)*arcsinh(x))=x+1/3!*x^3+13/5!*x^5-163/7!*x^7+12409/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012828 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254870.
+ * A254870 Seventh partial sums of fourth powers (A000583).
  * @author Sean A. Irvine
  */
 public class A254870 extends LinearRecurrence {

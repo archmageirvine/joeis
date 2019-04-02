@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069907.
+ * A069907 Number of hexagons that can be formed with perimeter n. In other words, partitions of n into six parts such that the sum of any 5 is more than the sixth.
  * @author Sean A. Irvine
  */
 public class A069907 extends LinearRecurrence {

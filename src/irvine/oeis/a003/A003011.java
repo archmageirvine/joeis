@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003011.
+ * A003011 Number of permutations of up to n kinds of objects, where each kind of object can occur at most two times.
  * @author Sean A. Irvine
  */
 public class A003011 implements Sequence {

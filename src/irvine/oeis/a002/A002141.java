@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002141.
+ * A002141 Class numbers of quadratic fields.
  * @author Sean A. Irvine
  */
 public class A002141 implements Sequence {

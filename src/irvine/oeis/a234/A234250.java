@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234250.
+ * A234250 Number of ways to choose 3 points in an n X n X n triangular grid so that they do not form a 2 X 2 X 2 triangle.
  * @author Sean A. Irvine
  */
 public class A234250 extends LinearRecurrence {

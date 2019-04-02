@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004010.
+ * A004010 Theta series of 12-dimensional Coxeter-Todd lattice K_12.
  * @author Sean A. Irvine
  */
 public class A004010 implements Sequence {

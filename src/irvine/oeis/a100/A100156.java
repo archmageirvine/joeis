@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100156.
+ * A100156 Structured truncated tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A100156 extends LinearRecurrence {

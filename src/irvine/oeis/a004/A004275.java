@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004275.
+ * A004275 1 together with nonnegative even numbers.
  * @author Sean A. Irvine
  */
 public class A004275 implements Sequence {

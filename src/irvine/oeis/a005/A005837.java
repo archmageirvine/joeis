@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005837.
+ * A005837 Lexicographically earliest increasing sequence of positive numbers that contains no 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A005837 implements Sequence {

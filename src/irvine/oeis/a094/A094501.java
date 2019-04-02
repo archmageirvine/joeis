@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A094501.
+ * A094501 Smallest number that requires n iterations of the sum of digits of the divisors (A034690) to reach 15.
  * @author Sean A. Irvine
  */
 public class A094501 implements Sequence {

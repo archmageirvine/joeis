@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005283.
+ * A005283 Number of permutations of (1,...,n) having n-5 inversions (n&gt;=5).
  * @author Sean A. Irvine
  */
 public class A005283 implements Sequence {

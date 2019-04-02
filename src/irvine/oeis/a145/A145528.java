@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145528.
+ * A145528 Numbers x such that (x+91)^3 - x^3 is a square.
  * @author Sean A. Irvine
  */
 public class A145528 extends LinearRecurrence {

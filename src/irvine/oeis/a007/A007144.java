@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007144.
+ * A007144 E-trees with exactly 3 colors.
  * @author Sean A. Irvine
  */
 public class A007144 extends A007141 {

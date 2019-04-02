@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060626.
+ * A060626 Number of right triangles of a given area required to form successively larger squares.
  * @author Sean A. Irvine
  */
 public class A060626 extends LinearRecurrence {

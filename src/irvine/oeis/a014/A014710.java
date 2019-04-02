@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014710.
+ * A014710 The regular paper-folding (or dragon curve) sequence.
  * @author Sean A. Irvine
  */
 public class A014710 extends A014577 {

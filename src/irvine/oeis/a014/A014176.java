@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A014176.
+ * A014176 Decimal expansion of the silver mean, 1+sqrt(2).
  * @author Sean A. Irvine
  */
 public class A014176 extends DecimalExpansionSequence {

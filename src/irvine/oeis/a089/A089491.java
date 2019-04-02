@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A089491.
+ * A089491 Decimal expansion of Buffon's constant 3/Pi.
  * @author Sean A. Irvine
  */
 public class A089491 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a213.A213441;
 
 /**
- * A224068.
+ * A224068 Number of labeled graphs on n vertices that can be colored using exactly 4 colors.
  * @author Sean A. Irvine
  */
 public class A224068 extends A213441 {

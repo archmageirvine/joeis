@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007001.
+ * A007001 Trajectory of 1 under the morphism 1 -&gt; 12, 2 -&gt; 123, 3 -&gt; 1234, etc.
  * @author Sean A. Irvine
  */
 public class A007001 implements Sequence {

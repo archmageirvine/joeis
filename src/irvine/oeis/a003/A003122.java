@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003122.
+ * A003122 Number of Hamiltonian rooted triangulations with n internal nodes and 3 external nodes.
  * @author Sean A. Irvine
  */
 public class A003122 extends MemoryFunction2<Integer, Z> implements Sequence {

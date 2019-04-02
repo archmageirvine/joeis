@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007734.
+ * A007734 Period of repeating digits of 1/n in base 3.
  * @author Sean A. Irvine
  */
 public class A007734 implements Sequence {

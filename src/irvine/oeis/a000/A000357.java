@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000357.
+ * A000357 Number of 5-level labeled rooted trees with n leaves.
  * @author Sean A. Irvine
  */
 public class A000357 implements Sequence {

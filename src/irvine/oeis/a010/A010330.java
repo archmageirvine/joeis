@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010330.
+ * A010330 n such C(n,3) = C(x,3) + C(y,3) is solvable.
  * @author Sean A. Irvine
  */
 public class A010330 implements Sequence {

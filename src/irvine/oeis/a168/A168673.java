@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168673.
+ * A168673 Binomial transform of A169609.
  * @author Sean A. Irvine
  */
 public class A168673 extends LinearRecurrence {

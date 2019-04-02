@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000198.
+ * A000198 Largest order of automorphism group of a tournament with n nodes.
  * @author Sean A. Irvine
  */
 public class A000198 extends MemorySequence {

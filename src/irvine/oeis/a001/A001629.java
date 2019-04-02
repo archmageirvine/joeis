@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001629.
+ * A001629 Self-convolution of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A001629 extends A000045 {

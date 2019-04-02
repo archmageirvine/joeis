@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002896.
+ * A002896 Number of 2n-step polygons on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A002896 implements Sequence {

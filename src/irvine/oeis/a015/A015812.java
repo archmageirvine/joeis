@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015812.
+ * A015812 Composite numbers k such that phi(k) + 2 | sigma(k).
  * @author Sean A. Irvine
  */
 public class A015812 implements Sequence {

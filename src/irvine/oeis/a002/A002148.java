@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002148.
+ * A002148 Smallest prime p==3 (mod 8) such that Q(sqrt(-p)) has class number 2n+1.
  * @author Sean A. Irvine
  */
 public class A002148 implements Sequence {

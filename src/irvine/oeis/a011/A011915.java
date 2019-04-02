@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011915.
+ * A011915 a(n) = floor(n(n-1)(n-2)(n-3)/5).
  * @author Sean A. Irvine
  */
 public class A011915 implements Sequence {

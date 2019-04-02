@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124174.
+ * A124174 Sophie Germain triangular numbers tr: 2*tr+1 is also a triangular number.
  * @author Sean A. Irvine
  */
 public class A124174 extends LinearRecurrence {

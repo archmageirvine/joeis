@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019091.
+ * A019091 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite CHI = Chiavennite Ca4Mn4 [ Be8Si20O52(OH)8 ] . 8 H2O.
  * @author Sean A. Irvine
  */
 public class A019091 extends A018940 {

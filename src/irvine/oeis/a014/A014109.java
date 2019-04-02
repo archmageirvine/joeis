@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054639;
 
 /**
- * A014109.
+ * A014109 Number of possible circular rhymes of n strophes.
  * @author Sean A. Irvine
  */
 public class A014109 extends A054639 {

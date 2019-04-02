@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006979.
+ * A006979 a(n) is the number of compositions of n in which the maximum part size is 5.
  * @author Sean A. Irvine
  */
 public class A006979 extends LinearRecurrence {

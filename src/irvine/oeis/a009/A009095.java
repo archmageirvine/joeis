@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009095.
+ * A009095 Expansion of e.g.f. cos(tanh(x)/cos(x)), even powers only.
  * @author Sean A. Irvine
  */
 public class A009095 implements Sequence {

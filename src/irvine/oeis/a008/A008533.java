@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008533.
+ * A008533 Coordination sequence for {A_5}* lattice.
  * @author Sean A. Irvine
  */
 public class A008533 extends CoordinationSequence {

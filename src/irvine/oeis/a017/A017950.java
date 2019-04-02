@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017950.
+ * A017950 Powers of sqrt(15) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017950 implements Sequence {

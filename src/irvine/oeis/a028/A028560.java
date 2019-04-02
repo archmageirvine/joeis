@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028560.
+ * A028560 a(n) = n*(n + 6), also numbers a(n) such that 9*(9 + a(n)) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A028560 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003917.
+ * A003917 Degrees of irreducible representations of Lyons group Ly.
  * @author Sean A. Irvine
  */
 public class A003917 extends FiniteSequence {

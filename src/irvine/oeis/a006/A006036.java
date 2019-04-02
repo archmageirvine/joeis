@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005835;
 
 /**
- * A006036.
+ * A006036 Primitive pseudoperfect numbers.
  * @author Sean A. Irvine
  */
 public class A006036 extends A005835 {

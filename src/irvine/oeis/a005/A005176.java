@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005176.
+ * A005176 Number of regular graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005176 implements Sequence {

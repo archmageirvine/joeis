@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080827.
+ * A080827 Rounded up staircase on natural numbers.
  * @author Sean A. Irvine
  */
 public class A080827 extends LinearRecurrence {

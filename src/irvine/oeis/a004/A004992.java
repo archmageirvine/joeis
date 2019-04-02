@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004992.
+ * A004992 3^n/n!*product[ k=0..n-1 ](3*k + 5).
  * @author Sean A. Irvine
  */
 public class A004992 implements Sequence {

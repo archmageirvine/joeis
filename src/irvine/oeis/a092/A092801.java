@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092801.
+ * A092801 Standard deviation (rounded) of composites below 10^n.
  * @author Sean A. Irvine
  */
 public class A092801 implements Sequence {

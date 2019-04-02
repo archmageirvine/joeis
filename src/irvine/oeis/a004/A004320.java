@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004320.
+ * A004320 a(n) = n*(n+1)*(n+2)^2/6.
  * @author Sean A. Irvine
  */
 public class A004320 implements Sequence {

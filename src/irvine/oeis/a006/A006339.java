@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006339.
+ * A006339 Least hypotenuse of n distinct Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A006339 implements Sequence {

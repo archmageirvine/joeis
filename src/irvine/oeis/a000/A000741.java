@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A000741.
+ * A000741 Number of compositions of n into 3 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A000741 implements Sequence {

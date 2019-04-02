@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022577.
+ * A022577 Expansion of Product_{m&gt;=1} (1+x^m)^12.
  * @author Sean A. Irvine
  */
 public class A022577 implements Sequence {

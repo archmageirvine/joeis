@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054339.
+ * A054339 9-fold convolution of A000302 (powers of 4).
  * @author Sean A. Irvine
  */
 public class A054339 extends LinearRecurrence {

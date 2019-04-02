@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003043.
+ * A003043 Number of Hamiltonian paths (or Gray codes) on n-cube with a marked starting node.
  * @author Sean A. Irvine
  */
 public class A003043 implements Sequence {

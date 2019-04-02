@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134804.
+ * A134804 Remainder of triangular number A000217(n) modulo 9.
  * @author Sean A. Irvine
  */
 public class A134804 extends LinearRecurrence {

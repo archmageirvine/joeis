@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034665.
+ * A034665 Sum of n-th powers of divisors of 32.
  * @author Sean A. Irvine
  */
 public class A034665 extends LinearRecurrence {

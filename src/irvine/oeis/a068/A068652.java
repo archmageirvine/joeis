@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A068652.
+ * A068652 Numbers such that every cyclic permutation is a prime.
  * @author Sean A. Irvine
  */
 public class A068652 implements Sequence {

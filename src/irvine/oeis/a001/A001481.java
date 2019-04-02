@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000404;
 
 /**
- * A001481.
+ * A001481 Numbers that are the sum of 2 squares.
  * @author Sean A. Irvine
  */
 public class A001481 extends UnionSequence {

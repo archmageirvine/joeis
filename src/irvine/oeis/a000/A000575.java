@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000575.
+ * A000575 Tenth column of quintinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A000575 implements Sequence {

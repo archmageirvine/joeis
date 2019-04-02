@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003168;
 
 /**
- * A007169.
+ * A007169 Number of Q-graphs rooted at a polygon.
  * @author Sean A. Irvine
  */
 public class A007169 extends A003168 {

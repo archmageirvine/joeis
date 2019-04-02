@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011237.
+ * A011237 Decimal expansion of 13th root of 7.
  * @author Sean A. Irvine
  */
 public class A011237 extends DecimalExpansionSequence {

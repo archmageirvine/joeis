@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004283.
+ * A004283 Least positive multiple of n written in base 3 using only 0 and 1.
  * @author Sean A. Irvine
  */
 public class A004283 implements Sequence {

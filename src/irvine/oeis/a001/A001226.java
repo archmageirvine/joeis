@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001226.
+ * A001226 Lerch's function q_2(n) = (2^{phi(t)} - 1)/t where t = 2*n - 1.
  * @author Sean A. Irvine
  */
 public class A001226 implements Sequence {

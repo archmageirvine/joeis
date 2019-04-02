@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007727;
 
 /**
- * A022553.
+ * A022553 Number of binary Lyndon words containing n letters of each type; periodic binary sequences of period 2n with n zeros and n ones in each period.
  * @author Sean A. Irvine
  */
 public class A022553 extends A007727 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000965.
+ * A000965 Numerators of expansion of sinh x / sin x.
  * @author Sean A. Irvine
  */
 public class A000965 implements Sequence {

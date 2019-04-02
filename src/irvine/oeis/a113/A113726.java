@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113726.
+ * A113726 A Jacobsthal convolution.
  * @author Sean A. Irvine
  */
 public class A113726 extends LinearRecurrence {

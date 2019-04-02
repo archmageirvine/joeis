@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002529.
+ * A002529 a(n) = A002527(n+1) - A002527(n) - A002526(n).
  * @author Sean A. Irvine
  */
 public class A002529 implements Sequence {

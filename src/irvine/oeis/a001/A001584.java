@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001584.
+ * A001584 A generalized Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A001584 implements Sequence {

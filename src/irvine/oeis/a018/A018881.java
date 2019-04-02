@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018881.
+ * A018881 Smallest tenth power that begins with n.
  * @author Sean A. Irvine
  */
 public class A018881 extends A018871 {

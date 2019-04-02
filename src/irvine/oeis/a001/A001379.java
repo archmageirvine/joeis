@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001379.
+ * A001379 Degrees of irreducible representations of Monster group M.
  * @author Sean A. Irvine
  */
 public class A001379 extends FiniteSequence {

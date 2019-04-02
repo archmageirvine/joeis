@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067534.
+ * A067534 a(n) = 4^n * sum_{i=1,n} i^4/4^i.
  * @author Sean A. Irvine
  */
 public class A067534 extends LinearRecurrence {

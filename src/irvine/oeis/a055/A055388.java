@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055388.
+ * A055388 Number of riffle shuffles of 2n cards required to return the deck to initial state.
  * @author Sean A. Irvine
  */
 public class A055388 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000292;
 import java.util.HashSet;
 
 /**
- * A002311.
+ * A002311 n-th tetrahedral number is the sum of 2 tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A002311 extends A000292 {

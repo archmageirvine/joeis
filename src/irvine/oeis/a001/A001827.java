@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001827.
+ * A001827 Related to partially ordered sets.
  * @author Sean A. Irvine
  */
 public class A001827 implements Sequence {

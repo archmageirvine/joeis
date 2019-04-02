@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144128.
+ * A144128 Chebyshev U(n,x) polynomial evaluated at x=18.
  * @author Sean A. Irvine
  */
 public class A144128 extends LinearRecurrence {

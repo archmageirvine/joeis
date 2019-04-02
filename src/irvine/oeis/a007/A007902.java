@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007902.
+ * A007902 Number of pebbling configurations with n pebbles.
  * @author Sean A. Irvine
  */
 public class A007902 extends MemoryFunction2<Long, Z> implements Sequence {

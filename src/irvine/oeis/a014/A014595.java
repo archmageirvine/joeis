@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014595.
+ * A014595 Conjectured dimensions of spaces of weight systems of chord diagrams.
  * @author Sean A. Irvine
  */
 public class A014595 implements Sequence {

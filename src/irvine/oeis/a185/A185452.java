@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185452.
+ * A185452 Image of n under the map n -&gt; n/2 if n even, (5*n+1)/2 if n odd.
  * @author Sean A. Irvine
  */
 public class A185452 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A006056.
+ * A006056 Number of topologies on n labeled points satisfying the T_4 axiom.
  * @author Sean A. Irvine
  */
 public class A006056 extends A006058 {

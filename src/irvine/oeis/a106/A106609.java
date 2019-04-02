@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106609.
+ * A106609 Numerator of n/(n+8).
  * @author Sean A. Irvine
  */
 public class A106609 extends LinearRecurrence {

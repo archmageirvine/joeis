@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012335.
+ * A012335 tanh(arcsin(x)*sin(x))=2/2!*x^2-200/6!*x^6+1344/8!*x^8+367648/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A012335 implements Sequence {

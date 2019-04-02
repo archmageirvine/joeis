@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012094.
+ * A012094 E.g.f.: tanh(arcsin(arctan(x))), odd powers only.
  * @author Sean A. Irvine
  */
 public class A012094 implements Sequence {

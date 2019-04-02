@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007774.
+ * A007774 Numbers that are divisible by exactly 2 different primes.
  * @author Sean A. Irvine
  */
 public class A007774 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002606.
+ * A002606 Weight distribution of Karlin's [28,14,8] double circulant code.
  * @author Sean A. Irvine
  */
 public class A002606 extends FiniteSequence {

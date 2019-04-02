@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014414.
+ * A014414 Odd elements in Pascal's triangle that are not 1.
  * @author Sean A. Irvine
  */
 public class A014414 implements Sequence {

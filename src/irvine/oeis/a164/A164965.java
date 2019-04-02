@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164965.
+ * A164965 Cumulative sums of A010892.
  * @author Sean A. Irvine
  */
 public class A164965 extends LinearRecurrence {

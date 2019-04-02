@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091962.
+ * A091962 From enumerating paths in the plane.
  * @author Sean A. Irvine
  */
 public class A091962 extends LinearRecurrence {

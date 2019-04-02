@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A055290.
+ * A055290 Triangle of trees with n nodes and k leaves, 2 &lt;= k &lt;= n.
  * @author Sean A. Irvine
  */
 public class A055290 extends A055277 {

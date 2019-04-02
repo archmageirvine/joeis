@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194642.
+ * A194642 Units' digits of the nonzero heptagonal numbers.
  * @author Sean A. Irvine
  */
 public class A194642 extends LinearRecurrence {

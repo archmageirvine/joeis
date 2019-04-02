@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001863.
+ * A001863 Normalized total height of rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A001863 implements Sequence {

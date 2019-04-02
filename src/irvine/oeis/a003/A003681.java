@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003681.
+ * A003681 a(n) = min { p +- q : p +- q &gt; 1 and p*q = Product_{k=1..n-1} a(k) }.
  * @author Sean A. Irvine
  */
 public class A003681 implements Sequence {

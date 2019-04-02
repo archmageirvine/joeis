@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002661.
+ * A002661 Least integer having Radon random number n.
  * @author Sean A. Irvine
  */
 public class A002661 implements Sequence {

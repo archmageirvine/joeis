@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A008272.
+ * A008272 Total length of performances of n fragments in Stockhausen problem.
  * @author Sean A. Irvine
  */
 public class A008272 extends A008271 {

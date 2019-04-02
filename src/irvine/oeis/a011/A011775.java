@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011775.
+ * A011775 Numbers n such that n divides phi(n) * sigma(n).
  * @author Sean A. Irvine
  */
 public class A011775 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018782;
 
 /**
- * A093195.
+ * A093195 Least number which is the sum of two distinct nonzero squares in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A093195 extends A018782 {

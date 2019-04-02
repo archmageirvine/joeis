@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154805.
+ * A154805 Numbers with 4n binary digits where every run length is 4, written in binary.
  * @author Sean A. Irvine
  */
 public class A154805 extends LinearRecurrence {

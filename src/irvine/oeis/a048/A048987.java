@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A048987.
+ * A048987 Number of possible chess games at the end of the n-th ply.
  * @author Sean A. Irvine
  */
 public class A048987 implements Sequence {

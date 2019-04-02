@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004132.
+ * A004132 Modular postage stamp problem.
  * @author Sean A. Irvine
  */
 public class A004132 implements Sequence {

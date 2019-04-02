@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001690.
+ * A001690 Non-Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A001690 extends A000045 {

@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
- * A003786.
+ * A003786 Dates at weekly intervals from Jan 01 of leap year.
  * @author Sean A. Irvine
  */
 public class A003786 implements Sequence {

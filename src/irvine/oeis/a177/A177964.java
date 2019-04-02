@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177964.
+ * A177964 Indices m for which A177961(m) = 4.
  * @author Sean A. Irvine
  */
 public class A177964 extends LinearRecurrence {

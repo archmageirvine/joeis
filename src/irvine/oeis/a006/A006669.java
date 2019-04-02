@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000129;
 
 /**
- * A006669.
+ * A006669 Exponentiation of g.f. for Pell numbers.
  * @author Sean A. Irvine
  */
 public class A006669 extends MemorySequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015973.
+ * A015973 Positive integers n such that n | (3^n + 2).
  * @author Sean A. Irvine
  */
 public class A015973 implements Sequence {

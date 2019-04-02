@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065563.
+ * A065563 Product of three consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A065563 extends LinearRecurrence {

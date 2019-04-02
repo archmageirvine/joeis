@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A006507.
+ * A006507 a(n+1) = a(n) + sum of digits of a(n), with a(1)=7.
  * @author Sean A. Irvine
  */
 public class A006507 implements Sequence {

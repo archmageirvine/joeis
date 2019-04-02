@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005539.
+ * A005539 Numbers k such that 10*3^k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A005539 implements Sequence {

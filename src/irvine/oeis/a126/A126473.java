@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126473.
+ * A126473 Number of strings over a 5 symbol alphabet with adjacent symbols differing by three or less.
  * @author Sean A. Irvine
  */
 public class A126473 extends LinearRecurrence {

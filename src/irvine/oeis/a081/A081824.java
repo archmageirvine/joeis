@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A081824.
+ * A081824 Decimal expansion of conductance quantum in units of S.
  * @author Sean A. Irvine
  */
 public class A081824 extends DoubleDecimalExpansionSequence {

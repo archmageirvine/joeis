@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007840.
+ * A007840 Number of factorizations of permutations of n letters into ordered cycles.
  * @author Sean A. Irvine
  */
 public class A007840 implements Sequence {

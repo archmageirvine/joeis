@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092444.
+ * A092444 a(n+1) = 11*a(n) - a(n-1) - 3, a(0)=a(1)=1.
  * @author Sean A. Irvine
  */
 public class A092444 extends LinearRecurrence {

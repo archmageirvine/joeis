@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a110.A110778;
 
 /**
- * A112534.
+ * A112534 Number of digits in A110778(n).
  * @author Sean A. Irvine
  */
 public class A112534 extends A110778 {

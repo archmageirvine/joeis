@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254896.
+ * A254896 Octagonal numbers (A000567) that are also centered square numbers (A001844).
  * @author Sean A. Irvine
  */
 public class A254896 extends LinearRecurrence {

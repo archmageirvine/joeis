@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137166.
+ * A137166 Sequence equals its 4th differences shifted by one index.
  * @author Sean A. Irvine
  */
 public class A137166 extends LinearRecurrence {

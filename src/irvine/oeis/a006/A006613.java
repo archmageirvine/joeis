@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006613.
+ * A006613 Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
 public class A006613 implements Sequence {

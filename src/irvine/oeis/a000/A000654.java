@@ -4,7 +4,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000654.
+ * A000654 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000654 extends A000721 {

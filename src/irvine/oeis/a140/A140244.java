@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140244.
+ * A140244 Decimal expansion of arccos(-1/4).
  * @author Sean A. Irvine
  */
 public class A140244 extends DecimalExpansionSequence {

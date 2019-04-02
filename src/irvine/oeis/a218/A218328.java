@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218328.
+ * A218328 Odd 9-gonal (nonagonal) pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A218328 extends LinearRecurrence {

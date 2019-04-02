@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071902.
+ * A071902 Sum_{k=0..n^2} (k^2 - n^2)/n.
  * @author Sean A. Irvine
  */
 public class A071902 extends LinearRecurrence {

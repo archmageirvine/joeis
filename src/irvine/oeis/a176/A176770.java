@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.math.z.Z;
 
 /**
- * A176770.
+ * A176770 Smallest power of 11 whose decimal expansion contains n.
  * @author Sean A. Irvine
  */
 public class A176770 extends A176772 {

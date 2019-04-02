@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007860.
+ * A007860 Maximal matchings in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007860 implements Sequence {

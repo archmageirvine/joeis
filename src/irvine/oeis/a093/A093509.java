@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093509.
+ * A093509 Multiples of 5 or 6.
  * @author Sean A. Irvine
  */
 public class A093509 extends LinearRecurrence {

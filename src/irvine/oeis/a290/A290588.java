@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290588.
+ * A290588 Number of irredundant sets in the n-helm graph.
  * @author Sean A. Irvine
  */
 public class A290588 extends LinearRecurrence {

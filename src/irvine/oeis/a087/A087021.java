@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004042;
 
 /**
- * A087021.
+ * A087021 Number of distinct prime factors of n-th cyclic number.
  * @author Sean A. Irvine
  */
 public class A087021 extends A004042 {

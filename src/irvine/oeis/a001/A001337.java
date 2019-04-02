@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001337.
+ * A001337 Number of n-step polygons on f.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A001337 extends A001336 {

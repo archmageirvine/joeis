@@ -4,7 +4,7 @@ import irvine.oeis.a029.A029932;
 import irvine.math.z.Z;
 
 /**
- * A002231.
+ * A002231 Primitive roots that go with the primes in A029932.
  * @author Sean A. Irvine
  */
 public class A002231 extends A029932 {

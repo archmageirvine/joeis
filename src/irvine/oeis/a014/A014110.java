@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014110.
+ * A014110 Number of ordered ways of writing n as a sum of 4 squares of natural numbers.
  * @author Sean A. Irvine
  */
 public class A014110 implements Sequence {

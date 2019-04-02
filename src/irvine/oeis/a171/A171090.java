@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A171090.
+ * A171090 Number of Apollonian packings of n circles that are Eulerian and irreducible.
  * @author Sean A. Irvine
  */
 public class A171090 implements Sequence {

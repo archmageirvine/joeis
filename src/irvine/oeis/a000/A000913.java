@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000913.
+ * A000913 Number of bond-rooted polyenoids with n edges.
  * @author Sean A. Irvine
  */
 public class A000913 implements Sequence {

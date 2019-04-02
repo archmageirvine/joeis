@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214863.
+ * A214863 Numbers n such that n XOR 11 = n - 11.
  * @author Sean A. Irvine
  */
 public class A214863 extends LinearRecurrence {

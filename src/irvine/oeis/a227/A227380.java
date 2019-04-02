@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227380.
+ * A227380 Doubling the first two of every four nonnegative numbers.
  * @author Sean A. Irvine
  */
 public class A227380 extends LinearRecurrence {

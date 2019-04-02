@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257319.
+ * A257319 Numbers n such that the n-th generation of Sawtooth 201 has minimum population in Conway's Game of Life.
  * @author Sean A. Irvine
  */
 public class A257319 extends LinearRecurrence {

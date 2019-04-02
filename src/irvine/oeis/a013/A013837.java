@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013837.
+ * A013837 a(n) = 5^(5*n + 4).
  * @author Sean A. Irvine
  */
 public class A013837 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007931.
+ * A007931 Numbers that contain only 1's and 2's. Nonempty binary strings of length n in lexicographic order.
  * @author Sean A. Irvine
  */
 public class A007931 implements Sequence {

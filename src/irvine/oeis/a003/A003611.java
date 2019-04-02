@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003611.
+ * A003611 Symmetries in planted 3-trees on n+1 vertices.
  * @author Sean A. Irvine
  */
 public class A003611 implements Sequence {

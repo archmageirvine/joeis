@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002502.
+ * A002502 Number of connected relations.
  * @author Sean A. Irvine
  */
 public class A002502 implements Sequence {

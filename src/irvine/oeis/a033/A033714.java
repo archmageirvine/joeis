@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033714.
+ * A033714 Number of zeros in numbers 0 to 999..9 (n digits).
  * @author Sean A. Irvine
  */
 public class A033714 extends LinearRecurrence {

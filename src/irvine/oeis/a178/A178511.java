@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178511.
+ * A178511 a(n) = (1/119)*(100^n -(-19)^n).
  * @author Sean A. Irvine
  */
 public class A178511 extends LinearRecurrence {

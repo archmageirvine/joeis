@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A015989.
+ * A015989 Inverse of 1980th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A015989 extends PeriodicSequence {

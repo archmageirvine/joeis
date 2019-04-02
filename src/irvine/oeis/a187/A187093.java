@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187093.
+ * A187093 a(0)=0, a(1)=a(2)=1; thereafter, a(n+1) = n^2 - a(n-1).
  * @author Sean A. Irvine
  */
 public class A187093 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287811.
+ * A287811 Number of septenary sequences of length n such that no two consecutive terms have distance 5.
  * @author Sean A. Irvine
  */
 public class A287811 extends LinearRecurrence {

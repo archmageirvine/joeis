@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008013.
+ * A008013 Coordination sequence occurring in Zeolite Codes AFG, CAN, LIO, LOS.
  * @author Sean A. Irvine
  */
 public class A008013 extends CoordinationSequence {

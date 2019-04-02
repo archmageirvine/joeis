@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145754.
+ * A145754 a(n) = number of elements of order n in simple group Alt(9) of order 181440.
  * @author Sean A. Irvine
  */
 public class A145754 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000584.
+ * A000584 Fifth powers: a(n) = n^5.
  * @author Sean A. Irvine
  */
 public class A000584 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242602.
+ * A242602 Integers repeated thrice in a canonical order.
  * @author Sean A. Irvine
  */
 public class A242602 extends LinearRecurrence {

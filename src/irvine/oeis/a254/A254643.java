@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254643.
+ * A254643 Third partial sums of ninth powers (A001017).
  * @author Sean A. Irvine
  */
 public class A254643 extends LinearRecurrence {

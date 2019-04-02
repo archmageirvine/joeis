@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A006006.
+ * A006006 Weight distribution of [ 128,29,32 ] 2nd-order Reed-Muller code.
  * @author Sean A. Irvine
  */
 public class A006006 extends FiniteSequence {

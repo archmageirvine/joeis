@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A185193.
+ * A185193 Number of unlabeled digraphs on n vertices such that every vertex has outdegree 3.
  * @author Sean A. Irvine
  */
 public class A185193 implements Sequence, GraphProcessor {

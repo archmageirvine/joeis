@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007542.
+ * A007542 Successive integers produced by Conway's PRIMEGAME.
  * @author Sean A. Irvine
  */
 public class A007542 implements Sequence {

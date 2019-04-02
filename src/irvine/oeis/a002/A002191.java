@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000203;
 import java.util.HashMap;
 
 /**
- * A002191.
+ * A002191 Possible values for sum of divisors of n.
  * @author Sean A. Irvine
  */
 public class A002191 extends A000203 {

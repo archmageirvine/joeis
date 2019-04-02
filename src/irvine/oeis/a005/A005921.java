@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005921.
+ * A005921 From solution to a difference equation.
  * @author Sean A. Irvine
  */
 public class A005921 extends A000045 {

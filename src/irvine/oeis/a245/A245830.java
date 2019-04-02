@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245830.
+ * A245830 The Szeged index of a benzenoid consisting of a linear chain of n hexagons.
  * @author Sean A. Irvine
  */
 public class A245830 extends LinearRecurrence {

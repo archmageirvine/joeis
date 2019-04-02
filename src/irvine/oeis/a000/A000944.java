@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000944.
+ * A000944 Number of polyhedra (or 3-connected simple planar graphs) with n nodes.
  * @author Sean A. Irvine
  */
 public class A000944 implements Sequence {

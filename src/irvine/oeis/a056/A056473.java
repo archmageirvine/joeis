@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056473.
+ * A056473 Number of palindromic structures using exactly four different symbols.
  * @author Sean A. Irvine
  */
 public class A056473 extends LinearRecurrence {

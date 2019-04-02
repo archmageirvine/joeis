@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030539.
+ * A030539 (2^n+1)*(2^n+2)*(2^n+4)*(2^n+6)*(4^n+15*2^n+176)/8!.
  * @author Sean A. Irvine
  */
 public class A030539 extends LinearRecurrence {

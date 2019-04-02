@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A002396.
+ * A002396 Inverse of reduced totient function.
  * @author Sean A. Irvine
  */
 public class A002396 extends A002174 {

@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092806.
+ * A092806 Expansion of (1+8x-9x^2)/(1-3x+3x^2-1001x^3).
  * @author Sean A. Irvine
  */
 public class A092806 extends LinearRecurrence {

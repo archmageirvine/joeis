@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001988.
+ * A001988 Let p be the n-th odd prime. a(n) is the least prime congruent to 7 modulo 8 such that Legendre(-a(n), q) = -Legendre(-1, q) for all odd primes q &lt;= p.
  * @author Sean A. Irvine
  */
 public class A001988 implements Sequence {

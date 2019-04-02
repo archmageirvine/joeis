@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284952.
+ * A284952 Number of elements of order n in the Tits group TF4(2)'.
  * @author Sean A. Irvine
  */
 public class A284952 extends FiniteSequence {

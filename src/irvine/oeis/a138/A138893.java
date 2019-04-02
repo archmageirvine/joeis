@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138893.
+ * A138893 A generalized Chamberland function.
  * @author Sean A. Irvine
  */
 public class A138893 extends LinearRecurrence {

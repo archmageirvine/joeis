@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089314.
+ * A089314 Sum of all digits in all even numbers from 0 to 444...4 (with n 4's).
  * @author Sean A. Irvine
  */
 public class A089314 extends LinearRecurrence {

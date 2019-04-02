@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000058;
 
 /**
- * A006585.
+ * A006585 Egyptian fractions: number of solutions to 1 = 1/x_1 + ... + 1/x_n in positive integers x_1 &lt; ... &lt; x_n.
  * @author Sean A. Irvine
  */
 public class A006585 implements Sequence {

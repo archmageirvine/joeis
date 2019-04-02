@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177090.
+ * A177090 a(n) = a(n-1) + 12*100^(n-1), with a(0)=0.
  * @author Sean A. Irvine
  */
 public class A177090 extends LinearRecurrence {

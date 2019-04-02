@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A031150.
+ * A031150 Appending a digit to n^2 gives another perfect square.
  * @author Sean A. Irvine
  */
 public class A031150 extends LinearRecurrence {

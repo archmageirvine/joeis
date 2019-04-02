@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003620.
+ * A003620 Number of iterations until 3n reaches 153 under x goes to sum of cubes of digits map.
  * @author Sean A. Irvine
  */
 public class A003620 implements Sequence {

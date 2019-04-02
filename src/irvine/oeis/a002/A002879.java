@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002879.
+ * A002879 Number of ways of getting a straight flush, 4 of a kind, full house, flush, straight, 3 of a kind, 2 pair, a pair, nothing in a 7-card poker hand.
  * @author Sean A. Irvine
  */
 public class A002879 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000384.
+ * A000384 Hexagonal numbers: a(n) = n*(2*n-1).
  * @author Sean A. Irvine
  */
 public class A000384 implements Sequence {

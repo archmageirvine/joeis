@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008911.
+ * A008911 a(n) = n^2*(n^2 - 1)/6.
  * @author Sean A. Irvine
  */
 public class A008911 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000711.
+ * A000711 Number of partitions of n, with three kinds of 1,2,3 and 4 and two kinds of 5,6,7,...
  * @author Sean A. Irvine
  */
 public class A000711 implements Sequence {

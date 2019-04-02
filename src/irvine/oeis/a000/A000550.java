@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A000550.
+ * A000550 Number of trees of diameter 7.
  * @author Sean A. Irvine
  */
 public class A000550 extends A000235 {

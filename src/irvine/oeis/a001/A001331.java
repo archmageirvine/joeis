@@ -4,7 +4,7 @@ import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 
 /**
- * A001331.
+ * A001331 Number of n-element algebras with 1 ternary operation.
  * @author Sean A. Irvine
  */
 public class A001331 extends A001329 {

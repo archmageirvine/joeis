@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010731.
+ * A010731 Constant sequence: the all 8's sequence.
  * @author Sean A. Irvine
  */
 public class A010731 implements Sequence {

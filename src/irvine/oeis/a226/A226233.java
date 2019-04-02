@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226233.
+ * A226233 Ten copies of each positive integer.
  * @author Sean A. Irvine
  */
 public class A226233 extends LinearRecurrence {

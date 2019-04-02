@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133146.
+ * A133146 Antidiagonal sums of the triangle A133128.
  * @author Sean A. Irvine
  */
 public class A133146 extends LinearRecurrence {

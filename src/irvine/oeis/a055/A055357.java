@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055357.
+ * A055357 Number of increasing mobiles (circular rooted trees) with n nodes and 3 leaves.
  * @author Sean A. Irvine
  */
 public class A055357 extends LinearRecurrence {

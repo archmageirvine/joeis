@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012229.
+ * A012229 cosh(arctan(tanh(x)))=1+1/2!*x^2-15/4!*x^4+561/6!*x^6-40415/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012229 implements Sequence {

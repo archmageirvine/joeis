@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000321.
+ * A000321 H_n(-1/2), where H_n(x) is Hermite polynomial of degree n.
  * @author Sean A. Irvine
  */
 public class A000321 implements Sequence {

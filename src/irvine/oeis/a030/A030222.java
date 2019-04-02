@@ -8,7 +8,7 @@ import irvine.util.Point;
 import java.util.HashSet;
 
 /**
- * A030222.
+ * A030222 Number of n-polyplets (polyominoes connected at edges or corners); may contain holes.
  * @author Sean A. Irvine
  */
 public class A030222 implements Sequence {

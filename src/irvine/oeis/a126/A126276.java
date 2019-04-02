@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126276.
+ * A126276 Moment of inertia of all magic cubes of order n.
  * @author Sean A. Irvine
  */
 public class A126276 extends LinearRecurrence {

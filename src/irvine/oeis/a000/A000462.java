@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000462.
+ * A000462 Numbers written in base of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A000462 implements Sequence {

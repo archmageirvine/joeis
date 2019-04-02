@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005719.
+ * A005719 Quadrinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A005719 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204769.
+ * A204769 a(n) = 151*(n-1) - a(n-1) with n&gt;1, a(1)=46.
  * @author Sean A. Irvine
  */
 public class A204769 extends LinearRecurrence {

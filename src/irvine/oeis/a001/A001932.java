@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000129;
 
 /**
- * A001932.
+ * A001932 Sum of Fibonacci (A000045) and Pell (A000129) numbers.
  * @author Sean A. Irvine
  */
 public class A001932 extends A000045 {

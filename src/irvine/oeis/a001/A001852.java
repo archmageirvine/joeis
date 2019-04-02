@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034854;
 
 /**
- * A001852.
+ * A001852 Total diameter of labeled trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A001852 extends A034854 {

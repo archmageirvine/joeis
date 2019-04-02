@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A006512.
+ * A006512 Greater of twin primes.
  * @author Sean A. Irvine
  */
 public class A006512 extends A001359 {

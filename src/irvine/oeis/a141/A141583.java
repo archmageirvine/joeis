@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141583.
+ * A141583 Squares of tribonacci numbers A000213.
  * @author Sean A. Irvine
  */
 public class A141583 extends LinearRecurrence {

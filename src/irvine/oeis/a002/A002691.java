@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002691.
+ * A002691 a(n) = (n+2) * (2n+1) * (2n-1)! / (n-1)!.
  * @author Sean A. Irvine
  */
 public class A002691 implements Sequence {

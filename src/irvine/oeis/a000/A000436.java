@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000436.
+ * A000436 Generalized Euler numbers c(3,n).
  * @author Sean A. Irvine
  */
 public class A000436 extends A000233 {

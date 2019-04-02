@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.math.z.Z;
 
 /**
- * A214818.
+ * A214818 Number of genus 3 rooted hypermaps with n darts.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */

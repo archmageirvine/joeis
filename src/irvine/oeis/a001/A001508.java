@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a210.A210252;
 
 /**
- * A001508.
+ * A001508 a(n) is the number of c-nets with n+1 vertices and 2n+2 edges, n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A001508 implements Sequence {

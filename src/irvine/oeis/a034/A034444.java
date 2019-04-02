@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034444.
+ * A034444 a(n) is the number of unitary divisors of n (d such that d divides n, gcd(d, n/d) = 1).
  * @author Sean A. Irvine
  */
 public class A034444 implements Sequence {

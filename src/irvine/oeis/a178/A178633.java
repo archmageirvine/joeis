@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178633.
+ * A178633 a(n) = 54*( (10^n - 1)/9 )^2.
  * @author Sean A. Irvine
  */
 public class A178633 extends LinearRecurrence {

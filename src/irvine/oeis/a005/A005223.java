@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A005223.
+ * A005223 Number of Dyck paths of knight moves.
  * @author Sean A. Irvine
  */
 public class A005223 extends A005222 {

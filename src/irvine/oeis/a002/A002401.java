@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A002401.
+ * A002401 Coefficients for step-by-step integration.
  * @author Sean A. Irvine
  */
 public class A002401 extends A002397 {

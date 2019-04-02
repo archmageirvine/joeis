@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.PopCount;
 
 /**
- * A006615.
+ * A006615 Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
 public class A006615 extends A006614 {

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135992.
+ * A135992 Positive Fibonacci numbers swapped in pairs.
  * @author Sean A. Irvine
  */
 public class A135992 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a090.A090466;
 import java.util.ArrayList;
 
 /**
- * A177202.
+ * A177202 Nontrivially polygonal-free numbers.
  * @author Sean A. Irvine
  */
 public class A177202 extends A090466 {

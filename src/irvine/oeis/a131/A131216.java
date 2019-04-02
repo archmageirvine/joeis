@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131216.
+ * A131216 Numbers X such that 99*X^2-2178 is a square.
  * @author Sean A. Irvine
  */
 public class A131216 extends LinearRecurrence {

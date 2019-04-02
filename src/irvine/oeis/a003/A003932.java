@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A003932.
+ * A003932 Order of universal Chevalley group B_3(q), q = prime power.
  * @author Sean A. Irvine
  */
 public class A003932 extends A000961 {

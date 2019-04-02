@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100147.
+ * A100147 Structured icosidodecahedral numbers.
  * @author Sean A. Irvine
  */
 public class A100147 extends LinearRecurrence {

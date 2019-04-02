@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038138.
+ * A038138 Order of n (mod 7).
  * @author Sean A. Irvine
  */
 public class A038138 extends LinearRecurrence {

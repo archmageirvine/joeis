@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195817.
+ * A195817 Multiples of 10 and odd numbers interleaved.
  * @author Sean A. Irvine
  */
 public class A195817 extends LinearRecurrence {

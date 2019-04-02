@@ -5,7 +5,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.math.cr.ComputableReals;
 
 /**
- * A072364.
+ * A072364 Decimal expansion of (1/e)^(1/e).
  * @author Sean A. Irvine
  */
 public class A072364 extends DecimalExpansionSequence {

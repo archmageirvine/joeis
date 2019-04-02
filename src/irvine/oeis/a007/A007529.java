@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007529.
+ * A007529 Prime triples: n; n+2 or n+4; n+6 all prime.
  * @author Sean A. Irvine
  */
 public class A007529 implements Sequence {

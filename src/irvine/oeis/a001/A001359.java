@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001359.
+ * A001359 Lesser of twin primes.
  * @author Sean A. Irvine
  */
 public class A001359 implements Sequence {

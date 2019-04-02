@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221193.
+ * A221193 Simple continued fraction expansion of an infinite product.
  * @author Sean A. Irvine
  */
 public class A221193 extends LinearRecurrence {

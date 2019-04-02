@@ -5,7 +5,7 @@ import irvine.oeis.LogarithmicTransformSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A007108.
+ * A007108 Number of connected labeled 2-regular digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007108 extends PrependSequence {

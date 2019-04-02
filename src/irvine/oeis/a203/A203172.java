@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203172.
+ * A203172 Alternating sum of the fourth powers of the first n odd-indexed Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A203172 extends LinearRecurrence {

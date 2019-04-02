@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099588.
+ * A099588 Coefficient of x^2 in (1+x)^n mod 1+x^4.
  * @author Sean A. Irvine
  */
 public class A099588 extends LinearRecurrence {

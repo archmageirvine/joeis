@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018803.
+ * A018803 Number of ways to color cells of an n X n square with 2 colors so that no subsquare of side &gt; 1 has all corners same color.
  * @author Sean A. Irvine
  */
 public class A018803 implements Sequence {

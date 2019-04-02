@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A002998.
+ * A002998 Smallest multiple of n whose digits sum to n.
  * @author Sean A. Irvine
  */
 public class A002998 implements Sequence {

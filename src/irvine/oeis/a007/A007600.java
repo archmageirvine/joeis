@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007600.
+ * A007600 Minimal number of subsets in a separating family for a set of n elements.
  * @author Sean A. Irvine
  */
 public class A007600 implements Sequence {

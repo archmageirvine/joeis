@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010048.
+ * A010048 Triangle of Fibonomial coefficients.
  * @author Sean A. Irvine
  */
 public class A010048 extends MemoryFunction2<Integer, Z> implements Sequence {

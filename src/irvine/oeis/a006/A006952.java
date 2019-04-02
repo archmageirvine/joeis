@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006952.
+ * A006952 Number of conjugacy classes in GL(n,3).
  * @author Sean A. Irvine
  */
 public class A006952 implements Sequence {

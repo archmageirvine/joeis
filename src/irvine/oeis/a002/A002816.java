@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002816.
+ * A002816 Number of polygons that can be formed from n points on a circle, no two adjacent.
  * @author Sean A. Irvine
  */
 public class A002816 implements Sequence {

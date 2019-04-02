@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A001598.
+ * A001598 Number of terms in {b(1)..b(n)} relatively prime to b(n), where b(n) = A001597(n).
  * @author Sean A. Irvine
  */
 public class A001598 extends A001597 {

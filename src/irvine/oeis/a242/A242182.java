@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242182.
+ * A242182 Numbers with four C's in Roman numerals.
  * @author Sean A. Irvine
  */
 public class A242182 extends LinearRecurrence {

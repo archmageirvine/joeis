@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151542.
+ * A151542 Generalized pentagonal numbers: a(n) = 12*n + 3*n*(n-1)/2.
  * @author Sean A. Irvine
  */
 public class A151542 extends LinearRecurrence {

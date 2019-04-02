@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003440.
+ * A003440 Number of binary vectors with restricted repetitions.
  * @author Sean A. Irvine
  */
 public class A003440 implements Sequence {

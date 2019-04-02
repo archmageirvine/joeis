@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012665.
+ * A012665 exp(tanh(x)*arcsin(x))=1+2/2!*x^2+8/4!*x^4+110/6!*x^6+4552/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012665 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006251.
+ * A006251 Number of n-element posets which are unions of 2 chains.
  * @author Sean A. Irvine
  */
 public class A006251 implements Sequence {

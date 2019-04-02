@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003628.
+ * A003628 Primes congruent to {5, 7} mod 8.
  * @author Sean A. Irvine
  */
 public class A003628 implements Sequence {

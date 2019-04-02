@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009421.
+ * A009421 Cubes formed by concatenating other cubes, not ending in 0.
  * @author Sean A. Irvine
  */
 public class A009421 implements Sequence {

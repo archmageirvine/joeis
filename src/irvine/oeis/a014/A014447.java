@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014447.
+ * A014447 Odd Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A014447 extends LinearRecurrence {

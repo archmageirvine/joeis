@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014025.
+ * A014025 Expansion of the inverse of the 16th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014025 extends PeriodicSequence {

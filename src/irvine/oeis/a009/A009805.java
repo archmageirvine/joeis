@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009805.
+ * A009805 Expansion of sin(tan(x)*sin(x))/2.
  * @author Sean A. Irvine
  */
 public class A009805 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010843.
+ * A010843 Incomplete Gamma Function at -3.
  * @author Sean A. Irvine
  */
 public class A010843 implements Sequence {

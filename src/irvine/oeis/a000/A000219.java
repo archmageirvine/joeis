@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import java.util.ArrayList;
 
 /**
- * A000219.
+ * A000219 Number of planar partitions (or plane partitions) of n.
  * @author Sean A. Irvine
  */
 public class A000219 extends MemorySequence {

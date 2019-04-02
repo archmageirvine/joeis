@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009050.
+ * A009050 Expansion of e.g.f. cos(x*sin(x)) (even power only).
  * @author Sean A. Irvine
  */
 public class A009050 implements Sequence {

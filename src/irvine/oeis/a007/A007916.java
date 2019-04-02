@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007916.
+ * A007916 Numbers that are not perfect powers.
  * @author Sean A. Irvine
  */
 public class A007916 implements Sequence {

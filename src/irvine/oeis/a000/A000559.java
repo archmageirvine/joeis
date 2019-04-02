@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000559.
+ * A000559 Generalized Stirling numbers of second kind.
  * @author Sean A. Irvine
  */
 public class A000559 implements Sequence {

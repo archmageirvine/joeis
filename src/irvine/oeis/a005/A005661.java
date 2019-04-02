@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005661.
+ * A005661 n in S implies 2n-2, 3n-3 in S.
  * @author Sean A. Irvine
  */
 public class A005661 implements Sequence {

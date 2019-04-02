@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081912.
+ * A081912 a(n) = 6^n*(n^2 - n + 72)/72.
  * @author Sean A. Irvine
  */
 public class A081912 extends LinearRecurrence {

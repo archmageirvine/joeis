@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A003237.
+ * A003237 Number of partially achiral planted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003237 extends A000081 {

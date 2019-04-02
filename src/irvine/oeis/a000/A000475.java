@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A000475.
+ * A000475 Rencontres numbers: number of permutations of [n] with exactly 4 fixed points.
  * @author Sean A. Irvine
  */
 public class A000475 extends A000166 {

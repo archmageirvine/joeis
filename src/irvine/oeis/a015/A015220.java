@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015220.
+ * A015220 Even tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A015220 extends LinearRecurrence {

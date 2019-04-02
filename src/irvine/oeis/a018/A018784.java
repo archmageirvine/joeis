@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018784.
+ * A018784 Numbers n such that sigma(phi(n)) = n.
  * @author Sean A. Irvine
  */
 public class A018784 implements Sequence {

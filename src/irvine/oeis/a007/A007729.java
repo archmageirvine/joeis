@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007729.
+ * A007729 6th binary partition function.
  * @author Sean A. Irvine
  */
 public class A007729 extends MemoryFunction1<Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292018.
+ * A292018 Wiener index for the n-Andrasfai graph.
  * @author Sean A. Irvine
  */
 public class A292018 extends LinearRecurrence {

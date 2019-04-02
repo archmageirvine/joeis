@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001600.
+ * A001600 Harmonic means of divisors of harmonic numbers.
  * @author Sean A. Irvine
  */
 public class A001600 implements Sequence {

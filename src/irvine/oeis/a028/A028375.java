@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028375.
+ * A028375 Squares of (odd numbers not divisible by 5).
  * @author Sean A. Irvine
  */
 public class A028375 extends LinearRecurrence {

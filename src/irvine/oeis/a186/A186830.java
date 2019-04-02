@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186830.
+ * A186830 Keith sequence for the number 197.
  * @author Sean A. Irvine
  */
 public class A186830 extends LinearRecurrence {

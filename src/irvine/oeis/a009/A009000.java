@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009000.
+ * A009000 Ordered hypotenuse numbers (squares are sums of 2 distinct nonzero squares).
  * @author Sean A. Irvine
  */
 public class A009000 implements Sequence {

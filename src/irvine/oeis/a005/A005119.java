@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005119.
+ * A005119 Infinitesimal generator of x*(x + 1).
  * @author Sean A. Irvine
  */
 public class A005119 extends MemorySequence {

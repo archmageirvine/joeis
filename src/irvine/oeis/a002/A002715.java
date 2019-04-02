@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002715.
+ * A002715 An infinite coprime sequence defined by recursion.
  * @author Sean A. Irvine
  */
 public class A002715 implements Sequence {

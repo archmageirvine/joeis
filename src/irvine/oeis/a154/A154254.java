@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154254.
+ * A154254 a(n) = 9n^2 - 8n + 2.
  * @author Sean A. Irvine
  */
 public class A154254 extends LinearRecurrence {

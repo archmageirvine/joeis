@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222410.
+ * A222410 Partial sums of A008534, or crystal ball sequence for {A_6}* lattice.
  * @author Sean A. Irvine
  */
 public class A222410 extends LinearRecurrence {

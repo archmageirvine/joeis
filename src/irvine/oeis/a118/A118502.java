@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A118502.
+ * A118502 Numbers n such that n divides floor((4/3)^n).
  * @author Sean A. Irvine
  */
 public class A118502 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A091724.
+ * A091724 Decimal expansion of e^(2*EulerGamma).
  * @author Sean A. Irvine
  */
 public class A091724 extends DecimalExpansionSequence {

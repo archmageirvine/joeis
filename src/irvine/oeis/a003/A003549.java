@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003549.
+ * A003549 Divisors of 2^44 - 1.
  * @author Sean A. Irvine
  */
 public class A003549 extends FiniteSequence {

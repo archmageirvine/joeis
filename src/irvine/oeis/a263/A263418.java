@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263418.
+ * A263418 a(n) is the total number of pentagrams in a variant of pentagram fractal after n iterations.
  * @author Sean A. Irvine
  */
 public class A263418 extends LinearRecurrence {

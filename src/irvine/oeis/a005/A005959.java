@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005959.
+ * A005959 Number of acyclic ethylene derivatives with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A005959 extends A000625 {

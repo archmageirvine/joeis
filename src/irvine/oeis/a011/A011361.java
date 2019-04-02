@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011361.
+ * A011361 Decimal expansion of 17th root of 15.
  * @author Sean A. Irvine
  */
 public class A011361 extends DecimalExpansionSequence {

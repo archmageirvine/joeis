@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A078792.
+ * A078792 Number of unlabeled 3-trees on n vertices.
  * @author Sean A. Irvine
  */
 public class A078792 implements Sequence {

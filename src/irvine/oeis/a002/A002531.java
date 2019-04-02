@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002531.
+ * A002531 Numerators of continued fraction convergents to sqrt(3).
  * @author Sean A. Irvine
  */
 public class A002531 implements Sequence {

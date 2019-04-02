@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146298.
+ * A146298 Difference between the cubes and 2*tetrahedral numbers; A000578(n) - 2*A000292(n).
  * @author Sean A. Irvine
  */
 public class A146298 extends LinearRecurrence {

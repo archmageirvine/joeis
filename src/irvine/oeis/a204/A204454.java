@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204454.
+ * A204454 Odd numbers not divisible by 11.
  * @author Sean A. Irvine
  */
 public class A204454 extends LinearRecurrence {

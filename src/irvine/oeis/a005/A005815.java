@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005815.
+ * A005815 Number of 4-valent labeled graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005815 implements Sequence {

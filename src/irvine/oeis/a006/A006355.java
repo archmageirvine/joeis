@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006355.
+ * A006355 Number of binary vectors of length n containing no singletons.
  * @author Sean A. Irvine
  */
 public class A006355 extends A000045 {

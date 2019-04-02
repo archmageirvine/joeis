@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A085121.
+ * A085121 Number of ways of writing n as the sum of three odd squares.
  * @author Sean A. Irvine
  */
 public class A085121 implements Sequence {

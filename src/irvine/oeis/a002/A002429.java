@@ -8,7 +8,7 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Binomial;
 
 /**
- * A002429.
+ * A002429 Numerators of double sums of reciprocals.
  * @author Sean A. Irvine
  */
 public class A002429 implements Sequence {

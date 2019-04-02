@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007759.
+ * A007759 Knopfmacher expansion of sqrt(2): a(2n)=2(a(2n-1)+1)^2 - 1, a(2n+1)=2a(2n)^2 - 2.
  * @author Sean A. Irvine
  */
 public class A007759 implements Sequence {

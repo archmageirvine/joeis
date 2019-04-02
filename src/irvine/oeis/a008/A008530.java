@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008530.
+ * A008530 Coordination sequence for 4-dimensional primitive di-isohexagonal orthogonal lattice.
  * @author Sean A. Irvine
  */
 public class A008530 extends CoordinationSequence {

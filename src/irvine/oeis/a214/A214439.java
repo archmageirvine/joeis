@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214439.
+ * A214439 Denominators of correlation kernels arising in adding a list of numbers in base 3 considering the distribution of number of carries.
  * @author Sean A. Irvine
  */
 public class A214439 extends LinearRecurrence {

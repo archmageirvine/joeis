@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012565.
+ * A012565 sech(sinh(x)*arctan(x))=1-12/4!*x^4+120/6!*x^6+1680/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012565 implements Sequence {

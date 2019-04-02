@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004203.
+ * A004203 Numbers n such that 54*10^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A004203 implements Sequence {

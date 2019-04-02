@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226699.
+ * A226699 Solutions x of the Pell equation x^2 - 61*y^2 = +4.
  * @author Sean A. Irvine
  */
 public class A226699 extends LinearRecurrence {

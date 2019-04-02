@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002033.
+ * A002033 Number of perfect partitions of n.
  * @author Sean A. Irvine
  */
 public class A002033 extends MemorySequence {

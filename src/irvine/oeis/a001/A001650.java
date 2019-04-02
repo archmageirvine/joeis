@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001650.
+ * A001650 n appears n times (n odd).
  * @author Sean A. Irvine
  */
 public class A001650 implements Sequence {

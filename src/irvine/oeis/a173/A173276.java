@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173276.
+ * A173276 a(n) = a(n-2) + a(n-3) - floor(a(n-3)/2) - floor(a(n-4)/2).
  * @author Sean A. Irvine
  */
 public class A173276 extends LinearRecurrence {

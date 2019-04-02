@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A000175.
+ * A000175 Related to zeros of Bessel function.
  * @author Sean A. Irvine
  */
 public class A000175 implements Sequence {

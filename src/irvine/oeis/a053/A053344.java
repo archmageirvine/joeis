@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053344.
+ * A053344 Minimal number of coins needed to pay n cents using coins of denominations 1, 5, 10, 25 cents.
  * @author Sean A. Irvine
  */
 public class A053344 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010016.
+ * A010016 a(0) = 1, a(n) = 26*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A010016 implements Sequence {

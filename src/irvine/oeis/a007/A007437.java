@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007437.
+ * A007437 Inverse Moebius transform of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A007437 implements Sequence {

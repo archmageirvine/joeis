@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234617.
+ * A234617 Numbers of undirected cycles in the 2n-crossed prism graph.
  * @author Sean A. Irvine
  */
 public class A234617 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a259.A259095;
 
 /**
- * A005576.
+ * A005576 The limiting sequence [A259095(r(r+1)/2-s,r), s=0,1,2,...,r-1] for very large r.
  * @author Sean A. Irvine
  */
 public class A005576 extends A259095 {

@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000186.
+ * A000186 Number of 3 X n Latin rectangles in which the first row is in order.
  * @author Sean A. Irvine
  */
 public class A000186 implements Sequence, Serializable {

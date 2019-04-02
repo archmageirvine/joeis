@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122658.
+ * A122658 a(n) = if n mod 2 = 1 then n^3*(n-1)^2/2 else n^5/2.
  * @author Sean A. Irvine
  */
 public class A122658 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279245.
+ * A279245 Number of subsets of {1, 2, 3, ..., n} that include no consecutive odd integers.
  * @author Sean A. Irvine
  */
 public class A279245 extends LinearRecurrence {

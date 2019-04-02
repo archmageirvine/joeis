@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014211.
+ * A014211 Next prime after 3^n.
  * @author Sean A. Irvine
  */
 public class A014211 implements Sequence {

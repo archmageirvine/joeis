@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259163.
+ * A259163 Positive heptagonal numbers (A000566) that are triangular numbers (A000217) divided by 2.
  * @author Sean A. Irvine
  */
 public class A259163 extends LinearRecurrence {

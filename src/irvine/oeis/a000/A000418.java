@@ -5,7 +5,7 @@ import irvine.oeis.a034.A034823;
 import irvine.oeis.a034.A034824;
 
 /**
- * A000418.
+ * A000418 Number of n-node rooted trees of height 7.
  * @author Sean A. Irvine
  */
 public class A000418 extends A034824 {

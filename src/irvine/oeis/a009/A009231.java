@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009231.
+ * A009231 Expansion of exp(sinh(x)*log(1+x)).
  * @author Sean A. Irvine
  */
 public class A009231 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080938.
+ * A080938 Number of Catalan paths (nonnegative, starting and ending at 0, step +/-1) of 2*n steps with all values less than or equal to 7.
  * @author Sean A. Irvine
  */
 public class A080938 extends LinearRecurrence {

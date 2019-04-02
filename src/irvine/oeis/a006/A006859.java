@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006859.
+ * A006859 From paths in the plane.
  * @author Sean A. Irvine
  */
 public class A006859 implements Sequence {

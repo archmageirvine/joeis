@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130875.
+ * A130875 Absolute difference of final digits of two consecutive cubes.
  * @author Sean A. Irvine
  */
 public class A130875 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007318;
 
 /**
- * A014421.
+ * A014421 Odd elements in Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A014421 extends A007318 {

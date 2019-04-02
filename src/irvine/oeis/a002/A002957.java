@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002957.
+ * A002957 Numbers n such that 2*10^n - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002957 implements Sequence {

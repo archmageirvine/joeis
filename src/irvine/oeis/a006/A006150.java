@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006150.
+ * A006150 Number of Dyck paths.
  * @author Sean A. Irvine
  */
 public class A006150 implements Sequence {

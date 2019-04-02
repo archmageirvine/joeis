@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000999.
+ * A000999 5^a(n) divides C(2n,n).
  * @author Sean A. Irvine
  */
 public class A000999 implements Sequence {

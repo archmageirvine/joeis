@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281859.
+ * A281859 Curious identities based on the Armstrong number 407 = A005188(13).
  * @author Sean A. Irvine
  */
 public class A281859 extends LinearRecurrence {

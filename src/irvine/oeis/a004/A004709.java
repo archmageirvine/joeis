@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004709.
+ * A004709 Cubefree numbers: numbers that are not divisible by any cube &gt; 1.
  * @author Sean A. Irvine
  */
 public class A004709 implements Sequence {

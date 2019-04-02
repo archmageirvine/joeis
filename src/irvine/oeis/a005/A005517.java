@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005517.
+ * A005517 Smallest label f(T) given to a rooted tree T with n nodes in Matula-Goebel labeling.
  * @author Sean A. Irvine
  */
 public class A005517 extends LinearRecurrence {

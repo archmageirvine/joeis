@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062717.
+ * A062717 Numbers m such that 6*m+1 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A062717 extends LinearRecurrence {

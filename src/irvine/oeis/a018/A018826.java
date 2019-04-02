@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018826.
+ * A018826 Numbers n such that n is a substring of its square when both are written in base 2.
  * @author Sean A. Irvine
  */
 public class A018826 implements Sequence {

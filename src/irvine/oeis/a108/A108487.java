@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108487.
+ * A108487 Sum binomial(2n-2k,2k)10^(n-k), k=0..floor(n/2).
  * @author Sean A. Irvine
  */
 public class A108487 extends LinearRecurrence {

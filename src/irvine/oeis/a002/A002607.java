@@ -6,7 +6,7 @@ import irvine.math.group.GaussianIntegers;
 import irvine.util.Pair;
 
 /**
- * A002607.
+ * A002607 Glaisher's chi_8(n).
  * @author Sean A. Irvine
  */
 public class A002607 implements Sequence {

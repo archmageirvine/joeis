@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002822.
+ * A002822 Numbers n such that 6n-1, 6n+1 are twin primes.
  * @author Sean A. Irvine
  */
 public class A002822 implements Sequence {

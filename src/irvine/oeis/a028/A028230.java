@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028230.
+ * A028230 Bisection of A001353. Indices of square numbers which are also octagonal.
  * @author Sean A. Irvine
  */
 public class A028230 extends LinearRecurrence {

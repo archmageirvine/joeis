@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005475.
+ * A005475 a(n) = n*(5*n+1)/2.
  * @author Sean A. Irvine
  */
 public class A005475 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014501.
+ * A014501 Number of graphs with loops, having unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
 public class A014501 implements Sequence {

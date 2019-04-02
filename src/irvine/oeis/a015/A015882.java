@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015882.
+ * A015882 Numbers n such that sigma(n) = sigma(n + 12).
  * @author Sean A. Irvine
  */
 public class A015882 implements Sequence {

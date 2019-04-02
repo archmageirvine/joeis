@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000030.
+ * A000030 Initial digit of n.
  * @author Sean A. Irvine
  */
 public class A000030 implements Sequence {

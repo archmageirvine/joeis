@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113727.
+ * A113727 A Pell convolution.
  * @author Sean A. Irvine
  */
 public class A113727 extends LinearRecurrence {

@@ -11,7 +11,7 @@ import irvine.util.Point;
 import java.util.HashSet;
 
 /**
- * A002132.
+ * A002132 Generalized sum of divisors function.
  * @author Sean A. Irvine
  */
 public class A002132 implements Sequence {

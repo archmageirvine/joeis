@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003918.
+ * A003918 Degrees of irreducible representations of Rudvalis group Ru.
  * @author Sean A. Irvine
  */
 public class A003918 extends FiniteSequence {

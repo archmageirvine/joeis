@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194599.
+ * A194599 Units' digits of the nonzero hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A194599 extends LinearRecurrence {

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002908.
+ * A002908 High temperature expansion of -u/J in odd powers of v = tanh(J/kT), where u is energy per site of the spin-1/2 Ising model on square lattice with nearest-neighbor interaction J at temperature T.
  * @author Sean A. Irvine
  */
 public class A002908 implements Sequence {

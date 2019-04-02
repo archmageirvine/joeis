@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A001606.
+ * A001606 Indices of prime Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A001606 implements Sequence {

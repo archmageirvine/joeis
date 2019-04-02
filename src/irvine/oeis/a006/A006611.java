@@ -6,7 +6,7 @@ import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 
 /**
- * A006611.
+ * A006611 Number of n-node forests not determined by their spectra.
  * @author Sean A. Irvine
  */
 public class A006611 extends A006608 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.InverseEulerTransformSequence;
 
 /**
- * A004108.
+ * A004108 Number of n-node unlabeled connected graphs without endpoints.
  * @author Sean A. Irvine
  */
 public class A004108 extends InverseEulerTransformSequence {

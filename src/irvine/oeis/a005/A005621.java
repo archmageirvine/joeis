@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 import irvine.util.Pair;
 
 /**
- * A005621.
+ * A005621 Spiral sieve using Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A005621 extends A000045 {

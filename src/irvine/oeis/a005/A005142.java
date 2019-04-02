@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005142.
+ * A005142 Number of connected bipartite graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005142 implements Sequence {

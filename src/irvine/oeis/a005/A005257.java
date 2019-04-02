@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005257.
+ * A005257 Number of weighted voting procedures.
  * @author Sean A. Irvine
  */
 public class A005257 extends MemorySequence {

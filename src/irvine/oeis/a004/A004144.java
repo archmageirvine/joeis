@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004144.
+ * A004144 Nonhypotenuse numbers (squares that are not the sums of 2 distinct nonzero squares).
  * @author Sean A. Irvine
  */
 public class A004144 implements Sequence {

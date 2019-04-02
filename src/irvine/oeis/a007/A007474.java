@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007474.
+ * A007474 Number of circular chord diagrams with n chords, up to rotational symmetry.
  * @author Sean A. Irvine
  */
 public class A007474 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A002772.
+ * A002772 Number of terms in a bordered skew determinant.
  * @author Sean A. Irvine
  */
 public class A002772 extends A002771 {

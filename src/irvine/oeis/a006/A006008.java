@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006008.
+ * A006008 Number of inequivalent ways to color vertices of a tetrahedron using &lt;= n colors.
  * @author Sean A. Irvine
  */
 public class A006008 implements Sequence {

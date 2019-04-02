@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a161.A161018;
 
 /**
- * A019432.
+ * A019432 Continued fraction for tan(1/9).
  * @author Sean A. Irvine
  */
 public class A019432 extends ContinuedFractionSequence {

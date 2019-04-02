@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007983.
+ * A007983 Number of non-Abelian metacyclic groups of order p^n (p odd).
  * @author Sean A. Irvine
  */
 public class A007983 extends LinearRecurrence {

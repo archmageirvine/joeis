@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002714.
+ * A002714 Number of different keys with n cuts, depths between 1 and 7 and depth difference at most 1 between adjacent cut depths.
  * @author Sean A. Irvine
  */
 public class A002714 implements Sequence {

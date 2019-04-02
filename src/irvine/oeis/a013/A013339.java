@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013339.
+ * A013339 sech(exp(x)-sec(x))=1-1/2!*x^2+1/4!*x^4+20/5!*x^5+23/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013339 implements Sequence {

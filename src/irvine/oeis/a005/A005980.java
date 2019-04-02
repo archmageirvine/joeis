@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.a002.A002836;
 
 /**
- * A005980.
+ * A005980 Let F(x) = 1 + x + 4x^2 + 9x^3 + ... = g.f. for A002835 (solid partitions restricted to two planes) and expand (1-x)(1-x^2)(1-x^3)...*F(x) in powers of x.
  * @author Sean A. Irvine
  */
 public class A005980 extends A002836 {

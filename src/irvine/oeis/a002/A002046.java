@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002046.
+ * A002046 Larger of amicable pair.
  * @author Sean A. Irvine
  */
 public class A002046 implements Sequence {

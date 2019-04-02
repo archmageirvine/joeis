@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A005145.
+ * A005145 n copies of n-th prime.
  * @author Sean A. Irvine
  */
 public class A005145 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014550.
+ * A014550 Binary reflected Gray code.
  * @author Sean A. Irvine
  */
 public class A014550 implements Sequence {

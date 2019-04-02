@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019012.
+ * A019012 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite EDI = Edingtonite Ba2 [ Al4Si6O20 ] . 8 H2O.
  * @author Sean A. Irvine
  */
 public class A019012 extends A018940 {

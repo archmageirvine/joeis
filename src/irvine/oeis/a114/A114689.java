@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114689.
+ * A114689 Expansion of (-1-4*x+x^2)/((1-x)*(x+1)*(x^2+2*x-1)); a Pellian-related sequence.
  * @author Sean A. Irvine
  */
 public class A114689 extends LinearRecurrence {

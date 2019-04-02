@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074378.
+ * A074378 Even triangular numbers halved.
  * @author Sean A. Irvine
  */
 public class A074378 extends LinearRecurrence {

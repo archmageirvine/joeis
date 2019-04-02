@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132354.
+ * A132354 Integers m such that 7*m + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A132354 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105844.
+ * A105844 Numbers n such that 37*n^2 + 37*n + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A105844 extends LinearRecurrence {

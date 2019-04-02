@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008658.
+ * A008658 Theta series of direct sum of 2 copies of D_4 lattice in powers of q^2.
  * @author Sean A. Irvine
  */
 public class A008658 implements Sequence {

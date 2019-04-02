@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A034854.
+ * A034854 Triangle giving number of rooted labeled trees with n &gt;= 3 nodes and diameter d&gt;=2.
  * @author Sean A. Irvine
  */
 public class A034854 extends A034855 {

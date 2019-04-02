@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005360.
+ * A005360 Flimsy numbers.
  * @author Sean A. Irvine
  */
 public class A005360 implements Sequence {

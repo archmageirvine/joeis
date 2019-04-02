@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A006773.
+ * A006773 Sum of squared spans of 2n-step polygons on square lattice.
  * @author Sean A. Irvine
  */
 public class A006773 extends A002931 {

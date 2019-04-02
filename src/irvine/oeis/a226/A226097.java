@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226097.
+ * A226097 a(n) = ((-1)^n + 2*n - 38)*(2*n - 38) + 41.
  * @author Sean A. Irvine
  */
 public class A226097 extends LinearRecurrence {

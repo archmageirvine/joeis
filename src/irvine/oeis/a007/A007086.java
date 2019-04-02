@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007086.
+ * A007086 Next term is uniquely the sum of 3 earlier terms.
  * @author Sean A. Irvine
  */
 public class A007086 implements Sequence {

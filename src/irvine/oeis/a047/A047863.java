@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047863.
+ * A047863 Number of labeled graphs with 2-colored nodes where black nodes are only connected to white nodes and vice versa.
  * @author Sean A. Irvine
  */
 public class A047863 implements Sequence {

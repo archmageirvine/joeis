@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a000.A000096;
 
 /**
- * A007401.
+ * A007401 Add n-1 to n-th term of 'n appears n times' sequence (A002024).
  * @author Sean A. Irvine
  */
 public class A007401 extends ComplementSequence {

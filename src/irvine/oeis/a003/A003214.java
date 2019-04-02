@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001190;
 
 /**
- * A003214.
+ * A003214 Number of binary forests with n nodes.
  * @author Sean A. Irvine
  */
 public class A003214 extends EulerTransformSequence {

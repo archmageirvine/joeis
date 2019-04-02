@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001919.
+ * A001919 Eighth column of quadrinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A001919 implements Sequence {

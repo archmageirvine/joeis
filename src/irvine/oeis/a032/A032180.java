@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032180.
+ * A032180 Number of ways to partition n labeled elements into 6 pie slices.
  * @author Sean A. Irvine
  */
 public class A032180 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028390.
+ * A028390 Nearest integer to 3n/4 unless that is an integer, when 3n/2.
  * @author Sean A. Irvine
  */
 public class A028390 extends LinearRecurrence {

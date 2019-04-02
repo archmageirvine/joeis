@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * A002048.
+ * A002048 Segmented numbers, or prime numbers of measurement.
  * @author Sean A. Irvine
  */
 public class A002048 implements Sequence {

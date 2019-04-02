@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105837.
+ * A105837 Numbers n such that n^2 = 11*m^2 + 11*m + 1.
  * @author Sean A. Irvine
  */
 public class A105837 extends LinearRecurrence {

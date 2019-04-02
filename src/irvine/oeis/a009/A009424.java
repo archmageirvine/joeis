@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009424.
+ * A009424 Expansion of log(1+x)/cos(log(1+x)).
  * @author Sean A. Irvine
  */
 public class A009424 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012854.
+ * A012854 Numerators of coefficients in Taylor series expansion of log(cosec(x)*log(x+1)).
  * @author Sean A. Irvine
  */
 public class A012854 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005085.
+ * A005085 Sum of 4th powers of primes = 3 mod 4 dividing n.
  * @author Sean A. Irvine
  */
 public class A005085 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005091.
+ * A005091 Number of distinct primes = 3 mod 4 dividing n.
  * @author Sean A. Irvine
  */
 public class A005091 implements Sequence {

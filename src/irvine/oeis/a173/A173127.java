@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173127.
+ * A173127 a(n) = sinh((2n-1)*arcsinh(3)).
  * @author Sean A. Irvine
  */
 public class A173127 extends LinearRecurrence {

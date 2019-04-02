@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002782.
+ * A002782 Concatenate the natural numbers, then partition into minimal strings so that each term divides the next.
  * @author Sean A. Irvine
  */
 public class A002782 implements Sequence {

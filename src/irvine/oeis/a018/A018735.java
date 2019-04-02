@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018735.
+ * A018735 Divisors of 944.
  * @author Sean A. Irvine
  */
 public class A018735 extends FiniteSequence {

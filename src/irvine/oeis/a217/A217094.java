@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217094.
+ * A217094 Least index k such that A011540(k) &gt;= 10^n.
  * @author Sean A. Irvine
  */
 public class A217094 extends LinearRecurrence {

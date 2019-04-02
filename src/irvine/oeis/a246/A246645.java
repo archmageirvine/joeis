@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246645.
+ * A246645 Expansion of 1/(1 - 22*x + 81*x^2), used in A246643.
  * @author Sean A. Irvine
  */
 public class A246645 extends LinearRecurrence {

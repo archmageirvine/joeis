@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A153429.
+ * A153429 Numbers n such that n! is equal to the sum of two consecutive primes.
  * @author Sean A. Irvine
  */
 public class A153429 implements Sequence {

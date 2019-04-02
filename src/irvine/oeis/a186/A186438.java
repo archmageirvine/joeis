@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186438.
+ * A186438 Positive numbers whose squares end in two identical digits.
  * @author Sean A. Irvine
  */
 public class A186438 extends LinearRecurrence {

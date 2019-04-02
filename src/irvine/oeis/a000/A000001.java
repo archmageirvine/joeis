@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000001.
+ * A000001 Number of groups of order n.
  * @author Sean A. Irvine
  */
 public class A000001 implements Sequence {

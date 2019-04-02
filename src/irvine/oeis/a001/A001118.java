@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001118.
+ * A001118 Differences of 0; labeled ordered partitions into 5 parts.
  * @author Sean A. Irvine
  */
 public class A001118 implements Sequence {

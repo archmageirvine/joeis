@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001857.
+ * A001857 a(1)=2, a(2)=3; for n &gt;= 3, a(n) is smallest number that is uniquely of the form a(j) + a(k) with 1 &lt;= j &lt; k &lt; n.
  * @author Sean A. Irvine
  */
 public class A001857 implements Sequence {

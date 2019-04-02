@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009042.
+ * A009042 Expansion of x*cos(sin(x)), odd terms only.
  * @author Sean A. Irvine
  */
 public class A009042 implements Sequence {

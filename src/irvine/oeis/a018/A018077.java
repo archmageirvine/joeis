@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018077.
+ * A018077 Powers of fourth root of 11 rounded up.
  * @author Sean A. Irvine
  */
 public class A018077 implements Sequence {

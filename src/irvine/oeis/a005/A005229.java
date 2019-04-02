@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005229.
+ * A005229 a(1)=a(2)=1; for n&gt;2, a(n)=a(a(n-2))+a(n-a(n-2)).
  * @author Sean A. Irvine
  */
 public class A005229 extends MemorySequence {

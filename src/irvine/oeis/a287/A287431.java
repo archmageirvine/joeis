@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287431.
+ * A287431 Number of connected dominating sets in the n-gear graph.
  * @author Sean A. Irvine
  */
 public class A287431 extends LinearRecurrence {

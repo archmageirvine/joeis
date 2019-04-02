@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057932.
+ * A057932 a(n) = floor(10^(n+1)/81).
  * @author Sean A. Irvine
  */
 public class A057932 extends LinearRecurrence {

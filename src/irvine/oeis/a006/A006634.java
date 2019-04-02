@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002293;
 
 /**
- * A006634.
+ * A006634 From generalized Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A006634 extends A002293 {

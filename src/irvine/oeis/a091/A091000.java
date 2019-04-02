@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091000.
+ * A091000 Number of closed walks of length n on the Petersen graph.
  * @author Sean A. Irvine
  */
 public class A091000 extends LinearRecurrence {

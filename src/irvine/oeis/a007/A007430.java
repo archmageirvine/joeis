@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007430.
+ * A007430 Inverse Moebius transform applied thrice to natural numbers.
  * @author Sean A. Irvine
  */
 public class A007430 implements Sequence {

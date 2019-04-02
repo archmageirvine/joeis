@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005253.
+ * A005253 Number of binary words not containing ..01110...
  * @author Sean A. Irvine
  */
 public class A005253 implements Sequence {

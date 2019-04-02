@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A248507.
+ * A248507 Decimal expansion of a single magnetic flux quantum in SI units.
  * @author Sean A. Irvine
  */
 public class A248507 extends DoubleDecimalExpansionSequence {

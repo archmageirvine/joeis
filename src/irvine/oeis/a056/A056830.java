@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056830.
+ * A056830 Alternate digits 1 and 0.
  * @author Sean A. Irvine
  */
 public class A056830 extends LinearRecurrence {

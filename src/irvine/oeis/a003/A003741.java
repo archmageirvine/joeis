@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003741.
+ * A003741 Number of perfect matchings (or domino tilings) in O_5 X P_2n.
  * @author Sean A. Irvine
  */
 public class A003741 extends LinearRecurrence {

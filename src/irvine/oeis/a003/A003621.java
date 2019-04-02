@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003621.
+ * A003621 Number of iterations until n reaches 1 or 4 under x goes to sum of squares of digits map.
  * @author Sean A. Irvine
  */
 public class A003621 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001935.
+ * A001935 Number of partitions with no even part repeated; partitions of n in which no parts are multiples of 4.
  * @author Sean A. Irvine
  */
 public class A001935 implements Sequence {

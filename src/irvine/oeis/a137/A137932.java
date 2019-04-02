@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137932.
+ * A137932 Terms in an n X n spiral that do not lie on its principal diagonals.
  * @author Sean A. Irvine
  */
 public class A137932 extends LinearRecurrence {

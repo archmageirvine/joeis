@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000251.
+ * A000251 Number of trees of diameter 6.
  * @author Sean A. Irvine
  */
 public class A000251 implements Sequence {

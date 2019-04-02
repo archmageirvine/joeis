@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007331.
+ * A007331 Fourier coefficients of E_{infinity,4}.
  * @author Sean A. Irvine
  */
 public class A007331 implements Sequence {

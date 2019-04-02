@@ -3,7 +3,7 @@ package irvine.oeis.a231;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A231304.
+ * A231304 Recurrence a(n) = a(n-2) + n^M for M=5, starting with a(0)=0, a(1)=1.
  * @author Sean A. Irvine
  */
 public class A231304 extends LinearRecurrence {

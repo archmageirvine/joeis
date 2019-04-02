@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A175502.
+ * A175502 a(1) = 1. a(n) = the smallest integer not yet occurring such that each unordered pair {d(a(k)),d(a(k-1))} occurs only once at most, for 2&lt;= k &lt;= n, where d(m) = the number of divisors of m.
  * @author Sean A. Irvine
  */
 public class A175502 implements Sequence {

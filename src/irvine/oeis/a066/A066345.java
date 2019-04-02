@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066345.
+ * A066345 Winning binary "same game" templates of length n as defined below.
  * @author Sean A. Irvine
  */
 public class A066345 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051711.
+ * A051711 a(0) = 1; for n &gt; 0, a(n) = n!*4^n/2.
  * @author Sean A. Irvine
  */
 public class A051711 implements Sequence {

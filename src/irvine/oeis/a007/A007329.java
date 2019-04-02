@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000416;
 import irvine.oeis.a000.A000417;
 
 /**
- * A007329.
+ * A007329 Unexplained difference between two partition generating functions.
  * @author Sean A. Irvine
  */
 public class A007329 extends A000416 {

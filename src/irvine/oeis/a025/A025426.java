@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025426.
+ * A025426 Number of partitions of n into 2 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A025426 implements Sequence {

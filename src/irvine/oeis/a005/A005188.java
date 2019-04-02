@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005188.
+ * A005188 Armstrong (or pluperfect, or Plus Perfect, or narcissistic) numbers: m-digit numbers equal to sum of the m-th powers of their digits.
  * @author Sean A. Irvine
  */
 public class A005188 extends FiniteSequence {

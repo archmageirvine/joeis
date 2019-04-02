@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005964.
+ * A005964 Number of trivalent connected (or cubic) planar graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005964 implements Sequence, GraphProcessor {

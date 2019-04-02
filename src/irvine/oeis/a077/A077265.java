@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077265.
+ * A077265 Number of cycles in the n-th order prism graph.
  * @author Sean A. Irvine
  */
 public class A077265 extends LinearRecurrence {

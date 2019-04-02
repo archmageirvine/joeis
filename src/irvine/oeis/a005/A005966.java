@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005966.
+ * A005966 Number of trivalent planar loopless multigraphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005966 implements Sequence, GraphProcessor {

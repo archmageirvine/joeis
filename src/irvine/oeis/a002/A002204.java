@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002204.
+ * A002204 An ill-conditioned determinant.
  * @author Sean A. Irvine
  */
 public class A002204 implements Sequence {

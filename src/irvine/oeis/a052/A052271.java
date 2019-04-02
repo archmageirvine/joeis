@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052271.
+ * A052271 Number of n X n matrices over GF(4) under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A052271 implements Sequence {

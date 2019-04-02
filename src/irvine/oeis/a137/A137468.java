@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A137468.
+ * A137468 Fifth powers whose digits are all odd.
  * @author Sean A. Irvine
  */
 public class A137468 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005084.
+ * A005084 Sum of cubes of primes = 3 mod 4 dividing n.
  * @author Sean A. Irvine
  */
 public class A005084 implements Sequence {

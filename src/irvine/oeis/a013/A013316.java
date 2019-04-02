@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013316.
+ * A013316 arcsinh(exp(x)-cos(x))=x+2/2!*x^2-12/4!*x^4-60/5!*x^5+32/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013316 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272104.
+ * A272104 Sum of the even numbers among the larger parts of the partitions of n into two parts.
  * @author Sean A. Irvine
  */
 public class A272104 extends LinearRecurrence {

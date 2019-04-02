@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224454.
+ * A224454 The Wiener index of the linear phenylene with n hexagons.
  * @author Sean A. Irvine
  */
 public class A224454 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004357.
+ * A004357 a(n) = binomial(6*n,n-2).
  * @author Sean A. Irvine
  */
 public class A004357 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214865.
+ * A214865 n such that n XOR 9 = n - 9.
  * @author Sean A. Irvine
  */
 public class A214865 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061506.
+ * A061506 a(n) = lcm(6n+2, 6n+4, 6n+6).
  * @author Sean A. Irvine
  */
 public class A061506 extends LinearRecurrence {

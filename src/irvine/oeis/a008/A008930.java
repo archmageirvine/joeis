@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008930.
+ * A008930 Number of compositions (p_1, p_2, p_3, ...) of n with 1 &lt;= p_i &lt;= i for all i.
  * @author Sean A. Irvine
  */
 public class A008930 extends MemoryFunction2<Long, Z> implements Sequence {

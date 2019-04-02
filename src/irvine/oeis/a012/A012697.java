@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012697.
+ * A012697 exp(arctanh(x)*log(x+1))=1+2/2!*x^2-3/3!*x^3+28/4!*x^4-110/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012697 implements Sequence {

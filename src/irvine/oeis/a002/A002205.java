@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * A002205.
+ * A002205 The RAND Corporation list of a million random digits.
  * @author Sean A. Irvine
  */
 public class A002205 extends FiniteSequence {

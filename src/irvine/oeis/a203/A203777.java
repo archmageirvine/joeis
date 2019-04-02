@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203777.
+ * A203777 Aliquot sequence starting at 220.
  * @author Sean A. Irvine
  */
 public class A203777 extends LinearRecurrence {

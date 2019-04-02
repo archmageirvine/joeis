@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130472.
+ * A130472 A permutation of the integers: a(n) = (-1)^n * floor( (n+1)/2 ).
  * @author Sean A. Irvine
  */
 public class A130472 extends LinearRecurrence {

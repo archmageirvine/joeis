@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280931.
+ * A280931 a(n) = 2*F(n-1) + 9*F(n-4) + 9*F(n-7) where n &gt;= 7 and F = A000045.
  * @author Sean A. Irvine
  */
 public class A280931 extends LinearRecurrence {

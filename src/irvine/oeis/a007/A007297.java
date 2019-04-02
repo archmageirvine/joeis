@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007297.
+ * A007297 Number of connected graphs on n labeled nodes on a circle with straight-line edges that don't cross.
  * @author Sean A. Irvine
  */
 public class A007297 implements Sequence {

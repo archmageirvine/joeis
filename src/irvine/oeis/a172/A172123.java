@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172123.
+ * A172123 Number of ways to place 2 nonattacking bishops on an n X n board.
  * @author Sean A. Irvine
  */
 public class A172123 extends LinearRecurrence {

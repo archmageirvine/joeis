@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015222.
+ * A015222 Even square pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A015222 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010879.
+ * A010879 Final digit of n.
  * @author Sean A. Irvine
  */
 public class A010879 extends PeriodicSequence {

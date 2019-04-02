@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007557.
+ * A007557 Shifts left when inverse Moebius transform applied twice.
  * @author Sean A. Irvine
  */
 public class A007557 extends MemorySequence {

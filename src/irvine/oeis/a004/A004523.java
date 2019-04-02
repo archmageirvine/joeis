@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004523.
+ * A004523 Two even followed by one odd; or floor(2n/3).
  * @author Sean A. Irvine
  */
 public class A004523 implements Sequence {

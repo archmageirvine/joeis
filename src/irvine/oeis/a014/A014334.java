@@ -4,7 +4,7 @@ import irvine.oeis.ExponentialConvolutionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014334.
+ * A014334 Exponential convolution of Fibonacci numbers with themselves.
  * @author Sean A. Irvine
  */
 public class A014334 extends ExponentialConvolutionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005333.
+ * A005333 Number of 2-colored connected labeled graphs with n vertices of the first color and n vertices of the second color.
  * @author Sean A. Irvine
  */
 public class A005333 extends MemoryFunction2<Integer, Z> implements Sequence {

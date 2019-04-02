@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164577.
+ * A164577 Integer averages of the first perfect cubes up to some n^3.
  * @author Sean A. Irvine
  */
 public class A164577 extends LinearRecurrence {

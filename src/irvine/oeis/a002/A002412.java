@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002412.
+ * A002412 Hexagonal pyramidal numbers, or greengrocer's numbers.
  * @author Sean A. Irvine
  */
 public class A002412 implements Sequence {

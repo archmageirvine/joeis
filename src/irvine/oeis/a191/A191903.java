@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191903.
+ * A191903 Number of compositions of odd natural numbers into 4 parts &lt;=n.
  * @author Sean A. Irvine
  */
 public class A191903 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081019.
+ * A081019 Lucas(4n+3)-1, or Lucas(2n+1)*Lucas(2n+2).
  * @author Sean A. Irvine
  */
 public class A081019 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A230128.
+ * A230128 The number of multinomial coefficients over partitions with value equal to 4.
  * @author Sean A. Irvine
  */
 public class A230128 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A000743.
+ * A000743 Number of compositions of n into 5 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A000743 extends A000741 {

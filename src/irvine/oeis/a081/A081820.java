@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A081820.
+ * A081820 Stefan-Boltzmann constant.
  * @author Sean A. Irvine
  */
 public class A081820 extends DoubleDecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000573;
 
 /**
- * A003170.
+ * A003170 Number of 4 X n Latin rectangles in which the first row is in order.
  * @author Sean A. Irvine
  */
 public class A003170 extends A000573 {

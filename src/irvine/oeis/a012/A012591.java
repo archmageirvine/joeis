@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012591.
+ * A012591 tanh(arcsinh(x)*exp(x)) = x+2/2!*x^2-24/4!*x^4-140/5!*x^5-200/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A012591 implements Sequence {

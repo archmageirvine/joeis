@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005652.
+ * A005652 Sum of 2 terms is never a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A005652 implements Sequence {

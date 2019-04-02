@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011850.
+ * A011850 a(n) = floor(binomial(n,4)/4).
  * @author Sean A. Irvine
  */
 public class A011850 implements Sequence {

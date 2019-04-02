@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A003245.
+ * A003245 Nearest integer to -4n/Bernoulli(2n).
  * @author Sean A. Irvine
  */
 public class A003245 implements Sequence {

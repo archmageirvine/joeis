@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000097.
+ * A000097 Number of partitions of n if there are two kinds of 1's and two kinds of 2's.
  * @author Sean A. Irvine
  */
 public class A000097 implements Sequence {

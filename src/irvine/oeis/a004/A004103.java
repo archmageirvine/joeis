@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004103.
+ * A004103 Number of nets on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A004103 implements Sequence {

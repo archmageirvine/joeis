@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007695;
 
 /**
- * A011833.
+ * A011833 Number of f-vectors for simplicial complexes of dimension at most 8 on at most n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A011833 extends A007695 {

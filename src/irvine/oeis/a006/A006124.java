@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006124.
+ * A006124 a(n) = 3 + n/2 + 7n^2/2.
  * @author Sean A. Irvine
  */
 public class A006124 implements Sequence {

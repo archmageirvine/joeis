@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003698.
+ * A003698 Number of 2-factors in C_4 X P_n.
  * @author Sean A. Irvine
  */
 public class A003698 extends LinearRecurrence {

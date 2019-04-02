@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261671.
+ * A261671 If n even, a(n) = 6n+3, otherwise a(n) = n.
  * @author Sean A. Irvine
  */
 public class A261671 extends LinearRecurrence {

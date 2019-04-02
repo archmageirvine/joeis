@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a002.A002861;
 
 /**
- * A001372.
+ * A001372 Number of mappings (or mapping patterns) from n points to themselves; number of endofunctions.
  * @author Sean A. Irvine
  */
 public class A001372 extends EulerTransformSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003958.
+ * A003958 If n = Product p(k)^e(k) then a(n) = Product (p(k)-1)^e(k).
  * @author Sean A. Irvine
  */
 public class A003958 implements Sequence {

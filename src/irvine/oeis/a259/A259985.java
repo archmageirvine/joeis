@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259985.
+ * A259985 Triangle read by rows: coefficients of rook polynomials.
  * @author Sean A. Irvine
  */
 public class A259985 extends MemoryFunction2<Long, Z> implements Sequence {

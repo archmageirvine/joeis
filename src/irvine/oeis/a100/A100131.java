@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100131.
+ * A100131 a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k, 2k)*2^(n-4k).
  * @author Sean A. Irvine
  */
 public class A100131 extends LinearRecurrence {

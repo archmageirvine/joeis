@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Collections;
 
 /**
- * A002680.
+ * A002680 Denominators of coefficients of polynomials arising from Chebyshev quadrature.
  * @author Sean A. Irvine
  */
 public class A002680 implements Sequence {

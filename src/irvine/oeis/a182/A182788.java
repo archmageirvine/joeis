@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182788.
+ * A182788 Number of n-colorings of the Triangle Graph of order 3.
  * @author Sean A. Irvine
  */
 public class A182788 extends LinearRecurrence {

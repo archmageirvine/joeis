@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007746.
+ * A007746 Number of ways for n-3 nonintersecting loops to cross a line 2n times.
  * @author Sean A. Irvine
  */
 public class A007746 implements Sequence {

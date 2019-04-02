@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001055.
+ * A001055 The multiplicative partition function: number of ways of factoring n with all factors greater than 1 (a(1) = 1 by convention).
  * @author Sean A. Irvine
  */
 public class A001055 implements Sequence {

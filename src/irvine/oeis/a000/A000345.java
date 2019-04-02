@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A000345.
+ * A000345 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
 public class A000345 implements Sequence {

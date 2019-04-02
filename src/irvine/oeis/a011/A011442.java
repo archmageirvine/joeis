@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011442.
+ * A011442 Decimal expansion of 23rd root of 23.
  * @author Sean A. Irvine
  */
 public class A011442 extends DecimalExpansionSequence {

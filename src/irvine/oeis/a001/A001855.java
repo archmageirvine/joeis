@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001855.
+ * A001855 Sorting numbers: maximal number of comparisons for sorting n elements by binary insertion.
  * @author Sean A. Irvine
  */
 public class A001855 implements Sequence {

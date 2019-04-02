@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006670.
+ * A006670 Edge-distinguishing chromatic number of path with n nodes.
  * @author Sean A. Irvine
  */
 public class A006670 implements Sequence {

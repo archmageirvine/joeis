@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002264.
+ * A002264 Nonnegative integers repeated 3 times.
  * @author Sean A. Irvine
  */
 public class A002264 implements Sequence {

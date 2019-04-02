@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015234.
+ * A015234 a(n) = (17 - 2*n)*n^2.
  * @author Sean A. Irvine
  */
 public class A015234 implements Sequence {

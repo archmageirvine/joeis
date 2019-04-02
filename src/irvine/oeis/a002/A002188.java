@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 /**
- * A002188.
+ * A002188 Sprague-Grundy values for Grundy's game.
  * @author Sean A. Irvine
  */
 public class A002188 implements Sequence {

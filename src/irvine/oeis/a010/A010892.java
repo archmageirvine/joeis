@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010892.
+ * A010892 Inverse of 6th cyclotomic polynomial. A period 6 sequence.
  * @author Sean A. Irvine
  */
 public class A010892 extends PeriodicSequence {

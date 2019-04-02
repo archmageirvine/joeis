@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006077.
+ * A006077 (n+1)^2*a(n+1) = (9n^2+9n+3)*a(n) - 27*n^2*a(n-1), with a(0) = 1 and a(1) = 3.
  * @author Sean A. Irvine
  */
 public class A006077 implements Sequence {

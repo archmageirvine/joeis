@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012780.
+ * A012780 Expansion of arcsin(tan(x)).
  * @author Sean A. Irvine
  */
 public class A012780 implements Sequence {

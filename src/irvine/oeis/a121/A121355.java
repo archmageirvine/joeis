@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A121355.
+ * A121355 Number of transitive PSL_2(ZZ) actions on a finite labeled set of size n.
  * @author Sean A. Irvine
  */
 public class A121355 extends A121357 {

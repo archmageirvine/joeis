@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000930;
 
 /**
- * A005204.
+ * A005204 Coding a recurrence.
  * @author Sean A. Irvine
  */
 public class A005204 extends A000930 {

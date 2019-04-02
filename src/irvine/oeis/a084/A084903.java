@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084903.
+ * A084903 Binomial transform of positive cubes.
  * @author Sean A. Irvine
  */
 public class A084903 extends LinearRecurrence {

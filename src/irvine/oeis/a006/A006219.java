@@ -8,7 +8,7 @@ import irvine.util.Pair;
 import irvine.util.Permutation;
 
 /**
- * A006219.
+ * A006219 From descending subsequences of permutations.
  * @author Sean A. Irvine
  */
 public class A006219 implements Sequence {

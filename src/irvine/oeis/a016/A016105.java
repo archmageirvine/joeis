@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016105.
+ * A016105 Blum integers: numbers of the form p * q where p and q are distinct primes congruent to 3 (mod 4).
  * @author Sean A. Irvine
  */
 public class A016105 implements Sequence {

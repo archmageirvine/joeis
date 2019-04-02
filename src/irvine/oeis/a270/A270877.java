@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A270877.
+ * A270877 Numbers surviving a decaying sieve.
  * @author Sean A. Irvine
  */
 public class A270877 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112689.
+ * A112689 A modified Chebyshev transform of the Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A112689 extends LinearRecurrence {

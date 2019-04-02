@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004825.
+ * A004825 Numbers that are the sum of at most 3 positive cubes.
  * @author Sean A. Irvine
  */
 public class A004825 extends A004802 {

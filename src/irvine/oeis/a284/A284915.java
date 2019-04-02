@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284915.
+ * A284915 Number of elements of order n in simple Higman-Sims group HS.
  * @author Sean A. Irvine
  */
 public class A284915 extends FiniteSequence {

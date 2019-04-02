@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001041.
+ * A001041 a(0)=12; thereafter a(n) = 12 times the product of the first n primes.
  * @author Sean A. Irvine
  */
 public class A001041 implements Sequence {

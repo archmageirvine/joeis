@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018236.
+ * A018236 Weight distribution of hypothetical [ 72,36,16 ] doubly-even binary self-dual code.
  * @author Sean A. Irvine
  */
 public class A018236 extends FiniteSequence {

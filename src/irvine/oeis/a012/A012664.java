@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012664.
+ * A012664 arcsinh(tanh(x)*sin(x))=2/2!*x^2-12/4!*x^4+22/6!*x^6+6888/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012664 implements Sequence {

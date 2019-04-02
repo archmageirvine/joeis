@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007558.
+ * A007558 Shifts 2 places left when e.g.f. is squared.
  * @author Sean A. Irvine
  */
 public class A007558 extends MemorySequence {

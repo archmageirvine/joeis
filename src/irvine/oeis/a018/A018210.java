@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A018210.
+ * A018210 Alkane (or paraffin) numbers l(9,n).
  * @author Sean A. Irvine
  */
 public class A018210 extends LinearRecurrence {

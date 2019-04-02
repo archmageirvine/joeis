@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091973.
+ * A091973 Poincar&#233; series [or Poincare series] (or Molien series) for a certain three-dimensional group of order 1344.
  * @author Sean A. Irvine
  */
 public class A091973 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045797.
+ * A045797 Evenish numbers (prime to 10 and 10's digit is even).
  * @author Sean A. Irvine
  */
 public class A045797 extends LinearRecurrence {

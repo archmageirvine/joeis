@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005355.
+ * A005355 Number of asymmetric permutation rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005355 extends MemorySequence {

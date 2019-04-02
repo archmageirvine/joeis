@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002389.
+ * A002389 Decimal expansion of -log(gamma), where gamma is Euler's constant A001620.
  * @author Sean A. Irvine
  */
 public class A002389 extends DecimalExpansionSequence {

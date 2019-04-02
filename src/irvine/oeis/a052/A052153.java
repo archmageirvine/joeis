@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052153.
+ * A052153 Rhombi (in 3 different orientations) in a rhombus with 60-degree acute angles.
  * @author Sean A. Irvine
  */
 public class A052153 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005908.
+ * A005908 a(n) = [ tau*a(n-1) ] + [ tau*a(n-2) ].
  * @author Sean A. Irvine
  */
 public class A005908 implements Sequence {

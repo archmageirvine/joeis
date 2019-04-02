@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A002149.
+ * A002149 Largest prime p==3 (mod 8) such that Q(sqrt(-p)) has class number 2n+1.
  * @author Sean A. Irvine
  */
 public class A002149 implements Sequence {

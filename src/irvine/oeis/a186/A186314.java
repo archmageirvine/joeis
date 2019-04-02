@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186314.
+ * A186314 Number of ternary strings of length n which contain 01.
  * @author Sean A. Irvine
  */
 public class A186314 extends LinearRecurrence {

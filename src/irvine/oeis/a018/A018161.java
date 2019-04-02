@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018161.
+ * A018161 Powers of fifth root of 16 rounded up.
  * @author Sean A. Irvine
  */
 public class A018161 implements Sequence {

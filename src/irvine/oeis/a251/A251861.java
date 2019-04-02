@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251861.
+ * A251861 Number of non-palindromic words (length n&gt;0) over the alphabet of 26 letters.
  * @author Sean A. Irvine
  */
 public class A251861 extends LinearRecurrence {

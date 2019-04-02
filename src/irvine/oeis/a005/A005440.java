@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005440.
+ * A005440 Coefficients of Gandhi polynomials.
  * @author Sean A. Irvine
  */
 public class A005440 implements Sequence {

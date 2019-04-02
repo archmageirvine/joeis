@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098526.
+ * A098526 Expansion of (1+4x^2)/(1-x-16x^5).
  * @author Sean A. Irvine
  */
 public class A098526 extends LinearRecurrence {

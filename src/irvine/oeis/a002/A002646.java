@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A002646.
+ * A002646 Half-quartan primes: primes of the form p = (x^4 + y^4)/2.
  * @author Sean A. Irvine
  */
 public class A002646 implements Sequence {

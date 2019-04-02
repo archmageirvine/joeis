@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175672.
+ * A175672 y-values in the solution to x^2 - 28*y^2=1.
  * @author Sean A. Irvine
  */
 public class A175672 extends LinearRecurrence {

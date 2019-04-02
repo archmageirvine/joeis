@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098923.
+ * A098923 33-gonal numbers: n(31n-29)/2.
  * @author Sean A. Irvine
  */
 public class A098923 extends LinearRecurrence {

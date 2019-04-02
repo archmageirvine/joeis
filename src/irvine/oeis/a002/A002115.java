@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a178.A178963;
 
 /**
- * A002115.
+ * A002115 Generalized Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002115 extends A178963 {

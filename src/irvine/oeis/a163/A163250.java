@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163250.
+ * A163250 The number of nonisomorphic complete simple games with n voters of two different types.
  * @author Sean A. Irvine
  */
 public class A163250 extends LinearRecurrence {

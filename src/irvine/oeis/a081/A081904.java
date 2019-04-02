@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081904.
+ * A081904 A sequence related to binomial(n+6, 6).
  * @author Sean A. Irvine
  */
 public class A081904 extends LinearRecurrence {

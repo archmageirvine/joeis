@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193771.
+ * A193771 Expansion of 1 / (1 - x - x^3 + x^6) in powers of x.
  * @author Sean A. Irvine
  */
 public class A193771 extends LinearRecurrence {

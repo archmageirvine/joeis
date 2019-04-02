@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016741.
+ * A016741 Initial pile sizes which guarantee a win for player 2 in a certain variant of NIM.
  * @author Sean A. Irvine
  */
 public class A016741 implements Sequence {

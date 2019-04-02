@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055007.
+ * A055007 Number of nonnegative integer 4 X 4 matrices with no zero rows or columns and with sum of elements equal to n.
  * @author Sean A. Irvine
  */
 public class A055007 extends LinearRecurrence {

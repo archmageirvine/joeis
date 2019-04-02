@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007175.
+ * A007175 Number of simplicial 4-clusters with n cells.
  * @author Sean A. Irvine
  */
 public class A007175 implements Sequence {

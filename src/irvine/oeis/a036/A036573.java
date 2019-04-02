@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036573.
+ * A036573 Size of maximal triangulation of an n-antiprism with regular polygonal base.
  * @author Sean A. Irvine
  */
 public class A036573 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048879.
+ * A048879 Generalized Pellian with second term of 10.
  * @author Sean A. Irvine
  */
 public class A048879 extends LinearRecurrence {

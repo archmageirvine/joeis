@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013527.
+ * A013527 Numerator of [x^(2n)] of the Taylor expansion sec(cosec(x)-cot(x)) = 1+ x^2/8 +13*x^4/384 +397*x^6/46080 +4453*x^8/2064384 + ... .
  * @author Sean A. Irvine
  */
 public class A013527 implements Sequence {

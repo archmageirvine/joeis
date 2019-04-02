@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242854.
+ * A242854 a(n) = 512*n^9 - 1024*n^7 + 672*n^5 - 160*n^3 + 10*n.
  * @author Sean A. Irvine
  */
 public class A242854 extends LinearRecurrence {

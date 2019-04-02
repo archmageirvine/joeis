@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049452.
+ * A049452 Pentagonal numbers with even index.
  * @author Sean A. Irvine
  */
 public class A049452 extends LinearRecurrence {

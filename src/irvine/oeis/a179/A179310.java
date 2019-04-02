@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A179310.
+ * A179310 The smallest number that has more copies of some digit than all previous terms of the sequence put together.
  * @author Sean A. Irvine
  */
 public class A179310 implements Sequence {

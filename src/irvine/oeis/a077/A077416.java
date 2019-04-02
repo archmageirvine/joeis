@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077416.
+ * A077416 Chebyshev S-sequence with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A077416 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002466.
+ * A002466 A jumping problem.
  * @author Sean A. Irvine
  */
 public class A002466 implements Sequence {

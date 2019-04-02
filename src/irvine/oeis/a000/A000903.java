@@ -6,7 +6,7 @@ import irvine.oeis.a037.A037223;
 import irvine.oeis.a122.A122670;
 
 /**
- * A000903.
+ * A000903 Number of inequivalent ways of placing n nonattacking rooks on n X n board up to rotations and reflections of the board.
  * @author Sean A. Irvine
  */
 public class A000903 extends A037223 {

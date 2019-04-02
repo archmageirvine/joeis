@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014076.
+ * A014076 Odd nonprimes.
  * @author Sean A. Irvine
  */
 public class A014076 implements Sequence {

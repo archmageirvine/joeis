@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153192.
+ * A153192 Numbers such that the numerator of floor(sqrt(n))/n, when reduced to its lowest terms, is equal to 2.
  * @author Sean A. Irvine
  */
 public class A153192 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074036.
+ * A074036 Sum of the primes from the smallest prime factor of n to the largest prime factor of n.
  * @author Sean A. Irvine
  */
 public class A074036 implements Sequence {

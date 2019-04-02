@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036354.
+ * A036354 Heptagonal square numbers.
  * @author Sean A. Irvine
  */
 public class A036354 extends LinearRecurrence {

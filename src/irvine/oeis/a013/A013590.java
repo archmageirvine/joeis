@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013590.
+ * A013590 Numbers k such that Phi(k,x) is a cyclotomic polynomial containing a coefficient with an absolute value greater than one.
  * @author Sean A. Irvine
  */
 public class A013590 implements Sequence {

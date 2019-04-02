@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006623.
+ * A006623 Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
 public class A006623 extends A006613 {

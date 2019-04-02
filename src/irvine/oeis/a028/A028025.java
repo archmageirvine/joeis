@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028025.
+ * A028025 Expansion of 1/((1-3x)(1-4x)(1-5x)(1-6x)).
  * @author Sean A. Irvine
  */
 public class A028025 extends LinearRecurrence {

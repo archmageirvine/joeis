@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004005.
+ * A004005 Coefficients of elliptic function sn.
  * @author Sean A. Irvine
  */
 public class A004005 extends MemorySequence {

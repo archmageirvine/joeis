@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003893.
+ * A003893 a(n) = Fibonacci(n) mod 10.
  * @author Sean A. Irvine
  */
 public class A003893 implements Sequence {

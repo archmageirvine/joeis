@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A082869.
+ * A082869 3^n - 2^n is a semiprime.
  * @author Sean A. Irvine
  */
 public class A082869 implements Sequence {

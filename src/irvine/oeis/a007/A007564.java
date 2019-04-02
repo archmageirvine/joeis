@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007564.
+ * A007564 Shifts left when INVERT transform applied thrice.
  * @author Sean A. Irvine
  */
 public class A007564 implements Sequence {

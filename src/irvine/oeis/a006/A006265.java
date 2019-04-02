@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006265.
+ * A006265 Number of shapes of height-balanced AVL trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A006265 implements Sequence {

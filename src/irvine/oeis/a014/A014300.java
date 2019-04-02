@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014300.
+ * A014300 Number of nodes of odd outdegree in all ordered rooted (planar) trees with n edges.
  * @author Sean A. Irvine
  */
 public class A014300 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A290305.
+ * A290305 Number of 5-dimensional polyominoes with n cells (regarding mirror-images as distinct).
  * @author Sean A. Irvine
  */
 public class A290305 implements Sequence {

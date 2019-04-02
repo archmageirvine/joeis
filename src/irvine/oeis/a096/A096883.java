@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096883.
+ * A096883 Expansion of (1+10x)/(1-101x^2).
  * @author Sean A. Irvine
  */
 public class A096883 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162722.
+ * A162722 A positive integer n is included if when n is represented in binary, it contains the binary representations of every distinct prime dividing n as substrings, with overlapping of the substrings allowed (but not necessary).
  * @author Sean A. Irvine
  */
 public class A162722 implements Sequence {

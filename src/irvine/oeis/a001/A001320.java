@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001320.
+ * A001320 Number of self-complementary Boolean functions of n variables: see Comments for precise definition.
  * @author Sean A. Irvine
  */
 public class A001320 implements Sequence {

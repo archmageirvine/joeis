@@ -4,7 +4,7 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
 
 /**
- * A007203.
+ * A007203 Number of elements (a b / c d) in GL(2,Z) with |det| = 1, trace n and 0 &lt;= a &lt;= {b, c} &lt;= d.
  * @author Sean A. Irvine
  */
 public class A007203 extends A007104 {

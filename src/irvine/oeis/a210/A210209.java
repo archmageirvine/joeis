@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210209.
+ * A210209 GCD of all sums of n consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A210209 extends LinearRecurrence {

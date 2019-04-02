@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172012.
+ * A172012 Expansion of (2-3*x)/(1-3*x-3*x^2) .
  * @author Sean A. Irvine
  */
 public class A172012 extends LinearRecurrence {

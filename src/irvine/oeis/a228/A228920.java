@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228920.
+ * A228920 Number of solutions to Sum(x_i^2, i=1...n) == 0 (mod 4).
  * @author Sean A. Irvine
  */
 public class A228920 extends LinearRecurrence {

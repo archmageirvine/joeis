@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A006871.
+ * A006871 Exponentiation of g.f. for rooted trees.
  * @author Sean A. Irvine
  */
 public class A006871 extends MemorySequence {

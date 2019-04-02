@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001347.
+ * A001347 a(n) = Sum_{k=0..5} (n+k)! * C(5,k).
  * @author Sean A. Irvine
  */
 public class A001347 implements Sequence {

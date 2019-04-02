@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146511.
+ * A146511 Numbers congruent to {5, 17} modulo 66.
  * @author Sean A. Irvine
  */
 public class A146511 extends LinearRecurrence {

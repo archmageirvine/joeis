@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002993.
+ * A002993 Initial digits of squares.
  * @author Sean A. Irvine
  */
 public class A002993 implements Sequence {

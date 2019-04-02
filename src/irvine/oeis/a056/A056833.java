@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056833.
+ * A056833 Nearest integer to n^2/7.
  * @author Sean A. Irvine
  */
 public class A056833 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001864.
+ * A001864 Total height of rooted trees with n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A001864 implements Sequence {

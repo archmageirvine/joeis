@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A000959. Based on C++ program by David W. Wilson.
+ * A000959 Lucky numbers.
  * @author David W. Wilson
  * @author Sean A. Irvine
  */

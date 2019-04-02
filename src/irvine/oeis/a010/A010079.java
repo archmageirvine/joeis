@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A010079.
+ * A010079 Coordination sequence for net formed by holes in D_4 lattice.
  * @author Sean A. Irvine
  */
 public class A010079 extends CoordinationSequence {

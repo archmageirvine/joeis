@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008067.
+ * A008067 Coordination sequence T1 for Zeolite Code DAC.
  * @author Sean A. Irvine
  */
 public class A008067 extends CoordinationSequence {

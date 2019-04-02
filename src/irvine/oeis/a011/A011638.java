@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
 /**
- * A011638.
+ * A011638 63rd cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A011638 extends A011632 {

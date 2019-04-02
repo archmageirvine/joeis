@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009911.
+ * A009911 Coordination sequence T5 for Zeolite Code VNI.
  * @author Sean A. Irvine
  */
 public class A009911 extends CoordinationSequence {

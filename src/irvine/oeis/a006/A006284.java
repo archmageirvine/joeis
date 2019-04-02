@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.PierceExpansionSequence;
 
 /**
- * A006284.
+ * A006284 Pierce expansion for Euler's constant.
  * @author Sean A. Irvine
  */
 public class A006284 extends PierceExpansionSequence {

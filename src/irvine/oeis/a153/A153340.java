@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153340.
+ * A153340 Number of zig-zag paths from top to bottom of a rectangle of width 8 with n rows.
  * @author Sean A. Irvine
  */
 public class A153340 extends LinearRecurrence {

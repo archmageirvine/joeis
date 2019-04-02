@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054225;
 
 /**
- * A002763.
+ * A002763 Number of bipartite partitions.
  * @author Sean A. Irvine
  */
 public class A002763 extends A054225 {

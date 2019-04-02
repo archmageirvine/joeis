@@ -48,7 +48,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A002845.
+ * A002845 Number of distinct values taken by 2^2^...^2 (with n 2's and parentheses inserted in all possible ways).
  * @author Vladimir Reshetnikov
  * @author Sean A. Irvine (port to Java)
  */

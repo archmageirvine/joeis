@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000543.
+ * A000543 Number of inequivalent ways to color vertices of a cube using at most n colors.
  * @author Sean A. Irvine
  */
 public class A000543 implements Sequence {

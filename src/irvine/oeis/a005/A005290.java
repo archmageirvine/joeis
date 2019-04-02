@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005290.
+ * A005290 Representation degeneracies for boson strings.
  * @author Sean A. Irvine
  */
 public class A005290 implements Sequence {

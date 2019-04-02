@@ -7,7 +7,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001258.
+ * A001258 Number of labeled n-node trees with unlabeled end-points.
  * @author Sean A. Irvine
  */
 public class A001258 implements Sequence {

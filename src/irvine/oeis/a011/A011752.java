@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005589;
 
 /**
- * A011752.
+ * A011752 Repeat n m times, where m is number of letters in English word for the number.
  * @author Sean A. Irvine
  */
 public class A011752 extends A005589 {

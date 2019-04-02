@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a015.A015223;
 
 /**
- * A014799.
+ * A014799 Squares of odd pentagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A014799 extends A015223 {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import java.util.Arrays;
 
 /**
- * A000333.
+ * A000333 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
 public class A000333 extends A000298 {

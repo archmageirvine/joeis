@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007882.
+ * A007882 Number of lattice points inside circle of radius n is 4(a(n)+n)-3.
  * @author Sean A. Irvine
  */
 public class A007882 implements Sequence {

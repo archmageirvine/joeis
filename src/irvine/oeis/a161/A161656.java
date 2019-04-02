@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161656.
+ * A161656 The largest multiple of {the sum of the distinct prime divisors of n} that is &lt;=n.
  * @author Sean A. Irvine
  */
 public class A161656 implements Sequence {

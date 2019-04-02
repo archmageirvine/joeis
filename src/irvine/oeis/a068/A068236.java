@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068236.
+ * A068236 First differences of (n+1)^5-n^5.
  * @author Sean A. Irvine
  */
 public class A068236 extends LinearRecurrence {

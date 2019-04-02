@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010689.
+ * A010689 Periodic sequence: Repeat 1, 8.
  * @author Sean A. Irvine
  */
 public class A010689 extends PeriodicSequence {

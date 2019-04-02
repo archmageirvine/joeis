@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192928.
+ * A192928 The Gi1 and Gi2 sums of Losanitsch&#8217;s triangle A034851.
  * @author Sean A. Irvine
  */
 public class A192928 extends LinearRecurrence {

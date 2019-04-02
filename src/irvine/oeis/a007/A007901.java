@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007901.
+ * A007901 Number of minimal unavoidable n-celled pebbling configurations.
  * @author Sean A. Irvine
  */
 public class A007901 implements Sequence {

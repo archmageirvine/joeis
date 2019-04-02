@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007294.
+ * A007294 Number of partitions of n into nonzero triangular numbers.
  * @author Sean A. Irvine
  */
 public class A007294 implements Sequence {

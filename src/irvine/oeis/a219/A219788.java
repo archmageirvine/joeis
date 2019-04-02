@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219788.
+ * A219788 Consider the succession rule (x, y, z) -&gt; (z, y+z, x+y+z). Sequence gives z values starting at (0, 1, 2).
  * @author Sean A. Irvine
  */
 public class A219788 extends LinearRecurrence {

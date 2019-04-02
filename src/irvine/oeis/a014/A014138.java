@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A014138.
+ * A014138 Partial sums of (Catalan numbers starting 1, 2, 5, ...).
  * @author Sean A. Irvine
  */
 public class A014138 extends PartialSumSequence {

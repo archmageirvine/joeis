@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003991.
+ * A003991 Multiplication table read by antidiagonals: T(i,j) = i*j, i&gt;=1, j&gt;=1.
  * @author Sean A. Irvine
  */
 public class A003991 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005403.
+ * A005403 Number of protruded partitions of n with largest part at most 2.
  * @author Sean A. Irvine
  */
 public class A005403 implements Sequence {

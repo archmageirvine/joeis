@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173593.
+ * A173593 Numbers having in binary representation exactly two ones in three consecutive digits.
  * @author Sean A. Irvine
  */
 public class A173593 extends LinearRecurrence {

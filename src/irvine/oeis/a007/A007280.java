@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
 
 /**
- * A007280.
+ * A007280 Multiplicative encoding of partition triangle.
  * @author Sean A. Irvine
  */
 public class A007280 implements Sequence {

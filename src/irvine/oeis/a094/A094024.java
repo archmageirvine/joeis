@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094024.
+ * A094024 Alternating 1 with one less than the powers of 2.
  * @author Sean A. Irvine
  */
 public class A094024 extends LinearRecurrence {

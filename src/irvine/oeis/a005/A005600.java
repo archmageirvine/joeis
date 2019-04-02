@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A005600.
+ * A005600 Decimal expansion of reciprocal of fine-structure constant alpha.
  * @author Sean A. Irvine
  */
 public class A005600 extends DoubleDecimalExpansionSequence {

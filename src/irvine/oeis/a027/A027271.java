@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027271.
+ * A027271 a(n) = Sum_{k=0..2n} (k+1)*T(n,k), where T is given by A026536.
  * @author Sean A. Irvine
  */
 public class A027271 extends LinearRecurrence {

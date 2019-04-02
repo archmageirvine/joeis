@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013944.
+ * A013944 Sum of terms in period of continued fraction for square root of the n-th nonsquare.
  * @author Sean A. Irvine
  */
 public class A013944 implements Sequence {

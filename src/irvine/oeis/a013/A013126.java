@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013126.
+ * A013126 cosh(tanh(x)+log(x+1))=1+4/2!*x^2-6/3!*x^3+19/4!*x^4-140/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013126 implements Sequence {

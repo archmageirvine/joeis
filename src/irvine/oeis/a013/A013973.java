@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013973.
+ * A013973 Expansion of Eisenstein series E_6(q) (alternate convention E_3(q)).
  * @author Sean A. Irvine
  */
 public class A013973 implements Sequence {

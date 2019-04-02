@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009081.
+ * A009081 E.g.f. is cos(tan(x)/cos(x)), coefficients of even powers of x.
  * @author Sean A. Irvine
  */
 public class A009081 implements Sequence {

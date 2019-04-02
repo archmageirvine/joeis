@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124087.
+ * A124087 9th column of Catalan triangle A009766.
  * @author Sean A. Irvine
  */
 public class A124087 extends LinearRecurrence {

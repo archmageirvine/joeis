@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004730.
+ * A004730 Numerator of n!!/(n+1)!! (cf. A006882).
  * @author Sean A. Irvine
  */
 public class A004730 implements Sequence {

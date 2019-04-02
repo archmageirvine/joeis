@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008515.
+ * A008515 5-dimensional centered cube numbers.
  * @author Sean A. Irvine
  */
 public class A008515 implements Sequence {

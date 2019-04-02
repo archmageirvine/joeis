@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002101.
+ * A002101 Nearest integer to 4 * Pi * n^3 / 3.
  * @author Sean A. Irvine
  */
 public class A002101 implements Sequence {

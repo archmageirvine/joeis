@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006605.
+ * A006605 Number of modes of connections of 2n points.
  * @author Sean A. Irvine
  */
 public class A006605 implements Sequence {

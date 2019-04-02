@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013355.
+ * A013355 cos(sin(x)-tan(x))=1-90/6!*x^6-2520/8!*x^8-126630/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013355 implements Sequence {

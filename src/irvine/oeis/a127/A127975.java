@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127975.
+ * A127975 Repeat 3^n three times.
  * @author Sean A. Irvine
  */
 public class A127975 extends LinearRecurrence {

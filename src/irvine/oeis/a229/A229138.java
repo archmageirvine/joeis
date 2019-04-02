@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229138.
+ * A229138 Number of solutions to sum_{i=1...n} x_i^2 == 1 (mod 8).
  * @author Sean A. Irvine
  */
 public class A229138 extends LinearRecurrence {

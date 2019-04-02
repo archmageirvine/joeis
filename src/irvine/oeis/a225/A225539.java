@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225539.
+ * A225539 Numbers n where 2^n and n have the same digital root.
  * @author Sean A. Irvine
  */
 public class A225539 extends LinearRecurrence {

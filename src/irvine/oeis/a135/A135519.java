@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135519.
+ * A135519 Generalized repunits in base 14.
  * @author Sean A. Irvine
  */
 public class A135519 extends LinearRecurrence {

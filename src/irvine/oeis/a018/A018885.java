@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 
 /**
- * A018885.
+ * A018885 Squares using no more than two distinct digits.
  * @author Sean A. Irvine
  */
 public class A018885 extends PrependSequence {

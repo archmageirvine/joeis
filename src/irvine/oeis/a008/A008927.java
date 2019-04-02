@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008927.
+ * A008927 Number of increasing sequences of star chain type with maximal element n.
  * @author Sean A. Irvine
  */
 public class A008927 implements Sequence {

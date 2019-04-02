@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006558.
+ * A006558 Start of first run of n consecutive integers with same number of divisors.
  * @author Sean A. Irvine
  */
 public class A006558 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060464.
+ * A060464 Numbers that are not congruent to 4 or 5 mod 9.
  * @author Sean A. Irvine
  */
 public class A060464 extends LinearRecurrence {

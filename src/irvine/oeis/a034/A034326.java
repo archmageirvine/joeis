@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034326.
+ * A034326 Hours struck by a clock.
  * @author Sean A. Irvine
  */
 public class A034326 extends LinearRecurrence {

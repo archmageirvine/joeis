@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034488.
+ * A034488 Sum of n-th powers of divisors of 6.
  * @author Sean A. Irvine
  */
 public class A034488 extends LinearRecurrence {

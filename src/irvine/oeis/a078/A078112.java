@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078112.
+ * A078112 Coefficients a(n) in the unique expansion sin(1) = Sum[a(n)/n!, n&gt;=1], where a(n) satisfies 0&lt;=a(n)&lt;n.
  * @author Sean A. Irvine
  */
 public class A078112 extends LinearRecurrence {

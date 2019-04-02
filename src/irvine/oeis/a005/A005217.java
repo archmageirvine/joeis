@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007123;
 
 /**
- * A005217.
+ * A005217 Number of unlabeled unit interval graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005217 extends A007123 {

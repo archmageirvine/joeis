@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000395.
+ * A000395 6th power of rooted tree enumerator; number of linear forests of 6 rooted trees.
  * @author Sean A. Irvine
  */
 public class A000395 extends A000081 {

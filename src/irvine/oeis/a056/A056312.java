@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056312.
+ * A056312 Number of reversible strings with n beads using exactly five different colors.
  * @author Sean A. Irvine
  */
 public class A056312 extends LinearRecurrence {

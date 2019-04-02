@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000305.
+ * A000305 Number of certain rooted planar maps.
  * @author Sean A. Irvine
  */
 public class A000305 implements Sequence {

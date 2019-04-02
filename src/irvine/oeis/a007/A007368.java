@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A007368.
+ * A007368 Smallest k such that sigma(x) = k has exactly n solutions.
  * @author Sean A. Irvine
  */
 public class A007368 implements Sequence {

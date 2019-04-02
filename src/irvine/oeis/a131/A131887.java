@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131887.
+ * A131887 Number of Khalimsky-continuous functions with a three-point codomain.
  * @author Sean A. Irvine
  */
 public class A131887 extends LinearRecurrence {

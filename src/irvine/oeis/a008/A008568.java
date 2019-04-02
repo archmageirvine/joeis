@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000420;
 
 /**
- * A008568.
+ * A008568 Digits of powers of 7.
  * @author Sean A. Irvine
  */
 public class A008568 extends A000420 {

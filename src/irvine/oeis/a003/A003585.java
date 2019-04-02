@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003585.
+ * A003585 Odd numbers that are not of the form x^2 + y^2 + 10*z^2.
  * @author Sean A. Irvine
  */
 public class A003585 extends FiniteSequence {

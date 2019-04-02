@@ -5,7 +5,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005332.
+ * A005332 Certain subgraphs of a directed graph.
  * @author Sean A. Irvine
  */
 public class A005332 extends A005328 {

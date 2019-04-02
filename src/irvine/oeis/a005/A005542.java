@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005542.
+ * A005542 Numbers n such that 10*3^n - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A005542 implements Sequence {

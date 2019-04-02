@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046461.
+ * A046461 Numbers n such that concatenation of numbers from 1 to n is a semiprime.
  * @author Sean A. Irvine
  */
 public class A046461 implements Sequence {

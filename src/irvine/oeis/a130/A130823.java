@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130823.
+ * A130823 Each odd number appears thrice.
  * @author Sean A. Irvine
  */
 public class A130823 extends LinearRecurrence {

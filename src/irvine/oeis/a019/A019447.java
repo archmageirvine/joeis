@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019447.
+ * A019447 Number of monomials in expansion of determinant of an n X n Toeplitz matrix [ t(|i-j|) ] in terms of its entries.
  * @author Sean A. Irvine
  */
 public class A019447 implements Sequence {

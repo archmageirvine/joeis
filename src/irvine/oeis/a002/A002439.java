@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002439.
+ * A002439 Glaisher's T numbers.
  * @author Sean A. Irvine
  */
 public class A002439 extends MemorySequence {

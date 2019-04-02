@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007836.
+ * A007836 Springer numbers associated with symplectic group.
  * @author Sean A. Irvine
  */
 public class A007836 implements Sequence {

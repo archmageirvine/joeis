@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228748.
+ * A228748 Pell numbers (A000129) minus Lucas numbers beginning at 2 (A000032).
  * @author Sean A. Irvine
  */
 public class A228748 extends LinearRecurrence {

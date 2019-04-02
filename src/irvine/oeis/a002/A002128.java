@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002128.
+ * A002128 MacMahon's generalized sum of divisors function.
  * @author Sean A. Irvine
  */
 public class A002128 implements Sequence {

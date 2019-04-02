@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045801.
+ * A045801 1-ish numbers (end in 11, 39, 73, 77).
  * @author Sean A. Irvine
  */
 public class A045801 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a069.A069241;
 
 /**
- * A003274.
+ * A003274 Number of key permutations of length n: permutations {a_i} with |a_i-a_{i-1}| = 1 or 2.
  * @author Sean A. Irvine
  */
 public class A003274 extends A069241 {

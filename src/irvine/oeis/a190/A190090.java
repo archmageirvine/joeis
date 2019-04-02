@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190090.
+ * A190090 Diagonal sums of the triangular matrix A190088.
  * @author Sean A. Irvine
  */
 public class A190090 extends LinearRecurrence {

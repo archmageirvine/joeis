@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A002637.
+ * A002637 Number of partitions of n into not more than 5 pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A002637 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010463.
+ * A010463 Weight distribution of [32,21,6] BCH code.
  * @author Sean A. Irvine
  */
 public class A010463 extends FiniteSequence {

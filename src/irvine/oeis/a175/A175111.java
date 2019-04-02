@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175111.
+ * A175111 ((2*n+1)^5+(-1)^n)/2.
  * @author Sean A. Irvine
  */
 public class A175111 extends LinearRecurrence {

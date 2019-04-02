@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165767.
+ * A165767 Numbers m such that 2^m-m is a semiprime.
  * @author Sean A. Irvine
  */
 public class A165767 implements Sequence {

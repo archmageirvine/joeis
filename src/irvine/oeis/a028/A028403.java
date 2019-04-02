@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028403.
+ * A028403 Number of types of Boolean functions of n variables under a certain group.
  * @author Sean A. Irvine
  */
 public class A028403 extends LinearRecurrence {

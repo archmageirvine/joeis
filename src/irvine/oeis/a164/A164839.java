@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A164839.
+ * A164839 Left-truncatable squares: every suffix is square.
  * @author Sean A. Irvine
  */
 public class A164839 implements Sequence {

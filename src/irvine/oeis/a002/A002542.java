@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002542.
+ * A002542 Number of two-valued complete Post functions of n variables.
  * @author Sean A. Irvine
  */
 public class A002542 implements Sequence {

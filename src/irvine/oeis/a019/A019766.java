@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019766.
+ * A019766 Decimal expansion of 2*e/9.
  * @author Sean A. Irvine
  */
 public class A019766 extends DecimalExpansionSequence {

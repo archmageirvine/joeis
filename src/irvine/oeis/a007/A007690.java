@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007690.
+ * A007690 Number of partitions of n in which no part occurs just once.
  * @author Sean A. Irvine
  */
 public class A007690 implements Sequence {

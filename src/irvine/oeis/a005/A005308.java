@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 /**
- * A005308.
+ * A005308 Bosonic string states.
  * @author Sean A. Irvine
  */
 public class A005308 extends A005303 {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129444.
+ * A129444 Numbers n such that centered triangular number A005448(n) = 3n(n-1)/2 + 1 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A129444 extends LinearRecurrence {

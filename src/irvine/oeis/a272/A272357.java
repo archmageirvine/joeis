@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272357.
+ * A272357 a(n) = n*(105*n^3 - 210*n^2 + 147*n - 34).
  * @author Sean A. Irvine
  */
 public class A272357 extends LinearRecurrence {

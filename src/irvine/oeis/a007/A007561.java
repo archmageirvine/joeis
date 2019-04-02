@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007561.
+ * A007561 Number of asymmetric rooted connected graphs where every block is a complete graph.
  * @author Sean A. Irvine
  */
 public class A007561 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A208901.
+ * A208901 Number of bitstrings of length n (with at least two runs) where the last two runs have different lengths.
  * @author Sean A. Irvine
  */
 public class A208901 extends LinearRecurrence {

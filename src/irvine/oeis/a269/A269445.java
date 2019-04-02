@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269445.
+ * A269445 a(n) = Sum_{k=0..n} floor(k/13).
  * @author Sean A. Irvine
  */
 public class A269445 extends LinearRecurrence {

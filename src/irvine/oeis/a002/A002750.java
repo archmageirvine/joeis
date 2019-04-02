@@ -9,7 +9,7 @@ import irvine.math.q.Q;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002750.
+ * A002750 Sum of logarithmic numbers.
  * @author Sean A. Irvine
  */
 public class A002750 extends A000203 {

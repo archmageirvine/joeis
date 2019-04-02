@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A007616.
+ * A007616 Palindromic reflectable primes.
  * @author Sean A. Irvine
  */
 public class A007616 extends A002385 {

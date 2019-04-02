@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005389.
+ * A005389 Number of Hamiltonian circuits on 2n times 4 rectangle.
  * @author Sean A. Irvine
  */
 public class A005389 extends LinearRecurrence {

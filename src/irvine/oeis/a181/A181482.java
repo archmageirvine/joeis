@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181482.
+ * A181482 The sum of the first n integers, with every third integer taken negative.
  * @author Sean A. Irvine
  */
 public class A181482 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005538.
+ * A005538 Numbers n such that 8*3^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A005538 implements Sequence {

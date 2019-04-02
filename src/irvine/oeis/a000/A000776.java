@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000776.
+ * A000776 a(n) = n! * (1 + 2*Sum_{k=1..n} 1/k).
  * @author Sean A. Irvine
  */
 public class A000776 implements Sequence {

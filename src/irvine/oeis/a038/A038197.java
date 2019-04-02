@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038197.
+ * A038197 4-wave sequence.
  * @author Sean A. Irvine
  */
 public class A038197 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103221.
+ * A103221 Number of partitions of n into parts 2 and 3.
  * @author Sean A. Irvine
  */
 public class A103221 extends LinearRecurrence {

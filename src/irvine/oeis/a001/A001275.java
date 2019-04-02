@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001275.
+ * A001275 Smallest prime p such that the product of q/(q-1) over the primes from prime(n) to p is greater than 2.
  * @author Sean A. Irvine
  */
 public class A001275 implements Sequence {

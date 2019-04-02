@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A081801.
+ * A081801 Decimal expansion of electron mass in kg.
  * @author Sean A. Irvine
  */
 public class A081801 extends DoubleDecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012488.
+ * A012488 tanh(cos(x)*arcsin(x))=x-4/3!*x^3+60/5!*x^5-2056/7!*x^7+127376/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012488 implements Sequence {

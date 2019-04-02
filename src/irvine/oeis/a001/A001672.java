@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001672.
+ * A001672 a(n) = floor(Pi^n).
  * @author Sean A. Irvine
  */
 public class A001672 implements Sequence {

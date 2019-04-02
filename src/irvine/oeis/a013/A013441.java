@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013441.
+ * A013441 sin(tan(x)-arctan(x))=4/3!*x^3-8/5!*x^5+992/7!*x^7-50304/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013441 implements Sequence {

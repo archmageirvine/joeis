@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121740.
+ * A121740 Solutions to the Pell equation x^2 - 17y^2 = 1 (y values).
  * @author Sean A. Irvine
  */
 public class A121740 extends LinearRecurrence {

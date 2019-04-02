@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008487.
+ * A008487 Expansion of (1-x^5) / (1-x)^5.
  * @author Sean A. Irvine
  */
 public class A008487 extends CoordinationSequence {

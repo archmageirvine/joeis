@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002293;
 
 /**
- * A005038.
+ * A005038 Number of nonequivalent dissections of a polygon into n pentagons by nonintersecting diagonals up to rotation..
  * @author Sean A. Irvine
  */
 public class A005038 extends A002293 {

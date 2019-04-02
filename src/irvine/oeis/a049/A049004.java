@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049004.
+ * A049004 First letter of English names for months of year, mapping A -&gt; 1, B -&gt; 2 etc.
  * @author Sean A. Irvine
  */
 public class A049004 extends LinearRecurrence {

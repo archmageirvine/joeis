@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000958.
+ * A000958 Number of ordered rooted trees with n edges having root of odd degree.
  * @author Sean A. Irvine
  */
 public class A000958 extends A000957 {

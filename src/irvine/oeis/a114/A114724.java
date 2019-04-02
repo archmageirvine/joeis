@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114724.
+ * A114724 Each term is the sum of the next two digits.
  * @author Sean A. Irvine
  */
 public class A114724 extends LinearRecurrence {

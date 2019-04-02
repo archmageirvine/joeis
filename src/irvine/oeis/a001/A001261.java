@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001261.
+ * A001261 Number of permutations of length n with 5 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
 public class A001261 implements Sequence {

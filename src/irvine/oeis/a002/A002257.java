@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002257.
+ * A002257 Numbers n such that 13*4^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002257 implements Sequence {

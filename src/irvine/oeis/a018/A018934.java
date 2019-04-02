@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055790;
 
 /**
- * A018934.
+ * A018934 From the game of Mousetrap.
  * @author Sean A. Irvine
  */
 public class A018934 extends A055790 {

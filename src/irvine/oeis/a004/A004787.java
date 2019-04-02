@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004787.
+ * A004787 7!(2n-8)!/n!(n-1)! is an integer.
  * @author Sean A. Irvine
  */
 public class A004787 implements Sequence {

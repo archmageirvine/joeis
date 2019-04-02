@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001651.
+ * A001651 Numbers not divisible by 3.
  * @author Sean A. Irvine
  */
 public class A001651 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.group.Unitary33;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A284953.
+ * A284953 Number of elements of order n in the simple unitary group U3(3).
  * @author Sean A. Irvine
  */
 public class A284953 extends OrdersFiniteGroupSequence {

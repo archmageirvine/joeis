@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007769.
+ * A007769 Number of chord diagrams with n chords; number of pairings on a necklace.
  * @author Sean A. Irvine
  */
 public class A007769 implements Sequence {

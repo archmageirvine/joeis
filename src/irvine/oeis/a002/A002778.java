@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A002778.
+ * A002778 Numbers whose square is a palindrome.
  * @author Sean A. Irvine
  */
 public class A002778 implements Sequence {

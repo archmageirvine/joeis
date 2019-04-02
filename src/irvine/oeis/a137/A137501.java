@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137501.
+ * A137501 The even numbers repeated, with alternating signs.
  * @author Sean A. Irvine
  */
 public class A137501 extends LinearRecurrence {

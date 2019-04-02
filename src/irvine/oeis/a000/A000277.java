@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000277.
+ * A000277 3*n - 2*floor(sqrt(4*n+5)) + 5.
  * @author Sean A. Irvine
  */
 public class A000277 implements Sequence {

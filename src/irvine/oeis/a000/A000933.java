@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000933.
+ * A000933 Genus of complete graph on n nodes.
  * @author Sean A. Irvine
  */
 public class A000933 implements Sequence {

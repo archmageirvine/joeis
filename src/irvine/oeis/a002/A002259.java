@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002259.
+ * A002259 Numbers n such that 17*2^n+1 is prime.
  * @author Sean A. Irvine
  */
 public class A002259 implements Sequence {

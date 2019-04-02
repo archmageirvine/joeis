@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A003044.
+ * A003044 For n &gt; 4, a(n) is the least integer &gt; a(n-1) with precisely two representations a(n) = a(i) + a(j), 1 &lt;= i &lt; j &lt; n; and a(n) = n for n=1..4.
  * @author Sean A. Irvine
  */
 public class A003044 extends MemorySequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000121.
+ * A000121 Number of representations of n as a sum of Fibonacci numbers (1 is allowed twice as a part).
  * @author Sean A. Irvine
  */
 public class A000121 implements Sequence {

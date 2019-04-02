@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290360.
+ * A290360 Number of 6-leaf rooted trees with n levels.
  * @author Sean A. Irvine
  */
 public class A290360 extends LinearRecurrence {

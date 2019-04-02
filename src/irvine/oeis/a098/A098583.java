@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098583.
+ * A098583 Expansion of (1+2*x+4*x^2+8*x^3+16*x^4)/(1-x-32*x^6).
  * @author Sean A. Irvine
  */
 public class A098583 extends LinearRecurrence {

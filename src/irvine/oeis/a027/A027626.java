@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027626.
+ * A027626 Denominator of n*(n+5)/((n+2)*(n+3)).
  * @author Sean A. Irvine
  */
 public class A027626 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005911.
+ * A005911 Number of points on surface of truncated cube: 46n^2 + 2.
  * @author Sean A. Irvine
  */
 public class A005911 implements Sequence {

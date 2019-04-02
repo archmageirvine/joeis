@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import java.util.Arrays;
 
 /**
- * A000950.
+ * A000950 Number of forests with n nodes and height at most 3.
  * @author Sean A. Irvine
  */
 public class A000950 extends A000949 {

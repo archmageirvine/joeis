@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001324.
+ * A001324 Number of equivalence classes of n-valued Post functions of 2 variables under action of semi-direct product of symmetric group S_2 and complementing group C(2,n).
  * @author Sean A. Irvine
  */
 public class A001324 implements Sequence {

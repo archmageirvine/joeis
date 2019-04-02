@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006532.
+ * A006532 Numbers n such that sum of divisors of n is a square.
  * @author Sean A. Irvine
  */
 public class A006532 implements Sequence {

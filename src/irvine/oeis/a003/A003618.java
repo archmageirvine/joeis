@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003618.
+ * A003618 Largest n-digit prime.
  * @author Sean A. Irvine
  */
 public class A003618 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009070.
+ * A009070 Ordered sides of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009070 implements Sequence {

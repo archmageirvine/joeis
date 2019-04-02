@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190531.
+ * A190531 Number of idempotents in Identity Difference Partial Transformation semigroup.
  * @author Sean A. Irvine
  */
 public class A190531 extends LinearRecurrence {

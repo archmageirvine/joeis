@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004701.
+ * A004701 Expansion of e.g.f. 1/(4 - exp(x) - exp(2*x) - exp(3*x)).
  * @author Sean A. Irvine
  */
 public class A004701 implements Sequence {

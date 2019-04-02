@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.InverseBinomialTransformSequence;
 
 /**
- * A007158.
+ * A007158 Essentially n-ary operations in a certain 3-element algebra.
  * @author Sean A. Irvine
  */
 public class A007158 extends InverseBinomialTransformSequence {

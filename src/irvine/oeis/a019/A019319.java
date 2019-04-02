@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019319.
+ * A019319 Number of possible chess diagrams after n plies.
  * @author Sean A. Irvine
  */
 public class A019319 implements Sequence {

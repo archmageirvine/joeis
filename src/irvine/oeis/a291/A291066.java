@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291066.
+ * A291066 Number of edges in the n-Menger sponge graph.
  * @author Sean A. Irvine
  */
 public class A291066 extends LinearRecurrence {

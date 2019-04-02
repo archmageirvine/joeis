@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293143.
+ * A293143 Number of vertex points in a Sierpinski Carpet grid subdivided into squares: a(n+1) = 8*a(n) - 8*(3^n+1), a(0) = 4.
  * @author Sean A. Irvine
  */
 public class A293143 extends LinearRecurrence {

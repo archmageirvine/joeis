@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014312.
+ * A014312 Numbers with exactly 4 ones in binary expansion.
  * @author Sean A. Irvine
  */
 public class A014312 implements Sequence {

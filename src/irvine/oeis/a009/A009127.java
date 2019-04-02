@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.math.z.Z;
 
 /**
- * A009127.
+ * A009127 Area of more than one Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A009127 extends A009111 {

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113754.
+ * A113754 Number of possible squares on an n^2 X n^2 grid.
  * @author Sean A. Irvine
  */
 public class A113754 extends LinearRecurrence {

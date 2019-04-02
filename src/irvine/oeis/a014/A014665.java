@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014665.
+ * A014665 Number of new fractions m/n &lt; 1, where (m,n)=1 and "new" means the value of mn has not occurred before.
  * @author Sean A. Irvine
  */
 public class A014665 implements Sequence {

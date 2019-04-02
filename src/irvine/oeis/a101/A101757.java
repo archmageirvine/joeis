@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000073;
 
 /**
- * A101757.
+ * A101757 Indices of semiprime tribonacci numbers.
  * @author Sean A. Irvine
  */
 public class A101757 extends A000073 {

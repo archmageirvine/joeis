@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193828.
+ * A193828 Even generalized pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A193828 extends LinearRecurrence {

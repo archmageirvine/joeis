@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012975.
+ * A012975 arcsin(arctan(x)+sin(x))=2*x+5/3!*x^3+193/5!*x^5+16319/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A012975 implements Sequence {

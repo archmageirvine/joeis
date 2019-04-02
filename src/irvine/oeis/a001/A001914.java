@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001914.
+ * A001914 Cyclic numbers: 10 is a quadratic residue modulo p and class of mantissa is 2.
  * @author Sean A. Irvine
  */
 public class A001914 implements Sequence {

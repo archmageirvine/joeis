@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A000873.
+ * A000873 Numbers beginning with letter 'e' in English.
  * @author Sean A. Irvine
  */
 public class A000873 implements Sequence {

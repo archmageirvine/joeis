@@ -8,7 +8,7 @@ import irvine.oeis.BellTransform;
 import irvine.oeis.Sequence;
 
 /**
- * A265607.
+ * A265607 Triangle read by rows, T(n,k) = n!*B(n,k) for n&gt;=0 and 0&lt;=k&lt;=n, where B(n,k) is the Bell matrix with generator 1/j for j&gt;=1.
  * @author Sean A. Irvine
  */
 public class A265607 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011270.
+ * A011270 Hybrid binary rooted trees with n nodes whose root is labeled by "n".
  * @author Sean A. Irvine
  */
 public class A011270 implements Sequence {

@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * A048211.
+ * A048211 Number of distinct resistances that can be produced from a circuit of n equal resistors using only series and parallel combinations.
  * @author Sean A. Irvine
  */
 public class A048211 implements Sequence {

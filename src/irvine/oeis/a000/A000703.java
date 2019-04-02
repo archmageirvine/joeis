@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000703.
+ * A000703 Chromatic number (or Heawood number) of nonorientable surface with n crosscaps.
  * @author Sean A. Irvine
  */
 public class A000703 implements Sequence {

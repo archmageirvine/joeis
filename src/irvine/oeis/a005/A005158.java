@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005158.
+ * A005158 Number of alternating sign n X n matrices invariant under a half-turn.
  * @author Sean A. Irvine
  */
 public class A005158 extends MemorySequence {

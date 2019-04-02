@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006562.
+ * A006562 Balanced primes (of order one): primes which are the average of the previous prime and the following prime.
  * @author Sean A. Irvine
  */
 public class A006562 implements Sequence {

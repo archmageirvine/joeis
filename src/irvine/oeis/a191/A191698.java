@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191698.
+ * A191698 a(n) = (122n^3 + 140n^2 + 45n + 3n(-1)^n)/8.
  * @author Sean A. Irvine
  */
 public class A191698 extends LinearRecurrence {

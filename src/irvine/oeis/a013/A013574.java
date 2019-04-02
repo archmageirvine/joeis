@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A013574.
+ * A013574 Minimal scope of an (n,2) difference triangle.
  * @author Sean A. Irvine
  */
 public class A013574 extends LinearRecurrence {

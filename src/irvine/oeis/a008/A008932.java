@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 /**
- * A008932.
+ * A008932 Number of increasing sequences of Goldbach type of length n; a(0) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A008932 extends A008933 {

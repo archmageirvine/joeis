@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006608.
+ * A006608 Number of n-node graphs not determined by their spectrum.
  * @author Sean A. Irvine
  */
 public class A006608 implements Sequence, GraphProcessor {

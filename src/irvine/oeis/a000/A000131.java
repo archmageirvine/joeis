@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000131.
+ * A000131 Number of asymmetrical dissections of n-gon.
  * @author Sean A. Irvine
  */
 public class A000131 implements Sequence {

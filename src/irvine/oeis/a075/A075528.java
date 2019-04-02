@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075528.
+ * A075528 Triangular numbers that are half other triangular numbers.
  * @author Sean A. Irvine
  */
 public class A075528 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.List;
 
 /**
- * A003640.
+ * A003640 Number of genera of imaginary quadratic field with discriminant -k, k = A003657(n).
  * @author Sean A. Irvine
  */
 public class A003640 implements Sequence {

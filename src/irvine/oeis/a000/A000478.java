@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000478.
+ * A000478 Number of ways of placing n labeled balls into 3 indistinguishable boxes with at least 2 balls in each box.
  * @author Sean A. Irvine
  */
 public class A000478 implements Sequence {

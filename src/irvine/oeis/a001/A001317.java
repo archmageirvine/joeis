@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001317.
+ * A001317 Sierpi&#324;ski's triangle (Pascal's triangle mod 2) converted to decimal.
  * @author Sean A. Irvine
  */
 public class A001317 implements Sequence {

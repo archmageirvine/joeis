@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081347.
+ * A081347 First column in maze arrangement of natural numbers.
  * @author Sean A. Irvine
  */
 public class A081347 extends LinearRecurrence {

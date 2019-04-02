@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012033.
+ * A012033 sech(sin(sinh(x)))=1-1/2!*x^2+5/4!*x^4-13/6!*x^6-407/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012033 implements Sequence {

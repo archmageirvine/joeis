@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103820.
+ * A103820 Whitney transform of 3^n.
  * @author Sean A. Irvine
  */
 public class A103820 extends LinearRecurrence {

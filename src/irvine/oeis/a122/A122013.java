@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122013.
+ * A122013 Semi-Linear ( two branches) bonding 8 X 8 matrix Markov: Characteristic polynomial: (1 - 7 x^2 + 13 x^4 - 7 x^6 + x^8)=(1 + x - 3 x^2 - x^3 + x^4)(1 - x - 3 x^2 +x^3 + x^4).
  * @author Sean A. Irvine
  */
 public class A122013 extends LinearRecurrence {

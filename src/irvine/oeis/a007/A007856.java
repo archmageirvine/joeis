@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007856.
+ * A007856 Subtrees in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007856 implements Sequence {

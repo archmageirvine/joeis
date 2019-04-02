@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274759.
+ * A274759 Modified quadranacci series.
  * @author Sean A. Irvine
  */
 public class A274759 extends LinearRecurrence {

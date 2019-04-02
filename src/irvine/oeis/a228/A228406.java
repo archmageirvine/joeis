@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228406.
+ * A228406 Sequences from the quartic oscillator.
  * @author Sean A. Irvine
  */
 public class A228406 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158803.
+ * A158803 Numbers k such that k^2 == 2 (mod 41).
  * @author Sean A. Irvine
  */
 public class A158803 extends LinearRecurrence {

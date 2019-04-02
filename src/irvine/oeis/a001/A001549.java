@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000232;
 
 /**
- * A001549.
+ * A001549 Related to Gilbreath conjecture.
  * @author Sean A. Irvine
  */
 public class A001549 extends A000232 {

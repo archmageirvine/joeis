@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007029.
+ * A007029 Number of bipartite polyhedral graphs with n faces.
  * @author Sean A. Irvine
  */
 public class A007029 implements Sequence {

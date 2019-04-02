@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013161.
+ * A013161 Expansion of e.g.f. sinh(arctanh(x) + log(x+1)).
  * @author Sean A. Irvine
  */
 public class A013161 implements Sequence {

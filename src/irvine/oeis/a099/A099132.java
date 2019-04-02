@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099132.
+ * A099132 Quintisection of 1/(1-x^5-x^6).
  * @author Sean A. Irvine
  */
 public class A099132 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011766.
+ * A011766 Number of days in A.D. years from 100*n through 100*n + 99.
  * @author Sean A. Irvine
  */
 public class A011766 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056490.
+ * A056490 Number of periodic palindromes using exactly four different symbols.
  * @author Sean A. Irvine
  */
 public class A056490 extends LinearRecurrence {

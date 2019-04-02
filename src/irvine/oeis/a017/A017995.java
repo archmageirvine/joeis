@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017995.
+ * A017995 Powers of cube root of 7 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017995 implements Sequence {

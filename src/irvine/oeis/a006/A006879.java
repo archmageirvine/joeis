@@ -5,7 +5,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A006879.
+ * A006879 Number of primes with n digits.
  * @author Sean A. Irvine
  */
 public class A006879 extends DifferenceSequence {

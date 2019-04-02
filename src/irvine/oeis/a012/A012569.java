@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012569.
+ * A012569 sec(sinh(x)*cos(x))=1+1/2!*x^2-3/4!*x^4-123/6!*x^6-455/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012569 implements Sequence {

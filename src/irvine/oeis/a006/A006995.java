@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A006995.
+ * A006995 Binary palindromes: numbers whose binary expansion is palindromic.
  * @author Sean A. Irvine
  */
 public class A006995 implements Sequence {

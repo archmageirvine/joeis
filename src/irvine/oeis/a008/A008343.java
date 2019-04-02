@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008343.
+ * A008343 a(1)=1; thereafter a(n+1) = a(n)-n if a(n) &gt;= n otherwise a(n+1) = a(n)+n.
  * @author Sean A. Irvine
  */
 public class A008343 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274325.
+ * A274325 Number of partitions of n^5 into at most two parts.
  * @author Sean A. Irvine
  */
 public class A274325 extends LinearRecurrence {

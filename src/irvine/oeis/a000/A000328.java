@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000328.
+ * A000328 Number of points of norm &lt;= n^2 in square lattice.
  * @author Sean A. Irvine
  */
 public class A000328 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002616.
+ * A002616 Reduced totient function (divided by 2).
  * @author Sean A. Irvine
  */
 public class A002616 extends A002322 {

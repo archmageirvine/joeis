@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168182.
+ * A168182 Characteristic function of numbers that are not multiples of 9.
  * @author Sean A. Irvine
  */
 public class A168182 extends LinearRecurrence {

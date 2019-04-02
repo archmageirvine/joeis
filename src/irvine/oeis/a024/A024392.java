@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024392.
+ * A024392 a(n) = 3rd elementary symmetric function of the first n+2 positive integers congruent to 2 mod 3.
  * @author Sean A. Irvine
  */
 public class A024392 extends LinearRecurrence {

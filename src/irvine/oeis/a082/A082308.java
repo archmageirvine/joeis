@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082308.
+ * A082308 Expansion of e.g.f. (1+x)*exp(4*x)*cosh(x).
  * @author Sean A. Irvine
  */
 public class A082308 extends LinearRecurrence {

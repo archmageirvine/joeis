@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249910.
+ * A249910 Digital root of A003500(n).
  * @author Sean A. Irvine
  */
 public class A249910 extends LinearRecurrence {

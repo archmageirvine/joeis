@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147537.
+ * A147537 Numbers whose binary representation is the concatenation of 2n-1 digits 1 and n digits 0.
  * @author Sean A. Irvine
  */
 public class A147537 extends LinearRecurrence {

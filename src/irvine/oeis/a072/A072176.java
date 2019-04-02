@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072176.
+ * A072176 Unimodal analog of Fibonacci numbers: a(n+1)=sum_k A071922(n-k,k).
  * @author Sean A. Irvine
  */
 public class A072176 extends LinearRecurrence {

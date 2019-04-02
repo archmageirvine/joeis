@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003443.
+ * A003443 Number of nonequivalent dissections of an n-gon into n-4 polygons by nonintersecting diagonals rooted at a cell up to rotation.
  * @author Sean A. Irvine
  */
 public class A003443 extends A003442 {

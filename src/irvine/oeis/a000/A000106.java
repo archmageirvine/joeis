@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000106.
+ * A000106 2nd power of rooted tree enumerator; number of linear forests of 2 rooted trees.
  * @author Sean A. Irvine
  */
 public class A000106 implements Sequence {

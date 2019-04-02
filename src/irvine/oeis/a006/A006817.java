@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A006817.
+ * A006817 Trails of length n on square lattice.
  * @author Sean A. Irvine
  */
 public class A006817 implements Sequence {

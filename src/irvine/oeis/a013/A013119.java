@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013119.
+ * A013119 E.g.f. arcsin(tanh(x)+log(x+1)) = 2*x - 1/2!*x^2 + 8/3!*x^3 - 30/4!*x^4 +- ...
  * @author Sean A. Irvine
  */
 public class A013119 implements Sequence {

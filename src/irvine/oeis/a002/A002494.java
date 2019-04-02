@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000088;
 import java.util.ArrayList;
 
 /**
- * A002494.
+ * A002494 Number of n-node graphs without isolated nodes.
  * @author Sean A. Irvine
  */
 public class A002494 extends A000088 {

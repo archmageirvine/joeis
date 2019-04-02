@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034781.
+ * A034781 Triangle of number of rooted trees with n &gt;= 2 nodes and height h &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A034781 extends MemoryFunction3<Integer, Z> implements Sequence {

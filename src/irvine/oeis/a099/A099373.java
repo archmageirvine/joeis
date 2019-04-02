@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099373.
+ * A099373 Twice Chebyshev's polynomials of the first kind, T(n,x), evaluated at 83/2.
  * @author Sean A. Irvine
  */
 public class A099373 extends LinearRecurrence {

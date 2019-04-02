@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A160504.
+ * A160504 a(n) = number of ordered pairs (i,j) such that a(i)+a(j)&lt;n, i&lt;j&lt;n; a(1)=a(2)=1.
  * @author Sean A. Irvine
  */
 public class A160504 implements Sequence {

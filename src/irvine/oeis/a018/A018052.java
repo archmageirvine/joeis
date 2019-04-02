@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018052.
+ * A018052 Powers of fourth root of 3 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018052 implements Sequence {

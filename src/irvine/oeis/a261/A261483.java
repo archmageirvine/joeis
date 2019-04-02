@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261483.
+ * A261483 Number of set partitions of [n] into exactly seven parts such that no part contains two elements with a circular distance less than three.
  * @author Sean A. Irvine
  */
 public class A261483 extends LinearRecurrence {

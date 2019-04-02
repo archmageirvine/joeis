@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A002133.
+ * A002133 Number of partitions of n with exactly two part sizes.
  * @author Sean A. Irvine
  */
 public class A002133 implements Sequence {

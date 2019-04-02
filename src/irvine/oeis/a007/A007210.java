@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007210.
+ * A007210 Oscillates under partition transform.
  * @author Sean A. Irvine
  */
 public class A007210 implements Sequence {

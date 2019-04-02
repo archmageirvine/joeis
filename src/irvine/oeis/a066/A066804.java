@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066804.
+ * A066804 Sum of diagonal elements and those below it for a square matrix of integers, starting with 1.
  * @author Sean A. Irvine
  */
 public class A066804 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247128.
+ * A247128 Positive numbers that are congruent to {0,5,9,13,17} mod 22.
  * @author Sean A. Irvine
  */
 public class A247128 extends LinearRecurrence {

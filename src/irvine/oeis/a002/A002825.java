@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002825.
+ * A002825 Number of precomplete Post functions.
  * @author Sean A. Irvine
  */
 public class A002825 implements Sequence {

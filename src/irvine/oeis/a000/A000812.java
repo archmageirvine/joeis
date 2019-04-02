@@ -4,7 +4,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000812.
+ * A000812 Number of switching networks (see Harrison reference for precise definition).
  * @author Sean A. Irvine
  */
 public class A000812 extends A000721 {

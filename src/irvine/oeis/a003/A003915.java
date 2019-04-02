@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003915.
+ * A003915 Degrees of irreducible representations of Harada-Norton group HN.
  * @author Sean A. Irvine
  */
 public class A003915 extends FiniteSequence {

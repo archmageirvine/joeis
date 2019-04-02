@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A002183.
+ * A002183 Number of divisors of n-th highly composite number.
  * @author Sean A. Irvine
  */
 public class A002183 extends A000005 {

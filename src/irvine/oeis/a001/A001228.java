@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001228.
+ * A001228 Orders of sporadic simple groups.
  * @author Sean A. Irvine
  */
 public class A001228 extends FiniteSequence {

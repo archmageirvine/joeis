@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000204;
 
 /**
- * A005972.
+ * A005972 Partial sums of fourth powers of Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A005972 extends A000204 {

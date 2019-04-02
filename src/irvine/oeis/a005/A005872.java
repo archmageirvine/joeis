@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005872.
+ * A005872 Theta series of hexagonal close-packing with respect to octahedral hole.
  * @author Sean A. Irvine
  */
 public class A005872 implements Sequence {

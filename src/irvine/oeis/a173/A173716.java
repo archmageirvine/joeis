@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001358;
 
 /**
- * A173716.
+ * A173716 Smallest number that contains the first n semiprimes as substrings.
  * @author Sean A. Irvine
  */
 public class A173716 extends A001358 {

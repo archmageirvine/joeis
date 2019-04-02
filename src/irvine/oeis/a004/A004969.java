@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004969.
+ * A004969 Ceiling of n*phi^14, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004969 implements Sequence {

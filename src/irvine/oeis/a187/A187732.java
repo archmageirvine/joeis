@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187732.
+ * A187732 Expansion of x/(x^4 - 13x^3 + 36x^2 - 13x + 1).
  * @author Sean A. Irvine
  */
 public class A187732 extends LinearRecurrence {

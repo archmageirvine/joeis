@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A013948.
+ * A013948 Positions of 2's in Kolakoski sequence (A000002).
  * @author Sean A. Irvine
  */
 public class A013948 extends A000002 {

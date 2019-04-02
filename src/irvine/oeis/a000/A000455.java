@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000455.
+ * A000455 Digits of powers of 2.
  * @author Sean A. Irvine
  */
 public class A000455 implements Sequence {

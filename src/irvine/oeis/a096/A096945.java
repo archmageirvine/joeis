@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096945.
+ * A096945 Eighth column of (1,5)-Pascal triangle A096940.
  * @author Sean A. Irvine
  */
 public class A096945 extends LinearRecurrence {

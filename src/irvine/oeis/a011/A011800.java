@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011800.
+ * A011800 Number of labeled forests of n nodes each component of which is a path.
  * @author Sean A. Irvine
  */
 public class A011800 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095372.
+ * A095372 1+integers repeating "90" decimal digit pattern:.
  * @author Sean A. Irvine
  */
 public class A095372 extends LinearRecurrence {

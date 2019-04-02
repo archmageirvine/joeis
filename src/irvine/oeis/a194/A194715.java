@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194715.
+ * A194715 15 times triangular numbers.
  * @author Sean A. Irvine
  */
 public class A194715 extends LinearRecurrence {

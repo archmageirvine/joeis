@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081272.
+ * A081272 Downward vertical of triangular spiral in A051682.
  * @author Sean A. Irvine
  */
 public class A081272 extends LinearRecurrence {

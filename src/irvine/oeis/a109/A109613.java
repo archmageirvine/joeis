@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109613.
+ * A109613 Odd numbers repeated.
  * @author Sean A. Irvine
  */
 public class A109613 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133311.
+ * A133311 The nonnegative integers reordered in groups of 5 even numbers followed by 5 odd numbers.
  * @author Sean A. Irvine
  */
 public class A133311 extends LinearRecurrence {

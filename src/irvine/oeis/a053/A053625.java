@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053625.
+ * A053625 Product of 6 consecutive integers.
  * @author Sean A. Irvine
  */
 public class A053625 extends LinearRecurrence {

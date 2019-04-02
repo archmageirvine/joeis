@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000704.
+ * A000704 Number of degree-n even permutations of order dividing 2.
  * @author Sean A. Irvine
  */
 public class A000704 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A155512.
+ * A155512 Emirps with digits 0 and 1 only.
  * @author Sean A. Irvine
  */
 public class A155512 implements Sequence {

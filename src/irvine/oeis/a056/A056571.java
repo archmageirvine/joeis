@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056571.
+ * A056571 Fourth power of Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A056571 extends LinearRecurrence {

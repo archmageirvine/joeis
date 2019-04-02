@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002255.
+ * A002255 Numbers n such that 7*4^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002255 implements Sequence {

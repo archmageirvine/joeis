@@ -7,7 +7,7 @@ import irvine.oeis.OrdersFiniteGroupSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A057740.
+ * A057740 Irregular triangle read by rows: T(n,k) = number of elements of alternating group A_n having order k, for n &gt;= 1, 1&lt;=k&lt;=A051593(n).
  * @author Sean A. Irvine
  */
 public class A057740 implements Sequence {

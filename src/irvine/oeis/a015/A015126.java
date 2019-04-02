@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A015126.
+ * A015126 Least k such that phi(k) = phi(n).
  * @author Sean A. Irvine
  */
 public class A015126 implements Sequence {

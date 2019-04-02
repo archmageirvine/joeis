@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000142;
 
 /**
- * A004192.
+ * A004192 Numbers obtained by reversing digits of factorial numbers.
  * @author Sean A. Irvine
  */
 public class A004192 extends A000142 {

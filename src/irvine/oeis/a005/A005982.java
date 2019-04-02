@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005982.
+ * A005982 3 up, 3 down, 3 up, ... permutations of length 3n+1.
  * @author Sean A. Irvine
  */
 public class A005982 extends MemoryFunction3<Long, Z> implements Sequence {

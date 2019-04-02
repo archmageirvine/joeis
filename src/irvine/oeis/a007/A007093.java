@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007093.
+ * A007093 Numbers in base 7.
  * @author Sean A. Irvine
  */
 public class A007093 implements Sequence {

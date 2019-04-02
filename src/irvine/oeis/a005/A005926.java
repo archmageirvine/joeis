@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005926.
+ * A005926 Theta series of diamond with respect to midpoint of edge.
  * @author Sean A. Irvine
  */
 public class A005926 implements Sequence {

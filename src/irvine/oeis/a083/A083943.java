@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083943.
+ * A083943 A generalized Jacobsthal sequence.
  * @author Sean A. Irvine
  */
 public class A083943 extends LinearRecurrence {

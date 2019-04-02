@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A114478.
+ * A114478 Triangle read by rows; n-th row begins with n and contains n nonprimes greater than n and not already used.
  * @author Sean A. Irvine
  */
 public class A114478 implements Sequence {

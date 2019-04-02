@@ -4,7 +4,7 @@ import irvine.oeis.InverseEulerTransformSequence;
 import irvine.oeis.a003.A003430;
 
 /**
- * A007453.
+ * A007453 Number of connected N-free posets with n nodes.
  * @author Sean A. Irvine
  */
 public class A007453 extends InverseEulerTransformSequence {

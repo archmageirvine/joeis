@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055848.
+ * A055848 Expansion of (1+5*x)/(1-x)^10.
  * @author Sean A. Irvine
  */
 public class A055848 extends LinearRecurrence {

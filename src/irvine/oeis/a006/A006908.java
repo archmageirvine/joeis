@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006908.
+ * A006908 Number of nonzero elements in the character table of the symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A006908 extends A006907 {

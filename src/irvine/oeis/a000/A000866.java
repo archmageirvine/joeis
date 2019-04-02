@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000866.
+ * A000866 2^n written in base 5.
  * @author Sean A. Irvine
  */
 public class A000866 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007059.
+ * A007059 Number of balanced ordered trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A007059 extends MemoryFunction2<Long, Z> implements Sequence {

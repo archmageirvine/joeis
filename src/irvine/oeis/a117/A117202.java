@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117202.
+ * A117202 Binomial transform of n*F(n).
  * @author Sean A. Irvine
  */
 public class A117202 extends LinearRecurrence {

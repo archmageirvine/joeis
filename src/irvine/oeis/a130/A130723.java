@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130723.
+ * A130723 Lowest common multiple of 3 and n^2+n+1.
  * @author Sean A. Irvine
  */
 public class A130723 extends LinearRecurrence {

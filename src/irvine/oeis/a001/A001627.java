@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000186;
 
 /**
- * A001627.
+ * A001627 Related to Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001627 extends A000186 implements Serializable {

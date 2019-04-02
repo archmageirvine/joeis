@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241592.
+ * A241592 Degree of Somos4-oid polynomial s_n(x).
  * @author Sean A. Irvine
  */
 public class A241592 extends LinearRecurrence {

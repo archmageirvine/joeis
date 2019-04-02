@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000338.
+ * A000338 Expansion of (5-2x)(1-x^3)/(1-x)^4.
  * @author Sean A. Irvine
  */
 public class A000338 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A005263.
+ * A005263 Number of labeled Greg trees.
  * @author Sean A. Irvine
  */
 public class A005263 extends A005264 {

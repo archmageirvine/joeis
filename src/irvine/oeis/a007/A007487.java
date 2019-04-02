@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007487.
+ * A007487 Sum of 9th powers.
  * @author Sean A. Irvine
  */
 public class A007487 implements Sequence {

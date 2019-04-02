@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198833.
+ * A198833 The number of inequivalent ways to color the vertices of a regular octahedron using at most n colors.
  * @author Sean A. Irvine
  */
 public class A198833 extends LinearRecurrence {

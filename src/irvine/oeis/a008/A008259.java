@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008259.
+ * A008259 Coordination sequence T2 for Moganite, also for BGB1.
  * @author Sean A. Irvine
  */
 public class A008259 extends CoordinationSequence {

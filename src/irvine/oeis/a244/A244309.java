@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244309.
+ * A244309 a(n) = F(n)^3 - F(n)^2, where F(n) is the n-th Fibonacci number (A000045).
  * @author Sean A. Irvine
  */
 public class A244309 extends LinearRecurrence {

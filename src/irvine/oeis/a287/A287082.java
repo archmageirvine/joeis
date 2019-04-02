@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287082.
+ * A287082 Number of edge covers on the n-web graph.
  * @author Sean A. Irvine
  */
 public class A287082 extends LinearRecurrence {

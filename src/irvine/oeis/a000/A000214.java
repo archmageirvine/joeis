@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000214.
+ * A000214 Number of equivalence classes of Boolean functions of n variables under action of AG(n,2).
  * @author Sean A. Irvine
  */
 public class A000214 implements Sequence {

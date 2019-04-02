@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018084.
+ * A018084 Powers of fourth root of 14 rounded down.
  * @author Sean A. Irvine
  */
 public class A018084 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292026.
+ * A292026 Wiener index of the n-Sierpinski tetrahedron graph.
  * @author Sean A. Irvine
  */
 public class A292026 extends LinearRecurrence {

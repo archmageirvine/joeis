@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a228.A228601;
 
 /**
- * A007098.
+ * A007098 Number of unlabeled bisectable trees with 2n+1 nodes.
  * @author Sean A. Irvine
  */
 public class A007098 extends A228601 {

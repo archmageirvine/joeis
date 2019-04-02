@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066402.
+ * A066402 From expansion of Belyi function for dodecahedron.
  * @author Sean A. Irvine
  */
 public class A066402 extends LinearRecurrence {

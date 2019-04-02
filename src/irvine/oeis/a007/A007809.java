@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A007809.
+ * A007809 Smallest prime with n distinct digits.
  * @author Sean A. Irvine
  */
 public class A007809 extends FiniteSequence {

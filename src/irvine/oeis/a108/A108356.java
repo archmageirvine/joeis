@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108356.
+ * A108356 Count, repeating multiples of 3 four times, all other numbers twice.
  * @author Sean A. Irvine
  */
 public class A108356 extends LinearRecurrence {

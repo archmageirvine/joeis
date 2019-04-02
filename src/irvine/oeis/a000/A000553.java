@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000553.
+ * A000553 Number of labeled rooted trees of height 4 with n nodes.
  * @author Sean A. Irvine
  */
 public class A000553 implements Sequence {

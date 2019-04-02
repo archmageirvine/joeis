@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003003.
+ * A003003 Size of the largest subset of the numbers [1...n] which doesn't contain a 4-term arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A003003 implements Sequence {

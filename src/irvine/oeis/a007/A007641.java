@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007641.
+ * A007641 Primes of the form 2*n^2 + 29.
  * @author Sean A. Irvine
  */
 public class A007641 implements Sequence {

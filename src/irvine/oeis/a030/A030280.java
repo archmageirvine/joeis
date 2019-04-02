@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030280.
+ * A030280 COMPOSE triangular numbers with triangular numbers.
  * @author Sean A. Irvine
  */
 public class A030280 extends LinearRecurrence {

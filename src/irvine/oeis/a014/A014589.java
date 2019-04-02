@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006016;
 
 /**
- * A014589.
+ * A014589 Nim function for Take-a-Prime (or Subtract-a-Prime) Game.
  * @author Sean A. Irvine
  */
 public class A014589 extends MemorySequence {

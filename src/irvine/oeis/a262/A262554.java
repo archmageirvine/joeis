@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A262554.
+ * A262554 Triangle read by rows: coefficients in Bell's formula for number of ways of making change when coins have denominations which are powers of 2.
  * @author Sean A. Irvine
  */
 public class A262554 extends MemoryFunction2<Integer, Z> implements Sequence {

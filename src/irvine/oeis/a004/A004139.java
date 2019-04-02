@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A004139.
+ * A004139 Odd primes excluding 5.
  * @author Sean A. Irvine
  */
 public class A004139 extends A000040 {

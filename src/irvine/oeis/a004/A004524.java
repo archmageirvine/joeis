@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004524.
+ * A004524 Three even followed by one odd.
  * @author Sean A. Irvine
  */
 public class A004524 implements Sequence {

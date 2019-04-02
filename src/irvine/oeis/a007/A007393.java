@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007393.
+ * A007393 Number of strict 5th-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007393 extends A007388 {

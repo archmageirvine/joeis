@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202299.
+ * A202299 y-values in the solution to x^2 - 18*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A202299 extends LinearRecurrence {

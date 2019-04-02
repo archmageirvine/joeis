@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001223.
+ * A001223 Prime gaps: differences between consecutive primes.
  * @author Sean A. Irvine
  */
 public class A001223 implements Sequence {

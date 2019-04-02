@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032441.
+ * A032441 a(n) = Sum_{i=0..2} binomial(Fibonacci(n),i).
  * @author Sean A. Irvine
  */
 public class A032441 extends LinearRecurrence {

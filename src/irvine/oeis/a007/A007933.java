@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007933.
+ * A007933 Some permutation of digits is a prime.
  * @author Sean A. Irvine
  */
 public class A007933 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011545.
+ * A011545 Decimal expansion of Pi truncated to n places.
  * @author Sean A. Irvine
  */
 public class A011545 implements Sequence {

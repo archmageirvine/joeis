@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012571.
+ * A012571 Expansion of arcsin(sinh(x)*sinh(x)).
  * @author Sean A. Irvine
  */
 public class A012571 implements Sequence {

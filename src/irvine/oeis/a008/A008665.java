@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008665.
+ * A008665 Theta series of direct sum of 2 copies of b.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A008665 implements Sequence {

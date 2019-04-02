@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006724;
 
 /**
- * A008855.
+ * A008855 Table of polygons on square lattice by area and perimeter.
  * @author Sean A. Irvine
  */
 public class A008855 extends A006724 {

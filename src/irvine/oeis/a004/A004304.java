@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005568;
 
 /**
- * A004304.
+ * A004304 Number of nonseparable planar tree-rooted maps with n edges.
  * @author Sean A. Irvine
  */
 public class A004304 extends A005568 {

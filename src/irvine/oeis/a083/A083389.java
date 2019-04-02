@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A083389.
+ * A083389 Numbers n such that the number formed by the digits of 2n sorted in descending order is equal to the sum of the divisors of n after the digits of each divisor have been sorted in descending order (all zeros dropped).
  * @author Sean A. Irvine
  */
 public class A083389 implements Sequence {

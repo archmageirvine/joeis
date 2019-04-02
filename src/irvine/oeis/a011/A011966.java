@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A011966.
+ * A011966 Third differences of Bell numbers.
  * @author Sean A. Irvine
  */
 public class A011966 extends DifferenceSequence {

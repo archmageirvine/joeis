@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000292;
 
 /**
- * A004161.
+ * A004161 Tetrahedral numbers written backwards.
  * @author Sean A. Irvine
  */
 public class A004161 extends A000292 {

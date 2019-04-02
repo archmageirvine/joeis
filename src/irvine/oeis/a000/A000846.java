@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000846.
+ * A000846 C(3n,n) - C(2n,n).
  * @author Sean A. Irvine
  */
 public class A000846 implements Sequence {

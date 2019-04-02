@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004092.
+ * A004092 Sum of digits of even numbers.
  * @author Sean A. Irvine
  */
 public class A004092 implements Sequence {

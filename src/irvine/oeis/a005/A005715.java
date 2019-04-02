@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005715.
+ * A005715 Coefficient of x^7 in expansion of (1+x+x^2)^n.
  * @author Sean A. Irvine
  */
 public class A005715 implements Sequence {

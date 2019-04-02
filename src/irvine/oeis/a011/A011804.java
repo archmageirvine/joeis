@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011804.
+ * A011804 M-sequences from multicomplexes on at most 7 variables with no monomial of degree more than n-1.
  * @author Sean A. Irvine
  */
 public class A011804 extends MemoryFunction3<Long, Z> implements Sequence {

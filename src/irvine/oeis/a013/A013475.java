@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013475.
+ * A013475 Coefficient of [x^(4*n+2)] in e.g.f. sinh(cosh(x) - cos(x)).
  * @author Sean A. Irvine
  */
 public class A013475 implements Sequence {

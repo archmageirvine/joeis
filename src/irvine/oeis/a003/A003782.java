@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003782.
+ * A003782 Coefficients of Jacobi Eisenstein series of index 1 and weight 6.
  * @author Sean A. Irvine
  */
 public class A003782 implements Sequence {

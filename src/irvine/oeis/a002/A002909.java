@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002909.
+ * A002909 Low temperature energy function for square lattice.
  * @author Sean A. Irvine
  */
 public class A002909 implements Sequence {

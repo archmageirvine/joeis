@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005011.
+ * A005011 Shifts one place left under 5th-order binomial transform.
  * @author Sean A. Irvine
  */
 public class A005011 implements Sequence {

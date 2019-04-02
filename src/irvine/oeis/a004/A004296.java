@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004296.
+ * A004296 Expansion of (1+2*x+x^2)/(1-50*x+x^2).
  * @author Sean A. Irvine
  */
 public class A004296 implements Sequence {

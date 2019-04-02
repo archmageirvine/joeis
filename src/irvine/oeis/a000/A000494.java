@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000494.
+ * A000494 Nearest integer to sin(n).
  * @author Sean A. Irvine
  */
 public class A000494 implements Sequence {

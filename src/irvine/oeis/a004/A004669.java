@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004669.
+ * A004669 Powers of 3 written in base 27.
  * @author Sean A. Irvine
  */
 public class A004669 implements Sequence {

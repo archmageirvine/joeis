@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002964.
+ * A002964 Smallest number requiring n chisel strokes for its representation in Roman numerals.
  * @author Sean A. Irvine
  */
 public class A002964 extends A002963 {

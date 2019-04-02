@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007347.
+ * A007347 Maximal Eulerian numbers of second kind.
  * @author Sean A. Irvine
  */
 public class A007347 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013603.
+ * A013603 Difference between 2^n and the nearest prime less than or equal to 2^n.
  * @author Sean A. Irvine
  */
 public class A013603 implements Sequence {

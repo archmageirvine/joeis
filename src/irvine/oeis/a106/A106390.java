@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106390.
+ * A106390 Numbers k such that 13k = 6j^2 + 6j + 1.
  * @author Sean A. Irvine
  */
 public class A106390 extends LinearRecurrence {

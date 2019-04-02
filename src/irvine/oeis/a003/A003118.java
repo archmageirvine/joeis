@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a005.A005533;
 
 /**
- * A003118.
+ * A003118 Continued fraction for fifth root of 4.
  * @author Sean A. Irvine
  */
 public class A003118 extends ContinuedFractionSequence {

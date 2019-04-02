@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209239 Number of length n words on {0,1,2} with no four consecutive 0&apos;s. 
+ * A209239 Number of length n words on {0,1,2} with no four consecutive 0's.
  * @author Georg Fischer
  */
 public class A209239 extends LinearRecurrence {

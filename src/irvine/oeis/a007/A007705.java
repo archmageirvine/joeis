@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007705.
+ * A007705 Number of ways of arranging 2n+1 nonattacking queens on a 2n+1 X 2n+1 toroidal board.
  * @author Sean A. Irvine
  */
 public class A007705 implements Sequence {

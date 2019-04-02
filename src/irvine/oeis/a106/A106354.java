@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106354.
+ * A106354 Number of compositions of n into 5 parts such that no two adjacent parts are equal.
  * @author Sean A. Irvine
  */
 public class A106354 extends LinearRecurrence {

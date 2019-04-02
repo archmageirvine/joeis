@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A006628.
+ * A006628 From a partition of the integers.
  * @author Sean A. Irvine
  */
 public class A006628 implements Sequence {

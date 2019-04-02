@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008897.
+ * A008897 x-&gt;x/2 if x even, x-&gt;3x-1 if x odd.
  * @author Sean A. Irvine
  */
 public class A008897 implements Sequence {

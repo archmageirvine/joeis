@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244855.
+ * A244855 Fibonacci(n)^4-1.
  * @author Sean A. Irvine
  */
 public class A244855 extends LinearRecurrence {

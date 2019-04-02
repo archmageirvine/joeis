@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007885.
+ * A007885 Numbers n such that balanced sequences exist with n distinct elements.
  * @author Sean A. Irvine
  */
 public class A007885 implements Sequence {

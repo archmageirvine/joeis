@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118630.
+ * A118630 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+2401)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A118630 extends LinearRecurrence {

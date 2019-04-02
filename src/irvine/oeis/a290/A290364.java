@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290364.
+ * A290364 Number of 10-leaf rooted trees with n levels.
  * @author Sean A. Irvine
  */
 public class A290364 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002665.
+ * A002665 Continued fraction expansion of Lehmer's constant.
  * @author Sean A. Irvine
  */
 public class A002665 extends A002065 {

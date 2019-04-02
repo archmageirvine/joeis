@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114203.
+ * A114203 Row sums of a Pascal-Jacobsthal triangle.
  * @author Sean A. Irvine
  */
 public class A114203 extends LinearRecurrence {

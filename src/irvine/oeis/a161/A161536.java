@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A161536.
+ * A161536 a(1)=1. a(n) = the smallest integer &gt; a(n-1) that is an (odd) palindrome when written in binary, and is such that (a(n)-a(n-1))/2 is prime.
  * @author Sean A. Irvine
  */
 public class A161536 implements Sequence {

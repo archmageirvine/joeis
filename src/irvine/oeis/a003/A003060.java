@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A003060.
+ * A003060 Smallest number with reciprocal of period n.
  * @author Sean A. Irvine
  */
 public class A003060 implements Sequence {

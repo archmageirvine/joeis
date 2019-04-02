@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A103618.
+ * A103618 Number of steps required for n to reach a digit count invariant or cycle loop under the 'Look and Say' function A045918.
  * @author Sean A. Irvine
  */
 public class A103618 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289837.
+ * A289837 Number of cliques in the n-tetrahedral graph.
  * @author Sean A. Irvine
  */
 public class A289837 extends LinearRecurrence {

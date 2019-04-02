@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193090.
+ * A193090 Digital roots of the nonzero pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A193090 extends LinearRecurrence {

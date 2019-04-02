@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000645.
+ * A000645 Number of alkyls X^{II} C_n H_{2n+1} Y with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000645 extends A000598 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012206.
+ * A012206 sinh(arctan(arctan(x)))=x-3/3!*x^3+49/5!*x^5-1859/7!*x^7+119617/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012206 implements Sequence {

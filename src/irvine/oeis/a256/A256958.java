@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256958.
+ * A256958 The integers (shown from -50 on).
  * @author Sean A. Irvine
  */
 public class A256958 extends LinearRecurrence {

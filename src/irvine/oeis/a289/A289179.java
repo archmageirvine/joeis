@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289179.
+ * A289179 Edge count of the n X n white bishop graph.
  * @author Sean A. Irvine
  */
 public class A289179 extends LinearRecurrence {

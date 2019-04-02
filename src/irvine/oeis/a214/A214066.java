@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214066.
+ * A214066 a(n) = floor( (3/2)*floor(5*n/2) ).
  * @author Sean A. Irvine
  */
 public class A214066 extends LinearRecurrence {

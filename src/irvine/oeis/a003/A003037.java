@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A003037.
+ * A003037 Smallest number of complexity n: smallest number requiring n 1's to build using +, * and ^.
  * @author Sean A. Irvine
  */
 public class A003037 implements Sequence {

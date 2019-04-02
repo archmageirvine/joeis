@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000105;
 
 /**
- * A006747.
+ * A006747 Number of rotationally symmetric polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006747 extends A000105 {

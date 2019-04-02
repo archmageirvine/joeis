@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135037.
+ * A135037 Sums of the products of n consecutive triples of numbers.
  * @author Sean A. Irvine
  */
 public class A135037 extends LinearRecurrence {

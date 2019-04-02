@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005171.
+ * A005171 0 if n is prime else 1.
  * @author Sean A. Irvine
  */
 public class A005171 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013594.
+ * A013594 Smallest order of cyclotomic polynomial containing n or -n as a coefficient.
  * @author Sean A. Irvine
  */
 public class A013594 implements Sequence {

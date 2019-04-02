@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284701.
+ * A284701 Number of maximal matchings in the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A284701 extends LinearRecurrence {

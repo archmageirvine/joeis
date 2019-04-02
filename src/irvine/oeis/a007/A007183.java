@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007183.
+ * A007183 Maximal splittance of a planar graph with n nodes.
  * @author Sean A. Irvine
  */
 public class A007183 implements Sequence {

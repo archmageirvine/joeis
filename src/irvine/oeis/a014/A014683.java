@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014683.
+ * A014683 In the sequence of positive integers add 1 to each prime number.
  * @author Sean A. Irvine
  */
 public class A014683 implements Sequence {

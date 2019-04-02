@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151961.
+ * A151961 Semiperimeter of the n-th Heronian triangle.
  * @author Sean A. Irvine
  */
 public class A151961 extends LinearRecurrence {

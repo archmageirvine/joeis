@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.math.z.Z;
 
 /**
- * A155509.
+ * A155509 Larger of emirps (pairs) with digits 1 and 9 only.
  * @author Sean A. Irvine
  */
 public class A155509 extends A155507 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019551.
+ * A019551 a(n) is the concatenation of n and 3n.
  * @author Sean A. Irvine
  */
 public class A019551 implements Sequence {

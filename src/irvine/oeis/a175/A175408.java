@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175408.
+ * A175408 a(n) + a(n - 1) is alternatively a cube or a square.
  * @author Sean A. Irvine
  */
 public class A175408 extends LinearRecurrence {

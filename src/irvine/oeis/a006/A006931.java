@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002997;
 import irvine.util.array.DynamicArray;
 
 /**
- * A006931.
+ * A006931 Least Carmichael number with n prime factors.
  * @author Sean A. Irvine
  */
 public class A006931 extends A002997 {

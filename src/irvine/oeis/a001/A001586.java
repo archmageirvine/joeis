@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000364;
 
 /**
- * A001586.
+ * A001586 Generalized Euler numbers, or Springer numbers.
  * @author Sean A. Irvine
  */
 public class A001586 implements Sequence {

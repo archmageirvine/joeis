@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006493.
+ * A006493 Generalized Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A006493 implements Sequence {

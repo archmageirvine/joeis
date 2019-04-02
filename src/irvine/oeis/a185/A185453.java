@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185453.
+ * A185453 Trajectory of 1 under repeated application of the map in A185452.
  * @author Sean A. Irvine
  */
 public class A185453 extends LinearRecurrence {

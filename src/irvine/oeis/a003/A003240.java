@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A003240.
+ * A003240 Number of partially achiral rooted trees.
  * @author Sean A. Irvine
  */
 public class A003240 extends A003237 {

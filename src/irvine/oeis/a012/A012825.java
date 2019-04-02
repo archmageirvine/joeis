@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012825.
+ * A012825 Expansion of e.g.f. of arctan(sec(x)*arcsinh(x)) (odd coefficients only).
  * @author Sean A. Irvine
  */
 public class A012825 implements Sequence {

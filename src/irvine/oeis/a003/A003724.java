@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003724.
+ * A003724 Number of partitions of n-set into odd blocks.
  * @author Sean A. Irvine
  */
 public class A003724 implements Sequence {

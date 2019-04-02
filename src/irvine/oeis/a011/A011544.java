@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011544.
+ * A011544 Decimal expansion of e rounded to n places.
  * @author Sean A. Irvine
  */
 public class A011544 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002137.
+ * A002137 Number of n X n symmetric matrices with nonnegative integer entries, trace 0 and all row sums 2.
  * @author Sean A. Irvine
  */
 public class A002137 implements Sequence {

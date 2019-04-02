@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229522.
+ * A229522 Final digit (in decimal system) of (n^n)^n, i.e., (n^n)^n mod 10.
  * @author Sean A. Irvine
  */
 public class A229522 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019063.
+ * A019063 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite VFI = VPI-5 [ Al18P18O72 ]. 42 H2O.
  * @author Sean A. Irvine
  */
 public class A019063 extends A018940 {

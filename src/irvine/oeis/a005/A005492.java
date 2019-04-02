@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005492.
+ * A005492 From expansion of falling factorials.
  * @author Sean A. Irvine
  */
 public class A005492 implements Sequence {

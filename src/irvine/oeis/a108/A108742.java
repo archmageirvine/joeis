@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108742.
+ * A108742 Row sums of a triangle related to the Jacobsthal polynomials.
  * @author Sean A. Irvine
  */
 public class A108742 extends LinearRecurrence {

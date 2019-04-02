@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034855;
 
 /**
- * A001854.
+ * A001854 Total height of all rooted trees on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A001854 extends A034855 {

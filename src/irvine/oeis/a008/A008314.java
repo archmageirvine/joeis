@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A008314.
+ * A008314 Irregular triangle read by rows: one half of the coefficients of the expansion of (2*x)^n in terms of Chebyshev T-polynomials.
  * @author Sean A. Irvine
  */
 public class A008314 extends A008311 {

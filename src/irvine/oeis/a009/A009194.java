@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009194.
+ * A009194 a(n) = gcd(n, sigma(n)).
  * @author Sean A. Irvine
  */
 public class A009194 implements Sequence {

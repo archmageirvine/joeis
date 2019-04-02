@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167826.
+ * A167826 a(n) is the number of n-tosses having a run of 3 or more heads and a run of 3 or more tails for a fair coin.
  * @author Sean A. Irvine
  */
 public class A167826 extends LinearRecurrence {

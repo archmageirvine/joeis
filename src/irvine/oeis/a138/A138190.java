@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138190.
+ * A138190 Numerator of (n-1)*n*(n+1)/12.
  * @author Sean A. Irvine
  */
 public class A138190 extends LinearRecurrence {

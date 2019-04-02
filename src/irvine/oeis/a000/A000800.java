@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173018;
 
 /**
- * A000800.
+ * A000800 Sum of upward diagonals of Eulerian triangle.
  * @author Sean A. Irvine
  */
 public class A000800 extends A173018 {

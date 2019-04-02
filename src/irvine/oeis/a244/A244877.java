@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244877.
+ * A244877 Number of 4 X 4 traceless matrices of nonnegative integers with all row and column sums &lt;= n.
  * @author Sean A. Irvine
  */
 public class A244877 extends LinearRecurrence {

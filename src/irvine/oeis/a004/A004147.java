@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A004147.
+ * A004147 Number of n-state Turing machines which halt.
  * @author Sean A. Irvine
  */
 public class A004147 implements Sequence {

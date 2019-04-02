@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001147;
 
 /**
- * A006681.
+ * A006681 Number of binary phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
 public class A006681 implements Sequence {

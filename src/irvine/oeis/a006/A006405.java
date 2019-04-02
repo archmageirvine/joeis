@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006405.
+ * A006405 Number of unsensed 2-connected maps without faces of degree 2.
  * @author Sean A. Irvine
  */
 public class A006405 extends A006393 {

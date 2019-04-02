@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245479.
+ * A245479 Numbers n such that the n-th cyclotomic polynomial has a root mod 7.
  * @author Sean A. Irvine
  */
 public class A245479 extends LinearRecurrence {

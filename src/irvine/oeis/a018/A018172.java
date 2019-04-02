@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018172.
+ * A018172 Powers of fifth root of 20 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018172 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073358.
+ * A073358 Binomial transform, alternating in sign, of the tribonacci numbers.
  * @author Sean A. Irvine
  */
 public class A073358 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007426.
+ * A007426 d_4(n), or tau_4(n), the number of ordered factorizations of n as n = rstu.
  * @author Sean A. Irvine
  */
 public class A007426 implements Sequence {

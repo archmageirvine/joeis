@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a079.A079006;
 
 /**
- * A002103.
+ * A002103 Coefficients of expansion of Jacobi nome q in certain powers of (1/2)*(1 - sqrt(k')) / (1 + sqrt(k')).
  * @author Sean A. Irvine
  */
 public class A002103 extends A079006 {

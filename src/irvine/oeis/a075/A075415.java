@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075415.
+ * A075415 Squares of A002280.
  * @author Sean A. Irvine
  */
 public class A075415 extends LinearRecurrence {

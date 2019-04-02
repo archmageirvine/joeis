@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123522.
+ * A123522 Not of the form n + [log_10 n].
  * @author Sean A. Irvine
  */
 public class A123522 extends LinearRecurrence {

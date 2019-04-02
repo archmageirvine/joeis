@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007602.
+ * A007602 Numbers that are divisible by the product of their digits.
  * @author Sean A. Irvine
  */
 public class A007602 implements Sequence {

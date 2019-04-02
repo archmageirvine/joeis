@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272212.
+ * A272212 Sum of the odd numbers among the larger parts of the partitions of n into two parts.
  * @author Sean A. Irvine
  */
 public class A272212 extends LinearRecurrence {

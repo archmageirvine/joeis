@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008452.
+ * A008452 Number of ways of writing n as a sum of 9 squares.
  * @author Sean A. Irvine
  */
 public class A008452 implements Sequence {

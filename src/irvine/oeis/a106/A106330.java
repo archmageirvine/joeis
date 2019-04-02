@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106330.
+ * A106330 Numbers k such that k^2 = 24*(j^2) + 25.
  * @author Sean A. Irvine
  */
 public class A106330 extends LinearRecurrence {

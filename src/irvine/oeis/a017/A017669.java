@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017669.
+ * A017669 Numerator of sum of -3rd powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017669 implements Sequence {

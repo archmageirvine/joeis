@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014525.
+ * A014525 Order of shuffle group for deck of 3n cards.
  * @author Sean A. Irvine
  */
 public class A014525 implements Sequence {

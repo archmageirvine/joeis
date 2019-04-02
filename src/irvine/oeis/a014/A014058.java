@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014058.
+ * A014058 a(n) = ceiling((n+1/n)^n).
  * @author Sean A. Irvine
  */
 public class A014058 implements Sequence {

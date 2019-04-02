@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000849.
+ * A000849 Number of primes &lt;= product of first n primes, A002110(n).
  * @author Sean A. Irvine
  */
 public class A000849 implements Sequence {

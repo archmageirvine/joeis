@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002287.
+ * A002287 Bisection of A002470.
  * @author Sean A. Irvine
  */
 public class A002287 extends A002470 {

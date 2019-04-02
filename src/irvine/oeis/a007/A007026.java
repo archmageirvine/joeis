@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007026.
+ * A007026 Number of 4-connected polyhedral graphs with n faces.
  * @author Sean A. Irvine
  */
 public class A007026 implements Sequence, PlantriGraphProcessor {

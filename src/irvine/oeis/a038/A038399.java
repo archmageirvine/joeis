@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038399.
+ * A038399 Concatenate first n nonzero Fibonacci numbers in reverse order.
  * @author Sean A. Irvine
  */
 public class A038399 implements Sequence {

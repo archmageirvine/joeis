@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003510.
+ * A003510 An equivalence relation on permutations.
  * @author Sean A. Irvine
  */
 public class A003510 implements Sequence {

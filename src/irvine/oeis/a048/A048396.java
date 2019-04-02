@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048396.
+ * A048396 Sums of consecutive noncubes.
  * @author Sean A. Irvine
  */
 public class A048396 extends LinearRecurrence {

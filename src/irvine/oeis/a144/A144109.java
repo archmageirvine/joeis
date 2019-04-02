@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144109.
+ * A144109 INVERT transform of the cubes A000578.
  * @author Sean A. Irvine
  */
 public class A144109 extends LinearRecurrence {

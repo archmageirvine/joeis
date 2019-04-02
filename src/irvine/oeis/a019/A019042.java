@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019042.
+ * A019042 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite MER = Merlinoite K5Ca2[ Al9Si23O64 ] . 24 H2O.
  * @author Sean A. Irvine
  */
 public class A019042 extends A018940 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006040.
+ * A006040 a(n) = Sum_{i=0..n} (n!/(n-i)!)^2.
  * @author Sean A. Irvine
  */
 public class A006040 implements Sequence {

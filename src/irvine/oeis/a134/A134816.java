@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134816.
+ * A134816 Padovan's spiral numbers.
  * @author Sean A. Irvine
  */
 public class A134816 extends LinearRecurrence {

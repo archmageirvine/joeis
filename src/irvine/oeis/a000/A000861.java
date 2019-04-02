@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A000861.
+ * A000861 Numbers ending with a vowel in American English.
  * @author Sean A. Irvine
  */
 public class A000861 implements Sequence {

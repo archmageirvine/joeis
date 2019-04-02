@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122194.
+ * A122194 Numbers that are the sum of exactly two sets of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A122194 extends LinearRecurrence {

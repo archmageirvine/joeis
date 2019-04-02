@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046176.
+ * A046176 Indices of square numbers that are also hexagonal.
  * @author Sean A. Irvine
  */
 public class A046176 extends LinearRecurrence {

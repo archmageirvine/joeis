@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085438.
+ * A085438 a(n) = Sum_{i=1..n} C(i+1,2)^3.
  * @author Sean A. Irvine
  */
 public class A085438 extends LinearRecurrence {

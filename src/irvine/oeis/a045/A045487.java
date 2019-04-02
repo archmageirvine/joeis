@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a121.A121667;
 
 /**
- * A045487.
+ * A045487 McKay-Thompson series of class 6D for Monster with a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A045487 extends A121667 {

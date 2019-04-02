@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079977.
+ * A079977 Fibonacci numbers interspersed with zeros.
  * @author Sean A. Irvine
  */
 public class A079977 extends LinearRecurrence {

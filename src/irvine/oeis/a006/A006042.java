@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051775;
 
 /**
- * A006042.
+ * A006042 Nim-squares.
  * @author Sean A. Irvine
  */
 public class A006042 extends A051775 {

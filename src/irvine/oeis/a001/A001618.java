@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001618.
+ * A001618 Nearest integer to 2*n*log(n).
  * @author Sean A. Irvine
  */
 public class A001618 implements Sequence {

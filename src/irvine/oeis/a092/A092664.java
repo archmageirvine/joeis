@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092664.
+ * A092664 Number of consecutive prime runs of 10 primes congruent to 3 mod 4 below 10^n.
  * @author Sean A. Irvine
  */
 public class A092664 implements Sequence {

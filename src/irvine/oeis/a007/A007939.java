@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007939.
+ * A007939 Some permutation of digits is a cube.
  * @author Sean A. Irvine
  */
 public class A007939 implements Sequence {

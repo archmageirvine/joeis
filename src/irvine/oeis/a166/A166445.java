@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166445.
+ * A166445 Hankel transform of A025276.
  * @author Sean A. Irvine
  */
 public class A166445 extends LinearRecurrence {

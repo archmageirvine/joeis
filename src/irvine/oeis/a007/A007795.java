@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007795.
+ * A007795 Juxtapose pairs of primes.
  * @author Sean A. Irvine
  */
 public class A007795 implements Sequence {

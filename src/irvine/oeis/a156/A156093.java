@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156093.
+ * A156093 One ninth of the alternating sum of the squares of the first n Fibonacci numbers with index divisible by 4.
  * @author Sean A. Irvine
  */
 public class A156093 extends LinearRecurrence {

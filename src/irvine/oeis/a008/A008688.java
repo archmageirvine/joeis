@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008688.
+ * A008688 Theta series of Niemeier lattice of type D_24.
  * @author Sean A. Irvine
  */
 public class A008688 implements Sequence {

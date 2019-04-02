@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051424;
 
 /**
- * A007359.
+ * A007359 Number of partitions of n into pairwise coprime parts that are &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A007359 extends A051424 {

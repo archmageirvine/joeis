@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013385.
+ * A013385 cosh(sin(x)-tanh(x))=1+10/6!*x^6-840/8!*x^8+60870/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013385 implements Sequence {

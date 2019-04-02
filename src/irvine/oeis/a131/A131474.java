@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131474.
+ * A131474 a(n) = ceiling(n/2)*ceiling(n^2/2).
  * @author Sean A. Irvine
  */
 public class A131474 extends LinearRecurrence {

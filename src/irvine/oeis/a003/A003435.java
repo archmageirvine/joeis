@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A003435.
+ * A003435 Number of directed Hamiltonian circuits on n-octahedron with a marked starting node.
  * @author Sean A. Irvine
  */
 public class A003435 implements Sequence {

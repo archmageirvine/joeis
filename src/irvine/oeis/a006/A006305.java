@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006305.
+ * A006305 Taylor series related to one in Ramanujan's Lost Notebook.
  * @author Sean A. Irvine
  */
 public class A006305 implements Sequence {

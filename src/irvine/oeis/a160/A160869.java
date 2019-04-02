@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160869.
+ * A160869 a(n) = sigma(6^(n-1)).
  * @author Sean A. Irvine
  */
 public class A160869 extends LinearRecurrence {

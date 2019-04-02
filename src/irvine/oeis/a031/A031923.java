@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A031923.
+ * A031923 Let r and s be consecutive Fibonacci numbers. Sequence is r^4, r^3 s, r^2 s^2, and r s^3.
  * @author Sean A. Irvine
  */
 public class A031923 extends LinearRecurrence {

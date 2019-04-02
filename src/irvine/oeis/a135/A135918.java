@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135918.
+ * A135918 Genus of stage-n Menger sponge.
  * @author Sean A. Irvine
  */
 public class A135918 extends LinearRecurrence {

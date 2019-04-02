@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
 
 /**
- * A003425.
+ * A003425 n! times number of posets with n elements.
  * @author Sean A. Irvine
  */
 public class A003425 extends A001035 {

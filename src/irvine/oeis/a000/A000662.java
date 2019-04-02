@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.IntegerUtils;
 
 /**
- * A000662.
+ * A000662 Relations with 3 arguments on n nodes.
  * @author Sean A. Irvine
  */
 public class A000662 extends A000595 {

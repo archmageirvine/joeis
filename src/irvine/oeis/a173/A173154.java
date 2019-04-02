@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173154.
+ * A173154 a(n) = n^3/6 + 3*n^2/4 + 7*n/3 + 7/8 + (-1)^n/8.
  * @author Sean A. Irvine
  */
 public class A173154 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000079;
 
 /**
- * A011782.
+ * A011782 Coefficients of expansion of (1-x)/(1-2*x) in powers of x.
  * @author Sean A. Irvine
  */
 public class A011782 extends PrependSequence {

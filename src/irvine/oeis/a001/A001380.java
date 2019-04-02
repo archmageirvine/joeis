@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001380.
+ * A001380 Weight distribution of binary Golay code of length 24.
  * @author Sean A. Irvine
  */
 public class A001380 extends FiniteSequence {

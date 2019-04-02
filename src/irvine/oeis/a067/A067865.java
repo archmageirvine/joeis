@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067865.
+ * A067865 Numbers n such that n and 2^n end with the same two digits.
  * @author Sean A. Irvine
  */
 public class A067865 extends LinearRecurrence {

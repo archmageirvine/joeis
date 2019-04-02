@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000276.
+ * A000276 Associated Stirling numbers.
  * @author Sean A. Irvine
  */
 public class A000276 implements Sequence {

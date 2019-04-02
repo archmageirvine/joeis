@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013220.
+ * A013220 sec(log(x+1)-sin(x))= 1+3/4!*x^4-30/5!*x^5+180/6!*x^6-1113/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013220 implements Sequence {

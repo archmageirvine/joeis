@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045828.
+ * A045828 One fourth of theta series of cubic lattice with respect to face.
  * @author Sean A. Irvine
  */
 public class A045828 implements Sequence {

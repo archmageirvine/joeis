@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060961.
+ * A060961 Number of compositions (ordered partitions) of n into 1's, 3's and 5's.
  * @author Sean A. Irvine
  */
 public class A060961 extends LinearRecurrence {

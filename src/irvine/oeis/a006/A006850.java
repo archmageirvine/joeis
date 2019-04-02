@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A006850.
+ * A006850 Exponential self-convolution of numbers of rooted trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A006850 extends ExponentialConvolutionSequence {

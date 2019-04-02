@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005611.
+ * A005611 Number of Boolean functions realized by cascades of n gates.
  * @author Sean A. Irvine
  */
 public class A005611 extends A005608 {

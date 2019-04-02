@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A230215.
+ * A230215 Numbers divisible by 3 or 13.
  * @author Sean A. Irvine
  */
 public class A230215 extends LinearRecurrence {

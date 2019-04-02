@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136445.
+ * A136445 Size of the BDD for the hidden weighted bit function, with the variables in their natural ordering.
  * @author Sean A. Irvine
  */
 public class A136445 extends LinearRecurrence {

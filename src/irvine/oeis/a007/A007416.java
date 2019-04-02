@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005179;
 
 /**
- * A007416.
+ * A007416 The minimal numbers: sequence A005179 arranged in increasing order.
  * @author Sean A. Irvine
  */
 public class A007416 extends A005179 {

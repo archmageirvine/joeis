@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010094.
+ * A010094 Triangle of Euler-Bernoulli or Entringer numbers.
  * @author Sean A. Irvine
  */
 public class A010094 extends MemoryFunction2<Integer, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097535.
+ * A097535 Dimensions of spaces of cusp forms.
  * @author Sean A. Irvine
  */
 public class A097535 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A014388.
+ * A014388 a(2n-1) = n+2, a(2n) = smallest number requiring n+2 letters in English.
  * @author Sean A. Irvine
  */
 public class A014388 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084175.
+ * A084175 Jacobsthal oblong numbers.
  * @author Sean A. Irvine
  */
 public class A084175 extends LinearRecurrence {

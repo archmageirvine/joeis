@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000343.
+ * A000343 5th power of rooted tree enumerator; number of linear forests of 5 rooted trees.
  * @author Sean A. Irvine
  */
 public class A000343 extends A000081 {

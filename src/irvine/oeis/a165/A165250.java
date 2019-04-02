@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A165250.
+ * A165250 Members of A165249 that are not palindromes when written in binary.
  * @author Sean A. Irvine
  */
 public class A165250 implements Sequence {

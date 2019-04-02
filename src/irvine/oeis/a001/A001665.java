@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001665.
+ * A001665 Number of self-avoiding n-step walks on Kagome lattice.
  * @author Sean A. Irvine
  */
 public class A001665 implements Sequence {

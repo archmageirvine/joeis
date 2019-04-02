@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292185.
+ * A292185 One-fifth of the rolling arithmetic mean of the fifth powers of the natural numbers taken five at a time.
  * @author Sean A. Irvine
  */
 public class A292185 extends LinearRecurrence {

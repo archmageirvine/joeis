@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001625.
+ * A001625 Related to Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001625 extends A001624 {

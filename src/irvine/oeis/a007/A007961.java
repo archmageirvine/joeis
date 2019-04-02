@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007961.
+ * A007961 n written in base where place values are positive squares.
  * @author Sean A. Irvine
  */
 public class A007961 implements Sequence {

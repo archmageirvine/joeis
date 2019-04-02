@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018806.
+ * A018806 Sum of gcd(x, y) for 1 &lt;= x, y &lt;= n.
  * @author Sean A. Irvine
  */
 public class A018806 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272263.
+ * A272263 a(n) = numerator of A000032(n) - 1/2^n.
  * @author Sean A. Irvine
  */
 public class A272263 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145641.
+ * A145641 Numbers whose binary representation is the concatenation of n 1's, n 0's and n 1's.
  * @author Sean A. Irvine
  */
 public class A145641 extends LinearRecurrence {

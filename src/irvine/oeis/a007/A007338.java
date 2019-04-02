@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a173.A173018;
 
 /**
- * A007338.
+ * A007338 Multiplicative encoding of the Eulerian number triangle.
  * @author Sean A. Irvine
  */
 public class A007338 implements Sequence {

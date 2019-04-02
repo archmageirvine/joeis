@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A003268.
+ * A003268 Central Fibonomial coefficients.
  * @author Sean A. Irvine
  */
 public class A003268 implements Sequence {

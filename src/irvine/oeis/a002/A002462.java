@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.q.Q;
 
 /**
- * A002462.
+ * A002462 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
 public class A002462 implements Sequence {

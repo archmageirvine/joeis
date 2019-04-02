@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007032.
+ * A007032 Number of non-Hamiltonian polyhedra with n faces.
  * @author Sean A. Irvine
  */
 public class A007032 implements Sequence, PlantriGraphProcessor {

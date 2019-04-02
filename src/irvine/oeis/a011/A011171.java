@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011171.
+ * A011171 Decimal expansion of 5th root of 86.
  * @author Sean A. Irvine
  */
 public class A011171 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008686.
+ * A008686 Dates at weekly intervals from Jan 01.
  * @author Sean A. Irvine
  */
 public class A008686 implements Sequence {

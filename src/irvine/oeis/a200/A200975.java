@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200975.
+ * A200975 Numbers on the diagonals in Ulam's spiral.
  * @author Sean A. Irvine
  */
 public class A200975 extends LinearRecurrence {

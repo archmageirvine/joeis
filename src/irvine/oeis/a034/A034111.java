@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034111.
+ * A034111 Decimal part of square root of a(n) starts with 5: first term of runs.
  * @author Sean A. Irvine
  */
 public class A034111 extends LinearRecurrence {

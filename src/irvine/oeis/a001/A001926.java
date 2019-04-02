@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001926.
+ * A001926 G.f.: (1+x)^2/[(1-x)^4(1-x-x^2)^3].
  * @author Sean A. Irvine
  */
 public class A001926 implements Sequence {

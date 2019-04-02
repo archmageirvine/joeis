@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002738.
+ * A002738 Coefficients for extrapolation.
  * @author Sean A. Irvine
  */
 public class A002738 implements Sequence {

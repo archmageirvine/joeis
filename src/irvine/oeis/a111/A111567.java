@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111567.
+ * A111567 Binomial transform of A048654: generalized Pellian with second term equal to 4.
  * @author Sean A. Irvine
  */
 public class A111567 extends LinearRecurrence {

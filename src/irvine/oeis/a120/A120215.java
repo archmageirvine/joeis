@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120215.
+ * A120215 Start with 1057 and repeatedly reverse the digits and add 2 to get the next term.
  * @author Sean A. Irvine
  */
 public class A120215 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.util.Permutation;
 
 /**
- * A007938.
+ * A007938 Some nontrivial permutation of digits is a square.
  * @author Sean A. Irvine
  */
 public class A007938 extends A007936 {

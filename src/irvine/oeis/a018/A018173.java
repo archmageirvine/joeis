@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018173.
+ * A018173 Powers of fifth root of 20 rounded up.
  * @author Sean A. Irvine
  */
 public class A018173 implements Sequence {

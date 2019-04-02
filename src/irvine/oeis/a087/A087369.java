@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A087369.
+ * A087369 Smallest palindromic square multiple of the n-th palindrome.
  * @author Sean A. Irvine
  */
 public class A087369 implements Sequence {

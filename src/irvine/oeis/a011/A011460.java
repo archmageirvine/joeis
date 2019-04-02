@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011460.
+ * A011460 Decimal expansion of 41st root of 41.
  * @author Sean A. Irvine
  */
 public class A011460 extends DecimalExpansionSequence {

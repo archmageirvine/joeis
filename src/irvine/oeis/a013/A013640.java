@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A013640.
+ * A013640 f-vector for 20-dimensional simplicial polytope providing counterexample to unimodality conjecture.
  * @author Sean A. Irvine
  */
 public class A013640 extends FiniteSequence {

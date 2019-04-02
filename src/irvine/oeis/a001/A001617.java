@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000086;
 import irvine.oeis.a000.A000089;
 
 /**
- * A001617.
+ * A001617 Genus of modular group Gamma_0(n). Or, genus of modular curve X_0(n).
  * @author Sean A. Irvine
  */
 public class A001617 extends A001616 {

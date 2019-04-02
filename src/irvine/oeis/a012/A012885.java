@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A012885.
+ * A012885 Suffixes of 357686312646216567629137 (all primes).
  * @author Sean A. Irvine
  */
 public class A012885 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147759.
+ * A147759 Palindromes formed from the reflected decimal expansion of the infinite concatenation of 1's and 0's.
  * @author Sean A. Irvine
  */
 public class A147759 extends LinearRecurrence {

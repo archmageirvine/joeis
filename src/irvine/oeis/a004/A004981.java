@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004981.
+ * A004981 a(n) = (2^n/n!) * Product_{k=0..n-1} (4*k + 1).
  * @author Sean A. Irvine
  */
 public class A004981 implements Sequence {

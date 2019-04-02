@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094967.
+ * A094967 Right-hand neighbors of Fibonacci numbers in Stern's diatomic series.
  * @author Sean A. Irvine
  */
 public class A094967 extends LinearRecurrence {

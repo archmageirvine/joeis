@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A006320.
+ * A006320 Royal paths in a lattice.
  * @author Sean A. Irvine
  */
 public class A006320 extends ConvolutionSequence {

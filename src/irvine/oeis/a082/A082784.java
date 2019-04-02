@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082784.
+ * A082784 Characteristic function of multiples of 7.
  * @author Sean A. Irvine
  */
 public class A082784 extends LinearRecurrence {

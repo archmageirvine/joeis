@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001753.
+ * A001753 Expansion of 1/((1+x)*(1-x)^6).
  * @author Sean A. Irvine
  */
 public class A001753 implements Sequence {

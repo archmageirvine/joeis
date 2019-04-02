@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005912.
+ * A005912 Truncated cube numbers.
  * @author Sean A. Irvine
  */
 public class A005912 implements Sequence {

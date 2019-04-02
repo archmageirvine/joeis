@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002526.
+ * A002526 Number of permutations of length n within distance 3 of a fixed permutation.
  * @author Sean A. Irvine
  */
 public class A002526 extends LinearRecurrence {

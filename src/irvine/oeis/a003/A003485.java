@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003485.
+ * A003485 Hurwitz-Radon function at powers of 2.
  * @author Sean A. Irvine
  */
 public class A003485 extends LinearRecurrence {

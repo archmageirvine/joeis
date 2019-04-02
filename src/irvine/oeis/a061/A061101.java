@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061101.
+ * A061101 Squares with digital root 7.
  * @author Sean A. Irvine
  */
 public class A061101 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095265.
+ * A095265 A sequence generated from a 4th degree Pascal's Triangle polynomial.
  * @author Sean A. Irvine
  */
 public class A095265 extends LinearRecurrence {

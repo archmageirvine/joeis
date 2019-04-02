@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192790.
+ * A192790 Molecular topological index of the Andrasfai graphs.
  * @author Sean A. Irvine
  */
 public class A192790 extends LinearRecurrence {

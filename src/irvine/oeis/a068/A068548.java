@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068548.
+ * A068548 Coefficients of (-x^(2n-6)) in Chebyshev polynomial of degree 2n.
  * @author Sean A. Irvine
  */
 public class A068548 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A010785.
+ * A010785 Repdigit numbers, or numbers with repeated digits.
  * @author Sean A. Irvine
  */
 public class A010785 implements Sequence {

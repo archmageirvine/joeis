@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008620.
+ * A008620 Positive integers repeated three times.
  * @author Sean A. Irvine
  */
 public class A008620 implements Sequence {

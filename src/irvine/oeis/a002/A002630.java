@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002630.
+ * A002630 Number of permutations of length n with two 3-sequences.
  * @author Sean A. Irvine
  */
 public class A002630 implements Sequence {

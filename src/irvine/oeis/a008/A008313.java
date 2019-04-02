@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008313.
+ * A008313 Triangle of expansions of powers of x in terms of Chebyshev polynomials U_n(x).
  * @author Sean A. Irvine
  */
 public class A008313 implements Sequence {

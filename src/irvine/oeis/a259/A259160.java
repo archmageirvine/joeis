@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259160.
+ * A259160 Positive squares (A000290) that are octagonal numbers (A000567) divided by 2.
  * @author Sean A. Irvine
  */
 public class A259160 extends LinearRecurrence {

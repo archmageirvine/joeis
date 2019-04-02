@@ -7,7 +7,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002622.
+ * A002622 Number of partitions of at most n into at most 5 parts.
  * @author Sean A. Irvine
  */
 public class A002622 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A000569.
+ * A000569 Number of graphical partitions of 2n.
  * @author Sean A. Irvine
  */
 public class A000569 implements Sequence {

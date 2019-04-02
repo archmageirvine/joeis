@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008629.
+ * A008629 Molien series for A_6.
  * @author Sean A. Irvine
  */
 public class A008629 extends LinearRecurrence {

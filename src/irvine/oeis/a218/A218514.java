@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218514.
+ * A218514 Number of n-colorings of the icosahedral graph.
  * @author Sean A. Irvine
  */
 public class A218514 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281858.
+ * A281858 Curious cubic identities based on the Armstrong number 370.
  * @author Sean A. Irvine
  */
 public class A281858 extends LinearRecurrence {

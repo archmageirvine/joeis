@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008032.
+ * A008032 Coordination sequence T1 for Zeolite Code APC.
  * @author Sean A. Irvine
  */
 public class A008032 extends CoordinationSequence {

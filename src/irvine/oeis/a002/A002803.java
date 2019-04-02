@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A002803.
+ * A002803 (2n+4)!/(4!n!(n+1)!).
  * @author Sean A. Irvine
  */
 public class A002803 implements Sequence {

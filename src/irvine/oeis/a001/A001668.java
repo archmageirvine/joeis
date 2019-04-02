@@ -7,7 +7,7 @@ import irvine.util.Point;
 import java.util.HashSet;
 
 /**
- * A001668.
+ * A001668 Number of self-avoiding n-step walks on honeycomb lattice.
  * @author Alois P. Heinz
  * @author Sean A. Irvine
  */

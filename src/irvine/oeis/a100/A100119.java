@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100119.
+ * A100119 a(n) = n-th centered n-gonal number.
  * @author Sean A. Irvine
  */
 public class A100119 extends LinearRecurrence {

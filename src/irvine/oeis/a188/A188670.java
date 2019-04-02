@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188670.
+ * A188670 A quasi-periodic solution to Hofstadter's Q recurrence.
  * @author Sean A. Irvine
  */
 public class A188670 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026812.
+ * A026812 Number of partitions of n in which the greatest part is 6.
  * @author Sean A. Irvine
  */
 public class A026812 extends LinearRecurrence {

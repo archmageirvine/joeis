@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000055;
 
 /**
- * A006802.
+ * A006802 Log of e.g.f. for trees A000055(n-1).
  * @author Sean A. Irvine
  */
 public class A006802 extends A000055 {

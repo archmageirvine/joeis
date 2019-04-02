@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195033.
+ * A195033 Multiples of 21 and of 20 interleaved: a(2n-1) = 21n, a(2n) = 20n.
  * @author Sean A. Irvine
  */
 public class A195033 extends LinearRecurrence {

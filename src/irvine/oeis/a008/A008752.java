@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008752.
+ * A008752 Expansion of (x^9+1)/(1-x)/(1-x^2)/(1-x^3).
  * @author Sean A. Irvine
  */
 public class A008752 extends CoordinationSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001860.
+ * A001860 Number of series-reduced planted trees with n+9 nodes and 4 internal nodes.
  * @author Sean A. Irvine
  */
 public class A001860 implements Sequence {

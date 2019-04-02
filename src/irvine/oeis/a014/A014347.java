@@ -4,7 +4,7 @@ import irvine.oeis.ExponentialConvolutionSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014347.
+ * A014347 Three-fold exponential convolution of primes with themselves.
  * @author Sean A. Irvine
  */
 public class A014347 extends ExponentialConvolutionSequence {

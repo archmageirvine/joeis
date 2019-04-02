@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105841.
+ * A105841 Numbers n such that n^2 = 31*m^2 + 31*m + 1.
  * @author Sean A. Irvine
  */
 public class A105841 extends LinearRecurrence {

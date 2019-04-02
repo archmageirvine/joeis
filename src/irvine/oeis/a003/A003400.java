@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A003400.
+ * A003400 Number of asymmetric (not necessarily connected) graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003400 implements Sequence, GraphProcessor {

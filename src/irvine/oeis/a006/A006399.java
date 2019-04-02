@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006399.
+ * A006399 Number of unsensed planar maps with n edges and without loops or isthmuses.
  * @author Sean A. Irvine
  */
 public class A006399 extends A006391 {

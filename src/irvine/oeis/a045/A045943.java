@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045943.
+ * A045943 Triangular matchstick numbers: a(n) = 3*n*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A045943 extends LinearRecurrence {

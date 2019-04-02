@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003071.
+ * A003071 Sorting numbers: maximal number of comparisons for sorting n elements by list merging.
  * @author Sean A. Irvine
  */
 public class A003071 extends MemorySequence {

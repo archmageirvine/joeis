@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002348.
+ * A002348 Degree of rational Poncelet porism of n-gon.
  * @author Sean A. Irvine
  */
 public class A002348 implements Sequence {

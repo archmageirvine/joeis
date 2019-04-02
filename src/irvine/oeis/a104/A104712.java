@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A104712.
+ * A104712 Pascal's triangle, with the first two columns removed.
  * @author Sean A. Irvine
  */
 public class A104712 implements Sequence {

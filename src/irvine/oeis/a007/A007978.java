@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007978.
+ * A007978 Least non-divisor of n.
  * @author Sean A. Irvine
  */
 public class A007978 implements Sequence {

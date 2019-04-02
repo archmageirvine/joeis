@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006701.
+ * A006701 Exponentiation of g.f. for Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A006701 extends MemorySequence {

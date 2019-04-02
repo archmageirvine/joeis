@@ -4,7 +4,7 @@ import irvine.oeis.ExponentialConvolutionSequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A014330.
+ * A014330 Exponential convolution of Catalan numbers with themselves.
  * @author Sean A. Irvine
  */
 public class A014330 extends ExponentialConvolutionSequence {

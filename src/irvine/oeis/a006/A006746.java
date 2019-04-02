@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000105;
 
 /**
- * A006746.
+ * A006746 Number of axially symmetric polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006746 extends A000105 {

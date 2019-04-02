@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A246069.
+ * A246069 Number of maximal classes determined by permutations.
  * @author Sean A. Irvine
  */
 public class A246069 implements Sequence {

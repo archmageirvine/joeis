@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008263.
+ * A008263 Coordination sequence T2 for Scapolite.
  * @author Sean A. Irvine
  */
 public class A008263 extends CoordinationSequence {

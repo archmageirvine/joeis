@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121496.
+ * A121496 Run lengths of successive numbers in A068225.
  * @author Sean A. Irvine
  */
 public class A121496 extends LinearRecurrence {

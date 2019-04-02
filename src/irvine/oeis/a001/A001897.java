@@ -5,7 +5,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001897.
+ * A001897 Denominators of cosecant numbers -2*(2^(2*n-1)-1)*Bernoulli(2*n).
  * @author Sean A. Irvine
  */
 public class A001897 implements Sequence {

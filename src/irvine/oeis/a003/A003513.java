@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003513.
+ * A003513 Number of regular sequences of length n.
  * @author Sean A. Irvine
  */
 public class A003513 implements Sequence {

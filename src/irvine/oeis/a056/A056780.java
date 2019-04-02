@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A056780.
+ * A056780 Rectangular free polyominoes: number of n-celled polyominoes when the cell is a rectangle.
  * @author Sean A. Irvine
  */
 public class A056780 implements Sequence {

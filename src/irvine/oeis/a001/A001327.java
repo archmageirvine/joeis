@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001327.
+ * A001327 Number of equivalence classes of 3-valued Post functions of n variables under action of semi-direct product of symmetric groups S_n and S(n,3).
  * @author Sean A. Irvine
  */
 public class A001327 implements Sequence {

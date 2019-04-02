@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013214.
+ * A013214 E.g.f.: cos(log(x+1)-sin(x))= 1-3/4!*x^4+30/5!*x^5-180/6!*x^6+1113/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013214 implements Sequence {

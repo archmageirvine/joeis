@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133894.
+ * A133894 Numbers m such that binomial(m+4,m) mod 4 = 0.
  * @author Sean A. Irvine
  */
 public class A133894 extends LinearRecurrence {

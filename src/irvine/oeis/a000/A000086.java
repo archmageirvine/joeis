@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000086.
+ * A000086 Number of solutions to x^2 - x + 1 == 0 (mod n).
  * @author Sean A. Irvine
  */
 public class A000086 implements Sequence {

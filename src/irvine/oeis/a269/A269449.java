@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269449.
+ * A269449 The first of 33 consecutive positive integers the sum of the squares of which is a square.
  * @author Sean A. Irvine
  */
 public class A269449 extends LinearRecurrence {

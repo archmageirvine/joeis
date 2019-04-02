@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053430.
+ * A053430 a(n) = (6^(n+1) - (-5)^(n+1))/11.
  * @author Sean A. Irvine
  */
 public class A053430 extends LinearRecurrence {

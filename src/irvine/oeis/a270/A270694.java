@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270694.
+ * A270694 Alternating sum of centered heptagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A270694 extends LinearRecurrence {

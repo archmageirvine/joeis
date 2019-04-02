@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018150.
+ * A018150 Powers of fifth root of 13 rounded down.
  * @author Sean A. Irvine
  */
 public class A018150 implements Sequence {

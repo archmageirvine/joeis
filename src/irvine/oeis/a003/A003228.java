@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055290;
 
 /**
- * A003228.
+ * A003228 Endpoints in trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003228 extends A055290 {

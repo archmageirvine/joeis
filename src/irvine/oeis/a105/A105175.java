@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105175.
+ * A105175 Numbers such that 71*(a(n)^2) + 71*a(n) + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A105175 extends LinearRecurrence {

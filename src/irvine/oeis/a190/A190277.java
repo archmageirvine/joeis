@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190277.
+ * A190277 Number of trails between opposite vertices in a triangle strip.
  * @author Sean A. Irvine
  */
 public class A190277 extends LinearRecurrence {

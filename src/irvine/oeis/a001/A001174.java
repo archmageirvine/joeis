@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A001174.
+ * A001174 Number of oriented graphs (i.e., digraphs with no bidirected edges) on n unlabeled nodes. Also number of complete digraphs on n unlabeled nodes. Number of antisymmetric relations (i.e., oriented graphs with loops) on n unlabeled nodes is A083670.
  * @author Sean A. Irvine
  */
 public class A001174 implements Sequence {

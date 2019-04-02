@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141124.
+ * A141124 Hankel transform of a transform of Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A141124 extends LinearRecurrence {

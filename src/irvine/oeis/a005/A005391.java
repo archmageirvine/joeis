@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a145.A145418;
 
 /**
- * A005391.
+ * A005391 Number of Hamiltonian circuits on 2n X 8 rectangle.
  * @author Sean A. Irvine
  */
 public class A005391 extends A145418 {

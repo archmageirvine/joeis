@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017965.
+ * A017965 Powers of sqrt(20) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017965 implements Sequence {

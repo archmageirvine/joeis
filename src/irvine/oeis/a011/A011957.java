@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001037;
 import irvine.oeis.a165.A165920;
 
 /**
- * A011957.
+ * A011957 Number of ZnS polytypes that repeat after n layers.
  * @author Sean A. Irvine
  */
 public class A011957 extends A001037 {

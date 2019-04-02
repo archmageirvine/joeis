@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 /**
- * A002858.
+ * A002858 Ulam numbers: a(1) = 1; a(2) = 2; for n&gt;2, a(n) = least number &gt; a(n-1) which is a unique sum of two distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A002858 implements Sequence {

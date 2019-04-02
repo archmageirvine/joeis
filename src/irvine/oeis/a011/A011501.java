@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011501.
+ * A011501 Decimal expansion of 82nd root of 82.
  * @author Sean A. Irvine
  */
 public class A011501 extends DecimalExpansionSequence {

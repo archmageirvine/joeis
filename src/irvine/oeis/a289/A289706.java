@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289706.
+ * A289706 Number of 5-cycles in the n-triangular honeycomb queen graph.
  * @author Sean A. Irvine
  */
 public class A289706 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008977.
+ * A008977 a(n) = (4*n)!/(n!)^4.
  * @author Sean A. Irvine
  */
 public class A008977 implements Sequence {

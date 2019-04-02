@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053741.
+ * A053741 Sum of even numbers in range 10n to 10n+9.
  * @author Sean A. Irvine
  */
 public class A053741 extends LinearRecurrence {

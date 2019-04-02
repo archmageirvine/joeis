@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005735.
+ * A005735 Greatest k such that binomial(k,n) has fewer than n distinct prime factors.
  * @author Sean A. Irvine
  */
 public class A005735 implements Sequence {

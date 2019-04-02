@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000107.
+ * A000107 Number of rooted trees with n nodes and a single labeled node; pointed rooted trees; vertebrates.
  * @author Sean A. Irvine
  */
 public class A000107 implements Sequence {

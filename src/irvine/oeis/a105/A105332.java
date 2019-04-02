@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105332.
+ * A105332 a(n) = n*(n+1)/2 mod 8.
  * @author Sean A. Irvine
  */
 public class A105332 extends LinearRecurrence {

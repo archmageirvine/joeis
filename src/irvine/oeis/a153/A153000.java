@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A153000.
+ * A153000 Toothpick sequence in the first quadrant.
  * @author Sean A. Irvine
  */
 public class A153000 implements Sequence {

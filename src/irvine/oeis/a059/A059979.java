@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059979.
+ * A059979 Number of 7-dimensional cage assemblies.
  * @author Sean A. Irvine
  */
 public class A059979 extends LinearRecurrence {

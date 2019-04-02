@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007844.
+ * A007844 Least positive integer k for which 3^n divides k!.
  * @author Sean A. Irvine
  */
 public class A007844 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004614.
+ * A004614 Numbers that are divisible only by primes congruent to 3 mod 4.
  * @author Sean A. Irvine
  */
 public class A004614 implements Sequence {

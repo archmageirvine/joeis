@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006485.
+ * A006485 a(n) = (2^(2^n + 1) + 1)/3.
  * @author Sean A. Irvine
  */
 public class A006485 implements Sequence {

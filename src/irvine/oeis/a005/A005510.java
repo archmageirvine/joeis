@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005510.
+ * A005510 a(n)=1+a([ n/2 ])*a( ceiling ( n/2 ) ).
  * @author Sean A. Irvine
  */
 public class A005510 extends MemorySequence {

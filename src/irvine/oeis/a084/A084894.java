@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A084894.
+ * A084894 Number of permutations of length n such that at least one absolute difference between consecutive elements has a distinct partner.
  * @author Sean A. Irvine
  */
 public class A084894 implements Sequence {

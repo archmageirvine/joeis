@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037730.
+ * A037730 Base 4 digits are, in order, the first n terms of the periodic sequence with initial period 2,1,0,3.
  * @author Sean A. Irvine
  */
 public class A037730 extends LinearRecurrence {

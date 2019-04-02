@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011537.
+ * A011537 Numbers that contain at least one 7.
  * @author Sean A. Irvine
  */
 public class A011537 implements Sequence {

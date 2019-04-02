@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008666.
+ * A008666 G.f.: 1/((1-x^2)(1-x^3)(1-x^5)(1-x^6)(1-x^9)).
  * @author Sean A. Irvine
  */
 public class A008666 extends CoordinationSequence {

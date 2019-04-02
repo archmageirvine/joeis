@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287815.
+ * A287815 Number of octonary sequences of length n such that no two consecutive terms have distance 7.
  * @author Sean A. Irvine
  */
 public class A287815 extends LinearRecurrence {

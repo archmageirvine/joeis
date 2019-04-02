@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193249.
+ * A193249 Snub dodecahedron with faces of centered polygons.
  * @author Sean A. Irvine
  */
 public class A193249 extends LinearRecurrence {

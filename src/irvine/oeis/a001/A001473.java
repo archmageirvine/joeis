@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001473.
+ * A001473 Number of degree-n permutations of order exactly 4.
  * @author Sean A. Irvine
  */
 public class A001473 implements Sequence {

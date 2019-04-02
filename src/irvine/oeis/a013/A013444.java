@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013444.
+ * A013444 cos(tan(x)-arctan(x))=1-160/6!*x^6+1792/8!*x^8-484224/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013444 implements Sequence {

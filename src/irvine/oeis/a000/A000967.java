@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000967.
+ * A000967 Sum of Fermat coefficients.
  * @author Sean A. Irvine
  */
 public class A000967 implements Sequence {

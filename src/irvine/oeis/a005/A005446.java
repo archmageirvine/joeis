@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005446.
+ * A005446 Denominators of expansion of -W_{-1}(-e^{-1-x^2/2}) where W_{-1} is Lambert W function.
  * @author Sean A. Irvine
  */
 public class A005446 extends MemoryFunction1<Q> implements Sequence {

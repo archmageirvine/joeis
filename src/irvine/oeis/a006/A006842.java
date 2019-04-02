@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006842.
+ * A006842 Triangle read by rows: row n gives numerators of Farey series of order n.
  * @author Sean A. Irvine
  */
 public class A006842 implements Sequence {

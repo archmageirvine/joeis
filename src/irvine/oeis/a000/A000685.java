@@ -7,7 +7,7 @@ import irvine.oeis.a047.A047863;
 import java.util.ArrayList;
 
 /**
- * A000685.
+ * A000685 Number of 3-colored labeled graphs on n nodes, divided by 3.
  * @author Sean A. Irvine
  */
 public class A000685 extends A047863 {

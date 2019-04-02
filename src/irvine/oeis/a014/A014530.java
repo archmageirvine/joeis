@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014530.
+ * A014530 List of sizes of squares occurring in lowest order example of a perfect squared square.
  * @author Sean A. Irvine
  */
 public class A014530 extends FiniteSequence {

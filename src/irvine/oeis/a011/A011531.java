@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011531.
+ * A011531 Numbers that contain a digit 1 in their decimal representation.
  * @author Sean A. Irvine
  */
 public class A011531 implements Sequence {

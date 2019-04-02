@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A067540.
+ * A067540 Number of partitions of n in which the sum of reciprocal of parts divides number of parts.
  * @author Sean A. Irvine
  */
 public class A067540 implements Sequence {

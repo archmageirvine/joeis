@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014131.
+ * A014131 a(n) = 2*a(n-1) if n odd else 2*a(n-1) + 6.
  * @author Sean A. Irvine
  */
 public class A014131 implements Sequence {

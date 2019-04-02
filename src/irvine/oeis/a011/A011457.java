@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011457.
+ * A011457 Decimal expansion of 38th root of 38.
  * @author Sean A. Irvine
  */
 public class A011457 extends DecimalExpansionSequence {

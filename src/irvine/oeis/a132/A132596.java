@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132596.
+ * A132596 X-values of solutions to the equation X*(X + 1) - 6*Y^2 = 0.
  * @author Sean A. Irvine
  */
 public class A132596 extends LinearRecurrence {

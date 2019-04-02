@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275635.
+ * A275635 a(n) = (3^n-1)*(3^n-3)*(3^n+3)/4!.
  * @author Sean A. Irvine
  */
 public class A275635 extends LinearRecurrence {

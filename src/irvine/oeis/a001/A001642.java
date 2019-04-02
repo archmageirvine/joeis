@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001642.
+ * A001642 A Fielder sequence.
  * @author Sean A. Irvine
  */
 public class A001642 extends LinearRecurrence {

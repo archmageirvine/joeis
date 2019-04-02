@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a001.A001629;
 
 /**
- * A010049.
+ * A010049 Second-order Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A010049 extends DifferenceSequence {

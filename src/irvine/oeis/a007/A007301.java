@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002017;
 
 /**
- * A007301.
+ * A007301 From expansion of exp(sin x).
  * @author Sean A. Irvine
  */
 public class A007301 extends A002017 {

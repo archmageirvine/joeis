@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054854.
+ * A054854 Number of ways to tile a 4 X n region with 1 X 1 and 2 X 2 tiles.
  * @author Sean A. Irvine
  */
 public class A054854 extends LinearRecurrence {

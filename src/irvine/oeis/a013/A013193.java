@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013193.
+ * A013193 Expansion of e.g.f. log(sec(x) + log(x+1)).
  * @author Sean A. Irvine
  */
 public class A013193 implements Sequence {

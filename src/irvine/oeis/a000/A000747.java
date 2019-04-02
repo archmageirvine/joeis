@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A000747.
+ * A000747 Boustrophedon transform of primes.
  * @author Sean A. Irvine
  */
 public class A000747 extends A000674 {

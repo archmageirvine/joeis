@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014301.
+ * A014301 Number of internal nodes of even outdegree in all ordered rooted trees with n edges.
  * @author Sean A. Irvine
  */
 public class A014301 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 //import java.util.HashSet;
 
 /**
- * A002369.
+ * A002369 Number of ways of folding a strip of n rectangular stamps.
  * @author Sean A. Irvine
  */
 public class A002369 implements Sequence {

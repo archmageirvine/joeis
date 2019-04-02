@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257713.
+ * A257713 Triangular numbers (A000217) that are the sum of ten consecutive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A257713 extends LinearRecurrence {

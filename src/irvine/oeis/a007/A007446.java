@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007446.
+ * A007446 Exponentiation of e.g.f. for primes.
  * @author Sean A. Irvine
  */
 public class A007446 implements Sequence {

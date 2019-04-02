@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A085589.
+ * A085589 Maximal cycle lengths in a certain class of one-dimensional cellular automata.
  * @author Sean A. Irvine
  */
 public class A085589 implements Sequence {

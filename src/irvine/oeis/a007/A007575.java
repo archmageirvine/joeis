@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007575.
+ * A007575 Number of stable towers of 2 X 2 LEGO blocks.
  * @author Sean A. Irvine
  */
 public class A007575 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A003822.
+ * A003822 Number of commutative elements in Coxeter group E_n.
  * @author Sean A. Irvine
  */
 public class A003822 extends A000108 {

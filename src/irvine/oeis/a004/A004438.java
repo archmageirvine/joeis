@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A004438.
+ * A004438 Numbers that are not the sum of 5 distinct squares.
  * @author Sean A. Irvine
  */
 public class A004438 extends FiniteSequence {

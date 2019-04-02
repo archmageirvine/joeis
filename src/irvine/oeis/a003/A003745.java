@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003745.
+ * A003745 Number of spanning trees in (K_5 - e) X P_n.
  * @author Sean A. Irvine
  */
 public class A003745 extends LinearRecurrence {

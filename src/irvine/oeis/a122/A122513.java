@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122513.
+ * A122513 Numbers n such that 1+2n+3n^2 is a triangular number.
  * @author Sean A. Irvine
  */
 public class A122513 extends LinearRecurrence {

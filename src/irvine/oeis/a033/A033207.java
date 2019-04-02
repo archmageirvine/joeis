@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A033207.
+ * A033207 Primes of form x^2+7*y^2.
  * @author Sean A. Irvine
  */
 public class A033207 implements Sequence {

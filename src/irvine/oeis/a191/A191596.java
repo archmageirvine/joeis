@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191596.
+ * A191596 Expansion of (1+x)^4/(1-x)^7.
  * @author Sean A. Irvine
  */
 public class A191596 extends LinearRecurrence {

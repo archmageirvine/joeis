@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180343.
+ * A180343 a(0)=-4; a(n+1) = 2*a(n) + period 4: repeat 6,1,2,5.
  * @author Sean A. Irvine
  */
 public class A180343 extends LinearRecurrence {

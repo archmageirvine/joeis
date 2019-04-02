@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099464.
+ * A099464 Trisection of tribonacci numbers.
  * @author Sean A. Irvine
  */
 public class A099464 extends LinearRecurrence {

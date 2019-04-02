@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168082.
+ * A168082 Fibonacci 11-step numbers.
  * @author Sean A. Irvine
  */
 public class A168082 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003307.
+ * A003307 Numbers k such that 2*3^k - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A003307 implements Sequence {

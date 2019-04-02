@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001465.
+ * A001465 Number of degree-n odd permutations of order 2.
  * @author Sean A. Irvine
  */
 public class A001465 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A164714.
+ * A164714 A positive integer n is included if all runs of 0's in binary n are of the same length, and if all runs of 1's in binary n are of the same length, and if there are at least two runs of 0's and at least two runs of 1's.
  * @author Sean A. Irvine
  */
 public class A164714 implements Sequence {

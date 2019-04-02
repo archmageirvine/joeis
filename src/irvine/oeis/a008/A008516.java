@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008516.
+ * A008516 6-dimensional centered cube numbers.
  * @author Sean A. Irvine
  */
 public class A008516 implements Sequence {

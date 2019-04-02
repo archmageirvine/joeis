@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A063831.
+ * A063831 Sum of cubes of divisors is a square.
  * @author Sean A. Irvine
  */
 public class A063831 implements Sequence {

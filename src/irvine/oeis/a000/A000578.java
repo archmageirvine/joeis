@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000578.
+ * A000578 The cubes: a(n) = n^3.
  * @author Sean A. Irvine
  */
 public class A000578 implements Sequence {

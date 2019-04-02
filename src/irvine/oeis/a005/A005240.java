@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A005240.
+ * A005240 P-positions in Epstein's Put or Take a Square game.
  * @author Sean A. Irvine
  */
 public class A005240 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291887.
+ * A291887 Number of symmetrically unique Dyck paths of semilength n and height three.
  * @author Sean A. Irvine
  */
 public class A291887 extends LinearRecurrence {

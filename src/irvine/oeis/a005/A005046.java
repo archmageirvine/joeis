@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005046.
+ * A005046 Number of partitions of a 2n-set into even blocks.
  * @author Sean A. Irvine
  */
 public class A005046 extends MemorySequence {

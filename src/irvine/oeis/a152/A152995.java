@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152995.
+ * A152995 Twice 11-gonal numbers: a(n) = n*(9*n-7).
  * @author Sean A. Irvine
  */
 public class A152995 extends LinearRecurrence {

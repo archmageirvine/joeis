@@ -7,7 +7,7 @@ import irvine.util.Point;
 import java.util.HashMap;
 
 /**
- * A003029.
+ * A003029 Number of unilaterally connected digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003029 extends A003030 {

@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228564.
+ * A228564 Largest odd divisor of n^2 + 1.
  * @author Sean A. Irvine
  */
 public class A228564 extends LinearRecurrence {

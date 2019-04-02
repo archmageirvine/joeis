@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232732.
+ * A232732 Sum_{k=0,...,2n} (-1)^k binomial(12*n,6*k).
  * @author Sean A. Irvine
  */
 public class A232732 extends LinearRecurrence {

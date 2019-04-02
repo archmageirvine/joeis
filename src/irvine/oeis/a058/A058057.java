@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A058057.
+ * A058057 Triangle giving coefficients of m&#233;nage hit polynomials.
  * @author Sean A. Irvine
  */
 public class A058057 implements Sequence {

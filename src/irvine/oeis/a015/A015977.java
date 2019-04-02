@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A015977.
+ * A015977 Two iterations of Reverse and Add are needed to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A015977 implements Sequence {

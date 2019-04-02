@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014299.
+ * A014299 Inverse of 290th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014299 extends PeriodicSequence {

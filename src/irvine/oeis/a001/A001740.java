@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001740.
+ * A001740 Squares written in base 5.
  * @author Sean A. Irvine
  */
 public class A001740 implements Sequence {

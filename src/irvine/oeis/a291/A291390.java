@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291390.
+ * A291390 a(n) = (1/5)*A291389(n).
  * @author Sean A. Irvine
  */
 public class A291390 extends LinearRecurrence {

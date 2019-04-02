@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A004685.
+ * A004685 Fibonacci numbers written in base 2.
  * @author Sean A. Irvine
  */
 public class A004685 extends A000045 {

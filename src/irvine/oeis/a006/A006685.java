@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002198;
 
 /**
- * A006685.
+ * A006685 Coefficients for numerical integration.
  * @author Sean A. Irvine
  */
 public class A006685 extends A002198 {

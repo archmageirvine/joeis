@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002052.
+ * A002052 Prime determinants of forms with class number 2.
  * @author Sean A. Irvine
  */
 public class A002052 implements Sequence {

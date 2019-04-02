@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051928.
+ * A051928 Number of independent sets of vertices in graph K_3 X C_n (n &gt; 2).
  * @author Sean A. Irvine
  */
 public class A051928 extends LinearRecurrence {

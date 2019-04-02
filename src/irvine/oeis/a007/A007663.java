@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007663.
+ * A007663 Fermat quotients: (2^(p-1)-1)/p, where p=prime(n).
  * @author Sean A. Irvine
  */
 public class A007663 implements Sequence {

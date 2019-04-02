@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053528.
+ * A053528 Number of bipartite graphs with 5 edges on nodes {1..n}.
  * @author Sean A. Irvine
  */
 public class A053528 extends LinearRecurrence {

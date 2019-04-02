@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130515.
+ * A130515 In triangular peg solitaire, number of distinct feasible pairs starting with one peg missing and finishing with one peg.
  * @author Sean A. Irvine
  */
 public class A130515 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221286.
+ * A221286 Vsemirnov's sequence.
  * @author Sean A. Irvine
  */
 public class A221286 extends LinearRecurrence {

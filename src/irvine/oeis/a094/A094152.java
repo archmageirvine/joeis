@@ -6,7 +6,7 @@ import irvine.oeis.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A094152.
+ * A094152 a(n) is the position of prime 7 in the Euclid-Mullin (EM) sequence of type A000945, if it were started with prime(n) instead of 2.
  * @author Sean A. Irvine
  */
 public class A094152 implements Sequence {

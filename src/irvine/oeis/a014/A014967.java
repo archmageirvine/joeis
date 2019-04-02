@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A014967.
+ * A014967 Continued fraction for Conway's constant.
  * @author Sean A. Irvine
  */
 public class A014967 extends ContinuedFractionSequence {

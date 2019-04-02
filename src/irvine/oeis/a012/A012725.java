@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012725.
+ * A012725 exp(arctanh(x)*tan(x)) = 1+2/2!*x^2+28/4!*x^4+920/6!*x^6+54416/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012725 implements Sequence {

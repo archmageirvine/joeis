@@ -5,7 +5,7 @@ import irvine.math.plantri.Plantri;
 import irvine.math.plantri.PlantriGraphState;
 
 /**
- * A007085.
+ * A007085 Number of unlabeled trivalent 3-connected bipartite planar graphs with 2n nodes without subgraphs R1 and R4.
  * @author Sean A. Irvine
  */
 public class A007085 extends A007083 {

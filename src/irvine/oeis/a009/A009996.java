@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009996.
+ * A009996 Numbers with digits in nonincreasing order.
  * @author Sean A. Irvine
  */
 public class A009996 implements Sequence {

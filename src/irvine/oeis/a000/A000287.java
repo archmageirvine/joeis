@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000287.
+ * A000287 Number of rooted polyhedral graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A000287 implements Sequence {

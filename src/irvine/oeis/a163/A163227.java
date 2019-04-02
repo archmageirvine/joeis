@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163227.
+ * A163227 Fibonacci-accumulation sequence.
  * @author Sean A. Irvine
  */
 public class A163227 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A061075.
+ * A061075 Greatest prime number p(n) with decimal fraction period of length n.
  * @author Sean A. Irvine
  */
 public class A061075 implements Sequence {

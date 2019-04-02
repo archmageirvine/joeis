@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005927.
+ * A005927 Theta series of diamond with respect to deep hole.
  * @author Sean A. Irvine
  */
 public class A005927 implements Sequence {

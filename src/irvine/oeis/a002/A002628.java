@@ -8,7 +8,7 @@ import irvine.math.z.Binomial;
 import java.util.ArrayList;
 
 /**
- * A002628.
+ * A002628 Number of permutations of length n without 3-sequences.
  * @author Sean A. Irvine
  */
 public class A002628 implements Sequence {

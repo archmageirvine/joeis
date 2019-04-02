@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007141.
+ * A007141 E-trees with at most 2 colors.
  * @author Sean A. Irvine
  */
 public class A007141 extends MemoryFunction2<Integer, Z> implements Sequence {

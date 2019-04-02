@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168052.
+ * A168052 Hankel transform of a Motzkin variant.
  * @author Sean A. Irvine
  */
 public class A168052 extends LinearRecurrence {

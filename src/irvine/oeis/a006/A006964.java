@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006964.
+ * A006964 Number of directed rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A006964 extends MemorySequence {

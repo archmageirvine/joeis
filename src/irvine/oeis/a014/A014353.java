@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014353.
+ * A014353 Chance of getting nothing, a pair, 2 pair, 3 of a kind, other straight, other flush, full house, 4 of a kind, other straight flush, or a royal flush in poker is 1 in a(n) (rounded to nearest integer).
  * @author Sean A. Irvine
  */
 public class A014353 extends FiniteSequence {

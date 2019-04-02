@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008993.
+ * A008993 Numerators of coefficients in expansion of cube root of sin(x).
  * @author Sean A. Irvine
  */
 public class A008993 implements Sequence {

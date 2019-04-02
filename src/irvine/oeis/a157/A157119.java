@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157119.
+ * A157119 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+103)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A157119 extends LinearRecurrence {

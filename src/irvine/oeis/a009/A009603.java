@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009603.
+ * A009603 Expansion of sinh(tan(tan(x))) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A009603 implements Sequence {

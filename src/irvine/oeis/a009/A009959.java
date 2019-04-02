@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009959.
+ * A009959 Coordination sequence for sigma-CrFe, Position Xd.
  * @author Sean A. Irvine
  */
 public class A009959 extends CoordinationSequence {

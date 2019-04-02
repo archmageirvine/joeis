@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007574.
+ * A007574 Patterns in a dual ring.
  * @author Sean A. Irvine
  */
 public class A007574 extends LinearRecurrence {

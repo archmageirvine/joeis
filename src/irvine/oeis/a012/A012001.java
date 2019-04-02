@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012001.
+ * A012001 E.g.f.: -tan(log(cos(x))), even powers only.
  * @author Sean A. Irvine
  */
 public class A012001 implements Sequence {

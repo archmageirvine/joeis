@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A077363.
+ * A077363 Smallest n-digit square whose external digits as well as internal digits form a square, or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A077363 implements Sequence {

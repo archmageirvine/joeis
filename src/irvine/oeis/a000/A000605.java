@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000605.
+ * A000605 Number of points of norm &lt;= n in cubic lattice.
  * @author Sean A. Irvine
  */
 public class A000605 implements Sequence {

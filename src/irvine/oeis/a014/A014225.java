@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014225.
+ * A014225 Number of initial pieces needed to reach level n in the Solitaire Army game.
  * @author Sean A. Irvine
  */
 public class A014225 extends FiniteSequence {

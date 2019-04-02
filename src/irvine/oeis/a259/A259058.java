@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259058.
+ * A259058 Numbers that are representable in at least two ways as sums of four distinct nonvanishing squares.
  * @author Sean A. Irvine
  */
 public class A259058 extends LinearRecurrence {

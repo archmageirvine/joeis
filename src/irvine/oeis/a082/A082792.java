@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A082792.
+ * A082792 Smallest multiple of n beginning with 3.
  * @author Sean A. Irvine
  */
 public class A082792 implements Sequence {

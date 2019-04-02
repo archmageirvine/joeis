@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013711.
+ * A013711 a(n) = 6^(2n+1).
  * @author Sean A. Irvine
  */
 public class A013711 implements Sequence {

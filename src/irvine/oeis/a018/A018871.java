@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018871.
+ * A018871 Smallest fifth power that begins with n.
  * @author Sean A. Irvine
  */
 public class A018871 implements Sequence {

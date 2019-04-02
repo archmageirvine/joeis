@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018888.
+ * A018888 Numbers which are not the sum of seven nonnegative cubes.
  * @author Sean A. Irvine
  */
 public class A018888 extends FiniteSequence {

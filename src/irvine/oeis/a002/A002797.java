@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002797.
+ * A002797 Number of solutions to a linear inequality.
  * @author Sean A. Irvine
  */
 public class A002797 extends LinearRecurrence {

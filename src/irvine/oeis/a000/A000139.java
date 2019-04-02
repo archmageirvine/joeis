@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000139.
+ * A000139 a(n) = 2*(3*n)!/((2*n+1)!*((n+1)!)).
  * @author Sean A. Irvine
  */
 public class A000139 implements Sequence {

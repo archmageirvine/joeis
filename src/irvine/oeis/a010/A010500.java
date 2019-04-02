@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010500.
+ * A010500 Decimal expansion of square root of 46.
  * @author Sean A. Irvine
  */
 public class A010500 extends A002193 {

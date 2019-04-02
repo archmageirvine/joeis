@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007985.
+ * A007985 Co-growth function of a certain group.
  * @author Sean A. Irvine
  */
 public class A007985 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245368.
+ * A245368 Compositions of n into parts 3, 4 and 7.
  * @author Sean A. Irvine
  */
 public class A245368 extends LinearRecurrence {

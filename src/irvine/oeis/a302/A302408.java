@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007825;
 
 /**
- * A302408.
+ * A302408 Number of n step self-avoiding walks on 3 X infinity grid starting from (0,0).
  * @author Sean A. Irvine
  */
 public class A302408 extends A007825 {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027801.
+ * A027801 a(n) = 5*(n+1)*binomial(n+4,5)/2.
  * @author Sean A. Irvine
  */
 public class A027801 extends LinearRecurrence {

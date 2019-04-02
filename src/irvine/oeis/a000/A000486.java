@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060158;
 
 /**
- * A000486.
+ * A000486 One half of the number of permutations of [n] such that the differences have 4 runs with the same signs.
  * @author Sean A. Irvine
  */
 public class A000486 extends A060158 {

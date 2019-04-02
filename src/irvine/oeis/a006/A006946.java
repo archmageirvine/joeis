@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006946.
+ * A006946 Independence number of De Bruijn graph of order n on two symbols.
  * @author Sean A. Irvine
  */
 public class A006946 implements Sequence {

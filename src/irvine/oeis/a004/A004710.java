@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004710.
+ * A004710 Positions of ones in binary expansion of Euler's constant gamma.
  * @author Sean A. Irvine
  */
 public class A004710 extends DecimalExpansionSequence {

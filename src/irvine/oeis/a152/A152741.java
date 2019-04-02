@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152741.
+ * A152741 13 times triangular numbers.
  * @author Sean A. Irvine
  */
 public class A152741 extends LinearRecurrence {

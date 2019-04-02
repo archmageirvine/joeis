@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006596.
+ * A006596 Numbers n such that (2^{2n+1} - 2^{n+1} + 1)/5 is prime.
  * @author Sean A. Irvine
  */
 public class A006596 implements Sequence {

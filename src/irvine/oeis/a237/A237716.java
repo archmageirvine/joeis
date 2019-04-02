@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237716.
+ * A237716 7-distance Pell sequence.
  * @author Sean A. Irvine
  */
 public class A237716 extends LinearRecurrence {

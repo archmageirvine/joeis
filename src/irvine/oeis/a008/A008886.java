@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008886.
+ * A008886 Aliquot sequence starting at 42.
  * @author Sean A. Irvine
  */
 public class A008886 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093148.
+ * A093148 a(n) = gcd(Fibonacci(n+5), Fibonacci(n+1)).
  * @author Sean A. Irvine
  */
 public class A093148 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A161501.
+ * A161501 a(n) = the smallest positive integer that is a palindrome when represented in binary, and is made by appending some number (zero or more) of binary digits on the right of n's binary representation.
  * @author Sean A. Irvine
  */
 public class A161501 implements Sequence {

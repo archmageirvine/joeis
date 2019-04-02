@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054421.
+ * A054421 Number of disconnected 3 X n binary matrices.
  * @author Sean A. Irvine
  */
 public class A054421 extends LinearRecurrence {

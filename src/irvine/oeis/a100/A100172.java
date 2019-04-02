@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100172.
+ * A100172 Structured triakis icosahedral numbers (vertex structure 4).
  * @author Sean A. Irvine
  */
 public class A100172 extends LinearRecurrence {

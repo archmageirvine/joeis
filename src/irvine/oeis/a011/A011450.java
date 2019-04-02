@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011450.
+ * A011450 Decimal expansion of 31st root of 31.
  * @author Sean A. Irvine
  */
 public class A011450 extends DecimalExpansionSequence {

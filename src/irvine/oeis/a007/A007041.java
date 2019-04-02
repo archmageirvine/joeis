@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007041.
+ * A007041 State assignments for n-state machine.
  * @author Sean A. Irvine
  */
 public class A007041 implements Sequence {

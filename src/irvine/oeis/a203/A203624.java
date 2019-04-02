@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203624.
+ * A203624 Numbers which are both decagonal and octagonal.
  * @author Sean A. Irvine
  */
 public class A203624 extends LinearRecurrence {

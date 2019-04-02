@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007906.
+ * A007906 Number of steps for aliquot sequence for n to converge to 0, or -1 if it never reaches 0.
  * @author Sean A. Irvine
  */
 public class A007906 implements Sequence {

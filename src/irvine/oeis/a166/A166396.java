@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166396.
+ * A166396 a(n) = the number of distinct positive decimal values k of substrings in the binary representation of n where k+1 is also the value of at least one substring in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A166396 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054225;
 
 /**
- * A219678.
+ * A219678 Number of tripartite partitions of (n,n,n) into triples.
  * @author Sean A. Irvine
  */
 public class A219678 extends A054225 {

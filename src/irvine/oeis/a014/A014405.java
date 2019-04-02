@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014405.
+ * A014405 Number of arithmetic progressions of 3 or more positive integers, strictly increasing with sum n.
  * @author Sean A. Irvine
  */
 public class A014405 implements Sequence {

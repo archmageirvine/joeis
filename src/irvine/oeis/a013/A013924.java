@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013924.
+ * A013924 Number of labeled connected graphs with n nodes and 2 cutpoints.
  * @author Sean A. Irvine
  */
 public class A013924 extends MemoryFunction2<Integer, Z> implements Sequence {

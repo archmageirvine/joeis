@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007936.
+ * A007936 Some permutation of digits is a square.
  * @author Sean A. Irvine
  */
 public class A007936 implements Sequence {

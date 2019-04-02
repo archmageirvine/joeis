@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015958.
+ * A015958 Numbers n such that n | 10^n + 1.
  * @author Sean A. Irvine
  */
 public class A015958 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003714.
+ * A003714 Fibbinary numbers: if n = F(i1) + F(i2) +...+ F(ik) is the Zeckendorf representation of n (i.e., write n in Fibonacci number system) then a(n) = 2^(i1-2) + 2^(i2-2) + ... + 2^(ik-2). Also numbers whose binary representation contains no two adjacent 1's.
  * @author Sean A. Irvine
  */
 public class A003714 implements Sequence {

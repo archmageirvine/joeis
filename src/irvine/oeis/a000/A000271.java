@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000271.
+ * A000271 Sums of m&#233;nage numbers.
  * @author Sean A. Irvine
  */
 public class A000271 implements Sequence {

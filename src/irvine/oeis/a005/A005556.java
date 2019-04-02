@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005556.
+ * A005556 Exponents m_i associated with Weyl group W(E6).
  * @author Sean A. Irvine
  */
 public class A005556 extends FiniteSequence {

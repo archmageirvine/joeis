@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A004250.
+ * A004250 Number of partitions of n into 3 or more parts.
  * @author Sean A. Irvine
  */
 public class A004250 extends A000041 {

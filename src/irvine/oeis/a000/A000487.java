@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000487.
+ * A000487 Number of permutations of length n with exactly two valleys.
  * @author Sean A. Irvine
  */
 public class A000487 implements Sequence {

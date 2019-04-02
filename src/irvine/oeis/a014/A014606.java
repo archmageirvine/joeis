@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014606.
+ * A014606 a(n) = (3n)!/(6^n).
  * @author Sean A. Irvine
  */
 public class A014606 implements Sequence {

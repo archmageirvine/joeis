@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000885.
+ * A000885 Number of twin prime pairs &lt; square of n-th prime.
  * @author Sean A. Irvine
  */
 public class A000885 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036222.
+ * A036222 Expansion of 1/(1-3*x)^9; 9-fold convolution of A000244 (powers of 3).
  * @author Sean A. Irvine
  */
 public class A036222 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001851.
+ * A001851 Total diameter of unlabeled trees with n nodes.
  * @author Gang Li
  * @author Frank Ruskey
  * @author W. Bomfin

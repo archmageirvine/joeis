@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 /**
- * A005292.
+ * A005292 Representation degeneracies for boson strings.
  * @author Sean A. Irvine
  */
 public class A005292 extends A005290 {

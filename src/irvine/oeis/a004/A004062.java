@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004062.
+ * A004062 Numbers n such that (6^n - 1)/5 is prime.
  * @author Sean A. Irvine
  */
 public class A004062 implements Sequence {

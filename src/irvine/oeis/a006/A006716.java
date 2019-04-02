@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006716.
+ * A006716 Squares with digits 1, 4, 9.
  * @author Sean A. Irvine
  */
 public class A006716 implements Sequence {

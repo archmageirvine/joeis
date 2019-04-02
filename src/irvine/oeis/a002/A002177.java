@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a100.A100640;
 
 /**
- * A002177.
+ * A002177 Numerators of Cotesian numbers (not in lowest terms): A002176(n)*C(n,0).
  * @author Sean A. Irvine
  */
 public class A002177 extends A002176 {

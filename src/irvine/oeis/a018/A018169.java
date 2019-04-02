@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018169.
+ * A018169 Powers of fifth root of 19 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018169 implements Sequence {

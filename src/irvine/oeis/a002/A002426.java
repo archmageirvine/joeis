@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002426.
+ * A002426 Central trinomial coefficients: largest coefficient of (1 + x + x^2)^n.
  * @author Sean A. Irvine
  */
 public class A002426 implements Sequence {

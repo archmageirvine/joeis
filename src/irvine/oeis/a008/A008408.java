@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000594;
 import irvine.oeis.a004.A004009;
 
 /**
- * A008408.
+ * A008408 Theta series of Leech lattice.
  * @author Sean A. Irvine
  */
 public class A008408 extends A004009 {

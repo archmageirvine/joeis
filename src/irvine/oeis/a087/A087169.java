@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087169.
+ * A087169 Expansion of (1 + 3*x)/(1 + 5*x + 9*x^2).
  * @author Sean A. Irvine
  */
 public class A087169 extends LinearRecurrence {

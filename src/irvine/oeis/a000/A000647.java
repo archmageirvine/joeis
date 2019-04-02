@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000647.
+ * A000647 Alkyl naphthalenes C_{n+10} H_{2n+8} with n+10 carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000647 extends A000598 {

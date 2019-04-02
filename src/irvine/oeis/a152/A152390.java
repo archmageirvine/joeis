@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152390.
+ * A152390 Arises in enumerating non-degenerate colorings in Brook's Theorem.
  * @author Sean A. Irvine
  */
 public class A152390 extends LinearRecurrence {

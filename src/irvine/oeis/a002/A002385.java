@@ -6,7 +6,7 @@ import irvine.factor.prime.Fast;
 import irvine.util.string.StringUtils;
 
 /**
- * A002385.
+ * A002385 Palindromic primes: prime numbers whose decimal expansion is a palindrome.
  * @author Sean A. Irvine
  */
 public class A002385 implements Sequence {

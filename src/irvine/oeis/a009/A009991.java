@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009991.
+ * A009991 Powers of 47.
  * @author Sean A. Irvine
  */
 public class A009991 implements Sequence {

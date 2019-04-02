@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097826.
+ * A097826 Partial sums of Chebyshev sequence S(n,11) = U(n,11/2) = A004190(n).
  * @author Sean A. Irvine
  */
 public class A097826 extends LinearRecurrence {

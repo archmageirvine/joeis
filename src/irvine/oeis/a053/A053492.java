@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 
 /**
- * A053492.
+ * A053492 REVEGF transform of [1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, ...].
  * @author Sean A. Irvine
  */
 public class A053492 implements Sequence {

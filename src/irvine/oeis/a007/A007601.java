@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A007601.
+ * A007601 Positions where A007600 increases.
  * @author Sean A. Irvine
  */
 public class A007601 extends RecordPositionSequence {

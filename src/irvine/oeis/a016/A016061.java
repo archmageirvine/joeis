@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016061.
+ * A016061 a(n) = n*(n+1)*(4*n+5)/6.
  * @author Sean A. Irvine
  */
 public class A016061 implements Sequence {

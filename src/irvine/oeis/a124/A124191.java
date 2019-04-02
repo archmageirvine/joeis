@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124191.
+ * A124191 a(n)=((2 + 3Sqrt[2])^n - (2 - 3Sqrt[2])^n)/(2Sqrt[2]).
  * @author Sean A. Irvine
  */
 public class A124191 extends LinearRecurrence {

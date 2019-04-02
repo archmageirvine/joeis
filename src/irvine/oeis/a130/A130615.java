@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130615.
+ * A130615 Sum of the first 10^n 4th powers.
  * @author Sean A. Irvine
  */
 public class A130615 extends LinearRecurrence {

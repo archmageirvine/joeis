@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009791.
+ * A009791 E.g.f. tanh(sin(sin(x))) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A009791 implements Sequence {

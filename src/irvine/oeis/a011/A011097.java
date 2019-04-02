@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011097.
+ * A011097 Decimal expansion of 5th root of 12.
  * @author Sean A. Irvine
  */
 public class A011097 extends DecimalExpansionSequence {

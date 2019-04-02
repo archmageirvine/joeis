@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060485.
+ * A060485 Number of 7-block tricoverings of an n-set.
  * @author Sean A. Irvine
  */
 public class A060485 extends LinearRecurrence {

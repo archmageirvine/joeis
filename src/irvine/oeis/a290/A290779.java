@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290779.
+ * A290779 Number of 6-cycles in the n-triangular honeycomb bishop graph.
  * @author Sean A. Irvine
  */
 public class A290779 extends LinearRecurrence {

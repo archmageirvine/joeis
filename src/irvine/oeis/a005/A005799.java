@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A005799.
+ * A005799 Generalized Euler numbers of type 2^n.
  * @author Sean A. Irvine
  */
 public class A005799 extends A000364 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003252.
+ * A003252 The number m such that A003251(m) = A003231(n).
  * @author Sean A. Irvine
  */
 public class A003252 extends A003231 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002969.
+ * A002969 E.g.f. 1/(1 - sin(x) + sin(x)^2).
  * @author Sean A. Irvine
  */
 public class A002969 implements Sequence {

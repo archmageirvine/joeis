@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007291.
+ * A007291 Series expansion for rectilinear polymers on square lattice.
  * @author Sean A. Irvine
  */
 public class A007291 implements Sequence {

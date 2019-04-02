@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009692.
+ * A009692 Number of partitions of {1, 2, ..., 2n} into pairs whose differences are primes.
  * @author Sean A. Irvine
  */
 public class A009692 extends MemoryFunction<TreeSet<Integer>, Z> implements Sequence {

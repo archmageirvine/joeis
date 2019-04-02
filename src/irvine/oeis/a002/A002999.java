@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002999.
+ * A002999 Expansion of (1+x*exp(x))^2.
  * @author Sean A. Irvine
  */
 public class A002999 implements Sequence {

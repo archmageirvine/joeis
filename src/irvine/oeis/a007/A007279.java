@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A007279.
+ * A007279 Number of partitions of n into partition numbers.
  * @author Sean A. Irvine
  */
 public class A007279 implements Sequence {

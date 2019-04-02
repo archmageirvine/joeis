@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009377.
+ * A009377 E.g.f. log(1 + tan(x)*sin(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009377 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012860.
+ * A012860 Numerators of coefficients in Taylor series expansion of log(cosec(x)*tanh(x)).
  * @author Sean A. Irvine
  */
 public class A012860 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014663.
+ * A014663 Primes p such that multiplicative order of 2 modulo p is odd.
  * @author Sean A. Irvine
  */
 public class A014663 implements Sequence {

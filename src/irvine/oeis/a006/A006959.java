@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006959.
+ * A006959 Number of labeled M-type rooted trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A006959 implements Sequence {

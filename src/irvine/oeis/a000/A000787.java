@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000787.
+ * A000787 Strobogrammatic numbers: the same upside down.
  * @author Sean A. Irvine
  */
 public class A000787 implements Sequence {

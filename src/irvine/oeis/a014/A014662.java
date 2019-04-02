@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014662.
+ * A014662 Primes p such that order of 2 mod p (=A007733(p)) is even.
  * @author Sean A. Irvine
  */
 public class A014662 implements Sequence {

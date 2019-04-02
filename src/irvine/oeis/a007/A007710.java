@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A007710.
+ * A007710 From the game of Mousetrap.
  * @author Sean A. Irvine
  */
 public class A007710 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007433.
+ * A007433 Inverse Moebius transform applied twice to squares.
  * @author Sean A. Irvine
  */
 public class A007433 implements Sequence {

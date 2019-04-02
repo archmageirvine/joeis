@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013940.
+ * A013940 a(n) = Sum_{k=1..n} floor(n/prime(k)^2).
  * @author Sean A. Irvine
  */
 public class A013940 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a009.A009421;
 
 /**
- * A014155.
+ * A014155 Sum of a nonnegative cube and a triangular number.
  * @author Sean A. Irvine
  */
 public class A014155 implements Sequence {

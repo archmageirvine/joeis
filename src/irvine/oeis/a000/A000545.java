@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000545.
+ * A000545 Number of ways of n-coloring a dodecahedron.
  * @author Sean A. Irvine
  */
 public class A000545 implements Sequence {

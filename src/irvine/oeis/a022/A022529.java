@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022529.
+ * A022529 Nexus numbers (n+1)^13-n^13.
  * @author Sean A. Irvine
  */
 public class A022529 extends LinearRecurrence {

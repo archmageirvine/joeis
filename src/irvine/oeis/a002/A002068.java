@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002068.
+ * A002068 Wilson remainders: a(n) = ((p-1)!+1)/p mod p, where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A002068 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000544.
+ * A000544 Number of permutations of length n by rises.
  * @author Sean A. Irvine
  */
 public class A000544 implements Sequence {

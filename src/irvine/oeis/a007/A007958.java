@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007958.
+ * A007958 Even numbers with at least one odd digit.
  * @author Sean A. Irvine
  */
 public class A007958 implements Sequence {

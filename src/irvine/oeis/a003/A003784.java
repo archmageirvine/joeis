@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A003784.
+ * A003784 Coefficients of Jacobi cusp form of index 1 and weight 10.
  * @author Sean A. Irvine
  */
 public class A003784 extends EulerTransformSequence {

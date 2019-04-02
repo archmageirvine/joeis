@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005962.
+ * A005962 Number of carbon trees with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A005962 extends A000625 {

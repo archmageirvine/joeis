@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161486.
+ * A161486 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+191)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A161486 extends LinearRecurrence {

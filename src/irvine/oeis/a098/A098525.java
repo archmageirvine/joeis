@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098525.
+ * A098525 Expansion of (1+3x^2)/(1-x-9x^5).
  * @author Sean A. Irvine
  */
 public class A098525 extends LinearRecurrence {

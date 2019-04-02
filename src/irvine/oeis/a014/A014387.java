@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A014387.
+ * A014387 Number of connected regular bipartite graphs of degree 7 with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A014387 extends ParallelGenerateGraphsSequence {

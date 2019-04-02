@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282464.
+ * A282464 a(n) = Sum_{i=0..n} i*Fibonacci(i)^2.
  * @author Sean A. Irvine
  */
 public class A282464 extends LinearRecurrence {

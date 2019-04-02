@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007913.
+ * A007913 Squarefree part of n: a(n) = smallest positive number m such that n/m is a square.
  * @author Sean A. Irvine
  */
 public class A007913 implements Sequence {

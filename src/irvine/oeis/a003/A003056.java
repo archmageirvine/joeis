@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003056.
+ * A003056 n appears n+1 times. Also table T(n,k) = n+k read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A003056 implements Sequence {

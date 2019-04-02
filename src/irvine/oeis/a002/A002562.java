@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000170;
 
 /**
- * A002562.
+ * A002562 Number of ways of placing n nonattacking queens on n X n board (symmetric solutions count only once).
  * @author Sean A. Irvine
  */
 public class A002562 extends A000170 {

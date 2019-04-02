@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A196545.
+ * A196545 Number of weakly ordered plane trees with n leaves.
  * @author Sean A. Irvine
  */
 public class A196545 implements Sequence {

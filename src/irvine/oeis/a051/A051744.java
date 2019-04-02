@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051744.
+ * A051744 a(n) = n*(n+1)*(n^2+5*n+18)/24.
  * @author Sean A. Irvine
  */
 public class A051744 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047707.
+ * A047707 Number of monotone Boolean functions of n variables with 3 mincuts. Also Sperner systems with 3 blocks.
  * @author Sean A. Irvine
  */
 public class A047707 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045502.
+ * A045502 Numbers k such that 2*k+1 and 3*k+1 are squares.
  * @author Sean A. Irvine
  */
 public class A045502 extends LinearRecurrence {

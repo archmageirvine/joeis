@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287063.
+ * A287063 Number of dominating sets in the n-crown graph.
  * @author Sean A. Irvine
  */
 public class A287063 extends LinearRecurrence {

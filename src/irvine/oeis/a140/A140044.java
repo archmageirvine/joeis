@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140044.
+ * A140044 Sequence generated from the 5/5Z addition table considered as a matrix.
  * @author Sean A. Irvine
  */
 public class A140044 extends LinearRecurrence {

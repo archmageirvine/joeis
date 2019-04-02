@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098308.
+ * A098308 Unsigned member r=-8 of the family of Chebyshev sequences S_r(n) defined in A092184.
  * @author Sean A. Irvine
  */
 public class A098308 extends LinearRecurrence {

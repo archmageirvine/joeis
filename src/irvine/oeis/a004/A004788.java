@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004788.
+ * A004788 Number of distinct prime divisors of the numbers in row n of Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A004788 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001594.
+ * A001594 6^n + n^6.
  * @author Sean A. Irvine
  */
 public class A001594 implements Sequence {

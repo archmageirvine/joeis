@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002261.
+ * A002261 Numbers k such that 11*2^k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A002261 implements Sequence {

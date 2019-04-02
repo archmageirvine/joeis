@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007145.
+ * A007145 Number of rooted bridgeless graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007145 implements Sequence {

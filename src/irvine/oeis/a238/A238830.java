@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238830.
+ * A238830 a(1)=a(2)=0; thereafter a(n) = a(n-2)+A238828(n-1)+A238827(n).
  * @author Sean A. Irvine
  */
 public class A238830 extends LinearRecurrence {

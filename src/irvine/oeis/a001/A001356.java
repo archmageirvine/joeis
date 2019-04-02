@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
- * A001356.
+ * A001356 Dates at fortnightly intervals from Jan 01 in the Julian calendar.
  * @author Sean A. Irvine
  */
 public class A001356 implements Sequence {

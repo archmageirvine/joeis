@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239035.
+ * A239035 Product of 8 consecutive integers.
  * @author Sean A. Irvine
  */
 public class A239035 extends LinearRecurrence {

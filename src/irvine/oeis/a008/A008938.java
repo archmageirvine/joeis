@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008938.
+ * A008938 Degrees of irreducible representations of group U3(3).
  * @author Sean A. Irvine
  */
 public class A008938 extends FiniteSequence {

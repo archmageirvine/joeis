@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A000376.
+ * A000376 Topswops (2): start by shuffling n cards labeled 1..n. If top card is m, reverse order of top m cards. Repeat until 1 gets to top, then stop. Suppose the whole deck is now sorted (if not, discard this case). a(n) is the maximal number of steps before 1 got to the top.
  * @author Sean A. Irvine
  */
 public class A000376 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A249517.
+ * A249517 Numbers n for which the digital sum A007953(n) and the digital product A007954(n) both contain the same distinct digits as the number n.
  * @author Sean A. Irvine
  */
 public class A249517 implements Sequence {

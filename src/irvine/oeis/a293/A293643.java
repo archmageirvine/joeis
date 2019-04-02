@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293643.
+ * A293643 a(n) is the least integer k such that k/Fibonacci(n) &gt; 3/5.
  * @author Sean A. Irvine
  */
 public class A293643 extends LinearRecurrence {

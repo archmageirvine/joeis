@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004371.
+ * A004371 Binomial coefficient C(7n,n-3).
  * @author Sean A. Irvine
  */
 public class A004371 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011863.
+ * A011863 Nearest integer to (n/2)^4.
  * @author Sean A. Irvine
  */
 public class A011863 implements Sequence {

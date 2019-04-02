@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.z.Z;
 
 /**
- * A008283.
+ * A008283 Read across rows of Euler-Bernoulli or Entringer triangle.
  * @author Sean A. Irvine
  */
 public class A008283 extends A008281 {

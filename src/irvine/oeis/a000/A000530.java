@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000530.
+ * A000530 Let p(n, s, x) be predicate that number of occurrences of s's in x &gt;= 2*n - the length of the longest sequence of s's in x. Then a(n)=#{x in {0,1}* | x ends in 0 and p(n,0,x) and (there is no prefix y of x such that p(n,0,y) or p(n,1,y))}.
  * @author Sean A. Irvine
  */
 public class A000530 implements Sequence {

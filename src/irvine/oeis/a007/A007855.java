@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007855.
+ * A007855 Infima closed sets in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007855 implements Sequence {

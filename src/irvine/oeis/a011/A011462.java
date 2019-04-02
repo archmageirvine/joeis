@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011462.
+ * A011462 Decimal expansion of 43rd root of 43.
  * @author Sean A. Irvine
  */
 public class A011462 extends DecimalExpansionSequence {

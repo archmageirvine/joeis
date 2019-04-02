@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147623.
+ * A147623 The 3rd Witt transform of A040000.
  * @author Sean A. Irvine
  */
 public class A147623 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003502.
+ * A003502 The smaller of a betrothed pair.
  * @author Sean A. Irvine
  */
 public class A003502 implements Sequence {

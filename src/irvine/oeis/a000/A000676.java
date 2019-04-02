@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000676.
+ * A000676 Number of centered trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000676 extends A000055 {

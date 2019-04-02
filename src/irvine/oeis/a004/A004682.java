@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A004682.
+ * A004682 Primes written in base 8.
  * @author Sean A. Irvine
  */
 public class A004682 extends A000040 {

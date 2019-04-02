@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179553.
+ * A179553 Decimal expansion of the surface area of pentagonal pyramid with edge length 1.
  * @author Sean A. Irvine
  */
 public class A179553 extends DecimalExpansionSequence {

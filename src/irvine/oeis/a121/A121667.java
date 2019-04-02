@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A121667.
+ * A121667 McKay-Thompson series of class 6D for the Monster group with a(0) = -4.
  * @author Sean A. Irvine
  */
 public class A121667 implements Sequence {

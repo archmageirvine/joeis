@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007438.
+ * A007438 Moebius transform of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A007438 implements Sequence {

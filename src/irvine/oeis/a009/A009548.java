@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009548.
+ * A009548 Expansion of e.g.f. sin(x)*sin(tan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009548 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005754.
+ * A005754 Number of planted identity matched trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005754 extends MemoryFunction2<Long, Z> implements Sequence {

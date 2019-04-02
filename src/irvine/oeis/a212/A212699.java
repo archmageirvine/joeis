@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212699.
+ * A212699 Main transitions in systems of n particles with spin 2.
  * @author Sean A. Irvine
  */
 public class A212699 extends LinearRecurrence {

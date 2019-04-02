@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174850.
+ * A174850 Quintisection A061037(5*n-2).
  * @author Sean A. Irvine
  */
 public class A174850 extends LinearRecurrence {

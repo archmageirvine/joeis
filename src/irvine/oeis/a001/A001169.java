@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001169.
+ * A001169 Number of board-pile polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A001169 implements Sequence {

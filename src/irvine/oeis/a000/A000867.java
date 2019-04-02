@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A000867.
+ * A000867 Numbers beginning with letter 'f' in English.
  * @author Sean A. Irvine
  */
 public class A000867 implements Sequence {

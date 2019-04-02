@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075873.
+ * A075873 40*n^2 + 9 is a square.
  * @author Sean A. Irvine
  */
 public class A075873 extends LinearRecurrence {

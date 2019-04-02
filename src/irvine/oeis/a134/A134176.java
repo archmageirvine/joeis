@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134176.
+ * A134176 a(n) = (3/8)*(n-1)*(n-2)*(27*n^2-137*n+180).
  * @author Sean A. Irvine
  */
 public class A134176 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000754.
+ * A000754 Boustrophedon transform of odd numbers.
  * @author Sean A. Irvine
  */
 public class A000754 extends A000674 {

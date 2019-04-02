@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140426.
+ * A140426 Number of multi-symmetric Steinhaus matrices of size n.
  * @author Sean A. Irvine
  */
 public class A140426 extends LinearRecurrence {

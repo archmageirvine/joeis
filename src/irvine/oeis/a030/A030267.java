@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030267.
+ * A030267 COMPOSE natural numbers with themselves.
  * @author Sean A. Irvine
  */
 public class A030267 extends LinearRecurrence {

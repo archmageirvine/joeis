@@ -8,7 +8,7 @@ import irvine.oeis.a246.A246137;
 import irvine.oeis.a246.A246417;
 
 /**
- * A002826.
+ * A002826 Number of precomplete Post functions of n variables.
  * @author Sean A. Irvine
  */
 public class A002826 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139209.
+ * A139209 Fibonacci bisection minus powers of 2.
  * @author Sean A. Irvine
  */
 public class A139209 extends LinearRecurrence {

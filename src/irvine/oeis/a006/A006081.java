@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006081.
+ * A006081 Number of line-rooted projective plane trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A006081 extends MemoryFunction1<Z> implements Sequence {

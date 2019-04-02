@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035291.
+ * A035291 Number of ways to place a non-attacking white and black queen on n X n chessboard.
  * @author Sean A. Irvine
  */
 public class A035291 extends LinearRecurrence {

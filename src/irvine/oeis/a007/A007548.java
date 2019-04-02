@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007548.
+ * A007548 Shifts 3 places left under exponentiation.
  * @author Sean A. Irvine
  */
 public class A007548 extends MemorySequence {

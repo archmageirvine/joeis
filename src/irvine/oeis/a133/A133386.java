@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133386.
+ * A133386 Number of forests of labeled rooted trees with n nodes, containing exactly 2 trees of height one, all others having height zero.
  * @author Sean A. Irvine
  */
 public class A133386 extends LinearRecurrence {

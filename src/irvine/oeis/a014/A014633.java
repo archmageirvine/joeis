@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000326;
 
 /**
- * A014633.
+ * A014633 Even pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A014633 extends A000326 {

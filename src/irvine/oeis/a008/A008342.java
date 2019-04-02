@@ -6,7 +6,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A008342.
+ * A008342 Minimal number of shift, add and subtract operations to multiply by n.
  * @author Sean A. Irvine
  */
 public class A008342 implements Sequence {

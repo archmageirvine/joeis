@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007020.
+ * A007020 Maximal planar degree sequences with n nodes.
  * @author Sean A. Irvine
  */
 public class A007020 implements Sequence, PlantriGraphProcessor {

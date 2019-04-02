@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017387.
+ * A017387 a(n) = (10*n + 9)^11.
  * @author Sean A. Irvine
  */
 public class A017387 implements Sequence {

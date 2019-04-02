@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009403.
+ * A009403 Expansion of e.g.f. log(1+tanh(x)^2), even powers only.
  * @author Sean A. Irvine
  */
 public class A009403 implements Sequence {

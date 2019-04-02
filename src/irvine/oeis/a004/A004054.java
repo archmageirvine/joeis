@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004054.
+ * A004054 Expansion of (1-x)/( (1+x)*(1-2*x)*(1-3*x)).
  * @author Sean A. Irvine
  */
 public class A004054 implements Sequence {

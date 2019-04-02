@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002796.
+ * A002796 Numbers that are divisible by each nonzero digit.
  * @author Sean A. Irvine
  */
 public class A002796 implements Sequence {

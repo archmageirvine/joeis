@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A006414.
+ * A006414 Number of nonseparable toroidal tree-rooted maps on n nodes.
  * @author Sean A. Irvine
  */
 public class A006414 extends PartialSumSequence {

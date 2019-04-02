@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057587.
+ * A057587 Nonnegative numbers of form n*(n^2+-1)/2.
  * @author Sean A. Irvine
  */
 public class A057587 extends LinearRecurrence {

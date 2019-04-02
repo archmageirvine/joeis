@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005772.
+ * A005772 Number of permutations of length n with 2 cycle lengths.
  * @author Sean A. Irvine
  */
 public class A005772 implements Sequence {

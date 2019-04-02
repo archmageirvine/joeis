@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005535.
+ * A005535 Number of semi-regular digraphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A005535 implements Sequence, GraphProcessor {

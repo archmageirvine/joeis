@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000974.
+ * A000974 Conjecturally the number of even integers the sum of two primes in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A000974 extends A000954 {

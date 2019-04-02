@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000631.
+ * A000631 Number of ethylene derivatives with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000631 extends A000642 {

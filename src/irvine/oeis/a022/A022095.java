@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022095.
+ * A022095 Fibonacci sequence beginning 1, 5.
  * @author Sean A. Irvine
  */
 public class A022095 extends LinearRecurrence {

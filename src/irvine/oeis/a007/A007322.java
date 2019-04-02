@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000670;
 
 /**
- * A007322.
+ * A007322 Number of functors of degree n from free Abelian groups to Abelian groups.
  * @author Sean A. Irvine
  */
 public class A007322 implements Sequence {

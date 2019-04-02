@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005613.
+ * A005613 Cascade-realizable Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A005613 extends MemorySequence {

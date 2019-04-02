@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002410.
+ * A002410 Nearest integer to imaginary part of n-th zero of Riemann zeta function.
  * @author Sean A. Irvine
  * @author Raymond Manzoni
  */

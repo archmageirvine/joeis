@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193868.
+ * A193868 Even central polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A193868 extends LinearRecurrence {

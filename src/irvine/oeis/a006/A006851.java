@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Quadruple;
 
 /**
- * A006851.
+ * A006851 Trails of length n on honeycomb lattice.
  * @author Sean A. Irvine
  */
 public class A006851 implements Sequence {

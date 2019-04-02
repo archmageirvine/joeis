@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001924;
 
 /**
- * A014162.
+ * A014162 Apply partial sum operator thrice to Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A014162 extends PartialSumSequence {

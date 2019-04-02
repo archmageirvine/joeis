@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049312.
+ * A049312 Number of graphs with a distinguished bipartite block, by number of vertices.
  * @author Sean A. Irvine
  */
 public class A049312 extends MemoryFunction2<Integer, Z> implements Sequence {

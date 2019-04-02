@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158487.
+ * A158487 a(n) = 64*n^2 - 8.
  * @author Sean A. Irvine
  */
 public class A158487 extends LinearRecurrence {

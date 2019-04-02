@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010523.
+ * A010523 Decimal expansion of square root of 71.
  * @author Sean A. Irvine
  */
 public class A010523 extends A002193 {

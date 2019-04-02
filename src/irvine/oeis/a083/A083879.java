@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083879.
+ * A083879 a(0)=1, a(1)=4, a(n) = 8a(n-1) - 14a(n-2), n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A083879 extends LinearRecurrence {

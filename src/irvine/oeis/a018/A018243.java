@@ -4,7 +4,7 @@ import irvine.oeis.InverseEulerTransformSequence;
 import irvine.oeis.a000.A000931;
 
 /**
- * A018243.
+ * A018243 Inverse Euler transform of A000931.
  * @author Sean A. Irvine
  */
 public class A018243 extends InverseEulerTransformSequence {

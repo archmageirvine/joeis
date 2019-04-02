@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106586.
+ * A106586 Digit next to last in squares ending in 6.
  * @author Sean A. Irvine
  */
 public class A106586 extends LinearRecurrence {

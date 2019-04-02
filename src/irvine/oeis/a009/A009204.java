@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009204.
+ * A009204 Expansion of e.g.f. exp(sin(tanh(x))).
  * @author Sean A. Irvine
  */
 public class A009204 implements Sequence {

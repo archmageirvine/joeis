@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202107.
+ * A202107 n^4*(n+1)^4/8.
  * @author Sean A. Irvine
  */
 public class A202107 extends LinearRecurrence {

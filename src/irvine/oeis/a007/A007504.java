@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007504.
+ * A007504 Sum of the first n primes.
  * @author Sean A. Irvine
  */
 public class A007504 extends PartialSumSequence {

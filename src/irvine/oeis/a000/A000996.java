@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000996.
+ * A000996 Shifts 3 places left under binomial transform.
  * @author Sean A. Irvine
  */
 public class A000996 extends MemorySequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165740.
+ * A165740 Positive integers n such that solution to the toric n X n "Lights Out" puzzle is not unique (up to the order of flippings; each flipping appears at most once).
  * @author Sean A. Irvine
  */
 public class A165740 implements Sequence {

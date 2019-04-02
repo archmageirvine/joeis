@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001578.
+ * A001578 Smallest primitive prime factor of Fibonacci number F(n), or 1 if F(n) has no primitive prime factor.
  * @author Sean A. Irvine
  */
 public class A001578 implements Sequence {

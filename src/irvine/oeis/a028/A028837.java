@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028837.
+ * A028837 Iterated sum of digits of n is a square.
  * @author Sean A. Irvine
  */
 public class A028837 extends LinearRecurrence {

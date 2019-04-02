@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167875.
+ * A167875 One third of product plus sum of three consecutive nonnegative integers; a(n)=(n+1)(n^2+2n+3)/3.
  * @author Sean A. Irvine
  */
 public class A167875 extends LinearRecurrence {

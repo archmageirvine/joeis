@@ -8,7 +8,7 @@ import irvine.math.q.Q;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002209.
+ * A002209 Denominators of coefficients for numerical integration.
  * @author Sean A. Irvine
  */
 public class A002209 implements Sequence {

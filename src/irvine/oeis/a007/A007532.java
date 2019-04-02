@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007532.
+ * A007532 Powerful numbers (2): a sum of positive powers of its digits.
  * @author Sean A. Irvine
  */
 public class A007532 implements Sequence {

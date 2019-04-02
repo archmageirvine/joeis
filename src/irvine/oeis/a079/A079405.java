@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A079405.
+ * A079405 Number of dots in primes in Braille.
  * @author Sean A. Irvine
  */
 public class A079405 implements Sequence {

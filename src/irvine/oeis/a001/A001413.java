@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001413.
+ * A001413 Number of 2n-step polygons on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A001413 extends A001412 {

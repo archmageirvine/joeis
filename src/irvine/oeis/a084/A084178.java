@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084178.
+ * A084178 Inverse binomial transform of Fibonacci oblongs.
  * @author Sean A. Irvine
  */
 public class A084178 extends LinearRecurrence {

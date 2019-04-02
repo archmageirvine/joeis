@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060158.
+ * A060158 Number of permutations of [n] with 4 sequences.
  * @author Sean A. Irvine
  */
 public class A060158 implements Sequence {

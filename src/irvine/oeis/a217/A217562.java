@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217562.
+ * A217562 Even numbers not divisible by 5.
  * @author Sean A. Irvine
  */
 public class A217562 extends LinearRecurrence {

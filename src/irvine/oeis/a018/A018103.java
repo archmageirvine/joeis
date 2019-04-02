@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018103.
+ * A018103 Powers of fourth root of 20 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018103 implements Sequence {

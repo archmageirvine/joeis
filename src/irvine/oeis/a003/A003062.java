@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003062.
+ * A003062 Beginnings of periodic unitary aliquot sequences.
  * @author Sean A. Irvine
  */
 public class A003062 implements Sequence {

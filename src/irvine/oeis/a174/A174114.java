@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174114.
+ * A174114 Even central polygonal numbers (A193868) divided by 2.
  * @author Sean A. Irvine
  */
 public class A174114 extends LinearRecurrence {

@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 /**
- * A002435.
+ * A002435 Second-order Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002435 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196593.
+ * A196593 Number of fixed tree-like convex polyominoes.
  * @author Sean A. Irvine
  */
 public class A196593 extends LinearRecurrence {

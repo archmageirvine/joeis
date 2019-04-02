@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032908.
+ * A032908 One of 4 3rd-order recurring sequences for which the first derived sequence and the Galois transformed sequence coincide.
  * @author Sean A. Irvine
  */
 public class A032908 extends LinearRecurrence {

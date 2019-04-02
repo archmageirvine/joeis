@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019334.
+ * A019334 Primes with primitive root 3.
  * @author Sean A. Irvine
  */
 public class A019334 implements Sequence {

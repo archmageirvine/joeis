@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005614.
+ * A005614 The infinite Fibonacci word (start with 1, apply 0-&gt;1, 1-&gt;10, iterate, take limit).
  * @author Sean A. Irvine
  */
 public class A005614 implements Sequence {

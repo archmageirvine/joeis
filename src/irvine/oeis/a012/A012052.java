@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012052.
+ * A012052 sin(sin(arctanh(x)))=x-4/5!*x^5-136/7!*x^7-7408/9!*x^9-644416/11!*x^11...
  * @author Sean A. Irvine
  */
 public class A012052 implements Sequence {

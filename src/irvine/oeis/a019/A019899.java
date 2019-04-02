@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019899.
+ * A019899 Decimal expansion of tangent of 1 degree.
  * @author Sean A. Irvine
  */
 public class A019899 extends DecimalExpansionSequence {

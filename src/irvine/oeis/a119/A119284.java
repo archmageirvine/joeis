@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119284.
+ * A119284 Alternating sum of the cubes of the first n Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A119284 extends LinearRecurrence {

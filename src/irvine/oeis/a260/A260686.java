@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260686.
+ * A260686 Period 6 zigzag sequence, repeat [0, 1, 2, 3, 2, 1].
  * @author Sean A. Irvine
  */
 public class A260686 extends LinearRecurrence {

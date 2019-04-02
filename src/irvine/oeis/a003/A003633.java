@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A003633.
+ * A003633 The sequence 2^(1-n)*a(n) is fixed (up to signs) by Stirling-2 transform.
  * @author Sean A. Irvine
  */
 public class A003633 implements Sequence {

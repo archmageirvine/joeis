@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002581.
+ * A002581 Decimal expansion of cube root of 3.
  * @author Sean A. Irvine
  */
 public class A002581 extends DecimalExpansionSequence {

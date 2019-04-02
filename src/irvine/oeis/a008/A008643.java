@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008643.
+ * A008643 Molien series for group of 4 X 4 upper triangular matrices over GF(2).
  * @author Sean A. Irvine
  */
 public class A008643 extends LinearRecurrence {

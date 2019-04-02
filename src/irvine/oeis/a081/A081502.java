@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081502.
+ * A081502 Let n = 10x + y where 0 &lt;= y &lt;= 9, x &gt;= 0. Then a(n) = 3x+y.
  * @author Sean A. Irvine
  */
 public class A081502 extends LinearRecurrence {

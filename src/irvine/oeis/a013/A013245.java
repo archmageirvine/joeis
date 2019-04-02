@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013245.
+ * A013245 sech(log(x+1)-tan(x))=1-3/4!*x^4-90/6!*x^6+168/7!*x^7-4095/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A013245 implements Sequence {

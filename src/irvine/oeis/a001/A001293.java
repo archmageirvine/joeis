@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001293.
+ * A001293 Leech triangle: k-th number (0&lt;=k&lt;=n) in n-th row (0&lt;=n) is number of octads in S(5,8,24) containing k given points and missing n-k given points.
  * @author Sean A. Irvine
  */
 public class A001293 extends FiniteSequence {

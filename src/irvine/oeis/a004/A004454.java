@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004454.
+ * A004454 Nimsum n + 13.
  * @author Sean A. Irvine
  */
 public class A004454 implements Sequence {

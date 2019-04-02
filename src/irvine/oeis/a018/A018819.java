@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000123;
 
 /**
- * A018819.
+ * A018819 Binary partition function: number of partitions of n into powers of 2.
  * @author Sean A. Irvine
  */
 public class A018819 extends A000123 {

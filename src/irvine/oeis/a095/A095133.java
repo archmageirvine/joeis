@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000055;
 
 /**
- * A095133.
+ * A095133 Triangle of numbers of forests on n nodes containing k trees.
  * @author Sean A. Irvine
  */
 public class A095133 extends MemoryFunction3<Integer, Z> implements Sequence {

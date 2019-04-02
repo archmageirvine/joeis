@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002944.
+ * A002944 a(n) = lcm(1,2,...,n) / n.
  * @author Sean A. Irvine
  */
 public class A002944 implements Sequence {

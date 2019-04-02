@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004081.
+ * A004081 a(n) = n-th positive integer such that only one integer lies between exp(s(m)) and exp(s(m+1)), where s(m) = 1 + 1/2 + 1/3 + . . . + 1/m.
  * @author Sean A. Irvine
  */
 public class A004081 implements Sequence {

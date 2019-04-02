@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081586.
+ * A081586 Fourth row of Pascal-(1,3,1) array A081578.
  * @author Sean A. Irvine
  */
 public class A081586 extends LinearRecurrence {

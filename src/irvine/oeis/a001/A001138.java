@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001138.
+ * A001138 Red rooted red-black trees with n internal nodes.
  * @author Sean A. Irvine
  */
 public class A001138 extends MemorySequence {

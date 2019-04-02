@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110331.
+ * A110331 Row sums of a number triangle related to the Pell numbers.
  * @author Sean A. Irvine
  */
 public class A110331 extends LinearRecurrence {

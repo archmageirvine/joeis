@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007818.
+ * A007818 Maximal number of bonds joining n nodes in simple cubic lattice.
  * @author Sean A. Irvine
  */
 public class A007818 implements Sequence {

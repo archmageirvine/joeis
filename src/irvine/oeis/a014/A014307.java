@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A014307.
+ * A014307 Expansion of sqrt( exp(x) / ( 2 - exp(x) )).
  * @author Sean A. Irvine
  */
 public class A014307 extends MemorySequence {

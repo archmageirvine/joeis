@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002274.
+ * A002274 Numbers k such that 57*2^k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A002274 implements Sequence {

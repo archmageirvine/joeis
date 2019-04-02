@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006298.
+ * A006298 Number of genus 2 rooted maps with 1 face with n vertices.
  * @author Sean A. Irvine
  */
 public class A006298 implements Sequence {

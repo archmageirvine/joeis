@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004064.
+ * A004064 Numbers n such that (12^n - 1)/11 is prime.
  * @author Sean A. Irvine
  */
 public class A004064 implements Sequence {

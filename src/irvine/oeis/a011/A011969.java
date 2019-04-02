@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.math.z.Z;
 
 /**
- * A011969.
+ * A011969 Apply (1+Shift)^2 to Bell numbers.
  * @author Sean A. Irvine
  */
 public class A011969 extends A011968 {

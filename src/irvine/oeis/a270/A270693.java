@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270693.
+ * A270693 Alternating sum of centered 25-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A270693 extends LinearRecurrence {

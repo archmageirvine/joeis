@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081911.
+ * A081911 a(n) = 5^n*(n^2 - n + 50)/50.
  * @author Sean A. Irvine
  */
 public class A081911 extends LinearRecurrence {

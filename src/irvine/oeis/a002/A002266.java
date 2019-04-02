@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002266.
+ * A002266 Integers repeated 5 times.
  * @author Sean A. Irvine
  */
 public class A002266 implements Sequence {

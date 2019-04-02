@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a274.A274447;
 
 /**
- * A001662.
+ * A001662 Coefficients of Airey's converging factor.
  * @author Sean A. Irvine
  */
 public class A001662 extends A274447 {

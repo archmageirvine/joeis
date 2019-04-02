@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131557.
+ * A131557 Triangular numbers that are the sums of five consecutive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A131557 extends LinearRecurrence {

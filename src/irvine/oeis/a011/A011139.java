@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011139.
+ * A011139 Decimal expansion of 5th root of 54.
  * @author Sean A. Irvine
  */
 public class A011139 extends DecimalExpansionSequence {

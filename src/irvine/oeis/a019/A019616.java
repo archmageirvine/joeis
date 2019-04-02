@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019616.
+ * A019616 Decimal expansion of Pi*e/8.
  * @author Sean A. Irvine
  */
 public class A019616 extends DecimalExpansionSequence {

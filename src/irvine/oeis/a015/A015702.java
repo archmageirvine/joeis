@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a065.A065387;
 
 /**
- * A015702.
+ * A015702 Numbers n where phi(n) + sigma(n) increases.
  * @author Sean A. Irvine
  */
 public class A015702 extends RecordPositionSequence {

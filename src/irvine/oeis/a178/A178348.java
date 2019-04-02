@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178348.
+ * A178348 a(n) = Sum_{k=0..n} 1100^k.
  * @author Sean A. Irvine
  */
 public class A178348 extends LinearRecurrence {

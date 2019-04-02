@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008609.
+ * A008609 a(n) = n + max_{0 &lt;= i &lt;n} ((n-i)*a(i)), a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A008609 extends MemorySequence {

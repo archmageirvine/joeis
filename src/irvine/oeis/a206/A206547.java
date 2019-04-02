@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206547.
+ * A206547 Positive odd numbers relatively prime to 21.
  * @author Sean A. Irvine
  */
 public class A206547 extends LinearRecurrence {

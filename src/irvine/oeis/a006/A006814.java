@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001411;
 import irvine.util.Pair;
 
 /**
- * A006814.
+ * A006814 Related to self-avoiding walks on square lattice.
  * @author Sean A. Irvine
  */
 public class A006814 extends A001411 {

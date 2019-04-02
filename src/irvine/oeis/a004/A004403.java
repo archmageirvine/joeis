@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004403.
+ * A004403 Expansion of 1/theta_3(q)^2 in powers of q.
  * @author Sean A. Irvine
  */
 public class A004403 implements Sequence {

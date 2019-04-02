@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017699.
+ * A017699 Numerator of sum of -18th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017699 implements Sequence {

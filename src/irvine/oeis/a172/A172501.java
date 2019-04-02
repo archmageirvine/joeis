@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172501.
+ * A172501 a(n) = binomial(n+8,8)*6^n.
  * @author Sean A. Irvine
  */
 public class A172501 extends LinearRecurrence {

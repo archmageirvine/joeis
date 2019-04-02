@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182466.
+ * A182466 a(n) = 3a(n-1) - 2a(n-2) with a(0)=32 and a(1)=80.
  * @author Sean A. Irvine
  */
 public class A182466 extends LinearRecurrence {

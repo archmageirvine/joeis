@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218330.
+ * A218330 Odd decagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A218330 extends LinearRecurrence {

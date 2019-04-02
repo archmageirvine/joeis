@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271939.
+ * A271939 Number of edges in the n-th order Sierpinski carpet graph.
  * @author Sean A. Irvine
  */
 public class A271939 extends LinearRecurrence {

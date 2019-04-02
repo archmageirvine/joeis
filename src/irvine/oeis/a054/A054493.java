@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054493.
+ * A054493 A Pellian-related recursive sequence.
  * @author Sean A. Irvine
  */
 public class A054493 extends LinearRecurrence {

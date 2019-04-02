@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145976.
+ * A145976 Expansion of 1/(1-x*(1-7*x)).
  * @author Sean A. Irvine
  */
 public class A145976 extends LinearRecurrence {

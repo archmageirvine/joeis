@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011616.
+ * A011616 Legendre symbol (n,167).
  * @author Sean A. Irvine
  */
 public class A011616 implements Sequence {

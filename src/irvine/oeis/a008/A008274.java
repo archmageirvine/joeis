@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.z.Z;
 
 /**
- * A008274.
+ * A008274 Total length of performances of n fragments in Stockhausen problem.
  * @author Sean A. Irvine
  */
 public class A008274 extends A008270 {

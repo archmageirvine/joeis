@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212593.
+ * A212593 a(n) is the difference between multiples of 9 with even and odd digit sum in base 8 in interval [0,8^n).
  * @author Sean A. Irvine
  */
 public class A212593 extends LinearRecurrence {

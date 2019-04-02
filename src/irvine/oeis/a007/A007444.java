@@ -4,7 +4,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007444.
+ * A007444 Moebius transform of primes.
  * @author Sean A. Irvine
  */
 public class A007444 extends MobiusTransformSequence {

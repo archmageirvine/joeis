@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001110.
+ * A001110 Square triangular numbers: numbers that are both triangular and square.
  * @author Sean A. Irvine
  */
 public class A001110 implements Sequence {

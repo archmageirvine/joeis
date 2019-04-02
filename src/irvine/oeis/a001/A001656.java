@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001656.
+ * A001656 Fibonomial coefficients.
  * @author Sean A. Irvine
  */
 public class A001656 extends A000045 {

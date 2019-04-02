@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278129.
+ * A278129 a(n) = 348*2^n - 188.
  * @author Sean A. Irvine
  */
 public class A278129 extends LinearRecurrence {

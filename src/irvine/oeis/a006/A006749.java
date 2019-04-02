@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000105;
 
 /**
- * A006749.
+ * A006749 Number of asymmetric polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006749 extends A000105 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A006030.
+ * A006030 Palindromic tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A006030 implements Sequence {

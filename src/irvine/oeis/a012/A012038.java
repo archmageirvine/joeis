@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012038.
+ * A012038 cos(sin(arcsinh(x)))=1-1/2!*x^2+9/4!*x^4-201/6!*x^6+8753/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012038 implements Sequence {

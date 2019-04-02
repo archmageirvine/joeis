@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001938.
+ * A001938 Expansion of k/(4*q^(1/2)) in powers of q, where k defined by sqrt(k) = theta_2(0, q))/theta_3(0, q).
  * @author Sean A. Irvine
  */
 public class A001938 implements Sequence {

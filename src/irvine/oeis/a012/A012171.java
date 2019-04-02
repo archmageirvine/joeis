@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012171.
+ * A012171 arctanh(tan(tanh(x)))=x+2/3!*x^3+16/5!*x^5+496/7!*x^7+24064/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012171 implements Sequence {

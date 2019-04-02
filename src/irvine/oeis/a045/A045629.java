@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045629.
+ * A045629 Number of 2n-bead black-white complementable necklaces with n black beads.
  * @author Sean A. Irvine
  */
 public class A045629 implements Sequence {

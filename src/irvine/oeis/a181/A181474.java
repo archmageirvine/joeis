@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181474.
+ * A181474 Sequence related to the Hankel transform of A105523(n+5).
  * @author Sean A. Irvine
  */
 public class A181474 extends LinearRecurrence {

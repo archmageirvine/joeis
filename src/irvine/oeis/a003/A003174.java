@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003174.
+ * A003174 Positive integers D such that Q[sqrt(D)] is a quadratic field which is norm-Euclidean.
  * @author Sean A. Irvine
  */
 public class A003174 extends FiniteSequence {

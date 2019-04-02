@@ -8,7 +8,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002433.
+ * A002433 Theta series of unique 26-dimensional unimodular lattice T_26 with no roots (and minimal norm 3).
  * @author Sean A. Irvine
  */
 public class A002433 implements Sequence {

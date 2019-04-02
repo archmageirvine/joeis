@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075839.
+ * A075839 11*n^2 - 2 is a square.
  * @author Sean A. Irvine
  */
 public class A075839 extends LinearRecurrence {

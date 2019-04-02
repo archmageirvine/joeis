@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291919.
+ * A291919 Number of (undirected) paths in the n-wheel graph.
  * @author Sean A. Irvine
  */
 public class A291919 extends LinearRecurrence {

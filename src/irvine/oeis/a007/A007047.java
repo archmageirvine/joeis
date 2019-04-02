@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000629;
 
 /**
- * A007047.
+ * A007047 Number of chains in power set of n-set.
  * @author Sean A. Irvine
  */
 public class A007047 extends A000629 {

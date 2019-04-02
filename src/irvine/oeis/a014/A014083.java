@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014083.
+ * A014083 Occurrences of '1111' in binary expansion of n.
  * @author Sean A. Irvine
  */
 public class A014083 implements Sequence {

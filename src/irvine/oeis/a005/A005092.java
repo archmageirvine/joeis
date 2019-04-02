@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005092.
+ * A005092 Sum of Fibonacci numbers 1,2,3,5,... that divide n.
  * @author Sean A. Irvine
  */
 public class A005092 implements Sequence {

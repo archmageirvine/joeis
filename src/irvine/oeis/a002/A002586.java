@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002586.
+ * A002586 Smallest prime factor of 2^n + 1.
  * @author Sean A. Irvine
  */
 public class A002586 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003121.
+ * A003121 Strict sense ballot numbers: n candidates, k-th candidate gets k votes.
  * @author Sean A. Irvine
  */
 public class A003121 implements Sequence {

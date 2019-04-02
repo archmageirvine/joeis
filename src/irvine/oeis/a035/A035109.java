@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A035109.
+ * A035109 Numerators in expansion of a certain Dirichlet series.
  * @author Sean A. Irvine
  */
 public class A035109 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005902.
+ * A005902 Centered icosahedral (or cuboctahedral) numbers, also crystal ball sequence for f.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A005902 implements Sequence {

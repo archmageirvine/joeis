@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002582.
+ * A002582 Largest prime factor of n! - 1.
  * @author Sean A. Irvine
  */
 public class A002582 implements Sequence {

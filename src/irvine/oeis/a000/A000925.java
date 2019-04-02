@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000925.
+ * A000925 Number of ordered ways of writing n as a sum of 2 squares of nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A000925 implements Sequence {

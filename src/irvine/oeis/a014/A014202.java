@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014202.
+ * A014202 Number of solutions to x^2 + x*y + y^2 &lt;= n, excluding (0,0), divided by 6.
  * @author Sean A. Irvine
  */
 public class A014202 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132366.
+ * A132366 Partial sum of centered tetrahedral numbers A005894.
  * @author Sean A. Irvine
  */
 public class A132366 extends LinearRecurrence {

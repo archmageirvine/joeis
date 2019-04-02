@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001862.
+ * A001862 Number of forests of least height with n nodes.
  * @author Sean A. Irvine
  */
 public class A001862 implements Sequence {

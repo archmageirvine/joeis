@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003579.
+ * A003579 Dowling numbers.
  * @author Sean A. Irvine
  */
 public class A003579 extends A003575 {

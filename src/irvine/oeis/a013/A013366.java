@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013366.
+ * A013366 cosh(sin(x)-arctan(x))=1+10/6!*x^6-1288/8!*x^8+152934/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013366 implements Sequence {

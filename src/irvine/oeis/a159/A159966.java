@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159966.
+ * A159966 Lodumo_4 of A102370 (sloping binary numbers).
  * @author Sean A. Irvine
  */
 public class A159966 extends LinearRecurrence {

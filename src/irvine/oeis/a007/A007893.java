@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007893.
+ * A007893 A Kutz sequence.
  * @author Sean A. Irvine
  */
 public class A007893 implements Sequence {

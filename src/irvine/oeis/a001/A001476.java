@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001476.
+ * A001476 Numbers that are not the sum of distinct positive cubes.
  * @author Sean A. Irvine
  */
 public class A001476 implements Sequence {

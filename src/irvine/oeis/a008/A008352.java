@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008352.
+ * A008352 a(n) is formed by concatenating a(n-2) and a(n-1), with a(0) = 1, a(1) = 2;.
  * @author Sean A. Irvine
  */
 public class A008352 implements Sequence {

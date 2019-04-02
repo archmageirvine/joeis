@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a102.A102541;
 
 /**
- * A005688.
+ * A005688 Numbers of Twopins positions.
  * @author Sean A. Irvine
  */
 public class A005688 extends A102541 {

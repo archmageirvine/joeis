@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257825.
+ * A257825 Positive integers whose square is the sum of 74 consecutive squares.
  * @author Sean A. Irvine
  */
 public class A257825 extends LinearRecurrence {

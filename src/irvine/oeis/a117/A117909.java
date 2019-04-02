@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117909.
+ * A117909 Count, inserting 0 after every even number.
  * @author Sean A. Irvine
  */
 public class A117909 extends LinearRecurrence {

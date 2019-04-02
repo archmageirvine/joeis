@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003169;
 
 /**
- * A007171.
+ * A007171 Number of Q-graphs with 2n edges.
  * @author Sean A. Irvine
  */
 public class A007171 extends A007170 {

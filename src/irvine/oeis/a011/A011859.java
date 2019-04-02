@@ -16,7 +16,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011859.
+ * A011859 Normalized sequence of cumulants formed from moments in a quantum many-body problem at its critical point.
  * @author Sean A. Irvine
  */
 public class A011859 extends MemoryFunction1<Q> implements Sequence {

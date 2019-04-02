@@ -5,7 +5,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a006.A006207;
 
 /**
- * A130628.
+ * A130628 Related to the minimal number of periodic orbits of periods guaranteed by Sharkovskii's theorem.
  * @author Sean A. Irvine
  */
 public class A130628 extends MobiusTransformSequence {

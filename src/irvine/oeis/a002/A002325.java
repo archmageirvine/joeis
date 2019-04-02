@@ -6,7 +6,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 
 /**
- * A002325.
+ * A002325 Glaisher's J numbers.
  * @author Sean A. Irvine
  */
 public class A002325 implements Sequence {

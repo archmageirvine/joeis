@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A018249.
+ * A018249 Prime(2^n)-1.
  * @author Sean A. Irvine
  */
 public class A018249 extends A000040 {

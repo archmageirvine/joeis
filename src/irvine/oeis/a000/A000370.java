@@ -4,7 +4,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000370.
+ * A000370 Number of NPN-equivalence classes of Boolean functions of n or fewer variables.
  * @author Sean A. Irvine
  */
 public class A000370 extends A000610 {

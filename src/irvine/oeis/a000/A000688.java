@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000688.
+ * A000688 Number of Abelian groups of order n; number of factorizations of n into prime powers.
  * @author Sean A. Irvine
  */
 public class A000688 implements Sequence {

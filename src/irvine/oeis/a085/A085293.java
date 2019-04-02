@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085293.
+ * A085293 Product of Lucas (A000204) and a Pell Companion series (A002203).
  * @author Sean A. Irvine
  */
 public class A085293 extends LinearRecurrence {

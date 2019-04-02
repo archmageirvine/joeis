@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003225.
+ * A003225 The number of superpositions of cycles of order n of the groups S_3 and D_n.
  * @author Sean A. Irvine
  */
 public class A003225 implements Sequence {

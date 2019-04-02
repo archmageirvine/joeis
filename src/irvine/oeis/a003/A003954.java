@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003954.
+ * A003954 G.f.: (1+x)/(1-11*x).
  * @author Sean A. Irvine
  */
 public class A003954 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000129;
 
 /**
- * A006684.
+ * A006684 Convolve Fibonacci and Pell numbers.
  * @author Sean A. Irvine
  */
 public class A006684 extends A000129 {

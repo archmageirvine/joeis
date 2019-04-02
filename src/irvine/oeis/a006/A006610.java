@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.nauty.GenerateGraphs;
 
 /**
- * A006610.
+ * A006610 Number of n-node trees not determined by their spectra.
  * @author Sean A. Irvine
  */
 public class A006610 extends A006608 {

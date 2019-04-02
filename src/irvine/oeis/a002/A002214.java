@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002214.
+ * A002214 Number of unrooted hexagonal polyominoes with n cells and no reflections allowed.
  * @author Sean A. Irvine
  */
 public class A002214 implements Sequence {

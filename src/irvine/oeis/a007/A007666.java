@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007666.
+ * A007666 a(n) = smallest number k such that k^n is the sum of n positive n-th powers, or 0 if no solution exists.
  * @author Sean A. Irvine
  */
 public class A007666 implements Sequence {

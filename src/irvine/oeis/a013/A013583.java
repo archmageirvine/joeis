@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000119;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A013583.
+ * A013583 Smallest positive number that can be written as sum of distinct Fibonacci numbers in n ways.
  * @author Sean A. Irvine
  */
 public class A013583 extends A000119 {

@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A005961.
+ * A005961 Number of acyclic disubstituted alkanes with n carbon atoms and identical substituents.
  * @author Sean A. Irvine
  */
 public class A005961 extends A005960 {

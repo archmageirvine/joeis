@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008861.
+ * A008861 Sum C(n,k), k=0..8.
  * @author Sean A. Irvine
  */
 public class A008861 implements Sequence {

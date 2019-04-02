@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054878.
+ * A054878 Number of closed walks of length n along the edges of a tetrahedron based at a vertex.
  * @author Sean A. Irvine
  */
 public class A054878 extends LinearRecurrence {

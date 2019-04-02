@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006358.
+ * A006358 Number of distributive lattices; also number of paths with n turns when light is reflected from 5 glass plates.
  * @author Sean A. Irvine
  */
 public class A006358 extends LinearRecurrence {

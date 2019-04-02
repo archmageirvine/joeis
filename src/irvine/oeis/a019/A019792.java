@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019792.
+ * A019792 Decimal expansion of sqrt(e)/19.
  * @author Sean A. Irvine
  */
 public class A019792 extends DecimalExpansionSequence {

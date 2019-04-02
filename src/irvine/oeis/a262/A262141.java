@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262141.
+ * A262141 The first of nine consecutive positive integers the sum of the squares of which is equal to the sum of the squares of ten consecutive positive integers.
  * @author Sean A. Irvine
  */
 public class A262141 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007710;
 import irvine.util.Permutation;
 
 /**
- * A028305.
+ * A028305 Triangle of numbers of permutations eliminating just k cards out of n in game of Mousetrap.
  * @author Sean A. Irvine
  */
 public class A028305 extends A007710 {

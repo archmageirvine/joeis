@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009957.
+ * A009957 Coordination sequence for FeS2-Pyrite, Fe position.
  * @author Sean A. Irvine
  */
 public class A009957 extends CoordinationSequence {

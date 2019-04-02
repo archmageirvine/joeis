@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237516.
+ * A237516 Pyramidal centered square numbers.
  * @author Sean A. Irvine
  */
 public class A237516 extends LinearRecurrence {

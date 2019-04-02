@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001332.
+ * A001332 Bernoulli(2*n) * (2*n + 1)!.
  * @author Sean A. Irvine
  */
 public class A001332 implements Sequence {

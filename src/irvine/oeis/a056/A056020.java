@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056020.
+ * A056020 Numbers n that are congruent to +-1 mod 9.
  * @author Sean A. Irvine
  */
 public class A056020 extends LinearRecurrence {

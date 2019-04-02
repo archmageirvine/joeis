@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a030.A030125;
 
 /**
- * A002794.
+ * A002794 Numerators of convergents to Lehmer's constant.
  * @author Sean A. Irvine
  */
 public class A002794 extends A030125 {

@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292343.
+ * A292343 The PI index of the Aztec diamond AZ(n) (see the Imran et al. reference).
  * @author Sean A. Irvine
  */
 public class A292343 extends LinearRecurrence {

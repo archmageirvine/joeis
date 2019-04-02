@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005728.
+ * A005728 Number of fractions in Farey series of order n.
  * @author Sean A. Irvine
  */
 public class A005728 implements Sequence {

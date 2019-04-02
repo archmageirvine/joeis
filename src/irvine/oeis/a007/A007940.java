@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007940.
+ * A007940 Noncubes such that some permutation of digits is a cube.
  * @author Sean A. Irvine
  */
 public class A007940 extends A007939 {

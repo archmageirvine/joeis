@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156638.
+ * A156638 Numbers n such that n^2 + 2 == 0 (mod 9).
  * @author Sean A. Irvine
  */
 public class A156638 extends LinearRecurrence {

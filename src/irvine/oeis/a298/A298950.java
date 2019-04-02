@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298950.
+ * A298950 Numbers k such that 5*k - 4 is a square.
  * @author Sean A. Irvine
  */
 public class A298950 extends LinearRecurrence {

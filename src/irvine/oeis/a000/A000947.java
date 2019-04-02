@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000947.
+ * A000947 Number of free nonplanar polyenoids with n nodes and symmetry point group C_{2v}.
  * @author Sean A. Irvine
  */
 public class A000947 extends A000063 {

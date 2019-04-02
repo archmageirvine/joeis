@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004251;
 
 /**
- * A007721.
+ * A007721 Number of distinct degree sequences among all connected graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007721 extends A004251 {

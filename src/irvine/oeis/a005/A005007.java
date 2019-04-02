@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005007.
+ * A005007 Number of cubic (i.e., regular of degree 3) generalized Moore graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A005007 implements Sequence, GraphProcessor {

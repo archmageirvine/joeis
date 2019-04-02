@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008835.
+ * A008835 Largest 4th power dividing n.
  * @author Sean A. Irvine
  */
 public class A008835 implements Sequence {

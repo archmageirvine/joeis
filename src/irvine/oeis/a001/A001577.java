@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A001577.
+ * A001577 An operational recurrence.
  * @author Sean A. Irvine
  */
 public class A001577 implements Sequence {

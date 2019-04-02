@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222739.
+ * A222739 Partial sums of the first 10^n terms in A181482.
  * @author Sean A. Irvine
  */
 public class A222739 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A066217.
+ * A066217 Numbers not ending in 0 which are the product of two substrings of themselves. The substrings may be equal, but each must be greater than 1.
  * @author Sean A. Irvine
  */
 public class A066217 implements Sequence {

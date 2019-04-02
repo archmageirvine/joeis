@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.q.Q;
 
 /**
- * A002709.
+ * A002709 Triangulations of the disk G_{n,0}.
  * @author Sean A. Irvine
  */
 public class A002709 implements Sequence {

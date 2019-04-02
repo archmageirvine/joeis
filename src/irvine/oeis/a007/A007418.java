@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007418.
+ * A007418 Numerators of expansion of exp x / sin x.
  * @author Sean A. Irvine
  */
 public class A007418 implements Sequence {

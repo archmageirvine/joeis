@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005152.
+ * A005152 Rotation distance between binary trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A005152 implements Sequence {

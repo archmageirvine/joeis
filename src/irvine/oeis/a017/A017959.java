@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017959.
+ * A017959 Powers of sqrt(18) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017959 implements Sequence {

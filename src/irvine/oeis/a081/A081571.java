@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081571.
+ * A081571 Sixth binomial transform of F(n+1).
  * @author Sean A. Irvine
  */
 public class A081571 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176889.
+ * A176889 a(2*k-1)=1, a(2*k)=2*k^2 (definition by T. M. Apostol, see References).
  * @author Sean A. Irvine
  */
 public class A176889 extends LinearRecurrence {

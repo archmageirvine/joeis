@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005378.
+ * A005378 The female of a pair of recurrences.
  * @author Sean A. Irvine
  */
 public class A005378 extends MemoryFunction1<Z> implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.math.q.Q;
 
 /**
- * A002545.
+ * A002545 Numerator of Sum_{i+j+k=n; i,j,k &gt; 0} 1/(i*j*k).
  * @author Sean A. Irvine
  */
 public class A002545 implements Sequence {

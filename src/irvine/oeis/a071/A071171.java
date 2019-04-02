@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071171.
+ * A071171 L_2 norm of vertices of Permuto-Associahedron in R^n.
  * @author Sean A. Irvine
  */
 public class A071171 extends LinearRecurrence {

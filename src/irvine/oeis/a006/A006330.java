@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000712;
 import irvine.oeis.a197.A197870;
 
 /**
- * A006330.
+ * A006330 Number of corners, or planar partitions of n with only one row and one column.
  * @author Sean A. Irvine
  */
 public class A006330 extends ConvolutionSequence {

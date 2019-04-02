@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056026.
+ * A056026 Numbers k such that k^14 == 1 (mod 15^2).
  * @author Sean A. Irvine
  */
 public class A056026 extends LinearRecurrence {

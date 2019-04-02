@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254600.
+ * A254600 Numbers of words on alphabet {0,1,...,10} with no subwords ii, for i from {0,1}.
  * @author Sean A. Irvine
  */
 public class A254600 extends LinearRecurrence {

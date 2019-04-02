@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008576.
+ * A008576 Coordination sequence for planar net 4.8.8.
  * @author Sean A. Irvine
  */
 public class A008576 extends LinearRecurrence {

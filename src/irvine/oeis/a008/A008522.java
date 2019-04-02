@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008522.
+ * A008522 Numbers that contain the letter `t'.
  * @author Sean A. Irvine
  */
 public class A008522 implements Sequence {

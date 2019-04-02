@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001467.
+ * A001467 Denominators of an expansion for Pi.
  * @author Sean A. Irvine
  */
 public class A001467 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001283.
+ * A001283 Triangle read by rows, in which row n consists of n(n+m) for m = 1 .. n-1.
  * @author Sean A. Irvine
  */
 public class A001283 implements Sequence {

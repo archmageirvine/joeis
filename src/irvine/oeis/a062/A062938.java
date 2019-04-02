@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062938.
+ * A062938 a(n) = n*(n+1)*(n+2)*(n+3)+1, which equals (n^2 +3*n + 1)^2.
  * @author Sean A. Irvine
  */
 public class A062938 extends LinearRecurrence {

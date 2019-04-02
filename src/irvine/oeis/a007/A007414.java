@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007414.
+ * A007414 Largest number not a sum of distinct primes &gt;= prime(n).
  * @author Sean A. Irvine
  */
 public class A007414 implements Sequence {

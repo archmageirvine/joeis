@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A006853.
+ * A006853 Balanced colorings of n-cube.
  * @author Sean A. Irvine
  */
 public class A006853 implements Sequence {

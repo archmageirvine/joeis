@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091761.
+ * A091761 a(n) = Pell(4n) / Pell(4).
  * @author Sean A. Irvine
  */
 public class A091761 extends LinearRecurrence {

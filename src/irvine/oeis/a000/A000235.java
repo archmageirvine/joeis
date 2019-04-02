@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001383;
 
 /**
- * A000235.
+ * A000235 Number of n-node rooted trees of height 3.
  * @author Sean A. Irvine
  */
 public class A000235 extends A001383 {

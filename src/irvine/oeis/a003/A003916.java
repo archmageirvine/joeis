@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003916.
+ * A003916 Degrees of irreducible representations of Thompson group Th.
  * @author Sean A. Irvine
  */
 public class A003916 extends FiniteSequence {

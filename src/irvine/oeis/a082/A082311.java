@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082311.
+ * A082311 A Jacobsthal sequence trisection.
  * @author Sean A. Irvine
  */
 public class A082311 extends LinearRecurrence {

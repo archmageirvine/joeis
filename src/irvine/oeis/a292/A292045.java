@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292045.
+ * A292045 Wiener index of the n X n X n grid graph.
  * @author Sean A. Irvine
  */
 public class A292045 extends LinearRecurrence {

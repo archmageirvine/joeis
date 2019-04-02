@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011549.
+ * A011549 Decimal expansion of sqrt(3) truncated to n places.
  * @author Sean A. Irvine
  */
 public class A011549 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008684.
+ * A008684 Dates of successive days in Gregorian calendar.
  * @author Sean A. Irvine
  */
 public class A008684 extends FiniteSequence {

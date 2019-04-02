@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006070.
+ * A006070 Number of Hamiltonian paths on n-cube which are strictly not cycles.
  * @author Sean A. Irvine
  */
 public class A006070 implements Sequence {

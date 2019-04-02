@@ -6,7 +6,7 @@ import irvine.math.api.RationalSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A003301.
+ * A003301 Numerators of coefficients of Green function for cubic lattice.
  * @author Sean A. Irvine
  */
 public class A003301 implements Sequence {

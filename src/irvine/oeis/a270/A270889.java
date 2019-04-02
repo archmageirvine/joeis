@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270889.
+ * A270889 Integers n such that the circular graph C_n has a square size deficiency.
  * @author Sean A. Irvine
  */
 public class A270889 extends LinearRecurrence {

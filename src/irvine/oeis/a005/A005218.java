@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005218.
+ * A005218 Number of unlabeled reduced unit interval graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A005218 implements Sequence {

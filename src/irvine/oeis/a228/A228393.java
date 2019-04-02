@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228393.
+ * A228393 The number of permutations of length n that can be sorted by 3 block transpositions.
  * @author Sean A. Irvine
  */
 public class A228393 extends LinearRecurrence {

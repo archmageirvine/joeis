@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067251.
+ * A067251 Numbers with no trailing zeros in decimal representation.
  * @author Sean A. Irvine
  */
 public class A067251 extends LinearRecurrence {

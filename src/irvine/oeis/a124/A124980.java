@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018782;
 
 /**
- * A124980.
+ * A124980 Smallest strictly positive number decomposable in n different ways as a sum of two squares.
  * @author Sean A. Irvine
  */
 public class A124980 extends A018782 {

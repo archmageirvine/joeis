@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002335.
+ * A002335 Least positive integer y such that A038873(n) = x^2 - 2y^2 for some x.
  * @author Sean A. Irvine
  */
 public class A002335 implements Sequence {

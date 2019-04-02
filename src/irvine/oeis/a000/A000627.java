@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A000627.
+ * A000627 Number of non-stereoisomeric paraffins with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000627 extends A000621 {

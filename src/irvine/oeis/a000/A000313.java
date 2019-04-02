@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000313.
+ * A000313 Number of permutations of length n with 3 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
 public class A000313 implements Sequence {

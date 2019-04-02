@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000392.
+ * A000392 Stirling numbers of second kind S(n,3).
  * @author Sean A. Irvine
  */
 public class A000392 implements Sequence {

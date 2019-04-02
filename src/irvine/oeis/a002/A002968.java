@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002968.
+ * A002968 Number of pairings {(b[1],c[1]),(b[2],c[2]),...,(b[n],c[n])} of the first 2n positive integers satisfying b[i] &lt; c[i] and such that the 2n numbers c[i]+b[i] and c[i]-b[i] are all distinct.
  * @author Sean A. Irvine
  */
 public class A002968 implements Sequence {

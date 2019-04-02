@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091434.
+ * A091434 Poincar&#233; series [or Poincare series] (or Molien series) for a certain four-fold wreath product P_4.
  * @author Sean A. Irvine
  */
 public class A091434 extends LinearRecurrence {

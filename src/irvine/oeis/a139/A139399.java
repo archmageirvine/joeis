@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139399.
+ * A139399 Number of steps to reach a cycle in Collatz problem.
  * @author Sean A. Irvine
  */
 public class A139399 implements Sequence {

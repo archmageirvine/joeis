@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A016058.
+ * A016058 Primitive pseudo-powers to base 3.
  * @author Sean A. Irvine
  */
 public class A016058 extends A016057 {

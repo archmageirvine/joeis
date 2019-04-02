@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068491.
+ * A068491 Expansion of Molien series for a certain 4-D group of order 96.
  * @author Sean A. Irvine
  */
 public class A068491 extends LinearRecurrence {

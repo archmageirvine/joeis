@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278036.
+ * A278036 Number of ways to construct a triangle with longest side n using unit-length straws of two colors for the sides.
  * @author Sean A. Irvine
  */
 public class A278036 extends LinearRecurrence {

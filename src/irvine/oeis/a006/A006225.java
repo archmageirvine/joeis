@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006225.
+ * A006225 Rabbytes: group eight successive Fibonacci numbers in reversed binary and translate to decimal.
  * @author Sean A. Irvine
  */
 public class A006225 extends A000045 {

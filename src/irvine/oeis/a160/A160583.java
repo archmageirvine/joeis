@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160583.
+ * A160583 Positive numbers y such that y^2 is of the form x^2+(x+521)^2 with integer x.
  * @author Sean A. Irvine
  */
 public class A160583 extends LinearRecurrence {

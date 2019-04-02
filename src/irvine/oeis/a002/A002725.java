@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002725.
+ * A002725 Number of incidence matrices: n X (n+1) binary matrices under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A002725 implements Sequence {

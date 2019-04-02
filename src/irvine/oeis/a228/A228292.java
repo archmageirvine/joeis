@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228292.
+ * A228292 a(n) = Sum_{k=1..8} n^k.
  * @author Sean A. Irvine
  */
 public class A228292 extends LinearRecurrence {

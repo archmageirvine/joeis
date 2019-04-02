@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014610.
+ * A014610 Tetranacci numbers arising in connection with current algebras sp(2)_n.
  * @author Sean A. Irvine
  */
 public class A014610 implements Sequence {

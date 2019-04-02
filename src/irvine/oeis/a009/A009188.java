@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.math.z.Z;
 
 /**
- * A009188.
+ * A009188 Short leg of more than one Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A009188 extends A009004 {

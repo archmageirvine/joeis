@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004940.
+ * A004940 Nearest integer to n*phi^5, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004940 implements Sequence {

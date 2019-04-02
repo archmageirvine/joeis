@@ -3,7 +3,7 @@ package irvine.oeis.a021;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A021994.
+ * A021994 G.f.: 1/((1-x)(1-4x)(1-10x)(1-12x)).
  * @author Sean A. Irvine
  */
 public class A021994 extends LinearRecurrence {

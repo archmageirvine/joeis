@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003559.
+ * A003559 Least number m such that 3^m = +- 1 mod 3n + 1.
  * @author Sean A. Irvine
  */
 public class A003559 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199405.
+ * A199405 y-values in the solution to 13*x^2 - 12 = y^2.
  * @author Sean A. Irvine
  */
 public class A199405 extends LinearRecurrence {

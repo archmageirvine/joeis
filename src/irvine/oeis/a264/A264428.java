@@ -7,7 +7,7 @@ import irvine.oeis.BellMatrix;
 import irvine.oeis.a000.A000110;
 
 /**
- * A264428.
+ * A264428 Triangle read by rows, Bell transform of Bell numbers.
  * @author Sean A. Irvine
  */
 public class A264428 extends A000110 {

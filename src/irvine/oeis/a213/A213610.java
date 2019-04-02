@@ -5,7 +5,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A213610.
+ * A213610 Decimal expansion of the characteristic impedance of vacuum in SI units.
  * @author Sean A. Irvine
  */
 public class A213610 extends DecimalExpansionSequence {

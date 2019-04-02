@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012764.
+ * A012764 arcsin(cosh(x)*sin(x))=x+3/3!*x^3+25/5!*x^5+1043/7!*x^7+72465/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012764 implements Sequence {

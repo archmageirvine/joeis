@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a062.A062119;
 
 /**
- * A018931.
+ * A018931 The number of permutations of n cards in which 2 is the first card hit and 3 the next hit after 2.
  * @author Sean A. Irvine
  */
 public class A018931 extends PrependSequence {

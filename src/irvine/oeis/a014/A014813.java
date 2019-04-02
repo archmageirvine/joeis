@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014813.
+ * A014813 a(n) = Sum_{k=0..n} ceiling(k^3/n).
  * @author Sean A. Irvine
  */
 public class A014813 implements Sequence {

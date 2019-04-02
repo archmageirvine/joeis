@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161659.
+ * A161659 a(n) = the smallest multiple of {the sum of the prime-factorization exponents of n} that is &gt;= n.
  * @author Sean A. Irvine
  */
 public class A161659 implements Sequence {

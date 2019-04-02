@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009925.
+ * A009925 Coordination sequence for CaF2(2), F position.
  * @author Sean A. Irvine
  */
 public class A009925 extends CoordinationSequence {

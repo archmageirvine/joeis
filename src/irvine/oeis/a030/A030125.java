@@ -7,7 +7,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a002.A002065;
 
 /**
- * A030125.
+ * A030125 Decimal expansion of Lehmer's constant.
  * @author Sean A. Irvine
  */
 public class A030125 extends DecimalExpansionSequence {

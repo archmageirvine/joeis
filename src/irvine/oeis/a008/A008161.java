@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008161.
+ * A008161 Coordination sequence T1 for Zeolite Code MFI.
  * @author Sean A. Irvine
  */
 public class A008161 extends CoordinationSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A005179.
+ * A005179 Smallest number with exactly n divisors.
  * @author Sean A. Irvine
  */
 public class A005179 implements Sequence {

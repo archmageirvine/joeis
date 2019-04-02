@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A002681.
+ * A002681 Numerators of coefficients for repeated integration.
  * @author Sean A. Irvine
  */
 public class A002681 implements Sequence {

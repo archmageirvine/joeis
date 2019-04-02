@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013914.
+ * A013914 Number of distinct nonzero absolute values of Sum_{j=1..n} sigma_j * exp(i * Pi * j / n) where sigma_j = +- 1.
  * @author Sean A. Irvine
  */
 public class A013914 implements Sequence {

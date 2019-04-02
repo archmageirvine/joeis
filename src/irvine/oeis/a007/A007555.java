@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007555.
+ * A007555 Number of standard paths of length n in composition poset.
  * @author Sean A. Irvine
  */
 public class A007555 implements Sequence {

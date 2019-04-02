@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A000715.
+ * A000715 Number of partitions of n, with three kinds of 1,2 and 3 and two kinds of 4,5,6,....
  * @author Sean A. Irvine
  */
 public class A000715 extends A000711 {

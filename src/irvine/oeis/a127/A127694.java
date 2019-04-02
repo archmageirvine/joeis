@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127694.
+ * A127694 Absolute value of coefficient of x^3 in polynomial whose zeros are 5 consecutive integers starting with the n-th integer.
  * @author Sean A. Irvine
  */
 public class A127694 extends LinearRecurrence {

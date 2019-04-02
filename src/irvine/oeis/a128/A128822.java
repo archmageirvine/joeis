@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128822.
+ * A128822 Number of solutions to x/3 + y/4 + z/6 &lt; n with x,y,z&gt;=1 .
  * @author Sean A. Irvine
  */
 public class A128822 extends LinearRecurrence {

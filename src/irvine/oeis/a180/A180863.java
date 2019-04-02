@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180863.
+ * A180863 Wiener index of the n-sun graph.
  * @author Sean A. Irvine
  */
 public class A180863 extends LinearRecurrence {

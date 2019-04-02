@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011770.
+ * A011770 Days per century for British calendar from first century, following Gregorian calendar after A.D. 1752.
  * @author Sean A. Irvine
  */
 public class A011770 implements Sequence {

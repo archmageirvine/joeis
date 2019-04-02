@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001059.
+ * A001059 Number of labeled heap ordered trees.
  * @author Sean A. Irvine
  */
 public class A001059 extends MemorySequence {

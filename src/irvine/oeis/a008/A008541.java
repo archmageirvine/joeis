@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008541.
+ * A008541 Numbers that do not contain the letter `f'.
  * @author Sean A. Irvine
  */
 public class A008541 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000204;
 
 /**
- * A002878.
+ * A002878 Bisection of Lucas sequence: a(n) = L(2*n+1).
  * @author Sean A. Irvine
  */
 public class A002878 extends A000204 {

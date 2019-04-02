@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000151;
 import irvine.oeis.a005.A005750;
 
 /**
- * A007748.
+ * A007748 Number of self-converse oriented trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A007748 extends AlternatingSequence {

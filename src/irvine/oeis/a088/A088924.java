@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088924.
+ * A088924 Number of "9ish numbers" with n digits.
  * @author Sean A. Irvine
  */
 public class A088924 extends LinearRecurrence {

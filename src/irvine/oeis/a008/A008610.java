@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008610.
+ * A008610 Molien series of 4-dimensional representation of cyclic group of order 4 over GF(2) (not Cohen-Macaulay).
  * @author Sean A. Irvine
  */
 public class A008610 extends LinearRecurrence {

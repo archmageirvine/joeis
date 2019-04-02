@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193395.
+ * A193395 Wiener index of a benzenoid consisting of a double-step zig-zag chain of n hexagons (n &gt;= 2, s = 2123; see the Gutman et al. reference).
  * @author Sean A. Irvine
  */
 public class A193395 extends LinearRecurrence {

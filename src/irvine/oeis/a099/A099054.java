@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A099054.
+ * A099054 Arshon's sequence: start from 1 and replace the letters in odd positions using 1 -&gt; 123, 2 -&gt; 231, 3 -&gt; 312 and the letters in even positions using 1 -&gt; 321, 2-&gt; 132, 3 -&gt; 213.
  * @author Sean A. Irvine
  */
 public class A099054 implements Sequence {

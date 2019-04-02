@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013942.
+ * A013942 Triangle of numbers T(n,k) = floor(2n/k), k=1..2n, read by rows.
  * @author Sean A. Irvine
  */
 public class A013942 implements Sequence {

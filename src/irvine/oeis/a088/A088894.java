@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088894.
+ * A088894 Polynexus numbers of order 16.
  * @author Sean A. Irvine
  */
 public class A088894 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000469.
+ * A000469 1 together with products of 2 or more distinct primes.
  * @author Sean A. Irvine
  */
 public class A000469 implements Sequence {

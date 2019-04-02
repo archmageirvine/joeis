@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011458.
+ * A011458 Decimal expansion of 39th root of 39.
  * @author Sean A. Irvine
  */
 public class A011458 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192932.
+ * A192932 Squares of numbers in Perrin sequence.
  * @author Sean A. Irvine
  */
 public class A192932 extends LinearRecurrence {

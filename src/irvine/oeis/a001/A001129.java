@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001129.
+ * A001129 Iccanobif numbers: reverse digits of two previous terms and add.
  * @author Sean A. Irvine
  */
 public class A001129 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004000.
+ * A004000 RATS: Reverse Add Then Sort the digits applied to previous term, starting with 1.
  * @author Sean A. Irvine
  */
 public class A004000 implements Sequence {

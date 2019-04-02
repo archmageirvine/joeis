@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007284.
+ * A007284 Horizontally symmetric numbers.
  * @author Sean A. Irvine
  */
 public class A007284 implements Sequence {

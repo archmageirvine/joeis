@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005873.
+ * A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole.
  * @author Sean A. Irvine
  */
 public class A005873 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287817.
+ * A287817 Number of nonary sequences of length n such that no two consecutive terms have distance 2.
  * @author Sean A. Irvine
  */
 public class A287817 extends LinearRecurrence {

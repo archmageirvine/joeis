@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073227.
+ * A073227 Decimal expansion of e^e^e.
  * @author Sean A. Irvine
  */
 public class A073227 extends DecimalExpansionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009490.
+ * A009490 Number of distinct orders of permutations of n objects; number of nonisomorphic cyclic subgroups of symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A009490 implements Sequence {

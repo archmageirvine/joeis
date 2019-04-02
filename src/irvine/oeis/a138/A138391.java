@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.math.z.Z;
 
 /**
- * A138391.
+ * A138391 Where record values occur in A138385.
  * @author Sean A. Irvine
  */
 public class A138391 extends A138385 {

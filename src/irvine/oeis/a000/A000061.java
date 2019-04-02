@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * A000061.
+ * A000061 Generalized tangent numbers d(n,1).
  * @author Sean A. Irvine
  */
 public class A000061 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a015.A015221;
 
 /**
- * A014797.
+ * A014797 Squares of odd square pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A014797 extends A015221 {

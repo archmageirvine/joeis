@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157014.
+ * A157014 Expansion of x*(1-x)/(x^2-22*x+1).
  * @author Sean A. Irvine
  */
 public class A157014 extends LinearRecurrence {

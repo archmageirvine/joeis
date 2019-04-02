@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013572.
+ * A013572 Expansion of e.g.f. of exp(arcsinh(x)/exp(x)).
  * @author Sean A. Irvine
  */
 public class A013572 implements Sequence {

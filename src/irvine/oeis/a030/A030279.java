@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030279.
+ * A030279 COMPOSE squares with squares.
  * @author Sean A. Irvine
  */
 public class A030279 extends LinearRecurrence {

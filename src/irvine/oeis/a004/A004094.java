@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004094.
+ * A004094 Powers of 2 written backwards.
  * @author Sean A. Irvine
  */
 public class A004094 implements Sequence {

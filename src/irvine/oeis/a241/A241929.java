@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241929.
+ * A241929 Number of inequivalent colorings of the Fano plane with n colors.
  * @author Sean A. Irvine
  */
 public class A241929 extends LinearRecurrence {

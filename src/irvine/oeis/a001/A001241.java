@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001241.
+ * A001241 Differences of reciprocals of unity.
  * @author Sean A. Irvine
  */
 public class A001241 implements Sequence {

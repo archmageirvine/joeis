@@ -9,7 +9,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A005356.
+ * A005356 Number of low discrepancy sequences in base 2.
  * @author Sean A. Irvine
  */
 public class A005356 implements Sequence {

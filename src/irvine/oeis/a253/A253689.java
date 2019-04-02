@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253689.
+ * A253689 Centered triangular numbers (A005448) which are also centered heptagonal numbers (A069099).
  * @author Sean A. Irvine
  */
 public class A253689 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181773.
+ * A181773 Molecular topological indices of the cocktail party graphs.
  * @author Sean A. Irvine
  */
 public class A181773 extends LinearRecurrence {

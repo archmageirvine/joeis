@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005478.
+ * A005478 Prime Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A005478 extends A000045 {

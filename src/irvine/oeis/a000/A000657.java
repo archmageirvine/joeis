@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000657.
+ * A000657 Median Euler numbers (the middle numbers of Arnold's shuttle triangle).
  * @author Sean A. Irvine
  */
 public class A000657 implements Sequence {

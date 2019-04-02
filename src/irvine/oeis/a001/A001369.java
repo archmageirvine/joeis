@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001369.
+ * A001369 Blocks of increasing length using 1,2,3,...,9,10; omit leading 0's.
  * @author Sean A. Irvine
  */
 public class A001369 implements Sequence {

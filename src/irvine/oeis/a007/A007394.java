@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007394.
+ * A007394 Number of strict 7th-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007394 extends A007389 {

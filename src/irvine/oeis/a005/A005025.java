@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005025.
+ * A005025 Random walks.
  * @author Sean A. Irvine
  */
 public class A005025 extends LinearRecurrence {

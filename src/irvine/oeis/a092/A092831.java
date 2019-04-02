@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092831.
+ * A092831 Indices of prime Motzkin numbers.
  * @author Sean A. Irvine
  */
 public class A092831 implements Sequence {

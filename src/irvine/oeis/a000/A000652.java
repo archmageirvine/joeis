@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000652.
+ * A000652 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000652 implements Sequence {

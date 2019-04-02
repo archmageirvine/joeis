@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015913.
+ * A015913 Numbers n such that sigma(n) + 4 = sigma(n + 4).
  * @author Sean A. Irvine
  */
 public class A015913 implements Sequence {

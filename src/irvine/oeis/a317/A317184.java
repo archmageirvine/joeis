@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018193;
 
 /**
- * A317184.
+ * A317184 Number of "non-connected" chord diagrams of degree n.
  * @author Sean A. Irvine
  */
 public class A317184 extends A018193 {

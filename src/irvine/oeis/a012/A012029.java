@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012029.
+ * A012029 E.g.f.: sech(sin(arctan(x))) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012029 implements Sequence {

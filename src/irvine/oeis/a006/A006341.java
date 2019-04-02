@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A006341.
+ * A006341 Octal palindromes which are also primes.
  * @author Sean A. Irvine
  */
 public class A006341 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000751.
+ * A000751 Boustrophedon transform of partition numbers.
  * @author Sean A. Irvine
  */
 public class A000751 extends A000674 {

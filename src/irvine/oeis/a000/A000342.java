@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001384;
 import irvine.oeis.a001.A001385;
 
 /**
- * A000342.
+ * A000342 Number of n-node rooted trees of height 5.
  * @author Sean A. Irvine
  */
 public class A000342 implements Sequence {

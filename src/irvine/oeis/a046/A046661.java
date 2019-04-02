@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 
 /**
- * A046661.
+ * A046661 Number of n-step self-avoiding walks on the square lattice with first step specified.
  * @author Sean A. Irvine
  */
 public class A046661 extends A001411 {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A296171.
+ * A296171 O.g.f. A(x) satisfies: [x^n] exp( n^2 * A(x) ) = [x^(n-1)] exp( n^2 * A(x) ) for n&gt;=1.
  * @author Sean A. Irvine
  */
 public class A296171 extends A296170 {

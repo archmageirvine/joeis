@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003969.
+ * A003969 Inverse M&#246;bius transform of A003959.
  * @author Sean A. Irvine
  */
 public class A003969 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114542.
+ * A114542 Expansion of -x*(x+1)/(9389*x^3 + 4691*x^2 - 1).
  * @author Sean A. Irvine
  */
 public class A114542 extends LinearRecurrence {

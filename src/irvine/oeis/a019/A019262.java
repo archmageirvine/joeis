@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019262.
+ * A019262 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite WEI = Weinebeneite Ca4[ Be12P8O32(OH)8 ] . 16 H2O.
  * @author Sean A. Irvine
  */
 public class A019262 extends A018940 {

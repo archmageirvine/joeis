@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239229.
+ * A239229 Euler characteristic of n-holed torus: 2 - 2*n.
  * @author Sean A. Irvine
  */
 public class A239229 extends LinearRecurrence {

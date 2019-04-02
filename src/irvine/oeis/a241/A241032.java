@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241032.
+ * A241032 Sum of n-th powers of divisors of 30.
  * @author Sean A. Irvine
  */
 public class A241032 extends LinearRecurrence {

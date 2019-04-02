@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228879.
+ * A228879 a(n+2) = 3*a(n), starting 4,7.
  * @author Sean A. Irvine
  */
 public class A228879 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010784.
+ * A010784 Numbers with distinct decimal digits.
  * @author Sean A. Irvine
  */
 public class A010784 implements Sequence {

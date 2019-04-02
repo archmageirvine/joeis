@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010786.
+ * A010786 Floor-factorial numbers: a(n) = Product_{k=1..n} floor(n/k).
  * @author Sean A. Irvine
  */
 public class A010786 implements Sequence {

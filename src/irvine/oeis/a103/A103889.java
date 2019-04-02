@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103889.
+ * A103889 Odd and even positive integers swapped.
  * @author Sean A. Irvine
  */
 public class A103889 extends LinearRecurrence {

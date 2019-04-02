@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131380.
+ * A131380 a(3n) = 2n, a(3n+1) = 2n+2, a(3n+2) = 2n+1.
  * @author Sean A. Irvine
  */
 public class A131380 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173432.
+ * A173432 NW-SE diagonal sums of Riordan array A112468.
  * @author Sean A. Irvine
  */
 public class A173432 extends LinearRecurrence {

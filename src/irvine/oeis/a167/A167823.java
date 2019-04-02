@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167823.
+ * A167823 Subsequence of A167709 whose indices are congruent to 2 mod 5, i.e., a(n) = A167709(5*n+2).
  * @author Sean A. Irvine
  */
 public class A167823 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272199.
+ * A272199 Expansion of 1/(1 - 2*x + 13*x^2).
  * @author Sean A. Irvine
  */
 public class A272199 extends LinearRecurrence {

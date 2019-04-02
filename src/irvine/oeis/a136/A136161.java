@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136161.
+ * A136161 a(n) = 2*a(n-3)-a(n-6), starting a(0..5) = 0, 5, 2, 1, 3, 1.
  * @author Sean A. Irvine
  */
 public class A136161 extends LinearRecurrence {

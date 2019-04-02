@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006906.
+ * A006906 a(n) = sum of products of terms in all partitions of n.
  * @author Sean A. Irvine
  */
 public class A006906 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059387.
+ * A059387 Jordan function J_n(6) (see A059379).
  * @author Sean A. Irvine
  */
 public class A059387 extends LinearRecurrence {

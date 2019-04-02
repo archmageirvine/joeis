@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A013923.
+ * A013923 Number of labeled connected graphs with n vertices and 1 cutpoint.
  * @author Sean A. Irvine
  */
 public class A013923 extends A013922 {

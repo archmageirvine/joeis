@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A208903.
+ * A208903 The sum over all bitstrings b of length n with at least two runs of the number of runs in b not immediately followed by a longer run.
  * @author Sean A. Irvine
  */
 public class A208903 extends LinearRecurrence {

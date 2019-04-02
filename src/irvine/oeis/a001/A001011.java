@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001011.
+ * A001011 Number of ways to fold a strip of n blank stamps.
  * @author Joe Sawada
  * @author Sean A. Irvine (Java conversion)
  */

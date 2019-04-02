@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a001.A001974;
 
 /**
- * A004436.
+ * A004436 Numbers that are not the sum of 3 distinct squares.
  * @author Sean A. Irvine
  */
 public class A004436 extends ComplementSequence {

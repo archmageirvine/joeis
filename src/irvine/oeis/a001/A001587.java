@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000192;
 import irvine.oeis.a000.A000411;
 
 /**
- * A001587.
+ * A001587 Generalized Euler numbers.
  * @author Sean A. Irvine
  */
 public class A001587 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A014572.
+ * A014572 Continued fraction for Thue-Morse constant.
  * @author Sean A. Irvine
  */
 public class A014572 extends ContinuedFractionSequence {

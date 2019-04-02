@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A002960.
+ * A002960 The square sieve.
  * @author Sean A. Irvine
  */
 public class A002960 implements Sequence {

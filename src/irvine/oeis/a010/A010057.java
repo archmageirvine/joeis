@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010057.
+ * A010057 a(n) = 1 if n is a cube, else 0.
  * @author Sean A. Irvine
  */
 public class A010057 implements Sequence {

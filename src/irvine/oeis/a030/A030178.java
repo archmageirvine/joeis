@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A030178.
+ * A030178 Decimal expansion of LambertW(1): the solution to x*exp(x) = 1.
  * @author Sean A. Irvine
  */
 public class A030178 extends DecimalExpansionSequence {

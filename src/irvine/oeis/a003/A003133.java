@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003133.
+ * A003133 Order of simple Chevalley group E_8(2).
  * @author Sean A. Irvine
  */
 public class A003133 extends FiniteSequence {

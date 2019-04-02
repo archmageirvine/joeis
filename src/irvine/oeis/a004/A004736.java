@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004736.
+ * A004736 Triangle read by rows: row n lists the first n positive integers in decreasing order.
  * @author Sean A. Irvine
  */
 public class A004736 implements Sequence {

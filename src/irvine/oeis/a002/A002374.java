@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002374.
+ * A002374 Largest prime &lt;= n in any decomposition of 2n into a sum of two odd primes.
  * @author Sean A. Irvine
  */
 public class A002374 implements Sequence {

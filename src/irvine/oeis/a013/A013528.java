@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013528.
+ * A013528 Numerator of [x^(2n)] of the Taylor series sech(cosec(x)-cot(x)) = 1 -x^2/8 -x^4/128 +x^6/15360 +19*x^8/294912 +25031*x^10/3715891200+... .
  * @author Sean A. Irvine
  */
 public class A013528 implements Sequence {

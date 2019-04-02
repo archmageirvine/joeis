@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005289.
+ * A005289 Number of graphs on n nodes with 3 cliques.
  * @author Sean A. Irvine
  */
 public class A005289 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001469.
+ * A001469 Genocchi numbers (of first kind); unsigned coefficients give expansion of x*tan(x/2).
  * @author Sean A. Irvine
  */
 public class A001469 implements Sequence {

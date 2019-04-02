@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005364.
+ * A005364 Hoggatt sequence.
  * @author Sean A. Irvine
  */
 public class A005364 implements Sequence {

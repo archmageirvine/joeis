@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015960.
+ * A015960 Numbers n such that n | 11^n + 1.
  * @author Sean A. Irvine
  */
 public class A015960 implements Sequence {

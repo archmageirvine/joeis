@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012115.
+ * A012115 Expansion of e.g.f. of cos(arcsin(arcsinh(x))), even powers only.
  * @author Sean A. Irvine
  */
 public class A012115 implements Sequence {

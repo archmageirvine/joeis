@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012732.
+ * A012732 cos(arctanh(x)*arctan(x)) = 1-12/4!*x^4-9968/8!*x^8-77575872/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A012732 implements Sequence {

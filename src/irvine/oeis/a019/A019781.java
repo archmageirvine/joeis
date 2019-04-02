@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019781.
+ * A019781 Decimal expansion of sqrt(e)/8.
  * @author Sean A. Irvine
  */
 public class A019781 extends DecimalExpansionSequence {

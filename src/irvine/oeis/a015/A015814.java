@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015814.
+ * A015814 Numbers n so phi(n + 1) divides sigma(n).
  * @author Sean A. Irvine
  */
 public class A015814 implements Sequence {

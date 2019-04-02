@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048911.
+ * A048911 Indices of square numbers which are also 9-gonal.
  * @author Sean A. Irvine
  */
 public class A048911 extends LinearRecurrence {

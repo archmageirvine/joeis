@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024381.
+ * A024381 a(n) = sum of squares of first n positive integers congruent to 1 mod 4.
  * @author Sean A. Irvine
  */
 public class A024381 extends LinearRecurrence {

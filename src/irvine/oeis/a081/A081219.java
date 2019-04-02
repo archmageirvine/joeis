@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081219.
+ * A081219 One sixtieth the product of primitive Pythagorean triangles' sides whose odd values differ by 2.
  * @author Sean A. Irvine
  */
 public class A081219 extends LinearRecurrence {

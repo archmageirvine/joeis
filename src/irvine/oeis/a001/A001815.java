@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001815.
+ * A001815 a(n) = C(n,2) * 2^(n-1).
  * @author Sean A. Irvine
  */
 public class A001815 implements Sequence {

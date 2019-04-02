@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273321.
+ * A273321 Wiener index of graph of bcc unit cells in a line = Sum of distances in a bcc row graph.
  * @author Sean A. Irvine
  */
 public class A273321 extends LinearRecurrence {

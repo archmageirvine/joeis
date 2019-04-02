@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * A003588.
+ * A003588 Roman numerals with 1 letter, in alphabetical order; then those with 2 letters, etc.
  * @author Sean A. Irvine
  */
 public class A003588 implements Sequence {

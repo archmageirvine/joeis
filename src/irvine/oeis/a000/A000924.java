@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A000924.
+ * A000924 Class number of Q(sqrt(-n)), n squarefree.
  * @author Sean A. Irvine
  */
 public class A000924 implements Sequence {

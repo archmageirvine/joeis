@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280014.
+ * A280014 Numbers n == +- 2 (mod 10) but not n == 2 (mod 6).
  * @author Sean A. Irvine
  */
 public class A280014 extends LinearRecurrence {

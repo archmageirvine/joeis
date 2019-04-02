@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005934.
+ * A005934 Highly powerful numbers.
  * @author Sean A. Irvine
  */
 public class A005934 implements Sequence {

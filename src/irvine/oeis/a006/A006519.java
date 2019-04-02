@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006519.
+ * A006519 Highest power of 2 dividing n.
  * @author Sean A. Irvine
  */
 public class A006519 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097766.
+ * A097766 Pell equation solutions (11*a(n))^2 - 122*b(n)^2 = -1 with b(n):=A097767(n), n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A097766 extends LinearRecurrence {

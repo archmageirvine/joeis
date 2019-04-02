@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000227.
+ * A000227 Nearest integer to e^n.
  * @author Sean A. Irvine
  */
 public class A000227 extends A000149 {

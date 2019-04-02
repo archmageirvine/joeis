@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010078.
+ * A010078 Shortest representation of -n in 2's-complement format.
  * @author Sean A. Irvine
  */
 public class A010078 implements Sequence {

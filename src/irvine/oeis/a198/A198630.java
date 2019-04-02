@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198630.
+ * A198630 Alternating sums of powers of 1,2,...,7.
  * @author Sean A. Irvine
  */
 public class A198630 extends LinearRecurrence {

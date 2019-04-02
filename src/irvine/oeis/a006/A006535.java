@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import irvine.oeis.a001.A001207;
 
 /**
- * A006535.
+ * A006535 Number of one-sided hexagonal polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006535 extends A001207 {

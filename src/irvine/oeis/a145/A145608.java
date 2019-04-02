@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145608.
+ * A145608 Numbers a(n)=k such that (1/3)*(5*(2k+1)^2-2) is A057080(n)^2.
  * @author Sean A. Irvine
  */
 public class A145608 extends LinearRecurrence {

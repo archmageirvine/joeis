@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099429.
+ * A099429 A Jacobsthal-Lucas convolution.
  * @author Sean A. Irvine
  */
 public class A099429 extends LinearRecurrence {

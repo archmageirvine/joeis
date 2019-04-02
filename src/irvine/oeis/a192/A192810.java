@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192810.
+ * A192810 Coefficient of x^2 in the reduction of the polynomial (x^2 + 2)^n by x^3 -&gt; x^2 + 2.
  * @author Sean A. Irvine
  */
 public class A192810 extends LinearRecurrence {

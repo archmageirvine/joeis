@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008290.
+ * A008290 Triangle T(n,k) of rencontres numbers (number of permutations of n elements with k fixed points).
  * @author Sean A. Irvine
  */
 public class A008290 extends MemoryFunction2<Long, Z> implements Sequence {

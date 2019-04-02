@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001782.
+ * A001782 Discriminants of Shapiro polynomials.
  * @author Sean A. Irvine
  */
 public class A001782 implements Sequence {

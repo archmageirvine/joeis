@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006472.
+ * A006472 a(n) = n!*(n-1)!/2^(n-1).
  * @author Sean A. Irvine
  */
 public class A006472 implements Sequence {

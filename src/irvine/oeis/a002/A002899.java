@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002899.
+ * A002899 Number of n-step polygons on f.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A002899 implements Sequence {

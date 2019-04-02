@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055523.
+ * A055523 Longest other leg of a Pythagorean triangle with n as length of a leg.
  * @author Sean A. Irvine
  */
 public class A055523 extends LinearRecurrence {

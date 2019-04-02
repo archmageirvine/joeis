@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013520.
+ * A013520 A problem in derangements.
  * @author Sean A. Irvine
  */
 public class A013520 implements Sequence {

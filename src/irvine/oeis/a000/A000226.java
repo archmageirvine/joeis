@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import java.util.Arrays;
 
 /**
- * A000226.
+ * A000226 Number of n-node unlabeled connected graphs with one cycle of length 3.
  * @author Sean A. Irvine
  */
 public class A000226 extends A000081 {

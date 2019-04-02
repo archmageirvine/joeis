@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146094.
+ * A146094 Bell numbers (A000110) mod 4.
  * @author Sean A. Irvine
  */
 public class A146094 extends LinearRecurrence {

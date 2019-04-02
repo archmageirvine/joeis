@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135991.
+ * A135991 Expansion of x^3*(x-1)^2*(x+1) / (x^6-3*x^5+3*x^4-x+1).
  * @author Sean A. Irvine
  */
 public class A135991 extends LinearRecurrence {

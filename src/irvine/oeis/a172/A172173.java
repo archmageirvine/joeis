@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172173.
+ * A172173 Sums of NE-SW diagonals of triangle A172171.
  * @author Sean A. Irvine
  */
 public class A172173 extends LinearRecurrence {

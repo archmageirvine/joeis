@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190912.
+ * A190912 Partial sums of pentanacci numbers (A000322).
  * @author Sean A. Irvine
  */
 public class A190912 extends LinearRecurrence {

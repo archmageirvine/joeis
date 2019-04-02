@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A004210.
+ * A004210 "Magic" integers: a(n+1) is the smallest integer m such that there is no overlap between the sets {m, m-a(i), m+a(i): 1 &lt;= i &lt;= n} and {a(i), a(i)-a(j), a(i)+a(j): 1 &lt;= j &lt; i &lt;= n}.
  * @author Sean A. Irvine
  */
 public class A004210 extends MemorySequence {

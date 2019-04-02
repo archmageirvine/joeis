@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157460.
+ * A157460 Expansion of 88*x^2 / (1-483*x+483*x^2-x^3).
  * @author Sean A. Irvine
  */
 public class A157460 extends LinearRecurrence {

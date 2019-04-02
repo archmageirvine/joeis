@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007508.
+ * A007508 Number of twin prime pairs below 10^n.
  * @author Sean A. Irvine
  */
 public class A007508 implements Sequence {

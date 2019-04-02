@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066443.
+ * A066443 Number of distinct paths of length 2n+1 along edges of a unit cube between two fixed adjacent vertices.
  * @author Sean A. Irvine
  */
 public class A066443 extends LinearRecurrence {

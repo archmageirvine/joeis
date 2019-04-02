@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086746.
+ * A086746 Multiples of 3018.
  * @author Sean A. Irvine
  */
 public class A086746 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097575.
+ * A097575 A 2 X 2 matrix Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A097575 extends LinearRecurrence {

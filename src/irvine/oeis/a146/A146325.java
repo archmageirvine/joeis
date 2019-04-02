@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146325.
+ * A146325 Period 3: repeat [1, 4, 1].
  * @author Sean A. Irvine
  */
 public class A146325 extends LinearRecurrence {

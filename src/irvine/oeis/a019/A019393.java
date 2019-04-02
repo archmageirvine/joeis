@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.math.z.Z;
 
 /**
- * A019393.
+ * A019393 Primes with primitive root 70.
  * @author Sean A. Irvine
  */
 public class A019393 extends A019334 {

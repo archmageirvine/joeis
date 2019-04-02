@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008651.
+ * A008651 Molien series of binary icosahedral group.
  * @author Sean A. Irvine
  */
 public class A008651 extends LinearRecurrence {

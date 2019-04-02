@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136325.
+ * A136325 Integers x such that 3(5x^2+3) is a perfect square.
  * @author Sean A. Irvine
  */
 public class A136325 extends LinearRecurrence {

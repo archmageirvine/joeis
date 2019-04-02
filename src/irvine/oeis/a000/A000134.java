@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000134.
+ * A000134 Positive zeros of Bessel function of order 0 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A000134 implements Sequence {

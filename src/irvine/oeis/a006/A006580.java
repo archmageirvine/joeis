@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006580.
+ * A006580 a(n) = Sum_{k=1..n-1} lcm(k,n-k).
  * @author Sean A. Irvine
  */
 public class A006580 implements Sequence {

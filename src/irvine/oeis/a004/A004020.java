@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008441;
 
 /**
- * A004020.
+ * A004020 Theta series of square lattice with respect to edge.
  * @author Sean A. Irvine
  */
 public class A004020 extends A008441 {

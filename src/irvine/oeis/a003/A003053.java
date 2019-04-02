@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003053.
+ * A003053 Order of orthogonal group O(n, GF(2)).
  * @author Sean A. Irvine
  */
 public class A003053 implements Sequence {

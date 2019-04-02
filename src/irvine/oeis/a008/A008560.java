@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008560.
+ * A008560 a(1) = 2; to get a(n), n &gt;= 2, convert a(n-1) from base 3 to base 2.
  * @author Sean A. Irvine
  */
 public class A008560 implements Sequence {

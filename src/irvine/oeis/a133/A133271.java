@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133271.
+ * A133271 Indices of 7-gonal numbers which are also centered 7-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A133271 extends LinearRecurrence {

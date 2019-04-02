@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011274.
+ * A011274 Triangle of numbers of hybrid rooted trees (divided by Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A011274 implements Sequence {

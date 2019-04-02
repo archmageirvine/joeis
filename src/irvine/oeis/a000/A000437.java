@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A000437.
+ * A000437 Smallest nonnegative number that is the sum of 3 squares in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A000437 implements Sequence {

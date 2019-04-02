@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064808.
+ * A064808 The (n+1)st (n+2)-gonal number.
  * @author Sean A. Irvine
  */
 public class A064808 extends LinearRecurrence {

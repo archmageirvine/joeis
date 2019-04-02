@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A155100.
+ * A155100 Triangle read by rows: coefficients in polynomials P_n(u) arising from the expansion of D^(n-1) (tan x) in increasing powers of tan x for n&gt;=1 and 1 for n=0.
  * @author Sean A. Irvine
  */
 public class A155100 implements Sequence {

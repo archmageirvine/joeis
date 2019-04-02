@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002866.
+ * A002866 a(0) = 1; for n&gt;0, a(n) = 2^(n-1)*n!.
  * @author Sean A. Irvine
  */
 public class A002866 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277131.
+ * A277131 Magic numbers of anti-Mackay icosahedra.
  * @author Sean A. Irvine
  */
 public class A277131 extends LinearRecurrence {

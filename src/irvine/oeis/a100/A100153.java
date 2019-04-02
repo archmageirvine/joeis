@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100153.
+ * A100153 Structured truncated dodecahedral numbers.
  * @author Sean A. Irvine
  */
 public class A100153 extends LinearRecurrence {

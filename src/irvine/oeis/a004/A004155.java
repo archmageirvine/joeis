@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004155.
+ * A004155 Sum of digits of n-th odd number.
  * @author Sean A. Irvine
  */
 public class A004155 implements Sequence {

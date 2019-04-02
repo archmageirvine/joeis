@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008479.
+ * A008479 Number of numbers &lt;= n with same prime factors as n.
  * @author Sean A. Irvine
  */
 public class A008479 implements Sequence {

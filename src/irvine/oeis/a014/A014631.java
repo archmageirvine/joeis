@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007318;
 
 /**
- * A014631.
+ * A014631 Numbers in order in which they appear in Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A014631 extends A007318 {

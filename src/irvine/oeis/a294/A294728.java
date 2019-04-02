@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003168;
 import irvine.oeis.a007.A007165;
 
 /**
- * A294728.
+ * A294728 Number of Q graphs with 2*n vertices symmetrical about a distinguished edge.
  * @author Sean A. Irvine
  */
 public class A294728 extends A003168 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A006072.
+ * A006072 Numbers with mirror symmetry about middle.
  * @author Sean A. Irvine
  */
 public class A006072 implements Sequence {

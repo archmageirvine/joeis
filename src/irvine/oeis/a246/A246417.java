@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A246417.
+ * A246417 Homomorphic inverse images of elementary h-ary relations.
  * @author Sean A. Irvine
  */
 public class A246417 implements Sequence {

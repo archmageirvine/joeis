@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007608.
+ * A007608 Nonnegative integers in base -4.
  * @author Sean A. Irvine
  */
 public class A007608 implements Sequence {

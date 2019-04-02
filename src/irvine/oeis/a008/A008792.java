@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008792.
+ * A008792 Amino acid numbers, based on a certain rule that maps codons onto numbers in [0, 63].
  * @author Sean A. Irvine
  */
 public class A008792 extends FiniteSequence {

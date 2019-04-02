@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081675.
+ * A081675 Generalized Poly-Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A081675 extends LinearRecurrence {

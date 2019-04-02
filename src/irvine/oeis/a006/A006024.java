@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006024.
+ * A006024 Number of labeled mating graphs with n nodes. Also called point-determining graphs.
  * @author Sean A. Irvine
  */
 public class A006024 implements Sequence {

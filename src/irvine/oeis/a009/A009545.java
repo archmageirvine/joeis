@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A009545.
+ * A009545 E.g.f. sin(x)*exp(x).
  * @author Sean A. Irvine
  */
 public class A009545 extends LinearRecurrence {

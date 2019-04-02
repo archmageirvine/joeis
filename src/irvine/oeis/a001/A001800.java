@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000120;
 
 /**
- * A001800.
+ * A001800 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
 public class A001800 extends A000120 {

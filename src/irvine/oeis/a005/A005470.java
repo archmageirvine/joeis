@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a003.A003094;
 
 /**
- * A005470.
+ * A005470 Number of unlabeled planar simple graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005470 extends EulerTransformSequence {

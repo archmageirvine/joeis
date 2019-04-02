@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002420;
 import java.util.ArrayList;
 
 /**
- * A000365.
+ * A000365 Number of genus 0 rooted planar maps with n vertices.
  * @author Sean A. Irvine
  */
 public class A000365 implements Sequence {

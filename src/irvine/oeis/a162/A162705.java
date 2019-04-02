@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A162705.
+ * A162705 Numbers that are the sum of two reversed consecutive primes in more than one way.
  * @author Sean A. Irvine
  */
 public class A162705 implements Sequence {

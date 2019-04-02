@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001156.
+ * A001156 Number of partitions of n into squares.
  * @author Sean A. Irvine
  */
 public class A001156 implements Sequence {

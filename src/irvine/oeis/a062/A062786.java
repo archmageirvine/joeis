@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062786.
+ * A062786 Centered 10-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A062786 extends LinearRecurrence {

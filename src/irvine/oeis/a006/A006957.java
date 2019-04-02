@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a000.A000670;
 
 /**
- * A006957.
+ * A006957 Self-convolution of numbers of preferential arrangements.
  * @author Sean A. Irvine
  */
 public class A006957 extends ConvolutionSequence {

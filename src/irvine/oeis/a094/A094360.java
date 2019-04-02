@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094360.
+ * A094360 Pair reversal of Jacobsthal-Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A094360 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013416.
+ * A013416 Expansion of e.g.f.: exp(arcsin(x)-arcsinh(x))=1+2/3!*x^3+40/6!*x^6+450/7!*x^7+2240/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013416 implements Sequence {

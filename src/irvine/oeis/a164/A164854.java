@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164854.
+ * A164854 Diagonal sum of generalized Pascal triangle; (10^n,1).
  * @author Sean A. Irvine
  */
 public class A164854 extends LinearRecurrence {

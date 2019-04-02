@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009096.
+ * A009096 Ordered perimeters of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009096 implements Sequence {

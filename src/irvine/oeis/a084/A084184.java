@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084184.
+ * A084184 Partial sums of a Jacobsthal related sequence.
  * @author Sean A. Irvine
  */
 public class A084184 extends LinearRecurrence {

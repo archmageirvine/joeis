@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001842.
+ * A001842 Expansion of Sum x^(4n+3)/(1-x^(4n+3)), n=0..inf.
  * @author Sean A. Irvine
  */
 public class A001842 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006403.
+ * A006403 Number of 2-connected planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006403 extends A006385 {

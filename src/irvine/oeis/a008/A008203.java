@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008203.
+ * A008203 Coordination sequence T1 for Zeolite Code NAT.
  * @author Sean A. Irvine
  */
 public class A008203 extends CoordinationSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002854.
+ * A002854 Number of Euler graphs with n nodes; number of two-graphs with n nodes; number of switching classes of graphs with n nodes; number of Seidel matrices of order n.
  * @author Sean A. Irvine
  */
 public class A002854 implements Sequence, Serializable {

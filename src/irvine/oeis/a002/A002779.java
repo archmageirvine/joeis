@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A002779.
+ * A002779 Palindromic squares.
  * @author Sean A. Irvine
  */
 public class A002779 implements Sequence {

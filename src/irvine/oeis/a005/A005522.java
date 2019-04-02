@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a001.A001519;
 
 /**
- * A005522.
+ * A005522 a(n) = 1 + L(n) + F(2*n-1) with {L(n)}_{n&gt;=0} the Lucas numbers (A000032) and F(2*n-1)_{n&gt;=0} the bisected Fibonacci numbers (A001519).
  * @author Sean A. Irvine
  */
 public class A005522 extends A000032 {

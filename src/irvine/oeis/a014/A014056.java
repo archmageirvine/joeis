@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014056.
+ * A014056 Nearest integer to (n + 1/n)^n.
  * @author Sean A. Irvine
  */
 public class A014056 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007503.
+ * A007503 Number of subgroups of dihedral group: sigma(n) + d(n).
  * @author Sean A. Irvine
  */
 public class A007503 implements Sequence {

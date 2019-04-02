@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001049.
+ * A001049 Numbered stops in Manhattan on the Lexington Avenue subway.
  * @author Sean A. Irvine
  */
 public class A001049 extends FiniteSequence {

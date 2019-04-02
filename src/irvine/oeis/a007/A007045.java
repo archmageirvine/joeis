@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047812;
 
 /**
- * A007045.
+ * A007045 Second diagonal of partition triangle A047812.
  * @author Sean A. Irvine
  */
 public class A007045 extends A047812 {

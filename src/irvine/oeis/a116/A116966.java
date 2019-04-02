@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116966.
+ * A116966 a(n) = n + {1,2,0,1} according as n == {0,1,2,3} mod 4.
  * @author Sean A. Irvine
  */
 public class A116966 extends LinearRecurrence {

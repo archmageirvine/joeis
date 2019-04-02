@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A000070.
+ * A000070 a(n) = Sum_{k=0..n} p(k) where p(k) = number of partitions of k (A000041).
  * @author Sean A. Irvine
  */
 public class A000070 extends PartialSumSequence {

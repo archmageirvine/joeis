@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274501.
+ * A274501 a(n) = 25*binomial(n-1,6) + binomial(n-1,5).
  * @author Sean A. Irvine
  */
 public class A274501 extends LinearRecurrence {

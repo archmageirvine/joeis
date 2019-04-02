@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180324.
+ * A180324 Vassiliev invariant of fourth order for the torus knots.
  * @author Sean A. Irvine
  */
 public class A180324 extends LinearRecurrence {

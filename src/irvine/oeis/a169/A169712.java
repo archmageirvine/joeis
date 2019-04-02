@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169712.
+ * A169712 The function W_n(8) (see Borwein et al. reference for definition).
  * @author Sean A. Irvine
  */
 public class A169712 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000989.
+ * A000989 3-adic valuation of binomial(2n ,n): largest k such that 3^k divides binomial(2n ,n).
  * @author Sean A. Irvine
  */
 public class A000989 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008653.
+ * A008653 Theta series of direct sum of 2 copies of hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A008653 implements Sequence {

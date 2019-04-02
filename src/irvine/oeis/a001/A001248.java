@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A001248.
+ * A001248 Squares of primes.
  * @author Sean A. Irvine
  */
 public class A001248 extends A000040 {

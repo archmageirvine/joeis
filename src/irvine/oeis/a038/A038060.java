@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A038060.
+ * A038060 Number of trees with 3-colored nodes.
  * @author Sean A. Irvine
  */
 public class A038060 extends A038059 {

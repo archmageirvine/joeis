@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.math.z.Euler;
 
 /**
- * A002139.
+ * A002139 Shuffling 2n cards.
  * @author Sean A. Irvine
  */
 public class A002139 extends A002326 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000606.
+ * A000606 Number of nonnegative solutions to x^2 + y^2 + z^2 &lt;= n.
  * @author Sean A. Irvine
  */
 public class A000606 implements Sequence {

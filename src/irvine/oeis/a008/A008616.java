@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008616.
+ * A008616 Expansion of 1/((1-x^2)(1-x^5)).
  * @author Sean A. Irvine
  */
 public class A008616 implements Sequence {

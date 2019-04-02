@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A001661.
+ * A001661 Largest number not the sum of distinct positive n-th powers.
  * @author Sean A. Irvine
  */
 public class A001661 implements Sequence {

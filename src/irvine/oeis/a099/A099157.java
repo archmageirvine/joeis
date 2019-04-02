@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099157.
+ * A099157 a(n) = 4^(n-1)*U(n-1, 3/2) where U is the Chebyshev polynomial of the second kind.
  * @author Sean A. Irvine
  */
 public class A099157 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.BellMatrix;
 import irvine.oeis.Sequence;
 
 /**
- * A225171.
+ * A225171 Triangle read by rows: T(n,k), 1 &lt;= k &lt;= n, is the number of non-degenerate fanout-free Boolean functions of n variables having AND rank k.
  * @author Sean A. Irvine
  */
 public class A225171 implements Sequence {

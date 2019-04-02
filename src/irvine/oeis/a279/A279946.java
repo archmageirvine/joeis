@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279946.
+ * A279946 Numbers that are both dodecagonal and centered heptagonal.
  * @author Sean A. Irvine
  */
 public class A279946 extends LinearRecurrence {

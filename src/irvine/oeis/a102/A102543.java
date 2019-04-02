@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102543.
+ * A102543 Antidiagonal sums of the antidiagonals of Losanitsch's triangle.
  * @author Sean A. Irvine
  */
 public class A102543 extends LinearRecurrence {

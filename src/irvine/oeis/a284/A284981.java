@@ -4,7 +4,7 @@ import irvine.math.group.Unitary42;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A284981.
+ * A284981 Number of elements of order n in the simple unitary group U4(2).
  * @author Sean A. Irvine
  */
 public class A284981 extends OrdersFiniteGroupSequence {

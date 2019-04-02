@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007235.
+ * A007235 Structure constants for certain representations of S_n.
  * @author Sean A. Irvine
  */
 public class A007235 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A116068.
+ * A116068 Numbers n such that n has nondecreasing digits and the n-th prime has nonincreasing digits.
  * @author Sean A. Irvine
  */
 public class A116068 implements Sequence {

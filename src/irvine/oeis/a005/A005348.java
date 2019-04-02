@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005348.
+ * A005348 Number of ways to add n ordinals.
  * @author Sean A. Irvine
  */
 public class A005348 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008746.
+ * A008746 Dates of birth of Kings Louis I, II, ... of France.
  * @author Sean A. Irvine
  */
 public class A008746 extends FiniteSequence {

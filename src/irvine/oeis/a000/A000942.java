@@ -15,7 +15,7 @@ import irvine.util.Pair;
 import irvine.util.Point;
 
 /**
- * A000942.
+ * A000942 Number of free planar polyenoids with n nodes.
  * @author Sean A. Irvine
  */
 public class A000942 implements Sequence, GraphProcessor {

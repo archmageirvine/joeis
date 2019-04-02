@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000792.
+ * A000792 a(n) = max{(n - i)*a(i) : i &lt; n}; a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A000792 implements Sequence {

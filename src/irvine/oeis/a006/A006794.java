@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006794.
+ * A006794 Primorial -1 primes: primes p such that -1 + product of primes up to p is prime.
  * @author Sean A. Irvine
  */
 public class A006794 implements Sequence {

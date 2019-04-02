@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A000054.
+ * A000054 Local stops on New York City A line subway.
  * @author Sean A. Irvine
  */
 public class A000054 extends FiniteSequence {

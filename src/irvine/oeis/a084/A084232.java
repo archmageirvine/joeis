@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084232.
+ * A084232 RMS values associated with A084231.
  * @author Sean A. Irvine
  */
 public class A084232 extends LinearRecurrence {

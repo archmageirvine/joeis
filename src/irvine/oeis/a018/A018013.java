@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018013.
+ * A018013 Powers of cube root of 13 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018013 implements Sequence {

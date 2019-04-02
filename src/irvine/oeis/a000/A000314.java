@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Collections;
 
 /**
- * A000314.
+ * A000314 Number of mixed Husimi trees with n nodes; or labeled polygonal cacti with bridges.
  * @author Sean A. Irvine
  */
 public class A000314 implements Sequence {

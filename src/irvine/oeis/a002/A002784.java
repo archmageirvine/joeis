@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A002784.
+ * A002784 A problem in parity.
  * @author Sean A. Irvine
  */
 public class A002784 implements Sequence {

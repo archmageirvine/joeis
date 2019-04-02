@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185096.
+ * A185096 Let T(n) = n(n+1)/2 be the n-th triangular number (A000217); a(n) = T(8T(n)).
  * @author Sean A. Irvine
  */
 public class A185096 extends LinearRecurrence {

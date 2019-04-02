@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120634.
+ * A120634 Decimal equivalent of A066335.
  * @author Sean A. Irvine
  */
 public class A120634 extends LinearRecurrence {

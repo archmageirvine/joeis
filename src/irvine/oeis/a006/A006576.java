@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007629;
 
 /**
- * A006576.
+ * A006576 Primitive repfigit numbers.
  * @author Sean A. Irvine
  */
 public class A006576 extends A007629 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014956.
+ * A014956 Positive integers n such that n divides 14^n - 1.
  * @author Sean A. Irvine
  */
 public class A014956 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a046.A046081;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A006593.
+ * A006593 Least number which is side of n Pythagorean triples.
  * @author Sean A. Irvine
  */
 public class A006593 extends A046081 {

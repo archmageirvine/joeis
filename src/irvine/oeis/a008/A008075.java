@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008075.
+ * A008075 Coordination sequence T5 for Zeolite Code DDR.
  * @author Sean A. Irvine
  */
 public class A008075 extends CoordinationSequence {

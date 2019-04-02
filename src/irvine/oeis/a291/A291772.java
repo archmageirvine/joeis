@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291772.
+ * A291772 Number of minimal dominating sets in the 2n-crossed prism graph.
  * @author Sean A. Irvine
  */
 public class A291772 extends LinearRecurrence {

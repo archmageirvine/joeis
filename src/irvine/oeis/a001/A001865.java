@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001865.
+ * A001865 Number of connected functions on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A001865 implements Sequence {

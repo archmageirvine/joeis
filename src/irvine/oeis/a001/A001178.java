@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001178.
+ * A001178 Fibonacci frequency of n.
  * @author Sean A. Irvine
  */
 public class A001178 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a041;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A041050.
+ * A041050 Numerators of continued fraction convergents to sqrt(31).
  * @author Sean A. Irvine
  */
 public class A041050 extends LinearRecurrence {

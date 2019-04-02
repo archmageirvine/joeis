@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006044.
+ * A006044 A traffic light problem.
  * @author Sean A. Irvine
  */
 public class A006044 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000248;
 
 /**
- * A005727.
+ * A005727 n-th derivative of x^x at x=1. Also called Lehmer-Comtet numbers.
  * @author Sean A. Irvine
  */
 public class A005727 implements Sequence {

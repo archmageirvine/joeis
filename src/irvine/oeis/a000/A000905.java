@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000905.
+ * A000905 Hamilton numbers.
  * @author Sean A. Irvine
  */
 public class A000905 extends MemorySequence {

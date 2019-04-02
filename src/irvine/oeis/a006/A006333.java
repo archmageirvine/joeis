@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006333.
+ * A006333 From the enumeration of corners.
  * @author Sean A. Irvine
  */
 public class A006333 implements Sequence {

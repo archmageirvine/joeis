@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055330.
+ * A055330 Number of rooted identity trees with n nodes and 5 leaves.
  * @author Sean A. Irvine
  */
 public class A055330 extends LinearRecurrence {

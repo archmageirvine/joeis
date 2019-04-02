@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007428.
+ * A007428 Moebius transform applied thrice to sequence 1,0,0,0,....
  * @author Sean A. Irvine
  */
 public class A007428 implements Sequence {

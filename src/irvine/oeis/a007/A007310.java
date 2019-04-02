@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007310.
+ * A007310 Numbers congruent to 1 or 5 mod 6.
  * @author Sean A. Irvine
  */
 public class A007310 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291582.
+ * A291582 Maximum number of 6 sphinx tile shapes in a sphinx tiled hexagon of order n.
  * @author Sean A. Irvine
  */
 public class A291582 extends LinearRecurrence {

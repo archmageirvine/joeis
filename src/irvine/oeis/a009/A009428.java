@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009428.
+ * A009428 Expansion of e.g.f. log(1+x)/cos(tanh(x)).
  * @author Sean A. Irvine
  */
 public class A009428 implements Sequence {

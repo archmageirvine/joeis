@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077538.
+ * A077538 First differences of triangular numbers with square pyramidal indices.
  * @author Sean A. Irvine
  */
 public class A077538 extends LinearRecurrence {

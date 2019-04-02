@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a003.A003056;
 
 /**
- * A006463.
+ * A006463 Convolve natural numbers with characteristic function of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A006463 extends PartialSumSequence {

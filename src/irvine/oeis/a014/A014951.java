@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014951.
+ * A014951 Positive integers n such that n divides 12^n - 1.
  * @author Sean A. Irvine
  */
 public class A014951 implements Sequence {

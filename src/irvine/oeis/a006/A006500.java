@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006500.
+ * A006500 Restricted combinations.
  * @author Sean A. Irvine
  */
 public class A006500 extends LinearRecurrence {

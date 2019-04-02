@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001874.
+ * A001874 Convolved Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A001874 implements Sequence {

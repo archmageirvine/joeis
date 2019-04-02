@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001132.
+ * A001132 Primes == +-1 (mod 8).
  * @author Sean A. Irvine
  */
 public class A001132 implements Sequence {

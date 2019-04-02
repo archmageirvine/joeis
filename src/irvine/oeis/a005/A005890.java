@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005890.
+ * A005890 Theta series of hexagonal close-packing with respect to center of triangle between two layers.
  * @author Sean A. Irvine
  */
 public class A005890 implements Sequence {

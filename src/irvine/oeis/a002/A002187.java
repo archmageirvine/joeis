@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002187.
+ * A002187 Sprague-Grundy values for Dawson's Chess (octal game .137).
  * @author Sean A. Irvine
  */
 public class A002187 implements Sequence {

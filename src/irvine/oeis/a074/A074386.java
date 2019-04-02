@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074386.
+ * A074386 Numbers n such that sigma(n) is the square of a prime.
  * @author Sean A. Irvine
  */
 public class A074386 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.oeis.a027.A027852;
 import irvine.oeis.a068.A068051;
 
 /**
- * A001429.
+ * A001429 Number of n-node connected unicyclic graphs.
  * @author Sean A. Irvine
  */
 public class A001429 implements Sequence, Serializable {

@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157297.
+ * A157297 Positive numbers y such that y^2 is of the form x^2+(x+233)^2 with integer x.
  * @author Sean A. Irvine
  */
 public class A157297 extends LinearRecurrence {

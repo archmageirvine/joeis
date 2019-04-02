@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287195.
+ * A287195 Independence and clique covering number of the n-triangular honeycomb acute knight graph.
  * @author Sean A. Irvine
  */
 public class A287195 extends LinearRecurrence {

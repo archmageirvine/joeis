@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000993.
+ * A000993 Number of distinct quadratic residues mod 10^n; also number of distinct n-digit endings of base-10 squares.
  * @author Sean A. Irvine
  */
 public class A000993 implements Sequence {

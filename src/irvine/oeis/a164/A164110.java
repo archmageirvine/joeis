@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164110.
+ * A164110 a(n) = 12*a(n-1) - 34*a(n-2) for n &gt; 1; a(0) = 5, a(1) = 36.
  * @author Sean A. Irvine
  */
 public class A164110 extends LinearRecurrence {

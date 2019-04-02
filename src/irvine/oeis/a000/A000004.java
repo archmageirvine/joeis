@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000004.
+ * A000004 The zero sequence.
  * @author Sean A. Irvine
  */
 public class A000004 implements Sequence {

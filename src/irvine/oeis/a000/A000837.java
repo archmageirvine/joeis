@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MobiusTransformSequence;
 
 /**
- * A000837.
+ * A000837 Number of partitions of n into relatively prime parts. Also aperiodic partitions.
  * @author Sean A. Irvine
  */
 public class A000837 extends MobiusTransformSequence {

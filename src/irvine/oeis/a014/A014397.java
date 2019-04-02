@@ -1,7 +1,7 @@
 package irvine.oeis.a014;
 
 /**
- * A014397.
+ * A014397 Number of multigraphs with 7 nodes and n edges.
  * @author Sean A. Irvine
  */
 public class A014397 extends A014395 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 /**
- * A002276.
+ * A002276 a(n) = 2*(10^n - 1)/9.
  * @author Sean A. Irvine
  */
 public class A002276 extends A002275 {

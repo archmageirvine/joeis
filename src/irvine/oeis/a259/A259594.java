@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259594.
+ * A259594 Denominators of the other-side convergents to sqrt(6).
  * @author Sean A. Irvine
  */
 public class A259594 extends LinearRecurrence {

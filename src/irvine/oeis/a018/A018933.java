@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A018933.
+ * A018933 From the game of Mousetrap.
  * @author Sean A. Irvine
  */
 public class A018933 extends PrependSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008795.
+ * A008795 Molien series for 3-dimensional representation of dihedral group D_6 of order 6.
  * @author Sean A. Irvine
  */
 public class A008795 extends CoordinationSequence {

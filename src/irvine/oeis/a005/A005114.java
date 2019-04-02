@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a078.A078923;
 
 /**
- * A005114.
+ * A005114 Untouchable numbers, also called nonaliquot numbers: impossible values for sum of aliquot parts of n (A001065).
  * @author Sean A. Irvine
  */
 public class A005114 extends ComplementSequence {

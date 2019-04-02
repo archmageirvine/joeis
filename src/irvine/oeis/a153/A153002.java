@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.math.z.Z;
 
 /**
- * A153002.
+ * A153002 Primes in toothpick sequence A153000.
  * @author Sean A. Irvine
  */
 public class A153002 extends A153000 {

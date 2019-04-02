@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001335.
+ * A001335 Number of n-step polygons on hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A001335 extends A001334 {

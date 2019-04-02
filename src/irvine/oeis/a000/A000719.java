@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001349;
 
 /**
- * A000719.
+ * A000719 Number of disconnected graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A000719 extends A000088 {

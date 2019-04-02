@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
 
 /**
- * A006905.
+ * A006905 Number of transitive relations on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A006905 extends A001035 {

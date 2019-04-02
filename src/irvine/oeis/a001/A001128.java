@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001128.
+ * A001128 Reverse digits of previous term and multiply by previous term.
  * @author Sean A. Irvine
  */
 public class A001128 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004753.
+ * A004753 Numbers whose binary expansion contains 100.
  * @author Sean A. Irvine
  */
 public class A004753 implements Sequence {

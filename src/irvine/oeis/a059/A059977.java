@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059977.
+ * A059977 a(n) = binomial(n+2, 2)^4.
  * @author Sean A. Irvine
  */
 public class A059977 extends LinearRecurrence {

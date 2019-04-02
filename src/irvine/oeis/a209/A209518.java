@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A209518.
+ * A209518 Triangle by rows, reversal of A104712.
  * @author Sean A. Irvine
  */
 public class A209518 implements Sequence {

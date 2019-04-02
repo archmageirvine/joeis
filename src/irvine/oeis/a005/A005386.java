@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005386.
+ * A005386 Area of n-th triple of squares around a triangle.
  * @author Sean A. Irvine
  */
 public class A005386 extends LinearRecurrence {

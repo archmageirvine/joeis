@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007677.
+ * A007677 Denominators of convergents to e.
  * @author Sean A. Irvine
  */
 public class A007677 implements Sequence {

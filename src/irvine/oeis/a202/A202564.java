@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202564.
+ * A202564 Indices of pentagonal numbers which are also decagonal.
  * @author Sean A. Irvine
  */
 public class A202564 extends LinearRecurrence {

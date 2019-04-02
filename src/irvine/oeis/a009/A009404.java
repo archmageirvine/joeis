@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009404.
+ * A009404 Squares formed by concatenating other squares, not ending in 0.
  * @author Sean A. Irvine
  */
 public class A009404 implements Sequence {

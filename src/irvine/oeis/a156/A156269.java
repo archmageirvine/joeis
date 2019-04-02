@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156269.
+ * A156269 Denominators of a series expansion for Pi/2.
  * @author Sean A. Irvine
  */
 public class A156269 extends LinearRecurrence {

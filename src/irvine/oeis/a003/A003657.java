@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.List;
 
 /**
- * A003657.
+ * A003657 Discriminants of imaginary quadratic fields, negated.
  * @author Sean A. Irvine
  */
 public class A003657 implements Sequence {

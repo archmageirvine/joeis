@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000110;
 
 /**
- * A004098.
+ * A004098 Bell numbers written backwards.
  * @author Sean A. Irvine
  */
 public class A004098 extends A000110 {

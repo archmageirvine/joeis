@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291444.
+ * A291444 Number of symmetric maximal irredundant sets in the n-path graph.
  * @author Sean A. Irvine
  */
 public class A291444 extends LinearRecurrence {

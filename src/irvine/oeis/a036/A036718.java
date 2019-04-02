@@ -5,7 +5,7 @@ import irvine.math.group.SymmetricGroup;
 import irvine.oeis.a000.A000598;
 
 /**
- * A036718.
+ * A036718 Number of rooted trees where each node has at most 4 children.
  * @author Sean A. Irvine
  */
 public class A036718 extends A000598 {

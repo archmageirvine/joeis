@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015950.
+ * A015950 Numbers k such that k | 4^k + 1.
  * @author Sean A. Irvine
  */
 public class A015950 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193127.
+ * A193127 Numbers of spanning trees of the antiprism graphs.
  * @author Sean A. Irvine
  */
 public class A193127 extends LinearRecurrence {

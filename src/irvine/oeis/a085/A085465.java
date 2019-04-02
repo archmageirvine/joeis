@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085465.
+ * A085465 Number of monotone n-weightings of complete bipartite digraph K(3,3).
  * @author Sean A. Irvine
  */
 public class A085465 extends LinearRecurrence {

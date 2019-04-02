@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002415.
+ * A002415 4-dimensional pyramidal numbers: a(n) = n^2*(n^2-1)/12.
  * @author Sean A. Irvine
  */
 public class A002415 implements Sequence {

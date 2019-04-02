@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018028.
+ * A018028 Powers of cube root of 18 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018028 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017754.
+ * A017754 Binomial coefficients C(n,90).
  * @author Sean A. Irvine
  */
 public class A017754 implements Sequence {

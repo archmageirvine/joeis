@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010477.
+ * A010477 Decimal expansion of square root of 21.
  * @author Sean A. Irvine
  */
 public class A010477 extends A002193 {

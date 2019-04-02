@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167867.
+ * A167867 a(n) = 2^n*Sum_{ k=0..n } binomial(2*k,k)^3/2^k.
  * @author Sean A. Irvine
  */
 public class A167867 implements Sequence {

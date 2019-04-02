@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013917.
+ * A013917 a(n) is prime and sum of all primes &lt;= a(n) is prime.
  * @author Sean A. Irvine
  */
 public class A013917 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119283.
+ * A119283 Alternating sum of the squares of the first n Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A119283 extends LinearRecurrence {

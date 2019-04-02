@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007179.
+ * A007179 Dual pairs of integrals arising from reflection coefficients.
  * @author Sean A. Irvine
  */
 public class A007179 extends LinearRecurrence {

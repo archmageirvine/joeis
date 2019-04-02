@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026040.
+ * A026040 a(n) = dot_product(1,2,...,n)*(4,5,...,n,1,2,3).
  * @author Sean A. Irvine
  */
 public class A026040 extends LinearRecurrence {

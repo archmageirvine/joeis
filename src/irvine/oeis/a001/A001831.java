@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001831.
+ * A001831 Number of labeled graded partially ordered sets with n elements of height at most 1.
  * @author Sean A. Irvine
  */
 public class A001831 implements Sequence {

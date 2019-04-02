@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277792.
+ * A277792 Squares that are also pentagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A277792 extends LinearRecurrence {

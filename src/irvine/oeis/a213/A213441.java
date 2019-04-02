@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A213441.
+ * A213441 Number of 2-colored graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A213441 implements Sequence {

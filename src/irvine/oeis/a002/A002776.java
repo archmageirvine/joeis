@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002776.
+ * A002776 Terms in certain determinants.
  * @author Sean A. Irvine
  */
 public class A002776 implements Sequence {

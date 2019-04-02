@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261995.
+ * A261995 The first of four consecutive positive integers the sum of the squares of which is equal to the sum of the squares of twenty-one consecutive positive integers.
  * @author Sean A. Irvine
  */
 public class A261995 extends LinearRecurrence {

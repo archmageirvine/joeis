@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124625.
+ * A124625 Even numbers sandwiched between 1's.
  * @author Sean A. Irvine
  */
 public class A124625 extends LinearRecurrence {

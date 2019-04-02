@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290379.
+ * A290379 Number of minimal dominating sets in the n-ladder graph.
  * @author Sean A. Irvine
  */
 public class A290379 extends LinearRecurrence {

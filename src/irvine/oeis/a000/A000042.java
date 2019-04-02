@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000042.
+ * A000042 Unary representation of natural numbers.
  * @author Sean A. Irvine
  */
 public class A000042 implements Sequence {

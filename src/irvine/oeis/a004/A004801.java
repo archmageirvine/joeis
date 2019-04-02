@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004801.
+ * A004801 Sum of 12 positive 9th powers.
  * @author Sean A. Irvine
  */
 public class A004801 extends A004802 {

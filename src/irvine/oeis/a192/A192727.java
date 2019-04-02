@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192727.
+ * A192727 a(n) = Fibonacci(n-2) + 2*a(n-2) - (n mod 2).
  * @author Sean A. Irvine
  */
 public class A192727 extends LinearRecurrence {

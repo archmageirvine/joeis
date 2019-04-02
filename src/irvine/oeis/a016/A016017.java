@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016017.
+ * A016017 Smallest k such that 1/k can be written as a sum of exactly 2 unit fractions in n ways.
  * @author Sean A. Irvine
  */
 public class A016017 implements Sequence {

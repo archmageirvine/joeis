@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288714.
+ * A288714 Number of (undirected) paths on the 2n-crossed prism graph.
  * @author Sean A. Irvine
  */
 public class A288714 extends LinearRecurrence {

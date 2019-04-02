@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094623.
+ * A094623 Sequence whose n-th term digits sum to n.
  * @author Sean A. Irvine
  */
 public class A094623 extends LinearRecurrence {

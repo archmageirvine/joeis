@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232580.
+ * A232580 Number of binary sequences of length n that contain at least one contiguous subsequence 011.
  * @author Sean A. Irvine
  */
 public class A232580 extends LinearRecurrence {

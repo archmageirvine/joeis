@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A003824.
+ * A003824 Numbers that are the sum of two 4th powers in more than one way (primitive solutions).
  * @author Sean A. Irvine
  */
 public class A003824 implements Sequence {

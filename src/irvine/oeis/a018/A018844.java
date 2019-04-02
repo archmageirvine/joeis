@@ -4,7 +4,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.UnionSequence;
 
 /**
- * A018844.
+ * A018844 Arises from generalized Lucas-Lehmer test for primality.
  * @author Sean A. Irvine
  */
 public class A018844 extends UnionSequence {

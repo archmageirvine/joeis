@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002760.
+ * A002760 Squares and cubes.
  * @author Sean A. Irvine
  */
 public class A002760 implements Sequence {

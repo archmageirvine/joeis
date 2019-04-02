@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006958.
+ * A006958 Number of parallelogram polyominoes with n cells (also called staircase polyominoes, although that term is overused).
  * @author Sean A. Irvine
  */
 public class A006958 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138238.
+ * A138238 Alternating sum of the squares of the first n Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A138238 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008270.
+ * A008270 Total length of strings on n symbols in Stockhausen problem.
  * @author Sean A. Irvine
  */
 public class A008270 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192792.
+ * A192792 Molecular topological indices of the Apollonian graphs.
  * @author Sean A. Irvine
  */
 public class A192792 extends LinearRecurrence {

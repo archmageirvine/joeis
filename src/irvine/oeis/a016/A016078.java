@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016078.
+ * A016078 Smallest number that is sum of 2 positive n-th powers in 2 different ways.
  * @author Sean A. Irvine
  */
 public class A016078 implements Sequence {

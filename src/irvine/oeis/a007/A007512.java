@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001113;
 
 /**
- * A007512.
+ * A007512 Primes of the form floor(e*10^k), i.e., formed by concatenation of an initial segment of the decimal expansion of e.
  * @author Sean A. Irvine
  */
 public class A007512 extends A001113 {

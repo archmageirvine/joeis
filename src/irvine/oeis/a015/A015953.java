@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015953.
+ * A015953 Numbers n such that n | 6^n + 1.
  * @author Sean A. Irvine
  */
 public class A015953 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.math.z.Z;
 
 /**
- * A013925.
+ * A013925 Number of labeled connected graphs with n nodes and 3 cutpoints.
  * @author Sean A. Irvine
  */
 public class A013925 extends A013924 {

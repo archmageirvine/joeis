@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007960.
+ * A007960 Numbers n with property that some permutation of the digits of n is a triangular number.
  * @author Sean A. Irvine
  */
 public class A007960 implements Sequence {

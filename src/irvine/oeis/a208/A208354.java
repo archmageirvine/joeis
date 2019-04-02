@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A208354.
+ * A208354 Number of compositions of n with at most one even part.
  * @author Sean A. Irvine
  */
 public class A208354 extends LinearRecurrence {

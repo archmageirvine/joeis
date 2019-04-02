@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290968.
+ * A290968 a(n) = a(n-1) + a(n-2) - a(n-3) + a(n-4) + a(n-5), with a(0)=a(1)=a(2)=1, a(3)=-1 and a(4)=1, a linear recurrence related to Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A290968 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298397.
+ * A298397 Pentagonal numbers divisible by 4.
  * @author Sean A. Irvine
  */
 public class A298397 extends LinearRecurrence {

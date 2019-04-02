@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125833.
+ * A125833 Numbers whose base 5 representation is 333333.......3.
  * @author Sean A. Irvine
  */
 public class A125833 extends LinearRecurrence {

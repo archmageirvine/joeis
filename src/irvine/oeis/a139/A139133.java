@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A139133.
+ * A139133 A self-descriptive sequence: positions of consonants in "two, one, five, seven, nine, eleven, thirteen, fifteen, ...".
  * @author Sean A. Irvine
  */
 public class A139133 implements Sequence {

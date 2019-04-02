@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011552.
+ * A011552 Decimal expansion of phi rounded to n places.
  * @author Sean A. Irvine
  */
 public class A011552 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012346.
+ * A012346 E.g.f.: arcsinh(arcsin(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012346 implements Sequence {

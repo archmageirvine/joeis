@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006671.
+ * A006671 Edge-distinguishing chromatic number of cycle with n nodes.
  * @author Sean A. Irvine
  */
 public class A006671 implements Sequence {

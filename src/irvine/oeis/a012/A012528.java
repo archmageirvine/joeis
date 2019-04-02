@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012528.
+ * A012528 sinh(sinh(x)*sin(x))=2/2!*x^2+112/6!*x^6+10112/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A012528 implements Sequence {

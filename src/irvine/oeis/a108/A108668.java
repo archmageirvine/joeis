@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A108668.
+ * A108668 Self-erasure surviving integers in the concatenation of all nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A108668 implements Sequence {

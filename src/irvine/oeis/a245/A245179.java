@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245179.
+ * A245179 Numbers of the form 2^k+3 or 3*2^k+1, k &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A245179 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001264.
+ * A001264 Final 2 digits of 4^n.
  * @author Sean A. Irvine
  */
 public class A001264 implements Sequence {

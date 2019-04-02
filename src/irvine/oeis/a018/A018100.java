@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018100.
+ * A018100 Powers of fourth root of 19 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018100 implements Sequence {

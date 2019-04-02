@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000204;
 
 /**
- * A007390.
+ * A007390 Number of strict (-1)st-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007390 extends A000204 {

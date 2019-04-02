@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a058.A058057;
 
 /**
- * A000386.
+ * A000386 Coefficients of m&#233;nage hit polynomials.
  * @author Sean A. Irvine
  */
 public class A000386 implements Sequence {

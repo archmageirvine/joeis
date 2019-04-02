@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014650.
+ * A014650 Number of partitions of n into its divisors that are powers of primes (A000961) with at least one part of size 1.
  * @author Sean A. Irvine
  */
 public class A014650 implements Sequence {

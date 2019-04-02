@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182052.
+ * A182052 Number of independent sets of nodes in C_6 X C_n (n &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A182052 extends LinearRecurrence {

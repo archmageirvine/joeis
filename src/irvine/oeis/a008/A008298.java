@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008298.
+ * A008298 Triangle of D'Arcais numbers.
  * @author Sean A. Irvine
  */
 public class A008298 extends MemoryFunction1<Polynomial<Z>> implements Sequence {

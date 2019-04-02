@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008325.
+ * A008325 Number of simple regular trivalent bipartite graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A008325 implements Sequence {

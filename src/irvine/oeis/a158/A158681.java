@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158681.
+ * A158681 Wiener indexes of the complete binary trees with n levels, root being at level 0.
  * @author Sean A. Irvine
  */
 public class A158681 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107903.
+ * A107903 Generalized NSW numbers.
  * @author Sean A. Irvine
  */
 public class A107903 extends LinearRecurrence {

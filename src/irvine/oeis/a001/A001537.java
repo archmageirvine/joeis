@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001537.
+ * A001537 Invertible Boolean functions with AG(n,2) acting on the domain and range.
  * @author Sean A. Irvine
  */
 public class A001537 implements Sequence {

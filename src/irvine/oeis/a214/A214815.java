@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006387;
 
 /**
- * A214815.
+ * A214815 Number of unsensed genus 3 maps with n edges.
  * @author T. R. S. Walsh
  */
 public class A214815 extends A006387 {

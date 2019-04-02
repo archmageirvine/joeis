@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a002.A002905;
 
 /**
- * A000664.
+ * A000664 Number of graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A000664 extends EulerTransformSequence {

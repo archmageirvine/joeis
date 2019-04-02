@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102652.
+ * A102652 a(n) = 4 * floor(24*2^n/15) = 4*A077854(n).
  * @author Sean A. Irvine
  */
 public class A102652 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005925.
+ * A005925 Theta series of diamond.
  * @author Sean A. Irvine
  */
 public class A005925 implements Sequence {

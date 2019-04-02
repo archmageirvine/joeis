@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006243.
+ * A006243 Extracting a square root.
  * @author Sean A. Irvine
  */
 public class A006243 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006310.
+ * A006310 a(n) = norm of Heilbronn sum NH_{p}, with p = prime(n).
  * @author Sean A. Irvine
  */
 public class A006310 implements Sequence {

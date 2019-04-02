@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241872.
+ * A241872 Number of ascent sequences of length n with exactly two descents.
  * @author Sean A. Irvine
  */
 public class A241872 extends LinearRecurrence {

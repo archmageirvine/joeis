@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005705.
+ * A005705 Number of partitions of 4*n into powers of 4.
  * @author Sean A. Irvine
  */
 public class A005705 extends MemorySequence {

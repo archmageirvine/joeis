@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000143;
 
 /**
- * A008430.
+ * A008430 Theta series of D_8 lattice.
  * @author Sean A. Irvine
  */
 public class A008430 extends A000143 {

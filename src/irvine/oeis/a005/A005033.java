@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001764;
 
 /**
- * A005033.
+ * A005033 Number of nonequivalent dissections of a polygon into n quadrilaterals by nonintersecting diagonals rooted at a cell up to rotation.
  * @author Sean A. Irvine
  */
 public class A005033 extends A001764 {

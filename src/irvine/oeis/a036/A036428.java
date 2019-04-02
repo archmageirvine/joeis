@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036428.
+ * A036428 Square octagonal numbers.
  * @author Sean A. Irvine
  */
 public class A036428 extends LinearRecurrence {

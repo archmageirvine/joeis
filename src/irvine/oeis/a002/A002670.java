@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002670.
+ * A002670 Denominator of constant term in polynomial arising from numerical integration formula.
  * @author Sean A. Irvine
  */
 public class A002670 extends A002669 {

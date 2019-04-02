@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013510.
+ * A013510 arcsinh(sec(x)-sech(x))=2/2!*x^2+2/6!*x^6+65762/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013510 implements Sequence {

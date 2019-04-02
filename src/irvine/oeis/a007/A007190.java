@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007190.
+ * A007190 Multiplicative encoding of Stirling numbers of 2nd kind.
  * @author Sean A. Irvine
  */
 public class A007190 implements Sequence {

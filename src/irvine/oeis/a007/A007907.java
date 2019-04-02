@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007907.
+ * A007907 Concatenation of sequence (1,2,..,[(n-1)/2],[n/2],[n/2]-1,..,1) for n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A007907 implements Sequence {

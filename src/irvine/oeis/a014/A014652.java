@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014652.
+ * A014652 Number of partitions of n in its prime divisors with at least one part of size 1.
  * @author Sean A. Irvine
  */
 public class A014652 implements Sequence {

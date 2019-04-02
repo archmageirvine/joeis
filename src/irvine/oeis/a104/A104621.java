@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104621.
+ * A104621 Heptanacci-Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A104621 extends LinearRecurrence {

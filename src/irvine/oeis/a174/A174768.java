@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174768.
+ * A174768 y-values in the solution to x^2 - 26*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A174768 extends LinearRecurrence {

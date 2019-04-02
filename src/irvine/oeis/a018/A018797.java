@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018797.
+ * A018797 Smallest cube that begins with n.
  * @author Sean A. Irvine
  */
 public class A018797 implements Sequence {

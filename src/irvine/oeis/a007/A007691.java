@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007691.
+ * A007691 Multiply-perfect numbers: n divides sigma(n).
  * @author Sean A. Irvine
  */
 public class A007691 implements Sequence {

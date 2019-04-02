@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000697.
+ * A000697 Boustrophedon transform of 1, 1, 4, 9, 16, ...
  * @author Sean A. Irvine
  */
 public class A000697 extends A000674 {

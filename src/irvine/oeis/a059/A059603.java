@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059603.
+ * A059603 Expansion of (1+15*x+15*x^2+x^3)/(1-x)^12.
  * @author Sean A. Irvine
  */
 public class A059603 extends LinearRecurrence {

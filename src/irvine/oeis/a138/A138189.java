@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138189.
+ * A138189 Sequence built on pattern (1,-even,-even) beginning 1,-2,-2.
  * @author Sean A. Irvine
  */
 public class A138189 extends LinearRecurrence {

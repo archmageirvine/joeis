@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178349.
+ * A178349 Partial sums of sum_{n=0...infinity} 1010^n.
  * @author Sean A. Irvine
  */
 public class A178349 extends LinearRecurrence {

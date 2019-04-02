@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a151.A151830;
 
 /**
- * A006764.
+ * A006764 Number of fixed properly-4-dimensional polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006764 extends A151830 {

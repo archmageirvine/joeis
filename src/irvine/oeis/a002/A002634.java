@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000183;
 
 /**
- * A002634.
+ * A002634 From discordant permutations.
  * @author Sean A. Irvine
  */
 public class A002634 extends A000183 {

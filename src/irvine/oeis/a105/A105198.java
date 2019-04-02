@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105198.
+ * A105198 a(n) = n(n+1)/2 mod 4.
  * @author Sean A. Irvine
  */
 public class A105198 extends LinearRecurrence {

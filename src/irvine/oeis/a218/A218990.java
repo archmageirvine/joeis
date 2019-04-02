@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218990.
+ * A218990 Power ceiling-floor sequence of 3+sqrt(8).
  * @author Sean A. Irvine
  */
 public class A218990 extends LinearRecurrence {

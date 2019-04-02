@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A000797.
+ * A000797 Numbers that are not the sum of 4 tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A000797 extends FiniteSequence {

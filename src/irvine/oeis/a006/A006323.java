@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006323.
+ * A006323 4-dimensional analog of centered polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A006323 implements Sequence {

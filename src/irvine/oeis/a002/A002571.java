@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002571.
+ * A002571 From a definite integral.
  * @author Sean A. Irvine
  */
 public class A002571 implements Sequence {

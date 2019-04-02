@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A003613.
+ * A003613 Number of symmetries in planted (1,4) trees on 3n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A003613 implements Sequence {

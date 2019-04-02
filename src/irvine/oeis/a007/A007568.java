@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007568.
+ * A007568 Knopfmacher expansion of 2/3: a(n+1) = a(n-1)(a(n)+1)-1.
  * @author Sean A. Irvine
  */
 public class A007568 implements Sequence {

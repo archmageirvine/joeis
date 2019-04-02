@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000537.
+ * A000537 Sum of first n cubes; or n-th triangular number squared.
  * @author Sean A. Irvine
  */
 public class A000537 implements Sequence {

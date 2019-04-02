@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007813.
+ * A007813 Number of planar Steinhaus graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007813 implements Sequence {

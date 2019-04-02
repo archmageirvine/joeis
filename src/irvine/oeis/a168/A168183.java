@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168183.
+ * A168183 Numbers that are not multiples of 9.
  * @author Sean A. Irvine
  */
 public class A168183 extends LinearRecurrence {

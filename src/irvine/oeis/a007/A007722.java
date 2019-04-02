@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004251;
 
 /**
- * A007722.
+ * A007722 Number of graphical partitions of biconnected graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007722 extends A004251 {

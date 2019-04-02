@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016047.
+ * A016047 Smallest prime factor of Mersenne numbers.
  * @author Sean A. Irvine
  */
 public class A016047 implements Sequence {

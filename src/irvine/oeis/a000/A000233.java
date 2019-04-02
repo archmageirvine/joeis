@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * A000233.
+ * A000233 Generalized class numbers.
  * @author Sean A. Irvine
  */
 public class A000233 implements Sequence {

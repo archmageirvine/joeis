@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212323.
+ * A212323 a(n) = 3^n - Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A212323 extends LinearRecurrence {

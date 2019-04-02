@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022527.
+ * A022527 Nexus numbers: a(n) = (n+1)^11 - n^11.
  * @author Sean A. Irvine
  */
 public class A022527 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034666.
+ * A034666 Sum of n-th powers of divisors of 36.
  * @author Sean A. Irvine
  */
 public class A034666 extends LinearRecurrence {

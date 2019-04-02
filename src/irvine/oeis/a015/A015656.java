@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015656.
+ * A015656 Number of ordered 5-tuples of integers from [ 1,n ] with no common factors among triples.
  * @author Sean A. Irvine
  */
 public class A015656 implements Sequence {

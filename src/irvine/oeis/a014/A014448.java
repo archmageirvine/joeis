@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014448.
+ * A014448 Even Lucas numbers: L(3n).
  * @author Sean A. Irvine
  */
 public class A014448 extends LinearRecurrence {

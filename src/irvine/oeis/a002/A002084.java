@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002084.
+ * A002084 Sinh x / cos x = Sum_{n&gt;=0} a(n)*x^(2n+1)/(2n+1)!.
  * @author Sean A. Irvine
  */
 public class A002084 implements Sequence {

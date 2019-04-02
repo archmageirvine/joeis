@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001883.
+ * A001883 Number of permutations s of {1,2,...,n} such that |s(i)-i|&gt;1 for each i=1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A001883 implements Sequence {

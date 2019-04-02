@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101501.
+ * A101501 Number of walks between adjacent nodes on C_5 tensor J_2.
  * @author Sean A. Irvine
  */
 public class A101501 extends LinearRecurrence {

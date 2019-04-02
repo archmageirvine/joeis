@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007989.
+ * A007989 Slowest increasing sequence with property that a(n) does not divide any term of form a(n+m*a(n)) for any m; this is the slowest increasing "non-difference-divisible" sequence.
  * @author Sean A. Irvine
  */
 public class A007989 extends MemorySequence {

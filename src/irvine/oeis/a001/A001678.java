@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A001678.
+ * A001678 Number of series-reduced planted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A001678 extends MemorySequence {

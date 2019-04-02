@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A108968.
+ * A108968 Self-ranked numbers.
  * @author Sean A. Irvine
  */
 public class A108968 implements Sequence {

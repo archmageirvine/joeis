@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204092.
+ * A204092 The number of 1 by n Haunted Mirror Maze puzzles with a unique solution.
  * @author Sean A. Irvine
  */
 public class A204092 extends LinearRecurrence {

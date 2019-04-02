@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006258.
+ * A006258 Numerators of approximations to e.
  * @author Sean A. Irvine
  */
 public class A006258 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007081.
+ * A007081 Number of labeled Eulerian oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007081 implements Sequence {

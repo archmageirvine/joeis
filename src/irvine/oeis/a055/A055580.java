@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055580.
+ * A055580 Bj&#246;rner-Welker sequence: 2^n*(n^2 + n + 2) - 1.
  * @author Sean A. Irvine
  */
 public class A055580 extends LinearRecurrence {

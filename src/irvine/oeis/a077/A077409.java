@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077409.
+ * A077409 Bisection (even part) of Chebyshev sequence with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A077409 extends LinearRecurrence {

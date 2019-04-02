@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A002780.
+ * A002780 Numbers whose cube is a palindrome.
  * @author Sean A. Irvine
  */
 public class A002780 implements Sequence {

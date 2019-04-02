@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279269.
+ * A279269 a(n) = floor( (4 + sqrt(11))^n ).
  * @author Sean A. Irvine
  */
 public class A279269 extends LinearRecurrence {

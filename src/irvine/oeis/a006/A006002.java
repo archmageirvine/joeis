@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006002.
+ * A006002 a(n) = n*(n+1)^2/2.
  * @author Sean A. Irvine
  */
 public class A006002 implements Sequence {

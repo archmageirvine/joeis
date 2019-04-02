@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008936.
+ * A008936 Expansion of (1 - 2*x -x^4) / (1 - 2*x)^2 in powers of x.
  * @author Sean A. Irvine
  */
 public class A008936 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007100.
+ * A007100 Number of labeled trivalent (or cubic) 3-connected graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007100 extends MemoryFunction1<Z> implements Sequence {

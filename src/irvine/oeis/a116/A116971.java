@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116971.
+ * A116971 a(n) = (35*2^((2*(3*n+2) + 2)/3) - 2*(3*n+2) - 46)/9.
  * @author Sean A. Irvine
  */
 public class A116971 extends LinearRecurrence {

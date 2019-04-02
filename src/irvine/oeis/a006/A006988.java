@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006988.
+ * A006988 a(n) = (10^n)-th prime.
  * @author Sean A. Irvine
  */
 public class A006988 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003523.
+ * A003523 Divisors of 2^10 - 1.
  * @author Sean A. Irvine
  */
 public class A003523 extends FiniteSequence {

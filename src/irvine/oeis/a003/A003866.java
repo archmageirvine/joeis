@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003866.
+ * A003866 Degrees of irreducible representations of alternating group A_11.
  * @author Sean A. Irvine
  */
 public class A003866 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A010240.
+ * A010240 Continued fraction for cube root of 10.
  * @author Sean A. Irvine
  */
 public class A010240 extends ContinuedFractionSequence {

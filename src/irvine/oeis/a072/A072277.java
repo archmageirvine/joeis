@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072277.
+ * A072277 Smallest integer &gt; 1 which is both n-gonal and centered n-gonal.
  * @author Sean A. Irvine
  */
 public class A072277 extends LinearRecurrence {

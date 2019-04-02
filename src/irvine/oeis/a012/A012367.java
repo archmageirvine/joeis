@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012367.
+ * A012367 arcsin(tan(x)*sin(x))=2/2!*x^2+4/4!*x^4+182/6!*x^6+4744/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012367 implements Sequence {

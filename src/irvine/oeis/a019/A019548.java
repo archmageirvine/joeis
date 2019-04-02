@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019548.
+ * A019548 Cubes formed by concatenating other cubes.
  * @author Sean A. Irvine
  */
 public class A019548 implements Sequence {

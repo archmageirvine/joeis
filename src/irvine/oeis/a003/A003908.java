@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003908.
+ * A003908 Degrees of irreducible representations of Higman-Sims group HS.
  * @author Sean A. Irvine
  */
 public class A003908 extends FiniteSequence {

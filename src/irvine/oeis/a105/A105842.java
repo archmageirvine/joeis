@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105842.
+ * A105842 Numbers n such that 31*n^2 + 31*n + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A105842 extends LinearRecurrence {

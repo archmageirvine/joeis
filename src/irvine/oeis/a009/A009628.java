@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009628.
+ * A009628 Expansion of sinh(x)/(1+x).
  * @author Sean A. Irvine
  */
 public class A009628 implements Sequence {

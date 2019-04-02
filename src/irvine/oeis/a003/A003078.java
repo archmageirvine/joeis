@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Danish;
 
 /**
- * A003078.
+ * A003078 Number of letters in n (in Danish).
  * @author Sean A. Irvine
  */
 public class A003078 implements Sequence {

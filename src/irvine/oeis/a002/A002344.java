@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033207;
 
 /**
- * A002344.
+ * A002344 Numbers x such that p = x^2 + 7y^2, with prime p = A033207(n).
  * @author Sean A. Irvine
  */
 public class A002344 extends A033207 {

@@ -7,7 +7,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A005439.
+ * A005439 Genocchi medians (or Genocchi numbers of second kind).
  * @author Sean A. Irvine
  */
 public class A005439 implements Sequence {

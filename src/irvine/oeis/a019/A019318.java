@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019318.
+ * A019318 Number of inequivalent ways of choosing n squares from an n X n board, considering rotations and reflections to be the same.
  * @author Sean A. Irvine
  */
 public class A019318 implements Sequence {

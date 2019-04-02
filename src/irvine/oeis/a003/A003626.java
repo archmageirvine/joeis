@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003626.
+ * A003626 Inert rational primes in Q(sqrt(-5)).
  * @author Sean A. Irvine
  */
 public class A003626 implements Sequence {

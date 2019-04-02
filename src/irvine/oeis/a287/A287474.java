@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287474.
+ * A287474 Number of dominating sets in the n-web graph.
  * @author Sean A. Irvine
  */
 public class A287474 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290157.
+ * A290157 Tribonacci-like sequence of composite numbers with a(0) = 151646890045, a(1) = 836564809606 and a(2) = 942785024683.
  * @author Sean A. Irvine
  */
 public class A290157 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A007573.
+ * A007573 Number of asymmetric families of palindromic squares.
  * @author Sean A. Irvine
  */
 public class A007573 implements Sequence {

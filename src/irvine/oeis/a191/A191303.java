@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191303.
+ * A191303 An infinite sequence of 4-digit half-palindromes.
  * @author Sean A. Irvine
  */
 public class A191303 extends LinearRecurrence {

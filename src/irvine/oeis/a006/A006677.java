@@ -6,7 +6,7 @@ import irvine.oeis.Stirling2TransformSequence;
 import irvine.oeis.a001.A001147;
 
 /**
- * A006677.
+ * A006677 Number of planted binary phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
 public class A006677 extends Stirling2TransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098532.
+ * A098532 Sum of sixth powers of first n Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A098532 extends LinearRecurrence {

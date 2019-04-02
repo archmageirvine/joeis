@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.math.z.Z;
 
 /**
- * A015919.
+ * A015919 Positive integers n such that 2^n == 2 (mod n).
  * @author Sean A. Irvine
  */
 public class A015919 extends A015910 {

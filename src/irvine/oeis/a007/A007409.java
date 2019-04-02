@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007409.
+ * A007409 Denominators of Sum_{k=1..n} 1/k^3.
  * @author Sean A. Irvine
  */
 public class A007409 implements Sequence {

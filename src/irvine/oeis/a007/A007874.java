@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007874.
+ * A007874 Distinct perimeter lengths of polygons with regularly spaced vertices.
  * @author Sean A. Irvine
  */
 public class A007874 implements Sequence {

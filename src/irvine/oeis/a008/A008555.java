@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000129;
 
 /**
- * A008555.
+ * A008555 Primitive parts of Pell numbers.
  * @author Sean A. Irvine
  */
 public class A008555 extends MemorySequence {

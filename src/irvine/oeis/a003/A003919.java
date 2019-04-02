@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003919.
+ * A003919 Degrees of irreducible representations of O'Nan group ON.
  * @author Sean A. Irvine
  */
 public class A003919 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109222.
+ * A109222 Row sums of a triangle related to the Fibonacci polynomials.
  * @author Sean A. Irvine
  */
 public class A109222 extends LinearRecurrence {

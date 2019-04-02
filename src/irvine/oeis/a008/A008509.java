@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.string.StringUtils;
 
 /**
- * A008509.
+ * A008509 Numbers n such that n-th triangular number is palindromic.
  * @author Sean A. Irvine
  */
 public class A008509 extends A000217 {

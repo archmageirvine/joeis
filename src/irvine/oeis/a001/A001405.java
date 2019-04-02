@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001405.
+ * A001405 a(n) = binomial(n, floor(n/2)).
  * @author Sean A. Irvine
  */
 public class A001405 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118576.
+ * A118576 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+16807)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A118576 extends LinearRecurrence {

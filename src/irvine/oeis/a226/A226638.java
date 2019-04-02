@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226638.
+ * A226638 Product of Pell and Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A226638 extends LinearRecurrence {

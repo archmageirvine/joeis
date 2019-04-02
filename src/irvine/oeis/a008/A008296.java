@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008296.
+ * A008296 Triangle of Lehmer-Comtet numbers of first kind.
  * @author Sean A. Irvine
  */
 public class A008296 extends MemoryFunction2<Long, Z> implements Sequence {

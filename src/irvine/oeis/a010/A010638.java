@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010638.
+ * A010638 Decimal expansion of cube root of 68.
  * @author Sean A. Irvine
  */
 public class A010638 extends DecimalExpansionSequence {

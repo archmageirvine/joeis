@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013595.
+ * A013595 Triangle of coefficients of cyclotomic polynomial Phi_n(x) (exponents in increasing order).
  * @author Sean A. Irvine
  */
 public class A013595 implements Sequence {

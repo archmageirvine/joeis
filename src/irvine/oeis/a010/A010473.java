@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010473.
+ * A010473 Decimal expansion of square root of 17.
  * @author Sean A. Irvine
  */
 public class A010473 extends A002193 {

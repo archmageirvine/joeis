@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008287;
 
 /**
- * A005725.
+ * A005725 Quadrinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A005725 extends A008287 {

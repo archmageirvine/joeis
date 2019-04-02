@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A007312.
+ * A007312 Reversion of g.f. (with constant term omitted) for partition numbers.
  * @author Sean A. Irvine
  */
 public class A007312 extends A000041 {

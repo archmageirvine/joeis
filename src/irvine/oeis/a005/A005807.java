@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A005807.
+ * A005807 Sum of adjacent Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A005807 extends A000108 {

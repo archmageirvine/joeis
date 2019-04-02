@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.group.IntegersMod;
 
 /**
- * A002329.
+ * A002329 Periods of reciprocals of integers prime to 10.
  * @author Sean A. Irvine
  */
 public class A002329 implements Sequence {

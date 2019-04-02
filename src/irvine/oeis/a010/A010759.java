@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010759.
+ * A010759 Sum along upward diagonal of Pascal triangle from halfway point.
  * @author Sean A. Irvine
  */
 public class A010759 implements Sequence {

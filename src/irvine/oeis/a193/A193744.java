@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193744.
+ * A193744 Partial sum of Perrin numbers.
  * @author Sean A. Irvine
  */
 public class A193744 extends LinearRecurrence {

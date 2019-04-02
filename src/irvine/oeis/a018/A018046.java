@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018046.
+ * A018046 Powers of cube root of 24 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018046 implements Sequence {

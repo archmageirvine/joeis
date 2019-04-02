@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.math.z.Z;
 
 /**
- * A160793.
+ * A160793 Natural numbers and the sum of first n primes interleaved.
  * @author Sean A. Irvine
  */
 public class A160793 extends A160792 {

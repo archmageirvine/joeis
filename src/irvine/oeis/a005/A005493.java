@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000110;
 
 /**
- * A005493.
+ * A005493 2-Bell numbers: a(n) = number of partitions of [n+1] with a distinguished block.
  * @author Sean A. Irvine
  */
 public class A005493 extends DifferenceSequence {

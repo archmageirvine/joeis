@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012045.
+ * A012045 sech(sin(arcsinh(x)))=1-1/2!*x^2+13/4!*x^4-421/6!*x^6+25817/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012045 implements Sequence {

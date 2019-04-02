@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003073.
+ * A003073 A nonlinear recurrence.
  * @author Sean A. Irvine
  */
 public class A003073 implements Sequence {

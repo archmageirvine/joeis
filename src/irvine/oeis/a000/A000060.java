@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000060.
+ * A000060 Number of signed trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000060 extends A000151 {

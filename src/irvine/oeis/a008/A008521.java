@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008521.
+ * A008521 Numbers that do not contain the letter 'o'.
  * @author Sean A. Irvine
  */
 public class A008521 implements Sequence {

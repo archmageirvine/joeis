@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012194.
+ * A012194 exp(arctan(arcsin(x)))=1+x+1/2!*x^2-3/4!*x^4+4/5!*x^5+69/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A012194 implements Sequence {

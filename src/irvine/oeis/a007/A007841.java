@@ -8,7 +8,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A007841.
+ * A007841 Number of factorizations of permutations of n letters into cycles in nondecreasing length order.
  * @author Sean A. Irvine
  */
 public class A007841 extends A007838 {

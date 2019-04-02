@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A043547.
+ * A043547 Odd numbers interspersed with double the previous odd number.
  * @author Sean A. Irvine
  */
 public class A043547 extends LinearRecurrence {

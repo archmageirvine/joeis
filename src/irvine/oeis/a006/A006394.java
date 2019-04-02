@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006394.
+ * A006394 Number of connected planar maps with n nodes and without loops or parallel edges.
  * @author Sean A. Irvine
  */
 public class A006394 extends A006395 {

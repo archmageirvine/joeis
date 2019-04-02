@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038213.
+ * A038213 Top line of 3-wave sequence A038196, also bisection of A006356.
  * @author Sean A. Irvine
  */
 public class A038213 extends LinearRecurrence {

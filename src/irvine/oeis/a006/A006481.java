@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006481.
+ * A006481 Euler characteristics of polytopes.
  * @author Sean A. Irvine
  */
 public class A006481 implements Sequence {

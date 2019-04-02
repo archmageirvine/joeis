@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005793.
+ * A005793 Number of O_1^{2+}(Z)-orbits of Lorentzian modular group.
  * @author Sean A. Irvine
  */
 public class A005793 implements Sequence {

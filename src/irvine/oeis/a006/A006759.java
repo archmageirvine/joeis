@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000162;
 
 /**
- * A006759.
+ * A006759 Number of one-sided 3-dimensional polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006759 extends A000162 {

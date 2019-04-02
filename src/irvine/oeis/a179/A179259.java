@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179259.
+ * A179259 Arises in covering a graph by forests and a matching.
  * @author Sean A. Irvine
  */
 public class A179259 extends LinearRecurrence {

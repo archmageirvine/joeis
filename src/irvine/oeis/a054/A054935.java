@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006384;
 import irvine.oeis.a006.A006849;
 
 /**
- * A054935.
+ * A054935 Number of planar maps with n edges up to orientation-preserving duality.
  * @author Sean A. Irvine
  */
 public class A054935 extends A006384 {

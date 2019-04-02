@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002633.
+ * A002633 Related to discordant permutations.
  * @author Sean A. Irvine
  */
 public class A002633 implements Sequence {

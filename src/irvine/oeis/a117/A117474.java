@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117474.
+ * A117474 The values of 'a' in a^2 + b^2 = c^2 where b - a = 7 and gcd(a,b,c)=1.
  * @author Sean A. Irvine
  */
 public class A117474 extends LinearRecurrence {

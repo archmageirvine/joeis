@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156702.
+ * A156702 Numbers n such that n^2-1 == 0 mod 24^2.
  * @author Sean A. Irvine
  */
 public class A156702 extends LinearRecurrence {

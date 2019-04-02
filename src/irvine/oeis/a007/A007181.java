@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 /**
- * A007181.
+ * A007181 Expansion of critical exponent for walks on tetrahedral lattice.
  * @author Sean A. Irvine
  */
 public class A007181 extends A007180 {

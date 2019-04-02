@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001833.
+ * A001833 Number of labeled graded partially ordered sets with n elements.
  * @author Sean A. Irvine
  */
 public class A001833 implements Sequence {

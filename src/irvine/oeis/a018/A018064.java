@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018064.
+ * A018064 Powers of fourth root of 7 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018064 implements Sequence {

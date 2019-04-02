@@ -7,7 +7,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A072109.
+ * A072109 Numbers n such that sum(i=1,n,gcd(n,i)) divides sum(i=1,n,lcm(n,i)).
  * @author Sean A. Irvine
  */
 public class A072109 implements Sequence {

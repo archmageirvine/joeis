@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212089.
+ * A212089 Number of (w,x,y,z) with all terms in {1,...,n} and w&gt;=average{x,y,z}.
  * @author Sean A. Irvine
  */
 public class A212089 extends LinearRecurrence {

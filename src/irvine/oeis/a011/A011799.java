@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011799.
+ * A011799 Maximal rank function rho(3,n).
  * @author Sean A. Irvine
  */
 public class A011799 implements Sequence {

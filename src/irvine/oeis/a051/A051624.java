@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051624.
+ * A051624 12-gonal (or dodecagonal) numbers: a(n) = n*(5*n-4).
  * @author Sean A. Irvine
  */
 public class A051624 extends LinearRecurrence {

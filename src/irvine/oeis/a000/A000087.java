@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000087.
+ * A000087 Number of unrooted planar maps.
  * @author Sean A. Irvine
  */
 public class A000087 implements Sequence {

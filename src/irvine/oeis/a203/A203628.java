@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203628.
+ * A203628 Indices of 9-gonal (nonagonal) numbers which are also 10-gonal (decagonal).
  * @author Sean A. Irvine
  */
 public class A203628 extends LinearRecurrence {

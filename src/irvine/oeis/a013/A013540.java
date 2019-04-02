@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013540.
+ * A013540 Numerator of the coefficient [x^(2n+1)] of the Taylor series arctan(cosec(x) - coth(x)).
  * @author Sean A. Irvine
  */
 public class A013540 implements Sequence {

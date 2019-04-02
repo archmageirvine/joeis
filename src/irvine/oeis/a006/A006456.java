@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006456.
+ * A006456 Number of compositions (ordered partitions) of n into squares.
  * @author Sean A. Irvine
  */
 public class A006456 extends MemorySequence {

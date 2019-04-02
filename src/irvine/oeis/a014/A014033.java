@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014033.
+ * A014033 Inverse of 24th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014033 extends PeriodicSequence {

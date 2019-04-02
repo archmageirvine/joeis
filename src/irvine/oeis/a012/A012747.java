@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012747.
+ * A012747 cosh(arctanh(x)*cos(x))=1+1/2!*x^2-3/4!*x^4+45/6!*x^6+2457/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012747 implements Sequence {

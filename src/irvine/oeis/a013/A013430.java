@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013430.
+ * A013430 exp(arcsin(x)-arctanh(x))=1-1/3!*x^3-15/5!*x^5+10/6!*x^6-495/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013430 implements Sequence {

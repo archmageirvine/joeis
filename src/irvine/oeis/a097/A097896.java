@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097896.
+ * A097896 Number of compositions of n with either all parts odd or all parts even.
  * @author Sean A. Irvine
  */
 public class A097896 extends LinearRecurrence {

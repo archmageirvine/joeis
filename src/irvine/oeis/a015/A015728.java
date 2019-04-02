@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015728.
+ * A015728 Numbers n such that phi(n) * sigma(n) + 9 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A015728 implements Sequence {

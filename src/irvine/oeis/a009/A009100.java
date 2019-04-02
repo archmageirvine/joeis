@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009100.
+ * A009100 Expansion of e.g.f. cos(x)*cos(tanh(x)), even powers only.
  * @author Sean A. Irvine
  */
 public class A009100 implements Sequence {

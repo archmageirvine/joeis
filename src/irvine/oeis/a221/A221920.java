@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221920.
+ * A221920 3*n/gcd(3*n,n+3), n &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A221920 extends LinearRecurrence {

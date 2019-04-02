@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A004440.
+ * A004440 Numbers that are not the sum of 3 distinct nonzero squares.
  * @author Sean A. Irvine
  */
 public class A004440 extends ComplementSequence {

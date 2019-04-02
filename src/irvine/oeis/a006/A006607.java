@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.a286.A286757;
 
 /**
- * A006607.
+ * A006607 Number of labeled connected rooted trivalent graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A006607 extends A286757 {

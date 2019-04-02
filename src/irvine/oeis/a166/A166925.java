@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166925.
+ * A166925 Digital root of square of n-th triangular number.
  * @author Sean A. Irvine
  */
 public class A166925 extends LinearRecurrence {

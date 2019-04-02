@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003902.
+ * A003902 Degrees of irreducible representations of Suzuki group Suz.
  * @author Sean A. Irvine
  */
 public class A003902 extends FiniteSequence {

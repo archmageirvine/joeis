@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007716.
+ * A007716 Number of polynomial symmetric functions of matrix of order n under separate row and column permutations.
  * @author Sean A. Irvine
  */
 public class A007716 implements Sequence {

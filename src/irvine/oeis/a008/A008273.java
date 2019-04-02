@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008273.
+ * A008273 Number of performances of n fragments in Stockhausen problem.
  * @author Sean A. Irvine
  */
 public class A008273 implements Sequence {

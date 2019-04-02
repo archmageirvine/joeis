@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import java.io.Serializable;
 
 /**
- * A003606.
+ * A003606 a(n) = number of types of conjugacy classes in GL(n,q) (this is independent of q).
  * @author Sean A. Irvine
  */
 public class A003606 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145716.
+ * A145716 Numbers Y such that 381*Y^2+127 is a square.
  * @author Sean A. Irvine
  */
 public class A145716 extends LinearRecurrence {

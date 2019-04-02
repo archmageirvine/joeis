@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153795.
+ * A153795 5 times octagonal numbers: a(n) = 5*n*(3*n-2).
  * @author Sean A. Irvine
  */
 public class A153795 extends LinearRecurrence {

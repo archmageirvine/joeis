@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296998.
+ * A296998 Number of ways to place 4 points on an n X n point grid so that no point is equally distant from two other points on the same row or the same column.
  * @author Sean A. Irvine
  */
 public class A296998 extends LinearRecurrence {

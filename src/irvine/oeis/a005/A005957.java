@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005957.
+ * A005957 Number of acyclic ketone and aldehyde stereo-isomers with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A005957 extends A000625 {

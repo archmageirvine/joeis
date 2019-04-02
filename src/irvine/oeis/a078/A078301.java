@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A078301.
+ * A078301 Decimal expansion of Planck mass.
  * @author Sean A. Irvine
  */
 public class A078301 extends DoubleDecimalExpansionSequence {

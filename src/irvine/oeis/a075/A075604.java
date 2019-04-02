@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A075604.
+ * A075604 Smallest number k such that there are exactly n relatively prime numbers using all digits of k.
  * @author Sean A. Irvine
  */
 public class A075604 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186424.
+ * A186424 Odd terms in A186423.
  * @author Sean A. Irvine
  */
 public class A186424 extends LinearRecurrence {

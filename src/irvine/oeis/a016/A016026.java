@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016026.
+ * A016026 Smallest base relative to which n is palindromic.
  * @author Sean A. Irvine
  */
 public class A016026 implements Sequence {

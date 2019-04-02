@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * A002905.
+ * A002905 Number of connected graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A002905 implements Sequence {

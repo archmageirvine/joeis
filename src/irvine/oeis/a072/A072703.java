@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072703.
+ * A072703 Indices of Fibonacci numbers whose last digit is 5.
  * @author Sean A. Irvine
  */
 public class A072703 extends LinearRecurrence {

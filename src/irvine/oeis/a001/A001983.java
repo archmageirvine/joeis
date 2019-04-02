@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A001983.
+ * A001983 Numbers that are the sum of 2 distinct squares: of form x^2 + y^2 with 0 &lt;= x &lt; y.
  * @author Sean A. Irvine
  */
 public class A001983 implements Sequence {

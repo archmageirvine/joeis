@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.ShallitSequence;
 
 /**
- * A020730.
+ * A020730 Pisot sequences L(3,7) or S(3,7).
  * @author Sean A. Irvine
  */
 public class A020730 extends ShallitSequence {

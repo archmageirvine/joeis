@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009710.
+ * A009710 E.g.f. tan(tan(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009710 implements Sequence {

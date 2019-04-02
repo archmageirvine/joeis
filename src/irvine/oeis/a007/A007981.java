@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007981.
+ * A007981 Number of nonsplit type 2 metacyclic 2-groups of order 2^n.
  * @author Sean A. Irvine
  */
 public class A007981 extends LinearRecurrence {

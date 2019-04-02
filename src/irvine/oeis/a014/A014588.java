@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a006.A006016;
 
 /**
- * A014588.
+ * A014588 Nim function for Take-a-Fibonacci-Game.
  * @author Sean A. Irvine
  */
 public class A014588 extends MemorySequence {

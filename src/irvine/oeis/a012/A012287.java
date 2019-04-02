@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012287.
+ * A012287 Expansion of e.g.f. arctanh(sin(x)*log(x+1))=2/2!*x^2-3/3!*x^3+4/4!*x^4-20/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012287 implements Sequence {

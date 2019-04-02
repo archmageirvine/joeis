@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001849.
+ * A001849 Crystal ball sequence for 7-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
 public class A001849 implements Sequence {

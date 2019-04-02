@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003161.
+ * A003161 A binomial coefficient sum.
  * @author Sean A. Irvine
  */
 public class A003161 implements Sequence {

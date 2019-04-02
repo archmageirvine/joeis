@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013762.
+ * A013762 a(n) = 18^(3*n + 1).
  * @author Sean A. Irvine
  */
 public class A013762 implements Sequence {

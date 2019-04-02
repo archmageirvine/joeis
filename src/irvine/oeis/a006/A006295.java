@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002420;
 import java.util.ArrayList;
 
 /**
- * A006295.
+ * A006295 Number of genus 1 rooted maps with 2 faces with n vertices.
  * @author Sean A. Irvine
  */
 public class A006295 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094649.
+ * A094649 An accelerator sequence for Catalan's constant.
  * @author Sean A. Irvine
  */
 public class A094649 extends LinearRecurrence {

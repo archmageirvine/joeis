@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015441.
+ * A015441 Generalized Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A015441 extends LinearRecurrence {

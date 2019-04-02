@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009474.
+ * A009474 a(n) is the concatenation of n and 9n.
  * @author Sean A. Irvine
  */
 public class A009474 implements Sequence {

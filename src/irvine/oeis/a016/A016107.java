@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A016107.
+ * A016107 Bachet's equation: X^2 + k = Y^3, k=999.
  * @author Sean A. Irvine
  */
 public class A016107 extends FiniteSequence {

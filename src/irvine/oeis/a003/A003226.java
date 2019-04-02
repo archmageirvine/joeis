@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003226.
+ * A003226 Automorphic numbers: m^2 ends with m.
  * @author Sean A. Irvine
  */
 public class A003226 implements Sequence {

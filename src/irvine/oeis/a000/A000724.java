@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000724.
+ * A000724 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000724 implements Sequence {

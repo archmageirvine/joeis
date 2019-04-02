@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175676.
+ * A175676 a(n) = binomial(n,3) mod n.
  * @author Sean A. Irvine
  */
 public class A175676 extends LinearRecurrence {

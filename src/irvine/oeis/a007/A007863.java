@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007863.
+ * A007863 Number of hybrid binary trees with n internal nodes.
  * @author Sean A. Irvine
  */
 public class A007863 implements Sequence {

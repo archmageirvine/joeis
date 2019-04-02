@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164870.
+ * A164870 The number of permutations of length n that can be sorted by 2 pop stacks in parallel.
  * @author Sean A. Irvine
  */
 public class A164870 extends LinearRecurrence {

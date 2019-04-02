@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014462.
+ * A014462 Triangular array formed from elements to left of middle of Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A014462 implements Sequence {

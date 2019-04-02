@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062781.
+ * A062781 Number of arithmetic progressions of four terms and any mean which can be extracted from the set of the first n positive integers.
  * @author Sean A. Irvine
  */
 public class A062781 extends LinearRecurrence {

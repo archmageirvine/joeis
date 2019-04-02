@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005730.
+ * A005730 Related to n-th powers of polynomials.
  * @author Sean A. Irvine
  */
 public class A005730 implements Sequence {

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * A003167.
+ * A003167 Number of n-dimensional cuboids with integral edge lengths for which volume = surface area.
  * @author Sean A. Irvine
  */
 public class A003167 implements Sequence {

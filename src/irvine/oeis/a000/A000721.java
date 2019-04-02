@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A000721.
+ * A000721 Number of balanced Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000721 implements Sequence {

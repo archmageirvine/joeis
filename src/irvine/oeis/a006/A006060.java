@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006060.
+ * A006060 Triangular star numbers.
  * @author Sean A. Irvine
  */
 public class A006060 implements Sequence {

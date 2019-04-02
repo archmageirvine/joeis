@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200310.
+ * A200310 a(n) = n-1 for n &lt;= 4, otherwise if n is even then a(n) = a(n-5)+2^(n/2), and if n is odd then a(n) = a(n-1)+2^((n-3)/2).
  * @author Sean A. Irvine
  */
 public class A200310 extends LinearRecurrence {

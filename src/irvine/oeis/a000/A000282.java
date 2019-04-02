@@ -8,7 +8,7 @@ import irvine.oeis.a054.A054747;
 import java.util.ArrayList;
 
 /**
- * A000282.
+ * A000282 Finite automata.
  * @author Sean A. Irvine
  */
 public class A000282 implements Sequence {

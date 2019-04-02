@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174325.
+ * A174325 Trisection A061037(3*n-2) of the Balmer spectrum numerators extended to negative indices.
  * @author Sean A. Irvine
  */
 public class A174325 extends LinearRecurrence {

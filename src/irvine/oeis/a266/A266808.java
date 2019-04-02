@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266808.
+ * A266808 Coefficient of x in the minimal polynomial of the continued fraction [1^n,sqrt(2)+sqrt(3),1,1,...], where 1^n means n ones.
  * @author Sean A. Irvine
  */
 public class A266808 extends LinearRecurrence {

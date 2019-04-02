@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012783.
+ * A012783 sin(sec(x)*arcsin(x))=x+3/3!*x^3+5/5!*x^5-889/7!*x^7-82167/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012783 implements Sequence {

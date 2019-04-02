@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A000926.
+ * A000926 Euler's "numerus idoneus" (or "numeri idonei", or idoneal, or suitable, or convenient numbers).
  * @author Sean A. Irvine
  */
 public class A000926 extends FiniteSequence {

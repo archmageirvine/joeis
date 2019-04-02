@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005871.
+ * A005871 Theta series of hexagonal close-packing with respect to edge within layer.
  * @author Sean A. Irvine
  */
 public class A005871 implements Sequence {

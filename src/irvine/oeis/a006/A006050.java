@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006050.
+ * A006050 Smallest number of additive persistence n.
  * @author Sean A. Irvine
  */
 public class A006050 implements Sequence {

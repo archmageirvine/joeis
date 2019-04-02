@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008456.
+ * A008456 12th powers: a(n) = n^12.
  * @author Sean A. Irvine
  */
 public class A008456 implements Sequence {

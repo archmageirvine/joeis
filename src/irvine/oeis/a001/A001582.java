@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000129;
 
 /**
- * A001582.
+ * A001582 Product of Fibonacci and Pell numbers.
  * @author Sean A. Irvine
  */
 public class A001582 implements Sequence {

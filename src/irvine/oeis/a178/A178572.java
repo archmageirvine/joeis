@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178572.
+ * A178572 Numbers with ordered partitions that have periods of length 5.
  * @author Sean A. Irvine
  */
 public class A178572 extends LinearRecurrence {

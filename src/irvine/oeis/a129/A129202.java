@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129202.
+ * A129202 Denominator of 3*(3+(-1)^n) / (n+1)^2.
  * @author Sean A. Irvine
  */
 public class A129202 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087483.
+ * A087483 Row 0 of the order array of 3/2, i.e., row 0 of the transposable dispersion in A087465.
  * @author Sean A. Irvine
  */
 public class A087483 extends LinearRecurrence {

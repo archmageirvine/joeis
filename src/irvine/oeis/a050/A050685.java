@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050685.
+ * A050685 Number of nonzero palindromes &lt; 10^n and containing at least one digit '0'.
  * @author Sean A. Irvine
  */
 public class A050685 extends LinearRecurrence {

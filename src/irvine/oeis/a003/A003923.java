@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003923.
+ * A003923 Order of universal Chevalley group B_n (2) or symplectic group Sp(2n,2).
  * @author Sean A. Irvine
  */
 public class A003923 extends A003920 {

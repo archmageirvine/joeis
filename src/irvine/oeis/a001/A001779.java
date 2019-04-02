@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001779.
+ * A001779 Expansion of 1/((1+x)(1-x)^8).
  * @author Sean A. Irvine
  */
 public class A001779 implements Sequence {

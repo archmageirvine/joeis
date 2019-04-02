@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012449.
+ * A012449 sinh(arctan(x)*tan(x))=2/2!*x^2+280/6!*x^6-2688/8!*x^8+774688/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A012449 implements Sequence {

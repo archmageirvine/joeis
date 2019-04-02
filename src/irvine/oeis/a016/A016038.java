@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016038.
+ * A016038 Strictly non-palindromic numbers: n is not palindromic in any base b with 2 &lt;= b &lt;= n-2.
  * @author Sean A. Irvine
  */
 public class A016038 implements Sequence {

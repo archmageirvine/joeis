@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018094.
+ * A018094 Powers of fourth root of 17 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018094 implements Sequence {

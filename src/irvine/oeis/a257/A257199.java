@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257199.
+ * A257199 a(n) = n*(n+1)*(n+2)*(n^2+2*n+17)/120.
  * @author Sean A. Irvine
  */
 public class A257199 extends LinearRecurrence {

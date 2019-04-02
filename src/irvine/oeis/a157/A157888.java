@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157888.
+ * A157888 a(n) = 81*n^2 + 9.
  * @author Sean A. Irvine
  */
 public class A157888 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A121591.
+ * A121591 Expansion of (eta(q^5) / eta(q))^6 in powers of q.
  * @author Sean A. Irvine
  */
 public class A121591 implements Sequence {

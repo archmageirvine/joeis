@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152133.
+ * A152133 Maximal length of rook tour on an n X n+2 board.
  * @author Sean A. Irvine
  */
 public class A152133 extends LinearRecurrence {

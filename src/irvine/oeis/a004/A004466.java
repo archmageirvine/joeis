@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004466.
+ * A004466 a(n) = n*(5*n^2 - 2)/3.
  * @author Sean A. Irvine
  */
 public class A004466 implements Sequence {

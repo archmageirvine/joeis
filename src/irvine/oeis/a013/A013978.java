@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A013978.
+ * A013978 Molien series of 4-dimensional representation of u.g.g.r. #8.
  * @author Sean A. Irvine
  */
 public class A013978 extends LinearRecurrence {

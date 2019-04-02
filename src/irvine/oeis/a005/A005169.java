@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005169.
+ * A005169 Number of fountains of n coins.
  * @author Sean A. Irvine
  */
 public class A005169 extends MemoryFunction2<Long, Z> implements Sequence {

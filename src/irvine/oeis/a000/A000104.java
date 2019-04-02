@@ -6,7 +6,7 @@ import irvine.math.Polyomino;
 
 
 /**
- * A000104.
+ * A000104 Number of n-celled polyominoes without holes.
  * @author Sean A. Irvine
  */
 public class A000104 extends A000105 {

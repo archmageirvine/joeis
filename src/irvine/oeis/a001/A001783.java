@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001783.
+ * A001783 n-phi-torial, or phi-torial of n: Product k, 1 &lt;= k &lt;= n, k relatively prime to n.
  * @author Sean A. Irvine
  */
 public class A001783 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A000414.
+ * A000414 Numbers that are the sum of 4 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000414 implements Sequence {

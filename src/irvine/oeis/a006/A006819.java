@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.a001.A001412;
 
 /**
- * A006819.
+ * A006819 Trails of length n on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A006819 extends A001412 {

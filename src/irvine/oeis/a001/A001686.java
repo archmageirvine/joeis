@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A001686.
+ * A001686 From a continued fraction.
  * @author Sean A. Irvine
  */
 public class A001686 extends A001684 {

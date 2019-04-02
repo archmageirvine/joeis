@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192797.
+ * A192797 Molecular topological indices of the cycle graphs.
  * @author Sean A. Irvine
  */
 public class A192797 extends LinearRecurrence {

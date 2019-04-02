@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020528.
+ * A020528 3rd Bernoulli polynomial evaluated at powers of 2 (multiplied by 6).
  * @author Sean A. Irvine
  */
 public class A020528 extends LinearRecurrence {

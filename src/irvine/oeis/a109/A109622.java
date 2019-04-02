@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A109622.
+ * A109622 Number of different isotemporal classes of diasters with n peripheral edges.
  * @author Sean A. Irvine
  */
 public class A109622 implements Sequence {

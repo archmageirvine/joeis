@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013051.
+ * A013051 tanh(sinh(x)+tan(x))=2*x-13/3!*x^3+289/5!*x^5-13039/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013051 implements Sequence {

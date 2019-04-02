@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003734.
+ * A003734 Number of spanning trees with degrees 1 and 3 in C_5 X P_2n.
  * @author Sean A. Irvine
  */
 public class A003734 extends LinearRecurrence {

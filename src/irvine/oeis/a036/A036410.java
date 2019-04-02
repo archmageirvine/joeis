@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036410.
+ * A036410 G.f.: (1+x^6)/((1-x)*(1-x^3)*(1-x^4)).
  * @author Sean A. Irvine
  */
 public class A036410 extends LinearRecurrence {

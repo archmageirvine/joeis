@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Phi2TransformSequence;
 
 /**
- * A006211.
+ * A006211 Generalized Fibonacci numbers D_{n,3}.
  * @author Sean A. Irvine
  */
 public class A006211 extends Phi2TransformSequence {

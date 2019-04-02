@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276659.
+ * A276659 Accumulation of the upper left triangle used in binomial transform of nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A276659 extends LinearRecurrence {

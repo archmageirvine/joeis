@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005255.
+ * A005255 Atkinson-Negro-Santoro sequence: a(n+1) = 2a(n) - a(n-floor(n/2+1)).
  * @author Sean A. Irvine
  */
 public class A005255 extends MemorySequence {

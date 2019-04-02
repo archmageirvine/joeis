@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004719.
+ * A004719 Delete all 0's from n.
  * @author Sean A. Irvine
  */
 public class A004719 implements Sequence {

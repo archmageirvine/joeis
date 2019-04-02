@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012023.
+ * A012023 Expansion of e.g.f. cos(sin(arctan(x))) (even powers).
  * @author Sean A. Irvine
  */
 public class A012023 implements Sequence {

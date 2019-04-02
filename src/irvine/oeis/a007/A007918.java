@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007918.
+ * A007918 Least prime &gt;= n (version 1 of the "next prime" function).
  * @author Sean A. Irvine
  */
 public class A007918 implements Sequence {

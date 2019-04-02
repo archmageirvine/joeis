@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056453.
+ * A056453 Number of palindromes of length n using exactly two different symbols.
  * @author Sean A. Irvine
  */
 public class A056453 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215878.
+ * A215878 Lengths of loops in the P2 Penrose tiling.
  * @author Sean A. Irvine
  */
 public class A215878 extends LinearRecurrence {

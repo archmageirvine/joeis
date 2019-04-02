@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165910.
+ * A165910 Wiener indices of Fibonacci trees of order k.
  * @author Sean A. Irvine
  */
 public class A165910 extends LinearRecurrence {

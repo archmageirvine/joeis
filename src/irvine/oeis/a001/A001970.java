@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001970.
+ * A001970 Functional determinants; partitions of partitions; Euler transform applied twice to all 1's sequence.
  * @author Sean A. Irvine
  */
 public class A001970 extends MemorySequence {

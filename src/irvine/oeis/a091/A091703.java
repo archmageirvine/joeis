@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091703.
+ * A091703 Count, setting 5n to zero.
  * @author Sean A. Irvine
  */
 public class A091703 extends LinearRecurrence {

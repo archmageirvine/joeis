@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A178963.
+ * A178963 E.g.f.: (3+2*sqrt(3)*exp(x/2)*sin(sqrt(3)*x/2))/(exp(-x)+2*exp(x/2)*cos(sqrt(3)*x/2)).
  * @author Sean A. Irvine
  */
 public class A178963 implements Sequence {

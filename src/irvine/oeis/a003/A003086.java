@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003086.
+ * A003086 Number of self-complementary digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003086 implements Sequence {

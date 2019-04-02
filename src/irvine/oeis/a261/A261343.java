@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261343.
+ * A261343 50-gonal numbers: a(n) = 48*n*(n-1)/2 + n.
  * @author Sean A. Irvine
  */
 public class A261343 extends LinearRecurrence {

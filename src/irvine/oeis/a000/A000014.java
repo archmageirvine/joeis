@@ -8,7 +8,7 @@ import irvine.oeis.a059.A059123;
 import java.util.ArrayList;
 
 /**
- * A000014.
+ * A000014 Number of series-reduced trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000014 implements Sequence {

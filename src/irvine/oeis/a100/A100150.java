@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100150.
+ * A100150 Structured snub cubic numbers.
  * @author Sean A. Irvine
  */
 public class A100150 extends LinearRecurrence {

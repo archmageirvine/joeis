@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002316.
+ * A002316 Related to Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A002316 extends LinearRecurrence {

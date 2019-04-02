@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007919.
+ * A007919 Smallest k such that k*n is a double factorial.
  * @author Sean A. Irvine
  */
 public class A007919 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001993.
+ * A001993 Number of two-rowed partitions of length 3.
  * @author Sean A. Irvine
  */
 public class A001993 implements Sequence {

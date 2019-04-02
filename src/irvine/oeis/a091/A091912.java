@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013523;
 
 /**
- * A091912.
+ * A091912 Numerators of Taylor series for log(tan(x)+1/cos(x)).
  * @author Sean A. Irvine
  */
 public class A091912 extends A013523 {

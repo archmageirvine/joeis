@@ -3,7 +3,7 @@ package irvine.oeis.a012;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A012884.
+ * A012884 Numbers such that every prefix and suffix is 1 or a prime.
  * @author Sean A. Irvine
  */
 public class A012884 extends FiniteSequence {

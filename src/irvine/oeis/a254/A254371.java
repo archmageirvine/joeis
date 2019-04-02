@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254371.
+ * A254371 Sum of cubes of the first n even numbers (A016743).
  * @author Sean A. Irvine
  */
 public class A254371 extends LinearRecurrence {

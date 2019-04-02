@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129109.
+ * A129109 Sums of three consecutive hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A129109 extends LinearRecurrence {

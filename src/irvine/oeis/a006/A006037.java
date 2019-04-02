@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006037.
+ * A006037 Weird numbers: abundant (A005101) but not pseudoperfect (A005835).
  * @author Sean A. Irvine
  */
 public class A006037 implements Sequence {

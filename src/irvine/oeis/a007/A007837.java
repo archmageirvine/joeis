@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a182.A182927;
 
 /**
- * A007837.
+ * A007837 Number of partitions of n-set with distinct block sizes.
  * @author Sean A. Irvine
  */
 public class A007837 extends MemorySequence {

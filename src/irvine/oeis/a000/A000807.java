@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000807.
+ * A000807 Quadratic invariants.
  * @author Sean A. Irvine
  */
 public class A000807 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000217;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018855.
+ * A018855 Smallest triangular number that begins with n.
  * @author Sean A. Irvine
  */
 public class A018855 extends A000217 {

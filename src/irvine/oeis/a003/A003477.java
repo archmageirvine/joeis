@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003477.
+ * A003477 Expansion of 1/((1-2x)(1+x^2)(1-x-2x^3)).
  * @author Sean A. Irvine
  */
 public class A003477 extends LinearRecurrence {

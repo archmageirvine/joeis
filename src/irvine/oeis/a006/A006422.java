@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006422.
+ * A006422 Number of rooted toroidal maps.
  * @author Sean A. Irvine
  */
 public class A006422 implements Sequence {

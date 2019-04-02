@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010088.
+ * A010088 Weight distribution of d=3 Hamming code of length 127.
  * @author Sean A. Irvine
  */
 public class A010088 extends FiniteSequence {

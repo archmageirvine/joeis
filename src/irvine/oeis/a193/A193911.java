@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193911.
+ * A193911 Sums of the diagonals of the matrix formed by listing the h-Stohr sequences in increasing order.
  * @author Sean A. Irvine
  */
 public class A193911 extends LinearRecurrence {

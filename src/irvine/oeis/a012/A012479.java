@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012479.
+ * A012479 sech(cos(x)*sin(x))=1-1/2!*x^2+21/4!*x^4-717/6!*x^6+46025/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012479 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A067182.
+ * A067182 Smallest Fibonacci number with digit sum n, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A067182 extends A000045 {

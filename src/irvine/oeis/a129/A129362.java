@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129362.
+ * A129362 a(n) = sum{k=floor((n+1)/2)..n, J(k+1)}, J(n) = A001045(n).
  * @author Sean A. Irvine
  */
 public class A129362 extends LinearRecurrence {

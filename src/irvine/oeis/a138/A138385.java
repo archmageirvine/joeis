@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A138385.
+ * A138385 Number of smaller Fibonacci numbers contained in the n-th Fibonacci number in its decimal representation.
  * @author Sean A. Irvine
  */
 public class A138385 extends A000045 {

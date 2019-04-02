@@ -5,7 +5,7 @@ import irvine.oeis.a022.A022838;
 import irvine.oeis.a054.A054406;
 
 /**
- * A014245.
+ * A014245 (n-th term of Beatty sequence for (3+sqrt(3))/2) - (n-th term of Beatty sequence for sqrt(3)).
  * @author Sean A. Irvine
  */
 public class A014245 extends A054406 {

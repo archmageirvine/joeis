@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006344.
+ * A006344 Number of rooted maps with n edges on Klein bottle.
  * @author Sean A. Irvine
  */
 public class A006344 implements Sequence {

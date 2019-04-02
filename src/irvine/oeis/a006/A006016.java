@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A006016.
+ * A006016 The nim value for the game of Sym with n tails and 1 head.
  * @author Sean A. Irvine
  */
 public class A006016 implements Sequence {

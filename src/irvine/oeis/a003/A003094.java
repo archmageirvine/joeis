@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A003094.
+ * A003094 Number of unlabeled connected planar simple graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003094 implements Sequence, GraphProcessor {

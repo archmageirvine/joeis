@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017993.
+ * A017993 Powers of cube root of 6 rounded up.
  * @author Sean A. Irvine
  */
 public class A017993 implements Sequence {

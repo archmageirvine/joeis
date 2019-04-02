@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.IntegerUtils;
 
 /**
- * A000088.
+ * A000088 Number of graphs on n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A000088 extends A000273 {

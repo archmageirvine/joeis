@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033439.
+ * A033439 Number of edges in 7-partite Tur&#225;n graph of order n.
  * @author Sean A. Irvine
  */
 public class A033439 extends LinearRecurrence {

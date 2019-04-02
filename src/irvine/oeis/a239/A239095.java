@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239095.
+ * A239095 a(n) = (n^7 - 21*n^3 + 20*n)/210.
  * @author Sean A. Irvine
  */
 public class A239095 extends LinearRecurrence {

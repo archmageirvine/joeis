@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271638.
+ * A271638 The total sum of the cubes of all parts of all compositions of n.
  * @author Sean A. Irvine
  */
 public class A271638 extends LinearRecurrence {

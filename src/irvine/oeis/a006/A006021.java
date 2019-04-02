@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006021.
+ * A006021 The game of contours.
  * @author Sean A. Irvine
  */
 public class A006021 extends MemoryFunction<Long, Long> implements Sequence {

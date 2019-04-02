@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A001619.
+ * A001619 Number of letters in English name for n increases at these numbers.
  * @author Sean A. Irvine
  */
 public class A001619 implements Sequence {

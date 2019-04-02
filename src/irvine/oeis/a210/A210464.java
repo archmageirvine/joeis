@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210464.
+ * A210464 Number of bracelets with 2 blue, 2 red, and n black beads.
  * @author Sean A. Irvine
  */
 public class A210464 extends LinearRecurrence {

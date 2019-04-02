@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001365.
+ * A001365 Expansion of 1/(1-x)^2/(1-x^2)/(1-x^6)/(1-x^12)/(1-x^24)/(1-x^48)/(1-x^60).
  * @author Sean A. Irvine
  */
 public class A001365 extends A001312 {

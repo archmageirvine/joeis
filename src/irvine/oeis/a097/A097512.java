@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097512.
+ * A097512 a(n) = 6*Lucas(2n) - Fib(2n+2).
  * @author Sean A. Irvine
  */
 public class A097512 extends LinearRecurrence {

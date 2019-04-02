@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013406.
+ * A013406 sech(arcsin(x)-tan(x))=1-10/6!*x^6-392/8!*x^8-11814/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013406 implements Sequence {

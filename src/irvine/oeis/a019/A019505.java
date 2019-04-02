@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019505.
+ * A019505 a(n) is smallest number with same number of divisors as 2*a(n-1).
  * @author Sean A. Irvine
  */
 public class A019505 implements Sequence {

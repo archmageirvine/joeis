@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097163.
+ * A097163 Expansion of (1+x-x^2)/((1-x)*(1-4*x^2)).
  * @author Sean A. Irvine
  */
 public class A097163 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100050.
+ * A100050 A Chebyshev transform of n.
  * @author Sean A. Irvine
  */
 public class A100050 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007021.
+ * A007021 Number of 4-connected simplicial polyhedra with n nodes.
  * @author Sean A. Irvine
  */
 public class A007021 implements Sequence {

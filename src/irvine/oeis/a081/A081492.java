@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081492.
+ * A081492 Sum of terms in n-th row of A081491.
  * @author Sean A. Irvine
  */
 public class A081492 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006014.
+ * A006014 a(n+1) = (n+1)*a(n)+ Sum a(k)*a(n-k).
  * @author Sean A. Irvine
  */
 public class A006014 extends MemorySequence {

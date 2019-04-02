@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163279.
+ * A163279 a(n) = (n^6 + 2n^5 + 2n^4 + n^3 + 2n)/2.
  * @author Sean A. Irvine
  */
 public class A163279 extends LinearRecurrence {

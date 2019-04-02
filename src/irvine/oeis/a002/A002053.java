@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002053.
+ * A002053 a(n) = least value of m for which Liouville's function A002819(m) = -n.
  * @author Sean A. Irvine
  */
 public class A002053 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279284.
+ * A279284 A self-composition of the pentagonal numbers: A(x) = G(G(x)), where G(x) = g.f. of A000326.
  * @author Sean A. Irvine
  */
 public class A279284 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120775.
+ * A120775 The (3,1)-entry of the matrix M^n, where M is the 3 X 3 matrix [0,1,1; 2,1,2; 1,2,2] (n&gt;=1).
  * @author Sean A. Irvine
  */
 public class A120775 extends LinearRecurrence {

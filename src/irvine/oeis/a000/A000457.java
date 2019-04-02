@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000457.
+ * A000457 Exponential generating function: (1+3*x)/(1-2*x)^(7/2).
  * @author Sean A. Irvine
  */
 public class A000457 implements Sequence {

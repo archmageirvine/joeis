@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213432.
+ * A213432 2^(n-3)*binomial(n,4).
  * @author Sean A. Irvine
  */
 public class A213432 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257710.
+ * A257710 Numbers n such that T(n) + T(n+1) + ... + T(n+36) is a square, where T = A000217 (triangular numbers).
  * @author Sean A. Irvine
  */
 public class A257710 extends LinearRecurrence {

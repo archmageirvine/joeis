@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005131.
+ * A005131 A generalized continued fraction for Euler's number e.
  * @author Sean A. Irvine
  */
 public class A005131 implements Sequence {

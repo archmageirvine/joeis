@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080924.
+ * A080924 Jacobsthal gap sequence.
  * @author Sean A. Irvine
  */
 public class A080924 extends LinearRecurrence {

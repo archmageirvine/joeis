@@ -8,7 +8,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A051168.
+ * A051168 Triangular array T(h,k) for 0 &lt;= k &lt;= h read by rows: T(h,k) = number of binary Lyndon words with k ones and h-k zeros.
  * @author Sean A. Irvine
  */
 public class A051168 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.io.Serializable;
 
 /**
- * A004396.
+ * A004396 One even number followed by two odd numbers.
  * @author Sean A. Irvine
  */
 public class A004396 implements Sequence, Serializable {

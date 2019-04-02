@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238537.
+ * A238537 A fourth-order linear divisibility sequence related to the Pell numbers.
  * @author Sean A. Irvine
  */
 public class A238537 extends LinearRecurrence {

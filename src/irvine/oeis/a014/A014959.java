@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014959.
+ * A014959 Numbers n such that n divides s(n), where s(1)=1, s(k)=s(k-1)+k*22^(k-1).
  * @author Sean A. Irvine
  */
 public class A014959 implements Sequence {

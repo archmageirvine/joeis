@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A002762.
+ * A002762 Number of bipartite partitions.
  * @author Sean A. Irvine
  */
 public class A002762 implements Sequence {

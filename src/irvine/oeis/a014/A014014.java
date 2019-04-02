@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a061.A061233;
 
 /**
- * A014014.
+ * A014014 Alternating Engel expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A014014 extends PrependSequence {

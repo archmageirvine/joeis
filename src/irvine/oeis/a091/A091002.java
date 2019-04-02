@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091002.
+ * A091002 Number of walks of length n between non-adjacent nodes on the Petersen graph.
  * @author Sean A. Irvine
  */
 public class A091002 extends LinearRecurrence {

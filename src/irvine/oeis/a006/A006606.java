@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006606.
+ * A006606 Nonperiodic autocorrelation functions of length n.
  * @author Sean A. Irvine
  */
 public class A006606 implements Sequence {

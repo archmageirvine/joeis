@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013918.
+ * A013918 Primes equal to the sum of the first k primes for some k.
  * @author Sean A. Irvine
  */
 public class A013918 implements Sequence {

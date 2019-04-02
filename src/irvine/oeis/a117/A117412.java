@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117412.
+ * A117412 Sum of the interior angles of an n-sided polygon, in gradians.
  * @author Sean A. Irvine
  */
 public class A117412 extends LinearRecurrence {

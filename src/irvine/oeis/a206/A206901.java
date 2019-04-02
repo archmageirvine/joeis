@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206901.
+ * A206901 Number of nonisomorphic graded posets with 0 of rank n with no 3-element antichain.
  * @author Sean A. Irvine
  */
 public class A206901 extends LinearRecurrence {

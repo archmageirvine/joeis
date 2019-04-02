@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086953.
+ * A086953 Binomial transform of (-1)^mod(n,3) (A257075).
  * @author Sean A. Irvine
  */
 public class A086953 extends LinearRecurrence {

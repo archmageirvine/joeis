@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A007298.
+ * A007298 Sums of consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A007298 implements Sequence {

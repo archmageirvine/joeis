@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A005639.
+ * A005639 Number of self-converse oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A005639 implements Sequence {

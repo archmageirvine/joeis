@@ -4,7 +4,7 @@ import irvine.oeis.BinomialTransformSequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A006930.
+ * A006930 Binomial transform of rooted tree numbers.
  * @author Sean A. Irvine
  */
 public class A006930 extends BinomialTransformSequence {

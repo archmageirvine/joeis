@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008281.
+ * A008281 Triangle of Euler-Bernoulli or Entringer numbers read by rows.
  * @author Sean A. Irvine
  */
 public class A008281 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A088265.
+ * A088265 Numbers of the form 10^n + 1, 3, 7, or 9 for n&gt;=1.
  * @author Sean A. Irvine
  */
 public class A088265 implements Sequence {

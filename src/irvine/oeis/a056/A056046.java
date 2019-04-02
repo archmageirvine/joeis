@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056046.
+ * A056046 Number of 3-antichain covers of a labeled n-set.
  * @author Sean A. Irvine
  */
 public class A056046 extends LinearRecurrence {

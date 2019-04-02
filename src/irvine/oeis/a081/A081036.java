@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081036.
+ * A081036 9th binomial transform of the periodic sequence (1,10,1,1,10,1...).
  * @author Sean A. Irvine
  */
 public class A081036 extends LinearRecurrence {

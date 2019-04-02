@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A210687.
+ * A210687 The number of triangles in an equipotential triangle divided by medians into n rows of smaller triangles.
  * @author Sean A. Irvine
  */
 public class A210687 implements Sequence {

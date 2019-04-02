@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A007054.
+ * A007054 Super ballot numbers: 6(2n)!/(n!(n+2)!).
  * @author Sean A. Irvine
  */
 public class A007054 extends A000108 {

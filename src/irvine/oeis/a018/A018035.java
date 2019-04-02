@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018035.
+ * A018035 Powers of cube root of 20 rounded up.
  * @author Sean A. Irvine
  */
 public class A018035 implements Sequence {

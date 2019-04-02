@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010034.
+ * A010034 Numbers n such that GCD (n^17 + 9, (n+1)^17 + 9) &gt; 1.
  * @author Sean A. Irvine
  */
 public class A010034 implements Sequence {

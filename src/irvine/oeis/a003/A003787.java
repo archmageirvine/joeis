@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003787.
+ * A003787 Order of universal Chevalley group A_n (3).
  * @author Sean A. Irvine
  */
 public class A003787 implements Sequence {

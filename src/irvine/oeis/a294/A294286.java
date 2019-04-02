@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294286.
+ * A294286 Sum of the squares of the parts in the partitions of n into two distinct parts.
  * @author Sean A. Irvine
  */
 public class A294286 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001850.
+ * A001850 Central Delannoy numbers: a(n) = Sum_{k=0..n} C(n,k)*C(n+k,k).
  * @author Sean A. Irvine
  */
 public class A001850 implements Sequence {

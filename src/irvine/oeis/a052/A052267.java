@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052267.
+ * A052267 Number of 2 X n matrices over GF(3) under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A052267 extends LinearRecurrence {

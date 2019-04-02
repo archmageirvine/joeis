@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167574.
+ * A167574 The fourth row of the ED3 array A167572.
  * @author Sean A. Irvine
  */
 public class A167574 extends LinearRecurrence {

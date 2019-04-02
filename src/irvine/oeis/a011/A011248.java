@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A011248.
+ * A011248 Twice A000364.
  * @author Sean A. Irvine
  */
 public class A011248 extends A000364 {

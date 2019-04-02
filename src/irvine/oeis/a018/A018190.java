@@ -35,7 +35,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018190.
+ * A018190 Number of planar simply-connected polyhexes (or benzenoid hydrocarbons) with n hexagons.
  * @author Gunnar Brinkmann
  * @author Gilles Caporossi
  * @author Nicolas Van Cleemput

@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028895.
+ * A028895 5 times triangular numbers: a(n) = 5*n*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A028895 extends LinearRecurrence {

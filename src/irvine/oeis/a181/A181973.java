@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181973.
+ * A181973 Prime-generating polynomial: 16*n^2 - 300*n + 1447.
  * @author Sean A. Irvine
  */
 public class A181973 extends LinearRecurrence {

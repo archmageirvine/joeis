@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287583.
+ * A287583 Number of set partitions of [n] such that all absolute differences between least elements of consecutive blocks and between consecutive elements within the blocks are not larger than four.
  * @author Sean A. Irvine
  */
 public class A287583 extends LinearRecurrence {

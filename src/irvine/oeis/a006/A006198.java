@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000806;
 
 /**
- * A006198.
+ * A006198 Number of partitions into pairs.
  * @author Sean A. Irvine
  */
 public class A006198 extends A000806 {

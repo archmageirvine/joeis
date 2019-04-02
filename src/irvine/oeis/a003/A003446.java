@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A003446.
+ * A003446 Number of nonequivalent dissections of a polygon into n triangles by nonintersecting diagonals rooted at a cell up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A003446 extends A000108 {

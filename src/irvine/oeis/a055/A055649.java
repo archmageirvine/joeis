@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055649.
+ * A055649 Integers in base 11 with each base 11 digit represented by 2 decimal digits.
  * @author Sean A. Irvine
  */
 public class A055649 extends LinearRecurrence {

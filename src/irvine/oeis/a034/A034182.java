@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034182.
+ * A034182 Number of not-necessarily-symmetric n X 2 crossword puzzle grids.
  * @author Sean A. Irvine
  */
 public class A034182 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014298.
+ * A014298 2^n * (3n)! / (2n+1)!.
  * @author Sean A. Irvine
  */
 public class A014298 implements Sequence {

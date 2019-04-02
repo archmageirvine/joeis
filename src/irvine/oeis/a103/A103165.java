@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103165.
+ * A103165 Pentagonal 13-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A103165 extends LinearRecurrence {

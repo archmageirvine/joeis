@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266087.
+ * A266087 Alternating sum of 11-gonal (or hendecagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A266087 extends LinearRecurrence {

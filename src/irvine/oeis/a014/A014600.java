@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000003;
 
 /**
- * A014600.
+ * A014600 Class numbers h(D) of imaginary quadratic fields with discriminant D=0,1 mod 4, D&lt;0.
  * @author Sean A. Irvine
  */
 public class A014600 extends A000003 {

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033547.
+ * A033547 Otto Haxel's guess for magic numbers of nuclear shells.
  * @author Sean A. Irvine
  */
 public class A033547 extends LinearRecurrence {

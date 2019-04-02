@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001235.
+ * A001235 Taxi-cab numbers: sums of 2 cubes in more than 1 way.
  * @author Sean A. Irvine
  */
 public class A001235 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290494.
+ * A290494 Number of irredundant sets in the n-wheel graph.
  * @author Sean A. Irvine
  */
 public class A290494 extends LinearRecurrence {

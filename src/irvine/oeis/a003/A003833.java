@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A003833.
+ * A003833 Sectors around outside of darts board.
  * @author Sean A. Irvine
  */
 public class A003833 extends PeriodicSequence {

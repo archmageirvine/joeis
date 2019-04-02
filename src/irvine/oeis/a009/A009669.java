@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009669.
+ * A009669 Expansion of tan(sin(x))/cosh(x).
  * @author Sean A. Irvine
  */
 public class A009669 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008685.
+ * A008685 Lengths of months in the Gregorian calendar.
  * @author Sean A. Irvine
  */
 public class A008685 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013354.
+ * A013354 arctan(sin(x)-tan(x))=-3/3!*x^3-15/5!*x^5-273/7!*x^7+7185/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013354 implements Sequence {

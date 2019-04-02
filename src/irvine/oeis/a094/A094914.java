@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094914.
+ * A094914 Absolute value of n^2 + n - 1354363.
  * @author Sean A. Irvine
  */
 public class A094914 extends LinearRecurrence {

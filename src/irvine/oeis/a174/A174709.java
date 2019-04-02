@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174709.
+ * A174709 Partial sums of floor(n/6).
  * @author Sean A. Irvine
  */
 public class A174709 extends LinearRecurrence {

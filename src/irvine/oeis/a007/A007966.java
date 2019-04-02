@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007966.
+ * A007966 First factor in happy factorization of n.
  * @author Sean A. Irvine
  */
 public class A007966 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239285.
+ * A239285 a(n) = (15^n - (-2)^n)/17.
  * @author Sean A. Irvine
  */
 public class A239285 extends LinearRecurrence {

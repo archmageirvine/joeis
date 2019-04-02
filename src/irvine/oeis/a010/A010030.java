@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010030.
+ * A010030 Irregular triangle read by rows: T(n,k) (n &gt;= 1, 0 &lt;= k &lt;= [n/2]) = number of permutations of 1..n with [n/2]-k runs of consecutive pairs up and down (divided by 2).
  * @author Sean A. Irvine
  */
 public class A010030 implements Sequence {

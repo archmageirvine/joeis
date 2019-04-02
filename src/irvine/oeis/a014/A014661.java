@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014661.
+ * A014661 Numbers that do not divide 2^k + 1 for any k&gt;0.
  * @author Sean A. Irvine
  */
 public class A014661 implements Sequence {

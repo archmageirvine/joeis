@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016274.
+ * A016274 Fractional part of tan(n) decreases monotonically to 0.
  * @author Sean A. Irvine
  */
 public class A016274 implements Sequence {

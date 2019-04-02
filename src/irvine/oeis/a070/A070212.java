@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070212.
+ * A070212 Number of 5 X 5 pandiagonal magic squares with sum n.
  * @author Sean A. Irvine
  */
 public class A070212 extends LinearRecurrence {

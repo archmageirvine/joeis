@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013999.
+ * A013999 From applying the "rational mean" to the number e.
  * @author Sean A. Irvine
  */
 public class A013999 implements Sequence {

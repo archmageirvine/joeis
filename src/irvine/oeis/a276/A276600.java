@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276600.
+ * A276600 Values of n such that n^2 + 6 is a triangular number (A000217).
  * @author Sean A. Irvine
  */
 public class A276600 extends LinearRecurrence {

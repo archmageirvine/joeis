@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056487.
+ * A056487 a(n) = 5^(n/2) for n even, a(n) = 3*5^((n-1)/2) for n odd.
  * @author Sean A. Irvine
  */
 public class A056487 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091281.
+ * A091281 Central term in powers of the Lo-Shu Magic Square as a matrix.
  * @author Sean A. Irvine
  */
 public class A091281 extends LinearRecurrence {

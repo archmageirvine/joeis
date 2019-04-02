@@ -3,7 +3,7 @@ package irvine.oeis.a207;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A207361.
+ * A207361 Displacement under constant discrete unit surge.
  * @author Sean A. Irvine
  */
 public class A207361 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008954.
+ * A008954 Final digit of triangular number n*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A008954 extends PeriodicSequence {

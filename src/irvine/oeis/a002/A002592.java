@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002592.
+ * A002592 Largest prime factor of 9^n + 1.
  * @author Sean A. Irvine
  */
 public class A002592 implements Sequence {

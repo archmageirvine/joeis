@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200724.
+ * A200724 Expansion of 1/(1-35*x+x^2).
  * @author Sean A. Irvine
  */
 public class A200724 extends LinearRecurrence {

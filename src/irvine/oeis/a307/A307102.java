@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307102.
+ * A307102 Numbers written in base of double factorial numbers (A006882).
  * @author Sean A. Irvine
  */
 public class A307102 implements Sequence {

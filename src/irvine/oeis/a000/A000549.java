@@ -6,7 +6,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a001.A001481;
 
 /**
- * A000549.
+ * A000549 Numbers that are the sum of 2 squares but not sum of 3 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000549 extends IntersectionSequence {

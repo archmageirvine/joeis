@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293644.
+ * A293644 a(n) is the integer k that minimizes |k/Fibonacci(n) - 3/5|.
  * @author Sean A. Irvine
  */
 public class A293644 extends LinearRecurrence {

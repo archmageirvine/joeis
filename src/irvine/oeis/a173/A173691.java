@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173691.
+ * A173691 Partial sums of round(n^2/6).
  * @author Sean A. Irvine
  */
 public class A173691 extends LinearRecurrence {

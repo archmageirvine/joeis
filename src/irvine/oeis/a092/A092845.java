@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a011.A011545;
 
 /**
- * A092845.
+ * A092845 A011545(n) reversed.
  * @author Sean A. Irvine
  */
 public class A092845 extends A011545 {

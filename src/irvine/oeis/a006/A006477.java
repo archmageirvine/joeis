@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006477.
+ * A006477 Number of partitions of n with at least 1 odd and 1 even part.
  * @author Sean A. Irvine
  */
 public class A006477 implements Sequence {

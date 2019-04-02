@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007797.
+ * A007797 List of pairs of primes in reverse order.
  * @author Sean A. Irvine
  */
 public class A007797 implements Sequence {

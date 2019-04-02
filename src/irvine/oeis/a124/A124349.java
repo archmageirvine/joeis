@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124349.
+ * A124349 Numbers of directed Hamiltonian cycles on the n-prism graph.
  * @author Sean A. Irvine
  */
 public class A124349 extends LinearRecurrence {

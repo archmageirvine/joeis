@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195793.
+ * A195793 Decimal expansion of arctan(1000000).
  * @author Sean A. Irvine
  */
 public class A195793 extends DecimalExpansionSequence {

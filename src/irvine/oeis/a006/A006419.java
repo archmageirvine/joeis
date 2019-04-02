@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006419.
+ * A006419 a(n) = 2^(2*n+1) - C(2*n+3,n+1) + C(2*n+1,n).
  * @author Sean A. Irvine
  */
 public class A006419 implements Sequence {

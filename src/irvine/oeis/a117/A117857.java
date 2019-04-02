@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117857.
+ * A117857 Number of palindromes of length n (in base 5).
  * @author Sean A. Irvine
  */
 public class A117857 extends LinearRecurrence {

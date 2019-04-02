@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056570.
+ * A056570 Third power of Fibonacci numbers (A000045).
  * @author Sean A. Irvine
  */
 public class A056570 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048903.
+ * A048903 Heptagonal hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A048903 extends LinearRecurrence {

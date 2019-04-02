@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017683.
+ * A017683 Numerator of sum of -10th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017683 implements Sequence {

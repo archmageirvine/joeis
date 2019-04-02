@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004671.
+ * A004671 Theta series of extremal even unimodular lattice in dimension 40.
  * @author Sean A. Irvine
  */
 public class A004671 implements Sequence {

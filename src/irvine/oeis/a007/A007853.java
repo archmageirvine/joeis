@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007853.
+ * A007853 Number of maximal antichains in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007853 implements Sequence {

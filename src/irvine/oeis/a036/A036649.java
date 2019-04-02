@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036649.
+ * A036649 Number of bicentered 5-valent trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A036649 implements Sequence {

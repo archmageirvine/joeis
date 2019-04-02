@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001383;
 
 /**
- * A000306.
+ * A000306 Number of trees of diameter 8.
  * @author Sean A. Irvine
  */
 public class A000306 implements Sequence {

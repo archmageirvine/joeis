@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272647.
+ * A272647 a(n) = A001517(n) mod 7.
  * @author Sean A. Irvine
  */
 public class A272647 extends LinearRecurrence {

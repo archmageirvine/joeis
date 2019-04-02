@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003108.
+ * A003108 Number of partitions of n into cubes.
  * @author Sean A. Irvine
  */
 public class A003108 implements Sequence {

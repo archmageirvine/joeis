@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012739.
+ * A012739 sin(arctanh(x)*cos(x))=x-2/3!*x^3+20/5!*x^5-16/7!*x^7+14096/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012739 implements Sequence {

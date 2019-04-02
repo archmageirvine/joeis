@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004232.
+ * A004232 a(n) = n^2 + prime(n).
  * @author Sean A. Irvine
  */
 public class A004232 implements Sequence {

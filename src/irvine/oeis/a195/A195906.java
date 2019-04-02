@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195906.
+ * A195906 A periodic sequence.
  * @author Sean A. Irvine
  */
 public class A195906 extends LinearRecurrence {

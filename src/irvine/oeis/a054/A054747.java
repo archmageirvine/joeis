@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054747.
+ * A054747 Number of inequivalent n-state 2-input 2-output automata with respect to an input permutation.
  * @author Sean A. Irvine
  */
 public class A054747 implements Sequence {

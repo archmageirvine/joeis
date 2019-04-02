@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249169.
+ * A249169 Fibonacci 16-step numbers, a(n) = a(n-1) + a(n-2) + ... + a(n-16).
  * @author Sean A. Irvine
  */
 public class A249169 extends LinearRecurrence {

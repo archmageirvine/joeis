@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010771.
+ * A010771 Decimal expansion of 9th root of 2.
  * @author Sean A. Irvine
  */
 public class A010771 extends DecimalExpansionSequence {

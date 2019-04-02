@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000931;
 
 /**
- * A007383.
+ * A007383 Number of strict first-order maximal independent sets in path graph.
  * @author Sean A. Irvine
  */
 public class A007383 extends A000931 {

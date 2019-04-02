@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A138561.
+ * A138561 Start with the list {1}; for each n &gt;= 1, append p(n) primes followed by c(n) composite numbers, where p(n) is the n-th prime and c(n) is the n-th composite number.
  * @author Sean A. Irvine
  */
 public class A138561 implements Sequence {

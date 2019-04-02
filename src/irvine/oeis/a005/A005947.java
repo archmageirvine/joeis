@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A005947.
+ * A005947 Tumbling distance for n-input mappings with 2 steps.
  * @author Sean A. Irvine
  */
 public class A005947 extends A005946 {

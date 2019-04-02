@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287350.
+ * A287350 Number of independent vertex sets and vertex covers in the n-gear graph.
  * @author Sean A. Irvine
  */
 public class A287350 extends LinearRecurrence {

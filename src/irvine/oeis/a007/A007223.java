@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007223.
+ * A007223 Number of distinct perforation patterns for deriving (v,b)=(n+2,n) punctured convolutional codes from (2,1).
  * @author Sean A. Irvine
  */
 public class A007223 extends MemoryFunction2<Integer, Polynomial<Z>> implements Sequence {

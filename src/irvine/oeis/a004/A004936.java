@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004936.
+ * A004936 Numerator of (binomial(2*n-2,n-1)/n!)^2.
  * @author Sean A. Irvine
  */
 public class A004936 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A000536.
+ * A000536 Number of 3-line Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A000536 implements Sequence {

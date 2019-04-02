@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A008406.
+ * A008406 Triangle T(n,k) read by rows, giving number of graphs with n nodes (n &gt;= 1) and k edges (0 &lt;= k &lt;= n(n-1)/2).
  * Implementation derived from Maple code by Brendan McKay.
  * @author Sean A. Irvine
  */

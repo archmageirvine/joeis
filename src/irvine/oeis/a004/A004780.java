@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004780.
+ * A004780 Binary expansion contains 2 adjacent 1's.
  * @author Sean A. Irvine
  */
 public class A004780 implements Sequence {

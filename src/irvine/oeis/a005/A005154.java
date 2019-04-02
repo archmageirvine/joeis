@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005154.
+ * A005154 Number of stable matchings.
  * @author Sean A. Irvine
  */
 public class A005154 implements Sequence {

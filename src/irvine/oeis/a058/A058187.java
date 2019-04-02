@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058187.
+ * A058187 Expansion of (1+x)/(1-x^2)^4: duplicated tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A058187 extends LinearRecurrence {

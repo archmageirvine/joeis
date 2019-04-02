@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008744.
+ * A008744 Dates of accession of the Georges to the English throne.
  * @author Sean A. Irvine
  */
 public class A008744 extends FiniteSequence {

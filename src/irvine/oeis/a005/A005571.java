@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005571.
+ * A005571 Number of walks on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A005571 implements Sequence {

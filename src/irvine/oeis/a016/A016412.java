@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.a011.A011632;
 
 /**
- * A016412.
+ * A016412 442nd cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A016412 extends A011632 {

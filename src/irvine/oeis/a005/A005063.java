@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005063.
+ * A005063 Sum of squares of primes dividing n.
  * @author Sean A. Irvine
  */
 public class A005063 implements Sequence {

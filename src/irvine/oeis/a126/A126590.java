@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126590.
+ * A126590 Multiples of 3 or 5 but not both.
  * @author Sean A. Irvine
  */
 public class A126590 extends LinearRecurrence {

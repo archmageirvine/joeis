@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128991.
+ * A128991 a(n) = (n^3 - n^2)*8^n.
  * @author Sean A. Irvine
  */
 public class A128991 extends LinearRecurrence {

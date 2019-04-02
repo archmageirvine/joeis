@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000115.
+ * A000115 Denumerants: Expansion of 1/((1-x)*(1-x^2)*(1-x^5)).
  * @author Sean A. Irvine
  */
 public class A000115 implements Sequence {

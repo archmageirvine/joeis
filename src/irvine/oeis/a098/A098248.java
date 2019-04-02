@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098248.
+ * A098248 Chebyshev polynomials S(n,291).
  * @author Sean A. Irvine
  */
 public class A098248 extends LinearRecurrence {

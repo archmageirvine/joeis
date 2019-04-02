@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000084;
 import java.util.ArrayList;
 
 /**
- * A001572.
+ * A001572 Related to series-parallel networks.
  * @author Sean A. Irvine
  */
 public class A001572 extends A000084 {

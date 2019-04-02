@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007408.
+ * A007408 Wolstenholme numbers: numerator of Sum_{k=1..n} 1/k^3.
  * @author Sean A. Irvine
  */
 public class A007408 implements Sequence {

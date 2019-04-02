@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180667.
+ * A180667 The maximum number of points obtainable in a game of Entanglement on a board of radius n.
  * @author Sean A. Irvine
  */
 public class A180667 extends LinearRecurrence {

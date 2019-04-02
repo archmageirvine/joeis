@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001405;
 
 /**
- * A014495.
+ * A014495 Central binomial coefficient - 1.
  * @author Sean A. Irvine
  */
 public class A014495 extends A001405 {

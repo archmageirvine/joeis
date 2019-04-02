@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192845.
+ * A192845 Molecular topological indices of the sun graphs.
  * @author Sean A. Irvine
  */
 public class A192845 extends LinearRecurrence {

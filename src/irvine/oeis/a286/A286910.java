@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286910.
+ * A286910 Number of independent vertex sets and vertex covers in the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A286910 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A090466.
+ * A090466 Regular figurative or polygonal numbers of order greater than 2.
  * @author Sean A. Irvine
  */
 public class A090466 implements Sequence {

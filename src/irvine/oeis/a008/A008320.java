@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008320.
+ * A008320 Smallest number that is not the sum of squares of two distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A008320 extends MemorySequence {

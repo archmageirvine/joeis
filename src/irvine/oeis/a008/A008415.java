@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008415.
+ * A008415 Coordination sequence for 7-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
 public class A008415 extends CoordinationSequence {

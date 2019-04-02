@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014577.
+ * A014577 The regular paper-folding sequence (or dragon curve sequence).
  * @author Sean A. Irvine
  */
 public class A014577 implements Sequence {

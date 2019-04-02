@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160050.
+ * A160050 Numerator of the Harary number for the star graph s_n.
  * @author Sean A. Irvine
  */
 public class A160050 extends LinearRecurrence {

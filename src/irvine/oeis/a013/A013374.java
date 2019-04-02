@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013374.
+ * A013374 arcsinh(sin(x)-sinh(x))=-2/3!*x^3-2/7!*x^7+2240/9!*x^9-2/11!*x^11...
  * @author Sean A. Irvine
  */
 public class A013374 implements Sequence {

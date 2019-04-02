@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003412.
+ * A003412 From a nim-like game.
  * @author Sean A. Irvine
  */
 public class A003412 extends LinearRecurrence {

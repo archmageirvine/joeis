@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004231.
+ * A004231 Ackermann's sequence: n^^n := n^n^n^...^n (with n n's).
  * @author Sean A. Irvine
  */
 public class A004231 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a029.A029850;
 
 /**
- * A001424.
+ * A001424 Number of nonisomorphic and nonantiisomorphic groupoids with n elements.
  * @author Sean A. Irvine
  */
 public class A001424 extends A001329 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006786.
+ * A006786 Number of squarefree graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A006786 implements Sequence {

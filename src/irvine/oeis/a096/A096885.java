@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096885.
+ * A096885 Related to diagonals of Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A096885 extends LinearRecurrence {

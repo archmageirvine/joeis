@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064058.
+ * A064058 Ninth column of quintinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A064058 extends LinearRecurrence {

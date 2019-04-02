@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013919.
+ * A013919 Numbers n such that sum of first n composites is composite.
  * @author Sean A. Irvine
  */
 public class A013919 implements Sequence {

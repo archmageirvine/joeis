@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195143.
+ * A195143 a(n) = n-th concentric 12-gonal number.
  * @author Sean A. Irvine
  */
 public class A195143 extends LinearRecurrence {

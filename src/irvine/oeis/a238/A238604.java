@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238604.
+ * A238604 a(n) = Sum_{k=0..3} f(n+k)^2 where f=A130519.
  * @author Sean A. Irvine
  */
 public class A238604 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A002785.
+ * A002785 Number of self-complementary oriented graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A002785 implements Sequence {

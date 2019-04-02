@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008209.
+ * A008209 Coordination sequence T5 for Zeolite Code NES.
  * @author Sean A. Irvine
  */
 public class A008209 extends CoordinationSequence {

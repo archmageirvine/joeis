@@ -4,7 +4,7 @@ import irvine.oeis.AlternatingSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A008794.
+ * A008794 Squares repeated; a(n) = floor(n/2)^2.
  * @author Sean A. Irvine
  */
 public class A008794 extends AlternatingSequence {

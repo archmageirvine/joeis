@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A141822.
+ * A141822 Maximum term in the continued fraction of A141821(n)/n.
  * @author Sean A. Irvine
  */
 public class A141822 implements Sequence {

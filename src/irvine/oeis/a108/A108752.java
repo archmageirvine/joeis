@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108752.
+ * A108752 Numbers k such that 12 divides k*(k+1).
  * @author Sean A. Irvine
  */
 public class A108752 extends LinearRecurrence {

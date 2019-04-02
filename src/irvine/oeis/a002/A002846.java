@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002846.
+ * A002846 Number of ways of transforming a set of n indistinguishable objects into n singletons via a sequence of n-1 refinements.
  * @author Sean A. Irvine
  */
 public class A002846 implements Sequence {

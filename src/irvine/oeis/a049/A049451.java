@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049451.
+ * A049451 Twice second pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A049451 extends LinearRecurrence {

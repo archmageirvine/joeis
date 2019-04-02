@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001163.
+ * A001163 Stirling's formula: numerators of asymptotic series for Gamma function.
  * @author Sean A. Irvine
  */
 public class A001163 implements Sequence {

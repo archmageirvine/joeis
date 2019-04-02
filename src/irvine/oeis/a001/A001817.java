@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001817.
+ * A001817 G.f.: Sum_{n&gt;0} x^n/(1-x^(3n)) = Sum x^(3n+1)/(1-x^(3n+1)), n=0..inf.
  * @author Sean A. Irvine
  */
 public class A001817 implements Sequence {

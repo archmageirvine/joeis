@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a211.A211318;
 
 /**
- * A001251.
+ * A001251 Number of permutations of order n with the length of longest run equal 3.
  * @author Sean A. Irvine
  */
 public class A001251 extends A211318 {

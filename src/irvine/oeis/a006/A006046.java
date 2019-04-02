@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.PopCount;
 
 /**
- * A006046.
+ * A006046 Total number of odd entries in first n rows of Pascal's triangle: a(0) = 0, a(1) = 1, a(2k) = 3*a(k), a(2k+1) = 2*a(k) + a(k+1).
  * @author Sean A. Irvine
  */
 public class A006046 implements Sequence {

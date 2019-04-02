@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001245.
+ * A001245 Numbers that are the sum of 4 cubes in more than 1 way.
  * @author Sean A. Irvine
  */
 public class A001245 implements Sequence {

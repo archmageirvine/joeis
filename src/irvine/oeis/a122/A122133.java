@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122133.
+ * A122133 Number of different polyominoes with maximum area of the convex hull.
  * @author Sean A. Irvine
  */
 public class A122133 extends LinearRecurrence {

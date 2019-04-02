@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000120;
 
 /**
- * A161342.
+ * A161342 Number of "ON" cubic cells at n-th stage in simple 3-dimensional cellular automaton: a(n) = A160428(n)/8.
  * @author Sean A. Irvine
  */
 public class A161342 extends A000120 {

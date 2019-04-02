@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006286.
+ * A006286 Numbers not of form p + 2^x + 2^y.
  * @author Sean A. Irvine
  */
 public class A006286 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006316.
+ * A006316 Numbers n such that n^64 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A006316 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A007162.
+ * A007162 Number of skeins with vertical symmetry.
  * @author Sean A. Irvine
  */
 public class A007162 extends A007161 {

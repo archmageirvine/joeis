@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011890.
+ * A011890 [ n(n-1)(n-2)/8 ].
  * @author Sean A. Irvine
  */
 public class A011890 implements Sequence {

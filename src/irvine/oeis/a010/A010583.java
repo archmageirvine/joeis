@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010583.
+ * A010583 Decimal expansion of cube root of 11.
  * @author Sean A. Irvine
  */
 public class A010583 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002500.
+ * A002500 Number of self-converse relations on n points.
  * @author Sean A. Irvine
  */
 public class A002500 extends A002499 {

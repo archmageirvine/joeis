@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017992.
+ * A017992 Powers of cube root of 6 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017992 implements Sequence {

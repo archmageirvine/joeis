@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010010.
+ * A010010 a(0) = 1, a(n) = 20*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A010010 implements Sequence {

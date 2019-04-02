@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003590.
+ * A003590 Rows of Pascal's triangle written as a single number.
  * @author Sean A. Irvine
  */
 public class A003590 implements Sequence {

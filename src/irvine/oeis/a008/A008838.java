@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008838.
+ * A008838 a(n) = floor(n/8)*ceiling(n/8).
  * @author Sean A. Irvine
  */
 public class A008838 implements Sequence {

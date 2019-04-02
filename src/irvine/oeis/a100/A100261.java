@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100261.
+ * A100261 Continued fraction expansion of cot(1-Pi/4).
  * @author Sean A. Irvine
  */
 public class A100261 extends LinearRecurrence {

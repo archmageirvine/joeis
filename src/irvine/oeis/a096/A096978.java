@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096978.
+ * A096978 Sum of the areas of the first n Jacobsthal rectangles.
  * @author Sean A. Irvine
  */
 public class A096978 extends LinearRecurrence {

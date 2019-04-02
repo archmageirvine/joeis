@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274743.
+ * A274743 Repunits with odd indices multiplied by 99, i.e., 99*(1, 111, 11111, 1111111, ...).
  * @author Sean A. Irvine
  */
 public class A274743 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013504.
+ * A013504 sin(sec(x)-sech(x))=2/2!*x^2+2/6!*x^6-176158/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013504 implements Sequence {

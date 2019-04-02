@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023111.
+ * A023111 Numbers k such that k remains square when digit 1 is appended.
  * @author Sean A. Irvine
  */
 public class A023111 extends LinearRecurrence {

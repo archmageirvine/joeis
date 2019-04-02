@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257602.
+ * A257602 Expansion of (1+x+21*x^2+x^3+x^4)/(1-x)^5.
  * @author Sean A. Irvine
  */
 public class A257602 extends LinearRecurrence {

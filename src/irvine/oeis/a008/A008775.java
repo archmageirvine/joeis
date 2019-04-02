@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008775.
+ * A008775 Expansion of 2(1 + cos x cosh x )^-1.
  * @author Sean A. Irvine
  */
 public class A008775 implements Sequence {

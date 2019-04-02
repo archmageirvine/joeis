@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130612.
+ * A130612 Sum of the first 10^n squares.
  * @author Sean A. Irvine
  */
 public class A130612 extends LinearRecurrence {

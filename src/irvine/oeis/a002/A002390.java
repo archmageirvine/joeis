@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002390.
+ * A002390 Decimal expansion of natural logarithm of golden ratio.
  * @author Sean A. Irvine
  */
 public class A002390 extends DecimalExpansionSequence {

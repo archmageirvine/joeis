@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001123.
+ * A001123 Primes with 3 as smallest primitive root.
  * @author Sean A. Irvine
  */
 public class A001123 implements Sequence {

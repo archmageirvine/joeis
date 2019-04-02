@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277226.
+ * A277226 Number of inequivalent (modulo C_4 rotations) square n X n grids with squares coming in two colors and four squares have one of the colors.
  * @author Sean A. Irvine
  */
 public class A277226 extends LinearRecurrence {

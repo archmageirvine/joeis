@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022526.
+ * A022526 Nexus numbers (n+1)^10-n^10.
  * @author Sean A. Irvine
  */
 public class A022526 extends LinearRecurrence {

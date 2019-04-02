@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014754.
+ * A014754 Primes p == 1 mod 8 such that 2 and -2 are both 4th powers (one implies other) mod p.
  * @author Sean A. Irvine
  */
 public class A014754 implements Sequence {

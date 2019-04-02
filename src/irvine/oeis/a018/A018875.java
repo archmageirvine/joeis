@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018875.
+ * A018875 Smallest seventh power that begins with n.
  * @author Sean A. Irvine
  */
 public class A018875 extends A018871 {

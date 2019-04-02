@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007462.
+ * A007462 Shifts left under XOR-convolution with itself.
  * @author Sean A. Irvine
  */
 public class A007462 extends MemorySequence {

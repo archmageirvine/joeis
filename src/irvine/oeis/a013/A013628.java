@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013628.
+ * A013628 Triangle of coefficients in expansion of (4+5x)^n.
  * @author Sean A. Irvine
  */
 public class A013628 implements Sequence {

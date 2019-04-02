@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099140.
+ * A099140 4^n*T(n,3/2).
  * @author Sean A. Irvine
  */
 public class A099140 extends LinearRecurrence {

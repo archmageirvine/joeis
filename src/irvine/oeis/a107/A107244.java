@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107244.
+ * A107244 Sum of squares of hexanacci numbers (A001592, Fibonacci 6-step numbers).
  * @author Sean A. Irvine
  */
 public class A107244 extends LinearRecurrence {

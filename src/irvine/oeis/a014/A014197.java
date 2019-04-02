@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014197.
+ * A014197 Number of numbers m with Euler phi(m) = n.
  * @author Sean A. Irvine
  */
 public class A014197 implements Sequence {

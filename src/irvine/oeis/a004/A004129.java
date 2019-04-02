@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004129.
+ * A004129 Number of solutions to postage stamp problem.
  * @author Sean A. Irvine
  */
 public class A004129 implements Sequence {

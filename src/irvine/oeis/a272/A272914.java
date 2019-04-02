@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272914.
+ * A272914 Sixth powers ending in digit 6.
  * @author Sean A. Irvine
  */
 public class A272914 extends LinearRecurrence {

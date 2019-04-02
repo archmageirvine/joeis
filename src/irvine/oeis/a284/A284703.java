@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284703.
+ * A284703 Number of maximal matchings in the n-prism graph.
  * @author Sean A. Irvine
  */
 public class A284703 extends LinearRecurrence {

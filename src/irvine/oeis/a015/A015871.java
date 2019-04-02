@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015871.
+ * A015871 Numbers n such that phi(n + 5) | sigma(n) + 5.
  * @author Sean A. Irvine
  */
 public class A015871 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158869.
+ * A158869 Number of ways of filling a 2 by 3 by 2*n hole with 1 by 2 by 2 bricks.
  * @author Sean A. Irvine
  */
 public class A158869 extends LinearRecurrence {

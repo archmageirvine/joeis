@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259165.
+ * A259165 Positive heptagonal numbers (A000566) that are pentagonal numbers (A000326) divided by 2.
  * @author Sean A. Irvine
  */
 public class A259165 extends LinearRecurrence {

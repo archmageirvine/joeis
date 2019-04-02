@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005181.
+ * A005181 a(n) = ceiling(exp((n-1)/2)).
  * @author Sean A. Irvine
  */
 public class A005181 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.TwoDimensionalWalk;
 import irvine.util.Pair;
 
 /**
- * A006816.
+ * A006816 Related to self-avoiding walks on square lattice.
  * @author Sean A. Irvine
  */
 public class A006816 extends A006814 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011543.
+ * A011543 Decimal expansion of e truncated to n places.
  * @author Sean A. Irvine
  */
 public class A011543 implements Sequence {

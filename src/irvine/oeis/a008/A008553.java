@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008553.
+ * A008553 Numbers that contain the letter `y'.
  * @author Sean A. Irvine
  */
 public class A008553 implements Sequence {

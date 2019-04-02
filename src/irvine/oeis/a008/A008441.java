@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008441.
+ * A008441 Number of ways of writing n as the sum of 2 triangular numbers.
  * @author Sean A. Irvine
  */
 public class A008441 implements Sequence {

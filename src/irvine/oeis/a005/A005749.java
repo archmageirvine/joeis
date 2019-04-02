@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005749.
+ * A005749 Cascade-realizable Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A005749 extends A005613 {

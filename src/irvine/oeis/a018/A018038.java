@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018038.
+ * A018038 Powers of cube root of 21 rounded up.
  * @author Sean A. Irvine
  */
 public class A018038 implements Sequence {

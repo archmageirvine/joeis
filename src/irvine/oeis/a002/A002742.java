@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A002742.
+ * A002742 Logarithmic numbers.
  * @author Sean A. Irvine
  */
 public class A002742 implements Sequence {

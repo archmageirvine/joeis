@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070397.
+ * A070397 a(n) = 6^n mod 25.
  * @author Sean A. Irvine
  */
 public class A070397 extends LinearRecurrence {

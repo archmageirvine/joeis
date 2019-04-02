@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003664.
+ * A003664 a(n) is smallest number larger than a(n-1) and not = a(j)+a(k), j&lt;k.
  * @author Sean A. Irvine
  */
 public class A003664 implements Sequence {

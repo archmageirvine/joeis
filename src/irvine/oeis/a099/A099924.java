@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099924.
+ * A099924 Self-convolution of Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A099924 extends LinearRecurrence {

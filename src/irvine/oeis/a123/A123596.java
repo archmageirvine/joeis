@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123596.
+ * A123596 Squares alternating with triangular numbers.
  * @author Sean A. Irvine
  */
 public class A123596 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A006092.
+ * A006092 Numbers beginning with letter 't' when spelled out in English.
  * @author Sean A. Irvine
  */
 public class A006092 implements Sequence {

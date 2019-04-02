@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.a000.A000662;
 
 /**
- * A001376.
+ * A001376 Relational systems on n nodes.
  * @author Sean A. Irvine
  */
 public class A001376 extends A000662 {

@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078427.
+ * A078427 Sum of all the decimal digits of numbers from 1 to 10^n.
  * @author Sean A. Irvine
  */
 public class A078427 extends LinearRecurrence {

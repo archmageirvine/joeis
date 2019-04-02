@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000273;
 import java.util.ArrayList;
 
 /**
- * A003084.
+ * A003084 Related to number of digraphs.
  * @author Sean A. Irvine
  */
 public class A003084 extends A000273 {

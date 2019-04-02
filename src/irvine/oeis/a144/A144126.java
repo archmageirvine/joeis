@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144126.
+ * A144126 P_6(2n+1), the Legendre polynomial of order 6 at 2n+1.
  * @author Sean A. Irvine
  */
 public class A144126 extends LinearRecurrence {

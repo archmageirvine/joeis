@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A003244.
+ * A003244 Number of unrooted achiral trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003244 extends A003241 {

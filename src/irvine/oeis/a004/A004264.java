@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004264.
+ * A004264 100*log_2 (n) rounded up.
  * @author Sean A. Irvine
  */
 public class A004264 implements Sequence {

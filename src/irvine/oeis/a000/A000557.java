@@ -7,7 +7,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A000557.
+ * A000557 From Fibonacci sums.
  * @author Sean A. Irvine
  */
 public class A000557 implements Sequence {

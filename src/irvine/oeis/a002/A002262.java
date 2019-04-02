@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002262.
+ * A002262 Triangle read by rows: T(n,k), 0 &lt;= k &lt;= n, in which row n lists the first n+1 nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A002262 implements Sequence {

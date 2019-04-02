@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A240924.
+ * A240924 Digital root of squares of numbers not divisible by 2, 3 or 5.
  * @author Sean A. Irvine
  */
 public class A240924 implements Sequence {

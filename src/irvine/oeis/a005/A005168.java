@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005168.
+ * A005168 n-th derivative of x^x at 1, divided by n.
  * @author Sean A. Irvine
  */
 public class A005168 implements Sequence {

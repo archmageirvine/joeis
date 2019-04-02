@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239059.
+ * A239059 Sum of the two smallest parts from the partitions of 4n into 4 parts with smallest part = 1.
  * @author Sean A. Irvine
  */
 public class A239059 extends LinearRecurrence {

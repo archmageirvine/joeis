@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006567;
 
 /**
- * A007628.
+ * A007628 Reflectable emirps.
  * @author Sean A. Irvine
  */
 public class A007628 extends A006567 {

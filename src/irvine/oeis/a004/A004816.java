@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004816.
+ * A004816 Numbers that are the sum of 5 positive 11th powers.
  * @author Sean A. Irvine
  */
 public class A004816 extends A004813 {

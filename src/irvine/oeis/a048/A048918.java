@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048918.
+ * A048918 9-gonal hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A048918 extends LinearRecurrence {

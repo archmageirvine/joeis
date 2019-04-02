@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005885.
+ * A005885 Theta series of f.c.c. lattice with respect to triangle.
  * @author Sean A. Irvine
  */
 public class A005885 implements Sequence {

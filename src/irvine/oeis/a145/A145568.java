@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145568.
+ * A145568 Characteristic function of numbers relatively prime to 11.
  * @author Sean A. Irvine
  */
 public class A145568 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010090.
+ * A010090 Weight distribution of d=4 Hamming code of length 15.
  * @author Sean A. Irvine
  */
 public class A010090 extends FiniteSequence {

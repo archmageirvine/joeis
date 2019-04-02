@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Spanish;
 
 /**
- * A011762.
+ * A011762 Number of letters in n (in Spanish).
  * @author Sean A. Irvine
  */
 public class A011762 implements Sequence {

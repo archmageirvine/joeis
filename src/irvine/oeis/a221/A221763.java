@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221763.
+ * A221763 Numbers m such that 11*m^2 - 7 is a square.
  * @author Sean A. Irvine
  */
 public class A221763 extends LinearRecurrence {

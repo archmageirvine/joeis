@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054225;
 
 /**
- * A002755.
+ * A002755 Number of bipartite partitions of n white objects and 6 black ones.
  * @author Sean A. Irvine
  */
 public class A002755 extends A054225 {

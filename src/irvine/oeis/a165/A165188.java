@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165188.
+ * A165188 Interleaving of A014125 and zero followed by A014125.
  * @author Sean A. Irvine
  */
 public class A165188 extends LinearRecurrence {

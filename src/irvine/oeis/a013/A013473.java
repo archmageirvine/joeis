@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013473.
+ * A013473 arctan(cos(x)-cosh(x))=238/6!*x^6-715682/10!*x^10+12212600398/14!*x^14...
  * @author Sean A. Irvine
  */
 public class A013473 implements Sequence {

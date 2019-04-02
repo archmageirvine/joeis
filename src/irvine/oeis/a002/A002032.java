@@ -9,7 +9,7 @@ import irvine.util.Pair;
 import java.util.HashMap;
 
 /**
- * A002032.
+ * A002032 Number of n-colored connected graphs on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A002032 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054606.
+ * A054606 a(n) = Sum_{d|7} phi(d)*n^(7/d).
  * @author Sean A. Irvine
  */
 public class A054606 extends LinearRecurrence {

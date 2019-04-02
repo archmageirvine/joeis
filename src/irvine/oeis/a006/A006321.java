@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006321.
+ * A006321 Royal paths in a lattice.
  * @author Sean A. Irvine
  */
 public class A006321 implements Sequence {

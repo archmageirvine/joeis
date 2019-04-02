@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a000.A000796;
 
 /**
- * A201773.
+ * A201773 Concatenation of the decimal digits of Fibonacci(n) and the Fibonacci(n)-th digit of Pi.
  * @author Sean A. Irvine
  */
 public class A201773 extends A000045 {

@@ -14,7 +14,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A006308.
+ * A006308 Coefficients of period polynomials.
  * @author Sean A. Irvine
  */
 public class A006308 implements Sequence {

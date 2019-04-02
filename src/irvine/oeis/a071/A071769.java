@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071769.
+ * A071769 Determinant of the n X n matrix whose element (i,j) equals |i-j| (Mod 4).
  * @author Sean A. Irvine
  */
 public class A071769 extends LinearRecurrence {

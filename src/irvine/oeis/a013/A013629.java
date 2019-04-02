@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002410;
 
 /**
- * A013629.
+ * A013629 Floor of imaginary parts of nontrivial zeros of Riemann zeta function.
  * @author Sean A. Irvine
  */
 public class A013629 extends A002410 {

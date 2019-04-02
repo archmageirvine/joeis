@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A000448.
+ * A000448 Smallest number that is the sum of 2 squares in at least n ways.
  * @author Sean A. Irvine
  */
 public class A000448 implements Sequence {

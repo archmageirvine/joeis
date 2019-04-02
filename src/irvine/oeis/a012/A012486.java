@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012486.
+ * A012486 sinh(cos(x)*arcsin(x))=x-1/3!*x^3-15/5!*x^5+359/7!*x^7+3713/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012486 implements Sequence {

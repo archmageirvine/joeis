@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017666.
+ * A017666 Denominator of sum of reciprocals of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017666 implements Sequence {

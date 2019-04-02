@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 /**
- * A005514.
+ * A005514 Number of n-bead bracelets (turnover necklaces) with 8 red beads and n-8 black beads.
  * @author Sean A. Irvine
  */
 public class A005514 extends A005516 {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145120.
+ * A145120 Numbers X such that (X^2-19)/57 is a square.
  * @author Sean A. Irvine
  */
 public class A145120 extends LinearRecurrence {

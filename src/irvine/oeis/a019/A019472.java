@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
 /**
- * A019472.
+ * A019472 Weak preference orderings of n alternatives, i.e., orderings that have indifference between at least two alternatives.
  * @author Sean A. Irvine
  */
 public class A019472 extends A000670 {

@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193250.
+ * A193250 Small rhombicuboctahedron with faces of centered polygons.
  * @author Sean A. Irvine
  */
 public class A193250 extends LinearRecurrence {

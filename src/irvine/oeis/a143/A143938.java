@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143938.
+ * A143938 The Wiener index of a benzenoid consisting of a linear chain of n hexagons.
  * @author Sean A. Irvine
  */
 public class A143938 extends LinearRecurrence {

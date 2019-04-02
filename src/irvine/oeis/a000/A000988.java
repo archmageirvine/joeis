@@ -9,7 +9,7 @@ import java.util.HashSet;
 import irvine.util.Point;
 
 /**
- * A000988.
+ * A000988 Number of one-sided polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A000988 implements Sequence {

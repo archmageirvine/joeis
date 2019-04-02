@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075666.
+ * A075666 Sum of next n 5th powers.
  * @author Sean A. Irvine
  */
 public class A075666 extends LinearRecurrence {

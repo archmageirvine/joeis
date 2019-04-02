@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018097.
+ * A018097 Powers of fourth root of 18 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018097 implements Sequence {

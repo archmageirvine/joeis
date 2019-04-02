@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002664.
+ * A002664 a(n) = 2^n - C(n,0)- ... - C(n,4).
  * @author Sean A. Irvine
  */
 public class A002664 implements Sequence {

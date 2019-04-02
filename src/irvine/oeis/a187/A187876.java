@@ -8,7 +8,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 
 /**
- * A187876.
+ * A187876 1-digit numbers arranged in alphabetical order, then the 2-digit numbers arranged in alphabetical order, then the 3-digit numbers, etc. French version.
  * @author Sean A. Irvine
  */
 public class A187876 extends A001058 {

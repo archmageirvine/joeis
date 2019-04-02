@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060633.
+ * A060633 Surround numbers of an n X 1 rectangle.
  * @author Sean A. Irvine
  */
 public class A060633 extends LinearRecurrence {

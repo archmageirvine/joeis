@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007345.
+ * A007345 Number of Havender tableaux of height 2 with n columns.
  * @author Sean A. Irvine
  */
 public class A007345 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005562.
+ * A005562 Number of walks on square lattice.
  * @author Sean A. Irvine
  */
 public class A005562 implements Sequence {

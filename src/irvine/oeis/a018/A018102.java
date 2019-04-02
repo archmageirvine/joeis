@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018102.
+ * A018102 Powers of fourth root of 20 rounded down.
  * @author Sean A. Irvine
  */
 public class A018102 implements Sequence {

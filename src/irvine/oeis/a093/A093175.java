@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093175.
+ * A093175 Tetranacci numbers starting with first four squares.
  * @author Sean A. Irvine
  */
 public class A093175 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006924;
 
 /**
- * A014376.
+ * A014376 Number of trivalent connected simple graphs with 2n nodes and girth at least 8.
  * @author Sean A. Irvine
  */
 public class A014376 extends A006924 {

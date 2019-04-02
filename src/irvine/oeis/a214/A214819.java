@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.math.z.Z;
 
 /**
- * A214819.
+ * A214819 Number of genus 2 sensed hypermaps with n darts.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */

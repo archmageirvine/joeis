@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A139282.
+ * A139282 Form a sequence of words as follows: look to the left, towards the beginning of the sequence and write down the number of vowels you see; repeat; then replace the words with the corresponding numbers.
  * @author Sean A. Irvine
  */
 public class A139282 implements Sequence {

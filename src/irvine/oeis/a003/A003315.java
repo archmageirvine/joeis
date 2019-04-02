@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003315.
+ * A003315 Representing n as sum of increasing powers.
  * @author Sean A. Irvine
  */
 public class A003315 implements Sequence {

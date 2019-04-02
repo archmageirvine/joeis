@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A137626.
+ * A137626 The largest prime in the first set of n consecutive primes for which p+4 is semiprime.
  * @author Sean A. Irvine
  */
 public class A137626 implements Sequence {

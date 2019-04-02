@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001267.
+ * A001267 One-half the number of permutations of length n with exactly 3 rising or falling successions.
  * @author Sean A. Irvine
  */
 public class A001267 implements Sequence {

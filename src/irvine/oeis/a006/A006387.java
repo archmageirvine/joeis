@@ -5,7 +5,7 @@ import java.util.Arrays;
 import irvine.math.z.Z;
 
 /**
- * A006387.
+ * A006387 Number of unsensed genus 1 maps with n edges.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */

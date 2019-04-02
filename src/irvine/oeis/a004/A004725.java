@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004725.
+ * A004725 Delete all 6's from the sequence of nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A004725 implements Sequence {

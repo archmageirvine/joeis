@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001811.
+ * A001811 Coefficients of Laguerre polynomials.
  * @author Sean A. Irvine
  */
 public class A001811 implements Sequence {

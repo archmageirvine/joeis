@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264891.
+ * A264891 a(n) = n*(5*n - 3)*(25*n^2 - 15*n - 6)/8.
  * @author Sean A. Irvine
  */
 public class A264891 extends LinearRecurrence {

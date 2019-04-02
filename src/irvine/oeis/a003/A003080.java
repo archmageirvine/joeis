@@ -9,7 +9,7 @@ import irvine.oeis.PolynomialSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A003080.
+ * A003080 Number of rooted triangular cacti with 2n+1 nodes (n triangles).
  * @author Sean A. Irvine
  */
 public class A003080 implements Sequence {

@@ -4,7 +4,7 @@ import chesspresso.position.Position;
 import irvine.oeis.a048.A048987;
 
 /**
- * A285878.
+ * A285878 Number of possible chess games at the end of the n-th ply starting with just pawns and king.
  * @author Sean A. Irvine
  */
 public class A285878 extends A048987 {

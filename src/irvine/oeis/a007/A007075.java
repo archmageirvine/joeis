@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007075.
+ * A007075 Number of irreducible positions of size n in Montreal solitaire.
  * @author Sean A. Irvine
  */
 public class A007075 extends A007046 {

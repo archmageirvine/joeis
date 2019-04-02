@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008292.
+ * A008292 Triangle of Eulerian numbers T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n) read by rows.
  * @author Sean A. Irvine
  */
 public class A008292 extends MemoryFunction2<Long, Z> implements Sequence {

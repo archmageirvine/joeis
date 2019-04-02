@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065260.
+ * A065260 A057115 conjugated with A059893, inverse of A065259.
  * @author Sean A. Irvine
  */
 public class A065260 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268358.
+ * A268358 Number of n-digit numbers in base ten having at least five different digits with no leading zeros allowed.
  * @author Sean A. Irvine
  */
 public class A268358 extends LinearRecurrence {

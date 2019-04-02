@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a008.A008836;
 
 /**
- * A002819.
+ * A002819 Liouville's function L(n) = partial sums of A008836.
  * @author Sean A. Irvine
  */
 public class A002819 extends PartialSumSequence {

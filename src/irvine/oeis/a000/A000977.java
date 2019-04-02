@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000977.
+ * A000977 Numbers that are divisible by at least three different primes.
  * @author Sean A. Irvine
  */
 public class A000977 implements Sequence {

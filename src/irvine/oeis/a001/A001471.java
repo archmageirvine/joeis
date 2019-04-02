@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001471.
+ * A001471 Number of degree-n permutations of order exactly 3.
  * @author Sean A. Irvine
  */
 public class A001471 implements Sequence {

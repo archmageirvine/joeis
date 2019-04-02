@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.AbstractAliquotSequence;
 
 /**
- * A008891.
+ * A008891 Aliquot sequence starting at 180.
  * @author Sean A. Irvine
  */
 public class A008891 extends AbstractAliquotSequence {

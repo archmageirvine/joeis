@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002107.
+ * A002107 Expansion of Product_{k&gt;=1} (1 - x^k)^2.
  * @author Sean A. Irvine
  */
 public class A002107 implements Sequence {

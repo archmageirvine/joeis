@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003444.
+ * A003444 Number of dissections of a polygon.
  * @author Sean A. Irvine
  */
 public class A003444 implements Sequence {

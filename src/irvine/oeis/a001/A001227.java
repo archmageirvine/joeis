@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001227.
+ * A001227 Number of odd divisors of n.
  * @author Sean A. Irvine
  */
 public class A001227 implements Sequence {

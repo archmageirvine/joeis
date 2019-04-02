@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.MobiusTransformSequence;
 
 /**
- * A007551.
+ * A007551 Shifts left when Moebius transformation applied twice.
  * @author Sean A. Irvine
  */
 public class A007551 extends MemorySequence {

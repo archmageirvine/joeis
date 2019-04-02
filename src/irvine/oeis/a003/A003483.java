@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003483.
+ * A003483 Number of square permutations of n elements.
  * @author Sean A. Irvine
  */
 public class A003483 extends MemoryFunction2<Integer, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268151.
+ * A268151 A double binomial sum involving absolute values.
  * @author Sean A. Irvine
  */
 public class A268151 extends LinearRecurrence {

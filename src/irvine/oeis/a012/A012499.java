@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012499.
+ * A012499 tan(cos(x)*arctan(x))=x-3/3!*x^3-35/5!*x^5+1729/7!*x^7-12711/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012499 implements Sequence {

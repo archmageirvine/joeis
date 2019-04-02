@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007019.
+ * A007019 a(n) = (2n+1)! / 2^n.
  * @author Sean A. Irvine
  */
 public class A007019 implements Sequence {

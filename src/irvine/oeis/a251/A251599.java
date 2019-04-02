@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251599.
+ * A251599 Centers of rows of the triangular array formed by the natural numbers.
  * @author Sean A. Irvine
  */
 public class A251599 extends LinearRecurrence {

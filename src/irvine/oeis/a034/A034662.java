@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034662.
+ * A034662 Sum of n-th powers of divisors of 20.
  * @author Sean A. Irvine
  */
 public class A034662 extends LinearRecurrence {

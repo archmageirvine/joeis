@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018384.
+ * A018384 Divisors of 306.
  * @author Sean A. Irvine
  */
 public class A018384 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001907.
+ * A001907 Expansion of e^(-x)/(1-4x).
  * @author Sean A. Irvine
  */
 public class A001907 implements Sequence {

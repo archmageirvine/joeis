@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096976.
+ * A096976 Number of walks of length n on P_3 plus a loop at the end.
  * @author Sean A. Irvine
  */
 public class A096976 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A002049.
+ * A002049 Prime numbers of measurement.
  * @author Sean A. Irvine
  */
 public class A002049 extends PartialSumSequence {

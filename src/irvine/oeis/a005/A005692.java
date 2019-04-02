@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005692.
+ * A005692 Shortest wins at Beanstalk.
  * @author Sean A. Irvine
  */
 public class A005692 implements Sequence {

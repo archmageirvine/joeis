@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006043.
+ * A006043 A traffic light problem: expansion of 2/(1 - 3*x)^3.
  * @author Sean A. Irvine
  */
 public class A006043 implements Sequence {

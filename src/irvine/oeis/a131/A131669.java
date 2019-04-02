@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131669.
+ * A131669 Odd digits followed by positive even digits.
  * @author Sean A. Irvine
  */
 public class A131669 extends LinearRecurrence {

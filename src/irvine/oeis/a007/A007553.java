@@ -5,7 +5,7 @@ import irvine.oeis.LogarithmicTransformSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A007553.
+ * A007553 Logarithmic transform of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A007553 extends LogarithmicTransformSequence {

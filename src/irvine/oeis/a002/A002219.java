@@ -11,7 +11,7 @@ import irvine.util.Pair;
 import java.util.HashSet;
 
 /**
- * A002219.
+ * A002219 a(n) is the number of partitions of 2n that can be obtained by adding together two (not necessarily distinct) partitions of n.
  * @author Sean A. Irvine
  */
 public class A002219 implements Sequence {

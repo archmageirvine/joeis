@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005044.
+ * A005044 Alcuin's sequence: expansion of x^3/((1-x^2)*(1-x^3)*(1-x^4)).
  * @author Sean A. Irvine
  */
 public class A005044 implements Sequence {

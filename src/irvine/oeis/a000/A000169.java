@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000169.
+ * A000169 Number of labeled rooted trees with n nodes: n^(n-1).
  * @author Sean A. Irvine
  */
 public class A000169 implements Sequence {

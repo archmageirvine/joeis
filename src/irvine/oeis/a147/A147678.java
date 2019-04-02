@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147678.
+ * A147678 Double, add 0, double, add 1, double, add 2, double, add 3, etc.
  * @author Sean A. Irvine
  */
 public class A147678 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019650.
+ * A019650 Decimal expansion of sqrt(Pi*e)/6.
  * @author Sean A. Irvine
  */
 public class A019650 extends DecimalExpansionSequence {

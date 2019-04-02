@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271997.
+ * A271997 The icosagen sequence : a(n) = A018227(n)-5, for n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A271997 extends LinearRecurrence {

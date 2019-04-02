@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009014.
+ * A009014 Expansion of E.g.f.: (1 + x)/(1 + x + x^2/2).
  * @author Sean A. Irvine
  */
 public class A009014 implements Sequence {

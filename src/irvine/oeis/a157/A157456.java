@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157456.
+ * A157456 Expansion of x*(1-x) / ( 1 - 16*x + x^2 ).
  * @author Sean A. Irvine
  */
 public class A157456 extends LinearRecurrence {

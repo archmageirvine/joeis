@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003959.
+ * A003959 If n = Product p(k)^e(k) then a(n) = Product (p(k)+1)^e(k), a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A003959 implements Sequence {

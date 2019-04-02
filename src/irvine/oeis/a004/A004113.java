@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A004113.
+ * A004113 Number of rooted trees with n nodes and 2-colored non-leaf nodes.
  * @author Sean A. Irvine
  */
 public class A004113 implements Sequence {

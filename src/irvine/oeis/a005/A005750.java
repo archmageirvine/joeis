@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a000.A000151;
 
 /**
- * A005750.
+ * A005750 Number of planted matched trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005750 extends EulerTransformSequence {

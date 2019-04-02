@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000101.
+ * A000101 Increasing gaps between primes (upper end) (compare A002386, which gives lower ends of these gaps).
  * @author Sean A. Irvine
  */
 public class A000101 implements Sequence {

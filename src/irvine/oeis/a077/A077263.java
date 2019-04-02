@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077263.
+ * A077263 Number of (undirected) cycles in the n-th order antiprism graph.
  * @author Sean A. Irvine
  */
 public class A077263 extends LinearRecurrence {

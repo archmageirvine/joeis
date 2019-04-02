@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007322;
 
 /**
- * A101370.
+ * A101370 Number of zero-one matrices with n ones and no zero rows or columns.
  * @author Sean A. Irvine
  */
 public class A101370 extends InverseBinomialTransformSequence {

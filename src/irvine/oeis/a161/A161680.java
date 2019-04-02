@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161680.
+ * A161680 a(n) = binomial(n,2): number of size-2 subsets of {0,1,...,n} that contain no consecutive integers.
  * @author Sean A. Irvine
  */
 public class A161680 extends LinearRecurrence {

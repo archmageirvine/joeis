@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008588.
+ * A008588 Nonnegative multiples of 6.
  * @author Sean A. Irvine
  */
 public class A008588 implements Sequence {

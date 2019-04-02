@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046081.
+ * A046081 Number of integer-sided right triangles with n as a hypotenuse or leg.
  * @author Sean A. Irvine
  */
 public class A046081 extends A046080 {

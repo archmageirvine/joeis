@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192833.
+ * A192833 Molecular topological indices of the Moebius ladders.
  * @author Sean A. Irvine
  */
 public class A192833 extends LinearRecurrence {

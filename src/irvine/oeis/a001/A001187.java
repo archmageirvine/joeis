@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001187.
+ * A001187 Number of connected labeled graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A001187 extends MemorySequence {

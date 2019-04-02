@@ -6,7 +6,7 @@ import irvine.oeis.ParallelPlantriSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A007028.
+ * A007028 Number of bipartite polyhedral graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007028 extends ParallelPlantriSequence implements Sequence {

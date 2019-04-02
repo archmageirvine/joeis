@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006470.
+ * A006470 Number of rooted planar maps.
  * @author Sean A. Irvine
  */
 public class A006470 implements Sequence {

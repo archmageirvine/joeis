@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118673.
+ * A118673 Positive solutions x to the equation x^2 + (x+71)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A118673 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112575.
+ * A112575 Chebyshev transform of the second kind of the Pell numbers.
  * @author Sean A. Irvine
  */
 public class A112575 extends LinearRecurrence {

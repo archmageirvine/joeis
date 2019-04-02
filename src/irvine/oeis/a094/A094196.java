@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094196.
+ * A094196 Indices of the start of a string of 24 consecutive squares whose sum is a square.
  * @author Sean A. Irvine
  */
 public class A094196 extends LinearRecurrence {

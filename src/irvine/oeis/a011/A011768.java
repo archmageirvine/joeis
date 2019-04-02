@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A011768.
+ * A011768 Number of Barlow packings that repeat after exactly n layers.
  * @author Sean A. Irvine
  */
 public class A011768 implements Sequence {

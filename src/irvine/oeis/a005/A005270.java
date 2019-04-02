@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005270.
+ * A005270 Number of sequences s of length n with s[1]=1, s[2]=1, s[j-1]&lt;s[j]&lt;=s[j-2]+s[j-1] for j&gt;=3.
  * @author Sean A. Irvine
  */
 public class A005270 implements Sequence {

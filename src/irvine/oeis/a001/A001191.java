@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001191.
+ * A001191 Digits of positive squares.
  * @author Sean A. Irvine
  */
 public class A001191 implements Sequence {

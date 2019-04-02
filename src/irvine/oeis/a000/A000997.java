@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000997.
+ * A000997 From a differential equation.
  * @author Sean A. Irvine
  */
 public class A000997 extends MemorySequence {

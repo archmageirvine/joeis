@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002578.
+ * A002578 Number of integral points in a certain sequence of open quadrilaterals.
  * @author Sean A. Irvine
  */
 public class A002578 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A147808.
+ * A147808 Sum of n-digit numbers which are balanced: the first [n/2] digits have the same sum as the last [n/2] digits.
  * @author Sean A. Irvine
  */
 public class A147808 implements Sequence {

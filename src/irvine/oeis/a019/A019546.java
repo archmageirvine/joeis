@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A019546.
+ * A019546 Primes whose digits are primes.
  * @author Sean A. Irvine
  */
 public class A019546 extends A000040 {

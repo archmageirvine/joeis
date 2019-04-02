@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000961.
+ * A000961 Powers of primes. Alternatively, 1 and the prime powers (p^k, p prime, k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A000961 extends A000015 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000105;
 
 /**
- * A006748.
+ * A006748 Number of diagonally symmetric polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006748 extends A000105 {

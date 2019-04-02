@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180676.
+ * A180676 The Gi3 sums of the Pell-Jacobsthal triangle A013609.
  * @author Sean A. Irvine
  */
 public class A180676 extends LinearRecurrence {

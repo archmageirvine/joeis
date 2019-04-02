@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213071.
+ * A213071 3*n*(9n + 2)*(18n - 1), where n runs through the odd numbers 1, 3, 5,...
  * @author Sean A. Irvine
  */
 public class A213071 extends LinearRecurrence {

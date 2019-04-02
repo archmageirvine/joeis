@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096975.
+ * A096975 Trace sequence of a path graph plus loop.
  * @author Sean A. Irvine
  */
 public class A096975 extends LinearRecurrence {

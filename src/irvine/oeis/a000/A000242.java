@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000242.
+ * A000242 3rd power of rooted tree enumerator; number of linear forests of 3 rooted trees.
  * @author Sean A. Irvine
  */
 public class A000242 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001351.
+ * A001351 Associated Mersenne numbers.
  * @author Sean A. Irvine
  */
 public class A001351 extends LinearRecurrence {

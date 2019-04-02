@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 /**
- * A019248.
+ * A019248 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite VET = VPI-8 [ Si17O34 ].
  * @author Sean A. Irvine
  */
 public class A019248 extends A019247 {

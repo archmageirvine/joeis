@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001001.
+ * A001001 Number of sublattices of index n in generic 3-dimensional lattice.
  * @author Sean A. Irvine
  */
 public class A001001 implements Sequence {

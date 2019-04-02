@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001885.
+ * A001885 Hit polynomials.
  * @author Sean A. Irvine
  */
 public class A001885 extends A001884 {

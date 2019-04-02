@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130686.
+ * A130686 Absolute difference of final digits of two consecutive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A130686 extends LinearRecurrence {

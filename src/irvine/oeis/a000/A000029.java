@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A000029.
+ * A000029 Number of necklaces with n beads of 2 colors, allowing turning over (these are also called bracelets).
  * @author Sean A. Irvine
  */
 public class A000029 implements Sequence {

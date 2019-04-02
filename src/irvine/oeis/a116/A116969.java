@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116969.
+ * A116969 If n mod 2 = 0 then 3*2^(n-1)+n-1 else 3*2^(n-1)+n.
  * @author Sean A. Irvine
  */
 public class A116969 extends LinearRecurrence {

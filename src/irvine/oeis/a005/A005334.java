@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005334.
+ * A005334 Number of 2-colored graphs.
  * @author Sean A. Irvine
  */
 public class A005334 extends MemoryFunction2<Integer, Z> implements Sequence {

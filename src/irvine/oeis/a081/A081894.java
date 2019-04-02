@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081894.
+ * A081894 Fourth binomial transform of C(n+2,2).
  * @author Sean A. Irvine
  */
 public class A081894 extends LinearRecurrence {

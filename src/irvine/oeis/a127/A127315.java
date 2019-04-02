@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A127315.
+ * A127315 Numbers n such that n^4 divides 19^(n^2)-1.
  * @author Sean A. Irvine
  */
 public class A127315 implements Sequence {

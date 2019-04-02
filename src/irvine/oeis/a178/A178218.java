@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178218.
+ * A178218 Numbers of the form 2k^2-2k+1 or 2k^2-1.
  * @author Sean A. Irvine
  */
 public class A178218 extends LinearRecurrence {

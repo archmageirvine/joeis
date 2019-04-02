@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073952.
+ * A073952 Number of strings over Z_3 of length n with trace 1 and subtrace 2.
  * @author Sean A. Irvine
  */
 public class A073952 extends LinearRecurrence {

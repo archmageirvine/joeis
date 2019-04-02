@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095307.
+ * A095307 Number of walks of length n between two nodes at distance 2 in the cycle graph C_7.
  * @author Sean A. Irvine
  */
 public class A095307 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003413.
+ * A003413 From a nim-like game.
  * @author Sean A. Irvine
  */
 public class A003413 extends LinearRecurrence {

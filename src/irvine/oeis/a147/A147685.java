@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147685.
+ * A147685 Squares and centered square numbers interleaved.
  * @author Sean A. Irvine
  */
 public class A147685 extends LinearRecurrence {

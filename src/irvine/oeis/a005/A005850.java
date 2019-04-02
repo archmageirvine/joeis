@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002315;
 
 /**
- * A005850.
+ * A005850 Primes p such that the NSW number A002315((p-1)/2) is prime.
  * @author Sean A. Irvine
  */
 public class A005850 extends A002315 {

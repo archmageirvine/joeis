@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077957.
+ * A077957 Powers of 2 alternating with zeros.
  * @author Sean A. Irvine
  */
 public class A077957 extends LinearRecurrence {

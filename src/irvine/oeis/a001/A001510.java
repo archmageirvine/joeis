@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002715;
 
 /**
- * A001510.
+ * A001510 From a slowly converging series.
  * @author Sean A. Irvine
  */
 public class A001510 extends A002715 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000327.
+ * A000327 Number of partitions into non-integral powers.
  * @author Sean A. Irvine
  */
 public class A000327 implements Sequence {

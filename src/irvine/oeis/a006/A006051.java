@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001570;
 
 /**
- * A006051.
+ * A006051 Square hex numbers.
  * @author Sean A. Irvine
  */
 public class A006051 extends A001570 {

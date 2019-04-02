@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000270.
+ * A000270 Number of discordant permutations.
  * @author Sean A. Irvine
  */
 public class A000270 implements Sequence {

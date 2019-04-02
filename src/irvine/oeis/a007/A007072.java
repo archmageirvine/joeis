@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007072.
+ * A007072 First column of array associated with monotonic justified array.
  * @author Sean A. Irvine
  */
 public class A007072 implements Sequence {

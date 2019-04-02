@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000108;
 
 /**
- * A014329.
+ * A014329 Convolution of partition numbers and Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A014329 extends ConvolutionSequence {

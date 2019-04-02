@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000404.
+ * A000404 Numbers that are the sum of 2 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000404 implements Sequence {

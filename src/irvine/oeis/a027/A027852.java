@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A027852.
+ * A027852 Number of connected functions on n points with a loop of length 2.
  * @author Sean A. Irvine
  */
 public class A027852 extends A000081 {

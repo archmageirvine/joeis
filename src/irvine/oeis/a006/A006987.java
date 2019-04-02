@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006987.
+ * A006987 Binomial coefficients: C(n,k), 2 &lt;= k &lt;= n-2, sorted, duplicates removed.
  * @author Sean A. Irvine
  */
 public class A006987 implements Sequence {

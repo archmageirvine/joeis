@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000949.
+ * A000949 Number of forests with n nodes and height at most 2.
  * @author Sean A. Irvine
  */
 public class A000949 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000046.
+ * A000046 Number of primitive n-bead necklaces (turning over is allowed) where complements are equivalent.
  * @author Sean A. Irvine
  */
 public class A000046 implements Sequence {

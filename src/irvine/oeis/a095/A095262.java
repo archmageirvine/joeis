@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095262.
+ * A095262 A sequence derived from a truncated Pascal's Triangle matrix.
  * @author Sean A. Irvine
  */
 public class A095262 extends LinearRecurrence {

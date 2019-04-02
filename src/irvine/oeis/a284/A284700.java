@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284700.
+ * A284700 Number of edge covers in the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A284700 extends LinearRecurrence {

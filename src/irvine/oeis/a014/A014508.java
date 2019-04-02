@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014508.
+ * A014508 a(n) = floor( n! / e ).
  * @author Sean A. Irvine
  */
 public class A014508 implements Sequence {

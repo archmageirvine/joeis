@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000142;
 
 /**
- * A004153.
+ * A004153 Factorial numbers written backwards.
  * @author Sean A. Irvine
  */
 public class A004153 extends A000142 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005209.
+ * A005209 Multilevel sieve: at k-th step, accept k numbers, reject k, accept k, ...
  * @author Sean A. Irvine
  */
 public class A005209 implements Sequence {

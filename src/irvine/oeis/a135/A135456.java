@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135456.
+ * A135456 Number of surjections from an n-element set onto a seven-element set.
  * @author Sean A. Irvine
  */
 public class A135456 extends LinearRecurrence {

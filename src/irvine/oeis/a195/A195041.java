@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195041.
+ * A195041 Concentric heptagonal numbers.
  * @author Sean A. Irvine
  */
 public class A195041 extends LinearRecurrence {

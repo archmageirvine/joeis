@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084968.
+ * A084968 Multiples of 7 coprime to 30.
  * @author Sean A. Irvine
  */
 public class A084968 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014180.
+ * A014180 Sum_{k = 0..n} binomial(n,k)^3*binomial(n+k,k)^2.
  * @author Sean A. Irvine
  */
 public class A014180 implements Sequence {

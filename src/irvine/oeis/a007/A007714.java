@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.EulerTransformSequence;
 
 /**
- * A007714.
+ * A007714 Number of 5-level rooted trees with n leaves.
  * @author Sean A. Irvine
  */
 public class A007714 extends EulerTransformSequence {

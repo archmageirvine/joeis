@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A007884.
+ * A007884 Chimes made by clock striking quarter-hours.
  * @author Sean A. Irvine
  */
 public class A007884 extends PeriodicSequence {

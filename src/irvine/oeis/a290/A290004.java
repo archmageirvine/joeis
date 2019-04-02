@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290004.
+ * A290004 Wiener index of the n-Hanoi graph.
  * @author Sean A. Irvine
  */
 public class A290004 extends LinearRecurrence {

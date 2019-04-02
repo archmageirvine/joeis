@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A146759.
+ * A146759 Number of primes p &lt; 10^n such that c - p is prime, where c is the next cube greater than p.
  * @author Sean A. Irvine
  */
 public class A146759 implements Sequence {

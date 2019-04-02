@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A156164.
+ * A156164 Decimal expansion of 17+12*sqrt(2).
  * @author Sean A. Irvine
  */
 public class A156164 extends DecimalExpansionSequence {

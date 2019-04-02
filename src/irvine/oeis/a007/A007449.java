@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007449.
+ * A007449 a(0) = 7, a(1) = 9; for n &gt;= 0, a(2n+1) = a(2n-1)^2 - a(2n-2), a(2n+2) = a(2n)^2 - a(2n+1).
  * @author Sean A. Irvine
  */
 public class A007449 implements Sequence {

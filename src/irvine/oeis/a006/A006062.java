@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006062.
+ * A006062 Star-hex numbers.
  * @author Sean A. Irvine
  */
 public class A006062 implements Sequence {

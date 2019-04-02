@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179449.
+ * A179449 Decimal expansion of the volume of great icosahedron with edge length 1.
  * @author Sean A. Irvine
  */
 public class A179449 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019497.
+ * A019497 Number of ternary search trees on n keys.
  * @author Sean A. Irvine
  */
 public class A019497 implements Sequence {

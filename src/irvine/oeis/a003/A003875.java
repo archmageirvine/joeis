@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003875.
+ * A003875 Degrees of irreducible representations of symmetric group S_11.
  * @author Sean A. Irvine
  */
 public class A003875 extends FiniteSequence {

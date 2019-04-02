@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000616.
+ * A000616 a(-1)=1 by convention; for n &gt;= 0, a(n) = number of irreducible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000616 implements Sequence {

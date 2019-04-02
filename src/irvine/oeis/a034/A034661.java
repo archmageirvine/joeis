@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034661.
+ * A034661 Sum of n-th powers of divisors of 18.
  * @author Sean A. Irvine
  */
 public class A034661 extends LinearRecurrence {

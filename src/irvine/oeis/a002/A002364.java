@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002364.
+ * A002364 Numerators of convergents to fifth root of 5.
  * @author Sean A. Irvine
  */
 public class A002364 extends A002951 {

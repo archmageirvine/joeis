@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204419.
+ * A204419 y-values in the solutions to x^2 - 313*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A204419 extends LinearRecurrence {

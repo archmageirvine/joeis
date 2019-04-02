@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003428.
+ * A003428 Number of trees by stability index.
  * @author Sean A. Irvine
  */
 public class A003428 implements Sequence {

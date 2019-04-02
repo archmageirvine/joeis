@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010906.
+ * A010906 Inverse Aronson transform of squares.
  * @author Sean A. Irvine
  */
 public class A010906 implements Sequence {

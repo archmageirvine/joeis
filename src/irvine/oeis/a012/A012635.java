@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012635.
+ * A012635 sin(arcsinh(x)*cos(x))=x-5/3!*x^3+65/5!*x^5-2221/7!*x^7+119873/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012635 implements Sequence {

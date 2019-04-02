@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178441.
+ * A178441 INVERT transform of A058187, the tetrahedral numbers with repeats.
  * @author Sean A. Irvine
  */
 public class A178441 extends LinearRecurrence {

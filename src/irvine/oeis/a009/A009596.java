@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009596.
+ * A009596 Expansion of e.g.f. sinh(sin(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009596 implements Sequence {

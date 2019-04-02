@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092365.
+ * A092365 Coefficient of X^2 in expansion of (1 + n*X + n*X^2)^n.
  * @author Sean A. Irvine
  */
 public class A092365 extends LinearRecurrence {

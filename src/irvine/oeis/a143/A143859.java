@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143859.
+ * A143859 Ulam's spiral (WNW spoke).
  * @author Sean A. Irvine
  */
 public class A143859 extends LinearRecurrence {

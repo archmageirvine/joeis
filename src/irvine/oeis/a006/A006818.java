@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A006818.
+ * A006818 Trails of length n on hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A006818 implements Sequence {

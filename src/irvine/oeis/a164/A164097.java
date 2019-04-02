@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164097.
+ * A164097 Numbers n such that 6n + 7 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A164097 extends LinearRecurrence {

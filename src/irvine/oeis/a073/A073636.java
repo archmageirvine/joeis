@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073636.
+ * A073636 Period 3: repeat [1, 8, 9] ; Digital root of A000578(n) = n^3 for n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A073636 extends LinearRecurrence {

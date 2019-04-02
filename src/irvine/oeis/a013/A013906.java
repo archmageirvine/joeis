@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013906.
+ * A013906 a(n) = 23^(5*n + 1).
  * @author Sean A. Irvine
  */
 public class A013906 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010490.
+ * A010490 Decimal expansion of square root of 35.
  * @author Sean A. Irvine
  */
 public class A010490 extends A002193 {

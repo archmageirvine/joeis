@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006090.
+ * A006090 Expansion of bracket function.
  * @author Sean A. Irvine
  */
 public class A006090 extends LinearRecurrence {

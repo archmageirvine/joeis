@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168388.
+ * A168388 First number in the n-th row of A172002.
  * @author Sean A. Irvine
  */
 public class A168388 extends LinearRecurrence {

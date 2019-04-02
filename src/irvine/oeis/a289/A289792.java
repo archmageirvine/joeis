@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289792.
+ * A289792 Number of 4-cycles in the n-tetrahedral graph.
  * @author Sean A. Irvine
  */
 public class A289792 extends LinearRecurrence {

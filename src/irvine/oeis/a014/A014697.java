@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014697.
+ * A014697 Poincar&#233; series [or Poincare series] (or Molien series) for mod 2 cohomology of universal W-group W(4).
  * @author Sean A. Irvine
  */
 public class A014697 implements Sequence {

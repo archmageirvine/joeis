@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287497.
+ * A287497 Number of maximal matchings in the n-web graph.
  * @author Sean A. Irvine
  */
 public class A287497 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009290.
+ * A009290 Expansion of exp(x)/cos(sinh(x)).
  * @author Sean A. Irvine
  */
 public class A009290 implements Sequence {

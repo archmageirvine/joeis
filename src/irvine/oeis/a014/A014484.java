@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014484.
+ * A014484 Expansion of (1+2x)/(1-2x)^4 (E.g.f.).
  * @author Sean A. Irvine
  */
 public class A014484 implements Sequence {

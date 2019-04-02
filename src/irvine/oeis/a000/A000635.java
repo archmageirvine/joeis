@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000635.
+ * A000635 Number of paraffins C_n H_{2n} X Y with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000635 extends A000642 {

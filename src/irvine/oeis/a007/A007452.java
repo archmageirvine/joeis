@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007452.
+ * A007452 Expand cos x / exp x and invert nonzero coefficients.
  * @author Sean A. Irvine
  */
 public class A007452 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113301.
+ * A113301 Sum of odd-indexed terms of tribonacci numbers.
  * @author Sean A. Irvine
  */
 public class A113301 extends LinearRecurrence {

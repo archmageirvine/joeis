@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006521.
+ * A006521 Numbers n such that n divides 2^n + 1.
  * @author Sean A. Irvine
  */
 public class A006521 implements Sequence {

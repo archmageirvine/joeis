@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004186.
+ * A004186 Arrange digits of n in decreasing order.
  * @author Sean A. Irvine
  */
 public class A004186 implements Sequence {

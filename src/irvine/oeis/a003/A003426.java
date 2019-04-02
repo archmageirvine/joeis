@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000055;
 import irvine.oeis.a002.A002988;
 
 /**
- * A003426.
+ * A003426 Number of stable trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003426 extends A000055 {

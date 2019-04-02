@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124353.
+ * A124353 Number of (directed) Hamiltonian circuits on the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A124353 extends LinearRecurrence {

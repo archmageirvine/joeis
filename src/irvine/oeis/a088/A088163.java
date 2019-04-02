@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088163.
+ * A088163 Numbers for which rotating one binary place to the right less rotating one binary place to the left is equal to zero.
  * @author Sean A. Irvine
  */
 public class A088163 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014430.
+ * A014430 Subtract 1 from Pascal's triangle, read by rows.
  * @author Sean A. Irvine
  */
 public class A014430 implements Sequence {

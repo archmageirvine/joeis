@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245738.
+ * A245738 Number of compositions of n into parts 1 and 2 with both parts present.
  * @author Sean A. Irvine
  */
 public class A245738 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190913.
+ * A190913 Sequence A190914 evaluated at the negative index -n.
  * @author Sean A. Irvine
  */
 public class A190913 extends LinearRecurrence {

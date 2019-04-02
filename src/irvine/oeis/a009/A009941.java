@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009941.
+ * A009941 Coordination sequence for Ni2In, Position Ni1 and In.
  * @author Sean A. Irvine
  */
 public class A009941 extends CoordinationSequence {

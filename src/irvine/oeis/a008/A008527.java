@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008527.
+ * A008527 Coordination sequence for body-centered tetragonal lattice.
  * @author Sean A. Irvine
  */
 public class A008527 extends CoordinationSequence {

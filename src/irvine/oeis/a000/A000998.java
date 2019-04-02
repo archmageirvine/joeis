@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000998.
+ * A000998 From a differential equation.
  * @author Sean A. Irvine
  */
 public class A000998 implements Sequence {

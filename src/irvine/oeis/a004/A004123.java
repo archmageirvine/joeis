@@ -4,7 +4,7 @@ import irvine.oeis.Stirling2TransformSequence;
 import irvine.oeis.a000.A000165;
 
 /**
- * A004123.
+ * A004123 Number of generalized weak orders on n points.
  * @author Sean A. Irvine
  */
 public class A004123 extends Stirling2TransformSequence {

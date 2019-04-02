@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002309.
+ * A002309 Sum of first n fourth powers of odd numbers.
  * @author Sean A. Irvine
  */
 public class A002309 implements Sequence {

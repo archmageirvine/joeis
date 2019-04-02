@@ -8,7 +8,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.group.IntegerField;
 
 /**
- * A002653.
+ * A002653 Expansion of (theta_3(z)*theta_3(7z)+theta_2(z)*theta_2(7z))^3.
  * @author Sean A. Irvine
  */
 public class A002653 implements Sequence {

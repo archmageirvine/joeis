@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272850.
+ * A272850 a(n) = (n^2 + (n+1)^2)*(n^2 + (n+1)^2 + 2*n*(n+1)).
  * @author Sean A. Irvine
  */
 public class A272850 extends LinearRecurrence {

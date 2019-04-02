@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019520.
+ * A019520 a(n) is the concatenation of the first n positive even numbers.
  * @author Sean A. Irvine
  */
 public class A019520 implements Sequence {

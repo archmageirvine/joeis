@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A006217.
+ * A006217 Number of down-up permutations of n+5 starting with 5.
  * @author Sean A. Irvine
  */
 public class A006217 extends A000111 {

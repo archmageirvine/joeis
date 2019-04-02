@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.math.z.Z;
 
 /**
- * A010568.
+ * A010568 2n-step 4-dimensional closed paths on 4-d cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010568 extends A010575 {

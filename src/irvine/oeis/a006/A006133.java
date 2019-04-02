@@ -5,7 +5,7 @@ import irvine.oeis.a003.A003231;
 import irvine.oeis.a003.A003234;
 
 /**
- * A006133.
+ * A006133 Related to representations as sums of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A006133 extends A003231 {

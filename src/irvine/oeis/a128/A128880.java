@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128880.
+ * A128880 Triangular numbers congruent to 1 or 5 mod 6.
  * @author Sean A. Irvine
  */
 public class A128880 extends LinearRecurrence {

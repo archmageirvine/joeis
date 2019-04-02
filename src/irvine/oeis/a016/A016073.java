@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A016073.
+ * A016073 Undulating squares.
  * @author Sean A. Irvine
  */
 public class A016073 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002004;
 
 /**
- * A005281.
+ * A005281 Davenport-Schinzel numbers.
  * @author Sean A. Irvine
  */
 public class A005281 extends A002004 {

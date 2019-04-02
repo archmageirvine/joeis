@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A003455.
+ * A003455 Number of nonequivalent dissections of an n-gon by nonintersecting diagonals up to rotation.
  * @author Sean A. Irvine
  */
 public class A003455 extends A003447 {

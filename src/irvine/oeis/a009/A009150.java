@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009150.
+ * A009150 Expansion of e.g.f. cosh(sin(x)^2) (even coefficients).
  * @author Sean A. Irvine
  */
 public class A009150 implements Sequence {

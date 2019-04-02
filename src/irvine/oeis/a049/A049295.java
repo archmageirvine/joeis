@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049295.
+ * A049295 Number of subgroups of index 4 in free group of rank n+1.
  * @author Sean A. Irvine
  */
 public class A049295 extends LinearRecurrence {

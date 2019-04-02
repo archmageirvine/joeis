@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007464.
+ * A007464 Shifts left under GCD-convolution with itself.
  * @author Sean A. Irvine
  */
 public class A007464 extends MemorySequence {

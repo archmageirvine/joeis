@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001841.
+ * A001841 Related to Zarankiewicz's problem.
  * @author Sean A. Irvine
  */
 public class A001841 implements Sequence {

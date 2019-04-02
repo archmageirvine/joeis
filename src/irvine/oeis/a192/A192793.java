@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192793.
+ * A192793 Molecular topological indices of the crossed prism graphs.
  * @author Sean A. Irvine
  */
 public class A192793 extends LinearRecurrence {

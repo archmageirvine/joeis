@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A002493.
+ * A002493 Number of ways to arrange n non-attacking kings on an n X n board, with 2 sides identified to form a cylinder, with 1 in each row and column.
  * @author Sean A. Irvine
  */
 public class A002493 implements Sequence {

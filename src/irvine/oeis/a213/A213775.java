@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213775.
+ * A213775 Principal diagonal of the convolution array A213774.
  * @author Sean A. Irvine
  */
 public class A213775 extends LinearRecurrence {

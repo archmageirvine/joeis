@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282023.
+ * A282023 Start with 1; multiply alternately by 4 and 3.
  * @author Sean A. Irvine
  */
 public class A282023 extends LinearRecurrence {

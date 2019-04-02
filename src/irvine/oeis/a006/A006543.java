@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006543.
+ * A006543 Maximal iterated binomial coefficients.
  * @author Sean A. Irvine
  */
 public class A006543 implements Sequence {

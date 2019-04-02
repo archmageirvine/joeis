@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290608.
+ * A290608 Number of maximal independent vertex sets (and minimal vertex covers) in the n-Moebius ladder graph.
  * @author Sean A. Irvine
  */
 public class A290608 extends LinearRecurrence {

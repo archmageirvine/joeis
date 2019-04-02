@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003316.
+ * A003316 Sum of lengths of longest increasing subsequences of all permutations of n elements.
  * @author Sean A. Irvine
  */
 public class A003316 implements Sequence {

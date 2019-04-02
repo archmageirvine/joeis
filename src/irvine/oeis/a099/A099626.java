@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099626.
+ * A099626 A transform of the Pell numbers.
  * @author Sean A. Irvine
  */
 public class A099626 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278313.
+ * A278313 Number of letters "I" in Roman numeral representation of n.
  * @author Sean A. Irvine
  */
 public class A278313 extends LinearRecurrence {

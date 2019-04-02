@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000080.
+ * A000080 Number of nonisomorphic minimal triangle graphs.
  * @author Sean A. Irvine
  */
 public class A000080 implements Sequence {

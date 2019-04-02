@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005889.
+ * A005889 Theta series of hexagonal close-packing with respect to triangle between octahedra.
  * @author Sean A. Irvine
  */
 public class A005889 implements Sequence {

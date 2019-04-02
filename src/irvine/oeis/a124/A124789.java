@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124789.
+ * A124789 Expansion of (1+x^2)/(1-x^4-x^5).
  * @author Sean A. Irvine
  */
 public class A124789 extends LinearRecurrence {

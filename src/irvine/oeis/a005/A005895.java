@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005895.
+ * A005895 Weighted count of partitions with distinct parts.
  * @author Sean A. Irvine
  */
 public class A005895 extends MemoryFunction2<Long, Z> implements Sequence {

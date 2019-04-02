@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008642.
+ * A008642 Quarter-squares repeated.
  * @author Sean A. Irvine
  */
 public class A008642 extends LinearRecurrence {

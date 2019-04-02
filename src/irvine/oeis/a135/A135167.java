@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135167.
+ * A135167 a(n) = 7^n + 5^n + 3^n - 2^n. Constants are the prime numbers in decreasing order.
  * @author Sean A. Irvine
  */
 public class A135167 extends LinearRecurrence {

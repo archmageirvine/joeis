@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002832.
+ * A002832 Median Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002832 implements Sequence {

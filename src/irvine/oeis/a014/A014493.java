@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014493.
+ * A014493 Odd triangular numbers.
  * @author Sean A. Irvine
  */
 public class A014493 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131298.
+ * A131298 A difference of Fibonacci and Padovan numbers.
  * @author Sean A. Irvine
  */
 public class A131298 extends LinearRecurrence {

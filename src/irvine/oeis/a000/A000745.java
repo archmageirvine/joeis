@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000745.
+ * A000745 Boustrophedon transform of squares.
  * @author Sean A. Irvine
  */
 public class A000745 extends A000674 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A002726.
+ * A002726 a(n) = Fibonacci(n+1) mod n.
  * @author Sean A. Irvine
  */
 public class A002726 extends A000045 {

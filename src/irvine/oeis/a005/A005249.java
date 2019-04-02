@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005249.
+ * A005249 Determinant of inverse Hilbert matrix.
  * @author Sean A. Irvine
  */
 public class A005249 implements Sequence {

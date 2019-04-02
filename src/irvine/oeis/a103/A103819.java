@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103819.
+ * A103819 Whitney transform of Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A103819 extends LinearRecurrence {

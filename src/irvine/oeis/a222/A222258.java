@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222258.
+ * A222258 Lexicographically earliest injective sequence of nonnegative integers such that the sum of 8 consecutive terms is always divisible by 8.
  * @author Sean A. Irvine
  */
 public class A222258 extends LinearRecurrence {

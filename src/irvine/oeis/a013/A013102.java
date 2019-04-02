@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013102.
+ * A013102 E.g.f: sech(arcsinh(x)+tan(x))=1-4/2!*x^2+72/4!*x^4-3414/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013102 implements Sequence {

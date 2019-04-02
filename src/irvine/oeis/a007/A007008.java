@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007008.
+ * A007008 Chvatal conjecture for radius of graph of maximal intersecting sets.
  * @author Sean A. Irvine
  */
 public class A007008 implements Sequence {

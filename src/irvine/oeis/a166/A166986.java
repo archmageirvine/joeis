@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166986.
+ * A166986 a(n) = 2*floor((n+2)/log(2)) - 4 = 2*Sum_{i=2,..,n+1}(A022934(i)).
  * @author Sean A. Irvine
  */
 public class A166986 extends LinearRecurrence {

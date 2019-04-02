@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006521;
 
 /**
- * A016060.
+ * A016060 (s(n)+s(n+1))/18, where s()=A006521.
  * @author Sean A. Irvine
  */
 public class A016060 extends A006521 {

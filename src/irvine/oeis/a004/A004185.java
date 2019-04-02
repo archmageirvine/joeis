@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004185.
+ * A004185 Arrange digits of n in increasing order, then (for n&gt;0) omit the zeros.
  * @author Sean A. Irvine
  */
 public class A004185 implements Sequence {

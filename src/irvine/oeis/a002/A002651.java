@@ -7,7 +7,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 /**
- * A002651.
+ * A002651 Dates at 16-day intervals starting at the beginning of a leap year.
  * @author Sean A. Irvine
  */
 public class A002651 implements Sequence {

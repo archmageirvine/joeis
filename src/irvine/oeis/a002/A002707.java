@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.q.Q;
 
 /**
- * A002707.
+ * A002707 Number of ternary trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A002707 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254749.
+ * A254749 1-gonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A254749 extends LinearRecurrence {

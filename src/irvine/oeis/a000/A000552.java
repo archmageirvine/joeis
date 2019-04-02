@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A000552.
+ * A000552 Number of labeled rooted trees of height 3 with n nodes.
  * @author Sean A. Irvine
  */
 public class A000552 implements Sequence {

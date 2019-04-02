@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002623.
+ * A002623 G.f.: 1/((1-x)^4*(1+x)).
  * @author Sean A. Irvine
  */
 public class A002623 implements Sequence {

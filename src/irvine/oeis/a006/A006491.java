@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006491.
+ * A006491 Generalized Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A006491 extends A000045 {

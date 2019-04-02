@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006598.
+ * A006598 Numbers n such that 2^(2n+1) - 2^(n+1) + 1 is a prime.
  * @author Sean A. Irvine
  */
 public class A006598 implements Sequence {

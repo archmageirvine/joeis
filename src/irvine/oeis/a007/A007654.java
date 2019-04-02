@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007654.
+ * A007654 Numbers n such that the standard deviation of 1,...,n is an integer.
  * @author Sean A. Irvine
  */
 public class A007654 implements Sequence {

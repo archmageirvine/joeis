@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005847.
+ * A005847 Imaginary quadratic fields with class number 2 (a finite sequence).
  * @author Sean A. Irvine
  */
 public class A005847 extends FiniteSequence {

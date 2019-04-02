@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007392.
+ * A007392 Number of strict 3rd-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007392 extends A007387 {

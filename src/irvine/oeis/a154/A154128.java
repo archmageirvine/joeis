@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154128.
+ * A154128 a(n) = 5^n*(n+4)!/n!.
  * @author Sean A. Irvine
  */
 public class A154128 extends LinearRecurrence {

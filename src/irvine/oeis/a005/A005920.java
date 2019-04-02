@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005920.
+ * A005920 Tricapped prism numbers.
  * @author Sean A. Irvine
  */
 public class A005920 implements Sequence {

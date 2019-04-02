@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009667.
+ * A009667 E.g.f. tan(sin(x))*x, even numbered terms only.
  * @author Sean A. Irvine
  */
 public class A009667 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.a036.A036669;
 
 /**
- * A000633.
+ * A000633 Ammonium compounds with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000633 extends A036669 {

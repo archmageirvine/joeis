@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007780.
+ * A007780 Losing initial configurations in 2-hole Tchuka Ruma.
  * @author Sean A. Irvine
  */
 public class A007780 implements Sequence {

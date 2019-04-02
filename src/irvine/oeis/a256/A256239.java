@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256239.
+ * A256239 Sum of all the parts in the partitions of 6n into 6 parts.
  * @author Sean A. Irvine
  */
 public class A256239 extends LinearRecurrence {

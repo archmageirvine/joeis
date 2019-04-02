@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289423.
+ * A289423 Number of Dyck paths of semilength n and height exactly 10.
  * @author Sean A. Irvine
  */
 public class A289423 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A002438.
+ * A002438 Multiples of Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002438 extends A000364 {

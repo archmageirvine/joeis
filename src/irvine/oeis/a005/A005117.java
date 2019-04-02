@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005117.
+ * A005117 Squarefree numbers: numbers that are not divisible by a square greater than 1.
  * @author Sean A. Irvine
  */
 public class A005117 implements Sequence {

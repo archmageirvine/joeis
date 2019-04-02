@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006428.
+ * A006428 Number of tree-rooted planar maps with 3 vertices and n faces.
  * @author Sean A. Irvine
  */
 public class A006428 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007627.
+ * A007627 Primitive modest numbers.
  * @author Sean A. Irvine
  */
 public class A007627 implements Sequence {

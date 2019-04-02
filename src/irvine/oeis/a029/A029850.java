@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A029850.
+ * A029850 Number of self-converse groupoids.
  * @author Sean A. Irvine
  */
 public class A029850 implements Sequence {

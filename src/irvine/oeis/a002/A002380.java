@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002380.
+ * A002380 a(n) = 3^n reduced modulo 2^n.
  * @author Sean A. Irvine
  */
 public class A002380 implements Sequence {

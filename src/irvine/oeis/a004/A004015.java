@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004015.
+ * A004015 Theta series of face-centered cubic (f.c.c.) lattice.
  * @author Sean A. Irvine
  */
 public class A004015 implements Sequence {

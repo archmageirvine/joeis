@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002806.
+ * A002806 Number of ways of getting nothing, a pair, 2 pair, 3 of a kind, other straight, other flush, full house, 4 of a kind, other straight flush, or a royal flush in 5-card poker.
  * @author Sean A. Irvine
  */
 public class A002806 extends FiniteSequence {

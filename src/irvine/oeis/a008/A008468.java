@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008468.
+ * A008468 a(n) = n OR n^3 (applied to binary expansions).
  * @author Sean A. Irvine
  */
 public class A008468 implements Sequence {

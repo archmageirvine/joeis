@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001665;
 
 /**
- * A005397.
+ * A005397 Number of n-step polygons on Kagome lattice.
  * @author Sean A. Irvine
  */
 public class A005397 extends A001665 {

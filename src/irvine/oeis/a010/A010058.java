@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A010058.
+ * A010058 1 if n is a Catalan number else 0.
  * @author Sean A. Irvine
  */
 public class A010058 extends A000108 {

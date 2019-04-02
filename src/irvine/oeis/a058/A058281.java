@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058281.
+ * A058281 Continued fraction for square root of e.
  * @author Sean A. Irvine
  */
 public class A058281 extends LinearRecurrence {

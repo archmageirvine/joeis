@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A186209.
+ * A186209 Coefficients of modular function denoted g_5(tau) by Atkin.
  * @author Sean A. Irvine
  */
 public class A186209 extends EulerTransformSequence {

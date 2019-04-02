@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017244.
+ * A017244 a(n) = (9*n + 6)^12.
  * @author Sean A. Irvine
  */
 public class A017244 implements Sequence {

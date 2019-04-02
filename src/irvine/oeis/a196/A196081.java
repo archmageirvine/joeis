@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196081.
+ * A196081 Dungeons and Dragons Ability Modifier Sequence.
  * @author Sean A. Irvine
  */
 public class A196081 extends LinearRecurrence {

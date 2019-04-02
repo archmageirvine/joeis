@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000436;
 
 /**
- * A002114.
+ * A002114 Glaisher's H' numbers.
  * @author Sean A. Irvine
  */
 public class A002114 extends A000436 {

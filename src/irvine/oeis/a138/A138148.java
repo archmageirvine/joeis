@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138148.
+ * A138148 Cyclops numbers with binary digits only.
  * @author Sean A. Irvine
  */
 public class A138148 extends LinearRecurrence {

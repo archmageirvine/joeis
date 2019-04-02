@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007904.
+ * A007904 Crystal ball sequence for diamond.
  * @author Sean A. Irvine
  */
 public class A007904 implements Sequence {

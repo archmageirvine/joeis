@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005101;
 
 /**
- * A006038.
+ * A006038 Odd primitive abundant numbers.
  * @author Sean A. Irvine
  */
 public class A006038 extends A005101 {

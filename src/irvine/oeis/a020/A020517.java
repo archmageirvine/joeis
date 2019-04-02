@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020517.
+ * A020517 9th cyclotomic polynomial evaluated at powers of 2.
  * @author Sean A. Irvine
  */
 public class A020517 extends LinearRecurrence {

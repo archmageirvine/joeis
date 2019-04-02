@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003471;
 
 /**
- * A007016.
+ * A007016 Number of permutations of length n with 1 fixed and 1 reflected point.
  * @author Sean A. Irvine
  */
 public class A007016 extends A003471 {

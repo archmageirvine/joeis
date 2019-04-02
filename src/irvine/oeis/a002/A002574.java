@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 /**
- * A002574.
+ * A002574 Restricted partitions.
  * @author Sean A. Irvine
  */
 public class A002574 extends A002573 {

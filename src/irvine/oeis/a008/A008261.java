@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008261.
+ * A008261 Coordination sequence for quartz.
  * @author Sean A. Irvine
  */
 public class A008261 extends CoordinationSequence {

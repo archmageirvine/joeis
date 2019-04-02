@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A000595.
+ * A000595 Relations: number of nonisomorphic unlabeled binary relations on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A000595 implements Sequence {

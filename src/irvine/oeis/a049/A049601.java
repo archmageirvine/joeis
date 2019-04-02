@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049601.
+ * A049601 a(n)=Sum{T(2i,n-2i): i=0,1,...,[ n/2 ]}, array T as in A049600.
  * @author Sean A. Irvine
  */
 public class A049601 extends LinearRecurrence {

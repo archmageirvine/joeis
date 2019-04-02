@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105163.
+ * A105163 a(n) = (n^3 - 7*n + 12)/6.
  * @author Sean A. Irvine
  */
 public class A105163 extends LinearRecurrence {

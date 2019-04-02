@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186111.
+ * A186111 a(n) = -n if n odd, a(2n) = 3n if n odd, a(4n) = 2n.
  * @author Sean A. Irvine
  */
 public class A186111 extends LinearRecurrence {

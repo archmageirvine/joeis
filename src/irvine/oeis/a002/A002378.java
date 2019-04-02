@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002378.
+ * A002378 Oblong (or promic, pronic, or heteromecic) numbers: a(n) = n*(n+1).
  * @author Sean A. Irvine
  */
 public class A002378 implements Sequence {

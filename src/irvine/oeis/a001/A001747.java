@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001747.
+ * A001747 2 together with primes multiplied by 2.
  * @author Sean A. Irvine
  */
 public class A001747 implements Sequence {

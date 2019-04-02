@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111080.
+ * A111080 Sum of numbers under a triangle on a spiral staircase of width 10.
  * @author Sean A. Irvine
  */
 public class A111080 extends LinearRecurrence {

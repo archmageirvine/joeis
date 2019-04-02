@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000186;
 
 /**
- * A001626.
+ * A001626 Number of 3-line Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001626 extends A000186 {

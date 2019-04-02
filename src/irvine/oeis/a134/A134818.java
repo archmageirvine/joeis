@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A134818.
+ * A134818 Number of connected multigraphs with n nodes of degree at most 4 and with at most triple edges.
  * @author Sean A. Irvine
  */
 public class A134818 implements Sequence, GraphProcessor {

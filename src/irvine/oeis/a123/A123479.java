@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123479.
+ * A123479 Coefficients of series giving the best rational approximations to sqrt(6).
  * @author Sean A. Irvine
  */
 public class A123479 extends LinearRecurrence {

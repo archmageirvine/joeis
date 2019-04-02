@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232567.
+ * A232567 Number of non-equivalent binary n X n matrices with two nonadjacent 1's.
  * @author Sean A. Irvine
  */
 public class A232567 extends LinearRecurrence {

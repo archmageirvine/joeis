@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260006.
+ * A260006 a(n) = f(1,n,n), where f is the Sudan function defined in A260002.
  * @author Sean A. Irvine
  */
 public class A260006 extends LinearRecurrence {

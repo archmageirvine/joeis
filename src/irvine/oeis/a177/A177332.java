@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177332.
+ * A177332 Partial sums of round(n^2/29).
  * @author Sean A. Irvine
  */
 public class A177332 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.plantri.PlantriGraphState;
 import irvine.oeis.ParallelPlantriSequence;
 
 /**
- * A007030.
+ * A007030 Non-Hamiltonian simplicial polyhedra with n nodes.
  * @author Sean A. Irvine
  */
 public class A007030 extends ParallelPlantriSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219259.
+ * A219259 Numbers k such that 25*k+1 is a square.
  * @author Sean A. Irvine
  */
 public class A219259 extends LinearRecurrence {

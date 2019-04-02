@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100152.
+ * A100152 Structured truncated cubic numbers.
  * @author Sean A. Irvine
  */
 public class A100152 extends LinearRecurrence {

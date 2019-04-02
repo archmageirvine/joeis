@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000240.
+ * A000240 Rencontres numbers: number of permutations of [n] with exactly one fixed point.
  * @author Sean A. Irvine
  */
 public class A000240 implements Sequence {

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * A003030.
+ * A003030 Number of strongly connected digraphs with n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A003030 implements Sequence {

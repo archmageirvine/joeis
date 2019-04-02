@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011927.
+ * A011927 [ n(n-1)(n-2)(n-3)/17 ].
  * @author Sean A. Irvine
  */
 public class A011927 implements Sequence {

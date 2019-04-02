@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100161.
+ * A100161 Structured disdyakis dodecahedral numbers (vertex structure 9).
  * @author Sean A. Irvine
  */
 public class A100161 extends LinearRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006540.
+ * A006540 Denominators of worst case for Engel expansion.
  * @author Sean A. Irvine
  */
 public class A006540 extends A006538 {

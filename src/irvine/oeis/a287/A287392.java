@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287392.
+ * A287392 Domination number for lion's graph on an n by n board.
  * @author Sean A. Irvine
  */
 public class A287392 extends LinearRecurrence {

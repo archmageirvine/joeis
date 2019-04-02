@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265021.
+ * A265021 Sum of fifth powers of the first n even numbers.
  * @author Sean A. Irvine
  */
 public class A265021 extends LinearRecurrence {

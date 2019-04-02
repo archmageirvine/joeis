@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import org.apfloat.Apfloat;
 
 /**
- * A000694.
+ * A000694 Related to population of numbers of form x^2 + y^2.
  * @author Sean A. Irvine
  */
 public class A000694 implements Sequence {

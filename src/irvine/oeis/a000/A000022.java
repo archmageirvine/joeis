@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000022.
+ * A000022 Number of centered hydrocarbons with n atoms.
  * @author Sean A. Irvine
  */
 public class A000022 extends A000678 {

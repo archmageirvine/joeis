@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014783.
+ * A014783 Triangle of numbers associated with Genocchi numbers.
  * @author Sean A. Irvine
  */
 public class A014783 extends A014780 {

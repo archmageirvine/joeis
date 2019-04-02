@@ -5,7 +5,7 @@ import irvine.oeis.a005.A005043;
 import irvine.oeis.a005.A005213;
 
 /**
- * A007122.
+ * A007122 Number of unlabeled identity connected unit interval graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007122 extends A005043 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019554.
+ * A019554 Smallest number whose square is divisible by n.
  * @author Sean A. Irvine
  */
 public class A019554 implements Sequence {

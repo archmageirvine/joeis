@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005430.
+ * A005430 Ap&#233;ry numbers: n*C(2*n,n).
  * @author Sean A. Irvine
  */
 public class A005430 implements Sequence {

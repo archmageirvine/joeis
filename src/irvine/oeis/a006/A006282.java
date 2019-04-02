@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006282.
+ * A006282 Sorting numbers: number of comparisons in Batcher's parallel sort.
  * @author Sean A. Irvine
  */
 public class A006282 extends MemorySequence {

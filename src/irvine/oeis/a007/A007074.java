@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007074.
+ * A007074 First column of array associated with reverse lexicographically justified array.
  * @author Sean A. Irvine
  */
 public class A007074 implements Sequence {

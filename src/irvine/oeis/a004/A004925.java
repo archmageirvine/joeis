@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004925.
+ * A004925 Floor of n*phi^10, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004925 implements Sequence {

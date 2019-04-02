@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107253.
+ * A107253 a(n) = n^4 - 15*n + 15.
  * @author Sean A. Irvine
  */
 public class A107253 extends LinearRecurrence {

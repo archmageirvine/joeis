@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022553;
 
 /**
- * A005354.
+ * A005354 Number of asymmetric planar trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005354 extends A022553 {

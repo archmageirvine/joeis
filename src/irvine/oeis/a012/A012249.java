@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012249.
+ * A012249 Volume of a certain rational polytope whose points with given denominator count certain sets of Standard Tableaux.
  * @author Sean A. Irvine
  */
 public class A012249 implements Sequence {

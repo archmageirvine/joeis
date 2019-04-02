@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006158.
+ * A006158 a(n) = a(a(n-3)) + a(n-a(n-3)).
  * @author Sean A. Irvine
  */
 public class A006158 extends MemorySequence {

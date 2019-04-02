@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012815.
+ * A012815 arcsin(sec(x)*sinh(x))=x+5/3!*x^3+85/5!*x^5+3985/7!*x^7+379625/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012815 implements Sequence {

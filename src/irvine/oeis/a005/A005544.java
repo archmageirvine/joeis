@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.a003.A003288;
 
 /**
- * A005544.
+ * A005544 Number of n-step self-avoiding walks on f.c.c. lattice from (0,0,0) to (1,1,2).
  * @author Sean A. Irvine
  */
 public class A005544 extends A003288 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005276.
+ * A005276 Betrothed (or quasi-amicable) numbers.
  * @author Sean A. Irvine
  */
 public class A005276 implements Sequence {

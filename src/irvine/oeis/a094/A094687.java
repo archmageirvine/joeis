@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094687.
+ * A094687 Convolution of Fibonacci and Jacobsthal numbers.
  * @author Sean A. Irvine
  */
 public class A094687 extends LinearRecurrence {

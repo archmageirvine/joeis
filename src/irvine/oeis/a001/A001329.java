@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A001329.
+ * A001329 Number of nonisomorphic groupoids with n elements.
  * @author Sean A. Irvine
  */
 public class A001329 implements Sequence {

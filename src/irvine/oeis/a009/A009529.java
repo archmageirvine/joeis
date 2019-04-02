@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009529.
+ * A009529 Sin(tanh(x)*tan(x))/2 = Sum a(n)*x^(4*n+2)/(4*n+2)!.
  * @author Sean A. Irvine
  */
 public class A009529 implements Sequence {

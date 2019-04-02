@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290470.
+ * A290470 Number of minimal edge covers in the n-Moebius ladder.
  * @author Sean A. Irvine
  */
 public class A290470 extends LinearRecurrence {

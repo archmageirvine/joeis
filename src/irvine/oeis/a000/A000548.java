@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.IntersectionSequence;
 
 /**
- * A000548.
+ * A000548 Squares that are not the sum of 2 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000548 extends IntersectionSequence {

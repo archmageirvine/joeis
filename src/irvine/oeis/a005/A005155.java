@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005155.
+ * A005155 Number of degree sequences of n-node graphs.
  * @author Sean A. Irvine
  */
 public class A005155 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020526.
+ * A020526 a(n) = 6th Euler polynomial evaluated at 2^n.
  * @author Sean A. Irvine
  */
 public class A020526 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063249.
+ * A063249 Doubly hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A063249 extends LinearRecurrence {

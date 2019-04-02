@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047812.
+ * A047812 Parker's partition triangle read by rows.
  * @author Sean A. Irvine
  */
 public class A047812 extends MemoryFunction<Integer, Polynomial<Z>> implements Sequence {

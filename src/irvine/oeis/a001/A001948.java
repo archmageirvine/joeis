@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001948.
+ * A001948 These numbers when multiplied by all powers of 4 give the numbers that are not the sums of 4 distinct squares.
  * @author Sean A. Irvine
  */
 public class A001948 extends FiniteSequence {

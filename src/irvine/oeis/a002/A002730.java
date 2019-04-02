@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import java.util.ArrayList;
 
 /**
- * A002730.
+ * A002730 Number of equivalence classes of binary sequences of primitive period n.
  * @author Sean A. Irvine
  */
 public class A002730 extends A002729 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007176.
+ * A007176 Stopping times (see Borwein-Loring article for precise definition).
  * @author Sean A. Irvine
  */
 public class A007176 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007678.
+ * A007678 Number of regions in regular n-gon with all diagonals drawn.
  * @author Sean A. Irvine
  */
 public class A007678 implements Sequence {

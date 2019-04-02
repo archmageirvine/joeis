@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001521.
+ * A001521 a(1) = 1; thereafter a(n+1) = floor(sqrt(2*a(n)*(a(n)+1))).
  * @author Sean A. Irvine
  */
 public class A001521 implements Sequence {

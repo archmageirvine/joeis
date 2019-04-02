@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005619.
+ * A005619 Number of Boolean functions realized by n-input cascades.
  * @author Sean A. Irvine
  */
 public class A005619 implements Sequence {

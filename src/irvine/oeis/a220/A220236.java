@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220236.
+ * A220236 Binary palindromic numbers with only two 0 bits, both in the middle.
  * @author Sean A. Irvine
  */
 public class A220236 extends LinearRecurrence {

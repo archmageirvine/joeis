@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001321.
+ * A001321 Number of Post functions.
  * @author Sean A. Irvine
  */
 public class A001321 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061830.
+ * A061830 Multiples of 5 having only even digits.
  * @author Sean A. Irvine
  */
 public class A061830 extends LinearRecurrence {

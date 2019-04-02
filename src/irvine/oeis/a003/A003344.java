@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003344.
+ * A003344 Sum of 10 nonzero 4th powers.
  * @author Sean A. Irvine
  */
 public class A003344 implements Sequence {

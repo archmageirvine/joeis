@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134507.
+ * A134507 Number of rectangles in a pyramid built with squares. The squares counted in A092498 are excluded.
  * @author Sean A. Irvine
  */
 public class A134507 extends LinearRecurrence {

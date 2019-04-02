@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274338.
+ * A274338 The 10-cycle of the iterated sum of deficient divisors function.
  * @author Sean A. Irvine
  */
 public class A274338 extends LinearRecurrence {

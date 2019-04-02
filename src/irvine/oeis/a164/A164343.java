@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A164343.
+ * A164343 A positive integer is included if it is a square that contains the same number of 0's as 1's when represented in binary.
  * @author Sean A. Irvine
  */
 public class A164343 implements Sequence {

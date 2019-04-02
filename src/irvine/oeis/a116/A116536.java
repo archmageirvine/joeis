@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A116536.
+ * A116536 Numbers that can be expressed as the ratio between the product and the sum of consecutive prime numbers starting from 2.
  * @author Sean A. Irvine
  */
 public class A116536 implements Sequence {

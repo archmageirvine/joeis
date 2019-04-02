@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000108;
 import irvine.oeis.a000.A000290;
 
 /**
- * A014316.
+ * A014316 Convolution of Catalan numbers and squares.
  * @author Sean A. Irvine
  */
 public class A014316 extends ConvolutionSequence {

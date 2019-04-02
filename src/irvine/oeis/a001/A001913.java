@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001913.
+ * A001913 Full reptend primes: primes with primitive root 10.
  * @author Sean A. Irvine
  */
 public class A001913 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000695.
+ * A000695 Moser-de Bruijn sequence: sums of distinct powers of 4.
  * @author Sean A. Irvine
  */
 public class A000695 implements Sequence {

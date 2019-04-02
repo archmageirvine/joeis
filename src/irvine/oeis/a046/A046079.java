@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046079.
+ * A046079 Number of Pythagorean triangles with leg n.
  * @author Sean A. Irvine
  */
 public class A046079 implements Sequence {

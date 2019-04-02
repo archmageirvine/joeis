@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005069.
+ * A005069 Sum of odd primes dividing n.
  * @author Sean A. Irvine
  */
 public class A005069 implements Sequence {

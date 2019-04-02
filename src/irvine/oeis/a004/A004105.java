@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004105.
+ * A004105 Number of point-self-dual nets with 2n nodes. Also number of directed 2-multigraphs with loops on n nodes.
  * @author Sean A. Irvine
  */
 public class A004105 implements Sequence {

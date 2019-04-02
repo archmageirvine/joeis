@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164490.
+ * A164490 Number of binary strings of length n with no substrings equal to 0010 0011 or 0110.
  * @author Sean A. Irvine
  */
 public class A164490 extends LinearRecurrence {

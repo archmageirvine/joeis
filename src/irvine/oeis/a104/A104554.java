@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104554.
+ * A104554 Expansion of x(1-x)/(1-x+2x^3-x^4).
  * @author Sean A. Irvine
  */
 public class A104554 extends LinearRecurrence {

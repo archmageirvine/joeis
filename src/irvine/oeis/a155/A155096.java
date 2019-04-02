@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155096.
+ * A155096 Numbers n such that n^2 = -1 mod (29).
  * @author Sean A. Irvine
  */
 public class A155096 extends LinearRecurrence {

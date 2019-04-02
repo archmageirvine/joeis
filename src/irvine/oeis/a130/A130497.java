@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130497.
+ * A130497 Repetition of odd numbers five times.
  * @author Sean A. Irvine
  */
 public class A130497 extends LinearRecurrence {

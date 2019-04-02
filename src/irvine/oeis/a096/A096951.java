@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096951.
+ * A096951 Sum of odd powers of 2 and of 3 divided by 5.
  * @author Sean A. Irvine
  */
 public class A096951 extends LinearRecurrence {

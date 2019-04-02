@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001491.
+ * A001491 Opus numbers of Beethoven's nine symphonies.
  * @author Sean A. Irvine
  */
 public class A001491 extends FiniteSequence {

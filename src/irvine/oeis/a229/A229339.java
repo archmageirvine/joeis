@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229339.
+ * A229339 GCD of all sums of n consecutive Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A229339 extends LinearRecurrence {

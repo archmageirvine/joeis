@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094256.
+ * A094256 Expansion of x / ( (x-1)*(x^3-9*x^2+6*x-1) ).
  * @author Sean A. Irvine
  */
 public class A094256 extends LinearRecurrence {

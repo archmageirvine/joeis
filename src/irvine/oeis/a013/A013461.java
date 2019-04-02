@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013461.
+ * A013461 Expansion of e.g.f. exp(arctan(x)-arcsinh(x)) = 1-1/3!*x^3+15/5!*x^5+10/6!*x^6-495/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013461 implements Sequence {

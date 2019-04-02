@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128917.
+ * A128917 Pentagonal numbers (A000326) which are also centered pentagonal numbers (A005891).
  * @author Sean A. Irvine
  */
 public class A128917 extends LinearRecurrence {

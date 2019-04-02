@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061171.
+ * A061171 One half of second column of Lucas bisection triangle (odd part).
  * @author Sean A. Irvine
  */
 public class A061171 extends LinearRecurrence {

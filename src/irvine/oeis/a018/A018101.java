@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018101.
+ * A018101 Powers of fourth root of 19 rounded up.
  * @author Sean A. Irvine
  */
 public class A018101 implements Sequence {

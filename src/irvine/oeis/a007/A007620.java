@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005835;
 
 /**
- * A007620.
+ * A007620 Numbers n such that every k &lt;= n is a sum of proper divisors of n (for n&gt;1).
  * @author Sean A. Irvine
  */
 public class A007620 extends A005835 {

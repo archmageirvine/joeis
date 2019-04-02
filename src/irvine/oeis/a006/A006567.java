@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A006567.
+ * A006567 Emirps (primes whose reversal is a different prime).
  * @author Sean A. Irvine
  */
 public class A006567 implements Sequence {

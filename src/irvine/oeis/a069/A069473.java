@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069473.
+ * A069473 First differences of (n+1)^6-n^6 (A022522).
  * @author Sean A. Irvine
  */
 public class A069473 extends LinearRecurrence {

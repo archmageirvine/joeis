@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 /**
- * A157425.
+ * A157425 Numbers which can be represented using fewer symbols than the number of decimal digits in the number.
  * @author Sean A. Irvine
  */
 public class A157425 implements Sequence {

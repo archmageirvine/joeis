@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054318.
+ * A054318 a(n)-th star number (A003154) is a square.
  * @author Sean A. Irvine
  */
 public class A054318 extends LinearRecurrence {

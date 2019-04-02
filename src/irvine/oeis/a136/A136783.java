@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136783.
+ * A136783 Number of multiplex juggling sequences of length n, base state &lt;3&gt; and hand capacity 3.
  * @author Sean A. Irvine
  */
 public class A136783 extends LinearRecurrence {

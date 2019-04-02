@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100168.
+ * A100168 Structured pentagonal icositetrahedral numbers (vertex structure 10).
  * @author Sean A. Irvine
  */
 public class A100168 extends LinearRecurrence {

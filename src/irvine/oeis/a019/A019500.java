@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019500.
+ * A019500 Number of 6-ary search trees on n keys.
  * @author Sean A. Irvine
  */
 public class A019500 implements Sequence {

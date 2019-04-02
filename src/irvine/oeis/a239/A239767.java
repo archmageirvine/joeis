@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239767.
+ * A239767 Degrees of polynomial on the fermionic side of the finite generalization of identity 46 from Slater's List.
  * @author Sean A. Irvine
  */
 public class A239767 extends LinearRecurrence {

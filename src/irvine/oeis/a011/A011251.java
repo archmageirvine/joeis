@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011251.
+ * A011251 Numbers n such that phi(n) + sigma(n) = 3n.
  * @author Sean A. Irvine
  */
 public class A011251 implements Sequence {

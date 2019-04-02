@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242660.
+ * A242660 Nonnegative numbers of the form x^2+xy-2y^2.
  * @author Sean A. Irvine
  */
 public class A242660 extends LinearRecurrence {

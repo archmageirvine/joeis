@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000011.
+ * A000011 Number of n-bead necklaces (turning over is allowed) where complements are equivalent.
  * @author Sean A. Irvine
  */
 public class A000011 implements Sequence {

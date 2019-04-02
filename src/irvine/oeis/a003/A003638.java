@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.List;
 
 /**
- * A003638.
+ * A003638 Number of classes per genus in quadratic field with discriminant -4n, -n == 2,3( mod 4).
  * @author Sean A. Irvine
  */
 public class A003638 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236364.
+ * A236364 Sum of all the middle parts in the partitions of 3n into 3 parts.
  * @author Sean A. Irvine
  */
 public class A236364 extends LinearRecurrence {

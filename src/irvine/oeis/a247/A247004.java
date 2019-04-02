@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247004.
+ * A247004 Denominator of (n+4)/gcd(n, 4)^2, a 16-periodic sequence that associates A061037 with A106617.
  * @author Sean A. Irvine
  */
 public class A247004 extends LinearRecurrence {

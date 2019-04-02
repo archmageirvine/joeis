@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.z.Z;
 
 /**
- * A008291.
+ * A008291 Triangle of rencontres numbers.
  * @author Sean A. Irvine
  */
 public class A008291 extends A008290 {

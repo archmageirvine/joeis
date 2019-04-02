@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005584.
+ * A005584 Coefficients of Chebyshev polynomials.
  * @author Sean A. Irvine
  */
 public class A005584 implements Sequence {

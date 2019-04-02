@@ -10,7 +10,7 @@ import irvine.math.polynomial.Polynomial;
 import java.util.ArrayList;
 
 /**
- * A002197.
+ * A002197 Numerators of coefficients for numerical integration.
  * @author Sean A. Irvine
  */
 public class A002197 implements Sequence {

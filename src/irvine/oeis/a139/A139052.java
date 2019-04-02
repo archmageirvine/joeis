@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139052.
+ * A139052 Array read by rows: row n lists the first two primes with n digits.
  * @author Sean A. Irvine
  */
 public class A139052 implements Sequence {

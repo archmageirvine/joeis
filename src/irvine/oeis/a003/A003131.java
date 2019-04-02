@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003131.
+ * A003131 Order of Monster simple group.
  * @author Sean A. Irvine
  */
 public class A003131 extends FiniteSequence {

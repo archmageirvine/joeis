@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006515.
+ * A006515 Mersenne numbers with at most 2 prime factors.
  * @author Sean A. Irvine
  */
 public class A006515 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002982.
+ * A002982 Numbers n such that n! - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002982 implements Sequence {

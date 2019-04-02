@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002461.
+ * A002461 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
 public class A002461 extends A002596 {

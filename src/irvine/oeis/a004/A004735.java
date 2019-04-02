@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004735.
+ * A004735 Denominator of average distance traveled by n-dimensional fly.
  * @author Sean A. Irvine
  */
 public class A004735 implements Sequence {

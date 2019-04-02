@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000348.
+ * A000348 Number of ways to pair up {1^2, 2^2, ..., (2n)^2 } so sum of each pair is prime.
  * @author Sean A. Irvine
  */
 public class A000348 extends A000341 {

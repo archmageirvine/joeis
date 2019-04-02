@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002269.
+ * A002269 Numbers k such that 39*2^k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A002269 implements Sequence {

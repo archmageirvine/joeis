@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006551.
+ * A006551 Maximal Eulerian numbers.
  * @author Sean A. Irvine
  */
 public class A006551 implements Sequence {

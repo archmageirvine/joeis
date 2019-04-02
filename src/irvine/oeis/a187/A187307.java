@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187307.
+ * A187307 Hankel transform of an alternating sum of Motzkin numbers.
  * @author Sean A. Irvine
  */
 public class A187307 extends LinearRecurrence {

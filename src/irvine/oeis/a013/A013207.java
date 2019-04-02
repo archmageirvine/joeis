@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013207.
+ * A013207 Expansion of e.g.f.: log(sech(x)+arcsinh(x))=x-2/2!*x^2+4/3!*x^3-12/4!*x^4+68/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013207 implements Sequence {

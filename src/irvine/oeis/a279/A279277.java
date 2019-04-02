@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279277.
+ * A279277 Composition of Lucas numbers A000032 with Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A279277 extends LinearRecurrence {

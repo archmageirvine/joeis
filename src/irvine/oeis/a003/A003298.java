@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A003298.
+ * A003298 Denominators of coefficients of Green function for cubic lattice.
  * @author Sean A. Irvine
  */
 public class A003298 extends A003284 {

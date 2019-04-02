@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160827.
+ * A160827 a(n) = 3*n^4 + 12*n^3 + 30*n^2 + 36*n + 17.
  * @author Sean A. Irvine
  */
 public class A160827 extends LinearRecurrence {

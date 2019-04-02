@@ -8,7 +8,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002520.
+ * A002520 Theta series of 28-dimensional unimodular lattice with no roots and with no parity vector of norm 4.
  * @author Sean A. Irvine
  */
 public class A002520 implements Sequence {

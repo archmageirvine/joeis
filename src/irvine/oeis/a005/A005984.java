@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A005984.
+ * A005984 Related to recurrences over rings.
  * @author Sean A. Irvine
  */
 public class A005984 implements Sequence {

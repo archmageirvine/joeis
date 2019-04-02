@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A007763.
+ * A007763 Number of pairs of length n permutations achievable by double-ended priority queue.
  * @author Sean A. Irvine
  */
 public class A007763 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092606;
 
 /**
- * A003156.
+ * A003156 A self-generating sequence.
  * @author Sean A. Irvine
  */
 public class A003156 extends A092606 {

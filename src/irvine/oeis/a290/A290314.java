@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290314.
+ * A290314 Fifth diagonal sequence of the Sheffer triangle A094816 (special Charlier).
  * @author Sean A. Irvine
  */
 public class A290314 extends LinearRecurrence {

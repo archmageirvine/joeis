@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038610.
+ * A038610 Least common multiple of integers less than and prime to n.
  * @author Sean A. Irvine
  */
 public class A038610 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118898.
+ * A118898 Number of binary sequences of length n containing exactly one subsequence 0000.
  * @author Sean A. Irvine
  */
 public class A118898 extends LinearRecurrence {

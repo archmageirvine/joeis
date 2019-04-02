@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001203.
+ * A001203 Simple continued fraction expansion of Pi.
  * @author Sean A. Irvine
  */
 public class A001203 implements Sequence {

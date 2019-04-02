@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022522.
+ * A022522 Nexus numbers (n+1)^6-n^6.
  * @author Sean A. Irvine
  */
 public class A022522 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007468.
+ * A007468 Sum of next n primes.
  * @author Sean A. Irvine
  */
 public class A007468 implements Sequence {

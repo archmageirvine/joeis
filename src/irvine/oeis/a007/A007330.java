@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000427;
 import irvine.oeis.a000.A000428;
 
 /**
- * A007330.
+ * A007330 Unexplained difference between two partition g.f.s.
  * @author Sean A. Irvine
  */
 public class A007330 extends A000427 {

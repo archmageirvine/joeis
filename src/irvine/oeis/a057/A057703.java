@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057703.
+ * A057703 Answer to the question: if you have a tall building and 5 plates and you need to find the highest story, a plate thrown from which does not break, what is the number of stories you can handle given n tries?.
  * @author Sean A. Irvine
  */
 public class A057703 extends LinearRecurrence {

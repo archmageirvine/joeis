@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002203.
+ * A002203 Companion Pell numbers: a(n) = 2a(n-1) + a(n-2), a(0) = a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A002203 extends LinearRecurrence {

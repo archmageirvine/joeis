@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotSequence;
 
 /**
- * A010923.
+ * A010923 Shallit sequence S(14,23), a(n)=[ a(n-1)^2/a(n-2)+1 ].
  * @author Sean A. Irvine
  */
 public class A010923 extends PisotSequence {

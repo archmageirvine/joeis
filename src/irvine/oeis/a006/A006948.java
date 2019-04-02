@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A006948.
+ * A006948 Zero-entropy permutations of length n.
  * @author Sean A. Irvine
  */
 public class A006948 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001918.
+ * A001918 Least positive primitive root of n-th prime.
  * @author Sean A. Irvine
  */
 public class A001918 implements Sequence {

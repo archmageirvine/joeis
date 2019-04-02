@@ -1,7 +1,7 @@
 package irvine.oeis.a005;
 
 /**
- * A005983.
+ * A005983 Number of 4 up, 4 down, 4 up, ... permutations of length 4n+1.
  * @author Sean A. Irvine
  */
 public class A005983 extends A005982 {

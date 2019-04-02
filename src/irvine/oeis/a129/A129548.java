@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129548.
+ * A129548 Measures of entanglement in 3-qbits.
  * @author Sean A. Irvine
  */
 public class A129548 extends LinearRecurrence {

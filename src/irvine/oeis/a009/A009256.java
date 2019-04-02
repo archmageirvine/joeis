@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009256.
+ * A009256 Expansion of e.g.f. exp(tan(x)^2) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009256 implements Sequence {

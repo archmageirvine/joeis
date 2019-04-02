@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224338.
+ * A224338 Number of idempotent 7X7 0..n matrices of rank 6.
  * @author Sean A. Irvine
  */
 public class A224338 extends LinearRecurrence {

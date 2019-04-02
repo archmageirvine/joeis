@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140290.
+ * A140290 Fourth quadrisection of A140287.
  * @author Sean A. Irvine
  */
 public class A140290 extends LinearRecurrence {

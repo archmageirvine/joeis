@@ -5,7 +5,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.Sequence;
 
 /**
- * A001768.
+ * A001768 Sorting numbers: number of comparisons for merge insertion sort of n elements.
  * @author Sean A. Irvine
  */
 public class A001768 implements Sequence {

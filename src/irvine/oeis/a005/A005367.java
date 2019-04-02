@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005367.
+ * A005367 a(n) = 2*(2^n + 1)*(2^(n+1) - 1).
  * @author Sean A. Irvine
  */
 public class A005367 implements Sequence {

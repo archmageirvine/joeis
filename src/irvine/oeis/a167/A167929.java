@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167929.
+ * A167929 Number of reduced words of length n in Coxeter group on 19 generators S_i with relations (S_i)^2 = (S_i S_j)^16 = I.
  * @author Sean A. Irvine
  */
 public class A167929 extends LinearRecurrence {

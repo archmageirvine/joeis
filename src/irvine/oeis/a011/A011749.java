@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A011749.
+ * A011749 Expansion of 1/(1 + x^3 + x^5) mod 2.
  * @author Sean A. Irvine
  */
 public class A011749 extends PeriodicSequence {

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050535.
+ * A050535 Number of multigraphs on infinite set of nodes with n edges.
  * @author Sean A. Irvine
  */
 public class A050535 implements Sequence {

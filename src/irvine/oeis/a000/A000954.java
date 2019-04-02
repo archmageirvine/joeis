@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A000954.
+ * A000954 Conjecturally largest even integer which is an unordered sum of two primes in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A000954 implements Sequence {

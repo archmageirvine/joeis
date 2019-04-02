@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152775.
+ * A152775 Numbers with 3n binary digits where every run length is 3, written in binary.
  * @author Sean A. Irvine
  */
 public class A152775 extends LinearRecurrence {

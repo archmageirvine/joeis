@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018800.
+ * A018800 Smallest prime that begins with n.
  * @author Sean A. Irvine
  */
 public class A018800 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019536.
+ * A019536 a(n) = number of necklaces of n beads with up to n unlabeled colors.
  * @author Sean A. Irvine
  */
 public class A019536 implements Sequence {

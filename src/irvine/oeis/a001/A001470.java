@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001470.
+ * A001470 Number of degree-n permutations of order dividing 3.
  * @author Sean A. Irvine
  */
 public class A001470 implements Sequence {

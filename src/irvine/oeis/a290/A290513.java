@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290513.
+ * A290513 Number of irredundant sets in the n-ladder graph.
  * @author Sean A. Irvine
  */
 public class A290513 extends LinearRecurrence {

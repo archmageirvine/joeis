@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001285;
 
 /**
- * A005681.
+ * A005681 A squarefree quaternary sequence.
  * @author Sean A. Irvine
  */
 public class A005681 extends A001285 {

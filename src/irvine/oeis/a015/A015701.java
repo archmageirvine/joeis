@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015701.
+ * A015701 From iteration of the Galton-Watson branching process.
  * @author Sean A. Irvine
  */
 public class A015701 implements Sequence {

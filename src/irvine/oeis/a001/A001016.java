@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001016.
+ * A001016 Eighth powers: a(n) = n^8.
  * @author Sean A. Irvine
  */
 public class A001016 implements Sequence {

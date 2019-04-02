@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007178.
+ * A007178 Number of ways to write 1 as ordered sum of n powers of 1/2, allowing repeats.
  * @author Sean A. Irvine
  */
 public class A007178 extends MemoryFunction3<Integer, Z> implements Sequence {

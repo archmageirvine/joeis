@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292489.
+ * A292489 p-INVERT of the odd positive integers, where p(S) = 1 - S - 6 S^2.
  * @author Sean A. Irvine
  */
 public class A292489 extends LinearRecurrence {

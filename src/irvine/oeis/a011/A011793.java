@@ -10,7 +10,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A011793.
+ * A011793 Triangle of numbers of irreducible Euler sums.
  * @author Sean A. Irvine
  */
 public class A011793 implements Sequence {

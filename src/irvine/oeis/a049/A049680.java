@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049680.
+ * A049680 a(n) = (L(n) + L(2*n))/2, where L = A000032 (the Lucas sequence).
  * @author Sean A. Irvine
  */
 public class A049680 extends LinearRecurrence {

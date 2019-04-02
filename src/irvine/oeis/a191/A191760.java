@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191760.
+ * A191760 Digital root of the n-th odd square.
  * @author Sean A. Irvine
  */
 public class A191760 extends LinearRecurrence {

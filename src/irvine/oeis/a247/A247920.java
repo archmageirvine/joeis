@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247920.
+ * A247920 Expansion of 1 / (1 + x + x^2 - x^5) in powers of x.
  * @author Sean A. Irvine
  */
 public class A247920 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007319.
+ * A007319 A grasshopper sequence: closed under n -&gt; 2n+2 and 6n+6.
  * @author Sean A. Irvine
  */
 public class A007319 implements Sequence {

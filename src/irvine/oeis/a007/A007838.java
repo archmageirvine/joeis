@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007838.
+ * A007838 Number of permutations of n elements with distinct cycle lengths.
  * @author Sean A. Irvine
  */
 public class A007838 extends MemorySequence {

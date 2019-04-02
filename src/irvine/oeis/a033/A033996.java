@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033996.
+ * A033996 8 times triangular numbers: a(n) = 4*n*(n+1).
  * @author Sean A. Irvine
  */
 public class A033996 extends LinearRecurrence {

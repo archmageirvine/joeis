@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003686.
+ * A003686 Number of genealogical 1-2 rooted trees of height n.
  * @author Sean A. Irvine
  */
 public class A003686 implements Sequence {

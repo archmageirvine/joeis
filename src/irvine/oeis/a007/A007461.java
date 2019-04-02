@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007461.
+ * A007461 Shifts left under AND-convolution with itself.
  * @author Sean A. Irvine
  */
 public class A007461 extends MemorySequence {

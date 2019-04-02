@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287426.
+ * A287426 Number of connected induced subgraphs in the n-sun graph.
  * @author Sean A. Irvine
  */
 public class A287426 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005916.
+ * A005916 Molien series for a certain group of order 52.
  * @author Sean A. Irvine
  */
 public class A005916 extends LinearRecurrence {

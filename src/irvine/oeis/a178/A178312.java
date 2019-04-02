@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178312.
+ * A178312 n * T(ceiling(n/2)), where T are the triangular numbers, A000217.
  * @author Sean A. Irvine
  */
 public class A178312 extends LinearRecurrence {

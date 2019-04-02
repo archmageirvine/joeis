@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 /**
- * A002766.
+ * A002766 Number of bipartite partitions.
  * @author Sean A. Irvine
  */
 public class A002766 extends A002762 {

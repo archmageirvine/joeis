@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037237.
+ * A037237 Expansion of (3 + x^2) / (1 - x)^4.
  * @author Sean A. Irvine
  */
 public class A037237 extends LinearRecurrence {

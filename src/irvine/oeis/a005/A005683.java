@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005683.
+ * A005683 Numbers of Twopins positions.
  * @author Sean A. Irvine
  */
 public class A005683 extends LinearRecurrence {

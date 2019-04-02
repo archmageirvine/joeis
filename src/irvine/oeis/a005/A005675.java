@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A005675.
+ * A005675 Deficit in peeling rinds.
  * @author Sean A. Irvine
  */
 public class A005675 implements Sequence {

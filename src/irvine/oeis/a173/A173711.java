@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173711.
+ * A173711 Nonnegative integers, six even followed by two odd.
  * @author Sean A. Irvine
  */
 public class A173711 extends LinearRecurrence {

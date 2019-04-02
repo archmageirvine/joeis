@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133883.
+ * A133883 a(n) = binomial(n+3,n) mod 3^2.
  * @author Sean A. Irvine
  */
 public class A133883 extends LinearRecurrence {

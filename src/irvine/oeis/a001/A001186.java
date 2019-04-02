@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A001186.
+ * A001186 Number of cubic Hamiltonian graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A001186 implements Sequence, GraphProcessor {

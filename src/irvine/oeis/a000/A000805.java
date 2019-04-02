@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000805.
+ * A000805 Permanent of a certain cyclic n X n (0,1) matrix.
  * @author Sean A. Irvine
  */
 public class A000805 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059222.
+ * A059222 Minimal number of disjoint edge-paths into which the graph of the n-ary cube can be partitioned.
  * @author Sean A. Irvine
  */
 public class A059222 extends LinearRecurrence {

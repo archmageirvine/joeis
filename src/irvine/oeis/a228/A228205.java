@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228205.
+ * A228205 x-values in the solution to x^2 - 13y^2 = 108.
  * @author Sean A. Irvine
  */
 public class A228205 extends LinearRecurrence {

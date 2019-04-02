@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144124.
+ * A144124 P_4(2n+1), the Legendre polynomial of order 4 at 2n+1.
  * @author Sean A. Irvine
  */
 public class A144124 extends LinearRecurrence {

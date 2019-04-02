@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000055;
 
 /**
- * A007315.
+ * A007315 Reversion of g.f. (beginning with constant term) for number of trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A007315 extends A000055 {

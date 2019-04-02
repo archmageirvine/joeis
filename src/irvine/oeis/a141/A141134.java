@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141134.
+ * A141134 Hankel transform of C(2n+4,n+4).
  * @author Sean A. Irvine
  */
 public class A141134 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020956.
+ * A020956 Sum of [tau^(n-k)] for k from 1 to infinity.
  * @author Sean A. Irvine
  */
 public class A020956 extends LinearRecurrence {

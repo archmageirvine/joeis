@@ -3,7 +3,7 @@ package irvine.oeis.a207;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A207078.
+ * A207078 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x+511)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A207078 extends LinearRecurrence {

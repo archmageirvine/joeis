@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001850;
 
 /**
- * A047665.
+ * A047665 Expansion of (1/sqrt(1-6*x+x^2)-1/(1-x))/2.
  * @author Sean A. Irvine
  */
 public class A047665 extends A001850 {

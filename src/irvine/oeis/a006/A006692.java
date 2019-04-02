@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a027.A027834;
 
 /**
- * A006692.
+ * A006692 Number of connected n-state finite automata with 3 inputs.
  * @author Sean A. Irvine
  */
 public class A006692 extends A027834 {

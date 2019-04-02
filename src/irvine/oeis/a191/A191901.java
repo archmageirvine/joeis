@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191901.
+ * A191901 Number of compositions of odd natural numbers into 6 parts &lt;= n.
  * @author Sean A. Irvine
  */
 public class A191901 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013310.
+ * A013310 sin(exp(x)-cos(x))=x+2/2!*x^2-12/4!*x^4-68/5!*x^5-208/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013310 implements Sequence {

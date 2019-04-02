@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007447.
+ * A007447 Logarithm of e.g.f. for primes.
  * @author Sean A. Irvine
  */
 public class A007447 implements Sequence {

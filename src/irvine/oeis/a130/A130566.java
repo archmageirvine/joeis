@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130566.
+ * A130566 Pyramidal 47-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A130566 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015787.
+ * A015787 Phi(n) + 8 | sigma(n + 8).
  * @author Sean A. Irvine
  */
 public class A015787 implements Sequence {

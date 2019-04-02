@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002267.
+ * A002267 The 15 supersingular primes: primes dividing order of Monster simple group.
  * @author Sean A. Irvine
  */
 public class A002267 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121262.
+ * A121262 The characteristic function of the multiples of four.
  * @author Sean A. Irvine
  */
 public class A121262 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005627.
+ * A005627 Number of achiral planted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005627 extends MemorySequence {

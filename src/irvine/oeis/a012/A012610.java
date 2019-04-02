@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012610.
+ * A012610 Expansion of e.g.f. exp(arcsinh(x)*tan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012610 implements Sequence {

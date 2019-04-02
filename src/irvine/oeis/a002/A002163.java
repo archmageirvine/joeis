@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002163.
+ * A002163 Decimal expansion of square root of 5.
  * @author Sean A. Irvine
  */
 public class A002163 extends DecimalExpansionSequence {

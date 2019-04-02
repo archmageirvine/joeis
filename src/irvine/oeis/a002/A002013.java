@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 /**
- * A002013.
+ * A002013 Filaments with n square cells.
  * @author Sean A. Irvine
  */
 public class A002013 implements Sequence {

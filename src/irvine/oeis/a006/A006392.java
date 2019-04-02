@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006392.
+ * A006392 Number of planar maps with n edges and without faces of degree 1 or 2.
  * @author Sean A. Irvine
  */
 public class A006392 extends A006388 {

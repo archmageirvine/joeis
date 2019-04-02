@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239125.
+ * A239125 Smallest positive integer solution x of (3^3)*x - 2^n*y = 1 for n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A239125 extends LinearRecurrence {

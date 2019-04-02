@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000382.
+ * A000382 Restricted permutations.
  * @author Sean A. Irvine
  */
 public class A000382 implements Sequence {

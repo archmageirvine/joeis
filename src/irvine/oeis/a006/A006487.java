@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006487.
+ * A006487 Denominators of greedy Egyptian fraction for square root of 2.
  * @author Sean A. Irvine
  */
 public class A006487 implements Sequence {

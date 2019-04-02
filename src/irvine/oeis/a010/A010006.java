@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010006.
+ * A010006 Coordination sequence for C_3 lattice: a(n)=16*n^2+2 (n&gt;0), a(0)=1.
  * @author Sean A. Irvine
  */
 public class A010006 implements Sequence {

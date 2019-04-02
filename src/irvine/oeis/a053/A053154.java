@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053154.
+ * A053154 Number of 2-element intersecting families (with not necessary distinct sets) of an n-element set.
  * @author Sean A. Irvine
  */
 public class A053154 extends LinearRecurrence {

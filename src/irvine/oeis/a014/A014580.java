@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014580.
+ * A014580 Binary irreducible polynomials (primes in the ring GF(2)[X]), evaluated at X=2.
  * @author Sean A. Irvine
  */
 public class A014580 implements Sequence {

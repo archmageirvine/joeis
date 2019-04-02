@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006547.
+ * A006547 Sum ((-1)^(i+1)*binomial(n,i)*2^i*(2*i-1)!,i=1..n).
  * @author Sean A. Irvine
  */
 public class A006547 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004499.
+ * A004499 Tersum n + 10.
  * @author Sean A. Irvine
  */
 public class A004499 extends A004489 {

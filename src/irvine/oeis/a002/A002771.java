@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002771.
+ * A002771 Number of terms in a skew determinant: a(n) = (A000085(n) + A081919(n))/2.
  * @author Sean A. Irvine
  */
 public class A002771 implements Sequence {

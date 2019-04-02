@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.a001.A001334;
 
 /**
- * A007200.
+ * A007200 Number of self-avoiding walks on hexagonal lattice, with additional constraints.
  * @author Sean A. Irvine
  */
 public class A007200 extends A001334 {

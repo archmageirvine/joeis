@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056105.
+ * A056105 First spoke of a hexagonal spiral.
  * @author Sean A. Irvine
  */
 public class A056105 extends LinearRecurrence {

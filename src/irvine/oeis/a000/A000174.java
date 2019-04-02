@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000174.
+ * A000174 Number of partitions of n into 5 squares.
  * @author Sean A. Irvine
  */
 public class A000174 implements Sequence {

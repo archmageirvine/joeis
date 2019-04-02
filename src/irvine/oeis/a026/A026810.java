@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026810.
+ * A026810 Number of partitions of n in which the greatest part is 4.
  * @author Sean A. Irvine
  */
 public class A026810 extends LinearRecurrence {

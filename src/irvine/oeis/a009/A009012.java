@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a056.A056137;
 
 /**
- * A009012.
+ * A009012 Ordered long legs of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009012 extends A056137 {

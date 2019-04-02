@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A006703.
+ * A006703 Solution to Pellian: y such that x^2 - n*y^2 = +-1.
  * @author Sean A. Irvine
  */
 public class A006703 extends A006702 {

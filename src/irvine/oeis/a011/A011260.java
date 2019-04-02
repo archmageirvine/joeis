@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A011260.
+ * A011260 Number of primitive polynomials of degree n over GF(2).
  * @author Sean A. Irvine
  */
 public class A011260 implements Sequence {

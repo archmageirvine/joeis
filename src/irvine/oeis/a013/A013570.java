@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013570.
+ * A013570 Numerator of [x^n] of the Taylor series log(arctan(x)/log(x+1)).
  * @author Sean A. Irvine
  */
 public class A013570 implements Sequence {

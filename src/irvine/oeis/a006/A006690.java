@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006690.
+ * A006690 Number of deterministic, completely-defined, initially-connected finite automata with 3 inputs and n unlabeled states.
  * @author Sean A. Irvine
  */
 public class A006690 extends MemorySequence {

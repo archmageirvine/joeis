@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013034.
+ * A013034 arcsin(sinh(x)+arcsin(x))=2*x+10/3!*x^3+378/5!*x^5+40506/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013034 implements Sequence {

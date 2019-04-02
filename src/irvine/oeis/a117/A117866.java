@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117866.
+ * A117866 Number of palindromes (in base 7) below 7^n.
  * @author Sean A. Irvine
  */
 public class A117866 extends LinearRecurrence {

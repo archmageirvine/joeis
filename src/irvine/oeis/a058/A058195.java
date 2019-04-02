@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058195.
+ * A058195 Areas of a sequence of right-angled figures described below.
  * @author Sean A. Irvine
  */
 public class A058195 extends LinearRecurrence {

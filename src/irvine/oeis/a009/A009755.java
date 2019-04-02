@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009755.
+ * A009755 Expansion of e.g.f. tan(x)/cos(sin(x)), odd powers only.
  * @author Sean A. Irvine
  */
 public class A009755 implements Sequence {

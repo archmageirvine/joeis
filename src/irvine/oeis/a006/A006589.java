@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001792;
 
 /**
- * A006589.
+ * A006589 a(n) = (n+3)*2^n-1.
  * @author Sean A. Irvine
  */
 public class A006589 extends A001792 {

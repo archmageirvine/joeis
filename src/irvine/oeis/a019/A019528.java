@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A019528.
+ * A019528 Poincar&#233; series [or Poincare series] for depths of roots in a certain root system.
  * @author Sean A. Irvine
  */
 public class A019528 extends LinearRecurrence {

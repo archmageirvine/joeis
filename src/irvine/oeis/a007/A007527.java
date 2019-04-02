@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A007527.
+ * A007527 Numbers that are not the sum of 4 hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A007527 extends FiniteSequence {

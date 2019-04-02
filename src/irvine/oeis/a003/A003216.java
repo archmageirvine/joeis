@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * A003216.
+ * A003216 Number of Hamiltonian graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003216 implements Sequence, GraphProcessor {

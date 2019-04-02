@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004634.
+ * A004634 Cubes written in base 4.
  * @author Sean A. Irvine
  */
 public class A004634 implements Sequence {

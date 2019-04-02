@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001035;
 
 /**
- * A002824.
+ * A002824 Number of precomplete Post functions.
  * @author Sean A. Irvine
  */
 public class A002824 extends A001035 {

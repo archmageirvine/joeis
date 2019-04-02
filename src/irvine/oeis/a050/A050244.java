@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050244.
+ * A050244 Numbers n such that 2^n + 3^n is a semiprime.
  * @author Sean A. Irvine
  */
 public class A050244 implements Sequence {

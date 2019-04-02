@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.polynomial.CycleIndex;
 
 /**
- * A000653.
+ * A000653 Invertible Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000653 extends A000654 {

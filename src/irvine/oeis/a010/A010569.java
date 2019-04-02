@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.math.z.Z;
 
 /**
- * A010569.
+ * A010569 2n-step 5-dimensional closed paths on 5-d cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010569 extends A010576 {

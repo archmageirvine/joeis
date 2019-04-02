@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128422.
+ * A128422 Projective plane crossing number of K_{4,n}.
  * @author Sean A. Irvine
  */
 public class A128422 extends LinearRecurrence {

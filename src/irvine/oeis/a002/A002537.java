@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002537.
+ * A002537 a(2n) = a(2n-1) + 3a(2n-2), a(2n+1) = 2a(2n) + 3a(2n-1).
  * @author Sean A. Irvine
  */
 public class A002537 extends LinearRecurrence {

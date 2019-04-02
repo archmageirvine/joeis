@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249604.
+ * A249604 a(n) = Sum_{i=1..n} Fibonacci(i)*10^(i-1).
  * @author Sean A. Irvine
  */
 public class A249604 extends LinearRecurrence {

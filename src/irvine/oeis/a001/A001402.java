@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001402.
+ * A001402 Number of partitions of n into at most 6 parts.
  * @author Sean A. Irvine
  */
 public class A001402 implements Sequence {

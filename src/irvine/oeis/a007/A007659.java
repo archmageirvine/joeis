@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007659.
+ * A007659 Primes p such that Ramanujan number tau(p) is divisible by p.
  * @author Sean A. Irvine
  */
 public class A007659 implements Sequence {

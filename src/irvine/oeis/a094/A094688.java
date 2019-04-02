@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094688.
+ * A094688 Convolution of Fibonacci(n) and 3^n.
  * @author Sean A. Irvine
  */
 public class A094688 extends LinearRecurrence {

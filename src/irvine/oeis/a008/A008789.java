@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008789.
+ * A008789 n^(n+3).
  * @author Sean A. Irvine
  */
 public class A008789 implements Sequence {

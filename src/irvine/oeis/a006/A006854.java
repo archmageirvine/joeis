@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A006854.
+ * A006854 Nonantipodal balanced colorings of n-cube.
  * @author Sean A. Irvine
  */
 public class A006854 extends A006853 {

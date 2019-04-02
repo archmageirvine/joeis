@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008338.
+ * A008338 a(n+1) = a(n)/n! if n! divides a(n) else a(n)*n!.
  * @author Sean A. Irvine
  */
 public class A008338 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157534.
+ * A157534 Half the number of length n integer sequences with sum zero and sum of squares 8.
  * @author Sean A. Irvine
  */
 public class A157534 extends LinearRecurrence {

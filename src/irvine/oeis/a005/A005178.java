@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005178.
+ * A005178 Number of domino tilings of 4 X (n-1) board.
  * @author Sean A. Irvine
  */
 public class A005178 extends LinearRecurrence {

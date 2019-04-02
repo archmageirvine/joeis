@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002995.
+ * A002995 Number of unlabeled planar trees (also called plane trees) with n nodes.
  * @author Sean A. Irvine
  */
 public class A002995 implements Sequence {

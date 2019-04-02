@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012326.
+ * A012326 sec(arcsin(x)*exp(x))=1+1/2!*x^2+6/3!*x^3+33/4!*x^4+220/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012326 implements Sequence {

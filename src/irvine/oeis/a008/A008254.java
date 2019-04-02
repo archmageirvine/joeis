@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008254.
+ * A008254 Coordination sequence T1 for feldspar.
  * @author Sean A. Irvine
  */
 public class A008254 extends CoordinationSequence {

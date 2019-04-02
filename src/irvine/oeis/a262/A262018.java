@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262018.
+ * A262018 The first of five consecutive positive integers the sum of the squares of which is equal to the sum of the squares of eleven consecutive positive integers.
  * @author Sean A. Irvine
  */
 public class A262018 extends LinearRecurrence {

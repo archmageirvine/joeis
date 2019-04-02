@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005245.
+ * A005245 Complexity of n: minimal number of 1's required to build n using + and *.
  * @author Sean A. Irvine
  */
 public class A005245 extends MemorySequence {

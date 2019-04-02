@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005373.
+ * A005373 A class of rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005373 extends MemoryFunction3<Long, Z> implements Sequence {

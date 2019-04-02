@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059585.
+ * A059585 Number of labeled 3-node T_0-hypergraphs with n hyperedges (empty hyperedges and multiple hyperedges included).
  * @author Sean A. Irvine
  */
 public class A059585 extends LinearRecurrence {

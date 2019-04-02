@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002829;
 import irvine.oeis.a004.A004109;
 
 /**
- * A007102.
+ * A007102 Number of labeled disconnected trivalent (or cubic) graphs with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A007102 extends A002829 {

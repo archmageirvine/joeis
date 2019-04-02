@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080892.
+ * A080892 Numbers n such that 3^n-2 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A080892 implements Sequence {

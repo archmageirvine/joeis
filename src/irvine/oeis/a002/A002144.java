@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002144.
+ * A002144 Pythagorean primes: primes of form 4n + 1.
  * @author Sean A. Irvine
  */
 public class A002144 implements Sequence {

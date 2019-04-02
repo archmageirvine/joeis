@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023201.
+ * A023201 Sexy primes: numbers n such that n and n + 6 are both prime.
  * @author Sean A. Irvine
  */
 public class A023201 implements Sequence {

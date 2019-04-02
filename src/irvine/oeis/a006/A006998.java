@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006998.
+ * A006998 Partitioning integers to avoid arithmetic progressions of length 3.
  * @author Sean A. Irvine
  */
 public class A006998 extends MemorySequence {

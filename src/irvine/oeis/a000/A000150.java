@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000150.
+ * A000150 Number of dissections of an n-gon, rooted at an exterior edge, asymmetric with respect to that edge.
  * @author Sean A. Irvine
  */
 public class A000150 implements Sequence {

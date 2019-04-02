@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007376.
+ * A007376 The almost-natural numbers: write n in base 10 and juxtapose digits.
  * @author Sean A. Irvine
  */
 public class A007376 implements Sequence {

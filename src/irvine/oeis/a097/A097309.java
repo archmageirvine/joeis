@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097309.
+ * A097309 Chebyshev polynomials of the second kind, U(n,x), evaluated at x=13.
  * @author Sean A. Irvine
  */
 public class A097309 extends LinearRecurrence {

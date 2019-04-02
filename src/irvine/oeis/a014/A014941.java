@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014941.
+ * A014941 a(1)=1, a(n)=n*23^(n-1)+a(n-1).
  * @author Sean A. Irvine
  */
 public class A014941 extends LinearRecurrence {

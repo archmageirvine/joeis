@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052102.
+ * A052102 The second of the three sequences associated with the polynomial x^3 - 2.
  * @author Sean A. Irvine
  */
 public class A052102 extends LinearRecurrence {

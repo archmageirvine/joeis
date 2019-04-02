@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018782;
 
 /**
- * A000446.
+ * A000446 Smallest number that is the sum of 2 squares (allowing zeros) in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A000446 extends A018782 {

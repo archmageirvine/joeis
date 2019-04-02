@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002307.
+ * A002307 Consecutive quadratic residues mod p: a(n)=maximal number of positive reduced quadratic residues which appear consecutively for n-th prime.
  * @author Sean A. Irvine
  */
 public class A002307 implements Sequence {

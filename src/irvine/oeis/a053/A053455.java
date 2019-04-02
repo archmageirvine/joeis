@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053455.
+ * A053455 a(n) = ((8^n) - (-6)^n)/14.
  * @author Sean A. Irvine
  */
 public class A053455 extends LinearRecurrence {

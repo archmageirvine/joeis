@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014265.
+ * A014265 Number of trees on n nodes with forbidden limbs.
  * @author Sean A. Irvine
  */
 public class A014265 implements Sequence {

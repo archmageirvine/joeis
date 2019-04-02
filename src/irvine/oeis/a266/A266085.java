@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266085.
+ * A266085 Alternating sum of heptagonal numbers.
  * @author Sean A. Irvine
  */
 public class A266085 extends LinearRecurrence {

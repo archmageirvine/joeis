@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274756.
+ * A274756 Values of n such that 2*n+1 and 6*n+1 are both triangular numbers.
  * @author Sean A. Irvine
  */
 public class A274756 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002905;
 
 /**
- * A003089.
+ * A003089 Number of connected line graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A003089 extends A002905 {

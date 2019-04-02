@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013252.
+ * A013252 arcsinh(log(x+1)-arctan(x)) = -1/2!*x^2+4/3!*x^3-6/4!*x^4-105/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013252 implements Sequence {

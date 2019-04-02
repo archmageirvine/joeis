@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110111.
+ * A110111 Sequence associated to the recurrence b(n)=b(n-1)+3*b(n-2).
  * @author Sean A. Irvine
  */
 public class A110111 extends LinearRecurrence {

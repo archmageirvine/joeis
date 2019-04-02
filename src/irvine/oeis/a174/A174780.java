@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174780.
+ * A174780 y-values in the solution to x^2-43*y^2=1.
  * @author Sean A. Irvine
  */
 public class A174780 extends LinearRecurrence {

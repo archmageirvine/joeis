@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215862.
+ * A215862 Number of simple labeled graphs on n+2 nodes with exactly n connected components that are trees or cycles.
  * @author Sean A. Irvine
  */
 public class A215862 extends LinearRecurrence {

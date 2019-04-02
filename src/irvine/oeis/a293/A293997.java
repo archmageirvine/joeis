@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293997.
+ * A293997 Number of linear chord diagrams having n chords and no chord length larger than five.
  * @author Sean A. Irvine
  */
 public class A293997 extends LinearRecurrence {

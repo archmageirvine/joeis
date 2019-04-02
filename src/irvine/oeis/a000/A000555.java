@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000555.
+ * A000555 Number of labeled trees of diameter 4 with n nodes.
  * @author Sean A. Irvine
  */
 public class A000555 extends A000551 {

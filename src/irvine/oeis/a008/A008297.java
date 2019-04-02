@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008297.
+ * A008297 Triangle of Lah numbers.
  * @author Sean A. Irvine
  */
 public class A008297 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008304;
 
 /**
- * A000456.
+ * A000456 Number of permutations of [n] in which the longest increasing run has length 5.
  * @author Sean A. Irvine
  */
 public class A000456 extends A008304 {

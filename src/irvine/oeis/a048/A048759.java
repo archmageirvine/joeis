@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048759.
+ * A048759 Longest perimeter of a Pythagorean triangle with n as length of one of the three sides.
  * @author Sean A. Irvine
  */
 public class A048759 extends LinearRecurrence {

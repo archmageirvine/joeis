@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014551.
+ * A014551 Jacobsthal-Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A014551 implements Sequence {

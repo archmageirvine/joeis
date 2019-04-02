@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082639.
+ * A082639 Numbers n such that 2*n*(n+2) is a square.
  * @author Sean A. Irvine
  */
 public class A082639 extends LinearRecurrence {

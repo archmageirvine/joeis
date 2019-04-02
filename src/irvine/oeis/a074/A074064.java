@@ -9,7 +9,7 @@ import irvine.math.Mobius;
 import irvine.oeis.a000.A000793;
 
 /**
- * A074064.
+ * A074064 Number of cycle types of degree-n permutations having the maximum possible order.
  * @author Sean A. Irvine
  */
 public class A074064 extends A000793 {

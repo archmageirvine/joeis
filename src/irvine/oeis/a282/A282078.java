@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282078.
+ * A282078 Number of 10-element subsets of [n+10] having an even sum.
  * @author Sean A. Irvine
  */
 public class A282078 extends LinearRecurrence {

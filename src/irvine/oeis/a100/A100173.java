@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100173.
+ * A100173 Structured pentakis dodecahedral numbers (vertex structure 6).
  * @author Sean A. Irvine
  */
 public class A100173 extends LinearRecurrence {

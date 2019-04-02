@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000392;
 
 /**
- * A006230.
+ * A006230 Bitriangular permutations.
  * @author Sean A. Irvine
  */
 public class A006230 extends A000392 {

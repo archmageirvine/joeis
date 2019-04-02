@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272103.
+ * A272103 Convolution of nonzero heptagonal numbers (A000566) with themselves.
  * @author Sean A. Irvine
  */
 public class A272103 extends LinearRecurrence {

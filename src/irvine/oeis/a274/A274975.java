@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274975.
+ * A274975 Sum of n-th powers of the three roots of x^3-2*x^2-x+1.
  * @author Sean A. Irvine
  */
 public class A274975 extends LinearRecurrence {

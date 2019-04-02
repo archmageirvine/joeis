@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009249.
+ * A009249 E.g.f. exp(tan(x)*log(1+x)).
  * @author Sean A. Irvine
  */
 public class A009249 implements Sequence {

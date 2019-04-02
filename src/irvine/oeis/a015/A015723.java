@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008289;
 
 /**
- * A015723.
+ * A015723 Number of parts in all partitions of n into distinct parts.
  * @author Sean A. Irvine
  */
 public class A015723 extends A008289 {

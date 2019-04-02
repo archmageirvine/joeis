@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019522.
+ * A019522 Concatenate cubes.
  * @author Sean A. Irvine
  */
 public class A019522 implements Sequence {

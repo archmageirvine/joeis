@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A015083.
+ * A015083 Carlitz-Riordan q-Catalan numbers (recurrence version) for q=2.
  * @author Sean A. Irvine
  */
 public class A015083 extends MemorySequence {

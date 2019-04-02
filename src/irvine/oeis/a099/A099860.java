@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099860.
+ * A099860 A Chebyshev transform related to the knot 7_1.
  * @author Sean A. Irvine
  */
 public class A099860 extends LinearRecurrence {

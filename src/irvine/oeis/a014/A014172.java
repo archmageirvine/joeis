@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a005.A005230;
 
 /**
- * A014172.
+ * A014172 Apply partial sum operator twice to Stern's sequence.
  * @author Sean A. Irvine
  */
 public class A014172 extends PartialSumSequence {

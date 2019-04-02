@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087936.
+ * A087936 Perrin sequence of order 6.
  * @author Sean A. Irvine
  */
 public class A087936 extends LinearRecurrence {

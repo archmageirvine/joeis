@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000326;
 import irvine.util.string.StringUtils;
 
 /**
- * A002069.
+ * A002069 Palindromic pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A002069 extends A000326 {

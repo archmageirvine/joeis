@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006275.
+ * A006275 Pierce expansion of sqrt(2) - 1.
  * @author Sean A. Irvine
  */
 public class A006275 implements Sequence {

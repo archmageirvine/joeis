@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019549.
+ * A019549 Primes formed by concatenating other primes.
  * @author Sean A. Irvine
  */
 public class A019549 implements Sequence {

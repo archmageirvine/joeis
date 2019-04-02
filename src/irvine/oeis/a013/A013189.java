@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A013189.
+ * A013189 All terms are squares and a(n) is length of n-th run.
  * @author Sean A. Irvine
  */
 public class A013189 extends MemorySequence {

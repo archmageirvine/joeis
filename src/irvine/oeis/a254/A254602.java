@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254602.
+ * A254602 Numbers of n-length words on alphabet {0..7} with no subwords ii, where i is from {0..2}.
  * @author Sean A. Irvine
  */
 public class A254602 extends LinearRecurrence {

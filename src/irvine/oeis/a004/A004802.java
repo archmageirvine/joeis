@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004802.
+ * A004802 Numbers that are the sum of 2 nonzero 10th powers.
  * @author Sean A. Irvine
  */
 public class A004802 implements Sequence {

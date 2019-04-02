@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006309.
+ * A006309 Coefficients of period polynomials.
  * @author Sean A. Irvine
  */
 public class A006309 extends A006308 {

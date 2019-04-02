@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001832;
 
 /**
- * A004100.
+ * A004100 Number of labeled nonseparable bipartite graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A004100 extends A001832 {

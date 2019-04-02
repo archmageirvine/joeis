@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a037.A037254;
 
 /**
- * A005254.
+ * A005254 Number of weighted voting procedures.
  * @author Sean A. Irvine
  */
 public class A005254 extends A037254 {

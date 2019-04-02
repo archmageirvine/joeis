@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036086.
+ * A036086 Centered cube numbers: a(n) = (n+1)^8+n^8.
  * @author Sean A. Irvine
  */
 public class A036086 extends LinearRecurrence {

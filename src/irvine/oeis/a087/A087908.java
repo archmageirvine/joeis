@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087908.
+ * A087908 Largest integer not expressible as a nonnegative linear combination of n and n^2 + 1.
  * @author Sean A. Irvine
  */
 public class A087908 extends LinearRecurrence {

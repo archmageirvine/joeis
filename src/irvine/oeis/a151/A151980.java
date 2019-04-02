@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151980.
+ * A151980 Numbers n such that n^2 - n is divisible by 20.
  * @author Sean A. Irvine
  */
 public class A151980 extends LinearRecurrence {

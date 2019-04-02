@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001043.
+ * A001043 Numbers that are the sum of 2 successive primes.
  * @author Sean A. Irvine
  */
 public class A001043 implements Sequence {

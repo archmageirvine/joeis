@@ -4,7 +4,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a000.A000670;
 
 /**
- * A006936.
+ * A006936 Moebius transform of numbers of preferential arrangements.
  * @author Sean A. Irvine
  */
 public class A006936 extends MobiusTransformSequence {

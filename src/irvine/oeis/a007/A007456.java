@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007456.
+ * A007456 Days required to spread gossip to n people.
  * @author Sean A. Irvine
  */
 public class A007456 implements Sequence {

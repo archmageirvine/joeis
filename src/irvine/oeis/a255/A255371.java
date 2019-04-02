@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255371.
+ * A255371 Number of strings of n decimal digits that contain at least one "0" digit that is not part of a string of two or more consecutive "0" digits.
  * @author Sean A. Irvine
  */
 public class A255371 extends LinearRecurrence {

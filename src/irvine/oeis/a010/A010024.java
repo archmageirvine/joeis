@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010024.
+ * A010024 Coordination sequence for squashed {D_5}* lattice, perhaps the smallest example of a "non-superficial" lattice.
  * @author Sean A. Irvine
  */
 public class A010024 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A005472.
+ * A005472 Class numbers of cubic fields.
  * @author Sean A. Irvine
  */
 public class A005472 extends A005471 {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133853.
+ * A133853 a(n) = (64^n - 1)/63.
  * @author Sean A. Irvine
  */
 public class A133853 extends LinearRecurrence {

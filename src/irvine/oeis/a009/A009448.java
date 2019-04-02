@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009448.
+ * A009448 E.g.f. sin(x*exp(x)).
  * @author Sean A. Irvine
  */
 public class A009448 implements Sequence {

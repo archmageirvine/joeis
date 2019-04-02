@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036411.
+ * A036411 9-gonal square numbers.
  * @author Sean A. Irvine
  */
 public class A036411 extends LinearRecurrence {

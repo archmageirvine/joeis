@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A067030.
+ * A067030 Numbers n of the form k + reverse(k) for at least one k.
  * @author Sean A. Irvine
  */
 public class A067030 implements Sequence {

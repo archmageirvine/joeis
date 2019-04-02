@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284980.
+ * A284980 Number of elements of order n in the simple unitary group U3(9).
  * @author Sean A. Irvine
  */
 public class A284980 extends FiniteSequence {

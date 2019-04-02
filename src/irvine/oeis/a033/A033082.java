@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033082.
+ * A033082 Numbers n with property that all pairs of consecutive base 4 digits differ by 2.
  * @author Sean A. Irvine
  */
 public class A033082 extends LinearRecurrence {

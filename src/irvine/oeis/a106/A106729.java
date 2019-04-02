@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106729.
+ * A106729 Sum of two consecutive squares of Lucas numbers (A001254).
  * @author Sean A. Irvine
  */
 public class A106729 extends LinearRecurrence {

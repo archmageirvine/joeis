@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079097.
+ * A079097 Mix odd numbers and squares.
  * @author Sean A. Irvine
  */
 public class A079097 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A110726.
+ * A110726 Absolute{n concatenate R(n)}-{ R(n) concatenate n}, R(n) = digit reversal of n.
  * @author Sean A. Irvine
  */
 public class A110726 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284838.
+ * A284838 Number of edges in the n-Keller graph.
  * @author Sean A. Irvine
  */
 public class A284838 extends LinearRecurrence {

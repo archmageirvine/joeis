@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000517.
+ * A000517 Number of permutations of length n with exactly three valleys.
  * @author Sean A. Irvine
  */
 public class A000517 implements Sequence {

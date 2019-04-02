@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002570.
+ * A002570 From a definite integral.
  * @author Sean A. Irvine
  */
 public class A002570 extends A002571 {

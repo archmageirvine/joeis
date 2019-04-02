@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290071.
+ * A290071 a(n) = (1/48)*n*(n+5)^2*(1*n^3 + 7*n^2 + 16*n + 28).
  * @author Sean A. Irvine
  */
 public class A290071 extends LinearRecurrence {

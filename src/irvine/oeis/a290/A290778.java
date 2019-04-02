@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290778.
+ * A290778 Number of connected undirected unlabeled loopless multigraphs with 4 vertices and n edges.
  * @author Sean A. Irvine
  */
 public class A290778 extends LinearRecurrence {

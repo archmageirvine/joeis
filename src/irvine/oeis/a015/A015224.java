@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015224.
+ * A015224 Even pentagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A015224 extends LinearRecurrence {

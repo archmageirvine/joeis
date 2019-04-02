@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A007692.
+ * A007692 Numbers that are the sum of 2 nonzero squares in 2 or more ways.
  * @author Sean A. Irvine
  */
 public class A007692 implements Sequence {

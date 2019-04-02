@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001895.
+ * A001895 Number of rooted planar 2-trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A001895 implements Sequence {

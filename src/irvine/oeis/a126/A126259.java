@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A126259.
+ * A126259 Numbers that are divisible by the number of letters in their English name, excluding spaces and hyphens;.
  * @author Sean A. Irvine
  */
 public class A126259 implements Sequence {

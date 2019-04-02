@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007400.
+ * A007400 Continued fraction for Sum_{n&gt;=0} 1/2^(2^n) = 0.8164215090218931...
  * @author Sean A. Irvine
  */
 public class A007400 extends MemorySequence {

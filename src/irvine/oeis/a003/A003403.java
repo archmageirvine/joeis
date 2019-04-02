@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003403.
+ * A003403 G.f.: (1+x^3+x^4+...+x^12+x^15)/Prod_{i=1..10} (1-x^i).
  * @author Sean A. Irvine
  */
 public class A003403 implements Sequence {

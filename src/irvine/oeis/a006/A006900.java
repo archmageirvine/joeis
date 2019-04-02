@@ -4,7 +4,7 @@ import irvine.oeis.LogarithmicTransformSequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A006900.
+ * A006900 Log of g.f. for rooted trees.
  * @author Sean A. Irvine
  */
 public class A006900 extends LogarithmicTransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287349.
+ * A287349 Number of matchings in the n-gear graph.
  * @author Sean A. Irvine
  */
 public class A287349 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000216.
+ * A000216 Take sum of squares of digits of previous term, starting with 2.
  * @author Sean A. Irvine
  */
 public class A000216 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011919.
+ * A011919 [ n(n-1)(n-2)(n-3)/9 ].
  * @author Sean A. Irvine
  */
 public class A011919 implements Sequence {

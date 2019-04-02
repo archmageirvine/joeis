@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A155507.
+ * A155507 Emirps with digits 1 and 9 only.
  * @author Sean A. Irvine
  */
 public class A155507 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239571.
+ * A239571 Number of ways to place 5 points on a triangular grid of side n so that no two of them are adjacent.
  * @author Sean A. Irvine
  */
 public class A239571 extends LinearRecurrence {

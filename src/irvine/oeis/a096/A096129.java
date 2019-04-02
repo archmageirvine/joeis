@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096129.
+ * A096129 Middle term of a triple of consecutive numbers which are sums of two squares.
  * @author Sean A. Irvine
  */
 public class A096129 extends LinearRecurrence {

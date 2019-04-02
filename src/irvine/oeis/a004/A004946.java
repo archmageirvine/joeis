@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004946.
+ * A004946 Nearest integer to n*phi^11, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004946 implements Sequence {

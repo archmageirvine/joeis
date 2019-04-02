@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006011.
+ * A006011 a(n) = n^2*(n^2 - 1)/4.
  * @author Sean A. Irvine
  */
 public class A006011 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005101.
+ * A005101 Abundant numbers (sum of divisors of n exceeds 2n).
  * @author Sean A. Irvine
  */
 public class A005101 implements Sequence {

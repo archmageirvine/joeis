@@ -8,7 +8,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A003473.
+ * A003473 Generalized Euler phi function (for p=2).
  * @author Sean A. Irvine
  */
 public class A003473 implements Sequence {

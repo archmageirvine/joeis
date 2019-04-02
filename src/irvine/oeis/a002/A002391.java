@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002391.
+ * A002391 Decimal expansion of natural logarithm of 3.
  * @author Sean A. Irvine
  */
 public class A002391 extends DecimalExpansionSequence {

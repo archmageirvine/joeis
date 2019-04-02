@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009273.
+ * A009273 E.g.f. exp(x*tanh(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A009273 implements Sequence {

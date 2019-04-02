@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227327.
+ * A227327 Number of non-equivalent ways to choose two points in an equilateral triangle grid of side n.
  * @author Sean A. Irvine
  */
 public class A227327 extends LinearRecurrence {

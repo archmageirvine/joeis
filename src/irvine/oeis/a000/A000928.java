@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000928.
+ * A000928 Irregular primes: p is regular if and only if the numerators of the Bernoulli numbers B_2, B_4, ..., B_{p-3} (A000367) are not divisible by p.
  * @author Sean A. Irvine
  */
 public class A000928 extends A000367 {

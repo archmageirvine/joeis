@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195031.
+ * A195031 Multiples of 5 and of 12 interleaved: a(2n-1) = 5n, a(2n) = 12n.
  * @author Sean A. Irvine
  */
 public class A195031 extends LinearRecurrence {

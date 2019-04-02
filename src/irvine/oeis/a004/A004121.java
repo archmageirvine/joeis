@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004121.
+ * A004121 Generalized weak orders on n points.
  * @author Sean A. Irvine
  */
 public class A004121 implements Sequence {

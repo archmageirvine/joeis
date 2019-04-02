@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282819.
+ * A282819 Number of inequivalent ways to color the edges of a tetrahedron using at most n colors so that no two opposite edges have the same color.
  * @author Sean A. Irvine
  */
 public class A282819 extends LinearRecurrence {

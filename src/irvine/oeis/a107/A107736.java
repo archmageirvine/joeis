@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107736.
+ * A107736 Pentagonal numbers that are half other pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A107736 extends LinearRecurrence {

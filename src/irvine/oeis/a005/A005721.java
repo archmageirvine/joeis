@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005721.
+ * A005721 Central quadrinomial coefficients.
  * @author Sean A. Irvine
  */
 public class A005721 extends A005190 {

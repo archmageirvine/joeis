@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182512.
+ * A182512 a(n) = (16^n - 1)/5.
  * @author Sean A. Irvine
  */
 public class A182512 extends LinearRecurrence {

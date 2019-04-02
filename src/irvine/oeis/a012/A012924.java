@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012924.
+ * A012924 exp(tan(x)+log(x+1))=1+2*x+3/2!*x^2+6/3!*x^3+21/4!*x^4+82/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012924 implements Sequence {

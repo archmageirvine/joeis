@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175629.
+ * A175629 Legendre symbol (n,7).
  * @author Sean A. Irvine
  */
 public class A175629 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238420.
+ * A238420 a(n)=the Wiener index of the Lucas cube L_n.
  * @author Sean A. Irvine
  */
 public class A238420 extends LinearRecurrence {

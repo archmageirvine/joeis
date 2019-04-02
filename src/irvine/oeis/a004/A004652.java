@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004652.
+ * A004652 Expansion of x*(1+x^2+x^4)/((1-x)*(1-x^2)*(1-x^3)).
  * @author Sean A. Irvine
  */
 public class A004652 implements Sequence {

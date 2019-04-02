@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009497.
+ * A009497 Expansion of sin(x)*sin(sinh(x))/2.
  * @author Sean A. Irvine
  */
 public class A009497 implements Sequence {

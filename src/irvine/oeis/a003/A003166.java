@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A003166.
+ * A003166 Numbers whose square in base 2 is a palindrome.
  * @author Sean A. Irvine
  */
 public class A003166 implements Sequence {

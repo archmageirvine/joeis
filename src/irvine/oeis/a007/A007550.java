@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007550.
+ * A007550 Natural numbers exponentiated twice.
  * @author Sean A. Irvine
  */
 public class A007550 implements Sequence {

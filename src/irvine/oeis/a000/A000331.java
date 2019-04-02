@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a158.A158616;
 
 /**
- * A000331.
+ * A000331 Related to zeros of Bessel function.
  * @author Sean A. Irvine
  */
 public class A000331 implements Sequence {

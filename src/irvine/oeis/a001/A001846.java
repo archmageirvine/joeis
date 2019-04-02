@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001846.
+ * A001846 Centered 4-dimensional orthoplex numbers (crystal ball sequence for 4-dimensional cubic lattice).
  * @author Sean A. Irvine
  */
 public class A001846 implements Sequence {

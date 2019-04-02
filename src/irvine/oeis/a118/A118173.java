@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118173.
+ * A118173 Decimal representation of n-th iteration of the Rule 188 elementary cellular automaton starting with a single black cell.
  * @author Sean A. Irvine
  */
 public class A118173 extends LinearRecurrence {

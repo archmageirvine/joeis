@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.math.BigDecimal;
 
 /**
- * A000155.
+ * A000155 Nearest integer to modified Bessel function K_n(1).
  * @author Sean A. Irvine
  */
 public class A000155 implements Sequence {

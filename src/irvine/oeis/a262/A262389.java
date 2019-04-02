@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262389.
+ * A262389 Numbers whose last digit is composite.
  * @author Sean A. Irvine
  */
 public class A262389 extends LinearRecurrence {

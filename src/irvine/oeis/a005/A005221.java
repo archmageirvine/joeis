@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005221.
+ * A005221 Number of Dyck paths of knight moves.
  * @author Sean A. Irvine
  */
 public class A005221 implements Sequence {

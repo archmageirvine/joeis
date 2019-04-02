@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005387.
+ * A005387 Number of partitional matroids on n elements.
  * @author Sean A. Irvine
  */
 public class A005387 implements Sequence {

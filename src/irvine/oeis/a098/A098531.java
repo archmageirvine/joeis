@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098531.
+ * A098531 Sum of fifth powers of first n Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A098531 extends LinearRecurrence {

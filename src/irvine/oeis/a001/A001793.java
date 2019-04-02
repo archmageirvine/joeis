@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001793.
+ * A001793 a(n) = n*(n+3)*2^(n-3).
  * @author Sean A. Irvine
  */
 public class A001793 implements Sequence {

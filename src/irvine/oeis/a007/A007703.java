@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000367;
 
 /**
- * A007703.
+ * A007703 Regular primes.
  * @author Sean A. Irvine
  */
 public class A007703 implements Sequence {

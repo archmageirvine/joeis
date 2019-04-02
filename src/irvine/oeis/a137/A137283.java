@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A137283.
+ * A137283 Palindromic primes consisting only of 3's and two 2's.
  * @author Sean A. Irvine
  */
 public class A137283 implements Sequence {

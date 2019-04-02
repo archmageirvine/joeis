@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003097.
+ * A003097 Critical connected topologies with n points.
  * @author Sean A. Irvine
  */
 public class A003097 implements Sequence {

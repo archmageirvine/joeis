@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A005349.
+ * A005349 Niven (or Harshad) numbers: numbers that are divisible by the sum of their digits.
  * @author Sean A. Irvine
  */
 public class A005349 implements Sequence {

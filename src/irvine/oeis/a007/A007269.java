@@ -9,7 +9,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A007269.
+ * A007269 General partition graphs on n vertices.
  * @author Sean A. Irvine
  */
 public class A007269 extends ParallelGenerateGraphsSequence {

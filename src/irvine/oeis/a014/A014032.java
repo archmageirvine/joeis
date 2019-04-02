@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014032.
+ * A014032 Inverse of 23rd cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014032 extends PeriodicSequence {

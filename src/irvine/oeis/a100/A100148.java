@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100148.
+ * A100148 Structured small rhombicosidodecahedral numbers.
  * @author Sean A. Irvine
  */
 public class A100148 extends LinearRecurrence {

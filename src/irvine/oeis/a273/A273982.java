@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273982.
+ * A273982 Number of little cubes visible around an n X n X n cube with a face on a table.
  * @author Sean A. Irvine
  */
 public class A273982 extends LinearRecurrence {

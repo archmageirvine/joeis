@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100174.
+ * A100174 Structured tetrakis hexahedral numbers (vertex structure 5).
  * @author Sean A. Irvine
  */
 public class A100174 extends LinearRecurrence {

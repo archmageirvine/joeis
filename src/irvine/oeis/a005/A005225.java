@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005225.
+ * A005225 Number of permutations of length n with equal cycles.
  * @author Sean A. Irvine
  */
 public class A005225 implements Sequence {

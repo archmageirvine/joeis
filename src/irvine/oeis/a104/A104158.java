@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104158.
+ * A104158 Numbers on a standard, London, or clock dartboard read in a counterclockwise direction.
  * @author Sean A. Irvine
  */
 public class A104158 extends LinearRecurrence {

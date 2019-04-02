@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006233.
+ * A006233 Denominators of Cauchy numbers of first type.
  * @author Sean A. Irvine
  */
 public class A006233 implements Sequence {

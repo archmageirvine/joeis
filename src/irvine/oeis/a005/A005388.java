@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005388.
+ * A005388 Number of degree-n permutations of order a power of 2.
  * @author Sean A. Irvine
  */
 public class A005388 extends MemorySequence {

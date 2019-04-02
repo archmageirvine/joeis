@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160545.
+ * A160545 Coprime to 21.
  * @author Sean A. Irvine
  */
 public class A160545 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229903.
+ * A229903 (190/99)*(100^A001651(n)-1).
  * @author Sean A. Irvine
  */
 public class A229903 extends LinearRecurrence {

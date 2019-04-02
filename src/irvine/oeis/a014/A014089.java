@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014089.
+ * A014089 Sum of a square and a prime.
  * @author Sean A. Irvine
  */
 public class A014089 implements Sequence {

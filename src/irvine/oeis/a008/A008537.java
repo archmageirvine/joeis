@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008537.
+ * A008537 Numbers that do not contain the letter `n'.
  * @author Sean A. Irvine
  */
 public class A008537 extends FiniteSequence {

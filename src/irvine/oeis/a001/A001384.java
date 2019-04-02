@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A001384.
+ * A001384 Number of n-node trees of height at most 4.
  * @author Sean A. Irvine
  */
 public class A001384 extends PrependSequence {

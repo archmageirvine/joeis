@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * A003022.
+ * A003022 Length of shortest (or optimal) Golomb ruler with n marks.
  * @author Sean A. Irvine
  */
 public class A003022 implements Sequence {

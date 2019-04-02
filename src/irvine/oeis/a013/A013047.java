@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013047.
+ * A013047 tan(sinh(x)+tan(x))=2*x+19/3!*x^3+769/5!*x^5+67345/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013047 implements Sequence {

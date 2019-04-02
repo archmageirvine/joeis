@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011508.
+ * A011508 Decimal expansion of 89th root of 89.
  * @author Sean A. Irvine
  */
 public class A011508 extends DecimalExpansionSequence {

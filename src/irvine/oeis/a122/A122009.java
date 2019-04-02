@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122009.
+ * A122009 G.f. x*(1-11*x+6*x^2)/(1-12*x+15*x^2-2*x^3).
  * @author Sean A. Irvine
  */
 public class A122009 extends LinearRecurrence {

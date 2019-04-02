@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012025.
+ * A012025 E.g.f. arcsinh(sin(arctan(x))) = arcsinh(x/(1+x^2)^(1/2)) (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012025 implements Sequence {

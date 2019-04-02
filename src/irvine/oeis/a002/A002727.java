@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002727.
+ * A002727 Number of 3 X n binary matrices up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A002727 implements Sequence {

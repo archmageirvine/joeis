@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006409.
+ * A006409 Number of rooted nonseparable maps with n + 4 edges and n + 1 vertices on the torus.
  * @author Sean A. Irvine
  */
 public class A006409 implements Sequence {

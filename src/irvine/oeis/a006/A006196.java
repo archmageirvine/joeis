@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006196.
+ * A006196 Number of leftist trees with n leaves.
  * @author Sean A. Irvine
  */
 public class A006196 extends MemoryFunction2<Long, Z> implements Sequence {

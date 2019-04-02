@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006600.
+ * A006600 Total number of triangles visible in regular n-gon with all diagonals drawn.
  * @author Sean A. Irvine
  */
 public class A006600 implements Sequence {

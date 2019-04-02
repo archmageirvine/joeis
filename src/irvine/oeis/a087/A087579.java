@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087579.
+ * A087579 a(n)=(1/6)*sum(k=0,n,binomial(n,k)*Fibonacci(k)*6^k).
  * @author Sean A. Irvine
  */
 public class A087579 extends LinearRecurrence {

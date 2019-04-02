@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import irvine.oeis.a001.A001207;
 
 /**
- * A000228.
+ * A000228 Number of hexagonal polyominoes (or hexagonal polyforms, or planar polyhexes) with n cells.
  * @author Sean A. Irvine
  */
 public class A000228 extends A001207 {

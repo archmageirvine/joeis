@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A006082.
+ * A006082 Number of labeled projective plane trees (or "flat" trees) with n nodes.
  * @author Sean A. Irvine
  */
 public class A006082 extends A006080 {

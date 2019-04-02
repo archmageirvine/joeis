@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012243.
+ * A012243 -log(cos(arctanh(x)))=1/2!*x^2+10/4!*x^4+280/6!*x^6+15440/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012243 implements Sequence {

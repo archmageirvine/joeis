@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001942.
+ * A001942 Expansion of reciprocal of theta series of Leech lattice.
  * @author Sean A. Irvine
  */
 public class A001942 implements Sequence {

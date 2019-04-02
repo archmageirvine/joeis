@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080709.
+ * A080709 Take sum of squares of digits of previous term, starting with 4.
  * @author Sean A. Irvine
  */
 public class A080709 extends LinearRecurrence {

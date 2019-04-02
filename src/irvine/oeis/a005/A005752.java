@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005752.
+ * A005752 a(n) = n^2 + n*floor(n*tau) - floor(n*tau)^2.
  * @author Sean A. Irvine
  */
 public class A005752 implements Sequence {

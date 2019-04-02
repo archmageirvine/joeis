@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.math.z.Z;
 
 /**
- * A009129.
+ * A009129 Perimeter of more than one Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A009129 extends A009096 {

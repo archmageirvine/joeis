@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.RecordSequence;
 
 /**
- * A009023.
+ * A009023 Long legs of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009023 extends RecordSequence {

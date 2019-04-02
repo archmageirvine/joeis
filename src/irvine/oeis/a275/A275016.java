@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275016.
+ * A275016 a(n) = (2^n - (-1+i)^n - (-1-i)^n)/4 - 1 where i is the imaginary unit.
  * @author Sean A. Irvine
  */
 public class A275016 extends LinearRecurrence {

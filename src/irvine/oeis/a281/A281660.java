@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281660.
+ * A281660 The least common multiple of 1+n and 1+n^2.
  * @author Sean A. Irvine
  */
 public class A281660 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.cr.CR;
 
 /**
- * A002460.
+ * A002460 Nearest integer to exponential integral of n.
  * @author Sean A. Irvine
  */
 public class A002460 implements Sequence {

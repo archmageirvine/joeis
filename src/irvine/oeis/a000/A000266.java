@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000266.
+ * A000266 E.g.f. exp(-x^2/2) / (1-x).
  * @author Sean A. Irvine
  */
 public class A000266 implements Sequence {

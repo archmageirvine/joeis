@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.math.z.Z;
 
 /**
- * A160797.
+ * A160797 First differences of A160796.
  * @author Sean A. Irvine
  */
 public class A160797 extends A160796 {

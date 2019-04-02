@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007386.
+ * A007386 Number of strict 7th-order maximal independent sets in path graph.
  * @author Sean A. Irvine
  */
 public class A007386 extends A007381 {

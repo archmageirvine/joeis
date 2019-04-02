@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001216.
+ * A001216 a(n) = solution to the postage stamp problem with n denominations and 6 stamps.
  * @author Sean A. Irvine
  */
 public class A001216 extends A001212 {

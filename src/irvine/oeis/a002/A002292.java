@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a225.A225923;
 
 /**
- * A002292.
+ * A002292 Related to representation as sums of squares.
  * @author Sean A. Irvine
  */
 public class A002292 extends A225923 {

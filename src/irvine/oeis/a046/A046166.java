@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046166.
+ * A046166 Number of minimal covers on n objects with 5 members.
  * @author Sean A. Irvine
  */
 public class A046166 extends LinearRecurrence {

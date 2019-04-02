@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013482.
+ * A013482 exp(cos(x)-sech(x))=1-4/4!*x^4+60/6!*x^6-824/8!*x^8+120/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013482 implements Sequence {

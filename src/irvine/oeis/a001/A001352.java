@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001352.
+ * A001352 a(0) = 1, a(1) = 6, a(2) = 24; for n&gt;=3, a(n) = 4a(n-1) - a(n-2).
  * @author Sean A. Irvine
  */
 public class A001352 implements Sequence {

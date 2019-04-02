@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166164.
+ * A166164 a(n) = the smallest possible prime &gt; a(n-1) made by inserting either a 0 or a 1 anywhere in the binary representation of a(n-1) (including possibly between any two leading 0's), then converting to decimal.
  * @author Sean A. Irvine
  */
 public class A166164 implements Sequence {

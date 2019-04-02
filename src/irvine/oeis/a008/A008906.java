@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008906.
+ * A008906 Number of digits in n! excluding final zeros.
  * @author Sean A. Irvine
  */
 public class A008906 implements Sequence {

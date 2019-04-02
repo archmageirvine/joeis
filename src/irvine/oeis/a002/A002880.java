@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002880.
+ * A002880 Number of 3-connected nets with n edges.
  * @author Sean A. Irvine
  */
 public class A002880 implements Sequence {

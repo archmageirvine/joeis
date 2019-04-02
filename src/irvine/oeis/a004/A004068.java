@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004068.
+ * A004068 Number of atoms in a decahedron with n shells.
  * @author Sean A. Irvine
  */
 public class A004068 implements Sequence {

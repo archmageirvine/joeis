@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006091.
+ * A006091 a(n) = n^n - n + 1.
  * @author Sean A. Irvine
  */
 public class A006091 implements Sequence {

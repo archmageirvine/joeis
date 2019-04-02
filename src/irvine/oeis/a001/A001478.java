@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001478.
+ * A001478 The negative integers.
  * @author Sean A. Irvine
  */
 public class A001478 implements Sequence {

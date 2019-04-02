@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005309.
+ * A005309 Fermionic string states.
  * @author Sean A. Irvine
  */
 public class A005309 implements Sequence {

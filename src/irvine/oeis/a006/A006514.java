@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006514.
+ * A006514 2^p - 1 has at most 2 prime factors.
  * @author Sean A. Irvine
  */
 public class A006514 implements Sequence {

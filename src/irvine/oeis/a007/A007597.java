@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007597.
+ * A007597 Strobogrammatic primes.
  * @author Sean A. Irvine
  */
 public class A007597 implements Sequence {

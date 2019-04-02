@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077616.
+ * A077616 Binomial transform of n^2*2^n/2.
  * @author Sean A. Irvine
  */
 public class A077616 extends LinearRecurrence {

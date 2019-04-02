@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129895.
+ * A129895 a(1)=1. a(n) = a(n-1) + number of triangular numbers among the first (n-1) terms of the sequence.
  * @author Sean A. Irvine
  */
 public class A129895 extends LinearRecurrence {

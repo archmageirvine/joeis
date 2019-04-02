@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006276.
+ * A006276 Pierce expansion of (3 - sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A006276 implements Sequence {

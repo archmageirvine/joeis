@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000793;
 
 /**
- * A051593.
+ * A051593 Largest order of even permutation of n elements, or maximal order of element of alternating group A_n.
  * @author Sean A. Irvine
  */
 public class A051593 extends A051704 {

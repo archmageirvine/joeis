@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008600.
+ * A008600 Multiples of 18.
  * @author Sean A. Irvine
  */
 public class A008600 implements Sequence {

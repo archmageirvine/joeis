@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244845.
+ * A244845 Binary representation of 4^n - 2^(n+1) - 1.
  * @author Sean A. Irvine
  */
 public class A244845 extends LinearRecurrence {

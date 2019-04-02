@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224455.
+ * A224455 The hyper-Wiener index of the linear phenylene with n hexagons.
  * @author Sean A. Irvine
  */
 public class A224455 extends LinearRecurrence {

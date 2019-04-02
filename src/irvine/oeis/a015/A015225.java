@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015225.
+ * A015225 Odd hexagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A015225 extends LinearRecurrence {

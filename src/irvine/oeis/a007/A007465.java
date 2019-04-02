@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A007465.
+ * A007465 Exponential-convolution of triangular numbers with themselves.
  * @author Sean A. Irvine
  */
 public class A007465 extends ExponentialConvolutionSequence {

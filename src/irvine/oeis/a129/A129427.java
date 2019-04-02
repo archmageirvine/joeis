@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A129427.
+ * A129427 Number of isomorphism classes of 3-regular multigraphs of order 2n, loops allowed.
  * @author Sean A. Irvine
  */
 public class A129427 implements Sequence {

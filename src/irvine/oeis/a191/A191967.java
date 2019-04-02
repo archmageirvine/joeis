@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191967.
+ * A191967 n * (numbers that are not divisible by 3).
  * @author Sean A. Irvine
  */
 public class A191967 extends LinearRecurrence {

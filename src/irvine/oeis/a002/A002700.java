@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002700.
+ * A002700 Coefficients of Chebyshev polynomials: n(2n+1)2^(2n-2).
  * @author Sean A. Irvine
  */
 public class A002700 implements Sequence {

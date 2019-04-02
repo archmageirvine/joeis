@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007905.
+ * A007905 Conflicts during insertions into exchange trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007905 extends MemoryFunction1<Q> implements Sequence {

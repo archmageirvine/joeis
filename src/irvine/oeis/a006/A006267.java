@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006267.
+ * A006267 Continued cotangent for the golden ratio.
  * @author Sean A. Irvine
  */
 public class A006267 implements Sequence {

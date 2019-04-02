@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002073.
+ * A002073 Numerators of coefficients in an asymptotic expansion of the confluent hypergeometric function F(1-b; 2; 4b).
  * @author Sean A. Irvine
  */
 public class A002073 implements Sequence {

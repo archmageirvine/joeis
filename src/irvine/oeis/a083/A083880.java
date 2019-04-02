@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083880.
+ * A083880 a(0)=1, a(1)=5, a(n)=10a(n-1)-23a(n-2), n&gt;=2.
  * @author Sean A. Irvine
  */
 public class A083880 extends LinearRecurrence {

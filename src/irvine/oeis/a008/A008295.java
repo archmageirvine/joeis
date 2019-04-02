@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A008295.
+ * A008295 Triangle of numbers of point labeled rooted trees.
  * @author Sean A. Irvine
  */
 public class A008295 extends A000081 {

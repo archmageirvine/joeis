@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007688.
+ * A007688 Number of 5-colorings of cyclic group of order n.
  * @author Sean A. Irvine
  */
 public class A007688 extends A007687 {

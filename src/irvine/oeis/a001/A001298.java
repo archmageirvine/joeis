@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001298.
+ * A001298 Stirling numbers of the second kind S(n+4, n).
  * @author Sean A. Irvine
  */
 public class A001298 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093567.
+ * A093567 Binomial (Binomial (n,2), 3) - Binomial (Binomial (n,3), 2).
  * @author Sean A. Irvine
  */
 public class A093567 extends LinearRecurrence {

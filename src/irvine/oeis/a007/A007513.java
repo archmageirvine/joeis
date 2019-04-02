@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007513.
+ * A007513 a(n) = initial prime of n consecutive primes such that first and last have same digit sum.
  * @author Sean A. Irvine
  */
 public class A007513 implements Sequence {

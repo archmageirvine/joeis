@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055426.
+ * A055426 Number of points in Z^n of norm &lt;= 2.
  * @author Sean A. Irvine
  */
 public class A055426 extends LinearRecurrence {

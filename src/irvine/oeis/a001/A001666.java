@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001666.
+ * A001666 Number of n-step self-avoiding walks on b.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A001666 implements Sequence {

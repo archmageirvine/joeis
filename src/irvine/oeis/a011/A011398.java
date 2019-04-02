@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011398.
+ * A011398 Decimal expansion of 9th root of 18.
  * @author Sean A. Irvine
  */
 public class A011398 extends DecimalExpansionSequence {

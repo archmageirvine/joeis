@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007166.
+ * A007166 Number of blobs with 2n+1 edges.
  * @author Sean A. Irvine
  */
 public class A007166 implements Sequence {

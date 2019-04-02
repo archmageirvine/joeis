@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A000452.
+ * A000452 The greedy sequence of integers which avoids 3-term geometric progressions.
  * @author Sean A. Irvine
  */
 public class A000452 implements Sequence {

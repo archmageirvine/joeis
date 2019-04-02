@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002113;
 import irvine.util.string.StringUtils;
 
 /**
- * A007633.
+ * A007633 Palindromic in bases 3 and 10.
  * @author Sean A. Irvine
  */
 public class A007633 extends A002113 {

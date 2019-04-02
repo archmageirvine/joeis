@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209888.
+ * A209888 Number of binary words of length n containing no subword 01101.
  * @author Sean A. Irvine
  */
 public class A209888 extends LinearRecurrence {

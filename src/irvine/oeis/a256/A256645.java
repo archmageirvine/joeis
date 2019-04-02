@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256645.
+ * A256645 25-gonal pyramidal numbers: a(n) = n*(n+1)*(23*n-20)/6.
  * @author Sean A. Irvine
  */
 public class A256645 extends LinearRecurrence {

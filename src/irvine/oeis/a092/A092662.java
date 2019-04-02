@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092662.
+ * A092662 Absolute value of difference between counts of uninterrupted runs of 9 primes in A092660 and A092661.
  * @author Sean A. Irvine
  */
 public class A092662 implements Sequence {

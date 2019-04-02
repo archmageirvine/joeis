@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A001425.
+ * A001425 Number of commutative groupoids with n elements.
  * @author Sean A. Irvine
  */
 public class A001425 implements Sequence {

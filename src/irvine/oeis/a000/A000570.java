@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A000570.
+ * A000570 Number of tournaments on n nodes determined by their score vectors.
  * @author Sean A. Irvine
  */
 public class A000570 extends LinearRecurrence {

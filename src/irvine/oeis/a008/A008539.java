@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A008539.
+ * A008539 Numbers that do not contain the letter `s'.
  * @author Sean A. Irvine
  */
 public class A008539 implements Sequence {

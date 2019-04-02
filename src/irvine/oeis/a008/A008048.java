@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008048.
+ * A008048 Coordination sequence T2 for Zeolite Code BIK.
  * @author Sean A. Irvine
  */
 public class A008048 extends CoordinationSequence {

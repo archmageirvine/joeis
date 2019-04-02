@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019791.
+ * A019791 Decimal expansion of sqrt(e)/18.
  * @author Sean A. Irvine
  */
 public class A019791 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105866.
+ * A105866 A generalized Chebyshev transform of the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A105866 extends LinearRecurrence {

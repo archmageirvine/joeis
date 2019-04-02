@@ -9,7 +9,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000159.
+ * A000159 Coefficients of m&#233;nage hit polynomials.
  * @author Sean A. Irvine
  */
 public class A000159 implements Sequence {

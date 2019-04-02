@@ -11,7 +11,7 @@ import irvine.util.Triple;
 import java.util.HashSet;
 
 /**
- * A002134.
+ * A002134 Generalized divisor function. Partitions of n using only 3 types of piles.
  * @author Sean A. Irvine
  */
 public class A002134 implements Sequence {

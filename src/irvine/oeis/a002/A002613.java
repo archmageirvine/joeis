@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002613.
+ * A002613 Glaisher's function J(n) (18 squares version).
  * @author Sean A. Irvine
  */
 public class A002613 implements Sequence {

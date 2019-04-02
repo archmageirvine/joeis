@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * A001058.
+ * A001058 1-digit numbers in reverse alphabetical order, then 2-digit numbers, etc.
  * @author Sean A. Irvine
  */
 public class A001058 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001348;
 
 /**
- * A003260.
+ * A003260 Largest prime factor of n-th Mersenne number (A001348(n)).
  * @author Sean A. Irvine
  */
 public class A003260 extends A001348 {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003527.
+ * A003527 Divisors of 2^16 - 1.
  * @author Sean A. Irvine
  */
 public class A003527 extends FiniteSequence {

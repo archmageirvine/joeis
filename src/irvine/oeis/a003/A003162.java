@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A003162.
+ * A003162 A binomial coefficient summation.
  * @author Sean A. Irvine
  */
 public class A003162 extends A003161 {

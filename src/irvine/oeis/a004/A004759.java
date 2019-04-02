@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004759.
+ * A004759 Binary expansion starts 111.
  * @author Sean A. Irvine
  */
 public class A004759 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002004;
 
 /**
- * A005004.
+ * A005004 Davenport-Schinzel numbers of degree n on 3 symbols.
  * @author Sean A. Irvine
  */
 public class A005004 extends A002004 {

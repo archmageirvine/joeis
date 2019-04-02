@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A014011.
+ * A014011 Defined by a chi-inequality greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A014011 extends MemorySequence {

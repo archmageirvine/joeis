@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013474.
+ * A013474 Expansion of cos(cos(x)-cosh(x)).
  * @author Sean A. Irvine
  */
 public class A013474 implements Sequence {

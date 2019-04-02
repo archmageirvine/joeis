@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A137239.
+ * A137239 a(n)= number of Catalan numbers with n digits.
  * @author Sean A. Irvine
  */
 public class A137239 implements Sequence {

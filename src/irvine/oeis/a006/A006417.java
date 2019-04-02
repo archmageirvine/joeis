@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006417.
+ * A006417 Number of loopless rooted planar maps with 4 faces and n vertices and no isthmuses.
  * @author Sean A. Irvine
  */
 public class A006417 implements Sequence {

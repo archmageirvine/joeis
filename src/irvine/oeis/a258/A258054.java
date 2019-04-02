@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258054.
+ * A258054 Circle of fifths cycle (counterclockwise).
  * @author Sean A. Irvine
  */
 public class A258054 extends LinearRecurrence {

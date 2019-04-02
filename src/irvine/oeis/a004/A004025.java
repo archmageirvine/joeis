@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004025.
+ * A004025 Theta series of b.c.c. lattice with respect to long edge.
  * @author Sean A. Irvine
  */
 public class A004025 implements Sequence {

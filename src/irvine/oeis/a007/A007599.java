@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007599.
+ * A007599 a(n+1) = a(n)+a(a(a(..(n-1)..))), depth [ n/2 ].
  * @author Sean A. Irvine
  */
 public class A007599 extends MemorySequence {

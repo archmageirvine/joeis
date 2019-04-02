@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003504.
+ * A003504 a(0)=a(1)=1; thereafter a(n+1) = sum(a(k)^2,k=0..n)/n (a(n) is not always integral!).
  * @author Sean A. Irvine
  */
 public class A003504 implements Sequence {

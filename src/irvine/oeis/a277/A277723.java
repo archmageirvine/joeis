@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277723.
+ * A277723 a(n) = floor(n*tau^3) where tau is the tribonacci constant (A058265).
  * @author Sean A. Irvine
  */
 public class A277723 extends LinearRecurrence {

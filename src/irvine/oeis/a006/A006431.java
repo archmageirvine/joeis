@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006431.
+ * A006431 Numbers that have a unique partition into a sum of four nonnegative squares.
  * @author Sean A. Irvine
  */
 public class A006431 implements Sequence {

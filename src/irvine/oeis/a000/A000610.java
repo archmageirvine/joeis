@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000610.
+ * A000610 Number of self-complementary Boolean functions of n variables: see Comments for precise definition.
  * @author Sean A. Irvine
  */
 public class A000610 extends A000721 {

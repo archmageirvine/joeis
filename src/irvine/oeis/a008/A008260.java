@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008260.
+ * A008260 Coordination sequence for Paracelsian.
  * @author Sean A. Irvine
  */
 public class A008260 extends CoordinationSequence {

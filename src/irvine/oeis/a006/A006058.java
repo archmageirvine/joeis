@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000798;
 
 /**
- * A006058.
+ * A006058 Number of connected labeled T_4-topologies with n points.
  * @author Sean A. Irvine
  */
 public class A006058 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a056.A056556;
 
 /**
- * A007665.
+ * A007665 Tower of Hanoi with 5 pegs.
  * @author Sean A. Irvine
  */
 public class A007665 extends A056556 {

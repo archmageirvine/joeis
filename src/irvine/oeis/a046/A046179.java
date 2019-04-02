@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046179.
+ * A046179 Indices of hexagonal numbers that are also pentagonal.
  * @author Sean A. Irvine
  */
 public class A046179 extends LinearRecurrence {

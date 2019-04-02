@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006479.
+ * A006479 From variance of Fibonacci search.
  * @author Sean A. Irvine
  */
 public class A006479 extends A000045 {

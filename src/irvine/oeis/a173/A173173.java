@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173173.
+ * A173173 a(n) = ceiling(Fibonacci(n)/2).
  * @author Sean A. Irvine
  */
 public class A173173 extends LinearRecurrence {

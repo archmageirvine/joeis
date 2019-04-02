@@ -8,7 +8,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002569.
+ * A002569 Max_{k=0..n} { Number of partitions of n into exactly k parts }.
  * @author Sean A. Irvine
  */
 public class A002569 implements Sequence {

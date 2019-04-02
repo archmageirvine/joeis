@@ -1,7 +1,7 @@
 package irvine.oeis.a085;
 
 /**
- * A085591.
+ * A085591 Maximal cycle lengths in a certain class of one-dimensional cellular automata.
  * @author Sean A. Irvine
  */
 public class A085591 extends A085590 {

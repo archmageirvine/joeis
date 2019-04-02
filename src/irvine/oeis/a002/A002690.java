@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002690.
+ * A002690 a(n) = (n+1) * (2*n)! / n!.
  * @author Sean A. Irvine
  */
 public class A002690 implements Sequence {

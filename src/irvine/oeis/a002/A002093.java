@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002093.
+ * A002093 Highly abundant numbers: numbers n such that sigma(n) &gt; sigma(m) for all m &lt; n.
  * @author Sean A. Irvine
  */
 public class A002093 implements Sequence {

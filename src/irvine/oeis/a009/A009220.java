@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009220.
+ * A009220 Sum(a(n)*x^n/n!) = exp(sinh(sinh(x))).
  * @author Sean A. Irvine
  */
 public class A009220 implements Sequence {

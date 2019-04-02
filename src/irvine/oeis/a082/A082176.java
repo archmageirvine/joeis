@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082176.
+ * A082176 Professor E. P. B. Umbugio's sequence.
  * @author Sean A. Irvine
  */
 public class A082176 extends LinearRecurrence {

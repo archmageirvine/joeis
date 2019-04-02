@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004156.
+ * A004156 Odd numbers written backwards.
  * @author Sean A. Irvine
  */
 public class A004156 implements Sequence {

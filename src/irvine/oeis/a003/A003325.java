@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003325.
+ * A003325 Numbers that are the sum of 2 positive cubes.
  * @author Sean A. Irvine
  */
 public class A003325 implements Sequence {

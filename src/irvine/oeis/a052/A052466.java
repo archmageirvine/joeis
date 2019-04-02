@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052466.
+ * A052466 a(n) is the solution k to Mod[24k,13^n]==1.
  * @author Sean A. Irvine
  */
 public class A052466 extends LinearRecurrence {

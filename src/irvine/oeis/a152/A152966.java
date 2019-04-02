@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152966.
+ * A152966 Twice repdigit numbers.
  * @author Sean A. Irvine
  */
 public class A152966 extends LinearRecurrence {

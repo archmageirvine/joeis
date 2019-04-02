@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020865.
+ * A020865 Number of forests in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020865 extends LinearRecurrence {

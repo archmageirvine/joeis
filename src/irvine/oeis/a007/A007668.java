@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004394;
 
 /**
- * A007668.
+ * A007668 phi(n) divides sigma(n) and sigma(n)/n &gt; sigma(m)/m for all m &lt; n.
  * @author Sean A. Irvine
  */
 public class A007668 extends A004394 {

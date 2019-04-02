@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002972.
+ * A002972 a(n) is the odd member of {x,y}, where x^2+y^2 is the n-th prime of the form 4i+1.
  * @author Sean A. Irvine
  */
 public class A002972 extends A002144 {

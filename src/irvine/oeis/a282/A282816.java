@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282816.
+ * A282816 Number of inequivalent ways to color the faces of a cube using at most n colors so that no two opposite sides have the same color.
  * @author Sean A. Irvine
  */
 public class A282816 extends LinearRecurrence {

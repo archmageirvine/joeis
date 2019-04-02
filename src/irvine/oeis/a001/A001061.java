@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 
 /**
- * A001061.
+ * A001061 1-, 2-, 3-, ... digit numbers in alphabetical order in German.
  * @author Sean A. Irvine
  */
 public class A001061 extends A001058 {

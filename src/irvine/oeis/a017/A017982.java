@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017982.
+ * A017982 Powers of cube root of 3 rounded down.
  * @author Sean A. Irvine
  */
 public class A017982 implements Sequence {

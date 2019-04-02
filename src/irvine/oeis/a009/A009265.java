@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009265.
+ * A009265 Expansion of exp(tanh(x))/cosh(x).
  * @author Sean A. Irvine
  */
 public class A009265 implements Sequence {

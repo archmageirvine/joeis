@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011786.
+ * A011786 Number of 4 X 4 matrices whose determinant is 1 mod n.
  * @author Sean A. Irvine
  */
 public class A011786 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257781.
+ * A257781 Positive integers whose square is the sum of 50 consecutive squares.
  * @author Sean A. Irvine
  */
 public class A257781 extends LinearRecurrence {

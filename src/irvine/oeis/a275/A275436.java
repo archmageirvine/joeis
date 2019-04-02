@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275436.
+ * A275436 Sum of the asymmetry degrees of all 00-avoiding binary words of length n.
  * @author Sean A. Irvine
  */
 public class A275436 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001524.
+ * A001524 Number of stacks, or arrangements of n pennies in contiguous rows, each touching 2 in row below.
  * @author Sean A. Irvine
  */
 public class A001524 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016025.
+ * A016025 Least k such that (tau(k^k)+k-1)/k=n.
  * @author Sean A. Irvine
  */
 public class A016025 implements Sequence {

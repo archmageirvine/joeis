@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A004114.
+ * A004114 Number of trees with n nodes and 2-colored internal (non-leaf) nodes.
  * @author Sean A. Irvine
  */
 public class A004114 extends A004113 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004127.
+ * A004127 Number of planar hexagon trees with n hexagons.
  * @author Sean A. Irvine
  */
 public class A004127 implements Sequence {

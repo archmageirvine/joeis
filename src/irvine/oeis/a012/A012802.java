@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012802.
+ * A012802 sin(sec(x)*arctan(x))=x+20/5!*x^5-784/7!*x^7+26256/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012802 implements Sequence {

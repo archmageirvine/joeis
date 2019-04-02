@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195620.
+ * A195620 Numerators b(n) of Pythagorean approximations b(n)/a(n) to 4.
  * @author Sean A. Irvine
  */
 public class A195620 extends LinearRecurrence {

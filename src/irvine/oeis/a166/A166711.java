@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166711.
+ * A166711 Permutation of the integers: two positives, one negative.
  * @author Sean A. Irvine
  */
 public class A166711 extends LinearRecurrence {

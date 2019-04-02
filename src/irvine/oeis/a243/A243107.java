@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002370;
 
 /**
- * A243107.
+ * A243107 Number of terms in a bordered skew determinant.
  * @author Sean A. Irvine
  */
 public class A243107 implements Sequence {

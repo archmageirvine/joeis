@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000651.
+ * A000651 Running time of Takeuchi function.
  * @author Sean A. Irvine
  */
 public class A000651 extends MemorySequence {

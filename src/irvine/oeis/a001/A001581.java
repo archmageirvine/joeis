@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A001581.
+ * A001581 Winning moves in Fibonacci nim.
  * @author Sean A. Irvine
  */
 public class A001581 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090948.
+ * A090948 a(n) = (1/24)*(n+1)*(n+6)*(n^3+26*n^2+225*n+636).
  * @author Sean A. Irvine
  */
 public class A090948 extends LinearRecurrence {

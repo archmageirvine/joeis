@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054417.
+ * A054417 Number of connected 3 X n binary matrices with rightmost column [1,0,0]'.
  * @author Sean A. Irvine
  */
 public class A054417 extends LinearRecurrence {

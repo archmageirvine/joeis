@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000699;
 
 /**
- * A004300.
+ * A004300 Number of symmetric irreducible diagrams with 2n nodes.
  * @author Sean A. Irvine
  */
 public class A004300 extends MemorySequence {

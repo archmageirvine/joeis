@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005205.
+ * A005205 Coding Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A005205 extends A000045 {

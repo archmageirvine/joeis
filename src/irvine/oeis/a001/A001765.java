@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001765.
+ * A001765 Coefficients of iterated exponentials.
  * @author Sean A. Irvine
  */
 public class A001765 implements Sequence {

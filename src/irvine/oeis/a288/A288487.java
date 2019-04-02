@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288487.
+ * A288487 Cuboids that fit in square rings from A288486 obtaining a fifth power.
  * @author Sean A. Irvine
  */
 public class A288487 extends LinearRecurrence {

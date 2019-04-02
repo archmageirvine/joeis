@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152691.
+ * A152691 Multiples of 64.
  * @author Sean A. Irvine
  */
 public class A152691 extends LinearRecurrence {

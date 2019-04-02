@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263945.
+ * A263945 Positive integers n such that (n+39)^3 - n^3 is a square.
  * @author Sean A. Irvine
  */
 public class A263945 extends LinearRecurrence {

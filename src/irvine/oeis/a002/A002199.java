@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a071.A071894;
 
 /**
- * A002199.
+ * A002199 Least negative primitive root of n-th prime.
  * @author Sean A. Irvine
  */
 public class A002199 extends A071894 {

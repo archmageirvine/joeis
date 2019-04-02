@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A006350.
+ * A006350 Related to series-parallel networks.
  * @author Sean A. Irvine
  */
 public class A006350 extends A006349 {

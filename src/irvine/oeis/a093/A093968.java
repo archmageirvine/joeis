@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093968.
+ * A093968 Inverse binomial transform of n*Pell(n).
  * @author Sean A. Irvine
  */
 public class A093968 extends LinearRecurrence {

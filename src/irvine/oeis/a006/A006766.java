@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a038.A038119;
 
 /**
- * A006766.
+ * A006766 Number of 3-dimensional polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006766 extends A038119 {

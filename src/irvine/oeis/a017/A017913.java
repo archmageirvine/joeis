@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017913.
+ * A017913 Powers of sqrt(3) rounded down.
  * @author Sean A. Irvine
  */
 public class A017913 implements Sequence {

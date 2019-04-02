@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160993.
+ * A160993 The number of ordered ways to achieve a score of n in American football.
  * @author Sean A. Irvine
  */
 public class A160993 extends LinearRecurrence {

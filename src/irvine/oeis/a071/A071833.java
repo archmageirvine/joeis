@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071833.
+ * A071833 Frequency ratios for notes of C-major scale starting at c = 24.
  * @author Sean A. Irvine
  */
 public class A071833 extends LinearRecurrence {

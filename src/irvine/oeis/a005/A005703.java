@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000055;
 import irvine.oeis.a001.A001429;
 
 /**
- * A005703.
+ * A005703 Number of n-node connected graphs with at most one cycle.
  * @author Sean A. Irvine
  */
 public class A005703 extends A000055 {

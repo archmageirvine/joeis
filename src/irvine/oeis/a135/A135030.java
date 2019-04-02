@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135030.
+ * A135030 Generalized Fibonacci numbers: a(n) = 6*a(n-1) + 2*a(n-2).
  * @author Sean A. Irvine
  */
 public class A135030 extends LinearRecurrence {

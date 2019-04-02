@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A001867.
+ * A001867 Number of n-bead necklaces with 3 colors.
  * @author Sean A. Irvine
  */
 public class A001867 implements Sequence {

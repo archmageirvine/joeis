@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011464.
+ * A011464 Decimal expansion of 45th root of 45.
  * @author Sean A. Irvine
  */
 public class A011464 extends DecimalExpansionSequence {

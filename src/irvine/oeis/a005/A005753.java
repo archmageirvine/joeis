@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A005753.
+ * A005753 Number of rooted identity matched trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005753 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014085.
+ * A014085 Number of primes between n^2 and (n+1)^2.
  * @author Sean A. Irvine
  */
 public class A014085 implements Sequence {

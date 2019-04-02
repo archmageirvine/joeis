@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007924.
+ * A007924 The number n written using the greedy algorithm in the base where the values of the places are 1 and primes.
  * @author Sean A. Irvine
  */
 public class A007924 implements Sequence {

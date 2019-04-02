@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127365.
+ * A127365 Signed repeated natural numbers.
  * @author Sean A. Irvine
  */
 public class A127365 extends LinearRecurrence {

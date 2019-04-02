@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254871.
+ * A254871 Seventh partial sums of fifth powers (A000584).
  * @author Sean A. Irvine
  */
 public class A254871 extends LinearRecurrence {

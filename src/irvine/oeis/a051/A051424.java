@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A051424.
+ * A051424 Number of partitions of n into pairwise relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A051424 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000430.
+ * A000430 Primes and squares of primes.
  * @author Sean A. Irvine
  */
 public class A000430 implements Sequence {

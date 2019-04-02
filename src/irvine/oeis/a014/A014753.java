@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014753.
+ * A014753 Primes p==1 (mod 6) such that 3 and -3 are both cubes (one implies other) modulo p.
  * @author Sean A. Irvine
  */
 public class A014753 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193228.
+ * A193228 Truncated octahedron with faces of centered polygons.
  * @author Sean A. Irvine
  */
 public class A193228 extends LinearRecurrence {

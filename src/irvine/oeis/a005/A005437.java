@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005437.
+ * A005437 Column of Kempner tableau.
  * @author Sean A. Irvine
  */
 public class A005437 implements Sequence {

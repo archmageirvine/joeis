@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286985.
+ * A286985 Number of connected dominating sets in the n-prism graph.
  * @author Sean A. Irvine
  */
 public class A286985 extends LinearRecurrence {

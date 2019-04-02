@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000068.
+ * A000068 Numbers n such that n^4 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A000068 implements Sequence {

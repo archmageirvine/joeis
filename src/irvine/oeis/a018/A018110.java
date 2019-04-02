@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018110.
+ * A018110 Powers of fourth root of 22 rounded up.
  * @author Sean A. Irvine
  */
 public class A018110 implements Sequence {

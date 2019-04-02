@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A321546.
+ * A321546 a(n) = Sum_{d|n} (-1)^(d-1)*d^7.
  * @author Sean A. Irvine
  */
 public class A321546 implements Sequence {

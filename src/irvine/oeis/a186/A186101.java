@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186101.
+ * A186101 a(n) = 2*n / 3 if n divisible by 3, a(n) = n otherwise.
  * @author Sean A. Irvine
  */
 public class A186101 extends LinearRecurrence {

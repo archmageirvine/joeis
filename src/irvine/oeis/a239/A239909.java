@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239909.
+ * A239909 Arises from a construction of equiangular lines in complex space of dimension 2.
  * @author Sean A. Irvine
  */
 public class A239909 extends LinearRecurrence {

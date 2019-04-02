@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103311.
+ * A103311 A transform of the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A103311 extends LinearRecurrence {

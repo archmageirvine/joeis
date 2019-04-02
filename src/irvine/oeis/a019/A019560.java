@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019560.
+ * A019560 Coordination sequence for C_4 lattice.
  * @author Sean A. Irvine
  */
 public class A019560 implements Sequence {

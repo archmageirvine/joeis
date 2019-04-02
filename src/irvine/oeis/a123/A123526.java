@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123526.
+ * A123526 Octanacci numbers.
  * @author Sean A. Irvine
  */
 public class A123526 extends LinearRecurrence {

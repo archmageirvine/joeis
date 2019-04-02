@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301112.
+ * A301112 Coordination sequence T12 for Zeolite Code IWW.
  * @author Sean A. Irvine
  */
 public class A301112 extends CoordinationSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013600.
+ * A013600 nextprime(6^n)-6^n.
  * @author Sean A. Irvine
  */
 public class A013600 implements Sequence {

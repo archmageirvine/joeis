@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001083.
+ * A001083 Length of one version of Kolakoski sequence {A000002(i)} at n-th growth stage.
  * @author Sean A. Irvine
  */
 public class A001083 implements Sequence {

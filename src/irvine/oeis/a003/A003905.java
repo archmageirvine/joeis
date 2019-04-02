@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003905.
+ * A003905 Degrees of irreducible representations of Janko group J2.
  * @author Sean A. Irvine
  */
 public class A003905 extends FiniteSequence {

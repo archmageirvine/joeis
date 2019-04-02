@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A031878.
+ * A031878 Maximal number of edges in Hamiltonian path in complete graph on n nodes.
  * @author Sean A. Irvine
  */
 public class A031878 extends LinearRecurrence {

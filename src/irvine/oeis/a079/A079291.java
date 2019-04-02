@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079291.
+ * A079291 Squares of Pell numbers.
  * @author Sean A. Irvine
  */
 public class A079291 extends LinearRecurrence {

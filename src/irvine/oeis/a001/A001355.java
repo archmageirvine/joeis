@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000796;
 
 /**
- * A001355.
+ * A001355 Mix digits of pi and e.
  * @author Sean A. Irvine
  */
 public class A001355 implements Sequence {

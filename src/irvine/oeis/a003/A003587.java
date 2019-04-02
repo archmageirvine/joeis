@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Roman;
 
 /**
- * A003587.
+ * A003587 Roman numerals with 1 letter, in numerical order; then those with 2 letters, etc.
  * @author Sean A. Irvine
  */
 public class A003587 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013295.
+ * A013295 E.g.f.: -arcsin(log(x+1)-arctanh(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A013295 implements Sequence {

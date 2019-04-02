@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099099.
+ * A099099 Quadrisection of a generalized Padovan sequence.
  * @author Sean A. Irvine
  */
 public class A099099 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236680.
+ * A236680 Dimension of the space of spinors in n-dimensional real space.
  * @author Sean A. Irvine
  */
 public class A236680 extends LinearRecurrence {

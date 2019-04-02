@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A254181.
+ * A254181 Decimal expansion of reduced Planck constant (in joule seconds).
  * @author Sean A. Irvine
  */
 public class A254181 extends DoubleDecimalExpansionSequence {

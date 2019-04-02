@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A007163.
+ * A007163 Number of P-graphs with vertical symmetry.
  * @author Sean A. Irvine
  */
 public class A007163 extends A007161 {

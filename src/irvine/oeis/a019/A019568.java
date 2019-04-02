@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019568.
+ * A019568 a(n) = smallest k &gt;= 1 such that {1^n, 2^n, 3^n, ..., k^n} can be partitioned into two sets with equal sum.
  * @author Sean A. Irvine
  */
 public class A019568 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A014092.
+ * A014092 Numbers that are not the sum of 2 primes.
  * @author Sean A. Irvine
  */
 public class A014092 extends ComplementSequence {

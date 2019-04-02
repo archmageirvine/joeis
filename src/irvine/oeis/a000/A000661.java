@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000661.
+ * A000661 Shifts 2 places left under boustrophedon transform.
  * @author Sean A. Irvine
  */
 public class A000661 implements Sequence {

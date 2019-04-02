@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015961.
+ * A015961 Positive integers n such that n | (12^n + 1).
  * @author Sean A. Irvine
  */
 public class A015961 implements Sequence {

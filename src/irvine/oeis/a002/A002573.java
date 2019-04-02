@@ -6,7 +6,7 @@ import java.util.HashMap;
 import irvine.util.Pair;
 
 /**
- * A002573.
+ * A002573 Restricted partitions.
  * @author Sean A. Irvine
  */
 public class A002573 implements Sequence {

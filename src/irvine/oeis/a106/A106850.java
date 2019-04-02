@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106850.
+ * A106850 4 X 4 vector Markov sequence with characteristic polynomial: x^4-10*x^3+25*x^2-9.
  * @author Sean A. Irvine
  */
 public class A106850 extends LinearRecurrence {

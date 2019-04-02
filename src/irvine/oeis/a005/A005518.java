@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005518.
+ * A005518 Largest label f(T) given to a rooted tree T with n nodes in Matula-Goebel labeling.
  * @author Sean A. Irvine
  */
 public class A005518 implements Sequence {

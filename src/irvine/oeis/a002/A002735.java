@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002735.
+ * A002735 Related to Euler numbers.
  * @author Sean A. Irvine
  */
 public class A002735 extends MemoryFunction2<Long, Z> implements Sequence {

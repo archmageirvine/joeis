@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249862.
+ * A249862 A special solution of X(n)^2 - 280*Y(n)^2 = 3^(2*n), n &gt;= 0; here the X member.
  * @author Sean A. Irvine
  */
 public class A249862 extends LinearRecurrence {

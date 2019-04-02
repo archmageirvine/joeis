@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011189.
+ * A011189 Coefficients in expansion of e as Sum a(n)/(n*n!*(n+1)!), n=1..inf, as found by greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A011189 implements Sequence {

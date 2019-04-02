@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269920;
 
 /**
- * A104742.
+ * A104742 Number of rooted maps of (orientable) genus 3 containing n edges.
  * @author Sean A. Irvine
  */
 public class A104742 extends A269920 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012039.
+ * A012039 sinh(sin(arcsinh(x))) = x-1/3!*x^3+1/5!*x^5+111/7!*x^7-9407/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012039 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059716.
+ * A059716 Number of column convex polyominoes with n hexagonal cells.
  * @author Sean A. Irvine
  */
 public class A059716 extends LinearRecurrence {

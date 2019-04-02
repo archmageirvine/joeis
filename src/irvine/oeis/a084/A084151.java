@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084151.
+ * A084151 Binomial transform of a Pell convolution.
  * @author Sean A. Irvine
  */
 public class A084151 extends LinearRecurrence {

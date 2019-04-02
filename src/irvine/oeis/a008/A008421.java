@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008421.
+ * A008421 Crystal ball sequence for 10-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
 public class A008421 extends CoordinationSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086444.
+ * A086444 Sequence associated with palindromic structures.
  * @author Sean A. Irvine
  */
 public class A086444 extends LinearRecurrence {

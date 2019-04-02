@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005382.
+ * A005382 Primes p such that 2p-1 is also prime.
  * @author Sean A. Irvine
  */
 public class A005382 implements Sequence {

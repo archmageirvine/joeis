@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135038.
+ * A135038 Sums of the products of n consecutive quadruples of numbers.
  * @author Sean A. Irvine
  */
 public class A135038 extends LinearRecurrence {

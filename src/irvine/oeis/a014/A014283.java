@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014283.
+ * A014283 a(n) = Fibonacci(n) - n^2.
  * @author Sean A. Irvine
  */
 public class A014283 extends A000045 {

@@ -5,7 +5,7 @@ import irvine.math.Polyomino;
 import irvine.oeis.a000.A000105;
 
 /**
- * A001419.
+ * A001419 Number of n-celled polyominoes with holes.
  * @author Sean A. Irvine
  */
 public class A001419 extends A000105 {

@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234312.
+ * A234312 Number of tilings of a 5 X n rectangle using n pentominoes of shapes L, X.
  * @author Sean A. Irvine
  */
 public class A234312 extends LinearRecurrence {

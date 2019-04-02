@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193608.
+ * A193608 The consecutive squares of numbers multiplied by their next consecutive integer.
  * @author Sean A. Irvine
  */
 public class A193608 extends LinearRecurrence {

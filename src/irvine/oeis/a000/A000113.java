@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000113.
+ * A000113 Number of transformation groups of order n.
  * @author Sean A. Irvine
  */
 public class A000113 implements Sequence {

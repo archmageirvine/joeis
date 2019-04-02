@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080738.
+ * A080738 Array read by rows in which 0th row is {1,2}; for n&gt;0, n-th row gives finite orders of 2n X 2n integer matrices that are not orders of 2n-1 X 2n-1 integer matrices.
  * @author Sean A. Irvine
  */
 public class A080738 implements Sequence {

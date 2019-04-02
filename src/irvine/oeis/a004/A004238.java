@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004238.
+ * A004238 a(n) = 100*log(n) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A004238 implements Sequence {

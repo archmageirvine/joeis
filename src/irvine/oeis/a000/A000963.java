@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000963.
+ * A000963 The convergent sequence B_n for the ternary continued fraction (3,1;2,2) of period 2.
  * @author Sean A. Irvine
  */
 public class A000963 implements Sequence {

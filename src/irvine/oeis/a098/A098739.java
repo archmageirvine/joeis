@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098739.
+ * A098739 This sequence is constructed using only the four single-digit primes 2,3,5,7 in that order.
  * @author Sean A. Irvine
  */
 public class A098739 extends LinearRecurrence {

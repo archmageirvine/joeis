@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054469.
+ * A054469 A second-order recursive sequence.
  * @author Sean A. Irvine
  */
 public class A054469 extends LinearRecurrence {

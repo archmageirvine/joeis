@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249911.
+ * A249911 60-gonal (hexacontagonal) numbers: a(n) = n(29n - 28).
  * @author Sean A. Irvine
  */
 public class A249911 extends LinearRecurrence {

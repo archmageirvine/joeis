@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008322.
+ * A008322 Smallest number that is sum of cubes of two distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A008322 extends MemorySequence {

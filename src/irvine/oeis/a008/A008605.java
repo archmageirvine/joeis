@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008605.
+ * A008605 Multiples of 23.
  * @author Sean A. Irvine
  */
 public class A008605 implements Sequence {

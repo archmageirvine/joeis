@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012646.
+ * A012646 exp(arcsinh(x)*sinh(x))=1+2/2!*x^2+12/4!*x^4+160/6!*x^6+2576/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012646 implements Sequence {

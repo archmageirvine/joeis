@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018088.
+ * A018088 Powers of fourth root of 15 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018088 implements Sequence {

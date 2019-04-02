@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241029.
+ * A241029 Sum of n-th powers of divisors of 22.
  * @author Sean A. Irvine
  */
 public class A241029 extends LinearRecurrence {

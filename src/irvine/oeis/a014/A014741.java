@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014741.
+ * A014741 Numbers n such that n divides 2^(n+1) - 2.
  * @author Sean A. Irvine
  */
 public class A014741 implements Sequence {

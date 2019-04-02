@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112476.
+ * A112476 Diagonal sums of Riordan array (1/(1+x),x(1+x)/(1-x)).
  * @author Sean A. Irvine
  */
 public class A112476 extends LinearRecurrence {

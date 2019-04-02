@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007657.
+ * A007657 Maximal coefficient in (x + x^2 + x^4 + x^8 + ...)^n.
  * @author Sean A. Irvine
  */
 public class A007657 extends MemoryFunction2<Integer, Z> implements Sequence {

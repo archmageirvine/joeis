@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A119008.
+ * A119008 Number of n X n real symmetric (0,1)-matrices with determinant = 1.
  * @author Sean A. Irvine
  */
 public class A119008 implements Sequence {

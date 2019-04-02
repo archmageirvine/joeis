@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000133.
+ * A000133 Number of Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A000133 implements Sequence {

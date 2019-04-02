@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a074.A074728;
 
 /**
- * A000551.
+ * A000551 Number of labeled rooted trees of height 2 with n nodes.
  * @author Sean A. Irvine
  */
 public class A000551 extends A074728 {

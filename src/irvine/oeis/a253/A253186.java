@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253186.
+ * A253186 Number of connected unlabeled multigraphs with 3 vertices and n edges.
  * @author Sean A. Irvine
  */
 public class A253186 extends LinearRecurrence {

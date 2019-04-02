@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220000.
+ * A220000 Sixty fourths of an inch in thousandths, rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A220000 extends LinearRecurrence {

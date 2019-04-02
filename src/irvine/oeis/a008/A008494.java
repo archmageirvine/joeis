@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008494.
+ * A008494 Expansion of (1-x^12) / (1-x)^12.
  * @author Sean A. Irvine
  */
 public class A008494 extends CoordinationSequence {

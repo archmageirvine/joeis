@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013998.
+ * A013998 Unrestricted Perrin pseudoprimes.
  * @author Sean A. Irvine
  */
 public class A013998 implements Sequence {

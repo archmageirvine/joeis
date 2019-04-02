@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A010097.
+ * A010097 Prefix (or Levenshtein) codes for natural numbers.
  * @author Sean A. Irvine
  */
 public class A010097 extends MemorySequence {

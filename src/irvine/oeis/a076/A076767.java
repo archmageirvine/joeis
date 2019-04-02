@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076767.
+ * A076767 Triangular numbers with square pyramidal indices.
  * @author Sean A. Irvine
  */
 public class A076767 extends LinearRecurrence {

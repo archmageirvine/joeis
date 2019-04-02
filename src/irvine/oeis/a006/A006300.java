@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269920;
 
 /**
- * A006300.
+ * A006300 Number of rooted maps with n edges on torus.
  * @author Sean A. Irvine
  */
 public class A006300 extends A269920 {

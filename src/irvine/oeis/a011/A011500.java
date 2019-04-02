@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011500.
+ * A011500 Decimal expansion of 81st root of 81.
  * @author Sean A. Irvine
  */
 public class A011500 extends DecimalExpansionSequence {

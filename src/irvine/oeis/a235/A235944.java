@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235944.
+ * A235944 Digital roots of squares of Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A235944 extends LinearRecurrence {

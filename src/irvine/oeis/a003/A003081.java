@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003081.
+ * A003081 Number of triangular cacti with 2n+1 nodes (n triangles).
  * @author Sean A. Irvine
  */
 public class A003081 extends A003080 {

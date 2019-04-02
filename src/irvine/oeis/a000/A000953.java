@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000953.
+ * A000953 Number of free nonplanar polyenoids with n nodes.
  * @author Sean A. Irvine
  */
 public class A000953 extends A000207 {

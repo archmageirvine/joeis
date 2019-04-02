@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010062.
+ * A010062 a(0)=1; thereafter a(n+1) = a(n) + number of 1's in binary representation of a(n).
  * @author Sean A. Irvine
  */
 public class A010062 implements Sequence {

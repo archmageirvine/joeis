@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A006568.
+ * A006568 Denominators of generalized Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A006568 implements Sequence {

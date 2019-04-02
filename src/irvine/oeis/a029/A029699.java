@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029699.
+ * A029699 Number of words of length 4 in the n(n-1)/2 transpositions of S[ n ] equivalent to the identity.
  * @author Sean A. Irvine
  */
 public class A029699 extends LinearRecurrence {

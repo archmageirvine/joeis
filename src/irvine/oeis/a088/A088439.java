@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088439.
+ * A088439 a(3n) = 3n, otherwise a(n) = 1.
  * @author Sean A. Irvine
  */
 public class A088439 extends LinearRecurrence {

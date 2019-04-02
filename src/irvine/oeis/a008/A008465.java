@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008465.
+ * A008465 2^(2n-6) * C(n,3) - 2^(n-2) * C(n,4).
  * @author Sean A. Irvine
  */
 public class A008465 implements Sequence {

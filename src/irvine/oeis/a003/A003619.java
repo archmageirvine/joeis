@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000149;
 
 /**
- * A003619.
+ * A003619 Not of form [ e^m ], m &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A003619 extends ComplementSequence {

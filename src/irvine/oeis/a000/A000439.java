@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000439.
+ * A000439 Powers of rooted tree enumerator.
  * @author Sean A. Irvine
  */
 public class A000439 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036499.
+ * A036499 Numbers of the form n*(n+1)/6 for n = 2 or 3 modulo 6.
  * @author Sean A. Irvine
  */
 public class A036499 extends LinearRecurrence {

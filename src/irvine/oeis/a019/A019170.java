@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019170.
+ * A019170 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite MFS = ZSM-57 H1.5[ Al1.5Si34.5O72 ].
  * @author Sean A. Irvine
  */
 public class A019170 extends A018940 {

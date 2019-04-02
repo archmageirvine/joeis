@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a000.A000110;
 
 /**
- * A014323.
+ * A014323 Three-fold convolution of Bell numbers with themselves.
  * @author Sean A. Irvine
  */
 public class A014323 extends ConvolutionSequence {

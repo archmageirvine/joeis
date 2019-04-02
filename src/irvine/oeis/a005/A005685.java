@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005685.
+ * A005685 Number of Twopins positions.
  * @author Sean A. Irvine
  */
 public class A005685 implements Sequence {

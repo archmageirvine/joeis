@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A104035.
+ * A104035 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows, defined by T(0,0) = 1; T(0,k) = 0 if k&gt;0 or if k&lt;0; T(n,k) = k*T(n-1,k-1) + (k+1)*T(n-1,k+1).
  * @author Sean A. Irvine
  */
 public class A104035 implements Sequence {

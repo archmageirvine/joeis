@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015052.
+ * A015052 Smallest positive integer for which n divides a(n)^5.
  * @author Sean A. Irvine
  */
 public class A015052 implements Sequence {

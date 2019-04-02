@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228874.
+ * A228874 L(n) * L(n+1) * L(n+2) * L(n+3), the product of four consecutive Lucas numbers, A000032.
  * @author Sean A. Irvine
  */
 public class A228874 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A027376.
+ * A027376 Number of ternary irreducible monic polynomials of degree n; dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
 public class A027376 implements Sequence {

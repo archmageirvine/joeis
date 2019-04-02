@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095266.
+ * A095266 A sequence generated from the Narayana triangle considered as a matrix, or from Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A095266 extends LinearRecurrence {

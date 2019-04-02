@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033305.
+ * A033305 Number of permutations (p1,...,pn) such that 1&lt;=|pk-k|&lt;=2 for all k.
  * @author Sean A. Irvine
  */
 public class A033305 extends LinearRecurrence {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A003088.
+ * A003088 Number of unilateral digraphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A003088 implements Sequence, GraphProcessor {

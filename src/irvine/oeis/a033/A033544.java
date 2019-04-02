@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033544.
+ * A033544 Wiener number of n-hexagonal triangle.
  * @author Sean A. Irvine
  */
 public class A033544 extends LinearRecurrence {

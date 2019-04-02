@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A010055.
+ * A010055 1 if n is a prime power p^k (k &gt;= 0), otherwise 0.
  * @author Sean A. Irvine
  */
 public class A010055 extends A000961 {

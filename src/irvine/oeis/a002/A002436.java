@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002436.
+ * A002436 E.g.f.: Sum_{n &gt;= 0} a(n)*x^(2*n)/(2*n)! = sec(2*x).
  * @author Sean A. Irvine
  */
 public class A002436 implements Sequence {

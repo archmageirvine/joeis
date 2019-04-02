@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005415.
+ * A005415 Tensors with n external gluons.
  * @author Sean A. Irvine
  */
 public class A005415 extends MemorySequence {

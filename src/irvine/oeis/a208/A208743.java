@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A208743.
+ * A208743 Number of subsets of the set {1,2,...,n} which do not contain two elements whose difference is 6.
  * @author Sean A. Irvine
  */
 public class A208743 extends LinearRecurrence {

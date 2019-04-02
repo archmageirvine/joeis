@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051872.
+ * A051872 20-gonal (or icosagonal) numbers: a(n) = n*(9*n-8).
  * @author Sean A. Irvine
  */
 public class A051872 extends LinearRecurrence {

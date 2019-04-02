@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112497.
+ * A112497 Fifth column of triangle A112493 used for e.g.f.s of Stirling2 diagonals.
  * @author Sean A. Irvine
  */
 public class A112497 extends LinearRecurrence {

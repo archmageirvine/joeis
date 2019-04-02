@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015473.
+ * A015473 q-Fibonacci numbers for q=2.
  * @author Sean A. Irvine
  */
 public class A015473 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019022.
+ * A019022 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite JBW = NaJ (Barrer and White) Na3 [ Al3Si3O12 ]. 1.5 H2O.
  * @author Sean A. Irvine
  */
 public class A019022 extends A018940 {

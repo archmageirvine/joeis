@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002104.
+ * A002104 Logarithmic numbers.
  * @author Sean A. Irvine
  */
 public class A002104 implements Sequence {

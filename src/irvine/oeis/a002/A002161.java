@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A002161.
+ * A002161 Decimal expansion of square root of Pi.
  * @author Sean A. Irvine
  */
 public class A002161 extends DecimalExpansionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000139;
 
 /**
- * A006402.
+ * A006402 Nonseparable planar maps with n edges.
  * @author Sean A. Irvine
  */
 public class A006402 extends A000139 {

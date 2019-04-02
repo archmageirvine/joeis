@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147528.
+ * A147528 Numbers x such that (x+103)^3-x^3 is a square.
  * @author Sean A. Irvine
  */
 public class A147528 extends LinearRecurrence {

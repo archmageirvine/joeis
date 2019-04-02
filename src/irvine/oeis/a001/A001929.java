@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A001929.
+ * A001929 Number of connected topologies on n labeled points.
  * @author Sean A. Irvine
  */
 public class A001929 extends A001927 {

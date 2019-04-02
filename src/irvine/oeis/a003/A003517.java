@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003517.
+ * A003517 Number of permutations of [n+1] with exactly 1 increasing subsequence of length 3.
  * @author Sean A. Irvine
  */
 public class A003517 extends A003516 {

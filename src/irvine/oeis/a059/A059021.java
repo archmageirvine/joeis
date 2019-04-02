@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059021.
+ * A059021 Number of 3 X n checkerboards in which the set of red squares is edge-connected.
  * @author Sean A. Irvine
  */
 public class A059021 extends LinearRecurrence {

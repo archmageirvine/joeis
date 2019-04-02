@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A000373.
+ * A000373 Conjectured dimension of a module associated with the free commutative Moufang loop with n generators.
  * @author Sean A. Irvine
  */
 public class A000373 extends A000275 {

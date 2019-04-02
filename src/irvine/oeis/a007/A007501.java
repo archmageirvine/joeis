@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007501.
+ * A007501 a(0) = 2; for n &gt;= 0, a(n+1) = a(n)*(a(n)+1)/2.
  * @author Sean A. Irvine
  */
 public class A007501 implements Sequence {

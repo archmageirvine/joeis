@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013302.
+ * A013302 E.g.f.: cosh(log(x+1)-arctanh(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A013302 implements Sequence {

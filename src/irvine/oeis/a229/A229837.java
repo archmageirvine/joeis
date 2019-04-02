@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A229837.
+ * A229837 Decimal expansion of Sum_{n&gt;=1} 1/(n*n!).
  * @author Sean A. Irvine
  */
 public class A229837 extends DecimalExpansionSequence {

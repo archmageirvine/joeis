@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A007552.
+ * A007552 Exponentiation of Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A007552 extends A000045 {

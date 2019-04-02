@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002952.
+ * A002952 Smaller of unitary amicable pair.
  * @author Sean A. Irvine
  */
 public class A002952 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010351.
+ * A010351 Base 8 Armstrong or narcissistic numbers.
  * @author Sean A. Irvine
  */
 public class A010351 extends FiniteSequence {

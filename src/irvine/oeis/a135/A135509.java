@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135509.
+ * A135509 Values c^(1/2) from a^(1/2) + b^(1/2) = c^(1/2) such that a^2 + b = c.
  * @author Sean A. Irvine
  */
 public class A135509 extends LinearRecurrence {

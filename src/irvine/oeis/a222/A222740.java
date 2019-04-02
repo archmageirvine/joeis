@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222740.
+ * A222740 Denominators of 1/16 - 1/(4 + 8*n)^2.
  * @author Sean A. Irvine
  */
 public class A222740 extends LinearRecurrence {

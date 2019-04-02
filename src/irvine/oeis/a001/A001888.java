@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A001888.
+ * A001888 Hit polynomials.
  * @author Sean A. Irvine
  */
 public class A001888 extends A001884 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003471.
+ * A003471 Number of permutations with no hits on 2 main diagonals.
  * @author Sean A. Irvine
  */
 public class A003471 implements Sequence {

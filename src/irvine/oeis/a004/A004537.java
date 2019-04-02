@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004537.
+ * A004537 Theta series of 23-dimensional shorter Leech lattice.
  * @author Sean A. Irvine
  */
 public class A004537 implements Sequence {

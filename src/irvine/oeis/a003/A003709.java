@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003709.
+ * A003709 E.g.f. cos(sin(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A003709 implements Sequence {

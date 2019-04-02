@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001112.
+ * A001112 A continued fraction.
  * @author Sean A. Irvine
  */
 public class A001112 implements Sequence {

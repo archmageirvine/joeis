@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004295.
+ * A004295 Expansion of (1+2*x+x^2)/(1-42*x+x^2).
  * @author Sean A. Irvine
  */
 public class A004295 implements Sequence {

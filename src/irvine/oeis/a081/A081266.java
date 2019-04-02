@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081266.
+ * A081266 Staggered diagonal of triangular spiral in A051682.
  * @author Sean A. Irvine
  */
 public class A081266 extends LinearRecurrence {

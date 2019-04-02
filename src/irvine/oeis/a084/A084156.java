@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084156.
+ * A084156 Binomial transform of sinh(x)*cosh(sqrt(3)*x).
  * @author Sean A. Irvine
  */
 public class A084156 extends LinearRecurrence {

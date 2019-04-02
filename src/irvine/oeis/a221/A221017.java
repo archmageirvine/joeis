@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221017.
+ * A221017 The hyper-Wiener index of the fullerenyl anion G[n]C[60], defined pictorially in the Arezoomand reference (see Fig. 5).
  * @author Sean A. Irvine
  */
 public class A221017 extends LinearRecurrence {

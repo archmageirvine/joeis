@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014227.
+ * A014227 Minimal number of initial pieces needed to reach level n in the Solitaire Army game on a hexagonal lattice (a finite sequence).
  * @author Sean A. Irvine
  */
 public class A014227 extends FiniteSequence {

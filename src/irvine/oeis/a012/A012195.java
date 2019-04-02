@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012195.
+ * A012195 arcsin(arctan(arcsin(x)))=x+12/5!*x^5+80/7!*x^7+13776/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A012195 implements Sequence {

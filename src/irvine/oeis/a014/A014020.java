@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014020.
+ * A014020 Inverse of 11th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014020 extends PeriodicSequence {

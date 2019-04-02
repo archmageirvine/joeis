@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124721.
+ * A124721 Number of ternary Lyndon words with exactly three 1's.
  * @author Sean A. Irvine
  */
 public class A124721 extends LinearRecurrence {

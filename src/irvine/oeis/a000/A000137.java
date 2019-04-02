@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000137.
+ * A000137 Series-parallel numbers.
  * @author Sean A. Irvine
  */
 public class A000137 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010880.
+ * A010880 n mod 11.
  * @author Sean A. Irvine
  */
 public class A010880 extends PeriodicSequence {

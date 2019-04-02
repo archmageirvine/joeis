@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007954.
+ * A007954 Product of decimal digits of n.
  * @author Sean A. Irvine
  */
 public class A007954 implements Sequence {

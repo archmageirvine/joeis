@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000147.
+ * A000147 Number of trees of diameter 5.
  * @author Sean A. Irvine
  */
 public class A000147 implements Sequence {

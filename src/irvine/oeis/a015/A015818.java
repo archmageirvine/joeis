@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015818.
+ * A015818 Number of solutions of +- 1 +- 2 +- ... +- (n-1) +- n = 0 in which the partial sums +- 1 +- ... +- k (1&lt;=k&lt;=n) are all distinct.
  * @author Sean A. Irvine
  */
 public class A015818 implements Sequence {

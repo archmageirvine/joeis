@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287793.
+ * A287793 Eight steps forward, seven steps back.
  * @author Sean A. Irvine
  */
 public class A287793 extends LinearRecurrence {

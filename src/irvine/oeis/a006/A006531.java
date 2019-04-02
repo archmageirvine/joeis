@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001006;
 
 /**
- * A006531.
+ * A006531 Semiorders on n elements.
  * @author Sean A. Irvine
  */
 public class A006531 implements Sequence {

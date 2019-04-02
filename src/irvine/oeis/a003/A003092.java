@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003092.
+ * A003092 Number of labeled plane 2-trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003092 implements Sequence {

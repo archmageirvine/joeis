@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019060.
+ * A019060 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite SOD = Sodalite Na6[ Al6Si6O24 ] . 2 NaCl.
  * @author Sean A. Irvine
  */
 public class A019060 extends A018940 {

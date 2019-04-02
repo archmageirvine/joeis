@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A119501.
+ * A119501 Number of isomorphism classes of 3-connected simple planar graphs (convex polytopes) where isomorphism does not allow reflection.
  * @author Sean A. Irvine
  */
 public class A119501 implements Sequence {

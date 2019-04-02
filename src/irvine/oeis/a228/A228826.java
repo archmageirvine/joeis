@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228826.
+ * A228826 Delayed continued fraction of sqrt(2).
  * @author Sean A. Irvine
  */
 public class A228826 extends LinearRecurrence {

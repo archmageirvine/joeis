@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A003150.
+ * A003150 Fibonomial Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A003150 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013380.
+ * A013380 Expansion of e.g.f. sin(sin(x) - tanh(x)), odd powers only.
  * @author Sean A. Irvine
  */
 public class A013380 implements Sequence {

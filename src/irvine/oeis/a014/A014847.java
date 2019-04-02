@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A014847.
+ * A014847 Numbers k such that k-th Catalan number C(2k,k)/(k+1) is divisible by k.
  * @author Sean A. Irvine
  */
 public class A014847 extends A000108 {

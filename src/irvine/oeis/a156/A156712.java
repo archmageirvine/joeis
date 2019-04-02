@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156712.
+ * A156712 Star numbers (A003154) that are also triangular numbers (A000217).
  * @author Sean A. Irvine
  */
 public class A156712 extends LinearRecurrence {

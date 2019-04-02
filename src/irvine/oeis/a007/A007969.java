@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007969.
+ * A007969 Rectangular numbers.
  * @author Sean A. Irvine
  */
 public class A007969 extends A007968 {

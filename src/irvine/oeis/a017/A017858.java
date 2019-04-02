@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017858.
+ * A017858 Expansion of 1/(1-x^7-x^8-x^9).
  * @author Sean A. Irvine
  */
 public class A017858 extends LinearRecurrence {

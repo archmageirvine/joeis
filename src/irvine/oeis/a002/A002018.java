@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000681;
 
 /**
- * A002018.
+ * A002018 From a distribution problem.
  * @author Sean A. Irvine
  */
 public class A002018 extends A000681 {

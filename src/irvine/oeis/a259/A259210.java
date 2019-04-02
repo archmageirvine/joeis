@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259210.
+ * A259210 Positive hexagonal numbers (A000384) that are other hexagonal numbers divided by 3.
  * @author Sean A. Irvine
  */
 public class A259210 extends LinearRecurrence {

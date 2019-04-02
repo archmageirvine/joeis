@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a055.A055277;
 
 /**
- * A003227.
+ * A003227 Endpoints (leaves) in rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003227 extends A055277 {

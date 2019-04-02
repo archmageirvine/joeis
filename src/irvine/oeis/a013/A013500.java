@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013500.
+ * A013500 Expansion of e.g.f.: log(sec(x)-log(x+1))=-1*x+1/2*x^2+1/3*x^3+3/8*x^4+7/120*x^5-1/240*x^6-593/5040*x^7-37/960*x^8+...
  * @author Sean A. Irvine
  */
 public class A013500 implements Sequence {

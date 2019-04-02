@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A006047.
+ * A006047 Number of entries in n-th row of Pascal's triangle not divisible by 3.
  * @author Sean A. Irvine
  */
 public class A006047 implements Sequence {

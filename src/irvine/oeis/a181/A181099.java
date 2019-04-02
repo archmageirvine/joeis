@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181099.
+ * A181099 Exchange rightmost two ternary digits of n&gt;1; a(0)=0, a(1)=3.
  * @author Sean A. Irvine
  */
 public class A181099 extends LinearRecurrence {

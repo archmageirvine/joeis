@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007592.
+ * A007592 Hyperperfect numbers: n = m(sigma(n)-n-1)+1 for some m &gt; 1.
  * @author Sean A. Irvine
  */
 public class A007592 implements Sequence {

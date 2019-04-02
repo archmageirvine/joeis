@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118587.
+ * A118587 Expansion of (17-25*x-23*x^2+133*x^3)/(1-x)^4.
  * @author Sean A. Irvine
  */
 public class A118587 extends LinearRecurrence {

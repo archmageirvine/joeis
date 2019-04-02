@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a000.A000837;
 
 /**
- * A018783.
+ * A018783 Number of partitions of n into parts having a common factor.
  * @author Sean A. Irvine
  */
 public class A018783 extends A000041 {

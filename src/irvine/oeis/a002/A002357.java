@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002357.
+ * A002357 Denominators of convergents to cube root of 5.
  * @author Sean A. Irvine
  */
 public class A002357 extends A002948 {

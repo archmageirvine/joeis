@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001022.
+ * A001022 Powers of 13.
  * @author Sean A. Irvine
  */
 public class A001022 implements Sequence {

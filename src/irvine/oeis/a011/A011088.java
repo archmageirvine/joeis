@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011088.
+ * A011088 Decimal expansion of 4th root of 97.
  * @author Sean A. Irvine
  */
 public class A011088 extends DecimalExpansionSequence {

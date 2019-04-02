@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007829.
+ * A007829 From random walks on complete directed triangle.
  * @author Sean A. Irvine
  */
 public class A007829 implements Sequence {

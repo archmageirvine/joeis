@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110326.
+ * A110326 Diagonal sums of triangle A110324.
  * @author Sean A. Irvine
  */
 public class A110326 extends LinearRecurrence {

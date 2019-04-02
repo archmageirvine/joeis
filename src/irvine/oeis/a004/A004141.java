@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004141.
+ * A004141 Norm of a matrix.
  * @author Sean A. Irvine
  */
 public class A004141 implements Sequence {

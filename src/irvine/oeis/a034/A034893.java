@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A034893.
+ * A034893 Maximum of different products of partitions of n into distinct parts.
  * @author Sean A. Irvine
  */
 public class A034893 extends A000217 {

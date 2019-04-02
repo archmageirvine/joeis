@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098347.
+ * A098347 A sequence derived from a Ferrers graph partition of 16.
  * @author Sean A. Irvine
  */
 public class A098347 extends LinearRecurrence {

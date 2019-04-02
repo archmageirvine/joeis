@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145308.
+ * A145308 Numbers n such that there exists x in N : (x+1)^3-x^3=79*n^2.
  * @author Sean A. Irvine
  */
 public class A145308 extends LinearRecurrence {

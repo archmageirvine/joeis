@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143367.
+ * A143367 The Szeged index of third type dendrimer nanostar which has grown n stages.
  * @author Sean A. Irvine
  */
 public class A143367 extends LinearRecurrence {

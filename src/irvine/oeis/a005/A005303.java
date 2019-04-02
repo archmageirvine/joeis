@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005303.
+ * A005303 Representation degeneracies for Ramond strings.
  * @author Sean A. Irvine
  */
 public class A005303 implements Sequence {

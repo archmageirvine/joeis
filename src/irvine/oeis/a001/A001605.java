@@ -6,7 +6,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A001605.
+ * A001605 Indices of prime Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A001605 implements Sequence {

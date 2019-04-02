@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094027.
+ * A094027 Expansion of x(1+100x)/((1-x^2)(1-100x^2)).
  * @author Sean A. Irvine
  */
 public class A094027 extends LinearRecurrence {

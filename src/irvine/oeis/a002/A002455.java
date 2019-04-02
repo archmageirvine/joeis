@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.q.Q;
 
 /**
- * A002455.
+ * A002455 Central factorial numbers.
  * @author Sean A. Irvine
  */
 public class A002455 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A211318. Based on recurrence by Max A. Alekseyev.
+ * A211318 Triangle read by rows: number of permutations of 1..n by length l of longest run (n &gt;= 1, 1 &lt;= l &lt;= n).
  * @author Sean A. Irvine
  */
 public class A211318 implements Sequence {

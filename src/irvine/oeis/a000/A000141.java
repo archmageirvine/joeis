@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000141.
+ * A000141 Number of ways of writing n as a sum of 6 squares.
  * @author Sean A. Irvine
  */
 public class A000141 implements Sequence {

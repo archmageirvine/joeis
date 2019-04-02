@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001828.
+ * A001828 Related to partially ordered sets.
  * @author Sean A. Irvine
  */
 public class A001828 extends A001827 {

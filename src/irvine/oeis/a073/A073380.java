@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073380.
+ * A073380 Third convolution of A000129(n+1) (generalized (2,1)-Fibonacci, called Pell numbers), n&gt;=0, with itself.
  * @author Sean A. Irvine
  */
 public class A073380 extends LinearRecurrence {

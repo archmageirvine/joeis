@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000698;
 
 /**
- * A005416.
+ * A005416 Vertex diagrams of order 2n.
  * @author Sean A. Irvine
  */
 public class A005416 extends A000698 {

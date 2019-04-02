@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019529.
+ * A019529 Sum of a(n) terms of 1/sqrt(k) first strictly exceeds n.
  * @author Sean A. Irvine
  */
 public class A019529 implements Sequence {

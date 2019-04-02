@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045950.
+ * A045950 Triangles in Star of David matchstick arrangement of side n.
  * @author Sean A. Irvine
  */
 public class A045950 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076264.
+ * A076264 Number of ternary (0,1,2) sequences without a consecutive '012'.
  * @author Sean A. Irvine
  */
 public class A076264 extends LinearRecurrence {

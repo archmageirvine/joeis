@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001387.
+ * A001387 The binary "look and say" sequence.
  * @author Sean A. Irvine
  */
 public class A001387 implements Sequence {

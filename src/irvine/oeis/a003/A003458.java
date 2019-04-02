@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003458.
+ * A003458 Erd&#337;s-Selfridge function: a(n) is the least number m &gt; n+1 such that the least prime factor of binomial(m, n) is &gt; n.
  * @author Sean A. Irvine
  */
 public class A003458 implements Sequence {

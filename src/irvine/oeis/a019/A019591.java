@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A019591.
+ * A019591 Grundy function of game in which each player has to divide precisely one set of coins into two subsets of different sizes.
  * @author Sean A. Irvine
  */
 public class A019591 extends MemorySequence {

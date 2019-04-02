@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092414.
+ * A092414 Negative of the determinant of the 3 X 3 matrix with entries (X+Y)^n.
  * @author Sean A. Irvine
  */
 public class A092414 extends LinearRecurrence {

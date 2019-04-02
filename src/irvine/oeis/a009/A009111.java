@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009111.
+ * A009111 List of ordered areas of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009111 implements Sequence {

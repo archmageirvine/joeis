@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004769.
+ * A004769 Numbers whose binary expansion ends in 011.
  * @author Sean A. Irvine
  */
 public class A004769 implements Sequence {

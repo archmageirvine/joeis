@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A164840.
+ * A164840 Right-truncatable squares: every prefix is square.
  * @author Sean A. Irvine
  */
 public class A164840 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119826.
+ * A119826 Number of ternary words of length n with no 000's.
  * @author Sean A. Irvine
  */
 public class A119826 extends LinearRecurrence {

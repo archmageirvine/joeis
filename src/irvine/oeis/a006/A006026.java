@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006026.
+ * A006026 Number of column-convex polyominoes with perimeter n.
  * @author Sean A. Irvine
  */
 public class A006026 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002113;
 import irvine.util.string.StringUtils;
 
 /**
- * A007632.
+ * A007632 Numbers that are palindromic in bases 2 and 10.
  * @author Sean A. Irvine
  */
 public class A007632 extends A002113 {

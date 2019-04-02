@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003107.
+ * A003107 Number of partitions of n into Fibonacci parts (with a single type of 1).
  * @author Sean A. Irvine
  */
 public class A003107 implements Sequence {

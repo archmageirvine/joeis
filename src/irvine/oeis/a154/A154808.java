@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A154808.
+ * A154808 Numbers such that every run length in base 2 is 5.
  * @author Sean A. Irvine
  */
 public class A154808 implements Sequence {

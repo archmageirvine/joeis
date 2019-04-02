@@ -23,16 +23,27 @@ public final class Names {
   private Names() { }
 
   private static String protect(final String name) {
-    // todo this needs improvement -- fix non-ASCII, determine non-English words etc.
     final String s = name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("*/", "* /").replaceAll("\\s+", " ");
-    return s.endsWith(".") ? s : s + ".";
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < s.length(); ++k) {
+      final char c = s.charAt(k);
+      if (c > 127) {
+        sb.append("&#").append((int) c).append(";");
+      } else {
+        sb.append(c);
+      }
+    }
+    if (sb.charAt(sb.length() - 1) != '.') {
+      sb.append('.');
+    }
+    return sb.toString();
   }
 
   private static List<String> loadNames(final String namesFile) throws IOException {
     final ArrayList<String> names = new ArrayList<>();
     names.add(""); // 0th sequence not used
     try (final FileInputStream f = new FileInputStream(namesFile);
-         final BufferedReader reader = new BufferedReader(new InputStreamReader(namesFile.endsWith(".gz") ? new GZIPInputStream(f) : f))) {
+         final BufferedReader reader = new BufferedReader(new InputStreamReader(namesFile.endsWith(".gz") ? new GZIPInputStream(f) : f, "utf-8"))) {
       String line;
       while ((line = reader.readLine()) != null) {
         if (!line.isEmpty() && !line.startsWith("#")) {

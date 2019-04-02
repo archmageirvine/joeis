@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.math.z.Z;
 
 /**
- * A176767.
+ * A176767 Smallest power of 7 whose decimal expansion contains n.
  * @author Sean A. Irvine
  */
 public class A176767 extends A176772 {

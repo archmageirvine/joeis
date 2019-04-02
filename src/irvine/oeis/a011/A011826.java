@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011826.
+ * A011826 f-vectors for simplicial complexes of dimension at most 1 (graphs) on at most n-1 vertices.
  * @author Sean A. Irvine
  */
 public class A011826 implements Sequence {

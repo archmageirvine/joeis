@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018008.
+ * A018008 Powers of cube root of 11 rounded up.
  * @author Sean A. Irvine
  */
 public class A018008 implements Sequence {

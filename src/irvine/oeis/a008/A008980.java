@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008980.
+ * A008980 Number of immersions of the oriented circle into the oriented plane with n double points.
  * @author Sean A. Irvine
  */
 public class A008980 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000722.
+ * A000722 Number of invertible Boolean functions of n variables: a(n) = (2^n)!.
  * @author Sean A. Irvine
  */
 public class A000722 implements Sequence {

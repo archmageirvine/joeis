@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218331.
+ * A218331 Even, nonzero decagonal pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A218331 extends LinearRecurrence {

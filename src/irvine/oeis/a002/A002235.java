@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002235.
+ * A002235 Numbers n such that 3*2^n - 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002235 implements Sequence {

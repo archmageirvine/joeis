@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092438.
+ * A092438 Sequence arising from enumeration of domino tilings of Aztec Pillow-like regions.
  * @author Sean A. Irvine
  */
 public class A092438 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001168;
 import irvine.util.Point;
 
 /**
- * A006770.
+ * A006770 Number of fixed n-celled polyominoes which need only touch at corners.
  * @author Sean A. Irvine
  */
 public class A006770 extends A001168 {

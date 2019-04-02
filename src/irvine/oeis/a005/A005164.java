@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005164.
+ * A005164 Number of alternating sign 2n+1 X 2n+1 matrices invariant under all symmetries of the square.
  * @author Sean A. Irvine
  */
 public class A005164 implements Sequence {

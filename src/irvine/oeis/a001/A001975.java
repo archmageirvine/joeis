@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001975.
+ * A001975 Number of partitions of floor(5n/2) into n nonnegative integers each no more than 5.
  * @author Sean A. Irvine
  */
 public class A001975 implements Sequence {

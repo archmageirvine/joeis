@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056556.
+ * A056556 First tetrahedral co-ordinate; repeat m (m+1)*(m+2)/2 times.
  * @author Sean A. Irvine
  */
 public class A056556 implements Sequence {

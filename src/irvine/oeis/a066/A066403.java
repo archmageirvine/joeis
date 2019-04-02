@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066403.
+ * A066403 From expansion of Belyi function for cube.
  * @author Sean A. Irvine
  */
 public class A066403 extends LinearRecurrence {

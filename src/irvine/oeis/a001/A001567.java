@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001567.
+ * A001567 Fermat pseudoprimes to base 2, also called Sarrus numbers or Poulet numbers.
  * @author Sean A. Irvine
  */
 public class A001567 implements Sequence {

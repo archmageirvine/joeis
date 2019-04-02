@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002244.
+ * A002244 Numbers that are not the sum of 3 distinct nonzero triangular numbers.
  * @author Sean A. Irvine
  */
 public class A002244 extends FiniteSequence {

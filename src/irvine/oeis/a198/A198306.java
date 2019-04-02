@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198306.
+ * A198306 Moore lower bound on the order of a (6,g)-cage.
  * @author Sean A. Irvine
  */
 public class A198306 extends LinearRecurrence {

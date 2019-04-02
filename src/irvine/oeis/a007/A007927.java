@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007927.
+ * A007927 Some nontrivial permutation of digits is a factorial number.
  * @author Sean A. Irvine
  */
 public class A007927 implements Sequence {

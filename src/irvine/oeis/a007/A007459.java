@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007459.
+ * A007459 Higgs's primes: a(n+1) = smallest prime &gt; a(n) such that a(n+1)-1 divides the product (a(1)...a(n))^2.
  * @author Sean A. Irvine
  */
 public class A007459 implements Sequence {

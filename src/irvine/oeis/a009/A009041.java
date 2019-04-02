@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009041.
+ * A009041 Ordered legs of Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A009041 implements Sequence {

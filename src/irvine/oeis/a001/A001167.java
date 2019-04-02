@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A001167.
+ * A001167 Smallest natural number requiring n words in English (as spoken in England).
  * @author Sean A. Irvine
  */
 public class A001167 implements Sequence {

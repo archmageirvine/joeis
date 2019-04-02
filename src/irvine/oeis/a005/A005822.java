@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005822.
+ * A005822 Number of spanning trees in third power of cycle.
  * @author Sean A. Irvine
  */
 public class A005822 implements Sequence {

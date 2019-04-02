@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007137.
+ * A007137 Number of rooted maps with n edges on the projective plane.
  * @author Sean A. Irvine
  */
 public class A007137 implements Sequence {

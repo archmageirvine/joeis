@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001858.
+ * A001858 Number of forests of trees on n labeled nodes.
  * @author Sean A. Irvine
  */
 public class A001858 implements Sequence {

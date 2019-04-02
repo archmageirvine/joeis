@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A007857.
+ * A007857 Number of independent sets in rooted plane trees on n nodes.
  * @author Sean A. Irvine
  */
 public class A007857 extends A007226 {

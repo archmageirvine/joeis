@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015905.
+ * A015905 Numbers k such that k | 13^k + 13.
  * @author Sean A. Irvine
  */
 public class A015905 implements Sequence {

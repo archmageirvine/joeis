@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010777.
+ * A010777 Decimal expansion of 15th root of 2.
  * @author Sean A. Irvine
  */
 public class A010777 extends DecimalExpansionSequence {

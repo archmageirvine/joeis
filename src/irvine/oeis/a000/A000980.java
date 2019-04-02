@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000980.
+ * A000980 Number of ways of writing 0 as Sum_{k=-n..n} e(k)*k, where e(k) is 0 or 1.
  * @author Sean A. Irvine
  */
 public class A000980 implements Sequence {

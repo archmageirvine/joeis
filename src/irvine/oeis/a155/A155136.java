@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155136.
+ * A155136 Integers n such that n+28 is a square.
  * @author Sean A. Irvine
  */
 public class A155136 extends LinearRecurrence {

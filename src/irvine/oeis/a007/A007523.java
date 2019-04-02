@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092845;
 
 /**
- * A007523.
+ * A007523 Primes in A092845 (decimal expansion of Pi written backwards).
  * @author Sean A. Irvine
  */
 public class A007523 extends A092845 {

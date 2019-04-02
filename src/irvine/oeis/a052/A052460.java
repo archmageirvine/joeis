@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052460.
+ * A052460 3-magic series constant.
  * @author Sean A. Irvine
  */
 public class A052460 extends LinearRecurrence {

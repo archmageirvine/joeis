@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006985.
+ * A006985 Fibonacci tower: a(n) = F(a(n-1)+2) (there is no room for next term).
  * @author Sean A. Irvine
  */
 public class A006985 implements Sequence {

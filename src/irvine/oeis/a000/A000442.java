@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000442.
+ * A000442 a(n) = (n!)^3.
  * @author Sean A. Irvine
  */
 public class A000442 implements Sequence {

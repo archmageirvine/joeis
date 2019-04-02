@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002889.
+ * A002889 Arrays of dumbbells.
  * @author Sean A. Irvine
  */
 public class A002889 extends A002941 {

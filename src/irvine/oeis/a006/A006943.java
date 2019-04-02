@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006943.
+ * A006943 Rows of Sierpi&#324;ski's triangle (Pascal's triangle mod 2).
  * @author Sean A. Irvine
  */
 public class A006943 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000461.
+ * A000461 Concatenate n n times.
  * @author Sean A. Irvine
  */
 public class A000461 implements Sequence {

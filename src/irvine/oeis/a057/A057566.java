@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057566.
+ * A057566 Number of collinear triples in a 3 X n rectangular grid.
  * @author Sean A. Irvine
  */
 public class A057566 extends LinearRecurrence {

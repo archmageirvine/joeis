@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152271.
+ * A152271 a(n)=1 for even n and (n+1)/2 for odd n.
  * @author Sean A. Irvine
  */
 public class A152271 extends LinearRecurrence {

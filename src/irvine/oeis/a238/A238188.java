@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238188.
+ * A238188 a(n) = 4*a(n-4) + 6*a(n-8) + 4*a(n-12) + a(n-16) for n&gt;15, with the sixteen initial values as shown.
  * @author Sean A. Irvine
  */
 public class A238188 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004248.
+ * A004248 Table of x^y, where (x,y) = (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),...
  * @author Sean A. Irvine
  */
 public class A004248 implements Sequence {

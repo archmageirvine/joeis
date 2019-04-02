@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A013669.
+ * A013669 Decimal expansion of zeta(11).
  * @author Sean A. Irvine
  */
 public class A013669 extends DecimalExpansionSequence {

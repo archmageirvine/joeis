@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A005800.
+ * A005800 Generalized Euler numbers of type 3^2n.
  * @author Sean A. Irvine
  */
 public class A005800 extends A000364 {

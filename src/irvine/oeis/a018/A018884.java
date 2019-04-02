@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A018884.
+ * A018884 Squares using at most two distinct digits, not ending in 0.
  * @author Sean A. Irvine
  */
 public class A018884 implements Sequence {

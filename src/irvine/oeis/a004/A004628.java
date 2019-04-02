@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004628.
+ * A004628 Divisible only by primes congruent to 7 mod 8.
  * @author Sean A. Irvine
  */
 public class A004628 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001603.
+ * A001603 Odd-indexed terms of A124296.
  * @author Sean A. Irvine
  */
 public class A001603 implements Sequence {

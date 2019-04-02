@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006268.
+ * A006268 A continued cotangent.
  * @author Sean A. Irvine
  */
 public class A006268 implements Sequence {

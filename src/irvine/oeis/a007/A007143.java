@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003238;
 
 /**
- * A007143.
+ * A007143 E-trees with exactly 2 colors.
  * @author Sean A. Irvine
  */
 public class A007143 extends A007141 {

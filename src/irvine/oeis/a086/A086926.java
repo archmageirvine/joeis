@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086926.
+ * A086926 Product of Fibonacci and (shifted) triangular numbers.
  * @author Sean A. Irvine
  */
 public class A086926 extends LinearRecurrence {

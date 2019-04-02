@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075664.
+ * A075664 Sum of next n cubes.
  * @author Sean A. Irvine
  */
 public class A075664 extends LinearRecurrence {

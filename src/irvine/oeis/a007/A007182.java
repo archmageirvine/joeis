@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007182.
+ * A007182 Dimension of n-th compound of a certain space.
  * @author Sean A. Irvine
  */
 public class A007182 extends MemoryFunction1<Z> implements Sequence {

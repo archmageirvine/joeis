@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004120.
+ * A004120 Expansion of (1 + x - x^5) / (1 - x)^3.
  * @author Sean A. Irvine
  */
 public class A004120 implements Sequence {

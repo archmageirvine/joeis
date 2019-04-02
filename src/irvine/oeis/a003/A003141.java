@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.io.IOException;
 
 /**
- * A003141.
+ * A003141 Minimal number of arcs whose reversal yields a transitive tournament.
  * @author Sean A. Irvine
  */
 public class A003141 implements Sequence {

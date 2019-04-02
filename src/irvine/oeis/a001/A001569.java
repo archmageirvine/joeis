@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001569.
+ * A001569 Sum_{n&gt;=0} a(n)*x^n/n!^2 = BesselI(0,2*(1-exp(x))^(1/2)).
  * @author Sean A. Irvine
  */
 public class A001569 implements Sequence {

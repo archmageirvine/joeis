@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009047.
+ * A009047 Expansion of cos(sin(x)*cosh(x)), even terms only.
  * @author Sean A. Irvine
  */
 public class A009047 implements Sequence {

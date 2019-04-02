@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245624.
+ * A245624 Sequence of distinct least positive numbers such that the average of the first n terms is a cube.
  * @author Sean A. Irvine
  */
 public class A245624 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A007336.
+ * A007336 Signature sequence of sqrt 2 (arrange the numbers i+j*x (i,j &gt;= 1) in increasing order; the sequence of i's is the signature of x).
  * @author Sean A. Irvine
  */
 public class A007336 implements Sequence {

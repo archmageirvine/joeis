@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156572.
+ * A156572 Squares of the form k^2+(k+23)^2 with integer k.
  * @author Sean A. Irvine
  */
 public class A156572 extends LinearRecurrence {

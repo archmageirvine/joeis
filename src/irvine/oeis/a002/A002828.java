@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000415;
 import irvine.oeis.a000.A000419;
 
 /**
- * A002828.
+ * A002828 Least number of squares that add up to n.
  * @author Sean A. Irvine
  */
 public class A002828 implements Sequence {

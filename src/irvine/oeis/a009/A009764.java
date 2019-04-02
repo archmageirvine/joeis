@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009764.
+ * A009764 Tan(x)^2 = sum(n&gt;=0, a(n)*x^(2*n)/(2*n)! ).
  * @author Sean A. Irvine
  */
 public class A009764 implements Sequence {

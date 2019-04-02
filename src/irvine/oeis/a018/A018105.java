@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018105.
+ * A018105 Powers of fourth root of 21 rounded down.
  * @author Sean A. Irvine
  */
 public class A018105 implements Sequence {

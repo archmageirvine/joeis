@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013792.
+ * A013792 a(n) = 10^(4*n + 1).
  * @author Sean A. Irvine
  */
 public class A013792 implements Sequence {

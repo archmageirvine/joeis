@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014831.
+ * A014831 a(1)=1; for n&gt;1, a(n) = 8*a(n-1)+n.
  * @author Sean A. Irvine
  */
 public class A014831 implements Sequence {

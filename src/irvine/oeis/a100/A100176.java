@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100176.
+ * A100176 Structured octagonal prism numbers.
  * @author Sean A. Irvine
  */
 public class A100176 extends LinearRecurrence {

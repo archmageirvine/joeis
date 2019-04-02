@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279019.
+ * A279019 Least possible number of diagonals of simple convex polyhedron with n faces.
  * @author Sean A. Irvine
  */
 public class A279019 extends LinearRecurrence {

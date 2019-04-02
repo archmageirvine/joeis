@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003293.
+ * A003293 Number of planar partitions of n decreasing across rows.
  * @author Sean A. Irvine
  */
 public class A003293 implements Sequence {

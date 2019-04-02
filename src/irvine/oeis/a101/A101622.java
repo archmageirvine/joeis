@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101622.
+ * A101622 A Horadam-Jacobsthal sequence.
  * @author Sean A. Irvine
  */
 public class A101622 extends LinearRecurrence {

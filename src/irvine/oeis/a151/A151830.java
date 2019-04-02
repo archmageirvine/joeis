@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Quadruple;
 
 /**
- * A151830.
+ * A151830 Number of fixed 4-dimensional polycubes with n cells.
  * @author Sean A. Irvine
  */
 public class A151830 implements Sequence {

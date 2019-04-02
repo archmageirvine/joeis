@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A003072.
+ * A003072 Numbers that are the sum of 3 positive cubes.
  * @author Sean A. Irvine
  */
 public class A003072 implements Sequence {

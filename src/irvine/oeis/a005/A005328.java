@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005328.
+ * A005328 Certain subgraphs of a directed graph.
  * @author Sean A. Irvine
  */
 public class A005328 extends MemoryFunction1<Z> implements Sequence {

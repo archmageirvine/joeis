@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a246.A246655;
 
 /**
- * A014839.
+ * A014839 Sum of all the digits of n in every prime-power base from 2 to n-1.
  * @author Sean A. Irvine
  */
 public class A014839 implements Sequence {

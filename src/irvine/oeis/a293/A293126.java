@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293126.
+ * A293126 Number of matchings in the 2n-crossed prism graph.
  * @author Sean A. Irvine
  */
 public class A293126 extends LinearRecurrence {

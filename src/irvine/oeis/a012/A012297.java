@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012297.
+ * A012297 Expansion of e.g.f. arctan(sin(x)*sin(x)), even powers only.
  * @author Sean A. Irvine
  */
 public class A012297 implements Sequence {

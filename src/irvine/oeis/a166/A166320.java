@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166320.
+ * A166320 Numbers which are proper divisors of the number obtained by cyclic right-shift by 2 positions.
  * @author Sean A. Irvine
  */
 public class A166320 implements Sequence {

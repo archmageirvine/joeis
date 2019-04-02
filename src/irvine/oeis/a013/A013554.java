@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013554.
+ * A013554 Numerator of [x^(2n+1)] in the Taylor expansion -tan(cot(x)-coth(x))= 2*x/3 +8*x^3/81 +556*x^5/25515 +496*x^7/98415 +717572*x^9/613814355 +...
  * @author Sean A. Irvine
  */
 public class A013554 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196570.
+ * A196570 LAN party numbers.
  * @author Sean A. Irvine
  */
 public class A196570 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001097.
+ * A001097 Twin primes.
  * @author Sean A. Irvine
  */
 public class A001097 implements Sequence {

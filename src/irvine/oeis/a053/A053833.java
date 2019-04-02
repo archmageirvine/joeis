@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053833.
+ * A053833 Sum of digits of n written in base 13.
  * @author Sean A. Irvine
  */
 public class A053833 extends LinearRecurrence {

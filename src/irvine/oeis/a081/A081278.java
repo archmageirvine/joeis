@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081278.
+ * A081278 Binomial transform of Chebyshev polynomial coefficients A001793.
  * @author Sean A. Irvine
  */
 public class A081278 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000744.
+ * A000744 Boustrophedon transform (second version) of Fibonacci numbers 1,1,2,3,... ...
  * @author Sean A. Irvine
  */
 public class A000744 extends A000674 {

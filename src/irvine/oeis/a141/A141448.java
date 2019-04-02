@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141448.
+ * A141448 Generalized Pell numbers P(n,5,5).
  * @author Sean A. Irvine
  */
 public class A141448 extends LinearRecurrence {

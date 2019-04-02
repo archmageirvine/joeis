@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019296.
+ * A019296 Values of n for which exp(Pi*sqrt(n)) is very close to an integer.
  * @author Sean A. Irvine
  */
 public class A019296 implements Sequence {

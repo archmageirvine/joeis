@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018181.
+ * A018181 Powers of fifth root of 23 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018181 implements Sequence {

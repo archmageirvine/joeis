@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A005396.
+ * A005396 Number of 2n-step polygons on honeycomb.
  * @author Sean A. Irvine
  */
 public class A005396 implements Sequence {

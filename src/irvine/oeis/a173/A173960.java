@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173960.
+ * A173960 Averages of four consecutive odd squares.
  * @author Sean A. Irvine
  */
 public class A173960 extends LinearRecurrence {

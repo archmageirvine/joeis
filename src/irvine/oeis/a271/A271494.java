@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271494.
+ * A271494 Expansion of (1+16*x)/((1+4*x)*(1-8*x)).
  * @author Sean A. Irvine
  */
 public class A271494 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011371.
+ * A011371 a(n) = n minus (number of 1's in binary expansion of n). Also highest power of 2 dividing n!.
  * @author Sean A. Irvine
  */
 public class A011371 implements Sequence {

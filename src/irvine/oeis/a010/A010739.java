@@ -5,7 +5,7 @@ import irvine.oeis.InverseBinomialTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A010739.
+ * A010739 Shifts 2 places left under inverse binomial transform.
  * @author Sean A. Irvine
  */
 public class A010739 extends MemorySequence {

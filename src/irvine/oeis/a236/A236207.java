@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236207.
+ * A236207 Numbers not divisible by 5 or 11.
  * @author Sean A. Irvine
  */
 public class A236207 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.math.group.PolynomialRingField;
 import java.util.ArrayList;
 
 /**
- * A000763.
+ * A000763 Number of interval orders constructed from n intervals of generic lengths.
  * @author Sean A. Irvine
  */
 public class A000763 extends A052894 {

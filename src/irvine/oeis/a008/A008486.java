@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008486.
+ * A008486 Expansion of (1 + x + x^2)/(1 - x)^2.
  * @author Sean A. Irvine
  */
 public class A008486 implements Sequence {

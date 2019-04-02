@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.Permutation;
 
 /**
- * A007941.
+ * A007941 Some nontrivial permutation of digits is a cube.
  * @author Sean A. Irvine
  */
 public class A007941 extends A007939 {

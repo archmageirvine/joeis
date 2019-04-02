@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013089.
+ * A013089 cos(arcsinh(x)+arcsin(x))=1-4/2!*x^2+16/4!*x^4-280/6!*x^6+8320/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A013089 implements Sequence {

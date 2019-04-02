@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095129.
+ * A095129 Jac(n)(2Jac(n)-1).
  * @author Sean A. Irvine
  */
 public class A095129 extends LinearRecurrence {

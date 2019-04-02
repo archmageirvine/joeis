@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002994.
+ * A002994 Initial digit of cubes.
  * @author Sean A. Irvine
  */
 public class A002994 implements Sequence {

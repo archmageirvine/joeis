@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003956.
+ * A003956 Order of complex Clifford group of degree 2^n arising in quantum coding theory.
  * @author Sean A. Irvine
  */
 public class A003956 implements Sequence {

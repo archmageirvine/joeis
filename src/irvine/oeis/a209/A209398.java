@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209398.
+ * A209398 Number of subsets of {1,...,n} containing two elements whose difference is 2.
  * @author Sean A. Irvine
  */
 public class A209398 extends LinearRecurrence {

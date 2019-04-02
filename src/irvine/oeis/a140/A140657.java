@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140657.
+ * A140657 Powers of 2 with 3 alternatingly added and subtracted.
  * @author Sean A. Irvine
  */
 public class A140657 extends LinearRecurrence {

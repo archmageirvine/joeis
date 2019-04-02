@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193218.
+ * A193218 Number of vertices in truncated tetrahedron with faces that are centered polygons.
  * @author Sean A. Irvine
  */
 public class A193218 extends LinearRecurrence {

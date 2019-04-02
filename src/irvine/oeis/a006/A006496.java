@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006496.
+ * A006496 Imaginary part of (1+2i)^n.
  * @author Sean A. Irvine
  */
 public class A006496 extends LinearRecurrence {

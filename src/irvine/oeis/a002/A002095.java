@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002095.
+ * A002095 Number of partitions of n into nonprime parts.
  * @author Sean A. Irvine
  */
 public class A002095 implements Sequence {

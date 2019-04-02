@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004104.
+ * A004104 Number of self-dual signed graphs with n nodes. Also number of self-complementary 2-multigraphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A004104 implements Sequence {

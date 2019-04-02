@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A003676.
+ * A003676 Decimal expansion of the Planck constant h (Joule * second).
  * @author Sean A. Irvine
  */
 public class A003676 extends DoubleDecimalExpansionSequence {

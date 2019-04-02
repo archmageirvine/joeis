@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101152.
+ * A101152 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+569)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A101152 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005640.
+ * A005640 Number of phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
 public class A005640 extends MemoryFunction1<Z> implements Sequence {

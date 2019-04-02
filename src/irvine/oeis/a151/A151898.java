@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151898.
+ * A151898 First differences of Frobenius numbers for 7 successive numbers A138987.
  * @author Sean A. Irvine
  */
 public class A151898 extends LinearRecurrence {

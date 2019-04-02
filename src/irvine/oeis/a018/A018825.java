@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a000.A000404;
 
 /**
- * A018825.
+ * A018825 Numbers that are not the sum of 2 nonzero squares.
  * @author Sean A. Irvine
  */
 public class A018825 extends ComplementSequence {

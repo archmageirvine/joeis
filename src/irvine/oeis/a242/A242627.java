@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242627.
+ * A242627 Number of divisors of n that are less than 10.
  * @author Sean A. Irvine
  */
 public class A242627 extends LinearRecurrence {

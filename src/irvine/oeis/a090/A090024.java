@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090024.
+ * A090024 Number of distinct lines through the origin in the n-dimensional lattice of side length 8.
  * @author Sean A. Irvine
  */
 public class A090024 extends LinearRecurrence {

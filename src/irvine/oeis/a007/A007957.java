@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007957.
+ * A007957 Numbers that contain an odd digit.
  * @author Sean A. Irvine
  */
 public class A007957 implements Sequence {

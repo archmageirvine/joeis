@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164579.
+ * A164579 Integer averages of halves of first cubes of natural numbers (n^3)/2 for some n.
  * @author Sean A. Irvine
  */
 public class A164579 extends LinearRecurrence {

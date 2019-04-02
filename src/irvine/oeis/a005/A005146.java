@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005146.
+ * A005146 Numerators of numbers occurring in continued fraction connected with expansion of gamma function.
  * @author Sean A. Irvine
  */
 public class A005146 implements Sequence {

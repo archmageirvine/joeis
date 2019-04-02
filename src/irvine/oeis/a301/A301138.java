@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301138.
+ * A301138 Coordination sequence T2 for Zeolite Code NAB.
  * @author Sean A. Irvine
  */
 public class A301138 extends CoordinationSequence {

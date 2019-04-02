@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029546.
+ * A029546 Expansion of 1/(1 - 35*x + 35*x^2 - x^3).
  * @author Sean A. Irvine
  */
 public class A029546 extends LinearRecurrence {

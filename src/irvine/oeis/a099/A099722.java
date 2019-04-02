@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A099722.
+ * A099722 From a 2-dimensional walk involving primes.
  * @author Sean A. Irvine
  */
 public class A099722 implements Sequence {

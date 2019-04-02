@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006019. Computes the winning-losing positions of Norton's Tribulation game.
+ * A006019 Remoteness number of n in Simon Norton's game of Tribulations.
  * @author R. J. Mathar
  * @author Sean A. Irvine
  */

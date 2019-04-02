@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032280.
+ * A032280 Number of bracelets (turnover necklaces) of n beads of 2 colors, 7 of them black.
  * @author Sean A. Irvine
  */
 public class A032280 extends LinearRecurrence {

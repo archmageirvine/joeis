@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212442.
+ * A212442 G.f.: exp( Sum_{n&gt;=1} A002203(n)^3 * x^n/n ), where A002203 is the companion Pell numbers.
  * @author Sean A. Irvine
  */
 public class A212442 extends LinearRecurrence {

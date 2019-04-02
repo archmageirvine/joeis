@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013448.
+ * A013448 sech(tan(x)-arctan(x))=1-160/6!*x^6+1792/8!*x^8-484224/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013448 implements Sequence {

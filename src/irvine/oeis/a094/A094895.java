@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094895.
+ * A094895 Sequence generated from a Knight's tour of a 4 X 4 chessboard considered as a matrix.
  * @author Sean A. Irvine
  */
 public class A094895 extends LinearRecurrence {

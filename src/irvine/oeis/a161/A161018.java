@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A161018.
+ * A161018 Decimal expansion of tan(1/9).
  * @author Sean A. Irvine
  */
 public class A161018 extends DecimalExpansionSequence {

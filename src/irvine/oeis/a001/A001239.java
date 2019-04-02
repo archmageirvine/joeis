@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001239.
+ * A001239 Numbers that are the sum of 3 nonnegative cubes in more than 1 way.
  * @author Sean A. Irvine
  */
 public class A001239 implements Sequence {

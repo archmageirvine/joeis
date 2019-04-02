@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006881.
+ * A006881 Squarefree semiprimes: Numbers that are the product of two distinct primes.
  * @author Sean A. Irvine
  */
 public class A006881 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A003038.
+ * A003038 Dimensions of split simple Lie algebras over any field of characteristic zero.
  * @author Sean A. Irvine
  */
 public class A003038 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164055.
+ * A164055 Triangular numbers that are one plus a perfect square.
  * @author Sean A. Irvine
  */
 public class A164055 extends LinearRecurrence {

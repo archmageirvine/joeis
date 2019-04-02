@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134410.
+ * A134410 Second-order Lucas numbers; a(n) = (2n+3)*Lucas(n) - n*Lucas(n-1).
  * @author Sean A. Irvine
  */
 public class A134410 extends LinearRecurrence {

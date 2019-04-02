@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006858.
+ * A006858 Expansion of x*(1 + x)*(1 + 6*x + x^2)/(1 - x)^7.
  * @author Sean A. Irvine
  */
 public class A006858 implements Sequence {

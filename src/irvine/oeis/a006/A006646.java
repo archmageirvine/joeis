@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002203;
 
 /**
- * A006646.
+ * A006646 Exponential self-convolution of Pell numbers.
  * @author Sean A. Irvine
  */
 public class A006646 extends A002203 {

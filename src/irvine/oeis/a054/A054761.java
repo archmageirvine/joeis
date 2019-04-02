@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054761.
+ * A054761 Number of positive braids with n crossings of 5 strands.
  * @author Sean A. Irvine
  */
 public class A054761 extends LinearRecurrence {

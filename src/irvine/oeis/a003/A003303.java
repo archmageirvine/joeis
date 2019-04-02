@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003303.
+ * A003303 Numerators of spin-wave coefficients for cubic lattice.
  * @author Sean A. Irvine
  */
 public class A003303 implements Sequence {

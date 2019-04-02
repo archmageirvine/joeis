@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287992.
+ * A287992 Number of (undirected) paths in the prism graph Y_n.
  * @author Sean A. Irvine
  */
 public class A287992 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002001;
 
 /**
- * A006342.
+ * A006342 Coloring a circuit with 4 colors.
  * @author Sean A. Irvine
  */
 public class A006342 extends BinomialTransformSequence {

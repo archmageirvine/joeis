@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011441.
+ * A011441 Decimal expansion of 22nd root of 22.
  * @author Sean A. Irvine
  */
 public class A011441 extends DecimalExpansionSequence {

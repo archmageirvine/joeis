@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046086.
+ * A046086 Smallest member 'a' of the primitive Pythagorean triples (a,b,c) ordered by increasing c, then b.
  * @author Sean A. Irvine
  */
 public class A046086 implements Sequence {

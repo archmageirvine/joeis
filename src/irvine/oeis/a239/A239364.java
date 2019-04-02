@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239364.
+ * A239364 Numbers n such that (n^2-4)/10 is a square.
  * @author Sean A. Irvine
  */
 public class A239364 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A005200.
+ * A005200 Total number of fixed points in rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005200 extends MemorySequence {

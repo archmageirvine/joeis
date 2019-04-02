@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004765.
+ * A004765 Numbers n such that binary expansion does not begin 111.
  * @author Sean A. Irvine
  */
 public class A004765 implements Sequence {

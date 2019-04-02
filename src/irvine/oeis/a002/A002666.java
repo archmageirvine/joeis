@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002666.
+ * A002666 Continued cotangent for square root of 2.
  * @author Sean A. Irvine
  */
 public class A002666 implements Sequence {

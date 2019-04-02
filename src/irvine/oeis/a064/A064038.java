@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064038.
+ * A064038 Numerator of average number of swaps needed to bubble sort a string of n distinct letters.
  * @author Sean A. Irvine
  */
 public class A064038 extends LinearRecurrence {

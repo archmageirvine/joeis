@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178778.
+ * A178778 Partial sums of walks of length n+1 on a tetrahedron A001998.
  * @author Sean A. Irvine
  */
 public class A178778 extends LinearRecurrence {

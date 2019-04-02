@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120262.
+ * A120262 Sequence relating to the benzene ring.
  * @author Sean A. Irvine
  */
 public class A120262 extends LinearRecurrence {

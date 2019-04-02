@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118337.
+ * A118337 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 23)^2 = y^2.
  * @author Sean A. Irvine
  */
 public class A118337 extends LinearRecurrence {

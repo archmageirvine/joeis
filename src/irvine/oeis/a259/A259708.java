@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259708.
+ * A259708 Triangle T(n,k) (0 &lt;= k &lt;= n) giving coefficients of certain polynomials related to Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A259708 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005629.
+ * A005629 Number of achiral trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005629 extends A005627 {

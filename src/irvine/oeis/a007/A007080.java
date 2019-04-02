@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007080.
+ * A007080 Number of labeled Eulerian digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007080 implements Sequence {

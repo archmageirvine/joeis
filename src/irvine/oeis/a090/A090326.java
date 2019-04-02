@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090326.
+ * A090326 Number of rules of a context-free grammar in Chomsky normal form that generates all permutations of n symbols.
  * @author Sean A. Irvine
  */
 public class A090326 extends LinearRecurrence {

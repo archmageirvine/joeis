@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000801.
+ * A000801 Sum_{k = 1..n} floor(2^k / k).
  * @author Sean A. Irvine
  */
 public class A000801 extends A000799 {

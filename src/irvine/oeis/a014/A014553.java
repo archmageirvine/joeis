@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014553.
+ * A014553 Maximal multiplicative persistence (or length) of any n-digit number.
  * @author Sean A. Irvine
  */
 public class A014553 implements Sequence {

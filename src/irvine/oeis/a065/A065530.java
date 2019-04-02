@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065530.
+ * A065530 If n is odd then a(n) = n, else a(n) = n*(n+2).
  * @author Sean A. Irvine
  */
 public class A065530 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122461.
+ * A122461 Repetitions of even numbers four times.
  * @author Sean A. Irvine
  */
 public class A122461 extends LinearRecurrence {

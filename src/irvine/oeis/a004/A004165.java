@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004165.
+ * A004165 Cubes written backwards.
  * @author Sean A. Irvine
  */
 public class A004165 implements Sequence {

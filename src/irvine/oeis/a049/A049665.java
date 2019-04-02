@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049665.
+ * A049665 a(n) = (F(6*n+4) - 3)/4, where F=A000045 (the Fibonacci sequence).
  * @author Sean A. Irvine
  */
 public class A049665 extends LinearRecurrence {

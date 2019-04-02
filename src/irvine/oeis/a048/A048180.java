@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001430;
 
 /**
- * A048180.
+ * A048180 Number of graphs with n nodes and n+2 edges.
  * @author Sean A. Irvine
  */
 public class A048180 extends A001430 {

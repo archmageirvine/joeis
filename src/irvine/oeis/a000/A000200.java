@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000200.
+ * A000200 Number of bicentered hydrocarbons with n atoms.
  * @author Sean A. Irvine
  */
 public class A000200 implements Sequence {

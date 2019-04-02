@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006033.
+ * A006033 Numbers n such that (15^n - 1)/14 is prime.
  * @author Sean A. Irvine
  */
 public class A006033 implements Sequence {

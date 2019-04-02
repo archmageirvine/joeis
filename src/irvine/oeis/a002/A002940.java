@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A002940.
+ * A002940 Arrays of dumbbells.
  * @author Sean A. Irvine
  */
 public class A002940 extends A000045 {

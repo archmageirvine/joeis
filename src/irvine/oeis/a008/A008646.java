@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008646.
+ * A008646 Molien series for cyclic group of order 5.
  * @author Sean A. Irvine
  */
 public class A008646 extends LinearRecurrence {

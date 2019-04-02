@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007650.
+ * A007650 Number of set-like atomic species of degree n.
  * @author Sean A. Irvine
  */
 public class A007650 extends A007649 {

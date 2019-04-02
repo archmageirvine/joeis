@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014664.
+ * A014664 Order of 2 modulo the n-th prime.
  * @author Sean A. Irvine
  */
 public class A014664 implements Sequence {

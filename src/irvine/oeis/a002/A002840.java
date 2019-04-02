@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002840.
+ * A002840 Number of polyhedral graphs with n edges.
  * @author Sean A. Irvine
  */
 public class A002840 implements Sequence {

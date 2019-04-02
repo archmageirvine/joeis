@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a056.A056594;
 
 /**
- * A006499.
+ * A006499 Number of restricted circular combinations.
  * @author Sean A. Irvine
  */
 public class A006499 extends A000032 {

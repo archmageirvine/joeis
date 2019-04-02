@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244310.
+ * A244310 a(n) = L(n)^3 - L(n)^2, where L(n) is the n-th Lucas number (A000032).
  * @author Sean A. Irvine
  */
 public class A244310 extends LinearRecurrence {

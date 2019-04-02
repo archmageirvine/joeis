@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206278.
+ * A206278 Total number of triangles in Cayley graph Cay(Z_{2^n}, QR*(2^n)).
  * @author Sean A. Irvine
  */
 public class A206278 extends LinearRecurrence {

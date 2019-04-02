@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002193.
+ * A002193 Decimal expansion of square root of 2.
  * @author Sean A. Irvine
  */
 public class A002193 implements Sequence {

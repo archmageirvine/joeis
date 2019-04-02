@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A019569.
+ * A019569 Number of bar segments in a certain way of representing the integers graphically.
  * @author Sean A. Irvine
  */
 public class A019569 extends MemorySequence {

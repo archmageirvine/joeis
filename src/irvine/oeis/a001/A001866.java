@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001866.
+ * A001866 Number of connected graphs with n nodes and n edges.
  * @author Sean A. Irvine
  */
 public class A001866 implements Sequence {

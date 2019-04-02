@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057076.
+ * A057076 A Chebyshev or generalized Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A057076 extends LinearRecurrence {

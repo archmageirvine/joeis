@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A105605.
+ * A105605 An Aitken-like array: see Comments for definition.
  * @author Sean A. Irvine
  */
 public class A105605 implements Sequence {

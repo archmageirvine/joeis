@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288925.
+ * A288925 a(n) = a(n-1) + a(n-2) + 3*a(n-4) - 2*a(n-5) for n &gt;= 5, where a(0) = 2, a(1) = 4, a(2) = 8, a(3) = 13, a(4) = 26.
  * @author Sean A. Irvine
  */
 public class A288925 extends LinearRecurrence {

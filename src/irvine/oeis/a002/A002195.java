@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A002195.
+ * A002195 Numerators of coefficients for numerical integration.
  * @author Sean A. Irvine
  */
 public class A002195 implements Sequence {

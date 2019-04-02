@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007488.
+ * A007488 Primes whose reversal is a square.
  * @author Sean A. Irvine
  */
 public class A007488 implements Sequence {

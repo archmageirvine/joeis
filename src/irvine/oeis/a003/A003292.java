@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003292.
+ * A003292 Number of 4-line partitions of n decreasing across rows.
  * @author Sean A. Irvine
  */
 public class A003292 implements Sequence {

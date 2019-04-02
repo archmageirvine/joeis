@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245573.
+ * A245573 Minimal coin changing sequence for denominations 1, 2, 5 and 10 cents.
  * @author Sean A. Irvine
  */
 public class A245573 extends LinearRecurrence {

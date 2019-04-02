@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017994.
+ * A017994 Powers of cube root of 7 rounded down.
  * @author Sean A. Irvine
  */
 public class A017994 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045918.
+ * A045918 Describe n. Also called the "Say What You See" or "Look and Say" sequence LS(n).
  * @author Sean A. Irvine
  */
 public class A045918 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A010744.
+ * A010744 Shifts 5 places right under binomial transform.
  * @author Sean A. Irvine
  */
 public class A010744 extends MemorySequence {

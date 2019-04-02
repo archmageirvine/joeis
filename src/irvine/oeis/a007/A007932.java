@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007932.
+ * A007932 Numbers that contain only 1's, 2's and 3's.
  * @author Sean A. Irvine
  */
 public class A007932 implements Sequence {

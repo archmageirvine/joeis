@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119852.
+ * A119852 Number of ternary words with exactly one 012.
  * @author Sean A. Irvine
  */
 public class A119852 extends LinearRecurrence {

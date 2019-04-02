@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186421.
+ * A186421 Even numbers interleaved with repeated odd numbers.
  * @author Sean A. Irvine
  */
 public class A186421 extends LinearRecurrence {

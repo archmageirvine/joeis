@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003927.
+ * A003927 Order of simple Chevalley group B_n (3).
  * @author Sean A. Irvine
  */
 public class A003927 implements Sequence {

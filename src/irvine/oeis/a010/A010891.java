@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A010891.
+ * A010891 Inverse of 5th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A010891 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001092.
+ * A001092 Union of all numbers {p, q} where p and q are both primes or powers of primes and q = p+2.
  * @author Sean A. Irvine
  */
 public class A001092 implements Sequence {

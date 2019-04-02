@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017981.
+ * A017981 Powers of cube root of 2 rounded up.
  * @author Sean A. Irvine
  */
 public class A017981 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000182;
 
 /**
- * A007314.
+ * A007314 Reversion of o.g.f. for tangent numbers.
  * @author Sean A. Irvine
  */
 public class A007314 extends A000182 {

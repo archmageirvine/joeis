@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013980.
+ * A013980 Number of commutative elements in Coxeter group F_n.
  * @author Sean A. Irvine
  */
 public class A013980 implements Sequence {

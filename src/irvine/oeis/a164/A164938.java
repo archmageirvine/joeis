@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164938.
+ * A164938 a(n) = (n^5-n)/10, which is always an integer.
  * @author Sean A. Irvine
  */
 public class A164938 extends LinearRecurrence {

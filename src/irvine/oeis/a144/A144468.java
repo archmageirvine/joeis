@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144468.
+ * A144468 Final digit of multiples of 7.
  * @author Sean A. Irvine
  */
 public class A144468 extends LinearRecurrence {

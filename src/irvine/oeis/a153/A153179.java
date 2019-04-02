@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153179.
+ * A153179 a(n) = L(11*n)/L(n) where L(n) = A000204(n).
  * @author Sean A. Irvine
  */
 public class A153179 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002654.
+ * A002654 Number of ways of writing n as a sum of at most two nonzero squares, where order matters; also (number of divisors of n of form 4m+1) - (number of divisors of form 4m+3).
  * @author Sean A. Irvine
  */
 public class A002654 implements Sequence {

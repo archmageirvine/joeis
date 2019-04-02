@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018037.
+ * A018037 Powers of cube root of 21 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018037 implements Sequence {

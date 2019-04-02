@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006892.
+ * A006892 Representation as a sum of squares requires n squares with greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A006892 implements Sequence {

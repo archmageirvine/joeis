@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138984.
+ * A138984 a(n) = Frobenius number for 4 successive numbers = F(n+1,n+2,n+3,n+4).
  * @author Sean A. Irvine
  */
 public class A138984 extends LinearRecurrence {

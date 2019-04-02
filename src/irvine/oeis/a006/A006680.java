@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006680.
+ * A006680 Number of binary phylogenetic trees with n labels.
  * @author Sean A. Irvine
  */
 public class A006680 implements Sequence {

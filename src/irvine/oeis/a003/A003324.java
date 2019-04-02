@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A003324.
+ * A003324 A nonrepetitive sequence.
  * @author Sean A. Irvine
  */
 public class A003324 implements Sequence {

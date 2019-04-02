@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007434.
+ * A007434 Jordan function J_2(n) (a generalization of phi(n)).
  * @author Sean A. Irvine
  */
 public class A007434 implements Sequence {

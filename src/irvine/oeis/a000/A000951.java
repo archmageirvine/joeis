@@ -7,7 +7,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000951.
+ * A000951 Number of forests with n nodes and height at most 4.
  * @author Sean A. Irvine
  */
 public class A000951 extends A000950 {

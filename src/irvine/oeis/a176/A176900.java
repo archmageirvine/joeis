@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176900.
+ * A176900 sin((2*n+5)*Pi/6)*(n+1)*2^(n+1).
  * @author Sean A. Irvine
  */
 public class A176900 extends LinearRecurrence {

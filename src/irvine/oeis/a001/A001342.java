@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001342.
+ * A001342 E.g.f.: 24*exp(x)/(1-x)^5.
  * @author Sean A. Irvine
  */
 public class A001342 implements Sequence {

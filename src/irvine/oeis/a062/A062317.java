@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062317.
+ * A062317 Numbers n such that 5*n-1 is a perfect square.
  * @author Sean A. Irvine
  */
 public class A062317 extends LinearRecurrence {

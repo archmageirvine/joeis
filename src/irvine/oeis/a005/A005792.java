@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001481;
 
 /**
- * A005792.
+ * A005792 Positive numbers that are the sum of 2 squares or 3 times a square.
  * @author Sean A. Irvine
  */
 public class A005792 extends A001481 {

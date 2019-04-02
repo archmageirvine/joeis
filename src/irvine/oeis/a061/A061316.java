@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061316.
+ * A061316 a(n) = n*(n+1)*(n^2 + n + 4)/4.
  * @author Sean A. Irvine
  */
 public class A061316 extends LinearRecurrence {

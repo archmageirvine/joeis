@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.a003.A003290;
 
 /**
- * A005551.
+ * A005551 Number of n-step self-avoiding walks on hexagonal lattice from (0,0) to (0,4).
  * @author Sean A. Irvine
  */
 public class A005551 extends A003290 {

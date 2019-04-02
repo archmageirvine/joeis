@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290471.
+ * A290471 Number of minimal edge covers in the n-wheel graph.
  * @author Sean A. Irvine
  */
 public class A290471 extends LinearRecurrence {

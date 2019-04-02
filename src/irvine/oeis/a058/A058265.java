@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A058265.
+ * A058265 Decimal expansion of the tribonacci constant t, the real root of x^3 - x^2 - x - 1.
  * @author Sean A. Irvine
  */
 public class A058265 extends DecimalExpansionSequence {

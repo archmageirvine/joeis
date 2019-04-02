@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000987.
+ * A000987 Number of stochastic matrices of integers.
  * @author Sean A. Irvine
  */
 public class A000987 extends A000985 {

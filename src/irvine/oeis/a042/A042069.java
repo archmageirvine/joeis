@@ -3,7 +3,7 @@ package irvine.oeis.a042;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A042069.
+ * A042069 Denominators of continued fraction convergents to sqrt(558).
  * @author Sean A. Irvine
  */
 public class A042069 extends LinearRecurrence {

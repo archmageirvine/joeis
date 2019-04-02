@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097362.
+ * A097362 a(n) = (n+1)/2 if n is odd, n+2 otherwise.
  * @author Sean A. Irvine
  */
 public class A097362 extends LinearRecurrence {

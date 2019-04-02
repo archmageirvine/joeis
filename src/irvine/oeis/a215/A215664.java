@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215664.
+ * A215664 a(n) = 3*a(n-2) - a(n-3), with a(0)=3, a(1)=0, and a(2)=6.
  * @author Sean A. Irvine
  */
 public class A215664 extends LinearRecurrence {

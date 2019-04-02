@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073373.
+ * A073373 Third convolution of A001045(n+1) (generalized (1,2)-Fibonacci), n&gt;=0, with itself.
  * @author Sean A. Irvine
  */
 public class A073373 extends LinearRecurrence {

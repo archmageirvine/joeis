@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262063.
+ * A262063 The first of seven consecutive positive integers the sum of the squares of which is equal to the sum of the squares of six consecutive positive integers.
  * @author Sean A. Irvine
  */
 public class A262063 extends LinearRecurrence {

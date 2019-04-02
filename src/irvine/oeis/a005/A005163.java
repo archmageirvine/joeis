@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005163.
+ * A005163 Number of alternating sign n X n matrices that are symmetric about a diagonal.
  * @author Sean A. Irvine
  */
 public class A005163 implements Sequence {

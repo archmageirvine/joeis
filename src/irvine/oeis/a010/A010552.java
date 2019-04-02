@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010552.
+ * A010552 Multiply successively by 1 (once), 2 (twice), 3 (thrice), etc.
  * @author Sean A. Irvine
  */
 public class A010552 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000290;
 import irvine.oeis.a000.A000787;
 
 /**
- * A018848.
+ * A018848 Strobogrammatic squares: the same upside down (probably finite).
  * @author Sean A. Irvine
  */
 public class A018848 extends A000290 {

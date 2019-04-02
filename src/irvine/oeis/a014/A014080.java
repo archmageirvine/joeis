@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014080.
+ * A014080 Factorions: equal to the sum of the factorials of their digits in base 10 (cf. A061602).
  * @author Sean A. Irvine
  */
 public class A014080 extends FiniteSequence {

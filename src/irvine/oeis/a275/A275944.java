@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275944.
+ * A275944 Gaussian binomial coefficient [n,3] for q = 10.
  * @author Sean A. Irvine
  */
 public class A275944 extends LinearRecurrence {

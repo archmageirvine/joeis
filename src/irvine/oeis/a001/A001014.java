@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001014.
+ * A001014 Sixth powers: a(n) = n^6.
  * @author Sean A. Irvine
  */
 public class A001014 implements Sequence {

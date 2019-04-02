@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218986.
+ * A218986 Power floor sequence of 2+sqrt(7).
  * @author Sean A. Irvine
  */
 public class A218986 extends LinearRecurrence {

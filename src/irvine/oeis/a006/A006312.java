@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A006312.
+ * A006312 Discriminants of period polynomials.
  * @author Sean A. Irvine
  */
 public class A006312 extends A006308 {

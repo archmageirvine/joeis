@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A300760.
+ * A300760 Number of ways to select 4 numbers from the set of the first n natural numbers avoiding 3-term arithmetic progressions.
  * @author Sean A. Irvine
  */
 public class A300760 extends LinearRecurrence {

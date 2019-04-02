@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133273.
+ * A133273 Indices of centered decagonal numbers which are also decagonal numbers.
  * @author Sean A. Irvine
  */
 public class A133273 extends LinearRecurrence {

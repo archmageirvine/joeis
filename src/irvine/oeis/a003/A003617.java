@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003617.
+ * A003617 Smallest n-digit prime.
  * @author Sean A. Irvine
  */
 public class A003617 implements Sequence {

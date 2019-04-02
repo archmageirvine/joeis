@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003631.
+ * A003631 Primes congruent to 2 or 3 modulo 5.
  * @author Sean A. Irvine
  */
 public class A003631 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010081.
+ * A010081 Weight distribution of extended Hamming code of length 32 (or 3rd order Reed-Muller code).
  * @author Sean A. Irvine
  */
 public class A010081 extends FiniteSequence {

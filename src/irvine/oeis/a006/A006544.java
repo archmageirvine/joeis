@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003426;
 
 /**
- * A006544.
+ * A006544 Number of stable forests with n nodes.
  * @author Sean A. Irvine
  */
 public class A006544 extends A003426 {

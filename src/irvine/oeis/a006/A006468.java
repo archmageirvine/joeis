@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006468.
+ * A006468 Number of rooted planar maps with 4 faces and n vertices and no isthmuses.
  * @author Sean A. Irvine
  */
 public class A006468 extends A006398 {

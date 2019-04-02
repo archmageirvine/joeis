@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001743.
+ * A001743 Every digit contains at least one loop (version 1).
  * @author Sean A. Irvine
  */
 public class A001743 implements Sequence {

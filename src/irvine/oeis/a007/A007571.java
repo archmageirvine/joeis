@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007571.
+ * A007571 a(n) = largest prime factor of n^n + 1.
  * @author Sean A. Irvine
  */
 public class A007571 implements Sequence {

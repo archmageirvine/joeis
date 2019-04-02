@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228600.
+ * A228600 The Szeged index of the n-sunlet graph (n&gt;=3).
  * @author Sean A. Irvine
  */
 public class A228600 extends LinearRecurrence {

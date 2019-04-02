@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004531.
+ * A004531 Number of integer solutions to x^2 + 4 * y^2 = n.
  * @author Sean A. Irvine
  */
 public class A004531 implements Sequence {

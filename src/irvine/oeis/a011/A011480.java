@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011480.
+ * A011480 Decimal expansion of 61st root of 61.
  * @author Sean A. Irvine
  */
 public class A011480 extends DecimalExpansionSequence {

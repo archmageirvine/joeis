@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018005.
+ * A018005 Smallest number whose cube has n digits.
  * @author Sean A. Irvine
  */
 public class A018005 implements Sequence {

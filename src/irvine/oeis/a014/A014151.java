@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A014151.
+ * A014151 Apply partial sum operator thrice to Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A014151 extends PartialSumSequence {

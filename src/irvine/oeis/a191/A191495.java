@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191495.
+ * A191495 Number of compositions of even natural numbers into 8 parts &lt;= n.
  * @author Sean A. Irvine
  */
 public class A191495 extends LinearRecurrence {

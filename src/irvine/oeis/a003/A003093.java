@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a120.A120348;
 
 /**
- * A003093.
+ * A003093 Number of planar 2-trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A003093 implements Sequence {

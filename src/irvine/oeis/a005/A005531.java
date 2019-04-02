@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A005531.
+ * A005531 Decimal expansion of fifth root of 2.
  * @author Sean A. Irvine
  */
 public class A005531 extends DecimalExpansionSequence {

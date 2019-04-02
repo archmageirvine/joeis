@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003430;
 
 /**
- * A007454.
+ * A007454 Number of disconnected N-free posets with n nodes.
  * @author Sean A. Irvine
  */
 public class A007454 extends A003430 {

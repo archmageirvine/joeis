@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002300.
+ * A002300 Coefficients in the expansion of B^2*C^3 in Watson's notation of page 118.
  * @author Sean A. Irvine
  */
 public class A002300 implements Sequence {

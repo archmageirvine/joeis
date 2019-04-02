@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014261.
+ * A014261 Numbers that contain odd digits only.
  * @author Sean A. Irvine
  */
 public class A014261 implements Sequence {

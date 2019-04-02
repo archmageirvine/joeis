@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114051.
+ * A114051 x such that x^2 - 23*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A114051 extends LinearRecurrence {

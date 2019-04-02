@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002381.
+ * A002381 Numbers of the form (p^2 - 1)/120 where p is 1 or prime.
  * @author Sean A. Irvine
  */
 public class A002381 implements Sequence {

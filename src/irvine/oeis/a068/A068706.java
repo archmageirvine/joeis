@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A068706.
+ * A068706 Primes obtained as a right concatenation of more than one consecutive even numbers and 1.
  * @author Sean A. Irvine
  */
 public class A068706 implements Sequence {

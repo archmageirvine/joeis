@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047323.
+ * A047323 Numbers that are congruent to {2, 5, 6} mod 7.
  * @author Sean A. Irvine
  */
 public class A047323 extends LinearRecurrence {

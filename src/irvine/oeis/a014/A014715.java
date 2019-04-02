@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A014715.
+ * A014715 Decimal expansion of Conway's constant.
  * @author Sean A. Irvine
  */
 public class A014715 extends DecimalExpansionSequence {

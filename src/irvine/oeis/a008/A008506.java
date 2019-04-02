@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008506.
+ * A008506 12-dimensional centered tetrahedral numbers.
  * @author Sean A. Irvine
  */
 public class A008506 extends LinearRecurrence {

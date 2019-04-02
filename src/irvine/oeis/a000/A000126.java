@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000126.
+ * A000126 A nonlinear binomial sum.
  * @author Sean A. Irvine
  */
 public class A000126 implements Sequence {

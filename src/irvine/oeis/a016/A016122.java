@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A016122.
+ * A016122 Decimal expansion of solution to log_10(x) = x - 4.
  * @author Sean A. Irvine
  */
 public class A016122 extends DecimalExpansionSequence {

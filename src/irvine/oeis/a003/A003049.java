@@ -4,7 +4,7 @@ import irvine.oeis.InverseEulerTransformSequence;
 import irvine.oeis.a002.A002854;
 
 /**
- * A003049.
+ * A003049 Number of connected Eulerian graphs with n unlabeled nodes.
  * @author Sean A. Irvine
  */
 public class A003049 extends InverseEulerTransformSequence {

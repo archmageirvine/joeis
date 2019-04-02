@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013384.
+ * A013384 sinh(sin(x)-tanh(x))=1/3!*x^3-15/5!*x^5+271/7!*x^7-7655/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013384 implements Sequence {

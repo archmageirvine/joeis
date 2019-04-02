@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018118.
+ * A018118 Powers of fifth root of 2 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018118 implements Sequence {

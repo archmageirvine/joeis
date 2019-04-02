@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018981.
+ * A018981 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite AST = AlPO4-16 [ Al20P20O80 ] .4 R . 16 H2O.
  * @author Sean A. Irvine
  */
 public class A018981 extends A018940 {

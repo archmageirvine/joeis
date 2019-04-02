@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018984.
+ * A018984 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite ATO = AlPO4-31 [ Al18P18O72 ].
  * @author Sean A. Irvine
  */
 public class A018984 extends A018940 {

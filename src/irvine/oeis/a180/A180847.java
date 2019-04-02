@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180847.
+ * A180847 a(n) = (27^n-4^n)/23.
  * @author Sean A. Irvine
  */
 public class A180847 extends LinearRecurrence {

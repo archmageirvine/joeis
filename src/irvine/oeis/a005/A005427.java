@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005427.
+ * A005427 Josephus problem.
  * @author Sean A. Irvine
  */
 public class A005427 implements Sequence {

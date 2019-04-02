@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005096.
+ * A005096 a(n) = n! - n.
  * @author Sean A. Irvine
  */
 public class A005096 implements Sequence {

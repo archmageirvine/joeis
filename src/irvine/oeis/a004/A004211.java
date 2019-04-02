@@ -4,7 +4,7 @@ import irvine.oeis.Stirling2TransformSequence;
 import irvine.oeis.a000.A000085;
 
 /**
- * A004211.
+ * A004211 Shifts one place left under 2nd-order binomial transform.
  * @author Sean A. Irvine
  */
 public class A004211 extends Stirling2TransformSequence {

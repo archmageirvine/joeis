@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011938.
+ * A011938 a(n) = floor( n*(n-1)*(n-2)*(n-3)/28 ).
  * @author Sean A. Irvine
  */
 public class A011938 implements Sequence {

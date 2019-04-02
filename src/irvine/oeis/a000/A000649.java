@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000649.
+ * A000649 Number of alkyls C_{n+15} H_{2n+10} (Phenan) with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000649 extends A000598 {

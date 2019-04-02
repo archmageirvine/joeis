@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279042.
+ * A279042 Numbers k such that 2*k+1 and 10*k+1 are both triangular numbers (A000217).
  * @author Sean A. Irvine
  */
 public class A279042 extends LinearRecurrence {

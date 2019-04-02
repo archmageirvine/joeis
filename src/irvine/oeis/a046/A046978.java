@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046978.
+ * A046978 Numerators of Taylor series for exp(x)*sin(x).
  * @author Sean A. Irvine
  */
 public class A046978 extends LinearRecurrence {

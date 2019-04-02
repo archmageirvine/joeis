@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007531.
+ * A007531 a(n) = n*(n-1)*(n-2) (or n!/(n-3)!).
  * @author Sean A. Irvine
  */
 public class A007531 implements Sequence {

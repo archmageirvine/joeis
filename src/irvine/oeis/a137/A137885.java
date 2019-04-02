@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137885.
+ * A137885 Number of (directed) Hamiltonian paths in the 2n-crossed prism graph.
  * @author Sean A. Irvine
  */
 public class A137885 extends LinearRecurrence {

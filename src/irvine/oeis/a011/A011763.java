@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011763.
+ * A011763 Days in year in Gregorian calendar.
  * @author Sean A. Irvine
  */
 public class A011763 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006037;
 
 /**
- * A002975.
+ * A002975 Primitive weird numbers: weird numbers with no proper weird divisors.
  * @author Sean A. Irvine
  */
 public class A002975 extends A006037 {

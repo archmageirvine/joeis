@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065423.
+ * A065423 Number of ordered length 2 compositions of n with at least one even summand.
  * @author Sean A. Irvine
  */
 public class A065423 extends LinearRecurrence {

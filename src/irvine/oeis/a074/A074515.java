@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074515.
+ * A074515 a(n) = 1^n + 4^n + 9^n.
  * @author Sean A. Irvine
  */
 public class A074515 extends LinearRecurrence {

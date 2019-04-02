@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002039.
+ * A002039 Convolution inverse of A143348.
  * @author Sean A. Irvine
  */
 public class A002039 implements Sequence {

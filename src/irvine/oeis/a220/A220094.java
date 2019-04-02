@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220094.
+ * A220094 Sum of the n-digit base-ten numbers whose digits are nonzero.
  * @author Sean A. Irvine
  */
 public class A220094 extends LinearRecurrence {

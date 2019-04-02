@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003163.
+ * A003163 Denominators of Van der Pol numbers.
  * @author Sean A. Irvine
  */
 public class A003163 implements Sequence {

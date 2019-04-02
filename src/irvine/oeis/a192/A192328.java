@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192328.
+ * A192328 Numbers of the form 20*k+7 which are three times a square.
  * @author Sean A. Irvine
  */
 public class A192328 extends LinearRecurrence {

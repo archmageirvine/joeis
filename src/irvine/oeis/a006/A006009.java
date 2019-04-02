@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007009;
 
 /**
- * A006009.
+ * A006009 Number of paraffins.
  * @author Sean A. Irvine
  */
 public class A006009 extends A007009 {

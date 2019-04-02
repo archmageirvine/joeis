@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004746.
+ * A004746 Numbers n such that binary expansion does not contain 010.
  * @author Sean A. Irvine
  */
 public class A004746 implements Sequence {

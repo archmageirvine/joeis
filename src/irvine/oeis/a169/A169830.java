@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169830.
+ * A169830 Numbers n such that 2*reverse(n) - n = 1.
  * @author Sean A. Irvine
  */
 public class A169830 extends LinearRecurrence {

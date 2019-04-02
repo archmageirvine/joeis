@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Stirling2TransformSequence;
 
 /**
- * A007469.
+ * A007469 Shifts left 2 places under Stirling-2 transform.
  * @author Sean A. Irvine
  */
 public class A007469 extends MemorySequence {

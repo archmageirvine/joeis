@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A000368.
+ * A000368 Number of connected graphs with one cycle of length 4.
  * @author Sean A. Irvine
  */
 public class A000368 extends A000081 {

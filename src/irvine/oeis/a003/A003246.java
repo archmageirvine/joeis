@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003246.
+ * A003246 Discriminants of real quadratic Euclidean fields (a finite sequence).
  * @author Sean A. Irvine
  */
 public class A003246 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195317.
+ * A195317 Centered 40-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A195317 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002667.
+ * A002667 Continued cotangent for Pi.
  * @author Sean A. Irvine
  */
 public class A002667 implements Sequence {

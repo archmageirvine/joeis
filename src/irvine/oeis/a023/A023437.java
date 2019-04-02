@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023437.
+ * A023437 Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-7).
  * @author Sean A. Irvine
  */
 public class A023437 extends LinearRecurrence {

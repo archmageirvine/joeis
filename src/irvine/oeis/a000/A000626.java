@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000626.
+ * A000626 Number of stereoisomeric paraffins with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000626 extends A000627 {

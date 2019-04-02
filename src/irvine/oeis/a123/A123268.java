@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123268.
+ * A123268 X-values of solutions to the equation 3(X-Y)^4 - X*Y = 0 with X &gt;= Y.
  * @author Sean A. Irvine
  */
 public class A123268 extends LinearRecurrence {

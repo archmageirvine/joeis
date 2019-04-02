@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 
 /**
- * A002900.
+ * A002900 Number of n-step walks on square lattice.
  * @author Sean A. Irvine
  */
 public class A002900 extends A001411 {

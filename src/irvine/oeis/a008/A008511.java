@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008511.
+ * A008511 Number of points on surface of 4-dimensional cube.
  * @author Sean A. Irvine
  */
 public class A008511 implements Sequence {

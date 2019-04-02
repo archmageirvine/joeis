@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005767.
+ * A005767 Solutions n to n^2 = a^2 + b^2 + c^2 (a,b,c &gt; 0).
  * @author Sean A. Irvine
  */
 public class A005767 implements Sequence {

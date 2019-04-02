@@ -3,7 +3,7 @@ package irvine.oeis.a044;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A044102.
+ * A044102 Multiples of 36.
  * @author Sean A. Irvine
  */
 public class A044102 extends LinearRecurrence {

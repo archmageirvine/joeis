@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000912.
+ * A000912 Expansion of (sqrt(1-4x^2) - sqrt(1-4x))/(2x).
  * @author Sean A. Irvine
  */
 public class A000912 extends A000150 {

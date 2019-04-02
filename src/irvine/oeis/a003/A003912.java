@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003912.
+ * A003912 Degrees of irreducible representations of Held group He.
  * @author Sean A. Irvine
  */
 public class A003912 extends FiniteSequence {

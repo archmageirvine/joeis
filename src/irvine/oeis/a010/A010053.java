@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010053.
+ * A010053 4^n*(2*n+1)!*(n!)^2/(n+1).
  * @author Sean A. Irvine
  */
 public class A010053 implements Sequence {

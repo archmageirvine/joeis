@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003120.
+ * A003120 Number of rooted trees with n nodes and omega-valency 1.
  * @author Sean A. Irvine
  */
 public class A003120 implements Sequence {

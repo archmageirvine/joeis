@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105755.
+ * A105755 Lucas 9-step numbers.
  * @author Sean A. Irvine
  */
 public class A105755 extends LinearRecurrence {

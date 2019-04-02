@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007024.
+ * A007024 Number of polyhedral graphs with n faces and minimal degree 4.
  * @author Sean A. Irvine
  */
 public class A007024 implements Sequence {

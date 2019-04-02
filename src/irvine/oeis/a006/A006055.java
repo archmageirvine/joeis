@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006055.
+ * A006055 Primes with consecutive (ascending) digits.
  * @author Sean A. Irvine
  */
 public class A006055 implements Sequence {

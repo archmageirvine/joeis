@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000311;
 
 /**
- * A006351.
+ * A006351 Number of series-parallel networks with n labeled edges. Also called yoke-chains by Cayley and MacMahon.
  * @author Sean A. Irvine
  */
 public class A006351 extends A000311 {

@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136254.
+ * A136254 Generator for the finite sequence A053016.
  * @author Sean A. Irvine
  */
 public class A136254 extends LinearRecurrence {

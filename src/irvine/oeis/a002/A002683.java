@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.q.Q;
 
 /**
- * A002683.
+ * A002683 Numerators of coefficients for repeated integration.
  * @author Sean A. Irvine
  */
 public class A002683 extends A002681 {

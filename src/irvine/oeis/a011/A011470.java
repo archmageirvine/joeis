@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011470.
+ * A011470 Decimal expansion of 51st root of 51.
  * @author Sean A. Irvine
  */
 public class A011470 extends DecimalExpansionSequence {

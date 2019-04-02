@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123650.
+ * A123650 a(n) = 1 + n^2 + n^3 + n^5.
  * @author Sean A. Irvine
  */
 public class A123650 extends LinearRecurrence {

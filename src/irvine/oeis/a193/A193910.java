@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193910.
+ * A193910 Leap centuries in the revised Julian calendar.
  * @author Sean A. Irvine
  */
 public class A193910 extends LinearRecurrence {

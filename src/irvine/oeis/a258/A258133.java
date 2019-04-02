@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258133.
+ * A258133 Expansion of tri-digit zeros interlaced with an arithmetic progression of positive and negative numbers.
  * @author Sean A. Irvine
  */
 public class A258133 extends LinearRecurrence {

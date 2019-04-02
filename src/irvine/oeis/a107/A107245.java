@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107245.
+ * A107245 Sum of squares of heptanacci numbers (Fibonacci 7-step numbers).
  * @author Sean A. Irvine
  */
 public class A107245 extends LinearRecurrence {

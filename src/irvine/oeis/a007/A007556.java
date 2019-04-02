@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007556.
+ * A007556 Number of 8-ary trees with n vertices.
  * @author Sean A. Irvine
  */
 public class A007556 implements Sequence {

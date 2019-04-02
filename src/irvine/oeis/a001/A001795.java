@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001795.
+ * A001795 Coefficients of Legendre polynomials.
  * @author Sean A. Irvine
  */
 public class A001795 implements Sequence {

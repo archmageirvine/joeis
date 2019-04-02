@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018034.
+ * A018034 Powers of cube root of 20 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018034 implements Sequence {

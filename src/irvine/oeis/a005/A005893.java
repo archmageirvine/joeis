@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005893.
+ * A005893 Number of points on surface of tetrahedron; coordination sequence for sodalite net (equals 2*n^2+2 for n &gt; 0).
  * @author Sean A. Irvine
  */
 public class A005893 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004124.
+ * A004124 Discriminant of n-th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A004124 implements Sequence {

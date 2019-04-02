@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291910.
+ * A291910 Number of 4-cycles in the n X n rook complement graph.
  * @author Sean A. Irvine
  */
 public class A291910 extends LinearRecurrence {

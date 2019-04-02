@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002022.
+ * A002022 Pile of coconuts problem.
  * @author Sean A. Irvine
  */
 public class A002022 implements Sequence {

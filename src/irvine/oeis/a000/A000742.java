@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000742.
+ * A000742 Number of compositions of n into 4 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A000742 extends A000741 {

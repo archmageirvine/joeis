@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082149.
+ * A082149 A transform of C(n,2).
  * @author Sean A. Irvine
  */
 public class A082149 extends LinearRecurrence {

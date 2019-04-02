@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137879.
+ * A137879 Numbers k such that k^2 is a 17-gonal number.
  * @author Sean A. Irvine
  */
 public class A137879 extends LinearRecurrence {

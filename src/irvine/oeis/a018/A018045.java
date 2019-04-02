@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018045.
+ * A018045 Powers of cube root of 24 rounded down.
  * @author Sean A. Irvine
  */
 public class A018045 implements Sequence {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 
 /**
- * A002722.
+ * A002722 Rotatable partitions.
  * @author Sean A. Irvine
  */
 public class A002722 extends A096419 {

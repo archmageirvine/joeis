@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077421.
+ * A077421 Chebyshev sequence U(n,11)=S(n,22) with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A077421 extends LinearRecurrence {

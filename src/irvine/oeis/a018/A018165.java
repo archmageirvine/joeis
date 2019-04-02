@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018165.
+ * A018165 Powers of fifth root of 18 rounded down.
  * @author Sean A. Irvine
  */
 public class A018165 implements Sequence {

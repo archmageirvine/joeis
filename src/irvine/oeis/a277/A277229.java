@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277229.
+ * A277229 Convolution of the odd indexed triangular numbers (A000384(n+1)) and the squares (A000290).
  * @author Sean A. Irvine
  */
 public class A277229 extends LinearRecurrence {

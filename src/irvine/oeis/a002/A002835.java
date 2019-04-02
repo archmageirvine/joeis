@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005980;
 
 /**
- * A002835.
+ * A002835 Solid partitions of n which are restricted to two planes.
  * @author Sean A. Irvine
  */
 public class A002835 extends A005980 {

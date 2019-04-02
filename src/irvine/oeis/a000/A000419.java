@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000419.
+ * A000419 Numbers that are the sum of 3 but no fewer nonzero squares.
  * @author Sean A. Irvine
  */
 public class A000419 extends A000378 {

@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046183.
+ * A046183 Octagonal triangular numbers.
  * @author Sean A. Irvine
  */
 public class A046183 extends LinearRecurrence {

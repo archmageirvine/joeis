@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * A001997.
+ * A001997 Number of different shapes formed by bending a piece of wire of length n in the plane.
  * @author Sean A. Irvine
  */
 public class A001997 implements Sequence {

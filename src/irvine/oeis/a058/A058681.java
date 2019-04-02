@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000110;
 
 /**
- * A058681.
+ * A058681 Number of matroids of rank 2 on n labeled points.
  * @author Sean A. Irvine
  */
 public class A058681 extends A000110 {

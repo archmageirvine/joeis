@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061679.
+ * A061679 Concatenation of n^3 and 7.
  * @author Sean A. Irvine
  */
 public class A061679 extends LinearRecurrence {

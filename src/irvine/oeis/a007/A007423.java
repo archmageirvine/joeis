@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008683;
 
 /**
- * A007423.
+ * A007423 mu(n) + 1, where mu is the Moebius function.
  * @author Sean A. Irvine
  */
 public class A007423 extends A008683 {

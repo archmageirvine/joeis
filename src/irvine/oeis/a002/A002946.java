@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002946.
+ * A002946 Continued fraction for cube root of 3.
  * @author Sean A. Irvine
  */
 public class A002946 extends A002945 {

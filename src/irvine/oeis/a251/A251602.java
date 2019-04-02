@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251602.
+ * A251602 Numbers n such that hexagonal number H(n) is the sum of two consecutive hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A251602 extends LinearRecurrence {

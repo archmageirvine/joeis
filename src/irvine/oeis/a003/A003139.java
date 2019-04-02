@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003139.
+ * A003139 Number of coprime chains with largest member n.
  * @author Sean A. Irvine
  */
 public class A003139 implements Sequence {

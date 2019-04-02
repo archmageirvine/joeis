@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000625;
 
 /**
- * A005960.
+ * A005960 Number of acyclic disubstituted alkanes with n carbon atoms and distinct substituents.
  * @author Sean A. Irvine
  */
 public class A005960 extends A000625 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006707.
+ * A006707 Expansion of a modular function.
  * @author Sean A. Irvine
  */
 public class A006707 implements Sequence {

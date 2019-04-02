@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012660.
+ * A012660 Expansion of e.g.f. arctan(tanh(x) * exp(x)).
  * @author Sean A. Irvine
  */
 public class A012660 implements Sequence {

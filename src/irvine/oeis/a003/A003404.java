@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003404.
+ * A003404 Number of solid partitions of n supported on graph of cube.
  * @author Sean A. Irvine
  */
 public class A003404 implements Sequence {

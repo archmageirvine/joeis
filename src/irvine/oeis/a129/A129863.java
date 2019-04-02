@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129863.
+ * A129863 Sums of three consecutive pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A129863 extends LinearRecurrence {

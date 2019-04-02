@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000256.
+ * A000256 Number of simple triangulations of plane with n nodes.
  * @author Sean A. Irvine
  */
 public class A000256 implements Sequence {

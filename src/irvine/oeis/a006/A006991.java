@@ -9,7 +9,7 @@ import irvine.oeis.a072.A072070;
 import irvine.oeis.a072.A072071;
 
 /**
- * A006991.
+ * A006991 Primitive congruent numbers.
  * @author Sean A. Irvine
  */
 public class A006991 implements Sequence {

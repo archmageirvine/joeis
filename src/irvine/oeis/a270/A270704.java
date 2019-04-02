@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270704.
+ * A270704 Even 14-gonal (or tetradecagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A270704 extends LinearRecurrence {

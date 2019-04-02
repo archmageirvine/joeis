@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014784.
+ * A014784 Triangle of numbers associated with Genocchi numbers.
  * @author Sean A. Irvine
  */
 public class A014784 extends MemoryFunction2<Integer, Z> implements Sequence {

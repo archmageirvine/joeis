@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A082873.
+ * A082873 Independence number of king KG_2 on triangle board B_n.
  * @author Sean A. Irvine
  */
 public class A082873 implements Sequence {

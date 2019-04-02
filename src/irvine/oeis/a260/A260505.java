@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260505.
+ * A260505 Number of binary words of length n with exactly one occurrence of subword 010 and exactly two occurrences of subword 101.
  * @author Sean A. Irvine
  */
 public class A260505 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082291.
+ * A082291 Expansion of x(2 + 5x - x^2)/((1 - x)(1 - 6x + x^2)).
  * @author Sean A. Irvine
  */
 public class A082291 extends LinearRecurrence {

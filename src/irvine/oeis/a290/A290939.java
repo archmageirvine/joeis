@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290939.
+ * A290939 Number of 5-cycles in the n-triangular graph.
  * @author Sean A. Irvine
  */
 public class A290939 extends LinearRecurrence {

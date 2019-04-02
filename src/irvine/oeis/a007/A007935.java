@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007935.
+ * A007935 Composite numbers such that some permutation of digits is a prime.
  * @author Sean A. Irvine
  */
 public class A007935 extends A007933 {

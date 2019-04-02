@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133327.
+ * A133327 Indices of the 7-gonal numbers that are the sum of 2 consecutive 7-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A133327 extends LinearRecurrence {

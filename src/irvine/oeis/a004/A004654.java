@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004654.
+ * A004654 Powers of 2 written in base 15. (Next term contains a non-decimal character.).
  * @author Sean A. Irvine
  */
 public class A004654 implements Sequence {

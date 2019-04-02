@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003115.
+ * A003115 a(0) = a(1) = 1; for n &gt;= 2, a(n)=a(n-1)*4^[n/2]-a(n-2).
  * @author Sean A. Irvine
  */
 public class A003115 implements Sequence {

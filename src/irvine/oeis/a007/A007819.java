@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007819.
+ * A007819 Sum C(n^2, i), i=1..n.
  * @author Sean A. Irvine
  */
 public class A007819 implements Sequence {

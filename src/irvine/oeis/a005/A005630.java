@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000628;
 
 /**
- * A005630.
+ * A005630 Number of chiral trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A005630 extends A005629 {

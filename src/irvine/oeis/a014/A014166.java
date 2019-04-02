@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A014166.
+ * A014166 Apply partial sum operator 4 times to Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A014166 extends PartialSumSequence {

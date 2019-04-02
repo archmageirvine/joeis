@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260181.
+ * A260181 Numbers whose last digit is prime.
  * @author Sean A. Irvine
  */
 public class A260181 extends LinearRecurrence {

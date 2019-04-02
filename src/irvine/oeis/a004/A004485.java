@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004485.
+ * A004485 Sprague-Grundy values for game of Wyt Queens.
  * @author Sean A. Irvine
  */
 public class A004485 extends A004481 {

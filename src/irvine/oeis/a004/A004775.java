@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004775.
+ * A004775 Numbers n such that the binary expansion of n does not end 011.
  * @author Sean A. Irvine
  */
 public class A004775 implements Sequence {

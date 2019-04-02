@@ -4,7 +4,7 @@ import irvine.oeis.RevertTransformSequence;
 import irvine.oeis.a000.A000122;
 
 /**
- * A006195.
+ * A006195 Reversion of Jacobi theta_3.
  * @author Sean A. Irvine
  */
 public class A006195 extends RevertTransformSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284699.
+ * A284699 Number of dominating sets in the n-antiprism graph.
  * @author Sean A. Irvine
  */
 public class A284699 extends LinearRecurrence {

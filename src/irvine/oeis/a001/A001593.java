@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001593.
+ * A001593 a(n) = 5^n + n^5.
  * @author Sean A. Irvine
  */
 public class A001593 implements Sequence {

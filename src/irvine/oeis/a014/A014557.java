@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014557.
+ * A014557 Multiplicity of K_3 in K_n.
  * @author Sean A. Irvine
  */
 public class A014557 extends LinearRecurrence {

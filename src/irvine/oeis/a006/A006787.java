@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A006787.
+ * A006787 Number of n-node graphs with no cycles of length less than 5.
  * @author Sean A. Irvine
  */
 public class A006787 extends ParallelGenerateGraphsSequence {

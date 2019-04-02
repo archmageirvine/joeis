@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014437.
+ * A014437 Odd Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A014437 extends LinearRecurrence {

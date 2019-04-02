@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001958.
+ * A001958 Wythoff game.
  * @author Sean A. Irvine
  */
 public class A001958 implements Sequence {

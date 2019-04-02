@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010767.
+ * A010767 Decimal expansion of 4th root of 2.
  * @author Sean A. Irvine
  */
 public class A010767 extends DecimalExpansionSequence {

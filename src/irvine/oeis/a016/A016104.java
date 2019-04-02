@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016104.
+ * A016104 2^2^2^ ... 2^w (with n 2's), where w = 1.92878.....
  * @author Sean A. Irvine
  */
 public class A016104 implements Sequence {

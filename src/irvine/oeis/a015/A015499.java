@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015499.
+ * A015499 a(0)=1, a(1)=11, a(n) = sum_{k=0}^{k=n-1} 11^k a(k).
  * @author Sean A. Irvine
  */
 public class A015499 extends A015487 {

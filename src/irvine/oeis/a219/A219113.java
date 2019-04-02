@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219113.
+ * A219113 Sequence of integers which are simultaneously a sum of consecutive squares and a difference of consecutive cubes.
  * @author Sean A. Irvine
  */
 public class A219113 extends LinearRecurrence {

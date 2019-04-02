@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A155514.
+ * A155514 Larger of emirps (pairs) with digits 0 and 1 only.
  * @author Sean A. Irvine
  */
 public class A155514 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060561.
+ * A060561 Number of ways to color vertices of a 9-gon using &lt;= n colors, allowing rotations and reflections.
  * @author Sean A. Irvine
  */
 public class A060561 extends LinearRecurrence {

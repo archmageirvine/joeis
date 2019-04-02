@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001477.
+ * A001477 The nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A001477 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A081621.
+ * A081621 Number of n-node triangulations of the sphere with minimal degree 5.
  * @author Sean A. Irvine
  */
 public class A081621 implements Sequence {

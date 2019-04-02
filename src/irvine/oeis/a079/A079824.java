@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079824.
+ * A079824 Sum of numbers in n-th upward diagonal of triangle in A079823.
  * @author Sean A. Irvine
  */
 public class A079824 extends LinearRecurrence {

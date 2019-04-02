@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288516.
+ * A288516 Number of (undirected) paths in the ladder graph P_2 X P_n.
  * @author Sean A. Irvine
  */
 public class A288516 extends LinearRecurrence {

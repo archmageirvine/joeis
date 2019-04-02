@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000110.
+ * A000110 Bell or exponential numbers: number of ways to partition a set of n labeled elements.
  * @author Sean A. Irvine
  */
 public class A000110 implements Sequence {

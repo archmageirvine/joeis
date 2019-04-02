@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002111.
+ * A002111 Glaisher's G numbers.
  * @author Sean A. Irvine
  */
 public class A002111 implements Sequence {

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006023.
+ * A006023 Number of unlabeled mating digraphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A006023 implements Sequence {

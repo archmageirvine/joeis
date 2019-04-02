@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013637.
+ * A013637 n*prevprime(n).
  * @author Sean A. Irvine
  */
 public class A013637 implements Sequence {

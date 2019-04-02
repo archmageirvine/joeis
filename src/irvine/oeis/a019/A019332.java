@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019332.
+ * A019332 Lengths of quantum cellular automata that cycle through all possible values of the QCA vector.
  * @author Sean A. Irvine
  */
 public class A019332 implements Sequence {

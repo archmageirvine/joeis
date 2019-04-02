@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005445.
+ * A005445 From a Fibonacci-like differential equation.
  * @author Sean A. Irvine
  */
 public class A005445 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001208.
+ * A001208 a(n) = solution to the postage stamp problem with 3 denominations and n stamps.
  * @author Sean A. Irvine
  */
 public class A001208 implements Sequence {

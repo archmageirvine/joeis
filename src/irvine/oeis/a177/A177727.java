@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177727.
+ * A177727 a(0)=1; a(n) = a(n-1) * Fibonacci(3+n) * Fibonacci(1+n) / (Fibonacci(n))^2, n &gt; 1.
  * @author Sean A. Irvine
  */
 public class A177727 extends LinearRecurrence {

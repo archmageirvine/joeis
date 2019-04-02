@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A006450.
+ * A006450 Prime-indexed primes: primes with prime subscripts.
  * @author Sean A. Irvine
  */
 public class A006450 extends A000040 {

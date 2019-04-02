@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006873.
+ * A006873 Number of alternating 4-signed permutations.
  * @author Sean A. Irvine
  */
 public class A006873 implements Sequence {

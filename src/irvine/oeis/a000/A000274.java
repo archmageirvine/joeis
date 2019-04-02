@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000274.
+ * A000274 Number of permutations of length n with 2 consecutive ascending pairs.
  * @author Sean A. Irvine
  */
 public class A000274 implements Sequence {

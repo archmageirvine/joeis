@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a133.A133709;
 
 /**
- * A006845.
+ * A006845 State assignments for n-state machine.
  * @author Sean A. Irvine
  */
 public class A006845 extends A133709 {

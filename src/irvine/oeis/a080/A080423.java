@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080423.
+ * A080423 (n+1)(n+2)(n+3)(n+4)(n+15)3^n/360.
  * @author Sean A. Irvine
  */
 public class A080423 extends LinearRecurrence {

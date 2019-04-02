@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084177.
+ * A084177 Binomial transform of Jacobsthal oblongs.
  * @author Sean A. Irvine
  */
 public class A084177 extends LinearRecurrence {

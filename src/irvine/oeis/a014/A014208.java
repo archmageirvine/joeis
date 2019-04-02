@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014208.
+ * A014208 Next prime after n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A014208 extends A000045 {

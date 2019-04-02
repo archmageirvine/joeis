@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173722.
+ * A173722 Partial sums of round(n^2/8).
  * @author Sean A. Irvine
  */
 public class A173722 extends LinearRecurrence {

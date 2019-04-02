@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A121357.
+ * A121357 Number of different, not necessarily connected, labeled trivalent diagrams of size n.
  * @author Sean A. Irvine
  */
 public class A121357 implements Sequence {

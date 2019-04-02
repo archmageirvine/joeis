@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081283.
+ * A081283 An interleaved sequence of pyramidal and polygonal numbers.
  * @author Sean A. Irvine
  */
 public class A081283 extends LinearRecurrence {

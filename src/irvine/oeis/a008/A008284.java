@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000041;
 import irvine.util.string.StringUtils;
 
 /**
- * A008284.
+ * A008284 Triangle of partition numbers: T(n,k) = number of partitions of n in which the greatest part is k, 1&lt;=k&lt;=n. Also number of partitions of n into k positive parts, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A008284 extends MemoryFunction2<Long, Z> implements Sequence {

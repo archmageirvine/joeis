@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A003679.
+ * A003679 Numbers that are not the sum of 3 pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A003679 implements Sequence {

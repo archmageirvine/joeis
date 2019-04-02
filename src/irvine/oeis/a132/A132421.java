@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A132421.
+ * A132421 a(n) = LCM of the integers b(k), over all k where 1 &lt;= k &lt;= n, where b(k) = the k-th integer from among those positive integers which are coprime to (n+1-k).
  * @author Sean A. Irvine
  */
 public class A132421 implements Sequence {

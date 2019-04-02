@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249736.
+ * A249736 Triangular numbers modulo 30.
  * @author Sean A. Irvine
  */
 public class A249736 extends LinearRecurrence {

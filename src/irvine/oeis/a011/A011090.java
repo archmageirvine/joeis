@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011090.
+ * A011090 Decimal expansion of 4th root of 99.
  * @author Sean A. Irvine
  */
 public class A011090 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002258.
+ * A002258 Numbers n such that 15*2^n+1 is prime.
  * @author Sean A. Irvine
  */
 public class A002258 implements Sequence {

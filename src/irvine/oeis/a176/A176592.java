@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176592.
+ * A176592 List of pairs n,11*n.
  * @author Sean A. Irvine
  */
 public class A176592 extends LinearRecurrence {

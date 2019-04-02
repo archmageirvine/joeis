@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092183.
+ * A092183 Figurate numbers based on the 120-cell (4-D polytope with Schlaefli symbol {5,3,3}).
  * @author Sean A. Irvine
  */
 public class A092183 extends LinearRecurrence {

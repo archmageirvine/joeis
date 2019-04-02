@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015898.
+ * A015898 Numbers k such that k | 9^k + 9.
  * @author Sean A. Irvine
  */
 public class A015898 implements Sequence {

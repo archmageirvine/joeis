@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018001.
+ * A018001 Powers of cube root of 9 rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A018001 implements Sequence {

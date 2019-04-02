@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099858.
+ * A099858 A Chebyshev transform of (1+3x)/(1-3x).
  * @author Sean A. Irvine
  */
 public class A099858 extends LinearRecurrence {

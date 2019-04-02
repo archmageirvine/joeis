@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014969.
+ * A014969 Expansion of (theta_3(q) / theta_4(q))^2 in powers of q.
  * @author Sean A. Irvine
  */
 public class A014969 extends EulerTransformSequence {

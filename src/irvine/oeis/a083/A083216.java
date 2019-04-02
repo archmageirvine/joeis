@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083216.
+ * A083216 Fibonacci-like sequence of composite numbers with a(0) = 20615674205555510, a(1) = 3794765361567513.
  * @author Sean A. Irvine
  */
 public class A083216 extends LinearRecurrence {

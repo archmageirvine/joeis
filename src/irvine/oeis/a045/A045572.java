@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045572.
+ * A045572 Numbers that are odd but not divisible by 5.
  * @author Sean A. Irvine
  */
 public class A045572 extends LinearRecurrence {

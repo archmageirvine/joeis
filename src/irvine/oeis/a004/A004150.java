@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000111;
 
 /**
- * A004150.
+ * A004150 Euler numbers written backwards.
  * @author Sean A. Irvine
  */
 public class A004150 extends A000111 {

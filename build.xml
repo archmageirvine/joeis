@@ -20,6 +20,9 @@
 
   <target name="compile-grammar" description="Compile the ANTLR grammar">
     <java classname="org.antlr.v4.Tool" fork="true" failonerror="true">
+      <classpath>
+        <fileset dir="${lib.dir}" includes="antlr-4.5-complete.jar" />
+      </classpath>
       <arg value="-Dlanguage=Java"/>
       <arg value="-no-visitor"/>
       <arg value="-no-listener"/>
@@ -172,4 +175,20 @@
       <formatter type="plain" />
     </checkstyle>
   </target>
+
+  <target name="spellcheck" description="Run spellchecker">
+    <java jar="${tools.dir}/spelling.jar" fork="true">
+      <arg line="-c"/>
+      <arg file=".cvscheck/spelling.case-sensitive"/>
+      <arg line="-d"/>
+      <arg file=".cvscheck/spelling.case-insensitive"/>
+      <arg line="-x"/>
+      <arg file=".cvscheck/spelling.excludes"/>
+      <arg line="--classpath"/>
+      <arg path="${build.dir}"/>
+      <arg file="${src.dir}"/>
+      <arg file="${test.dir}"/>
+    </java>
+  </target>
+
 </project>

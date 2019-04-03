@@ -14,12 +14,15 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A265021Test.class);
     suite.addTestSuite(A265037Test.class);
+    suite.addTestSuite(A265045Test.class);
+    suite.addTestSuite(A265048Test.class);
     suite.addTestSuite(A265078Test.class);
     suite.addTestSuite(A265187Test.class);
     suite.addTestSuite(A265188Test.class);
     suite.addTestSuite(A265225Test.class);
     suite.addTestSuite(A265227Test.class);
     suite.addTestSuite(A265228Test.class);
+    suite.addTestSuite(A265278Test.class);
     suite.addTestSuite(A265282Test.class);
     suite.addTestSuite(A265379Test.class);
     suite.addTestSuite(A265380Test.class);

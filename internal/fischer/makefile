@@ -11,7 +11,7 @@ DBAT=java -jar $(GITS)/dbat/dist/dbat.jar -e UTF-8 -c worddb
 all: anumbers mmacall
 	
 anumbers:
-	find ($GITS)/joeis/src/irvine/oeis -iname "A*.java" -printf "%f\n" | cut -b1-7 > $@.tmp
+	find $(GITS)/joeis/src/irvine/oeis -iname "A*.java" -printf "%f\n" | cut -b1-7 > $@.tmp
 	wc -l $@.tmp
 	make seq  -f $(COMMON)/makefile INFO=$@.tmp
 mmacall:
@@ -30,3 +30,5 @@ gen_linrec:
 zip:
 	zip -r gen_linrec.`date +%Y-%m-%d`.zip gen_linrec.pl makefile mmacall.tmp oeis
 #---------------------------
+mmacheck:
+	sed -e "s/ /\t/g" mmacall.tmp | cut -f1,3 > $@.tmp

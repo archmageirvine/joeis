@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.util.Arrays;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 
 /**
  * An integer linear recurrence.
@@ -10,6 +11,9 @@ import irvine.math.z.Z;
  */
 public class LinearRecurrence implements Sequence {
 
+  private static final Z[] EMPTY = new Z[0];
+
+  private Z[] mPreTerms;
   private Z[] mPrev;
   private long[] mRecur;
   private int mN;
@@ -23,14 +27,13 @@ public class LinearRecurrence implements Sequence {
   /**
    * Construct the specified recurrence.
    * @param recurrence multipliers on the coefficients with the oldest term first
-   * @param preTerms terms occurring before the first term to generate
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
    */
-  public LinearRecurrence(final long[] recurrence, final long[] preTerms) {
-    checkLength(recurrence.length, preTerms.length);
-    mPrev = new Z[preTerms.length];
-    for (int k = 0; k < preTerms.length; ++k) {
-      mPrev[k] = Z.valueOf(preTerms[k]);
-    }
+  protected LinearRecurrence(final long[] recurrence, final Z[] terms, final Z... preTerms) {
+    checkLength(recurrence.length, terms.length);
+    mPreTerms = Arrays.copyOf(preTerms, preTerms.length);
+    mPrev = Arrays.copyOf(terms, terms.length);
     mRecur = Arrays.copyOf(recurrence, recurrence.length);
     mN = 0;
   }
@@ -38,19 +41,40 @@ public class LinearRecurrence implements Sequence {
   /**
    * Construct the specified recurrence.
    * @param recurrence multipliers on the coefficients with the oldest term first
-   * @param preTerms terms occurring before the first term to generate
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
    */
-  protected LinearRecurrence(final long[] recurrence, final Z[] preTerms) {
-    checkLength(recurrence.length, preTerms.length);
-    mPrev = Arrays.copyOf(preTerms, preTerms.length);
-    mRecur = Arrays.copyOf(recurrence, recurrence.length);
-    mN = 0;
+  public LinearRecurrence(final long[] recurrence, final long[] terms, final long... preTerms) {
+    this(recurrence, ZUtils.toZ(terms), ZUtils.toZ(preTerms));
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  public LinearRecurrence(final long[] recurrence, final long[] terms) {
+    this(recurrence, ZUtils.toZ(terms), EMPTY);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  protected LinearRecurrence(final long[] recurrence, final Z[] terms) {
+    this(recurrence, terms, EMPTY);
   }
 
   @Override
   public Z next() {
-    if (mN < mRecur.length) {
-      return mPrev[mN++];
+    if (mN < mPreTerms.length) {
+      return mPreTerms[mN++];
+    }
+    final int m = mN - mPreTerms.length;
+    if (m < mRecur.length) {
+      ++mN;
+      return mPrev[m];
     }
     Z t = Z.ZERO;
     for (int k = 0; k < mRecur.length; ++k) {

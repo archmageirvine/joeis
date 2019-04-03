@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.GZIPInputStream;
@@ -28,7 +29,7 @@ public final class Names {
     for (int k = 0; k < s.length(); ++k) {
       final char c = s.charAt(k);
       if (c > 127) {
-        sb.append("&#").append((int) c).append(";");
+        sb.append("&#").append((int) c).append(';');
       } else {
         sb.append(c);
       }
@@ -43,7 +44,7 @@ public final class Names {
     final ArrayList<String> names = new ArrayList<>();
     names.add(""); // 0th sequence not used
     try (final FileInputStream f = new FileInputStream(namesFile);
-         final BufferedReader reader = new BufferedReader(new InputStreamReader(namesFile.endsWith(".gz") ? new GZIPInputStream(f) : f, "utf-8"))) {
+         final BufferedReader reader = new BufferedReader(new InputStreamReader(namesFile.endsWith(".gz") ? new GZIPInputStream(f) : f, StandardCharsets.UTF_8))) {
       String line;
       while ((line = reader.readLine()) != null) {
         if (!line.isEmpty() && !line.startsWith("#")) {
@@ -78,7 +79,7 @@ public final class Names {
     }
     // Found a sequence, but the current name mismatches, replace it
     final int start = javaSource.indexOf(" * " + aNumber);
-    final int end = javaSource.indexOf("\n", start);
+    final int end = javaSource.indexOf('\n', start);
     if (start < 0 || end < 0) {
       System.out.println(sequenceFile + ": Couldn't determine where name goes, skipping");
       return;

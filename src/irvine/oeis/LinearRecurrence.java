@@ -53,7 +53,7 @@ public class LinearRecurrence implements Sequence {
    * @param recurrence multipliers on the coefficients with the oldest term first
    * @param terms initial terms of the recurrence
    */
-  public LinearRecurrence(final long[] recurrence, final long... terms) {
+  public LinearRecurrence(final long[] recurrence, final long[] terms) {
     this(recurrence, ZUtils.toZ(terms), EMPTY);
   }
 
@@ -62,7 +62,7 @@ public class LinearRecurrence implements Sequence {
    * @param recurrence multipliers on the coefficients with the oldest term first
    * @param terms initial terms of the recurrence
    */
-  protected LinearRecurrence(final long[] recurrence, final Z... terms) {
+  protected LinearRecurrence(final long[] recurrence, final Z[] terms) {
     this(recurrence, terms, EMPTY);
   }
 

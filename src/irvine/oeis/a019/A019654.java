@@ -25,10 +25,11 @@ public class A019654 implements Sequence {
   // Partially inspired by C code by Manfred Scheucher
   // todo make this its own class
 
-  // todo this is too slow to be much use ... a(8) not yet verified
+  // todo this is too slow to be much use ...
 
   private static final int QUEEN_BIT = 1 << 9; // first 8 bits used for directions
 
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mSize = 0;
   private int mExactAttack = 0;
   private long mMaximalQueens = 0;
@@ -165,11 +166,15 @@ public class A019654 implements Sequence {
           if (queen > mMaximalQueens) {
             mMaximalQueens = queen;
             mMaximalCount = 1;
-            System.out.println("Maximal queens now " + mMaximalQueens);
+            if (mVerbose) {
+              System.out.println("Maximal queens now " + mMaximalQueens);
+            }
           } else {
             ++mMaximalCount;
           }
-          System.out.println("Search: queens=" + queen + " pos=(" + x + "," + y + ") " + Arrays.toString(attacks) + " " + dump(attacks));
+          if (mVerbose) {
+            System.out.println("Search: queens=" + queen + " " + dump(attacks));
+          }
         }
       }
       return;
@@ -204,7 +209,9 @@ public class A019654 implements Sequence {
   }
 
   private long solve(final int n, final int attack) {
-    System.out.println("Solving for board size " + n);
+    if (mVerbose) {
+      System.out.println("Solving for board size " + n);
+    }
     mSize = n;
     mMaximalQueens = 1; // It could be argued that placing no queens is a solution -- but we avoid that here for consistency with the OEIS
     if (attack == 4 && n > 5) {
@@ -218,8 +225,6 @@ public class A019654 implements Sequence {
     search(new int[n * n], 0, 0, 0, n * n);
     return mMaximalCount;
   }
-
-
 
   private int mN = 2;
 

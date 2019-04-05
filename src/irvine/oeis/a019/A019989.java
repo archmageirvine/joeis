@@ -23,14 +23,16 @@ public class A019989 implements Sequence {
    */
 
   // todo not yet working -- should this be XOR? -- that doesn't work either
+  // also tried some combs of || and &&
+  // maybe big vars are supposed to be complements? -- nope -- or least not in a simple way, also not a(0)
 
 
   private final MemoryFunction1<Boolean> mA = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) ^ mBigB.get(m) ^ mBigC.get(m));
-      System.out.println(n + " " + res);
+      final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) || mBigB.get(m) || mBigC.get(m));
+      //System.out.println(n + " " + res);
       return res;
     }
   };
@@ -39,7 +41,7 @@ public class A019989 implements Sequence {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) ^ mBigA.get(m) ^ mBigC.get(m));
+      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigC.get(m));
     }
   };
 
@@ -47,7 +49,7 @@ public class A019989 implements Sequence {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) ^ mBigA.get(m) ^ mBigB.get(m));
+      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigB.get(m));
     }
   };
 
@@ -55,7 +57,7 @@ public class A019989 implements Sequence {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) ^ mB.get(m) ^ mC.get(m));
+      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mB.get(m) || mC.get(m));
     }
   };
 
@@ -63,7 +65,7 @@ public class A019989 implements Sequence {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) ^ mA.get(m) ^ mC.get(m));
+      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mC.get(m));
     }
   };
 
@@ -71,7 +73,7 @@ public class A019989 implements Sequence {
     @Override
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) ^ mA.get(m) ^ mB.get(m));
+      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mB.get(m));
     }
   };
 
@@ -80,9 +82,9 @@ public class A019989 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      System.out.println(mA.get(mN) + " " + mB.get(mN) + " " + mC.get(mN) + " " + mBigA.get(mN) + " " + mBigB.get(mN) + " " + mBigC.get(mN));
-      ++mN;
-      //mN += 2;
+      //System.out.println(mA.get(mN) + " " + mB.get(mN) + " " + mC.get(mN) + " " + mBigA.get(mN) + " " + mBigB.get(mN) + " " + mBigC.get(mN));
+      //++mN;
+      mN += 2;
       if (mA.get(mN)) {
         return Z.valueOf(mN / 2);
       }

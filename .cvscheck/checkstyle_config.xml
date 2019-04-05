@@ -86,7 +86,7 @@
         </module>
         <module name="ArrayTypeStyle"/>
         <module name="RegexpSinglelineJava">
-            <property name="format" value="^[^&quot;]+\s+\[\]"/>
+            <property name="format" value="^[^&quot;/\*]+\s+\[\]"/>
             <property name="message" value="Array brackets must not have preceeding spaces"/>
         </module>
         <module name="RegexpSinglelineJava">

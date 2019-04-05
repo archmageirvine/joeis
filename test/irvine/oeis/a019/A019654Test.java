@@ -1,7 +1,6 @@
 package irvine.oeis.a019;
 
 import irvine.oeis.AbstractSequenceTest;
-import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.

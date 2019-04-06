@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102358 Finite sequence of iterations at which Langton&apos;s Ant passes through the origin.
+ * A102358 Finite sequence of iterations at which Langton's Ant passes through the origin.
  * @author Georg Fischer
  */
 public class A102358 extends FiniteSequence {

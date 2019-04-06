@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145540 Number of numbers removed in each step of Eratosthenes&apos;s sieve for 10^4.
+ * A145540 Number of numbers removed in each step of Eratosthenes's sieve for 10^4.
  * @author Georg Fischer
  */
 public class A145540 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A209926 Concatenation of the months&apos; names, spelled in French, with &apos;a&apos;=1, ..., &apos;z&apos;=26 (ignoring accents).
+ * A209926 Concatenation of the months' names, spelled in French, with 'a'=1, ..., 'z'=26 (ignoring accents).
  * @author Georg Fischer
  */
 public class A209926 extends FiniteSequence {

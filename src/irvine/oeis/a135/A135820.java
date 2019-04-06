@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135820 Finite sequence of moves needed to flip the top uf, ub edges in a 3 X 3 X 3 Rubik&apos;s Cube.
+ * A135820 Finite sequence of moves needed to flip the top uf, ub edges in a 3 X 3 X 3 Rubik's Cube.
  * @author Georg Fischer
  */
 public class A135820 extends FiniteSequence {

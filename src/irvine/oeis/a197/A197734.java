@@ -3,7 +3,7 @@ package irvine.oeis.a197;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A197734 OFF cell numbers of a garden of Eden in Conway&apos;s Game of Life created by the method of successive approximations on a spiral with a choice of a state of each cell with the minimum quantity of parents.
+ * A197734 OFF cell numbers of a garden of Eden in Conway's Game of Life created by the method of successive approximations on a spiral with a choice of a state of each cell with the minimum quantity of parents.
  * @author Georg Fischer
  */
 public class A197734 extends FiniteSequence {

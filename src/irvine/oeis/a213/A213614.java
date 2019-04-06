@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A213614 Decimal expansion of the length of one light year in meters
+ * A213614 Decimal expansion of the length of one light year in meters.
  * @author Georg Fischer
  */
 public class A213614 extends FiniteSequence {

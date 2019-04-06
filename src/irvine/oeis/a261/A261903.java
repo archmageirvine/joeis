@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261903 Sequence found in Pablo Picasso&apos;s work &quot;Poème: Mathématiquement pure image illusoire du ronflement écoeurant ...&quot;
+ * A261903 Sequence found in Pablo Picasso's work "Po&#232;me: Math&#233;matiquement pure image illusoire du ronflement &#233;coeurant ...".
  * @author Georg Fischer
  */
 public class A261903 extends FiniteSequence {

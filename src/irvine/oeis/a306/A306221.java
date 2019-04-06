@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306221 The number of points awarded for a route of length n in the board game &quot;Ticket to Ride&quot;.
+ * A306221 The number of points awarded for a route of length n in the board game "Ticket to Ride".
  * @author Georg Fischer
  */
 public class A306221 extends FiniteSequence {

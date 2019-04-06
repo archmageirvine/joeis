@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166875 Numbers less than 100 that can&apos;t be obtained from 2, 4, 6, 8 using +, -, x and /.
+ * A166875 Numbers less than 100 that can't be obtained from 2, 4, 6, 8 using +, -, x and /.
  * @author Georg Fischer
  */
 public class A166875 extends FiniteSequence {

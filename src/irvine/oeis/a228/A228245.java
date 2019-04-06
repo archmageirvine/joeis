@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228245 The integers occurring in the song &quot;Ten green bottles&quot;.
+ * A228245 The integers occurring in the song "Ten green bottles".
  * @author Georg Fischer
  */
 public class A228245 extends FiniteSequence {

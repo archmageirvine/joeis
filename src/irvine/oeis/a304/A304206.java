@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A304206 Numbers from the &quot;octagonal theorem of sixty&quot;.
+ * A304206 Numbers from the "octagonal theorem of sixty".
  * @author Georg Fischer
  */
 public class A304206 extends FiniteSequence {

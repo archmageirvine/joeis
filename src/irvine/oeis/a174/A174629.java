@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174629 &quot;Binary dates&quot; take the dates with the format mm/dd/yy that have only 0&apos;s and 1&apos;s and transform their value to decimal base
+ * A174629 "Binary dates" take the dates with the format mm/dd/yy that have only 0's and 1's and transform their value to decimal base.
  * @author Georg Fischer
  */
 public class A174629 extends FiniteSequence {

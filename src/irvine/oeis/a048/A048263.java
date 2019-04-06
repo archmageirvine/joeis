@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048263 Numbers that aren&apos;t the sum of distinct primes of the form 4n+1.
+ * A048263 Numbers that aren't the sum of distinct primes of the form 4n+1.
  * @author Georg Fischer
  */
 public class A048263 extends FiniteSequence {

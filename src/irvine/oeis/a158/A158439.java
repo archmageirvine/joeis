@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158439 Numbers arising in Kane&apos;s conjecture on representing sets with sums of triangular numbers.
+ * A158439 Numbers arising in Kane's conjecture on representing sets with sums of triangular numbers.
  * @author Georg Fischer
  */
 public class A158439 extends FiniteSequence {

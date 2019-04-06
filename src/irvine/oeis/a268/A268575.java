@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A268575 The number of alive cells in Conway&apos;s Game of Life starting with the &quot;Die hard&quot; initial pattern.
+ * A268575 The number of alive cells in Conway's Game of Life starting with the "Die hard" initial pattern.
  * @author Georg Fischer
  */
 public class A268575 extends FiniteSequence {

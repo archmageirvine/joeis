@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229076 Euler&apos;s fearsome foursome.
+ * A229076 Euler's fearsome foursome.
  * @author Georg Fischer
  */
 public class A229076 extends FiniteSequence {

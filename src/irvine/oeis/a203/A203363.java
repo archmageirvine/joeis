@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A203363 Denominators of Conway&apos;s PRIMEGAME.
+ * A203363 Denominators of Conway's PRIMEGAME.
  * @author Georg Fischer
  */
 public class A203363 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171252 Least power of 2 to have at least n consecutive digits &apos;n&apos; in its decimal expansion
+ * A171252 Least power of 2 to have at least n consecutive digits 'n' in its decimal expansion.
  * @author Georg Fischer
  */
 public class A171252 extends FiniteSequence {

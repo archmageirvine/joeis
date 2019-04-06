@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278829 Pawn&apos;s moves in chess: possible difference between origin and destination square when the squares are numbered sequentially row by row.
+ * A278829 Pawn's moves in chess: possible difference between origin and destination square when the squares are numbered sequentially row by row.
  * @author Georg Fischer
  */
 public class A278829 extends FiniteSequence {

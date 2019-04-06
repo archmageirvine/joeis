@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323215 Numbers k such that row k of A322936 is not empty and has only primes as members.
+ * A323215 allocated for Peter Luschny.
  * @author Georg Fischer
  */
 public class A323215 extends FiniteSequence {

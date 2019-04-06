@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.oeis.a151.A151537;
 
 /**
- * A019988.
+ * A019988 Number of ways of embedding a connected graph with n edges in the square lattice.
  * @author Sean A. Irvine
  */
 public class A019988 extends A151537 {

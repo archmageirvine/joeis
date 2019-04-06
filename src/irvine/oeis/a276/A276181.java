@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276181 Fricke&apos;s 37 cases for two-valued modular equations.
+ * A276181 Fricke's 37 cases for two-valued modular equations.
  * @author Georg Fischer
  */
 public class A276181 extends FiniteSequence {

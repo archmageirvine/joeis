@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A096267.
+ * A096267 Number of fixed polyedges with n edges (number of ways of embedding connected undirected graphs with n edges into the plane square lattice, inequivalent up to translation).
  * @author Sean A. Irvine
  */
 public class A096267 implements Sequence {

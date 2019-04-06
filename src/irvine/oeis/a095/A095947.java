@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095947 Numbers whose name in English contains only the vowel &quot;e&quot;.
+ * A095947 Numbers whose name in English contains only the vowel "e".
  * @author Georg Fischer
  */
 public class A095947 extends FiniteSequence {

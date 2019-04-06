@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135375 Smallest prime made up of strings of all first n digits concatenated in ascending order and sandwiched between two 1&apos;s.
+ * A135375 Smallest prime made up of strings of all first n digits concatenated in ascending order and sandwiched between two 1's.
  * @author Georg Fischer
  */
 public class A135375 extends FiniteSequence {

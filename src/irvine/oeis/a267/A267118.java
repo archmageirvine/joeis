@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267118 Lee Sallows&apos;s 3 X 3 semimagic square of squares, read by rows.
+ * A267118 Lee Sallows's 3 X 3 semimagic square of squares, read by rows.
  * @author Georg Fischer
  */
 public class A267118 extends FiniteSequence {

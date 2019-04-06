@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A070308 &quot;Canada perfect numbers&quot;: n such that the sum of digits^2 of n equals the sum of d|n, 1&lt;d&lt;n.
+ * A070308 "Canada perfect numbers": n such that the sum of digits^2 of n equals the sum of d|n, 1&lt;d&lt;n.
  * @author Georg Fischer
  */
 public class A070308 extends FiniteSequence {

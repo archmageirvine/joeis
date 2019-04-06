@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A191299 List of integers in Pynchon&apos;s &quot;Gravity&apos;s Rainbow&quot;
+ * A191299 List of integers in Pynchon's "Gravity's Rainbow".
  * @author Georg Fischer
  */
 public class A191299 extends FiniteSequence {

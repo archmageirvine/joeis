@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306304 Least number m such that A323835(m) = n
+ * A306304 Least number m such that A323835(m) = n.
  * @author Georg Fischer
  */
 public class A306304 extends FiniteSequence {

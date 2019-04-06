@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064172 Koechel numbers of Mozart&apos;s piano concerti, from the original Koechel catalog.
+ * A064172 Koechel numbers of Mozart's piano concerti, from the original Koechel catalog.
  * @author Georg Fischer
  */
 public class A064172 extends FiniteSequence {

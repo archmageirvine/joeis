@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244047 Maximal nonempty {1,3}-chunks of a 4-day-old string in a &quot;Look and Say&quot; sequence.
+ * A244047 Maximal nonempty {1,3}-chunks of a 4-day-old string in a "Look and Say" sequence.
  * @author Georg Fischer
  */
 public class A244047 extends FiniteSequence {

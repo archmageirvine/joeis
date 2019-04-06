@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154363 Numbers from Bhargava&apos;s prime-universality criterion theorem
+ * A154363 Numbers from Bhargava's prime-universality criterion theorem.
  * @author Georg Fischer
  */
 public class A154363 extends FiniteSequence {

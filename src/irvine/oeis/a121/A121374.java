@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A121374 Code appearing at the end of the book &quot;Digital Fortress&quot; by Dan Brown.
+ * A121374 Code appearing at the end of the book "Digital Fortress" by Dan Brown.
  * @author Georg Fischer
  */
 public class A121374 extends FiniteSequence {

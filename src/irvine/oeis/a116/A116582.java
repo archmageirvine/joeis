@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A116582 Numbers from Bhargava&apos;s 33 theorem.
+ * A116582 Numbers from Bhargava's 33 theorem.
  * @author Georg Fischer
  */
 public class A116582 extends FiniteSequence {

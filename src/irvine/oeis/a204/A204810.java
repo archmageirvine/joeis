@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204810 Langton&apos;s ant, symmetrical pattern
+ * A204810 Langton's ant, symmetrical pattern.
  * @author Georg Fischer
  */
 public class A204810 extends FiniteSequence {

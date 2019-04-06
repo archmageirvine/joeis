@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A209925 ASCII encoded concatenation of the months&apos; names, spelled in English.
+ * A209925 ASCII encoded concatenation of the months' names, spelled in English.
  * @author Georg Fischer
  */
 public class A209925 extends FiniteSequence {

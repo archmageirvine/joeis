@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141589 Frenicle&apos;s 6 X 6 square read by rows: contains numbers 1 to 24 and 12 symmetric spaces (here represented by 0&apos;s).
+ * A141589 Frenicle's 6 X 6 square read by rows: contains numbers 1 to 24 and 12 symmetric spaces (here represented by 0's).
  * @author Georg Fischer
  */
 public class A141589 extends FiniteSequence {

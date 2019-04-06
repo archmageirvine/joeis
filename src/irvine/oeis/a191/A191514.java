@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A191514 Lehrer&apos;s elementary sequence.
+ * A191514 Lehrer's elementary sequence.
  * @author Georg Fischer
  */
 public class A191514 extends FiniteSequence {

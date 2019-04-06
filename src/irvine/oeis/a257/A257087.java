@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A257087 Based on &quot;Cheryl&apos;s Birthday&quot; problem.
+ * A257087 Based on "Cheryl's Birthday" problem.
  * @author Georg Fischer
  */
 public class A257087 extends FiniteSequence {

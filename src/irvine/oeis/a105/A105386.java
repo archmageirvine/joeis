@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105386 Morse code alphabet where &quot;.&quot; = 0 and &quot;-&quot; = 1.
+ * A105386 Morse code alphabet where "." = 0 and "-" = 1.
  * @author Georg Fischer
  */
 public class A105386 extends FiniteSequence {

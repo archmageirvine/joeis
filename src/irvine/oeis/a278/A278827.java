@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278827 Queen&apos;s moves in chess: possible difference between origin and destination square when the squares are numbered sequentially, row by row.
+ * A278827 Queen's moves in chess: possible difference between origin and destination square when the squares are numbered sequentially, row by row.
  * @author Georg Fischer
  */
 public class A278827 extends FiniteSequence {

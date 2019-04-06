@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108376 First &quot;domino&quot; sequence.
+ * A108376 First "domino" sequence.
  * @author Georg Fischer
  */
 public class A108376 extends FiniteSequence {

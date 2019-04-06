@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217281 Prime numbers on the front cover of the paperback editions of Marcus du Sautoy&apos;s book The Music of the Primes.
+ * A217281 Prime numbers on the front cover of the paperback editions of Marcus du Sautoy's book The Music of the Primes.
  * @author Georg Fischer
  */
 public class A217281 extends FiniteSequence {

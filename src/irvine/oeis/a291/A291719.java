@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A291719 Numbers occurring in Ezra Ehrenkrantz&apos;s &quot;Modular Coordination System&quot;.
+ * A291719 Numbers occurring in Ezra Ehrenkrantz's "Modular Coordination System".
  * @author Georg Fischer
  */
 public class A291719 extends FiniteSequence {

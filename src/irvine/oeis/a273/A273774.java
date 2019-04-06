@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A273774 Decimal expansion of Jevon&apos;s number.
+ * A273774 Decimal expansion of Jevon's number.
  * @author Georg Fischer
  */
 public class A273774 extends FiniteSequence {

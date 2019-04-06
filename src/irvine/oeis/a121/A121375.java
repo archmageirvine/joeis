@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A121375 Code appearing at the end of &quot;Het Juvenalis Dilemma&quot; (Dutch translation of &quot;Digital Fortress&quot;) by Dan Brown.
+ * A121375 Code appearing at the end of "Het Juvenalis Dilemma" (Dutch translation of "Digital Fortress") by Dan Brown.
  * @author Georg Fischer
  */
 public class A121375 extends FiniteSequence {

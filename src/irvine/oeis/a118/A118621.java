@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118621 All integers between one and one hundred with &apos;n&apos; in their English names.
+ * A118621 All integers between one and one hundred with 'n' in their English names.
  * @author Georg Fischer
  */
 public class A118621 extends FiniteSequence {

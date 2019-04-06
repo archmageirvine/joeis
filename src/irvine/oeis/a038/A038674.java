@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A038674 A finite series from the lyrics of La Farolera, a Latin American traditional children&apos;s song.
+ * A038674 A finite series from the lyrics of La Farolera, a Latin American traditional children's song.
  * @author Georg Fischer
  */
 public class A038674 extends FiniteSequence {

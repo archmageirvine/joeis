@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A264386 Gergonne&apos;s 27-card trick with three piles: finding a card after three dealings with pile information.
+ * A264386 Gergonne's 27-card trick with three piles: finding a card after three dealings with pile information.
  * @author Georg Fischer
  */
 public class A264386 extends FiniteSequence {

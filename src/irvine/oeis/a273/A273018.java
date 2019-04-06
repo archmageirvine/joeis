@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A273018 Ramanujan&apos;s largely composite numbers having 7 as the greatest prime divisor.
+ * A273018 Ramanujan's largely composite numbers having 7 as the greatest prime divisor.
  * @author Georg Fischer
  */
 public class A273018 extends FiniteSequence {

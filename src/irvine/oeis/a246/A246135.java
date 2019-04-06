@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A246135 Primes that are palindromic right angle numbers in base 9
+ * A246135 Primes that are palindromic right angle numbers in base 9.
  * @author Georg Fischer
  */
 public class A246135 extends FiniteSequence {

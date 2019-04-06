@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A066354 Number of hands that peg n points in the &quot;show&quot; phase of 6-card cribbage.
+ * A066354 Number of hands that peg n points in the "show" phase of 6-card cribbage.
  * @author Georg Fischer
  */
 public class A066354 extends FiniteSequence {

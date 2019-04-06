@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A286898 ASCII codes of letter keys by rows on standard U.S. &quot;QWERTY&quot; keyboard.
+ * A286898 ASCII codes of letter keys by rows on standard U.S. "QWERTY" keyboard.
  * @author Georg Fischer
  */
 public class A286898 extends FiniteSequence {

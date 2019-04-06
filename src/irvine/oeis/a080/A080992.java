@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080992 Entries in Durer&apos;s magic square.
+ * A080992 Entries in Durer's magic square.
  * @author Georg Fischer
  */
 public class A080992 extends FiniteSequence {

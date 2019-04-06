@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181708 Numbers of faces of polyhedra made entirely of regular polygons that are not prisms or antiprisms
+ * A181708 Numbers of faces of polyhedra made entirely of regular polygons that are not prisms or antiprisms.
  * @author Georg Fischer
  */
 public class A181708 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145534 a(n) is the number of numbers removed in each step of Eratosthenes&apos;s sieve for 7!.
+ * A145534 a(n) is the number of numbers removed in each step of Eratosthenes's sieve for 7!.
  * @author Georg Fischer
  */
 public class A145534 extends FiniteSequence {

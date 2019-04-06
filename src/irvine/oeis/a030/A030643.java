@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030643 Map 1 to A, 2 to B, ... 26 to Z and 0 to space and the sequence reads: &quot;NUMBER SERIES&quot;.
+ * A030643 Map 1 to A, 2 to B, ... 26 to Z and 0 to space and the sequence reads: "NUMBER SERIES".
  * @author Georg Fischer
  */
 public class A030643 extends FiniteSequence {

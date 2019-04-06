@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105178 Digits in order in which they appear in decimal expansion of e
+ * A105178 Digits in order in which they appear in decimal expansion of e.
  * @author Georg Fischer
  */
 public class A105178 extends FiniteSequence {

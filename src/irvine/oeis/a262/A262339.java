@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A262339 Exceptional primes for Ramanujan&apos;s tau function.
+ * A262339 Exceptional primes for Ramanujan's tau function.
  * @author Georg Fischer
  */
 public class A262339 extends FiniteSequence {

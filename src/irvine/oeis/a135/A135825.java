@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135825 Moves to permute (ufl,ubr)(dfr,dbl) corners in a 3 X 3 X 3 Rubik&apos;s Cube.
+ * A135825 Moves to permute (ufl,ubr)(dfr,dbl) corners in a 3 X 3 X 3 Rubik's Cube.
  * @author Georg Fischer
  */
 public class A135825 extends FiniteSequence {

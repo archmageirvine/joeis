@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A291714 2520 * preferred ratios of room height / length in Alberti&apos;s Ten Books on Architecture.
+ * A291714 2520 * preferred ratios of room height / length in Alberti's Ten Books on Architecture.
  * @author Georg Fischer
  */
 public class A291714 extends FiniteSequence {

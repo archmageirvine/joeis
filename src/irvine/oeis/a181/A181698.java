@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181698 Font point sizes under Mac OS Classic
+ * A181698 Font point sizes under Mac OS Classic.
  * @author Georg Fischer
  */
 public class A181698 extends FiniteSequence {

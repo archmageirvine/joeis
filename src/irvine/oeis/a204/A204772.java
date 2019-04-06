@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204772 &quot;Fairly optimal&quot; shellsort sequence for reverse-sorting an ascending sequence of size N=128.
+ * A204772 "Fairly optimal" shellsort sequence for reverse-sorting an ascending sequence of size N=128.
  * @author Georg Fischer
  */
 public class A204772 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185126 A spider&apos;s web: Chronological order of 27 rays in a triangle.
+ * A185126 A spider's web: Chronological order of 27 rays in a triangle.
  * @author Georg Fischer
  */
 public class A185126 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227410 Palindromic prime numbers representing a date in &quot;condensed American notation&quot; MMDDYY.
+ * A227410 Palindromic prime numbers representing a date in "condensed American notation" MMDDYY.
  * @author Georg Fischer
  */
 public class A227410 extends FiniteSequence {

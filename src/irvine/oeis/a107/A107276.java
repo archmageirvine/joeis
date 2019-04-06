@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107276 Vertically symmetrical dates DDMMYY (&quot;condensed European notation&quot;) considered as numbers, in increasing order.
+ * A107276 Vertically symmetrical dates DDMMYY ("condensed European notation") considered as numbers, in increasing order.
  * @author Georg Fischer
  */
 public class A107276 extends FiniteSequence {

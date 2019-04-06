@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202138 Numerators of Conway&apos;s PRIMEGAME.
+ * A202138 Numerators of Conway's PRIMEGAME.
  * @author Georg Fischer
  */
 public class A202138 extends FiniteSequence {

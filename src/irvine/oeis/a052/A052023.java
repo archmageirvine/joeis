@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A052023 Every suffix of palindromic prime a(n), containing no &apos;0&apos; digit, is prime (left-truncatable palindromic primes).
+ * A052023 Every suffix of palindromic prime a(n), containing no '0' digit, is prime (left-truncatable palindromic primes).
  * @author Georg Fischer
  */
 public class A052023 extends FiniteSequence {

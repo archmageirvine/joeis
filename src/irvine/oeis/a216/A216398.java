@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A216398 For digit n from 1 to 9, a(n) = the sum of all numbers m such that m is equal to the number of n&apos;s in the decimal digits of all numbers &lt;= m.
+ * A216398 For digit n from 1 to 9, a(n) = the sum of all numbers m such that m is equal to the number of n's in the decimal digits of all numbers &lt;= m.
  * @author Georg Fischer
  */
 public class A216398 extends FiniteSequence {

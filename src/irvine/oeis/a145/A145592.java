@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145592 a(n)=number of numbers removed in each step of Eratosthenes&apos; sieve for 2^14.
+ * A145592 a(n)=number of numbers removed in each step of Eratosthenes' sieve for 2^14.
  * @author Georg Fischer
  */
 public class A145592 extends FiniteSequence {

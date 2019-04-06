@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109461 Mersenne&apos;s original list of &quot;Mersenne&quot; exponents.
+ * A109461 Mersenne's original list of "Mersenne" exponents.
  * @author Georg Fischer
  */
 public class A109461 extends FiniteSequence {

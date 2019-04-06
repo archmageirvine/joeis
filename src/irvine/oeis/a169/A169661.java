@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169661 Compact factorials of positive integers
+ * A169661 Compact factorials of positive integers.
  * @author Georg Fischer
  */
 public class A169661 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A245837 (0,1)-sequence forming an 10 X 14 rectangle, read by rows, from an illustration (&quot;Barcode Flag&quot;) by Christian Tönsmann, art director of Süddeutsche Zeitung.
+ * A245837 (0,1)-sequence forming an 10 X 14 rectangle, read by rows, from an illustration ("Barcode Flag") by Christian T&#246;nsmann, art director of S&#252;ddeutsche Zeitung.
  * @author Georg Fischer
  */
 public class A245837 extends FiniteSequence {

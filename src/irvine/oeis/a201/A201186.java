@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A201186 Incorrect list of perfect numbers from Robert Recorde&apos;s Whetstone of Witte.
+ * A201186 Incorrect list of perfect numbers from Robert Recorde's Whetstone of Witte.
  * @author Georg Fischer
  */
 public class A201186 extends FiniteSequence {

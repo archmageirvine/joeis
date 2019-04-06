@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102167 Lightest finite strictly increasing sequence of integers showing once and only once every pair of digits from [00] to [99]. The &quot;weight&quot; of such a sequence is the sum of all its a(n). Weight of this sequence is 2995.
+ * A102167 Lightest finite strictly increasing sequence of integers showing once and only once every pair of digits from [00] to [99]. The "weight" of such a sequence is the sum of all its a(n). Weight of this sequence is 2995.
  * @author Georg Fischer
  */
 public class A102167 extends FiniteSequence {

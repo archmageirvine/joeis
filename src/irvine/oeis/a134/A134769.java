@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134769 Koechel numbers of Mozart&apos;s string quartets
+ * A134769 Koechel numbers of Mozart's string quartets.
  * @author Georg Fischer
  */
 public class A134769 extends FiniteSequence {

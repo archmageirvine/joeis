@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134982 Number of elements in the n-th column of Medeleiev&apos;s periodic system of elements.
+ * A134982 Number of elements in the n-th column of Medeleiev's periodic system of elements.
  * @author Georg Fischer
  */
 public class A134982 extends FiniteSequence {

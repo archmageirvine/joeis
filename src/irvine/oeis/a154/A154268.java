@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154268 Ratios of consecutive denominators of Stirling&apos;s expansion for the Gamma function.
+ * A154268 Ratios of consecutive denominators of Stirling's expansion for the Gamma function.
  * @author Georg Fischer
  */
 public class A154268 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027885 Leporello&apos;s &apos;Register-Aria&apos; from Mozart&apos;s &apos;Don Giovanni&apos;.
+ * A027885 Leporello's 'Register-Aria' from Mozart's 'Don Giovanni'.
  * @author Georg Fischer
  */
 public class A027885 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167233 Prime anagrams of 12345769
+ * A167233 Prime anagrams of 12345769.
  * @author Georg Fischer
  */
 public class A167233 extends FiniteSequence {

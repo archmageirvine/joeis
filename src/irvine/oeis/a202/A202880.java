@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202880 Michael Stifel&apos;s 9 X 9 magic square read by rows.
+ * A202880 Michael Stifel's 9 X 9 magic square read by rows.
  * @author Georg Fischer
  */
 public class A202880 extends FiniteSequence {

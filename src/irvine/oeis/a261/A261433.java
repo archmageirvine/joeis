@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261433 k-digit integers equal to the sum of the k-th powers of the tens&apos; complements of their digits.
+ * A261433 k-digit integers equal to the sum of the k-th powers of the tens' complements of their digits.
  * @author Georg Fischer
  */
 public class A261433 extends FiniteSequence {

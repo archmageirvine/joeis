@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168263 For any m &lt; n, and for all values of k, d(n^k) &gt; d(m^k). (Let k, m, and n represent positive integers only.)
+ * A168263 For any m &lt; n, and for all values of k, d(n^k) &gt; d(m^k). (Let k, m, and n represent positive integers only.).
  * @author Georg Fischer
  */
 public class A168263 extends FiniteSequence {

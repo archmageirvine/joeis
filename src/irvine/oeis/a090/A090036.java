@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A090036 Number of configurations of the 5 X 2 variant of Sam Loyd&apos;s sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.
+ * A090036 Number of configurations of the 5 X 2 variant of Sam Loyd's sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.
  * @author Georg Fischer
  */
 public class A090036 extends FiniteSequence {

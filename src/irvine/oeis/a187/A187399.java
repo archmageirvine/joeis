@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187399 A puzzle called &quot;The hidden prime&quot;.
+ * A187399 A puzzle called "The hidden prime".
  * @author Georg Fischer
  */
 public class A187399 extends FiniteSequence {

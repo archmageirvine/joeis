@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103320 Condensed Golomb sequence: digits according to Golomb&apos;s sequence, same digits concatenated.
+ * A103320 Condensed Golomb sequence: digits according to Golomb's sequence, same digits concatenated.
  * @author Georg Fischer
  */
 public class A103320 extends FiniteSequence {

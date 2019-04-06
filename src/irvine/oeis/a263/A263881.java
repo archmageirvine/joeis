@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A263881 Numbers k such that k! is a &quot;compact factorial&quot;, i.e., k! is in A169661.
+ * A263881 Numbers k such that k! is a "compact factorial", i.e., k! is in A169661.
  * @author Georg Fischer
  */
 public class A263881 extends FiniteSequence {

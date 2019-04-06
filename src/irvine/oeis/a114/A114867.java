@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114867 Ages mentioned in the hit song &quot;100 years&quot; by &quot;Five for Fighting&quot;.
+ * A114867 Ages mentioned in the hit song "100 years" by "Five for Fighting".
  * @author Georg Fischer
  */
 public class A114867 extends FiniteSequence {

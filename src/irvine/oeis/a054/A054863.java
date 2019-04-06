@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A054863 Dice markers in the board game &quot;The Settlers of Catan&quot;. There are a total of 18 markers, whose backs are assigned letters from A to R and whose fronts are assigned these numbers.
+ * A054863 Dice markers in the board game "The Settlers of Catan". There are a total of 18 markers, whose backs are assigned letters from A to R and whose fronts are assigned these numbers.
  * @author Georg Fischer
  */
 public class A054863 extends FiniteSequence {

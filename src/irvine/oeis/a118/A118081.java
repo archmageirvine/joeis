@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118081 Even numbers that can&apos;t be represented as the sum of two odd composite numbers.
+ * A118081 Even numbers that can't be represented as the sum of two odd composite numbers.
  * @author Georg Fischer
  */
 public class A118081 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321009 a(1)=2; thereafter a(n) is obtained by applying Eric Agelini&apos;s remove-repeated-digits map, x-&gt;A320486(x), to n*a(n-1), stopping when 0 is reached.
+ * A321009 a(1)=2; thereafter a(n) is obtained by applying Eric Agelini's remove-repeated-digits map, x-&gt;A320486(x), to n*a(n-1), stopping when 0 is reached.
  * @author Georg Fischer
  */
 public class A321009 extends FiniteSequence {

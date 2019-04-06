@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162951 a(1)=0. a(n) is the smallest integer &gt; a(n-1) such that both a(n) and a(n)-a(n-1) have the same number of 1&apos;s when written in binary as n has when it is written in binary.
+ * A162951 a(1)=0. a(n) is the smallest integer &gt; a(n-1) such that both a(n) and a(n)-a(n-1) have the same number of 1's when written in binary as n has when it is written in binary.
  * @author Georg Fischer
  */
 public class A162951 extends FiniteSequence {

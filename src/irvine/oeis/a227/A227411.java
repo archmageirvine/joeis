@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227411 Palindromic prime numbers representing a date in &quot;condensed European notation&quot; DDMMYY.
+ * A227411 Palindromic prime numbers representing a date in "condensed European notation" DDMMYY.
  * @author Georg Fischer
  */
 public class A227411 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019989.
+ * A019989 A threequence, a 3-way partitioning of the integers: define a,b,c,A,B,C by a(0)=true, b(0)=c(0)=A(0)=B(0)=C(0)=false, a(n)=a(m) OR C(m) OR B(m), b(n)= b(m) OR A(m) OR C(m), c(n)= c(m) OR B(m) OR A(m), A(n)= A(m) OR b(m) OR c(m), B(n)= B(m) OR c(m) OR a(m), C(n)= C(m) OR a(m) OR b(m), where m = [ (n+1)/3 ]; sequence gives n such that a(2n) is true.
  * @author Sean A. Irvine
  */
 public class A019989 implements Sequence {

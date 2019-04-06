@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A111313 Character codes of the string &quot;The On-Line Encyclopedia of Integer Sequences&quot;.
+ * A111313 Character codes of the string "The On-Line Encyclopedia of Integer Sequences".
  * @author Georg Fischer
  */
 public class A111313 extends FiniteSequence {

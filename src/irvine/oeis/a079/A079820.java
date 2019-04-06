@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079820 Number of positions that are exactly n moves from the starting position in the Rubik&apos;s UFO puzzle.
+ * A079820 Number of positions that are exactly n moves from the starting position in the Rubik's UFO puzzle.
  * @author Georg Fischer
  */
 public class A079820 extends FiniteSequence {

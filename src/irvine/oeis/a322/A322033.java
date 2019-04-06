@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322033 Numbers which when written in German do not contain the letter &quot;e&quot;.
+ * A322033 Numbers which when written in German do not contain the letter "e".
  * @author Georg Fischer
  */
 public class A322033 extends FiniteSequence {

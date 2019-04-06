@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A117845 &quot;hello, world&quot; characters encoded in ASCII.
+ * A117845 "hello, world" characters encoded in ASCII.
  * @author Georg Fischer
  */
 public class A117845 extends FiniteSequence {

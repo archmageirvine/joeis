@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102362 This finite sequence describes itself completely: there is 1 &quot;0&quot; in it, 1 &quot;3&quot;, 1 &quot;4&quot;, ..., 2 &quot;2&quot; and 11 &quot;1&quot;.
+ * A102362 This finite sequence describes itself completely: there is 1 "0" in it, 1 "3", 1 "4", ..., 2 "2" and 11 "1".
  * @author Georg Fischer
  */
 public class A102362 extends FiniteSequence {

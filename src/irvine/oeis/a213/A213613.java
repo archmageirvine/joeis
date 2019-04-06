@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A213613 Decimal expansion of the duration of the Gregorian year in SI seconds
+ * A213613 Decimal expansion of the duration of the Gregorian year in SI seconds.
  * @author Georg Fischer
  */
 public class A213613 extends FiniteSequence {

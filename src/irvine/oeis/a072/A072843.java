@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072843 O&apos;Halloran numbers: even integers which cannot be the surface area of a cuboid with integer-length sides.
+ * A072843 O'Halloran numbers: even integers which cannot be the surface area of a cuboid with integer-length sides.
  * @author Georg Fischer
  */
 public class A072843 extends FiniteSequence {

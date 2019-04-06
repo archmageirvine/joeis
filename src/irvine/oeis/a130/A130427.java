@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130427 Complete list of all 5 numbers n such that n is equal to the number of 5&apos;s in the decimal digits of all numbers &lt;= n.
+ * A130427 Complete list of all 5 numbers n such that n is equal to the number of 5's in the decimal digits of all numbers &lt;= n.
  * @author Georg Fischer
  */
 public class A130427 extends FiniteSequence {

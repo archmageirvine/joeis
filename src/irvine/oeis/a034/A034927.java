@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034927 Number of letters in &quot;What is the next number in this sequence?&quot;.
+ * A034927 Number of letters in "What is the next number in this sequence?".
  * @author Georg Fischer
  */
 public class A034927 extends FiniteSequence {

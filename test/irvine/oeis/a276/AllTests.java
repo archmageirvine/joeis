@@ -20,10 +20,16 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A276061Test.class);
     suite.addTestSuite(A276063Test.class);
     suite.addTestSuite(A276065Test.class);
+    suite.addTestSuite(A276069Test.class);
     suite.addTestSuite(A276071Test.class);
     suite.addTestSuite(A276106Test.class);
     suite.addTestSuite(A276123Test.class);
     suite.addTestSuite(A276159Test.class);
+    suite.addTestSuite(A276181Test.class);
+    suite.addTestSuite(A276182Test.class);
+    suite.addTestSuite(A276184Test.class);
+    suite.addTestSuite(A276185Test.class);
+    suite.addTestSuite(A276186Test.class);
     suite.addTestSuite(A276225Test.class);
     suite.addTestSuite(A276226Test.class);
     suite.addTestSuite(A276228Test.class);
@@ -39,20 +45,25 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A276382Test.class);
     suite.addTestSuite(A276394Test.class);
     suite.addTestSuite(A276403Test.class);
+    suite.addTestSuite(A276465Test.class);
     suite.addTestSuite(A276477Test.class);
     suite.addTestSuite(A276508Test.class);
+    suite.addTestSuite(A276514Test.class);
+    suite.addTestSuite(A276522Test.class);
     suite.addTestSuite(A276529Test.class);
     suite.addTestSuite(A276598Test.class);
     suite.addTestSuite(A276599Test.class);
     suite.addTestSuite(A276600Test.class);
     suite.addTestSuite(A276601Test.class);
     suite.addTestSuite(A276602Test.class);
+    suite.addTestSuite(A276643Test.class);
     suite.addTestSuite(A276644Test.class);
     suite.addTestSuite(A276647Test.class);
     suite.addTestSuite(A276658Test.class);
     suite.addTestSuite(A276659Test.class);
     suite.addTestSuite(A276670Test.class);
     suite.addTestSuite(A276677Test.class);
+    suite.addTestSuite(A276734Test.class);
     suite.addTestSuite(A276764Test.class);
     suite.addTestSuite(A276805Test.class);
     suite.addTestSuite(A276819Test.class);
@@ -63,6 +74,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A276916Test.class);
     suite.addTestSuite(A276917Test.class);
     suite.addTestSuite(A276918Test.class);
+    suite.addTestSuite(A276973Test.class);
     return suite;
   }
 

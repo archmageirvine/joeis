@@ -11,6 +11,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A199014Test.class);
     suite.addTestSuite(A199018Test.class);
     suite.addTestSuite(A199019Test.class);
     suite.addTestSuite(A199020Test.class);
@@ -95,6 +96,9 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A199492Test.class);
     suite.addTestSuite(A199493Test.class);
     suite.addTestSuite(A199494Test.class);
+    suite.addTestSuite(A199545Test.class);
+    suite.addTestSuite(A199546Test.class);
+    suite.addTestSuite(A199549Test.class);
     suite.addTestSuite(A199552Test.class);
     suite.addTestSuite(A199553Test.class);
     suite.addTestSuite(A199554Test.class);
@@ -115,6 +119,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A199579Test.class);
     suite.addTestSuite(A199594Test.class);
     suite.addTestSuite(A199626Test.class);
+    suite.addTestSuite(A199632Test.class);
+    suite.addTestSuite(A199633Test.class);
     suite.addTestSuite(A199677Test.class);
     suite.addTestSuite(A199678Test.class);
     suite.addTestSuite(A199679Test.class);
@@ -131,6 +137,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A199690Test.class);
     suite.addTestSuite(A199691Test.class);
     suite.addTestSuite(A199710Test.class);
+    suite.addTestSuite(A199743Test.class);
     suite.addTestSuite(A199744Test.class);
     suite.addTestSuite(A199750Test.class);
     suite.addTestSuite(A199751Test.class);
@@ -155,6 +162,10 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A199802Test.class);
     suite.addTestSuite(A199803Test.class);
     suite.addTestSuite(A199804Test.class);
+    suite.addTestSuite(A199807Test.class);
+    suite.addTestSuite(A199808Test.class);
+    suite.addTestSuite(A199810Test.class);
+    suite.addTestSuite(A199811Test.class);
     suite.addTestSuite(A199925Test.class);
     suite.addTestSuite(A199927Test.class);
     suite.addTestSuite(A199928Test.class);

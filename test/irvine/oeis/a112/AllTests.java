@@ -12,24 +12,30 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A112014Test.class);
+    suite.addTestSuite(A112024Test.class);
     suite.addTestSuite(A112027Test.class);
     suite.addTestSuite(A112030Test.class);
     suite.addTestSuite(A112031Test.class);
     suite.addTestSuite(A112032Test.class);
     suite.addTestSuite(A112033Test.class);
     suite.addTestSuite(A112087Test.class);
+    suite.addTestSuite(A112090Test.class);
     suite.addTestSuite(A112091Test.class);
     suite.addTestSuite(A112132Test.class);
+    suite.addTestSuite(A112140Test.class);
     suite.addTestSuite(A112148Test.class);
     suite.addTestSuite(A112260Test.class);
     suite.addTestSuite(A112299Test.class);
     suite.addTestSuite(A112335Test.class);
+    suite.addTestSuite(A112402Test.class);
     suite.addTestSuite(A112414Test.class);
     suite.addTestSuite(A112415Test.class);
     suite.addTestSuite(A112421Test.class);
     suite.addTestSuite(A112422Test.class);
     suite.addTestSuite(A112423Test.class);
     suite.addTestSuite(A112447Test.class);
+    suite.addTestSuite(A112454Test.class);
     suite.addTestSuite(A112455Test.class);
     suite.addTestSuite(A112469Test.class);
     suite.addTestSuite(A112476Test.class);
@@ -37,6 +43,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A112495Test.class);
     suite.addTestSuite(A112496Test.class);
     suite.addTestSuite(A112497Test.class);
+    suite.addTestSuite(A112506Test.class);
+    suite.addTestSuite(A112507Test.class);
     suite.addTestSuite(A112524Test.class);
     suite.addTestSuite(A112525Test.class);
     suite.addTestSuite(A112534Test.class);
@@ -44,19 +52,26 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A112575Test.class);
     suite.addTestSuite(A112576Test.class);
     suite.addTestSuite(A112577Test.class);
+    suite.addTestSuite(A112587Test.class);
     suite.addTestSuite(A112627Test.class);
+    suite.addTestSuite(A112641Test.class);
     suite.addTestSuite(A112651Test.class);
     suite.addTestSuite(A112652Test.class);
     suite.addTestSuite(A112653Test.class);
     suite.addTestSuite(A112685Test.class);
+    suite.addTestSuite(A112688Test.class);
     suite.addTestSuite(A112689Test.class);
     suite.addTestSuite(A112690Test.class);
     suite.addTestSuite(A112691Test.class);
     suite.addTestSuite(A112712Test.class);
     suite.addTestSuite(A112713Test.class);
+    suite.addTestSuite(A112737Test.class);
+    suite.addTestSuite(A112738Test.class);
     suite.addTestSuite(A112742Test.class);
     suite.addTestSuite(A112831Test.class);
     suite.addTestSuite(A112851Test.class);
+    suite.addTestSuite(A112876Test.class);
+    suite.addTestSuite(A112888Test.class);
     suite.addTestSuite(A112986Test.class);
     return suite;
   }

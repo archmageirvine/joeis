@@ -24,18 +24,24 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A234273Test.class);
     suite.addTestSuite(A234277Test.class);
     suite.addTestSuite(A234279Test.class);
+    suite.addTestSuite(A234288Test.class);
     suite.addTestSuite(A234312Test.class);
+    suite.addTestSuite(A234321Test.class);
     suite.addTestSuite(A234576Test.class);
     suite.addTestSuite(A234589Test.class);
     suite.addTestSuite(A234592Test.class);
     suite.addTestSuite(A234597Test.class);
     suite.addTestSuite(A234598Test.class);
     suite.addTestSuite(A234617Test.class);
+    suite.addTestSuite(A234631Test.class);
+    suite.addTestSuite(A234691Test.class);
+    suite.addTestSuite(A234692Test.class);
     suite.addTestSuite(A234717Test.class);
     suite.addTestSuite(A234833Test.class);
     suite.addTestSuite(A234849Test.class);
     suite.addTestSuite(A234902Test.class);
     suite.addTestSuite(A234904Test.class);
+    suite.addTestSuite(A234974Test.class);
     return suite;
   }
 

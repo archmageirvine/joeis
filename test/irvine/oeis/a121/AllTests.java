@@ -13,6 +13,13 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A121065Test.class);
+    suite.addTestSuite(A121105Test.class);
+    suite.addTestSuite(A121106Test.class);
+    suite.addTestSuite(A121107Test.class);
+    suite.addTestSuite(A121108Test.class);
+    suite.addTestSuite(A121109Test.class);
+    suite.addTestSuite(A121110Test.class);
+    suite.addTestSuite(A121111Test.class);
     suite.addTestSuite(A121133Test.class);
     suite.addTestSuite(A121199Test.class);
     suite.addTestSuite(A121201Test.class);
@@ -22,6 +29,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121205Test.class);
     suite.addTestSuite(A121213Test.class);
     suite.addTestSuite(A121230Test.class);
+    suite.addTestSuite(A121234Test.class);
     suite.addTestSuite(A121254Test.class);
     suite.addTestSuite(A121255Test.class);
     suite.addTestSuite(A121257Test.class);
@@ -32,12 +40,17 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121357Test.class);
     suite.addTestSuite(A121364Test.class);
     suite.addTestSuite(A121365Test.class);
+    suite.addTestSuite(A121374Test.class);
+    suite.addTestSuite(A121375Test.class);
+    suite.addTestSuite(A121377Test.class);
+    suite.addTestSuite(A121378Test.class);
     suite.addTestSuite(A121401Test.class);
     suite.addTestSuite(A121442Test.class);
     suite.addTestSuite(A121449Test.class);
     suite.addTestSuite(A121453Test.class);
     suite.addTestSuite(A121458Test.class);
     suite.addTestSuite(A121470Test.class);
+    suite.addTestSuite(A121477Test.class);
     suite.addTestSuite(A121485Test.class);
     suite.addTestSuite(A121496Test.class);
     suite.addTestSuite(A121512Test.class);
@@ -73,6 +86,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121986Test.class);
     suite.addTestSuite(A121990Test.class);
     suite.addTestSuite(A121991Test.class);
+    suite.addTestSuite(A121996Test.class);
     return suite;
   }
 

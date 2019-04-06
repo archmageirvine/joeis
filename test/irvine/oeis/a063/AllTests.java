@@ -12,6 +12,9 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A063000Test.class);
+    suite.addTestSuite(A063001Test.class);
+    suite.addTestSuite(A063002Test.class);
     suite.addTestSuite(A063092Test.class);
     suite.addTestSuite(A063197Test.class);
     suite.addTestSuite(A063201Test.class);
@@ -41,6 +44,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A063358Test.class);
     suite.addTestSuite(A063417Test.class);
     suite.addTestSuite(A063436Test.class);
+    suite.addTestSuite(A063469Test.class);
+    suite.addTestSuite(A063470Test.class);
     suite.addTestSuite(A063481Test.class);
     suite.addTestSuite(A063488Test.class);
     suite.addTestSuite(A063489Test.class);
@@ -57,18 +62,30 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A063651Test.class);
     suite.addTestSuite(A063652Test.class);
     suite.addTestSuite(A063691Test.class);
+    suite.addTestSuite(A063722Test.class);
+    suite.addTestSuite(A063723Test.class);
     suite.addTestSuite(A063727Test.class);
     suite.addTestSuite(A063757Test.class);
     suite.addTestSuite(A063782Test.class);
     suite.addTestSuite(A063810Test.class);
     suite.addTestSuite(A063823Test.class);
     suite.addTestSuite(A063831Test.class);
+    suite.addTestSuite(A063833Test.class);
     suite.addTestSuite(A063841Test.class);
     suite.addTestSuite(A063842Test.class);
     suite.addTestSuite(A063843Test.class);
     suite.addTestSuite(A063865Test.class);
+    suite.addTestSuite(A063892Test.class);
     suite.addTestSuite(A063920Test.class);
+    suite.addTestSuite(A063924Test.class);
+    suite.addTestSuite(A063925Test.class);
+    suite.addTestSuite(A063926Test.class);
+    suite.addTestSuite(A063927Test.class);
     suite.addTestSuite(A063942Test.class);
+    suite.addTestSuite(A063950Test.class);
+    suite.addTestSuite(A063951Test.class);
+    suite.addTestSuite(A063953Test.class);
+    suite.addTestSuite(A063954Test.class);
     return suite;
   }
 

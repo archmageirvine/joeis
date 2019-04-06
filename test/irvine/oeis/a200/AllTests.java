@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A200048Test.class);
+    suite.addTestSuite(A200066Test.class);
     suite.addTestSuite(A200067Test.class);
     suite.addTestSuite(A200069Test.class);
     suite.addTestSuite(A200166Test.class);
@@ -39,7 +40,9 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A200782Test.class);
     suite.addTestSuite(A200783Test.class);
     suite.addTestSuite(A200859Test.class);
+    suite.addTestSuite(A200861Test.class);
     suite.addTestSuite(A200862Test.class);
+    suite.addTestSuite(A200863Test.class);
     suite.addTestSuite(A200864Test.class);
     suite.addTestSuite(A200937Test.class);
     suite.addTestSuite(A200975Test.class);

@@ -12,10 +12,14 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A238008Test.class);
+    suite.addTestSuite(A238084Test.class);
     suite.addTestSuite(A238108Test.class);
     suite.addTestSuite(A238188Test.class);
+    suite.addTestSuite(A238216Test.class);
     suite.addTestSuite(A238315Test.class);
     suite.addTestSuite(A238328Test.class);
+    suite.addTestSuite(A238329Test.class);
     suite.addTestSuite(A238340Test.class);
     suite.addTestSuite(A238355Test.class);
     suite.addTestSuite(A238356Test.class);
@@ -33,9 +37,13 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A238411Test.class);
     suite.addTestSuite(A238419Test.class);
     suite.addTestSuite(A238420Test.class);
+    suite.addTestSuite(A238448Test.class);
+    suite.addTestSuite(A238449Test.class);
     suite.addTestSuite(A238468Test.class);
     suite.addTestSuite(A238469Test.class);
     suite.addTestSuite(A238470Test.class);
+    suite.addTestSuite(A238507Test.class);
+    suite.addTestSuite(A238508Test.class);
     suite.addTestSuite(A238536Test.class);
     suite.addTestSuite(A238537Test.class);
     suite.addTestSuite(A238538Test.class);
@@ -51,6 +59,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A238705Test.class);
     suite.addTestSuite(A238706Test.class);
     suite.addTestSuite(A238738Test.class);
+    suite.addTestSuite(A238795Test.class);
     suite.addTestSuite(A238823Test.class);
     suite.addTestSuite(A238824Test.class);
     suite.addTestSuite(A238826Test.class);
@@ -58,7 +67,10 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A238829Test.class);
     suite.addTestSuite(A238830Test.class);
     suite.addTestSuite(A238832Test.class);
+    suite.addTestSuite(A238839Test.class);
     suite.addTestSuite(A238846Test.class);
+    suite.addTestSuite(A238850Test.class);
+    suite.addTestSuite(A238851Test.class);
     suite.addTestSuite(A238976Test.class);
     return suite;
   }

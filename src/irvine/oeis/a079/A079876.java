@@ -1,0 +1,15 @@
+package irvine.oeis.a079;
+
+import irvine.oeis.FiniteSequence;
+
+/**
+ * A079876 Number of positions that are exactly n moves from the starting position in the Lights Out Cube puzzle.
+ * @author Georg Fischer
+ */
+public class A079876 extends FiniteSequence {
+
+  /** Construct the sequence. */
+  public A079876() {
+    super(1, 54, 1431, 24804, 316251, 3162510, 25827165, 177100560L, 1040446486L, 5317168916L, 23913642226L, 95457369144L, 339930538185L, 1080757481134L, 3053070032511L, 7576816216796L, 16233040500987L, 29396466092822L, 44029343202869L, 53442675203992L, 51578158468634L, 38836356522788L, 22350616115974L, 9607958387296L, 3013785631536L, 680837208384L, 113169453024L, 14576836608L, 1391192064L, 89579520);
+  }
+}

@@ -1,0 +1,15 @@
+package irvine.oeis.a074;
+
+import irvine.oeis.FiniteSequence;
+
+/**
+ * A074337 18 primes in arithmetic progression.
+ * @author Georg Fischer
+ */
+public class A074337 extends FiniteSequence {
+
+  /** Construct the sequence. */
+  public A074337() {
+    super(107928278317L, 117851061187L, 127773844057L, 137696626927L, 147619409797L, 157542192667L, 167464975537L, 177387758407L, 187310541277L, 197233324147L, 207156107017L, 217078889887L, 227001672757L, 236924455627L, 246847238497L, 256770021367L, 266692804237L, 276615587107L);
+  }
+}

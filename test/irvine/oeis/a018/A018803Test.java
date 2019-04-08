@@ -7,4 +7,9 @@ import irvine.oeis.AbstractSequenceTest;
  * @author Sean A. Irvine
  */
 public class A018803Test extends AbstractSequenceTest {
+
+  @Override
+  protected int maxTerms() {
+    return 5;
+  }
 }

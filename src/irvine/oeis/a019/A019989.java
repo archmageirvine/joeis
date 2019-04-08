@@ -32,7 +32,7 @@ public class A019989 implements Sequence {
     protected Boolean compute(final int n) {
       final int m = (n + 1) / 3;
       final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) || mBigB.get(m) || mBigC.get(m));
-      //System.out.println(n + " " + res);
+      System.out.println(n + " " + res);
       return res;
     }
   };

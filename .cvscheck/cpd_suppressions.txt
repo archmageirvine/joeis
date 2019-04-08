@@ -1,2 +1,4 @@
 irvine/math/expression/GrammarLexer.java
 irvine/math/expression/GrammarParser.java
+irvine/oeis/a093/A093385.java
+irvine/oeis/a093/A093386.java

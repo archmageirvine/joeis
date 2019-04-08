@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Expansion of (1+x^20)/((1-x)*(1-x^3)*(1-x^5)).
+ * A097923 G.f.: (1+x^20)/((1-x)*(1-x^3)*(1-x^5)).
  * @author Georg Fischer
  */
 public class A097923 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * a(n) = 3*n*(2^n - 1).
+ * A317404 a(n) = 3*n*(2^n - 1).
  * @author Georg Fischer
  */
 public class A317404 extends LinearRecurrence {

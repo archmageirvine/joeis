@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * a(n) = sum of natural numbers m such that n - 3 &lt;= m &lt;= n + 3.
+ * A168102 a(n) = sum of natural numbers m such that n - 3 &lt;= m &lt;= n + 3.
  * @author Georg Fischer
  */
 public class A168102 extends LinearRecurrence {

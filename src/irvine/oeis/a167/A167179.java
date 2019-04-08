@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * The number of additional armies one receives in Parker Brothers&apos; (now part of Hasbro) game of Risk for turning in the n-th set of three different or alike cards.
+ * A167179 The number of additional armies one receives in Parker Brothers' (now part of Hasbro) game of Risk for turning in the n-th set of three different or alike cards.
  * @author Georg Fischer
  */
 public class A167179 extends LinearRecurrence {

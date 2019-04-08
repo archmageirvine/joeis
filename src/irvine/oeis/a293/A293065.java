@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of vertices of type D at level n of the hyperbolic Pascal pyramid PP_(4,5).
+ * A293065 Number of vertices of type D at level n of the hyperbolic Pascal pyramid PP_(4,5).
  * @author Georg Fischer
  */
 public class A293065 extends LinearRecurrence {

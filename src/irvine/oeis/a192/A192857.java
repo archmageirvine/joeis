@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of matchings in the n-web graph.
+ * A192857 Number of matchings in the n-web graph.
  * @author Georg Fischer
  */
 public class A192857 extends LinearRecurrence {

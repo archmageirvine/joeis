@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Jacobsthal numbers A001045 incremented by 2.
+ * A153643 Jacobsthal numbers A001045 incremented by 2.
  * @author Georg Fischer
  */
 public class A153643 extends LinearRecurrence {

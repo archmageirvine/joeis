@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of ways to toss a coin n times and not get a run of four.
+ * A135491 Number of ways to toss a coin n times and not get a run of four.
  * @author Georg Fischer
  */
 public class A135491 extends LinearRecurrence {

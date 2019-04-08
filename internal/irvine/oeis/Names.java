@@ -78,7 +78,11 @@ public final class Names {
       return;
     }
     // Found a sequence, but the current name mismatches, replace it
-    final int start = javaSource.indexOf(" * " + aNumber);
+    int start = javaSource.indexOf(" * " + aNumber);
+    if (start == -1) {
+      System.out.println(sequenceFile + ": No A-number found, trying for first comment line");
+      start = javaSource.indexOf(" * ");
+    }
     final int end = javaSource.indexOf('\n', start);
     if (start < 0 || end < 0) {
       System.out.println(sequenceFile + ": Couldn't determine where name goes, skipping");

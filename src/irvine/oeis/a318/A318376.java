@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * a(n) = F(n+1)^3 - 3*F(n-1)*F(n)^2, where F(n) = A000045(n), the n-th Fibonacci number.
+ * A318376 a(n) = F(n+1)^3 - 3*F(n-1)*F(n)^2, where F(n) = A000045(n), the n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A318376 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Engel expansion of sinh(1).
+ * A068377 Engel expansion of sinh(1).
  * @author Georg Fischer
  */
 public class A068377 extends LinearRecurrence {

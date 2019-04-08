@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Detour index of the n-hypercube graph.
+ * A288720 Detour index of the n-hypercube graph.
  * @author Georg Fischer
  */
 public class A288720 extends LinearRecurrence {

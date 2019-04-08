@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of ways to place 2 nonattacking kings on an n X n X n raumschach board.
+ * A166540 Number of ways to place 2 nonattacking kings on an n X n X n raumschach board.
  * @author Georg Fischer
  */
 public class A166540 extends LinearRecurrence {

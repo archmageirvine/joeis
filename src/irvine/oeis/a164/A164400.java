@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of binary strings of length n with no substrings equal to 0001 or 1100.
+ * A164400 Number of binary strings of length n with no substrings equal to 0001 or 1100.
  * @author Georg Fischer
  */
 public class A164400 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Alternating sum of centered octagonal pyramidal numbers.
+ * A270695 Alternating sum of centered octagonal pyramidal numbers.
  * @author Georg Fischer
  */
 public class A270695 extends LinearRecurrence {

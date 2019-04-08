@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * Number of chordless cycles in the n-Moebius ladder.
+ * A297667 Number of chordless cycles in the n-Moebius ladder.
  * @author Georg Fischer
  */
 public class A297667 extends LinearRecurrence {

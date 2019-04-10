@@ -62,7 +62,7 @@
     </javac>
   </target>
 
-  <target name="jar" description="Make a release jar" depends="clean,compile-src">
+  <target name="jar" description="Make a release jar" depends="compile-src">
     <jar destfile="${build.dir}/joeis.jar" update="false" zip64Mode="as-needed">
       <fileset dir="${build.dir}/classes"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>
@@ -97,7 +97,7 @@
     </zip>
   </target>
 
-  <target name="all-jar" description="Make a jar including tests" depends="clean,compile-src,compile-internal,compile-test">
+  <target name="all-jar" description="Make a jar including tests" depends="compile-src,compile-internal,compile-test">
     <jar destfile="${build.dir}/joeis.jar" update="false" zip64Mode="always">
       <fileset dir="${build.dir}/classes"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/**/*.dat"/>

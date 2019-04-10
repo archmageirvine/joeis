@@ -9,6 +9,7 @@ public class A006400 extends A006394 {
   /** Construct the sequence. */
   public A006400() {
     next();
+    next();
   }
 
   protected boolean isParenthesisPair(final int start, final int end) {

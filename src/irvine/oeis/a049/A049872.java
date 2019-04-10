@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049872 Integers in base 12, written using 2 decimal digits (00, 01, 02, ...,09, 10, 11) to represent base-12 &quot;digits&quot;. 
+ * A049872 Integers in base 12, written using 2 decimal digits (00, 01, 02, ...,09, 10, 11) to represent base-12 "digits".
  * Integers in base 12 with each base 12 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

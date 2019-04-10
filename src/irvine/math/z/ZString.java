@@ -157,4 +157,50 @@ final class ZString {
     return sb.toString();
   }
 
+  /**
+   * Return this integer as a string in the specified base,
+   * where each digit in base is represented by two decimal digits.
+   * The result will be prefixed by a minus sign if appropriate,
+   * and has no leading zero.
+   *
+   * @param n number
+   * @param base base
+   * @return string representation.
+   * @exception IllegalArgumentException if base is less than 11 or more than 99.
+   */
+  static String toTwoDigits(final Z n, final int base) {
+    if (base <  11) {
+      throw new IllegalArgumentException("Base must be at least 11");
+    }
+    if (base > 99) {
+      throw new IllegalArgumentException("Base must be at most 99");
+    }
+    if (n.getSize() == 0) {
+      return "0";
+    }
+    final StringBuilder sb = new StringBuilder();
+    Z a;
+    if (n.getSize() < 0) {
+      sb.append('-');
+      a = n.negate();
+    } else {
+      a = n;
+    }
+    final int need = 5 + (int) a.log(base);
+    final int[] s = new int[need];
+    int k = -1;
+    final long aux = n.mAuxiliary;
+    do {
+      final Z q = a.divide(base);
+      s[++k] = (int) a.auxiliary();
+      a = q;
+    } while (a.getSize() != 0);
+    n.mAuxiliary = aux;
+
+    sb.append(String.format("%d", s[k--]));
+    while (k >= 0) {
+      sb.append(String.format("%02d", s[k--]));
+    }
+    return sb.toString();
+  }
 }

@@ -30,50 +30,86 @@ public class A019989 implements Sequence {
   private final MemoryFunction1<Boolean> mA = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return true;
+      }
       final int m = (n + 1) / 3;
-      final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) || mBigB.get(m) || mBigC.get(m));
-      System.out.println(n + " " + res);
-      return res;
+      int c = 0;
+      if (get(m)) {++c;} if (mBigB.get(m)) {++c;} if (mBigC.get(m)) {++c;}
+      return c == 1;
+//      final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) || mBigB.get(m) || mBigC.get(m));
+//      System.out.println(n + " " + res);
+//      return res;
     }
   };
 
   private final MemoryFunction1<Boolean> mB = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return false;
+      }
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigC.get(m));
+      int c = 0;
+      if (get(m)) {++c;} if (mBigA.get(m)) {++c;} if (mBigC.get(m)) {++c;}
+      return c == 1;
+//      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigC.get(m));
     }
   };
 
   private final MemoryFunction1<Boolean> mC = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return false;
+      }
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigB.get(m));
+      int c = 0;
+      if (get(m)) {++c;} if (mBigA.get(m)) {++c;} if (mBigB.get(m)) {++c;}
+      return c == 1;
+//      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigB.get(m));
     }
   };
 
   private final MemoryFunction1<Boolean> mBigA = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return false;
+      }
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mB.get(m) || mC.get(m));
+      int c = 0;
+      if (get(m)) {++c;} if (mB.get(m)) {++c;} if (mC.get(m)) {++c;}
+      return c == 1;
+//      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mB.get(m) || mC.get(m));
     }
   };
 
   private final MemoryFunction1<Boolean> mBigB = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return false;
+      }
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mC.get(m));
+      int c = 0;
+      if (get(m)) {++c;} if (mA.get(m)) {++c;} if (mC.get(m)) {++c;}
+      return c == 1;
+//      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mC.get(m));
     }
   };
 
   private final MemoryFunction1<Boolean> mBigC = new MemoryFunction1<Boolean>() {
     @Override
     protected Boolean compute(final int n) {
+      if (n == 0) {
+        return false;
+      }
       final int m = (n + 1) / 3;
-      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mB.get(m));
+      int c = 0;
+      if (get(m)) {++c;} if (mA.get(m)) {++c;} if (mB.get(m)) {++c;}
+      return c == 1;
+//      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mB.get(m));
     }
   };
 
@@ -82,9 +118,9 @@ public class A019989 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      //System.out.println(mA.get(mN) + " " + mB.get(mN) + " " + mC.get(mN) + " " + mBigA.get(mN) + " " + mBigB.get(mN) + " " + mBigC.get(mN));
-      //++mN;
-      mN += 2;
+      System.out.println(mA.get(mN) + " " + mB.get(mN) + " " + mC.get(mN) + " " + mBigA.get(mN) + " " + mBigB.get(mN) + " " + mBigC.get(mN));
+      ++mN;
+      //mN += 2;
       if (mA.get(mN)) {
         return Z.valueOf(mN / 2);
       }

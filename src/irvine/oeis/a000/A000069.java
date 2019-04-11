@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000069 Odious numbers: numbers with an odd number of 1's in their binary expansion.
+ * A000069 Odious numbers: numbers with <code>an</code> odd number of 1's in their binary expansion.
  * @author Sean A. Irvine
  */
 public class A000069 implements Sequence {

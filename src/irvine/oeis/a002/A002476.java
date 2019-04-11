@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002476 Primes of the form 6m + 1.
+ * A002476 Primes of the form 6m <code>+ 1</code>.
  * @author Sean A. Irvine
  */
 public class A002476 implements Sequence {

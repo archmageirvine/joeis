@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051938 Truncated triangular numbers: a(n) = n*(n+1)/2 - 18.
+ * A051938 Truncated triangular numbers: <code>a(n) = n*(n+1)/2 - 18</code>.
  * @author Sean A. Irvine
  */
 public class A051938 extends LinearRecurrence {

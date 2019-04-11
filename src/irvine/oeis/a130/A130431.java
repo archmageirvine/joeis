@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130431 Complete list of all 9 numbers n such that n is equal to the number of 9's in the decimal digits of all numbers &lt;= n.
+ * A130431 Complete list of all 9 numbers n such that n is equal to the number of 9's in the decimal digits of all numbers <code>&lt;= n</code>.
  * @author Georg Fischer
  */
 public class A130431 extends FiniteSequence {

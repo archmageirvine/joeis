@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087431 0^n/2+2^n(n^2+n+2)/4. 
+ * A087431 <code>0^n/2+2^n(n^2+n+2)/4</code>.
  * @author Georg Fischer
  */
 public class A087431 extends LinearRecurrence {

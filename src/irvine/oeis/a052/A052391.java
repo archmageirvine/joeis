@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052391 Number of 4-element intersecting families (of distinct sets) whose union is an n-element set.
+ * A052391 Number of 4-element intersecting families (of distinct sets) whose union is <code>an</code> n-element set.
  * @author Sean A. Irvine
  */
 public class A052391 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055645 Integers in base 16 with each hexadecimal digit represented by 2 decimal digits. 
+ * A055645 Integers in base 16 with each hexadecimal digit represented by 2 decimal digits.
  * Integers in base 16 with each base 16 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

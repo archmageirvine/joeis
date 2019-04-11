@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079829 a(n) = smallest k such that floor(reverse(k)/k) &gt;= n.
+ * A079829 <code>a(n) =</code> smallest k such that floor(reverse(k)/k) <code>&gt;= n</code>.
  * @author Georg Fischer
  */
 public class A079829 extends FiniteSequence {

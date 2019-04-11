@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006480 De Bruijn's S(3,n): (3n)!/(n!)^3.
+ * A006480 De Bruijn's S(3,n): <code>(3n)!/(n!)^3</code>.
  * @author Sean A. Irvine
  */
 public class A006480 implements Sequence {

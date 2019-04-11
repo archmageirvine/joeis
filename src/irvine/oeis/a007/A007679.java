@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007679 If n mod 4 = 0 then 2^(n-1)+1 elif n mod 4 = 2 then 2^(n-1)-1 else 2^(n-1).
+ * A007679 If <code>n mod 4 = 0</code> then <code>2^(n-1)+1</code> elif <code>n mod 4 = 2</code> then <code>2^(n-1)-1</code> else <code>2^(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A007679 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036464 Number of ways to place two nonattacking queens on an n X n board.
+ * A036464 Number of ways to place two nonattacking queens on <code>an n</code> X n board.
  * @author Sean A. Irvine
  */
 public class A036464 extends LinearRecurrence {

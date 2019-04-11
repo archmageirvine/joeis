@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126972 Number of distinct values taken by the entropy for permutations of [1..n], where the entropy of a permutation pi is Sum_{k=1..n} (pi(k)-k)^2. 
+ * A126972 Number of distinct values taken by the entropy for permutations of <code>[1</code>..n], where the entropy of a permutation pi is Sum_{k=1..n} (pi(k)-k)^2.
  * @author Georg Fischer
  */
 public class A126972 extends LinearRecurrence {

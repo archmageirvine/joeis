@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007506 Primes p with property that p divides the sum of all primes &lt;= p.
+ * A007506 Primes p with property that p divides the sum of all primes <code>&lt;=</code> p.
  * @author Sean A. Irvine
  */
 public class A007506 implements Sequence {

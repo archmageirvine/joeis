@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001893 Number of permutations of (1,...,n) having n-3 inversions (n&gt;=3).
+ * A001893 Number of permutations of <code>(1,</code>...,n) having <code>n-3</code> inversions <code>(n&gt;=3)</code>.
  * @author Sean A. Irvine
  */
 public class A001893 extends A001892 {

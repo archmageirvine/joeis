@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023847 Sum of exponents in prime-power factorization of binomial(5n, 2n).
+ * A023847 Sum of exponents in prime-power factorization of binomial(5n, <code>2n)</code>.
  * @author Sean A. Irvine
  */
 public class A023847 implements Sequence {

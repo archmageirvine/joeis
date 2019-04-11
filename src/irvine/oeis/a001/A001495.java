@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001495 Number of symmetric 0-1 (n+1) X (n+1) matrices with row sums 2 and first row starting 1,1 for n&gt;0, a(0)=1.
+ * A001495 Number of symmetric <code>0-1 (n+1)</code> X <code>(n+1)</code> matrices with row sums 2 and first row starting <code>1,1</code> for <code>n&gt;0, a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A001495 implements Sequence {

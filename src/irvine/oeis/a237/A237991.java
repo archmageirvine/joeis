@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237991 a(n) = 991*n^2 + 1.
+ * A237991 <code>a(n) = 991*n^2 + 1</code>.
  * @author Sean A. Irvine
  */
 public class A237991 extends LinearRecurrence {

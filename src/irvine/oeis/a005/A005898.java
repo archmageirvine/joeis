@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005898 Centered cube numbers: n^3 + (n+1)^3.
+ * A005898 Centered cube numbers: <code>n^3 + (n+1)^3</code>.
  * @author Sean A. Irvine
  */
 public class A005898 implements Sequence {

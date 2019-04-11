@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A071758 Successive minima of partial sum of harmonic series Sum (mu(n)/n) are approximately 1/ a(n).
+ * A071758 Successive minima of partial sum of harmonic series Sum (mu(n)/n) are approximately <code>1/ a(n)</code>.
  * @author Sean A. Irvine
  */
 public class A071758 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285998 a(n) = Sum_{k=0..floor(n/2)} (n-k)*(k+1).
+ * A285998 <code>a(n) =</code> Sum_{k=0..floor(n/2)} (n-k)*(k+1).
  * @author Sean A. Irvine
  */
 public class A285998 extends LinearRecurrence {

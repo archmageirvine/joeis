@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275439 Sum of the asymmetry degrees of all compositions of n with parts in {1,2}.
+ * A275439 Sum of the asymmetry degrees of all compositions of n with parts in <code>{1,2}</code>.
  * @author Sean A. Irvine
  */
 public class A275439 extends LinearRecurrence {

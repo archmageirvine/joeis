@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030221 Chebyshev even indexed U-polynomials evaluated at sqrt(7)/2.
+ * A030221 Chebyshev even indexed U-polynomials evaluated at <code>sqrt(7)/2</code>.
  * @author Sean A. Irvine
  */
 public class A030221 extends LinearRecurrence {

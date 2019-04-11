@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055647 Integers in base 14 with each base 14 digit represented by 2 decimal digits. 
+ * A055647 Integers in base 14 with each base 14 digit represented by 2 decimal digits.
  * Integers in base 14 with each base 14 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322511 Nonnegative numbers whose digits can be formed by typing adjacent keys on a 123-456-789 keypad without repeating a digit and without changing direction.
+ * A322511 Nonnegative numbers whose digits can be formed by typing adjacent keys on <code>a 123-456-789</code> keypad without repeating a digit and without changing direction.
  * @author Georg Fischer
  */
 public class A322511 extends FiniteSequence {

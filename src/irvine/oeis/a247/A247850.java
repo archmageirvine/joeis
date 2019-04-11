@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247850 The 5th Hermite Polynomial evaluated at n: H_5(n) = 32*n^5-160*n^3+120*n.
+ * A247850 The 5th Hermite Polynomial evaluated at n: H_5(n) <code>= 32*n^5-160*n^3+120*n</code>.
  * @author Sean A. Irvine
  */
 public class A247850 extends LinearRecurrence {

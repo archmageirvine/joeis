@@ -6,7 +6,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A002076 Number of equivalence classes of base-3 necklaces of length n, where necklaces are considered equivalent under both rotations as well as permutations of the symbols.
+ * A002076 Number of equivalence classes of base-3 necklaces of length <code>n,</code> where necklaces are considered equivalent under both rotations as well as permutations of the symbols.
  * @author Sean A. Irvine
  */
 public class A002076 extends A002075 {

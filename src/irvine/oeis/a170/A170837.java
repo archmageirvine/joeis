@@ -4,7 +4,7 @@ package irvine.oeis.a170;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A170837 a(0)=0, a(1)=1 and a(n) = 16n-27 for n &gt;= 2. 
+ * A170837 <code>a(0)=0, a(1)=1</code> and <code>a(n) = 16n-27</code> for <code>n &gt;= 2</code>.
  * @author Georg Fischer
  */
 public class A170837 extends LinearRecurrence {

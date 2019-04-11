@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304838 a(n) = 1944*n^2 - 5016*n + 3138 (n &gt;= 1). 
+ * A304838 <code>a(n) = 1944*n^2 - 5016*n + 3138 (n &gt;= 1)</code>.
  * @author Georg Fischer
  */
 public class A304838 extends LinearRecurrence {

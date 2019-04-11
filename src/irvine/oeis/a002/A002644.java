@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002644 Numbers n such that (n^2 + n + 1)/21 is prime.
+ * A002644 Numbers n such that <code>(n^2 + n + 1)/21</code> is prime.
  * @author Sean A. Irvine
  */
 public class A002644 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003466 Number of minimal covers of an n-set that have exactly one point which appears in more than one set in the cover.
+ * A003466 Number of minimal covers of <code>an</code> n-set that have exactly one point which appears in more than one set in the cover.
  * @author Sean A. Irvine
  */
 public class A003466 implements Sequence {

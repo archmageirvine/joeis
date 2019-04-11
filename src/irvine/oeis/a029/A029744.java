@@ -4,7 +4,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029744 Numbers of the form 2^n or 3*2^n. 
+ * A029744 Numbers of the form <code>2^n</code> or <code>3*2^n</code>.
  * @author Georg Fischer
  */
 public class A029744 extends LinearRecurrence {

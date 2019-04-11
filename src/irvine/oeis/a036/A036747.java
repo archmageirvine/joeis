@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A036747 The numbers 0-100 in English lexicographic order.
+ * A036747 The numbers <code>0-100</code> in English lexicographic order.
  * @author Georg Fischer
  */
 public class A036747 extends FiniteSequence {

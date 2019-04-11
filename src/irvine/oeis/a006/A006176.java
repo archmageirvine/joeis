@@ -4,7 +4,7 @@ import irvine.oeis.WittTransformSequence;
 import irvine.oeis.a074.A074653;
 
 /**
- * A006176 Witt vector *5!.
+ * A006176 Witt vector <code>*5!</code>.
  * @author Sean A. Irvine
  */
 public class A006176 extends WittTransformSequence {

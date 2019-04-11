@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A019518 Smarandache-Wellin numbers: a(n) = concatenation of first n primes (written in base 10).
+ * A019518 Smarandache-Wellin numbers: <code>a(n) =</code> concatenation of first n primes (written in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A019518 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.PrependSequence;
 
 /**
- * A003436 Number of inequivalent labeled Hamiltonian circuits on n-octahedron. Interlacing chords joining 2n points on circle.
+ * A003436 Number of inequivalent labeled Hamiltonian circuits on n-octahedron. Interlacing chords joining <code>2n</code> points on circle.
  * @author Sean A. Irvine
  */
 public class A003436 extends PrependSequence {

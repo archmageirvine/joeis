@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A008717 20 in base 20-n.
+ * A008717 20 in base <code>20-n</code>.
  * @author Sean A. Irvine
  */
 public class A008717 extends FiniteSequence {

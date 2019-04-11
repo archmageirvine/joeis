@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028896 6 times triangular numbers: a(n) = 3*n*(n+1).
+ * A028896 6 times triangular numbers: <code>a(n) = 3*n*(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A028896 extends LinearRecurrence {

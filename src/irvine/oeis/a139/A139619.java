@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139619 a(n) = 171*n + 19.
+ * A139619 <code>a(n) = 171*n + 19</code>.
  * @author Sean A. Irvine
  */
 public class A139619 extends LinearRecurrence {

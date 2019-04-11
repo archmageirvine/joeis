@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212756 Number of (w,x,y,z) with all terms in {0,...,n} and 2w-x=max{w,x,y,z}-min{w,x,y,z}.
+ * A212756 Number of (w,x,y,z) with all terms in <code>{0,</code>...,n} and 2w-x=max{w,x,y,z}-min{w,x,y,z}.
  * @author Sean A. Irvine
  */
 public class A212756 extends LinearRecurrence {

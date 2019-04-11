@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192098 Number of distinct (unordered) pairs of partitions of an 8-element set that have Rand distance n.
+ * A192098 Number of distinct (unordered) pairs of partitions of <code>an</code> 8-element set that have Rand distance n.
  * @author Georg Fischer
  */
 public class A192098 extends FiniteSequence {

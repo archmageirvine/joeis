@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006451 Numbers n such that n*(n+1)/2+1 is a square.
+ * A006451 Numbers n such that <code>n*(n+1)/2+1</code> is a square.
  * @author Sean A. Irvine
  */
 public class A006451 extends LinearRecurrence {

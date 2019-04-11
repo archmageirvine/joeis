@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004413 Expansion of ( Sum_{n = -infinity..infinity} x^(n^2) )^(-12).
+ * A004413 Expansion of ( Sum_{n = -infinity..infinity} <code>x^(n^2) )^(-12)</code>.
  * @author Sean A. Irvine
  */
 public class A004413 implements Sequence {

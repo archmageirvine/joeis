@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002313 Primes congruent to 1 or 2 modulo 4; or, primes of form x^2 + y^2; or, -1 is a square mod p.
+ * A002313 Primes congruent to 1 or 2 modulo 4; or, primes of form <code>x^2 +</code> y^2; or, <code>-1</code> is a square mod p.
  * @author Sean A. Irvine
  */
 public class A002313 implements Sequence {

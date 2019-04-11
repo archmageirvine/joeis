@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014220 Next prime after n^3.
+ * A014220 Next prime after <code>n^3</code>.
  * @author Sean A. Irvine
  */
 public class A014220 implements Sequence {

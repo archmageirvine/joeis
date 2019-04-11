@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000088;
 import irvine.oeis.a000.A000171;
 
 /**
- * A007869 Number of complementary pairs of graphs on n nodes. Also number of unlabeled graphs with n nodes and an even number of edges.
+ * A007869 Number of complementary pairs of graphs on n nodes. Also number of unlabeled graphs with n nodes and <code>an</code> even number of edges.
  * @author Sean A. Irvine
  */
 public class A007869 extends A000088 {

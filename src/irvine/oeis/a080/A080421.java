@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080421 (n+1)(n+2)(n+9)3^n/18.
+ * A080421 <code>(n+1)(n+2)(n+9)3^n/18</code>.
  * @author Sean A. Irvine
  */
 public class A080421 extends LinearRecurrence {

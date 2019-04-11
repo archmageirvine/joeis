@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323606 Decimal expansion of 25146/15625.
+ * A323606 Decimal expansion of <code>25146/15625</code>.
  * @author Georg Fischer
  */
 public class A323606 extends FiniteSequence {

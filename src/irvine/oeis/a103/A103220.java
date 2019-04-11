@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103220 a(n) = n*(n+1)*(3*n^2+n-1)/6.
+ * A103220 <code>a(n) = n*(n+1)*(3*n^2+n-1)/6</code>.
  * @author Sean A. Irvine
  */
 public class A103220 extends LinearRecurrence {

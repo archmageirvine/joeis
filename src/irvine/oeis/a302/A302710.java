@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302710 a(n) = trinomial(2*n, 4) = (1/6)*n*(2*n - 1)*(2*n^2 + 7*n - 3). 
+ * A302710 <code>a(n) =</code> trinomial(2*n, <code>4) = (1/6)*n*(2*n - 1)*(2*n^2 + 7*n - 3)</code>.
  * @author Georg Fischer
  */
 public class A302710 extends LinearRecurrence {

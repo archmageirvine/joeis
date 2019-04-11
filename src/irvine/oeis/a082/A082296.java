@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082296 Solutions to 13^x+17^x == 19 mod 23.
+ * A082296 Solutions to <code>13^x+17^x == 19 mod 23</code>.
  * @author Sean A. Irvine
  */
 public class A082296 extends LinearRecurrence {

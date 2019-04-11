@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012264 Number of real roots of x - x^3/3! + x^5/5! - ... + (-1)^n*x^(2n+1)/(2n+1)!.
+ * A012264 Number of real roots of <code>x - x^3/3! + x^5/5! - </code>... <code>+ (-1)^n*x^(2n+1)/(2n+1)!</code>.
  * @author Sean A. Irvine
  */
 public class A012264 implements Sequence {

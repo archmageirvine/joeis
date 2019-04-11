@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024113 9^n-n^12.
+ * A024113 <code>9^n-n^12</code>.
  * @author Sean A. Irvine
  */
 public class A024113 extends LinearRecurrence {

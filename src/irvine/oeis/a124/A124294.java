@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124294 Number of free generators of degree n of symmetric polynomials in 6-noncommuting variables. 
+ * A124294 Number of free generators of degree n of symmetric polynomials in 6-noncommuting variables.
  * @author Georg Fischer
  */
 public class A124294 extends LinearRecurrence {

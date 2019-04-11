@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078860 Least positive residues [mod 210] representing those residue classes which can be lesser of prime pairs from A029710.
+ * A078860 Least positive residues <code>[mod 210]</code> representing those residue classes which can be lesser of prime pairs from A029710.
  * @author Georg Fischer
  */
 public class A078860 extends FiniteSequence {

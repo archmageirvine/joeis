@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045855 Numbers n such that n^2 has initial digit '1'.
+ * A045855 Numbers n such that <code>n^2</code> has initial digit '1'.
  * @author Sean A. Irvine
  */
 public class A045855 implements Sequence {

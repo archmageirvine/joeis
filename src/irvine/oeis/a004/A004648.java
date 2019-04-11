@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004648 a(n) = prime(n) mod n.
+ * A004648 <code>a(n) =</code> prime(n) <code>mod n</code>.
  * @author Sean A. Irvine
  */
 public class A004648 implements Sequence {

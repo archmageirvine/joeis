@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A000512 Number of equivalence classes of n X n matrices over {0,1} with rows and columns summing to 3, where equivalence is defined by row and column permutations.
+ * A000512 Number of equivalence classes of n X n matrices over <code>{0,1}</code> with rows and columns summing to <code>3,</code> where equivalence is defined by row and column permutations.
  * @author Sean A. Irvine
  */
 public class A000512 implements Sequence {

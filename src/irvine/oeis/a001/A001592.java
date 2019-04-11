@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001592 Hexanacci numbers: a(n+1) = a(n)+...+a(n-5) with a(0)=...=a(4)=0, a(5)=1.
+ * A001592 Hexanacci numbers: <code>a(n+1) = a(n)+</code>...+a(n-5) with <code>a(0)=</code>...=a(4)=0, <code>a(5)=1</code>.
  * @author Sean A. Irvine
  */
 public class A001592 extends LinearRecurrence {

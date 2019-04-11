@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007237 Number of triangles with integer sides and area = n times perimeter.
+ * A007237 Number of triangles with integer sides and area <code>= n</code> times perimeter.
  * @author Sean A. Irvine
  */
 public class A007237 implements Sequence {

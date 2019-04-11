@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013920 n is composite and sum of all composites &lt;= n is composite.
+ * A013920 n is composite and sum of all composites <code>&lt;= n</code> is composite.
  * @author Sean A. Irvine
  */
 public class A013920 implements Sequence {

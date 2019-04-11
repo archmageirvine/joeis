@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007685 a(n) = Product_{k=1..n} binomial(2*k,k).
+ * A007685 <code>a(n) =</code> Product_{k=1..n} binomial(2*k,k).
  * @author Sean A. Irvine
  */
 public class A007685 implements Sequence {

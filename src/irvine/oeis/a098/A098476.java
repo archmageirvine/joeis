@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A098476 Unicode codes for the lunation runes, used in certain medieval Scandinavian perpetual calendar staves as golden numbers 1-19.
+ * A098476 Unicode codes for the lunation runes, used in certain medieval Scandinavian perpetual calendar staves as golden numbers <code>1-19</code>.
  * @author Georg Fischer
  */
 public class A098476 extends FiniteSequence {

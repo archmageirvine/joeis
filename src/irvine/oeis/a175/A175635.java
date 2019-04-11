@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175635 a(n) = smallest number m such that decimal expansion of m^2 has exactly (n+1) digits n.
+ * A175635 <code>a(n) =</code> smallest number m such that decimal expansion of m^2 has exactly <code>(n+1)</code> digits n.
  * @author Georg Fischer
  */
 public class A175635 extends FiniteSequence {

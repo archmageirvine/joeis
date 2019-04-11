@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002387;
 
 /**
- * A014537 Number of books required for n book-lengths of overhang in the harmonic book stapling problem. Sum_{i=1..a(n)} 1/i &gt;= 2n and Sum_{i=1..a(n)-1} 1/i &lt; 2n.
+ * A014537 Number of books required for n book-lengths of overhang in the harmonic book stapling problem. Sum_{i=1..a(n)} 1/i <code>&gt;= 2n</code> and Sum_{i=1..a(n)-1} 1/i <code>&lt; 2n</code>.
  * @author Sean A. Irvine
  */
 public class A014537 extends A002387 {

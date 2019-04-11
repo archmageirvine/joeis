@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027625 Numerator of n*(n+5)/((n+2)*(n+3)).
+ * A027625 Numerator of <code>n*(n+5)/((n+2)*(n+3))</code>.
  * @author Sean A. Irvine
  */
 public class A027625 extends LinearRecurrence {

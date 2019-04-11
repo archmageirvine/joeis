@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074201 Let b(1)=1, b(2)=2, b(n+2)=(b(n+1)+1)/(b(n)+1); then a(n) = 1 if b(n)&gt;=1 and a(n) = 0 otherwise (also a(n) = floor(b(n)) ).
+ * A074201 Let b(1)=1, b(2)=2, b(n+2)=(b(n+1)+1)/(b(n)+1); then <code>a(n) = 1</code> if b(n)&gt;=1 and <code>a(n) = 0</code> otherwise (also <code>a(n) =</code> floor(b(n)) ).
  * @author Sean A. Irvine
  */
 public class A074201 implements Sequence {

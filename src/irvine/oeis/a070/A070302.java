@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070302 Number of 3 X 3 X 3 magic cubes with sum 3n.
+ * A070302 Number of 3 X 3 X 3 magic cubes with sum <code>3n</code>.
  * @author Sean A. Irvine
  */
 public class A070302 extends LinearRecurrence {

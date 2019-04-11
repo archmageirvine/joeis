@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289195 a(n) is the number of odd integers divisible by 5 in ]4*(n-1)^2, 4*n^2[.
+ * A289195 <code>a(n)</code> is the number of odd integers divisible by 5 in <code>]4*(n-1)^2, 4*n^2[</code>.
  * @author Sean A. Irvine
  */
 public class A289195 extends LinearRecurrence {

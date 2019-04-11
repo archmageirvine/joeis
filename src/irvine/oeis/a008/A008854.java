@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008854 Numbers that are congruent to {0, 1, 4} mod 5.
+ * A008854 Numbers that are congruent to <code>{0, 1, 4} mod 5</code>.
  * @author Sean A. Irvine
  */
 public class A008854 implements Sequence {

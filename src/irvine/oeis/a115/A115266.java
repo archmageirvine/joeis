@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115266 Row sums of correlation triangle for floor((n+3)/3).
+ * A115266 Row sums of correlation triangle for <code>floor((n+3)/3)</code>.
  * @author Sean A. Irvine
  */
 public class A115266 extends LinearRecurrence {

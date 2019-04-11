@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178827 Partial sums of floor(8^n/9)/7.
+ * A178827 Partial sums of <code>floor(8^n/9)/7</code>.
  * @author Sean A. Irvine
  */
 public class A178827 extends LinearRecurrence {

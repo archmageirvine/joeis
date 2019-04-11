@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012125 Expansion of x/ (1-4*x+16*x^2)^(3/2).
+ * A012125 Expansion of <code>x/ (1-4*x+16*x^2)^(3/2)</code>.
  * @author Sean A. Irvine
  */
 public class A012125 implements Sequence {

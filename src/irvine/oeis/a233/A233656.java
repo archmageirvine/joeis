@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A233656 a(n) = 3*a(n-1) - 2*(n-1), with a(0) = 1.
+ * A233656 <code>a(n) = 3*a(n-1) - 2*(n-1),</code> with <code>a(0) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A233656 extends LinearRecurrence {

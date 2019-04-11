@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A114254 Sum of all terms on the two principal diagonals of a 2n+1 X 2n+1 square spiral.
+ * A114254 Sum of all terms on the two principal diagonals of <code>a 2n+1</code> X <code>2n+1</code> square spiral.
  * @author Sean A. Irvine
  */
 public class A114254 implements Sequence {

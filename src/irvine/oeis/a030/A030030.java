@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030030 Weight distribution of nonlinear binary (36,2^18,8) code.
+ * A030030 Weight distribution of nonlinear binary <code>(36,2^18,8)</code> code.
  * @author Georg Fischer
  */
 public class A030030 extends FiniteSequence {

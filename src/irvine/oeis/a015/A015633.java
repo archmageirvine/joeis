@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015633 Number of ordered triples of integers from [ 2,n ] with no global factor.
+ * A015633 Number of ordered triples of integers from <code>[ 2,n ]</code> with no global factor.
  * @author Sean A. Irvine
  */
 public class A015633 implements Sequence {

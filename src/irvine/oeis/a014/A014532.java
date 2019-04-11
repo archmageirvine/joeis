@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014532 Form array in which n-th row is obtained by expanding (1+x+x^2)^n and taking the 3rd column from the center.
+ * A014532 Form array in which n-th row is obtained by expanding <code>(1+x+x^2)^n</code> and taking the 3rd column from the center.
  * @author Sean A. Irvine
  */
 public class A014532 implements Sequence {

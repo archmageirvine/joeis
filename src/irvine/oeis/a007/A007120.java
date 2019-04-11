@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007120 Expansion of e.g.f. (1+x)^(1-x).
+ * A007120 Expansion of e.g.f. <code>(1+x)^(1-x)</code>.
  * @author Sean A. Irvine
  */
 public class A007120 implements Sequence {

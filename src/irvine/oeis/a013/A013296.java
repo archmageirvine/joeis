@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013296 tan(arctanh(x)-log(x+1)) = 1/2!*x^2 + 6/4!*x^4 + 150/6!*x^6 + 7560/8!*x^8...
+ * A013296 tan(arctanh(x)-log(x+1)) <code>= 1/2!*x^2 + 6/4!*x^4 + 150/6!*x^6 + 7560/8!*x^8</code>...
  * @author Sean A. Irvine
  */
 public class A013296 implements Sequence {

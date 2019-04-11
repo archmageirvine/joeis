@@ -5,7 +5,7 @@ import irvine.oeis.AlonsoSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A230626 Iterate the map x -&gt; A230625(x) starting at n; sequence gives number of steps to reach a prime, or -1 if no prime is ever reached.
+ * A230626 Iterate the map <code>x -&gt;</code> A230625(x) starting at n; sequence gives number of steps to reach a prime, or <code>-1</code> if no prime is ever reached.
  * @author Sean A. Irvine
  */
 public class A230626 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001445 a(n) = (2^n + 2^[ n/2 ] )/2.
+ * A001445 <code>a(n) = (2^n + 2^[ n/2 ] )/2</code>.
  * @author Sean A. Irvine
  */
 public class A001445 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161979 a(1)=1. a(n) = the smallest integer &gt; a(n-1) containing {the string made by reversing the order of the binary digits of n, and removing leading 0's} as a substring when a(n) is written in binary.
+ * A161979 <code>a(1)=1</code>. <code>a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> containing {the string made by reversing the order of the binary digits of <code>n,</code> and removing leading 0's} as a substring when <code>a(n)</code> is written in binary.
  * @author Sean A. Irvine
  */
 public class A161979 implements Sequence {

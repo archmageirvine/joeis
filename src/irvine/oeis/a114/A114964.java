@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114964 a(n) = n^2 + 30.
+ * A114964 <code>a(n) = n^2 + 30</code>.
  * @author Sean A. Irvine
  */
 public class A114964 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130432 For digit n from 1 to 9, a(n) = the number of numbers m such that m is equal to the number of n's in the decimal digits of all numbers &lt;= m.
+ * A130432 For digit n from 1 to <code>9, a(n) =</code> the number of numbers m such that m is equal to the number of n's in the decimal digits of all numbers <code>&lt;=</code> m.
  * @author Georg Fischer
  */
 public class A130432 extends FiniteSequence {

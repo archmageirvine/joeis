@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057363 a(n) = floor(8*n/13).
+ * A057363 <code>a(n) = floor(8*n/13)</code>.
  * @author Sean A. Irvine
  */
 public class A057363 extends LinearRecurrence {

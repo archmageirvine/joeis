@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156822 Prime factors of 17! listed with multiplicity.
+ * A156822 Prime factors of <code>17!</code> listed with multiplicity.
  * @author Georg Fischer
  */
 public class A156822 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087420 a(n) is the sum of the squares of the sizes of the conjugacy classes in the dihedral group D_2n.
+ * A087420 <code>a(n)</code> is the sum of the squares of the sizes of the conjugacy classes in the dihedral group D_2n.
  * @author Sean A. Irvine
  */
 public class A087420 extends LinearRecurrence {

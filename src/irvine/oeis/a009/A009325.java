@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009325 E.g.f.: Expansion of log(1+log(1+x)^2) = 2*x^2/2! -6*x^3/3! +10*x^4/4! -...
+ * A009325 E.g.f.: Expansion of log(1+log(1+x)^2) <code>= 2*x^2/2! -6*x^3/3! +10*x^4/4! -</code>...
  * @author Sean A. Irvine
  */
 public class A009325 implements Sequence {

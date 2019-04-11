@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007747 Number of nonnegative integer points (p_1,p_2,...,p_n) in polytope defined by p_0 = p_{n+1} = 0, 2p_i - (p_{i+1} + p_{i-1}) &lt;= 2, p_i &gt;= 0, i=1,...,n. Number of score sequences in a chess tournament with n+1 players (with 3 outcomes for each game).
+ * A007747 Number of nonnegative integer points (p_1,p_2,...,p_n) in polytope defined by p_0 = p_{n+1} <code>= 0,</code> 2p_i - (p_{i+1} + p_{i-1}) <code>&lt;= 2,</code> p_i <code>&gt;= 0,</code> i=1,...,n. Number of score sequences in a chess tournament with <code>n+1</code> players (with 3 outcomes for each game).
  * @author Sean A. Irvine
  */
 public class A007747 extends MemoryFunction4<Long, Z> implements Sequence {

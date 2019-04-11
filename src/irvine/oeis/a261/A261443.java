@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261443 Number of binary strings of length n+5 such that the smallest number whose binary representation is not visible in the string is 7.
+ * A261443 Number of binary strings of length <code>n+5</code> such that the smallest number whose binary representation is not visible in the string is 7.
  * @author Sean A. Irvine
  */
 public class A261443 extends LinearRecurrence {

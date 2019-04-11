@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115931 Numbers n such that n and 7*n, taken together, are zeroless pandigital.
+ * A115931 Numbers n such that n and <code>7*n,</code> taken together, are zeroless pandigital.
  * @author Georg Fischer
  */
 public class A115931 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006068 a(n) is Gray-coded into n.
+ * A006068 <code>a(n)</code> is Gray-coded into n.
  * @author Sean A. Irvine
  */
 public class A006068 implements Sequence {

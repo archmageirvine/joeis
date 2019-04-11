@@ -3,7 +3,7 @@ package irvine.oeis.a043;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A043699 a(n)= A000129(n)*A000129(2*n) where A000129(n) are the Pell numbers.
+ * A043699 <code>a(n)=</code> A000129(n)*A000129(2*n) where A000129(n) are the Pell numbers.
  * @author Sean A. Irvine
  */
 public class A043699 extends LinearRecurrence {

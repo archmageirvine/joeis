@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015625 Quadruples of different integers from [ 1,n ] with no common factors between triples.
+ * A015625 Quadruples of different integers from <code>[ 1,n ]</code> with no common factors between triples.
  * @author Sean A. Irvine
  */
 public class A015625 implements Sequence {

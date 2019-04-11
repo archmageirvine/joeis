@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005243 A self-generating sequence: start with 1 and 2, take all sums of any number of successive previous elements and adjoin them to the sequence. Repeat!.
+ * A005243 A self-generating sequence: start with 1 and <code>2,</code> take all sums of any number of successive previous elements and adjoin them to the sequence. Repeat!.
  * @author Sean A. Irvine
  */
 public class A005243 implements Sequence {

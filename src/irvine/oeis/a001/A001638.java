@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001638 A Fielder sequence: a(n) = a(n-1) + a(n-3) + a(n-4), n &gt;= 4.
+ * A001638 A Fielder sequence: <code>a(n) = a(n-1) + a(n-3) + a(n-4), n &gt;= 4</code>.
  * @author Sean A. Irvine
  */
 public class A001638 extends LinearRecurrence {

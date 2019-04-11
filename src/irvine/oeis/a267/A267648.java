@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267648 a(n) = g_n(5) where g is the function defined in A266202.
+ * A267648 <code>a(n) =</code> g_n(5) where g is the function defined in A266202.
  * @author Georg Fischer
  */
 public class A267648 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086178 Decimal expansion of 1 + 2sqrt(2).
+ * A086178 Decimal expansion of <code>1 + 2sqrt(2)</code>.
  * @author Sean A. Irvine
  */
 public class A086178 extends DecimalExpansionSequence {

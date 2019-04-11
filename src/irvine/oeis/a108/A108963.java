@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A108963 Smallest prime == 1 (mod f(n)), where f(n) = concatenation n,(n-1),...,3,2,1,2,3,...(n-1),n.
+ * A108963 Smallest prime <code>== 1 (mod</code> f(n)), where f(n) = concatenation <code>n,(n-1),</code>...,3,2,1,2,3,...(n-1),n.
  * @author Sean A. Irvine
  */
 public class A108963 implements Sequence {

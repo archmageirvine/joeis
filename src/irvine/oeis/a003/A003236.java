@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003236 a(n) = Sum_{k=0..n} (-1)^(n-k) C(n,k)*C((k+1)^2, n).
+ * A003236 <code>a(n) =</code> Sum_{k=0..n} (-1)^(n-k) C(n,k)*C((k+1)^2, <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A003236 implements Sequence {

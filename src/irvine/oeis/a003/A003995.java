@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003995 Sum of (any number of) distinct squares: of form r^2 + s^2 + t^2 + ... with 0 &lt;= r &lt; s &lt; t &lt; ...
+ * A003995 Sum of (any number of) distinct squares: of form r^2 + s^2 + t^2 <code>+ </code>... with <code>0 &lt;=</code> r &lt; s &lt; t <code>&lt; </code>...
  * @author Sean A. Irvine
  */
 public class A003995 implements Sequence {

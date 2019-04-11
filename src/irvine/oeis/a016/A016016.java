@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A016016 Number of iterations of Reverse and Add which lead to a palindrome, or -1 if no palindrome is ever reached.
+ * A016016 Number of iterations of Reverse and Add which lead to a palindrome, or <code>-1</code> if no palindrome is ever reached.
  * @author Sean A. Irvine
  */
 public class A016016 implements Sequence {

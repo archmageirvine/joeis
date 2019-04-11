@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229144 Partial sums of (Fibonacci numbers mod 3).
+ * A229144 Partial sums of (Fibonacci numbers <code>mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A229144 extends LinearRecurrence {

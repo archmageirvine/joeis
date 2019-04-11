@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A320284 Pierce expansion whose sum has the concatenation of its terms as decimal part. Case a(1) = 3.
+ * A320284 Pierce expansion whose sum has the concatenation of its terms as decimal part. Case <code>a(1) = 3</code>.
  * @author Georg Fischer
  */
 public class A320284 extends FiniteSequence {

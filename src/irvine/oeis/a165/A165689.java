@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A165689 Numbers n such that pi(n) = (1/10)*n.
+ * A165689 Numbers n such that pi(n) <code>= (1/10)*n</code>.
  * @author Georg Fischer
  */
 public class A165689 extends FiniteSequence {

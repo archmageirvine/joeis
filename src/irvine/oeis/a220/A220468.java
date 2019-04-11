@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220468 Number of cyclotomic cosets of n mod 10.
+ * A220468 Number of cyclotomic cosets of <code>n mod 10</code>.
  * @author Sean A. Irvine
  */
 public class A220468 extends LinearRecurrence {

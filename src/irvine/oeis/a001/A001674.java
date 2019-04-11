@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001674 a(n) = floor(sqrt( 2*Pi )^n).
+ * A001674 <code>a(n) = floor(sqrt(</code> 2*Pi <code>)^n)</code>.
  * @author Sean A. Irvine
  */
 public class A001674 implements Sequence {

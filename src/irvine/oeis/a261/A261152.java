@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261152 a(n) = 161004359399459161 + (n-1)*10644900609172830.
+ * A261152 <code>a(n) = 161004359399459161 + (n-1)*10644900609172830</code>.
  * @author Sean A. Irvine
  */
 public class A261152 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002821 a(n) = nearest integer to n^(3/2).
+ * A002821 <code>a(n) =</code> nearest integer to <code>n^(3/2)</code>.
  * @author Sean A. Irvine
  */
 public class A002821 implements Sequence {

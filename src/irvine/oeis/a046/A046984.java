@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046984 Number of ways to tile a 4 X 3n rectangle with right trominoes.
+ * A046984 Number of ways to tile <code>a 4</code> X <code>3n</code> rectangle with right trominoes.
  * @author Sean A. Irvine
  */
 public class A046984 extends LinearRecurrence {

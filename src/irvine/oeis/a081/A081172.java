@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081172 Tribonacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) starting with 1,1,0.
+ * A081172 Tribonacci numbers: <code>a(n) = a(n-1) + a(n-2) + a(n-3)</code> starting with <code>1,1,0</code>.
  * @author Sean A. Irvine
  */
 public class A081172 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007502 Les Marvin sequence: a(n) = F(n)+(n-1)*F(n-1), F() = Fibonacci numbers.
+ * A007502 Les Marvin sequence: <code>a(n) =</code> F(n)+(n-1)*F(n-1), F() = Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A007502 extends LinearRecurrence {

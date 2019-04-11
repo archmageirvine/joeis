@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A050376 Numbers of the form p^(2^k) where p is prime and k &gt;= 0.
+ * A050376 Numbers of the form p^(2^k) where p is prime and k <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A050376 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017302 a(n) = (10*n + 2)^10.
+ * A017302 <code>a(n) = (10*n + 2)^10</code>.
  * @author Sean A. Irvine
  */
 public class A017302 extends LinearRecurrence {

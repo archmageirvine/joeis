@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053157 Number of 3-element intersecting families (with not necessary distinct sets) whose union is an n-element set.
+ * A053157 Number of 3-element intersecting families (with not necessary distinct sets) whose union is <code>an</code> n-element set.
  * @author Sean A. Irvine
  */
 public class A053157 extends LinearRecurrence {

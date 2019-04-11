@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052465 a(n) is the solution k to Mod[24k,11^n]==1.
+ * A052465 <code>a(n)</code> is the solution k to Mod[24k,11^n]==1.
  * @author Sean A. Irvine
  */
 public class A052465 extends LinearRecurrence {

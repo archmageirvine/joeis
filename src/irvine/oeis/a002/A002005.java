@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A002005 Number of rooted planar cubic maps with 2n vertices.
+ * A002005 Number of rooted planar cubic maps with <code>2n</code> vertices.
  * @author Sean A. Irvine
  */
 public class A002005 implements Sequence {

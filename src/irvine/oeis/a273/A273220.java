@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273220 a(n) = 8n^2 - 12n + 1.
+ * A273220 <code>a(n) = 8n^2 - 12n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A273220 extends LinearRecurrence {

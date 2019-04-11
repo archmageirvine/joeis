@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008581 Molien series for 6-dimensional complex reflection group 4.U_4 (3) of order 2^9 .3^7 .5.7.
+ * A008581 Molien series for 6-dimensional complex reflection group 4.U_4 <code>(3)</code> of order <code>2^9 </code>.3^7 .5.7.
  * @author Sean A. Irvine
  */
 public class A008581 implements Sequence {

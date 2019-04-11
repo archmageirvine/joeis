@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061263 a(n) = floor(n^3/9).
+ * A061263 <code>a(n) = floor(n^3/9)</code>.
  * @author Sean A. Irvine
  */
 public class A061263 extends LinearRecurrence {

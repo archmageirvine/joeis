@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050271 Numbers n such that n = floor(sqrt(n)*ceiling(sqrt(n))).
+ * A050271 Numbers n such that <code>n =</code> floor(sqrt(n)*ceiling(sqrt(n))).
  * @author Sean A. Irvine
  */
 public class A050271 extends LinearRecurrence {

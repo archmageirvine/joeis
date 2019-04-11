@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099517 A transform of (1-x)/(1-2x).
+ * A099517 A transform of <code>(1-x)/(1-2x)</code>.
  * @author Sean A. Irvine
  */
 public class A099517 extends LinearRecurrence {

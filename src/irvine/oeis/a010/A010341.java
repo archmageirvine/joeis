@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010341 Sum of all terms except last in period of continued fraction for sqrt(n).
+ * A010341 Sum of all terms except last in period of continued fraction for <code>sqrt(n)</code>.
  * @author Sean A. Irvine
  */
 public class A010341 implements Sequence {

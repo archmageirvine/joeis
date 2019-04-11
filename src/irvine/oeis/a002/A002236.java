@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002236 Numbers n such that 9*2^n - 1 is prime.
+ * A002236 Numbers n such that <code>9*2^n - 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A002236 implements Sequence {

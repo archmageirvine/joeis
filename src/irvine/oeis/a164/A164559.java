@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164559 a(n) = 6^n/3 - 1.
+ * A164559 <code>a(n) = 6^n/3 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A164559 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005436 Number of convex polygons of perimeter 2n on square lattice.
+ * A005436 Number of convex polygons of perimeter <code>2n</code> on square lattice.
  * @author Sean A. Irvine
  */
 public class A005436 implements Sequence {

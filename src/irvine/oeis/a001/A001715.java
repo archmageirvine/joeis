@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001715 a(n) = n!/6.
+ * A001715 <code>a(n) = n!/6</code>.
  * @author Sean A. Irvine
  */
 public class A001715 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008788 a(n) = n^(n+2).
+ * A008788 <code>a(n) = n^(n+2)</code>.
  * @author Sean A. Irvine
  */
 public class A008788 implements Sequence {

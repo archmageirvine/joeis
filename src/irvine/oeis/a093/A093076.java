@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A093076 Number of steps to factor n!+1 using Fermat's factorization method.
+ * A093076 Number of steps to factor <code>n!+1</code> using Fermat's factorization method.
  * @author Sean A. Irvine
  */
 public class A093076 implements Sequence {

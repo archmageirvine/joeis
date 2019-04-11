@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034324 (n-3)(n-2)(n-1)+n. 
+ * A034324 <code>(n-3)(n-2)(n-1)+n</code>.
  * @author Georg Fischer
  */
 public class A034324 extends LinearRecurrence {

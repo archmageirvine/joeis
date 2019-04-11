@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090591 Expansion of g.f.: 1/(1 - 2*x + 8*x^2).
+ * A090591 Expansion of g.f.: <code>1/(1 - 2*x + 8*x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A090591 extends LinearRecurrence {

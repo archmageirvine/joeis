@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173737 (10^n+44)/9 for n&gt;0.
+ * A173737 <code>(10^n+44)/9</code> for <code>n&gt;0</code>.
  * @author Sean A. Irvine
  */
 public class A173737 extends LinearRecurrence {

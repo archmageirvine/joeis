@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171827 Nonnegative integers that can be made by using exactly four fours (4 4's) and the four basic operators {+, -, *, /}.
+ * A171827 Nonnegative integers that can be made by using exactly four fours <code>(4</code> 4's) and the four basic operators <code>{+, -, *, /}</code>.
  * @author Georg Fischer
  */
 public class A171827 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020538 a(n) = 4th Chebyshev polynomial (first kind) evaluated at 2^n.
+ * A020538 <code>a(n) =</code> 4th Chebyshev polynomial (first kind) evaluated at <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A020538 extends LinearRecurrence {

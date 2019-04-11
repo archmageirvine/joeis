@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161478 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+113)^2 = y^2.
+ * A161478 Nonnegative values x of solutions <code>(x,</code> y) to the Diophantine equation <code>x^2+(x+113)^2 =</code> y^2.
  * @author Sean A. Irvine
  */
 public class A161478 extends LinearRecurrence {

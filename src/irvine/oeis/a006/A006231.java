@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000522;
 
 /**
- * A006231 a(n) = Sum_{k=2..n} n(n-1)...(n-k+1)/k.
+ * A006231 <code>a(n) =</code> Sum_{k=2..n} <code>n(n-1)</code>...(n-k+1)/k.
  * @author Sean A. Irvine
  */
 public class A006231 extends A000522 {

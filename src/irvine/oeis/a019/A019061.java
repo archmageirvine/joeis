@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019061 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite THO = Thomsonite Na4Ca8[ Al20Si20O80 ] . 24 H2O.
+ * A019061 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite THO = Thomsonite Na4Ca8[ Al20Si20O80 <code>] </code>. 24 H2O.
  * @author Sean A. Irvine
  */
 public class A019061 extends A018940 {

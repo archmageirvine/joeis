@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015657 Number of ordered 5-tuples of integers from [ 2,n ] with no common factors among triples.
+ * A015657 Number of ordered 5-tuples of integers from <code>[ 2,n ]</code> with no common factors among triples.
  * @author Sean A. Irvine
  */
 public class A015657 extends A015656 {

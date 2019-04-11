@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004188 a(n) = n*(3*n^2 - 1)/2.
+ * A004188 <code>a(n) = n*(3*n^2 - 1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A004188 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015634 Number of ordered quadruples of integers from [ 1,n ] with no global factor.
+ * A015634 Number of ordered quadruples of integers from <code>[ 1,n ]</code> with no global factor.
  * @author Sean A. Irvine
  */
 public class A015634 implements Sequence {

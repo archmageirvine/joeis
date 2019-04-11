@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008849 Numbers n such that the sum of divisors of n^3 is a square.
+ * A008849 Numbers n such that the sum of divisors of <code>n^3</code> is a square.
  * @author Sean A. Irvine
  */
 public class A008849 implements Sequence {

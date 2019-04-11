@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001100 Triangle read by rows: T(n,k) = number of permutations of length n with exactly k rising or falling successions, for n &gt;= 1, 0 &lt;= k &lt;= n-1.
+ * A001100 Triangle read by rows: T(n,k) = number of permutations of length n with exactly k rising or falling successions, for <code>n &gt;= 1, 0 &lt;=</code> k <code>&lt;= n-1</code>.
  * @author Sean A. Irvine
  */
 public class A001100 implements Sequence {

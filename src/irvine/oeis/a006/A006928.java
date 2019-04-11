@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000002;
 
 /**
- * A006928 a(n) = length of (n+1)st run, with initial terms 1, 2.
+ * A006928 <code>a(n) =</code> length of (n+1)st run, with initial terms <code>1, 2</code>.
  * @author Sean A. Irvine
  */
 public class A006928 extends PrependSequence {

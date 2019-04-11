@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304513 a(n) = 57*2^(n-1) - 38 (n &gt;= 1). 
+ * A304513 <code>a(n) = 57*2^(n-1) - 38 (n &gt;= 1)</code>.
  * @author Georg Fischer
  */
 public class A304513 extends LinearRecurrence {

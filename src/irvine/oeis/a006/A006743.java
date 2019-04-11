@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006743 Number of convex polygons of length 2n on honeycomb, or EG-convex polyominoes.
+ * A006743 Number of convex polygons of length <code>2n</code> on honeycomb, or EG-convex polyominoes.
  * @author Sean A. Irvine
  */
 public class A006743 implements Sequence {

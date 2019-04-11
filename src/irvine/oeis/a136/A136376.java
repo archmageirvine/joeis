@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136376 a(n) = n*F(n) + (n-1)*F(n-1).
+ * A136376 <code>a(n) =</code> n*F(n) + (n-1)*F(n-1).
  * @author Sean A. Irvine
  */
 public class A136376 extends LinearRecurrence {

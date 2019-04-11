@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024006 a(n) = 1 - n^8.
+ * A024006 <code>a(n) = 1 - n^8</code>.
  * @author Sean A. Irvine
  */
 public class A024006 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024862 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = floor( n/2 ), s = natural numbers, t = odd natural numbers.
+ * A024862 <code>a(n) =</code> s(1)t(n) + s(2)t(n-1) <code>+ </code>... + s(k)t(n-k+1), where k <code>= floor( n/2 ),</code> s = natural numbers, t = odd natural numbers.
  * @author Sean A. Irvine
  */
 public class A024862 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071231 a(n) = (n^8 + n^4)/2.
+ * A071231 <code>a(n) = (n^8 + n^4)/2</code>.
  * @author Sean A. Irvine
  */
 public class A071231 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A010063 a(n+1) = a(n) + sum of digits in base 3 representation of a(n), with a(0) = 1.
+ * A010063 <code>a(n+1) = a(n) +</code> sum of digits in base 3 representation of <code>a(n),</code> with <code>a(0) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A010063 implements Sequence {

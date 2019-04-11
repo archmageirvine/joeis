@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228603 a(1) = 9, a(2) = 44, a(n) = 4*(a(n-1) + a(n-2)) (n &gt;=3).
+ * A228603 <code>a(1) = 9, a(2) = 44, a(n) = 4*(a(n-1) + a(n-2)) (n &gt;=3)</code>.
  * @author Sean A. Irvine
  */
 public class A228603 extends LinearRecurrence {

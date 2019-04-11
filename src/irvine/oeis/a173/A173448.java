@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A173448 Smallest prime(k) such that the concatenation prime(k)//prime(k+1)//...//prime(k+n-1) represents an emirp.
+ * A173448 Smallest prime(k) such that the concatenation prime(k)//prime(k+1)//...//prime(k+n-1) represents <code>an</code> emirp.
  * @author Sean A. Irvine
  */
 public class A173448 implements Sequence {

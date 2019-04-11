@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003788 Order of universal Chevalley group A_n (4).
+ * A003788 Order of universal Chevalley group A_n <code>(4)</code>.
  * @author Sean A. Irvine
  */
 public class A003788 extends A003787 {

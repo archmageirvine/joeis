@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007865 Number of sum-free subsets of {1, ..., n}.
+ * A007865 Number of sum-free subsets of <code>{1, </code>..., <code>n}</code>.
  * @author Sean A. Irvine
  */
 public class A007865 implements Sequence {

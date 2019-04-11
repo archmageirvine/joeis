@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166153 a(n) = (7^n+14*(-8)^n)/15. 
+ * A166153 <code>a(n) = (7^n+14*(-8)^n)/15</code>.
  * @author Georg Fischer
  */
 public class A166153 extends LinearRecurrence {

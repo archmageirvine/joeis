@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045809 9-ish numbers (end in 13, 37, 59, 91).
+ * A045809 9-ish numbers (end in <code>13, 37, 59, 91)</code>.
  * @author Sean A. Irvine
  */
 public class A045809 extends LinearRecurrence {

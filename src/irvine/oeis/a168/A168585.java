@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168585 Number of ways of partitioning the multiset {1,1,2,3,...,n-1} into exactly five nonempty parts.
+ * A168585 Number of ways of partitioning the multiset <code>{1,1,2,3,</code>...,n-1} into exactly five nonempty parts.
  * @author Sean A. Irvine
  */
 public class A168585 extends LinearRecurrence {

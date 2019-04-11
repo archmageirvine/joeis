@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012000 G.f.: 1/sqrt(1 - 4*x + 16*x^2).
+ * A012000 G.f.: <code>1/sqrt(1 - 4*x + 16*x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A012000 implements Sequence {

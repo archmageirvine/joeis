@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228006 Smallest composite numbers with multiplicative digital root value 0 &lt;= n &lt;= 9.
+ * A228006 Smallest composite numbers with multiplicative digital root value <code>0 &lt;= n &lt;= 9</code>.
  * @author Georg Fischer
  */
 public class A228006 extends FiniteSequence {

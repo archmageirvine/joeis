@@ -8,7 +8,7 @@ import irvine.oeis.InverseMobiusTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A002791 a(n) = Sum_{d|n, d &lt;= 4} d^2 + 4*Sum_{d|n, d&gt;4} d.
+ * A002791 <code>a(n) =</code> Sum_{d|n, d <code>&lt;= 4}</code> d^2 + 4*Sum_{d|n, d&gt;4} d.
  * @author Sean A. Irvine
  */
 public class A002791 extends InverseMobiusTransformSequence {

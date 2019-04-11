@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006955 Denominator of (2n+1) B_{2n}, where B_n are the Bernoulli numbers.
+ * A006955 Denominator of <code>(2n+1)</code> B_{2n}, where B_n are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A006955 implements Sequence {

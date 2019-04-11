@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002326 Multiplicative order of 2 mod 2n+1.
+ * A002326 Multiplicative order of <code>2 mod 2n+1</code>.
  * @author Sean A. Irvine
  */
 public class A002326 implements Sequence {

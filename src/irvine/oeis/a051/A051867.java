@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051867 15-gonal (or pentadecagonal) numbers: n(13n-11)/2.
+ * A051867 15-gonal (or pentadecagonal) numbers: <code>n(13n-11)/2</code>.
  * @author Sean A. Irvine
  */
 public class A051867 extends LinearRecurrence {

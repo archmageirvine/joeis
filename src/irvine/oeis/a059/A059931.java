@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059931 Numbers n such that n and n^(1/2) combined use different digits.
+ * A059931 Numbers n such that n and <code>n^(1/2)</code> combined use different digits.
  * @author Georg Fischer
  */
 public class A059931 extends FiniteSequence {

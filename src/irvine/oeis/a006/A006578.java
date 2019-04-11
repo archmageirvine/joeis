@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006578 Triangular numbers plus quarter squares: n*(n+1)/2 + floor(n^2/4) (i.e., A000217(n) + A002620(n)).
+ * A006578 Triangular numbers plus quarter squares: <code>n*(n+1)/2 + floor(n^2/4)</code> (i.e., A000217(n) + A002620(n)).
  * @author Sean A. Irvine
  */
 public class A006578 implements Sequence {

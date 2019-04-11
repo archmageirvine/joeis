@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242810 a(n) is the smallest n-digit number whose truncation after its first k digits is divisible by the k-th Lucas number (A000032(n)) for k = 1..n.
+ * A242810 <code>a(n)</code> is the smallest n-digit number whose truncation after its first k digits is divisible by the k-th Lucas number (A000032(n)) for k <code>= 1</code>..n.
  * @author Georg Fischer
  */
 public class A242810 extends FiniteSequence {

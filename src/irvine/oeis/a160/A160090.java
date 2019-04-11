@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160090 Positive numbers y such that y^2 is of the form x^2 + (x + 569)^2 with integer x. 
+ * A160090 Positive numbers y such that y^2 is of the form <code>x^2 + (x + 569)^2</code> with integer x.
  * @author Georg Fischer
  */
 public class A160090 extends LinearRecurrence {

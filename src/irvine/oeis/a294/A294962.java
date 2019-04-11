@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A294962 a(n) is the total number of elements after n-th stage of a hybrid (and finite) cellular automaton formed by toothpicks, D-toothpicks and T-toothpicks on the infinite square grid (see Comments lines for precise definition).
+ * A294962 <code>a(n)</code> is the total number of elements after n-th stage of a hybrid (and finite) cellular automaton formed by toothpicks, D-toothpicks and T-toothpicks on the infinite square grid (see Comments lines for precise definition).
  * @author Georg Fischer
  */
 public class A294962 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A050947 Values of Soviet money, 1961-1991 (in kopecks; 100 kopecks = 1 rouble).
+ * A050947 Values of Soviet money, <code>1961-1991</code> (in kopecks; 100 kopecks <code>= 1</code> rouble).
  * @author Georg Fischer
  */
 public class A050947 extends FiniteSequence {

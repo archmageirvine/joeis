@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270205 Number of 2 X 2 planar subsets in an n X n X n cube.
+ * A270205 Number of 2 X 2 planar subsets in <code>an n</code> X n X n cube.
  * @author Sean A. Irvine
  */
 public class A270205 extends LinearRecurrence {

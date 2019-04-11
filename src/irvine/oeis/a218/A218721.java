@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218721 a(n) = (18^n-1)/17.
+ * A218721 <code>a(n) = (18^n-1)/17</code>.
  * @author Sean A. Irvine
  */
 public class A218721 extends LinearRecurrence {

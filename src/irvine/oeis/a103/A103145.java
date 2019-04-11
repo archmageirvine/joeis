@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103145 a(n) = (1/6)*(n^3 + 21*n^2 + 74*n + 18).
+ * A103145 <code>a(n) = (1/6)*(n^3 + 21*n^2 + 74*n + 18)</code>.
  * @author Sean A. Irvine
  */
 public class A103145 extends LinearRecurrence {

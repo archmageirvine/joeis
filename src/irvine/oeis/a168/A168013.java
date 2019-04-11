@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A168013 a(n) = Sum of all divisors of all numbers &lt; (n+1)^2.
+ * A168013 <code>a(n) =</code> Sum of all divisors of all numbers <code>&lt; (n+1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A168013 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000466 a(n) = 4*n^2 - 1.
+ * A000466 <code>a(n) = 4*n^2 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A000466 implements Sequence {

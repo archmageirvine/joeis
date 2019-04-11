@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000352 One half of the number of permutations of [n] such that the differences have three runs with the same signs.
+ * A000352 One half of the number of permutations of <code>[n]</code> such that the differences have three runs with the same signs.
  * @author Sean A. Irvine
  */
 public class A000352 implements Sequence {

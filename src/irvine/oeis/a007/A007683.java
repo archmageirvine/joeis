@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007683 a(1) = 1; a(n) = -Sum_{k = 1..n-1} (n+k)!a(k)/(2k)!.
+ * A007683 <code>a(1) = 1</code>; <code>a(n) =</code> -Sum_{k <code>= 1</code>..n-1} (n+k)!a(k)/(2k)!.
  * @author Sean A. Irvine
  */
 public class A007683 extends MemorySequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019461 Add 1, multiply by 1, add 2, multiply by 2, etc.; start with 0.
+ * A019461 Add <code>1,</code> multiply by <code>1,</code> add <code>2,</code> multiply by <code>2,</code> etc.; start with 0.
  * @author Sean A. Irvine
  */
 public class A019461 implements Sequence {

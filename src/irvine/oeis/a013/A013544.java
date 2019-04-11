@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013544 Numerator of the coefficient [x^(2n+1)] of tanh(cosec(x)-coth(x)).
+ * A013544 Numerator of the coefficient <code>[x^(2n+1)]</code> of tanh(cosec(x)-coth(x)).
  * @author Sean A. Irvine
  */
 public class A013544 implements Sequence {

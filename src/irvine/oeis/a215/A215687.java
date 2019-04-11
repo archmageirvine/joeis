@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215687 Number of solid standard Young tableaux of shape [[2*n,2],[2]].
+ * A215687 Number of solid standard Young tableaux of shape <code>[[2*n,2],[2]]</code>.
  * @author Sean A. Irvine
  */
 public class A215687 extends LinearRecurrence {

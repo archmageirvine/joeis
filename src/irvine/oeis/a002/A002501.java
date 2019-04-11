@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002501 7^n - 3*4^n + 2*3^n.
+ * A002501 <code>7^n - 3*4^n + 2*3^n</code>.
  * @author Sean A. Irvine
  */
 public class A002501 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273624 a(n) = (1/11)*(Fibonacci(4*n) + Fibonacci(6*n)).
+ * A273624 <code>a(n) =</code> (1/11)*(Fibonacci(4*n) + Fibonacci(6*n)).
  * @author Sean A. Irvine
  */
 public class A273624 extends LinearRecurrence {

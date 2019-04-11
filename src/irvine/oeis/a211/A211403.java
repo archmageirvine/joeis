@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A211403 The smallest n-digit number where last k digits are divisible by k-th prime for k = 1..n.
+ * A211403 The smallest n-digit number where last k digits are divisible by k-th prime for k <code>= 1</code>..n.
  * @author Georg Fischer
  */
 public class A211403 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A153753 Numbers n such that there are 18 digits in n^2 and for each factor f of 18 (1,2,3,6,9) the sum of digit groupings of size f is a square.
+ * A153753 Numbers n such that there are 18 digits in <code>n^2</code> and for each factor f of <code>18 (1,2,3,6,9)</code> the sum of digit groupings of size f is a square.
  * @author Georg Fischer
  */
 public class A153753 extends FiniteSequence {

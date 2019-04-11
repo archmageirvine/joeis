@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291404 p-INVERT of (1,1,0,0,0,0,...), where p(S) = 1 - S^2 - 2 S^4.
+ * A291404 p-INVERT of <code>(1,1,0,0,0,0,</code>...), where p(S) <code>= 1 -</code> S^2 <code>- 2</code> S^4.
  * @author Sean A. Irvine
  */
 public class A291404 extends LinearRecurrence {

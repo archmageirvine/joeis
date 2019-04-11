@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055658 Number of (3,n)-partitions of a chain of length n^2.
+ * A055658 Number of <code>(3</code>,n)-partitions of a chain of length <code>n^2</code>.
  * @author Sean A. Irvine
  */
 public class A055658 extends LinearRecurrence {

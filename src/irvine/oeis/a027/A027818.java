@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027818 a(n) = (n+1)*binomial(n+6,6).
+ * A027818 <code>a(n) =</code> (n+1)*binomial(n+6,6).
  * @author Sean A. Irvine
  */
 public class A027818 extends LinearRecurrence {

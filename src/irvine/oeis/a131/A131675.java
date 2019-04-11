@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131675 a(n) = (Product_{i=1..5} n^i+i)/5!.
+ * A131675 <code>a(n) =</code> (Product_{i=1..5} n^i+i)/5!.
  * @author Sean A. Irvine
  */
 public class A131675 extends LinearRecurrence {

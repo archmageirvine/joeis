@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A006028 Weight distribution of [ 128,99,8 ] 4th order Reed-Muller code RM(4,7).
+ * A006028 Weight distribution of <code>[ 128,99,8 ]</code> 4th order Reed-Muller code RM(4,7).
  * @author Sean A. Irvine
  */
 public class A006028 extends FiniteSequence {

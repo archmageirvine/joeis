@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048271 a(0) = 1, a(n+1) = -3*a(n) mod 11.
+ * A048271 <code>a(0) = 1, a(n+1) = -3*a(n) mod 11</code>.
  * @author Sean A. Irvine
  */
 public class A048271 extends LinearRecurrence {

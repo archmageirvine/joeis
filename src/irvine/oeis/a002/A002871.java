@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002871 a(n) = max_{k=0..n} 2^k*A048993(n,k).
+ * A002871 <code>a(n) =</code> max_{k=0..n} 2^k*A048993(n,k).
  * @author Sean A. Irvine
  */
 public class A002871 implements Sequence {

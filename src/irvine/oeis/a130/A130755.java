@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130755 Binomial transform of periodic sequence (3, 1, 2).
+ * A130755 Binomial transform of periodic sequence <code>(3, 1, 2)</code>.
  * @author Sean A. Irvine
  */
 public class A130755 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303692 a(n) = n^2*(2*n - 3 - (-1)^n)/4. 
+ * A303692 <code>a(n) = n^2*(2*n - 3 - (-1)^n)/4</code>.
  * @author Georg Fischer
  */
 public class A303692 extends LinearRecurrence {

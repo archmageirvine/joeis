@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138826 Concatenation of 2n-1 digits 1, n digits 0 and 2n-1 digits 1.
+ * A138826 Concatenation of <code>2n-1</code> digits <code>1, n</code> digits 0 and <code>2n-1</code> digits 1.
  * @author Sean A. Irvine
  */
 public class A138826 extends LinearRecurrence {

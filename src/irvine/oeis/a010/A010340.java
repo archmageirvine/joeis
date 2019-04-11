@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010340 Sum of terms in period of continued fraction for sqrt(n).
+ * A010340 Sum of terms in period of continued fraction for <code>sqrt(n)</code>.
  * @author Sean A. Irvine
  */
 public class A010340 implements Sequence {

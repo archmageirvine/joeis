@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000620 Number of monosubstituted alkanes C(n-1)H(2n-1)-X with n-1 carbon atoms that are stereoisomers.
+ * A000620 Number of monosubstituted alkanes C(n-1)H(2n-1)-X with <code>n-1</code> carbon atoms that are stereoisomers.
  * @author Sean A. Irvine
  */
 public class A000620 implements Sequence, Serializable {

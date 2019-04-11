@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180445 All positive solutions, x, for each of two Diophantine equations noted by Richard K. Guy.
+ * A180445 All positive solutions, <code>x,</code> for each of two Diophantine equations noted by Richard K. Guy.
  * @author Georg Fischer
  */
 public class A180445 extends FiniteSequence {

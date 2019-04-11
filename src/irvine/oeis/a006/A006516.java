@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006516 a(n) = 2^(n-1)*(2^n - 1), n &gt;= 0.
+ * A006516 <code>a(n) = 2^(n-1)*(2^n - 1), n &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A006516 implements Sequence {

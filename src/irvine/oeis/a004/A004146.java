@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004146 Alternate Lucas numbers - 2.
+ * A004146 Alternate Lucas numbers <code>- 2</code>.
  * @author Sean A. Irvine
  */
 public class A004146 implements Sequence {

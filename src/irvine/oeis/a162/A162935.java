@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162935 Highly composite numbers (A002182) with property that the next highly composite number is more than 3/2 times greater.
+ * A162935 Highly composite numbers (A002182) with property that the next highly composite number is more than <code>3/2</code> times greater.
  * @author Georg Fischer
  */
 public class A162935 extends FiniteSequence {

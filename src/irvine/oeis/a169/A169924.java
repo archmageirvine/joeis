@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169924 Values of n &gt;= 0 such that 4*n-40+360/(n+9) is an integer.
+ * A169924 Values of <code>n &gt;= 0</code> such that <code>4*n-40+360/(n+9)</code> is <code>an</code> integer.
  * @author Georg Fischer
  */
 public class A169924 extends FiniteSequence {

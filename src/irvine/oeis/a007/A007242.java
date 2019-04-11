@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000521;
 
 /**
- * A007242 McKay-Thompson series of class 2a for the Monster group.
+ * A007242 McKay-Thompson series of class <code>2a</code> for the Monster group.
  * @author Sean A. Irvine
  */
 public class A007242 extends A000521 {

@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157411 a(n) = 30*n^4 - 120*n^3 + 120*n^2 - 19.
+ * A157411 <code>a(n) = 30*n^4 - 120*n^3 + 120*n^2 - 19</code>.
  * @author Sean A. Irvine
  */
 public class A157411 extends LinearRecurrence {

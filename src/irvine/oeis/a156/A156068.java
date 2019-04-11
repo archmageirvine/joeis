@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156068 The slowest increasing sequence such that there is no common digit between any two integers from {a(n), a(n-1), a(n-2), c=a(n)+a(n-1)+a(n-2)}.
+ * A156068 The slowest increasing sequence such that there is no common digit between any two integers from <code>{a(n), a(n-1), a(n-2),</code> c=a(n)+a(n-1)+a(n-2)}.
  * @author Georg Fischer
  */
 public class A156068 extends FiniteSequence {

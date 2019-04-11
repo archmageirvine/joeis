@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038731 Number of columns in all directed column-convex polyominoes of area n+1.
+ * A038731 Number of columns in all directed column-convex polyominoes of area <code>n+1</code>.
  * @author Sean A. Irvine
  */
 public class A038731 extends LinearRecurrence {

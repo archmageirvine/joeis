@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276670 Numerator of (n-1)*n*(n+1)/4.
+ * A276670 Numerator of <code>(n-1)*n*(n+1)/4</code>.
  * @author Sean A. Irvine
  */
 public class A276670 extends LinearRecurrence {

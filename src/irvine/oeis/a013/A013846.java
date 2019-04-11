@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013846 a(n) = 8^(5*n + 1).
+ * A013846 <code>a(n) = 8^(5*n + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A013846 implements Sequence {

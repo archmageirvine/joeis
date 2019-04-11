@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002387;
 
 /**
- * A004080 Least k such that H(k) &gt;= n, where H(k) is the harmonic number sum_{i=1..k} 1/i.
+ * A004080 Least k such that H(k) <code>&gt;= n,</code> where H(k) is the harmonic number sum_{i=1..k} 1/i.
  * @author Sean A. Irvine
  */
 public class A004080 extends A002387 {

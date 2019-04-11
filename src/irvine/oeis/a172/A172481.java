@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172481 a(n) = (3*n*2^n+2^(n+4)+2*(-1)^n)/18.
+ * A172481 <code>a(n) = (3*n*2^n+2^(n+4)+2*(-1)^n)/18</code>.
  * @author Sean A. Irvine
  */
 public class A172481 extends LinearRecurrence {

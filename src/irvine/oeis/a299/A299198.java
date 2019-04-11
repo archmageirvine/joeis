@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299198 a(n) = n^4/6 - 2*n^3/3 - n^2/6 + 5*n/3 + 1. 
+ * A299198 <code>a(n) = n^4/6 - 2*n^3/3 - n^2/6 + 5*n/3 + 1</code>.
  * @author Georg Fischer
  */
 public class A299198 extends LinearRecurrence {

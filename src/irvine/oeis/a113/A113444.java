@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113444 a(n) = a(n-1) + Sum_{0&lt;k&lt;=n/5} a(n-5k) with a(0)=1.
+ * A113444 <code>a(n) = a(n-1) +</code> Sum_{0&lt;k&lt;=n/5} a(n-5k) with <code>a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A113444 extends LinearRecurrence {

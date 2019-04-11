@@ -5,7 +5,7 @@ import irvine.math.group.IntegersMod;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A145753 a(n) = number of elements of order n in simple group Alt(8) of order 20160.
+ * A145753 <code>a(n) =</code> number of elements of order n in simple group Alt(8) of order 20160.
  * @author Sean A. Irvine
  */
 public class A145753 extends OrdersFiniteGroupSequence {

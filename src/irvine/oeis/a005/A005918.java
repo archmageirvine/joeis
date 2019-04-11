@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005918 Number of points on surface of square pyramid: 3*n^2 + 2 (n&gt;0).
+ * A005918 Number of points on surface of square pyramid: <code>3*n^2 + 2 (n&gt;0)</code>.
  * @author Sean A. Irvine
  */
 public class A005918 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273622 a(n) = (1/3)*(Lucas(3*n) - Lucas(n)).
+ * A273622 <code>a(n) =</code> (1/3)*(Lucas(3*n) - Lucas(n)).
  * @author Sean A. Irvine
  */
 public class A273622 extends LinearRecurrence {

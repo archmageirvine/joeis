@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075665 Sum of next n 4th powers. i^s, s = 4.
+ * A075665 Sum of next n 4th powers. i^s, s <code>= 4</code>.
  * @author Sean A. Irvine
  */
 public class A075665 extends LinearRecurrence {

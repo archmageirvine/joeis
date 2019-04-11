@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215147 For n odd, a(n)= 1^2+2^2+3^2+...+n^2; for n even, a(n)=(1^2+2^2+3^2+...+n^2) + 1.
+ * A215147 For n odd, <code>a(n)= 1^2+2^2+3^2+</code>...+n^2; for n even, <code>a(n)=(1^2+2^2+3^2+</code>...+n^2) <code>+ 1</code>.
  * @author Sean A. Irvine
  */
 public class A215147 extends LinearRecurrence {

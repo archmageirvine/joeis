@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001202 a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1).
+ * A001202 <code>a(1)=0, a(2n) = a(n)+1, a(2n+1) = 10*a(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A001202 extends MemorySequence {

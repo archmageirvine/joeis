@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292027 a(n) = a(n-7) + a(n-11), starting a(0)=a(1)=...= a(10) = 1. 
+ * A292027 <code>a(n) = a(n-7) + a(n-11),</code> starting <code>a(0)=a(1)=</code>...= <code>a(10) = 1</code>.
  * @author Georg Fischer
  */
 public class A292027 extends LinearRecurrence {

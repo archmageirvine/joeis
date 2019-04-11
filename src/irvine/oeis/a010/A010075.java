@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A010075 a(n) = sum of base-8 digits of a(n-1) + sum of base-8 digits of a(n-2).
+ * A010075 <code>a(n) =</code> sum of base-8 digits of <code>a(n-1) +</code> sum of base-8 digits of <code>a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A010075 implements Sequence {

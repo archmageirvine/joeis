@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018230 Numbers n such that normalizer of Gamma_0(n) is triangle group (2,6,inf).
+ * A018230 Numbers n such that normalizer of Gamma_0(n) is triangle group <code>(2,6</code>,inf).
  * @author Sean A. Irvine
  */
 public class A018230 extends FiniteSequence {

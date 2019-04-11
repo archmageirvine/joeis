@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A121996 Sums of two squares mod 100.
+ * A121996 Sums of two squares <code>mod 100</code>.
  * @author Georg Fischer
  */
 public class A121996 extends FiniteSequence {

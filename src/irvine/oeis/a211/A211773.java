@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211773 Prime-generating polynomial: 2*n^2 - 108*n + 1259.
+ * A211773 Prime-generating polynomial: <code>2*n^2 - 108*n + 1259</code>.
  * @author Sean A. Irvine
  */
 public class A211773 extends LinearRecurrence {

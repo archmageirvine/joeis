@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178798 Expansion of the polynomial x^36*(x^12-1)*(x^9+1)*(x^8-1)*(x^6-1)*(x^5-1)*(x^2-1) in increasing powers of x.
+ * A178798 Expansion of the polynomial <code>x^36*(x^12-1)*(x^9+1)*(x^8-1)*(x^6-1)*(x^5-1)*(x^2-1)</code> in increasing powers of x.
  * @author Georg Fischer
  */
 public class A178798 extends FiniteSequence {

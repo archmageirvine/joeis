@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019566 Unique numbers: 1-1, 21-12, 321-123, ..., 10987654321-12345678910, 1110987654321-1234567891011, etc.
+ * A019566 Unique numbers: <code>1-1, 21-12, 321-123, </code>..., <code>10987654321-12345678910, 1110987654321-1234567891011,</code> etc.
  * @author Sean A. Irvine
  */
 public class A019566 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278834 Record values of A004090(n) - n, where A004090 is the sum of digits of the Fibonacci numbers A000045.
+ * A278834 Record values of A004090(n) <code>- n,</code> where A004090 is the sum of digits of the Fibonacci numbers A000045.
  * @author Georg Fischer
  */
 public class A278834 extends FiniteSequence {

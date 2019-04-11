@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a008.A008966;
 
 /**
- * A013928 Number of (positive) squarefree numbers &lt; n.
+ * A013928 Number of (positive) squarefree numbers <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A013928 extends PartialSumSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004996 a(n) = 6^n/n!*product[ k=0..n-1 ](6*k - 1).
+ * A004996 <code>a(n) =</code> 6^n/n!*product[ k=0..n-1 ](6*k <code>- 1)</code>.
  * @author Sean A. Irvine
  */
 public class A004996 implements Sequence {

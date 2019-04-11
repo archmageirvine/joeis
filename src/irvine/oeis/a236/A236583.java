@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236583 The number of tilings of an 8 X (3n) floor with 2 X 3 hexominoes.
+ * A236583 The number of tilings of <code>an 8</code> X <code>(3n) floor</code> with 2 X 3 hexominoes.
  * @author Sean A. Irvine
  */
 public class A236583 extends LinearRecurrence {

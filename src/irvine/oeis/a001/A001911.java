@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001911 a(n) = Fibonacci(n+3) - 2.
+ * A001911 <code>a(n) =</code> Fibonacci(n+3) <code>- 2</code>.
  * @author Sean A. Irvine
  */
 public class A001911 extends A000045 {

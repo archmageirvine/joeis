@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069477 a(n) = 60*n^2 + 180*n + 150.
+ * A069477 <code>a(n) = 60*n^2 + 180*n + 150</code>.
  * @author Sean A. Irvine
  */
 public class A069477 extends LinearRecurrence {

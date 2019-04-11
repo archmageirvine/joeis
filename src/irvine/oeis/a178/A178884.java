@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178884 a(n) = number of 9-digit primes with digit sum n, where n runs through the non-multiples of 3 in the range [2..80].
+ * A178884 <code>a(n) =</code> number of 9-digit primes with digit sum <code>n,</code> where n runs through the non-multiples of 3 in the range <code>[2</code>..80].
  * @author Georg Fischer
  */
 public class A178884 extends FiniteSequence {

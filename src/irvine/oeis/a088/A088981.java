@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088981 a(n+2) = a(n+1) + a(n) - [(2*n)+1] where a(0)=7, a(1)=11.
+ * A088981 <code>a(n+2) = a(n+1) + a(n) - [(2*n)+1]</code> where <code>a(0)=7, a(1)=11</code>.
  * @author Sean A. Irvine
  */
 public class A088981 extends LinearRecurrence {

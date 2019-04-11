@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320660 Number of business cards required to build an origami level n Jerusalem cube. 
+ * A320660 Number of business cards required to build <code>an</code> origami level n Jerusalem cube.
  * @author Georg Fischer
  */
 public class A320660 extends LinearRecurrence {

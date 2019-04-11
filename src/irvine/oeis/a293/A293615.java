@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293615 a(n) = Pochhammer(n, 5) / 2. 
+ * A293615 <code>a(n) =</code> Pochhammer(n, <code>5) / 2</code>.
  * @author Georg Fischer
  */
 public class A293615 extends LinearRecurrence {

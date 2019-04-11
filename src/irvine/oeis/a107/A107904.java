@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107904 Expansion of (1+6x)/(1-12x^2).
+ * A107904 Expansion of <code>(1+6x)/(1-12x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A107904 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A222067 Decimal expansion of 1/(8*sqrt(3)).
+ * A222067 Decimal expansion of <code>1/(8*sqrt(3))</code>.
  * @author Sean A. Irvine
  */
 public class A222067 extends DecimalExpansionSequence {

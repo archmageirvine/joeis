@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019010 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite EAB = TMA-E (Aiello and Barrer)(1) (Me4N)2Na7[ Al9Si27O7.
+ * A019010 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite EAB = TMA-E (Aiello and Barrer)(1) (Me4N)2Na7[ Al9Si27O7.
  * @author Sean A. Irvine
  */
 public class A019010 extends A018940 {

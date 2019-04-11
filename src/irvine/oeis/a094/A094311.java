@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094311 n(1+n^2)((2+n^2)^2-n^2)/16.
+ * A094311 <code>n(1+n^2)((2+n^2)^2-n^2)/16</code>.
  * @author Sean A. Irvine
  */
 public class A094311 extends LinearRecurrence {

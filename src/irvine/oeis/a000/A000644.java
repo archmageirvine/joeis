@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A000644 Loops of length 4n on square grid that turn at each step and return to start in original direction.
+ * A000644 Loops of length <code>4n</code> on square grid that turn at each step and return to start in original direction.
  * @author Sean A. Irvine
  */
 public class A000644 implements Sequence {

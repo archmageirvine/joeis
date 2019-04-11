@@ -3,7 +3,7 @@ package irvine.oeis.a021;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A021823 Decimal expansion of 1/819.
+ * A021823 Decimal expansion of <code>1/819</code>.
  * @author Sean A. Irvine
  */
 public class A021823 extends LinearRecurrence {

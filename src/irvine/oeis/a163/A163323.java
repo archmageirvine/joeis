@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163323 The 4th Hermite Polynomial evaluated at n: H_4(n) = 16n^4 - 48n^2 + 12.
+ * A163323 The 4th Hermite Polynomial evaluated at n: H_4(n) <code>= 16n^4 - 48n^2 + 12</code>.
  * @author Sean A. Irvine
  */
 public class A163323 extends LinearRecurrence {

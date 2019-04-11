@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010031 Weight distribution of any one of the five doubly-even binary [32,16,8] codes (quadratic residue, Reed-Muller, etc.).
+ * A010031 Weight distribution of any one of the five doubly-even binary <code>[32,16,8]</code> codes (quadratic residue, Reed-Muller, etc.).
  * @author Sean A. Irvine
  */
 public class A010031 extends FiniteSequence {

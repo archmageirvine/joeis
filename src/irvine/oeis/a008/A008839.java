@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008839 Numbers n such that the decimal expansion of 5^n contains no zeros.
+ * A008839 Numbers n such that the decimal expansion of <code>5^n</code> contains no zeros.
  * @author Sean A. Irvine
  */
 public class A008839 implements Sequence {

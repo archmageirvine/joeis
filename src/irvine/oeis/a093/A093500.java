@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093500 a(n) = (15*n^2 + 5*n + 2)/2.
+ * A093500 <code>a(n) = (15*n^2 + 5*n + 2)/2</code>.
  * @author Sean A. Irvine
  */
 public class A093500 extends LinearRecurrence {

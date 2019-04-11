@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276288 a(n) = a(n-1) + 3*a(n-2) if n is even, else a(n) = 3*a(n-1) + a(n-2), a(0)=0, a(1)=1.
+ * A276288 <code>a(n) = a(n-1) + 3*a(n-2)</code> if n is even, else <code>a(n) = 3*a(n-1) + a(n-2), a(0)=0, a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A276288 extends LinearRecurrence {

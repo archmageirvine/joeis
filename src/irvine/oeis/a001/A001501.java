@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001501 Number of n X n 0-1 matrices with all column and row sums equal to 3.
+ * A001501 Number of n X <code>n 0-1</code> matrices with all column and row sums equal to 3.
  * @author Sean A. Irvine
  */
 public class A001501 implements Sequence {

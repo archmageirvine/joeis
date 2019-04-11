@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135827 Moves for corner 3-cycles (brd,urb,ulb) in a 3 X 3 X 3 Rubik's Cube.
+ * A135827 Moves for corner 3-cycles (brd,urb,ulb) in <code>a 3</code> X 3 X 3 Rubik's Cube.
  * @author Georg Fischer
  */
 public class A135827 extends FiniteSequence {

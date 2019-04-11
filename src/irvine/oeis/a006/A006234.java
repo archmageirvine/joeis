@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006234 a(n) = n*3^(n-4).
+ * A006234 <code>a(n) = n*3^(n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A006234 implements Sequence {

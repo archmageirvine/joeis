@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225209 a(n) = (392*16^n -1620*8^n +1890*4^n -767)/105.
+ * A225209 <code>a(n) = (392*16^n -1620*8^n +1890*4^n -767)/105</code>.
  * @author Sean A. Irvine
  */
 public class A225209 extends LinearRecurrence {

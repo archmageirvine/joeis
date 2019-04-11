@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227451 Number whose binary expansion encodes via runlengths the partition that is at the top of the main trunk of Bulgarian solitaire game tree drawn for the deck with n(n+1)/2 cards. 
+ * A227451 Number whose binary expansion encodes via runlengths the partition that is at the top of the main trunk of Bulgarian solitaire game tree drawn for the deck with <code>n(n+1)/2</code> cards.
  * @author Georg Fischer
  */
 public class A227451 extends LinearRecurrence {

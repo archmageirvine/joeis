@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142705 Numerator of 1/4 - 1/(2n)^2.
+ * A142705 Numerator of <code>1/4 - 1/(2n)^2</code>.
  * @author Sean A. Irvine
  */
 public class A142705 extends LinearRecurrence {

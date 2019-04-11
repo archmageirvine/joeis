@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221912 Partial sums of floor(n/12).
+ * A221912 Partial sums of <code>floor(n/12)</code>.
  * @author Sean A. Irvine
  */
 public class A221912 extends LinearRecurrence {

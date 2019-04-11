@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104777 Integer squares congruent to 1 mod 6.
+ * A104777 Integer squares congruent to <code>1 mod 6</code>.
  * @author Sean A. Irvine
  */
 public class A104777 extends LinearRecurrence {

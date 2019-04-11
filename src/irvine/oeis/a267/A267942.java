@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267942 Interleave (n-1)^2 + 2 and (n+1)^2 + 2.
+ * A267942 Interleave <code>(n-1)^2 + 2</code> and <code>(n+1)^2 + 2</code>.
  * @author Sean A. Irvine
  */
 public class A267942 extends LinearRecurrence {

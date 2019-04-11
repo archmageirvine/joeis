@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219758 Expansion of x^4*(2-6*x+5*x^2+2*x^3-4*x^4)/((1-x)^2*(1-2*x)^5). 
+ * A219758 Expansion of <code>x^4*(2-6*x+5*x^2+2*x^3-4*x^4)/((1-x)^2*(1-2*x)^5)</code>.
  * @author Georg Fischer
  */
 public class A219758 extends LinearRecurrence {

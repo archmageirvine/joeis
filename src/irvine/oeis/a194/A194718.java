@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194718 Number of n-ary words beginning with the first character of the alphabet, that can be built by inserting six doublets into the initially empty word. 
+ * A194718 Number of n-ary words beginning with the first character of the alphabet, that can be built by inserting six doublets into the initially empty word.
  * @author Georg Fischer
  */
 public class A194718 extends LinearRecurrence {

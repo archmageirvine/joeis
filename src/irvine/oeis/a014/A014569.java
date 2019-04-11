@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014569 Super-3 Numbers (3n^3 contains substring '333' in its decimal expansion).
+ * A014569 Super-3 Numbers <code>(3n^3</code> contains substring '333' in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A014569 implements Sequence {

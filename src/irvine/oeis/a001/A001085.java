@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001085 a(n) = 20*a(n-1) - a(n-2).
+ * A001085 <code>a(n) = 20*a(n-1) - a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A001085 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004394 Superabundant [or super-abundant] numbers: n such that sigma(n)/n &gt; sigma(m)/m for all m &lt; n, sigma(n) being A000203(n), the sum of the divisors of n.
+ * A004394 Superabundant [or super-abundant] numbers: n such that sigma(n)/n &gt; sigma(m)/m for all m <code>&lt; n,</code> sigma(n) being A000203(n), the sum of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A004394 implements Sequence {

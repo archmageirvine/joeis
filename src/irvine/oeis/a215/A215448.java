@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215448 a(0)=1, a(1)=0, a(n) = a(n-1) + a(n-2) + Sum_{i=0...n-1} a(i). 
+ * A215448 <code>a(0)=1, a(1)=0, a(n) = a(n-1) + a(n-2) +</code> Sum_{i=0...n-1} a(i).
  * @author Georg Fischer
  */
 public class A215448 extends LinearRecurrence {

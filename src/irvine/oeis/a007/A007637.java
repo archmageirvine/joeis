@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007637 Primes of form 3n^2-3n+23.
+ * A007637 Primes of form <code>3n^2-3n+23</code>.
  * @author Sean A. Irvine
  */
 public class A007637 implements Sequence {

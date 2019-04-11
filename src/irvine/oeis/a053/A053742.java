@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053742 Sum of odd numbers in range 10n to 10n+9.
+ * A053742 Sum of odd numbers in range <code>10n</code> to <code>10n+9</code>.
  * @author Sean A. Irvine
  */
 public class A053742 extends LinearRecurrence {

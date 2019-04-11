@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253512 a(n) = (2^n - 1) * (3^(n+2) - 1) / 2.
+ * A253512 <code>a(n) = (2^n - 1) * (3^(n+2) - 1) / 2</code>.
  * @author Sean A. Irvine
  */
 public class A253512 extends LinearRecurrence {

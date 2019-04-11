@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A084167 A002313 is the list of primes p having a unique representation as the sum of two squares, p = x^2 + y^2. If n is in the present sequence (and in A002313), the count of primitive roots of n which are in sequence A002313 too is x. The count of those primitive roots is A084168.
+ * A084167 A002313 is the list of primes p having a unique representation as the sum of two squares, p <code>= x^2 +</code> y^2. If n is in the present sequence (and in A002313), the count of primitive roots of n which are in sequence A002313 too is x. The count of those primitive roots is A084168.
  * @author Georg Fischer
  */
 public class A084167 extends FiniteSequence {

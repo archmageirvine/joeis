@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154357 a(n) = 25*n^2 - 14*n + 2.
+ * A154357 <code>a(n) = 25*n^2 - 14*n + 2</code>.
  * @author Sean A. Irvine
  */
 public class A154357 extends LinearRecurrence {

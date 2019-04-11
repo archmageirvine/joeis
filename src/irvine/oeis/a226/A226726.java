@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226726 Numbers n such that the product of its decimal digits (A007954) is between n/2-1 and n/2+1.
+ * A226726 Numbers n such that the product of its decimal digits (A007954) is between <code>n/2-1</code> and <code>n/2+1</code>.
  * @author Georg Fischer
  */
 public class A226726 extends FiniteSequence {

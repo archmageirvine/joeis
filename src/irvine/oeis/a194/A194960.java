@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194960 a(n) = floor((n+2)/3) + ((n-1) mod 3).
+ * A194960 <code>a(n) = floor((n+2)/3) + ((n-1) mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A194960 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145064 Reduced numerators of the first convergent to the cube root of n using the recursion x = (2*x+n/x^2)/3.
+ * A145064 Reduced numerators of the first convergent to the cube root of n using the recursion <code>x = (2*x+n/x^2)/3</code>.
  * @author Sean A. Irvine
  */
 public class A145064 extends LinearRecurrence {

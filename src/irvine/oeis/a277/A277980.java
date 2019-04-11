@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277980 a(n) = 12*n^2 + 18*n.
+ * A277980 <code>a(n) = 12*n^2 + 18*n</code>.
  * @author Sean A. Irvine
  */
 public class A277980 extends LinearRecurrence {

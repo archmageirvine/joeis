@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167981 Number of 2n-cycles on the graph of the tesseract, 2 &lt;= n &lt;= 8.
+ * A167981 Number of 2n-cycles on the graph of the tesseract, <code>2 &lt;= n &lt;= 8</code>.
  * @author Georg Fischer
  */
 public class A167981 extends FiniteSequence {

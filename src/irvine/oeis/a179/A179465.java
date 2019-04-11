@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A179465 Integers of alternate form x+(x+1)^2+(x+2)^3+(x+3)^4+(x+4)^5+(x+5)^6.
+ * A179465 Integers of alternate form <code>x+(x+1)^2+(x+2)^3+(x+3)^4+(x+4)^5+(x+5)^6</code>.
  * @author Georg Fischer
  */
 public class A179465 extends FiniteSequence {

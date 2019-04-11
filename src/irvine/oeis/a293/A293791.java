@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A293791 Prime quintuplet 10000024493 + K * 30 for K = 0 to 4.
+ * A293791 Prime quintuplet <code>10000024493 +</code> K <code>* 30</code> for K <code>= 0</code> to 4.
  * @author Georg Fischer
  */
 public class A293791 extends FiniteSequence {

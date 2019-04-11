@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157870 a(n) = (4n+1)(4n+2) = (4n+2)!/(4n)!.
+ * A157870 <code>a(n) = (4n+1)(4n+2) = (4n+2)!/(4n)!</code>.
  * @author Sean A. Irvine
  */
 public class A157870 extends LinearRecurrence {

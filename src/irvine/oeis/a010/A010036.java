@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010036 Sum of 2^n, ..., 2^(n+1) - 1.
+ * A010036 Sum of <code>2^n, </code>..., <code>2^(n+1) - 1</code>.
  * @author Sean A. Irvine
  */
 public class A010036 implements Sequence {

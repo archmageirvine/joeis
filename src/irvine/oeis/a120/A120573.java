@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120573 a(n) = n^5 + 3n^3 + 2n = n(n^2+1)(n^2+2).
+ * A120573 <code>a(n) = n^5 + 3n^3 + 2n = n(n^2+1)(n^2+2)</code>.
  * @author Sean A. Irvine
  */
 public class A120573 extends LinearRecurrence {

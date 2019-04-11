@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271478 If n is even, a(n)=n/2, otherwise 2*n+2.
+ * A271478 If n is even, <code>a(n)=n/2,</code> otherwise <code>2*n+2</code>.
  * @author Sean A. Irvine
  */
 public class A271478 extends LinearRecurrence {

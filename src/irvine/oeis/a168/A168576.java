@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168576 a(n) = (10^n+1)^4.
+ * A168576 <code>a(n) = (10^n+1)^4</code>.
  * @author Sean A. Irvine
  */
 public class A168576 extends LinearRecurrence {

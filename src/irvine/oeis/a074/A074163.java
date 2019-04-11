@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074163 Smallest k, not divisible by 10, such that R(k) &gt; n*k, where R(k) is the digit reversal of k (A004086).
+ * A074163 Smallest k, not divisible by <code>10,</code> such that R(k) &gt; n*k, where R(k) is the digit reversal of k (A004086).
  * @author Georg Fischer
  */
 public class A074163 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004006 a(n) = C(n,1) + C(n,2) + C(n,3), or n*(n^2 + 5)/6.
+ * A004006 <code>a(n) =</code> C(n,1) + C(n,2) + C(n,3), or <code>n*(n^2 + 5)/6</code>.
  * @author Sean A. Irvine
  */
 public class A004006 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A007883 Westminster chimes at 15-minute intervals (2).
+ * A007883 Westminster chimes at 15-minute intervals <code>(2)</code>.
  * @author Sean A. Irvine
  */
 public class A007883 extends PeriodicSequence {

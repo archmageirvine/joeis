@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264888 a(n) = n*(n + 1)*(13*n^2 + 13*n - 14)/24.
+ * A264888 <code>a(n) = n*(n + 1)*(13*n^2 + 13*n - 14)/24</code>.
  * @author Sean A. Irvine
  */
 public class A264888 extends LinearRecurrence {

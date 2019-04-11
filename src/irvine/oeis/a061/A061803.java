@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061803 Sum of n-th row of triangle of 4th powers: 1; 1 16 1; 1 16 81 16 1; 1 16 81 256 81 16 1; ...
+ * A061803 Sum of n-th row of triangle of 4th powers: 1; <code>1 16 1</code>; <code>1 16 81 16 1</code>; <code>1 16 81 256 81 16 1</code>; ...
  * @author Sean A. Irvine
  */
 public class A061803 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059368 Triangle arising from solution to a*x = tan x (next row contains non-integral entries).
+ * A059368 Triangle arising from solution to <code>a*x =</code> tan x (next row contains non-integral entries).
  * @author Georg Fischer
  */
 public class A059368 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.math.z.Z;
 
 /**
- * A106274 Numbers n for which the absolute value of the discriminant of the polynomial x^n - x^(n-1) -...- x - 1 is prime.
+ * A106274 Numbers n for which the absolute value of the discriminant of the polynomial <code>x^n - x^(n-1) -</code>...- <code>x - 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A106274 extends A106273 {

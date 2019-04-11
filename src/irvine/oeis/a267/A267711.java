@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267711 Numbers n such that n (mod 3) = n (mod 5).
+ * A267711 Numbers n such that <code>n (mod 3) = n (mod 5)</code>.
  * @author Sean A. Irvine
  */
 public class A267711 extends LinearRecurrence {

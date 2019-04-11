@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171857 Number of n-step up-side self-avoiding walks on the lattice strip {0,1,2} x Z (up-side means that the walks move up and sideways but not down).
+ * A171857 Number of n-step up-side self-avoiding walks on the lattice strip <code>{0,1,2} x</code> Z (up-side means that the walks move up and sideways but not down).
  * @author Sean A. Irvine
  */
 public class A171857 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180973 Numbers n such that 9^10 + n^2 is a square.
+ * A180973 Numbers n such that <code>9^10 + n^2</code> is a square.
  * @author Georg Fischer
  */
 public class A180973 extends FiniteSequence {

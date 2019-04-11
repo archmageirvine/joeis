@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294152 Chromatic invariant of the n-antiprism graph. 
+ * A294152 Chromatic invariant of the n-antiprism graph.
  * @author Georg Fischer
  */
 public class A294152 extends LinearRecurrence {

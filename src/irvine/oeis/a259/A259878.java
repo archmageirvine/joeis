@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259878 Gobel's sequence A003504 read mod 43.
+ * A259878 Gobel's sequence A003504 read <code>mod 43</code>.
  * @author Georg Fischer
  */
 public class A259878 extends FiniteSequence {

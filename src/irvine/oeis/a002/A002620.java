@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002620 Quarter-squares: floor(n/2)*ceiling(n/2). Equivalently, floor(n^2/4).
+ * A002620 Quarter-squares: floor(n/2)*ceiling(n/2). Equivalently, <code>floor(n^2/4)</code>.
  * @author Sean A. Irvine
  */
 public class A002620 implements Sequence {

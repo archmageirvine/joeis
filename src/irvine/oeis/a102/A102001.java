@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102001 A weighted tribonacci, (1,2,4).
+ * A102001 A weighted tribonacci, <code>(1,2,4)</code>.
  * @author Sean A. Irvine
  */
 public class A102001 extends LinearRecurrence {

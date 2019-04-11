@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167149 10000-gonal numbers: a(n) = n + 4999 * n * (n-1).
+ * A167149 10000-gonal numbers: <code>a(n) = n + 4999 * n * (n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A167149 extends LinearRecurrence {

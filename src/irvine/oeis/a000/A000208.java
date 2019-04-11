@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000208 Number of even sequences with period 2n.
+ * A000208 Number of even sequences with period <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A000208 implements Sequence {

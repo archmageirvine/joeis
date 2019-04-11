@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018248 The 10-adic integer x = ...1787109376 satisfies x^2 = x.
+ * A018248 The 10-adic integer <code>x = </code>...1787109376 satisfies <code>x^2 = x</code>.
  * @author Sean A. Irvine
  */
 public class A018248 implements Sequence {

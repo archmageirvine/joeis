@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A001162 Numbers containing an odd number of letters.
+ * A001162 Numbers containing <code>an</code> odd number of letters.
  * @author Sean A. Irvine
  */
 public class A001162 implements Sequence {

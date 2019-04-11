@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281787 a(n) = sum of all numbers between 1 and 10^n that are divisible by 3 or 5.
+ * A281787 <code>a(n) =</code> sum of all numbers between 1 and <code>10^n</code> that are divisible by 3 or 5.
  * @author Sean A. Irvine
  */
 public class A281787 extends LinearRecurrence {

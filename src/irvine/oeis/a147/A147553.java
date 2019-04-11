@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147553 Numbers n such that n^2 divides n.n where dot "." means concatenation.
+ * A147553 Numbers n such that <code>n^2</code> divides n.n where dot "." means concatenation.
  * @author Georg Fischer
  */
 public class A147553 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048254 Numbers whose sum of divisors is 6^4 = 1296.
+ * A048254 Numbers whose sum of divisors is <code>6^4 = 1296</code>.
  * @author Georg Fischer
  */
 public class A048254 extends FiniteSequence {

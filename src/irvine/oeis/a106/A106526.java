@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106526 Values of y in x^2 - 49 = 2*y^2.
+ * A106526 Values of y in <code>x^2 - 49 =</code> 2*y^2.
  * @author Sean A. Irvine
  */
 public class A106526 extends LinearRecurrence {

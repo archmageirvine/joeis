@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166482 a(n) = Sum_{k=0..n} C(n+k,2k)*F(2k+1).
+ * A166482 <code>a(n) =</code> Sum_{k=0..n} C(n+k,2k)*F(2k+1).
  * @author Sean A. Irvine
  */
 public class A166482 extends LinearRecurrence {

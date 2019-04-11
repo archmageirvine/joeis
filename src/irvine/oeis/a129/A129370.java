@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129370 a(n)=n^2-(n-1)^2*(1-(-1)^n)/8.
+ * A129370 <code>a(n)=n^2-(n-1)^2*(1-(-1)^n)/8</code>.
  * @author Sean A. Irvine
  */
 public class A129370 extends LinearRecurrence {

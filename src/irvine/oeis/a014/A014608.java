@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014608 a(n) = (4n)!/(24^n).
+ * A014608 <code>a(n) = (4n)!/(24^n)</code>.
  * @author Sean A. Irvine
  */
 public class A014608 implements Sequence {

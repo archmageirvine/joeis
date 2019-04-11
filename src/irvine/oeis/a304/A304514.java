@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304514 a(n) = 33*2^n - 45 (n&gt;=1). 
+ * A304514 <code>a(n) = 33*2^n - 45 (n&gt;=1)</code>.
  * @author Georg Fischer
  */
 public class A304514 extends LinearRecurrence {

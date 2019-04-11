@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026741 a(n) = n if n odd, n/2 if n even.
+ * A026741 <code>a(n) = n</code> if n odd, <code>n/2</code> if n even.
  * @author Sean A. Irvine
  */
 public class A026741 extends LinearRecurrence {

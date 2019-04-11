@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002588 a(n) = largest noncomposite factor of 2^(2n+1) - 1.
+ * A002588 <code>a(n) =</code> largest noncomposite factor of <code>2^(2n+1) - 1</code>.
  * @author Sean A. Irvine
  */
 public class A002588 implements Sequence {

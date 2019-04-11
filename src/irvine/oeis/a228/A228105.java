@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228105 a(n) = 432*n^6. 
+ * A228105 <code>a(n) = 432*n^6</code>.
  * @author Georg Fischer
  */
 public class A228105 extends LinearRecurrence {

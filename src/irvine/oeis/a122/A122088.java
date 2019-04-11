@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122088 Add 10, subtract 5, add 10, subtract 5, ad infinitum.
+ * A122088 Add <code>10,</code> subtract <code>5,</code> add <code>10,</code> subtract <code>5,</code> ad infinitum.
  * @author Sean A. Irvine
  */
 public class A122088 extends LinearRecurrence {

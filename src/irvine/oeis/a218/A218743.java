@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218743 a(n) = (40^n-1)/39.
+ * A218743 <code>a(n) = (40^n-1)/39</code>.
  * @author Sean A. Irvine
  */
 public class A218743 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234902 a(n)*Pi is the total length of irregular spiral (center points: 1, 2, 3) after n rotations.
+ * A234902 a(n)*Pi is the total length of irregular spiral (center points: <code>1, 2, 3)</code> after n rotations.
  * @author Sean A. Irvine
  */
 public class A234902 extends LinearRecurrence {

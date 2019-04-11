@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167205 a(n) = (3^n+1)/(3-(-1)^n).
+ * A167205 <code>a(n) = (3^n+1)/(3-(-1)^n)</code>.
  * @author Sean A. Irvine
  */
 public class A167205 extends LinearRecurrence {

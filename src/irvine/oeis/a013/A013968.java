@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013968 a(n) = sigma_20(n), the sum of the 20th powers of the divisors of n.
+ * A013968 <code>a(n) =</code> sigma_20(n), the sum of the 20th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013968 implements Sequence {

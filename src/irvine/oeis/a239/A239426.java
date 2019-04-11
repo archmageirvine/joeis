@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239426 21*n^4 - 36*n^3 + 25*n^2 - 8*n + 1.
+ * A239426 <code>21*n^4 - 36*n^3 + 25*n^2 - 8*n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A239426 extends LinearRecurrence {

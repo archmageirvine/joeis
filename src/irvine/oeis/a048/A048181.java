@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048181 Chisel strokes in Runes numerals (= alphabet characters).
+ * A048181 Chisel strokes in Runes numerals <code>(=</code> alphabet characters).
  * @author Georg Fischer
  */
 public class A048181 extends FiniteSequence {

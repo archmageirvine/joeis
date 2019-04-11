@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A002647 Sextan primes: p = (x^6 + y^6 )/(x^2 + y^2 ).
+ * A002647 Sextan primes: p <code>= (x^6 +</code> y^6 <code>)/(x^2 +</code> y^2 ).
  * @author Sean A. Irvine
  */
 public class A002647 implements Sequence {

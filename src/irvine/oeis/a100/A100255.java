@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100255 Squares of pentagonal numbers: a(n) = (1/4)*n^2*(3*n-1)^2.
+ * A100255 Squares of pentagonal numbers: <code>a(n) = (1/4)*n^2*(3*n-1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A100255 extends LinearRecurrence {

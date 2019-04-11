@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099761 a(n) = (n*(n+2))^2.
+ * A099761 <code>a(n) = (n*(n+2))^2</code>.
  * @author Sean A. Irvine
  */
 public class A099761 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008563 Coefficients of series arising in solution of Riccati equation y' = y^2 + x^2.
+ * A008563 Coefficients of series arising in solution of Riccati equation y' = y^2 <code>+ x^2</code>.
  * @author Sean A. Irvine
  */
 public class A008563 extends MemorySequence {

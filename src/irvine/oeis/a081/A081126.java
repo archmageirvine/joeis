@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A081126 Binomial transform of n!/floor(n/2)!.
+ * A081126 Binomial transform of <code>n!/floor(n/2)!</code>.
  * @author Sean A. Irvine
  */
 public class A081126 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import java.util.ArrayList;
 
 /**
- * A007898 a(n) = psi_c(n), where Product_{k&gt;1} 1/(1-1/k^s)^A007897(k) = Sum_{k&gt;0} psi_c(k)/k^s.
+ * A007898 <code>a(n) =</code> psi_c(n), where Product_{k&gt;1} 1/(1-1/k^s)^A007897(k) = Sum_{k&gt;0} psi_c(k)/k^s.
  * @author Sean A. Irvine
  */
 public class A007898 extends A007896 {

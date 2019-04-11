@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A234631 Timestamps Hmmss where H,mm,ss are three consecutive primes, 0 &lt; H &lt; 24.
+ * A234631 Timestamps Hmmss where H,mm,ss are three consecutive primes, <code>0 &lt;</code> H <code>&lt; 24</code>.
  * @author Georg Fischer
  */
 public class A234631 extends FiniteSequence {

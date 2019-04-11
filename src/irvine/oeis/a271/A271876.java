@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A271876 Numbers n such that 3^n is not of the form x^3 + y^3 + z^3 where x, y, z &gt; 0.
+ * A271876 Numbers n such that <code>3^n</code> is not of the form <code>x^3 +</code> y^3 + z^3 where <code>x,</code> y, z <code>&gt; 0</code>.
  * @author Georg Fischer
  */
 public class A271876 extends FiniteSequence {

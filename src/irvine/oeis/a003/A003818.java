@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003818 a(1)=a(2)=1, a(n+1) = (a(n)^3 +1)/a(n-1).
+ * A003818 <code>a(1)=a(2)=1, a(n+1) = (a(n)^3 +1)/a(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A003818 implements Sequence {

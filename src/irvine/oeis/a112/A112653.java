@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112653 a(n) squared is congruent to a(n) (mod 13).
+ * A112653 <code>a(n)</code> squared is congruent to <code>a(n) (mod 13)</code>.
  * @author Sean A. Irvine
  */
 public class A112653 extends LinearRecurrence {

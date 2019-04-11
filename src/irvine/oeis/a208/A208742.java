@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A208742 Number of subsets of the set {1,2,...,n} which do not contain two elements whose difference is 5.
+ * A208742 Number of subsets of the set <code>{1,2,</code>...,n} which do not contain two elements whose difference is 5.
  * @author Sean A. Irvine
  */
 public class A208742 extends LinearRecurrence {

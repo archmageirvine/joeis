@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193132 a(n) = 3n*4^(2n-1).
+ * A193132 <code>a(n) = 3n*4^(2n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A193132 extends LinearRecurrence {

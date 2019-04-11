@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146313 a(n) = cosh( (2n - 1)*arcsinh(sqrt(2)) )^2 = 1 - cos( (2n - 1)*arcsin(sqrt(3)) )^2.
+ * A146313 <code>a(n) =</code> cosh( <code>(2n -</code> 1)*arcsinh(sqrt(2)) <code>)^2 = 1 -</code> cos( <code>(2n -</code> 1)*arcsin(sqrt(3)) <code>)^2</code>.
  * @author Sean A. Irvine
  */
 public class A146313 extends LinearRecurrence {

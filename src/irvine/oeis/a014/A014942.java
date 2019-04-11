@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014942 ( 1+24^n*(23*n-1) ) / 529.
+ * A014942 <code>( 1+24^n*(23*n-1) ) / 529</code>.
  * @author Sean A. Irvine
  */
 public class A014942 extends LinearRecurrence {

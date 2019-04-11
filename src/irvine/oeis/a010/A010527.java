@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002193;
 
 /**
- * A010527 Decimal expansion of sqrt(3)/2.
+ * A010527 Decimal expansion of <code>sqrt(3)/2</code>.
  * @author Sean A. Irvine
  */
 public class A010527 extends A002193 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001418 Number of ways of folding an n X n sheet of stamps.
+ * A001418 Number of ways of folding <code>an n</code> X n sheet of stamps.
  * @author Sean A. Irvine
  */
 public class A001418 extends A001415 {

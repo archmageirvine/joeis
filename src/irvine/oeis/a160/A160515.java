@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160515 Decimal expansion of the integer (640320^3 + 744)^2 * 70^2 = 337736875876935471466319632507953926400.
+ * A160515 Decimal expansion of the integer <code>(640320^3 + 744)^2 * 70^2 = 337736875876935471466319632507953926400</code>.
  * @author Georg Fischer
  */
 public class A160515 extends FiniteSequence {

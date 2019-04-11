@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133039 a(n) = P(n)^3 - P(n)^2 where P(n) = A000931(n).
+ * A133039 <code>a(n) =</code> P(n)^3 - P(n)^2 where P(n) = A000931(n).
  * @author Sean A. Irvine
  */
 public class A133039 extends LinearRecurrence {

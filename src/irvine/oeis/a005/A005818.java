@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005818 Numbers n that are primitive solutions to n^2 = a^2 + b^2 + c^2 (a,b,c &gt; 0).
+ * A005818 Numbers n that are primitive solutions to <code>n^2 = a^2 +</code> b^2 + c^2 <code>(a</code>,b,c <code>&gt; 0)</code>.
  * @author Sean A. Irvine
  */
 public class A005818 implements Sequence {

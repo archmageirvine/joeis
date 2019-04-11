@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088645 a(n) = A088644(n)/n!.
+ * A088645 <code>a(n) =</code> A088644(n)/n!.
  * @author Georg Fischer
  */
 public class A088645 extends FiniteSequence {

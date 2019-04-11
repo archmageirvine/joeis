@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000129 Pell numbers: a(0) = 0, a(1) = 1; for n &gt; 1, a(n) = 2*a(n-1) + a(n-2).
+ * A000129 Pell numbers: <code>a(0) = 0, a(1) = 1</code>; for <code>n &gt; 1, a(n) = 2*a(n-1) + a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A000129 implements Sequence, Serializable {

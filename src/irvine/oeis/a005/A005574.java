@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005574 Numbers k such that k^2 + 1 is prime.
+ * A005574 Numbers k such that k^2 <code>+ 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A005574 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156641 13*(100^(n+1)-1)/99.
+ * A156641 <code>13*(100^(n+1)-1)/99</code>.
  * @author Sean A. Irvine
  */
 public class A156641 extends LinearRecurrence {

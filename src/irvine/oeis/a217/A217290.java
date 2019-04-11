@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217290 Integers n such that 2*cos(2*Pi/n) is an integer.
+ * A217290 Integers n such that 2*cos(2*Pi/n) is <code>an</code> integer.
  * @author Georg Fischer
  */
 public class A217290 extends FiniteSequence {

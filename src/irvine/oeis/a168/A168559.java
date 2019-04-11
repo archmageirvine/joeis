@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168559 a(n) = n^2 + a(n-1), with a(1)=0.
+ * A168559 <code>a(n) = n^2 + a(n-1),</code> with <code>a(1)=0</code>.
  * @author Sean A. Irvine
  */
 public class A168559 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A011769 a(0) = 1, a(n+1) = 3 * a(n) - F(n)*(F(n) + 1), where F(n) = A000045(n) is n-th Fibonacci number.
+ * A011769 <code>a(0) = 1, a(n+1) = 3 * a(n) -</code> F(n)*(F(n) <code>+ 1),</code> where F(n) = A000045(n) is n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A011769 extends A000045 {

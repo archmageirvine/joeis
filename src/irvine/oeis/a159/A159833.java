@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159833 a(n) = n^2*(n^2 + 15)/4.
+ * A159833 <code>a(n) = n^2*(n^2 + 15)/4</code>.
  * @author Sean A. Irvine
  */
 public class A159833 extends LinearRecurrence {

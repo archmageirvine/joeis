@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000822 Expansion of (sin^2 x + sin x ) /cos 2x.
+ * A000822 Expansion of (sin^2 <code>x +</code> sin <code>x )</code> /cos <code>2x</code>.
  * @author Sean A. Irvine
  */
 public class A000822 implements Sequence {

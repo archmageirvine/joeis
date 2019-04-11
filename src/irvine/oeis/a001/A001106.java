@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001106 9-gonal (or enneagonal or nonagonal) numbers: a(n) = n*(7*n-5)/2.
+ * A001106 9-gonal (or enneagonal or nonagonal) numbers: <code>a(n) = n*(7*n-5)/2</code>.
  * @author Sean A. Irvine
  */
 public class A001106 implements Sequence {

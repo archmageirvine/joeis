@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A161502 a(n) = the smallest number of binary digits that when appended to the right side of the binary representation of n, forms a binary palindrome.
+ * A161502 <code>a(n) =</code> the smallest number of binary digits that when appended to the right side of the binary representation of <code>n,</code> forms a binary palindrome.
  * @author Sean A. Irvine
  */
 public class A161502 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A233457 Values of n for which the equation x^2 - 16*y^2 = n has integer solutions.
+ * A233457 Values of n for which the equation <code>x^2 -</code> 16*y^2 <code>= n</code> has integer solutions.
  * @author Sean A. Irvine
  */
 public class A233457 extends LinearRecurrence {

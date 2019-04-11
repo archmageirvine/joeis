@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033638 Quarter-squares plus 1 (that is, a(n) = A002620(n) + 1).
+ * A033638 Quarter-squares plus 1 (that is, <code>a(n) =</code> A002620(n) <code>+ 1)</code>.
  * @author Sean A. Irvine
  */
 public class A033638 extends LinearRecurrence {

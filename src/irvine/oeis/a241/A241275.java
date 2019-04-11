@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241275 a(n) = 6*a(n-1) + 5*(2^(n-1)-1) for n &gt; 0, a(0) = 0.
+ * A241275 <code>a(n) = 6*a(n-1) + 5*(2^(n-1)-1)</code> for <code>n &gt; 0, a(0) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A241275 extends LinearRecurrence {

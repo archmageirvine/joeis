@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053540 a(n) = n*9^(n-1).
+ * A053540 <code>a(n) = n*9^(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A053540 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204468 Number of 4-element subsets that can be chosen from {1,2,...,4*n} having element sum 8*n+2.
+ * A204468 Number of 4-element subsets that can be chosen from <code>{1,2,</code>...,4*n} having element sum <code>8*n+2</code>.
  * @author Sean A. Irvine
  */
 public class A204468 extends LinearRecurrence {

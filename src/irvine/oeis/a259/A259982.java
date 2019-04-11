@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259982 Decimal expansion of 1/2^20.
+ * A259982 Decimal expansion of <code>1/2^20</code>.
  * @author Georg Fischer
  */
 public class A259982 extends FiniteSequence {

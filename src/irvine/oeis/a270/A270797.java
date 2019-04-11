@@ -3,7 +3,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270797 a(n) = J(n) if n odd, or 4*J(n) if n even, where J = Jacobsthal numbers A001045.
+ * A270797 <code>a(n) =</code> J(n) if n odd, or 4*J(n) if n even, where J = Jacobsthal numbers A001045.
  * @author Sean A. Irvine
  */
 public class A270797 extends LinearRecurrence {

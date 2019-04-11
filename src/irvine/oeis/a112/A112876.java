@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112876 Repeatedly divide by 2, add 2 and add 3.
+ * A112876 Repeatedly divide by <code>2,</code> add 2 and add 3.
  * @author Georg Fischer
  */
 public class A112876 extends FiniteSequence {

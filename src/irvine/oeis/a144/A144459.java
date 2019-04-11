@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144459 a(n) = (3*n+1)*(5*n+1).
+ * A144459 <code>a(n) = (3*n+1)*(5*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A144459 extends LinearRecurrence {

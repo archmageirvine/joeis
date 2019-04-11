@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101381 a(n) = n^2*(n+1)^2*(4*n^2 - 5*n + 4)/12.
+ * A101381 <code>a(n) = n^2*(n+1)^2*(4*n^2 - 5*n + 4)/12</code>.
  * @author Sean A. Irvine
  */
 public class A101381 extends LinearRecurrence {

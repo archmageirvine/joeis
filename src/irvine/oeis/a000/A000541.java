@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000541 Sum of 7th powers: 1^7 + 2^7 + ... + n^7.
+ * A000541 Sum of 7th powers: <code>1^7 + 2^7 + </code>... <code>+ n^7</code>.
  * @author Sean A. Irvine
  */
 public class A000541 implements Sequence {

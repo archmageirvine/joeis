@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134450 a(n) = square part of discriminant of Brioschi quintic polynomial x^5-10*n*x^3+45*n^2*x-n^2.
+ * A134450 <code>a(n) =</code> square part of discriminant of Brioschi quintic polynomial <code>x^5-10*n*x^3+45*n^2*x-n^2</code>.
  * @author Sean A. Irvine
  */
 public class A134450 extends LinearRecurrence {

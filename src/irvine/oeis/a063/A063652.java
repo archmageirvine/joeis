@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063652 Number of ways to tile an 8 X n rectangle with 1 X 1 and 2 X 2 tiles.
+ * A063652 Number of ways to tile <code>an 8</code> X n rectangle with 1 X 1 and 2 X 2 tiles.
  * @author Sean A. Irvine
  */
 public class A063652 extends LinearRecurrence {

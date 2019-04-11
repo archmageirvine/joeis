@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085947 a(1) = 1, a(2) = 2 and a(n) = smallest number not included earlier that divides the sum of the two previous terms.
+ * A085947 <code>a(1) = 1, a(2) = 2</code> and <code>a(n) =</code> smallest number not included earlier that divides the sum of the two previous terms.
  * @author Georg Fischer
  */
 public class A085947 extends FiniteSequence {

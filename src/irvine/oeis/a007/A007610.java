@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007610 Sum of n consecutive primes starting at a(n) is prime (or 0 if impossible).
+ * A007610 Sum of n consecutive primes starting at <code>a(n)</code> is prime (or 0 if impossible).
  * @author Sean A. Irvine
  */
 public class A007610 implements Sequence {

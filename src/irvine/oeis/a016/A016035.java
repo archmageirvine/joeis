@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016035 a(n) = Sum_{j|n, 1 &lt; j &lt; n} phi(j). Also (for n &gt; 1) n - phi(n) - 1.
+ * A016035 <code>a(n) =</code> Sum_{j|n, <code>1 &lt;</code> j <code>&lt; n}</code> phi(j). Also (for <code>n &gt; 1) n -</code> phi(n) <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A016035 implements Sequence {

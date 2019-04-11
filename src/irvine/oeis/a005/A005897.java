@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005897 a(n) = 6*n^2 + 2 for n &gt; 0, a(0)=1.
+ * A005897 <code>a(n) = 6*n^2 + 2</code> for <code>n &gt; 0, a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A005897 implements Sequence {

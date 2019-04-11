@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Euler;
 
 /**
- * A160599 Composite numbers n for which n - phi(n) divides n-1.
+ * A160599 Composite numbers n for which <code>n -</code> phi(n) divides <code>n-1</code>.
  * @author Sean A. Irvine
  */
 public class A160599 implements Sequence {

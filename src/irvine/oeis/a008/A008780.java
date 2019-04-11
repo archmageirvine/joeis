@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008780 (n-dimensional partitions of 6) + C(n,4) + C(n,3).
+ * A008780 (n-dimensional partitions of <code>6) +</code> C(n,4) + C(n,3).
  * @author Sean A. Irvine
  */
 public class A008780 extends LinearRecurrence {

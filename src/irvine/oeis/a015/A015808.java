@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015808 k is the first integer such that phi(k) + n | sigma(k).
+ * A015808 k is the first integer such that phi(k) <code>+ n</code> | sigma(k).
  * @author Sean A. Irvine
  */
 public class A015808 implements Sequence {

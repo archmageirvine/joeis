@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A072687 Number of primes with prime length names in range 1 -&gt; 10^n.
+ * A072687 Number of primes with prime length names in range <code>1 -&gt; 10^n</code>.
  * @author Sean A. Irvine
  */
 public class A072687 implements Sequence {

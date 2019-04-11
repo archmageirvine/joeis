@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135419 Array read by rows, showing the ways of splitting the numbers from 1 to 16 into two groups so that the numbers in each group have the same sum (68) and the same sum of squares (748).
+ * A135419 Array read by rows, showing the ways of splitting the numbers from 1 to 16 into two groups so that the numbers in each group have the same sum <code>(68)</code> and the same sum of squares <code>(748)</code>.
  * @author Georg Fischer
  */
 public class A135419 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A254317 a(n) is the least number k such that the number of distinct digits in the prime factorization of k is n (counting terms of the form p^1 as p).
+ * A254317 <code>a(n)</code> is the least number k such that the number of distinct digits in the prime factorization of k is n (counting terms of the form p^1 as p).
  * @author Georg Fischer
  */
 public class A254317 extends FiniteSequence {

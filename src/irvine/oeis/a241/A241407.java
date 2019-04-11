@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241407 Numbers n such that n^2 == -1 (mod 73).
+ * A241407 Numbers n such that <code>n^2 == -1 (mod 73)</code>.
  * @author Sean A. Irvine
  */
 public class A241407 extends LinearRecurrence {

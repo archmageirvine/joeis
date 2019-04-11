@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046092 4 times triangular numbers: a(n) = 2*n*(n+1).
+ * A046092 4 times triangular numbers: <code>a(n) = 2*n*(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A046092 extends LinearRecurrence {

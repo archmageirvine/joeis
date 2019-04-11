@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038122 Start with {1,2,...,n}, replace any two numbers a,b with |a^2-b^2|, repeat until single number k remains; a(n) = minimal value of k. 
+ * A038122 Start with <code>{1,2,</code>...,n}, replace any two numbers a,b with |a^2-b^2|, repeat until single number k remains; <code>a(n) =</code> minimal value of k.
  * @author Georg Fischer
  */
 public class A038122 extends LinearRecurrence {

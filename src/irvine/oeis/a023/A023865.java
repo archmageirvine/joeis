@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023865 a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k), where k=[ (n+1)/2 ], s = (natural numbers), t = (odd numbers).
+ * A023865 <code>a(n) =</code> s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k), where k=[ <code>(n+1)/2 ],</code> s = (natural numbers), t = (odd numbers).
  * @author Sean A. Irvine
  */
 public class A023865 extends LinearRecurrence {

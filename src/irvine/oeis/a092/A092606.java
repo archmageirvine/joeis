@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A092606 Fixed point of the morphism 0 -&gt; 021, 1 -&gt; 0, 2 -&gt; 0; starting with a(1) = 0.
+ * A092606 Fixed point of the morphism <code>0 -&gt; 021, 1 -&gt; 0, 2 -&gt; 0</code>; starting with <code>a(1) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A092606 implements Sequence {

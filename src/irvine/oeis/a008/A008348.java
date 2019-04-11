@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A008348 a(0)=0, a(n) = a(n-1) + prime(n) if a(n-1) &lt; prime(n) else a(n-1) - prime(n).
+ * A008348 <code>a(0)=0, a(n) = a(n-1) +</code> prime(n) if <code>a(n-1) &lt;</code> prime(n) else <code>a(n-1) -</code> prime(n).
  * @author Sean A. Irvine
  */
 public class A008348 extends A000040 {

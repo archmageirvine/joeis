@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053799 Number of basis partitions of n+9 with Durfee square size 3. 
+ * A053799 Number of basis partitions of <code>n+9</code> with Durfee square size 3.
  * @author Georg Fischer
  */
 public class A053799 extends LinearRecurrence {

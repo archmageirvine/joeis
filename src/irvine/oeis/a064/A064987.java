@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A064987 a(n) = n*sigma(n).
+ * A064987 <code>a(n) =</code> n*sigma(n).
  * @author Sean A. Irvine
  */
 public class A064987 extends A000203 {

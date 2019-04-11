@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A092598 Natural numbers n for which sum of decimal digits is greater than n/4.
+ * A092598 Natural numbers n for which sum of decimal digits is greater than <code>n/4</code>.
  * @author Georg Fischer
  */
 public class A092598 extends FiniteSequence {

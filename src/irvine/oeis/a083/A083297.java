@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083297 a(n) = (4*4^n + (-6)^n)/5. 
+ * A083297 <code>a(n) = (4*4^n + (-6)^n)/5</code>.
  * @author Georg Fischer
  */
 public class A083297 extends LinearRecurrence {

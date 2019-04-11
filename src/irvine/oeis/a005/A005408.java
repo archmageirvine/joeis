@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005408 The odd numbers: a(n) = 2*n + 1.
+ * A005408 The odd numbers: <code>a(n) = 2*n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A005408 implements Sequence {

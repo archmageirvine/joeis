@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A145768 a(n) = the bitwise XOR of squares of first n natural numbers.
+ * A145768 <code>a(n) =</code> the bitwise XOR of squares of first n natural numbers.
  * @author Sean A. Irvine
  */
 public class A145768 implements Sequence {

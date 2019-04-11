@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A000018 Number of positive integers &lt;= 2^n of form x^2 + 16y^2.
+ * A000018 Number of positive integers <code>&lt;= 2^n</code> of form <code>x^2 +</code> 16y^2.
  * @author Sean A. Irvine
  */
 public class A000018 implements Sequence {

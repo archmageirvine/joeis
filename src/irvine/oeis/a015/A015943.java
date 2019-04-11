@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015943 (2^(2n)+n) mod (2n).
+ * A015943 <code>(2^(2n)+n) mod (2n)</code>.
  * @author Sean A. Irvine
  */
 public class A015943 implements Sequence {

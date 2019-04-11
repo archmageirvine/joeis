@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014957 Positive integers n such that n divides 16^n - 1.
+ * A014957 Positive integers n such that n divides <code>16^n - 1</code>.
  * @author Sean A. Irvine
  */
 public class A014957 implements Sequence {

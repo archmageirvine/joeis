@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A282693 Numbers n such that n = (sum of digits of n)*((sum of digits of n) + 1).
+ * A282693 Numbers n such that <code>n =</code> (sum of digits of n)*((sum of digits of <code>n) + 1)</code>.
  * @author Georg Fischer
  */
 public class A282693 extends FiniteSequence {

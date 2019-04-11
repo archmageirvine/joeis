@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074164 Smallest k such that R(k) &gt; n*k, where R(k) is the digit reversal of k (A004086) (the reversal of 10 is taken to be 01 = 1, etc.).
+ * A074164 Smallest k such that R(k) &gt; n*k, where R(k) is the digit reversal of k (A004086) (the reversal of 10 is taken to be <code>01 = 1,</code> etc.).
  * @author Georg Fischer
  */
 public class A074164 extends FiniteSequence {

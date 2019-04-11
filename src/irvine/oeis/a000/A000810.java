@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000810 Expansion of e.g.f. (sin x + cos x)/cos 3x.
+ * A000810 Expansion of e.g.f. (sin <code>x +</code> cos x)/cos <code>3x</code>.
  * @author Sean A. Irvine
  */
 public class A000810 extends A000436 {

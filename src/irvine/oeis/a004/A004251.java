@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004251 Number of graphical partitions (degree-vectors for simple graphs with n vertices, or possible ordered row-sum vectors for a symmetric 0-1 matrix with diagonal values 0).
+ * A004251 Number of graphical partitions (degree-vectors for simple graphs with n vertices, or possible ordered row-sum vectors for a symmetric <code>0-1</code> matrix with diagonal values <code>0)</code>.
  * @author Sean A. Irvine
  */
 public class A004251 extends MemoryFunction4<Integer, Z> implements Sequence {

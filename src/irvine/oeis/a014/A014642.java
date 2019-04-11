@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000326;
 
 /**
- * A014642 Even octagonal numbers: 4*n*(3*n-1).
+ * A014642 Even octagonal numbers: <code>4*n*(3*n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A014642 extends A000326 {

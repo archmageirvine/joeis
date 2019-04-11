@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A010846 Number of numbers &lt;= n whose set of prime factors is a subset of the set of prime factors of n.
+ * A010846 Number of numbers <code>&lt;= n</code> whose set of prime factors is a subset of the set of prime factors of n.
  * @author Sean A. Irvine
  */
 public class A010846 implements Sequence {

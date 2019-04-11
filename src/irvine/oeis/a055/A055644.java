@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055644 Integers in base 20 with each base 20 digit represented by 2 decimal digits. 
+ * A055644 Integers in base 20 with each base 20 digit represented by 2 decimal digits.
  * Integers in base 20 with each base 20 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

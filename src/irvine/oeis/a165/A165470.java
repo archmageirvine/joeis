@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165470 a(0)=1, a(1)=5, a(n) = 20*a(n-2) - a(n-1). 
+ * A165470 <code>a(0)=1, a(1)=5, a(n) = 20*a(n-2) - a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A165470 extends LinearRecurrence {

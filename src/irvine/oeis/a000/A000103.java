@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000103 Number of n-node triangulations of sphere in which every node has degree &gt;= 4.
+ * A000103 Number of n-node triangulations of sphere in which every node has degree <code>&gt;= 4</code>.
  * @author Sean A. Irvine
  */
 public class A000103 implements Sequence {

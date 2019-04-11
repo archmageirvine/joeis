@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193068 Generating primitive Pythagorean triangles by using (n, n+1) gives perimeters for each n. This sequence list the sum of these perimeters for each n triangles.
+ * A193068 Generating primitive Pythagorean triangles by using <code>(n, n+1)</code> gives perimeters for each n. This sequence list the sum of these perimeters for each n triangles.
  * @author Sean A. Irvine
  */
 public class A193068 extends LinearRecurrence {

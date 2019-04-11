@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006667 Number of tripling steps to reach 1 in '3x+1' problem, or -1 if 1 is never reached.
+ * A006667 Number of tripling steps to reach 1 in '3x+1' problem, or <code>-1</code> if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A006667 implements Sequence {

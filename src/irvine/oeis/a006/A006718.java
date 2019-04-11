@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006718 Number of golygons of length 8n.
+ * A006718 Number of golygons of length <code>8n</code>.
  * @author Sean A. Irvine
  */
 public class A006718 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084069 Numbers n such that 7*n^2 = floor(n*sqrt(7)*ceil(n*sqrt(7))).
+ * A084069 Numbers n such that <code>7*n^2 =</code> floor(n*sqrt(7)*ceil(n*sqrt(7))).
  * @author Sean A. Irvine
  */
 public class A084069 extends LinearRecurrence {

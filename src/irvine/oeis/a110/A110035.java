@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110035 Row sums of an unsigned characteristic triangle for the Fibonacci numbers.
+ * A110035 Row sums of <code>an</code> unsigned characteristic triangle for the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A110035 extends LinearRecurrence {

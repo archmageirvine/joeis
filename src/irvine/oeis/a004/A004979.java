@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004979 a(n)=least number m such that m-a(n-1)&lt;&gt;a(j)-a(k) for all j,k less than m; a(1)=1, a(2)=3.
+ * A004979 a(n)=least number m such that m-a(n-1)&lt;&gt;a(j)-a(k) for all j,k less than m; <code>a(1)=1, a(2)=3</code>.
  * @author Sean A. Irvine
  */
 public class A004979 extends MemorySequence {

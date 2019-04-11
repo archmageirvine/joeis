@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298683 Start with the square tile of the Shield tiling and recursively apply the substitution rule. a(n) is the number of squares after n iterations. 
+ * A298683 Start with the square tile of the Shield tiling and recursively apply the substitution rule. <code>a(n)</code> is the number of squares after n iterations.
  * @author Georg Fischer
  */
 public class A298683 extends LinearRecurrence {

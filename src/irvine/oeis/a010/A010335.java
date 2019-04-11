@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010335 Central term in continued fraction for sqrt(n) is [ sqrt(n) ].
+ * A010335 Central term in continued fraction for <code>sqrt(n)</code> is <code>[ sqrt(n) ]</code>.
  * @author Sean A. Irvine
  */
 public class A010335 implements Sequence {

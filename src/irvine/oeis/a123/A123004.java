@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123004 G.f. x^2/(1 - 2*x - 25*x^2).
+ * A123004 G.f. <code>x^2/(1 - 2*x - 25*x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A123004 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011777 a(n) = least k&gt;1 such that k^n divides k!.
+ * A011777 <code>a(n) =</code> least k&gt;1 such that k^n divides k!.
  * @author Sean A. Irvine
  */
 public class A011777 implements Sequence {

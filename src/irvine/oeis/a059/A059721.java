@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059721 Mean of first six positive powers of n, i.e., (n + n^2 + n^3 + n^4 + n^5 + n^6)/6.
+ * A059721 Mean of first six positive powers of <code>n,</code> i.e., <code>(n + n^2 + n^3 + n^4 + n^5 + n^6)/6</code>.
  * @author Sean A. Irvine
  */
 public class A059721 extends LinearRecurrence {

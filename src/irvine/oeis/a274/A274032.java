@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274032 Sum of n-th powers of the roots of x^3 + 9*x^2 - x - 1.
+ * A274032 Sum of n-th powers of the roots of <code>x^3 + 9*x^2 - x - 1</code>.
  * @author Sean A. Irvine
  */
 public class A274032 extends LinearRecurrence {

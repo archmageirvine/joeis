@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101599 a(n) = binomial coefficient C(m,k) with minimal (m,k) and exactly n distinct digits in decimal representation.
+ * A101599 <code>a(n) =</code> binomial coefficient C(m,k) with minimal (m,k) and exactly n distinct digits in decimal representation.
  * @author Georg Fischer
  */
 public class A101599 extends FiniteSequence {

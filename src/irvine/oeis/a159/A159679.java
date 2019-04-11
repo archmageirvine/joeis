@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159679 a(n) are solutions of the 2 equations: 7*a(n)+1 = c(n)^2 and 9*a(n)+1 = b(n)^2.
+ * A159679 <code>a(n)</code> are solutions of the 2 equations: <code>7*a(n)+1 =</code> c(n)^2 and <code>9*a(n)+1 =</code> b(n)^2.
  * @author Sean A. Irvine
  */
 public class A159679 extends LinearRecurrence {

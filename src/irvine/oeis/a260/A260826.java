@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260826 Let f(k)=2*k^2+11. For n=0,1,...,11, a(n) = smallest m &gt;= 0 such that f(m-1) is composite if m&gt;0, f(m), f(m+1), ...,f(m+n-1) are prime, and f(m+n) is composite.
+ * A260826 Let f(k)=2*k^2+11. For <code>n=0,1,</code>...,11, <code>a(n) =</code> smallest m <code>&gt;= 0</code> such that f(m-1) is composite if m&gt;0, f(m), f(m+1), ...,f(m+n-1) are prime, and f(m+n) is composite.
  * @author Georg Fischer
  */
 public class A260826 extends FiniteSequence {

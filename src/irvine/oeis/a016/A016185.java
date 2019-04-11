@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016185 a(n) = 9^n - 8^n.
+ * A016185 <code>a(n) = 9^n - 8^n</code>.
  * @author Sean A. Irvine
  */
 public class A016185 implements Sequence {

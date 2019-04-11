@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002379 a(n) = floor(3^n / 2^n).
+ * A002379 <code>a(n) = floor(3^n / 2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A002379 implements Sequence {

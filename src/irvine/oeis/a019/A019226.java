@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019226 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite RTH = RUB-13 [ B2Si30O64 ] . 2 R.
+ * A019226 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite RTH = RUB-13 [ B2Si30O64 <code>] </code>. 2 R.
  * @author Sean A. Irvine
  */
 public class A019226 extends A018940 {

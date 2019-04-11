@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002790 Denominators of Cauchy numbers of second type (= Bernoulli numbers B_n^{(n)}).
+ * A002790 Denominators of Cauchy numbers of second type <code>(=</code> Bernoulli numbers B_n^{(n)}).
  * @author Sean A. Irvine
  */
 public class A002790 implements Sequence {

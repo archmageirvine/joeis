@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003636;
 
 /**
- * A006371 Number of reduced binary quadratic forms of discriminant -n.
+ * A006371 Number of reduced binary quadratic forms of discriminant <code>-n</code>.
  * @author Sean A. Irvine
  */
 public class A006371 implements Sequence {

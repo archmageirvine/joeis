@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001512 a(n) = (5*n+1)*(5*n+2)*(5*n+3)*(5*n+4).
+ * A001512 <code>a(n) = (5*n+1)*(5*n+2)*(5*n+3)*(5*n+4)</code>.
  * @author Sean A. Irvine
  */
 public class A001512 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005906 Truncated tetrahedral numbers: (1/6)*(n+1)*(23*n^2 + 19*n + 6).
+ * A005906 Truncated tetrahedral numbers: <code>(1/6)*(n+1)*(23*n^2 + 19*n + 6)</code>.
  * @author Sean A. Irvine
  */
 public class A005906 implements Sequence {

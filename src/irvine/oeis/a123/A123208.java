@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123208 Start with 1, then alternately add 2 or double.
+ * A123208 Start with <code>1,</code> then alternately add 2 or double.
  * @author Sean A. Irvine
  */
 public class A123208 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014293 n^(n+1)-n+1.
+ * A014293 <code>n^(n+1)-n+1</code>.
  * @author Sean A. Irvine
  */
 public class A014293 implements Sequence {

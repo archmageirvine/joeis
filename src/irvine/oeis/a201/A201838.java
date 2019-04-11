@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201838 G.f.: imaginary part of 1/(1 - i*x - i*x^2) where i=sqrt(-1).
+ * A201838 G.f.: imaginary part of <code>1/(1 -</code> i*x - i*x^2) where i=sqrt(-1).
  * @author Sean A. Irvine
  */
 public class A201838 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006262 Product k^(2^(k-2)), k = 2..n.
+ * A006262 Product k^(2^(k-2)), k <code>= 2</code>..n.
  * @author Sean A. Irvine
  */
 public class A006262 implements Sequence {

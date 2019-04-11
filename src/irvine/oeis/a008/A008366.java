@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008366 Smallest prime factor is &gt;= 17.
+ * A008366 Smallest prime factor is <code>&gt;= 17</code>.
  * @author Sean A. Irvine
  */
 public class A008366 implements Sequence {

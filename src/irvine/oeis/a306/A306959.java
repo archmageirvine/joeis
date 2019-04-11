@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306959 The unique cycle of length 4 under iteration of the map x -&gt; A306958(x).
+ * A306959 The unique cycle of length 4 under iteration of the map <code>x -&gt;</code> A306958(x).
  * @author Georg Fischer
  */
 public class A306959 extends FiniteSequence {

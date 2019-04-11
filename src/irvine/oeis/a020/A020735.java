@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020735 Odd numbers &gt;= 5.
+ * A020735 Odd numbers <code>&gt;= 5</code>.
  * @author Sean A. Irvine
  */
 public class A020735 extends LinearRecurrence {

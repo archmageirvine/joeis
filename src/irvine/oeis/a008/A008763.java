@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008763 G.f.: x^4/((1-x)*(1-x^2)^2*(1-x^3)).
+ * A008763 G.f.: <code>x^4/((1-x)*(1-x^2)^2*(1-x^3))</code>.
  * @author Sean A. Irvine
  */
 public class A008763 extends CoordinationSequence {

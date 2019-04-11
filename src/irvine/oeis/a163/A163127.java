@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A163127 a(1)=1. a(n) = the number of integers k, 1 &lt;= k &lt;= n-1, where GCD(a(k),n-k) &gt;= 2.
+ * A163127 <code>a(1)=1</code>. <code>a(n) =</code> the number of integers k, <code>1 &lt;=</code> k <code>&lt;= n-1,</code> where GCD(a(k),n-k) <code>&gt;= 2</code>.
  * @author Sean A. Irvine
  */
 public class A163127 implements Sequence {

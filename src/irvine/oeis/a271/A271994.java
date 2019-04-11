@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271994 The chalcogen sequence (a(n) = A018227(n)-2).
+ * A271994 The chalcogen sequence <code>(a(n) =</code> A018227(n)-2).
  * @author Sean A. Irvine
  */
 public class A271994 extends LinearRecurrence {

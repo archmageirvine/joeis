@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143174 a(1)=1. a(n) = smallest positive multiple of n such that |a(n)-a(n-1)| is prime.
+ * A143174 <code>a(1)=1</code>. <code>a(n) =</code> smallest positive multiple of n such that |a(n)-a(n-1)| is prime.
  * @author Georg Fischer
  */
 public class A143174 extends FiniteSequence {

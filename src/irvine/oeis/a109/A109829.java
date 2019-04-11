@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109829 Number of distinct prime factors of 149 - (n-th prime power less than 149).
+ * A109829 Number of distinct prime factors of <code>149 -</code> (n-th prime power less than <code>149)</code>.
  * @author Georg Fischer
  */
 public class A109829 extends FiniteSequence {

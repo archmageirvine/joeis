@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003544 Divisors of 2^38 - 1.
+ * A003544 Divisors of <code>2^38 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A003544 extends FiniteSequence {

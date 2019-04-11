@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009235 E.g.f. exp( sinh(x) / exp(x) ) = exp( (1-exp(-2*x))/2 ).
+ * A009235 E.g.f. exp( sinh(x) / exp(x) <code>) =</code> exp( (1-exp(-2*x))/2 ).
  * @author Sean A. Irvine
  */
 public class A009235 implements Sequence {

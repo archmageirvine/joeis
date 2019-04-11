@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226044 Period of length 8: 1, 64, 16, 64, 4, 64, 16, 64.
+ * A226044 Period of length 8: <code>1, 64, 16, 64, 4, 64, 16, 64</code>.
  * @author Sean A. Irvine
  */
 public class A226044 extends LinearRecurrence {

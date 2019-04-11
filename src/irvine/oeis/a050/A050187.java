@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050187 a(n) = n * floor((n-1)/2).
+ * A050187 <code>a(n) = n * floor((n-1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A050187 extends LinearRecurrence {

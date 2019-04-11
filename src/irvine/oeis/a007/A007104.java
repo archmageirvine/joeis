@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007104 Number of elements (a b, c d) in GL(2,Z) with det = -1, trace n and 0 &lt;= a &lt;= {b, c} &lt;= d.
+ * A007104 Number of elements <code>(a</code> b, c d) in GL(2,Z) with det <code>= -1,</code> trace n and <code>0 &lt;= a &lt;=</code> {b, c} <code>&lt;=</code> d.
  * @author Sean A. Irvine
  */
 public class A007104 implements Sequence {

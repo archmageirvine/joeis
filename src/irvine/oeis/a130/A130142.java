@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A130142 Let f denote the map that replaces k with the concatenation of its proper divisors, written in decreasing order, each divisor being written in base 10 with its digits in reverse order. Then a(n) = first prime reached when starting at 2n+1 and iterating f.
+ * A130142 Let f denote the map that replaces k with the concatenation of its proper divisors, written in decreasing order, each divisor being written in base 10 with its digits in reverse order. Then <code>a(n) =</code> first prime reached when starting at <code>2n+1</code> and iterating f.
  * @author Sean A. Irvine
  */
 public class A130142 implements Sequence {

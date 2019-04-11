@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006137 a(n) = 1 + n/2 + 9*n^2/2.
+ * A006137 <code>a(n) = 1 + n/2 + 9*n^2/2</code>.
  * @author Sean A. Irvine
  */
 public class A006137 implements Sequence {

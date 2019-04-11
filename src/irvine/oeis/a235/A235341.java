@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A235341 Positive integers a such that there exist b, c with 1/a + 1/b + 1/c = 1/3 and a &gt;= b &gt;= c.
+ * A235341 Positive integers a such that there exist b, c with <code>1/a +</code> 1/b + 1/c <code>= 1/3</code> and <code>a &gt;=</code> b <code>&gt;=</code> c.
  * @author Georg Fischer
  */
 public class A235341 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104336 Weight distribution of [24,12,8] binary Golay code.
+ * A104336 Weight distribution of <code>[24,12,8]</code> binary Golay code.
  * @author Georg Fischer
  */
 public class A104336 extends FiniteSequence {

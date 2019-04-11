@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169676 Lexicographically earliest de Bruijn sequence for n = 2 and k = 3.
+ * A169676 Lexicographically earliest de Bruijn sequence for <code>n = 2</code> and k <code>= 3</code>.
  * @author Sean A. Irvine
  */
 public class A169676 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007097 Primeth recurrence: a(n+1) = a(n)-th prime.
+ * A007097 Primeth recurrence: <code>a(n+1) =</code> a(n)-th prime.
  * @author Sean A. Irvine
  */
 public class A007097 implements Sequence {

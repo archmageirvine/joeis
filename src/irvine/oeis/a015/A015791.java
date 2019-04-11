@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015791 a(n) is the smallest integer k such that phi(k) + n | sigma(k + n).
+ * A015791 <code>a(n)</code> is the smallest integer k such that phi(k) <code>+ n</code> | sigma(k <code>+ n)</code>.
  * @author Sean A. Irvine
  */
 public class A015791 implements Sequence {

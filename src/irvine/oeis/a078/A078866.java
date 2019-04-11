@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078866 The quadruples (d1,d2,d3,d4) with elements in {2,4,6} are listed in lexicographic order; for each quadruple, this sequence lists the smallest prime p &gt;= 5 such that the differences between the 5 consecutive primes starting with p are (d1,d2,d3,d4), if such a prime exists.
+ * A078866 The quadruples (d1,d2,d3,d4) with elements in <code>{2,4,6}</code> are listed in lexicographic order; for each quadruple, this sequence lists the smallest prime p <code>&gt;= 5</code> such that the differences between the 5 consecutive primes starting with p are (d1,d2,d3,d4), if such a prime exists.
  * @author Georg Fischer
  */
 public class A078866 extends FiniteSequence {

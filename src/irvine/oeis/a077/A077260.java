@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077260 Triangular numbers that are 1/5 of a triangular number.
+ * A077260 Triangular numbers that are <code>1/5</code> of a triangular number.
  * @author Sean A. Irvine
  */
 public class A077260 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172447 a(n) = (-1 + 5*2^(2*n+1) - 3*n)/9.
+ * A172447 <code>a(n) = (-1 + 5*2^(2*n+1) - 3*n)/9</code>.
  * @author Sean A. Irvine
  */
 public class A172447 extends LinearRecurrence {

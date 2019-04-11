@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277752 a(n) = Sum_{k=0..n} (-1)^k*floor(phi^k), where phi is the golden ratio (A001622).
+ * A277752 <code>a(n) =</code> Sum_{k=0..n} (-1)^k*floor(phi^k), where phi is the golden ratio (A001622).
  * @author Sean A. Irvine
  */
 public class A277752 extends LinearRecurrence {

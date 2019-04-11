@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120400 Expansion of 1/(1-x-x^2-x^6).
+ * A120400 Expansion of <code>1/(1-x-x^2-x^6)</code>.
  * @author Sean A. Irvine
  */
 public class A120400 extends LinearRecurrence {

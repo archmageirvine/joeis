@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168211 a(n) = (9 + 14*n + 23*(-1)^n)/4.
+ * A168211 <code>a(n) = (9 + 14*n + 23*(-1)^n)/4</code>.
  * @author Sean A. Irvine
  */
 public class A168211 extends LinearRecurrence {

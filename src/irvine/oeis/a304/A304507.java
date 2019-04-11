@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304507 a(n) = 5*(n+1)*(9*n+4). 
+ * A304507 <code>a(n) = 5*(n+1)*(9*n+4)</code>.
  * @author Georg Fischer
  */
 public class A304507 extends LinearRecurrence {

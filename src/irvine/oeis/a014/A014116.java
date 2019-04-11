@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014116 Order of automorphism group of Barnes-Wall lattice in dimension 2^n.
+ * A014116 Order of automorphism group of Barnes-Wall lattice in dimension <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A014116 extends A014115 {

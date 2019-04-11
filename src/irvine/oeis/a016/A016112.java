@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016112 Smallest prime whose digit product is n, if possible; otherwise 0 if n is a prime &gt; 7 or 1 if n has a prime factor &gt; 7.
+ * A016112 Smallest prime whose digit product is <code>n,</code> if possible; otherwise 0 if n is a prime <code>&gt; 7</code> or 1 if n has a prime factor <code>&gt; 7</code>.
  * @author Sean A. Irvine
  */
 public class A016112 implements Sequence {

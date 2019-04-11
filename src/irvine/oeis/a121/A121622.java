@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121622 Real part of (3 + 2i)^n.
+ * A121622 Real part of <code>(3 +</code> 2i)^n.
  * @author Sean A. Irvine
  */
 public class A121622 extends LinearRecurrence {

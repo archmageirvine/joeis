@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a212.A212804;
 
 /**
- * A006367 Number of binary vectors of length n+1 beginning with 0 and containing just 1 singleton.
+ * A006367 Number of binary vectors of length <code>n+1</code> beginning with 0 and containing just 1 singleton.
  * @author Sean A. Irvine
  */
 public class A006367 extends A212804 {

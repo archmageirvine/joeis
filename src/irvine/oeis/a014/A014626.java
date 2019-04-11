@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014626 Number of intersection points of diagonals of an n-gon in general position, plus number of vertices.
+ * A014626 Number of intersection points of diagonals of <code>an</code> n-gon in general position, plus number of vertices.
  * @author Sean A. Irvine
  */
 public class A014626 extends LinearRecurrence {

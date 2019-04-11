@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.util.AbstractIterator;
 
 /**
- * A002071 Number of pairs of consecutive integers x, x+1 such that all prime factors of both x and x+1 are at most the n-th prime.
+ * A002071 Number of pairs of consecutive integers <code>x, x+1</code> such that all prime factors of both x and <code>x+1</code> are at most the n-th prime.
  * @author Sean A. Irvine
  */
 public class A002071 implements Sequence {

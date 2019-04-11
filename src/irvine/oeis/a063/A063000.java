@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063000 Number of paths of length n+2 originating at a corner of 4 X 4 Boggle board.
+ * A063000 Number of paths of length <code>n+2</code> originating at a corner of 4 X 4 Boggle board.
  * @author Georg Fischer
  */
 public class A063000 extends FiniteSequence {

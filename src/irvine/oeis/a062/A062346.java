@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062346 Consider 2n tennis players; a(n) is the number of matches needed to let every possible pair play each other.
+ * A062346 Consider <code>2n</code> tennis players; <code>a(n)</code> is the number of matches needed to let every possible pair play each other.
  * @author Sean A. Irvine
  */
 public class A062346 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002235;
 
 /**
- * A007505 Primes of form 3*2^n - 1.
+ * A007505 Primes of form <code>3*2^n - 1</code>.
  * @author Sean A. Irvine
  */
 public class A007505 extends A002235 {

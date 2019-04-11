@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005460 a(n) = (3*n+4)*(n+3)!/24.
+ * A005460 <code>a(n) = (3*n+4)*(n+3)!/24</code>.
  * @author Sean A. Irvine
  */
 public class A005460 implements Sequence {

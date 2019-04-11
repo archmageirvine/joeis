@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A002942 a(n) = n^2 written backwards.
+ * A002942 <code>a(n) = n^2</code> written backwards.
  * @author Sean A. Irvine
  */
 public class A002942 implements Sequence {

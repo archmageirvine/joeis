@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001346 a(n) = Sum_{k = 0..4} (n+k)! C(4,k).
+ * A001346 <code>a(n) =</code> Sum_{k <code>= 0</code>..4} (n+k)! C(4,k).
  * @author Sean A. Irvine
  */
 public class A001346 implements Sequence {

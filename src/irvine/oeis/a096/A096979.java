@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096979 Sum of the areas of the first n+1 Pell triangles.
+ * A096979 Sum of the areas of the first <code>n+1</code> Pell triangles.
  * @author Sean A. Irvine
  */
 public class A096979 extends LinearRecurrence {

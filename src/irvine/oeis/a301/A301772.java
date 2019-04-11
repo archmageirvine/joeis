@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A301772 Number of odd chordless cycles in the n-antiprism graph. 
+ * A301772 Number of odd chordless cycles in the n-antiprism graph.
  * @author Georg Fischer
  */
 public class A301772 extends LinearRecurrence {

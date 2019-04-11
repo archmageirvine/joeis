@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007520 Primes == 3 (mod 8).
+ * A007520 Primes <code>== 3 (mod 8)</code>.
  * @author Sean A. Irvine
  */
 public class A007520 implements Sequence {

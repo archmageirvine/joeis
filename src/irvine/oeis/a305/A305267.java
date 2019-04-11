@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305267 a(n) = 68*2^n + 358. 
+ * A305267 <code>a(n) = 68*2^n + 358</code>.
  * @author Georg Fischer
  */
 public class A305267 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001675 a(n) = round(sqrt( 2*Pi )^n).
+ * A001675 <code>a(n) =</code> round(sqrt( 2*Pi <code>)^n)</code>.
  * @author Sean A. Irvine
  */
 public class A001675 implements Sequence {

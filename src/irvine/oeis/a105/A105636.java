@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105636 Transform of n^3 by the Riordan array (1/(1-x^2), x).
+ * A105636 Transform of <code>n^3</code> by the Riordan array <code>(1/(1-x^2), x)</code>.
  * @author Sean A. Irvine
  */
 public class A105636 extends LinearRecurrence {

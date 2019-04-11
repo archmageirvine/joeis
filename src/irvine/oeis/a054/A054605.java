@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054605 a(n) = Sum_{d|6} phi(d)*n^(6/d).
+ * A054605 <code>a(n) =</code> Sum_{d|6} phi(d)*n^(6/d).
  * @author Sean A. Irvine
  */
 public class A054605 extends LinearRecurrence {

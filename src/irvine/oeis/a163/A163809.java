@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163809 Write n in binary. Insert a 0 in the middle of each pair of two consecutive 1's. a(n) = the decimal value of the result.
+ * A163809 Write n in binary. Insert <code>a 0</code> in the middle of each pair of two consecutive 1's. <code>a(n) =</code> the decimal value of the result.
  * @author Sean A. Irvine
  */
 public class A163809 implements Sequence {

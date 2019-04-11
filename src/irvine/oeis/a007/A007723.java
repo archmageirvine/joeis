@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a011.A011804;
 
 /**
- * A007723 Triangle a(n,k) of number of M-sequences read by antidiagonals.
+ * A007723 Triangle <code>a(n</code>,k) of number of M-sequences read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A007723 extends A011804 {

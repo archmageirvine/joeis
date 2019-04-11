@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026817 Number of sets which can be obtained by selecting unique elements from two sets with 2n and 3n elements respectively and n common elements.
+ * A026817 Number of sets which can be obtained by selecting unique elements from two sets with <code>2n</code> and <code>3n</code> elements respectively and n common elements.
  * @author Sean A. Irvine
  */
 public class A026817 extends LinearRecurrence {

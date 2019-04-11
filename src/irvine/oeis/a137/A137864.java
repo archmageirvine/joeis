@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137864 a(n) = n^4 - 10n^3 + 35n^2 - 48n + 23.
+ * A137864 <code>a(n) = n^4 - 10n^3 + 35n^2 - 48n + 23</code>.
  * @author Sean A. Irvine
  */
 public class A137864 extends LinearRecurrence {

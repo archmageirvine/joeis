@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274682 Numbers n such that 8*n-1 is a triangular number.
+ * A274682 Numbers n such that <code>8*n-1</code> is a triangular number.
  * @author Sean A. Irvine
  */
 public class A274682 extends LinearRecurrence {

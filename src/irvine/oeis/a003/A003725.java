@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003725 E.g.f.: exp( x * exp(-x) ).
+ * A003725 E.g.f.: exp( <code>x *</code> exp(-x) ).
  * @author Sean A. Irvine
  */
 public class A003725 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099586 Constant term in (1+x)^n mod (1+x^4).
+ * A099586 Constant term in <code>(1+x)^n mod (1+x^4)</code>.
  * @author Sean A. Irvine
  */
 public class A099586 extends LinearRecurrence {

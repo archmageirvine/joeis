@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102841 a(n) = ((9*n^2 + 33*n + 26)*2^n + (-1)^n)/27.
+ * A102841 <code>a(n) = ((9*n^2 + 33*n + 26)*2^n + (-1)^n)/27</code>.
  * @author Sean A. Irvine
  */
 public class A102841 extends LinearRecurrence {

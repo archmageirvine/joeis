@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007785 Number of sets of positive integers &lt;= n^2 whose sum is (n^3 + n)/2.
+ * A007785 Number of sets of positive integers <code>&lt;= n^2</code> whose sum is <code>(n^3 + n)/2</code>.
  * @author Sean A. Irvine
  */
 public class A007785 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260846 a(n) = (-3 - 28*3^n + 73*15^n)/21.
+ * A260846 <code>a(n) = (-3 - 28*3^n + 73*15^n)/21</code>.
  * @author Sean A. Irvine
  */
 public class A260846 extends LinearRecurrence {

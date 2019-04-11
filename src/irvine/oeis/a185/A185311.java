@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185311 Ker&#228;nen's abelian squarefree endomorphism of size 85 on the symbols {1,2,3,4}.
+ * A185311 Ker&#228;nen's abelian squarefree endomorphism of size 85 on the symbols <code>{1,2,3,4}</code>.
  * @author Georg Fischer
  */
 public class A185311 extends FiniteSequence {

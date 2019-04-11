@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254367 a(n) = 5*2^(n+2) + 2^(2n+2) + 10*3^n + 5^n + 35.
+ * A254367 <code>a(n) = 5*2^(n+2) + 2^(2n+2) + 10*3^n + 5^n + 35</code>.
  * @author Sean A. Irvine
  */
 public class A254367 extends LinearRecurrence {

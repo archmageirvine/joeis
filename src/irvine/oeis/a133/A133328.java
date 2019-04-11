@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133328 Values of n such that the sum of the 7-gonal number (5*n^2 - 3*n)/2 and the following 7-gonal number is a 7-gonal number.
+ * A133328 Values of n such that the sum of the 7-gonal number <code>(5*n^2 - 3*n)/2</code> and the following 7-gonal number is a 7-gonal number.
  * @author Sean A. Irvine
  */
 public class A133328 extends LinearRecurrence {

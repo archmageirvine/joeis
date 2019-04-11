@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015886 a(n) = smallest number k such that sigma(k + n) = sigma(k) + n, or -1 if no such number exists.
+ * A015886 <code>a(n) =</code> smallest number k such that sigma(k <code>+ n) =</code> sigma(k) <code>+ n,</code> or <code>-1</code> if no such number exists.
  * @author Sean A. Irvine
  */
 public class A015886 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A067933 Primes p such that p == -1 (mod phi(p-1)).
+ * A067933 Primes p such that p <code>== -1 (mod</code> phi(p-1)).
  * @author Sean A. Irvine
  */
 public class A067933 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002731 Numbers n such that (n^2 + 1)/2 is prime.
+ * A002731 Numbers n such that <code>(n^2 + 1)/2</code> is prime.
  * @author Sean A. Irvine
  */
 public class A002731 implements Sequence {

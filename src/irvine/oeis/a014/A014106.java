@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014106 a(n) = n*(2*n + 3).
+ * A014106 <code>a(n) = n*(2*n + 3)</code>.
  * @author Sean A. Irvine
  */
 public class A014106 implements Sequence {

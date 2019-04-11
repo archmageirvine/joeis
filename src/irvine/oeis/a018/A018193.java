@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 
 /**
- * A018193 Number of chord diagrams of degree n with an isolated chord of length 1.
+ * A018193 Number of chord diagrams of degree n with <code>an</code> isolated chord of length 1.
  * @author Sean A. Irvine
  */
 public class A018193 extends A018192 {

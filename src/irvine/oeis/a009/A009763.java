@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009763 a(n) is (n+1)!*(n+2)! times coefficient of x^n in (log(1-x))^-1.
+ * A009763 <code>a(n)</code> is <code>(n+1)!*(n+2)!</code> times coefficient of <code>x^n</code> in (log(1-x))^-1.
  * @author Sean A. Irvine
  */
 public class A009763 implements Sequence {

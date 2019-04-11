@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204221 Integers of the form (n^2 - 1) / 15.
+ * A204221 Integers of the form <code>(n^2 - 1) / 15</code>.
  * @author Sean A. Irvine
  */
 public class A204221 extends LinearRecurrence {

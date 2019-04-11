@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001412;
 
 /**
- * A000760 Number of n-step self-avoiding walks on cubic lattice ending at point with x=1.
+ * A000760 Number of n-step self-avoiding walks on cubic lattice ending at point with <code>x=1</code>.
  * @author Sean A. Irvine
  */
 public class A000760 extends A001412 {

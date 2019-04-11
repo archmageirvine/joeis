@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288838 a(n) = (1/4!)*3^(n+2)*(n+7)*(n+2)*(n+1)*(n).
+ * A288838 <code>a(n) = (1/4!)*3^(n+2)*(n+7)*(n+2)*(n+1)*(n)</code>.
  * @author Sean A. Irvine
  */
 public class A288838 extends LinearRecurrence {

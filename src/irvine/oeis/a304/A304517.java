@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304517 a(n) = 16*2^n - 11 (n&gt;=1). 
+ * A304517 <code>a(n) = 16*2^n - 11 (n&gt;=1)</code>.
  * @author Georg Fischer
  */
 public class A304517 extends LinearRecurrence {

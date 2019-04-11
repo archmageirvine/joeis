@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005165 Alternating factorials: n! - (n-1)! + (n-2)! - ... 1!.
+ * A005165 Alternating factorials: <code>n! - (n-1)! + (n-2)! - </code>... <code>1!</code>.
  * @author Sean A. Irvine
  */
 public class A005165 implements Sequence {

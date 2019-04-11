@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115271 Partial sums of floor((n+4)/4)^2.
+ * A115271 Partial sums of <code>floor((n+4)/4)^2</code>.
  * @author Sean A. Irvine
  */
 public class A115271 extends LinearRecurrence {

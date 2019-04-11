@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011547 Decimal expansion of sqrt(2) truncated to n places.
+ * A011547 Decimal expansion of <code>sqrt(2)</code> truncated to n places.
  * @author Sean A. Irvine
  */
 public class A011547 implements Sequence {

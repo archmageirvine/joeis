@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006369 a(n) = 2n/3 for n divisible by 3, otherwise a(n) = round(4n/3).
+ * A006369 <code>a(n) = 2n/3</code> for n divisible by <code>3,</code> otherwise <code>a(n) =</code> round(4n/3).
  * @author Sean A. Irvine
  */
 public class A006369 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266046 Real part of Q^n, where Q is the quaternion 2 + j + k.
+ * A266046 Real part of Q^n, where Q is the quaternion <code>2 +</code> j + k.
  * @author Sean A. Irvine
  */
 public class A266046 extends LinearRecurrence {

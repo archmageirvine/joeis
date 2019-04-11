@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A154306 a(n) = (n+1)^3*(3+n)!/6.
+ * A154306 <code>a(n) = (n+1)^3*(3+n)!/6</code>.
  * @author Sean A. Irvine
  */
 public class A154306 implements Sequence {

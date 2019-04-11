@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098924 45-gonal numbers: n*(43*n-41)/2.
+ * A098924 45-gonal numbers: <code>n*(43*n-41)/2</code>.
  * @author Sean A. Irvine
  */
 public class A098924 extends LinearRecurrence {

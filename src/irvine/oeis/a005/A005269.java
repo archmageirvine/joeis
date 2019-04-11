@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005269 a(n) = number of length-n sequences s with s[1]=1, s[2]=1, s[k-1] &lt;=s[k] &lt;= s[k-2]+s[k-1] (s is called a sub-Fibonacci sequence of length n).
+ * A005269 <code>a(n) =</code> number of length-n sequences s with s[1]=1, s[2]=1, s[k-1] &lt;=s[k] <code>&lt;=</code> s[k-2]+s[k-1] (s is called a sub-Fibonacci sequence of length <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A005269 implements Sequence {

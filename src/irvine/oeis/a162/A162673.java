@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162673 Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by an n*n square.
+ * A162673 Number of different fixed (possibly) disconnected trominoes bounded (not necessarily tightly) by <code>an n*n</code> square.
  * @author Sean A. Irvine
  */
 public class A162673 extends LinearRecurrence {

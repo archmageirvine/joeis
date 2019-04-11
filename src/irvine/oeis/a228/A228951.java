@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228951 Numbers n such that decimal expansion of n^n has only one zero.
+ * A228951 Numbers n such that decimal expansion of <code>n^n</code> has only one zero.
  * @author Georg Fischer
  */
 public class A228951 extends FiniteSequence {

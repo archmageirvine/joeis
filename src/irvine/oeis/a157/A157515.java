@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157515 a(n) = 1000*n - 20.
+ * A157515 <code>a(n) = 1000*n - 20</code>.
  * @author Sean A. Irvine
  */
 public class A157515 extends LinearRecurrence {

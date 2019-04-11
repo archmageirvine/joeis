@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177890 15-gonal (or pentadecagonal) pyramidal numbers: a(n) = n*(n+1)*(13*n-10)/6.
+ * A177890 15-gonal (or pentadecagonal) pyramidal numbers: <code> a(n) = n*(n+1)*(13*n-10)/6</code>.
  * @author Sean A. Irvine
  */
 public class A177890 extends LinearRecurrence {

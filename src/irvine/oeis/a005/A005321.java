@@ -7,7 +7,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A005321 Upper triangular n X n (0,1)-matrices with no zero rows or columns.
+ * A005321 Upper triangular n X <code>n (0</code>,1)-matrices with no zero rows or columns.
  * @author Sean A. Irvine
  */
 public class A005321 extends A005327 {

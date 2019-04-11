@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A007369 Numbers n such that sigma(x) = n has no solution.
+ * A007369 Numbers n such that sigma(x) <code>= n</code> has no solution.
  * @author Sean A. Irvine
  */
 public class A007369 implements Sequence {

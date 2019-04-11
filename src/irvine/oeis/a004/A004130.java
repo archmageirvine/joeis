@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004130 Numerators in expansion of (1-x)^{-1/4}.
+ * A004130 Numerators in expansion of <code>(1-x)^{-1/4}</code>.
  * @author Sean A. Irvine
  */
 public class A004130 implements Sequence {

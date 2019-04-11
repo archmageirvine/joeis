@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007959 Some nontrivial permutation of digits is an odd number.
+ * A007959 Some nontrivial permutation of digits is <code>an</code> odd number.
  * @author Sean A. Irvine
  */
 public class A007959 implements Sequence {

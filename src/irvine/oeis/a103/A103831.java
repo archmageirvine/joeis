@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103831 For even n, a(n) = n*(n+1), for odd n, a(n) = 2*n + 1.
+ * A103831 For even <code>n, a(n) = n*(n+1),</code> for odd <code>n, a(n) = 2*n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A103831 extends LinearRecurrence {

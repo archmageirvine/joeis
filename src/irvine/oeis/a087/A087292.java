@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087292 Number of pairs of polynomials (f,g) in GF(3)[x] satisfying 1 &lt;= deg(f) &lt; =n, 1 &lt;= deg(g) &lt;= n and gcd(f,g) = 1.
+ * A087292 Number of pairs of polynomials (f,g) in GF(3)[x] satisfying <code>1 &lt;=</code> deg(f) <code>&lt; =n, 1 &lt;=</code> deg(g) <code>&lt;= n</code> and gcd(f,g) <code>= 1</code>.
  * @author Sean A. Irvine
  */
 public class A087292 extends LinearRecurrence {

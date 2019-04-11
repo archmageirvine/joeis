@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A320876 Lexicographically first 6 X 6 pandiagonal magic square made of consecutive primes with the smallest magic constant (930).
+ * A320876 Lexicographically first 6 X 6 pandiagonal magic square made of consecutive primes with the smallest magic constant <code>(930)</code>.
  * @author Georg Fischer
  */
 public class A320876 extends FiniteSequence {

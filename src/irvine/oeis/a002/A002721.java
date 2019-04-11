@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002721 Number of 3 X 3 X 3 arrays M_ijk (1 &lt;= i,j,k &lt;= 3) with entries satisfying 0 &lt;= M_ijk &lt;= n and all line sums equal to n.
+ * A002721 Number of 3 X 3 X 3 arrays M_ijk <code>(1 &lt;=</code> i,j,k <code>&lt;= 3)</code> with entries satisfying <code>0 &lt;=</code> M_ijk <code>&lt;= n</code> and all line sums equal to n.
  * @author Sean A. Irvine
  */
 public class A002721 implements Sequence {

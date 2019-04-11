@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260190 Kronecker symbol(-6 / 2*n + 1).
+ * A260190 Kronecker symbol(-6 <code>/ 2*n + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A260190 extends LinearRecurrence {

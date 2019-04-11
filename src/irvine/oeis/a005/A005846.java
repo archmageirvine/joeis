@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005846 Primes of the form n^2 + n + 41.
+ * A005846 Primes of the form <code>n^2 + n + 41</code>.
  * @author Sean A. Irvine
  */
 public class A005846 implements Sequence {

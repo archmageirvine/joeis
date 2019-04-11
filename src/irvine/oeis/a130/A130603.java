@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A130603 a(0)=0, a(n) = the n-th positive integer that is coprime to (a(n-1)+1).
+ * A130603 <code>a(0)=0, a(n) =</code> the n-th positive integer that is coprime to <code>(a(n-1)+1)</code>.
  * @author Sean A. Irvine
  */
 public class A130603 implements Sequence {

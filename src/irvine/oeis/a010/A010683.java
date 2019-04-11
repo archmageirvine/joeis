@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010683 Let S(x,y) = number of lattice paths from (0,0) to (x,y) that use the step set { (0,1), (1,0), (2,0), (3,0), ....} and never pass below y = x. Sequence gives S(n-1,n) = number of 'Schr&#246;der' trees with n+1 leaves and root of degree 2.
+ * A010683 Let S(x,y) = number of lattice paths from <code>(0,0)</code> to <code>(x</code>,y) that use the step set <code>{ (0,1), (1,0), (2,0), (3,0), </code>....} and never pass below y <code>= x</code>. Sequence gives S(n-1,n) = number of 'Schr&#246;der' trees with <code>n+1</code> leaves and root of degree 2.
  * @author Sean A. Irvine
  */
 public class A010683 implements Sequence {

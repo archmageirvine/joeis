@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140246 Decimal expansion of sqrt(15)/6.
+ * A140246 Decimal expansion of <code>sqrt(15)/6</code>.
  * @author Sean A. Irvine
  */
 public class A140246 extends DecimalExpansionSequence {

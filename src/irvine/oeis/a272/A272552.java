@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A272552 Numbers n such that n*prime(n) is a pandigital number containing digits 0-9 exactly once.
+ * A272552 Numbers n such that n*prime(n) is a pandigital number containing digits <code>0-9</code> exactly once.
  * @author Georg Fischer
  */
 public class A272552 extends FiniteSequence {

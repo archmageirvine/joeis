@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046637 Number of cubic residues mod 9^n.
+ * A046637 Number of cubic residues <code>mod 9^n</code>.
  * @author Sean A. Irvine
  */
 public class A046637 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074542 a(n) = 2^n + 6^n + 8^n.
+ * A074542 <code>a(n) = 2^n + 6^n + 8^n</code>.
  * @author Sean A. Irvine
  */
 public class A074542 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052482 a(n) = 2^(n-2)*binomial(n+1,2).
+ * A052482 <code>a(n) =</code> 2^(n-2)*binomial(n+1,2).
  * @author Sean A. Irvine
  */
 public class A052482 extends LinearRecurrence {

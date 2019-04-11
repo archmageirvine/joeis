@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024198 4th elementary symmetric function of the first n+3 odd positive integers.
+ * A024198 4th elementary symmetric function of the first <code>n+3</code> odd positive integers.
  * @author Sean A. Irvine
  */
 public class A024198 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215145 a(n) = 20*n + 1. 
+ * A215145 <code>a(n) = 20*n + 1</code>.
  * @author Georg Fischer
  */
 public class A215145 extends LinearRecurrence {

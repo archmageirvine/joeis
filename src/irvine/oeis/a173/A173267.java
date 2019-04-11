@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173267 a(n) = 121*n^2 + n.
+ * A173267 <code>a(n) = 121*n^2 + n</code>.
  * @author Sean A. Irvine
  */
 public class A173267 extends LinearRecurrence {

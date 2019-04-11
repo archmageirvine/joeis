@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030645 Weight enumerator of [ 40,19,10 ] shortened QR code.
+ * A030645 Weight enumerator of <code>[ 40,19,10 ]</code> shortened QR code.
  * @author Georg Fischer
  */
 public class A030645 extends FiniteSequence {

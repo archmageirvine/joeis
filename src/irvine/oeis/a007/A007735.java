@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007735 Period of base 4 representation of 1/n.
+ * A007735 Period of base 4 representation of <code>1/n</code>.
  * @author Sean A. Irvine
  */
 public class A007735 implements Sequence {

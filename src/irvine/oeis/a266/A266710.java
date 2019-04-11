@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266710 Coefficient of x^0 in the minimal polynomial of the continued fraction [1^n,sqrt(2),1,1,...], where 1^n means n ones. 
+ * A266710 Coefficient of <code>x^0</code> in the minimal polynomial of the continued fraction <code>[1^n,sqrt(2),1,1,</code>...], where <code>1^n</code> means n ones.
  * @author Georg Fischer
  */
 public class A266710 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147757 Palindromes formed from the reflected decimal expansion of the concatenation of 1, 0 and infinite digits 1. 
+ * A147757 Palindromes formed from the reflected decimal expansion of the concatenation of <code>1, 0</code> and infinite digits 1.
  * @author Georg Fischer
  */
 public class A147757 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152731 a(n) + a(n+1) + a(n+2) = n^6, a(1)=a(2)=0. 
+ * A152731 <code>a(n) + a(n+1) + a(n+2) = n^6, a(1)=a(2)=0</code>.
  * @author Georg Fischer
  */
 public class A152731 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a037.A037223;
 import irvine.oeis.a122.A122670;
 
 /**
- * A000901 Number of solutions to the rook problem on a 2n X 2n board having a certain symmetry group (see Robinson for details).
+ * A000901 Number of solutions to the rook problem on <code>a 2n</code> X <code>2n</code> board having a certain symmetry group (see Robinson for details).
  * @author Sean A. Irvine
  */
 public class A000901 extends A037223 {

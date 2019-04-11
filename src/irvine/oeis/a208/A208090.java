@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208090 100 written in base -n.
+ * A208090 100 written in base <code>-n</code>.
  * @author Georg Fischer
  */
 public class A208090 extends FiniteSequence {

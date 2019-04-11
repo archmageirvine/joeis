@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067334 Convolution of Fibonacci F(n+1), n&gt;=0, with F(n+6), n&gt;=0.
+ * A067334 Convolution of Fibonacci F(n+1), <code>n&gt;=0,</code> with F(n+6), <code>n&gt;=0</code>.
  * @author Sean A. Irvine
  */
 public class A067334 extends LinearRecurrence {

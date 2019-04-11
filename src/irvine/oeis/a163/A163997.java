@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A163997 Primes with an even number of partitions.
+ * A163997 Primes with <code>an</code> even number of partitions.
  * @author Sean A. Irvine
  */
 public class A163997 implements Sequence {

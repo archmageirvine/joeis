@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249450 Alternate Fibonacci numbers - 2.
+ * A249450 Alternate Fibonacci numbers <code>- 2</code>.
  * @author Sean A. Irvine
  */
 public class A249450 extends LinearRecurrence {

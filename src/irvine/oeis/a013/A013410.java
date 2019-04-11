@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013410 Coefficient of x^(2n+1)/(2n+1)! in arctan(arcsin(x)-arctan(x))=3/3!*x^3-15/5!*x^5+945/7!*x^7-44415/9!*x^9...
+ * A013410 Coefficient of <code>x^(2n+1)/(2n+1)!</code> in arctan(arcsin(x)-arctan(x))=3/3!*x^3-15/5!*x^5+945/7!*x^7-44415/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013410 implements Sequence {

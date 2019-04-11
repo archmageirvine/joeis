@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A007168 P-graphs with 2n edges.
+ * A007168 P-graphs with <code>2n</code> edges.
  * @author Sean A. Irvine
  */
 public class A007168 extends A007166 {

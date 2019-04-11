@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002901 n^3 - floor( n/3 ).
+ * A002901 <code>n^3 - floor( n/3 )</code>.
  * @author Sean A. Irvine
  */
 public class A002901 implements Sequence {

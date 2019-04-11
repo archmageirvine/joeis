@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A240670 Numbers n for which all exponents in the prime power factorization of (2*n)! are odious (A000069).
+ * A240670 Numbers n for which all exponents in the prime power factorization of <code>(2*n)!</code> are odious (A000069).
  * @author Georg Fischer
  */
 public class A240670 extends FiniteSequence {

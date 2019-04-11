@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004022 Primes of the form (10^n - 1)/9.
+ * A004022 Primes of the form <code>(10^n - 1)/9</code>.
  * @author Sean A. Irvine
  */
 public class A004022 implements Sequence {

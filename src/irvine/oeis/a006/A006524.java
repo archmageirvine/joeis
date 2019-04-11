@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006524 Egyptian fraction for 1/ Pi.
+ * A006524 Egyptian fraction for <code>1/</code> Pi.
  * @author Sean A. Irvine
  */
 public class A006524 implements Sequence {

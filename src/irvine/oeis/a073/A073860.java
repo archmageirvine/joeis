@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073860 Smallest primes such that every partial sum is an n-th power.
+ * A073860 Smallest primes such that every partial sum is <code>an</code> n-th power.
  * @author Georg Fischer
  */
 public class A073860 extends FiniteSequence {

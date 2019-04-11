@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030191 Scaled Chebyshev U-polynomial evaluated at sqrt(5)/2.
+ * A030191 Scaled Chebyshev U-polynomial evaluated at <code>sqrt(5)/2</code>.
  * @author Sean A. Irvine
  */
 public class A030191 extends LinearRecurrence {

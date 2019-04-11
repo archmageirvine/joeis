@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302941 Number of total dominating sets in the 2n-crossed prism graph. 
+ * A302941 Number of total dominating sets in the 2n-crossed prism graph.
  * @author Georg Fischer
  */
 public class A302941 extends LinearRecurrence {

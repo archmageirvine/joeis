@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154700 Prime divisors of 2^36-1.
+ * A154700 Prime divisors of <code>2^36-1</code>.
  * @author Georg Fischer
  */
 public class A154700 extends FiniteSequence {

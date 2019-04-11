@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003478 Expansion of 1/(1-2x)(1-x-2x^3 ).
+ * A003478 Expansion of <code>1/(1-2x)(1-x-2x^3 )</code>.
  * @author Sean A. Irvine
  */
 public class A003478 implements Sequence {

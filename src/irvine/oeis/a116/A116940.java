@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116940 Greatest m such that A116939(m) = n.
+ * A116940 Greatest m such that A116939(m) <code>= n</code>.
  * @author Sean A. Irvine
  */
 public class A116940 extends LinearRecurrence {

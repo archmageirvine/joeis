@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A019445 Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is an integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
+ * A019445 Form a permutation of the positive integers, p_1, p_2, ..., such that the average of each initial segment is <code>an</code> integer, using the greedy algorithm to define p_n; sequence gives p_1+..+p_n.
  * @author Sean A. Irvine
  */
 public class A019445 extends PartialSumSequence {

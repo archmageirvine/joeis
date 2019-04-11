@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A322598 a(n) is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms. 
+ * A322598 <code>a(n)</code> is the number of unlabeled rank-3 graded lattices with 3 coatoms and n atoms.
  * @author Georg Fischer
  */
 public class A322598 extends LinearRecurrence {

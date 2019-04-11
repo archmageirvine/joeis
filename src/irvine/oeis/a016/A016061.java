@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016061 a(n) = n*(n+1)*(4*n+5)/6.
+ * A016061 <code>a(n) = n*(n+1)*(4*n+5)/6</code>.
  * @author Sean A. Irvine
  */
 public class A016061 implements Sequence {

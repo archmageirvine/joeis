@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007930 Some nontrivial permutation of digits gives an even number.
+ * A007930 Some nontrivial permutation of digits gives <code>an</code> even number.
  * @author Sean A. Irvine
  */
 public class A007930 implements Sequence {

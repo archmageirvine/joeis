@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000699 Number of irreducible chord diagrams with 2n nodes.
+ * A000699 Number of irreducible chord diagrams with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A000699 extends MemorySequence {

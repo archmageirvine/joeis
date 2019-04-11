@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007928 Numbers containing an even digit.
+ * A007928 Numbers containing <code>an</code> even digit.
  * @author Sean A. Irvine
  */
 public class A007928 implements Sequence {

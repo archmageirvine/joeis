@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112587 Numbers m such that phi(m) &lt;= 2*tau(m), where phi=A000010 and tau=A000005.
+ * A112587 Numbers m such that phi(m) <code>&lt;=</code> 2*tau(m), where phi=A000010 and tau=A000005.
  * @author Georg Fischer
  */
 public class A112587 extends FiniteSequence {

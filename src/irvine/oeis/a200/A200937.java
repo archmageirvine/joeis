@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200937 Values y for infinite sequence x^3 - y^2 = d with increasing coefficient r = sqrt(x)/|d| or family of solutions Mordell curve with extension sqrt(2). 
+ * A200937 Values y for infinite sequence <code>x^3 -</code> y^2 = d with increasing coefficient r = sqrt(x)/|d| or family of solutions Mordell curve with extension <code>sqrt(2)</code>.
  * @author Georg Fischer
  */
 public class A200937 extends LinearRecurrence {

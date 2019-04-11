@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010035 a(n) = 2*3^(2*n)-3^n.
+ * A010035 <code>a(n) = 2*3^(2*n)-3^n</code>.
  * @author Sean A. Irvine
  */
 public class A010035 implements Sequence {

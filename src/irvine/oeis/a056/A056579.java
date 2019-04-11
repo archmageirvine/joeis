@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056579 1+2n+3n^2+4n^3+5n^4.
+ * A056579 <code>1+2n+3n^2+4n^3+5n^4</code>.
  * @author Sean A. Irvine
  */
 public class A056579 extends LinearRecurrence {

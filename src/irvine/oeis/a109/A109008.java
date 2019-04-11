@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109008 a(n) = GCD(n,4).
+ * A109008 <code>a(n) =</code> GCD(n,4).
  * @author Sean A. Irvine
  */
 public class A109008 extends LinearRecurrence {

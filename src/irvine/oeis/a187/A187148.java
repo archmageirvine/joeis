@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.math.z.Z;
 
 /**
- * A187148 McKay-Thompson series of class 12B for the Monster group with a(0) = -3.
+ * A187148 McKay-Thompson series of class 12B for the Monster group with <code>a(0) = -3</code>.
  * @author Sean A. Irvine
  */
 public class A187148 extends A187146 {

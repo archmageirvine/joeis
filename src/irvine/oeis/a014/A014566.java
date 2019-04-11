@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014566 Sierpi&#324;ski numbers of the first kind: n^n + 1.
+ * A014566 Sierpi&#324;ski numbers of the first kind: <code>n^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A014566 implements Sequence {

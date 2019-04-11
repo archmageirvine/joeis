@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000004;
 import irvine.oeis.a002.A002829;
 
 /**
- * A004109 Number of connected trivalent (or cubic) labeled graphs with 2n nodes.
+ * A004109 Number of connected trivalent (or cubic) labeled graphs with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A004109 extends LogarithmicTransformSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002171 Glaisher's chi numbers. a(n) = chi(4*n + 1).
+ * A002171 Glaisher's chi numbers. <code>a(n) =</code> chi(4*n <code>+ 1)</code>.
  * @author Sean A. Irvine
  */
 public class A002171 implements Sequence {

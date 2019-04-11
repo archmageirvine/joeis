@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241290 The integer-valued quartic beginning: 0, 9, 0, 9, 7.
+ * A241290 The integer-valued quartic beginning: <code>0, 9, 0, 9, 7</code>.
  * @author Sean A. Irvine
  */
 public class A241290 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A031137 Weight distribution of [48,23,8] Rao-Reddy code.
+ * A031137 Weight distribution of <code>[48,23,8]</code> Rao-Reddy code.
  * @author Georg Fischer
  */
 public class A031137 extends FiniteSequence {

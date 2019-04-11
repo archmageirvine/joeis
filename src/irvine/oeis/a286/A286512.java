@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A286512 Numbers N for which there is k &gt; 0 such that sum of digits(N^k) = N, but the least such k is larger than the least k for which sum of digits(N^k) &gt; N*11/10.
+ * A286512 Numbers N for which there is k <code>&gt; 0</code> such that sum of digits(N^k) = N, but the least such k is larger than the least k for which sum of digits(N^k) &gt; N*11/10.
  * @author Georg Fischer
  */
 public class A286512 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006273 Numerators of a continued fraction for (3+sqrt(13))/2.
+ * A006273 Numerators of a continued fraction for <code>(3+sqrt(13))/2</code>.
  * @author Sean A. Irvine
  */
 public class A006273 extends A006268 {

@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169725 3^(n-1)*(6*3^(n-1)+5)+1.
+ * A169725 <code>3^(n-1)*(6*3^(n-1)+5)+1</code>.
  * @author Sean A. Irvine
  */
 public class A169725 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141683 b(n) = b(n-2) + b(n-3); a(n) = Sum_{k=1..n} b(k)*a(n - k). 
+ * A141683 b(n) = b(n-2) + b(n-3); <code>a(n) =</code> Sum_{k=1..n} b(k)*a(n - k).
  * @author Georg Fischer
  */
 public class A141683 extends LinearRecurrence {

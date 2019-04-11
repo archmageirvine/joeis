@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102241 Hexagrams of the Yi Jing [or I Ching] interpreted in base 10, with the top line = 2^5 (most significant bit) and the bottom line as 2^0 (least significant bit).
+ * A102241 Hexagrams of the Yi Jing [or I Ching] interpreted in base <code>10,</code> with the top line <code>= 2^5</code> (most significant bit) and the bottom line as <code>2^0</code> (least significant bit).
  * @author Georg Fischer
  */
 public class A102241 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A005592 a(n) = F(2n+1) + F(2n-1) - 1.
+ * A005592 <code>a(n) =</code> F(2n+1) + F(2n-1) <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A005592 extends A000032 {

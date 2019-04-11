@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293642 a(n) is the greatest integer k such that k/Fibonacci(n) &lt; 3/5.
+ * A293642 <code>a(n)</code> is the greatest integer k such that k/Fibonacci(n) <code>&lt; 3/5</code>.
  * @author Sean A. Irvine
  */
 public class A293642 extends LinearRecurrence {

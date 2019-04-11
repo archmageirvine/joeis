@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182130 Number of independent sets of nodes in the armchair (3,3) carbon nanotube graph of breadth n (n&gt;=1).
+ * A182130 Number of independent sets of nodes in the armchair <code>(3,3)</code> carbon nanotube graph of breadth <code>n (n&gt;=1)</code>.
  * @author Sean A. Irvine
  */
 public class A182130 extends LinearRecurrence {

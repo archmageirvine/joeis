@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130205 a(n) = n^2 - a(n-1) - a(n-2), with a(1) = 1 and a(2) = 2.
+ * A130205 <code>a(n) = n^2 - a(n-1) - a(n-2),</code> with <code>a(1) = 1</code> and <code>a(2) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A130205 extends LinearRecurrence {

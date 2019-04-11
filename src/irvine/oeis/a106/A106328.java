@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106328 Numbers j such that 8*(j^2) + 9 = k^2 for some positive number k.
+ * A106328 Numbers j such that 8*(j^2) <code>+ 9 =</code> k^2 for some positive number k.
  * @author Sean A. Irvine
  */
 public class A106328 extends LinearRecurrence {

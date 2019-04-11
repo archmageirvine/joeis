@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073523 The set of 36 consecutive primes that form a 6 X 6 pandiagonal magic square with the smallest magic constant (930).
+ * A073523 The set of 36 consecutive primes that form <code>a 6</code> X 6 pandiagonal magic square with the smallest magic constant <code>(930)</code>.
  * @author Georg Fischer
  */
 public class A073523 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139398 a(n) = Sum_{k &gt;= 0} binomial(n,5*k).
+ * A139398 <code>a(n) =</code> Sum_{k <code>&gt;= 0}</code> binomial(n,5*k).
  * @author Sean A. Irvine
  */
 public class A139398 extends LinearRecurrence {

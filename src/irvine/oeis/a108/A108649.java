@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108649 a(n) = (n+1)(n+2)(n+3)(13n^3 + 69n^2 + 113n + 60)/360.
+ * A108649 <code>a(n) = (n+1)(n+2)(n+3)(13n^3 + 69n^2 + 113n + 60)/360</code>.
  * @author Sean A. Irvine
  */
 public class A108649 extends LinearRecurrence {

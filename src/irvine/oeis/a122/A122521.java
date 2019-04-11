@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122521 Recursion: a(n) = a(n - 6) + a(n - 8).
+ * A122521 Recursion: <code>a(n) = a(n - 6) + a(n - 8)</code>.
  * @author Sean A. Irvine
  */
 public class A122521 extends LinearRecurrence {

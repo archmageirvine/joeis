@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317186 One of many square spiral sequences: a(n) = n^2 + n - floor((n-1)/2). 
+ * A317186 One of many square spiral sequences: <code>a(n) = n^2 + n - floor((n-1)/2)</code>.
  * @author Georg Fischer
  */
 public class A317186 extends LinearRecurrence {

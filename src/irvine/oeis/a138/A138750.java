@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138750 a(n)=ceil(n/2) if n=2 (mod 3), a(n)=2n otherwise.
+ * A138750 a(n)=ceil(n/2) if <code>n=2 (mod 3), a(n)=2n</code> otherwise.
  * @author Sean A. Irvine
  */
 public class A138750 extends LinearRecurrence {

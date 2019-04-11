@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154871 Numbers n such that n^6 contains every digit exactly 4 times.
+ * A154871 Numbers n such that <code>n^6</code> contains every digit exactly 4 times.
  * @author Georg Fischer
  */
 public class A154871 extends FiniteSequence {

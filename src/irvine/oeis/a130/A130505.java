@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130505 a(n) = 3*a(n-1) if n is odd, otherwise 6*a(n-1).
+ * A130505 <code>a(n) = 3*a(n-1)</code> if n is odd, otherwise <code>6*a(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A130505 extends LinearRecurrence {

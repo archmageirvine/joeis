@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A306380 Squares of the form 5*k^2 + 5. 
+ * A306380 Squares of the form 5*k^2 <code>+ 5</code>.
  * @author Georg Fischer
  */
 public class A306380 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056082 Numbers n such that n^4 = 1 (mod 5^3).
+ * A056082 Numbers n such that <code>n^4 = 1 (mod 5^3)</code>.
  * @author Sean A. Irvine
  */
 public class A056082 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006996 C(2n,n) mod 3.
+ * A006996 C(2n,n) <code>mod 3</code>.
  * @author Sean A. Irvine
  */
 public class A006996 implements Sequence {

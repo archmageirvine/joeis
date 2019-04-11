@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157761 a(n) = 297754*n - 53000.
+ * A157761 <code>a(n) = 297754*n - 53000</code>.
  * @author Sean A. Irvine
  */
 public class A157761 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135556 Squares of numbers not divisible by 3: a(n) = A001651(n)^2.
+ * A135556 Squares of numbers not divisible by 3: <code>a(n) =</code> A001651(n)^2.
  * @author Sean A. Irvine
  */
 public class A135556 extends LinearRecurrence {

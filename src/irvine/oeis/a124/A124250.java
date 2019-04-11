@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124250 Finite set of numbers found inscribed on faces of a 17th or 18th century Mughal gold box in the shape of an icosahedron, from the treasury of Tipu Sultan.
+ * A124250 Finite set of numbers found inscribed on faces of a 17th or 18th century Mughal gold box in the shape of <code>an</code> icosahedron, from the treasury of Tipu Sultan.
  * @author Georg Fischer
  */
 public class A124250 extends FiniteSequence {

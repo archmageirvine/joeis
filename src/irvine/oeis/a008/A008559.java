@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008559 a(1)=2; thereafter, convert a(n-1) from base 10 to base 2 but regard the result as a base 10 number.
+ * A008559 <code>a(1)=2</code>; thereafter, convert <code>a(n-1)</code> from base 10 to base 2 but regard the result as a base 10 number.
  * @author Sean A. Irvine
  */
 public class A008559 implements Sequence {

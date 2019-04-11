@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005190 Central quadrinomial coefficients: largest coefficient of (1+x+x^2+x^3)^n.
+ * A005190 Central quadrinomial coefficients: largest coefficient of <code>(1+x+x^2+x^3)^n</code>.
  * @author Sean A. Irvine
  */
 public class A005190 implements Sequence {

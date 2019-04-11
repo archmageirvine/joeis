@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A084690 4^n uses only distinct decimal digits.
+ * A084690 <code>4^n</code> uses only distinct decimal digits.
  * @author Georg Fischer
  */
 public class A084690 extends FiniteSequence {

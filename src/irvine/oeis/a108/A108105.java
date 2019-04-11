@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108105 2^floor(n/5).
+ * A108105 <code>2^floor(n/5)</code>.
  * @author Sean A. Irvine
  */
 public class A108105 extends LinearRecurrence {

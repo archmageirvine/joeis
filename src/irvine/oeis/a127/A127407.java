@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127407 Negative value of coefficient of x^(n-2) in the characteristic polynomial of a certain n X n integer circulant matrix.
+ * A127407 Negative value of coefficient of <code>x^(n-2)</code> in the characteristic polynomial of a certain n X n integer circulant matrix.
  * @author Sean A. Irvine
  */
 public class A127407 extends LinearRecurrence {

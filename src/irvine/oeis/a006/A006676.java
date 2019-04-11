@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006676 Number of paths through an array.
+ * A006676 Number of paths through <code>an</code> array.
  * @author Sean A. Irvine
  */
 public class A006676 implements Sequence {

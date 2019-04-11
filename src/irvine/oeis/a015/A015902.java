@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015902 Numbers k such that k | 10^k + 10.
+ * A015902 Numbers k such that k | 10^k <code>+ 10</code>.
  * @author Sean A. Irvine
  */
 public class A015902 implements Sequence {

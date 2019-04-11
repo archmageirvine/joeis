@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015957 Numbers n such that n | 9^n + 1.
+ * A015957 Numbers n such that n | <code>9^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A015957 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007636 Numbers k such that k^2 + k + 17 is composite.
+ * A007636 Numbers k such that k^2 + k <code>+ 17</code> is composite.
  * @author Sean A. Irvine
  */
 public class A007636 implements Sequence {

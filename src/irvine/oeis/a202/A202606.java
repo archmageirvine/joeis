@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202606 Ceiling(((10^n - 1)^2/9 + 10^n)/18).
+ * A202606 Ceiling(((10^n <code>- 1)^2/9 + 10^n)/18)</code>.
  * @author Sean A. Irvine
  */
 public class A202606 extends LinearRecurrence {

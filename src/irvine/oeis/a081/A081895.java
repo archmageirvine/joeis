@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081895 Second binomial transform of binomial(n+3, 3).
+ * A081895 Second binomial transform of binomial(n+3, <code>3)</code>.
  * @author Sean A. Irvine
  */
 public class A081895 extends LinearRecurrence {

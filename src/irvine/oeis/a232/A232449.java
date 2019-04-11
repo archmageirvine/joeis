@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232449 The palindromic Belphegor numbers: (10^(n+3)+666)*10^(n+1)+1.
+ * A232449 The palindromic Belphegor numbers: <code>(10^(n+3)+666)*10^(n+1)+1</code>.
  * @author Sean A. Irvine
  */
 public class A232449 extends LinearRecurrence {

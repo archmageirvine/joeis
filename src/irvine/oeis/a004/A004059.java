@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a057.A057561;
 
 /**
- * A004059 a(n) gives position of first n in A057561.
+ * A004059 <code>a(n)</code> gives position of first n in A057561.
  * @author Sean A. Irvine
  */
 public class A004059 extends A057561 {

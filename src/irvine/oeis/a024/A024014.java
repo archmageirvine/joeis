@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024014 2^n-n^4.
+ * A024014 <code>2^n-n^4</code>.
  * @author Sean A. Irvine
  */
 public class A024014 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262925 Sum of n consecutive fourth powers starting with n^4.
+ * A262925 Sum of n consecutive fourth powers starting with <code>n^4</code>.
  * @author Sean A. Irvine
  */
 public class A262925 extends LinearRecurrence {

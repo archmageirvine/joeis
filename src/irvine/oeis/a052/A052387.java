@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052387 Number of 3 X n binary matrices such that any 2 rows have a common 1, up to column permutations.
+ * A052387 Number of 3 X n binary matrices such that any 2 rows have a common <code>1,</code> up to column permutations.
  * @author Sean A. Irvine
  */
 public class A052387 extends LinearRecurrence {

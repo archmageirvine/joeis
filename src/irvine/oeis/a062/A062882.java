@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062882 a(n) = (1 - 2*cos(Pi/9))^n + (1 + 2*cos(Pi*2/9))^n + (1 + 2*cos(Pi*4/9))^n. 
+ * A062882 <code>a(n) = (1 -</code> 2*cos(Pi/9))^n <code>+ (1 +</code> 2*cos(Pi*2/9))^n <code>+ (1 +</code> 2*cos(Pi*4/9))^n.
  * @author Georg Fischer
  */
 public class A062882 extends LinearRecurrence {

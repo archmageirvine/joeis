@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289782 p-INVERT of the Lucas numbers (A000032), where p(S) = 1 - S - S^2.
+ * A289782 p-INVERT of the Lucas numbers (A000032), where p(S) <code>= 1 -</code> S - S^2.
  * @author Sean A. Irvine
  */
 public class A289782 extends LinearRecurrence {

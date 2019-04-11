@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248158 Expansion of (1 - 2*x^2)/(1 + x)^3. Second column of Riordan triangle A248156.
+ * A248158 Expansion of <code>(1 - 2*x^2)/(1 + x)^3</code>. Second column of Riordan triangle A248156.
  * @author Sean A. Irvine
  */
 public class A248158 extends LinearRecurrence {

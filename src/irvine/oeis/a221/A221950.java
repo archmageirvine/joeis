@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221950 G.f.: 1/(1 - x - x^2 - 2*x^3 - 3*x^4 - 2*x^5 - x^6).
+ * A221950 G.f.: <code>1/(1 - x - x^2 - 2*x^3 - 3*x^4 - 2*x^5 - x^6)</code>.
  * @author Sean A. Irvine
  */
 public class A221950 extends LinearRecurrence {

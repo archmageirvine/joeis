@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117614 a(0)=1, a(n)=4a(n-1)+2 for n odd, a(n)=4a(n-1) for n even.
+ * A117614 <code>a(0)=1, a(n)=4a(n-1)+2</code> for n odd, <code>a(n)=4a(n-1)</code> for n even.
  * @author Sean A. Irvine
  */
 public class A117614 extends LinearRecurrence {

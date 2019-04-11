@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.RuntimeUtils;
 
 /**
- * A018940 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite ABW = Li-A (Barrer and White).
+ * A018940 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite ABW = Li-A (Barrer and White).
  * @author Sean A. Irvine
  */
 public class A018940 implements Sequence {

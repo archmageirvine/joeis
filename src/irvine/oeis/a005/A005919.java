@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005919 Number of points on surface of tricapped prism: 7n^2 + 2 for n&gt;0.
+ * A005919 Number of points on surface of tricapped prism: <code>7n^2 + 2</code> for <code>n&gt;0</code>.
  * @author Sean A. Irvine
  */
 public class A005919 implements Sequence {

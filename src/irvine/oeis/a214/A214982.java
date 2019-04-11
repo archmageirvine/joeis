@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214982 a(n) = (Fibonacci(5n)/Fibonacci(n) - 5)/50.
+ * A214982 <code>a(n) =</code> (Fibonacci(5n)/Fibonacci(n) <code>- 5)/50</code>.
  * @author Sean A. Irvine
  */
 public class A214982 extends LinearRecurrence {

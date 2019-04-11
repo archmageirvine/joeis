@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096026 Numbers n such that (n+j) mod (2+j) = 1 for j from 0 to 8 and (n+9) mod 11 &lt;&gt; 1.
+ * A096026 Numbers n such that (n+j) mod (2+j) <code>= 1</code> for j from 0 to 8 and <code>(n+9) mod 11 &lt;&gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A096026 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093406 A sequence converging to 1 + 2^(1/4).
+ * A093406 A sequence converging to <code>1 + 2^(1/4)</code>.
  * @author Sean A. Irvine
  */
 public class A093406 extends LinearRecurrence {

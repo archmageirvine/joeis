@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227378 Smallest number with n = sum of distinct digits in decimal representation, cf. A217928.
+ * A227378 Smallest number with <code>n =</code> sum of distinct digits in decimal representation, cf. A217928.
  * @author Georg Fischer
  */
 public class A227378 extends FiniteSequence {

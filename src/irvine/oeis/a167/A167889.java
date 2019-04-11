@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167889 a(n) = (-7*3^n+(-3)^n+6*4^n) / 42.
+ * A167889 <code>a(n) = (-7*3^n+(-3)^n+6*4^n) / 42</code>.
  * @author Sean A. Irvine
  */
 public class A167889 extends LinearRecurrence {

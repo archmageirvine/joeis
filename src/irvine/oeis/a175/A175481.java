@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A175481 a(1)=1. a(n+1) = sum(k=1 to n} b(n,a(k)), where b(n,a(k)) is the largest positive integer that, when written in binary, occurs as a substring in both binary n and binary a(k).
+ * A175481 <code>a(1)=1</code>. <code>a(n+1) =</code> sum(k=1 to <code>n}</code> b(n,a(k)), where b(n,a(k)) is the largest positive integer that, when written in binary, occurs as a substring in both binary n and binary a(k).
  * @author Sean A. Irvine
  */
 public class A175481 extends MemorySequence {

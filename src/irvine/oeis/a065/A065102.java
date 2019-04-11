@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065102 a(0) = c, a(1) = p*c^3; a(n+2) = p*c^2*a(n+1) - a(n), for p = 2, c = 3.
+ * A065102 <code>a(0) =</code> c, <code>a(1) =</code> p*c^3; <code>a(n+2) =</code> p*c^2*a(n+1) <code>- a(n),</code> for p <code>= 2,</code> c <code>= 3</code>.
  * @author Sean A. Irvine
  */
 public class A065102 extends LinearRecurrence {

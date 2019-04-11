@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255051 a(1)=1, a(n+1) = a(n)/gcd(a(n),n) if this GCD is &gt; 1, else a(n+1) = a(n) + n + 1.
+ * A255051 <code>a(1)=1, a(n+1) =</code> a(n)/gcd(a(n),n) if this GCD is <code>&gt; 1,</code> else <code>a(n+1) = a(n) + n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A255051 extends LinearRecurrence {

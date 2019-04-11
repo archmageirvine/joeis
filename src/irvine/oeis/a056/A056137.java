@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a046.A046079;
 
 /**
- * A056137 Number of ways in which n can be the longer leg (middle side) of an integer sided right angled triangle.
+ * A056137 Number of ways in which n can be the longer leg (middle side) of <code>an</code> integer sided right angled triangle.
  * @author Sean A. Irvine
  */
 public class A056137 extends A046079 {

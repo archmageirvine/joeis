@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A283551 a(n) = -1 + 5*n/6 + n^3/6. 
+ * A283551 <code>a(n) = -1 + 5*n/6 + n^3/6</code>.
  * @author Georg Fischer
  */
 public class A283551 extends LinearRecurrence {

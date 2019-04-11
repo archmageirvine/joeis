@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A000123 Number of binary partitions: number of partitions of 2n into powers of 2.
+ * A000123 Number of binary partitions: number of partitions of <code>2n</code> into powers of 2.
  * @author Sean A. Irvine
  */
 public class A000123 implements Sequence {

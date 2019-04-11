@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A176009 Smallest prime p = p(k) containing all decimal digits from "1" up to "k" (k = 1,2, ..., 9, 0).
+ * A176009 Smallest prime p = p(k) containing all decimal digits from "1" up to "k" (k <code>= 1,2, </code>..., <code>9, 0)</code>.
  * @author Georg Fischer
  */
 public class A176009 extends FiniteSequence {

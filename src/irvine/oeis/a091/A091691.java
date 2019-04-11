@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091691 (10^(n-1)-1) * (n-10) / 9.
+ * A091691 <code>(10^(n-1)-1) * (n-10) / 9</code>.
  * @author Sean A. Irvine
  */
 public class A091691 extends LinearRecurrence {

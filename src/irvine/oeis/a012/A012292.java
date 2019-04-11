@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012292 Expansion of e.g.f. arctanh(sin(x)*exp(x)) = x+2/2!*x^2+4/3!*x^3+24/4!*x^4+180/5!*x^5...
+ * A012292 Expansion of e.g.f. arctanh(sin(x)*exp(x)) <code>= x+2/2!*x^2+4/3!*x^3+24/4!*x^4+180/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012292 implements Sequence {

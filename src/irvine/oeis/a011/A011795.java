@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011795 a(n) = floor(C(n,4)/5).
+ * A011795 <code>a(n) =</code> floor(C(n,4)/5).
  * @author Sean A. Irvine
  */
 public class A011795 implements Sequence {

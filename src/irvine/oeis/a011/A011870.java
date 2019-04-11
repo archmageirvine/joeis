@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011870 [ n(n-1)/17 ].
+ * A011870 <code>[ n(n-1)/17 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011870 implements Sequence {

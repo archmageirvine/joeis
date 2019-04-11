@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280186 Number of 3-element subsets of S = {1..n} whose sum is odd.
+ * A280186 Number of 3-element subsets of S <code>= {1</code>..n} whose sum is odd.
  * @author Sean A. Irvine
  */
 public class A280186 extends LinearRecurrence {

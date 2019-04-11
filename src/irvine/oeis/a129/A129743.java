@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129743 a(n) = -(u^n-1)*(v^n-1) with u = 2+sqrt(3), v = 2-sqrt(3).
+ * A129743 <code>a(n) =</code> -(u^n-1)*(v^n-1) with u <code>= 2+sqrt(3),</code> v <code>= 2-sqrt(3)</code>.
  * @author Sean A. Irvine
  */
 public class A129743 extends LinearRecurrence {

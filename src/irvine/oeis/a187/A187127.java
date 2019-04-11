@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187127 Triangular numbers n*(n+1)/2 mod 100, sorted and uniqued.
+ * A187127 Triangular numbers <code>n*(n+1)/2 mod 100,</code> sorted and uniqued.
  * @author Georg Fischer
  */
 public class A187127 extends FiniteSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007115 Expansion of e.g.f. (1 - x - x^2)^x.
+ * A007115 Expansion of e.g.f. <code>(1 - x - x^2)^x</code>.
  * @author Sean A. Irvine
  */
 public class A007115 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051746 a(n) = n(n+7)(n+1)(n^2+2n+12)/120.
+ * A051746 <code>a(n) = n(n+7)(n+1)(n^2+2n+12)/120</code>.
  * @author Sean A. Irvine
  */
 public class A051746 extends LinearRecurrence {

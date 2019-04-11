@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011904 [ n(n-1)(n-2)/22 ].
+ * A011904 <code>[ n(n-1)(n-2)/22 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011904 implements Sequence {

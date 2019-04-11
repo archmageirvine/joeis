@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121962 Star of David bonding digraph: characteristic polynomial: x(-18 - 10 x + 147 x^2 + 71 x^3 - 312 x^4 - 221 x^5 + 140 x^6 + 121 x^7 - 17 x^8 - 21 x^9 + x^11).
+ * A121962 Star of David bonding digraph: characteristic polynomial: <code>x(-18 - 10 x + 147 x^2 + 71 x^3 - 312 x^4 - 221 x^5 + 140 x^6 + 121 x^7 - 17 x^8 - 21 x^9 + x^11)</code>.
  * @author Sean A. Irvine
  */
 public class A121962 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A002015 a(n) = n^2 reduced mod 100.
+ * A002015 <code>a(n) = n^2</code> reduced <code>mod 100</code>.
  * @author Sean A. Irvine
  */
 public class A002015 extends PeriodicSequence {

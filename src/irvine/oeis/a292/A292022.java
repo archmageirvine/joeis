@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292022 a(n) = 4n(n^2+2). 
+ * A292022 <code>a(n) = 4n(n^2+2)</code>.
  * @author Georg Fischer
  */
 public class A292022 extends LinearRecurrence {

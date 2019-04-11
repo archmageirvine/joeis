@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006992 Bertrand primes: a(n) is largest prime &lt; 2*a(n-1) for n &gt; 1, with a(1) = 2.
+ * A006992 Bertrand primes: <code>a(n)</code> is largest prime <code>&lt; 2*a(n-1)</code> for <code>n &gt; 1,</code> with <code>a(1) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A006992 implements Sequence {

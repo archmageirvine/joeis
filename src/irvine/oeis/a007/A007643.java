@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a014.A014121;
 
 /**
- * A007643 Primes not of form | 3^x - 2^y |.
+ * A007643 Primes not of form | <code>3^x -</code> 2^y |.
  * @author Sean A. Irvine
  */
 public class A007643 extends ComplementSequence {

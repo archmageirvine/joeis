@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212758 Number of (w,x,y,z) with all terms in {0,...,n} and w=[R/2], where R=max{w,x,y,z}-min{w,x,y,z} and [ ]=floor.
+ * A212758 Number of (w,x,y,z) with all terms in <code>{0,</code>...,n} and w=[R/2], where R=max{w,x,y,z}-min{w,x,y,z} and <code>[ ]=floor</code>.
  * @author Sean A. Irvine
  */
 public class A212758 extends LinearRecurrence {

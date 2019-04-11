@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001589 a(n) = 4^n + n^4.
+ * A001589 <code>a(n) = 4^n + n^4</code>.
  * @author Sean A. Irvine
  */
 public class A001589 implements Sequence {

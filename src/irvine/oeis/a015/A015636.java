@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015636 Number of ordered quadruples of integers from [ 1,n ] with no common factors between pairs.
+ * A015636 Number of ordered quadruples of integers from <code>[ 1,n ]</code> with no common factors between pairs.
  * @author Sean A. Irvine
  */
 public class A015636 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A203603 Numbers n=a+b+c+d such that 0&lt;a&lt;b&lt;c&lt;d and concatenation(n,a,b,c,d) is a permutation of the digits 0,...,9.
+ * A203603 Numbers n=a+b+c+d such that 0&lt;a&lt;b&lt;c&lt;d and concatenation(n,a,b,c,d) is a permutation of the digits <code>0,</code>...,9.
  * @author Georg Fischer
  */
 public class A203603 extends FiniteSequence {

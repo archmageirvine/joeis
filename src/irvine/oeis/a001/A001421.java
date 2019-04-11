@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001421 a(n) = (6n)!/((n!)^3*(3n)!).
+ * A001421 <code>a(n) = (6n)!/((n!)^3*(3n)!)</code>.
  * @author Sean A. Irvine
  */
 public class A001421 implements Sequence {

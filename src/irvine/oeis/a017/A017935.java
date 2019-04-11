@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017935 Powers of sqrt(10) rounded to nearest integer.
+ * A017935 Powers of <code>sqrt(10)</code> rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A017935 implements Sequence {

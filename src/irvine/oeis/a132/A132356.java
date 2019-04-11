@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132356 a(2*k) = k*(10*k+2), a(2*k+1) = 10*k^2 + 18*k + 8, with k &gt;= 0.
+ * A132356 a(2*k) = k*(10*k+2), a(2*k+1) = 10*k^2 + 18*k <code>+ 8,</code> with k <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A132356 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281242 Solutions y to the negative Pell equation y^2 = 72*x^2 - 1331712 with x,y &gt;= 0.
+ * A281242 Solutions y to the negative Pell equation y^2 <code>= 72*x^2 - 1331712</code> with x,y <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A281242 extends LinearRecurrence {

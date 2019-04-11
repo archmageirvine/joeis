@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000757 Number of cyclic permutations of [n] with no i-&gt;i+1 (mod n).
+ * A000757 Number of cyclic permutations of <code>[n]</code> with no i-&gt;i+1 <code>(mod</code> n).
  * @author Sean A. Irvine
  */
 public class A000757 implements Sequence {

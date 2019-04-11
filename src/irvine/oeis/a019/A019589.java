@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A019589 Number of nondecreasing sequences that are differences of two permutations of 1,2,...,n.
+ * A019589 Number of nondecreasing sequences that are differences of two permutations of <code>1,2,</code>...,n.
  * @author Sean A. Irvine
  */
 public class A019589 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213490 Number of (w,x,y) with all terms in {0,...,n} and the numbers w,x,y,|w-x|,|x-y| distinct.
+ * A213490 Number of (w,x,y) with all terms in <code>{0,</code>...,n} and the numbers w,x,y,|w-x|,|x-y| distinct.
  * @author Sean A. Irvine
  */
 public class A213490 extends LinearRecurrence {

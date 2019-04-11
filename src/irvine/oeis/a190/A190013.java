@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A190013 An optimal 2-radius sequence over a (2p)-element alphabet for p = 5.
+ * A190013 An optimal 2-radius sequence over a (2p)-element alphabet for p <code>= 5</code>.
  * @author Georg Fischer
  */
 public class A190013 extends FiniteSequence {

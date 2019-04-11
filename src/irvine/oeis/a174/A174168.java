@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A174168 A (1,3) Somos-4 sequence.
+ * A174168 A <code>(1,3)</code> Somos-4 sequence.
  * @author Sean A. Irvine
  */
 public class A174168 implements Sequence {

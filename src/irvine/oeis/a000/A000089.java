@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000089 Number of solutions to x^2 + 1 == 0 (mod n).
+ * A000089 Number of solutions to <code>x^2 + 1 == 0 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A000089 implements Sequence {

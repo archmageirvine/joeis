@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152773 3 times heptagonal numbers: a(n) = 3n(5n-3)/2.
+ * A152773 3 times heptagonal numbers: <code>a(n) = 3n(5n-3)/2</code>.
  * @author Sean A. Irvine
  */
 public class A152773 extends LinearRecurrence {

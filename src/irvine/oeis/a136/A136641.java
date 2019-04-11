@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A136641 a(n) = smallest positive integer that is coprime to n and has n positive divisors.
+ * A136641 <code>a(n) =</code> smallest positive integer that is coprime to n and has n positive divisors.
  * @author Sean A. Irvine
  */
 public class A136641 implements Sequence {

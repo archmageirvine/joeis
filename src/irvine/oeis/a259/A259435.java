@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259435 a(n) = 2*(n-1)^6*(n+1)^2*(n^2+10*n+1).
+ * A259435 <code>a(n) = 2*(n-1)^6*(n+1)^2*(n^2+10*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A259435 extends LinearRecurrence {

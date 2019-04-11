@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181995 a(n) = if n mod 2 = 1 then n*(n - 1) else (n - 1)^2 + (n - 2)/2.
+ * A181995 <code>a(n) =</code> if <code>n mod 2 = 1</code> then <code>n*(n - 1)</code> else <code>(n - 1)^2 + (n - 2)/2</code>.
  * @author Sean A. Irvine
  */
 public class A181995 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240506 Number of length-n gap-free words on {1,2,3}. 
+ * A240506 Number of length-n gap-free words on <code>{1,2,3}</code>.
  * @author Georg Fischer
  */
 public class A240506 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001887 Number of permutations p of {1,2,...,n} such that p(i) - i &lt; 0 or p(i) - i &gt; 2 for all i.
+ * A001887 Number of permutations p of <code>{1,2,</code>...,n} such that p(i) - i <code>&lt; 0</code> or p(i) - i <code>&gt; 2</code> for all i.
  * @author Sean A. Irvine
  */
 public class A001887 implements Sequence {

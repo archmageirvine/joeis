@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014752 Primes of the form x^2 + 27y^2.
+ * A014752 Primes of the form <code>x^2 +</code> 27y^2.
  * @author Sean A. Irvine
  */
 public class A014752 implements Sequence {

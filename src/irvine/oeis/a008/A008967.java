@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008967 Triangle of coefficients of Gaussian polynomials [ n+2,2 ]; also triangle of distribution of rank sums: Wilcoxon's statistic.
+ * A008967 Triangle of coefficients of Gaussian polynomials <code>[ n+2,2 ]</code>; also triangle of distribution of rank sums: Wilcoxon's statistic.
  * @author Sean A. Irvine
  */
 public class A008967 implements Sequence {

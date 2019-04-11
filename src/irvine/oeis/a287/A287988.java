@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287988 Number of (undirected) paths in the n-antiprism graph. 
+ * A287988 Number of (undirected) paths in the n-antiprism graph.
  * @author Georg Fischer
  */
 public class A287988 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A000100 a(n) is the number of compositions of n in which the maximal part is 3.
+ * A000100 <code>a(n)</code> is the number of compositions of n in which the maximal part is 3.
  * @author Sean A. Irvine
  */
 public class A000100 extends LinearRecurrence {

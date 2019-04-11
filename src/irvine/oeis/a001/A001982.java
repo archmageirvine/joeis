@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001982 Number of partitions of 4n-1 into n nonnegative integers each no greater than 8.
+ * A001982 Number of partitions of <code>4n-1</code> into n nonnegative integers each no greater than 8.
  * @author Sean A. Irvine
  */
 public class A001982 implements Sequence {

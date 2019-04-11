@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009005 All natural numbers except 1, 2 and 4.
+ * A009005 All natural numbers except <code>1, 2</code> and 4.
  * @author Sean A. Irvine
  */
 public class A009005 implements Sequence {

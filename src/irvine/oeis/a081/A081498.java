@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081498 Consider the triangle in which the n-th row starts with n, contains n terms and the difference of successive terms is 1,2,3,... up to n-1. Sequence gives row sums. 
+ * A081498 Consider the triangle in which the n-th row starts with <code>n,</code> contains n terms and the difference of successive terms is <code>1,2,3,</code>... up to <code>n-1</code>. Sequence gives row sums.
  * @author Georg Fischer
  */
 public class A081498 extends LinearRecurrence {

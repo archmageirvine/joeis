@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007973 Number of permutations that are n-2 "block reversals" away from 12...n.
+ * A007973 Number of permutations that are <code>n-2</code> "block reversals" away from 12...n.
  * @author Sean A. Irvine
  */
 public class A007973 extends A007975 {

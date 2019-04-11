@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142975 n-th term of the Fibonacci-type sequence x(1)=1, x(2)=fibonacci(n), x(k+1)=x(k)+x(k-1) for k&gt;1.
+ * A142975 n-th term of the Fibonacci-type sequence <code>x(1)=1,</code> x(2)=fibonacci(n), x(k+1)=x(k)+x(k-1) for k&gt;1.
  * @author Sean A. Irvine
  */
 public class A142975 extends LinearRecurrence {

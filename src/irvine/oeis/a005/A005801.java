@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000182;
 
 /**
- * A005801 Generalized tangent numbers of type 3^(2n+1).
+ * A005801 Generalized tangent numbers of type <code>3^(2n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A005801 extends A000182 {

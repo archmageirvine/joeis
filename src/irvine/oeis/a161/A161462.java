@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161462 Final digit of sum of all the natural numbers from n to 2*n-1.
+ * A161462 Final digit of sum of all the natural numbers from n to <code>2*n-1</code>.
  * @author Sean A. Irvine
  */
 public class A161462 extends LinearRecurrence {

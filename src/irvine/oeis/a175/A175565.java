@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175565 a(n) = smallest prime &gt; a(n-1) such that in the sum a(n-1) + a(n) there are no carries, with a(1)=2.
+ * A175565 <code>a(n) =</code> smallest prime <code>&gt; a(n-1)</code> such that in the sum <code>a(n-1) + a(n)</code> there are no carries, with <code>a(1)=2</code>.
  * @author Georg Fischer
  */
 public class A175565 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011819 M-sequences m_0,m_1,m_2,m_3 with m_1 &lt; n.
+ * A011819 M-sequences m_0,m_1,m_2,m_3 with m_1 <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A011819 implements Sequence {

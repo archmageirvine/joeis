@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A001955 Beatty sequence of 1 + 1/sqrt(11).
+ * A001955 Beatty sequence of <code>1 + 1/sqrt(11)</code>.
  * @author Sean A. Irvine
  */
 public class A001955 extends BeattySequence {

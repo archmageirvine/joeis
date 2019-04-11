@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.util.Point;
 
 /**
- * A000935 Number of free planar polyenoids with 2n nodes and symmetry point group C_{2h}.
+ * A000935 Number of free planar polyenoids with <code>2n</code> nodes and symmetry point group C_{2h}.
  * @author Sean A. Irvine
  */
 public class A000935 extends A000942 {

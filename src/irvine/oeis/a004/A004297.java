@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004297 Expansion of (1+2*x+x^2)/(1-58*x+x^2).
+ * A004297 Expansion of <code>(1+2*x+x^2)/(1-58*x+x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A004297 implements Sequence {

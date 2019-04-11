@@ -5,7 +5,7 @@ import irvine.oeis.AlonsoSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A230627 Prime reached in A230626, or -1 if no prime is reached.
+ * A230627 Prime reached in A230626, or <code>-1</code> if no prime is reached.
  * @author Sean A. Irvine
  */
 public class A230627 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155107 Numbers n that are 23 or 30 (mod 53).
+ * A155107 Numbers n that are 23 or <code>30 (mod 53)</code>.
  * @author Sean A. Irvine
  */
 public class A155107 extends LinearRecurrence {

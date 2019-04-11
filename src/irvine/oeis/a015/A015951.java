@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015951 Numbers k such that k | 5^k + 1.
+ * A015951 Numbers k such that k | 5^k <code>+ 1</code>.
  * @author Sean A. Irvine
  */
 public class A015951 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135916 (n^4 - 10*n^2 + 15*n - 6)/2.
+ * A135916 <code>(n^4 - 10*n^2 + 15*n - 6)/2</code>.
  * @author Sean A. Irvine
  */
 public class A135916 extends LinearRecurrence {

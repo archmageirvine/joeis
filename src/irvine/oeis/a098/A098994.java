@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098994 Number of permutations of [n] with exactly 3 descents which avoid the pattern 1324.
+ * A098994 Number of permutations of <code>[n]</code> with exactly 3 descents which avoid the pattern 1324.
  * @author Sean A. Irvine
  */
 public class A098994 extends LinearRecurrence {

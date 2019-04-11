@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A240817 a(1) = 1 for n &lt;= 5; thereafter a(n) = a(n-a(n-2))+a(n-a(n-5)) for n&gt;3.
+ * A240817 <code>a(1) = 1</code> for <code>n &lt;= 5</code>; thereafter <code>a(n) = a(n-a(n-2))+a(n-a(n-5))</code> for <code>n&gt;3</code>.
  * @author Georg Fischer
  */
 public class A240817 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267647 a(n) = g_n(4), where g is the weak Goodstein function defined in A266202.
+ * A267647 <code>a(n) =</code> g_n(4), where g is the weak Goodstein function defined in A266202.
  * @author Georg Fischer
  */
 public class A267647 extends FiniteSequence {

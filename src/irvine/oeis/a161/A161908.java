@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161908 Array read by rows in which row n lists the divisors of n that are &gt;= sqrt(n).
+ * A161908 Array read by rows in which row n lists the divisors of n that are <code>&gt;= sqrt(n)</code>.
  * @author Sean A. Irvine
  */
 public class A161908 implements Sequence {

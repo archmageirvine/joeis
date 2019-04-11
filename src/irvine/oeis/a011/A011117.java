@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011117 Triangle of numbers S(x,y) = number of lattice paths from (0,0) to (x,y) that use step set { (0,1), (1,0), (2,0), (3,0), ....} and never pass below y = x.
+ * A011117 Triangle of numbers S(x,y) = number of lattice paths from <code>(0,0)</code> to <code>(x</code>,y) that use step set <code>{ (0,1), (1,0), (2,0), (3,0), </code>....} and never pass below y <code>= x</code>.
  * @author Sean A. Irvine
  */
 public class A011117 extends MemoryFunction2<Integer, Z> implements Sequence {

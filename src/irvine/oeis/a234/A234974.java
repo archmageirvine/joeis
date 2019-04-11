@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A234974 Expected lengths of random walks along the edges of a Platonic solid (in the order cube, octahedron, dodecahedron, icosahedron) from one vertex to an opposing one.
+ * A234974 Expected lengths of random walks along the edges of a Platonic solid (in the order cube, octahedron, dodecahedron, icosahedron) from one vertex to <code>an</code> opposing one.
  * @author Georg Fischer
  */
 public class A234974 extends FiniteSequence {

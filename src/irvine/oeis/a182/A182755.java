@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182755 Expansion of (1+35*x)/(1-90*x^2). 
+ * A182755 Expansion of <code>(1+35*x)/(1-90*x^2)</code>.
  * @author Georg Fischer
  */
 public class A182755 extends LinearRecurrence {

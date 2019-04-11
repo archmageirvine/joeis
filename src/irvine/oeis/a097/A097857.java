@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097857 a(0) = 1, a(1) = 1, a(n) = floor((a(n-1)+a(n-2))/2) + 3 if a(n-2) is even, a(n) = floor((a(n-1)-a(n-2))/2) + 3 if a(n-2) is odd.
+ * A097857 <code>a(0) = 1, a(1) = 1, a(n) = floor((a(n-1)+a(n-2))/2) + 3</code> if <code>a(n-2)</code> is even, <code>a(n) = floor((a(n-1)-a(n-2))/2) + 3</code> if <code>a(n-2)</code> is odd.
  * @author Sean A. Irvine
  */
 public class A097857 extends LinearRecurrence {

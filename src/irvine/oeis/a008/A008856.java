@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008856 Numbers n such that n^3 and n have same last 2 digits.
+ * A008856 Numbers n such that <code>n^3</code> and n have same last 2 digits.
  * @author Sean A. Irvine
  */
 public class A008856 implements Sequence {

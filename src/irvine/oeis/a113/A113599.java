@@ -7,7 +7,7 @@ import irvine.util.Permutation;
 import java.util.HashSet;
 
 /**
- * A113599 Least n-digit multiple of n whose digit permutations yield at least n distinct multiples of n, or 0 if no such number exists.
+ * A113599 Least n-digit multiple of n whose digit permutations yield at least n distinct multiples of <code>n,</code> or 0 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A113599 implements Sequence {

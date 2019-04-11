@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006714 Number of trivalent bipartite labeled graphs with 2n labeled nodes.
+ * A006714 Number of trivalent bipartite labeled graphs with <code>2n</code> labeled nodes.
  * @author Sean A. Irvine
  */
 public class A006714 implements Sequence, GraphProcessor {

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180413 Total number of possible knight moves on an n X n X n chessboard, if the knight is placed anywhere.
+ * A180413 Total number of possible knight moves on <code>an n</code> X n X n chessboard, if the knight is placed anywhere.
  * @author Sean A. Irvine
  */
 public class A180413 extends LinearRecurrence {

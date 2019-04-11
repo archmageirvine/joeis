@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140870 8*P_4(2n), 8 times the Legendre Polynomial of order 4 at 2n.
+ * A140870 8*P_4(2n), 8 times the Legendre Polynomial of order 4 at <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A140870 extends LinearRecurrence {

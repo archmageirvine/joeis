@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A187274 a(n) = n*4^(n/2 - 1)*(9 + (-1)^n).
+ * A187274 <code>a(n) = n*4^(n/2 - 1)*(9 + (-1)^n)</code>.
  * @author Sean A. Irvine
  */
 public class A187274 implements Sequence {

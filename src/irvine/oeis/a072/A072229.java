@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072229 Witt index of the standard bilinear form &lt;1,1,1,...,1&gt; over the 2-adic rationals.
+ * A072229 Witt index of the standard bilinear form <code>&lt;1,1,1,</code>...,1&gt; over the 2-adic rationals.
  * @author Sean A. Irvine
  */
 public class A072229 extends LinearRecurrence {

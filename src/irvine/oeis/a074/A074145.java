@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074145 a(1) = 1; for n&gt;1, a(n) is the smallest previously unused natural number such that a(n) divides the sum of next a(n) terms.
+ * A074145 <code>a(1) = 1</code>; for <code>n&gt;1, a(n)</code> is the smallest previously unused natural number such that <code>a(n)</code> divides the sum of next <code>a(n)</code> terms.
  * @author Georg Fischer
  */
 public class A074145 extends FiniteSequence {

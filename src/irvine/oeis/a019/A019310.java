@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A019310 Number of words of length n (n &gt;= 1) over a two-letter alphabet having a minimal period of size n-1.
+ * A019310 Number of words of length <code>n (n &gt;= 1)</code> over a two-letter alphabet having a minimal period of size <code>n-1</code>.
  * @author Sean A. Irvine
  */
 public class A019310 extends MemorySequence {

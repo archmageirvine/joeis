@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Date;
 
 /**
- * A248037 Numbers n such that the ratio of tripling steps to halving steps in the Collatz (3x+1) trajectory of n is greater than all previous ratios.
+ * A248037 Numbers n such that the ratio of tripling steps to halving steps in the Collatz <code>(3x+1)</code> trajectory of n is greater than all previous ratios.
  *
  * This program was used in the confirmation of a(15)=3743559068799. It
  * essentially performs an exhaustive search with some additional smarts

@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159469 Maximum remainder when (k + 1)^n + (k - 1)^n is divided by k^2 for variable n and k &gt; 2. 
+ * A159469 Maximum remainder when (k <code>+ 1)^n +</code> (k <code>- 1)^n</code> is divided by k^2 for variable n and k <code>&gt; 2</code>.
  * @author Georg Fischer
  */
 public class A159469 extends LinearRecurrence {

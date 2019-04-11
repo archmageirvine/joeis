@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049453 Second pentagonal numbers with even index: a(n) = n*(6*n+1).
+ * A049453 Second pentagonal numbers with even index: <code>a(n) = n*(6*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A049453 extends LinearRecurrence {

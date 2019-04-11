@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A001453 Catalan numbers - 1.
+ * A001453 Catalan numbers <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A001453 extends A000108 {

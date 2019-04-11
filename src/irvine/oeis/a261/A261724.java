@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261724 a(n) is the number of ways of putting n labeled balls into 4 indistinguishable boxes such that each box contains at least 3 balls.
+ * A261724 <code>a(n)</code> is the number of ways of putting n labeled balls into 4 indistinguishable boxes such that each box contains at least 3 balls.
  * @author Sean A. Irvine
  */
 public class A261724 extends LinearRecurrence {

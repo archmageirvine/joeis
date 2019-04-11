@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A111057 Minimal set in the sense of A071062 of prime-strings in base 12 for primes of the form 4n+1.
+ * A111057 Minimal set in the sense of A071062 of prime-strings in base 12 for primes of the form <code>4n+1</code>.
  * @author Georg Fischer
  */
 public class A111057 extends FiniteSequence {

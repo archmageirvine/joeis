@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002065 a(n+1) = a(n)^2 + a(n) + 1.
+ * A002065 <code>a(n+1) = a(n)^2 + a(n) + 1</code>.
  * @author Sean A. Irvine
  */
 public class A002065 implements Sequence, Serializable {

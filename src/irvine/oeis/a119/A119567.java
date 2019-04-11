@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A119567 Lenny Conundrum #151: An apparently arbitrary list of numbers a(n) paired with 3*a(n) + 1.
+ * A119567 Lenny Conundrum #151: An apparently arbitrary list of numbers <code>a(n)</code> paired with <code>3*a(n) + 1</code>.
  * @author Georg Fischer
  */
 public class A119567 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017434 (11n+3)^10.
+ * A017434 <code>(11n+3)^10</code>.
  * @author Sean A. Irvine
  */
 public class A017434 extends LinearRecurrence {

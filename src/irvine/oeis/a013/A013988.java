@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a049.A049224;
 
 /**
- * A013988 Triangle read by rows, the inverse Bell transform of n!*binomial(5,n) (without column 0).
+ * A013988 Triangle read by rows, the inverse Bell transform of n!*binomial(5,n) (without column <code>0)</code>.
  * @author Sean A. Irvine
  */
 public class A013988 extends A049224 {

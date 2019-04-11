@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154873 Numbers n such that n^5 contains every digit exactly 3 times.
+ * A154873 Numbers n such that <code>n^5</code> contains every digit exactly 3 times.
  * @author Georg Fischer
  */
 public class A154873 extends FiniteSequence {

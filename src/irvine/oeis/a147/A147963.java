@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A147963 a(n) = number of n-digit numbers not divisible by any of their digits.
+ * A147963 <code>a(n) =</code> number of n-digit numbers not divisible by any of their digits.
  * @author Sean A. Irvine
  */
 public class A147963 implements Sequence {

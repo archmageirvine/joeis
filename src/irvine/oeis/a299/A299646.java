@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299646 a(n) = Sum_{k = n..2*n+1} k^2. 
+ * A299646 <code>a(n) =</code> Sum_{k <code>= n</code>..2*n+1} k^2.
  * @author Georg Fischer
  */
 public class A299646 extends LinearRecurrence {

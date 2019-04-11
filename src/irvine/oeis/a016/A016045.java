@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016045 a(n) = smallest prime p(k) such that the gaps between the primes p(k), p(k+1), p(k+2), ..., p(k+n) are 2, 4, 6, ... 2n.
+ * A016045 <code>a(n) =</code> smallest prime p(k) such that the gaps between the primes p(k), p(k+1), p(k+2), ..., p(k+n) are <code>2, 4, 6, </code>... <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A016045 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180465 Squares which are a sum of consecutive squares starting with 38^2.
+ * A180465 Squares which are a sum of consecutive squares starting with <code>38^2</code>.
  * @author Georg Fischer
  */
 public class A180465 extends FiniteSequence {

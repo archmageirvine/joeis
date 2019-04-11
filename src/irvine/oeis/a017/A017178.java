@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017178 (9n+1)^6.
+ * A017178 <code>(9n+1)^6</code>.
  * @author Sean A. Irvine
  */
 public class A017178 extends LinearRecurrence {

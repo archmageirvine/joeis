@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173115 a(n) = -(sin(2*n*arccos(sqrt(3))))^2.
+ * A173115 <code>a(n) =</code> -(sin(2*n*arccos(sqrt(3))))^2.
  * @author Sean A. Irvine
  */
 public class A173115 extends LinearRecurrence {

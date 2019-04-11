@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004041 Scaled sums of odd reciprocals: a(n) = (2*n + 1)!!*(Sum_{k=0..n} 1/(2*k + 1)).
+ * A004041 Scaled sums of odd reciprocals: <code>a(n) = (2*n +</code> 1)!!*(Sum_{k=0..n} 1/(2*k <code>+ 1))</code>.
  * @author Sean A. Irvine
  */
 public class A004041 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056028 Numbers k such that k^18 == 1 (mod 19^2).
+ * A056028 Numbers k such that k^18 <code>== 1 (mod 19^2)</code>.
  * @author Sean A. Irvine
  */
 public class A056028 extends LinearRecurrence {

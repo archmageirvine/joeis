@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033268 Numbers n such that every genus of binary quadratic forms of discriminant -4n consists of a single class and the class number h(-4n) = 8.
+ * A033268 Numbers n such that every genus of binary quadratic forms of discriminant <code>-4n</code> consists of a single class and the class number h(-4n) <code>= 8</code>.
  * @author Georg Fischer
  */
 public class A033268 extends FiniteSequence {

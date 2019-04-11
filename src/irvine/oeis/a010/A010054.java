@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010054 a(n) = 1 if n is a triangular number, otherwise 0.
+ * A010054 <code>a(n) = 1</code> if n is a triangular number, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A010054 implements Sequence {

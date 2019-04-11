@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094286 Number of (s(0), s(1), ..., s(n)) such that 0 &lt; s(i) &lt; 6 and |s(i) - s(i-1)| &lt;= 1 for i = 1,2,....,n, s(0) = 1, s(n) = 1.
+ * A094286 Number of (s(0), s(1), ..., s(n)) such that <code>0 &lt;</code> s(i) <code>&lt; 6</code> and |s(i) - s(i-1)| <code>&lt;= 1</code> for i <code>= 1,2,</code>....,n, s(0) <code>= 1,</code> s(n) <code>= 1</code>.
  * @author Sean A. Irvine
  */
 public class A094286 extends LinearRecurrence {

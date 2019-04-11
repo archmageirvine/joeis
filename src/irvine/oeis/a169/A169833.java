@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169833 a(n) = 25*2^(n+3) - (198+392*n/3+36*n^2+10*n^3/3).
+ * A169833 <code>a(n) = 25*2^(n+3) - (198+392*n/3+36*n^2+10*n^3/3)</code>.
  * @author Sean A. Irvine
  */
 public class A169833 extends LinearRecurrence {

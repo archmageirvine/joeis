@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096000 Cupolar numbers: a(n) = (n+1)*(5*n^2+7*n+3)/3.
+ * A096000 Cupolar numbers: <code>a(n) = (n+1)*(5*n^2+7*n+3)/3</code>.
  * @author Sean A. Irvine
  */
 public class A096000 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009929 Coefficients in expansion of Euler's constant gamma as Sum_{n&gt;=1} a(n)/(n*n!*(n+1)!), as found by greedy algorithm.
+ * A009929 Coefficients in expansion of Euler's constant gamma as Sum_{n&gt;=1} <code>a(n)/(n*n!*(n+1)!),</code> as found by greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A009929 implements Sequence {

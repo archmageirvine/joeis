@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015969 Numbers n such that n | 16^n + 1.
+ * A015969 Numbers n such that n | <code>16^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A015969 implements Sequence {

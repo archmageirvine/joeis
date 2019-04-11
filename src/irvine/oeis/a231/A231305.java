@@ -3,7 +3,7 @@ package irvine.oeis.a231;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A231305 Recurrence a(n) = a(n-2) + n^M for M=6, starting with a(0)=0, a(1)=1.
+ * A231305 Recurrence <code>a(n) = a(n-2) +</code> n^M for M=6, starting with <code>a(0)=0, a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A231305 extends LinearRecurrence {

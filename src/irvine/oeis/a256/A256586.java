@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A256586 Number of Rubik's clock positions with an n-move optimal solution.
+ * A256586 Number of Rubik's clock positions with <code>an</code> n-move optimal solution.
  * @author Georg Fischer
  */
 public class A256586 extends FiniteSequence {

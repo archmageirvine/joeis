@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144844 a(n) = ((2 + sqrt(2))^n - (2 - sqrt(2))^n)^2/8.
+ * A144844 <code>a(n) = ((2 + sqrt(2))^n - (2 - sqrt(2))^n)^2/8</code>.
  * @author Sean A. Irvine
  */
 public class A144844 extends LinearRecurrence {

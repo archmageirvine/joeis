@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165568 a(n) = -1 - 2*n + n^2 + 2*n^3 + n^4.
+ * A165568 <code>a(n) = -1 - 2*n + n^2 + 2*n^3 + n^4</code>.
  * @author Sean A. Irvine
  */
 public class A165568 extends LinearRecurrence {

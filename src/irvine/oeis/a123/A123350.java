@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123350 a(n) = (n^4 + 2n^3 + 5n^2 + 4)/4.
+ * A123350 <code>a(n) = (n^4 + 2n^3 + 5n^2 + 4)/4</code>.
  * @author Sean A. Irvine
  */
 public class A123350 extends LinearRecurrence {

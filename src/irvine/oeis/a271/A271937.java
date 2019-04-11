@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271937 a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8.
+ * A271937 <code>a(n) = (7/4)*n^2 + (5/2)*n + (7 + (-1)^n)/8</code>.
  * @author Sean A. Irvine
  */
 public class A271937 extends LinearRecurrence {

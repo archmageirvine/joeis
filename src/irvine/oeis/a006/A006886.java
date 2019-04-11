@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006886 Kaprekar numbers: positive numbers n such that n = q+r and n^2 = q*10^m+r, for some m &gt;= 1, q &gt;= 0 and 0 &lt;= r &lt; 10^m, with n != 10^a, a &gt;= 1.
+ * A006886 Kaprekar numbers: positive numbers n such that <code>n =</code> q+r and <code>n^2 =</code> q*10^m+r, for some m <code>&gt;= 1,</code> q <code>&gt;= 0</code> and <code>0 &lt;=</code> r &lt; 10^m, with <code>n != 10^a, a &gt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A006886 implements Sequence {

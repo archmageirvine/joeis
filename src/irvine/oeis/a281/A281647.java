@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281647 Solutions x to the negative Pell equation x^2 - 10*y^2 = -6 with x &gt; y &gt; 0.
+ * A281647 Solutions x to the negative Pell equation <code>x^2 -</code> 10*y^2 <code>= -6</code> with <code>x &gt;</code> y <code>&gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A281647 extends LinearRecurrence {

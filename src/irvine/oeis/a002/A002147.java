@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A002147 Largest prime == 7 mod 8 with class number 2n+1.
+ * A002147 Largest prime <code>== 7 mod 8</code> with class number <code>2n+1</code>.
  * @author Sean A. Irvine
  */
 public class A002147 implements Sequence {

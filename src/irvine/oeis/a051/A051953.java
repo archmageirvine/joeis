@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A051953 Cototient(n) := n - phi(n).
+ * A051953 Cototient(n) := <code>n -</code> phi(n).
  * @author Sean A. Irvine
  */
 public class A051953 extends A000010 {

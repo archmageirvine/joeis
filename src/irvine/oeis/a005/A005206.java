@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005206 Hofstadter G-sequence: a(n) = n - a(a(n-1)).
+ * A005206 Hofstadter G-sequence: <code>a(n) = n - a(a(n-1))</code>.
  * @author Sean A. Irvine
  */
 public class A005206 extends MemorySequence {

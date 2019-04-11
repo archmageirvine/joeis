@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A146207 Number of paths of the simple random walk on condition that the [n/2]th ordered value S_([n/2]) of the partial sums S_0=0, S_1,...,S_n, n odd (n=15 and S_(7) in this example), is equal to k, [ -n/2]-1&lt;=k&lt;=[n/2].
+ * A146207 Number of paths of the simple random walk on condition that the [n/2]th ordered value S_([n/2]) of the partial sums S_0=0, S_1,...,S_n, n odd <code>(n=15</code> and S_(7) in this example), is equal to k, [ -n/2]-1&lt;=k&lt;=[n/2].
  * @author Georg Fischer
  */
 public class A146207 extends FiniteSequence {

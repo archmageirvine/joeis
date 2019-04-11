@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011894 a(n) = floor(n(n-1)(n-2)/12).
+ * A011894 <code>a(n) = floor(n(n-1)(n-2)/12)</code>.
  * @author Sean A. Irvine
  */
 public class A011894 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164553 a(n) = 14*a(n-1)-43*a(n-2) for n &gt; 1; a(0) = 1, a(1) = 11.
+ * A164553 <code>a(n) = 14*a(n-1)-43*a(n-2)</code> for <code>n &gt; 1</code>; <code>a(0) = 1, a(1) = 11</code>.
  * @author Sean A. Irvine
  */
 public class A164553 extends LinearRecurrence {

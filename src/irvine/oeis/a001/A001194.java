@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001194 Expansion of an integral.
+ * A001194 Expansion of <code>an</code> integral.
  * @author Sean A. Irvine
  */
 public class A001194 implements Sequence {

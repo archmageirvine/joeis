@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027901 Divisors of 10^9 + 1.
+ * A027901 Divisors of <code>10^9 + 1</code>.
  * @author Georg Fischer
  */
 public class A027901 extends FiniteSequence {

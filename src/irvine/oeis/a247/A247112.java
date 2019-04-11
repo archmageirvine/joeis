@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247112 Floor of sums of the cubes of the non-integer square roots of n, as partitioned by the integer roots: floor( sum( j from n^2+1 to (n+1)^2-1, j^(3/2) ) ).
+ * A247112 Floor of sums of the cubes of the non-integer square roots of <code>n,</code> as partitioned by the integer roots: <code>floor(</code> sum( j from <code>n^2+1</code> to <code>(n+1)^2-1,</code> j^(3/2) <code>) )</code>.
  * @author Sean A. Irvine
  */
 public class A247112 extends LinearRecurrence {

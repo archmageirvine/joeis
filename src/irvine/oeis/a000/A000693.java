@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000693 Related to population of numbers of form x^2 + y^2.
+ * A000693 Related to population of numbers of form <code>x^2 +</code> y^2.
  * @author Sean A. Irvine
  */
 public class A000693 extends A000074 {

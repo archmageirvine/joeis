@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000168 a(n) = 2*3^n*(2*n)!/(n!*(n+2)!).
+ * A000168 <code>a(n) = 2*3^n*(2*n)!/(n!*(n+2)!)</code>.
  * @author Sean A. Irvine
  */
 public class A000168 implements Sequence {

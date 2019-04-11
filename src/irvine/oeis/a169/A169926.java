@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169926 Values of n &gt;= 0 such that 3*n-45+360/(n/2+8) is an integer.
+ * A169926 Values of <code>n &gt;= 0</code> such that <code>3*n-45+360/(n/2+8)</code> is <code>an</code> integer.
  * @author Georg Fischer
  */
 public class A169926 extends FiniteSequence {

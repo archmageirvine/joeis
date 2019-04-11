@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011887 [ n(n-1)(n-2)/5 ].
+ * A011887 <code>[ n(n-1)(n-2)/5 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011887 implements Sequence {

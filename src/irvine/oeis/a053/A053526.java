@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053526 Number of bipartite graphs with 3 edges on nodes {1..n}.
+ * A053526 Number of bipartite graphs with 3 edges on nodes <code>{1</code>..n}.
  * @author Sean A. Irvine
  */
 public class A053526 extends LinearRecurrence {

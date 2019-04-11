@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155212 a(n) = (n^2 + 9*n + 4)/2.
+ * A155212 <code>a(n) = (n^2 + 9*n + 4)/2</code>.
  * @author Sean A. Irvine
  */
 public class A155212 extends LinearRecurrence {

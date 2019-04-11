@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245480 Numbers n such that the n-th cyclotomic polynomial has a root mod 11.
+ * A245480 Numbers n such that the n-th cyclotomic polynomial has a root <code>mod 11</code>.
  * @author Sean A. Irvine
  */
 public class A245480 extends LinearRecurrence {

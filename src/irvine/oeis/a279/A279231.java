@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279231 Expansion of 1/((1-x)^2*(1-3*x+3*x^2)).
+ * A279231 Expansion of <code>1/((1-x)^2*(1-3*x+3*x^2))</code>.
  * @author Sean A. Irvine
  */
 public class A279231 extends LinearRecurrence {

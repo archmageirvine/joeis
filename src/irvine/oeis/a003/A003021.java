@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002582;
 
 /**
- * A003021 Largest factor of 10^n + 1.
+ * A003021 Largest factor of <code>10^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A003021 implements Sequence {

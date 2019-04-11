@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A007296 Reversion of (1 + g.f. for primes).
+ * A007296 Reversion of <code>(1 +</code> g.f. for primes).
  * @author Sean A. Irvine
  */
 public class A007296 extends A000040 {

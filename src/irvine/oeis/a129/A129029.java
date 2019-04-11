@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129029 a(n) = 8*n^4+44*n^3+106*n^2+100*n+30.
+ * A129029 <code>a(n) = 8*n^4+44*n^3+106*n^2+100*n+30</code>.
  * @author Sean A. Irvine
  */
 public class A129029 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A246902 Number of tilings of a 5 X n rectangle using n pentominoes of distinct shapes.
+ * A246902 Number of tilings of <code>a 5</code> X n rectangle using n pentominoes of distinct shapes.
  * @author Georg Fischer
  */
 public class A246902 extends FiniteSequence {

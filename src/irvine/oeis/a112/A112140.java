@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112140 (a(2n)+a(2n+1))^2 = a(2n) + 10000*a(2n+1).
+ * A112140 <code>(a(2n)+a(2n+1))^2 = a(2n) + 10000*a(2n+1)</code>.
  * @author Georg Fischer
  */
 public class A112140 extends FiniteSequence {

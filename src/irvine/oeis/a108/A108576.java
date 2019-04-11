@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108576 Number of 3 X 3 magic squares (with distinct positive entries) having all entries &lt; n. 
+ * A108576 Number of 3 X 3 magic squares (with distinct positive entries) having all entries <code>&lt; n</code>.
  * @author Georg Fischer
  */
 public class A108576 extends LinearRecurrence {

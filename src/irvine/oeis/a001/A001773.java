@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001773 Numbers n such that 13*2^n-1 is prime.
+ * A001773 Numbers n such that <code>13*2^n-1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A001773 implements Sequence {

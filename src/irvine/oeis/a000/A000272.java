@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000272 Number of trees on n labeled nodes: n^(n-2) with a(0)=1.
+ * A000272 Number of trees on n labeled nodes: <code>n^(n-2)</code> with <code>a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A000272 implements Sequence {

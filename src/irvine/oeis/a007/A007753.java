@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007753 a(n+1) = Sum C( a(k)^2,k), k=0..n.
+ * A007753 <code>a(n+1) =</code> Sum C( a(k)^2,k), k=0..n.
  * @author Sean A. Irvine
  */
 public class A007753 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267064 Coefficient of x^5 in the minimal polynomial of the continued fraction [1^n,sqrt(2)+sqrt(3),1,1,...], where 1^n means n ones.
+ * A267064 Coefficient of <code>x^5</code> in the minimal polynomial of the continued fraction <code>[1^n,sqrt(2)+sqrt(3),1,1,</code>...], where <code>1^n</code> means n ones.
  * @author Sean A. Irvine
  */
 public class A267064 extends LinearRecurrence {

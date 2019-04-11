@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A220480 The number of n-digit numbers where last k digits are divisible by the k-th prime for k = 1..n.
+ * A220480 The number of n-digit numbers where last k digits are divisible by the k-th prime for k <code>= 1</code>..n.
  * @author Georg Fischer
  */
 public class A220480 extends FiniteSequence {

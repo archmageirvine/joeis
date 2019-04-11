@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001000 a(n) = least m such that if a/b &lt; c/d where a,b,c,d are integers in [0,n], then a/b &lt; k/m &lt; c/d for some integer k.
+ * A001000 <code>a(n) =</code> least m such that if a/b &lt; c/d where a,b,c,d are integers in <code>[0,n],</code> then a/b &lt; k/m &lt; c/d for some integer k.
  * @author Sean A. Irvine
  */
 public class A001000 implements Sequence {

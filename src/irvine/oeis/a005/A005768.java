@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005768 Number of convex polygons of length 2n on square lattice whose leftmost bottom vertex is strictly to the left of the rightmost top vertex.
+ * A005768 Number of convex polygons of length <code>2n</code> on square lattice whose leftmost bottom vertex is strictly to the left of the rightmost top vertex.
  * @author Sean A. Irvine
  */
 public class A005768 implements Sequence {

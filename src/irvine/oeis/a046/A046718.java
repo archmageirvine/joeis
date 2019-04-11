@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046718 Number of permutations of [ n ] with exactly one 132-pattern and two 123-patterns.
+ * A046718 Number of permutations of <code>[ n ]</code> with exactly one 132-pattern and two 123-patterns.
  * @author Sean A. Irvine
  */
 public class A046718 extends LinearRecurrence {

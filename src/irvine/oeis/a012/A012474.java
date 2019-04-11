@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012474 Expansion of arcsin(cos(x)*sin(x)) = x - 3/3!*x^3 - 15/5!*x^5 + 357/7!*x^7 + 22305/9!*x^9...
+ * A012474 Expansion of arcsin(cos(x)*sin(x)) <code>= x - 3/3!*x^3 - 15/5!*x^5 + 357/7!*x^7 + 22305/9!*x^9</code>...
  * @author Sean A. Irvine
  */
 public class A012474 implements Sequence {

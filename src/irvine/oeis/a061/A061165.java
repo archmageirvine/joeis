@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061165 Polynomial extrapolation of 2, 3, 5, 7, 11.
+ * A061165 Polynomial extrapolation of <code>2, 3, 5, 7, 11</code>.
  * @author Sean A. Irvine
  */
 public class A061165 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057427 Sign(n) or signum(n) (with offset 0): a(n) = 1 if n&gt;0, = 0 if n=0, = -1 if n&lt;0; series expansion of x/(1-x). 
+ * A057427 Sign(n) or signum(n) (with offset <code>0)</code>: <code>a(n) = 1</code> if <code>n&gt;0, = 0</code> if <code>n=0, = -1</code> if <code>n&lt;0</code>; series expansion of <code>x/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A057427 extends LinearRecurrence {

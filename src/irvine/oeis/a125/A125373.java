@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125373 Number of base 10 circular n-digit numbers with adjacent digits differing by 5 or less. 
+ * A125373 Number of base 10 circular n-digit numbers with adjacent digits differing by 5 or less.
  * @author Georg Fischer
  */
 public class A125373 extends LinearRecurrence {

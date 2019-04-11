@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007578 Number of Young tableaux of height &lt;= 7.
+ * A007578 Number of Young tableaux of height <code>&lt;= 7</code>.
  * @author Sean A. Irvine
  */
 public class A007578 implements Sequence {

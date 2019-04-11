@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006592 a(n) = 10*n^3 - 6*n^2.
+ * A006592 <code>a(n) = 10*n^3 - 6*n^2</code>.
  * @author Sean A. Irvine
  */
 public class A006592 implements Sequence {

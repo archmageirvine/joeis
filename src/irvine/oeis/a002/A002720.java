@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002720 Number of partial permutations of an n-set; number of n X n binary matrices with at most one 1 in each row and column.
+ * A002720 Number of partial permutations of <code>an</code> n-set; number of n X n binary matrices with at most one 1 in each row and column.
  * @author Sean A. Irvine
  */
 public class A002720 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003947 Expansion of (1+x)/(1-4*x).
+ * A003947 Expansion of <code>(1+x)/(1-4*x)</code>.
  * @author Sean A. Irvine
  */
 public class A003947 implements Sequence {

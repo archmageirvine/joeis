@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A125573 a(n) = number of n-digit terms with different sets of decimal digits in A108571.
+ * A125573 <code>a(n) =</code> number of n-digit terms with different sets of decimal digits in A108571.
  * @author Georg Fischer
  */
 public class A125573 extends FiniteSequence {

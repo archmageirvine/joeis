@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072819 Variance of time for a random walk starting at 0 to reach one of the boundaries at +n or -n for the first time.
+ * A072819 Variance of time for a random walk starting at 0 to reach one of the boundaries at <code>+n</code> or <code>-n</code> for the first time.
  * @author Sean A. Irvine
  */
 public class A072819 extends LinearRecurrence {

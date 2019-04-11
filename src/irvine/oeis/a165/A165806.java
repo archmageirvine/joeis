@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165806 a(n) = 15n^2 + 3n + 1.
+ * A165806 <code>a(n) = 15n^2 + 3n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A165806 extends LinearRecurrence {

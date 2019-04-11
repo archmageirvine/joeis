@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006825 Number of connected regular bipartite graphs of degree 5 with 2n nodes.
+ * A006825 Number of connected regular bipartite graphs of degree 5 with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A006825 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A144201 Square array (8 X 8) read by rows.
+ * A144201 Square array <code>(8</code> X <code>8)</code> read by rows.
  * @author Georg Fischer
  */
 public class A144201 extends FiniteSequence {

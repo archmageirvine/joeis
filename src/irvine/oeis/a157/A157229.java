@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A157229 For the n in A157017, the number of representations of n! as the product of distinct numbers in the range n+1 to 2n.
+ * A157229 For the n in A157017, the number of representations of <code>n!</code> as the product of distinct numbers in the range <code>n+1</code> to <code>2n</code>.
  * @author Georg Fischer
  */
 public class A157229 extends FiniteSequence {

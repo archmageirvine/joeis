@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014259 Iccanobif numbers: add reversal of a(n-1) to a(n-2).
+ * A014259 Iccanobif numbers: add reversal of <code>a(n-1)</code> to <code>a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A014259 implements Sequence {

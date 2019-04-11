@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019117 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite EPI = Epistilbite Ca3 [ Al6Si18O48 ] . 16 H2O.
+ * A019117 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite EPI = Epistilbite Ca3 [ Al6Si18O48 <code>] </code>. 16 H2O.
  * @author Sean A. Irvine
  */
 public class A019117 extends A018940 {

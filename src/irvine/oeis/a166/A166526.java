@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166526 a(n) = 12*n - a(n-1), with n&gt;1, a(1)=1.
+ * A166526 <code>a(n) = 12*n - a(n-1),</code> with <code>n&gt;1, a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A166526 extends LinearRecurrence {

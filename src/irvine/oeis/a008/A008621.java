@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008621 Expansion of 1/((1-x)*(1-x^4)).
+ * A008621 Expansion of <code>1/((1-x)*(1-x^4))</code>.
  * @author Sean A. Irvine
  */
 public class A008621 implements Sequence {

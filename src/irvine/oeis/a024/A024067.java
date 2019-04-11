@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024067 a(n) = 6^n - n^5.
+ * A024067 <code>a(n) = 6^n - n^5</code>.
  * @author Sean A. Irvine
  */
 public class A024067 extends LinearRecurrence {

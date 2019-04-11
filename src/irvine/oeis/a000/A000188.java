@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000188 (1) Number of solutions to x^2 == 0 (mod n). (2) Also square root of largest square dividing n. (3) Also max_{ d divides n } gcd(d, n/d).
+ * A000188 <code>(1)</code> Number of solutions to <code>x^2 == 0 (mod n)</code>. <code>(2)</code> Also square root of largest square dividing n. <code>(3)</code> Also max_{ d divides <code>n }</code> gcd(d, n/d).
  * @author Sean A. Irvine
  */
 public class A000188 implements Sequence {

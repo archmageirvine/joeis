@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001021;
 
 /**
- * A016125 Expansion of 1/((1-x)*(1-12*x)).
+ * A016125 Expansion of <code>1/((1-x)*(1-12*x))</code>.
  * @author Sean A. Irvine
  */
 public class A016125 extends PartialSumSequence {

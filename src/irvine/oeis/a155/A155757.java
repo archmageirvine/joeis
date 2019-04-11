@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155757 (n^3 - n + 15)/3.
+ * A155757 <code>(n^3 - n + 15)/3</code>.
  * @author Sean A. Irvine
  */
 public class A155757 extends LinearRecurrence {

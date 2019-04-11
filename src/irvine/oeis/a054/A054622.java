@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054622 Number of ways to color vertices of an octagon using &lt;= n colors, allowing only rotations.
+ * A054622 Number of ways to color vertices of <code>an</code> octagon using <code>&lt;= n</code> colors, allowing only rotations.
  * @author Sean A. Irvine
  */
 public class A054622 extends LinearRecurrence {

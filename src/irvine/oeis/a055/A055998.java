@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055998 a(n) = n*(n+5)/2.
+ * A055998 <code>a(n) = n*(n+5)/2</code>.
  * @author Sean A. Irvine
  */
 public class A055998 extends LinearRecurrence {

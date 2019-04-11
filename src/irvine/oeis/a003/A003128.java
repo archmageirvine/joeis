@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003128 Number of driving-point impedances of an n-terminal network.
+ * A003128 Number of driving-point impedances of <code>an</code> n-terminal network.
  * @author Sean A. Irvine
  */
 public class A003128 implements Sequence {

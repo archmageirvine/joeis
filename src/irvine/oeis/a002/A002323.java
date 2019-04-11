@@ -6,7 +6,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.group.IntegersMod;
 
 /**
- * A002323 ((2^m - 1) / p) mod p, where p = prime(n) and m = ord(2,p).
+ * A002323 ((2^m <code>- 1) /</code> p) mod p, where p = prime(n) and m = ord(2,p).
  * @author Sean A. Irvine
  */
 public class A002323 implements Sequence {

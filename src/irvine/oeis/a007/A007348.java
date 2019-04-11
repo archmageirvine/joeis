@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007348 Primes for which -10 is a primitive root.
+ * A007348 Primes for which <code>-10</code> is a primitive root.
  * @author Sean A. Irvine
  */
 public class A007348 implements Sequence {

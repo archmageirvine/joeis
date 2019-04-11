@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178626 Convolution of Pell(n) and 10^n.
+ * A178626 Convolution of Pell(n) and <code>10^n</code>.
  * @author Sean A. Irvine
  */
 public class A178626 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136429 a(n) = Sum_{k=0..n} (F(k+1)^2 F(n-k+1)^2) where F(n) = Fibonacci number (A000045).
+ * A136429 <code>a(n) =</code> Sum_{k=0..n} (F(k+1)^2 F(n-k+1)^2) where F(n) = Fibonacci number (A000045).
  * @author Sean A. Irvine
  */
 public class A136429 extends LinearRecurrence {

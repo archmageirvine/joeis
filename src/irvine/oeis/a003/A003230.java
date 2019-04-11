@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003230 Expansion of 1/((1-x)*(1-2*x)*(1-x-2*x^3)).
+ * A003230 Expansion of <code>1/((1-x)*(1-2*x)*(1-x-2*x^3))</code>.
  * @author Sean A. Irvine
  */
 public class A003230 implements Sequence {

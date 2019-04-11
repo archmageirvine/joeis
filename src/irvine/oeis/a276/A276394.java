@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276394 Characteristic word associated with the fraction 36/25.
+ * A276394 Characteristic word associated with the fraction <code>36/25</code>.
  * @author Sean A. Irvine
  */
 public class A276394 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001920 Expansion of 1/(1+759*x^2+2576*x^3+759*x^4+x^6).
+ * A001920 Expansion of <code>1/(1+759*x^2+2576*x^3+759*x^4+x^6)</code>.
  * @author Sean A. Irvine
  */
 public class A001920 implements Sequence {

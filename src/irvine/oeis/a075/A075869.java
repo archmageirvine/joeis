@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075869 5*n^2 - 9 is a square.
+ * A075869 <code>5*n^2 - 9</code> is a square.
  * @author Sean A. Irvine
  */
 public class A075869 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030653 n^3*a(n) is number of circles in complex projective plane tangent to three smooth curves of degree n in general position.
+ * A030653 <code>n^3*a(n)</code> is number of circles in complex projective plane tangent to three smooth curves of degree n in general position.
  * @author Sean A. Irvine
  */
 public class A030653 extends LinearRecurrence {

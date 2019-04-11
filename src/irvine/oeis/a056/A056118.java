@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056118 a(n) = (11*n+5)*(n+4)*(n+3)*(n+2)*(n+1)/120.
+ * A056118 <code>a(n) = (11*n+5)*(n+4)*(n+3)*(n+2)*(n+1)/120</code>.
  * @author Sean A. Irvine
  */
 public class A056118 extends LinearRecurrence {

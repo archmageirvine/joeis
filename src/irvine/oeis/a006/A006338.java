@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006338 An "eta-sequence": floor((n+1)*sqrt(2) + 1/2) - floor(n*sqrt(2) + 1/2).
+ * A006338 An "eta-sequence": <code>floor((n+1)*sqrt(2) + 1/2) - floor(n*sqrt(2) + 1/2)</code>.
  * @author Sean A. Irvine
  */
 public class A006338 implements Sequence {

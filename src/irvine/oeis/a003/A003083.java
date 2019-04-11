@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000088;
 import java.util.ArrayList;
 
 /**
- * A003083 Sum a(n) x^n / n = log (1 + Sum g(n) x^n ), where g(n) is # graphs on n nodes (A000088).
+ * A003083 Sum <code>a(n) x^n / n =</code> log <code>(1 +</code> Sum g(n) <code>x^n ),</code> where g(n) is # graphs on n nodes (A000088).
  * @author Sean A. Irvine
  */
 public class A003083 extends A000088 {

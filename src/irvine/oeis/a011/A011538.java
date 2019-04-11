@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011538 Numbers that contain an 8.
+ * A011538 Numbers that contain <code>an 8</code>.
  * @author Sean A. Irvine
  */
 public class A011538 implements Sequence {

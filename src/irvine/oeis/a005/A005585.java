@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005585 5-dimensional pyramidal numbers: n(n+1)(n+2)(n+3)(2n+3)/5!.
+ * A005585 5-dimensional pyramidal numbers: <code>n(n+1)(n+2)(n+3)(2n+3)/5!</code>.
  * @author Sean A. Irvine
  */
 public class A005585 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002260 Triangle T(n,k) = k for k = 1..n.
+ * A002260 Triangle T(n,k) = k for k <code>= 1</code>..n.
  * @author Sean A. Irvine
  */
 public class A002260 implements Sequence {

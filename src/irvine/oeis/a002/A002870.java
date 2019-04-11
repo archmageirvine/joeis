@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002870 Largest Stirling numbers of second kind: a(n) = max_{k=1..n} S2(n,k).
+ * A002870 Largest Stirling numbers of second kind: <code>a(n) =</code> max_{k=1..n} S2(n,k).
  * @author Sean A. Irvine
  */
 public class A002870 implements Sequence {

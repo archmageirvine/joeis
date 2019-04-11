@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001281 Image of n under the map n-&gt;n/2 if n even, n-&gt;3n-1 if n odd.
+ * A001281 Image of n under the map <code>n-&gt;n/2</code> if n even, <code>n-&gt;3n-1</code> if n odd.
  * @author Sean A. Irvine
  */
 public class A001281 implements Sequence {

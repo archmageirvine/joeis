@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A246924 8 X 8 square array read by rows: T(i,j) = number of moves of a knight to reach the square (i,j) when starting from the square (1,2).
+ * A246924 8 X 8 square array read by rows: T(i,j) = number of moves of a knight to reach the square (i,j) when starting from the square <code>(1,2)</code>.
  * @author Georg Fischer
  */
 public class A246924 extends FiniteSequence {

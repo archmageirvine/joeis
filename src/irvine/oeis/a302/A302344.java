@@ -3,7 +3,7 @@ package irvine.oeis.a302;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A302344 Solutions to the congruence 1^n + 2^n + ... + n^n == 193 (mod n).
+ * A302344 Solutions to the congruence <code>1^n + 2^n + </code>... <code>+ n^n == 193 (mod n)</code>.
  * @author Georg Fischer
  */
 public class A302344 extends FiniteSequence {

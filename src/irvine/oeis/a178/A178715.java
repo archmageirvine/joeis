@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178715 a(n) = solution to the "Select All, Copy, Paste" problem: Given the ability to type a single letter, or to type individual "Select All", "Copy" or "Paste" command keystrokes, what is the maximal number of letters of text that can be obtained with n keystrokes?.
+ * A178715 <code>a(n) =</code> solution to the "Select All, Copy, Paste" problem: Given the ability to type a single letter, or to type individual "Select All", "Copy" or "Paste" command keystrokes, what is the maximal number of letters of text that can be obtained with n keystrokes?.
  * @author Georg Fischer
  */
 public class A178715 extends LinearRecurrence {

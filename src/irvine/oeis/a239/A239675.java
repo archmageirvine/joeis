@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A239675 Least k &gt; 0 such that p(n)+k is prime, where p(n) is the number of partitions of n.
+ * A239675 Least k <code>&gt; 0</code> such that p(n)+k is prime, where p(n) is the number of partitions of n.
  * @author Sean A. Irvine
  */
 public class A239675 extends A000041 {

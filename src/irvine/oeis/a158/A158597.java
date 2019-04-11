@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158597 a(n) = 400*n^2 - 20.
+ * A158597 <code>a(n) = 400*n^2 - 20</code>.
  * @author Sean A. Irvine
  */
 public class A158597 extends LinearRecurrence {

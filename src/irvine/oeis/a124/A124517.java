@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124517 Order of letters on an American keyboard reading top to bottom, left to right.
+ * A124517 Order of letters on <code>an</code> American keyboard reading top to bottom, left to right.
  * @author Georg Fischer
  */
 public class A124517 extends FiniteSequence {

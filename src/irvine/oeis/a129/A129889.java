@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129889 Write down n, then n*(n+1).
+ * A129889 Write down <code>n,</code> then <code>n*(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A129889 extends LinearRecurrence {

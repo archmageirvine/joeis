@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011767 From studying monochromatic solutions to x3-x2=x2-x1+2n.
+ * A011767 From studying monochromatic solutions to <code>x3-x2=x2-x1+2n</code>.
  * @author Sean A. Irvine
  */
 public class A011767 implements Sequence {

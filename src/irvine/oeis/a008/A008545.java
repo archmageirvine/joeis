@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008545 Quadruple factorial numbers: Product_{k=0..n-1} (4*k + 3).
+ * A008545 Quadruple factorial numbers: Product_{k=0..n-1} (4*k <code>+ 3)</code>.
  * @author Sean A. Irvine
  */
 public class A008545 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014479 Exponential generating function = (1+2*x)/(1-2*x)^3.
+ * A014479 Exponential generating function <code>= (1+2*x)/(1-2*x)^3</code>.
  * @author Sean A. Irvine
  */
 public class A014479 extends A014477 {

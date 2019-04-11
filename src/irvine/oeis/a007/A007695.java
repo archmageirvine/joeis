@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007695 Cardinalities of Sperner families on 1,...,n.
+ * A007695 Cardinalities of Sperner families on <code>1,</code>...,n.
  * @author Sean A. Irvine
  */
 public class A007695 extends MemoryFunction3<Long, Z> implements Sequence {

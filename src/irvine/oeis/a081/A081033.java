@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081033 6th binomial transform of the periodic sequence (1,7,1,1,7,1...).
+ * A081033 6th binomial transform of the periodic sequence <code>(1,7,1,1,7,1</code>...).
  * @author Sean A. Irvine
  */
 public class A081033 extends LinearRecurrence {

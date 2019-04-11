@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166122 a(n) = (7-(-5)^n)/6.
+ * A166122 <code>a(n) = (7-(-5)^n)/6</code>.
  * @author Sean A. Irvine
  */
 public class A166122 extends LinearRecurrence {

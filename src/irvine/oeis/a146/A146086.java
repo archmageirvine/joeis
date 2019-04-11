@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146086 Number of n-digit numbers with each digit odd where the digits 1 and 3 occur an even number of times.
+ * A146086 Number of n-digit numbers with each digit odd where the digits 1 and 3 occur <code>an</code> even number of times.
  * @author Sean A. Irvine
  */
 public class A146086 extends LinearRecurrence {

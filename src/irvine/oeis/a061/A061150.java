@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A061150 a(n) = Sum_{d|n} d*prime(d).
+ * A061150 <code>a(n) =</code> Sum_{d|n} d*prime(d).
  * @author Sean A. Irvine
  */
 public class A061150 implements Sequence {

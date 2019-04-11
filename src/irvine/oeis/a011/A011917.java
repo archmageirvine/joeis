@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011917 [ n(n-1)(n-2)(n-3)/7 ].
+ * A011917 <code>[ n(n-1)(n-2)(n-3)/7 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011917 implements Sequence {

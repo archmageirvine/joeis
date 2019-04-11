@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165989 Numbers such that n^2 = 29 mod 1193.
+ * A165989 Numbers such that <code>n^2 = 29 mod 1193</code>.
  * @author Sean A. Irvine
  */
 public class A165989 extends LinearRecurrence {

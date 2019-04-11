@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290268 Number of terms in the fully expanded n-th derivative of x^(x^2). 
+ * A290268 Number of terms in the fully expanded n-th derivative of <code>x^(x^2)</code>.
  * @author Georg Fischer
  */
 public class A290268 extends LinearRecurrence {

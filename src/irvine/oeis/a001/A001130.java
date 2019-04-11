@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A001130 Number of graphical basis partitions of 2n.
+ * A001130 Number of graphical basis partitions of <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A001130 implements Sequence {

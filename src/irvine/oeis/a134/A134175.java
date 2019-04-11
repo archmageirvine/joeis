@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134175 a(n) = (32/2)*(n-1)*(n-2)*(n-3)*(n-4).
+ * A134175 <code>a(n) = (32/2)*(n-1)*(n-2)*(n-3)*(n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A134175 extends LinearRecurrence {

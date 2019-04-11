@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000110;
 
 /**
- * A005494 3-Bell numbers: E.g.f.: exp(3*z + exp(z) - 1).
+ * A005494 3-Bell numbers: E.g.f.: exp(3*z + exp(z) <code>- 1)</code>.
  * @author Sean A. Irvine
  */
 public class A005494 implements Sequence {

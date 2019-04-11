@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007640 Numbers k such that 2*k^2 - 2*k + 19 is composite.
+ * A007640 Numbers k such that 2*k^2 - 2*k <code>+ 19</code> is composite.
  * @author Sean A. Irvine
  */
 public class A007640 implements Sequence {

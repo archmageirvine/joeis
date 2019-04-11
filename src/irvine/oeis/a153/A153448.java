@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153448 3 times 12-gonal (or dodecagonal) numbers: 3*n*(5*n-4).
+ * A153448 3 times 12-gonal (or dodecagonal) numbers: <code>3*n*(5*n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A153448 extends LinearRecurrence {

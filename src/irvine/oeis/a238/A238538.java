@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238538 A fourth-order linear divisibility sequence: a(n) := (2^n + 1)*(2^(3*n) - 1)/ ( (2 + 1)*(2^3 - 1) ).
+ * A238538 A fourth-order linear divisibility sequence: <code>a(n) </code>:= <code>(2^n + 1)*(2^(3*n) - 1)/ ( (2 + 1)*(2^3 - 1) )</code>.
  * @author Sean A. Irvine
  */
 public class A238538 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217574 (n^2)*(n^2-1)*(n^2-2)*(n^2-3).
+ * A217574 <code>(n^2)*(n^2-1)*(n^2-2)*(n^2-3)</code>.
  * @author Sean A. Irvine
  */
 public class A217574 extends LinearRecurrence {

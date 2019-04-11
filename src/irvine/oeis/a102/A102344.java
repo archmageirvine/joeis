@@ -4,7 +4,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102344 Numbers n such that the Diophantine equation (x+2)^3-x^3=2*n^2 has solutions. 
+ * A102344 Numbers n such that the Diophantine equation <code>(x+2)^3-x^3=2*n^2</code> has solutions.
  * @author Georg Fischer
  */
 public class A102344 extends LinearRecurrence {

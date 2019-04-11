@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088039 Smallest k such that k^3 == 1 (mod some n-th power), k &gt; 1. 
+ * A088039 Smallest k such that k^3 <code>== 1 (mod</code> some n-th power), k <code>&gt; 1</code>.
  * @author Georg Fischer
  */
 public class A088039 extends LinearRecurrence {

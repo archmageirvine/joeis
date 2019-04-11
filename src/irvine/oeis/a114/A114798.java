@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114798 Cubic polynomial coefficients such that an elliptical term is zero.
+ * A114798 Cubic polynomial coefficients such that <code>an</code> elliptical term is zero.
  * @author Sean A. Irvine
  */
 public class A114798 extends LinearRecurrence {

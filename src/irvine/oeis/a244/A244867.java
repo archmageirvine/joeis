@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244867 Let G denote the 9-node, 16-edge graph formed from an octagon with main diagonals drawn and a node at the center; a(n) = number of magic labelings of G with magic sum 2n.
+ * A244867 Let G denote the 9-node, 16-edge graph formed from <code>an</code> octagon with main diagonals drawn and a node at the center; <code>a(n) =</code> number of magic labelings of G with magic sum <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A244867 extends LinearRecurrence {

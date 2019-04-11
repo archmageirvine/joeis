@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214838 Triangular numbers of the form k^2 + 2.
+ * A214838 Triangular numbers of the form k^2 <code>+ 2</code>.
  * @author Sean A. Irvine
  */
 public class A214838 extends LinearRecurrence {

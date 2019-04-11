@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001309 Order of real Clifford group L_n connected with Barnes-Wall lattices in dimension 2^n.
+ * A001309 Order of real Clifford group L_n connected with Barnes-Wall lattices in dimension <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A001309 implements Sequence {

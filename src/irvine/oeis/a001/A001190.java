@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001190 Wedderburn-Etherington numbers: unlabeled binary rooted trees (every node has out-degree 0 or 2) with n endpoints (and 2n-1 nodes in all).
+ * A001190 Wedderburn-Etherington numbers: unlabeled binary rooted trees (every node has out-degree 0 or <code>2)</code> with n endpoints (and <code>2n-1</code> nodes in all).
  * @author Sean A. Irvine
  */
 public class A001190 extends MemorySequence {

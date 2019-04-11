@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A001947 a(n) = Lucas(5*n+2).
+ * A001947 <code>a(n) =</code> Lucas(5*n+2).
  * @author Sean A. Irvine
  */
 public class A001947 implements Sequence {

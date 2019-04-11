@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005062 a(n) = 6^n - 5^n.
+ * A005062 <code>a(n) = 6^n - 5^n</code>.
  * @author Sean A. Irvine
  */
 public class A005062 implements Sequence {

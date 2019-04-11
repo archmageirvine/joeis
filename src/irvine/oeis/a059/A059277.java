@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059277 1^36, 2^25, 3^16, 4^9, 5^4, 6^1, 7^0.
+ * A059277 <code>1^36, 2^25, 3^16, 4^9, 5^4, 6^1, 7^0</code>.
  * @author Georg Fischer
  */
 public class A059277 extends FiniteSequence {

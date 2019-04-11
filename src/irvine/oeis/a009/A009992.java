@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009992 Powers of 48: a(n) = 48^n.
+ * A009992 Powers of 48: <code>a(n) = 48^n</code>.
  * @author Sean A. Irvine
  */
 public class A009992 implements Sequence {

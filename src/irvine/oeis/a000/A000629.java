@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000629 Number of necklaces of partitions of n+1 labeled beads.
+ * A000629 Number of necklaces of partitions of <code>n+1</code> labeled beads.
  * @author Sean A. Irvine
  */
 public class A000629 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297476 Number of maximal matchings in the 2n-crossed prism graph. 
+ * A297476 Number of maximal matchings in the 2n-crossed prism graph.
  * @author Georg Fischer
  */
 public class A297476 extends LinearRecurrence {

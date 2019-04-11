@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304567 Number of maximum irredundant sets in the n-antiprism graph. 
+ * A304567 Number of maximum irredundant sets in the n-antiprism graph.
  * @author Georg Fischer
  */
 public class A304567 extends LinearRecurrence {

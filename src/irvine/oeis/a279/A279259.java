@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279259 Smallest positive integer m such that m, m+1, m+2, m+3 are divisible by 2n+1, 2n+3, 2n+5, 2n+7 respectively.
+ * A279259 Smallest positive integer m such that m, m+1, m+2, m+3 are divisible by <code>2n+1, 2n+3, 2n+5, 2n+7</code> respectively.
  * @author Sean A. Irvine
  */
 public class A279259 extends LinearRecurrence {

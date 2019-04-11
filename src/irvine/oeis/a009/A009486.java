@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009486 sin(sin(x)*sin(x)) = 2/2!*x^2 - 8/4!*x^4 - 88/6!*x^6 + 6592/8!*x^8 - ...
+ * A009486 sin(sin(x)*sin(x)) <code>= 2/2!*x^2 - 8/4!*x^4 - 88/6!*x^6 + 6592/8!*x^8 - </code>...
  * @author Sean A. Irvine
  */
 public class A009486 implements Sequence {

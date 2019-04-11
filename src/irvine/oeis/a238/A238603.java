@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238603 A sixth-order linear divisibility sequence related to A000225: a(n) := (1/105)*(2^(3*n) - 1)*(2^(4*n) - 1)/(2^n - 1).
+ * A238603 A sixth-order linear divisibility sequence related to A000225: <code>a(n) </code>:= <code>(1/105)*(2^(3*n) - 1)*(2^(4*n) - 1)/(2^n - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A238603 extends LinearRecurrence {

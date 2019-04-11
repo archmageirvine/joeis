@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A141042 Product of n and the n-th gap between primes: a(n) = n*A001223(n).
+ * A141042 Product of n and the n-th gap between primes: <code>a(n) =</code> n*A001223(n).
  * @author Sean A. Irvine
  */
 public class A141042 implements Sequence {

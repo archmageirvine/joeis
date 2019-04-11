@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168527 a(n) = n^6*(n^2 + 1)/2.
+ * A168527 <code>a(n) = n^6*(n^2 + 1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A168527 extends LinearRecurrence {

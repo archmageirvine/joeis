@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018851 a(n)^2 is smallest square beginning with n.
+ * A018851 <code>a(n)^2</code> is smallest square beginning with n.
  * @author Sean A. Irvine
  */
 public class A018851 implements Sequence {

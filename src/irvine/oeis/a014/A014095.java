@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014095 Molien series for real extraspecial group 2^{1+2*3} of degree 8 and order 128 formed from tensor products of Pauli matrices (0,1, 1,0) and (1,0, 0,-1).
+ * A014095 Molien series for real extraspecial group <code>2^{1+2*3}</code> of degree 8 and order 128 formed from tensor products of Pauli matrices <code>(0,1, 1,0)</code> and <code>(1,0, 0,-1)</code>.
  * @author Sean A. Irvine
  */
 public class A014095 extends LinearRecurrence {

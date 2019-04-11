@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A000707 Number of permutations of [1,2,...,n] with n-1 inversions.
+ * A000707 Number of permutations of <code>[1,2,</code>...,n] with <code>n-1</code> inversions.
  * @author Sean A. Irvine
  */
 public class A000707 implements Sequence {

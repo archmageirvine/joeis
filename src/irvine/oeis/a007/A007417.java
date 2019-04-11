@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007417 If n appears, 3n does not.
+ * A007417 If n appears, <code>3n</code> does not.
  * @author Sean A. Irvine
  */
 public class A007417 implements Sequence {

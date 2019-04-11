@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165809 a(n) = 3*n*(63*n-12+310*n^2).
+ * A165809 <code>a(n) = 3*n*(63*n-12+310*n^2)</code>.
  * @author Sean A. Irvine
  */
 public class A165809 extends LinearRecurrence {

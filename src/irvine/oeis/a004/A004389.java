@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004389 a(n) = binomial(8*n, n-8).
+ * A004389 <code>a(n) =</code> binomial(8*n, <code>n-8)</code>.
  * @author Sean A. Irvine
  */
 public class A004389 implements Sequence {

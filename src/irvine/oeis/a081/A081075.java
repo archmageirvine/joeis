@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081075 Fibonacci(4n+2) - 3.
+ * A081075 Fibonacci(4n+2) <code>- 3</code>.
  * @author Sean A. Irvine
  */
 public class A081075 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127878 a(n) = n^4 + 4*n^3 + 12*n^2 + 24*n + 24. 
+ * A127878 <code>a(n) = n^4 + 4*n^3 + 12*n^2 + 24*n + 24</code>.
  * @author Georg Fischer
  */
 public class A127878 extends LinearRecurrence {

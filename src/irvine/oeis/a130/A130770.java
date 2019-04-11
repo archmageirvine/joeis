@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130770 One third of the lowest common multiple of 3 and n^2+n+1.
+ * A130770 One third of the lowest common multiple of 3 and <code>n^2+n+1</code>.
  * @author Sean A. Irvine
  */
 public class A130770 extends LinearRecurrence {

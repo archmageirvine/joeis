@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003168;
 import irvine.oeis.a003.A003169;
 
 /**
- * A294724 Number of Q graphs with 2*n vertices rooted at an internal edge.
+ * A294724 Number of Q graphs with <code>2*n</code> vertices rooted at <code>an</code> internal edge.
  * @author Sean A. Irvine
  */
 public class A294724 extends A003168 {

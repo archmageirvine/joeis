@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A016041 Primes that are palindromic in base 2 (but written here in base 10).
+ * A016041 Primes that are palindromic in base 2 (but written here in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A016041 implements Sequence {

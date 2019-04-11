@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274250 Number of partitions of n^2 into at most three parts.
+ * A274250 Number of partitions of <code>n^2</code> into at most three parts.
  * @author Sean A. Irvine
  */
 public class A274250 extends LinearRecurrence {

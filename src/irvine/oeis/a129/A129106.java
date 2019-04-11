@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129106 Decimal expansion of proposed value for Avogadro's number, namely 602214141070409084099072 = 84446888^3.
+ * A129106 Decimal expansion of proposed value for Avogadro's number, namely <code>602214141070409084099072 = 84446888^3</code>.
  * @author Georg Fischer
  */
 public class A129106 extends FiniteSequence {

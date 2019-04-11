@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001078 a(n) = 10*a(n-1)-a(n-2) with a(0) = 0, a(1) = 2.
+ * A001078 <code>a(n) = 10*a(n-1)-a(n-2)</code> with <code>a(0) = 0, a(1) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A001078 implements Sequence {

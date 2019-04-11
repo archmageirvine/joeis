@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293144 Number of vertices in a Menger Sponge constructed from a cubic lattice: a(n) = 20*a(n-1) - 24*A293143(n-1).
+ * A293144 Number of vertices in a Menger Sponge constructed from a cubic lattice: <code>a(n) = 20*a(n-1) -</code> 24*A293143(n-1).
  * @author Sean A. Irvine
  */
 public class A293144 extends LinearRecurrence {

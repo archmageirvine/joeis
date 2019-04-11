@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014215 [ sqrt(3/2)^n ].
+ * A014215 <code>[ sqrt(3/2)^n ]</code>.
  * @author Sean A. Irvine
  */
 public class A014215 implements Sequence {

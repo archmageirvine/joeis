@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145437 a(n) = number of elements of order n in simple group Alt(12) of order 239500800.
+ * A145437 <code>a(n) =</code> number of elements of order n in simple group Alt(12) of order 239500800.
  * @author Georg Fischer
  */
 public class A145437 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014255 Expansion of (1+2*x+3*x^2)/((1-x)*(1-x^2)^2).
+ * A014255 Expansion of <code>(1+2*x+3*x^2)/((1-x)*(1-x^2)^2)</code>.
  * @author Sean A. Irvine
  */
 public class A014255 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225875 We write the 1 + 4*k numbers once and twice the others.
+ * A225875 We write the <code>1 +</code> 4*k numbers once and twice the others.
  * @author Sean A. Irvine
  */
 public class A225875 extends LinearRecurrence {

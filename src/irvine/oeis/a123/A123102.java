@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123102 a(0)=1, a(1)=0, a(2)=1, a(n)=a(n-1)+a(n-2)+3*a(n-3). 
+ * A123102 <code>a(0)=1, a(1)=0, a(2)=1, a(n)=a(n-1)+a(n-2)+3*a(n-3)</code>.
  * @author Georg Fischer
  */
 public class A123102 extends LinearRecurrence {

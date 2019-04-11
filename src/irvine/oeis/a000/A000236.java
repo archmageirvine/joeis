@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000236 Maximum m such that there are no two adjacent elements belonging to the same n-th power residue class modulo some prime p in the sequence 1,2,...,m (equivalently, there is no n-th power residue modulo p in the sequence 1/2,2/3,...,(m-1)/m).
+ * A000236 Maximum m such that there are no two adjacent elements belonging to the same n-th power residue class modulo some prime p in the sequence <code>1,2,</code>...,m (equivalently, there is no n-th power residue modulo p in the sequence <code>1/2,2/3,</code>...,(m-1)/m).
  * @author Sean A. Irvine
  */
 public class A000236 implements Sequence {

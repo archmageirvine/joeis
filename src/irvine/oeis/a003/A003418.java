@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003418 Least common multiple (or LCM) of {1, 2, ..., n} for n &gt;= 1, a(0) = 1.
+ * A003418 Least common multiple (or LCM) of <code>{1, 2, </code>..., <code>n}</code> for <code>n &gt;= 1, a(0) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A003418 implements Sequence {

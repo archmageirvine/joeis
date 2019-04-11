@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240134 Numerator of (n-1) * ceiling(n/2) / n.
+ * A240134 Numerator of <code>(n-1) *</code> ceiling(n/2) <code>/ n</code>.
  * @author Sean A. Irvine
  */
 public class A240134 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014755 3 and -3 are both 4th powers (one implies other) mod these primes p=1 mod 8.
+ * A014755 3 and <code>-3</code> are both 4th powers (one implies other) mod these primes p=1 <code>mod 8</code>.
  * @author Sean A. Irvine
  */
 public class A014755 implements Sequence {

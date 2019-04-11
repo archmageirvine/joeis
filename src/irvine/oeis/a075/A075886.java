@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075886 Number of cubes at generation n when building fractal cube with edge ratio of 1/2.
+ * A075886 Number of cubes at generation n when building fractal cube with edge ratio of <code>1/2</code>.
  * @author Sean A. Irvine
  */
 public class A075886 extends LinearRecurrence {

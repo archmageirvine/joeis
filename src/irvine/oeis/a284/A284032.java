@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284032 Poly-Bernoulli numbers B_n^(k) with k = -8.
+ * A284032 Poly-Bernoulli numbers B_n^(k) with k <code>= -8</code>.
  * @author Sean A. Irvine
  */
 public class A284032 extends LinearRecurrence {

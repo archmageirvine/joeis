@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A031285 The odd-greedy Egyptian-fraction algorithm for 5/1444613 has 37 terms, the last of which has 384122451172 digits; sequence gives remainder-numerators.
+ * A031285 The odd-greedy Egyptian-fraction algorithm for <code>5/1444613</code> has 37 terms, the last of which has 384122451172 digits; sequence gives remainder-numerators.
  * @author Georg Fischer
  */
 public class A031285 extends FiniteSequence {

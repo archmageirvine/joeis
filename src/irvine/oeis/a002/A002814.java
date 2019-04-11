@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002814 For n &gt; 1: a(n) = a(n-1)^3 + 3a(n-1)^2 - 3; a(0) = 1, a(1) = 2.
+ * A002814 For <code>n &gt; 1</code>: <code>a(n) = a(n-1)^3 + 3a(n-1)^2 - 3</code>; <code>a(0) = 1, a(1) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A002814 implements Sequence {

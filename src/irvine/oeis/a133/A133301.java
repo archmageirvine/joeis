@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133301 a(n) is the n-th pentagonal number which is the sum of two consecutive pentagonal numbers.
+ * A133301 <code>a(n)</code> is the n-th pentagonal number which is the sum of two consecutive pentagonal numbers.
  * @author Sean A. Irvine
  */
 public class A133301 extends LinearRecurrence {

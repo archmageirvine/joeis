@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155450 Numbers equal to 5 or 18 mod 23.
+ * A155450 Numbers equal to 5 or <code>18 mod 23</code>.
  * @author Sean A. Irvine
  */
 public class A155450 extends LinearRecurrence {

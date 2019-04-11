@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159690 Positive numbers y such that y^2 is of the form x^2+(x+881)^2 with integer x.
+ * A159690 Positive numbers y such that y^2 is of the form <code>x^2+(x+881)^2</code> with integer x.
  * @author Sean A. Irvine
  */
 public class A159690 extends LinearRecurrence {

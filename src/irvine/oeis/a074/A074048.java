@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074048 Pentanacci numbers with initial conditions a(0)=5, a(1)=1, a(2)=3, a(3)=7, a(4)=15.
+ * A074048 Pentanacci numbers with initial conditions <code>a(0)=5, a(1)=1, a(2)=3, a(3)=7, a(4)=15</code>.
  * @author Sean A. Irvine
  */
 public class A074048 extends LinearRecurrence {

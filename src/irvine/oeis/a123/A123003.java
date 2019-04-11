@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123003 G.f.: (8-29*x+24*x^2)/((1-4*x)*(1-3*x)*(1-2*x)^2*(1-x)^2). 
+ * A123003 G.f.: <code>(8-29*x+24*x^2)/((1-4*x)*(1-3*x)*(1-2*x)^2*(1-x)^2)</code>.
  * @author Georg Fischer
  */
 public class A123003 extends LinearRecurrence {

@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054891;
 
 /**
- * A013953 Expansion of the modular form of level 4 and weight 1/2.
+ * A013953 Expansion of the modular form of level 4 and weight <code>1/2</code>.
  * @author Sean A. Irvine
  */
 public class A013953 implements Sequence {

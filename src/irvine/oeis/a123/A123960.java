@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123960 Expansion of 2*x^4 / (1 - 11*x + 45*x^2 - 80*x^3 + 49*x^4).
+ * A123960 Expansion of <code>2*x^4 / (1 - 11*x + 45*x^2 - 80*x^3 + 49*x^4)</code>.
  * @author Sean A. Irvine
  */
 public class A123960 extends LinearRecurrence {

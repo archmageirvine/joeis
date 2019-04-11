@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004777 Numbers not congruent to 7 mod 8.
+ * A004777 Numbers not congruent to <code>7 mod 8</code>.
  * @author Sean A. Irvine
  */
 public class A004777 implements Sequence {

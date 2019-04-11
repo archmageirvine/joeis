@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A019459 Conjectured formula for irreducible 6-fold Euler sums of weight 2n+16.
+ * A019459 Conjectured formula for irreducible 6-fold Euler sums of weight <code>2n+16</code>.
  * @author Sean A. Irvine
  */
 public class A019459 extends CoordinationSequence {

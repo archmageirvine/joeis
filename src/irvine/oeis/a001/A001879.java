@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001879 a(n) = (2n+2)!/(n!2^(n+1)).
+ * A001879 <code>a(n) = (2n+2)!/(n!2^(n+1))</code>.
  * @author Sean A. Irvine
  */
 public class A001879 implements Sequence {

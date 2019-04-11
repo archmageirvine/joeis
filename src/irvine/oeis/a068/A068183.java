@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A068183 Largest number without decimal digits equal to 1 whose product of digits gives n!.
+ * A068183 Largest number without decimal digits equal to 1 whose product of digits gives <code>n!</code>.
  * @author Georg Fischer
  */
 public class A068183 extends FiniteSequence {

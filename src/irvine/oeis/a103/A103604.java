@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103604 a(n) = C(n+6,6) * C(n+10,6).
+ * A103604 <code>a(n) =</code> C(n+6,6) * C(n+10,6).
  * @author Sean A. Irvine
  */
 public class A103604 extends LinearRecurrence {

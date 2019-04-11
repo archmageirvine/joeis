@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011876 [ n(n-1)/23 ].
+ * A011876 <code>[ n(n-1)/23 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011876 implements Sequence {

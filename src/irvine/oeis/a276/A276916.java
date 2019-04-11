@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276916 Subsequence of centered square numbers obtained by adding four triangles from A276914 and a central element, a(n) = 4*A276914(n) + 1.
+ * A276916 Subsequence of centered square numbers obtained by adding four triangles from A276914 and a central element, <code>a(n) =</code> 4*A276914(n) <code>+ 1</code>.
  * @author Sean A. Irvine
  */
 public class A276916 extends LinearRecurrence {

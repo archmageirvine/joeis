@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073731 Least k such that A073729(k) = n.
+ * A073731 Least k such that A073729(k) <code>= n</code>.
  * @author Georg Fischer
  */
 public class A073731 extends FiniteSequence {

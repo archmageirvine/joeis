@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A017069 a(n) = (8*n)^5.
+ * A017069 <code>a(n) = (8*n)^5</code>.
  * @author Sean A. Irvine
  */
 public class A017069 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.group.IntegersMod;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A102578 a(n) = number of elements of order n in simple group Alt(6) = L_2(9) of order 360.
+ * A102578 <code>a(n) =</code> number of elements of order n in simple group Alt(6) = L_2(9) of order 360.
  * @author Sean A. Irvine
  */
 public class A102578 extends OrdersFiniteGroupSequence {

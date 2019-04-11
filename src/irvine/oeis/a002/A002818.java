@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002818 Nearest integer to exp n^2.
+ * A002818 Nearest integer to exp <code>n^2</code>.
  * @author Sean A. Irvine
  */
 public class A002818 implements Sequence {

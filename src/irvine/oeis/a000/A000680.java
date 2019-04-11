@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000680 a(n) = (2n)!/2^n.
+ * A000680 <code>a(n) = (2n)!/2^n</code>.
  * @author Sean A. Irvine
  */
 public class A000680 implements Sequence {

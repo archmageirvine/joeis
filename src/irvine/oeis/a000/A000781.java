@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000781 a(n) = 3*Catalan(n)-Catalan(n-1)-1.
+ * A000781 <code>a(n) =</code> 3*Catalan(n)-Catalan(n-1)-1.
  * @author Sean A. Irvine
  */
 public class A000781 extends A000108 {

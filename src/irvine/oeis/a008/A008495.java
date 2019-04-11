@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008495 Expansion of (1-x^13) / (1-x)^13.
+ * A008495 Expansion of <code>(1-x^13) / (1-x)^13</code>.
  * @author Sean A. Irvine
  */
 public class A008495 extends CoordinationSequence {

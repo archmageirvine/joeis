@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160683 Numbers n &gt;= 1 such that A000045(n)/A000005(A000045(n)) is an integer.
+ * A160683 Numbers <code>n &gt;= 1</code> such that A000045(n)/A000005(A000045(n)) is <code>an</code> integer.
  * @author Georg Fischer
  */
 public class A160683 extends FiniteSequence {

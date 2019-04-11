@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A094173 a(n) = m if m has already occurred at least once and n=k+i*(m+1) where k is the index of the first occurrence of n and i=1,...,max(n-1,1), otherwise a(n) = least positive integer that has not yet occurred.
+ * A094173 <code>a(n) =</code> m if m has already occurred at least once and n=k+i*(m+1) where k is the index of the first occurrence of n and i=1,...,max(n-1,1), otherwise <code>a(n) =</code> least positive integer that has not yet occurred.
  * @author Georg Fischer
  */
 public class A094173 extends FiniteSequence {

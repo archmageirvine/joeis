@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265228 Interleave the even numbers with the numbers that are congruent to {1, 3, 7} mod 8.
+ * A265228 Interleave the even numbers with the numbers that are congruent to <code>{1, 3, 7} mod 8</code>.
  * @author Sean A. Irvine
  */
 public class A265228 extends LinearRecurrence {

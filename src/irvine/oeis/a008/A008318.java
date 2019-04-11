@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008318 Smallest number strictly greater than previous one which is the sum of squares of two previous distinct terms (a(1)=1, a(2)=2).
+ * A008318 Smallest number strictly greater than previous one which is the sum of squares of two previous distinct terms <code>(a(1)=1, a(2)=2)</code>.
  * @author Sean A. Irvine
  */
 public class A008318 extends MemorySequence {

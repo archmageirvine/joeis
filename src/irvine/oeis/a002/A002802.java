@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A002802 a(n) = (2*n+3)!/(6*n!*(n+1)!).
+ * A002802 <code>a(n) = (2*n+3)!/(6*n!*(n+1)!)</code>.
  * @author Sean A. Irvine
  */
 public class A002802 implements Sequence {

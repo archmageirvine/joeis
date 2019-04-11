@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A001229 Numbers n such that phi(sigma(n)) = n.
+ * A001229 Numbers n such that phi(sigma(n)) <code>= n</code>.
  * @author Sean A. Irvine
  */
 public class A001229 implements Sequence {

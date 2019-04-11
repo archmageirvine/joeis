@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220185 Numbers n such that n^2 + n(n+1) is an oblong number (A002378).
+ * A220185 Numbers n such that <code>n^2 + n(n+1)</code> is <code>an</code> oblong number (A002378).
  * @author Sean A. Irvine
  */
 public class A220185 extends LinearRecurrence {

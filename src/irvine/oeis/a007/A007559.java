@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007559 Triple factorial numbers (3*n-2)!!! with leading 1 added.
+ * A007559 Triple factorial numbers <code>(3*n-2)!!!</code> with leading 1 added.
  * @author Sean A. Irvine
  */
 public class A007559 implements Sequence {

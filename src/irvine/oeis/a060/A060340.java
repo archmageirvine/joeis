@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A060340 Possible sizes of the torsion group of an elliptic curve over some quadratic extension of the rationals Q. This is the full sequence.
+ * A060340 Possible sizes of the torsion group of <code>an</code> elliptic curve over some quadratic extension of the rationals Q. This is the full sequence.
  * @author Georg Fischer
  */
 public class A060340 extends FiniteSequence {

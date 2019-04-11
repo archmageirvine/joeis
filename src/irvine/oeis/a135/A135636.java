@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135636 Values of x in positive solutions (x,y,z) to the Diophantine 43x+7y+17z=400.
+ * A135636 Values of x in positive solutions <code>(x</code>,y,z) to the Diophantine 43x+7y+17z=400.
  * @author Georg Fischer
  */
 public class A135636 extends FiniteSequence {

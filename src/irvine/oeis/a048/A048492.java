@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048492 a(n) = ( 8*(2^n) - n^2 - 3*n - 6 )/2.
+ * A048492 <code>a(n) = ( 8*(2^n) - n^2 - 3*n - 6 )/2</code>.
  * @author Sean A. Irvine
  */
 public class A048492 extends LinearRecurrence {

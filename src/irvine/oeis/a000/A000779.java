@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000779 a(n) = 2*(2n-1)!!-(n-1)!*2^(n-1), where (2n-1)!! is A001147(n).
+ * A000779 <code>a(n) = 2*(2n-1)!!-(n-1)!*2^(n-1),</code> where <code>(2n-1)!!</code> is A001147(n).
  * @author Sean A. Irvine
  */
 public class A000779 implements Sequence {

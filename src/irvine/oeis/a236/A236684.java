@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A236684 Values of c of triples (a,b,c) of positive integers such that 1/a + 1/b + 1/c = 1/2 and a &lt;= b &lt;= c. Listed with multiplicity, corresponding to solutions (a,b,c) listed in lexicographic order.
+ * A236684 Values of c of triples <code>(a</code>,b,c) of positive integers such that <code>1/a +</code> 1/b + 1/c <code>= 1/2</code> and <code>a &lt;=</code> b <code>&lt;=</code> c. Listed with multiplicity, corresponding to solutions <code>(a</code>,b,c) listed in lexicographic order.
  * @author Georg Fischer
  */
 public class A236684 extends FiniteSequence {

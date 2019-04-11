@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247643 a(n) = ( 10*n*(n+1)+(2*n+1)*(-1)^n+7 )/8.
+ * A247643 <code>a(n) = ( 10*n*(n+1)+(2*n+1)*(-1)^n+7 )/8</code>.
  * @author Sean A. Irvine
  */
 public class A247643 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006484 a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6.
+ * A006484 <code>a(n) = n*(n + 1)*(n^2 - 3*n + 5)/6</code>.
  * @author Sean A. Irvine
  */
 public class A006484 implements Sequence {

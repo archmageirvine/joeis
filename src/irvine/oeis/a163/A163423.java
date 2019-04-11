@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A163423 Numbers n with property that n^2 is a sum of three successive cubes.
+ * A163423 Numbers n with property that <code>n^2</code> is a sum of three successive cubes.
  * @author Georg Fischer
  */
 public class A163423 extends FiniteSequence {

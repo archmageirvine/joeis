@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000670;
 
 /**
- * A002051 Steffensen's bracket function [n,2].
+ * A002051 Steffensen's bracket function <code>[n,2]</code>.
  * @author Sean A. Irvine
  */
 public class A002051 extends A000670 {

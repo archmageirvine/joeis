@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001803 Numerators in expansion of (1 - x)^(-3/2).
+ * A001803 Numerators in expansion of <code>(1 - x)^(-3/2)</code>.
  * @author Sean A. Irvine
  */
 public class A001803 implements Sequence {

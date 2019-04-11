@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007061 The Ehrenfeucht-Mycielski sequence (1,2-version): a maximally unpredictable sequence.
+ * A007061 The Ehrenfeucht-Mycielski sequence <code>(1</code>,2-version): a maximally unpredictable sequence.
  * @author Sean A. Irvine
  */
 public class A007061 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A274039 Expansion of (x^4 + x^10) / (1 - 2*x + x^2).
+ * A274039 Expansion of <code>(x^4 + x^10) / (1 - 2*x + x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A274039 implements Sequence {

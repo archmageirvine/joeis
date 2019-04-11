@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A120422 One winning solution (out of 6816) in 15-hole triangular peg solitaire that leaves a peg in the original empty hole (apex).
+ * A120422 One winning solution (out of <code>6816)</code> in 15-hole triangular peg solitaire that leaves a peg in the original empty hole (apex).
  * @author Georg Fischer
  */
 public class A120422 extends FiniteSequence {

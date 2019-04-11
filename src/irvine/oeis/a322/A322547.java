@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322547 Numbers n such that every integer partition of n contains a 1, a squarefree number, or a prime power.
+ * A322547 Numbers n such that every integer partition of n contains <code>a 1, a</code> squarefree number, or a prime power.
  * @author Georg Fischer
  */
 public class A322547 extends FiniteSequence {

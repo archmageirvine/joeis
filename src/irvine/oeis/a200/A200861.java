@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A200861 Prime factors of 10^100 - 1.
+ * A200861 Prime factors of <code>10^100 - 1</code>.
  * @author Georg Fischer
  */
 public class A200861 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241170 Steffensen's bracket function [n,n-3].
+ * A241170 Steffensen's bracket function <code>[n,n-3]</code>.
  * @author Sean A. Irvine
  */
 public class A241170 extends LinearRecurrence {

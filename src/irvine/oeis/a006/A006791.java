@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006791 Number of cyclically-5-connected planar trivalent graphs with 2n nodes.
+ * A006791 Number of cyclically-5-connected planar trivalent graphs with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A006791 implements Sequence {

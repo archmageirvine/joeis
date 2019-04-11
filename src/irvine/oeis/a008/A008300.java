@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008300 Triangle read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) gives number of {0,1} n X n matrices with all row and column sums equal to k.
+ * A008300 Triangle read by rows: T(n,k) <code>(n &gt;= 0, 0 &lt;=</code> k <code>&lt;= n)</code> gives number of <code>{0,1} n</code> X n matrices with all row and column sums equal to k.
  * @author Sean A. Irvine
  */
 public class A008300 implements Sequence {

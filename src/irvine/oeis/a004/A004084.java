@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004084 a(n) = n-th positive integer k such that tan(k-1) &lt;= 0 and tan(k) &gt; 0.
+ * A004084 <code>a(n) =</code> n-th positive integer k such that tan(k-1) <code>&lt;= 0</code> and tan(k) <code>&gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A004084 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A007903 The number of distinct principal ideals in the semigroup of binary relations on an n-set.
+ * A007903 The number of distinct principal ideals in the semigroup of binary relations on <code>an</code> n-set.
  * @author Sean A. Irvine
  */
 public class A007903 implements Sequence {

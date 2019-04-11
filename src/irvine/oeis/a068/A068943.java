@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A068943 a(n) = f(n, n, n), where f is the generalized super falling factorial (see comments for definition.).
+ * A068943 <code>a(n) =</code> f(n, <code>n, n),</code> where f is the generalized super falling factorial (see comments for definition.).
  * @author Sean A. Irvine
  */
 public class A068943 implements Sequence {

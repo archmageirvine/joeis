@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003009 a(n+1) = a(n) + 4^(n-1) a(n)^2.
+ * A003009 <code>a(n+1) = a(n) + 4^(n-1) a(n)^2</code>.
  * @author Sean A. Irvine
  */
 public class A003009 implements Sequence {

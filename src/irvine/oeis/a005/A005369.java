@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005369 a(n) = 1 if n is of form m(m+1), else 0.
+ * A005369 <code>a(n) = 1</code> if n is of form m(m+1), else 0.
  * @author Sean A. Irvine
  */
 public class A005369 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261728 a(1)=1; a(2*n) = 3*n; for odd n&gt;1, a(n) is the smallest number not already present which is entailed by the rules (i) k present =&gt; 3*k+1 present; (ii) 2*k present =&gt; k present.
+ * A261728 <code>a(1)=1</code>; <code>a(2*n) = 3*n</code>; for odd <code>n&gt;1, a(n)</code> is the smallest number not already present which is entailed by the rules (i) k present <code>=&gt;</code> 3*k+1 present; (ii) 2*k present <code>=&gt;</code> k present.
  * @author Sean A. Irvine
  */
 public class A261728 extends LinearRecurrence {

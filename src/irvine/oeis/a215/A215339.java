@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001608;
 
 /**
- * A215339 a(n) = A001608(n) mod n.
+ * A215339 <code>a(n) =</code> A001608(n) <code>mod n</code>.
  * @author Sean A. Irvine
  */
 public class A215339 extends A001608 {

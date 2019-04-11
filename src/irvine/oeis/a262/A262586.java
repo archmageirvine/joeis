@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a210.A210696;
 
 /**
- * A262586 Square array T(n,m) (n&gt;=0, m&gt;=0) read by antidiagonals downwards giving number of rooted triangulations of type [n,m] up to orientation-preserving isomorphisms.
+ * A262586 Square array T(n,m) <code>(n&gt;=0,</code> m&gt;=0) read by antidiagonals downwards giving number of rooted triangulations of type <code>[n</code>,m] up to orientation-preserving isomorphisms.
  * @author Sean A. Irvine
  */
 public class A262586 extends A210696 {

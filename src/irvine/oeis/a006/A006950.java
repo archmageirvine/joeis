@@ -8,7 +8,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a002.A002129;
 
 /**
- * A006950 G.f.: Product_{k&gt;0} (1 + x^(2*k - 1)) / (1 - x^(2*k)).
+ * A006950 G.f.: Product_{k&gt;0} <code>(1 +</code> x^(2*k <code>- 1)) / (1 -</code> x^(2*k)).
  * @author Sean A. Irvine
  */
 public class A006950 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128918 a(n) = n*(n+1)/2 if n is odd, otherwise (n-1)*n/2 + 1.
+ * A128918 <code>a(n) = n*(n+1)/2</code> if n is odd, otherwise <code>(n-1)*n/2 + 1</code>.
  * @author Sean A. Irvine
  */
 public class A128918 extends LinearRecurrence {

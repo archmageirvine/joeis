@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016943 a(n) = (6*n + 2)^11.
+ * A016943 <code>a(n) = (6*n + 2)^11</code>.
  * @author Sean A. Irvine
  */
 public class A016943 implements Sequence {

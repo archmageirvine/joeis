@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005353 Number of 2 X 2 matrices with entries mod n and nonzero determinant.
+ * A005353 Number of 2 X 2 matrices with entries <code>mod n</code> and nonzero determinant.
  * @author Sean A. Irvine
  */
 public class A005353 implements Sequence {

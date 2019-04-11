@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151973 Numbers n such that n^2 - n is divisible by 24.
+ * A151973 Numbers n such that <code>n^2 - n</code> is divisible by 24.
  * @author Sean A. Irvine
  */
 public class A151973 extends LinearRecurrence {

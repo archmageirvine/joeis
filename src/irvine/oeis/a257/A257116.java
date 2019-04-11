@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A257116 Smallest prime p such that none of p + 1, p + 3,... p + 2n - 1 are squarefree and all of p + 2, p + 4,... p + 2n are squarefree.
+ * A257116 Smallest prime p such that none of p <code>+ 1,</code> p <code>+ 3,</code>... p <code>+ 2n - 1</code> are squarefree and all of p <code>+ 2,</code> p <code>+ 4,</code>... p <code>+ 2n</code> are squarefree.
  * @author Georg Fischer
  */
 public class A257116 extends FiniteSequence {

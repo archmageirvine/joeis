@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002135 Number of terms in a symmetrical determinant: a(n) = n*a(n-1) - (n-1)*(n-2)*a(n-3)/2.
+ * A002135 Number of terms in a symmetrical determinant: <code>a(n) = n*a(n-1) - (n-1)*(n-2)*a(n-3)/2</code>.
  * @author Sean A. Irvine
  */
 public class A002135 implements Sequence {

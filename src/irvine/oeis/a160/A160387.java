@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160387 Decimal expansion of 4^5 * Sum_{n&gt;=0} 1/4^(2^n).
+ * A160387 Decimal expansion of <code>4^5 *</code> Sum_{n&gt;=0} <code>1/4^(2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A160387 extends DecimalExpansionSequence {

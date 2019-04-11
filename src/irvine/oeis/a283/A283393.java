@@ -3,7 +3,7 @@ package irvine.oeis.a283;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A283393 a(n) = gcd(n^2-1, n^2+9).
+ * A283393 <code>a(n) =</code> gcd(n^2-1, <code>n^2+9)</code>.
  * @author Sean A. Irvine
  */
 public class A283393 extends LinearRecurrence {

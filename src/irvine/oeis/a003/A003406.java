@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003406 Expansion of Ramanujan's function R(x) = 1 + Sum_{n &gt;= 1} { x^(n*(n+1)/2) / ((1+x)(1+x^2)(1+x^3)...(1+x^n)) }.
+ * A003406 Expansion of Ramanujan's function R(x) <code>= 1 +</code> Sum_{n <code>&gt;= 1} { x^(n*(n+1)/2) / ((1+x)(1+x^2)(1+x^3)</code>...(1+x^n)) }.
  * @author Sean A. Irvine
  */
 public class A003406 implements Sequence {

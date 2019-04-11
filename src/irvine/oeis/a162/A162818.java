@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162818 Strictly positive numbers n such that (42*n)/(42+n) is an integer.
+ * A162818 Strictly positive numbers n such that <code>(42*n)/(42+n)</code> is <code>an</code> integer.
  * @author Georg Fischer
  */
 public class A162818 extends FiniteSequence {

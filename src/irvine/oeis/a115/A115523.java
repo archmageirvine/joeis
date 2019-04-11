@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115523 Number of ordered quadruples (i,j,k,l) in range [0..n] satisfying i == j mod 2, j == k mod 3 and k == l mod 4.
+ * A115523 Number of ordered quadruples (i,j,k,l) in range <code>[0</code>..n] satisfying i <code>==</code> j <code>mod 2,</code> j <code>==</code> k <code>mod 3</code> and k <code>==</code> l <code>mod 4</code>.
  * @author Sean A. Irvine
  */
 public class A115523 extends LinearRecurrence {

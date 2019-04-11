@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001030;
 
 /**
- * A004641 Fixed under 0 -&gt; 10, 1 -&gt; 100.
+ * A004641 Fixed under <code>0 -&gt; 10, 1 -&gt; 100</code>.
  * @author Sean A. Irvine
  */
 public class A004641 extends A001030 {

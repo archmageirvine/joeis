@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224289 Number of permutations of length n containing exactly 1 occurrence of 123 and 2 occurrences of 132. 
+ * A224289 Number of permutations of length n containing exactly 1 occurrence of 123 and 2 occurrences of 132.
  * @author Georg Fischer
  */
 public class A224289 extends LinearRecurrence {

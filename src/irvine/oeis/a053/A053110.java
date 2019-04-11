@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053110 Expansion of (-1 + 1/(1-7*x)^7)/(49*x); related to A036226.
+ * A053110 Expansion of <code>(-1 + 1/(1-7*x)^7)/(49*x)</code>; related to A036226.
  * @author Sean A. Irvine
  */
 public class A053110 extends LinearRecurrence {

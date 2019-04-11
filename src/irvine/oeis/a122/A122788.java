@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122788 (1,3)-entry of the 3 X 3 matrix M^n, where M = {{0, -1, 1}, {1, 1, 0}, {0, 1, 1}}.
+ * A122788 <code>(1</code>,3)-entry of the 3 X 3 matrix M^n, where M <code>= {{0, -1, 1}, {1, 1, 0}, {0, 1, 1}}</code>.
  * @author Sean A. Irvine
  */
 public class A122788 extends LinearRecurrence {

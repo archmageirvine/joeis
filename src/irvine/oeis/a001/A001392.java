@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001392 a(n) = 9*binomial(2n,n-4)/(n+5).
+ * A001392 <code>a(n) =</code> 9*binomial(2n,n-4)/(n+5).
  * @author Sean A. Irvine
  */
 public class A001392 implements Sequence {

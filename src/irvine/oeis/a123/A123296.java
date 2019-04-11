@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123296 Number of permutations of n distinct letters (ABCD...) each of which appears 5 times and having n-2 fixed points.
+ * A123296 Number of permutations of n distinct letters (ABCD...) each of which appears 5 times and having <code>n-2</code> fixed points.
  * @author Sean A. Irvine
  */
 public class A123296 extends LinearRecurrence {

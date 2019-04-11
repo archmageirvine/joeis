@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024163 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that c - b &lt; b - a.
+ * A024163 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that c - b &lt; b <code>- a</code>.
  * @author Sean A. Irvine
  */
 public class A024163 extends LinearRecurrence {

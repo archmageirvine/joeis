@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206948 Number of nonisomorphic graded posets with 0 and non-uniform Hasse graph of rank n, with exactly 2 elements of each rank level above 0.
+ * A206948 Number of nonisomorphic graded posets with 0 and non-uniform Hasse graph of rank <code>n,</code> with exactly 2 elements of each rank level above 0.
  * @author Georg Fischer
  */
 public class A206948 extends LinearRecurrence {

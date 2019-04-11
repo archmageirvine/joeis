@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080737 a(1) = a(2) = 0; for n &gt; 2, the least dimension of a lattice possessing a symmetry of order n.
+ * A080737 <code>a(1) = a(2) = 0</code>; for <code>n &gt; 2,</code> the least dimension of a lattice possessing a symmetry of order n.
  * @author Sean A. Irvine
  */
 public class A080737 implements Sequence {

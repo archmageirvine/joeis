@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000588 a(n) = 7*binomial(2n,n-3)/(n+4).
+ * A000588 <code>a(n) =</code> 7*binomial(2n,n-3)/(n+4).
  * @author Sean A. Irvine
  */
 public class A000588 implements Sequence {

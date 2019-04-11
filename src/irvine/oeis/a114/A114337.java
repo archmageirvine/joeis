@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114337 Primes which are 1/3 of the cumulative sum of factorials of primes, if 1 is used as the zeroth prime.
+ * A114337 Primes which are <code>1/3</code> of the cumulative sum of factorials of primes, if 1 is used as the zeroth prime.
  * @author Georg Fischer
  */
 public class A114337 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A000383 Hexanacci numbers with a(0)=...=a(5)=1.
+ * A000383 Hexanacci numbers with <code>a(0)=</code>...=a(5)=1.
  * @author Sean A. Irvine
  */
 public class A000383 extends LinearRecurrence {

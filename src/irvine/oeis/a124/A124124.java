@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124124 Nonnegative integers n such that 2n^2 + 2n - 3 is square.
+ * A124124 Nonnegative integers n such that <code>2n^2 + 2n - 3</code> is square.
  * @author Sean A. Irvine
  */
 public class A124124 extends LinearRecurrence {

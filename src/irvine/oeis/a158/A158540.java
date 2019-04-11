@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158540 a(n) = 22*n^2 - 1.
+ * A158540 <code>a(n) = 22*n^2 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A158540 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.math.q.Q;
 
 /**
- * A002547 Numerator of {n-th harmonic number H(n) divided by (n+1)}: a(n) = A001008(n)/A002805(n).
+ * A002547 Numerator of {n-th harmonic number H(n) divided by <code>(n+1)}</code>: <code>a(n) =</code> A001008(n)/A002805(n).
  * @author Sean A. Irvine
  */
 public class A002547 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007481 Number of subsequences of [ 1,...,n ] in which each even number has an odd neighbor.
+ * A007481 Number of subsequences of <code>[ 1,</code>...,n ] in which each even number has <code>an</code> odd neighbor.
  * @author Sean A. Irvine
  */
 public class A007481 extends LinearRecurrence {

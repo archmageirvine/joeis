@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018935 Consider smallest m such that m^2 = x1^2 + ... + xn^2 with 0 &lt; x1 &lt; ... &lt; xn. Sequence gives values of m.
+ * A018935 Consider smallest m such that m^2 <code>= x1^2 + </code>... <code>+ xn^2</code> with <code>0 &lt; x1 &lt; </code>... <code>&lt; xn</code>. Sequence gives values of m.
  * @author Sean A. Irvine
  */
 public class A018935 implements Sequence {

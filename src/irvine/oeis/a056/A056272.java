@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056272 Word structures of length n using a 5-ary alphabet. 
+ * A056272 Word structures of length n using a 5-ary alphabet.
  * @author Georg Fischer
  */
 public class A056272 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001107 10-gonal (or decagonal) numbers: a(n) = n*(4*n-3).
+ * A001107 10-gonal (or decagonal) numbers: <code>a(n) = n*(4*n-3)</code>.
  * @author Sean A. Irvine
  */
 public class A001107 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006599 Numbers n such that 2^(2n+1) + 2^(n+1) + 1 is prime.
+ * A006599 Numbers n such that <code>2^(2n+1) + 2^(n+1) + 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A006599 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A253057 Complete list of numbers that take three steps to collapse to a single digit in base 3 (written in base 10).
+ * A253057 Complete list of numbers that take three steps to collapse to a single digit in base 3 (written in base <code>10)</code>.
  * @author Georg Fischer
  */
 public class A253057 extends FiniteSequence {

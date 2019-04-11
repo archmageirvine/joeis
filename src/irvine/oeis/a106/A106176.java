@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106176 Numbers n such that 67*n^2 + 67*n + 1 is a square.
+ * A106176 Numbers n such that <code>67*n^2 + 67*n + 1</code> is a square.
  * @author Sean A. Irvine
  */
 public class A106176 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000668 Mersenne primes (of form 2^p - 1 where p is a prime).
+ * A000668 Mersenne primes (of form 2^p <code>- 1</code> where p is a prime).
  * @author Sean A. Irvine
  */
 public class A000668 extends A000043 {

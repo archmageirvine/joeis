@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006495 Real part of (1 + 2*i)^n, where i is sqrt(-1).
+ * A006495 Real part of <code>(1 +</code> 2*i)^n, where i is <code>sqrt(-1)</code>.
  * @author Sean A. Irvine
  */
 public class A006495 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083817 Interleaving of (1,2,3,4,5,...), (2,2,2,2,...) and (0,1,3,6,10,...).
+ * A083817 Interleaving of <code>(1,2,3,4,5,</code>...), <code>(2,2,2,2,</code>...) and <code>(0,1,3,6,10,</code>...).
  * @author Sean A. Irvine
  */
 public class A083817 extends LinearRecurrence {

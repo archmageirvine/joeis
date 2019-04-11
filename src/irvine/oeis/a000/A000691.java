@@ -10,7 +10,7 @@ import org.apfloat.Apfloat;
 import org.apfloat.ApfloatMath;
 
 /**
- * A000691 Ramanujan's approximation to population of x^2 + y^2.
+ * A000691 Ramanujan's approximation to population of <code>x^2 +</code> y^2.
  * @author Sean A. Irvine
  */
 public class A000691 implements Sequence {

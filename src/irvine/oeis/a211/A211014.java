@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211014 Second 14-gonal numbers: n(6n+5).
+ * A211014 Second 14-gonal numbers: <code>n(6n+5)</code>.
  * @author Sean A. Irvine
  */
 public class A211014 extends LinearRecurrence {

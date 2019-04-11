@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139698 Binomial transform of [1, 25, 25, 25, ...].
+ * A139698 Binomial transform of <code>[1, 25, 25, 25, </code>...].
  * @author Sean A. Irvine
  */
 public class A139698 extends LinearRecurrence {

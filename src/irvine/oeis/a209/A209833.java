@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A209833 a(f(A074773(n))) = A074773(n); 1 &lt;= n &lt;= 9999; f: N -&gt; {1..9999}.
+ * A209833 a(f(A074773(n))) = A074773(n); <code>1 &lt;= n &lt;= 9999</code>; f: N <code>-&gt; {1</code>..9999}.
  * @author Georg Fischer
  */
 public class A209833 extends FiniteSequence {

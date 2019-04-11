@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281500 Reduced denominators of f(n) = (n+1)/(2^(2+n)-2) with A026741(n+1) as numerators.
+ * A281500 Reduced denominators of f(n) <code>= (n+1)/(2^(2+n)-2)</code> with A026741(n+1) as numerators.
  * @author Sean A. Irvine
  */
 public class A281500 extends LinearRecurrence {

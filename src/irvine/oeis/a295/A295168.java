@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295168 Chromatic invariant of the 2n-crossed prism graph. 
+ * A295168 Chromatic invariant of the 2n-crossed prism graph.
  * @author Georg Fischer
  */
 public class A295168 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A077407 In base 3, records for the number of Reverse and Add! steps needed to reach a palindrome.
+ * A077407 In base <code>3,</code> records for the number of Reverse and Add! steps needed to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A077407 implements Sequence {

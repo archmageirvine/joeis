@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006529 (25*n^4-120*n^3+209*n^2-108*n)/6.
+ * A006529 <code>(25*n^4-120*n^3+209*n^2-108*n)/6</code>.
  * @author Sean A. Irvine
  */
 public class A006529 implements Sequence {

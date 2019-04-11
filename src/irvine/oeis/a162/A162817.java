@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162817 Positive numbers n such that 40*n/(40+n) are integers.
+ * A162817 Positive numbers n such that <code>40*n/(40+n)</code> are integers.
  * @author Georg Fischer
  */
 public class A162817 extends FiniteSequence {

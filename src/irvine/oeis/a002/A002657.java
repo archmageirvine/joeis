@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Stirling;
 
 /**
- * A002657 Numerators of Cauchy numbers of second type (= Bernoulli numbers B_n^{(n)}).
+ * A002657 Numerators of Cauchy numbers of second type <code>(=</code> Bernoulli numbers B_n^{(n)}).
  * @author Sean A. Irvine
  */
 public class A002657 implements Sequence {

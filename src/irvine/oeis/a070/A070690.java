@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070690 a(n) = n^7 mod 5.
+ * A070690 <code>a(n) = n^7 mod 5</code>.
  * @author Sean A. Irvine
  */
 public class A070690 extends LinearRecurrence {

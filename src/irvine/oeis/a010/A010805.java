@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010805 17th powers: a(n) = n^17.
+ * A010805 17th powers: <code>a(n) = n^17</code>.
  * @author Sean A. Irvine
  */
 public class A010805 implements Sequence {

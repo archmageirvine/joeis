@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001673 a(n) = ceiling(Pi^n).
+ * A001673 <code>a(n) =</code> ceiling(Pi^n).
  * @author Sean A. Irvine
  */
 public class A001673 implements Sequence {

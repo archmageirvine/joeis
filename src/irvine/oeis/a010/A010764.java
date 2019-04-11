@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010764 a(n) = floor(n/2) mod floor(n/3).
+ * A010764 <code>a(n) = floor(n/2) mod floor(n/3)</code>.
  * @author Sean A. Irvine
  */
 public class A010764 implements Sequence {

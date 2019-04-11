@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166461 a(n) is the smallest integer &gt; a(n-1) such that a(n) shares no digit with a(n-1) and c=a(n-1)+a(n), and also a(n-1) shares no digit with c.
+ * A166461 <code>a(n)</code> is the smallest integer <code>&gt; a(n-1)</code> such that <code>a(n)</code> shares no digit with <code>a(n-1)</code> and c=a(n-1)+a(n), and also <code>a(n-1)</code> shares no digit with c.
  * @author Georg Fischer
  */
 public class A166461 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003422 Left factorials: !n = Sum_{k=0..n-1} k!.
+ * A003422 Left factorials: <code>!n =</code> Sum_{k=0..n-1} k!.
  * @author Sean A. Irvine
  */
 public class A003422 implements Sequence {

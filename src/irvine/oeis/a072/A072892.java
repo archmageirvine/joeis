@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072892 The 4-cycle of the n =&gt; sigma(n)-n process. sigma(n) is the sum of divisors of n. (A000203) a(4+n)=a(n).
+ * A072892 The 4-cycle of the <code>n =&gt;</code> sigma(n)-n process. sigma(n) is the sum of divisors of n. (A000203) <code>a(4+n)=a(n)</code>.
  * @author Georg Fischer
  */
 public class A072892 extends FiniteSequence {

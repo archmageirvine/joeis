@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103196 a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1)).
+ * A103196 <code>a(n) = (1/9)(2^(n+3)-(-1)^n(3n-1))</code>.
  * @author Sean A. Irvine
  */
 public class A103196 extends LinearRecurrence {

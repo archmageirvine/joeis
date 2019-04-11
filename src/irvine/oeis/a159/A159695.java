@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159695 a(0)=7, a(n) = 2*a(n-1) + 2^(n-1) for n &gt; 0. 
+ * A159695 <code>a(0)=7, a(n) = 2*a(n-1) + 2^(n-1)</code> for <code>n &gt; 0</code>.
  * @author Georg Fischer
  */
 public class A159695 extends LinearRecurrence {

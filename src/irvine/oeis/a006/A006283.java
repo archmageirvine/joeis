@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.PierceExpansionSequence;
 
 /**
- * A006283 Pierce expansion for 1 / Pi.
+ * A006283 Pierce expansion for <code>1 /</code> Pi.
  * @author Sean A. Irvine
  */
 public class A006283 extends PierceExpansionSequence {

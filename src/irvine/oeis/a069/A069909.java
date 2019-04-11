@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069909 Numbers congruent to +-1, +-4, +-6, +-7 mod 16.
+ * A069909 Numbers congruent to <code>+-1, +-4, +-6, +-7 mod 16</code>.
  * @author Sean A. Irvine
  */
 public class A069909 extends LinearRecurrence {

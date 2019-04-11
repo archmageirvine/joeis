@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013720 a(n) = 15^(2*n + 1).
+ * A013720 <code>a(n) = 15^(2*n + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A013720 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046915 Sum of divisors of 10^n.
+ * A046915 Sum of divisors of <code>10^n</code>.
  * @author Sean A. Irvine
  */
 public class A046915 extends LinearRecurrence {

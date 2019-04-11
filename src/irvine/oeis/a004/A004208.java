@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004208 a(n) = n * (2*n - 1)!! - Sum_{k=0..n-1} a(k) * (2*n - 2*k - 1)!!.
+ * A004208 <code>a(n) = n * (2*n - 1)!! -</code> Sum_{k=0..n-1} a(k) <code>* (2*n -</code> 2*k <code>- 1)!!</code>.
  * @author Sean A. Irvine
  */
 public class A004208 extends MemorySequence {

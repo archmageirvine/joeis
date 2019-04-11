@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077399 Triangular numbers that are 1/7 of triangular numbers.
+ * A077399 Triangular numbers that are <code>1/7</code> of triangular numbers.
  * @author Sean A. Irvine
  */
 public class A077399 extends LinearRecurrence {

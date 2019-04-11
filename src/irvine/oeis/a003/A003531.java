@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003531 Divisors of 2^22 - 1.
+ * A003531 Divisors of <code>2^22 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A003531 extends FiniteSequence {

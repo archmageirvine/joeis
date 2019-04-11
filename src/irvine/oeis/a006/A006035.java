@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006035 Numbers n such that (19^n-1)/18 is prime.
+ * A006035 Numbers n such that <code>(19^n-1)/18</code> is prime.
  * @author Sean A. Irvine
  */
 public class A006035 implements Sequence {

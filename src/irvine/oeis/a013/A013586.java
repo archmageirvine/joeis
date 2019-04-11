@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013586 Smallest prime p such that n divides one of f(p)-1, f(p) or f(p)+1, where f(p) is product of primes &lt;= p, or 0 if no such p exists.
+ * A013586 Smallest prime p such that n divides one of f(p)-1, f(p) or f(p)+1, where f(p) is product of primes <code>&lt;=</code> p, or 0 if no such p exists.
  * @author Sean A. Irvine
  */
 public class A013586 implements Sequence {

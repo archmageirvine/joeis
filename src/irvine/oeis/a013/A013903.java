@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013903 a(n) = 22^(5*n + 2).
+ * A013903 <code>a(n) = 22^(5*n + 2)</code>.
  * @author Sean A. Irvine
  */
 public class A013903 implements Sequence {

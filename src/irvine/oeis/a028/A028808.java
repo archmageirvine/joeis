@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028808 Nonsquares mod 95.
+ * A028808 Nonsquares <code>mod 95</code>.
  * @author Georg Fischer
  */
 public class A028808 extends FiniteSequence {

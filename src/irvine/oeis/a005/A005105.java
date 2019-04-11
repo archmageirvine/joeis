@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A005105 Class 1+ primes: primes of the form 2^i*3^j - 1 with i, j &gt;= 0.
+ * A005105 Class <code>1+</code> primes: primes of the form 2^i*3^j <code>- 1</code> with i, j <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A005105 extends A000040 {

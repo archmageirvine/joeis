@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085709 a(0)=1; then smallest multiple of n such that a(n) + a(n-1) is a semiprime.
+ * A085709 <code>a(0)=1</code>; then smallest multiple of n such that <code>a(n) + a(n-1)</code> is a semiprime.
  * @author Georg Fischer
  */
 public class A085709 extends FiniteSequence {

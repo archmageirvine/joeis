@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A250101 Expansion of (18*x+86*x^2)/(1-11*x^2-150*x^3).
+ * A250101 Expansion of <code>(18*x+86*x^2)/(1-11*x^2-150*x^3)</code>.
  * @author Sean A. Irvine
  */
 public class A250101 extends LinearRecurrence {

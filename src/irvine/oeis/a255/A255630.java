@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255630 Number of n-length ternary words avoiding runs of zeros of length 1 (mod 3).
+ * A255630 Number of n-length ternary words avoiding runs of zeros of length <code>1 (mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A255630 extends LinearRecurrence {

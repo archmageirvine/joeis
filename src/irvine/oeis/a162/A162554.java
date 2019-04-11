@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162554 Triples of numbers {n1 &lt; n2 &lt; n3} such that {n1, n2, n3}^2 together use exactly 9 decimals 1..9, sorted first by n1, then by n2, and by n3.
+ * A162554 Triples of numbers <code>{n1 &lt; n2 &lt; n3}</code> such that <code>{n1, n2, n3}^2</code> together use exactly 9 decimals 1..9, sorted first by <code>n1,</code> then by <code>n2,</code> and by <code>n3</code>.
  * @author Georg Fischer
  */
 public class A162554 extends FiniteSequence {

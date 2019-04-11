@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133472 6 followed by numbers with n-1 0's between 1 and 5.
+ * A133472 6 followed by numbers with <code>n-1</code> 0's between 1 and 5.
  * @author Sean A. Irvine
  */
 public class A133472 extends LinearRecurrence {

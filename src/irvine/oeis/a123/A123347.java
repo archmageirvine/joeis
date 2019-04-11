@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123347 Number of words of length n over the alphabet {1,2,3,4,5} such that 1 is not followed by an odd letter. 
+ * A123347 Number of words of length n over the alphabet <code>{1,2,3,4,5}</code> such that 1 is not followed by <code>an</code> odd letter.
  * @author Georg Fischer
  */
 public class A123347 extends LinearRecurrence {

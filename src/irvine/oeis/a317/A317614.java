@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317614 a(n) = (1/2)*(n^3 + n*(n mod 2)). 
+ * A317614 <code>a(n) = (1/2)*(n^3 + n*(n mod 2))</code>.
  * @author Georg Fischer
  */
 public class A317614 extends LinearRecurrence {

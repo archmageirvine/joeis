@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051673 Cubic star numbers: a(n) = n^3 + 4*Sum_{i=0..n-1} i^2.
+ * A051673 Cubic star numbers: <code>a(n) = n^3 +</code> 4*Sum_{i=0..n-1} i^2.
  * @author Sean A. Irvine
  */
 public class A051673 extends LinearRecurrence {

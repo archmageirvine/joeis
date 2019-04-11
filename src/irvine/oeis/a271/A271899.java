@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271899 a(n) = 1 + 471*n/140 + 1594*n^2/315 + 73*n^3/16 + 161*n^4/60 + 83*n^5/80 + 61*n^6/240 + n^7/28 + 11*n^8/5040.
+ * A271899 <code>a(n) = 1 + 471*n/140 + 1594*n^2/315 + 73*n^3/16 + 161*n^4/60 + 83*n^5/80 + 61*n^6/240 + n^7/28 + 11*n^8/5040</code>.
  * @author Sean A. Irvine
  */
 public class A271899 extends LinearRecurrence {

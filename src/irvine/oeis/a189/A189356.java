@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189356 a(n) gives y-values solving the Diophantine equation 2*x^2 + (x-1)^2 = y^2 for positive x.
+ * A189356 <code>a(n)</code> gives y-values solving the Diophantine equation <code>2*x^2 + (x-1)^2 =</code> y^2 for positive x.
  * @author Sean A. Irvine
  */
 public class A189356 extends LinearRecurrence {

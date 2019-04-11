@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291985 Expansion of 1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)*(1+x^5)).
+ * A291985 Expansion of <code>1/((1+x)*(1+x^2)*(1+x^3)*(1+x^4)*(1+x^5))</code>.
  * @author Sean A. Irvine
  */
 public class A291985 extends LinearRecurrence {

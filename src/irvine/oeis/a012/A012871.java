@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012871 Numerator of [x^(2n)] in the Taylor expansion log(cot(x)*arctanh(x))= x^4/15 +x^6/15 +317*x^8/5670 +389*x^10/8505 +6895597*x^12/182432250 +...
+ * A012871 Numerator of <code>[x^(2n)]</code> in the Taylor expansion log(cot(x)*arctanh(x))= <code>x^4/15 +x^6/15 +317*x^8/5670 +389*x^10/8505 +6895597*x^12/182432250 +</code>...
  * @author Sean A. Irvine
  */
 public class A012871 implements Sequence {

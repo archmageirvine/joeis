@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002648 A variant of the cuban primes: primes p = (x^3 - y^3 )/(x - y) where x = y + 2.
+ * A002648 A variant of the cuban primes: primes p <code>= (x^3 -</code> y^3 <code>)/(x -</code> y) where <code>x =</code> y <code>+ 2</code>.
  * @author Sean A. Irvine
  */
 public class A002648 implements Sequence {

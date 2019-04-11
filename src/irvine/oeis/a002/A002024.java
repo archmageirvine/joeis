@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.io.Serializable;
 
 /**
- * A002024 n appears n times; a(n) = floor(sqrt(2n) + 1/2).
+ * A002024 n appears n times; <code>a(n) = floor(sqrt(2n) + 1/2)</code>.
  * @author Sean A. Irvine
  */
 public class A002024 implements Sequence, Serializable {

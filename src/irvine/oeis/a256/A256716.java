@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256716 a(n) = n*(n+1)*(22*n-19)/6.
+ * A256716 <code>a(n) = n*(n+1)*(22*n-19)/6</code>.
  * @author Sean A. Irvine
  */
 public class A256716 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002473 7-smooth numbers: positive numbers whose prime divisors are all &lt;= 7.
+ * A002473 7-smooth numbers: positive numbers whose prime divisors are all <code>&lt;= 7</code>.
  * @author Sean A. Irvine
  */
 public class A002473 implements Sequence {

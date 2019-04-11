@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297028 Number of edge covers in the 2n-crossed prism graph. 
+ * A297028 Number of edge covers in the 2n-crossed prism graph.
  * @author Georg Fischer
  */
 public class A297028 extends LinearRecurrence {

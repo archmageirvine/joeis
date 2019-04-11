@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152728 a(n) + a(n+1) + a(n+2) = n^3.
+ * A152728 <code>a(n) + a(n+1) + a(n+2) = n^3</code>.
  * @author Sean A. Irvine
  */
 public class A152728 extends LinearRecurrence {

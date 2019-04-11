@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119032 a(n+2)=18a(n+1)-a(n)+8.
+ * A119032 <code>a(n+2)=18a(n+1)-a(n)+8</code>.
  * @author Sean A. Irvine
  */
 public class A119032 extends LinearRecurrence {

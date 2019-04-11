@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293611 a(n) = (25*n + 41)*Pochhammer(n, 5) / 6!.
+ * A293611 <code>a(n) = (25*n +</code> 41)*Pochhammer(n, <code>5) / 6!</code>.
  * @author Sean A. Irvine
  */
 public class A293611 extends LinearRecurrence {

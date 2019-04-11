@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189071 The n-th derivative of x^10 evaluated at x=2. 
+ * A189071 The n-th derivative of <code>x^10</code> evaluated at <code>x=2</code>.
  * @author Georg Fischer
  */
 public class A189071 extends LinearRecurrence {

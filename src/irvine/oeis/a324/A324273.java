@@ -3,7 +3,7 @@ package irvine.oeis.a324;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A324273 Squares visited by a single pawn move for an odd square and a double pawn move for an even square on a diagonally numbered board and moving to the lowest available unvisited square of different parity at each step.
+ * A324273 Squares visited by a single pawn move for <code>an</code> odd square and a double pawn move for <code>an</code> even square on a diagonally numbered board and moving to the lowest available unvisited square of different parity at each step.
  * @author Georg Fischer
  */
 public class A324273 extends FiniteSequence {

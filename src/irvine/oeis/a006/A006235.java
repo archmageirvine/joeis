@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006235 Complexity of doubled cycle (regarding case n = 2 as a multigraph).
+ * A006235 Complexity of doubled cycle (regarding case <code>n = 2</code> as a multigraph).
  * @author Sean A. Irvine
  */
 public class A006235 extends LinearRecurrence {

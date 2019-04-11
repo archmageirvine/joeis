@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006288 Loxton-van der Poorten sequence: base 4 representation contains only -1, 0, +1.
+ * A006288 Loxton-van der Poorten sequence: base 4 representation contains only <code>-1, 0, +1</code>.
  * @author Sean A. Irvine
  */
 public class A006288 extends MemorySequence {

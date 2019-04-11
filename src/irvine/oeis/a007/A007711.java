@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007711 Number of unreformed permutations of {1,...,n}.
+ * A007711 Number of unreformed permutations of <code>{1,</code>...,n}.
  * @author Sean A. Irvine
  */
 public class A007711 extends A007709 {

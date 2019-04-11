@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005159;
 
 /**
- * A006849 Number of strongly self-dual planar maps with 2n edges.
+ * A006849 Number of strongly self-dual planar maps with <code>2n</code> edges.
  * @author Sean A. Irvine
  */
 public class A006849 extends A005159 {

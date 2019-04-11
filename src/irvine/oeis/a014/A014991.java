@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014991 a(n) = (1 - (-9)^n)/10.
+ * A014991 <code>a(n) = (1 - (-9)^n)/10</code>.
  * @author Sean A. Irvine
  */
 public class A014991 implements Sequence {

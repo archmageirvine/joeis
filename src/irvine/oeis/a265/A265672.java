@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265672 a(n) = n + floor((n+1)/7)*(-1)^((n+1) mod 7).
+ * A265672 <code>a(n) = n + floor((n+1)/7)*(-1)^((n+1) mod 7)</code>.
  * @author Sean A. Irvine
  */
 public class A265672 extends LinearRecurrence {

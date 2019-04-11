@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.math.z.Z;
 
 /**
- * A015921 Positive integers n such that 2^n == 4 (mod n).
+ * A015921 Positive integers n such that <code>2^n == 4 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A015921 extends A015910 {

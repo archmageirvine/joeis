@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010866 Constant sequence: a(n) = 27.
+ * A010866 Constant sequence: <code>a(n) = 27</code>.
  * @author Sean A. Irvine
  */
 public class A010866 implements Sequence {

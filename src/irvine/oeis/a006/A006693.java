@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006693 Modified Engel expansion of 3/7.
+ * A006693 Modified Engel expansion of <code>3/7</code>.
  * @author Sean A. Irvine
  */
 public class A006693 implements Sequence {

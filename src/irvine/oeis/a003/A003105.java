@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003105 Schur's 1926 partition theorem: number of partitions of n into parts 6n+1 or 6n-1.
+ * A003105 Schur's 1926 partition theorem: number of partitions of n into parts <code>6n+1</code> or <code>6n-1</code>.
  * @author Sean A. Irvine
  */
 public class A003105 implements Sequence {

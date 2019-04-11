@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A067635 a(1) = 1; set of digits of a(n)^2 is a proper subset of the set of digits of a(n+1)^2.
+ * A067635 <code>a(1) = 1</code>; set of digits of <code>a(n)^2</code> is a proper subset of the set of digits of <code>a(n+1)^2</code>.
  * @author Georg Fischer
  */
 public class A067635 extends FiniteSequence {

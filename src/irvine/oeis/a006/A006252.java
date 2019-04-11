@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006252 Expansion of e.g.f. 1/(1 - log(1+x)).
+ * A006252 Expansion of e.g.f. <code>1/(1 -</code> log(1+x)).
  * @author Sean A. Irvine
  */
 public class A006252 implements Sequence {

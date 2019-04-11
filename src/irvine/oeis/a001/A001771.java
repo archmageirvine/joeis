@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001771 Numbers n such that 7*2^n - 1 is prime.
+ * A001771 Numbers n such that <code>7*2^n - 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A001771 implements Sequence {

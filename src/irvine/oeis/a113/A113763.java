@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113763 Non-multiples of 13, or numbers not divisible by 13.
+ * A113763 Non-multiples of <code>13,</code> or numbers not divisible by 13.
  * @author Sean A. Irvine
  */
 public class A113763 extends LinearRecurrence {

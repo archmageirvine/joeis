@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096261 Number of n-tuples of 0,1,2,3,4,5,6,7,8,9 without consecutive digits.
+ * A096261 Number of n-tuples of <code>0,1,2,3,4,5,6,7,8,9</code> without consecutive digits.
  * @author Sean A. Irvine
  */
 public class A096261 extends LinearRecurrence {

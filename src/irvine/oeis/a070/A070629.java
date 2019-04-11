@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070629 n^5 mod 46.
+ * A070629 <code>n^5 mod 46</code>.
  * @author Sean A. Irvine
  */
 public class A070629 extends LinearRecurrence {

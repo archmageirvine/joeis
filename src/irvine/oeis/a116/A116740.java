@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116740 Number of permutations of length n which avoid the patterns 1243, 2341, 4132.
+ * A116740 Number of permutations of length n which avoid the patterns <code>1243, 2341, 4132</code>.
  * @author Sean A. Irvine
  */
 public class A116740 extends LinearRecurrence {

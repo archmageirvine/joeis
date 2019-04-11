@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108578 Number of 3 X 3 magic squares with magic sum 3n. 
+ * A108578 Number of 3 X 3 magic squares with magic sum <code>3n</code>.
  * @author Georg Fischer
  */
 public class A108578 extends LinearRecurrence {

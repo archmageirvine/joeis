@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104747 a(n) = (n-3)*2^n + n*(n+3)/2 + 3.
+ * A104747 <code>a(n) = (n-3)*2^n + n*(n+3)/2 + 3</code>.
  * @author Sean A. Irvine
  */
 public class A104747 extends LinearRecurrence {

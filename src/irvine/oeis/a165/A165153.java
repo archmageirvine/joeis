@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165153 a(n) = the product of all distinct positive (nonzero) integers that, when written in binary, occur as substrings in the binary representation of n.
+ * A165153 <code>a(n) =</code> the product of all distinct positive (nonzero) integers that, when written in binary, occur as substrings in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A165153 implements Sequence {

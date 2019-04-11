@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063833 !n - 3 is prime.
+ * A063833 <code>!n - 3</code> is prime.
  * @author Georg Fischer
  */
 public class A063833 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272000 Coinage sequence: a(n) = A018227(n)-7.
+ * A272000 Coinage sequence: <code>a(n) =</code> A018227(n)-7.
  * @author Sean A. Irvine
  */
 public class A272000 extends LinearRecurrence {

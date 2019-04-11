@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013592 Orders of cyclotomic polynomials containing a coefficient the absolute value of which is &gt;= 4.
+ * A013592 Orders of cyclotomic polynomials containing a coefficient the absolute value of which is <code>&gt;= 4</code>.
  * @author Sean A. Irvine
  */
 public class A013592 implements Sequence {

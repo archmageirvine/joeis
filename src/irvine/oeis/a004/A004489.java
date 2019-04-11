@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004489 Table of tersums m + n (answers written in base 10).
+ * A004489 Table of tersums m <code>+ n</code> (answers written in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A004489 implements Sequence {

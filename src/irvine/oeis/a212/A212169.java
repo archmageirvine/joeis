@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A212169 List of highly composite numbers (A002182) with an exponent in its prime factorization that is at least as great as the number of positive exponents; intersection of A002182 and A212165.
+ * A212169 List of highly composite numbers (A002182) with <code>an</code> exponent in its prime factorization that is at least as great as the number of positive exponents; intersection of A002182 and A212165.
  * @author Georg Fischer
  */
 public class A212169 extends FiniteSequence {

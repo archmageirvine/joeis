@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A025172 Let phi = arccos(1/3), the dihedral angle of the regular tetrahedron. Then cos(n*phi) = a(n)/3^n.
+ * A025172 Let phi = arccos(1/3), the dihedral angle of the regular tetrahedron. Then cos(n*phi) <code>= a(n)/3^n</code>.
  * @author Sean A. Irvine
  */
 public class A025172 extends LinearRecurrence {

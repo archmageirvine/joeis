@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195917 Numbers n such that both n+1 and 7n+1 are squares.
+ * A195917 Numbers n such that both <code>n+1</code> and <code>7n+1</code> are squares.
  * @author Sean A. Irvine
  */
 public class A195917 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264938 a(n) = n*(2*n-1) + floor(n/3).
+ * A264938 <code>a(n) = n*(2*n-1) + floor(n/3)</code>.
  * @author Sean A. Irvine
  */
 public class A264938 extends LinearRecurrence {

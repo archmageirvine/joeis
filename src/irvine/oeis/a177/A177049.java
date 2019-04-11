@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177049 Numerator of (3n+1)*(3n+2)/4.
+ * A177049 Numerator of <code>(3n+1)*(3n+2)/4</code>.
  * @author Sean A. Irvine
  */
 public class A177049 extends LinearRecurrence {

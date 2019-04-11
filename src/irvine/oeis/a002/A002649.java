@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import java.util.HashSet;
 
 /**
- * A002649 Quintan primes: p = (x^5 - y^5 )/(x - y).
+ * A002649 Quintan primes: p <code>= (x^5 -</code> y^5 <code>)/(x -</code> y).
  * @author Sean A. Irvine
  */
 public class A002649 implements Sequence {

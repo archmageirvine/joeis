@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108923 Expansion of 1/((x^8+1)*(1-x)^3).
+ * A108923 Expansion of <code>1/((x^8+1)*(1-x)^3)</code>.
  * @author Sean A. Irvine
  */
 public class A108923 extends LinearRecurrence {

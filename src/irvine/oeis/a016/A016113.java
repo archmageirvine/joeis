@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A016113 Numbers whose square is a palindrome with an even number of digits.
+ * A016113 Numbers whose square is a palindrome with <code>an</code> even number of digits.
  * @author Sean A. Irvine
  */
 public class A016113 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055100 In the game of backgammon, the number of blot hitting rolls when the blot is n points away, n=1,2,...,24.
+ * A055100 In the game of backgammon, the number of blot hitting rolls when the blot is n points away, <code>n=1,2,</code>...,24.
  * @author Georg Fischer
  */
 public class A055100 extends FiniteSequence {

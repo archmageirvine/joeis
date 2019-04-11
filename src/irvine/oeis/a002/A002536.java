@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002536 a(n) = 8 a(n-2) - 9 a(n-4).
+ * A002536 <code>a(n) = 8 a(n-2) - 9 a(n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A002536 extends LinearRecurrence {

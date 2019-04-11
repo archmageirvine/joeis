@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147958 a(n) = ((7 + sqrt(2))^n + (7 - sqrt(2))^n)/2.
+ * A147958 <code>a(n) = ((7 + sqrt(2))^n + (7 - sqrt(2))^n)/2</code>.
  * @author Sean A. Irvine
  */
 public class A147958 extends LinearRecurrence {

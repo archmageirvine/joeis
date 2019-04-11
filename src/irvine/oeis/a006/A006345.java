@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006345 Linus sequence: a(n) "breaks the pattern" by avoiding the longest doubled suffix.
+ * A006345 Linus sequence: <code>a(n)</code> "breaks the pattern" by avoiding the longest doubled suffix.
  * @author Sean A. Irvine
  */
 public class A006345 implements Sequence {

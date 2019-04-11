@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153360 Number of zig-zag paths from top to bottom of a rectangle of width 10 with n rows. 
+ * A153360 Number of zig-zag paths from top to bottom of a rectangle of width 10 with n rows.
  * @author Georg Fischer
  */
 public class A153360 extends LinearRecurrence {

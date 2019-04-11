@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001611 a(n) = Fibonacci(n) + 1.
+ * A001611 <code>a(n) =</code> Fibonacci(n) <code>+ 1</code>.
  * @author Sean A. Irvine
  */
 public class A001611 extends A000045 {

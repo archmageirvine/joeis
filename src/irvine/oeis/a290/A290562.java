@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290562 a(n) = n - cos(n*Pi/2).
+ * A290562 <code>a(n) = n -</code> cos(n*Pi/2).
  * @author Sean A. Irvine
  */
 public class A290562 extends LinearRecurrence {

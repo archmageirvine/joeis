@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118646 a(n) is the number of binary strings of length n such that there exists a subsequence of length 4 containing 3 or more ones.
+ * A118646 <code>a(n)</code> is the number of binary strings of length n such that there exists a subsequence of length 4 containing 3 or more ones.
  * @author Sean A. Irvine
  */
 public class A118646 extends LinearRecurrence {

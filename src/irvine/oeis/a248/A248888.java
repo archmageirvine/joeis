@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A248888 Numbers n such that prime(n) &lt;= 2*sigma(n).
+ * A248888 Numbers n such that prime(n) <code>&lt;=</code> 2*sigma(n).
  * @author Georg Fischer
  */
 public class A248888 extends FiniteSequence {

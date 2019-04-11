@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A094096 Min{m: n = Sum((m mod (1+k*L(n)!))*2^(k-1): 1&lt;=k&lt;=L(n))}, where L(n) = length of binary representation of n, cf. A070939, A000142.
+ * A094096 Min{m: <code>n =</code> Sum((m mod (1+k*L(n)!))*2^(k-1): 1&lt;=k&lt;=L(n))}, where L(n) = length of binary representation of <code>n,</code> cf. A070939, A000142.
  * @author Sean A. Irvine
  */
 public class A094096 implements Sequence {

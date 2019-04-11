@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099139 18^n-(-6)^n)/24.
+ * A099139 <code>18^n-(-6)^n)/24</code>.
  * @author Sean A. Irvine
  */
 public class A099139 extends LinearRecurrence {

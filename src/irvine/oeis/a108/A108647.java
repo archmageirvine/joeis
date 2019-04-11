@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108647 a(n) = (n+1)^2*(n+2)^2*(n+3)^2*(n+4)/144.
+ * A108647 <code>a(n) = (n+1)^2*(n+2)^2*(n+3)^2*(n+4)/144</code>.
  * @author Sean A. Irvine
  */
 public class A108647 extends LinearRecurrence {

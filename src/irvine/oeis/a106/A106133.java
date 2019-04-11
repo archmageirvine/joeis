@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A106133 Numbers n such that n-th semiprime == 8 (mod n).
+ * A106133 Numbers n such that n-th semiprime <code>== 8 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A106133 implements Sequence {

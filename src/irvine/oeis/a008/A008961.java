@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008961 Numerators of Taylor series for 1/(sin x + tan x).
+ * A008961 Numerators of Taylor series for 1/(sin <code>x +</code> tan <code>x)</code>.
  * @author Sean A. Irvine
  */
 public class A008961 implements Sequence {

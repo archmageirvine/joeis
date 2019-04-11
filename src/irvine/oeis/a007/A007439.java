@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007439 Number of planted trees: all sub-rooted trees from any node are identical; non-root, non-leaf nodes an even distance from the root are of degree 2.
+ * A007439 Number of planted trees: all sub-rooted trees from any node are identical; non-root, non-leaf nodes <code>an</code> even distance from the root are of degree 2.
  * @author Sean A. Irvine
  */
 public class A007439 extends MemorySequence {

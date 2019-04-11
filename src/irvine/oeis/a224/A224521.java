@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224521 Numbers a(n) with property a(n) + a(n+5) = 2^(n+5) - 1 = A000225(n+5).
+ * A224521 Numbers <code>a(n)</code> with property <code>a(n) + a(n+5) = 2^(n+5) - 1 =</code> A000225(n+5).
  * @author Sean A. Irvine
  */
 public class A224521 extends LinearRecurrence {

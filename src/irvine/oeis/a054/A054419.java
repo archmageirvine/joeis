@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054419 Number of connected 3 X n binary matrices (divided by 2).
+ * A054419 Number of connected 3 X n binary matrices (divided by <code>2)</code>.
  * @author Sean A. Irvine
  */
 public class A054419 extends LinearRecurrence {

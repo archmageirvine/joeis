@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181323 Number of ways of placing n rods of length 3 in a 3x3x3 cubic lattice without any two rods intersecting (0 &lt;= n &lt;= 9).
+ * A181323 Number of ways of placing n rods of length 3 in <code>a 3x3x3</code> cubic lattice without any two rods intersecting <code>(0 &lt;= n &lt;= 9)</code>.
  * @author Georg Fischer
  */
 public class A181323 extends FiniteSequence {

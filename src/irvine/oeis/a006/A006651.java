@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001430;
 import irvine.oeis.a048.A048180;
 
 /**
- * A006651 Number of graphs with n nodes, n+2 edges and no isolated vertices.
+ * A006651 Number of graphs with n nodes, <code>n+2</code> edges and no isolated vertices.
  * @author Sean A. Irvine
  */
 public class A006651 extends A001430 {

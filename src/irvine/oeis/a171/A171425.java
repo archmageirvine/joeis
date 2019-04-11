@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171425 Divisors of 60^2 that are not divisors of 60.
+ * A171425 Divisors of <code>60^2</code> that are not divisors of 60.
  * @author Georg Fischer
  */
 public class A171425 extends FiniteSequence {

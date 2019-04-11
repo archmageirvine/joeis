@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286186 Number of connected induced (non-null) subgraphs of the friendship graph with 2n+1 nodes.
+ * A286186 Number of connected induced (non-null) subgraphs of the friendship graph with <code>2n+1</code> nodes.
  * @author Sean A. Irvine
  */
 public class A286186 extends LinearRecurrence {

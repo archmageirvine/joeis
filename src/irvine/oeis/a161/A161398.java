@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161398 a(n) = the smallest divisor of n that contains the same number of 1's as n when both numbers are written in binary.
+ * A161398 <code>a(n) =</code> the smallest divisor of n that contains the same number of 1's as n when both numbers are written in binary.
  * @author Sean A. Irvine
  */
 public class A161398 implements Sequence {

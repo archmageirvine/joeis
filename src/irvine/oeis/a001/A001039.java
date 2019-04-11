@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001039 a(n) = (p^p-1)/(p-1) where p = prime(n).
+ * A001039 <code>a(n) =</code> (p^p-1)/(p-1) where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A001039 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245941 (16n^6 - 24n^5 + 2n^4 + 11n^3 - 6n^2 + n) / 6.
+ * A245941 <code>(16n^6 - 24n^5 + 2n^4 + 11n^3 - 6n^2 + n) / 6</code>.
  * @author Sean A. Irvine
  */
 public class A245941 extends LinearRecurrence {

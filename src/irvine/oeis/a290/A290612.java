@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290612 Number of maximal independent vertex sets (and minimal vertex covers) in the n-wheel graph. 
+ * A290612 Number of maximal independent vertex sets (and minimal vertex covers) in the n-wheel graph.
  * @author Georg Fischer
  */
 public class A290612 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091685 Sieve out 6n+1 and 6n-1.
+ * A091685 Sieve out <code>6n+1</code> and <code>6n-1</code>.
  * @author Sean A. Irvine
  */
 public class A091685 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001025 Powers of 16: a(n) = 16^n.
+ * A001025 Powers of 16: <code>a(n) = 16^n</code>.
  * @author Sean A. Irvine
  */
 public class A001025 implements Sequence {

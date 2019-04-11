@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122503 a(n) = 22*a(n - 2) + 54*a(n - 3) + 38*a(n - 4).
+ * A122503 <code>a(n) = 22*a(n - 2) + 54*a(n - 3) + 38*a(n - 4)</code>.
  * @author Sean A. Irvine
  */
 public class A122503 extends LinearRecurrence {

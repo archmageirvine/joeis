@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061593 Number of ways to place 2n nonattacking kings on a 4 X 2n chessboard.
+ * A061593 Number of ways to place <code>2n</code> nonattacking kings on <code>a 4</code> X <code>2n</code> chessboard.
  * @author Sean A. Irvine
  */
 public class A061593 extends LinearRecurrence {

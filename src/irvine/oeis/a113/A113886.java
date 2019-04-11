@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113886 Finite recursive sequence with a(n) = a(a(n-2)) + a(n-a(n-1)).
+ * A113886 Finite recursive sequence with <code>a(n) = a(a(n-2)) + a(n-a(n-1))</code>.
  * @author Georg Fischer
  */
 public class A113886 extends FiniteSequence {

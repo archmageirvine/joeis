@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229525 Sum of coefficients of the transform ax^2 + (4a/k - b)x + 4a/k^2 + 2b/k + c = 0 for a,b,c = 1,-1,-1, k = 1,2,3...
+ * A229525 Sum of coefficients of the transform <code>ax^2 +</code> (4a/k - b)x + 4a/k^2 + 2b/k + c <code>= 0</code> for a,b,c <code>= 1,-1,-1,</code> k <code>= 1,2,3</code>...
  * @author Sean A. Irvine
  */
 public class A229525 extends LinearRecurrence {

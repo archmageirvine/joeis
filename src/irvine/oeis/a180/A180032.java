@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180032 Eight white queens and one red queen on a 3 X 3 chessboard. G.f.: (1+x)/(1-5*x-7*x^2).
+ * A180032 Eight white queens and one red queen on <code>a 3</code> X 3 chessboard. G.f.: <code>(1+x)/(1-5*x-7*x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A180032 extends LinearRecurrence {

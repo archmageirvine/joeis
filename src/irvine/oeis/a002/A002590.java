@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002590 Largest prime factor of 16^n + 1.
+ * A002590 Largest prime factor of <code>16^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A002590 implements Sequence {

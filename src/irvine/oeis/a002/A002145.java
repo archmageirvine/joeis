@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002145 Primes of the form 4n+3.
+ * A002145 Primes of the form <code>4n+3</code>.
  * @author Sean A. Irvine
  */
 public class A002145 implements Sequence {

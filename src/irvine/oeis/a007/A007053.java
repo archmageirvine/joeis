@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007053 Number of primes &lt;= 2^n.
+ * A007053 Number of primes <code>&lt;= 2^n</code>.
  * @author Sean A. Irvine
  */
 public class A007053 implements Sequence {

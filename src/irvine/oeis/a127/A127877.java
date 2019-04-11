@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127877 Integers of the form (x^4)/24 + (x^3)/6 + (x^2)/2 + x + 1 with x &gt; 0.
+ * A127877 Integers of the form <code>(x^4)/24 + (x^3)/6 + (x^2)/2 + x + 1</code> with <code>x &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A127877 extends LinearRecurrence {

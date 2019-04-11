@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119336 Expansion of (1-x)^4/((1-x)^6 - x^6).
+ * A119336 Expansion of <code>(1-x)^4/((1-x)^6 - x^6)</code>.
  * @author Sean A. Irvine
  */
 public class A119336 extends LinearRecurrence {

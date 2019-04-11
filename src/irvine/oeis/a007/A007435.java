@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007435 Inverse Moebius transform of Fibonacci numbers 1,1,2,3,5,8,...
+ * A007435 Inverse Moebius transform of Fibonacci numbers <code>1,1,2,3,5,8,</code>...
  * @author Sean A. Irvine
  */
 public class A007435 implements Sequence {

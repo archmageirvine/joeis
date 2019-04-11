@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213655 Number of dominating subsets of the theta-graph TH(2,2,n) (n&gt;=1). A tribonacci sequence with initial values 13, 23, and 41. 
+ * A213655 Number of dominating subsets of the theta-graph TH(2,2,n) <code>(n&gt;=1)</code>. A tribonacci sequence with initial values <code>13, 23,</code> and 41.
  * @author Georg Fischer
  */
 public class A213655 extends LinearRecurrence {

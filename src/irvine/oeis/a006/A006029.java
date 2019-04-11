@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A006029 Numbers n such that n-th tetrahedral number n*(n+1)*(n+2)/6 is palindromic.
+ * A006029 Numbers n such that n-th tetrahedral number <code>n*(n+1)*(n+2)/6</code> is palindromic.
  * @author Sean A. Irvine
  */
 public class A006029 implements Sequence {

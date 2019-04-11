@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089663 Let S1 := (n,t)-&gt;add( k^t * add( binomial(n,j), j=0..k), k=0..n); a(n) = S1(n,6).
+ * A089663 Let S1 := <code>(n</code>,t)-&gt;add( k^t * add( binomial(n,j), j=0..k), k=0..n); <code>a(n) =</code> S1(n,6).
  * @author Sean A. Irvine
  */
 public class A089663 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002312 Arc-cotangent reducible numbers or non-St&#248;rmer numbers: largest prime factor of n^2 + 1 is less than 2n.
+ * A002312 Arc-cotangent reducible numbers or non-St&#248;rmer numbers: largest prime factor of <code>n^2 + 1</code> is less than <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A002312 implements Sequence {

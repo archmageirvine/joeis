@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006027 Number of directed column-convex polyominoes with perimeter 2n+2.
+ * A006027 Number of directed column-convex polyominoes with perimeter <code>2n+2</code>.
  * @author Sean A. Irvine
  */
 public class A006027 implements Sequence {

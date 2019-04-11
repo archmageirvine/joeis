@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100413 Numbers n such that n is reversal(n)-th even composite number (n is A004086(n)-th even composite number).
+ * A100413 Numbers n such that n is reversal(n)-th even composite number <code>(n</code> is A004086(n)-th even composite number).
  * @author Sean A. Irvine
  */
 public class A100413 extends LinearRecurrence {

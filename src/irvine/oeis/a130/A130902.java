@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130902 a(n) is the number of binary strings of length n such that there exist 4 or more ones in a subsequence of length 5 or less.
+ * A130902 <code>a(n)</code> is the number of binary strings of length n such that there exist 4 or more ones in a subsequence of length 5 or less.
  * @author Sean A. Irvine
  */
 public class A130902 extends LinearRecurrence {

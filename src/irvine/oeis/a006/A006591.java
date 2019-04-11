@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006591 Sum_{k = 1..n } nearest integer to n/k (if n/k is midway between two numbers take the smaller).
+ * A006591 Sum_{k <code>= 1</code>..n } nearest integer to n/k (if n/k is midway between two numbers take the smaller).
  * @author Sean A. Irvine
  */
 public class A006591 implements Sequence {

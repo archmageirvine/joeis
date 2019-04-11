@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166118 Fixed points of the mapping f(x) = (x + 2^x) mod (17 + x).
+ * A166118 Fixed points of the mapping f(x) <code>= (x + 2^x) mod (17 + x)</code>.
  * @author Sean A. Irvine
  */
 public class A166118 extends LinearRecurrence {

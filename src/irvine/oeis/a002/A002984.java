@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002984 a(0) = 1; for n&gt;0, a(n) = a(n-1) + floor( sqrt a(n-1) ).
+ * A002984 <code>a(0) = 1</code>; for <code>n&gt;0, a(n) = a(n-1) + floor( sqrt a(n-1) )</code>.
  * @author Sean A. Irvine
  */
 public class A002984 implements Sequence {

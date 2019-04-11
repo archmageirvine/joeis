@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147677 Subtract 5, add 8, repeat.
+ * A147677 Subtract <code>5,</code> add <code>8,</code> repeat.
  * @author Sean A. Irvine
  */
 public class A147677 extends LinearRecurrence {

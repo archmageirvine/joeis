@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135137 Numbers that are the sum of three numbers from the set {1, 5, 10, 20, 50, 100}.
+ * A135137 Numbers that are the sum of three numbers from the set <code>{1, 5, 10, 20, 50, 100}</code>.
  * @author Georg Fischer
  */
 public class A135137 extends FiniteSequence {

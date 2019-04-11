@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014217 a(n) = floor(phi^n), where phi = (1+sqrt(5))/2 is the golden ratio.
+ * A014217 <code>a(n) =</code> floor(phi^n), where phi <code>= (1+sqrt(5))/2</code> is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A014217 extends LinearRecurrence {

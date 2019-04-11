@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305668 Engel expansion whose sum has the concatenation of its terms as decimal part. Case a(1) = 10.
+ * A305668 Engel expansion whose sum has the concatenation of its terms as decimal part. Case <code>a(1) = 10</code>.
  * @author Georg Fischer
  */
 public class A305668 extends FiniteSequence {

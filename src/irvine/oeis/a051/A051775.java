@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051775 Table T(n,m) = Nim-product of n and m, read by antidiagonals, for n &gt;= 0, m &gt;= 0.
+ * A051775 Table T(n,m) = Nim-product of n and m, read by antidiagonals, for <code>n &gt;= 0,</code> m <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A051775 extends MemoryFunction2<Z, Z> implements Sequence {

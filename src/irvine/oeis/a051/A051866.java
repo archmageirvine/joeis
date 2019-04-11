@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051866 14-gonal (or tetradecagonal) numbers: a(n) = n*(6*n-5).
+ * A051866 14-gonal (or tetradecagonal) numbers: <code>a(n) = n*(6*n-5)</code>.
  * @author Sean A. Irvine
  */
 public class A051866 extends LinearRecurrence {

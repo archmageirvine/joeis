@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A240545 Least k &gt; 0 such that n + p(k) is prime, where p(k) is the number of partitions of k.
+ * A240545 Least k <code>&gt; 0</code> such that <code>n +</code> p(k) is prime, where p(k) is the number of partitions of k.
  * @author Sean A. Irvine
  */
 public class A240545 implements Sequence {

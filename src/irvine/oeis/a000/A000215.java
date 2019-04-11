@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000215 Fermat numbers: a(n) = 2^(2^n) + 1.
+ * A000215 Fermat numbers: <code>a(n) = 2^(2^n) + 1</code>.
  * @author Sean A. Irvine
  */
 public class A000215 implements Sequence {

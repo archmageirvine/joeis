@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A250173 Primes with distinct digits: a(n) is the least prime &gt; a(n-1) such that a(n-1) and a(n) share no common digit.
+ * A250173 Primes with distinct digits: <code>a(n)</code> is the least prime <code>&gt; a(n-1)</code> such that <code>a(n-1)</code> and <code>a(n)</code> share no common digit.
  * @author Georg Fischer
  */
 public class A250173 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161767 a(0)=0, a(1)=2. For n &gt;=2, a(n) = the smallest integer &gt;= a(n-1)+2 with exactly (a(n-1)-a(n-2)) divisors.
+ * A161767 <code>a(0)=0, a(1)=2</code>. For <code>n &gt;=2, a(n) =</code> the smallest integer <code>&gt;= a(n-1)+2</code> with exactly <code>(a(n-1)-a(n-2))</code> divisors.
  * @author Sean A. Irvine
  */
 public class A161767 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A144855 Number of paths from (1,1) to (n,n) in an n X n grid using only the steps +(1,0), -(1,0), +(0,1) and -(0,1) which do not self-intersect and which avoid any point (p,q) satisfying "(p-1)*n + q is prime".
+ * A144855 Number of paths from <code>(1,1)</code> to <code>(n,n)</code> in <code>an n</code> X n grid using only the steps <code>+(1,0), -(1,0), +(0,1)</code> and <code>-(0,1)</code> which do not self-intersect and which avoid any point (p,q) satisfying "(p-1)*n + q is prime".
  * @author Sean A. Irvine
  */
 public class A144855 implements Sequence {

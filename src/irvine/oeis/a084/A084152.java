@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084152 Exponential self-convolution of Jacobsthal numbers (divided by 2).
+ * A084152 Exponential self-convolution of Jacobsthal numbers (divided by <code>2)</code>.
  * @author Sean A. Irvine
  */
 public class A084152 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057367 a(n) = floor(11*n/30).
+ * A057367 <code>a(n) = floor(11*n/30)</code>.
  * @author Sean A. Irvine
  */
 public class A057367 extends LinearRecurrence {

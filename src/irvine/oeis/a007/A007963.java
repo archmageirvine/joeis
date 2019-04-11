@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007963 Number of (unordered) ways of writing 2n+1 as a sum of 3 odd primes.
+ * A007963 Number of (unordered) ways of writing <code>2n+1</code> as a sum of 3 odd primes.
  * @author Sean A. Irvine
  */
 public class A007963 implements Sequence {

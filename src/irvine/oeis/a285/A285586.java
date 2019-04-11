@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A285586 Complete list of numbers n for which there exists no prime number between n and 9n/8 inclusive.
+ * A285586 Complete list of numbers n for which there exists no prime number between n and <code>9n/8</code> inclusive.
  * @author Georg Fischer
  */
 public class A285586 extends FiniteSequence {

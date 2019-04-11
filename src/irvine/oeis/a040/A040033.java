@@ -4,7 +4,7 @@ package irvine.oeis.a040;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A040033 Continued fraction for sqrt(40). 
+ * A040033 Continued fraction for <code>sqrt(40)</code>.
  * @author Georg Fischer
  */
 public class A040033 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107248 a(n) = 4*a(n-2) - 4*a(n-4) + 25*a(n-6). 
+ * A107248 <code>a(n) = 4*a(n-2) - 4*a(n-4) + 25*a(n-6)</code>.
  * @author Georg Fischer
  */
 public class A107248 extends LinearRecurrence {

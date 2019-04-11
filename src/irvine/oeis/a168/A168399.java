@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168399 a(n) = 3^n mod 13.
+ * A168399 <code>a(n) = 3^n mod 13</code>.
  * @author Sean A. Irvine
  */
 public class A168399 extends LinearRecurrence {

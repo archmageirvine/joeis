@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A085745 2^n + n is a semiprime.
+ * A085745 <code>2^n + n</code> is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085745 implements Sequence {

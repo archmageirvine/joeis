@@ -4,7 +4,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023105 Number of distinct quadratic residues mod 2^n. 
+ * A023105 Number of distinct quadratic residues <code>mod 2^n</code>.
  * @author Georg Fischer
  */
 public class A023105 extends LinearRecurrence {

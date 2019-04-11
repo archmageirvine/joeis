@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001144 An exponential function on partitions (next term is 2^512).
+ * A001144 An exponential function on partitions (next term is <code>2^512)</code>.
  * @author Sean A. Irvine
  */
 public class A001144 implements Sequence {

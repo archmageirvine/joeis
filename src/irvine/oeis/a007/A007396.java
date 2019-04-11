@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007396 Add 2, then reverse digits!.
+ * A007396 Add <code>2,</code> then reverse digits!.
  * @author Sean A. Irvine
  */
 public class A007396 implements Sequence {

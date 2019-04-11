@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051406 a(n) = (3^n+1) * (3^(n+1)+1) / 8.
+ * A051406 <code>a(n) = (3^n+1) * (3^(n+1)+1) / 8</code>.
  * @author Sean A. Irvine
  */
 public class A051406 extends LinearRecurrence {

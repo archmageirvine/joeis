@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008618 Expansion of 1/((1-x^2)(1-x^9)).
+ * A008618 Expansion of <code>1/((1-x^2)(1-x^9))</code>.
  * @author Sean A. Irvine
  */
 public class A008618 implements Sequence {

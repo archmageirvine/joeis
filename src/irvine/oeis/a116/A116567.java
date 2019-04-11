@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116567 a(n) = +1476*a(n-6) +46656*a(n-12).
+ * A116567 <code>a(n) = +1476*a(n-6) +46656*a(n-12)</code>.
  * @author Sean A. Irvine
  */
 public class A116567 extends LinearRecurrence {

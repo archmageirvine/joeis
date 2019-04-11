@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006564 Icosahedral numbers: a(n) = n*(5*n^2 - 5*n + 2)/2.
+ * A006564 Icosahedral numbers: <code>a(n) = n*(5*n^2 - 5*n + 2)/2</code>.
  * @author Sean A. Irvine
  */
 public class A006564 implements Sequence {

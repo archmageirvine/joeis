@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A136413 a(1)=1. a(n+1) = a(n) + (number of terms of this sequence that are &lt;= (1/n)sum{k=1 to n} a(k)).
+ * A136413 <code>a(1)=1</code>. <code>a(n+1) = a(n) +</code> (number of terms of this sequence that are <code>&lt;=</code> (1/n)sum{k=1 to <code>n}</code> a(k)).
  * @author Sean A. Irvine
  */
 public class A136413 implements Sequence {

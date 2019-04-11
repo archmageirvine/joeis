@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115042 Positions of 1's in A094405, "a(n) = sum of all previous terms modulo n, a(1)=1".
+ * A115042 Positions of 1's in A094405, "a(n) = sum of all previous terms modulo <code>n,</code> a(1)=1".
  * @author Georg Fischer
  */
 public class A115042 extends FiniteSequence {

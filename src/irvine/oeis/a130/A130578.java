@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130578 Number of different possible rows (or columns) in an n X n crossword puzzle.
+ * A130578 Number of different possible rows (or columns) in <code>an n</code> X n crossword puzzle.
  * @author Sean A. Irvine
  */
 public class A130578 extends LinearRecurrence {

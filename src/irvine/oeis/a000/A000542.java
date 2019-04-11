@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000542 Sum of 8th powers: 1^8 + 2^8 + ... + n^8.
+ * A000542 Sum of 8th powers: <code>1^8 + 2^8 + </code>... <code>+ n^8</code>.
  * @author Sean A. Irvine
  */
 public class A000542 implements Sequence {

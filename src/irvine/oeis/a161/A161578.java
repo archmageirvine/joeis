@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161578 a(1)=2. a(n) = the smallest integer &gt; a(n-1) such that d(a(n)) &lt;= d(n), where d(n) = the number of divisors of n.
+ * A161578 <code>a(1)=2</code>. <code>a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> such that d(a(n)) <code>&lt;=</code> d(n), where d(n) = the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A161578 implements Sequence {

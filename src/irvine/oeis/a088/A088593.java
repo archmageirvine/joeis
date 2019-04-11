@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088593 a(0)=18; a(n+1) = largest odd factor of 3*a(n)+1; stop when a(n)=1.
+ * A088593 <code>a(0)=18</code>; <code>a(n+1) =</code> largest odd factor of <code>3*a(n)+1</code>; stop when <code>a(n)=1</code>.
  * @author Georg Fischer
  */
 public class A088593 extends FiniteSequence {

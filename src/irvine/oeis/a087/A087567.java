@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087567 a(n) = (1/5)*Sum_{k=0..n} binomial(n,k)*Fibonacci(k)*5^k.
+ * A087567 <code>a(n) =</code> (1/5)*Sum_{k=0..n} binomial(n,k)*Fibonacci(k)*5^k.
  * @author Sean A. Irvine
  */
 public class A087567 extends LinearRecurrence {

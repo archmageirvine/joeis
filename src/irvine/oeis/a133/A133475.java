@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133475 Integers n such that n^3 + n^2 - 9*n + 16 is a square.
+ * A133475 Integers n such that <code>n^3 + n^2 - 9*n + 16</code> is a square.
  * @author Georg Fischer
  */
 public class A133475 extends FiniteSequence {

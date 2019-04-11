@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098230 75-gonal numbers: n(73n-71)/2.
+ * A098230 75-gonal numbers: <code>n(73n-71)/2</code>.
  * @author Sean A. Irvine
  */
 public class A098230 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131640 First differences are periodic: 50, 50, 75, 50, 50, 75, ...
+ * A131640 First differences are periodic: <code>50, 50, 75, 50, 50, 75, </code>...
  * @author Sean A. Irvine
  */
 public class A131640 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010368 Number of points of L1 norm 2n in Hamming code version of E_8 lattice.
+ * A010368 Number of points of L1 norm <code>2n</code> in Hamming code version of E_8 lattice.
  * @author Sean A. Irvine
  */
 public class A010368 implements Sequence {

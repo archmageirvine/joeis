@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006007 4-dimensional analog of centered polygonal numbers: a(n) = n(n+1)*(n^2+n+4)/12.
+ * A006007 4-dimensional analog of centered polygonal numbers: <code>a(n) = n(n+1)*(n^2+n+4)/12</code>.
  * @author Sean A. Irvine
  */
 public class A006007 implements Sequence {

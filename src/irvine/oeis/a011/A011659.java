@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A011659 A binary m-sequence: expansion of reciprocal of x^4+x+1.
+ * A011659 A binary m-sequence: expansion of reciprocal of <code>x^4+x+1</code>.
  * @author Sean A. Irvine
  */
 public class A011659 extends PeriodicSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097178 Expansion of (1+10x-101x^2-900x^3)/((1-100x^2)(1-101x^2)).
+ * A097178 Expansion of <code>(1+10x-101x^2-900x^3)/((1-100x^2)(1-101x^2))</code>.
  * @author Sean A. Irvine
  */
 public class A097178 extends LinearRecurrence {

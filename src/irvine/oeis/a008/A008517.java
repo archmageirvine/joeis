@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008517 Second-order Eulerian triangle T(n,k), 1 &lt;= k &lt;= n.
+ * A008517 Second-order Eulerian triangle T(n,k), <code>1 &lt;=</code> k <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A008517 implements Sequence {

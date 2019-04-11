@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152730 a(n) + a(n+1) + a(n+2) = n^5, with a(1) = a(2) = 0.
+ * A152730 <code>a(n) + a(n+1) + a(n+2) = n^5,</code> with <code>a(1) = a(2) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A152730 extends LinearRecurrence {

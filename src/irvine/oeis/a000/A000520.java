@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000520 Nearest integer to log_10 (n).
+ * A000520 Nearest integer to log_10 <code>(n)</code>.
  * @author Sean A. Irvine
  */
 public class A000520 implements Sequence {

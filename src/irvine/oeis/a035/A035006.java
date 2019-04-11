@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035006 Number of possible rook moves on an n X n chessboard.
+ * A035006 Number of possible rook moves on <code>an n</code> X n chessboard.
  * @author Sean A. Irvine
  */
 public class A035006 extends LinearRecurrence {

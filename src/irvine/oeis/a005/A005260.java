@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005260 a(n) = Sum_{k = 0..n} binomial(n,k)^4.
+ * A005260 <code>a(n) =</code> Sum_{k <code>= 0</code>..n} binomial(n,k)^4.
  * @author Sean A. Irvine
  */
 public class A005260 implements Sequence {

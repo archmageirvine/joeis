@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179294 Decimal expansion of radius of inscribed sphere about a regular icosahedron with edge = 1.
+ * A179294 Decimal expansion of radius of inscribed sphere about a regular icosahedron with edge <code>= 1</code>.
  * @author Sean A. Irvine
  */
 public class A179294 extends DecimalExpansionSequence {

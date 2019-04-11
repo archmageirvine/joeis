@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228007 The largest n-digit number where first k digits are divisible by k^2 for k = 1..n.
+ * A228007 The largest n-digit number where first k digits are divisible by k^2 for k <code>= 1</code>..n.
  * @author Georg Fischer
  */
 public class A228007 extends FiniteSequence {

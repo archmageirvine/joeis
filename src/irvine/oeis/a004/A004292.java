@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004292 Expansion of (1+x)^2/(1-18*x+x^2).
+ * A004292 Expansion of <code>(1+x)^2/(1-18*x+x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A004292 implements Sequence {

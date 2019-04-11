@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210527 a(n) = 9*n^2 + 39*n + 83.
+ * A210527 <code>a(n) = 9*n^2 + 39*n + 83</code>.
  * @author Sean A. Irvine
  */
 public class A210527 extends LinearRecurrence {

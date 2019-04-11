@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A139285 Smallest nontrivial number m that when expressed in base n and then interpreted in base 10, is a multiple of the original number.
+ * A139285 Smallest nontrivial number m that when expressed in base n and then interpreted in base <code>10,</code> is a multiple of the original number.
  * @author Georg Fischer
  */
 public class A139285 extends FiniteSequence {

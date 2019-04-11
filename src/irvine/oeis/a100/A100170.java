@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100170 Structured pentagonal hexacontahedral numbers (vertex structure 10).
+ * A100170 Structured pentagonal hexacontahedral numbers (vertex structure <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A100170 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126651 A 7 x 7 magic square.
+ * A126651 A <code>7 x 7</code> magic square.
  * @author Georg Fischer
  */
 public class A126651 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A094153 a(n) is least prime p such that 7 is the n-th term in the Euclid-Mullin sequence starting at p, or 0 if no such prime p exists.
+ * A094153 <code>a(n)</code> is least prime p such that 7 is the n-th term in the Euclid-Mullin sequence starting at p, or 0 if no such prime p exists.
  * @author Sean A. Irvine
  */
 public class A094153 implements Sequence {

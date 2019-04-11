@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014224 Numbers n such that 3^n - 2 is prime.
+ * A014224 Numbers n such that <code>3^n - 2</code> is prime.
  * @author Sean A. Irvine
  */
 public class A014224 implements Sequence {

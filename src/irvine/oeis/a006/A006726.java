@@ -4,7 +4,7 @@ import irvine.math.Polyomino;
 import irvine.math.z.Z;
 
 /**
- * A006726 Number of n-celled polygons with perimeter 2n on square lattice.
+ * A006726 Number of n-celled polygons with perimeter <code>2n</code> on square lattice.
  * @author Sean A. Irvine
  */
 public class A006726 extends A006724 {

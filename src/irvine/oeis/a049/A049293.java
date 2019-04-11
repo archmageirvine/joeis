@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049293 Number of subgroups of index 3 in fundamental group of a closed surface of characteristic -n.
+ * A049293 Number of subgroups of index 3 in fundamental group of a closed surface of characteristic <code>-n</code>.
  * @author Sean A. Irvine
  */
 public class A049293 extends LinearRecurrence {

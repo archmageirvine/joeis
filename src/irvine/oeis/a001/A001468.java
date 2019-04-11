@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A001468 There are a(n) 2's between successive 1's.
+ * A001468 There are <code>a(n)</code> 2's between successive 1's.
  * @author Sean A. Irvine
  */
 public class A001468 implements Sequence {

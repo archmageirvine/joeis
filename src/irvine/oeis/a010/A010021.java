@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010021 a(0) = 1, a(n) = 32*n^2 + 2 for n&gt;0.
+ * A010021 <code>a(0) = 1, a(n) = 32*n^2 + 2</code> for <code>n&gt;0</code>.
  * @author Sean A. Irvine
  */
 public class A010021 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a010.A010785;
 
 /**
- * A014181 Numbers &gt; 9 with all digits the same.
+ * A014181 Numbers <code>&gt; 9</code> with all digits the same.
  * @author Sean A. Irvine
  */
 public class A014181 extends SkipSequence {

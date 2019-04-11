@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094361 Pair-reversal of 1,4,4,16,16...
+ * A094361 Pair-reversal of <code>1,4,4,16,16</code>...
  * @author Sean A. Irvine
  */
 public class A094361 extends LinearRecurrence {

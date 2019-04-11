@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007732 Period of decimal representation of 1/n.
+ * A007732 Period of decimal representation of <code>1/n</code>.
  * @author Sean A. Irvine
  */
 public class A007732 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106318 Bhaskara twins: n such that 2*n^2 = X^3 and 2*n^3 = Y^2.
+ * A106318 Bhaskara twins: n such that <code>2*n^2 =</code> X^3 and <code>2*n^3 =</code> Y^2.
  * @author Sean A. Irvine
  */
 public class A106318 extends LinearRecurrence {

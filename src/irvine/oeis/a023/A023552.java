@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023552 Convolution of natural numbers &gt;= 3 and Fibonacci numbers.
+ * A023552 Convolution of natural numbers <code>&gt;= 3</code> and Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A023552 extends LinearRecurrence {

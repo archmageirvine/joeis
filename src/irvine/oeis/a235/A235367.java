@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235367 Sum of positive even numbers up to n^2.
+ * A235367 Sum of positive even numbers up to <code>n^2</code>.
  * @author Sean A. Irvine
  */
 public class A235367 extends LinearRecurrence {

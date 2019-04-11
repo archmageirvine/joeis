@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A173490 Even abundant numbers (even numbers n whose sum of divisors exceeds 2n).
+ * A173490 Even abundant numbers (even numbers n whose sum of divisors exceeds <code>2n)</code>.
  * @author Sean A. Irvine
  */
 public class A173490 implements Sequence {

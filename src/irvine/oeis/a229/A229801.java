@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229801 3 x 3 alphamagic square, in English, by rows.
+ * A229801 <code>3 x 3</code> alphamagic square, in English, by rows.
  * @author Georg Fischer
  */
 public class A229801 extends FiniteSequence {

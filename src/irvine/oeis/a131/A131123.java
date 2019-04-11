@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A131123 McKay-Thompson series of class 8A for the Monster group with a(0) = 8.
+ * A131123 McKay-Thompson series of class 8A for the Monster group with <code>a(0) = 8</code>.
  * @author Sean A. Irvine
  */
 public class A131123 implements Sequence {

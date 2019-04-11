@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002021 Pile of coconuts problem: (n-1)(n^n - 1), n even; n^n - n + 1, n odd.
+ * A002021 Pile of coconuts problem: <code>(n-1)(n^n - 1), n</code> even; <code>n^n - n + 1, n</code> odd.
  * @author Sean A. Irvine
  */
 public class A002021 implements Sequence {

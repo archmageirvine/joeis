@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014785 Sum [ k^2/n ], k=0..n.
+ * A014785 Sum [ k^2/n <code>],</code> k=0..n.
  * @author Sean A. Irvine
  */
 public class A014785 implements Sequence {

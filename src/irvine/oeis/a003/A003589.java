@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A003589 a(n) has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
+ * A003589 <code>a(n)</code> has the property that the sequence b(n) = number of 2's between successive 3's is the same as the original sequence.
  * @author Sean A. Irvine
  */
 public class A003589 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152750 Eight times hexagonal numbers: 8*n*(2*n-1).
+ * A152750 Eight times hexagonal numbers: <code>8*n*(2*n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A152750 extends LinearRecurrence {

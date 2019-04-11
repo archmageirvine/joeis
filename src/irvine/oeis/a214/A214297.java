@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214297 a(0)=-1, a(1)=0, a(2)=-3; thereafter a(n+2) - 2*a(n+1) + a(n) has period 4: repeat -4, 8, -4, 2.
+ * A214297 <code>a(0)=-1, a(1)=0, a(2)=-3</code>; thereafter <code>a(n+2) - 2*a(n+1) + a(n)</code> has period 4: repeat <code>-4, 8, -4, 2</code>.
  * @author Sean A. Irvine
  */
 public class A214297 extends LinearRecurrence {

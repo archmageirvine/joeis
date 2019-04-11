@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A025169 a(n) = 2*F(2*n+2), where F(n)=A000045(n) (the Fibonacci sequence).
+ * A025169 <code>a(n) =</code> 2*F(2*n+2), where F(n)=A000045(n) (the Fibonacci sequence).
  * @author Sean A. Irvine
  */
 public class A025169 extends LinearRecurrence {

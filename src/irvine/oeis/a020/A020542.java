@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020542 a(n) = 5th Chebyshev polynomial (second kind) evaluated at 2^n.
+ * A020542 <code>a(n) =</code> 5th Chebyshev polynomial (second kind) evaluated at <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A020542 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a106.A106400;
 
 /**
- * A005599 Running sum of every third term in the {+1,-1}-version of Thue-Morse sequence A010060.
+ * A005599 Running sum of every third term in the <code>{+1</code>,-1}-version of Thue-Morse sequence A010060.
  * @author Sean A. Irvine
  */
 public class A005599 extends A106400 {

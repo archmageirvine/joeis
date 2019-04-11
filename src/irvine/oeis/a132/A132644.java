@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132644 X-values of solutions to the equation X*(X + 1) - 13*Y^2 = 0.
+ * A132644 X-values of solutions to the equation X*(X <code>+ 1) -</code> 13*Y^2 <code>= 0</code>.
  * @author Sean A. Irvine
  */
 public class A132644 extends LinearRecurrence {

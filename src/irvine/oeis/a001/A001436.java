@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001436 Number of connected graphs with n nodes, n+2 edges.
+ * A001436 Number of connected graphs with n nodes, <code>n+2</code> edges.
  * @author Sean A. Irvine
  */
 public class A001436 extends A001435 {

@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272058 Start with all terms set to 0. Then add n to the next n+3 terms for n=0,1,2,... . 
+ * A272058 Start with all terms set to 0. Then add n to the next <code>n+3</code> terms for <code>n=0,1,2,</code>... .
  * @author Georg Fischer
  */
 public class A272058 extends LinearRecurrence {

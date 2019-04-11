@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078943 a(1)=1; a(n+1) is either a(n)-n or a(n)+n, where we choose the smallest one which is a positive integer that's not among the values a(1), ..., a(n).
+ * A078943 <code>a(1)=1</code>; <code>a(n+1)</code> is either <code>a(n)-n</code> or <code>a(n)+n,</code> where we choose the smallest one which is a positive integer that's not among the values <code>a(1), </code>..., <code>a(n)</code>.
  * @author Georg Fischer
  */
 public class A078943 extends FiniteSequence {

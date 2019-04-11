@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130213 Order of modular group of degree 3^(n-1)+1.
+ * A130213 Order of modular group of degree <code>3^(n-1)+1</code>.
  * @author Sean A. Irvine
  */
 public class A130213 extends LinearRecurrence {

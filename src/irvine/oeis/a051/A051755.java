@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051755 Consider problem of placing N queens on an n X n board so that each queen attacks precisely 2 others. Sequence gives maximal number of queens. 
+ * A051755 Consider problem of placing N queens on <code>an n</code> X n board so that each queen attacks precisely 2 others. Sequence gives maximal number of queens.
  * @author Georg Fischer
  */
 public class A051755 extends LinearRecurrence {

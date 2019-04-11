@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010028 Triangle read by rows: T(n,k) = one-half the number of permutations of length n with exactly n-k rising or falling successions, for n &gt;= 1, 1 &lt;= k &lt;= n. T(1,1) = 1 by convention.
+ * A010028 Triangle read by rows: T(n,k) = one-half the number of permutations of length n with exactly n-k rising or falling successions, for <code>n &gt;= 1, 1 &lt;=</code> k <code>&lt;= n</code>. T(1,1) <code>= 1</code> by convention.
  * @author Sean A. Irvine
  */
 public class A010028 extends MemoryFunction1<Polynomial<Z>> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135472 Shortest and lexicographically earliest string of decimal digits with property that when made into cycle every pair of digits from 0,0 to 9,9 can be seen exactly once.
+ * A135472 Shortest and lexicographically earliest string of decimal digits with property that when made into cycle every pair of digits from <code>0,0</code> to <code>9,9</code> can be seen exactly once.
  * @author Georg Fischer
  */
 public class A135472 extends FiniteSequence {

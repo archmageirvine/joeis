@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052386 Number of integers from 1 to 10^n-1 that lack 0 as a digit.
+ * A052386 Number of integers from 1 to <code>10^n-1</code> that lack 0 as a digit.
  * @author Sean A. Irvine
  */
 public class A052386 extends LinearRecurrence {

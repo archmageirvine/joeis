@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000400 Powers of 6: a(n) = 6^n.
+ * A000400 Powers of 6: <code>a(n) = 6^n</code>.
  * @author Sean A. Irvine
  */
 public class A000400 implements Sequence {

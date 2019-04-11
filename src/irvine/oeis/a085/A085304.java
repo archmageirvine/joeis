@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A085304 Least number of 4th powers required to represent n!.
+ * A085304 Least number of 4th powers required to represent <code>n!</code>.
  * @author Sean A. Irvine
  */
 public class A085304 implements Sequence {

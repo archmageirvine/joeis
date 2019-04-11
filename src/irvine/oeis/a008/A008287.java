@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008287 Triangle of quadrinomial coefficients, row n is the sequence of coefficients of (1 + x + x^2 + x^3)^n.
+ * A008287 Triangle of quadrinomial coefficients, row n is the sequence of coefficients of <code>(1 + x + x^2 + x^3)^n</code>.
  * @author Sean A. Irvine
  */
 public class A008287 implements Sequence {

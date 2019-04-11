@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.math.z.Z;
 
 /**
- * A011918 a(n) = A011916(n) + A011922(n) - 1.
+ * A011918 <code>a(n) =</code> A011916(n) + A011922(n) <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A011918 extends A011916 {

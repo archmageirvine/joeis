@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.a001.A001212;
 
 /**
- * A005342 a(n) = solution to the postage stamp problem with n denominations and 7 stamps.
+ * A005342 <code>a(n) =</code> solution to the postage stamp problem with n denominations and 7 stamps.
  * @author Sean A. Irvine
  */
 public class A005342 extends A001212 {

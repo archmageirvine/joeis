@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001498 Triangle a(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) of coefficients of Bessel polynomials y_n(x) (exponents in increasing order).
+ * A001498 Triangle <code>a(n</code>,k) <code>(n &gt;= 0, 0 &lt;=</code> k <code>&lt;= n)</code> of coefficients of Bessel polynomials y_n(x) (exponents in increasing order).
  * @author Sean A. Irvine
  */
 public class A001498 implements Sequence {

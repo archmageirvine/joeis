@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A040883 Continued fraction for sqrt(914).
+ * A040883 Continued fraction for <code>sqrt(914)</code>.
  * @author Georg Fischer
  */
 public class A040883 extends PrependSequence {

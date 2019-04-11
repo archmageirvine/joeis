@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104682 n^14+n^13+n^12+n^11+n^10+n^9+n^8+n^7+n^6+n^5+n^4+n^3+n^2+n^1+1.
+ * A104682 <code>n^14+n^13+n^12+n^11+n^10+n^9+n^8+n^7+n^6+n^5+n^4+n^3+n^2+n^1+1</code>.
  * @author Sean A. Irvine
  */
 public class A104682 extends LinearRecurrence {

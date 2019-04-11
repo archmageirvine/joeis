@@ -8,7 +8,7 @@ import irvine.oeis.a054.A054994;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A018782 Smallest k such that circle x^2 + y^2 = k passes through exactly 4n integer points.
+ * A018782 Smallest k such that circle <code>x^2 +</code> y^2 = k passes through exactly <code>4n</code> integer points.
  * @author Sean A. Irvine
  */
 public class A018782 extends A054994 {

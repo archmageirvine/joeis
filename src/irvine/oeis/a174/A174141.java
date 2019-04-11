@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174141 Numbers congruent to k mod 25, where 0 &lt;= k &lt;= 9.
+ * A174141 Numbers congruent to k <code>mod 25,</code> where <code>0 &lt;=</code> k <code>&lt;= 9</code>.
  * @author Sean A. Irvine
  */
 public class A174141 extends LinearRecurrence {

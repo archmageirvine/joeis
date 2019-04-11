@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001336;
 
 /**
- * A000765 Number of n-step self-avoiding walks on f.c.c. lattice ending at point with x = 0.
+ * A000765 Number of n-step self-avoiding walks on f.c.c. lattice ending at point with <code>x = 0</code>.
  * @author Sean A. Irvine
  */
 public class A000765 extends A001336 {

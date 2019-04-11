@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178147 Sum of squares d^2 of distinct divisors of n, d in {2, 3, 5}.
+ * A178147 Sum of squares d^2 of distinct divisors of <code>n,</code> d in <code>{2, 3, 5}</code>.
  * @author Sean A. Irvine
  */
 public class A178147 extends LinearRecurrence {

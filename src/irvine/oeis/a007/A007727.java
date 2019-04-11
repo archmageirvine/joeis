@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007727 Number of 2n-bead black-white strings with n black beads and fundamental period 2n.
+ * A007727 Number of 2n-bead black-white strings with n black beads and fundamental period <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A007727 implements Sequence {

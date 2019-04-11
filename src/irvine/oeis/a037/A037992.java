@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050376;
 
 /**
- * A037992 Smallest number with 2^n divisors.
+ * A037992 Smallest number with <code>2^n</code> divisors.
  * @author Sean A. Irvine
  */
 public class A037992 extends A050376 {

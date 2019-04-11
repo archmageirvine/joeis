@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A002659 a(n) = 2*sigma(n) - 1.
+ * A002659 <code>a(n) =</code> 2*sigma(n) <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A002659 extends A000203 {

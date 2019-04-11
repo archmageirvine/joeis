@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006924 Number of connected trivalent graphs with 2n nodes and girth exactly 4.
+ * A006924 Number of connected trivalent graphs with <code>2n</code> nodes and girth exactly 4.
  * @author Sean A. Irvine
  */
 public class A006924 implements Sequence, GraphProcessor {

@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316724 Generalized 26-gonal (or icosihexagonal) numbers: m*(12*m - 11) with m = 0, +1, -1, +2, -2, +3, -3, ... 
+ * A316724 Generalized 26-gonal (or icosihexagonal) numbers: m*(12*m <code>- 11)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, </code>...
  * @author Georg Fischer
  */
 public class A316724 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045623 Number of 1's in all compositions of n+1.
+ * A045623 Number of 1's in all compositions of <code>n+1</code>.
  * @author Georg Fischer
  */
 public class A045623 extends LinearRecurrence {

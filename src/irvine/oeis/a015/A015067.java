@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A015067 Weight distribution of [50,28,8] code associated with Hoffman-Singleton and Higman-Sims graphs.
+ * A015067 Weight distribution of <code>[50,28,8]</code> code associated with Hoffman-Singleton and Higman-Sims graphs.
  * @author Sean A. Irvine
  */
 public class A015067 extends FiniteSequence {

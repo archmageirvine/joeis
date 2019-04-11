@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055646 Integers in base 15 with each base 15 digit represented by 2 decimal digits. 
+ * A055646 Integers in base 15 with each base 15 digit represented by 2 decimal digits.
  * Integers in base 15 with each base 15 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

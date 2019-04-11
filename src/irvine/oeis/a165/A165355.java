@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165355 a(n) = 3n + 1 if n is even, or a(n) = (3n + 1)/2 if n is odd.
+ * A165355 <code>a(n) = 3n + 1</code> if n is even, or <code>a(n) = (3n + 1)/2</code> if n is odd.
  * @author Sean A. Irvine
  */
 public class A165355 extends LinearRecurrence {

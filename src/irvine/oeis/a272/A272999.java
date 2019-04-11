@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A272999 Numbers k such that (11*10^k + 49)/3 is prime.
+ * A272999 Numbers k such that (11*10^k <code>+ 49)/3</code> is prime.
  * @author Sean A. Irvine
  */
 public class A272999 implements Sequence {

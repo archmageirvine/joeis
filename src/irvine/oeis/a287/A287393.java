@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287393 Domination number for knight's graph on a 2 X n board.
+ * A287393 Domination number for knight's graph on <code>a 2</code> X n board.
  * @author Sean A. Irvine
  */
 public class A287393 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274337 Numbers n such that 2^n is not the sum of 5 positive cubes.
+ * A274337 Numbers n such that <code>2^n</code> is not the sum of 5 positive cubes.
  * @author Georg Fischer
  */
 public class A274337 extends FiniteSequence {

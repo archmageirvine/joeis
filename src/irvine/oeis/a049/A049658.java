@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049658 a(n) = (F(8*n+5) - 2)/3, where F=A000045 (the Fibonacci sequence).
+ * A049658 <code>a(n) =</code> (F(8*n+5) <code>- 2)/3,</code> where F=A000045 (the Fibonacci sequence).
  * @author Sean A. Irvine
  */
 public class A049658 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006004 a(n) = C(n+2,3) + C(n,3) + C(n-1,3).
+ * A006004 <code>a(n) =</code> C(n+2,3) + C(n,3) + C(n-1,3).
  * @author Sean A. Irvine
  */
 public class A006004 implements Sequence {

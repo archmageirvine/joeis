@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A173225 a(n) is the smallest nonnegative m such that average digit of m^2 is n.
+ * A173225 <code>a(n)</code> is the smallest nonnegative m such that average digit of m^2 is n.
  * @author Georg Fischer
  */
 public class A173225 extends FiniteSequence {

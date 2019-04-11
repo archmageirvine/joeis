@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006963 Number of planar embedded labeled trees with n nodes: (2n-3)!/(n-1)! for n &gt;= 2, a(1) = 1.
+ * A006963 Number of planar embedded labeled trees with n nodes: <code>(2n-3)!/(n-1)!</code> for <code>n &gt;= 2, a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A006963 implements Sequence {

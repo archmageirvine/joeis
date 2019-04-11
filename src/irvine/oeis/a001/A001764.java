@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001764 a(n) = binomial(3n,n)/(2n+1) (enumerates ternary trees and also noncrossing trees).
+ * A001764 <code>a(n) =</code> binomial(3n,n)/(2n+1) (enumerates ternary trees and also noncrossing trees).
  * @author Sean A. Irvine
  */
 public class A001764 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191759 Least significant decimal digit of (2n-1)^2.
+ * A191759 Least significant decimal digit of <code>(2n-1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A191759 extends LinearRecurrence {

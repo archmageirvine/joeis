@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181343 a(n) = (35*n^4 - 35*n^3 + 55*n^2 - 25*n + 6)/6.
+ * A181343 <code>a(n) = (35*n^4 - 35*n^3 + 55*n^2 - 25*n + 6)/6</code>.
  * @author Sean A. Irvine
  */
 public class A181343 extends LinearRecurrence {

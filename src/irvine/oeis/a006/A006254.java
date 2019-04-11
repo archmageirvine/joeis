@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A006254 Numbers n such that 2n-1 is prime.
+ * A006254 Numbers n such that <code>2n-1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A006254 extends A000040 {

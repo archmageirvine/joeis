@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000804 Permanent of a certain cyclic n X n (0,1) matrix.
+ * A000804 Permanent of a certain cyclic n X <code>n (0,1)</code> matrix.
  * @author Sean A. Irvine
  */
 public class A000804 implements Sequence {

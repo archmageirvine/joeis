@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001060;
 
 /**
- * A013655 a(n) = F(n+1) + L(n), where F(n) and L(n) are Fibonacci and Lucas numbers, respectively.
+ * A013655 <code>a(n) =</code> F(n+1) + L(n), where F(n) and L(n) are Fibonacci and Lucas numbers, respectively.
  * @author Sean A. Irvine
  */
 public class A013655 extends PrependSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015650 Number of ordered 5-tuples of integers from [ 1,n ] with no global factor.
+ * A015650 Number of ordered 5-tuples of integers from <code>[ 1,n ]</code> with no global factor.
  * @author Sean A. Irvine
  */
 public class A015650 implements Sequence {

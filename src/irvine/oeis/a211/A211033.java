@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211033 Number of 2 X 2 matrices having all elements in {0,1,...,n} and determinant = 0 (mod 3).
+ * A211033 Number of 2 X 2 matrices having all elements in <code>{0,1,</code>...,n} and determinant <code>= 0 (mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A211033 extends LinearRecurrence {

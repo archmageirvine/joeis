@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098608 100^n. 
+ * A098608 <code>100^n</code>.
  * @author Georg Fischer
  */
 public class A098608 extends LinearRecurrence {

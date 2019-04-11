@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007427 Moebius transform applied twice to sequence 1,0,0,0,....
+ * A007427 Moebius transform applied twice to sequence <code>1,0,0,0,</code>....
  * @author Sean A. Irvine
  */
 public class A007427 implements Sequence {

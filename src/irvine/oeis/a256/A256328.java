@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256328 Number of partitions of 6n into exactly 4 parts.
+ * A256328 Number of partitions of <code>6n</code> into exactly 4 parts.
  * @author Sean A. Irvine
  */
 public class A256328 extends LinearRecurrence {

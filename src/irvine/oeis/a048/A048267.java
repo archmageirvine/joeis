@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048267 Largest integer requiring n fifth powers to sum to it, starting with n=28.
+ * A048267 Largest integer requiring n fifth powers to sum to it, starting with <code>n=28</code>.
  * @author Georg Fischer
  */
 public class A048267 extends FiniteSequence {

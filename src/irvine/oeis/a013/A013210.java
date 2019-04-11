@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013210 Expansion of e.g.f.: sin(log(x+1) - sin(x)) = -1/2!*x^2+3/3!*x^3-6/4!*x^4+23/5!*x^5...
+ * A013210 Expansion of e.g.f.: sin(log(x+1) - sin(x)) <code>= -1/2!*x^2+3/3!*x^3-6/4!*x^4+23/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A013210 implements Sequence {

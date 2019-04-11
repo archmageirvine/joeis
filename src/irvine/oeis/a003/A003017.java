@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003017 Expansion of 1/(1 - x*exp(x) + x^2*exp(2*x) - x^3*exp(3*x)).
+ * A003017 Expansion of <code>1/(1 -</code> x*exp(x) + x^2*exp(2*x) - x^3*exp(3*x)).
  * @author Sean A. Irvine
  */
 public class A003017 implements Sequence {

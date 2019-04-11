@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009117 Expansion of e.g.f.: 1/2 + exp(-4*x)/2.
+ * A009117 Expansion of e.g.f.: <code>1/2 +</code> exp(-4*x)/2.
  * @author Sean A. Irvine
  */
 public class A009117 implements Sequence {

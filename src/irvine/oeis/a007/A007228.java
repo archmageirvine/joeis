@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007228 a(n) = (3/(n+1)) * C(4n,n).
+ * A007228 <code>a(n) = (3/(n+1)) *</code> C(4n,n).
  * @author Sean A. Irvine
  */
 public class A007228 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172117 a(n) = n*(n+1)*(20*n-17)/6.
+ * A172117 <code>a(n) = n*(n+1)*(20*n-17)/6</code>.
  * @author Sean A. Irvine
  */
 public class A172117 extends LinearRecurrence {

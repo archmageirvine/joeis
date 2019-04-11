@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144873 If n mod 8 = 0 or n mod 10 = 0 then floor(n^2/4)+n otherwise floor(n^2/4)+n-1.
+ * A144873 If <code>n mod 8 = 0</code> or <code>n mod 10 = 0</code> then <code>floor(n^2/4)+n</code> otherwise <code>floor(n^2/4)+n-1</code>.
  * @author Sean A. Irvine
  */
 public class A144873 extends LinearRecurrence {

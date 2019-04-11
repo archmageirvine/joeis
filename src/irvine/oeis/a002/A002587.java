@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002587 Largest prime factor of 2^n + 1.
+ * A002587 Largest prime factor of <code>2^n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A002587 implements Sequence {

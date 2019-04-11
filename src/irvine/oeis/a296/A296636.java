@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296636 Sequences n*(n+1)*(6*n+1)/2 and n*(n+1)*(7*n+1)/2 interleaved. 
+ * A296636 Sequences <code>n*(n+1)*(6*n+1)/2</code> and <code>n*(n+1)*(7*n+1)/2</code> interleaved.
  * @author Georg Fischer
  */
 public class A296636 extends LinearRecurrence {

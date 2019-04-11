@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056116 a(n) = 121*12^(n-2), a(0)=1, a(1)=10. 
+ * A056116 <code>a(n) = 121*12^(n-2), a(0)=1, a(1)=10</code>.
  * @author Georg Fischer
  */
 public class A056116 extends LinearRecurrence {

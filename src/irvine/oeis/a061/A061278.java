@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061278 a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3) with a(1) = 1 and a(k) = 0 if k &lt;= 0.
+ * A061278 <code>a(n) = 5*a(n-1) - 5*a(n-2) + a(n-3)</code> with <code>a(1) = 1</code> and a(k) <code>= 0</code> if k <code>&lt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A061278 extends LinearRecurrence {

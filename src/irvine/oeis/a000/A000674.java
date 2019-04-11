@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000674 Boustrophedon transform of 1,2,2,2,2,...
+ * A000674 Boustrophedon transform of <code>1,2,2,2,2,</code>...
  * @author Sean A. Irvine
  */
 public class A000674 implements Sequence {

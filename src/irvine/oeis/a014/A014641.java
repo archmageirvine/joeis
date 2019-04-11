@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014641 Odd octagonal numbers: (2n+1)(6n+1).
+ * A014641 Odd octagonal numbers: <code>(2n+1)(6n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A014641 implements Sequence {

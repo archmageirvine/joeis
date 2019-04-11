@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032529 All the primes inside the record 3 X 3 matrix for the Gordon Lee problem: this is [ 113, 754, 937 ].
+ * A032529 All the primes inside the record 3 X 3 matrix for the Gordon Lee problem: this is <code>[ 113, 754, 937 ]</code>.
  * @author Georg Fischer
  */
 public class A032529 extends FiniteSequence {

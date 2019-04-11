@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014766 3n shuffle group does not accomplish a perfect shuffle.
+ * A014766 <code>3n</code> shuffle group does not accomplish a perfect shuffle.
  * @author Sean A. Irvine
  */
 public class A014766 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209409 Number of subsets of {1,...,n} containing {a,a+2,a+4} for some a.
+ * A209409 Number of subsets of <code>{1,</code>...,n} containing <code>{a,a+2,a+4}</code> for some a.
  * @author Sean A. Irvine
  */
 public class A209409 extends LinearRecurrence {

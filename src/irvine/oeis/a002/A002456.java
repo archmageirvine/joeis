@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a241.A241171;
 
 /**
- * A002456 Joffe's central differences of 0, A241171(n,n-1).
+ * A002456 Joffe's central differences of <code>0,</code> A241171(n,n-1).
  * @author Sean A. Irvine
  */
 public class A002456 extends A241171 {

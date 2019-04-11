@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000689 Final decimal digit of 2^n.
+ * A000689 Final decimal digit of <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A000689 implements Sequence {

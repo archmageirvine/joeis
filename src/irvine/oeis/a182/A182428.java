@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182428 a(n) = 2n(19-n).
+ * A182428 <code>a(n) = 2n(19-n)</code>.
  * @author Sean A. Irvine
  */
 public class A182428 extends LinearRecurrence {

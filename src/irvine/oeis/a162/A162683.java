@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A162683 a(0)=1. a(n) = the number of terms among (a(0),a(1),...a(n-1)) that either are coprime to n or divide n.
+ * A162683 <code>a(0)=1</code>. <code>a(n) =</code> the number of terms among <code>(a(0),a(1),</code>...a(n-1)) that either are coprime to n or divide n.
  * @author Sean A. Irvine
  */
 public class A162683 implements Sequence {

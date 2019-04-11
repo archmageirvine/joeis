@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001448 a(n) = C(4n,2n) or (4*n)!/((2*n)!*(2*n)!).
+ * A001448 <code>a(n) =</code> C(4n,2n) or <code>(4*n)!/((2*n)!*(2*n)!)</code>.
  * @author Sean A. Irvine
  */
 public class A001448 implements Sequence {

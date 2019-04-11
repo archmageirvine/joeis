@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014899 a(n) = (16^(n+1) - 15*n - 16)/225.
+ * A014899 <code>a(n) = (16^(n+1) - 15*n - 16)/225</code>.
  * @author Sean A. Irvine
  */
 public class A014899 extends LinearRecurrence {

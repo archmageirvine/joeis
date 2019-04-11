@@ -15,6 +15,7 @@ import irvine.util.io.IOUtils;
 
 /**
  * Check and update if necessary the name field in the comments of each sequence implementation.
+ * Includes some smarts to try and wrap pieces that look like formulas in code tags.
  * @author Sean A. Irvine
  */
 public final class Names {
@@ -24,7 +25,16 @@ public final class Names {
   private Names() { }
 
   private static String protect(final String name) {
-    final String s = name.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace("*/", "* /").replaceAll("\\s+", " ");
+    // The order of the replacements here is important
+    final String s = name.replace("&", "&amp;")
+      .replaceAll(" (([ 0-9axn^*/(){}\\[\\]<>!=+,-]|floor|mod|sqrt){2,})([ .;,:])", " <code>$1</code>$3")
+      .replace("<", "&lt;")
+      .replace(">", "&gt;")
+      .replaceAll("&lt;(/?code)&gt;", "<$1>")
+      .replaceAll("<code>([0-9]*)</code>", "$1")
+      .replace("*/", "* /")
+      .replaceAll("\\s+", " ")
+      ;
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k < s.length(); ++k) {
       final char c = s.charAt(k);

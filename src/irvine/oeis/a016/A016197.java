@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016197 a(n) = 12^n - 11^n.
+ * A016197 <code>a(n) = 12^n - 11^n</code>.
  * @author Sean A. Irvine
  */
 public class A016197 implements Sequence {

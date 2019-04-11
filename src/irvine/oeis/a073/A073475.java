@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073475 Rearrangement of factorial numbers such that a(k) + a(k+1) - 1 is a prime for all k.
+ * A073475 Rearrangement of factorial numbers such that a(k) + a(k+1) <code>- 1</code> is a prime for all k.
  * @author Georg Fischer
  */
 public class A073475 extends FiniteSequence {

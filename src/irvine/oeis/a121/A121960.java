@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121960 G.f. x*(1+30*x+49*x^2-71*x^3-116*x^4)/((2*x+1) * (4*x^2+2*x-1) * (2*x^2-1)). 
+ * A121960 G.f. <code>x*(1+30*x+49*x^2-71*x^3-116*x^4)/((2*x+1) * (4*x^2+2*x-1) * (2*x^2-1))</code>.
  * @author Georg Fischer
  */
 public class A121960 extends LinearRecurrence {

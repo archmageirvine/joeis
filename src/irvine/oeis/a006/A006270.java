@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006270 Denominators of a continued fraction for (1 + sqrt(5))/2.
+ * A006270 Denominators of a continued fraction for <code>(1 + sqrt(5))/2</code>.
  * @author Sean A. Irvine
  */
 public class A006270 extends A006267 {

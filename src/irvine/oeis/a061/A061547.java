@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061547 Number of 132 and 213-avoiding derangements of {1,2,...,n}.
+ * A061547 Number of 132 and 213-avoiding derangements of <code>{1,2,</code>...,n}.
  * @author Sean A. Irvine
  */
 public class A061547 extends LinearRecurrence {

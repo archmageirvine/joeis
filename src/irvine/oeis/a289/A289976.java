@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289976 p-INVERT of (0,0,1,2,3,5,8,...), the Fibonacci numbers preceded by two zeros, where p(S) = 1 - S - S^2.
+ * A289976 p-INVERT of <code>(0,0,1,2,3,5,8,</code>...), the Fibonacci numbers preceded by two zeros, where p(S) <code>= 1 -</code> S - S^2.
  * @author Sean A. Irvine
  */
 public class A289976 extends LinearRecurrence {

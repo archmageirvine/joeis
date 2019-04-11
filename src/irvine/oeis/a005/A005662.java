@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005662 If n appears then so do 2n+2 and 3n+3.
+ * A005662 If n appears then so do <code>2n+2</code> and <code>3n+3</code>.
  * @author Sean A. Irvine
  */
 public class A005662 implements Sequence {

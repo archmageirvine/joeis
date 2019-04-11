@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140811 a(n) = 6n^2 - 1.
+ * A140811 <code>a(n) = 6n^2 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A140811 extends LinearRecurrence {

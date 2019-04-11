@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143055 The real part of complex sequence: a(n) = a(n-1) + (1+i)*a(n-2).
+ * A143055 The real part of complex sequence: <code>a(n) = a(n-1) +</code> (1+i)*a(n-2).
  * @author Sean A. Irvine
  */
 public class A143055 extends LinearRecurrence {

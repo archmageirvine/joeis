@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A008953 a(n) is the leading digit of the n-th triangular number, n(n+1)/2.
+ * A008953 <code>a(n)</code> is the leading digit of the n-th triangular number, <code>n(n+1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A008953 extends A000217 {

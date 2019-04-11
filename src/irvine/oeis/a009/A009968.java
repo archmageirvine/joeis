@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009968 Powers of 24: a(n) = 24^n.
+ * A009968 Powers of 24: <code>a(n) = 24^n</code>.
  * @author Sean A. Irvine
  */
 public class A009968 implements Sequence {

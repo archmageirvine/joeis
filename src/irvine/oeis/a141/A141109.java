@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141109 Even numbers 2n such that for every prime p in [n,2n-2], 2n-p is also prime.
+ * A141109 Even numbers <code>2n</code> such that for every prime p in <code>[n,2n-2],</code> 2n-p is also prime.
  * @author Georg Fischer
  */
 public class A141109 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212706 a(n) is the difference between numbers of nonnegative multiples of 2*n+1 with even and odd digit sum in base 2*n in interval [0, (2*n)^9).
+ * A212706 <code>a(n)</code> is the difference between numbers of nonnegative multiples of <code>2*n+1</code> with even and odd digit sum in base <code>2*n</code> in interval <code>[0, (2*n)^9)</code>.
  * @author Sean A. Irvine
  */
 public class A212706 extends LinearRecurrence {

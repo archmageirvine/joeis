@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008438 Sum of divisors of 2n + 1.
+ * A008438 Sum of divisors of <code>2n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A008438 extends EulerTransformSequence {

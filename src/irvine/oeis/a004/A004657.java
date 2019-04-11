@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004657 Expansion of g.f.: (1+x^3)*(1+x^4)/((1-x)*(1-x^2)^2*(1-x^4)).
+ * A004657 Expansion of g.f.: <code>(1+x^3)*(1+x^4)/((1-x)*(1-x^2)^2*(1-x^4))</code>.
  * @author Sean A. Irvine
  */
 public class A004657 implements Sequence {

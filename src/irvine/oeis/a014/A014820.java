@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014820 a(n) = (1/3)*(n^2 + 2*n + 3)*(n+1)^2.
+ * A014820 <code>a(n) = (1/3)*(n^2 + 2*n + 3)*(n+1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A014820 implements Sequence {

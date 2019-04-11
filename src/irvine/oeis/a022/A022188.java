@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.a015.A015109;
 
 /**
- * A022188 Triangle of Gaussian binomial coefficients [ n,k ] for q = 24.
+ * A022188 Triangle of Gaussian binomial coefficients <code>[ n</code>,k ] for q <code>= 24</code>.
  * @author Sean A. Irvine
  */
 public class A022188 extends A015109 {

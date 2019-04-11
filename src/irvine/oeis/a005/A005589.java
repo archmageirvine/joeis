@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A005589 Number of letters in the US English name of n, excluding spaces and hyphens.
+ * A005589 Number of letters in the US English name of <code>n,</code> excluding spaces and hyphens.
  * @author Sean A. Irvine
  */
 public class A005589 implements Sequence {

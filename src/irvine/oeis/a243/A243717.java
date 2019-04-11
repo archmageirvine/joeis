@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243717 Number of inequivalent (mod D_4) ways to place 2 nonattacking knights on an n X n board.
+ * A243717 Number of inequivalent <code>(mod</code> D_4) ways to place 2 nonattacking knights on <code>an n</code> X n board.
  * @author Sean A. Irvine
  */
 public class A243717 extends LinearRecurrence {

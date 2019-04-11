@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107662 -n is the discriminant of cubic polynomials irreducible over Zp for primes p represented by only one binary quadratic form.
+ * A107662 <code>-n</code> is the discriminant of cubic polynomials irreducible over Zp for primes p represented by only one binary quadratic form.
  * @author Georg Fischer
  */
 public class A107662 extends FiniteSequence {

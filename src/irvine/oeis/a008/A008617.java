@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008617 Expansion of 1/((1-x^2)(1-x^7)).
+ * A008617 Expansion of <code>1/((1-x^2)(1-x^7))</code>.
  * @author Sean A. Irvine
  */
 public class A008617 implements Sequence {

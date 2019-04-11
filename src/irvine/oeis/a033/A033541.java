@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033541 Number of irreducible exceptional curves of first kind on del Pezzo surface of degree 9-n.
+ * A033541 Number of irreducible exceptional curves of first kind on del Pezzo surface of degree <code>9-n</code>.
  * @author Georg Fischer
  */
 public class A033541 extends FiniteSequence {

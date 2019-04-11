@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015053 Smallest positive integer for which n divides a(n)^6.
+ * A015053 Smallest positive integer for which n divides <code>a(n)^6</code>.
  * @author Sean A. Irvine
  */
 public class A015053 implements Sequence {

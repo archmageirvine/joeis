@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a187.A187272;
 
 /**
- * A007055 Let S denote the palindromes in the language {0,1}*; a(n) = number of words of length n in the language SS.
+ * A007055 Let S denote the palindromes in the language <code>{0,1}*</code>; <code>a(n) =</code> number of words of length n in the language SS.
  * @author Sean A. Irvine
  */
 public class A007055 extends MemorySequence {

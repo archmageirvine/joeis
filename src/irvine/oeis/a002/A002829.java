@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A002829 Number of trivalent (or cubic) labeled graphs with 2n nodes.
+ * A002829 Number of trivalent (or cubic) labeled graphs with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A002829 implements Sequence {

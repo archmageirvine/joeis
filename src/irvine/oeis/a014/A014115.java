@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014115 Order of a certain Clifford group in dimension 2^n (the automorphism group of the Barnes-Wall lattice for n != 3).
+ * A014115 Order of a certain Clifford group in dimension <code>2^n</code> (the automorphism group of the Barnes-Wall lattice for <code>n != 3)</code>.
  * @author Sean A. Irvine
  */
 public class A014115 implements Sequence {

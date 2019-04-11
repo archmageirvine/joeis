@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145209 Numbers x such that (x+67)^3-x^3 is a square.
+ * A145209 Numbers x such that <code>(x+67)^3-x^3</code> is a square.
  * @author Sean A. Irvine
  */
 public class A145209 extends LinearRecurrence {

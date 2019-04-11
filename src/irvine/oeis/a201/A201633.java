@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201633 Numbers a(n) such that sum_{j=0..3} (a(n) + j)^2 is a triangular number.
+ * A201633 Numbers <code>a(n)</code> such that sum_{j=0..3} <code>(a(n) +</code> j)^2 is a triangular number.
  * @author Sean A. Irvine
  */
 public class A201633 extends LinearRecurrence {

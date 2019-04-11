@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001295 Triangle in which k-th number (0&lt;=k&lt;=n) in n-th row (0&lt;=n) is number of hexads in S(5,6,12) containing k given points and missing n-k given points.
+ * A001295 Triangle in which k-th number (0&lt;=k&lt;=n) in n-th row <code>(0&lt;=n)</code> is number of hexads in S(5,6,12) containing k given points and missing n-k given points.
  * @author Sean A. Irvine
  */
 public class A001295 extends FiniteSequence {

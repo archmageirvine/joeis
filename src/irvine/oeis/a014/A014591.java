@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014591 a(n) = floor(n^2/12 + 5/4).
+ * A014591 <code>a(n) = floor(n^2/12 + 5/4)</code>.
  * @author Sean A. Irvine
  */
 public class A014591 implements Sequence {

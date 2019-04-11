@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.math.z.Z;
 
 /**
- * A161343 a(n) = 7^A000120(n).
+ * A161343 <code>a(n) =</code> 7^A000120(n).
  * @author Sean A. Irvine
  */
 public class A161343 extends A161342 {

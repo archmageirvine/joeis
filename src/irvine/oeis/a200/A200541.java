@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200541 Product of Fibonacci and tribonacci numbers: a(n) = A000045(n+1)*A000073(n+2).
+ * A200541 Product of Fibonacci and tribonacci numbers: <code>a(n) =</code> A000045(n+1)*A000073(n+2).
  * @author Sean A. Irvine
  */
 public class A200541 extends LinearRecurrence {

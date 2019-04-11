@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015344 Gaussian binomial coefficient [ n,7 ] for q = -5.
+ * A015344 Gaussian binomial coefficient <code>[ n,7 ]</code> for q <code>= -5</code>.
  * @author Sean A. Irvine
  */
 public class A015344 extends A015338 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005915 Hexagonal prism numbers: a(n) = (n + 1)*(3*n^2 + 3*n + 1).
+ * A005915 Hexagonal prism numbers: <code>a(n) = (n + 1)*(3*n^2 + 3*n + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A005915 implements Sequence {

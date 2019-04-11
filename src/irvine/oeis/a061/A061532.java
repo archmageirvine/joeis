@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061532 Nearest integer to n^7/49.
+ * A061532 Nearest integer to <code>n^7/49</code>.
  * @author Sean A. Irvine
  */
 public class A061532 extends LinearRecurrence {

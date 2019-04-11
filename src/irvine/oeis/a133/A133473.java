@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133473 2 followed by numbers with n-1 3's before 5.
+ * A133473 2 followed by numbers with <code>n-1</code> 3's before 5.
  * @author Sean A. Irvine
  */
 public class A133473 extends LinearRecurrence {

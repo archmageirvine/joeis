@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284647 Number of nonisomorphic unfoldings in an n-gonal Archimedean antiprism.
+ * A284647 Number of nonisomorphic unfoldings in <code>an</code> n-gonal Archimedean antiprism.
  * @author Sean A. Irvine
  */
 public class A284647 extends LinearRecurrence {

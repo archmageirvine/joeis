@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099397 Chebyshev's polynomial of the first kind, T(n,x), evaluated at x=51.
+ * A099397 Chebyshev's polynomial of the first kind, T(n,x), evaluated at <code>x=51</code>.
  * @author Sean A. Irvine
  */
 public class A099397 extends LinearRecurrence {

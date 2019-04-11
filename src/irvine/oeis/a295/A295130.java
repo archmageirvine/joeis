@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295130 a(n) = 3*n*(64*n^2 + 1). 
+ * A295130 <code>a(n) = 3*n*(64*n^2 + 1)</code>.
  * @author Georg Fischer
  */
 public class A295130 extends LinearRecurrence {

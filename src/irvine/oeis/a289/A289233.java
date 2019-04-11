@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289233 Largest number of disjoint point triples that can be chosen from an n X n X n triangular point grid, each point triple forming a 2 X 2 X 2 triangle. 
+ * A289233 Largest number of disjoint point triples that can be chosen from <code>an n</code> X n X n triangular point grid, each point triple forming <code>a 2</code> X 2 X 2 triangle.
  * @author Georg Fischer
  */
 public class A289233 extends LinearRecurrence {

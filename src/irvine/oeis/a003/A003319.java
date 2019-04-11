@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003319 Number of connected permutations of [1..n] (those not fixing [1..j] for 0 &lt; j &lt; n). Also called indecomposable permutations, or irreducible permutations.
+ * A003319 Number of connected permutations of <code>[1</code>..n] (those not fixing <code>[1</code>..j] for <code>0 &lt;</code> j <code>&lt; n)</code>. Also called indecomposable permutations, or irreducible permutations.
  * @author Sean A. Irvine
  */
 public class A003319 extends MemorySequence {

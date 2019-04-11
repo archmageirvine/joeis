@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210020 In base 9, numbers n which have 9 distinct digits, do not start with 0, and have property that the product (written in base 9) of any two adjacent digits is a substring of n.
+ * A210020 In base <code>9,</code> numbers n which have 9 distinct digits, do not start with <code>0,</code> and have property that the product (written in base <code>9)</code> of any two adjacent digits is a substring of n.
  * @author Georg Fischer
  */
 public class A210020 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000803 a(n+3) = a(n+2) + a(n+1) + a(n) - 4.
+ * A000803 <code>a(n+3) = a(n+2) + a(n+1) + a(n) - 4</code>.
  * @author Sean A. Irvine
  */
 public class A000803 implements Sequence {

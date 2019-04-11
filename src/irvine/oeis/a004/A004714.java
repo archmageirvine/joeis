@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004714 Positions of ones in binary expansion of the reciprocal of the golden ratio (0.618...).
+ * A004714 Positions of ones in binary expansion of the reciprocal of the golden ratio <code>(0</code>.618...).
  * @author Sean A. Irvine
  */
 public class A004714 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051875 23-gonal numbers: a(n) = n(21n-19)/2.
+ * A051875 23-gonal numbers: <code>a(n) = n(21n-19)/2</code>.
  * @author Sean A. Irvine
  */
 public class A051875 extends LinearRecurrence {

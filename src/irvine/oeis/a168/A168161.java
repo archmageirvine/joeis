@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168161 Primes p which are equal to the sum of the binary digits in all primes &lt;= p.
+ * A168161 Primes p which are equal to the sum of the binary digits in all primes <code>&lt;=</code> p.
  * @author Georg Fischer
  */
 public class A168161 extends FiniteSequence {

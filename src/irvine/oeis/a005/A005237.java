@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005237 Numbers n such that n and n+1 have the same number of divisors.
+ * A005237 Numbers n such that n and <code>n+1</code> have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A005237 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055493 Numbers n such that Sum_{k=1..n} k! - 2 is prime.
+ * A055493 Numbers n such that Sum_{k=1..n} k! <code>- 2</code> is prime.
  * @author Georg Fischer
  */
 public class A055493 extends FiniteSequence {

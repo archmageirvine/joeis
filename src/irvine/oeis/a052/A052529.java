@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052529 Expansion of (x-1)^3/(-1+4*x-3*x^2+x^3). 
+ * A052529 Expansion of <code>(x-1)^3/(-1+4*x-3*x^2+x^3)</code>.
  * @author Georg Fischer
  */
 public class A052529 extends LinearRecurrence {

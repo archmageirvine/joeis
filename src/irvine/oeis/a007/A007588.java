@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007588 Stella octangula numbers: a(n) = n*(2*n^2 - 1).
+ * A007588 Stella octangula numbers: <code>a(n) = n*(2*n^2 - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A007588 implements Sequence {

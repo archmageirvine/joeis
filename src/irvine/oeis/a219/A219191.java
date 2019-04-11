@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219191 Numbers of the form k*(7*k+1), where k = 0,-1,1,-2,2,-3,3,...
+ * A219191 Numbers of the form k*(7*k+1), where k <code>= 0,-1,1,-2,2,-3,3,</code>...
  * @author Sean A. Irvine
  */
 public class A219191 extends LinearRecurrence {

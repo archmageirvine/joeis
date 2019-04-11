@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083040 Number of divisors of n that are &lt;= 4.
+ * A083040 Number of divisors of n that are <code>&lt;=</code> 4.
  * @author Sean A. Irvine
  */
 public class A083040 extends LinearRecurrence {

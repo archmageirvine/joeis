@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160955 a(n+1) is the largest prime formed by appending a single digit to a(n); a(1)=18.
+ * A160955 <code>a(n+1)</code> is the largest prime formed by appending a single digit to <code>a(n)</code>; <code>a(1)=18</code>.
  * @author Georg Fischer
  */
 public class A160955 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057365 a(n) = floor(13*n/21).
+ * A057365 <code>a(n) = floor(13*n/21)</code>.
  * @author Sean A. Irvine
  */
 public class A057365 extends LinearRecurrence {

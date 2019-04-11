@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060787 a(n) = 18*(n-2)*(2*n-5).
+ * A060787 <code>a(n) = 18*(n-2)*(2*n-5)</code>.
  * @author Sean A. Irvine
  */
 public class A060787 extends LinearRecurrence {

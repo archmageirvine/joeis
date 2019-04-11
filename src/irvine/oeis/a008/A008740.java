@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008740 Molien series for 3-dimensional group [2+,n] = 2*(n/2).
+ * A008740 Molien series for 3-dimensional group <code>[2+,n] = 2*(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A008740 extends CoordinationSequence {

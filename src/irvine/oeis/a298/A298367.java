@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298367 Number of (n + 1, n + 2)-core partitions with each part repeated at most four times. 
+ * A298367 Number of <code>(n + 1, n +</code> 2)-core partitions with each part repeated at most four times.
  * @author Georg Fischer
  */
 public class A298367 extends LinearRecurrence {

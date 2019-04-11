@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003625 Primes congruent to {3, 5, 6} mod 7.
+ * A003625 Primes congruent to <code>{3, 5, 6} mod 7</code>.
  * @author Sean A. Irvine
  */
 public class A003625 implements Sequence {

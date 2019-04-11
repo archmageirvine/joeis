@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255184 25-gonal numbers: a(n) = n*(23*n-21)/2.
+ * A255184 25-gonal numbers: <code>a(n) = n*(23*n-21)/2</code>.
  * @author Sean A. Irvine
  */
 public class A255184 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A005359 a(n) = n! if n is even, otherwise 0 (from Taylor series for cos x).
+ * A005359 <code>a(n) = n!</code> if n is even, otherwise 0 (from Taylor series for cos <code>x)</code>.
  * @author Sean A. Irvine
  */
 public class A005359 extends A000142 {

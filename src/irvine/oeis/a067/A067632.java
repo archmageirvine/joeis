@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A067632 n(n+180) is a square.
+ * A067632 <code>n(n+180)</code> is a square.
  * @author Georg Fischer
  */
 public class A067632 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A290388 Increasing sequence where a(n) is the smallest integer not yet in the sequence with no digits shared with the terms a(n-1) and a(n-2), no repeated digits, and no 0-digit allowed.
+ * A290388 Increasing sequence where <code>a(n)</code> is the smallest integer not yet in the sequence with no digits shared with the terms <code>a(n-1)</code> and <code>a(n-2),</code> no repeated digits, and no 0-digit allowed.
  * @author Georg Fischer
  */
 public class A290388 extends FiniteSequence {

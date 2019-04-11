@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178242 Numerator of n*(5+n)/((n+1)*(n+4)).
+ * A178242 Numerator of <code>n*(5+n)/((n+1)*(n+4))</code>.
  * @author Sean A. Irvine
  */
 public class A178242 extends LinearRecurrence {

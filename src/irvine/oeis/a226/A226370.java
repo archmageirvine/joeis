@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226370 Number of tilings of a 6 X n rectangle using integer sided square tiles of area &gt; 1.
+ * A226370 Number of tilings of <code>a 6</code> X n rectangle using integer sided square tiles of area <code>&gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A226370 extends LinearRecurrence {

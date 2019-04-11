@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006045 Sum of orders of all 2 X 2 matrices with entries mod n.
+ * A006045 Sum of orders of all 2 X 2 matrices with entries <code>mod n</code>.
  * @author Sean A. Irvine
  */
 public class A006045 implements Sequence {

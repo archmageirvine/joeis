@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A000813 Expansion of (sin x + cos x)/cos 4x.
+ * A000813 Expansion of (sin <code>x +</code> cos x)/cos <code>4x</code>.
  * @author Sean A. Irvine
  */
 public class A000813 implements Sequence {

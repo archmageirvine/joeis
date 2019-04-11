@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154708 Numbers a such that b and c exist with b &lt;= a &lt; c and a*(a+1) + b^2 = c^2.
+ * A154708 Numbers a such that b and c exist with b <code>&lt;= a &lt;</code> c and <code>a*(a+1) +</code> b^2 = c^2.
  * @author Sean A. Irvine
  */
 public class A154708 extends LinearRecurrence {

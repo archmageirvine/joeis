@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003992 Square array read by upwards antidiagonals: T(n,k) = n^k for n &gt;= 0, k &gt;= 0.
+ * A003992 Square array read by upwards antidiagonals: T(n,k) = n^k for <code>n &gt;= 0,</code> k <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A003992 implements Sequence {

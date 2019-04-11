@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000567 Octagonal numbers: n*(3*n-2). Also called star numbers.
+ * A000567 Octagonal numbers: <code>n*(3*n-2)</code>. Also called star numbers.
  * @author Sean A. Irvine
  */
 public class A000567 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000566 Heptagonal numbers (or 7-gonal numbers): n(5n-3)/2.
+ * A000566 Heptagonal numbers (or 7-gonal numbers): <code>n(5n-3)/2</code>.
  * @author Sean A. Irvine
  */
 public class A000566 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245033 4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2.
+ * A245033 <code>4*(n + 7)^3 - 27*(n + 7)^2 = (4*n +1)*(n+7)^2</code>.
  * @author Sean A. Irvine
  */
 public class A245033 extends LinearRecurrence {

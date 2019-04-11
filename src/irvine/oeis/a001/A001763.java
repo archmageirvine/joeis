@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001763 Number of dissections of a ball: (3n+3)!/(2n+3)!.
+ * A001763 Number of dissections of a ball: <code>(3n+3)!/(2n+3)!</code>.
  * @author Sean A. Irvine
  */
 public class A001763 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007494 Numbers that are congruent to 0 or 2 mod 3.
+ * A007494 Numbers that are congruent to 0 or <code>2 mod 3</code>.
  * @author Sean A. Irvine
  */
 public class A007494 implements Sequence {

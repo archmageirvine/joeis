@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304829 a(n) = 4024*7^n/147 - 256/3 (n &gt;= 2). 
+ * A304829 <code>a(n) = 4024*7^n/147 - 256/3 (n &gt;= 2)</code>.
  * @author Georg Fischer
  */
 public class A304829 extends LinearRecurrence {

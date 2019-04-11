@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A108825 Numbers n such that n divides the sum of the digits of n!.
+ * A108825 Numbers n such that n divides the sum of the digits of <code>n!</code>.
  * @author Sean A. Irvine
  */
 public class A108825 implements Sequence {

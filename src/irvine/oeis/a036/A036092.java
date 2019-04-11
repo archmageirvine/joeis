@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036092 Centered cube numbers: a(n) = (n+1)^14 + n^14.
+ * A036092 Centered cube numbers: <code>a(n) = (n+1)^14 + n^14</code>.
  * @author Sean A. Irvine
  */
 public class A036092 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086927 a(n) = 10*a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 10.
+ * A086927 <code>a(n) = 10*a(n-1) + a(n-2),</code> starting with <code>a(0) = 2</code> and <code>a(1) = 10</code>.
  * @author Sean A. Irvine
  */
 public class A086927 extends LinearRecurrence {

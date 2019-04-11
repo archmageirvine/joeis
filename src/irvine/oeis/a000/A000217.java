@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000217 Triangular numbers: a(n) = binomial(n+1,2) = n(n+1)/2 = 0 + 1 + 2 + ... + n.
+ * A000217 Triangular numbers: <code>a(n) =</code> binomial(n+1,2) <code>= n(n+1)/2 = 0 + 1 + 2 + </code>... <code>+ n</code>.
  * @author Sean A. Irvine
  */
 public class A000217 implements Sequence {

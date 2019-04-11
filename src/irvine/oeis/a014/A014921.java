@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014921 a(1)=1, a(n) = n*8^(n-1) + a(n-1).
+ * A014921 <code>a(1)=1, a(n) = n*8^(n-1) + a(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A014921 extends LinearRecurrence {

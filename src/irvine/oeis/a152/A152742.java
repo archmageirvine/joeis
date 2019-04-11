@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152742 13 times the squares: 13*n^2.
+ * A152742 13 times the squares: <code>13*n^2</code>.
  * @author Sean A. Irvine
  */
 public class A152742 extends LinearRecurrence {

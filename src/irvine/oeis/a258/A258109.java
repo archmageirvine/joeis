@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258109 Number of balanced parenthesis expressions of length 2n and depth 3.
+ * A258109 Number of balanced parenthesis expressions of length <code>2n</code> and depth 3.
  * @author Sean A. Irvine
  */
 public class A258109 extends LinearRecurrence {

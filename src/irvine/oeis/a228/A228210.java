@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228210 x-values in the solutions to x^2 - 5y^2 = 44.
+ * A228210 x-values in the solutions to <code>x^2 -</code> 5y^2 <code>= 44</code>.
  * @author Sean A. Irvine
  */
 public class A228210 extends LinearRecurrence {

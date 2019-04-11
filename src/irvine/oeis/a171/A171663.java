@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171663 2^(2*n+1) plus or minus 2^(n+1)+1.
+ * A171663 <code>2^(2*n+1)</code> plus or minus <code>2^(n+1)+1</code>.
  * @author Sean A. Irvine
  */
 public class A171663 extends LinearRecurrence {

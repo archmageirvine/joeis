@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122064 Subtract 3, take the square root, subtract 3, take the square root, etc.
+ * A122064 Subtract <code>3,</code> take the square root, subtract <code>3,</code> take the square root, etc.
  * @author Georg Fischer
  */
 public class A122064 extends FiniteSequence {

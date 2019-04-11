@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113164 a(n) = (6 choose n) * (6 choose 6-n).
+ * A113164 <code>a(n) = (6</code> choose <code>n) * (6</code> choose <code>6-n)</code>.
  * @author Georg Fischer
  */
 public class A113164 extends FiniteSequence {

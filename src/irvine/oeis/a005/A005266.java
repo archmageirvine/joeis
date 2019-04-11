@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FactorizationSequence;
 
 /**
- * A005266 a(1)=3, b(n)=Product_{k=1..n} a(k), a(n+1)=largest prime factor of b(n)-1.
+ * A005266 <code>a(1)=3,</code> b(n)=Product_{k=1..n} a(k), a(n+1)=largest prime factor of b(n)-1.
  * @author Sean A. Irvine
  */
 public class A005266 extends FactorizationSequence {

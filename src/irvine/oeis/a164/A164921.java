@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A164921 a(1)=0, a(2)=1. For n &gt;=3, a(n) = the smallest integer &gt; a(n-1) that is coprime to every sum of any two distinct earlier terms of this sequence.
+ * A164921 <code>a(1)=0, a(2)=1</code>. For <code>n &gt;=3, a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> that is coprime to every sum of any two distinct earlier terms of this sequence.
  * @author Sean A. Irvine
  */
 public class A164921 implements Sequence {

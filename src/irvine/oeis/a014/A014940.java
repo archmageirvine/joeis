@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014940 a(1)=1, a(n)=n*22^(n-1)+a(n-1).
+ * A014940 <code>a(1)=1, a(n)=n*22^(n-1)+a(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A014940 extends LinearRecurrence {

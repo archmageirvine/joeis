@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A007851 Number of elements w of the Weyl group D(n) such that the roots sent negative by w span an Abelian subalgebra of the Lie algebra.
+ * A007851 Number of elements w of the Weyl group D(n) such that the roots sent negative by w span <code>an</code> Abelian subalgebra of the Lie algebra.
  * @author Sean A. Irvine
  */
 public class A007851 extends A000108 {

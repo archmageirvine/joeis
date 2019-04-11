@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242497 Sides of (Heronian) triangles where sides are consecutive integers and area is an integer.
+ * A242497 Sides of (Heronian) triangles where sides are consecutive integers and area is <code>an</code> integer.
  * @author Sean A. Irvine
  */
 public class A242497 extends LinearRecurrence {

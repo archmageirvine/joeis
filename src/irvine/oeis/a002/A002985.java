@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002985 Number of trees in an n-node wheel.
+ * A002985 Number of trees in <code>an</code> n-node wheel.
  * @author Sean A. Irvine
  */
 public class A002985 implements Sequence {

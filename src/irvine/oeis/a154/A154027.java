@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154027 a(n+2) = 100*a(n+1) - a(n), a(1)=0, a(2)=10.
+ * A154027 <code>a(n+2) = 100*a(n+1) - a(n), a(1)=0, a(2)=10</code>.
  * @author Sean A. Irvine
  */
 public class A154027 extends LinearRecurrence {

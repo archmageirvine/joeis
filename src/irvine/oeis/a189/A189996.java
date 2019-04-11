@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189996 Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like [2, 2, 1, 0, 1, 1, 1, 0].
+ * A189996 Bott periodicity: the homotopy groups of the stable orthogonal group are periodic with period 8 and repeat like <code>[2, 2, 1, 0, 1, 1, 1, 0]</code>.
  * @author Sean A. Irvine
  */
 public class A189996 extends LinearRecurrence {

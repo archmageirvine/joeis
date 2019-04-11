@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002245 A (4,2)-sequence.
+ * A002245 A <code>(4</code>,2)-sequence.
  * @author Sean A. Irvine
  */
 public class A002245 extends FiniteSequence {

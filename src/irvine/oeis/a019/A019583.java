@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019583 a(n) = n*(n-1)^4/2.
+ * A019583 <code>a(n) = n*(n-1)^4/2</code>.
  * @author Sean A. Irvine
  */
 public class A019583 implements Sequence {

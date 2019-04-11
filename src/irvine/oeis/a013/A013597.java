@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013597 a(n) = nextprime(2^n) - 2^n.
+ * A013597 <code>a(n) =</code> nextprime(2^n) <code>- 2^n</code>.
  * @author Sean A. Irvine
  */
 public class A013597 implements Sequence {

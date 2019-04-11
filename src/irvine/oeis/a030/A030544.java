@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030544 Remainder-numerators from Egyptian fraction expansion of 2/24631 using odd greedy algorithm.
+ * A030544 Remainder-numerators from Egyptian fraction expansion of <code>2/24631</code> using odd greedy algorithm.
  * @author Georg Fischer
  */
 public class A030544 extends FiniteSequence {

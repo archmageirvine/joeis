@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180579 The Wiener index of the Dutch windmill graph D(5,n) (n&gt;=1).
+ * A180579 The Wiener index of the Dutch windmill graph D(5,n) <code>(n&gt;=1)</code>.
  * @author Sean A. Irvine
  */
 public class A180579 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000197 a(n) = (n!)!.
+ * A000197 <code>a(n) = (n!)!</code>.
  * @author Sean A. Irvine
  */
 public class A000197 implements Sequence {

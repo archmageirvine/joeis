@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165897 a(n) = a(n-1) + largest proper divisor of a(n-1), a(1)=4.
+ * A165897 <code>a(n) = a(n-1) +</code> largest proper divisor of <code>a(n-1), a(1)=4</code>.
  * @author Sean A. Irvine
  */
 public class A165897 extends LinearRecurrence {

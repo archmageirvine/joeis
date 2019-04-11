@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A138244 a(1)=1; for n&gt;1, a(n) = smallest integer &gt; a(n-1) such that a(n) is coprime to (a(k) - a(k-1)) for all k, 2 &lt;= k &lt;= n and such that (a(n) - a(n-1)) doesn't equal (a(k) - a(k-1)) for any k, 2 &lt;= k &lt;= n-1.
+ * A138244 <code>a(1)=1</code>; for <code>n&gt;1, a(n) =</code> smallest integer <code>&gt; a(n-1)</code> such that <code>a(n)</code> is coprime to (a(k) - a(k-1)) for all k, <code>2 &lt;=</code> k <code>&lt;= n</code> and such that <code>(a(n) - a(n-1))</code> doesn't equal (a(k) - a(k-1)) for any k, <code>2 &lt;=</code> k <code>&lt;= n-1</code>.
  * @author Sean A. Irvine
  */
 public class A138244 implements Sequence {

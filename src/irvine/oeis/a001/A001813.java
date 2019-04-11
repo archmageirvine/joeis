@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001813 Quadruple factorial numbers: a(n) = (2n)!/n!.
+ * A001813 Quadruple factorial numbers: <code>a(n) = (2n)!/n!</code>.
  * @author Sean A. Irvine
  */
 public class A001813 implements Sequence {

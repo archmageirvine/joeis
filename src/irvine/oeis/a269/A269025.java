@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269025 a(n) = Sum_{k = 0..n} 60^k.
+ * A269025 <code>a(n) =</code> Sum_{k <code>= 0</code>..n} 60^k.
  * @author Sean A. Irvine
  */
 public class A269025 extends LinearRecurrence {

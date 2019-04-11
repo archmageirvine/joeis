@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007139 Number of unlabeled bicolored bipartite graphs on 2n nodes having n nodes of each color with no edges between vertices of the same color and allowing the color classes to be interchanged.
+ * A007139 Number of unlabeled bicolored bipartite graphs on <code>2n</code> nodes having n nodes of each color with no edges between vertices of the same color and allowing the color classes to be interchanged.
  * @author Sean A. Irvine
  */
 public class A007139 implements Sequence {

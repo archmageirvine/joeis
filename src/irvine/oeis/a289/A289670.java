@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A289670 Consider the Post tag system defined in A284116; a(n) = number of binary words of length n which terminate at the empty word.
+ * A289670 Consider the Post tag system defined in A284116; <code>a(n) =</code> number of binary words of length n which terminate at the empty word.
  * @author Sean A. Irvine
  */
 public class A289670 implements Sequence {

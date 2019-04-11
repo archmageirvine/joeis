@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172020 Number of subsets S of {1,2,3,...,n} with the property that if x is a member of S then at least one of x-2 and x+2 is also a member of S.
+ * A172020 Number of subsets S of <code>{1,2,3,</code>...,n} with the property that if x is a member of S then at least one of <code>x-2</code> and <code>x+2</code> is also a member of S.
  * @author Sean A. Irvine
  */
 public class A172020 extends LinearRecurrence {

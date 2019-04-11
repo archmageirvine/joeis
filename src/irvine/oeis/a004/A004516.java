@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004516 Generalized nim sum n + n in base 6.
+ * A004516 Generalized nim sum <code>n + n</code> in base 6.
  * @author Sean A. Irvine
  */
 public class A004516 extends A004514 {

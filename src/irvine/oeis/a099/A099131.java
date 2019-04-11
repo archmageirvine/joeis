@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099131 Quintisection and binomial transform of 1/(1-x^4-x^5).
+ * A099131 Quintisection and binomial transform of <code>1/(1-x^4-x^5)</code>.
  * @author Sean A. Irvine
  */
 public class A099131 extends LinearRecurrence {

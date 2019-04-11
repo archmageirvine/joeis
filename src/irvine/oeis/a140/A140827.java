@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140827 Interleave denominators and numerators of convergents to sqrt(3).
+ * A140827 Interleave denominators and numerators of convergents to <code>sqrt(3)</code>.
  * @author Sean A. Irvine
  */
 public class A140827 extends LinearRecurrence {

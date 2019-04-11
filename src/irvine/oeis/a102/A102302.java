@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102302 Largest number &lt; n/2 coprime to n.
+ * A102302 Largest number <code>&lt; n/2</code> coprime to n.
  * @author Sean A. Irvine
  */
 public class A102302 extends LinearRecurrence {

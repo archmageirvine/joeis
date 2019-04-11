@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215004 a(0) = a(1) = 1; for n&gt;1, a(n) = a(n-1) + a(n-2) + floor(n/2).
+ * A215004 <code>a(0) = a(1) = 1</code>; for <code>n&gt;1, a(n) = a(n-1) + a(n-2) + floor(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A215004 extends LinearRecurrence {

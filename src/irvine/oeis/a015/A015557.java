@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015557 a(n) = ceiling((n/e)^n).
+ * A015557 <code>a(n) =</code> ceiling((n/e)^n).
  * @author Sean A. Irvine
  */
 public class A015557 implements Sequence {

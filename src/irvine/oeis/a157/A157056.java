@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157056 Number of integer sequences of length n+1 with sum zero and sum of absolute values 14.
+ * A157056 Number of integer sequences of length <code>n+1</code> with sum zero and sum of absolute values 14.
  * @author Sean A. Irvine
  */
 public class A157056 extends LinearRecurrence {

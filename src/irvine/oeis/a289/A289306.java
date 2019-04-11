@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289306 a(n) = Sum_{k &gt;= 0}(-1)^k*binomial(n,5*k). 
+ * A289306 <code>a(n) =</code> Sum_{k <code>&gt;=</code> 0}(-1)^k*binomial(n,5*k).
  * @author Georg Fischer
  */
 public class A289306 extends LinearRecurrence {

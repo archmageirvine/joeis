@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227970 Triangular arithmetic on half-squares: b(n)*(b(n) - 1)/2 where b(n) = floor(n^2/2).
+ * A227970 Triangular arithmetic on half-squares: b(n)*(b(n) <code>- 1)/2</code> where b(n) <code>= floor(n^2/2)</code>.
  * @author Sean A. Irvine
  */
 public class A227970 extends LinearRecurrence {

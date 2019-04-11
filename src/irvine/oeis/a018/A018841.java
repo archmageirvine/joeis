@@ -4,7 +4,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A018841 Number of steps for {2,3} fairy knight to reach (n,n) on infinite chessboard.
+ * A018841 Number of steps for <code>{2,3}</code> fairy knight to reach <code>(n,n)</code> on infinite chessboard.
  * @author Sean A. Irvine
  */
 public class A018841 extends PrependSequence {

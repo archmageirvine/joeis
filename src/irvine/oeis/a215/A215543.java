@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215543 Number of standard Young tableaux of shape [3n,3]. 
+ * A215543 Number of standard Young tableaux of shape <code>[3n,3]</code>.
  * @author Georg Fischer
  */
 public class A215543 extends LinearRecurrence {

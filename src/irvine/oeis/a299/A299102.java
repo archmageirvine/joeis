@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299102 Number of (n + 1, n + 2)-core partitions with odd parts and corresponding order ideals confined to the three outermost diagonals of P_{n + 1, n + 2}. 
+ * A299102 Number of <code>(n + 1, n +</code> 2)-core partitions with odd parts and corresponding order ideals confined to the three outermost diagonals of P_{n <code>+ 1, n + 2}</code>.
  * @author Georg Fischer
  */
 public class A299102 extends LinearRecurrence {

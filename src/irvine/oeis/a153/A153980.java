@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A153980 Positive integers n equal to the sum of all the different integers formed by the digits of n (n itself excluded), keeping the order of the digits.
+ * A153980 Positive integers n equal to the sum of all the different integers formed by the digits of <code>n (n</code> itself excluded), keeping the order of the digits.
  * @author Sean A. Irvine
  */
 public class A153980 implements Sequence {

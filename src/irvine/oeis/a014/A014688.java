@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014688 a(n) = n-th prime + n.
+ * A014688 <code>a(n) =</code> n-th prime <code>+ n</code>.
  * @author Sean A. Irvine
  */
 public class A014688 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001953 Floor((n + 1/2) * sqrt(2)).
+ * A001953 Floor((n <code>+ 1/2) *</code> sqrt(2)).
  * @author Sean A. Irvine
  */
 public class A001953 implements Sequence {

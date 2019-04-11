@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002373 Smallest prime in decomposition of 2n into sum of two odd primes.
+ * A002373 Smallest prime in decomposition of <code>2n</code> into sum of two odd primes.
  * @author Sean A. Irvine
  */
 public class A002373 implements Sequence {

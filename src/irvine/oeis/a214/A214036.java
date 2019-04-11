@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214036 Numbers n such that floor(sqrt(1)) + floor(sqrt(2)) + floor(sqrt(3)) + ... + floor(sqrt(n)) is prime.
+ * A214036 Numbers n such that <code>floor(sqrt(1)) + floor(sqrt(2)) + floor(sqrt(3)) + </code>... <code>+ floor(sqrt(n))</code> is prime.
  * @author Georg Fischer
  */
 public class A214036 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028382 Weight distribution of [ 31,16,7 ] binary BCH and quadratic-residue codes.
+ * A028382 Weight distribution of <code>[ 31,16,7 ]</code> binary BCH and quadratic-residue codes.
  * @author Georg Fischer
  */
 public class A028382 extends FiniteSequence {

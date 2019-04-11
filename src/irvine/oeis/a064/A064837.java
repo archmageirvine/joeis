@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064837 a(n) = (6*n^4 + 30*n^3 - 20*n^2 + 14)*n/30 + (n mod 2).
+ * A064837 <code>a(n) = (6*n^4 + 30*n^3 - 20*n^2 + 14)*n/30 + (n mod 2)</code>.
  * @author Sean A. Irvine
  */
 public class A064837 extends LinearRecurrence {

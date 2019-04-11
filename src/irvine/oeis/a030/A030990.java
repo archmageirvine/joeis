@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030990 7-automorphic numbers ending in 3: final digits of 7n^2 agree with n. 
+ * A030990 7-automorphic numbers ending in 3: final digits of <code>7n^2</code> agree with n.
  * @author Georg Fischer
  */
 public class A030990 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257449 a(n) = 75*(2^n - 1) - 4*n^3 - 18*n^2 - 52*n.
+ * A257449 <code>a(n) = 75*(2^n - 1) - 4*n^3 - 18*n^2 - 52*n</code>.
  * @author Sean A. Irvine
  */
 public class A257449 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304608 a(n) = 288*2^n + 178 (n &gt;= 1). 
+ * A304608 <code>a(n) = 288*2^n + 178 (n &gt;= 1)</code>.
  * @author Georg Fischer
  */
 public class A304608 extends LinearRecurrence {

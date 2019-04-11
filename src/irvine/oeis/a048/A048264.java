@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048264 Numbers that aren't the sum of distinct primes of the form 6n+5.
+ * A048264 Numbers that aren't the sum of distinct primes of the form <code>6n+5</code>.
  * @author Georg Fischer
  */
 public class A048264 extends FiniteSequence {

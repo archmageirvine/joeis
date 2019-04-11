@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006579 Sum of gcd(n,k) for k = 1 to n-1.
+ * A006579 Sum of gcd(n,k) for k <code>= 1</code> to <code>n-1</code>.
  * @author Sean A. Irvine
  */
 public class A006579 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A115101 Number of distinct prime factors of L(n + F(n)) where F(n) is the Fibonacci number and L(n) is the Lucas number and n &gt;= 1.
+ * A115101 Number of distinct prime factors of L(n + F(n)) where F(n) is the Fibonacci number and L(n) is the Lucas number and <code>n &gt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A115101 implements Sequence {

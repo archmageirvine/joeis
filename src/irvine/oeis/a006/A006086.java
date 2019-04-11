@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006086 Unitary harmonic numbers (those for which the unitary harmonic mean is an integer).
+ * A006086 Unitary harmonic numbers (those for which the unitary harmonic mean is <code>an</code> integer).
  * @author Sean A. Irvine
  */
 public class A006086 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032527 Concentric pentagonal numbers: floor( 5*n^2 / 4 ).
+ * A032527 Concentric pentagonal numbers: <code>floor( 5*n^2 / 4 )</code>.
  * @author Sean A. Irvine
  */
 public class A032527 extends LinearRecurrence {

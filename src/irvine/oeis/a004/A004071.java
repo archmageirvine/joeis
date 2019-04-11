@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004071 Start with a(0)=1; replace each i with 12...i, then add 1 to final digit.
+ * A004071 Start with <code>a(0)=1</code>; replace each i with 12...i, then add 1 to final digit.
  * @author Sean A. Irvine
  */
 public class A004071 implements Sequence {

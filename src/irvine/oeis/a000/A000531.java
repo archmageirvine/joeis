@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000531 From area of cyclic polygon of 2n + 1 sides.
+ * A000531 From area of cyclic polygon of <code>2n + 1</code> sides.
  * @author Sean A. Irvine
  */
 public class A000531 implements Sequence {

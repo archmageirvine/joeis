@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167983 Number of n-cycles on the graph of the regular 24-cell, 3 &lt;= n &lt;= 24.
+ * A167983 Number of n-cycles on the graph of the regular 24-cell, <code>3 &lt;= n &lt;= 24</code>.
  * @author Georg Fischer
  */
 public class A167983 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321714 Numbers k such that lambda(k) = 12.
+ * A321714 Numbers k such that lambda(k) <code>= 12</code>.
  * @author Georg Fischer
  */
 public class A321714 extends FiniteSequence {

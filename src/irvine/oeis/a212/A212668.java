@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212668 a(n) = (16/3)*(n+1)*n*(n-1) + 8*n^2 + 1.
+ * A212668 <code>a(n) = (16/3)*(n+1)*n*(n-1) + 8*n^2 + 1</code>.
  * @author Sean A. Irvine
  */
 public class A212668 extends LinearRecurrence {

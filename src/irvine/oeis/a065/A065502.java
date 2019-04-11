@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065502 Positive numbers divisible by 2 or 5; 1/n not purely periodic after decimal point.
+ * A065502 Positive numbers divisible by 2 or 5; <code>1/n</code> not purely periodic after decimal point.
  * @author Sean A. Irvine
  */
 public class A065502 extends LinearRecurrence {

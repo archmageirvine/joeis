@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020490 Numbers n such that phi(n) &lt;= sigma_0(n).
+ * A020490 Numbers n such that phi(n) <code>&lt;=</code> sigma_0(n).
  * @author Georg Fischer
  */
 public class A020490 extends FiniteSequence {

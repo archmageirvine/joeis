@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000062 A Beatty sequence: a(n) = floor(n/(e-2)).
+ * A000062 A Beatty sequence: <code>a(n) =</code> floor(n/(e-2)).
  * @author Sean A. Irvine
  */
 public class A000062 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051450 Number of positive rational knots with 2n+1 crossings.
+ * A051450 Number of positive rational knots with <code>2n+1</code> crossings.
  * @author Sean A. Irvine
  */
 public class A051450 extends LinearRecurrence {

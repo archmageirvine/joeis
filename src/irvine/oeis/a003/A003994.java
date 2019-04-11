@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003994 Sequence b_4 (n) arising from homology of partitions with even number of blocks.
+ * A003994 Sequence b_4 <code>(n)</code> arising from homology of partitions with even number of blocks.
  * @author Sean A. Irvine
  */
 public class A003994 implements Sequence {

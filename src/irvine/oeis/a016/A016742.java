@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A016742 Even squares: a(n) = (2n)^2.
+ * A016742 Even squares: <code>a(n) = (2n)^2</code>.
  * @author Sean A. Irvine
  */
 public class A016742 extends LinearRecurrence {

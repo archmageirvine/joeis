@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A087669 The smallest index m such that b(m) is an integer, where b(0)=(2n+1)/n and b(k+1)=b(k)*floor(b(k)) for k&gt;=0.
+ * A087669 The smallest index m such that b(m) is <code>an</code> integer, where b(0)=(2n+1)/n and b(k+1)=b(k)*floor(b(k)) for k&gt;=0.
  * @author Sean A. Irvine
  */
 public class A087669 implements Sequence {

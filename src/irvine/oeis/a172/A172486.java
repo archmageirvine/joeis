@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172486 Number of prime knots up to nine crossings with determinant 2n+1 and signature 6.
+ * A172486 Number of prime knots up to nine crossings with determinant <code>2n+1</code> and signature 6.
  * @author Georg Fischer
  */
 public class A172486 extends FiniteSequence {

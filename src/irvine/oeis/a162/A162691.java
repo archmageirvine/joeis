@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162691 Strictly positive numbers n such that 24*n/(24+n) are integers.
+ * A162691 Strictly positive numbers n such that <code>24*n/(24+n)</code> are integers.
  * @author Georg Fischer
  */
 public class A162691 extends FiniteSequence {

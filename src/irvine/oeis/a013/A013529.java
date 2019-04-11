@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013529 Numerator of [x^n] in the Taylor expansion exp(cosec(x) - cosech(x)) = 1 + x/3 + x^2/18 + x^3/162 + x^4/1944 + 211*x^5/51030 + ...
+ * A013529 Numerator of <code>[x^n]</code> in the Taylor expansion exp(cosec(x) - cosech(x)) <code>= 1 + x/3 + x^2/18 + x^3/162 + x^4/1944 + 211*x^5/51030 + </code>...
  * @author Sean A. Irvine
  */
 public class A013529 implements Sequence {

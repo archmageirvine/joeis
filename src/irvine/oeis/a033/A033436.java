@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033436 a(n) = ceiling( (3*n^2 - 4)/8 ).
+ * A033436 <code>a(n) =</code> ceiling( <code>(3*n^2 - 4)/8 )</code>.
  * @author Sean A. Irvine
  */
 public class A033436 extends LinearRecurrence {

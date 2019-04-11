@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003604 Number of primes &lt;= n!.
+ * A003604 Number of primes <code>&lt;= n!</code>.
  * @author Sean A. Irvine
  */
 public class A003604 implements Sequence {

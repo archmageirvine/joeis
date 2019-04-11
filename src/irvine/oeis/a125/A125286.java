@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A125286 a(0)=1. a(n) = a(n-1) + (the largest term among {a(0),a(1),...a(n-1)} that has the same number of positive divisors as n).
+ * A125286 <code>a(0)=1</code>. <code>a(n) = a(n-1) +</code> (the largest term among <code>{a(0),a(1),</code>...a(n-1)} that has the same number of positive divisors as <code>n)</code>.
  * @author Georg Fischer
  */
 public class A125286 extends FiniteSequence {

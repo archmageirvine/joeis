@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001526 (7n+1)(7n+6).
+ * A001526 <code>(7n+1)(7n+6)</code>.
  * @author Sean A. Irvine
  */
 public class A001526 implements Sequence {

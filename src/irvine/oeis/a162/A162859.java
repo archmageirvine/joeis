@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162859 Numbers n such that 9n^2 is a zeroless pandigital number.
+ * A162859 Numbers n such that <code>9n^2</code> is a zeroless pandigital number.
  * @author Georg Fischer
  */
 public class A162859 extends FiniteSequence {

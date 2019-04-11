@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272297 a(n) = n^4 + 64.
+ * A272297 <code>a(n) = n^4 + 64</code>.
  * @author Sean A. Irvine
  */
 public class A272297 extends LinearRecurrence {

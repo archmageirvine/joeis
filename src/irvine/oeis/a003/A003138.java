@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003138 Nearest integer to 24(2^n-1)/n.
+ * A003138 Nearest integer to <code>24(2^n-1)/n</code>.
  * @author Sean A. Irvine
  */
 public class A003138 implements Sequence {

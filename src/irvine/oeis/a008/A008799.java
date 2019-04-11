@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008799 Molien series for group [2,6]+ = 226.
+ * A008799 Molien series for group <code>[2,6]+ = 226</code>.
  * @author Sean A. Irvine
  */
 public class A008799 extends CoordinationSequence {

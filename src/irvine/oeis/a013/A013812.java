@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013812 a(n) = 20^(4*n+1).
+ * A013812 <code>a(n) = 20^(4*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A013812 implements Sequence {

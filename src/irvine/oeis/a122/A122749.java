@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A122749 Number of arrangements of n non-attacking bishops on an n X n board such that every square of the board is controlled by at least one bishop.
+ * A122749 Number of arrangements of n non-attacking bishops on <code>an n</code> X n board such that every square of the board is controlled by at least one bishop.
  * @author Sean A. Irvine
  */
 public class A122749 implements Sequence {

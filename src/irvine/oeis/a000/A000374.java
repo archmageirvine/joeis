@@ -6,7 +6,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A000374 Number of cycles (mod n) under doubling map.
+ * A000374 Number of cycles <code>(mod n)</code> under doubling map.
  * @author Sean A. Irvine
  */
 public class A000374 implements Sequence {

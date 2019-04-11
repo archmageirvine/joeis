@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153435 Numbers with 2n binary digits where every run length is 2, written in binary.
+ * A153435 Numbers with <code>2n</code> binary digits where every run length is <code>2,</code> written in binary.
  * @author Sean A. Irvine
  */
 public class A153435 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006279 Denominators of convergents to Cahen's constant: a(n+2) = a(n)^2*a(n+1) + a(n).
+ * A006279 Denominators of convergents to Cahen's constant: <code>a(n+2) = a(n)^2*a(n+1) + a(n)</code>.
  * @author Sean A. Irvine
  */
 public class A006279 implements Sequence {

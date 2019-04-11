@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280173 a(0) = 1, a(n+1) = 2*a(n) + periodic sequence of length 2: repeat [5, -4].
+ * A280173 <code>a(0) = 1, a(n+1) = 2*a(n) +</code> periodic sequence of length 2: repeat <code>[5, -4]</code>.
  * @author Sean A. Irvine
  */
 public class A280173 extends LinearRecurrence {

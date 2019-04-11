@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A120373 Weight distribution of [72,36,16] doubly-even binary self-dual extended quadratic-residue (or QR) code.
+ * A120373 Weight distribution of <code>[72,36,16]</code> doubly-even binary self-dual extended quadratic-residue (or QR) code.
  * @author Georg Fischer
  */
 public class A120373 extends FiniteSequence {

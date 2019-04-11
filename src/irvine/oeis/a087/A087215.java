@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087215 Lucas(6*n): a(n) = 18*a(n-1) - a(n-2), starting with a(0) = 2 and a(1) = 18.
+ * A087215 Lucas(6*n): <code>a(n) = 18*a(n-1) - a(n-2),</code> starting with <code>a(0) = 2</code> and <code>a(1) = 18</code>.
  * @author Sean A. Irvine
  */
 public class A087215 extends LinearRecurrence {

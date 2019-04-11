@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006566 Dodecahedral numbers: a(n) = n*(3*n - 1)*(3*n - 2)/2.
+ * A006566 Dodecahedral numbers: <code>a(n) = n*(3*n - 1)*(3*n - 2)/2</code>.
  * @author Sean A. Irvine
  */
 public class A006566 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317312 Multiples of 12 and odd numbers interleaved. 
+ * A317312 Multiples of 12 and odd numbers interleaved.
  * @author Georg Fischer
  */
 public class A317312 extends LinearRecurrence {

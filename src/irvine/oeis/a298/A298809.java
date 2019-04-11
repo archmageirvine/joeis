@@ -3,7 +3,7 @@ package irvine.oeis.a298;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A298809 Growth series for group with presentation &lt; S, T : S^2 = T^3 = (S*T)^5 = 1 &gt;.
+ * A298809 Growth series for group with presentation &lt; S, T : S^2 = T^3 = (S*T)^5 <code>= 1 &gt;</code>.
  * @author Georg Fischer
  */
 public class A298809 extends FiniteSequence {

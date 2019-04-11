@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006154 Number of labeled ordered partitions of an n-set into odd parts.
+ * A006154 Number of labeled ordered partitions of <code>an</code> n-set into odd parts.
  * @author Sean A. Irvine
  */
 public class A006154 implements Sequence {

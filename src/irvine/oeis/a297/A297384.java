@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297384 Number of Eulerian cycles in the n-antiprism graph. 
+ * A297384 Number of Eulerian cycles in the n-antiprism graph.
  * @author Georg Fischer
  */
 public class A297384 extends LinearRecurrence {

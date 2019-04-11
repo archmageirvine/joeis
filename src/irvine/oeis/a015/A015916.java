@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015916 Numbers n such that sigma(n) + 10 = sigma(n + 10).
+ * A015916 Numbers n such that sigma(n) <code>+ 10 =</code> sigma(n <code>+ 10)</code>.
  * @author Sean A. Irvine
  */
 public class A015916 implements Sequence {

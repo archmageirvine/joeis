@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281746 Nonnegative numbers n such that n == 0 mod 3 or n == 0 mod 5.
+ * A281746 Nonnegative numbers n such that <code>n == 0 mod 3</code> or <code>n == 0 mod 5</code>.
  * @author Sean A. Irvine
  */
 public class A281746 extends LinearRecurrence {

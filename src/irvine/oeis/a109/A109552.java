@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109552 a(n) = floor(4076/(10-n)^2).
+ * A109552 <code>a(n) = floor(4076/(10-n)^2)</code>.
  * @author Georg Fischer
  */
 public class A109552 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013591 Orders of cyclotomic polynomials containing a coefficient the absolute value of which is &gt;= 3.
+ * A013591 Orders of cyclotomic polynomials containing a coefficient the absolute value of which is <code>&gt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A013591 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016098 Number of crossing set partitions of {1,2,...,n}.
+ * A016098 Number of crossing set partitions of <code>{1,2,</code>...,n}.
  * @author Sean A. Irvine
  */
 public class A016098 implements Sequence {

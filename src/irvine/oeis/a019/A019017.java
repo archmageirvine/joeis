@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019017 Cycle class sequence c(2n) (the number of true cycles of length 2n in which a certain node is included) for zeolite GIS = Cycle class sequences of Gismondine Ca4 [ Al8Si8O32 ] . 16 H2O.
+ * A019017 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite GIS = Cycle class sequences of Gismondine Ca4 [ Al8Si8O32 <code>] </code>. 16 H2O.
  * @author Sean A. Irvine
  */
 public class A019017 extends A018940 {

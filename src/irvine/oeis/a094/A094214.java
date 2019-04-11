@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A094214 Decimal expansion of 1/phi = phi - 1.
+ * A094214 Decimal expansion of 1/phi = phi <code>- 1</code>.
  * @author Sean A. Irvine
  */
 public class A094214 extends DecimalExpansionSequence {

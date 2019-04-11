@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A011916 a(n) = ((b(n)-1)+sqrt(3*b(n)^2-4*b(n)+1))/2, where b(n) is A011922(n).
+ * A011916 <code>a(n) =</code> ((b(n)-1)+sqrt(3*b(n)^2-4*b(n)+1))/2, where b(n) is A011922(n).
  * @author Sean A. Irvine
  */
 public class A011916 extends LinearRecurrence {

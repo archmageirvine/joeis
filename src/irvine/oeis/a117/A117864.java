@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117864 Number of palindromes (in base 5) below 5^n.
+ * A117864 Number of palindromes (in base <code>5)</code> below <code>5^n</code>.
  * @author Sean A. Irvine
  */
 public class A117864 extends LinearRecurrence {

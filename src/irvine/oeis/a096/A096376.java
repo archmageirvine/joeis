@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096376 a(n) = n + (n-1)^2 + (n+1)^2.
+ * A096376 <code>a(n) = n + (n-1)^2 + (n+1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A096376 extends LinearRecurrence {

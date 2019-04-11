@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145578 Weight distribution of [18,9,6] binary extended quadratic-residue (or QR) code.
+ * A145578 Weight distribution of <code>[18,9,6]</code> binary extended quadratic-residue (or QR) code.
  * @author Georg Fischer
  */
 public class A145578 extends FiniteSequence {

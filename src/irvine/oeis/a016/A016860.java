@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016860 (5n)^12.
+ * A016860 <code>(5n)^12</code>.
  * @author Sean A. Irvine
  */
 public class A016860 implements Sequence {

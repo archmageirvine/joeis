@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003955 (1*3*5*...*(2n+1))^2*(2n+4).
+ * A003955 <code>(1*3*5*</code>...*(2n+1))^2*(2n+4).
  * @author Sean A. Irvine
  */
 public class A003955 implements Sequence {

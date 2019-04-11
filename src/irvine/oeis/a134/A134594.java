@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134594 a(n) = n^2 + 10*n + 5: coefficients of the irrational part of (1 + sqrt(n))^5.
+ * A134594 <code>a(n) = n^2 + 10*n + 5</code>: coefficients of the irrational part of <code>(1 + sqrt(n))^5</code>.
  * @author Sean A. Irvine
  */
 public class A134594 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172077 n*(n+1)*(7*n^2-n-4)/4.
+ * A172077 <code>n*(n+1)*(7*n^2-n-4)/4</code>.
  * @author Sean A. Irvine
  */
 public class A172077 extends LinearRecurrence {

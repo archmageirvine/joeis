@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054639 Queneau numbers: numbers n such that the Queneau-Daniel permutation {1, 2, 3, ..., n} -&gt; {n, 1, n-1, 2, n-2, 3, ...} is of order n.
+ * A054639 Queneau numbers: numbers n such that the Queneau-Daniel permutation <code>{1, 2, 3, </code>..., <code>n} -&gt; {n, 1, n-1, 2, n-2, 3, </code>...} is of order n.
  * @author Sean A. Irvine
  */
 public class A054639 implements Sequence {

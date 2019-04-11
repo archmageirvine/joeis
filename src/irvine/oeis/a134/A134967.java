@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134967 List of quadruples: [-2n-1, 2n+2, -2n-1, 2n+2].
+ * A134967 List of quadruples: <code>[-2n-1, 2n+2, -2n-1, 2n+2]</code>.
  * @author Sean A. Irvine
  */
 public class A134967 extends LinearRecurrence {

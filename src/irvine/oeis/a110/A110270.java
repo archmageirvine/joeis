@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110270 a(n) = (n mod 2)*(n mod 3).
+ * A110270 <code>a(n) = (n mod 2)*(n mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A110270 extends LinearRecurrence {

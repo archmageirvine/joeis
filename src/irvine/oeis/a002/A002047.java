@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A002047 Number of 3 X (2n+1) zero-sum arrays with entries -n,..,0,..,n.
+ * A002047 Number of 3 X <code>(2n+1)</code> zero-sum arrays with entries <code>-n,</code>..,0,..,n.
  * @author Sean A. Irvine
  */
 public class A002047 implements Sequence {

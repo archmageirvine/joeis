@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060455 7th-order Fibonacci numbers with a(0)=...=a(6)=1.
+ * A060455 7th-order Fibonacci numbers with <code>a(0)=</code>...=a(6)=1.
  * @author Sean A. Irvine
  */
 public class A060455 extends LinearRecurrence {

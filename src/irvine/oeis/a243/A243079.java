@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243079 Numbers n such that A = n - DigitProd(n) is divisible by the largest power of 10 &lt;= A.
+ * A243079 Numbers n such that A <code>= n -</code> DigitProd(n) is divisible by the largest power of <code>10 &lt;=</code> A.
  * @author Georg Fischer
  */
 public class A243079 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304508 a(n) = 5*(3*n+1)*(9*n+8)/2 (n&gt;=0). 
+ * A304508 <code>a(n) = 5*(3*n+1)*(9*n+8)/2 (n&gt;=0)</code>.
  * @author Georg Fischer
  */
 public class A304508 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A001761 a(n) = (2*n)!/(n+1)!.
+ * A001761 <code>a(n) = (2*n)!/(n+1)!</code>.
  * @author Sean A. Irvine
  */
 public class A001761 extends A000108 {

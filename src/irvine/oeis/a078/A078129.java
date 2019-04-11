@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078129 Numbers which cannot be written as sum of cubes &gt; 1.
+ * A078129 Numbers which cannot be written as sum of cubes <code>&gt; 1</code>.
  * @author Georg Fischer
  */
 public class A078129 extends FiniteSequence {

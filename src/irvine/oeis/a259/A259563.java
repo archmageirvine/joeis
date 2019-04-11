@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259563 a(n) = 81*n^3*(n-1)^5*(n+1)^2*(n^2-6*n+1)*(n^3-79*n^2+163*n-81).
+ * A259563 <code>a(n) = 81*n^3*(n-1)^5*(n+1)^2*(n^2-6*n+1)*(n^3-79*n^2+163*n-81)</code>.
  * @author Sean A. Irvine
  */
 public class A259563 extends LinearRecurrence {

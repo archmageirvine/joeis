@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107942 a(n) = (n+1)(n+2)^3*(n+3)^3*(n+4)(2n+5)/4320.
+ * A107942 <code>a(n) = (n+1)(n+2)^3*(n+3)^3*(n+4)(2n+5)/4320</code>.
  * @author Sean A. Irvine
  */
 public class A107942 extends LinearRecurrence {

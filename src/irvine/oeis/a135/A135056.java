@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135056 Pentanacci numbers: a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5) if n&gt;=5, and a(n) = n otherwise.
+ * A135056 Pentanacci numbers: <code>a(n) = a(n-1) + a(n-2) + a(n-3) + a(n-4) + a(n-5)</code> if <code>n&gt;=5,</code> and <code>a(n) = n</code> otherwise.
  * @author Sean A. Irvine
  */
 public class A135056 extends LinearRecurrence {

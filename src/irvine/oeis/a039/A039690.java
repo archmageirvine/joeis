@@ -4,7 +4,7 @@ package irvine.oeis.a039;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A039690 Ambitious numbers: numbers n with the property that if a number ends in n then it is divisible by n. 
+ * A039690 Ambitious numbers: numbers n with the property that if a number ends in n then it is divisible by n.
  * @author Georg Fischer
  */
 public class A039690 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178906 a(n)= 111*a(n-1)-100*a(n-2) with a(0)=0 and a(1)=1.
+ * A178906 <code>a(n)= 111*a(n-1)-100*a(n-2)</code> with <code>a(0)=0</code> and a(1)=1.
  * @author Sean A. Irvine
  */
 public class A178906 extends LinearRecurrence {

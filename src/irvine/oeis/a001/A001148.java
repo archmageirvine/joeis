@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001148 Final digit of 3^n.
+ * A001148 Final digit of <code>3^n</code>.
  * @author Sean A. Irvine
  */
 public class A001148 implements Sequence {

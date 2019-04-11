@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187452 Number of right isosceles triangles that can be formed from the n^2 points of n X n grid of points (or geoboard).
+ * A187452 Number of right isosceles triangles that can be formed from the <code>n^2</code> points of n X n grid of points (or geoboard).
  * @author Sean A. Irvine
  */
 public class A187452 extends LinearRecurrence {

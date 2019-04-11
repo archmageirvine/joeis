@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001077 Numerators of continued fraction convergents to sqrt(5).
+ * A001077 Numerators of continued fraction convergents to <code>sqrt(5)</code>.
  * @author Sean A. Irvine
  */
 public class A001077 implements Sequence {

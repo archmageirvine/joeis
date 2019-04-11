@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070406 a(n) = 7^n mod 15.
+ * A070406 <code>a(n) = 7^n mod 15</code>.
  * @author Sean A. Irvine
  */
 public class A070406 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011902 [ n(n-1)(n-2)/20 ].
+ * A011902 <code>[ n(n-1)(n-2)/20 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011902 implements Sequence {

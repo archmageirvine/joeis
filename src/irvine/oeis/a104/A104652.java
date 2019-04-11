@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104652 Numbers k such that 29*k^2 + 29*k +1 = n^2, n sequence = A104651.
+ * A104652 Numbers k such that 29*k^2 + 29*k <code>+1 = n^2, n</code> sequence = A104651.
  * @author Sean A. Irvine
  */
 public class A104652 extends LinearRecurrence {

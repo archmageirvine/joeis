@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168458 a(n) = 7 + 10*floor((n-1)/2).
+ * A168458 <code>a(n) = 7 + 10*floor((n-1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A168458 extends LinearRecurrence {

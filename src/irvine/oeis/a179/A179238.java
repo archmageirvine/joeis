@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179238 Numerators in convergents to infinitely repeating period 3 palindromic continued fraction [1,2,1,...].
+ * A179238 Numerators in convergents to infinitely repeating period 3 palindromic continued fraction <code>[1,2,1,</code>...].
  * @author Sean A. Irvine
  */
 public class A179238 extends LinearRecurrence {

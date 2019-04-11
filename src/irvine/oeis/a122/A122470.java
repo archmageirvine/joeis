@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122470 Two digit numbers generated from the set {2,3,4}.
+ * A122470 Two digit numbers generated from the set <code>{2,3,4}</code>.
  * @author Georg Fischer
  */
 public class A122470 extends FiniteSequence {

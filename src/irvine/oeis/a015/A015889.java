@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015889 Numbers n such that n | 4^n + 4.
+ * A015889 Numbers n such that n | <code>4^n + 4</code>.
  * @author Sean A. Irvine
  */
 public class A015889 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007071 First row of 2-shuffle of spectral array W( sqrt 2 ).
+ * A007071 First row of 2-shuffle of spectral array W( <code>sqrt 2 )</code>.
  * @author Sean A. Irvine
  */
 public class A007071 extends MemoryFunction1<Z> implements Sequence {

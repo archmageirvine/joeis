@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180928 1 + product of any two terms is a triangular number.
+ * A180928 <code>1 +</code> product of any two terms is a triangular number.
  * @author Georg Fischer
  */
 public class A180928 extends FiniteSequence {

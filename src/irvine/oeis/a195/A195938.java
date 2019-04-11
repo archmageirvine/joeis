@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195938 n/2 if n mod 4 = 2 or 0 otherwise.
+ * A195938 <code>n/2</code> if <code>n mod 4 = 2</code> or 0 otherwise.
  * @author Sean A. Irvine
  */
 public class A195938 extends LinearRecurrence {

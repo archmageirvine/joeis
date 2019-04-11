@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A146889 Weight distribution of [12,6,4] double circulant code.
+ * A146889 Weight distribution of <code>[12,6,4]</code> double circulant code.
  * @author Georg Fischer
  */
 public class A146889 extends FiniteSequence {

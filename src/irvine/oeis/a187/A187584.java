@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187584 Least number divisible by at least n of its digits, different and &gt;1.
+ * A187584 Least number divisible by at least n of its digits, different and <code>&gt;1</code>.
  * @author Georg Fischer
  */
 public class A187584 extends FiniteSequence {

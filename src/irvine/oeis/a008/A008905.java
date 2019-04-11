@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008905 Leading digit of n!.
+ * A008905 Leading digit of <code>n!</code>.
  * @author Sean A. Irvine
  */
 public class A008905 implements Sequence {

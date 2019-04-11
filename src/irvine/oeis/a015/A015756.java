@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015756 a(n) is the least multiple of n, k*n say, such that phi(k) | sigma(k).
+ * A015756 <code>a(n)</code> is the least multiple of <code>n,</code> k*n say, such that phi(k) | sigma(k).
  * @author Sean A. Irvine
  */
 public class A015756 implements Sequence {

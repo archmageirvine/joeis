@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046051 Number of prime factors of Mersenne number M(n) = 2^n - 1 (counted with multiplicity).
+ * A046051 Number of prime factors of Mersenne number M(n) <code>= 2^n - 1</code> (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A046051 implements Sequence {

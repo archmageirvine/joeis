@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212579 Number of (w,x,y,z) with all terms in {1,...,n} and min{|w-x|,|w-y|}=min{|x-y|,|x-z|}.
+ * A212579 Number of (w,x,y,z) with all terms in <code>{1,</code>...,n} and min{|w-x|,|w-y|}=min{|x-y|,|x-z|}.
  * @author Sean A. Irvine
  */
 public class A212579 extends LinearRecurrence {

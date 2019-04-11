@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211627 Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and w+5x+5y&gt;0.
+ * A211627 Number of ordered triples (w,x,y) with all terms in <code>{-n,</code>...-1,1,...,n} and w+5x+5y&gt;0.
  * @author Sean A. Irvine
  */
 public class A211627 extends LinearRecurrence {

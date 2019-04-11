@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222716 Numbers which are both the sum of n+1 consecutive triangular numbers and the sum of the n-1 immediately following triangular numbers.
+ * A222716 Numbers which are both the sum of <code>n+1</code> consecutive triangular numbers and the sum of the <code>n-1</code> immediately following triangular numbers.
  * @author Sean A. Irvine
  */
 public class A222716 extends LinearRecurrence {

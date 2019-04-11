@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037551 Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,2,2.
+ * A037551 Decimal expansion of <code>a(n)</code> is given by the first n terms of the periodic sequence with initial period <code>1,2,2</code>.
  * @author Sean A. Irvine
  */
 public class A037551 extends LinearRecurrence {

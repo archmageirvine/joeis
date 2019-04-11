@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A051882 Call m strict-sense Egyptian if we can partition m = x_1+x_2+...+x_k into distinct positive integers x_i such that Sum_{i=1..k} 1/x_i = 1; sequence gives all numbers that are not strict-sense Egyptian.
+ * A051882 Call m strict-sense Egyptian if we can partition m = x_1+x_2+...+x_k into distinct positive integers x_i such that Sum_{i=1..k} 1/x_i <code>= 1</code>; sequence gives all numbers that are not strict-sense Egyptian.
  * @author Georg Fischer
  */
 public class A051882 extends FiniteSequence {

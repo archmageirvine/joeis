@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072968 Least k&gt;0 such that the last digit of (n+k)^(n+k) is the same as the last digit of n^n.
+ * A072968 Least k&gt;0 such that the last digit of (n+k)^(n+k) is the same as the last digit of <code>n^n</code>.
  * @author Sean A. Irvine
  */
 public class A072968 extends LinearRecurrence {

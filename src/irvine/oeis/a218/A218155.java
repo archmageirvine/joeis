@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218155 Curvatures of tangents circle in circle of curvature -1-1.
+ * A218155 Curvatures of tangents circle in circle of curvature <code>-1-1</code>.
  * @author Sean A. Irvine
  */
 public class A218155 extends LinearRecurrence {

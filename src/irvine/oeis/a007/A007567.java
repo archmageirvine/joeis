@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007567 Knopfmacher expansion of 1/2: a(n+1) = a(n-1)(a(n)+1)-1.
+ * A007567 Knopfmacher expansion of <code>1/2</code>: <code>a(n+1) = a(n-1)(a(n)+1)-1</code>.
  * @author Sean A. Irvine
  */
 public class A007567 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.a005.A005106;
 
 /**
- * A081636 Class 8+ primes.
+ * A081636 Class <code>8+</code> primes.
  * @author Sean A. Irvine
  */
 public class A081636 extends A005106 {

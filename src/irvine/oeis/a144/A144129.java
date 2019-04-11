@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144129 ChebyshevT(3, n).
+ * A144129 ChebyshevT(3, <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A144129 extends LinearRecurrence {

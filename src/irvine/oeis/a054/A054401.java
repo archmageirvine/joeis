@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054401 5^n-4^n-1.
+ * A054401 <code>5^n-4^n-1</code>.
  * @author Sean A. Irvine
  */
 public class A054401 extends LinearRecurrence {

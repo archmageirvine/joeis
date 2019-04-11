@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048572 a(n) = sum of digits of a(n-1)*a(n-2).
+ * A048572 <code>a(n) =</code> sum of digits of <code>a(n-1)*a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A048572 extends LinearRecurrence {

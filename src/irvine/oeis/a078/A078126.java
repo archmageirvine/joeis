@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078126 Negative determinant of n X n matrix M_{i,j}=1 if i=j or i+j=1 (mod 2).
+ * A078126 Negative determinant of n X n matrix M_{i,j}=1 if i=j or i+j=1 <code>(mod 2)</code>.
  * @author Sean A. Irvine
  */
 public class A078126 extends LinearRecurrence {

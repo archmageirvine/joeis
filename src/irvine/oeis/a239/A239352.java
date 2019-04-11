@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239352 van Heijst's upper bound on the number of squares inscribed by a real algebraic curve in R^2 of degree n, if the number is finite.
+ * A239352 van Heijst's upper bound on the number of squares inscribed by a real algebraic curve in R^2 of degree <code>n,</code> if the number is finite.
  * @author Sean A. Irvine
  */
 public class A239352 extends LinearRecurrence {

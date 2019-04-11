@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133683 Linear recurrence a(n) = a(n-3) + 2a(n-5), starting from all-one initial conditions.
+ * A133683 Linear recurrence <code>a(n) = a(n-3) + 2a(n-5),</code> starting from all-one initial conditions.
  * @author Sean A. Irvine
  */
 public class A133683 extends LinearRecurrence {

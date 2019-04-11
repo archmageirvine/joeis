@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090394 Ninth diagonal (m=8) of triangle A084938; a(n) = A084938(n+8,n) = (n^8 + 84*n^7 + 3346*n^6 + 84840*n^5 + 1550689*n^4 + 21632436*n^3 + 224782284*n^2 + 1377648720*n)/40320.
+ * A090394 Ninth diagonal (m=8) of triangle A084938; <code>a(n) =</code> A084938(n+8,n) <code>= (n^8 + 84*n^7 + 3346*n^6 + 84840*n^5 + 1550689*n^4 + 21632436*n^3 + 224782284*n^2 + 1377648720*n)/40320</code>.
  * @author Sean A. Irvine
  */
 public class A090394 extends LinearRecurrence {

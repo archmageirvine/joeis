@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007079 Number of labeled regular tournaments with 2n+1 nodes.
+ * A007079 Number of labeled regular tournaments with <code>2n+1</code> nodes.
  * @author Sean A. Irvine
  */
 public class A007079 implements Sequence {

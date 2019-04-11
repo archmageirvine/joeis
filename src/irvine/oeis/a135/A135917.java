@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135917 a(n) = (n^6 - 30*n^4 + 45*n^3 + 206*n^2 - 576*n + 384)/6. 
+ * A135917 <code>a(n) = (n^6 - 30*n^4 + 45*n^3 + 206*n^2 - 576*n + 384)/6</code>.
  * @author Georg Fischer
  */
 public class A135917 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006570 From trees with valency &lt;= 3.
+ * A006570 From trees with valency <code>&lt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A006570 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003312 a(1) = 3; for n&gt;0, a(n+1) = a(n) + floor((a(n)-1)/2).
+ * A003312 <code>a(1) = 3</code>; for <code>n&gt;0, a(n+1) = a(n) + floor((a(n)-1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A003312 implements Sequence {

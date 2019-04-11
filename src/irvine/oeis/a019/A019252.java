@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019252 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite VNI = VPI-9 Rb44K4[ Zn24Si96O240 ] . 48 H2O.
+ * A019252 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite VNI = VPI-9 Rb44K4[ Zn24Si96O240 <code>] </code>. 48 H2O.
  * @author Sean A. Irvine
  */
 public class A019252 extends A018940 {

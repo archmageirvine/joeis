@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000882 Number of twin prime pairs &lt;= product of first n primes.
+ * A000882 Number of twin prime pairs <code>&lt;=</code> product of first n primes.
  * @author Sean A. Irvine
  */
 public class A000882 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253012 a(n) = ceiling( (n+1) * (n+2) / 12).
+ * A253012 <code>a(n) =</code> ceiling( <code>(n+1) * (n+2) / 12)</code>.
  * @author Sean A. Irvine
  */
 public class A253012 extends LinearRecurrence {

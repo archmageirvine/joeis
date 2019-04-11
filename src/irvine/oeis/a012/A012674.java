@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012674 sec(tanh(x)*tan(x)) = 1+12/4!*x^4+14672/8!*x^8+120702912/12!*x^12...
+ * A012674 sec(tanh(x)*tan(x)) <code>= 1+12/4!*x^4+14672/8!*x^8+120702912/12!*x^12</code>...
  * @author Sean A. Irvine
  */
 public class A012674 implements Sequence {

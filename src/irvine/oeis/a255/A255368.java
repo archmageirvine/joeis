@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255368 a(n) = -(-1)^n * 2 * n / 3 if n divisible by 3, a(n) = -(-1)^n * n otherwise.
+ * A255368 <code>a(n) = -(-1)^n * 2 * n / 3</code> if n divisible by <code>3, a(n) = -(-1)^n * n</code> otherwise.
  * @author Sean A. Irvine
  */
 public class A255368 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049101 Numbers n such that n divides (product of digits of n) * (sum of digits of n).
+ * A049101 Numbers n such that n divides (product of digits of <code>n) *</code> (sum of digits of <code>n)</code>.
  * @author Georg Fischer
  */
 public class A049101 extends FiniteSequence {

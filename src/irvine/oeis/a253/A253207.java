@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253207 a(n) = number of permutations of (1,2,...,n) producible by an ordered quadruple of distinct transpositions.
+ * A253207 <code>a(n) =</code> number of permutations of <code>(1,2,</code>...,n) producible by <code>an</code> ordered quadruple of distinct transpositions.
  * @author Sean A. Irvine
  */
 public class A253207 extends LinearRecurrence {

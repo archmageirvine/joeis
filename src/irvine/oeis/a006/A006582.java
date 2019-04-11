@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006582 a(n) = Sum_{k=1..n-1} k XOR n-k.
+ * A006582 <code>a(n) =</code> Sum_{k=1..n-1} k XOR n-k.
  * @author Sean A. Irvine
  */
 public class A006582 implements Sequence {

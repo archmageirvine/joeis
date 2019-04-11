@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005448 Centered triangular numbers: a(n) = 3n(n-1)/2 + 1.
+ * A005448 Centered triangular numbers: <code>a(n) = 3n(n-1)/2 + 1</code>.
  * @author Sean A. Irvine
  */
 public class A005448 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007695;
 
 /**
- * A011830 f-vectors for simplicial complexes of dimension at most 5 on at most n-1 vertices.
+ * A011830 f-vectors for simplicial complexes of dimension at most 5 on at most <code>n-1</code> vertices.
  * @author Sean A. Irvine
  */
 public class A011830 extends A007695 {

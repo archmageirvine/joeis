@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078135 Numbers which cannot be written as a sum of squares &gt; 1.
+ * A078135 Numbers which cannot be written as a sum of squares <code>&gt; 1</code>.
  * @author Georg Fischer
  */
 public class A078135 extends FiniteSequence {

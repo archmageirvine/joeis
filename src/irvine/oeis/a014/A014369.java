@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014369 a(n) = bcd, where n = C(b,3)+C(c,2)+C(d,1), b&gt;c&gt;d&gt;=0.
+ * A014369 <code>a(n) =</code> bcd, where <code>n =</code> C(b,3)+C(c,2)+C(d,1), b&gt;c&gt;d&gt;=0.
  * @author Sean A. Irvine
  */
 public class A014369 implements Sequence {

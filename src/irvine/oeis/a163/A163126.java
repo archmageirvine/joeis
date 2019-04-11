@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A163126 a(1)=1. a(n) = the number of integers k, 1 &lt;= k &lt;= n-1, where a(k) is coprime to n-k.
+ * A163126 <code>a(1)=1</code>. <code>a(n) =</code> the number of integers k, <code>1 &lt;=</code> k <code>&lt;= n-1,</code> where a(k) is coprime to n-k.
  * @author Sean A. Irvine
  */
 public class A163126 implements Sequence {

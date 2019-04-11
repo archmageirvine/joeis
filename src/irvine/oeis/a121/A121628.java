@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121628 Nonnegative k such that 3*k + 1 is a perfect cube.
+ * A121628 Nonnegative k such that 3*k <code>+ 1</code> is a perfect cube.
  * @author Sean A. Irvine
  */
 public class A121628 extends LinearRecurrence {

@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A001430 Number of graphs with n nodes and n-2 edges.
+ * A001430 Number of graphs with n nodes and <code>n-2</code> edges.
  * @author Sean A. Irvine
  */
 public class A001430 extends MemoryFunction1<Polynomial<Q>> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014987 a(n) = (1 - (-6)^n)/7.
+ * A014987 <code>a(n) = (1 - (-6)^n)/7</code>.
  * @author Sean A. Irvine
  */
 public class A014987 implements Sequence {

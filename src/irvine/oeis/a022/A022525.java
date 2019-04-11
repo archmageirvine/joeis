@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022525 Nexus numbers (n+1)^9-n^9.
+ * A022525 Nexus numbers <code>(n+1)^9-n^9</code>.
  * @author Sean A. Irvine
  */
 public class A022525 extends LinearRecurrence {

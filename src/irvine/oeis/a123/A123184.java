@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123184 A linear sum zero 9 X 9 matrix Markov: characteristic polynomial: (-3 + x)(-1 + x) x^3 (-1 + 3 x + 27 x^2 - 12 x^3 + x^4).
+ * A123184 A linear sum zero 9 X 9 matrix Markov: characteristic polynomial: <code>(-3 + x)(-1 + x) x^3 (-1 + 3 x + 27 x^2 - 12 x^3 + x^4)</code>.
  * @author Sean A. Irvine
  */
 public class A123184 extends LinearRecurrence {

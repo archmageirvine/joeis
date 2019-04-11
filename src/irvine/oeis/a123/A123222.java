@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123222 Expansion of -x * (x-1) * (3*x^2-1) / (9*x^4-8*x^3+4*x-1). 
+ * A123222 Expansion of <code>-x * (x-1) * (3*x^2-1) / (9*x^4-8*x^3+4*x-1)</code>.
  * @author Georg Fischer
  */
 public class A123222 extends LinearRecurrence {

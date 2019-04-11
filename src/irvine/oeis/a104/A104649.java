@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104649 Numerators (denominators are all 840) of x-coordinates of four points on the parabola y = x^2, x &gt;= 0, at rational distances (distance between any two points is rational).
+ * A104649 Numerators (denominators are all <code>840)</code> of x-coordinates of four points on the parabola y <code>= x^2, x &gt;= 0,</code> at rational distances (distance between any two points is rational).
  * @author Georg Fischer
  */
 public class A104649 extends FiniteSequence {

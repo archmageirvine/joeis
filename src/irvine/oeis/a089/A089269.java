@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A089269 Squarefree numbers congruent to 1 or 2 mod 4.
+ * A089269 Squarefree numbers congruent to 1 or <code>2 mod 4</code>.
  * @author Sean A. Irvine
  */
 public class A089269 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A089781 Successive coprime numbers with distinct successive differences: gcd(a(k+1),a(k)) = gcd(a(m+1),a(m)) = 1 and a(k+1)-a(k) = a(m+1)-a(m) &lt;==&gt; m=k.
+ * A089781 Successive coprime numbers with distinct successive differences: gcd(a(k+1),a(k)) = gcd(a(m+1),a(m)) <code>= 1</code> and a(k+1)-a(k) = a(m+1)-a(m) <code>&lt;==&gt;</code> m=k.
  * @author Sean A. Irvine
  */
 public class A089781 implements Sequence {

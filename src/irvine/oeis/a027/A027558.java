@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027558 Number of 3-unbalanced strings of length n (=2^n-A027557[ n ]).
+ * A027558 Number of 3-unbalanced strings of length n (=2^n-A027557[ <code>n ])</code>.
  * @author Sean A. Irvine
  */
 public class A027558 extends LinearRecurrence {

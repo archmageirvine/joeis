@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202481 Column k = 3 of triangular array in A165241. 
+ * A202481 Column k <code>= 3</code> of triangular array in A165241.
  * @author Georg Fischer
  */
 public class A202481 extends LinearRecurrence {

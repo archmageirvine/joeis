@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000351 Powers of 5: a(n) = 5^n.
+ * A000351 Powers of 5: <code>a(n) = 5^n</code>.
  * @author Sean A. Irvine
  */
 public class A000351 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105918 Weight distribution of [24,12,6] odd Golay code.
+ * A105918 Weight distribution of <code>[24,12,6]</code> odd Golay code.
  * @author Georg Fischer
  */
 public class A105918 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001073 Label a 1 cm ruler with digits 1 cm wide.
+ * A001073 Label <code>a 1</code> cm ruler with digits 1 cm wide.
  * @author Sean A. Irvine
  */
 public class A001073 implements Sequence {

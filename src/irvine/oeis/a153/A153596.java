@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153596 a(n) = ((5 + sqrt(3))^n - (5 - sqrt(3))^n)/(2*sqrt(3)).
+ * A153596 <code>a(n) = ((5 + sqrt(3))^n - (5 - sqrt(3))^n)/(2*sqrt(3))</code>.
  * @author Sean A. Irvine
  */
 public class A153596 extends LinearRecurrence {

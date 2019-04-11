@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A265614 A set of nine consecutive primes forming a 3 X 3 semimagic square with the smallest magic constant (65573).
+ * A265614 A set of nine consecutive primes forming <code>a 3</code> X 3 semimagic square with the smallest magic constant <code>(65573)</code>.
  * @author Georg Fischer
  */
 public class A265614 extends FiniteSequence {

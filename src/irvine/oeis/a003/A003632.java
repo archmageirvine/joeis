@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003632 Inert rational primes in Q(sqrt 7), or, 7 is not a square mod p.
+ * A003632 Inert rational primes in Q(sqrt <code>7),</code> or, 7 is not a square mod p.
  * @author Sean A. Irvine
  */
 public class A003632 implements Sequence {

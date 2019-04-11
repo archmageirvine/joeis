@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103532 Number of divisors of 240^n.
+ * A103532 Number of divisors of <code>240^n</code>.
  * @author Sean A. Irvine
  */
 public class A103532 extends LinearRecurrence {

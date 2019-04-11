@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033954 Second 10-gonal (or decagonal) numbers: n*(4*n+3).
+ * A033954 Second 10-gonal (or decagonal) numbers: <code>n*(4*n+3)</code>.
  * @author Sean A. Irvine
  */
 public class A033954 extends LinearRecurrence {

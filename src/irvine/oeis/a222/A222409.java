@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222409 Numbers of the form 8n + [0,3,6,4,7]. 
+ * A222409 Numbers of the form <code>8n + [0,3,6,4,7]</code>.
  * @author Georg Fischer
  */
 public class A222409 extends LinearRecurrence {

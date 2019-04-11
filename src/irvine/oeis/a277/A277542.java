@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277542 a(n) = denominator((n^2 + 3*n + 2)/n^3).
+ * A277542 <code>a(n) =</code> denominator((n^2 <code>+ 3*n + 2)/n^3)</code>.
  * @author Sean A. Irvine
  */
 public class A277542 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007648 n*18^n + 1 is a prime.
+ * A007648 <code>n*18^n + 1</code> is a prime.
  * @author Sean A. Irvine
  */
 public class A007648 implements Sequence {

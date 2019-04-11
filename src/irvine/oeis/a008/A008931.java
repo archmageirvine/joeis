@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008931 Expansion of (2/(1+sqrt(1-36*x)))^(1/3).
+ * A008931 Expansion of <code>(2/(1+sqrt(1-36*x)))^(1/3)</code>.
  * @author Sean A. Irvine
  */
 public class A008931 implements Sequence {

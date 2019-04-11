@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012858 Numerator of [x^(4n+2)] in the Taylor series log(cosec(x)*sinh(x))= x^2/3 +2*x^6/2835 +2*x^10/467775 +4*x^14/127702575 +..
+ * A012858 Numerator of <code>[x^(4n+2)]</code> in the Taylor series log(cosec(x)*sinh(x))= <code>x^2/3 +2*x^6/2835 +2*x^10/467775 +4*x^14/127702575 +</code>..
  * @author Sean A. Irvine
  */
 public class A012858 implements Sequence {

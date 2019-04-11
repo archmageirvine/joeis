@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242811 a(n) is the largest n-digit number whose truncation after its first k digits is divisible by the k-th Lucas number (A000032(n)) for k = 1..n.
+ * A242811 <code>a(n)</code> is the largest n-digit number whose truncation after its first k digits is divisible by the k-th Lucas number (A000032(n)) for k <code>= 1</code>..n.
  * @author Georg Fischer
  */
 public class A242811 extends FiniteSequence {

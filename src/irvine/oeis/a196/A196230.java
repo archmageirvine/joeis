@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A196230 Euler primes: values of x^2 - x + k for x = 1..k-1, where k is one of Euler's "lucky" numbers 2, 3, 5, 11, 17, 41.
+ * A196230 Euler primes: values of <code>x^2 - x +</code> k for <code>x = 1</code>..k-1, where k is one of Euler's "lucky" numbers <code>2, 3, 5, 11, 17, 41</code>.
  * @author Georg Fischer
  */
 public class A196230 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162959 The pairs (x,y) such that (x^2 + y^2)/(x*y + 1) is a perfect square, i.e., 4.
+ * A162959 The pairs <code>(x</code>,y) such that <code>(x^2 +</code> y^2)/(x*y <code>+ 1)</code> is a perfect square, i.e., 4.
  * @author Sean A. Irvine
  */
 public class A162959 extends LinearRecurrence {

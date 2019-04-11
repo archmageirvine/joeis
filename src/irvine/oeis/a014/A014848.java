@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014848 n^2 - floor( n/2 ).
+ * A014848 <code>n^2 - floor( n/2 )</code>.
  * @author Sean A. Irvine
  */
 public class A014848 implements Sequence {

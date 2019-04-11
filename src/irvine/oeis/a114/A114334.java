@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114334 Divisors of 6^6.
+ * A114334 Divisors of <code>6^6</code>.
  * @author Georg Fischer
  */
 public class A114334 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055648 Integers in base 13 with each base 13 digit represented by 2 decimal digits. 
+ * A055648 Integers in base 13 with each base 13 digit represented by 2 decimal digits.
  * Integers in base 13 with each base 13 digit represented by 2 decimal digits.
  * @author Georg Fischer
  */

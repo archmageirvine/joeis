@@ -4,7 +4,7 @@ package irvine.oeis.a170;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A170793 a(n) = n^10*(n + 1)/2. 
+ * A170793 <code>a(n) = n^10*(n + 1)/2</code>.
  * @author Georg Fischer
  */
 public class A170793 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060834 a(n) = 6*n^2 + 6*n + 31.
+ * A060834 <code>a(n) = 6*n^2 + 6*n + 31</code>.
  * @author Sean A. Irvine
  */
 public class A060834 extends LinearRecurrence {

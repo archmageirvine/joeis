@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A100366 a(n) is the least prime number q such that q,q+1,q+2,q+3,...,q+n-1 have 2,4,8,...,2^n divisors respectively.
+ * A100366 <code>a(n)</code> is the least prime number q such that q,q+1,q+2,q+3,...,q+n-1 have <code>2,4,8,</code>...,2^n divisors respectively.
  * @author Georg Fischer
  */
 public class A100366 extends FiniteSequence {

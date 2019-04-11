@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018901 Central hexanomial coefficients: largest coefficient of (1 + x + ... + x^5)^n.
+ * A018901 Central hexanomial coefficients: largest coefficient of <code>(1 + x + </code>... <code>+ x^5)^n</code>.
  * @author Sean A. Irvine
  */
 public class A018901 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059255 Both sum of n+1 consecutive squares and sum of the immediately following n consecutive squares.
+ * A059255 Both sum of <code>n+1</code> consecutive squares and sum of the immediately following n consecutive squares.
  * @author Sean A. Irvine
  */
 public class A059255 extends LinearRecurrence {

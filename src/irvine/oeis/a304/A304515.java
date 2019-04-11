@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304515 a(n) = 159*2^n - 222 (n&gt;=1). 
+ * A304515 <code>a(n) = 159*2^n - 222 (n&gt;=1)</code>.
  * @author Georg Fischer
  */
 public class A304515 extends LinearRecurrence {

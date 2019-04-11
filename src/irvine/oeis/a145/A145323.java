@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145323 Numbers x such that there exists n in N : (x+1)^3-x^3=31*n^2.
+ * A145323 Numbers x such that there exists n in N : <code>(x+1)^3-x^3=31*n^2</code>.
  * @author Sean A. Irvine
  */
 public class A145323 extends LinearRecurrence {

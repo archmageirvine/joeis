@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003052;
 
 /**
- * A006378 Prime self (or Colombian) numbers: primes not expressible as the sum of an integer and its digit sum.
+ * A006378 Prime self (or Colombian) numbers: primes not expressible as the sum of <code>an</code> integer and its digit sum.
  * @author Sean A. Irvine
  */
 public class A006378 implements Sequence {

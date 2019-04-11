@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126587 a(n) = number of integer lattice points inside the right-angle triangle with legs 3n and 4n (and hypotenuse 5n).
+ * A126587 <code>a(n) =</code> number of integer lattice points inside the right-angle triangle with legs <code>3n</code> and <code>4n</code> (and hypotenuse <code>5n)</code>.
  * @author Sean A. Irvine
  */
 public class A126587 extends LinearRecurrence {

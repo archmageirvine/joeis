@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A136377 Write down numbers from 0 to 19 around a circle. Start at 1, jump 7; repeat; when you land on a number it is removed.
+ * A136377 Write down numbers from 0 to 19 around a circle. Start at <code>1,</code> jump 7; repeat; when you land on a number it is removed.
  * @author Georg Fischer
  */
 public class A136377 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098878 a(n) = (2^n - 1)^3 - 2.
+ * A098878 <code>a(n) = (2^n - 1)^3 - 2</code>.
  * @author Sean A. Irvine
  */
 public class A098878 extends LinearRecurrence {

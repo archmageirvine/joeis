@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072465 A Fibonacci-like model in which each pair of rabbits dies after the birth of their 4th litter: a(n) = a(n-2) + a(n-3) + a(n-4) + a(n-5).
+ * A072465 A Fibonacci-like model in which each pair of rabbits dies after the birth of their 4th litter: <code>a(n) = a(n-2) + a(n-3) + a(n-4) + a(n-5)</code>.
  * @author Sean A. Irvine
  */
 public class A072465 extends LinearRecurrence {

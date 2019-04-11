@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008549 Number of ways of choosing at most n-1 items from a set of size 2n+1.
+ * A008549 Number of ways of choosing at most <code>n-1</code> items from a set of size <code>2n+1</code>.
  * @author Sean A. Irvine
  */
 public class A008549 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226516 Number of (18,7)-reverse multiples with n digits. 
+ * A226516 Number of <code>(18</code>,7)-reverse multiples with n digits.
  * @author Georg Fischer
  */
 public class A226516 extends LinearRecurrence {

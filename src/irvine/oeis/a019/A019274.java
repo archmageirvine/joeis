@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A019274 Number of recursive calls needed to compute the n-th Fibonacci number F(n), starting with F(1) = F(2) = 1.
+ * A019274 Number of recursive calls needed to compute the n-th Fibonacci number F(n), starting with F(1) = F(2) <code>= 1</code>.
  * @author Sean A. Irvine
  */
 public class A019274 extends LinearRecurrence {

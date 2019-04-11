@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105846 Numbers n such that 41*n^2 + 41*n + 1 is a square.
+ * A105846 Numbers n such that <code>41*n^2 + 41*n + 1</code> is a square.
  * @author Sean A. Irvine
  */
 public class A105846 extends LinearRecurrence {

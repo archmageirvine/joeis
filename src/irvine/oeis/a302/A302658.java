@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302658 Number of minimal total dominating sets in the wheel graph on n nodes. 
+ * A302658 Number of minimal total dominating sets in the wheel graph on n nodes.
  * @author Georg Fischer
  */
 public class A302658 extends LinearRecurrence {

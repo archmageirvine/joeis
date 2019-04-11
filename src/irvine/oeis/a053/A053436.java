@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053436 a(n) = n+1 + ceiling(n/2)*(ceiling(n/2)-1)*(ceiling(n/2)+1)/6.
+ * A053436 <code>a(n) = n+1 +</code> ceiling(n/2)*(ceiling(n/2)-1)*(ceiling(n/2)+1)/6.
  * @author Sean A. Irvine
  */
 public class A053436 extends LinearRecurrence {

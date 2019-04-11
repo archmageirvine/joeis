@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263536 Row sum of an equilateral triangle tiled with the 3,4,5 Pythagorean triple.
+ * A263536 Row sum of <code>an</code> equilateral triangle tiled with the <code>3,4,5</code> Pythagorean triple.
  * @author Sean A. Irvine
  */
 public class A263536 extends LinearRecurrence {

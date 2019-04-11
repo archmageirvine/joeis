@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006412 Nonseparable planar tree-rooted maps with n + 3 edges and 4 vertices.
+ * A006412 Nonseparable planar tree-rooted maps with <code>n + 3</code> edges and 4 vertices.
  * @author Sean A. Irvine
  */
 public class A006412 implements Sequence {

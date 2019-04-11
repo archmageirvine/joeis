@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295340 Numbers congruent to 11 or 13 mod 15. 
+ * A295340 Numbers congruent to 11 or <code>13 mod 15</code>.
  * @author Georg Fischer
  */
 public class A295340 extends LinearRecurrence {

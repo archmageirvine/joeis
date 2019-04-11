@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A147811 Alexandrian integers: numbers of the form n=pqr such that 1/n = 1/p - 1/q - 1/r for some integers p,q,r.
+ * A147811 Alexandrian integers: numbers of the form n=pqr such that <code>1/n =</code> 1/p - 1/q - 1/r for some integers p,q,r.
  * @author Sean A. Irvine
  */
 public class A147811 implements Sequence {

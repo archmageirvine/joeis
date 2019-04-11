@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284709 Number of maximal matchings in the wheel graph on n nodes. 
+ * A284709 Number of maximal matchings in the wheel graph on n nodes.
  * @author Georg Fischer
  */
 public class A284709 extends LinearRecurrence {

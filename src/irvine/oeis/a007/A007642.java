@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007642 2n^2 +29 is composite.
+ * A007642 <code>2n^2 +29</code> is composite.
  * @author Sean A. Irvine
  */
 public class A007642 implements Sequence {

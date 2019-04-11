@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140298 a(0)=1; a(3n+1) = a(3n)+1, a(3n+2) = a(3n+1) + a(3n) (=3*A000244), a(3n+3) = a(3n+2) + a(3n) (=A003462(n+2)).
+ * A140298 <code>a(0)=1</code>; <code>a(3n+1) = a(3n)+1, a(3n+2) = a(3n+1) + a(3n)</code> (=3*A000244), <code>a(3n+3) = a(3n+2) + a(3n)</code> (=A003462(n+2)).
  * @author Sean A. Irvine
  */
 public class A140298 extends LinearRecurrence {

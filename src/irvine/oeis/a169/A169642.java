@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169642 a(n) = A005408(n) * A022998(n). 
+ * A169642 <code>a(n) =</code> A005408(n) * A022998(n).
  * @author Georg Fischer
  */
 public class A169642 extends LinearRecurrence {

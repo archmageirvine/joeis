@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070347 a(n) = 2^n mod 21.
+ * A070347 <code>a(n) = 2^n mod 21</code>.
  * @author Sean A. Irvine
  */
 public class A070347 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054604 a(n) = Sum_{d|5} phi(d)*n^(5/d).
+ * A054604 <code>a(n) =</code> Sum_{d|5} phi(d)*n^(5/d).
  * @author Sean A. Irvine
  */
 public class A054604 extends LinearRecurrence {

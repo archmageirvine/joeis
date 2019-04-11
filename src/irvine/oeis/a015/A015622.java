@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015622 Quadruples of different integers from [ 1,n ] with no global factor.
+ * A015622 Quadruples of different integers from <code>[ 1,n ]</code> with no global factor.
  * @author Sean A. Irvine
  */
 public class A015622 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226023 A142705 (numerators of 1/4-1/(4n^2)) sorted to natural order.
+ * A226023 A142705 (numerators of <code>1/4-1/(4n^2))</code> sorted to natural order.
  * @author Sean A. Irvine
  */
 public class A226023 extends LinearRecurrence {

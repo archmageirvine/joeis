@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001563 a(n) = n*n! = (n+1)! - n!.
+ * A001563 <code>a(n) = n*n! = (n+1)! - n!</code>.
  * @author Sean A. Irvine
  */
 public class A001563 implements Sequence {

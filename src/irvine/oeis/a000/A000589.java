@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000589 a(n) = 11*binomial(2n,n-5)/(n+6).
+ * A000589 <code>a(n) =</code> 11*binomial(2n,n-5)/(n+6).
  * @author Sean A. Irvine
  */
 public class A000589 implements Sequence {

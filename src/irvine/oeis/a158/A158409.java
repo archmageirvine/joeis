@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158409 a(n) = 900*n - 1.
+ * A158409 <code>a(n) = 900*n - 1</code>.
  * @author Sean A. Irvine
  */
 public class A158409 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265423 (-1)^n + 50*floor(3n/2) - 100*floor(n/4).
+ * A265423 <code>(-1)^n + 50*floor(3n/2) - 100*floor(n/4)</code>.
  * @author Sean A. Irvine
  */
 public class A265423 extends LinearRecurrence {

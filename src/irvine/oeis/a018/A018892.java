@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018892 Number of ways to write 1/n as a sum of exactly 2 unit fractions.
+ * A018892 Number of ways to write <code>1/n</code> as a sum of exactly 2 unit fractions.
  * @author Sean A. Irvine
  */
 public class A018892 implements Sequence {

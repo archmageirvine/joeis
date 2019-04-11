@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007731 a(n) = a(floor(n/2)) + a(floor(n/3)) + a(floor(n/6)).
+ * A007731 <code>a(n) = a(floor(n/2)) + a(floor(n/3)) + a(floor(n/6))</code>.
  * @author Sean A. Irvine
  */
 public class A007731 extends MemorySequence {

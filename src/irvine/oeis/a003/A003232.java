@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003232 Expansion of (x-1)*(x^2-4*x-1)/(1-2*x)^2.
+ * A003232 Expansion of <code>(x-1)*(x^2-4*x-1)/(1-2*x)^2</code>.
  * @author Sean A. Irvine
  */
 public class A003232 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074805 n mod 19 + 1 ("Golden Number").
+ * A074805 <code>n mod 19 + 1</code> ("Golden Number").
  * @author Sean A. Irvine
  */
 public class A074805 extends LinearRecurrence {

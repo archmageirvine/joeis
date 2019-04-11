@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015870 Numbers n such that phi(n + 4) | sigma(n) + 4.
+ * A015870 Numbers n such that phi(n <code>+ 4)</code> | sigma(n) <code>+ 4</code>.
  * @author Sean A. Irvine
  */
 public class A015870 implements Sequence {

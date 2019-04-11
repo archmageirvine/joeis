@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115294 Diagonal sums of correlation triangle for (1+x)^3/(1-x). 
+ * A115294 Diagonal sums of correlation triangle for <code>(1+x)^3/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A115294 extends LinearRecurrence {

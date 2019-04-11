@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A125676 a(n) = floor(|b(n)|), where b(1) = 2, b(n) = b(n-1) - 1/b(n-1).
+ * A125676 <code>a(n) =</code> floor(|b(n)|), where b(1) <code>= 2,</code> b(n) = b(n-1) - 1/b(n-1).
  * @author Sean A. Irvine
  */
 public class A125676 implements Sequence {

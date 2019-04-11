@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014234 Largest prime &lt;= 2^n.
+ * A014234 Largest prime <code>&lt;= 2^n</code>.
  * @author Sean A. Irvine
  */
 public class A014234 implements Sequence {

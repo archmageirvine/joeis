@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013991 Number of edge-disjoint paths between opposite corners of a 2 X n grid.
+ * A013991 Number of edge-disjoint paths between opposite corners of <code>a 2</code> X n grid.
  * @author Sean A. Irvine
  */
 public class A013991 implements Sequence {

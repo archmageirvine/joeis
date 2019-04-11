@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A007674 Numbers n such that n and n+1 are squarefree.
+ * A007674 Numbers n such that n and <code>n+1</code> are squarefree.
  * @author Sean A. Irvine
  */
 public class A007674 extends A005117 {

@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103548 a(n) is the largest n-digit zeroless prime such that the sum of the two numbers that result from splitting a(n) between any two of its digits is a distinct prime.
+ * A103548 <code>a(n)</code> is the largest n-digit zeroless prime such that the sum of the two numbers that result from splitting <code>a(n)</code> between any two of its digits is a distinct prime.
  * @author Georg Fischer
  */
 public class A103548 extends FiniteSequence {

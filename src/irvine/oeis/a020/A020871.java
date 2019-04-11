@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020871 Number of spanning trees in a Moebius ladder M_n with 2n vertices.
+ * A020871 Number of spanning trees in a Moebius ladder M_n with <code>2n</code> vertices.
  * @author Sean A. Irvine
  */
 public class A020871 extends LinearRecurrence {

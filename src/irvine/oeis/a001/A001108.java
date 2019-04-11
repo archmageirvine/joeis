@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001108 a(n)-th triangular number is a square: a(n+1) = 6*a(n)-a(n-1)+2, with a(0) = 0, a(1) = 1.
+ * A001108 a(n)-th triangular number is a square: <code>a(n+1) = 6*a(n)-a(n-1)+2,</code> with <code>a(0) = 0, a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A001108 implements Sequence {

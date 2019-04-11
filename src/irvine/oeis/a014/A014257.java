@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014257 Product of digits of 2^n.
+ * A014257 Product of digits of <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A014257 implements Sequence {

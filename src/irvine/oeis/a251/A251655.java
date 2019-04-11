@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251655 4-step Fibonacci sequence starting with 0, 1, 1, 1.
+ * A251655 4-step Fibonacci sequence starting with <code>0, 1, 1, 1</code>.
  * @author Sean A. Irvine
  */
 public class A251655 extends LinearRecurrence {

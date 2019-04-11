@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126480 Number of base 12 n-digit numbers with adjacent digits differing by three or less. 
+ * A126480 Number of base 12 n-digit numbers with adjacent digits differing by three or less.
  * @author Georg Fischer
  */
 public class A126480 extends LinearRecurrence {

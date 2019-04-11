@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000110;
 
 /**
- * A007311 Reversion of o.g.f. for Bell numbers (A000110) omitting a(0)=1.
+ * A007311 Reversion of o.g.f. for Bell numbers (A000110) omitting <code>a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A007311 extends A000110 {

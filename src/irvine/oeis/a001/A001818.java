@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001818 Squares of double factorials: (1*3*5*...*(2n-1))^2 = ((2*n-1)!!)^2.
+ * A001818 Squares of double factorials: <code>(1*3*5*</code>...*(2n-1))^2 <code>= ((2*n-1)!!)^2</code>.
  * @author Sean A. Irvine
  */
 public class A001818 implements Sequence {

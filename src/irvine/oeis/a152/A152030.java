@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152030 a(n)=n^6-n^5-n^4-n^3-n^2-n.
+ * A152030 <code>a(n)=n^6-n^5-n^4-n^3-n^2-n</code>.
  * @author Sean A. Irvine
  */
 public class A152030 extends LinearRecurrence {

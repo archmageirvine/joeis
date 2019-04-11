@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055021 Smallest number k such that n iterations of sigma() are required for the result to be &gt;= 2k.
+ * A055021 Smallest number k such that n iterations of sigma() are required for the result to be <code>&gt;=</code> 2k.
  * @author Georg Fischer
  */
 public class A055021 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129722 Number of 0's in even position in all Fibonacci binary words of length n. A Fibonacci binary word is a binary word having no 00 subword.
+ * A129722 Number of 0's in even position in all Fibonacci binary words of length <code>n.</code> A Fibonacci binary word is a binary word having no 00 subword.
  * @author Sean A. Irvine
  */
 public class A129722 extends LinearRecurrence {

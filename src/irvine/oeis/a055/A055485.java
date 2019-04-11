@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055485 Number of unlabeled 3-element intersecting families (with distinct sets) of <code>an</code> n-element set.
+ * A055485 Number of unlabeled 3-element intersecting families (with distinct sets) of an n-element set.
  * @author Sean A. Irvine
  */
 public class A055485 extends LinearRecurrence {

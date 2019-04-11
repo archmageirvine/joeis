@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000172 Franel number <code>a(n) =</code> Sum_{k <code>= 0</code>..n} binomial(n,k)^3.
+ * A000172 Franel number <code>a(n) =</code> Sum_{k <code>= 0..n}</code> binomial(n,k)^3.
  * @author Sean A. Irvine
  */
 public class A000172 implements Sequence {

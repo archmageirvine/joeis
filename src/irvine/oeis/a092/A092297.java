@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092297 Number of ways of 3-coloring <code>an</code> annulus consisting of n zones joined like a pearl necklace.
+ * A092297 Number of ways of 3-coloring an annulus consisting of n zones joined like a pearl necklace.
  * @author Sean A. Irvine
  */
 public class A092297 extends LinearRecurrence {

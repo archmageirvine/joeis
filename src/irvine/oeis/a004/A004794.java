@@ -5,7 +5,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A004794 Least positive integer k such that the fractional part of k*sqrt(5) has its n initial partial quotients all equal to 1.
+ * A004794 Least positive integer k such that the fractional part of <code>k*sqrt(5)</code> has its n initial partial quotients all equal to 1.
  * @author Sean A. Irvine
  */
 public class A004794 implements Sequence {

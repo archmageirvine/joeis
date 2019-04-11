@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051049 Number of moves needed to solve <code>an</code> (n+1)-ring baguenaudier if two simultaneous moves of the two end rings are counted as one.
+ * A051049 Number of moves needed to solve an (n+1)-ring baguenaudier if two simultaneous moves of the two end rings are counted as one.
  * @author Sean A. Irvine
  */
 public class A051049 extends LinearRecurrence {

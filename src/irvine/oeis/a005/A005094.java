@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005094 Number of distinct primes of the form 4k+1 dividing n minus number of distinct primes of the form 4k+3 dividing n.
+ * A005094 Number of distinct primes of the form <code>4k+1</code> dividing n minus number of distinct primes of the form <code>4k+3</code> dividing n.
  * @author Sean A. Irvine
  */
 public class A005094 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061279 <code>a(n) =</code> Sum_{k <code>&gt;= 0}</code> 2^k * binomial(k+2,n-2*k).
+ * A061279 <code>a(n) =</code> Sum_{k <code>&gt;= 0} 2^k *</code> binomial(k+2,n-2*k).
  * @author Sean A. Irvine
  */
 public class A061279 extends LinearRecurrence {

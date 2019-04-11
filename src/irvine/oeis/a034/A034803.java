@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034803 Consider the sequence of 4-tuples <code>{0,a</code>,b,c} (c&gt;=a+b; a,b,c&gt;0)) which have the smallest integer 'c' required to reach {k,k,k,k} in n steps under map {r,s,t,u}-&gt;{|r-s|,|s-t|,|t-u|,|u-r|}. This sequence gives the second term 'a' of these quadruples.
+ * A034803 Consider the sequence of 4-tuples <code>{0,a,b</code>,c} (c&gt;=a+b; <code>a,b</code>,c&gt;0)) which have the smallest integer 'c' required to reach <code>{k,k,k,k}</code> in n steps under map {r,s,t,u}-&gt;{|r-s|,|s-t|,|t-u|,|u-r|}. This sequence gives the second term 'a' of these quadruples.
  * @author Sean A. Irvine
  */
 public class A034803 extends LinearRecurrence {

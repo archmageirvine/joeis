@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077814 <code>a(n) =</code> #{0&lt;=k&lt;=n: mod(kn,4)=2}.
+ * A077814 <code>a(n) =</code> #{0&lt;=k&lt;=n: <code>mod(kn,4)=2}</code>.
  * @author Sean A. Irvine
  */
 public class A077814 extends LinearRecurrence {

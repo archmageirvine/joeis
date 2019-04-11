@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261116 Pairs of integers <code>(a</code>,b) such <code>a^2 + (a+1)^2 =</code> b^2.
+ * A261116 Pairs of integers <code>(a,b)</code> such <code>a^2 + (a+1)^2 = b^2</code>.
  * @author Sean A. Irvine
  */
 public class A261116 extends LinearRecurrence {

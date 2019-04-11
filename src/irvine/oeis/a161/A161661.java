@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161661 <code>a(1)=1</code>. <code>a(n) =</code> smallest multiple of {number of divisors of <code>a(n-1)}</code> that is <code>&gt;= n</code>.
+ * A161661 <code>a(1)=1. a(n) =</code> smallest multiple of {number of divisors of <code>a(n-1)}</code> that is <code>&gt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A161661 implements Sequence {

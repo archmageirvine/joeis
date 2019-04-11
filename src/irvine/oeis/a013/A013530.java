@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013530 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion sin(cosec(x) - cosech(x)) <code>= x/3 - x^3/162 + 211*x^5/51030 -157*x^7/688905 + 439801*x^9/9821029680 - </code>...
+ * A013530 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion sin(cosec(x) - cosech(x)) <code>= x/3 - x^3/162 + 211*x^5/51030 -157*x^7/688905 + 439801*x^9/9821029680 - ..</code>.
  * @author Sean A. Irvine
  */
 public class A013530 implements Sequence {

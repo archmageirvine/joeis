@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * A129645 <code>a(1) = 1</code>; for <code>n&gt;1, a(n) =</code> a(n-1)*b(n-1) <code>+ 1,</code> where {b(k)} is the concatenated list of the ordered positive divisors of the terms of {a(k)}.
+ * A129645 <code>a(1) = 1</code>; for <code>n&gt;1, a(n) = a(n-1)*b(n-1) + 1,</code> where <code>{b(k)}</code> is the concatenated list of the ordered positive divisors of the terms of <code>{a(k)}</code>.
  * @author Sean A. Irvine
  */
 public class A129645 implements Sequence {

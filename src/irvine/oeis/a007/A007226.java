@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007226 <code>a(n) =</code> 2*det(M(n,-1))/det(M(n, <code>0)),</code> where M(n,m) is the n X n matrix with element 1/binomial(n+i+j+m,n).
+ * A007226 <code>a(n) =</code> 2*det(M(n,-1))/det(M(n, 0)), where M(n,m) is the n X n matrix with element 1/binomial(n+i+j+m,n).
  * @author Sean A. Irvine
  */
 public class A007226 implements Sequence {

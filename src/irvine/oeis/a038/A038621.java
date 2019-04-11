@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038621 Growth function of <code>an</code> infinite cubic graph (number of nodes at distance <code>&lt;=n</code> from fixed node).
+ * A038621 Growth function of an infinite cubic graph (number of nodes at distance <code>&lt;=n</code> from fixed node).
  * @author Georg Fischer
  */
 public class A038621 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158240 Smallest number made up of n consecutive digits such that every k-digit substring (k <code>&lt;= n)</code> taken from the left is divisible by k (k=1..n).
+ * A158240 Smallest number made up of n consecutive digits such that every k-digit substring <code>(k &lt;= n)</code> taken from the left is divisible by <code>k (k=1..n)</code>.
  * @author Georg Fischer
  */
 public class A158240 extends FiniteSequence {

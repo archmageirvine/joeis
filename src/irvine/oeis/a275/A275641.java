@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275641 Expansion of (1-q)^k/Product_{j=1..k} (1-q^j) for k=7.
+ * A275641 Expansion of (1-q)^k/Product_{j=1..k} (1-q^j) for <code>k=7</code>.
  * @author Sean A. Irvine
  */
 public class A275641 extends LinearRecurrence {

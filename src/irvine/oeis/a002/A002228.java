@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A002228 Smallest prime p such that first n primes (p_1=2, ..., p_n) are 11th power residues mod p.
+ * A002228 Smallest prime p such that first n primes (p_1=2, <code>...,</code> p_n) are 11th power residues mod p.
  * @author Sean A. Irvine
  */
 public class A002228 implements Sequence {

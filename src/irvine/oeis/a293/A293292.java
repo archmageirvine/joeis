@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293292 Numbers with last digit less than 5 (in base <code>10)</code>.
+ * A293292 Numbers with last digit less than 5 (in base 10).
  * @author Sean A. Irvine
  */
 public class A293292 extends LinearRecurrence {

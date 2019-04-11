@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306308 Table read by rows: the end square loops for a trapped knight moving on <code>an</code> infinitely large 2-dimensional spirally numbered board starting from any square.
+ * A306308 Table read by rows: the end square loops for a trapped knight moving on an infinitely large 2-dimensional spirally numbered board starting from any square.
  * @author Georg Fischer
  */
 public class A306308 extends FiniteSequence {

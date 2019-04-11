@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305291 Numbers k such that 4*k <code>+ 3</code> is a perfect cube, sorted by absolute values.
+ * A305291 Numbers k such that <code>4*k + 3</code> is a perfect cube, sorted by absolute values.
  * @author Georg Fischer
  */
 public class A305291 extends LinearRecurrence {

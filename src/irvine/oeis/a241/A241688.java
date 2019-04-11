@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241688 Number of Sidon subsets of <code>{1,</code>...,n} of size 4.
+ * A241688 Number of Sidon subsets of <code>{1,...,n}</code> of size 4.
  * @author Sean A. Irvine
  */
 public class A241688 extends LinearRecurrence {

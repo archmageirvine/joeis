@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A287642 Positive integers k such that, for each prime p with k/2 <code>&lt;=</code> p <code>&lt;=</code> k <code>- 2,</code> k - p is prime.
+ * A287642 Positive integers k such that, for each prime p with <code>k/2 &lt;=</code> p <code>&lt;= k - 2, k -</code> p is prime.
  * @author Georg Fischer
  */
 public class A287642 extends FiniteSequence {

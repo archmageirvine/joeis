@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004980 n-th positive integer k such that if <code>1 &lt;=</code> j &lt; k then fractional part of k-th partial sum of harmonic series &gt; fractional part of j-th partial sum of harmonic series.
+ * A004980 n-th positive integer k such that if <code>1 &lt;= j &lt; k</code> then fractional part of k-th partial sum of harmonic series &gt; fractional part of j-th partial sum of harmonic series.
  * @author Sean A. Irvine
  */
 public class A004980 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004199 Table of [ x/y <code>],</code> where <code>(x</code>,y) <code>= (1,1),(1,2),(2,1),(1,3),(2,2),(3,1),</code>...
+ * A004199 Table of [ x/y <code>],</code> where <code>(x</code>,y) <code>= (1,1),(1,2),(2,1),(1,3),(2,2),(3,1),..</code>.
  * @author Sean A. Irvine
  */
 public class A004199 implements Sequence {

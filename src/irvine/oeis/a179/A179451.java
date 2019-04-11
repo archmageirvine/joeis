@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179451 Decimal expansion of the surface area of <code>an</code> icosidodecahedron with side length 1.
+ * A179451 Decimal expansion of the surface area of an icosidodecahedron with side length 1.
  * @author Sean A. Irvine
  */
 public class A179451 extends DecimalExpansionSequence {

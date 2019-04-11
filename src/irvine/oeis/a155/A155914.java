@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A155914 Example of <code>an</code> all interval series: the 12 integers 0..11 sorted such that the first differences contain all numbers from 1 to <code>11 (mod 12)</code>.
+ * A155914 Example of an all interval series: the 12 integers <code>0..11</code> sorted such that the first differences contain all numbers from 1 to <code>11 (mod 12)</code>.
  * @author Georg Fischer
  */
 public class A155914 extends FiniteSequence {

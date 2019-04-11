@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008550 Table T(n,k), <code>n&gt;=0</code> and k&gt;=0, read by antidiagonals: the k-th column given by the k-th Narayana polynomial.
+ * A008550 Table T(n,k), <code>n&gt;=0</code> and <code>k&gt;=0,</code> read by antidiagonals: the k-th column given by the k-th Narayana polynomial.
  * @author Sean A. Irvine
  */
 public class A008550 implements Sequence {

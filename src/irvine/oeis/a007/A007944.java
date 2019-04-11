@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007944 Largest even number <code>a(n)</code> such that <code>6,8,</code>...,a(n) are sums of 2 of first n odd primes.
+ * A007944 Largest even number <code>a(n)</code> such that <code>6,8,...,a(n)</code> are sums of 2 of first n odd primes.
  * @author Sean A. Irvine
  */
 public class A007944 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007528 Primes of the form 6k-1.
+ * A007528 Primes of the form <code>6k-1</code>.
  * @author Sean A. Irvine
  */
 public class A007528 implements Sequence {

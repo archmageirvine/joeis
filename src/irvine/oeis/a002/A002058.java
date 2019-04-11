@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002058 Number of internal triangles in all triangulations of <code>an</code> (n+1)-gon.
+ * A002058 Number of internal triangles in all triangulations of an (n+1)-gon.
  * @author Sean A. Irvine
  */
 public class A002058 implements Sequence {

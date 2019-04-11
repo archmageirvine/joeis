@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129068 A128894[n,k] for k=1 : Coxeter numbers as defined by Bulgadaev for exceptional group sequence using critical exponent solution.
+ * A129068 A128894[n,k] for <code>k=1 </code>: Coxeter numbers as defined by Bulgadaev for exceptional group sequence using critical exponent solution.
  * @author Georg Fischer
  */
 public class A129068 extends FiniteSequence {

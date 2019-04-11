@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A128700 Highly abundant numbers with <code>an</code> odd divisor sum.
+ * A128700 Highly abundant numbers with an odd divisor sum.
  * @author Georg Fischer
  */
 public class A128700 extends FiniteSequence {

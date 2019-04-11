@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103379 k=11 case of family of sequences beyond Fibonacci and Padovan.
+ * A103379 <code>k=11</code> case of family of sequences beyond Fibonacci and Padovan.
  * @author Sean A. Irvine
  */
 public class A103379 extends LinearRecurrence {

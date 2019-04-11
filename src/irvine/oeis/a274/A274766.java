@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274766 Multiplication of pair of contiguous repunits, i.e., <code>(0*1, 1*11, 11*111, 111*1111, 1111*11111, </code>...).
+ * A274766 Multiplication of pair of contiguous repunits, i.e., <code>(0*1, 1*11, 11*111, 111*1111, 1111*11111, ...)</code>.
  * @author Sean A. Irvine
  */
 public class A274766 extends LinearRecurrence {

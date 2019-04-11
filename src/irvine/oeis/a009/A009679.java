@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005326;
 
 /**
- * A009679 Number of partitions of <code>{1, </code>..., <code>2n}</code> into coprime pairs.
+ * A009679 Number of partitions of <code>{1, ..., 2n}</code> into coprime pairs.
  * @author Sean A. Irvine
  */
 public class A009679 extends A005326 {

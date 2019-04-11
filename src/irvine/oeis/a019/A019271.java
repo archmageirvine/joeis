@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A019271 A self-descriptive sequence: positions of consonants in "zero, two, four, ...".
+ * A019271 A self-descriptive sequence: positions of consonants in "zero, two, four, <code>..</code>.".
  * @author Sean A. Irvine
  */
 public class A019271 implements Sequence {

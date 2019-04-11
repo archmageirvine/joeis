@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204418 Periodic sequence <code>1,0,1,</code>... , arranged in a triangle.
+ * A204418 Periodic sequence <code>1,0,1,... ,</code> arranged in a triangle.
  * @author Sean A. Irvine
  */
 public class A204418 extends LinearRecurrence {

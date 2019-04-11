@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A279650 An idempotent self-orthogonal Latin square of order <code>11,</code> read by rows.
+ * A279650 An idempotent self-orthogonal Latin square of order 11, read by rows.
  * @author Georg Fischer
  */
 public class A279650 extends FiniteSequence {

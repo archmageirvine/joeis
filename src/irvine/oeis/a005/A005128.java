@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005128 Number of k for which n does not divide Stirling_2 subset numbers S(n, k).
+ * A005128 Number of k for which n does not divide Stirling_2 subset numbers S(n, <code>k)</code>.
  * @author Sean A. Irvine
  */
 public class A005128 implements Sequence {

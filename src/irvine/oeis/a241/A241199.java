@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241199 Numbers n such that 4 consecutive terms of binomial(n,k) satisfy a quadratic relation for <code>0 &lt;=</code> k <code>&lt;= n/2</code>.
+ * A241199 Numbers n such that 4 consecutive terms of binomial(n,k) satisfy a quadratic relation for <code>0 &lt;= k &lt;= n/2</code>.
  * @author Sean A. Irvine
  */
 public class A241199 extends LinearRecurrence {

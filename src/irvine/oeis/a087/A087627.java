@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087627 Count ...n,2n,2n...
+ * A087627 Count <code>...n,2n,2n..</code>.
  * @author Sean A. Irvine
  */
 public class A087627 extends LinearRecurrence {

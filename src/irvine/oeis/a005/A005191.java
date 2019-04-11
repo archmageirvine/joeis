@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005191 Central pentanomial coefficients: largest coefficient of <code>(1 + x + </code>... <code>+ x^4)^n</code>.
+ * A005191 Central pentanomial coefficients: largest coefficient of <code>(1 + x + ... + x^4)^n</code>.
  * @author Sean A. Irvine
  */
 public class A005191 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005451 Define b(n) <code>= (</code> (n-1)*(n^2-3*n+1)*b(n-1) - (n-2)^3*b(n-2) <code>)/(n*(n-3))</code>; b(2) = b(3) <code>= 1</code>; sequence gives denominators of b(n).
+ * A005451 Define <code>b(n) = ( (n-1)*(n^2-3*n+1)*b(n-1) - (n-2)^3*b(n-2) )/(n*(n-3))</code>; <code>b(2) = b(3) = 1</code>; sequence gives denominators of <code>b(n)</code>.
  * @author Sean A. Irvine
  */
 public class A005451 implements Sequence {

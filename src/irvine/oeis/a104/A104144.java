@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104144 <code>a(n) =</code> Sum_{k=1..9} a(n-k); <code>a(8) = 1, a(n) = 0</code> for <code>n &lt; 8</code>.
+ * A104144 <code>a(n) =</code> Sum_{k=1..9} <code>a(n-k)</code>; <code>a(8) = 1, a(n) = 0</code> for <code>n &lt; 8</code>.
  * @author Sean A. Irvine
  */
 public class A104144 extends LinearRecurrence {

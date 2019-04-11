@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162529 Numbers k whose largest divisor <code>&lt;=</code> sqrt(k) equals 9.
+ * A162529 Numbers k whose largest divisor <code>&lt;= sqrt(k)</code> equals 9.
  * @author Sean A. Irvine
  */
 public class A162529 implements Sequence {

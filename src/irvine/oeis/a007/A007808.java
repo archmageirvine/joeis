@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007808 Number of directed column-convex polyominoes of height n: a(k+1)=(k+1)*a(k)+(a(1)+...+a(k)).
+ * A007808 Number of directed column-convex polyominoes of height n: <code>a(k+1)=(k+1)*a(k)+(a(1)+...+a(k))</code>.
  * @author Sean A. Irvine
  */
 public class A007808 implements Sequence {

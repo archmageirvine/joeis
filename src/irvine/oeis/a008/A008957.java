@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008957 Triangle of central factorial numbers T(2*n,2*n-2*k), k <code>&gt;= 0, n &gt;= 1</code> (in Riordan's notation).
+ * A008957 Triangle of central factorial numbers T(2*n,2*n-2*k), <code>k &gt;= 0, n &gt;= 1</code> (in Riordan's notation).
  * @author Sean A. Irvine
  */
 public class A008957 extends MemoryFunction2<Integer, Z> implements Sequence {

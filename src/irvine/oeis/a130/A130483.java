@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130483 <code>a(n) =</code> Sum_{k=0..n} (k <code>mod 5)</code> (Partial sums of A010874).
+ * A130483 <code>a(n) =</code> Sum_{k=0..n} <code>(k mod 5)</code> (Partial sums of A010874).
  * @author Sean A. Irvine
  */
 public class A130483 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003465 Number of ways to cover <code>an</code> n-set.
+ * A003465 Number of ways to cover an n-set.
  * @author Sean A. Irvine
  */
 public class A003465 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034851 Rows of Losanitsch's triangle T(n, k), <code>n &gt;= 0, 0 &lt;=</code> k <code>&lt;= n</code>.
+ * A034851 Rows of Losanitsch's triangle T(n, <code>k), n &gt;= 0, 0 &lt;= k &lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A034851 implements Sequence {

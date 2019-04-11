@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019297 Integers k such that abs(e^(Pi*sqrt(n)) - k) <code>&lt; 0</code>.01 for some n.
+ * A019297 Integers k such that abs(e^(Pi*sqrt(n)) <code>- k) &lt; 0.01</code> for some n.
  * @author Sean A. Irvine
  */
 public class A019297 implements Sequence {

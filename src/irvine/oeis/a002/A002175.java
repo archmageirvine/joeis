@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002175 Excess of number of divisors of <code>12n+1</code> of form 4k+1 over those of form 4k+3.
+ * A002175 Excess of number of divisors of <code>12n+1</code> of form <code>4k+1</code> over those of form <code>4k+3</code>.
  * @author Sean A. Irvine
  */
 public class A002175 implements Sequence {

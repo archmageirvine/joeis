@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167708 Numbers k such that (k^2 <code>- 81)/19</code> is a square.
+ * A167708 Numbers k such that <code>(k^2 - 81)/19</code> is a square.
  * @author Sean A. Irvine
  */
 public class A167708 extends LinearRecurrence {

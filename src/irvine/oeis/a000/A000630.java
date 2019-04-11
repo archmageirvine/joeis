@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000630 Number of ways to represent n using the binary operator <code>a *</code> b <code>= 2^a +</code> b.
+ * A000630 Number of ways to represent n using the binary operator <code>a * b = 2^a + b</code>.
  * @author Sean A. Irvine
  */
 public class A000630 implements Sequence {

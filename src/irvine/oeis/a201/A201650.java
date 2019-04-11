@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A201650 Allan Johnson's set of 48 squarefree numbers whose reciprocals add to <code>1,</code> with the property that each number has exactly two distinct prime factors.
+ * A201650 Allan Johnson's set of 48 squarefree numbers whose reciprocals add to 1, with the property that each number has exactly two distinct prime factors.
  * @author Georg Fischer
  */
 public class A201650 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110344 <code>a(n) =</code> sum( n+k, k=0..n-1 <code>) = n(3n-1)/2</code> if n is even; <code>a(n) =</code> sum( n-k, k=0..n-1 <code>) = n(n+1)/2</code> if n is odd.
+ * A110344 <code>a(n) =</code> sum( <code>n+k, k=0..n-1 ) = n(3n-1)/2</code> if n is even; <code>a(n) =</code> sum( <code>n-k, k=0..n-1 ) = n(n+1)/2</code> if n is odd.
  * @author Sean A. Irvine
  */
 public class A110344 extends LinearRecurrence {

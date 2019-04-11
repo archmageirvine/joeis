@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A284116 <code>a(n) =</code> largest number of distinct words arising in Post's tag system <code>{00, 1101}</code> applied to a binary word w, over all starting words w of length <code>n,</code> or <code>a(n) = -1</code> if there is a word w with <code>an</code> unbounded trajectory.
+ * A284116 <code>a(n) =</code> largest number of distinct words arising in Post's tag system <code>{00, 1101}</code> applied to a binary word w, over all starting words w of length <code>n,</code> or <code>a(n) = -1</code> if there is a word w with an unbounded trajectory.
  * @author Sean A. Irvine
  */
 public class A284116 implements Sequence {

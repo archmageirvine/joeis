@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266367 Expansion of b(2)*b(4)/(1 <code>- 2*x - 2*x^3 + 3*x^4),</code> where b(k) = (1-x^k)/(1-x).
+ * A266367 Expansion of <code>b(2)*b(4)/(1 - 2*x - 2*x^3 + 3*x^4),</code> where <code>b(k) = (1-x^k)/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A266367 extends LinearRecurrence {

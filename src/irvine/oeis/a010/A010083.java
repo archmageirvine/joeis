@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010083 Weight distribution of <code>[128,120,4]</code> extended Hamming code of length 128. This is also the Reed-Muller code RM(5,7).
+ * A010083 Weight distribution of <code>[128,120,4]</code> extended Hamming code of length <code>128.</code> This is also the Reed-Muller code RM(5,7).
  * @author Sean A. Irvine
  */
 public class A010083 extends FiniteSequence {

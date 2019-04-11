@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085699 Smallest multiple of n such that <code>a(n) + a(n-1)</code> is <code>an</code> n-th power.
+ * A085699 Smallest multiple of n such that <code>a(n) + a(n-1)</code> is an n-th power.
  * @author Georg Fischer
  */
 public class A085699 extends FiniteSequence {

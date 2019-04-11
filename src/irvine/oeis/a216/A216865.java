@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216865 16k^2-32k+8 interleaved with 16k^2-16k+8 for k&gt;=0.
+ * A216865 <code>16k^2-32k+8</code> interleaved with <code>16k^2-16k+8</code> for <code>k&gt;=0</code>.
  * @author Sean A. Irvine
  */
 public class A216865 extends LinearRecurrence {

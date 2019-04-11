@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A004798 Convolution of Fibonacci numbers <code>1,2,3,5,</code>... with themselves.
+ * A004798 Convolution of Fibonacci numbers <code>1,2,3,5,...</code> with themselves.
  * @author Sean A. Irvine
  */
 public class A004798 extends ConvolutionSequence {

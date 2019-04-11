@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008949 Triangle read by rows of partial sums of binomial coefficients: T(n,k) = Sum_{i=0..k} binomial(n,i) <code>(0 &lt;=</code> k <code>&lt;= n)</code>; also dimensions of Reed-Muller codes.
+ * A008949 Triangle read by rows of partial sums of binomial coefficients: T(n,k) = Sum_{i=0..k} binomial(n,i) <code>(0 &lt;= k &lt;= n)</code>; also dimensions of Reed-Muller codes.
  * @author Sean A. Irvine
  */
 public class A008949 extends MemoryFunction2<Integer, Z> implements Sequence {

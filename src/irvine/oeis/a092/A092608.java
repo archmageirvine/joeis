@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A092608 Number of connected ordered 5-element T_0-antichains on <code>an</code> unlabeled n-set.
+ * A092608 Number of connected ordered 5-element T_0-antichains on an unlabeled n-set.
  * @author Georg Fischer
  */
 public class A092608 extends FiniteSequence {

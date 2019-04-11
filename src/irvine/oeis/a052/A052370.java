@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A052370 Number of 6 X 6 binary matrices with <code>n=0</code>...36 ones up to row and column permutations.
+ * A052370 Number of 6 X 6 binary matrices with <code>n=0...36</code> ones up to row and column permutations.
  * @author Georg Fischer
  */
 public class A052370 extends FiniteSequence {

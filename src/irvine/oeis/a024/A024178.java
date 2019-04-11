@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024178 <code>a(n) =</code> floor(3rd elementary symmetric function of <code>2,3,</code>...,n+3)/(2+3+...+n+3)).
+ * A024178 <code>a(n) =</code> floor(3rd elementary symmetric function of <code>2,3,...,n+3)/(2+3+...+n+3))</code>.
  * @author Sean A. Irvine
  */
 public class A024178 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007843 Least positive integer k for which <code>2^n</code> divides k!.
+ * A007843 Least positive integer k for which <code>2^n</code> divides <code>k!</code>.
  * @author Sean A. Irvine
  */
 public class A007843 implements Sequence {

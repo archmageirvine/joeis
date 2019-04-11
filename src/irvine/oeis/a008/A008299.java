@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008299 Triangle T(n,k) of associated Stirling numbers of second kind, <code>n&gt;=2,</code> 1&lt;=k&lt;=floor(n/2).
+ * A008299 Triangle T(n,k) of associated Stirling numbers of second kind, <code>n&gt;=2, 1&lt;=k&lt;=floor(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A008299 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227150 Nonnegative solutions of the Pell equation <code>x^2 -</code> 97*y^2 <code>= +1</code>. Solutions <code>x = a(n)</code>.
+ * A227150 Nonnegative solutions of the Pell equation <code>x^2 -</code> 97*y^2 <code>= +1.</code> Solutions <code>x = a(n)</code>.
  * @author Sean A. Irvine
  */
 public class A227150 extends LinearRecurrence {

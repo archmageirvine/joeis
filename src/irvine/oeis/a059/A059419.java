@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059419 Triangle T(n,k) <code>(1 &lt;=</code> k <code>&lt;= n)</code> of tangent numbers, read by rows: T(n,k) = coefficient of <code>x^n/n!</code> in expansion of (tan x)^k/k!.
+ * A059419 Triangle T(n,k) <code>(1 &lt;= k &lt;= n)</code> of tangent numbers, read by rows: T(n,k) = coefficient of <code>x^n/n!</code> in expansion of (tan <code>x)^k/k!</code>.
  * @author Sean A. Irvine
  */
 public class A059419 extends MemoryFunction2<Long, Z> implements Sequence {

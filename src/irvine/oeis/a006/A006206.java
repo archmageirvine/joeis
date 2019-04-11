@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A006206 Number of aperiodic binary necklaces of length n with no subsequence <code>00,</code> excluding the necklace "0".
+ * A006206 Number of aperiodic binary necklaces of length n with no subsequence 00, excluding the necklace "0".
  * @author Sean A. Irvine
  */
 public class A006206 implements Sequence {

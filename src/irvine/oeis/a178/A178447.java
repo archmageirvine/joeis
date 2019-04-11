@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178447 <code>a(n) =</code> number of 4-digit primes with digit sum <code>n,</code> where n runs through the non-multiples of 3 in the range <code>[2</code>..34].
+ * A178447 <code>a(n) =</code> number of 4-digit primes with digit sum <code>n,</code> where n runs through the non-multiples of 3 in the range <code>[2..34]</code>.
  * @author Georg Fischer
  */
 public class A178447 extends FiniteSequence {

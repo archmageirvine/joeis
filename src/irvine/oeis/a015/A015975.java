@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015975 First k&gt;n, not a power of <code>n+1</code> or one of its prime factors, such that k | n^k <code>+ 1</code>.
+ * A015975 First <code>k&gt;n,</code> not a power of <code>n+1</code> or one of its prime factors, such that k | <code>n^k + 1</code>.
  * @author Sean A. Irvine
  */
 public class A015975 implements Sequence {

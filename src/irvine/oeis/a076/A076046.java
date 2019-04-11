@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A076046 Ramanujan-Nagell numbers: the triangular numbers (of the form <code>a*(a+1)/2)</code> which are also of the form 2^b <code>- 1</code>.
+ * A076046 Ramanujan-Nagell numbers: the triangular numbers (of the form <code>a*(a+1)/2)</code> which are also of the form <code>2^b - 1</code>.
  * @author Georg Fischer
  */
 public class A076046 extends FiniteSequence {

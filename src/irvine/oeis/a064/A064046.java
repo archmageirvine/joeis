@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064046 Number of length 6 walks on <code>an</code> n-dimensional hypercubic lattice starting and finishing at the origin and staying in the nonnegative part.
+ * A064046 Number of length 6 walks on an n-dimensional hypercubic lattice starting and finishing at the origin and staying in the nonnegative part.
  * @author Sean A. Irvine
  */
 public class A064046 extends LinearRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a013;
 
 /**
- * A013657 Period of continued fraction for <code>sqrt(n)</code> contains more than one <code>1,</code> but no two consecutive 1's.
+ * A013657 Period of continued fraction for <code>sqrt(n)</code> contains more than one 1, but no two consecutive 1's.
  * @author Sean A. Irvine
  */
 public class A013657 extends A013653 {

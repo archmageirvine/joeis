@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323391 Primes containing nonprime digits (from 1 to <code>9)</code> in their decimal expansion and whose digits are distinct, i.e., consisting of only digits <code>1, 4, 6, 8, 9</code>.
+ * A323391 Primes containing nonprime digits (from 1 to 9) in their decimal expansion and whose digits are distinct, i.e., consisting of only digits <code>1, 4, 6, 8, 9</code>.
  * @author Georg Fischer
  */
 public class A323391 extends FiniteSequence {

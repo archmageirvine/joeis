@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056469 Number of elements in the continued fraction for Sum_{k=0..n} 1/2^2^k.
+ * A056469 Number of elements in the continued fraction for Sum_{k=0..n} <code>1/2^2^k</code>.
  * @author Georg Fischer
  */
 public class A056469 extends LinearRecurrence {

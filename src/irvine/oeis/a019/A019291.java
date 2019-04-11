@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019291 Let sigma_m <code>(n)</code> be result of applying sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m <code>(n) =</code> k*n; sequence gives the <code>(2</code>,14)-perfect numbers.
+ * A019291 Let sigma_m <code>(n)</code> be result of applying sum-of-divisors function m times to n; call n (m,k)-perfect if sigma_m <code>(n) = k*n</code>; sequence gives the <code>(2</code>,14)-perfect numbers.
  * @author Sean A. Irvine
  */
 public class A019291 implements Sequence {

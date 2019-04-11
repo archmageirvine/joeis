@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292346 The forgotten topological index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem 2.1).
+ * A292346 The forgotten topological index of the Aztec diamond AZ(n) (see the Ramanes et al. reference, Theorem <code>2.1)</code>.
  * @author Sean A. Irvine
  */
 public class A292346 extends LinearRecurrence {

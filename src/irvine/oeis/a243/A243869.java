@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243869 Expansion of x^4/[(1+x)*Product_{k=1..3} (1-k*x)].
+ * A243869 Expansion of x^4/[(1+x)*Product_{k=1..3} <code>(1-k*x)]</code>.
  * @author Sean A. Irvine
  */
 public class A243869 extends LinearRecurrence {

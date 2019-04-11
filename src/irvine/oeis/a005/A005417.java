@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a080.A080742;
 
 /**
- * A005417 Maximal period of <code>an</code> n-stage shift register.
+ * A005417 Maximal period of an n-stage shift register.
  * @author Sean A. Irvine
  */
 public class A005417 extends A080742 {

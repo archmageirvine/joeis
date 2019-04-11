@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107973 Numbers of the form <code>a^2 +</code> b for <code>a= 21</code> to 40 and b= 20 to 1 step <code>-1</code>.
+ * A107973 Numbers of the form <code>a^2 + b</code> for <code>a= 21</code> to 40 and <code>b= 20</code> to 1 step <code>-1</code>.
  * @author Georg Fischer
  */
 public class A107973 extends FiniteSequence {

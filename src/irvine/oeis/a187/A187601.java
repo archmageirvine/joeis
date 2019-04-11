@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187601 <code>n/2</code> times period 6 sequence <code>[1, 2, 3, 4, 3, 2, </code>...].
+ * A187601 <code>n/2</code> times period 6 sequence <code>[1, 2, 3, 4, 3, 2, ...]</code>.
  * @author Sean A. Irvine
  */
 public class A187601 extends LinearRecurrence {

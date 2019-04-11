@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001614 Connell sequence: 1 odd, 2 even, 3 odd, ...
+ * A001614 Connell sequence: 1 odd, 2 even, 3 odd, <code>..</code>.
  * @author Sean A. Irvine
  */
 public class A001614 implements Sequence {

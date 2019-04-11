@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006517 Numbers k such that k divides 2^k <code>+ 2</code>.
+ * A006517 Numbers k such that k divides <code>2^k + 2</code>.
  * @author Sean A. Irvine
  */
 public class A006517 implements Sequence {

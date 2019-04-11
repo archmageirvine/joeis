@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323383 Positive integers k such that tau(k) <code>&gt;=</code> k/2.
+ * A323383 Positive integers k such that tau(k) <code>&gt;= k/2</code>.
  * @author Georg Fischer
  */
 public class A323383 extends FiniteSequence {

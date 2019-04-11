@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A078666 Number of isomorphism classes of simple quadrangulations of the sphere having <code>n+2</code> vertices and n faces, minimal degree <code>3,</code> with orientation-reversing isomorphisms permitted.
+ * A078666 Number of isomorphism classes of simple quadrangulations of the sphere having <code>n+2</code> vertices and n faces, minimal degree 3, with orientation-reversing isomorphisms permitted.
  * @author Sean A. Irvine
  */
 public class A078666 implements Sequence {

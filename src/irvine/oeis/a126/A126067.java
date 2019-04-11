@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002499;
 
 /**
- * A126067 Triangle read by rows: T(n,k) = number of self-converse digraphs with n nodes and k arcs, k=0..n*(n-1).
+ * A126067 Triangle read by rows: T(n,k) = number of self-converse digraphs with n nodes and k arcs, <code>k=0..n*(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A126067 implements Sequence {

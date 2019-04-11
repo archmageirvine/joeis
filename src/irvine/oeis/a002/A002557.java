@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * A002557 Odd squarefree numbers with <code>an</code> even number of prime factors that have no prime factors greater than 31.
+ * A002557 Odd squarefree numbers with an even number of prime factors that have no prime factors greater than 31.
  * @author Sean A. Irvine
  */
 public class A002557 implements Sequence {

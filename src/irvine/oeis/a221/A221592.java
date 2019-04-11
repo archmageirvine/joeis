@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221592 Number of 0..4 arrays of length n with each element differing from at least one neighbor by 1 or less.
+ * A221592 Number of <code>0..4</code> arrays of length n with each element differing from at least one neighbor by 1 or less.
  * @author Sean A. Irvine
  */
 public class A221592 extends LinearRecurrence {

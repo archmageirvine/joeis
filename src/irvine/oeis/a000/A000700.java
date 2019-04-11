@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import java.util.ArrayList;
 
 /**
- * A000700 Expansion of Product_{k&gt;=0} <code>(1 +</code> x^(2k+1)); number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
+ * A000700 Expansion of Product_{k&gt;=0} <code>(1 + x^(2k+1))</code>; number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A000700 extends A000593 {

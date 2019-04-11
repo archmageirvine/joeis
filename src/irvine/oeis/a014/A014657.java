@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014657 Numbers m that divide 2^k <code>+ 1</code> for some k.
+ * A014657 Numbers m that divide <code>2^k + 1</code> for some k.
  * @author Sean A. Irvine
  */
 public class A014657 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001171 From least significant term in expansion of E( tr (X'*X)^n <code>),</code> X rectangular and Gaussian. Also number of types of sequential n-swap moves for traveling salesman problem.
+ * A001171 From least significant term in expansion of E( tr (X'*X)^n ), X rectangular and Gaussian. Also number of types of sequential n-swap moves for traveling salesman problem.
  * @author Sean A. Irvine
  */
 public class A001171 implements Sequence {

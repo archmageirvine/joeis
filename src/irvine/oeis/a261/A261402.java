@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261402 The Mark-Ulam sequence: <code>an</code> erroneous version of A036747.
+ * A261402 The Mark-Ulam sequence: an erroneous version of A036747.
  * @author Georg Fischer
  */
 public class A261402 extends FiniteSequence {

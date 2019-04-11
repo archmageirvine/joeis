@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137360 <code>a(n) =</code> Sum_{k <code>&lt;= n/2 }</code> k*binomial(n-2k, 3k+1).
+ * A137360 <code>a(n) =</code> Sum_{k <code>&lt;= n/2 }</code> k*binomial(n-2k, <code>3k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A137360 extends LinearRecurrence {

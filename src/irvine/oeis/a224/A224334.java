@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224334 Number of idempotent 3 X <code>3 0</code>..n matrices of rank 2.
+ * A224334 Number of idempotent 3 X <code>3 0..n</code> matrices of rank 2.
  * @author Sean A. Irvine
  */
 public class A224334 extends LinearRecurrence {

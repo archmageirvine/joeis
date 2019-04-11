@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007923 Lengths increase by <code>1,</code> digits cycle through positive digits.
+ * A007923 Lengths increase by 1, digits cycle through positive digits.
  * @author Sean A. Irvine
  */
 public class A007923 implements Sequence {

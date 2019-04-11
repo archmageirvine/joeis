@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134966 Primes that use all of the prime digits <code>2,3,5,7</code> exactly once.
+ * A134966 Primes that use all of the prime digits 2,3,5,7 exactly once.
  * @author Georg Fischer
  */
 public class A134966 extends FiniteSequence {

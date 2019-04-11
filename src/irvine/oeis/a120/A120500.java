@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A120500 Times in hours,minutes and seconds (to the nearest second) at which the smoothly crossing minute and hour hands of <code>an</code> analog clock coincide, over a period of one complete 12-hour sweep of the hour hand.
+ * A120500 Times in hours,minutes and seconds (to the nearest second) at which the smoothly crossing minute and hour hands of an analog clock coincide, over a period of one complete 12-hour sweep of the hour hand.
  * @author Georg Fischer
  */
 public class A120500 extends FiniteSequence {

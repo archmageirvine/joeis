@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097776 Pell equation solutions (14*b(n))^2 <code>- 197*a(n)^2 = -1</code> with b(n):=A097775(n), <code>n&gt;=0</code>.
+ * A097776 Pell equation solutions <code>(14*b(n))^2 - 197*a(n)^2 = -1</code> with <code>b(n)</code>:=A097775(n), <code>n&gt;=0</code>.
  * @author Sean A. Irvine
  */
 public class A097776 extends LinearRecurrence {

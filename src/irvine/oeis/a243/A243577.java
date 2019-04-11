@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243577 Integers of the form 8k+7 that can be written as a sum of four distinct 'almost consecutive' squares.
+ * A243577 Integers of the form <code>8k+7</code> that can be written as a sum of four distinct 'almost consecutive' squares.
  * @author Sean A. Irvine
  */
 public class A243577 extends LinearRecurrence {

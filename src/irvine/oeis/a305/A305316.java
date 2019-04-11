@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305316 <code>a(n) =</code> sqrt(5*b(n)^2 <code>- 4)</code> with b(n) = Fibonacci(6*n+5) = A134497(n).
+ * A305316 <code>a(n) = sqrt(5*b(n)^2 - 4)</code> with <code>b(n) =</code> Fibonacci(6*n+5) = A134497(n).
  * @author Georg Fischer
  */
 public class A305316 extends LinearRecurrence {

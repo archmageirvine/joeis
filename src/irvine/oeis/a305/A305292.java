@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305292 Numbers k such that k-1 is a square and k+1 is a triangular number. 
+ * A305292 Numbers k such that <code>k-1</code> is a square and <code>k+1</code> is a triangular number.
  * @author Georg Fischer
  */
 public class A305292 extends LinearRecurrence {

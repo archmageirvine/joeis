@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103841 Numbers not representable as a sum of b^e with b <code>&gt;= 2,</code> e <code>&gt;= 2,</code> e distinct.
+ * A103841 Numbers not representable as a sum of b^e with <code>b &gt;= 2,</code> e <code>&gt;= 2,</code> e distinct.
  * @author Georg Fischer
  */
 public class A103841 extends FiniteSequence {

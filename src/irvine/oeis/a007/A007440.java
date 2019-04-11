@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007440 Reversion of g.f. for Fibonacci numbers <code>1,1,2,3,5,</code>...
+ * A007440 Reversion of g.f. for Fibonacci numbers <code>1,1,2,3,5,..</code>.
  * @author Sean A. Irvine
  */
 public class A007440 implements Sequence {

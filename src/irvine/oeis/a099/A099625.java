@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099625 Sum C(n-k,k+2)2^(n-k-2)(1/2)^k, k=0..floor(n/2).
+ * A099625 Sum C(n-k,k+2)2^(n-k-2)(1/2)^k, <code>k=0..floor(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A099625 extends LinearRecurrence {

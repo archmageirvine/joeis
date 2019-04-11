@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218132 Number of length 9 primitive (=aperiodic or period <code>9)</code> n-ary words.
+ * A218132 Number of length 9 primitive (=aperiodic or period 9) n-ary words.
  * @author Sean A. Irvine
  */
 public class A218132 extends LinearRecurrence {

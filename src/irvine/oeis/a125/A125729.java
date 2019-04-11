@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125729 Numbers whose base 7 representation is 555....5.
+ * A125729 Numbers whose base 7 representation is <code>555....5</code>.
  * @author Sean A. Irvine
  */
 public class A125729 extends LinearRecurrence {

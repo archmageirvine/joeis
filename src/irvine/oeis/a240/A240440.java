@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240440 Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of <code>an</code> equilateral triangle of any orientation.
+ * A240440 Number of ways to place 3 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
  * @author Sean A. Irvine
  */
 public class A240440 extends LinearRecurrence {

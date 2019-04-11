@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181433 Numbers k such that 11*k is 5 less than a square.
+ * A181433 Numbers k such that <code>11*k</code> is 5 less than a square.
  * @author Sean A. Irvine
  */
 public class A181433 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138823 Divisors of 248 (the 3rd perfect number divided by <code>2),</code> written in base 2.
+ * A138823 Divisors of 248 (the 3rd perfect number divided by 2), written in base 2.
  * @author Georg Fischer
  */
 public class A138823 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161591 The list of the B values in the common solutions to the 2 equations 13*k <code>+ 1 =</code> A^2, 17*k <code>+ 1 =</code> B^2.
+ * A161591 The list of the B values in the common solutions to the 2 equations <code>13*k + 1 =</code> A^2, <code>17*k + 1 =</code> B^2.
  * @author Georg Fischer
  */
 public class A161591 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274545 Values of k such that 5*k-1 and 10*k-1 are both perfect squares.
+ * A274545 Values of k such that <code>5*k-1</code> and <code>10*k-1</code> are both perfect squares.
  * @author Sean A. Irvine
  */
 public class A274545 extends LinearRecurrence {

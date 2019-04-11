@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128959 <code>a(n)</code> is equal to the number of positive integers m less than or equal to <code>10^n</code> such that m is not divisible by at least one of the primes <code>2,3</code> and is not divisible by at least one of the primes <code>5,7</code>.
+ * A128959 <code>a(n)</code> is equal to the number of positive integers m less than or equal to <code>10^n</code> such that m is not divisible by at least one of the primes 2,3 and is not divisible by at least one of the primes 5,7.
  * @author Sean A. Irvine
  */
 public class A128959 extends LinearRecurrence {

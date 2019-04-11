@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A320580 Numbers k such that for any positive integers x,y coprime to k, <code>x^x ==</code> y <code>(mod</code> k) iff y^y <code>== x (mod</code> k).
+ * A320580 Numbers k such that for any positive integers x,y coprime to <code>k, x^x ==</code> y <code>(mod k)</code> iff y^y <code>== x (mod k)</code>.
  * @author Georg Fischer
  */
 public class A320580 extends FiniteSequence {

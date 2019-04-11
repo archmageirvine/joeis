@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A132676 Decimal number representations of hexadecimal numbers whose form spells <code>an</code> American-English word found in a standard dictionary in numerical order.
+ * A132676 Decimal number representations of hexadecimal numbers whose form spells an American-English word found in a standard dictionary in numerical order.
  * @author Georg Fischer
  */
 public class A132676 extends FiniteSequence {

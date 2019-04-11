@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008783 Period of continued fraction representation of <code>(sqrt(4n+1)+1)/2=sqrt(n+sqrt(n+sqrt(n+</code>...))).
+ * A008783 Period of continued fraction representation of <code>(sqrt(4n+1)+1)/2=sqrt(n+sqrt(n+sqrt(n+...)))</code>.
  * @author Sean A. Irvine
  */
 public class A008783 implements Sequence {

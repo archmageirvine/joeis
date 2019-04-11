@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218864 Numbers of the form 9*k^2 + 8*k, k <code>an</code> integer.
+ * A218864 Numbers of the form <code>9*k^2 + 8*k, k an</code> integer.
  * @author Sean A. Irvine
  */
 public class A218864 extends LinearRecurrence {

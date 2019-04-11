@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102516 Sum C(n-3k,3k+1), k=0..floor(n/6).
+ * A102516 Sum C(n-3k,3k+1), <code>k=0..floor(n/6)</code>.
  * @author Sean A. Irvine
  */
 public class A102516 extends LinearRecurrence {

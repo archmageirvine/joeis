@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A316492 Numbers k such that the average digit in the concatenation of the numbers from 1 through k is <code>an</code> integer.
+ * A316492 Numbers k such that the average digit in the concatenation of the numbers from 1 through k is an integer.
  * @author Georg Fischer
  */
 public class A316492 extends FiniteSequence {

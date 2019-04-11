@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243294 Least number k <code>&gt; 1</code> such that a number composed of k consecutive ascending digits starting with n is prime.
+ * A243294 Least number <code>k &gt; 1</code> such that a number composed of k consecutive ascending digits starting with n is prime.
  * @author Georg Fischer
  */
 public class A243294 extends FiniteSequence {

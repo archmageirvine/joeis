@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072557 Let w(n) be defined by the following recurrence: w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3); sequence gives values of n such that w(n) is <code>an</code> integer.
+ * A072557 Let w(n) be defined by the following recurrence: w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3); sequence gives values of n such that w(n) is an integer.
  * @author Sean A. Irvine
  */
 public class A072557 extends LinearRecurrence {

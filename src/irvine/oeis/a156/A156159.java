@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156159 Squares of the form k^2+(k+17)^2 with integer k.
+ * A156159 Squares of the form <code>k^2+(k+17)^2</code> with integer k.
  * @author Sean A. Irvine
  */
 public class A156159 extends LinearRecurrence {

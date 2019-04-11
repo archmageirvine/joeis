@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304960 Number of business cards required to build <code>an</code> origami level n Mosely snowflake sponge.
+ * A304960 Number of business cards required to build an origami level n Mosely snowflake sponge.
  * @author Georg Fischer
  */
 public class A304960 extends LinearRecurrence {

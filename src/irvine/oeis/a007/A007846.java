@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A007846 There are three equivalent descriptions: 1. Number of (horizontally or vertically) connected arrays of 1..n on rectangular grid (otherwise zero) with only one local maximum. 2. Number of n-polyominoes labeled 1...n such that each successive labeled cell is the neighbor of a previously labeled cell. 3. Number of connected n-step paths on a rectangular lattice, diagonal or repeated steps not allowed.
+ * A007846 There are three equivalent descriptions: <code>1.</code> Number of (horizontally or vertically) connected arrays of <code>1..n</code> on rectangular grid (otherwise zero) with only one local maximum. <code>2.</code> Number of n-polyominoes labeled <code>1...n</code> such that each successive labeled cell is the neighbor of a previously labeled cell. <code>3.</code> Number of connected n-step paths on a rectangular lattice, diagonal or repeated steps not allowed.
  * @author Sean A. Irvine
  */
 public class A007846 implements Sequence {

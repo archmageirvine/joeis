@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096017 Numbers n such that 4^k*n, for k <code>&gt;= 0,</code> have a unique partition into three distinct positive squares.
+ * A096017 Numbers n such that <code>4^k*n,</code> for <code>k &gt;= 0,</code> have a unique partition into three distinct positive squares.
  * @author Georg Fischer
  */
 public class A096017 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323999 Start with <code>348,</code> then successively apply <code>/12, -11, *10, /9, -8, *7, /6, -5, *4, /3, -2, *1</code>.
+ * A323999 Start with 348, then successively apply <code>/12, -11, *10, /9, -8, *7, /6, -5, *4, /3, -2, *1</code>.
  * @author Georg Fischer
  */
 public class A323999 extends FiniteSequence {

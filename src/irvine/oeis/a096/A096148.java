@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096148 Perfect zip primes (i.e., order-k zip primes, with k = number of digits).
+ * A096148 Perfect zip primes (i.e., order-k zip primes, with <code>k =</code> number of digits).
  * @author Georg Fischer
  */
 public class A096148 extends FiniteSequence {

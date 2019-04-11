@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112422 Number of 6-element subsets of <code>{1,2,3,</code>...,n} for which the sum-set has 13 elements.
+ * A112422 Number of 6-element subsets of <code>{1,2,3,...,n}</code> for which the sum-set has 13 elements.
  * @author Sean A. Irvine
  */
 public class A112422 extends LinearRecurrence {

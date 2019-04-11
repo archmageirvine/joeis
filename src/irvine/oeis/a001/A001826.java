@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001826 Number of divisors of n of form 4k+1.
+ * A001826 Number of divisors of n of form <code>4k+1</code>.
  * @author Sean A. Irvine
  */
 public class A001826 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280059 Number of 2 X 2 matrices having all elements in <code>{-n,</code>..,0,..,n} with determinant = permanent.
+ * A280059 Number of 2 X 2 matrices having all elements in <code>{-n,..,0,..,n}</code> with determinant = permanent.
  * @author Sean A. Irvine
  */
 public class A280059 extends LinearRecurrence {

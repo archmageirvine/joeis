@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013091 E.g.f.: exp(arcsinh(x)+tan(x)) <code>= 1 + 2*x + 4/2!*x^2 + 9/3!*x^3 + 24/4!*x^4 + 97/5!*x^5 + </code>....
+ * A013091 E.g.f.: exp(arcsinh(x)+tan(x)) <code>= 1 + 2*x + 4/2!*x^2 + 9/3!*x^3 + 24/4!*x^4 + 97/5!*x^5 + ...</code>.
  * @author Sean A. Irvine
  */
 public class A013091 implements Sequence {

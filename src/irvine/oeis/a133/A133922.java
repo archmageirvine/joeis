@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A133922 <code>a(n) =</code> number of permutations (p(1),p(2),p(3),...p(n)) of <code>(1,2,3,</code>...n) such that p(k) is coprime to p(n+1-k) for k = all positive integers <code>&lt;=n</code>.
+ * A133922 <code>a(n) =</code> number of permutations (p(1),p(2),p(3),...p(n)) of <code>(1,2,3,...n)</code> such that p(k) is coprime to p(n+1-k) for <code>k =</code> all positive integers <code>&lt;=n</code>.
  * @author Sean A. Irvine
  */
 public class A133922 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125880 <code>a(n)</code> is the number of nonnegative integers k less than <code>10^n</code> such that the decimal representation of k lacks at least one of the digits <code>1,2</code> and at least one of the digits <code>3,4,5,6,7,8,9</code>.
+ * A125880 <code>a(n)</code> is the number of nonnegative integers k less than <code>10^n</code> such that the decimal representation of k lacks at least one of the digits 1,2 and at least one of the digits 3,4,5,6,7,8,9.
  * @author Sean A. Irvine
  */
 public class A125880 extends LinearRecurrence {

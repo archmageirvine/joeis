@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159681 The general form of the recurrences are the a(j), b(j) and n(j) solutions of the 2 equations problem: 5*n(j)+1=a(j)*a(j) and 7*n(j)+1=b(j)*b(j) with positive integer numbers.
+ * A159681 The general form of the recurrences are the <code>a(j), b(j)</code> and <code>n(j)</code> solutions of the 2 equations problem: <code>5*n(j)+1=a(j)*a(j)</code> and <code>7*n(j)+1=b(j)*b(j)</code> with positive integer numbers.
  * @author Sean A. Irvine
  */
 public class A159681 extends LinearRecurrence {

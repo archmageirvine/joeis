@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A001172 Smallest even number that is <code>an</code> unordered sum of two odd primes in exactly n ways.
+ * A001172 Smallest even number that is an unordered sum of two odd primes in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A001172 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015938 Smallest k&gt;2^n such that 2^k <code>== 2^n (mod</code> k).
+ * A015938 Smallest <code>k&gt;2^n</code> such that <code>2^k == 2^n (mod k)</code>.
  * @author Sean A. Irvine
  */
 public class A015938 implements Sequence {

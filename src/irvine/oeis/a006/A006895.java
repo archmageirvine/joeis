@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006895 Parenthesized one way gives the powers of 2: <code>(1), (2), (1+3), </code>..., another way the powers of 3: <code>(1), (2+1), (3+6), </code>....
+ * A006895 Parenthesized one way gives the powers of 2: <code>(1), (2), (1+3), ...,</code> another way the powers of 3: <code>(1), (2+1), (3+6), ...</code>.
  * @author Sean A. Irvine
  */
 public class A006895 implements Sequence {

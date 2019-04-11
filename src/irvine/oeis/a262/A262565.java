@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A262565 A weaver's answer to the question "What comes next after <code>2,3</code>,5?".
+ * A262565 A weaver's answer to the question "What comes next after 2,3,5?".
  * @author Sean A. Irvine
  */
 public class A262565 extends LinearRecurrence {

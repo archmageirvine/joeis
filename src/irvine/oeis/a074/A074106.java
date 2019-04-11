@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074106 <code>a(1)=1</code>; <code>a(n)</code> is the minimal unused odd prime such that the sum <code>a(1)+a(2)+</code>...+a(n) is divisible by n.
+ * A074106 <code>a(1)=1</code>; <code>a(n)</code> is the minimal unused odd prime such that the sum <code>a(1)+a(2)+...+a(n)</code> is divisible by n.
  * @author Georg Fischer
  */
 public class A074106 extends FiniteSequence {

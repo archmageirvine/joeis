@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086108 Numbers n with the following property: Every symmetric polynomial of the digits of n is prime. (A symmetric polynomial is unchanged by any permutation of its variables, so the symmetric polynomials of <code>{a</code>,b,c} would be a+b+c,ab+bc+ac and abc.).
+ * A086108 Numbers n with the following property: Every symmetric polynomial of the digits of n is prime. (A symmetric polynomial is unchanged by any permutation of its variables, so the symmetric polynomials of <code>{a,b</code>,c} would be a+b+c,ab+bc+ac and abc.).
  * @author Georg Fischer
  */
 public class A086108 extends FiniteSequence {

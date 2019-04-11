@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055158 n has distinct digits in descending order and n=a+b where a has the digits of n in another order and b has the digits of n in ascending order (perhaps with leading zeros).
+ * A055158 n has distinct digits in descending order and <code>n=a+b</code> where a has the digits of n in another order and b has the digits of n in ascending order (perhaps with leading zeros).
  * @author Georg Fischer
  */
 public class A055158 extends FiniteSequence {

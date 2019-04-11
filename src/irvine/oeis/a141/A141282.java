@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141282 Least prime p such that p-6^n, ..., p-6, p, p+6, ... and p+6^n are primes.
+ * A141282 Least prime p such that p-6^n, <code>...,</code> p-6, p, p+6, <code>...</code> and p+6^n are primes.
  * @author Georg Fischer
  */
 public class A141282 extends FiniteSequence {

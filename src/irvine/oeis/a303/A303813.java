@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303813 Generalized 19-gonal (or enneadecagonal) numbers: m*(17*m <code>- 15)/2</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, </code>...
+ * A303813 Generalized 19-gonal (or enneadecagonal) numbers: m*(17*m <code>- 15)/2</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, ..</code>.
  * @author Georg Fischer
  */
 public class A303813 extends LinearRecurrence {

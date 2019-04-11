@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A221362 Number of distinct groups of order n that are the torsion subgroup of <code>an</code> elliptic curve over the rationals Q.
+ * A221362 Number of distinct groups of order n that are the torsion subgroup of an elliptic curve over the rationals Q.
  * @author Georg Fischer
  */
 public class A221362 extends FiniteSequence {

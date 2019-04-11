@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003581 Dowling numbers: e.g.f. exp(x + (exp(b*x)-1)/b) with b=9.
+ * A003581 Dowling numbers: e.g.f. exp(x + (exp(b*x)-1)/b) with <code>b=9</code>.
  * @author Sean A. Irvine
  */
 public class A003581 extends A003575 {

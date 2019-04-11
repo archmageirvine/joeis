@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268306 The number of even permutations p of <code>1,2,</code>...,n such that -1&lt;=p(i)-i&lt;=2 for i=1,2,...,n.
+ * A268306 The number of even permutations p of <code>1,2,...,n</code> such that -1&lt;=p(i)-i&lt;=2 for i=1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A268306 extends LinearRecurrence {

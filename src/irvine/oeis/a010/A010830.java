@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 /**
- * A010830 Expansion of Product_{k&gt;=1} (1-x^k <code>)^25</code>.
+ * A010830 Expansion of Product_{k&gt;=1} <code>(1-x^k )^25</code>.
  * @author Sean A. Irvine
  */
 public class A010830 extends A010816 {

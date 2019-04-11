@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007607 Skip <code>1,</code> take <code>2,</code> skip <code>3,</code> etc.
+ * A007607 Skip 1, take 2, skip 3, etc.
  * @author Sean A. Irvine
  */
 public class A007607 implements Sequence {

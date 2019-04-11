@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268291 <code>a(n) =</code> Sum_{k <code>= 0</code>..n} (k <code>mod 13)</code>.
+ * A268291 <code>a(n) =</code> Sum_{k <code>= 0..n} (k mod 13)</code>.
  * @author Sean A. Irvine
  */
 public class A268291 extends LinearRecurrence {

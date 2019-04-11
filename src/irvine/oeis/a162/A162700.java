@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162700 Numbers k which are concatenations k = x//y such that y^2 <code>- x^2 =</code> k.
+ * A162700 Numbers k which are concatenations <code>k =</code> x//y such that y^2 <code>- x^2 = k</code>.
  * @author Sean A. Irvine
  */
 public class A162700 implements Sequence {

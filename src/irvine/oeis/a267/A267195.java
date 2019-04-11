@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267195 The j-invariants in A032354 are perfect cubes, except for two terms that have <code>an</code> extra factor of 2 or 3. Ignore these two extra factors and take the cube roots.
+ * A267195 The j-invariants in A032354 are perfect cubes, except for two terms that have an extra factor of 2 or <code>3.</code> Ignore these two extra factors and take the cube roots.
  * @author Georg Fischer
  */
 public class A267195 extends FiniteSequence {

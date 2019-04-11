@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173202 Solutions y of the Mordell equation y^2 <code>= x^3 - 3a^2 + 1</code> for <code>a = 0,1,2, </code>... (solutions x are given by the sequence A000466).
+ * A173202 Solutions y of the Mordell equation y^2 <code>= x^3 - 3a^2 + 1</code> for <code>a = 0,1,2, ...</code> (solutions x are given by the sequence A000466).
  * @author Sean A. Irvine
  */
 public class A173202 extends LinearRecurrence {

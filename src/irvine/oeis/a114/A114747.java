@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114747 <code>a(1) = 1, a(2) = 1, a(n+1) =</code> least Fibonacci number of the form k*(a(n-1)) <code>- a(n),</code> not included earlier.
+ * A114747 <code>a(1) = 1, a(2) = 1, a(n+1) =</code> least Fibonacci number of the form <code>k*(a(n-1)) - a(n),</code> not included earlier.
  * @author Georg Fischer
  */
 public class A114747 extends FiniteSequence {

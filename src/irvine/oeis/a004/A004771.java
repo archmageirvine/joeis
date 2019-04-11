@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004771 <code>a(n) = 8*n + 7</code>. Or, numbers whose binary expansion ends in 111.
+ * A004771 <code>a(n) = 8*n + 7.</code> Or, numbers whose binary expansion ends in 111.
  * @author Sean A. Irvine
  */
 public class A004771 implements Sequence {

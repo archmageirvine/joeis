@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A288350 Lexically smallest string of n digits from 1...9, such that no formula using the single digits in the given order exists that evaluates to 0.
+ * A288350 Lexically smallest string of n digits from <code>1...9,</code> such that no formula using the single digits in the given order exists that evaluates to 0.
  * @author Georg Fischer
  */
 public class A288350 extends FiniteSequence {

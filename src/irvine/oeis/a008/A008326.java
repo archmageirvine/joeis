@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008326 Triangle read by rows: T(n,k) is the number of simple regular connected bipartite graphs with <code>2n</code> nodes and degree k, <code>(2 &lt;=</code> k <code>&lt;= n)</code>.
+ * A008326 Triangle read by rows: T(n,k) is the number of simple regular connected bipartite graphs with <code>2n</code> nodes and degree <code>k, (2 &lt;= k &lt;= n)</code>.
  * @author Sean A. Irvine
  */
 public class A008326 implements Sequence {

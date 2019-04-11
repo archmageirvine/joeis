@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012859 Numerator of the coefficient of <code>[x^(2n)]</code> of the Taylor series log(cosec(x)*arcsinh(x))= <code>x^4/15 -x^6/30 +25*x^8/1134 -269*x^10/17010 +4401359*x^12/364864500-</code>...
+ * A012859 Numerator of the coefficient of <code>[x^(2n)]</code> of the Taylor series log(cosec(x)*arcsinh(x))= <code>x^4/15 -x^6/30 +25*x^8/1134 -269*x^10/17010 +4401359*x^12/364864500-..</code>.
  * @author Sean A. Irvine
  */
 public class A012859 implements Sequence {

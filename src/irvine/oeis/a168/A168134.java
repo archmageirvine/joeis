@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168134 Numbers not of the form 7*k+11*m (with nonnegative k, m).
+ * A168134 Numbers not of the form 7*k+11*m (with nonnegative <code>k,</code> m).
  * @author Georg Fischer
  */
 public class A168134 extends FiniteSequence {

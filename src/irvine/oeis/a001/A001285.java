@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A001285 Thue-Morse sequence: let A_k denote the first 2^k terms; then A_0 <code>= 1</code> and for k <code>&gt;= 0,</code> A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and 2's.
+ * A001285 Thue-Morse sequence: let A_k denote the first <code>2^k</code> terms; then A_0 <code>= 1</code> and for <code>k &gt;= 0,</code> A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 1's and 2's.
  * @author Sean A. Irvine
  */
 public class A001285 implements Sequence {

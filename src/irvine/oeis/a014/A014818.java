@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014818 <code>a(n)</code> is the sum over all floor(k^3/n), k=0 to n inclusive.
+ * A014818 <code>a(n)</code> is the sum over all <code>floor(k^3/n), k=0</code> to n inclusive.
  * @author Sean A. Irvine
  */
 public class A014818 implements Sequence {

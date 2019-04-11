@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A065825 Smallest k such that n numbers may be picked in <code>{1,</code>...,k} with no three terms in arithmetic progression.
+ * A065825 Smallest k such that n numbers may be picked in <code>{1,...,k}</code> with no three terms in arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A065825 implements Sequence {

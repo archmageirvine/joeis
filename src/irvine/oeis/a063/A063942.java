@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063942 Follow k with k-1 and k-2.
+ * A063942 Follow k with <code>k-1</code> and <code>k-2</code>.
  * @author Sean A. Irvine
  */
 public class A063942 extends LinearRecurrence {

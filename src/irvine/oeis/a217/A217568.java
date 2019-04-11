@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A217568 Rows of the 8 magic squares of order 3 and magic sum <code>15,</code> lexicographically sorted.
+ * A217568 Rows of the 8 magic squares of order 3 and magic sum 15, lexicographically sorted.
  * @author Georg Fischer
  */
 public class A217568 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A060815 Powers of 2 with each digit a power of 2 (only digits <code>0,1,2,4,8</code> are used).
+ * A060815 Powers of 2 with each digit a power of 2 (only digits 0,1,2,4,8 are used).
  * @author Georg Fischer
  */
 public class A060815 extends FiniteSequence {

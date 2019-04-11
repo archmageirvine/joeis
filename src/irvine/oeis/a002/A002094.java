@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000642;
 
 /**
- * A002094 Number of unlabeled connected loop-less graphs on n nodes containing exactly one cycle (of length at least <code>2)</code> and with all nodes of degree <code>&lt;= 4</code>.
+ * A002094 Number of unlabeled connected loop-less graphs on n nodes containing exactly one cycle (of length at least 2) and with all nodes of degree <code>&lt;= 4</code>.
  * @author Sean A. Irvine
  */
 public class A002094 extends A000642 {

@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316729 Generalized 30-gonal (or triacontagonal) numbers: m*(14*m <code>- 13)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, </code>...
+ * A316729 Generalized 30-gonal (or triacontagonal) numbers: m*(14*m <code>- 13)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, ..</code>.
  * @author Georg Fischer
  */
 public class A316729 extends LinearRecurrence {

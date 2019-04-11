@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059953 Ordering of a deck of 52 cards after <code>an</code> out-shuffle.
+ * A059953 Ordering of a deck of 52 cards after an out-shuffle.
  * @author Georg Fischer
  */
 public class A059953 extends FiniteSequence {

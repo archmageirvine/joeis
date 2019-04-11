@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A098316 Decimal expansion of <code>[3, 3, </code>...] <code>= (3 + sqrt(13))/2</code>.
+ * A098316 Decimal expansion of <code>[3, 3, ...] = (3 + sqrt(13))/2</code>.
  * @author Sean A. Irvine
  */
 public class A098316 extends DecimalExpansionSequence {

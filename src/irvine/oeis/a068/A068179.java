@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068179 Product_{i=1..3} (i+x) / Product_(i=1..3} (i-x) = Sum_{n&gt;=0} (a(n)/b(n))*x^n.
+ * A068179 Product_{i=1..3} (i+x) / Product_(i=1..3} (i-x) = Sum_{n&gt;=0} <code>(a(n)/b(n))*x^n</code>.
  * @author Sean A. Irvine
  */
 public class A068179 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060458 Maximal value seen in the final n decimal digits of 2^j for all values of j.
+ * A060458 Maximal value seen in the final n decimal digits of <code>2^j</code> for all values of j.
  * @author Sean A. Irvine
  */
 public class A060458 extends LinearRecurrence {

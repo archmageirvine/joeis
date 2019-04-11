@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178342 Smallest prime p such that decimals digits <code>1, </code>..., k (k <code>= 1, </code>..., <code>9)</code> and 0 appear in any order in <code>3 *</code> p.
+ * A178342 Smallest prime p such that decimals digits <code>1, ..., k (k = 1, ..., 9)</code> and 0 appear in any order in <code>3 *</code> p.
  * @author Georg Fischer
  */
 public class A178342 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012531 sec(sinh(x)*sin(x)) <code>= 1+12/4!*x^4+7952/8!*x^8+36180672/12!*x^12</code>...
+ * A012531 sec(sinh(x)*sin(x)) <code>= 1+12/4!*x^4+7952/8!*x^8+36180672/12!*x^12..</code>.
  * @author Sean A. Irvine
  */
 public class A012531 implements Sequence {

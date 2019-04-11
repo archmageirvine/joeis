@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130424 Main diagonal of array A[k,n] = n-th sum of k consecutive k-gonal numbers, k&gt;2.
+ * A130424 Main diagonal of array A[k,n] = n-th sum of k consecutive k-gonal numbers, <code>k&gt;2</code>.
  * @author Sean A. Irvine
  */
 public class A130424 extends LinearRecurrence {

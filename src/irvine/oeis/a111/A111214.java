@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A111214 Score for <code>an</code> n-letter word in the game of Boggle.
+ * A111214 Score for an n-letter word in the game of Boggle.
  * @author Georg Fischer
  */
 public class A111214 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A024779 Every suffix is prime and contains no 0 digits in base 4 (written in base <code>4)</code>.
+ * A024779 Every suffix is prime and contains no 0 digits in base 4 (written in base 4).
  * @author Georg Fischer
  */
 public class A024779 extends FiniteSequence {

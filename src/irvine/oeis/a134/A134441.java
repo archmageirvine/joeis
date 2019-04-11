@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134441 Last two digits of primes of form <code>4n+1</code> (A002144), excluding 5. Leading 0's omitted.
+ * A134441 Last two digits of primes of form <code>4n+1</code> (A002144), excluding <code>5.</code> Leading 0's omitted.
  * @author Georg Fischer
  */
 public class A134441 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117868 Number of palindromes (in base <code>9)</code> below <code>9^n</code>.
+ * A117868 Number of palindromes (in base 9) below <code>9^n</code>.
  * @author Sean A. Irvine
  */
 public class A117868 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013308 Numerator of <code>[x^n]</code> of the Taylor series arccosh(exp(x)-arctan(x))= <code>x+x^2/2 -x^3/8 -17*x^4/80 +109*x^5/1920 +299*x^6/2304 -813*x^7/25600 -</code>...
+ * A013308 Numerator of <code>[x^n]</code> of the Taylor series arccosh(exp(x)-arctan(x))= <code>x+x^2/2 -x^3/8 -17*x^4/80 +109*x^5/1920 +299*x^6/2304 -813*x^7/25600 -..</code>.
  * @author Sean A. Irvine
  */
 public class A013308 implements Sequence {

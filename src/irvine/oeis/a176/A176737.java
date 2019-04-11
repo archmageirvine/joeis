@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176737 Expansion of <code>1 / (1-4*x^2-3*x^3)</code>. <code>(4</code>,3)-Padovan sequence.
+ * A176737 Expansion of <code>1 / (1-4*x^2-3*x^3). (4</code>,3)-Padovan sequence.
  * @author Sean A. Irvine
  */
 public class A176737 extends LinearRecurrence {

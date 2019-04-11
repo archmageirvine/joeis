@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000522 Total number of arrangements of a set with n elements: <code>a(n) =</code> Sum_{k=0..n} n!/k!.
+ * A000522 Total number of arrangements of a set with n elements: <code>a(n) =</code> Sum_{k=0..n} <code>n!/k!</code>.
  * @author Sean A. Irvine
  */
 public class A000522 implements Sequence {

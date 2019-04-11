@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180483 Solutions <code>a(n)</code> to <code>(a(n)-2)*(a(n)-3) =</code> 6*b(n)*(b(n)-1).
+ * A180483 Solutions <code>a(n)</code> to <code>(a(n)-2)*(a(n)-3) = 6*b(n)*(b(n)-1)</code>.
  * @author Sean A. Irvine
  */
 public class A180483 extends LinearRecurrence {

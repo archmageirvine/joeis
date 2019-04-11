@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014112 <code>a(n) = n*(n-1) + (n-2)*(n-3) + </code>... <code>+ 1*0 + 1</code> for n odd; otherwise, <code>a(n) = n*(n-1) + (n-2)*(n-3) + </code>... <code>+ 2*1</code>.
+ * A014112 <code>a(n) = n*(n-1) + (n-2)*(n-3) + ... + 1*0 + 1</code> for n odd; otherwise, <code>a(n) = n*(n-1) + (n-2)*(n-3) + ... + 2*1</code>.
  * @author Sean A. Irvine
  */
 public class A014112 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019031 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite LOS = Losod Na12 [ Al12Si12O48 <code>] </code>. 18 H2O.
+ * A019031 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite LOS = Losod Na12 [ Al12Si12O48 <code>] . 18</code> H2O.
  * @author Sean A. Irvine
  */
 public class A019031 extends A018940 {

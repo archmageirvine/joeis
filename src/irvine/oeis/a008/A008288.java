@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008288 Square array of Delannoy numbers D(i,j) (i <code>&gt;= 0,</code> j <code>&gt;= 0)</code> read by antidiagonals.
+ * A008288 Square array of Delannoy numbers D(i,j) (i <code>&gt;= 0, j &gt;= 0)</code> read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A008288 extends MemoryFunction2<Long, Z> implements Sequence {

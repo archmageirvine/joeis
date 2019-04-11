@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088266 Smallest number that yields a prime when appended by A088265(k) for all k&lt;=n.
+ * A088266 Smallest number that yields a prime when appended by A088265(k) for all <code>k&lt;=n</code>.
  * @author Sean A. Irvine
  */
 public class A088266 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000660 Boustrophedon transform of <code>1,1,2,3,4,5,</code>...
+ * A000660 Boustrophedon transform of <code>1,1,2,3,4,5,..</code>.
  * @author Sean A. Irvine
  */
 public class A000660 implements Sequence {

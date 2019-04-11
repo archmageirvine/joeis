@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292397 p-INVERT of the tribonacci numbers (A000073(k), k&gt;=2), where p(S) <code>= 1 -</code> S - S^2 - S^3.
+ * A292397 p-INVERT of the tribonacci numbers (A000073(k), <code>k&gt;=2),</code> where p(S) <code>= 1 -</code> S - S^2 - S^3.
  * @author Sean A. Irvine
  */
 public class A292397 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003130 Impedances of <code>an</code> n-terminal network.
+ * A003130 Impedances of an n-terminal network.
  * @author Sean A. Irvine
  */
 public class A003130 implements Sequence {

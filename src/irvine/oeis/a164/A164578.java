@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164578 Integers of the form (k+1)*(2k+1)/12.
+ * A164578 Integers of the form <code>(k+1)*(2k+1)/12</code>.
  * @author Sean A. Irvine
  */
 public class A164578 extends LinearRecurrence {

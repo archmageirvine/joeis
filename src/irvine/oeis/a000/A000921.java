@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000921 Primes p of the form 3k+1 such that Sum_{x=1..p} cos(2*Pi*x^3/p) <code>&gt; </code> sqrt(p).
+ * A000921 Primes p of the form <code>3k+1</code> such that Sum_{x=1..p} cos(2*Pi*x^3/p) <code>&gt; </code> sqrt(p).
  * @author Sean A. Irvine
  */
 public class A000921 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A248077 Least number k <code>&gt; 0</code> such that k^k contains exactly n distinct digits.
+ * A248077 Least number <code>k &gt; 0</code> such that <code>k^k</code> contains exactly n distinct digits.
  * @author Georg Fischer
  */
 public class A248077 extends FiniteSequence {

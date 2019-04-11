@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160508 Knuth's standard example of <code>an</code> unsorted array.
+ * A160508 Knuth's standard example of an unsorted array.
  * @author Georg Fischer
  */
 public class A160508 extends FiniteSequence {

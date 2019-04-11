@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002074 Denominators of coefficients in <code>an</code> asymptotic expansion of the confluent hypergeometric function F(1-b; 2; 4b).
+ * A002074 Denominators of coefficients in an asymptotic expansion of the confluent hypergeometric function F(1-b; 2; <code>4b)</code>.
  * @author Sean A. Irvine
  */
 public class A002074 extends A002073 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A106273 Discriminant of the polynomial <code>x^n - x^(n-1) -</code>...- <code>x - 1</code>.
+ * A106273 Discriminant of the polynomial <code>x^n - x^(n-1) -...- x - 1</code>.
  * @author Sean A. Irvine
  */
 public class A106273 implements Sequence {

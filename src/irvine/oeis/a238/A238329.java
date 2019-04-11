@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A238329 Fibonacci numbers n that have no prime factors of the form 4k+1.
+ * A238329 Fibonacci numbers n that have no prime factors of the form <code>4k+1</code>.
  * @author Georg Fischer
  */
 public class A238329 extends FiniteSequence {

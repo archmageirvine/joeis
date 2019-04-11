@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210588 Twenty-seven smaller strong pseudoprimes to bases <code>2,3,5,7</code> arranged in order given by a function f:N-&gt;{1..27}.
+ * A210588 Twenty-seven smaller strong pseudoprimes to bases 2,3,5,7 arranged in order given by a function f:N-&gt;{1..27}.
  * @author Georg Fischer
  */
 public class A210588 extends FiniteSequence {

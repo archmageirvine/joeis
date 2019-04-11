@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011764 <code>a(n) = 3^(2^n)</code> (or: write in base <code>3,</code> read in base <code>9)</code>.
+ * A011764 <code>a(n) = 3^(2^n)</code> (or: write in base 3, read in base 9).
  * @author Sean A. Irvine
  */
 public class A011764 implements Sequence {

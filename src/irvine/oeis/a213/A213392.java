@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213392 Number of (w,x,y) with all terms in <code>{0,</code>...,n} and 2*max(w,x,y) <code>&gt;=</code> 3*min(w,x,y).
+ * A213392 Number of (w,x,y) with all terms in <code>{0,...,n}</code> and 2*max(w,x,y) <code>&gt;=</code> 3*min(w,x,y).
  * @author Sean A. Irvine
  */
 public class A213392 extends LinearRecurrence {

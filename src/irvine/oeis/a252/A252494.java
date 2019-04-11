@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A252494 Numbers n such that all prime factors of n and <code>n+1</code> are <code>&lt;= 11</code>. (Related to the abc conjecture.).
+ * A252494 Numbers n such that all prime factors of n and <code>n+1</code> are <code>&lt;= 11.</code> (Related to the abc conjecture.).
  * @author Georg Fischer
  */
 public class A252494 extends FiniteSequence {

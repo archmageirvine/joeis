@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000004;
 import irvine.oeis.a001.A001511;
 
 /**
- * A007814 Exponent of highest power of 2 dividing <code>n, a</code>.k.a. the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
+ * A007814 Exponent of highest power of 2 dividing <code>n, a.k.a.</code> the binary carry sequence, the ruler sequence, or the 2-adic valuation of n.
  * @author Sean A. Irvine
  */
 public class A007814 extends AlternatingSequence {

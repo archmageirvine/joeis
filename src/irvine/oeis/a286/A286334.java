@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A286334 The smallest number a such that there exists <code>an</code> integer b such that a/b is equal to n% rounded to the nearest percent.
+ * A286334 The smallest number a such that there exists an integer b such that <code>a/b</code> is equal to n% rounded to the nearest percent.
  * @author Georg Fischer
  */
 public class A286334 extends FiniteSequence {

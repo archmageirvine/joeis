@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220082 Numbers k such that 10*k-1 is a square.
+ * A220082 Numbers k such that <code>10*k-1</code> is a square.
  * @author Sean A. Irvine
  */
 public class A220082 extends LinearRecurrence {

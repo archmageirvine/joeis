@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118375 Minimum over all permutations b of 1..n of sum b(i)*b^{-1}(i).
+ * A118375 Minimum over all permutations b of <code>1..n</code> of sum b(i)*b^{-1}(i).
  * @author Sean A. Irvine
  */
 public class A118375 extends LinearRecurrence {

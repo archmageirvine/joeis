@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124011 Add three, add six, add nine, ....
+ * A124011 Add three, add six, add nine, <code>...</code>.
  * @author Sean A. Irvine
  */
 public class A124011 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003059 k appears 2k-1 times. Also, square root of <code>n,</code> rounded up.
+ * A003059 k appears <code>2k-1</code> times. Also, square root of <code>n,</code> rounded up.
  * @author Sean A. Irvine
  */
 public class A003059 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195971 Number of n X <code>1 0</code>..4 arrays with each element x equal to the number its horizontal and vertical neighbors equal to <code>2,0,1,3,4</code> for <code>x=0,1,2,3,4</code>.
+ * A195971 Number of n X <code>1 0..4</code> arrays with each element x equal to the number its horizontal and vertical neighbors equal to 2,0,1,3,4 for <code>x=0,1,2,3,4</code>.
  * @author Georg Fischer
  */
 public class A195971 extends LinearRecurrence {

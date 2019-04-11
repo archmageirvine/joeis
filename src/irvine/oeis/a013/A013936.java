@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013936 <code>a(n) =</code> Sum_{k=1..n} floor(n/k^2).
+ * A013936 <code>a(n) =</code> Sum_{k=1..n} <code>floor(n/k^2)</code>.
  * @author Sean A. Irvine
  */
 public class A013936 implements Sequence {

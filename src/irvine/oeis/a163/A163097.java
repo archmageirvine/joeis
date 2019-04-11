@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A163097 Even numbers with <code>an</code> odd number of partitions.
+ * A163097 Even numbers with an odd number of partitions.
  * @author Sean A. Irvine
  */
 public class A163097 implements Sequence {

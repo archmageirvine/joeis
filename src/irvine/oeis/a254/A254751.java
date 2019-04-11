@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A254751 Numbers such that, in base <code>10,</code> all their proper prefixes and suffixes represent primes.
+ * A254751 Numbers such that, in base 10, all their proper prefixes and suffixes represent primes.
  * @author Georg Fischer
  */
 public class A254751 extends FiniteSequence {

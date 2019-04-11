@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206809 Sum_{0&lt;j&lt;k&lt;=n} k^3-j^3.
+ * A206809 Sum_{0&lt;j&lt;k&lt;=n} <code>k^3-j^3</code>.
  * @author Sean A. Irvine
  */
 public class A206809 extends LinearRecurrence {

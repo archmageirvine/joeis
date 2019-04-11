@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213496 Number of (w,x,y) with all terms in <code>{0,</code>...,n} and <code>x !=</code> max(|w-x|,|x-y|).
+ * A213496 Number of (w,x,y) with all terms in <code>{0,...,n}</code> and <code>x !=</code> max(|w-x|,|x-y|).
  * @author Sean A. Irvine
  */
 public class A213496 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048278 Positive numbers n such that the numbers binomial(n,k) are squarefree for all k <code>= 0</code>..n.
+ * A048278 Positive numbers n such that the numbers binomial(n,k) are squarefree for all <code>k = 0..n</code>.
  * @author Georg Fischer
  */
 public class A048278 extends FiniteSequence {

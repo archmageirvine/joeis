@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016085 <code>a(1) = 1</code>; <code>a(n+1) =</code> floor((sum{k=1 to <code>n}</code> a(k)^3)^(1/3)).
+ * A016085 <code>a(1) = 1</code>; <code>a(n+1) =</code> floor((sum{k=1 to <code>n} a(k)^3)^(1/3))</code>.
  * @author Sean A. Irvine
  */
 public class A016085 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005239 Irregular triangle of Section I numbers. Row n contains numbers k with <code>2^n &lt;</code> k <code>&lt; 2^(n+1)</code> and phi^n(k) <code>= 2,</code> where phi^n means n iterations of Euler's totient function.
+ * A005239 Irregular triangle of Section I numbers. Row n contains numbers k with <code>2^n &lt; k &lt; 2^(n+1)</code> and phi^n(k) <code>= 2,</code> where phi^n means n iterations of Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A005239 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066164 Sum of interior angles in <code>an</code> n-sided polygon in degrees.
+ * A066164 Sum of interior angles in an n-sided polygon in degrees.
  * @author Sean A. Irvine
  */
 public class A066164 extends LinearRecurrence {

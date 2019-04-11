@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006839 Minimum of largest partial quotient of continued fraction for k/n, (k,n) <code>= 1</code>.
+ * A006839 Minimum of largest partial quotient of continued fraction for <code>k/n, (k,n) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A006839 implements Sequence {

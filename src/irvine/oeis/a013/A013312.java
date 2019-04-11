@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013312 tan(exp(x)-cos(x)) <code>= x + 2/2!*x^2 + 3/3!*x^3 + 24/4!*x^4 + 157/5!*x^5</code>...
+ * A013312 tan(exp(x)-cos(x)) <code>= x + 2/2!*x^2 + 3/3!*x^3 + 24/4!*x^4 + 157/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A013312 implements Sequence {

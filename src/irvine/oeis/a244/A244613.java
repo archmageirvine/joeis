@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244613 Least number k <code>&gt; 0</code> such that 2^k ends in exactly n consecutive increasing digits.
+ * A244613 Least number <code>k &gt; 0</code> such that <code>2^k</code> ends in exactly n consecutive increasing digits.
  * @author Georg Fischer
  */
 public class A244613 extends FiniteSequence {

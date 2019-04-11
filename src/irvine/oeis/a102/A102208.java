@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A102208 Decimal expansion of volume of <code>an</code> icosahedron with each edge of unit length.
+ * A102208 Decimal expansion of volume of an icosahedron with each edge of unit length.
  * @author Sean A. Irvine
  */
 public class A102208 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273367 Numbers k such that 10*k+6 is a perfect square.
+ * A273367 Numbers k such that <code>10*k+6</code> is a perfect square.
  * @author Sean A. Irvine
  */
 public class A273367 extends LinearRecurrence {

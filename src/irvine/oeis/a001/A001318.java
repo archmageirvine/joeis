@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001318 Generalized pentagonal numbers: m*(3*m <code>- 1)/2,</code> m <code>= 0, +-1, +-2, +-3, </code>....
+ * A001318 Generalized pentagonal numbers: m*(3*m <code>- 1)/2,</code> m <code>= 0, +-1, +-2, +-3, ...</code>.
  * @author Sean A. Irvine
  */
 public class A001318 implements Sequence {

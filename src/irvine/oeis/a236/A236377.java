@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236377 Real part of Sum_{k=0..n} (k + i^k)^2, where i=sqrt(-1).
+ * A236377 Real part of Sum_{k=0..n} <code>(k +</code> i^k)^2, where i=sqrt(-1).
  * @author Sean A. Irvine
  */
 public class A236377 extends LinearRecurrence {

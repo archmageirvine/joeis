@@ -1,7 +1,7 @@
 package irvine.oeis.a009;
 
 /**
- * A009368 If <code>a,</code> b in sequence, so is ab+10.
+ * A009368 If <code>a, b</code> in sequence, so is <code>ab+10</code>.
  * @author Sean A. Irvine
  */
 public class A009368 extends A009293 {

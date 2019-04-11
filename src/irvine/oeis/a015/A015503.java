@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015503 <code>a(1)=1, a(n) =</code> sum_{k=1}^{k=n-1} (4^k-1)/3 a(k).
+ * A015503 <code>a(1)=1, a(n) =</code> sum_{k=1}^{k=n-1} <code>(4^k-1)/3 a(k)</code>.
  * @author Sean A. Irvine
  */
 public class A015503 extends A015502 {

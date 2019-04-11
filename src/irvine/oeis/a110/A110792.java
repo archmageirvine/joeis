@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A110792 Copies of <code>7,3</code> and 1 cyclically such that every partial concatenation is a prime.
+ * A110792 Copies of 7,3 and 1 cyclically such that every partial concatenation is a prime.
  * @author Sean A. Irvine
  */
 public class A110792 implements Sequence {

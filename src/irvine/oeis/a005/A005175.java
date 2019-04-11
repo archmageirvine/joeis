@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005175 Number of trees of subsets of <code>an</code> n-set.
+ * A005175 Number of trees of subsets of an n-set.
  * @author Sean A. Irvine
  */
 public class A005175 implements Sequence {

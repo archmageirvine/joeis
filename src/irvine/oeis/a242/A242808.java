@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242808 The smallest n-digit number where first k digits are divisible by k-th Fibonacci number for k <code>= 1</code>..n.
+ * A242808 The smallest n-digit number where first k digits are divisible by k-th Fibonacci number for <code>k = 1..n</code>.
  * @author Georg Fischer
  */
 public class A242808 extends FiniteSequence {

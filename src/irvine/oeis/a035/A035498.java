@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A035498 Least largest sequence of consecutive primes <code>(17)</code> of form 4k+3.
+ * A035498 Least largest sequence of consecutive primes <code>(17)</code> of form <code>4k+3</code>.
  * @author Georg Fischer
  */
 public class A035498 extends FiniteSequence {

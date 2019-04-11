@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019059 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite RHO = Rho (Na,Cs)12[ Al12Si36O96 <code>] </code>. 44 H2O.
+ * A019059 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite RHO = Rho (Na,Cs)12[ Al12Si36O96 <code>] . 44</code> H2O.
  * @author Sean A. Irvine
  */
 public class A019059 extends A018940 {

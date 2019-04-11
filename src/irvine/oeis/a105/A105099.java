@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105099 Nonnegative numbers n such that <code>23*n^2 + 23*n + 1 =</code> j^2 <code>= a</code> square.
+ * A105099 Nonnegative numbers n such that <code>23*n^2 + 23*n + 1 = j^2 = a</code> square.
  * @author Sean A. Irvine
  */
 public class A105099 extends LinearRecurrence {

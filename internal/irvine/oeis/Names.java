@@ -27,11 +27,11 @@ public final class Names {
   private static String protect(final String name) {
     // The order of the replacements here is important
     final String s = name.replace("&", "&amp;")
-      .replaceAll(" (([ 0-9axn^*/(){}\\[\\]<>!=+,-]|floor|mod|sqrt){2,})([ .;,:])", " <code>$1</code>$3")
+      .replaceAll(" (([ 0-9baxnkj^*/(){}\\[\\]<>!=+.,-]|floor|mod|sqrt){2,})([ .;,:])", " <code>$1</code>$3")
       .replace("<", "&lt;")
       .replace(">", "&gt;")
       .replaceAll("&lt;(/?code)&gt;", "<$1>")
-      .replaceAll("<code>([0-9]*)</code>", "$1")
+      .replaceAll("<code>([0-9,)]*|an)</code>", "$1")
       .replace("*/", "* /")
       .replaceAll("\\s+", " ")
       ;

@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156840 Numbers k <code>&gt;= 1</code> such that k^2 <code>== 1 (mod 900)</code>.
+ * A156840 Numbers <code>k &gt;= 1</code> such that <code>k^2 == 1 (mod 900)</code>.
  * @author Sean A. Irvine
  */
 public class A156840 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A001161 Numbers containing <code>an</code> even number of letters.
+ * A001161 Numbers containing an even number of letters.
  * @author Sean A. Irvine
  */
 public class A001161 implements Sequence {

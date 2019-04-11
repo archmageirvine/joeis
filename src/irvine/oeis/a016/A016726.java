@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016726 Smallest k such that <code>1, 4, 9, </code>..., <code>n^2</code> are distinct mod k.
+ * A016726 Smallest k such that <code>1, 4, 9, ..., n^2</code> are distinct <code>mod k</code>.
  * @author Sean A. Irvine
  */
 public class A016726 implements Sequence {

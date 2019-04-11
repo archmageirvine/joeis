@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018927 For each permutation p of <code>{1,2,</code>...,n} define maxjump(p) = max(p(i) - i); <code>a(n)</code> is sum of maxjumps of all p.
+ * A018927 For each permutation p of <code>{1,2,...,n}</code> define maxjump(p) = max(p(i) - i); <code>a(n)</code> is sum of maxjumps of all p.
  * @author Sean A. Irvine
  */
 public class A018927 implements Sequence {

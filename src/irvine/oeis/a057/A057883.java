@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A057883 Smallest possible prime with at least n (from 2 to <code>10)</code> distinct digits that remains prime (leading zeros not allowed) when all occurrences of its digits d are deleted.
+ * A057883 Smallest possible prime with at least n (from 2 to 10) distinct digits that remains prime (leading zeros not allowed) when all occurrences of its digits d are deleted.
  * @author Georg Fischer
  */
 public class A057883 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248698 Floor of sums of the non-integer fourth roots of <code>n,</code> as partitioned by the integer roots: floor[sum(j from <code>n^4+1</code> to <code>(n+1)^4-1,</code> j^(1/4))].
+ * A248698 Floor of sums of the non-integer fourth roots of <code>n,</code> as partitioned by the integer roots: floor[sum(j from <code>n^4+1</code> to <code>(n+1)^4-1, j^(1/4))]</code>.
  * @author Sean A. Irvine
  */
 public class A248698 extends LinearRecurrence {

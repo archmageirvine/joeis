@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004529 Ratios of successive terms are <code>1,1,1,2,3,3,3,4,5,5,5,6,</code>...
+ * A004529 Ratios of successive terms are <code>1,1,1,2,3,3,3,4,5,5,5,6,..</code>.
  * @author Sean A. Irvine
  */
 public class A004529 extends A004525 {

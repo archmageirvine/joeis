@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A207982 Least m&gt;1 such that all central binomial coefficients C(2k,k), k&lt;=n, are pairwise not congruent mod m.
+ * A207982 Least m&gt;1 such that all central binomial coefficients C(2k,k), <code>k&lt;=n,</code> are pairwise not congruent mod m.
  * @author Sean A. Irvine
  */
 public class A207982 extends A000984 {

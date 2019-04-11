@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000081;
 
 /**
- * A033185 Rooted tree triangle read by rows: <code>a(n</code>,k) = number of forests with n nodes and k rooted trees.
+ * A033185 Rooted tree triangle read by rows: <code>a(n,k) =</code> number of forests with n nodes and k rooted trees.
  * @author Sean A. Irvine
  */
 public class A033185 extends MemoryFunction3<Integer, Z> implements Sequence {

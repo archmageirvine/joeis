@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011934 <code>a(n) =</code> |1^3 <code>- 2^3 + 3^3 - 4^3 + </code>... + (-1)^(n+1)*n^3|.
+ * A011934 <code>a(n) =</code> |1^3 <code>- 2^3 + 3^3 - 4^3 + ... +</code> (-1)^(n+1)*n^3|.
  * @author Sean A. Irvine
  */
 public class A011934 implements Sequence {

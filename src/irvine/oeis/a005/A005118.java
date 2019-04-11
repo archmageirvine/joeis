@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005118 Number of simple allowable sequences on 1..n containing the permutation 12...n.
+ * A005118 Number of simple allowable sequences on <code>1..n</code> containing the permutation <code>12...n</code>.
  * @author Sean A. Irvine
  */
 public class A005118 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004490 Colossally abundant numbers: n for which there is a positive exponent epsilon such that sigma(n)/n^{1 + epsilon} <code>&gt;=</code> sigma(k)/k^{1 + epsilon} for all k <code>&gt; 1,</code> so that n attains the maximum value of sigma(n)/n^{1 + epsilon}.
+ * A004490 Colossally abundant numbers: n for which there is a positive exponent epsilon such that sigma(n)/n^{1 + epsilon} <code>&gt;=</code> sigma(k)/k^{1 + epsilon} for all <code>k &gt; 1,</code> so that n attains the maximum value of sigma(n)/n^{1 + epsilon}.
  * @author Sean A. Irvine
  */
 public class A004490 implements Sequence {

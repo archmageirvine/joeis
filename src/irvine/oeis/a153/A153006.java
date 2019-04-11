@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A153006 Toothpick sequence starting at the outside corner of <code>an</code> infinite square from which protrudes a half toothpick.
+ * A153006 Toothpick sequence starting at the outside corner of an infinite square from which protrudes a half toothpick.
  * @author Sean A. Irvine
  */
 public class A153006 implements Sequence {

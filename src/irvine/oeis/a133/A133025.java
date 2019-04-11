@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133025 Divisors of <code>33550336,</code> the 5th perfect number.
+ * A133025 Divisors of 33550336, the 5th perfect number.
  * @author Georg Fischer
  */
 public class A133025 extends FiniteSequence {

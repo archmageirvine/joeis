@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074894 Full list of counterexamples for the k=3 version of the malicious apprentice problem.
+ * A074894 Full list of counterexamples for the <code>k=3</code> version of the malicious apprentice problem.
  * @author Georg Fischer
  */
 public class A074894 extends FiniteSequence {

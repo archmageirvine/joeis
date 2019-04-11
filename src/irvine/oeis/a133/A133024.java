@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133024 Divisors of <code>8128,</code> the 4th perfect number.
+ * A133024 Divisors of 8128, the 4th perfect number.
  * @author Georg Fischer
  */
 public class A133024 extends FiniteSequence {

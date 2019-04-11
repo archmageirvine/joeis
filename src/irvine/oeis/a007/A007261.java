@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a121.A121596;
 
 /**
- * A007261 McKay-Thompson series of class 6b for the Monster group.
+ * A007261 McKay-Thompson series of class <code>6b</code> for the Monster group.
  * @author Sean A. Irvine
  */
 public class A007261 extends A007262 {

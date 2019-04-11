@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244603 Least number k such that n^k contains the digit <code>n n</code> times.
+ * A244603 Least number k such that <code>n^k</code> contains the digit <code>n n</code> times.
  * @author Georg Fischer
  */
 public class A244603 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174679 <code>a(4n) = n^2</code>. <code>a(4n+1) = (4n-1)^2</code>. <code>a(4n+2) = (2n)^2</code>. <code>a(4n+3) = (4n+1)^2</code>.
+ * A174679 <code>a(4n) = n^2. a(4n+1) = (4n-1)^2. a(4n+2) = (2n)^2. a(4n+3) = (4n+1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A174679 extends LinearRecurrence {

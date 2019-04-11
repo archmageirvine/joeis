@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228008 The smallest n-digit number where first k digits are divisible by k^2 for k <code>= 1</code>..n.
+ * A228008 The smallest n-digit number where first k digits are divisible by <code>k^2</code> for <code>k = 1..n</code>.
  * @author Georg Fischer
  */
 public class A228008 extends FiniteSequence {

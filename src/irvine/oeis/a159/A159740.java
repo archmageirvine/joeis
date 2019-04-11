@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159740 Number of permutations of 9 indistinguishable copies of 1..n arranged in a circle with exactly 1 local maximum. 
+ * A159740 Number of permutations of 9 indistinguishable copies of <code>1..n</code> arranged in a circle with exactly 1 local maximum.
  * @author Georg Fischer
  */
 public class A159740 extends LinearRecurrence {

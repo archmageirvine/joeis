@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152437 <code>(17^n - 1)/(2^(5 - (n</code> % <code>2)))</code>.
+ * A152437 <code>(17^n - 1)/(2^(5 - (n</code> % 2))).
  * @author Sean A. Irvine
  */
 public class A152437 extends LinearRecurrence {

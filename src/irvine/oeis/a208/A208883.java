@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208883 Numbers n such that <code>n == 1 (mod 4), n != 2,</code> and |x^2+x-n| is 1 or a prime for all x in <code>{1,</code>...,sqrt(n)}.
+ * A208883 Numbers n such that <code>n == 1 (mod 4), n != 2,</code> and |x^2+x-n| is 1 or a prime for all x in <code>{1,...,sqrt(n)}</code>.
  * @author Georg Fischer
  */
 public class A208883 extends FiniteSequence {

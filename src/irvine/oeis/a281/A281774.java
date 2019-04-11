@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281774 Number of distinct topologies on <code>an</code> n-set with exactly 6 open sets.
+ * A281774 Number of distinct topologies on an n-set with exactly 6 open sets.
  * @author Georg Fischer
  */
 public class A281774 extends LinearRecurrence {

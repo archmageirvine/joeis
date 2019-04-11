@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011971 Aitken's array: triangle of numbers <code>{a(n</code>,k), <code>n &gt;= 0,</code> 0&lt;=k&lt;=n} read by rows, defined by <code>a(0,0)=1, a(n,0)=a(n-1,n-1), a(n</code>,k)=a(n,k-1)+a(n-1,k-1).
+ * A011971 Aitken's array: triangle of numbers <code>{a(n,k), n &gt;= 0, 0&lt;=k&lt;=n}</code> read by rows, defined by <code>a(0,0)=1, a(n,0)=a(n-1,n-1), a(n,k)=a(n,k-1)+a(n-1,k-1)</code>.
  * @author Sean A. Irvine
  */
 public class A011971 extends MemoryFunction2<Long, Z> implements Sequence {

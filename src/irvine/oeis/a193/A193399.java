@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193399 Wiener index of a benzenoid consisting of a chain of n hexagons characterized by the encoding s <code>= 1133</code> (see the Gutman et al. reference, Sec. <code>5)</code>.
+ * A193399 Wiener index of a benzenoid consisting of a chain of n hexagons characterized by the encoding s <code>= 1133</code> (see the Gutman et al. reference, Sec. 5).
  * @author Sean A. Irvine
  */
 public class A193399 extends LinearRecurrence {

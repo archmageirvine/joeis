@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000204;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A003263 Number of representations of n as a sum of distinct Lucas numbers <code>1,3,4,7,11 </code>... (A000204).
+ * A003263 Number of representations of n as a sum of distinct Lucas numbers <code>1,3,4,7,11 ...</code> (A000204).
  * @author Sean A. Irvine
  */
 public class A003263 extends A000204 {

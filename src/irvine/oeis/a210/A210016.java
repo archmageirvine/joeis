@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210016 In base <code>5,</code> numbers n which have 5 distinct digits, do not start with <code>0,</code> and have property that the product (written in base <code>5)</code> of any two adjacent digits is a substring of n.
+ * A210016 In base 5, numbers n which have 5 distinct digits, do not start with 0, and have property that the product (written in base 5) of any two adjacent digits is a substring of n.
  * @author Georg Fischer
  */
 public class A210016 extends FiniteSequence {

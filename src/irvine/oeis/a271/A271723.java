@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271723 Numbers k such that 3*k <code>- 8</code> is a square.
+ * A271723 Numbers k such that <code>3*k - 8</code> is a square.
  * @author Sean A. Irvine
  */
 public class A271723 extends LinearRecurrence {

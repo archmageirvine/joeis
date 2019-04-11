@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003984 Table of max(x,y), where <code>(x</code>,y) <code>= (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),</code>...
+ * A003984 Table of max(x,y), where <code>(x</code>,y) <code>= (0,0),(0,1),(1,0),(0,2),(1,1),(2,0),..</code>.
  * @author Sean A. Irvine
  */
 public class A003984 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226965 Numbers n such that <code>1^n + 2^n + 3^n +</code>...+ <code>n^n == 7 (mod n)</code>.
+ * A226965 Numbers n such that <code>1^n + 2^n + 3^n +...+ n^n == 7 (mod n)</code>.
  * @author Georg Fischer
  */
 public class A226965 extends FiniteSequence {

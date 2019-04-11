@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004070 Table of Whitney numbers W(n,k) read by antidiagonals, where W(n,k) is maximal number of pieces into which n-space is sliced by k hyperplanes, <code>n &gt;= 0,</code> k <code>&gt;= 0</code>.
+ * A004070 Table of Whitney numbers W(n,k) read by antidiagonals, where W(n,k) is maximal number of pieces into which n-space is sliced by k hyperplanes, <code>n &gt;= 0, k &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A004070 extends MemoryFunction2<Integer, Z> implements Sequence {

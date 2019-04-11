@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006513 Limit of the image of n after 2k iterates of `(3x+1)/2' map as k grows.
+ * A006513 Limit of the image of n after <code>2k</code> iterates of `(3x+1)/2' map as k grows.
  * @author Sean A. Irvine
  */
 public class A006513 implements Sequence {

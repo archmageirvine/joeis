@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316672 Numbers k for which 120*k <code>+ 169</code> is a square.
+ * A316672 Numbers k for which <code>120*k + 169</code> is a square.
  * @author Georg Fischer
  */
 public class A316672 extends LinearRecurrence {

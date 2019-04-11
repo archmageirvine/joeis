@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073473 Primes (including <code>1)</code> forming 3 X 3 magic square with prime entries and minimal constant <code>111 =</code> A073502(3).
+ * A073473 Primes (including 1) forming 3 X 3 magic square with prime entries and minimal constant <code>111 =</code> A073502(3).
  * @author Georg Fischer
  */
 public class A073473 extends FiniteSequence {

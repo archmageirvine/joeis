@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033276 Number of diagonal dissections of <code>an</code> n-gon into 4 regions.
+ * A033276 Number of diagonal dissections of an n-gon into 4 regions.
  * @author Sean A. Irvine
  */
 public class A033276 extends LinearRecurrence {

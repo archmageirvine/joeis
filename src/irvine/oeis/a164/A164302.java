@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A164302 <code>a(n) = 2*</code> (the n-th positive (odd) integer that is a palindrome when written in base <code>2)</code>.
+ * A164302 <code>a(n) = 2*</code> (the n-th positive (odd) integer that is a palindrome when written in base 2).
  * @author Sean A. Irvine
  */
 public class A164302 implements Sequence {

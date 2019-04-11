@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111889 A repeated permutation of <code>{0,</code>...,8}.
+ * A111889 A repeated permutation of <code>{0,...,8}</code>.
  * @author Sean A. Irvine
  */
 public class A111889 extends LinearRecurrence {

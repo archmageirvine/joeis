@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143404 Expansion of x^k/Product_{t=k..2k} (1-tx) for k=9.
+ * A143404 Expansion of x^k/Product_{t=k..2k} (1-tx) for <code>k=9</code>.
  * @author Sean A. Irvine
  */
 public class A143404 extends LinearRecurrence {

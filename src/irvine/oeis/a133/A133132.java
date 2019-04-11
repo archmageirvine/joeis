@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133132 Number of surjections from <code>an</code> n-element set to a ten-element set.
+ * A133132 Number of surjections from an n-element set to a ten-element set.
  * @author Sean A. Irvine
  */
 public class A133132 extends LinearRecurrence {

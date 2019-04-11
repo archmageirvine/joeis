@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007889 Number of intransitive (or alternating, or Stanley) trees: vertices are <code>[0,n]</code> and for no i&lt;j&lt;k are both (i,j) and (j,k) edges.
+ * A007889 Number of intransitive (or alternating, or Stanley) trees: vertices are <code>[0,n]</code> and for no i&lt;j&lt;k are both (i,j) and <code>(j,k)</code> edges.
  * @author Sean A. Irvine
  */
 public class A007889 implements Sequence {

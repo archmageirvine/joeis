@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018794 Number of subsets of <code>{ 1, </code>..., <code>n }</code> containing <code>an</code> A.P. of length 9.
+ * A018794 Number of subsets of <code>{ 1, ..., n }</code> containing an A.P. of length 9.
  * @author Sean A. Irvine
  */
 public class A018794 implements Sequence {

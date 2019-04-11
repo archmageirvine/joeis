@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279101 <code>a(n) =</code> Sum_{k=0..n} ceiling((1 + sqrt(2))^k).
+ * A279101 <code>a(n) =</code> Sum_{k=0..n} ceiling((1 <code>+ sqrt(2))^k)</code>.
  * @author Sean A. Irvine
  */
 public class A279101 extends LinearRecurrence {

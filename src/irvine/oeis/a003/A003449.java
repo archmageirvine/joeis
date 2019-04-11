@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003449 Number of nonequivalent dissections of <code>an</code> n-gon into <code>n-3</code> polygons by nonintersecting diagonals up to rotation and reflection.
+ * A003449 Number of nonequivalent dissections of an n-gon into <code>n-3</code> polygons by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A003449 implements Sequence {

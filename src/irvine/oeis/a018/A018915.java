@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018915 Define the generalized Pisot sequence T(a(0),a(1)) by: <code>a(n+2)</code> is the greatest integer such that <code>a(n+2)/a(n+1) &lt; a(n+1)/a(n)</code>. This is T(2,6).
+ * A018915 Define the generalized Pisot sequence T(a(0),a(1)) by: <code>a(n+2)</code> is the greatest integer such that <code>a(n+2)/a(n+1) &lt; a(n+1)/a(n).</code> This is T(2,6).
  * @author Sean A. Irvine
  */
 public class A018915 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000341 Number of ways to pair up <code>{1</code>..2n} so sum of each pair is prime.
+ * A000341 Number of ways to pair up <code>{1..2n}</code> so sum of each pair is prime.
  * @author Sean A. Irvine
  */
 public class A000341 implements Sequence {

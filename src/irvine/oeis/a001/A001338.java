@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000522;
 
 /**
- * A001338 <code>-1 +</code> Sum (k-1)! C(n,k), k <code>= 1</code>..n for <code>n &gt; 0, a(0) = 1</code>.
+ * A001338 <code>-1 +</code> Sum <code>(k-1)!</code> C(n,k), <code>k = 1..n</code> for <code>n &gt; 0, a(0) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A001338 extends PartialSumSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A072154 Coordination sequence for the planar net 4.6.12.
+ * A072154 Coordination sequence for the planar net <code>4.6.12</code>.
  * @author Sean A. Irvine
  */
 public class A072154 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019016 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite FAU = Faujasite (Na2,Ca,Mg)29 [ Al58Si134O384 <code>] </code>. 240 H2O.
+ * A019016 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite FAU = Faujasite (Na2,Ca,Mg)29 [ Al58Si134O384 <code>] . 240</code> H2O.
  * @author Sean A. Irvine
  */
 public class A019016 extends A018940 {

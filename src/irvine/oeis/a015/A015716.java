@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
 /**
- * A015716 Triangle read by rows: T(n,k) is the number of partitions of n into distinct parts, one of which is k (1&lt;=k&lt;=n).
+ * A015716 Triangle read by rows: T(n,k) is the number of partitions of n into distinct parts, one of which is <code>k (1&lt;=k&lt;=n)</code>.
  * @author Sean A. Irvine
  */
 public class A015716 extends A000009 {

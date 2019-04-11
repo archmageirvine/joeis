@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A113572 Least n-digit multiple of n such that the r-th digit is prime if r is a prime else it is composite. The location and value of the most significant digit is 1. 0 if no such number exists.
+ * A113572 Least n-digit multiple of n such that the r-th digit is prime if r is a prime else it is composite. The location and value of the most significant digit is <code>1. 0</code> if no such number exists.
  * @author Sean A. Irvine
  */
 public class A113572 implements Sequence {

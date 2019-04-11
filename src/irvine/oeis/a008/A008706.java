@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008706 Coordination sequence for 3.3.3.4.4 planar net.
+ * A008706 Coordination sequence for <code>3.3.3.4.4</code> planar net.
  * @author Sean A. Irvine
  */
 public class A008706 extends CoordinationSequence {

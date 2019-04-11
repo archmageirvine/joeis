@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019575 Place n distinguishable balls in n boxes (in <code>n^n</code> ways); let T(n,k) = number of ways that the maximum in any box is k, for <code>1 &lt;=</code> k <code>&lt;= n</code>; sequence gives triangle of numbers T(n,k).
+ * A019575 Place n distinguishable balls in n boxes (in <code>n^n</code> ways); let T(n,k) = number of ways that the maximum in any box is <code>k,</code> for <code>1 &lt;= k &lt;= n</code>; sequence gives triangle of numbers T(n,k).
  * @author Sean A. Irvine
  */
 public class A019575 extends MemoryFunction3<Integer, Q> implements Sequence {

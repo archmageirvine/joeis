@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054389 Susceptibility series H_5 for 2-dimensional Ising model (divided by <code>2)</code>.
+ * A054389 Susceptibility series H_5 for 2-dimensional Ising model (divided by 2).
  * @author Georg Fischer
  */
 public class A054389 extends LinearRecurrence {

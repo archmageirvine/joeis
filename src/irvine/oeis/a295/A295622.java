@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295622 Number of nonequivalent dissections of <code>an</code> n-gon into 3 polygons by nonintersecting diagonals rooted at a cell up to rotation.
+ * A295622 Number of nonequivalent dissections of an n-gon into 3 polygons by nonintersecting diagonals rooted at a cell up to rotation.
  * @author Georg Fischer
  */
 public class A295622 extends LinearRecurrence {

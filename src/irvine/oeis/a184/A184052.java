@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184052 The number of order-decreasing partial isometries (of <code>an</code> n-chain).
+ * A184052 The number of order-decreasing partial isometries (of an n-chain).
  * @author Sean A. Irvine
  */
 public class A184052 extends LinearRecurrence {

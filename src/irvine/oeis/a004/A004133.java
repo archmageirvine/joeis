@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004133 Additive bases: <code>a(n)</code> is the least integer such that there is <code>an</code> n-element set of nonnegative integers, the sums of pairs (of distinct elements) of which are distinct and at most <code>a(n)</code>.
+ * A004133 Additive bases: <code>a(n)</code> is the least integer such that there is an n-element set of nonnegative integers, the sums of pairs (of distinct elements) of which are distinct and at most <code>a(n)</code>.
  * @author Sean A. Irvine
  */
 public class A004133 implements Sequence {

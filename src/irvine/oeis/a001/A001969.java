@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001969 Evil numbers: numbers with <code>an</code> even number of 1's in their binary expansion.
+ * A001969 Evil numbers: numbers with an even number of 1's in their binary expansion.
  * @author Sean A. Irvine
  */
 public class A001969 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.math.z.Z;
 
 /**
- * A000329 Nearest integer to b(n), where b(n) = tan(b(n-1)), b(0) <code>= 1</code>.
+ * A000329 Nearest integer to <code>b(n),</code> where <code>b(n) =</code> tan(b(n-1)), <code>b(0) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A000329 implements Sequence {

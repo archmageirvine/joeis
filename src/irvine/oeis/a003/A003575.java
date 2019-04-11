@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003575 Dowling numbers: e.g.f.: exp(x + (exp(b*x) - 1)/b) with b=3.
+ * A003575 Dowling numbers: e.g.f.: exp(x + (exp(b*x) <code>- 1)/b)</code> with <code>b=3</code>.
  * @author Sean A. Irvine
  */
 public class A003575 implements Sequence {

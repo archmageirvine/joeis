@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014455 Theta series of quadratic form with Gram matrix <code>[ 1, 0, 0</code>; <code>0, 1, 0</code>; <code>0, 0, 2 ]</code>. Number of integer solutions to <code>x^2 +</code> y^2 + 2*z^2 <code>= n</code>.
+ * A014455 Theta series of quadratic form with Gram matrix <code>[ 1, 0, 0</code>; <code>0, 1, 0</code>; <code>0, 0, 2 ].</code> Number of integer solutions to <code>x^2 +</code> y^2 + 2*z^2 <code>= n</code>.
  * @author Sean A. Irvine
  */
 public class A014455 implements Sequence {

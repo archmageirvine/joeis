@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A145461 Numbers that can be written with a single digit in base 10 as well as in some base b&lt;10.
+ * A145461 Numbers that can be written with a single digit in base 10 as well as in some base <code>b&lt;10</code>.
  * @author Georg Fischer
  */
 public class A145461 extends FiniteSequence {

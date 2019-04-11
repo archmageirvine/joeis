@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A110716 Beginning with <code>3,</code> concatenation of n successive numbers such that every partial concatenation is a prime.
+ * A110716 Beginning with 3, concatenation of n successive numbers such that every partial concatenation is a prime.
  * @author Sean A. Irvine
  */
 public class A110716 implements Sequence {

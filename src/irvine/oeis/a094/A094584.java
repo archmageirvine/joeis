@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094584 Dot product of <code>(1,2,</code>...,n) and first n distinct Fibonacci numbers.
+ * A094584 Dot product of <code>(1,2,...,n)</code> and first n distinct Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A094584 extends LinearRecurrence {

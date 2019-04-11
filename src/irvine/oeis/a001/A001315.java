@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001315 Sum 2^C(n,k), k <code>= 0</code>..n.
+ * A001315 Sum 2^C(n,k), <code>k = 0..n</code>.
  * @author Sean A. Irvine
  */
 public class A001315 implements Sequence {

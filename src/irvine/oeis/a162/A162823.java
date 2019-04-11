@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162823 Positive numbers k such that 42*k/(42-k) are integers.
+ * A162823 Positive numbers k such that <code>42*k/(42-k)</code> are integers.
  * @author Georg Fischer
  */
 public class A162823 extends FiniteSequence {

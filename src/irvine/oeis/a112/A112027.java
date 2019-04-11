@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112027 <code>a(1)=1</code>; then successively add <code>1,</code> divide by <code>2,</code> add 2 and then total up the last 4 terms.
+ * A112027 <code>a(1)=1</code>; then successively add 1, divide by 2, add 2 and then total up the last 4 terms.
  * @author Sean A. Irvine
  */
 public class A112027 extends LinearRecurrence {

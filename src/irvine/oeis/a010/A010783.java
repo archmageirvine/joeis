@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010783 Triangle of numbers floor(n/(n-k)).
+ * A010783 Triangle of numbers <code>floor(n/(n-k))</code>.
  * @author Sean A. Irvine
  */
 public class A010783 implements Sequence {

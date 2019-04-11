@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070876 Binary expansion is <code>1xx100</code>...0 where <code>xx = 00</code> or 11.
+ * A070876 Binary expansion is <code>1xx100...0</code> where <code>xx = 00</code> or 11.
  * @author Sean A. Irvine
  */
 public class A070876 extends LinearRecurrence {

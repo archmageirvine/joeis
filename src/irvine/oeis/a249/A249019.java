@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249019 Number of ternary words of length n in which all digits 0..2 occur in every 6 consecutive digits. 
+ * A249019 Number of ternary words of length n in which all digits <code>0..2</code> occur in every 6 consecutive digits.
  * @author Georg Fischer
  */
 public class A249019 extends LinearRecurrence {

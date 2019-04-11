@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162821 Positive numbers k such that 30*k/(30-k) are integers.
+ * A162821 Positive numbers k such that <code>30*k/(30-k)</code> are integers.
  * @author Georg Fischer
  */
 public class A162821 extends FiniteSequence {

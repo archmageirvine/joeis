@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A002636 Number of ways of writing n as <code>an</code> unordered sum of at most 3 nonzero triangular numbers.
+ * A002636 Number of ways of writing n as an unordered sum of at most 3 nonzero triangular numbers.
  * @author Sean A. Irvine
  */
 public class A002636 implements Sequence {

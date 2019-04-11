@@ -3,7 +3,7 @@ package irvine.oeis.a316;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A316743 Discriminants of imaginary fields whose class group has exponent <code>2,</code> negated.
+ * A316743 Discriminants of imaginary fields whose class group has exponent 2, negated.
  * @author Georg Fischer
  */
 public class A316743 extends FiniteSequence {

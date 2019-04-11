@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059765 Possible sizes of the torsion group of <code>an</code> elliptic curve over the rationals Q. This is a finite sequence.
+ * A059765 Possible sizes of the torsion group of an elliptic curve over the rationals Q. This is a finite sequence.
  * @author Georg Fischer
  */
 public class A059765 extends FiniteSequence {

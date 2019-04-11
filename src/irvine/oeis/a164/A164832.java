@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A164832 Least nonnegative integer k such that the decimal representations of k and k+1 have n distinct digits in common.
+ * A164832 Least nonnegative integer k such that the decimal representations of k and <code>k+1</code> have n distinct digits in common.
  * @author Georg Fischer
  */
 public class A164832 extends FiniteSequence {

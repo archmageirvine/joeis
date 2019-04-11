@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268896 Start at <code>a(0)=1</code>. <code>a(n) = a(n-1)+2</code> if <code>n == 1,2 (mod 3)</code> and <code>a(n)=a(n-1)+a(n-3)</code> if <code>n == 0 (mod 3)</code>.
+ * A268896 Start at <code>a(0)=1. a(n) = a(n-1)+2</code> if <code>n == 1,2 (mod 3)</code> and <code>a(n)=a(n-1)+a(n-3)</code> if <code>n == 0 (mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A268896 extends LinearRecurrence {

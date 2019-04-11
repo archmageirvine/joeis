@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015892 Numbers k such that k | 6^k <code>+ 6</code>.
+ * A015892 Numbers k such that k | <code>6^k + 6</code>.
  * @author Sean A. Irvine
  */
 public class A015892 implements Sequence {

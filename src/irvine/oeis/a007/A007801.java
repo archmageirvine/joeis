@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007801 Expansion of f(f(x)), where f <code>= x + x^2 + x^4 + x^8 + x^16 + </code>...
+ * A007801 Expansion of f(f(x)), where f <code>= x + x^2 + x^4 + x^8 + x^16 + ..</code>.
  * @author Sean A. Irvine
  */
 public class A007801 implements Sequence {

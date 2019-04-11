@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243579 Integers of the form 8k+7 that can be written as a sum of four distinct squares of the form m, m+2, m+4, m+5, where m <code>== 1 (mod 4)</code>.
+ * A243579 Integers of the form <code>8k+7</code> that can be written as a sum of four distinct squares of the form m, m+2, m+4, m+5, where m <code>== 1 (mod 4)</code>.
  * @author Sean A. Irvine
  */
 public class A243579 extends LinearRecurrence {

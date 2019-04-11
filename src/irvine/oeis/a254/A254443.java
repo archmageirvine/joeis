@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254443 Numbers n such that T(n) + T(n+1) <code>+ </code>... + T(n+21) is a square, where T(m) = A000217(m) is the m-th triangular number.
+ * A254443 Numbers n such that T(n) + T(n+1) <code>+ ... +</code> T(n+21) is a square, where T(m) = A000217(m) is the m-th triangular number.
  * @author Sean A. Irvine
  */
 public class A254443 extends LinearRecurrence {

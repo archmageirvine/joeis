@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002593 <code>a(n) = n^2*(2*n^2 - 1)</code>; also Sum_{k=0..n-1} (2k+1)^3.
+ * A002593 <code>a(n) = n^2*(2*n^2 - 1)</code>; also Sum_{k=0..n-1} <code>(2k+1)^3</code>.
  * @author Sean A. Irvine
  */
 public class A002593 implements Sequence {

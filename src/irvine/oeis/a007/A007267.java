@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007267 Expansion of <code>16 * (1 +</code> k^2)^4 /(k * k'^2)^2 in powers of q where k is the Jacobian elliptic modulus, k' the complementary modulus and q is the nome.
+ * A007267 Expansion of <code>16 * (1 + k^2)^4 /(k *</code> k'^2)^2 in powers of q where k is the Jacobian elliptic modulus, k' the complementary modulus and q is the nome.
  * @author Sean A. Irvine
  */
 public class A007267 extends A007241 {

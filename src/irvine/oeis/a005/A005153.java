@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005153 Practical numbers: positive integers m such that every k <code>&lt;=</code> sigma(m) is a sum of distinct divisors of m. Also called panarithmic numbers.
+ * A005153 Practical numbers: positive integers m such that every <code>k &lt;=</code> sigma(m) is a sum of distinct divisors of m. Also called panarithmic numbers.
  * @author Sean A. Irvine
  */
 public class A005153 implements Sequence {

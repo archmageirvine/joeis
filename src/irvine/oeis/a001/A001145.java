@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001145 Describe the previous term! (method A - initial term is <code>7)</code>.
+ * A001145 Describe the previous term! (method A - initial term is 7).
  * @author Sean A. Irvine
  */
 public class A001145 implements Sequence {

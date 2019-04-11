@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073549 Number of Fibonacci numbers F(k), k <code>&lt;= 10^n,</code> which end in 6.
+ * A073549 Number of Fibonacci numbers F(k), <code>k &lt;= 10^n,</code> which end in 6.
  * @author Georg Fischer
  */
 public class A073549 extends LinearRecurrence {

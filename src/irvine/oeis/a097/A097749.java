@@ -7,7 +7,7 @@ import irvine.util.Point;
 import java.util.HashMap;
 
 /**
- * A097749 Triangle T(n,k), <code>n &gt;= 0, 0 &lt;=</code> k <code>&lt;= n,</code> read by rows. Let A(n,k) be the triangle in A097474. Then T(n,k) is defined by the orthogonality relations Sum_{j=i..r} T(r,j)*A(j,i)*2^-floor((j+3)/2) <code>= 0</code> if i <code>!=</code> r, = (2r+1)!/(r!*2^r) if i = r.
+ * A097749 Triangle T(n,k), <code>n &gt;= 0, 0 &lt;= k &lt;= n,</code> read by rows. Let A(n,k) be the triangle in A097474. Then T(n,k) is defined by the orthogonality relations Sum_{j=i..r} T(r,j)*A(j,i)*2^-floor((j+3)/2) <code>= 0</code> if i <code>!=</code> r, = (2r+1)!/(r!*2^r) if i = r.
  * @author Sean A. Irvine
  */
 public class A097749 extends A097474 {

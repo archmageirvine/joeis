@@ -7,7 +7,7 @@ import irvine.util.Pair;
 import java.util.HashSet;
 
 /**
- * A153588 Number of resistance values that can be constructed using up to n equal resistances by arranging them in <code>an</code> arbitrary series-parallel arrangement.
+ * A153588 Number of resistance values that can be constructed using up to n equal resistances by arranging them in an arbitrary series-parallel arrangement.
  * @author Sean A. Irvine
  */
 public class A153588 extends A048211 {

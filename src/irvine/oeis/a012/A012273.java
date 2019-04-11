@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012273 Expansion of e.g.f.: sec(log(x+1)*log(x+1)) <code>= 1 + (12/4!)*x^4 - (120/5!)*x^5 + (1020/6!)*x^6 </code>...
+ * A012273 Expansion of e.g.f.: sec(log(x+1)*log(x+1)) <code>= 1 + (12/4!)*x^4 - (120/5!)*x^5 + (1020/6!)*x^6 ..</code>.
  * @author Sean A. Irvine
  */
 public class A012273 implements Sequence {

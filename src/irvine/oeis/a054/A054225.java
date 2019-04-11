@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054225 Triangle read by rows: row <code>n (n&gt;=0)</code> gives the number of partitions of <code>(n,0), (n-1,1), (n-2,2), </code>..., <code>(0,n)</code> respectively into sums of pairs.
+ * A054225 Triangle read by rows: row <code>n (n&gt;=0)</code> gives the number of partitions of <code>(n,0), (n-1,1), (n-2,2), ..., (0,n)</code> respectively into sums of pairs.
  * @author Sean A. Irvine
  */
 public class A054225 extends MemoryFunction2<Z, Z> implements Sequence {

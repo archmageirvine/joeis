@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000718 Boustrophedon transform of triangular numbers <code>1,1,3,6,10,</code>...
+ * A000718 Boustrophedon transform of triangular numbers <code>1,1,3,6,10,..</code>.
  * @author Sean A. Irvine
  */
 public class A000718 extends A000674 {

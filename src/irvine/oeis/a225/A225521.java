@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A225521 Cumulative number of letters in first n English names of playing card denominations: ace, two, three, ... jack, queen, king.
+ * A225521 Cumulative number of letters in first n English names of playing card denominations: ace, two, three, <code>...</code> jack, queen, king.
  * @author Georg Fischer
  */
 public class A225521 extends FiniteSequence {

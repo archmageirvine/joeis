@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007562 Number of planted trees where non-root, non-leaf nodes <code>an</code> even distance from root are of degree 2.
+ * A007562 Number of planted trees where non-root, non-leaf nodes an even distance from root are of degree 2.
  * @author Sean A. Irvine
  */
 public class A007562 extends MemorySequence {

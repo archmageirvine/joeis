@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243910 Least number k&gt;0 such that 3^k contains exactly n different digits.
+ * A243910 Least number <code>k&gt;0</code> such that <code>3^k</code> contains exactly n different digits.
  * @author Georg Fischer
  */
 public class A243910 extends FiniteSequence {

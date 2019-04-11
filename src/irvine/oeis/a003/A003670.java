@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002858;
 
 /**
- * A003670 <code>a(n)</code> is smallest number which is uniquely a(j)+a(k).
+ * A003670 <code>a(n)</code> is smallest number which is uniquely <code>a(j)+a(k)</code>.
  * @author Sean A. Irvine
  */
 public class A003670 extends A002858 {

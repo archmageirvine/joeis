@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068722 Number of solenoidal flows (flow in = flow out) in <code>a 3</code> X 3 square array with integer velocities <code>-n </code>.. n.
+ * A068722 Number of solenoidal flows (flow in = flow out) in <code>a 3</code> X 3 square array with integer velocities <code>-n .. n</code>.
  * @author Sean A. Irvine
  */
 public class A068722 extends LinearRecurrence {

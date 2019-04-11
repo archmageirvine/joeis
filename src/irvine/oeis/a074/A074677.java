@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074677 <code>a(n) =</code> Sum_{i <code>= 0</code>..floor(n/2)} (-1)^(i <code>+ floor(n/2))</code> F(2*i + e), where F = A000045 (Fibonacci numbers) and e <code>= (1-(-1)^n)/2</code>.
+ * A074677 <code>a(n) =</code> Sum_{i <code>= 0..floor(n/2)}</code> (-1)^(i <code>+ floor(n/2))</code> F(2*i + e), where F = A000045 (Fibonacci numbers) and e <code>= (1-(-1)^n)/2</code>.
  * @author Sean A. Irvine
  */
 public class A074677 extends LinearRecurrence {

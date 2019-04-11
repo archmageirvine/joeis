@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034851;
 
 /**
- * A228570 Triangle read by rows, formed from antidiagonals of triangle A102541. T(n, k) = A034851(n-2*k, k), <code>n&gt;= 0</code> and <code>0 &lt;=</code> k <code>&lt;= floor(n/3)</code>.
+ * A228570 Triangle read by rows, formed from antidiagonals of triangle A102541. T(n, <code>k) =</code> A034851(n-2*k, <code>k), n&gt;= 0</code> and <code>0 &lt;= k &lt;= floor(n/3)</code>.
  * @author Sean A. Irvine
  */
 public class A228570 extends A034851 {

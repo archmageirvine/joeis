@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a034.A034851;
 
 /**
- * A102541 Triangle read by rows, formed from antidiagonals of Losanitsch's triangle. T(n,k <code>) =</code> A034851(n-k, k), <code>n &gt;= 0</code> and <code>0 &lt;=</code> k <code>&lt;= floor(n/2)</code>.
+ * A102541 Triangle read by rows, formed from antidiagonals of Losanitsch's triangle. T(n,k <code>) =</code> A034851(n-k, <code>k), n &gt;= 0</code> and <code>0 &lt;= k &lt;= floor(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A102541 extends A034851 {

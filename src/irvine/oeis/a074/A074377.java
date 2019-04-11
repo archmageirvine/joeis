@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074377 Generalized 10-gonal numbers: m*(4*m <code>- 3)</code> for m <code>= 0, +- 1, +- 2, +- 3, </code>...
+ * A074377 Generalized 10-gonal numbers: m*(4*m <code>- 3)</code> for m <code>= 0, +- 1, +- 2, +- 3, ..</code>.
  * @author Sean A. Irvine
  */
 public class A074377 extends LinearRecurrence {

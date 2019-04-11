@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.io.StreamProcessor;
 
 /**
- * A000946 Euclid-Mullin sequence: <code>a(1) = 2, a(n+1)</code> is largest prime factor of Product_{k=1..n} a(k) <code>+ 1</code>.
+ * A000946 Euclid-Mullin sequence: <code>a(1) = 2, a(n+1)</code> is largest prime factor of Product_{k=1..n} <code>a(k) + 1</code>.
  * @author Sean A. Irvine
  */
 public class A000946 extends StreamProcessor implements Sequence {

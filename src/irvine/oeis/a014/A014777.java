@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A014777 Position of the start of the first occurrence of n after the decimal point in Pi <code>= 3</code>.14159265358979323846264338327950288...
+ * A014777 Position of the start of the first occurrence of n after the decimal point in Pi <code>= 3.14159265358979323846264338327950288..</code>.
  * @author Sean A. Irvine
  */
 public class A014777 extends A000796 {

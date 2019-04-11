@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180850 Number of codons that code for <code>an</code> amino acid, listed in alphabetical order of their single-letter codes.
+ * A180850 Number of codons that code for an amino acid, listed in alphabetical order of their single-letter codes.
  * @author Georg Fischer
  */
 public class A180850 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005199 <code>a(n) =</code> Sum_t t*F(n,t), where F(n,t) is the number of forests with n (unlabeled) nodes and exactly t trees, all of which are planted (that is, rooted trees in which the root has degree <code>1)</code>.
+ * A005199 <code>a(n) =</code> Sum_t t*F(n,t), where F(n,t) is the number of forests with n (unlabeled) nodes and exactly t trees, all of which are planted (that is, rooted trees in which the root has degree 1).
  * @author Sean A. Irvine
  */
 public class A005199 extends A005198 {

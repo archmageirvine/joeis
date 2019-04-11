@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import irvine.factor.factor.PrimeDivision;
 
 /**
- * A159907 Numbers n with half-integral abundancy index, sigma(n)/n = k+1/2 with integer k.
+ * A159907 Numbers n with half-integral abundancy index, sigma(n)/n <code>= k+1/2</code> with integer k.
  * @author Sean A. Irvine
  * @author Robert Gerbicz
  */

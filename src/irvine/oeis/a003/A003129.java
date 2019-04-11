@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003129 Number of transfer impedances of <code>an</code> n-terminal network.
+ * A003129 Number of transfer impedances of an n-terminal network.
  * @author Sean A. Irvine
  */
 public class A003129 implements Sequence {

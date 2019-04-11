@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A280043 Solutions to the congruence <code>1^n+2^n+</code>...+n^n <code>== 43 (mod n)</code>.
+ * A280043 Solutions to the congruence <code>1^n+2^n+...+n^n == 43 (mod n)</code>.
  * @author Georg Fischer
  */
 public class A280043 extends FiniteSequence {

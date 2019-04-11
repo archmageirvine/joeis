@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036239 Number of 2-element intersecting families of <code>an</code> n-element set; number of 2-way interactions when 2 subsets of power set on <code>{1</code>..n} are chosen at random.
+ * A036239 Number of 2-element intersecting families of an n-element set; number of 2-way interactions when 2 subsets of power set on <code>{1..n}</code> are chosen at random.
  * @author Sean A. Irvine
  */
 public class A036239 extends LinearRecurrence {

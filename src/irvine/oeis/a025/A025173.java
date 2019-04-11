@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A025173 The Gegenbauer Polynomial of index <code>n,</code> order <code>1,</code> evaluated at <code>x=1/3</code> and multiplied by <code>n*3^n/2</code>.
+ * A025173 The Gegenbauer Polynomial of index <code>n,</code> order 1, evaluated at <code>x=1/3</code> and multiplied by <code>n*3^n/2</code>.
  * @author Sean A. Irvine
  */
 public class A025173 extends LinearRecurrence {

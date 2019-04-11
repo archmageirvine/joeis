@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A063841 Table T(n,k) giving number of k-multigraphs on n nodes <code>(n &gt;= 1,</code> k <code>&gt;= 0)</code> read by antidiagonals.
+ * A063841 Table T(n,k) giving number of k-multigraphs on n nodes <code>(n &gt;= 1, k &gt;= 0)</code> read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A063841 implements Sequence {

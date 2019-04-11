@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001599 Harmonic or Ore numbers: numbers n such that the harmonic mean of the divisors of n is <code>an</code> integer.
+ * A001599 Harmonic or Ore numbers: numbers n such that the harmonic mean of the divisors of n is an integer.
  * @author Sean A. Irvine
  */
 public class A001599 implements Sequence {

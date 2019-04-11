@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A015138 Consider Fibonacci-type sequences b(0)=X, b(1)=Y, b(k)=b(k-1)+b(k-2) <code>mod n</code>; all are periodic; sequence gives number of maximal length periods.
+ * A015138 Consider Fibonacci-type sequences b(0)=X, b(1)=Y, <code>b(k)=b(k-1)+b(k-2) mod n</code>; all are periodic; sequence gives number of maximal length periods.
  * @author Sean A. Irvine
  */
 public class A015138 implements Sequence {

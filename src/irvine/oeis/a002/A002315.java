@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002315 NSW numbers: <code>a(n) = 6*a(n-1) - a(n-2)</code>; also <code>a(n)^2 -</code> 2*b(n)^2 <code>= -1</code> with b(n)=A001653(n+1).
+ * A002315 NSW numbers: <code>a(n) = 6*a(n-1) - a(n-2)</code>; also <code>a(n)^2 - 2*b(n)^2 = -1</code> with b(n)=A001653(n+1).
  * @author Sean A. Irvine
  */
 public class A002315 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A013707 Decimal expansion of Sum_{k=1..50000} (-1)^(k+1) / k.
+ * A013707 Decimal expansion of Sum_{k=1..50000} <code>(-1)^(k+1) / k</code>.
  * @author Sean A. Irvine
  */
 public class A013707 extends DecimalExpansionSequence {

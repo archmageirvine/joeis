@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059852 Consider the English alphabet in the International Morse radio telegraph code. Map a 'dit' to the digit one and a 'dah' to the digit <code>2,</code> then express that ternary number in decimal.
+ * A059852 Consider the English alphabet in the International Morse radio telegraph code. Map a 'dit' to the digit one and a 'dah' to the digit 2, then express that ternary number in decimal.
  * @author Georg Fischer
  */
 public class A059852 extends FiniteSequence {

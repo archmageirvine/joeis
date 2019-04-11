@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a081.A081054;
 
 /**
- * A018192 Number of chord diagrams of degree n with <code>an</code> isolated chord.
+ * A018192 Number of chord diagrams of degree n with an isolated chord.
  * @author Sean A. Irvine
  */
 public class A018192 extends A081054 {

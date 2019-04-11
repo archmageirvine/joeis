@@ -5,7 +5,7 @@ import irvine.oeis.a110.A110117;
 import irvine.oeis.a110.A110118;
 
 /**
- * A014248 b(n) - c(n) where b(n) <code>= [ n*(sqrt(2)+sqrt(3)) ]</code> and c(n) is the n-th number not in sequence b( ).
+ * A014248 <code>b(n) -</code> c(n) where <code>b(n) = [ n*(sqrt(2)+sqrt(3)) ]</code> and c(n) is the n-th number not in sequence <code>b( )</code>.
  * @author Sean A. Irvine
  */
 public class A014248 extends A110117 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A094353 Smallest integer not yet used such that <code>1 +</code> Product_{k=1..n} a(k) is a square.
+ * A094353 Smallest integer not yet used such that <code>1 +</code> Product_{k=1..n} <code>a(k)</code> is a square.
  * @author Sean A. Irvine
  */
 public class A094353 implements Sequence {

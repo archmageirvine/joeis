@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014628 Number of segments (and sides) created by diagonals of <code>an</code> n-gon in general position.
+ * A014628 Number of segments (and sides) created by diagonals of an n-gon in general position.
  * @author Sean A. Irvine
  */
 public class A014628 implements Sequence {

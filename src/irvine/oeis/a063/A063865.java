@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A063865 Number of solutions to <code>+- 1 +- 2 +- 3 +- </code>... <code>+- n = 0</code>.
+ * A063865 Number of solutions to <code>+- 1 +- 2 +- 3 +- ... +- n = 0</code>.
  * @author Sean A. Irvine
  */
 public class A063865 implements Sequence {

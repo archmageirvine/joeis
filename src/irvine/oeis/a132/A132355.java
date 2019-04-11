@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132355 Numbers of the form 9*h^2 + 2*h, for h <code>an</code> integer.
+ * A132355 Numbers of the form 9*h^2 + 2*h, for h an integer.
  * @author Sean A. Irvine
  */
 public class A132355 extends LinearRecurrence {

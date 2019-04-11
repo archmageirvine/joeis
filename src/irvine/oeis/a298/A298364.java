@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298364 Permutation of the natural numbers partitioned into quadruples [4k-2, 4k-1, 4k-3, 4k] for k <code>&gt; 0</code>.
+ * A298364 Permutation of the natural numbers partitioned into quadruples <code>[4k-2, 4k-1, 4k-3, 4k]</code> for <code>k &gt; 0</code>.
  * @author Georg Fischer
  */
 public class A298364 extends LinearRecurrence {

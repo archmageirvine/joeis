@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000179 M&#233;nage numbers: <code>a(0) = 1, a(1) = -1,</code> and for <code>n &gt;= 2, a(n) =</code> number of permutations s of <code>[0, </code>..., <code>n-1]</code> such that s(i) <code>!=</code> i and s(i) <code>!=</code> i+1 <code>(mod n)</code> for all i.
+ * A000179 M&#233;nage numbers: <code>a(0) = 1, a(1) = -1,</code> and for <code>n &gt;= 2, a(n) =</code> number of permutations s of <code>[0, ..., n-1]</code> such that s(i) <code>!=</code> i and s(i) <code>!=</code> i+1 <code>(mod n)</code> for all i.
  * @author Sean A. Irvine
  */
 public class A000179 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002848 Maximal number of disjoint subsets {X,Y,Z} of <code>{1, 2, </code>..., <code>n}</code> with X + Y = Z (as in A002849), with the property that n is in one of the subsets.
+ * A002848 Maximal number of disjoint subsets {X,Y,Z} of <code>{1, 2, ..., n}</code> with X + Y = Z (as in A002849), with the property that n is in one of the subsets.
  * @author Sean A. Irvine
  */
 public class A002848 extends A002849 {

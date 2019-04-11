@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A130500 <code>a(1)=1</code>. <code>a(n) =</code> number of earlier terms of the sequence which divide (the number of positive integers which are <code>&lt;=n</code> and missing from first <code>(n-1)</code> terms of sequence).
+ * A130500 <code>a(1)=1. a(n) =</code> number of earlier terms of the sequence which divide (the number of positive integers which are <code>&lt;=n</code> and missing from first <code>(n-1)</code> terms of sequence).
  * @author Sean A. Irvine
  */
 public class A130500 implements Sequence {

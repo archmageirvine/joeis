@@ -18,6 +18,7 @@ public final class Sircon {
    */
   public static Expression parse(final String expression) {
     final ANTLRInputStream input = new ANTLRInputStream(expression);
+    //final CharStream input = CharStreams.fromString(expression); // needed for 4.7.2 -- but 4.7.2 breaks other things
     final GrammarLexer lexer = new GrammarLexer(input);
     final CommonTokenStream tokens = new CommonTokenStream(lexer);
     final GrammarParser parser = new GrammarParser(tokens);

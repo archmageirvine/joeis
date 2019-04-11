@@ -22,14 +22,13 @@
     <java classname="org.antlr.v4.Tool" fork="true" failonerror="true">
       <classpath>
         <fileset dir="${lib.dir}" includes="antlr-4.5-complete.jar" />
+        <pathelement location="${src.dir}" />
       </classpath>
       <arg value="-Dlanguage=Java"/>
       <arg value="-no-visitor"/>
       <arg value="-no-listener"/>
       <arg value="-package"/>
       <arg value="irvine.math.expression"/>
-      <arg value="-lib"/>
-      <arg value="${src.dir}/irvine/math/expression"/>
       <arg value="${src.dir}/irvine/math/expression/Grammar.g4"/>
     </java>
   </target>

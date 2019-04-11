@@ -898,12 +898,9 @@ public class Z extends Number implements Comparable<Z> {
    * where each digit in base is represented by two decimal digits.
    * The result will be prefixed by a minus sign if appropriate,
    * and has no leading zero.
-   *
-   * @param n number
    * @param base base
    * @return string representation.
-   * @exception IllegalArgumentException if base is less than 11 or more
-   * than 99.
+   * @exception IllegalArgumentException if base is less than 11 or more than 99.
    */
   public String toTwoDigits(final int base) {
     return ZString.toTwoDigits(this, base);

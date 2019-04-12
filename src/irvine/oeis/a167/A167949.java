@@ -13,7 +13,6 @@ public class A167949 extends LinearRecurrence {
   public A167949() {
     super(new long[] {-496, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31, 31},
       new Z[] {
-        Z.ONE,
         Z.valueOf(33),
         Z.valueOf(1056),
         Z.valueOf(33792),
@@ -28,7 +27,8 @@ public class A167949 extends LinearRecurrence {
         Z.valueOf(1188950301625810944L),
         new Z("38046409652025950208"),
         new Z("1217485108864830406656"),
-        new Z("38959523483674573012992")
-      });
+        new Z("38959523483674573012992"),
+        new Z("1246704751477586336415216")
+      }, Z.ONE);
   }
 }

@@ -1,5 +1,6 @@
 package irvine.oeis.a168;
 
+import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
@@ -10,6 +11,26 @@ public class A168693 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A168693() {
-    super(new long[] {-105, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14}, new long[] {1, 16, 240, 3600, 54000, 810000, 12150000, 182250000, 2733750000L, 41006250000L, 615093750000L, 9226406250000L, 138396093750000L, 2075941406250000L, 31139121093750000L, 467086816406250000L, 7006302246093750000L});
+    super(new long[] {-105, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14},
+      new Z[] {
+        Z.valueOf(16),
+        Z.valueOf(240),
+        Z.valueOf(3600),
+        Z.valueOf(54000),
+        Z.valueOf(810000),
+        Z.valueOf(12150000),
+        Z.valueOf(182250000),
+        Z.valueOf(2733750000L),
+        Z.valueOf(41006250000L),
+        Z.valueOf(615093750000L),
+        Z.valueOf(9226406250000L),
+        Z.valueOf(138396093750000L),
+        Z.valueOf(2075941406250000L),
+        Z.valueOf(31139121093750000L),
+        Z.valueOf(467086816406250000L),
+        Z.valueOf(7006302246093750000L),
+        new Z("105094533691406249880")
+      },
+      Z.ONE);
   }
 }

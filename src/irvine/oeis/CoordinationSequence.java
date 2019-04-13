@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
@@ -11,12 +9,15 @@ import irvine.math.z.Z;
  * Exact Topological Densities for Zeolites".
  * @author Sean A. Irvine
  */
-public class CoordinationSequence implements Sequence {
+public class CoordinationSequence extends RatPolyGfSequence {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final Polynomial<Z> mNum;
-  private final Polynomial<Z> mDen;
-  private int mN = -1;
+  private static Polynomial<Z> buildDenominator(final int[] pl) {
+    Polynomial<Z> den = RING.one();
+    for (final int length : pl) {
+      den = RING.multiply(den, RING.oneMinusXToTheN(length));
+    }
+    return den;
+  }
 
   /**
    * Construct a new zeolite coordination sequence from the specification of its
@@ -25,17 +26,7 @@ public class CoordinationSequence implements Sequence {
    * @param pl the denominator (period lengths)
    */
   public CoordinationSequence(final long[] it, final int[] pl) {
-    mNum = Polynomial.create(it);
-    Polynomial<Z> den = RING.one();
-    for (final int length : pl) {
-      den = RING.multiply(den, RING.oneMinusXToTheN(length));
-    }
-    mDen = den;
-  }
-
-  @Override
-  public Z next() {
-    return RING.coeff(mNum, mDen, ++mN);
+    super(Polynomial.create(it), buildDenominator(pl));
   }
 }
 

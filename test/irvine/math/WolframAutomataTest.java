@@ -15,4 +15,14 @@ public class WolframAutomataTest extends TestCase {
     }
     assertEquals("110010001110011110001111010000100010111011110110010010001010000011101000101000101011100101111101010001011111101010110001010000110101000101000110011000011110111100010110111101101101111001010101110010001", wa.toString());
   }
+
+  public void test137() {
+    final WolframAutomata wa = new WolframAutomata(137);
+    wa.next();
+    assertEquals("000", wa.toString());
+    wa.next();
+    assertEquals("00101", wa.toString());
+    wa.next();
+    assertEquals("0000011", wa.toString());
+  }
 }

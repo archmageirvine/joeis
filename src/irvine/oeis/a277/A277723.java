@@ -1,15 +1,24 @@
 package irvine.oeis.a277;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.cr.CR;
+import irvine.math.cr.ZPolynomial;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A277723 <code>a(n) =</code> floor(n*tau^3) where tau is the tribonacci constant (A058265).
  * @author Sean A. Irvine
  */
-public class A277723 extends LinearRecurrence {
+public class A277723 implements Sequence {
 
-  /** Construct the sequence. */
-  public A277723() {
-    super(new long[] {-1, 1, 0, 0, 0, 0, 0, 0, 0, 1}, new long[] {0, 6, 12, 18, 24, 31, 37, 43, 49, 56});
+  private static final ZPolynomial POLY = new ZPolynomial(Polynomial.create(-1, 5, -7, 1));
+  private static final CR TAU3 = POLY.inverseMonotone(CR.valueOf(6), CR.valueOf(7)).execute(CR.ZERO);
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return TAU3.multiply(CR.valueOf(++mN)).floor(32);
   }
 }

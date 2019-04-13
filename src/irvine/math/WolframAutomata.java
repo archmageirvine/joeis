@@ -1,8 +1,8 @@
 package irvine.math;
 
-import irvine.math.z.Z;
-
 import java.util.BitSet;
+
+import irvine.math.z.Z;
 
 /**
  * Computes Stephen Wolfram's automata.
@@ -16,11 +16,11 @@ public class WolframAutomata {
   private final boolean[] mRule;
   /** Current state. */
   private BitSet mCur;
+  private int mLength;
 
   /**
    * Construct a new generator for the specified Wolfram automata.
    * The automata is initialized with a single black pixel.
-   *
    * @param rule the rule to use
    * @exception IllegalArgumentException if the rule is not valid.
    */
@@ -39,70 +39,55 @@ public class WolframAutomata {
     mRule[7] = (rule & 128) != 0;
     mCur = new BitSet(1);
     mCur.set(0, true);
+    mLength = 1;
+  }
+
+  private boolean isSet(final int k) {
+    return k < 0 || k >= mLength ? mLength != 1 && mRule[0] : mCur.get(k);
   }
 
   /**
    * Return a bit set with the next step of the automata.
-   *
    * @return next step of automata
    */
   public BitSet next() {
-    final BitSet next = new BitSet(mCur.length() + 2);
-    for (int i = -1; i <= mCur.length();) {
+    final BitSet next = new BitSet(mLength + 2);
+    for (int k = 0; k < mLength + 2; ++k) {
       // get left, centre, right pixels
-      final int l = i <= 0 ? 0 : (mCur.get(i - 1) ? 4 : 0);
-      final int c = i < 0 ? 0 : (mCur.get(i) ? 2 : 0);
-      final int r = mCur.get(i + 1) ? 1 : 0;
-      next.set(++i, mRule[l | c | r]);
+      final int l = isSet(k - 2) ? 4 : 0;
+      final int c = isSet(k - 1) ? 2 : 0;
+      final int r = isSet(k) ? 1 : 0;
+      next.set(k, mRule[l | c | r]);
     }
     mCur = next;
+    mLength += 2;
     return mCur;
   }
 
   /**
    * Return a simple string representation of the current iteration.
-   *
    * @return a string
    */
   public String toString() {
     final StringBuilder sb = new StringBuilder();
-    for (int i = 0; i < mCur.length(); ++i) {
-      sb.append(mCur.get(i) ? "1" : "0");
+    for (int k = 0; k < mLength; ++k) {
+      sb.append(mCur.get(k) ? '1' : '0');
     }
     return sb.toString();
   }
 
   /**
    * Return the current iteration as a Z.
-   *
    * @return a Z.
    */
   public Z toZ() {
     Z result = Z.ZERO;
-    for (int i = 0; i < mCur.length(); ++i) {
+    for (int k = 0; k < mLength; ++k) {
       result = result.shiftLeft(1);
-      if (mCur.get(i)) {
-        result = result.add(Z.ONE);
+      if (mCur.get(k)) {
+        result = result.add(1);
       }
     }
     return result;
-  }
-
-  /**
-   * Noddy test main.
-   *
-   * @param args integer values to start at
-   */
-  public static void main(final String[] args) {
-    final int start = Integer.parseInt(args[0]);
-    final WolframAutomata wa = new WolframAutomata(30);
-    for (int i = 0; i < start; ++i) {
-      wa.next();
-    }
-    for (int i = start; i < start + 10; ++i) {
-      //      System.out.println(i + " " + wa.toString() + " " + wa.toZ());
-      System.out.println("print \"" + i +  ": \", TrialDivision(" + wa.toZ() + ",20000000);");
-      wa.next();
-    }
   }
 }

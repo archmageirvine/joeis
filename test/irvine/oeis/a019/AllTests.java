@@ -980,8 +980,14 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A019986Test.class);
     suite.addTestSuite(A019987Test.class);
     suite.addTestSuite(A019988Test.class);
-    suite.addTestSuite(A019989Test.class);
     suite.addTestSuite(A019992Test.class);
+    suite.addTestSuite(A019993Test.class);
+    suite.addTestSuite(A019994Test.class);
+    suite.addTestSuite(A019995Test.class);
+    suite.addTestSuite(A019996Test.class);
+    suite.addTestSuite(A019997Test.class);
+    suite.addTestSuite(A019998Test.class);
+    suite.addTestSuite(A019999Test.class);
     return suite;
   }
 

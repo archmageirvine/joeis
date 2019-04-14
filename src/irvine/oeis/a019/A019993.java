@@ -1,10 +1,10 @@
 package irvine.oeis.a019;
 
 /**
- * A019595 From George Gilbert's marks problem: jumping 4 marks at a time (initial positions).
+ * A019993.
  * @author Sean A. Irvine
  */
-public class A019595 extends A019592 {
+public class A019993 extends A019595 {
 
   @Override
   protected long step(final long position) {

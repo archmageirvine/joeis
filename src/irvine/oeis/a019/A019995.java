@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 /**
- * A019995.
+ * A019995 From George Gilbert's marks problem: jumping 6 marks at a time (initial positions).
  * @author Sean A. Irvine
  */
 public class A019995 extends A019993 {

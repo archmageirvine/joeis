@@ -17,6 +17,6 @@ public class A094914 extends LinearRecurrence {
   
   @Override
   public Z next() {
-  	return super.next().abs();
+    return super.next().abs();
   }
 }

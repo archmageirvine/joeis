@@ -12,6 +12,7 @@ public class A000496 extends PrependSequence {
 
   // Conjectured GF due to Plouffe
 
+  /** Construct the sequence. */
   public A000496() {
     super(new RatPolyGfSequence(new long[] {24, -4, -8, -16, -4}, new long[] {1, -2, 0, 0, 1}), Z.ONE, Z.ONE, Z.TWO, Z.SIX);
   }

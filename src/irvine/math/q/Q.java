@@ -196,6 +196,14 @@ public class Q implements Comparable<Q>, Serializable {
   }
 
   /**
+   * Return the ceiling of this rational.
+   * @return ceiling function
+   */
+  public Z ceiling() {
+    return negate().floor().negate();
+  }
+
+  /**
    * Add a rational to this rational.
    *
    * @param n rational to add

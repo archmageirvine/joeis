@@ -10,6 +10,6 @@ public class A006401 extends A006400 {
 
   @Override
   public Z next() {
-    return Z.valueOf(planarCount(2, ++mN + 1, 1, mN + 1, mVerbose));
+    return Z.valueOf(planarCount(2, ++mN, 1, mN, mVerbose));
   }
 }

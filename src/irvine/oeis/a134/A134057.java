@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134057 <code>a(n) =</code> binomial(2^n-1,2).
+ * A134057 <code>a(n) = binomial(2^n-1,2)</code>.
  * @author Sean A. Irvine
  */
 public class A134057 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004365 Binomial coefficient C(6n,n-10).
+ * A004365 Binomial coefficient <code>C(6n,n-10)</code>.
  * @author Sean A. Irvine
  */
 public class A004365 implements Sequence {

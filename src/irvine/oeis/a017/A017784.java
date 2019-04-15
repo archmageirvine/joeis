@@ -3,7 +3,7 @@ package irvine.oeis.a017;
 import irvine.oeis.a010.A010926;
 
 /**
- * A017784 Binomial coefficients C(68,n).
+ * A017784 Binomial coefficients <code>C(68,n)</code>.
  * @author Sean A. Irvine
  */
 public class A017784 extends A010926 {

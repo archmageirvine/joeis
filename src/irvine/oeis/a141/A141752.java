@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141752 <code>a(n) =</code> Sum_{k=0..n} [ Fibonacci(2k-1) + (n-k)*Fibonacci(2k) ].
+ * A141752 <code>a(n) =</code> Sum_{k=0..n} <code>[ Fibonacci(2k-1) + (n-k)*Fibonacci(2k) ]</code>.
  * @author Sean A. Irvine
  */
 public class A141752 extends LinearRecurrence {

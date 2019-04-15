@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002294 <code>a(n) =</code> binomial(5n,n)/(4n+1).
+ * A002294 <code>a(n) = binomial(5n,n)/(4n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A002294 implements Sequence {

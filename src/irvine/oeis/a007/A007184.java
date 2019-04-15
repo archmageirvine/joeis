@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007184 <code>a(n) =</code> Product_{k=0..n-1} <code>(2^(2^k - 1) +</code> 1)^C(n,k).
+ * A007184 <code>a(n) =</code> Product_{k=0..n-1} <code>(2^(2^k - 1) + 1)^C(n,k)</code>.
  * @author Sean A. Irvine
  */
 public class A007184 implements Sequence {

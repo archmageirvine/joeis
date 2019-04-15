@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000854 Number of n-input 3-output switching networks under action of complementing group C(2,n) on inputs and S(3) and C(2,3) on outputs.
+ * A000854 Number of n-input 3-output switching networks under action of complementing group <code>C(2,n)</code> on inputs and S(3) and <code>C(2,3)</code> on outputs.
  * @author Sean A. Irvine
  */
 public class A000854 implements Sequence {

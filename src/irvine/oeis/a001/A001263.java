@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001263 Triangle of Narayana numbers T(n,k) = C(n-1,k-1)*C(n,k-1)/k with <code>1 &lt;= k &lt;= n,</code> read by rows. Also called the Catalan triangle.
+ * A001263 Triangle of Narayana numbers <code>T(n,k) = C(n-1,k-1)*C(n,k-1)/k</code> with <code>1 &lt;= k &lt;= n,</code> read by rows. Also called the Catalan triangle.
  * @author Sean A. Irvine
  */
 public class A001263 implements Sequence {

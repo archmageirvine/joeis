@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053132 One half of binomial coefficients C(2*n-4,5).
+ * A053132 One half of binomial coefficients <code>C(2*n-4,5)</code>.
  * @author Sean A. Irvine
  */
 public class A053132 extends LinearRecurrence {

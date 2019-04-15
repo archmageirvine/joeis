@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003522 <code>a(n) =</code> Sum_{k=0..n} C(n-k,3k).
+ * A003522 <code>a(n) =</code> Sum_{k=0..n} <code>C(n-k,3k)</code>.
  * @author Sean A. Irvine
  */
 public class A003522 extends LinearRecurrence {

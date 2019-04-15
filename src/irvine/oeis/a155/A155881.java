@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A155881 <code>a(n)</code> is the number of zeros needed to write the integers 1 through Fibonacci(n).
+ * A155881 <code>a(n)</code> is the number of zeros needed to write the integers 1 through <code>Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A155881 extends A000045 {

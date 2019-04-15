@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000044 Dying rabbits: <code>a(0) = 1</code>; for <code>1 &lt;= n &lt;= 12, a(n) =</code> Fibonacci(n); for <code>n &gt;= 13, a(n) = a(n-1) + a(n-2) - a(n-13)</code>.
+ * A000044 Dying rabbits: <code>a(0) = 1</code>; for <code>1 &lt;= n &lt;= 12, a(n) = Fibonacci(n)</code>; for <code>n &gt;= 13, a(n) = a(n-1) + a(n-2) - a(n-13)</code>.
  * @author Sean A. Irvine
  */
 public class A000044 implements Sequence {

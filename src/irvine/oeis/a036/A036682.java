@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036682 T(n+3,3) with T as in A036355.
+ * A036682 <code>T(n+3,3)</code> with T as in A036355.
  * @author Sean A. Irvine
  */
 public class A036682 extends LinearRecurrence {

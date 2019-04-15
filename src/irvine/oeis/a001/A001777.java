@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001777 Lah numbers: <code>n! *</code> binomial(n-1, <code>4)/5!</code>.
+ * A001777 Lah numbers: <code>n! * binomial(n-1, 4)/5!</code>.
  * @author Sean A. Irvine
  */
 public class A001777 implements Sequence {

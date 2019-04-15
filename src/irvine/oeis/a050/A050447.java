@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050447 Table T(n,m) giving total degree of n-th-order elementary symmetric polynomials in m variables, <code>-1 &lt;= n, 1 &lt;=</code> m, transposed and read by upward antidiagonals.
+ * A050447 Table <code>T(n</code>,m) giving total degree of n-th-order elementary symmetric polynomials in m variables, <code>-1 &lt;= n, 1 &lt;=</code> m, transposed and read by upward antidiagonals.
  * @author Sean A. Irvine
  */
 public class A050447 extends MemoryFunction2<Long, Z> implements Sequence {

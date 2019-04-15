@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A088079 Diagonal T(n,n) of the triangle T(n,k), <code>n&gt;=0, 0&lt;=k&lt;=n,</code> in which row n contains <code>n+1</code> consecutive integers T(n,k+1)=T(n,k)+1 such that T(n,k) is divisible by a k-th power.
+ * A088079 Diagonal <code>T(n,n)</code> of the triangle <code>T(n,k), n&gt;=0, 0&lt;=k&lt;=n,</code> in which row n contains <code>n+1</code> consecutive integers <code>T(n,k+1)=T(n,k)+1</code> such that <code>T(n,k)</code> is divisible by a k-th power.
  * @author Sean A. Irvine
  */
 public class A088079 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027784 <code>a(n) =</code> 11*(n+1)*binomial(n+2,11)/2.
+ * A027784 <code>a(n) = 11*(n+1)*binomial(n+2,11)/2</code>.
  * @author Sean A. Irvine
  */
 public class A027784 extends LinearRecurrence {

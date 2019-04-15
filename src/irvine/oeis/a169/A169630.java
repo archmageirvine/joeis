@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169630 <code>a(n) = n</code> times the square of Fibonacci(n).
+ * A169630 <code>a(n) = n</code> times the square of <code>Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A169630 extends LinearRecurrence {

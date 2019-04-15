@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297661 <code>a(n) = n +</code> 2*cos((n*Pi)/3) + Lucas(n).
+ * A297661 <code>a(n) = n +</code> 2*cos((n*Pi)/3) <code>+ Lucas(n)</code>.
  * @author Georg Fischer
  */
 public class A297661 extends LinearRecurrence {

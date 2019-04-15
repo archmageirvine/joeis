@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201003 Triangular numbers, T(m), that are four-fifths of another triangular number: T(m) such that 5*T(m) = 4*T(k) for some k.
+ * A201003 Triangular numbers, T(m), that are four-fifths of another triangular number: T(m) such that 5*T(m) <code>= 4*T(k)</code> for some k.
  * @author Sean A. Irvine
  */
 public class A201003 extends LinearRecurrence {

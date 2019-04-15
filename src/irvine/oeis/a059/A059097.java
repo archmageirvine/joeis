@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059097 Numbers n such that the binomial coefficient C(2n,n) is not divisible by the square of an odd prime.
+ * A059097 Numbers n such that the binomial coefficient <code>C(2n,n)</code> is not divisible by the square of an odd prime.
  * @author Georg Fischer
  */
 public class A059097 extends FiniteSequence {

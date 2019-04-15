@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000868 Number of switching networks with C(2,n) acting on domain and GL(2,Z2) acting on range.
+ * A000868 Number of switching networks with <code>C(2,n)</code> acting on domain and GL(2,Z2) acting on range.
  * @author Sean A. Irvine
  */
 public class A000868 implements Sequence {

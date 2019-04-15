@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000073;
 
 /**
- * A008937 <code>a(n) =</code> Sum_{k=0..n} T(k) where T(n) are the tribonacci numbers A000073.
+ * A008937 <code>a(n) =</code> Sum_{k=0..n} <code>T(k)</code> where <code>T(n)</code> are the tribonacci numbers A000073.
  * @author Sean A. Irvine
  */
 public class A008937 extends PartialSumSequence {

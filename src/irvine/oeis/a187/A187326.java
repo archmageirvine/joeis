@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187326 Floor(n/4)+floor(n/2)+floor(3n/4).
+ * A187326 <code>Floor(n/4)+floor(n/2)+floor(3n/4)</code>.
  * @author Sean A. Irvine
  */
 public class A187326 extends LinearRecurrence {

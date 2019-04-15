@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011857 Triangle of numbers [ C(n,k)/k <code>], k=1..n-1</code>.
+ * A011857 Triangle of numbers <code>[ C(n,k)/k ], k=1..n-1</code>.
  * @author Sean A. Irvine
  */
 public class A011857 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003519 <code>a(n) =</code> 10*C(2n+1, <code>n-4)/(n+6)</code>.
+ * A003519 <code>a(n) = 10*C(2n+1, n-4)/(n+6)</code>.
  * @author Sean A. Irvine
  */
 public class A003519 implements Sequence {

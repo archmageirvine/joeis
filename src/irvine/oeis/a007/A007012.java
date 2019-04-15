@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007012 <code>a(n)</code> is number of k for which C(n,k) is not divisible by n.
+ * A007012 <code>a(n)</code> is number of k for which <code>C(n,k)</code> is not divisible by n.
  * @author Sean A. Irvine
  */
 public class A007012 implements Sequence {

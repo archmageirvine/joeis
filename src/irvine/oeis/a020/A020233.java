@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A020233 implements Sequence {
 
-  private Z mN = Z.valueOf(31);
+  private Z mN = Z.valueOf(23);
   private final Fast mPrime = new Fast();
 
   @Override

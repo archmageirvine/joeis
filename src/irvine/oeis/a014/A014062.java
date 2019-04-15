@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014062 <code>a(n) =</code> binomial(n^2, <code>n)</code>.
+ * A014062 <code>a(n) = binomial(n^2, n)</code>.
  * @author Sean A. Irvine
  */
 public class A014062 implements Sequence {

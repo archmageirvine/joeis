@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032525 Floor( <code>7*n^2/2 )</code>.
+ * A032525 <code>Floor( 7*n^2/2 )</code>.
  * @author Sean A. Irvine
  */
 public class A032525 extends LinearRecurrence {

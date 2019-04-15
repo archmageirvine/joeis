@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074475 <code>a(n)=</code> Sum (T(2i+e),(i=0,1,..,Floor(n/2))), where T(n) are generalized tribonacci numbers (A001644) and e=2(n/2 - Floor(n/2)).
+ * A074475 <code>a(n)=</code> Sum (T(2i+e),(i=0,1,..,Floor(n/2))), where <code>T(n)</code> are generalized tribonacci numbers (A001644) and e=2(n/2 <code>- Floor(n/2))</code>.
  * @author Sean A. Irvine
  */
 public class A074475 extends LinearRecurrence {

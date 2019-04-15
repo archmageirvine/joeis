@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011852 <code>a(n) =</code> floor(binomial(n,6)/6).
+ * A011852 <code>a(n) = floor(binomial(n,6)/6)</code>.
  * @author Sean A. Irvine
  */
 public class A011852 implements Sequence {

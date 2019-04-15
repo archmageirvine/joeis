@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014297 <code>a(n) = n! *</code> C(n+2, <code>2) * 2^(n+1)</code>.
+ * A014297 <code>a(n) = n! * C(n+2, 2) * 2^(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A014297 implements Sequence {

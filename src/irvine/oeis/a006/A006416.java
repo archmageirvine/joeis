@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006416 Number of rooted planar maps. Also a(n)=T(4,n-3), array T as in A049600.
+ * A006416 Number of rooted planar maps. Also <code>a(n)=T(4,n-3),</code> array T as in A049600.
  * @author Sean A. Irvine
  */
 public class A006416 extends LinearRecurrence {

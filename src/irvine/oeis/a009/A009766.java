@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009766 Catalan's triangle T(n,k) (read by rows): each term is the sum of the entries above and to the left, i.e., T(n,k) = Sum_{j=0..k} T(n-1,j).
+ * A009766 Catalan's triangle <code>T(n,k)</code> (read by rows): each term is the sum of the entries above and to the left, i.e., <code>T(n,k) =</code> Sum_{j=0..k} <code>T(n-1,j)</code>.
  * @author Sean A. Irvine
  */
 public class A009766 implements Sequence {

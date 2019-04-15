@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141480 Binomial(n+2,3)*5^3.
+ * A141480 <code>Binomial(n+2,3)*5^3</code>.
  * @author Sean A. Irvine
  */
 public class A141480 extends LinearRecurrence {

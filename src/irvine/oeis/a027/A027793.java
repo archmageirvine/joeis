@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027793 <code>a(n) =</code> 28*(n+1)*C(n+3,8)/3.
+ * A027793 <code>a(n) = 28*(n+1)*C(n+3,8)/3</code>.
  * @author Sean A. Irvine
  */
 public class A027793 extends LinearRecurrence {

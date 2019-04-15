@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002067 <code>a(n) =</code> Sum_{k=0..n-1} binomial(2*n,2*k)*a(k)*a(n-k-1).
+ * A002067 <code>a(n) =</code> Sum_{k=0..n-1} <code>binomial(2*n,2*k)*a(k)*a(n-k-1)</code>.
  * @author Sean A. Irvine
  */
 public class A002067 extends MemorySequence {

@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * A082641 Triangle T(n,k) <code>(n &gt;= 1, 1 &lt;= k &lt;= n)</code> read by rows, where T(n,k) = number of basic invariants of degree k for the cyclic group of order and degree n.
+ * A082641 Triangle <code>T(n,k) (n &gt;= 1, 1 &lt;= k &lt;= n)</code> read by rows, where <code>T(n,k) =</code> number of basic invariants of degree k for the cyclic group of order and degree n.
  * @author Sean A. Irvine
  */
 public class A082641 implements Sequence {

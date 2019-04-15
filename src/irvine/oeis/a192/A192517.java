@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A192517 Table read by antidiagonals: T(n,k) = number of multigraphs with n vertices and k edges, with no loops allowed <code>(n &gt;= 1, k &gt;= 0)</code>.
+ * A192517 Table read by antidiagonals: <code>T(n,k) =</code> number of multigraphs with n vertices and k edges, with no loops allowed <code>(n &gt;= 1, k &gt;= 0)</code>.
  * @author Sean A. Irvine
  */
 public class A192517 implements Sequence {

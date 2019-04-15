@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006542 <code>a(n) =</code> binomial(n,3)*binomial(n-1,3)/4.
+ * A006542 <code>a(n) = binomial(n,3)*binomial(n-1,3)/4</code>.
  * @author Sean A. Irvine
  */
 public class A006542 implements Sequence {

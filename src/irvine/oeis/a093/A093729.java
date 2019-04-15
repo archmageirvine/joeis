@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A093729 Square table T, read by antidiagonals, where T(n,k) gives the number of n-th generation descendents of a node labeled <code>(k)</code> in the tree of tournament sequences.
+ * A093729 Square table T, read by antidiagonals, where <code>T(n,k)</code> gives the number of n-th generation descendents of a node labeled <code>(k)</code> in the tree of tournament sequences.
  * @author Sean A. Irvine
  */
 public class A093729 extends MemoryFunction2<Long, Z> implements Sequence {

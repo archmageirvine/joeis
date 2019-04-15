@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A029887 A sum over scaled A000531 related to Catalan numbers C(n).
+ * A029887 A sum over scaled A000531 related to Catalan numbers <code>C(n)</code>.
  * @author Sean A. Irvine
  */
 public class A029887 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019510 <code>a(n) =</code> gcd( binomial(n+3, <code>n) +</code> binomial(n+4, <code>n+1),</code> binomial(n+5, <code>n+2) )</code>.
+ * A019510 <code>a(n) =</code> gcd( <code>binomial(n+3, n) + binomial(n+4, n+1), binomial(n+5, n+2) )</code>.
  * @author Sean A. Irvine
  */
 public class A019510 implements Sequence {

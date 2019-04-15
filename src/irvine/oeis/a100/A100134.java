@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100134 <code>a(n) =</code> Sum_{k=0..floor(n/6)} binomial(n-3k, <code>3k)</code>.
+ * A100134 <code>a(n) =</code> Sum_{k=0..floor(n/6)} <code>binomial(n-3k, 3k)</code>.
  * @author Sean A. Irvine
  */
 public class A100134 extends LinearRecurrence {

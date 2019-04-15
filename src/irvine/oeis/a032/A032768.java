@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032768 Floor( <code>n(n+1)(n+2)(n+3)(n+4) / (n+(n+1)+(n+2)+(n+3)+(n+4)) )</code>.
+ * A032768 <code>Floor( n(n+1)(n+2)(n+3)(n+4) / (n+(n+1)+(n+2)+(n+3)+(n+4)) )</code>.
  * @author Sean A. Irvine
  */
 public class A032768 extends LinearRecurrence {

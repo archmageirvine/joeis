@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050534 Tritriangular numbers: <code>a(n) =</code> binomial(binomial(n,2),2) <code>= n(n + 1)(n - 1)(n - 2)/8</code>.
+ * A050534 Tritriangular numbers: <code>a(n) = binomial(binomial(n,2),2) = n(n + 1)(n - 1)(n - 2)/8</code>.
  * @author Sean A. Irvine
  */
 public class A050534 extends LinearRecurrence {

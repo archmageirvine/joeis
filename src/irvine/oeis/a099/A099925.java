@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099925 <code>a(n) =</code> Lucas(n) <code>+ (-1)^n</code>.
+ * A099925 <code>a(n) = Lucas(n) + (-1)^n</code>.
  * @author Sean A. Irvine
  */
 public class A099925 extends LinearRecurrence {

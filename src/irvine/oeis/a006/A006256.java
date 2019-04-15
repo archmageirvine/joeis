@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a005.A005809;
 
 /**
- * A006256 <code>a(n) =</code> Sum_{k=0..n} binomial(3k,k)*binomial(3n-3k,n-k).
+ * A006256 <code>a(n) =</code> Sum_{k=0..n} <code>binomial(3k,k)*binomial(3n-3k,n-k)</code>.
  * @author Sean A. Irvine
  */
 public class A006256 extends ConvolutionSequence {

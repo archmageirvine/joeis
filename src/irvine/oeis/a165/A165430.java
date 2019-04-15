@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165430 Table T(n,m) read by rows: the greatest common unitary divisor of n and m, <code>n&gt;=1,</code> 1&lt;=m&lt;=n.
+ * A165430 Table <code>T(n</code>,m) read by rows: the greatest common unitary divisor of n and m, <code>n&gt;=1,</code> 1&lt;=m&lt;=n.
  * @author Sean A. Irvine
  */
 public class A165430 implements Sequence {

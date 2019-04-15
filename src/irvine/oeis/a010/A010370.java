@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010370 <code>a(n) =</code> binomial(2*n, <code>n)^2 / (1-2*n)</code>.
+ * A010370 <code>a(n) = binomial(2*n, n)^2 / (1-2*n)</code>.
  * @author Sean A. Irvine
  */
 public class A010370 implements Sequence {

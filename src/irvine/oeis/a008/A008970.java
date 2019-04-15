@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008970 Triangle T(n,k) = P(n,k)/2, <code>n &gt;= 2, 1&lt;=k&lt;n,</code> of one-half of number of permutations of <code>1..n</code> such that the differences have k runs with the same signs.
+ * A008970 Triangle <code>T(n,k) =</code> P(n,k)/2, <code>n &gt;= 2, 1&lt;=k&lt;n,</code> of one-half of number of permutations of <code>1..n</code> such that the differences have k runs with the same signs.
  * @author Sean A. Irvine
  */
 public class A008970 extends MemoryFunction2<Integer, Z> implements Sequence {

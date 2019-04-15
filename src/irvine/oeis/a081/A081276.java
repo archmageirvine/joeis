@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081276 Floor(n^3/8).
+ * A081276 <code>Floor(n^3/8)</code>.
  * @author Sean A. Irvine
  */
 public class A081276 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014068 <code>a(n) =</code> binomial(n*(n+1)/2, <code>n)</code>.
+ * A014068 <code>a(n) = binomial(n*(n+1)/2, n)</code>.
  * @author Sean A. Irvine
  */
 public class A014068 implements Sequence {

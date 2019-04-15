@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A106498 Triangle read by rows: T(n,k) = number of unlabeled bicolored graphs with isolated nodes allowed having <code>2n</code> nodes and k edges, with n nodes of each color. Here <code>n &gt;= 0, 0 &lt;= k &lt;= n^2</code>.
+ * A106498 Triangle read by rows: <code>T(n,k) =</code> number of unlabeled bicolored graphs with isolated nodes allowed having <code>2n</code> nodes and k edges, with n nodes of each color. Here <code>n &gt;= 0, 0 &lt;= k &lt;= n^2</code>.
  * @author Sean A. Irvine
  */
 public class A106498 implements Sequence {

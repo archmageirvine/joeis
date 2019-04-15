@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011845 <code>a(n) = floor(</code> binomial(n,8)/9).
+ * A011845 <code>a(n) = floor( binomial(n,8)/9)</code>.
  * @author Sean A. Irvine
  */
 public class A011845 implements Sequence {

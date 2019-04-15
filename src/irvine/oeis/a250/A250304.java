@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A250304 Four-column array read by rows: T(n,k) = the coefficient of <code>x^k</code> in the expanded polynomial <code>x^3 + (x+1)^3 + ... + (x+n-1)^3,</code> for <code>0 &lt;= k &lt;= 3</code>.
+ * A250304 Four-column array read by rows: <code>T(n,k) =</code> the coefficient of <code>x^k</code> in the expanded polynomial <code>x^3 + (x+1)^3 + ... + (x+n-1)^3,</code> for <code>0 &lt;= k &lt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A250304 extends LinearRecurrence {

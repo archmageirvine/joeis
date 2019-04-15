@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010331 Numbers that are expressible as C(m,5) + C(n,5) in at least 2 ways.
+ * A010331 Numbers that are expressible as C(m,5) <code>+ C(n,5)</code> in at least 2 ways.
  * @author Sean A. Irvine
  */
 public class A010331 implements Sequence {

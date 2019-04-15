@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165618 Binomial(n+8,8)-1.
+ * A165618 <code>Binomial(n+8</code>,8)-1.
  * @author Sean A. Irvine
  */
 public class A165618 extends LinearRecurrence {

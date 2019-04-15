@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140404 <code>a(n) =</code> binomial(n+5, <code>5)*7^n</code>.
+ * A140404 <code>a(n) = binomial(n+5, 5)*7^n</code>.
  * @author Sean A. Irvine
  */
 public class A140404 extends LinearRecurrence {

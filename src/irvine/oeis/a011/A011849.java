@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011849 <code>a(n) =</code> floor(binomial(n,3)/3).
+ * A011849 <code>a(n) = floor(binomial(n,3)/3)</code>.
  * @author Sean A. Irvine
  */
 public class A011849 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A272333 Values of Fibonacci(n+1) that divides <code>n!</code>.
+ * A272333 Values of <code>Fibonacci(n+1)</code> that divides <code>n!</code>.
  * @author Georg Fischer
  */
 public class A272333 extends FiniteSequence {

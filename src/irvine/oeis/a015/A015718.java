@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
 /**
- * A015718 Triangular array T given by rows: T(n,k) = number of partitions of n into distinct parts, none of which is <code>k (1&lt;=k&lt;=n)</code>.
+ * A015718 Triangular array T given by rows: <code>T(n,k) =</code> number of partitions of n into distinct parts, none of which is <code>k (1&lt;=k&lt;=n)</code>.
  * @author Sean A. Irvine
  */
 public class A015718 extends A000009 {

@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085697 <code>a(n) =</code> T(n+2)^2, where T(n) = tribonacci numbers (A000073).
+ * A085697 <code>a(n) = T(n+2)^2,</code> where <code>T(n) =</code> tribonacci numbers (A000073).
  * @author Sean A. Irvine
  */
 public class A085697 extends LinearRecurrence {

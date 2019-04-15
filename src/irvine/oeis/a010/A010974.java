@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010974 <code>a(n) =</code> binomial(n,21).
+ * A010974 <code>a(n) = binomial(n,21)</code>.
  * @author Sean A. Irvine
  */
 public class A010974 implements Sequence {

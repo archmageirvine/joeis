@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A271317 Fibonacci(n) divides the n-th primorial.
+ * A271317 <code>Fibonacci(n)</code> divides the n-th primorial.
  * @author Georg Fischer
  */
 public class A271317 extends FiniteSequence {

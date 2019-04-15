@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a214.A214568;
 
 /**
- * A228601 Triangle read by rows: T(n,k) is the number of trees with n vertices and having k distinct rootings <code>(1 &lt;= k &lt;= n)</code>.
+ * A228601 Triangle read by rows: <code>T(n,k)</code> is the number of trees with n vertices and having k distinct rootings <code>(1 &lt;= k &lt;= n)</code>.
  * @author Sean A. Irvine
  */
 public class A228601 extends A214568 {

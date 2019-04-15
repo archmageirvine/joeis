@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120478 Binomial(n+6,5)-binomial(n,5).
+ * A120478 <code>Binomial(n+6,5)-binomial(n,5)</code>.
  * @author Sean A. Irvine
  */
 public class A120478 extends LinearRecurrence {

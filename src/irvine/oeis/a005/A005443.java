@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005443 <code>a(n) = n! *</code> Fibonacci(n).
+ * A005443 <code>a(n) = n! * Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A005443 extends A000045 {

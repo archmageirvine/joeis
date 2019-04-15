@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123290 Number of distinct binomial(n,2)-tuples of zeros and ones that are obtained as the collection of all 2 X 2 minor determinants of <code>a 2</code> X n matrix over GF(2).
+ * A123290 Number of distinct <code>binomial(n</code>,2)-tuples of zeros and ones that are obtained as the collection of all 2 X 2 minor determinants of <code>a 2</code> X n matrix over GF(2).
  * @author Sean A. Irvine
  */
 public class A123290 extends LinearRecurrence {

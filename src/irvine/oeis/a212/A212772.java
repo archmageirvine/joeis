@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212772 Floor((n+1)*(n-3)*(n-4)/12).
+ * A212772 <code>Floor((n+1)*(n-3)*(n-4)/12)</code>.
  * @author Sean A. Irvine
  */
 public class A212772 extends LinearRecurrence {

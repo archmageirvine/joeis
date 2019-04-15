@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247613 <code>a(n) =</code> Sum_{k=0..8} binomial(16,k)*binomial(n,k).
+ * A247613 <code>a(n) =</code> Sum_{k=0..8} <code>binomial(16,k)*binomial(n,k)</code>.
  * @author Sean A. Irvine
  */
 public class A247613 extends LinearRecurrence {

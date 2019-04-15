@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011847 Triangle of numbers read by rows: T(n,k) <code>= floor(</code> C(n,k)/(k+1) ), where <code>k=0..n-1</code> and <code>n &gt;= 1</code>.
+ * A011847 Triangle of numbers read by rows: <code>T(n,k) = floor( C(n,k)/(k+1) ),</code> where <code>k=0..n-1</code> and <code>n &gt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A011847 implements Sequence {

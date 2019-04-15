@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156561 Floor(Fibonacci(2n+1)/9).
+ * A156561 <code>Floor(Fibonacci(2n+1)/9)</code>.
  * @author Sean A. Irvine
  */
 public class A156561 extends LinearRecurrence {

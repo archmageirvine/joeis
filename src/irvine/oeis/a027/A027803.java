@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027803 <code>a(n) =</code> 35*(n+1)*binomial(n+4, <code>7)/4</code>.
+ * A027803 <code>a(n) = 35*(n+1)*binomial(n+4, 7)/4</code>.
  * @author Sean A. Irvine
  */
 public class A027803 extends LinearRecurrence {

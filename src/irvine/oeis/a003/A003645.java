@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A003645 <code>2^n *</code> C(n+1), where C(n) = A000108(n) Catalan numbers.
+ * A003645 <code>2^n * C(n+1),</code> where <code>C(n) =</code> A000108(n) Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A003645 extends A000108 {

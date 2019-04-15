@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008860 <code>a(n) =</code> Sum_{k=0..7} binomial(n,k).
+ * A008860 <code>a(n) =</code> Sum_{k=0..7} <code>binomial(n,k)</code>.
  * @author Sean A. Irvine
  */
 public class A008860 implements Sequence {

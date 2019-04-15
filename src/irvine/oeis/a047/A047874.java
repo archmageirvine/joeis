@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A047874 Triangle of numbers T(n,k) = number of permutations of <code>(1,2,...,n)</code> with longest increasing subsequence of length <code>k (1&lt;=k&lt;=n)</code>.
+ * A047874 Triangle of numbers <code>T(n,k) =</code> number of permutations of <code>(1,2,...,n)</code> with longest increasing subsequence of length <code>k (1&lt;=k&lt;=n)</code>.
  * @author Sean A. Irvine
  */
 public class A047874 implements Sequence {

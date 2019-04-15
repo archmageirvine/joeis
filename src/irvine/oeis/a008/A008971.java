@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008971 Triangle read by rows: T(n,k) is the number of permutations of <code>[n]</code> with k increasing runs of length at least 2.
+ * A008971 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of <code>[n]</code> with k increasing runs of length at least 2.
  * @author Sean A. Irvine
  */
 public class A008971 extends MemoryFunction2<Integer, Z> implements Sequence {

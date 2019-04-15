@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111385 <code>a(n) =</code> binomial(n,4) - binomial(floor(n/2),4) - binomial(ceiling(n/2),4).
+ * A111385 <code>a(n) = binomial(n,4) - binomial(floor(n/2),4) -</code> binomial(ceiling(n/2),4).
  * @author Sean A. Irvine
  */
 public class A111385 extends LinearRecurrence {

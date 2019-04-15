@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011853 [ binomial(n,7)/7 ].
+ * A011853 <code>[ binomial(n,7)/7 ]</code>.
  * @author Sean A. Irvine
  */
 public class A011853 implements Sequence {

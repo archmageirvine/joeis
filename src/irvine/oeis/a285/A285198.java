@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A285198 Binomial coefficients C(9,n).
+ * A285198 Binomial coefficients <code>C(9,n)</code>.
  * @author Georg Fischer
  */
 public class A285198 extends FiniteSequence {

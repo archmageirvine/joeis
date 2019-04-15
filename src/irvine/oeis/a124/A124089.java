@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124089 Binomial(n,6)-1.
+ * A124089 <code>Binomial(n,6)-1</code>.
  * @author Sean A. Irvine
  */
 public class A124089 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200993 Triangular numbers, T(m), that are two-thirds of another triangular number; T(m) such that 3*T(m) = 2*T(k) for some k.
+ * A200993 Triangular numbers, T(m), that are two-thirds of another triangular number; T(m) such that 3*T(m) <code>= 2*T(k)</code> for some k.
  * @author Sean A. Irvine
  */
 public class A200993 extends LinearRecurrence {

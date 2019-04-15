@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259451 <code>a(n) =</code> n^2*Fibonacci(n).
+ * A259451 <code>a(n) = n^2*Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A259451 extends LinearRecurrence {

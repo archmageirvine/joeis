@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A271168 Numbers n such that Fibonacci(n) divides p! where p is n-th prime.
+ * A271168 Numbers n such that <code>Fibonacci(n)</code> divides p! where p is n-th prime.
  * @author Georg Fischer
  */
 public class A271168 extends FiniteSequence {

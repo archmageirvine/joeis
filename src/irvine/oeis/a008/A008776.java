@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008776 Pisot sequences E(2,6), L(2,6), P(2,6), T(2,6).
+ * A008776 Pisot sequences E(2,6), L(2,6), P(2,6), <code>T(2,6)</code>.
  * @author Sean A. Irvine
  */
 public class A008776 implements Sequence {

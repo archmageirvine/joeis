@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003583 <code>a(n) = (n+2)*2^(2*n-1) -</code> (n/2)*binomial(2*n,n).
+ * A003583 <code>a(n) = (n+2)*2^(2*n-1) - (n/2)*binomial(2*n,n)</code>.
  * @author Sean A. Irvine
  */
 public class A003583 implements Sequence {

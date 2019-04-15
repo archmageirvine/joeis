@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093130 Third binomial transform of Fibonacci(3n).
+ * A093130 Third binomial transform of <code>Fibonacci(3n)</code>.
  * @author Sean A. Irvine
  */
 public class A093130 extends LinearRecurrence {

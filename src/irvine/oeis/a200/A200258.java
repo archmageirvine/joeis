@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200258 <code>a(n) =</code> Fibonacci(8n+7) mod Fibonacci(8n+1).
+ * A200258 <code>a(n) = Fibonacci(8n+7) mod Fibonacci(8n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A200258 extends LinearRecurrence {

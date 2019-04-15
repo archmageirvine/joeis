@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A002503 Numbers n such that binomial(2n,n) is divisible by <code>(n+1)^2</code>.
+ * A002503 Numbers n such that <code>binomial(2n,n)</code> is divisible by <code>(n+1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A002503 extends A000108 {

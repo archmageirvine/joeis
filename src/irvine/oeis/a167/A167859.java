@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167859 <code>a(n) =</code> 4^n*Sum_{ <code>k=0..n }</code> ((binomial(2*k,k))^2)/4^k.
+ * A167859 <code>a(n) =</code> 4^n*Sum_{ <code>k=0..n } ((binomial(2*k,k))^2)/4^k</code>.
  * @author Sean A. Irvine
  */
 public class A167859 implements Sequence {

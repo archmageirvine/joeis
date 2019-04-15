@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011848 <code>a(n) =</code> floor(binomial(n,2)/2).
+ * A011848 <code>a(n) = floor(binomial(n,2)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A011848 implements Sequence {

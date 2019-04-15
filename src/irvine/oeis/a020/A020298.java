@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A020298.
+ * A020298 Strong pseudoprimes to base 72.
  * @author Sean A. Irvine
  */
 public class A020298 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020118.
+ * A020118 Ceiling of GAMMA(n+1/8)/GAMMA(1/8).
  * @author Sean A. Irvine
  */
 public class A020118 implements Sequence {

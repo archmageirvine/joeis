@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020007.
+ * A020007 Nearest integer to GAMMA(n+8/11)/GAMMA(8/11).
  * @author Sean A. Irvine
  */
 public class A020007 implements Sequence {

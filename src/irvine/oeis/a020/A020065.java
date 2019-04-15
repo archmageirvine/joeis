@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020065.
+ * A020065 Integer part of GAMMA(n+7/9)/GAMMA(7/9).
  * @author Sean A. Irvine
  */
 public class A020065 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020058.
+ * A020058 Integer part of GAMMA(n+2/11)/GAMMA(2/11).
  * @author Sean A. Irvine
  */
 public class A020058 implements Sequence {

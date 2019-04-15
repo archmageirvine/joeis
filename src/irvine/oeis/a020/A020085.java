@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020085.
+ * A020085 Integer part of Gamma(n + 1/5)/Gamma(1/5).
  * @author Sean A. Irvine
  */
 public class A020085 implements Sequence {

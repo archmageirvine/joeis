@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020045.
+ * A020045 Nearest integer to Gamma(n + 1/2)/Gamma(1/2).
  * @author Sean A. Irvine
  */
 public class A020045 implements Sequence {

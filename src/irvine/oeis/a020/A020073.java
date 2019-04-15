@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020073.
+ * A020073 Integer part of GAMMA(n+1/8)/GAMMA(1/8).
  * @author Sean A. Irvine
  */
 public class A020073 implements Sequence {

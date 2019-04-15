@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020154.
+ * A020154 Pseudoprimes to base 26.
  * @author Sean A. Irvine
  */
 public class A020154 implements Sequence {

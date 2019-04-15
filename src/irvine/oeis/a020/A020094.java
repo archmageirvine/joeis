@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020094.
+ * A020094 Ceiling of GAMMA(n+1/12)/GAMMA(1/12).
  * @author Sean A. Irvine
  */
 public class A020094 implements Sequence {

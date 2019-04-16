@@ -43,7 +43,8 @@ public final class English {
     }
     // for very large numbers just exit with a numerical string
     if (x > 19999999) {
-      return b.append(String.valueOf(x)).toString();
+      return b.append(toEnglish(x / 1000000)).append(" million ").append(toEnglish(x % 1000000)).toString();
+      //return b.append(String.valueOf(x)).toString();
     }
     // x>=20 && x <= 19000000
     if (x >= 1000000) {

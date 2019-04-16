@@ -12,7 +12,7 @@ public class A001167 implements Sequence {
 
   private int mN = 0;
 
-  private int wordCount(final int v) {
+  static int wordCount(final int v) {
     final String eng = English.toEnglish(v);
     int c = 1;
     for (int k = 3; k < eng.length(); ++k) {
@@ -28,7 +28,10 @@ public class A001167 implements Sequence {
   public Z next() {
     ++mN;
     int v = 0;
-    while (wordCount(++v) != mN) {
+    while (++v > 0 && wordCount(v) != mN) {
+    }
+    if (v < 0) {
+      throw new UnsupportedOperationException();
     }
     //System.out.println(mN + " " + English.toEnglish(v));
     return Z.valueOf(v);

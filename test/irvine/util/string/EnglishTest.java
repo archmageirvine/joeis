@@ -127,7 +127,7 @@ public class EnglishTest extends TestCase {
     assertEquals("one million one thousand and thirty", English.toEnglish(1001030));
     assertEquals("one million two hundred and seventeen thousand three hundred and fourteen", English.toEnglish(1217314));
     assertEquals("nineteen million nine hundred and ninety-nine thousand nine hundred and ninety-nine", English.toEnglish(19999999));
-    assertEquals("20000000", English.toEnglish(20000000));
+    assertEquals("twenty-one million one hundred and twenty-one thousand one hundred and twenty-one", English.toEnglish(21121121));
 
     for (int i = 1; i < 1000; ++i) {
       assertEquals("negative " + English.toEnglish(i), English.toEnglish(-i));

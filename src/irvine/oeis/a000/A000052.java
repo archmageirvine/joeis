@@ -1,11 +1,11 @@
 package irvine.oeis.a000;
 
+import java.util.Map;
+import java.util.TreeMap;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.string.English;
-
-import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * A000052 1-digit numbers arranged in alphabetical order, then the 2-digit numbers arranged in alphabetical order, then the 3-digit numbers, etc.
@@ -24,7 +24,7 @@ public class A000052 implements Sequence {
         throw new UnsupportedOperationException();
       }
       for (int k = mLow; k < mHigh; ++k) {
-        mMap.put(English.toEnglish(k), k);
+        mMap.put(English.toRawEnglish(k), k);
       }
       mLow = mHigh;
       mHigh *= 10;

@@ -95,7 +95,7 @@ public class A094824 implements Sequence {
       for (long b = a; b < lim; ++b) {
         final int c = countLongestCommonSubsequence(mN, a, b);
         if (c > bestCount) {
-          System.out.println(Long.toBinaryString(a) + " " + Long.toBinaryString(b) + " " + bestCount);
+          //System.out.println(Long.toBinaryString(a) + " " + Long.toBinaryString(b) + " " + bestCount);
           bestCount = c;
         }
       }

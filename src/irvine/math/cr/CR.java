@@ -690,6 +690,15 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the nearest integer to this number.
+   * @param precision precision to consider
+   * @return rounded value
+   */
+  public Z round(final int precision) {
+    return abs().subtract(CR.HALF).ceil(precision).multiply(signum());
+  }
+
+  /**
    * Return a Z which differs by less than one from the computable real.
    * @return integer value
    */

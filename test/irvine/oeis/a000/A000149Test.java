@@ -1,10 +1,15 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.AbstractShortSequenceTest;
+import irvine.oeis.AbstractSequenceTest;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A000149Test extends AbstractShortSequenceTest {
+public class A000149Test extends AbstractSequenceTest {
+
+  @Override
+  protected int maxTerms() {
+    return 10;
+  }
 }

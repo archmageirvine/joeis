@@ -20,6 +20,6 @@ public class A000329 implements Sequence {
     } else {
       mTanValue = UnaryCRFunction.TAN.execute(mTanValue);
     }
-    return mTanValue.toZ();
+    return mTanValue.round(32);
   }  
 }

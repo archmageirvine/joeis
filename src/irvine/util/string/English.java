@@ -23,7 +23,7 @@ public final class English {
 
   /**
    * Return an English string representing the supplied integer value. For
-   * numbers in the range -20000000 &lt; x &lt; 20000000 the returned string will be a
+   * numbers in the range -1000000000 &lt; x &lt; 1000000000 the returned string will be a
    * textual representation of the number. For larger values the supplied int is
    * returned as a numerical string.
    *
@@ -41,12 +41,13 @@ public final class English {
       b.append(M_DIGITS[x]);
       return b.toString();
     }
-    // for very large numbers just exit with a numerical string
-    if (x > 19999999) {
-      return b.append(toEnglish(x / 1000000)).append(" million ").append(toEnglish(x % 1000000)).toString();
-      //return b.append(String.valueOf(x)).toString();
+    if (x >= 1000000000) {
+      throw new UnsupportedOperationException();
     }
-    // x>=20 && x <= 19000000
+    if (x >= 20000000) {
+      return b.append(toEnglish(x / 1000000)).append(" million ").append(toEnglish(x % 1000000)).toString();
+    }
+    // x>=20 && x < 20000000
     if (x >= 1000000) {
       final int d = x / 1000000;
       x %= 1000000;

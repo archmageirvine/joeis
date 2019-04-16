@@ -1,5 +1,8 @@
 package irvine.oeis.a019;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -9,125 +12,62 @@ import irvine.oeis.Sequence;
  */
 public class A019989 implements Sequence {
 
-//  /*
-//   a(0)=true,
-//   b(0)=c(0)=A(0)=B(0)=C(0)=false,
-//   a(n)=a(m) OR C(m) OR B(m),
-//   b(n)= b(m) OR A(m) OR C(m),
-//   c(n)= c(m) OR B(m) OR A(m),
-//   A(n)= A(m) OR b(m) OR c(m),
-//   B(n)= B(m) OR c(m) OR a(m),
-//   C(n)= C(m) OR a(m) OR b(m),
-//   where m = [ (n+1)/3 ]; sequence gives n such that a(2n) is true
-//   */
-//
-//  // todo not yet working -- should this be XOR? -- that doesn't work either
-//  // also tried some combs of || and &&
-//  // maybe big vars are supposed to be complements? -- nope -- or least not in a simple way, also not a(0)
-//
-//
-//  private final MemoryFunction1<Boolean> mA = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return true;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mBigB.get(m)) {++c;} if (mBigC.get(m)) {++c;}
-//      return c == 1;
-////      final Boolean res = n == 0 ? Boolean.TRUE : Boolean.valueOf(get(m) || mBigB.get(m) || mBigC.get(m));
-////      System.out.println(n + " " + res);
-////      return res;
-//    }
-//  };
-//
-//  private final MemoryFunction1<Boolean> mB = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return false;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mBigA.get(m)) {++c;} if (mBigC.get(m)) {++c;}
-//      return c == 1;
-////      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigC.get(m));
-//    }
-//  };
-//
-//  private final MemoryFunction1<Boolean> mC = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return false;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mBigA.get(m)) {++c;} if (mBigB.get(m)) {++c;}
-//      return c == 1;
-////      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mBigA.get(m) || mBigB.get(m));
-//    }
-//  };
-//
-//  private final MemoryFunction1<Boolean> mBigA = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return false;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mB.get(m)) {++c;} if (mC.get(m)) {++c;}
-//      return c == 1;
-////      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mB.get(m) || mC.get(m));
-//    }
-//  };
-//
-//  private final MemoryFunction1<Boolean> mBigB = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return false;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mA.get(m)) {++c;} if (mC.get(m)) {++c;}
-//      return c == 1;
-////      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mC.get(m));
-//    }
-//  };
-//
-//  private final MemoryFunction1<Boolean> mBigC = new MemoryFunction1<Boolean>() {
-//    @Override
-//    protected Boolean compute(final int n) {
-//      if (n == 0) {
-//        return false;
-//      }
-//      final int m = (n + 1) / 3;
-//      int c = 0;
-//      if (get(m)) {++c;} if (mA.get(m)) {++c;} if (mB.get(m)) {++c;}
-//      return c == 1;
-////      return n == 0 ? Boolean.FALSE : Boolean.valueOf(get(m) || mA.get(m) || mB.get(m));
-//    }
-//  };
-//
-//  private int mN = 0;
-//
-//  @Override
-//  public Z next() {
-//    while (true) {
-//      System.out.println(mA.get(mN) + " " + mB.get(mN) + " " + mC.get(mN) + " " + mBigA.get(mN) + " " + mBigB.get(mN) + " " + mBigC.get(mN));
-//      ++mN;
-//      //mN += 2;
-//      if (mA.get(mN)) {
-//        return Z.valueOf(mN / 2);
-//      }
-//    }
-//  }
+  private Set<Z> mA = new TreeSet<>();
+  private Set<Z> mB = new TreeSet<>();
+  private Set<Z> mC = new TreeSet<>();
+  private Set<Z> mBigA = new TreeSet<>();
+  private Set<Z> mBigB = new TreeSet<>();
+  private Set<Z> mBigC = new TreeSet<>();
+  private Z mN = Z.ZERO;
+
+  {
+    step();
+  }
+
+  private Set<Z> union(final Set<Z> a, final Set<Z> b, final Set<Z> c) {
+    final Set<Z> res = new TreeSet<>();
+    for (final Z e : a) {
+      res.add(e.multiply(3));
+    }
+    for (final Z e : b) {
+      res.add(e.multiply(3).subtract(1));
+    }
+    for (final Z e : c) {
+      res.add(e.multiply(3).add(1));
+    }
+    return res;
+  }
+
+  private void step() {
+    final Set<Z> newA = union(mA, mBigB, mBigC);
+    final Set<Z> newB = union(mB, mBigC, mBigA);
+    final Set<Z> newC = union(mC, mBigA, mBigB);
+    final Set<Z> newBigA = union(mBigA, mC, mB);
+    final Set<Z> newBigB = union(mBigB, mA, mC);
+    final Set<Z> newBigC = union(mBigC, mB, mA);
+    newBigC.add(Z.ONE);
+    mA = newA;
+    mB = newB;
+    mC = newC;
+    mBigA = newBigA;
+    mBigB = newBigB;
+    mBigC = newBigC;
+  }
+
+  protected boolean accept(final Z n, final Set<Z> a, final Set<Z> b, final Set<Z> c) {
+    return a.contains(n);
+  }
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    while (true) {
+      mN = mN.add(2);
+      if (!mA.contains(mN) && !mB.contains(mN) && !mC.contains(mN)) {
+        step();
+      }
+      if (accept(mN, mA, mB, mC)) {
+        return mN.divide2();
+      }
+    }
   }
 }

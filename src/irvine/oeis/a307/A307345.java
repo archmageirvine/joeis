@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307345 Numbers k such that every prime p &lt;= sqrt(k) divides k*(k-1).
+ * A307345 Numbers k such that every prime p <code>&lt;= sqrt(k)</code> divides <code>k*(k-1)</code>.
  * @author Georg Fischer
  */
 public class A307345 extends FiniteSequence {

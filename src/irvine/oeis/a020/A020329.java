@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020329.
+ * A020329 Consider integers z such C(z,4) <code>= C(x,4) +</code> C(y,4), <code>x &gt;=</code> y <code>&gt;= 4,</code> is solvable. Sequence gives values of z.
  * @author Sean A. Irvine
  */
 public class A020329 implements Sequence {

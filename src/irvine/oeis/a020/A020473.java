@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020473.
+ * A020473 Egyptian fractions: number of partitions of 1 into reciprocals of positive integers <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A020473 implements Sequence {

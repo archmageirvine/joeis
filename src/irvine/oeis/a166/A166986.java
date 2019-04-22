@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A166986 <code>a(n) =</code> 2*floor((n+2)/log(2)) <code>- 4 =</code> 2*Sum_{i=2,..,n+1}(A022934(i)).
+ * A166986 <code>a(n) =</code> 2*floor((n+2)/log(2)) <code>- 4</code>.
  * @author Sean A. Irvine
  */
 public class A166986 implements Sequence {

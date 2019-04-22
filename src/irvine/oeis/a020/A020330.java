@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020330.
+ * A020330 Numbers whose base 2 representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
 public class A020330 implements Sequence {

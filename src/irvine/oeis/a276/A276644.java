@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276644 A self-composition of the repunits: A(x) = G(G(x)), where G(x) = g.f. of A002275.
+ * A276644 Self-composition of the repunits; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A002275.
  * @author Sean A. Irvine
  */
 public class A276644 extends LinearRecurrence {

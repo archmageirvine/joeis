@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020465.
+ * A020465 Primes that contain digits 4 and 7 only.
  * @author Sean A. Irvine
  */
 public class A020465 implements Sequence {

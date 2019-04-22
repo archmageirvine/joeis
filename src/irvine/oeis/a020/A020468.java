@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020468.
+ * A020468 Primes that contain digits 5 and 9 only.
  * @author Sean A. Irvine
  */
 public class A020468 implements Sequence {

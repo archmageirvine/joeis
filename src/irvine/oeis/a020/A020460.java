@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020460.
+ * A020460 Primes that contain digits 2 and 9 only.
  * @author Sean A. Irvine
  */
 public class A020460 implements Sequence {

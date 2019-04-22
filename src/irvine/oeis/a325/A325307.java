@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a036.A036844;
 
 /**
- * A325307.
+ * A325307 allocated for Sven Kunze.
  * @author Sean A. Irvine
  */
 public class A325307 extends A036844 {

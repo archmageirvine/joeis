@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020349.
+ * A020349 Numbers n such that continued fraction for <code>sqrt(n)</code> has period 10.
  * @author Sean A. Irvine
  */
 public class A020349 implements Sequence {

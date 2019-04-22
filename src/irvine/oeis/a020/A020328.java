@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020328.
+ * A020328 Number of partitions of <code>1/n</code> into 5 reciprocals of positive integers.
  * @author Sean A. Irvine
  */
 public class A020328 implements Sequence {

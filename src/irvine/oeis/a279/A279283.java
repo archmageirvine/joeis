@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279283 A self-composition of the tetrahedral (or triangular pyramidal) numbers: A(x) = G(G(x)), where G(x) = g.f. of A000292.
+ * A279283 Self-composition of the tetrahedral (or triangular pyramidal) numbers; g.f.: A(x) = G(G(x)), where G(x) = g.f. of A000292.
  * @author Sean A. Irvine
  */
 public class A279283 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020374.
+ * A020374 Numbers n such that continued fraction for <code>sqrt(n)</code> has period 35.
  * @author Sean A. Irvine
  */
 public class A020374 implements Sequence {

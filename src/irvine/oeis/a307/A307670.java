@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A307670.
+ * A307670 allocated for Eric W. Weisstein.
  * @author Sean A. Irvine
  */
 public class A307670 implements Sequence {

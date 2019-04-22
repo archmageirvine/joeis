@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 /**
- * A020331.
+ * A020331 Numbers n such that base 3 representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
 public class A020331 extends A020338 {

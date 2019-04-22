@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036844.
+ * A036844 Numbers n such that <code>n /</code> sopfr(n) is an integer, where sopfr = sum-of-prime-factors, A001414.
  * @author Sean A. Irvine
  */
 public class A036844 implements Sequence {

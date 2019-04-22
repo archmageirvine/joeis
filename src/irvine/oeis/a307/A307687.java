@@ -8,7 +8,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A307687.
+ * A307687 allocated for Robert Israel.
  * @author Sean A. Irvine
  */
 public class A307687 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012622 exp(arcsinh(x)*arctan(x))=1+2/2!*x^2-2/6!*x^6+56/8!*x^8-2358/10!*x^10...
+ * A012622 Expansion of e.g.f. exp(arcsinh(x)*arctan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012622 implements Sequence {

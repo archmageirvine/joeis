@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268100 <code>a(n) = 2^(n mod 2)*5*10^floor(n/2)</code>.
+ * A268100 <code>a(n) = 2^((n-1) mod 2)*5*10^floor((n-1)/2)</code>.
  * @author Georg Fischer
  */
 public class A268100 extends LinearRecurrence {

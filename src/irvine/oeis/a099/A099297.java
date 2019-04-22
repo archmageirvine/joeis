@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A099297.
+ * A099297 Number of times the digit 6 appears in the first <code>10^n</code> digits of Pi.
  * @author Sean A. Irvine
  */
 public class A099297 extends A000796 {

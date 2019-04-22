@@ -1,7 +1,7 @@
 package irvine.oeis.a020;
 
 /**
- * A020332.
+ * A020332 Numbers n such that base 4 representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
 public class A020332 extends A020338 {

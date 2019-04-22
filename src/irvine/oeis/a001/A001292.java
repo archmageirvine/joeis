@@ -1,5 +1,7 @@
 package irvine.oeis.a001;
 
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -9,21 +11,25 @@ import irvine.oeis.Sequence;
  */
 public class A001292 implements Sequence {
 
-  private long mN = 0;
+  private final TreeSet<Z> mQ = new TreeSet<>();
+  private long mN = 1;
   private long mS = 0;
 
   @Override
   public Z next() {
-    if (mS >= mN) {
+    if (mQ.isEmpty()) {
+      while (mS < mN) {
+        final StringBuilder sb = new StringBuilder();
+        ++mS;
+        for (long k = 0, j = mS; k < mN; ++k, ++j) {
+          sb.append(j);
+          j %= mN;
+        }
+        mQ.add(new Z(sb));
+      }
       ++mN;
       mS = 0;
     }
-    final StringBuilder sb = new StringBuilder();
-    ++mS;
-    for (long k = 0, j = mS; k < mN; ++k, ++j) {
-      sb.append(j);
-      j %= mN;
-    }
-    return new Z(sb);
+    return mQ.pollFirst();
   }
 }

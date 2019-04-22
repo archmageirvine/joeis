@@ -18,7 +18,7 @@ public class A000965 implements Sequence {
   private Z mF = Z.ONE;
 
   protected Z select(final Q n) {
-    return n.divide(mN + 1).num();
+    return n.num();
   }
 
   @Override

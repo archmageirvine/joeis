@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A008300 implements Sequence {
 
-  private int mN = 0;
+  private int mN = -1;
   private int mM = 0;
 
   // Direct implementation extracting coefficient [x_1^m ... x_n^m y_1^m ... y_n^m]

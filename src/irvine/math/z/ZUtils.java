@@ -223,13 +223,24 @@ public final class ZUtils {
    * @param n number to get syndrome of
    * @return the syndrome
    */
-  public static String syndrome(final Z n) {
-    final String s = n.toString();
+  public static String syndrome(final String s) {
     final int[] c = new int[10];
     for (int k = 0; k < s.length(); ++k) {
       c[s.charAt(k) - '0']++;
     }
     return Arrays.toString(c);
+  }
+
+  /**
+   * Return a string that has the same value independent of the permutation
+   * of the digits in the number.  That is, all permutations of the same
+   * digits will have the same syndrome.
+   *
+   * @param n number to get syndrome of
+   * @return the syndrome
+   */
+  public static String syndrome(final Z n) {
+    return syndrome(n.toString());
   }
 
   /**

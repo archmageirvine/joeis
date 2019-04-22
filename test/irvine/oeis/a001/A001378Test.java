@@ -17,6 +17,6 @@ public class A001378Test extends AbstractSequenceTest {
     while ((t = a.next()) != null) {
       sum = sum.add(t);
     }
-    assertEquals(Z.valueOf(512512247686436888L), sum);
+    assertEquals(Z.valueOf(512391215683416888L), sum);
   }
 }

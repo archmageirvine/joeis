@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A020329 implements Sequence {
 
-private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private final TreeSet<Z> mC = new TreeSet<>();
   private long mN = 3;
 

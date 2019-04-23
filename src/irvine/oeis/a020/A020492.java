@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020492.
+ * A020492 Balanced numbers: numbers n such that phi(n) (A000010) divides sigma(n) (A000203).
  * @author Sean A. Irvine
  */
 public class A020492 implements Sequence {

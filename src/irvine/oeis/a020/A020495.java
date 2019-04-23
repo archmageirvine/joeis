@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020495.
+ * A020495 Neither square nor square + prime.
  * @author Sean A. Irvine
  */
 public class A020495 implements Sequence {

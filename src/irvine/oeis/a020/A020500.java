@@ -5,7 +5,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A020500.
+ * A020500 Cyclotomic polynomials at <code>x=1</code>.
  * @author Sean A. Irvine
  */
 public class A020500 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020493.
+ * A020493 Numbers n such that d(n) (number of divisors) divides phi(n) (Euler function) divides sigma(n) (sum of divisors).
  * @author Sean A. Irvine
  */
 public class A020493 implements Sequence {

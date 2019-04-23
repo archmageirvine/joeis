@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A298036.
+ * A298036 Coordination sequence of Dual(4.6.12) tiling with respect to a 12-valent node.
  * @author Sean A. Irvine
  */
 public class A298036 implements Sequence {

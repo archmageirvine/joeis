@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030278.
+ * A030278 COMPOSE primes with primes.
  * @author Sean A. Irvine
  */
 public class A030278 extends SkipSequence {

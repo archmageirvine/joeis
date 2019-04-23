@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020486.
+ * A020486 Average of squares of divisors is an integer: sigma_0(n) divides sigma_2(n).
  * @author Sean A. Irvine
  */
 public class A020486 implements Sequence {

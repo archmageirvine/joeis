@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020477.
+ * A020477 Sum of divisors of n is a cube.
  * @author Sean A. Irvine
  */
 public class A020477 implements Sequence {

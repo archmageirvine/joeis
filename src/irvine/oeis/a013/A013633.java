@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013633 nextprime(n) - prevprime(n).
+ * A013633 <code>nextprime(n) - prevprime(n)</code>.
  * @author Sean A. Irvine
  */
 public class A013633 implements Sequence {

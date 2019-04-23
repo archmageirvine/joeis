@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020480.
+ * A020480 Primes p which divide no f(q)-1 or f(q)+1 for prime q &lt; p, where f(q) is the product of all primes <code>&lt;=</code> q.
  * @author Sean A. Irvine
  */
 public class A020480 implements Sequence {

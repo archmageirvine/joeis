@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002373;
 
 /**
- * A020481.
+ * A020481 Least p with p, q both prime, p+q <code>= 2n</code>.
  * @author Sean A. Irvine
  */
 public class A020481 extends PrependSequence {

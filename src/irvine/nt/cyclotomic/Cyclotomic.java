@@ -47,8 +47,11 @@ public final class Cyclotomic {
    * @exception ArithmeticException if n is less than 1
    */
   public static Z cyclotomic(int n, int x) {
-    if (n < 1) {
+    if (n < 0) {
       throw new ArithmeticException("n must be positive");
+    }
+    if (n == 0) {
+      return Z.valueOf(x);
     }
     if (n == 1) {
       return Z.valueOf(x).subtract(Z.ONE);

@@ -14,7 +14,7 @@ public class A019321 implements Sequence {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.THREE : Cyclotomic.cyclotomic(mN, 3);
+    return Cyclotomic.cyclotomic(++mN, 3);
   }
 }
 

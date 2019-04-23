@@ -27,7 +27,7 @@ public final class Names {
   private static String protect(final String name) {
     // The order of the replacements here is important
     final String s = name.replace("&", "&amp;")
-      .replaceAll(" (([ 0-9baxnkj^*/(){}\\[\\]<>!=+.,-]|[Ff]loor\\(|mod|sqrt|[Bb]inomial\\(|[Ff]ibonacci\\(|[Ll]ucas\\(|[TC]\\(){2,})([ .;,:])", " <code>$1</code>$3")
+      .replaceAll(" (([ 0-9baxnkj^*/(){}\\[\\]<>!=+.,-]|[Ff]loor\\(|mod|sqrt|nextprime|prevprime|[Bb]inomial\\(|[Ff]ibonacci\\(|[Ll]ucas\\(|[TC]\\(){2,})([ .;,:])", " <code>$1</code>$3")
       .replace("<", "&lt;")
       .replace(">", "&gt;")
       .replaceAll("&lt;(/?code)&gt;", "<$1>")

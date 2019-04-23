@@ -1115,4 +1115,4 @@ A019541 Number of steps from one unit vector to next in linear quantum cellular 
 A019542 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
 A019543 Number of steps from one unit vector to next in linear quantum cellular automata, insufficient detail
 A019594 Conway's "para-budding" sequence, unclear to me
-A019654 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here k=4 and sequence gives number of different solutions when N takes its maximal value, have attempt, think early 0s are actually wrong in OEIS
+A020476 Numbers n such that sum of divisors of n^3 is a cube

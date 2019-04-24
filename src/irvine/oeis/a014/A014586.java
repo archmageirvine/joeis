@@ -21,7 +21,6 @@ public class A014586 extends MemorySequence {
     for (int r = 1; r <= IntegerUtils.sqrt(n); ++r) {
       moves.add(get(n - r * r).longValueExact());
     }
-    System.out.println(n + " " + moves);
     return Z.valueOf(A006016.mex(moves));
   }
 }

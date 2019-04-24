@@ -1,15 +1,19 @@
 package irvine.oeis.a020;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.nt.cyclotomic.Cyclotomic;
+import irvine.oeis.Sequence;
 
 /**
  * A020517 9th cyclotomic polynomial evaluated at powers of 2.
  * @author Sean A. Irvine
  */
-public class A020517 extends LinearRecurrence {
+public class A020517 implements Sequence {
 
-  /** Construct the sequence. */
-  public A020517() {
-    super(new long[] {512, -584, 73}, new long[] {3, 73, 4161});
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    return Cyclotomic.cyclotomic(9, Z.ONE.shiftLeft(++mN));
   }
 }

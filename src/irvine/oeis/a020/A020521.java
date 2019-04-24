@@ -5,15 +5,15 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A020509 Cyclotomic polynomials at <code>x=-10</code>.
+ * A020521 13th cyclotomic polynomial evaluated at powers of 2.
  * @author Sean A. Irvine
  */
-public class A020509 implements Sequence {
+public class A020521 implements Sequence {
 
   private int mN = -1;
 
   @Override
   public Z next() {
-    return Cyclotomic.cyclotomic(++mN, -10);
+    return Cyclotomic.cyclotomic(13, Z.ONE.shiftLeft(++mN));
   }
 }

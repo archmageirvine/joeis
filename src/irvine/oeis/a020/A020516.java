@@ -5,15 +5,15 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A020509 Cyclotomic polynomials at <code>x=-10</code>.
+ * A020516 Sum of n-th powers of divisors of 64.
  * @author Sean A. Irvine
  */
-public class A020509 implements Sequence {
+public class A020516 implements Sequence {
 
   private int mN = -1;
 
   @Override
   public Z next() {
-    return Cyclotomic.cyclotomic(++mN, -10);
+    return Cyclotomic.cyclotomic(7, Z.ONE.shiftLeft(++mN));
   }
 }

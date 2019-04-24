@@ -220,7 +220,7 @@ public final class ZUtils {
    * of the digits in the number.  That is, all permutations of the same
    * digits will have the same syndrome.
    *
-   * @param n number to get syndrome of
+   * @param s string to get syndrome of
    * @return the syndrome
    */
   public static String syndrome(final String s) {

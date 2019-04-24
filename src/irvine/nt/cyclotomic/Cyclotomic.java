@@ -40,26 +40,25 @@ public final class Cyclotomic {
 
   /**
    * Compute the values of Phi_n(x).
-   *
    * @param n n value
    * @param x x value
    * @return Phi_n(x)
    * @exception ArithmeticException if n is less than 1
    */
-  public static Z cyclotomic(int n, int x) {
+  public static Z cyclotomic(int n, Z x) {
     if (n < 0) {
       throw new ArithmeticException("n must be positive");
     }
     if (n == 0) {
-      return Z.valueOf(x);
+      return x;
     }
     if (n == 1) {
-      return Z.valueOf(x).subtract(Z.ONE);
+      return x.subtract(Z.ONE);
     }
-    if (x == 0) {
+    if (Z.ZERO.equals(x)) {
       return Z.ONE;
     }
-    if (x == -1) {
+    if (Z.NEG_ONE.equals(x)) {
       if ((n & 1) == 1) {
         n <<= 1;
       } else {
@@ -68,14 +67,13 @@ public final class Cyclotomic {
       if (n == 1) {
         return Z.ZERO;
       }
-      x = 1;
+      x = Z.ONE;
     }
-    if (x == 1) {
+    if (Z.ONE.equals(x)) {
       return Z.valueOf(isPrimePower(n));
     }
     Z p = Z.ONE;
     Z q = Z.ONE;
-    final Z zx = Z.valueOf(x);
     if (n > sMobiusSize) {
       sMobiusSize = n;
       sMobius = new Mobius(n);
@@ -84,7 +82,7 @@ public final class Cyclotomic {
       if (n % i == 0) {
         final int mu = sMobius.mobiusMu(n / i);
         if (mu != 0) {
-          final Z t = zx.pow(i).subtract(Z.ONE);
+          final Z t = x.pow(i).subtract(Z.ONE);
           if (mu == 1) {
             p = p.multiply(t);
           } else {
@@ -96,6 +94,17 @@ public final class Cyclotomic {
     final Z[] qr = p.divideAndRemainder(q);
     assert qr[1].equals(Z.ZERO);
     return qr[0];
+  }
+
+  /**
+   * Compute the values of Phi_n(x).
+   * @param n n value
+   * @param x x value
+   * @return Phi_n(x)
+   * @exception ArithmeticException if n is less than 1
+   */
+  public static Z cyclotomic(int n, long x) {
+    return cyclotomic(n, Z.valueOf(x));
   }
 
   private static final CyclotomicPolynomials CYCLOTOMIC_POLYNOMIALS = new CyclotomicPolynomials();

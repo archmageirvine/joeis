@@ -12,12 +12,14 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BarSymmetricGroupCycleIndexTest.class);
+    suite.addTestSuite(BernoulliPolynomialsTest.class);
     suite.addTestSuite(CycleIndexTest.class);
     suite.addTestSuite(CycleIndexReadBigNTest.class);
     suite.addTestSuite(DigraphCycleIndexTest.class);
     suite.addTestSuite(DiscriminantTest.class);
     suite.addTestSuite(EllipticTest.class);
     suite.addTestSuite(ExtendedSymmetricGroupCycleIndexTest.class);
+    suite.addTestSuite(EulerPolynomialsTest.class);
     suite.addTestSuite(GraphCycleIndexTest.class);
     suite.addTestSuite(HararyMultiplyTest.class);
     suite.addTestSuite(IrreduciblePolynomialsTest.class);

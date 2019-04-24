@@ -55,7 +55,7 @@ public class A020342 implements Sequence {
     return false;
   }
 
-  private int[] syndrome(Z n) {
+  private int[] syndrome(final Z n) {
     final int[] s = new int[10];
     replace(s, n);
     return s;

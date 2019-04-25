@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A006704 Solution to Pellian: x such that <code>x^2 - n</code> y^2 <code>= +- 1, +- 4</code>.
+ * A006704 Solution to Pellian: x such that <code>x^2 - n y^2 = +- 1, +- 4</code>.
  * @author Sean A. Irvine
  */
 public class A006704 extends A006702 {

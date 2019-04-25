@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244055 Number of edges on each face of the Platonic solids (in the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
+ * A244055 Number of edges on each face of the Platonic solids <code>(in</code> the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
  * @author Georg Fischer
  */
 public class A244055 extends FiniteSequence {

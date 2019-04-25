@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A001037 Number of degree-n irreducible polynomials over GF(2); number of n-bead necklaces with beads of 2 colors when turning over is not allowed and with primitive period n; number of binary Lyndon words of length n.
+ * A001037 Number of degree-n irreducible polynomials over <code>GF(2)</code>; number of n-bead necklaces with beads of 2 colors when turning over is not allowed and with primitive period n; number of binary Lyndon words of length n.
  * @author Sean A. Irvine
  */
 public class A001037 implements Sequence {

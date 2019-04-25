@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198949 y-values in the solution to <code>11*x^2-10 =</code> y^2.
+ * A198949 y-values in the solution to <code>11*x^2-10 = y^2</code>.
  * @author Sean A. Irvine
  */
 public class A198949 extends LinearRecurrence {

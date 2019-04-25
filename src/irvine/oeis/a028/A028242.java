@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028242 Follow <code>n+1</code> by <code>n.</code> Also (essentially) Molien series of 2-dimensional quaternion group Q_8.
+ * A028242 Follow <code>n+1 by n.</code> Also (essentially) Molien series of 2-dimensional quaternion group Q_8.
  * @author Sean A. Irvine
  */
 public class A028242 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271079 Residues <code>(mod 32)</code> of partial sums of Fibonacci numbers starting with F(2).
+ * A271079 Residues <code>(mod 32)</code> of partial sums of Fibonacci numbers starting with <code>F(2)</code>.
  * @author Sean A. Irvine
  */
 public class A271079 extends LinearRecurrence {

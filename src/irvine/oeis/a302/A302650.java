@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302650 Number of minimal total dominating sets in the n-barbell graph. 
+ * A302650 Number of minimal total dominating sets in the n-barbell graph.
  * @author Georg Fischer
  */
 public class A302650 extends LinearRecurrence {

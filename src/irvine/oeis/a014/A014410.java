@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014410 Elements in Pascal's triangle (by row) that are not 1.
+ * A014410 Elements in Pascal's triangle <code>(by</code> row) that are not 1.
  * @author Sean A. Irvine
  */
 public class A014410 implements Sequence {

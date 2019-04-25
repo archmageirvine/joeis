@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A070059 Decimal expansion of proton mass (in kilograms).
+ * A070059 Decimal expansion of proton mass <code>(in</code> kilograms).
  * @author Sean A. Irvine
  */
 public class A070059 extends DoubleDecimalExpansionSequence {

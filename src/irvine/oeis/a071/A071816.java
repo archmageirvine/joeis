@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071816 Number of ordered solutions to x+y+z = u+v+w, <code>0 &lt;= x,</code> y, z, u, v, w <code>&lt; n</code>.
+ * A071816 Number of ordered solutions to <code>x+y+z =</code> u+v+w, <code>0 &lt;= x, y, z,</code> u, v, w <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A071816 extends LinearRecurrence {

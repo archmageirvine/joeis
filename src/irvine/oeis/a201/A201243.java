@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201243 Number of ways to place 2 non-attacking ferses on <code>an n</code> X n board.
+ * A201243 Number of ways to place 2 non-attacking ferses on an n X n board.
  * @author Sean A. Irvine
  */
 public class A201243 extends LinearRecurrence {

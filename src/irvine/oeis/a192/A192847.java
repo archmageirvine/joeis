@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192847 Molecular topological indices of the tetrahedral graphs. 
+ * A192847 Molecular topological indices of the tetrahedral graphs.
  * @author Georg Fischer
  */
 public class A192847 extends LinearRecurrence {

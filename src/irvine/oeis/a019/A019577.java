@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019577 Place n distinguishable balls in n boxes (in <code>n^n</code> ways); let f(n,k) = number of ways that max in any box is <code>k,</code> for <code>1&lt;=k&lt;=n</code>; sequence gives f(n,2)/n.
+ * A019577 Place n distinguishable balls in n boxes <code>(in n^n</code> ways); let f(n,k) = number of ways that max in <code>any</code> box is <code>k,</code> for <code>1&lt;=k&lt;=n</code>; sequence gives f(n,2)/n.
  * @author Sean A. Irvine
  */
 public class A019577 implements Sequence {

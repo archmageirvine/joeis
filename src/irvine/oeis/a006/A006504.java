@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006504 Coefficient of <code>x^4</code> in <code>(1-x-x^2)^(-n)</code>.
+ * A006504 Coefficient of <code>x^4 in (1-x-x^2)^(-n)</code>.
  * @author Sean A. Irvine
  */
 public class A006504 implements Sequence {

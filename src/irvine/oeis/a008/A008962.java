@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Polish;
 
 /**
- * A008962 Number of letters in n (in Polish), excluding spaces and hyphens.
+ * A008962 Number of letters in <code>n (in</code> Polish), excluding spaces and hyphens.
  * @author Sean A. Irvine
  */
 public class A008962 implements Sequence {

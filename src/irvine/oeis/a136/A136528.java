@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A136528 <code>a(n) =</code> the highest possible number of positive divisors of the sum of any two distinct positive divisors of n.
+ * A136528 <code>a(n) =</code> the highest possible number of positive divisors of the sum of <code>any</code> two distinct positive divisors of n.
  * @author Sean A. Irvine
  */
 public class A136528 implements Sequence {

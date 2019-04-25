@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297439 Number of maximum independent vertex sets and minimum vertex covers in the n-web graph. 
+ * A297439 Number of maximum independent vertex sets and minimum vertex covers in the n-web graph.
  * @author Georg Fischer
  */
 public class A297439 extends LinearRecurrence {

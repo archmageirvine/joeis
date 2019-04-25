@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254399 A Fibonacci sum: <code>a(n) =</code> Sum_{j=0..n-1} F(j)^2*F(2*n-j), in which the F's are the Fibonacci numbers.
+ * A254399 A Fibonacci sum: <code>a(n) = Sum_{j=0..n-1} F(j)^2*F(2*n-j),</code> in which the F's are the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A254399 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302761 Number of total dominating sets in the n-barbell graph. 
+ * A302761 Number of total dominating sets in the n-barbell graph.
  * @author Georg Fischer
  */
 public class A302761 extends LinearRecurrence {

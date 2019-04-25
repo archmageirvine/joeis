@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007645 Generalized cuban primes: primes of the form <code>x^2 +</code> xy + y^2; or primes of the form <code>x^2 +</code> 3*y^2; or primes <code>== 0</code> or <code>1 mod 3</code>.
+ * A007645 Generalized cuban primes: primes of the form <code>x^2 + xy + y^2</code>; or primes of the form <code>x^2 + 3*y^2</code>; or primes <code>== 0</code> or <code>1 mod 3</code>.
  * @author Sean A. Irvine
  */
 public class A007645 implements Sequence {

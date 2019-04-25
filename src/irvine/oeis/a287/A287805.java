@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287805 Number of quinary sequences of length n such that no two consecutive terms have distance 2. 
+ * A287805 Number of quinary sequences of length n such that no two consecutive terms have distance 2.
  * @author Georg Fischer
  */
 public class A287805 extends LinearRecurrence {

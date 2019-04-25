@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A230240 Values of N for which the equation <code>x^2 -</code> 9*y^2 = N has integer solutions.
+ * A230240 Values of N for which the equation <code>x^2 - 9*y^2 =</code> N has integer solutions.
  * @author Sean A. Irvine
  */
 public class A230240 extends LinearRecurrence {

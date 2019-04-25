@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009087 Numbers n such that the number of divisors of n is prime (i.e., numbers of the form p^(q-1) for primes p,q).
+ * A009087 Numbers n such that the number of divisors of n is prime <code>(i</code>.e., numbers of the form p^(q-1) for primes p,q).
  * @author Sean A. Irvine
  */
 public class A009087 implements Sequence {

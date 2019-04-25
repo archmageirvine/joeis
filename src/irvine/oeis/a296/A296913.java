@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296913 Number of ways to properly color the Petersen graph using n colors. 
+ * A296913 Number of ways to properly color the Petersen graph using n colors.
  * @author Georg Fischer
  */
 public class A296913 extends LinearRecurrence {

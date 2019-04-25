@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200407 The x-values in the solution to <code>19*x^2 - 18 =</code> y^2.
+ * A200407 The x-values in the solution to <code>19*x^2 - 18 = y^2</code>.
  * @author Sean A. Irvine
  */
 public class A200407 extends LinearRecurrence {

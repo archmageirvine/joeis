@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000774 <code>a(n) = n!*(1 +</code> Sum_{i=1..n} 1/i).
+ * A000774 <code>a(n) = n!*(1 + Sum_{i=1..n} 1/i)</code>.
  * @author Sean A. Irvine
  */
 public class A000774 implements Sequence {

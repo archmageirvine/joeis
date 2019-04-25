@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A018227 Magic numbers: atoms with full shells containing any of these numbers of electrons are considered electronically stable.
+ * A018227 Magic numbers: atoms with full shells containing <code>any</code> of these numbers of electrons are considered electronically stable.
  * @author Sean A. Irvine
  */
 public class A018227 extends LinearRecurrence {

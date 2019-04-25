@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107929 Smallest list of integers from 1 to n such that sum of any two adjacent terms is a square.
+ * A107929 Smallest list of integers from 1 to n such that sum of <code>any</code> two adjacent terms is a square.
  * @author Georg Fischer
  */
 public class A107929 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297665 Number of chordless cycles in the n-web graph. 
+ * A297665 Number of chordless cycles in the n-web graph.
  * @author Georg Fischer
  */
 public class A297665 extends LinearRecurrence {

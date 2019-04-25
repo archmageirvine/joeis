@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051943 Truncated triangular pyramid numbers: <code>a(n) =</code> Sum_{k=9..n} <code>(k*(k+1)/2 - 45)</code>.
+ * A051943 Truncated triangular pyramid numbers: <code>a(n) = Sum_{k=9..n} (k*(k+1)/2 - 45)</code>.
  * @author Sean A. Irvine
  */
 public class A051943 extends LinearRecurrence {

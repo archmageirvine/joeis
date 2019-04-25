@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A084303 Smallest x such that sigma(x) <code>mod 6 = n</code>.
+ * A084303 Smallest x such that <code>sigma(x) mod 6 = n</code>.
  * @author Georg Fischer
  */
 public class A084303 extends FiniteSequence {

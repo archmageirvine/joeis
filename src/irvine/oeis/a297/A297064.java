@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297064 Number of maximal matchings in the n-dipyramidal graph. 
+ * A297064 Number of maximal matchings in the n-dipyramidal graph.
  * @author Georg Fischer
  */
 public class A297064 extends LinearRecurrence {

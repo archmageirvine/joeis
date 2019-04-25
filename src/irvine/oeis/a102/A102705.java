@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102705 Numbers not of the form <code>7x +</code> 9y with nonnegative x and y.
+ * A102705 Numbers not of the form <code>7x + 9y</code> with nonnegative x and y.
  * @author Georg Fischer
  */
 public class A102705 extends FiniteSequence {

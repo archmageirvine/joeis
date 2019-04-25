@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289022 Wiener index of the n-Apollonian network. 
+ * A289022 Wiener index of the n-Apollonian network.
  * @author Georg Fischer
  */
 public class A289022 extends LinearRecurrence {

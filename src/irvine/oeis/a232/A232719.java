@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A232719 Sum_{k=1,...,2n} <code>(-1)^k binomial(8*n,4*k)</code>.
+ * A232719 <code>Sum_{k=1,...,2n} (-1)^k binomial(8*n,4*k)</code>.
  * @author Sean A. Irvine
  */
 public class A232719 extends LinearRecurrence {

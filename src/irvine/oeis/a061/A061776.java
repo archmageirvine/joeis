@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061776 Start with a single triangle; at n-th generation add a triangle at each vertex, allowing triangles to overlap; sequence gives number of triangles in n-th generation. 
+ * A061776 Start with a single triangle; at n-th generation add a triangle at each vertex, allowing triangles to overlap; sequence gives number of triangles in n-th generation.
  * @author Georg Fischer
  */
 public class A061776 extends LinearRecurrence {

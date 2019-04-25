@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137882 Number of (directed) Hamiltonian paths in the n-ladder graph. 
+ * A137882 Number of (directed) Hamiltonian paths in the n-ladder graph.
  * @author Georg Fischer
  */
 public class A137882 extends LinearRecurrence {

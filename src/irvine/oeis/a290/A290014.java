@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A290014 Values of n for which Sum_{k=1..n} <code>k!^10</code> is prime.
+ * A290014 Values of n for which <code>Sum_{k=1..n} k!^10</code> is prime.
  * @author Georg Fischer
  */
 public class A290014 extends FiniteSequence {

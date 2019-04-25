@@ -4,7 +4,7 @@ package irvine.oeis.a022;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A022149 Coordination sequence for root lattice B_7. 
+ * A022149 Coordination sequence for root lattice B_7.
  * @author Georg Fischer
  */
 public class A022149 extends LinearRecurrence {

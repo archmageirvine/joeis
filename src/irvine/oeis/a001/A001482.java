@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001482 Expand {Product_{j=1..inf} <code>(1-x^j) - 1 }^4</code> in powers of x.
+ * A001482 Expand <code>{Product_{j=1.</code>.inf} <code>(1-x^j) - 1 }^4</code> in powers of x.
  * @author Sean A. Irvine
  */
 public class A001482 implements Sequence {

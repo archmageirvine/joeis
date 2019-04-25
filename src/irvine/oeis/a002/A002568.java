@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002568 Number of different ways one can attack all squares on <code>an n</code> X n chessboard with the smallest number of non-attacking queens needed.
+ * A002568 Number of different ways one can attack all squares on an n X n chessboard with the smallest number of non-attacking queens needed.
  * @author Sean A. Irvine
  */
 public class A002568 extends A002564 {

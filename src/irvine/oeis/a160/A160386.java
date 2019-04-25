@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160386 Decimal expansion of Sum_{n&gt;=0}(-1)^n/3^(2^n).
+ * A160386 Decimal expansion of <code>Sum_{n&gt;=0}(-1)^n/3^(2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A160386 extends DecimalExpansionSequence {

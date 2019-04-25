@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295867 Numbers of the form A000217(n)*A007494(n) that are divisible by 3. 
+ * A295867 Numbers of the form A000217(n)*A007494(n) that are divisible by 3.
  * @author Georg Fischer
  */
 public class A295867 extends LinearRecurrence {

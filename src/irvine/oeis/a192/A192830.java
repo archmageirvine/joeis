@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192830 Molecular topological indices of the halved cube graphs. 
+ * A192830 Molecular topological indices of the halved cube graphs.
  * @author Georg Fischer
  */
 public class A192830 extends LinearRecurrence {

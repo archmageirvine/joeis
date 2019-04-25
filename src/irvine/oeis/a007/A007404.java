@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A007404 Decimal expansion of Sum_{n&gt;=0} <code>1/2^(2^n)</code>.
+ * A007404 Decimal expansion of <code>Sum_{n&gt;=0} 1/2^(2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A007404 extends DecimalExpansionSequence {

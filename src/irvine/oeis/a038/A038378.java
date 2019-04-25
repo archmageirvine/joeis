@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A038378 Integers which have more distinct digits than any smaller number.
+ * A038378 Integers which have more distinct digits than <code>any</code> smaller number.
  * @author Georg Fischer
  */
 public class A038378 extends FiniteSequence {

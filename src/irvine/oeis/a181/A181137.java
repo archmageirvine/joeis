@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181137 The number of ways to color n balls in a row with 3 colors with no color runs having lengths greater than 3. 
+ * A181137 The number of ways to color n balls in a row with 3 colors with no color runs having lengths greater than 3.
  * @author Georg Fischer
  */
 public class A181137 extends LinearRecurrence {

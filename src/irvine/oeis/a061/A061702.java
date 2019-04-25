@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A061702 Triangle <code>T(n,k)</code> defined by Sum_{n <code>&gt;= 0</code>,m <code>&gt;= 0} T(n</code>,m)*x^m*y^n <code>= 1 +</code> y*(1 <code>+ 3*x -</code> 4*x^2*y - 3*x^2*y^2 - 3*x^3*y^2 + 4*x^4*y^3)/((1 - y - 2*x*y - x*y^2 + x^3*y^3)*(1 - x*y)).
+ * A061702 Triangle <code>T(n,k)</code> defined by <code>Sum_{n &gt;= 0</code>,m <code>&gt;= 0} T(n</code>,m)*x^m*y^n <code>= 1 + y*(1 + 3*x - 4*x^2*y - 3*x^2*y^2 - 3*x^3*y^2 + 4*x^4*y^3)/((1 - y - 2*x*y - x*y^2 + x^3*y^3)*(1 - x*y))</code>.
  * @author Sean A. Irvine
  */
 public class A061702 implements Sequence {

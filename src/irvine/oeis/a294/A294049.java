@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294049 Number of binary strings of length n avoiding substrings <code>1000, 1011, 1101,</code> or 1111.
+ * A294049 Number of binary strings of length n avoiding substrings 1000, 1011, 1101, or 1111.
  * @author Sean A. Irvine
  */
 public class A294049 extends LinearRecurrence {

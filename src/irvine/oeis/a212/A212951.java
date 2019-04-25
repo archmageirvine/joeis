@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A212951 Amounts (in hundredths of a Euro) of coins in denominations suggested by Shallit.
+ * A212951 Amounts <code>(in</code> hundredths of a Euro) of coins in denominations suggested by Shallit.
  * @author Georg Fischer
  */
 public class A212951 extends FiniteSequence {

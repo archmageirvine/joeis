@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006586 <code>a(n) =</code> Sum_{k=1..n} <code>floor((2n-1)/(2k+1))</code>.
+ * A006586 <code>a(n) = Sum_{k=1..n} floor((2n-1)/(2k+1))</code>.
  * @author Sean A. Irvine
  */
 public class A006586 implements Sequence {

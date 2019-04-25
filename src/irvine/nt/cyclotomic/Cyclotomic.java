@@ -47,7 +47,7 @@ public final class Cyclotomic {
    */
   public static Z cyclotomic(int n, Z x) {
     if (n < 0) {
-      throw new ArithmeticException("n must be positive");
+      throw new ArithmeticException("n must be nonnegative");
     }
     if (n == 0) {
       return x;
@@ -103,7 +103,7 @@ public final class Cyclotomic {
    * @return Phi_n(x)
    * @exception ArithmeticException if n is less than 1
    */
-  public static Z cyclotomic(int n, long x) {
+  public static Z cyclotomic(final int n, final long x) {
     return cyclotomic(n, Z.valueOf(x));
   }
 

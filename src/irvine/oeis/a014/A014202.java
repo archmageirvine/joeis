@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014202 Number of solutions to <code>x^2 +</code> x*y + y^2 <code>&lt;= n,</code> excluding <code>(0,0),</code> divided by 6.
+ * A014202 Number of solutions to <code>x^2 + x*y + y^2 &lt;= n,</code> excluding <code>(0,0),</code> divided by 6.
  * @author Sean A. Irvine
  */
 public class A014202 implements Sequence {

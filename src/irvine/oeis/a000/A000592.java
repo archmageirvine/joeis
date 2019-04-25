@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000592 Number of nonnegative solutions of <code>x^2 +</code> y^2 = z in first n shells.
+ * A000592 Number of nonnegative solutions of <code>x^2 + y^2 = z</code> in first n shells.
  * @author Sean A. Irvine
  */
 public class A000592 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A321672 Number of chiral pairs of rows of length 5 using up to n colors. 
+ * A321672 Number of chiral pairs of rows of length 5 using up to n colors.
  * @author Georg Fischer
  */
 public class A321672 extends LinearRecurrence {

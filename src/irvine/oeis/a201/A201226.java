@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201226 Values y for infinite sequence x^3-y^2 = d with decreasing coefficient r=sqrt(x)/d which tend to 1/(1350*sqrt(5))or infinity family of solutions Mordell curve with extension <code>sqrt(5)</code>.
+ * A201226 Values y for infinite sequence <code>x^3-y^2 =</code> d with decreasing coefficient r=sqrt(x)/d which tend to 1/(1350*sqrt(5))or infinity family of solutions Mordell curve with extension <code>sqrt(5)</code>.
  * @author Sean A. Irvine
  */
 public class A201226 extends LinearRecurrence {

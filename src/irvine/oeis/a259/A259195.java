@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259195.
+ * A259195 Number of partitions of n into five primes.
  * @author Sean A. Irvine
  */
 public class A259195 implements Sequence {

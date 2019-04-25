@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201864 ((F(n-1)+F(n-2))-1)/2 if F(n) is odd, otherwise ((F(n-1)+F(n-2))-2)/2, where F(n)=A000045(n) is the n-th Fibonacci number.
+ * A201864 <code>((F(n-1)+F(n-2))-1)/2</code> if <code>F(n)</code> is odd, otherwise <code>((F(n-1)+F(n-2))-2)/2,</code> where F(n)=A000045(n) is the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A201864 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a214.A214823;
 
 /**
- * A215018 Number of unsensed hypermaps with n darts and any genus.
+ * A215018 Number of unsensed hypermaps with n darts and <code>any</code> genus.
  * @author T. R. S. Walsh
  * @author Sean A. Irvine
  */

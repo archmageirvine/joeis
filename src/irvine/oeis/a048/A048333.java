@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048333 Numbers that are repdigits in base 8. 
+ * A048333 Numbers that are repdigits in base 8.
  * @author Georg Fischer
  */
 public class A048333 extends LinearRecurrence {

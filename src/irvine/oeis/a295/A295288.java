@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295288 Binomial transform of the centered triangular numbers A005448. 
+ * A295288 Binomial transform of the centered triangular numbers A005448.
  * @author Georg Fischer
  */
 public class A295288 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001115 Maximal number of pairwise relatively prime polynomials of degree n over GF(2).
+ * A001115 Maximal number of pairwise relatively prime polynomials of degree n over <code>GF(2)</code>.
  * @author Sean A. Irvine
  */
 public class A001115 implements Sequence {

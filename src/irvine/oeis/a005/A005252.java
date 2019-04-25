@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005252 <code>a(n) =</code> Sum_{k=0..floor(n/4)} <code>binomial(n-2k,2k)</code>.
+ * A005252 <code>a(n) = Sum_{k=0..floor(n/4)} binomial(n-2k,2k)</code>.
  * @author Sean A. Irvine
  */
 public class A005252 implements Sequence {

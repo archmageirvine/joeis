@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A002645 Quartan primes: primes of the form <code>x^4 +</code> y^4, <code>x&gt;0,</code> y&gt;0.
+ * A002645 Quartan primes: primes of the form <code>x^4 + y^4, x&gt;0, y&gt;0</code>.
  * @author Sean A. Irvine
  */
 public class A002645 implements Sequence {

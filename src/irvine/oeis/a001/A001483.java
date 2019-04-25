@@ -1,7 +1,7 @@
 package irvine.oeis.a001;
 
 /**
- * A001483 Expand {Product_{j=1..inf} <code>(1-x^j) - 1 }^5</code> in powers of x.
+ * A001483 Expand <code>{Product_{j=1.</code>.inf} <code>(1-x^j) - 1 }^5</code> in powers of x.
  * @author Sean A. Irvine
  */
 public class A001483 extends A001482 {

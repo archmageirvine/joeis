@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004704 Expansion of <code>1/(7-</code> Sum_{k=1..6} exp(k*x)).
+ * A004704 Expansion of <code>1/(7- Sum_{k=1..6}</code> exp(k*x)).
  * @author Sean A. Irvine
  */
 public class A004704 extends A004701 {

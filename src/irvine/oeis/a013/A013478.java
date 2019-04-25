@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013478 E.g.f. -arctanh(cos(x)-cosh(x)), coefficients of (4*i+2) only.
+ * A013478 E.g.f. -arctanh(cos(x)-cosh(x)), coefficients of <code>(4*i+2)</code> only.
  * @author Sean A. Irvine
  */
 public class A013478 implements Sequence {

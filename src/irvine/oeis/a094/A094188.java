@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094188 Number of levels in the compositions of n with odd summands. 
+ * A094188 Number of levels in the compositions of n with odd summands.
  * @author Georg Fischer
  */
 public class A094188 extends LinearRecurrence {

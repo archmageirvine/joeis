@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320604 Chromatic number of the n-polygon diagonal intersection graph. 
+ * A320604 Chromatic number of the n-polygon diagonal intersection graph.
  * @author Georg Fischer
  */
 public class A320604 extends LinearRecurrence {

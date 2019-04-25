@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144945 Number of ways to place 2 queens on <code>an n</code> X n chessboard so that they attack each other.
+ * A144945 Number of ways to place 2 queens on an n X n chessboard so that they attack each other.
  * @author Sean A. Irvine
  */
 public class A144945 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119996 Numerator of Sum_{k=1..n} <code>1/(Fibonacci(k)*Fibonacci(k+2))</code>.
+ * A119996 Numerator of <code>Sum_{k=1..n} 1/(Fibonacci(k)*Fibonacci(k+2))</code>.
  * @author Sean A. Irvine
  */
 public class A119996 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228396 The number of permutations of length n sortable by 2 reversals. 
+ * A228396 The number of permutations of length n sortable by 2 reversals.
  * @author Georg Fischer
  */
 public class A228396 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.math.z.Z;
 
 /**
- * A013915 <code>a(n) =</code> F(n) + L(n) <code>+ n,</code> where F(n) (A000045) and L(n) (A000204) are Fibonacci and Lucas numbers respectively.
+ * A013915 <code>a(n) = F(n) +</code> L(n) <code>+ n,</code> where <code>F(n)</code> (A000045) and L(n) (A000204) are Fibonacci and Lucas numbers respectively.
  * @author Sean A. Irvine
  */
 public class A013915 extends A013655 {

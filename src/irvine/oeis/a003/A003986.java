@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003986 Table of x OR y, where <code>(x</code>,y) <code>= (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ..</code>.
+ * A003986 Table of x OR <code>y,</code> where <code>(x,y) = (0,0), (0,1), (1,0), (0,2), (1,1), (2,0), ..</code>.
  * @author Sean A. Irvine
  */
 public class A003986 implements Sequence {

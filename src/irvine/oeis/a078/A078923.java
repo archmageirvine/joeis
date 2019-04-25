@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A078923 Possible values of sigma(n)-n.
+ * A078923 Possible values of <code>sigma(n)-n</code>.
  * @author Sean A. Irvine
  */
 public class A078923 implements Sequence {

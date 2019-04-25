@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007403 <code>a(n) =</code> Sum_{m=0..n} (Sum_{k=0..m} <code>binomial(n,k))^3 = (n+2)*2^(3*n-1) - 3*2^(n-2)*n*binomial(2*n,n)</code>.
+ * A007403 <code>a(n) =</code> Sum_{m=0..n} <code>(Sum_{k=0.</code>.m} <code>binomial(n,k))^3 = (n+2)*2^(3*n-1) - 3*2^(n-2)*n*binomial(2*n,n)</code>.
  * @author Sean A. Irvine
  */
 public class A007403 implements Sequence {

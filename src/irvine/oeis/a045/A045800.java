@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045800 0-ish numbers (end in <code>01, 07, 43, 49)</code>.
+ * A045800 0-ish numbers (end in 01, 07, 43, 49).
  * @author Sean A. Irvine
  */
 public class A045800 extends LinearRecurrence {

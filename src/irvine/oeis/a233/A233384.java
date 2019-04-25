@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A233384 Positive integer solutions <code>x &lt;=</code> y <code>&lt;=</code> z to the equation xyz = x+y+z+2.
+ * A233384 Positive integer solutions <code>x &lt;= y &lt;= z</code> to the equation <code>xyz = x+y+z+2</code>.
  * @author Georg Fischer
  */
 public class A233384 extends FiniteSequence {

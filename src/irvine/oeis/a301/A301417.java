@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A301417 Sums of positive coefficients in generalized Chebyshev polynomials of the first kind, for a family of 4 data. 
+ * A301417 Sums of positive coefficients in generalized Chebyshev polynomials of the first kind, for a family of 4 data.
  * @author Georg Fischer
  */
 public class A301417 extends LinearRecurrence {

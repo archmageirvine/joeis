@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243543 Smallest number whose list of divisors contains n distinct digits (in base 10).
+ * A243543 Smallest number whose list of divisors contains n distinct digits <code>(in</code> base 10).
  * @author Georg Fischer
  */
 public class A243543 extends FiniteSequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015497 <code>a(0)=1, a(1)=9, a(n) =</code> sum_{k=0}^{k=n-1} <code>9^k a(k)</code>.
+ * A015497 <code>a(0)=1, a(1)=9, a(n) = sum_{k=0}^{k=n-1} 9^k a(k)</code>.
  * @author Sean A. Irvine
  */
 public class A015497 extends A015487 {

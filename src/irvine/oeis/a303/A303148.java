@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303148 Number of minimal total dominating sets in the n-pan graph. 
+ * A303148 Number of minimal total dominating sets in the n-pan graph.
  * @author Georg Fischer
  */
 public class A303148 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225031 Non-crossing, non-nesting, 5-colored set partitions. 
+ * A225031 Non-crossing, non-nesting, 5-colored set partitions.
  * @author Georg Fischer
  */
 public class A225031 extends LinearRecurrence {

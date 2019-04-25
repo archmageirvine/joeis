@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274458 White to move: Number of up to 5 man GBR-codes on <code>an 8x8</code> chessboard having longest checkmate under perfect play in n moves if any such checkmate exists.
+ * A274458 White to move: Number of up to 5 man GBR-codes on an <code>8x8</code> chessboard having longest checkmate under perfect play in n moves if <code>any</code> such checkmate exists.
  * @author Georg Fischer
  */
 public class A274458 extends FiniteSequence {

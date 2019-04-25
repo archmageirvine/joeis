@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228293 <code>a(n) =</code> Sum_{k=1..9} <code>n^k</code>.
+ * A228293 <code>a(n) = Sum_{k=1..9} n^k</code>.
  * @author Sean A. Irvine
  */
 public class A228293 extends LinearRecurrence {

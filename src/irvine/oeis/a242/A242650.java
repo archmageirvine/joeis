@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242650 For any number m there is a number k such that m-k^3 is congruent <code>mod 96</code> to one of these 12 numbers.
+ * A242650 For <code>any</code> number m there is a number k such that m-k^3 is congruent <code>mod 96</code> to one of these 12 numbers.
  * @author Georg Fischer
  */
 public class A242650 extends FiniteSequence {

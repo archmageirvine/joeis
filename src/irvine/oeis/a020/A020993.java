@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020993 List of scores that can be achieved with four darts all of which hit a dartboard with regions labeled <code>1, 5, 10, 25</code>.
+ * A020993 List of scores that can be achieved with four darts all of which hit a dartboard with regions labeled 1, 5, 10, 25.
  * @author Georg Fischer
  */
 public class A020993 extends FiniteSequence {

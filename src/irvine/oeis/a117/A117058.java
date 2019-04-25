@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117058 Palindromes for which the product of the digits is prime. 
+ * A117058 Palindromes for which the product of the digits is prime.
  * @author Georg Fischer
  */
 public class A117058 extends LinearRecurrence {

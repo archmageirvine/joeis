@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033203;
 
 /**
- * A002333 Numbers y such that p <code>= x^2 +</code> 2y^2, with prime p = A033203(n).
+ * A002333 Numbers y such that p <code>= x^2 + 2y^2,</code> with prime p = A033203(n).
  * @author Sean A. Irvine
  */
 public class A002333 extends A033203 {

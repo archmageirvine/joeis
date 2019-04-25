@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
 /**
- * A020560.
+ * A020560 Number of ordered oriented multigraphs on n labeled arcs (without loops).
  * @author Sean A. Irvine
  */
 public class A020560 extends A020556 {

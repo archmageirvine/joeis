@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002365 Numbers y such that p^2 <code>= x^2 +</code> y^2, <code>0 &lt; x &lt;</code> y, p = A002144(n).
+ * A002365 Numbers y such that p^2 <code>= x^2 + y^2, 0 &lt; x &lt; y,</code> p = A002144(n).
  * @author Sean A. Irvine
  */
 public class A002365 extends A002144 {

@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162674 Number of different fixed (possibly) disconnected tetrominoes bounded (not necessarily tightly) by <code>an n*n</code> square.
+ * A162674 Number of different fixed (possibly) disconnected tetrominoes bounded (not necessarily tightly) by an <code>n*n</code> square.
  * @author Sean A. Irvine
  */
 public class A162674 extends LinearRecurrence {

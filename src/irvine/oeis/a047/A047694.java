@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A047694 x such that y^2 <code>= C(x,0) + C(x,1) + C(x,2) + C(x,3)</code> is soluble.
+ * A047694 x such that <code>y^2 = C(x,0) + C(x,1) + C(x,2) + C(x,3)</code> is soluble.
  * @author Georg Fischer
  */
 public class A047694 extends FiniteSequence {

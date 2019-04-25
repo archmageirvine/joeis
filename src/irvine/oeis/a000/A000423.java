@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000423 <code>a(n)</code> is smallest number <code>&gt; a(n-1)</code> of form a(i)a(j), i&lt;j&lt;n.
+ * A000423 <code>a(n)</code> is smallest number <code>&gt; a(n-1)</code> of form <code>a(i)a(j), i&lt;j&lt;n</code>.
  * @author Sean A. Irvine
  */
 public class A000423 extends MemorySequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001883 Number of permutations s of <code>{1,2,...,n}</code> such that |s(i)-i|&gt;1 for each i=1,2,...,n.
+ * A001883 Number of permutations s of <code>{1,2,...,n}</code> such that |s(i)-i|&gt;1 for each <code>i=1,2,...,n</code>.
  * @author Sean A. Irvine
  */
 public class A001883 implements Sequence {

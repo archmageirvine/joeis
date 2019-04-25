@@ -9,7 +9,7 @@ import irvine.math.polynomial.IrreduciblePolynomials;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002475 Numbers n such that <code>x^n + x + 1</code> is irreducible over GF(2).
+ * A002475 Numbers n such that <code>x^n + x + 1</code> is irreducible over <code>GF(2)</code>.
  * @author Sean A. Irvine
  */
 public class A002475 implements Sequence {

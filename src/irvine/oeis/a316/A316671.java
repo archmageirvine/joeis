@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316671 Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step. 
+ * A316671 Squares visited by moving diagonally one square on a diagonally numbered board and moving to the lowest available unvisited square at each step.
  * @author Georg Fischer
  */
 public class A316671 extends LinearRecurrence {

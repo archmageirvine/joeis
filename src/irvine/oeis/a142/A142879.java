@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142879 <code>a(n) = 5a(n-3) - a(n-6)</code> with terms <code>1..6</code> as <code>0, 1, 2, 5, 7, 9</code>.
+ * A142879 <code>a(n) = 5a(n-3) - a(n-6)</code> with terms <code>1..6</code> as 0, 1, 2, 5, 7, 9.
  * @author Sean A. Irvine
  */
 public class A142879 extends LinearRecurrence {

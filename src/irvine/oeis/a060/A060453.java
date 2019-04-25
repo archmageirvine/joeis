@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060453 Dot product of the squares and the quarter-squares: <code>a(n) =</code> sum(i=1..n, i^2 * floor(i^2/4)).
+ * A060453 Dot product of the squares and the quarter-squares: <code>a(n) =</code> sum(i=1..n, <code>i^2 * floor(i^2/4))</code>.
  * @author Sean A. Irvine
  */
 public class A060453 extends LinearRecurrence {

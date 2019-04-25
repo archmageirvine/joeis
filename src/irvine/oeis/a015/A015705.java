@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015705 Geometric mean of phi(n) and sigma(n) is an integer, n odd.
+ * A015705 Geometric mean of phi(n) and <code>sigma(n)</code> is an integer, n odd.
  * @author Sean A. Irvine
  */
 public class A015705 implements Sequence {

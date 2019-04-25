@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296996 Number of nonequivalent <code>(mod</code> D_8) ways to place 3 points on <code>an n</code> X n point grid so that no point is equally distant from two other points on the same row or the same column.
+ * A296996 Number of nonequivalent <code>(mod</code> D_8) ways to place 3 points on an n X n point grid so that no point is equally distant from two other points on the same row or the same column.
  * @author Sean A. Irvine
  */
 public class A296996 extends LinearRecurrence {

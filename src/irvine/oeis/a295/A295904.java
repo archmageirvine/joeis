@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295904 Number of (not necessarily maximum) cliques in the n-sun graph. 
+ * A295904 Number of (not necessarily maximum) cliques in the n-sun graph.
  * @author Georg Fischer
  */
 public class A295904 extends LinearRecurrence {

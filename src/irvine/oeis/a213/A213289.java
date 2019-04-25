@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213289 Number of 10-length words w over n-ary alphabet such that for every prefix z of w we have #(z,a_i) <code>= 0</code> or #(z,a_i) <code>&gt;=</code> #(z,a_j) for all j&gt;i and #(z,a_i) counts the occurrences of the i-th letter in z.
+ * A213289 Number of 10-length words w over n-ary alphabet such that for every prefix z of w we have #(z,a_i) <code>= 0</code> or #(z,a_i) <code>&gt;=</code> #(z,a_j) for all <code>j&gt;i</code> and #(z,a_i) counts the occurrences of the i-th letter in z.
  * @author Sean A. Irvine
  */
 public class A213289 extends LinearRecurrence {

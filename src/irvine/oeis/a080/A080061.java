@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A080061 Triangle of coefficients of polynomials P(n; <code>x) =</code> Permanent(M), where M=[m(i,j)] is n X n matrix defined by m(i,j)=x if 0&lt;=i-j&lt;=2 else m(i,j)=1.
+ * A080061 Triangle of coefficients of polynomials P(n; <code>x) =</code> Permanent(M), where M=[m(i,j)] is n X n matrix defined by m(i,j)=x if <code>0&lt;=i-j&lt;=2</code> else m(i,j)=1.
  * @author Sean A. Irvine
  */
 public class A080061 extends A080018 {

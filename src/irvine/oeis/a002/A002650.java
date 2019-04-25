@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A002650 Quintan primes: p <code>= (x^5 +</code> y^5)/(x + y).
+ * A002650 Quintan primes: p <code>= (x^5 + y^5)/(x + y)</code>.
  * @author Sean A. Irvine
  */
 public class A002650 implements Sequence {

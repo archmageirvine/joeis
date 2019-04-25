@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000047 Number of integers <code>&lt;= 2^n</code> of form <code>x^2 -</code> 2y^2.
+ * A000047 Number of integers <code>&lt;= 2^n</code> of form <code>x^2 - 2y^2</code>.
  * @author Sean A. Irvine
  */
 public class A000047 implements Sequence {

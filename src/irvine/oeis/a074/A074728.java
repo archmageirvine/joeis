@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074728 <code>a(n) =</code> Sum_{k=1..n} <code>k^(n-k)*binomial(n,k-1)</code>.
+ * A074728 <code>a(n) = Sum_{k=1..n} k^(n-k)*binomial(n,k-1)</code>.
  * @author Sean A. Irvine
  */
 public class A074728 implements Sequence {

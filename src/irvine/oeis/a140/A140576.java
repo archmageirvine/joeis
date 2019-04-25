@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140576 Numbers of the form i*9^j-1 (i=1..8, <code>j &gt;= 0)</code>.
+ * A140576 Numbers of the form <code>i*9^j-1 (i=1..8, j &gt;= 0)</code>.
  * @author Sean A. Irvine
  */
 public class A140576 extends LinearRecurrence {

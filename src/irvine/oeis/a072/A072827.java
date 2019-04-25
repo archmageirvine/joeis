@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072827 Number of permutations satisfying i-2&lt;=p(i)&lt;=i+3, i=1..n.
+ * A072827 Number of permutations satisfying i-2&lt;=p(i)&lt;=i+3, <code>i=1..n</code>.
  * @author Sean A. Irvine
  */
 public class A072827 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A250111 Number of orbits of size 2 in vertices of Fibonacci cube Gamma_n under the action of its automorphism group. 
+ * A250111 Number of orbits of size 2 in vertices of Fibonacci cube Gamma_n under the action of its automorphism group.
  * @author Georg Fischer
  */
 public class A250111 extends LinearRecurrence {

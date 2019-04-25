@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209528 The number of length n ternary sequences in which no symbol appears exactly once. 
+ * A209528 The number of length n ternary sequences in which no symbol appears exactly once.
  * @author Georg Fischer
  */
 public class A209528 extends LinearRecurrence {

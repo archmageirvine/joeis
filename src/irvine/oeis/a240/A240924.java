@@ -1,21 +1,15 @@
 package irvine.oeis.a240;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.math.partitions.IntegerPartition;
+import irvine.oeis.PeriodicSequence;
 
 /**
- * A240924 Digital root of squares of numbers not divisible by <code>2, 3</code> or 5.
+ * A240924 Digital root of squares of numbers not divisible by 2, 3 or 5.
  * @author Sean A. Irvine
  */
-public class A240924 implements Sequence {
+public class A240924 extends PeriodicSequence {
 
-  private int mN = -1;
-
-  @Override
-  public Z next() {
-    final Z pn = IntegerPartition.partitions(++mN);
-    final int pi = pn.intValueExact();
-    return IntegerPartition.partitions(pi).gcd(pn);
+  /** Construct the sequence. */
+  public A240924() {
+    super(1, 4, 4, 7, 1, 1, 7, 4, 7, 1, 7, 4, 4, 7, 1, 7, 4, 7, 1, 1, 7, 4, 4, 1);
   }
 }

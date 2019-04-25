@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143941 The Wiener index of a chain of n triangles (i.e., joined like VVV..VV; here V is a triangle!).
+ * A143941 The Wiener index of a chain of n triangles <code>(i</code>.e., joined like VVV..VV; here V is a triangle!).
  * @author Sean A. Irvine
  */
 public class A143941 extends LinearRecurrence {

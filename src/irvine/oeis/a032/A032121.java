@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032121 Number of reversible strings with n beads of 4 colors. 
+ * A032121 Number of reversible strings with n beads of 4 colors.
  * @author Georg Fischer
  */
 public class A032121 extends LinearRecurrence {

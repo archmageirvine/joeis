@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A000394 Numbers of form <code>x^2 +</code> y^2 + 7z^2.
+ * A000394 Numbers of form <code>x^2 + y^2 + 7z^2</code>.
  * @author Sean A. Irvine
  */
 public class A000394 implements Sequence {

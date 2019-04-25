@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143662 <code>a(n)</code> is the number of n-tosses having a run of 6 or more heads for a fair coin (i.e., probability is <code>a(n)/2^n)</code>.
+ * A143662 <code>a(n)</code> is the number of n-tosses having a run of 6 or more heads for a fair coin <code>(i</code>.e., probability is <code>a(n)/2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A143662 extends LinearRecurrence {

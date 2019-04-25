@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085482 Product of three solutions of the Diophantine equation <code>x^2 -</code> y^2 = z^3.
+ * A085482 Product of three solutions of the Diophantine equation <code>x^2 - y^2 = z^3</code>.
  * @author Sean A. Irvine
  */
 public class A085482 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212501 Number of (w,x,y,z) with all terms in <code>{1,...,n}</code> and w <code>&gt; x &lt;</code> y <code>&gt;=</code> z.
+ * A212501 Number of (w,x,y,z) with all terms in <code>{1,...,n}</code> and w <code>&gt; x &lt; y &gt;= z</code>.
  * @author Sean A. Irvine
  */
 public class A212501 extends LinearRecurrence {

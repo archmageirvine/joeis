@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192831 Molecular topological indices of the hypercube graphs. 
+ * A192831 Molecular topological indices of the hypercube graphs.
  * @author Georg Fischer
  */
 public class A192831 extends LinearRecurrence {

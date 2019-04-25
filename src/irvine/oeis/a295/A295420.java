@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295420 Number of total dominating sets in the n-Moebius ladder. 
+ * A295420 Number of total dominating sets in the n-Moebius ladder.
  * @author Georg Fischer
  */
 public class A295420 extends LinearRecurrence {

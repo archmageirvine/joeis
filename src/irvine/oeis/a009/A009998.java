@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009998 Triangle in which j-th entry in i-th row is (j+1)^(i-j).
+ * A009998 Triangle in which j-th entry in i-th row is <code>(j+1)^(i-j)</code>.
  * @author Sean A. Irvine
  */
 public class A009998 implements Sequence {

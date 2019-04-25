@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007593 2-hyperperfect numbers: <code>n =</code> 2*(sigma(n) <code>- n - 1) + 1</code>.
+ * A007593 2-hyperperfect numbers: <code>n = 2*(sigma(n) - n - 1) + 1</code>.
  * @author Sean A. Irvine
  */
 public class A007593 implements Sequence {

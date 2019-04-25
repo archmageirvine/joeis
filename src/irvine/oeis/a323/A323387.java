@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323387 Primes whose digits are distinct square digits, i.e., consisting of only digits <code>0, 1, 4, 9</code>.
+ * A323387 Primes whose digits are distinct square digits, i.e., consisting of only digits 0, 1, 4, 9.
  * @author Georg Fischer
  */
 public class A323387 extends FiniteSequence {

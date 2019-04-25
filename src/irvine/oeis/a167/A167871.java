@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167871 <code>a(n) =</code> 64^n*Sum_{ <code>k=0..n } binomial(2*k,k)^3/64^k</code>.
+ * A167871 <code>a(n) = 64^n*Sum_{ k=0..n } binomial(2*k,k)^3/64^k</code>.
  * @author Sean A. Irvine
  */
 public class A167871 implements Sequence {

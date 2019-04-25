@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128052 <code>a(n) =</code> (F(2n-1) + F(2n+1)) <code>* (5/6 -</code> cos(2*Pi*n/3)/3) where F(n) <code>= Fibonacci(n)</code>.
+ * A128052 <code>a(n) = (F(2n-1) + F(2n+1)) * (5/6 -</code> cos(2*Pi*n/3)/3) where <code>F(n) = Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A128052 extends LinearRecurrence {

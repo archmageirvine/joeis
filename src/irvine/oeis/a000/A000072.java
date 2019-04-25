@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000072 Number of positive integers <code>&lt;= 2^n</code> of form <code>x^2 + 4</code> y^2.
+ * A000072 Number of positive integers <code>&lt;= 2^n</code> of form <code>x^2 + 4 y^2</code>.
  * @author Sean A. Irvine
  */
 public class A000072 extends A000018 {

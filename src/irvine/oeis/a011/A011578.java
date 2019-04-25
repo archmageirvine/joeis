@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
 /**
- * A011578 Stirling numbers of second kind S2(29,n).
+ * A011578 Stirling numbers of second kind <code>S2(29,n)</code>.
  * @author Sean A. Irvine
  */
 public class A011578 extends A011559 {

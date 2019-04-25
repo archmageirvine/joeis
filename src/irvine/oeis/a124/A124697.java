@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124697 Number of base 4 circular n-digit numbers with adjacent digits differing by 1 or less. 
+ * A124697 Number of base 4 circular n-digit numbers with adjacent digits differing by 1 or less.
  * @author Georg Fischer
  */
 public class A124697 extends LinearRecurrence {

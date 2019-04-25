@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063722 Number of edges in the Platonic solids (in the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
+ * A063722 Number of edges in the Platonic solids <code>(in</code> the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
  * @author Georg Fischer
  */
 public class A063722 extends FiniteSequence {

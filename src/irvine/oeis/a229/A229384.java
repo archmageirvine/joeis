@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229384 Positive integer solutions y1, <code>x1,</code> y2, <code>x2</code> to Ljunggren's equation <code>x^2 + 1 =</code> 2y^4.
+ * A229384 Positive integer solutions <code>y1, x1, y2, x2</code> to Ljunggren's equation <code>x^2 + 1 = 2y^4</code>.
  * @author Georg Fischer
  */
 public class A229384 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A006455 Number of partial orders on <code>{1,2,...,n}</code> that are contained in the usual linear order (i.e., xRy <code>=&gt;</code> x&lt;y).
+ * A006455 Number of partial orders on <code>{1,2,...,n}</code> that are contained in the usual linear order <code>(i</code>.e., xRy <code>=&gt; x&lt;y)</code>.
  * @author Sean A. Irvine
  */
 public class A006455 implements Sequence {

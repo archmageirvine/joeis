@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002025 Smaller of an amicable pair: <code>(a,b)</code> such that sigma(a)=sigma(b)=a+b, <code>a&lt;b</code>.
+ * A002025 Smaller of an amicable pair: <code>(a,b)</code> such that <code>sigma(a)=sigma(b)=a+b, a&lt;b</code>.
  * @author Sean A. Irvine
  */
 public class A002025 implements Sequence {

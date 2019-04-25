@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006902 <code>a(n) = (2n)! *</code> Sum_{k=0..n} <code>(-1)^k * binomial(n,k) / (n+k)!</code>.
+ * A006902 <code>a(n) = (2n)! * Sum_{k=0..n} (-1)^k * binomial(n,k) / (n+k)!</code>.
  * @author Sean A. Irvine
  */
 public class A006902 implements Sequence {

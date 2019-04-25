@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163382 <code>a(n) =</code> the (decimal equivalent of the) smallest integer that can be made by rotating the binary digits of n any number of positions to the left or right, where <code>a(n)</code> in binary must contain the same number of digits (without any leading 0's) as n written in binary.
+ * A163382 <code>a(n) =</code> the (decimal equivalent of the) smallest integer that can be made by rotating the binary digits of <code>n any</code> number of positions to the left or right, where <code>a(n)</code> in binary must contain the same number of digits (without <code>any</code> leading 0's) as n written in binary.
  * @author Sean A. Irvine
  */
 public class A163382 implements Sequence {

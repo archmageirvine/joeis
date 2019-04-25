@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287700 <code>a(n) = (4!)^3 *</code> [z^4] hypergeom([], <code>[1,1],</code> z)^n.
+ * A287700 <code>a(n) = (4!)^3 * [z^4]</code> hypergeom([], <code>[1,1], z)^n</code>.
  * @author Sean A. Irvine
  */
 public class A287700 extends LinearRecurrence {

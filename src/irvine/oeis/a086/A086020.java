@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086020 <code>a(n) =</code> Sum_(i=1..n) C(i+2,3)^2 [ Sequential sums of the tetragonal numbers or "tetras" (pyramidal, square) raised to power 2 (drawn from the 4th diagonal - left or right - of Pascal's Triangle) ].
+ * A086020 <code>a(n) = Sum_(i=1..n) C(i+2,3)^2 [</code> Sequential sums of the tetragonal numbers or "tetras" (pyramidal, square) raised to power 2 (drawn from the 4th diagonal - left or right - of Pascal's Triangle) ].
  * @author Sean A. Irvine
  */
 public class A086020 extends LinearRecurrence {

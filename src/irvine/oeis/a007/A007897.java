@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007897 <code>a(n)</code> is multiplicative with <code>a(2) = 1</code>; <code>a(4) = 2</code>; a(2^i) = 2^(i-2)+2 if i&gt;2; a(p^i) = 1+(p-1)*p^(i-1)/2 if prime p&gt;2 and i&gt;0.
+ * A007897 <code>a(n)</code> is multiplicative with <code>a(2) = 1</code>; <code>a(4) = 2</code>; <code>a(2^i) = 2^(i-2)+2</code> if <code>i&gt;2</code>; a(p^i) = 1+(p-1)*p^(i-1)/2 if prime p&gt;2 and <code>i&gt;0</code>.
  * @author Sean A. Irvine
  */
 public class A007897 implements Sequence {

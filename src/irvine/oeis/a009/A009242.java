@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009242 <code>a(n) =</code> lcm(n, sigma(n)).
+ * A009242 <code>a(n) =</code> lcm(n, <code>sigma(n))</code>.
  * @author Sean A. Irvine
  */
 public class A009242 implements Sequence {

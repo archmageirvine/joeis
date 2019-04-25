@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107659 <code>a(n) =</code> Sum_{k=0..n} 2^max(k, <code>n-k)</code>.
+ * A107659 <code>a(n) = Sum_{k=0..n}</code> 2^max(k, <code>n-k)</code>.
  * @author Sean A. Irvine
  */
 public class A107659 extends LinearRecurrence {

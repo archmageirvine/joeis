@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127682 Number of non-isomorphic (i.e., defined up to a rotation and a reflection) maximal independent sets of the n-cycle graph having at least one symmetry axis. Also: Number of cyclic and palindromic compositions of n in which each term is either 2 or 3.
+ * A127682 Number of non-isomorphic <code>(i</code>.e., defined up to a rotation and a reflection) maximal independent sets of the n-cycle graph having at least one symmetry axis. Also: Number of cyclic and palindromic compositions of n in which each term is either 2 or 3.
  * @author Sean A. Irvine
  */
 public class A127682 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000294 G.f.: Product_{k <code>&gt;= 1} (1 - x^k)^(-k*(k+1)/2)</code>.
+ * A000294 G.f.: <code>Product_{k &gt;= 1} (1 - x^k)^(-k*(k+1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A000294 implements Sequence {

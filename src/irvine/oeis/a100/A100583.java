@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100583 Number of triangles in <code>an n</code> X n grid of squares with diagonals.
+ * A100583 Number of triangles in an <code>n</code> X n grid of squares with diagonals.
  * @author Sean A. Irvine
  */
 public class A100583 extends LinearRecurrence {

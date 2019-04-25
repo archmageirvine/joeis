@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168572 <code>a(n) =</code> Sum_{k=2..n}(7^k).
+ * A168572 <code>a(n) = Sum_{k=2..n}(7^k)</code>.
  * @author Sean A. Irvine
  */
 public class A168572 extends LinearRecurrence {

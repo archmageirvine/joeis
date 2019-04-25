@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002472 Number of pairs x,y such that y-x=2, <code>(x,n)=1,</code> (y,n)=1 and <code>1 &lt;= x &lt;= n</code>.
+ * A002472 Number of pairs <code>x,y</code> such that <code>y-x=2, (x,n)=1, (y,n)=1</code> and <code>1 &lt;= x &lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A002472 implements Sequence {

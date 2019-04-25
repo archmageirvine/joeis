@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284710 Number of maximal matchings in the n-Moebius ladder. 
+ * A284710 Number of maximal matchings in the n-Moebius ladder.
  * @author Georg Fischer
  */
 public class A284710 extends LinearRecurrence {

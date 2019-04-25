@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001037;
 
 /**
- * A007839 Number of polynomials of degree n over GF(2) in which the degrees of all irreducible factors are distinct.
+ * A007839 Number of polynomials of degree n over <code>GF(2)</code> in which the degrees of all irreducible factors are distinct.
  * @author Sean A. Irvine
  */
 public class A007839 implements Sequence {

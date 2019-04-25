@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279034 The sum of the necessary diagonal movements from each square unit of <code>an n</code> X <code>n+1</code> rectangle to reach any of the corners of the rectangle.
+ * A279034 The sum of the necessary diagonal movements from each square unit of an n X <code>n+1</code> rectangle to reach <code>any</code> of the corners of the rectangle.
  * @author Georg Fischer
  */
 public class A279034 extends LinearRecurrence {

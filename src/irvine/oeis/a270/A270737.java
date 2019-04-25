@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A270737 <code>a(n) =</code> ((n+2)/2)*Sum_{k=0..n/2} (Sum_{i=0..n-2*k} <code>(binomial(k+1</code>,n-2*k-i)*binomial(k+i,k))*F(k+1)/(k+1)), where F(k) is Fibonacci numbers.
+ * A270737 <code>a(n) = ((n+2)/2)*Sum_{k=0..n/2} (Sum_{i=0..n-2*k} (binomial(k+1,n-2*k-i)*binomial(k+i,k))*F(k+1)/(k+1)),</code> where <code>F(k)</code> is Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A270737 extends LinearRecurrence {

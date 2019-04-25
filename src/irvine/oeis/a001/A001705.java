@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001705 Generalized Stirling numbers: <code>a(n) = n! *</code> Sum_{k=0..n-1} <code>(k+1)/(n-k)</code>.
+ * A001705 Generalized Stirling numbers: <code>a(n) = n! * Sum_{k=0..n-1} (k+1)/(n-k)</code>.
  * @author Sean A. Irvine
  */
 public class A001705 implements Sequence {

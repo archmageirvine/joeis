@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050409 Truncated square pyramid numbers: <code>a(n) =</code> Sum_{k <code>= n..2*n} k^2</code>.
+ * A050409 Truncated square pyramid numbers: <code>a(n) = Sum_{k = n..2*n} k^2</code>.
  * @author Sean A. Irvine
  */
 public class A050409 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * A002564 Number of different ways one can attack all squares on <code>an n</code> X n chessboard using the minimal number of queens.
+ * A002564 Number of different ways one can attack all squares on an n X n chessboard using the minimal number of queens.
  * @author Sean A. Irvine
  */
 public class A002564 implements Sequence {

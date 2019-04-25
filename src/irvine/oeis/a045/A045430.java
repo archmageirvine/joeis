@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A045430 Number of dominoes with n spots (in standard set).
+ * A045430 Number of dominoes with n spots <code>(in</code> standard set).
  * @author Georg Fischer
  */
 public class A045430 extends FiniteSequence {

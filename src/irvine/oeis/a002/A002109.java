@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002109 Hyperfactorials: Product_{k <code>= 1..n} k^k</code>.
+ * A002109 Hyperfactorials: <code>Product_{k = 1..n} k^k</code>.
  * @author Sean A. Irvine
  */
 public class A002109 implements Sequence {

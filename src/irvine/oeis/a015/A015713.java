@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015713 phi(n) * sigma(n) <code>+ k^2</code> is not a square for any k.
+ * A015713 phi(n) <code>* sigma(n) + k^2</code> is not a square for <code>any k</code>.
  * @author Sean A. Irvine
  */
 public class A015713 implements Sequence {

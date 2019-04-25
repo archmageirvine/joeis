@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A083362 Square table, read by antidiagonals, of least distinct positive integers such that the sum of any two consecutive terms in any row is a square number.
+ * A083362 Square table, read by antidiagonals, of least distinct positive integers such that the sum of <code>any</code> two consecutive terms in <code>any</code> row is a square number.
  * @author Sean A. Irvine
  */
 public class A083362 implements Sequence {

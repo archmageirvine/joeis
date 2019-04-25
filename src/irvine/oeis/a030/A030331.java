@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030331 Weight distribution of hypothetical <code>[ 24,12,10 ]</code> trace-self-dual additive code over GF(4).
+ * A030331 Weight distribution of hypothetical <code>[ 24,12,10 ]</code> trace-self-dual additive code over <code>GF(4)</code>.
  * @author Georg Fischer
  */
 public class A030331 extends FiniteSequence {

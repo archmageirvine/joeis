@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002084 Sinh <code>x /</code> cos <code>x =</code> Sum_{n&gt;=0} <code>a(n)*x^(2n+1)/(2n+1)!</code>.
+ * A002084 Sinh <code>x /</code> cos <code>x = Sum_{n&gt;=0} a(n)*x^(2n+1)/(2n+1)!</code>.
  * @author Sean A. Irvine
  */
 public class A002084 implements Sequence {

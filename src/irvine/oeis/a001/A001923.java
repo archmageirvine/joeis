@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001923 <code>a(n) =</code> Sum_{k=1..n} <code>k^k</code>.
+ * A001923 <code>a(n) = Sum_{k=1..n} k^k</code>.
  * @author Sean A. Irvine
  */
 public class A001923 implements Sequence {

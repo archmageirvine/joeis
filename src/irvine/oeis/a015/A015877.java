@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015877 Numbers n such that sigma(n) = sigma(n <code>+ 9)</code>.
+ * A015877 Numbers n such that <code>sigma(n) = sigma(n + 9)</code>.
  * @author Sean A. Irvine
  */
 public class A015877 implements Sequence {

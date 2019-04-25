@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173963 Number of nonoverlapping placements of one 1 X 1 square and one 2 X 2 square on <code>an n</code> X n board.
+ * A173963 Number of nonoverlapping placements of one 1 X 1 square and one 2 X 2 square on an n X n board.
  * @author Sean A. Irvine
  */
 public class A173963 extends LinearRecurrence {

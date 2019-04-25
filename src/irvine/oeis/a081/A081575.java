@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081575 Fifth binomial transform of Fibonacci numbers F(n).
+ * A081575 Fifth binomial transform of Fibonacci numbers <code>F(n)</code>.
  * @author Sean A. Irvine
  */
 public class A081575 extends LinearRecurrence {

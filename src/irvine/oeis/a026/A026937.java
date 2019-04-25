@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026937 <code>a(n) =</code> Sum_{k=0..n} <code>(k+1)*T(n,n-k),</code> where T is given by A008288.
+ * A026937 <code>a(n) = Sum_{k=0..n} (k+1)*T(n,n-k),</code> where T is given by A008288.
  * @author Sean A. Irvine
  */
 public class A026937 extends LinearRecurrence {

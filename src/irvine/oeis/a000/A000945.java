@@ -5,7 +5,7 @@ import irvine.oeis.EuclidMullinSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000945 Euclid-Mullin sequence: <code>a(1) = 2, a(n+1)</code> is smallest prime factor of <code>1 +</code> Product_{k=1..n} <code>a(k)</code>.
+ * A000945 Euclid-Mullin sequence: <code>a(1) = 2, a(n+1)</code> is smallest prime factor of <code>1 + Product_{k=1..n} a(k)</code>.
  * @author Sean A. Irvine
  */
 public class A000945 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227353 Number of lattice points in the closed region bounded by the graphs of y <code>= 3*x/5, x = n,</code> and y <code>= 0,</code> excluding points on the x-axis.
+ * A227353 Number of lattice points in the closed region bounded by the graphs of <code>y = 3*x/5, x = n,</code> and <code>y = 0,</code> excluding points on the x-axis.
  * @author Sean A. Irvine
  */
 public class A227353 extends LinearRecurrence {

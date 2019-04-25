@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290221 Number of elements added at n-th stage to the structure of the narrow cross described in A290220. 
+ * A290221 Number of elements added at n-th stage to the structure of the narrow cross described in A290220.
  * @author Georg Fischer
  */
 public class A290221 extends LinearRecurrence {

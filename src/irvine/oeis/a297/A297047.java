@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A297047 Number of edge covers in the n-wheel graph. 
+ * A297047 Number of edge covers in the n-wheel graph.
  * @author Georg Fischer
  */
 public class A297047 extends LinearRecurrence {

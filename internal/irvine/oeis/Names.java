@@ -27,11 +27,17 @@ public final class Names {
   private static String protect(final String name) {
     // The order of the replacements here is important
     final String s = name.replace("&", "&amp;")
-      .replaceAll(" (([ 0-9baxnkj^*/(){}\\[\\]<>!=+.,-]|[Ff]loor\\(|mod|sqrt|nextprime|prevprime|[Bb]inomial\\(|[Ff]ibonacci\\(|[Ll]ucas\\(|[TC]\\(){2,})([ .;,:])", " <code>$1</code>$3")
+      .replaceAll(" (([ 0-9baxyznkij^*/(){}\\[\\]<>!=+.,-]|[Ff]loor\\(|S[12]\\(|mod|sqrt|nextprime|prevprime|sigma\\(|[Bb]inomial\\(|[Ff]ibonacci\\(|[Ll]ucas\\(|[Ss]um_|[Pp]roduct_|GF\\(|[TCF]\\(){2,})([ .;,:])", " <code>$1</code>$3")
       .replace("<", "&lt;")
       .replace(">", "&gt;")
       .replaceAll("&lt;(/?code)&gt;", "<$1>")
-      .replaceAll("<code>([0-9,)]*|an)</code>", "$1")
+      .replaceAll("<code>([0-9,) ]*|in|an|by|.)</code>", "$1")
+      .replaceAll("<code>(in|an|by) ", "$1 <code>")
+      .replaceAll(" (in|an|by)</code>", "</code> $1")
+      // repeated because above can create new cases for simplification
+      .replaceAll("<code>([0-9,) ]*|in|an|by|.)</code>", "$1")
+      .replaceAll("<code>(in|an|by) ", "$1 <code>")
+      .replaceAll(" (in|an|by)</code>", "</code> $1")
       .replace("*/", "* /")
       .replaceAll("\\s+", " ")
       ;

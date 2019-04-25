@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298822 Number of minimum edge covers in the n-dipyramidal graph. 
+ * A298822 Number of minimum edge covers in the n-dipyramidal graph.
  * @author Georg Fischer
  */
 public class A298822 extends LinearRecurrence {

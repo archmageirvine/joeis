@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244998 Number of ways for five teams of a World Cup football group to each have n goals for and n goals against. 
+ * A244998 Number of ways for five teams of a World Cup football group to each have n goals for and n goals against.
  * @author Georg Fischer
  */
 public class A244998 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002559 Markoff (or Markov) numbers: union of positive integers <code>x,</code> y, z satisfying <code>x^2 +</code> y^2 + z^2 = 3xyz.
+ * A002559 Markoff (or Markov) numbers: union of positive integers <code>x, y, z</code> satisfying <code>x^2 + y^2 + z^2 = 3xyz</code>.
  * @author Sean A. Irvine
  */
 public class A002559 implements Sequence {

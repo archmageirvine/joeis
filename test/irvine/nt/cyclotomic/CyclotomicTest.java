@@ -11,20 +11,15 @@ public class CyclotomicTest extends TestCase {
 
   public void testCyclotomicBad() {
     try {
-      Cyclotomic.cyclotomic(0, 0);
-      fail();
-    } catch (final ArithmeticException e) {
-      assertEquals("n must be positive", e.getMessage());
-    }
-    try {
       Cyclotomic.cyclotomic(-1, 0);
       fail();
     } catch (final ArithmeticException e) {
-      assertEquals("n must be positive", e.getMessage());
+      assertEquals("n must be nonnegative", e.getMessage());
     }
   }
 
   public void testCyclotomicSmall() {
+    assertEquals(-5, Cyclotomic.cyclotomic(0, -5).intValue());
     assertEquals(-6, Cyclotomic.cyclotomic(1, -5).intValue());
     assertEquals(-5, Cyclotomic.cyclotomic(1, -4).intValue());
     assertEquals(-4, Cyclotomic.cyclotomic(1, -3).intValue());

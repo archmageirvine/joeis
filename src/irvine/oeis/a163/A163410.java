@@ -8,7 +8,7 @@ import irvine.util.string.StringUtils;
 import java.util.ArrayList;
 
 /**
- * A163410 A positive integer is included if it is a palindrome when written in binary, and it is not divisible by any primes that are not binary palindromes.
+ * A163410 A positive integer is included if it is a palindrome when written in binary, and it is not divisible by <code>any</code> primes that are not binary palindromes.
  * @author Sean A. Irvine
  */
 public class A163410 implements Sequence {

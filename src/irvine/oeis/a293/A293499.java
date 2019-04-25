@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293499 Number of unlabeled hereditary semiorders on n points. 
+ * A293499 Number of unlabeled hereditary semiorders on n points.
  * @author Georg Fischer
  */
 public class A293499 extends LinearRecurrence {

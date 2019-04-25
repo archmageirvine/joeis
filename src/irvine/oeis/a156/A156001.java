@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156001 Number of cycles of length 4 in the queen's graph associated with <code>an n</code> X n chessboard.
+ * A156001 Number of cycles of length 4 in the queen's graph associated with an n X n chessboard.
  * @author Sean A. Irvine
  */
 public class A156001 extends LinearRecurrence {

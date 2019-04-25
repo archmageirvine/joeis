@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226205 <code>a(n) =</code> F(n)^2 - F(n-1)^2 or F(n+1) * F(n-2) where F(n) = A000045(n), the Fibonacci numbers.
+ * A226205 <code>a(n) = F(n)^2 - F(n-1)^2</code> or <code>F(n+1) * F(n-2)</code> where <code>F(n) =</code> A000045(n), the Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A226205 extends LinearRecurrence {

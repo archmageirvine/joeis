@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A050445 Each prime appears later in the alphabetical order (in American English) than the one before.
+ * A050445 Each prime appears later in the alphabetical order <code>(in</code> American English) than the one before.
  * @author Georg Fischer
  */
 public class A050445 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 
 /**
- * A018810 Number of lines through exactly 3 points of <code>an n</code> X n grid of points.
+ * A018810 Number of lines through exactly 3 points of an n X n grid of points.
  * @author Sean A. Irvine
  */
 public class A018810 extends A018809 {

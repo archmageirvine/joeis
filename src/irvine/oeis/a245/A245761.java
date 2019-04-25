@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A245761 Numbers with a maximal multiplicative persistence of 1 in any base.
+ * A245761 Numbers with a maximal multiplicative persistence of <code>1 in any</code> base.
  * @author Georg Fischer
  */
 public class A245761 extends FiniteSequence {

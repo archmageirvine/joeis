@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049673 <code>a(n) =</code> (F(3n) + F(n))/3, where F = A000045 (the Fibonacci sequence).
+ * A049673 <code>a(n) = (F(3n) + F(n))/3,</code> where F = A000045 (the Fibonacci sequence).
  * @author Sean A. Irvine
  */
 public class A049673 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002070 Coefficient of x^p (p = n-th prime) in <code>x *</code> Product_{k&gt;=1} <code>(1-x^k)^2*(1-x^11k)^2</code>.
+ * A002070 Coefficient of x^p (p = n-th prime) in <code>x * Product_{k&gt;=1} (1-x^k)^2*(1-x^11k)^2</code>.
  * @author Sean A. Irvine
  */
 public class A002070 implements Sequence {

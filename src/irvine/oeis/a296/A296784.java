@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296784 Detour index for the n X n torus grid graph. 
+ * A296784 Detour index for the n X n torus grid graph.
  * @author Georg Fischer
  */
 public class A296784 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000603 Number of nonnegative solutions to <code>x^2 +</code> y^2 <code>&lt;= n^2</code>.
+ * A000603 Number of nonnegative solutions to <code>x^2 + y^2 &lt;= n^2</code>.
  * @author Sean A. Irvine
  */
 public class A000603 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001007 <code>a(n) = (</code> Sum C(p,i); i=1,...,floor(2p/3) <code>) /</code> p^2, where p = prime(n).
+ * A001007 <code>a(n) = (</code> Sum C(p,i); <code>i=1,...</code>,floor(2p/3) <code>) /</code> p^2, where p = prime(n).
  * @author Sean A. Irvine
  */
 public class A001007 implements Sequence {

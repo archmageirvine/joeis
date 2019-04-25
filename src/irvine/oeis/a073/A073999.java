@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073999 Number of strings of length n over GF(4) with trace 1 and subtrace x where <code>x =</code> RootOf(z^2+z+1).
+ * A073999 Number of strings of length n over <code>GF(4)</code> with trace 1 and subtrace x where <code>x =</code> RootOf(z^2+z+1).
  * @author Sean A. Irvine
  */
 public class A073999 extends LinearRecurrence {

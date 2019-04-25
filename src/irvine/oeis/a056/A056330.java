@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056330 Number of reversible string structures with n beads using exactly six different colors. 
+ * A056330 Number of reversible string structures with n beads using exactly six different colors.
  * @author Georg Fischer
  */
 public class A056330 extends LinearRecurrence {

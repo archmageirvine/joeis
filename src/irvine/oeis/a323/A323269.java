@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A323269 The sequence denoted by h_n used in the calculation of A323260. 
+ * A323269 The sequence denoted by h_n used in the calculation of A323260.
  * @author Georg Fischer
  */
 public class A323269 extends LinearRecurrence {

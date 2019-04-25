@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002346 Consider all primes of form p <code>= (x^2 +</code> 11y^2 <code>)/4</code>; sequence gives values of x.
+ * A002346 Consider all primes of form p <code>= (x^2 + 11y^2 )/4</code>; sequence gives values of x.
  * @author Sean A. Irvine
  */
 public class A002346 implements Sequence {

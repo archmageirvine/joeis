@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079472 Number of perfect matchings on <code>an n</code> X n L-shaped graph.
+ * A079472 Number of perfect matchings on an n X n L-shaped graph.
  * @author Sean A. Irvine
  */
 public class A079472 extends LinearRecurrence {

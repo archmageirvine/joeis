@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A291102 Number of maximal irredundant sets in the n-pan graph. 
+ * A291102 Number of maximal irredundant sets in the n-pan graph.
  * @author Georg Fischer
  */
 public class A291102 extends LinearRecurrence {

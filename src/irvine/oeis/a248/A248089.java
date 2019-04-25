@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248089 <code>a(n) =</code> Sum_{k=0..floor(n/4)} <code>binomial(n-k, 3k)*(-3)^(3k)*4^(n-4k)</code>.
+ * A248089 <code>a(n) = Sum_{k=0..floor(n/4)} binomial(n-k, 3k)*(-3)^(3k)*4^(n-4k)</code>.
  * @author Sean A. Irvine
  */
 public class A248089 extends LinearRecurrence {

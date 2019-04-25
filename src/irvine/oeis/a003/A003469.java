@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003469 Number of minimal covers of <code>an (n +</code> 1)-set by a collection of n nonempty subsets, <code>a(n) =</code> A035348(n,n-1).
+ * A003469 Number of minimal covers of an <code>(n +</code> 1)-set by a collection of n nonempty subsets, <code>a(n) =</code> A035348(n,n-1).
  * @author Sean A. Irvine
  */
 public class A003469 implements Sequence {

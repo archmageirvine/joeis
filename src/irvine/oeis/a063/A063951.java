@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063951 Every number is the sum of 4 squares; these are the odd numbers n such that the first square can be taken to be any positive square <code>&lt; n</code>.
+ * A063951 Every number is the sum of 4 squares; these are the odd numbers n such that the first square can be taken to be <code>any</code> positive square <code>&lt; n</code>.
  * @author Georg Fischer
  */
 public class A063951 extends FiniteSequence {

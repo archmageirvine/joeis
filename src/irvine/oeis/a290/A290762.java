@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290762 Number of minimal edge covers in the n-gear graph. 
+ * A290762 Number of minimal edge covers in the n-gear graph.
  * @author Georg Fischer
  */
 public class A290762 extends LinearRecurrence {

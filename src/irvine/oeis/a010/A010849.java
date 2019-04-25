@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010849 Let S(x,y) = number of lattice paths from <code>(0,0)</code> to <code>(x</code>,y) that use the step set <code>{ (0,1), (1,0), (2,0), (3,0), ....}</code> and never pass below y <code>= x.</code> Sequence gives S(n-3,n).
+ * A010849 Let S(x,y) = number of lattice paths from <code>(0,0)</code> to <code>(x,y)</code> that use the step set <code>{ (0,1), (1,0), (2,0), (3,0), ....}</code> and never pass below <code>y = x.</code> Sequence gives S(n-3,n).
  * @author Sean A. Irvine
  */
 public class A010849 implements Sequence {

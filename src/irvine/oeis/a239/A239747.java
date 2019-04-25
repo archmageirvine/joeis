@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A239747 Super-prime leaders: right-truncatable primes p with property that appending any single decimal digit to p does not produce a prime.
+ * A239747 Super-prime leaders: right-truncatable primes p with property that appending <code>any</code> single decimal digit to p does not produce a prime.
  * @author Georg Fischer
  */
 public class A239747 extends FiniteSequence {

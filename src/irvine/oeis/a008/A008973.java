@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A008973 Fibonacci number F(n) to power F(n).
+ * A008973 Fibonacci number <code>F(n)</code> to power <code>F(n)</code>.
  * @author Sean A. Irvine
  */
 public class A008973 extends A000045 {

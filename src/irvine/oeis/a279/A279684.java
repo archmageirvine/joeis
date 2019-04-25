@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279684 The maximum number of coins that can be processed in n weighings that all are real except for one LHR-coin starting in the heavy or real state. 
+ * A279684 The maximum number of coins that can be processed in n weighings that all are real except for one LHR-coin starting in the heavy or real state.
  * @author Georg Fischer
  */
 public class A279684 extends LinearRecurrence {

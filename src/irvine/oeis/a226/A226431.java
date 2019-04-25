@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226431 The number of permutations of length n in a particular geometric grid class.
+ * A226431 The number of permutations of length <code>n in a</code> particular geometric grid class.
  * @author Sean A. Irvine
  */
 public class A226431 extends LinearRecurrence {

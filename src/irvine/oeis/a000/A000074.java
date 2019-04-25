@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A000074 Number of odd integers <code>&lt;= 2^n</code> of form <code>x^2 +</code> y^2.
+ * A000074 Number of odd integers <code>&lt;= 2^n</code> of form <code>x^2 + y^2</code>.
  * @author Sean A. Irvine
  */
 public class A000074 implements Sequence {

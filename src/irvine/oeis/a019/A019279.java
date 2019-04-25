@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019279 Superperfect numbers: sigma(sigma(n)) <code>= 2n</code> where sigma is the sum-of-divisors function A000203.
+ * A019279 Superperfect numbers: <code>sigma(sigma(n)) = 2n</code> where sigma is the sum-of-divisors function A000203.
  * @author Sean A. Irvine
  */
 public class A019279 implements Sequence {

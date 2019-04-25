@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049221 Number of horizontally convex n-ominoes in which the top row has exactly 1 square, which is not above the rightmost square in the second row. 
+ * A049221 Number of horizontally convex n-ominoes in which the top row has exactly 1 square, which is not above the rightmost square in the second row.
  * @author Georg Fischer
  */
 public class A049221 extends LinearRecurrence {

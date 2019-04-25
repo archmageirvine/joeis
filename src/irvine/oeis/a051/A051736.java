@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051736 Number of 3 X <code>n (0</code>,1)-matrices with no consecutive 1's in any row or column.
+ * A051736 Number of 3 X <code>n (0</code>,1)-matrices with no consecutive 1's in <code>any</code> row or column.
  * @author Sean A. Irvine
  */
 public class A051736 extends LinearRecurrence {

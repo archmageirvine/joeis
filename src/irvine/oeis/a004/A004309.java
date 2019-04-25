@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004309 Hit polynomials, coefficient of y^2 in N_n(y).
+ * A004309 Hit polynomials, coefficient of <code>y^2</code> in N_n(y).
  * @author Sean A. Irvine
  */
 public class A004309 extends A004307 {

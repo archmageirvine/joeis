@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208568 Number of holes in n-th lower case letter of English alphabet (in hand-written form using a cursive script).
+ * A208568 Number of holes in n-th lower case letter of English alphabet <code>(in</code> hand-written form using a cursive script).
  * @author Georg Fischer
  */
 public class A208568 extends FiniteSequence {

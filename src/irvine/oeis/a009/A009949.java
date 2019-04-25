@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009949 Factorial expansion of <code>sqrt(2) =</code> Sum_{n&gt;=1} <code>a(n)/n!,</code> using greedy algorithm.
+ * A009949 Factorial expansion of <code>sqrt(2) = Sum_{n&gt;=1} a(n)/n!,</code> using greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A009949 implements Sequence {

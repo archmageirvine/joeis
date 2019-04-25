@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.IrishGaelic;
 
 /**
- * A001368 Number of letters in n (in Irish Gaelic).
+ * A001368 Number of letters in <code>n (in</code> Irish Gaelic).
  * @author Sean A. Irvine
  */
 public class A001368 implements Sequence {

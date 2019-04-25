@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A047449 Numbers that are primitively represented by x^2+y^2+z^2.
+ * A047449 Numbers that are primitively represented by <code>x^2+y^2+z^2</code>.
  * @author Sean A. Irvine
  */
 public class A047449 extends LinearRecurrence {

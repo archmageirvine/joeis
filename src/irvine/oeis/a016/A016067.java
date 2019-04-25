@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016067 Consider all ways of writing a number as p+2m^2 where p is 1 or a prime and m <code>&gt;= 0</code>; sequence gives numbers that are expressible in at least 2 more ways than any smaller number.
+ * A016067 Consider all ways of writing a number as p+2m^2 where p is 1 or a prime and m <code>&gt;= 0</code>; sequence gives numbers that are expressible in at least 2 more ways than <code>any</code> smaller number.
  * @author Sean A. Irvine
  */
 public class A016067 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000262 Number of "sets of lists": number of partitions of <code>{1,...,n}</code> into any number of lists, where a list means an ordered subset.
+ * A000262 Number of "sets of lists": number of partitions of <code>{1,...,n}</code> into <code>any</code> number of lists, where a list means an ordered subset.
  * @author Sean A. Irvine
  */
 public class A000262 implements Sequence {

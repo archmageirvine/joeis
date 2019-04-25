@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103157 Number of ways to choose 4 distinct points from <code>an (n+1)</code> X <code>(n+1)</code> X <code>(n+1)</code> lattice cube.
+ * A103157 Number of ways to choose 4 distinct points from an <code>(n+1)</code> X <code>(n+1)</code> X <code>(n+1)</code> lattice cube.
  * @author Sean A. Irvine
  */
 public class A103157 extends LinearRecurrence {

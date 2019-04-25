@@ -5,7 +5,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a064.A064987;
 
 /**
- * A000441 <code>a(n) =</code> Sum_{k=1..n-1} k*sigma(k)*sigma(n-k).
+ * A000441 <code>a(n) = Sum_{k=1..n-1} k*sigma(k)*sigma(n-k)</code>.
  * @author Sean A. Irvine
  */
 public class A000441 extends ConvolutionSequence {

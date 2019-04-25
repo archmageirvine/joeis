@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A147636 <code>a(n) =</code> least n-distinct-decimal-digit number such that the string formed by the last k digits is divisible by k for any <code>1&lt;=k&lt;=n</code>.
+ * A147636 <code>a(n) =</code> least n-distinct-decimal-digit number such that the string formed by the last k digits is divisible by k for <code>any 1&lt;=k&lt;=n</code>.
  * @author Georg Fischer
  */
 public class A147636 extends FiniteSequence {

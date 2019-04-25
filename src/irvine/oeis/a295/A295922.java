@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295922 Number of (not necessarily maximum) cliques in the n-halved cube graph. 
+ * A295922 Number of (not necessarily maximum) cliques in the n-halved cube graph.
  * @author Georg Fischer
  */
 public class A295922 extends LinearRecurrence {

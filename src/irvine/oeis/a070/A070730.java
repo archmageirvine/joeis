@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A070730 Euro coinage (in cents) from smallest physical size to largest.
+ * A070730 Euro coinage <code>(in</code> cents) from smallest physical size to largest.
  * @author Georg Fischer
  */
 public class A070730 extends FiniteSequence {

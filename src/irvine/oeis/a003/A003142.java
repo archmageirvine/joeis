@@ -11,7 +11,7 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * A003142 Largest subset of 3 X 3 X <code>...</code> X 3 cube (in n dimensions) with no 3 points collinear.
+ * A003142 Largest subset of 3 X 3 X <code>...</code> X 3 cube <code>(in n</code> dimensions) with no 3 points collinear.
  * @author Sean A. Irvine
  */
 public class A003142 implements Sequence {

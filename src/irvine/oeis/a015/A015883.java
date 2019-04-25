@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015883 Numbers n such that sigma(n) = sigma(n <code>+ 13)</code>.
+ * A015883 Numbers n such that <code>sigma(n) = sigma(n + 13)</code>.
  * @author Sean A. Irvine
  */
 public class A015883 implements Sequence {

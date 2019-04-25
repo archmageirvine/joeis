@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A323225 <code>a(n) = ((2^n*n +</code> i*(1 - i)^n - i*(1 + i)^n))/4, where i is the imaginary unit.
+ * A323225 <code>a(n) = ((2^n*n + i*(1 - i)^n - i*(1 + i)^n))/4,</code> where i is the imaginary unit.
  * @author Georg Fischer
  */
 public class A323225 extends LinearRecurrence {

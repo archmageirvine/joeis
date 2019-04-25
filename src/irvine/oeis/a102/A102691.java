@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102691 Least n-expodigital number (i.e., numbers m such that m^n has exactly n decimal digits).
+ * A102691 Least n-expodigital number <code>(i</code>.e., numbers m such that m^n has exactly n decimal digits).
  * @author Georg Fischer
  */
 public class A102691 extends FiniteSequence {

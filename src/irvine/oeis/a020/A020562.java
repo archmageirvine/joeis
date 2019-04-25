@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020562.
+ * A020562 Number of cyclic multigraphs on n labeled edges (without loops).
  * @author Sean A. Irvine
  */
 public class A020562 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006581 <code>a(n) =</code> Sum_{k=1..n-1} <code>(k</code> AND <code>n-k)</code>.
+ * A006581 <code>a(n) = Sum_{k=1..n-1} (k</code> AND <code>n-k)</code>.
  * @author Sean A. Irvine
  */
 public class A006581 implements Sequence {

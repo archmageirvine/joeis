@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A165920 Number of 2-elements orbits of S3 action on irreducible polynomials of degree <code>3n, n &gt; 0,</code> over GF(2).
+ * A165920 Number of 2-elements orbits of S3 action on irreducible polynomials of degree <code>3n, n &gt; 0,</code> over <code>GF(2)</code>.
  * @author Sean A. Irvine
  */
 public class A165920 implements Sequence {

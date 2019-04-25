@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120962 Final digit (in decimal system) of <code>n^(n^n),</code> i.e., <code>n^(n^n) mod 10</code>.
+ * A120962 Final digit <code>(in</code> decimal system) of <code>n^(n^n), i</code>.e., <code>n^(n^n) mod 10</code>.
  * @author Sean A. Irvine
  */
 public class A120962 extends LinearRecurrence {

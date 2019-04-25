@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296995 Number of edge covers in the n-dipyramidal graph. 
+ * A296995 Number of edge covers in the n-dipyramidal graph.
  * @author Georg Fischer
  */
 public class A296995 extends LinearRecurrence {

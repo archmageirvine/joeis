@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140833 Sum of Fibonacci numbers between F(-n)....F(n), inclusive.
+ * A140833 Sum of Fibonacci numbers between <code>F(-n)....F(n),</code> inclusive.
  * @author Sean A. Irvine
  */
 public class A140833 extends LinearRecurrence {

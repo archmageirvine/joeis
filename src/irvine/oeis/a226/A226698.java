@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226698 Central symmetric closed knight's tour on <code>an 8x8</code> board, attributed to Euler. Position after n-th move.
+ * A226698 Central symmetric closed knight's tour on an <code>8x8</code> board, attributed to Euler. Position after n-th move.
  * @author Georg Fischer
  */
 public class A226698 extends FiniteSequence {

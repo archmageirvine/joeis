@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045794 Consider all quadruples <code>{a,b</code>,c,d} which reach <code>{k,k,k,k}</code> in n steps under map <code>{a,b</code>,c,d}-&gt;{|a-b|,|b-c|,|c-d|,|d-a|}; look at max{a,b,c,d}; sequence gives minimal value of this.
+ * A045794 Consider all quadruples <code>{a,b</code>,c,d} which reach <code>{k,k,k,k} in n</code> steps under map <code>{a,b</code>,c,d}-&gt;{|a-b|,|b-c|,|c-d|,|d-a|}; look at max{a,b,c,d}; sequence gives minimal value of this.
  * @author Sean A. Irvine
  */
 public class A045794 extends LinearRecurrence {

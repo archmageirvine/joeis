@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284743 Positive numbers that are not the sum of (any number of) distinct perfect powers (A001597).
+ * A284743 Positive numbers that are not the sum of <code>(any</code> number of) distinct perfect powers (A001597).
  * @author Georg Fischer
  */
 public class A284743 extends FiniteSequence {

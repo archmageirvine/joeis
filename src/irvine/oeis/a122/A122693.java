@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A122693 Bishops on <code>an n</code> X n board (see Robinson paper for details).
+ * A122693 Bishops on an n X n board (see Robinson paper for details).
  * @author Sean A. Irvine
  */
 public class A122693 implements Sequence {

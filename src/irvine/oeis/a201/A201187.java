@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A201187 Number of distinct planar nets of the Platonic solids (in the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
+ * A201187 Number of distinct planar nets of the Platonic solids <code>(in</code> the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
  * @author Georg Fischer
  */
 public class A201187 extends FiniteSequence {

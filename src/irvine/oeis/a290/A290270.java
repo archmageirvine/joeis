@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290270 Number of minimal dominating sets in the n-wheel graph. 
+ * A290270 Number of minimal dominating sets in the n-wheel graph.
  * @author Georg Fischer
  */
 public class A290270 extends LinearRecurrence {

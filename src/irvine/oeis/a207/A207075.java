@@ -3,7 +3,7 @@ package irvine.oeis.a207;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A207075 Nonnegative values x of solutions <code>(x,</code> y) to the Diophantine equation <code>x^2 + (x+479)^2 =</code> y^2.
+ * A207075 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2 + (x+479)^2 = y^2</code>.
  * @author Sean A. Irvine
  */
 public class A207075 extends LinearRecurrence {

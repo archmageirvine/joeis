@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006687 Duodecimal primes: p <code>= (x^12 +</code> y^12 <code>)/(x^4 +</code> y^4 ).
+ * A006687 Duodecimal primes: p <code>= (x^12 + y^12 )/(x^4 + y^4 )</code>.
  * @author Sean A. Irvine
  */
 public class A006687 implements Sequence {

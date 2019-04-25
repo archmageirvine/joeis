@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099587 <code>a(n) =</code> coefficient of x in <code>(1+x)^n mod (1+x^4)</code>.
+ * A099587 <code>a(n) =</code> coefficient of <code>x in (1+x)^n mod (1+x^4)</code>.
  * @author Sean A. Irvine
  */
 public class A099587 extends LinearRecurrence {

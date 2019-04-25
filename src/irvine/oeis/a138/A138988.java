@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138988 <code>a(n) =</code> Frobenius number for 8 successive numbers = F(n+1,n+2,n+3,n+4,n+5,n+6,n+7,n+8).
+ * A138988 <code>a(n) =</code> Frobenius number for 8 successive numbers <code>= F(n+1,n+2,n+3,n+4,n+5,n+6,n+7,n+8)</code>.
  * @author Sean A. Irvine
  */
 public class A138988 extends LinearRecurrence {

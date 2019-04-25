@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018804 Pillai's arithmetical function: Sum_{k=1..n} gcd(k, <code>n)</code>.
+ * A018804 Pillai's arithmetical function: <code>Sum_{k=1..n}</code> gcd(k, <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A018804 implements Sequence {

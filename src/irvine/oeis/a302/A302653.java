@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302653 Number of minimum total dominating sets in the n-cycle graph. 
+ * A302653 Number of minimum total dominating sets in the n-cycle graph.
  * @author Georg Fischer
  */
 public class A302653 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063208 Dimension of the space of weight <code>2n</code> cuspidal newforms for Gamma_0( <code>36 )</code>.
+ * A063208 Dimension of the space of weight <code>2n</code> cuspidal newforms for Gamma_0( 36 ).
  * @author Sean A. Irvine
  */
 public class A063208 extends LinearRecurrence {

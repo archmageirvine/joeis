@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000129;
 
 /**
- * A246556 <code>a(n) =</code> smallest prime which divides Pell(n) = A000129(n) but does not divide any Pell(k) for <code>k&lt;n,</code> or <code>-1</code> if no such prime exists.
+ * A246556 <code>a(n) =</code> smallest prime which divides Pell(n) = A000129(n) but does not divide <code>any</code> Pell(k) for <code>k&lt;n,</code> or <code>-1</code> if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A246556 extends A000129 {

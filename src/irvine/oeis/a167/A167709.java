@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167709 Numbers y such that 19*y^2+81 is a square of integer.
+ * A167709 Numbers y such that <code>19*y^2+81</code> is a square of integer.
  * @author Sean A. Irvine
  */
 public class A167709 extends LinearRecurrence {

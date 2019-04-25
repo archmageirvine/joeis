@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005102 Minimal determinant of any n-dimensional norm 2 lattice.
+ * A005102 Minimal determinant of <code>any</code> n-dimensional norm 2 lattice.
  * @author Sean A. Irvine
  */
 public class A005102 implements Sequence {

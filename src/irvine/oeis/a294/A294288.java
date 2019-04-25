@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294288 Sum of the fourth powers of the parts in the partitions of n into two distinct parts. 
+ * A294288 Sum of the fourth powers of the parts in the partitions of n into two distinct parts.
  * @author Georg Fischer
  */
 public class A294288 extends LinearRecurrence {

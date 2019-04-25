@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A303834 Number of total dominating sets in the n-gear graph. 
+ * A303834 Number of total dominating sets in the n-gear graph.
  * @author Georg Fischer
  */
 public class A303834 extends LinearRecurrence {

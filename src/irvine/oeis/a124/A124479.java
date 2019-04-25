@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124479 From the game of Quod: number of "squares" on <code>an n</code> X n array of points with the four corner points deleted.
+ * A124479 From the game of Quod: number of "squares" on an n X n array of points with the four corner points deleted.
  * @author Sean A. Irvine
  */
 public class A124479 extends LinearRecurrence {

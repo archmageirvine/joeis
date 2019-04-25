@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A123120 Numbers <code>k&gt;0</code> such that m+k is not the sum of m nonzero squares for any m&gt;5.
+ * A123120 Numbers <code>k&gt;0</code> such that m+k is not the sum of m nonzero squares for <code>any</code> m&gt;5.
  * @author Georg Fischer
  */
 public class A123120 extends FiniteSequence {

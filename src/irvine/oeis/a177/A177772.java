@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A177772 Base 10 numbers d_1 d_2 <code>...</code> d_k such that the digits d_i are distinct, and Sum_{i=1..k-1} d_i^i = d_k^k.
+ * A177772 Base 10 numbers d_1 d_2 <code>...</code> d_k such that the digits d_i are distinct, and <code>Sum_{i=1..k-1}</code> d_i^i = d_k^k.
  * @author Georg Fischer
  */
 public class A177772 extends FiniteSequence {

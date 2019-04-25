@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005988 <code>x^3 +</code> n*y^3 <code>= 1</code> is solvable.
+ * A005988 <code>x^3 + n*y^3 = 1</code> is solvable.
  * @author Sean A. Irvine
  */
 public class A005988 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045996 Number of triangles in <code>an n</code> X n grid (or geoplane).
+ * A045996 Number of triangles in an <code>n</code> X n grid (or geoplane).
  * @author Sean A. Irvine
  */
 public class A045996 implements Sequence {

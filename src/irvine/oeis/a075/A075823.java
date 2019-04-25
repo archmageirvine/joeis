@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A075823 Numbers that are not the last two digits (leading zeros omitted) of any perfect power.
+ * A075823 Numbers that are not the last two digits (leading zeros omitted) of <code>any</code> perfect power.
  * @author Georg Fischer
  */
 public class A075823 extends FiniteSequence {

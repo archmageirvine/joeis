@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320524 Number of chiral pairs of a row of n colors using 6 or fewer colors. 
+ * A320524 Number of chiral pairs of a row of n colors using 6 or fewer colors.
  * @author Georg Fischer
  */
 public class A320524 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A298823 Number of minimal total dominating sets in the n-dipyramidal graph. 
+ * A298823 Number of minimal total dominating sets in the n-dipyramidal graph.
  * @author Georg Fischer
  */
 public class A298823 extends LinearRecurrence {

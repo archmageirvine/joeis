@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A003403 G.f.: <code>(1+x^3+x^4+..</code>.+x^12+x^15)/Prod_{i=1..10} (1-x^i).
+ * A003403 G.f.: <code>(1+x^3+x^4+..</code>.+x^12+x^15)/Prod_{i=1..10} <code>(1-x^i)</code>.
  * @author Sean A. Irvine
  */
 public class A003403 extends RatPolyGfSequence {

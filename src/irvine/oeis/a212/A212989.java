@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212989 Number of (w,x,y) with all terms in <code>{0,...,n}</code> and 4*w = 4*x+y.
+ * A212989 Number of (w,x,y) with all terms in <code>{0,...,n}</code> and 4*w <code>= 4*x+y</code>.
  * @author Sean A. Irvine
  */
 public class A212989 extends LinearRecurrence {

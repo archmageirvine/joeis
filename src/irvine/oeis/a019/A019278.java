@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019278 Numbers n such that sigma(sigma(n)) <code>= k*n</code> for some k.
+ * A019278 Numbers n such that <code>sigma(sigma(n)) = k*n</code> for some k.
  * @author Sean A. Irvine
  */
 public class A019278 implements Sequence {

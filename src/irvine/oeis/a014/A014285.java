@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014285 Sum i*prime(i), i=1..n.
+ * A014285 Sum i*prime(i), <code>i=1..n</code>.
  * @author Sean A. Irvine
  */
 public class A014285 extends A000040 {

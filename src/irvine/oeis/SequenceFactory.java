@@ -77,11 +77,13 @@ public final class SequenceFactory {
       System.err.println("Usage: SequenceFactory sequence-id");
       return;
     }
+    boolean generated = false;
     try (final OutputStream out = new BufferedOutputStream(new FileOutputStream(FileDescriptor.out))) {
       final byte[] ls = System.lineSeparator().getBytes(StandardCharsets.US_ASCII);
       final Sequence seq = sequence(args[0]);
       Z z;
       while ((z = seq.next()) != null) {
+        generated = true;
         out.write(z.toString().getBytes(StandardCharsets.US_ASCII));
         out.write(ls);
         out.flush();
@@ -95,6 +97,12 @@ public final class SequenceFactory {
       // Ignore broken pipe error so we don't die on | head etc.
       if (!e.getMessage().contains("Broken pipe")) {
         throw e;
+      }
+    } catch (final UnsupportedOperationException e) {
+      if (generated) {
+        System.err.println("Implementation limits exceeded, cannot generate further terms for " + args[0]);
+      } else {
+        System.err.println("Sorry " + args[0] + " is not yet implemented");
       }
     }
   }

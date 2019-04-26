@@ -50,6 +50,7 @@ A001032 Not obvious how to exclude 842 for example
 A001033 Related A001032
 A001034 Group order
 A001035 Posets [current impl. is a cheat]
+A001062 Sequence is incorrect but not dead
 A001066 Dimensions Lie algebra (depends A003038)
 A001070 Latin squares
 A001071 Polynominoes
@@ -106,6 +107,7 @@ A001531 Self-dual functions
 A001532 Self-dual threshold functions
 A001548 Number of connected linear spaces with n points
 A001568 Latin rectangles
+A001573 Another approximation to A000084(n)
 A001574 In Riordan book but not clear how to compute
 A001575 In Riordan book but not clear how to compute
 A001646 Self-dual codes
@@ -247,7 +249,7 @@ A003018 3^3^... distinct values with different parentheses (likely to overflow q
 A003034 Sylvester's problem: minimal number of ordinary lines through n points in the plan, hard
 A003035 Maximal number of 3-tree rows in n-tree orchard problem
 A003036 Number of simplicial arrangements of n lines in the plane
-A003038 Maximal number of prime implicants of a Boolean function of n variables, hard
+A003039 Maximal number of prime implicants of a Boolean function of n variables, hard
 A003041 A cycle index style problem, have paper
 A003042 Number of directed Hamiltonian cycles (or Gray codes) on n-cube, hard?
 A003055 Match-stick graphs, homeomorphism is hard to understand

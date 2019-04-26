@@ -573,4 +573,8 @@ public class ZTest extends TestCase {
     assertEquals(12, Z.FOUR.lcm(Z.THREE).longValue());
     assertEquals(4, Z.FOUR.lcm(Z.TWO).longValue());
   }
+
+  public void test569() {
+    assertTrue(Z.valueOf(569).isProbablePrime());
+  }
 }

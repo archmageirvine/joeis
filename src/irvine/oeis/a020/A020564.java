@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 import irvine.math.z.Stirling;
 import irvine.math.z.Z;
-import irvine.oeis.a014.A014500;
+import irvine.oeis.a014.A014505;
 
 /**
- * A020562 Number of cyclic multigraphs on n labeled edges (without loops).
+ * A020564 Number of cyclic oriented multigraphs on n labeled arcs (without loops).
  * @author Sean A. Irvine
  */
-public class A020562 extends A014500 {
+public class A020564 extends A014505 {
 
   private final ArrayList<Z> mA = new ArrayList<>();
 

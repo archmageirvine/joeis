@@ -9,16 +9,12 @@ import irvine.oeis.Sequence;
  */
 public class A011799 implements Sequence {
 
-  // Conjectural -- note there appears to be terms missing from this sequence, but
-  // I don't understand enough to tell.
+  // Conjectural
 
-  private long mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      return Z.ONE;
-    }
-    return Z.valueOf(mN).multiply(7).add(1).multiply(mN).divide2().add(3);
+    return Z.valueOf(++mN).multiply(7).add(1).multiply(mN).divide2().add(3);
   }
 }

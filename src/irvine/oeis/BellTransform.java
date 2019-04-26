@@ -34,12 +34,3 @@ public class BellTransform extends MemoryFunction2<Integer, Q> {
     return sum;
   }
 }
-
-/*
-def bell_trans(n,k,a):
-    @cached_function
-    def T(n, k):
-        if k==0: return a[0]^n
-        return sum(binomial(n-1,j-1)*a[j]*T(n-j,k-1) for j in (0..n-k+1))
-    return T(n,k)
- */

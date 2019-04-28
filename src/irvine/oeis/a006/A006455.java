@@ -176,7 +176,7 @@ public class A006455 implements Sequence {
 
   // Simpler implementation based on Knuth's POSET0.  Much slower for larger n
 //  @Override
-//  public Z next() {
+//  public Z nextQ() {
 //    if (++mN < 2) {
 //      return Z.ONE;
 //    } else if (mN == 2) {

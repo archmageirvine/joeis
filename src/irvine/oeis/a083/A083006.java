@@ -24,7 +24,7 @@ public class A083006 implements Sequence {
     while (true) {
       Q sum = Q.ZERO;
       if (++mN > 0) {
-        mBern.add(mBS.next());
+        mBern.add(mBS.nextQ());
         for (int k = 0; k < mN; ++k) {
           final Q b = mBern.get(k);
           if (!Q.ZERO.equals(b)) {

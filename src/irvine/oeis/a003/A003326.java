@@ -17,8 +17,8 @@ public class A003326 implements Sequence {
   @Override
   public Z next() {
     mN -= 4;
-    mB.next();
-    final Q b = mB.next().divide(mN);
+    mB.nextQ();
+    final Q b = mB.nextQ().divide(mN);
     return b.signedAdd(b.signum() > 0, Q.HALF).toZ();
   }
 }

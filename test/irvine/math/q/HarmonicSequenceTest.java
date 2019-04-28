@@ -11,8 +11,8 @@ public class HarmonicSequenceTest extends TestCase {
 
   public void test() {
     final HarmonicSequence h = new HarmonicSequence();
-    assertEquals(Q.ONE, h.next());
-    assertEquals(new Q(3, 2), h.next());
-    assertEquals(new Q(11, 6), h.next());
+    assertEquals(Q.ONE, h.nextQ());
+    assertEquals(new Q(3, 2), h.nextQ());
+    assertEquals(new Q(11, 6), h.nextQ());
   }
 }

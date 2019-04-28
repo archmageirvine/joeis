@@ -25,7 +25,7 @@ public class A003301 implements Sequence {
     }
 
     @Override
-    public Q next() {
+    public Q nextQ() {
       if (mA == null) {
         mA = mB0;
         return mB0;
@@ -59,7 +59,7 @@ public class A003301 implements Sequence {
 
   @Override
   public Z next() {
-    return toZ(mSeq.next());
+    return toZ(mSeq.nextQ());
   }
 
 }

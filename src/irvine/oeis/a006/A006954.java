@@ -18,8 +18,8 @@ public class A006954 implements Sequence {
     ++mN;
     if (mN != 1 && (mN & 1) == 1) {
       ++mN;
-      mB.next(); // skip odd
+      mB.nextQ(); // skip odd
     }
-    return mB.next().den();
+    return mB.nextQ().den();
   }
 }

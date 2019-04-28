@@ -51,7 +51,7 @@ public class A014423 implements Sequence {
 //  }
 //
 //  @Override
-//  public Z next() {
+//  public Z nextQ() {
 //    while (true) {
 //      mP = mPrime.nextPrime(mP);
 //      System.out.println("p=" + mP);

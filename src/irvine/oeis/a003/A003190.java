@@ -181,7 +181,7 @@ public class A003190 extends MemoryFunction2<Integer, Q> implements Sequence {
 //    final int[] i = new int[r + 1];
 //    int[] p;
 //    int s = 0;
-//    while ((p = pi.next()) != null) {
+//    while ((p = pi.nextQ()) != null) {
 //      IntegerPartition.toCountForm(p, i);
 //      int prod = 1;
 //      for (int k = 1; k < i.length; ++k) {

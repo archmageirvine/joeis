@@ -119,7 +119,7 @@ public class A002369 implements Sequence {
   }
 
   @Override
-  public Z next() {
+  public Z nextQ() {
     final ArrayList<ArrayList<Integer>> strip = strip(++mN);
     mFolded.clear();
     fold(strip);

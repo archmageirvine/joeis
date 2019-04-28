@@ -41,7 +41,7 @@ public class A002660 extends A000203 {
 //     private int mN = 0;
 
 //     @Override
-//     public Z next() {
+//     public Z nextQ() {
 //       return RING.coeff(NUM, DEN, ++mN);
 //     }
 //   }
@@ -49,6 +49,6 @@ public class A002660 extends A000203 {
 //   /** Construct the sequence. */
 //   public A002660() {
 //     super(new MySequence(), 0);
-//     next();
+//     nextQ();
 //   }
 // }

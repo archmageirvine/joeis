@@ -21,7 +21,7 @@ public class A006934 extends MemoryFunction1<Q> implements Sequence {
 
   private Q bernoulli(final int k) {
     while (k >= mB.size()) {
-      mB.add(mBernoulliSequence.next());
+      mB.add(mBernoulliSequence.nextQ());
     }
     return mB.get(k);
   }

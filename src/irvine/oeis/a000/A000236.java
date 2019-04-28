@@ -117,7 +117,7 @@ public class A000236 implements Sequence {
     while (true) {
       long p = 1;
       int k = -1;
-      final DynamicLongArray next = new DynamicLongArray();
+      final DynamicLongArray nextQ = new DynamicLongArray();
       long lim = 1;
       for (int j = 0; j < m; ++j) {
         lim *= m;
@@ -129,9 +129,9 @@ public class A000236 implements Sequence {
           System.out.println("r=" + r + " m=" + m + " p=" + p + " k=" + k);
           return Z.valueOf(m - 1);
         }
-        next.set(k, r);
+        nextQ.set(k, r);
       }
-      old = next;
+      old = nextQ;
       ++m;
     }
     */

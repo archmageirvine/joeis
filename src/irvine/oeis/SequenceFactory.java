@@ -100,7 +100,7 @@ public final class SequenceFactory {
       }
     } catch (final UnsupportedOperationException e) {
       if (generated) {
-        System.err.println("Implementation limits exceeded, cannot generate further terms for " + args[0]);
+        System.err.println("Implementation limits exceeded, cannot generate further terms for " + args[0] + "\n" + e.getMessage());
       } else {
         System.err.println("Sorry " + args[0] + " is not yet implemented");
       }

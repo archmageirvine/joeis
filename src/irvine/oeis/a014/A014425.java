@@ -32,7 +32,7 @@ public class A014425 implements Sequence {
 //  }
 //
 //  @Override
-//  public Z next() {
+//  public Z nextQ() {
 //    while (true) {
 //      mP = mPrime.nextPrime(mP);
 //      final int epact = epact(mP);

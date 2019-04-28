@@ -16,8 +16,8 @@ public class A001469 implements Sequence {
 
   @Override
   public Z next() {
-    mSeq.next();
-    return mSeq.next().multiply(2).multiply(new Q(Z.ONE.subtract(Z.ONE.shiftLeft(2 * ++mN)), Z.ONE)).toZ();
+    mSeq.nextQ();
+    return mSeq.nextQ().multiply(2).multiply(new Q(Z.ONE.subtract(Z.ONE.shiftLeft(2 * ++mN)), Z.ONE)).toZ();
   }
 }
 

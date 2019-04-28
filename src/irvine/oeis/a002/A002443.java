@@ -13,8 +13,8 @@ public class A002443 extends A002444 {
 
   @Override
   public Z next() {
-    final Z res = mB.next().multiply(super.next()).toZ().abs();
-    mB.next();
+    final Z res = mB.nextQ().multiply(super.next()).toZ().abs();
+    mB.nextQ();
     return res;
   }
 }

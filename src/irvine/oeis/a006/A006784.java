@@ -10,8 +10,6 @@ import irvine.oeis.Sequence;
  */
 public class A006784 implements Sequence {
 
-  // Engel expansion
-
   private CR mA = CR.PI;
 
   @Override

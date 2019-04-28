@@ -21,7 +21,7 @@ public class A003282 implements Sequence {
     private long mN = 0;
 
     @Override
-    public Q next() {
+    public Q nextQ() {
       if (mC == null) {
         mC = Q.ONE;
       } else {
@@ -46,7 +46,7 @@ public class A003282 implements Sequence {
 
   @Override
   public Z next() {
-    return toZ(mSeq.next());
+    return toZ(mSeq.nextQ());
   }
 
 }

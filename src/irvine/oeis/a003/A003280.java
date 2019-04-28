@@ -28,7 +28,7 @@ public class A003280 implements Sequence {
     }
 
     @Override
-    public Q next() {
+    public Q nextQ() {
       if (mB == null) {
         mB = mB0;
         return mB;
@@ -61,7 +61,7 @@ public class A003280 implements Sequence {
 
   @Override
   public Z next() {
-    return mSeq.next().num();
+    return mSeq.nextQ().num();
   }
 
 }

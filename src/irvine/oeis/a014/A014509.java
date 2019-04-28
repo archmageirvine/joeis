@@ -16,8 +16,8 @@ public class A014509 implements Sequence {
 
   @Override
   public Z next() {
-    final Q res = mBernoulli.next();
-    mBernoulli.next(); // skip odd
+    final Q res = mBernoulli.nextQ();
+    mBernoulli.nextQ(); // skip odd
     return res.abs().floor().multiply(res.signum());
   }
 }

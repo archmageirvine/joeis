@@ -20,7 +20,7 @@ public class A003015 implements Sequence {
 //
 //
 //  @Override
-//  public Z next() {
+//  public Z nextQ() {
 //    while (true) {
 //      final Z n = mB.multiply(mC);
 //      final Z m = mA.multiply(mB);

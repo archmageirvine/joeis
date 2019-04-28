@@ -22,10 +22,10 @@ public class A002304 implements Sequence {
 //    // Start at 2 to exclude -n/6*x^2
 //    for (int k = 2; k <= n; ++k) {
 //      final int j = 2 * k;
-//      final Q coeff = bernoulli.next().multiply(Z.ONE.shiftLeft(j)).divide(mF.factorial(j).multiply(j));
+//      final Q coeff = bernoulli.nextQ().multiply(Z.ONE.shiftLeft(j)).divide(mF.factorial(j).multiply(j));
 //      final Polynomial<Q> t = RING.monomial(coeff, j);
 //      s = RING.add(s, t);
-//      bernoulli.next();
+//      bernoulli.nextQ();
 //    }
 //    s = RING.multiply(s, new Q(-n));
 //    //s = RING.subtract(s, RING.monomial(new Q(-n, 6), 2)); // take out exp(-n/6 * x^2)

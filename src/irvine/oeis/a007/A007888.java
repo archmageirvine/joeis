@@ -31,8 +31,8 @@ public class A007888 implements Sequence {
 
   private Q bern(final int n) {
     while (n >= mBernoulli.size()) {
-      mBernoulli.add(mBernoulliSequence.next());
-      mBernoulliSequence.next(); // skip odd terms
+      mBernoulli.add(mBernoulliSequence.nextQ());
+      mBernoulliSequence.nextQ(); // skip odd terms
     }
     return mBernoulli.get(n);
   }

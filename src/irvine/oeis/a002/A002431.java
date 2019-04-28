@@ -21,8 +21,8 @@ public class A002431 implements Sequence {
       return Z.ONE;
     }
     mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
-    mB.next();
-    final Q b = mB.next();
+    mB.nextQ();
+    final Q b = mB.nextQ();
     final Z s = Z.ONE.shiftLeft(2 * mN);
     final Z t = b.multiply(s).divide(mF).num();
     return t.signum() < 0 ? t : t.negate();

@@ -16,11 +16,11 @@ public class A008380 implements Sequence {
 
   @Override
   public Z next() {
-    mH.next();
+    mH.nextQ();
     if (++mN > 1) {
       mF = mF.multiply(2 * mN - 1).multiply(2 * mN - 2);
     }
-    return mH.next().multiply(mF).toZ();
+    return mH.nextQ().multiply(mF).toZ();
   }
 }
 

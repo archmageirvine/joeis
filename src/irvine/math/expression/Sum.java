@@ -40,7 +40,7 @@ public class Sum extends AbstractExpression {
     Expression res = Divide.create(new Power(n1, p1), p1);
     final BernoulliSequence b = new BernoulliSequence(1);
     for (int k = 1; k <= p; ++k) {
-      final Q bernoulli = b.next();
+      final Q bernoulli = b.nextQ();
       if (bernoulli.signum() != 0) {
         final Q coeff = bernoulli.multiply(Binomial.binomial(p, k)).divide(p - k + 1);
         res = Add.create(res, Multiply.create(new LiteralQ(coeff), new Power(n1, Subtract.create(p1, new LiteralZ(k)))));

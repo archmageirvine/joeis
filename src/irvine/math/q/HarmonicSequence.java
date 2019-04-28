@@ -12,7 +12,7 @@ public class HarmonicSequence implements RationalSequence {
   private Q mA = Q.ZERO;
 
   @Override
-  public final Q next() {
+  public final Q nextQ() {
     mA = mA.add(new Q(1, ++mN));
     return mA;
   }

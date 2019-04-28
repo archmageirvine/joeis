@@ -17,8 +17,8 @@ public class A001332 implements Sequence {
 
   @Override
   public Z next() {
-    final Q b = mB.next();
-    mB.next();
+    final Q b = mB.nextQ();
+    mB.nextQ();
     if (++mN > 1) {
       mF = mF.multiply(mN);
       mF = mF.multiply(++mN);

@@ -67,8 +67,8 @@ public class A003614 extends A003613 {
 //  }
 //
 //  @Override
-//  public Z next() {
-//    return super.next().multiply(24) // updates mN, mT
+//  public Z nextQ() {
+//    return super.nextQ().multiply(24) // updates mN, mT
 //      .add((mN & 1) == 0 ? Z.ZERO : eval(substitutePower(mT.get((mN - 1) / 2), 2)).multiply(36))
 //      .add(eval(square(mN)).multiply(12))
 //      .add(eval(quartic(mN)))

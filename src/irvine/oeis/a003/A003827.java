@@ -129,7 +129,7 @@ public class A003827 extends MemorySequence {
   }
 
   @Override
-  public Z next() {
+  public Z nextQ() {
     mCount = 0;
     mTotal = 0;
     solve(new AlternatingSignMatrix(++mN), 0, 0, 0);

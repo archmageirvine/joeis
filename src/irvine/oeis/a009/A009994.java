@@ -15,7 +15,7 @@ public class A009994 implements Sequence {
 //  }
 //
 //  @Override
-//  public Z next() {
+//  public Z nextQ() {
 //    final Z t = mSeq.pollFirst();
 //    final long r = t.mod(10);
 //    final Z u = t.multiply(10);

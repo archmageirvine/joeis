@@ -19,8 +19,8 @@ public class A002430 implements Sequence {
   public Z next() {
     ++mN;
     mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
-    mB.next();
-    final Q b = mB.next();
+    mB.nextQ();
+    final Q b = mB.nextQ();
     final Z s = Z.ONE.shiftLeft(2 * mN);
     return b.multiply(s.multiply(s.subtract(1))).divide(mF).num().abs();
   }

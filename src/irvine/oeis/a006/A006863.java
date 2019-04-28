@@ -19,8 +19,8 @@ public class A006863 implements Sequence {
     if (mN == 0) {
       return Z.ONE;
     }
-    mB.next(); // skip odd terms
-    return mB.next().divide(mN).den();
+    mB.nextQ(); // skip odd terms
+    return mB.nextQ().divide(mN).den();
   }
 }
 

@@ -15,7 +15,7 @@ public class A046858 implements Sequence {
 //    final IntegerPartition ip = new IntegerPartition(p);
 //    final int[] a = new int[p + 1];
 //    int[] part;
-//    while ((part = ip.next()) != null) {
+//    while ((part = ip.nextQ()) != null) {
 //      IntegerPartition.toCountForm(part, a);
 //      final MultivariateMonomial mm = new MultivariateMonomial();
 //      for (int k = 1; k < a.length; ++k) {

@@ -21,7 +21,7 @@ public class A005146 implements Sequence {
   private final List<Q> mS = new ArrayList<>();
   {
     mS.add(null);
-    mS.add(mB.next().divide(2));
+    mS.add(mB.nextQ().divide(2));
   }
 
   protected Z value(final Q q) {
@@ -31,8 +31,8 @@ public class A005146 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    mB.next();
-    final Q t = mB.next().divide(2 * mN + 2).divide(2 * mN + 1);
+    mB.nextQ();
+    final Q t = mB.nextQ().divide(2 * mN + 2).divide(2 * mN + 1);
     mS.add((mN & 1) == 0 ? t : t.negate());
     // This could be made incremental with more effort
     final Q[][] m = new Q[mN + 1][mN + 1];

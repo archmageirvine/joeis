@@ -14,8 +14,8 @@ public class A000367 implements Sequence {
 
   @Override
   public Z next() {
-    final Z q = mB.next().num();
-    mB.next();
+    final Z q = mB.nextQ().num();
+    mB.nextQ();
     return q;
   }
 }

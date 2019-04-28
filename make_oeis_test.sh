@@ -44,7 +44,7 @@ EOF
 seq=$1
 max_terms=$2
 
-if [ "$seq" == "" ]; then
+if [ "${seq}" == "" ] || [ ${#seq} != 7 ]; then
     echo "Usage: $0 Annnnnn [max-terms]"
     exit
 fi

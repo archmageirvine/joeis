@@ -20,12 +20,12 @@ public class BernoulliSequence implements RationalSequence {
    */
   public BernoulliSequence(final long skip) {
     for (long k = 0; k < skip; ++k) {
-      next();
+      nextQ();
     }
   }
 
   @Override
-  public final Q next() {
+  public final Q nextQ() {
     if (++mN == 0) {
       mB.set(0, Q.ONE);
       return Q.ONE;
@@ -46,7 +46,7 @@ public class BernoulliSequence implements RationalSequence {
    */
   public Q get(final long n) {
     while (mB.length() <= n) {
-      next();
+      nextQ();
     }
     return mB.get(n);
   }
@@ -58,7 +58,7 @@ public class BernoulliSequence implements RationalSequence {
   public static void main(final String[] args) {
     final BernoulliSequence seq = new BernoulliSequence(0);
     while (true) {
-      final Q b = seq.next();
+      final Q b = seq.nextQ();
       if (b == null) {
         break;
       }

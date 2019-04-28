@@ -17,8 +17,8 @@ public class A003245 implements Sequence {
   @Override
   public Z next() {
     mN += 2;
-    final Q b = mBernoulliSequence.next();
-    mBernoulliSequence.next(); // skip odd term
+    final Q b = mBernoulliSequence.nextQ();
+    mBernoulliSequence.nextQ(); // skip odd term
     return new Q(-2 * mN).divide(b).signedAdd(b.signum() < 0, Q.HALF).toZ();
   }
 

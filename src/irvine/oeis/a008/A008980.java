@@ -299,7 +299,7 @@ public class A008980 implements Sequence {
       c.mDir = 1 - h.mDir;
     }
 
-    /* The step from a given curve to next one with one more points of self-
+    /* The step from a given curve to nextQ one with one more points of self-
        intersection. The arc is added in agree with parameters segment and side */
     private void curveUp(final int segment, final int side) {
       final int[] symind = new int[2 * mMaxCross + 2];

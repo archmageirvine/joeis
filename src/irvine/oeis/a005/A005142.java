@@ -91,7 +91,7 @@ public class A005142 implements Sequence {
 //    final IntegerPartition part = new IntegerPartition(n / 2);
 //    int[] p;
 //    final int[] j = new int[n + 1];
-//    while ((p = part.next()) != null) {
+//    while ((p = part.nextQ()) != null) {
 //      int c = fixed(p); // !!!
 //      //System.out.println(Z.ONE.shiftLeft(c) + " " + n + " " + Arrays.toString(p));
 //      IntegerPartition.toCountForm(q(p), j);
@@ -138,13 +138,13 @@ public class A005142 implements Sequence {
 //      final IntegerPartition partMu = new IntegerPartition(mu);
 //      int[] pMu;
 //      final int[] jMu = new int[mu + 1];
-//      while ((pMu = partMu.next()) != null) {
+//      while ((pMu = partMu.nextQ()) != null) {
 //        IntegerPartition.toCountForm(pMu, jMu);
 //        final Z periodMu = period(jMu);
 //        final IntegerPartition partNu = new IntegerPartition(nu);
 //        int[] pNu;
 //        final int[] jNu = new int[nu + 1];
-//        while ((pNu = partNu.next()) != null) {
+//        while ((pNu = partNu.nextQ()) != null) {
 //          IntegerPartition.toCountForm(pNu, jNu);
 //          int c = count(pMu, pNu); // !!! Yes note normal partitions
 //          mSum = mSum.add(new Q(Z.ONE.shiftLeft(c), period(jNu).multiply(periodMu)));

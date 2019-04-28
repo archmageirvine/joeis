@@ -20,7 +20,7 @@ public class A004193 implements Sequence {
     ++mN;
     mF = mF.multiply(mN);
     mD = mD.multiply(2L * mN).multiply(2L * mN + 1);
-    mB.next(); // skip odd
-    return mB.next().multiply(mD).toZ().abs().shiftRight(mN).divide(mF);
+    mB.nextQ(); // skip odd
+    return mB.nextQ().multiply(mD).toZ().abs().shiftRight(mN).divide(mF);
   }
 }

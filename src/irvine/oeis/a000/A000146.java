@@ -19,8 +19,8 @@ public class A000146 implements Sequence {
 
   @Override
   public Z next() {
-    mB.next();
-    Q s = mB.next();
+    mB.nextQ();
+    Q s = mB.nextQ();
     mN += 2;
     for (final Z d : Cheetah.factor(mN).divisors()) {
       final long dp = d.longValue() + 1;

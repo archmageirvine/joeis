@@ -19,7 +19,7 @@ public class A006955 implements Sequence {
     if (mN == 1) {
       return Z.ONE;
     }
-    mB.next(); // skip odd
-    return mB.next().multiply(mN).den();
+    mB.nextQ(); // skip odd
+    return mB.nextQ().multiply(mN).den();
   }
 }

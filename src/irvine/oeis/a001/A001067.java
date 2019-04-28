@@ -17,8 +17,8 @@ public class A001067 implements Sequence {
   @Override
   public Z next() {
     mN += 2;
-    mB.next(); // skip odd terms
-    final Q s = mB.next().divide(mN);
+    mB.nextQ(); // skip odd terms
+    final Q s = mB.nextQ().divide(mN);
     return s.num();
   }
 }

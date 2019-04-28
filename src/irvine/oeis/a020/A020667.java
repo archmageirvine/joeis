@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020667.
+ * A020667 Least n-th power containing every digit.
  * @author Sean A. Irvine
  */
 public class A020667 implements Sequence {

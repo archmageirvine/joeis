@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020642.
+ * A020642 n-th composite is sum of first k composites for some k.
  * @author Sean A. Irvine
  */
 public class A020642 implements Sequence {

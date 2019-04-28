@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020665.
+ * A020665 <code>a(n)</code> is the (conjectured) maximal exponent k such that <code>n^k</code> does not contain a digit zero in its decimal expansion.
  * @author Sean A. Irvine
  */
 public class A020665 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a073.A073005;
 
 /**
- * A059188.
+ * A059188 Engel expansion of Gamma(1/3) <code>= 2.67894</code>.
  * @author Sean A. Irvine
  */
 public class A059188 implements Sequence {

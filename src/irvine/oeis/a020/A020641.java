@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020641.
+ * A020641 a(n)-th prime is sum of first k primes for some k.
  * @author Sean A. Irvine
  */
 public class A020641 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020649.
+ * A020649 Least nonresidue of n.
  * @author Sean A. Irvine
  */
 public class A020649 implements Sequence {

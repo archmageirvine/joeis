@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020639.
+ * A020639 Lpf(n): least prime dividing n (when <code>n &gt; 1)</code>; <code>a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A020639 implements Sequence {

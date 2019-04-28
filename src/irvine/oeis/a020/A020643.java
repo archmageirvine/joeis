@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A020643.
+ * A020643 a(n)-th squarefree is sum of first k squarefrees for some k.
  * @author Sean A. Irvine
  */
 public class A020643 implements Sequence {

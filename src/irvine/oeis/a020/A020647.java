@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020647.
+ * A020647 Least positive integer k for which <code>8^n</code> divides <code>k!</code>.
  * @author Sean A. Irvine
  */
 public class A020647 implements Sequence {

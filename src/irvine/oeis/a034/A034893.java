@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000217;
  */
 public class A034893 extends A000217 {
 
-  private int mN = 0;
+  private int mN = -1;
   private int mM = 2;
   private int mT0 = 3;
   private int mT1 = 6;
@@ -17,7 +17,10 @@ public class A034893 extends A000217 {
 
   @Override
   public Z next() {
-    if (++mN <= 4) {
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    if (mN <= 4) {
       super.next();
       return Z.valueOf(mN);
     }

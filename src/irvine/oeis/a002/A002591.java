@@ -11,10 +11,14 @@ public class A002591 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 1;
-  private Z mA = Z.THREE;
+  private Z mA = null;
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = Z.THREE;
+      return Z.TWO;
+    }
     mA = mA.multiply(9);
     final Z t = mA.subtract(1);
     if (mVerbose) {

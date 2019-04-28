@@ -58,7 +58,7 @@ public class Cheetah extends AbstractFactorizer {
     sSmallCheat in that it stores the actual factor and not a pointer to the
     factor.
   */
-  private static final long BIG_LIMIT  = Integer.parseInt(System.getProperty("oeis.big-factor-limit", "4295098369"));
+  private static final long BIG_LIMIT  = Long.parseLong(System.getProperty("oeis.big-factor-limit", "4295098369"));
   private static final int BIG_BIT_LIMIT = (int) LongUtils.lg(BIG_LIMIT);
   private static char[] sBigCheat = null;
 

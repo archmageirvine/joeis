@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A020755.
+ * A020755 Increasing gaps between squarefree numbers (upper end).
  * @author Sean A. Irvine
  */
 public class A020755 extends A005117 {

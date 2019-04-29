@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020724.
+ * A020724 G.f.: <code>1/((1-6x)(1-9x)(1-12x))</code>.
  * @author Sean A. Irvine
  */
 public class A020724 implements Sequence {

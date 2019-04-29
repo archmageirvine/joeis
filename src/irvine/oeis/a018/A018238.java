@@ -14,7 +14,7 @@ public class A018238 implements Sequence {
 
   @Override
   public Z next() {
-    mA = mA == null ? "": mA + String.valueOf(mN) + mA;
+    mA = mA == null ? "" : mA + String.valueOf(mN) + mA;
     return new Z(++mN + mA);
   }
 }

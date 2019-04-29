@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020740.
+ * A020740 Max_{k=0..n} d(C(n,k)) - d(C(n,[ <code>n/2 ])),</code> where d() = number of divisors.
  * @author Sean A. Irvine
  */
 public class A020740 implements Sequence {

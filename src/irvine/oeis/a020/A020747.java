@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotSequence;
 
 /**
- * A020747.
+ * A020747 Pisot sequence <code>T(4,6), a(n) = floor(a(n-1)^2/a(n-2))</code>.
  * @author Sean A. Irvine
  */
 public class A020747 extends PisotSequence {

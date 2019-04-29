@@ -14,8 +14,7 @@ public class A011260 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
-    return Jaguar.factor(Z.ONE.shiftLeft(mN).subtract(Z.ONE)).phi().divide(mN);
+    return ++mN == 1 ? Z.ONE : Jaguar.factor(Z.ONE.shiftLeft(mN).subtract(Z.ONE)).phi().divide(mN);
   }
 }
 

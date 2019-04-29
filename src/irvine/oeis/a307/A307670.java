@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A307670 allocated for Eric W. Weisstein.
+ * A307670 Number of (undirected) cycles in the n X n antelope graph.
  * @author Sean A. Irvine
  */
 public class A307670 implements Sequence {

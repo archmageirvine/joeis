@@ -5,7 +5,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a005.A005117;
 
 /**
- * A020753.
+ * A020753 Sizes of successive increasing gaps between squarefree numbers.
  * @author Sean A. Irvine
  */
 public class A020753 extends RecordSequence {

@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-import irvine.util.string.English;
-
 import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.string.English;
 
 /**
  * A001058 1-digit numbers in reverse alphabetical order, then 2-digit numbers, etc.
@@ -44,7 +44,7 @@ public class A001058 implements Sequence {
       }
       Arrays.sort(mSortedValues, comparator());
     }
-    //System.out.println("# " + mSortedValues[mPos] + " " + irvine.util.string.French.toFrench(mSortedValues[mPos].intValue()));
+    //System.out.println(mSortedValues[mPos] + " # " + irvine.util.string.French.toFrench(mSortedValues[mPos].intValue()));
     return mSortedValues[mPos++];
   }
 }

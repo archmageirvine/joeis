@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020756.
+ * A020756 Numbers that are the sum of two triangular numbers.
  * @author Sean A. Irvine
  */
 public class A020756 implements Sequence {

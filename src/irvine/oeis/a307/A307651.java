@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307651 allocated for R&#233;my Sigrist.
+ * A307651 <code>a(n)</code> is the determinant of the Vandermonde matrix of the digits of n.
  * @author Sean A. Irvine
  */
 public class A307651 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A306546 allocated for Aidan Simmons.
+ * A306546 Modified Collatz Map such that odd numbers are treated the same, but even numbers have all factors of 2 removed.
  * @author Sean A. Irvine
  */
 public class A306546 implements Sequence {

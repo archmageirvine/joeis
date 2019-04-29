@@ -8,7 +8,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A307687 allocated for Robert Israel.
+ * A307687 <code>a(n)</code> is the first prime value of the n-th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A307687 implements Sequence {

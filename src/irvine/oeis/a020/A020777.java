@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020777.
+ * A020777 Decimal expansion of (-1)*Gamma'(1/4)/Gamma(1/4) where Gamma(x) denotes the Gamma function.
  * @author Sean A. Irvine
  */
 public class A020777 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.PisotSequence;
 
 /**
- * A020718.
+ * A020718 Pisot sequences E(6,10), P(6,10).
  * @author Sean A. Irvine
  */
 public class A020718 extends PisotSequence {

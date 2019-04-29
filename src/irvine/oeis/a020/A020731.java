@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020731.
+ * A020731 Numbers n for which number of distinct prime divisors of <code>C(n,k)</code> has maximum at <code>k = [n/2]</code>.
  * @author Sean A. Irvine
  */
 public class A020731 implements Sequence {

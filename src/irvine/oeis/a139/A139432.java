@@ -16,7 +16,7 @@ public class A139432 implements Sequence {
   @Override
   public Z next() {
     if (++mN != 0) {
-      final Z d = Z.valueOf(Cheetah.factor(mN).sigma0());
+      final Z d = Cheetah.factor(mN).sigma0();
       if (mPrev.compareTo(d) >= 0) {
         mPrev = mPrev.subtract(d);
       } else {

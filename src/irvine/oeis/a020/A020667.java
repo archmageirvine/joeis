@@ -18,7 +18,7 @@ public class A020667 implements Sequence {
     }
     Z m = Z.TWO;
     Z power;
-    while (A020666.syndrome((power = m.pow(mN))) != 0b1111111111) {
+    while (A020666.syndrome(power = m.pow(mN)) != 0b1111111111) {
       m = m.add(1);
     }
     return power;

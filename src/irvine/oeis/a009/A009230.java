@@ -15,6 +15,6 @@ public class A009230 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.lcm(Z.valueOf(Cheetah.factor(mN).sigma0()));
+    return mN.lcm(Cheetah.factor(mN).sigma0());
   }
 }

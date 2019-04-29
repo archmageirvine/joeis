@@ -52,7 +52,7 @@ public class A005873 implements Sequence {
     //System.out.println("j=" + j);
 
     final QPolynomial<Z> m = RING.add(d, j);
-    System.out.println("m=" + m);
+    //System.out.println("m=" + m);
     return m.coeff(mN);
   }
 }

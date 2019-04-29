@@ -18,10 +18,10 @@ public class A019505 implements Sequence {
     if (mA == null) {
       mA = Z.ONE;
     } else {
-      final long sigma0 = mFactor.factorize(mA.multiply2()).sigma0();
+      final long sigma0 = mFactor.factorize(mA.multiply2()).sigma0AsLong();
       do {
         mA = mA.add(1);
-      } while (mFactor.factorize(mA).sigma0() != sigma0);
+      } while (mFactor.factorize(mA).sigma0AsLong() != sigma0);
     }
     return mA;
   }

@@ -22,7 +22,7 @@ public class A016025 implements Sequence {
       final FactorSequence fs = new FactorSequence();
       fs.add(++k, FactorSequence.UNKNOWN, k);
       mFactor.factor(fs);
-      if (fs.sigma0() + k - 1 == mN * k) {
+      if (fs.sigma0AsLong() + k - 1 == mN * k) {
         return Z.valueOf(k);
       }
     }

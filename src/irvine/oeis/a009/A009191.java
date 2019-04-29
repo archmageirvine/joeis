@@ -15,6 +15,6 @@ public class A009191 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return mN.gcd(Z.valueOf(Cheetah.factor(mN).sigma0()));
+    return mN.gcd(Cheetah.factor(mN).sigma0());
   }
 }

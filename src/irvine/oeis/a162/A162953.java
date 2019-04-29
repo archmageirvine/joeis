@@ -11,6 +11,6 @@ public class A162953 extends A162952 {
   @Override
   public Z next() {
     super.next();
-    return Z.valueOf(mD);
+    return mD;
   }
 }

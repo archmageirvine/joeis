@@ -29,7 +29,7 @@ public class A003681 implements Sequence {
     final Z[] deltas = new Z[2];
     Arrays.fill(deltas, sqrt);
     final int[] e = new int[p.length];
-    for (long k = 1; k < mFS.sigma0(); ++k) {
+    for (long k = 1; k < mFS.sigma0AsLong(); ++k) {
       int j = p.length - 1;
       while (++e[j] > limits[j]) {
         e[j--] = 0;

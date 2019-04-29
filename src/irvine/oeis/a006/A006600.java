@@ -49,7 +49,7 @@ public class A006600 implements Sequence {
       a = a.subtract(264 * mN);
     }
     if (del(84, mN)) {
-      a = a.subtract(9 * mN);
+      a = a.subtract(96 * mN);
     }
     if (del(90, mN)) {
       a = a.subtract(48 * mN);

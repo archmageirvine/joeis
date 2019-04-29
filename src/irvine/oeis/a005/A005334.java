@@ -44,7 +44,7 @@ public class A005334 extends MemoryFunction2<Integer, Z> implements Sequence {
 
   private final MemoryFunction2<Integer, Z> mC = new A005333();
   final HFunction mH = new HFunction(mC);
-  private int mN = 0;
+  //private int mN = 0;
 
   // todo cache these
   // G^{(i,j)}_{n,m}
@@ -97,16 +97,16 @@ public class A005334 extends MemoryFunction2<Integer, Z> implements Sequence {
     return sum;
   }
 
-
   @Override
   public Z next() {
-    ++mN;
-//    System.out.println("N(3,2)=" + get(3, 2) + " cf. 1");
-//    System.out.println("N(3,3)=" + get(3, 3) + " cf. 34");
-//    System.out.println("N(4,3)=" + get(4, 3) + " cf. 199");
-//    System.out.println("N(3,4)=" + get(4, 3) + " cf. 199");
-//    System.out.println("g(1,1,1,1)=" + g(1, 1, 1, 1));
-//    System.out.println("g(1,0,2,3)=" + g(1, 0, 2, 3));
-    return get(mN, mN);
+    throw new UnsupportedOperationException();
+//    ++mN;
+////    System.out.println("N(3,2)=" + get(3, 2) + " cf. 1");
+////    System.out.println("N(3,3)=" + get(3, 3) + " cf. 34");
+////    System.out.println("N(4,3)=" + get(4, 3) + " cf. 199");
+////    System.out.println("N(3,4)=" + get(4, 3) + " cf. 199");
+////    System.out.println("g(1,1,1,1)=" + g(1, 1, 1, 1));
+////    System.out.println("g(1,0,2,3)=" + g(1, 0, 2, 3));
+//    return get(mN, mN);
   }
 }

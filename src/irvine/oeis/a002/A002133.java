@@ -1,10 +1,10 @@
 package irvine.oeis.a002;
 
+import java.util.HashMap;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashMap;
 
 /**
  * A002133 Number of partitions of n with exactly two part sizes.
@@ -21,7 +21,7 @@ public class A002133 implements Sequence {
     if (r != null) {
       return r;
     }
-    final long t = Cheetah.factor(n).sigma0();
+    final long t = Cheetah.factor(n).sigma0AsLong();
     mTau.put(n, t);
     return t;
   }

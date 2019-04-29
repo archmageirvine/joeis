@@ -23,6 +23,6 @@ public class A016006 implements Sequence {
     final FactorSequence fs = new FactorSequence();
     fs.add(++mN, FactorSequence.UNKNOWN, power());
     mFactor.factor(fs);
-    return Z.valueOf((fs.sigma0() + power() - 1) / power());
+    return fs.sigma0().add(power() - 1).divide(power());
   }
 }

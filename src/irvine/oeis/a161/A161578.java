@@ -18,10 +18,10 @@ public class A161578 implements Sequence {
     if (mPrev == null) {
       mPrev = Z.TWO;
     } else {
-      final long dn = Cheetah.factor(++mN).sigma0();
+      final long dn = Cheetah.factor(++mN).sigma0AsLong();
       do {
         mPrev = mPrev.add(1);
-      } while (Cheetah.factor(mPrev).sigma0() > dn);
+      } while (Cheetah.factor(mPrev).sigma0AsLong() > dn);
     }
     return mPrev;
   }

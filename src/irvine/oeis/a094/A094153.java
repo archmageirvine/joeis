@@ -18,7 +18,8 @@ public class A094153 implements Sequence {
     long iter = 1;
     final Z t = Z.valueOf(target);
     while (iter <= position) {
-      if (t.equals(em.next())) {
+      final Z next = em.next();
+      if (t.equals(next)) {
         return iter == position;
       }
       ++iter;

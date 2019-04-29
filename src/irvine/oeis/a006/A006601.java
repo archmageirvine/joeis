@@ -21,7 +21,7 @@ public class A006601 implements Sequence {
       final long a = mB;
       mB = mC;
       mC = mD;
-      mD = Cheetah.factor(++mN + 3).sigma0();
+      mD = Cheetah.factor(++mN + 3).sigma0AsLong();
       if (a == mD && mB == mD && mC == mD) {
         return Z.valueOf(mN);
       }

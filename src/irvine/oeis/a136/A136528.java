@@ -18,7 +18,7 @@ public class A136528 implements Sequence {
     long c = 0;
     for (int k = 0; k < div.length - 1; ++k) {
       for (int j = k + 1; j < div.length; ++j) {
-        final long t = Cheetah.factor(div[k].add(div[j])).sigma0();
+        final long t = Cheetah.factor(div[k].add(div[j])).sigma0AsLong();
         if (t > c) {
           c = t;
         }

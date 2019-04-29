@@ -9,14 +9,13 @@ import irvine.oeis.Sequence;
  */
 public class A018238 implements Sequence {
 
+  private int mN = 0;
   private String mA = null;
 
   @Override
   public Z next() {
-    mA = mA == null
-      ? "1"
-      : String.valueOf(mA.charAt(0) - '0' + 1) + mA.substring(1) + mA;
-    return new Z(mA);
+    mA = mA == null ? "": mA + String.valueOf(mN) + mA;
+    return new Z(++mN + mA);
   }
 }
 

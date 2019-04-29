@@ -35,7 +35,7 @@ public class A004795 implements Sequence {
   @Override
   public Z next() {
     final Z[] terms = terms(++mN);
-    mBest = Z.ONE.shiftLeft(terms.length);
+    mBest = Z.ONE.shiftLeft(mN);
     search(terms, terms.length - 1, Z.ZERO);
     return mBest;
   }

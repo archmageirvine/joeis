@@ -25,12 +25,18 @@ public class A096096 implements Sequence {
     if (mA.length() <= mB.length()) {
       final int delta = mB.length() - mA.length();
       for (int k = 0; k < mA.length(); ++k) {
-        digitProduct.append(String.valueOf((mA.charAt(k) - '0') * (mB.charAt(delta + k) - '0')));
+        final int dp = (mA.charAt(k) - '0') * (mB.charAt(delta + k) - '0');
+        if (dp != 0) {
+          digitProduct.append(dp);
+        }
       }
     } else {
       final int delta = mA.length() - mB.length();
       for (int k = 0; k < mB.length(); ++k) {
-        digitProduct.append(String.valueOf((mA.charAt(delta + k) - '0') * (mB.charAt(k) - '0')));
+        final int dp = (mA.charAt(delta + k) - '0') * (mB.charAt(k) - '0');
+        if (dp != 0) {
+          digitProduct.append(dp);
+        }
       }
     }
     mA = mB;

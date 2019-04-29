@@ -10,13 +10,11 @@ import irvine.oeis.Sequence;
  */
 public class A006525 implements Sequence {
 
-  // Egyptian fraction
-
   private CR mX = null;
 
   @Override
   public Z next() {
-    mX = mX == null ? CR.E.subtract(CR.TWO) : mX.subtract(CR.valueOf(mX.inverse().ceil(32)).inverse());
-    return mX.inverse().ceil(32);
+    mX = mX == null ? CR.E.subtract(CR.TWO) : mX.subtract(CR.valueOf(mX.inverse().ceil(128)).inverse());
+    return mX.inverse().ceil(128);
   }
 }

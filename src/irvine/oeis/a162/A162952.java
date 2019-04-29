@@ -12,13 +12,13 @@ import irvine.oeis.Sequence;
 public class A162952 implements Sequence {
 
   private long mN = 0;
-  protected long mD;
+  protected Z mD;
 
   @Override
   public Z next() {
     while (true) {
       mD = Cheetah.factor(++mN).sigma0();
-      if (PopCount.popcount(mD) == PopCount.popcount(mN)) {
+      if (mD.bitCount() == PopCount.popcount(mN)) {
         return Z.valueOf(mN);
       }
     }

@@ -1,10 +1,10 @@
 package irvine.oeis.a175;
 
+import java.util.HashSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.HashSet;
 
 /**
  * A175502 <code>a(1) = 1. a(n) =</code> the smallest integer not yet occurring such that each unordered pair {d(a(k)),d(a(k-1))} occurs only once at most, for <code>2&lt;= k &lt;= n,</code> where d(m) = the number of divisors of m.
@@ -27,7 +27,7 @@ public class A175502 implements Sequence {
     while (true) {
       final Z zn = Z.valueOf(n);
       if (!mUsed.contains(zn)) {
-        final long dc = Cheetah.factor(zn).sigma0();
+        final long dc = Cheetah.factor(zn).sigma0AsLong();
         final long a, b;
         if (mLastDivisors < dc) {
           a = mLastDivisors;

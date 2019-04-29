@@ -23,6 +23,6 @@ public class A230627 implements Sequence {
     if (u == null) {
       throw new RuntimeException();
     }
-    return u.isProbablePrime(32) ? u : Z.ZERO;
+    return u.isProbablePrime(32) ? u : Z.NEG_ONE;
   }
 }

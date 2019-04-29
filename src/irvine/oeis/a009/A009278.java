@@ -17,6 +17,6 @@ public class A009278 implements Sequence {
   public Z next() {
     mN = mN.add(1);
     final FactorSequence fs = Cheetah.factor(mN);
-    return fs.sigma().lcm(Z.valueOf(fs.sigma0()));
+    return fs.sigma().lcm(fs.sigma0());
   }
 }

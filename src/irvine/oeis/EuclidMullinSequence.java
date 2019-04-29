@@ -36,7 +36,9 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
         throw new RuntimeException(e);
       }
     }
-    s.mPos = 0; // reset position
+    // reset sequence
+    s.mPos = 0;
+    s.mProd = Z.ONE;
     return s;
   }
 

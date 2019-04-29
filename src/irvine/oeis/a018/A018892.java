@@ -16,7 +16,7 @@ public class A018892 implements Sequence {
   public Z next() {
     mN += 2;
     final long s = mN * mN;
-    return Z.valueOf((Cheetah.factor((mN & 1) == 0 ? s / 4 : s).sigma0() - 1) / 2 + 1);
+    return Cheetah.factor((mN & 1) == 0 ? s / 4 : s).sigma0().subtract(1).divide2().add(1);
   }
 }
 

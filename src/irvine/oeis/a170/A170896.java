@@ -18,7 +18,6 @@ public class A170896 implements Sequence {
 
   private static final int[] DELTA = {1, -1, 0, 0};
 
-
   private Set<Pair<Integer, Integer>> mOn = null;
   protected Set<Pair<Integer, Integer>> mNewlyOn = new HashSet<>();
 
@@ -96,5 +95,4 @@ public class A170896 implements Sequence {
     }
     return Z.valueOf(mOn.size());
   }
-
 }

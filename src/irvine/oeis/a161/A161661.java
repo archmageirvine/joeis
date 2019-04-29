@@ -16,7 +16,7 @@ public class A161661 implements Sequence {
   @Override
   public Z next() {
     if (++mN > 1) {
-      final long sigma0 = Cheetah.factor(mPrev).sigma0();
+      final long sigma0 = Cheetah.factor(mPrev).sigma0AsLong();
       mPrev = sigma0 * ((mN + sigma0 - 1) / sigma0);
     }
     return Z.valueOf(mPrev);

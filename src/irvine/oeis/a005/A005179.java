@@ -19,7 +19,7 @@ public class A005179 implements Sequence {
   public Z next() {
     ++mN;
     while (mLeast.get(mN) == 0) {
-      final int div = (int) Cheetah.factor(++mLastFactored).sigma0();
+      final int div = Cheetah.factor(++mLastFactored).sigma0().intValueExact();
       if (mLeast.get(div) == 0) {
         mLeast.set(div, mLastFactored);
       }

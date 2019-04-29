@@ -26,7 +26,7 @@ public class A161767 implements Sequence {
     final long d = mB.subtract(mA).longValue();
     Z n = mB.add(2);
     while (true) {
-      if (Cheetah.factor(n).sigma0() == d) {
+      if (Cheetah.factor(n).sigma0AsLong() == d) {
         mA = mB;
         mB = n;
         return n;

@@ -14,7 +14,7 @@ public class A000005 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Cheetah.factor(++mN).sigma0());
+    return Cheetah.factor(++mN).sigma0();
   }
 }
 

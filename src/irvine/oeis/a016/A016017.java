@@ -26,7 +26,7 @@ public class A016017 implements Sequence {
       final FactorSequence fs = new FactorSequence();
       fs.add(++k, FactorSequence.UNKNOWN, v());
       mFactor.factor(fs);
-      if (fs.sigma0() + v() - 1 == mN) {
+      if (fs.sigma0AsLong() + v() - 1 == mN) {
         return Z.valueOf(k);
       }
     }

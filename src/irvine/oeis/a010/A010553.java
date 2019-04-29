@@ -12,7 +12,7 @@ public class A010553 extends A000005 {
 
   @Override
   public Z next() {
-    return Z.valueOf(Cheetah.factor(super.next()).sigma0());
+    return Cheetah.factor(super.next()).sigma0();
   }
 }
 

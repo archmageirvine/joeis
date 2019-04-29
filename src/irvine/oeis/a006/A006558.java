@@ -14,9 +14,9 @@ public class A006558 implements Sequence {
   private long mM = 0;
 
   private boolean check(final long n, final long k) {
-    final long s = Cheetah.factor(k).sigma0();
+    final long s = Cheetah.factor(k).sigma0AsLong();
     for (long j = k + 1; j < k + n; ++j) {
-      if (Cheetah.factor(j).sigma0() != s) {
+      if (Cheetah.factor(j).sigma0AsLong() != s) {
         return false;
       }
     }

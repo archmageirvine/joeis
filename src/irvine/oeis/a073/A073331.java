@@ -20,7 +20,7 @@ public class A073331 extends A002034 {
     long k = 0;
     while (true) {
       ++k;
-      if (v == Cheetah.factor(mN + k).sigma0()) {
+      if (v == Cheetah.factor(mN + k).sigma0AsLong()) {
         return Z.valueOf(k);
       }
     }

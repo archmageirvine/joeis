@@ -18,7 +18,7 @@ public class A136641 implements Sequence {
     ++mN;
     long q = 0;
     while (true) {
-      if (LongUtils.gcd(mN, ++q) == 1 && Cheetah.factor(q).sigma0() == mN) {
+      if (LongUtils.gcd(mN, ++q) == 1 && Cheetah.factor(q).sigma0AsLong() == mN) {
         return Z.valueOf(q);
       }
     }

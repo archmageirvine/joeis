@@ -338,11 +338,8 @@ public final class FactorSequence {
     for (int k = 0; k < p.length; ++k) {
       limits[k] = getExponent(p[k]);
     }
-    final long divCount = internalSigma0();
-    if (divCount > Integer.MAX_VALUE) {
-      throw new ArithmeticException("Too many divisors " + divCount);
-    }
-    final Z[] d = new Z[(int) divCount];
+    final int divCount = internalSigma0().intValueExact();
+    final Z[] d = new Z[divCount];
     d[0] = Z.ONE;
     // special cases for a small number of distinct factors, these
     // are not strictly necessary but are faster than the general
@@ -443,11 +440,11 @@ public final class FactorSequence {
     return prod;
   }
 
-  private long internalSigma0() {
+  private Z internalSigma0() {
     // Skips check for complete factorization, useful for forcing some calculations
-    long prod = 1;
+    Z prod = Z.ONE;
     for (final Factor f : mFactors.values()) {
-      prod *= 1L + f.mExponent;
+      prod = prod.multiply(1L + f.mExponent);
     }
     return prod;
   }
@@ -458,11 +455,21 @@ public final class FactorSequence {
    * @exception UnsupportedOperationException if factor sequence is not completely
    * resolved to primes and probable primes.
    */
-  public long sigma0() {
+  public Z sigma0() {
     if (!isComplete()) {
       throw new UnsupportedOperationException(toString());
     }
     return internalSigma0();
+  }
+
+  /**
+   * Return the number of divisors.
+   * @return number of divisors
+   * @exception UnsupportedOperationException if factor sequence is not completely
+   * resolved to primes and probable primes.
+   */
+  public long sigma0AsLong() {
+    return sigma0().longValueExact();
   }
 
   /**
@@ -475,7 +482,7 @@ public final class FactorSequence {
    */
   public Z sigma(final int degree) {
     if (degree == 0) {
-      return Z.valueOf(sigma0());
+      return sigma0();
     }
     if (degree == 1) {
       return sigma();
@@ -688,7 +695,7 @@ public final class FactorSequence {
       final Z unitary = p.pow(e);
       flatten.add(unitary, FactorSequence.PRIME);
     }
-    return flatten.sigma0();
+    return flatten.sigma0AsLong();
   }
 
   /**

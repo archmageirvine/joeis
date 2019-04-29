@@ -17,7 +17,7 @@ public class A161575 implements Sequence {
   private boolean test(final long t, final int n, final String s) {
     int d = mDivisorCount.get(t);
     if (d == 0) {
-      d = (int) Cheetah.factor(t).sigma0();
+      d = Cheetah.factor(t).sigma0().intValueExact();
       mDivisorCount.set(t, d);
     }
     return d == n && Long.toString(t, 2).contains(s);

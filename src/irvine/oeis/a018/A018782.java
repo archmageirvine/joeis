@@ -25,7 +25,7 @@ public class A018782 extends A054994 {
     for (int k = 0; k < exponents.length; ++k) {
       fs.add(mA2144.get(k), FactorSequence.PRIME, exponents[k]);
     }
-    final long divisorCount = fs.sigma0();
+    final long divisorCount = fs.sigma0AsLong();
     if (mFirsts.get(divisorCount) == null) {
       mFirsts.set(divisorCount, entry.getKey());
     }

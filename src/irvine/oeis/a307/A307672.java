@@ -10,11 +10,11 @@ import irvine.util.array.LongDynamicByteArray;
  */
 public class A307672 implements Sequence {
 
-  private static final byte[][] EXPAND = {{4, 0, 5}, {5, 1, 3}, {3, 2, 4}, {2, 3, 1}, {0, 4, 2}, {1, 5, 0}};
+  private static final byte[][] EXPAND = {{5, 0, 1}, {2, 1, 0}, {1, 2, 3}, {4, 3, 2}, {3, 4, 5}, {0, 5, 4}};
   private final LongDynamicByteArray mA = new LongDynamicByteArray();
   {
     mA.set(0L, (byte) 0);
-    mA.set(1L, (byte) 5);
+    mA.set(1L, (byte) 1);
   }
   private long mPos = -1;
   private long mExpand = 0;

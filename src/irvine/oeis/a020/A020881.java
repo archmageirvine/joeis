@@ -13,7 +13,7 @@ public class A020881 implements Sequence {
   private int[][] mGraph = null;
   private long mCount = 0;
 
-  private static int[][] mobiusGraph(final int n) {
+  private static int[][] mobiusLadderGraph(final int n) {
     final int[][] neighbours = new int[2 * n][3];
     for (int k = 0; k < n; ++k) {
       neighbours[k][0] = k + 1;
@@ -52,7 +52,7 @@ public class A020881 implements Sequence {
 
   @Override
   public Z next() {
-    mGraph = mobiusGraph(++mN);
+    mGraph = mobiusLadderGraph(++mN);
     mCount = 0;
     search(0, 0, new int[mGraph.length]);
     return Z.valueOf(mCount);

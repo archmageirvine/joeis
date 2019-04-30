@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012874 arcsinh(sech(x)*log(x+1))=x-1/2!*x^2-2/3!*x^3+6/4!*x^4+33/5!*x^5...
+ * A012874 <code>arcsinh(sech(x)*log(x+1))=x-1/2!*x^2-2/3!*x^3+6/4!*x^4+33/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012874 implements Sequence {

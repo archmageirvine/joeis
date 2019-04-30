@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137445 <code>a(n) = 2a(n-1)-2a(n-2),</code> with <code>a(0)=3</code> and <code>a(1)=2</code>.
+ * A137445 <code>a(n) = 2a(n-1)-2a(n-2)</code>, with <code>a(0)=3</code> and <code>a(1)=2</code>.
  * @author Georg Fischer
  */
 public class A137445 extends LinearRecurrence {

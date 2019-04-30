@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003713 E.g.f.: log(1/(1+log(1-x))).
+ * A003713 E.g.f.: <code>log(1/(1+log(1-x)))</code>.
  * @author Sean A. Irvine
  */
 public class A003713 implements Sequence {

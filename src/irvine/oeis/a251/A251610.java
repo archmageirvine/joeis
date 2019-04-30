@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251610 Determinants of the spiral knots S(4,k,(1,1,1)).
+ * A251610 Determinants of the spiral knots <code>S(4,k,(1,1,1))</code>.
  * @author Sean A. Irvine
  */
 public class A251610 extends LinearRecurrence {

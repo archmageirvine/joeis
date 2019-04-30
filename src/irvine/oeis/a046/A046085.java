@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A046085 Numbers n such that Q(sqrt(-n)) has class number 4.
+ * A046085 Numbers n such that <code>Q(sqrt(-n))</code> has class number 4.
  * @author Georg Fischer
  */
 public class A046085 extends FiniteSequence {

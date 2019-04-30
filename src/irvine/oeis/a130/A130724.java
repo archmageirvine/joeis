@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130724 <code>a(n) =</code> lcm(n,3) / gcd(n,3).
+ * A130724 <code>a(n) = lcm(n,3) / gcd(n,3)</code>.
  * @author Sean A. Irvine
  */
 public class A130724 extends LinearRecurrence {

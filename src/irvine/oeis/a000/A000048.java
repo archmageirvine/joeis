@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A000048 Number of n-bead necklaces with beads of 2 colors and primitive period <code>n,</code> when turning over is not allowed but the two colors can be interchanged.
+ * A000048 Number of n-bead necklaces with beads of 2 colors and primitive period n, when turning over is not allowed but the two colors can be interchanged.
  * @author Sean A. Irvine
  */
 public class A000048 implements Sequence {

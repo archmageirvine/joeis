@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007015 <code>a(n) =</code> smallest k such that phi(n+k) = phi(k).
+ * A007015 <code>a(n) =</code> smallest k such that <code>phi(n+k) = phi(k)</code>.
  * @author Sean A. Irvine
  */
 public class A007015 implements Sequence {

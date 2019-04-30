@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228310 The hyper-Wiener index of the hypercube graph Q(n) <code>(n&gt;=2)</code>.
+ * A228310 The hyper-Wiener index of the hypercube graph <code>Q(n) (n&gt;=2)</code>.
  * @author Sean A. Irvine
  */
 public class A228310 extends LinearRecurrence {

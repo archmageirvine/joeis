@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260819 Positive integer solutions [a',b',c',d'] of the equation <code>1/a + 1/b +</code> 1/c + 1/d <code>= 1,</code> for <code>a &lt;= b &lt;=</code> c <code>&lt;=</code> d, lexicographically sorted.
+ * A260819 Positive integer solutions [a',b',c',d'] of the equation <code>1/a + 1/b +</code> 1/c + 1/d <code>= 1</code>, for <code>a &lt;= b &lt;=</code> c <code>&lt;=</code> d, lexicographically sorted.
  * @author Georg Fischer
  */
 public class A260819 extends FiniteSequence {

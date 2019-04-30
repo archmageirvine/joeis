@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A179014 Even numbers that can only be expressed as the sum of two distinct twin prime pairs in two ways: <code>n =</code> p+(q+2) = (p+2)+q where <code>(3,5) &lt;</code> (p,p+2) &lt; (q,q+2).
+ * A179014 Even numbers that can only be expressed as the sum of two distinct twin prime pairs in two ways: <code>n =</code> p+(q+2) = (p+2)+q where <code>(3,5) &lt</code>; (p,p+2) &lt; (q,q+2).
  * @author Georg Fischer
  */
 public class A179014 extends FiniteSequence {

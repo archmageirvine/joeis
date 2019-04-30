@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213663 Number of dominating subsets of the graph G(n) obtained by joining each vertex of the path graph P_{n+1} on <code>n+1</code> vertices with an additional vertex (the join of K_1 and P_{n+1}).
+ * A213663 Number of dominating subsets of the graph <code>G(n)</code> obtained by joining each vertex of the path graph P_{n+1} on <code>n+1</code> vertices with an additional vertex (the join of K_1 and P_{n+1}).
  * @author Sean A. Irvine
  */
 public class A213663 extends LinearRecurrence {

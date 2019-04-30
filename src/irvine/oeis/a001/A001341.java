@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001341 E.g.f.: 6*exp(x)/(1-x)^4;.
+ * A001341 E.g.f.: <code>6*exp(x)/(1-x)^4</code>;.
  * @author Sean A. Irvine
  */
 public class A001341 implements Sequence {

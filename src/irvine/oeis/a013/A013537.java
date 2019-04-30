@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013537 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion sin(cosec(x)-coth(x)).
+ * A013537 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion <code>sin(cosec(x)-coth(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013537 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002386 Increasing gaps between primes (lower end): primes p(k) where p(k+1) - p(k) exceeds p(j+1) - p(j) for all <code>j &lt; k</code>.
+ * A002386 Increasing gaps between primes (lower end): primes <code>p(k)</code> where <code>p(k+1) - p(k)</code> exceeds <code>p(j+1) - p(j)</code> for all <code>j &lt; k</code>.
  * @author Sean A. Irvine
  */
 public class A002386 implements Sequence {

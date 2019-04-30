@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002386;
 
 /**
- * A005671 Nearest integer to tan(n)^2.
+ * A005671 Nearest integer to <code>tan(n)^2</code>.
  * @author Sean A. Irvine
  */
 public class A005671 extends A002386 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007799 Irregular triangle read by rows: Whitney numbers of the second kind <code>a(n,k), n &gt;= 1, k &gt;= 0,</code> for the star poset.
+ * A007799 Irregular triangle read by rows: Whitney numbers of the second kind <code>a(n,k), n &gt;= 1, k &gt;= 0</code>, for the star poset.
  * @author Sean A. Irvine
  */
 public class A007799 extends MemoryFunction2<Long, Z> implements Sequence {

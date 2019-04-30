@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A068617 Starting from <code>a(1)=8,</code> each subsequent term is the minimal square obtained by inserting at least one digit in the previous term.
+ * A068617 Starting from <code>a(1)=8</code>, each subsequent term is the minimal square obtained by inserting at least one digit in the previous term.
  * @author Sean A. Irvine
  */
 public class A068617 implements Sequence {

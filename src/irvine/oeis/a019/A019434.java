@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019434 Fermat primes: primes of the form <code>2^(2^k) + 1,</code> for some <code>k &gt;= 0</code>.
+ * A019434 Fermat primes: primes of the form <code>2^(2^k) + 1</code>, for some <code>k &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A019434 implements Sequence {

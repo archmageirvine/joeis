@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A211112 <code>a(n)</code> is the smallest pseudoprime q in A074773 such that f(q) <code>= n,</code> where f: N <code>-&gt; {1..63}</code> is given below.
+ * A211112 <code>a(n)</code> is the smallest pseudoprime q in A074773 such that f(q) <code>= n</code>, where f: N <code>-&gt; {1..63}</code> is given below.
  * @author Georg Fischer
  */
 public class A211112 extends FiniteSequence {

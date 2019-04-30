@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002754 Related to coefficient of m in Jacobi elliptic function cn(z, m).
+ * A002754 Related to coefficient of m in Jacobi elliptic function <code>cn(z</code>, m).
  * @author Sean A. Irvine
  */
 public class A002754 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013163 Expansion of e.g.f.: arctanh(arctanh(x)+log(x+1))=2*x-1/2!*x^2+20/3!*x^3-54/4!*x^4...
+ * A013163 Expansion of e.g.f.: <code>arctanh(arctanh(x)+log(x+1))=2*x-1/2!*x^2+20/3!*x^3-54/4!*x^4</code>...
  * @author Sean A. Irvine
  */
 public class A013163 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A100894 <code>a(n) =</code> smallest n-digit prime formed by appending a digit to <code>a(n-1)</code>; <code>a(1) = 3</code>.
+ * A100894 <code>a(n) =</code> smallest n-digit prime formed by appending a digit to <code>a(n-1); a(1) = 3</code>.
  * @author Georg Fischer
  */
 public class A100894 extends FiniteSequence {

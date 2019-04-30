@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011774 Nonprimes n that divide <code>sigma(n) +</code> phi(n).
+ * A011774 Nonprimes n that divide <code>sigma(n) + phi(n)</code>.
  * @author Sean A. Irvine
  */
 public class A011774 implements Sequence {

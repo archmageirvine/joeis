@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019565 <code>a(n) = Product_{k</code> in I} prime(k+1), where I are the indices of nonzero binary digits in <code>n = Sum_{k</code> in I} <code>2^k</code>.
+ * A019565 <code>a(n) = Product_{k</code> in I} <code>prime(k+1)</code>, where I are the indices of nonzero binary digits in <code>n = Sum_{k</code> in I} <code>2^k</code>.
  * @author Sean A. Irvine
  */
 public class A019565 implements Sequence {

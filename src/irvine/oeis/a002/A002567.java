@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002567 Number of nonisomorphic solutions to minimal independent dominating set on queens' graph Q(n).
+ * A002567 Number of nonisomorphic solutions to minimal independent dominating set on queens' graph <code>Q(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002567 extends A002568 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018983 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite ATN = MAPO-39 Hn [ MgnAl8-n P8O32 ].
+ * A018983 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite ATN = MAPO-39 Hn [ MgnAl8-n P8O32 ].
  * @author Sean A. Irvine
  */
 public class A018983 extends A018940 {

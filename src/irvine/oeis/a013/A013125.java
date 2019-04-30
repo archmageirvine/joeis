@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013125 Expansion of E.g.f.: tanh(tanh(x)+log(x+1))=2*x-1/2!*x^2-16/3!*x^3+42/4!*x^4+492/5!*x^5...
+ * A013125 Expansion of E.g.f.: <code>tanh(tanh(x)+log(x+1))=2*x-1/2!*x^2-16/3!*x^3+42/4!*x^4+492/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A013125 implements Sequence {

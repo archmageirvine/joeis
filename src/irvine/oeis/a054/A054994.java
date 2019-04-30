@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002144;
 
 /**
- * A054994 Numbers of the form (q1^b1)(q2^b2)(q3^b3)(q4^b4)(q5^b5)... where q1=5, q2=13, q3=17, q4=29, q5=37, <code>...</code> [A002144] and <code>b1&gt;=b2&gt;=b3&gt;=b4&gt;=b5..</code>.
+ * A054994 Numbers of the form (q1^b1)(q2^b2)(q3^b3)(q4^b4)(q5^b5)... where q1=5, q2=13, q3=17, q4=29, q5=37, ... [A002144] and <code>b1&gt;=b2&gt;=b3&gt;=b4&gt;=b5</code>...
  * @author Sean A. Irvine
  */
 public class A054994 extends A002144 {

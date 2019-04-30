@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotSequence;
 
 /**
- * A020729 Pisot sequences E(2,10), L(2,10), P(2,10), <code>T(2,10)</code>.
+ * A020729 Pisot sequences <code>E(2,10), L(2,10), P(2,10), T(2,10)</code>.
  * @author Sean A. Irvine
  */
 public class A020729 extends PisotSequence {

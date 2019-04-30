@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013502 exp(sec(x)-cosh(x))=1+4/4!*x^4+60/6!*x^6+1944/8!*x^8+100920/10!*x^10...
+ * A013502 <code>exp(sec(x)-cosh(x))=1+4/4!*x^4+60/6!*x^6+1944/8!*x^8+100920/10!*x^10</code>...
  * @author Sean A. Irvine
  */
 public class A013502 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012471 Expansion of e.g.f. arctanh(cos(x)*log(x+1)).
+ * A012471 Expansion of e.g.f. <code>arctanh(cos(x)*log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A012471 implements Sequence {

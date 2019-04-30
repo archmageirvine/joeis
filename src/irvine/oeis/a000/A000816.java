@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000816 E.g.f.: <code>Sum_{n &gt;= 0} a(n) * x^(2*n) / (2*n)! =</code> sin(x)^2 / cos(2*x).
+ * A000816 E.g.f.: <code>Sum_{n &gt;= 0} a(n) * x^(2*n) / (2*n)! = sin(x)^2 / cos(2*x)</code>.
  * @author Sean A. Irvine
  */
 public class A000816 extends A000364 {

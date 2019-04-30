@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070432 Period 4: repeat <code>[0, 1, 4, 1]</code>; <code>a(n) = n^2 mod 8</code>.
+ * A070432 Period 4: repeat <code>[0, 1, 4, 1]; a(n) = n^2 mod 8</code>.
  * @author Sean A. Irvine
  */
 public class A070432 extends LinearRecurrence {

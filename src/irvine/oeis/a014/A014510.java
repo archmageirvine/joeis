@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014510 Floor( GAMMA(n+1/2) ).
+ * A014510 <code>Floor( GAMMA(n+1/2) )</code>.
  * @author Sean A. Irvine
  */
 public class A014510 implements Sequence {

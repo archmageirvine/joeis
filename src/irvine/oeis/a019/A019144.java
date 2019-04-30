@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019144 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite MEI = ZSM-18 Nan [ AlnSi34-nO68 <code>] . 28</code> H2O <code>(n=2.1-5.7)</code>.
+ * A019144 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite MEI = ZSM-18 Nan [ AlnSi34-nO68 <code>] . 28</code> H2O <code>(n=2.1-5.7)</code>.
  * @author Sean A. Irvine
  */
 public class A019144 extends A018940 {

@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177100 Partial sums of round(n^2/9).
+ * A177100 Partial sums of <code>round(n^2/9)</code>.
  * @author Sean A. Irvine
  */
 public class A177100 extends LinearRecurrence {

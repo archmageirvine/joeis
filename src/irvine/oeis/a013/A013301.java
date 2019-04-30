@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013301 E.g.f.: arctanh(arctanh(x)-log(x+1)).
+ * A013301 E.g.f.: <code>arctanh(arctanh(x)-log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A013301 implements Sequence {

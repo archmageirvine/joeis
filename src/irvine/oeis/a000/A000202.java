@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000202 <code>a(8i+j) = 13i + a(j),</code> where <code>1&lt;=j&lt;=8</code>.
+ * A000202 <code>a(8i+j) = 13i + a(j)</code>, where <code>1&lt;=j&lt;=8</code>.
  * @author Sean A. Irvine
  */
 public class A000202 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004201 Accept one, reject one, accept two, reject two, <code>..</code>.
+ * A004201 Accept one, reject one, accept two, reject two, ...
  * @author Sean A. Irvine
  */
 public class A004201 implements Sequence {

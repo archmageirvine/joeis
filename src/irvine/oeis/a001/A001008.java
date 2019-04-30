@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001008 Numerators of harmonic numbers H(n) <code>= Sum_{i=1..n} 1/i</code>.
+ * A001008 Numerators of harmonic numbers <code>H(n) = Sum_{i=1..n} 1/i</code>.
  * @author Sean A. Irvine
  */
 public class A001008 implements Sequence {

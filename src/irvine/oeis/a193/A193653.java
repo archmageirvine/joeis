@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193653 Q-residue of the Delannoy triangle A008288, where Q is the triangular array (t(i,j)) given by t(i,j)=1.
+ * A193653 Q-residue of the Delannoy triangle A008288, where Q is the triangular array <code>(t(i,j))</code> given by <code>t(i,j)=1</code>.
  * @author Sean A. Irvine
  */
 public class A193653 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002331 Values of x in the solution to p <code>= x^2 + y^2, x &lt;= y,</code> with prime p = A002313(n).
+ * A002331 Values of x in the solution to p <code>= x^2 + y^2, x &lt;= y</code>, with prime p = A002313(n).
  * @author Sean A. Irvine
  */
 public class A002331 extends A002313 {

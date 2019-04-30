@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009002 Expansion of (1+x)/cos(x).
+ * A009002 Expansion of <code>(1+x)/cos(x)</code>.
  * @author Sean A. Irvine
  */
 public class A009002 implements Sequence {

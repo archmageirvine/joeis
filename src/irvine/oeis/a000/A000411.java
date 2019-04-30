@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000411 Generalized tangent numbers d(6,n).
+ * A000411 Generalized tangent numbers <code>d(6,n)</code>.
  * @author Sean A. Irvine
  */
 public class A000411 extends A000061 {

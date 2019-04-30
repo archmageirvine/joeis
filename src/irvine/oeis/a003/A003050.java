@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003050 Number of primitive sublattices of index n in hexagonal lattice: triples <code>x,y,z</code> from Z/nZ with <code>x+y+z=0,</code> discarding <code>any</code> triple that can be obtained from another by multiplying by a unit and permuting.
+ * A003050 Number of primitive sublattices of index n in hexagonal lattice: triples <code>x,y,z</code> from Z/nZ with <code>x+y+z=0</code>, discarding <code>any</code> triple that can be obtained from another by multiplying by a unit and permuting.
  * @author Sean A. Irvine
  */
 public class A003050 implements Sequence {

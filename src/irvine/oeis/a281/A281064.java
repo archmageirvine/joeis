@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A281064 Values of x such that <code>x^2 = 5*y^2 + 11,</code> where x and y are positive integers.
+ * A281064 Values of x such that <code>x^2 = 5*y^2 + 11</code>, where x and y are positive integers.
  * @author Sean A. Irvine
  */
 public class A281064 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012763 Expansion of e.g.f.: sech(cosh(x)*log(x+1))=1-1/2!*x^2+3/3!*x^3-18/4!*x^4+60/5!*x^5...
+ * A012763 Expansion of e.g.f.: <code>sech(cosh(x)*log(x+1))=1-1/2!*x^2+3/3!*x^3-18/4!*x^4+60/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012763 implements Sequence {

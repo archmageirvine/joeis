@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094705 Convolution of Jacobsthal(n) and <code>3^n</code>.
+ * A094705 Convolution of <code>Jacobsthal(n)</code> and <code>3^n</code>.
  * @author Sean A. Irvine
  */
 public class A094705 extends LinearRecurrence {

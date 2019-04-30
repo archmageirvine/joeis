@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131572 <code>a(0)=0</code> and <code>a(1)=1,</code> continued such that absolute values of 2nd differences equal the original sequence.
+ * A131572 <code>a(0)=0</code> and <code>a(1)=1</code>, continued such that absolute values of 2nd differences equal the original sequence.
  * @author Georg Fischer
  */
 public class A131572 extends LinearRecurrence {

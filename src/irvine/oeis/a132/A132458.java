@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132458 Let df(n,k) <code>= Product_{i=0..k-1} (n-i)</code> be the descending factorial and let P(m,n) = df(n-1,m-1)^2*(2*n-m)/((m-1)!*m!). Sequence gives P(4,n).
+ * A132458 Let <code>df(n,k) = Product_{i=0..k-1} (n-i)</code> be the descending factorial and let P(m,n) <code>= df(n-1</code>,m-1)^2*(2*n-m)/((m-1)!*m!). Sequence gives <code>P(4,n)</code>.
  * @author Sean A. Irvine
  */
 public class A132458 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019587 The left budding sequence: # of i such that <code>0&lt;i&lt;=n</code> and <code>0 &lt;</code> {tau*i} <code>&lt;=</code> {tau*n}, where <code>{}</code> is fractional part.
+ * A019587 The left budding sequence: # of i such that <code>0&lt;i&lt;=n</code> and <code>0 &lt</code>; {tau*i} <code>&lt;=</code> {tau*n}, where <code>{}</code> is fractional part.
  * @author Sean A. Irvine
  */
 public class A019587 implements Sequence {

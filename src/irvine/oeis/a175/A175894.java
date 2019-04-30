@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175894 <code>a(n) =</code> sigma(d(n)) where d(n) is n-th divisor of <code>101010 (n=1..64)</code>.
+ * A175894 <code>a(n) = sigma(d(n))</code> where <code>d(n)</code> is n-th divisor of <code>101010 (n=1..64)</code>.
  * @author Georg Fischer
  */
 public class A175894 extends FiniteSequence {

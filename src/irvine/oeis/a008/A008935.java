@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008935 If <code>2n =</code> Sum 2^e(k) then <code>a(n) =</code> Sum e(k)^2.
+ * A008935 If <code>2n =</code> Sum <code>2^e(k)</code> then <code>a(n) =</code> Sum <code>e(k)^2</code>.
  * @author Sean A. Irvine
  */
 public class A008935 implements Sequence {

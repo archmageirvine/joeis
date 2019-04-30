@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012419 Expansion of e.g.f.: sech(arctan(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-11/4!*x^4+100/5!*x^5...
+ * A012419 Expansion of e.g.f.: <code>sech(arctan(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-11/4!*x^4+100/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012419 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061866 <code>a(n)</code> is the number of solutions to <code>x+y+z = 0 mod 3,</code> where <code>1 &lt;= x &lt; y &lt; z &lt;= n</code>.
+ * A061866 <code>a(n)</code> is the number of solutions to <code>x+y+z = 0 mod 3</code>, where <code>1 &lt;= x &lt; y &lt; z &lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A061866 extends LinearRecurrence {

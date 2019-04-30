@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083764 n-th row of the following triangle contains n palindromic multiples of n beginning with <code>n.</code> Sequence contains the triangle by rows.
+ * A083764 n-th row of the following triangle contains n palindromic multiples of n beginning with n. Sequence contains the triangle by rows.
  * @author Georg Fischer
  */
 public class A083764 extends FiniteSequence {

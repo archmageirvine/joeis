@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278579 Quadratic non-residues of 23: numbers n such that Jacobi(n,23) <code>= -1</code>.
+ * A278579 Quadratic non-residues of 23: numbers n such that <code>Jacobi(n,23) = -1</code>.
  * @author Sean A. Irvine
  */
 public class A278579 extends LinearRecurrence {

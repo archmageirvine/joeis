@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002020 <code>a(n+1) = a(n) - n*(n-1)*a(n-1),</code> with <code>a(n) = 1</code> for <code>n &lt;= 3</code>.
+ * A002020 <code>a(n+1) = a(n) - n*(n-1)*a(n-1)</code>, with <code>a(n) = 1</code> for <code>n &lt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A002020 implements Sequence {

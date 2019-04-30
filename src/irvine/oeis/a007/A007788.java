@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007788 Number of augmented Andre 3-signed permutations: E.g.f. (1-sin(3*x))^(-1/3).
+ * A007788 Number of augmented Andre 3-signed permutations: E.g.f. <code>(1-sin(3*x))^(-1/3)</code>.
  * @author Sean A. Irvine
  */
 public class A007788 implements Sequence {

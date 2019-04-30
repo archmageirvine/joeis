@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000166;
 
 /**
- * A123513 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of <code>[n]</code> having k small descents <code>(n &gt;= 1</code>; <code>0 &lt;= k &lt;= n-1).</code> A small descent in a permutation (x_1,x_2,...,x_n) is a position i such that x_i - x_(i+1) <code>= 1</code>.
+ * A123513 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of <code>[n]</code> having k small descents <code>(n &gt;= 1; 0 &lt;= k &lt;= n-1)</code>. A small descent in a permutation (x_1,x_2,...,x_n) is a position i such that x_i - x_(i+1) <code>= 1</code>.
  * @author Sean A. Irvine
  */
 public class A123513 implements Sequence {

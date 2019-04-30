@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013523 Denominator of <code>[x^(2n+1)]</code> in the Taylor expansion arcsinh(cosec(x) - cot(x)).
+ * A013523 Denominator of <code>[x^(2n+1)]</code> in the Taylor expansion <code>arcsinh(cosec(x) - cot(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013523 implements Sequence {

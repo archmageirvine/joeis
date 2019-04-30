@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014402 Numbers found in denominators of expansion of Airy function Ai(x).
+ * A014402 Numbers found in denominators of expansion of Airy function <code>Ai(x)</code>.
  * @author Sean A. Irvine
  */
 public class A014402 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001233 Unsigned Stirling numbers of first kind s(n,6).
+ * A001233 Unsigned Stirling numbers of first kind <code>s(n,6)</code>.
  * @author Sean A. Irvine
  */
 public class A001233 implements Sequence {

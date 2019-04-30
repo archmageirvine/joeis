@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009064 Expansion of e.g.f. cos(sinh(x)/cos(x)), even powers only.
+ * A009064 Expansion of e.g.f. <code>cos(sinh(x)/cos(x))</code>, even powers only.
  * @author Sean A. Irvine
  */
 public class A009064 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014866 Numbers n such that n divides s(n), where s(1)=1, s(k)=16*s(k-1)+k.
+ * A014866 Numbers n such that n divides <code>s(n)</code>, where <code>s(1)=1, s(k)=16*s(k-1)+k</code>.
  * @author Sean A. Irvine
  */
 public class A014866 implements Sequence {

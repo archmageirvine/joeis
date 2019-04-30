@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012289 Expansion of e.g.f.: sech(sin(x)*log(x+1)).
+ * A012289 Expansion of e.g.f.: <code>sech(sin(x)*log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A012289 implements Sequence {

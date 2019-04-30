@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127222 <code>a(n) =</code> 3^n*pentanacci(n) or (3^n)*A023424(n-1).
+ * A127222 <code>a(n) = 3^n*pentanacci(n)</code> or (3^n)*A023424(n-1).
  * @author Sean A. Irvine
  */
 public class A127222 extends LinearRecurrence {

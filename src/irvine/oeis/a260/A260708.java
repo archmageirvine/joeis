@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260708 <code>a(2n) = n*(2*n+1), a(2n+7) = a(2n+1) + 12*n + 28,</code> with <code>a(1)=1, a(3)=6, a(5)=16</code>.
+ * A260708 <code>a(2n) = n*(2*n+1), a(2n+7) = a(2n+1) + 12*n + 28</code>, with <code>a(1)=1, a(3)=6, a(5)=16</code>.
  * @author Sean A. Irvine
  */
 public class A260708 extends LinearRecurrence {

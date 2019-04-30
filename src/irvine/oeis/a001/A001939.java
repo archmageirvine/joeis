@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001939 Expansion of (psi(-x) / phi(-x))^5 in powers of x where phi(), psi() are Ramanujan theta functions.
+ * A001939 Expansion of <code>(psi(-x) / phi(-x))^5</code> in powers of x where <code>phi(), psi()</code> are Ramanujan theta functions.
  * @author Sean A. Irvine
  */
 public class A001939 implements Sequence {

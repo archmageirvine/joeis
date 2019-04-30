@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003707 E.g.f. log(1+tan(x)).
+ * A003707 E.g.f. <code>log(1+tan(x))</code>.
  * @author Sean A. Irvine
  */
 public class A003707 implements Sequence {

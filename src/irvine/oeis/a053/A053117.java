@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053117 Triangle read by rows of coefficients of Chebyshev's U(n,x) polynomials (exponents in increasing order).
+ * A053117 Triangle read by rows of coefficients of Chebyshev's <code>U(n,x)</code> polynomials (exponents in increasing order).
  * @author Sean A. Irvine
  */
 public class A053117 implements Sequence {

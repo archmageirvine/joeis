@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001367 Solution to f(2) <code>= 1,</code> f(n) <code>= sqrt(n)</code> f(sqrt(n)) <code>+ n</code> at values <code>n = 2^2^i</code>.
+ * A001367 Solution to <code>f(2) = 1, f(n) = sqrt(n) f(sqrt(n)) + n</code> at values <code>n = 2^2^i</code>.
  * @author Sean A. Irvine
  */
 public class A001367 implements Sequence {

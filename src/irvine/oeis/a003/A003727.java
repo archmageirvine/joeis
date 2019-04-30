@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003727 Expansion of e.g.f. exp(x * cosh(x)).
+ * A003727 Expansion of e.g.f. <code>exp(x * cosh(x))</code>.
  * @author Sean A. Irvine
  */
 public class A003727 implements Sequence {

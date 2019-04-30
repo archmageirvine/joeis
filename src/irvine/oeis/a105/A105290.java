@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A105290 Numbers n such that prime(n+1) <code>== 4 (mod n)</code>.
+ * A105290 Numbers n such that <code>prime(n+1) == 4 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A105290 implements Sequence {

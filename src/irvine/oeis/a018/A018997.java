@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018997 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite CAN = Cancrinite Na6[ Al6Si6O24 <code>] .</code> CaCO3 <code>. 2</code> H2O.
+ * A018997 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite CAN = Cancrinite Na6[ Al6Si6O24 <code>] </code>. CaCO3 <code>. 2</code> H2O.
  * @author Sean A. Irvine
  */
 public class A018997 extends A018940 {

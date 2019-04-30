@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090199 N(6,n) where N(6,x) is the 6th Narayana polynomial.
+ * A090199 <code>N(6,n)</code> where <code>N(6,x)</code> is the 6th Narayana polynomial.
  * @author Sean A. Irvine
  */
 public class A090199 extends LinearRecurrence {

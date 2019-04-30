@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181772 Kissing numbers for the laminated lattices Lambda(1), Lambda(2), Lambda(8), Lambda(24).
+ * A181772 Kissing numbers for the laminated lattices <code>Lambda(1), Lambda(2), Lambda(8), Lambda(24)</code>.
  * @author Georg Fischer
  */
 public class A181772 extends FiniteSequence {

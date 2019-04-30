@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003961 Completely multiplicative with a(prime(k)) = prime(k+1).
+ * A003961 Completely multiplicative with <code>a(prime(k)) = prime(k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A003961 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085788 Partial sums of n 3-spaced triangular numbers beginning with t(3), e.g., a(2)=t(3)+t(6)=6+21=27.
+ * A085788 Partial sums of n 3-spaced triangular numbers beginning with <code>t(3)</code>, e.g., <code>a(2)=t(3)+t(6)=6+21=27</code>.
  * @author Sean A. Irvine
  */
 public class A085788 extends LinearRecurrence {

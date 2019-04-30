@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A132337 Sum of the integers from 1 to <code>n,</code> excluding the perfect sixth powers.
+ * A132337 Sum of the integers from 1 to n, excluding the perfect sixth powers.
  * @author Sean A. Irvine
  */
 public class A132337 implements Sequence {

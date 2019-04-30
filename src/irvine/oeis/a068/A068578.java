@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A068578 tau(n)*sigma(n)&gt;n*phi(n).
+ * A068578 <code>tau(n)*sigma(n)&gt;n*phi(n)</code>.
  * @author Georg Fischer
  */
 public class A068578 extends FiniteSequence {

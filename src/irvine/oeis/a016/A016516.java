@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.ContinuedFractionSequence;
 
 /**
- * A016516 Continued fraction for log(88).
+ * A016516 Continued fraction for <code>log(88)</code>.
  * @author Sean A. Irvine
  */
 public class A016516 extends ContinuedFractionSequence {

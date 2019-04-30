@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073728 <code>a(n) = Sum_{k=0..n}</code> S(k), where S(n) are the tribonacci generalized numbers A001644.
+ * A073728 <code>a(n) = Sum_{k=0..n} S(k)</code>, where <code>S(n)</code> are the tribonacci generalized numbers A001644.
  * @author Sean A. Irvine
  */
 public class A073728 extends LinearRecurrence {

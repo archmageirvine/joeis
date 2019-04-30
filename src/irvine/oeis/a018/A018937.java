@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018937 Consider smallest m such that m^2 = x_1^2 <code>+ ... +</code> x_n^2 with <code>0 &lt;</code> x_1 <code>&lt; ... &lt;</code> x_n. Sequence gives least value of x_n.
+ * A018937 Consider smallest m such that m^2 = x_1^2 <code>+ ... +</code> x_n^2 with <code>0 &lt</code>; x_1 <code>&lt; ... &lt</code>; x_n. Sequence gives least value of x_n.
  * @author Sean A. Irvine
  */
 public class A018937 implements Sequence {

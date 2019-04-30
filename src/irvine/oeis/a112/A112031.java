@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112031 Numerator of <code>3/4 + 1/4 - 3/8 - 1/8 + 3/16 + 1/16 - 3/32 - 1/32 + 3/64 + ...</code>.
+ * A112031 Numerator of <code>3/4 + 1/4 - 3/8 - 1/8 + 3/16 + 1/16 - 3/32 - 1/32 + 3/64 + .</code>...
  * @author Georg Fischer
  */
 public class A112031 extends LinearRecurrence {

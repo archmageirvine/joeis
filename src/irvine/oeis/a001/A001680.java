@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A001680 The partition function G(n,3).
+ * A001680 The partition function <code>G(n,3)</code>.
  * @author Sean A. Irvine
  */
 public class A001680 implements Sequence {

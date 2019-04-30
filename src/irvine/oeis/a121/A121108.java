@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A121108 Trajectory of 2677889 under "x <code>-&gt;</code> product of digits of x" map.
+ * A121108 Trajectory of 2677889 under "x <code>-&gt</code>; product of digits of x" map.
  * @author Georg Fischer
  */
 public class A121108 extends FiniteSequence {

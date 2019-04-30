@@ -3,7 +3,7 @@ package irvine.oeis.a161;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A161905 <code>a(n) = 13*a(n-1) - 65*a(n-2) + 156*a(n-3) - 182*a(n-4) + 91*a(n-5) - 13*a(n-6),</code> with <code>a(1)..a(6)</code> as shown.
+ * A161905 <code>a(n) = 13*a(n-1) - 65*a(n-2) + 156*a(n-3) - 182*a(n-4) + 91*a(n-5) - 13*a(n-6)</code>, with <code>a(1)..a(6)</code> as shown.
  * @author Sean A. Irvine
  */
 public class A161905 extends LinearRecurrence {

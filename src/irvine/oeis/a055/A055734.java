@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A055734 Number of distinct primes dividing phi(n).
+ * A055734 Number of distinct primes dividing <code>phi(n)</code>.
  * @author Sean A. Irvine
  */
 public class A055734 implements Sequence {

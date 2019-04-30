@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091848 Johnson bound J(n,4,2).
+ * A091848 Johnson bound <code>J(n,4,2)</code>.
  * @author Sean A. Irvine
  */
 public class A091848 extends LinearRecurrence {

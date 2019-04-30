@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004082 Numbers n such that sin(n-1) <code>&lt;= 0</code> and sin(n) <code>&gt; 0</code>.
+ * A004082 Numbers n such that <code>sin(n-1) &lt;= 0</code> and <code>sin(n) &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A004082 implements Sequence {

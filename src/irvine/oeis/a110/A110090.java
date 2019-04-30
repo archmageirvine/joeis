@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110090 Numerators of sequence of rationals defined by r(n) <code>= n</code> for <code>n&lt;=1</code> and for <code>n&gt;1</code>: r(n) = (sum of denominators of r(n-1) and r(n-2))/(sum of numerators of r(n-1) and r(n-2)).
+ * A110090 Numerators of sequence of rationals defined by <code>r(n) = n</code> for <code>n&lt;=1</code> and for <code>n&gt;1</code>: <code>r(n) =</code> (sum of denominators of <code>r(n-1)</code> and r(n-2))/(sum of numerators of <code>r(n-1)</code> and <code>r(n-2))</code>.
  * @author Sean A. Irvine
  */
 public class A110090 extends LinearRecurrence {

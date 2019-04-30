@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048625 Pisot sequence P(4,6). 
+ * A048625 Pisot sequence <code>P(4,6)</code>.
  * @author Georg Fischer
  */
 public class A048625 extends LinearRecurrence {

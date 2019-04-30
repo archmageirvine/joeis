@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A071261 Smallest k such that |p(k)-c(k)| is an n-digit number where p(k) is the k-th prime and c(k) is the k-th composite number.
+ * A071261 Smallest k such that <code>|p(k)-c(k)|</code> is an n-digit number where <code>p(k)</code> is the k-th prime and <code>c(k)</code> is the k-th composite number.
  * @author Sean A. Irvine
  */
 public class A071261 implements Sequence {

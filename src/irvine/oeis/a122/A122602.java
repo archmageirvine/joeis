@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122602 <code>a(1) = 1</code>; <code>a(2) = 0</code>; <code>a(3) = 0</code>; <code>a(4) = 0</code>; <code>a(5) = 0</code>; <code>a(6) = 0</code>; <code>a(7) = 0</code>; <code>a(8) = 0</code>; <code>a(9) = 0</code>; <code>a(10) = 0</code>; <code>a(n) = a(n - 1) + 9a(n - 2) - 8a(n - 3) - 28a(n - 4) + 21a(n - 5) + 35a(n - 6) - 20a(n - 7) - 15a(n - 8) + 5a(n - 9) + a(n - 10)</code> for <code>n &gt;= 11</code>.
+ * A122602 <code>a(1) = 1; a(2) = 0; a(3) = 0; a(4) = 0; a(5) = 0; a(6) = 0; a(7) = 0; a(8) = 0; a(9) = 0; a(10) = 0; a(n) = a(n - 1) + 9a(n - 2) - 8a(n - 3) - 28a(n - 4) + 21a(n - 5) + 35a(n - 6) - 20a(n - 7) - 15a(n - 8) + 5a(n - 9) + a(n - 10)</code> for <code>n &gt;= 11</code>.
  * @author Sean A. Irvine
  */
 public class A122602 extends LinearRecurrence {

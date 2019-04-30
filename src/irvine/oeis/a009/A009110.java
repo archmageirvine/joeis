@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009110 Expansion of e.g.f. cos(x)/cosh(tan(x)), even powers only.
+ * A009110 Expansion of e.g.f. <code>cos(x)/cosh(tan(x))</code>, even powers only.
  * @author Sean A. Irvine
  */
 public class A009110 implements Sequence {

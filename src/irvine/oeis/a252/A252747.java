@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A252747 Numbers n such that the hexagonal number H(n) is equal to the sum of four consecutive squares.
+ * A252747 Numbers n such that the hexagonal number <code>H(n)</code> is equal to the sum of four consecutive squares.
  * @author Sean A. Irvine
  */
 public class A252747 extends LinearRecurrence {

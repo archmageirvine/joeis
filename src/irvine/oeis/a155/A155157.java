@@ -4,7 +4,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155157 <code>a(n)=10*a(n-1)+10*a(n-2), n&gt;2 </code>; <code>a(0)=1, a(1)=9, a(2)=99 </code>.
+ * A155157 <code>a(n)=10*a(n-1)+10*a(n-2), n&gt;2 ; a(0)=1, a(1)=9, a(2)=99 </code>.
  * @author Georg Fischer
  */
 public class A155157 extends LinearRecurrence {

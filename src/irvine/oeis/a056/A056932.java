@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056932 Antichains (or order ideals) in the poset <code>2*2*2*n</code> or size of the distributive lattice J(2*2*2*n).
+ * A056932 Antichains (or order ideals) in the poset <code>2*2*2*n</code> or size of the distributive lattice <code>J(2*2*2*n)</code>.
  * @author Sean A. Irvine
  */
 public class A056932 extends LinearRecurrence {

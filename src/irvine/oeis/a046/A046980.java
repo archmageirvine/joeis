@@ -4,7 +4,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046980 Numerators of Taylor series for exp(x)*cos(x). 
+ * A046980 Numerators of Taylor series for <code>exp(x)*cos(x)</code>.
  * @author Georg Fischer
  */
 public class A046980 extends LinearRecurrence {

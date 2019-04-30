@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174091 OR(n, 2).
+ * A174091 <code>OR(n, 2)</code>.
  * @author Sean A. Irvine
  */
 public class A174091 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160952 a(n)=largest (n+1)-digit prime formed by appending a digit to <code>a(n-1)</code>; <code>a(0)=2</code>.
+ * A160952 a(n)=largest (n+1)-digit prime formed by appending a digit to <code>a(n-1); a(0)=2</code>.
  * @author Georg Fischer
  */
 public class A160952 extends FiniteSequence {

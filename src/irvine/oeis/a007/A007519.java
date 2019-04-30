@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007519 Primes of form <code>8n+1,</code> that is, primes congruent to <code>1 mod 8</code>.
+ * A007519 Primes of form <code>8n+1</code>, that is, primes congruent to <code>1 mod 8</code>.
  * @author Sean A. Irvine
  */
 public class A007519 implements Sequence {

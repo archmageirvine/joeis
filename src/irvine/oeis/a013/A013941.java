@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013941 <code>a(n) = Sum_{k = 1..n}</code> floor(n/prime(k)^3).
+ * A013941 <code>a(n) = Sum_{k = 1..n} floor(n/prime(k)^3)</code>.
  * @author Sean A. Irvine
  */
 public class A013941 implements Sequence {

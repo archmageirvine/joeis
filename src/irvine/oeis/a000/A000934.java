@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000934 Chromatic number (or Heawood number) Chi(n) of surface of genus n.
+ * A000934 Chromatic number (or Heawood number) <code>Chi(n)</code> of surface of genus n.
  * @author Sean A. Irvine
  */
 public class A000934 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009148 Expansion of cosh(sin(x)*log(1+x)).
+ * A009148 Expansion of <code>cosh(sin(x)*log(1+x))</code>.
  * @author Sean A. Irvine
  */
 public class A009148 implements Sequence {

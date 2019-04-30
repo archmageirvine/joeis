@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019266 Cycle class sequence c(2n) (the number of true cycles of length <code>2n</code> in which a certain node is included) for square lattice.
+ * A019266 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for square lattice.
  * @author Sean A. Irvine
  */
 public class A019266 extends PrependSequence {

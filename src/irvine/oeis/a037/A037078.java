@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037078 In ternary expansion of <code>n,</code> reading from right to left, digits occur in order <code>...,0,1,2,0,1,2,..</code>.
+ * A037078 In ternary expansion of n, reading from right to left, digits occur in order <code>...,0,1,2,0,1,2,</code>...
  * @author Sean A. Irvine
  */
 public class A037078 extends LinearRecurrence {

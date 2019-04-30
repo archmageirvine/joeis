@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056468 <code>a(n) =</code> sum(k=1,n, <code>k^6*binomial(n,k))</code>.
+ * A056468 <code>a(n) = sum(k=1,n, k^6*binomial(n,k))</code>.
  * @author Sean A. Irvine
  */
 public class A056468 extends LinearRecurrence {

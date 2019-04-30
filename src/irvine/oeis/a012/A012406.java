@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012406 Expansion of e.g.f.: sec(arctan(x)*log(x+1))=1+12/4!*x^4-60/5!*x^5+90/6!*x^6-420/7!*x^7...
+ * A012406 Expansion of e.g.f.: <code>sec(arctan(x)*log(x+1))=1+12/4!*x^4-60/5!*x^5+90/6!*x^6-420/7!*x^7</code>...
  * @author Sean A. Irvine
  */
 public class A012406 implements Sequence {

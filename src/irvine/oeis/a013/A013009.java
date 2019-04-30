@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013009 Expansion of e.g.f. log(cos(x) + log(x+1)).
+ * A013009 Expansion of e.g.f. <code>log(cos(x) + log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A013009 implements Sequence {

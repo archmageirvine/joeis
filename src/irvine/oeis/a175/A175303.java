@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A175303 <code>a(n) =</code> number of finite sequences using numbers drawn from <code>(1,2,3,...,n),</code> using each number at most once, where each number in a finite sequence is not coprime to the previous number, and each finite sequence must continued if possible. (See example.).
+ * A175303 <code>a(n) =</code> number of finite sequences using numbers drawn from <code>(1,2,3,...,n)</code>, using each number at most once, where each number in a finite sequence is not coprime to the previous number, and each finite sequence must continued if possible. (See example.).
  * @author Sean A. Irvine
  */
 public class A175303 implements Sequence {

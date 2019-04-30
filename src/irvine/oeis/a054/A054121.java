@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054121 <code>T(n,n-3),</code> array T as in A054120.
+ * A054121 <code>T(n,n-3)</code>, array T as in A054120.
  * @author Georg Fischer
  */
 public class A054121 extends LinearRecurrence {

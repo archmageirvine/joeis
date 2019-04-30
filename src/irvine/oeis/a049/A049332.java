@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049332 Number of conjugacy classes in Clifford group CL(n).
+ * A049332 Number of conjugacy classes in Clifford group <code>CL(n)</code>.
  * @author Sean A. Irvine
  */
 public class A049332 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a147.A147315;
 
 /**
- * A000772 E.g.f. exp(tan(x) + sec(x) <code>- 1)</code>.
+ * A000772 E.g.f. <code>exp(tan(x) + sec(x) - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A000772 extends A147315 {

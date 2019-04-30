@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013305 Numerators of coefficients in Taylor series expansion of arccosh(exp(x)-sin(x)).
+ * A013305 Numerators of coefficients in Taylor series expansion of <code>arccosh(exp(x)-sin(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013305 implements Sequence {

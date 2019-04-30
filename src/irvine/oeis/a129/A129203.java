@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129203 <code>a(n) =</code> numerator(3/(n+1)^3)*(3/2 <code>+ (-1)^n/2)</code>.
+ * A129203 <code>a(n) = numerator(3/(n+1)^3)*(3/2 + (-1)^n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A129203 extends LinearRecurrence {

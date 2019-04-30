@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001067 Numerator of Bernoulli(2*n)/(2*n).
+ * A001067 Numerator of <code>Bernoulli(2*n)/(2*n)</code>.
  * @author Sean A. Irvine
  */
 public class A001067 implements Sequence {

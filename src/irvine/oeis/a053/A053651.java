@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A053651 Number of nonisomorphic cyclic subgroups of general linear group GL(n,2).
+ * A053651 Number of nonisomorphic cyclic subgroups of general linear group <code>GL(n,2)</code>.
  * @author Georg Fischer
  */
 public class A053651 extends FiniteSequence {

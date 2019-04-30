@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081704 Let f(0)=1, f(1)=t, f(n+1) = (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then <code>a(n) =</code> f(n) when t=3.
+ * A081704 Let <code>f(0)=1</code>, f(1)=t, <code>f(n+1) =</code> (f(n)^2+t^n)/f(n-1). f(t) is a polynomial with integer coefficients. Then <code>a(n) = f(n)</code> when t=3.
  * @author Sean A. Irvine
  */
 public class A081704 extends LinearRecurrence {

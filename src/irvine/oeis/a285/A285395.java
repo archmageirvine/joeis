@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285395 Start with a single cell at coordinates <code>(0, 0, 0),</code> then iteratively subdivide the grid into 3 X 3 X 3 cells and remove the cells whose sum of modulo 2 coordinates is 1; <code>a(n)</code> is the number of cells after n iterations.
+ * A285395 Start with a single cell at coordinates <code>(0, 0, 0)</code>, then iteratively subdivide the grid into 3 X 3 X 3 cells and remove the cells whose sum of modulo 2 coordinates is <code>1; a(n)</code> is the number of cells after n iterations.
  * @author Georg Fischer
  */
 public class A285395 extends LinearRecurrence {

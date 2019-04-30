@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013552 Numerator of <code>[x^(2n+1)]</code> of the Taylor series sin(cot(x)-coth(x)).
+ * A013552 Numerator of <code>[x^(2n+1)]</code> of the Taylor series <code>sin(cot(x)-coth(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013552 implements Sequence {

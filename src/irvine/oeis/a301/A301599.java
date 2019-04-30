@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A301599 Numbers k at which the ratio r(k) = (k-th prime) / (average of first k primes) reaches a record high.
+ * A301599 Numbers k at which the ratio <code>r(k) =</code> (k-th prime) / (average of first k primes) reaches a record high.
  * @author Georg Fischer
  */
 public class A301599 extends FiniteSequence {

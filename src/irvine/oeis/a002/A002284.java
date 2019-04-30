@@ -7,7 +7,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.group.IntegerField;
 
 /**
- * A002284 q-expansion of modular form of weight <code>13/2</code>: eta(8 tau)^12 * theta(tau).
+ * A002284 q-expansion of modular form of weight <code>13/2</code>: <code>eta(8</code> tau)^12 * theta(tau).
  * @author Sean A. Irvine
  */
 public class A002284 implements Sequence {

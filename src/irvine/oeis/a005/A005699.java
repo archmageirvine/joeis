@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005699 tan(n)^2 rounded up.
+ * A005699 <code>tan(n)^2</code> rounded up.
  * @author Sean A. Irvine
  */
 public class A005699 implements Sequence {

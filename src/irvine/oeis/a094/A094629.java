@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094629 Numbers n with sum of digits(n) <code>= 2</code>.
+ * A094629 Numbers n with sum of <code>digits(n) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A094629 extends LinearRecurrence {

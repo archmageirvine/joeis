@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187774 Positive values of n for which the quadratic field Q(n^(1/4)) is norm-Euclidean.
+ * A187774 Positive values of n for which the quadratic field <code>Q(n^(1/4))</code> is norm-Euclidean.
  * @author Georg Fischer
  */
 public class A187774 extends FiniteSequence {

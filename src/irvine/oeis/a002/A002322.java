@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002322 Reduced totient function psi(n): least k such that <code>x^k == 1 (mod n)</code> for all x prime to n; also known as the Carmichael lambda function (exponent of unit group <code>mod n)</code>; also called the universal exponent of n.
+ * A002322 Reduced totient function <code>psi(n)</code>: least k such that <code>x^k == 1 (mod n)</code> for all x prime to n; also known as the Carmichael lambda function (exponent of unit group <code>mod n)</code>; also called the universal exponent of n.
  * @author Sean A. Irvine
  */
 public class A002322 implements Sequence {

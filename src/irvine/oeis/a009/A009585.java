@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009585 E.g.f. sinh(log(1+x)^2).
+ * A009585 E.g.f. <code>sinh(log(1+x)^2)</code>.
  * @author Sean A. Irvine
  */
 public class A009585 implements Sequence {

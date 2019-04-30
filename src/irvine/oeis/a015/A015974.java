@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015974 Numbers n such that n | <code>4^n + 1, n</code> not a power of 5.
+ * A015974 Numbers n such that <code>n | 4^n + 1, n</code> not a power of 5.
  * @author Sean A. Irvine
  */
 public class A015974 implements Sequence {

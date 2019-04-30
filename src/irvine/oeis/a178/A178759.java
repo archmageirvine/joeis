@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178759 Expansion of e.g.f. 3*x*exp(x)*(exp(x)-1)^2.
+ * A178759 Expansion of e.g.f. <code>3*x*exp(x)*(exp(x)-1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A178759 extends LinearRecurrence {

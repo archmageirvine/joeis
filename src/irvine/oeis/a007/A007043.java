@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007043 Number of noncommutative SL(2,C)-invariants of degree <code>n in 5</code> variables.
+ * A007043 Number of noncommutative <code>SL(2</code>,C)-invariants of degree <code>n in 5</code> variables.
  * @author Sean A. Irvine
  */
 public class A007043 implements Sequence {

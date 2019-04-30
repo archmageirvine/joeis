@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A098092 Unique solution to the <code>[10,3]</code> postage stamp problem (showing that V(10,3) <code>= 155)</code>.
+ * A098092 Unique solution to the <code>[10,3]</code> postage stamp problem (showing that <code>V(10,3) = 155)</code>.
  * @author Georg Fischer
  */
 public class A098092 extends FiniteSequence {

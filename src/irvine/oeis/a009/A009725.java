@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009725 Expansion of tan(x)*(1+x).
+ * A009725 Expansion of <code>tan(x)*(1+x)</code>.
  * @author Sean A. Irvine
  */
 public class A009725 implements Sequence {

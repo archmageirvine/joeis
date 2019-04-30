@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A323210 <code>a(n) =</code> 9*J(n)^2 where J(n) are the Jacobsthal numbers A001045 with J(0) <code>= 1</code>.
+ * A323210 <code>a(n) = 9*J(n)^2</code> where <code>J(n)</code> are the Jacobsthal numbers A001045 with <code>J(0) = 1</code>.
  * @author Georg Fischer
  */
 public class A323210 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100532 The first four numbers of this sequence are the primes <code>2,3,5,7.</code> The other terms are calculated by adding the previous four terms.
+ * A100532 The first four numbers of this sequence are the primes 2,3,5,7. The other terms are calculated by adding the previous four terms.
  * @author Sean A. Irvine
  */
 public class A100532 extends LinearRecurrence {

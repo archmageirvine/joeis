@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002973 <code>a(n)</code> is half of the even member of <code>{x,y},</code> where <code>x^2+y^2</code> is the n-th prime of the form <code>4i+1</code>.
+ * A002973 <code>a(n)</code> is half of the even member of <code>{x,y}</code>, where <code>x^2+y^2</code> is the n-th prime of the form <code>4i+1</code>.
  * @author Sean A. Irvine
  */
 public class A002973 extends A002144 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013468 Expansion of e.g.f.: exp(cos(x)-exp(x))=1-x-1/2!*x^2+4/3!*x^3+5/4!*x^4-32/5!*x^5...
+ * A013468 Expansion of e.g.f.: <code>exp(cos(x)-exp(x))=1-x-1/2!*x^2+4/3!*x^3+5/4!*x^4-32/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A013468 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002549 Numerators of coefficients of log(1+x)/sqrt(1+x).
+ * A002549 Numerators of coefficients of <code>log(1+x)/sqrt(1+x)</code>.
  * @author Sean A. Irvine
  */
 public class A002549 implements Sequence {

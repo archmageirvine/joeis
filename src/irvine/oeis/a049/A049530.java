@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049530 pi(n) associated with A049529.
+ * A049530 <code>pi(n)</code> associated with A049529.
  * @author Georg Fischer
  */
 public class A049530 extends FiniteSequence {

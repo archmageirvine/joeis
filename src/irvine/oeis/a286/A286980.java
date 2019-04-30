@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A286980 Binomial coefficients <code>binomial(n,k) =</code> uv such that <code>n&gt;=2k</code> and u &gt; v, where gpf(u) <code>&lt; k,</code> gpf(v) <code>&gt;= k</code> (gpf(n)= is the greatest prime factor of <code>n)</code>.
+ * A286980 Binomial coefficients <code>binomial(n,k) =</code> uv such that <code>n&gt;=2k</code> and u &gt; v, where gpf(u) <code>&lt; k</code>, gpf(v) <code>&gt;= k (gpf(n)=</code> is the greatest prime factor of <code>n)</code>.
  * @author Georg Fischer
  */
 public class A286980 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008836 Liouville's function lambda(n) <code>= (-1)^k,</code> where k is number of primes dividing n (counted with multiplicity).
+ * A008836 Liouville's function <code>lambda(n) = (-1)^k</code>, where k is number of primes dividing n (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A008836 implements Sequence {

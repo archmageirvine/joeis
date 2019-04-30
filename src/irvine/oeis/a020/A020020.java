@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020020 Nearest integer to GAMMA(n+7/9)/GAMMA(7/9).
+ * A020020 Nearest integer to <code>GAMMA(n+7/9)/GAMMA(7/9)</code>.
  * @author Sean A. Irvine
  */
 public class A020020 implements Sequence {

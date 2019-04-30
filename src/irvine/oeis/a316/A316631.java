@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316631 Expansion of A(x) <code>= x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2</code>.
+ * A316631 Expansion of <code>A(x) = x*(1+3*x^2+x^3+3*x^4+x^6)/(1-x^4)^2</code>.
  * @author Georg Fischer
  */
 public class A316631 extends LinearRecurrence {

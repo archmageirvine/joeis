@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A002226 Smallest prime p such that first n primes (p_1=2, <code>...,</code> p_n) are quintic residues mod p.
+ * A002226 Smallest prime p such that first n primes (p_1=2, <code>..</code>., p_n) are quintic residues mod p.
  * @author Sean A. Irvine
  */
 public class A002226 implements Sequence {

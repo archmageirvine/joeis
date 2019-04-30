@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141340 Positive integers n such that A061358(n) = #{primes p | <code>n/2 &lt;=</code> p <code>&lt; n-1}</code>.
+ * A141340 Positive integers n such that A061358(n) = #{primes p <code>| n/2 &lt;=</code> p <code>&lt; n-1}</code>.
  * @author Georg Fischer
  */
 public class A141340 extends FiniteSequence {

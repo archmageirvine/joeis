@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192761 Coefficient of x in the reduction by <code>x^2-&gt;x+1</code> of the polynomial p(n,x) defined below in Comments.
+ * A192761 Coefficient of x in the reduction by <code>x^2-&gt;x+1</code> of the polynomial <code>p(n,x)</code> defined below in Comments.
  * @author Sean A. Irvine
  */
 public class A192761 extends LinearRecurrence {

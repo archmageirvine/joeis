@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012934 Expansion of e.g.f.: sec(tan(x)+log(x+1))=1+4/2!*x^2-6/3!*x^3+115/4!*x^4-500/5!*x^5...
+ * A012934 Expansion of e.g.f.: <code>sec(tan(x)+log(x+1))=1+4/2!*x^2-6/3!*x^3+115/4!*x^4-500/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012934 implements Sequence {

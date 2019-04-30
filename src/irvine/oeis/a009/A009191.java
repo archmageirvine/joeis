@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009191 <code>a(n) =</code> gcd(n, d(n)), where d(n) is the number of divisors of n (A000005).
+ * A009191 <code>a(n) = gcd(n, d(n))</code>, where <code>d(n)</code> is the number of divisors of n (A000005).
  * @author Sean A. Irvine
  */
 public class A009191 implements Sequence {

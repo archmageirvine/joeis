@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228142 Number of blocks in a Steiner system S(2, 5, A228141(n+1)).
+ * A228142 Number of blocks in a Steiner system <code>S(2, 5</code>, A228141(n+1)).
  * @author Sean A. Irvine
  */
 public class A228142 extends LinearRecurrence {

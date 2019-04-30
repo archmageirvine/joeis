@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125128 <code>a(n) = 2^(n+1) - n - 2,</code> or partial sums of main diagonal of array A125127 of k-step Lucas numbers.
+ * A125128 <code>a(n) = 2^(n+1) - n - 2</code>, or partial sums of main diagonal of array A125127 of k-step Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A125128 extends LinearRecurrence {

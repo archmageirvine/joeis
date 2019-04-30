@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114688 Expansion of <code>(-1-3*x+x^2)/((1-x)*(x+1)*(x^2+2*x-1))</code>; a Pellian-related sequence.
+ * A114688 Expansion of <code>(-1-3*x+x^2)/((1-x)*(x+1)*(x^2+2*x-1)); a</code> Pellian-related sequence.
  * @author Sean A. Irvine
  */
 public class A114688 extends LinearRecurrence {

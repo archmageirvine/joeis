@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088015 Expansion of e.g.f. cosh(sqrt(2)*x) + exp(x)*(cosh(sqrt(2*x) <code>- 1)</code>.
+ * A088015 Expansion of e.g.f. <code>cosh(sqrt(2)*x) + exp(x)*(cosh(sqrt(2*x) - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A088015 extends LinearRecurrence {

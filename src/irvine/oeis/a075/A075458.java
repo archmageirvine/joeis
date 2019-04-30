@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002564;
 
 /**
- * A075458 Domination number for queens' graph Q(n).
+ * A075458 Domination number for queens' graph <code>Q(n)</code>.
  * @author Sean A. Irvine
  */
 public class A075458 extends A002564 {

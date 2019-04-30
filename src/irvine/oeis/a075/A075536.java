@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075536 <code>a(n) = ((1+(-1)^n)*T(n) +</code> (1-(-1)^n)*S(n))/2, where <code>T(n) =</code> tribonacci numbers A000073, S(n) = generalized tribonacci numbers A001644.
+ * A075536 <code>a(n) = ((1+(-1)^n)*T(n) + (1-(-1)^n)*S(n))/2</code>, where <code>T(n) =</code> tribonacci numbers A000073, <code>S(n) =</code> generalized tribonacci numbers A001644.
  * @author Sean A. Irvine
  */
 public class A075536 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247842 Sum(9^k, <code>k=2..n)</code>.
+ * A247842 <code>Sum(9^k, k=2..n)</code>.
  * @author Sean A. Irvine
  */
 public class A247842 extends LinearRecurrence {

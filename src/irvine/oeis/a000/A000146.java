@@ -8,7 +8,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000146 From von Staudt-Clausen representation of Bernoulli numbers: <code>a(n) =</code> Bernoulli(2n) + Sum_{(p-1)|2n} 1/p.
+ * A000146 From von Staudt-Clausen representation of Bernoulli numbers: <code>a(n) = Bernoulli(2n) +</code> Sum_{(p-1)|2n} 1/p.
  * @author Sean A. Irvine
  */
 public class A000146 implements Sequence {

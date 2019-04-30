@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003959 If <code>n =</code> Product p(k)^e(k) then <code>a(n) =</code> Product (p(k)+1)^e(k), <code>a(1) = 1</code>.
+ * A003959 If <code>n =</code> Product <code>p(k)^e(k)</code> then <code>a(n) =</code> Product <code>(p(k)+1)^e(k), a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A003959 implements Sequence {

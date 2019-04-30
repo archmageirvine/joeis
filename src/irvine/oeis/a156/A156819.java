@@ -7,7 +7,7 @@ import irvine.util.array.DynamicIntArray;
 import java.util.HashSet;
 
 /**
- * A156819 Last digit d of <code>a(n)</code> is present in a(n+1+d); <code>a(1)=0</code>; <code>a(n+1)</code> is always the smallest available integer not already in the sequence and not leading to a contradiction.
+ * A156819 Last digit d of <code>a(n)</code> is present in a(n+1+d); <code>a(1)=0; a(n+1)</code> is always the smallest available integer not already in the sequence and not leading to a contradiction.
  * @author Sean A. Irvine
  */
 public class A156819 implements Sequence {

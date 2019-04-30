@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A116575 <code>a(0) = 0</code>; <code>a(1) = a(2) = 1</code>; for <code>n &gt; 2</code>: <code>a(n) = a(a(n-2)) + a(n-1 -</code> abs(a(n-1) <code>- a(n-2)))</code> if <code>a(n-2) &lt; n, a(n) = 0</code> otherwise.
+ * A116575 <code>a(0) = 0; a(1) = a(2) = 1</code>; for <code>n &gt; 2</code>: <code>a(n) = a(a(n-2)) + a(n-1 - abs(a(n-1) - a(n-2)))</code> if <code>a(n-2) &lt; n, a(n) = 0</code> otherwise.
  * @author Georg Fischer
  */
 public class A116575 extends FiniteSequence {

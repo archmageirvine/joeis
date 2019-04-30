@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007997 <code>a(n) =</code> ceiling((n-3)(n-4)/6).
+ * A007997 <code>a(n) = ceiling((n-3)(n-4)/6)</code>.
  * @author Sean A. Irvine
  */
 public class A007997 implements Sequence {

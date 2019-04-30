@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072561 Denominators of w(n) equals 3 where w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3).
+ * A072561 Denominators of <code>w(n)</code> equals 3 where <code>w(1)=w(2)=w(3)=1, w(n)=(w(n-1)*w(n-2)+(w(n-1)+w(n-2))/3) / w(n-3)</code>.
  * @author Sean A. Irvine
  */
 public class A072561 extends LinearRecurrence {

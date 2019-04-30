@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009551 Expansion of sin(x)/(1-x).
+ * A009551 Expansion of <code>sin(x)/(1-x)</code>.
  * @author Sean A. Irvine
  */
 public class A009551 implements Sequence {

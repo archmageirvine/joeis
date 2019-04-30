@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079001 Digital equivalents of letters A, B, C, <code>...,</code> Z on touch-tone telephone keypad.
+ * A079001 Digital equivalents of letters A, B, C, <code>..</code>., Z on touch-tone telephone keypad.
  * @author Georg Fischer
  */
 public class A079001 extends FiniteSequence {

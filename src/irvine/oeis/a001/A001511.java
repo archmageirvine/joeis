@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000120;
 
 /**
- * A001511 The ruler function: <code>2^a(n)</code> divides <code>2n.</code> Or, <code>a(n) =</code> 2-adic valuation of <code>2n</code>.
+ * A001511 The ruler function: <code>2^a(n)</code> divides <code>2n</code>. Or, <code>a(n) =</code> 2-adic valuation of <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A001511 extends A000120 {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
- * A001028 E.g.f. satisfies A'(x) <code>= 1 +</code> A(A(x)), A(0)=0.
+ * A001028 E.g.f. satisfies A'(x) <code>= 1 + A(A(x)), A(0)=0</code>.
  * @author Sean A. Irvine
  */
 public class A001028 implements Sequence {

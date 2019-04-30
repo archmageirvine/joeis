@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009063 Expansion of e.g.f. cos(sinh(x)*sin(x)) in powers of <code>x^4</code>.
+ * A009063 Expansion of e.g.f. <code>cos(sinh(x)*sin(x))</code> in powers of <code>x^4</code>.
  * @author Sean A. Irvine
  */
 public class A009063 implements Sequence {

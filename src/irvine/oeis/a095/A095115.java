@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095115 <code>a(1)=1.</code> Given <code>a(1),...,a(n-1),</code> to find <code>a(n),</code> let S <code>= {a(1), ..., a(n-1),</code> |a(2)-a(1)|, <code>...,</code> |a(n-1)-a(n-2)|}. Let d be the smallest positive integer not in S. Then <code>a(n)</code> is the smallest one of a(n-1)-d and a(n-1)+d which is a positive integer not in S union {d}.
+ * A095115 <code>a(1)=1</code>. Given <code>a(1),...,a(n-1)</code>, to find <code>a(n)</code>, let S <code>= {a(1), ..., a(n-1), |a(2)-a(1)|, ..., |a(n-1)-a(n-2)|}</code>. Let d be the smallest positive integer not in S. Then <code>a(n)</code> is the smallest one of a(n-1)-d and a(n-1)+d which is a positive integer not in S union {d}.
  * @author Georg Fischer
  */
 public class A095115 extends FiniteSequence {

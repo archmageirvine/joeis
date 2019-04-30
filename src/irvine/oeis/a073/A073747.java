@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073747 Decimal expansion of coth(1).
+ * A073747 Decimal expansion of <code>coth(1)</code>.
  * @author Sean A. Irvine
  */
 public class A073747 extends DecimalExpansionSequence {

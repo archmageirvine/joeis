@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178876 <code>a(n) =</code> number of 7-digit primes with digit sum <code>n,</code> where n runs through the non-multiples of 3 in the range <code>[2..62]</code>.
+ * A178876 <code>a(n) =</code> number of 7-digit primes with digit sum n, where n runs through the non-multiples of 3 in the range <code>[2..62]</code>.
  * @author Georg Fischer
  */
 public class A178876 extends FiniteSequence {

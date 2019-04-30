@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012468 Expansion of e.g.f. arcsin(cos(x) * log(x+1)).
+ * A012468 Expansion of e.g.f. <code>arcsin(cos(x) * log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A012468 implements Sequence {

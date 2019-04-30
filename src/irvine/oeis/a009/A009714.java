@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009714 Product( <code>[ (n+i)/9 ] ), i=0..8</code>.
+ * A009714 <code>Product( [ (n+i)/9 ] ), i=0..8</code>.
  * @author Sean A. Irvine
  */
 public class A009714 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076307 <code>a(n) =</code> n+min(2*floor(a(n-1)/2), <code>3*floor(a(n-1)/3))</code> for <code>n &gt; 1, a(1)=1</code>.
+ * A076307 <code>a(n) = n+min(2*floor(a(n-1)/2), 3*floor(a(n-1)/3))</code> for <code>n &gt; 1, a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A076307 extends LinearRecurrence {

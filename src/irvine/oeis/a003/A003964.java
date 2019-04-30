@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003964 Fully multiplicative with a(p(k)) = partition(k+1) for k-th prime p.
+ * A003964 Fully multiplicative with <code>a(p(k)) = partition(k+1)</code> for k-th prime p.
  * @author Sean A. Irvine
  */
 public class A003964 implements Sequence {

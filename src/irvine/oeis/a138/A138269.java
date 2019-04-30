@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138269 <code>a(n+1)</code> is the Hankel transform of <code>C(n)+C(n+2),</code> where C(n)=A000108(n).
+ * A138269 <code>a(n+1)</code> is the Hankel transform of <code>C(n)+C(n+2)</code>, where C(n)=A000108(n).
  * @author Sean A. Irvine
  */
 public class A138269 extends LinearRecurrence {

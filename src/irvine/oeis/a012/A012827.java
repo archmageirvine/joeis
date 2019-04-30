@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012827 sinh(sec(x)*arcsinh(x))=x+3/3!*x^3+45/5!*x^5+1071/7!*x^7+56697/9!*x^9...
+ * A012827 <code>sinh(sec(x)*arcsinh(x))=x+3/3!*x^3+45/5!*x^5+1071/7!*x^7+56697/9!*x^9</code>...
  * @author Sean A. Irvine
  */
 public class A012827 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003629 Primes p <code>== +- 3 (mod 8),</code> or, primes p such that 2 is not a square mod p.
+ * A003629 Primes p <code>== +- 3 (mod 8)</code>, or, primes p such that 2 is not a square mod p.
  * @author Sean A. Irvine
  */
 public class A003629 implements Sequence {

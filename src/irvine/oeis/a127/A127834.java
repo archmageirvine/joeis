@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127834 Numbers whose 8-bit binary representation, when rotated by up to one bit, contains every 3-bit binary representation for the numbers 0 through <code>7.</code> When this binary representation, with two bits from one end concatenated to the other, is given as input to an elementary cellular automaton, the first line of output will uniquely identify the rule of the automaton.
+ * A127834 Numbers whose 8-bit binary representation, when rotated by up to one bit, contains every 3-bit binary representation for the numbers 0 through 7. When this binary representation, with two bits from one end concatenated to the other, is given as input to an elementary cellular automaton, the first line of output will uniquely identify the rule of the automaton.
  * @author Georg Fischer
  */
 public class A127834 extends FiniteSequence {

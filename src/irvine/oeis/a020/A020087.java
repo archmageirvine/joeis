@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020087 Integer part of Gamma(n + 1/4)/Gamma(1/4).
+ * A020087 Integer part of <code>Gamma(n + 1/4)/Gamma(1/4)</code>.
  * @author Sean A. Irvine
  */
 public class A020087 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013099 arctanh(arcsinh(x)+tan(x)) <code>= 2*x+17/3!*x^3+873/5!*x^5+110127/7!*x^7..</code>.
+ * A013099 <code>arctanh(arcsinh(x)+tan(x)) = 2*x+17/3!*x^3+873/5!*x^5+110127/7!*x^7</code>...
  * @author Sean A. Irvine
  */
 public class A013099 implements Sequence {

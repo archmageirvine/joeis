@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.French;
 
 /**
- * A007005 Number of characters in the French spelling of <code>n,</code> including spaces and hyphens.
+ * A007005 Number of characters in the French spelling of n, including spaces and hyphens.
  * @author Sean A. Irvine
  */
 public class A007005 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251624 Numbers n such that the octagonal numbers N(n), N(n+1) and N(n+2) sum to another octagonal number.
+ * A251624 Numbers n such that the octagonal numbers <code>N(n), N(n+1)</code> and <code>N(n+2)</code> sum to another octagonal number.
  * @author Sean A. Irvine
  */
 public class A251624 extends LinearRecurrence {

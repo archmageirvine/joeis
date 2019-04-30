@@ -7,7 +7,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A000556 Expansion of exp(-x) <code>/ (1 -</code> exp(x) + exp(-x)).
+ * A000556 Expansion of <code>exp(-x) / (1 - exp(x) + exp(-x))</code>.
  * @author Sean A. Irvine
  */
 public class A000556 implements Sequence {

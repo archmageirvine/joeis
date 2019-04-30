@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A167893 <code>a(n) = Sum_{k=1..n}</code> Catalan(k)^3.
+ * A167893 <code>a(n) = Sum_{k=1..n} Catalan(k)^3</code>.
  * @author Sean A. Irvine
  */
 public class A167893 extends A000108 {

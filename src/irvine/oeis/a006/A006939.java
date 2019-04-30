@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A006939 Chernoff sequence: <code>a(n) = Product_{k=1..n}</code> prime(k)^(n-k+1).
+ * A006939 Chernoff sequence: <code>a(n) = Product_{k=1..n} prime(k)^(n-k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A006939 extends A002110 {

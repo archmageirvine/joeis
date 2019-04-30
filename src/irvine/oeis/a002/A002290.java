@@ -7,7 +7,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002290 Absolute value of Glaisher's alpha(n).
+ * A002290 Absolute value of Glaisher's <code>alpha(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002290 implements Sequence {

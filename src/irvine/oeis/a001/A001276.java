@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001276 Smallest k such that the product of q/(q-1) over the primes from prime(n) to prime(n+k-1) is greater than 2.
+ * A001276 Smallest k such that the product of q/(q-1) over the primes from <code>prime(n)</code> to <code>prime(n+k-1)</code> is greater than 2.
  * @author Sean A. Irvine
  */
 public class A001276 implements Sequence {

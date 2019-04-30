@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A011757 <code>a(n) =</code> prime(n^2).
+ * A011757 <code>a(n) = prime(n^2)</code>.
  * @author Sean A. Irvine
  */
 public class A011757 extends A000290 {

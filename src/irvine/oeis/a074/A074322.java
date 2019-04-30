@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074322 0 if pronounced name of n-th letter of English alphabet begin with a vowel sound, otherwise <code>1.</code> Different from A054638.
+ * A074322 0 if pronounced name of n-th letter of English alphabet begin with a vowel sound, otherwise 1. Different from A054638.
  * @author Georg Fischer
  */
 public class A074322 extends FiniteSequence {

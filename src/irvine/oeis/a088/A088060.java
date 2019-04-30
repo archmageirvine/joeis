@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088060 Smallest Fibonacci number <code>F(k) &gt;</code> n-th Fibonacci number <code>F(n)</code> such that <code>F(n) + F(k)</code> is a square.
+ * A088060 Smallest Fibonacci number <code>F(k) &gt</code>; n-th Fibonacci number <code>F(n)</code> such that <code>F(n) + F(k)</code> is a square.
  * @author Georg Fischer
  */
 public class A088060 extends FiniteSequence {

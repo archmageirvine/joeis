@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009797 Expansion of tanh(sin(x))/cos(x) (odd powers only).
+ * A009797 Expansion of <code>tanh(sin(x))/cos(x)</code> (odd powers only).
  * @author Sean A. Irvine
  */
 public class A009797 implements Sequence {

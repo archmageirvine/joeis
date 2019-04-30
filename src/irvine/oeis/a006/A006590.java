@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000005;
 
 /**
- * A006590 <code>a(n) = Sum_{k=1..n}</code> ceiling(n/k).
+ * A006590 <code>a(n) = Sum_{k=1..n} ceiling(n/k)</code>.
  * @author Sean A. Irvine
  */
 public class A006590 extends A000005 {

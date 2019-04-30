@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A252076 Numbers n such that the sum of the heptagonal numbers H(n) and H(n+1) is equal to the hexagonal number X(m) for some m.
+ * A252076 Numbers n such that the sum of the heptagonal numbers <code>H(n)</code> and <code>H(n+1)</code> is equal to the hexagonal number X(m) for some m.
  * @author Sean A. Irvine
  */
 public class A252076 extends LinearRecurrence {

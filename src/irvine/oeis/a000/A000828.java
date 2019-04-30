@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A000828 E.g.f. cos(x)/(cos(x) - sin(x)).
+ * A000828 E.g.f. <code>cos(x)/(cos(x) - sin(x))</code>.
  * @author Sean A. Irvine
  */
 public class A000828 implements Sequence {

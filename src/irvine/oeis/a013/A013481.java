@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013481 sech(cos(x)-cosh(x)) <code>= 1-12/4!*x^4+8288/8!*x^8-39475392/12!*x^12..</code>.
+ * A013481 <code>sech(cos(x)-cosh(x)) = 1-12/4!*x^4+8288/8!*x^8-39475392/12!*x^12</code>...
  * @author Sean A. Irvine
  */
 public class A013481 implements Sequence {

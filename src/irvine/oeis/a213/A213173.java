@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213173 <code>a(n) = 4^floor(n/2),</code> Powers of 4 repeated.
+ * A213173 <code>a(n) = 4^floor(n/2)</code>, Powers of 4 repeated.
  * @author Sean A. Irvine
  */
 public class A213173 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089499 <code>a(0)=0</code>; <code>a(1)=1</code>; <code>a(2n)=4*Sum_{k=0...n}a(2k-1)</code>; <code>a(2n+1)=a(2n)+a(2n-1)</code>.
+ * A089499 <code>a(0)=0; a(1)=1; a(2n)=4*Sum_{k=0...n}a(2k-1); a(2n+1)=a(2n)+a(2n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A089499 extends LinearRecurrence {

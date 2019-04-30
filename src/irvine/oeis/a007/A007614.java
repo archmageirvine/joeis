@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000010;
 import irvine.util.Pair;
 
 /**
- * A007614 All values attained by the phi(n) function, in ascending order.
+ * A007614 All values attained by the <code>phi(n)</code> function, in ascending order.
  * @author Sean A. Irvine
  */
 public class A007614 extends A000010 {

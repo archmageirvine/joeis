@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010788 sin(log(cos(x)))=-1/2!*x^2-2/4!*x^4-1/6!*x^6+148/8!*x^8+...
+ * A010788 <code>sin(log(cos(x)))=-1/2!*x^2-2/4!*x^4-1/6!*x^6+148/8!*x^8+</code>...
  * @author Sean A. Irvine
  */
 public class A010788 implements Sequence {

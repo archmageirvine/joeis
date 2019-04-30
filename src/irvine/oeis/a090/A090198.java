@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090198 N(5,n) where N(5,x) is the 5th Narayana polynomial.
+ * A090198 <code>N(5,n)</code> where <code>N(5,x)</code> is the 5th Narayana polynomial.
  * @author Sean A. Irvine
  */
 public class A090198 extends LinearRecurrence {

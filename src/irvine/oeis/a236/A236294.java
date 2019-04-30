@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236294 <code>a(n) =</code> max( <code>a(n-1) + a(n-3), 2*a(n-2) ) - a(n-4),</code> with <code>a(0)=a(1)=1, a(1)=1, a(2)=2, a(3)=3</code>.
+ * A236294 <code>a(n) = max( a(n-1) + a(n-3), 2*a(n-2) ) - a(n-4)</code>, with <code>a(0)=a(1)=1, a(1)=1, a(2)=2, a(3)=3</code>.
  * @author Sean A. Irvine
  */
 public class A236294 extends LinearRecurrence {

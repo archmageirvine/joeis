@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000009;
 
 /**
- * A239936 Least <code>k &gt; 0</code> such that p(k)+q(n) is prime, where p(n) is the number of partitions of n and q(n) is the number of strict partitions of n.
+ * A239936 Least <code>k &gt; 0</code> such that <code>p(k)+q(n)</code> is prime, where <code>p(n)</code> is the number of partitions of n and <code>q(n)</code> is the number of strict partitions of n.
  * @author Sean A. Irvine
  */
 public class A239936 extends A000009 {

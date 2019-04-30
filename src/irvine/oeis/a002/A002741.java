@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A002741 Logarithmic numbers: expansion of -log(1-x) e^(-x).
+ * A002741 Logarithmic numbers: expansion of <code>-log(1-x)</code> e^(-x).
  * @author Sean A. Irvine
  */
 public class A002741 implements Sequence {

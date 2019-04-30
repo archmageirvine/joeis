@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171617 <code>a(n)=k</code> is the smallest exponent of N=2^k of first prime(1)=2 where at least 5 equal decimal digits "n <code>n n n</code> n" appear in the decimal representation of N <code>(n=0,1,...9)</code>.
+ * A171617 <code>a(n)=k</code> is the smallest exponent of N=2^k of first <code>prime(1)=2</code> where at least 5 equal decimal digits "n <code>n n n</code> n" appear in the decimal representation of N <code>(n=0,1,...9)</code>.
  * @author Georg Fischer
  */
 public class A171617 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007706 <code>a(n) = 1 +</code> coefficient of <code>x^n in Product_{k&gt;=1} (1-x^k)</code> (essentially the expansion of the Dedekind function eta(x)).
+ * A007706 <code>a(n) = 1 +</code> coefficient of <code>x^n in Product_{k&gt;=1} (1-x^k)</code> (essentially the expansion of the Dedekind function <code>eta(x))</code>.
  * @author Sean A. Irvine
  */
 public class A007706 implements Sequence {

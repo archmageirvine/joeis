@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A005722 <code>a(n) =</code> (prime(n) <code>- 1)^2</code>.
+ * A005722 <code>a(n) = (prime(n) - 1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A005722 extends A000040 {

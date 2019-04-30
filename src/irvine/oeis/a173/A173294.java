@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173294 Values of <code>16*n^2+24*n+7, n&gt;=0,</code> each duplicated.
+ * A173294 Values of <code>16*n^2+24*n+7, n&gt;=0</code>, each duplicated.
  * @author Sean A. Irvine
  */
 public class A173294 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217367 <code>a(n) = (n+7) /</code> gcd(n+7,4) <code>* n /</code> gcd(n,4).
+ * A217367 <code>a(n) = (n+7) / gcd(n+7,4) * n / gcd(n,4)</code>.
  * @author Sean A. Irvine
  */
 public class A217367 extends LinearRecurrence {

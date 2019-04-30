@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222591 Numerators of <code>(n*(n - 3)/6) + 1,</code> arising as the maximum possible number of triple lines for an n element set.
+ * A222591 Numerators of <code>(n*(n - 3)/6) + 1</code>, arising as the maximum possible number of triple lines for an n element set.
  * @author Sean A. Irvine
  */
 public class A222591 extends LinearRecurrence {

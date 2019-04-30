@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A035033 Numbers n such that <code>n &lt;=</code> d(n)^2, where d() = number of divisors (A000005).
+ * A035033 Numbers n such that <code>n &lt;= d(n)^2</code>, where <code>d() =</code> number of divisors (A000005).
  * @author Georg Fischer
  */
 public class A035033 extends FiniteSequence {

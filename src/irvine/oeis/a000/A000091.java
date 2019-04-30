@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000091 Multiplicative with a(2^e) <code>= 2</code> for <code>k &gt;= 1</code>; <code>a(3) = 2,</code> a(3^e) <code>= 0</code> for <code>k &gt;= 2</code>; a(p^e) <code>= 0</code> if p <code>&gt; 3</code> and p <code>== -1 (mod 3)</code>; a(p^e) <code>= 2</code> if p <code>&gt; 3</code> and p <code>== 1 (mod 3)</code>.
+ * A000091 Multiplicative with a(2^e) <code>= 2</code> for <code>k &gt;= 1; a(3) = 2</code>, a(3^e) <code>= 0</code> for <code>k &gt;= 2</code>; a(p^e) <code>= 0</code> if p <code>&gt; 3</code> and p <code>== -1 (mod 3)</code>; a(p^e) <code>= 2</code> if p <code>&gt; 3</code> and p <code>== 1 (mod 3)</code>.
  * @author Sean A. Irvine
  */
 public class A000091 implements Sequence {

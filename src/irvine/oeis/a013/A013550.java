@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013550 Numerator of the coefficient of <code>[x^n]</code> in the Taylor expansion exp(cot(x) - cosech(x)).
+ * A013550 Numerator of the coefficient of <code>[x^n]</code> in the Taylor expansion <code>exp(cot(x) - cosech(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013550 implements Sequence {

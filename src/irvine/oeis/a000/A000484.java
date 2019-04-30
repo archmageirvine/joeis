@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000484 <code>a(n) =</code> round(cos(n)).
+ * A000484 <code>a(n) = round(cos(n))</code>.
  * @author Sean A. Irvine
  */
 public class A000484 implements Sequence {

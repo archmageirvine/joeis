@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013314 cos(exp(x)-cos(x))=1-1/2!*x^2-6/3!*x^3-15/4!*x^4+183/6!*x^6...
+ * A013314 <code>cos(exp(x)-cos(x))=1-1/2!*x^2-6/3!*x^3-15/4!*x^4+183/6!*x^6</code>...
  * @author Sean A. Irvine
  */
 public class A013314 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007014 Largest prime <code>&lt;=</code> Product prime(k).
+ * A007014 Largest prime <code>&lt;=</code> Product <code>prime(k)</code>.
  * @author Sean A. Irvine
  */
 public class A007014 implements Sequence {

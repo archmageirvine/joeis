@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227316 <code>a(n) = n(n+1)</code> if <code>n == 0</code> or <code>1 (mod 4),</code> otherwise <code>a(n) = n(n+1)/2</code>.
+ * A227316 <code>a(n) = n(n+1)</code> if <code>n == 0</code> or <code>1 (mod 4)</code>, otherwise <code>a(n) = n(n+1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A227316 extends LinearRecurrence {

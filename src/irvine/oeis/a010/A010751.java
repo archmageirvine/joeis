@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010751 Up once, down twice, up three times, down four times, <code>..</code>.
+ * A010751 Up once, down twice, up three times, down four times, ...
  * @author Sean A. Irvine
  */
 public class A010751 implements Sequence {

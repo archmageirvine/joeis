@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051626 Length of the period of decimal representation of <code>1/n,</code> or 0 if <code>1/n</code> terminates.
+ * A051626 Length of the period of decimal representation of <code>1/n</code>, or 0 if <code>1/n</code> terminates.
  * @author Sean A. Irvine
  */
 public class A051626 implements Sequence {

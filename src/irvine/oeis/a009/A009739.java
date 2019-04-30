@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009739 E.g.f. tan(x)*exp(x).
+ * A009739 E.g.f. <code>tan(x)*exp(x)</code>.
  * @author Sean A. Irvine
  */
 public class A009739 implements Sequence {

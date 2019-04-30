@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.a000.A000061;
 
 /**
- * A064074 Generalized tangent number d(9,n).
+ * A064074 Generalized tangent number <code>d(9,n)</code>.
  * @author Sean A. Irvine
  */
 public class A064074 extends A000061 {

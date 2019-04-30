@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A003272 Ceiling of (-4n)/Bernoulli(2n).
+ * A003272 Ceiling of <code>(-4n)/Bernoulli(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A003272 implements Sequence {

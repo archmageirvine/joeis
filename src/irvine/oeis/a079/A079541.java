@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079541 Numbers n such that phi(n) = d(n).
+ * A079541 Numbers n such that <code>phi(n) = d(n)</code>.
  * @author Georg Fischer
  */
 public class A079541 extends FiniteSequence {

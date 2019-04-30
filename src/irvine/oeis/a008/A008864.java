@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A008864 <code>a(n) =</code> prime(n) <code>+ 1</code>.
+ * A008864 <code>a(n) = prime(n) + 1</code>.
  * @author Sean A. Irvine
  */
 public class A008864 extends A000040 {

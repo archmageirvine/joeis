@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073393 Sixth convolution of A002605(n) (generalized <code>(2</code>,2)-Fibonacci), <code>n &gt;= 0,</code> with itself.
+ * A073393 Sixth convolution of A002605(n) (generalized <code>(2</code>,2)-Fibonacci), <code>n &gt;= 0</code>, with itself.
  * @author Sean A. Irvine
  */
 public class A073393 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212572 Number of (w,x,y,z) with all terms in <code>{1,...,n}</code> and |w-x| <code>&lt;=</code> |x-y| + |y-z|.
+ * A212572 Number of (w,x,y,z) with all terms in <code>{1,...,n}</code> and |w-x| <code>&lt;= |x-y| + |y-z|</code>.
  * @author Sean A. Irvine
  */
 public class A212572 extends LinearRecurrence {

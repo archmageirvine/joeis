@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015729 Numbers n such that phi(n) <code>* sigma(n) + 16</code> is a perfect square.
+ * A015729 Numbers n such that <code>phi(n) * sigma(n) + 16</code> is a perfect square.
  * @author Sean A. Irvine
  */
 public class A015729 implements Sequence {

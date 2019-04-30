@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009094 Expansion of e.g.f. cos(tanh(x)*tan(x)) (only powers that are multiples of 4).
+ * A009094 Expansion of e.g.f. <code>cos(tanh(x)*tan(x))</code> (only powers that are multiples of 4).
  * @author Sean A. Irvine
  */
 public class A009094 implements Sequence {

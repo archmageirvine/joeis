@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013062 sinh(sinh(x)+arctan(x))=2*x+7/3!*x^3+17/5!*x^5+1089/7!*x^7...
+ * A013062 <code>sinh(sinh(x)+arctan(x))=2*x+7/3!*x^3+17/5!*x^5+1089/7!*x^7</code>...
  * @author Sean A. Irvine
  */
 public class A013062 implements Sequence {

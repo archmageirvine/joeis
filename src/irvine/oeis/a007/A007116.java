@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007116 Expansion of e.g.f. (1+x)^(exp(x)).
+ * A007116 Expansion of e.g.f. <code>(1+x)^(exp(x))</code>.
  * @author Sean A. Irvine
  */
 public class A007116 implements Sequence {

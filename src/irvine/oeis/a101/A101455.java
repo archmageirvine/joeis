@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101455 <code>a(n) = 0</code> for even <code>n, a(n) = (-1)^((n-1)/2)</code> for odd <code>n.</code> Periodic sequence <code>1,0,-1,0,..</code>.
+ * A101455 <code>a(n) = 0</code> for even <code>n, a(n) = (-1)^((n-1)/2)</code> for odd n. Periodic sequence <code>1,0,-1,0,</code>...
  * @author Sean A. Irvine
  */
 public class A101455 extends LinearRecurrence {

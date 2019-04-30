@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013315 sinh(exp(x)-cos(x))=x+2/2!*x^2+2/3!*x^3+12/4!*x^4+72/5!*x^5...
+ * A013315 <code>sinh(exp(x)-cos(x))=x+2/2!*x^2+2/3!*x^3+12/4!*x^4+72/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A013315 implements Sequence {

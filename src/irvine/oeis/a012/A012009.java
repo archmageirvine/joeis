@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012009 sech(log(cos(x)))=1-3/4!*x^4-30/6!*x^6-63/8!*x^8+12540/10!*x^10...
+ * A012009 <code>sech(log(cos(x)))=1-3/4!*x^4-30/6!*x^6-63/8!*x^8+12540/10!*x^10</code>...
  * @author Sean A. Irvine
  */
 public class A012009 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278578 <code>a(n) =</code> least value of k such that tau(k) = A000594(k) <code>== n mod 23</code>.
+ * A278578 <code>a(n) =</code> least value of k such that <code>tau(k) =</code> A000594(k) <code>== n mod 23</code>.
  * @author Georg Fischer
  */
 public class A278578 extends FiniteSequence {

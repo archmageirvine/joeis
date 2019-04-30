@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008303 Triangle read by rows: <code>T(n,k) (n&gt;=1</code>; 0&lt;=k&lt;=ceiling(n/2)-1) is the number of permutations of <code>[n]</code> with k peaks.
+ * A008303 Triangle read by rows: <code>T(n,k) (n&gt;=1; 0&lt;=k&lt;=ceiling(n/2)-1)</code> is the number of permutations of <code>[n]</code> with k peaks.
  * @author Sean A. Irvine
  */
 public class A008303 extends MemoryFunction3<Integer, Polynomial<Z>> implements Sequence {

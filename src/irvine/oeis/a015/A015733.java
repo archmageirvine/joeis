@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015733 d(n) does not divide phi(n).
+ * A015733 <code>d(n)</code> does not divide <code>phi(n)</code>.
  * @author Sean A. Irvine
  */
 public class A015733 implements Sequence {

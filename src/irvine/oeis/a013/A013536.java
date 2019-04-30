@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013536 Numerators of coefficients in Taylor series expansion of exp(cosec(x)-cotanh(x)).
+ * A013536 Numerators of coefficients in Taylor series expansion of <code>exp(cosec(x)-cotanh(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013536 implements Sequence {

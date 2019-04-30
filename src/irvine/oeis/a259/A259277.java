@@ -5,7 +5,7 @@ import irvine.nt.homeprime.ReverseHomePrime;
 import irvine.oeis.a000.A000040;
 
 /**
- * A259277 Least m such that HomePrime(m) = prime(n).
+ * A259277 Least m such that HomePrime(m) <code>= prime(n)</code>.
  * @author Sean A. Irvine
  */
 public class A259277 extends A000040 {

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099195 Figurate numbers based on the 8-dimensional regular convex polytope called the 8-dimensional cross-polytope, or 8-dimensional hyperoctahedron, which is represented by the Schlaefli symbol <code>{3, 3, 3, 3, 3, 3, 4}.</code> It is the dual of the 8-dimensional hypercube.
+ * A099195 Figurate numbers based on the 8-dimensional regular convex polytope called the 8-dimensional cross-polytope, or 8-dimensional hyperoctahedron, which is represented by the Schlaefli symbol <code>{3, 3, 3, 3, 3, 3, 4}</code>. It is the dual of the 8-dimensional hypercube.
  * @author Georg Fischer
  */
 public class A099195 extends LinearRecurrence {

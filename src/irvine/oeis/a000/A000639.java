@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000639 Alkyl benzenes with n carbon atoms: C(n)H(2n-6).
+ * A000639 Alkyl benzenes with n carbon atoms: <code>C(n)H(2n-6)</code>.
  * @author Sean A. Irvine
  */
 public class A000639 extends A000598 {

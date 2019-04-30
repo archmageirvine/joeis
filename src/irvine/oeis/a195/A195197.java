@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195197 Number of Hamiltonian cycles in the generalized Petersen Graph P(n,2).
+ * A195197 Number of Hamiltonian cycles in the generalized Petersen Graph <code>P(n,2)</code>.
  * @author Sean A. Irvine
  */
 public class A195197 extends LinearRecurrence {

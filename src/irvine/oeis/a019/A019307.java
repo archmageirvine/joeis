@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a014.A014588;
 
 /**
- * A019307 First time that the Grundy function G(x) for "subtract-a-Fibonacci-number" take the value n.
+ * A019307 First time that the Grundy function <code>G(x)</code> for "subtract-a-Fibonacci-number" take the value n.
  * @author Sean A. Irvine
  */
 public class A019307 implements Sequence {

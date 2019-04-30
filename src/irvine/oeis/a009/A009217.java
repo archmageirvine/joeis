@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009217 E.g.f. exp(sin(x)^2) (even powers only).
+ * A009217 E.g.f. <code>exp(sin(x)^2)</code> (even powers only).
  * @author Sean A. Irvine
  */
 public class A009217 implements Sequence {

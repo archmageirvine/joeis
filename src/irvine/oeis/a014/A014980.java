@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014980 Start with <code>5.</code> Multiply the two numbers closest to <code>n/2</code> to get the next number.
+ * A014980 Start with 5. Multiply the two numbers closest to <code>n/2</code> to get the next number.
  * @author Sean A. Irvine
  */
 public class A014980 implements Sequence {

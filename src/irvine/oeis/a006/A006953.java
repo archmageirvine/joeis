@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006953 <code>a(n) =</code> denominator of Bernoulli(2n)/(2n).
+ * A006953 <code>a(n) =</code> denominator of <code>Bernoulli(2n)/(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A006953 implements Sequence {

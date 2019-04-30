@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013553 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion -arcsin(cot(x)-coth(x)).
+ * A013553 Numerator of <code>[x^(2n+1)]</code> of the Taylor expansion <code>-arcsin(cot(x)-coth(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013553 implements Sequence {

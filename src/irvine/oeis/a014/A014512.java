@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a073.A073006;
 
 /**
- * A014512 [ GAMMA(n+2/3) ].
+ * A014512 <code>[ GAMMA(n+2/3) ]</code>.
  * @author Sean A. Irvine
  */
 public class A014512 implements Sequence {

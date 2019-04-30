@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202273 Positive integers m in increasing order determined by these rules: <code>a(1) = 1,</code> for <code>n&gt;=1, </code> if m is in the sequence then also are numbers h such that sigma(h) = 3m.
+ * A202273 Positive integers m in increasing order determined by these rules: <code>a(1) = 1</code>, for <code>n&gt;=1, </code> if m is in the sequence then also are numbers h such that sigma(h) = 3m.
  * @author Georg Fischer
  */
 public class A202273 extends FiniteSequence {

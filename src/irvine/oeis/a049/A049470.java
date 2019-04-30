@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A049470 Decimal expansion of cos(1).
+ * A049470 Decimal expansion of <code>cos(1)</code>.
  * @author Sean A. Irvine
  */
 public class A049470 extends DecimalExpansionSequence {

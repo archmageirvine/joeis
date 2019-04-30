@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009571 Least m such that if <code>a/b &lt;</code> c/d are Farey fractions of order n then there exists k such that <code>a/b &lt;</code> k/m &lt; c/d, k/m reduced.
+ * A009571 Least m such that if <code>a/b &lt</code>; c/d are Farey fractions of order n then there exists k such that <code>a/b &lt</code>; k/m &lt; c/d, k/m reduced.
  * @author Sean A. Irvine
  */
 public class A009571 implements Sequence {

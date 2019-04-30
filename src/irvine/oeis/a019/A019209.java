@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019209 Cycle class sequence c(n) (number of true cycles of length n in which a certain node is included) for zeolite NON = Nonasil-[ <code>4158 ] [</code> Si88O176 <code>] . 4</code> R.
+ * A019209 Cycle class sequence <code>c(n)</code> (number of true cycles of length n in which a certain node is included) for zeolite NON = Nonasil-[ <code>4158 ] [</code> Si88O176 <code>] . 4</code> R.
  * @author Sean A. Irvine
  */
 public class A019209 extends A018940 {

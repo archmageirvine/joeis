@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000182 Tangent (or "Zag") numbers: e.g.f. tan(x), also (up to signs) e.g.f. tanh(x).
+ * A000182 Tangent (or "Zag") numbers: e.g.f. <code>tan(x)</code>, also (up to signs) e.g.f. <code>tanh(x)</code>.
  * @author Sean A. Irvine
  */
 public class A000182 implements Sequence {

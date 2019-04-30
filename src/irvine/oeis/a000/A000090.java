@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000090 E.g.f. exp((-x^3)/3)/(1-x).
+ * A000090 E.g.f. <code>exp((-x^3)/3)/(1-x)</code>.
  * @author Sean A. Irvine
  */
 public class A000090 implements Sequence {

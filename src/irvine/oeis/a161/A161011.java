@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A161011 Decimal expansion of tan(1/2).
+ * A161011 Decimal expansion of <code>tan(1/2)</code>.
  * @author Sean A. Irvine
  */
 public class A161011 extends DecimalExpansionSequence {

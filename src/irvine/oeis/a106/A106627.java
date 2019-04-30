@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106627 Product L(n)*L_4(n), where L(n) are Lucas numbers and L_4(n) are Lucas 4-step numbers.
+ * A106627 Product L(n)*L_4(n), where <code>L(n)</code> are Lucas numbers and L_4(n) are Lucas 4-step numbers.
  * @author Sean A. Irvine
  */
 public class A106627 extends LinearRecurrence {

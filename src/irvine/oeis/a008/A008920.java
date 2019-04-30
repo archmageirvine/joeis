@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008920 Let <code>j =</code> | <code>i -</code> i_written_backwards |, <code>k = j +</code> j_written_backwards; then k is in this sequence.
+ * A008920 Let <code>j = | i -</code> i_written_backwards <code>|, k = j +</code> j_written_backwards; then k is in this sequence.
  * @author Sean A. Irvine
  */
 public class A008920 implements Sequence {

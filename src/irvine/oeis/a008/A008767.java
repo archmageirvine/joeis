@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008767 <code>a(n) =</code> floor(n/7)*ceiling(n/7).
+ * A008767 <code>a(n) = floor(n/7)*ceiling(n/7)</code>.
  * @author Sean A. Irvine
  */
 public class A008767 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009468 Expansion of sin(log(1+x)^2).
+ * A009468 Expansion of <code>sin(log(1+x)^2)</code>.
  * @author Sean A. Irvine
  */
 public class A009468 implements Sequence {

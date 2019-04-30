@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019120 Cycle class sequence c(n) (number of true cycles of length n in which a certain node is included) for zeolite EUO = EU-1 Nan [ AlnSi112-n O224 ].
+ * A019120 Cycle class sequence <code>c(n)</code> (number of true cycles of length n in which a certain node is included) for zeolite EUO = EU-1 Nan [ AlnSi112-n O224 ].
  * @author Sean A. Irvine
  */
 public class A019120 extends A018940 {

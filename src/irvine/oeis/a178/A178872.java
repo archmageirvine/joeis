@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178872 Partial sums of round(4^n/7).
+ * A178872 Partial sums of <code>round(4^n/7)</code>.
  * @author Sean A. Irvine
  */
 public class A178872 extends LinearRecurrence {

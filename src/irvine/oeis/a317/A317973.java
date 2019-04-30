@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317973 <code>a(n) = 2*(a(n-1)+a(n-2)+a(n-3))-a(n-4)</code> for <code>n &gt;= 4,</code> with initial terms <code>-1, 2, 3, 6</code>.
+ * A317973 <code>a(n) = 2*(a(n-1)+a(n-2)+a(n-3))-a(n-4)</code> for <code>n &gt;= 4</code>, with initial terms <code>-1, 2, 3, 6</code>.
  * @author Georg Fischer
  */
 public class A317973 extends LinearRecurrence {

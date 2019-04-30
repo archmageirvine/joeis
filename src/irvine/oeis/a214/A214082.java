@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214082 Size of conjugacy classes of GL(4,2) arranged by order of elements in that class.
+ * A214082 Size of conjugacy classes of <code>GL(4,2)</code> arranged by order of elements in that class.
  * @author Georg Fischer
  */
 public class A214082 extends FiniteSequence {

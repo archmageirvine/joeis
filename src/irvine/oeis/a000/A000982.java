@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000982 <code>a(n) =</code> ceiling(n^2/2).
+ * A000982 <code>a(n) = ceiling(n^2/2)</code>.
  * @author Sean A. Irvine
  */
 public class A000982 implements Sequence {

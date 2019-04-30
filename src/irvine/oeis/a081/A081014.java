@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081014 <code>Lucas(4*n+1) + 1,</code> or <code>Lucas(2*n)*Lucas(2*n+1)</code>.
+ * A081014 <code>Lucas(4*n+1) + 1</code>, or <code>Lucas(2*n)*Lucas(2*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A081014 extends LinearRecurrence {

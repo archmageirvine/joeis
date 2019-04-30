@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165942 For a nonnegative integer <code>n,</code> define <code>dsf(n) =</code> n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the digits of an integer <code>n.</code> Then <code>a(n+1) = dsf(a(n))</code>.
+ * A165942 For a nonnegative integer n, define <code>dsf(n) =</code> n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the digits of an integer n. Then <code>a(n+1) = dsf(a(n))</code>.
  * @author Sean A. Irvine
  */
 public class A165942 extends LinearRecurrence {

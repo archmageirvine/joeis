@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A003262 Let y=f(x) satisfy <code>F(x,y)=0.</code> The sequence <code>a(n)</code> is the number of terms in the expansion of (d^n/dx^n) y in terms of the partial derivatives of F.
+ * A003262 Let <code>y=f(x)</code> satisfy <code>F(x,y)=0</code>. The sequence <code>a(n)</code> is the number of terms in the expansion of (d^n/dx^n) y in terms of the partial derivatives of F.
  * @author Sean A. Irvine
  */
 public class A003262 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013373 cos(sin(x)-sinh(x))=1-40/6!*x^6-480/10!*x^10+246400/12!*x^12...
+ * A013373 <code>cos(sin(x)-sinh(x))=1-40/6!*x^6-480/10!*x^10+246400/12!*x^12</code>...
  * @author Sean A. Irvine
  */
 public class A013373 implements Sequence {

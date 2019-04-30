@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012123 E.g.f.: exp(arcsin(tanh(x))).
+ * A012123 E.g.f.: <code>exp(arcsin(tanh(x)))</code>.
  * @author Sean A. Irvine
  */
 public class A012123 implements Sequence {

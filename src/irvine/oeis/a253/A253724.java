@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253724 Numbers c(n) whose squares are equal to the sums of a number M(n) of consecutive cubed integers <code>b^3 + (b+1)^3 + ... +</code> (b+M-1)^3 = c^2, starting at <code>b(n)</code> (A002593) for M(n) being twice a squared integer (A001105).
+ * A253724 Numbers <code>c(n)</code> whose squares are equal to the sums of a number <code>M(n)</code> of consecutive cubed integers <code>b^3 + (b+1)^3 + ... +</code> (b+M-1)^3 = c^2, starting at <code>b(n)</code> (A002593) for <code>M(n)</code> being twice a squared integer (A001105).
  * @author Sean A. Irvine
  */
 public class A253724 extends LinearRecurrence {

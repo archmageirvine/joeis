@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A274447 Numerators in expansion of W(exp(x)) about <code>x=1,</code> where W is the Lambert function.
+ * A274447 Numerators in expansion of <code>W(exp(x))</code> about <code>x=1</code>, where W is the Lambert function.
  * @author Sean A. Irvine
  */
 public class A274447 extends MemoryFunction2<Integer, Z> implements Sequence {

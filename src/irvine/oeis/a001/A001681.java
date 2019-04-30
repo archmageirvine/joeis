@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import java.util.Arrays;
 
 /**
- * A001681 The partition function G(n,4).
+ * A001681 The partition function <code>G(n,4)</code>.
  * @author Sean A. Irvine
  */
 public class A001681 extends A001680 {

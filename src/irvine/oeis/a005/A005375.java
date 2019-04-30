@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005375 <code>a(0) = 0</code>; <code>a(n) = n - a(a(a(a(n-1))))</code> for <code>n &gt; 0</code>.
+ * A005375 <code>a(0) = 0; a(n) = n - a(a(a(a(n-1))))</code> for <code>n &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A005375 extends MemorySequence {

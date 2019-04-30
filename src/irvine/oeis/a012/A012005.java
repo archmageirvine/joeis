@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012005 tanh(log(cos(x)))=-1/2!*x^2-2/4!*x^4+14/6!*x^6+568/8!*x^8...
+ * A012005 <code>tanh(log(cos(x)))=-1/2!*x^2-2/4!*x^4+14/6!*x^6+568/8!*x^8</code>...
  * @author Sean A. Irvine
  */
 public class A012005 implements Sequence {

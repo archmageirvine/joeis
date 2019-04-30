@@ -6,7 +6,7 @@ import irvine.util.string.English;
 import irvine.util.string.Telephone;
 
 /**
- * A079048 Numerical equivalents of the words zero, one, two, three, <code>...</code> on touch-tone telephone.
+ * A079048 Numerical equivalents of the words zero, one, two, three, ... on touch-tone telephone.
  * @author Sean A. Irvine
  */
 public class A079048 implements Sequence {

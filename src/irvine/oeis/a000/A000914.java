@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000914 Stirling numbers of the first kind: s(n+2, <code>n)</code>.
+ * A000914 Stirling numbers of the first kind: <code>s(n+2, n)</code>.
  * @author Sean A. Irvine
  */
 public class A000914 implements Sequence {

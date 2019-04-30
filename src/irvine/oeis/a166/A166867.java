@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166867 <code>a(n) =</code> Pell(n+3) - Jacobsthal(n+4).
+ * A166867 <code>a(n) = Pell(n+3) - Jacobsthal(n+4)</code>.
  * @author Sean A. Irvine
  */
 public class A166867 extends LinearRecurrence {

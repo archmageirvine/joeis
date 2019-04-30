@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255983 <code>a(n) = 1</code> for <code>n &lt;= 5</code>; <code>a(n) = 36*a(n-1) - 450*a(n-2) + 3000*a(n-3) - 11250*a(n-4) + 22500*a(n-5) - 18750*a(n-6)</code> otherwise.
+ * A255983 <code>a(n) = 1</code> for <code>n &lt;= 5; a(n) = 36*a(n-1) - 450*a(n-2) + 3000*a(n-3) - 11250*a(n-4) + 22500*a(n-5) - 18750*a(n-6)</code> otherwise.
  * @author Sean A. Irvine
  */
 public class A255983 extends LinearRecurrence {

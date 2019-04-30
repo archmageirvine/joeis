@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009826 Expansion of tanh(x)*cos(tan(x)).
+ * A009826 Expansion of <code>tanh(x)*cos(tan(x))</code>.
  * @author Sean A. Irvine
  */
 public class A009826 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002936 Solid partitions of <code>n,</code> distinct along rows.
+ * A002936 Solid partitions of n, distinct along rows.
  * @author Sean A. Irvine
  */
 public class A002936 implements Sequence { //}, MultidimensionalIntegerPartition.PartitionUser {

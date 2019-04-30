@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003718 E.g.f. tan(tan(x)), zeros omitted.
+ * A003718 E.g.f. <code>tan(tan(x))</code>, zeros omitted.
  * @author Sean A. Irvine
  */
 public class A003718 implements Sequence {

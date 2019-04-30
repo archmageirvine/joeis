@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002612 Glaisher's function U(n).
+ * A002612 Glaisher's function <code>U(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002612 extends A002609 {

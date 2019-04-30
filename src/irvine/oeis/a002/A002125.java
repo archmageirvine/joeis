@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002125 <code>a(n) = Sum_{k=0..n}</code> f(k)*f(n-k) where f(k) = A002124(k).
+ * A002125 <code>a(n) = Sum_{k=0..n} f(k)*f(n-k)</code> where <code>f(k) =</code> A002124(k).
  * @author Sean A. Irvine
  */
 public class A002125 extends A002124 {

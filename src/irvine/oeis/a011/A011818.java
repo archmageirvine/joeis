@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011818 Normalized volume of center slice of n-dimensional cube: <code>2^n*</code> n!*Vol({ (x_1,...,x_n) in <code>[ 0,1 ]^n</code>: <code>n/2 &lt;= Sum_{i = 1..n}</code> x_i <code>&lt;= (n+1)/2 })</code>.
+ * A011818 Normalized volume of center slice of n-dimensional cube: <code>2^n* n!*Vol({</code> (x_1,...,x_n) in <code>[ 0,1 ]^n</code>: <code>n/2 &lt;= Sum_{i = 1..n}</code> x_i <code>&lt;= (n+1)/2 })</code>.
  * @author Sean A. Irvine
  */
 public class A011818 implements Sequence {

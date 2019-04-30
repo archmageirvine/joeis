@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001945 <code>a(n+6) = -a(n+5) + a(n+4) + 3a(n+3) + a(n+2) - a(n+1) - a(n). a(n) =</code> sign(n) if abs(n)&lt;=3.
+ * A001945 <code>a(n+6) = -a(n+5) + a(n+4) + 3a(n+3) + a(n+2) - a(n+1) - a(n). a(n) = sign(n)</code> if <code>abs(n)&lt;=3</code>.
  * @author Sean A. Irvine
  */
 public class A001945 extends LinearRecurrence {

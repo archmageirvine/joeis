@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131184 Table <code>T(n</code>,m): the length of the sequence <code>b(1)=n,</code> b(2)=m, <code>b(i) = b(i-1)*b(i-2) mod 10</code> up to the end of b's first cycle.
+ * A131184 Table <code>T(n</code>,m): the length of the sequence <code>b(1)=n</code>, b(2)=m, <code>b(i) = b(i-1)*b(i-2) mod 10</code> up to the end of b's first cycle.
  * @author Georg Fischer
  */
 public class A131184 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A066516 Numbers n such that g(sigma(n)) = phi(n), where g(n) = prime(n+1) - prime(n).
+ * A066516 Numbers n such that <code>g(sigma(n)) = phi(n)</code>, where <code>g(n) = prime(n+1) - prime(n)</code>.
  * @author Georg Fischer
  */
 public class A066516 extends FiniteSequence {

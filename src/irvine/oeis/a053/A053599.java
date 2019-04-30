@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053599 Number of nonempty subsequences {s(k)} of <code>1..n</code> such that the difference sequence is palindromic.
+ * A053599 Number of nonempty subsequences <code>{s(k)}</code> of <code>1..n</code> such that the difference sequence is palindromic.
  * @author Sean A. Irvine
  */
 public class A053599 extends LinearRecurrence {

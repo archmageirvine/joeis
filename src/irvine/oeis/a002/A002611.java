@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004018;
 
 /**
- * A002611 Glaisher's function V(n).
+ * A002611 Glaisher's function <code>V(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002611 implements Sequence {

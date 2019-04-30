@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002223 Smallest prime p of form p <code>= 8k-1</code> such that first n primes (p_1=2, <code>...,</code> p_n) are quadratic residues mod p.
+ * A002223 Smallest prime p of form p <code>= 8k-1</code> such that first n primes (p_1=2, <code>..</code>., p_n) are quadratic residues mod p.
  * @author Sean A. Irvine
  */
 public class A002223 implements Sequence {

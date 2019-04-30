@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000708 <code>a(n) =</code> E(n+1)-2E(n), where E(i) is the Euler number A000111(i).
+ * A000708 <code>a(n) = E(n+1)-2E(n)</code>, where <code>E(i)</code> is the Euler number A000111(i).
  * @author Sean A. Irvine
  */
 public class A000708 extends A000111 {

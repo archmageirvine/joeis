@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190173 <code>a(n) = Sum_{1 &lt;= i &lt; j &lt;= n} F(i)*F(j),</code> where <code>F(k)</code> is the k-th Fibonacci number.
+ * A190173 <code>a(n) = Sum_{1 &lt;= i &lt; j &lt;= n} F(i)*F(j)</code>, where <code>F(k)</code> is the k-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A190173 extends LinearRecurrence {

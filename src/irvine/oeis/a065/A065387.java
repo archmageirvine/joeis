@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a000.A000203;
 
 /**
- * A065387 <code>a(n) = sigma(n) +</code> phi(n).
+ * A065387 <code>a(n) = sigma(n) + phi(n)</code>.
  * @author Sean A. Irvine
  */
 public class A065387 extends A000010 {

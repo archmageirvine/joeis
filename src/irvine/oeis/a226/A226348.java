@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226348 Number of ways to tile a fixed <code>3 x n</code> square grid with <code>1 x 1, 2 x 2,</code> and axially-oriented <code>1 x 2</code> tiles.
+ * A226348 Number of ways to tile a fixed <code>3 x n</code> square grid with <code>1 x 1, 2 x 2</code>, and axially-oriented <code>1 x 2</code> tiles.
  * @author Sean A. Irvine
  */
 public class A226348 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.polynomial.CycleIndex;
 
 /**
- * A000857 Number of n-input 3-output switching networks under the action of S(n) on the inputs and S(3) and complementing group <code>C(2,3)</code> on the outputs.
+ * A000857 Number of n-input 3-output switching networks under the action of <code>S(n)</code> on the inputs and <code>S(3)</code> and complementing group <code>C(2,3)</code> on the outputs.
  * @author Sean A. Irvine
  */
 public class A000857 extends A000860 {

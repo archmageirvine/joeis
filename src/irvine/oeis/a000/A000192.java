@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000192 Generalized Euler numbers c(6,n).
+ * A000192 Generalized Euler numbers <code>c(6,n)</code>.
  * @author Sean A. Irvine
  */
 public class A000192 extends A000233 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012269 Expansion of e.g.f.: arctan(log(x+1)*log(x+1)).
+ * A012269 Expansion of e.g.f.: <code>arctan(log(x+1)*log(x+1))</code>.
  * @author Sean A. Irvine
  */
 public class A012269 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010037 Numbers n such that GCD(n^5 <code>+ 5, (n+1)^5 + 5) &gt; 1</code>.
+ * A010037 Numbers n such that <code>GCD(n^5 + 5, (n+1)^5 + 5) &gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A010037 implements Sequence {

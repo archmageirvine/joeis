@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178397 Partial sums of round(7^n/10).
+ * A178397 Partial sums of <code>round(7^n/10)</code>.
  * @author Sean A. Irvine
  */
 public class A178397 extends LinearRecurrence {

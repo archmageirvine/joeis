@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015948 <code>a(n) =</code> smallest <code>k &gt;= n</code> such that k | <code>(2^k + n)</code>.
+ * A015948 <code>a(n) =</code> smallest <code>k &gt;= n</code> such that <code>k | (2^k + n)</code>.
  * @author Sean A. Irvine
  */
 public class A015948 implements Sequence {

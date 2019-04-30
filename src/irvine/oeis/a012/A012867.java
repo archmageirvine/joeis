@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012867 Numerators of coefficients in Taylor series expansion of log(cotan(x)*arctan(x)).
+ * A012867 Numerators of coefficients in Taylor series expansion of <code>log(cotan(x)*arctan(x))</code>.
  * @author Sean A. Irvine
  */
 public class A012867 implements Sequence {

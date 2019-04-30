@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013567 E.g.f. sech(log(x+1)/exp(x)).
+ * A013567 E.g.f. <code>sech(log(x+1)/exp(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013567 implements Sequence {

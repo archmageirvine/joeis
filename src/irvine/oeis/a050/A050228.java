@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A050228 <code>a(n)</code> is the number of subsequences {s(k)} of <code>{1,2,3,...n}</code> such that s(k+1)-s(k) is 1 or 3.
+ * A050228 <code>a(n)</code> is the number of subsequences <code>{s(k)}</code> of <code>{1,2,3,...n}</code> such that <code>s(k+1)-s(k)</code> is 1 or 3.
  * @author Sean A. Irvine
  */
 public class A050228 extends LinearRecurrence {

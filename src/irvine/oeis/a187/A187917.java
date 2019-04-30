@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187917 (1/4)*(5*(n-1)*P(n)+n*P(n-1)) where P() are the Pell numbers A000129.
+ * A187917 <code>(1/4)*(5*(n-1)*P(n)+n*P(n-1))</code> where <code>P()</code> are the Pell numbers A000129.
  * @author Sean A. Irvine
  */
 public class A187917 extends LinearRecurrence {

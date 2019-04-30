@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278582 Numbers n such that the Shimura subgroup Sigma(n) of the Jacobi variety J_0(n) has order 2.
+ * A278582 Numbers n such that the Shimura subgroup <code>Sigma(n)</code> of the Jacobi variety J_0(n) has order 2.
  * @author Georg Fischer
  */
 public class A278582 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013371 Expansion of tan(sinh(x)-sin(x)) <code>= 2/3!*x^3 + 2/7!*x^7 + 4480/9!*x^9 + 2/11!*x^11 + ..</code>.
+ * A013371 Expansion of <code>tan(sinh(x)-sin(x)) = 2/3!*x^3 + 2/7!*x^7 + 4480/9!*x^9 + 2/11!*x^11 + </code>...
  * @author Sean A. Irvine
  */
 public class A013371 implements Sequence {

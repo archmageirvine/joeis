@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A007953 Digital sum <code>(i</code>.e., sum of digits) of n; also called digsum(n).
+ * A007953 Digital sum <code>(i</code>.e., sum of digits) of n; also called <code>digsum(n)</code>.
  * @author Sean A. Irvine
  */
 public class A007953 implements Sequence {

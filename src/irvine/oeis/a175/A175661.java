@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175661 Eight bishops and one elephant on <code>a 3</code> X 3 chessboard: <code>a(n) = 2^(n+2)-3*F(n+1),</code> with <code>F(n) =</code> A000045(n).
+ * A175661 Eight bishops and one elephant on <code>a 3</code> X 3 chessboard: <code>a(n) = 2^(n+2)-3*F(n+1)</code>, with <code>F(n) =</code> A000045(n).
  * @author Sean A. Irvine
  */
 public class A175661 extends LinearRecurrence {

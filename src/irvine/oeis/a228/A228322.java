@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228322 The Wiener index of the graph obtained by applying Mycielski's construction to the hypercube graph Q(n) <code>(n&gt;=1)</code>.
+ * A228322 The Wiener index of the graph obtained by applying Mycielski's construction to the hypercube graph <code>Q(n) (n&gt;=1)</code>.
  * @author Georg Fischer
  */
 public class A228322 extends LinearRecurrence {

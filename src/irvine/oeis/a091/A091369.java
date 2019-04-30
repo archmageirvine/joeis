@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A091369 <code>a(n) = Sum_{i=1..n}</code> phi(i)*ceiling(n/i).
+ * A091369 <code>a(n) = Sum_{i=1..n} phi(i)*ceiling(n/i)</code>.
  * @author Sean A. Irvine
  */
 public class A091369 implements Sequence {

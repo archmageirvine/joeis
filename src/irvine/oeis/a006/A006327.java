@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006327 Fibonacci numbers <code>- 3.</code> Number of total preorders.
+ * A006327 Fibonacci numbers <code>- 3</code>. Number of total preorders.
  * @author Sean A. Irvine
  */
 public class A006327 extends A000045 {

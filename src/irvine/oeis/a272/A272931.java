@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272931 <code>a(n) =</code> 2^(n+1)*cos(n*arctan(sqrt(15))).
+ * A272931 <code>a(n) = 2^(n+1)*cos(n*arctan(sqrt(15)))</code>.
  * @author Georg Fischer
  */
 public class A272931 extends LinearRecurrence {

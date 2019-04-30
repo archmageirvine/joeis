@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162330 Blocks of 4 numbers of the form <code>2k, 2k-1, 2k, 2k+1, k=1,2,3,4,..</code>.
+ * A162330 Blocks of 4 numbers of the form <code>2k, 2k-1, 2k, 2k+1, k=1,2,3,4,</code>...
  * @author Sean A. Irvine
  */
 public class A162330 extends LinearRecurrence {

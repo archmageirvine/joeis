@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172436 Smallest m such that the Moebius function takes successively, from m, n values <code>1,0,1,0,...</code> ending with 1 or 0.
+ * A172436 Smallest m such that the Moebius function takes successively, from m, n values <code>1,0,1,0,.</code>.. ending with 1 or 0.
  * @author Georg Fischer
  */
 public class A172436 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012188 E.g.f. sinh(arctan(sin(x))) odd powers only.
+ * A012188 E.g.f. <code>sinh(arctan(sin(x)))</code> odd powers only.
  * @author Sean A. Irvine
  */
 public class A012188 implements Sequence {

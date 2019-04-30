@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import java.util.HashSet;
 
 /**
- * A002174 Values taken by reduced totient function psi(n).
+ * A002174 Values taken by reduced totient function <code>psi(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002174 extends A002322 {

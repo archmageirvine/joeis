@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247526 <code>a(n) =</code> L(n+1) * L(n) * L(n-1) * L(n-2) <code>/ 6,</code> where L(n) = Lucas numbers (A000032).
+ * A247526 <code>a(n) = L(n+1) * L(n) * L(n-1) * L(n-2) / 6</code>, where <code>L(n) =</code> Lucas numbers (A000032).
  * @author Sean A. Irvine
  */
 public class A247526 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196468 <code>a(1)=11</code>; <code>a(n) = floor((2 + sqrt(8))*a(n-1))</code> for <code>n &gt; 1</code>.
+ * A196468 <code>a(1)=11; a(n) = floor((2 + sqrt(8))*a(n-1))</code> for <code>n &gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A196468 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A020651 Denominators in recursive bijection from positive integers to positive rationals (the bijection is f(1) <code>= 1,</code> f(2n) = f(n)+1, f(2n+1) = 1/(f(n)+1)).
+ * A020651 Denominators in recursive bijection from positive integers to positive rationals (the bijection is <code>f(1) = 1, f(2n) = f(n)+1, f(2n+1) = 1/(f(n)+1))</code>.
  * @author Sean A. Irvine
  */
 public class A020651 extends A020650 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006530 Gpf(n): greatest prime dividing <code>n,</code> for <code>n &gt;= 2</code>; <code>a(1)=1</code>.
+ * A006530 <code>Gpf(n)</code>: greatest prime dividing n, for <code>n &gt;= 2; a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A006530 implements Sequence {

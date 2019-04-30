@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049779 <code>a(n) =</code> Sum{T(n,2k): <code>k=1,2,...,[ n/2 ]},</code> array T as in A049777.
+ * A049779 <code>a(n) =</code> Sum{T(n,2k): <code>k=1,2,...,[ n/2 ]}</code>, array T as in A049777.
  * @author Sean A. Irvine
  */
 public class A049779 extends LinearRecurrence {

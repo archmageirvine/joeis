@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166072 Define <code>dsf(n) =</code> A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of <code>n. dsf(809265896) = 808491852</code> and <code>dsf(808491852) = 437755524,...,dsf(792488396) = 809265896,</code> so these 8 numbers make a loop for the function dsf.
+ * A166072 Define <code>dsf(n) =</code> A045503(n) = n_1^{n_1}+n_2^{n_2}+n_3^{n_3} + n_m^{n_m}, where {n_1,n_2,n_3,...n_m} is the list of the decimal digits of <code>n. dsf(809265896) = 808491852</code> and <code>dsf(808491852) = 437755524,...,dsf(792488396) = 809265896</code>, so these 8 numbers make a loop for the function dsf.
  * @author Sean A. Irvine
  */
 public class A166072 extends LinearRecurrence {

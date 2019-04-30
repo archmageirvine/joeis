@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.BernoulliSequence;
 
 /**
- * A002430 Numerators in Taylor series for tan(x). Also from Taylor series for tanh(x).
+ * A002430 Numerators in Taylor series for <code>tan(x)</code>. Also from Taylor series for <code>tanh(x)</code>.
  * @author Sean A. Irvine
  */
 public class A002430 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100335 An inverse Catalan transform of J(2n).
+ * A100335 An inverse Catalan transform of <code>J(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A100335 extends LinearRecurrence {

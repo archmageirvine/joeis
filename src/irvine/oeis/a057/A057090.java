@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057090 Scaled Chebyshev U-polynomials evaluated at <code>i*sqrt(7)/2.</code> Generalized Fibonacci sequence.
+ * A057090 Scaled Chebyshev U-polynomials evaluated at <code>i*sqrt(7)/2</code>. Generalized Fibonacci sequence.
  * @author Sean A. Irvine
  */
 public class A057090 extends LinearRecurrence {

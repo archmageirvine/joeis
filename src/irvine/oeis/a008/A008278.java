@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008278 Triangle of Stirling numbers of 2nd kind, S(n,n-k+1), <code>n &gt;= 1, 1&lt;=k&lt;=n</code>.
+ * A008278 Triangle of Stirling numbers of 2nd kind, <code>S(n,n-k+1), n &gt;= 1, 1&lt;=k&lt;=n</code>.
  * @author Sean A. Irvine
  */
 public class A008278 implements Sequence {

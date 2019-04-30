@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005329 <code>a(n) = Product_{i=1..n} (2^i - 1).</code> Also called 2-factorial numbers.
+ * A005329 <code>a(n) = Product_{i=1..n} (2^i - 1)</code>. Also called 2-factorial numbers.
  * @author Sean A. Irvine
  */
 public class A005329 implements Sequence {

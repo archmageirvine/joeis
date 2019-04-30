@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012857 Numerator of <code>[x^(2n)]</code> of the Taylor expansion log(cosec(x)*arctan(x))= <code>-x^2/6 +3*x^4/20 -50*x^6/567 +203*x^8/3240 -7472*x^10/155925 +..</code>.
+ * A012857 Numerator of <code>[x^(2n)]</code> of the Taylor expansion <code>log(cosec(x)*arctan(x))= -x^2/6 +3*x^4/20 -50*x^6/567 +203*x^8/3240 -7472*x^10/155925 +</code>...
  * @author Sean A. Irvine
  */
 public class A012857 implements Sequence {

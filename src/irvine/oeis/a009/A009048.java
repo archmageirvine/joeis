@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009048 Expansion of e.g.f. cos(sin(x)*exp(x)).
+ * A009048 Expansion of e.g.f. <code>cos(sin(x)*exp(x))</code>.
  * @author Sean A. Irvine
  */
 public class A009048 implements Sequence {

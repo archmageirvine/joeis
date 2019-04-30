@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051953;
 
 /**
- * A005278 Noncototients: n such that <code>x -</code> phi(x) <code>= n</code> has no solution.
+ * A005278 Noncototients: n such that <code>x - phi(x) = n</code> has no solution.
  * @author Sean A. Irvine
  */
 public class A005278 extends A051953 {

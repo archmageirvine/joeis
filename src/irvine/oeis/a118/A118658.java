@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118658 <code>a(n) = 2*F(n-1) =</code> L(n) <code>- F(n),</code> where <code>F(n)</code> and L(n) are Fibonacci and Lucas numbers respectively.
+ * A118658 <code>a(n) = 2*F(n-1) = L(n) - F(n)</code>, where <code>F(n)</code> and <code>L(n)</code> are Fibonacci and Lucas numbers respectively.
  * @author Sean A. Irvine
  */
 public class A118658 extends LinearRecurrence {

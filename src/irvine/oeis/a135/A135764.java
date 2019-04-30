@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A135764 Distribute the natural numbers in columns based on the occurrence of "2" in each prime factorization; square array A(row,col) = 2^(row-1) * ((2*col)-1), read by antidiagonals A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), <code>..</code>.
+ * A135764 Distribute the natural numbers in columns based on the occurrence of "2" in each prime factorization; square array A(row,col) = 2^(row-1) * ((2*col)-1), read by antidiagonals <code>A(1,1), A(1,2), A(2,1), A(1,3), A(2,2), A(3,1), </code>...
  * @author Sean A. Irvine
  */
 public class A135764 implements Sequence {

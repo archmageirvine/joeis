@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005236 Barriers for omega(n): numbers n such that, for all m <code>&lt; n,</code> m + omega(m) <code>&lt;= n</code>.
+ * A005236 Barriers for <code>omega(n)</code>: numbers n such that, for all m <code>&lt; n</code>, m + omega(m) <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A005236 implements Sequence {

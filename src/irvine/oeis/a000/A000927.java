@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000927 "First factor" (or relative class number) h- for cyclotomic field Q( exp(2 Pi / prime(n)) ).
+ * A000927 "First factor" (or relative class number) h- for cyclotomic field <code>Q( exp(2</code> Pi <code>/ prime(n)) )</code>.
  * @author Sean A. Irvine
  */
 public class A000927 implements Sequence {

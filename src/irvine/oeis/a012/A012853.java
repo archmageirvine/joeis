@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012853 Expansion of sec(x)^2+sech(x)^2 in powers of <code>x^4</code>.
+ * A012853 Expansion of <code>sec(x)^2+sech(x)^2</code> in powers of <code>x^4</code>.
  * @author Sean A. Irvine
  */
 public class A012853 implements Sequence {

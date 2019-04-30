@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A033665 Number of 'Reverse and Add' steps needed to reach a palindrome starting at <code>n,</code> or <code>-1</code> if n never reaches a palindrome.
+ * A033665 Number of 'Reverse and Add' steps needed to reach a palindrome starting at n, or <code>-1</code> if n never reaches a palindrome.
  * @author Sean A. Irvine
  */
 public class A033665 implements Sequence {

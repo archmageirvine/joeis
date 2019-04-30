@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003177 <code>a(n) =</code> ceiling(24(2^n-1)/n).
+ * A003177 <code>a(n) = ceiling(24(2^n-1)/n)</code>.
  * @author Sean A. Irvine
  */
 public class A003177 implements Sequence {

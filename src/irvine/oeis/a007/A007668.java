@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004394;
 
 /**
- * A007668 phi(n) divides <code>sigma(n)</code> and <code>sigma(n)/n &gt;</code> sigma(m)/m for all m <code>&lt; n</code>.
+ * A007668 <code>phi(n)</code> divides <code>sigma(n)</code> and <code>sigma(n)/n &gt</code>; sigma(m)/m for all m <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A007668 extends A004394 {

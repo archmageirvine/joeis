@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015709 Composite n such that phi(n) <code>* sigma(n)</code> is one less than a square.
+ * A015709 Composite n such that <code>phi(n) * sigma(n)</code> is one less than a square.
  * @author Sean A. Irvine
  */
 public class A015709 implements Sequence {

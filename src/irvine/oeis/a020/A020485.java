@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A020485 Least positive palindromic multiple of <code>n,</code> or 0 if none exists.
+ * A020485 Least positive palindromic multiple of n, or 0 if none exists.
  * @author Sean A. Irvine
  */
 public class A020485 implements Sequence {

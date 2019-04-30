@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000495 Nearest integer to sinh(n).
+ * A000495 Nearest integer to <code>sinh(n)</code>.
  * @author Sean A. Irvine
  */
 public class A000495 implements Sequence {

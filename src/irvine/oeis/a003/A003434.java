@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A003434 Number of iterations of phi(x) at n needed to reach 1.
+ * A003434 Number of iterations of <code>phi(x)</code> at n needed to reach 1.
  * @author Sean A. Irvine
  */
 public class A003434 implements Sequence {

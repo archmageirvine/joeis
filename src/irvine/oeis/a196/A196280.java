@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196280 <code>Binomial(n+9,</code> 9)*8^n.
+ * A196280 <code>Binomial(n+9</code>, 9)*8^n.
  * @author Sean A. Irvine
  */
 public class A196280 extends LinearRecurrence {

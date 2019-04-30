@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012904 E.g.f.: sinh(arcsin(x)+log(x+1))=2*x-1/2!*x^2+11/3!*x^3-30/4!*x^4+215/5!*x^5...
+ * A012904 E.g.f.: <code>sinh(arcsin(x)+log(x+1))=2*x-1/2!*x^2+11/3!*x^3-30/4!*x^4+215/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A012904 implements Sequence {

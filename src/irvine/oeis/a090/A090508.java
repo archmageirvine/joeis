@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A090508 Least number beginning with prime(n) such that every concatenation is a prime.
+ * A090508 Least number beginning with <code>prime(n)</code> such that every concatenation is a prime.
  * @author Sean A. Irvine
  */
 public class A090508 implements Sequence {

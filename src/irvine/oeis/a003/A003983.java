@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003983 Array read by antidiagonals with <code>T(n,k) =</code> min(n,k).
+ * A003983 Array read by antidiagonals with <code>T(n,k) = min(n,k)</code>.
  * @author Sean A. Irvine
  */
 public class A003983 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007694 Numbers n such that phi(n) divides n.
+ * A007694 Numbers n such that <code>phi(n)</code> divides n.
  * @author Sean A. Irvine
  */
 public class A007694 implements Sequence {

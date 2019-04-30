@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000770 Stirling numbers of the second kind, S(n,6).
+ * A000770 Stirling numbers of the second kind, <code>S(n,6)</code>.
  * @author Sean A. Irvine
  */
 public class A000770 implements Sequence {

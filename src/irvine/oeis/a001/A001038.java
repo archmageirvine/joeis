@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001038 Invertible Boolean functions with GL(n,2) acting on the domain and range.
+ * A001038 Invertible Boolean functions with <code>GL(n,2)</code> acting on the domain and range.
  * @author Sean A. Irvine
  */
 public class A001038 implements Sequence {

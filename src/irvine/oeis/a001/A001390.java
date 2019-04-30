@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001390 Smallest multiplicative generator for quadratic residues mod prime(n).
+ * A001390 Smallest multiplicative generator for quadratic residues <code>mod prime(n)</code>.
  * @author Sean A. Irvine
  */
 public class A001390 implements Sequence {

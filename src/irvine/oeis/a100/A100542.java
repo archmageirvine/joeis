@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100542 Two-color Rado numbers R(0,n). 
+ * A100542 Two-color Rado numbers <code>R(0,n)</code>.
  * @author Georg Fischer
  */
 public class A100542 extends LinearRecurrence {

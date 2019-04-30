@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289785 p-INVERT of the <code>(5^n),</code> where p(S) <code>= 1 -</code> S - S^2.
+ * A289785 p-INVERT of the <code>(5^n)</code>, where p(S) <code>= 1 -</code> S - S^2.
  * @author Sean A. Irvine
  */
 public class A289785 extends LinearRecurrence {

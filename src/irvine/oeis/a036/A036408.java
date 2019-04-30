@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036408 Ceiling(n^2/10).
+ * A036408 <code>Ceiling(n^2/10)</code>.
  * @author Sean A. Irvine
  */
 public class A036408 extends LinearRecurrence {

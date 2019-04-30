@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A194851 List of the 14 blocks in the Reed-Muller version of the Steiner System S(3,4,8) written as decimal numbers.
+ * A194851 List of the 14 blocks in the Reed-Muller version of the Steiner System <code>S(3,4,8)</code> written as decimal numbers.
  * @author Georg Fischer
  */
 public class A194851 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A003275 Values of phi(n) = phi(n+1).
+ * A003275 Values of <code>phi(n) = phi(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A003275 implements Sequence {

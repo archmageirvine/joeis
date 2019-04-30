@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A124107 Numbers n such that n is the sum of the augmenting factorials of the digits of <code>n,</code> e.g. <code>733 = 7 + 3! + (3!)!</code>.
+ * A124107 Numbers n such that n is the sum of the augmenting factorials of the digits of n, e.g. <code>733 = 7 + 3! + (3!)!</code>.
  * @author Sean A. Irvine
  */
 public class A124107 implements Sequence {

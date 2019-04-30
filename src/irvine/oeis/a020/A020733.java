@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020733 Consider number of prime divisors of <code>C(n,k), k=0..n</code>; <code>a(n) =</code> multiplicity of maximal value.
+ * A020733 Consider number of prime divisors of <code>C(n,k), k=0..n; a(n) =</code> multiplicity of maximal value.
  * @author Sean A. Irvine
  */
 public class A020733 implements Sequence {

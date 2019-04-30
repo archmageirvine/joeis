@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085152 All prime factors of n and <code>n+1</code> are <code>&lt;= 5.</code> (Related to the abc conjecture.).
+ * A085152 All prime factors of n and <code>n+1</code> are <code>&lt;= 5</code>. (Related to the abc conjecture.).
  * @author Georg Fischer
  */
 public class A085152 extends FiniteSequence {

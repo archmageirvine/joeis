@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001348 Mersenne numbers: 2^p <code>- 1,</code> where p is prime.
+ * A001348 Mersenne numbers: 2^p <code>- 1</code>, where p is prime.
  * @author Sean A. Irvine
  */
 public class A001348 implements Sequence {

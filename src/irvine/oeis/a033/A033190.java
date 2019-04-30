@@ -4,7 +4,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033190 Sum(binomial(n,k)*binomial(fibonacci(k)+1,2),k=0..n).
+ * A033190 <code>Sum(binomial(n,k)*binomial(fibonacci(k)+1,2),k=0..n)</code>.
  * @author Georg Fischer
  */
 public class A033190 extends LinearRecurrence {

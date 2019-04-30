@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013013 exp(sinh(x)+log(x+1))=1+2*x+3/2!*x^2+5/3!*x^3+13/4!*x^4+37/5!*x^5...
+ * A013013 <code>exp(sinh(x)+log(x+1))=1+2*x+3/2!*x^2+5/3!*x^3+13/4!*x^4+37/5!*x^5</code>...
  * @author Sean A. Irvine
  */
 public class A013013 implements Sequence {

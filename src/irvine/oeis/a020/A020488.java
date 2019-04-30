@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020488 Numbers n such that tau(n) (or sigma_0(n)) = phi(n).
+ * A020488 Numbers n such that <code>tau(n)</code> (or sigma_0(n)) <code>= phi(n)</code>.
  * @author Georg Fischer
  */
 public class A020488 extends FiniteSequence {

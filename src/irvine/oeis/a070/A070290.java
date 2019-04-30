@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070290 <code>a(n) =</code> lcm(8,n)/gcd(8,n).
+ * A070290 <code>a(n) = lcm(8,n)/gcd(8,n)</code>.
  * @author Georg Fischer
  */
 public class A070290 extends LinearRecurrence {

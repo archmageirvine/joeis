@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173116 <code>a(n) =</code> sinh(2*arcsinh(n))^2 <code>= 4*n^2*(n^2 + 1)</code>.
+ * A173116 <code>a(n) = sinh(2*arcsinh(n))^2 = 4*n^2*(n^2 + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A173116 extends LinearRecurrence {

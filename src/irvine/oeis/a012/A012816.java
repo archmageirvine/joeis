@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012816 E.g.f. arctan(sec(x)*sinh(x)) (odd powers only).
+ * A012816 E.g.f. <code>arctan(sec(x)*sinh(x))</code> (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012816 implements Sequence {

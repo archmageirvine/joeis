@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002117 Decimal expansion of zeta(3) = Sum_{m&gt;=1} 1/m^3.
+ * A002117 Decimal expansion of <code>zeta(3) =</code> Sum_{m&gt;=1} 1/m^3.
  * @author Sean A. Irvine
  */
 public class A002117 implements Sequence {

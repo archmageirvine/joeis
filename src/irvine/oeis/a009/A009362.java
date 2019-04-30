@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009362 Expansion of log(1 + sinh(x)/exp(x)).
+ * A009362 Expansion of <code>log(1 + sinh(x)/exp(x))</code>.
  * @author Sean A. Irvine
  */
 public class A009362 implements Sequence {

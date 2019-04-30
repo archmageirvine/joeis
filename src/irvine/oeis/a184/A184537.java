@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184537 <code>a(n) = floor(1/{(2+n^4)^(1/4)}),</code> where <code>{} =</code> fractional part.
+ * A184537 <code>a(n) = floor(1/{(2+n^4)^(1/4)})</code>, where <code>{} =</code> fractional part.
  * @author Georg Fischer
  */
 public class A184537 extends LinearRecurrence {

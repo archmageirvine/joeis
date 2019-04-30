@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080878 <code>a(n)*a(n+3) - a(n+1)*a(n+2) = 2^n,</code> given <code>a(0)=1, a(1)=1, a(2)=3</code>.
+ * A080878 <code>a(n)*a(n+3) - a(n+1)*a(n+2) = 2^n</code>, given <code>a(0)=1, a(1)=1, a(2)=3</code>.
  * @author Sean A. Irvine
  */
 public class A080878 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028288 Molien series for complex 4-dimensional Clifford group of order 92160 and genus <code>2.</code> Also Molien series of ring of biweight enumerators of Type II self-dual binary codes.
+ * A028288 Molien series for complex 4-dimensional Clifford group of order 92160 and genus 2. Also Molien series of ring of biweight enumerators of Type II self-dual binary codes.
  * @author Sean A. Irvine
  */
 public class A028288 extends LinearRecurrence {

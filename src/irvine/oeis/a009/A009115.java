@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009115 Expansion of e.g.f. cos(x)/exp(tanh(x)).
+ * A009115 Expansion of e.g.f. <code>cos(x)/exp(tanh(x))</code>.
  * @author Sean A. Irvine
  */
 public class A009115 implements Sequence {

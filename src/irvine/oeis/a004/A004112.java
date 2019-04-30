@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004112 Numbers n where |cos(n)| (or |cosec(n)| or |cot(n)|) decreases monotonically to 0; also |tan(n)|, |sec(n)|, |sin(n)| increases.
+ * A004112 Numbers n where <code>|cos(n)|</code> (or <code>|cosec(n)|</code> or <code>|cot(n)|)</code> decreases monotonically to 0; also <code>|tan(n)|, |sec(n)|, |sin(n)|</code> increases.
  * @author Sean A. Irvine
  */
 public class A004112 implements Sequence {

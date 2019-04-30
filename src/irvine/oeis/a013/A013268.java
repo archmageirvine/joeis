@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013268 sec(log(x+1)-sinh(x))=1+3/4!*x^4-10/5!*x^5+100/6!*x^6-693/7!*x^7...
+ * A013268 <code>sec(log(x+1)-sinh(x))=1+3/4!*x^4-10/5!*x^5+100/6!*x^6-693/7!*x^7</code>...
  * @author Sean A. Irvine
  */
 public class A013268 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012407 sech(arctan(x)*log(x+1)) <code>= 1 - 12/4!*x^4 + 60/5!*x^5 - 90/6!*x^6 + 420/7!*x^7..</code>.
+ * A012407 <code>sech(arctan(x)*log(x+1)) = 1 - 12/4!*x^4 + 60/5!*x^5 - 90/6!*x^6 + 420/7!*x^7</code>...
  * @author Sean A. Irvine
  */
 public class A012407 implements Sequence {

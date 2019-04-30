@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A295233 Perfect n-th powers <code>y^n (n &gt;= 3)</code> of the form <code>x^2 + 2^a * 5^b (x, a, b &gt;= 1,</code> gcd(x, <code>y) = 1)</code>.
+ * A295233 Perfect n-th powers <code>y^n (n &gt;= 3)</code> of the form <code>x^2 + 2^a * 5^b (x, a, b &gt;= 1, gcd(x, y) = 1)</code>.
  * @author Georg Fischer
  */
 public class A295233 extends FiniteSequence {

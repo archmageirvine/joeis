@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009638 Expansion of tan(log(1+sinh(x))).
+ * A009638 Expansion of <code>tan(log(1+sinh(x)))</code>.
  * @author Sean A. Irvine
  */
 public class A009638 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A234692 Decimal value of the bitmap of active segments in 7-segment display of the number <code>n,</code> variant 2 ("abcdefg" scheme).
+ * A234692 Decimal value of the bitmap of active segments in 7-segment display of the number n, variant 2 ("abcdefg" scheme).
  * @author Georg Fischer
  */
 public class A234692 extends FiniteSequence {

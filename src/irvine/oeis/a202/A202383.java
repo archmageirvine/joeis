@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a012.A012860;
 
 /**
- * A202383 Denominators of coefficients in Taylor series expansion of log(cosec(x)*tanh(x)).
+ * A202383 Denominators of coefficients in Taylor series expansion of <code>log(cosec(x)*tanh(x))</code>.
  * @author Sean A. Irvine
  */
 public class A202383 extends A012860 {

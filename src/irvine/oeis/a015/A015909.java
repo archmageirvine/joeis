@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015909 Inverse of A015908, that is, k is the first occurrence for which n | <code>k^n + k</code>.
+ * A015909 Inverse of A015908, that is, k is the first occurrence for which <code>n | k^n + k</code>.
  * @author Sean A. Irvine
  */
 public class A015909 implements Sequence {

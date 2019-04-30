@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195856 <code>a(n) = T(10,n),</code> array T given by A048505.
+ * A195856 <code>a(n) = T(10,n)</code>, array T given by A048505.
  * @author Sean A. Irvine
  */
 public class A195856 extends LinearRecurrence {

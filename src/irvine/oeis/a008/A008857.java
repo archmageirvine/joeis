@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008857 <code>a(n) =</code> floor(n/9)*ceiling(n/9).
+ * A008857 <code>a(n) = floor(n/9)*ceiling(n/9)</code>.
  * @author Sean A. Irvine
  */
 public class A008857 implements Sequence {

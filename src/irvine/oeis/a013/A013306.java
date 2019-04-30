@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013306 Numerator of <code>[x^n]</code> of the Taylor series arccosh(exp(x) - arcsin(x)).
+ * A013306 Numerator of <code>[x^n]</code> of the Taylor series <code>arccosh(exp(x) - arcsin(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013306 implements Sequence {

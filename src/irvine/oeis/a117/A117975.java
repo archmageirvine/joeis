@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A117975 Triangle where <code>a(1,1)=1</code>; <code>a(n</code>,m) = number of positive integers which are missing from row <code>(n-1)</code> of the triangle, are <code>&lt;= n</code> and are coprime to m.
+ * A117975 Triangle where <code>a(1,1)=1; a(n</code>,m) = number of positive integers which are missing from row <code>(n-1)</code> of the triangle, are <code>&lt;= n</code> and are coprime to m.
  * @author Sean A. Irvine
  */
 public class A117975 implements Sequence {

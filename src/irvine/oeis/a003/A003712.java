@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003712 E.g.f. sin(sin(x)) (odd powers only).
+ * A003712 E.g.f. <code>sin(sin(x))</code> (odd powers only).
  * @author Sean A. Irvine
  */
 public class A003712 implements Sequence {

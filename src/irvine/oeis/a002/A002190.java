@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002190 <code>Sum_{n&gt;=0} a(n)*x^n/n!^2 =</code> -log(BesselJ(0,2*sqrt(x))).
+ * A002190 <code>Sum_{n&gt;=0} a(n)*x^n/n!^2 = -log(BesselJ(0,2*sqrt(x)))</code>.
  * @author Sean A. Irvine
  */
 public class A002190 implements Sequence {

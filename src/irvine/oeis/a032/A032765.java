@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032765 <code>Floor(n(n+1)(n+2) / (n+ n+1 + n+2)),</code> which equals <code>floor(n(n + 2)/3)</code>.
+ * A032765 <code>Floor(n(n+1)(n+2) / (n+ n+1 + n+2))</code>, which equals <code>floor(n(n + 2)/3)</code>.
  * @author Sean A. Irvine
  */
 public class A032765 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A000964 The convergent sequence C_n for the ternary continued fraction <code>(3,1</code>;2,2) of period 2.
+ * A000964 The convergent sequence C_n for the ternary continued fraction <code>(3,1;2,2)</code> of period 2.
  * @author Sean A. Irvine
  */
 public class A000964 extends RatPolyGfSequence {

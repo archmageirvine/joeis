@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083288 Sigma unitary-sigma perfect numbers: numbers n which satisfy the following equation for some integer k: sigma(usigma(n)) <code>= k*n</code> where usigma(n) is sum of unitary divisors of n.
+ * A083288 Sigma unitary-sigma perfect numbers: numbers n which satisfy the following equation for some integer k: <code>sigma(usigma(n)) = k*n</code> where <code>usigma(n)</code> is sum of unitary divisors of n.
  * @author Georg Fischer
  */
 public class A083288 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013325 Numerator of <code>[x^n]</code> in the Taylor series arccosh(exp(x)-arctanh(x))= <code>x-x^2/6-x^3/72 -359*x^4/2160 -1681*x^5/51840 -52981*x^6/435456 -..</code>.
+ * A013325 Numerator of <code>[x^n]</code> in the Taylor series <code>arccosh(exp(x)-arctanh(x))= x-x^2/6-x^3/72 -359*x^4/2160 -1681*x^5/51840 -52981*x^6/435456 -</code>...
  * @author Sean A. Irvine
  */
 public class A013325 implements Sequence {

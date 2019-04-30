@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003703 E.g.f. cos(log(1+x)).
+ * A003703 E.g.f. <code>cos(log(1+x))</code>.
  * @author Sean A. Irvine
  */
 public class A003703 implements Sequence {

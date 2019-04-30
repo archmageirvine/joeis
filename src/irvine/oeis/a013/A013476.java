@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013476 Coefficient of <code>x^(4*n+2)</code> in e.g.f. arcsinh(cos(x) - cosh(x)).
+ * A013476 Coefficient of <code>x^(4*n+2)</code> in e.g.f. <code>arcsinh(cos(x) - cosh(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013476 implements Sequence {

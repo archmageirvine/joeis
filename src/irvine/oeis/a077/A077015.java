@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A077015 <code>a(1) = 1,</code> continue by multiplying by the smallest composite number and then dividing by the smallest prime not used earlier and taking the integer part at every step.
+ * A077015 <code>a(1) = 1</code>, continue by multiplying by the smallest composite number and then dividing by the smallest prime not used earlier and taking the integer part at every step.
  * @author Georg Fischer
  */
 public class A077015 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020046 Integer part of GAMMA(n+11/12)/GAMMA(11/12).
+ * A020046 Integer part of <code>GAMMA(n+11/12)/GAMMA(11/12)</code>.
  * @author Sean A. Irvine
  */
 public class A020046 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225785 Numbers n such that triangular(n) + triangular(2*n) is a triangular number.
+ * A225785 Numbers n such that <code>triangular(n) + triangular(2*n)</code> is a triangular number.
  * @author Sean A. Irvine
  */
 public class A225785 extends LinearRecurrence {

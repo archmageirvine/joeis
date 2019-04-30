@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009564 E.g.f. sin(x^2)/2, coefficients of <code>x^(4*n + 2)</code>.
+ * A009564 E.g.f. <code>sin(x^2)/2</code>, coefficients of <code>x^(4*n + 2)</code>.
  * @author Sean A. Irvine
  */
 public class A009564 implements Sequence {

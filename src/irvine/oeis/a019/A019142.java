@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019142 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite MAZ = Mazzite (Na2,K2,Ca,Mg)5 [ Al10Si26O72 <code>] . 28</code> H2O.
+ * A019142 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite MAZ = Mazzite (Na2,K2,Ca,Mg)5 [ Al10Si26O72 <code>] . 28</code> H2O.
  * @author Sean A. Irvine
  */
 public class A019142 extends A018940 {

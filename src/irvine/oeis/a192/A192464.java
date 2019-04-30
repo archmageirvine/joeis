@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192464 Constant term of the reduction by <code>x^2-&gt;x+1</code> of the polynomial p(n,x)=1+x^n+x^(2n).
+ * A192464 Constant term of the reduction by <code>x^2-&gt;x+1</code> of the polynomial <code>p(n,x)=1+x^n+x^(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A192464 extends LinearRecurrence {

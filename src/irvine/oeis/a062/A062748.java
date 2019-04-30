@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062748 Fourth column (r=3) of FS(3) staircase array A062745.
+ * A062748 Fourth column (r=3) of <code>FS(3)</code> staircase array A062745.
  * @author Sean A. Irvine
  */
 public class A062748 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007374 Smallest k such that phi(x) <code>= k</code> has exactly n solutions.
+ * A007374 Smallest k such that <code>phi(x) = k</code> has exactly n solutions.
  * @author Sean A. Irvine
  */
 public class A007374 implements Sequence {

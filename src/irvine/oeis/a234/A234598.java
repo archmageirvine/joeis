@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234598 Cardinality of the Weyl alternation set corresponding to the zero-weight in the adjoint representation of the Lie algebra of so(2n).
+ * A234598 Cardinality of the Weyl alternation set corresponding to the zero-weight in the adjoint representation of the Lie algebra of <code>so(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A234598 extends LinearRecurrence {

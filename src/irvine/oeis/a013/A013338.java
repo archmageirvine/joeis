@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013338 sec(exp(x)-sec(x))=1+1/2!*x^2+9/4!*x^4-20/5!*x^5+177/6!*x^6...
+ * A013338 <code>sec(exp(x)-sec(x))=1+1/2!*x^2+9/4!*x^4-20/5!*x^5+177/6!*x^6</code>...
  * @author Sean A. Irvine
  */
 public class A013338 implements Sequence {

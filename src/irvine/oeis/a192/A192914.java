@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192914 Constant term in the reduction by <code>(x^2 -&gt; x + 1)</code> of the polynomial <code>C(n)*x^n,</code> where C=A000285.
+ * A192914 Constant term in the reduction by <code>(x^2 -&gt; x + 1)</code> of the polynomial <code>C(n)*x^n</code>, where C=A000285.
  * @author Sean A. Irvine
  */
 public class A192914 extends LinearRecurrence {

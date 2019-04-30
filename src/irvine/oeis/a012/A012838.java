@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012838 sec(sec(x)*tanh(x))=1+1/2!*x^2+9/4!*x^4+297/6!*x^6+14385/8!*x^8...
+ * A012838 <code>sec(sec(x)*tanh(x))=1+1/2!*x^2+9/4!*x^4+297/6!*x^6+14385/8!*x^8</code>...
  * @author Sean A. Irvine
  */
 public class A012838 implements Sequence {

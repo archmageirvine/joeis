@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A015710 Least <code>k &gt;= 0</code> such that phi(n) <code>* sigma(n) + k^2</code> is a perfect square, or <code>-1</code> if impossible.
+ * A015710 Least <code>k &gt;= 0</code> such that <code>phi(n) * sigma(n) + k^2</code> is a perfect square, or <code>-1</code> if impossible.
  * @author Sean A. Irvine
  */
 public class A015710 extends A015713 {

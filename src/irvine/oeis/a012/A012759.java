@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012759 Expansion of e.g.f.: arctan(cosh(x)*log(x+1))=x-1/2!*x^2+3/3!*x^3-57/5!*x^5+405/6!*x^6...
+ * A012759 Expansion of e.g.f.: <code>arctan(cosh(x)*log(x+1))=x-1/2!*x^2+3/3!*x^3-57/5!*x^5+405/6!*x^6</code>...
  * @author Sean A. Irvine
  */
 public class A012759 implements Sequence {

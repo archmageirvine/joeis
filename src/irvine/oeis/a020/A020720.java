@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020720 Pisot sequences E(7,9), P(7,9).
+ * A020720 Pisot sequences <code>E(7,9), P(7,9)</code>.
  * @author Sean A. Irvine
  */
 public class A020720 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004193 <code>a(n) =</code> -(-1)^n*2*(2n+1)!*Bernoulli(2n)/(n!*2^n).
+ * A004193 <code>a(n) = -(-1)^n*2*(2n+1)!*Bernoulli(2n)/(n!*2^n)</code>.
  * @author Sean A. Irvine
  */
 public class A004193 implements Sequence {

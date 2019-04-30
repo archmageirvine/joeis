@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000471 <code>a(n) =</code> floor(sinh(n)).
+ * A000471 <code>a(n) = floor(sinh(n))</code>.
  * @author Sean A. Irvine
  */
 public class A000471 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000756 Boustrophedon transform of sequence <code>1,1,0,0,0,0,..</code>.
+ * A000756 Boustrophedon transform of sequence 1,1,0,0,0,0,...
  * @author Sean A. Irvine
  */
 public class A000756 extends A000674 {

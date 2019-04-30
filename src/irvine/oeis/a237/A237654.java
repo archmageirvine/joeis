@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237654 G.f.: exp( <code>Sum_{n&gt;=1} 5*Fibonacci(n-1)*Fibonacci(n+1) * x^n/n )</code>.
+ * A237654 G.f.: <code>exp( Sum_{n&gt;=1} 5*Fibonacci(n-1)*Fibonacci(n+1) * x^n/n )</code>.
  * @author Sean A. Irvine
  */
 public class A237654 extends LinearRecurrence {

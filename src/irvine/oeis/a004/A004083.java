@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004083 Numbers n such that cos(n-1) <code>&lt;= 0</code> and cos(n) <code>&gt; 0</code>.
+ * A004083 Numbers n such that <code>cos(n-1) &lt;= 0</code> and <code>cos(n) &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A004083 implements Sequence {

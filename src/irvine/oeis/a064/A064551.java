@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064551 Ado [Simone Caramel]'s Fibonacci function: define the Fibonacci sequence by f(0) <code>= 1,</code> f(1) <code>= 1,</code> f(n) = f(n-1)+f(n-2); then <code>a(0) = 1, a(n) = a(n-1) +</code> 2*(f(n)-n), <code>n &gt; 0</code>.
+ * A064551 Ado [Simone Caramel]'s Fibonacci function: define the Fibonacci sequence by <code>f(0) = 1, f(1) = 1, f(n) = f(n-1)+f(n-2)</code>; then <code>a(0) = 1, a(n) = a(n-1) + 2*(f(n)-n), n &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A064551 extends LinearRecurrence {

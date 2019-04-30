@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266371 G.f. <code>= b(4)*b(6)/(x^8+x^6-x^5-x^3+x^2-2*x+1),</code> where <code>b(k) = (1-x^k)/(1-x)</code>.
+ * A266371 G.f. <code>= b(4)*b(6)/(x^8+x^6-x^5-x^3+x^2-2*x+1)</code>, where <code>b(k) = (1-x^k)/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A266371 extends LinearRecurrence {

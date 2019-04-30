@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126593 Numbers that belong to a cycle under the map <code>k =</code> Sum d_i <code>10^i -&gt;</code> f(k) = Sum d_i <code>2^i</code>.
+ * A126593 Numbers that belong to a cycle under the map <code>k =</code> Sum d_i <code>10^i -&gt; f(k) =</code> Sum d_i <code>2^i</code>.
  * @author Georg Fischer
  */
 public class A126593 extends FiniteSequence {

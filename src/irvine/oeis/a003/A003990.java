@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003990 Table of lcm(x,y), read along antidiagonals.
+ * A003990 Table of <code>lcm(x,y)</code>, read along antidiagonals.
  * @author Sean A. Irvine
  */
 public class A003990 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075561 Domination number for kings' graph K(n).
+ * A075561 Domination number for kings' graph <code>K(n)</code>.
  * @author Sean A. Irvine
  */
 public class A075561 extends LinearRecurrence {

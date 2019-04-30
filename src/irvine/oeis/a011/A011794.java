@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011794 Triangle defined by <code>a(n+1,k)=a(n,k-1)+a(n-1,k), a(n,1)=1, a(1,k)=1, a(2</code>,k)=min(2,k).
+ * A011794 Triangle defined by <code>a(n+1,k)=a(n,k-1)+a(n-1,k), a(n,1)=1, a(1,k)=1, a(2,k)=min(2,k)</code>.
  * @author Sean A. Irvine
  */
 public class A011794 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107271 Let M = the 3 X 3 matrix <code>[1 1 1</code>; 3 1 0; <code>2 0 0].</code> Perform M^n <code>* [1 0 0]</code> getting <code>(1, 3, 2</code>; 6, 6, 2; 14, 24, 12; 50, 66, 28;...) which we string together to form the sequence.
+ * A107271 Let M = the 3 X 3 matrix <code>[1 1 1; 3 1 0; 2 0 0]</code>. Perform M^n <code>* [1 0 0]</code> getting <code>(1, 3, 2; 6, 6, 2; 14, 24, 12; 50, 66, 28;...)</code> which we string together to form the sequence.
  * @author Sean A. Irvine
  */
 public class A107271 extends LinearRecurrence {

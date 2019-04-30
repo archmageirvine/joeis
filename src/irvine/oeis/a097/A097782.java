@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097782 Chebyshev polynomials S(n,29) with Diophantine property.
+ * A097782 Chebyshev polynomials <code>S(n,29)</code> with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A097782 extends LinearRecurrence {

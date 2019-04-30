@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A066458 Numbers n such that Sum_{d runs through digits of <code>n}</code> d^d = pi(n) (cf. A000720).
+ * A066458 Numbers n such that Sum_{d runs through digits of <code>n}</code> d^d <code>= pi(n)</code> (cf. A000720).
  * @author Georg Fischer
  */
 public class A066458 extends FiniteSequence {

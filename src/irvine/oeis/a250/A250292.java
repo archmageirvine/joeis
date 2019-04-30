@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000129;
 
 /**
- * A250292 Numbers n such that Pell(n) is a semiprime.
+ * A250292 Numbers n such that <code>Pell(n)</code> is a semiprime.
  * @author Sean A. Irvine
  */
 public class A250292 extends A000129 {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A232734 Decimal expansion of Integral <code>{x=0.</code>.infinity} <code>1/2^(2^x)</code> dx.
+ * A232734 Decimal expansion of Integral <code>{x=0</code>..infinity} <code>1/2^(2^x)</code> dx.
  * @author Sean A. Irvine
  */
 public class A232734 extends DecimalExpansionSequence {

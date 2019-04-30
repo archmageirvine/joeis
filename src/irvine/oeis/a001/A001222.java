@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001222 Number of prime divisors of n counted with multiplicity (also called bigomega(n) or Omega(n)).
+ * A001222 Number of prime divisors of n counted with multiplicity (also called <code>bigomega(n)</code> or <code>Omega(n))</code>.
  * @author Sean A. Irvine
  */
 public class A001222 implements Sequence {

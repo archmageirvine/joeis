@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099444 A Chebyshev transform of Fib(2n+2).
+ * A099444 A Chebyshev transform of <code>Fib(2n+2)</code>.
  * @author Sean A. Irvine
  */
 public class A099444 extends LinearRecurrence {

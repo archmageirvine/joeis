@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285869 <code>a(n)</code> is the number of zeros of the Chebyshev S(n, <code>x)</code> polynomial in the open interval <code>(-sqrt(2), +sqrt(2))</code>.
+ * A285869 <code>a(n)</code> is the number of zeros of the Chebyshev <code>S(n, x)</code> polynomial in the open interval <code>(-sqrt(2), +sqrt(2))</code>.
  * @author Sean A. Irvine
  */
 public class A285869 extends LinearRecurrence {

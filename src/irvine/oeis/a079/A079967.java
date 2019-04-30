@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079967 Number of permutations satisfying -k&lt;=p(i)-i&lt;=r and p(i)-i not in I, <code>i=1..n,</code> with <code>k=1,</code> r=5, I={4}.
+ * A079967 Number of permutations satisfying -k&lt;=p(i)-i&lt;=r and <code>p(i)-i</code> not in I, <code>i=1..n</code>, with <code>k=1</code>, r=5, I={4}.
  * @author Sean A. Irvine
  */
 public class A079967 extends LinearRecurrence {

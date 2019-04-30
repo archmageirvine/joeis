@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a161.A161015;
 
 /**
- * A019429 Continued fraction for tan(1/6).
+ * A019429 Continued fraction for <code>tan(1/6)</code>.
  * @author Sean A. Irvine
  */
 public class A019429 extends ContinuedFractionSequence {

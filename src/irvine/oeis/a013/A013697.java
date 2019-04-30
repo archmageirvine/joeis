@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013697 Second term in continued fraction for zeta(n).
+ * A013697 Second term in continued fraction for <code>zeta(n)</code>.
  * @author Sean A. Irvine
  */
 public class A013697 implements Sequence {

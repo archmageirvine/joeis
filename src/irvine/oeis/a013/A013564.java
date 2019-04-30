@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013564 E.g.f. arcsinh(log(x+1)/exp(x)).
+ * A013564 E.g.f. <code>arcsinh(log(x+1)/exp(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013564 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014403 Numbers found in denominators of expansion of Airy function Bi(x).
+ * A014403 Numbers found in denominators of expansion of Airy function <code>Bi(x)</code>.
  * @author Sean A. Irvine
  */
 public class A014403 extends A014402 {

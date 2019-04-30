@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A246114 Number of inequivalent n X n matrices with entries from <code>[8],</code> where equivalence means permutations of rows or columns.
+ * A246114 Number of inequivalent n X n matrices with entries from <code>[8]</code>, where equivalence means permutations of rows or columns.
  * @author Sean A. Irvine
  */
 public class A246114 implements Sequence {

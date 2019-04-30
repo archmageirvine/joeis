@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A196279 Let r= <code>(7n) mod 10</code> and <code>x=floor(7n/10)</code> be the last digit and leading part of <code>7n.</code> Then <code>a(n) =</code> (x-2r)/7.
+ * A196279 Let r= <code>(7n) mod 10</code> and <code>x=floor(7n/10)</code> be the last digit and leading part of <code>7n</code>. Then <code>a(n) =</code> (x-2r)/7.
  * @author Sean A. Irvine
  */
 public class A196279 extends LinearRecurrence {

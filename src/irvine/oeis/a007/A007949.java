@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007949 Greatest k such that <code>3^k</code> divides <code>n.</code> Or, 3-adic valuation of n.
+ * A007949 Greatest k such that <code>3^k</code> divides n. Or, 3-adic valuation of n.
  * @author Sean A. Irvine
  */
 public class A007949 implements Sequence {

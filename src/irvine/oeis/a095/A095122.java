@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095122 Fib(n)(2Fib(n)-1).
+ * A095122 <code>Fib(n)(2Fib(n)-1)</code>.
  * @author Sean A. Irvine
  */
 public class A095122 extends LinearRecurrence {

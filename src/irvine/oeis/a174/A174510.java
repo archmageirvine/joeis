@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174510 Continued fraction expansion for exp( <code>Sum_{n&gt;=1}</code> 1/(n*A080040(n)) ), where A080040(n) <code>= (1+sqrt(3))^n + (1-sqrt(3))^n</code>.
+ * A174510 Continued fraction expansion for <code>exp( Sum_{n&gt;=1}</code> 1/(n*A080040(n)) ), where A080040(n) <code>= (1+sqrt(3))^n + (1-sqrt(3))^n</code>.
  * @author Sean A. Irvine
  */
 public class A174510 extends LinearRecurrence {

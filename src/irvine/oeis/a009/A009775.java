@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009775 Exponential generating function is tanh(log(1+x)).
+ * A009775 Exponential generating function is <code>tanh(log(1+x))</code>.
  * @author Sean A. Irvine
  */
 public class A009775 implements Sequence {

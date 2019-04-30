@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186025 <code>a(n) = 0^n + 1 - F(n-1)^2 - F(n)^2,</code> where F = A000045.
+ * A186025 <code>a(n) = 0^n + 1 - F(n-1)^2 - F(n)^2</code>, where F = A000045.
  * @author Georg Fischer
  */
 public class A186025 extends LinearRecurrence {

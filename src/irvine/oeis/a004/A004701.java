@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004701 Expansion of e.g.f. <code>1/(4 -</code> exp(x) - exp(2*x) - exp(3*x)).
+ * A004701 Expansion of e.g.f. <code>1/(4 - exp(x) - exp(2*x) - exp(3*x))</code>.
  * @author Sean A. Irvine
  */
 public class A004701 implements Sequence {

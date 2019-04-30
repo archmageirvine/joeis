@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a049.A049218;
 
 /**
- * A008309 Triangle <code>T(n,k)</code> of arctangent numbers: expansion of arctan(x)^n/n!.
+ * A008309 Triangle <code>T(n,k)</code> of arctangent numbers: expansion of <code>arctan(x)^n/n!</code>.
  * @author Sean A. Irvine
  */
 public class A008309 extends A049218 {

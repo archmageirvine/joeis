@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054851 <code>a(n) = 2^(n-7)*binomial(n,7).</code> Number of 7D hypercubes in an n-dimensional hypercube.
+ * A054851 <code>a(n) = 2^(n-7)*binomial(n,7)</code>. Number of 7D hypercubes in an n-dimensional hypercube.
  * @author Sean A. Irvine
  */
 public class A054851 extends LinearRecurrence {

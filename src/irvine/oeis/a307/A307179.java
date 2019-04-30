@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307179 Numbers k such that <code>k = i*j = 6*i + j,</code> where i and j are integers.
+ * A307179 Numbers k such that <code>k = i*j = 6*i + j</code>, where i and j are integers.
  * @author Georg Fischer
  */
 public class A307179 extends FiniteSequence {

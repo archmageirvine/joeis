@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A099285 Decimal expansion of -Ei(-1), negated exponential integral at <code>-1</code>.
+ * A099285 Decimal expansion of <code>-Ei(-1)</code>, negated exponential integral at <code>-1</code>.
  * @author Sean A. Irvine
  */
 public class A099285 extends DecimalExpansionSequence {

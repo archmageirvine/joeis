@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321131 Values of m <code>(mod 25),</code> where m := A317905(n), such that a(m) <code>= 1</code>.
+ * A321131 Values of m <code>(mod 25)</code>, where m := A317905(n), such that a(m) <code>= 1</code>.
  * @author Georg Fischer
  */
 public class A321131 extends FiniteSequence {

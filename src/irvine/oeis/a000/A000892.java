@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000892 Number of switching networks with GL(n,2) acting on the domain and AG(2,2) acting on the range.
+ * A000892 Number of switching networks with <code>GL(n,2)</code> acting on the domain and <code>AG(2,2)</code> acting on the range.
  * @author Sean A. Irvine
  */
 public class A000892 implements Sequence {

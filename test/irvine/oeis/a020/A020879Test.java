@@ -10,6 +10,6 @@ public class A020879Test extends AbstractSequenceTest {
 
   @Override
   protected int maxTerms() {
-    return 4;
+    return 5;
   }
 }

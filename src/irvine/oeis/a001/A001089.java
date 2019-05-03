@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001089 Number of permutations of [n] containing exactly 2 increasing subsequences of length 3.
+ * A001089 Number of permutations of <code>[n]</code> containing exactly 2 increasing subsequences of length 3.
  * @author Sean A. Irvine
  */
 public class A001089 implements Sequence {

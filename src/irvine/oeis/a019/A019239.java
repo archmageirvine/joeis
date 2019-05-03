@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019239 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite STI = Stilbite <code>Na4Ca8[ Al20Si52O144 ] . 56 H2O</code>.
+ * A019239 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite STI = Stilbite <code>Na4Ca8[ Al20Si52O144 ] . 56 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019239 extends A018940 {

@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A091329 Bar coding for digits 0 through 9 in Universal Product Code <code>(or UPC)</code>.
+ * A091329 Bar coding for digits 0 through 9 in Universal Product Code (or UPC).
  * @author Georg Fischer
  */
 public class A091329 extends FiniteSequence {

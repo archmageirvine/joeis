@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267690 Numbers n such that replacing any single decimal digit d with <code>d/3</code> produces a prime <code>(obviously n</code> can contain only digits <code>3, 6</code> or <code>9)</code>.
+ * A267690 Numbers n such that replacing any single decimal digit d with <code>d/3</code> produces a prime (obviously n can contain only digits <code>3, 6</code> or <code>9)</code>.
  * @author Georg Fischer
  */
 public class A267690 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008669 Molien series for 4-dimensional complex reflection group of order <code>7680 (in</code> powers of <code>x^4)</code>.
+ * A008669 Molien series for 4-dimensional complex reflection group of order <code>7680</code> (in powers of <code>x^4)</code>.
  * @author Sean A. Irvine
  */
 public class A008669 extends CoordinationSequence {

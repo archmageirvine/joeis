@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A004170 Reversals of Fibonacci numbers <code>(sorted)</code>.
+ * A004170 Reversals of Fibonacci numbers (sorted).
  * @author Sean A. Irvine
  */
 public class A004170 extends A000045 {

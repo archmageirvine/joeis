@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016104 <code>2^2^2^</code> ... <code>2^w (with n 2's)</code>, where w <code>= 1.92878....</code>.
+ * A016104 <code>2^2^2^</code> ... <code>2^w</code> (with <code>n 2's)</code>, where w <code>= 1.92878....</code>.
  * @author Sean A. Irvine
  */
 public class A016104 implements Sequence {

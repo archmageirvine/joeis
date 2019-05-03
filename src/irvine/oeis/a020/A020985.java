@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A020985 The Rudin-Shapiro or <code>Golay-Rudin-Shapiro</code> sequence (coefficients of the Shapiro <code>polynomials)</code>.
+ * A020985 The Rudin-Shapiro or <code>Golay-Rudin-Shapiro</code> sequence (coefficients of the Shapiro polynomials).
  * @author Sean A. Irvine
  */
 public class A020985 implements Sequence {

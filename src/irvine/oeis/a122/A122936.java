@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122936 2-Round numbers: numbers n such that every number less than n and relatively prime to n has at most two prime factors <code>(counting multiplicities)</code>.
+ * A122936 2-Round numbers: numbers n such that every number less than n and relatively prime to n has at most two prime factors (counting multiplicities).
  * @author Georg Fischer
  */
 public class A122936 extends FiniteSequence {

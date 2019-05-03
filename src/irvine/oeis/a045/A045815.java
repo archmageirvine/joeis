@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045815 In the list of divisors of <code>n (in</code> base <code>6)</code>, each digit 0-5 appears equally often.
+ * A045815 In the list of divisors of <code>n</code> (in base <code>6)</code>, each digit 0-5 appears equally often.
  * @author Sean A. Irvine
  */
 public class A045815 implements Sequence {

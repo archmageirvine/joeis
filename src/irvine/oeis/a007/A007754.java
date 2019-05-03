@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007754 Array (a frieze pattern) defined by <code>a(n,k) = (a(n-1,k)*a(n-1,k+1) - 1) / a(n-2,k+1)</code>, read by antidiagonals.
+ * A007754 Array <code>(a</code> frieze pattern) defined by <code>a(n,k) = (a(n-1,k)*a(n-1,k+1) - 1) / a(n-2,k+1)</code>, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A007754 extends MemoryFunction2<Long, Z> implements Sequence {

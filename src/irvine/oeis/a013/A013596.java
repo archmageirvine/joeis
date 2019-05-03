@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A013596 Irregular triangle of coefficients of cyclotomic polynomial <code>Phi_n(x) (exponents</code> in decreasing <code>order)</code>.
+ * A013596 Irregular triangle of coefficients of cyclotomic polynomial <code>Phi_n(x)</code> (exponents in decreasing order).
  * @author Sean A. Irvine
  */
 public class A013596 implements Sequence {

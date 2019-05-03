@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A025672 Exponent of <code>8 (value</code> of j) in n-th number of form <code>3^i*8^j</code>.
+ * A025672 Exponent of <code>8</code> (value of <code>j)</code> in n-th number of form <code>3^i*8^j</code>.
  * @author Sean A. Irvine
  */
 public class A025672 implements Sequence {

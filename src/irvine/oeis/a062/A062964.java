@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A062964 Pi in hexadecimal.
+ * A062964 <code>Pi</code> in hexadecimal.
  * @author Sean A. Irvine
  */
 public class A062964 extends DecimalExpansionSequence {

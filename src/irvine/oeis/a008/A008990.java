@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008990 Numerators of sequence having <code>sqrt(cos(x))</code> as e.g.f. <code>(even-indexed</code> coefficients <code>only)</code>.
+ * A008990 Numerators of sequence having <code>sqrt(cos(x))</code> as e.g.f. <code>(even-indexed</code> coefficients only).
  * @author Sean A. Irvine
  */
 public class A008990 implements Sequence {

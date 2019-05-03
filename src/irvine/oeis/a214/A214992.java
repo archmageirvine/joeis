@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214992 Power ceiling-floor sequence of <code>(golden ratio)^4</code>.
+ * A214992 Power ceiling-floor sequence of (golden <code>ratio)^4</code>.
  * @author Sean A. Irvine
  */
 public class A214992 extends LinearRecurrence {

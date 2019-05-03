@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216109 The hyper-Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng <code>references)</code>.
+ * A216109 The hyper-Wiener index of the ortho-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
  * @author Sean A. Irvine
  */
 public class A216109 extends LinearRecurrence {

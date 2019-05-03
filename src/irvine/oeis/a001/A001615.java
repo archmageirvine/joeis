@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001615 Dedekind psi function: <code>n * Product_{p|n, p prime} (1 + 1/p)</code>.
+ * A001615 Dedekind psi function: <code>n * Product_{p|n, p</code> prime} <code>(1 + 1/p)</code>.
  * @author Sean A. Irvine
  */
 public class A001615 implements Sequence {

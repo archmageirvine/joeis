@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005167 <code>a(n+1) = (1 + a(0)^4 +</code> ... <code>+ a(n)^4 )/(n+1) (not</code> always <code>integral!)</code>.
+ * A005167 <code>a(n+1) = (1 + a(0)^4 +</code> ... <code>+ a(n)^4 )/(n+1)</code> (not always <code>integral!)</code>.
  * @author Sean A. Irvine
  */
 public class A005167 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005820 <code>3-perfect (triply</code> perfect, <code>tri-perfect</code>, triperfect or <code>sous-double)</code> numbers: numbers such that the sum of the divisors of n is <code>3n</code>.
+ * A005820 <code>3-perfect</code> (triply perfect, <code>tri-perfect</code>, triperfect or <code>sous-double)</code> numbers: numbers such that the sum of the divisors of n is <code>3n</code>.
  * @author Sean A. Irvine
  */
 public class A005820 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183114 Magnetic Tower of Hanoi, total number of moves, optimally solving the [RED ; NEUTRAL ; <code>BLUE] pre-colored</code> puzzle.
+ * A183114 Magnetic Tower of Hanoi, total number of moves, optimally solving the [RED ; NEUTRAL ; BLUE] pre-colored puzzle.
  * @author Sean A. Irvine
  */
 public class A183114 extends LinearRecurrence {

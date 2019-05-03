@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A007764 Number of nonintersecting <code>(or self-avoiding)</code> rook paths joining opposite corners of an <code>n X n</code> grid.
+ * A007764 Number of nonintersecting (or <code>self-avoiding)</code> rook paths joining opposite corners of an <code>n X n</code> grid.
  * @author Ruben Spaans (C)
  * @author Sean A. Irvine (Java port)
  */

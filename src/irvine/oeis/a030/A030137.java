@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030137 Number of one-sided pentagonal <code>n-ominoes (or pentominoes)</code> on the dodecahedron.
+ * A030137 Number of one-sided pentagonal <code>n-ominoes</code> (or pentominoes) on the dodecahedron.
  * @author Georg Fischer
  */
 public class A030137 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019223 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite RTE <code>= RUB-3 [ Si24O48 ] . 2</code> R.
+ * A019223 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite RTE <code>= RUB-3 [ Si24O48 ] . 2</code> R.
  * @author Sean A. Irvine
  */
 public class A019223 extends A018940 {

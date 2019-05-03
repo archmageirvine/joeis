@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183156 The number <code>T(n)</code> of isometries of all subspaces of the finite metric space <code>{1,2,...,n} (as</code> a subspace of the reals with the Euclidean <code>metric)</code>.
+ * A183156 The number <code>T(n)</code> of isometries of all subspaces of the finite metric space <code>{1,2,...,n}</code> (as a subspace of the reals with the Euclidean metric).
  * @author Sean A. Irvine
  */
 public class A183156 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008469 <code>a(n) = n</code> OR <code>n^3 (applied</code> to ternary <code>expansions)</code>.
+ * A008469 <code>a(n) = n</code> OR <code>n^3</code> (applied to ternary expansions).
  * @author Sean A. Irvine
  */
 public class A008469 implements Sequence {

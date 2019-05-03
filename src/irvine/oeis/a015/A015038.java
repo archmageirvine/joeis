@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015038 q-Catalan numbers <code>(binomial version)</code> for <code>q=7</code>.
+ * A015038 q-Catalan numbers (binomial version) for <code>q=7</code>.
  * @author Sean A. Irvine
  */
 public class A015038 extends A015030 {

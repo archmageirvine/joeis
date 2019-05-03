@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133408 Numbers n such that n is a substring of both its square and its cube in base <code>2 (written</code> in base <code>10)</code>.
+ * A133408 Numbers n such that n is a substring of both its square and its cube in base <code>2</code> (written in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A133408 implements Sequence {

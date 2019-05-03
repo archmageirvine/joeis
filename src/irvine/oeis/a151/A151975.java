@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151975 The number of ways one can flip seven consecutive tails <code>(or heads)</code> when flipping a coin n times.
+ * A151975 The number of ways one can flip seven consecutive tails (or heads) when flipping a coin n times.
  * @author Sean A. Irvine
  */
 public class A151975 extends LinearRecurrence {

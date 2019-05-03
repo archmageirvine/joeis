@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020544 Second Bernoulli polynomial evaluated at <code>x=n! (multiplied</code> by <code>6)</code>.
+ * A020544 Second Bernoulli polynomial evaluated at <code>x=n!</code> (multiplied by <code>6)</code>.
  * @author Sean A. Irvine
  */
 public class A020544 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133257 The number of edges on a piece of paper that has been folded n times (see comments for more precise <code>definition)</code>.
+ * A133257 The number of edges on a piece of paper that has been folded n times (see comments for more precise definition).
  * @author Sean A. Irvine
  */
 public class A133257 extends LinearRecurrence {

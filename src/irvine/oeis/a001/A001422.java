@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001422 Numbers which are not the sum of distinct squares. This is the complete list <code>(Sprague)</code>.
+ * A001422 Numbers which are not the sum of distinct squares. This is the complete list (Sprague).
  * @author Sean A. Irvine
  */
 public class A001422 extends FiniteSequence {

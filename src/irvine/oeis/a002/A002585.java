@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002585 Largest prime factor of <code>1 + (product</code> of first <code>n primes)</code>.
+ * A002585 Largest prime factor of <code>1 +</code> (product of first <code>n</code> primes).
  * @author Sean A. Irvine
  */
 public class A002585 implements Sequence {

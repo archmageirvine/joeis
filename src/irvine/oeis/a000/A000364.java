@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000364 Euler (or secant or <code>"Zig")</code> numbers: e.g.f. (even powers <code>only) sec(x) = 1/cos(x)</code>.
+ * A000364 Euler (or secant or <code>"Zig")</code> numbers: e.g.f. (even powers only) <code>sec(x) = 1/cos(x)</code>.
  * @author Sean A. Irvine
  */
 public class A000364 implements Sequence {

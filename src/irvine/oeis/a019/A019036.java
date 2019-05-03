@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019036 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite LTN = Linde Type N <code>Na384[ Al384Si384O1536 ] . 518 H2O</code>.
+ * A019036 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite LTN = Linde Type N <code>Na384[ Al384Si384O1536 ] . 518 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019036 extends A018940 {

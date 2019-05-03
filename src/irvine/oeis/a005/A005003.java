@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000110;
 
 /**
- * A005003 Number of rhyme schemes (see reference for precise <code>definition)</code>.
+ * A005003 Number of rhyme schemes (see reference for precise definition).
  * @author Sean A. Irvine
  */
 public class A005003 implements Sequence {

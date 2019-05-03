@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007123 Number of connected unit interval graphs with n nodes; also number of bracelets <code>(turnover necklaces)</code> with n black beads and <code>n-1</code> white beads.
+ * A007123 Number of connected unit interval graphs with n nodes; also number of bracelets (turnover necklaces) with n black beads and <code>n-1</code> white beads.
  * @author Sean A. Irvine
  */
 public class A007123 implements Sequence {

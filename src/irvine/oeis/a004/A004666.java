@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004666 Powers of 3 written in base <code>12. (Next</code> term contains a <code>non-decimal character)</code>.
+ * A004666 Powers of 3 written in base <code>12</code>. (Next term contains a <code>non-decimal</code> character).
  * @author Sean A. Irvine
  */
 public class A004666 implements Sequence {

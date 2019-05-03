@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Dutch;
 
 /**
- * A007485 Number of letters in <code>n (in Dutch)</code>.
+ * A007485 Number of letters in <code>n</code> (in Dutch).
  * @author Sean A. Irvine
  */
 public class A007485 implements Sequence {

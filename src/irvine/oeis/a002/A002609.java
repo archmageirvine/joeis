@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002609 Glaisher's function <code>G(n) (18</code> squares <code>version)</code>.
+ * A002609 Glaisher's function <code>G(n) (18</code> squares version).
  * @author Sean A. Irvine
  */
 public class A002609 implements Sequence {

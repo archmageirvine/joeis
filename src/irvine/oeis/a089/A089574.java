@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089574 Column 4 of an array closely related to <code>A083480. (Both</code> arrays have shape sequence <code>A083479)</code>.
+ * A089574 Column 4 of an array closely related to <code>A083480</code>. (Both arrays have shape sequence <code>A083479)</code>.
  * @author Sean A. Irvine
  */
 public class A089574 extends LinearRecurrence {

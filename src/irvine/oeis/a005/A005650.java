@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000681;
 
 /**
- * A005650 Number of "magic squares" of order <code>n (see</code> comment line for exact <code>definition)</code>.
+ * A005650 Number of "magic squares" of order <code>n</code> (see comment line for exact definition).
  * @author Sean A. Irvine
  */
 public class A005650 extends A000681 {

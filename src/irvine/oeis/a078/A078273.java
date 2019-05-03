@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A078273 Smallest multiple of n other than n using only the digits of <code>n (no</code> limit on <code>frequency)</code>.
+ * A078273 Smallest multiple of n other than n using only the digits of <code>n</code> (no limit on frequency).
  * @author Sean A. Irvine
  */
 public class A078273 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161657 <code>a(n) =</code> the smallest multiple of {the sum of the distinct prime divisors of n} that is <code>&gt;=n</code>.
+ * A161657 <code>a(n) =</code> the smallest multiple of {the sum of the distinct prime divisors of <code>n}</code> that is <code>&gt;=n</code>.
  * @author Sean A. Irvine
  */
 public class A161657 implements Sequence {

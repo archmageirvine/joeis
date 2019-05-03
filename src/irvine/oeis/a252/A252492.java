@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A252492 The largest prime factor of <code>n*(n+1)</code> equals <code>17. (Related</code> to the abc <code>conjecture.)</code>.
+ * A252492 The largest prime factor of <code>n*(n+1)</code> equals <code>17</code>. (Related to the abc <code>conjecture.)</code>.
  * @author Georg Fischer
  */
 public class A252492 extends FiniteSequence {

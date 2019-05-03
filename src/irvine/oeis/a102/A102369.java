@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102369 Intervals between successive arrivals of Langton's Ant at the origin <code>(see A102127)</code>.
+ * A102369 Intervals between successive arrivals of Langton's Ant at the origin (see <code>A102127)</code>.
  * @author Georg Fischer
  */
 public class A102369 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143838 Ulam's spiral <code>(SSW spoke)</code>.
+ * A143838 Ulam's spiral (SSW spoke).
  * @author Sean A. Irvine
  */
 public class A143838 extends LinearRecurrence {

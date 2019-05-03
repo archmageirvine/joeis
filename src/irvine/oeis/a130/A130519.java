@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130519 <code>a(n) = Sum_{k=0..n} floor(k/4). (Partial</code> sums of <code>A002265.)</code>.
+ * A130519 <code>a(n) = Sum_{k=0..n} floor(k/4)</code>. (Partial sums of <code>A002265.)</code>.
  * @author Sean A. Irvine
  */
 public class A130519 extends LinearRecurrence {

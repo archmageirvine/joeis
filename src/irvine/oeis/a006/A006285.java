@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006285 Odd numbers not of form p <code>+ 2^x (de</code> Polignac numbers).
+ * A006285 Odd numbers not of form p <code>+ 2^x</code> (de Polignac numbers).
  * @author Sean A. Irvine
  */
 public class A006285 implements Sequence {

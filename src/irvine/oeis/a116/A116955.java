@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116955 <code>a(n+1) = a(n) + (if a(n)</code> is odd then (next odd square) else (next even <code>square)), a(0) = 1</code>.
+ * A116955 <code>a(n+1) = a(n) +</code> (if <code>a(n)</code> is odd then (next odd square) else (next even <code>square)), a(0) = 1</code>.
  * @author Georg Fischer
  */
 public class A116955 extends LinearRecurrence {

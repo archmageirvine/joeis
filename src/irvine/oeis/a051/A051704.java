@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A051704 Maximal value of products of partitions of n into powers of distinct primes (powers of 1 and <code>2 excluded)</code>.
+ * A051704 Maximal value of products of partitions of n into powers of distinct primes (powers of 1 and <code>2</code> excluded).
  * @author Sean A. Irvine
  */
 public class A051704 implements Sequence {

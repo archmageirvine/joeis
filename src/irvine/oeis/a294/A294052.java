@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294052 Number of set partitions of [n] such that the maximal absolute difference between consecutive elements within a block equals three.
+ * A294052 Number of set partitions of <code>[n]</code> such that the maximal absolute difference between consecutive elements within a block equals three.
  * @author Sean A. Irvine
  */
 public class A294052 extends LinearRecurrence {

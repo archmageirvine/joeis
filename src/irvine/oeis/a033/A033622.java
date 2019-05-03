@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033622 Good sequence of increments for Shell sort (best on big <code>values)</code>.
+ * A033622 Good sequence of increments for Shell sort (best on big values).
  * @author Sean A. Irvine
  */
 public class A033622 extends LinearRecurrence {

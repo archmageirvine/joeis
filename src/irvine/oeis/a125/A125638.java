@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A125638 Hexagrams of the Yi Jing <code>[or I Ching]</code> interpreted in base 10, with the top line <code>= 2^5 (most</code> significant bit) and the bottom line as <code>2^0 (least</code> significant <code>bit)</code>, MaWangDui order.
+ * A125638 Hexagrams of the Yi Jing [or <code>I</code> Ching] interpreted in base 10, with the top line <code>= 2^5</code> (most significant bit) and the bottom line as <code>2^0</code> (least significant bit), MaWangDui order.
  * @author Georg Fischer
  */
 public class A125638 extends FiniteSequence {

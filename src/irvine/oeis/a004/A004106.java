@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004106 Number of <code>line-self-dual</code> nets <code>(or edge-self-dual nets)</code> with n nodes.
+ * A004106 Number of <code>line-self-dual</code> nets (or <code>edge-self-dual</code> nets) with n nodes.
  * @author Sean A. Irvine
  */
 public class A004106 implements Sequence {

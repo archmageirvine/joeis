@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A255487 Number of polyhypercubes or 4-dimensional polyominoes with n cells <code>(regarding mirror-images</code> as <code>distinct)</code>.
+ * A255487 Number of polyhypercubes or 4-dimensional polyominoes with n cells (regarding mirror-images as distinct).
  * @author Don Reble
  * @author Sean A. Irvine
  */

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016837 Primes reached after k iterations of sum of n and its prime divisors <code>= t (where</code> t replaces n in each <code>iteration)</code>.
+ * A016837 Primes reached after k iterations of sum of n and its prime divisors <code>= t</code> (where t replaces n in each iteration).
  * @author Sean A. Irvine
  */
 public class A016837 implements Sequence {

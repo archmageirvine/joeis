@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A001622 Decimal expansion of golden ratio phi <code>(or tau) = (1 + sqrt(5))/2</code>.
+ * A001622 Decimal expansion of golden ratio phi (or tau) <code>= (1 + sqrt(5))/2</code>.
  * @author Sean A. Irvine
  */
 public class A001622 extends DecimalExpansionSequence {

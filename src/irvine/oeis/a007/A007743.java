@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000162;
 import irvine.oeis.a038.A038119;
 
 /**
- * A007743 Number of <code>n-celled mirror-symmetric</code> solid polyominoes <code>(or polycubes)</code>.
+ * A007743 Number of <code>n-celled mirror-symmetric</code> solid polyominoes (or polycubes).
  * @author Sean A. Irvine
  */
 public class A007743 extends A038119 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003824;
 
 /**
- * A018850 Numbers that are the sum of 2 cubes in more than 1 way <code>(primitive solutions)</code>.
+ * A018850 Numbers that are the sum of 2 cubes in more than 1 way (primitive solutions).
  * @author Sean A. Irvine
  */
 public class A018850 extends A003824 {

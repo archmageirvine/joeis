@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000125 Cake numbers: maximal number of pieces resulting from n planar cuts through a cube <code>(or cake): C(n+1,3)+n+1</code>.
+ * A000125 Cake numbers: maximal number of pieces resulting from n planar cuts through a cube (or <code>cake): C(n+1,3)+n+1</code>.
  * @author Sean A. Irvine
  */
 public class A000125 implements Sequence {

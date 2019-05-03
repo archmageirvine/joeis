@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009013 Expansion of E.g.f.: <code>1/(cosh(x)*cos(x)) (only</code> powers that are multiples of <code>4)</code>.
+ * A009013 Expansion of E.g.f.: <code>1/(cosh(x)*cos(x))</code> (only powers that are multiples of <code>4)</code>.
  * @author Sean A. Irvine
  */
 public class A009013 implements Sequence {

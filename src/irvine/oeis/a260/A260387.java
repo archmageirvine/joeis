@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260387 Numbers <code>n = d_0d_1...d_n (n &lt; 10)</code> such that <code>d_i</code> is the number of digits equal to i in <code>n (base b)</code>, where b is less than 10.
+ * A260387 Numbers <code>n = d_0d_1...d_n (n &lt; 10)</code> such that <code>d_i</code> is the number of digits equal to i in <code>n</code> (base <code>b)</code>, where b is less than 10.
  * @author Georg Fischer
  */
 public class A260387 extends FiniteSequence {

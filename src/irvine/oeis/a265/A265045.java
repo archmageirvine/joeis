@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265045 Coordination sequence for a 6.6.6 point in the 3-transitive tiling <code>{4.6.6, 6.6.6, 6.6.6.6}</code> of the plane by squares and dominoes <code>(hexagons)</code>.
+ * A265045 Coordination sequence for a 6.6.6 point in the 3-transitive tiling <code>{4.6.6, 6.6.6, 6.6.6.6}</code> of the plane by squares and dominoes (hexagons).
  * @author Georg Fischer
  */
 public class A265045 extends LinearRecurrence {

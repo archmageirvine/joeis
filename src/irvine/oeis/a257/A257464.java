@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257464 Number of factorizations of <code>m^n</code> into 3 factors, where m is a product of exactly 3 distinct primes and each factor is a product of n primes (counted with <code>multiplicity)</code>.
+ * A257464 Number of factorizations of <code>m^n</code> into 3 factors, where m is a product of exactly 3 distinct primes and each factor is a product of n primes (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A257464 extends LinearRecurrence {

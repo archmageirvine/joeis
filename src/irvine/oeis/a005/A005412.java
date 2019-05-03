@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005412 Number of non-vanishing Feynman diagrams of order <code>2n</code> for the vacuum polarization (the proper two-point function of the photon) and for the <code>self-energy (the</code> proper two-point function of the electron) in quantum electrodynamics <code>(QED)</code>.
+ * A005412 Number of non-vanishing Feynman diagrams of order <code>2n</code> for the vacuum polarization (the proper two-point function of the photon) and for the <code>self-energy</code> (the proper two-point function of the electron) in quantum electrodynamics (QED).
  * @author Sean A. Irvine
  */
 public class A005412 extends MemorySequence {

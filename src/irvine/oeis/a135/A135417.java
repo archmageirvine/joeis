@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135417 Number of mountain numbers <code>(see A134941)</code> with n digits.
+ * A135417 Number of mountain numbers (see <code>A134941)</code> with n digits.
  * @author Georg Fischer
  */
 public class A135417 extends FiniteSequence {

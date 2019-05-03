@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208953 Amounts <code>(in cents)</code> of coins in denominations suggested by Shallit.
+ * A208953 Amounts (in cents) of coins in denominations suggested by Shallit.
  * @author Georg Fischer
  */
 public class A208953 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115200 The only alternating groups <code>A_n</code> which are ambivalent (see definition <code>below)</code>.
+ * A115200 The only alternating groups <code>A_n</code> which are ambivalent (see definition below).
  * @author Georg Fischer
  */
 public class A115200 extends FiniteSequence {

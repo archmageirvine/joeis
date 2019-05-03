@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104122 Numbers that are written <code>(in French)</code> with only one of the letters a,e,i,o,u,y.
+ * A104122 Numbers that are written (in French) with only one of the letters a,e,i,o,u,y.
  * @author Georg Fischer
  */
 public class A104122 extends FiniteSequence {

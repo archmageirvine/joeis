@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048053 Smallest sequence of 12 consecutive reversible primes <code>(emirps)</code>.
+ * A048053 Smallest sequence of 12 consecutive reversible primes (emirps).
  * @author Georg Fischer
  */
 public class A048053 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002413 Heptagonal <code>(or 7-gonal)</code> pyramidal numbers: <code>a(n) = n*(n+1)*(5*n-2)/6</code>.
+ * A002413 Heptagonal (or <code>7-gonal)</code> pyramidal numbers: <code>a(n) = n*(n+1)*(5*n-2)/6</code>.
  * @author Sean A. Irvine
  */
 public class A002413 implements Sequence {

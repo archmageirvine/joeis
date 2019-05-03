@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004601 Expansion of Pi in base <code>2 (or</code>, binary expansion of <code>Pi)</code>.
+ * A004601 Expansion of <code>Pi</code> in base <code>2 (or</code>, binary expansion of Pi).
  * @author Sean A. Irvine
  */
 public class A004601 extends DecimalExpansionSequence {

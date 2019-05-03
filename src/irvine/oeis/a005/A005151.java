@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005151 Summarize the previous term (digits in increasing <code>order)</code>, starting with <code>a(1) = 1</code>.
+ * A005151 Summarize the previous term (digits in increasing order), starting with <code>a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A005151 implements Sequence {

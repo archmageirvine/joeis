@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274309 Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise <code>definition)</code>.
+ * A274309 Related to integral generalized binomial coefficients of multiplicative functions (see Comments for precise definition).
  * @author Sean A. Irvine
  */
 public class A274309 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Czech;
 
 /**
- * A010038 Number of letters in <code>n (in Czech)</code>.
+ * A010038 Number of letters in <code>n</code> (in Czech).
  * @author Sean A. Irvine
  */
 public class A010038 implements Sequence {

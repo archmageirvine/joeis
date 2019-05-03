@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051682 <code>11-gonal (or hendecagonal)</code> numbers: <code>a(n) = n*(9*n-7)/2</code>.
+ * A051682 <code>11-gonal</code> (or hendecagonal) numbers: <code>a(n) = n*(9*n-7)/2</code>.
  * @author Sean A. Irvine
  */
 public class A051682 extends LinearRecurrence {

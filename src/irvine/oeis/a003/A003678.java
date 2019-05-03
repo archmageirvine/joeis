@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003678 Decimal expansion of the SI unit c (speed of light in <code>vacuum), c = 299792458 meters/second</code>.
+ * A003678 Decimal expansion of the SI unit c (speed of light in vacuum), <code>c = 299792458 meters/second</code>.
  * @author Sean A. Irvine
  */
 public class A003678 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054457 Pell numbers <code>A000129(n+1) (without P(0))</code> convoluted twice with itself.
+ * A054457 Pell numbers <code>A000129(n+1)</code> (without <code>P(0))</code> convoluted twice with itself.
  * @author Sean A. Irvine
  */
 public class A054457 extends LinearRecurrence {

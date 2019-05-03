@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192232 Constant term of the reduction of n-th Fibonacci polynomial by <code>x^2 -&gt; x+1. (See Comments.)</code>.
+ * A192232 Constant term of the reduction of n-th Fibonacci polynomial by <code>x^2 -&gt; x+1</code>. (See <code>Comments.)</code>.
  * @author Sean A. Irvine
  */
 public class A192232 extends LinearRecurrence {

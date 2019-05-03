@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000483 Associated Stirling numbers: second order reciprocal Stirling numbers <code>(Fekete) [[n, 3]]</code>. The number of 3-orbit permutations of an n-set with at least 2 elements in each orbit.
+ * A000483 Associated Stirling numbers: second order reciprocal Stirling numbers (Fekete) <code>[[n, 3]]</code>. The number of 3-orbit permutations of an n-set with at least 2 elements in each orbit.
  * @author Sean A. Irvine
  */
 public class A000483 implements Sequence {

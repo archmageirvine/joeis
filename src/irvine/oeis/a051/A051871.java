@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051871 <code>19-gonal (or enneadecagonal)</code> numbers: <code>n(17n-15)/2</code>.
+ * A051871 <code>19-gonal</code> (or enneadecagonal) numbers: <code>n(17n-15)/2</code>.
  * @author Sean A. Irvine
  */
 public class A051871 extends LinearRecurrence {

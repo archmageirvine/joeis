@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018897 Weight distribution of <code>[512,382,16] 9th-order Reed-Muller (or RM)</code> code.
+ * A018897 Weight distribution of <code>[512,382,16] 9th-order Reed-Muller</code> (or RM) code.
  * @author Sean A. Irvine
  */
 public class A018897 extends FiniteSequence {

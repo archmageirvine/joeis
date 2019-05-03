@@ -3,7 +3,7 @@ package irvine.oeis.a291;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A291715 <code>a(n) = 420*(preferred</code> ratios of room width / height in Alberti's Ten Books on <code>Architecture)</code>.
+ * A291715 <code>a(n) = 420*(preferred</code> ratios of room width / height in Alberti's Ten Books on Architecture).
  * @author Georg Fischer
  */
 public class A291715 extends FiniteSequence {

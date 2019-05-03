@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000120 <code>1's-counting</code> sequence: number of <code>1</code>'s in binary expansion of <code>n (or</code> the binary weight of <code>n)</code>.
+ * A000120 <code>1's-counting</code> sequence: number of <code>1</code>'s in binary expansion of <code>n</code> (or the binary weight of <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A000120 implements Sequence {

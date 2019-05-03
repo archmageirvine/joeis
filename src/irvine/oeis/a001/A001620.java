@@ -5,7 +5,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A001620 Decimal expansion of Euler's constant (or the <code>Euler-Mascheroni constant)</code>, gamma.
+ * A001620 Decimal expansion of Euler's constant (or the <code>Euler-Mascheroni</code> constant), gamma.
  * @author Sean A. Irvine
  */
 public class A001620 extends DecimalExpansionSequence {

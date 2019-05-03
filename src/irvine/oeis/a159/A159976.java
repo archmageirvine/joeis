@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A159976 Denominators <code>(with multiplicity)</code> of proper solutions up to 3-digit denominators of fractions with anomalous cancellation.
+ * A159976 Denominators (with multiplicity) of proper solutions up to 3-digit denominators of fractions with anomalous cancellation.
  * @author Georg Fischer
  */
 public class A159976 extends FiniteSequence {

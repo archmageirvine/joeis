@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229792 Numbers n with the property that there exists an m such that n is the sum of m distinct nonzero digits <code>(with 1&lt;m&lt;10)</code> in a unique way.
+ * A229792 Numbers n with the property that there exists an m such that n is the sum of m distinct nonzero digits (with <code>1&lt;m&lt;10)</code> in a unique way.
  * @author Georg Fischer
  */
 public class A229792 extends FiniteSequence {

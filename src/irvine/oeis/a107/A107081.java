@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107081 Add <code>12, 3, 45, 67, 89 (note</code> the difference sequence uses each digit <code>once)</code>. Start with 1 for no particular reason; would seem more natural to start with 0.
+ * A107081 Add <code>12, 3, 45, 67, 89</code> (note the difference sequence uses each digit once). Start with 1 for no particular reason; would seem more natural to start with 0.
  * @author Georg Fischer
  */
 public class A107081 extends FiniteSequence {

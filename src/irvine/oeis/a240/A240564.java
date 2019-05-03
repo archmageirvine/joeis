@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A240564 A number <code>(where A=1, B=2...)</code> for every letter in the capitalized alphabet that does not have a curved line in the letter.
+ * A240564 A number (where <code>A=1, B=2...)</code> for every letter in the capitalized alphabet that does not have a curved line in the letter.
  * @author Georg Fischer
  */
 public class A240564 extends FiniteSequence {

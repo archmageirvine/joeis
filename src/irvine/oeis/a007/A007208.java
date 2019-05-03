@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.German;
 
 /**
- * A007208 Number of letters in <code>n (in German)</code>.
+ * A007208 Number of letters in <code>n</code> (in German).
  * @author Sean A. Irvine
  */
 public class A007208 implements Sequence {

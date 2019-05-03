@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008991 Numerators of coefficients in expansion of <code>sqrt(sin(x)/x) (even</code> powers <code>only)</code>.
+ * A008991 Numerators of coefficients in expansion of <code>sqrt(sin(x)/x)</code> (even powers only).
  * @author Sean A. Irvine
  */
 public class A008991 implements Sequence {

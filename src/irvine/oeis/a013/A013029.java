@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013029 E.g.f. <code>(in x^2)</code> is <code>arctan(sinh(x)+sin(x))</code>.
+ * A013029 E.g.f. (in <code>x^2)</code> is <code>arctan(sinh(x)+sin(x))</code>.
  * @author Sean A. Irvine
  */
 public class A013029 implements Sequence {

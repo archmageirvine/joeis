@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A151411 Weight distribution of <code>[128,36,32]</code> extended binary primitive BCH <code>(or XBCH)</code> code.
+ * A151411 Weight distribution of <code>[128,36,32]</code> extended binary primitive BCH (or XBCH) code.
  * @author Georg Fischer
  */
 public class A151411 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113819 Circular permutation of the numbers 1 to <code>66 (the</code> least possible) such that the sum of any two consecutive numbers is a multidigit palindrome.
+ * A113819 Circular permutation of the numbers 1 to <code>66</code> (the least possible) such that the sum of any two consecutive numbers is a multidigit palindrome.
  * @author Georg Fischer
  */
 public class A113819 extends FiniteSequence {

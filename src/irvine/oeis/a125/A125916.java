@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125916 Sprague-Grundy values for octal game <code>.15 (Guiles)</code>.
+ * A125916 Sprague-Grundy values for octal game <code>.15</code> (Guiles).
  * @author Georg Fischer
  */
 public class A125916 extends LinearRecurrence {

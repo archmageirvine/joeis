@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069133 Centered <code>20-gonal (or icosagonal)</code> numbers.
+ * A069133 Centered <code>20-gonal</code> (or icosagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A069133 extends LinearRecurrence {

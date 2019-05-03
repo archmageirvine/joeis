@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236333 The <code>(n-2)-th (n&gt;=3)</code> triple of terms gives coefficients of double trinomial <code>P_n(x) = ((n-2)^2*x^2 + n*x + 2)/2 (see comment)</code>.
+ * A236333 The <code>(n-2)-th (n&gt;=3)</code> triple of terms gives coefficients of double trinomial <code>P_n(x) = ((n-2)^2*x^2 + n*x + 2)/2</code> (see comment).
  * @author Sean A. Irvine
  */
 public class A236333 extends LinearRecurrence {

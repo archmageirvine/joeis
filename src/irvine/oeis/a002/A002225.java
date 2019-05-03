@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A002225 <code>a(n)</code> is the smallest prime p such that each of the first n primes has three cube roots mod p.
+ * A002225 <code>a(n)</code> is the smallest prime p such that each of the first n primes has three cube roots <code>mod</code> p.
  * @author Sean A. Irvine
  */
 public class A002225 implements Sequence {

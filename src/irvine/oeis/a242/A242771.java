@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242771 Number of integer points in a certain quadrilateral scaled by a factor of <code>n (another version)</code>.
+ * A242771 Number of integer points in a certain quadrilateral scaled by a factor of <code>n</code> (another version).
  * @author Sean A. Irvine
  */
 public class A242771 extends LinearRecurrence {

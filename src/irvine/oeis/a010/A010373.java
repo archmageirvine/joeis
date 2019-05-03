@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000598;
 
 /**
- * A010373 Number of unrooted quartic trees with <code>2n (unlabeled)</code> nodes and possessing a bicentroid; number of 2n-carbon alkanes <code>C(2n)H(4n+2)</code> with a bicentroid, ignoring stereoisomers.
+ * A010373 Number of unrooted quartic trees with <code>2n</code> (unlabeled) nodes and possessing a bicentroid; number of 2n-carbon alkanes <code>C(2n)H(4n+2)</code> with a bicentroid, ignoring stereoisomers.
  * @author Sean A. Irvine
  */
 public class A010373 extends A000598 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A018847 Strobogrammatic primes: the same upside down <code>(calculator-style numerals)</code>.
+ * A018847 Strobogrammatic primes: the same upside down <code>(calculator-style</code> numerals).
  * @author Sean A. Irvine
  */
 public class A018847 extends A000040 {

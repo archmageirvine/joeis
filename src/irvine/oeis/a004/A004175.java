@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A004175 Triangle of coefficients of Euler polynomials <code>2^n*E_n(x) (exponents</code> in decreasing <code>order)</code>.
+ * A004175 Triangle of coefficients of Euler polynomials <code>2^n*E_n(x)</code> (exponents in decreasing order).
  * @author Sean A. Irvine
  */
 public class A004175 extends A004172 {

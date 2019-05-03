@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A164058 Number of curves in n-th letter of capitalized English alphabet (A being <code>first)</code>.
+ * A164058 Number of curves in n-th letter of capitalized English alphabet <code>(A</code> being first).
  * @author Georg Fischer
  */
 public class A164058 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172415 Numbers equal to the product of (each of its decimal digits, plus the number of decimal <code>digits)</code>.
+ * A172415 Numbers equal to the product of (each of its decimal digits, plus the number of decimal digits).
  * @author Georg Fischer
  */
 public class A172415 extends FiniteSequence {

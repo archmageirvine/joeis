@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216113 The hyper-Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng <code>references)</code>.
+ * A216113 The hyper-Wiener index of the meta-polyphenyl chain with n hexagons (see the Dou et al. and the Deng references).
  * @author Sean A. Irvine
  */
 public class A216113 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049442 Numbers n such that sum of first n consecutive prime numbers is pandigital (includes all 10 digits exactly <code>once)</code>.
+ * A049442 Numbers n such that sum of first n consecutive prime numbers is pandigital (includes all 10 digits exactly once).
  * @author Georg Fischer
  */
 public class A049442 extends FiniteSequence {

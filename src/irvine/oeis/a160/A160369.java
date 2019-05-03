@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160369 Largest base <code>10 near-repdigit (all</code> but one digit alike) prime with digit n repeated n times <code>(or 0</code>, if no such prime <code>exists)</code>.
+ * A160369 Largest base <code>10 near-repdigit</code> (all but one digit alike) prime with digit n repeated n times (or 0, if no such prime exists).
  * @author Georg Fischer
  */
 public class A160369 extends FiniteSequence {

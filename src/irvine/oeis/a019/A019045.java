@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019045 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite PAR = Partheite <code>Ca8[ Al16Si16O60(OH)8 ] . 16 H2O</code>.
+ * A019045 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite PAR = Partheite <code>Ca8[ Al16Si16O60(OH)8 ] . 16 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019045 extends A018940 {

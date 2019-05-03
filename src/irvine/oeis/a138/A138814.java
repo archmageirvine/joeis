@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138814 Divisors of <code>4064 (half</code> the 4th perfect number).
+ * A138814 Divisors of <code>4064</code> (half the 4th perfect number).
  * @author Georg Fischer
  */
 public class A138814 extends FiniteSequence {

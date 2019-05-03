@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A003672 Decimal expansion of electron mass <code>(mass units)</code>.
+ * A003672 Decimal expansion of electron mass (mass units).
  * @author Sean A. Irvine
  */
 public class A003672 extends DoubleDecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059672 Sum of binary numbers with <code>n 1</code>'s and one <code>(possibly leading) 0</code>.
+ * A059672 Sum of binary numbers with <code>n 1</code>'s and one (possibly leading) 0.
  * @author Sean A. Irvine
  */
 public class A059672 extends LinearRecurrence {

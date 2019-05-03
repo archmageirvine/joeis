@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A087622 Order of letters on Dvorak typewriter <code>(or computer)</code> keyboard.
+ * A087622 Order of letters on Dvorak typewriter (or computer) keyboard.
  * @author Georg Fischer
  */
 public class A087622 extends FiniteSequence {

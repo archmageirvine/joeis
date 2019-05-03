@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A004729 Divisors of <code>2^32 - 1 (for a(1)</code> to <code>a(31)</code>, the 31 regular polygons with an odd number of sides constructible with ruler and <code>compass)</code>.
+ * A004729 Divisors of <code>2^32 - 1</code> (for <code>a(1)</code> to <code>a(31)</code>, the 31 regular polygons with an odd number of sides constructible with ruler and compass).
  * @author Sean A. Irvine
  */
 public class A004729 extends FiniteSequence {

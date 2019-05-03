@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A147314 Weight distribution of <code>[512,46,128] Reed-Muller (or RM)</code> code.
+ * A147314 Weight distribution of <code>[512,46,128] Reed-Muller</code> (or RM) code.
  * @author Georg Fischer
  */
 public class A147314 extends FiniteSequence {

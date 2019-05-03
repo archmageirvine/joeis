@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123304 Number of edge covers for the circular ladder <code>(n-prism graph) C_n X K_2</code>.
+ * A123304 Number of edge covers for the circular ladder <code>(n-prism</code> graph) <code>C_n X K_2</code>.
  * @author Sean A. Irvine
  */
 public class A123304 extends LinearRecurrence {

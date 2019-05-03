@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095889 Number of permutations of [n] with exactly 3 descents which avoid the pattern 4321.
+ * A095889 Number of permutations of <code>[n]</code> with exactly 3 descents which avoid the pattern 4321.
  * @author Sean A. Irvine
  */
 public class A095889 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131630 Consider the AES <code>(or Rijndael) S-boxes</code> and concatenate i and <code>sbox[i]</code> for all i. Then <code>a(n)</code> is the number of these pairs at Hamming distance n from <code>0, sbox[0]</code>.
+ * A131630 Consider the AES (or Rijndael) S-boxes and concatenate i and <code>sbox[i]</code> for all i. Then <code>a(n)</code> is the number of these pairs at Hamming distance n from <code>0, sbox[0]</code>.
  * @author Georg Fischer
  */
 public class A131630 extends FiniteSequence {

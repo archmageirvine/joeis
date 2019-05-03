@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002215 Number of polyhexes with n hexagons, having reflectional symmetry (see Harary and Read for precise <code>definition)</code>.
+ * A002215 Number of polyhexes with n hexagons, having reflectional symmetry (see Harary and Read for precise definition).
  * @author Sean A. Irvine
  */
 public class A002215 implements Sequence {

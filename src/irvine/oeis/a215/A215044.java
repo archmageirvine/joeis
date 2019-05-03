@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215044 <code>a(n) = F(2*n)^5</code> with <code>F=A000045 (Fibonacci</code> numbers).
+ * A215044 <code>a(n) = F(2*n)^5</code> with <code>F=A000045</code> (Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A215044 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005666 Tower of Hanoi with 3 pegs and cyclic moves only <code>(counterclockwise)</code>.
+ * A005666 Tower of Hanoi with 3 pegs and cyclic moves only (counterclockwise).
  * @author Sean A. Irvine
  */
 public class A005666 extends A005665 {

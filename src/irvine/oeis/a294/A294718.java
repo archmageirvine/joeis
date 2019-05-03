@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294718 Number of permutations of [n] avoiding <code>{4231, 2134, 1243}</code>.
+ * A294718 Number of permutations of <code>[n]</code> avoiding <code>{4231, 2134, 1243}</code>.
  * @author Georg Fischer
  */
 public class A294718 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007101 Number of labeled trivalent <code>(or cubic)</code> cyclically 4-connected graphs with <code>2n</code> nodes.
+ * A007101 Number of labeled trivalent (or cubic) cyclically 4-connected graphs with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A007101 extends MemoryFunction1<Z> implements Sequence {

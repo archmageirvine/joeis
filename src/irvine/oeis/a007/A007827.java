@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000669;
 
 /**
- * A007827 Number of homeomorphically irreducible <code>(or series-reduced)</code> trees with n pendant nodes, or continua with <code>n non-cut</code> points, or leaves.
+ * A007827 Number of homeomorphically irreducible (or <code>series-reduced)</code> trees with n pendant nodes, or continua with <code>n non-cut</code> points, or leaves.
  * @author Sean A. Irvine
  */
 public class A007827 extends A000669 {

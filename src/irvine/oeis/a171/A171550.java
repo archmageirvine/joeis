@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171550 Numbers n with property that decimal expansion of <code>2^n+3^n</code> contains no pair of neighbor equal digits <code>(probably finite)</code>.
+ * A171550 Numbers n with property that decimal expansion of <code>2^n+3^n</code> contains no pair of neighbor equal digits (probably finite).
  * @author Georg Fischer
  */
 public class A171550 extends FiniteSequence {

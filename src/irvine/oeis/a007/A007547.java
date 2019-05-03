@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007547 Number of steps to compute n-th prime in PRIMEGAME <code>(slow version)</code>.
+ * A007547 Number of steps to compute n-th prime in PRIMEGAME (slow version).
  * @author Sean A. Irvine
  */
 public class A007547 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002110 Primorial numbers <code>(first definition)</code>: product of first n primes. Sometimes written <code>prime(n)#</code>.
+ * A002110 Primorial numbers (first <code>definition)</code>: product of first n primes. Sometimes written <code>prime(n)#</code>.
  * @author Sean A. Irvine
  */
 public class A002110 implements Sequence {

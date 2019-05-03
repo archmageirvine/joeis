@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001745 Numbers such that at least one digit contains a loop <code>(version 2)</code>. Also called "holey" or "holy" numbers.
+ * A001745 Numbers such that at least one digit contains a loop (version <code>2)</code>. Also called "holey" or "holy" numbers.
  * @author Sean A. Irvine
  */
 public class A001745 implements Sequence {

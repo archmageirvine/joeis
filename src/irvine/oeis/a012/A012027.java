@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012027 E.g.f. <code>cosh(sin(arctan(x))) = cosh(x/sqrt(1+x^2)) (even</code> powers <code>only)</code>.
+ * A012027 E.g.f. <code>cosh(sin(arctan(x))) = cosh(x/sqrt(1+x^2))</code> (even powers only).
  * @author Sean A. Irvine
  */
 public class A012027 implements Sequence {

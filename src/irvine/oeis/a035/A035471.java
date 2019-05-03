@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035471 Coordination sequence for lattice <code>D*_4 (with</code> edges defined by <code>l_1</code> norm <code>= 1)</code>.
+ * A035471 Coordination sequence for lattice <code>D*_4</code> (with edges defined by <code>l_1</code> norm <code>= 1)</code>.
  * @author Georg Fischer
  */
 public class A035471 extends LinearRecurrence {

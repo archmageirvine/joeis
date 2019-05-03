@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008774 Theta series of <code>(probably nonexistent)</code> exceptionally good 16-dimensional sphere packing.
+ * A008774 Theta series of (probably nonexistent) exceptionally good 16-dimensional sphere packing.
  * @author Sean A. Irvine
  */
 public class A008774 implements Sequence {

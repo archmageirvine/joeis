@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A234288 Number of letters and blanks in Super Scrabble <code>(English version)</code>.
+ * A234288 Number of letters and blanks in Super Scrabble (English version).
  * @author Georg Fischer
  */
 public class A234288 extends FiniteSequence {

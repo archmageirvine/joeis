@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085820 Possible two-digit endings of primes (with leading <code>zeros)</code>.
+ * A085820 Possible two-digit endings of primes (with leading zeros).
  * @author Georg Fischer
  */
 public class A085820 extends FiniteSequence {

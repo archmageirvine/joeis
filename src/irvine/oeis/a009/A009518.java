@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009518 E.g.f. <code>sin(tan(x)^2) (even</code> powers <code>only)</code>.
+ * A009518 E.g.f. <code>sin(tan(x)^2)</code> (even powers only).
  * @author Sean A. Irvine
  */
 public class A009518 implements Sequence {

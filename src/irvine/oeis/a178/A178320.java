@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178320 INVERT transform of <code>A008805 (triangular</code> numbers with <code>repeats)</code>.
+ * A178320 INVERT transform of <code>A008805</code> (triangular numbers with repeats).
  * @author Sean A. Irvine
  */
 public class A178320 extends LinearRecurrence {

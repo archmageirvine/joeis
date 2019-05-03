@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A147876 Smallest nonnegative integer containing the n-th letter of the alphabet <code>(in French)</code>, or -1 if no such number exists.
+ * A147876 Smallest nonnegative integer containing the n-th letter of the alphabet (in French), or -1 if no such number exists.
  * @author Georg Fischer
  */
 public class A147876 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001102 Numbers k such that k <code>/ (sum</code> of digits of k) is a square.
+ * A001102 Numbers k such that k <code>/</code> (sum of digits of <code>k)</code> is a square.
  * @author Sean A. Irvine
  */
 public class A001102 implements Sequence {

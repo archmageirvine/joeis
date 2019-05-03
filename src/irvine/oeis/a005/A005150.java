@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a045.A045918;
 
 /**
- * A005150 Look and Say sequence: describe the previous <code>term! (method A -</code> initial term is <code>1)</code>.
+ * A005150 Look and Say sequence: describe the previous <code>term!</code> (method <code>A -</code> initial term is <code>1)</code>.
  * @author Sean A. Irvine
  */
 public class A005150 implements Sequence {

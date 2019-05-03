@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A006352 Coefficients in expansion of Eisenstein series <code>E_2 (also</code> called <code>E_1</code> or <code>G_2)</code>.
+ * A006352 Coefficients in expansion of Eisenstein series <code>E_2</code> (also called <code>E_1</code> or <code>G_2)</code>.
  * @author Sean A. Irvine
  */
 public class A006352 extends A000203 {

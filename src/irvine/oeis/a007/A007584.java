@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007584 <code>9-gonal (or enneagonal)</code> pyramidal numbers: <code>a(n) = n*(n+1)*(7*n-4)/6</code>.
+ * A007584 <code>9-gonal</code> (or enneagonal) pyramidal numbers: <code>a(n) = n*(n+1)*(7*n-4)/6</code>.
  * @author Sean A. Irvine
  */
 public class A007584 implements Sequence {

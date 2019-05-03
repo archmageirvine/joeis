@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005166 <code>a(0) = 1; a(n) = (1 + a(0)^3 +</code> ... <code>+ a(n-1)^3)/n (not</code> always <code>integral!)</code>.
+ * A005166 <code>a(0) = 1; a(n) = (1 + a(0)^3 +</code> ... <code>+ a(n-1)^3)/n</code> (not always <code>integral!)</code>.
  * @author Sean A. Irvine
  */
 public class A005166 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054451 Third column of triangle <code>A054450 (partial</code> row sums of unsigned Chebyshev triangle <code>A049310)</code>.
+ * A054451 Third column of triangle <code>A054450</code> (partial row sums of unsigned Chebyshev triangle <code>A049310)</code>.
  * @author Sean A. Irvine
  */
 public class A054451 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a013;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A013582 Number of positions in game "Connect Four" (played on usual <code>6-row, 7-column board)</code> after n moves, up to reflection.
+ * A013582 Number of positions in game "Connect Four" (played on usual <code>6-row, 7-column</code> board) after n moves, up to reflection.
  * @author Sean A. Irvine
  */
 public class A013582 extends FiniteSequence {

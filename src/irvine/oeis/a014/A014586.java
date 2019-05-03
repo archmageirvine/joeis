@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A014586 Nim-Grundy function for <code>Take-a-Square (or Subtract-a-Square)</code> game.
+ * A014586 Nim-Grundy function for <code>Take-a-Square</code> (or <code>Subtract-a-Square)</code> game.
  * @author Sean A. Irvine
  */
 public class A014586 extends MemorySequence {

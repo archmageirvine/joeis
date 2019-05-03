@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005802 Number of permutations in <code>S_n</code> with longest increasing subsequence of length <code>&lt;= 3 (i.e., 1234-avoiding permutations)</code>; vexillary permutations <code>(i.e., 2143-avoiding)</code>.
+ * A005802 Number of permutations in <code>S_n</code> with longest increasing subsequence of length <code>&lt;= 3 (i.e., 1234-avoiding</code> permutations); vexillary permutations <code>(i.e., 2143-avoiding)</code>.
  * @author Sean A. Irvine
  */
 public class A005802 implements Sequence {

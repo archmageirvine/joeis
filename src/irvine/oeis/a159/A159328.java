@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159328 Transform of 1 by the <code>T_{1,1}</code> transformation <code>(see link)</code>.
+ * A159328 Transform of 1 by the <code>T_{1,1}</code> transformation (see link).
  * @author Sean A. Irvine
  */
 public class A159328 extends LinearRecurrence {

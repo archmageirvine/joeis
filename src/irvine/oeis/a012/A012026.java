@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012026 Expansion of e.g.f. <code>tanh(sin(arctan(x))) = tanh(x/sqrt(1+x^2)) (odd</code> powers <code>only)</code>.
+ * A012026 Expansion of e.g.f. <code>tanh(sin(arctan(x))) = tanh(x/sqrt(1+x^2))</code> (odd powers only).
  * @author Sean A. Irvine
  */
 public class A012026 implements Sequence {

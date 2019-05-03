@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271105 Square 1000-gonal numbers (or square chiliagonal numbers): numbers that are square and chiliagonal <code>(or 1000-gonal)</code>.
+ * A271105 Square 1000-gonal numbers (or square chiliagonal <code>numbers)</code>: numbers that are square and chiliagonal (or <code>1000-gonal)</code>.
  * @author Sean A. Irvine
  */
 public class A271105 extends LinearRecurrence {

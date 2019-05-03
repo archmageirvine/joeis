@@ -1,7 +1,7 @@
 package irvine.oeis.a019;
 
 /**
- * A019916 Decimal expansion of <code>tan(Pi/10) (angle</code> of <code>18 degrees)</code>.
+ * A019916 Decimal expansion of <code>tan(Pi/10)</code> (angle of <code>18</code> degrees).
  * @author Sean A. Irvine
  */
 public class A019916 extends A019899 {

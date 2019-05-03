@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A003675 Decimal expansion of neutron mass <code>(mass units)</code>.
+ * A003675 Decimal expansion of neutron mass (mass units).
  * @author Sean A. Irvine
  */
 public class A003675 extends DoubleDecimalExpansionSequence {

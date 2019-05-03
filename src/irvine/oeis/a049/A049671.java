@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049671 <code>a(n) = (F(n) + F(4*n))/2</code>, where <code>F=A000045 (the</code> Fibonacci sequence).
+ * A049671 <code>a(n) = (F(n) + F(4*n))/2</code>, where <code>F=A000045</code> (the Fibonacci sequence).
  * @author Sean A. Irvine
  */
 public class A049671 extends LinearRecurrence {

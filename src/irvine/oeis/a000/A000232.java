@@ -8,7 +8,7 @@ import irvine.util.array.DynamicLongArray;
 import java.util.ArrayList;
 
 /**
- * A000232 Construct a triangle as in <code>A036262</code>. Sequence is one less than the position of the first number larger than 2 in the n-th row <code>(n-th difference)</code>.
+ * A000232 Construct a triangle as in <code>A036262</code>. Sequence is one less than the position of the first number larger than 2 in the n-th row <code>(n-th</code> difference).
  * @author Sean A. Irvine
  */
 public class A000232 implements Sequence {

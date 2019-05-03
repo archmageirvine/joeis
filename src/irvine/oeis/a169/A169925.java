@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169925 Integer values of <code>4*n-40+360/(n+9) (see A169924)</code>.
+ * A169925 Integer values of <code>4*n-40+360/(n+9)</code> (see <code>A169924)</code>.
  * @author Georg Fischer
  */
 public class A169925 extends FiniteSequence {

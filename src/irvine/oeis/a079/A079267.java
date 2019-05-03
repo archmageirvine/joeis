@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A079267 <code>d(n,s) =</code> number of perfect matchings on <code>{1, 2</code>, ..., n} with s short pairs.
+ * A079267 <code>d(n,s) =</code> number of perfect matchings on <code>{1, 2</code>, ..., <code>n}</code> with s short pairs.
  * @author Sean A. Irvine
  */
 public class A079267 extends MemoryFunction2<Integer, Z> implements Sequence {

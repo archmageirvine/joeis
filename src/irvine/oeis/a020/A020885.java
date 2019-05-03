@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020885 Ordered areas (divided by <code>6)</code> of primitive Pythagorean triangles (with multiple <code>entries)</code>.
+ * A020885 Ordered areas (divided by <code>6)</code> of primitive Pythagorean triangles (with multiple entries).
  * @author Sean A. Irvine
  */
 public class A020885 implements Sequence {

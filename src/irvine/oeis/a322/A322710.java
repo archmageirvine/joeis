@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322710 Negative discriminants with form class number <code>2 (negated)</code>.
+ * A322710 Negative discriminants with form class number <code>2</code> (negated).
  * @author Georg Fischer
  */
 public class A322710 extends FiniteSequence {

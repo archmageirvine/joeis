@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A120348 Number of labeled <code>simply-rooted 2-trees</code> with n labeled vertices <code>(i.e., n+2</code> vertices altogether; a <code>simply-rooted 2-tree</code> is an externally rooted 2-tree whose root edge belongs to exactly one <code>triangle)</code>.
+ * A120348 Number of labeled <code>simply-rooted 2-trees</code> with n labeled vertices <code>(i.e., n+2</code> vertices altogether; a <code>simply-rooted 2-tree</code> is an externally rooted 2-tree whose root edge belongs to exactly one triangle).
  * @author Sean A. Irvine
  */
 public class A120348 implements Sequence {

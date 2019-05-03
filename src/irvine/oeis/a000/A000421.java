@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000421 Number of isomorphism classes of connected <code>3-regular (trivalent, cubic)</code> loopless multigraphs of order <code>2n</code>.
+ * A000421 Number of isomorphism classes of connected <code>3-regular (trivalent</code>, cubic) loopless multigraphs of order <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A000421 implements Sequence, GraphProcessor {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A024765 Every prefix prime in base <code>5 (written</code> in base <code>5)</code>.
+ * A024765 Every prefix prime in base <code>5</code> (written in base <code>5)</code>.
  * @author Georg Fischer
  */
 public class A024765 extends FiniteSequence {

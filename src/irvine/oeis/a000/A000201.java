@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A000201 Lower Wythoff sequence (a Beatty sequence): <code>a(n) = floor(n*phi)</code>, where phi <code>= (1+sqrt(5))/2 = A001622</code>.
+ * A000201 Lower Wythoff sequence <code>(a</code> Beatty <code>sequence): a(n) = floor(n*phi)</code>, where phi <code>= (1+sqrt(5))/2 = A001622</code>.
  * @author Sean A. Irvine
  */
 public class A000201 implements Sequence {

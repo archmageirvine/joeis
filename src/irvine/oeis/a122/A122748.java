@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000085;
 
 /**
- * A122748 Bishops on an <code>n X n</code> board (see Robinson paper for <code>details)</code>.
+ * A122748 Bishops on an <code>n X n</code> board (see Robinson paper for details).
  * @author Sean A. Irvine
  */
 public class A122748 extends A000085 {

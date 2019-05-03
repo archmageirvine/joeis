@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242063 Analog clock times where the minute hand is on the hour hand (in hhmm <code>format)</code>.
+ * A242063 Analog clock times where the minute hand is on the hour hand (in hhmm format).
  * @author Georg Fischer
  */
 public class A242063 extends FiniteSequence {

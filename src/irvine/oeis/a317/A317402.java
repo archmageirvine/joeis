@@ -3,7 +3,7 @@ package irvine.oeis.a317;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A317402 Number of distinct (up to rotation and <code>reflection) tic-tac-toe</code> positions with n tokens which allow a winning strategy for O.
+ * A317402 Number of distinct (up to rotation and reflection) <code>tic-tac-toe</code> positions with n tokens which allow a winning strategy for O.
  * @author Georg Fischer
  */
 public class A317402 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a255.A255487;
 
 /**
- * A068870 Number of polyhypercubes or 4-dimensional polyominoes with n cells <code>(regarding mirror-images</code> as <code>identical)</code>.
+ * A068870 Number of polyhypercubes or 4-dimensional polyominoes with n cells (regarding mirror-images as identical).
  * @author Sean A. Irvine
  */
 public class A068870 extends A255487 {

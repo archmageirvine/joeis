@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001608 Perrin sequence (or Ondrej Such sequence): <code>a(n) = a(n-2) + a(n-3)</code> with <code>a(0) = 3, a(1) = 0, a(2) = 2</code>.
+ * A001608 Perrin sequence (or Ondrej Such <code>sequence): a(n) = a(n-2) + a(n-3)</code> with <code>a(0) = 3, a(1) = 0, a(2) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A001608 implements Sequence {

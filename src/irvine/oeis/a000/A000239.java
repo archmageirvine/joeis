@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000239 One-half of number of permutations of [n] with exactly one run of adjacent symbols differing by 1.
+ * A000239 One-half of number of permutations of <code>[n]</code> with exactly one run of adjacent symbols differing by 1.
  * @author Sean A. Irvine
  */
 public class A000239 extends A000130 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002467 The game of Mousetrap with n cards <code>(given n</code> letters and n envelopes, how many ways are there to fill the envelopes so that at least one letter goes into its right <code>envelope?)</code>.
+ * A002467 The game of Mousetrap with n cards (given n letters and n envelopes, how many ways are there to fill the envelopes so that at least one letter goes into its right <code>envelope?)</code>.
  * @author Sean A. Irvine
  */
 public class A002467 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118098 Numbers that require three strokes when written in Roman numerals <code>(excluding serifs)</code>. III IV VI IX XI LI XC CII CV CX CL.
+ * A118098 Numbers that require three strokes when written in Roman numerals (excluding serifs). III IV VI IX XI LI XC CII CV CX CL.
  * @author Georg Fischer
  */
 public class A118098 extends FiniteSequence {

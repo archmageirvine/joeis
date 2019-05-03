@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019084 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite BRE = Brewsterite <code>(Sr,Ba)2 [ Al4Si12O32 ] . 10 H2O</code>.
+ * A019084 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite BRE = Brewsterite <code>(Sr,Ba)2 [ Al4Si12O32 ] . 10 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019084 extends A018940 {

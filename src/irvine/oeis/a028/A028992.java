@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028992 Even <code>9-gonal (or enneagonal)</code> numbers.
+ * A028992 Even <code>9-gonal</code> (or enneagonal) numbers.
  * @author Sean A. Irvine
  */
 public class A028992 extends LinearRecurrence {

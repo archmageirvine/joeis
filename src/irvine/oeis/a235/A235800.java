@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235800 Length of n-th vertical line segment from left to right in a diagram of a two-dimensional version of the Collatz <code>(or 3x + 1)</code> problem.
+ * A235800 Length of n-th vertical line segment from left to right in a diagram of a two-dimensional version of the Collatz (or <code>3x + 1)</code> problem.
  * @author Sean A. Irvine
  */
 public class A235800 extends LinearRecurrence {

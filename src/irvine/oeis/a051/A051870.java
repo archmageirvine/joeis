@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051870 <code>18-gonal (or octadecagonal)</code> numbers: <code>a(n) = n*(8*n-7)</code>.
+ * A051870 <code>18-gonal</code> (or octadecagonal) numbers: <code>a(n) = n*(8*n-7)</code>.
  * @author Sean A. Irvine
  */
 public class A051870 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104449 The Pibonacci numbers <code>(a Fibonacci-type</code> sequence): each term is the sum of the two previous terms.
+ * A104449 The Pibonacci numbers <code>(a Fibonacci-type sequence)</code>: each term is the sum of the two previous terms.
  * @author Sean A. Irvine
  */
 public class A104449 extends LinearRecurrence {

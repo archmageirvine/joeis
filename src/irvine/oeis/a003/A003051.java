@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * A003051 Number of inequivalent sublattices of index n in hexagonal lattice (two sublattices are equivalent if one can be rotated or reflected to give the <code>other)</code>.
+ * A003051 Number of inequivalent sublattices of index n in hexagonal lattice (two sublattices are equivalent if one can be rotated or reflected to give the other).
  * @author Sean A. Irvine
  */
 public class A003051 implements Sequence {

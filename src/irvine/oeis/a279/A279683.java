@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A279683 Number of move operations required to sort all permutations of [n] by MTF sort.
+ * A279683 Number of move operations required to sort all permutations of <code>[n]</code> by MTF sort.
  * @author Sean A. Irvine
  */
 public class A279683 implements Sequence {

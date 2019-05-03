@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015030 q-Catalan numbers <code>(binomial version)</code> for <code>q=2</code>.
+ * A015030 q-Catalan numbers (binomial version) for <code>q=2</code>.
  * @author Sean A. Irvine
  */
 public class A015030 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095921 Intersection of <code>A002182 (highly</code> composite numbers) and <code>A003418 (LCMs</code> of first n positive <code>integers)</code>.
+ * A095921 Intersection of <code>A002182</code> (highly composite numbers) and <code>A003418</code> (LCMs of first n positive integers).
  * @author Georg Fischer
  */
 public class A095921 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015908 First odd k&gt;n such that k <code>| n^k + n (or 0</code> if <code>n=2^m)</code>.
+ * A015908 First odd k&gt;n such that k <code>| n^k + n</code> (or 0 if <code>n=2^m)</code>.
  * @author Sean A. Irvine
  */
 public class A015908 implements Sequence {

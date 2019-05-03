@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302946 Number of minimal <code>(and minimum)</code> total dominating sets in the 2n-crossed prism graph.
+ * A302946 Number of minimal (and minimum) total dominating sets in the 2n-crossed prism graph.
  * @author Georg Fischer
  */
 public class A302946 extends LinearRecurrence {

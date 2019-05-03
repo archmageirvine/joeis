@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269440 Alternating sum of <code>9-gonal (or decagonal)</code> pyramidal numbers.
+ * A269440 Alternating sum of <code>9-gonal</code> (or decagonal) pyramidal numbers.
  * @author Sean A. Irvine
  */
 public class A269440 extends LinearRecurrence {

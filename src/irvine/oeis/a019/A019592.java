@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A019592 From George Gilbert's marks problem: jumping 3 marks at a time <code>(initial positions)</code>.
+ * A019592 From George Gilbert's marks problem: jumping 3 marks at a time (initial positions).
  * @author Sean A. Irvine
  */
 public class A019592 implements Sequence {

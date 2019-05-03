@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.factorial.MemoryFactorial;
 
 /**
- * A002297 Numerator of <code>(2/Pi)*Integral_{0..inf} (sin x / x)^n</code> dx.
+ * A002297 Numerator of <code>(2/Pi)*Integral_{0..inf}</code> (sin <code>x / x)^n</code> dx.
  * @author Sean A. Irvine
  */
 public class A002297 implements Sequence {

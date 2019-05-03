@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049683 <code>a(n) = (L(6*n) - 2)/16</code>, where L <code>= A000032 (the</code> Lucas numbers).
+ * A049683 <code>a(n) = (L(6*n) - 2)/16</code>, where L <code>= A000032</code> (the Lucas numbers).
  * @author Sean A. Irvine
  */
 public class A049683 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A317714 Chessboard rectangles sequence <code>(see Comments)</code>, also <code>A037270</code> interleaved with <code>A163102</code>.
+ * A317714 Chessboard rectangles sequence (see Comments), also <code>A037270</code> interleaved with <code>A163102</code>.
  * @author Georg Fischer
  */
 public class A317714 extends LinearRecurrence {

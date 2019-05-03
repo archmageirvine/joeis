@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007745 <code>a(n) = n</code> OR <code>n^2 (applied</code> to binary <code>expansions)</code>.
+ * A007745 <code>a(n) = n</code> OR <code>n^2</code> (applied to binary expansions).
  * @author Sean A. Irvine
  */
 public class A007745 implements Sequence {

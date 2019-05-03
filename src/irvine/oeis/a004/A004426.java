@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004426 Arithmetic mean of digits of <code>n (rounded down)</code>.
+ * A004426 Arithmetic mean of digits of <code>n</code> (rounded down).
  * @author Sean A. Irvine
  */
 public class A004426 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A111999 A triangle that converts certain binomials into triangle <code>A008276 (diagonals</code> of signed <code>Stirling1</code> triangle <code>A008275)</code>.
+ * A111999 A triangle that converts certain binomials into triangle <code>A008276</code> (diagonals of signed <code>Stirling1</code> triangle <code>A008275)</code>.
  * @author Sean A. Irvine
  */
 public class A111999 extends MemoryFunction2<Long, Z> implements Sequence {

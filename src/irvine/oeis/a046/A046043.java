@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A046043 Autobiographical numbers (or curious numbers): numbers <code>n = x0 x1 x2...x9</code> such that xi is the number of digits equal to i in n.
+ * A046043 Autobiographical numbers (or curious <code>numbers)</code>: numbers <code>n = x0 x1 x2...x9</code> such that xi is the number of digits equal to i in n.
  * @author Georg Fischer
  */
 public class A046043 extends FiniteSequence {

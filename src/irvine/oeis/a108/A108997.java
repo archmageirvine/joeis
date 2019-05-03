@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108997 Number of vertices n steps away from a given vertex on the regular <code>120-cell (hecatonicosachoron)</code>.
+ * A108997 Number of vertices n steps away from a given vertex on the regular <code>120-cell</code> (hecatonicosachoron).
  * @author Georg Fischer
  */
 public class A108997 extends FiniteSequence {

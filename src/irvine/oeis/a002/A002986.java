@@ -22,7 +22,7 @@ import irvine.oeis.Sequence;
 import irvine.util.CliFlags;
 
 /**
- * A002986 Number of non-cyclic hydrocarbons with n carbon atoms <code>(excluding stereoisomers)</code>.
+ * A002986 Number of non-cyclic hydrocarbons with n carbon atoms (excluding stereoisomers).
  * @author Sean A. Irvine
  */
 public class A002986 implements Sequence {

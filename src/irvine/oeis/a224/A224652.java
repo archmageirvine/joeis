@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006219;
 
 /**
- * A224652 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of n elements with k the (smallest) header <code>(first element)</code> of the longest descending subsequence.
+ * A224652 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of n elements with k the (smallest) header (first element) of the longest descending subsequence.
  * @author Sean A. Irvine
  */
 public class A224652 extends A006219 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000164 Number of partitions of n into 3 squares (allowing part <code>zero)</code>.
+ * A000164 Number of partitions of n into 3 squares (allowing part zero).
  * @author Sean A. Irvine
  */
 public class A000164 implements Sequence {

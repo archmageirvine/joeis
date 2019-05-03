@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A014192 Palindromes in base <code>4 (written</code> in base <code>10)</code>.
+ * A014192 Palindromes in base <code>4</code> (written in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A014192 implements Sequence {

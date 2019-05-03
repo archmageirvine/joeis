@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109065 Numerator of the fraction due in month n of the total interest for a one-year installment loan based on the Rule of <code>78s (each</code> denominator is <code>78)</code>.
+ * A109065 Numerator of the fraction due in month n of the total interest for a one-year installment loan based on the Rule of <code>78s</code> (each denominator is <code>78)</code>.
  * @author Georg Fischer
  */
 public class A109065 extends FiniteSequence {

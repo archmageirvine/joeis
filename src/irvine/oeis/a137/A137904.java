@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137904 Rows <code>1, 3, 5, 7</code> of <code>Mendeleyev-Seaborg (extended</code> to <code>32 columns)</code> periodic table elements.
+ * A137904 Rows <code>1, 3, 5, 7</code> of <code>Mendeleyev-Seaborg</code> (extended to <code>32</code> columns) periodic table elements.
  * @author Georg Fischer
  */
 public class A137904 extends FiniteSequence {

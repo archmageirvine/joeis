@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099372 Squares of <code>A099371(n) (generalized Fibonacci)</code>.
+ * A099372 Squares of <code>A099371(n)</code> (generalized Fibonacci).
  * @author Sean A. Irvine
  */
 public class A099372 extends LinearRecurrence {

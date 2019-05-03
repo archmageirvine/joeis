@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A083373 <code>2n</code> is equal to the sum of its divisors after the digits have been sorted in descending order <code>(zeros dropped)</code>.
+ * A083373 <code>2n</code> is equal to the sum of its divisors after the digits have been sorted in descending order (zeros dropped).
  * @author Sean A. Irvine
  */
 public class A083373 implements Sequence {

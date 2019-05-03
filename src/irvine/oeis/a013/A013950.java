@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A013950 Start with 1, apply <code>1-&gt;12, 21-&gt;21, 22-&gt;21, 2-&gt;2 (for</code> final <code>2); a(n) =</code> length of n-th term.
+ * A013950 Start with 1, apply <code>1-&gt;12, 21-&gt;21, 22-&gt;21, 2-&gt;2</code> (for final <code>2); a(n) =</code> length of n-th term.
  * @author Sean A. Irvine
  */
 public class A013950 implements Sequence {

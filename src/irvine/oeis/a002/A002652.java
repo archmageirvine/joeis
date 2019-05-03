@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.LongUtils;
 
 /**
- * A002652 Theta series of Kleinian lattice <code>Z[(1 + sqrt(-7))/ 2]</code> in 1 complex <code>(or 2 real)</code> dimensions.
+ * A002652 Theta series of Kleinian lattice <code>Z[(1 + sqrt(-7))/ 2]</code> in 1 complex (or <code>2</code> real) dimensions.
  * @author Sean A. Irvine
  */
 public class A002652 implements Sequence {

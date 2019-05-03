@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289692 The number of partitions of [n] with exactly 2 blocks without peaks.
+ * A289692 The number of partitions of <code>[n]</code> with exactly 2 blocks without peaks.
  * @author Georg Fischer
  */
 public class A289692 extends LinearRecurrence {

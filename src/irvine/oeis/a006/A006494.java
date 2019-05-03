@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a048.A048987;
 
 /**
- * A006494 Number of possible chess games at the end of the n-th ply plus number of games that terminate <code>(i.e., mate)</code> in fewer than n plies.
+ * A006494 Number of possible chess games at the end of the n-th ply plus number of games that terminate <code>(i.e.</code>, mate) in fewer than n plies.
  * @author Sean A. Irvine
  */
 public class A006494 extends A048987 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A163496 <code>a(n) =</code> the number of distinct primes that can be made by writing n in binary, doubling any number <code>(possibly zero)</code> of <code>1</code>'s in place in this binary representation, and converting back to decimal.
+ * A163496 <code>a(n) =</code> the number of distinct primes that can be made by writing n in binary, doubling any number (possibly zero) of <code>1</code>'s in place in this binary representation, and converting back to decimal.
  * @author Sean A. Irvine
  */
 public class A163496 implements Sequence {

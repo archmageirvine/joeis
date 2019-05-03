@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175960 First occurrences of decimal digits 0..9 in <code>A001191 (Digits</code> of <code>squares)</code>.
+ * A175960 First occurrences of decimal digits 0..9 in <code>A001191</code> (Digits of squares).
  * @author Georg Fischer
  */
 public class A175960 extends FiniteSequence {

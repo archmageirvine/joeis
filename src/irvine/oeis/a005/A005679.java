@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005679 A squarefree <code>(or Thue-Morse)</code> ternary sequence: closed under <code>a-&gt;abc, b-&gt;ac, c-&gt;b</code>.
+ * A005679 A squarefree (or <code>Thue-Morse)</code> ternary sequence: closed under <code>a-&gt;abc, b-&gt;ac, c-&gt;b</code>.
  * @author Sean A. Irvine
  */
 public class A005679 implements Sequence {

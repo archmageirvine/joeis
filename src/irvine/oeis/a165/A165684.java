@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165684 Dimension of the space of Siegel cusp forms of genus 2 and dimension <code>2n (associated</code> with full modular group <code>Gamma_2)</code>.
+ * A165684 Dimension of the space of Siegel cusp forms of genus 2 and dimension <code>2n</code> (associated with full modular group <code>Gamma_2)</code>.
  * @author Sean A. Irvine
  */
 public class A165684 extends LinearRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018787 Numbers that are the sum of two positive cubes in at least three ways <code>(all solutions)</code>.
+ * A018787 Numbers that are the sum of two positive cubes in at least three ways (all solutions).
  * @author Sean A. Irvine
  */
 public class A018787 implements Sequence {

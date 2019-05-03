@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A001232 Numbers n such that <code>9*n = (n</code> written <code>backwards), n &gt; 0</code>.
+ * A001232 Numbers n such that <code>9*n = (n</code> written backwards), <code>n &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A001232 implements Sequence {

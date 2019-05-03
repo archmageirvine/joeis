@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014614 Numbers that are products of 5 primes <code>(or 5-almost</code> primes, a generalization of <code>semiprimes)</code>.
+ * A014614 Numbers that are products of 5 primes (or 5-almost primes, a generalization of semiprimes).
  * @author Sean A. Irvine
  */
 public class A014614 implements Sequence {

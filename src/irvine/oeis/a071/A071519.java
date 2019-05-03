@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071519 Numbers whose square is a zeroless pandigital number <code>(i.e.</code>, use the digits 1 through <code>9 once)</code>.
+ * A071519 Numbers whose square is a zeroless pandigital number <code>(i.e.</code>, use the digits 1 through <code>9</code> once).
  * @author Georg Fischer
  */
 public class A071519 extends FiniteSequence {

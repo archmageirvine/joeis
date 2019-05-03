@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245023 Number of cases of tie <code>(no winner)</code> in the <code>n-person rock-paper-scissors</code> game.
+ * A245023 Number of cases of tie (no winner) in the <code>n-person rock-paper-scissors</code> game.
  * @author Sean A. Irvine
  */
 public class A245023 extends LinearRecurrence {

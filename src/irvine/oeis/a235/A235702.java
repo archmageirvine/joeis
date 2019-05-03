@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235702 Fixed points of <code>A001175 (Pisano periods)</code>.
+ * A235702 Fixed points of <code>A001175</code> (Pisano periods).
  * @author Georg Fischer
  */
 public class A235702 extends LinearRecurrence {

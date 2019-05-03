@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066067 Number of binary strings u of any length with property that <code>length(u) +</code> number of <code>0</code>'s in u <code>&lt;= n (only</code> one of a string and its reversal are <code>counted)</code>.
+ * A066067 Number of binary strings u of any length with property that <code>length(u) +</code> number of <code>0</code>'s in u <code>&lt;= n</code> (only one of a string and its reversal are counted).
  * @author Sean A. Irvine
  */
 public class A066067 extends LinearRecurrence {

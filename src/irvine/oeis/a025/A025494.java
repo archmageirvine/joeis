@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A025494 Squares which are the sum of factorials of distinct integers <code>(probably finite)</code>.
+ * A025494 Squares which are the sum of factorials of distinct integers (probably finite).
  * @author Sean A. Irvine
  */
 public class A025494 implements Sequence {

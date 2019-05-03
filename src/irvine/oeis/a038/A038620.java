@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038620 Growth function (or coordination sequence) of the infinite cubic graph corresponding to the srs net <code>(a(n) =</code> number of nodes at distance n from a fixed <code>node)</code>.
+ * A038620 Growth function (or coordination sequence) of the infinite cubic graph corresponding to the srs net <code>(a(n) =</code> number of nodes at distance n from a fixed node).
  * @author Georg Fischer
  */
 public class A038620 extends LinearRecurrence {

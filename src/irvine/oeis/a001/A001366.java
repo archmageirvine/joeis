@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001366 Maximal number of unattacked squares with n queens on <code>n X n</code> board (answers for <code>n &gt;= 17</code> only <code>probable)</code>.
+ * A001366 Maximal number of unattacked squares with n queens on <code>n X n</code> board (answers for <code>n &gt;= 17</code> only probable).
  * @author Sean A. Irvine
  */
 public class A001366 implements Sequence {

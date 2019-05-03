@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124356 Number of (directed) Hamiltonian cycles on the Moebius ladder graph <code>M_n (for n&gt;=4)</code>.
+ * A124356 Number of (directed) Hamiltonian cycles on the Moebius ladder graph <code>M_n</code> (for <code>n&gt;=4)</code>.
  * @author Sean A. Irvine
  */
 public class A124356 extends LinearRecurrence {

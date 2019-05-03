@@ -8,7 +8,7 @@ import irvine.oeis.MemorySequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A000081 Number of unlabeled rooted trees with n nodes (or connected functions with a fixed <code>point)</code>.
+ * A000081 Number of unlabeled rooted trees with n nodes (or connected functions with a fixed point).
  * @author Sean A. Irvine
  */
 public class A000081 extends MemorySequence {

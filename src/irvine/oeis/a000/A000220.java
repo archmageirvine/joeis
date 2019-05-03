@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004111;
 
 /**
- * A000220 Number of asymmetric trees with n nodes (also called identity <code>trees)</code>.
+ * A000220 Number of asymmetric trees with n nodes (also called identity trees).
  * @author Sean A. Irvine
  */
 public class A000220 extends A004111 {

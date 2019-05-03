@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006903 Number of triangle-free trivalent <code>(or cubic)</code> graphs with <code>2n</code> labeled nodes.
+ * A006903 Number of triangle-free trivalent (or cubic) graphs with <code>2n</code> labeled nodes.
  * @author Sean A. Irvine
  */
 public class A006903 implements Sequence, GraphProcessor {

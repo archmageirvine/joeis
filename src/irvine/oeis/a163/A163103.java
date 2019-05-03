@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A163103 Decimal expansion of the astronomical unit (measured in <code>meters)</code>.
+ * A163103 Decimal expansion of the astronomical unit (measured in meters).
  * @author Georg Fischer
  */
 public class A163103 extends FiniteSequence {

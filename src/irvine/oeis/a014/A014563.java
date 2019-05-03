@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014563 <code>a(n+1)</code> is the smallest number <code>&gt; a(n)</code> such that the digits of <code>a(n)^2</code> are all <code>(with multiplicity)</code> contained in the digits of <code>a(n+1)^2</code>, with <code>a(0)=1</code>.
+ * A014563 <code>a(n+1)</code> is the smallest number <code>&gt; a(n)</code> such that the digits of <code>a(n)^2</code> are all (with multiplicity) contained in the digits of <code>a(n+1)^2</code>, with <code>a(0)=1</code>.
  * @author Sean A. Irvine
  */
 public class A014563 implements Sequence {

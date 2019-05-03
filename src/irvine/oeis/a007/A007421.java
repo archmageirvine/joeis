@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001222;
 
 /**
- * A007421 Liouville's function: parity of number of primes dividing <code>n (with multiplicity)</code>.
+ * A007421 Liouville's function: parity of number of primes dividing <code>n</code> (with multiplicity).
  * @author Sean A. Irvine
  */
 public class A007421 extends A001222 {

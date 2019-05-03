@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320935 Number of chiral pairs of color patterns <code>(set partitions)</code> for a row of length n using 5 or fewer colors <code>(subsets)</code>.
+ * A320935 Number of chiral pairs of color patterns (set partitions) for a row of length n using 5 or fewer colors (subsets).
  * @author Georg Fischer
  */
 public class A320935 extends LinearRecurrence {

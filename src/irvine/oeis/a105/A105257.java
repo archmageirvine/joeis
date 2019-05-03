@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105257 Cayley <code>(or multiplication)</code> table of <code>S_3</code>, the symmetric group on three letters, read by rows.
+ * A105257 Cayley (or multiplication) table of <code>S_3</code>, the symmetric group on three letters, read by rows.
  * @author Georg Fischer
  */
 public class A105257 extends FiniteSequence {

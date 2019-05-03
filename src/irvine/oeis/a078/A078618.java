@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078618 <code>a(n) = floor(average</code> of first <code>n cubes)</code>.
+ * A078618 <code>a(n) = floor(average</code> of first <code>n</code> cubes).
  * @author Sean A. Irvine
  */
 public class A078618 extends LinearRecurrence {

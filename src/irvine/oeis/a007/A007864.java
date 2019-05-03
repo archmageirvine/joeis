@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001156;
 
 /**
- * A007864 Number of matrix bundles of codimension <code>n (Euler</code> transform of <code>A001156)</code>.
+ * A007864 Number of matrix bundles of codimension <code>n</code> (Euler transform of <code>A001156)</code>.
  * @author Sean A. Irvine
  */
 public class A007864 extends EulerTransformSequence {

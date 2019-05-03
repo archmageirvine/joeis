@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129672 Right truncatable primes in base <code>6 (written</code> in decimal <code>form)</code>.
+ * A129672 Right truncatable primes in base <code>6</code> (written in decimal form).
  * @author Georg Fischer
  */
 public class A129672 extends FiniteSequence {

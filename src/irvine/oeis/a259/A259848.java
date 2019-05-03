@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259848 Suffixes of <code>4818372912366173 (all primes)</code>.
+ * A259848 Suffixes of <code>4818372912366173</code> (all primes).
  * @author Georg Fischer
  */
 public class A259848 extends FiniteSequence {

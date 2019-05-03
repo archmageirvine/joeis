@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188494 Number of permutations p on the set [n] with the properties that <code>abs(p(i)-i) &lt;= 3</code> for all i and <code>p(1) &lt;= 2</code>.
+ * A188494 Number of permutations p on the set <code>[n]</code> with the properties that <code>abs(p(i)-i) &lt;= 3</code> for all i and <code>p(1) &lt;= 2</code>.
  * @author Sean A. Irvine
  */
 public class A188494 extends LinearRecurrence {

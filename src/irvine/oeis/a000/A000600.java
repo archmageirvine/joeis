@@ -5,7 +5,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000600 Number of tertiary alcohols (alkanols or alkyl alcohols <code>C_n H_{2n+1} OH)</code> with n carbon atoms.
+ * A000600 Number of tertiary alcohols (alkanols or alkyl alcohols <code>C_n H_{2n+1}</code> OH) with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000600 extends A000598 {

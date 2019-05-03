@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A057808 Number of ways of getting <code>(at least)</code> a straight flush, 4 of a kind, full house, flush, straight, 3 of a kind, 2 pair, a pair in poker.
+ * A057808 Number of ways of getting (at least) a straight flush, 4 of a kind, full house, flush, straight, 3 of a kind, 2 pair, a pair in poker.
  * @author Georg Fischer
  */
 public class A057808 extends FiniteSequence {

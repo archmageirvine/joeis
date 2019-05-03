@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003714;
 
 /**
- * A007895 Number of terms in Zeckendorf representation of <code>n (write n</code> as a sum of non-consecutive distinct Fibonacci numbers).
+ * A007895 Number of terms in Zeckendorf representation of <code>n</code> (write n as a sum of non-consecutive distinct Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A007895 extends A003714 {

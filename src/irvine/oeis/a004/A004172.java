@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a028.A028296;
 
 /**
- * A004172 Triangle of coefficients of Euler polynomials <code>E_2n(x) (exponents</code> in increasing <code>order)</code>.
+ * A004172 Triangle of coefficients of Euler polynomials <code>E_2n(x)</code> (exponents in increasing order).
  * @author Sean A. Irvine
  */
 public class A004172 implements Sequence {

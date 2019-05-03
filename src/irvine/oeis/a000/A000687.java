@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.z.Fibonacci;
 
 /**
- * A000687 Boustrophedon transform <code>(first version)</code> of Fibonacci numbers 0,1,1,2,3,5,...
+ * A000687 Boustrophedon transform (first version) of Fibonacci numbers 0,1,1,2,3,5,...
  * @author Sean A. Irvine
  */
 public class A000687 extends A000674 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000224 Number of squares mod n.
+ * A000224 Number of squares <code>mod</code> n.
  * @author Sean A. Irvine
  */
 public class A000224 implements Sequence {

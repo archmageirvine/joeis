@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A255253 Complete list of siteswaps <code>(indecomposable ground-state</code> in concatenated decimal notation organized first by sum of digits and then by <code>magnitude)</code>.
+ * A255253 Complete list of siteswaps (indecomposable ground-state in concatenated decimal notation organized first by sum of digits and then by magnitude).
  * @author Georg Fischer
  */
 public class A255253 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139268 Twice nonagonal numbers (or twice <code>9-gonal</code> numbers): <code>a(n) = n(7n-5)</code>.
+ * A139268 Twice nonagonal numbers (or twice <code>9-gonal numbers): a(n) = n(7n-5)</code>.
  * @author Sean A. Irvine
  */
 public class A139268 extends LinearRecurrence {

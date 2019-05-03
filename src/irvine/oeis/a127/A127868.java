@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127868 Number of square tiles in all tilings of a <code>3 X n</code> board with <code>1 X 1</code> and L-shaped tiles (where the L-shaped tiles cover <code>3 squares)</code>.
+ * A127868 Number of square tiles in all tilings of a <code>3 X n</code> board with <code>1 X 1</code> and L-shaped tiles (where the L-shaped tiles cover <code>3</code> squares).
  * @author Sean A. Irvine
  */
 public class A127868 extends LinearRecurrence {

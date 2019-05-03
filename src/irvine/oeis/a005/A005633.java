@@ -6,7 +6,7 @@ import irvine.oeis.a122.A122748;
 import irvine.oeis.a123.A123071;
 
 /**
- * A005633 Bishops on an <code>n X n</code> board (see Robinson paper for <code>details)</code>.
+ * A005633 Bishops on an <code>n X n</code> board (see Robinson paper for details).
  * @author Sean A. Irvine
  */
 public class A005633 extends A122748 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007604 <code>a(n)=a(n-1)+a(n-1-</code> number of odd terms so <code>far)</code>.
+ * A007604 <code>a(n)=a(n-1)+a(n-1-</code> number of odd terms so far).
  * @author Sean A. Irvine
  */
 public class A007604 extends MemorySequence {

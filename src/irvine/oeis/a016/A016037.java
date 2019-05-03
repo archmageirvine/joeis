@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A016037 Map numbers to number of letters in English name; sequence gives number of steps to converge <code>(to 4)</code>.
+ * A016037 Map numbers to number of letters in English name; sequence gives number of steps to converge (to <code>4)</code>.
  * @author Sean A. Irvine
  */
 public class A016037 implements Sequence {

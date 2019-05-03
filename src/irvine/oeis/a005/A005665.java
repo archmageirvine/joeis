@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005665 Tower of Hanoi with 3 pegs and cyclic moves only <code>(clockwise)</code>.
+ * A005665 Tower of Hanoi with 3 pegs and cyclic moves only (clockwise).
  * @author Sean A. Irvine
  */
 public class A005665 implements Sequence {

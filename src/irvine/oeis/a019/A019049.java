@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019049 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite PAU = Paulingite <code>(K2,Ca,Na2)76[ Al152Si520O1344 ]</code>.
+ * A019049 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite PAU = Paulingite <code>(K2,Ca,Na2)76[ Al152Si520O1344 ]</code>.
  * @author Sean A. Irvine
  */
 public class A019049 extends A018940 {

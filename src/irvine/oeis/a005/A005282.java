@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005282 Mian-Chowla sequence <code>(a B_2</code> sequence): <code>a(1) = 1</code>; for <code>n&gt;1, a(n) =</code> smallest number <code>&gt; a(n-1)</code> such that the pairwise sums of elements are all distinct.
+ * A005282 Mian-Chowla sequence <code>(a B_2 sequence): a(1) = 1</code>; for <code>n&gt;1, a(n) =</code> smallest number <code>&gt; a(n-1)</code> such that the pairwise sums of elements are all distinct.
  * @author Sean A. Irvine
  */
 public class A005282 extends MemorySequence {

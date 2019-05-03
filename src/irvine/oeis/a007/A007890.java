@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007890 Summarize the previous <code>term! (in</code> decreasing <code>order)</code>.
+ * A007890 Summarize the previous <code>term!</code> (in decreasing order).
  * @author Sean A. Irvine
  */
 public class A007890 implements Sequence {

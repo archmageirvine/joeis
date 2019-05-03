@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000833 Number of switching networks (see Harrison reference for precise <code>definition)</code>.
+ * A000833 Number of switching networks (see Harrison reference for precise definition).
  * @author Sean A. Irvine
  */
 public class A000833 implements Sequence {

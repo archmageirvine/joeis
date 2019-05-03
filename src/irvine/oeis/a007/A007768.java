@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007768 From Engel product expansion of <code>4/7</code>.
+ * A007768 From Engel product expansion of 4/7.
  * @author Sean A. Irvine
  */
 public class A007768 implements Sequence {

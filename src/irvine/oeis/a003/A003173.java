@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003173 Heegner numbers: imaginary quadratic fields with unique factorization (or class number 1).
+ * A003173 Heegner numbers: imaginary quadratic fields with unique factorization (or class number <code>1)</code>.
  * @author Sean A. Irvine
  */
 public class A003173 extends FiniteSequence {

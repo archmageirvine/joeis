@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000815 Number of switching networks (see Harrison reference for precise definition).
+ * A000815 Number of switching networks (see Harrison reference for precise <code>definition)</code>.
  * @author Sean A. Irvine
  */
 public class A000815 extends A000721 {

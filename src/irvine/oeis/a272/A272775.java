@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272775 Squares of the form <code>P(n, 5) + n</code>, where <code>P(x,k)</code> is the Pochhammer function and <code>n =</code> square (A000290).
+ * A272775 Squares of the form <code>P(n, 5) +</code> n, where <code>P(x,k)</code> is the Pochhammer function and <code>n =</code> square <code>(A000290)</code>.
  * @author Sean A. Irvine
  */
 public class A272775 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160538 a(n)=4(n^4-n^3).
+ * A160538 <code>a(n)=4(n^4-n^3)</code>.
  * @author Sean A. Irvine
  */
 public class A160538 extends LinearRecurrence {

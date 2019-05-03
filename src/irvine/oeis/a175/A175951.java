@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A175951 Duplicate of A072207.
+ * A175951 Duplicate of <code>A072207</code>.
  * @author Sean A. Irvine
  */
 public class A175951 implements Sequence {

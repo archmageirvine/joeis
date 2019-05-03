@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013012 Expansion of e.g.f.: <code>log(cos(x)+arctan(x))=x-2/2!*x^2+3/3!*x^3-12/4!*x^4+73/5!*x^5</code>...
+ * A013012 Expansion of e.g.f.: <code>log(cos(x)+arctan(x))=x-2/2!*x^2+3/3!*x^3-12/4!*x^4+73/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A013012 implements Sequence {

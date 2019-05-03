@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103303 Complete list of digits used in the counting numbers <code>(in</code> base 10). Also known as the "arabic numerals".
+ * A103303 Complete list of digits used in the counting numbers (in base <code>10)</code>. Also known as the "arabic numerals".
  * @author Georg Fischer
  */
 public class A103303 extends FiniteSequence {

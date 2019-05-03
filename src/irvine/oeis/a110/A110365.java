@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110365 <code>a(1)=2, a(n+1) =</code> a(n)*A010888(a(n)).
+ * A110365 <code>a(1)=2, a(n+1) = a(n)*A010888(a(n))</code>.
  * @author Georg Fischer
  */
 public class A110365 extends LinearRecurrence {

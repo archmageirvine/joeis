@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009951 Coordination sequence for alpha-Mn, Position Mn2.
+ * A009951 Coordination sequence for <code>alpha-Mn</code>, Position <code>Mn2</code>.
  * @author Sean A. Irvine
  */
 public class A009951 extends CoordinationSequence {

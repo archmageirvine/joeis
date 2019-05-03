@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A128663 Expansion of eta(q^3) * eta(q^33) <code>/ (</code> eta(q)* eta(q^11)) in powers of q.
+ * A128663 Expansion of <code>eta(q^3) * eta(q^33) / ( eta(q)* eta(q^11))</code> in powers of q.
  * @author Sean A. Irvine
  */
 public class A128663 extends EulerTransformSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010025 Crystal ball sequence for squashed {D_5}^* lattice, perhaps the smallest example of a "non-superficial" lattice.
+ * A010025 Crystal ball sequence for squashed <code>{D_5}^*</code> lattice, perhaps the smallest example of a <code>"non-superficial"</code> lattice.
  * @author Sean A. Irvine
  */
 public class A010025 implements Sequence {

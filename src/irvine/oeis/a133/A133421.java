@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133421 Image of n under one application of the "7x+1" map.
+ * A133421 Image of n under one application of the <code>"7x+1"</code> map.
  * @author Sean A. Irvine
  */
 public class A133421 implements Sequence {

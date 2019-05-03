@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A128465 Numbers n such that n divides the numerator of alternating Harmonic number H'((n+1)/2) = A058313((n+1)/2).
+ * A128465 Numbers n such that n divides the numerator of alternating Harmonic number <code>H'((n+1)/2) = A058313((n+1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A128465 implements Sequence {

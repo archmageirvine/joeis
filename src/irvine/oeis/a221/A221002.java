@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221002 The Wiener index of the nanostar dendrimer G[n], defined pictorially in the Karbasioun-Ashrafi reference.
+ * A221002 The Wiener index of the nanostar dendrimer <code>G[n]</code>, defined pictorially in the Karbasioun-Ashrafi reference.
  * @author Sean A. Irvine
  */
 public class A221002 extends LinearRecurrence {

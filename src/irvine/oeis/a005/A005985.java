@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005985 Length of longest trail <code>(i</code>.e., path with all distinct edges) on the edges of an n-cube.
+ * A005985 Length of longest trail <code>(i.e.</code>, path with all distinct edges) on the edges of an <code>n-cube</code>.
  * @author Sean A. Irvine
  */
 public class A005985 implements Sequence {

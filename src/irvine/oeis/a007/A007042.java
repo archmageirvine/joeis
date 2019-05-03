@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A007042 Diagonal of partition triangle A047812.
+ * A007042 Diagonal of partition triangle <code>A047812</code>.
  * @author Sean A. Irvine
  */
 public class A007042 extends A000041 {

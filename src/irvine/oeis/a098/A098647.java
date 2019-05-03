@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098647 Trace sequence associated to the 4 X 4 Krawtchouk matrix and its transpose.
+ * A098647 Trace sequence associated to the <code>4 X 4</code> Krawtchouk matrix and its transpose.
  * @author Sean A. Irvine
  */
 public class A098647 extends LinearRecurrence {

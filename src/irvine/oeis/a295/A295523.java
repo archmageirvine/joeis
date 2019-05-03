@@ -3,7 +3,7 @@ package irvine.oeis.a295;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A295523 Nonprime numbers n such that A243822(n) <code>&gt;=</code> A243823(n).
+ * A295523 Nonprime numbers n such that <code>A243822(n) &gt;= A243823(n)</code>.
  * @author Georg Fischer
  */
 public class A295523 extends FiniteSequence {

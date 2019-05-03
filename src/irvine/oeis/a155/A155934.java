@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A155934 The sequence k(m) defined in A005991.
+ * A155934 The sequence <code>k(m)</code> defined in <code>A005991</code>.
  * @author Sean A. Irvine
  */
 public class A155934 implements Sequence {

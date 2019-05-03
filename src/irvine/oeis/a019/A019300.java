@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010060;
 
 /**
- * A019300 First n elements of Thue-Morse sequence A010060 read as a binary number.
+ * A019300 First n elements of Thue-Morse sequence <code>A010060</code> read as a binary number.
  * @author Sean A. Irvine
  */
 public class A019300 extends A010060 {

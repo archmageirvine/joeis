@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003768 Number of spanning trees with degrees 1 and 3 in W_4 X P_n.
+ * A003768 Number of spanning trees with degrees 1 and 3 in <code>W_4 X P_n</code>.
  * @author Sean A. Irvine
  */
 public class A003768 extends LinearRecurrence {

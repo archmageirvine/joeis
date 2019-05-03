@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156115 The 3677th prime century apportioned with exactly one prime in each of its ten decades.
+ * A156115 The <code>3677th</code> prime century apportioned with exactly one prime in each of its ten decades.
  * @author Georg Fischer
  */
 public class A156115 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A122670 If <code>n mod 4 = 2</code> or <code>n mod 4 = 3</code> then <code>a(n) = 0</code> else let m=floor(n/4), then <code>a(n) =</code> (2*m)!/m!.
+ * A122670 If <code>n mod 4 = 2</code> or <code>n mod 4 = 3</code> then <code>a(n) = 0</code> else let <code>m=floor(n/4)</code>, then <code>a(n) = (2*m)!/m!</code>.
  * @author Sean A. Irvine
  */
 public class A122670 implements Sequence {

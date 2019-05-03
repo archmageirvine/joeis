@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013926 <code>a(n) = (2*n)! *</code> D_{2*n}, where D_{2*n} = (1/Pi) * Integral_{x=0..oo} <code>[1 - x^(2*n) / Product_{j=1..n} (x^2+j^2)]</code> dx.
+ * A013926 <code>a(n) = (2*n)! * D_{2*n}</code>, where <code>D_{2*n} = (1/Pi) * Integral_{x=0..oo} [1 - x^(2*n) / Product_{j=1..n} (x^2+j^2)]</code> dx.
  * @author Sean A. Irvine
  */
 public class A013926 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235643 Total number of sides of a tetraflake-like fractal after n iterations, <code>a(1) = 16</code> (see comments).
+ * A235643 Total number of sides of a tetraflake-like fractal after n iterations, <code>a(1) = 16 (see comments)</code>.
  * @author Sean A. Irvine
  */
 public class A235643 extends LinearRecurrence {

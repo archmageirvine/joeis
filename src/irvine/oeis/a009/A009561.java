@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006987;
 
 /**
- * A009561 Index of central binomial coefficient <code>C(2n,n)</code> within A006987.
+ * A009561 Index of central binomial coefficient <code>C(2n,n)</code> within <code>A006987</code>.
  * @author Sean A. Irvine
  */
 public class A009561 extends A006987 {

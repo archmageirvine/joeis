@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213044 Convolution of Fibonacci numbers and positive integers repeated three times (A000045 and A008620).
+ * A213044 Convolution of Fibonacci numbers and positive integers repeated three times <code>(A000045</code> and <code>A008620)</code>.
  * @author Sean A. Irvine
  */
 public class A213044 extends LinearRecurrence {

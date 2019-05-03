@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078689 Continued fraction expansion of e^(1/3).
+ * A078689 Continued fraction expansion of <code>e^(1/3)</code>.
  * @author Sean A. Irvine
  */
 public class A078689 extends LinearRecurrence {

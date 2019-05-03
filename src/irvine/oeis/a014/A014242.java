@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014242 (n-th Fibonacci number that is not <code>1) -</code> (n-th number that is 1 or not a Fibonacci number).
+ * A014242 <code>(n-th</code> Fibonacci number that is not <code>1) - (n-th</code> number that is 1 or not a Fibonacci number).
  * @author Sean A. Irvine
  */
 public class A014242 extends A000045 {

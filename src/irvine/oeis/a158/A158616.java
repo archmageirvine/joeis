@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
- * A158616 Table of expansion coefficients [x^m] of the Rayleigh polynomial of index <code>2n</code>.
+ * A158616 Table of expansion coefficients <code>[x^m]</code> of the Rayleigh polynomial of index <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A158616 implements Sequence {

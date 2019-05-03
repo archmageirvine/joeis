@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000513 Number of equivalence classes of n X n matrices over <code>{0,1}</code> with rows and columns summing to 4, where equivalence is defined by row and column permutations. Also number of isomorphism classes of bicolored quartic bipartite graphs, where isomorphism cannot exchange the colors.
+ * A000513 Number of equivalence classes of <code>n X n</code> matrices over <code>{0,1}</code> with rows and columns summing to 4, where equivalence is defined by row and column permutations. Also number of isomorphism classes of bicolored quartic bipartite graphs, where isomorphism cannot exchange the colors.
  * @author Sean A. Irvine
  */
 public class A000513 extends A000512 {

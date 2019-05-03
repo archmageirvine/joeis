@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000353 Primes <code>== 7, 19, 23 (mod 40)</code> such that (p-1)/2 is also prime.
+ * A000353 Primes <code>== 7, 19, 23 (mod 40)</code> such that <code>(p-1)/2</code> is also prime.
  * @author Sean A. Irvine
  */
 public class A000353 implements Sequence {

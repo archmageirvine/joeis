@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035599 Number of points of L1 norm 5 in cubic lattice Z^n.
+ * A035599 Number of points of <code>L1</code> norm 5 in cubic lattice <code>Z^n</code>.
  * @author Sean A. Irvine
  */
 public class A035599 extends LinearRecurrence {

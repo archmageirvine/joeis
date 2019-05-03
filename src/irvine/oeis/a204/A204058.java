@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204058 Largest integer m such that both m and n*m are decimal pandigital numbers (A050278).
+ * A204058 Largest integer m such that both m and <code>n*m</code> are decimal pandigital numbers <code>(A050278)</code>.
  * @author Georg Fischer
  */
 public class A204058 extends FiniteSequence {

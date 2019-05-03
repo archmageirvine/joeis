@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189980 <code>a(n)</code> is the number of incongruent two-color bracelets of n beads, 10 from them are black (A005515), having a diameter of symmetry.
+ * A189980 <code>a(n)</code> is the number of incongruent two-color bracelets of n beads, 10 from them are black <code>(A005515)</code>, having a diameter of symmetry.
  * @author Sean A. Irvine
  */
 public class A189980 extends LinearRecurrence {

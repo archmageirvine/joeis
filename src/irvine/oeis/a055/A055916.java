@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055916 Coefficients of a polynomial used in calculation of A055913.
+ * A055916 Coefficients of a polynomial used in calculation of <code>A055913</code>.
  * @author Georg Fischer
  */
 public class A055916 extends FiniteSequence {

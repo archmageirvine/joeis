@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195309 Row sums of an irregular triangle read by rows in which row n lists the next A026741(n+1) natural numbers A000027.
+ * A195309 Row sums of an irregular triangle read by rows in which row n lists the next <code>A026741(n+1)</code> natural numbers <code>A000027</code>.
  * @author Sean A. Irvine
  */
 public class A195309 extends LinearRecurrence {

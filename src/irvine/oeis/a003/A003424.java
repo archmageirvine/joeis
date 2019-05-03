@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000961;
 
 /**
- * A003424 Primes of form (p^x - 1)/(p^y <code>- 1)</code>, p prime.
+ * A003424 Primes of form <code>(p^x - 1)/(p^y - 1)</code>, p prime.
  * @author Sean A. Irvine
  */
 public class A003424 implements Sequence {

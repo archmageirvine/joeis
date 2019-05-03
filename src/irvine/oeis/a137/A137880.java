@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137880 Indices n of perfect squares among 17-gonal numbers A051869(n) <code>= n(15n - 13)/2</code>.
+ * A137880 Indices n of perfect squares among 17-gonal numbers <code>A051869(n) = n(15n - 13)/2</code>.
  * @author Sean A. Irvine
  */
 public class A137880 extends LinearRecurrence {

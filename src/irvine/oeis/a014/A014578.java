@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007949;
 
 /**
- * A014578 Binary expansion of Thue constant (or Roth's constant).
+ * A014578 Binary expansion of Thue constant (or Roth's <code>constant)</code>.
  * @author Sean A. Irvine
  */
 public class A014578 extends A007949 {

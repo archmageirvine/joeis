@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A060053 Number of r-bicoverings (or restricted proper 2-covers) of an n-set.
+ * A060053 Number of <code>r-bicoverings (or</code> restricted proper <code>2-covers)</code> of an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A060053 implements Sequence {

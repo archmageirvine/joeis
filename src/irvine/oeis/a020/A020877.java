@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020877 Number of matchings in Moebius ladder M_n.
+ * A020877 Number of matchings in Moebius ladder <code>M_n</code>.
  * @author Sean A. Irvine
  */
 public class A020877 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064373 "60-60-842", a popular song by the B52's.
+ * A064373 <code>"60-60-842"</code>, a popular song by the <code>B52</code>'s.
  * @author Georg Fischer
  */
 public class A064373 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a186;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A186707 Partial sums of A007202 (crystal ball sequence for hexagonal close-packing).
+ * A186707 Partial sums of <code>A007202 (crystal</code> ball sequence for hexagonal <code>close-packing)</code>.
  * @author Sean A. Irvine
  */
 public class A186707 extends LinearRecurrence {

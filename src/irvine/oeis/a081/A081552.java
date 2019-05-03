@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081552 Leading terms of rows in A081551.
+ * A081552 Leading terms of rows in <code>A081551</code>.
  * @author Sean A. Irvine
  */
 public class A081552 extends LinearRecurrence {

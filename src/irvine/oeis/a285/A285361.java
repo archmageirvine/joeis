@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285361 The number of tight 3 X n pavings.
+ * A285361 The number of tight <code>3 X n</code> pavings.
  * @author Georg Fischer
  */
 public class A285361 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a063.A063691;
 
 /**
- * A014465 A063691 without zeros.
+ * A014465 <code>A063691</code> without zeros.
  * @author Sean A. Irvine
  */
 public class A014465 extends A063691 {

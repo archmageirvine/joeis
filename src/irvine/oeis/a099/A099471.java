@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099471 A sequence generated from the Quadrifoil (flat knot).
+ * A099471 A sequence generated from the Quadrifoil <code>(flat knot)</code>.
  * @author Sean A. Irvine
  */
 public class A099471 extends LinearRecurrence {

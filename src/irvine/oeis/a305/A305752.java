@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305752 Number of achiral color patterns (set partitions) in a row or cycle of length n with 6 or fewer colors (subsets).
+ * A305752 Number of achiral color patterns <code>(set partitions)</code> in a row or cycle of length n with 6 or fewer colors <code>(subsets)</code>.
  * @author Georg Fischer
  */
 public class A305752 extends LinearRecurrence {

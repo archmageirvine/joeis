@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060405 Sum of Lucas (A000032) and Pell (A000129) numbers.
+ * A060405 Sum of Lucas <code>(A000032)</code> and Pell <code>(A000129)</code> numbers.
  * @author Sean A. Irvine
  */
 public class A060405 extends LinearRecurrence {

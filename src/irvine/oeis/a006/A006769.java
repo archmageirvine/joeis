@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006769 Elliptic divisibility sequence associated with elliptic curve "37a1": <code>y^2 + y = x^3 - x</code> and multiples of the point <code>(0,0)</code>.
+ * A006769 Elliptic divisibility sequence associated with elliptic curve <code>"37a1": y^2 + y = x^3 - x</code> and multiples of the point <code>(0,0)</code>.
  * @author Sean A. Irvine
  */
 public class A006769 implements Sequence {

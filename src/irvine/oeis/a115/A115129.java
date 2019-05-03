@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115129 Partial sums of A005587. Fourth column of triangle A115127.
+ * A115129 Partial sums of <code>A005587</code>. Fourth column of triangle <code>A115127</code>.
  * @author Sean A. Irvine
  */
 public class A115129 extends LinearRecurrence {

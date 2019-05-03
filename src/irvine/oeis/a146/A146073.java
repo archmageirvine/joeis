@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A146073 List of orders of centralizers of conjugacy classes of Mathieu simple group M_24 of order 244823040.
+ * A146073 List of orders of centralizers of conjugacy classes of Mathieu simple group <code>M_24</code> of order 244823040.
  * @author Georg Fischer
  */
 public class A146073 extends FiniteSequence {

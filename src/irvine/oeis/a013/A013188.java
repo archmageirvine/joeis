@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013188 E.g.f.: <code>log(cosh(x)+arctan(x))=x-3/3!*x^3+12/4!*x^4-7/5!*x^5-168/6!*x^6</code>...
+ * A013188 E.g.f.: <code>log(cosh(x)+arctan(x))=x-3/3!*x^3+12/4!*x^4-7/5!*x^5-168/6!*x^6..</code>.
  * @author Sean A. Irvine
  */
 public class A013188 implements Sequence {

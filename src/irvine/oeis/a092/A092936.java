@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092936 Area of n-th triple of hexagons around a triangle. 
+ * A092936 Area of n-th triple of hexagons around a triangle.
  * @author Georg Fischer
  */
 public class A092936 extends LinearRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004804 Numbers that are the sum of 4 nonzero 10th powers.
+ * A004804 Numbers that are the sum of 4 nonzero <code>10th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004804 extends A004802 {

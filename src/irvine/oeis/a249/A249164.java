@@ -3,7 +3,7 @@ package irvine.oeis.a249;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A249164 Numbers n such that the triangular number <code>T(n)</code> is equal to the sum of the pentagonal numbers P(m) and P(m+1) for some m.
+ * A249164 Numbers n such that the triangular number <code>T(n)</code> is equal to the sum of the pentagonal numbers <code>P(m)</code> and <code>P(m+1)</code> for some m.
  * @author Sean A. Irvine
  */
 public class A249164 extends LinearRecurrence {

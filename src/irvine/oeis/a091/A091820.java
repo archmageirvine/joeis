@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A091820 Number of ways to reach a sum of <code>n by a</code> down-only cascade through Pascal's Triangle, starting at <code>C(0,0)=1</code> at the apex and shifting left or right by exactly one position at each step.
+ * A091820 Number of ways to reach a sum of n by a down-only cascade through Pascal's Triangle, starting at <code>C(0,0)=1</code> at the apex and shifting left or right by exactly one position at each step.
  * @author Sean A. Irvine
  */
 public class A091820 implements Sequence {

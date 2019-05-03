@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006852 Step at which n is expelled in Kimberling's puzzle (A035486).
+ * A006852 Step at which n is expelled in Kimberling's puzzle <code>(A035486)</code>.
  * @author Sean A. Irvine
  */
 public class A006852 implements Sequence {

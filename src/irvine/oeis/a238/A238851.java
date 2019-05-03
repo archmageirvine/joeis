@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A238851 Right-truncatable, reversible primes in base 16.
+ * A238851 <code>Right-truncatable</code>, reversible primes in base 16.
  * @author Georg Fischer
  */
 public class A238851 extends FiniteSequence {

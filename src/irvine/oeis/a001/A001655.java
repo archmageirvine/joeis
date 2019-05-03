@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001655 Fibonomial coefficients: <code>a(n) = F(n+1)*F(n+2)*F(n+3)/2</code>, where <code>F() =</code> Fibonacci numbers A000045.
+ * A001655 Fibonomial coefficients: <code>a(n) = F(n+1)*F(n+2)*F(n+3)/2</code>, where <code>F() =</code> Fibonacci numbers <code>A000045</code>.
  * @author Sean A. Irvine
  */
 public class A001655 extends A000045 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007861 Mahonian statistics on S_n which split <code>(a(n)=n!.a(n-1)^n)</code>.
+ * A007861 Mahonian statistics on <code>S_n</code> which split <code>(a(n)=n!.a(n-1)^n)</code>.
  * @author Sean A. Irvine
  */
 public class A007861 implements Sequence {

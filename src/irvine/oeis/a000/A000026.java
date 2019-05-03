@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000026 Mosaic numbers or multiplicative projection of n: if <code>n =</code> Product (p_j^k_j) then <code>a(n) =</code> Product (p_j * k_j).
+ * A000026 Mosaic numbers or multiplicative projection of n: if <code>n =</code> Product <code>(p_j^k_j)</code> then <code>a(n) =</code> Product <code>(p_j * k_j)</code>.
  * @author Sean A. Irvine
  */
 public class A000026 implements Sequence {

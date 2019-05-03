@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014892 n is equal to the number of 4s in all numbers <code>&lt;= n</code> written in base 6.
+ * A014892 n is equal to the number of <code>4s</code> in all numbers <code>&lt;= n</code> written in base 6.
  * @author Sean A. Irvine
  */
 public class A014892 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255379 Number of strings of n decimal digits that contain at least one string of exactly 9 consecutive "0" digits.
+ * A255379 Number of strings of n decimal digits that contain at least one string of exactly 9 consecutive <code>"0"</code> digits.
  * @author Sean A. Irvine
  */
 public class A255379 extends LinearRecurrence {

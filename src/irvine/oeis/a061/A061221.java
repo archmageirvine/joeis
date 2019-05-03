@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A061221 Number of tic-tac-toe games won after n plays.
+ * A061221 Number of <code>tic-tac-toe</code> games won after n plays.
  * @author Georg Fischer
  */
 public class A061221 extends FiniteSequence {

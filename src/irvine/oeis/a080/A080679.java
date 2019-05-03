@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080679 Lexicographically earliest de Bruijn cycle of length 16 (repeated indefinitely).
+ * A080679 Lexicographically earliest de Bruijn cycle of length <code>16 (repeated indefinitely)</code>.
  * @author Sean A. Irvine
  */
 public class A080679 extends LinearRecurrence {

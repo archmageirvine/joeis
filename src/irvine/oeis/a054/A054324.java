@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054324 Sixth unsigned column of Lanczos triangle A053125 (decreasing powers).
+ * A054324 Sixth unsigned column of Lanczos triangle <code>A053125 (decreasing powers)</code>.
  * @author Sean A. Irvine
  */
 public class A054324 extends LinearRecurrence {

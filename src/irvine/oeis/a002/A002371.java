@@ -6,7 +6,7 @@ import irvine.math.group.IntegersModMul;
 import irvine.factor.prime.Fast;
 
 /**
- * A002371 Period of decimal expansion of 1/(n-th prime) <code>(0</code> by convention for the primes 2 and 5).
+ * A002371 Period of decimal expansion of <code>1/(n-th prime) (0</code> by convention for the primes 2 and <code>5)</code>.
  * @author Sean A. Irvine
  */
 public class A002371 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163808 Write n in binary. Place <code>a 0</code> right of every 1 without <code>a 0</code> right of it. <code>a(n) =</code> the decimal value of the result.
+ * A163808 Write n in binary. Place a 0 right of every 1 without a 0 right of it. <code>a(n) =</code> the decimal value of the result.
  * @author Sean A. Irvine
  */
 public class A163808 implements Sequence {

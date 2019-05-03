@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014584 Number of Hamiltonian paths in <code>a 5</code> X n grid starting at the lower left corner and finishing in the upper right corner.
+ * A014584 Number of Hamiltonian paths in a <code>5 X n</code> grid starting at the lower left corner and finishing in the upper right corner.
  * @author Sean A. Irvine
  */
 public class A014584 implements Sequence {

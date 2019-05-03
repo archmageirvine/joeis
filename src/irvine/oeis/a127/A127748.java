@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127748 Largest n-digit emirp (A006567) with strictly decreasing (distinct) digits.
+ * A127748 Largest n-digit emirp <code>(A006567)</code> with strictly decreasing (distinct) digits.
  * @author Georg Fischer
  */
 public class A127748 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A008475 If <code>n =</code> Product (p_j^k_j) then <code>a(n) =</code> Sum (p_j^k_j) <code>(a(1) = 0</code> by convention).
+ * A008475 If <code>n =</code> Product <code>(p_j^k_j)</code> then <code>a(n) =</code> Sum <code>(p_j^k_j) (a(1) = 0</code> by <code>convention)</code>.
  * @author Sean A. Irvine
  */
 public class A008475 implements Sequence {

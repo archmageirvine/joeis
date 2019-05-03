@@ -8,7 +8,7 @@ import irvine.oeis.a122.A122748;
 import irvine.oeis.a122.A122749;
 
 /**
- * A005635 Number of ways of placing n non-attacking bishops on an n X n board so that every square is attacked (or occupied).
+ * A005635 Number of ways of placing <code>n non-attacking</code> bishops on an <code>n X n</code> board so that every square is attacked <code>(or occupied)</code>.
  * @author Sean A. Irvine
  */
 public class A005635 extends A122749 {

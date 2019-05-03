@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048245 Number of distinct terminal tic-tac-toe positions after n plays, up to rotation and reflection.
+ * A048245 Number of distinct terminal <code>tic-tac-toe</code> positions after n plays, up to rotation and reflection.
  * @author Georg Fischer
  */
 public class A048245 extends FiniteSequence {

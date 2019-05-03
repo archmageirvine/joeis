@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006629 Self-convolution 4th power of A001764, which enumerates ternary trees.
+ * A006629 <code>Self-convolution 4th</code> power of <code>A001764</code>, which enumerates ternary trees.
  * @author Sean A. Irvine
  */
 public class A006629 implements Sequence {

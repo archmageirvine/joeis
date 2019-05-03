@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131524 Number of possible palindromic rows (or columns) in an <code>n</code> X n crossword puzzle.
+ * A131524 Number of possible palindromic rows <code>(or columns)</code> in an <code>n X n</code> crossword puzzle.
  * @author Sean A. Irvine
  */
 public class A131524 extends LinearRecurrence {

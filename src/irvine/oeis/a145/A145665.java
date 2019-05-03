@@ -4,7 +4,7 @@ import irvine.math.group.Mathieu11;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A145665 <code>a(n) =</code> number of elements of order n in simple group M_11 of order 7920.
+ * A145665 <code>a(n) =</code> number of elements of order n in simple group <code>M_11</code> of order 7920.
  * @author Sean A. Irvine
  */
 public class A145665 extends OrdersFiniteGroupSequence {

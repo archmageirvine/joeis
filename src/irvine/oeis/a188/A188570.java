@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188570 Coefficients of the absolute term in <code>(1 + sqrt(2) + sqrt(3))^n</code> sequence, denoted as C1(n).
+ * A188570 Coefficients of the absolute term in <code>(1 + sqrt(2) + sqrt(3))^n</code> sequence, denoted as <code>C1(n)</code>.
  * @author Georg Fischer
  */
 public class A188570 extends LinearRecurrence {

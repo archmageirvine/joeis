@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A119436 Inverse permutation to sequence A119435.
+ * A119436 Inverse permutation to sequence <code>A119435</code>.
  * @author Sean A. Irvine
  */
 public class A119436 extends A119435 {

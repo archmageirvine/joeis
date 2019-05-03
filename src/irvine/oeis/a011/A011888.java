@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A011888 Partial sums of A011863.
+ * A011888 Partial sums of <code>A011863</code>.
  * @author Sean A. Irvine
  */
 public class A011888 extends PartialSumSequence {

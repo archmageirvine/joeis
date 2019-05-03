@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088098 Primes arising in A088097.
+ * A088098 Primes arising in <code>A088097</code>.
  * @author Georg Fischer
  */
 public class A088098 extends FiniteSequence {

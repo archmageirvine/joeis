@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093899 Triangle read by rows, consisting of distinct positive integers such that the absolute difference of (horizontally or vertically) adjacent numbers is a (least possible) distinct prime.
+ * A093899 Triangle read by rows, consisting of distinct positive integers such that the absolute difference of (horizontally or vertically) adjacent numbers is a <code>(least possible)</code> distinct prime.
  * @author Georg Fischer
  */
 public class A093899 extends FiniteSequence {

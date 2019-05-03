@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A165802 Primes p with f(p), f(f(p)), ... all prime, where <code>f(n) = (n-1)/2</code>. Stop when <code>f(</code>...f(p)...) is less than 4.
+ * A165802 Primes p with <code>f(p), f(f(p))</code>, ... all prime, where <code>f(n) = (n-1)/2</code>. Stop when <code>f(...f(p)...)</code> is less than 4.
  * @author Georg Fischer
  */
 public class A165802 extends FiniteSequence {

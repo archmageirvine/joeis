@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245323 <code>a(n) = F(6*n-3)*(L(2*n-1)+1)</code>, where F = A000045 are the Fibonacci and L = A000032 are the Lucas numbers.
+ * A245323 <code>a(n) = F(6*n-3)*(L(2*n-1)+1)</code>, where F <code>= A000045</code> are the Fibonacci and L <code>= A000032</code> are the Lucas numbers.
  * @author Sean A. Irvine
  */
 public class A245323 extends LinearRecurrence {

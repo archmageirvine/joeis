@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007147 Number of self-dual 2-colored necklaces with <code>2n</code> beads.
+ * A007147 Number of <code>self-dual 2-colored</code> necklaces with <code>2n</code> beads.
  * @author Sean A. Irvine
  */
 public class A007147 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A163670 Numbers whose English name (excluding spaces and hyphens) is written with only straight line segments (chisel strokes).
+ * A163670 Numbers whose English name (excluding spaces and hyphens) is written with only straight line segments <code>(chisel strokes)</code>.
  * @author Georg Fischer
  */
 public class A163670 extends FiniteSequence {

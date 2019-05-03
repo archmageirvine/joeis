@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicArray;
 import java.util.HashSet;
 
 /**
- * A003603 Fractal sequence obtained from Fibonacci numbers (or Wythoff array).
+ * A003603 Fractal sequence obtained from Fibonacci numbers (or Wythoff <code>array)</code>.
  * @author Sean A. Irvine
  */
 public class A003603 implements Sequence {

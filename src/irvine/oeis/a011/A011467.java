@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011467 Decimal expansion of 48th root of 48.
+ * A011467 Decimal expansion of <code>48th</code> root of 48.
  * @author Sean A. Irvine
  */
 public class A011467 extends DecimalExpansionSequence {

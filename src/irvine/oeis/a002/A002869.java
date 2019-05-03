@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019538;
 
 /**
- * A002869 Largest number in n-th row of triangle A019538.
+ * A002869 Largest number in n-th row of triangle <code>A019538</code>.
  * @author Sean A. Irvine
  */
 public class A002869 extends A019538 {

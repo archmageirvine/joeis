@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187673 Partial sums of the tricapped prism numbers A005920.
+ * A187673 Partial sums of the tricapped prism numbers <code>A005920</code>.
  * @author Sean A. Irvine
  */
 public class A187673 extends LinearRecurrence {

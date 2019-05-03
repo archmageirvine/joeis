@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051436 Number of undirected walks of length <code>n+1</code> on tetrahedron, visiting <code>n+2</code> vertices, with n "corners", as in A001998, but allowing only rigid motions in 3-space (|G| <code>= 12)</code>. Walks are not self-avoiding.
+ * A051436 Number of undirected walks of length <code>n+1</code> on tetrahedron, visiting <code>n+2</code> vertices, with n "corners", as in <code>A001998</code>, but allowing only rigid motions in <code>3-space (|G| = 12)</code>. Walks are not <code>self-avoiding</code>.
  * @author Sean A. Irvine
  */
 public class A051436 extends LinearRecurrence {

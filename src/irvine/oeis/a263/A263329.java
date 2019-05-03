@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A263329 Fixed points of permutations A263327 and A263328.
+ * A263329 Fixed points of permutations <code>A263327</code> and <code>A263328</code>.
  * @author Georg Fischer
  */
 public class A263329 extends FiniteSequence {

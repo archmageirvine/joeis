@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a038.A038399;
 
 /**
- * A134069 Primes in A038399.
+ * A134069 Primes in <code>A038399</code>.
  * @author Sean A. Irvine
  */
 public class A134069 extends A038399 {

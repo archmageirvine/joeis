@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246641 Sequence <code>a(n) = (1 +</code> A007805(n))/2, appearing in a certain touching problem for three circles and a chord, together with A007805.
+ * A246641 Sequence <code>a(n) = (1 + A007805(n))/2</code>, appearing in a certain touching problem for three circles and a chord, together with <code>A007805</code>.
  * @author Sean A. Irvine
  */
 public class A246641 extends LinearRecurrence {

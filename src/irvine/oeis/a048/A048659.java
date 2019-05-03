@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048659 Positions of letters in English alphabet (U.S. pronunciation) that rhyme with 'e'.
+ * A048659 Positions of letters in English alphabet <code>(U.S. pronunciation)</code> that rhyme with 'e'.
  * @author Georg Fischer
  */
 public class A048659 extends FiniteSequence {

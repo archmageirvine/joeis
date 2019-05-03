@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192858 Hosoya indices of the 2n-wheel graphs W_{2n}.
+ * A192858 Hosoya indices of the 2n-wheel graphs <code>W_{2n}</code>.
  * @author Sean A. Irvine
  */
 public class A192858 extends LinearRecurrence {

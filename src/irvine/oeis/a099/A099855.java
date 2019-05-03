@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099855 <code>n*2^n -</code> 2^(n/2)*sin(pi*n/4).
+ * A099855 <code>n*2^n - 2^(n/2)*sin(pi*n/4)</code>.
  * @author Sean A. Irvine
  */
 public class A099855 extends LinearRecurrence {

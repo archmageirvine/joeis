@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A086255 <code>a(n)</code> is the first prime for which floor(a(n)/p) is prime for all p among the first n primes.
+ * A086255 <code>a(n)</code> is the first prime for which <code>floor(a(n)/p)</code> is prime for all p among the first n primes.
  * @author Sean A. Irvine
  */
 public class A086255 implements Sequence {

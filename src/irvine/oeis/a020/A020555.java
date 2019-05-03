@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020555 Number of multigraphs on n labeled edges (with loops). Also number of genetically distinct states amongst n individuals.
+ * A020555 Number of multigraphs on n labeled edges <code>(with loops)</code>. Also number of genetically distinct states amongst n individuals.
  * @author Sean A. Irvine
  */
 public class A020555 extends MemoryFunction2<Integer, Z>  implements Sequence {

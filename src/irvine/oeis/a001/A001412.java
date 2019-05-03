@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001412 Number of n-step self-avoiding walks on cubic lattice.
+ * A001412 Number of <code>n-step self-avoiding</code> walks on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A001412 implements Sequence {

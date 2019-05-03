@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104155 The 64 codons of the genetic code, giving the value 1 to thymine (T), 3 to adenine (A), 2 to cytosine (C) and 4 to guanine (G).
+ * A104155 The 64 codons of the genetic code, giving the value 1 to thymine <code>(T), 3</code> to adenine <code>(A), 2</code> to cytosine (C) and 4 to guanine <code>(G)</code>.
  * @author Georg Fischer
  */
 public class A104155 extends FiniteSequence {

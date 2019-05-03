@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096957 Fourth column (m=3) of <code>(1</code>,6)-Pascal triangle A096956.
+ * A096957 Fourth column <code>(m=3)</code> of <code>(1,6)-Pascal</code> triangle <code>A096956</code>.
  * @author Sean A. Irvine
  */
 public class A096957 extends LinearRecurrence {

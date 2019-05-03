@@ -7,7 +7,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.ZUtils;
 
 /**
- * A071894 Largest positive primitive root (&lt;p) of n-th prime p.
+ * A071894 Largest positive primitive root <code>(&lt;p)</code> of n-th prime p.
  * @author Sean A. Irvine
  */
 public class A071894 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007612 <code>a(n+1) = a(n) +</code> digital root (A010888) of <code>a(n)</code>.
+ * A007612 <code>a(n+1) = a(n) +</code> digital root <code>(A010888)</code> of <code>a(n)</code>.
  * @author Sean A. Irvine
  */
 public class A007612 implements Sequence {

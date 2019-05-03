@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001006;
 
 /**
- * A005717 Construct triangle in which n-th row is obtained by expanding <code>(1 + x + x^2)^n</code> and take the next-to-central column.
+ * A005717 Construct triangle in which n-th row is obtained by expanding <code>(1 + x + x^2)^n</code> and take the <code>next-to-central</code> column.
  * @author Sean A. Irvine
  */
 public class A005717 extends A001006 {

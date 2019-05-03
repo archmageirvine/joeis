@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013497 E.g.f. <code>log(cosh(x)-log(x+1))= -x+1/2!*x^2+2/3!*x^3+5/4!*x^4-13/5!*x^5</code>...
+ * A013497 E.g.f. <code>log(cosh(x)-log(x+1))= -x+1/2!*x^2+2/3!*x^3+5/4!*x^4-13/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A013497 implements Sequence {

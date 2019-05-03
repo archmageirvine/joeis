@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A014486 List of totally balanced sequences of <code>2n</code> binary digits written in base 10. Binary expansion of each term contains n 0's and n 1's and reading from left to right (the most significant to the least significant bit), the number of 0's never exceeds the number of 1's.
+ * A014486 List of totally balanced sequences of <code>2n</code> binary digits written in base 10. Binary expansion of each term contains <code>n 0</code>'s and <code>n 1</code>'s and reading from left to right (the most significant to the least significant <code>bit)</code>, the number of <code>0</code>'s never exceeds the number of <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A014486 implements Sequence {

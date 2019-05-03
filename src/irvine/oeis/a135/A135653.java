@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135653 Divisors of 496 (the 3rd perfect number), written in base 2.
+ * A135653 Divisors of <code>496 (the 3rd</code> perfect number), written in base 2.
  * @author Georg Fischer
  */
 public class A135653 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A184938 Tightening order labels for a 24-bolt ring (construction/assembly).
+ * A184938 Tightening order labels for a 24-bolt ring <code>(construction/assembly)</code>.
  * @author Georg Fischer
  */
 public class A184938 extends FiniteSequence {

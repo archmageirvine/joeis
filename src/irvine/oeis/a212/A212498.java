@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A212498 A finite sequence (of length 39) in which every permutation of <code>[1..7]</code> is a substring.
+ * A212498 A finite sequence (of length <code>39)</code> in which every permutation of <code>[1..7]</code> is a substring.
  * @author Georg Fischer
  */
 public class A212498 extends FiniteSequence {

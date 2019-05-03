@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019767 Decimal expansion of 2*e/11.
+ * A019767 Decimal expansion of <code>2*e/11</code>.
  * @author Sean A. Irvine
  */
 public class A019767 extends DecimalExpansionSequence {

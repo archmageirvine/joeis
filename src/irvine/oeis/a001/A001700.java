@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001700 <code>a(n) = binomial(2n+1, n+1)</code>: number of ways to put <code>n+1</code> indistinguishable balls into <code>n+1</code> distinguishable boxes = number of (n+1)-st degree monomials in <code>n+1</code> variables = number of monotone maps from <code>1..n+1</code> to <code>1..n+1</code>.
+ * A001700 <code>a(n) = binomial(2n+1, n+1)</code>: number of ways to put <code>n+1</code> indistinguishable balls into <code>n+1</code> distinguishable boxes = number of <code>(n+1)-st</code> degree monomials in <code>n+1</code> variables = number of monotone maps from <code>1..n+1</code> to <code>1..n+1</code>.
  * @author Sean A. Irvine
  */
 public class A001700 implements Sequence {

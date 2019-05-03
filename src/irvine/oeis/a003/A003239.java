@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003239 Number of rooted planar trees with n non-root nodes: circularly cycling the subtrees at the root gives equivalent trees.
+ * A003239 Number of rooted planar trees with <code>n non-root</code> nodes: circularly cycling the subtrees at the root gives equivalent trees.
  * @author Sean A. Irvine
  */
 public class A003239 implements Sequence {

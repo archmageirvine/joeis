@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265227 Nonnegative m for which k*floor(m^2/9) = floor(k*m^2/9), with <code>2 &lt; k &lt; 9</code>.
+ * A265227 Nonnegative m for which <code>k*floor(m^2/9) = floor(k*m^2/9)</code>, with <code>2 &lt; k &lt; 9</code>.
  * @author Sean A. Irvine
  */
 public class A265227 extends LinearRecurrence {

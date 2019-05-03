@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175726 <code>a(n)</code> is the life span <code>(in</code> years) of the n-th person in the genealogy of the male line from Adam to Joseph according to the Masoretic Text of the Hebrew Bible.
+ * A175726 <code>a(n)</code> is the life span <code>(in years)</code> of the n-th person in the genealogy of the male line from Adam to Joseph according to the Masoretic Text of the Hebrew Bible.
  * @author Georg Fischer
  */
 public class A175726 extends FiniteSequence {

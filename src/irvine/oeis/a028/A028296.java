@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A028296 Expansion of e.g.f. <code>Gudermannian(x) = 2*arctan(exp(x)) -</code> Pi/2.
+ * A028296 Expansion of e.g.f. <code>Gudermannian(x) = 2*arctan(exp(x)) - Pi/2</code>.
  * @author Sean A. Irvine
  */
 public class A028296 extends A000364 {

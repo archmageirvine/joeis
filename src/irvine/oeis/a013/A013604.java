@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013604 <code>a(n) = 3^n - prevprime(3^n)</code>, where <code>prevprime(x)</code> is the largest prime <code>&lt; x</code>.
+ * A013604 <code>a(n) = 3^n - prevprime(3^n)</code>, where <code>prevprime(x)</code> is the largest prime <code>&lt</code>; x.
  * @author Sean A. Irvine
  */
 public class A013604 implements Sequence {

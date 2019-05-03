@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007858 G.f. is <code>1 - 1/f(x)</code>, where <code>f(x) = 1+x+3*x^2+9*x^3+32*x^4+.</code>.. is <code>1/x</code> times g.f. for A063020.
+ * A007858 G.f. is <code>1 - 1/f(x)</code>, where <code>f(x) = 1+x+3*x^2+9*x^3+32*x^4+..</code>. is <code>1/x</code> times g.f. for <code>A063020</code>.
  * @author Sean A. Irvine
  */
 public class A007858 implements Sequence {

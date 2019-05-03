@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007180;
 
 /**
- * A001394 Number of n-step self-avoiding walks on diamond.
+ * A001394 Number of <code>n-step self-avoiding</code> walks on diamond.
  * @author Sean A. Irvine
  */
 public class A001394 extends A007180 {

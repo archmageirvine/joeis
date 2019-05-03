@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003134 Orders of Weyl groups of type E_n.
+ * A003134 Orders of Weyl groups of type <code>E_n</code>.
  * @author Sean A. Irvine
  */
 public class A003134 extends FiniteSequence {

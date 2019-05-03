@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105327 Numbers n such that pi(n)=pi(d_1!)+pi(d_2!)+...+pi(d_k!) where d_1 d_2 ...d_k is the decimal expansion of n.
+ * A105327 Numbers n such that <code>pi(n)=pi(d_1!)+pi(d_2!)+...+pi(d_k!)</code> where <code>d_1 d_2 ...d_k</code> is the decimal expansion of n.
  * @author Georg Fischer
  */
 public class A105327 extends FiniteSequence {

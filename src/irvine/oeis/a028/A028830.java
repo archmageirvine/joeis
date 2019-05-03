@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028830 Distinct orders of elements of Conway simple group Co_2.
+ * A028830 Distinct orders of elements of Conway simple group <code>Co_2</code>.
  * @author Georg Fischer
  */
 public class A028830 extends FiniteSequence {

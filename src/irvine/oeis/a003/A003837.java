@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003837 Order of (usually) simple Chevalley group D_n <code>(3)</code>.
+ * A003837 Order of (usually) simple Chevalley group <code>D_n (3)</code>.
  * @author Sean A. Irvine
  */
 public class A003837 implements Sequence {

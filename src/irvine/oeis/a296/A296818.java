@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A296818 Squarefree values of n for which the quadratic field Q[ <code>sqrt(n) ]</code> possesses a norm-Euclidean ideal class.
+ * A296818 Squarefree values of n for which the quadratic field <code>Q[ sqrt(n) ]</code> possesses a norm-Euclidean ideal class.
  * @author Georg Fischer
  */
 public class A296818 extends FiniteSequence {

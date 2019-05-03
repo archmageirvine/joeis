@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124471 Benjamin Franklin's 8 X 8 magic square read by rows.
+ * A124471 Benjamin Franklin's <code>8 X 8</code> magic square read by rows.
  * @author Georg Fischer
  */
 public class A124471 extends FiniteSequence {

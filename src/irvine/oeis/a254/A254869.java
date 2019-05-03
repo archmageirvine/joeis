@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254869 Seventh partial sums of cubes (A000578).
+ * A254869 Seventh partial sums of cubes <code>(A000578)</code>.
  * @author Sean A. Irvine
  */
 public class A254869 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008660 Theta series of direct sum of 4 copies of D_4 lattice.
+ * A008660 Theta series of direct sum of 4 copies of <code>D_4</code> lattice.
  * @author Sean A. Irvine
  */
 public class A008660 implements Sequence {

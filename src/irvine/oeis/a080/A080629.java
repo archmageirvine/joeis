@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080629 Consider 3 X 3 X 3 Rubik cube, but consider only positions of corners; sequence gives number of positions that are exactly n moves from the start.
+ * A080629 Consider <code>3 X 3 X 3</code> Rubik cube, but consider only positions of corners; sequence gives number of positions that are exactly n moves from the start.
  * @author Georg Fischer
  */
 public class A080629 extends FiniteSequence {

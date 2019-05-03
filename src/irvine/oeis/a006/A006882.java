@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006882 Double factorials <code>n!!</code>: <code>a(n) = n*a(n-2)</code> for <code>n &gt; 1, a(0) = a(1) = 1</code>.
+ * A006882 Double factorials <code>n!!: a(n) = n*a(n-2)</code> for <code>n &gt; 1, a(0) = a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A006882 implements Sequence {

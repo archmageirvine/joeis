@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A191616 <code>a(1) = 1; a(n)</code> is the largest number m such that m-A085392(m) <code>= a(n-1)</code>.
+ * A191616 <code>a(1) = 1; a(n)</code> is the largest number m such that <code>m-A085392(m) = a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A191616 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006245 Number of primitive sorting networks on n elements; also number of rhombic tilings of 2n-gon.
+ * A006245 Number of primitive sorting networks on n elements; also number of rhombic tilings of <code>2n-gon</code>.
  * @author Sean A. Irvine
  */
 public class A006245 implements Sequence {

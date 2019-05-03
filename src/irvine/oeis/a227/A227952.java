@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227952 Wow! Signal intensity signature (6EQUJ5).
+ * A227952 <code>Wow!</code> Signal intensity signature <code>(6EQUJ5)</code>.
  * @author Georg Fischer
  */
 public class A227952 extends FiniteSequence {

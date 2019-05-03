@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000409 Singular n X <code>n (0</code>,1)-matrices: the number of n X <code>n (0</code>,1)-matrices having distinct, nonzero ordered rows, but having at least two equal columns or at least one zero column.
+ * A000409 Singular <code>n X n (0,1)-matrices</code>: the number of <code>n X n (0,1)-matrices</code> having distinct, nonzero ordered rows, but having at least two equal columns or at least one zero column.
  * @author Sean A. Irvine
  */
 public class A000409 implements Sequence {

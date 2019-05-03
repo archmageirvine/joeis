@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019491 Numbers n for which number of distinct prime divisors of <code>binomial(n,k)</code> has local minimum at <code>k = n/2</code>.
+ * A019491 Numbers n for which number of distinct prime divisors of <code>binomial(n,k)</code> has local minimum at k <code>= n/2</code>.
  * @author Sean A. Irvine
  */
 public class A019491 implements Sequence {

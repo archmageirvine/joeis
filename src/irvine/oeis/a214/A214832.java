@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214832 Integer part of A440 piano key frequencies.
+ * A214832 Integer part of <code>A440</code> piano key frequencies.
  * @author Georg Fischer
  */
 public class A214832 extends FiniteSequence {

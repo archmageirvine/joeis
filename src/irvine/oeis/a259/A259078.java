@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259078 Heptagonal numbers (A000566) that are other heptagonal numbers divided by 2.
+ * A259078 Heptagonal numbers <code>(A000566)</code> that are other heptagonal numbers divided by 2.
  * @author Sean A. Irvine
  */
 public class A259078 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228211 Decimal expansion of Legendre's constant (incorrect, the true value is 1, as in A000007).
+ * A228211 Decimal expansion of Legendre's constant <code>(incorrect</code>, the true value is 1, as in <code>A000007)</code>.
  * @author Georg Fischer
  */
 public class A228211 extends FiniteSequence {

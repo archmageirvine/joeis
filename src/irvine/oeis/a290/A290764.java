@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290764 Number of (non-null) connected induced subgraphs in the 2 X n king graph.
+ * A290764 Number of <code>(non-null)</code> connected induced subgraphs in the <code>2 X n</code> king graph.
  * @author Sean A. Irvine
  */
 public class A290764 extends LinearRecurrence {

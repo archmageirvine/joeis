@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003314 Binary entropy function: <code>a(1)=0</code>; for <code>n &gt; 1, a(n) = n +</code> min <code>{ a(k)+a(n-k) </code>: <code>1 &lt;= k &lt;= n-1 }</code>.
+ * A003314 Binary entropy function: <code>a(1)=0</code>; for <code>n &gt; 1, a(n) = n +</code> min <code>{ a(k)+a(n-k) : 1 &lt;= k &lt;= n-1 }</code>.
  * @author Sean A. Irvine
  */
 public class A003314 extends MemorySequence {

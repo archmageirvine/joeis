@@ -13,7 +13,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A001325 Number of equivalence classes of 3-valued Post functions of n variables under action of semi-direct product of symmetric group S_n and complementing group <code>D(n,3)</code>.
+ * A001325 Number of equivalence classes of 3-valued Post functions of n variables under action of semi-direct product of symmetric group <code>S_n</code> and complementing group <code>D(n,3)</code>.
  * @author Sean A. Irvine
  */
 public class A001325 implements Sequence {

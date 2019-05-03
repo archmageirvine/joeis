@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013551 Numerator of <code>[x^n]</code> in the Taylor expansion <code>exp(cot(x)-coth(x))= 1-2*x/3 +2x^2/9 -4*x^3/81 +2*x^4/243 -136*x^5/25515 +676*x^6/229635 -</code>...
+ * A013551 Numerator of <code>[x^n]</code> in the Taylor expansion <code>exp(cot(x)-coth(x))= 1-2*x/3 +2x^2/9 -4*x^3/81 +2*x^4/243 -136*x^5/25515 +676*x^6/229635 -..</code>.
  * @author Sean A. Irvine
  */
 public class A013551 implements Sequence {

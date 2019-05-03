@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a005.A005092;
 
 /**
- * A007000 Number of partitions of n into Fibonacci parts (with 2 types of 1).
+ * A007000 Number of partitions of n into Fibonacci parts <code>(with 2</code> types of <code>1)</code>.
  * @author Sean A. Irvine
  */
 public class A007000 extends MemorySequence {

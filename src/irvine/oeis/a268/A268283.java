@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A268283 Number of distinct directed Hamiltonian cycles of the Platonic graphs <code>(in</code> the order of tetrahedral, cubical, octahedral, dodecahedral, and icosahedral graph).
+ * A268283 Number of distinct directed Hamiltonian cycles of the Platonic graphs (in the order of tetrahedral, cubical, octahedral, dodecahedral, and icosahedral <code>graph)</code>.
  * @author Georg Fischer
  */
 public class A268283 extends FiniteSequence {

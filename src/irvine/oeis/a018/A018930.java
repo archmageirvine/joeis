@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018930 <code>a(1)=3</code>; for <code>n&gt;1, a(n)</code> is smallest positive integer such that <code>a(1)^2+...+a(n)^2 =</code> m^2 for some m.
+ * A018930 <code>a(1)=3</code>; for <code>n&gt;1, a(n)</code> is smallest positive integer such that <code>a(1)^2+...+a(n)^2 = m^2</code> for some m.
  * @author Sean A. Irvine
  */
 public class A018930 implements Sequence {

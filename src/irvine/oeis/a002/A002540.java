@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A002540 Increasing gaps between prime-powers.
+ * A002540 Increasing gaps between <code>prime-powers</code>.
  * @author Sean A. Irvine
  */
 public class A002540 extends A000961 {

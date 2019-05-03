@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004535 Theta series of 14-dimensional unimodular lattice (E7+E7)+.
+ * A004535 Theta series of 14-dimensional unimodular lattice <code>(E7+E7)+</code>.
  * @author Sean A. Irvine
  */
 public class A004535 implements Sequence {

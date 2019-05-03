@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229593 Number of boomerang patterns appearing in n X n coins, rotation not allowed.
+ * A229593 Number of boomerang patterns appearing in <code>n X n</code> coins, rotation not allowed.
  * @author Sean A. Irvine
  */
 public class A229593 extends LinearRecurrence {

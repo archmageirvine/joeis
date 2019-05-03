@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A234849 Positions of records in iterated MD5 applied to empty string.
+ * A234849 Positions of records in iterated <code>MD5</code> applied to empty string.
  * @author Sean A. Irvine
  */
 public class A234849 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133029 Divisors of 1729, the 2nd taxicab number (also called the Hardy-Ramanujan number).
+ * A133029 Divisors of 1729, the 2nd taxicab number (also called the <code>Hardy-Ramanujan</code> number).
  * @author Georg Fischer
  */
 public class A133029 extends FiniteSequence {

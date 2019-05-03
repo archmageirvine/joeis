@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063002 Number of paths of length <code>n+2</code> originating at an interior vertex of 4 X 4 Boggle board.
+ * A063002 Number of paths of length <code>n+2</code> originating at an interior vertex of <code>4 X 4</code> Boggle board.
  * @author Georg Fischer
  */
 public class A063002 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A020519 11th cyclotomic polynomial evaluated at powers of 2.
+ * A020519 <code>11th</code> cyclotomic polynomial evaluated at powers of 2.
  * @author Sean A. Irvine
  */
 public class A020519 implements Sequence {

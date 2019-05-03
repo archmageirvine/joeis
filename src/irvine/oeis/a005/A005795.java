@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005795 Degrees of fundamental invariants of Weyl group W(E7).
+ * A005795 Degrees of fundamental invariants of Weyl group <code>W(E7)</code>.
  * @author Sean A. Irvine
  */
 public class A005795 extends FiniteSequence {

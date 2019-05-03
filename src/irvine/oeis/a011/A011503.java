@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011503 Decimal expansion of 84th root of 84.
+ * A011503 Decimal expansion of <code>84th</code> root of 84.
  * @author Sean A. Irvine
  */
 public class A011503 extends DecimalExpansionSequence {

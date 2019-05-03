@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100638 Successive powers of the matrix A=[1,2;3,4] written by rows in groups of 4.
+ * A100638 Successive powers of the matrix <code>A=[1,2;3,4]</code> written by rows in groups of 4.
  * @author Georg Fischer
  */
 public class A100638 extends LinearRecurrence {

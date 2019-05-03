@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177068 10^n+n^10.
+ * A177068 <code>10^n+n^10</code>.
  * @author Sean A. Irvine
  */
 public class A177068 extends LinearRecurrence {

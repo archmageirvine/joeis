@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277240 Number of factorizations of m^n into exactly four factors, where m is a product of two distinct primes.
+ * A277240 Number of factorizations of <code>m^n</code> into exactly four factors, where m is a product of two distinct primes.
  * @author Sean A. Irvine
  */
 public class A277240 extends LinearRecurrence {

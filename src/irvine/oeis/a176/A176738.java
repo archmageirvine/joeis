@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176738 Expansion of <code>1 / ((1+x)*(1-x-4*x^2)). (5</code>,4)-Padovan sequence.
+ * A176738 Expansion of <code>1 / ((1+x)*(1-x-4*x^2)). (5,4)-Padovan</code> sequence.
  * @author Sean A. Irvine
  */
 public class A176738 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155041 Diagonal sums of symmetric <code>(1</code>,-1)-triangle A155040.
+ * A155041 Diagonal sums of symmetric <code>(1,-1)-triangle A155040</code>.
  * @author Sean A. Irvine
  */
 public class A155041 extends LinearRecurrence {

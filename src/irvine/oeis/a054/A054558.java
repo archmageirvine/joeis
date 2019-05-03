@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054558 Number of labeled pure 2-complexes on n nodes (0-simplexes) with 5 2-simplexes and 9 1-simplexes.
+ * A054558 Number of labeled pure 2-complexes on n nodes <code>(0-simplexes)</code> with <code>5 2-simplexes</code> and <code>9 1-simplexes</code>.
  * @author Sean A. Irvine
  */
 public class A054558 extends LinearRecurrence {

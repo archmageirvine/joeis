@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216972 <code>a(4n+2) = 2</code>, otherwise <code>a(n) = n</code>.
+ * A216972 <code>a(4n+2) = 2</code>, otherwise <code>a(n) =</code> n.
  * @author Sean A. Irvine
  */
 public class A216972 extends LinearRecurrence {

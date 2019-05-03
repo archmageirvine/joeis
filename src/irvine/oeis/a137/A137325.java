@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137325 Number of terms in the Janet periodic table of the elements 32 columns: ordered 14 2's, 10 4's, 6 6's, 2 8's.
+ * A137325 Number of terms in the Janet periodic table of the elements 32 columns: ordered <code>14 2's, 10 4's, 6 6's, 2 8</code>'s.
  * @author Georg Fischer
  */
 public class A137325 extends FiniteSequence {

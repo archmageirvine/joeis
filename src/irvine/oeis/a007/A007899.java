@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007899 Coordination sequence for hexagonal close-packing.
+ * A007899 Coordination sequence for hexagonal <code>close-packing</code>.
  * @author Sean A. Irvine
  */
 public class A007899 implements Sequence {

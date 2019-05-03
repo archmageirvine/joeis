@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144679 Related to enumeration of quantum states (see reference for precise definition).
+ * A144679 Related to enumeration of quantum states (see reference for precise <code>definition)</code>.
  * @author Georg Fischer
  */
 public class A144679 extends LinearRecurrence {

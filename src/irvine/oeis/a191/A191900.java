@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191900 Number of compositions of odd natural numbers into 7 parts &lt;=n.
+ * A191900 Number of compositions of odd natural numbers into 7 parts <code>&lt;=n</code>.
  * @author Sean A. Irvine
  */
 public class A191900 extends LinearRecurrence {

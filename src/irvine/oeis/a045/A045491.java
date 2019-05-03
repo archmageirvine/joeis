@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a131.A131985;
 
 /**
- * A045491 McKay-Thompson series of class 9A for the Monster group with <code>a(0) = 3</code>.
+ * A045491 McKay-Thompson series of class <code>9A</code> for the Monster group with <code>a(0) = 3</code>.
  * @author Sean A. Irvine
  */
 public class A045491 extends A131985 {

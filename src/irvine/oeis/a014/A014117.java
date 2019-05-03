@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014117 Numbers n such that m^(n+1) <code>==</code> m <code>(mod n)</code> holds for all m.
+ * A014117 Numbers n such that <code>m^(n+1) == m (mod n)</code> holds for all m.
  * @author Sean A. Irvine
  */
 public class A014117 extends FiniteSequence {

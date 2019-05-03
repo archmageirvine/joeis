@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006221 From Apery continued fraction for <code>zeta(3)</code>: <code>zeta(3)=6/(5-1^6/(117-2^6/(535-3^6/(1463...)))</code>.
+ * A006221 From Apery continued fraction for <code>zeta(3): zeta(3)=6/(5-1^6/(117-2^6/(535-3^6/(1463...)))</code>.
  * @author Sean A. Irvine
  */
 public class A006221 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069306 Number of 2 X n binary arrays with a path of adjacent 1's from upper left corner to anywhere in right hand column.
+ * A069306 Number of <code>2 X n</code> binary arrays with a path of adjacent <code>1</code>'s from upper left corner to anywhere in right hand column.
  * @author Sean A. Irvine
  */
 public class A069306 extends LinearRecurrence {

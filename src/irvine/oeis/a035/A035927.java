@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035927 One less than number of n-multisets chosen from a 10-set.
+ * A035927 One less than number of n-multisets chosen from a <code>10-set</code>.
  * @author Sean A. Irvine
  */
 public class A035927 extends LinearRecurrence {

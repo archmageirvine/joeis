@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028299 Weight distribution of the dodecacode, <code>a [[12,0,6]]</code> quantum-error-correcting code.
+ * A028299 Weight distribution of the dodecacode, a <code>[[12,0,6]] quantum-error-correcting</code> code.
  * @author Georg Fischer
  */
 public class A028299 extends FiniteSequence {

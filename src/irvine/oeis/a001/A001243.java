@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001243 Eulerian numbers (Euler's triangle: column <code>k=7</code> of A008292, column <code>k=6</code> of A173018).
+ * A001243 Eulerian numbers <code>(Euler</code>'s triangle: column <code>k=7</code> of <code>A008292</code>, column <code>k=6</code> of <code>A173018)</code>.
  * @author Sean A. Irvine
  */
 public class A001243 implements Sequence {

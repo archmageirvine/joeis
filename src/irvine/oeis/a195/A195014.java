@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195014 Vertex number of a square spiral whose edges have length A195013.
+ * A195014 Vertex number of a square spiral whose edges have length <code>A195013</code>.
  * @author Sean A. Irvine
  */
 public class A195014 extends LinearRecurrence {

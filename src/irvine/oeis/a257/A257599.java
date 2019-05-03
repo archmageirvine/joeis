@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A257599 Cusp numbers of members of A091401.
+ * A257599 Cusp numbers of members of <code>A091401</code>.
  * @author Georg Fischer
  */
 public class A257599 extends FiniteSequence {

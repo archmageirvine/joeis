@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A292439 List of numbers k whose consecutive digits increase or decrease by d-1, where d is the number of digits in k.
+ * A292439 List of numbers k whose consecutive digits increase or decrease by <code>d-1</code>, where d is the number of digits in k.
  * @author Georg Fischer
  */
 public class A292439 extends FiniteSequence {

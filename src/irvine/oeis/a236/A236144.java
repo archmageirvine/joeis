@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236144 <code>a(n) = F(floor( (n+3)/2 )) * L(floor( (n+2)/2 ))</code> where F=Fibonacci and L=Lucas numbers.
+ * A236144 <code>a(n) = F(floor( (n+3)/2 )) * L(floor( (n+2)/2 ))</code> where <code>F=Fibonacci</code> and <code>L=Lucas</code> numbers.
  * @author Sean A. Irvine
  */
 public class A236144 extends LinearRecurrence {

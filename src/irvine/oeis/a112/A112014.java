@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112014 Numbers n with odd length such that <code>n =</code> d_1+(d_2^d_3)+ ...+(d_(k-1)^d_k) where d_1 d_2 ... d_k is the decimal expansion of n.
+ * A112014 Numbers n with odd length such that <code>n = d_1+(d_2^d_3)+ ...+(d_(k-1)^d_k)</code> where <code>d_1 d_2</code> ... <code>d_k</code> is the decimal expansion of n.
  * @author Georg Fischer
  */
 public class A112014 extends FiniteSequence {

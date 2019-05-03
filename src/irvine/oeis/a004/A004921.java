@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004921 Floor of n*phi^6, phi = golden ratio, A001622.
+ * A004921 Floor of <code>n*phi^6</code>, phi = golden ratio, <code>A001622</code>.
  * @author Sean A. Irvine
  */
 public class A004921 implements Sequence {

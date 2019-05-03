@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124720 Number of ternary Lyndon words of length n with exactly two 1's.
+ * A124720 Number of ternary Lyndon words of length n with exactly two <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A124720 extends LinearRecurrence {

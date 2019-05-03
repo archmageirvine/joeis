@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159914 Half the number of (n-3)-element subsets of <code>{1,...,n}</code> whose elements sum up to an odd value.
+ * A159914 Half the number of <code>(n-3)-element</code> subsets of <code>{1,...,n}</code> whose elements sum up to an odd value.
  * @author Sean A. Irvine
  */
 public class A159914 extends LinearRecurrence {

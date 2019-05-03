@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014968 Expansion of (1/theta_4 <code>- 1)/2</code>.
+ * A014968 Expansion of <code>(1/theta_4 - 1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A014968 implements Sequence {

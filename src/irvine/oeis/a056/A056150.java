@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A056150 Number of combinations for each possible sum when throwing 3 (normal) dice.
+ * A056150 Number of combinations for each possible sum when throwing <code>3 (normal)</code> dice.
  * @author Georg Fischer
  */
 public class A056150 extends FiniteSequence {

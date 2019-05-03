@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085518 One of the three possible weight distributions for <code>a [16,7,6]</code> binary code.
+ * A085518 One of the three possible weight distributions for a <code>[16,7,6]</code> binary code.
  * @author Georg Fischer
  */
 public class A085518 extends FiniteSequence {

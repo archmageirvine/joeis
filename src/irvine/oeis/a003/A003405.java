@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003405 G.f.: (1+x^4+x^7+2*x^8+x^9+x^12+x^16)/Prod_{i=1..8} <code>(1-x^i)</code>.
+ * A003405 G.f.: <code>(1+x^4+x^7+2*x^8+x^9+x^12+x^16)/Prod_{i=1..8} (1-x^i)</code>.
  * @author Sean A. Irvine
  */
 public class A003405 implements Sequence {

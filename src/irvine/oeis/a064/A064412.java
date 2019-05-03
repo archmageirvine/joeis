@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064412 At stage 1, start with a unit equilateral equiangular triangle. At each successive stage add <code>3*(n-1)</code> new triangles around outside with edge-to-edge contacts. Sequence gives number of triangles (regardless of size) at n-th stage.
+ * A064412 At stage 1, start with a unit equilateral equiangular triangle. At each successive stage add <code>3*(n-1)</code> new triangles around outside with <code>edge-to-edge</code> contacts. Sequence gives number of triangles (regardless of size) at n-th stage.
  * @author Sean A. Irvine
  */
 public class A064412 extends LinearRecurrence {

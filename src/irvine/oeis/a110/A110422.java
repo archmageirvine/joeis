@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110422 <code>a(n) = sum(</code> (-1)^(r+1)*(n-r)*r, r <code>= 1..floor(n/2) )</code>.
+ * A110422 <code>a(n) = sum( (-1)^(r+1)*(n-r)*r, r = 1..floor(n/2) )</code>.
  * @author Sean A. Irvine
  */
 public class A110422 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A002088 Sum of totient function: <code>a(n) = Sum_{k=1..n} phi(k)</code>, cf. A000010.
+ * A002088 Sum of totient function: <code>a(n) = Sum_{k=1..n} phi(k)</code>, cf. <code>A000010</code>.
  * @author Sean A. Irvine
  */
 public class A002088 extends PartialSumSequence {

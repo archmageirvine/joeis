@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011256 Decimal expansion of 17th root of 8.
+ * A011256 Decimal expansion of <code>17th</code> root of 8.
  * @author Sean A. Irvine
  */
 public class A011256 extends DecimalExpansionSequence {

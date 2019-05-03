@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074458 Number of segments needed to be lit to display a number n in 7-segment LED display <code>(i</code>.e., digital number display, such as calculators).
+ * A074458 Number of segments needed to be lit to display a number n in 7-segment LED display <code>(i.e.</code>, digital number display, such as <code>calculators)</code>.
  * @author Georg Fischer
  */
 public class A074458 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002515 Lucasian primes: p <code>== 3 (mod 4)</code> with 2*p+1 prime.
+ * A002515 Lucasian primes: p <code>== 3 (mod 4)</code> with <code>2*p+1</code> prime.
  * @author Sean A. Irvine
  */
 public class A002515 implements Sequence {

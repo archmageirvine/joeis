@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018809 Number of lines through exactly 2 points of an n X n grid of points.
+ * A018809 Number of lines through exactly 2 points of an <code>n X n</code> grid of points.
  * @author Sean A. Irvine
  */
 public class A018809 extends MemoryFunction2<Integer, Z> implements Sequence {

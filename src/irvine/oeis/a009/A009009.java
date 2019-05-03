@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009009 Expansion of e.g.f.: <code>1/cos(sinh(x))</code> (even-indexed coefficients only).
+ * A009009 Expansion of e.g.f.: <code>1/cos(sinh(x)) (even-indexed</code> coefficients <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A009009 implements Sequence {

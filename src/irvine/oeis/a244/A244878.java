@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244878 Number of 6 X 6 traceless symmetric magic squares with magic sum n.
+ * A244878 Number of <code>6 X 6</code> traceless symmetric magic squares with magic sum n.
  * @author Sean A. Irvine
  */
 public class A244878 extends LinearRecurrence {

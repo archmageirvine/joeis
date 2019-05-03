@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154140 Indices k such that 6 plus the k-th triangular number is a perfect square. 
+ * A154140 Indices k such that 6 plus the k-th triangular number is a perfect square.
  * @author Georg Fischer
  */
 public class A154140 extends LinearRecurrence {

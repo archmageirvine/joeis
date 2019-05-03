@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018896 <code>a(n) = ( a(n-1)*a(n-7) + a(n-4)^2 ) / a(n-8); a(0) = ... = a(7) = 1</code>.
+ * A018896 <code>a(n) = ( a(n-1)*a(n-7) + a(n-4)^2 ) / a(n-8); a(0) =</code> ... <code>= a(7) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A018896 implements Sequence {

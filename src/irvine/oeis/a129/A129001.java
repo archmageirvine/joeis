@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129001 Heights of roots in Cartan root systems for exceptional groups: A1, G2, F4, E6, E7, E8.
+ * A129001 Heights of roots in Cartan root systems for exceptional groups: <code>A1, G2, F4, E6, E7, E8</code>.
  * @author Georg Fischer
  */
 public class A129001 extends FiniteSequence {

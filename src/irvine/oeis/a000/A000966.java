@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000966 <code>n!</code> never ends in this many 0's.
+ * A000966 <code>n!</code> never ends in this many <code>0</code>'s.
  * @author Sean A. Irvine
  */
 public class A000966 implements Sequence {

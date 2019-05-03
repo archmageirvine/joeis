@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A020994 Primes that are both left-truncatable and right-truncatable.
+ * A020994 Primes that are both left-truncatable and <code>right-truncatable</code>.
  * @author Georg Fischer
  */
 public class A020994 extends FiniteSequence {

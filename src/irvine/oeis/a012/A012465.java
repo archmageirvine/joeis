@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012465 <code>cosh(arctan(x)*arctan(x))=1+12/4!*x^4-480/6!*x^6+31248/8!*x^8</code>...
+ * A012465 <code>cosh(arctan(x)*arctan(x))=1+12/4!*x^4-480/6!*x^6+31248/8!*x^8..</code>.
  * @author Sean A. Irvine
  */
 public class A012465 implements Sequence {

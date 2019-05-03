@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075151 <code>a(n)=L(n)^2*C(n)</code>, L(n)=Lucas numbers (A000032), C(n)=reflected Lucas numbers (comment to A061084).
+ * A075151 <code>a(n)=L(n)^2*C(n), L(n)=Lucas</code> numbers <code>(A000032), C(n)=reflected</code> Lucas numbers (comment to <code>A061084)</code>.
  * @author Sean A. Irvine
  */
 public class A075151 extends LinearRecurrence {

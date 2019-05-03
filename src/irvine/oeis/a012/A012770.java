@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012770 <code>-log(cosh(x)*cos(x))=-4/4!*x^4-544/8!*x^8-707584/12!*x^12</code>...
+ * A012770 <code>-log(cosh(x)*cos(x))=-4/4!*x^4-544/8!*x^8-707584/12!*x^12..</code>.
  * @author Sean A. Irvine
  */
 public class A012770 implements Sequence {

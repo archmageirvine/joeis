@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020529 4th Bernoulli polynomial evaluated at powers of 2 (multiplied by 30).
+ * A020529 4th Bernoulli polynomial evaluated at powers of <code>2 (multiplied</code> by <code>30)</code>.
  * @author Sean A. Irvine
  */
 public class A020529 extends LinearRecurrence {

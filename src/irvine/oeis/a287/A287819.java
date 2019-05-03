@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287819 Number of nonary sequences of length n such that no two consecutive terms have distance 4. 
+ * A287819 Number of nonary sequences of length n such that no two consecutive terms have distance 4.
  * @author Georg Fischer
  */
 public class A287819 extends LinearRecurrence {

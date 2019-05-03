@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074752 Number of combinatorially inequivalent cyclic subgroups of S_n of order <code>6. </code> Number of partitions of n of order 6.
+ * A074752 Number of combinatorially inequivalent cyclic subgroups of <code>S_n</code> of order 6. Number of partitions of n of order 6.
  * @author Sean A. Irvine
  */
 public class A074752 extends LinearRecurrence {

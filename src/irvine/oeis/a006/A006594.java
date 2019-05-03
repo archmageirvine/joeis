@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A006594 A Beatty sequence: <code>[ n(1 +</code> 1/e) ].
+ * A006594 A Beatty sequence: <code>[ n(1 + 1/e) ]</code>.
  * @author Sean A. Irvine
  */
 public class A006594 extends BeattySequence {

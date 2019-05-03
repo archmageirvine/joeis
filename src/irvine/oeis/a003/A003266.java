@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A003266 Product of first n nonzero Fibonacci numbers <code>F(1), ..., F(n)</code>.
+ * A003266 Product of first n nonzero Fibonacci numbers <code>F(1)</code>, ..., <code>F(n)</code>.
  * @author Sean A. Irvine
  */
 public class A003266 extends A000045 {

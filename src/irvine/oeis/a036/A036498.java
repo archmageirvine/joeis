@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036498 Numbers of the form m*(6*m-1) and m*(6*m+1), where m is an integer.
+ * A036498 Numbers of the form <code>m*(6*m-1)</code> and <code>m*(6*m+1)</code>, where m is an integer.
  * @author Sean A. Irvine
  */
 public class A036498 extends LinearRecurrence {

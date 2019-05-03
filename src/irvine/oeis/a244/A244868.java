@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244868 Number of symmetric 5 X 5 matrices of nonnegative integers with zeros on the main diagonal and every row and column adding to n.
+ * A244868 Number of symmetric <code>5 X 5</code> matrices of nonnegative integers with zeros on the main diagonal and every row and column adding to n.
  * @author Sean A. Irvine
  */
 public class A244868 extends LinearRecurrence {

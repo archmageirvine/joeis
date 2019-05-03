@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295909 Number of (not necessarily maximum) cliques in the n X n black bishop graph.
+ * A295909 Number of (not necessarily maximum) cliques in the <code>n X n</code> black bishop graph.
  * @author Georg Fischer
  */
 public class A295909 extends LinearRecurrence {

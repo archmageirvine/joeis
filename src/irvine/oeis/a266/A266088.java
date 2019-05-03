@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266088 Alternating sum of 12-gonal (or dodecagonal) numbers.
+ * A266088 Alternating sum of <code>12-gonal (or dodecagonal)</code> numbers.
  * @author Sean A. Irvine
  */
 public class A266088 extends LinearRecurrence {

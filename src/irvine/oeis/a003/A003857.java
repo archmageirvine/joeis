@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003857 Degrees of irreducible representations of Mathieu group M_22.
+ * A003857 Degrees of irreducible representations of Mathieu group <code>M_22</code>.
  * @author Sean A. Irvine
  */
 public class A003857 extends FiniteSequence {

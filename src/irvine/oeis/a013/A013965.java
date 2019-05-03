@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013965 <code>a(n) =</code> sigma_17(n), the sum of the 17th powers of the divisors of n.
+ * A013965 <code>a(n) = sigma_17(n)</code>, the sum of the <code>17th</code> powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013965 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020894.
+ * A020894 Nonnegative numbers that are sums of two nonzero cubes.
  * @author Sean A. Irvine
  */
 public class A020894 implements Sequence {

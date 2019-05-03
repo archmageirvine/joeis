@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001069 Log2*(n) (version 2): take log_2 of n this many times to get a number <code>&lt; 2</code>.
+ * A001069 <code>Log2*(n) (version 2)</code>: take <code>log_2</code> of n this many times to get a number <code>&lt; 2</code>.
  * @author Sean A. Irvine
  */
 public class A001069 implements Sequence {

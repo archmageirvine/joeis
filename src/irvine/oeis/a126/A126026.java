@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126026 Conjectured upper bound on area of the convex hull of <code>any</code> edge-to-edge connected system of regular unit hexagons (n-polyhexes).
+ * A126026 Conjectured upper bound on area of the convex hull of any <code>edge-to-edge</code> connected system of regular unit hexagons <code>(n-polyhexes)</code>.
  * @author Sean A. Irvine
  */
 public class A126026 extends LinearRecurrence {

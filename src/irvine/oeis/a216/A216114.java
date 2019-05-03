@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216114 The Wiener index of a link of n fullerenes C_{20} (see the Ghorbani and Hosseinzadeh reference).
+ * A216114 The Wiener index of a link of n fullerenes <code>C_{20} (see</code> the Ghorbani and Hosseinzadeh <code>reference)</code>.
  * @author Sean A. Irvine
  */
 public class A216114 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002672 Denominators of central difference coefficients M_{3}^(2n+1).
+ * A002672 Denominators of central difference coefficients <code>M_{3}^(2n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A002672 extends MemoryFunction2<Integer, Q> implements Sequence {

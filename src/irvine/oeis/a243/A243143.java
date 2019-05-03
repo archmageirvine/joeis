@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243143 Number of inequivalent <code>(mod</code> D_3) ways to place 4 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of <code>any</code> orientation.
+ * A243143 Number of inequivalent <code>(mod D_3)</code> ways to place 4 points on a triangular grid of side n so that they are not vertices of an equilateral triangle of any orientation.
  * @author Sean A. Irvine
  */
 public class A243143 extends LinearRecurrence {

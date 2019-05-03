@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173858 Expansion of <code>4/3</code> in base phi.
+ * A173858 Expansion of 4/3 in base phi.
  * @author Georg Fischer
  */
 public class A173858 extends LinearRecurrence {

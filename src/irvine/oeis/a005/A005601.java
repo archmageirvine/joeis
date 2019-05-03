@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A005601 Decimal expansion of proton-to-electron mass ratio.
+ * A005601 Decimal expansion of <code>proton-to-electron</code> mass ratio.
  * @author Sean A. Irvine
  */
 public class A005601 extends DoubleDecimalExpansionSequence {

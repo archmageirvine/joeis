@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001415 Number of ways of folding <code>a 2</code> X n strip of stamps.
+ * A001415 Number of ways of folding a <code>2 X n</code> strip of stamps.
  * @author Fred Lunnon (ALGOL68, C versions)
  * @author Sean A. Irvine (port to Java)
  */

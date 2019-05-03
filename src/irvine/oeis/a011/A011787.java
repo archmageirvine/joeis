@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065128;
 
 /**
- * A011787 Number of n X n matrices over Z_4 whose determinant is 1.
+ * A011787 Number of <code>n X n</code> matrices over <code>Z_4</code> whose determinant is 1.
  * @author Sean A. Irvine
  */
 public class A011787 extends A065128 {

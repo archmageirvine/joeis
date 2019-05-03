@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192333 Numbers that are "unsafe" when playing the game Dollar Nim, which is a Nim game where users can remove 1, 5, 10, or 25 cents from an initial pile of money. The most common version of the game is played with an initial amount of $1, hence the name.
+ * A192333 Numbers that are "unsafe" when playing the game Dollar Nim, which is a Nim game where users can remove <code>1, 5, 10</code>, or 25 cents from an initial pile of money. The most common version of the game is played with an initial amount of <code>$1</code>, hence the name.
  * @author Sean A. Irvine
  */
 public class A192333 extends LinearRecurrence {

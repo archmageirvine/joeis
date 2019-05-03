@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143175 a(n)=|A143174(n+1)-A143174(n)|.
+ * A143175 <code>a(n)=|A143174(n+1)-A143174(n)|</code>.
  * @author Georg Fischer
  */
 public class A143175 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092881 Number of ordered 3-multiantichains on an n-set.
+ * A092881 Number of ordered 3-multiantichains on an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A092881 extends LinearRecurrence {

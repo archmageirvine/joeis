@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012345 Coefficients in the expansion <code>sinh(arcsin(x)*arcsin(x)) = 2*x^2/2!+8*x^4/4!+248*x^6/6!+11328*x^8/8!+</code>...
+ * A012345 Coefficients in the expansion <code>sinh(arcsin(x)*arcsin(x)) = 2*x^2/2!+8*x^4/4!+248*x^6/6!+11328*x^8/8!+..</code>.
  * @author Sean A. Irvine
  */
 public class A012345 implements Sequence {

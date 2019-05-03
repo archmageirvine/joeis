@@ -1,7 +1,7 @@
 package irvine.oeis.a085;
 
 /**
- * A085594 Duplicate of A085587.
+ * A085594 Duplicate of <code>A085587</code>.
  * @author Sean A. Irvine
  */
 public class A085594 extends A085593 {

@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289163 Number of 5-cycles in the n X n black bishop graph.
+ * A289163 Number of 5-cycles in the <code>n X n</code> black bishop graph.
  * @author Sean A. Irvine
  */
 public class A289163 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A000804 Permanent of a certain cyclic n X <code>n (0,1)</code> matrix.
+ * A000804 Permanent of a certain cyclic <code>n X n (0,1)</code> matrix.
  * @author Sean A. Irvine
  */
 public class A000804 extends RatPolyGfSequence {

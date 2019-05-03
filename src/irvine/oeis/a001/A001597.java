@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001597 Perfect powers: m^k where m <code>&gt; 0</code> and <code>k &gt;= 2</code>.
+ * A001597 Perfect powers: <code>m^k</code> where m <code>&gt; 0</code> and k <code>&gt;= 2</code>.
  * @author Sean A. Irvine
  */
 public class A001597 implements Sequence {

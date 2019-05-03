@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167818 Number of reduced words of length n in Coxeter group on 37 generators S_i with relations (S_i)^2 = (S_i S_j)^15 = I.
+ * A167818 Number of reduced words of length n in Coxeter group on 37 generators <code>S_i</code> with relations <code>(S_i)^2 = (S_i S_j)^15 =</code> I.
  * @author Sean A. Irvine
  */
 public class A167818 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A045910 Numbers with digits nondecreasing and their reciprocals sum to 1/(positive integer).
+ * A045910 Numbers with digits nondecreasing and their reciprocals sum to <code>1/(positive integer)</code>.
  * @author Georg Fischer
  */
 public class A045910 extends FiniteSequence {

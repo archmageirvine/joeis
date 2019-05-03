@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.nt.cyclotomic.Cyclotomic;
 
 /**
- * A007615 Primes with unique period length (the periods are given in A007498).
+ * A007615 Primes with unique period length (the periods are given in <code>A007498)</code>.
  * @author Sean A. Irvine
  */
 public class A007615 extends A007498 {

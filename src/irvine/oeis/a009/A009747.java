@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009747 E.g.f. <code>tan(x)*sinh(x)</code> (even powers only).
+ * A009747 E.g.f. <code>tan(x)*sinh(x) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A009747 implements Sequence {

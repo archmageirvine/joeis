@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167587 The fifth row of the ED4 array A167584: <code>80*n^4 + 952*n^2 - 768*n + 525</code>.
+ * A167587 The fifth row of the <code>ED4</code> array <code>A167584: 80*n^4 + 952*n^2 - 768*n + 525</code>.
  * @author Sean A. Irvine
  */
 public class A167587 extends LinearRecurrence {

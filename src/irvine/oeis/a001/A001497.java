@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001497 Triangle of coefficients of Bessel polynomials (exponents in decreasing order).
+ * A001497 Triangle of coefficients of Bessel polynomials (exponents in decreasing <code>order)</code>.
  * @author Sean A. Irvine
  */
 public class A001497 implements Sequence {

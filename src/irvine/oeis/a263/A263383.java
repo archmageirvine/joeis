@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A263383 Lengths of cycles of permutation A263327.
+ * A263383 Lengths of cycles of permutation <code>A263327</code>.
  * @author Georg Fischer
  */
 public class A263383 extends FiniteSequence {

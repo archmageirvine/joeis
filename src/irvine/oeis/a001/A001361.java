@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001361 Number of points in interior of n-th crystal ball in E_8 lattice.
+ * A001361 Number of points in interior of n-th crystal ball in <code>E_8</code> lattice.
  * @author Sean A. Irvine
  */
 public class A001361 implements Sequence {

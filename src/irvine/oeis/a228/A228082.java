@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A228082 Numbers that are of the form <code>k +</code> sum of binary digits of k for some nonnegative integer k.
+ * A228082 Numbers that are of the form k + sum of binary digits of k for some nonnegative integer k.
  * @author Sean A. Irvine
  */
 public class A228082 implements Sequence {

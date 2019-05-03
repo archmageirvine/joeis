@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007351 Where prime race 4m-1 vs. 4m+1 is tied.
+ * A007351 Where prime race <code>4m-1</code> vs. <code>4m+1</code> is tied.
  * @author Sean A. Irvine
  */
 public class A007351 implements Sequence {

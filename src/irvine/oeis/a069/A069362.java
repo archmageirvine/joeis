@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069362 Number of 4 X n binary arrays with a path of adjacent 1's from top row to bottom row.
+ * A069362 Number of <code>4 X n</code> binary arrays with a path of adjacent <code>1</code>'s from top row to bottom row.
  * @author Sean A. Irvine
  */
 public class A069362 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a006.A006206;
 
 /**
- * A001461 Partial sums of A006206.
+ * A001461 Partial sums of <code>A006206</code>.
  * @author Sean A. Irvine
  */
 public class A001461 extends PartialSumSequence {

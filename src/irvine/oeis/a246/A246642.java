@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246642 Sequence appearing in the curvature of a certain four circle touching problem: <code> (-3 +</code> 5*A007805(n))/2.
+ * A246642 Sequence appearing in the curvature of a certain four circle touching problem: <code>(-3 + 5*A007805(n))/2</code>.
  * @author Sean A. Irvine
  */
 public class A246642 extends LinearRecurrence {

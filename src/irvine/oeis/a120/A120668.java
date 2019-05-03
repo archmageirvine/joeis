@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A120668 Row sums of A129844.
+ * A120668 Row sums of <code>A129844</code>.
  * @author Georg Fischer
  */
 public class A120668 extends FiniteSequence {

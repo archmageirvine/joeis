@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a321.A321546;
 
 /**
- * A002614 Glaisher's function <code>theta(n) (18</code> squares version).
+ * A002614 Glaisher's function <code>theta(n) (18</code> squares <code>version)</code>.
  * @author Sean A. Irvine
  */
 public class A002614 extends A321546 {

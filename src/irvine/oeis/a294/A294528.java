@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A294528 <code>a(n)</code> is the smallest prime that begins a run of exactly n consecutive numbers having <code>2, 4, ..., 2n</code> divisors, or <code>-1</code> if no such prime exists.
+ * A294528 <code>a(n)</code> is the smallest prime that begins a run of exactly n consecutive numbers having <code>2, 4</code>, ..., <code>2n</code> divisors, or -1 if no such prime exists.
  * @author Georg Fischer
  */
 public class A294528 extends FiniteSequence {

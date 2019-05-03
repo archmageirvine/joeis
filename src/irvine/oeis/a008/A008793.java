@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008793 Number of ways to tile hexagon of edge n with diamonds of side 1. Also number of plane partitions whose Young diagrams fit inside an n X n X n box.
+ * A008793 Number of ways to tile hexagon of edge n with diamonds of side 1. Also number of plane partitions whose Young diagrams fit inside an <code>n X n X n</code> box.
  * @author Sean A. Irvine
  */
 public class A008793 implements Sequence {

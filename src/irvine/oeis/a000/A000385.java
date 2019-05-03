@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.oeis.ConvolutionSequence;
 
 /**
- * A000385 Convolution of A000203 with itself.
+ * A000385 Convolution of <code>A000203</code> with itself.
  * @author Sean A. Irvine
  */
 public class A000385 extends ConvolutionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211379 Number of pairs of parallel diagonals in a regular n-gon.
+ * A211379 Number of pairs of parallel diagonals in a regular <code>n-gon</code>.
  * @author Sean A. Irvine
  */
 public class A211379 extends LinearRecurrence {

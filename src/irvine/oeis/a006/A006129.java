@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006129 <code>a(0), a(1), a(2), .</code>.. satisfy <code>Sum_{k=0..n} a(k)*binomial(n,k) = 2^binomial(n,2)</code>, for <code>n &gt;= 0</code>.
+ * A006129 <code>a(0), a(1), a(2)</code>, ... satisfy <code>Sum_{k=0..n} a(k)*binomial(n,k) = 2^binomial(n,2)</code>, for <code>n &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A006129 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117066 Partial sums of cupolar numbers <code>(1/3)*(n+1)*(5*n^2+7*n+3)</code> (A096000).
+ * A117066 Partial sums of cupolar numbers <code>(1/3)*(n+1)*(5*n^2+7*n+3) (A096000)</code>.
  * @author Sean A. Irvine
  */
 public class A117066 extends LinearRecurrence {

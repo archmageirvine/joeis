@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a051.A051775;
 
 /**
- * A004476 Nim product <code>11 * n</code>.
+ * A004476 Nim product <code>11 *</code> n.
  * @author Sean A. Irvine
  */
 public class A004476 extends A051775 {

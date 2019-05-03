@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287396 <code>a(n) =</code> (7*(csc(2*Pi/7))^2)^n + (7*(csc(4*Pi/7))^2)^n + (7*(csc(8*Pi/7))^2)^n.
+ * A287396 <code>a(n) = (7*(csc(2*Pi/7))^2)^n + (7*(csc(4*Pi/7))^2)^n + (7*(csc(8*Pi/7))^2)^n</code>.
  * @author Sean A. Irvine
  */
 public class A287396 extends LinearRecurrence {

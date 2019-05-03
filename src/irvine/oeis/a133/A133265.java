@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133265 Diagonal of the A135356 triangle.
+ * A133265 Diagonal of the <code>A135356</code> triangle.
  * @author Sean A. Irvine
  */
 public class A133265 extends LinearRecurrence {

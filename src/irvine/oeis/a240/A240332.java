@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240332 Inverse of 49th cyclotomic polynomial.
+ * A240332 Inverse of <code>49th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A240332 extends LinearRecurrence {

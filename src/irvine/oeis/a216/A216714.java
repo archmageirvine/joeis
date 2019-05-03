@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216714 <code>a(n) = 2^(n-5) -</code> A000931(n).
+ * A216714 <code>a(n) = 2^(n-5) - A000931(n)</code>.
  * @author Sean A. Irvine
  */
 public class A216714 extends LinearRecurrence {

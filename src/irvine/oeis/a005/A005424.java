@@ -5,7 +5,7 @@ import irvine.oeis.a116.A116550;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A005424 Smallest number that requires n iterations of the bi-unitary totient function (A116550) to reach 1.
+ * A005424 Smallest number that requires n iterations of the bi-unitary totient function <code>(A116550)</code> to reach 1.
  * @author Sean A. Irvine
  */
 public class A005424 extends A116550 {

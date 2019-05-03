@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063267 Eighth column <code>(k=7)</code> of septinomial array A063265.
+ * A063267 Eighth column <code>(k=7)</code> of septinomial array <code>A063265</code>.
  * @author Sean A. Irvine
  */
 public class A063267 extends LinearRecurrence {

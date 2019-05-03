@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A003671 Decimal expansion of Bohr radius (meters).
+ * A003671 Decimal expansion of Bohr radius <code>(meters)</code>.
  * @author Sean A. Irvine
  */
 public class A003671 extends DoubleDecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012365 Expansion of e.g.f.: <code>sech(tan(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-27/4!*x^4-60/5!*x^5</code>...
+ * A012365 Expansion of e.g.f.: <code>sech(tan(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-27/4!*x^4-60/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A012365 implements Sequence {

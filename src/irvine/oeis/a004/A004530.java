@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004530 Expansion of (theta_2(0, <code>x) +</code> theta_3(0, <code>x) +</code> theta_4(0, <code>x)) / 2</code> in powers of <code>x^(1/4)</code>.
+ * A004530 Expansion of <code>(theta_2(0, x) + theta_3(0, x) + theta_4(0, x)) / 2</code> in powers of <code>x^(1/4)</code>.
  * @author Sean A. Irvine
  */
 public class A004530 implements Sequence {

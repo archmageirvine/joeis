@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A039617 Solution to a "self-describing sequence" puzzle of Raphael Robinson.
+ * A039617 Solution to a <code>"self-describing</code> sequence" puzzle of Raphael Robinson.
  * @author Georg Fischer
  */
 public class A039617 extends FiniteSequence {

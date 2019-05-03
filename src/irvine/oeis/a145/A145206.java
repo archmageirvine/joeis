@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145206 Numbers X such that 201*X^2+67 is a square.
+ * A145206 Numbers X such that <code>201*X^2+67</code> is a square.
  * @author Sean A. Irvine
  */
 public class A145206 extends LinearRecurrence {

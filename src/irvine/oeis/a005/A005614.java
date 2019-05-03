@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005614 The binary complement of the infinite Fibonacci word A003849. Start with 1, apply <code>0-&gt;1, 1-&gt;10</code>, iterate, take limit.
+ * A005614 The binary complement of the infinite Fibonacci word <code>A003849</code>. Start with 1, apply <code>0-&gt;1, 1-&gt;10</code>, iterate, take limit.
  * @author Sean A. Irvine
  */
 public class A005614 implements Sequence {

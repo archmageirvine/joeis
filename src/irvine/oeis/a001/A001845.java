@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001845 Centered octahedral numbers (crystal ball sequence for cubic lattice).
+ * A001845 Centered octahedral numbers (crystal ball sequence for cubic <code>lattice)</code>.
  * @author Sean A. Irvine
  */
 public class A001845 implements Sequence {

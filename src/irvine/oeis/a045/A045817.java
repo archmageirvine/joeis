@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045817 Numbers n written in base 7, where in the list of divisors of <code>n (in</code> base 7), each digit <code>0-6</code> appears equally often.
+ * A045817 Numbers n written in base 7, where in the list of divisors of <code>n (in</code> base <code>7)</code>, each digit 0-6 appears equally often.
  * @author Sean A. Irvine
  */
 public class A045817 implements Sequence {

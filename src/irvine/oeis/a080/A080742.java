@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.math.z.Z;
 
 /**
- * A080742 Largest element of n-th row of A080738.
+ * A080742 Largest element of n-th row of <code>A080738</code>.
  * @author Sean A. Irvine
  */
 public class A080742 extends A080738 {

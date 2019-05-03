@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A006575 Number of primitive (aperiodic, or Lyndon) asymmetric rhythm cycles: ones having no nontrivial shift automorphism.
+ * A006575 Number of primitive <code>(aperiodic</code>, or Lyndon) asymmetric rhythm cycles: ones having no nontrivial shift automorphism.
  * @author Sean A. Irvine
  */
 public class A006575 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A284663 Number of dominating sets in the Moebius ladder M_n.
+ * A284663 Number of dominating sets in the Moebius ladder <code>M_n</code>.
  * @author Sean A. Irvine
  */
 public class A284663 extends LinearRecurrence {

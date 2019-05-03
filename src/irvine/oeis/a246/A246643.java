@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246643 A sequence used in the touching circle problem described in A247512.
+ * A246643 A sequence used in the touching circle problem described in <code>A247512</code>.
  * @author Sean A. Irvine
  */
 public class A246643 extends LinearRecurrence {

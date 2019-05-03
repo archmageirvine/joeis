@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006061 Star numbers (A003154) that are squares.
+ * A006061 Star numbers <code>(A003154)</code> that are squares.
  * @author Sean A. Irvine
  */
 public class A006061 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018246 A self-generating sequence: there are <code>a(n)</code> (k+1)'s between successive k's, where <code>k=5</code>.
+ * A018246 A self-generating sequence: there are <code>a(n) (k+1)</code>'s between successive k's, where <code>k=5</code>.
  * @author Sean A. Irvine
  */
 public class A018246 implements Sequence {

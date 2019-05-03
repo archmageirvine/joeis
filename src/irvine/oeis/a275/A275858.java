@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275858 <code>a(n) =</code> floor(c*r*a(n-1)) - floor(d*s*a(n-2)), where r <code>= (1+sqrt(5))/2</code>, s = r/(r-1), c <code>= 1</code>, d <code>= 1, a(0) = 1, a(1) = 1</code>.
+ * A275858 <code>a(n) = floor(c*r*a(n-1)) - floor(d*s*a(n-2))</code>, where r <code>= (1+sqrt(5))/2, s = r/(r-1), c = 1, d = 1, a(0) = 1, a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A275858 extends LinearRecurrence {

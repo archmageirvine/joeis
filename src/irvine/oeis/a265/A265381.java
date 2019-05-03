@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265381 Decimal representation of the middle column of the "Rule 158" elementary cellular automaton starting with a single ON (black) cell.
+ * A265381 Decimal representation of the middle column of the "Rule <code>158"</code> elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A265381 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A160343 The sequence contains numbers n such that the two closest numbers above and below n, which are in A010784 and which have no common digit with n, have the same distance to n.
+ * A160343 The sequence contains numbers n such that the two closest numbers above and below n, which are in <code>A010784</code> and which have no common digit with n, have the same distance to n.
  * @author Georg Fischer
  */
 public class A160343 extends FiniteSequence {

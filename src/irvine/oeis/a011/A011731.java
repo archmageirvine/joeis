@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearFeedbackShiftRegisterSequence;
 
 /**
- * A011731 A binary m-sequence: expansion of reciprocal of <code>x^18 + x^7 + 1 (mod 2</code>, shifted by 17 initial 0's).
+ * A011731 A binary m-sequence: expansion of reciprocal of <code>x^18 + x^7 + 1 (mod 2</code>, shifted by 17 initial <code>0's)</code>.
  * @author Sean A. Irvine
  */
 public class A011731 extends LinearFeedbackShiftRegisterSequence {

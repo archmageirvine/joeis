@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003880 Degrees of irreducible representations of group L2(8).
+ * A003880 Degrees of irreducible representations of group <code>L2(8)</code>.
  * @author Sean A. Irvine
  */
 public class A003880 extends FiniteSequence {

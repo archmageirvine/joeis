@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.math.z.Z;
 
 /**
- * A210026 List of successive digits in A210025.
+ * A210026 List of successive digits in <code>A210025</code>.
  * @author Sean A. Irvine
  */
 public class A210026 extends A210025 {

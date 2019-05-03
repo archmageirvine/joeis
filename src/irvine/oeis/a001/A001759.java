@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001759 Number of permutations of <code>[n]</code> with <code>n-3</code> sequences.
+ * A001759 Number of permutations of [n] with <code>n-3</code> sequences.
  * @author Sean A. Irvine
  */
 public class A001759 extends A001758 {

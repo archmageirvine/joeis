@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212750 Number of (w,x,y,z) with all terms in <code>{0,...,n}</code> and at least one of these conditions holds: w=R, x=R, y&lt;R, z&lt;R, where R = max{w,x,y,z} - min{w,x,y,z}.
+ * A212750 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and at least one of these conditions holds: <code>w=R, x=R</code>, y&lt;R, z&lt;R, where R <code>= max{w,x,y,z} - min{w,x,y,z}</code>.
  * @author Sean A. Irvine
  */
 public class A212750 extends LinearRecurrence {

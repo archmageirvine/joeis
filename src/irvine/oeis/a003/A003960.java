@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003960 Fully multiplicative with a(p) <code>= [</code> (p+1)/2 ] for prime p.
+ * A003960 Fully multiplicative with <code>a(p) = [ (p+1)/2 ]</code> for prime p.
  * @author Sean A. Irvine
  */
 public class A003960 implements Sequence {

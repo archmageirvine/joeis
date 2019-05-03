@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006189 Number of self-avoiding walks of <code>any</code> length from NW to SW corners of a grid or lattice with n rows and 3 columns.
+ * A006189 Number of self-avoiding walks of any length from NW to SW corners of a grid or lattice with n rows and 3 columns.
  * @author Sean A. Irvine
  */
 public class A006189 extends LinearRecurrence {

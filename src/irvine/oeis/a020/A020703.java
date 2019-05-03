@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020703 Take the sequence of natural numbers (A000027) and reverse successive subsequences of lengths 1,3,5,7,...
+ * A020703 Take the sequence of natural numbers <code>(A000027)</code> and reverse successive subsequences of lengths 1,3,5,7,...
  * @author Sean A. Irvine
  */
 public class A020703 implements Sequence {

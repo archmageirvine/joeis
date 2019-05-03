@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A014073 Number of vectors abcdefg with <code>a,b,... &gt;= 0, a+</code>...+g=n, <code>a&gt;={b,</code>...g}.
+ * A014073 Number of vectors abcdefg with a,b,... <code>&gt;= 0, a+...+g=n, a&gt;={b,...g}</code>.
  * @author Sean A. Irvine
  */
 public class A014073 extends RatPolyGfSequence {

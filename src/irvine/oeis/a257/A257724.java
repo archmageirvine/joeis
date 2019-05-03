@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257724 Hexagonal numbers (A000384) that are the sum of fourteen consecutive hexagonal numbers.
+ * A257724 Hexagonal numbers <code>(A000384)</code> that are the sum of fourteen consecutive hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A257724 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254138 Pentagonal numbers (A000326) which are also centered hexagonal numbers (A003215).
+ * A254138 Pentagonal numbers <code>(A000326)</code> which are also centered hexagonal numbers <code>(A003215)</code>.
  * @author Sean A. Irvine
  */
 public class A254138 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A091824 Numbers p such that ((p-1)!*2^(p-1) + 1)/p is a prime.
+ * A091824 Numbers p such that <code>((p-1)!*2^(p-1) + 1)/p</code> is a prime.
  * @author Sean A. Irvine
  */
 public class A091824 implements Sequence {

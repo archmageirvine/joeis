@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122539 Number of benzenoids with 21 hexagons with D_(2h) symmetry and <code>60+2n</code> carbons.
+ * A122539 Number of benzenoids with 21 hexagons with <code>D_(2h)</code> symmetry and <code>60+2n</code> carbons.
  * @author Georg Fischer
  */
 public class A122539 extends FiniteSequence {

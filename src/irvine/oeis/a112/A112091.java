@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112091 Number of idempotent order-preserving partial transformations (of an n-element chain).
+ * A112091 Number of idempotent order-preserving partial transformations (of an <code>n-element chain)</code>.
  * @author Sean A. Irvine
  */
 public class A112091 extends LinearRecurrence {

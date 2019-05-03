@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A103117 Berend Jan van der Zwaag's conjectured complete list of numbers that start different "expanding periodic loops" under the mapping described in A053392 and A060630.
+ * A103117 Berend Jan van der Zwaag's conjectured complete list of numbers that start different "expanding periodic loops" under the mapping described in <code>A053392</code> and <code>A060630</code>.
  * @author Georg Fischer
  */
 public class A103117 extends FiniteSequence {

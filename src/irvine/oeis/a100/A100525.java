@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100525 Bisection of A048654.
+ * A100525 Bisection of <code>A048654</code>.
  * @author Sean A. Irvine
  */
 public class A100525 extends LinearRecurrence {

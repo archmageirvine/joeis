@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003565 Least number m such that 9^m <code>= +- 1 mod 9n + 1</code>.
+ * A003565 Least number m such that <code>9^m = +- 1 mod 9n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A003565 extends A003559 {

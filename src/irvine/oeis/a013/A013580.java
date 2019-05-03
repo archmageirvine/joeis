@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013580 Triangle formed in same way as Pascal's triangle (A007318) except 1 is added to central element in even-numbered rows.
+ * A013580 Triangle formed in same way as Pascal's triangle <code>(A007318)</code> except 1 is added to central element in even-numbered rows.
  * @author Sean A. Irvine
  */
 public class A013580 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014509 Truncation of Bernoulli number: floor(|B_2n|) * sign(B_2n).
+ * A014509 Truncation of Bernoulli number: <code>floor(|B_2n|) * sign(B_2n)</code>.
  * @author Sean A. Irvine
  */
 public class A014509 implements Sequence {

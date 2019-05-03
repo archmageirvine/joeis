@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015102 Carlitz-Riordan q-Catalan numbers (recurrence version) for q=-6.
+ * A015102 <code>Carlitz-Riordan q-Catalan</code> numbers <code>(recurrence version)</code> for <code>q=-6</code>.
  * @author Sean A. Irvine
  */
 public class A015102 extends A015083 {

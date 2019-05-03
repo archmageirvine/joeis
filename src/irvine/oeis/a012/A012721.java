@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012721 <code>exp(arctanh(x)*sin(x))=1+2/2!*x^2+16/4!*x^4+350/6!*x^6+16280/8!*x^8</code>...
+ * A012721 <code>exp(arctanh(x)*sin(x))=1+2/2!*x^2+16/4!*x^4+350/6!*x^6+16280/8!*x^8..</code>.
  * @author Sean A. Irvine
  */
 public class A012721 implements Sequence {

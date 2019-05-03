@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104818 First occurrence of n in partition of decimal expansion of Pi A104807.
+ * A104818 First occurrence of n in partition of decimal expansion of <code>Pi A104807</code>.
  * @author Georg Fischer
  */
 public class A104818 extends FiniteSequence {

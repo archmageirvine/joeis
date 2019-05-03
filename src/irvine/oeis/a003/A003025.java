@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a058.A058876;
 
 /**
- * A003025 Number of n-node labeled acyclic digraphs with 1 out-point.
+ * A003025 Number of n-node labeled acyclic digraphs with <code>1 out-point</code>.
  * @author Sean A. Irvine
  */
 public class A003025 extends A058876 {

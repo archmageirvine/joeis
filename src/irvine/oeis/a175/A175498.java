@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import java.util.HashSet;
 
 /**
- * A175498 <code>a(1)=1. a(n) =</code> the smallest positive integer not occurring earlier such that <code>a(n)-a(n-1)</code> doesn't equal <code>a(k)-a(k-1)</code> for <code>any k</code> with <code>2 &lt;= k &lt;= n-1</code>.
+ * A175498 <code>a(1)=1. a(n) =</code> the smallest positive integer not occurring earlier such that <code>a(n)-a(n-1)</code> doesn't equal <code>a(k)-a(k-1)</code> for any k with <code>2 &lt;= k &lt;= n-1</code>.
  * @author Sean A. Irvine
  */
 public class A175498 extends MemorySequence {

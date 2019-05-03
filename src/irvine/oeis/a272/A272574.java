@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272574 <code>a(n) = f(9, f(8, n))</code>, where <code>f(k</code>,m) = floor(m*k/(k-1)).
+ * A272574 <code>a(n) = f(9, f(8, n))</code>, where <code>f(k,m) = floor(m*k/(k-1))</code>.
  * @author Sean A. Irvine
  */
 public class A272574 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A113204 Same as A007022, but with orientation-reversing isomorphisms forbidden.
+ * A113204 Same as <code>A007022</code>, but with orientation-reversing isomorphisms forbidden.
  * @author Sean A. Irvine
  */
 public class A113204 implements Sequence {

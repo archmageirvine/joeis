@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A118563 The set of numbers of the form A003173(n)+1 with odd A003173(n) or of the form 2*(A003173(n)+1) with even A003173(n).
+ * A118563 The set of numbers of the form <code>A003173(n)+1</code> with odd <code>A003173(n)</code> or of the form <code>2*(A003173(n)+1)</code> with even <code>A003173(n)</code>.
  * @author Georg Fischer
  */
 public class A118563 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013456 Expansion of e.g.f.: <code>exp(tan(x)-arctanh(x))=1-8/5!*x^5-448/7!*x^7-32384/9!*x^9+8064/10!*x^10</code>...
+ * A013456 Expansion of e.g.f.: <code>exp(tan(x)-arctanh(x))=1-8/5!*x^5-448/7!*x^7-32384/9!*x^9+8064/10!*x^10..</code>.
  * @author Sean A. Irvine
  */
 public class A013456 implements Sequence {

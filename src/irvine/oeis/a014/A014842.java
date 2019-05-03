@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014842 Difference between A014837 and A014841.
+ * A014842 Difference between <code>A014837</code> and <code>A014841</code>.
  * @author Sean A. Irvine
  */
 public class A014842 extends A014837 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a139.A139399;
 
 /**
- * A006460 Image of n after <code>3k</code> iterates of `3x+1' map <code>(k</code> large).
+ * A006460 Image of n after <code>3k</code> iterates of <code>`3x+1'</code> map <code>(k large)</code>.
  * @author Sean A. Irvine
  */
 public class A006460 extends A139399 {

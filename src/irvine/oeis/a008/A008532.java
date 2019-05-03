@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008532 Coordination sequence for 4-dimensional I-centered cubic orthogonal lattice.
+ * A008532 Coordination sequence for <code>4-dimensional I-centered</code> cubic orthogonal lattice.
  * @author Sean A. Irvine
  */
 public class A008532 extends CoordinationSequence {

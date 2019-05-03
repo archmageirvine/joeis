@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094569 Associated with alternating row sums of array in A094568.
+ * A094569 Associated with alternating row sums of array in <code>A094568</code>.
  * @author Sean A. Irvine
  */
 public class A094569 extends LinearRecurrence {

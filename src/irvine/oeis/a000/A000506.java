@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008970;
 
 /**
- * A000506 One half of the number of permutations of <code>[n]</code> such that the differences have 5 runs with the same signs.
+ * A000506 One half of the number of permutations of [n] such that the differences have 5 runs with the same signs.
  * @author Sean A. Irvine
  */
 public class A000506 extends A008970 {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003913 Degrees of irreducible representations of Fischer group Fi22.
+ * A003913 Degrees of irreducible representations of Fischer group <code>Fi22</code>.
  * @author Sean A. Irvine
  */
 public class A003913 extends FiniteSequence {

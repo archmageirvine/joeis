@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.ArrayList;
 
 /**
- * A002855 {m <code>+ n</code>: m in A002382, n in A002381}.
+ * A002855 <code>{m +</code> n: m in <code>A002382, n</code> in <code>A002381}</code>.
  * @author Sean A. Irvine
  */
 public class A002855 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004902 Numbers that are the sum of at most 7 nonzero 10th powers.
+ * A004902 Numbers that are the sum of at most 7 nonzero <code>10th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004902 extends A004897 {

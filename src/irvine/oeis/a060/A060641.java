@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060641 Surround numbers of a length <code>2n</code> zig-zag.
+ * A060641 Surround numbers of a length <code>2n zig-zag</code>.
  * @author Sean A. Irvine
  */
 public class A060641 extends LinearRecurrence {

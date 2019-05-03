@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011259 Decimal expansion of 20th root of 8.
+ * A011259 Decimal expansion of <code>20th</code> root of 8.
  * @author Sean A. Irvine
  */
 public class A011259 extends DecimalExpansionSequence {

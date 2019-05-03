@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A273036 The E_8-Eulerian numbers.
+ * A273036 The <code>E_8-Eulerian</code> numbers.
  * @author Georg Fischer
  */
 public class A273036 extends FiniteSequence {

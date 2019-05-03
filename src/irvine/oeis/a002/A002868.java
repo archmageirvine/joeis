@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002868 Largest number in n-th row of triangle of Lah numbers A008297.
+ * A002868 Largest number in n-th row of triangle of Lah numbers <code>A008297</code>.
  * @author Sean A. Irvine
  */
 public class A002868 implements Sequence {

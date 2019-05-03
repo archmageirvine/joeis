@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292696 <code>a(n) = L(n)^2 - 5*(-1)^n = L(n+1)*L(n-1)</code>, where L = A000032.
+ * A292696 <code>a(n) = L(n)^2 - 5*(-1)^n = L(n+1)*L(n-1)</code>, where L <code>= A000032</code>.
  * @author Sean A. Irvine
  */
 public class A292696 extends LinearRecurrence {

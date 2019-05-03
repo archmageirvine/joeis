@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124062 Number of ways to write n as an ordered sum of 1's, 2's and 3's such that no 2 precedes <code>any 1</code>.
+ * A124062 Number of ways to write n as an ordered sum of <code>1's, 2</code>'s and <code>3</code>'s such that no 2 precedes any 1.
  * @author Sean A. Irvine
  */
 public class A124062 extends LinearRecurrence {

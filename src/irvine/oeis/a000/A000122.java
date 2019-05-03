@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000122 Expansion of Jacobi theta function theta_3(x) = Sum_{m =-inf..inf} x^(m^2) (number of solutions to <code>k^2 = n)</code>.
+ * A000122 Expansion of Jacobi theta function <code>theta_3(x) = Sum_{m =-inf..inf} x^(m^2)</code> (number of solutions to <code>k^2 = n)</code>.
  * @author Sean A. Irvine
  */
 public class A000122 implements Sequence {

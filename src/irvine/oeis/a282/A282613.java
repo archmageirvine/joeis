@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282613 Number of inequivalent 3 X 3 matrices with entries in <code>{1,2,3,..,n}</code> up to rotations.
+ * A282613 Number of inequivalent <code>3 X 3</code> matrices with entries in <code>{1,2,3,..,n}</code> up to rotations.
  * @author Sean A. Irvine
  */
 public class A282613 extends LinearRecurrence {

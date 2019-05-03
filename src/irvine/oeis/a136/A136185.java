@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136185 Number of metacyclic groups of order p^n, prime p <code>&gt;= 3</code>.
+ * A136185 Number of metacyclic groups of order <code>p^n</code>, prime p <code>&gt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A136185 extends LinearRecurrence {

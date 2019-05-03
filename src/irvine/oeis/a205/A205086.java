@@ -3,7 +3,7 @@ package irvine.oeis.a205;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A205086 <code>a(n) = n</code> 6's sandwiched between two 1's.
+ * A205086 <code>a(n) = n 6</code>'s sandwiched between two <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A205086 extends LinearRecurrence {

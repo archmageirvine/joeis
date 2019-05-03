@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224426 The hyper-Wiener index of the phenylacetylene dendrimer NSB[n], defined pictorially in the Z. Yarahmadi et al. reference.
+ * A224426 The hyper-Wiener index of the phenylacetylene dendrimer <code>NSB[n]</code>, defined pictorially in the Z. Yarahmadi et al. reference.
  * @author Sean A. Irvine
  */
 public class A224426 extends LinearRecurrence {

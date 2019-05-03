@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A006490 <code>a(1) = 1, a(2) = 0</code>; for <code>n &gt; 2, a(n) = n*Fibonacci(n-2)</code> (with the convention <code>Fibonacci(0)=0, Fibonacci(1)=1)</code>.
+ * A006490 <code>a(1) = 1, a(2) = 0</code>; for <code>n &gt; 2, a(n) = n*Fibonacci(n-2) (with</code> the convention <code>Fibonacci(0)=0, Fibonacci(1)=1)</code>.
  * @author Sean A. Irvine
  */
 public class A006490 extends A000045 {

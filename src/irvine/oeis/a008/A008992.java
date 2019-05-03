@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A008992 Denominators of coefficients in expansion of <code>sqrt(sin(x)/x)</code> (even powers only).
+ * A008992 Denominators of coefficients in expansion of <code>sqrt(sin(x)/x) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A008992 extends A008991 {

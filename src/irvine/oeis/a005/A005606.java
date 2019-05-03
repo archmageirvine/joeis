@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A005606 Position of first letter of <code>n (in</code> English) in alphabet.
+ * A005606 Position of first letter of <code>n (in English)</code> in alphabet.
  * @author Sean A. Irvine
  */
 public class A005606 implements Sequence {

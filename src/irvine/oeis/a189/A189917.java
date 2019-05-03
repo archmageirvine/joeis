@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A189917 Pattern of the 97 consecutive leap years in <code>a 400</code> year cycle of the Gregorian calendar.
+ * A189917 Pattern of the 97 consecutive leap years in a 400 year cycle of the Gregorian calendar.
  * @author Georg Fischer
  */
 public class A189917 extends FiniteSequence {

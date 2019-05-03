@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A273000 The E_6-Eulerian numbers.
+ * A273000 The <code>E_6-Eulerian</code> numbers.
  * @author Georg Fischer
  */
 public class A273000 extends FiniteSequence {

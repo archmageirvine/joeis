@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A321119 <code>a(n) = ((1 - sqrt(3))^n + (1 + sqrt(3))^n)/2^floor((n - 1)/2)</code>; n-th row common denominator of A321118.
+ * A321119 <code>a(n) = ((1 - sqrt(3))^n + (1 + sqrt(3))^n)/2^floor((n - 1)/2); n-th</code> row common denominator of <code>A321118</code>.
  * @author Georg Fischer
  */
 public class A321119 extends LinearRecurrence {

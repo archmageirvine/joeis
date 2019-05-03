@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A014137 Partial sums of Catalan numbers (A000108).
+ * A014137 Partial sums of Catalan numbers <code>(A000108)</code>.
  * @author Sean A. Irvine
  */
 public class A014137 extends PartialSumSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010807 19th powers: <code>a(n) = n^19</code>.
+ * A010807 <code>19th</code> powers: <code>a(n) = n^19</code>.
  * @author Sean A. Irvine
  */
 public class A010807 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001031 Goldbach conjecture: <code>a(n) =</code> number of decompositions of <code>2n</code> into sum of two primes (counting 1 as a prime).
+ * A001031 Goldbach conjecture: <code>a(n) =</code> number of decompositions of <code>2n</code> into sum of two primes <code>(counting 1</code> as a <code>prime)</code>.
  * @author Sean A. Irvine
  */
 public class A001031 implements Sequence {

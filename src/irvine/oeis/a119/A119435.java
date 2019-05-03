@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A119435 <code>a(n) =</code> (binary reversal of n)th integer among those positive integers not occurring earlier in the sequence.
+ * A119435 <code>a(n) = (binary</code> reversal of <code>n)th</code> integer among those positive integers not occurring earlier in the sequence.
  * @author Sean A. Irvine
  */
 public class A119435 implements Sequence {

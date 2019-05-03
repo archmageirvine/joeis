@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020891.
+ * A020891 Ordered set of c <code>+ a -</code> b as <code>(a,b,c)</code> runs through all primitive Pythagorean triples with a&lt;b&lt;c.
  * @author Sean A. Irvine
  */
 public class A020891 implements Sequence {

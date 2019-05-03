@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007543 Frequency of n-th largest distance in N times N grid, N <code>&gt; n</code>.
+ * A007543 Frequency of n-th largest distance in N times N grid, N <code>&gt</code>; n.
  * @author Sean A. Irvine
  */
 public class A007543 implements Sequence {

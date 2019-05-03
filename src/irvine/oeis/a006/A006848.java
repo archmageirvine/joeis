@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006848 Number of extreme points of the set of n X n symmetric doubly-substochastic matrices.
+ * A006848 Number of extreme points of the set of <code>n X n</code> symmetric doubly-substochastic matrices.
  * @author Sean A. Irvine
  */
 public class A006848 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008352;
 
 /**
- * A113773 Number of distinct prime factors of A008352.
+ * A113773 Number of distinct prime factors of <code>A008352</code>.
  * @author Sean A. Irvine
  */
 public class A113773 extends A008352 {

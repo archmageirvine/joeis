@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006696 <code>a(n) =</code> min_{k=1..n} <code>(a(k-1) + 2^k*(n + a(n-k))); a(0) = 0</code>.
+ * A006696 <code>a(n) = min_{k=1..n} (a(k-1) + 2^k*(n + a(n-k))); a(0) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A006696 extends MemorySequence {

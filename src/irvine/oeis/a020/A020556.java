@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020556 Number of oriented multigraphs on n labeled arcs (without loops).
+ * A020556 Number of oriented multigraphs on n labeled arcs <code>(without loops)</code>.
  * @author Sean A. Irvine
  */
 public class A020556 implements Sequence {

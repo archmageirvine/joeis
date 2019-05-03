@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004640 Cubes written in base 11. (Next term contains a non-decimal character).
+ * A004640 Cubes written in base <code>11. (Next</code> term contains a <code>non-decimal character)</code>.
  * @author Sean A. Irvine
  */
 public class A004640 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A008868 Order of simple Chevalley group E_8 (q), q = prime power.
+ * A008868 Order of simple Chevalley group <code>E_8 (q), q =</code> prime power.
  * @author Sean A. Irvine
  */
 public class A008868 extends A000961 {

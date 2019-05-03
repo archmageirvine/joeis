@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187243 Number of ways of making change for n cents using coins of 1, 5, and 10 cents.
+ * A187243 Number of ways of making change for n cents using coins of <code>1, 5</code>, and 10 cents.
  * @author Sean A. Irvine
  */
 public class A187243 extends LinearRecurrence {

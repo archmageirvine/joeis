@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a141.A141042;
 
 /**
- * A162775 <code>a(n) =</code> A141042(n+1)/2.
+ * A162775 <code>a(n) = A141042(n+1)/2</code>.
  * @author Sean A. Irvine
  */
 public class A162775 extends A141042 {

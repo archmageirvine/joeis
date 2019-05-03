@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083513 Palindromes in A083512.
+ * A083513 Palindromes in <code>A083512</code>.
  * @author Georg Fischer
  */
 public class A083513 extends FiniteSequence {

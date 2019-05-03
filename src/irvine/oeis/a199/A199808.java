@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A199808 Sorted number of edges of distinct solutions in the mix of 2 or 3 regular convex 4-polytopes.
+ * A199808 Sorted number of edges of distinct solutions in the mix of 2 or 3 regular convex <code>4-polytopes</code>.
  * @author Georg Fischer
  */
 public class A199808 extends FiniteSequence {

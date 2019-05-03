@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018960 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite AFR = SAPO-40 [ Si7Al29P28O128 <code>] . 4</code> TPA . OH.
+ * A018960 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite AFR <code>= SAPO-40 [ Si7Al29P28O128 ] . 4</code> TPA . OH.
  * @author Sean A. Irvine
  */
 public class A018960 extends A018940 {

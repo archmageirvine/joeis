@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
 
 /**
- * A014244 (n-th Lucas number that is not <code>1) -</code> (n-th number that is 1 or not a Lucas number).
+ * A014244 <code>(n-th</code> Lucas number that is not <code>1) - (n-th</code> number that is 1 or not a Lucas number).
  * @author Sean A. Irvine
  */
 public class A014244 extends A000032 {

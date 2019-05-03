@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271995 The Pnictogen sequence: <code>a(n) =</code> A018227(n)-3.
+ * A271995 The Pnictogen sequence: <code>a(n) = A018227(n)-3</code>.
  * @author Sean A. Irvine
  */
 public class A271995 extends LinearRecurrence {

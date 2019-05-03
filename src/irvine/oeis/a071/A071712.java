@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071712 The 23-step cycle reached for <code>any</code> initial value k less than 100000, after iterations of <code>sopf(8x+1)</code>, where <code>sopf(n)</code> denote the sum of the prime factors of <code>n (sopf(12) = 2+2+3 = 7)</code>.
+ * A071712 The 23-step cycle reached for any initial value k less than 100000, after iterations of <code>sopf(8x+1)</code>, where <code>sopf(n)</code> denote the sum of the prime factors of <code>n (sopf(12) = 2+2+3 = 7)</code>.
  * @author Georg Fischer
  */
 public class A071712 extends FiniteSequence {

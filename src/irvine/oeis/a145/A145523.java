@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A145523 Least integer <code>k &gt; 0</code> such that A000041(k) is divisible by <code>2^n</code>.
+ * A145523 Least integer k <code>&gt; 0</code> such that <code>A000041(k)</code> is divisible by <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A145523 implements Sequence {

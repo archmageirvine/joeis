@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166752 Interleave A007583 and A000012.
+ * A166752 Interleave <code>A007583</code> and <code>A000012</code>.
  * @author Sean A. Irvine
  */
 public class A166752 extends LinearRecurrence {

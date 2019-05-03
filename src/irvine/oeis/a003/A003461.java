@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003461 Bode numbers multiplied by 10: <code>4 + 3*floor(2^(n-1))</code>.
+ * A003461 Bode numbers multiplied by <code>10: 4 + 3*floor(2^(n-1))</code>.
  * @author Sean A. Irvine
  */
 public class A003461 implements Sequence {

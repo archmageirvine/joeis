@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005372 <code>a(n) = L(L(n+1)+1)</code>, where <code>L(n)</code> are Lucas numbers A000032.
+ * A005372 <code>a(n) = L(L(n+1)+1)</code>, where <code>L(n)</code> are Lucas numbers <code>A000032</code>.
  * @author Sean A. Irvine
  */
 public class A005372 implements Sequence {

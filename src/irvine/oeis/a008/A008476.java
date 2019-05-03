@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008476 If <code>n =</code> Product (p_j^k_j) then <code>a(n) =</code> Sum (k_j^p_j).
+ * A008476 If <code>n =</code> Product <code>(p_j^k_j)</code> then <code>a(n) =</code> Sum <code>(k_j^p_j)</code>.
  * @author Sean A. Irvine
  */
 public class A008476 implements Sequence {

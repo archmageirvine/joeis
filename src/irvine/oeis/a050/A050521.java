@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A050521 Number of factorizations of <code>(n,2*n)</code> into pairs <code>(k</code>,l).
+ * A050521 Number of factorizations of <code>(n,2*n)</code> into pairs <code>(k,l)</code>.
  * @author Sean A. Irvine
  */
 public class A050521 implements Sequence {

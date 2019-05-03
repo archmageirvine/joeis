@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import java.util.ArrayList;
 
 /**
- * A003309 Ludic numbers: apply the same sieve as Eratosthenes, but cross off every k-th /remaining/ number.
+ * A003309 Ludic numbers: apply the same sieve as Eratosthenes, but cross off every <code>k-th /remaining/</code> number.
  * @author Sean A. Irvine
  */
 public class A003309 implements Sequence {

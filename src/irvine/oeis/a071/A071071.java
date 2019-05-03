@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071071 Minimal "powers of 2" set in base 10.
+ * A071071 Minimal "powers of <code>2"</code> set in base 10.
  * @author Georg Fischer
  */
 public class A071071 extends FiniteSequence {

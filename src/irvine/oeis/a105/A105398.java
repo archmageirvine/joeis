@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105398 A simple "Fractal Jump Sequence" (FJS).
+ * A105398 A simple "Fractal Jump Sequence" <code>(FJS)</code>.
  * @author Sean A. Irvine
  */
 public class A105398 extends LinearRecurrence {

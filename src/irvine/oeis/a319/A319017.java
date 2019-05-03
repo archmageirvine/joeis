@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A319017 Prime numbers which satisfy the regex m1{1,m1}m2{1,m2}m3{1,m3}m4{1,m4}m5{1,m5} where mi are one-digit Lucas numbers.
+ * A319017 Prime numbers which satisfy the regex <code>m1{1,m1}m2{1,m2}m3{1,m3}m4{1,m4}m5{1,m5}</code> where mi are one-digit Lucas numbers.
  * @author Georg Fischer
  */
 public class A319017 extends FiniteSequence {

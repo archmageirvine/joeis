@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133037 Squares of members of the Padovan sequence A000931.
+ * A133037 Squares of members of the Padovan sequence <code>A000931</code>.
  * @author Sean A. Irvine
  */
 public class A133037 extends LinearRecurrence {

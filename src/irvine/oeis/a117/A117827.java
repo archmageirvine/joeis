@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A117827 A117830 sorted and duplicates removed.
+ * A117827 <code>A117830</code> sorted and duplicates removed.
  * @author Georg Fischer
  */
 public class A117827 extends FiniteSequence {

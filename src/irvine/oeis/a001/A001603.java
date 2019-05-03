@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A001603 Odd-indexed terms of A124296.
+ * A001603 Odd-indexed terms of <code>A124296</code>.
  * @author Sean A. Irvine
  */
 public class A001603 extends RatPolyGfSequence {

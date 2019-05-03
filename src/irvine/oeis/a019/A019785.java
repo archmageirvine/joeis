@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019785 Decimal expansion of sqrt(e)/12.
+ * A019785 Decimal expansion of <code>sqrt(e)/12</code>.
  * @author Sean A. Irvine
  */
 public class A019785 extends DecimalExpansionSequence {

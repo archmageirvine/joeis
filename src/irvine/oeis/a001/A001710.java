@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001710 Order of alternating group A_n, or number of even permutations of n letters.
+ * A001710 Order of alternating group <code>A_n</code>, or number of even permutations of n letters.
  * @author Sean A. Irvine
  */
 public class A001710 implements Sequence {

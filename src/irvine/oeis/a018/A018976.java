@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018976 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite ANA = Analcime Na16[ Al16Si32O96 <code>] . 16</code> H2O.
+ * A018976 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite ANA = Analcime <code>Na16[ Al16Si32O96 ] . 16 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A018976 extends A018940 {

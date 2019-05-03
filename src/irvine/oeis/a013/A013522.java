@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013522 Numerator of <code>[x^(2n+1)]</code> in the Taylor expansion <code>sinh(cosec(x)-cotan(x))= x/2 +x^3/16 +37*x^5/3840 +137*x^7/92160 +41641*x^9/185794560 + 3887*x^11/117964800 +</code>...
+ * A013522 Numerator of <code>[x^(2n+1)]</code> in the Taylor expansion <code>sinh(cosec(x)-cotan(x))= x/2 +x^3/16 +37*x^5/3840 +137*x^7/92160 +41641*x^9/185794560 + 3887*x^11/117964800 +..</code>.
  * @author Sean A. Irvine
  */
 public class A013522 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A254329 Numbers n such that all <code>x^2 mod n</code> are prime powers (including 0 and 1).
+ * A254329 Numbers n such that all <code>x^2 mod n</code> are prime powers <code>(including 0</code> and <code>1)</code>.
  * @author Georg Fischer
  */
 public class A254329 extends FiniteSequence {

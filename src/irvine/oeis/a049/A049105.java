@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049105 Ratio from A049101.
+ * A049105 Ratio from <code>A049101</code>.
  * @author Georg Fischer
  */
 public class A049105 extends FiniteSequence {

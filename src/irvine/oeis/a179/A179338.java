@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179338 Positive integers of the form (10*m^2+1)/11.
+ * A179338 Positive integers of the form <code>(10*m^2+1)/11</code>.
  * @author Sean A. Irvine
  */
 public class A179338 extends LinearRecurrence {

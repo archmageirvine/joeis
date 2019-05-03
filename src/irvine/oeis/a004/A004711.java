@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004711 Positions of 1's in binary expansion of Pi/4.
+ * A004711 Positions of <code>1</code>'s in binary expansion of <code>Pi/4</code>.
  * @author Sean A. Irvine
  */
 public class A004711 extends DecimalExpansionSequence {

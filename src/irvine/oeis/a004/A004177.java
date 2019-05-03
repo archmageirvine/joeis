@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004177 Omit 2's from n.
+ * A004177 Omit <code>2</code>'s from n.
  * @author Sean A. Irvine
  */
 public class A004177 implements Sequence {

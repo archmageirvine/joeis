@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011753 Smallest number beginning with n and having n different prime divisors (which may be repeated).
+ * A011753 Smallest number beginning with n and having n different prime divisors (which may be <code>repeated)</code>.
  * @author Sean A. Irvine
  */
 public class A011753 implements Sequence {

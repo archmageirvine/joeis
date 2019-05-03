@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000032;
 import java.util.ArrayList;
 
 /**
- * A132365 Least number k such that the Lucas number A000032(k) contains n.
+ * A132365 Least number k such that the Lucas number <code>A000032(k)</code> contains n.
  * @author Sean A. Irvine
  */
 public class A132365 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002409 <code>a(n) = 2^n*C(n+6,6)</code>. Number of 6D hypercubes in an (n+6)-dimensional hypercube.
+ * A002409 <code>a(n) = 2^n*C(n+6,6)</code>. Number of <code>6D</code> hypercubes in an <code>(n+6)-dimensional</code> hypercube.
  * @author Sean A. Irvine
  */
 public class A002409 implements Sequence {

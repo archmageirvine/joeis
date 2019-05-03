@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.q.Q;
 
 /**
- * A002678 Numerators of the Taylor coefficients of (e^x-1)^2.
+ * A002678 Numerators of the Taylor coefficients of <code>(e^x-1)^2</code>.
  * @author Sean A. Irvine
  */
 public class A002678 implements Sequence {

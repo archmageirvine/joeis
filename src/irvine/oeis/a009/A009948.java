@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009948 Coordination sequence for alpha-Nd, Position Nd1.
+ * A009948 Coordination sequence for <code>alpha-Nd</code>, Position <code>Nd1</code>.
  * @author Sean A. Irvine
  */
 public class A009948 extends CoordinationSequence {

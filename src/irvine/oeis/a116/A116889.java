@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A116889 <code>a(n)</code> is the least prime p that remains prime through n iterations of function f(p)=p^2+4.
+ * A116889 <code>a(n)</code> is the least prime p that remains prime through n iterations of function <code>f(p)=p^2+4</code>.
  * @author Georg Fischer
  */
 public class A116889 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079021 Suppose p and q = p+22 are primes. Define the difference pattern of (p,q) to be the successive differences of the primes in the range p to q. There are 51 possible difference patterns, shown in the Comments line. Sequence gives smallest value of p for each difference pattern, sorted by magnitude.
+ * A079021 Suppose p and q <code>= p+22</code> are primes. Define the difference pattern of <code>(p,q)</code> to be the successive differences of the primes in the range p to q. There are 51 possible difference patterns, shown in the Comments line. Sequence gives smallest value of p for each difference pattern, sorted by magnitude.
  * @author Georg Fischer
  */
 public class A079021 extends FiniteSequence {

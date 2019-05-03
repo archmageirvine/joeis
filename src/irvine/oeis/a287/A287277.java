@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287277 Number of set partitions of <code>[n]</code> such that for each block all absolute differences between consecutive elements are <code>&lt;=</code> five.
+ * A287277 Number of set partitions of [n] such that for each block all absolute differences between consecutive elements are <code>&lt;=</code> five.
  * @author Sean A. Irvine
  */
 public class A287277 extends LinearRecurrence {

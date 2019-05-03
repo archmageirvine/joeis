@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110315 Diagonal sums of the Fibonacci related number triangle A110314.
+ * A110315 Diagonal sums of the Fibonacci related number triangle <code>A110314</code>.
  * @author Sean A. Irvine
  */
 public class A110315 extends LinearRecurrence {

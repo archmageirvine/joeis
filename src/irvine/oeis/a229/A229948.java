@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229948 Decimal expansion of <code>2187/2048</code>, the Pythagorean apotome.
+ * A229948 Decimal expansion of 2187/2048, the Pythagorean apotome.
  * @author Georg Fischer
  */
 public class A229948 extends FiniteSequence {

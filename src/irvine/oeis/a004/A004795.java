@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004795 Least positive unitary linear combination of distinct numbers in row n of Pascal's triangle; i.e., least positive sum of form <code>d(0)C(n-1,0) + d(1)C(n-1,1) + ...+</code> d(m)C(n-1,m), <code>d(i)=+-1</code>, m <code>= floor((n+1)/2)</code>.
+ * A004795 Least positive unitary linear combination of distinct numbers in row n of Pascal's triangle; i.e., least positive sum of form <code>d(0)C(n-1,0) + d(1)C(n-1,1) + ...+ d(m)C(n-1,m), d(i)=+-1, m = floor((n+1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A004795 implements Sequence {

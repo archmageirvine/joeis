@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179991 Nonhomogeneous three-term sequence <code>a(n) = a(n-1) + a(n-2) + n</code>.
+ * A179991 Nonhomogeneous three-term sequence <code>a(n) = a(n-1) + a(n-2) +</code> n.
  * @author Sean A. Irvine
  */
 public class A179991 extends LinearRecurrence {

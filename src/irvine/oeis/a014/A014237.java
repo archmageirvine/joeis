@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014237 (n-th prime) - (n-th nonprime).
+ * A014237 <code>(n-th prime) - (n-th nonprime)</code>.
  * @author Sean A. Irvine
  */
 public class A014237 extends A000040 {

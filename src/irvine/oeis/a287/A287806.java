@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287806 Number of senary sequences of length n such that no two consecutive terms have distance 1. 
+ * A287806 Number of senary sequences of length n such that no two consecutive terms have distance 1.
  * @author Georg Fischer
  */
 public class A287806 extends LinearRecurrence {

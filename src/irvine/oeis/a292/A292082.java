@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A292082 Primes p such that (p^2 <code>- 1) / 2</code> is a square (A000290).
+ * A292082 Primes p such that <code>(p^2 - 1) / 2</code> is a square <code>(A000290)</code>.
  * @author Georg Fischer
  */
 public class A292082 extends FiniteSequence {

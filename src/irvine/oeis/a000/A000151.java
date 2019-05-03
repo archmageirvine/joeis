@@ -10,7 +10,7 @@ import irvine.oeis.MemorySequence;
 import java.util.ArrayList;
 
 /**
- * A000151 Number of oriented rooted trees with n nodes. Also rooted trees with n nodes and 2-colored non-root nodes.
+ * A000151 Number of oriented rooted trees with n nodes. Also rooted trees with n nodes and <code>2-colored non-root</code> nodes.
  * @author Sean A. Irvine
  */
 public class A000151 extends MemorySequence {

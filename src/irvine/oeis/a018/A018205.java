@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018205 Let m=n+1; <code>a(n)</code> is the least positive integer s, not a multiple of m, such that if 1&lt;=d&lt;=m and (d,m)=1, then d divides one of the numbers s-m, s-2m, <code>..</code>., s-m[ s/m ].
+ * A018205 Let <code>m=n+1; a(n)</code> is the least positive integer s, not a multiple of m, such that if <code>1&lt;=d&lt;=m</code> and <code>(d,m)=1</code>, then d divides one of the numbers <code>s-m, s-2m</code>, ..., <code>s-m[ s/m ]</code>.
  * @author Sean A. Irvine
  */
 public class A018205 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008866 Prime(A052928(n+1)) <code>+ (-1)^n*</code> prime(A109613(n)).
+ * A008866 <code>Prime(A052928(n+1)) + (-1)^n* prime(A109613(n))</code>.
  * @author Sean A. Irvine
  */
 public class A008866 implements Sequence {

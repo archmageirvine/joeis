@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096406 <code>a(1) = 4</code>; then alternately add <code>-4</code> and multiply by <code>-2</code>.
+ * A096406 <code>a(1) = 4</code>; then alternately add -4 and multiply by -2.
  * @author Sean A. Irvine
  */
 public class A096406 extends LinearRecurrence {

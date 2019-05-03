@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049868 a(n)=Sum{a(k): <code>k=0,1,2,...,n-4,n-2,n-1}; a(n-3)</code> is not a summand; 3 initial terms required.
+ * A049868 <code>a(n)=Sum{a(k): k=0,1,2,...,n-4,n-2,n-1}; a(n-3)</code> is not a summand; 3 initial terms required.
  * @author Georg Fischer
  */
 public class A049868 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A164859 <code>a(1)=1. a(n) =</code> the smallest positive integer that, when written in binary, contains both binary <code>a(n-1)</code> and binary n as (possibly overlapping) substrings.
+ * A164859 <code>a(1)=1. a(n) =</code> the smallest positive integer that, when written in binary, contains both binary <code>a(n-1)</code> and binary n as <code>(possibly overlapping)</code> substrings.
  * @author Sean A. Irvine
  */
 public class A164859 implements Sequence {

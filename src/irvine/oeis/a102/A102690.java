@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102690 Number of n-expodigital numbers <code>(i</code>.e., numbers m such that m^n has exactly n decimal digits).
+ * A102690 Number of n-expodigital numbers <code>(i.e.</code>, numbers m such that <code>m^n</code> has exactly n decimal <code>digits)</code>.
  * @author Georg Fischer
  */
 public class A102690 extends FiniteSequence {

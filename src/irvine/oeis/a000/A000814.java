@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000814 Number of switching networks (see Harrison reference for precise definition).
+ * A000814 Number of switching networks (see Harrison reference for precise <code>definition)</code>.
  * @author Sean A. Irvine
  */
 public class A000814 extends A000721 {

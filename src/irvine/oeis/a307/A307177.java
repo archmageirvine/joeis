@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307177 Decimal expansion of smallest nontrivial base-10 number that contains all pairwise products of its digits as substrings.
+ * A307177 Decimal expansion of smallest nontrivial <code>base-10</code> number that contains all pairwise products of its digits as substrings.
  * @author Georg Fischer
  */
 public class A307177 extends FiniteSequence {

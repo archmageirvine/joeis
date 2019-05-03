@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A157716 One-eighth of triangular numbers (integers only).
+ * A157716 One-eighth of triangular numbers <code>(integers only)</code>.
  * @author Sean A. Irvine
  */
 public class A157716 extends LinearRecurrence {

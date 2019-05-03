@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000965 Numerators of expansion of e.g.f. <code>sinh(x) / sin(x)</code> (even powers only).
+ * A000965 Numerators of expansion of e.g.f. <code>sinh(x) / sin(x) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A000965 implements Sequence {

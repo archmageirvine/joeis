@@ -8,7 +8,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.factor.factor.Cheetah;
 
 /**
- * A002200 Primes of the form 2^q*3^r*5^s <code>+ 1</code>.
+ * A002200 Primes of the form <code>2^q*3^r*5^s + 1</code>.
  * @author Sean A. Irvine
  */
 public class A002200 implements Sequence {

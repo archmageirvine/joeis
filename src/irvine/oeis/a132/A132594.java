@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A132594 Values X satisfying the equation: X(X <code>+ 1) -</code> 7*Y^2 <code>= 0</code>.
+ * A132594 Values X satisfying the equation: <code>X(X + 1) - 7*Y^2 = 0</code>.
  * @author Sean A. Irvine
  */
 public class A132594 extends LinearRecurrence {

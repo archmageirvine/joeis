@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120925 Number of ternary words on <code>{0,1,2}</code> having no isolated 0's.
+ * A120925 Number of ternary words on <code>{0,1,2}</code> having no isolated <code>0</code>'s.
  * @author Sean A. Irvine
  */
 public class A120925 extends LinearRecurrence {

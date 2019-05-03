@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008705 Coefficient of <code>x^n</code> in (Product_{m=1..n}(1-x^m))^n.
+ * A008705 Coefficient of <code>x^n</code> in <code>(Product_{m=1..n}(1-x^m))^n</code>.
  * @author Sean A. Irvine
  */
 public class A008705 implements Sequence {

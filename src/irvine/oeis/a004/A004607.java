@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004607 Infinitary sociable numbers (smallest member of cycle).
+ * A004607 Infinitary sociable numbers (smallest member of <code>cycle)</code>.
  * @author Sean A. Irvine
  */
 public class A004607 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A306848 Product of first n odd nonprimes, <code>a(n) = Product_{k=1..n)</code> A071904(k).
+ * A306848 Product of first n odd nonprimes, <code>a(n) = Product_{k=1..n) A071904(k)</code>.
  * @author Sean A. Irvine
  */
 public class A306848 implements Sequence {

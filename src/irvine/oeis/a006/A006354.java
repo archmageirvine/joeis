@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006354 Expansion of a cusp form of weight 8 for Gamma_1(6).
+ * A006354 Expansion of a cusp form of weight 8 for <code>Gamma_1(6)</code>.
  * @author Sean A. Irvine
  */
 public class A006354 implements Sequence {

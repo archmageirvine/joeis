@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A182098 Integers n such that <code>n^2</code> is a term in A182040.
+ * A182098 Integers n such that <code>n^2</code> is a term in <code>A182040</code>.
  * @author Georg Fischer
  */
 public class A182098 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005157 Number of totally symmetric plane partitions that fit in an <code>n</code> X n X n box.
+ * A005157 Number of totally symmetric plane partitions that fit in an <code>n X n X n</code> box.
  * @author Sean A. Irvine
  */
 public class A005157 implements Sequence {

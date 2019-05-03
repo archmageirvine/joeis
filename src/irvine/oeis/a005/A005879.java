@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004013;
 
 /**
- * A005879 Theta series of D_4 lattice with respect to deep hole.
+ * A005879 Theta series of <code>D_4</code> lattice with respect to deep hole.
  * @author Sean A. Irvine
  */
 public class A005879 implements Sequence {

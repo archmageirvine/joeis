@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284925 Number of elements of order n in the exceptional group G_2(3).
+ * A284925 Number of elements of order n in the exceptional group <code>G_2(3)</code>.
  * @author Sean A. Irvine
  */
 public class A284925 extends FiniteSequence {

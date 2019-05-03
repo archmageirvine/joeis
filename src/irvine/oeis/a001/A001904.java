@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001904 From higher order Bernoulli numbers: absolute value of numerator of D Number D2n(2n).
+ * A001904 From higher order Bernoulli numbers: absolute value of numerator of D Number <code>D2n(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A001904 implements Sequence {

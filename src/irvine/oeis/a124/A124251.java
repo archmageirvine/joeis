@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124251 Another version of A124250.
+ * A124251 Another version of <code>A124250</code>.
  * @author Georg Fischer
  */
 public class A124251 extends FiniteSequence {

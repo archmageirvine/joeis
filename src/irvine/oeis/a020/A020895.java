@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A020895.
+ * A020895 Cubefree sums of two nonzero cubes.
  * @author Sean A. Irvine
  */
 public class A020895 extends A020894 {

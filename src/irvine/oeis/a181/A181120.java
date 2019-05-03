@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181120 Partial sums of <code>round(n^2/12)</code> (A069905).
+ * A181120 Partial sums of <code>round(n^2/12) (A069905)</code>.
  * @author Sean A. Irvine
  */
 public class A181120 extends LinearRecurrence {

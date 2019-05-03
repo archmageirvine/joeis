@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004908 Numbers that are the sum of at most 2 positive 11th powers.
+ * A004908 Numbers that are the sum of at most 2 positive <code>11th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004908 extends A004802 {

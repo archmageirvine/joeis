@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A301654 Circumference of the n-triangular honeycomb acute knight graph. 
+ * A301654 Circumference of the n-triangular honeycomb acute knight graph.
  * @author Georg Fischer
  */
 public class A301654 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007353 Where prime race among <code>5n+1, ..., 5n+4</code> changes leader.
+ * A007353 Where prime race among <code>5n+1</code>, ..., <code>5n+4</code> changes leader.
  * @author Sean A. Irvine
  */
 public class A007353 implements Sequence {

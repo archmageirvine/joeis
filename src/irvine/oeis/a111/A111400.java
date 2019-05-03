@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A111400 <code>P(P(n)) - P(P(n-1))</code>, where <code>P(n) = (n+1)*(n+2)*(n+3)/6</code> (see A000292).
+ * A111400 <code>P(P(n)) - P(P(n-1))</code>, where <code>P(n) = (n+1)*(n+2)*(n+3)/6 (see A000292)</code>.
  * @author Sean A. Irvine
  */
 public class A111400 extends LinearRecurrence {

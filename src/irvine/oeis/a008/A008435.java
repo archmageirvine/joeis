@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008435 Theta series of {D_7}^{+} packing.
+ * A008435 Theta series of <code>{D_7}^{+}</code> packing.
  * @author Sean A. Irvine
  */
 public class A008435 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002679 Denominator of 2*Stirling_2(n,2)/n!.
+ * A002679 Denominator of <code>2*Stirling_2(n,2)/n!</code>.
  * @author Sean A. Irvine
  */
 public class A002679 implements Sequence {

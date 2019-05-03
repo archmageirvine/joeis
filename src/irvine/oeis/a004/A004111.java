@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004111 Number of rooted identity trees with n nodes (rooted trees whose automorphism group is the identity group).
+ * A004111 Number of rooted identity trees with n nodes (rooted trees whose automorphism group is the identity <code>group)</code>.
  * @author Sean A. Irvine
  */
 public class A004111 extends MemorySequence {

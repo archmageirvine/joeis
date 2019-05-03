@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A094800 First term of a run of exactly two consecutive numbers such that for each m in the run, exactly m 1's are used in writing out all numbers 1 through m.
+ * A094800 First term of a run of exactly two consecutive numbers such that for each m in the run, exactly m <code>1</code>'s are used in writing out all numbers 1 through m.
  * @author Georg Fischer
  */
 public class A094800 extends FiniteSequence {

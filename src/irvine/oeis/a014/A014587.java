@@ -8,7 +8,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A014587 Nim function for Take-a-Factorial-Game.
+ * A014587 Nim function for <code>Take-a-Factorial-Game</code>.
  * @author Sean A. Irvine
  */
 public class A014587 extends MemorySequence {

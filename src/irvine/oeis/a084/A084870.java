@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084870 Number of 3-multiantichains of an n-set.
+ * A084870 Number of 3-multiantichains of an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A084870 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003066 Problimes (first definition).
+ * A003066 Problimes <code>(first definition)</code>.
  * @author Sean A. Irvine
  */
 public class A003066 implements Sequence {

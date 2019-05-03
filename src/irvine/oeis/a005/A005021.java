@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A005021 Random walks (binomial transform of A006054).
+ * A005021 Random walks (binomial transform of <code>A006054)</code>.
  * @author Sean A. Irvine
  */
 public class A005021 extends LinearRecurrence {

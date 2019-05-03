@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129556 Numbers n such that centered pentagonal number A005891(n) <code>= (5n^2+5n+2)/2</code> is a perfect square.
+ * A129556 Numbers n such that centered pentagonal number <code>A005891(n) = (5n^2+5n+2)/2</code> is a perfect square.
  * @author Sean A. Irvine
  */
 public class A129556 extends LinearRecurrence {

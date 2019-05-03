@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055492 Numbers n such that LCM{1, <code>..., n}</code> is a minimal number.
+ * A055492 Numbers n such that <code>LCM{1</code>, ..., n} is a minimal number.
  * @author Georg Fischer
  */
 public class A055492 extends FiniteSequence {

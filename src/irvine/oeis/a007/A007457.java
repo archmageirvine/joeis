@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007457 Number of <code>(j,k)</code>: <code>j+k=n, (j,n)=(k,n)=1, j,k</code> squarefree.
+ * A007457 Number of <code>(j,k): j+k=n, (j,n)=(k,n)=1</code>, j,k squarefree.
  * @author Sean A. Irvine
  */
 public class A007457 implements Sequence {

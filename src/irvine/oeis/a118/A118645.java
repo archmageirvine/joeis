@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118645 Number of binary strings of length n such that there exist three consecutive digits where at least two of them are 1's.
+ * A118645 Number of binary strings of length n such that there exist three consecutive digits where at least two of them are <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A118645 extends LinearRecurrence {

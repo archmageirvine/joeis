@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265188 Nonnegative m for which 3*floor(m^2/11) = floor(3*m^2/11).
+ * A265188 Nonnegative m for which <code>3*floor(m^2/11) = floor(3*m^2/11)</code>.
  * @author Sean A. Irvine
  */
 public class A265188 extends LinearRecurrence {

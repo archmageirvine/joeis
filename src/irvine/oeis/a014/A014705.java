@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014705 Expansion of ((theta_2)^4 + (theta_3)^4) <code>/ eta(z/2)^4</code>.
+ * A014705 Expansion of <code>((theta_2)^4 + (theta_3)^4) / eta(z/2)^4</code>.
  * @author Sean A. Irvine
  */
 public class A014705 implements Sequence {

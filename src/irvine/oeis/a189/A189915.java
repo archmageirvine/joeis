@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A189915 Sequence for finding the day of the week for the first day of the month in a common (non-leap) year.
+ * A189915 Sequence for finding the day of the week for the first day of the month in a common <code>(non-leap)</code> year.
  * @author Georg Fischer
  */
 public class A189915 extends FiniteSequence {

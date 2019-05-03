@@ -3,7 +3,7 @@ package irvine.oeis.a300;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A300450 Number of uniform star polyhedra with Euler characteristic A300449(n).
+ * A300450 Number of uniform star polyhedra with Euler characteristic <code>A300449(n)</code>.
  * @author Georg Fischer
  */
 public class A300450 extends FiniteSequence {

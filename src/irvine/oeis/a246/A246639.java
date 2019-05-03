@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246639 Sequence <code>a(n) = 3 +</code> 5*A001519(n+1) appearing in a certain three circle touching problem, together with A246638.
+ * A246639 Sequence <code>a(n) = 3 + 5*A001519(n+1)</code> appearing in a certain three circle touching problem, together with <code>A246638</code>.
  * @author Sean A. Irvine
  */
 public class A246639 extends LinearRecurrence {

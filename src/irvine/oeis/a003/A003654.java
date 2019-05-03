@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003654 Squarefree integers n such that fundamental unit of <code>Q(sqrt(n))</code> has norm <code>-1</code>. Also, squarefree integers n such that Pell equation <code>x^2 - n y^2 = -1</code> is soluble.
+ * A003654 Squarefree integers n such that fundamental unit of <code>Q(sqrt(n))</code> has norm -1. Also, squarefree integers n such that Pell equation <code>x^2 - n y^2 = -1</code> is soluble.
  * @author Sean A. Irvine
  */
 public class A003654 implements Sequence {

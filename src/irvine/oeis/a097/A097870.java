@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097870 Molien series for group of order 4608 acting on joint weight enumerators of a pair of binary doubly-even self-dual codes.
+ * A097870 Molien series for group of order 4608 acting on joint weight enumerators of a pair of binary <code>doubly-even self-dual</code> codes.
  * @author Sean A. Irvine
  */
 public class A097870 extends LinearRecurrence {

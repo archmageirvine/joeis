@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194274 Concentric square numbers (see Comments lines for definition).
+ * A194274 Concentric square numbers (see Comments lines for <code>definition)</code>.
  * @author Sean A. Irvine
  */
 public class A194274 extends LinearRecurrence {

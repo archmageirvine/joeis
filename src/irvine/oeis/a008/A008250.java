@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008250 Coordination sequence T2 for Banalsite.
+ * A008250 Coordination sequence <code>T2</code> for Banalsite.
  * @author Sean A. Irvine
  */
 public class A008250 extends CoordinationSequence {

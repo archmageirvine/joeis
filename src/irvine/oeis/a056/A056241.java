@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056241 Triangle <code>T(n,k) =</code> number of k-part order-consecutive partitions of <code>n (1&lt;=k&lt;=n)</code>.
+ * A056241 Triangle <code>T(n,k) =</code> number of <code>k-part order-consecutive</code> partitions of <code>n (1&lt;=k&lt;=n)</code>.
  * @author Sean A. Irvine
  */
 public class A056241 implements Sequence {

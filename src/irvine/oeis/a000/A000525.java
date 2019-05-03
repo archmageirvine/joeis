@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A000525 Partially labeled rooted trees with n nodes <code>(4</code> of which are labeled).
+ * A000525 Partially labeled rooted trees with n nodes <code>(4</code> of which are <code>labeled)</code>.
  * @author Sean A. Irvine
  */
 public class A000525 extends A000081 {

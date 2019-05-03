@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001354 Coordination sequence for hyperbolic tessellation <code>3^7</code> (from triangle group <code>(2,3,7))</code>.
+ * A001354 Coordination sequence for hyperbolic tessellation <code>3^7 (from</code> triangle group <code>(2,3,7))</code>.
  * @author Sean A. Irvine
  */
 public class A001354 implements Sequence {

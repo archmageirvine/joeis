@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014999 Inverse of 990th cyclotomic polynomial.
+ * A014999 Inverse of <code>990th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014999 extends PeriodicSequence {

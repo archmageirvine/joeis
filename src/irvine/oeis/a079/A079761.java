@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079761 Number of positions that are exactly n moves from the starting position in the 2 X 2 X 2 Rubik cube puzzle.
+ * A079761 Number of positions that are exactly n moves from the starting position in the <code>2 X 2 X 2</code> Rubik cube puzzle.
  * @author Georg Fischer
  */
 public class A079761 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001683 Number of one-sided triangulations of the disk; or flexagons of order n; or unlabeled plane trivalent trees <code>(n-2</code> internal vertices, all of degree 3 and hence n leaves).
+ * A001683 Number of one-sided triangulations of the disk; or flexagons of order n; or unlabeled plane trivalent trees <code>(n-2</code> internal vertices, all of degree 3 and hence <code>n leaves)</code>.
  * @author Sean A. Irvine
  */
 public class A001683 implements Sequence {

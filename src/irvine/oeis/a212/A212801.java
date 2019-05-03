@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A212801 Square array read by antidiagonals: T(m,n) = number of Eulerian circuits in the Cartesian product of two directed cycles of lengths m and n.
+ * A212801 Square array read by antidiagonals: <code>T(m,n) =</code> number of Eulerian circuits in the Cartesian product of two directed cycles of lengths m and n.
  * @author Sean A. Irvine
  */
 public class A212801 extends MemoryFunction2<Long, CC> implements Sequence {

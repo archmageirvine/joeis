@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183712 <code>1/20</code> of the number of <code>(n+1)</code> X <code>3 0..4</code> arrays with every 2 X 2 subblock strictly increasing clockwise or counterclockwise with one decrease.
+ * A183712 1/20 of the number of <code>(n+1) X 3 0..4</code> arrays with every <code>2 X 2</code> subblock strictly increasing clockwise or counterclockwise with one decrease.
  * @author Sean A. Irvine
  */
 public class A183712 extends LinearRecurrence {

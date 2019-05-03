@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018940;
 import irvine.util.io.IOUtils;
 
 /**
- * A019158 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite MFI = ZSM-5 Nan[ AlnSi96-nO192 ].
+ * A019158 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite MFI <code>= ZSM-5 Nan[ AlnSi96-nO192 ]</code>.
  * @author Sean A. Irvine
  */
 public class A019158 extends A018940 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013101 Expansion of <code>sec(arcsinh(x) + tan(x))</code> (coefficients of even powers only).
+ * A013101 Expansion of <code>sec(arcsinh(x) + tan(x)) (coefficients</code> of even powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A013101 implements Sequence {

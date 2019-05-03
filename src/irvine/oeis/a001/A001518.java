@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001518 Bessel polynomial y_n(3).
+ * A001518 Bessel polynomial <code>y_n(3)</code>.
  * @author Sean A. Irvine
  */
 public class A001518 implements Sequence {

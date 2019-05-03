@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024386 [ (3rd elementary symmetric function of S(n))/(first elementary symmetric function of <code>S(n)) ]</code>, where <code>S(n) =</code> {first <code>n+2</code> positive integers congruent to <code>1 mod 4}</code>.
+ * A024386 <code>[ (3rd</code> elementary symmetric function of <code>S(n))/(first</code> elementary symmetric function of <code>S(n)) ]</code>, where <code>S(n) = {first n+2</code> positive integers congruent to <code>1 mod 4}</code>.
  * @author Sean A. Irvine
  */
 public class A024386 extends LinearRecurrence {

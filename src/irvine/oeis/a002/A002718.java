@@ -4,7 +4,7 @@ import irvine.oeis.Stirling2TransformSequence;
 import irvine.oeis.a060.A060053;
 
 /**
- * A002718 Number of bicoverings of an n-set.
+ * A002718 Number of bicoverings of an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A002718 extends Stirling2TransformSequence {

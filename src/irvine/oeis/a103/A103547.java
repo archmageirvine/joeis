@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A103547 <code>a(n)</code> is the smallest n-digit zeroless prime such that the sum of the two numbers that result from splitting <code>a(n)</code> between <code>any</code> two of its digits is a distinct prime, or 0 if there is no such n-digit prime.
+ * A103547 <code>a(n)</code> is the smallest n-digit zeroless prime such that the sum of the two numbers that result from splitting <code>a(n)</code> between any two of its digits is a distinct prime, or 0 if there is no such n-digit prime.
  * @author Sean A. Irvine
  */
 public class A103547 implements Sequence {

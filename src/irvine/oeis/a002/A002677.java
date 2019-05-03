@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002677 Denominators of coefficients for central differences M_{3}'^(2*n+1).
+ * A002677 Denominators of coefficients for central differences <code>M_{3}'^(2*n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A002677 extends A002672 {

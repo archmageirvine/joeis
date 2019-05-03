@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090392 Seventh diagonal (m=6) of triangle A084938; <code>a(n) =</code> A084938(n+6,n) <code>= (n^6 + 45*n^5 + 925*n^4 + 11475*n^3 + 92314*n^2 + 413640*n)/720</code>.
+ * A090392 Seventh diagonal <code>(m=6)</code> of triangle <code>A084938; a(n) = A084938(n+6,n) = (n^6 + 45*n^5 + 925*n^4 + 11475*n^3 + 92314*n^2 + 413640*n)/720</code>.
  * @author Sean A. Irvine
  */
 public class A090392 extends LinearRecurrence {

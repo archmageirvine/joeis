@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A016089 Numbers n such that n divides n-th Lucas number A000032(n).
+ * A016089 Numbers n such that n divides n-th Lucas number <code>A000032(n)</code>.
  * @author Sean A. Irvine
  */
 public class A016089 extends A000032 {

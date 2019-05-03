@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018799 Smallest nonnegative integer m such that m! begins with n in base 10.
+ * A018799 Smallest nonnegative integer m such that <code>m!</code> begins with n in base 10.
  * @author Sean A. Irvine
  */
 public class A018799 implements Sequence {

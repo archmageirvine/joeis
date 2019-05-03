@@ -3,7 +3,7 @@ package irvine.oeis.a304;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A304204 Numbers from the 109-theorem.
+ * A304204 Numbers from the <code>109-theorem</code>.
  * @author Georg Fischer
  */
 public class A304204 extends FiniteSequence {

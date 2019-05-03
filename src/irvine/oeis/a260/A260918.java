@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A260918 Number of squares of all sizes in polyominoes obtained by union of two pyramidal figures (A092498) with intersection equals A002623.
+ * A260918 Number of squares of all sizes in polyominoes obtained by union of two pyramidal figures <code>(A092498)</code> with intersection equals <code>A002623</code>.
  * @author Sean A. Irvine
  */
 public class A260918 extends LinearRecurrence {

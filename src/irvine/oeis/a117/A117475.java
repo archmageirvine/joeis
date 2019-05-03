@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117475 The values of c in <code>a^2 + b^2 =</code> c^2 where <code>b - a = 23</code> and <code>gcd(a,b</code>,c) <code>= 1</code>.
+ * A117475 The values of c in <code>a^2 + b^2 = c^2</code> where b <code>- a = 23</code> and <code>gcd(a,b,c) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A117475 extends LinearRecurrence {

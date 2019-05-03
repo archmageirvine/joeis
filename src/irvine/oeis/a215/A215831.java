@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215831 <code>a(n) =</code> 3^(-1-floor(n/3))*A215829(n).
+ * A215831 <code>a(n) = 3^(-1-floor(n/3))*A215829(n)</code>.
  * @author Sean A. Irvine
  */
 public class A215831 extends LinearRecurrence {

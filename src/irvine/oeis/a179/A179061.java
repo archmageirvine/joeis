@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179061 Number of non-attacking placements of 6 rooks on an n X n board.
+ * A179061 Number of non-attacking placements of 6 rooks on an <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A179061 extends LinearRecurrence {

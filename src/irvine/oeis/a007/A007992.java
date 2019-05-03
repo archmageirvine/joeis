@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007992 Augmented amicable pairs (smaller member of each pair).
+ * A007992 Augmented amicable pairs (smaller member of each <code>pair)</code>.
  * @author Sean A. Irvine
  */
 public class A007992 implements Sequence {

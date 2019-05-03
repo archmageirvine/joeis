@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001063 E.g.f. satisfies A'(x) <code>= A(x/(1-x))</code>.
+ * A001063 E.g.f. satisfies <code>A'(x) = A(x/(1-x))</code>.
  * @author Sean A. Irvine
  */
 public class A001063 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014556 Euler's "Lucky" numbers: n such that m^2-m+n is prime for m=0..n-1.
+ * A014556 Euler's "Lucky" numbers: n such that <code>m^2-m+n</code> is prime for <code>m=0..n-1</code>.
  * @author Sean A. Irvine
  */
 public class A014556 extends FiniteSequence {

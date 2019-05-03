@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301035 Coordination sequence T6 for Zeolite Code FRA.
+ * A301035 Coordination sequence <code>T6</code> for Zeolite Code FRA.
  * @author Sean A. Irvine
  */
 public class A301035 extends CoordinationSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027888 Possible hands in the card game Skat (abbreviated version).
+ * A027888 Possible hands in the card game Skat <code>(abbreviated version)</code>.
  * @author Georg Fischer
  */
 public class A027888 extends FiniteSequence {

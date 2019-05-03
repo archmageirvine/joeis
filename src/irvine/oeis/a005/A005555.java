@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005555 A finite sequence associated with the Lie algebra E_8.
+ * A005555 A finite sequence associated with the Lie algebra <code>E_8</code>.
  * @author Sean A. Irvine
  */
 public class A005555 extends FiniteSequence {

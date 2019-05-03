@@ -5,7 +5,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A001514 Bessel polynomial {y_n}'(1).
+ * A001514 Bessel polynomial <code>{y_n}'(1)</code>.
  * @author Sean A. Irvine
  */
 public class A001514 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A236469 Primes p such that pi(p) = floor(p/10), where pi is the prime counting function.
+ * A236469 Primes p such that <code>pi(p) = floor(p/10)</code>, where pi is the prime counting function.
  * @author Georg Fischer
  */
 public class A236469 extends FiniteSequence {

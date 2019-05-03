@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093383 One of the 16 sequences illustrating the fact that A093382(2) <code>= 31</code>.
+ * A093383 One of the 16 sequences illustrating the fact that <code>A093382(2) = 31</code>.
  * @author Georg Fischer
  */
 public class A093383 extends FiniteSequence {

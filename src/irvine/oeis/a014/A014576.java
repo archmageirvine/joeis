@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014576 Smallest n-digit narcissistic (or Armstrong) number: smallest n-digit number equal to sum of n-th powers of its digits (or 0 if no such number exists).
+ * A014576 Smallest n-digit narcissistic <code>(or Armstrong)</code> number: smallest n-digit number equal to sum of n-th powers of its digits <code>(or 0</code> if no such number <code>exists)</code>.
  * @author Sean A. Irvine
  */
 public class A014576 extends FiniteSequence {

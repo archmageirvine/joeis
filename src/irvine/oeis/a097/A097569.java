@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097569 Right-truncatable Harshad numbers (zeros not permitted).
+ * A097569 Right-truncatable Harshad numbers (zeros not <code>permitted)</code>.
  * @author Georg Fischer
  */
 public class A097569 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A219957 Numbers expressible as 2*p + 3*q exactly in two ways, where p and q are primes (not necessarily distinct).
+ * A219957 Numbers expressible as <code>2*p + 3*q</code> exactly in two ways, where p and q are primes (not necessarily <code>distinct)</code>.
  * @author Georg Fischer
  */
 public class A219957 extends FiniteSequence {

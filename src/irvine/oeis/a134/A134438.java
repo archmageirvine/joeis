@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134438 Number of tilings of <code>a 3</code> X n rectangle with n trominoes.
+ * A134438 Number of tilings of a <code>3 X n</code> rectangle with n trominoes.
  * @author Sean A. Irvine
  */
 public class A134438 extends LinearRecurrence {

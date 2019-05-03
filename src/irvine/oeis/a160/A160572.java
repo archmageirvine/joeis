@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160572 Elements of A160444, pairs of consecutive entries swapped.
+ * A160572 Elements of <code>A160444</code>, pairs of consecutive entries swapped.
  * @author Sean A. Irvine
  */
 public class A160572 extends LinearRecurrence {

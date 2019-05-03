@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095694 <code>T(n,3)</code> diagonal of triangle in A095693.
+ * A095694 <code>T(n,3)</code> diagonal of triangle in <code>A095693</code>.
  * @author Sean A. Irvine
  */
 public class A095694 extends LinearRecurrence {

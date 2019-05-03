@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178513 Partial sums of 80^n.
+ * A178513 Partial sums of <code>80^n</code>.
  * @author Sean A. Irvine
  */
 public class A178513 extends LinearRecurrence {

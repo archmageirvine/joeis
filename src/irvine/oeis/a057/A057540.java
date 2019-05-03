@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057540 Birthday set of order 8: i.e., numbers congruent to <code>+- 1</code> modulo 2, 3, 4, 5, 6, 7 and 8.
+ * A057540 Birthday set of order <code>8</code>: i.e., numbers congruent to <code>+- 1</code> modulo <code>2, 3, 4, 5, 6, 7</code> and 8.
  * @author Sean A. Irvine
  */
 public class A057540 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A280945 List of primitive triples <code>(x, y, z)</code> of positive integers for which <code>xy - z, yz - x</code>, and <code>zx - y</code> are powers of 2.
+ * A280945 List of primitive triples <code>(x</code>, y, z) of positive integers for which xy - z, yz - x, and zx <code>- y</code> are powers of 2.
  * @author Georg Fischer
  */
 public class A280945 extends FiniteSequence {

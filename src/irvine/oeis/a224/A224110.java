@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A224110 Easter occurrences on March 22, March <code>23, ..</code>., April 25 during <code>a 5,700</code>,000-year Gregorian Easter cycle.
+ * A224110 Easter occurrences on March 22, March 23, ..., April 25 during a <code>5,700,000-year</code> Gregorian Easter cycle.
  * @author Georg Fischer
  */
 public class A224110 extends FiniteSequence {

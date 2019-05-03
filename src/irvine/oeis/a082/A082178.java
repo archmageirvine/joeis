@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082178 Professor Umbugio's sequence A082176 divided by <code>2*7*53*139 = 103138</code>.
+ * A082178 Professor Umbugio's sequence <code>A082176</code> divided by <code>2*7*53*139 = 103138</code>.
  * @author Sean A. Irvine
  */
 public class A082178 extends LinearRecurrence {

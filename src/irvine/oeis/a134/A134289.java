@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134289 Eighth column (and diagonal) of Narayana triangle A001263.
+ * A134289 Eighth column <code>(and diagonal)</code> of Narayana triangle <code>A001263</code>.
  * @author Sean A. Irvine
  */
 public class A134289 extends LinearRecurrence {

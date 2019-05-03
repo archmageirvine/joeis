@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257721 Hexagonal numbers (A000384) that are the sum of two consecutive hexagonal numbers.
+ * A257721 Hexagonal numbers <code>(A000384)</code> that are the sum of two consecutive hexagonal numbers.
  * @author Sean A. Irvine
  */
 public class A257721 extends LinearRecurrence {

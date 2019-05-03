@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032127 "BIK" (reversible, indistinct, unlabeled) transform of 1,3,5,7...
+ * A032127 "BIK" <code>(reversible</code>, indistinct, unlabeled) transform of 1,3,5,7...
  * @author Georg Fischer
  */
 public class A032127 extends LinearRecurrence {

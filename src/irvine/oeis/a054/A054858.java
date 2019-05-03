@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054858 Number of basic blocks of size <code>5xn</code> for tilings with square tiles of size up to 5 X 5.
+ * A054858 Number of basic blocks of size <code>5xn</code> for tilings with square tiles of size up to <code>5 X 5</code>.
  * @author Georg Fischer
  */
 public class A054858 extends LinearRecurrence {

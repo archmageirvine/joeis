@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001274;
 
 /**
- * A003276 Numbers n such that the multiplicative group of residues prime to n, M_n, is isomorphic to M_{n+1}.
+ * A003276 Numbers n such that the multiplicative group of residues prime to n, <code>M_n</code>, is isomorphic to <code>M_{n+1}</code>.
  * @author Sean A. Irvine
  */
 public class A003276 extends A001274 {

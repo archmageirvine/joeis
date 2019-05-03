@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301226 Coordination sequence T7 for Zeolite Code TUN.
+ * A301226 Coordination sequence <code>T7</code> for Zeolite Code TUN.
  * @author Sean A. Irvine
  */
 public class A301226 extends CoordinationSequence {

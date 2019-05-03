@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020525 <code>a(n) =</code> 5th Euler polynomial evaluated at <code>2^n</code> and multiplied by 2.
+ * A020525 <code>a(n) = 5th</code> Euler polynomial evaluated at <code>2^n</code> and multiplied by 2.
  * @author Sean A. Irvine
  */
 public class A020525 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166963 Number of permutations in S_{2n} avoiding 123 and 1432 whose matrices are 180-degree symmetric.
+ * A166963 Number of permutations in <code>S_{2n}</code> avoiding 123 and 1432 whose matrices are 180-degree symmetric.
  * @author Sean A. Irvine
  */
 public class A166963 extends LinearRecurrence {

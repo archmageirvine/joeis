@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004307 Number of permutations p of <code>[n]</code> such that <code>n-p(i)+i &gt;= 4 (mod n)</code> for all i.
+ * A004307 Number of permutations p of [n] such that <code>n-p(i)+i &gt;= 4 (mod n)</code> for all i.
  * @author Sean A. Irvine
  */
 public class A004307 implements Sequence {

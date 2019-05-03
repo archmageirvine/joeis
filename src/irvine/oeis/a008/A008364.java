@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008364 11-rough numbers: not divisible by 2, 3, 5 or 7.
+ * A008364 11-rough numbers: not divisible by <code>2, 3, 5</code> or 7.
  * @author Sean A. Irvine
  */
 public class A008364 implements Sequence {

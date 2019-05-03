@@ -3,7 +3,7 @@ package irvine.oeis.a021;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A021017 Decimal expansion of <code>1/13</code>.
+ * A021017 Decimal expansion of 1/13.
  * @author Sean A. Irvine
  */
 public class A021017 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069996 Number of spanning trees on the bipartite graph K_{3,n}.
+ * A069996 Number of spanning trees on the bipartite graph <code>K_{3,n}</code>.
  * @author Sean A. Irvine
  */
 public class A069996 extends LinearRecurrence {

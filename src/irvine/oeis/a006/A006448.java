@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006448 Number of n-element algebras with 1 binary operator and 1 constant (pointed groupoids).
+ * A006448 Number of n-element algebras with 1 binary operator and 1 constant <code>(pointed groupoids)</code>.
  * @author Sean A. Irvine
  */
 public class A006448 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011475 Decimal expansion of 56th root of 56.
+ * A011475 Decimal expansion of <code>56th</code> root of 56.
  * @author Sean A. Irvine
  */
 public class A011475 extends DecimalExpansionSequence {

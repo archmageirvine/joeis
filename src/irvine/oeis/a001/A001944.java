@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001944 Numbers that are the sum of 4 distinct squares: of form w^2 <code>+ x^2 + y^2 + z^2</code> with <code>0 &lt;=</code> w <code>&lt; x &lt; y &lt; z</code>.
+ * A001944 Numbers that are the sum of 4 distinct squares: of form <code>w^2 + x^2 + y^2 + z^2</code> with <code>0 &lt;= w &lt; x &lt; y &lt</code>; z.
  * @author Sean A. Irvine
  */
 public class A001944 implements Sequence {

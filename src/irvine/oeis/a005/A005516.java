@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005516 Number of n-bead bracelets (turnover necklaces) with 12 red beads.
+ * A005516 Number of n-bead bracelets <code>(turnover necklaces)</code> with 12 red beads.
  * @author Sean A. Irvine
  */
 public class A005516 implements Sequence {

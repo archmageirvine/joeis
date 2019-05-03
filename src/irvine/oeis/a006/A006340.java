@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006340 An "eta-sequence": [ (n+1)*tau <code>+ 1/2 ] - [</code> n*tau <code>+ 1/2 ]</code>, tau <code>= (1 + sqrt(5))/2</code>.
+ * A006340 An "eta-sequence": <code>[ (n+1)*tau + 1/2 ] - [ n*tau + 1/2 ]</code>, tau <code>= (1 + sqrt(5))/2</code>.
  * @author Sean A. Irvine
  */
 public class A006340 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A054891 Cusp form of weight <code>13/2</code> associated to the unique cusp form of weight 12 under Shimura correspondence.
+ * A054891 Cusp form of weight 13/2 associated to the unique cusp form of weight 12 under Shimura correspondence.
  * @author Sean A. Irvine
  */
 public class A054891 implements Sequence {

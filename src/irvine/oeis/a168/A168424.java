@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168424 Normalized radii of Gosset circles (see Kostant article for precise definition).
+ * A168424 Normalized radii of Gosset circles (see Kostant article for precise <code>definition)</code>.
  * @author Georg Fischer
  */
 public class A168424 extends FiniteSequence {

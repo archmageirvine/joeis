@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109721 Number of different ways of selecting n nonempty cells in <code>a 4</code> X 4 binary matrix, excluding all rotationally and symmetrically equivalent matrices.
+ * A109721 Number of different ways of selecting n nonempty cells in a <code>4 X 4</code> binary matrix, excluding all rotationally and symmetrically equivalent matrices.
  * @author Georg Fischer
  */
 public class A109721 extends FiniteSequence {

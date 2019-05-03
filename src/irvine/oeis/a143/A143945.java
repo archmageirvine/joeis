@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143945 Wiener index of the grid P_n x P_n, where P_n is the path graph on n vertices.
+ * A143945 Wiener index of the grid <code>P_n x P_n</code>, where <code>P_n</code> is the path graph on n vertices.
  * @author Sean A. Irvine
  */
 public class A143945 extends LinearRecurrence {

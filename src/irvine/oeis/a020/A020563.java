@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014501;
 
 /**
- * A020563 Number of cyclic multigraphs on n labeled edges (with loops).
+ * A020563 Number of cyclic multigraphs on n labeled edges <code>(with loops)</code>.
  * @author Sean A. Irvine
  */
 public class A020563 extends A014501 {

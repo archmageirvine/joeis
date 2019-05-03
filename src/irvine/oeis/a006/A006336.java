@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a060.A060143;
 
 /**
- * A006336 <code>a(n) = a(n-1) + a(n - 1 -</code> number of even terms so far).
+ * A006336 <code>a(n) = a(n-1) + a(n - 1 -</code> number of even terms so <code>far)</code>.
  * @author Sean A. Irvine
  */
 public class A006336 extends MemorySequence {

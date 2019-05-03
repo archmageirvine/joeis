@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.LongUtils;
 
 /**
- * A002483 Expansion of Jacobi theta function {theta_1}'(q) in powers of q^(1/4).
+ * A002483 Expansion of Jacobi theta function <code>{theta_1}'(q)</code> in powers of <code>q^(1/4)</code>.
  * @author Sean A. Irvine
  */
 public class A002483 implements Sequence {

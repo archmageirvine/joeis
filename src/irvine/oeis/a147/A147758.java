@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A147758 Numbers whose binary representation is a palindrome formed from the reflected decimal expansion of the concatenation of 1, 0 and infinite digits 1.
+ * A147758 Numbers whose binary representation is a palindrome formed from the reflected decimal expansion of the concatenation of <code>1, 0</code> and infinite digits 1.
  * @author Sean A. Irvine
  */
 public class A147758 implements Sequence {

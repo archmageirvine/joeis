@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135270 Row 6 of A038207.
+ * A135270 Row 6 of <code>A038207</code>.
  * @author Georg Fischer
  */
 public class A135270 extends FiniteSequence {

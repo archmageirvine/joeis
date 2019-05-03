@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002216 Harary-Read numbers: restricted hexagonal polyominoes (cata-polyhexes) with n cells.
+ * A002216 Harary-Read numbers: restricted hexagonal polyominoes <code>(cata-polyhexes)</code> with n cells.
  * @author Sean A. Irvine
  */
 public class A002216 extends A002215 {

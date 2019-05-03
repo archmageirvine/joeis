@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A110827 Weight enumerator of <code>[128,8,64]</code> Reed-Muller code <code>RM(1,7)</code>.
+ * A110827 Weight enumerator of <code>[128,8,64] Reed-Muller</code> code <code>RM(1,7)</code>.
  * @author Georg Fischer
  */
 public class A110827 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A221158 Fibonacci numbers with two 1's in the binary representation.
+ * A221158 Fibonacci numbers with two <code>1</code>'s in the binary representation.
  * @author Georg Fischer
  */
 public class A221158 extends FiniteSequence {

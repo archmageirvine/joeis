@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080018 Triangle of coefficients of polynomials <code>P(n; x) =</code> Permanent(M), where M=[m(i,j)] is n X n matrix defined by <code>m(i,j)=x</code> if <code>-1&lt;=i-j&lt;=1</code> else <code>m(i,j)=1</code>.
+ * A080018 Triangle of coefficients of polynomials <code>P(n; x) = Permanent(M)</code>, where <code>M=[m(i,j)]</code> is <code>n X n</code> matrix defined by <code>m(i,j)=x</code> if <code>-1&lt;=i-j&lt;=1</code> else <code>m(i,j)=1</code>.
  * @author Sean A. Irvine
  */
 public class A080018 implements Sequence {

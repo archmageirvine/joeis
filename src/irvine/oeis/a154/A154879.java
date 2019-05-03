@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154879 Third differences of the Jacobsthal sequence A001045.
+ * A154879 Third differences of the Jacobsthal sequence <code>A001045</code>.
  * @author Sean A. Irvine
  */
 public class A154879 extends LinearRecurrence {

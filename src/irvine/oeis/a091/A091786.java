@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A091786 Number of electoral votes per state in the U.S.A. (for <code>2001-2010)</code>.
+ * A091786 Number of electoral votes per state in the U.S.A. <code>(for 2001-2010)</code>.
  * @author Georg Fischer
  */
 public class A091786 extends FiniteSequence {

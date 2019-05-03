@@ -3,7 +3,7 @@ package irvine.oeis.a196;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A196923 Values of fundamental discriminant -d where number of ideal classes Q(sqrt(-d)) is at most two.
+ * A196923 Values of fundamental discriminant <code>-d</code> where number of ideal classes <code>Q(sqrt(-d))</code> is at most two.
  * @author Georg Fischer
  */
 public class A196923 extends FiniteSequence {

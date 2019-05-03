@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296196 Harary index of the n X n queen graph.
+ * A296196 Harary index of the <code>n X n</code> queen graph.
  * @author Georg Fischer
  */
 public class A296196 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100406 <code>a(n) =</code> repeating period of the digital roots of the sequence {m^n, m=1,2,3...}.
+ * A100406 <code>a(n) =</code> repeating period of the digital roots of the sequence <code>{m^n, m=1,2,3...}</code>.
  * @author Sean A. Irvine
  */
 public class A100406 extends LinearRecurrence {

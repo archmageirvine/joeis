@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259028 <code>a(n) =</code> least number m such that digital root of m is n*(digital root of m-th prime).
+ * A259028 <code>a(n) =</code> least number m such that digital root of m is <code>n*(digital</code> root of <code>m-th prime)</code>.
  * @author Georg Fischer
  */
 public class A259028 extends FiniteSequence {

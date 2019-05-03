@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214476 Degrees of irreducible representations of triality twisted group 3D4(2).
+ * A214476 Degrees of irreducible representations of triality twisted group <code>3D4(2)</code>.
  * @author Georg Fischer
  */
 public class A214476 extends FiniteSequence {

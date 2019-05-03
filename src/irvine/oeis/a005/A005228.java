@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A005228 Sequence and first differences (A030124) together list all positive numbers exactly once.
+ * A005228 Sequence and first differences <code>(A030124)</code> together list all positive numbers exactly once.
  * @author Sean A. Irvine
  */
 public class A005228 implements Sequence {

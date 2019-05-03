@@ -4,7 +4,7 @@ package irvine.oeis.a021;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A021329 Decimal expansion of <code>1/325</code>.
+ * A021329 Decimal expansion of 1/325.
  * @author Georg Fischer
  */
 public class A021329 extends LinearRecurrence {

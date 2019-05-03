@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001175;
 
 /**
- * A003147 Primes p with a Fibonacci primitive root g, i.e., such that g^2 = g <code>+ 1 (mod</code> p).
+ * A003147 Primes p with a Fibonacci primitive root g, i.e., such that <code>g^2 = g + 1 (mod p)</code>.
  * @author Sean A. Irvine
  */
 public class A003147 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005813 Molien series for 6-dimensional complex representation of double cover of J2.
+ * A005813 Molien series for 6-dimensional complex representation of double cover of <code>J2</code>.
  * @author Sean A. Irvine
  */
 public class A005813 implements Sequence {

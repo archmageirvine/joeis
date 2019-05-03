@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033183 <code>a(n) =</code> number of pairs (p,q) such that 4*p + 9*q <code>= n</code>.
+ * A033183 <code>a(n) =</code> number of pairs <code>(p,q)</code> such that <code>4*p + 9*q =</code> n.
  * @author Sean A. Irvine
  */
 public class A033183 extends LinearRecurrence {

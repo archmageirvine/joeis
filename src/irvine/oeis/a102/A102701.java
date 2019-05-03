@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102701 Non-"Ding!Bong!" numbers: positive numbers which are not a positive linear combination of 5's and 7's.
+ * A102701 <code>Non-"Ding!Bong!"</code> numbers: positive numbers which are not a positive linear combination of <code>5</code>'s and <code>7</code>'s.
  * @author Georg Fischer
  */
 public class A102701 extends FiniteSequence {

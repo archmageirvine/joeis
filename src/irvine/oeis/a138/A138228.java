@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138228 Atomic numbers at the top of the 18 groups of the Mendeleyev-Seaborg table A138724.
+ * A138228 Atomic numbers at the top of the 18 groups of the Mendeleyev-Seaborg table <code>A138724</code>.
  * @author Georg Fischer
  */
 public class A138228 extends FiniteSequence {

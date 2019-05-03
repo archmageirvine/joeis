@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169713 The function W_n(10) (see Borwein et al. reference for definition).
+ * A169713 The function <code>W_n(10) (see</code> Borwein et al. reference for <code>definition)</code>.
  * @author Sean A. Irvine
  */
 public class A169713 extends LinearRecurrence {

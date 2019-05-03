@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007332 Expansion of 6-dimensional cusp form (eta(q) * eta(q^3))^6 in powers of q.
+ * A007332 Expansion of 6-dimensional cusp form <code>(eta(q) * eta(q^3))^6</code> in powers of q.
  * @author Sean A. Irvine
  */
 public class A007332 implements Sequence {

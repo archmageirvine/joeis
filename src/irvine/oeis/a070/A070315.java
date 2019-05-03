@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070315 Third diagonal of triangle in A046739.
+ * A070315 Third diagonal of triangle in <code>A046739</code>.
  * @author Sean A. Irvine
  */
 public class A070315 extends LinearRecurrence {

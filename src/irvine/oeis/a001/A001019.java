@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001019 Powers of 9: <code>a(n) = 9^n</code>.
+ * A001019 Powers of <code>9: a(n) = 9^n</code>.
  * @author Sean A. Irvine
  */
 public class A001019 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235269 floor(s*t/(s+t)), where <code>s(n)</code> are the squares, <code>t(n)</code> the triangular numbers.
+ * A235269 <code>floor(s*t/(s+t))</code>, where <code>s(n)</code> are the squares, <code>t(n)</code> the triangular numbers.
  * @author Sean A. Irvine
  */
 public class A235269 extends LinearRecurrence {

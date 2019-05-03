@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A003304 Number of figure 8's with <code>2n</code> edges on the square lattice.
+ * A003304 Number of figure <code>8</code>'s with <code>2n</code> edges on the square lattice.
  * @author Sean A. Irvine
  */
 public class A003304 extends A002931 {

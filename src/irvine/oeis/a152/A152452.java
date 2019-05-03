@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.math.z.Z;
 
 /**
- * A152452 Records in A152235.
+ * A152452 Records in <code>A152235</code>.
  * @author Sean A. Irvine
  */
 public class A152452 extends A152235 {

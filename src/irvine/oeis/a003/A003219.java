@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A003219 Self numbers divisible by sum of their digits (or, self numbers which are also Harshad numbers).
+ * A003219 Self numbers divisible by sum of their digits <code>(or</code>, self numbers which are also Harshad numbers).
  * @author Sean A. Irvine
  */
 public class A003219 extends A003052 {

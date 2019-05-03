@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078872 The quintuples (d1,d2,d3,d4,d5) with elements in <code>{2,4,6}</code> are listed in lexicographic order; for each quintuple, this sequence lists the smallest prime p <code>&gt;= 7</code> such that the differences between the 6 consecutive primes starting with p are (d1,d2,d3,d4,d5), if such a prime exists.
+ * A078872 The quintuples <code>(d1,d2,d3,d4,d5)</code> with elements in <code>{2,4,6}</code> are listed in lexicographic order; for each quintuple, this sequence lists the smallest prime p <code>&gt;= 7</code> such that the differences between the 6 consecutive primes starting with p are <code>(d1,d2,d3,d4,d5)</code>, if such a prime exists.
  * @author Georg Fischer
  */
 public class A078872 extends FiniteSequence {

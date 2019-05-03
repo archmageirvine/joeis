@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019654 Consider problem of placing N queens on an n X n board so that each queen attacks precisely k others. Here <code>k=4</code> and sequence gives number of different solutions when N takes its maximal value.
+ * A019654 Consider problem of placing N queens on an <code>n X n</code> board so that each queen attacks precisely k others. Here <code>k=4</code> and sequence gives number of different solutions when N takes its maximal value.
  * @author Sean A. Irvine
  */
 public class A019654 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000736 Boustrophedon transform of Catalan numbers 1, 1, 1, 2, 5, 14, ...
+ * A000736 Boustrophedon transform of Catalan numbers <code>1, 1, 1, 2, 5, 14</code>, ...
  * @author Sean A. Irvine
  */
 public class A000736 extends A000674 {

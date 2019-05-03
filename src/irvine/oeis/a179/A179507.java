@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A179507 Smallest emirp with a base-10 digit set of <code>{0,1,..,n}</code>.
+ * A179507 Smallest emirp with a <code>base-10</code> digit set of <code>{0,1,..,n}</code>.
  * @author Georg Fischer
  */
 public class A179507 extends FiniteSequence {

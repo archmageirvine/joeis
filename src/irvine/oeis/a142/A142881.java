@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142881 <code>a(0) = 0, a(1) = 1</code>, after which, if <code>n=3k</code>: <code>a(n) = 2*a(n-1) - a(n-2)</code>, if <code>n=3k+1</code>: <code>a(n) = a(n-1) + a(n-2)</code>, if <code>n=3k+2</code>: <code>a(n) = 2*a(n-1) + a(n-2)</code>.
+ * A142881 <code>a(0) = 0, a(1) = 1</code>, after which, if <code>n=3k: a(n) = 2*a(n-1) - a(n-2)</code>, if <code>n=3k+1: a(n) = a(n-1) + a(n-2)</code>, if <code>n=3k+2: a(n) = 2*a(n-1) + a(n-2)</code>.
  * @author Sean A. Irvine
  */
 public class A142881 extends LinearRecurrence {

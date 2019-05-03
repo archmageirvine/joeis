@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101639 Positive integers n for which <code>n = f(n)</code>, where <code>f(n)</code> is the total number of 2's required when writing out all numbers between 0 and n.
+ * A101639 Positive integers n for which <code>n = f(n)</code>, where <code>f(n)</code> is the total number of <code>2</code>'s required when writing out all numbers between 0 and n.
  * @author Georg Fischer
  */
 public class A101639 extends FiniteSequence {

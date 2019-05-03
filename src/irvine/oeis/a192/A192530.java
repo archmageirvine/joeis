@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192530 Index-list (modified) of the primes generated at A192583.
+ * A192530 <code>Index-list (modified)</code> of the primes generated at <code>A192583</code>.
  * @author Georg Fischer
  */
 public class A192530 extends FiniteSequence {

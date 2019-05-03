@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322184 List of primes that appear in the 3X3 matrices A, B, C which are the smallest solution to the matrix equation AB = C in square matrices composed of distinct primes.
+ * A322184 List of primes that appear in the <code>3X3</code> matrices A, B, C which are the smallest solution to the matrix equation AB = C in square matrices composed of distinct primes.
  * @author Georg Fischer
  */
 public class A322184 extends FiniteSequence {

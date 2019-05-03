@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145401 Number of Hamiltonian cycles in P_6 X P_n.
+ * A145401 Number of Hamiltonian cycles in <code>P_6 X P_n</code>.
  * @author Sean A. Irvine
  */
 public class A145401 extends LinearRecurrence {

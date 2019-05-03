@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100157 Structured rhombic dodecahedral numbers (vertex structure 9).
+ * A100157 Structured rhombic dodecahedral numbers (vertex structure <code>9)</code>.
  * @author Sean A. Irvine
  */
 public class A100157 extends LinearRecurrence {

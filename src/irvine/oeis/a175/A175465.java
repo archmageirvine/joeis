@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A175465 <code>a(n)</code> is the number of elements in the largest set of same-sized run-lengths (of either 0's or 1's) in the binary representation of n.
+ * A175465 <code>a(n)</code> is the number of elements in the largest set of <code>same-sized run-lengths (of</code> either <code>0</code>'s or <code>1's)</code> in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A175465 implements Sequence {

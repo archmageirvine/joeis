@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038235 Bottom line of 4-wave sequence A038197, also bisection of A006357.
+ * A038235 Bottom line of 4-wave sequence <code>A038197</code>, also bisection of <code>A006357</code>.
  * @author Sean A. Irvine
  */
 public class A038235 extends LinearRecurrence {

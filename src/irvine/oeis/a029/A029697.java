@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029697 Number of words of length <code>2n</code> in the 6 transpositions of S[ <code>4 ]</code> equivalent to the identity.
+ * A029697 Number of words of length <code>2n</code> in the 6 transpositions of <code>S[ 4 ]</code> equivalent to the identity.
  * @author Sean A. Irvine
  */
 public class A029697 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000975 <code>a(2n) = 2*a(2n-1), a(2n+1) = 2*a(2n)+1</code> (also <code>a(n)</code> is the n-th number without consecutive equal binary digits).
+ * A000975 <code>a(2n) = 2*a(2n-1), a(2n+1) = 2*a(2n)+1 (also a(n)</code> is the n-th number without consecutive equal binary <code>digits)</code>.
  * @author Sean A. Irvine
  */
 public class A000975 implements Sequence {

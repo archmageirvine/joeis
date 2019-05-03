@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008826 Triangle of coefficients from fractional iteration of e^x <code>- 1</code>.
+ * A008826 Triangle of coefficients from fractional iteration of <code>e^x - 1</code>.
  * @author Sean A. Irvine
  */
 public class A008826 extends MemoryFunction1<Polynomial<Z>> implements Sequence {

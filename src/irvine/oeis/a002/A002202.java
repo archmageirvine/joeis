@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A002202 Values taken by totient function phi(m) (A000010).
+ * A002202 Values taken by totient function <code>phi(m) (A000010)</code>.
  * @author Sean A. Irvine
  */
 public class A002202 implements Sequence {

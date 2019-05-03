@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027930 <code>a(n) = T(n, 2n-7)</code>, T given by A027926.
+ * A027930 <code>a(n) = T(n, 2n-7)</code>, T given by <code>A027926</code>.
  * @author Sean A. Irvine
  */
 public class A027930 extends LinearRecurrence {

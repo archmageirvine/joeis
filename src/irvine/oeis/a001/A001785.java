@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001785 Second order reciprocal Stirling number (Fekete) <code>[[2n+4, n]]</code>. The number of n-orbit permutations of a (2n+4)-set with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind (e.g., Comtet).
+ * A001785 Second order reciprocal Stirling number <code>(Fekete) [[2n+4, n]]</code>. The number of n-orbit permutations of a <code>(2n+4)-set</code> with at least 2 elements in each orbit. Also known as associated Stirling numbers of the first kind <code>(e.g., Comtet)</code>.
  * @author Sean A. Irvine
  */
 public class A001785 implements Sequence {

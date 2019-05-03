@@ -6,7 +6,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Stirling;
 
 /**
- * A002465 Number of ways to place n nonattacking bishops on an n X n board.
+ * A002465 Number of ways to place n nonattacking bishops on an <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A002465 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054333 <code>1/256</code> of tenth unsigned column of triangle A053120 (T-Chebyshev, rising powers, zeros omitted).
+ * A054333 1/256 of tenth unsigned column of triangle <code>A053120 (T-Chebyshev</code>, rising powers, zeros <code>omitted)</code>.
  * @author Sean A. Irvine
  */
 public class A054333 extends LinearRecurrence {

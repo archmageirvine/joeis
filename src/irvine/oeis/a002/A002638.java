@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000568;
 
 /**
- * A002638 <code>a(n) =</code> (number of nonisomorphic nontransitive prime tournaments on n nodes) <code>- Moebius(n)</code>.
+ * A002638 <code>a(n) =</code> (number of nonisomorphic nontransitive prime tournaments on <code>n nodes) - Moebius(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002638 extends A000568 {

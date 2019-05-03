@@ -6,7 +6,7 @@ import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 
 /**
- * A004481 Table of Sprague-Grundy values for Wythoff's game (Wyt Queens) read by antidiagonals.
+ * A004481 Table of Sprague-Grundy values for Wythoff's game <code>(Wyt Queens)</code> read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A004481 extends A004489 {

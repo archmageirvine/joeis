@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A173577 7-Factorions: equal to the sum of the 7-fold factorials of their digits in base 10.
+ * A173577 <code>7-Factorions</code>: equal to the sum of the 7-fold factorials of their digits in base 10.
  * @author Georg Fischer
  */
 public class A173577 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104743 Numbers m=n+3^n such that equation x=3^(m-x) has solution <code>x=3^n</code>.
+ * A104743 Numbers <code>m=n+3^n</code> such that equation <code>x=3^(m-x)</code> has solution <code>x=3^n</code>.
  * @author Sean A. Irvine
  */
 public class A104743 extends LinearRecurrence {

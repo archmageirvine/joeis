@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A001931 Number of fixed 3-dimensional polycubes with n cells; lattice animals in the simple cubic lattice <code>(6</code> nearest neighbors), face-connected cubes.
+ * A001931 Number of fixed 3-dimensional polycubes with n cells; lattice animals in the simple cubic lattice <code>(6</code> nearest <code>neighbors), face-connected</code> cubes.
  * @author Sean A. Irvine
  */
 public class A001931 implements Sequence {

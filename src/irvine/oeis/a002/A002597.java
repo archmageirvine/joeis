@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 
 
 /**
- * A002597 Number of partitions into one kind of 1's, two kinds of 2's, and three kinds of 3's.
+ * A002597 Number of partitions into one kind of <code>1</code>'s, two kinds of <code>2</code>'s, and three kinds of <code>3</code>'s.
  * @author Sean A. Irvine
  */
 public class A002597 extends A002599 {

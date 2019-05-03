@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000289 A nonlinear recurrence: <code>a(n) = a(n-1)^2 - 3*a(n-1) + 3</code> (for <code>n&gt;1)</code>.
+ * A000289 A nonlinear recurrence: <code>a(n) = a(n-1)^2 - 3*a(n-1) + 3 (for n&gt;1)</code>.
  * @author Sean A. Irvine
  */
 public class A000289 implements Sequence {

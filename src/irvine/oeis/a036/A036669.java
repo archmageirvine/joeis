@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000598;
 
 /**
- * A036669 G.f.: <code>A(x) =</code> x*cycle_index(S4, <code>B(x)-1)</code>, where <code>B(x)</code> is g.f. for A000598.
+ * A036669 G.f.: <code>A(x) = x*cycle_index(S4, B(x)-1)</code>, where <code>B(x)</code> is g.f. for <code>A000598</code>.
  * @author Sean A. Irvine
  */
 public class A036669 extends A000598 {

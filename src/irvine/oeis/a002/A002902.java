@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001412;
 
 /**
- * A002902 Number of n-step self-avoiding walks on cubic lattice.
+ * A002902 Number of <code>n-step self-avoiding</code> walks on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A002902 extends A001412 {

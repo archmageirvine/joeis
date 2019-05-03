@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054344 Number of ways of covering <code>a 2n</code> X <code>2n</code> lattice with <code>2n^2</code> dominoes of which exactly 6 are horizontal (or vertical) dominoes.
+ * A054344 Number of ways of covering a <code>2n X 2n</code> lattice with <code>2n^2</code> dominoes of which exactly 6 are horizontal <code>(or vertical)</code> dominoes.
  * @author Sean A. Irvine
  */
 public class A054344 extends LinearRecurrence {

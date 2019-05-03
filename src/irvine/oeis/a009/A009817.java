@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009817 Expansion of e.g.f. <code>tanh(tan(x)*x)</code> (even powers only).
+ * A009817 Expansion of e.g.f. <code>tanh(tan(x)*x) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A009817 implements Sequence {

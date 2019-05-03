@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101357 Partial sums of A060354.
+ * A101357 Partial sums of <code>A060354</code>.
  * @author Sean A. Irvine
  */
 public class A101357 extends LinearRecurrence {

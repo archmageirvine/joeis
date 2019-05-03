@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A051596 Numerical values or Gematriahs of Hebrew letters {aleph, bet, <code>..</code>., tet}.
+ * A051596 Numerical values or Gematriahs of Hebrew letters <code>{aleph</code>, bet, ..., <code>tet}</code>.
  * @author Georg Fischer
  */
 public class A051596 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072946 Coefficient of the highest power of q in the expansion of <code>nu(0)=1, nu(1)=b</code> and for <code>n&gt;=2</code>, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2) with <code>(b</code>,lambda)=(2,2), where (n)_q=(1+q+...+q^(n-1)) and q is a root of unity.
+ * A072946 Coefficient of the highest power of q in the expansion of <code>nu(0)=1, nu(1)=b</code> and for <code>n&gt;=2, nu(n)=b*nu(n-1)+lambda*(n-1)_q*nu(n-2)</code> with <code>(b,lambda)=(2,2)</code>, where <code>(n)_q=(1+q+...+q^(n-1))</code> and q is a root of unity.
  * @author Georg Fischer
  */
 public class A072946 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227078 The Ramanujan-Nagell squares: A038198(n)^2.
+ * A227078 The Ramanujan-Nagell squares: <code>A038198(n)^2</code>.
  * @author Georg Fischer
  */
 public class A227078 extends FiniteSequence {

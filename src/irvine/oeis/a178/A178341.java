@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178341 Smallest multiple of 3 such that decimals digits <code>1, ..., k (k = 1, ..., 9)</code> and 0 appear in <code>any</code> order.
+ * A178341 Smallest multiple of 3 such that decimals digits 1, ..., k <code>(k = 1</code>, ..., <code>9)</code> and 0 appear in any order.
  * @author Georg Fischer
  */
 public class A178341 extends FiniteSequence {

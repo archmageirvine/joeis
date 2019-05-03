@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033455 Convolution of nonzero squares A000290 with themselves.
+ * A033455 Convolution of nonzero squares <code>A000290</code> with themselves.
  * @author Sean A. Irvine
  */
 public class A033455 extends LinearRecurrence {

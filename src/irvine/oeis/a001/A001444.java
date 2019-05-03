@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001444 Bending a piece of wire of length <code>n+1</code> (configurations that can only be brought into coincidence by turning the figure over are counted as different).
+ * A001444 Bending a piece of wire of length <code>n+1 (configurations</code> that can only be brought into coincidence by turning the figure over are counted as <code>different)</code>.
  * @author Sean A. Irvine
  */
 public class A001444 implements Sequence {

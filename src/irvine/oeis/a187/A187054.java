@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187054 Numbers that are not the sum of three powerful numbers (A001694).
+ * A187054 Numbers that are not the sum of three powerful numbers <code>(A001694)</code>.
  * @author Georg Fischer
  */
 public class A187054 extends FiniteSequence {

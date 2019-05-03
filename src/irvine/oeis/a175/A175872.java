@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A175872 Write n in binary. Consider the 0's and 1 as a list. <code>(*)</code> If the new list consists entirely of 1's, then <code>a(n) =</code> the number of 1's, and end. Otherwise, construct a new list made up of the lengths, written in order, of the runs of similarly-valued terms from the previous list. Go to *.
+ * A175872 Write n in binary. Consider the <code>0</code>'s and 1 as a list. <code>(*)</code> If the new list consists entirely of <code>1</code>'s, then <code>a(n) =</code> the number of <code>1</code>'s, and end. Otherwise, construct a new list made up of the lengths, written in order, of the runs of similarly-valued terms from the previous list. Go to <code>*</code>.
  * @author Sean A. Irvine
  */
 public class A175872 implements Sequence {

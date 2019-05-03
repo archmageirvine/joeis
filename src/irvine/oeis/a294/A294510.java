@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A294510 Residues modulo 24 of curvatures in the Apollonian circle packings A042944, A042945 and A218155.
+ * A294510 Residues modulo 24 of curvatures in the Apollonian circle packings <code>A042944, A042945</code> and <code>A218155</code>.
  * @author Georg Fischer
  */
 public class A294510 extends FiniteSequence {

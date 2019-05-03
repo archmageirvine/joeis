@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006317 Maximum number of chess queens of 3 colors on an n X n board such that no queen attacks or protects another queen of its color.
+ * A006317 Maximum number of chess queens of 3 colors on an <code>n X n</code> board such that no queen attacks or protects another queen of its color.
  * @author Sean A. Irvine
  */
 public class A006317 implements Sequence {

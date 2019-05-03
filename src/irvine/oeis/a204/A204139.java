@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204139 Primes p such that 9p^2 is a penholodigital square (A036744).
+ * A204139 Primes p such that <code>9p^2</code> is a penholodigital square <code>(A036744)</code>.
  * @author Georg Fischer
  */
 public class A204139 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003079 One of the basic cycles in the <code>x-&gt;3x-1 (x</code> odd) or <code>x/2 (x</code> even) problem.
+ * A003079 One of the basic cycles in the <code>x-&gt;3x-1 (x odd)</code> or <code>x/2 (x even)</code> problem.
  * @author Sean A. Irvine
  */
 public class A003079 implements Sequence {

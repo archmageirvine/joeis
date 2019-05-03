@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000571 Number of different score sequences that are possible in an n-team round-robin tournament.
+ * A000571 Number of different score sequences that are possible in an <code>n-team round-robin</code> tournament.
  * @author Sean A. Irvine
  */
 public class A000571 extends MemoryFunction3<Integer, Z> implements Sequence {

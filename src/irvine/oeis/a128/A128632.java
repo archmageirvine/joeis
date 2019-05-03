@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a105.A105559;
 
 /**
- * A128632 McKay-Thompson series of class 6E for the Monster group with <code>a(0) = -5</code>.
+ * A128632 McKay-Thompson series of class <code>6E</code> for the Monster group with <code>a(0) = -5</code>.
  * @author Sean A. Irvine
  */
 public class A128632 extends A105559 {

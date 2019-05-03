@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245829 Szeged index of the prism graph C_n X P_2 <code>(n &gt;=3)</code>.
+ * A245829 Szeged index of the prism graph <code>C_n X P_2 (n &gt;=3)</code>.
  * @author Sean A. Irvine
  */
 public class A245829 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258702 Coefficients in Molien series for 5-dimensional faithful representation of Horrocks-Mumford group G_{HM}.
+ * A258702 Coefficients in Molien series for 5-dimensional faithful representation of Horrocks-Mumford group <code>G_{HM}</code>.
  * @author Sean A. Irvine
  */
 public class A258702 extends LinearRecurrence {

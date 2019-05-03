@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161792 If <code>b(n)</code> is the number of 1's in the binary representation of n, then the positive integer n is included if <code>n = k^b(n)</code>, for some <code>k =</code> integer.
+ * A161792 If <code>b(n)</code> is the number of <code>1</code>'s in the binary representation of n, then the positive integer n is included if <code>n = k^b(n)</code>, for some k = integer.
  * @author Sean A. Irvine
  */
 public class A161792 implements Sequence {

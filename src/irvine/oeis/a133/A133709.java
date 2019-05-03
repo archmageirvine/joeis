@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133709 Triangle read by rows: T(m,l) = number of labeled covers of size l of a finite set of m unlabeled elements (m <code>&gt;= 1, 1 &lt;=</code> l <code>&lt;=</code> 2^m <code>- 1)</code>.
+ * A133709 Triangle read by rows: <code>T(m,l) =</code> number of labeled covers of size l of a finite set of m unlabeled elements <code>(m &gt;= 1, 1 &lt;= l &lt;= 2^m - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A133709 extends MemoryFunction2<Integer, Z> implements Sequence {

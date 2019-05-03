@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013435 E.g.f.: <code>arcsinh(arctanh(x) - arcsin(x))</code> (odd powers only).
+ * A013435 E.g.f.: <code>arcsinh(arctanh(x) - arcsin(x)) (odd</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A013435 implements Sequence {

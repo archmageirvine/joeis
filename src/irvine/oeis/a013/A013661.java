@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A013661 Decimal expansion of <code>zeta(2) =</code> Pi^2/6.
+ * A013661 Decimal expansion of <code>zeta(2) = Pi^2/6</code>.
  * @author Sean A. Irvine
  */
 public class A013661 extends DecimalExpansionSequence {

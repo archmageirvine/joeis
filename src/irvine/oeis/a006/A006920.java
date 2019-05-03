@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006920 At each step, record how many 1's, 2's, etc. have been seen so far in the sequence.
+ * A006920 At each step, record how many <code>1's, 2</code>'s, etc. have been seen so far in the sequence.
  * @author Sean A. Irvine
  */
 public class A006920 implements Sequence {

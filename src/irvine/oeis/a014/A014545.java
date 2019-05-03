@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006862;
 
 /**
- * A014545 Primorial plus 1 prime indices: n such that n-th Euclid number A006862(n) <code>= 1 +</code> (Product of first n primes) is prime.
+ * A014545 Primorial plus 1 prime indices: n such that n-th Euclid number <code>A006862(n) = 1 + (Product</code> of first <code>n primes)</code> is prime.
  * @author Sean A. Irvine
  */
 public class A014545 extends A006862 {

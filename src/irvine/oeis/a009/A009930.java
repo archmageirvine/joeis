@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009930 Coordination sequence for MgCu2, Cu position.
+ * A009930 Coordination sequence for <code>MgCu2</code>, Cu position.
  * @author Sean A. Irvine
  */
 public class A009930 extends CoordinationSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A233289 Number of tilings of <code>a 3</code> X 3 X n box using <code>3n</code> bricks of shape 3 X 1 X 1.
+ * A233289 Number of tilings of a <code>3 X 3 X n</code> box using <code>3n</code> bricks of shape <code>3 X 1 X 1</code>.
  * @author Sean A. Irvine
  */
 public class A233289 extends LinearRecurrence {

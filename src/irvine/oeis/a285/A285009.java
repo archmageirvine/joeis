@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A285009 Subset sums (see Comments).
+ * A285009 Subset sums <code>(see Comments)</code>.
  * @author Sean A. Irvine
  */
 public class A285009 extends LinearRecurrence {

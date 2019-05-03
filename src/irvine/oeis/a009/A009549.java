@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009549 Expansion of e.g.f. <code>sin(x)*sin(tanh(x))</code> (even powers only).
+ * A009549 Expansion of e.g.f. <code>sin(x)*sin(tanh(x)) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A009549 implements Sequence {

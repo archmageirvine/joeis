@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A061360 Decimal expansion of e/Pi.
+ * A061360 Decimal expansion of <code>e/Pi</code>.
  * @author Sean A. Irvine
  */
 public class A061360 extends DecimalExpansionSequence {

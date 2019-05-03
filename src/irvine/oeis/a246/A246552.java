@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A246552 2-adic valuation of the number of involutions of n (A000085).
+ * A246552 2-adic valuation of the number of involutions of <code>n (A000085)</code>.
  * @author Sean A. Irvine
  */
 public class A246552 extends LinearRecurrence {

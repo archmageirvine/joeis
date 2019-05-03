@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006972 Lucas-Carmichael numbers: squarefree composite numbers n such that p <code>| n =&gt</code>; p+1 <code>| n+1</code>.
+ * A006972 Lucas-Carmichael numbers: squarefree composite numbers n such that p <code>| n =&gt; p+1 | n+1</code>.
  * @author Sean A. Irvine
  */
 public class A006972 implements Sequence {

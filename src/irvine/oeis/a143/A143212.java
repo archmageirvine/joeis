@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143212 <code>a(n) = F(n) * (F(n+2)-1) =</code> A000045(n) * A000071(n+2) = row sums of triangle A143211.
+ * A143212 <code>a(n) = F(n) * (F(n+2)-1) = A000045(n) * A000071(n+2) =</code> row sums of triangle <code>A143211</code>.
  * @author Sean A. Irvine
  */
 public class A143212 extends LinearRecurrence {

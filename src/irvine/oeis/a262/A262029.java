@@ -3,7 +3,7 @@ package irvine.oeis.a262;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A262029 Numbering of the 32 radial streets on a prospect of the city of Karlsruhe (Baden), Germany from 1721.
+ * A262029 Numbering of the 32 radial streets on a prospect of the city of Karlsruhe <code>(Baden)</code>, Germany from 1721.
  * @author Georg Fischer
  */
 public class A262029 extends FiniteSequence {

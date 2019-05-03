@@ -6,7 +6,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000939 Number of inequivalent n-gons.
+ * A000939 Number of inequivalent <code>n-gons</code>.
  * @author Sean A. Irvine
  */
 public class A000939 implements Sequence {

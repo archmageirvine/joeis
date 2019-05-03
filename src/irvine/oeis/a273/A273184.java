@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A273184 The H_4-Eulerian numbers.
+ * A273184 The <code>H_4-Eulerian</code> numbers.
  * @author Georg Fischer
  */
 public class A273184 extends FiniteSequence {

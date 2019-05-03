@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008305 Triangle read by rows: <code>a(n,k) =</code> number of permutations of <code>[n]</code> allowing <code>i-&gt;i+j (mod n), j=0..k-1</code>.
+ * A008305 Triangle read by rows: <code>a(n,k) =</code> number of permutations of [n] allowing <code>i-&gt;i+j (mod n), j=0..k-1</code>.
  * @author Sean A. Irvine
  */
 public class A008305 implements Sequence {

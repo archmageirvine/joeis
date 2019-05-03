@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a045.A045912;
 
 /**
- * A006136 <code>T(n+3,3)</code> from table A045912 of characteristic polynomial of negative Pascal matrix.
+ * A006136 <code>T(n+3,3)</code> from table <code>A045912</code> of characteristic polynomial of negative Pascal matrix.
  * @author Sean A. Irvine
  */
 public class A006136 extends A045912 {

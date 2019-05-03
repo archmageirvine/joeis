@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000648 Number of alkyls C_{n+15} H_{2n+10} (Anthr.) with n carbon atoms.
+ * A000648 Number of alkyls <code>C_{n+15} H_{2n+10} (Anthr.)</code> with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000648 extends A000598 {

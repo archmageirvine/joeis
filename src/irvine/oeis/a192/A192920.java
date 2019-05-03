@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192920 Coefficient of x in the reduction by <code>(x^2-&gt;x+1)</code> of the polynomial <code>F(n+4)*x^n</code>, where F=A000045 (Fibonacci sequence).
+ * A192920 Coefficient of x in the reduction by <code>(x^2-&gt;x+1)</code> of the polynomial <code>F(n+4)*x^n</code>, where <code>F=A000045 (Fibonacci</code> sequence).
  * @author Georg Fischer
  */
 public class A192920 extends LinearRecurrence {

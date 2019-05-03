@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002873 The maximal number of partitions of <code>{1..2n}</code> that are invariant under a permutation consisting of n 2-cycles, and which have the same number of nonempty parts.
+ * A002873 The maximal number of partitions of <code>{1..2n}</code> that are invariant under a permutation consisting of <code>n 2-cycles</code>, and which have the same number of nonempty parts.
  * @author Sean A. Irvine
  */
 public class A002873 implements Sequence {

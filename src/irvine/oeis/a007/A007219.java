@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006718;
 
 /**
- * A007219 Number of golygons of order <code>8n</code> (or serial isogons of order <code>8n)</code>.
+ * A007219 Number of golygons of order <code>8n (or</code> serial isogons of order <code>8n)</code>.
  * @author Sean A. Irvine
  */
 public class A007219 extends A006718 {

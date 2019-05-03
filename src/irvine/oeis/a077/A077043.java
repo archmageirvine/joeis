@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077043 "Three-quarter squares": <code>a(n) = n^2 -</code> A002620(n).
+ * A077043 <code>"Three-quarter</code> squares": <code>a(n) = n^2 - A002620(n)</code>.
  * @author Sean A. Irvine
  */
 public class A077043 extends LinearRecurrence {

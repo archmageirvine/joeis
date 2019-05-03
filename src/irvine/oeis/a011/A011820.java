@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.math.z.Z;
 
 /**
- * A011820 Number of M-sequences m_0,...,m_4 with m_1 <code>&lt; n</code>.
+ * A011820 Number of M-sequences <code>m_0,...,m_4</code> with <code>m_1 &lt</code>; n.
  * @author Sean A. Irvine
  */
 public class A011820 extends A011804 {

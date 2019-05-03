@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086859 <code>a(n) =</code> number of elements of order n in simple group L_2(8) of order 504.
+ * A086859 <code>a(n) =</code> number of elements of order n in simple group <code>L_2(8)</code> of order 504.
  * @author Georg Fischer
  */
 public class A086859 extends FiniteSequence {

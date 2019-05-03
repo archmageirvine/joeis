@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097013 Smallest x such that <code>sigma(x) mod 30 = n</code>.
+ * A097013 Smallest x such that <code>sigma(x) mod 30 =</code> n.
  * @author Georg Fischer
  */
 public class A097013 extends FiniteSequence {

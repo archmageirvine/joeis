@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a045.A045918;
 
 /**
- * A079342 Integers n that divide <code>LS(n)</code>, where LS is the "Look and Say" function (A045918).
+ * A079342 Integers n that divide <code>LS(n)</code>, where LS is the "Look and Say" function <code>(A045918)</code>.
  * @author Sean A. Irvine
  */
 public class A079342 implements Sequence {

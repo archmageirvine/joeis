@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000464 Expansion of sin x /cos <code>2x</code>.
+ * A000464 Expansion of sin <code>x /cos 2x</code>.
  * @author Sean A. Irvine
  */
 public class A000464 extends A000061 {

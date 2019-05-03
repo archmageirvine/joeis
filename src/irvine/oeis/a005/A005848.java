@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005848 Cyclotomic fields with class number 1 (or with unique factorization).
+ * A005848 Cyclotomic fields with class number <code>1 (or</code> with unique <code>factorization)</code>.
  * @author Sean A. Irvine
  */
 public class A005848 extends FiniteSequence {

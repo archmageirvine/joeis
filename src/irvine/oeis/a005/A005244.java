@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005244 A self-generating sequence: start with 2 and 3, take all products of <code>any 2</code> previous elements, subtract 1 and adjoin them to the sequence.
+ * A005244 A self-generating sequence: start with 2 and 3, take all products of any 2 previous elements, subtract 1 and adjoin them to the sequence.
  * @author Sean A. Irvine
  */
 public class A005244 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003689 Number of Hamiltonian paths in K_3 X P_n.
+ * A003689 Number of Hamiltonian paths in <code>K_3 X P_n</code>.
  * @author Sean A. Irvine
  */
 public class A003689 implements Sequence {

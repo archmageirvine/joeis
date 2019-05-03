@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131687 Days of the year that are prime numbers in format mmdd (2-digit month followed by 2-digit year).
+ * A131687 Days of the year that are prime numbers in format mmdd <code>(2-digit</code> month followed by <code>2-digit year)</code>.
  * @author Georg Fischer
  */
 public class A131687 extends FiniteSequence {

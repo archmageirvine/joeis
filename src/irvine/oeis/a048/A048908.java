@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048908 Indices of triangular numbers which are also 9-gonal.
+ * A048908 Indices of triangular numbers which are also <code>9-gonal</code>.
  * @author Sean A. Irvine
  */
 public class A048908 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185123 <code>a(n) = n</code> 9's sandwiched between two 1's.
+ * A185123 <code>a(n) = n 9</code>'s sandwiched between two <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A185123 extends LinearRecurrence {

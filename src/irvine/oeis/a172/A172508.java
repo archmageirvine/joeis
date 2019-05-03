@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A172508 Prime numbers such that the differences between <code>any</code> pair of digits is prime.
+ * A172508 Prime numbers such that the differences between any pair of digits is prime.
  * @author Georg Fischer
  */
 public class A172508 extends FiniteSequence {

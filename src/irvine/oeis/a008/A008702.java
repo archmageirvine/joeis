@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008702 Theta series of Niemeier lattice of type A_3^8.
+ * A008702 Theta series of Niemeier lattice of type <code>A_3^8</code>.
  * @author Sean A. Irvine
  */
 public class A008702 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059509 Main diagonal of the array A059503.
+ * A059509 Main diagonal of the array <code>A059503</code>.
  * @author Sean A. Irvine
  */
 public class A059509 extends LinearRecurrence {

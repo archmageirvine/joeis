@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A160118 Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise definition).
+ * A160118 Number of "ON" cells at n-th stage in simple 2-dimensional cellular automaton (see Comments for precise <code>definition)</code>.
  * @author Sean A. Irvine
  */
 public class A160118 implements Sequence {

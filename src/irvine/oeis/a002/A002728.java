@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002728 Number of n X <code>(n+2)</code> binary matrices.
+ * A002728 Number of <code>n X (n+2)</code> binary matrices.
  * @author Sean A. Irvine
  */
 public class A002728 implements Sequence {

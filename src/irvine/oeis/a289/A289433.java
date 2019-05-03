@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289433 Numbers c_n of Fibonacci-quilt legal decompositions of n.
+ * A289433 Numbers <code>c_n</code> of Fibonacci-quilt legal decompositions of n.
  * @author Sean A. Irvine
  */
 public class A289433 extends LinearRecurrence {

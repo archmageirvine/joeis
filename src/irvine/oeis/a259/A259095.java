@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259095 Triangle read by rows: <code>T(n</code>,r) = number of arrangements of n pennies in rows, with r contiguous pennies in the bottom row, and each higher row consisting of contiguous pennies, each touching two pennies in the row below <code>(1 &lt;=</code> r <code>&lt;= n)</code>.
+ * A259095 Triangle read by rows: <code>T(n,r) =</code> number of arrangements of n pennies in rows, with r contiguous pennies in the bottom row, and each higher row consisting of contiguous pennies, each touching two pennies in the row below <code>(1 &lt;= r &lt;= n)</code>.
  * @author Sean A. Irvine
  */
 public class A259095 implements Sequence {

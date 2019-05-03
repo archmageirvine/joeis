@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006093;
 
 /**
- * A008330 phi(p-1), as p runs through the primes.
+ * A008330 <code>phi(p-1)</code>, as p runs through the primes.
  * @author Sean A. Irvine
  */
 public class A008330 extends A006093 {

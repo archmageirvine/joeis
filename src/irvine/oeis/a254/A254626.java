@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254626 Indices of triangular numbers (A000217) that are also centered pentagonal numbers (A005891).
+ * A254626 Indices of triangular numbers <code>(A000217)</code> that are also centered pentagonal numbers <code>(A005891)</code>.
  * @author Sean A. Irvine
  */
 public class A254626 extends LinearRecurrence {

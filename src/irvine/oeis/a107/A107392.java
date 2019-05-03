@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107392 Number of (inequivalent) fuzzy subgroups of the direct sum of group of integers modulo p^n and group of integers modulo 2 for a prime p with (p,2) <code>= 1</code>. Z_{p^n} + Z_2.
+ * A107392 Number of (inequivalent) fuzzy subgroups of the direct sum of group of integers modulo <code>p^n</code> and group of integers modulo 2 for a prime p with <code>(p,2) = 1. Z_{p^n} + Z_2</code>.
  * @author Sean A. Irvine
  */
 public class A107392 extends LinearRecurrence {

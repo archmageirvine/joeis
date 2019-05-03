@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214392 If <code>n mod 4 = 0</code> then <code>a(n) = n/4</code>, otherwise <code>a(n) = n</code>.
+ * A214392 If <code>n mod 4 = 0</code> then <code>a(n) = n/4</code>, otherwise <code>a(n) =</code> n.
  * @author Sean A. Irvine
  */
 public class A214392 extends LinearRecurrence {

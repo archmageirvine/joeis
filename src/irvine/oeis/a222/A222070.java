@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A222070 Decimal expansion of (1/144)*3^(1/2)*Pi^3.
+ * A222070 Decimal expansion of <code>(1/144)*3^(1/2)*Pi^3</code>.
  * @author Sean A. Irvine
  */
 public class A222070 extends DecimalExpansionSequence {

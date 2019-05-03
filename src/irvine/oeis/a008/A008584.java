@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A008584 Molien series for Weyl group E_6.
+ * A008584 Molien series for Weyl group <code>E_6</code>.
  * @author Sean A. Irvine
  */
 public class A008584 extends RatPolyGfSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092942 A Fibonacci sequence with "corrections" at every third step: <code>-++-++-++-++-++..., i</code>.e., at every 3rd step there is a subtraction instead of an addition.
+ * A092942 A Fibonacci sequence with "corrections" at every third step: <code>-++-++-++-++-++...</code>, i.e., at every 3rd step there is a subtraction instead of an addition.
  * @author Sean A. Irvine
  */
 public class A092942 extends LinearRecurrence {

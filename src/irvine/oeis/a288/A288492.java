@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288492 Indices of terms of A288349 that are powers of 2. 
+ * A288492 Indices of terms of <code>A288349</code> that are powers of 2.
  * @author Georg Fischer
  */
 public class A288492 extends LinearRecurrence {

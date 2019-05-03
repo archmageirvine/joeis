@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A164803 Arises in enumerating geometric hyperplanes of the near hexagon L_3 <code>x GQ(2,2)</code>.
+ * A164803 Arises in enumerating geometric hyperplanes of the near hexagon <code>L_3 x GQ(2,2)</code>.
  * @author Georg Fischer
  */
 public class A164803 extends FiniteSequence {

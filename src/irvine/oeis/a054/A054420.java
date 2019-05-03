@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054420 Number of connectable 3 X n binary matrices.
+ * A054420 Number of connectable <code>3 X n</code> binary matrices.
  * @author Sean A. Irvine
  */
 public class A054420 extends LinearRecurrence {

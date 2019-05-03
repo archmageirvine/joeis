@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006366 Number of cyclically symmetric plane partitions in the n-cube; also number of <code>2n</code> X <code>2n</code> half-turn symmetric alternating sign matrices divided by number of n X n alternating sign matrices.
+ * A006366 Number of cyclically symmetric plane partitions in the <code>n-cube</code>; also number of <code>2n X 2n half-turn</code> symmetric alternating sign matrices divided by number of <code>n X n</code> alternating sign matrices.
  * @author Sean A. Irvine
  */
 public class A006366 implements Sequence {

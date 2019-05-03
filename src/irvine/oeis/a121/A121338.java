@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121338 Pentagonal numbers <code>P(k)</code> that are one-third of other pentagonal numbers: <code>P(k)</code> such that 3*P(k)=P(m) for some m&gt;k.
+ * A121338 Pentagonal numbers <code>P(k)</code> that are one-third of other pentagonal numbers: <code>P(k)</code> such that <code>3*P(k)=P(m)</code> for some m&gt;k.
  * @author Sean A. Irvine
  */
 public class A121338 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060023 Expansion of (1-x-x^N)/((1-x)(1-x^2)(1-x^3)...(1-x^N)) for N <code>= 4</code>.
+ * A060023 Expansion of <code>(1-x-x^N)/((1-x)(1-x^2)(1-x^3)...(1-x^N))</code> for N <code>= 4</code>.
  * @author Sean A. Irvine
  */
 public class A060023 extends LinearRecurrence {

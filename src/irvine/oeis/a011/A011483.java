@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011483 Decimal expansion of 64th root of 64.
+ * A011483 Decimal expansion of <code>64th</code> root of 64.
  * @author Sean A. Irvine
  */
 public class A011483 extends DecimalExpansionSequence {

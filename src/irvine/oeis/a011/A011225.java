@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011225 Decimal expansion of 16th root of 6.
+ * A011225 Decimal expansion of <code>16th</code> root of 6.
  * @author Sean A. Irvine
  */
 public class A011225 extends DecimalExpansionSequence {

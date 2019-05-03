@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182014 Number of independent sets of nodes in graph C_7 x P_n <code>(n&gt;=0)</code>.
+ * A182014 Number of independent sets of nodes in graph <code>C_7 x P_n (n&gt;=0)</code>.
  * @author Sean A. Irvine
  */
 public class A182014 extends LinearRecurrence {

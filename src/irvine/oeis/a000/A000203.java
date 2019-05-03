@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000203 <code>a(n) = sigma(n)</code>, the sum of the divisors of n. Also called sigma_1(n).
+ * A000203 <code>a(n) = sigma(n)</code>, the sum of the divisors of n. Also called <code>sigma_1(n)</code>.
  * @author Sean A. Irvine
  */
 public class A000203 implements Sequence {

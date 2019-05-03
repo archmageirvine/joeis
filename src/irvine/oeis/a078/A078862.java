@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078862 Smallest primes from A031924, each belonging to those different residue class of <code>mod 210</code> which are listed in A078861. Arranged according to possible least positive residues <code>mod 210</code>.
+ * A078862 Smallest primes from <code>A031924</code>, each belonging to those different residue class of <code>mod 210</code> which are listed in <code>A078861</code>. Arranged according to possible least positive residues <code>mod 210</code>.
  * @author Georg Fischer
  */
 public class A078862 extends FiniteSequence {

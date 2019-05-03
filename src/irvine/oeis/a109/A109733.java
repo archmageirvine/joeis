@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A109733 Sequence is its own base-10 ASCII representation.
+ * A109733 Sequence is its own <code>base-10</code> ASCII representation.
  * @author Sean A. Irvine
  */
 public class A109733 implements Sequence {

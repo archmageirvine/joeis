@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226577 Smallest number of integer sided squares needed to tile <code>a 4</code> X n rectangle.
+ * A226577 Smallest number of integer sided squares needed to tile a <code>4 X n</code> rectangle.
  * @author Sean A. Irvine
  */
 public class A226577 extends LinearRecurrence {

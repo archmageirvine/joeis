@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005019 <code>(0</code>,1)-matrices by 1-width.
+ * A005019 <code>(0,1)-matrices</code> by <code>1-width</code>.
  * @author Sean A. Irvine
  */
 public class A005019 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020338 Doublets: base-10 representation is the juxtaposition of two identical strings.
+ * A020338 Doublets: <code>base-10</code> representation is the juxtaposition of two identical strings.
  * @author Sean A. Irvine
  */
 public class A020338 implements Sequence {

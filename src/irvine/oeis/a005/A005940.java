@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005940 The Doudna sequence: write <code>n-1</code> in binary; power of p_k in <code>a(n)</code> is # of 1's that are followed by <code>k-1</code> 0's.
+ * A005940 The Doudna sequence: write <code>n-1</code> in binary; power of <code>p_k</code> in <code>a(n)</code> is # of <code>1</code>'s that are followed by <code>k-1 0</code>'s.
  * @author Sean A. Irvine
  */
 public class A005940 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259661 Binary representation of the middle column of the "Rule 54" elementary cellular automaton starting with a single ON cell.
+ * A259661 Binary representation of the middle column of the "Rule <code>54"</code> elementary cellular automaton starting with a single ON cell.
  * @author Sean A. Irvine
  */
 public class A259661 extends LinearRecurrence {

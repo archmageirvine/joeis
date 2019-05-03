@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006093;
 
 /**
- * A008328 Number of divisors of p-1, p prime.
+ * A008328 Number of divisors of <code>p-1</code>, p prime.
  * @author Sean A. Irvine
  */
 public class A008328 extends A006093 {

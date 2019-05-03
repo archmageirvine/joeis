@@ -5,7 +5,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000367 Numerators of Bernoulli numbers B_2n.
+ * A000367 Numerators of Bernoulli numbers <code>B_2n</code>.
  * @author Sean A. Irvine
  */
 public class A000367 implements Sequence {

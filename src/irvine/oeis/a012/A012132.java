@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a027.A027861;
 
 /**
- * A012132 Numbers z such that <code>x*(x+1) + y*(y+1) = z*(z+1)</code> is solvable in positive integers <code>x,y</code>.
+ * A012132 Numbers z such that <code>x*(x+1) + y*(y+1) = z*(z+1)</code> is solvable in positive integers x,y.
  * @author Sean A. Irvine
  */
 public class A012132 extends ComplementSequence {

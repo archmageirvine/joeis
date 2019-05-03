@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137275 Coefficients of Conway's polynomial (powers of x in increasing order).
+ * A137275 Coefficients of Conway's polynomial (powers of x in increasing <code>order)</code>.
  * @author Georg Fischer
  */
 public class A137275 extends FiniteSequence {

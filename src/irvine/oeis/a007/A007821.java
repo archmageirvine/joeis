@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006450;
 
 /**
- * A007821 Primes p such that pi(p) is not prime.
+ * A007821 Primes p such that <code>pi(p)</code> is not prime.
  * @author Sean A. Irvine
  */
 public class A007821 extends SetDifferenceSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128102 Number of 2 X 2 tiles in all tilings of <code>a 4</code> X n rectangle with 1 X 1 and 2 X 2 square tiles.
+ * A128102 Number of <code>2 X 2</code> tiles in all tilings of a <code>4 X n</code> rectangle with <code>1 X 1</code> and <code>2 X 2</code> square tiles.
  * @author Sean A. Irvine
  */
 public class A128102 extends LinearRecurrence {

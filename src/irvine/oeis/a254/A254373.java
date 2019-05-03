@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254373 Digital roots of centered square numbers (A001844).
+ * A254373 Digital roots of centered square numbers <code>(A001844)</code>.
  * @author Sean A. Irvine
  */
 public class A254373 extends LinearRecurrence {

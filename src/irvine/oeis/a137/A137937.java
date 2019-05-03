@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137937 A137904(n) - A137575(n).
+ * A137937 <code>A137904(n) - A137575(n)</code>.
  * @author Georg Fischer
  */
 public class A137937 extends FiniteSequence {

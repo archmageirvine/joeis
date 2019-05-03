@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A296562 Numbers k such that <code>k =</code> k_b1 - k_b2, where k_b1 and k_b2 are the representation of k in two different bases <code>b1 &lt; 10</code> and <code>b2 &lt; 10</code>.
+ * A296562 Numbers k such that k <code>= k_b1 - k_b2</code>, where <code>k_b1</code> and <code>k_b2</code> are the representation of k in two different bases <code>b1 &lt; 10</code> and <code>b2 &lt; 10</code>.
  * @author Georg Fischer
  */
 public class A296562 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068628 Numbers occurring twice in A068627.
+ * A068628 Numbers occurring twice in <code>A068627</code>.
  * @author Sean A. Irvine
  */
 public class A068628 extends LinearRecurrence {

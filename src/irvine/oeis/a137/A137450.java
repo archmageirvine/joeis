@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A137450 A038610(n) (the LCM of the positive integers that are <code>&lt;= n</code> and are coprime to <code>n)</code> is the a(n)-th positive integer that is coprime to n.
+ * A137450 <code>A038610(n) (the</code> LCM of the positive integers that are <code>&lt;= n</code> and are coprime to n) is the <code>a(n)-th</code> positive integer that is coprime to n.
  * @author Sean A. Irvine
  */
 public class A137450 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013503 E.g.f. <code>exp(sec(x)-sech(x))</code> (even powers only).
+ * A013503 E.g.f. <code>exp(sec(x)-sech(x)) (even</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A013503 implements Sequence {

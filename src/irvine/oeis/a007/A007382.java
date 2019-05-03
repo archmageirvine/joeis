@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007382 Number of strict (-1)st-order maximal independent sets in path graph.
+ * A007382 Number of strict <code>(-1)st-order</code> maximal independent sets in path graph.
  * @author Sean A. Irvine
  */
 public class A007382 implements Sequence {

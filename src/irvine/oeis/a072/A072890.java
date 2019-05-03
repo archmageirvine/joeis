@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072890 The 28-cycle of the <code>n =&gt; sigma(n)-n</code> process, where <code>sigma(n)</code> is the sum of divisors of n (A000203).
+ * A072890 The 28-cycle of the <code>n =&gt; sigma(n)-n</code> process, where <code>sigma(n)</code> is the sum of divisors of <code>n (A000203)</code>.
  * @author Georg Fischer
  */
 public class A072890 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189740 Partial sums of tetranacci numbers (A000288).
+ * A189740 Partial sums of tetranacci numbers <code>(A000288)</code>.
  * @author Sean A. Irvine
  */
 public class A189740 extends LinearRecurrence {

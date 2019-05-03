@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184418 Convolution square of A040001. 
+ * A184418 Convolution square of <code>A040001</code>.
  * @author Georg Fischer
  */
 public class A184418 extends LinearRecurrence {

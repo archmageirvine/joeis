@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202279 Numbers n such that the sum of digits^3 of n equals the sum of d|n, 1&lt;d&lt;n.
+ * A202279 Numbers n such that the sum of <code>digits^3</code> of n equals the sum of <code>d|n, 1&lt;d&lt;n</code>.
  * @author Georg Fischer
  */
 public class A202279 extends FiniteSequence {

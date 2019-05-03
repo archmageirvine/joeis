@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240353 Inverse of 68th cyclotomic polynomial.
+ * A240353 Inverse of <code>68th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A240353 extends LinearRecurrence {

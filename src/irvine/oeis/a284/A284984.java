@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284984 Number of elements of order n in the simple unitary group U2(5).
+ * A284984 Number of elements of order n in the simple unitary group <code>U2(5)</code>.
  * @author Sean A. Irvine
  */
 public class A284984 extends FiniteSequence {

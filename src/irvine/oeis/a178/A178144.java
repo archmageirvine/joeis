@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178144 Sum of divisors d of n which are d=2, 3 or 5.
+ * A178144 Sum of divisors d of n which are <code>d=2, 3</code> or 5.
  * @author Sean A. Irvine
  */
 public class A178144 extends LinearRecurrence {

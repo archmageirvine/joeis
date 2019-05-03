@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a269.A269920;
 
 /**
- * A238357 Number of genus-7 rooted maps with n edges.
+ * A238357 Number of <code>genus-7</code> rooted maps with n edges.
  * @author Sean A. Irvine
  */
 public class A238357 extends A269920 {

@@ -5,7 +5,7 @@ import irvine.oeis.a007.A007448;
 import irvine.util.array.DynamicArray;
 
 /**
- * A016046 First occurrence of exactly n identical terms in A007448.
+ * A016046 First occurrence of exactly n identical terms in <code>A007448</code>.
  * @author Sean A. Irvine
  */
 public class A016046 extends A007448 {

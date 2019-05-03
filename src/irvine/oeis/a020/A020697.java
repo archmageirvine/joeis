@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019505;
 
 /**
- * A020697 Number of divisors of A019505(n).
+ * A020697 Number of divisors of <code>A019505(n)</code>.
  * @author Sean A. Irvine
  */
 public class A020697 extends A019505 {

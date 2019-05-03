@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A000002 Kolakoski sequence: <code>a(n)</code> is length of n-th run; <code>a(1) = 1</code>; sequence consists just of 1's and 2's.
+ * A000002 Kolakoski sequence: <code>a(n)</code> is length of n-th run; <code>a(1) = 1</code>; sequence consists just of <code>1</code>'s and <code>2</code>'s.
  * @author Sean A. Irvine
  */
 public class A000002 implements Sequence {

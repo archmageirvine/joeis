@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000058;
 
 /**
- * A006281 Partial quotients in continued fraction expansion of 2C-1, where C is Cahen's constant.
+ * A006281 Partial quotients in continued fraction expansion of <code>2C-1</code>, where C is Cahen's constant.
  * @author Sean A. Irvine
  */
 public class A006281 extends A000058 {

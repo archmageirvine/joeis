@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019567 Order of the Mongean shuffle permutation of <code>2n</code> cards: <code>a(n)</code> is least number m for which either 2^m <code>+ 1</code> or 2^m <code>- 1</code> is divisible by <code>4n + 1</code>.
+ * A019567 Order of the Mongean shuffle permutation of <code>2n</code> cards: <code>a(n)</code> is least number m for which either <code>2^m + 1</code> or <code>2^m - 1</code> is divisible by <code>4n + 1</code>.
  * @author Sean A. Irvine
  */
 public class A019567 implements Sequence {

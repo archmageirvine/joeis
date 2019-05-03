@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227492 The Wiener index of the nanostar dendrimer D_n.
+ * A227492 The Wiener index of the nanostar dendrimer <code>D_n</code>.
  * @author Sean A. Irvine
  */
 public class A227492 extends LinearRecurrence {

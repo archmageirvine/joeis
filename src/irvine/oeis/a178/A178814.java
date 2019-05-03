@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A178814 (n^(p-1) - 1)/p^2 mod p, where p is the first prime that divides (n^(p-1) - 1)/p.
+ * A178814 <code>(n^(p-1) - 1)/p^2 mod</code> p, where p is the first prime that divides <code>(n^(p-1) - 1)/p</code>.
  * @author Sean A. Irvine
  */
 public class A178814 implements Sequence {

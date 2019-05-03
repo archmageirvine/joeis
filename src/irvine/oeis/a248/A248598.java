@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248598 <code>a(n) = (2*n+23)*n*(n-1), a</code> coefficient appearing in the formula a(n)*Pi/324+n+1 giving the average number of regions into which n random planes divide the cube.
+ * A248598 <code>a(n) = (2*n+23)*n*(n-1)</code>, a coefficient appearing in the formula <code>a(n)*Pi/324+n+1</code> giving the average number of regions into which n random planes divide the cube.
  * @author Sean A. Irvine
  */
 public class A248598 extends LinearRecurrence {

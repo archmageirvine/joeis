@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086698 Two-sided semiprimes: deleting <code>any</code> number of digits at left or at right, but not both, leaves a semiprime.
+ * A086698 Two-sided semiprimes: deleting any number of digits at left or at right, but not both, leaves a semiprime.
  * @author Georg Fischer
  */
 public class A086698 extends FiniteSequence {

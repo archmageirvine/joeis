@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167526 Prime factors of the speed of light in a vacuum, c <code>= 299792458</code> (m/s).
+ * A167526 Prime factors of the speed of light in a vacuum, c <code>= 299792458 (m/s)</code>.
  * @author Georg Fischer
  */
 public class A167526 extends FiniteSequence {

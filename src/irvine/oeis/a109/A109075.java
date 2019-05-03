@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109075 Number of primes which use each of 0-to-n decimal digits exactly once.
+ * A109075 Number of primes which use each of <code>0-to-n</code> decimal digits exactly once.
  * @author Georg Fischer
  */
 public class A109075 extends FiniteSequence {

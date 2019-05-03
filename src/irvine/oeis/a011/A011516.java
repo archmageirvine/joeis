@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011516 Decimal expansion of 97th root of 97.
+ * A011516 Decimal expansion of <code>97th</code> root of 97.
  * @author Sean A. Irvine
  */
 public class A011516 extends DecimalExpansionSequence {

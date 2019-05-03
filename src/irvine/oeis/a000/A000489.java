@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000489 Card matching: Coefficients B[n,3] of t^3 in the reduced hit polynomial A[n,n,n](t).
+ * A000489 Card matching: Coefficients <code>B[n,3]</code> of <code>t^3</code> in the reduced hit polynomial <code>A[n,n,n](t)</code>.
  * @author Sean A. Irvine
  */
 public class A000489 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A175502 <code>a(1) = 1. a(n) =</code> the smallest integer not yet occurring such that each unordered pair <code>{d(a(k)),d(a(k-1))}</code> occurs only once at most, for <code>2&lt;= k &lt;= n</code>, where d(m) = the number of divisors of m.
+ * A175502 <code>a(1) = 1. a(n) =</code> the smallest integer not yet occurring such that each unordered pair <code>{d(a(k)),d(a(k-1))}</code> occurs only once at most, for <code>2&lt;= k &lt;=</code> n, where <code>d(m) =</code> the number of divisors of m.
  * @author Sean A. Irvine
  */
 public class A175502 implements Sequence {

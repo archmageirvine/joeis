@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A222189 Number of toroidal n X 3 binary arrays, allowing rotation and/or reflection of the rows and/or the columns.
+ * A222189 Number of toroidal <code>n X 3</code> binary arrays, allowing rotation and/or reflection of the rows and/or the columns.
  * @author Sean A. Irvine
  */
 public class A222189 implements Sequence {

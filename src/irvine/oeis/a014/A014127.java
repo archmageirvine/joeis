@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014127 Mirimanoff primes: primes p such that p^2 divides 3^(p-1) <code>- 1</code>.
+ * A014127 Mirimanoff primes: primes p such that <code>p^2</code> divides <code>3^(p-1) - 1</code>.
  * @author Sean A. Irvine
  */
 public class A014127 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001158 sigma_3(n): sum of cubes of divisors of n.
+ * A001158 <code>sigma_3(n)</code>: sum of cubes of divisors of n.
  * @author Sean A. Irvine
  */
 public class A001158 implements Sequence {

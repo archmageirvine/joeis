@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A272384 Primes p <code>== 1 (mod 3)</code> for which A261029(22*p) <code>= 2</code>.
+ * A272384 Primes p <code>== 1 (mod 3)</code> for which <code>A261029(22*p) = 2</code>.
  * @author Georg Fischer
  */
 public class A272384 extends FiniteSequence {

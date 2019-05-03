@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004140 Number of nonempty labeled simple graphs on nodes chosen from an n-set.
+ * A004140 Number of nonempty labeled simple graphs on nodes chosen from an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A004140 implements Sequence {

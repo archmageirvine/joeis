@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004939 Nearest integer to n*phi^4, where phi is the golden ratio, A001622.
+ * A004939 Nearest integer to <code>n*phi^4</code>, where phi is the golden ratio, <code>A001622</code>.
  * @author Sean A. Irvine
  */
 public class A004939 implements Sequence {

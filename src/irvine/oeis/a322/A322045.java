@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322045 Triangular numbers that are 2-digit-repblocks.
+ * A322045 Triangular numbers that are <code>2-digit-repblocks</code>.
  * @author Georg Fischer
  */
 public class A322045 extends FiniteSequence {

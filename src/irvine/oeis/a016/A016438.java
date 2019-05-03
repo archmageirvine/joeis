@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A016438 Coordination sequence T6 for Zeolite Code TER.
+ * A016438 Coordination sequence <code>T6</code> for Zeolite Code TER.
  * @author Sean A. Irvine
  */
 public class A016438 extends CoordinationSequence {

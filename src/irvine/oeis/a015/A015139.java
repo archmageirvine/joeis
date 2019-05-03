@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015139 Triangle of (Gaussian) q-binomial coefficients for q=-16.
+ * A015139 Triangle of <code>(Gaussian) q-binomial</code> coefficients for <code>q=-16</code>.
  * @author Sean A. Irvine
  */
 public class A015139 extends A015109 {

@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097401 Largest achievable determinant of <code>a 3</code> X 3 matrix whose elements are 9 distinct nonnegative integers chosen from the range <code>0..n</code>.
+ * A097401 Largest achievable determinant of a <code>3 X 3</code> matrix whose elements are 9 distinct nonnegative integers chosen from the range <code>0..n</code>.
  * @author Sean A. Irvine
  */
 public class A097401 extends LinearRecurrence {

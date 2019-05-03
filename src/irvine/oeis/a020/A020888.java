@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a068.A068068;
 
 /**
- * A020888.
+ * A020888 Ordered set of <code>(a + b - c)/2</code> as <code>(a,b,c)</code> runs through all primitive Pythagorean triples with a&lt;b&lt;c.
  * @author Sean A. Irvine
  */
 public class A020888 extends A068068 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006364 Numbers n with an even number of 1's in binary, ignoring last bit.
+ * A006364 Numbers n with an even number of <code>1</code>'s in binary, ignoring last bit.
  * @author Sean A. Irvine
  */
 public class A006364 implements Sequence {

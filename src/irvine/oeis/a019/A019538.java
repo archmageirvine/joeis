@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019538 Triangle of numbers <code>T(n,k) =</code> k!*Stirling2(n,k) read by rows <code>(n &gt;= 1, 1 &lt;= k &lt;= n)</code>.
+ * A019538 Triangle of numbers <code>T(n,k) = k!*Stirling2(n,k)</code> read by rows <code>(n &gt;= 1, 1 &lt;= k &lt;= n)</code>.
  * @author Sean A. Irvine
  */
 public class A019538 implements Sequence {

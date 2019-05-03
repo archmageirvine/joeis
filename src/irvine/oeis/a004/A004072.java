@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A004072 Read the terms of A004071 backwards.
+ * A004072 Read the terms of <code>A004071</code> backwards.
  * @author Sean A. Irvine
  */
 public class A004072 extends A004071 {

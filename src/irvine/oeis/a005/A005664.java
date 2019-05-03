@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionDenominatorSequence;
 import irvine.oeis.a020.A020857;
 
 /**
- * A005664 Denominators of convergents to log_2 3.
+ * A005664 Denominators of convergents to <code>log_2 3</code>.
  * @author Sean A. Irvine
  */
 public class A005664 extends ContinuedFractionDenominatorSequence {

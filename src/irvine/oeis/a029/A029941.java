@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029941 Number of symmetric types of <code>(4</code>,2n)-hypergraphs under action of complementing group <code>C(4,2)</code>.
+ * A029941 Number of symmetric types of <code>(4,2n)-hypergraphs</code> under action of complementing group <code>C(4,2)</code>.
  * @author Sean A. Irvine
  */
 public class A029941 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214470 Degrees of irreducible representations of orthogonal group O8+(2).
+ * A214470 Degrees of irreducible representations of orthogonal group <code>O8+(2)</code>.
  * @author Georg Fischer
  */
 public class A214470 extends FiniteSequence {

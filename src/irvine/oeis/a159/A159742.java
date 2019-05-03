@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159742 If an array is made of columns of -nacci sequences (Fibonacci, tribonacci, etc.), all starting with <code>1,1,2,..</code>., the NW-to-SE diagonals can be extended by computation. This sequence is diagonal 6. See A159741 for details.
+ * A159742 If an array is made of columns of <code>-nacci</code> sequences <code>(Fibonacci</code>, tribonacci, <code>etc.)</code>, all starting with 1,1,2,..., the <code>NW-to-SE</code> diagonals can be extended by computation. This sequence is diagonal 6. See <code>A159741</code> for details.
  * @author Georg Fischer
  */
 public class A159742 extends LinearRecurrence {

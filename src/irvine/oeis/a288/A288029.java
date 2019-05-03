@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288029 Number of minimal edge covers in the ladder graph P_2 X P_n.
+ * A288029 Number of minimal edge covers in the ladder graph <code>P_2 X P_n</code>.
  * @author Georg Fischer
  */
 public class A288029 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005798 Expansion of (theta_2(q)/theta_3(q))^4/16 in powers of q.
+ * A005798 Expansion of <code>(theta_2(q)/theta_3(q))^4/16</code> in powers of q.
  * @author Sean A. Irvine
  */
 public class A005798 implements Sequence {

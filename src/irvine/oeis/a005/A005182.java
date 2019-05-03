@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005182 <code>a(n) =</code> floor(e^((n-1)/2)).
+ * A005182 <code>a(n) = floor(e^((n-1)/2))</code>.
  * @author Sean A. Irvine
  */
 public class A005182 implements Sequence {

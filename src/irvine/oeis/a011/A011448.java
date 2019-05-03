@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011448 Decimal expansion of 29th root of 29.
+ * A011448 Decimal expansion of <code>29th</code> root of 29.
  * @author Sean A. Irvine
  */
 public class A011448 extends DecimalExpansionSequence {

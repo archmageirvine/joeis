@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A006148 Number of 4 X n binary matrices up to row and column permutations.
+ * A006148 Number of <code>4 X n</code> binary matrices up to row and column permutations.
  * @author Sean A. Irvine
  */
 public class A006148 extends RatPolyGfSequence {

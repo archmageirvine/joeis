@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005512;
 
 /**
- * A007831 Number of edge-labeled series-reduced trees with n nodes.
+ * A007831 Number of <code>edge-labeled series-reduced</code> trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A007831 extends A005512 {

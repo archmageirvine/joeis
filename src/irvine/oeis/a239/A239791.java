@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239791 Number of compositions of n with no consecutive 2's.
+ * A239791 Number of compositions of n with no consecutive <code>2</code>'s.
  * @author Sean A. Irvine
  */
 public class A239791 extends LinearRecurrence {

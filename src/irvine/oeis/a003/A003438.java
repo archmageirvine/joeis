@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A003438 Number of 5 X 5 matrices with nonnegative integer entries and row and column sums equal to n.
+ * A003438 Number of <code>5 X 5</code> matrices with nonnegative integer entries and row and column sums equal to n.
  * @author Sean A. Irvine
  */
 public class A003438 extends RatPolyGfSequence {

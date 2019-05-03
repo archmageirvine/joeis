@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A170835 Most common to least common letters in the "QWERTY" keyboard (numbers labeled).
+ * A170835 Most common to least common letters in the "QWERTY" keyboard (numbers <code>labeled)</code>.
  * @author Georg Fischer
  */
 public class A170835 extends FiniteSequence {

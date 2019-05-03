@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002987 <code>a(1) = 1; a(2) = 2; a(n) == a(k) (mod n-k)</code> for all <code>1 &lt; k &lt; n</code>.
+ * A002987 <code>a(1) = 1; a(2) = 2; a(n) == a(k) (mod n-k)</code> for all <code>1 &lt; k &lt</code>; n.
  * @author Sean A. Irvine
  */
 public class A002987 extends MemorySequence {

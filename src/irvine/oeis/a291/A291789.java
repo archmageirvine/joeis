@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A291789 Trajectory of 270 under repeated application of <code>k -&gt; (phi(k)+sigma(k))/2</code>.
+ * A291789 Trajectory of 270 under repeated application of k <code>-&gt; (phi(k)+sigma(k))/2</code>.
  * @author Sean A. Irvine
  */
 public class A291789 implements Sequence {

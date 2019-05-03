@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008670 Molien series for Weyl group F_4.
+ * A008670 Molien series for Weyl group <code>F_4</code>.
  * @author Sean A. Irvine
  */
 public class A008670 extends CoordinationSequence {

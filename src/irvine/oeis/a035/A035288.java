@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A035288 Number of ways to place a non-attacking white and black bishop on n X n chessboard.
+ * A035288 Number of ways to place a non-attacking white and black bishop on <code>n X n</code> chessboard.
  * @author Sean A. Irvine
  */
 public class A035288 extends LinearRecurrence {

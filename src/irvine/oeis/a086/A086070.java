@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086070 Where records in A086068 occur.
+ * A086070 Where records in <code>A086068</code> occur.
  * @author Georg Fischer
  */
 public class A086070 extends FiniteSequence {

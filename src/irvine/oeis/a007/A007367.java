@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007367 Numbers k such that <code>phi(x) = k</code> has exactly 3 solutions.
+ * A007367 Numbers k such that <code>phi(x) =</code> k has exactly 3 solutions.
  * @author Sean A. Irvine
  */
 public class A007367 implements Sequence {

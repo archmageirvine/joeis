@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A061724 Smallest number which has more different digits than its n-th power, or <code>-1</code> if no such number exists.
+ * A061724 Smallest number which has more different digits than its n-th power, or -1 if no such number exists.
  * @author Sean A. Irvine
  */
 public class A061724 implements Sequence {

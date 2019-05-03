@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A011784 Levine's sequence. First construct a triangle as follows. Row 1 is <code>{1,1}</code>; if row n is {r_1, <code>..</code>., r_k} then row <code>n+1</code> consists of {r_k 1's, r_{k-1} 2's, r_{k-2} 3's, etc.}; sequence consists of the final elements in each row.
+ * A011784 Levine's sequence. First construct a triangle as follows. Row 1 is <code>{1,1}</code>; if row n is <code>{r_1</code>, ..., <code>r_k}</code> then row <code>n+1</code> consists of <code>{r_k 1's, r_{k-1} 2's, r_{k-2} 3's, etc.}</code>; sequence consists of the final elements in each row.
  * @author Sean A. Irvine
  */
 public class A011784 implements Sequence {

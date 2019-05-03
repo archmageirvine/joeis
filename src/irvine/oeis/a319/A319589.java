@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A319589 A 3 X 3 magic square with five square entries, read by rows.
+ * A319589 A <code>3 X 3</code> magic square with five square entries, read by rows.
  * @author Georg Fischer
  */
 public class A319589 extends FiniteSequence {

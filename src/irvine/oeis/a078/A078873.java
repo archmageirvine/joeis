@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078873 Sorted version of A078872.
+ * A078873 Sorted version of <code>A078872</code>.
  * @author Georg Fischer
  */
 public class A078873 extends FiniteSequence {

@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a020.A020556;
 
 /**
- * A014500 Number of graphs with unlabeled (non-isolated) nodes and n labeled edges.
+ * A014500 Number of graphs with unlabeled <code>(non-isolated)</code> nodes and n labeled edges.
  * @author Sean A. Irvine
  */
 public class A014500 implements Sequence {

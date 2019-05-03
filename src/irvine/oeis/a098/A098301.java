@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098301 Member r=16 of the family of Chebyshev sequences S_r(n) defined in A092184.
+ * A098301 Member <code>r=16</code> of the family of Chebyshev sequences <code>S_r(n)</code> defined in <code>A092184</code>.
  * @author Sean A. Irvine
  */
 public class A098301 extends LinearRecurrence {

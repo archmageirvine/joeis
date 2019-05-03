@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213043 Convolution of <code>(1,-1,2,-2,3,-3,...)</code> and A000045 (Fibonacci numbers).
+ * A213043 Convolution of <code>(1,-1,2,-2,3,-3,...)</code> and <code>A000045 (Fibonacci</code> numbers).
  * @author Sean A. Irvine
  */
 public class A213043 extends LinearRecurrence {

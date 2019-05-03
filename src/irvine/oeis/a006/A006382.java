@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006382 Number of n X 4 binary matrices under row and column permutations and column complementations.
+ * A006382 Number of <code>n X 4</code> binary matrices under row and column permutations and column complementations.
  * @author Sean A. Irvine
  */
 public class A006382 extends A006380 {

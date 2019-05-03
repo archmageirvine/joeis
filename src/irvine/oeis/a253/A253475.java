@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253475 Indices of centered square numbers (A001844) which are also centered hexagonal numbers (A003215).
+ * A253475 Indices of centered square numbers <code>(A001844)</code> which are also centered hexagonal numbers <code>(A003215)</code>.
  * @author Sean A. Irvine
  */
 public class A253475 extends LinearRecurrence {

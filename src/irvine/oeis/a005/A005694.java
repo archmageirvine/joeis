@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005694 Positions of remoteness 6 in Beans-Don't-Talk.
+ * A005694 Positions of remoteness 6 in <code>Beans-Don't-Talk</code>.
  * @author Sean A. Irvine
  */
 public class A005694 implements Sequence {

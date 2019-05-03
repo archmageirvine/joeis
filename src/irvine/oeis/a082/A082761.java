@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082761 Trinomial transform of the Fibonacci numbers (A000045).
+ * A082761 Trinomial transform of the Fibonacci numbers <code>(A000045)</code>.
  * @author Sean A. Irvine
  */
 public class A082761 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276182 Numbers N such that the modular curve X_0(N) is hyperelliptic.
+ * A276182 Numbers N such that the modular curve <code>X_0(N)</code> is hyperelliptic.
  * @author Georg Fischer
  */
 public class A276182 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A091404 Numbers n such that genus of group Gamma_0(n) is 2.
+ * A091404 Numbers n such that genus of group <code>Gamma_0(n)</code> is 2.
  * @author Georg Fischer
  */
 public class A091404 extends FiniteSequence {

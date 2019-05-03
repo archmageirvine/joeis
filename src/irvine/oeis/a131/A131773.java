@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131773 Epact in Julian calendar for a year n with Golden Number <code>(n mod 19) + 1 =</code> A074805(n).
+ * A131773 Epact in Julian calendar for a year n with Golden Number <code>(n mod 19) + 1 = A074805(n)</code>.
  * @author Sean A. Irvine
  */
 public class A131773 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007497;
 
 /**
- * A175877 Positions of odd terms in A007497.
+ * A175877 Positions of odd terms in <code>A007497</code>.
  * @author Sean A. Irvine
  */
 public class A175877 extends A007497 {

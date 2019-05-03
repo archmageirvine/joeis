@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005814 Number of 3-regular (trivalent) labeled graphs on <code>2n</code> vertices with multiple edges and loops allowed.
+ * A005814 Number of <code>3-regular (trivalent)</code> labeled graphs on <code>2n</code> vertices with multiple edges and loops allowed.
  * @author Sean A. Irvine
  */
 public class A005814 implements Sequence {

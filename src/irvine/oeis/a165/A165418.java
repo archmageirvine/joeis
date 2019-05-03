@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import java.util.HashSet;
 
 /**
- * A165418 <code>a(1) = 1</code>. For <code>n &gt;= 2, a(n) =</code> sum <code>a(k)</code>, where k is over the distinct values of the substrings in binary n, and where <code>1 &lt;= k &lt; n</code>.
+ * A165418 <code>a(1) = 1</code>. For <code>n &gt;= 2, a(n) =</code> sum <code>a(k)</code>, where k is over the distinct values of the substrings in binary n, and where <code>1 &lt;= k &lt</code>; n.
  * @author Sean A. Irvine
  */
 public class A165418 extends MemorySequence {

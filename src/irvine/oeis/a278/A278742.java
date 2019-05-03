@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278742 Lexicographically least strictly increasing sequence such that, for <code>any n&gt;0, Sum_{k=1..n} a(k)</code> can be computed without carries in base 10.
+ * A278742 Lexicographically least strictly increasing sequence such that, for any <code>n&gt;0, Sum_{k=1..n} a(k)</code> can be computed without carries in base 10.
  * @author Sean A. Irvine
  */
 public class A278742 extends LinearRecurrence {

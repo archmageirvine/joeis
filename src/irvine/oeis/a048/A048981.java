@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048981 Squarefree values of n for which the quadratic field Q[ <code>sqrt(n) ]</code> is norm-Euclidean.
+ * A048981 Squarefree values of n for which the quadratic field <code>Q[ sqrt(n) ]</code> is <code>norm-Euclidean</code>.
  * @author Georg Fischer
  */
 public class A048981 extends FiniteSequence {

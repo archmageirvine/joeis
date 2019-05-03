@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002464 Hertzsprung's problem: ways to arrange n non-attacking kings on an n X n board, with 1 in each row and column. Also number of permutations of length n without rising or falling successions.
+ * A002464 Hertzsprung's problem: ways to arrange <code>n non-attacking</code> kings on an <code>n X n</code> board, with 1 in each row and column. Also number of permutations of length n without rising or falling successions.
  * @author Sean A. Irvine
  */
 public class A002464 implements Sequence {

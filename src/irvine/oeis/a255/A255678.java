@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A255678 Smallest number m needing exactly n distinct digits in decimal representation of m*(m+1)/2.
+ * A255678 Smallest number m needing exactly n distinct digits in decimal representation of <code>m*(m+1)/2</code>.
  * @author Georg Fischer
  */
 public class A255678 extends FiniteSequence {

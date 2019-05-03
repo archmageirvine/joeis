@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027674 Numerical distance between m-th and (m+n)-th spheres in loxodromic sequence of spheres in which each 5 consecutive spheres are in mutual contact.
+ * A027674 Numerical distance between m-th and <code>(m+n)-th</code> spheres in loxodromic sequence of spheres in which each 5 consecutive spheres are in mutual contact.
  * @author Sean A. Irvine
  */
 public class A027674 extends LinearRecurrence {

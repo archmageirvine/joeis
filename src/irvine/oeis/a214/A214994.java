@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214994 Power ceiling sequence of (golden ratio)^5.
+ * A214994 Power ceiling sequence of <code>(golden ratio)^5</code>.
  * @author Sean A. Irvine
  */
 public class A214994 extends LinearRecurrence {

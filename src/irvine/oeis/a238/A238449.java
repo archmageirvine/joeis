@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A238449 Smallest numbers m such that 2^m contains a string of n consecutive decreasing integers in its decimal representation.
+ * A238449 Smallest numbers m such that <code>2^m</code> contains a string of n consecutive decreasing integers in its decimal representation.
  * @author Georg Fischer
  */
 public class A238449 extends FiniteSequence {

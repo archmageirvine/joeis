@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A143661 Number of non-symmetric families of n pairwise non-adjacent vertices (special cuts) of the 600-cell.
+ * A143661 Number of non-symmetric families of n pairwise non-adjacent vertices <code>(special cuts)</code> of the <code>600-cell</code>.
  * @author Georg Fischer
  */
 public class A143661 extends FiniteSequence {

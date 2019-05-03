@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008455 11th powers: <code>a(n) = n^11</code>.
+ * A008455 <code>11th</code> powers: <code>a(n) = n^11</code>.
  * @author Sean A. Irvine
  */
 public class A008455 implements Sequence {

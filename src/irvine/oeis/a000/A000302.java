@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000302 Powers of 4: <code>a(n) = 4^n</code>.
+ * A000302 Powers of <code>4: a(n) = 4^n</code>.
  * @author Sean A. Irvine
  */
 public class A000302 implements Sequence {

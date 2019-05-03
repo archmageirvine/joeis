@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006971 Composite numbers k such that <code>k == +-1 (mod 8)</code> and <code>2^((k-1)/2) == 1 (mod k)</code>.
+ * A006971 Composite numbers k such that k <code>== +-1 (mod 8)</code> and <code>2^((k-1)/2) == 1 (mod k)</code>.
  * @author Sean A. Irvine
  */
 public class A006971 implements Sequence {

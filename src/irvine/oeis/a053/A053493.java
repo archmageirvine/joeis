@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053493 Number of symmetric 4 X 4 matrices of nonnegative integers with every row and column adding to n.
+ * A053493 Number of symmetric <code>4 X 4</code> matrices of nonnegative integers with every row and column adding to n.
  * @author Sean A. Irvine
  */
 public class A053493 extends LinearRecurrence {

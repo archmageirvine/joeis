@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046177 Squares (A000290) which are also hexagonal numbers (A000384).
+ * A046177 Squares <code>(A000290)</code> which are also hexagonal numbers <code>(A000384)</code>.
  * @author Sean A. Irvine
  */
 public class A046177 extends LinearRecurrence {

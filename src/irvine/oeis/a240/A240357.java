@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240357 Inverse of 74th cyclotomic polynomial.
+ * A240357 Inverse of <code>74th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A240357 extends LinearRecurrence {

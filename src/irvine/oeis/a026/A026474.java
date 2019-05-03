@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026474 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not equal to <code>a(i)+a(j)</code> or <code>a(i)+a(j)+a(k)</code> for <code>1&lt;=i&lt;j&lt;k&lt;n (a</code> 3-Stohr sequence).
+ * A026474 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not equal to <code>a(i)+a(j)</code> or <code>a(i)+a(j)+a(k)</code> for <code>1&lt;=i&lt;j&lt;k&lt;n (a 3-Stohr</code> sequence).
  * @author Georg Fischer
  */
 public class A026474 extends LinearRecurrence {

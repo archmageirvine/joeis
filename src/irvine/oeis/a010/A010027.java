@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010027 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of <code>[n]</code> having k consecutive ascending pairs <code>(0&lt;=k&lt;=n-1)</code>.
+ * A010027 Triangle read by rows: <code>T(n,k)</code> is the number of permutations of [n] having k consecutive ascending pairs <code>(0&lt;=k&lt;=n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A010027 implements Sequence {

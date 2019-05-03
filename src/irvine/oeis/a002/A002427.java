@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 
 /**
- * A002427 Numerator of <code>(2n+1)</code> B_{2n}, where B_n are the Bernoulli numbers.
+ * A002427 Numerator of <code>(2n+1) B_{2n}</code>, where <code>B_n</code> are the Bernoulli numbers.
  * @author Sean A. Irvine
  */
 public class A002427 implements Sequence {

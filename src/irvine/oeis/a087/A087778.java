@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A087778 Decimal expansion of Avogadro's constant <code>(in</code> mol^{-1}).
+ * A087778 Decimal expansion of Avogadro's constant <code>(in mol^{-1})</code>.
  * @author Sean A. Irvine
  */
 public class A087778 extends DoubleDecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011449 Decimal expansion of 30th root of 30.
+ * A011449 Decimal expansion of <code>30th</code> root of 30.
  * @author Sean A. Irvine
  */
 public class A011449 extends DecimalExpansionSequence {

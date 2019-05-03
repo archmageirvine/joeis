@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287825 Number of sequences over the alphabet <code> {0,1,...,9}</code> such that no two consecutive terms have distance 1.
+ * A287825 Number of sequences over the alphabet <code>{0,1,...,9}</code> such that no two consecutive terms have distance 1.
  * @author Georg Fischer
  */
 public class A287825 extends LinearRecurrence {

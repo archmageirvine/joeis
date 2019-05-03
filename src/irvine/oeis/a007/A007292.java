@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Hungarian;
 
 /**
- * A007292 Number of letters in <code>n (in</code> Hungarian).
+ * A007292 Number of letters in <code>n (in Hungarian)</code>.
  * @author Sean A. Irvine
  */
 public class A007292 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Stirling2TransformSequence;
 
 /**
- * A007470 Shifts left when Stirling-2 transform applied twice.
+ * A007470 Shifts left when <code>Stirling-2</code> transform applied twice.
  * @author Sean A. Irvine
  */
 public class A007470 extends MemorySequence {

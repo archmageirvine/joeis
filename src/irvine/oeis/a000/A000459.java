@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000459 Number of multiset permutations of <code>{1, 1, 2, 2, ..., n, n}</code> with no fixed points.
+ * A000459 Number of multiset permutations of <code>{1, 1, 2, 2</code>, ..., n, n} with no fixed points.
  * @author Sean A. Irvine
  */
 public class A000459 implements Sequence {

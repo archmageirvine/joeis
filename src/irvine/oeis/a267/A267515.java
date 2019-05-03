@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.math.z.Z;
 
 /**
- * A267515 Decimal representation of the middle column of the "Rule 137" elementary cellular automaton starting with a single ON (black) cell.
+ * A267515 Decimal representation of the middle column of the "Rule <code>137"</code> elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A267515 extends A267514 {

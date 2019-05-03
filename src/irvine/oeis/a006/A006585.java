@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000058;
 
 /**
- * A006585 Egyptian fractions: number of solutions to <code>1 =</code> 1/x_1 <code>+ ... +</code> 1/x_n in positive integers x_1 <code>&lt; ... &lt</code>; x_n.
+ * A006585 Egyptian fractions: number of solutions to <code>1 = 1/x_1 +</code> ... <code>+ 1/x_n</code> in positive integers <code>x_1 &lt</code>; ... <code>&lt; x_n</code>.
  * @author Sean A. Irvine
  */
 public class A006585 implements Sequence {

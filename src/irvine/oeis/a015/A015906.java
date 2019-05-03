@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015906 First <code>k&gt;n</code> such that <code>k | n^k + n</code>.
+ * A015906 First k&gt;n such that k <code>| n^k +</code> n.
  * @author Sean A. Irvine
  */
 public class A015906 implements Sequence {

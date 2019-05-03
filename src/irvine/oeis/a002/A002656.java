@@ -7,7 +7,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.group.IntegerField;
 
 /**
- * A002656 Expansion of (eta(q) * eta(q^7))^3 in powers of q.
+ * A002656 Expansion of <code>(eta(q) * eta(q^7))^3</code> in powers of q.
  * @author Sean A. Irvine
  */
 public class A002656 implements Sequence {

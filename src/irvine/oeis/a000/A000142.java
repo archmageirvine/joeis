@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000142 Factorial numbers: <code>n! = 1*2*3*4*...*n</code> (order of symmetric group S_n, number of permutations of n letters).
+ * A000142 Factorial numbers: <code>n! = 1*2*3*4*...*n (order</code> of symmetric group <code>S_n</code>, number of permutations of <code>n letters)</code>.
  * @author Sean A. Irvine
  */
 public class A000142 implements Sequence {

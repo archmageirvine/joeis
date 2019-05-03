@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292058 Wiener index of the n X n rook complement graph.
+ * A292058 Wiener index of the <code>n X n</code> rook complement graph.
  * @author Sean A. Irvine
  */
 public class A292058 extends LinearRecurrence {

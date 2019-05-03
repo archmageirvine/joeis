@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004429 Geometric mean of digits of n (rounded to nearest integer).
+ * A004429 Geometric mean of digits of <code>n (rounded</code> to nearest <code>integer)</code>.
  * @author Sean A. Irvine
  */
 public class A004429 implements Sequence {

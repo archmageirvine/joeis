@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011444 Decimal expansion of 25th root of 25.
+ * A011444 Decimal expansion of <code>25th</code> root of 25.
  * @author Sean A. Irvine
  */
 public class A011444 extends DecimalExpansionSequence {

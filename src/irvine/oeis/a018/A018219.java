@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A018219 Table <code>T(a,b)</code> by antidiagonals of winning positions in 3-pile Wythoff game <code>(a</code> square array).
+ * A018219 Table <code>T(a,b)</code> by antidiagonals of winning positions in 3-pile Wythoff game (a square <code>array)</code>.
  * @author Sean A. Irvine
  */
 public class A018219 extends MemoryFunction2<Long, Long> implements Sequence {

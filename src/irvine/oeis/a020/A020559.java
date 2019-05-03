@@ -6,7 +6,7 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
 /**
- * A020559 Number of ordered multigraphs on n labeled edges (with loops).
+ * A020559 Number of ordered multigraphs on n labeled edges <code>(with loops)</code>.
  * @author Sean A. Irvine
  */
 public class A020559 extends A020555 {

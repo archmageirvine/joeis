@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.math.z.Z;
 
 /**
- * A020880 Number of strong elementary edge-subgraphs in Moebius ladder M_n.
+ * A020880 Number of strong elementary edge-subgraphs in Moebius ladder <code>M_n</code>.
  * @author Sean A. Irvine
  */
 public class A020880 extends A020879 {

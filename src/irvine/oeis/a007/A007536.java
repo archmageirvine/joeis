@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000384;
 
 /**
- * A007536 Numbers that are not the sum of 3 hexagonal numbers (probably finite).
+ * A007536 Numbers that are not the sum of 3 hexagonal numbers <code>(probably finite)</code>.
  * @author Sean A. Irvine
  */
 public class A007536 extends A000384 {

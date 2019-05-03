@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.BernoulliSequence;
 
 /**
- * A002432 Denominators of zeta(2n)/Pi^(2n).
+ * A002432 Denominators of <code>zeta(2n)/Pi^(2n)</code>.
  * @author Sean A. Irvine
  */
 public class A002432 implements Sequence {

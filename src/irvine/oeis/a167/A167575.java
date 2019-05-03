@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A167575 The fifth row of the ED3 array A167572.
+ * A167575 The fifth row of the <code>ED3</code> array <code>A167572</code>.
  * @author Sean A. Irvine
  */
 public class A167575 extends LinearRecurrence {

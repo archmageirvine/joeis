@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108536 Maximal "digit" in position n from right of numbers in "base American money" representation (A080897).
+ * A108536 Maximal "digit" in position n from right of numbers in "base American money" representation <code>(A080897)</code>.
  * @author Georg Fischer
  */
 public class A108536 extends FiniteSequence {

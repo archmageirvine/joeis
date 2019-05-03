@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A001891 Hit polynomials; convolution of natural numbers with Fibonacci numbers <code>F(2), F(3), F(4),.</code>...
+ * A001891 Hit polynomials; convolution of natural numbers with Fibonacci numbers <code>F(2), F(3), F(4),...</code>.
  * @author Sean A. Irvine
  */
 public class A001891 extends A000045 {

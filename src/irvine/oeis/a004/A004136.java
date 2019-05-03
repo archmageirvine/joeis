@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004136 Additive bases: <code>a(n)</code> is the least integer k such that in the cyclic group Z_k there is a subset of n elements all pairs (of not necessarily distinct elements) of which add up to a different sum <code>(in</code> Z_k).
+ * A004136 Additive bases: <code>a(n)</code> is the least integer k such that in the cyclic group <code>Z_k</code> there is a subset of n elements all pairs (of not necessarily distinct elements) of which add up to a different sum <code>(in Z_k)</code>.
  * @author Sean A. Irvine
  */
 public class A004136 implements Sequence {

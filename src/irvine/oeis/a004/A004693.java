@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A004693 Fibonacci numbers written in base 12. (Next term contains a non-decimal character.).
+ * A004693 Fibonacci numbers written in base <code>12. (Next</code> term contains a <code>non-decimal character.)</code>.
  * @author Sean A. Irvine
  */
 public class A004693 extends A000045 {

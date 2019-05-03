@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247618 Start with a single square; at n-th generation add a square at each expandable vertex; <code>a(n)</code> is the sum of all label values at n-th generation. (See comment for construction rules.).
+ * A247618 Start with a single square; at n-th generation add a square at each expandable vertex; <code>a(n)</code> is the sum of all label values at n-th generation. (See comment for construction <code>rules.)</code>.
  * @author Sean A. Irvine
  */
 public class A247618 extends LinearRecurrence {

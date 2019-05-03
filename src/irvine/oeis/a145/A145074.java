@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A145074 Coefficient of <code>x^(4^n) in Q(x)^(n+1)</code> where <code>Q(x) = Sum_{k&gt;=0} (x^(4^k) + x^(2*4^k) + x^(3*4^k))</code>.
+ * A145074 Coefficient of <code>x^(4^n)</code> in <code>Q(x)^(n+1)</code> where <code>Q(x) = Sum_{k&gt;=0} (x^(4^k) + x^(2*4^k) + x^(3*4^k))</code>.
  * @author Sean A. Irvine
  */
 public class A145074 implements Sequence {

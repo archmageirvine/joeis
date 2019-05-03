@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180494 Bear's Paw (from a quilt design).
+ * A180494 Bear's Paw (from a quilt <code>design)</code>.
  * @author Georg Fischer
  */
 public class A180494 extends FiniteSequence {

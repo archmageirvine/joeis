@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006192 Number of nonintersecting (or self-avoiding) rook paths joining opposite corners of 3 X n board.
+ * A006192 Number of nonintersecting <code>(or self-avoiding)</code> rook paths joining opposite corners of <code>3 X n</code> board.
  * @author Sean A. Irvine
  */
 public class A006192 extends LinearRecurrence {

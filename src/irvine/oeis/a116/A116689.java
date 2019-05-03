@@ -3,7 +3,7 @@ package irvine.oeis.a116;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A116689 Partial sums of dodecahedral numbers (A006566).
+ * A116689 Partial sums of dodecahedral numbers <code>(A006566)</code>.
  * @author Sean A. Irvine
  */
 public class A116689 extends LinearRecurrence {

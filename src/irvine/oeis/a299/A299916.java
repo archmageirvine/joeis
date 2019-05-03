@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299916 <code>a(n) =</code> A299914(2n+1).
+ * A299916 <code>a(n) = A299914(2n+1)</code>.
  * @author Georg Fischer
  */
 public class A299916 extends LinearRecurrence {

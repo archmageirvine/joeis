@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000264 Number of 3-edge-connected rooted cubic maps with <code>2n</code> nodes and a distinguished Hamiltonian cycle.
+ * A000264 Number of <code>3-edge-connected</code> rooted cubic maps with <code>2n</code> nodes and a distinguished Hamiltonian cycle.
  * @author Sean A. Irvine
  */
 public class A000264 implements Sequence {

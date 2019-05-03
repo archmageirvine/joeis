@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091981 Poincar&#233; series [or Poincare series] (or Molien series) for GL_2(4):2.
+ * A091981 Poincar&#233; series [or Poincare <code>series] (or</code> Molien series) for <code>GL_2(4):2</code>.
  * @author Sean A. Irvine
  */
 public class A091981 extends LinearRecurrence {

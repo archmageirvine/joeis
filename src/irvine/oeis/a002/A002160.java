@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002160 Nearest integer to Pi^n.
+ * A002160 Nearest integer to <code>Pi^n</code>.
  * @author Sean A. Irvine
  */
 public class A002160 implements Sequence {

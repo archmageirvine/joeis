@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001312 Number of ways of making change for n cents using coins of 1, 2, 5, 10, 50, 100 cents.
+ * A001312 Number of ways of making change for n cents using coins of <code>1, 2, 5, 10, 50, 100</code> cents.
  * @author Sean A. Irvine
  */
 public class A001312 implements Sequence {

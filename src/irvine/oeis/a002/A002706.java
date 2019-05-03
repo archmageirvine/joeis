@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002706 Theta series of 6-dimensional lattice A_6^(2) (other names for this lattice or the corresponding quadratic form are LAMBDA_{3,lambda}, P_6^(5), phi_6, F_14).
+ * A002706 Theta series of 6-dimensional lattice <code>A_6^(2) (other</code> names for this lattice or the corresponding quadratic form are <code>LAMBDA_{3,lambda}, P_6^(5), phi_6, F_14)</code>.
  * @author Sean A. Irvine
  */
 public class A002706 extends A002653 {

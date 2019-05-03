@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007705 Number of ways of arranging <code>2n+1</code> nonattacking queens on <code>a 2n+1</code> X <code>2n+1</code> toroidal board.
+ * A007705 Number of ways of arranging <code>2n+1</code> nonattacking queens on a <code>2n+1 X 2n+1</code> toroidal board.
  * @author Sean A. Irvine
  */
 public class A007705 implements Sequence {

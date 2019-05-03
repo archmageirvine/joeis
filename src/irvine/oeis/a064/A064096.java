@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064096 Fifth diagonal of triangle A064094.
+ * A064096 Fifth diagonal of triangle <code>A064094</code>.
  * @author Sean A. Irvine
  */
 public class A064096 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a188.A188491;
 
 /**
- * A002528 <code>a(n) =</code> A188491(n+1) - A188494(n) - A002526(n).
+ * A002528 <code>a(n) = A188491(n+1) - A188494(n) - A002526(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002528 extends A002527 {

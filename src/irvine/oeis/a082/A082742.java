@@ -3,7 +3,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082742 Indices of occurrences of 2 in A004738.
+ * A082742 Indices of occurrences of 2 in <code>A004738</code>.
  * @author Sean A. Irvine
  */
 public class A082742 extends LinearRecurrence {

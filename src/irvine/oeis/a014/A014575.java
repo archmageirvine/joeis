@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A014575 Vampire numbers (definition 2): numbers n with an even number of digits which have a factorization <code>n = i*j</code> where i and j have the same number of digits and the multiset of the digits of n coincides with the multiset of the digits of i and j.
+ * A014575 Vampire numbers <code>(definition 2)</code>: numbers n with an even number of digits which have a factorization <code>n = i*j</code> where i and j have the same number of digits and the multiset of the digits of n coincides with the multiset of the digits of i and j.
  * @author Sean A. Irvine
  */
 public class A014575 implements Sequence {

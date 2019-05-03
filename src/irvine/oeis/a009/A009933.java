@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009933 Coordination sequence for MgNi2, Position Ni1.
+ * A009933 Coordination sequence for <code>MgNi2</code>, Position <code>Ni1</code>.
  * @author Sean A. Irvine
  */
 public class A009933 extends CoordinationSequence {

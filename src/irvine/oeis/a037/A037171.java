@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037171 Numbers n such that <code>phi(n) = pi(n), i</code>.e., A000010(n) = A000720(n).
+ * A037171 Numbers n such that <code>phi(n) = pi(n)</code>, i.e., <code>A000010(n) = A000720(n)</code>.
  * @author Georg Fischer
  */
 public class A037171 extends FiniteSequence {

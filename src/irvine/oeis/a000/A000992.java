@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000992 "Half-Catalan numbers": <code>a(n) = Sum_{k=1 ... floor(n/2)} a(k)a(n-k)</code> with <code>a(1) = 1</code>.
+ * A000992 <code>"Half-Catalan</code> numbers": <code>a(n) = Sum_{k=1</code> ... <code>floor(n/2)} a(k)a(n-k)</code> with <code>a(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A000992 extends MemorySequence {

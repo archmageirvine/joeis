@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189003 Number of domino tilings of the 5 X n grid with upper left corner removed iff n is odd.
+ * A189003 Number of domino tilings of the <code>5 X n</code> grid with upper left corner removed iff n is odd.
  * @author Sean A. Irvine
  */
 public class A189003 extends LinearRecurrence {

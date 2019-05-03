@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051531 Molien series for group H_{1,3}^{8} of order 2304.
+ * A051531 Molien series for group <code>H_{1,3}^{8}</code> of order 2304.
  * @author Sean A. Irvine
  */
 public class A051531 extends LinearRecurrence {

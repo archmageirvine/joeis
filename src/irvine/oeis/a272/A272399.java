@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272399 The intersection of hexagonal numbers (A000384) and centered 9-gonal numbers (A060544).
+ * A272399 The intersection of hexagonal numbers <code>(A000384)</code> and centered 9-gonal numbers <code>(A060544)</code>.
  * @author Sean A. Irvine
  */
 public class A272399 extends LinearRecurrence {

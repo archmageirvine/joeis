@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276522 Zero terms of A276520.
+ * A276522 Zero terms of <code>A276520</code>.
  * @author Georg Fischer
  */
 public class A276522 extends FiniteSequence {

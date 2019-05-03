@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007138 Smallest primitive factor of <code>10^n - 1</code>. Also smallest prime p such that 1/p has repeating decimal expansion of period n.
+ * A007138 Smallest primitive factor of <code>10^n - 1</code>. Also smallest prime p such that <code>1/p</code> has repeating decimal expansion of period n.
  * @author Sean A. Irvine
  */
 public class A007138 implements Sequence {

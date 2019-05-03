@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098646 Trace sequence of 3 X 3 Krawtchouk matrix.
+ * A098646 Trace sequence of <code>3 X 3</code> Krawtchouk matrix.
  * @author Sean A. Irvine
  */
 public class A098646 extends LinearRecurrence {

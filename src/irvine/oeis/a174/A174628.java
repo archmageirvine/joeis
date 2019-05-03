@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174628 "Binary dates": take the dates with the format dd/mm/yy that have only 0's and 1's and transform their value to base 10.
+ * A174628 "Binary dates": take the dates with the format <code>dd/mm/yy</code> that have only <code>0</code>'s and <code>1</code>'s and transform their value to base 10.
  * @author Georg Fischer
  */
 public class A174628 extends FiniteSequence {

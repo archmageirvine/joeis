@@ -3,7 +3,7 @@ package irvine.oeis.a246;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A246324 Numbers n such that the Shephard-Todd group G_n is an exceptional spetsial irreducible reflection group acting on a complex vector space.
+ * A246324 Numbers n such that the Shephard-Todd group <code>G_n</code> is an exceptional spetsial irreducible reflection group acting on a complex vector space.
  * @author Georg Fischer
  */
 public class A246324 extends FiniteSequence {

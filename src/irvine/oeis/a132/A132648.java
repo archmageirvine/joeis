@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A132648 A 7 X 7 magic square made from the first 49 triangular numbers, read by rows.
+ * A132648 A <code>7 X 7</code> magic square made from the first 49 triangular numbers, read by rows.
  * @author Georg Fischer
  */
 public class A132648 extends FiniteSequence {

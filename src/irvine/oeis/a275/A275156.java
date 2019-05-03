@@ -3,7 +3,7 @@ package irvine.oeis.a275;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A275156 The 108 numbers n such that <code>n(n+1)</code> is 17-smooth.
+ * A275156 The 108 numbers n such that <code>n(n+1)</code> is <code>17-smooth</code>.
  * @author Georg Fischer
  */
 public class A275156 extends FiniteSequence {

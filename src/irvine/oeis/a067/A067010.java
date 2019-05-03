@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067010 <code>a(2n)</code> and <code>a(2n+1)</code> are side lengths of a Beentjes sequence of perfect squared rectangles, starting with <code>a 32</code> X 33 rectangle.
+ * A067010 <code>a(2n)</code> and <code>a(2n+1)</code> are side lengths of a Beentjes sequence of perfect squared rectangles, starting with a <code>32 X 33</code> rectangle.
  * @author Sean A. Irvine
  */
 public class A067010 extends LinearRecurrence {

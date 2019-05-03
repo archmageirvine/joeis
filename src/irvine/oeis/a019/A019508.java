@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019508 X^m=X rings without normal forms: integers m <code>&gt; 1</code> for which there exist a prime p and integers <code>a,b &gt; 0</code> such that both p^a-1 and p^b-1 divide m-1 but p^lcm(a,b)-1 does not divide m-1.
+ * A019508 <code>X^m=X</code> rings without normal forms: integers m <code>&gt; 1</code> for which there exist a prime p and integers a,b <code>&gt; 0</code> such that both <code>p^a-1</code> and <code>p^b-1</code> divide <code>m-1</code> but <code>p^lcm(a,b)-1</code> does not divide <code>m-1</code>.
  * @author Sean A. Irvine
  */
 public class A019508 implements Sequence {

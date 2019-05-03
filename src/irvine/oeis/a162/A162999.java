@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162999 Positions of primes in A119509.
+ * A162999 Positions of primes in <code>A119509</code>.
  * @author Georg Fischer
  */
 public class A162999 extends FiniteSequence {

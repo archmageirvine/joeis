@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051437 Number of undirected walks of length <code>n+1</code> on an oriented triangle, visiting <code>n+2</code> vertices, with n "corners"; the symmetry group is C3. Walks are not self-avoiding.
+ * A051437 Number of undirected walks of length <code>n+1</code> on an oriented triangle, visiting <code>n+2</code> vertices, with n "corners"; the symmetry group is <code>C3</code>. Walks are not <code>self-avoiding</code>.
  * @author Sean A. Irvine
  */
 public class A051437 extends LinearRecurrence {

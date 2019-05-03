@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006556 Number of different cycles of digits in the decimal expansions of 1/p, 2/p, <code>..</code>., (p-1)/p where p = n-th prime different from 2 or 5.
+ * A006556 Number of different cycles of digits in the decimal expansions of <code>1/p, 2/p</code>, ..., <code>(p-1)/p</code> where p <code>= n-th</code> prime different from 2 or 5.
  * @author Sean A. Irvine
  */
 public class A006556 implements Sequence {

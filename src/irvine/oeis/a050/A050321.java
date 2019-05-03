@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004396;
 
 /**
- * A050321 k such that A050292(k) is different from A004396(k).
+ * A050321 k such that <code>A050292(k)</code> is different from <code>A004396(k)</code>.
  * @author Sean A. Irvine
  */
 public class A050321 extends A050292 {

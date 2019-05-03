@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010813 25th powers: <code>a(n) = n^25</code>.
+ * A010813 <code>25th</code> powers: <code>a(n) = n^25</code>.
  * @author Sean A. Irvine
  */
 public class A010813 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139760 First quadrisection of A115451.
+ * A139760 First quadrisection of <code>A115451</code>.
  * @author Sean A. Irvine
  */
 public class A139760 extends LinearRecurrence {

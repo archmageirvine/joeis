@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A294369 Indices of Fibonacci numbers (A000045) that are triangular numbers (A000217).
+ * A294369 Indices of Fibonacci numbers <code>(A000045)</code> that are triangular numbers <code>(A000217)</code>.
  * @author Georg Fischer
  */
 public class A294369 extends FiniteSequence {

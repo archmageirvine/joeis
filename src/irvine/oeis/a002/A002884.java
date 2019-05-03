@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002884 Number of nonsingular n X n matrices over <code>GF(2)</code>; order of Chevalley group A_n <code>(2)</code>; order of projective special linear group PSL_n(2).
+ * A002884 Number of nonsingular <code>n X n</code> matrices over <code>GF(2)</code>; order of Chevalley group <code>A_n (2)</code>; order of projective special linear group <code>PSL_n(2)</code>.
  * @author Sean A. Irvine
  */
 public class A002884 implements Sequence {

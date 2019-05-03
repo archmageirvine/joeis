@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014659 Numbers n that are odd and do not divide <code>2^k + 1</code> for <code>any k &gt;= 1</code>.
+ * A014659 Numbers n that are odd and do not divide <code>2^k + 1</code> for any k <code>&gt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A014659 implements Sequence {

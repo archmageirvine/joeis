@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000082 <code>a(n) =</code> n^2*Product_{p|n} <code>(1 +</code> 1/p).
+ * A000082 <code>a(n) = n^2*Product_{p|n} (1 + 1/p)</code>.
  * @author Sean A. Irvine
  */
 public class A000082 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005172 Number of labeled rooted trees of subsets of an n-set.
+ * A005172 Number of labeled rooted trees of subsets of an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A005172 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018237 Weight distribution of hypothetical <code>[ 68,34,12 ]</code> code derived from hypothetical <code>[ 72,36,16 ]</code> doubly-even self-dual code.
+ * A018237 Weight distribution of hypothetical <code>[ 68,34,12 ]</code> code derived from hypothetical <code>[ 72,36,16 ] doubly-even self-dual</code> code.
  * @author Sean A. Irvine
  */
 public class A018237 extends FiniteSequence {

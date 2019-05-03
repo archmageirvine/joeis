@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048051 First occurrence of 11 consecutive and reversible primes (emirps).
+ * A048051 First occurrence of 11 consecutive and reversible primes <code>(emirps)</code>.
  * @author Georg Fischer
  */
 public class A048051 extends FiniteSequence {

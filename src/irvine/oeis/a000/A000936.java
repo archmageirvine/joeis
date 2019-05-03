@@ -6,7 +6,7 @@ import java.util.Set;
 import irvine.util.Point;
 
 /**
- * A000936 Number of free planar polyenoids with n nodes and symmetry point group C_{2v}.
+ * A000936 Number of free planar polyenoids with n nodes and symmetry point group <code>C_{2v}</code>.
  * @author Sean A. Irvine
  */
 public class A000936 extends A000942 {

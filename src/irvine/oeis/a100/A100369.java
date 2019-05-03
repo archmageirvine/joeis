@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A100369 Largest primes arising in A099756 which were built up from n distinct digits. This sequence differs from A007810 because more than one copy of each digit is permitted.
+ * A100369 Largest primes arising in <code>A099756</code> which were built up from n distinct digits. This sequence differs from <code>A007810</code> because more than one copy of each digit is permitted.
  * @author Georg Fischer
  */
 public class A100369 extends FiniteSequence {

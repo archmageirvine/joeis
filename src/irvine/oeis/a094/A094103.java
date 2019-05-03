@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094103 <code>a(n) =</code> sum along n-th diagonal of A094102 (sloping downward to left).
+ * A094103 <code>a(n) =</code> sum along n-th diagonal of <code>A094102 (sloping</code> downward to <code>left)</code>.
  * @author Sean A. Irvine
  */
 public class A094103 extends LinearRecurrence {

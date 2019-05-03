@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014544 Numbers n such that a cube can be divided into n sub-cubes.
+ * A014544 Numbers n such that a cube can be divided into <code>n sub-cubes</code>.
  * @author Sean A. Irvine
  */
 public class A014544 implements Sequence {

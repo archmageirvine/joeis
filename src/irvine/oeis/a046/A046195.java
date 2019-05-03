@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046195 Indices of heptagonal numbers (A000566) which are also squares (A000290).
+ * A046195 Indices of heptagonal numbers <code>(A000566)</code> which are also squares <code>(A000290)</code>.
  * @author Sean A. Irvine
  */
 public class A046195 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211221 For <code>any</code> partition of n consider the product of the sigma of each element. Sequence gives the maximum of such values.
+ * A211221 For any partition of n consider the product of the sigma of each element. Sequence gives the maximum of such values.
  * @author Georg Fischer
  */
 public class A211221 extends LinearRecurrence {

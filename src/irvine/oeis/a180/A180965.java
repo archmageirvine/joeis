@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180965 Number of tatami tilings of <code>a 2</code> X n grid (with monomers allowed).
+ * A180965 Number of tatami tilings of a <code>2 X n</code> grid (with monomers <code>allowed)</code>.
  * @author Sean A. Irvine
  */
 public class A180965 extends LinearRecurrence {

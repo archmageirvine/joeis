@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236580 The number of tilings of <code>a 6</code> X <code>(4n)</code> floor with 1 X 4 tetrominoes.
+ * A236580 The number of tilings of a <code>6 X (4n)</code> floor with <code>1 X 4</code> tetrominoes.
  * @author Sean A. Irvine
  */
 public class A236580 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045802 2-ish numbers (end in 03, 21, 29, 47).
+ * A045802 2-ish numbers (end in <code>03, 21, 29, 47)</code>.
  * @author Sean A. Irvine
  */
 public class A045802 extends LinearRecurrence {

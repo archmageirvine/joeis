@@ -1,7 +1,7 @@
 package irvine.oeis.a004;
 
 /**
- * A004810 Sum of 10 nonzero 10th powers.
+ * A004810 Sum of 10 nonzero <code>10th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004810 extends A004802 {

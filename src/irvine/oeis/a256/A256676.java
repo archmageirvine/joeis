@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256676 Digital roots of centered 11-gonal numbers (A069125).
+ * A256676 Digital roots of centered 11-gonal numbers <code>(A069125)</code>.
  * @author Sean A. Irvine
  */
 public class A256676 extends LinearRecurrence {

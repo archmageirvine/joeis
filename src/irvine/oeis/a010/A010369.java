@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010369 Number of points of L1 norm <code>2n</code> in root system version of E_8 lattice.
+ * A010369 Number of points of <code>L1</code> norm <code>2n</code> in root system version of <code>E_8</code> lattice.
  * @author Sean A. Irvine
  */
 public class A010369 implements Sequence {

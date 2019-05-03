@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083765 Diagonal of A083764.
+ * A083765 Diagonal of <code>A083764</code>.
  * @author Georg Fischer
  */
 public class A083765 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108507 Number of paths of length n between two arbitrary, distinct vertices in K5, the complete graph on 5 vertices.
+ * A108507 Number of paths of length n between two arbitrary, distinct vertices in <code>K5</code>, the complete graph on 5 vertices.
  * @author Georg Fischer
  */
 public class A108507 extends FiniteSequence {

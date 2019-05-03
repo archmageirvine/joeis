@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102080 Number of matchings in the C_n X P_2 (n-prism) graph.
+ * A102080 Number of matchings in the <code>C_n X P_2 (n-prism)</code> graph.
  * @author Sean A. Irvine
  */
 public class A102080 extends LinearRecurrence {

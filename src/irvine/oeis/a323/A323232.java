@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A323232 <code>a(n) = 2^n*J(n, 1/2)</code> where <code>J(n, x)</code> are the Jacobsthal polynomials as defined in A322942.
+ * A323232 <code>a(n) = 2^n*J(n, 1/2)</code> where <code>J(n, x)</code> are the Jacobsthal polynomials as defined in <code>A322942</code>.
  * @author Georg Fischer
  */
 public class A323232 extends LinearRecurrence {

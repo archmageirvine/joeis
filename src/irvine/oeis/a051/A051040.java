@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051040 5-Stohr sequence. 
+ * A051040 5-Stohr sequence.
  * @author Georg Fischer
  */
 public class A051040 extends LinearRecurrence {

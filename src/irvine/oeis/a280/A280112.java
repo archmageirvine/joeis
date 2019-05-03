@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280112 Indices of centered 10-gonal numbers (A062786) that are also triangular numbers (A000217).
+ * A280112 Indices of centered 10-gonal numbers <code>(A062786)</code> that are also triangular numbers <code>(A000217)</code>.
  * @author Sean A. Irvine
  */
 public class A280112 extends LinearRecurrence {

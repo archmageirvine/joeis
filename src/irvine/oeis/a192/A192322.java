@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192322 Negated discriminants of imaginary quadratic number fields whose class group is isomorphic to the Klein 4-group, C2 x C2.
+ * A192322 Negated discriminants of imaginary quadratic number fields whose class group is isomorphic to the Klein <code>4-group, C2 x C2</code>.
  * @author Georg Fischer
  */
 public class A192322 extends FiniteSequence {

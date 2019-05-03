@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145820 Numbers n such that <code>17, n, n+1</code> are the sides of a Heron triangle, i.e., a triangle with integer sides and integer area.
+ * A145820 Numbers n such that 17, n, <code>n+1</code> are the sides of a Heron triangle, i.e., a triangle with integer sides and integer area.
  * @author Georg Fischer
  */
 public class A145820 extends LinearRecurrence {

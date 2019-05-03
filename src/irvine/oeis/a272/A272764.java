@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A272764 Number of positive roots in reflection group E_n.
+ * A272764 Number of positive roots in reflection group <code>E_n</code>.
  * @author Georg Fischer
  */
 public class A272764 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A096419 Number of cyclically symmetric plane partitions (Macdonald's plane partition conjecture).
+ * A096419 Number of cyclically symmetric plane partitions <code>(Macdonald</code>'s plane partition <code>conjecture)</code>.
  * @author Sean A. Irvine
  */
 public class A096419 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019130 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite FER = Ferrierite Na2Mg2[ Al6Si30O72 <code>] . 18</code> H2O.
+ * A019130 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite FER = Ferrierite <code>Na2Mg2[ Al6Si30O72 ] . 18 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019130 extends A018940 {

@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286850 Number of minimal dominating sets in the 2 X n king graph.
+ * A286850 Number of minimal dominating sets in the <code>2 X n</code> king graph.
  * @author Sean A. Irvine
  */
 public class A286850 extends LinearRecurrence {

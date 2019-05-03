@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059140 A hierarchical sequence (S(W2{2}*c) - see A059126).
+ * A059140 A hierarchical sequence <code>(S(W2{2}*c) -</code> see <code>A059126)</code>.
  * @author Sean A. Irvine
  */
 public class A059140 extends LinearRecurrence {

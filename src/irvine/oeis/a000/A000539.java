@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000539 Sum of 5th powers: <code>0^5 + 1^5 + 2^5 + ... + n^5</code>.
+ * A000539 Sum of 5th powers: <code>0^5 + 1^5 + 2^5 +</code> ... <code>+ n^5</code>.
  * @author Sean A. Irvine
  */
 public class A000539 implements Sequence {

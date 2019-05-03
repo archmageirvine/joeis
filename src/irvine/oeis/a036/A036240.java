@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036240 Number of 3-way interactions when 3 subsets of power set on <code>{1..n}</code> are chosen at random; number of Boolean functions of n variables and rank 3 from Post class <code>F(8</code>,inf).
+ * A036240 Number of 3-way interactions when 3 subsets of power set on <code>{1..n}</code> are chosen at random; number of Boolean functions of n variables and rank 3 from Post class <code>F(8,inf)</code>.
  * @author Sean A. Irvine
  */
 public class A036240 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011447 Decimal expansion of 28th root of 28.
+ * A011447 Decimal expansion of <code>28th</code> root of 28.
  * @author Sean A. Irvine
  */
 public class A011447 extends DecimalExpansionSequence {

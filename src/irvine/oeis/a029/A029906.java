@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A029906 Zack's sequence (the pattern is evident).
+ * A029906 Zack's sequence (the pattern is <code>evident)</code>.
  * @author Sean A. Irvine
  */
 public class A029906 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008528 Coordination sequence for 4-dimensional RR-centered di-isohexagonal orthogonal lattice.
+ * A008528 Coordination sequence for <code>4-dimensional RR-centered di-isohexagonal</code> orthogonal lattice.
  * @author Sean A. Irvine
  */
 public class A008528 implements Sequence {

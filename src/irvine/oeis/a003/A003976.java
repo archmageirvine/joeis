@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A003976 M&#246;bius transform of A003963 (with alternate 0's omitted).
+ * A003976 M&#246;bius transform of <code>A003963 (with</code> alternate <code>0's omitted)</code>.
  * @author Sean A. Irvine
  */
 public class A003976 extends A003963 {

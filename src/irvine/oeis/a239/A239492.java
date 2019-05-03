@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239492 The fifth bicycle lock sequence: <code>a(n)</code> is the maximum value of min{x*y, <code>(5-x)*(n-y)}</code> over <code>0 &lt;= x &lt;= 5, 0 &lt;= y &lt;= n</code> for integers <code>x, y</code>.
+ * A239492 The fifth bicycle lock sequence: <code>a(n)</code> is the maximum value of <code>min{x*y, (5-x)*(n-y)}</code> over <code>0 &lt;= x &lt;= 5, 0 &lt;= y &lt;= n</code> for integers x, y.
  * @author Sean A. Irvine
  */
 public class A239492 extends LinearRecurrence {

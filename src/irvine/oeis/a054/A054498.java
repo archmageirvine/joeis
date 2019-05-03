@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054498 Number of symmetric nonnegative integer 8 X 8 matrices with sum of elements equal to <code>4*n</code>, under action of dihedral group D_4.
+ * A054498 Number of symmetric nonnegative integer <code>8 X 8</code> matrices with sum of elements equal to <code>4*n</code>, under action of dihedral group <code>D_4</code>.
  * @author Sean A. Irvine
  */
 public class A054498 extends LinearRecurrence {

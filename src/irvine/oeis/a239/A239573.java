@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239573 Number of non-equivalent <code>(mod</code> D_3) ways to place 3 indistinguishable points on a triangular grid of side n so that no two of them are adjacent.
+ * A239573 Number of <code>non-equivalent (mod D_3)</code> ways to place 3 indistinguishable points on a triangular grid of side n so that no two of them are adjacent.
  * @author Sean A. Irvine
  */
 public class A239573 extends LinearRecurrence {

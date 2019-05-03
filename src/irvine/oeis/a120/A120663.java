@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120663 Sequence produced by Markov chain based on 20 X 20 pentagonal prism bonding graph.
+ * A120663 Sequence produced by Markov chain based on <code>20 X 20</code> pentagonal prism bonding graph.
  * @author Sean A. Irvine
  */
 public class A120663 extends LinearRecurrence {

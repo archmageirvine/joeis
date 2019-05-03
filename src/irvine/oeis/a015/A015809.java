@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015809 Odd numbers k such that <code>phi(k) |</code> sigma_3(k).
+ * A015809 Odd numbers k such that <code>phi(k) | sigma_3(k)</code>.
  * @author Sean A. Irvine
  */
 public class A015809 implements Sequence {

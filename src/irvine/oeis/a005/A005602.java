@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A005602 Smallest prime beginning a complete Cunningham chain of length n (of the first kind).
+ * A005602 Smallest prime beginning a complete Cunningham chain of length <code>n (of</code> the first <code>kind)</code>.
  * @author Sean A. Irvine
  */
 public class A005602 implements Sequence {

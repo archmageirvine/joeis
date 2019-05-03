@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006096 Gaussian binomial coefficient <code>[ n,3 ]</code> for q=2.
+ * A006096 Gaussian binomial coefficient <code>[ n,3 ]</code> for <code>q=2</code>.
  * @author Sean A. Irvine
  */
 public class A006096 implements Sequence {

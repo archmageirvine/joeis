@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.math.z.Z;
 
 /**
- * A110777 Number of digits in A110776(n).
+ * A110777 Number of digits in <code>A110776(n)</code>.
  * @author Sean A. Irvine
  */
 public class A110777 extends A110776 {

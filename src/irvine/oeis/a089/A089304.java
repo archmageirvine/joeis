@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089304 Sum of all digits in all even numbers from 0 to <code>222...2</code> (with n 2's).
+ * A089304 Sum of all digits in all even numbers from 0 to <code>222...2 (with n 2's)</code>.
  * @author Sean A. Irvine
  */
 public class A089304 extends LinearRecurrence {

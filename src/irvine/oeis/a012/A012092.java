@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012092 <code>sinh(arcsin(arctan(x)))=x+4/5!*x^5-32/7!*x^7+1936/9!*x^9-67328/11!*x^11</code>...
+ * A012092 <code>sinh(arcsin(arctan(x)))=x+4/5!*x^5-32/7!*x^7+1936/9!*x^9-67328/11!*x^11..</code>.
  * @author Sean A. Irvine
  */
 public class A012092 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.Mobius;
 
 /**
- * A002321 Mertens's function: <code>Sum_{k=1..n} mu(k)</code>, where mu is the Moebius function A008683.
+ * A002321 Mertens's function: <code>Sum_{k=1..n} mu(k)</code>, where mu is the Moebius function <code>A008683</code>.
  * @author Sean A. Irvine
  */
 public class A002321 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204090 The number of 1 X n Haunted Mirror Maze puzzles with a unique solution where mirror orientation is fixed.
+ * A204090 The number of <code>1 X n</code> Haunted Mirror Maze puzzles with a unique solution where mirror orientation is fixed.
  * @author Sean A. Irvine
  */
 public class A204090 extends LinearRecurrence {

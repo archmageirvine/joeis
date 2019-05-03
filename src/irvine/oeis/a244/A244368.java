@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244368 Related to small gaps between primes: <code>a(n) =</code> A235686/2.
+ * A244368 Related to small gaps between primes: <code>a(n) = A235686/2</code>.
  * @author Georg Fischer
  */
 public class A244368 extends FiniteSequence {

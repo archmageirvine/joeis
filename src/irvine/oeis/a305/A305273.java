@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305273 Numbers k in A048981 for which the ring Z[sqrt(k)] is not a UFD.
+ * A305273 Numbers k in <code>A048981</code> for which the ring <code>Z[sqrt(k)]</code> is not a UFD.
  * @author Georg Fischer
  */
 public class A305273 extends FiniteSequence {

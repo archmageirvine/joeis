@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A099472 Numbers n such that <code>binomial(n</code>,m) cannot be represented as the sum of three squares for <code>any 0 &lt;=</code> m <code>&lt;= n</code>.
+ * A099472 Numbers n such that <code>binomial(n,m)</code> cannot be represented as the sum of three squares for any <code>0 &lt;= m &lt;=</code> n.
  * @author Georg Fischer
  */
 public class A099472 extends FiniteSequence {

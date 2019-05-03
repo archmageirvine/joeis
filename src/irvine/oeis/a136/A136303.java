@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136303 Transform of 0 by the reciprocal transformation to T_{1,1} (see link).
+ * A136303 Transform of 0 by the reciprocal transformation to <code>T_{1,1} (see link)</code>.
  * @author Sean A. Irvine
  */
 public class A136303 extends LinearRecurrence {

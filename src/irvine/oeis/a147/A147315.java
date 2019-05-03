@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A147315 L-matrix for Euler numbers A000111(n+1).
+ * A147315 L-matrix for Euler numbers <code>A000111(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A147315 implements Sequence {

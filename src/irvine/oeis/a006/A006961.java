@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001190;
 
 /**
- * A006961 Number of mappings from n points to themselves with in-degree <code>&lt;= 2</code>.
+ * A006961 Number of mappings from n points to themselves with <code>in-degree &lt;= 2</code>.
  * @author Sean A. Irvine
  */
 public class A006961 extends A001190 {

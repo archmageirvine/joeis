@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109176 Five-digit primes which use each of 0-to-4 decimal digits exactly once.
+ * A109176 Five-digit primes which use each of <code>0-to-4</code> decimal digits exactly once.
  * @author Georg Fischer
  */
 public class A109176 extends FiniteSequence {

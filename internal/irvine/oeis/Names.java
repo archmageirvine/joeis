@@ -8,7 +8,9 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.zip.GZIPInputStream;
 
 import irvine.util.io.IOUtils;
@@ -24,24 +26,89 @@ public final class Names {
 
   private Names() { }
 
+  private static final char[] SPECIAL = "0123456789^*/(){}[]<>!=+#|_-".toCharArray();
+  private static final Set<String> FORMULA = new HashSet<>();
+  static {
+    FORMULA.add("&lt;");
+    FORMULA.add("&gt;");
+    FORMULA.add("mod");
+    FORMULA.add("sqrt");
+    FORMULA.add("Pi");
+    FORMULA.add("n");
+    FORMULA.add("x");
+    FORMULA.add("y");
+    FORMULA.add("z");
+  }
+
+  static String formulaProtect(final String name) {
+    final String[] parts = name.split("\\s+");
+    if (parts.length <= 1) {
+      return name;
+    }
+    final boolean[] formula = new boolean[parts.length];
+    // Start at 1 because part 0 is the A-number
+    for (int k = 1; k < parts.length; ++k) {
+      final String pk = parts[k];
+      formula[k] = FORMULA.contains(pk);
+      for (final char c : SPECIAL) {
+        formula[k] |= pk.indexOf(c) >= 0;
+      }
+    }
+    for (int k = 0; k < parts.length; ++k) {
+      if (!formula[k] && parts[k].length() == 1 && (k == 0 || formula[k - 1]) && (k == parts.length - 1 || formula[k + 1])) {
+        formula[k] = true;
+      }
+    }
+    for (int k = 0; k < parts.length; ++k) {
+      if (parts[k].contains("number") || parts[k].contains("sequence")) {
+        formula[k] = false;
+      }
+      if (formula[k] && (k == 0 || !formula[k - 1]) && (k == parts.length - 1 || !formula[k + 1])) {
+        if (parts[k].length() == 1
+          || parts[k].matches("[0-9,.;/-]+")
+          || parts[k].matches("[a-zA-Z]{2,}/[a-zA-Z]{2,}")
+          || parts[k].matches("[a-zA-Z0-9]+-[a-zA-Z]+")
+          || parts[k].matches("[({\\[]?[A-Za-z]+[)}\\]]?")
+          || parts[k].matches("[4-9]th$")
+          || parts[k].endsWith("1st")
+          || parts[k].endsWith("2nd")
+          || parts[k].endsWith("3rd")
+          ) {
+          formula[k] = false;
+        }
+      }
+    }
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < parts.length;) {
+      if (sb.length() > 0) {
+        sb.append(' ');
+      }
+      if (formula[k]) {
+        boolean space = false;
+        sb.append("<code>");
+        do {
+          if (space) {
+            sb.append(' ');
+          }
+          sb.append(parts[k++]);
+          space = true;
+        } while (k < parts.length && formula[k]);
+        sb.append("</code>");
+      } else {
+        sb.append(parts[k++]);
+      }
+    }
+    return sb.toString();
+  }
+
   private static String protect(final String name) {
     // The order of the replacements here is important
-    final String s = name.replace("&", "&amp;")
-      .replaceAll(" (([ 0-9baxyznkij^*/(){}\\[\\]<>!=+.,;#|-]|S[12]\\(|Stirling[12]|mod|sqrt|nextprime|prevprime|sigma\\(|[Ss]um_|[Pp]roduct_|[A-Za-z]+\\(){2,})([ .;,:])", " <code>$1</code>$3")
+    final String s = formulaProtect(name.replace("&", "&amp;")
       .replace("<", "&lt;")
-      .replace(">", "&gt;")
-      .replaceAll("&lt;(/?code)&gt;", "<$1>")
-      .replaceAll("([.,;])</code>", "</code>$1")
-      .replaceAll("<code>([0-9,) ]*|in|an|by|.)</code>", "$1")
-      .replaceAll("<code>(in|an|by) ", "$1 <code>")
-      .replaceAll(" (in|an|by)</code>", "</code> $1")
-      // repeated because above can create new cases for simplification
-      .replaceAll("([.,;])</code>", "</code>$1")
-      .replaceAll("<code>([0-9,) ]*|in|an|by|.)</code>", "$1")
-      .replaceAll("<code>(in|an|by) ", "$1 <code>")
-      .replaceAll(" (in|an|by)</code>", "</code> $1")
+      .replace(">", "&gt;"))
       .replace("*/", "* /")
-      .replaceAll("\\s+", " ")
+      .replaceAll("([.,;:])</code>", "</code>$1")
+      .replace("'s</code>", "</code>'s")
       ;
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k < s.length(); ++k) {

@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152759 3 times 9-gonal (or nonagonal) numbers: <code>3n(7n-5)/2</code>.
+ * A152759 3 times <code>9-gonal (or nonagonal)</code> numbers: <code>3n(7n-5)/2</code>.
  * @author Sean A. Irvine
  */
 public class A152759 extends LinearRecurrence {

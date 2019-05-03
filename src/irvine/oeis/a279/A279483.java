@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279483 Number of 2 X 2 matrices with entries in <code>{0,1,...,n}</code> and odd determinant with no entry repeated.
+ * A279483 Number of <code>2 X 2</code> matrices with entries in <code>{0,1,...,n}</code> and odd determinant with no entry repeated.
  * @author Sean A. Irvine
  */
 public class A279483 extends LinearRecurrence {

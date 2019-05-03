@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014711 Theta series of 16-dimensional 2-modular lattice with min norm 3 and det 256 (the "odd Barnes-Wall lattice").
+ * A014711 Theta series of <code>16-dimensional 2-modular</code> lattice with min norm 3 and det <code>256 (the</code> "odd <code>Barnes-Wall lattice")</code>.
  * @author Sean A. Irvine
  */
 public class A014711 implements Sequence {

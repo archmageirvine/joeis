@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251780 Digital root of A069778(n-1) <code>= n^3 - n^2 + 1, n &gt;= 1. Repeat(1, 6, 3, 7, 6, 6, 4, 6, 9)</code>.
+ * A251780 Digital root of <code>A069778(n-1) = n^3 - n^2 + 1, n &gt;= 1. Repeat(1, 6, 3, 7, 6, 6, 4, 6, 9)</code>.
  * @author Sean A. Irvine
  */
 public class A251780 extends LinearRecurrence {

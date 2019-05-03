@@ -3,7 +3,7 @@ package irvine.oeis.a233;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A233139 Number of tilings of <code>a 4</code> X n rectangle using T and Z tetrominoes.
+ * A233139 Number of tilings of a <code>4 X n</code> rectangle using T and Z tetrominoes.
  * @author Sean A. Irvine
  */
 public class A233139 extends LinearRecurrence {

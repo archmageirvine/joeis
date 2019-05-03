@@ -12,7 +12,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004110 Number of n-node unlabeled graphs without endpoints <code>(i</code>.e., no nodes of degree 1).
+ * A004110 Number of n-node unlabeled graphs without endpoints <code>(i.e.</code>, no nodes of degree <code>1)</code>.
  * @author Sean A. Irvine
  */
 public class A004110 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.Sequence;
 
 /**
- * A002514 Coefficients in the asymptotic expansions of modified Hankel functions h_1(z) and h_2(z), rounded to nearest integer.
+ * A002514 Coefficients in the asymptotic expansions of modified Hankel functions <code>h_1(z)</code> and <code>h_2(z)</code>, rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A002514 implements Sequence {

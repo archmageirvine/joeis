@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A202287 Number of faces of dimension <code>n in a</code> tight triangulation of the manifold CP^2.
+ * A202287 Number of faces of dimension n in a tight triangulation of the manifold <code>CP^2</code>.
  * @author Georg Fischer
  */
 public class A202287 extends FiniteSequence {

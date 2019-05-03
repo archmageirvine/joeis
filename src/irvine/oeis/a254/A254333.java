@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254333 Squares (A000290) which are also centered pentagonal numbers (A005891).
+ * A254333 Squares <code>(A000290)</code> which are also centered pentagonal numbers <code>(A005891)</code>.
  * @author Sean A. Irvine
  */
 public class A254333 extends LinearRecurrence {

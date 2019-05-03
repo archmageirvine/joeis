@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174876 Numbers n such that the sum of squares of their digits <code>&gt; n</code>.
+ * A174876 Numbers n such that the sum of squares of their digits <code>&gt</code>; n.
  * @author Georg Fischer
  */
 public class A174876 extends FiniteSequence {

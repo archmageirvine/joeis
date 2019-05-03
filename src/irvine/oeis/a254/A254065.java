@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254065 Vulgar fractions whose denominators are numbers ending with nine, the case <code>1/19</code>.
+ * A254065 Vulgar fractions whose denominators are numbers ending with nine, the case 1/19.
  * @author Sean A. Irvine
  */
 public class A254065 extends LinearRecurrence {

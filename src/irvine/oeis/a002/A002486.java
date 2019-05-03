@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 
 /**
- * A002486 Apart from two leading terms (which are present by convention), denominators of convergents to Pi (A002485 and A046947 give numerators).
+ * A002486 Apart from two leading terms (which are present by <code>convention)</code>, denominators of convergents to <code>Pi (A002485</code> and <code>A046947</code> give <code>numerators)</code>.
  * @author Sean A. Irvine
  */
 public class A002486 implements Sequence {

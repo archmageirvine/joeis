@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006744 Number of n-step self-avoiding walks on a Manhattan lattice.
+ * A006744 Number of <code>n-step self-avoiding</code> walks on a Manhattan lattice.
  * @author Sean A. Irvine
  */
 public class A006744 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305416 Negated discriminants of imaginary quadratic number fields whose class group is isomorphic to the Klein 8-group, C_2 x C_2 x C_2.
+ * A305416 Negated discriminants of imaginary quadratic number fields whose class group is isomorphic to the Klein <code>8-group, C_2 x C_2 x C_2</code>.
  * @author Georg Fischer
  */
 public class A305416 extends FiniteSequence {

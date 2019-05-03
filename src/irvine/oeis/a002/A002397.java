@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002397 Coefficients for step-by-step integration.
+ * A002397 Coefficients for <code>step-by-step</code> integration.
  * @author Sean A. Irvine
  */
 public class A002397 implements Sequence {

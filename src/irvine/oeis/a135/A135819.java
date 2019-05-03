@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135819 Moves for edge 3-cycle (uf,ul,ur) in <code>a 3</code> X 3 X 3 Rubik's Cube.
+ * A135819 Moves for edge <code>3-cycle (uf,ul,ur)</code> in a <code>3 X 3 X 3</code> Rubik's Cube.
  * @author Georg Fischer
  */
 public class A135819 extends FiniteSequence {

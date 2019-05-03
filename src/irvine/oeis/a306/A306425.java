@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306425 Smallest m such that A306305(m) = n.
+ * A306425 Smallest m such that <code>A306305(m) = n</code>.
  * @author Georg Fischer
  */
 public class A306425 extends FiniteSequence {

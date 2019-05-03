@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101451 Location of the restriction sites for the enzyme BccI on the PhiX174 DNA.
+ * A101451 Location of the restriction sites for the enzyme BccI on the <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
 public class A101451 extends FiniteSequence {

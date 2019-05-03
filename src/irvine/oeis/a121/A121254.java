@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121254 Number of conjugated cycles composed of six carbons in <code>(n</code>,n)-nanotubes in terms of the number of naphthalene units.
+ * A121254 Number of conjugated cycles composed of six carbons in <code>(n,n)-nanotubes</code> in terms of the number of naphthalene units.
  * @author Sean A. Irvine
  */
 public class A121254 extends LinearRecurrence {

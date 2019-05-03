@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004012;
 
 /**
- * A005870 Numbers represented by hexagonal close-packing.
+ * A005870 Numbers represented by hexagonal <code>close-packing</code>.
  * @author Sean A. Irvine
  */
 public class A005870 extends A004012 {

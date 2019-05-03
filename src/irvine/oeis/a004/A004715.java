@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004715 Positions of ones in binary expansion of arctan(1/2)/Pi.
+ * A004715 Positions of ones in binary expansion of <code>arctan(1/2)/Pi</code>.
  * @author Sean A. Irvine
  */
 public class A004715 extends DecimalExpansionSequence {

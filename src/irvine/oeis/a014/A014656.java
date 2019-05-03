@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Norwegian;
 
 /**
- * A014656 Numbers of letters in <code>n (in</code> the Norwegian language Bokmal).
+ * A014656 Numbers of letters in <code>n (in</code> the Norwegian language <code>Bokmal)</code>.
  * @author Sean A. Irvine
  */
 public class A014656 implements Sequence {

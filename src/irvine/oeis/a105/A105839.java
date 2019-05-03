@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105839 Numbers n such that <code>n^2 =</code> 19*m^2 + 19*m <code>+ 1</code>.
+ * A105839 Numbers n such that <code>n^2 = 19*m^2 + 19*m + 1</code>.
  * @author Sean A. Irvine
  */
 public class A105839 extends LinearRecurrence {

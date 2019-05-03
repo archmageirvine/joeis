@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A232808 Decimal expansion of the surface area of a 3D sphere with unit volume.
+ * A232808 Decimal expansion of the surface area of a <code>3D</code> sphere with unit volume.
  * @author Sean A. Irvine
  */
 public class A232808 extends DecimalExpansionSequence {

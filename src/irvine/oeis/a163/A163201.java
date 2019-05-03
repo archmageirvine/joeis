@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163201 Alternating sum of the cubes of the first n even-indexed Fibonacci numbers.
+ * A163201 Alternating sum of the cubes of the first <code>n even-indexed</code> Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A163201 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004749 Numbers whose binary expansion contains the substring '110'.
+ * A004749 Numbers whose binary expansion contains the substring <code>'110'</code>.
  * @author Sean A. Irvine
  */
 public class A004749 implements Sequence {

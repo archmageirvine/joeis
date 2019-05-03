@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004533 Theta series of 12-dimensional unimodular lattice {D_12}^{+}.
+ * A004533 Theta series of 12-dimensional unimodular lattice <code>{D_12}^{+}</code>.
  * @author Sean A. Irvine
  */
 public class A004533 implements Sequence {

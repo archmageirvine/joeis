@@ -4,7 +4,7 @@ import irvine.math.matrix.DefaultMatrix;
 import irvine.math.z.Z;
 
 /**
- * A007295 Number of elements <code>(a b</code>, c d) in <code>GL(2</code>,Z) with |det| <code>= 1</code>, trace <code>&lt;= n</code> and <code>0 &lt;= a &lt;= {b</code>, c} <code>&lt;=</code> d.
+ * A007295 Number of elements (a b, c d) in <code>GL(2,Z)</code> with <code>|det| = 1</code>, trace <code>&lt;= n</code> and <code>0 &lt;= a &lt;= {b, c} &lt;=</code> d.
  * @author Sean A. Irvine
  */
 public class A007295 extends A007104 {

@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015191 Sum of (Gaussian) q-binomial coefficients for q=-22.
+ * A015191 Sum of <code>(Gaussian) q-binomial</code> coefficients for <code>q=-22</code>.
  * @author Sean A. Irvine
  */
 public class A015191 extends A015152 {

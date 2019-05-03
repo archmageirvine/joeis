@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306955 Let f map k to the sum of the factorials of the digits of k (A061602); sequence lists numbers such that <code>f(f(f(k)))=k</code>.
+ * A306955 Let f map k to the sum of the factorials of the digits of k <code>(A061602)</code>; sequence lists numbers such that <code>f(f(f(k)))=k</code>.
  * @author Georg Fischer
  */
 public class A306955 extends FiniteSequence {

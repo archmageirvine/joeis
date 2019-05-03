@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008579 Coordination sequence for planar net <code>3.6.3.6</code>. Spherical growth function for a certain reflection group in plane.
+ * A008579 Coordination sequence for planar net 3.6.3.6. Spherical growth function for a certain reflection group in plane.
  * @author Sean A. Irvine
  */
 public class A008579 extends LinearRecurrence {

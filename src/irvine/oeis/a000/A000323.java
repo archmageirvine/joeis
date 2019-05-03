@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000323 Let <code>A(n) = #{(i,j)</code>: <code>i^2 + j^2 &lt;= n}, V(n) =</code> Pi*n, <code>P(n) = A(n) - V(n)</code>; A000099 gives values of n where <code>|P(n)|</code> sets a new record; sequence gives A(A000099(n)).
+ * A000323 Let <code>A(n) = #{(i,j): i^2 + j^2 &lt;= n}, V(n) = Pi*n, P(n) = A(n) - V(n); A000099</code> gives values of n where <code>|P(n)|</code> sets a new record; sequence gives <code>A(A000099(n))</code>.
  * @author Sean A. Irvine
  */
 public class A000323 implements Sequence {

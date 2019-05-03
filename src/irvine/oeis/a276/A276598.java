@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276598 Values of n such that <code>n^2 + 3</code> is a triangular number (A000217).
+ * A276598 Values of n such that <code>n^2 + 3</code> is a triangular number <code>(A000217)</code>.
  * @author Sean A. Irvine
  */
 public class A276598 extends LinearRecurrence {

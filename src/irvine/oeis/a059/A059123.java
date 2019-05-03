@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001678;
 import java.util.ArrayList;
 
 /**
- * A059123 Number of homeomorphically irreducible rooted trees (also known as series-reduced rooted trees, or rooted trees without nodes of degree 2) with <code>n &gt;= 1</code> nodes.
+ * A059123 Number of homeomorphically irreducible rooted trees (also known as series-reduced rooted trees, or rooted trees without nodes of degree <code>2)</code> with <code>n &gt;= 1</code> nodes.
  * @author Sean A. Irvine
  */
 public class A059123 implements Sequence {

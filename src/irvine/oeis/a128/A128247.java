@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001783;
 import irvine.oeis.a038.A038610;
 
 /**
- * A128247 <code>a(n) =</code> A001783(n)/A038610(n).
+ * A128247 <code>a(n) = A001783(n)/A038610(n)</code>.
  * @author Sean A. Irvine
  */
 public class A128247 extends A038610 {

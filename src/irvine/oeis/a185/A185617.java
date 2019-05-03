@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000201;
 
 /**
- * A185617 Least m for which A185615(n) divides A000201(A185615(n))^m.
+ * A185617 Least m for which <code>A185615(n)</code> divides <code>A000201(A185615(n))^m</code>.
  * @author Sean A. Irvine
  */
 public class A185617 extends A000201 {

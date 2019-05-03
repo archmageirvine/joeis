@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046858 Irregular triangle read by rows: <code>T(n,k) =</code> number of directed graphs-with-loops with n nodes and k arcs <code>(n &gt;= 0, 0 &lt;= k &lt;= n^2</code>.
+ * A046858 Irregular triangle read by rows: <code>T(n,k) =</code> number of directed <code>graphs-with-loops</code> with n nodes and k arcs <code>(n &gt;= 0, 0 &lt;= k &lt;= n^2</code>.
  * @author Sean A. Irvine
  */
 public class A046858 implements Sequence {

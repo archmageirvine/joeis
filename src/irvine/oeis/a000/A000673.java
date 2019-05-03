@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import java.io.Serializable;
 
 /**
- * A000673 Number of bicentered 3-valent (or boron, or binary) trees with n nodes.
+ * A000673 Number of bicentered <code>3-valent (or</code> boron, or binary) trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000673 implements Sequence, Serializable {

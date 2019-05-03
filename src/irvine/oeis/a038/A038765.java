@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038765 Next-to-last diagonal of A024462. 
+ * A038765 <code>Next-to-last</code> diagonal of <code>A024462</code>.
  * @author Georg Fischer
  */
 public class A038765 extends LinearRecurrence {

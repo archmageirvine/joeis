@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221011 The hyper-Wiener index of the nanostar dendrimer G[n], defined pictorially in the Nadjafi-Arani et al. reference.
+ * A221011 The hyper-Wiener index of the nanostar dendrimer <code>G[n]</code>, defined pictorially in the Nadjafi-Arani et al. reference.
  * @author Sean A. Irvine
  */
 public class A221011 extends LinearRecurrence {

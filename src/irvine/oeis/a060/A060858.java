@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A060858 "0303456", a popular song by Rafaela Carra.
+ * A060858 <code>"0303456"</code>, a popular song by Rafaela Carra.
  * @author Georg Fischer
  */
 public class A060858 extends FiniteSequence {

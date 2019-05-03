@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.a011.A011632;
 
 /**
- * A016347 180th cyclotomic polynomial.
+ * A016347 <code>180th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A016347 extends A011632 {

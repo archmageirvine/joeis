@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A210252 Triangle read by rows: <code>T(n,k)</code> is the number of c-nets with <code>n+1</code> faces and <code>k+1</code> vertices, <code>1 &lt;= k &lt;= n</code>. But see A290326 for a better version.
+ * A210252 Triangle read by rows: <code>T(n,k)</code> is the number of c-nets with <code>n+1</code> faces and <code>k+1</code> vertices, <code>1 &lt;= k &lt;=</code> n. But see <code>A290326</code> for a better version.
  * @author Sean A. Irvine
  */
 public class A210252 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166304 Third trisection of A022998. 
+ * A166304 Third trisection of <code>A022998</code>.
  * @author Georg Fischer
  */
 public class A166304 extends LinearRecurrence {

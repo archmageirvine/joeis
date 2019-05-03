@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195036 Vertex number of a square spiral in which the length of the first two edges are the legs of the primitive Pythagorean triple <code>[15, 8, 17]</code>. The edges of the spiral have length A195035.
+ * A195036 Vertex number of a square spiral in which the length of the first two edges are the legs of the primitive Pythagorean triple <code>[15, 8, 17]</code>. The edges of the spiral have length <code>A195035</code>.
  * @author Sean A. Irvine
  */
 public class A195036 extends LinearRecurrence {

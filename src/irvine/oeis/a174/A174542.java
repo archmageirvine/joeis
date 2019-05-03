@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174542 Partial sums of odd Fibonacci numbers (A014437).
+ * A174542 Partial sums of odd Fibonacci numbers <code>(A014437)</code>.
  * @author Sean A. Irvine
  */
 public class A174542 extends LinearRecurrence {

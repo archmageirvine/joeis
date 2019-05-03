@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185374 Number of holes in n-th lower case letter of English alphabet <code>(in</code> printed form using standard Times New Roman font).
+ * A185374 Number of holes in n-th lower case letter of English alphabet (in printed form using standard Times New Roman <code>font)</code>.
  * @author Georg Fischer
  */
 public class A185374 extends FiniteSequence {

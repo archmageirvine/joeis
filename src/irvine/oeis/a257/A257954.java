@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257954 Heptagonal numbers (A000566) that are the sum of seven consecutive heptagonal numbers.
+ * A257954 Heptagonal numbers <code>(A000566)</code> that are the sum of seven consecutive heptagonal numbers.
  * @author Sean A. Irvine
  */
 public class A257954 extends LinearRecurrence {

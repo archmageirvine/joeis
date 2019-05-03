@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216107 The hyper-Wiener index of the tetrameric 1,3-adamantane <code>TA(n)</code> (see the Fath-Tabar et al. reference).
+ * A216107 The hyper-Wiener index of the tetrameric <code>1,3-adamantane TA(n) (see</code> the Fath-Tabar et al. <code>reference)</code>.
  * @author Sean A. Irvine
  */
 public class A216107 extends LinearRecurrence {

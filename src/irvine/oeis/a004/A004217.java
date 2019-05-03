@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004217 (n^n)^(n^n).
+ * A004217 <code>(n^n)^(n^n)</code>.
  * @author Sean A. Irvine
  */
 public class A004217 implements Sequence {

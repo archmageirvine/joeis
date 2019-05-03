@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A096367 Number of winning paths of length <code>n+1</code> across an n X n Hex board.
+ * A096367 Number of winning paths of length <code>n+1</code> across an <code>n X n</code> Hex board.
  * @author Sean A. Irvine
  */
 public class A096367 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225107 Number of (4n-3)-digit 4th powers in carryless arithmetic <code>mod 10</code>.
+ * A225107 Number of <code>(4n-3)-digit 4th</code> powers in carryless arithmetic <code>mod 10</code>.
  * @author Sean A. Irvine
  */
 public class A225107 extends LinearRecurrence {

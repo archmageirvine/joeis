@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143619 Expansion of <code>1/(1 - x^2 - x^7 - x^12 + x^14) (a</code> Salem polynomial).
+ * A143619 Expansion of <code>1/(1 - x^2 - x^7 - x^12 + x^14) (a</code> Salem <code>polynomial)</code>.
  * @author Sean A. Irvine
  */
 public class A143619 extends LinearRecurrence {

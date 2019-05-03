@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A076254 A list of six integers with property that for every 3 numbers <code>a,b</code>,c from the list axbxc is an integer, where <code>axb=a*b/(a+b)</code> and axbxc=a*b*c/(a*b+a*c+b*c). This is the so-called replus operation.
+ * A076254 A list of six integers with property that for every 3 numbers a,b,c from the list axbxc is an integer, where <code>axb=a*b/(a+b)</code> and <code>axbxc=a*b*c/(a*b+a*c+b*c)</code>. This is the so-called replus operation.
  * @author Georg Fischer
  */
 public class A076254 extends FiniteSequence {

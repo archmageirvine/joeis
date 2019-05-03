@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171809 Number of 5 X 5 permutation matrices such that the n-th matrix power is the identity matrix and the determinant is <code>-1</code>.
+ * A171809 Number of <code>5 X 5</code> permutation matrices such that the n-th matrix power is the identity matrix and the determinant is -1.
  * @author Georg Fischer
  */
 public class A171809 extends FiniteSequence {

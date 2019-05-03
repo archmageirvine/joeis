@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253068 The subsequence A253066(2^n-1).
+ * A253068 The subsequence <code>A253066(2^n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A253068 extends LinearRecurrence {

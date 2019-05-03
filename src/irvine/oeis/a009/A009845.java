@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009845 Coordination sequence T2 for Keatite.
+ * A009845 Coordination sequence <code>T2</code> for Keatite.
  * @author Sean A. Irvine
  */
 public class A009845 extends CoordinationSequence {

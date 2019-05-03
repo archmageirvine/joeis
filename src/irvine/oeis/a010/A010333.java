@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003814;
 
 /**
- * A010333 Length of period of continued for sqrt(A003814(n)).
+ * A010333 Length of period of continued for <code>sqrt(A003814(n))</code>.
  * @author Sean A. Irvine
  */
 public class A010333 extends A003814 {

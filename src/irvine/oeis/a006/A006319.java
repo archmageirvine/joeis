@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
 
 /**
- * A006319 Royal paths in a lattice (convolution of A006318).
+ * A006319 Royal paths in a lattice (convolution of <code>A006318)</code>.
  * @author Sean A. Irvine
  */
 public class A006319 extends ConvolutionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009560 Numbers n such that n divides sum of all primes <code>&lt;= n</code>.
+ * A009560 Numbers n such that n divides sum of all primes <code>&lt;=</code> n.
  * @author Sean A. Irvine
  */
 public class A009560 implements Sequence {

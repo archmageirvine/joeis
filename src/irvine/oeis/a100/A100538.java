@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100538 Volume of the 3-dimensional box of sides of length equal to consecutive Padovan numbers (A000931). These boxes form a spiral in three dimensions similar to the spiral of Fibonacci boxes in two dimensions.
+ * A100538 Volume of the 3-dimensional box of sides of length equal to consecutive Padovan numbers <code>(A000931)</code>. These boxes form a spiral in three dimensions similar to the spiral of Fibonacci boxes in two dimensions.
  * @author Sean A. Irvine
  */
 public class A100538 extends LinearRecurrence {

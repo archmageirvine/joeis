@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008692 Theta series of Niemeier lattice of type A_15 D_9.
+ * A008692 Theta series of Niemeier lattice of type <code>A_15 D_9</code>.
  * @author Sean A. Irvine
  */
 public class A008692 implements Sequence {

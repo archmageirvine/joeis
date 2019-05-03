@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001134 Primes p such that the multiplicative order of 2 modulo p is (p-1)/4.
+ * A001134 Primes p such that the multiplicative order of 2 modulo p is <code>(p-1)/4</code>.
  * @author Sean A. Irvine
  */
 public class A001134 implements Sequence {

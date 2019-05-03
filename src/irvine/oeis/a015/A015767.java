@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015767 <code>Phi(n) |</code> Sigma_9(n).
+ * A015767 <code>Phi(n) | Sigma_9(n)</code>.
  * @author Sean A. Irvine
  */
 public class A015767 implements Sequence {

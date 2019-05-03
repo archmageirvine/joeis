@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A302488 Total domination number of the n X n grid graph.
+ * A302488 Total domination number of the <code>n X n</code> grid graph.
  * @author Georg Fischer
  */
 public class A302488 extends LinearRecurrence {

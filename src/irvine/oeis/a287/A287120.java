@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287120 Number of non-attacking bishop positions on <code>a 3</code> X n chessboard.
+ * A287120 Number of non-attacking bishop positions on a <code>3 X n</code> chessboard.
  * @author Sean A. Irvine
  */
 public class A287120 extends LinearRecurrence {

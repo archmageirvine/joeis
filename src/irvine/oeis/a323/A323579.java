@@ -3,7 +3,7 @@ package irvine.oeis.a323;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A323579 Primes formed by using the four terminal digits of multidigit primes and whose digits are distinct, i.e., consisting of only digits 1, 3, 7, 9.
+ * A323579 Primes formed by using the four terminal digits of multidigit primes and whose digits are distinct, i.e., consisting of only digits <code>1, 3, 7, 9</code>.
  * @author Georg Fischer
  */
 public class A323579 extends FiniteSequence {

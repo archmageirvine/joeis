@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014507;
 
 /**
- * A020565 Number of cyclic oriented multigraphs on n labeled arcs (with loops).
+ * A020565 Number of cyclic oriented multigraphs on n labeled arcs <code>(with loops)</code>.
  * @author Sean A. Irvine
  */
 public class A020565 extends A014507 {

@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188707 Number of 3 X n binary arrays without the pattern 0 0 diagonally or vertically.
+ * A188707 Number of <code>3 X n</code> binary arrays without the pattern <code>0 0</code> diagonally or vertically.
  * @author Sean A. Irvine
  */
 public class A188707 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218327 Even octagonal pyramidal numbers (A002414).
+ * A218327 Even octagonal pyramidal numbers <code>(A002414)</code>.
  * @author Sean A. Irvine
  */
 public class A218327 extends LinearRecurrence {

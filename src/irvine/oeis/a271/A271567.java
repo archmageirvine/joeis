@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271567 Convolution of nonzero triangular numbers (A000217) and nonzero tetradecagonal numbers (A051866).
+ * A271567 Convolution of nonzero triangular numbers <code>(A000217)</code> and nonzero tetradecagonal numbers <code>(A051866)</code>.
  * @author Sean A. Irvine
  */
 public class A271567 extends LinearRecurrence {

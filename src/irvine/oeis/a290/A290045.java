@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A290045 Primes in A290044.
+ * A290045 Primes in <code>A290044</code>.
  * @author Georg Fischer
  */
 public class A290045 extends FiniteSequence {

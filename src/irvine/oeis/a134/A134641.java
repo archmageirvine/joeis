@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134641 Prime permutational numbers A134640.
+ * A134641 Prime permutational numbers <code>A134640</code>.
  * @author Georg Fischer
  */
 public class A134641 extends FiniteSequence {

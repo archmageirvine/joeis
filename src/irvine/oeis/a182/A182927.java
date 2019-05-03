@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A182927 Row sums of A182928.
+ * A182927 Row sums of <code>A182928</code>.
  * @author Sean A. Irvine
  */
 public class A182927 implements Sequence {

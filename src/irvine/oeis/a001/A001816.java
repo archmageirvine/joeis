@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001816 Coefficients of <code>x^n</code> in Hermite polynomial H_{n+4}.
+ * A001816 Coefficients of <code>x^n</code> in Hermite polynomial <code>H_{n+4}</code>.
  * @author Sean A. Irvine
  */
 public class A001816 implements Sequence {

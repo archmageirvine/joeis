@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013946 Least d for which the number with continued fraction <code>[n,n,n,n...]</code> is in Q(sqrt(d)).
+ * A013946 Least d for which the number with continued fraction <code>[n,n,n,n...]</code> is in <code>Q(sqrt(d))</code>.
  * @author Sean A. Irvine
  */
 public class A013946 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A069564 <code>a(1) = 2; a(n) = k*a(n-1) + 1</code> is a multiple of n-th prime with <code>k &gt; 1</code>.
+ * A069564 <code>a(1) = 2; a(n) = k*a(n-1) + 1</code> is a multiple of n-th prime with k <code>&gt; 1</code>.
  * @author Georg Fischer
  */
 public class A069564 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188899 Third row of array in A187617.
+ * A188899 Third row of array in <code>A187617</code>.
  * @author Sean A. Irvine
  */
 public class A188899 extends LinearRecurrence {

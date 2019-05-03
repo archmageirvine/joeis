@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005655 Board configurations in Mu Torere (for one player).
+ * A005655 Board configurations in Mu Torere (for one <code>player)</code>.
  * @author Sean A. Irvine
  */
 public class A005655 extends A005654 {

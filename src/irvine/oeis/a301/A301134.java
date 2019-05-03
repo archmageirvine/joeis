@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301134 Coordination sequence T6 for Zeolite Code MSE.
+ * A301134 Coordination sequence <code>T6</code> for Zeolite Code MSE.
  * @author Sean A. Irvine
  */
 public class A301134 extends CoordinationSequence {

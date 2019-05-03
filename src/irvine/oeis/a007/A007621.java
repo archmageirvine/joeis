@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a173.A173490;
 
 /**
- * A007621 Impractical numbers: even abundant numbers (A173490) that are not <code>practical(2)</code> (A007620).
+ * A007621 Impractical numbers: even abundant numbers <code>(A173490)</code> that are not <code>practical(2) (A007620)</code>.
  * @author Sean A. Irvine
  */
 public class A007621 extends A173490 {

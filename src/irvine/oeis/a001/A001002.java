@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001002 Number of dissections of a convex (n+2)-gon into triangles and quadrilaterals by nonintersecting diagonals.
+ * A001002 Number of dissections of a convex <code>(n+2)-gon</code> into triangles and quadrilaterals by nonintersecting diagonals.
  * @author Sean A. Irvine
  */
 public class A001002 implements Sequence {

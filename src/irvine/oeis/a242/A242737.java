@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A242737 Number of stellations of Platonic solids when applying Miller's rules <code>(in</code> the order tetrahedron, cube, octahedron, dodecahedron, icosahedron).
+ * A242737 Number of stellations of Platonic solids when applying Miller's rules (in the order tetrahedron, cube, octahedron, dodecahedron, <code>icosahedron)</code>.
  * @author Georg Fischer
  */
 public class A242737 extends FiniteSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014713 Theta series of shadow of lattice described in A014711.
+ * A014713 Theta series of shadow of lattice described in <code>A014711</code>.
  * @author Sean A. Irvine
  */
 public class A014713 implements Sequence {

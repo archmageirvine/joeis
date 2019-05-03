@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243909 Least number <code>k &gt; 0</code> such that <code>2^k</code> contains exactly n different digits.
+ * A243909 Least number k <code>&gt; 0</code> such that <code>2^k</code> contains exactly n different digits.
  * @author Georg Fischer
  */
 public class A243909 extends FiniteSequence {

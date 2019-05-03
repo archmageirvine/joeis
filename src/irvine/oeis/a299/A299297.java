@@ -3,7 +3,7 @@ package irvine.oeis.a299;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A299297 Numbers g&gt;1 such that the maximal order of an embedding of a finite graph of genus g into the sphere S^3 is 12(g-1).
+ * A299297 Numbers <code>g&gt;1</code> such that the maximal order of an embedding of a finite graph of genus g into the sphere <code>S^3</code> is <code>12(g-1)</code>.
  * @author Georg Fischer
  */
 public class A299297 extends FiniteSequence {

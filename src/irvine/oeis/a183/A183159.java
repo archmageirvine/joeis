@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A183159 The number of partial isometries (of an n-chain) of fix zero (fix of alpha <code>= 0))</code>. Equivalently, the number of partial derangement isometries (of an n-chain).
+ * A183159 The number of partial isometries (of an <code>n-chain)</code> of fix zero (fix of alpha <code>= 0))</code>. Equivalently, the number of partial derangement isometries (of an <code>n-chain)</code>.
  * @author Sean A. Irvine
  */
 public class A183159 extends LinearRecurrence {

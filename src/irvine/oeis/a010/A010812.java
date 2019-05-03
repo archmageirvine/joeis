@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010812 24th powers: <code>a(n) = n^24</code>.
+ * A010812 <code>24th</code> powers: <code>a(n) = n^24</code>.
  * @author Sean A. Irvine
  */
 public class A010812 implements Sequence {

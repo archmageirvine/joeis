@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A014549 Decimal expansion of <code>1 / M(1,sqrt(2))</code> (Gauss's constant).
+ * A014549 Decimal expansion of <code>1 / M(1,sqrt(2)) (Gauss's constant)</code>.
  * @author Sean A. Irvine
  */
 public class A014549 extends DecimalExpansionSequence {

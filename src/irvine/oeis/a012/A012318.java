@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012318 <code>tan(arcsin(x)*exp(x))=x+2/2!*x^2+6/3!*x^3+32/4!*x^4+240/5!*x^5</code>...
+ * A012318 <code>tan(arcsin(x)*exp(x))=x+2/2!*x^2+6/3!*x^3+32/4!*x^4+240/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A012318 implements Sequence {

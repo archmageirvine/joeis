@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115570 Array read by rows: row <code>n (n&gt;= 1)</code> gives the Betti numbers for the n-th element of the Weyl group of type A3 <code>(in</code> Goresky's standard ordering).
+ * A115570 Array read by rows: row <code>n (n&gt;= 1)</code> gives the Betti numbers for the n-th element of the Weyl group of type <code>A3 (in</code> Goresky's standard <code>ordering)</code>.
  * @author Georg Fischer
  */
 public class A115570 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A008869 Order of universal Chevalley group E_7 (q), q = prime power.
+ * A008869 Order of universal Chevalley group <code>E_7 (q), q =</code> prime power.
  * @author Sean A. Irvine
  */
 public class A008869 extends A000961 {

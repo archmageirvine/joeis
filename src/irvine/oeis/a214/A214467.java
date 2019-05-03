@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214467 Degrees of irreducible representations of symplectic group S6(2).
+ * A214467 Degrees of irreducible representations of symplectic group <code>S6(2)</code>.
  * @author Georg Fischer
  */
 public class A214467 extends FiniteSequence {

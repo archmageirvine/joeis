@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105684 Weight distribution of <code>[11,6</code>,5]_3 ternary Golay perfect code.
+ * A105684 Weight distribution of <code>[11,6,5]_3</code> ternary Golay perfect code.
  * @author Georg Fischer
  */
 public class A105684 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009899 Coordination sequence T3 for Zeolite Code RUT.
+ * A009899 Coordination sequence <code>T3</code> for Zeolite Code RUT.
  * @author Sean A. Irvine
  */
 public class A009899 extends CoordinationSequence {

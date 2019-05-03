@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020531 <code>a(n) =</code> 5th Fibonacci polynomial evaluated at <code>2^n</code>.
+ * A020531 <code>a(n) = 5th</code> Fibonacci polynomial evaluated at <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A020531 extends LinearRecurrence {

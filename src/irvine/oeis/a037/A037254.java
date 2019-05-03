@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A037254 Triangle read by rows: <code>T(n,k) (n &gt;= 1, 1 &lt;= k&lt; = n)</code> gives number of non-distorting tie-avoiding integer vote weights.
+ * A037254 Triangle read by rows: <code>T(n,k) (n &gt;= 1, 1 &lt;=</code> k&lt; <code>= n)</code> gives number of <code>non-distorting tie-avoiding</code> integer vote weights.
  * @author Sean A. Irvine
  */
 public class A037254 extends MemoryFunction2<Long, Z> implements Sequence {

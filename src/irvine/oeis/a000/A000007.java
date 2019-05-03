@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000007 The characteristic function of 0: <code>a(n) = 0^n</code>.
+ * A000007 The characteristic function of <code>0: a(n) = 0^n</code>.
  * @author Sean A. Irvine
  */
 public class A000007 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a047;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A047989 6 consecutive primes p such that each 2p+1 is also prime.
+ * A047989 6 consecutive primes p such that each <code>2p+1</code> is also prime.
  * @author Georg Fischer
  */
 public class A047989 extends FiniteSequence {

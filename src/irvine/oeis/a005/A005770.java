@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A005770 Number of convex polygons of length <code>2n</code> on square lattice whose leftmost bottom vertex and rightmost top vertex have the same x-coordinate.
+ * A005770 Number of convex polygons of length <code>2n</code> on square lattice whose leftmost bottom vertex and rightmost top vertex have the same <code>x-coordinate</code>.
  * @author Sean A. Irvine
  */
 public class A005770 extends RatPolyGfSequence {

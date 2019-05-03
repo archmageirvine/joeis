@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020882 Ordered hypotenuses (with multiplicity) of primitive Pythagorean triangles.
+ * A020882 Ordered hypotenuses <code>(with multiplicity)</code> of primitive Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A020882 implements Sequence {

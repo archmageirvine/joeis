@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222393 Nonnegative integers m such that 18*m*(m+1)+1 is a square.
+ * A222393 Nonnegative integers m such that <code>18*m*(m+1)+1</code> is a square.
  * @author Sean A. Irvine
  */
 public class A222393 extends LinearRecurrence {

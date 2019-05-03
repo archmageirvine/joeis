@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056586 Ninth power of Fibonacci numbers A000045.
+ * A056586 Ninth power of Fibonacci numbers <code>A000045</code>.
  * @author Sean A. Irvine
  */
 public class A056586 extends LinearRecurrence {

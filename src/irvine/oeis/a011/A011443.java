@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011443 Decimal expansion of 24th root of 24.
+ * A011443 Decimal expansion of <code>24th</code> root of 24.
  * @author Sean A. Irvine
  */
 public class A011443 extends DecimalExpansionSequence {

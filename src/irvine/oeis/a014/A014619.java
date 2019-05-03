@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003422;
 
 /**
- * A014619 Exponential generating function is <code>-f(x) *</code> int(exp(exp(-t)-1),t,0,x) where <code>f(x) = exp(1-x-exp(-x))</code> is an exponential generating function for A014182.
+ * A014619 Exponential generating function is <code>-f(x) * int(exp(exp(-t)-1),t,0,x)</code> where <code>f(x) = exp(1-x-exp(-x))</code> is an exponential generating function for <code>A014182</code>.
  * @author Sean A. Irvine
  */
 public class A014619 implements Sequence {

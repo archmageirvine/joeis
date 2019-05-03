@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020696 Let <code>a,b</code>,c,...k be all divisors of <code>n; a(n) = (a+1)*(b+1)*...*(k+1)</code>.
+ * A020696 Let a,b,c,...k be all divisors of n; <code>a(n) = (a+1)*(b+1)*...*(k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A020696 implements Sequence {

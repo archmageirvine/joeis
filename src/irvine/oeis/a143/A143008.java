@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143008 Crystal ball sequence for the A2 x A2 lattice.
+ * A143008 Crystal ball sequence for the <code>A2 x A2</code> lattice.
  * @author Sean A. Irvine
  */
 public class A143008 extends LinearRecurrence {

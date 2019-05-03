@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127212 <code>a(n) = 5^n*Lucas(n)</code>, where Lucas = A000204.
+ * A127212 <code>a(n) = 5^n*Lucas(n)</code>, where Lucas <code>= A000204</code>.
  * @author Sean A. Irvine
  */
 public class A127212 extends LinearRecurrence {

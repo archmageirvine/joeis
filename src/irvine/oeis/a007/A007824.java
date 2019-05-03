@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007824 <code>a(n) = f(a(n-1))</code>, with f(m) = Sum <code>i*b(i)*2^(i-1)</code>, m = Sum <code>b(i)*2^i</code>, and starting value 16.
+ * A007824 <code>a(n) = f(a(n-1))</code>, with <code>f(m) =</code> Sum <code>i*b(i)*2^(i-1), m =</code> Sum <code>b(i)*2^i</code>, and starting value 16.
  * @author Sean A. Irvine
  */
 public class A007824 implements Sequence {

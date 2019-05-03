@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184552 Super-birthdays (falling on the same weekday), version 4 (birth in the year preceding a February 29).
+ * A184552 <code>Super-birthdays (falling</code> on the same <code>weekday)</code>, version <code>4 (birth</code> in the year preceding a February <code>29)</code>.
  * @author Georg Fischer
  */
 public class A184552 extends LinearRecurrence {

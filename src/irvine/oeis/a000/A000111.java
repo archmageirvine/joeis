@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000111 Euler or up/down numbers: e.g.f. <code>sec(x) + tan(x)</code>. Also for <code>n &gt;= 2</code>, half the number of alternating permutations on n letters (A001250).
+ * A000111 Euler or up/down numbers: e.g.f. <code>sec(x) + tan(x)</code>. Also for <code>n &gt;= 2</code>, half the number of alternating permutations on n letters <code>(A001250)</code>.
  * @author Sean A. Irvine
  */
 public class A000111 implements Sequence {

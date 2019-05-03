@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261038 <code>a(1)=1</code>; for <code>n&gt;1</code>: <code>a(n) = a(n-1)*n</code> if t=0, <code>a(n) = round(a(n-1)/n)</code> if t=1, <code>a(n) = a(n-1)+n</code> if t=2, <code>a(n) = a(n-1)-n</code> if t=3, where t <code>= n mod 4</code>.
+ * A261038 <code>a(1)=1</code>; for <code>n&gt;1: a(n) = a(n-1)*n</code> if <code>t=0, a(n) = round(a(n-1)/n)</code> if <code>t=1, a(n) = a(n-1)+n</code> if <code>t=2, a(n) = a(n-1)-n</code> if <code>t=3</code>, where t <code>= n mod 4</code>.
  * @author Sean A. Irvine
  */
 public class A261038 extends LinearRecurrence {

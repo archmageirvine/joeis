@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A098427 Order of symmetry group of the five Platonic solids sorted on the number of faces (A053016).
+ * A098427 Order of symmetry group of the five Platonic solids sorted on the number of faces <code>(A053016)</code>.
  * @author Georg Fischer
  */
 public class A098427 extends FiniteSequence {

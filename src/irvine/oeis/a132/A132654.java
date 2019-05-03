@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A132654 An 8 X 8 magic square with consecutive triangular numbers, read by rows.
+ * A132654 An <code>8 X 8</code> magic square with consecutive triangular numbers, read by rows.
  * @author Georg Fischer
  */
 public class A132654 extends FiniteSequence {

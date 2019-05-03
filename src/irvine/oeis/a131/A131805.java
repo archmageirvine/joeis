@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131805 Row sums of triangular array T: <code>T(j,k) = -(k+1)/2</code> for odd <code>k, T(j,k) = 0</code> for <code>k = 0, T(j,k) = j+1-k/2</code> for even <code>k &gt; 0; 0 &lt;= k &lt;= j</code>.
+ * A131805 Row sums of triangular array T: <code>T(j,k) = -(k+1)/2</code> for odd k, <code>T(j,k) = 0</code> for k <code>= 0, T(j,k) = j+1-k/2</code> for even k <code>&gt; 0; 0 &lt;= k &lt;=</code> j.
  * @author Sean A. Irvine
  */
 public class A131805 extends LinearRecurrence {

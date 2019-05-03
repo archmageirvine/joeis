@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005572 Number of walks on cubic lattice starting and finishing on the <code>xy</code> plane and never going below it.
+ * A005572 Number of walks on cubic lattice starting and finishing on the xy plane and never going below it.
  * @author Sean A. Irvine
  */
 public class A005572 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107548 Coordination sequence for B_15 lattice.
+ * A107548 Coordination sequence for <code>B_15</code> lattice.
  * @author Georg Fischer
  */
 public class A107548 extends LinearRecurrence {

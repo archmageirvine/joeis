@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260990 Numbers n such that the modular curve X_0(n) is bielliptic.
+ * A260990 Numbers n such that the modular curve <code>X_0(n)</code> is bielliptic.
  * @author Georg Fischer
  */
 public class A260990 extends FiniteSequence {

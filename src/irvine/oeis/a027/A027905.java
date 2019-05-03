@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027905 Terminating decimals of length n of form p/5^q using at most one of each nonzero digit.
+ * A027905 Terminating decimals of length n of form <code>p/5^q</code> using at most one of each nonzero digit.
  * @author Georg Fischer
  */
 public class A027905 extends FiniteSequence {

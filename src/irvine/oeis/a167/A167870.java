@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167870 <code>a(n) = 16^n*Sum_{ k=0..n } binomial(2*k</code>,k)^3/16^k.
+ * A167870 <code>a(n) = 16^n*Sum_{ k=0..n } binomial(2*k,k)^3/16^k</code>.
  * @author Sean A. Irvine
  */
 public class A167870 implements Sequence {

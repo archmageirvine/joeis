@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210013 Pandigital numbers (A050278) with each product of three adjacent digits visible as a substring of the digits.
+ * A210013 Pandigital numbers <code>(A050278)</code> with each product of three adjacent digits visible as a substring of the digits.
  * @author Georg Fischer
  */
 public class A210013 extends FiniteSequence {

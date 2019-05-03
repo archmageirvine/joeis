@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001036 Partial sums of A001037, omitting A001037(1).
+ * A001036 Partial sums of <code>A001037</code>, omitting <code>A001037(1)</code>.
  * @author Sean A. Irvine
  */
 public class A001036 extends A001037 {

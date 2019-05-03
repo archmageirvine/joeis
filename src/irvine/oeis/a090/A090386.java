@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090386 Fifth diagonal (m=4) of triangle A084938; <code>a(n) =</code> A084938(n+4,n) <code>= (n^4 + 18*n^3 + 131*n^2 + 426*n)/24</code>.
+ * A090386 Fifth diagonal <code>(m=4)</code> of triangle <code>A084938; a(n) = A084938(n+4,n) = (n^4 + 18*n^3 + 131*n^2 + 426*n)/24</code>.
  * @author Sean A. Irvine
  */
 public class A090386 extends LinearRecurrence {

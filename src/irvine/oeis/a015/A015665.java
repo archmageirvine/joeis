@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015665 Expansion of e.g.f. theta_3^(3/2).
+ * A015665 Expansion of e.g.f. <code>theta_3^(3/2)</code>.
  * @author Sean A. Irvine
  */
 public class A015665 implements Sequence {

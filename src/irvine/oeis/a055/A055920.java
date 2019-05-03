@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055920 Susceptibility series H_4 for 2-dimensional Ising model (divided by 2) for 1 particle excitation.
+ * A055920 Susceptibility series <code>H_4</code> for 2-dimensional Ising model (divided by <code>2)</code> for 1 particle excitation.
  * @author Georg Fischer
  */
 public class A055920 extends LinearRecurrence {

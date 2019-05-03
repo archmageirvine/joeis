@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A002931 Number of self-avoiding polygons of length <code>2n</code> on square lattice (not allowing rotations).
+ * A002931 Number of self-avoiding polygons of length <code>2n</code> on square lattice (not allowing <code>rotations)</code>.
  * @author Sean A. Irvine
  */
 public class A002931 implements Sequence {

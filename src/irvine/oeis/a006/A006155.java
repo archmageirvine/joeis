@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006155 Expansion of 1/(2-x-e^x).
+ * A006155 Expansion of <code>1/(2-x-e^x)</code>.
  * @author Sean A. Irvine
  */
 public class A006155 implements Sequence {

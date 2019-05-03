@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013955 <code>a(n) =</code> sigma_7(n), the sum of the 7th powers of the divisors of n.
+ * A013955 <code>a(n) = sigma_7(n)</code>, the sum of the 7th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013955 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a296;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A296914 List of coefficients of chromatic polynomial of the cubical graph Q_3, highest order terms first.
+ * A296914 List of coefficients of chromatic polynomial of the cubical graph <code>Q_3</code>, highest order terms first.
  * @author Georg Fischer
  */
 public class A296914 extends FiniteSequence {

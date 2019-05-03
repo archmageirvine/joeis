@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274830 Numbers n such that <code>7*n+1</code> is a triangular number (A000217).
+ * A274830 Numbers n such that <code>7*n+1</code> is a triangular number <code>(A000217)</code>.
  * @author Sean A. Irvine
  */
 public class A274830 extends LinearRecurrence {

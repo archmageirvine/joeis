@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009488 E.g.f. <code>sin(sinh(sin(x)))</code> (odd powers only).
+ * A009488 E.g.f. <code>sin(sinh(sin(x))) (odd</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A009488 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218348 Hilltop maps: number of n X 2 binary arrays indicating the locations of corresponding elements not exceeded by <code>any</code> horizontal or vertical neighbor in a random <code>0..1</code> nX2 array.
+ * A218348 Hilltop maps: number of <code>n X 2</code> binary arrays indicating the locations of corresponding elements not exceeded by any horizontal or vertical neighbor in a random <code>0..1 nX2</code> array.
  * @author Sean A. Irvine
  */
 public class A218348 extends LinearRecurrence {

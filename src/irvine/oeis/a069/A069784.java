@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A069784 Numbers m such that gcd(d((m!)^3), d(m!)) <code>= 2^k, i</code>.e., is a power of 2; d = A000005.
+ * A069784 Numbers m such that <code>gcd(d((m!)^3), d(m!)) = 2^k</code>, i.e., is a power of <code>2; d = A000005</code>.
  * @author Georg Fischer
  */
 public class A069784 extends FiniteSequence {

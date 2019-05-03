@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092264 <code>a(n)*a(n-5) = a(n-1)*a(n-4)+a(n-2)+a(n-3)</code>, with initial terms <code>a(1) = ... = a(5) = 1</code>.
+ * A092264 <code>a(n)*a(n-5) = a(n-1)*a(n-4)+a(n-2)+a(n-3)</code>, with initial terms <code>a(1) =</code> ... <code>= a(5) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A092264 extends LinearRecurrence {

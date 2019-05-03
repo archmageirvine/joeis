@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000170 Number of ways of placing n nonattacking queens on an n X n board.
+ * A000170 Number of ways of placing n nonattacking queens on an <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A000170 implements Sequence {

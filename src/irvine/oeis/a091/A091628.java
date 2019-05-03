@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091628 Concatenation of n 2's followed by 3.
+ * A091628 Concatenation of <code>n 2</code>'s followed by 3.
  * @author Sean A. Irvine
  */
 public class A091628 extends LinearRecurrence {

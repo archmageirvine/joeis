@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253680 Numbers <code>c(n)</code> whose square are equal to the sum of an odd number M of consecutive cubed integers <code>b^3 + (b+1)^3 + ... +</code> (b+M-1)^3 <code>= c(n)^2</code>, starting at <code>b(n)</code> (A253679).
+ * A253680 Numbers <code>c(n)</code> whose square are equal to the sum of an odd number M of consecutive cubed integers <code>b^3 + (b+1)^3 +</code> ... <code>+ (b+M-1)^3 = c(n)^2</code>, starting at <code>b(n) (A253679)</code>.
  * @author Sean A. Irvine
  */
 public class A253680 extends LinearRecurrence {

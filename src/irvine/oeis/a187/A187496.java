@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A187496 Let i be in <code>{1,2,3,4}</code> and let r <code>&gt;= 0</code> be an integer. Let p = {p_1, p_2, p_3, p_4} <code>= {-3,0,1,2}</code>, n=3*r+p_i, and define <code>a(-3)=0</code>. Then a(n)=a(3*r+p_i) gives the quantity of H_(9,2,0) tiles in a subdivided H_(9,i,r) tile after linear scaling by the factor Q^r, where Q=sqrt(2*cos(Pi/9)).
+ * A187496 Let i be in <code>{1,2,3,4}</code> and let r <code>&gt;= 0</code> be an integer. Let p <code>= {p_1, p_2, p_3, p_4} = {-3,0,1,2}, n=3*r+p_i</code>, and define <code>a(-3)=0</code>. Then <code>a(n)=a(3*r+p_i)</code> gives the quantity of <code>H_(9,2,0)</code> tiles in a subdivided <code>H_(9,i,r)</code> tile after linear scaling by the factor <code>Q^r</code>, where <code>Q=sqrt(2*cos(Pi/9))</code>.
  * @author Georg Fischer
  */
 public class A187496 extends LinearRecurrence {

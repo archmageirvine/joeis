@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253711 Second partial sums of 11th powers (A008455).
+ * A253711 Second partial sums of <code>11th</code> powers <code>(A008455)</code>.
  * @author Sean A. Irvine
  */
 public class A253711 extends LinearRecurrence {

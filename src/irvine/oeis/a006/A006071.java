@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006071 Maximal length of rook tour on an n X n board.
+ * A006071 Maximal length of rook tour on an <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A006071 extends LinearRecurrence {

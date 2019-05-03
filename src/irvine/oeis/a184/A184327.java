@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184327 <code>a(1)=1, a(2)=17</code>; thereafter <code>a(n) =</code> 6*a(n-1)-a(n-2)+c, where c=-4 if n is odd, c=12 if n is even.
+ * A184327 <code>a(1)=1, a(2)=17</code>; thereafter <code>a(n) = 6*a(n-1)-a(n-2)+c</code>, where <code>c=-4</code> if n is odd, <code>c=12</code> if n is even.
  * @author Sean A. Irvine
  */
 public class A184327 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282621 Number of Eulerian cycles in the graph C_3 X C_n.
+ * A282621 Number of Eulerian cycles in the graph <code>C_3 X C_n</code>.
  * @author Georg Fischer
  */
 public class A282621 extends LinearRecurrence {

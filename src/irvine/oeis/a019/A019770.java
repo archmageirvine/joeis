@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019770 Decimal expansion of 2*e/17.
+ * A019770 Decimal expansion of <code>2*e/17</code>.
  * @author Sean A. Irvine
  */
 public class A019770 extends DecimalExpansionSequence {

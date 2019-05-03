@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.oeis.RatPolyGfSequence;
 
 /**
- * A014697 Poincar&#233; series [or Poincare series] (or Molien series) for <code>mod 2</code> cohomology of universal W-group <code>W(4)</code>.
+ * A014697 Poincar&#233; series [or Poincare <code>series] (or</code> Molien series) for <code>mod 2</code> cohomology of universal <code>W-group W(4)</code>.
  * @author Sean A. Irvine
  */
 public class A014697 extends RatPolyGfSequence {

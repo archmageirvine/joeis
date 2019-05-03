@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191902 Number of compositions of odd positive integers into 5 parts <code>&lt;= n</code>.
+ * A191902 Number of compositions of odd positive integers into 5 parts <code>&lt;=</code> n.
  * @author Sean A. Irvine
  */
 public class A191902 extends LinearRecurrence {

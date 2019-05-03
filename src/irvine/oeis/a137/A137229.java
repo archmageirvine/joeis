@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137229 Transform of A000217 without the initial 0 by the T_{0,0} transformation (see link).
+ * A137229 Transform of <code>A000217</code> without the initial 0 by the <code>T_{0,0}</code> transformation <code>(see link)</code>.
  * @author Sean A. Irvine
  */
 public class A137229 extends LinearRecurrence {

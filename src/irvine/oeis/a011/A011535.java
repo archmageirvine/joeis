@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011535 Numbers that contain <code>a 5</code>.
+ * A011535 Numbers that contain a 5.
  * @author Sean A. Irvine
  */
 public class A011535 implements Sequence {

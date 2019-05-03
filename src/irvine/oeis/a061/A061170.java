@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061170 Fourth column of Lucas bisection triangle (even part).
+ * A061170 Fourth column of Lucas bisection triangle <code>(even part)</code>.
  * @author Sean A. Irvine
  */
 public class A061170 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A182131 Largest group of fireflies on <code>a 15</code> X 15 board for which no pair ever converges.
+ * A182131 Largest group of fireflies on a <code>15 X 15</code> board for which no pair ever converges.
  * @author Georg Fischer
  */
 public class A182131 extends FiniteSequence {

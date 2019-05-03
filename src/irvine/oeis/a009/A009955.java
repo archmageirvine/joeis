@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009955 Coordination sequence for FeS2-Marcasite, Fe position.
+ * A009955 Coordination sequence for <code>FeS2-Marcasite</code>, Fe position.
  * @author Sean A. Irvine
  */
 public class A009955 extends CoordinationSequence {

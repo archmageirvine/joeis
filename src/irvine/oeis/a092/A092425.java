@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092425 Decimal expansion of Pi^4.
+ * A092425 Decimal expansion of <code>Pi^4</code>.
  * @author Sean A. Irvine
  */
 public class A092425 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101902 Numbers n that are not of the form ab+bc+cd+de+ea with 1&lt;=a&lt;=b&lt;=c&lt;=d&lt;=e.
+ * A101902 Numbers n that are not of the form <code>ab+bc+cd+de+ea</code> with <code>1&lt;=a&lt;=b&lt;=c&lt;=d&lt;=e</code>.
  * @author Georg Fischer
  */
 public class A101902 extends FiniteSequence {

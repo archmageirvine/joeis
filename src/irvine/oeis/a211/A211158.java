@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211158 Number of 2 X 2 matrices having all terms in <code>{-n,...,0,..,n}</code> and positive odd determinant.
+ * A211158 Number of <code>2 X 2</code> matrices having all terms in <code>{-n,...,0,..,n}</code> and positive odd determinant.
  * @author Georg Fischer
  */
 public class A211158 extends LinearRecurrence {

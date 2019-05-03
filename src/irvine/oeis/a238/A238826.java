@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238826 <code>a(n) = p(n+3)-p(n+1)</code>, where <code>p(n) =</code> A238825(n).
+ * A238826 <code>a(n) = p(n+3)-p(n+1)</code>, where <code>p(n) = A238825(n)</code>.
  * @author Sean A. Irvine
  */
 public class A238826 extends LinearRecurrence {

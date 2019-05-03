@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A319127 Crossing number of the complete bipartite graph K_{6,n}.
+ * A319127 Crossing number of the complete bipartite graph <code>K_{6,n}</code>.
  * @author Georg Fischer
  */
 public class A319127 extends LinearRecurrence {

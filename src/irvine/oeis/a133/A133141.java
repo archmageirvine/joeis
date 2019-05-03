@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133141 Numbers which are both centered pentagonal (A005891) and centered hexagonal numbers (A003215).
+ * A133141 Numbers which are both centered pentagonal <code>(A005891)</code> and centered hexagonal numbers <code>(A003215)</code>.
  * @author Sean A. Irvine
  */
 public class A133141 extends LinearRecurrence {

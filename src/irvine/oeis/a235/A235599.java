@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A235599 Analog of A235598 if we start with 6.
+ * A235599 Analog of <code>A235598</code> if we start with 6.
  * @author Georg Fischer
  */
 public class A235599 extends FiniteSequence {

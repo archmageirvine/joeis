@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094659 Number of closed walks of length n at a vertex of the cyclic graph on 7 nodes C_7.
+ * A094659 Number of closed walks of length n at a vertex of the cyclic graph on 7 nodes <code>C_7</code>.
  * @author Sean A. Irvine
  */
 public class A094659 extends LinearRecurrence {

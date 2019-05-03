@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053307 Number of nonnegative integer 2 X 2 matrices with sum of elements equal to n, under row and column permutations.
+ * A053307 Number of nonnegative integer <code>2 X 2</code> matrices with sum of elements equal to n, under row and column permutations.
  * @author Sean A. Irvine
  */
 public class A053307 extends LinearRecurrence {

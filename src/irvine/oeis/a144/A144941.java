@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144941 Numbers k such that <code>6*k-1 =</code> A144796(k).
+ * A144941 Numbers k such that <code>6*k-1 = A144796(k)</code>.
  * @author Sean A. Irvine
  */
 public class A144941 extends LinearRecurrence {

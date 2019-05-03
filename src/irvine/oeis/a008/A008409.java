@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008409 Theta series of 16-dimensional Barnes-Wall lattice.
+ * A008409 Theta series of <code>16-dimensional Barnes-Wall</code> lattice.
  * @author Sean A. Irvine
  */
 public class A008409 implements Sequence {

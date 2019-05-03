@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293066 Number of vertices at level n of the hyperbolic Pascal pyramid PP_(4,5). 
+ * A293066 Number of vertices at level n of the hyperbolic Pascal pyramid <code>PP_(4,5)</code>.
  * @author Georg Fischer
  */
 public class A293066 extends LinearRecurrence {

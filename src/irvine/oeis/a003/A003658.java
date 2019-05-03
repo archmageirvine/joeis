@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003658 Fundamental discriminants of real quadratic fields; indices of primitive positive Dirichlet L-series.
+ * A003658 Fundamental discriminants of real quadratic fields; indices of primitive positive Dirichlet <code>L-series</code>.
  * @author Sean A. Irvine
  */
 public class A003658 implements Sequence {

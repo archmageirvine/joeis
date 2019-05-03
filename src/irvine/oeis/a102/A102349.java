@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A102349 Numbers n such that <code>binomial(n+1,2)</code> is in A027568.
+ * A102349 Numbers n such that <code>binomial(n+1,2)</code> is in <code>A027568</code>.
  * @author Georg Fischer
  */
 public class A102349 extends FiniteSequence {

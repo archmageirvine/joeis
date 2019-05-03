@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000658 Strehl's sequence "C_n^(3)".
+ * A000658 Strehl's sequence <code>"C_n^(3)"</code>.
  * @author Sean A. Irvine
  */
 public class A000658 implements Sequence {

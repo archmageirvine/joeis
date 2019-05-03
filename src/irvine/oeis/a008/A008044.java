@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008044 Coordination sequence T2 for Zeolite Code ATV.
+ * A008044 Coordination sequence <code>T2</code> for Zeolite Code ATV.
  * @author Sean A. Irvine
  */
 public class A008044 extends CoordinationSequence {

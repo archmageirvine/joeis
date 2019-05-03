@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096829 Numbers that can appear an infinite number of times in a variation of A097390.
+ * A096829 Numbers that can appear an infinite number of times in a variation of <code>A097390</code>.
  * @author Georg Fischer
  */
 public class A096829 extends FiniteSequence {

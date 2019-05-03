@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000706 Expansion of modular function 1/E_3 (cf. A013973).
+ * A000706 Expansion of modular function <code>1/E_3 (cf. A013973)</code>.
  * @author Sean A. Irvine
  */
 public class A000706 implements Sequence {

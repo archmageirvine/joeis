@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030064 <code>1 +</code> product of <code>any</code> two terms is a square.
+ * A030064 <code>1 +</code> product of any two terms is a square.
  * @author Georg Fischer
  */
 public class A030064 extends FiniteSequence {

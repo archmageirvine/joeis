@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002615 Glaisher's function T_1(n).
+ * A002615 Glaisher's function <code>T_1(n)</code>.
  * @author Sean A. Irvine
  */
 public class A002615 extends A002288 {

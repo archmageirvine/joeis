@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002131 Sum of divisors d of n such that n/d is odd.
+ * A002131 Sum of divisors d of n such that <code>n/d</code> is odd.
  * @author Sean A. Irvine
  */
 public class A002131 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154301 Primes of the form <code>(1+2+</code>...+m)/75 = A000217(m)/75.
+ * A154301 Primes of the form <code>(1+2+...+m)/75 = A000217(m)/75</code>.
  * @author Georg Fischer
  */
 public class A154301 extends FiniteSequence {

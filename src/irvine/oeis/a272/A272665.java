@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A272665 Imaginary parts of <code>b(n)</code> sequence used to define A143056.
+ * A272665 Imaginary parts of <code>b(n)</code> sequence used to define <code>A143056</code>.
  * @author Sean A. Irvine
  */
 public class A272665 extends LinearRecurrence {

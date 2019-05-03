@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182494 Decimal expansion of <code>9091/9901</code>.
+ * A182494 Decimal expansion of 9091/9901.
  * @author Sean A. Irvine
  */
 public class A182494 extends LinearRecurrence {

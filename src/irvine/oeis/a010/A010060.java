@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A010060 Thue-Morse sequence: let A_k denote the first <code>2^k</code> terms; then A_0 <code>= 0</code> and for <code>k &gt;= 0</code>, A_{k+1} = A_k B_k, where B_k is obtained from A_k by interchanging 0's and 1's.
+ * A010060 Thue-Morse sequence: let <code>A_k</code> denote the first <code>2^k</code> terms; then <code>A_0 = 0</code> and for k <code>&gt;= 0, A_{k+1} = A_k B_k</code>, where <code>B_k</code> is obtained from <code>A_k</code> by interchanging <code>0</code>'s and <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A010060 extends MemorySequence {

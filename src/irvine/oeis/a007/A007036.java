@@ -7,7 +7,7 @@ import irvine.math.plantri.PlantriGraphState;
 import irvine.oeis.ParallelPlantriSequence;
 
 /**
- * A007036 Number of 1-supertough but non-1-Hamiltonian simplicial polyhedra with n nodes.
+ * A007036 Number of 1-supertough but <code>non-1-Hamiltonian</code> simplicial polyhedra with n nodes.
  * @author Sean A. Irvine
  */
 public class A007036 extends ParallelPlantriSequence {

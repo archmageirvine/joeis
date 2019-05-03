@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000806;
 
 /**
- * A007060 Number of ways n couples can sit in a row without <code>any</code> spouses next to each other.
+ * A007060 Number of ways n couples can sit in a row without any spouses next to each other.
  * @author Sean A. Irvine
  */
 public class A007060 extends A000806 {

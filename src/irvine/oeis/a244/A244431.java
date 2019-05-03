@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244431 Indices of repeated terms in A001379, the list of degrees of irreducible representations of Monster group M.
+ * A244431 Indices of repeated terms in <code>A001379</code>, the list of degrees of irreducible representations of Monster group M.
  * @author Georg Fischer
  */
 public class A244431 extends FiniteSequence {

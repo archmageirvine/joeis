@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034583 Dimension of an irreducible R-module for Clifford algebra Cl_n.
+ * A034583 Dimension of an irreducible R-module for Clifford algebra <code>Cl_n</code>.
  * @author Sean A. Irvine
  */
 public class A034583 extends LinearRecurrence {

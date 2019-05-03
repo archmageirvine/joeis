@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175673 Number of n-digit terms in A179955.
+ * A175673 Number of n-digit terms in <code>A179955</code>.
  * @author Georg Fischer
  */
 public class A175673 extends FiniteSequence {

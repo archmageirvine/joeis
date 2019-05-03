@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051895 Partial sums of second pentagonal numbers with even index (A049453).
+ * A051895 Partial sums of second pentagonal numbers with even index <code>(A049453)</code>.
  * @author Sean A. Irvine
  */
 public class A051895 extends LinearRecurrence {

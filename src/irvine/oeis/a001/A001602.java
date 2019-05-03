@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001602 Fibonacci entry points: <code>a(n) =</code> smallest m <code>&gt; 0</code> such that the n-th prime divides Fibonacci(m).
+ * A001602 Fibonacci entry points: <code>a(n) =</code> smallest m <code>&gt; 0</code> such that the n-th prime divides <code>Fibonacci(m)</code>.
  * @author Sean A. Irvine
  */
 public class A001602 implements Sequence {

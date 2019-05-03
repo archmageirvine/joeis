@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005773 Number of directed animals of size n (or directed n-ominoes in standard position).
+ * A005773 Number of directed animals of size <code>n (or</code> directed n-ominoes in standard <code>position)</code>.
  * @author Sean A. Irvine
  */
 public class A005773 implements Sequence {

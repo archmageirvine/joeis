@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160865 128*P_11(n), 128 times the Legendre polynomial of order 11 at n.
+ * A160865 <code>128*P_11(n), 128</code> times the Legendre polynomial of order 11 at n.
  * @author Sean A. Irvine
  */
 public class A160865 extends LinearRecurrence {

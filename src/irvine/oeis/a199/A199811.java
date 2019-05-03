@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A199811 Sorted orders of automorphism groups of distinct solutions in the mix of 2 or 3 regular convex 4-polytopes.
+ * A199811 Sorted orders of automorphism groups of distinct solutions in the mix of 2 or 3 regular convex <code>4-polytopes</code>.
  * @author Georg Fischer
  */
 public class A199811 extends FiniteSequence {

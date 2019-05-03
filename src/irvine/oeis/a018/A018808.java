@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A018808 Number of lines through at least 2 points of an n X n grid of points.
+ * A018808 Number of lines through at least 2 points of an <code>n X n</code> grid of points.
  * @author Sean A. Irvine
  */
 public class A018808 extends MemorySequence {

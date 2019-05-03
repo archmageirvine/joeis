@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080960 Third binomial transform of A010685 (period 2: repeat 1,4).
+ * A080960 Third binomial transform of <code>A010685 (period 2</code>: repeat <code>1,4)</code>.
  * @author Sean A. Irvine
  */
 public class A080960 extends LinearRecurrence {

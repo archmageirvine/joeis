@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097654 Numbers n such that n=|d_1!!-d_2!!+...+(-1)^(k-1)*d_k!!| where d_1 d_2 ... d_k is the decimal expansion of n.
+ * A097654 Numbers n such that <code>n=|d_1!!-d_2!!+...+(-1)^(k-1)*d_k!!|</code> where <code>d_1 d_2</code> ... <code>d_k</code> is the decimal expansion of n.
  * @author Georg Fischer
  */
 public class A097654 extends FiniteSequence {

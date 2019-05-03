@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000325 <code>a(n) = 2^n - n</code>.
+ * A000325 <code>a(n) = 2^n -</code> n.
  * @author Sean A. Irvine
  */
 public class A000325 implements Sequence {

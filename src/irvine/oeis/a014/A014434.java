@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.math.z.Z;
 
 /**
- * A014434 Sum[ <code>a[ i ]a[ n-i ],{i,0,n-1} ], a[ 0 ] == 1, a[ 1 ]==5</code>.
+ * A014434 <code>Sum[ a[ i ]a[ n-i ],{i,0,n-1} ], a[ 0 ] == 1, a[ 1 ]==5</code>.
  * @author Sean A. Irvine
  */
 public class A014434 extends A014431 {

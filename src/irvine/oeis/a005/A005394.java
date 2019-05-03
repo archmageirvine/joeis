@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005394 Leading term of Stirling's approximation to <code>n!</code>, sqrt(2*Pi)*n^(n+(1/2))/e^n, rounded to nearest integer.
+ * A005394 Leading term of Stirling's approximation to <code>n!, sqrt(2*Pi)*n^(n+(1/2))/e^n</code>, rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A005394 implements Sequence {

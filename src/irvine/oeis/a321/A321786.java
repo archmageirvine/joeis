@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321786 Decimal expansion of wavelength of the red line of cadmium in dry air at 15 degrees Celsius and 760 mmHg under a gravity of <code>9.8067</code> m/sec^2 in angstrom, which defined the angstrom unit until 1960.
+ * A321786 Decimal expansion of wavelength of the red line of cadmium in dry air at 15 degrees Celsius and 760 mmHg under a gravity of <code>9.8067 m/sec^2</code> in angstrom, which defined the angstrom unit until 1960.
  * @author Georg Fischer
  */
 public class A321786 extends FiniteSequence {

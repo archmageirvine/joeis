@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import irvine.oeis.a001.A001931;
 
 /**
- * A038119 Number of n-celled solid polyominoes (or free polycubes, allowing mirror-image identification).
+ * A038119 Number of n-celled solid polyominoes (or free polycubes, allowing <code>mirror-image identification)</code>.
  * @author Sean A. Irvine
  */
 public class A038119 extends A001931 {

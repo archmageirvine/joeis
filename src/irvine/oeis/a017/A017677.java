@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017677 Numerator of sum of -7th powers of divisors of n.
+ * A017677 Numerator of sum of <code>-7th</code> powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017677 implements Sequence {

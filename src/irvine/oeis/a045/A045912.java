@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045912 Triangle of coefficients of characteristic polynomial of negative Pascal matrix with <code>(i</code>,j)-th entry <code>-C(i+j-2,i-1)</code>.
+ * A045912 Triangle of coefficients of characteristic polynomial of negative Pascal matrix with <code>(i,j)-th</code> entry <code>-C(i+j-2,i-1)</code>.
  * @author Sean A. Irvine
  */
 public class A045912 extends MemoryFunction1<Polynomial<Z>> implements Sequence {

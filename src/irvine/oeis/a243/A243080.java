@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A243080 Number of one-sided n-ominoes on the dodecahedron.
+ * A243080 Number of <code>one-sided n-ominoes</code> on the dodecahedron.
  * @author Georg Fischer
  */
 public class A243080 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A002770 Integers connected with coefficients in expansion of Weierstrass P-function.
+ * A002770 Integers connected with coefficients in expansion of Weierstrass <code>P-function</code>.
  * @author Sean A. Irvine
  */
 public class A002770 extends A002306 {

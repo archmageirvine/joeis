@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000675 Number of centered 3-valent (or boron, or binary) trees with n nodes.
+ * A000675 Number of centered <code>3-valent (or</code> boron, or binary) trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A000675 extends A000672 {

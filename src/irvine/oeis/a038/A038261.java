@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038261 First line of 5-wave sequence A038201, also bisection of A006358.
+ * A038261 First line of 5-wave sequence <code>A038201</code>, also bisection of <code>A006358</code>.
  * @author Sean A. Irvine
  */
 public class A038261 extends LinearRecurrence {

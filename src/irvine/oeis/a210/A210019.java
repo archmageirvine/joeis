@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210019 In base 8, numbers n which have 8 distinct digits, do not start with 0, and have property that the product (written in base 8) of <code>any</code> two adjacent digits is a substring of n.
+ * A210019 In base 8, numbers n which have 8 distinct digits, do not start with 0, and have property that the product (written in base <code>8)</code> of any two adjacent digits is a substring of n.
  * @author Georg Fischer
  */
 public class A210019 extends FiniteSequence {

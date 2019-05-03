@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.math.z.Z;
 
 /**
- * A007246 McKay-Thompson series of class 2B for the Monster group.
+ * A007246 McKay-Thompson series of class <code>2B</code> for the Monster group.
  * @author Sean A. Irvine
  */
 public class A007246 extends A007191 {

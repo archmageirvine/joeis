@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013653 Period of continued fraction for <code>sqrt(n)</code> contains exactly two 1's and they are not consecutive.
+ * A013653 Period of continued fraction for <code>sqrt(n)</code> contains exactly two <code>1</code>'s and they are not consecutive.
  * @author Sean A. Irvine
  */
 public class A013653 implements Sequence {

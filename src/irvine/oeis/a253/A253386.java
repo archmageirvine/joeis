@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A253386 Suffixes of 3991687693967 (left-truncatable prime).
+ * A253386 Suffixes of <code>3991687693967 (left-truncatable prime)</code>.
  * @author Georg Fischer
  */
 public class A253386 extends FiniteSequence {

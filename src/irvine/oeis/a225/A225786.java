@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225786 Numbers k such that <code>oblong(2*k) + oblong(k)</code> is a square, where <code>oblong(k) =</code> A002378(k) <code>= k*(k+1)</code>.
+ * A225786 Numbers k such that <code>oblong(2*k) + oblong(k)</code> is a square, where <code>oblong(k) = A002378(k) = k*(k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A225786 extends LinearRecurrence {

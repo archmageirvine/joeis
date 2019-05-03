@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003290 Number of n-step self-avoiding walks on hexagonal lattice from <code>(0,0)</code> to <code>(0,2)</code>.
+ * A003290 Number of <code>n-step self-avoiding</code> walks on hexagonal lattice from <code>(0,0)</code> to <code>(0,2)</code>.
  * @author Sean A. Irvine
  */
 public class A003290 implements Sequence {

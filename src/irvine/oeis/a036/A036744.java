@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A036744 Penholodigital squares: squares containing each of the digits <code>1..9</code> exactly once.
+ * A036744 Penholodigital squares: squares containing each of the digits 1..9 exactly once.
  * @author Georg Fischer
  */
 public class A036744 extends FiniteSequence {

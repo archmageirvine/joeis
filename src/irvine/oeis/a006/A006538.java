@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A006538 Worst cases for Pierce expansions (denominators).
+ * A006538 Worst cases for Pierce expansions <code>(denominators)</code>.
  * @author Sean A. Irvine
  */
 public class A006538 implements Sequence {

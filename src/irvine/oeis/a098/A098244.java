@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098244 First differences of Chebyshev polynomials <code>S(n</code>,171)=A097844(n) with Diophantine property.
+ * A098244 First differences of Chebyshev polynomials <code>S(n,171)=A097844(n)</code> with Diophantine property.
  * @author Sean A. Irvine
  */
 public class A098244 extends LinearRecurrence {

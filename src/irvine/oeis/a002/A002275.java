@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002275 Repunits: <code>(10^n - 1)/9</code>. Often denoted by R_n.
+ * A002275 Repunits: <code>(10^n - 1)/9</code>. Often denoted by <code>R_n</code>.
  * @author Sean A. Irvine
  */
 public class A002275 implements Sequence {

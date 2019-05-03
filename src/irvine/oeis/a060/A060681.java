@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060681 Largest difference between consecutive divisors of n (ordered by size).
+ * A060681 Largest difference between consecutive divisors of <code>n (ordered</code> by <code>size)</code>.
  * @author Sean A. Irvine
  */
 public class A060681 implements Sequence {

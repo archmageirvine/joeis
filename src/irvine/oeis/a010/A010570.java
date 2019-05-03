@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.math.z.Z;
 
 /**
- * A010570 2n-step 6-dimensional closed paths on 6-d cubic lattice.
+ * A010570 <code>2n-step 6-dimensional</code> closed paths on 6-d cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010570 extends A010577 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A003047 <code>a(n) = Catalan(n) *</code> Product <code>a(k), k = 0 . . n-1</code>.
+ * A003047 <code>a(n) = Catalan(n) *</code> Product <code>a(k), k = 0</code> . . <code>n-1</code>.
  * @author Sean A. Irvine
  */
 public class A003047 extends A000108 {

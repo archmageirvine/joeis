@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321984 Decimal expansion of number of kilograms (kg) in 1 international avoirdupois ounce (oz).
+ * A321984 Decimal expansion of number of kilograms (kg) in 1 international avoirdupois ounce <code>(oz)</code>.
  * @author Georg Fischer
  */
 public class A321984 extends FiniteSequence {

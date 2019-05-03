@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014425 From table of maximal epacts e(p) and corresponding primes p, for x_0=2, x_{m+1} = (x_m)^2-1; sequence gives e(p).
+ * A014425 From table of maximal epacts <code>e(p)</code> and corresponding primes p, for <code>x_0=2, x_{m+1} = (x_m)^2-1</code>; sequence gives <code>e(p)</code>.
  * @author Sean A. Irvine
  */
 public class A014425 implements Sequence {

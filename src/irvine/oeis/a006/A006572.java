@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a111.A111999;
 
 /**
- * A006572 Numerators of an asymptotic expansion for the number of forests on n nodes (A001858).
+ * A006572 Numerators of an asymptotic expansion for the number of forests on n nodes <code>(A001858)</code>.
  * @author Sean A. Irvine
  */
 public class A006572 extends A111999 {

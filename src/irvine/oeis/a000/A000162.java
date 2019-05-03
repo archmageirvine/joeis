@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import irvine.oeis.a001.A001931;
 
 /**
- * A000162 Number of 3-dimensional polyominoes (or polycubes) with n cells.
+ * A000162 Number of 3-dimensional polyominoes <code>(or polycubes)</code> with n cells.
  * @author Sean A. Irvine
  */
 public class A000162 extends A001931 {

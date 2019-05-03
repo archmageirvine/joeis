@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A001500 Number of stochastic matrices of integers: n X n arrays of nonnegative integers with all row and column sums equal to 3.
+ * A001500 Number of stochastic matrices of integers: <code>n X n</code> arrays of nonnegative integers with all row and column sums equal to 3.
  * @author Sean A. Irvine
  */
 public class A001500 implements Sequence {

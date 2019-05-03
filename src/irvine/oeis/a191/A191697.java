@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191697 <code>a(n) =</code> r1^n + r2^n + r3^n where r1, r2, r3 are the three roots of <code>x^3 - 2*x - 2 = 0</code>.
+ * A191697 <code>a(n) = r1^n + r2^n + r3^n</code> where <code>r1, r2, r3</code> are the three roots of <code>x^3 - 2*x - 2 = 0</code>.
  * @author Sean A. Irvine
  */
 public class A191697 extends LinearRecurrence {

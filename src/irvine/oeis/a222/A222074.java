@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A222074 Decimal expansion of (1/1920)*Pi^5.
+ * A222074 Decimal expansion of <code>(1/1920)*Pi^5</code>.
  * @author Sean A. Irvine
  */
 public class A222074 extends DecimalExpansionSequence {

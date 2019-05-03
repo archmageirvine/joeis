@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212965 Number of (w,x,y) with all terms in <code>{0,...,n}</code> and w=range{w,x,y}.
+ * A212965 Number of <code>(w,x,y)</code> with all terms in <code>{0,...,n}</code> and <code>w=range{w,x,y}</code>.
  * @author Sean A. Irvine
  */
 public class A212965 extends LinearRecurrence {

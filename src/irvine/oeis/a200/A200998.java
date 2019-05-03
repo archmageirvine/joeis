@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200998 Triangular numbers, T(m), that are three-quarters of another triangular number: T(m) such that 4*T(m)=3*T(k) for some k.
+ * A200998 Triangular numbers, <code>T(m)</code>, that are three-quarters of another triangular number: <code>T(m)</code> such that <code>4*T(m)=3*T(k)</code> for some k.
  * @author Sean A. Irvine
  */
 public class A200998 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065599 If n odd, <code>a(n) = n^2</code> else <code>a(n) = n</code>.
+ * A065599 If n odd, <code>a(n) = n^2</code> else <code>a(n) =</code> n.
  * @author Sean A. Irvine
  */
 public class A065599 extends LinearRecurrence {

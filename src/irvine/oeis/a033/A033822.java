@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033822 Numbers of fixed points of elements of group M24.
+ * A033822 Numbers of fixed points of elements of group <code>M24</code>.
  * @author Georg Fischer
  */
 public class A033822 extends FiniteSequence {

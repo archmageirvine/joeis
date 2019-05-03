@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254872 Seventh partial sums of sixth powers (A001014).
+ * A254872 Seventh partial sums of sixth powers <code>(A001014)</code>.
  * @author Sean A. Irvine
  */
 public class A254872 extends LinearRecurrence {

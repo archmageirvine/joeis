@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085787 Generalized heptagonal numbers: m*(5*m <code>- 3)/2</code>, m <code>= 0, +-1, +-2 +-3, </code>...
+ * A085787 Generalized heptagonal numbers: <code>m*(5*m - 3)/2, m = 0, +-1, +-2 +-3</code>, ...
  * @author Sean A. Irvine
  */
 public class A085787 extends LinearRecurrence {

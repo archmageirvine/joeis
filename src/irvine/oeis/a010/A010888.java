@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A010888 Digital root of n (repeatedly add the digits of n until a single digit is reached).
+ * A010888 Digital root of <code>n (repeatedly</code> add the digits of n until a single digit is <code>reached)</code>.
  * @author Sean A. Irvine
  */
 public class A010888 extends PrependSequence {

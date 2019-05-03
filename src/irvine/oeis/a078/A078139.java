@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078139 Primes which cannot be written as sum of squares&gt;1.
+ * A078139 Primes which cannot be written as sum of <code>squares&gt;1</code>.
  * @author Georg Fischer
  */
 public class A078139 extends FiniteSequence {

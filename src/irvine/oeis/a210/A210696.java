@@ -9,7 +9,7 @@ import irvine.math.LongUtils;
 
 
 /**
- * A210696 Triangulations of the disk, G_{1,n}.
+ * A210696 Triangulations of the disk, <code>G_{1,n}</code>.
  * @author Sean A. Irvine
  */
 public class A210696 implements Sequence {

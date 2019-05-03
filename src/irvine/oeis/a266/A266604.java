@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A266604 Integers whose writing includes only the vowel "e" <code>(in</code> French).
+ * A266604 Integers whose writing includes only the vowel "e" <code>(in French)</code>.
  * @author Georg Fischer
  */
 public class A266604 extends FiniteSequence {

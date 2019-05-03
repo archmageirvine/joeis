@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003798 Order of simple Chevalley group A_n <code>(8)</code>.
+ * A003798 Order of simple Chevalley group <code>A_n (8)</code>.
  * @author Sean A. Irvine
  */
 public class A003798 extends A003793 {

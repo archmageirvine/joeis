@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008867 Triangle of truncated triangular numbers: k-th term in n-th row is number of dots in hexagon of sides <code>k, n-k, k, n-k, k, n-k</code>.
+ * A008867 Triangle of truncated triangular numbers: k-th term in n-th row is number of dots in hexagon of sides k, <code>n-k</code>, k, <code>n-k</code>, k, <code>n-k</code>.
  * @author Sean A. Irvine
  */
 public class A008867 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017686 Denominator of sum of -11th powers of divisors of n.
+ * A017686 Denominator of sum of <code>-11th</code> powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017686 implements Sequence {

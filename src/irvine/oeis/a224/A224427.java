@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224427 The Wiener index of the dendrimer NS[n], defined pictorially in the A. R. Ashrafi et al. reference.
+ * A224427 The Wiener index of the dendrimer <code>NS[n]</code>, defined pictorially in the A. R. Ashrafi et al. reference.
  * @author Sean A. Irvine
  */
 public class A224427 extends LinearRecurrence {

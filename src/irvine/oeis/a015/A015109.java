@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015109 Triangle of Gaussian (or q-binomial) coefficients for q=-2.
+ * A015109 Triangle of Gaussian <code>(or q-binomial)</code> coefficients for <code>q=-2</code>.
  * @author Sean A. Irvine
  */
 public class A015109 implements Sequence {

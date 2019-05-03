@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114620 2*A084158 (twice Pell triangles). 
+ * A114620 <code>2*A084158 (twice</code> Pell <code>triangles)</code>.
  * @author Georg Fischer
  */
 public class A114620 extends LinearRecurrence {

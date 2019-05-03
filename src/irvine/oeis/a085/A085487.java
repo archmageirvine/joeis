@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085487 <code>a(n) =</code> p^n + q^n, p <code>= (1 + sqrt(21))/2</code>, q <code>= (1 - sqrt(21))/2</code>.
+ * A085487 <code>a(n) = p^n + q^n, p = (1 + sqrt(21))/2, q = (1 - sqrt(21))/2</code>.
  * @author Sean A. Irvine
  */
 public class A085487 extends LinearRecurrence {

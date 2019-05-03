@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A002882 Nearest integer to Bernoulli number B_{2n}.
+ * A002882 Nearest integer to Bernoulli number <code>B_{2n}</code>.
  * @author Sean A. Irvine
  */
 public class A002882 implements Sequence {

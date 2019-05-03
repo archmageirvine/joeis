@@ -3,7 +3,7 @@ package irvine.oeis.a170;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A170934 <code>a(n) = b(n) + b(n+1) + 2</code>, where <code>b() =</code> A000930().
+ * A170934 <code>a(n) = b(n) + b(n+1) + 2</code>, where <code>b() = A000930()</code>.
  * @author Sean A. Irvine
  */
 public class A170934 extends LinearRecurrence {

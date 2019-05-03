@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278615 Sum of terms in level n of TRIP <code>- </code> Stern sequence associated with permutation triple (e,13,23).
+ * A278615 Sum of terms in level n of TRIP - Stern sequence associated with permutation triple <code>(e,13,23)</code>.
  * @author Georg Fischer
  */
 public class A278615 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030050 Numbers from the Conway-Schneeberger 15-theorem.
+ * A030050 Numbers from the <code>Conway-Schneeberger 15-theorem</code>.
  * @author Georg Fischer
  */
 public class A030050 extends FiniteSequence {

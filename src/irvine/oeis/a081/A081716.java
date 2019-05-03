@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A081716 Smallest number x such that phi(x)=A000010(x) has exactly n different decimal digits.
+ * A081716 Smallest number x such that <code>phi(x)=A000010(x)</code> has exactly n different decimal digits.
  * @author Georg Fischer
  */
 public class A081716 extends FiniteSequence {

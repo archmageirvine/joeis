@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A063524 Characteristic function of 1. 
+ * A063524 Characteristic function of 1.
  * @author Georg Fischer
  */
 public class A063524 extends LinearRecurrence {

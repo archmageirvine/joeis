@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213816 Tribonacci sequences A000073 and A001590 interleaved.
+ * A213816 Tribonacci sequences <code>A000073</code> and <code>A001590</code> interleaved.
  * @author Sean A. Irvine
  */
 public class A213816 extends LinearRecurrence {

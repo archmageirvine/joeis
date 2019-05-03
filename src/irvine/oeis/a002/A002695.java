@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 
 
 /**
- * A002695 P_n'(3), where P_n is n-th Legendre polynomial.
+ * A002695 <code>P_n'(3)</code>, where <code>P_n</code> is n-th Legendre polynomial.
  * @author Sean A. Irvine
  */
 public class A002695 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226649 Fibonacci shuffles: <code>a(2n) =</code> A000071(n) and <code>a(2n+1) =</code> A001611(n+2).
+ * A226649 Fibonacci shuffles: <code>a(2n) = A000071(n)</code> and <code>a(2n+1) = A001611(n+2)</code>.
  * @author Sean A. Irvine
  */
 public class A226649 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A222069 Decimal expansion of (1/30)*2^(1/2)*Pi^2.
+ * A222069 Decimal expansion of <code>(1/30)*2^(1/2)*Pi^2</code>.
  * @author Sean A. Irvine
  */
 public class A222069 extends DecimalExpansionSequence {

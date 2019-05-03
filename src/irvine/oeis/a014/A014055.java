@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014055 Inverse of 46th cyclotomic polynomial.
+ * A014055 Inverse of <code>46th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014055 extends PeriodicSequence {

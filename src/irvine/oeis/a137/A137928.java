@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137928 The even principal diagonal of <code>a 2n</code> X <code>2n</code> square spiral.
+ * A137928 The even principal diagonal of a <code>2n X 2n</code> square spiral.
  * @author Sean A. Irvine
  */
 public class A137928 extends LinearRecurrence {

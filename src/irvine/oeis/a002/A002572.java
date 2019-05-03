@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 
 
 /**
- * A002572 Number of partitions of 1 into n powers of <code>1/2</code>; or (according to one definition of "binary") the number of binary rooted trees.
+ * A002572 Number of partitions of 1 into n powers of 1/2; or (according to one definition of <code>"binary")</code> the number of binary rooted trees.
  * @author Sean A. Irvine
  */
 public class A002572 implements Sequence {

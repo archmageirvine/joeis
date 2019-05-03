@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242026 Number of non-palindromic n-tuples of 4 distinct elements.
+ * A242026 Number of <code>non-palindromic n-tuples</code> of 4 distinct elements.
  * @author Sean A. Irvine
  */
 public class A242026 extends LinearRecurrence {

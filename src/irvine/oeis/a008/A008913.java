@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A008913 Order of simple Chevalley group F_4(q), q = prime power.
+ * A008913 Order of simple Chevalley group <code>F_4(q), q =</code> prime power.
  * @author Sean A. Irvine
  */
 public class A008913 extends A000961 {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014487 Weight distribution of <code>[ 18,9,8 ]</code> self-dual code over <code>GF(4)</code>.
+ * A014487 Weight distribution of <code>[ 18,9,8 ] self-dual</code> code over <code>GF(4)</code>.
  * @author Sean A. Irvine
  */
 public class A014487 extends FiniteSequence {

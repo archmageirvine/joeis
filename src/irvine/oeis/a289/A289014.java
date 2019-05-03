@@ -5,7 +5,7 @@ import irvine.nt.homeprime.ReverseHomePrime;
 import irvine.oeis.Sequence;
 
 /**
- * A289014 Number of integers containing n in their base-10 home prime trajectory.
+ * A289014 Number of integers containing n in their <code>base-10</code> home prime trajectory.
  * @author Sean A. Irvine
  */
 public class A289014 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A119259 Central terms of the triangle in A119258.
+ * A119259 Central terms of the triangle in <code>A119258</code>.
  * @author Sean A. Irvine
  */
 public class A119259 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a002.A002024;
 
 /**
- * A004797 Convolution of A002024 with itself.
+ * A004797 Convolution of <code>A002024</code> with itself.
  * @author Sean A. Irvine
  */
 public class A004797 extends ConvolutionSequence {

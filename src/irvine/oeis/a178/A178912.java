@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178912 Number of generalized mountain numbers (see A134853) with n digits.
+ * A178912 Number of generalized mountain numbers <code>(see A134853)</code> with n digits.
  * @author Georg Fischer
  */
 public class A178912 extends FiniteSequence {

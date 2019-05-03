@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.math.z.Z;
 
 /**
- * A019446 <code>a(n) =</code> ceiling(n/tau), where tau <code>= (1+sqrt(5))/2</code>.
+ * A019446 <code>a(n) = ceiling(n/tau)</code>, where tau <code>= (1+sqrt(5))/2</code>.
  * @author Sean A. Irvine
  */
 public class A019446 extends A019445 {

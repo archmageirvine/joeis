@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003636;
 
 /**
- * A006641 Class number of forms with discriminant -A003657(n), or equivalently class number of imaginary quadratic field with discriminant -A003657(n).
+ * A006641 Class number of forms with discriminant <code>-A003657(n)</code>, or equivalently class number of imaginary quadratic field with discriminant <code>-A003657(n)</code>.
  * @author Sean A. Irvine
  */
 public class A006641 implements Sequence {

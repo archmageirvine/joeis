@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A003271 Smallest number that requires n iterations of the unitary totient function (A047994) to reach 1.
+ * A003271 Smallest number that requires n iterations of the unitary totient function <code>(A047994)</code> to reach 1.
  * @author Sean A. Irvine
  */
 public class A003271 implements Sequence {

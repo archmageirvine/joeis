@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228609 Partial sums of the cubes of the tribonacci sequence A000073.
+ * A228609 Partial sums of the cubes of the tribonacci sequence <code>A000073</code>.
  * @author Sean A. Irvine
  */
 public class A228609 extends LinearRecurrence {

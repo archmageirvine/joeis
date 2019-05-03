@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093900 First column of triangle A093899.
+ * A093900 First column of triangle <code>A093899</code>.
  * @author Georg Fischer
  */
 public class A093900 extends FiniteSequence {

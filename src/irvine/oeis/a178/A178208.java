@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178208 Number of ways to choose three points in an <code>(n</code> X n)-grid (or geoplane).
+ * A178208 Number of ways to choose three points in an <code>(n X n)-grid (or geoplane)</code>.
  * @author Sean A. Irvine
  */
 public class A178208 extends LinearRecurrence {

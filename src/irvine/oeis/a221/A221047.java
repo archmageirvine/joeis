@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A221047 The hyper-Wiener index of the Bethe cactus lattice graph E_n defined pictorially in the Hosoya - Balasubramanian reference.
+ * A221047 The hyper-Wiener index of the Bethe cactus lattice graph <code>E_n</code> defined pictorially in the Hosoya - Balasubramanian reference.
  * @author Sean A. Irvine
  */
 public class A221047 extends LinearRecurrence {

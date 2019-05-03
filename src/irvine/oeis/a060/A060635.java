@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060635 <code>a(n)</code> is the number of 2 X 1 domino tilings of the set S in the plane R^2 consisting of the union of the following two rectangles: rectangle1: <code>|x| &lt;= n, |y| &lt;= 1</code>, rectangle2: <code>|x| &lt;= 1, |y| &lt;= n</code>.
+ * A060635 <code>a(n)</code> is the number of <code>2 X 1</code> domino tilings of the set S in the plane <code>R^2</code> consisting of the union of the following two rectangles: <code>rectangle1: |x| &lt;=</code> n, <code>|y| &lt;= 1, rectangle2: |x| &lt;= 1, |y| &lt;=</code> n.
  * @author Sean A. Irvine
  */
 public class A060635 extends LinearRecurrence {

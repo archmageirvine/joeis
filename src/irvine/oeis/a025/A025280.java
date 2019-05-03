@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005245;
 
 /**
- * A025280 Complexity of n: number of 1's required to build n using <code>+, *</code> and ^.
+ * A025280 Complexity of n: number of <code>1</code>'s required to build n using <code>+, *</code> and <code>^</code>.
  * @author Sean A. Irvine
  */
 public class A025280 extends A005245 {

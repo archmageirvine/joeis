@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289120 <code>a(n)</code> is the number of odd integers divisible by <code>7 in ]2*(n-1)^2, 2*n^2[</code>.
+ * A289120 <code>a(n)</code> is the number of odd integers divisible by 7 in <code>]2*(n-1)^2, 2*n^2[</code>.
  * @author Sean A. Irvine
  */
 public class A289120 extends LinearRecurrence {

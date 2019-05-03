@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004051;
 
 /**
- * A007644 Primes not of form <code>| 3^a +- 2^b |</code> where <code>a, b</code> are nonnegative integers.
+ * A007644 Primes not of form <code>| 3^a +- 2^b |</code> where a, b are nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A007644 extends A007643 {

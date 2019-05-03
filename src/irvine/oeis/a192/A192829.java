@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192829 Molecular topological indices of the n X n X n grid graphs.
+ * A192829 Molecular topological indices of the <code>n X n X n</code> grid graphs.
  * @author Sean A. Irvine
  */
 public class A192829 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A307672.
+ * A307672 allocated for Bradley Klee.
  * @author Sean A. Irvine
  */
 public class A307672 implements Sequence {

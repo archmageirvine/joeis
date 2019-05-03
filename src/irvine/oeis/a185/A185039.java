@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185039 Numbers of the form 9*m^2 + 4*m, m an integer.
+ * A185039 Numbers of the form <code>9*m^2 + 4*m</code>, m an integer.
  * @author Sean A. Irvine
  */
 public class A185039 extends LinearRecurrence {

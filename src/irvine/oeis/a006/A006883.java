@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006883 Long period primes: the decimal expansion of 1/p has period p-1.
+ * A006883 Long period primes: the decimal expansion of <code>1/p</code> has period <code>p-1</code>.
  * @author Sean A. Irvine
  */
 public class A006883 implements Sequence {

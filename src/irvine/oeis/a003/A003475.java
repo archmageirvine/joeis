@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A003475 Expansion of <code>Sum_{k&gt;0} (-1)^k</code> q^(k^2) / ((1-q)(1-q^3)(1-q^5)...(1-q^(2k-1))).
+ * A003475 Expansion of <code>Sum_{k&gt;0} (-1)^k q^(k^2) / ((1-q)(1-q^3)(1-q^5)...(1-q^(2k-1)))</code>.
  * @author Sean A. Irvine
  */
 public class A003475 implements Sequence {

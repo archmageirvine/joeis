@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145695 Numbers X such that there exists Y in N with X^2=111*Y^2+37.
+ * A145695 Numbers X such that there exists Y in N with <code>X^2=111*Y^2+37</code>.
  * @author Sean A. Irvine
  */
 public class A145695 extends LinearRecurrence {

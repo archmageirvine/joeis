@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009879 Coordination sequence T5 for Zeolite Code DFO.
+ * A009879 Coordination sequence <code>T5</code> for Zeolite Code DFO.
  * @author Sean A. Irvine
  */
 public class A009879 extends CoordinationSequence {

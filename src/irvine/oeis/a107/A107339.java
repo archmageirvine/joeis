@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107339 Longest sequence of n-digit n-almost primes formed by beginning with a single-digit prime and appending a single decimal digit to each previous term.
+ * A107339 Longest sequence of <code>n-digit n-almost</code> primes formed by beginning with a single-digit prime and appending a single decimal digit to each previous term.
  * @author Georg Fischer
  */
 public class A107339 extends FiniteSequence {

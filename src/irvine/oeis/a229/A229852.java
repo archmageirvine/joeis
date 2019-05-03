@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229852 3*h^2, where h is an odd integer not divisible by 3.
+ * A229852 <code>3*h^2</code>, where h is an odd integer not divisible by 3.
  * @author Sean A. Irvine
  */
 public class A229852 extends LinearRecurrence {

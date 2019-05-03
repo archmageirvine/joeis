@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033507 Number of matchings in graph P_{4} X P_{n}.
+ * A033507 Number of matchings in graph <code>P_{4} X P_{n}</code>.
  * @author Sean A. Irvine
  */
 public class A033507 extends LinearRecurrence {

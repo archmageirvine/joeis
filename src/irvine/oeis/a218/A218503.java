@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218503 q-factorial numbers 5!_q.
+ * A218503 q-factorial numbers <code>5!_q</code>.
  * @author Sean A. Irvine
  */
 public class A218503 extends LinearRecurrence {

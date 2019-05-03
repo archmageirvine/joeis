@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133216 Integers that are simultaneously triangular (A000217) and decagonal (A001107).
+ * A133216 Integers that are simultaneously triangular <code>(A000217)</code> and decagonal <code>(A001107)</code>.
  * @author Georg Fischer
  */
 public class A133216 extends LinearRecurrence {

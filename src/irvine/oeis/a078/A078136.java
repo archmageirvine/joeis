@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078136 Numbers having exactly one representation as sum of squares&gt;1.
+ * A078136 Numbers having exactly one representation as sum of <code>squares&gt;1</code>.
  * @author Georg Fischer
  */
 public class A078136 extends FiniteSequence {

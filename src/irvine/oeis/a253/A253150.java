@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253150 Number of perfect matchings in the P_5 X C_{2n} graph.
+ * A253150 Number of perfect matchings in the <code>P_5 X C_{2n}</code> graph.
  * @author Sean A. Irvine
  */
 public class A253150 extends LinearRecurrence {

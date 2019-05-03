@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100187 Structured octagonal anti-diamond numbers (vertex structure 7).
+ * A100187 Structured octagonal anti-diamond numbers (vertex structure <code>7)</code>.
  * @author Sean A. Irvine
  */
 public class A100187 extends LinearRecurrence {

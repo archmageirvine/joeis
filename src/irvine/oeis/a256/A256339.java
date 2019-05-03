@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A256339 Distinct-digit primes that are concatenation of prime(m) and m for some m.
+ * A256339 Distinct-digit primes that are concatenation of <code>prime(m)</code> and m for some m.
  * @author Georg Fischer
  */
 public class A256339 extends FiniteSequence {

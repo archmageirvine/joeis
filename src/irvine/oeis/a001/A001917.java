@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001917 (p-1)/x, where p <code>= prime(n)</code> and <code>x = ord(2</code>,p), the smallest positive integer such that <code>2^x == 1 mod</code> p.
+ * A001917 <code>(p-1)/x</code>, where p <code>= prime(n)</code> and <code>x = ord(2,p)</code>, the smallest positive integer such that <code>2^x == 1 mod</code> p.
  * @author Sean A. Irvine
  */
 public class A001917 implements Sequence {

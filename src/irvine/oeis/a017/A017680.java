@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017680 Denominator of sum of -8th powers of divisors of n.
+ * A017680 Denominator of sum of <code>-8th</code> powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017680 implements Sequence {

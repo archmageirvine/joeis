@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A039720 Period of n-countdown club-passing juggling pattern.
+ * A039720 Period of <code>n-countdown club-passing</code> juggling pattern.
  * @author Sean A. Irvine
  */
 public class A039720 extends LinearRecurrence {

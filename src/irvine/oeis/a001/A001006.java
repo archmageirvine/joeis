@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001006 Motzkin numbers: number of ways of drawing <code>any</code> number of nonintersecting chords joining n (labeled) points on a circle.
+ * A001006 Motzkin numbers: number of ways of drawing any number of nonintersecting chords joining <code>n (labeled)</code> points on a circle.
  * @author Sean A. Irvine
  */
 public class A001006 implements Sequence {

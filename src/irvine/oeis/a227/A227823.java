@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227823 Numbers n with property that each sum of <code>any</code> k-subsequence of digits of n with <code>k&gt;=2</code> is prime.
+ * A227823 Numbers n with property that each sum of any k-subsequence of digits of n with <code>k&gt;=2</code> is prime.
  * @author Georg Fischer
  */
 public class A227823 extends FiniteSequence {

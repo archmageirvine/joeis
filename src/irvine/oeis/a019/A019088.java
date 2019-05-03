@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019088 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite CAS = Cesium Aluminosilicate (Araki) Cs4[ Al4Si20O48 ].
+ * A019088 Cycle class sequence <code>c(n) (the</code> number of true cycles of length n in which a certain node is included) for zeolite CAS = Cesium Aluminosilicate <code>(Araki) Cs4[ Al4Si20O48 ]</code>.
  * @author Sean A. Irvine
  */
 public class A019088 extends A018940 {

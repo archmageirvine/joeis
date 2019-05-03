@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008058 Coordination sequence T1 for Zeolite Code BRE.
+ * A008058 Coordination sequence <code>T1</code> for Zeolite Code BRE.
  * @author Sean A. Irvine
  */
 public class A008058 extends CoordinationSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122686 List of numbers that are not the Wiener index of <code>any</code> tree.
+ * A122686 List of numbers that are not the Wiener index of any tree.
  * @author Georg Fischer
  */
 public class A122686 extends FiniteSequence {

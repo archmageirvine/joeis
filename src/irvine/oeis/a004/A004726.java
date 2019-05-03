@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004726 Delete all 7's from the sequence of nonnegative integers.
+ * A004726 Delete all <code>7</code>'s from the sequence of nonnegative integers.
  * @author Sean A. Irvine
  */
 public class A004726 implements Sequence {

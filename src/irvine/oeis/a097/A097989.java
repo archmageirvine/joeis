@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097989 Numbers n such that n=tau_3(n)=A007425(n).
+ * A097989 Numbers n such that <code>n=tau_3(n)=A007425(n)</code>.
  * @author Georg Fischer
  */
 public class A097989 extends FiniteSequence {

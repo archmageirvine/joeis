@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A301198 Coordination sequence T4 for Zeolite Code SFO.
+ * A301198 Coordination sequence <code>T4</code> for Zeolite Code SFO.
  * @author Sean A. Irvine
  */
 public class A301198 extends CoordinationSequence {

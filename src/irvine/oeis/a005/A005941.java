@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005941 Inverse of the Doudna sequence A005940.
+ * A005941 Inverse of the Doudna sequence <code>A005940</code>.
  * @author Sean A. Irvine
  */
 public class A005941 extends MemoryFunction2<Z, Z> implements Sequence {

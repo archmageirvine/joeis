@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284970 Number of elements of order n in the unitary group U3(8).
+ * A284970 Number of elements of order n in the unitary group <code>U3(8)</code>.
  * @author Sean A. Irvine
  */
 public class A284970 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a232;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A232393 Michael Stifel's 4 X 4 multiplication magic square read by rows.
+ * A232393 Michael Stifel's <code>4 X 4</code> multiplication magic square read by rows.
  * @author Georg Fischer
  */
 public class A232393 extends FiniteSequence {

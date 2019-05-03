@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A183032 Seconds (rounded down) at which the minute hand overlaps with hour hand on the analog clock.
+ * A183032 Seconds <code>(rounded down)</code> at which the minute hand overlaps with hour hand on the analog clock.
  * @author Georg Fischer
  */
 public class A183032 extends FiniteSequence {

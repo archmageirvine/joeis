@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007696 Quartic (or 4-fold) factorial numbers: <code>a(n) = Product_{k=0..n-1} (4*k + 1)</code>.
+ * A007696 Quartic <code>(or 4-fold)</code> factorial numbers: <code>a(n) = Product_{k=0..n-1} (4*k + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A007696 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005573 Number of walks on cubic lattice (starting from origin and not going below <code>xy</code> plane).
+ * A005573 Number of walks on cubic lattice (starting from origin and not going below xy <code>plane)</code>.
  * @author Sean A. Irvine
  */
 public class A005573 implements Sequence {

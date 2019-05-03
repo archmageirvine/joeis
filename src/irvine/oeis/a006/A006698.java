@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006698 <code>T(2,2n)</code>, where <code>T(k</code>,m) is the number of sequences a_1,...,a_m of integers <code>0,1,...,n</code> with n=floor(m/k) such that the 'bumped' sequence b_1,...,b_m has exactly k of each of <code>0,...,n-1</code>, where b_i=a_i <code>+ j (mod n+1)</code> with minimal <code>j&gt;=0</code> such that b_0,...,b_i contain at most k elements equal to b_i.
+ * A006698 <code>T(2,2n)</code>, where <code>T(k,m)</code> is the number of sequences <code>a_1,...,a_m</code> of integers <code>0,1,...,n</code> with <code>n=floor(m/k)</code> such that the 'bumped' sequence <code>b_1,...,b_m</code> has exactly k of each of <code>0,...,n-1</code>, where <code>b_i=a_i + j (mod n+1)</code> with minimal <code>j&gt;=0</code> such that <code>b_0,...,b_i</code> contain at most k elements equal to <code>b_i</code>.
  * @author Sean A. Irvine
  */
 public class A006698 extends MemoryFunction2<Long, Z> implements Sequence {

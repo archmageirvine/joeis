@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099447 An Alexander sequence for the knot 6_3. 
+ * A099447 An Alexander sequence for the knot <code>6_3</code>.
  * @author Georg Fischer
  */
 public class A099447 extends LinearRecurrence {

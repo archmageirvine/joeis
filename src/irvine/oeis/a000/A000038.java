@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000038 Twice A000007.
+ * A000038 Twice <code>A000007</code>.
  * @author Sean A. Irvine
  */
 public class A000038 implements Sequence {

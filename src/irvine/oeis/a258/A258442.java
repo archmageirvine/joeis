@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258442 9-gonal numbers (A001106) that are the sum of eight consecutive 9-gonal numbers.
+ * A258442 9-gonal numbers <code>(A001106)</code> that are the sum of eight consecutive 9-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A258442 extends LinearRecurrence {

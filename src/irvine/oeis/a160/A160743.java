@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160743 8*P_7(n), 8 times the Legendre Polynomial of order 7 at n.
+ * A160743 <code>8*P_7(n), 8</code> times the Legendre Polynomial of order 7 at n.
  * @author Sean A. Irvine
  */
 public class A160743 extends LinearRecurrence {

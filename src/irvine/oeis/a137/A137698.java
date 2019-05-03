@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A137698 <code>a(1)=2. a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> that is not in sequence A137699. A137699(n) = the smallest integer &gt; A137698(n) and not coprime to A137698(n). (A137699(n) = A137698(n) + smallest prime dividing A137698(n).).
+ * A137698 <code>a(1)=2. a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> that is not in sequence <code>A137699. A137699(n) =</code> the smallest integer <code>&gt; A137698(n)</code> and not coprime to <code>A137698(n). (A137699(n) = A137698(n) +</code> smallest prime dividing <code>A137698(n).)</code>.
  * @author Sean A. Irvine
  */
 public class A137698 implements Sequence {

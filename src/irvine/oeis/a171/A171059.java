@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171059 <code>a(n)</code> is the lexically first sequence of distinct nonzero integers such that if <code>S(n)</code> is the string formed from the digits of <code>a(1)a(2)...a(n)</code>, then dividing <code>S(n)</code> into substrings with lengths equal to the successive digits of <code>S(n)</code> (treating 0 as 10) results in substrings beginning with the successive digits of Pi (A000796).
+ * A171059 <code>a(n)</code> is the lexically first sequence of distinct nonzero integers such that if <code>S(n)</code> is the string formed from the digits of <code>a(1)a(2)...a(n)</code>, then dividing <code>S(n)</code> into substrings with lengths equal to the successive digits of <code>S(n) (treating 0</code> as <code>10)</code> results in substrings beginning with the successive digits of <code>Pi (A000796)</code>.
  * @author Georg Fischer
  */
 public class A171059 extends FiniteSequence {

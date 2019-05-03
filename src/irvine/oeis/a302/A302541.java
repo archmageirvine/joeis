@@ -3,7 +3,7 @@ package irvine.oeis.a302;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A302541 The simple continued fraction for <code>1/0.45359237</code> (approximately <code>2.20462262)</code>, which is the number of pounds per kilogram.
+ * A302541 The simple continued fraction for <code>1/0.45359237 (approximately 2.20462262)</code>, which is the number of pounds per kilogram.
  * @author Georg Fischer
  */
 public class A302541 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104707 Triangle read by rows distributing the 1602 multinomials described by A005651(6) related to Young tableau and Kostka numbers.
+ * A104707 Triangle read by rows distributing the 1602 multinomials described by <code>A005651(6)</code> related to Young tableau and Kostka numbers.
  * @author Georg Fischer
  */
 public class A104707 extends FiniteSequence {

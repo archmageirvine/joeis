@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005747 Number of n-covers of a 6-set.
+ * A005747 Number of n-covers of a <code>6-set</code>.
  * @author Sean A. Irvine
  */
 public class A005747 implements Sequence {

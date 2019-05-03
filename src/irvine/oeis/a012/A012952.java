@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012952 <code>cos(tan(x)+arcsin(x))=1-4/2!*x^2-8/4!*x^4+26/6!*x^6+4008/8!*x^8</code>...
+ * A012952 <code>cos(tan(x)+arcsin(x))=1-4/2!*x^2-8/4!*x^4+26/6!*x^6+4008/8!*x^8..</code>.
  * @author Sean A. Irvine
  */
 public class A012952 implements Sequence {

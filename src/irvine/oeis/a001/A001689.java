@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001689 5th forward differences of factorial numbers A000142.
+ * A001689 5th forward differences of factorial numbers <code>A000142</code>.
  * @author Sean A. Irvine
  */
 public class A001689 implements Sequence {

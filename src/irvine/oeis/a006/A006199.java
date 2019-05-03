@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000806;
 
 /**
- * A006199 Bessel polynomial {y_n}'(-1).
+ * A006199 Bessel polynomial <code>{y_n}'(-1)</code>.
  * @author Sean A. Irvine
  */
 public class A006199 extends A000806 {

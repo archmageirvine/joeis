@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248094 The hyper-Wiener index of the hexagonal triangle T_n, defined in the He et al. reference.
+ * A248094 The hyper-Wiener index of the hexagonal triangle <code>T_n</code>, defined in the He et al. reference.
  * @author Sean A. Irvine
  */
 public class A248094 extends LinearRecurrence {

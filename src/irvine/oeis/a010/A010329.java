@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010329 Expressible as C(m,3) <code>+ C(n,3)</code> in at least 3 ways.
+ * A010329 Expressible as <code>C(m,3) + C(n,3)</code> in at least 3 ways.
  * @author Sean A. Irvine
  */
 public class A010329 implements Sequence {

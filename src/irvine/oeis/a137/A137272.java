@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137272 Number of 1D random walks with 8 steps where the median of the positions is n.
+ * A137272 Number of <code>1D</code> random walks with 8 steps where the median of the positions is n.
  * @author Georg Fischer
  */
 public class A137272 extends FiniteSequence {

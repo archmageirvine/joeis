@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002314 Minimal integer square root of <code>-1</code> modulo p, where p is the n-th prime of the form <code>4k+1</code>.
+ * A002314 Minimal integer square root of -1 modulo p, where p is the n-th prime of the form <code>4k+1</code>.
  * @author Sean A. Irvine
  */
 public class A002314 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ComplementSequence;
 
 /**
- * A003259 Complement of A003258.
+ * A003259 Complement of <code>A003258</code>.
  * @author Sean A. Irvine
  */
 public class A003259 extends ComplementSequence {

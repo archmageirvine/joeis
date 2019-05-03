@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A019298 Number of balls in pyramid with base either a regular hexagon or a hexagon with alternate sides differing by 1 (balls in hexagonal pyramid of height n taken from hexagonal close-packing).
+ * A019298 Number of balls in pyramid with base either a regular hexagon or a hexagon with alternate sides differing by <code>1 (balls</code> in hexagonal pyramid of height n taken from hexagonal <code>close-packing)</code>.
  * @author Sean A. Irvine
  */
 public class A019298 extends LinearRecurrence {

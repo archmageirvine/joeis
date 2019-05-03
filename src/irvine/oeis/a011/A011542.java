@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A011542 Minimal number of coins needed to pay n cents using coins of sizes 1, 5, 10, 25, 50 cents.
+ * A011542 Minimal number of coins needed to pay n cents using coins of sizes <code>1, 5, 10, 25, 50</code> cents.
  * @author Sean A. Irvine
  */
 public class A011542 extends LinearRecurrence {

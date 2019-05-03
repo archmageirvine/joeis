@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A159911 Prime times: primes of the form HMM with primes H, MM, 0&lt;H&lt;24, 0&lt;MM&lt;60.
+ * A159911 Prime times: primes of the form HMM with primes H, MM, <code>0&lt;H&lt;24, 0&lt;MM&lt;60</code>.
  * @author Georg Fischer
  */
 public class A159911 extends FiniteSequence {

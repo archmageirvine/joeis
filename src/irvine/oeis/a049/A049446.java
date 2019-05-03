@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049446 Pandigital sums associated with A049442.
+ * A049446 Pandigital sums associated with <code>A049442</code>.
  * @author Georg Fischer
  */
 public class A049446 extends FiniteSequence {

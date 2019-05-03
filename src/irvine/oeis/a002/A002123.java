@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002123 <code>a(1) = 0, a(2) = 0</code>; for <code>n &gt; 2, a(n) - a(n-3) - a(n-5) - ... -</code> a(n-p) <code>= n</code> if n is prime, otherwise <code>= 0</code>, where p = largest prime <code>&lt; n</code>.
+ * A002123 <code>a(1) = 0, a(2) = 0</code>; for <code>n &gt; 2, a(n) - a(n-3) - a(n-5) -</code> ... <code>- a(n-p) = n</code> if n is prime, otherwise <code>= 0</code>, where p = largest prime <code>&lt</code>; n.
  * @author Sean A. Irvine
  */
 public class A002123 extends MemorySequence {

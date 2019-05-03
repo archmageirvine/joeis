@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000296 Set partitions without singletons: number of partitions of an n-set into blocks of size <code>&gt; 1</code>. Also number of cyclically spaced (or feasible) partitions.
+ * A000296 Set partitions without singletons: number of partitions of an n-set into blocks of size <code>&gt; 1</code>. Also number of cyclically spaced <code>(or feasible)</code> partitions.
  * @author Sean A. Irvine
  */
 public class A000296 extends A000110 {

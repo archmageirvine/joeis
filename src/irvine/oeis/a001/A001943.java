@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001943 Expansion of reciprocal of theta series of E_8 lattice.
+ * A001943 Expansion of reciprocal of theta series of <code>E_8</code> lattice.
  * @author Sean A. Irvine
  */
 public class A001943 implements Sequence {

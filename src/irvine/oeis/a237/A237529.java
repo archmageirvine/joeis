@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237529 Number of ways to choose 4 points in an <code>n</code> X n X n triangular grid so that no 3 of them form <code>a 2</code> X 2 X 2 subtriangle.
+ * A237529 Number of ways to choose 4 points in an <code>n X n X n</code> triangular grid so that no 3 of them form a <code>2 X 2 X 2</code> subtriangle.
  * @author Sean A. Irvine
  */
 public class A237529 extends LinearRecurrence {

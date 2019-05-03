@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280056 Number of 2 X 2 matrices with entries in <code>{0,1,...,n}</code> and even trace with no entries repeated.
+ * A280056 Number of <code>2 X 2</code> matrices with entries in <code>{0,1,...,n}</code> and even trace with no entries repeated.
  * @author Sean A. Irvine
  */
 public class A280056 extends LinearRecurrence {

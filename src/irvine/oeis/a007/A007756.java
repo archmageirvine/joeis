@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007756 Number of irreducible indecomposable spherical curves with n crossings (only ordinary double points), the circle is oriented, the sphere is not oriented (OU case).
+ * A007756 Number of irreducible indecomposable spherical curves with n crossings (only ordinary double <code>points)</code>, the circle is oriented, the sphere is not oriented <code>(OU case)</code>.
  * @author Sean A. Irvine
  */
 public class A007756 implements Sequence {

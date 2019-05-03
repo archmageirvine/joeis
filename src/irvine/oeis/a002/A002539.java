@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.math.z.Z;
 
 /**
- * A002539 Eulerian numbers of the second kind: <code>&lt;&lt;n+3, n&gt;&gt</code>;.
+ * A002539 Eulerian numbers of the second kind: <code>&lt;&lt;n+3</code>, n&gt;&gt;.
  * @author Sean A. Irvine
  */
 public class A002539 extends A002538 {

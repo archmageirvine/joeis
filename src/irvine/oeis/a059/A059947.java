@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059947 Number of 6-block bicoverings of an n-set.
+ * A059947 Number of 6-block bicoverings of an <code>n-set</code>.
  * @author Sean A. Irvine
  */
 public class A059947 extends LinearRecurrence {

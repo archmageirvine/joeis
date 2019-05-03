@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166514 Zig-zag function for first two columns of a matrix (take numbers in consecutive pairs).
+ * A166514 Zig-zag function for first two columns of a matrix (take numbers in consecutive <code>pairs)</code>.
  * @author Sean A. Irvine
  */
 public class A166514 extends LinearRecurrence {

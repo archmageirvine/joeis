@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A241171 Triangle read by rows: Joffe's central differences of zero, <code>T(n,k), 1 &lt;= k &lt;= n</code>.
+ * A241171 Triangle read by rows: Joffe's central differences of zero, <code>T(n,k), 1 &lt;= k &lt;=</code> n.
  * @author Sean A. Irvine
  */
 public class A241171 implements Sequence {

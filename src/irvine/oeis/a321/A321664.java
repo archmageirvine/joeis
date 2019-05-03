@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A321664 A sequence consisting of three disjoint copies of the Fibonacci sequence, one shifted, with the property that for <code>any</code> four consecutive terms the maximum term is the sum of the two minimum terms.
+ * A321664 A sequence consisting of three disjoint copies of the Fibonacci sequence, one shifted, with the property that for any four consecutive terms the maximum term is the sum of the two minimum terms.
  * @author Georg Fischer
  */
 public class A321664 extends LinearRecurrence {

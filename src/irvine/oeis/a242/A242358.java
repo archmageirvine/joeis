@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242358 Number of inequivalent <code>(mod</code> D_4) ways five checkers can be placed on an n X n board.
+ * A242358 Number of inequivalent <code>(mod D_4)</code> ways five checkers can be placed on an <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A242358 extends LinearRecurrence {

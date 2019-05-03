@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079675 <code>a(1)=1</code>; a(n)=sum(u=1,n-1,sum(v=1,u,sum(w=1,v,sum(x=1, w,sum(y=1,x,a(y)))))).
+ * A079675 <code>a(1)=1; a(n)=sum(u=1,n-1,sum(v=1,u,sum(w=1,v,sum(x=1, w,sum(y=1,x,a(y))))))</code>.
  * @author Georg Fischer
  */
 public class A079675 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000702 <code>a(n) =</code> number of conjugacy classes in the alternating group A_n.
+ * A000702 <code>a(n) =</code> number of conjugacy classes in the alternating group <code>A_n</code>.
  * @author Sean A. Irvine
  */
 public class A000702 extends A000700 {

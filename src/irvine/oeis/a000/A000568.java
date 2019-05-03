@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A000568 Number of outcomes of unlabeled n-team round-robin tournaments.
+ * A000568 Number of outcomes of unlabeled <code>n-team round-robin</code> tournaments.
  * @author Sean A. Irvine
  */
 public class A000568 implements Sequence {

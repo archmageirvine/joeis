@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A006782 Number of polygons of length <code>4n</code> on L-lattice.
+ * A006782 Number of polygons of length <code>4n</code> on <code>L-lattice</code>.
  * @author Sean A. Irvine
  */
 public class A006782 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a162.A162663;
 
 /**
- * A002872 Number of partitions of <code>{1..2n}</code> that are invariant under a permutation consisting of n 2-cycles.
+ * A002872 Number of partitions of <code>{1..2n}</code> that are invariant under a permutation consisting of <code>n 2-cycles</code>.
  * @author Sean A. Irvine
  */
 public class A002872 extends A162663 {

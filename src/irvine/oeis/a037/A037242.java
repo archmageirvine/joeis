@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A037242 Molien series for 3-D group R2+R3.
+ * A037242 Molien series for 3-D group <code>R2+R3</code>.
  * @author Sean A. Irvine
  */
 public class A037242 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a187;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A187773 Discriminants of norm-Euclidean complex cubic fields (negated).
+ * A187773 Discriminants of norm-Euclidean complex cubic fields <code>(negated)</code>.
  * @author Georg Fischer
  */
 public class A187773 extends FiniteSequence {

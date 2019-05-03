@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A018232 Consider pairs <code>(k</code>,m) such that <code>k^2</code> begins with <code>a 1</code> and when the 1 is changed to <code>a 2</code> we again get a square, m^2; sequence gives values of m for primitive solutions.
+ * A018232 Consider pairs <code>(k,m)</code> such that <code>k^2</code> begins with a 1 and when the 1 is changed to a 2 we again get a square, <code>m^2</code>; sequence gives values of m for primitive solutions.
  * @author Sean A. Irvine
  */
 public class A018232 implements Sequence {

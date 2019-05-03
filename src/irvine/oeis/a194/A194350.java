@@ -3,7 +3,7 @@ package irvine.oeis.a194;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A194350 Numbers covering A000027: <code>a(n)=(1, 1, 2, 5) *</code> A011557(n)).
+ * A194350 Numbers covering <code>A000027: a(n)=(1, 1, 2, 5) * A011557(n))</code>.
  * @author Sean A. Irvine
  */
 public class A194350 extends LinearRecurrence {

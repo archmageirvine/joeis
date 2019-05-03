@@ -4,7 +4,7 @@ import irvine.math.group.Janko2;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A284888 Number of elements of order n in the Janko group J_2.
+ * A284888 Number of elements of order n in the Janko group <code>J_2</code>.
  * @author Sean A. Irvine
  */
 public class A284888 extends OrdersFiniteGroupSequence {

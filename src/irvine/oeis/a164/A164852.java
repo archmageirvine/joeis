@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164852 Diagonal sum of generalized Lucas-Pascal triangle;(11*10^n,1).
+ * A164852 Diagonal sum of generalized <code>Lucas-Pascal triangle;(11*10^n,1)</code>.
  * @author Sean A. Irvine
  */
 public class A164852 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092093 Back and Forth Summant <code>S(n</code>, _5): <code>a(n) = sum_{i = 0..floor(2n/5)} n-5i</code>.
+ * A092093 Back and Forth Summant <code>S(n, _5): a(n) = sum_{i = 0..floor(2n/5)} n-5i</code>.
  * @author Sean A. Irvine
  */
 public class A092093 extends LinearRecurrence {

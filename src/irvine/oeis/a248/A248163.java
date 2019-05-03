@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248163 Chebyshev's S polynomials (A049310) evaluated at <code>34/3</code> and multiplied by powers of 3 (A000244).
+ * A248163 Chebyshev's S polynomials <code>(A049310)</code> evaluated at 34/3 and multiplied by powers of <code>3 (A000244)</code>.
  * @author Sean A. Irvine
  */
 public class A248163 extends LinearRecurrence {

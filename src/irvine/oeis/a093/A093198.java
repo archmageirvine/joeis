@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093198 Number of 4 X 4 symmetric magic squares with line sum <code>2n</code>.
+ * A093198 Number of <code>4 X 4</code> symmetric magic squares with line sum <code>2n</code>.
  * @author Georg Fischer
  */
 public class A093198 extends LinearRecurrence {

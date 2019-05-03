@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117143 Number of partitions of n in which <code>any</code> two parts differ by at most 3.
+ * A117143 Number of partitions of n in which any two parts differ by at most 3.
  * @author Sean A. Irvine
  */
 public class A117143 extends LinearRecurrence {

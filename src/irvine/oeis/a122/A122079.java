@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122079 Kissing numbers (divided by 2) of 8-dimensional perfect lattices.
+ * A122079 Kissing numbers (divided by <code>2)</code> of 8-dimensional perfect lattices.
  * @author Georg Fischer
  */
 public class A122079 extends FiniteSequence {

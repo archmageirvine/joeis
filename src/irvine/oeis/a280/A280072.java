@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280072 Indices of centered 11-gonal numbers (A060544) that are also 11-gonal numbers (A051682).
+ * A280072 Indices of centered 11-gonal numbers <code>(A060544)</code> that are also 11-gonal numbers <code>(A051682)</code>.
  * @author Sean A. Irvine
  */
 public class A280072 extends LinearRecurrence {

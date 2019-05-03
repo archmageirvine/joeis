@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244352 <code>Pell(n)^3 - Pell(n)^2</code>, where <code>Pell(n)</code> is the n-th Pell number (A000129).
+ * A244352 <code>Pell(n)^3 - Pell(n)^2</code>, where <code>Pell(n)</code> is the n-th Pell number <code>(A000129)</code>.
  * @author Sean A. Irvine
  */
 public class A244352 extends LinearRecurrence {

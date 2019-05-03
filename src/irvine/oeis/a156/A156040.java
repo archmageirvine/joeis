@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156040 Number of compositions (ordered partitions) of n into 3 parts (some of which may be zero), where the first is at least as great as each of the others.
+ * A156040 Number of compositions <code>(ordered partitions)</code> of n into 3 parts (some of which may be <code>zero)</code>, where the first is at least as great as each of the others.
  * @author Sean A. Irvine
  */
 public class A156040 extends LinearRecurrence {

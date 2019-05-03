@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119407 Number of nonempty subsets of <code>{1,2,...,n}</code> with no gap of length greater than <code>4 (a</code> set S has a gap of length d if a and b are in S but no x with <code>a&lt;x&lt;b</code> is in S, where b-a=d).
+ * A119407 Number of nonempty subsets of <code>{1,2,...,n}</code> with no gap of length greater than <code>4 (a</code> set S has a gap of length d if a and b are in S but no x with a&lt;x&lt;b is in S, where <code>b-a=d)</code>.
  * @author Sean A. Irvine
  */
 public class A119407 extends LinearRecurrence {

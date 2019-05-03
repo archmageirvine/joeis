@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271998 Volatile sequence: <code>a(n) =</code> A018227(n)-6.
+ * A271998 Volatile sequence: <code>a(n) = A018227(n)-6</code>.
  * @author Sean A. Irvine
  */
 public class A271998 extends LinearRecurrence {

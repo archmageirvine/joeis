@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124722 Number of ternary Lyndon words with exactly four 1's.
+ * A124722 Number of ternary Lyndon words with exactly four <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A124722 extends LinearRecurrence {

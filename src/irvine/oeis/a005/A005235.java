@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A005235 Fortunate numbers: least m <code>&gt; 1</code> such that m <code>+ prime(n)#</code> is prime, where p# denotes the product of all primes <code>&lt;=</code> p.
+ * A005235 Fortunate numbers: least m <code>&gt; 1</code> such that m <code>+ prime(n)#</code> is prime, where <code>p#</code> denotes the product of all primes <code>&lt;=</code> p.
  * @author Sean A. Irvine
  */
 public class A005235 extends A002110 {

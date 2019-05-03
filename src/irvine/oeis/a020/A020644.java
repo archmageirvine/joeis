@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A020644 a(n)-th nonsquarefree is sum of first k nonsquarefrees for some k.
+ * A020644 <code>a(n)-th</code> nonsquarefree is sum of first k nonsquarefrees for some k.
  * @author Sean A. Irvine
  */
 public class A020644 implements Sequence {

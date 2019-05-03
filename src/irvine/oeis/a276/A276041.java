@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276041 Exponential convolution of odd numbers (A005408) with themselves.
+ * A276041 Exponential convolution of odd numbers <code>(A005408)</code> with themselves.
  * @author Sean A. Irvine
  */
 public class A276041 extends LinearRecurrence {

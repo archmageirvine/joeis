@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A269920 Triangle read by rows: <code>T(n</code>,f) is the number of rooted maps with n edges and f faces on an orientable surface of genus 0.
+ * A269920 Triangle read by rows: <code>T(n,f)</code> is the number of rooted maps with n edges and f faces on an orientable surface of genus 0.
  * @author Sean A. Irvine
  */
 public class A269920 extends MemoryFunction3<Integer, Z> implements Sequence {

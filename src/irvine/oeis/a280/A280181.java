@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A280181 Indices of centered 9-gonal numbers (A060544) that are also squares (A000290).
+ * A280181 Indices of centered 9-gonal numbers <code>(A060544)</code> that are also squares <code>(A000290)</code>.
  * @author Sean A. Irvine
  */
 public class A280181 extends LinearRecurrence {

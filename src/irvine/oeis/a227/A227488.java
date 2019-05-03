@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227488 The Wiener index of the nanostar dendrimer NSC_5C_6[n], defined pictorially in the Ashrafi et al. and the Rostami et al. references.
+ * A227488 The Wiener index of the nanostar dendrimer <code>NSC_5C_6[n]</code>, defined pictorially in the Ashrafi et al. and the Rostami et al. references.
  * @author Sean A. Irvine
  */
 public class A227488 extends LinearRecurrence {

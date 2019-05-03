@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A146763 Rank of terms ending in 0 in A061039.
+ * A146763 Rank of terms ending in 0 in <code>A061039</code>.
  * @author Sean A. Irvine
  */
 public class A146763 extends LinearRecurrence {

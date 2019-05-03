@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127216 <code>a(n) = 2^n*tetranacci(n)</code> or (2^n)*A001648(n).
+ * A127216 <code>a(n) = 2^n*tetranacci(n)</code> or <code>(2^n)*A001648(n)</code>.
  * @author Sean A. Irvine
  */
 public class A127216 extends LinearRecurrence {

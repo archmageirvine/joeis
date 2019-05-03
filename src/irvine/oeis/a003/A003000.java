@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A003000 Number of bifix-free (or primary, or unbordered) words of length n over a two-letter alphabet.
+ * A003000 Number of <code>bifix-free (or</code> primary, or unbordered) words of length n over a two-letter alphabet.
  * @author Sean A. Irvine
  */
 public class A003000 extends MemorySequence {

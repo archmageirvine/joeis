@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017702 Denominator of sum of -19th powers of divisors of n.
+ * A017702 Denominator of sum of <code>-19th</code> powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017702 implements Sequence {

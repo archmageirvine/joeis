@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115599 Consider all Pythagorean triples (X,X+1,Z) ordered by increasing Z; sequence gives Z-X values.
+ * A115599 Consider all Pythagorean triples <code>(X,X+1,Z)</code> ordered by increasing Z; sequence gives Z-X values.
  * @author Sean A. Irvine
  */
 public class A115599 extends LinearRecurrence {

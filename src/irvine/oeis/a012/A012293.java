@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012293 Expansion of e.g.f. <code>sec(sin(x)*exp(x))=1+1/2!*x^2+6/3!*x^3+25/4!*x^4+140/5!*x^5</code>...
+ * A012293 Expansion of e.g.f. <code>sec(sin(x)*exp(x))=1+1/2!*x^2+6/3!*x^3+25/4!*x^4+140/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A012293 implements Sequence {

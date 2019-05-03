@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289801 p-INVERT of the tetrahedral numbers (A000292), where p(S) <code>= 1 -</code> S - S^2.
+ * A289801 p-INVERT of the tetrahedral numbers <code>(A000292)</code>, where <code>p(S) = 1 - S - S^2</code>.
  * @author Sean A. Irvine
  */
 public class A289801 extends LinearRecurrence {

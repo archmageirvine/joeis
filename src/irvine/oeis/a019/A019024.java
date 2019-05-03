@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019024 Cycle class sequence <code>c(2n)</code> (the number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite KFI = ZK-5 Na30 [ Al30Si66O192 <code>] . 98</code> H2O.
+ * A019024 Cycle class sequence <code>c(2n) (the</code> number of true cycles of length <code>2n</code> in which a certain node is included) for zeolite KFI <code>= ZK-5 Na30 [ Al30Si66O192 ] . 98 H2O</code>.
  * @author Sean A. Irvine
  */
 public class A019024 extends A018940 {

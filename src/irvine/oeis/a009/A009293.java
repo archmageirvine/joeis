@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A009293 If <code>a, b</code> in sequence, so is <code>a*b+1</code>.
+ * A009293 If a, b in sequence, so is <code>a*b+1</code>.
  * @author Sean A. Irvine
  */
 public class A009293 extends MemorySequence {

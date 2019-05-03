@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001358 Semiprimes (or biprimes): products of two primes.
+ * A001358 Semiprimes <code>(or biprimes)</code>: products of two primes.
  * @author Sean A. Irvine
  */
 public class A001358 implements Sequence {

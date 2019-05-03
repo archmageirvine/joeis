@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085821 Smallest prime &gt; A085820(n) ending with A085820(n).
+ * A085821 Smallest prime <code>&gt; A085820(n)</code> ending with <code>A085820(n)</code>.
  * @author Georg Fischer
  */
 public class A085821 extends FiniteSequence {

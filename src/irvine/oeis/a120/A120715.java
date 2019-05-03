@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120715 Sequence produced by 14 X 14 Markov chain based on 14-vertex graph formed from direct product of two copies of the graph used in A120714.
+ * A120715 Sequence produced by <code>14 X 14</code> Markov chain based on 14-vertex graph formed from direct product of two copies of the graph used in <code>A120714</code>.
  * @author Sean A. Irvine
  */
 public class A120715 extends LinearRecurrence {

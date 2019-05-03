@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002965 Interleave denominators (A000129) and numerators (A001333) of convergents to <code>sqrt(2)</code>.
+ * A002965 Interleave denominators <code>(A000129)</code> and numerators <code>(A001333)</code> of convergents to <code>sqrt(2)</code>.
  * @author Sean A. Irvine
  */
 public class A002965 extends LinearRecurrence {

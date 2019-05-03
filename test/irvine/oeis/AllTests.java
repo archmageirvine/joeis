@@ -21,6 +21,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(InverseEulerTransformSequenceTest.class);
     suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);
+    suite.addTestSuite(NamesTest.class);
     suite.addTest(irvine.oeis.a000.AllTests.suite());
     suite.addTest(irvine.oeis.a001.AllTests.suite());
     suite.addTest(irvine.oeis.a002.AllTests.suite());

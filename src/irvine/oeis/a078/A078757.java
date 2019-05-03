@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078757 Values of A028470(n)/A000045(n+1).
+ * A078757 Values of <code>A028470(n)/A000045(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A078757 extends LinearRecurrence {

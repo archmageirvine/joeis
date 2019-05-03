@@ -3,7 +3,7 @@ package irvine.oeis.a155;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A155754 A variation on <code>10^n mod</code> 19.
+ * A155754 A variation on <code>10^n mod 19</code>.
  * @author Sean A. Irvine
  */
 public class A155754 extends LinearRecurrence {

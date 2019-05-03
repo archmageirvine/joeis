@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127889 Smallest n-digit right-truncatable prime.
+ * A127889 Smallest <code>n-digit right-truncatable</code> prime.
  * @author Georg Fischer
  */
 public class A127889 extends FiniteSequence {

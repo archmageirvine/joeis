@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059302 A diagonal of A008296.
+ * A059302 A diagonal of <code>A008296</code>.
  * @author Sean A. Irvine
  */
 public class A059302 extends LinearRecurrence {

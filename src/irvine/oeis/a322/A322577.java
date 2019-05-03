@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322577 Decimal expansion of the Boltzmann constant k in the 2019 SI system in units J/K.
+ * A322577 Decimal expansion of the Boltzmann constant k in the 2019 SI system in units <code>J/K</code>.
  * @author Georg Fischer
  */
 public class A322577 extends FiniteSequence {

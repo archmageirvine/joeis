@@ -16,7 +16,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007888 Euler characteristic of mapping class group Gamma_n.
+ * A007888 Euler characteristic of mapping class group <code>Gamma_n</code>.
  * @author Sean A. Irvine
  */
 public class A007888 implements Sequence {

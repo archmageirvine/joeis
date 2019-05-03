@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A230434 Magic numbers of nucleons. Another version of A018226, with 34 inserted.
+ * A230434 Magic numbers of nucleons. Another version of <code>A018226</code>, with 34 inserted.
  * @author Georg Fischer
  */
 public class A230434 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001168;
 import irvine.oeis.a001.A001931;
 
 /**
- * A006763 Number of fixed properly-3-dimensional polyominoes with n cells.
+ * A006763 Number of fixed <code>properly-3-dimensional</code> polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006763 extends A001931 {

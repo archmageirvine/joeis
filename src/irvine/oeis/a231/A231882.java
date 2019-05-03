@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A231882 Number of maximal 2-independent sets in the planar 3 X n grid graph.
+ * A231882 Number of maximal 2-independent sets in the planar <code>3 X n</code> grid graph.
  * @author Georg Fischer
  */
 public class A231882 extends LinearRecurrence {

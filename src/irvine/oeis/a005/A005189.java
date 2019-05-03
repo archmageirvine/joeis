@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005189 Number of n-term 2-sided generalized Fibonacci sequences.
+ * A005189 Number of <code>n-term 2-sided</code> generalized Fibonacci sequences.
  * @author Sean A. Irvine
  */
 public class A005189 implements Sequence {

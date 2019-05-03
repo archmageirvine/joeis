@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162940 Binomial[n <code>+ 1, 2]*6^2 </code>.
+ * A162940 <code>Binomial[n + 1, 2]*6^2 </code>.
  * @author Sean A. Irvine
  */
 public class A162940 extends LinearRecurrence {

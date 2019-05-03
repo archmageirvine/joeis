@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003751 Number of spanning trees in K_5 x P_n.
+ * A003751 Number of spanning trees in <code>K_5 x P_n</code>.
  * @author Sean A. Irvine
  */
 public class A003751 extends LinearRecurrence {

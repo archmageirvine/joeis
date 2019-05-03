@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245031 Numbers m such that 3*m+1 and 8*m+1 are both squares.
+ * A245031 Numbers m such that <code>3*m+1</code> and <code>8*m+1</code> are both squares.
  * @author Sean A. Irvine
  */
 public class A245031 extends LinearRecurrence {

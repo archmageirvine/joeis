@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014389 Inverse of 380th cyclotomic polynomial.
+ * A014389 Inverse of <code>380th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014389 extends PeriodicSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A015047 Numbers n such that <code>S(n) = S(n-1) + S(n-2)</code> where S is the Kempner function A002034.
+ * A015047 Numbers n such that <code>S(n) = S(n-1) + S(n-2)</code> where S is the Kempner function <code>A002034</code>.
  * @author Sean A. Irvine
  */
 public class A015047 extends A002034 {

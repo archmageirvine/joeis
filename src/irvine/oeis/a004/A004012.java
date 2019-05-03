@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004012 Theta series of hexagonal close-packing.
+ * A004012 Theta series of hexagonal <code>close-packing</code>.
  * @author Sean A. Irvine
  */
 public class A004012 implements Sequence {

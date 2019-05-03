@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060869 Number of n X n matrices over <code>GF(4)</code> with rank 1.
+ * A060869 Number of <code>n X n</code> matrices over <code>GF(4)</code> with rank 1.
  * @author Sean A. Irvine
  */
 public class A060869 extends LinearRecurrence {

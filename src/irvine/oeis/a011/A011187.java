@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A011187 Number of ways to choose <code>2^n</code> vectors in <code>{0, 1, 2, 3}^n</code> such that <code>any</code> two differ by at least 2 in at least one coordinate <code>(2^n</code> being maximal).
+ * A011187 Number of ways to choose <code>2^n</code> vectors in <code>{0, 1, 2, 3}^n</code> such that any two differ by at least 2 in at least one coordinate <code>(2^n</code> being <code>maximal)</code>.
  * @author Sean A. Irvine
  */
 public class A011187 implements Sequence {

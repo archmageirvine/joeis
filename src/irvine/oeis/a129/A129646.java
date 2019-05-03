@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.math.z.Z;
 
 /**
- * A129646 Concatenated list of the positive divisors of the terms of sequence A129645.
+ * A129646 Concatenated list of the positive divisors of the terms of sequence <code>A129645</code>.
  * @author Sean A. Irvine
  */
 public class A129646 extends A129645 {

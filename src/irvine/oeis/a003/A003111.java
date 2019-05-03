@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003111 Number of complete mappings of the cyclic group Z_{2n+1}.
+ * A003111 Number of complete mappings of the cyclic group <code>Z_{2n+1}</code>.
  * @author Sean A. Irvine
  */
 public class A003111 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001160 sigma_5(n), the sum of the 5th powers of the divisors of n.
+ * A001160 <code>sigma_5(n)</code>, the sum of the 5th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A001160 implements Sequence {

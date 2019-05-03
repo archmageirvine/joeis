@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078868 Decimal concatenations of the quadruples (d1,d2,d3,d4) with elements in <code>{2,4,6}</code> for which there exists a prime p <code>&gt;= 5</code> such that the differences between the 5 consecutive primes starting with p are (d1,d2,d3,d4).
+ * A078868 Decimal concatenations of the quadruples <code>(d1,d2,d3,d4)</code> with elements in <code>{2,4,6}</code> for which there exists a prime p <code>&gt;= 5</code> such that the differences between the 5 consecutive primes starting with p are <code>(d1,d2,d3,d4)</code>.
  * @author Georg Fischer
  */
 public class A078868 extends FiniteSequence {

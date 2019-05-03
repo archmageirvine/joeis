@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A052025 Every prefix (or suffix) of palindromic prime <code>a(n)</code> is prime (right/left-truncatable).
+ * A052025 Every prefix <code>(or suffix)</code> of palindromic prime <code>a(n)</code> is prime <code>(right/left-truncatable)</code>.
  * @author Georg Fischer
  */
 public class A052025 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000360 Distribution of nonempty triangles inside a fractal rep-4-tile.
+ * A000360 Distribution of nonempty triangles inside a fractal <code>rep-4-tile</code>.
  * @author Sean A. Irvine
  */
 public class A000360 implements Sequence {

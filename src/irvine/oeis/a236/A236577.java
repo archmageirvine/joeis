@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A236577 The number of tilings of <code>a 6</code> X n floor with 1 X 3 trominoes.
+ * A236577 The number of tilings of a <code>6 X n</code> floor with <code>1 X 3</code> trominoes.
  * @author Sean A. Irvine
  */
 public class A236577 extends LinearRecurrence {

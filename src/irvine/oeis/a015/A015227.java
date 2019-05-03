@@ -4,7 +4,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A015227 Inverse of 1218th cyclotomic polynomial.
+ * A015227 Inverse of <code>1218th</code> cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A015227 extends PeriodicSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013319 E.g.f.: <code>cosh(exp(x)-cos(x))=1+1/2!*x^2+6/3!*x^3+17/4!*x^4+40/5!*x^5</code>...
+ * A013319 E.g.f.: <code>cosh(exp(x)-cos(x))=1+1/2!*x^2+6/3!*x^3+17/4!*x^4+40/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A013319 implements Sequence {

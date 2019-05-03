@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007603 Power-sum numbers: let <code>n =</code> a_1 a_2 ... a_k be a k-digit number; n is a power-sum number if there are exponents e_1 ... e_m such that <code>n = Sum_{i=1</code>..m} <code>Sum_{j=1..k}</code> a_j^e_i.
+ * A007603 Power-sum numbers: let <code>n = a_1 a_2</code> ... <code>a_k</code> be a k-digit number; n is a power-sum number if there are exponents <code>e_1</code> ... <code>e_m</code> such that <code>n = Sum_{i=1..m} Sum_{j=1..k} a_j^e_i</code>.
  * @author Sean A. Irvine
  */
 public class A007603 implements Sequence {

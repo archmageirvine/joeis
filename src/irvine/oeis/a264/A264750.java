@@ -3,7 +3,7 @@ package irvine.oeis.a264;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A264750 Number of sequences of 5 throws of an n-sided die (with faces numbered <code>1, 2, ..., n)</code> in which the sum of the throws first reaches or exceeds n on the 5th throw.
+ * A264750 Number of sequences of 5 throws of an n-sided die (with faces numbered <code>1, 2</code>, ..., n) in which the sum of the throws first reaches or exceeds n on the 5th throw.
  * @author Sean A. Irvine
  */
 public class A264750 extends LinearRecurrence {

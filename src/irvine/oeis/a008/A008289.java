@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008289 Triangle read by rows: <code>Q(n</code>,m) = number of partitions of n into m distinct parts, <code>n&gt;=1</code>, m&gt;=1.
+ * A008289 Triangle read by rows: <code>Q(n,m) =</code> number of partitions of n into m distinct parts, <code>n&gt;=1, m&gt;=1</code>.
  * @author Sean A. Irvine
  */
 public class A008289 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007341 Number of spanning trees in n X n grid.
+ * A007341 Number of spanning trees in <code>n X n</code> grid.
  * @author Sean A. Irvine
  */
 public class A007341 implements Sequence {

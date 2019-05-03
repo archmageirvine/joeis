@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001742 Numbers whose digits contain no loops (version 2).
+ * A001742 Numbers whose digits contain no loops <code>(version 2)</code>.
  * @author Sean A. Irvine
  */
 public class A001742 implements Sequence {

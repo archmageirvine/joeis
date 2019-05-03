@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011304 Decimal expansion of 20th root of 11.
+ * A011304 Decimal expansion of <code>20th</code> root of 11.
  * @author Sean A. Irvine
  */
 public class A011304 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A101343 Triangle read by rows: nonzero coefficients of the polynomials F_n(x) which express derivatives of <code>tan(z)</code> in terms of powers of <code>tan(z)</code>.
+ * A101343 Triangle read by rows: nonzero coefficients of the polynomials <code>F_n(x)</code> which express derivatives of <code>tan(z)</code> in terms of powers of <code>tan(z)</code>.
  * @author Sean A. Irvine
  */
 public class A101343 implements Sequence {

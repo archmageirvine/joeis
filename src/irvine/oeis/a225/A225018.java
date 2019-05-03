@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225018 Number of cusps in a class of degree-3n complex algebraic surfaces.
+ * A225018 Number of cusps in a class of <code>degree-3n</code> complex algebraic surfaces.
  * @author Sean A. Irvine
  */
 public class A225018 extends LinearRecurrence {

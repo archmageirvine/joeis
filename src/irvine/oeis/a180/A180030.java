@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180030 Number of n-move paths on <code>a 3</code> X 3 chessboard of a queen starting or ending in a corner or side square.
+ * A180030 Number of n-move paths on a <code>3 X 3</code> chessboard of a queen starting or ending in a corner or side square.
  * @author Sean A. Irvine
  */
 public class A180030 extends LinearRecurrence {

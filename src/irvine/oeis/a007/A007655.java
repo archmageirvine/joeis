@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007655 Standard deviation of A007654.
+ * A007655 Standard deviation of <code>A007654</code>.
  * @author Sean A. Irvine
  */
 public class A007655 implements Sequence {

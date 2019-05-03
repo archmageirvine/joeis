@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242709 Nonequivalent ways to place two different markers (e.g., a pair of Go stones, black and white) on an n X n grid.
+ * A242709 Nonequivalent ways to place two different markers <code>(e.g.</code>, a pair of Go stones, black and white) on an <code>n X n</code> grid.
  * @author Sean A. Irvine
  */
 public class A242709 extends LinearRecurrence {

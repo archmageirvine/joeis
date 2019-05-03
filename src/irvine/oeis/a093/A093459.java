@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093459 Terms of A093458 which are factorials.
+ * A093459 Terms of <code>A093458</code> which are factorials.
  * @author Georg Fischer
  */
 public class A093459 extends FiniteSequence {

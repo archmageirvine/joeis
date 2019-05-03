@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171828 Nonnegative integers that can be made by using five fives <code>(5</code> 5's) and the four basic operators <code>{+, -, *, /}</code>.
+ * A171828 Nonnegative integers that can be made by using five fives <code>(5 5's)</code> and the four basic operators <code>{+, -, *, /}</code>.
  * @author Georg Fischer
  */
 public class A171828 extends FiniteSequence {

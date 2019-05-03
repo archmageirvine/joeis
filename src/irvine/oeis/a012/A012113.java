@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012113 Expansion of e.g.f. <code>tan(arcsin(arcsinh(x)))</code> (odd powers only).
+ * A012113 Expansion of e.g.f. <code>tan(arcsin(arcsinh(x))) (odd</code> powers <code>only)</code>.
  * @author Sean A. Irvine
  */
 public class A012113 implements Sequence {

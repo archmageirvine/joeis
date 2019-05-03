@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104341 Numbers n such that n -(digital reversal of <code>n) = 9</code>.
+ * A104341 Numbers n such that <code>n -(digital</code> reversal of <code>n) = 9</code>.
  * @author Georg Fischer
  */
 public class A104341 extends FiniteSequence {

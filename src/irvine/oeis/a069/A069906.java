@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069906 Number of pentagons that can be formed with perimeter n. In other words, number of partitions of n into five parts such that the sum of <code>any</code> four is more than the fifth.
+ * A069906 Number of pentagons that can be formed with perimeter n. In other words, number of partitions of n into five parts such that the sum of any four is more than the fifth.
  * @author Sean A. Irvine
  */
 public class A069906 extends LinearRecurrence {

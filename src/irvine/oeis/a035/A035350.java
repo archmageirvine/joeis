@@ -4,7 +4,7 @@ import irvine.oeis.BikTransformSequence;
 import irvine.oeis.a000.A000237;
 
 /**
- * A035350 "BIK" (reversible, indistinct, unlabeled) transform of A000237.
+ * A035350 "BIK" <code>(reversible</code>, indistinct, unlabeled) transform of <code>A000237</code>.
  * @author Sean A. Irvine
  */
 public class A035350 extends BikTransformSequence {

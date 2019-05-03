@@ -3,7 +3,7 @@ package irvine.oeis.a145;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A145608 Numbers <code>a(n)=k</code> such that <code>(1/3)*(5*(2k+1)^2-2)</code> is A057080(n)^2.
+ * A145608 Numbers <code>a(n)=k</code> such that <code>(1/3)*(5*(2k+1)^2-2)</code> is <code>A057080(n)^2</code>.
  * @author Sean A. Irvine
  */
 public class A145608 extends LinearRecurrence {

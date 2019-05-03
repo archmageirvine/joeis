@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A253427 Number of left-truncatable n-digit primes with least significant digit 7.
+ * A253427 Number of <code>left-truncatable n-digit</code> primes with least significant digit 7.
  * @author Georg Fischer
  */
 public class A253427 extends FiniteSequence {

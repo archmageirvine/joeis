@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114182 <code>F(4n) - 2n - 1</code> where <code>F(n) =</code> Fibonacci numbers. Also, the floor of the log base phi of sequence A090162 (phi <code>= (1+Sqrt(5))/2)</code>.
+ * A114182 <code>F(4n) - 2n - 1</code> where <code>F(n) =</code> Fibonacci numbers. Also, the floor of the log base phi of sequence <code>A090162 (phi = (1+Sqrt(5))/2)</code>.
  * @author Sean A. Irvine
  */
 public class A114182 extends LinearRecurrence {

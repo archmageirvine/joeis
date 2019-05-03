@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079289 For even <code>n, a(n) = a(n-2) + a(n-1) + 2^(n/2-2), n&gt;2</code>. For odd <code>n, a(n) = a(n-2) + a(n-1)</code>.
+ * A079289 For even n, <code>a(n) = a(n-2) + a(n-1) + 2^(n/2-2), n&gt;2</code>. For odd n, <code>a(n) = a(n-2) + a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A079289 extends LinearRecurrence {

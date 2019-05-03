@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005823 Numbers whose ternary expansion contains no 1's.
+ * A005823 Numbers whose ternary expansion contains no <code>1</code>'s.
  * @author Sean A. Irvine
  */
 public class A005823 implements Sequence {

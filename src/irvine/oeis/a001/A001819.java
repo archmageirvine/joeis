@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001819 Central factorial numbers: second right-hand column of triangle A008955.
+ * A001819 Central factorial numbers: second right-hand column of triangle <code>A008955</code>.
  * @author Sean A. Irvine
  */
 public class A001819 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A252093 Numbers n such that the pentagonal number <code>P(n)</code> is equal to the sum of the octagonal numbers N(m), N(m+1) and N(m+2) for some m.
+ * A252093 Numbers n such that the pentagonal number <code>P(n)</code> is equal to the sum of the octagonal numbers <code>N(m), N(m+1)</code> and <code>N(m+2)</code> for some m.
  * @author Sean A. Irvine
  */
 public class A252093 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060824 4-wave sequence beginning with 2s.
+ * A060824 4-wave sequence beginning with <code>2s</code>.
  * @author Sean A. Irvine
  */
 public class A060824 extends LinearRecurrence {

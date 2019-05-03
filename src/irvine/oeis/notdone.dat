@@ -1121,3 +1121,5 @@ A020476 Numbers n such that sum of divisors of n^3 is a cube
 A020496 From the ground state energy of a variant of the Hubbard Hamiltonian for 2 holes on a lattice of n sites
 A020497 Conjecturally, this is the minimal y such that n primes occur infinitely often among (x+1, ..., x+y), that is, pi(x+y) - pi(x) >= n for infinitely many x
 A020498 a(n) is the least number > a(n-1) such that a(1) through a(n) do not contain all residues modulo any prime
+A020897 Sum of two nonzero rational cubes (hard to to do exactly?).
+A020898 Positive cubefree integers n such that the Diophantine equation X^3 + Y^3 = n*Z^3 has solutions

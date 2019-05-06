@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020901.
+ * A020901 Greatest k such that k-th prime <code>&lt; 3</code> times n-th prime.
  * @author Sean A. Irvine
  */
 public class A020901 implements Sequence {

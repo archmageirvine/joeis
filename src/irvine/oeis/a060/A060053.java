@@ -41,6 +41,6 @@ public class A060053 implements Sequence {
     ++mN;
     final Q sum = outerSum(mN).multiply(mF.factorial(mN));
     final CR x = CR.valueOf(sum.toZ()).divide(CR.E);
-    return x.add(CR.HALF).floor(32);
+    return x.add(CR.HALF).floor();
   }
 }

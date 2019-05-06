@@ -11,11 +11,10 @@ import irvine.oeis.Sequence;
  */
 public class A000495 implements Sequence {
 
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private long mN = -1;
 
   @Override
   public Z next() {
-    return REALS.add(REALS.sinh(CR.valueOf(++mN)), CR.HALF).floor(32);
+    return ComputableReals.SINGLETON.sinh(CR.valueOf(++mN)).round(32);
   }
 }

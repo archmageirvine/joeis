@@ -19,7 +19,7 @@ public class A016085 implements Sequence {
       mA = Z.ONE;
       return Z.ONE;
     }
-    final Z t = ComputableReals.SINGLETON.pow(CR.valueOf(mA), CR.ONE_THIRD).floor(32);
+    final Z t = ComputableReals.SINGLETON.pow(CR.valueOf(mA), CR.ONE_THIRD).floor();
     mA = mA.add(t.pow(3));
     return t;
   }

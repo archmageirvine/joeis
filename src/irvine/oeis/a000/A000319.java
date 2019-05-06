@@ -23,6 +23,6 @@ public class A000319 implements Sequence {
     } else {
       mTanValue = UnaryCRFunction.TAN.execute(mTanValue);
     }
-    return mTanValue.floor(32);
+    return mTanValue.floor();
   }  
 }

@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A128809 Coefficients of the invariant of degree 30 associated with the icosahedral grooup.
+ * A128809 Coefficients of the invariant of degree 30 associated with the icosahedral group.
  * @author Georg Fischer
  */
 public class A128809 extends FiniteSequence {

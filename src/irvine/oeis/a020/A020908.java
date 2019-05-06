@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020908.
+ * A020908 Number of terms in Zeckendorf representation of <code>2^n</code>.
  * @author Sean A. Irvine
  */
 public class A020908 implements Sequence {

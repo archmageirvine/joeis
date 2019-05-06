@@ -16,6 +16,6 @@ public class A000501 implements Sequence {
 
   @Override
   public Z next() {
-    return REALS.cosh(CR.valueOf(++mN)).floor(32);
+    return REALS.cosh(CR.valueOf(++mN)).floor();
   }
 }

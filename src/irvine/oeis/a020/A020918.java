@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020918.
+ * A020918 Expansion of <code>1/(1-4*x)^(7/2)</code>.
  * @author Sean A. Irvine
  */
 public class A020918 implements Sequence {

@@ -14,7 +14,7 @@ public class A004790 implements Sequence {
   private CR mLast = CR.ONE;
 
   private CR mod1(final CR v) {
-    return v.subtract(CR.valueOf(v.floor(32)));
+    return v.subtract(CR.valueOf(v.floor()));
   }
 
   @Override

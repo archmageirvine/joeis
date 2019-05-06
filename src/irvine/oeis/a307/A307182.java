@@ -4,7 +4,7 @@ package irvine.oeis.a307;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A307182 Crossing number of the n-crown graph.
+ * A307182 Crossing number of the n-crown graph (conjectured).
  * @author Georg Fischer
  */
 public class A307182 extends LinearRecurrence {

@@ -17,9 +17,9 @@ public class A002667 implements Sequence {
     if (mB == null) {
       mB = CR.PI;
     } else {
-      final CR floor = CR.valueOf(mB.floor(32));
+      final CR floor = CR.valueOf(mB.floor());
       mB = mB.multiply(floor).add(CR.ONE).divide(mB.subtract(floor));
     }
-    return mB.floor(32);
+    return mB.floor();
   }
 }

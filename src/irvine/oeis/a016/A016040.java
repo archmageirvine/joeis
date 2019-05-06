@@ -16,6 +16,6 @@ public class A016040 extends A002110 {
 
   @Override
   public Z next() {
-    return CR.valueOf(super.next()).log().floor(32);
+    return CR.valueOf(super.next()).log().floor();
   }
 }

@@ -15,8 +15,8 @@ public class A006340 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return CR.PHI.multiply(CR.valueOf(mN + 1)).add(CR.HALF).floor(32)
-      .subtract(CR.PHI.multiply(CR.valueOf(mN)).add(CR.HALF).floor(32));
+    return CR.PHI.multiply(CR.valueOf(mN + 1)).round(32)
+      .subtract(CR.PHI.multiply(CR.valueOf(mN)).round(32));
   }
 }
 

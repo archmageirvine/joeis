@@ -21,7 +21,7 @@ public class A019296 implements Sequence {
         return Z.NEG_ONE; // so we don't have to deal with sqrt(-1)
       }
       final CR z = CR.PI.multiply(CR.valueOf(mN).sqrt()).exp();
-      if (CR.valueOf(z.add(CR.HALF).floor(32)).subtract(z).abs().compareTo(BOUND) < 0) {
+      if (CR.valueOf(z.add(CR.HALF).floor()).subtract(z).abs().compareTo(BOUND) < 0) {
         return Z.valueOf(mN);
       }
     }

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A051613.
+ * A051613 <code>a(n) =</code> partitions of n into powers of distinct primes <code>(1</code> not considered a power).
  * @author Sean A. Irvine
  */
 public class A051613 implements Sequence {

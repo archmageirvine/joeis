@@ -18,7 +18,7 @@ public class A014015 implements Sequence {
   @Override
   public Z next() {
     mSide = !mSide;
-    final Z s = mSide ? mEgyptian.inverse().floor(32) : mEgyptian.inverse().ceil(32);
+    final Z s = mSide ? mEgyptian.inverse().floor() : mEgyptian.inverse().ceil(32);
     mEgyptian = mEgyptian.subtract(CR.valueOf(s).inverse());
     return s.abs();
   }

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A119796 Zero through ten in alphabtical order of English reverse spelling.
+ * A119796 Zero through ten in alphabetical order of English reverse spelling.
  * @author Georg Fischer
  */
 public class A119796 extends FiniteSequence {

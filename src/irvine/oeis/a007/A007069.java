@@ -14,6 +14,6 @@ public class A007069 implements Sequence {
 
   @Override
   public Z next() {
-    return CR.SQRT2.multiply(CR.valueOf(CR.SQRT2.multiply(CR.valueOf(++mN)).floor(32))).floor(32);
+    return CR.SQRT2.multiply(CR.valueOf(CR.SQRT2.multiply(CR.valueOf(++mN)).floor())).floor();
   }
 }

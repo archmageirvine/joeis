@@ -25,7 +25,7 @@ public class A011189 implements Sequence {
       mF = mF.multiply(mN).multiply(mN);
     }
     final Z t = mF.multiply(mN).multiply(mN + 1);
-    final Z a = value().subtract(CR.valueOf(mSum)).multiply(CR.valueOf(t)).floor(32);
+    final Z a = value().subtract(CR.valueOf(mSum)).multiply(CR.valueOf(t)).floor();
     mSum = mSum.add(new Q(a, t));
     return a;
   }

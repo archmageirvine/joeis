@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020914.
+ * A020914 Number of digits in the <code>base-2</code> representation of <code>3^n</code>.
  * @author Sean A. Irvine
  */
 public class A020914 implements Sequence {
@@ -15,6 +15,6 @@ public class A020914 implements Sequence {
 
   @Override
   public Z next() {
-    return LOG.multiply(CR.valueOf(++mN)).floor(32).add(1);
+    return LOG.multiply(CR.valueOf(++mN)).floor().add(1);
   }
 }

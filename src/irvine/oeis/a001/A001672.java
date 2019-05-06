@@ -19,6 +19,6 @@ public class A001672 implements Sequence {
     } else {
       mPi = mPi.multiply(CR.PI);
     }
-    return mPi.floor(32);
+    return mPi.floor();
   }
 }

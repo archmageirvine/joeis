@@ -22,7 +22,7 @@ public class A005834 implements Sequence {
       }
       mB = Z.TWO;
     } else {
-      final Z t = CR.PHI.multiply(CR.valueOf(mA)).floor(32).add(mB);
+      final Z t = CR.PHI.multiply(CR.valueOf(mA)).floor().add(mB);
       mA = mB;
       mB = t;
     }

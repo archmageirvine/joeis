@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A020906.
+ * A020906 Triangle where n-th row is the first n terms of the sequence in reverse order, starting with <code>a(1) = 1</code> and <code>a(2) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A020906 implements Sequence {

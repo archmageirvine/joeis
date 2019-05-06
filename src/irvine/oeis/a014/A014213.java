@@ -16,6 +16,6 @@ public class A014213 implements Sequence {
 
   @Override
   public Z next() {
-    return ComputableReals.SINGLETON.pow(E2, ++mN).floor(32);
+    return ComputableReals.SINGLETON.pow(E2, ++mN).floor();
   }
 }

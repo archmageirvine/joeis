@@ -16,6 +16,6 @@ public class A000471 implements Sequence {
 
   @Override
   public Z next() {
-    return FLD.sinh(CR.valueOf(++mN)).floor(32);
+    return FLD.sinh(CR.valueOf(++mN)).floor();
   }
 }

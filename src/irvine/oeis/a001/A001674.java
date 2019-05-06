@@ -20,6 +20,6 @@ public class A001674 implements Sequence {
     } else {
       mX = mX.multiply(SQRT_TAU);
     }
-    return mX.floor(32);
+    return mX.floor();
   }
 }

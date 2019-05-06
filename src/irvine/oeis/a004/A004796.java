@@ -16,7 +16,7 @@ public class A004796 implements Sequence {
   private Q mH = new Q(5, 6);
 
   private CR mod1(final CR v) {
-    return v.subtract(CR.valueOf(v.floor(32)));
+    return v.subtract(CR.valueOf(v.floor()));
   }
 
   @Override

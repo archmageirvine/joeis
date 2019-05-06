@@ -16,7 +16,7 @@ public class A005657 implements Sequence {
   @Override
   public Z next() {
     final CR tan = ComputableReals.SINGLETON.tan(CR.valueOf(++mN));
-    return tan.multiply(tan).floor(32);
+    return tan.multiply(tan).floor();
   }
 }
 

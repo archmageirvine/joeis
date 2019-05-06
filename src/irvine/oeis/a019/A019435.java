@@ -37,7 +37,7 @@ public class A019435 implements Sequence {
     // More careful searching
     while (true) {
       final CR tan = ComputableReals.SINGLETON.tan(CR.valueOf(++mN));
-      CR frac = tan.subtract(CR.valueOf(tan.floor(32)));
+      CR frac = tan.subtract(CR.valueOf(tan.floor()));
       if (frac.signum() < 0) {
         frac = CR.ONE.add(frac);
       }

@@ -15,11 +15,11 @@ public class A019587 implements Sequence {
   @Override
   public Z next() {
     final CR nphi = CR.PHI.multiply(CR.valueOf(++mN));
-    final CR frac = nphi.subtract(CR.valueOf(nphi.floor(32)));
+    final CR frac = nphi.subtract(CR.valueOf(nphi.floor()));
     long c = 1;
     for (long k = 1; k < mN; ++k) {
       final CR u = CR.PHI.multiply(CR.valueOf(k));
-      if (u.subtract(CR.valueOf(u.floor(32))).compareTo(frac) <= 0) {
+      if (u.subtract(CR.valueOf(u.floor())).compareTo(frac) <= 0) {
         ++c;
       }
     }

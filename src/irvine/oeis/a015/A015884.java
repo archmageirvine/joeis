@@ -24,7 +24,7 @@ public class A015884 implements Sequence {
     if ((mN & 1) == 0) {
       a = mA.inverse().ceil(32);
     } else {
-      a = mA.inverse().floor(32);
+      a = mA.inverse().floor();
     }
     mA = CR.ONE.subtract(mA.multiply(CR.valueOf(a))).abs();
     return a;

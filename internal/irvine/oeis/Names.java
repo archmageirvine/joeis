@@ -26,7 +26,7 @@ public final class Names {
 
   private Names() { }
 
-  private static final char[] SPECIAL = "0123456789^*/(){}[]<>!=+#|_-".toCharArray();
+  private static final char[] SPECIAL = "0123456789^*/%(){}[]<>!=+#|_-".toCharArray();
   private static final Set<String> FORMULA = new HashSet<>();
   static {
     FORMULA.add("&lt;");
@@ -38,6 +38,9 @@ public final class Names {
     FORMULA.add("x");
     FORMULA.add("y");
     FORMULA.add("z");
+    FORMULA.add("xy");
+    FORMULA.add("xn");
+    FORMULA.add("xj");
   }
 
   static String formulaProtect(final String name) {

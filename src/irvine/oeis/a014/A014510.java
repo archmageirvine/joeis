@@ -20,6 +20,6 @@ public class A014510 implements Sequence {
     if (++mN > 1) {
       mF = mF.multiply(2L * mN - 1);
     }
-    return CR.valueOf(new Q(mF, Z.ONE.shiftLeft(mN))).multiply(SQRT_PI).floor(32);
+    return CR.valueOf(new Q(mF, Z.ONE.shiftLeft(mN))).multiply(SQRT_PI).floor();
   }
 }

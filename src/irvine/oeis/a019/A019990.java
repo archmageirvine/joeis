@@ -5,7 +5,7 @@ import java.util.Set;
 import irvine.math.z.Z;
 
 /**
- * A019990 A threequence, a 3-way partitioning of the integers: define a,b,c,A,B,C by <code>a(0)=true, b(0)=c(0)=A(0)=B(0)=C(0)=false, a(n)=a(m)</code> OR <code>C(m)</code> OR <code>B(m), b(n)= b(m)</code> OR <code>A(m)</code> OR <code>C(m), c(n)= c(m)</code> OR <code>B(m)</code> OR <code>A(m), A(n)= A(m)</code> OR <code>b(m)</code> OR <code>c(m), B(n)= B(m)</code> OR <code>c(m)</code> OR <code>a(m), C(n)= C(m)</code> OR <code>a(m)</code> OR <code>b(m)</code>, where m <code>= [ (n+1)/3 ]</code>; sequence gives n such that <code>b(2n)</code> is true.
+ * A019990 Indices n such that <code>A307672(2*n) = 2</code>.
  * @author Sean A. Irvine
  */
 public class A019990 extends A019989 {

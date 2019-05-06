@@ -16,7 +16,7 @@ public class A005752 implements Sequence {
   public Z next() {
     ++mN;
     final CR n = CR.valueOf(mN);
-    final Z floor = CR.PHI.multiply(n).floor(32);
+    final Z floor = CR.PHI.multiply(n).floor();
     return Z.valueOf(mN).square().add(floor.multiply(mN)).subtract(floor.square());
   }
 }

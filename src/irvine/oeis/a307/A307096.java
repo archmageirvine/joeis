@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307096 allocated for John Rickert.
+ * A307096 Positive integers m such that for any positive integer k the last k bits of the binary expansion of m is not a multiple of 3.
  * @author Sean A. Irvine
  */
 public class A307096 implements Sequence {

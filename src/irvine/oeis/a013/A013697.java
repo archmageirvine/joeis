@@ -15,6 +15,6 @@ public class A013697 implements Sequence {
 
   @Override
   public Z next() {
-    return Zeta.zeta(++mN).subtract(CR.ONE).inverse().floor(32);
+    return Zeta.zeta(++mN).subtract(CR.ONE).inverse().floor();
   }
 }

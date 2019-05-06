@@ -16,6 +16,6 @@ public class A018245 implements Sequence {
   @Override
   public Z next() {
     final CR n = CR.valueOf(++mN);
-    return CONS.multiply(n).floor(32).subtract(CONS.multiply(CR.valueOf(mN - 1)).floor(32));
+    return CONS.multiply(n).floor().subtract(CONS.multiply(CR.valueOf(mN - 1)).floor());
   }
 }

@@ -22,7 +22,7 @@ public class A006704 extends A006702 {
     Z q = q0;
     Z aa = null;
     while (true) {
-      final Z a = sqrtD.add(CR.valueOf(p)).divide(CR.valueOf(q)).floor(32);
+      final Z a = sqrtD.add(CR.valueOf(p)).divide(CR.valueOf(q)).floor();
       if (aa == null) {
         aa = a.multiply2().subtract(1);
       }

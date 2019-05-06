@@ -17,6 +17,6 @@ public class A002160 implements Sequence {
 
   @Override
   public Z next() {
-    return REALS.pow(CR.PI, ++mN).add(CR.HALF).floor(32);
+    return REALS.pow(CR.PI, ++mN).round(32);
   }
 }

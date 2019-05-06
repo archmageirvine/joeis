@@ -17,7 +17,7 @@ public class A069014 implements Sequence {
   public Z next() {
     while (true) {
       final CR z = CR.PI.multiply(CR.valueOf(++mN).sqrt()).exp();
-      final CR frac = CR.valueOf(z.add(CR.HALF).floor(32)).subtract(z).abs();
+      final CR frac = CR.valueOf(z.add(CR.HALF).floor()).subtract(z).abs();
       if (frac.compareTo(mBest) < 0) {
         mBest = frac;
         return Z.valueOf(mN);

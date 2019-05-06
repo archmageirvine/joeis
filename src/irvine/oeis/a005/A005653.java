@@ -18,7 +18,7 @@ public class A005653 implements Sequence {
   public Z next() {
     while (true) {
       final CR n = CR.valueOf(++mN);
-      final Z k = n.divide(PHI).floor(32);
+      final Z k = n.divide(PHI).floor();
       final CR crk = CR.valueOf(k);
       final CR a = n.subtract(PHI.multiply(crk));
       final CR b = crk.add(CR.ONE).multiply(PHI).subtract(n);

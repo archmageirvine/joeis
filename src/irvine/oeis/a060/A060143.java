@@ -16,7 +16,7 @@ public class A060143 implements Sequence, Serializable {
 
   @Override
   public Z next() {
-    return CR.valueOf(++mN).divide(CR.PHI).floor(32);
+    return CR.valueOf(++mN).divide(CR.PHI).floor();
   }
 }
 

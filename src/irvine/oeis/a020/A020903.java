@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A020903.
+ * A020903 Lim <code>f(f(...f(n)))</code> where f is the fractal sequence given by <code>f(n)=A002260(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A020903 extends MemorySequence {

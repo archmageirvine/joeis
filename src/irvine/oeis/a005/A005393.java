@@ -20,6 +20,6 @@ public class A005393 implements Sequence {
       return Z.ZERO;
     }
     final CR n = CR.valueOf(mN);
-    return C.pow(n, n.add(CR.HALF)).multiply(CR.TAU.sqrt()).divide(n.exp()).floor(32);
+    return C.pow(n, n.add(CR.HALF)).multiply(CR.TAU.sqrt()).divide(n.exp()).floor();
   }
 }

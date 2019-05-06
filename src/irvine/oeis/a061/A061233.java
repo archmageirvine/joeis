@@ -16,7 +16,7 @@ public class A061233 implements Sequence {
 
   @Override
   public Z next() {
-    final Z a = mA.inverse().floor(32);
+    final Z a = mA.inverse().floor();
     mA = CR.ONE.subtract(mA.multiply(CR.valueOf(a)));
     return a;
   }

@@ -16,6 +16,6 @@ public class A000503 implements Sequence {
 
   @Override
   public Z next() {
-    return REALS.tan(CR.valueOf(++mN)).floor(32);
+    return REALS.tan(CR.valueOf(++mN)).floor();
   }
 }

@@ -20,7 +20,7 @@ public class A007514 implements Sequence {
       mF = mF.multiply(mN);
     }
     final Z t = mPrev.multiply(mN);
-    mPrev = CR.PI.multiply(CR.valueOf(mF)).floor(32);
+    mPrev = CR.PI.multiply(CR.valueOf(mF)).floor();
     return mPrev.subtract(t);
   }
 }

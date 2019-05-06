@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000041;
 
 /**
- * A020919.
+ * A020919 Partition numbers <code>mod 11</code>.
  * @author Sean A. Irvine
  */
 public class A020919 extends A000041 {

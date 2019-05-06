@@ -15,7 +15,7 @@ public class A017944 implements Sequence {
   @Override
   public Z next() {
     mN = mN == null ? Z.ONE : mN.multiply(13);
-    return CR.valueOf(mN).sqrt().add(CR.HALF).floor(32);
+    return CR.valueOf(mN).sqrt().add(CR.HALF).floor();
   }
 }
 

@@ -17,6 +17,6 @@ public class A004923 implements Sequence {
 
   @Override
   public Z next() {
-    return PHI8.multiply(CR.valueOf(++mN)).floor(32);
+    return PHI8.multiply(CR.valueOf(++mN)).floor();
   }
 }

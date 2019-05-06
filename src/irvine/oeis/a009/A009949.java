@@ -19,7 +19,7 @@ public class A009949 implements Sequence {
   public Z next() {
     ++mN;
     mF = mF.multiply(mN);
-    final Z t = mX.multiply(CR.valueOf(mF)).floor(32);
+    final Z t = mX.multiply(CR.valueOf(mF)).floor();
     mX = mX.subtract(CR.valueOf(new Q(t, mF)));
     return t;
   }

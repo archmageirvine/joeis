@@ -14,7 +14,7 @@ public class A002852 extends A001620 {
 
   @Override
   public Z next() {
-    final Z a = mU.floor(32);
+    final Z a = mU.floor();
     final CR d = mU.subtract(CR.valueOf(a));
     mU = d.inverse();
     return a;

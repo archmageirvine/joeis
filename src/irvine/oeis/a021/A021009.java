@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A021009.
+ * A021009 Triangle of coefficients of Laguerre polynomials <code>n!*L_n(x)</code> (rising powers of <code>x)</code>.
  * @author Sean A. Irvine
  */
 public class A021009 implements Sequence {

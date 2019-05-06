@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a037.A037074;
 
 /**
- * A021005.
+ * A021005 Let <code>q_k=p(p+2)</code> be product of k-th pair of twin primes; sequence gives values of p such that <code>(q_k)^2 &gt; q_{k-i}q_{k+i}</code> for all <code>1 &lt;= i &lt;= k-1</code>.
  * @author Sean A. Irvine
  */
 public class A021005 extends A037074 {

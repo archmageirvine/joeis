@@ -716,7 +716,8 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return rounded value
    */
   public Z round() {
-    return abs().subtract(CR.HALF).ceil().multiply(signum());
+    final int sign = toZ().signum();
+    return sign >= 0 ? subtract(CR.HALF).ceil() : add(CR.HALF).floor();
   }
 
   /**

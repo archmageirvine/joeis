@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020967.
+ * A020967 <code>a(n) = Sum_{k &gt;=1} floor(n*sqrt(2)^(3-k))</code>.
  * @author Sean A. Irvine
  */
 public class A020967 implements Sequence {

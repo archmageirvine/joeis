@@ -888,6 +888,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A020877Test.class);
     suite.addTestSuite(A020878Test.class);
     suite.addTestSuite(A020879Test.class);
+    suite.addTestSuite(A020880Test.class);
     suite.addTestSuite(A020881Test.class);
     suite.addTestSuite(A020882Test.class);
     suite.addTestSuite(A020883Test.class);

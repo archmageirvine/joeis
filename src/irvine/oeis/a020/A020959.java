@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020959.
+ * A020959 <code>a(n) = Sum_{k&gt;=1} floor(n*phi^(1-k))</code>.
  * @author Sean A. Irvine
  */
 public class A020959 implements Sequence {

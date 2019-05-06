@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A020957.
+ * A020957 Sum of <code>[ 2*tau^(n-k) ]</code> for k from 1 to infinity.
  * @author Sean A. Irvine
  */
 public class A020957 extends A000032 {

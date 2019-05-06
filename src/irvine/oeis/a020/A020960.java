@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020960.
+ * A020960 Sum of <code>[ n</code> times <code>tau^(2-k) ]</code> for k from 1 to infinity.
  * @author Sean A. Irvine
  */
 public class A020960 implements Sequence {

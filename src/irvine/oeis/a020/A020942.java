@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a202.A202342;
 
 /**
- * A020942.
+ * A020942 First column of 3rd-order Zeckendorf array.
  * @author Sean A. Irvine
  */
 public class A020942 extends A202342 {

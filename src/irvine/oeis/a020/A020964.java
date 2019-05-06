@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020964.
+ * A020964 Sum of <code>Floor[ 3*(1+sqrt(2))^(n-k) ]</code> for k from 1 to infinity.
  * @author Sean A. Irvine
  */
 public class A020964 implements Sequence {

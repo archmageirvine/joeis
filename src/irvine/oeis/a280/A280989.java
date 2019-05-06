@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A280989 Rounded percent probability that a positive test result for some condition is a true positive when n% of the tested population has that condition and the test is <code>95%</code> accurate.
+ * A280989 Rounded percent probability that a positive test result for some condition is a true positive when <code>n%</code> of the tested population has that condition and the test is <code>95%</code> accurate.
  * @author Georg Fischer
  */
 public class A280989 extends FiniteSequence {

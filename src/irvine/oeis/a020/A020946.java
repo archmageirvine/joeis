@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002487;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A020946.
+ * A020946 <code>a(n) =</code> smallest number k such that <code>A002487(k) =</code> n.
  * @author Sean A. Irvine
  */
 public class A020946 extends A002487 {

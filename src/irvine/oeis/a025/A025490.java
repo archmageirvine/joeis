@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A025490.
+ * A025490 In base <code>11, a(n) =</code> sum of digits of <code>Fib(a(n))</code>.
  * @author Sean A. Irvine
  */
 public class A025490 extends A000045 {

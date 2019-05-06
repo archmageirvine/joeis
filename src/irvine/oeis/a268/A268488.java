@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A268488 Least number k of the form k <code>= n*(k % 10) + [k / 10]</code>, where k % <code>10 =</code> last digit of k, <code>[k / 10] =</code> k without its last digit.
+ * A268488 Least number k of the form k <code>= n*(k % 10) + [k / 10]</code>, where k <code>% 10 =</code> last digit of k, <code>[k / 10] =</code> k without its last digit.
  * @author Sean A. Irvine
  */
 public class A268488 extends LinearRecurrence {

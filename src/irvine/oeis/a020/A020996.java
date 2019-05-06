@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020996.
+ * A020996 Numbers n such that the sum of the digits of <code>Fibonacci(n)</code> in base 12 is n.
  * @author Sean A. Irvine
  */
 public class A020996 extends A000045 {

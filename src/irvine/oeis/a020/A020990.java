@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.math.z.Z;
 
 /**
- * A020990.
+ * A020990 <code>a(n) = Sum_{k=0..n} (-1)^k*A020985(k)</code>.
  * @author Sean A. Irvine
  */
 public class A020990 extends A020985 {

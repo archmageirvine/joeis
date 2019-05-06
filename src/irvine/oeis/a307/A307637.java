@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307637.
+ * A307637 Isolated primes: primes that become composite if any single digit is changed to a different digit.
  * @author Sean A. Irvine
  */
 public class A307637 implements Sequence {

@@ -19,7 +19,7 @@ public class A001768 implements Sequence {
   public Z next() {
     ++mN;
     final CR ntq = CR.valueOf(mN).multiply(THREE_QUARTERS);
-    final Z v = ntq.log().divide(LOG2).ceil(32);
+    final Z v = ntq.log().divide(LOG2).ceil();
     mSum = mSum.add(v);
     return mSum;
   }

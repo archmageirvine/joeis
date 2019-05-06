@@ -13,6 +13,6 @@ public class A007321 extends A007320 {
   @Override
   protected Z juggler(final Z n) {
     final CR v = CR.valueOf(n);
-    return n.isEven() ? v.sqrt().round(32) : ComputableReals.SINGLETON.pow(v, 3).sqrt().round(32);
+    return n.isEven() ? v.sqrt().round() : ComputableReals.SINGLETON.pow(v, 3).sqrt().round();
   }
 }

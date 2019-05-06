@@ -18,8 +18,8 @@ public class A005652 implements Sequence {
   public Z next() {
     while (true) {
       final CR n = CR.valueOf(++mN);
-      final Z a = PHI.multiply(n).ceil(32).multiply2();
-      final Z b = SQRT5.multiply(n).ceil(32);
+      final Z a = PHI.multiply(n).ceil().multiply2();
+      final Z b = SQRT5.multiply(n).ceil();
       if (a.subtract(b).longValueExact() == mN) {
         return Z.valueOf(mN);
       }

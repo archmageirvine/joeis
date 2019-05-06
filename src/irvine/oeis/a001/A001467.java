@@ -13,7 +13,7 @@ public class A001467 implements Sequence {
   private CR mX = CR.PI;
 
   private Z round(final CR v) {
-    return v.round(32);
+    return v.round();
   }
 
   @Override

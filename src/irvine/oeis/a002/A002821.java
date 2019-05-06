@@ -15,6 +15,6 @@ public class A002821 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return CR.valueOf(mN.pow(3)).sqrt().round(32);
+    return CR.valueOf(mN.pow(3)).sqrt().round();
   }
 }

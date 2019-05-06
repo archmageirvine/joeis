@@ -22,6 +22,6 @@ public class A014518 implements Sequence {
       mF = mF.multiply(4L * mN - 3);
       mT = mT.shiftLeft(2);
     }
-    return CR.valueOf(new Q(mF, mT)).multiply(A068466.GAMMA_QUARTER).round(32);
+    return CR.valueOf(new Q(mF, mT)).multiply(A068466.GAMMA_QUARTER).round();
   }
 }

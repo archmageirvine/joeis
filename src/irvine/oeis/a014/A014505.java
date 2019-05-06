@@ -29,6 +29,6 @@ public class A014505 implements Sequence {
       }
       sum = sum.add(new Q(Binomial.binomial(k * (k - 1), mN), f));
     }
-    return CR.valueOf(sum.multiply(mF)).divide(CR.E).round(32);
+    return CR.valueOf(sum.multiply(mF)).divide(CR.E).round();
   }
 }

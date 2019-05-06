@@ -16,7 +16,7 @@ public class A018034 implements Sequence {
   @Override
   public Z next() {
     mN = mN == null ? Z.ONE : mN.multiply(20);
-    return ComputableReals.SINGLETON.pow(CR.valueOf(mN), CR.ONE_THIRD).add(CR.HALF).floor();
+    return ComputableReals.SINGLETON.pow(CR.valueOf(mN), CR.ONE_THIRD).round();
   }
 }
 

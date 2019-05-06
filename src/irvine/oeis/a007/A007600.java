@@ -14,7 +14,7 @@ public class A007600 implements Sequence {
   private long mN = 0;
 
   private Z t(final long n, final int p) {
-    return CR.valueOf(new Q(n, 1L << p)).log().divide(CR.THREE.log()).ceil(32).multiply(3).add(2L * p);
+    return CR.valueOf(new Q(n, 1L << p)).log().divide(CR.THREE.log()).ceil().multiply(3).add(2L * p);
   }
 
   @Override

@@ -17,6 +17,6 @@ public class A002101 implements Sequence {
 
   @Override
   public Z next() {
-    return CONST.multiply(REALS.pow(CR.valueOf(++mN), 3)).round(32);
+    return CONST.multiply(REALS.pow(CR.valueOf(++mN), 3)).round();
   }
 }

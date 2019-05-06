@@ -31,6 +31,6 @@ public class A007341 implements Sequence {
         prod = prod.multiply(t);
       }
     }
-    return prod.shiftLeft((mN - 1) * (mN - 1)).round(32);
+    return prod.shiftLeft((mN - 1) * (mN - 1)).round();
   }
 }

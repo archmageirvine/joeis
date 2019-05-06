@@ -16,7 +16,7 @@ public class A006487 implements Sequence {
   @Override
   public Z next() {
     final CR v = CR.SQRT2.subtract(CR.valueOf(mRecipSum));
-    final Z a = v.inverse().ceil(32);
+    final Z a = v.inverse().ceil();
     mRecipSum = mRecipSum.add(new Q(Z.ONE, a));
     return a;
   }

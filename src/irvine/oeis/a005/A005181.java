@@ -16,6 +16,6 @@ public class A005181 implements Sequence {
 
   @Override
   public Z next() {
-    return ComputableReals.SINGLETON.exp(CR.valueOf(new Q(++mN, 2))).ceil(32);
+    return ComputableReals.SINGLETON.exp(CR.valueOf(new Q(++mN, 2))).ceil();
   }
 }

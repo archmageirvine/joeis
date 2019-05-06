@@ -14,7 +14,7 @@ public class A006525 implements Sequence {
 
   @Override
   public Z next() {
-    mX = mX == null ? CR.E.subtract(CR.TWO) : mX.subtract(CR.valueOf(mX.inverse().ceil(128)).inverse());
-    return mX.inverse().ceil(128);
+    mX = mX == null ? CR.E.subtract(CR.TWO) : mX.subtract(CR.valueOf(mX.inverse().ceil()).inverse());
+    return mX.inverse().ceil();
   }
 }

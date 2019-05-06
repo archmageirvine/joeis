@@ -22,7 +22,7 @@ public class A015884 implements Sequence {
     }
     final Z a;
     if ((mN & 1) == 0) {
-      a = mA.inverse().ceil(32);
+      a = mA.inverse().ceil();
     } else {
       a = mA.inverse().floor();
     }

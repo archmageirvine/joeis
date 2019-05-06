@@ -32,7 +32,7 @@ public class A004003 extends MemorySequence {
     for (int k = 1; k <= mN; ++k) {
       prod = prod.multiply(product(cos2(k, mN), mN));
     }
-    return prod.shiftLeft(2 * mN * mN).round(32);
+    return prod.shiftLeft(2 * mN * mN).round();
   }
 }
 

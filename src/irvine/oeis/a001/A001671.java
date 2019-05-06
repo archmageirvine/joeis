@@ -21,6 +21,6 @@ public class A001671 implements Sequence {
     } else {
       mE = mE.multiply(E);
     }
-    return mE.ceil(32);
+    return mE.ceil();
   }
 }

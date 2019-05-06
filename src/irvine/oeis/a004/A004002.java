@@ -15,7 +15,7 @@ public class A004002 extends MemorySequence {
   @Override
   protected Z computeNext() {
     mA = mA.exp();
-    return mA.round(32);
+    return mA.round();
   }
 }
 

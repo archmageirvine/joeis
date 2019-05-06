@@ -702,12 +702,21 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the ceiling function of this computable real accurate to the given
+   * precision.  The value can be out by 1 if the value is very close to an
+   * integer.
+   * @return floor of the computable real
+   */
+  public Z ceil() {
+    return ceil(toZ().bitLength() + DEFAULT_FLOOR_EXTRA_BITS);
+  }
+
+  /**
    * Return the nearest integer to this number.
-   * @param precision precision to consider
    * @return rounded value
    */
-  public Z round(final int precision) {
-    return abs().subtract(CR.HALF).ceil(precision).multiply(signum());
+  public Z round() {
+    return abs().subtract(CR.HALF).ceil().multiply(signum());
   }
 
   /**

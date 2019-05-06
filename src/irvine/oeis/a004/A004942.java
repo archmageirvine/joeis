@@ -17,6 +17,6 @@ public class A004942 implements Sequence {
 
   @Override
   public Z next() {
-    return PHI_POWER.multiply(CR.valueOf(++mN)).round(32);
+    return PHI_POWER.multiply(CR.valueOf(++mN)).round();
   }
 }

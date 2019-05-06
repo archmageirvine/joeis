@@ -20,7 +20,7 @@ public class A004081 implements Sequence {
     while (true) {
       mA = mA.add(new Q(1, ++mN));
       final CR expn = CR.valueOf(mA).exp();
-      final boolean match = expn.floor().equals(mExpA.ceil(32));
+      final boolean match = expn.floor().equals(mExpA.ceil());
       mExpA = expn;
       if (match) {
         return Z.valueOf(mN - 1);

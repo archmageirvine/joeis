@@ -16,7 +16,7 @@ public class A005671 extends A002386 {
   @Override
   public Z next() {
     final CR tan = ComputableReals.SINGLETON.tan(CR.valueOf(++mN));
-    return tan.multiply(tan).round(32);
+    return tan.multiply(tan).round();
   }
 }
 

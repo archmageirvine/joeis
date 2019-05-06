@@ -18,7 +18,7 @@ public class A046654 implements Sequence {
     if (++mN > 0) {
       mSum = mSum.add(CR.valueOf(mN).log());
     }
-    return mSum.add(CR.HALF).floor();
+    return mSum.round();
   }
 }
 

@@ -15,6 +15,6 @@ public class A000495 implements Sequence {
 
   @Override
   public Z next() {
-    return ComputableReals.SINGLETON.sinh(CR.valueOf(++mN)).round(32);
+    return ComputableReals.SINGLETON.sinh(CR.valueOf(++mN)).round();
   }
 }

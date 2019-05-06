@@ -15,6 +15,6 @@ public class A015557 implements Sequence {
 
   @Override
   public Z next() {
-    return ComputableReals.SINGLETON.pow(CR.valueOf(++mN).divide(CR.E), mN).ceil(32);
+    return ComputableReals.SINGLETON.pow(CR.valueOf(++mN).divide(CR.E), mN).ceil();
   }
 }

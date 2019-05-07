@@ -1,13 +1,13 @@
 package irvine.oeis.a003;
 
+import java.io.IOException;
+
 import irvine.math.graph.Graph;
 import irvine.math.nauty.GenerateGraphs;
 import irvine.math.nauty.GraphProcessor;
 import irvine.math.nauty.Multigraph;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.io.IOException;
 
 /**
  * A003094 Number of unlabeled connected planar simple graphs with n nodes.
@@ -27,7 +27,6 @@ public class A003094 implements Sequence, GraphProcessor {
       ++mPlanarCount;
     }
   }
-
 
   @Override
   public Z next() {

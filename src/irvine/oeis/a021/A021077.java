@@ -3,13 +3,13 @@ package irvine.oeis.a021;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A021097.
+ * A021077.
  * @author Sean A. Irvine
  */
-public class A021097 extends PeriodicSequence {
+public class A021077 extends PeriodicSequence {
 
   /** Construct the sequence. */
-  public A021097() {
-    super(0, 1, 0, 7, 5, 2, 6, 8, 8, 1, 7, 2, 0, 4, 3);
+  public A021077() {
+    super(0, 1, 3, 6, 9, 8, 6, 3);
   }
 }

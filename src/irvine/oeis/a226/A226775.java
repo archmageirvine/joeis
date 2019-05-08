@@ -1,0 +1,21 @@
+package irvine.oeis.a226;
+
+import irvine.math.cr.CR;
+import irvine.oeis.DecimalExpansionSequence;
+import irvine.oeis.a106.A106533;
+
+/**
+ * A226775.
+ * @author Sean A. Irvine
+ */
+public class A226775 extends DecimalExpansionSequence {
+
+  /** A226775 as a real. */
+  public static final CR N = A106533.RUMOUR_CONSTANT.multiply(CR.TWO);
+
+  @Override
+  protected CR getCR() {
+    return N;
+  }
+}
+

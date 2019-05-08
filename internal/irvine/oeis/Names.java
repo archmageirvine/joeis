@@ -33,14 +33,22 @@ public final class Names {
     FORMULA.add("&gt;");
     FORMULA.add("mod");
     FORMULA.add("sqrt");
+    FORMULA.add("gdinv");
+    FORMULA.add("dsf");
     FORMULA.add("Pi");
     FORMULA.add("n");
     FORMULA.add("x");
     FORMULA.add("y");
     FORMULA.add("z");
+    FORMULA.add("ij");
     FORMULA.add("xy");
-    FORMULA.add("xn");
     FORMULA.add("xj");
+    FORMULA.add("xk");
+    FORMULA.add("xn");
+    FORMULA.add("xn.");
+    FORMULA.add("abacabaabacababac...");
+    FORMULA.add("aab");
+    FORMULA.add("\"sumdigit\"");
   }
 
   static String formulaProtect(final String name) {

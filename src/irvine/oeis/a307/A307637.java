@@ -40,5 +40,4 @@ public class A307637 implements Sequence {
       }
     }
   }
-
 }

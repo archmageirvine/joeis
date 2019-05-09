@@ -1,12 +1,12 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A005289 Number of graphs on n nodes with 3 cliques.
  * @author Sean A. Irvine
  */
-public class A005289 extends RatPolyGfSequence {
+public class A005289 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A005289() {

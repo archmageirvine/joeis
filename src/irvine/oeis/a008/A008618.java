@@ -1,12 +1,17 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A008618 Expansion of <code>1/((1-x^2)(1-x^9))</code>.
  * @author Sean A. Irvine
  */
-public class A008618 extends RatPolyGfSequence {
+public class A008618 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A008618() {

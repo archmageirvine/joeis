@@ -1,13 +1,18 @@
 package irvine.oeis.a014;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A014073 Number of vectors abcdefg with a,b,... <code>&gt;= 0, a+...+g=n, a&gt;={b,...g}</code>.
  * @author Sean A. Irvine
  */
-public class A014073 extends RatPolyGfSequence {
+public class A014073 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A014073() {

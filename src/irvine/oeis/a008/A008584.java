@@ -1,12 +1,17 @@
 package irvine.oeis.a008;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A008584 Molien series for Weyl group <code>E_6</code>.
  * @author Sean A. Irvine
  */
-public class A008584 extends RatPolyGfSequence {
+public class A008584 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A008584() {

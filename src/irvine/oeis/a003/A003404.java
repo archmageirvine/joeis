@@ -1,12 +1,12 @@
 package irvine.oeis.a003;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A003404 Number of solid partitions of n supported on graph of cube.
  * @author Sean A. Irvine
  */
-public class A003404 extends RatPolyGfSequence {
+public class A003404 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A003404() {

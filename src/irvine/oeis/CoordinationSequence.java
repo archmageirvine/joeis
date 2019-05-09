@@ -1,5 +1,7 @@
 package irvine.oeis;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
@@ -9,7 +11,9 @@ import irvine.math.z.Z;
  * Exact Topological Densities for Zeolites".
  * @author Sean A. Irvine
  */
-public class CoordinationSequence extends RatPolyGfSequence {
+public class CoordinationSequence extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   private static Polynomial<Z> buildDenominator(final int[] pl) {
     Polynomial<Z> den = RING.one();

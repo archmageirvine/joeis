@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A002789 Number of integer points in a certain quadrilateral scaled by a factor of n.
  * @author Sean A. Irvine
  */
-public class A002789 extends RatPolyGfSequence {
+public class A002789 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A002789() {

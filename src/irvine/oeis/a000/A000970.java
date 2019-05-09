@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A000970 Fermat coefficients.
  * @author Sean A. Irvine
  */
-public class A000970 extends RatPolyGfSequence {
+public class A000970 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A000970() {

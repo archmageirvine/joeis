@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A000517 Number of permutations of length n with exactly three valleys.
  * @author Sean A. Irvine
  */
-public class A000517 extends RatPolyGfSequence {
+public class A000517 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A000517() {

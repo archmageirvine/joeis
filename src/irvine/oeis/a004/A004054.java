@@ -1,12 +1,12 @@
 package irvine.oeis.a004;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A004054 Expansion of <code>(1-x)/( (1+x)*(1-2*x)*(1-3*x))</code>.
  * @author Sean A. Irvine
  */
-public class A004054 extends RatPolyGfSequence {
+public class A004054 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A004054() {

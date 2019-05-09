@@ -1,13 +1,18 @@
 package irvine.oeis.a001;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A001849 Crystal ball sequence for 7-dimensional cubic lattice.
  * @author Sean A. Irvine
  */
-public class A001849 extends RatPolyGfSequence {
+public class A001849 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A001849() {

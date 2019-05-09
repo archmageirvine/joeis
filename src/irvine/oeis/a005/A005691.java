@@ -1,12 +1,12 @@
 package irvine.oeis.a005;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A005691 Number of Twopins positions.
  * @author Sean A. Irvine
  */
-public class A005691 extends RatPolyGfSequence {
+public class A005691 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A005691() {

@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A001584 A generalized Fibonacci sequence.
  * @author Sean A. Irvine
  */
-public class A001584 extends RatPolyGfSequence {
+public class A001584 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A001584() {

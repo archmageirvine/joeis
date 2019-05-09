@@ -1,12 +1,12 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A007904 Crystal ball sequence for diamond.
  * @author Sean A. Irvine
  */
-public class A007904 extends RatPolyGfSequence {
+public class A007904 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A007904() {

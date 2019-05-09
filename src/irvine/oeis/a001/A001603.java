@@ -1,12 +1,12 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A001603 Odd-indexed terms of <code>A124296</code>.
  * @author Sean A. Irvine
  */
-public class A001603 extends RatPolyGfSequence {
+public class A001603 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A001603() {

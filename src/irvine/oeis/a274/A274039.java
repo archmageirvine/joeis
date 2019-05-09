@@ -1,12 +1,12 @@
 package irvine.oeis.a274;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A274039 Expansion of <code>(x^4 + x^10) / (1 - 2*x + x^2)</code>.
  * @author Sean A. Irvine
  */
-public class A274039 extends RatPolyGfSequence {
+public class A274039 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A274039() {

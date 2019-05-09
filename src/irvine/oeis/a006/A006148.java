@@ -1,13 +1,18 @@
 package irvine.oeis.a006;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A006148 Number of <code>4 X n</code> binary matrices up to row and column permutations.
  * @author Sean A. Irvine
  */
-public class A006148 extends RatPolyGfSequence {
+public class A006148 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A006148() {

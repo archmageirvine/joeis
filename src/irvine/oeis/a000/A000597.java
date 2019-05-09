@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A000597 Central factorial numbers.
  * @author Sean A. Irvine
  */
-public class A000597 extends RatPolyGfSequence {
+public class A000597 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A000597() {

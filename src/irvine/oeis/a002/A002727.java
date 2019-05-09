@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A002727 Number of <code>3 X n</code> binary matrices up to row and column permutations.
  * @author Sean A. Irvine
  */
-public class A002727 extends RatPolyGfSequence {
+public class A002727 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A002727() {

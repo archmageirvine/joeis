@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A000352 One half of the number of permutations of <code>[n]</code> such that the differences have three runs with the same signs.
  * @author Sean A. Irvine
  */
-public class A000352 extends RatPolyGfSequence {
+public class A000352 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A000352() {

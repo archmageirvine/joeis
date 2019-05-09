@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.util.Arrays;
+
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -15,13 +18,31 @@ public class GeneratingFunctionSequence implements Sequence {
   protected GeneratingFunctionSequence() { }
 
   /**
+   * Construct a new rational integer polynomial generating function sequence.
+   * @param num numerator
+   * @param den denominator
+   */
+  public GeneratingFunctionSequence(final Z[] num, final Z[] den) {
+    mNum = Arrays.copyOf(num, num.length); // copy because this class is destructive
+    mDen = Arrays.copyOf(den, den.length);
+  }
+
+  /**
    * Construct the specified generating function.
    * @param num coefficients of the numerator   polynomial
    * @param den coefficients of the denominator polynomial
    */
   public GeneratingFunctionSequence(final long[] num, final long[] den) {
-    mNum = ZUtils.toZ(num);
-    mDen = ZUtils.toZ(den);
+    this(ZUtils.toZ(num), ZUtils.toZ(den));
+  }
+
+  /**
+   * Construct a new rational integer polynomial generating function sequence.
+   * @param num numerator
+   * @param den denominator
+   */
+  public GeneratingFunctionSequence(final Polynomial<Z> num, final Polynomial<Z> den) {
+    this(num.toArray(new Z[num.size()]), den.toArray(new Z[den.size()]));
   }
 
   @Override
@@ -36,11 +57,8 @@ public class GeneratingFunctionSequence implements Sequence {
       throw new IllegalArgumentException("no even division");
     }
     final Z quotient = result.negate();
-    int len1 = mNum.length;
+    final int len1 = Math.max(mNum.length, mDen.length);
     final int len2 = mDen.length;
-    if (len2 > len1) {
-      len1 = len2; // the maximum of both lengths
-    }
     final Z[] vect1 = new Z[len1 - 1]; // will replace 'mNum' in the end
     int iterm = 1; // the first term of vect1 becomes ZERO and is skipped
     while (iterm < len1) {

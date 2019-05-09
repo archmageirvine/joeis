@@ -1,13 +1,18 @@
 package irvine.oeis.a003;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
-import irvine.oeis.RatPolyGfSequence;
+import irvine.math.z.Z;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A003438 Number of <code>5 X 5</code> matrices with nonnegative integer entries and row and column sums equal to n.
  * @author Sean A. Irvine
  */
-public class A003438 extends RatPolyGfSequence {
+public class A003438 extends GeneratingFunctionSequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /** Construct the sequence. */
   public A003438() {

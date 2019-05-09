@@ -1,12 +1,12 @@
 package irvine.oeis.a000;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A000804 Permanent of a certain cyclic <code>n X n (0,1)</code> matrix.
  * @author Sean A. Irvine
  */
-public class A000804 extends RatPolyGfSequence {
+public class A000804 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A000804() {

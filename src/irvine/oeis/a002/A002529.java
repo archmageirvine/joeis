@@ -1,12 +1,12 @@
 package irvine.oeis.a002;
 
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A002529 <code>a(n) = A002527(n+1) - A002527(n) - A002526(n)</code>.
  * @author Sean A. Irvine
  */
-public class A002529 extends RatPolyGfSequence {
+public class A002529 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A002529() {

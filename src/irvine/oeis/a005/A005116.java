@@ -1,15 +1,18 @@
 package irvine.oeis.a005;
 
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.RatPolyGfSequence;
+import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A005116 Number of protruded partitions of n with largest part at most 10.
  * @author Sean A. Irvine
  */
-public class A005116 extends RatPolyGfSequence {
+public class A005116 extends GeneratingFunctionSequence {
 
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final Polynomial<Z> DEN;
   static {
     Polynomial<Z> d = RING.one();

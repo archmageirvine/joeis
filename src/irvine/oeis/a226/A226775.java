@@ -5,7 +5,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a106.A106533;
 
 /**
- * A226775.
+ * A226775 Decimal expansion of the number x other than -2 defined by <code>x*exp(x) = -2/e^2</code>.
  * @author Sean A. Irvine
  */
 public class A226775 extends DecimalExpansionSequence {

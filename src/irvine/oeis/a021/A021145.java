@@ -3,7 +3,7 @@ package irvine.oeis.a021;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A021145.
+ * A021145 Decimal expansion of 1/141.
  * @author Sean A. Irvine
  */
 public class A021145 extends PeriodicSequence {

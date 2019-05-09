@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307481.
+ * A307481 allocated for Glen Gilchrist.
  * @author Sean A. Irvine
  */
 public class A307481 implements Sequence {

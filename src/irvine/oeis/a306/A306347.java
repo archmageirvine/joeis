@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A306347.
+ * A306347 allocated for Dimitris Valianatos.
  * @author Sean A. Irvine
  */
 public class A306347 implements Sequence {

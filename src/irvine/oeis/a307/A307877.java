@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307877
+ * A307877 allocated for Charles Kusniec.
  * @author Sean A. Irvine
  */
 public class A307877 implements Sequence {

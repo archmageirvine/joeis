@@ -60,7 +60,7 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
   }
 
   /**
-   * Constructor with power and number of generators
+   * Constructor with power and number of generators.
    * This version has simpler parameters which are directly deducible
    * from the name of the OEIS sequence.
    * @param pwr the exponent
@@ -71,7 +71,7 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
   }
 
   /**
-   * Returns a triangular number
+   * Returns a triangular number.
    * @param ngen number of generators
    * @return <code>binomial(ngen + 1, 2)</code>
    */

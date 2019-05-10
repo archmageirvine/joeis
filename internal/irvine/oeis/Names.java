@@ -35,6 +35,9 @@ public final class Names {
     FORMULA.add("sqrt");
     FORMULA.add("gdinv");
     FORMULA.add("dsf");
+    FORMULA.add("sopfr");
+    FORMULA.add("INVERTi");
+    FORMULA.add("\\atop");
     FORMULA.add("Pi");
     FORMULA.add("n");
     FORMULA.add("x");

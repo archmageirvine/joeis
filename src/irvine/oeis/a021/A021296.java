@@ -4,13 +4,13 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A021292.
+ * A021296 Decimal expansion of 1/292.
  * @author Sean A. Irvine
  */
-public class A021292 extends PrependSequence {
+public class A021296 extends PrependSequence {
 
   /** Construct the sequence. */
-  public A021292() {
-    super(new PeriodicSequence(2), 0, 0, 3, 4, 7);
+  public A021296() {
+    super(new PeriodicSequence(3, 4, 2, 4, 6, 5, 7, 5), 0, 0);
   }
 }

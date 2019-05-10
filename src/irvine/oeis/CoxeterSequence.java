@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+import irvine.oeis.a000.A000217;
 
 /**
  * Special generating functions for Coxeter group sequences.
@@ -43,18 +44,18 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
    * @param c2 second coefficient in the denominator of the g.f.,
    * = 2 - (numbers of generators in the name)
    */
-  public CoxeterSequence(final int pwr, final int c1, final int c2) {
+  public CoxeterSequence(final int pwr, final Z c1, final Z c2) {
     super();
     mNum = new Z[pwr + 1];
     mDen = new Z[pwr + 1];
     mNum[pwr] = Z.ONE;
     mNum[0] = Z.ONE;
-    mDen[pwr] = Z.valueOf(c1);
+    mDen[pwr] = c1;
     mDen[0] = Z.ONE;
     int ipwr = pwr - 1;
     while (ipwr > 0) {
       mNum[ipwr] = Z.TWO;
-      mDen[ipwr] = Z.valueOf(c2);
+      mDen[ipwr] = c2;
       --ipwr;
     } // while ipwr
   }
@@ -67,24 +68,6 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
    * @param ngen number of generators
    */
   public CoxeterSequence(final int pwr, final int ngen) {
-    this(pwr, triangular(ngen), 2 - ngen);
+    this(pwr, A000217.triangular(ngen), Z.valueOf(2 - ngen));
   }
-
-  /**
-   * Returns a triangular number.
-   * @param ngen number of generators
-   * @return <code>binomial(ngen + 1, 2)</code>
-   */
-  private static int triangular(final int ngen) {
-    int result = 0;
-    // A000217 Triangular numbers: a(n) = binomial(n+1, 2)
-    // 0  1  2  3   4   5   6   7   8   9  10
-    // 0, 1, 3, 6, 10, 15, 21, 28, 36, 45, 55
-    int itri = ngen - 2;
-    while (itri >= 1) {
-      result += itri;
-      --itri;
-    } // while itri
-    return result;
-  } // triangular
 }

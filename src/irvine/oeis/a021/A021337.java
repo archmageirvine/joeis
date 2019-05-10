@@ -1,15 +1,15 @@
 package irvine.oeis.a021;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.oeis.PeriodicSequence;
 
 /**
  * A021337 Decimal expansion of 1/333.
  * @author Sean A. Irvine
  */
-public class A021337 extends LinearRecurrence {
+public class A021337 extends PeriodicSequence {
 
   /** Construct the sequence. */
   public A021337() {
-    super(new long[] {1, 0, 0}, new long[] {0, 0, 3});
+    super(0, 0, 3);
   }
 }

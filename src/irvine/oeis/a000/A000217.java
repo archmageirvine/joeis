@@ -11,10 +11,18 @@ public class A000217 implements Sequence {
 
   protected long mN = -1;
 
+  /**
+   * Return the nth triangular number.
+   * @param n index
+   * @return triangular number
+   */
+  public static Z triangular(final long n) {
+    return Z.valueOf(n).multiply(n + 1).divide2();
+  }
+
   @Override
   public Z next() {
-    ++mN;
-    return Z.valueOf(mN).multiply(mN + 1).divide2();
+    return triangular(++mN);
   }
 }
 

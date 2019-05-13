@@ -25,7 +25,7 @@ requires this to produce either the next member of the sequence or
 addition, it might sometimes throw an
 ``UnsupportedOperationException`` if the computing the next value is
 beyond the current implementation or if it would exceed the values
-that can be represneted by the big integer class.
+that can be represented by the big integer class.
 
 There is no direct support for generating the nth term of a sequence
 and so to generate the nth term, it is necessary to call ```next()```

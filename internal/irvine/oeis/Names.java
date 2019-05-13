@@ -201,7 +201,9 @@ public final class Names {
     if (file.isFile()) {
       if (file.getName().matches("A[0-9]{" + A_NUMBER_LENGTH + "}.java")) {
         final int n = Integer.parseInt(file.getName().substring(1, A_NUMBER_LENGTH + 1));
-        checkAndUpdateFile(file, names.get(n));
+        if (n < names.size()) {
+          checkAndUpdateFile(file, names.get(n));
+        }
       }
       return;
     }

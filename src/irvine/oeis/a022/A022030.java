@@ -5,25 +5,23 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022019 Define the sequence <code>S(a(0), a(1))</code> by <code>a(n+2)</code> is the least integer such that <code>a(n+2)/a(n+1) &gt; a(n+1)/a(n)</code> for <code>n &gt;= 0</code> . This is <code>S(2,32)</code>.
+ * A022030 For even n, <code>a(n+2)</code> is the greatest integer such that <code>a(n+2)/a(n+1) &lt; a(n+1)/a(n)</code>; for odd n, the least integer such that <code>a(n+2)/a(n+1) &gt; a(n+1)/a(n); a(0) = 4, a(1) = 16</code>.
  * @author Sean A. Irvine
  */
-public class A022019 implements Sequence {
-
-  // After Robert Israel
+public class A022030 implements Sequence {
 
   private Z mA = null;
   private Z mB = null;
-  private boolean mC = false;
+  private boolean mC = true;
 
   @Override
   public Z next() {
     if (mB == null) {
       if (mA == null) {
-        mA = Z.TWO;
-        return Z.TWO;
+        mA = Z.FOUR;
+        return mA;
       }
-      mB = Z.valueOf(32);
+      mB = Z.valueOf(16);
     } else {
       mC = !mC;
       final Q q = new Q(mB.square(), mA);

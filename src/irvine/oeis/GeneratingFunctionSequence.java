@@ -1,3 +1,9 @@
+/* Coxeter group sequences
+ * @(#) $Id$
+ * 2019-05-11: Georg Fischer, 3rd parameter offset
+ * 2019-05-10: Sean Irvine, Z parameters
+ * 2019-05-09: Georg Fischer
+ */
 package irvine.oeis;
 
 import java.util.Arrays;
@@ -14,8 +20,25 @@ public class GeneratingFunctionSequence implements Sequence {
 
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial
+  protected int mIndex = 0; // index of next term to be generated
 
   protected GeneratingFunctionSequence() { }
+
+ /**
+   * Construct a new rational integer polynomial generating function sequence.
+   * @param offset first valid term has this index
+   * @param num numerator
+   * @param den denominator
+   */
+  public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
+    mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
+    mDen = Arrays.copyOf(den, den.length);
+    mIndex = 0;
+    while (mIndex < offset) { // skip over leading coefficients
+      next();
+      ++mIndex;
+    } // while
+  }
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
@@ -23,8 +46,7 @@ public class GeneratingFunctionSequence implements Sequence {
    * @param den denominator
    */
   public GeneratingFunctionSequence(final Z[] num, final Z[] den) {
-    mNum = Arrays.copyOf(num, num.length); // copy because this class is destructive
-    mDen = Arrays.copyOf(den, den.length);
+    this(0, num, den);
   }
 
   /**

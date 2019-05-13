@@ -1,7 +1,6 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000217;
 
 /**
  * Special generating functions for Coxeter group sequences.
@@ -68,6 +67,6 @@ public class CoxeterSequence extends GeneratingFunctionSequence {
    * @param ngen number of generators
    */
   public CoxeterSequence(final int pwr, final int ngen) {
-    this(pwr, A000217.triangular(ngen), Z.valueOf(2 - ngen));
+    this(pwr, Z.valueOf(ngen - 2).multiply(ngen - 1).divide2(), Z.valueOf(2 - ngen));
   }
 }

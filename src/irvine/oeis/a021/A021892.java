@@ -1,0 +1,17 @@
+package irvine.oeis.a021;
+
+import irvine.oeis.PeriodicSequence;
+import irvine.oeis.PrependSequence;
+
+/**
+ * A021892.
+ * @author Sean A. Irvine
+ */
+public class A021892 extends PrependSequence {
+
+  /** Construct the sequence. */
+  public A021892() {
+    super(new PeriodicSequence(1, 2, 6), 0, 0, 1);
+  }
+}
+

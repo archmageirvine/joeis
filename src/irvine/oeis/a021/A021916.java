@@ -4,7 +4,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A021916.
+ * A021916 Decimal expansion of 1/912.
  * @author Sean A. Irvine
  */
 public class A021916 extends PrependSequence {

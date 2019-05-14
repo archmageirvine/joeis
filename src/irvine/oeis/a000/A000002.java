@@ -64,6 +64,15 @@ public class A000002 implements Sequence {
     mLimit = limit;
   }
 
+  protected boolean isSet(final long n) {
+    if (n < 0) {
+      return false;
+    }
+    final long m = n - 1;
+    final int b = mSeq.get(m >>> 5);
+    return (b & (1 << (m & 31))) != 0;
+  }
+
   @Override
   public Z next() {
     // Generation by method of Lagarias
@@ -74,11 +83,7 @@ public class A000002 implements Sequence {
     if (mN >= mLimit) {
       rewrite();
     }
-    final long m = mN - 1;
-    final int b = mSeq.get(m >>> 5);
-    final int w = b & (1 << (m & 31));
-    return w == 0 ? Z.ONE : Z.TWO;
+    return isSet(mN) ? Z.TWO : Z.ONE;
   }
-
 }
 

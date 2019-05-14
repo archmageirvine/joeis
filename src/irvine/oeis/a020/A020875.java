@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020875 Number of Hamiltonian paths in Moebius ladder <code>M_n</code>.
+ * A020875 Number of (undirected) Hamiltonian paths in n-Moebius ladder.
  * @author Sean A. Irvine
  */
 public class A020875 extends LinearRecurrence {

@@ -12,6 +12,8 @@ import irvine.math.z.Z;
  */
 public final class Period {
 
+  private Period() { }
+
   /**
    * Automatically generate reciprocals of integers.
    * @param args number
@@ -29,7 +31,7 @@ public final class Period {
     };
     final StringBuilder sb = new StringBuilder();
     for (int k = 0; k < 10000; ++k) {
-      sb.append(seq.next().toString());
+      sb.append(seq.next());
     }
     for (int k = 0; k < 100; ++k) {
       final String repeat = sb.substring(k, period);

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307877 allocated for Charles Kusniec.
+ * A307877 <code>a(n) =</code> smallest m <code>&gt;= 0</code> such that n divides <code>m+10</code>.
  * @author Sean A. Irvine
  */
 public class A307877 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020961 Sum of <code>[ n</code> times <code>tau^(3-k) ]</code> for k from 1 to infinity.
+ * A020961 <code>Sum_{k &gt;= 1} floor(n*phi^(3-k))</code>.
  * @author Sean A. Irvine
  */
 public class A020961 implements Sequence {

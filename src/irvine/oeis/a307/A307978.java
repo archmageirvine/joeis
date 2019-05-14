@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307978.
+ * A307978 Expansion of e.g.f. <code>exp((sinh(x) - sin(x))/2)</code>.
  * @author Sean A. Irvine
  */
 public class A307978 implements Sequence {

@@ -35,6 +35,8 @@ public final class Names {
     FORMULA.add("sqrt");
     FORMULA.add("gdinv");
     FORMULA.add("dsf");
+    FORMULA.add("dsf.");
+    FORMULA.add("elif");
     FORMULA.add("sopfr");
     FORMULA.add("INVERTi");
     FORMULA.add("\\atop");
@@ -49,8 +51,12 @@ public final class Names {
     FORMULA.add("xk");
     FORMULA.add("xn");
     FORMULA.add("xn.");
+    FORMULA.add("Zp");
+    FORMULA.add("xRy");
+    FORMULA.add("VVV..VV");
     FORMULA.add("abacabaabacababac...");
     FORMULA.add("aab");
+    FORMULA.add("aab,");
     FORMULA.add("\"sumdigit\"");
   }
 

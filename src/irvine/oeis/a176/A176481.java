@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001333;
 
 /**
- * A176481 A symmetrical triangle sequence: <code>b(n) = ((1+sqrt(2))^n + (1-sqrt(2))^n)/2 : t(n,m) = b(n) - b(m) - b(n - m) + 2</code>.
+ * A176481 Triangle, read by rows, defined by <code>T(n, k) = b(n) - b(k) - b(n-k) + 2</code>, where <code>b(n) = A001333(n)</code>.
  * @author Sean A. Irvine
  */
 public class A176481 extends A001333 {

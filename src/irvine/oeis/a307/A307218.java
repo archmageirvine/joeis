@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307218 allocated for Paolo P. Lava.
+ * A307218 Numbers x with k digits in base <code>2 (MSD(x)_2 = d_1, LSD(x)_2 = d_k)</code> that are equal to the product of the positions of <code>1</code>'s (see examples and formula).
  * @author Sean A. Irvine
  */
 public class A307218 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307913.
+ * A307913 allocated for Donghwi Park.
  * @author Sean A. Irvine
  */
 public class A307913 implements Sequence {

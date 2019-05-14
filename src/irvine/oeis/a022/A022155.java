@@ -1,0 +1,20 @@
+package irvine.oeis.a022;
+
+import irvine.math.z.Z;
+import irvine.oeis.a020.A020985;
+
+/**
+ * A022155 Values of n at which <code>Golay-Rudin-Shapiro</code> sequence <code>A020985</code> is negative.
+ * @author Sean A. Irvine
+ */
+public class A022155 extends A020985 {
+
+  @Override
+  public Z next() {
+    while (true) {
+      if (super.next().signum() < 0) {
+        return Z.valueOf(mN);
+      }
+    }
+  }
+}

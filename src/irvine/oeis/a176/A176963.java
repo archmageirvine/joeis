@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176963 <code>(10*4^n-3*(-4)^n-22)/30</code>.
+ * A176963 <code>a(n) = (10*4^n - 3*(-4)^n - 22)/30</code>.
  * @author Sean A. Irvine
  */
 public class A176963 extends LinearRecurrence {

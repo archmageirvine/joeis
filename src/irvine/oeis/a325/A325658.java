@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A325658.
+ * A325658 allocated for Bernard Schott.
  * @author Sean A. Irvine
  */
 public class A325658 implements Sequence {

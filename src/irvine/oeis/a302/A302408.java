@@ -16,7 +16,8 @@ public class A302408 extends A007825 {
 
   @Override
   public Z next() {
-    if (++mN == 0) {
+    mN += step();
+    if (mN == 0) {
       return Z.ONE;
     }
     setPathLength(mN);

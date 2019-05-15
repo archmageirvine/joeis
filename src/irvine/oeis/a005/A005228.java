@@ -11,7 +11,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 public class A005228 implements Sequence {
 
   private Z mA = null;
-  private final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
+  protected final LongDynamicBooleanArray mSeen = new LongDynamicBooleanArray();
   private long mC = 1;
 
   private long nextComplement() {

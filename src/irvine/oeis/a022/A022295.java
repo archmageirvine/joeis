@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A022295.
+ * A022295 Least <code>k&gt;1</code> such that first n terms of Kolakoski sequence <code>A000002</code> repeat in reverse order beginning at k-th term.
  * @author Sean A. Irvine
  */
 public class A022295 extends A000002 {

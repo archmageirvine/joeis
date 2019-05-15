@@ -17,7 +17,7 @@ public class A007825 implements Sequence {
   // force counting of paths, etc.)
   protected static final int BITS_PER_COORDINATE = 16;
   protected static final int MASK = (1 << BITS_PER_COORDINATE) - 1;
-  private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
+  protected static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
   static final int[] DELTAS = {1 << BITS_PER_COORDINATE,
     (-1) << BITS_PER_COORDINATE,
     1,
@@ -36,7 +36,7 @@ public class A007825 implements Sequence {
     return ((x + BIAS) << BITS_PER_COORDINATE) + BIAS + y;
   }
 
-  protected int mN = -1;
+  protected int mN = -step();
   private int[] mPath = null;
 
   protected void setPathLength(final int n) {
@@ -80,9 +80,14 @@ public class A007825 implements Sequence {
     return count;
   }
 
+  protected int step() {
+    return 1;
+  }
+
   @Override
   public Z next() {
-    if (++mN == 0) {
+    mN += step();
+    if (mN == 0) {
       return Z.ONE;
     }
     setPathLength(mN);

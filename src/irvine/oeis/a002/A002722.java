@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 /**
  * A002722 Rotatable partitions.
  * @author R. J. Mathar
- * @author Sean A. Irvine (conversion to jOEIS framework)
+ * @author Sean A. Irvine
  */
 public class A002722 implements Sequence {
 

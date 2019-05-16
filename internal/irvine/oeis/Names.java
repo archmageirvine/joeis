@@ -47,16 +47,20 @@ public final class Names {
     FORMULA.add("z");
     FORMULA.add("ij");
     FORMULA.add("xy");
+    FORMULA.add("XY");
     FORMULA.add("xj");
     FORMULA.add("xk");
     FORMULA.add("xn");
     FORMULA.add("xn.");
+    FORMULA.add("uu.");
+    FORMULA.add("PSumSIGN");
     FORMULA.add("Zp");
     FORMULA.add("xRy");
     FORMULA.add("VVV..VV");
     FORMULA.add("abacabaabacababac...");
     FORMULA.add("aab");
     FORMULA.add("aab,");
+    FORMULA.add("aac,");
     FORMULA.add("\"sumdigit\"");
   }
 

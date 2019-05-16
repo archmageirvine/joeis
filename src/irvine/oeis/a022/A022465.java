@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A022465.
+ * A022465 Numbers n such that <code>prime(n) mod n &lt;= 10</code>.
  * @author Sean A. Irvine
  */
 public class A022465 extends A000040 {

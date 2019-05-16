@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A022451.
+ * A022451 <code>a(1) = 3; a(n+1) = a(n)-th</code> composite.
  * @author Sean A. Irvine
  */
 public class A022451 extends A002808 {

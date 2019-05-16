@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022470 Describe the previous <code>term!</code> (method <code>B -</code> initial term is <code>2)</code>.
+ * A022482 Describe previous term from the right (method <code>A -</code> initial term is <code>2)</code>.
  * @author Sean A. Irvine
  */
-public class A022470 implements Sequence {
+public class A022482 implements Sequence {
 
   private Z mPrev = null;
 
@@ -15,18 +15,18 @@ public class A022470 implements Sequence {
     final String s = n.toString();
     final StringBuilder sb = new StringBuilder();
     int c = 1;
-    char b = s.charAt(0);
-    for (int k = 1; k < s.length(); ++k) {
+    char b = s.charAt(s.length() - 1);
+    for (int k = s.length() - 2; k >= 0; --k) {
       final char d = s.charAt(k);
       if (d != b) {
-        sb.append(b).append(c);
+        sb.append(c).append(b);
         b = d;
         c = 1;
       } else {
         ++c;
       }
     }
-    sb.append(b).append(c);
+    sb.append(c).append(b);
     return new Z(sb);
   }
 

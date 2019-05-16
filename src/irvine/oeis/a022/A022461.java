@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006094;
 
 /**
- * A022461.
+ * A022461 <code>a(n) = prime(n+1)*prime(n+2) mod prime(n)</code>.
  * @author Sean A. Irvine
  */
 public class A022461 extends A000040 {

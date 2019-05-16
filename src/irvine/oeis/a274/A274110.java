@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274110 Number of equivalence classes of ballot paths of length n for the string uu.
+ * A274110 Number of equivalence classes of ballot paths of length n for the string <code>uu</code>.
  * @author Sean A. Irvine
  */
 public class A274110 extends LinearRecurrence {

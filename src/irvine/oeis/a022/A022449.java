@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a008.A008578;
 
 /**
- * A022449.
+ * A022449 <code>c(p(n))</code> where <code>p(k)</code> is k-th prime including <code>p(1)=1</code> and <code>c(k)</code> is k-th composite number.
  * @author Sean A. Irvine
  */
 public class A022449 extends A008578 {

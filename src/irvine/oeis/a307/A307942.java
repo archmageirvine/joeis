@@ -10,10 +10,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307943 allocated for Cedric chauve.
+ * A307942 allocated for Cedric chauve.
  * @author Sean A. Irvine
  */
-public class A307943 implements Sequence {
+public class A307942 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Q FOUR = new Q(4);
@@ -31,9 +31,7 @@ public class A307943 implements Sequence {
     final Polynomial<Q> u6 = RING.multiply(u, SIX);
     final Polynomial<Q> v = RING.sqrt1p(RING.subtract(RING.subtract(u6, t6), z4), mN);
     final Polynomial<Q> v6 = RING.multiply(v, SIX);
-    final Polynomial<Q> w = RING.sqrt(RING.add(RING.add(RING.subtract(v6, u6), t6), CU), mN);
-    final Polynomial<Q> w6 = RING.multiply(w, SIX);
-    final Polynomial<Q> gf = RING.multiply(RING.sqrt1p(RING.subtract(RING.subtract(RING.add(RING.subtract(w6, v6), u6), t6), z4), mN), Q.HALF);
+    final Polynomial<Q> gf = RING.multiply(RING.sqrt(RING.add(RING.add(RING.subtract(v6, u6), t6), CU), mN), Q.HALF);
     return gf.coeff(mN).toZ().negate();
   }
 }

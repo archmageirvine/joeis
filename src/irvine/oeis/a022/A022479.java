@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006711;
 
 /**
- * A022479.
+ * A022479 Number of <code>3</code>'s in n-th term of <code>A006711</code>.
  * @author Sean A. Irvine
  */
 public class A022479 extends A006711 {

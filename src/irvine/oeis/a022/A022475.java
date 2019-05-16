@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A022475.
+ * A022475 Sum of digits in n-th term of <code>A022470</code>.
  * @author Sean A. Irvine
  */
 public class A022475 extends GeneratingFunctionSequence {

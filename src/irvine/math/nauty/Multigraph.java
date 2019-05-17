@@ -12,7 +12,7 @@ import irvine.util.CliFlags;
 
 /**
  * Generate multigraphs.
- * @author B. D. McKay (multig.c version 1.6; B D McKay, Aug 31, 2011)
+ * @author B. D. McKay (<code>multig.c version 1.6; B D McKay, Aug 31, 2011</code>)
  * @author Sean A. Irvine (minimal Java port)
  */
 public class Multigraph implements GroupAction {

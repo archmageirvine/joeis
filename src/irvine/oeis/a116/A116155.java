@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A116155 Triangle <code>T(n,k)</code> defined by : <code>T(0,0)=1, T(n,k)=0</code> if <code>k&lt;0</code> or if k&gt;n, <code>T(n,k)=T(n-1,k-1)+k*T(n-1,k)+Sum_{j, j&gt;=1}T(n-1,k+j} </code>.
+ * A116155 Triangle <code>T(n,k)</code> defined by: <code>T(0,0)=1, T(n,k)=0</code> if k <code>&lt; 0</code> or k <code>&gt</code>; n, <code>T(n,k) = T(n-1,k-1) + k*T(n-1,k) + Sum_{j&gt;=1} T(n-1,k+j}</code>.
  * @author Sean A. Irvine
  */
 public class A116155 extends MemoryFunction2<Long, Z> implements Sequence {

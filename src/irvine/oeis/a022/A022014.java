@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000598;
 import irvine.oeis.a000.A000642;
 
 /**
- * A022014 Tri-substituted alkanes of form <code>C_n H_{2n-1} X_2</code> Y, or equivalently bi-substituted alkyles of form <code>-C_n H_{2n-1} X_2 (n=1</code>: CHXXY; <code>n=2: CXXY-CHHH CXYH-CXHH CXXH-CYHH)</code>.
+ * A022014 Tri-substituted alkanes of form <code>C_n H_{2n-1} X_2</code> Y, or equivalently bi-substituted alkyls of form <code>-C_n H_{2n-1} X_2 (n=1</code>: CHXXY; <code>n=2: CXXY-CHHH CXYH-CXHH CXXH-CYHH)</code>.
  * @author Sean A. Irvine
  */
 public class A022014 extends A000598 {

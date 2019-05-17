@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005934 Highly powerful numbers.
+ * A005934 Highly powerful numbers: numbers with record value of the product of the exponents in prime factorization <code>(A005361)</code>.
  * @author Sean A. Irvine
  */
 public class A005934 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307980 allocated for Bernard Schott.
+ * A307980 Numbers k whose number of divisors is the square of the number of decimal digits of k.
  * @author Sean A. Irvine
  */
 public class A307980 implements Sequence {

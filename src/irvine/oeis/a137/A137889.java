@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137889 Number of (directed) Hamiltonian paths in the n-Hanoi graph.
+ * A137889 Number of directed Hamiltonian paths in the n-Hanoi graph.
  * @author Sean A. Irvine
  */
 public class A137889 extends LinearRecurrence {

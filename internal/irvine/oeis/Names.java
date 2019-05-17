@@ -38,9 +38,14 @@ public final class Names {
     FORMULA.add("dsf.");
     FORMULA.add("elif");
     FORMULA.add("sopfr");
+    FORMULA.add("mmdd");
     FORMULA.add("INVERTi");
     FORMULA.add("\\atop");
     FORMULA.add("Pi");
+    FORMULA.add("(Pi)");
+    FORMULA.add("(Pi).");
+    FORMULA.add("(Pi");
+    FORMULA.add("Pi)");
     FORMULA.add("n");
     FORMULA.add("x");
     FORMULA.add("y");

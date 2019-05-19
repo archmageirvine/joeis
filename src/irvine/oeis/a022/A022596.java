@@ -4,14 +4,14 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A022577.
+ * A022596.
  * @author Sean A. Irvine
  */
-public class A022577 extends EulerTransformSequence {
+public class A022596 extends EulerTransformSequence {
 
   /** Construct the sequence. */
-  public A022577() {
-    super(new PeriodicSequence(12, 0), 0);
+  public A022596() {
+    super(new PeriodicSequence(32, 0), 0);
   }
 }
 

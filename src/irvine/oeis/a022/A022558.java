@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022558.
+ * A022558 Number of permutations of length n avoiding the pattern 1342.
  * @author Sean A. Irvine
  */
 public class A022558 implements Sequence {

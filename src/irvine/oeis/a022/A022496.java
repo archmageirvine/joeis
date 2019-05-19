@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A022496.
+ * A022496 Conjectured number of irreducible multiple zeta values of depth 8 and weight <code>2n+22</code>.
  * @author Sean A. Irvine
  */
 public class A022496 extends CoordinationSequence {

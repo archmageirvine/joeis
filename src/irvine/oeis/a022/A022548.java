@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022548.
+ * A022548 Initial members of prime nonuplets <code>(p, p+4, p+10, p+12, p+18, p+22, p+24, p+28, p+30)</code>.
  * @author Sean A. Irvine
  */
 public class A022548 implements Sequence {

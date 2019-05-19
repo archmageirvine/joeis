@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022556.
+ * A022556 Numbers that are a sum of a square and 2 nonnegative cubes.
  * @author Sean A. Irvine
  */
 public class A022556 implements Sequence {

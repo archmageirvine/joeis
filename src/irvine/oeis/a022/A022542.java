@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022542.
+ * A022542 Minimum number of possible solutions for all irreducible stick-cutting problems.
  * @author Sean A. Irvine
  */
 public class A022542 implements Sequence {

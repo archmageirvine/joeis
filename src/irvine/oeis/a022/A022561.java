@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a004.A004825;
 
 /**
- * A022561.
+ * A022561 Numbers that are not the sum of 3 nonnegative cubes.
  * @author Sean A. Irvine
  */
 public class A022561 extends ComplementSequence {

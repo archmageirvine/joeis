@@ -5,7 +5,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A022562.
+ * A022562 Number of connected claw-free unlabeled graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A022562 extends ParallelGenerateGraphsSequence {

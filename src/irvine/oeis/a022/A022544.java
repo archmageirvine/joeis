@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022544.
+ * A022544 Numbers that are not the sum of 2 squares.
  * @author Sean A. Irvine
  */
 public class A022544 implements Sequence {

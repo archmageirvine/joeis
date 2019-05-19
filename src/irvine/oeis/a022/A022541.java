@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022541.
+ * A022541 Related to number of irreducible stick-cutting problems.
  * @author Sean A. Irvine
  */
 public class A022541 implements Sequence {

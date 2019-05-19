@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022502.
+ * A022502 Describe the previous <code>term!</code> (method <code>B -</code> initial term is <code>6)</code>.
  * @author Sean A. Irvine
  */
 public class A022502 implements Sequence {

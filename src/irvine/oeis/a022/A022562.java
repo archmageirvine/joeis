@@ -15,8 +15,7 @@ public class A022562 extends ParallelGenerateGraphsSequence {
     super(0, 0, false, false, false);
   }
 
-  @Override
-  protected boolean accept(final Graph graph) {
+  static boolean isClawFree(final Graph graph) {
     // Test if is claw free
     // Technically better algorithms are known
     for (int u = 0; u < graph.order(); ++u) {
@@ -35,6 +34,11 @@ public class A022562 extends ParallelGenerateGraphsSequence {
       }
     }
     return true;
+  }
+
+  @Override
+  protected boolean accept(final Graph graph) {
+    return isClawFree(graph);
   }
 
   @Override

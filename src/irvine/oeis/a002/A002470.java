@@ -15,6 +15,9 @@ public class A002470 extends A100130 {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Polynomial<Z> mA100130 = Polynomial.create(0);
+  {
+    mA100130.add(Z.ZERO);
+  }
   private int mN = -1;
 
   @Override

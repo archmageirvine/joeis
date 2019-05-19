@@ -11,7 +11,7 @@ public class A022470 implements Sequence {
 
   private Z mPrev = null;
 
-  private static Z describe(final Z n) {
+  static Z describe(final Z n) {
     final String s = n.toString();
     final StringBuilder sb = new StringBuilder();
     int c = 1;

@@ -84,7 +84,7 @@ public class Polynomial<E> extends ArrayList<E> {
     int lim = coeff.size() - 1;
     if (!(mZero instanceof CR)) {
       // Comparison to 0 is hard for CR, so assume user doesn't make a mistake in the case of CR
-      while (lim > 0 && mZero.equals(coeff.get(lim))) {
+      while (lim >= 0 && mZero.equals(coeff.get(lim))) {
         --lim;
       }
     }

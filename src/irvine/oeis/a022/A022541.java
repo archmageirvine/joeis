@@ -1,0 +1,28 @@
+package irvine.oeis.a022;
+
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A022541.
+ * @author Sean A. Irvine
+ */
+public class A022541 implements Sequence {
+
+  private final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    ++mN;
+    final int m = mN * (mN + 1) / 2;
+    Polynomial<Z> prod = RING.one();
+    for (int k = mN + 1; k <= 2 * mN - 2; ++k) {
+      prod = RING.multiply(prod, RING.series(RING.one(), RING.oneMinusXToTheN(k), m), m);
+    }
+    return prod.coeff(m);
+  }
+}

@@ -87,8 +87,11 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
   public Polynomial<E> reversion(final Polynomial<E> t, final int degree) {
     // Lagrangian power series reversion, based on Knuth, Algorithm L
     // in The Art of Computer Programming, Seminumerical Algorithms
-    if (!mElementField.zero().equals(t.coeff(0)) || !mElementField.one().equals(t.coeff(1))) {
-      throw new IllegalArgumentException();
+    if (!mElementField.zero().equals(t.coeff(0))) {
+      throw new IllegalArgumentException("Expected " + mElementField.zero() + " saw " + t.coeff(0));
+    }
+    if (t.degree() > 0 && !mElementField.one().equals(t.coeff(1))) {
+      throw new IllegalArgumentException("Expected " + mElementField.one() + " saw " + t.coeff(1));
     }
     final ArrayList<E> u = new ArrayList<>();
     final ArrayList<E> w = new ArrayList<>();

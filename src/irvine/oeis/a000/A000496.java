@@ -14,6 +14,7 @@ public class A000496 extends PrependSequence {
 
   /** Construct the sequence. */
   public A000496() {
-    super(new GeneratingFunctionSequence(new long[] {24, -4, -8, -16, -4}, new long[] {1, -2, 0, 0, 1}), Z.ONE, Z.ONE, Z.TWO, Z.SIX);
+    super(new GeneratingFunctionSequence(new long[] {24, -4, -8, -16, -4},
+      new long[] {1, -2, 0, 0, 1}), Z.ONE, Z.ONE, Z.TWO, Z.SIX);
   }
 }

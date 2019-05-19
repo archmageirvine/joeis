@@ -16,8 +16,8 @@ public class A022494 extends A137251 {
 
   // After Gheorghe Coserea
 
-  private final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final PolynomialRingField<Polynomial<Z>> RING2 = new PolynomialRingField<>("t", RING);
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final PolynomialRingField<Polynomial<Z>> RING2 = new PolynomialRingField<>("t", RING);
   private int mN = 0;
 
   @Override

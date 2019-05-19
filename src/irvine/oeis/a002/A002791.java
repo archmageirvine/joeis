@@ -11,7 +11,8 @@ public class A002791 extends InverseMobiusTransformSequence {
 
   /** Construct the sequence. */
   public A002791() {
-    super(new GeneratingFunctionSequence(new long[] {1, 2, 2, 2, -3}, new long[] {1, -2, 1}), 0);
+    super(new GeneratingFunctionSequence(new long[] {1, 2, 2, 2, -3},
+      new long[] {1, -2, 1}), 0);
     next();
   }
 }

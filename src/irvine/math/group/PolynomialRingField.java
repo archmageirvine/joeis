@@ -85,8 +85,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @throws IllegalArgumentException if the polynomial is not of the correct form.
    */
   public Polynomial<E> reversion(final Polynomial<E> t, final int degree) {
-    // Lagrangian power series reversion, based on Knuth, Algorithm L
-    // in The Art of Computer Programming, Seminumerical Algorithms
+    // Lagrangian power series reversion, based on Knuth, Algorithm L in The Art of Computer Programming, Seminumerical Algorithms
     if (!mElementField.zero().equals(t.coeff(0))) {
       throw new IllegalArgumentException("Expected " + mElementField.zero() + " saw " + t.coeff(0));
     }
@@ -564,8 +563,7 @@ public class PolynomialRingField<E> extends PolynomialRing<E> implements Field<P
    * @return series for <code>sqrt(1+p)</code>.
    */
   public Polynomial<E> sqrt1p(final Polynomial<E> p, final int n) {
-    // In rationals sqrt(1+x) = 1 + (1/2)x - (1/2)(1/4)x^2
-    //        + (1/2)(1/4)(3/6)x^3 - (1/2)(1/4)(3/6)(5/8)x^4 + ...
+    // In rationals sqrt(1+x) = 1 + (1/2)x - (1/2)(1/4)x^2 + (1/2)(1/4)(3/6)x^3 - (1/2)(1/4)(3/6)(5/8)x^4 + ...
     Polynomial<E> s = one();
     if (!zero().equals(p)) {
       E coeff = mOne;

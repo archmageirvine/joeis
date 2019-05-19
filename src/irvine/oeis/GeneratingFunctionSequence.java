@@ -26,7 +26,7 @@ public class GeneratingFunctionSequence implements Sequence {
 
  /**
    * Construct a new rational integer polynomial generating function sequence.
-   * @param offset first valid term has this index
+  * @param offset first valid term has this index
    * @param num numerator
    * @param den denominator
    */
@@ -55,7 +55,17 @@ public class GeneratingFunctionSequence implements Sequence {
    * @param den coefficients of the denominator polynomial
    */
   public GeneratingFunctionSequence(final long[] num, final long[] den) {
-    this(ZUtils.toZ(num), ZUtils.toZ(den));
+    this(0, ZUtils.toZ(num), ZUtils.toZ(den));
+  }
+
+  /**
+   * Construct the specified generating function.
+   * @param offset first valid term has this index
+   * @param num coefficients of the numerator   polynomial
+   * @param den coefficients of the denominator polynomial
+   */
+  public GeneratingFunctionSequence(final int offset, final long[] num, final long[] den) {
+    this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
   }
 
   /**

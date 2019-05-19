@@ -10,6 +10,7 @@ public class A021824 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A021824() {
-    super(new long[] {1}, new long[] {1, -20, 133, -330, 216});
+    super(new long[] {1},
+      new long[] {1, -20, 133, -330, 216});
   }
 }

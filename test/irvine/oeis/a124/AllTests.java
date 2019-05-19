@@ -26,6 +26,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A124089Test.class);
     suite.addTestSuite(A124090Test.class);
     suite.addTestSuite(A124093Test.class);
+    suite.addTestSuite(A124099Test.class);
+    suite.addTestSuite(A124100Test.class);
     suite.addTestSuite(A124101Test.class);
     suite.addTestSuite(A124107Test.class);
     suite.addTestSuite(A124124Test.class);
@@ -51,12 +53,15 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A124342Test.class);
     suite.addTestSuite(A124349Test.class);
     suite.addTestSuite(A124350Test.class);
+    suite.addTestSuite(A124351Test.class);
+    suite.addTestSuite(A124352Test.class);
     suite.addTestSuite(A124353Test.class);
     suite.addTestSuite(A124356Test.class);
     suite.addTestSuite(A124363Test.class);
     suite.addTestSuite(A124370Test.class);
     suite.addTestSuite(A124388Test.class);
     suite.addTestSuite(A124395Test.class);
+    suite.addTestSuite(A124400Test.class);
     suite.addTestSuite(A124437Test.class);
     suite.addTestSuite(A124439Test.class);
     suite.addTestSuite(A124451Test.class);
@@ -67,7 +72,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A124502Test.class);
     suite.addTestSuite(A124517Test.class);
     suite.addTestSuite(A124610Test.class);
+    suite.addTestSuite(A124612Test.class);
+    suite.addTestSuite(A124615Test.class);
+    suite.addTestSuite(A124616Test.class);
     suite.addTestSuite(A124625Test.class);
+    suite.addTestSuite(A124630Test.class);
+    suite.addTestSuite(A124633Test.class);
     suite.addTestSuite(A124647Test.class);
     suite.addTestSuite(A124668Test.class);
     suite.addTestSuite(A124671Test.class);
@@ -75,17 +85,26 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A124680Test.class);
     suite.addTestSuite(A124683Test.class);
     suite.addTestSuite(A124697Test.class);
+    suite.addTestSuite(A124698Test.class);
+    suite.addTestSuite(A124699Test.class);
     suite.addTestSuite(A124720Test.class);
     suite.addTestSuite(A124721Test.class);
     suite.addTestSuite(A124722Test.class);
     suite.addTestSuite(A124745Test.class);
+    suite.addTestSuite(A124746Test.class);
+    suite.addTestSuite(A124750Test.class);
     suite.addTestSuite(A124751Test.class);
     suite.addTestSuite(A124789Test.class);
     suite.addTestSuite(A124793Test.class);
+    suite.addTestSuite(A124805Test.class);
+    suite.addTestSuite(A124806Test.class);
+    suite.addTestSuite(A124807Test.class);
     suite.addTestSuite(A124820Test.class);
     suite.addTestSuite(A124861Test.class);
     suite.addTestSuite(A124868Test.class);
+    suite.addTestSuite(A124925Test.class);
     suite.addTestSuite(A124980Test.class);
+    suite.addTestSuite(A124999Test.class);
     return suite;
   }
 

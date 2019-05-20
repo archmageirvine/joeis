@@ -5,16 +5,13 @@ import irvine.oeis.GeneratingFunctionSequence;
 
 /**
  * A161410 Number of reduced words of length n in the infinite affine Weyl group <code>(E_6)^{~}</code> on 7 generators.
-}</code> on 7 generators.
  * @author Georg Fischer
  */
 public class A161410 extends GeneratingFunctionSequence {
 
   /** Construct the sequence. */
   public A161410() {
-    super(0, new long[] {1, 3, 5, 7, 10, 14, 17, 19, 22, 25, 26, 26, 26, 25, 22, 19, 
-      17, 14, 10, 7, 5, 3, 1},
-      new long[] {1, -4, 6, -4, 1, 0, 0, -1, 4, -6, 4, -2, 4, -6, 4, -1, 0, 
-      0, 1, -4, 6, -4, 1});
+    super(0, new long[] {1, 3, 5, 7, 10, 14, 17, 19, 22, 25, 26, 26, 26, 25, 22, 19, 17, 14, 10, 7, 5, 3, 1},
+      new long[] {1, -4, 6, -4, 1, 0, 0, -1, 4, -6, 4, -2, 4, -6, 4, -1, 0, 0, 1, -4, 6, -4, 1});
   }
 }

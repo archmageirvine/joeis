@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161410 Number of reduced words of length n in the infinite affine Weyl group <code>(E_6)^{
+ * A161410 Number of reduced words of length n in the infinite affine Weyl group <code>(E_6)^{~}</code> on 7 generators.
 }</code> on 7 generators.
  * @author Georg Fischer
  */

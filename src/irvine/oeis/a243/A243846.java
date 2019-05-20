@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A243846.
+ * A243846 Numbers for which the nozero power-sequence of n falls into a loop.
  * @author Sean A. Irvine
  */
 public class A243846 implements Sequence {

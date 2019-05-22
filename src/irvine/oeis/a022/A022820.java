@@ -1,0 +1,23 @@
+package irvine.oeis.a022;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A022820 <code>[ n/1 ] - [ (n-1)/2 ] + [ (n-2)/3 ] -</code> ... <code>+ ((-1)^n)[ 2/(n-1) ]</code>.
+ * @author Sean A. Irvine
+ */
+public class A022820 implements Sequence {
+
+  private long mN = 1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    Z sum = Z.ZERO;
+    for (long k = 1; k < mN; ++k) {
+      sum = sum.signedAdd((k & 1) == 1, Z.valueOf((mN - k + 1) / k));
+    }
+    return sum;
+  }
+}

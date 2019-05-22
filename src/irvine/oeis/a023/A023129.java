@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.cr.CR;
 
 /**
- * A023129.
+ * A023129 Signature sequence of <code>sqrt(e)</code>.
  * @author Sean A. Irvine
  */
 public class A023129 extends A023117 {

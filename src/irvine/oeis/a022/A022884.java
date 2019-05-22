@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022884.
+ * A022884 Numbers k such that <code>prime(k) + prime(k+3) = prime(k+1) + prime(k+2)</code>.
  * @author Sean A. Irvine
  */
 public class A022884 implements Sequence {

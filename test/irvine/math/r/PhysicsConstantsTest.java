@@ -20,10 +20,6 @@ public class PhysicsConstantsTest extends TestCase {
     assertEquals(376.730313461, PhysicsConstants.CHARACTERISTIC_IMPEDANCE_OF_VACUUM, 1E-9);
   }
 
-  public void testG0() {
-    assertEquals(7.7480917310E-5, PhysicsConstants.CONDUCTANCE_QUANTUM, 1E-12);
-  }
-
   public void testFaraday() {
     assertEquals(96485.33289, PhysicsConstants.FARADAY, 1E-4);
   }

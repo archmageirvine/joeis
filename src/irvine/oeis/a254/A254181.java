@@ -1,16 +1,20 @@
 package irvine.oeis.a254;
 
+import irvine.math.cr.CR;
 import irvine.math.r.PhysicsConstants;
-import irvine.oeis.DoubleDecimalExpansionSequence;
+import irvine.math.z.Z;
+import irvine.oeis.DecimalExpansionSequence;
 
 /**
  * A254181 Decimal expansion of reduced Planck constant (in joule seconds).
  * @author Sean A. Irvine
  */
-public class A254181 extends DoubleDecimalExpansionSequence {
+public class A254181 extends DecimalExpansionSequence {
 
-  /** Construct the sequence. */
-  public A254181() {
-    super(PhysicsConstants.HBAR, PhysicsConstants.HBAR_UNC, true);
+  private static final CR N = PhysicsConstants.HBAR_CR.multiply(CR.valueOf(Z.TEN.pow(33)));
+
+  @Override
+  protected CR getCR() {
+    return N;
   }
 }

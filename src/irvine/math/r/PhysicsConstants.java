@@ -1,5 +1,9 @@
 package irvine.math.r;
 
+import irvine.math.cr.CR;
+import irvine.math.q.Q;
+import irvine.math.z.Z;
+
 /**
  * Various double precision physical constants.
  *
@@ -37,29 +41,20 @@ public final class PhysicsConstants {
   /** Uncertainty in Newtonian gravitation constant, G, in m^3 kg^-1 s^-2. */
   public static final double GRAVITATION_CONSTANT_UNC = 0.00031E-11;
 
-  /** Planck constant in J s. */
-  public static final double PLANCK_CONSTANT     = 6.626070040E-34;
-  /** Uncertainty in Planck constant in J s. */
-  public static final double PLANCK_CONSTANT_UNC = 0.000000081E-34;
+  /** Planck constant in J s. As of 2019 this has a fixed exact value. */
+  public static final double PLANCK_CONSTANT     = 6.62607015E-34;
+  /** Planck constant in J s. As of 2019 this has a fixed exact value. */
+  public static final CR PLANCK_CONSTANT_CR      = CR.valueOf(new Q(Z.valueOf(662607015), Z.TEN.pow(34)));
   /** Planck constant over tau. */
   public static final double HBAR = PLANCK_CONSTANT / Constants.TAU;
-  /** Uncertainty in Planck constant over tau. */
-  public static final double HBAR_UNC = PLANCK_CONSTANT_UNC / Constants.TAU;
+  public static final CR HBAR_CR = PLANCK_CONSTANT_CR.divide(CR.TAU);
 
-  /** Charge of an electron, e, in C. */
-  public static final double ELEMENTARY_CHARGE     = 1.6021766208E-19;
+  /** Charge of an electron, e, in C. As of 2019 this has a fixed exact value. */
+  public static final double ELEMENTARY_CHARGE     = 1.602176634E-19;
+  /** Planck constant in J s. As of 2019 this has a fixed exact value. */
+  public static final CR ELEMENTARY_CHARGE_CR = CR.valueOf(new Q(Z.valueOf(1602176634), Z.TEN.pow(19)));
   /** Uncertainty in charge of an electron, e, in C. */
-  public static final double ELEMENTARY_CHARGE_UNC = 0.0000000098E-19;
-
-  /** Magnetic flux quantum Phi_0 in Wb */
-  public static final double MAGNETIC_FLUX_QUANTUM = PLANCK_CONSTANT / ELEMENTARY_CHARGE / 2;
-  /** Uncertainty in magnetic flux quantum Phi_0 in Wb */
-  public static final double MAGNETIC_FLUX_QUANTUM_UNC = 0.5 * errorDivide(PLANCK_CONSTANT, PLANCK_CONSTANT_UNC, ELEMENTARY_CHARGE, ELEMENTARY_CHARGE_UNC);
-
-  /** Conductance quantum G_0 in S. */
-  public static final double CONDUCTANCE_QUANTUM = 2 * ELEMENTARY_CHARGE * ELEMENTARY_CHARGE / PLANCK_CONSTANT;
-  /** Uncertainty in conductance quantum G_0 in S. */
-  public static final double CONDUCTANCE_QUANTUM_UNC = 2 * errorDivide(ELEMENTARY_CHARGE * ELEMENTARY_CHARGE, errorMultiply(ELEMENTARY_CHARGE, ELEMENTARY_CHARGE_UNC, ELEMENTARY_CHARGE, ELEMENTARY_CHARGE_UNC), PLANCK_CONSTANT, PLANCK_CONSTANT_UNC);
+  public static final double ELEMENTARY_CHARGE_UNC = 0;
 
   /** The fine structure constant, alpha. */
   public static final double FINE_STRUCTURE_CONSTANT     = 7.2973525664E-3;

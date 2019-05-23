@@ -1,15 +1,19 @@
 package irvine.oeis.a022;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A022958 <code>2-n</code>.
  * @author Sean A. Irvine
  */
-public class A022958 extends LinearRecurrence {
+public class A022958 implements Sequence {
 
-  /** Construct the sequence. */
-  public A022958() {
-    super(new long[] {-1, 2}, new long[] {2, 1});
+  private Z mN = Z.THREE;
+
+  @Override
+  public Z next() {
+    mN = mN.subtract(1);
+    return mN;
   }
 }

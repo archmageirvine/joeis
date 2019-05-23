@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022890.
+ * A022890 n-th index k such that <code>p(k) + p(k+6) = p(k+2) + p(k+4)</code>.
  * @author Sean A. Irvine
  */
 public class A022890 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022900.
+ * A022900 Number of solutions to <code>c(1)*prime(3) +</code> ... <code>+ c(n)*prime(n+2) = 0</code>, where <code>c(i) = +-1</code> for <code>i&gt;1, c(1) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A022900 extends A022894 {

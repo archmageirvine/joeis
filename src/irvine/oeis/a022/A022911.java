@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A022911.
+ * A022911 Arrange the nontrivial binomial coefficients <code>C(m,k) (2 &lt;= k &lt;= m/2)</code> in increasing order (not removing duplicates); record the sequence of m's.
  * @author Sean A. Irvine
  */
 public class A022911 implements Sequence {
@@ -32,6 +32,10 @@ public class A022911 implements Sequence {
     return Binomial.binomial(a.left(), a.right());
   }
 
+  protected Z select(final Pair<Long, Long> a) {
+    return Z.valueOf(a.left());
+  }
+
   @Override
   public Z next() {
     final Pair<Long, Long> res = mA.pollFirst();
@@ -39,6 +43,6 @@ public class A022911 implements Sequence {
     if (res.right() + 1 <= res.left() / 2) {
       mA.add(new Pair<>(res.left(), res.right() + 1));
     }
-    return Z.valueOf(res.left());
+    return select(res);
   }
 }

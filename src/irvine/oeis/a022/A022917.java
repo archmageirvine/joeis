@@ -1,0 +1,19 @@
+package irvine.oeis.a022;
+
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A022917 Multinomial coefficient <code>n!/ ([n/4]!, [(n+1)/4]!, [(n+2)/4]!, [(n+3)/4]!)</code>.
+ * @author Sean A. Irvine
+ */
+public class A022917 implements Sequence {
+
+  private int mN = -1;
+
+  @Override
+  public Z next() {
+    return Binomial.multinomial(++mN, mN / 4, (mN + 1) / 4, (mN + 2) / 4, (mN + 3) / 4);
+  }
+}

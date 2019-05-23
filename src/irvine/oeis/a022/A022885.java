@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022885.
+ * A022885 Primes <code>p(k)</code> such that <code>p(k) + p(k+3) = p(k+1) + p(k+2)</code>.
  * @author Sean A. Irvine
  */
 public class A022885 implements Sequence {

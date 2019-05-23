@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022891.
+ * A022891 n-th prime <code>p(k)</code> such that <code>p(k) + p(k+6) = p(k+2) + p(k+4)</code>.
  * @author Sean A. Irvine
  */
 public class A022891 implements Sequence {

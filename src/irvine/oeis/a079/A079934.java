@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A079934 Greedy frac multiples of <code>sqrt(2): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1</code> at <code>x=sqrt(2)</code>.
+ * A079934 Greedy <code>frac</code> multiples of <code>sqrt(2): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1</code> at <code>x=sqrt(2)</code>.
  * @author Georg Fischer
  */
 public class A079934 extends GeneratingFunctionSequence {

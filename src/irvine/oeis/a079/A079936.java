@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079936 Greedy frac multiples of <code>sqrt(5): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1</code> at <code>x=sqrt(5)</code>.
+ * A079936 Greedy <code>frac</code> multiples of <code>sqrt(5): a(1)=1, sum(n&gt;0,frac(a(n)*x))=1</code> at <code>x=sqrt(5)</code>.
  * @author Sean A. Irvine
  */
 public class A079936 extends LinearRecurrence {

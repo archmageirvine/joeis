@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a010.A010859;
 
 /**
- * A023018.
+ * A023018 Number of partitions of n into parts of 20 kinds.
  * @author Sean A. Irvine
  */
 public class A023018 extends EulerTransformSequence {

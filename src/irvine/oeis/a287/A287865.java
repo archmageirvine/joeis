@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A287865 <code>a(n) = gpf(2*a(n-1)+1)</code>, with <code>a(1)=1</code>, where gpf <code>= A006530</code>.
+ * A287865 <code>a(n) = gpf(2*a(n-1)+1)</code>, with <code>a(1)=1</code>, where <code>gpf = A006530</code>.
  * @author Georg Fischer
  */
 public class A287865 extends GeneratingFunctionSequence {

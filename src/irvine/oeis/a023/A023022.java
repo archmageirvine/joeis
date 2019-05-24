@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A023022.
+ * A023022 Number of partitions of n into two relatively prime parts. After initial term, this is the <code>"half-totient"</code> function <code>phi(n)/2 (A000010(n)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A023022 extends PrependSequence {

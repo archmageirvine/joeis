@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000741;
 
 /**
- * A023032.
+ * A023032 Number of compositions of n into 7 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A023032 extends A000741 {

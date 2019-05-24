@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023023.
+ * A023023 Number of partitions of n into 3 unordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A023023 implements Sequence {

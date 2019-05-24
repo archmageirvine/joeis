@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000741;
 
 /**
- * A023033.
+ * A023033 Number of compositions of n into 8 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A023033 extends A000741 {

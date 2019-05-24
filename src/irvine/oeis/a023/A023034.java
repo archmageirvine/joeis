@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000741;
 
 /**
- * A023034.
+ * A023034 Number of compositions of n into 9 ordered relatively prime parts.
  * @author Sean A. Irvine
  */
 public class A023034 extends A000741 {

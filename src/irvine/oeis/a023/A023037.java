@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023037.
+ * A023037 <code>a(n) = n^0+n^1+...+n^(n-1)</code>, or <code>a(n) = (n^n-1)/(n-1)</code> with <code>a(0)=0; a(1)=1</code>.
  * @author Sean A. Irvine
  */
 public class A023037 implements Sequence {

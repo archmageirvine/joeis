@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022773 Ordered sequence of distinct terms of form <code>[ (x^i)[ x^j ] ]</code>, i,j <code>&gt;= 0</code>, where <code>x = log(5)</code>.
+ * A022773 Ordered sequence of distinct terms of the form <code>floor(x^i * floor(x^j))</code>, i,j <code>&gt;= 0</code>, where <code>x = log(5)</code>.
  * @author Sean A. Irvine
  */
 public class A022773 extends A022765 {

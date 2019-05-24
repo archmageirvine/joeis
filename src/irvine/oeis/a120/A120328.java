@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120328 Sum of three consecutive squares: <code>n^2 + (n + 1)^2 + (n + 2)^2</code>.
+ * A120328 Sum of three consecutive squares: <code>a(n) = n^2 + (n + 1)^2 + (n + 2)^2</code>.
  * @author Sean A. Irvine
  */
 public class A120328 extends LinearRecurrence {

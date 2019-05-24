@@ -34,9 +34,11 @@ public final class Names {
     FORMULA.add("mod");
     FORMULA.add("sqrt");
     FORMULA.add("gdinv");
+    FORMULA.add("gpf");
     FORMULA.add("dsf");
     FORMULA.add("dsf.");
     FORMULA.add("elif");
+    FORMULA.add("frac");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
     FORMULA.add("INVERTi");
@@ -55,18 +57,34 @@ public final class Names {
     FORMULA.add("XY");
     FORMULA.add("xj");
     FORMULA.add("xk");
+    FORMULA.add("xk)");
     FORMULA.add("xn");
+    FORMULA.add("zx");
+    FORMULA.add("yz");
     FORMULA.add("xn.");
+    FORMULA.add("ub");
+    FORMULA.add("uv");
     FORMULA.add("uu.");
+    FORMULA.add("uf,");
+    FORMULA.add("nx,");
     FORMULA.add("PSumSIGN");
+    FORMULA.add("THTH");
+    FORMULA.add("HTHH.");
+    FORMULA.add("Xa.");
+    FORMULA.add("Xb.");
+    FORMULA.add("Xf.");
     FORMULA.add("Zp");
     FORMULA.add("xRy");
-    FORMULA.add("VVV..VV");
+    FORMULA.add("VVV..VV;");
     FORMULA.add("abacabaabacababac...");
     FORMULA.add("aab");
     FORMULA.add("aab,");
     FORMULA.add("aac,");
     FORMULA.add("\"sumdigit\"");
+    FORMULA.add("\"reo\"");
+    FORMULA.add("\"svh\"");
+    FORMULA.add("\"tcd\"");
+    FORMULA.add("\"ubt\"");
   }
 
   static String formulaProtect(final String name) {

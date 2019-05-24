@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008348;
 
 /**
- * A022836 <code>a(n) = c(1)p(i-1)+...+c(n)p(n-1)</code>, where <code>c(i) = 1</code> if <code>a(i-1) &gt;= p(i-1)</code> and <code>c(i) = -1</code> if <code>a(i-1) &lt; p(i-1) (p(0)=1, p(i)=primes)</code>.
+ * A022836 <code>a(n) = c(1)p(0) +</code> ... <code>+ c(n)p(n-1)</code>, where <code>c(i) = 1</code> if <code>a(i-1) &lt;= p(i-1)</code> and <code>c(i) = -1</code> if <code>a(i-1) &gt; p(i-1) (p(0)=1, p(i)=primes)</code>.
  * @author Sean A. Irvine
  */
 public class A022836 extends A008348 {

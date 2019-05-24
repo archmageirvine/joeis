@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022772 Ordered sequence of distinct terms of form <code>[ (x^i)[ x^j ] ]</code>, i,j <code>&gt;= 0</code>, where <code>x = sqrt(3/2)</code>.
+ * A022772 Ordered sequence of distinct terms of the form <code>floor(x^i * floor(x^j))</code>, i,j <code>&gt;= 0</code>, where <code>x = sqrt(3/2)</code>.
  * @author Sean A. Irvine
  */
 public class A022772 extends A022765 {

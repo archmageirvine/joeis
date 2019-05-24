@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A022765 Ordered sequence of distinct terms of form <code>[ (x^i)[ x^j ] ]</code>, i,j <code>&gt;= 0</code>, where <code>x =</code> e.
+ * A022765 Ordered sequence of distinct terms of the form <code>floor(exp(i) * floor(exp(j)))</code>, i,j <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A022765 implements Sequence {

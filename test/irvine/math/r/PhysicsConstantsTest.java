@@ -21,7 +21,7 @@ public class PhysicsConstantsTest extends TestCase {
   }
 
   public void testFaraday() {
-    assertEquals(96485.33289, PhysicsConstants.FARADAY, 1E-4);
+    assertEquals(96485.333677, PhysicsConstants.FARADAY, 1E-4);
   }
 
   public void testPlanckMass() {

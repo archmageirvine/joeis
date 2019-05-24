@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A325658 allocated for Bernard Schott.
+ * A325658 Brazilian composites of the form <code>1 + b + b^2 + b^3 +</code> ... <code>+ b^k, b &gt; 1, k &gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A325658 implements Sequence {

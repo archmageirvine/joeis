@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A022767 Ordered sequence of distinct terms of form <code>[ (Pi^i)[ Pi^j ] ]</code>, i, j <code>&gt;= 0</code>.
+ * A022767 Ordered sequence of distinct terms of the form <code>floor(Pi^i * floor(Pi^j))</code>, i, j <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A022767 extends A022765 {

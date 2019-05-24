@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076507 3 people at a party are saying Hello to each other. Person " says Hello Hello. Person 3 counts the times Hello has been said and says Hello thrice that number. Person 1 says Hello equal to the sum of Hello's and then it is Person 2 again. This is how many Hello's are said.
+ * A076507 Three people <code>(P1, P2, P3)</code> are in a circle and are saying Hello to each other. They start with <code>P2</code> saying "Hello, Hello". Thereafter Pn says "Hello" for n times the total number of Hello's so far.
  * @author Georg Fischer
  */
 public class A076507 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A076159 Numbers n such that <code>n = sod_4 - sod_3 + sod_2 - sod_1</code>, where <code>sod_k</code> is the sum of k-th powers of digits of n.
+ * A076159 Numbers k such that k <code>= sod_4 - sod_3 + sod_2 - sod_1</code>, where <code>sod_j</code> is the sum of j-th powers of digits of k.
  * @author Georg Fischer
  */
 public class A076159 extends FiniteSequence {

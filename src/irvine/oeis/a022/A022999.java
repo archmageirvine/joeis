@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022999.
+ * A022999 Areas for which ApSimon's diagonal point triangle problem has no solution.
  * @author Sean A. Irvine
  */
 public class A022999 implements Sequence {

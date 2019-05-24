@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086161 Number of monomial ideals in two variables x, y that are artinian, integrally closed, of colength n and contain <code>x^2</code>.
+ * A086161 Number of monomial ideals in two variables x, y that are Artinian, integrally closed, of colength n and contain <code>x^2</code>.
  * @author Georg Fischer
  */
 public class A086161 extends GeneratingFunctionSequence {

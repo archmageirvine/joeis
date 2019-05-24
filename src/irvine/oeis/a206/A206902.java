@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206902 Number of nonisomorphic graded posets with 0 and uniform hasse graph of rank n with no 3-element antichain.
+ * A206902 Number of nonisomorphic graded posets with 0 and uniform Hasse diagram of rank n with no 3-element antichain.
  * @author Georg Fischer
  */
 public class A206902 extends GeneratingFunctionSequence {

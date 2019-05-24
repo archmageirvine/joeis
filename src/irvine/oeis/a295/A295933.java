@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A295933 Number of (not necessarily maximum) cliques in the n-Sieprinski sieve graph.
+ * A295933 Number of (not necessarily maximum) cliques in the n-Sierpinski sieve graph.
  * @author Georg Fischer
  */
 public class A295933 extends GeneratingFunctionSequence {

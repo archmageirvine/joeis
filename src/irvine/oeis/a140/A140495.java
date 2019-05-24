@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140495 Union of <code>A052103, A052102</code> and <code>A052101</code>, unique'd and sorted.
+ * A140495 Union of <code>A052103, A052102</code> and <code>A052101</code>, uniqued and sorted.
  * @author Georg Fischer
  */
 public class A140495 extends GeneratingFunctionSequence {

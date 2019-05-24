@@ -20,13 +20,6 @@ public final class PhysicsConstants {
     return e * v1 * v2;
   }
 
-  private static double errorDivide(final double v1, final double u1, final double v2, final double u2) {
-    final double mpR = u1 / v1;
-    final double meR = u2 / v2;
-    final double e = mpR + meR;
-    return e * v1 / v2;
-  }
-
   /** Speed of light in vacuum in m/s. An exact value. */
   public static final long SPEED_OF_LIGHT = 299792458;
   /** Magnetic constant, mu_0, 4 * pi * 10^-7 in N/A^2. */
@@ -47,6 +40,7 @@ public final class PhysicsConstants {
   public static final CR PLANCK_CONSTANT_CR      = CR.valueOf(new Q(Z.valueOf(662607015), Z.TEN.pow(34)));
   /** Planck constant over tau. */
   public static final double HBAR = PLANCK_CONSTANT / Constants.TAU;
+  /** Planck constant over tau. */
   public static final CR HBAR_CR = PLANCK_CONSTANT_CR.divide(CR.TAU);
 
   /** Charge of an electron, e, in C. As of 2019 this has a fixed exact value. */

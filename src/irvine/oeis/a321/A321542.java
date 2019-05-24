@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321542 <code>a(0)=1</code>; thereafter <code>a(n) = 3*a(n-1)</code> with digits rearranged into non-decreasing order.
+ * A321542 <code>a(0)=1</code>; thereafter <code>a(n) = 3*a(n-1)</code> with digits rearranged into nondecreasing order.
  * @author Georg Fischer
  */
 public class A321542 extends GeneratingFunctionSequence {

@@ -12,7 +12,15 @@ import irvine.oeis.Sequence;
 public class A001918 implements Sequence {
 
   private final Fast mPrime = new Fast();
-  private Z mP = Z.ONE;
+  protected Z mP = Z.ONE;
+
+  /**
+   * The prime for the most recent result
+   * @return the prime
+   */
+  public Z getP() {
+    return mP;
+  }
 
   @Override
   public Z next() {

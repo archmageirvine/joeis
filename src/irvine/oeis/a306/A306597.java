@@ -17,22 +17,22 @@ import irvine.oeis.Sequence;
 public class A306597 implements Sequence {
 
   private class Interval implements Comparable<Interval> {
-    private int mMin;
-    private int mMax;
+    private final int mMin;
+    private final int mMax;
 
-    public Interval(int min, int max) {
-      this.mMin = min;
-      this.mMax = max;
+    public Interval(final int min, final int max) {
+      mMin = min;
+      mMax = max;
     }
 
-    public Interval shift(int d) {
+    public Interval shift(final int d) {
       return new Interval(mMin + d, mMax + d);
     }
 
     @Override
-    public int compareTo(Interval that) {
-      int dMin = this.mMin - that.mMin;
-      return (dMin != 0) ? dMin : this.mMax - that.mMax;
+    public int compareTo(final Interval that) {
+      final int dMin = Integer.compare(mMin, that.mMin);
+      return dMin != 0 ? dMin : Integer.compare(mMax, that.mMax);
     }
   }
 

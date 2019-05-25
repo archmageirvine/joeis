@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
 import irvine.math.LongUtils;
@@ -38,17 +38,15 @@ public class A028492 implements Sequence {
           if (area2 == 0) {
             continue;
           }
-          final long[] sidesSquared = {
-            (bx - ax) * (bx - ax) + (by - ay) * (by - ay),
-            (cx - ax) * (cx - ax) + (cy - ay) * (cy - ay),
-            (bx - cx) * (bx - cx) + (by - cy) * (by - cy),
-          };
-          Arrays.sort(sidesSquared);
-          final long gcd = LongUtils.gcd(sidesSquared[0], sidesSquared[1], sidesSquared[2]);
+          final long s0 = (bx - ax) * (bx - ax) + (by - ay) * (by - ay);
+          final long s1 = (cx - ax) * (cx - ax) + (cy - ay) * (cy - ay);
+          final long s2 = (bx - cx) * (bx - cx) + (by - cy) * (by - cy);
+          final long gcd = LongUtils.gcd(s0, s1, s2);
           final ArrayList<Long> ss = new ArrayList<>(3);
-          ss.add(sidesSquared[0] / gcd);
-          ss.add(sidesSquared[1] / gcd);
-          ss.add(sidesSquared[2] / gcd);
+          ss.add(s0 / gcd);
+          ss.add(s1 / gcd);
+          ss.add(s2 / gcd);
+          Collections.sort(ss);
           if (seenSides.add(ss)) {
             ++cnt;
           }

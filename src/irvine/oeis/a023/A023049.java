@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023049.
+ * A023049 Smallest prime <code>&gt; n</code> having primitive root n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A023049 implements Sequence {

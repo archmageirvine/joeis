@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023051.
+ * A023051 Numbers that are the sum of two positive cubes in at least four ways (all solutions).
  * @author Sean A. Irvine
  */
 public class A023051 implements Sequence {

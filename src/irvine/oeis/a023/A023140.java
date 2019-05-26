@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023140.
+ * A023140 Number of cycles of function <code>f(x) = 8x mod</code> n.
  * @author Sean A. Irvine
  */
 public class A023140 implements Sequence {

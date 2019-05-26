@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A306597.
+ * A306597 allocated for Luc Rousseau.
  * @author Luc Rousseau
  */
 public class A306597 implements Sequence {
@@ -20,12 +20,12 @@ public class A306597 implements Sequence {
     private final int mMin;
     private final int mMax;
 
-    public Interval(final int min, final int max) {
+    private Interval(final int min, final int max) {
       mMin = min;
       mMax = max;
     }
 
-    public Interval shift(final int d) {
+    private  Interval shift(final int d) {
       return new Interval(mMin + d, mMax + d);
     }
 
@@ -33,6 +33,16 @@ public class A306597 implements Sequence {
     public int compareTo(final Interval that) {
       final int dMin = Integer.compare(mMin, that.mMin);
       return dMin != 0 ? dMin : Integer.compare(mMax, that.mMax);
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof Interval && ((Interval) obj).mMax == mMax && ((Interval) obj).mMin == mMin;
+    }
+
+    @Override
+    public int hashCode() {
+      return mMax * 65537 + mMin;
     }
   }
 
@@ -69,8 +79,7 @@ public class A306597 implements Sequence {
       final int xmin = (k > 1) ? 0 : r;
       final int xmax = r / tk;
       for (int x = xmin; x <= xmax; x++) {
-        int ss = s + x * tk;
-        final SortedSet<Interval> setFF = mm.computeIfAbsent(ss, k1 -> new TreeSet<>());
+        final SortedSet<Interval> setFF = mm.computeIfAbsent(s + x * tk, k1 -> new TreeSet<>());
         for (final Interval f : setF) {
           setFF.add(f.shift(x * k));
         }

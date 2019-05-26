@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023106.
+ * A023106 <code>a(n)</code> is a power of the sum of its digits.
  * @author Sean A. Irvine
  */
 public class A023106 implements Sequence {

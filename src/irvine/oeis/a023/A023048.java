@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001597;
 import irvine.oeis.a001.A001918;
 
 /**
- * A023048.
+ * A023048 Smallest prime having least positive primitive root n, or 0 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A023048 extends A001597 {

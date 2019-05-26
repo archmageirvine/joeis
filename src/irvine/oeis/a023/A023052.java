@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023052.
+ * A023052 Powerful numbers <code>(3)</code>: numbers n that are the sum of some fixed power of their digits.
  * @author Sean A. Irvine
  */
 public class A023052 implements Sequence {
@@ -50,7 +50,7 @@ public class A023052 implements Sequence {
         }
       } else if (mLength > 2) { // no terms of length 2
         final int minPower = (int) (Z.TEN.pow(mLength - 1).log(9));
-        final int maxPower = (int) Math.ceil((Z.TEN.pow(mLength - 1).divide(mLength).log(2)));
+        final int maxPower = (int) Math.ceil(Z.TEN.pow(mLength - 1).divide(mLength).log(2));
         for (int k = minPower; k <= maxPower; ++k) {
           // Precompute a bunch of constants for this power and length
           for (int j = 0; j < mPowers.length; ++j) {

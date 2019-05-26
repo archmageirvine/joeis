@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001597;
 import irvine.util.RuntimeUtils;
 
 /**
- * A023056.
+ * A023056 <code>a(n)</code> is least k such that k and <code>k+n</code> are adjacent nontrivial powers of positive integers, or 0 if no such k apparently exists.
  * @author Sean A. Irvine
  */
 public class A023056 implements Sequence {

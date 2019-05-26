@@ -8,7 +8,7 @@ import irvine.util.array.LongDynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A023109.
+ * A023109 Smallest number that requires exactly n iterations of Reverse and Add to reach a palindrome.
  * @author Sean A. Irvine
  */
 public class A023109 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023110.
+ * A023110 Squares which remain squares when the last digit is removed.
  * @author Sean A. Irvine
  */
 public class A023110 implements Sequence {

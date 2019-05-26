@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023103.
+ * A023103 <code>(10^n)-th</code> digit of infinite string 12345678910111213141516...
  * @author Sean A. Irvine
  */
 public class A023103 implements Sequence {

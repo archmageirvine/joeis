@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023042.
+ * A023042 Numbers whose cube is the sum of three distinct nonnegative cubes.
  * @author Sean A. Irvine
  */
 public class A023042 implements Sequence {

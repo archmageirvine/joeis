@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023043.
+ * A023043 6th differences of factorial numbers.
  * @author Sean A. Irvine
  */
 public class A023043 implements Sequence {

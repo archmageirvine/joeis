@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023114.
+ * A023114 Numbers n such that n remains square when digit 9 is appended.
  * @author Sean A. Irvine
  */
 public class A023114 implements Sequence {

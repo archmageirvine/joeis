@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023050.
+ * A023050 Sum of two coprime cubes in at least three ways.
  * @author Sean A. Irvine
  */
 public class A023050 implements Sequence {

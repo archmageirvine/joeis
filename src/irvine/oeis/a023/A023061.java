@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023061.
+ * A023061 k and <code>2k</code> are anagrams in base <code>5</code> (written in base <code>5)</code>.
  * @author Sean A. Irvine
  */
 public class A023061 implements Sequence {

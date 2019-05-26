@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023082.
+ * A023082 Numbers n such that n and <code>5*n</code> are anagrams in base <code>9</code> (written in base <code>9)</code>.
  * @author Sean A. Irvine
  */
 public class A023082 implements Sequence {

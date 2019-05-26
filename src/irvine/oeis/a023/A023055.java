@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001597;
 import irvine.util.RuntimeUtils;
 
 /**
- * A023055.
+ * A023055 (Apparently) differences between adjacent perfect powers (integers of form <code>a^b, a &gt;= 1, b &gt;= 2)</code>.
  * @author Sean A. Irvine
  */
 public class A023055 extends A023056 {

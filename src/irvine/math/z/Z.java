@@ -712,7 +712,7 @@ public class Z extends Number implements Comparable<Z> {
    */
   public double log(final double base) {
     if (base <= 1.0) {
-      throw new ArithmeticException("Base base for log");
+      throw new ArithmeticException("Base " + base + " for log");
     }
     return ln() / Math.log(base);
   }

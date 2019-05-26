@@ -32,9 +32,13 @@ public class A023103 implements Sequence {
 
   Z mN = null;
 
+  protected int multiplier() {
+    return 10;
+  }
+
   @Override
   public Z next() {
-    mN = mN == null ? Z.ONE : mN.multiply(10);
+    mN = mN == null ? Z.ONE : mN.multiply(multiplier());
     return Z.valueOf(champerknowneDigit(mN, 10));
   }
 }

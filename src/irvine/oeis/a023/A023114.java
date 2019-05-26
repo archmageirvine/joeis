@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023110.
+ * A023114.
  * @author Sean A. Irvine
  */
-public class A023110 implements Sequence {
+public class A023114 implements Sequence {
 
   private Z mN = Z.NEG_ONE;
 
@@ -16,7 +16,7 @@ public class A023110 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z s = mN.square();
-      final Z t = s.divide(10);
+      final Z t = s.multiply(10).add(9);
       t.sqrt();
       if (t.auxiliary() == 1) {
         return s;

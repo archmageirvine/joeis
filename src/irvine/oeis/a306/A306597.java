@@ -45,7 +45,7 @@ public class A306597 implements Sequence {
   private int a(final int n) {
     final int tn = t(n);
     SortedMap<Integer, SortedSet<Interval>> m = init();
-    for (int k = n; k >= 1; k--) {
+    for (int k = n; k >= 1; --k) {
       m = merge(evolve(tn, k, m));
     }
     return size(m.get(tn));

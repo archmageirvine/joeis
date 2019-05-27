@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018782;
 
 /**
- * A016032 Least number that is the sum of two positive squares in exactly n ways.
+ * A016032 Least positive integer that is the sum of two squares of positive integers in exactly n ways.
  * @author Sean A. Irvine
  */
 public class A016032 extends A018782 {

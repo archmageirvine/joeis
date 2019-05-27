@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023157.
+ * A023157 Number of cycles of function <code>f(x) = x^6 mod</code> n.
  * @author Sean A. Irvine
  */
 public class A023157 extends A023153 {

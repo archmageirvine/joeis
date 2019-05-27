@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023149.
+ * A023149 Numbers n such that <code>prime(n) == 7 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A023149 implements Sequence {

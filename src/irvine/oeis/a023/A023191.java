@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023191.
+ * A023191 Conjecturally, number of maximal infinitely-recurring prime patterns of width <code>n (n</code> odd).
  * @author Sean A. Irvine
  */
 public class A023191 extends A023192 {

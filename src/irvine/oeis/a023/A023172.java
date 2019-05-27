@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023172.
+ * A023172 Self-Fibonacci numbers: numbers n such that n divides <code>Fibonacci(n)</code>.
  * @author Sean A. Irvine
  */
 public class A023172 extends A000045 {

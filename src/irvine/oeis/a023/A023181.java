@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023181.
+ * A023181 Numbers n such that <code>Fib(n) == 55 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A023181 extends A000045 {

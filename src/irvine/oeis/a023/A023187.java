@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023187.
+ * A023187 Distances of increasingly lonely primes to nearest prime.
  * @author Sean A. Irvine
  */
 public class A023187 implements Sequence {

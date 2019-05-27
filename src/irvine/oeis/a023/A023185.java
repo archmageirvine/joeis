@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023185.
+ * A023185 Square of main diagonal of <code>3d</code> box with coprime integer sides and integer face diagonals.
  * @author Sean A. Irvine
  */
 public class A023185 implements Sequence {

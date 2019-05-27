@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023186.
+ * A023186 Lonely (or isolated) primes: increasing distance to nearest prime.
  * @author Sean A. Irvine
  */
 public class A023186 implements Sequence {

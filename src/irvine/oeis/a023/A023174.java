@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023174.
+ * A023174 Numbers n such that <code>Fibonacci(n) == 2 (mod n)</code>.
  * @author Sean A. Irvine
  */
 public class A023174 extends A000045 {

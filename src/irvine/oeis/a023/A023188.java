@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023188.
+ * A023188 Lonely (or isolated) primes: least prime of distance n from nearest prime <code>(n = 1</code> or even).
  * @author Sean A. Irvine
  */
 public class A023188 implements Sequence {

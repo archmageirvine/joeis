@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023162.
+ * A023162 Numbers k such that <code>F(k) == -1 (mod k)</code>, where <code>F(n) = A000045(n)</code> is the n-th Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A023162 extends A000045 {

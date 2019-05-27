@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023192.
+ * A023192 Conjecturally, number of infinitely-recurring prime patterns on n consecutive integers.
  * @author Sean A. Irvine
  */
 public class A023192 implements Sequence {

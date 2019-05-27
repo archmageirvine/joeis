@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214286 <code>Floor(Fibonacci(n)/7)</code>.
+ * A214286 <code>a(n) = floor(Fibonacci(n)/7)</code>.
  * @author Georg Fischer
  */
 public class A214286 extends GeneratingFunctionSequence {

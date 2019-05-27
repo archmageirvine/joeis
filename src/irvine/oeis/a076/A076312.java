@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076312 <code>floor(n/10) + 2*(n mod 10)</code>.
+ * A076312 <code>a(n) = floor(n/10) + 2*(n mod 10)</code>.
  * @author Georg Fischer
  */
 public class A076312 extends GeneratingFunctionSequence {

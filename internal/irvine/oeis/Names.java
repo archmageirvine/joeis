@@ -42,6 +42,8 @@ public final class Names {
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
     FORMULA.add("INVERTi");
+    FORMULA.add("EXPCONV");
+    FORMULA.add("GegenbauerC");
     FORMULA.add("\\atop");
     FORMULA.add("Pi");
     FORMULA.add("(Pi)");
@@ -67,7 +69,7 @@ public final class Names {
     FORMULA.add("uu.");
     FORMULA.add("uf,");
     FORMULA.add("nx,");
-    FORMULA.add("PSumSIGN");
+    FORMULA.add("(PSumSIGN)");
     FORMULA.add("THTH");
     FORMULA.add("HTHH.");
     FORMULA.add("Xa.");

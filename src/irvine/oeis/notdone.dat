@@ -1133,8 +1133,5 @@ A022491 An upper bound for linearized chord diagrams, no formula in paper?
 A022492 An upper bound for linearized chord diagrams, no formula in paper?
 A022607 Number of topological types of 4-connected n-nodal networks, hard
 A023108 Positive integers which apparently never result in a palindrome under repeated applications of the function A056964(x) = x + (x with digits reversed)
-A023189 Conjecturally, number of infinitely-recurring prime patterns of width n (n odd), insufficient detail
-A023190 Conjecturally, maximum number of primes in an infinitely-recurring prime pattern of width n (n odd), insufficient detail
-A023191 Conjecturally, number of maximal infinitely-recurring prime patterns of width n (n odd), insufficient detail
-A023192 Conjecturally, number of infinitely-recurring prime patterns on n consecutive integers
+
 

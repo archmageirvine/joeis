@@ -18,7 +18,7 @@ public class A023192 implements Sequence {
   // iteration. Adding "c" is easy. Adding "p" need to check that does not introduce a
   // situation where one of the "p"'s is guaranteed to be divisible by some number.
 
-  private List<String> mAdmissable = Collections.singletonList("");
+  protected List<String> mAdmissable = Collections.singletonList("");
   private final Fast mPrime = new Fast();
 
   @Override

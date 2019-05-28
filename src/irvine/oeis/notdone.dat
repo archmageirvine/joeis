@@ -1133,5 +1133,7 @@ A022491 An upper bound for linearized chord diagrams, no formula in paper?
 A022492 An upper bound for linearized chord diagrams, no formula in paper?
 A022607 Number of topological types of 4-connected n-nodal networks, hard
 A023108 Positive integers which apparently never result in a palindrome under repeated applications of the function A056964(x) = x + (x with digits reversed)
+A023193 a(n) gives the largest number k for which there is at least one admissible k-tuple taken from [0, 1, ..., n-1] if the tuple starts with 0. Admissibility is defined in a comment
+A023199 a(n) = least k with sigma(k) >= nk, possible
 
 

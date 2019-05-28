@@ -1,5 +1,7 @@
 package irvine.oeis.a064;
 
+import java.util.ArrayList;
+
 import irvine.factor.factor.Jaguar;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -10,7 +12,21 @@ import irvine.oeis.Sequence;
  */
 public class A064135 implements Sequence {
 
+  private final ArrayList<Z> mPowersPlusOne = new ArrayList<>();
+  private Z mPrev = Z.ONE;
   private int mN = -1;
+  {
+    mPowersPlusOne.add(Z.TWO);
+  }
+
+  private Z powerPlusOne(final int n) {
+    // cache powers to avoid recomputing them multiple times
+    while (n >= mPowersPlusOne.size()) {
+      mPrev = mPrev.multiply(base());
+      mPowersPlusOne.add(mPrev.add(1));
+    }
+    return mPowersPlusOne.get(n);
+  }
 
   protected int base() {
     return 10;
@@ -19,12 +35,10 @@ public class A064135 implements Sequence {
   @Override
   public Z next() {
     long c = 0;
-    for (final Z d : Jaguar.factor(Z.valueOf(base()).pow(++mN).add(1)).divisors()) {
-      Z t = Z.ONE;
+    for (final Z d : Jaguar.factor(powerPlusOne(++mN)).divisors()) {
       boolean ok = true;
       for (int k = 1; k < mN; ++k) {
-        t = t.multiply(base());
-        if (!Z.ONE.equals(t.add(1).gcd(d))) {
+        if (!Z.ONE.equals(powerPlusOne(k).gcd(d))) {
           ok = false;
           break;
         }

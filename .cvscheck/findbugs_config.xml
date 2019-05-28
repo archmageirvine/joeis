@@ -249,8 +249,12 @@
        <BugCode name="LEST"/>
      </Match>
 
-     <!-- false-positives? -->                                                                           <Match classregex="irvine.oeis.a007.A007756">
+     <!-- false-positives? -->
+     <Match classregex="irvine.oeis.a007.A007756">
        <BugCode name="SEO"/>
+     </Match>
+     <Match classregex="irvine.oeis.a023.A023107">
+       <BugCode name="WOC"/>
      </Match>
      <Match classregex="irvine.oeis.global.OeisTree">
        <BugCode name="LII"/>

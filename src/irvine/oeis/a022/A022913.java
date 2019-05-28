@@ -9,12 +9,11 @@ import irvine.util.Pair;
  */
 public class A022913 extends A022911 {
 
-  // todo note does not match OEIS 2019-05-23
-
   private long mN = 0;
 
   @Override
   protected Z select(final Pair<Long, Long> a) {
+    // Returns 1 iff a central binomial coefficient
     return a.left() == 2 * a.right() ? Z.ONE : Z.ZERO;
   }
 

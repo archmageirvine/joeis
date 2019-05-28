@@ -205,7 +205,7 @@ public class ZTest extends TestCase {
           Z.valueOf(i).log(b);
           fail();
         } catch (final ArithmeticException e) {
-          assertEquals("Base base for log", e.getMessage());
+          assertEquals("Base " + b + ".0 for log", e.getMessage());
         }
       }
     }

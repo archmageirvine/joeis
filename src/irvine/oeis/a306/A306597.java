@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
  */
 public class A306597 implements Sequence {
 
-  private class Interval implements Comparable<Interval> {
+  private final class Interval implements Comparable<Interval> {
     private final int mMin;
     private final int mMax;
 

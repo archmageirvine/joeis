@@ -4,16 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023201.
+ * A023210.
  * @author Sean A. Irvine
  */
-public class A023201 extends A000040 {
+public class A023210 extends A000040 {
 
   @Override
   public Z next() {
     while (true) {
       final Z p = super.next();
-      if (mFast.isPrime(p.add(6))) {
+      if (mFast.isPrime(p.multiply(3).add(8))) {
         return p;
       }
     }

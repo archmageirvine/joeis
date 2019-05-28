@@ -5,18 +5,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023196.
+ * A023198.
  * @author Sean A. Irvine
  */
-public class A023196 implements Sequence {
+public class A023198 implements Sequence {
 
-  private Z mN = Z.FIVE;
+  private Z mN = Z.valueOf(27719);
 
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (Cheetah.factor(mN).sigma().compareTo(mN.multiply2()) >= 0) {
+      if (Cheetah.factor(mN).sigma().compareTo(mN.multiply(4)) >= 0) {
         return mN;
       }
     }

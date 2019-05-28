@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023207.
+ * A023207 Numbers m such that m and <code>2*m + 9</code> both prime.
  * @author Sean A. Irvine
  */
 public class A023207 extends A000040 {

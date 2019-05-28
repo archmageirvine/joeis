@@ -1,10 +1,9 @@
 package irvine.oeis.a014;
 
 import irvine.math.z.Z;
-import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
-import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000032;
+import irvine.oeis.a090.A090946;
 
 /**
  * A014243 <code>(n-th</code> Lucas number) <code>- (n-th</code> nonLucas number).
@@ -12,10 +11,10 @@ import irvine.oeis.a000.A000032;
  */
 public class A014243 extends A000032 {
 
-  private final Sequence mNotLucas = new ComplementSequence(new SkipSequence(new A000032(), 1), Z.TWO);
+  private final Sequence mNotLucas = new A090946();
 
   {
-    super.next();
+    next();
   }
 
   @Override

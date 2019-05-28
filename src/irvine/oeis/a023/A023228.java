@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023228.
+ * A023228 Numbers k such that k and <code>8*k + 1</code> are both prime.
  * @author Sean A. Irvine
  */
 public class A023228 extends A000040 {

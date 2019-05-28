@@ -162,7 +162,6 @@ public final class ZUtils {
 
   /**
    * Reverse the digits of a number in specified base.
-   *
    * @param n number to reverse
    * @param base base to use
    * @return reversed number
@@ -181,7 +180,6 @@ public final class ZUtils {
 
   /**
    * Reverse the decimal digits of a number.
-   *
    * @param n number to reverse
    * @return reversed number
    */
@@ -190,9 +188,7 @@ public final class ZUtils {
   }
 
   /**
-   * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give
-   * 132415.
-   *
+   * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
    * @param n number to describe
    * @return description of the number
    */

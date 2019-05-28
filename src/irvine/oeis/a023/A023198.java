@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023198.
+ * A023198 Numbers n such that <code>sigma(n) &gt;= 4n</code>.
  * @author Sean A. Irvine
  */
 public class A023198 implements Sequence {

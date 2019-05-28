@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023210.
+ * A023210 Numbers n such that n and <code>3n + 8</code> both prime.
  * @author Sean A. Irvine
  */
 public class A023210 extends A000040 {

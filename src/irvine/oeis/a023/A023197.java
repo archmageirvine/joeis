@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023197.
+ * A023197 Numbers n such that <code>sigma(n) &gt;= 3n</code>.
  * @author Sean A. Irvine
  */
 public class A023197 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023219.
+ * A023219 Primes p such that <code>5p+6</code> is a prime.
  * @author Sean A. Irvine
  */
 public class A023219 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023204.
+ * A023204 Numbers k such that k and <code>2*k + 3</code> are both prime.
  * @author Sean A. Irvine
  */
 public class A023204 extends A000040 {

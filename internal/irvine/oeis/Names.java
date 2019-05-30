@@ -34,6 +34,7 @@ public final class Names {
     FORMULA.add("mod");
     FORMULA.add("sqrt");
     FORMULA.add("gdinv");
+    FORMULA.add("(gdinv");
     FORMULA.add("gpf");
     FORMULA.add("dsf");
     FORMULA.add("dsf.");
@@ -82,6 +83,7 @@ public final class Names {
     FORMULA.add("aab");
     FORMULA.add("aab,");
     FORMULA.add("aac,");
+    FORMULA.add("rstu.");
     FORMULA.add("\"sumdigit\"");
     FORMULA.add("\"reo\"");
     FORMULA.add("\"svh\"");

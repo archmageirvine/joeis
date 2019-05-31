@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273322 Wiener index of graphs of fcc unit cells in a line = Sum of distances in face-centered cubic grid unit cells connected in a row.
+ * A273322 Wiener index of graphs of f.c.c. unit cells in a line = Sum of distances in face-centered cubic grid unit cells connected in a row.
  * @author Sean A. Irvine
  */
 public class A273322 extends LinearRecurrence {

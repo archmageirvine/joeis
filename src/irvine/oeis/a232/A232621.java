@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232621 The number of indecomposible domino tilings of the <code>5 X (2n)</code> board.
+ * A232621 The number of indecomposable domino tilings of the <code>5 X (2n)</code> board.
  * @author Georg Fischer
  */
 public class A232621 extends GeneratingFunctionSequence {

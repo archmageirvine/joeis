@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A070063 Decimal expansion of experimental Boltzmann's constant in J <code>K^{-1}</code>.
+ * A070063 Decimal expansion of the Boltzmann constant k in the 2019 SI system in units <code>J/K</code>.
  * @author Sean A. Irvine
  */
 public class A070063 extends DoubleDecimalExpansionSequence {

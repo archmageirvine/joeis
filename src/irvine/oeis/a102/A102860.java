@@ -3,7 +3,7 @@ package irvine.oeis.a102;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A102860 Number of ways to change three non-identical letters in the word aabbccdd..., where there are n types of letters.
+ * A102860 Number of ways to change three non-identical letters in the word <code>aabbccdd...</code>, where there are n types of letters.
  * @author Sean A. Irvine
  */
 public class A102860 extends LinearRecurrence {

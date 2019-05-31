@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A308430.
+ * A308430 allocated for Andrea Fornaciari.
  * @author Sean A. Irvine
  */
 public class A308430 implements Sequence {

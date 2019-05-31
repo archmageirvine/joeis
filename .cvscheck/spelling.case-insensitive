@@ -200,7 +200,8 @@ tricapped
 meta-polyphenyl
 outdegree
 mincuts
-cutpoints
+cutpoint
+geoboard
 triperfect
 triakis
 megaperfect
@@ -337,3 +338,9 @@ sator
 noncototients
 biweight
 illusoire
+numerus
+numeri
+liponombres
+autosequence
+cinq
+huit

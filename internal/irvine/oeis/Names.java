@@ -44,6 +44,8 @@ public final class Names {
     FORMULA.add("mmdd");
     FORMULA.add("INVERTi");
     FORMULA.add("EXPCONV");
+    FORMULA.add("REVEGF");
+    FORMULA.add("MOBIUS");
     FORMULA.add("GegenbauerC");
     FORMULA.add("\\atop");
     FORMULA.add("Pi");
@@ -80,6 +82,7 @@ public final class Names {
     FORMULA.add("xRy");
     FORMULA.add("VVV..VV;");
     FORMULA.add("abacabaabacababac...");
+    FORMULA.add("aabbccdd...,");
     FORMULA.add("aab");
     FORMULA.add("aab,");
     FORMULA.add("aac,");

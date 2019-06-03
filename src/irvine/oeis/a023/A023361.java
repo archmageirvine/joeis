@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000217;
 
 /**
- * A023361.
+ * A023361 Number of compositions of n into positive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A023361 extends MemorySequence {

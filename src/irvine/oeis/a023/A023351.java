@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023351.
+ * A023351 Numbers n such that n remains prime through 5 iterations of function <code>f(x) = 8x + 9</code>.
  * @author Sean A. Irvine
  */
 public class A023351 extends A023323 {

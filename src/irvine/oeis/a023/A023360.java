@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023360.
+ * A023360 Number of compositions of n into prime parts.
  * @author Sean A. Irvine
  */
 public class A023360 extends MemorySequence {

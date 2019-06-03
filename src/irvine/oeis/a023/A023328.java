@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023328.
+ * A023328 Numbers n such that n remains prime through 4 iterations of function <code>f(x) = 10x + 3</code>.
  * @author Sean A. Irvine
  */
 public class A023328 extends A023300 {

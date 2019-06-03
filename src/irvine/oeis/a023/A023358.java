@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023358.
+ * A023358 Number of compositions into sums of cubes.
  * @author Sean A. Irvine
  */
 public class A023358 extends MemorySequence {

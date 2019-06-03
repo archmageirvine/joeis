@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023359.
+ * A023359 Number of compositions (ordered partitions) of n into powers of 2.
  * @author Sean A. Irvine
  */
 public class A023359 extends MemorySequence {

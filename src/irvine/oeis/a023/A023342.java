@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023342.
+ * A023342 Numbers n such that n remains prime through 5 iterations of function <code>f(x) = 5x + 4</code>.
  * @author Sean A. Irvine
  */
 public class A023342 extends A023314 {

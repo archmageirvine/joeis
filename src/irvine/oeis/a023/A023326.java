@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023326.
+ * A023326 Numbers n such that n remains prime through 4 iterations of the function <code>f(x) = 9x + 8</code>.
  * @author Sean A. Irvine
  */
 public class A023326 extends A023298 {

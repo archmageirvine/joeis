@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023428.
+ * A023428 Generalized Catalan Numbers.
  * @author Sean A. Irvine
  */
 public class A023428 extends MemorySequence {

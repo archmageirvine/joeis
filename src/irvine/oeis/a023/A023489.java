@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a001.A001690;
 
 /**
- * A023489.
+ * A023489 Sum of n-th Lucas number greater than 3 and n-th number that is 1 or is not a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A023489 extends A000204 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023505.
+ * A023505 Least odd prime divisor of <code>p(n) - 1</code>, or 1 if <code>p(n) - 1</code> is a power of 2.
  * @author Sean A. Irvine
  */
 public class A023505 extends A000040 {

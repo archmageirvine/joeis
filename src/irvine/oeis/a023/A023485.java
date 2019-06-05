@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a001.A001690;
 
 /**
- * A023485.
+ * A023485 <code>a(n) = b(n) + d(n)</code>, where <code>b(n) = (n-th</code> Lucas number <code>A000204 &gt; 1)</code> and <code>d(n) = (n-th</code> nonFibonacci number).
  * @author Sean A. Irvine
  */
 public class A023485 extends A000204 {

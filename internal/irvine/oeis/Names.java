@@ -39,7 +39,9 @@ public final class Names {
     FORMULA.add("dsf");
     FORMULA.add("dsf.");
     FORMULA.add("elif");
+    FORMULA.add("hhmm");
     FORMULA.add("frac");
+    FORMULA.add("ddd...d");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
     FORMULA.add("INVERTi");

@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
  */
 public class A023507 extends A000040 {
 
-  private Z sum(final Z[] a) {
+  static Z sum(final Z[] a) {
     Z sum = Z.ZERO;
     for (final Z v : a) {
       sum = sum.add(v);

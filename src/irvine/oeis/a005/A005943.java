@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020985;
 
 /**
- * A005943 Number of subwords of length n in the <code>Golay-Rudin-Shapiro</code> binary word <code>A020987</code>.
+ * A005943 Factor complexity (number of subwords of length <code>n)</code> of the <code>Golay-Rudin-Shapiro</code> binary word <code>A020987</code>.
  * @author Sean A. Irvine
  */
 public class A005943 extends A020985 {

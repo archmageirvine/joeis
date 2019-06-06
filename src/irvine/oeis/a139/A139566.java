@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A139566 Take sum of squares of digits of previous term; start with 15.
+ * A139566 <code>a(n)</code> is the sum of squares of digits of <code>a(n-1); a(1)=15</code>.
  * @author Georg Fischer
  */
 public class A139566 extends GeneratingFunctionSequence {

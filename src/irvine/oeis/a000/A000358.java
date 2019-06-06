@@ -7,7 +7,7 @@ import irvine.math.z.Fibonacci;
 import irvine.oeis.Sequence;
 
 /**
- * A000358 Number of binary necklaces of length n with no subsequence 00.
+ * A000358 Number of binary necklaces of length n with no subsequence 00, excluding the necklace <code>"0"</code>.
  * @author Sean A. Irvine
  */
 public class A000358 implements Sequence {

@@ -16,9 +16,21 @@ public class A005472 extends A005471 {
   // limit on how far to evaluate the product.
 
   private static final double SQRT27 = Math.sqrt(27);
-  private static final double ACCURACY_MULTIPLIER = 1.1; // Heuristic
+  private static final double ACCURACY_MULTIPLIER = 1.2; // Heuristic
   private final Fast mPrime = new Fast();
   private long mAccuracy = 10000;
+
+  private void check(final Z h) {
+    for (Z b = Z.ZERO; b.square().multiply(3).compareTo(h) <= 0; b = b.add(1)) {
+      final Z a2 = h.subtract(b.square().multiply(3));
+      a2.sqrt();
+      if (a2.auxiliary() == 1) {
+        return;
+      }
+    }
+    // What we found does not have the form a^2 + 3*b^2
+    throw new UnsupportedOperationException("Increase ACCURACY_MULTIPLIER and try again");
+  }
 
   private double theta(final double a) {
     return Math.atan(SQRT27 / (2 * a + 3)) / 3;
@@ -68,6 +80,8 @@ public class A005472 extends A005471 {
     final double f = f(p.longValueExact(), mAccuracy);
     final double h = p.doubleValue() * f / (4 * r);
     //System.out.println("p=" + p.doubleValue() + " a=" + a + " theta=" + theta + " rho=" + rho + " r=" + r + " f=" + f + " h=" + h);
-    return Z.valueOf(Math.round(h));
+    final Z hz = Z.valueOf(Math.round(h));
+    check(hz);
+    return hz;
   }
 }

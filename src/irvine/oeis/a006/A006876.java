@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000740;
 
 /**
- * A006876 Mu-molecules in Mandelbrot set whose seeds have period n.
+ * A006876 Mu-molecules in Mandelbrot set whose seeds have period <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006876 extends A006875 {

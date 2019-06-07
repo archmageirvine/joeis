@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002420 Expansion of <code>sqrt(1 - 4*x)</code> in powers of x.
+ * A002420 Expansion of <code>sqrt(1 - 4*x)</code> in powers of <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A002420 implements Sequence {

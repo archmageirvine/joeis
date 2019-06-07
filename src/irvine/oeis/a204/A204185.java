@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204185 Number of quadrilaterals in a triangular matchstick arrangement of side n.
+ * A204185 Number of quadrilaterals in a triangular matchstick arrangement of side <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A204185 extends LinearRecurrence {

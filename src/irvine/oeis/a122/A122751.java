@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122751 Number of essentially different semi-magic squares of order 3 with semimagic sum n.
+ * A122751 Number of essentially different semi-magic squares of order 3 with semimagic sum <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A122751 extends LinearRecurrence {

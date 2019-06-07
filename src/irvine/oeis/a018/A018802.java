@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018802 Smallest power of 2 that begins with n.
+ * A018802 Smallest power of 2 that begins with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018802 implements Sequence {

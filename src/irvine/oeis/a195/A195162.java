@@ -3,7 +3,7 @@ package irvine.oeis.a195;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A195162 Generalized 12-gonal numbers: <code>k*(5*k-4)</code> for k <code>= 0, +-1, +-2</code>, ...
+ * A195162 Generalized 12-gonal numbers: <code>k*(5*k-4)</code> for k <code>= 0, +-1, +-2, ..</code>.
  * @author Sean A. Irvine
  */
 public class A195162 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A117273 Numbers n for which the product of the digits equals the number of prime numbers smaller than n.
+ * A117273 Numbers n for which the product of the digits equals the number of prime numbers smaller than <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A117273 implements Sequence {

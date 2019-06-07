@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123015 Grow a binary tree using the following rules. Initially there is a single node labeled 1. At each step we add 1 to all labels less than 3. If a node has label 3 and zero or one descendants we add a new descendant labeled 1. Sequence gives sum of all labels at step n.
+ * A123015 Grow a binary tree using the following rules. Initially there is a single node labeled 1. At each step we add 1 to all labels less than 3. If a node has label 3 and zero or one descendants we add a new descendant labeled 1. Sequence gives sum of all labels at step <code>n</code>.
  * @author Georg Fischer
  */
 public class A123015 extends GeneratingFunctionSequence {

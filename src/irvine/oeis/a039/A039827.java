@@ -4,7 +4,7 @@ package irvine.oeis.a039;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A039827 Number of different coefficient values in expansion of Product <code>(1+q^i+q^(2i)), i=1</code> to n.
+ * A039827 Number of different coefficient values in expansion of Product <code>(1+q^i+q^(2i)), i=1</code> to <code>n</code>.
  * @author Georg Fischer
  */
 public class A039827 extends GeneratingFunctionSequence {

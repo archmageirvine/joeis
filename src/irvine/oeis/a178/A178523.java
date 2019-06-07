@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178523 The path length of the Fibonacci tree of order n.
+ * A178523 The path length of the Fibonacci tree of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A178523 extends LinearRecurrence {

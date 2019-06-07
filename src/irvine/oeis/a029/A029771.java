@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A029771 Hyperbolic Coxeter groups of rank n.
+ * A029771 Hyperbolic Coxeter groups of rank <code>n</code>.
  * @author Georg Fischer
  */
 public class A029771 extends FiniteSequence {

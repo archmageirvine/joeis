@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a082.A082641;
 
 /**
- * A002956 Number of basic invariants for cyclic group of order and degree n.
+ * A002956 Number of basic invariants for cyclic group of order and degree <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002956 extends A082641 {

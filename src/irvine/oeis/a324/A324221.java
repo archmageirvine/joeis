@@ -4,7 +4,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324221 Number of 2n-regular graphs with 5 nodes up to degree n.
+ * A324221 Number of 2n-regular graphs with 5 nodes up to degree <code>n</code>.
  * @author Georg Fischer
  */
 public class A324221 extends GeneratingFunctionSequence {

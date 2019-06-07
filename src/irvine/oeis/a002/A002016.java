@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000292;
 
 /**
- * A002016 Number of first n tetrahedral numbers <code>(A000292)</code> that are relatively prime to n.
+ * A002016 Number of first n tetrahedral numbers <code>(A000292)</code> that are relatively prime to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002016 implements Sequence {

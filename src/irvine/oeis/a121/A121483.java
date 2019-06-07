@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121483 Number of peaks at odd level in all nondecreasing Dyck paths of semilength n. A nondecreasing Dyck path is a Dyck path for which the sequence of the altitudes of the valleys is nondecreasing.
+ * A121483 Number of peaks at odd level in all nondecreasing Dyck paths of semilength <code>n</code>. A nondecreasing Dyck path is a Dyck path for which the sequence of the altitudes of the valleys is nondecreasing.
  * @author Georg Fischer
  */
 public class A121483 extends GeneratingFunctionSequence {

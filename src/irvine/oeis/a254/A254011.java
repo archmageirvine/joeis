@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254011 Expansion of <code>(1 - x^18) / ((1 - x^5) * (1 - x^6) * (1 - x^9))</code> in powers of x.
+ * A254011 Expansion of <code>(1 - x^18) / ((1 - x^5) * (1 - x^6) * (1 - x^9))</code> in powers of <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A254011 extends LinearRecurrence {

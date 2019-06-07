@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178525 The sum of the costs of all nodes in the Fibonacci tree of order n.
+ * A178525 The sum of the costs of all nodes in the Fibonacci tree of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A178525 extends GeneratingFunctionSequence {

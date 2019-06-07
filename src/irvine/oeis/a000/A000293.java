@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002836;
 
 /**
- * A000293 <code>a(n) =</code> number of solid <code>(i.e., three-dimensional)</code> partitions of n.
+ * A000293 <code>a(n) =</code> number of solid <code>(i.e., three-dimensional)</code> partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000293 extends A002836 {

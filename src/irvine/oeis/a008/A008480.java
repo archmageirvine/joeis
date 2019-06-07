@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008480 Number of ordered prime factorizations of n.
+ * A008480 Number of ordered prime factorizations of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A008480 implements Sequence {

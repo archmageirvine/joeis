@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173728 Number of reduced <code>3x3</code> semimagic squares with magic sum n.
+ * A173728 Number of reduced <code>3x3</code> semimagic squares with magic sum <code>n</code>.
  * @author Georg Fischer
  */
 public class A173728 extends GeneratingFunctionSequence {

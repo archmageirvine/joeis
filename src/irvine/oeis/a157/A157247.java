@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157247 Positive numbers y such that <code>y^2</code> is of the form <code>x^2+(x+2401)^2</code> with integer x.
+ * A157247 Positive numbers y such that <code>y^2</code> is of the form <code>x^2+(x+2401)^2</code> with integer <code>x</code>.
  * @author Georg Fischer
  */
 public class A157247 extends GeneratingFunctionSequence {

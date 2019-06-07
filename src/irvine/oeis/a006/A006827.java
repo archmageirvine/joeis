@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000041;
 import irvine.oeis.a002.A002219;
 
 /**
- * A006827 Number of partitions of <code>2n</code> with all subsums different from n.
+ * A006827 Number of partitions of <code>2n</code> with all subsums different from <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006827 extends A000041 {

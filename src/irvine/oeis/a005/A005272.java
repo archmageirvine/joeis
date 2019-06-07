@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005272 Number of Van Lier sequences of length n.
+ * A005272 Number of Van Lier sequences of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005272 implements Sequence {

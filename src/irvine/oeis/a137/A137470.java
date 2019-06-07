@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137470 Inverse binomial transform of <code>1, 2, 2, 4, 10, 20</code>, ... <code>= A100088</code>.
+ * A137470 Inverse binomial transform of <code>1, 2, 2, 4, 10, 20, ... = A100088</code>.
  * @author Sean A. Irvine
  */
 public class A137470 extends LinearRecurrence {

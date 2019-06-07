@@ -4,7 +4,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024458 <code>a(n) = s(1)s(n) + s(2)s(n-1) +</code> ... <code>+ s(k)s(n+1-k)</code>, where k <code>= [ (n+1)/2 ], s =</code> (Fibonacci numbers).
+ * A024458 <code>a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n+1-k)</code>, where k <code>= [ (n+1)/2 ], s =</code> (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A024458 extends GeneratingFunctionSequence {

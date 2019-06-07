@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191496 Number of compositions of even numbers into 9 parts <code>&lt;=</code> n.
+ * A191496 Number of compositions of even numbers into 9 parts <code>&lt;= n</code>.
  * @author Georg Fischer
  */
 public class A191496 extends GeneratingFunctionSequence {

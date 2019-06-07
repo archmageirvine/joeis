@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072884 3rd-order digital invariants: the sum of the cubes of the digits of n equals some number k and the sum of the cubes of the digits of k equals n.
+ * A072884 3rd-order digital invariants: the sum of the cubes of the digits of n equals some number k and the sum of the cubes of the digits of k equals <code>n</code>.
  * @author Georg Fischer
  */
 public class A072884 extends FiniteSequence {

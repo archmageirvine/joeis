@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302298 Wiener index of the graph of nodes <code>(i,j)</code> of the square lattice such that <code>abs(i) + abs(j) &lt;=</code> n.
+ * A302298 Wiener index of the graph of nodes <code>(i,j)</code> of the square lattice such that <code>abs(i) + abs(j) &lt;= n</code>.
  * @author Georg Fischer
  */
 public class A302298 extends GeneratingFunctionSequence {

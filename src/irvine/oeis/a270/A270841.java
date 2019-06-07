@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270841 <code>a(1) = 5; a(n)</code> is the sum of <code>|a(m) - m|</code> for m <code>&lt</code>; n.
+ * A270841 <code>a(1) = 5; a(n)</code> is the sum of <code>|a(m) - m|</code> for m <code>&lt; n</code>.
  * @author Georg Fischer
  */
 public class A270841 extends GeneratingFunctionSequence {

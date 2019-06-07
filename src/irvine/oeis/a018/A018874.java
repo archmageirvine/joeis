@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018874 <code>a(n)^6</code> is smallest sixth power beginning with n.
+ * A018874 <code>a(n)^6</code> is smallest sixth power beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018874 extends A018872 {

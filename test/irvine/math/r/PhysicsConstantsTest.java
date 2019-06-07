@@ -21,7 +21,7 @@ public class PhysicsConstantsTest extends TestCase {
   }
 
   public void testFaraday() {
-    assertEquals(96485.333677, PhysicsConstants.FARADAY, 1E-4);
+    assertEquals(96485.3321, PhysicsConstants.FARADAY, 1E-4);
   }
 
   public void testPlanckMass() {
@@ -29,7 +29,7 @@ public class PhysicsConstantsTest extends TestCase {
   }
 
   public void testElectron() {
-    assertEquals(9.10938356E-31, PhysicsConstants.u2kg(PhysicsConstants.ELECTRON_MASS), 0.00000011E-31);
+    assertEquals(9.109383701626107E-31, PhysicsConstants.u2kg(PhysicsConstants.ELECTRON_MASS), 0.00000011E-31);
   }
 
   public void testProton() {

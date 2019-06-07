@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A002376 Least number of positive cubes needed to represent n.
+ * A002376 Least number of positive cubes needed to represent <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002376 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000041;
 
 /**
- * A004088 Sum of digits of number of partitions of n.
+ * A004088 Sum of digits of number of partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A004088 extends A000041 {

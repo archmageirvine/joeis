@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274683 White to move: King, Knight and Bishop vs. King: Number of positions with mate in n.
+ * A274683 White to move: King, Knight and Bishop vs. King: Number of positions with mate in <code>n</code>.
  * @author Georg Fischer
  */
 public class A274683 extends FiniteSequence {

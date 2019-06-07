@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A003438 Number of <code>5 X 5</code> matrices with nonnegative integer entries and row and column sums equal to n.
+ * A003438 Number of <code>5 X 5</code> matrices with nonnegative integer entries and row and column sums equal to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003438 extends GeneratingFunctionSequence {

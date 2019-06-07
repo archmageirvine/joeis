@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228644 Expansion of g.f. <code>1/ (1-x^1*(1-x^(m+1))/ (1-x^2*(1-x^(m+2))/ (1-</code> ... <code>)))</code> for <code>m=7</code>.
+ * A228644 Expansion of g.f. <code>1/ (1-x^1*(1-x^(m+1))/ (1-x^2*(1-x^(m+2))/ (1- ... )))</code> for <code>m=7</code>.
  * @author Georg Fischer
  */
 public class A228644 extends GeneratingFunctionSequence {

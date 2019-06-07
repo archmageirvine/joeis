@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173237 Alternate n and <code>10n</code> for each n.
+ * A173237 Alternate n and <code>10n</code> for each <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A173237 extends LinearRecurrence {

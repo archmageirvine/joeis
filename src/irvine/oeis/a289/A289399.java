@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289399 Total path length of the complete ternary tree of height n.
+ * A289399 Total path length of the complete ternary tree of height <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A289399 extends LinearRecurrence {

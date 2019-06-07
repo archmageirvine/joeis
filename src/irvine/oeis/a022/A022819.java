@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022819 <code>a(n) = floor(1/(n-1) + 2/(n-2) + 3/(n-3) +</code> ... <code>+ (n-1)/1)</code>.
+ * A022819 <code>a(n) = floor(1/(n-1) + 2/(n-2) + 3/(n-3) + ... + (n-1)/1)</code>.
  * @author Sean A. Irvine
  */
 public class A022819 implements Sequence {

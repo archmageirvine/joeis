@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A035041 <code>a(n) = 2^n - C(n,0) - C(n,1) -</code> ... <code>- C(n,8)</code>.
+ * A035041 <code>a(n) = 2^n - C(n,0) - C(n,1) - ... - C(n,8)</code>.
  * @author Georg Fischer
  */
 public class A035041 extends GeneratingFunctionSequence {

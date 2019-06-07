@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007017 Number of motifs in triangular window of side n.
+ * A007017 Number of motifs in triangular window of side <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007017 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003909 Degrees of irreducible representations of McLaughlin group McL.
+ * A003909 Degrees of irreducible representations of McLaughlin group <code>McL</code>.
  * @author Sean A. Irvine
  */
 public class A003909 extends FiniteSequence {

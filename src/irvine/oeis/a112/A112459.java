@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112459 Absolute value of coefficient of term <code>[x^(n-3)]</code> in characteristic polynomial of maximum matrix A of size n X n, where <code>n &gt;= 3</code>. Maximum matrix <code>A(i,j)</code> is <code>MAX(i,j)</code>, where indices i and j run from 1 to n.
+ * A112459 Absolute value of coefficient of term <code>[x^(n-3)]</code> in characteristic polynomial of maximum matrix A of size n X n, where <code>n &gt;= 3</code>. Maximum matrix <code>A(i,j)</code> is <code>MAX(i,j)</code>, where indices i and j run from 1 to <code>n</code>.
  * @author Georg Fischer
  */
 public class A112459 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022823 <code>a(n) = [ (2n+1)/(n-1) ] + [ (2n+2)/(n-2) ] +</code> ... <code>+ [ (3n-1)/1 ]</code>.
+ * A022823 <code>a(n) = [ (2n+1)/(n-1) ] + [ (2n+2)/(n-2) ] + ... + [ (3n-1)/1 ]</code>.
  * @author Sean A. Irvine
  */
 public class A022823 implements Sequence {

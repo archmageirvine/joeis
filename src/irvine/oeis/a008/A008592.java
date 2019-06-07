@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008592 Multiples of <code>10: a(n) = 10 *</code> n.
+ * A008592 Multiples of <code>10: a(n) = 10 * n</code>.
  * @author Sean A. Irvine
  */
 public class A008592 implements Sequence {

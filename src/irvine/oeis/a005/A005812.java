@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005812 Weight of balanced ternary representation of n.
+ * A005812 Weight of balanced ternary representation of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005812 extends MemorySequence {

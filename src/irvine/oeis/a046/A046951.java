@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046951 <code>a(n)</code> is the number of squares dividing n.
+ * A046951 <code>a(n)</code> is the number of squares dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A046951 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A195030 <code>a(n) = (n-2)*(14*n-39)</code> for <code>n &gt; 2</code>, otherwise <code>a(n) =</code> n.
+ * A195030 <code>a(n) = (n-2)*(14*n-39)</code> for <code>n &gt; 2</code>, otherwise <code>a(n) = n</code>.
  * @author Georg Fischer
  */
 public class A195030 extends GeneratingFunctionSequence {

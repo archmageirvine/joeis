@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023153 Number of cycles of function <code>f(x) = x^2 mod</code> n.
+ * A023153 Number of cycles of function <code>f(x) = x^2 mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023153 implements Sequence {

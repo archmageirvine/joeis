@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A018857 Smallest power of 3 that begins with n.
+ * A018857 Smallest power of 3 that begins with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018857 implements Sequence {

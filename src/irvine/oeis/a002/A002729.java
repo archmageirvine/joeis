@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002729 Number of equivalence classes of binary sequences of period n.
+ * A002729 Number of equivalence classes of binary sequences of period <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002729 implements Sequence {

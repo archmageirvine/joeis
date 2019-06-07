@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A176772 Smallest power of 13 whose decimal expansion contains n.
+ * A176772 Smallest power of 13 whose decimal expansion contains <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A176772 implements Sequence {

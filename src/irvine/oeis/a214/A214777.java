@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214777 McNugget numbers: numbers of the form <code>6*x + 9*y + 20*z</code> for nonnegative integers x, y, z.
+ * A214777 McNugget numbers: numbers of the form <code>6*x + 9*y + 20*z</code> for nonnegative integers x, y, <code>z</code>.
  * @author Georg Fischer
  */
 public class A214777 extends GeneratingFunctionSequence {

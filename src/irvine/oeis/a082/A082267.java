@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082267 Number of palindromes that use nonzero digits and have a digit sum of n.
+ * A082267 Number of palindromes that use nonzero digits and have a digit sum of <code>n</code>.
  * @author Georg Fischer
  */
 public class A082267 extends GeneratingFunctionSequence {

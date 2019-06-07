@@ -34,16 +34,20 @@ public final class Names {
     FORMULA.add("mod");
     FORMULA.add("sqrt");
     FORMULA.add("gdinv");
-    FORMULA.add("(gdinv");
     FORMULA.add("gpf");
     FORMULA.add("dsf");
-    FORMULA.add("dsf.");
     FORMULA.add("elif");
     FORMULA.add("hhmm");
+    FORMULA.add("nw-se");
+    FORMULA.add("Hmmss");
     FORMULA.add("frac");
     FORMULA.add("ddd...d");
+    FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
+    FORMULA.add("maj");
+    FORMULA.add("McL");
+    FORMULA.add("Cn");
     FORMULA.add("INVERTi");
     FORMULA.add("EXPCONV");
     FORMULA.add("REVEGF");
@@ -52,9 +56,6 @@ public final class Names {
     FORMULA.add("\\atop");
     FORMULA.add("Pi");
     FORMULA.add("(Pi)");
-    FORMULA.add("(Pi).");
-    FORMULA.add("(Pi");
-    FORMULA.add("Pi)");
     FORMULA.add("n");
     FORMULA.add("x");
     FORMULA.add("y");
@@ -64,22 +65,19 @@ public final class Names {
     FORMULA.add("XY");
     FORMULA.add("xj");
     FORMULA.add("xk");
-    FORMULA.add("xk)");
     FORMULA.add("xn");
     FORMULA.add("zx");
     FORMULA.add("yz");
-    FORMULA.add("xn.");
     FORMULA.add("ub");
     FORMULA.add("uv");
-    FORMULA.add("uu.");
+    FORMULA.add("uu");
     FORMULA.add("uf,");
     FORMULA.add("nx,");
-    FORMULA.add("(PSumSIGN)");
     FORMULA.add("THTH");
     FORMULA.add("HTHH.");
-    FORMULA.add("Xa.");
-    FORMULA.add("Xb.");
-    FORMULA.add("Xf.");
+    FORMULA.add("Xa");
+    FORMULA.add("Xb");
+    FORMULA.add("Xf");
     FORMULA.add("Zp");
     FORMULA.add("xRy");
     FORMULA.add("VVV..VV;");
@@ -88,7 +86,7 @@ public final class Names {
     FORMULA.add("aab");
     FORMULA.add("aab,");
     FORMULA.add("aac,");
-    FORMULA.add("rstu.");
+    FORMULA.add("rstu");
     FORMULA.add("\"sumdigit\"");
     FORMULA.add("\"reo\"");
     FORMULA.add("\"svh\"");
@@ -105,13 +103,15 @@ public final class Names {
     // Start at 1 because part 0 is the A-number
     for (int k = 1; k < parts.length; ++k) {
       final String pk = parts[k];
-      formula[k] = FORMULA.contains(pk);
+      formula[k] = FORMULA.contains(pk)
+        || (pk.startsWith("(") && FORMULA.contains(pk.substring(1)))
+        || ((pk.endsWith(")") || pk.endsWith(".")) && FORMULA.contains(pk.substring(0, pk.length() - 1)));
       for (final char c : SPECIAL) {
         formula[k] |= pk.indexOf(c) >= 0;
       }
     }
     for (int k = 0; k < parts.length; ++k) {
-      if (!formula[k] && parts[k].length() == 1 && (k == 0 || formula[k - 1]) && (k == parts.length - 1 || formula[k + 1])) {
+      if (!formula[k] && (parts[k].length() == 1 || "...".equals(parts[k])) && (k == 0 || formula[k - 1]) && (k == parts.length - 1 || formula[k + 1])) {
         formula[k] = true;
       }
     }

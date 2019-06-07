@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A006752 Decimal expansion of Catalan's constant <code>1 - 1/9 + 1/25 - 1/49 + 1/81 -</code> ...
+ * A006752 Decimal expansion of Catalan's constant <code>1 - 1/9 + 1/25 - 1/49 + 1/81 - ..</code>.
  * @author Sean A. Irvine
  */
 public class A006752 extends DecimalExpansionSequence {

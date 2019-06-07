@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007725 Number of spanning trees of Aztec diamonds of order n.
+ * A007725 Number of spanning trees of Aztec diamonds of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007725 implements Sequence {

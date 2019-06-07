@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005421 Number of numbers of complexity n.
+ * A005421 Number of numbers of complexity <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005421 implements Sequence {

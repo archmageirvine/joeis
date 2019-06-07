@@ -3,7 +3,7 @@ package irvine.oeis.a272;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A272029 Least number k <code>&gt; n</code> such that the multiplicative and additive digital roots of k are both equal to n.
+ * A272029 Least number k <code>&gt; n</code> such that the multiplicative and additive digital roots of k are both equal to <code>n</code>.
  * @author Georg Fischer
  */
 public class A272029 extends FiniteSequence {

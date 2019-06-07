@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174469 Number of permutations p of <code>{1,...,n}</code> satisfying <code>p(1)=1</code> and, if <code>n&gt;1, |p(i)-p((i mod n)+1)|</code> is in <code>{2,3}</code> for i from 1 to n.
+ * A174469 Number of permutations p of <code>{1,...,n}</code> satisfying <code>p(1)=1</code> and, if <code>n&gt;1, |p(i)-p((i mod n)+1)|</code> is in <code>{2,3}</code> for i from 1 to <code>n</code>.
  * @author Georg Fischer
  */
 public class A174469 extends GeneratingFunctionSequence {

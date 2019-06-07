@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271771 Maximum total Hamming distance between pairs of consecutive elements in any permutation of all <code>2^n</code> binary words of length n.
+ * A271771 Maximum total Hamming distance between pairs of consecutive elements in any permutation of all <code>2^n</code> binary words of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A271771 extends GeneratingFunctionSequence {

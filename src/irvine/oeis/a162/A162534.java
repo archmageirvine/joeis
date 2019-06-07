@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162534 A positive integer n is included if every length of the runs of <code>0</code>'s and <code>1</code>'s in the binary representation of n divides n.
+ * A162534 A positive integer n is included if every length of the runs of <code>0</code>'s and <code>1</code>'s in the binary representation of n divides <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A162534 implements Sequence {

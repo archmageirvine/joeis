@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260598 Numbers n such that the sum of the divisors of n equals the fourth power of the sum of the digits of n.
+ * A260598 Numbers n such that the sum of the divisors of n equals the fourth power of the sum of the digits of <code>n</code>.
  * @author Georg Fischer
  */
 public class A260598 extends FiniteSequence {

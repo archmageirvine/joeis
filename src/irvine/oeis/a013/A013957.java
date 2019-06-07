@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013957 <code>sigma_9(n)</code>, the sum of the 9th powers of the divisors of n.
+ * A013957 <code>sigma_9(n)</code>, the sum of the 9th powers of the divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A013957 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274499 Sum of the degrees of asymmetry of all ternary words of length n.
+ * A274499 Sum of the degrees of asymmetry of all ternary words of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A274499 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006287 Sum of squares of digits of ternary representation of n.
+ * A006287 Sum of squares of digits of ternary representation of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006287 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027946 <code>a(n) =</code> sum of the non-Fibonacci numbers in row n of array T given by <code>A027935</code>, computed as <code>T(n,m) + T(n,m+1) +</code> ... <code>+ T(n,n-1)</code>, where <code>m=[ (n+2)/2 ]</code>.
+ * A027946 <code>a(n) =</code> sum of the non-Fibonacci numbers in row n of array T given by <code>A027935</code>, computed as <code>T(n,m) + T(n,m+1) + ... + T(n,n-1)</code>, where <code>m=[ (n+2)/2 ]</code>.
  * @author Georg Fischer
  */
 public class A027946 extends GeneratingFunctionSequence {

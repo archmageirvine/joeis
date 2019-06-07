@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.a081.A081126;
 
 /**
- * A018191 Number of symmetric chord diagrams of degree n.
+ * A018191 Number of symmetric chord diagrams of degree <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018191 extends A081126 {

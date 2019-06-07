@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261799 Number of 7-compositions of n: matrices with 7 rows of nonnegative integers with positive column sums and total element sum n.
+ * A261799 Number of 7-compositions of n: matrices with 7 rows of nonnegative integers with positive column sums and total element sum <code>n</code>.
  * @author Georg Fischer
  */
 public class A261799 extends GeneratingFunctionSequence {

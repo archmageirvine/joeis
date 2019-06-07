@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023139 Number of cycles of function <code>f(x) = 7x mod</code> n.
+ * A023139 Number of cycles of function <code>f(x) = 7x mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023139 implements Sequence {

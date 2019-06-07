@@ -3,7 +3,7 @@ package irvine.oeis.a096;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A096489 Noncomposite numbers n such that number of decimal digits of <code>n =</code> number of divisors of n.
+ * A096489 Noncomposite numbers n such that number of decimal digits of <code>n =</code> number of divisors of <code>n</code>.
  * @author Georg Fischer
  */
 public class A096489 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020896 Positive numbers n such that <code>n = x^5 + y^5</code> has a solution in nonzero integers x, y.
+ * A020896 Positive numbers n such that <code>n = x^5 + y^5</code> has a solution in nonzero integers x, <code>y</code>.
  * @author Sean A. Irvine
  */
 public class A020896 implements Sequence {

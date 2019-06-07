@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013962 <code>a(n) = sigma_14(n)</code>, the sum of the <code>14th</code> powers of the divisors of n.
+ * A013962 <code>a(n) = sigma_14(n)</code>, the sum of the <code>14th</code> powers of the divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A013962 implements Sequence {

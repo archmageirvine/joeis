@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115048 Count backwards from 100 in steps modulo n.
+ * A115048 Count backwards from 100 in steps modulo <code>n</code>.
  * @author Georg Fischer
  */
 public class A115048 extends FiniteSequence {

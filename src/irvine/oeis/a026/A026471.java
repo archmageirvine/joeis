@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026471 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not of the form <code>a(i) + a(j) + a(k)</code> for <code>1 &lt;= i &lt; j &lt; k &lt;=</code> n.
+ * A026471 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not of the form <code>a(i) + a(j) + a(k)</code> for <code>1 &lt;= i &lt; j &lt; k &lt;= n</code>.
  * @author Georg Fischer
  */
 public class A026471 extends GeneratingFunctionSequence {

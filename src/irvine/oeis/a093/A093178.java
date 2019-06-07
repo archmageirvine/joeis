@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093178 If n is even then 1, otherwise n.
+ * A093178 If n is even then 1, otherwise <code>n</code>.
  * @author Georg Fischer
  */
 public class A093178 extends GeneratingFunctionSequence {

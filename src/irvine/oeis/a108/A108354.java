@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108354 Expansion of <code>1/((1-x)^2(1+x^2)^2)</code> in powers of x.
+ * A108354 Expansion of <code>1/((1-x)^2(1+x^2)^2)</code> in powers of <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A108354 extends LinearRecurrence {

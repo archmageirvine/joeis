@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069981 Hermite's problem: number of positive integral solutions to <code>x + y + z = n</code> subject to <code>x &lt;= y +</code> z, <code>y &lt;= z + x</code> and <code>z &lt;= x +</code> y.
+ * A069981 Hermite's problem: number of positive integral solutions to <code>x + y + z = n</code> subject to <code>x &lt;= y +</code> z, <code>y &lt;= z + x</code> and <code>z &lt;= x + y</code>.
  * @author Georg Fischer
  */
 public class A069981 extends GeneratingFunctionSequence {

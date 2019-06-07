@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A001250 Number of alternating permutations of order n.
+ * A001250 Number of alternating permutations of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A001250 extends A000111 {

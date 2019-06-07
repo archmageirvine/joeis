@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244495 Number of <code>3 X 3</code> matrices of nonnegative integer entries with all row and column sums <code>&lt;=</code> n.
+ * A244495 Number of <code>3 X 3</code> matrices of nonnegative integer entries with all row and column sums <code>&lt;= n</code>.
  * @author Georg Fischer
  */
 public class A244495 extends GeneratingFunctionSequence {

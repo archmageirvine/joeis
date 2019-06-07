@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245578 The number of permutations of <code>{0,0,1,1,...,n-1,n-1}</code> that begin with 0 and in which adjacent elements are adjacent <code>mod</code> n.
+ * A245578 The number of permutations of <code>{0,0,1,1,...,n-1,n-1}</code> that begin with 0 and in which adjacent elements are adjacent <code>mod n</code>.
  * @author Georg Fischer
  */
 public class A245578 extends GeneratingFunctionSequence {

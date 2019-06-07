@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A191234 The number of strong binary words of length n.
+ * A191234 The number of strong binary words of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A191234 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100832 Amenable numbers: n such that there exists a multiset of integers <code>(s(1)</code>, ..., <code>s(n))</code> whose size, sum and product are all n.
+ * A100832 Amenable numbers: n such that there exists a multiset of integers <code>(s(1)</code>, ..., <code>s(n))</code> whose size, sum and product are all <code>n</code>.
  * @author Georg Fischer
  */
 public class A100832 extends GeneratingFunctionSequence {

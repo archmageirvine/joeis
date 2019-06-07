@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * A002974 Number of restricted solid partitions of n.
+ * A002974 Number of restricted solid partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002974 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A046641 <code>a(n)</code> is the smallest positive integer m such that the number of partitions <code>p(m)=A000041(m)</code> is divisible by n.
+ * A046641 <code>a(n)</code> is the smallest positive integer m such that the number of partitions <code>p(m)=A000041(m)</code> is divisible by <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A046641 implements Sequence {

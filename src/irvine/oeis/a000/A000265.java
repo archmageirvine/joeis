@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000265 Remove all factors of 2 from n; or largest odd divisor of n; or odd part of n.
+ * A000265 Remove all factors of 2 from n; or largest odd divisor of n; or odd part of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000265 implements Sequence {

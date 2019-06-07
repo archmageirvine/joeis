@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055495 Numbers n such that there exists a pair of mutually orthogonal Latin squares of order n.
+ * A055495 Numbers n such that there exists a pair of mutually orthogonal Latin squares of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A055495 extends GeneratingFunctionSequence {

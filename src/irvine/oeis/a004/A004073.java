@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004073 Start with <code>a(1)=1</code>; to get <code>a(n)</code> replace each i in <code>a(n-1)</code> with <code>12...i</code>, then append n.
+ * A004073 Start with <code>a(1)=1</code>; to get <code>a(n)</code> replace each i in <code>a(n-1)</code> with <code>12...i</code>, then append <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A004073 implements Sequence {

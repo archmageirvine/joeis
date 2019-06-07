@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022914 Multinomial <code>coefficients(TOP</code>, BOTTOM), where TOP <code>= 2^n</code>, BOTTOM <code>= ( C(n,0) C(n,1) C(n,2)</code> ... <code>C(n,n) )</code>.
+ * A022914 Multinomial <code>coefficients(TOP</code>, BOTTOM), where TOP <code>= 2^n</code>, BOTTOM <code>= ( C(n,0) C(n,1) C(n,2) ... C(n,n) )</code>.
  * @author Sean A. Irvine
  */
 public class A022914 implements Sequence {

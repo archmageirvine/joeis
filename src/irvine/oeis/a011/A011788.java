@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011788 Number of <code>n X n</code> matrices whose determinant is <code>1 mod</code> n.
+ * A011788 Number of <code>n X n</code> matrices whose determinant is <code>1 mod n</code>.
  * @author Sean A. Irvine
  */
 public class A011788 implements Sequence {

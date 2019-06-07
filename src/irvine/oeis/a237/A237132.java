@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237132 Values of x in the solutions to <code>x^2 - 3xy + y^2 + 11 = 0</code>, where <code>0 &lt; x &lt</code>; y.
+ * A237132 Values of x in the solutions to <code>x^2 - 3xy + y^2 + 11 = 0</code>, where <code>0 &lt; x &lt; y</code>.
  * @author Sean A. Irvine
  */
 public class A237132 extends LinearRecurrence {

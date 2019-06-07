@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163620 Let <code>q(p)</code> be the smallest prime greater than the prime p. <code>a(n)</code> is the smallest integer <code>&gt; n</code> that is divisible by each <code>q(p)</code> for all primes p dividing n.
+ * A163620 Let <code>q(p)</code> be the smallest prime greater than the prime p. <code>a(n)</code> is the smallest integer <code>&gt; n</code> that is divisible by each <code>q(p)</code> for all primes p dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A163620 implements Sequence {

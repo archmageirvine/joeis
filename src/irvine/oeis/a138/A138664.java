@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A138664 <code>a(n) =</code> number of positive integers k, k <code>&lt;=</code> n, where the number of one's in the binary representation of each k divides n.
+ * A138664 <code>a(n) =</code> number of positive integers k, k <code>&lt;=</code> n, where the number of one's in the binary representation of each k divides <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A138664 implements Sequence {

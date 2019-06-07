@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A078485 Number of irreducible indecomposable permutations of degree n.
+ * A078485 Number of irreducible indecomposable permutations of degree <code>n</code>.
  * @author Georg Fischer
  */
 public class A078485 extends GeneratingFunctionSequence {

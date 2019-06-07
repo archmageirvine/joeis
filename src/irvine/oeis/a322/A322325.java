@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A322325 Number of nondecreasing Motzkin paths of length n.
+ * A322325 Number of nondecreasing Motzkin paths of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A322325 extends LinearRecurrence {

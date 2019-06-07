@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A090579 Number of numbers with 4 decimal digits and sum of digits = n.
+ * A090579 Number of numbers with 4 decimal digits and sum of digits <code>= n</code>.
  * @author Georg Fischer
  */
 public class A090579 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161889 <code>a(1)=2. a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> that is coprime to n, and is such that <code>(a(n)-a(n-1))</code> is not a divisor of n.
+ * A161889 <code>a(1)=2. a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> that is coprime to n, and is such that <code>(a(n)-a(n-1))</code> is not a divisor of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A161889 implements Sequence {

@@ -15,6 +15,7 @@ public class A014243 extends A000032 {
 
   {
     next();
+    next();
   }
 
   @Override

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005088 Number of primes <code>= 1 mod 3</code> dividing n.
+ * A005088 Number of primes <code>= 1 mod 3</code> dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005088 implements Sequence {

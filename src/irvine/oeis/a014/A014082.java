@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014082 Number of occurrences of <code>'111'</code> in binary expansion of n.
+ * A014082 Number of occurrences of <code>'111'</code> in binary expansion of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A014082 implements Sequence {

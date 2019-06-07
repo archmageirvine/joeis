@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A094824 Maximum number of longest common substrings of two binary sequences of length n.
+ * A094824 Maximum number of longest common substrings of two binary sequences of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A094824 implements Sequence {

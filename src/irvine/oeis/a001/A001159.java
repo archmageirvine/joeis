@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001159 <code>sigma_4(n)</code>: sum of 4th powers of divisors of n.
+ * A001159 <code>sigma_4(n)</code>: sum of 4th powers of divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A001159 implements Sequence {

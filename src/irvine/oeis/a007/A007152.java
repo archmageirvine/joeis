@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007152 Evolutionary trees of magnitude n.
+ * A007152 Evolutionary trees of magnitude <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007152 extends MemoryFunction<Integer, Z> implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060783 Number of conics which pass through 3 points and are bitangent to a general curve of order n.
+ * A060783 Number of conics which pass through 3 points and are bitangent to a general curve of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A060783 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058034 Number of numbers whose cube root rounds to n.
+ * A058034 Number of numbers whose cube root rounds to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A058034 extends LinearRecurrence {

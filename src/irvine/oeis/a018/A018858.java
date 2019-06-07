@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 
 /**
- * A018858 <code>3^a(n)</code> is smallest power of 3 beginning with n.
+ * A018858 <code>3^a(n)</code> is smallest power of 3 beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018858 extends A018857 {

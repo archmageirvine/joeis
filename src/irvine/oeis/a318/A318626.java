@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318626 Number of 5-member subsets of <code>[5*n]</code> whose elements sum to a multiple of n.
+ * A318626 Number of 5-member subsets of <code>[5*n]</code> whose elements sum to a multiple of <code>n</code>.
  * @author Georg Fischer
  */
 public class A318626 extends GeneratingFunctionSequence {

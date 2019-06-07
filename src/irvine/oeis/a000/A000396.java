@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000396 Perfect numbers n: n is equal to the sum of the proper divisors of n.
+ * A000396 Perfect numbers n: n is equal to the sum of the proper divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000396 extends A000043 {

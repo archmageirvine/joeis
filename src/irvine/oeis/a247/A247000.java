@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247000 Maximal number of palindromes in a circular binary word of length n.
+ * A247000 Maximal number of palindromes in a circular binary word of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A247000 extends GeneratingFunctionSequence {

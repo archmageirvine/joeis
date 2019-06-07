@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163619 Let <code>q(p)</code> be the smallest prime greater than the prime p. A positive integer n is included in this sequence if <code>n+1</code> is divisible by <code>q(p)</code> for each prime p dividing n.
+ * A163619 Let <code>q(p)</code> be the smallest prime greater than the prime p. A positive integer n is included in this sequence if <code>n+1</code> is divisible by <code>q(p)</code> for each prime p dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A163619 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003815 <code>a(0) = 0, a(n) = a(n-1)</code> XOR n.
+ * A003815 <code>a(0) = 0, a(n) = a(n-1)</code> XOR <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003815 implements Sequence {

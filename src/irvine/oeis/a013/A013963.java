@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013963 <code>a(n) = sigma_15(n)</code>, the sum of the <code>15th</code> powers of the divisors of n.
+ * A013963 <code>a(n) = sigma_15(n)</code>, the sum of the <code>15th</code> powers of the divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A013963 implements Sequence {

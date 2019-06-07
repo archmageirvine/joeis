@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005268 Number of elementary sequences of length n.
+ * A005268 Number of elementary sequences of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005268 implements Sequence {

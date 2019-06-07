@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173548 Number of <code>3 X 3</code> magilatin squares with positive values <code>&lt</code>; n.
+ * A173548 Number of <code>3 X 3</code> magilatin squares with positive values <code>&lt; n</code>.
  * @author Georg Fischer
  */
 public class A173548 extends GeneratingFunctionSequence {

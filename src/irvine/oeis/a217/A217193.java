@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217193 Number of permutations in <code>S_{n+3}</code> containing an increasing subsequence of length n.
+ * A217193 Number of permutations in <code>S_{n+3}</code> containing an increasing subsequence of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A217193 extends GeneratingFunctionSequence {

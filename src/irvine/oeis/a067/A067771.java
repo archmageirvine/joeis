@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067771 Number of vertices in Sierpi&#324;ski triangle of order n.
+ * A067771 Number of vertices in Sierpi&#324;ski triangle of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A067771 extends LinearRecurrence {

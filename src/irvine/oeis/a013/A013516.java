@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013516 Denominators in the Taylor expansion <code>exp(cosec(x)-cot(x))=1 + x/2 + x^2/8 + x^3/16 + 3*x^4/128 + 37*x^5/3840 + 59*x^6/15360 +</code> ...
+ * A013516 Denominators in the Taylor expansion <code>exp(cosec(x)-cot(x))=1 + x/2 + x^2/8 + x^3/16 + 3*x^4/128 + 37*x^5/3840 + 59*x^6/15360 + ..</code>.
  * @author Sean A. Irvine
  */
 public class A013516 implements Sequence {

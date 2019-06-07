@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179054 <code>a(n) = (1^k + 2^k +</code> ... <code>+ n^k)</code> modulo <code>(n+2)</code>, where k is any odd integer greater than or equal to 3.
+ * A179054 <code>a(n) = (1^k + 2^k + ... + n^k)</code> modulo <code>(n+2)</code>, where k is any odd integer greater than or equal to 3.
  * @author Sean A. Irvine
  */
 public class A179054 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011558 Expansion of <code>(x + x^3)/(1 + x +</code> ... <code>+ x^4) mod 2</code>.
+ * A011558 Expansion of <code>(x + x^3)/(1 + x + ... + x^4) mod 2</code>.
  * @author Sean A. Irvine
  */
 public class A011558 implements Sequence {

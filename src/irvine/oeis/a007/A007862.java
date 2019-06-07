@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007862 Number of triangular numbers that divide n.
+ * A007862 Number of triangular numbers that divide <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007862 implements Sequence {

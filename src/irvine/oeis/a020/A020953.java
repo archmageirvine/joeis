@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A020953 Least k such that <code>A020951(k) =</code> n.
+ * A020953 Least k such that <code>A020951(k) = n</code>.
  * @author Sean A. Irvine
  */
 public class A020953 extends A020951 {

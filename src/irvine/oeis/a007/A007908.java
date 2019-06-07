@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007908 Concatenation of the numbers from 1 to n.
+ * A007908 Concatenation of the numbers from 1 to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007908 implements Sequence {

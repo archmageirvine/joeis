@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A007878 Number of terms in discriminant of generic polynomial of degree n.
+ * A007878 Number of terms in discriminant of generic polynomial of degree <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007878 implements Sequence {

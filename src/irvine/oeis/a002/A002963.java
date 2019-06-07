@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Roman;
 
 /**
- * A002963 Chisel strokes required for Roman numerals for n.
+ * A002963 Chisel strokes required for Roman numerals for <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002963 implements Sequence {

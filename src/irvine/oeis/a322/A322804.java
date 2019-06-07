@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322804 Number of different positions a sphinx tile can occupy in an equilateral triangle of order n.
+ * A322804 Number of different positions a sphinx tile can occupy in an equilateral triangle of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A322804 extends GeneratingFunctionSequence {

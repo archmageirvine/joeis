@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006128 Total number of parts in all partitions of n. Also, sum of largest parts of all partitions of n.
+ * A006128 Total number of parts in all partitions of <code>n</code>. Also, sum of largest parts of all partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006128 implements Sequence {

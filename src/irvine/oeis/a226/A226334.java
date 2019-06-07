@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226334 Number of nondecreasing -2..2 vectors of length n whose dot product with some other -2..2 vector equals n.
+ * A226334 Number of nondecreasing -2..2 vectors of length n whose dot product with some other -2..2 vector equals <code>n</code>.
  * @author Georg Fischer
  */
 public class A226334 extends GeneratingFunctionSequence {

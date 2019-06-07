@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158707 Smallest emirp with all decimal digits except n.
+ * A158707 Smallest emirp with all decimal digits except <code>n</code>.
  * @author Georg Fischer
  */
 public class A158707 extends FiniteSequence {

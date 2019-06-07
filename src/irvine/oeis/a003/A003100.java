@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003100 Decimal Gray code for n.
+ * A003100 Decimal Gray code for <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003100 implements Sequence {

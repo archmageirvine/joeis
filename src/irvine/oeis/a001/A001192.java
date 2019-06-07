@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A001192 Number of full sets of size n.
+ * A001192 Number of full sets of size <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A001192 extends MemorySequence {

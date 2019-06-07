@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178143 Sum of squares <code>d^2</code> over the divisors <code>d=2 and/or d=3</code> of n.
+ * A178143 Sum of squares <code>d^2</code> over the divisors <code>d=2 and/or d=3</code> of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A178143 extends LinearRecurrence {

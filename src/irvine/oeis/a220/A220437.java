@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220437 Number of domino tilings of a cross whose center is a <code>4 X 4</code> square and in which each of the four arms has length n.
+ * A220437 Number of domino tilings of a cross whose center is a <code>4 X 4</code> square and in which each of the four arms has length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A220437 extends LinearRecurrence {

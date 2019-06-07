@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003165 <code>a(n) = floor(n/2) + 1 - d(n)</code>, where <code>d(n)</code> is the number of divisors of n.
+ * A003165 <code>a(n) = floor(n/2) + 1 - d(n)</code>, where <code>d(n)</code> is the number of divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003165 implements Sequence {

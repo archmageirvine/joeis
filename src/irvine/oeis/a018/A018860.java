@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018860 <code>4^a(n)</code> is smallest power of 4 beginning with n.
+ * A018860 <code>4^a(n)</code> is smallest power of 4 beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018860 extends A018858 {

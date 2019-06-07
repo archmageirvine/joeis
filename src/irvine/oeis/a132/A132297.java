@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132297 Number of distinct Markov type classes of order 2 possible in binary strings of length n.
+ * A132297 Number of distinct Markov type classes of order 2 possible in binary strings of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A132297 extends GeneratingFunctionSequence {

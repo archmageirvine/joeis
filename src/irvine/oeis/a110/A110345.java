@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110345 <code>a(n) = n +(n+1) +(n+2)... n</code> terms if n is odd, else <code>a(n) = n + (n-1) + (n-2)</code> ... n terms <code>= n(n+1)/2 = n-th</code> triangular number if n is even.
+ * A110345 <code>a(n) = n +(n+1) +(n+2)... n</code> terms if n is odd, else <code>a(n) = n + (n-1) + (n-2) ... n</code> terms <code>= n(n+1)/2 = n-th</code> triangular number if n is even.
  * @author Sean A. Irvine
  */
 public class A110345 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A009101 Fixed point when iterating the function f on n, where <code>f(x) = x +</code> product of digits of x.
+ * A009101 Fixed point when iterating the function f on n, where <code>f(x) = x +</code> product of digits of <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A009101 implements Sequence {

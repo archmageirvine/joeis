@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicArray;
 import java.util.Arrays;
 
 /**
- * A002842 Number of strongly asymmetric sequences of length n.
+ * A002842 Number of strongly asymmetric sequences of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002842 implements Sequence {

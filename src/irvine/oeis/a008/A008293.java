@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008293 Triangle of coefficients in expansion of <code>D^n</code> (tan <code>x)</code> in powers of tan x.
+ * A008293 Triangle of coefficients in expansion of <code>D^n</code> (tan <code>x)</code> in powers of tan <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A008293 implements Sequence {

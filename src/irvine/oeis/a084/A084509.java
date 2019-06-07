@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084509 Number of <code>ground-state 3-ball</code> juggling sequences of period n.
+ * A084509 Number of <code>ground-state 3-ball</code> juggling sequences of period <code>n</code>.
  * @author Georg Fischer
  */
 public class A084509 extends LinearRecurrence {

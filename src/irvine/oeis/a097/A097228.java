@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097228 Numbers n such that the product of digits of n equals the concatenation of <code>pi(d)</code>'s where d runs through the digits of n.
+ * A097228 Numbers n such that the product of digits of n equals the concatenation of <code>pi(d)</code>'s where d runs through the digits of <code>n</code>.
  * @author Georg Fischer
  */
 public class A097228 extends LinearRecurrence {

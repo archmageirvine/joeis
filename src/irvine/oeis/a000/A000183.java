@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a061.A061702;
 
 /**
- * A000183 Number of discordant permutations of length n.
+ * A000183 Number of discordant permutations of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000183 implements Sequence {

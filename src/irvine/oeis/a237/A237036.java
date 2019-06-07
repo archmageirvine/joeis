@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A237036 Size of the smallest conjugacy class of size greater than 1 of the alternating group of degree n.
+ * A237036 Size of the smallest conjugacy class of size greater than 1 of the alternating group of degree <code>n</code>.
  * @author Georg Fischer
  */
 public class A237036 extends GeneratingFunctionSequence {

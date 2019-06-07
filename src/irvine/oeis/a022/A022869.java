@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A022869 <code>a(n) = [ a(n-1)/a(1) + a(n-2)/a(2) +</code> ... <code>+ a(1)/a(n-1) ]</code>, for <code>n &gt;= 3</code>.
+ * A022869 <code>a(n) = [ a(n-1)/a(1) + a(n-2)/a(2) + ... + a(1)/a(n-1) ]</code>, for <code>n &gt;= 3</code>.
  * @author Sean A. Irvine
  */
 public class A022869 extends MemorySequence {

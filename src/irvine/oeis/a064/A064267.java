@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064267 Clavis terminorum in Julian calendar for a year with Golden Number n.
+ * A064267 Clavis terminorum in Julian calendar for a year with Golden Number <code>n</code>.
  * @author Georg Fischer
  */
 public class A064267 extends FiniteSequence {

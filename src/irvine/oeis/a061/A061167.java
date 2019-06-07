@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061167 <code>a(n) = n^5 -</code> n.
+ * A061167 <code>a(n) = n^5 - n</code>.
  * @author Georg Fischer
  */
 public class A061167 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018852 <code>a(n)^3</code> is smallest cube beginning with n.
+ * A018852 <code>a(n)^3</code> is smallest cube beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018852 implements Sequence {

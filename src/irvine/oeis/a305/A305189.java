@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A305189 <code>a(n) = 1*2 + 3 + 4*5 + 6 + 7*8 + 9 + 10*11 + 12 +</code> ... <code>+</code> (up to <code>n)</code>.
+ * A305189 <code>a(n) = 1*2 + 3 + 4*5 + 6 + 7*8 + 9 + 10*11 + 12 + ... +</code> (up to <code>n)</code>.
  * @author Georg Fischer
  */
 public class A305189 extends LinearRecurrence {

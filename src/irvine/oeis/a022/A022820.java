@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022820 <code>[ n/1 ] - [ (n-1)/2 ] + [ (n-2)/3 ] -</code> ... <code>+ ((-1)^n)[ 2/(n-1) ]</code>.
+ * A022820 <code>[ n/1 ] - [ (n-1)/2 ] + [ (n-2)/3 ] - ... + ((-1)^n)[ 2/(n-1) ]</code>.
  * @author Sean A. Irvine
  */
 public class A022820 implements Sequence {

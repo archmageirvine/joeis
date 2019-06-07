@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005312 Number of symmetric anti-Hadamard matrices of order n.
+ * A005312 Number of symmetric anti-Hadamard matrices of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005312 implements Sequence {

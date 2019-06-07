@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097403 Minimum wind speed in knots for Beaufort Number n.
+ * A097403 Minimum wind speed in knots for Beaufort Number <code>n</code>.
  * @author Georg Fischer
  */
 public class A097403 extends FiniteSequence {

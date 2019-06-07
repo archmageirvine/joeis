@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018853 <code>a(n)^4</code> is smallest fourth power beginning with n.
+ * A018853 <code>a(n)^4</code> is smallest fourth power beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018853 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032798 Numbers such that <code>n(n+1)(n+2)...(n+12) / (n+(n+1)+(n+2)+...+(n+12))</code> is a multiple of n.
+ * A032798 Numbers such that <code>n(n+1)(n+2)...(n+12) / (n+(n+1)+(n+2)+...+(n+12))</code> is a multiple of <code>n</code>.
  * @author Georg Fischer
  */
 public class A032798 extends GeneratingFunctionSequence {

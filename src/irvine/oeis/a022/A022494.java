@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a137.A137251;
 
 /**
- * A022494 Number of connected regular linearized chord diagrams of degree n.
+ * A022494 Number of connected regular linearized chord diagrams of degree <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A022494 extends A137251 {

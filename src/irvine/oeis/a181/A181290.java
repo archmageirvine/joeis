@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181290 The sum of the lengths of the 2-compositions of n. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n. The length of the 2-composition is the number of columns.
+ * A181290 The sum of the lengths of the 2-compositions of <code>n. A 2-composition</code> of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to <code>n</code>. The length of the 2-composition is the number of columns.
  * @author Georg Fischer
  */
 public class A181290 extends GeneratingFunctionSequence {

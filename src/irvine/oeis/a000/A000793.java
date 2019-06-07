@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.partitions.IntegerPartition;
 
 /**
- * A000793 Landau's function <code>g(n)</code>: largest order of permutation of n elements. Equivalently, largest LCM of partitions of n.
+ * A000793 Landau's function <code>g(n)</code>: largest order of permutation of n elements. Equivalently, largest LCM of partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000793 implements Sequence {

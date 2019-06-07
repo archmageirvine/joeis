@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002182;
 
 /**
- * A022404 Least highly composite number divisible by n.
+ * A022404 Least highly composite number divisible by <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A022404 extends A002182 {

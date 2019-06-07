@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005045 Number of restricted <code>3 X 3</code> matrices with row and column sums n.
+ * A005045 Number of restricted <code>3 X 3</code> matrices with row and column sums <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005045 implements Sequence {

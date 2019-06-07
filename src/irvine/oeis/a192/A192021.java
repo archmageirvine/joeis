@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A192021 The Wiener index of the binomial tree of order n.
+ * A192021 The Wiener index of the binomial tree of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A192021 extends LinearRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023154 Number of cycles of function <code>f(x) = x^3 mod</code> n.
+ * A023154 Number of cycles of function <code>f(x) = x^3 mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023154 extends A023153 {

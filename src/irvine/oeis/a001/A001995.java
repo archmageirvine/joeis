@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001995 Numbers that are the sum of 5 distinct squares: of form <code>v^2 + w^2 + x^2 + y^2 + z^2</code> with <code>0 &lt;= v &lt; w &lt; x &lt; y &lt</code>; z.
+ * A001995 Numbers that are the sum of 5 distinct squares: of form <code>v^2 + w^2 + x^2 + y^2 + z^2</code> with <code>0 &lt;= v &lt; w &lt; x &lt; y &lt; z</code>.
  * @author Sean A. Irvine
  */
 public class A001995 implements Sequence {

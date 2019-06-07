@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319886 <code>a(n) = 3*2*1 - 6*5*4 + 9*8*7 - 12*11*10 + 15*14*13 - 18*17*16 +</code> ... <code>-</code> (up to the <code>n-th</code> term).
+ * A319886 <code>a(n) = 3*2*1 - 6*5*4 + 9*8*7 - 12*11*10 + 15*14*13 - 18*17*16 + ... -</code> (up to the <code>n-th</code> term).
  * @author Georg Fischer
  */
 public class A319886 extends GeneratingFunctionSequence {

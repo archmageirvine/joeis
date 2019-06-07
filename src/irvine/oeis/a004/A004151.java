@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004151 Omit trailing zeros from n.
+ * A004151 Omit trailing zeros from <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A004151 implements Sequence {

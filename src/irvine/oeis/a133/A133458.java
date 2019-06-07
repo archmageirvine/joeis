@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133458 The size of the largest antichain in the 7-dimensional hypercubic lattice of size n; also the coefficient of <code>x^floor(7*(n-1)/2)</code> in <code>(1 + x +</code> ... <code>+ x^(n-1))^7</code>.
+ * A133458 The size of the largest antichain in the 7-dimensional hypercubic lattice of size n; also the coefficient of <code>x^floor(7*(n-1)/2)</code> in <code>(1 + x + ... + x^(n-1))^7</code>.
  * @author Georg Fischer
  */
 public class A133458 extends GeneratingFunctionSequence {

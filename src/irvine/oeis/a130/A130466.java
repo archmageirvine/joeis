@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A130466 Triangle where the n-th row consists of the n smallest positive integers which are coprime to the sum of divisors of n.
+ * A130466 Triangle where the n-th row consists of the n smallest positive integers which are coprime to the sum of divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A130466 implements Sequence {

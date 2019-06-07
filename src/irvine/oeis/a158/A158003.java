@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158003 <code>a(n) = 196*n^2 -</code> n.
+ * A158003 <code>a(n) = 196*n^2 - n</code>.
  * @author Sean A. Irvine
  */
 public class A158003 extends LinearRecurrence {

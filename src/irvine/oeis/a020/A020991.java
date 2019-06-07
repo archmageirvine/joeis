@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020991 Largest value of k for which <code>Golay-Rudin-Shapiro</code> sequence <code>A020986(k) =</code> n.
+ * A020991 Largest value of k for which <code>Golay-Rudin-Shapiro</code> sequence <code>A020986(k) = n</code>.
  * @author Sean A. Irvine
  */
 public class A020991 implements Sequence {

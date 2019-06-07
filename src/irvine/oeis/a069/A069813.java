@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069813 Maximum number of triangles in polyiamond with perimeter n.
+ * A069813 Maximum number of triangles in polyiamond with perimeter <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A069813 extends LinearRecurrence {

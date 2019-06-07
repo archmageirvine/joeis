@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A022829 <code>a(n) = a([ .5 + n/2 ]) + a([ .5 + n/3 ]) +</code> ... <code>+ a([ .5 + n/n ])</code>.
+ * A022829 <code>a(n) = a([ .5 + n/2 ]) + a([ .5 + n/3 ]) + ... + a([ .5 + n/n ])</code>.
  * @author Sean A. Irvine
  */
 public class A022829 extends MemorySequence {

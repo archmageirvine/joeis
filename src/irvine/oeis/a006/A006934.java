@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006934 A series for Pi.
+ * A006934 A series for <code>Pi</code>.
  * @author Sean A. Irvine
  */
 public class A006934 extends MemoryFunction1<Q> implements Sequence {

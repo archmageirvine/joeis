@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070199 Number of palindromes of length <code>&lt;=</code> n.
+ * A070199 Number of palindromes of length <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A070199 extends LinearRecurrence {

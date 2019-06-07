@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A289642 Number of 2-digit numbers whose digits add up to n.
+ * A289642 Number of 2-digit numbers whose digits add up to <code>n</code>.
  * @author Georg Fischer
  */
 public class A289642 extends FiniteSequence {

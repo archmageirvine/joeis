@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A005434 Correlations of length n.
+ * A005434 Correlations of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005434 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A257766 Numbers n such that the sum of the digits of n times the square of the sum of the digits squared of n equals n.
+ * A257766 Numbers n such that the sum of the digits of n times the square of the sum of the digits squared of n equals <code>n</code>.
  * @author Georg Fischer
  */
 public class A257766 extends FiniteSequence {

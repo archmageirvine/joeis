@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000538 Sum of fourth powers: <code>0^4 + 1^4 +</code> ... <code>+ n^4</code>.
+ * A000538 Sum of fourth powers: <code>0^4 + 1^4 + ... + n^4</code>.
  * @author Sean A. Irvine
  */
 public class A000538 implements Sequence {

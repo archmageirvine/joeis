@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217789 Least difference between 2 palindromic numbers of length n.
+ * A217789 Least difference between 2 palindromic numbers of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A217789 extends GeneratingFunctionSequence {

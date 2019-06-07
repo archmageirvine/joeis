@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023135 Number of cycles of function <code>f(x) = 3x mod</code> n.
+ * A023135 Number of cycles of function <code>f(x) = 3x mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023135 implements Sequence {

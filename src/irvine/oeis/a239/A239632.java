@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239632 Number of parts in all palindromic compositions of n.
+ * A239632 Number of parts in all palindromic compositions of <code>n</code>.
  * @author Georg Fischer
  */
 public class A239632 extends GeneratingFunctionSequence {

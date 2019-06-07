@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000201;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A003248 <code>A000201(A003234(n)) +</code> n.
+ * A003248 <code>A000201(A003234(n)) + n</code>.
  * @author Sean A. Irvine
  */
 public class A003248 extends A003234 {

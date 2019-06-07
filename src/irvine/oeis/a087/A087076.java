@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087076 Sums of the squares of the elements in the subsets of the integers 1 to n.
+ * A087076 Sums of the squares of the elements in the subsets of the integers 1 to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A087076 extends LinearRecurrence {

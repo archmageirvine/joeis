@@ -4,7 +4,7 @@ package irvine.oeis.a174;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A174018 Number of reduced <code>3x3</code> magilatin squares with largest entry n.
+ * A174018 Number of reduced <code>3x3</code> magilatin squares with largest entry <code>n</code>.
  * @author Georg Fischer
  */
 public class A174018 extends GeneratingFunctionSequence {

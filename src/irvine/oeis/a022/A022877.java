@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A022877 <code>a(n) = floor( a(n-1)/a(1) + a(n-3)/a(3) + a(n-5)/a(5) +</code> ... <code>)</code>, for <code>n &gt;= 3</code> with <code>a(1) = 1</code> and <code>a(2) = 3</code>.
+ * A022877 <code>a(n) = floor( a(n-1)/a(1) + a(n-3)/a(3) + a(n-5)/a(5) + ... )</code>, for <code>n &gt;= 3</code> with <code>a(1) = 1</code> and <code>a(2) = 3</code>.
  * @author Sean A. Irvine
  */
 public class A022877 extends MemorySequence {

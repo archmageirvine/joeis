@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002449 Number of different types of binary trees of height n.
+ * A002449 Number of different types of binary trees of height <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002449 extends MemoryFunction2<Long, Z> implements Sequence {

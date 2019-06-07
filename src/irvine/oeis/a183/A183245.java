@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183245 Number of permutations of <code>1..2*n+2</code> with each element displaced by at least n.
+ * A183245 Number of permutations of <code>1..2*n+2</code> with each element displaced by at least <code>n</code>.
  * @author Georg Fischer
  */
 public class A183245 extends GeneratingFunctionSequence {

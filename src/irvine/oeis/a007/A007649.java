@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007649 Number of set-like molecular species of degree n.
+ * A007649 Number of set-like molecular species of degree <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007649 extends MemorySequence {

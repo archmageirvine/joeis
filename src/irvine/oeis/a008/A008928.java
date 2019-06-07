@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008928 Number of increasing sequences of addition chain type with maximal element n.
+ * A008928 Number of increasing sequences of addition chain type with maximal element <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A008928 implements Sequence {

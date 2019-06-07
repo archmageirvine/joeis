@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303299 Generalized <code>22-gonal</code> (or icosidigonal) numbers: <code>m*(10*m - 9)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3</code>, ...
+ * A303299 Generalized <code>22-gonal</code> (or icosidigonal) numbers: <code>m*(10*m - 9)</code> with m <code>= 0, +1, -1, +2, -2, +3, -3, ..</code>.
  * @author Georg Fischer
  */
 public class A303299 extends GeneratingFunctionSequence {

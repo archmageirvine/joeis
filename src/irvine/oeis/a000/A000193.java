@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000193 Nearest integer to log n.
+ * A000193 Nearest integer to log <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000193 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A109659 Numbers n such that the sum of the digits of <code>sigma(n)^n</code> is divisible by n.
+ * A109659 Numbers n such that the sum of the digits of <code>sigma(n)^n</code> is divisible by <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A109659 implements Sequence {

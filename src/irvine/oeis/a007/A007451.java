@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A007451 Denominators of expansion of exp <code>x /</code> sin x.
+ * A007451 Denominators of expansion of exp <code>x /</code> sin <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A007451 extends A007418 {

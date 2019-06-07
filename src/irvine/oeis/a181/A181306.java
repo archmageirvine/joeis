@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181306 Number of 2-compositions of n having no increasing columns. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to n.
+ * A181306 Number of 2-compositions of n having no increasing columns. A 2-composition of n is a nonnegative matrix with two rows, such that each column has at least one nonzero entry and whose entries sum up to <code>n</code>.
  * @author Georg Fischer
  */
 public class A181306 extends GeneratingFunctionSequence {

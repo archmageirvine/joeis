@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A247397 Numbers n such that when <code>n unit-diameter</code> circles are arranged non-overlapping in the plane, and those circles are then enclosed in a rectangle, the area of the rectangle must be at least n.
+ * A247397 Numbers n such that when <code>n unit-diameter</code> circles are arranged non-overlapping in the plane, and those circles are then enclosed in a rectangle, the area of the rectangle must be at least <code>n</code>.
  * @author Georg Fischer
  */
 public class A247397 extends FiniteSequence {

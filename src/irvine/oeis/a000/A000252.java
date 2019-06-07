@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000252 Number of invertible <code>2 X 2</code> matrices <code>mod</code> n.
+ * A000252 Number of invertible <code>2 X 2</code> matrices <code>mod n</code>.
  * @author Sean A. Irvine
  */
 public class A000252 implements Sequence {

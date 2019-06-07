@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318778 Number of different positions that a elementary sphinx can occupy in a sphinx of order n.
+ * A318778 Number of different positions that a elementary sphinx can occupy in a sphinx of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A318778 extends GeneratingFunctionSequence {

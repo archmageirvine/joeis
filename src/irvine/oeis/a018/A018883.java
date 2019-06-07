@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018883 Least nonsquare having square residues for all moduli 2 through n.
+ * A018883 Least nonsquare having square residues for all moduli 2 through <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018883 implements Sequence {

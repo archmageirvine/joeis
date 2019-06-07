@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A002789 Number of integer points in a certain quadrilateral scaled by a factor of n.
+ * A002789 Number of integer points in a certain quadrilateral scaled by a factor of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002789 extends GeneratingFunctionSequence {

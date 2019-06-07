@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259711 Number of positions the <code>7g</code> heptiamond occupies in an equilateral triangle of order n.
+ * A259711 Number of positions the <code>7g</code> heptiamond occupies in an equilateral triangle of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A259711 extends GeneratingFunctionSequence {

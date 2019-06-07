@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109900 The <code>(n,r)-th</code> term of the following triangle is <code>T(n)-T(r)</code> for r <code>= 0</code> to n. The n-th row contains <code>n+1</code> terms. <code>T(n) =</code> the n-th triangular number <code>= n(n+1)/2</code>. Sequence contains the sum of terms at a 45-degree angle.
+ * A109900 The <code>(n,r)-th</code> term of the following triangle is <code>T(n)-T(r)</code> for r <code>= 0</code> to <code>n</code>. The n-th row contains <code>n+1</code> terms. <code>T(n) =</code> the n-th triangular number <code>= n(n+1)/2</code>. Sequence contains the sum of terms at a 45-degree angle.
  * @author Georg Fischer
  */
 public class A109900 extends GeneratingFunctionSequence {

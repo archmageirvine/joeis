@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019555 Smallest number whose cube is divisible by n.
+ * A019555 Smallest number whose cube is divisible by <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A019555 implements Sequence {

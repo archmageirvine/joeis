@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A291654 Number of distinct values in the prime tree starting with n.
+ * A291654 Number of distinct values in the prime tree starting with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A291654 implements Sequence {

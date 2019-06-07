@@ -3,7 +3,7 @@ package irvine.oeis.a079;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A079042 Numbers n in which the first k digits of n form an integer divisible by <code>k^2</code>, for k <code>= 1, 2</code>, ..., m, where m is the number of digits in n.
+ * A079042 Numbers n in which the first k digits of n form an integer divisible by <code>k^2</code>, for k <code>= 1, 2</code>, ..., m, where m is the number of digits in <code>n</code>.
  * @author Georg Fischer
  */
 public class A079042 extends FiniteSequence {

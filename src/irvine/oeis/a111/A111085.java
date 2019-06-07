@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111085 Number of <code>semi-magic 3-dimensional</code> hypercubes with 27 entries and magic sum n.
+ * A111085 Number of <code>semi-magic 3-dimensional</code> hypercubes with 27 entries and magic sum <code>n</code>.
  * @author Georg Fischer
  */
 public class A111085 extends GeneratingFunctionSequence {

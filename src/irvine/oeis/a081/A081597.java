@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A081597 Let <code>n = 10*x + y</code> where <code>0 &lt;= y &lt;= 9, x &gt;= 0</code>. Then <code>a(n) = 6*x +</code> y.
+ * A081597 Let <code>n = 10*x + y</code> where <code>0 &lt;= y &lt;= 9, x &gt;= 0</code>. Then <code>a(n) = 6*x + y</code>.
  * @author Georg Fischer
  */
 public class A081597 extends GeneratingFunctionSequence {

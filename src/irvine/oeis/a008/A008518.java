@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.z.Z;
 
 /**
- * A008518 Triangle of Eulerian numbers with rows multiplied by <code>1 +</code> x.
+ * A008518 Triangle of Eulerian numbers with rows multiplied by <code>1 + x</code>.
  * @author Sean A. Irvine
  */
 public class A008518 extends A008292 {

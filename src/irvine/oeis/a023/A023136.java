@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023136 Number of cycles of function <code>f(x) = 4x mod</code> n.
+ * A023136 Number of cycles of function <code>f(x) = 4x mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023136 implements Sequence {

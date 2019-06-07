@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013959 <code>a(n) = sigma_11(n)</code>, the sum of the <code>11th</code> powers of the divisors of n.
+ * A013959 <code>a(n) = sigma_11(n)</code>, the sum of the <code>11th</code> powers of the divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A013959 implements Sequence {

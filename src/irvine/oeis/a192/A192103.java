@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192103 Number of distinct (unordered) pairs of partitions of a 10-element set that have Rand distance n.
+ * A192103 Number of distinct (unordered) pairs of partitions of a 10-element set that have Rand distance <code>n</code>.
  * @author Georg Fischer
  */
 public class A192103 extends FiniteSequence {

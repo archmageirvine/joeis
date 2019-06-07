@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018854 Smallest factorial that begins with n.
+ * A018854 Smallest factorial that begins with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018854 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003439 Number of <code>6 X 6</code> stochastic matrices of integers: all rows and columns sum to n.
+ * A003439 Number of <code>6 X 6</code> stochastic matrices of integers: all rows and columns sum to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003439 implements Sequence {

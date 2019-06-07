@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A139410 Numbers n such that <code>n=4^d_1+4^d_2+...+4^d_k</code> where <code>d_1d_2...d_k</code> is the decimal expansion of n.
+ * A139410 Numbers n such that <code>n=4^d_1+4^d_2+...+4^d_k</code> where <code>d_1d_2...d_k</code> is the decimal expansion of <code>n</code>.
  * @author Georg Fischer
  */
 public class A139410 extends FiniteSequence {

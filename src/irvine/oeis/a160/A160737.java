@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160737 <code>4*P_5(n), 4</code> times the Legendre Polynomial of order 5 at n.
+ * A160737 <code>4*P_5(n), 4</code> times the Legendre Polynomial of order 5 at <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A160737 extends LinearRecurrence {

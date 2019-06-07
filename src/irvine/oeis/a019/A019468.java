@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A019468 <code>(n-2)-th</code> Catalan number is congruent to <code>2n/3 mod</code> n.
+ * A019468 <code>(n-2)-th</code> Catalan number is congruent to <code>2n/3 mod n</code>.
  * @author Sean A. Irvine
  */
 public class A019468 extends A000108 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014185 Volume of (the dilation by <code>2)</code> of the Relaxed Boolean Quadric polytope of order n.
+ * A014185 Volume of (the dilation by <code>2)</code> of the Relaxed Boolean Quadric polytope of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A014185 implements Sequence {

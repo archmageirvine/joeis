@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168162 Numbers n which do not exceed the sum of the binary digits in all primes <code>&lt;=</code> n.
+ * A168162 Numbers n which do not exceed the sum of the binary digits in all primes <code>&lt;= n</code>.
  * @author Georg Fischer
  */
 public class A168162 extends FiniteSequence {

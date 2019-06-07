@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A241899 Numbers n equal to the sum of all the two-digit numbers formed without repetition from the digits of n.
+ * A241899 Numbers n equal to the sum of all the two-digit numbers formed without repetition from the digits of <code>n</code>.
  * @author Georg Fischer
  */
 public class A241899 extends FiniteSequence {

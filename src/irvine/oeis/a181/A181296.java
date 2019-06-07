@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181296 The number of odd entries in all the 2-compositions of n.
+ * A181296 The number of odd entries in all the 2-compositions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A181296 extends LinearRecurrence {

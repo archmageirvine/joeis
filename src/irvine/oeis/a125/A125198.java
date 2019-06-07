@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125198 Number of magical labelings of the octahedral graph of magic sum n.
+ * A125198 Number of magical labelings of the octahedral graph of magic sum <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A125198 extends LinearRecurrence {

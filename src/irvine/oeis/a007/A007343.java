@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A007343 Number of homogeneous primitive partition identities with largest part n.
+ * A007343 Number of homogeneous primitive partition identities with largest part <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007343 extends MemoryFunction2<Integer, Integer> implements Sequence {

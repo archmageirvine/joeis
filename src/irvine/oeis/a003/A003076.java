@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002193;
 
 /**
- * A003076 n-th digit after decimal point of square root of n.
+ * A003076 n-th digit after decimal point of square root of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003076 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A165789 <code>a(n) =</code> the smallest positive integer k that when written in binary, and leading <code>0</code>'s of k are ignored, contains the reversal of the digits of binary n.
+ * A165789 <code>a(n) =</code> the smallest positive integer k that when written in binary, and leading <code>0</code>'s of k are ignored, contains the reversal of the digits of binary <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A165789 implements Sequence {

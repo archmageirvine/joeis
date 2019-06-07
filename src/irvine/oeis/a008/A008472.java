@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008472 Sum of the distinct primes dividing n.
+ * A008472 Sum of the distinct primes dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A008472 implements Sequence {

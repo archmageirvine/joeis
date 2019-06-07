@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109815 <code>n^2</code> followed by <code>n^3</code> followed by n.
+ * A109815 <code>n^2</code> followed by <code>n^3</code> followed by <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A109815 extends LinearRecurrence {

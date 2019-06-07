@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212838 Number of <code>0..n</code> arrays of length 5 with 0 never adjacent to n.
+ * A212838 Number of <code>0..n</code> arrays of length 5 with 0 never adjacent to <code>n</code>.
  * @author Georg Fischer
  */
 public class A212838 extends GeneratingFunctionSequence {

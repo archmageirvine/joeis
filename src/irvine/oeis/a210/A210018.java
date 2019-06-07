@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210018 In base 7, numbers n which have 7 distinct digits, do not start with 0, and have property that the product (written in base <code>7)</code> of any two adjacent digits is a substring of n.
+ * A210018 In base 7, numbers n which have 7 distinct digits, do not start with 0, and have property that the product (written in base <code>7)</code> of any two adjacent digits is a substring of <code>n</code>.
  * @author Georg Fischer
  */
 public class A210018 extends FiniteSequence {

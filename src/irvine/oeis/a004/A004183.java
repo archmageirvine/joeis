@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004183 Omit <code>8</code>'s from n.
+ * A004183 Omit <code>8</code>'s from <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A004183 implements Sequence {

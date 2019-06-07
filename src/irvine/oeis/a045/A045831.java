@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045831 Number of 4-core partitions of n.
+ * A045831 Number of 4-core partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A045831 implements Sequence {

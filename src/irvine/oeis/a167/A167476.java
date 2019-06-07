@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167476 Pandigital numbers n with at least 4 nontrivial anagrams divisible by n.
+ * A167476 Pandigital numbers n with at least 4 nontrivial anagrams divisible by <code>n</code>.
  * @author Georg Fischer
  */
 public class A167476 extends FiniteSequence {

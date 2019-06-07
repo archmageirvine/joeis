@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023159 Number of cycles of function <code>f(x) = x^8 mod</code> n.
+ * A023159 Number of cycles of function <code>f(x) = x^8 mod n</code>.
  * @author Sean A. Irvine
  */
 public class A023159 extends A023153 {

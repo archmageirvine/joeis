@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005986 Number of column-strict plane partitions of n.
+ * A005986 Number of column-strict plane partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005986 extends MemoryFunction1<Z> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007645;
 
 /**
- * A002367 Let p <code>= A007645(n)</code> be the n-th generalized cuban prime and write <code>p^2 = x^2 + 3*y^2</code> with <code>y &gt; 0; a(n) =</code> x.
+ * A002367 Let p <code>= A007645(n)</code> be the n-th generalized cuban prime and write <code>p^2 = x^2 + 3*y^2</code> with <code>y &gt; 0; a(n) = x</code>.
  * @author Sean A. Irvine
  */
 public class A002367 extends A007645 {

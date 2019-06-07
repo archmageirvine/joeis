@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247188 <code>a(0) = 0. a(n)</code> is the number of repeating sums in the collection of all sums of any k elements in <code>[a(0)</code>, ... <code>a(n-1)]</code> chosen without replacement for <code>2 &lt;= k &lt;=</code> n.
+ * A247188 <code>a(0) = 0. a(n)</code> is the number of repeating sums in the collection of all sums of any k elements in <code>[a(0), ... a(n-1)]</code> chosen without replacement for <code>2 &lt;= k &lt;= n</code>.
  * @author Georg Fischer
  */
 public class A247188 extends GeneratingFunctionSequence {

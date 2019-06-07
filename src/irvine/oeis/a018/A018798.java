@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018798 Smallest 4th power that begins with n.
+ * A018798 Smallest 4th power that begins with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018798 implements Sequence {

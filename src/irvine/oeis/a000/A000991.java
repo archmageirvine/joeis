@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000991 Number of 3-line partitions of n.
+ * A000991 Number of 3-line partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000991 implements Sequence {

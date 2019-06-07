@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A213086 Square array read by antidiagonals: <code>T(n,m) (n&gt;=1, m&gt;=0)</code> is the number of partitions of mn that are the sum of m not necessarily distinct partitions of n.
+ * A213086 Square array read by antidiagonals: <code>T(n,m) (n&gt;=1, m&gt;=0)</code> is the number of partitions of mn that are the sum of m not necessarily distinct partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A213086 implements Sequence {

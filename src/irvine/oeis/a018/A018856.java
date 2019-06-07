@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.math.z.Z;
 
 /**
- * A018856 <code>2^a(n)</code> is smallest power of 2 beginning with n.
+ * A018856 <code>2^a(n)</code> is smallest power of 2 beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018856 extends A018802 {

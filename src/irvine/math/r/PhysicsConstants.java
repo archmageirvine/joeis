@@ -61,7 +61,7 @@ public final class PhysicsConstants {
   public static final double RYDBERG_UNC    = 0.000065;
 
   /** Avogadro constant, N_A, in mol^-1. */
-  public static final double AVOGADRO =     6.022140857E23;
+  public static final double AVOGADRO =     6.02214076E23;
   /** Uncertainty in Avogadro constant, N_A, in mol^-1. */
   public static final double AVOGADRO_UNC = 0.000000074E23;
 
@@ -106,7 +106,7 @@ public final class PhysicsConstants {
   public static final double NEUTRON_MASS_UNC  = 0.00000000049;
 
   /** Mass unit in kg. */
-  public static final double MASS_UNIT =     1.660539040E-27;
+  public static final double MASS_UNIT =     1.66053906660E-27;
   /** Uncertainty in mass unit to kg conversion. */
   //public static final double MASS_UNIT_UNC = 0.000000020E-27;
 

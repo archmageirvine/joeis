@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A088921 The number of 321- and 2143-avoiding permutations of length n.
+ * A088921 The number of 321- and 2143-avoiding permutations of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A088921 extends GeneratingFunctionSequence {

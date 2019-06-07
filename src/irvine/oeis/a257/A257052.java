@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257052 <code>a(n) = cpg(3, n) + cpg(4, n) +</code> ... <code>+ cpg(n, n)</code> where <code>cpg(m, n)</code> is the <code>n-th m-th-order</code> centered polygonal number.
+ * A257052 <code>a(n) = cpg(3, n) + cpg(4, n) + ... + cpg(n, n)</code> where <code>cpg(m, n)</code> is the <code>n-th m-th-order</code> centered polygonal number.
  * @author Georg Fischer
  */
 public class A257052 extends GeneratingFunctionSequence {

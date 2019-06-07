@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A162536 <code>a(n) =</code> the smallest positive multiple of n where every length of the runs of <code>0</code>'s and <code>1</code>'s in the binary representation of <code>a(n)</code> divides n.
+ * A162536 <code>a(n) =</code> the smallest positive multiple of n where every length of the runs of <code>0</code>'s and <code>1</code>'s in the binary representation of <code>a(n)</code> divides <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A162536 implements Sequence {

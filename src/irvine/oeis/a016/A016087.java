@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016087 First nontrivial or multidigital Armstrong number to base n.
+ * A016087 First nontrivial or multidigital Armstrong number to base <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A016087 implements Sequence {

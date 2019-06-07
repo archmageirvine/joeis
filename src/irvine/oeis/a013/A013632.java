@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013632 Difference between n and the next prime greater than n.
+ * A013632 Difference between n and the next prime greater than <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A013632 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067056 <code>a(n) = (1)*(2 + 3 + 4 +</code> ... <code>+ n) + (1 + 2)*(3 + 4 + 5 +</code> ... <code>+ n) + (1 + 2 + 3)*(4 + 5 + 6 +</code> ... <code>+ n) +</code> ... <code>+ (1 + 2 + 3 +</code> ... <code>+ n-1)*n</code>.
+ * A067056 <code>a(n) = (1)*(2 + 3 + 4 + ... + n) + (1 + 2)*(3 + 4 + 5 + ... + n) + (1 + 2 + 3)*(4 + 5 + 6 + ... + n) + ... + (1 + 2 + 3 + ... + n-1)*n</code>.
  * @author Georg Fischer
  */
 public class A067056 extends GeneratingFunctionSequence {

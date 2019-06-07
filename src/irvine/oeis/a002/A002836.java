@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002836 Let <code>F(x) = 1 + x + 4x^2 + 10x^3 +</code> ... = g.f. for <code>A000293</code> (solid partitions) and expand <code>(1-x)(1-x^2)(1-x^3)...*F(x)</code> in powers of x.
+ * A002836 Let <code>F(x) = 1 + x + 4x^2 + 10x^3 + ... =</code> g.f. for <code>A000293</code> (solid partitions) and expand <code>(1-x)(1-x^2)(1-x^3)...*F(x)</code> in powers of <code>x</code>.
  * @author Sean A. Irvine
  */
 public class A002836 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007151 Number of planted evolutionary trees of magnitude n.
+ * A007151 Number of planted evolutionary trees of magnitude <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007151 implements Sequence, Serializable {

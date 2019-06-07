@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006609 Number of cyclic neofields of order n.
+ * A006609 Number of cyclic neofields of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006609 implements Sequence {

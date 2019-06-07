@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018882 <code>a(n)^10</code> is smallest tenth power beginning with n.
+ * A018882 <code>a(n)^10</code> is smallest tenth power beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018882 extends A018872 {

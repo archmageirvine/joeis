@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007302 Optimal cost function between two processors at distance n.
+ * A007302 Optimal cost function between two processors at distance <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A007302 extends MemorySequence {

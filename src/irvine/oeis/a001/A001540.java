@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001540 Number of transpositions needed to generate permutations of length n.
+ * A001540 Number of transpositions needed to generate permutations of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A001540 implements Sequence {

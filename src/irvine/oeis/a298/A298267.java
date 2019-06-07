@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298267 <code>a(n)</code> is the maximum number of heptiamonds in a hexagon of order n.
+ * A298267 <code>a(n)</code> is the maximum number of heptiamonds in a hexagon of order <code>n</code>.
  * @author Georg Fischer
  */
 public class A298267 extends GeneratingFunctionSequence {

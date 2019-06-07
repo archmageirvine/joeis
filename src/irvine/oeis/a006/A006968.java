@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.Roman;
 
 /**
- * A006968 Number of letters in Roman numeral representation of n.
+ * A006968 Number of letters in Roman numeral representation of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A006968 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A100670 Number of two-card Baccarat hands of point n.
+ * A100670 Number of two-card Baccarat hands of point <code>n</code>.
  * @author Georg Fischer
  */
 public class A100670 extends FiniteSequence {

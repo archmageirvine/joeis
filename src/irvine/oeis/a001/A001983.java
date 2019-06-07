@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A001983 Numbers that are the sum of 2 distinct squares: of form <code>x^2 + y^2</code> with <code>0 &lt;= x &lt</code>; y.
+ * A001983 Numbers that are the sum of 2 distinct squares: of form <code>x^2 + y^2</code> with <code>0 &lt;= x &lt; y</code>.
  * @author Sean A. Irvine
  */
 public class A001983 implements Sequence {

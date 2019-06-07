@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133191 Smallest prime containing all digits except n.
+ * A133191 Smallest prime containing all digits except <code>n</code>.
  * @author Georg Fischer
  */
 public class A133191 extends FiniteSequence {

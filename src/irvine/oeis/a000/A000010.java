@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000010 Euler totient function <code>phi(n)</code>: count numbers <code>&lt;= n</code> and prime to n.
+ * A000010 Euler totient function <code>phi(n)</code>: count numbers <code>&lt;= n</code> and prime to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000010 implements Sequence {

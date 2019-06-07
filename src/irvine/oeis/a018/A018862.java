@@ -1,7 +1,7 @@
 package irvine.oeis.a018;
 
 /**
- * A018862 <code>5^a(n)</code> is smallest power of 5 beginning with n.
+ * A018862 <code>5^a(n)</code> is smallest power of 5 beginning with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A018862 extends A018858 {

@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289380 Number of 10-digit numbers whose sum of digits is n.
+ * A289380 Number of 10-digit numbers whose sum of digits is <code>n</code>.
  * @author Georg Fischer
  */
 public class A289380 extends GeneratingFunctionSequence {

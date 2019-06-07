@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A107930 Least number m such that m and m-th prime have only one common digit = n.
+ * A107930 Least number m such that m and m-th prime have only one common digit <code>= n</code>.
  * @author Georg Fischer
  */
 public class A107930 extends FiniteSequence {

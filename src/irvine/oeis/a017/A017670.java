@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017670 Denominator of sum of -3rd powers of divisors of n.
+ * A017670 Denominator of sum of -3rd powers of divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A017670 implements Sequence {

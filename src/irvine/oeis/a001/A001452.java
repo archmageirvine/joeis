@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001452 Number of 5-line partitions of n.
+ * A001452 Number of 5-line partitions of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A001452 implements Sequence {

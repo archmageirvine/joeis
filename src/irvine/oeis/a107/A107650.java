@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A107650 Numbers n such that both numbers <code>n/(d_1*d_2* ...*d_k)</code> and <code>n/(d_1+d_2+</code> ... <code>+d_k)</code> are prime, where <code>d_1 d_2</code> ... <code>d_k</code> is the decimal expansion of n.
+ * A107650 Numbers n such that both numbers <code>n/(d_1*d_2* ...*d_k)</code> and <code>n/(d_1+d_2+ ... +d_k)</code> are prime, where <code>d_1 d_2 ... d_k</code> is the decimal expansion of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A107650 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A128367 <code>a(n) =</code> least k such that the remainder when <code>27^k</code> is divided by k is n.
+ * A128367 <code>a(n) =</code> least k such that the remainder when <code>27^k</code> is divided by k is <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A128367 implements Sequence {

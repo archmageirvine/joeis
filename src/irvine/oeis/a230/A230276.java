@@ -4,7 +4,7 @@ package irvine.oeis.a230;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A230276 Voids left after packing 5-curves coins patterns into fountain of coins with base n.
+ * A230276 Voids left after packing 5-curves coins patterns into fountain of coins with base <code>n</code>.
  * @author Georg Fischer
  */
 public class A230276 extends GeneratingFunctionSequence {

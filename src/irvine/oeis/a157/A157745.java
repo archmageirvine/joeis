@@ -3,7 +3,7 @@ package irvine.oeis.a157;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A157745 Largest prime with the most distinct digits and least digit sum containing all digits except n.
+ * A157745 Largest prime with the most distinct digits and least digit sum containing all digits except <code>n</code>.
  * @author Georg Fischer
  */
 public class A157745 extends FiniteSequence {

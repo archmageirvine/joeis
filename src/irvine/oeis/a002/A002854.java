@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002854 Number of unlabeled Euler graphs with n nodes; number of unlabeled two-graphs with n nodes; number of unlabeled switching classes of graphs with n nodes; number of switching classes of unlabeled signed complete graphs on n nodes; number of Seidel matrices of order n.
+ * A002854 Number of unlabeled Euler graphs with n nodes; number of unlabeled two-graphs with n nodes; number of unlabeled switching classes of graphs with n nodes; number of switching classes of unlabeled signed complete graphs on n nodes; number of Seidel matrices of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A002854 implements Sequence, Serializable {

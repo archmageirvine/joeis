@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003460 Octal formula for dragon curve of order n.
+ * A003460 Octal formula for dragon curve of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A003460 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134019 Let <code>P(A)</code> be the power set of an n-element set A. Then <code>a(n) =</code> the number of pairs of elements <code>{x,y}</code> of <code>P(A)</code> for which either <code>0) x</code> and y are intersecting but for which x is not a subset of y and y is not a subset of x, or <code>1) x =</code> y.
+ * A134019 Let <code>P(A)</code> be the power set of an n-element set A. Then <code>a(n) =</code> the number of pairs of elements <code>{x,y}</code> of <code>P(A)</code> for which either <code>0) x</code> and y are intersecting but for which x is not a subset of y and y is not a subset of x, or <code>1) x = y</code>.
  * @author Sean A. Irvine
  */
 public class A134019 extends LinearRecurrence {

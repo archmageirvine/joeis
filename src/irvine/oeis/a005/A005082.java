@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005082 Sum of primes <code>= 3 mod 4</code> dividing n.
+ * A005082 Sum of primes <code>= 3 mod 4</code> dividing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A005082 implements Sequence {

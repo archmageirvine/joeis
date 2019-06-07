@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A068068 Number of odd unitary divisors of n. d is a unitary divisor of n if d divides n and <code>GCD(d,n/d)=1</code>.
+ * A068068 Number of odd unitary divisors of <code>n</code>. d is a unitary divisor of n if d divides n and <code>GCD(d,n/d)=1</code>.
  * @author Sean A. Irvine
  */
 public class A068068 implements Sequence {

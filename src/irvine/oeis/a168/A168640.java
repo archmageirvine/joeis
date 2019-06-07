@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168640 Largest prime with all digits distinct and not containing the digit n.
+ * A168640 Largest prime with all digits distinct and not containing the digit <code>n</code>.
  * @author Georg Fischer
  */
 public class A168640 extends FiniteSequence {

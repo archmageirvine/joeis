@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129720 Number of <code>0</code>'s in odd position in all Fibonacci binary words of length n. A Fibonacci binary word is a binary word having no 00 subword.
+ * A129720 Number of <code>0</code>'s in odd position in all Fibonacci binary words of length <code>n</code>. A Fibonacci binary word is a binary word having no 00 subword.
  * @author Georg Fischer
  */
 public class A129720 extends GeneratingFunctionSequence {

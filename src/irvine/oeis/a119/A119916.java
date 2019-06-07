@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119916 Number of runs of <code>0</code>'s of odd length in all ternary words of length n.
+ * A119916 Number of runs of <code>0</code>'s of odd length in all ternary words of length <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A119916 extends LinearRecurrence {

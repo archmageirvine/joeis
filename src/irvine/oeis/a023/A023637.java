@@ -16,32 +16,45 @@ import irvine.oeis.ParallelGenerateGraphsSequence;
  */
 public class A023637 extends ParallelGenerateGraphsSequence {
 
+  // Too slow to be competitive
+
+  private final int mValency;
+
   /** Construct the sequence. */
-  public A023637() {
-    super(10, 11, false, false, false);
+  protected A023637(final int valency) {
+    super(valency & ~1, 0, false, false, false);
+    mValency = valency;
   }
 
-  private final StatsBlk mNautyStats = new StatsBlk();
+  /** Construct the sequence. */
+  public A023637() {
+    this(10);
+  }
 
   @Override
   protected boolean accept(final Graph graph) {
+    final StatsBlk mNautyStats = new StatsBlk();
     final int[] orbits = new int[graph.order()];
     try {
       new Nauty(graph, new int[graph.order()], new int[graph.order()], null, orbits, new OptionBlk(), mNautyStats, new long[50]);
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
-    //System.out.println(Arrays.toString(orbits));
     return IntegerUtils.isZero(orbits);
+  }
+
+  @Override
+  protected void init(final int n) {
+    mN += mValency & 1; // step by 2 if valency is odd
   }
 
   @Override
   protected void graphGenInit(final GenerateGraphs gg) {
     gg.setVertices(mN);
-    gg.setMinEdges(5 * mN);
-    gg.setMaxEdges(5 * mN);
-    gg.setMinDeg(10);
-    gg.setMaxDeg(10);
-    gg.setConnectionLevel(1);
+    gg.setMinEdges(mValency * mN / 2);
+    gg.setMaxEdges(mValency * mN / 2);
+    gg.setMinDeg(mValency);
+    gg.setMaxDeg(mValency);
+    gg.setConnectionLevel(0);
   }
 }

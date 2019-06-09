@@ -1,13 +1,13 @@
 package irvine.oeis.a023;
 
 /**
- * A023641.
+ * A023644.
  * @author Sean A. Irvine
  */
-public class A023641 extends A023637 {
+public class A023644 extends A023637 {
 
   /** Construct the sequence. */
-  public A023641() {
-    super(6);
+  public A023644() {
+    super(9);
   }
 }

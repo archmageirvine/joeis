@@ -11,7 +11,7 @@ import irvine.math.nauty.StatsBlk;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A023637.
+ * A023637 Vertex-transitive graphs of valency 10 with n nodes.
  * @author Sean A. Irvine
  */
 public class A023637 extends ParallelGenerateGraphsSequence {

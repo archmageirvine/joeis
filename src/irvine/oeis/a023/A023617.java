@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a008.A008578;
 
 /**
- * A023617.
+ * A023617 Convolution of Lucas numbers and <code>(1, p(1), p(2), ...)</code>.
  * @author Sean A. Irvine
  */
 public class A023617 extends ConvolutionSequence {

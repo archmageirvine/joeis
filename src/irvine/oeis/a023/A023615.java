@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023615.
+ * A023615 Convolution of Fibonacci numbers and primes.
  * @author Sean A. Irvine
  */
 public class A023615 extends ConvolutionSequence {

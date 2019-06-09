@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023582.
+ * A023582 Number of distinct prime divisors of <code>2*prime(n)-1</code>.
  * @author Sean A. Irvine
  */
 public class A023582 extends A000040 {

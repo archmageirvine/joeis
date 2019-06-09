@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A023635.
+ * A023635 <code>a(n) = c([ 2n/3 ]) +</code> n, with <code>a(1) = 1, a(2) = 4, c =</code> complement to a.
  * @author Sean A. Irvine
  */
 public class A023635 implements Sequence {

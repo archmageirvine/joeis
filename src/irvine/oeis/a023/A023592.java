@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023592.
+ * A023592 Least odd prime divisor of <code>2*p(n)+1</code>.
  * @author Sean A. Irvine
  */
 public class A023592 extends A000040 {

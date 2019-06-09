@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023592.
+ * A023593 Exponent of least prime factor of <code>2*prime(n)+1</code>.
  * @author Sean A. Irvine
  */
 public class A023593 extends A000040 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023584.
+ * A023584 Greatest exponent in prime-power factorization of <code>2*p(n)-1</code>.
  * @author Sean A. Irvine
  */
 public class A023584 extends A000040 {

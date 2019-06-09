@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023640.
+ * A023640 Number of vertex-transitive graphs of valency 5 with <code>2n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A023640 extends A023637 {

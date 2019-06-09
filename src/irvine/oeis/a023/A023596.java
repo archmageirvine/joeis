@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023596.
+ * A023596 Convolution of <code>A023532</code> and Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A023596 extends ConvolutionSequence {

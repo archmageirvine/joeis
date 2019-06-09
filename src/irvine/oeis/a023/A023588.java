@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023588.
+ * A023588 <code>a(n) =</code> sum of exponents in prime-power factorization of <code>2*prime(n)-1</code>.
  * @author Sean A. Irvine
  */
 public class A023588 extends A000040 {

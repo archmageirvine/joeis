@@ -4,7 +4,7 @@ import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023648.
+ * A023648 Self-convolution of composite numbers.
  * @author Sean A. Irvine
  */
 public class A023648 extends ConvolutionSequence {

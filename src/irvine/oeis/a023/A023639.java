@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023639.
+ * A023639 Vertex-transitive graphs of valency 12 with n nodes.
  * @author Sean A. Irvine
  */
 public class A023639 extends A023637 {

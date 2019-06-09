@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023576.
+ * A023576 Greatest prime divisor of <code>p(n)+3</code>.
  * @author Sean A. Irvine
  */
 public class A023576 extends A000040 {

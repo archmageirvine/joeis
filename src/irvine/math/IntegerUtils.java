@@ -408,4 +408,18 @@ public final class IntegerUtils {
     }
     return c;
   }
+
+  /**
+   * Test if the array is zero.
+   * @param a array
+   * @return true iff every element is 0
+   */
+  public static boolean isZero(final int... a) {
+    for (final int v : a) {
+      if (v != 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

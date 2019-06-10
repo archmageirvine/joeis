@@ -1135,3 +1135,16 @@ A022607 Number of topological types of 4-connected n-nodal networks, hard
 A023193 a(n) gives the largest number k for which there is at least one admissible k-tuple taken from [0, 1, ..., n-1] if the tuple starts with 0. Admissibility is defined in a comment
 A023199 a(n) = least k with sigma(k) >= nk, possible
 A023393 Maximal number of circles of radius 1 that can be packed in a circle of radius n
+A023675 Table of orders of primitive permutation groups by degree
+A023676 Table of orders of transitive permutation groups by degree
+A023677 Value of x corresponding to the minimal solution of the Pell equation x^2+d*y^2, as d runs through the squarefree numbers, almost got this to work, cf. A014000
+A023678 y values corresponding to the x values in A023677
+A023679 Discriminants of complex cubic fields (negated)
+A023680 Discriminants of totally real quartic fields
+A023681 Discriminants of quartic fields with 2 complex conjugates (negated)
+A023682 Discriminants of totally complex quartic fields
+A023683 Discriminants of totally real quintic fields
+A023684 Discriminants of quintic fields with 2 complex conjugates
+A023685 Discriminants of quintic fields with 4 complex conjugates
+A023686 Discriminants of totally real sextic fields
+A023687 Discriminants of totally complex sextic fields

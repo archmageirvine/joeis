@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076507 Three people <code>(P1, P2, P3)</code> are in a circle and are saying Hello to each other. They start with <code>P2</code> saying "Hello, Hello". Thereafter Pn says "Hello" for n times the total number of Hello's so far.
+ * A076507 Three people <code>(P1, P2, P3)</code> are in a circle and are saying Hello to each other. They start with <code>P2</code> saying "Hello, Hello". Thereafter <code>Pn</code> says "Hello" for n times the total number of Hello's so far.
  * @author Georg Fischer
  */
 public class A076507 extends GeneratingFunctionSequence {

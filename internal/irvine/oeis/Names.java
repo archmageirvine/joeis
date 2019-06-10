@@ -63,8 +63,10 @@ public final class Names {
     FORMULA.add("ij");
     FORMULA.add("xy");
     FORMULA.add("XY");
+    FORMULA.add("Pn");
     FORMULA.add("xj");
     FORMULA.add("xk");
+    FORMULA.add("xk),");
     FORMULA.add("xn");
     FORMULA.add("zx");
     FORMULA.add("yz");

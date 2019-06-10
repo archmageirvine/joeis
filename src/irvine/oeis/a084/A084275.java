@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A084274.
+ * A084275 Pseudo-random numbers: MS C 6.0 version.
  * @author Sean A. Irvine
  */
 public class A084275 implements Sequence {

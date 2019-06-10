@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070931 Numbers n such that the smallest integer value <code>&gt;=0</code> of the form <code>x^3-n^2</code> equals the smallest integer value <code>&gt;=0</code> of the form <code>x^2-n^3</code>.
+ * A070931 Numbers k such that the smallest integer value <code>&gt;= 0</code> of the form <code>x^3 - k^2</code> equals the smallest integer value <code>&gt;= 0</code> of the form <code>x^2 - k^3</code>.
  * @author Georg Fischer
  */
 public class A070931 extends GeneratingFunctionSequence {

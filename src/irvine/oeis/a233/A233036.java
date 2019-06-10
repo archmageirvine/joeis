@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A233036 The maximum number of I-tetrominos that can be packed into an <code>n X n</code> array of squares when rotation is allowed.
+ * A233036 The maximum number of I-tetrominoes that can be packed into an <code>n X n</code> array of squares when rotation is allowed.
  * @author Georg Fischer
  */
 public class A233036 extends LinearRecurrence {

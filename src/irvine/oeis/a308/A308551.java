@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A308551.
+ * A308551 Start with an empty stack S; for <code>n = 1, 2, 3</code>, ..., interpret the binary representation of n from left to right as follows: in case of bit 1, push the number 1 on top of S, in case of bit 0, replace the two numbers on top of S by their sum; <code>a(n)</code> gives the number on top of S after processing <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A308551 implements Sequence {

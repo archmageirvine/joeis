@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092812 Number of closed walks on the <code>4-cube</code>.
+ * A092812 Number of closed walks of length <code>2*n</code> on the <code>4-cube</code>.
  * @author Georg Fischer
  */
 public class A092812 extends GeneratingFunctionSequence {

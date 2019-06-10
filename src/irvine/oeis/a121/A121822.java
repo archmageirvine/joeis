@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121822 Number of closed walks on the <code>5-cube</code>.
+ * A121822 Number of closed walks of length <code>2*n</code> on the <code>5-cube</code>.
  * @author Sean A. Irvine
  */
 public class A121822 extends LinearRecurrence {

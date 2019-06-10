@@ -41,6 +41,7 @@ public final class Names {
     FORMULA.add("nw-se");
     FORMULA.add("Hmmss");
     FORMULA.add("frac");
+    FORMULA.add("sinh");
     FORMULA.add("ddd...d");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
@@ -96,6 +97,12 @@ public final class Names {
     FORMULA.add("\"ubt\"");
   }
 
+  private static boolean isFormula(final String s) {
+    return FORMULA.contains(s)
+      || (s.startsWith("(") && FORMULA.contains(s.substring(1)))
+      || ((s.endsWith(")") || s.endsWith(".")) && FORMULA.contains(s.substring(0, s.length() - 1)));
+  }
+
   static String formulaProtect(final String name) {
     final String[] parts = name.split("\\s+");
     if (parts.length <= 1) {
@@ -105,9 +112,7 @@ public final class Names {
     // Start at 1 because part 0 is the A-number
     for (int k = 1; k < parts.length; ++k) {
       final String pk = parts[k];
-      formula[k] = FORMULA.contains(pk)
-        || (pk.startsWith("(") && FORMULA.contains(pk.substring(1)))
-        || ((pk.endsWith(")") || pk.endsWith(".")) && FORMULA.contains(pk.substring(0, pk.length() - 1)));
+      formula[k] = isFormula(pk);
       for (final char c : SPECIAL) {
         formula[k] |= pk.indexOf(c) >= 0;
       }
@@ -119,7 +124,7 @@ public final class Names {
     }
     for (int k = 0; k < parts.length; ++k) {
       if (formula[k]) {
-        if ((!parts[k].startsWith("(mod") && parts[k].matches("[({\\[][A-Za-z]{2,}")) || parts[k].matches("[({\\[]?[A-Za-z]{2,}[)}\\]][.,;]?")) {
+        if (!isFormula(parts[k]) && ((!parts[k].startsWith("(mod") && parts[k].matches("[({\\[][A-Za-z]{2,}")) || parts[k].matches("[({\\[]?[A-Za-z]{2,}[)}\\]][.,;]?"))) {
           formula[k] = false;
         }
         if (formula[k] && (k == 0 || !formula[k - 1]) && (k == parts.length - 1 || !formula[k + 1])) {

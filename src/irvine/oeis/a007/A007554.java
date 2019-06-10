@@ -6,7 +6,7 @@ import irvine.math.Mobius;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007554 Unique attractor for (RIGHT then MOBIUS) transform.
+ * A007554 Unique attractor for (RIGHT then <code>MOBIUS)</code> transform.
  * @author Sean A. Irvine
  */
 public class A007554 extends MemorySequence {

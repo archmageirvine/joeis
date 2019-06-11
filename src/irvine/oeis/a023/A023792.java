@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023792.
+ * A023792 Katadromes: digits in base 11 are in strict descending order.
  * @author Sean A. Irvine
  */
 public class A023792 implements Sequence {

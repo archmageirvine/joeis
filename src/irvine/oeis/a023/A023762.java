@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023762.
+ * A023762 Nialpdromes: digits in base 6 are in nonincreasing order.
  * @author Sean A. Irvine
  */
 public class A023762 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023778.
+ * A023778 Metadromes: digits in base 9 are in strict ascending order.
  * @author Sean A. Irvine
  */
 public class A023778 implements Sequence {

@@ -6,15 +6,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023800.
+ * A023800 Xenodromes: all digits in base 5 are different.
  * @author Sean A. Irvine
  */
 public class A023800 implements Sequence {
 
   private final TreeSet<Long> mA = new TreeSet<>();
+  private final int mBase;
 
   protected A023800(final int base) {
-    build(0, 0, base);
+    mBase = base;
+    for (long k = 0; k < base; ++k) {
+      mA.add(k);
+    }
   }
 
   /** Construct the sequence. */
@@ -22,19 +26,26 @@ public class A023800 implements Sequence {
     this(5);
   }
 
-  private void build(final long n, final int used, final int base) {
-    for (int k = 0, j = 1; k < base; ++k, j <<= 1) {
-      if ((used & j) == 0) {
-        final long m = n * base + k;
-        mA.add(m);
-        build(m, used | j, base);
-      }
-    }
-  }
-
   @Override
   public Z next() {
-    return mA.isEmpty() ? null : Z.valueOf(mA.pollFirst());
+    if (mA.isEmpty()) {
+      return null;
+    }
+    final long a = mA.pollFirst();
+    if (a != 0) {
+      long m = a;
+      int used = 0;
+      while (m != 0) {
+        used |= 1 << (m % mBase);
+        m /= mBase;
+      }
+      for (int k = 0, j = 1; k < mBase; ++k, j <<= 1) {
+        if ((used & j) == 0) {
+          mA.add(a * mBase + k);
+        }
+      }
+    }
+    return Z.valueOf(a);
   }
 }
 

@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023804.
+ * A023804 Xenodromes: all digits in base 9 are different.
  * @author Sean A. Irvine
  */
 public class A023804 extends A023800 {

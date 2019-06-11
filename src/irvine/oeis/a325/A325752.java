@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a059.A059543;
 
 /**
- * A325752.
+ * A325752 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A325752 implements Sequence {

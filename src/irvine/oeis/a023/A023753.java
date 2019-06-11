@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023753.
+ * A023753 Plaindromes: numbers whose digits in base 12 are in nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A023753 implements Sequence {

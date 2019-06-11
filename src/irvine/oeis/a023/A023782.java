@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023782.
+ * A023782 Metadromes: digits in base 14 are in strict ascending order.
  * @author Sean A. Irvine
  */
 public class A023782 implements Sequence {

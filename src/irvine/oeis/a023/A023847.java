@@ -14,7 +14,7 @@ public class A023847 implements Sequence {
   private Cheetah mFactor = new Cheetah();
   private long mN = -1;
 
-  private long binomialOmega(final long n, final long m) {
+  protected long binomialOmega(final long n, final long m) {
     final FactorSequence fsTop = new FactorSequence();
     for (long k = m + 1; k <= n; ++k) {
       fsTop.add(k, FactorSequence.UNKNOWN, 1);

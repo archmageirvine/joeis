@@ -13,7 +13,6 @@ public class A080843 implements Sequence {
   private int mN = -1;
   private int mExpandPos = 0;
 
-
   @Override
   public Z next() {
     if (++mN >= mSeq.length()) {

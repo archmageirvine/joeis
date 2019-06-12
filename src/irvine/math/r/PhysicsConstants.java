@@ -56,9 +56,9 @@ public final class PhysicsConstants {
   public static final double FINE_STRUCTURE_CONSTANT_UNC = 0.0000000017E-3;
 
   /** Rydberg constant in m^-1. */
-  public static final double RYDBERG = 10973731.568508;
+  public static final double RYDBERG = 10973731.568160;
   /** Uncertainty in Rydberg constant in m^-1. */
-  public static final double RYDBERG_UNC    = 0.000065;
+  public static final double RYDBERG_UNC    = 0.000021;
 
   /** Avogadro constant, N_A, in mol^-1. */
   public static final double AVOGADRO =     6.02214076E23;
@@ -76,9 +76,9 @@ public final class PhysicsConstants {
   public static final double MOLAR_GAS_UNC = 0.0000048;
 
   /** Boltzmann constant, k, in J/K. */
-  public static final double BOLTZMANN     = 1.38064852E-23;
-  /** Uncertainty in Boltzmann constant, k, in J/K. */
-  public static final double BOLTZMANN_UNC = 0.00000079E-23;
+  public static final CR BOLTZMANN_CR = CR.valueOf(new Q(Z.valueOf(1380649), Z.TEN.pow(23)));
+  /** Boltzmann constant, k, in J/K. */
+  public static final double BOLTZMANN = 1.380649E-23;
 
   /** Stefan-Boltzmann constant, sigma, in W m^-2 K^-4. */
   public static final double STEFAN_BOLTZMANN     = 5.670367E-8;

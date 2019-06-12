@@ -6,5 +6,5 @@ import irvine.oeis.AbstractSequenceTest;
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A023678Test extends AbstractSequenceTest {
+public class A023861Test extends AbstractSequenceTest {
 }

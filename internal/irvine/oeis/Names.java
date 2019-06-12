@@ -78,6 +78,8 @@ public final class Names {
     FORMULA.add("nx,");
     FORMULA.add("THTH");
     FORMULA.add("HTHH.");
+    FORMULA.add("HN.");
+    FORMULA.add("Hn");
     FORMULA.add("Xa");
     FORMULA.add("Xb");
     FORMULA.add("Xf");

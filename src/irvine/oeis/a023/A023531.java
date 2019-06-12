@@ -9,6 +9,6 @@ import irvine.oeis.a010.A010054;
 public class A023531 extends A010054 {
 
   {
-    next(); // skip 0th
+    super.next(); // skip 0th
   }
 }

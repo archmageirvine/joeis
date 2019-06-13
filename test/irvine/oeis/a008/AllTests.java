@@ -443,6 +443,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A008442Test.class);
     suite.addTestSuite(A008443Test.class);
     suite.addTestSuite(A008444Test.class);
+    suite.addTestSuite(A008445Test.class);
+    suite.addTestSuite(A008446Test.class);
+    suite.addTestSuite(A008447Test.class);
+    suite.addTestSuite(A008448Test.class);
+    suite.addTestSuite(A008449Test.class);
+    suite.addTestSuite(A008450Test.class);
     suite.addTestSuite(A008451Test.class);
     suite.addTestSuite(A008452Test.class);
     suite.addTestSuite(A008453Test.class);

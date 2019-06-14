@@ -41,8 +41,10 @@ public final class Names {
     FORMULA.add("nw-se");
     FORMULA.add("Hmmss");
     FORMULA.add("frac");
+    FORMULA.add("maxjumps");
     FORMULA.add("sinh");
     FORMULA.add("ddd...d");
+    FORMULA.add("abcd...k");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
@@ -53,6 +55,7 @@ public final class Names {
     FORMULA.add("EXPCONV");
     FORMULA.add("REVEGF");
     FORMULA.add("MOBIUS");
+    FORMULA.add("BinomialMean");
     FORMULA.add("GegenbauerC");
     FORMULA.add("\\atop");
     FORMULA.add("Pi");

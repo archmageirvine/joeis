@@ -1,11 +1,9 @@
 package irvine.oeis.a023;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
 import irvine.math.group.QPolynomialRing;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.polynomial.QPolynomial;
 import irvine.math.polynomial.ThetaFunctions;
+import irvine.math.q.Q;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -16,21 +14,27 @@ import irvine.oeis.Sequence;
  */
 public class A023919 implements Sequence {
 
-  // todo not quite working
-
-  private static final QPolynomialRing<Z> RINGQ = new QPolynomialRing<>(Integers.SINGLETON);
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
+  private static final Z Z14 = Z.valueOf(14);
   private int mN = -1;
+
+  private QPolynomial<Z> psi(final int n) {
+    final QPolynomial<Z> p = QPolynomial.create();
+    for (int k = 0; k * k + 1 <= 2 * n; ++k) {
+      p.put(new Q(k * (k + 1), 2), Z.ONE);
+    }
+    return p;
+  }
 
   @Override
   public Z next() {
-    final Polynomial<Z> theta3 = ThetaFunctions.theta3z(++mN).substitutePower(2);
-    final Polynomial<Z> theta32 = theta3.substitutePower(2, mN);
-    final QPolynomial<Z> psi = ThetaFunctions.psi(1, mN).substitutePower(8);
-    final Z a = RING.pow(theta32, 7, mN).coeff(mN);
-    final Z b = RINGQ.pow(RINGQ.multiply(psi.shift(1), Z.TWO), 7, mN).coeff(mN);
-    final Z c = RING.multiply(RING.pow(theta32, 5, mN), RING.pow(theta3, 2, mN)).coeff(mN).multiply(14);
-    final Z d = RING.multiply(RING.pow(theta32, 3, mN), RING.pow(theta3, 4, mN), mN).coeff(mN).multiply(-7);
-    return a.add(b).add(c).add(d).divide(8);
+    final QPolynomial<Z> phi = ThetaFunctions.theta3(++mN);
+    final QPolynomial<Z> psi = psi(mN);
+    final QPolynomial<Z> phi2 = phi.substitutePower(2);
+    final QPolynomial<Z> f88 = RING.subtract(RING.add(RING.add(RING.pow(phi2, 7, mN),
+      RING.pow(RING.multiply(psi.substitutePower(4), RING.monomial(Z.TWO, Q.HALF)), 7, mN)),
+      RING.multiply(RING.multiply(RING.pow(phi2, 5, mN), RING.pow(phi, 2, mN), mN), Z14)),
+      RING.multiply(RING.multiply(RING.pow(phi2, 3, mN), RING.pow(phi, 4, mN), mN), Z.SEVEN));
+    return f88.substitutePower(2).coeff(mN).divide(8);
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023860 <code>a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), <code>t =</code> (Fibonacci numbers).
+ * A023860 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2), t = A000045</code> (Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A023860 extends A000045 {

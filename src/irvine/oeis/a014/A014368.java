@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014368 <code>a(n) =</code> bc, where <code>n = C(b,2)+C(c,1), b&gt;c&gt;=0</code>.
+ * A014368 <code>a(n) = bc</code>, where <code>n = C(b,2)+C(c,1), b&gt;c&gt;=0</code>.
  * @author Sean A. Irvine
  */
 public class A014368 implements Sequence {

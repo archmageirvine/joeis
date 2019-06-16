@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094951 A companion to <code>A081038</code> and <code>A077616</code>.
+ * A094951 <code>a(n) = A081038(n) + A077616(n)</code>.
  * @author Georg Fischer
  */
 public class A094951 extends GeneratingFunctionSequence {

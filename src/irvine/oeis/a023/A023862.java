@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008578;
 
 /**
- * A023862 <code>a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), <code>t = (1, p(1), p(2), p(3), ...)</code>.
+ * A023862 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t <code>= A008578 ({1} U</code> primes).
  * @author Sean A. Irvine
  */
 public class A023862 extends A008578 {

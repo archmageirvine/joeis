@@ -32,7 +32,7 @@ public class A023924 implements Sequence {
     c = RING.add(c, RING.multiply(bb, Z.valueOf(13)));
     bb = RING.multiply(bb, b, mN);
     c = RING.add(c, bb);
-    final Polynomial<Z> a = RING.add(RING.one(), RING.multiply(RING.multiply(b, Z13), c ,mN));
+    final Polynomial<Z> a = RING.add(RING.one(), RING.multiply(RING.multiply(b, Z13), c, mN));
     return RING.multiply(RING.series(RING.pow(RING.eta(RING.x(), mN), 13, mN), eta13, mN), a, mN).coeff(mN);
   }
 }

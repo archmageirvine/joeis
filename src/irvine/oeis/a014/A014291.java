@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014291 Imaginary Rabbits: imaginary part of <code>a(0)=I; a(1)=-I; a(n)=a(n-1)+I*a(n-2)</code>.
+ * A014291 Imaginary Rabbits: imaginary part of <code>a(0)=i; a(1)=-i; a(n) = a(n-1) + i*a(n-2)</code>, with i <code>= sqrt(-1)</code>.
  * @author Sean A. Irvine
  */
 public class A014291 extends LinearRecurrence {

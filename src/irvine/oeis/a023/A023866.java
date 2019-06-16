@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000201;
 
 /**
- * A023866 <code>a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), t is <code>A000201</code> (lower Wythoff sequence).
+ * A023866 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t is <code>A000201</code> (lower Wythoff sequence).
  * @author Sean A. Irvine
  */
 public class A023866 extends A000201 {

@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A081820 Stefan-Boltzmann constant.
+ * A081820 Decimal expansion of the Stefan-Boltzmann constant sigma in the 2019 SI system in units <code>Watt/(m^2*K^4)</code>.
  * @author Sean A. Irvine
  */
 public class A081820 extends DoubleDecimalExpansionSequence {

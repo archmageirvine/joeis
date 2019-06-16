@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014286 <code>a(n) = Sum_{i=0..n} i*Fibonacci(i)</code>.
+ * A014286 <code>a(n) = Sum_{j=0..n} j*Fibonacci(j)</code>.
  * @author Sean A. Irvine
  */
 public class A014286 extends A000045 {

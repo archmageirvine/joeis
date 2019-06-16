@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023863 <code>a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), <code>t =</code> (composite numbers).
+ * A023863 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t <code>= A002808</code> (composite numbers).
  * @author Sean A. Irvine
  */
 public class A023863 extends A002808 {

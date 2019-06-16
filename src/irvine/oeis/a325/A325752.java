@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a059.A059543;
 
 /**
- * A325752 allocated for Clark Kimberling.
+ * A325752 First term of n-th difference sequence of <code>(floor(r*k)), r = log(3), k &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A325752 implements Sequence {

@@ -44,7 +44,7 @@ public final class Names {
     FORMULA.add("maxjumps");
     FORMULA.add("sinh");
     FORMULA.add("ddd...d");
-    FORMULA.add("abcd...k");
+    FORMULA.add("abcd...k,");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
@@ -79,6 +79,7 @@ public final class Names {
     FORMULA.add("uu");
     FORMULA.add("uf,");
     FORMULA.add("nx,");
+    FORMULA.add("bc,");
     FORMULA.add("THTH");
     FORMULA.add("HTHH.");
     FORMULA.add("HN.");

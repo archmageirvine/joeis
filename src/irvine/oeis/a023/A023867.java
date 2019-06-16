@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001950;
 
 /**
- * A023867 <code>s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), t is <code>A001950</code> (upper Wythoff sequence).
+ * A023867 <code>a(n) = 1*t(n) + 2*t(n-1) + ...+ k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t is <code>A001950</code> (upper Wythoff sequence).
  * @author Sean A. Irvine
  */
 public class A023867 extends A001950 {

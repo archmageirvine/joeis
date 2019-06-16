@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109122 <code>a(n) = 4(n+1)^2*(3n+1)^2*(12n^2+20n+5)</code>.
+ * A109122 <code>a(n) = 4(n+1)^2*(3n+1)^2*(12n^2+20n+5)</code>. WebCam.
  * @author Georg Fischer
  */
 public class A109122 extends GeneratingFunctionSequence {

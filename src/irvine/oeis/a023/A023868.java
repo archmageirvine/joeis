@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A023868 <code>a(n) = s(1)t(n)+s(2)t(n-1)+...+s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s =</code> (natural numbers), t is <code>A023533</code>.
+ * A023868 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t is <code>A023533</code>.
  * @author Sean A. Irvine
  */
 public class A023868 extends A023533 {

@@ -1,0 +1,20 @@
+package irvine.oeis.a023;
+
+import irvine.math.cr.CR;
+import irvine.math.cr.ComputableReals;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A023970 First bit in fractional part of binary expansion of cube root of <code>n</code>.
+ * @author Sean A. Irvine
+ */
+public class A023970 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    return ComputableReals.SINGLETON.pow(CR.valueOf(++mN), CR.ONE_THIRD).multiply(CR.TWO).floor().testBit(0) ? Z.ONE : Z.ZERO;
+  }
+}

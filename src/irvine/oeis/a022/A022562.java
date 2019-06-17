@@ -37,8 +37,8 @@ public class A022562 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
-    return isClawFree(graph);
+  protected long getCount(final Graph graph) {
+    return isClawFree(graph) ? 1 : 0;
   }
 
   @Override

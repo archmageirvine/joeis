@@ -80,14 +80,14 @@ public class CliFlagsTest extends TestCase {
     mFlags.registerRequired('b', "boolean", Boolean.class, "a boolean value", "");
     try {
       mFlags.registerRequired("boolean", Boolean.class, "a boolean value", "");
-      fail("Should not accept registering a flag with preexisting long name");
+      fail("Should not getCount registering a flag with preexisting long name");
     } catch (final IllegalArgumentException iae) {
       assertEquals("A flag named boolean already exists.", iae.getMessage());
     }
 
     try {
       mFlags.registerRequired('b', "foolean", Boolean.class, "a boolean value", "");
-      fail("Should not accept registering a flag with preexisting short name");
+      fail("Should not getCount registering a flag with preexisting short name");
     } catch (final IllegalArgumentException iae) {
       assertEquals("A flag with short name b already exists.", iae.getMessage());
     }

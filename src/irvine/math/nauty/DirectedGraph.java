@@ -1,19 +1,18 @@
 package irvine.math.nauty;
 
-import irvine.math.graph.Graph;
-import irvine.math.graph.Graph6;
-import irvine.math.graph.GraphFactory;
-import irvine.util.CliFlags;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.Arrays;
 
+import irvine.math.graph.Graph;
+import irvine.math.graph.Graph6;
+import irvine.math.graph.GraphFactory;
+import irvine.util.CliFlags;
+
 /**
- * Generate all possible non-isomorphic directed graphs for each input
- * undirected graph.
+ * Generate all possible non-isomorphic directed graphs for each input undirected graph.
  * @author Sean A. Irvine (Java port)
  * @author B. D. McKay
  */
@@ -195,7 +194,7 @@ public class DirectedGraph implements GroupAction {
       accept = NauGroup.allgroup2(group, this) == 0;
     }
 
-    //System.out.println("accept is " + accept);
+    //System.out.println("getCount is " + getCount);
     if (accept) {
       if (sVSwitch && !mNtIsol && !mNtGroup) {
         return MAXNE + 1;
@@ -385,7 +384,6 @@ public class DirectedGraph implements GroupAction {
     final GroupRecord group = ng.groupPtr(false);
     ng.makeCosetReps(group);
 
-    // Original
     int k = 0;
     for (i = 0; i < n; ++i) {
       for (int j = i; (j = g.nextVertex(i, j)) >= 0; ) {
@@ -396,18 +394,6 @@ public class DirectedGraph implements GroupAction {
         ++k;
       }
     }
-
-//    // I reversed this from the original ... my bits in graph differ are opposite order to nauty ???
-//    int k = 0;
-//    for (i = 0; i < n; ++i) {
-//      for (int j = i; (j = g.nextVertex(i, j)) >= 0; ) {
-//        mV0[k] = j;
-//        mV1[k] = i;
-//        mEdgeNo[j][i] = 2 * k;
-//        mEdgeNo[i][j] = 2 * k + 1;
-//        ++k;
-//      }
-//    }
 
     mLastRejOk = false;
 

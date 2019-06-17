@@ -24,8 +24,8 @@ public class A008323 implements Sequence {
     }
 
     @Override
-    protected boolean accept(final Graph graph) {
-      return true;
+    protected long getCount(final Graph graph) {
+      return 1;
     }
 
     @Override

@@ -41,13 +41,12 @@ public abstract class ParallelGenerateGraphsSequence implements Sequence {
   }
 
   /**
-   * Test if the current graph should be included in the count.
-   * This implementation must be thread safe.
-   *
+   * Test if the current graph should be included in the count and return the
+   * count for the graph.  That is, if the graph contributes nothing then 0 is returned.
    * @param graph current graph
-   * @return true iff this graph should be counted
+   * @return the count for this graph (can be 0)
    */
-  protected abstract boolean accept(final Graph graph);
+  protected abstract long getCount(final Graph graph);
 
   /**
    * Set up the required parameters for graphs to be generated.
@@ -66,9 +65,7 @@ public abstract class ParallelGenerateGraphsSequence implements Sequence {
 
     @Override
     public void process(final Graph graph) {
-      if (ParallelGenerateGraphsSequence.this.accept(graph)) {
-        ++mCount;
-      }
+      mCount += ParallelGenerateGraphsSequence.this.getCount(graph);
     }
 
     @Override

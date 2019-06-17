@@ -17,8 +17,8 @@ public class A021103 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
-    return graph.isPlanar();
+  protected long getCount(final Graph graph) {
+    return graph.isPlanar() ? 1 : 0;
   }
 
   @Override

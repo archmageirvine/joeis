@@ -16,8 +16,8 @@ public class A014385 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
-    return true;
+  protected long getCount(final Graph graph) {
+    return 1;
   }
 
   @Override

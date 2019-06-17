@@ -113,6 +113,23 @@ public class SmallDigraph extends SmallGraph {
   }
 
   @Override
+  public boolean isHamiltonian() {
+    // Some basic checks first
+    final int n = order();
+    if (n == 1) {
+      return true;
+    }
+    for (int k = 0; k < n; ++k) {
+      if (degree(k) < 1 || inDegree(k) < 1) {
+        return false;
+      }
+    }
+    // Recursive path finding.
+    // Make it like we haven't yet used vertex 0, even though we start there
+    return solveHamiltonian(0, 0, 0);
+  }
+
+  @Override
   public Graph copy(final int newOrder) {
     final SmallDigraph copy = new SmallDigraph(newOrder);
     System.arraycopy(mAdj, 0, copy.mAdj, 0, order());

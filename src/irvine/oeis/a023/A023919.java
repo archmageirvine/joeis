@@ -18,7 +18,7 @@ public class A023919 implements Sequence {
   private static final Z Z14 = Z.valueOf(14);
   private int mN = -1;
 
-  private QPolynomial<Z> psi(final int n) {
+  static QPolynomial<Z> psi(final int n) {
     final QPolynomial<Z> p = QPolynomial.create();
     for (int k = 0; k * k + 1 <= 2 * n; ++k) {
       p.put(new Q(k * (k + 1), 2), Z.ONE);

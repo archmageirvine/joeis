@@ -9,7 +9,7 @@ import irvine.math.graph.Graph;
 public class A022564 extends A022563 {
 
   @Override
-  protected boolean accept(final Graph graph) {
-    return super.accept(graph) && !graph.isHamiltonian();
+  protected long getCount(final Graph graph) {
+    return super.getCount(graph) > 0 && !graph.isHamiltonian() ? 1 : 0;
   }
 }

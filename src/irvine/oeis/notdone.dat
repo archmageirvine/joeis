@@ -1144,3 +1144,26 @@ A023686 Discriminants of totally real sextic fields
 A023687 Discriminants of totally complex sextic fields
 A023814 Number of associative binary operations on an n-set; number of labeled semigroups
 A023815 Number of binary operations on an n-set that are commutative and associative; labeled commutative semigroups
+A023921 Theta series of A*_9 lattice (complicated formula is known)
+A023923 Theta series of A*_11 lattice
+A023925 Theta series of A*_13 lattice
+A023926 Theta series of A*_14 lattice
+A023927 Theta series of A*_15 lattice
+A023928 Theta series of A*_16 lattice
+A023929 Theta series of A*_17 lattice
+A023930 Theta series of A*_18 lattice
+A023931 Theta series of A*_19 lattice
+A023932 Theta series of A*_20 lattice
+A023933 Theta series of A*_21 lattice
+A023934 Theta series of A*_22 lattice
+A023935 Theta series of A*_23 lattice
+A023936 Theta series of A*_24 lattice
+A023937 Theta series of laminated lattice LAMBDA_14
+A023938 Theta series of laminated lattice LAMBDA_15
+A023939 Theta series of laminated lattice LAMBDA_17
+A023940 Theta series of laminated lattice LAMBDA_18
+A023941 Theta series of laminated lattice LAMBDA_19
+A023942 Theta series of laminated lattice LAMBDA_20
+A023943 Theta series of laminated lattice LAMBDA_21
+A023944 Theta series of laminated lattice LAMBDA_22
+A023945 Theta series of laminated lattice LAMBDA_23

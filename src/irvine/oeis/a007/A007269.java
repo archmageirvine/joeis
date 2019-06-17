@@ -98,24 +98,24 @@ public class A007269 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
+  protected long getCount(final Graph graph) {
     final Graph simplifiedGraph = simplify(graph);
     if (neighborCheck(simplifiedGraph)) {
       final List<Long> maxIndpSets = MaximalCliques.maximalIndependentSets(simplifiedGraph);
       for (final long maxIndpSet : maxIndpSets) {
         if (!checkTriangleCondition(simplifiedGraph, maxIndpSet)) {
-          return false;
+          return 0;
         }
       }
       final CliqueCoversIterator cci = new CliqueCoversIterator(simplifiedGraph);
       long[] cc;
       while ((cc = cci.next()) != null) {
         if (checkIncidenceCondition(cc, maxIndpSets)) {
-          return true;
+          return 1;
         }
       }
     }
-    return false;
+    return 0;
   }
 
   @Override

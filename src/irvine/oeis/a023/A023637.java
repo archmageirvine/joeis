@@ -32,7 +32,7 @@ public class A023637 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
+  protected long getCount(final Graph graph) {
     final StatsBlk mNautyStats = new StatsBlk();
     final int[] orbits = new int[graph.order()];
     try {
@@ -40,7 +40,7 @@ public class A023637 extends ParallelGenerateGraphsSequence {
     } catch (final IOException e) {
       throw new RuntimeException(e);
     }
-    return IntegerUtils.isZero(orbits);
+    return IntegerUtils.isZero(orbits) ? 1 : 0;
   }
 
   @Override

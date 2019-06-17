@@ -16,8 +16,8 @@ public class A022563 extends ParallelGenerateGraphsSequence {
   }
 
   @Override
-  protected boolean accept(final Graph graph) {
-    return A022562.isClawFree(graph);
+  protected long getCount(final Graph graph) {
+    return A022562.isClawFree(graph) ? 1 : 0;
   }
 
   @Override

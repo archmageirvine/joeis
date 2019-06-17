@@ -166,7 +166,7 @@ public class Multigraph implements GroupAction {
   }
 
 
-  /* Try one solution, accept if minimal. */
+  /* Try one solution, getCount if minimal. */
   private void tryThisOne(final GroupRecord group, final boolean lswitch, final int[] deg, final int maxdeg, final int ne, final int n) {
     final boolean accept;
     mNix = ne;
@@ -403,7 +403,7 @@ public class Multigraph implements GroupAction {
    * @param maxEdges maximum number of edges
    * @param maxMult maximum edge multiplicity
    * @param maxDegree maximum degree of each vertex
-   * @param lSwitch output control switch
+   * @param lSwitch generate loops
    * @throws IOException if an I/O error occurs
    */
   public void multi(final Graph g, final int nFixed, final int minEdges, int maxEdges, int maxMult, final int maxDegree, final boolean lSwitch) throws IOException {

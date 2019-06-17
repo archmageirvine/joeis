@@ -340,6 +340,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.oeis.a323.AllTests.suite());
     suite.addTest(irvine.oeis.a324.AllTests.suite());
     suite.addTest(irvine.oeis.a325.AllTests.suite());
+    suite.addTest(irvine.oeis.a326.AllTests.suite());
     return suite;
   }
 

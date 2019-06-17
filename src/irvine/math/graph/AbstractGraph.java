@@ -70,7 +70,7 @@ public abstract class AbstractGraph implements Graph {
     return sb.toString();
   }
 
-  private boolean solveHamiltonian(final long used, final int count, final int current) {
+  protected boolean solveHamiltonian(final long used, final int count, final int current) {
     if (count > 1 && current == 0) {
       return count == order();
     }

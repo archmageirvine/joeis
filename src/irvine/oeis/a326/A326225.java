@@ -19,7 +19,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
     super(0, 0, false, false, false);
   }
 
-  private final class DigraphCheck extends DirectedGraph {
+  private static final class DigraphCheck extends DirectedGraph {
 
     private long mCount = 0;
 
@@ -52,7 +52,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
     gg.setMinEdges(mN - 1);
     gg.setMaxEdges(Multigraph.NOLIMIT);
     gg.setConnectionLevel(1);
-    gg.setMinDeg(0); // 2 for most n?
+    gg.setMinDeg(Math.min(2, mN - 1));
     gg.setMaxDeg(mN);
   }
 }

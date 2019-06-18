@@ -16,12 +16,12 @@ public class A023959 implements Sequence {
 
   @Override
   public Z next() {
+    final CR a = CR.valueOf(++mN);
+    final CR b = ComputableReals.SINGLETON.pow(a, a.inverse());
     final Sequence s = new DecimalExpansionSequence(true, 2) {
-      private final CR mA = CR.valueOf(++A023959.this.mN);
-      private final CR mB = ComputableReals.SINGLETON.pow(mA, mA.inverse());
       @Override
       protected CR getCR() {
-        return mB;
+        return b;
       }
     };
     for (int k = 0; k < mN; ++k) {

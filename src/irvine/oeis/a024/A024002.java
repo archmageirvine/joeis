@@ -1,15 +1,16 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000583;
 
 /**
  * A024002 <code>a(n) = 1 - n^4</code>.
  * @author Sean A. Irvine
  */
-public class A024002 extends LinearRecurrence {
+public class A024002 extends A000583 {
 
-  /** Construct the sequence. */
-  public A024002() {
-    super(new long[] {1, -5, 10, -10, 5}, new long[] {1, 0, -15, -80, -255});
+  @Override
+  public Z next() {
+    return Z.ONE.subtract(super.next());
   }
 }

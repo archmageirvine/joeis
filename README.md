@@ -6,11 +6,11 @@ Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
 
 This is likely the largest coherent collection of programs for OEIS
 sequences beyond the Maple, Mathematics, and Pari programs directly
-associated with many entries.  Currently over 57000 sequences are
+associated with many entries.  Currently over 58200 sequences are
 implemented. The following plot shows the number of sequences
 implemented (in bins of 1000):
 
-![implemented-plot](doc/oeis-done.png)
+![done-plot](doc/oeis-done.png)
 
 A similar plot with one pixel for each sequence. Green indicates an
 implemented sequence, red a dead sequence (where an implementation is

@@ -1,15 +1,18 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000351;
 
 /**
  * A024050 <code>a(n) = 5^n - n</code>.
  * @author Sean A. Irvine
  */
-public class A024050 extends LinearRecurrence {
+public class A024050 extends A000351 {
 
-  /** Construct the sequence. */
-  public A024050() {
-    super(new long[] {5, -11, 7}, new long[] {1, 4, 23});
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return super.next().subtract(++mN);
   }
 }

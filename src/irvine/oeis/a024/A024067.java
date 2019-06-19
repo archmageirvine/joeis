@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000584;
 
 /**
  * A024067 <code>a(n) = 6^n - n^5</code>.
  * @author Sean A. Irvine
  */
-public class A024067 extends LinearRecurrence {
+public class A024067 extends A000584 {
 
-  /** Construct the sequence. */
-  public A024067() {
-    super(new long[] {6, -37, 96, -135, 110, -51, 12}, new long[] {1, 5, 4, -27, 272, 4651, 38880});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(6);
+    return mA.subtract(super.next());
   }
 }

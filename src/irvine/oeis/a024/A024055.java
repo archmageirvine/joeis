@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001014;
 
 /**
  * A024055 <code>a(n) = 5^n - n^6</code>.
  * @author Sean A. Irvine
  */
-public class A024055 extends LinearRecurrence {
+public class A024055 extends A001014 {
 
-  /** Construct the sequence. */
-  public A024055() {
-    super(new long[] {-5, 36, -112, 196, -210, 140, -56, 12}, new long[] {1, 4, -39, -604, -3471, -12500, -31031, -39524});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(5);
+    return mA.subtract(super.next());
   }
 }

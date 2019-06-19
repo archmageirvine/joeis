@@ -1,15 +1,18 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000400;
 
 /**
  * A024063 <code>6^n-n</code>.
  * @author Sean A. Irvine
  */
-public class A024063 extends LinearRecurrence {
+public class A024063 extends A000400 {
 
-  /** Construct the sequence. */
-  public A024063() {
-    super(new long[] {6, -13, 8}, new long[] {1, 5, 34});
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return super.next().subtract(++mN);
   }
 }

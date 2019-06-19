@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001015;
 
 /**
  * A024017 <code>2^n-n^7</code>.
  * @author Sean A. Irvine
  */
-public class A024017 extends LinearRecurrence {
+public class A024017 extends A001015 {
 
-  /** Construct the sequence. */
-  public A024017() {
-    super(new long[] {2, -17, 64, -140, 196, -182, 112, -44, 10}, new long[] {1, 1, -124, -2179, -16368, -78093, -279872, -823415, -2096896});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply2();
+    return mA.subtract(super.next());
   }
 }

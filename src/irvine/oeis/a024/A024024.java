@@ -1,15 +1,18 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000244;
 
 /**
  * A024024 <code>a(n) = 3^n - n</code>.
  * @author Sean A. Irvine
  */
-public class A024024 extends LinearRecurrence {
+public class A024024 extends A000244 {
 
-  /** Construct the sequence. */
-  public A024024() {
-    super(new long[] {3, -7, 5}, new long[] {1, 2, 7});
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return super.next().subtract(++mN);
   }
 }

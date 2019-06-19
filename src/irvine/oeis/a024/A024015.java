@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000584;
 
 /**
  * A024015 <code>2^n-n^5</code>.
  * @author Sean A. Irvine
  */
-public class A024015 extends LinearRecurrence {
+public class A024015 extends A000584 {
 
-  /** Construct the sequence. */
-  public A024015() {
-    super(new long[] {2, -13, 36, -55, 50, -27, 8}, new long[] {1, 1, -28, -235, -1008, -3093, -7712});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply2();
+    return mA.subtract(super.next());
   }
 }

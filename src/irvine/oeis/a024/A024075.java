@@ -1,15 +1,16 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000420;
 
 /**
  * A024075 <code>a(n) = 7^n-1</code>.
  * @author Sean A. Irvine
  */
-public class A024075 extends LinearRecurrence {
+public class A024075 extends A000420 {
 
-  /** Construct the sequence. */
-  public A024075() {
-    super(new long[] {-7, 8}, new long[] {0, 6});
+  @Override
+  public Z next() {
+    return super.next().subtract(1);
   }
 }

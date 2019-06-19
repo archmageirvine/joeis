@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001016;
 
 /**
  * A024018 <code>2^n-n^8</code>.
  * @author Sean A. Irvine
  */
-public class A024018 extends LinearRecurrence {
+public class A024018 extends A001016 {
 
-  /** Construct the sequence. */
-  public A024018() {
-    super(new long[] {-2, 19, -81, 204, -336, 378, -294, 156, -54, 11}, new long[] {1, 1, -252, -6553, -65520, -390593, -1679552, -5764673, -16776960, -43046209});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply2();
+    return mA.subtract(super.next());
   }
 }

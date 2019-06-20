@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000583;
 
 /**
  * A024131 <code>a(n) = 11^n - n^4</code>.
  * @author Sean A. Irvine
  */
-public class A024131 extends LinearRecurrence {
+public class A024131 extends A000583 {
 
-  /** Construct the sequence. */
-  public A024131() {
-    super(new long[] {-11, 56, -115, 120, -65, 16}, new long[] {1, 10, 105, 1250, 14385, 160426});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(11);
+    return mA.subtract(super.next());
   }
 }

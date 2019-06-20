@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001949 A probability difference equation.
+ * A001949 Solutions of a fifth-order probability difference equation.
  * @author Sean A. Irvine
  */
 public class A001949 extends LinearRecurrence {

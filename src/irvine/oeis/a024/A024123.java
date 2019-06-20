@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001017;
 
 /**
  * A024123 <code>a(n) = 10^n - n^9</code>.
  * @author Sean A. Irvine
  */
-public class A024123 extends LinearRecurrence {
+public class A024123 extends A001017 {
 
-  /** Construct the sequence. */
-  public A024123() {
-    super(new long[] {10, -101, 460, -1245, 2220, -2730, 2352, -1410, 570, -145, 20}, new long[] {1, 9, -412, -18683, -252144, -1853125, -9077696, -30353607, -34217728, 612579511, 9000000000L});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(10);
+    return mA.subtract(super.next());
   }
 }

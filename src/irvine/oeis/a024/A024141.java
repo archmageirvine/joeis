@@ -1,15 +1,18 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001021;
 
 /**
  * A024141 <code>a(n) = 12^n - n</code>.
  * @author Sean A. Irvine
  */
-public class A024141 extends LinearRecurrence {
+public class A024141 extends A001021 {
 
-  /** Construct the sequence. */
-  public A024141() {
-    super(new long[] {12, -25, 14}, new long[] {1, 11, 142});
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return super.next().subtract(++mN);
   }
 }

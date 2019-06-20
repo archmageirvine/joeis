@@ -1,15 +1,16 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001018;
 
 /**
  * A024088 <code>a(n) = 8^n-1</code>.
  * @author Sean A. Irvine
  */
-public class A024088 extends LinearRecurrence {
+public class A024088 extends A001018 {
 
-  /** Construct the sequence. */
-  public A024088() {
-    super(new long[] {-8, 9}, new long[] {0, 7});
+  @Override
+  public Z next() {
+    return super.next().subtract(1);
   }
 }

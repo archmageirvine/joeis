@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a001.A001014;
 
 /**
  * A024107 <code>a(n) = 9^n - n^6</code>.
  * @author Sean A. Irvine
  */
-public class A024107 extends LinearRecurrence {
+public class A024107 extends A001014 {
 
-  /** Construct the sequence. */
-  public A024107() {
-    super(new long[] {-9, 64, -196, 336, -350, 224, -84, 16}, new long[] {1, 8, 17, 0, 2465, 43424, 484785, 4665320});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(9);
+    return mA.subtract(super.next());
   }
 }

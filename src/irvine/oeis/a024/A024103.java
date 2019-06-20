@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000290;
 
 /**
  * A024103 <code>9^n-n^2</code>.
  * @author Sean A. Irvine
  */
-public class A024103 extends LinearRecurrence {
+public class A024103 extends A000290 {
 
-  /** Construct the sequence. */
-  public A024103() {
-    super(new long[] {-9, 28, -30, 12}, new long[] {1, 8, 77, 720});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(9);
+    return mA.subtract(super.next());
   }
 }

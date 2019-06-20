@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014251 <code>b(n) - c(n)</code> where <code>b(n)</code> is the n-th Fibonacci number greater than 2 and <code>c(n)</code> is the n-th number not in sequence <code>b( )</code>.
+ * A014251 <code>a(n) = b(n) - c(n)</code> where <code>b(n)</code> is the n-th Fibonacci number greater than 2 and <code>c(n)</code> is the n-th number not in sequence <code>b( )</code>.
  * @author Sean A. Irvine
  */
 public class A014251 extends A000045 {

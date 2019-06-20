@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A113772 Determinant of the <code>2 X 2</code> matrices where the first column is consecutive triangular numbers and the second column is the corresponding consecutive fibonacci numbers.
+ * A113772 Determinant of the <code>2 X 2</code> matrices where the first column is consecutive triangular numbers and the second column is the corresponding consecutive Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A113772 extends LinearRecurrence {

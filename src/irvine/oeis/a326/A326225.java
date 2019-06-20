@@ -9,7 +9,7 @@ import irvine.math.nauty.Multigraph;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A326225 allocated for Gus Wiseman.
+ * A326225 Number of Hamiltonian unlabeled n-vertex digraphs (without loops).
  * @author Sean A. Irvine
  */
 public class A326225 extends ParallelGenerateGraphsSequence {

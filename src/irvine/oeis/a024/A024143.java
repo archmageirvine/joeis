@@ -1,15 +1,19 @@
 package irvine.oeis.a024;
 
-import irvine.oeis.LinearRecurrence;
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000578;
 
 /**
  * A024143 <code>a(n) = 12^n - n^3</code>.
  * @author Sean A. Irvine
  */
-public class A024143 extends LinearRecurrence {
+public class A024143 extends A000578 {
 
-  /** Construct the sequence. */
-  public A024143() {
-    super(new long[] {12, -49, 76, -54, 16}, new long[] {1, 11, 136, 1701, 20672});
+  private Z mA = null;
+
+  @Override
+  public Z next() {
+    mA = mA == null ? Z.ONE : mA.multiply(12);
+    return mA.subtract(super.next());
   }
 }

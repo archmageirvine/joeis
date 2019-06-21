@@ -1,0 +1,20 @@
+package irvine.oeis.a024;
+
+import irvine.math.z.Stirling;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A024172 Integer part of ((3rd elementary symmetric function of 1,2,..,n)/(2nd elementary symmetric function of <code>1,2,...,n))</code>.
+ * @author Sean A. Irvine
+ */
+public class A024172 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    return Stirling.firstKind(mN + 3, mN).negate().divide(Stirling.firstKind(mN + 3, mN + 1));
+  }
+}

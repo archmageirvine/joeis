@@ -70,15 +70,8 @@ public final class PhysicsConstants {
   /** Uncertainty in Faraday constant, C / mol. */
   public static final double FARADAY_UNC = errorMultiply(AVOGADRO, AVOGADRO_UNC, ELEMENTARY_CHARGE, ELEMENTARY_CHARGE_UNC);
 
-  /** Molar gas constant in J mol^-1 K^-1. */
-  public static final double MOLAR_GAS     = 8.3144598;
-  /** Uncertainty in molar gas constant in J mol^-1 K^-1. */
-  public static final double MOLAR_GAS_UNC = 0.0000048;
-
   /** Boltzmann constant, k, in J/K. */
   public static final CR BOLTZMANN_CR = CR.valueOf(new Q(Z.valueOf(1380649), Z.TEN.pow(23)));
-  /** Boltzmann constant, k, in J/K. */
-  public static final double BOLTZMANN = 1.380649E-23;
 
   /** Stefan-Boltzmann constant, sigma, in W m^-2 K^-4. */
   public static final double STEFAN_BOLTZMANN     = 5.670367E-8;
@@ -107,8 +100,6 @@ public final class PhysicsConstants {
 
   /** Mass unit in kg. */
   public static final double MASS_UNIT =     1.66053906660E-27;
-  /** Uncertainty in mass unit to kg conversion. */
-  //public static final double MASS_UNIT_UNC = 0.000000020E-27;
 
   /** Bohr radius in metres. */
   public static final double BOHR_RADIUS     = 0.52917721067E-10;

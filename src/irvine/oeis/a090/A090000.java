@@ -4,14 +4,14 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090000 Length of longest contiguous block of 1's in binary expansion of n-th prime.
+ * A090000 Length of longest contiguous block of <code>1</code>'s in binary expansion of n-th prime.
  * @author jmason
  * @author Sean A. Irvine
  */
 public class A090000 extends A000040 {
 
   /* Calculate the maximum length of longest contiguous block of 1's in binary expansion of n */
-  private int maxBitLength(Z p) {
+  private int maxBitLength(final Z p) {
     int currMax = 0;
     int currLen = 0;
     for (int k = 0; k < p.bitLength(); ++k) {

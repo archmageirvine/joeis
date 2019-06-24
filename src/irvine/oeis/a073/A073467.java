@@ -1,0 +1,49 @@
+package irvine.oeis.a073;
+
+import irvine.factor.prime.Fast;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A073467 <code>a(n)</code> is the number of essentially different ways in which the integers <code>1,2,3,...,2n</code> can be arranged in a circle such that <code>(1)</code> all pairs of adjacent integers sum to a prime number and <code>(2)</code> all pairs of integers opposite each other on the circle sum to a prime.
+ * @author Sean A. Irvine
+ */
+public class A073467 implements Sequence {
+
+  // todo Not yet working
+
+  private final Fast mPrime = new Fast();
+  private int mN = 0;
+  private int[] mNums = null;
+  private long mCount = 0;
+
+  private void search(final int pos, final long used) {
+    if (pos == 2 * mN) {
+      if (mPrime.isPrime(mNums[mNums.length - 1] + 1)) {  // +1 is mNums[0]
+        ++mCount;
+      }
+      return;
+    }
+    for (int k = 3; k < 2 * mN; ++k) {
+      final long bit = 1L << k;
+      if ((used & bit) == 0 && mPrime.isPrime(mNums[pos - 1] + k) && (pos < mN || mPrime.isPrime(mNums[pos - mN] + pos))) {
+        mNums[pos] = k;
+        search(pos + 1, used | bit);
+      }
+    }
+  }
+
+  @Override
+  public Z next() {
+    if ((++mN & 1) == 0) {
+      return Z.ZERO;
+    }
+    mNums = new int[2 * mN];
+    mNums[0] = 1;
+    mNums[1] = 2;
+    mCount = 0;
+    search(2, 3);
+    return Z.valueOf(mCount);
+  }
+}
+

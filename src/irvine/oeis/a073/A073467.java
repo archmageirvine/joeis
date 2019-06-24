@@ -10,8 +10,6 @@ import irvine.oeis.Sequence;
  */
 public class A073467 implements Sequence {
 
-  // todo Not yet working
-
   private final Fast mPrime = new Fast();
   private int mN = 0;
   private int[] mNums = null;
@@ -19,14 +17,14 @@ public class A073467 implements Sequence {
 
   private void search(final int pos, final long used) {
     if (pos == 2 * mN) {
-      if (mPrime.isPrime(mNums[mNums.length - 1] + 1)) {  // +1 is mNums[0]
+      if (mNums[mNums.length - 1] >= mNums[1] && mPrime.isPrime(mNums[mNums.length - 1] + 1)) {  // +1 is mNums[0]
         ++mCount;
       }
       return;
     }
-    for (int k = 3; k < 2 * mN; ++k) {
-      final long bit = 1L << k;
-      if ((used & bit) == 0 && mPrime.isPrime(mNums[pos - 1] + k) && (pos < mN || mPrime.isPrime(mNums[pos - mN] + pos))) {
+    for (int k = 2; k <= 2 * mN; ++k) {
+      final long bit = 1L << (k - 1);
+      if ((used & bit) == 0 && mPrime.isPrime(mNums[pos - 1] + k) && (pos < mN || mPrime.isPrime(mNums[pos - mN] + k))) {
         mNums[pos] = k;
         search(pos + 1, used | bit);
       }
@@ -40,9 +38,8 @@ public class A073467 implements Sequence {
     }
     mNums = new int[2 * mN];
     mNums[0] = 1;
-    mNums[1] = 2;
     mCount = 0;
-    search(2, 3);
+    search(1, 1);
     return Z.valueOf(mCount);
   }
 }

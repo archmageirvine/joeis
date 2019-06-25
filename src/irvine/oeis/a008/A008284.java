@@ -1,12 +1,8 @@
 package irvine.oeis.a008;
 
-import java.util.Arrays;
-
 import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a000.A000041;
-import irvine.util.string.StringUtils;
 
 /**
  * A008284 Triangle of partition numbers: <code>T(n,k) =</code> number of partitions of n in which the greatest part is k, <code>1 &lt;= k &lt;= n</code>. Also number of partitions of n into k positive parts, <code>1 &lt;= k &lt;= n</code>.
@@ -40,39 +36,6 @@ public class A008284 extends MemoryFunction2<Long, Z> implements Sequence {
       mM = 1;
     }
     return get(mN, mM);
-  }
-
-  /**
-   * Noddy.
-   * @param args ignored
-   */
-  public static void main(final String[] args) {
-    // Test conjecture of jnthn stdhr from seqfan mailing list
-    int row = 0;
-    final Sequence part = new A000041();
-    final Sequence seq = new A008284();
-    int p = 0;
-    while (true) {
-      ++row;
-      while (row > p + 1) {
-        p = part.next().multiply2().intValueExact();
-      }
-      final Z[] r = new Z[row];
-      for (int k = 0; k < r.length; ++k) {
-        r[k] = seq.next();
-      }
-      if (row != p && row != p + 1) {
-        Arrays.sort(r);
-        for (int k = 1; k < r.length; ++k) {
-          if (!Z.ONE.equals(r[k]) && r[k].equals(r[k - 1])) {
-            System.out.println(row + " " + r[k]);
-          }
-        }
-      }
-      if (row % 100 == 0) {
-        StringUtils.message("Done: " + row);
-      }
-    }
   }
 }
 

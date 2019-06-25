@@ -1169,3 +1169,4 @@ A023944 Theta series of laminated lattice LAMBDA_22
 A023945 Theta series of laminated lattice LAMBDA_23
 A023994 Number of isomorphism types of symmetric configurations n_4
 A024187 n-th elementary symmetric function of 3,4,...,n+3 (probably A001711)
+A024211 Theta series of laminated lattice LAMBDA_25 with minimal norm 4, depends A004034

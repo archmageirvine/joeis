@@ -1,8 +1,8 @@
 package irvine.math;
 
-import irvine.util.Pair;
-
 import java.util.HashMap;
+
+import irvine.util.Pair;
 
 /**
  * Definition of a two argument function that remembers previously computed results.
@@ -16,25 +16,25 @@ public abstract class MemoryFunction2<S, R> {
 
   /**
    * Compute the function at specified parameters.
-   * @param a first parameter
-   * @param b second parameter
+   * @param n first parameter
+   * @param m second parameter
    * @return value of function
    */
-  protected abstract R compute(final S a, final S b);
+  protected abstract R compute(final S n, final S m);
 
   /**
    * Return the value of the function at specified parameters.
-   * @param a first parameter
-   * @param b second parameter
+   * @param n first parameter
+   * @param m second parameter
    * @return value of function
    */
-  public R get(final S a, final S b) {
-    final Pair<S, S> key = new Pair<>(a, b);
+  public R get(final S n, final S m) {
+    final Pair<S, S> key = new Pair<>(n, m);
     final R res = mCache.get(key);
     if (res != null) {
       return res;
     }
-    final R r = compute(a, b);
+    final R r = compute(n, m);
     mCache.put(key, r);
     return r;
   }

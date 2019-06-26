@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A014241 <code>((n+1)-st</code> Fibonacci number) <code>- (n-th non-Fibonacci</code> number).
+ * A014241 <code>a(n) = ((n+1)-st</code> Fibonacci number) <code>- (n-th non-Fibonacci</code> number).
  * @author Sean A. Irvine
  */
 public class A014241 extends A000045 {

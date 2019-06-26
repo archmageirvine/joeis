@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008284;
 
 /**
- * A024207.
+ * A024207 Number of terms in n-th derivative of a function composed with itself 7 times.
  * @author Sean A. Irvine
  */
 public class A024207 extends MemoryFunction2<Long, Z> implements Sequence {

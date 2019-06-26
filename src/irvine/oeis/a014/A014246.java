@@ -5,7 +5,7 @@ import irvine.oeis.a022.A022843;
 import irvine.oeis.a054.A054385;
 
 /**
- * A014246 <code>(n-th</code> term of Beatty sequence for <code>e) - (n-th</code> term of Beatty sequence for <code>e/(e-1))</code>.
+ * A014246 <code>a(n) = (n-th</code> term of Beatty sequence for <code>e) - (n-th</code> term of Beatty sequence for <code>e/(e-1))</code>.
  * @author Sean A. Irvine
  */
 public class A014246 extends A022843 {

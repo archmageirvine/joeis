@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024204.
+ * A024204 <code>[ (3rd</code> elementary symmetric function of S(n))/(2nd elementary symmetric function of <code>S(n)) ]</code>, where <code>S(n) =</code> {first <code>n+2</code> odd positive integers}.
  * @author Sean A. Irvine
  */
 public class A024204 implements Sequence {

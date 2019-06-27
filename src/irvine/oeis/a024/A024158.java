@@ -24,10 +24,6 @@ public class A024158 implements Sequence {
           //final Z u = Z.valueOf(b + c - a).multiply(c + a - b).multiply(a + b - c);
           final Z u = Z.valueOf(b + c - a).multiply(c + a - b).multiply(a + b - c);
           final Z v = Z.valueOf(c - b).multiply(c - a).multiply(b - a);
-          if (mN == 15 || mN == 16) {
-            System.out.println("n=" + mN + " u=" + u + " v=" + v + " a=" + a + " b=" + b + " c=" + c);
-          }
-          //final Z v = Z.valueOf(c - a).multiply(b - a);
           if (Z.ZERO.equals(u.mod(v))) {
             ++count;
           }

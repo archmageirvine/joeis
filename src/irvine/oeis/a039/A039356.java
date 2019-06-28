@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039356 Numbers n such that representation in base 8 has same nonzero number of 6's and 7's.
+ * A039356 Numbers n such that representation in base 8 has same nonzero number of <code>6</code>'s and <code>7</code>'s.
  * @author Georg Fischer
  */
 public class A039356 extends RunsBaseSequence {

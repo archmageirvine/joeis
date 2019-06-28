@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043516 Numbers n such that number of 6's in base 10 is 4.
+ * A043516 Numbers n such that number of <code>6</code>'s in base 10 is 4.
  * @author Georg Fischer
  */
 public class A043516 extends RunsBaseSequence {

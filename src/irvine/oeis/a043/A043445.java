@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043445 Numbers n such that number of 6's in base 8 is 1.
+ * A043445 Numbers n such that number of <code>6</code>'s in base 8 is 1.
  * @author Georg Fischer
  */
 public class A043445 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043778 Numbers n such that number of runs in base 3 representation of n is congruent to 2 mod 4.
+ * A043778 Numbers n such that number of runs in base 3 representation of n is congruent to <code>2 mod 4</code>.
  * @author Georg Fischer
  */
 public class A043778 implements Sequence {

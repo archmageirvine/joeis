@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043423 Numbers n such that number of 0's in base 8 is 3.
+ * A043423 Numbers n such that number of <code>0</code>'s in base 8 is 3.
  * @author Georg Fischer
  */
 public class A043423 extends RunsBaseSequence {

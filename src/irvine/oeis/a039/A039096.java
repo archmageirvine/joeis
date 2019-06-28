@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039096 Numbers n such that representation in base 9 has same number of 2's and 8's.
+ * A039096 Numbers n such that representation in base 9 has same number of <code>2</code>'s and <code>8</code>'s.
  * @author Georg Fischer
  */
 public class A039096 extends RunsBaseSequence {

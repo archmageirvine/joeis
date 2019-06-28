@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043504 Numbers whose number of 3's in base 10 is 4.
+ * A043504 Numbers whose number of <code>3</code>'s in base 10 is 4.
  * @author Georg Fischer
  */
 public class A043504 extends RunsBaseSequence {

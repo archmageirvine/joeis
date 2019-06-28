@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043502 Numbers n such that number of 3's in base 10 is 2.
+ * A043502 Numbers n such that number of <code>3</code>'s in base 10 is 2.
  * @author Georg Fischer
  */
 public class A043502 extends RunsBaseSequence {

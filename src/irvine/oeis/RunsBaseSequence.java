@@ -1,7 +1,8 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
-
+import irvine.math.z.ZUtils;
+import java.util.ArrayList;
 /**
  * Properties of a (simple) periodic continued fraction
  * for the square root of a number,
@@ -42,10 +43,10 @@ public class RunsBaseSequence implements Sequence {
 
   /**
    * Ensure that the current number has at least a specified number of digits.
-   * @param len width number of required digits
+   * @param width number of required digits
    * @param base represent the number in this base
    */
-  protected Z ensureWidth(final int len, final int base) {
+  protected Z ensureWidth(int len, int base) {
     int num = 1;
     int iwid = len - 1;
     while (iwid > 0) {
@@ -61,7 +62,7 @@ public class RunsBaseSequence implements Sequence {
    * @param base represent in this base
    * @return number of subsequences with identical digits
    */
-  protected int getRunCount(final Z number, final int base) {
+  protected int getRunCount(Z number, int base) {
     String digits;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
@@ -79,7 +80,7 @@ public class RunsBaseSequence implements Sequence {
     int count = 1; // there is always one element = 1 run
     idig -= dlen;
     while (idig >= 0) {
-      if (!digits.substring(idig, idig + dlen).equals(runElem)) {
+      if (! digits.substring(idig, idig + dlen).equals(runElem)) {
         ++count;
         runElem = digits.substring(idig, idig + dlen);
       }
@@ -96,7 +97,7 @@ public class RunsBaseSequence implements Sequence {
    * @param value so many runs are required
    * @return true if the number of run has the value <em>count</em>
    */
-  protected boolean hasRunCount(final Z number, final int base, final int value) {
+  protected boolean hasRunCount(Z number, int base, int value) {
     String digits;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
@@ -115,7 +116,7 @@ public class RunsBaseSequence implements Sequence {
     idig -= dlen;
     boolean busy = true;
     while (busy && idig >= 0) {
-      if (!digits.substring(idig, idig + dlen).equals(runElem)) {
+      if (! digits.substring(idig, idig + dlen).equals(runElem)) {
         ++count;
         busy = count <= value; // false if >
         runElem = digits.substring(idig, idig + dlen);
@@ -132,9 +133,9 @@ public class RunsBaseSequence implements Sequence {
    * @param digit count this digit (two characters for base > 10)
    * @return the count of digit in number
    */
-  protected int getDigitCount(final Z number, final int base, final int digit) {
+  protected int getDigitCount(Z number, int base, int digit) {
     String digits;
-    final String search;
+    String search;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
       digits = number.toString(base);
@@ -194,9 +195,9 @@ public class RunsBaseSequence implements Sequence {
     while (loopCheck > 0) {
       mK = mK.add(Z.ONE);
       if (isOk()) {
-        --loopCheck;
+        loopCheck = -1;
       }
-      --loopCheck;
+      loopCheck --;
     } // while busy
     if (loopCheck == 0) {
       throw new IllegalArgumentException("more than 10^8 iterations in RunsBaseSequence.getNextWithProperty()");
@@ -231,4 +232,29 @@ public class RunsBaseSequence implements Sequence {
   protected int getIndex() {
     return mN;
   } // getIndex
+
+  //=====================================
+  /** Test method - not yet implemented.
+   *  @param args command line arguments: [n [noterms]]
+   *  Show various elements related to the continued fraction for the square root of n.
+   *  If n is &lt; 0, several properties of the period for all numbers are shown.
+   */
+  public static void main(String[] args) {
+    int n = -1;
+    int iarg = 0;
+    if (iarg < args.length) {
+      try {
+        n = Integer.parseInt(args[iarg ++]);
+      } catch (Exception exc) {
+      }
+    }
+    int noterms = 16;
+    if (iarg < args.length) {
+      try {
+        noterms = Integer.parseInt(args[iarg ++]);
+      } catch (Exception exc) {
+      }
+    }
+  } // main
+
 } // RunsBaseSequence

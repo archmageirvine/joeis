@@ -11,7 +11,7 @@ import irvine.math.z.Z;
  * the continued fractions of all square roots.
  * @author Georg Fischer
  */
-public class RunsBaseSequence implements Sequence {
+public abstract class RunsBaseSequence implements Sequence {
 
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
@@ -94,7 +94,7 @@ public class RunsBaseSequence implements Sequence {
    * @param number get the run count from this number
    * @param base represent in this base
    * @param value so many runs are required
-   * @return true if the number of run has the value <em>count</em>
+   * @return true if the number of run has the value <code>count</code>
    */
   protected boolean hasRunCount(final Z number, final int base, final int value) {
     String digits;
@@ -159,31 +159,16 @@ public class RunsBaseSequence implements Sequence {
     return count;
   } // getDigitCount
 
-  //=====================================
-  /**
-   * Get the next term of the sequence.
-   * This is an example only.
-   * The method is typically overwritten to get some other
-   * element related to the continued fraction of the square root
-   * of this number.
-   * @return the next element of the continued fraction
-   */
-  @Override
-  public Z next() {
-    ++mN;
-    return Z.valueOf(mN);
-  } // next
-
-  /**
-   * Get some property of the next number.
-   * This method is an example only.
-   * It is typically overwritten in order to return some other property.
-   * @return property of the next number
-   */
-  protected Z getNextProperty() {
-    mK = mK.add(Z.ONE);
-    return getProperty();
-  } // getNextProperty
+//  /**
+//   * Get some property of the next number.
+//   * This method is an example only.
+//   * It is typically overwritten in order to return some other property.
+//   * @return property of the next number
+//   */
+//  protected Z getNextProperty() {
+//    mK = mK.add(Z.ONE);
+//    return getProperty();
+//  } // getNextProperty
 
   /**
    * Get the next term of a sequence which fulfills some property.
@@ -195,11 +180,12 @@ public class RunsBaseSequence implements Sequence {
       mK = mK.add(Z.ONE);
       if (isOk()) {
         --loopCheck;
+        break;
       }
       --loopCheck;
     } // while busy
     if (loopCheck == 0) {
-      throw new IllegalArgumentException("more than 10^8 iterations in RunsBaseSequence.getNextWithProperty()");
+      throw new IllegalArgumentException("More than 10^8 iterations in RunsBaseSequence.getNextWithProperty()");
     }
     return mK;
   } // getNextWithProperty
@@ -208,7 +194,7 @@ public class RunsBaseSequence implements Sequence {
    * Get some property of the current number.
    * This method is an example only.
    * It is typically overwritten in order to return some other property.
-   * @return a property of the current number <em>mK</em>.
+   * @return a property of the current number <code>mK</code>.
    */
   protected Z getProperty() {
     return mK;
@@ -218,7 +204,7 @@ public class RunsBaseSequence implements Sequence {
    * Determine whether the current number has the property which includes it in the sequence.
    * This method is an example only.
    * It is typically overwritten in order to test some other property.
-   * @return true iff the current number <em>mK</em> has some property.
+   * @return true iff the current number <code>mK</code> has some property.
    */
   protected boolean isOk() {
     return true;

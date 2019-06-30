@@ -129,7 +129,7 @@ public class RunsBaseSequence implements Sequence {
    * Get the number of digits in the base representation of number.
    * @param number number to be investigated
    * @param base represent in this base
-   * @param digit count this digit (two characters for base > 10)
+   * @param digit count this digit (two characters for base &gt; 10)
    * @return the count of digit in number
    */
   protected int getDigitCount(final Z number, final int base, final int digit) {

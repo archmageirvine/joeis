@@ -10,8 +10,8 @@ import irvine.oeis.Sequence;
 public class A016277 implements Sequence {
 
   private Z mA = Z.FIVE;
-  private Z mB = Z.valueOf(9);
-  private Z mC = Z.valueOf(4);
+  private Z mB = Z.NINE;
+  private Z mC = Z.FOUR;
 
   @Override
   public Z next() {

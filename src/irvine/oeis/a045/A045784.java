@@ -12,7 +12,7 @@ public class A045784 implements Sequence {
   // Smarter than trying each number in turn ...
 
   protected Z mN = Z.ZERO;
-  private Z mLimit = Z.valueOf(2);
+  private Z mLimit = Z.TWO;
 
   protected void update() {
     mLimit = mLimit.multiply(10);

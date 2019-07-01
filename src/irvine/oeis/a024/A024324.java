@@ -9,7 +9,7 @@ import irvine.oeis.a023.A023531;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A024324 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2 ], s = A023531, t = A000201</code> (lower Wythoff sequence).
+ * A024324 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2) ], s = A023531, t = A000201</code> (lower Wythoff sequence).
  * @author Sean A. Irvine
  */
 public class A024324 extends A000201 {

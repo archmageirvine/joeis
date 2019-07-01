@@ -11,7 +11,7 @@ public class A020758 implements Sequence {
 
   private Z mA = Z.valueOf(24);
   private Z mB = Z.valueOf(30);
-  private Z mC = Z.valueOf(6);
+  private Z mC = Z.SIX;
 
   @Override
   public Z next() {

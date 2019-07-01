@@ -9,7 +9,7 @@ import irvine.oeis.a023.A023531;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A024328.
+ * A024328 <code>a(n) = Sum_{1 &lt;= j &lt;= (n+1)/2} A023531(j)*prime(n-j+1)</code>.
  * @author Sean A. Irvine
  */
 public class A024328 extends A000040 {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A020137 implements Sequence {
 
-  private Z mN = Z.valueOf(7);
+  private Z mN = Z.SEVEN;
 
   @Override
   public Z next() {

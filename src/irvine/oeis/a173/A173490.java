@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A173490 implements Sequence {
 
-  private Z mN = Z.valueOf(10);
+  private Z mN = Z.TEN;
 
   @Override
   public Z next() {

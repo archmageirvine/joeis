@@ -17,7 +17,7 @@ public class A043872 implements Sequence {
 
   /** Construct the sequence. */
   public A043872() {
-    mN = Z.valueOf(1);
+    mN = Z.ONE;
     advance(5, 4);
   }
 

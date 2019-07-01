@@ -12,6 +12,6 @@ public class A040090 extends PrependSequence {
 
   /** Construct the sequence. */
   public A040090() {
-    super(new PeriodicSequence(20), Z.valueOf(10));
+    super(new PeriodicSequence(20), Z.TEN);
   }
 }

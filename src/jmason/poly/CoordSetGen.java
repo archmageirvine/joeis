@@ -1,60 +1,59 @@
 package jmason.poly;
 
 /**
- *
+ * A generic coordinate set, either xy or xyz.
  * @author jmason
- * a generic coordinate set, either xy or xyz
+ * @param <T> type of set
  */
-public abstract class CoordSetGen extends PolyBase {
+public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
 
-  protected ElementSet mSet;
-
+  protected ElementSet<T> mSet;
   int mSize;
   protected boolean mAllColours;
 
-  public int getX(final int i) {
+  int getX(final int i) {
     return mSet.getX(i);
   }
 
-  public int getY(final int i) {
+  int getY(final int i) {
     return mSet.getY(i);
   }
 
-  public int getColour(final int i) {
+  int getColour(final int i) {
     return mSet.getColour(i);
   }
 
-  public void setColour(final int i, final int col) {
+  void setColour(final int i, final int col) {
     mSet.setColour(i, col);
   }
 
-  public abstract CoordSetGen makeAnother(final int size);
+  protected abstract CoordSetGen<T> makeAnother(final int size);
 
-  public CoordSetGen cloneSet() {
-    final CoordSetGen cs = makeAnother(mSize);
+  CoordSetGen copySet() {
+    final CoordSetGen<T> cs = makeAnother(mSize);
     cs.mAllColours = false;
     for (int i = 0; i < mSize; i++) {
-      cs.mSet.setElement(i, this.mSet.getElement(i).clone());
+      cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
     return cs;
   }
 
-//  public CoordSetGen cloneFlip() {
+//  public CoordSetGen copyFlip() {
 //    CoordSetGen cs = makeAnother(mSize);
 //    for (int i = 0; i < mSize; i++) {
-//      cs.mSet.setElement(i, this.mSet.getElement(i).clone(true));
+//      cs.mSet.setElement(i, mSet.getElement(i).copy(true));
 //    }
 //    return cs;
 //  }
 //
-//  public CoordSetGen cloneWithout(final int w) {
+//  public CoordSetGen copyWithout(final int w) {
 //    CoordSetGen cs = makeAnother(mSize - 1);
 //    for (int i = 0, j = 0; i < mSize - 1; ) {
 //      if (j == w) {
 //        ++j;
 //        continue;
 //      }
-//      cs.mSet.setElement(i, this.mSet.getElement(j).clone());
+//      cs.mSet.setElement(i, mSet.getElement(j).copy());
 //      ++i;
 //      ++j;
 //    }
@@ -62,7 +61,7 @@ public abstract class CoordSetGen extends PolyBase {
 //    return cs;
 //  }
 
-  public int min(final int z) {
+  int min(final int z) {
     int min = 99;
     for (int i = 0; i < mSize; i++) {
       if (mSet.getElement(i).getCoord(z) < min) {
@@ -72,7 +71,7 @@ public abstract class CoordSetGen extends PolyBase {
     return min;
   }
 
-  public int max(final int z) {
+  int max(final int z) {
     int max = -99;
     for (int i = 0; i < mSize; i++) {
       if (mSet.getElement(i).getCoord(z) > max) {
@@ -82,7 +81,7 @@ public abstract class CoordSetGen extends PolyBase {
     return max;
   }
 
-  public int breadth(final int z) {
+  int breadth(final int z) {
     int max = -99;
     int min = 99;
     for (int i = 0; i < mSize; i++) {
@@ -96,27 +95,23 @@ public abstract class CoordSetGen extends PolyBase {
     return max - min + 1;
   }
 
-
-  public boolean connected() {
+  boolean connected() {
     int count = 1;
     final boolean[] conn = new boolean[mSize];
     conn[0] = true;
 
     while (true) {
-      int oldcount = count;
+      final int oldcount = count;
       for (int i = 0; i < mSize; i++) {
         for (int j = i + 1; j < mSize; j++) {
-          //if( j == i)
-          //    continue;
           if (near(j, i)) {
             if (conn[i] && !conn[j]) {
               conn[j] = true;
-              count++;
+              ++count;
             }
             if (conn[j] && !conn[i]) {
               conn[i] = true;
-              count++;
-
+              ++count;
             }
             if (count == mSize) {
               return true;
@@ -124,38 +119,36 @@ public abstract class CoordSetGen extends PolyBase {
           }
         }
       }
-
       if (oldcount == count || count == mSize) {
         break;
       }
     }
-    return (count == mSize);
+    return count == mSize;
   }
 
-  public abstract boolean near(final int i, final int j);
+  protected abstract boolean near(final int i, final int j);
 
-  public abstract void verify();
+  protected abstract void verify();
 
+  protected abstract String makeDiagram();
 
-  public abstract String makeDiagram();
+  protected abstract String makeString();
 
-  public abstract String makeString();
+  protected abstract String makeString(final boolean bColour);
 
-  public abstract String makeString(final boolean bColour);
-
-  public int getWhite() {
+  int getWhite() {
     return mSet.getWhite();
   }
 
-  public int getBlack() {
+  int getBlack() {
     return mSet.getBlack();
   }
 
-  public boolean biased() {
+  boolean biased() {
     return mSet.getWhite() != mSet.getBlack();
   }
 
-  public int bias() {
+  int bias() {
     int b = mSet.getWhite() - mSet.getBlack();
     if (b >= 0) {
       return b;
@@ -164,9 +157,9 @@ public abstract class CoordSetGen extends PolyBase {
     }
   }
 
-  public abstract String makeUnique();
+  protected abstract String makeUnique();
 
-  public int less() {
+  int less() {
     if (mSet.getWhite() < mSet.getBlack()) {
       return mSet.getWhite();
     } else {
@@ -174,7 +167,7 @@ public abstract class CoordSetGen extends PolyBase {
     }
   }
 
-  public int lessColour() {
+  int lessColour() {
     if (mSet.getWhite() < mSet.getBlack()) {
       return Element.WHITE;
     } else {
@@ -182,7 +175,7 @@ public abstract class CoordSetGen extends PolyBase {
     }
   }
 
-  public int moreColour() {
+  int moreColour() {
     if (mSet.getWhite() > mSet.getBlack()) {
       return Element.WHITE;
     } else {
@@ -190,7 +183,7 @@ public abstract class CoordSetGen extends PolyBase {
     }
   }
 
-  public int more() {
+  int more() {
     if (mSet.getWhite() > mSet.getBlack()) {
       return mSet.getWhite();
     } else {
@@ -213,11 +206,11 @@ public abstract class CoordSetGen extends PolyBase {
    * 12 6
    * 13 7
    */
-  public static int maxBias(final int c) {
+  static int maxBias(final int c) {
     if (c == 1) {
       return 1;
     }
-    return (((c - 2) % 4) + c) / 2 - 1;
+    return (((c - 2) & 3) + c) / 2 - 1;
   }
 
   /*
@@ -235,7 +228,7 @@ public abstract class CoordSetGen extends PolyBase {
    * 12 6 9
    * 13 7 10
    */
-  public static int maxMore(final int c) {
+  static int maxMore(final int c) {
     return (c + maxBias(c)) / 2;
   }
 
@@ -254,7 +247,7 @@ public abstract class CoordSetGen extends PolyBase {
    * 12 6 3
    * 13 7 3
    */
-  public static int minLess(final int c) {
+  static int minLess(final int c) {
     return (c - maxBias(c)) / 2;
   }
 

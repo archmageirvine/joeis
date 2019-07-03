@@ -6,12 +6,17 @@ import java.util.ArrayList;
  * A set of xy coordinates
  * @author jmason
  */
-public class CoordSet2 extends CoordSetGen {
+public class CoordSet2 extends CoordSetGen<Square> {
 
   static final String TRANSFORM = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-  static final String TRANSFORM2 = "0ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+  private static final String TRANSFORM2 = "0ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
-  int mMinX, mMinY, mMaxX, mMaxY, mWidth, mHeight;
+  int mMinX;
+  int mMinY;
+  int mMaxX;
+  int mMaxY;
+  int mWidth;
+  int mHeight;
   final boolean mFlagFree;
   final boolean mFlagFixed;
   final boolean mFlagOneSided;
@@ -24,30 +29,30 @@ public class CoordSet2 extends CoordSetGen {
     mFlagOneSided = flagOneSided;
   }
 
-  public int hasSide(final int dir) {
+  int hasSide(final int dir) {
     int n = 0;
     for (int i = 0; i < mSize; ++i) {
-      if (((Square) (mSet.mSet[i])).hasSide(this, dir)) {
+      if (mSet.mSet[i].hasSide(this, dir)) {
         ++n;
       }
     }
     return n == mSize ? 1 : 0;
   }
 
-  public boolean twoTouch() {
+  boolean twoTouch() {
     for (int i = 0; i < mSize; ++i) {
-      if (!((Square) (mSet.mSet[i])).twoTouch(this)) {
+      if (!mSet.mSet[i].twoTouch(this)) {
         return false;
       }
     }
     return true;
   }
 
-  public void calculate() {
-    mMinX = 9999;
-    mMinY = 9999;
-    mMaxX = -9999;
-    mMaxY = -9999;
+  void calculate() {
+    mMinX = Integer.MAX_VALUE;
+    mMinY = Integer.MAX_VALUE;
+    mMaxX = Integer.MIN_VALUE;
+    mMaxY = Integer.MIN_VALUE;
     for (int i = 0; i < mSize; ++i) {
       int x = getX(i);
       int y = getY(i);
@@ -69,31 +74,31 @@ public class CoordSet2 extends CoordSetGen {
     mHeight = mMaxY - mMinY + 1;
   }
 
-  public int getWidth() {
+  int getWidth() {
     return mWidth;
   }
 
-  public int getHeight() {
+  int getHeight() {
     return mHeight;
   }
 
-//  public int getMinX() {
+//  int getMinX() {
 //    return mMinX;
 //  }
 //
-//  public int getMinY() {
+//  int getMinY() {
 //    return mMinY;
 //  }
 //
-//  public int getMaxX() {
+//  int getMaxX() {
 //    return mMaxX;
 //  }
 //
-//  public int getMaxY() {
+//  int getMaxY() {
 //    return mMaxY;
 //  }
 //
-//  public boolean isStick() {
+//  boolean isStick() {
 //    return isStick(0) || isStick(1);
 //  }
 //
@@ -143,26 +148,21 @@ public class CoordSet2 extends CoordSetGen {
 //    return false;
 //  }
 
-  public void setSquare(final int i, final int x, final int y, final int colour) {
+  void setSquare(final int i, final int x, final int y, final int colour) {
     ((SquareSet) (mSet)).setSquare(i, x, y, colour);
-
   }
 
-  public void overSquare(final int i, final int x, final int y, final int colour) {
+  void overSquare(final int i, final int x, final int y, final int colour) {
     ((SquareSet) (mSet)).overSquare(i, x, y, colour);
-
   }
 
-  public void initMonomino() {
+  void initMonomino() {
     setSquare(0, 0, 0, Square.BLACK);
-
-
   }
 
-  public void initDomino() {
+  void initDomino() {
     setSquare(0, 0, 0, Square.BLACK);
     setSquare(1, Square.opp(0), 0, Square.WHITE);
-
   }
 
 //  public void initSquare(final int dy) {
@@ -176,10 +176,10 @@ public class CoordSet2 extends CoordSetGen {
     ((SquareSet) (mSet)).setSquare(i, x, y);
   }
 
-  public CoordSet2 clone(final int x, final int y) {
+  public CoordSet2 copy(final int x, final int y) {
     CoordSet2 cs = new CoordSet2(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, mSet.getElement(i).clone());
+      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
     }
 
     cs.add(mSize, x, y);
@@ -187,10 +187,10 @@ public class CoordSet2 extends CoordSetGen {
     return cs;
   }
 
-  public CoordSet2 clone(final int x1, final int y1, final int x2, final int y2) {
+  public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2) {
     final CoordSet2 cs = new CoordSet2(mSize + 2, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, mSet.getElement(i).clone());
+      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
     }
     cs.add(mSize, x1, y1);
     cs.add(mSize + 1, x2, y2);
@@ -198,10 +198,10 @@ public class CoordSet2 extends CoordSetGen {
     return cs;
   }
 
-  public CoordSet2 clone(final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
+  public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
     CoordSet2 cs = new CoordSet2(mSize + 4, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, mSet.getElement(i).clone());
+      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
     }
     cs.add(mSize, x1, y1);
     cs.add(mSize + 1, x2, y2);
@@ -210,15 +210,15 @@ public class CoordSet2 extends CoordSetGen {
     return cs;
   }
 
-  public CoordSet2 mirrorVert() {
+  CoordSet2 mirrorVert() {
     return mirror(-1, 1, 0, 1);
   }
 
-  public CoordSet2 mirrorHoriz() {
+  CoordSet2 mirrorHoriz() {
     return mirror(1, -1, 0, 1);
   }
 
-  public CoordSet2 mirrorDiag() {
+  CoordSet2 mirrorDiag() {
     return mirror(1, 1, 1, 0);
   }
 
@@ -231,11 +231,12 @@ public class CoordSet2 extends CoordSetGen {
     return cs;
   }
 
-  public boolean exists(final int x, final int y) {
+  boolean exists(final int x, final int y) {
     return ((SquareSet) mSet).exists(x, y);
   }
 
-  public boolean near(final int j, final int i) {
+  @Override
+  protected boolean near(final int j, final int i) {
     final int xi = mSet.getX(i);
     final int xj = mSet.getX(j);
     final int yi = mSet.getY(i);
@@ -248,9 +249,10 @@ public class CoordSet2 extends CoordSetGen {
     );
   }
 
+  @Override
   public String toString() {
-    StringBuilder ret = new StringBuilder();
-    for (int i = 0; i < mSize; i++) {
+    final StringBuilder ret = new StringBuilder();
+    for (int i = 0; i < mSize; ++i) {
       ret.append(getX(i)).append(getY(i)).append(TRANSFORM2.substring(getColour(i), getColour(i) + 1)).append(' ');
     }
     return ret.toString();
@@ -270,36 +272,35 @@ public class CoordSet2 extends CoordSetGen {
 //      System.out.println("corr " + toString());
 //    }
 //  }
-
-  public boolean correct() {
-
-    int max = 0;
-    for (int i = 0; i < mSize; i++) {
-      int col = getColour(i);
-      if (col > max + 1) {
-        swapColour(i, col, max + 1);
-        return true;
-      } else {
-        if (col > max) {
-          max = col;
-        }
-      }
-    }
-    return false;
-    //System.out.println("corr " +  toString());
-  }
-
-  private void swapColour(final int pos, final int oldC, final int newC) {
-    for (int i = pos; i < mSize; ++i) {
-      final int col = getColour(i);
-      if (col == oldC) {
-        setColour(i, newC);
-      } else if (col == newC) {
-        setColour(i, oldC);
-      }
-    }
-  }
-
+//
+//  boolean correct() {
+//    int max = 0;
+//    for (int i = 0; i < mSize; i++) {
+//      int col = getColour(i);
+//      if (col > max + 1) {
+//        swapColour(i, col, max + 1);
+//        return true;
+//      } else {
+//        if (col > max) {
+//          max = col;
+//        }
+//      }
+//    }
+//    return false;
+//    //System.out.println("corr " +  toString());
+//  }
+//
+//  private void swapColour(final int pos, final int oldC, final int newC) {
+//    for (int i = pos; i < mSize; ++i) {
+//      final int col = getColour(i);
+//      if (col == oldC) {
+//        setColour(i, newC);
+//      } else if (col == newC) {
+//        setColour(i, oldC);
+//      }
+//    }
+//  }
+//
 //  private void order() {
 //    while (sort()) {
 //    }
@@ -318,7 +319,8 @@ public class CoordSet2 extends CoordSetGen {
 //    return false;
 //  }
 
-  public String makeDiagram() {
+  @Override
+  protected String makeDiagram() {
     String[][] array;
     array = new String[mSize][mSize];
     int x, y, maxy = 0;
@@ -347,11 +349,13 @@ public class CoordSet2 extends CoordSetGen {
     return ret.toString();
   }
 
-  public String makeString() {
+  @Override
+  protected String makeString() {
     return makeString(false);
   }
 
-  public String makeString(final boolean withColour) {
+  @Override
+  protected String makeString(final boolean withColour) {
     String ret = "";
 
     int bitSize = 2;
@@ -383,7 +387,8 @@ public class CoordSet2 extends CoordSetGen {
 //    return ret.toString();
 //  }
 
-  public void verify() {
+  @Override
+  protected void verify() {
     int white = 0;
     int black = 0;
     assert mSet.getColour(0) == Square.BLACK || mSet.getColour(0) == Square.WHITE : "missing colour";
@@ -405,8 +410,7 @@ public class CoordSet2 extends CoordSetGen {
     assert getBlack() == black && getWhite() == white && black + white == mSize : "bad colours";
   }
 
-  public CoordSet2 perim() {
-
+  CoordSet2 perim() {
     final UTest h = new UTest();
     final ArrayList<int[]> a = new ArrayList<>();
     for (int i = 0; i < mSize; i++) {
@@ -414,7 +418,6 @@ public class CoordSet2 extends CoordSetGen {
       tryPerim(h, a, i, -1, 0);
       tryPerim(h, a, i, 0, 1);
       tryPerim(h, a, i, 0, -1);
-
     }
     return aToCs(a);
   }
@@ -492,8 +495,9 @@ public class CoordSet2 extends CoordSetGen {
     return cs;
   }
 
-  /*
-   * return a set of polyominoes that have an enlarged mHole wrt to the current coordSet
+  /**
+   * Return a set of polyominoes that have an enlarged hole with respect to the current coordinate set.
+   * @return a set of polyominoes
    */
   public ArrayList<Polyomino> nlistRot90CornerSons() {
     final ArrayList<Polyomino> list = new ArrayList<>();
@@ -547,8 +551,8 @@ public class CoordSet2 extends CoordSetGen {
 //  }
 
   private void trynlr(final ArrayList<Polyomino> list, final ArrayList<CoordSet2> nl, final CoordSet2 hole, final int i, final int dx, final int dy, final int n) {
-    int x = hole.getX(i) + dx;
-    int y = hole.getY(i) + dy;
+    final int x = hole.getX(i) + dx;
+    final int y = hole.getY(i) + dy;
     if (hole.exists(x, y)) {
       return;
     }
@@ -571,7 +575,7 @@ public class CoordSet2 extends CoordSetGen {
   }
 
   // initialise current object with the four centre squares
-  public void setCentre() {
+  void setCentre() {
     if (mSize == 4) {
       set4(0, 0);
     } else {
@@ -581,7 +585,7 @@ public class CoordSet2 extends CoordSetGen {
 
   // initialise current object with four squares in r90 symmetry with input square
   private void set4(final int x, final int y) {
-    // CoordSet cs = clone( mX, mY, Square.opp(mY), mX, Square.opp(mX), Square.opp(mY), mY, Square.opp(mX));
+    // CoordSet cs = copy( mX, mY, Square.opp(mY), mX, Square.opp(mX), Square.opp(mY), mY, Square.opp(mX));
     setSquare(0, x, y, Square.BLACK);
     setSquare(1, Square.opp(y), x, Square.BLACK);
     setSquare(2, Square.opp(x), Square.opp(y), Square.WHITE);
@@ -590,14 +594,13 @@ public class CoordSet2 extends CoordSetGen {
 
   // initialise current object with two squares in r180 symmetry with input square
   private void set2(final int x, final int y) {
-    // CoordSet cs = clone( mX, mY, -mX, Square.opp(mY));
+    // CoordSet cs = copy( mX, mY, -mX, Square.opp(mY));
     setSquare(0, x, y, Square.BLACK);
     setSquare(1, -x, Square.opp(y), Square.WHITE);
   }
 
-  //
-  // clone current object removing another objects squares
-  public CoordSet2 removeCentre(final CoordSet2 centre) {
+  // copy current object removing another objects squares
+  CoordSet2 removeCentre(final CoordSet2 centre) {
     final CoordSet2 ncs = new CoordSet2(mSize - centre.mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     assert containsAll(centre) : "contains centre";
     for (int i = 0, j = 0; i < mSize; ++i) {
@@ -629,7 +632,6 @@ public class CoordSet2 extends CoordSetGen {
     return list;
   }
 
-
   private void tryRot90CornerSquare(final int i, final int dx, final int dy, final ArrayList<CoordSet2> list, final UTest h, final UTest hc, final CoordSet2 hole) {
     final int x = getX(i) + dx;
     final int y = getY(i) + dy;
@@ -639,12 +641,10 @@ public class CoordSet2 extends CoordSetGen {
     if (hole != null && hole.exists(x, y)) {
       return;
     }
-
     if (!hc.put(x, y)) {
       return;
     }
-
-    final CoordSet2 cs = clone(x, y, Square.opp(y), x, Square.opp(x), Square.opp(y), y, Square.opp(x));
+    final CoordSet2 cs = copy(x, y, Square.opp(y), x, Square.opp(x), Square.opp(y), y, Square.opp(x));
     final String uniq = cs.makeString();
     if (!h.put(uniq)) {
       return;
@@ -683,7 +683,7 @@ public class CoordSet2 extends CoordSetGen {
       return;
     }
 
-    final CoordSet2 cs = clone(x, y, -x, Square.opp(y));
+    final CoordSet2 cs = copy(x, y, -x, Square.opp(y));
     final String uniq = new UniqueMaker2(cs).uniqString();
     if (!h.put(uniq)) {
       return;
@@ -691,19 +691,19 @@ public class CoordSet2 extends CoordSetGen {
     list.add(cs);
   }
 
-  public int perimeterEstimate() {
+  int perimeterEstimate() {
     return 2 * (max(0) - min(0) + 1) + 2 * (max(1) - min(1) + 1) + 4;
   }
 
-  public boolean symXaxis() {
+  boolean symXaxis() {
     return symAxis(0, 0);
   }
 
-  public boolean symYaxis() {
+  boolean symYaxis() {
     return symAxis(1, 0);
   }
 
-  public boolean symParaXaxis() {
+  boolean symParaXaxis() {
     return symParaAxis(0);
   }
 
@@ -739,7 +739,6 @@ public class CoordSet2 extends CoordSetGen {
         x = mSet.getX(i) - offset;
         y = mSet.getY(i);
       }
-
       if (!h.isIn(x, y)) {
         return false;
       }
@@ -751,15 +750,15 @@ public class CoordSet2 extends CoordSetGen {
    * XXX
    *  XX
    */
-  public boolean symDiag() {
+  boolean symDiag() {
     return sym(0) || sym(1);
   }
 
-  public boolean symHoriz() {
+  boolean symHoriz() {
     return sym(2);
   }
 
-  public boolean symVert() {
+  boolean symVert() {
     return sym(3);
   }
 
@@ -767,12 +766,12 @@ public class CoordSet2 extends CoordSetGen {
     return makeString().equals(flip(d).makeString());
   }
 
-  public boolean symReflect() {
+  boolean symReflect() {
     return symHoriz() || symVert() || symDiag();
   }
 
   private CoordSet2 flip(final int d) {
-    CoordSet2 ncs = new CoordSet2(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
+    final CoordSet2 ncs = new CoordSet2(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       if (d == 0) {
         ncs.setSquare(i, getY(i), getX(i), getColour(i));
@@ -789,10 +788,8 @@ public class CoordSet2 extends CoordSetGen {
     return ncs;
   }
 
-  /*
-   * used when "this" is sym on mY axis and also sym on a parallel to the mX axis
-   */
-  public void rotate() {
+  // used when "this" is sym on y axis and also sym on a parallel to the x axis
+  void rotate() {
     int offset = min(1) + breadth(1) / 2;
     for (int i = 0; i < mSize; ++i) {
       int x = getX(i);
@@ -804,16 +801,18 @@ public class CoordSet2 extends CoordSetGen {
     }
   }
 
-  public CoordSet2 makeAnother(final int size) {
+  @Override
+  protected CoordSet2 makeAnother(final int size) {
     return new CoordSet2(size, mFlagFree, mFlagFixed, mFlagOneSided);
   }
 
-  public String makeUnique() {
+  @Override
+  protected String makeUnique() {
     return new UniqueMaker2(this).uniqString();
   }
 
   // return true if current object contains any piece of another
-  public boolean overlaps(final CoordSet2 hole) {
+  boolean overlaps(final CoordSet2 hole) {
     final UTest h = new UTest();
     for (int i = 0; i < mSize; ++i) {
       h.put(mSet.getX(i), mSet.getY(i));
@@ -827,13 +826,12 @@ public class CoordSet2 extends CoordSetGen {
 
   }
 
-  public boolean containsAll(final CoordSet2 cs) {
+  boolean containsAll(final CoordSet2 cs) {
     for (int i = 0; i < cs.mSize; ++i) {
       if (!exists(cs.getX(i), cs.getY(i))) {
         return false;
       }
     }
-
     return true;
   }
 
@@ -861,7 +859,7 @@ public class CoordSet2 extends CoordSetGen {
 //    return true;
 //  }
 
-  public int freeEdge(final int colour) {
+  int freeEdge(final int colour) {
     int e = 0;
     final UTest u = new UTest();
     for (int i = 0; i < mSize; i++) {
@@ -885,11 +883,7 @@ public class CoordSet2 extends CoordSetGen {
     return exists(x, y) ? 0 : 1;
   }
 
-  public int freeLessEdge() {
-    if (getWhite() < getBlack()) {
-      return freeEdge(Square.WHITE);
-    } else {
-      return freeEdge(Square.BLACK);
-    }
+  int freeLessEdge() {
+    return getWhite() < getBlack() ? freeEdge(Square.WHITE) : freeEdge(Square.BLACK);
   }
 }

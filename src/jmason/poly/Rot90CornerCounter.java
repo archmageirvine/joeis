@@ -1,5 +1,4 @@
 package jmason.poly;
-import java.util.*;
 
 /**
  * Counts polyominoes that are 90 degree rotatable around a corner.
@@ -45,10 +44,16 @@ public class Rot90CornerCounter extends Counter {
 //    }
 //  }
 
+  /**
+   * Counts polyominoes that are 90 degree rotatable around a corner.
+   * @param max maximum size
+   * @param starter start
+   * @param onlyForPerim perimeter only
+   * @param hole hole coordinates
+   */
   public Rot90CornerCounter(final int max, final CoordSet2 starter, final boolean onlyForPerim, final CoordSet2 hole) {
     super("R90", max, hole);
     mH = new UTest();
-
     count(starter.mSize, max, starter, onlyForPerim);
   }
 
@@ -56,15 +61,11 @@ public class Rot90CornerCounter extends Counter {
     assert c <= max : "c too high";
     if (starter.connected()) {
       final Polyomino p = new Polyomino(starter);
-      //System.err.println(p.cs.makeDiagram());
-      add(new Countable(p, (!((CoordSet2) (p.mCs)).symXaxis() && !((CoordSet2) (p.mCs)).symYaxis())));
-      //if (c == max)
-      //    System.err.println(p.cs.makeDiagram());
+      add(new Countable(p, !((CoordSet2) p.mCs).symXaxis() && !((CoordSet2) p.mCs).symYaxis()));
     }
-
     if (c + 4 <= max) {
-      final ArrayList<CoordSet2> sons = starter.listRot90CornerSons(); // no guarantee of uniqueness
-      for (final CoordSet2 newcs : sons) {
+      // no guarantee of uniqueness
+      for (final CoordSet2 newcs : starter.listRot90CornerSons()) {
         if (mHole != null && newcs.overlaps(mHole)) {
           continue;
         }
@@ -75,10 +76,8 @@ public class Rot90CornerCounter extends Counter {
         if (!mH.put(uniq)) {
           continue;
         }
-
         count(c + 4, max, newcs, onlyForPerim);
       }
     }
-
   }
 }

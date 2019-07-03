@@ -4,7 +4,7 @@ package jmason.poly;
  * A square of a polyomino.
  * @author jmason
  */
-public class Square extends Element {
+public class Square extends Element<Square> {
   public Square(final int x, final int y, final int colour) {
     mCoords = new int[2];
     mCoords[0] = x;
@@ -36,7 +36,8 @@ public class Square extends Element {
     return n >= 2;
   }
 
-  public Square clone(final boolean flip) {
+  @Override
+  protected Square copy(final boolean flip) {
     if (flip) {
       return new Square(getX(), getY(), -mColour);
     } else {

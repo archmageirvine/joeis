@@ -19,11 +19,7 @@ public abstract class PolyGen extends PolyBase {
   }
 
   protected void builder(final CoordSetGen c, final boolean copy) {
-    if (copy) {
-      mCs = c.cloneSet();
-    } else {
-      mCs = c;
-    }
+    mCs = copy ? c.copySet() : c;
     mUniq = mCs.makeUnique();
   }
 

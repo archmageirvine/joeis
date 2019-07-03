@@ -18,7 +18,7 @@ public class UniqueMaker2 {
     } else if (mCs.mFlagOneSided) {
       final String tmp1 = mCs.makeString();
 
-      final CoordSet2 ts = (CoordSet2) (mCs.cloneSet());
+      final CoordSet2 ts = (CoordSet2) (mCs.copySet());
       ts.rotate();
       final String tmp2 = ts.makeString();
 

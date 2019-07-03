@@ -39,7 +39,7 @@ public class Counter {
   protected final CoordSet2 mHole;
   protected final int mMax;
 
-  public Counter(final String prefix, final int max, final CoordSet2 hole) {
+  Counter(final String prefix, final int max, final CoordSet2 hole) {
     mMax = max;
     mAll = new ArrayList<>();
     mHole = hole;
@@ -48,19 +48,18 @@ public class Counter {
     mCuall = new Cumulator(prefix + " total counters", max);
     mCusym = new Cumulator(prefix + " symmetric counters", max);
     mCuasym = new Cumulator(prefix + " asymmetric counters", max);
-
   }
 
-  public void add(final Counter oc) {
+  protected void add(final Counter oc) {
     mCu.add(oc.mCu.mCounters);
     mCuall.add(oc.mCuall.mCounters);
     mCusym.add(oc.mCusym.mCounters);
     mCuasym.add(oc.mCuasym.mCounters);
   }
 
-  public void add(final Countable c) {
+  protected void add(final Countable c) {
     assert c.mP.mCs.connected();
-    int n = c.mP.mCs.mSize;
+    final int n = c.mP.mCs.mSize;
     mAll.add(c);
     mCuall.add(n);
     if (c.mCountable) {

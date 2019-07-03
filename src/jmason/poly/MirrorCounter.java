@@ -30,7 +30,7 @@ public class MirrorCounter extends Counter {
         }
       }
       if (((CoordSet2) (p.mCs)).symParaXaxis()) {
-        final CoordSet2 cs = (CoordSet2) (p.mCs.cloneSet());
+        final CoordSet2 cs = (CoordSet2) (p.mCs.copySet());
         cs.rotate();
         final Polyomino turned = new Polyomino(cs);
         // no guarantee of uniqueness

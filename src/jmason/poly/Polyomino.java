@@ -11,53 +11,50 @@ public class Polyomino extends PolyGen {
   private boolean mBHoly, mBHolyCalculated;
 
   // build a polyomino cloning a coordinate set
-  public Polyomino(final CoordSet2 c) {
+  Polyomino(final CoordSet2 c) {
     builder(c, true);
     ((CoordSet2) mCs).calculate();
   }
 
-  // build a polyomino from a coordinate set, with or without cloning
-  public Polyomino(final CoordSet2 c, final boolean copy) {
-    builder(c, copy);
-    ((CoordSet2) mCs).calculate();
-  }
+//  // build a polyomino from a coordinate set, with or without cloning
+//  Polyomino(final CoordSet2 c, final boolean copy) {
+//    builder(c, copy);
+//    ((CoordSet2) mCs).calculate();
+//  }
 
 
   // build a polyomino from a coordinate set, with or without cloning
 
   // build a polyomino from a coordinate set adding one square
-  public Polyomino(final CoordSet2 c, final int x, final int y) {
-    mCs = c.clone(x, y);
-    //mSize = c.mSize + 1;
+  Polyomino(final CoordSet2 c, final int x, final int y) {
+    mCs = c.copy(x, y);
     mUniq = mCs.makeUnique();
     ((CoordSet2) mCs).calculate();
   }
 
-  public Polyomino(final CoordSet2 c, final int x1, final int y1, final int x2, final int y2) {
-    mCs = c.clone(x1, y1, x2, y2);
-    //mSize = c.mSize + 2;
+  Polyomino(final CoordSet2 c, final int x1, final int y1, final int x2, final int y2) {
+    mCs = c.copy(x1, y1, x2, y2);
     mUniq = mCs.makeUnique();
     ((CoordSet2) mCs).calculate();
   }
 
-  public Polyomino(final CoordSet2 c, final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
-    mCs = c.clone(x1, y1, x2, y2, x3, y3, x4, y4);
-    //mSize = c.mSize + 2;
-    mUniq = mCs.makeUnique();
-    ((CoordSet2) mCs).calculate();
-  }
+//  Polyomino(final CoordSet2 c, final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
+//    mCs = c.copy(x1, y1, x2, y2, x3, y3, x4, y4);
+//    mUniq = mCs.makeUnique();
+//    ((CoordSet2) mCs).calculate();
+//  }
 
-  public int getWidth() {
+  int getWidth() {
     return ((CoordSet2) mCs).getWidth();
   }
 
-  public int getHeight() {
+  int getHeight() {
     return ((CoordSet2) mCs).getHeight();
   }
 
   // build list of mirror polyominoes generatable form current
   // No guarantee that not generatable from previous
-  public ArrayList<Polyomino> listMirrorSons() {
+  ArrayList<Polyomino> listMirrorSons() {
     final ArrayList<Polyomino> list = new ArrayList<>();
     final UTest h = new UTest();
     final UTest hc = new UTest();
@@ -71,8 +68,8 @@ public class Polyomino extends PolyGen {
   }
 
   private void tryMirrorSquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
-    int x = mCs.getX(i) + dx;
-    int y = mCs.getY(i) + dy;
+    final int x = mCs.getX(i) + dx;
+    final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
@@ -89,7 +86,7 @@ public class Polyomino extends PolyGen {
   }
 
   // build a list (without duplicates) of polyominoes that may be generated from current
-  public ArrayList<Polyomino> listSons(final int addOnlyToColour) {
+  ArrayList<Polyomino> listSons(final int addOnlyToColour) {
     final ArrayList<Polyomino> list = new ArrayList<>();
     final UTest h = new UTest();
     final UTest hc = new UTest();
@@ -129,7 +126,7 @@ public class Polyomino extends PolyGen {
 //  // can a generated polyomino be built from one of the same mSize but lower value than current?
 //  private boolean previouslyBuildable(final Polyomino p) {
 //    for (int i = 0; i < mSize(); ++i) {
-//      CoordSet2 cs = (CoordSet2) (p.mCs.cloneWithout(i));
+//      CoordSet2 cs = (CoordSet2) (p.mCs.copyWithout(i));
 //      if (!cs.connected()) {
 //                /*if (f)
 //                    System.out.println("not conn " + cs.toString());*/
@@ -155,7 +152,7 @@ public class Polyomino extends PolyGen {
 //    boolean singleColourable = false;
 //    if (this.odd() || this.mCs.biased()) {
 //    } else {
-//      CoordSet2 ts = (CoordSet2) (this.mCs.cloneFlip());
+//      CoordSet2 ts = (CoordSet2) (this.mCs.copyFlip());
 //      final String tmp1 = ts.makeString(true);
 //      // BA 2
 //      // DC
@@ -205,7 +202,7 @@ public class Polyomino extends PolyGen {
 //    return singleColourable;
 //  }
 
-  public boolean holy() {
+  boolean holy() {
     if (mBHolyCalculated) {
       return mBHoly;
     }
@@ -217,13 +214,12 @@ public class Polyomino extends PolyGen {
 
   private CoordSet2 negative() {
     int c = 0;
-    //System.err.println(this.cs.makeString());
     final int minx = mCs.min(0) - 1;
     final int miny = mCs.min(1) - 1;
     final int maxx = mCs.max(0) + 1;
     final int maxy = mCs.max(1) + 1;
     final int negsize = (maxx - minx + 1) * (maxy - miny + 1) - size();
-    CoordSet2 neg = new CoordSet2(negsize, ((CoordSet2) mCs).mFlagFree, ((CoordSet2) mCs).mFlagFixed, ((CoordSet2) mCs).mFlagOneSided);
+    final CoordSet2 neg = new CoordSet2(negsize, ((CoordSet2) mCs).mFlagFree, ((CoordSet2) mCs).mFlagFixed, ((CoordSet2) mCs).mFlagOneSided);
     for (int x = minx; x <= maxx; x++) {
       for (int y = miny; y <= maxy; y++) {
         if (!((CoordSet2) mCs).exists(x, y)) {
@@ -231,7 +227,6 @@ public class Polyomino extends PolyGen {
         }
       }
     }
-    //System.err.println(neg.makeString());
     return neg;
   }
 }

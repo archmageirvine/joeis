@@ -1,11 +1,11 @@
 package jmason.poly;
 
 /**
- *
+ * A single element, be it a square or a cube.
  * @author jmason
- * a single element, be it a square or a cube
+ * @param <T> type of element
  */
-public abstract class Element {
+public abstract class Element<T extends Element> {
   protected int[] mCoords;
   protected int mColour;
   //public static final int EMPTY = 0;
@@ -18,11 +18,8 @@ public abstract class Element {
     // 1 -----> -2
     // -1 ----> 0
     // -2 ----> 1
-    return -z
-      - 1
-      ;
+    return -z - 1;
   }
-
 
   public int getX() {
     return mCoords[0];
@@ -44,11 +41,11 @@ public abstract class Element {
     this.mColour = colour;
   }
 
-  public Element clone() {
-    return clone(false);
+  protected T copy() {
+    return copy(false);
   }
 
-  public abstract Element clone(final boolean flip);
+  protected abstract T copy(final boolean flip);
 
   public static String colourString(final boolean all, final int colour) {
     if (all) {

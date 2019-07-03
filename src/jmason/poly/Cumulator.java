@@ -5,11 +5,12 @@ package jmason.poly;
  * @author jmason
  */
 public class Cumulator {
+
   final int[] mCounters;
   final int mMax;
   final String mName;
 
-  public Cumulator(final String name, final int max) {
+  Cumulator(final String name, final int max) {
     mMax = max;
     mName = name;
     mCounters = new int[max + 1];
@@ -25,7 +26,7 @@ public class Cumulator {
     mCounters[i]++;
   }
 
-  public void print() {
+  void print() {
     System.err.println(mName);
     System.err.println(build());
     for (int i = 1; i <= mMax; i++) {
@@ -38,7 +39,7 @@ public class Cumulator {
   }
 
   public String build(final int[] a) {
-    StringBuilder s = new StringBuilder();
+    final StringBuilder s = new StringBuilder();
     for (int i = 1; i <= mMax; i++) {
       s.append(a[i]);
       if (i < mMax) {

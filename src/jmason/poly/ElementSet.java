@@ -1,49 +1,51 @@
 package jmason.poly;
 
 /**
- *
+ * A set of elements, which could be squares or cubes.
  * @author jmason
- * a set of elements, which could be squares or cubes
+ * @param <T> element type
  */
-public abstract class ElementSet {
-  protected Element[] mSet;
+public abstract class ElementSet<T extends Element<T>> {
+
+  protected T[] mSet;
   protected final int mSize;
-  private int mWhite, mBlack;
+  private int mWhite;
+  private int mBlack;
 
   protected ElementSet(final int size) {
     mSize = size;
   }
 
-  public int getX(final int i) {
+  int getX(final int i) {
     return mSet[i].getX();
   }
 
-  public int getY(final int i) {
+  int getY(final int i) {
     return mSet[i].getY();
   }
 
-  public int getCoord(final int i, final int z) {
+  int getCoord(final int i, final int z) {
     return mSet[i].getCoord(z);
   }
 
-  public int getColour(final int i) {
+  int getColour(final int i) {
     return mSet[i].getColour();
   }
 
-  public void setColour(final int i, final int col) {
+  void setColour(final int i, final int col) {
     mSet[i].setColour(col);
   }
 
-  protected abstract void setElement(final Element e);
+  protected abstract void setElement(final T e);
 
-  public void setElement(final int i, final Element e) {
+  protected void setElement(final int i, final T e) {
     verifree(i);
     mSet[i] = e;
     adjColour(mSet[i].getColour());
     setElement(e);
   }
 
-  public Element getElement(final int i) {
+  T getElement(final int i) {
     return mSet[i];
   }
 
@@ -55,11 +57,11 @@ public abstract class ElementSet {
     }
   }
 
-  public int getWhite() {
+  int getWhite() {
     return mWhite;
   }
 
-  public int getBlack() {
+  int getBlack() {
     return mBlack;
   }
 
@@ -67,8 +69,8 @@ public abstract class ElementSet {
     assert mSet[i] == null : "already in use";
   }
 
-  public void swapPositions(final int i, final int j) {
-    final Element t = mSet[i];
+  void swapPositions(final int i, final int j) {
+    final T t = mSet[i];
     mSet[i] = mSet[j];
     mSet[j] = t;
   }

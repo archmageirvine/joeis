@@ -8,15 +8,15 @@ public class UniqueMaker3s {
 
   private final PolySide mP;
 
-  public UniqueMaker3s(PolySide p) {
+  UniqueMaker3s(final PolySide p) {
     mP = p;
   }
 
-  public String uniqString() {
-    return minMirror(this.mP);
+  String uniqString() {
+    return minMirror(mP);
   }
 
-  public String minRotate(PolySide p) {
+  String minRotate(PolySide p) {
     final String tmp1 = p.makeString();
     p = p.rotxy();
     final String tmp2 = p.makeString();

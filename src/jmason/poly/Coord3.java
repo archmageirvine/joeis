@@ -4,14 +4,14 @@ package jmason.poly;
  * A 3 dimensional coordinate used in polyominoids and not polycubes.
  * @author jmason
  */
-public class Coord3 {
+class Coord3 {
   int mX, mY, mZ;
 
-  public Coord3(final int x, final int y, final int z) {
+  Coord3(final int x, final int y, final int z) {
     build(x, y, z);
   }
 
-  public Coord3(final Coord3 c1, final int d1, final int d2, final int dc) {
+  Coord3(final Coord3 c1, final int d1, final int d2, final int dc) {
     if (dc == 0) {
       build(c1.mX, c1.mY + d1, c1.mZ + d2);
     } else if (dc == 1) {
@@ -21,7 +21,7 @@ public class Coord3 {
     }
   }
 
-  public int get(final int q) {
+  int get(final int q) {
     if (q == 0) {
       return mX;
     }
@@ -38,7 +38,7 @@ public class Coord3 {
     mZ = z;
   }
 
-  public boolean less(final Coord3 other) {
+  boolean less(final Coord3 other) {
     if (mX < other.mX) {
       return true;
     }
@@ -60,11 +60,16 @@ public class Coord3 {
     throw new RuntimeException();
   }
 
-  public boolean equals(final Coord3 other) {
-    return mX == other.mX && mY == other.mY && mZ == other.mZ;
+  @Override
+  public boolean equals(final Object other) {
+    if (!(other instanceof Coord3)) {
+      return false;
+    }
+    final Coord3 o = (Coord3) other;
+    return mX == o.mX && mY == o.mY && mZ == o.mZ;
   }
 
-  public int differentAxis(final Coord3 other) {
+  int differentAxis(final Coord3 other) {
     if (mX != other.mX) {
       return 0;
     }
@@ -77,35 +82,35 @@ public class Coord3 {
     throw new RuntimeException();
   }
 
-  public Coord3 rotxy() {
+  Coord3 rotxy() {
     return new Coord3(Square.opp(mY), mX, mZ);
   }
 
-  public Coord3 rotxz() {
+  Coord3 rotxz() {
     return new Coord3(Square.opp(mZ), mY, mX);
   }
 
-  public Coord3 mirrorxy() {
+  Coord3 mirrorxy() {
     return new Coord3(mY, mX, mZ);
   }
 
-  public Coord3 mirrorxz() {
+  Coord3 mirrorxz() {
     return new Coord3(mZ, mY, mX);
   }
 
-  public Coord3 mirrorz() {
+  Coord3 mirrorz() {
     return new Coord3(mX, mY, -mZ);
   }
 
-  public String makeDiagram() {
+  String makeDiagram() {
     return mX + "," + mY + "," + mZ;
   }
 
-  public boolean isSame(Coord3 other) {
+  boolean isSame(Coord3 other) {
     return mX == other.mX && mY == other.mY && mZ == other.mZ;
   }
 
-  public Coord3 clone() {
+  protected Coord3 copy() {
     return new Coord3(mX, mY, mZ);
   }
 }

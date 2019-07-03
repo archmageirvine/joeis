@@ -122,8 +122,7 @@ public class Coord3Set {
     return false;
   }
 
-  @Override
-  public Coord3Set clone() {
-    return new Coord3Set(mCoords[0].clone(), mCoords[1].clone(), mCoords[2].clone(), mCoords[3].clone());
+  protected Coord3Set copy() {
+    return new Coord3Set(mCoords[0].copy(), mCoords[1].copy(), mCoords[2].copy(), mCoords[3].copy());
   }
 }

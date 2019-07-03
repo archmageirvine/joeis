@@ -5,6 +5,7 @@ package jmason.poly;
  * @author jmason
  */
 public class PolyominoCounter {
+
   private final boolean mOnlyUnbiased;
   private final boolean mOnlyMaxBiased;
   private final boolean mWantSym;
@@ -20,7 +21,7 @@ public class PolyominoCounter {
   private final int mMax;
   private final UTest mUt;
 
-  public Cumulator getCu() {
+  Cumulator getCu() {
     return mCu;
   }
 
@@ -73,7 +74,7 @@ public class PolyominoCounter {
     }
 
     // here count sideless
-    int axes = ((CoordSet2) (p.mCs)).hasSide(0) + ((CoordSet2) (p.mCs)).hasSide(1);
+    final int axes = ((CoordSet2) (p.mCs)).hasSide(0) + ((CoordSet2) (p.mCs)).hasSide(1);
     if (axes >= 1) {
       mOneAxis.add(c);
     }

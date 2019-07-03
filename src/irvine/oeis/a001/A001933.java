@@ -21,6 +21,9 @@ public class A001933 implements Sequence {
   private final A234006 mA234006 = new A234006(); // valid for n multiple of 2
   private final A234007 mA234007 = new A234007(); // valid for n multiple of 4
   private final A234008 mA234008 = new A234008(); // valid for n multiple of 2
+  {
+    mA000105.next();
+  }
 
   @Override
   public Z next() {

@@ -43,7 +43,7 @@ public abstract class RunsBaseSequence implements Sequence {
 
   /**
    * Ensure that the current number has at least a specified number of digits.
-   * @param width number of required digits
+   * @param len width number of required digits
    * @param base represent the number in this base
    */
   protected Z ensureWidth(int len, int base) {

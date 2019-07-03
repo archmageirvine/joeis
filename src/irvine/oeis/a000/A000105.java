@@ -65,3 +65,14 @@ public class A000105 implements Sequence {
   }
 
 }
+
+
+// Alternative jmason implementation, problem is A006746 and other depend on the above
+//  private int mMax = 0;
+//
+//  @Override
+//  public Z next() {
+//    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
+//    pc.run(true, false, false);
+//    return Z.valueOf(pc.getCu().getCounter(mMax));
+//  }

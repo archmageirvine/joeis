@@ -4,21 +4,22 @@ package jmason.poly;
  * A PolyGen may become a Polyomino or a PolyCube.
  * It is based in a CoordSetGen which may be a set of xy coordinates or xyz coordinates
  * @author jmason
+ * @param <T> type of coordinates
  */
-public abstract class PolyGen extends PolyBase {
+public abstract class PolyGen<T extends CoordSetGen> extends PolyBase {
 
   protected String mUniq;
   protected CoordSetGen mCs;
 
-  public boolean odd() {
+  boolean odd() {
     return (size() & 1) == 1;
   }
 
-  public int size() {
+  int size() {
     return mCs.mSize;
   }
 
-  protected void builder(final CoordSetGen c, final boolean copy) {
+  protected void builder(final T c, final boolean copy) {
     mCs = copy ? c.copySet() : c;
     mUniq = mCs.makeUnique();
   }

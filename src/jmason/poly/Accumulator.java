@@ -15,6 +15,11 @@ public class Accumulator {
   final int[] mCounters;
   final int mMax;
 
+  /**
+   * Get the count for the given index
+   * @param i index
+   * @return count
+   */
   public int getCounter(final int i) {
     return mCounters[i];
   }

@@ -37,6 +37,13 @@ public class PolyominoCounter {
     return mMbcu;
   }
 
+  /**
+   * Count polyominoes
+   * @param max maximum size
+   * @param onlyUnbiased only could unbiased
+   * @param onlyMaxBiased only count maximally biased
+   * @param wantSym count symmetric cases
+   */
   public PolyominoCounter(final int max, final boolean onlyUnbiased, final boolean onlyMaxBiased, final boolean wantSym) {
     mCu = new Cumulator("counters", max);
     mOneAxis = new Cumulator("oneAxis", max);
@@ -54,6 +61,12 @@ public class PolyominoCounter {
     mUt = new UTest();
   }
 
+  /**
+   * Do the processing
+   * @param flagFree free
+   * @param flagFixed fixed
+   * @param flagOneSided one-sided
+   */
   public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     final CoordSet2 cs = new CoordSet2(1, flagFree, flagFixed, flagOneSided);
     cs.initMonomino();

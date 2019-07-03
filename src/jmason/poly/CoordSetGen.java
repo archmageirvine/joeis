@@ -149,7 +149,7 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   }
 
   int bias() {
-    int b = mSet.getWhite() - mSet.getBlack();
+    final int b = mSet.getWhite() - mSet.getBlack();
     if (b >= 0) {
       return b;
     } else {

@@ -7,15 +7,15 @@ import java.util.ArrayList;
  * @author jmason
  */
 public class PolySideCounter {
+
   private final UTest mUt;
-  final Cumulator mCu;
+  private final Cumulator mCu;
+  private final ArrayList<ArrayList<PolySide>> mA = new ArrayList<>();
 
-  public Cumulator getCu() {
-    return mCu;
-  }
-
-  final ArrayList<ArrayList<PolySide>> mA = new ArrayList<>();
-
+  /**
+   * Construct a new counter.
+   * @param max maximum size
+   */
   public PolySideCounter(final int max) {
     mCu = new Cumulator("counters", max);
     mUt = new UTest();
@@ -23,6 +23,10 @@ public class PolySideCounter {
       mA.add(new ArrayList<>());
     }
     count(1, max, new PolySide(1));
+  }
+
+  public Cumulator getCu() {
+    return mCu;
   }
 
   private void count(final int c, final int max, final PolySide p) {

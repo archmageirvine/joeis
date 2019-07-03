@@ -43,7 +43,7 @@ public class NRot90CornerCounter extends Counter {
 
   private void count(final Polyomino starter, final UTest hh, final boolean bInclude) {
     if (bInclude) {
-      add(new Countable(starter, (!((CoordSet2) (starter.mCs)).symXaxis() && !((CoordSet2) (starter.mCs)).symYaxis())));
+      add(new Countable(starter, !((CoordSet2) starter.mCs).symXaxis() && !((CoordSet2) starter.mCs).symYaxis()));
     }
     final ArrayList<Polyomino> sons = ((CoordSet2) (starter.mCs)).nlistRot90CornerSons(); // no guarantee of uniqueness
     for (final Polyomino p : sons) {

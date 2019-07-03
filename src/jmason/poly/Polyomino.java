@@ -105,23 +105,20 @@ public class Polyomino extends PolyGen {
 
   // try to build a polyomino adding a specific square to current
   private void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
-    int x = mCs.getX(i) + dx;
-    int y = mCs.getY(i) + dy;
-
+    final int x = mCs.getX(i) + dx;
+    final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
     if (!hc.put(x + " " + y)) {
       return;
     }
-
-    final Polyomino p = new Polyomino(((CoordSet2) mCs), x, y);
+    final Polyomino p = new Polyomino((CoordSet2) mCs, x, y);
     if (!h.put(p.mUniq)) {
       return;
     }
     list.add(p);
   }
-
 
 //  // can a generated polyomino be built from one of the same mSize but lower value than current?
 //  private boolean previouslyBuildable(final Polyomino p) {

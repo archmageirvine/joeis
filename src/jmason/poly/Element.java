@@ -5,15 +5,15 @@ package jmason.poly;
  * @author jmason
  * @param <T> type of element
  */
-public abstract class Element<T extends Element> {
+abstract class Element<T extends Element> {
   protected int[] mCoords;
   protected int mColour;
   //public static final int EMPTY = 0;
-  public static final String trans = "-ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  public static final int BLACK = 1;
-  public static final int WHITE = -BLACK;
+  private static final String TRANS = "-ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  static final int BLACK = 1;
+  static final int WHITE = -BLACK;
 
-  public static int opp(final int z) {
+  static int opp(final int z) {
     // 0 -----> -1
     // 1 -----> -2
     // -1 ----> 0
@@ -21,23 +21,23 @@ public abstract class Element<T extends Element> {
     return -z - 1;
   }
 
-  public int getX() {
+  int getX() {
     return mCoords[0];
   }
 
-  public int getY() {
+  int getY() {
     return mCoords[1];
   }
 
-  public int getCoord(final int z) {
+  int getCoord(final int z) {
     return mCoords[z];
   }
 
-  public int getColour() {
+  int getColour() {
     return mColour;
   }
 
-  public void setColour(final int colour) {
+  void setColour(final int colour) {
     this.mColour = colour;
   }
 
@@ -47,15 +47,11 @@ public abstract class Element<T extends Element> {
 
   protected abstract T copy(final boolean flip);
 
-  public static String colourString(final boolean all, final int colour) {
+  static String colourString(final boolean all, final int colour) {
     if (all) {
-      return trans.substring(colour, colour + 1);
+      return TRANS.substring(colour, colour + 1);
     } else {
-      if (colour < 0) {
-        return "W";
-      } else {
-        return "B";
-      }
+      return colour < 0 ? "W" : "B";
     }
   }
 }

@@ -5,7 +5,10 @@ package jmason.poly;
  * @author jmason
  */
 class Coord3 {
-  int mX, mY, mZ;
+
+  int mX;
+  int mY;
+  int mZ;
 
   Coord3(final int x, final int y, final int z) {
     build(x, y, z);
@@ -60,13 +63,8 @@ class Coord3 {
     throw new RuntimeException();
   }
 
-  @Override
-  public boolean equals(final Object other) {
-    if (!(other instanceof Coord3)) {
-      return false;
-    }
-    final Coord3 o = (Coord3) other;
-    return mX == o.mX && mY == o.mY && mZ == o.mZ;
+  public boolean same(final Coord3 other) {
+    return mX == other.mX && mY == other.mY && mZ == other.mZ;
   }
 
   int differentAxis(final Coord3 other) {

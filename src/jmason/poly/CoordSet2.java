@@ -1,6 +1,7 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A set of xy coordinates
@@ -54,8 +55,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
     mMaxX = Integer.MIN_VALUE;
     mMaxY = Integer.MIN_VALUE;
     for (int i = 0; i < mSize; ++i) {
-      int x = getX(i);
-      int y = getY(i);
+      final int x = getX(i);
+      final int y = getY(i);
       if (x > mMaxX) {
         mMaxX = x;
       }
@@ -68,7 +69,6 @@ public class CoordSet2 extends CoordSetGen<Square> {
       if (y < mMinY) {
         mMinY = y;
       }
-
     }
     mWidth = mMaxX - mMinX + 1;
     mHeight = mMaxY - mMinY + 1;
@@ -179,7 +179,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   public CoordSet2 copy(final int x, final int y) {
     CoordSet2 cs = new CoordSet2(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
+      cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
 
     cs.add(mSize, x, y);
@@ -190,7 +190,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2) {
     final CoordSet2 cs = new CoordSet2(mSize + 2, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
+      cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
     cs.add(mSize, x1, y1);
     cs.add(mSize + 1, x2, y2);
@@ -199,9 +199,9 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
-    CoordSet2 cs = new CoordSet2(mSize + 4, mFlagFree, mFlagFixed, mFlagOneSided);
+    final CoordSet2 cs = new CoordSet2(mSize + 4, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
-      cs.mSet.setElement(i, (Square) mSet.getElement(i).copy());
+      cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
     cs.add(mSize, x1, y1);
     cs.add(mSize + 1, x2, y2);
@@ -223,7 +223,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   private CoordSet2 mirror(final int xm, final int ym, final int x, final int y) {
-    CoordSet2 cs = new CoordSet2(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
+    final CoordSet2 cs = new CoordSet2(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     cs.mAllColours = mAllColours;
     for (int i = 0; i < mSize; ++i) {
       ((SquareSet) (cs.mSet)).setSquare(i, xm * mSet.getCoord(i, x), ym * mSet.getCoord(i, y), mSet.getColour(i));
@@ -241,12 +241,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     final int xj = mSet.getX(j);
     final int yi = mSet.getY(i);
     final int yj = mSet.getY(j);
-    return (
-      (xi - xj == 1 && yi == yj) ||
-        (xi - xj == -1 && yi == yj) ||
-        (yi - yj == 1 && xi == xj) ||
-        (yi - yj == -1 && xi == xj)
-    );
+    return (xi - xj == 1 && yi == yj) || (xi - xj == -1 && yi == yj) || (yi - yj == 1 && xi == xj) || (yi - yj == -1 && xi == xj);
   }
 
   @Override
@@ -321,27 +316,24 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
   @Override
   protected String makeDiagram() {
-    String[][] array;
-    array = new String[mSize][mSize];
-    int x, y, maxy = 0;
-    for (x = 0; x < mSize; x++) {
-      for (y = 0; y < mSize; y++) {
-        array[x][y] = " ";
-      }
+    final String[][] array = new String[mSize][mSize];
+    int maxy = 0;
+    for (int x = 0; x < mSize; ++x) {
+      Arrays.fill(array[x], " ");
     }
-    int minx = min(0);
-    int miny = min(1);
-    for (int i = 0; i < mSize; i++) {
-      x = getX(i) - minx;
-      y = getY(i) - miny;
+    final int minx = min(0);
+    final int miny = min(1);
+    for (int i = 0; i < mSize; ++i) {
+      final int x = getX(i) - minx;
+      final int y = getY(i) - miny;
       if (y > maxy) {
         maxy = y;
       }
       array[x][y] = Square.colourString(mAllColours, mSet.getColour(i));
     }
-    StringBuilder ret = new StringBuilder();
-    for (y = 0; y <= maxy; y++) {
-      for (x = 0; x < mSize; x++) {
+    final StringBuilder ret = new StringBuilder();
+    for (int y = 0; y <= maxy; ++y) {
+      for (int x = 0; x < mSize; ++x) {
         ret.append(array[x][y]);
       }
       ret.append("\r\n");
@@ -357,14 +349,13 @@ public class CoordSet2 extends CoordSetGen<Square> {
   @Override
   protected String makeString(final boolean withColour) {
     String ret = "";
-
     int bitSize = 2;
     if (withColour) {
-      bitSize++;
+      ++bitSize;
     }
-    int minx = min(0);
-    int miny = min(1);
-    for (int i = 0; i < mSize; i++) {
+    final int minx = min(0);
+    final int miny = min(1);
+    for (int i = 0; i < mSize; ++i) {
       int pos = getX(i) - minx;
       String tmp = TRANSFORM.substring(pos, pos + 1);
       pos = getY(i) - miny;
@@ -398,14 +389,14 @@ public class CoordSet2 extends CoordSetGen<Square> {
       ++white;
     }
     for (int i = 1; i < mSize; i++) {
-      int t = (mSet.getX(0) - mSet.getX(i)) + (mSet.getY(0) - mSet.getY(i));
-      boolean b = (t % 2 == 0);
+      final int t = (mSet.getX(0) - mSet.getX(i)) + (mSet.getY(0) - mSet.getY(i));
+      final boolean b = (t & 1) == 0;
       if (mSet.getColour(i) == Square.BLACK) {
         ++black;
       } else {
         ++white;
       }
-      assert (b && (mSet.getColour(0) == mSet.getColour(i)) || (!b && (mSet.getColour(0) == -mSet.getColour(i)))) : "wrong colour";
+      assert b && mSet.getColour(0) == mSet.getColour(i) || !b && mSet.getColour(0) == -mSet.getColour(i) : "wrong colour";
     }
     assert getBlack() == black && getWhite() == white && black + white == mSize : "bad colours";
   }
@@ -442,15 +433,13 @@ public class CoordSet2 extends CoordSetGen<Square> {
   private CoordSet2 makeHole() {
     final ArrayList<int[]> list = new ArrayList<>();
     final UTest h = new UTest();
-    int[] pair = {0, 0, Square.BLACK};
     h.put(0, 0);
-    list.add(pair);
+    list.add(new int[]{0, 0, Square.BLACK});
     boolean f = true;
     while (f) {
-
-      for (int i = 0; i < list.size(); i++) {
+      for (int i = 0; i < list.size(); ++i) {
         f = true;
-        pair = list.get(i);
+        final int[] pair = list.get(i);
         if (mhTry(pair, list, h, 1, 0)) {
           break;
         }
@@ -470,9 +459,8 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   boolean mhTry(final int[] pair, final ArrayList<int[]> list, final UTest h, final int dx, final int dy) {
-    int x = pair[0] + dx;
-    int y = pair[1] + dy;
-
+    final int x = pair[0] + dx;
+    final int y = pair[1] + dy;
     if (h.isIn(x, y)) {
       return false;
     }
@@ -480,17 +468,15 @@ public class CoordSet2 extends CoordSetGen<Square> {
       return false;
     }
     h.put(x, y);
-    int[] npair = {x, y, -pair[2]};
-    list.add(npair);
+    list.add(new int[]{x, y, -pair[2]});
     return true;
   }
 
   protected CoordSet2 aToCs(final ArrayList<int[]> a) {
-    CoordSet2 cs = makeAnother(a.size());
+    final CoordSet2 cs = makeAnother(a.size());
     for (int i = 0; i < cs.mSize; ++i) {
       final int[] pair = a.get(i);
       cs.mSet.setElement(i, new Square(pair[0], pair[1], pair[2]));
-
     }
     return cs;
   }
@@ -790,11 +776,11 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
   // used when "this" is sym on y axis and also sym on a parallel to the x axis
   void rotate() {
-    int offset = min(1) + breadth(1) / 2;
+    final int offset = min(1) + breadth(1) / 2;
     for (int i = 0; i < mSize; ++i) {
       int x = getX(i);
       int y = getY(i) - offset;
-      int t = x;
+      final int t = x;
       x = Square.opp(y);
       y = t;
       overSquare(i, x, y, mSet.getColour(i));
@@ -868,15 +854,14 @@ public class CoordSet2 extends CoordSetGen<Square> {
         e += countFree(i, -1, 0, u);
         e += countFree(i, 0, 1, u);
         e += countFree(i, 0, -1, u);
-
       }
     }
     return e;
   }
 
   private int countFree(final int i, final int dx, final int dy, final UTest u) {
-    int x = getX(i) + dx;
-    int y = getY(i) + dy;
+    final int x = getX(i) + dx;
+    final int y = getY(i) + dy;
     if (!u.put(x, y)) {
       return 0;
     }

@@ -7,11 +7,11 @@ import java.util.Arrays;
  * A polyominoid.
  * @author jmason
  */
-public class PolySide  extends PolyBase {
+class PolySide  extends PolyBase {
 
-  final int mSize;
-  final Side[] mSides;
-  String mUniq;
+  private final int mSize;
+  private final Side[] mSides;
+  private String mUniq;
 
   PolySide(final int size) {
     mSize = size;
@@ -32,7 +32,7 @@ public class PolySide  extends PolyBase {
   }
 
   // build a list (without duplicates) of polyominoes that may be generated from current
-  // and that are not generatable from previous
+  // and that are not generable from previous
   ArrayList<PolySide> listSons() {
     final ArrayList<PolySide> list = new ArrayList<>();
     for (int i = 0; i < mSize; ++i) {
@@ -52,7 +52,7 @@ public class PolySide  extends PolyBase {
   }
 
   void trySide(final Coord3 c1, final Coord3 c2, final int d1, final int d2, final ArrayList<PolySide> list) {
-    Coord3Set cosnew = new Coord3Set(c1, c2, d1, d2);
+    final Coord3Set cosnew = new Coord3Set(c1, c2, d1, d2);
     if (hasSide(cosnew)) {
       return;
     }
@@ -78,8 +78,6 @@ public class PolySide  extends PolyBase {
 
   String makeString() {
     String ret = "";
-    //int bitSize = 12;
-
     final int minx = min(0);
     final int miny = min(1);
     final int minz = min(2);
@@ -100,10 +98,10 @@ public class PolySide  extends PolyBase {
     return ret;
   }
 
-  int min(int q) {
+  int min(final int q) {
     int ret = mSides[0].min(q);
     for (int i = 1; i < mSize; ++i) {
-      int tmp = mSides[i].min(q);
+      final int tmp = mSides[i].min(q);
       if (tmp < ret) {
         ret = tmp;
       }
@@ -160,7 +158,7 @@ public class PolySide  extends PolyBase {
     return p;
   }
 
-  public PolySide copy() {
+  PolySide copy() {
     final PolySide ps = new PolySide(mSize);
     for (int i = 0; i < mSize; i++) {
       ps.setSide(i, mSides[i].copy());

@@ -49,27 +49,27 @@ public class Side {
     return mCoords.makeDiagram();
   }
 
-  int dir() {
-    for (int i = 0; i < 3; i++) {
-      final int tmp = mCoords.mCoords[0].get(i);
-      if (tmp == mCoords.mCoords[1].get(i) && tmp == mCoords.mCoords[2].get(i) && tmp == mCoords.mCoords[3].get(i)) {
-        return i;
-      }
-    }
-    return -1;
-  }
-
-  int same(Coord3 c1, Coord3 c2) {
-    final int d = dir();
-    if (d == 0) {
-      return c1.mY == c2.mY ? 1 : 2;
-    } else if (d == 1) {
-      return c1.mX == c2.mX ? 0 : 2;
-    } else {
-      return c1.mY == c2.mY ? 1 : 0;
-    }
-  }
-
+//  int dir() {
+//    for (int i = 0; i < 3; i++) {
+//      final int tmp = mCoords.mCoords[0].get(i);
+//      if (tmp == mCoords.mCoords[1].get(i) && tmp == mCoords.mCoords[2].get(i) && tmp == mCoords.mCoords[3].get(i)) {
+//        return i;
+//      }
+//    }
+//    return -1;
+//  }
+//
+//  int same(final Coord3 c1, final Coord3 c2) {
+//    final int d = dir();
+//    if (d == 0) {
+//      return c1.mY == c2.mY ? 1 : 2;
+//    } else if (d == 1) {
+//      return c1.mX == c2.mX ? 0 : 2;
+//    } else {
+//      return c1.mY == c2.mY ? 1 : 0;
+//    }
+//  }
+//
 //  public int orient(Coord3 c1, Coord3 c2) {
 //    int d = dir();
 //    int s = same(c1, c2);
@@ -87,7 +87,7 @@ public class Side {
 //    return -1;
 //  }
 
-  public Side copy() {
+  protected Side copy() {
     return new Side(mCoords.copy());
   }
 }

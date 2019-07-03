@@ -149,11 +149,11 @@ public class CoordSet2 extends CoordSetGen<Square> {
 //  }
 
   void setSquare(final int i, final int x, final int y, final int colour) {
-    ((SquareSet) (mSet)).setSquare(i, x, y, colour);
+    ((SquareSet) mSet).setSquare(i, x, y, colour);
   }
 
   void overSquare(final int i, final int x, final int y, final int colour) {
-    ((SquareSet) (mSet)).overSquare(i, x, y, colour);
+    ((SquareSet) mSet).overSquare(i, x, y, colour);
   }
 
   void initMonomino() {
@@ -173,17 +173,15 @@ public class CoordSet2 extends CoordSetGen<Square> {
 //  }
 
   private void add(final int i, final int x, final int y) {
-    ((SquareSet) (mSet)).setSquare(i, x, y);
+    ((SquareSet) mSet).setSquare(i, x, y);
   }
 
   public CoordSet2 copy(final int x, final int y) {
-    CoordSet2 cs = new CoordSet2(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
+    final CoordSet2 cs = new CoordSet2(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
-
     cs.add(mSize, x, y);
-
     return cs;
   }
 
@@ -194,7 +192,6 @@ public class CoordSet2 extends CoordSetGen<Square> {
     }
     cs.add(mSize, x1, y1);
     cs.add(mSize + 1, x2, y2);
-
     return cs;
   }
 
@@ -226,7 +223,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     final CoordSet2 cs = new CoordSet2(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     cs.mAllColours = mAllColours;
     for (int i = 0; i < mSize; ++i) {
-      ((SquareSet) (cs.mSet)).setSquare(i, xm * mSet.getCoord(i, x), ym * mSet.getCoord(i, y), mSet.getColour(i));
+      ((SquareSet) cs.mSet).setSquare(i, xm * mSet.getCoord(i, x), ym * mSet.getCoord(i, y), mSet.getColour(i));
     }
     return cs;
   }

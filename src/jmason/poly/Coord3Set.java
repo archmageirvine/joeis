@@ -98,7 +98,7 @@ class Coord3Set {
   }
 
   String makeDiagram() {
-    StringBuilder ret = new StringBuilder();
+    final StringBuilder ret = new StringBuilder();
     for (final Coord3 c : mCoords) {
       ret.append('[').append(c.makeDiagram()).append(']');
     }

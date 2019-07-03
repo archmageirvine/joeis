@@ -104,7 +104,7 @@ class Coord3 {
     return mX + "," + mY + "," + mZ;
   }
 
-  boolean isSame(Coord3 other) {
+  boolean isSame(final Coord3 other) {
     return mX == other.mX && mY == other.mY && mZ == other.mZ;
   }
 

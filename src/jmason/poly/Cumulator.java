@@ -1,14 +1,14 @@
 package jmason.poly;
 
 /**
- * A cumulator object is a named set of counters, a counter for eache mSize from 1 to max.
+ * A cumulator object is a named set of counters, a counter for each size from 1 to max.
  * @author jmason
  */
 public class Cumulator {
 
   final int[] mCounters;
-  final int mMax;
-  final String mName;
+  private final int mMax;
+  protected final String mName;
 
   Cumulator(final String name, final int max) {
     mMax = max;
@@ -16,13 +16,13 @@ public class Cumulator {
     mCounters = new int[max + 1];
   }
 
-  public void add(final int[] c) {
+  void add(final int[] c) {
     for (int i = 1; i <= mMax; i++) {
       mCounters[i] += c[i];
     }
   }
 
-  public void add(final int i) {
+  void add(final int i) {
     mCounters[i]++;
   }
 
@@ -34,11 +34,11 @@ public class Cumulator {
     }
   }
 
-  public String build() {
+  String build() {
     return build(mCounters);
   }
 
-  public String build(final int[] a) {
+  String build(final int[] a) {
     final StringBuilder s = new StringBuilder();
     for (int i = 1; i <= mMax; i++) {
       s.append(a[i]);
@@ -49,6 +49,11 @@ public class Cumulator {
     return s.toString();
   }
 
+  /**
+   * Get the count for the given value
+   * @param i index
+   * @return count
+   */
   public int getCounter(final int i) {
     return mCounters[i];
   }

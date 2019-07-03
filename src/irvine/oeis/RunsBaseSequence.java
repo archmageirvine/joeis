@@ -1,8 +1,6 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
-import irvine.math.z.ZUtils;
-import java.util.ArrayList;
 /**
  * Properties of a (simple) periodic continued fraction
  * for the square root of a number,
@@ -46,7 +44,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * @param len width number of required digits
    * @param base represent the number in this base
    */
-  protected Z ensureWidth(int len, int base) {
+  protected Z ensureWidth(final int len, final int base) {
     int num = 1;
     int iwid = len - 1;
     while (iwid > 0) {
@@ -62,7 +60,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * @param base represent in this base
    * @return number of subsequences with identical digits
    */
-  protected int getRunCount(Z number, int base) {
+  protected int getRunCount(final Z number, final int base) {
     String digits;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
@@ -80,7 +78,7 @@ public abstract class RunsBaseSequence implements Sequence {
     int count = 1; // there is always one element = 1 run
     idig -= dlen;
     while (idig >= 0) {
-      if (! digits.substring(idig, idig + dlen).equals(runElem)) {
+      if (!digits.substring(idig, idig + dlen).equals(runElem)) {
         ++count;
         runElem = digits.substring(idig, idig + dlen);
       }
@@ -97,7 +95,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * @param value so many runs are required
    * @return true if the number of run has the value <code>count</code>
    */
-  protected boolean hasRunCount(Z number, int base, int value) {
+  protected boolean hasRunCount(final Z number, final int base, final int value) {
     String digits;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
@@ -116,7 +114,7 @@ public abstract class RunsBaseSequence implements Sequence {
     idig -= dlen;
     boolean busy = true;
     while (busy && idig >= 0) {
-      if (! digits.substring(idig, idig + dlen).equals(runElem)) {
+      if (!digits.substring(idig, idig + dlen).equals(runElem)) {
         ++count;
         busy = count <= value; // false if >
         runElem = digits.substring(idig, idig + dlen);
@@ -133,9 +131,9 @@ public abstract class RunsBaseSequence implements Sequence {
    * @param digit count this digit (two characters for base &gt; 10)
    * @return the count of digit in number
    */
-  protected int getDigitCount(Z number, int base, int digit) {
+  protected int getDigitCount(final Z number, final int base, final int digit) {
     String digits;
-    String search;
+    final String search;
     int dlen = 1; // assume 1 character per digit
     if (base <= 10) { // one character per digit
       digits = number.toString(base);
@@ -183,7 +181,7 @@ public abstract class RunsBaseSequence implements Sequence {
         --loopCheck;
         break;
       }
-      loopCheck --;
+      --loopCheck;
     } // while busy
     if (loopCheck == 0) {
       throw new IllegalArgumentException("More than 10^8 iterations in RunsBaseSequence.getNextWithProperty()");
@@ -218,29 +216,4 @@ public abstract class RunsBaseSequence implements Sequence {
   protected int getIndex() {
     return mN;
   } // getIndex
-
-  //=====================================
-  /** Test method - not yet implemented.
-   *  @param args command line arguments: [n [noterms]]
-   *  Show various elements related to the continued fraction for the square root of n.
-   *  If n is &lt; 0, several properties of the period for all numbers are shown.
-   */
-  public static void main(String[] args) {
-    int n = -1;
-    int iarg = 0;
-    if (iarg < args.length) {
-      try {
-        n = Integer.parseInt(args[iarg ++]);
-      } catch (Exception exc) {
-      }
-    }
-    int noterms = 16;
-    if (iarg < args.length) {
-      try {
-        noterms = Integer.parseInt(args[iarg ++]);
-      } catch (Exception exc) {
-      }
-    }
-  } // main
-
 } // RunsBaseSequence

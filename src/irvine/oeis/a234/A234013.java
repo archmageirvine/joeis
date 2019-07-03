@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A234013.
+ * A234013 Number of maximally biased free polyominoes with n squares.
  * @author jmason
  */
 public class A234013 implements Sequence {

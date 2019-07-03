@@ -26,6 +26,7 @@ public class A043141 implements Sequence {
       if ((sta.indexOf(mP12) >= 0 || sta.indexOf(mP21) >= 0) && 
           (stb.indexOf(mP12) < 0  && stb.indexOf(mP21) < 0)) { // isOk
         --loopCheck;
+        break;
       }
       --loopCheck;
     } // while busy

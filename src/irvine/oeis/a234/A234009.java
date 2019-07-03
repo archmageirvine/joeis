@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import jmason.poly.NRot90CornerCounter;
 
 /**
- * A234009.
+ * A234009 Free polyominoes with <code>4n</code> squares, having 90 degree rotational symmetry about a square corner.
  * @author jmason
  */
 public class A234009 implements Sequence {

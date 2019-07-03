@@ -25,15 +25,15 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   protected Z   mD1; // new convergent denominator
   protected int mP0; // numerator   of old partial fraction
   protected int mP1; // denominator of new partial fraction
-  protected int mQ0; // numominator of old partial fraction
+  protected int mQ0; // numerator of old partial fraction
   protected int mQ1; // denominator of new partial fraction
   protected int mPerInd; // index  in period
   protected int mPerLen; // length of period
   protected int mPerLeast; // least element of the period
   protected int mPerCount1; // number of ONEs in the period
   protected int mPerCenter; // central element(s) in period
-  protected int [] mPeriod;
-  protected int mSize; // mecessary size of mPeriod
+  protected int[] mPeriod;
+  protected int mSize; // necessary size of mPeriod
   protected int mOffset; // OEIS offset1 as of generation time
 
   /**
@@ -83,7 +83,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * the continued fractions of all square roots.
    */
   protected void initialize() {
-    mRoot   = (int)(java.lang.Math.sqrt(mK));
+    mRoot   = (int) Math.sqrt(mK);
     mSize   = mRoot << 2; // * 4
     if (mPeriod.length < mSize) {
       mPeriod = new int[mSize];
@@ -129,7 +129,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
           mPerLeast = mB1;
         }
         if (mB1 == 1) {
-          mPerCount1 ++;
+          ++mPerCount1;
         }
         ++mPerInd;
         mP0 = mP1;
@@ -159,9 +159,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
       if (mPerLen < 0) {
         if (mQ0 == mQ1) {
           mPerLen = mPerInd * 2 + 1;
-        }
-        else
-        if (mP0 == mP1) {
+        } else if (mP0 == mP1) {
           mPerLen = mPerInd * 2;
         }
       }
@@ -224,7 +222,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
     int iper = mPerLen - 1;
     int least = mPeriod[0];
     while (iper > 0) {
-      int element = mPeriod[iper];
+      final int element = mPeriod[iper];
       if (element < least) {
         least = element;
       }
@@ -303,7 +301,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
    * @return property of the next number
    */
   protected Z getNextProperty() {
-    mK ++;
+    ++mK;
     fillPeriod();
     return getProperty();
   } // getNextProperty
@@ -315,12 +313,13 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   protected Z getNextWithProperty() {
     int loopCheck = 1000000;
     while (loopCheck > 0) {
-      mK ++;
+      ++mK;
       fillPeriod();
       if (isOk()) {
-        loopCheck = -1;
+        --loopCheck;
+        break;
       }
-      loopCheck --;
+      --loopCheck;
     } // while busy
     if (loopCheck == 0) {
       throw new IllegalArgumentException("more than 10^6 iterations in ContinuedFractionOfSqrtSequence.getNextWithProperty()");

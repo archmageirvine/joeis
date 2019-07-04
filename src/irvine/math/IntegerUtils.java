@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import irvine.util.io.IOUtils;
+import irvine.util.string.StringUtils;
 
 /**
  * Utility functions for integers.
@@ -422,4 +423,17 @@ public final class IntegerUtils {
     }
     return true;
   }
+
+  private static final String PADDING = StringUtils.rep('0', Integer.SIZE);
+
+  /**
+   * Return a 64-character string containing the binary value of <code>n</code>.
+   * @param n number
+   * @return padded binary form
+   */
+  public static String toBinaryString(final int n) {
+    final String s = PADDING + Integer.toBinaryString(n);
+    return s.substring(s.length() - Integer.SIZE);
+  }
+
 }

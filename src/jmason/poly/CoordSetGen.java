@@ -29,7 +29,7 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
 
   protected abstract CoordSetGen<T> makeAnother(final int size);
 
-  CoordSetGen copySet() {
+  CoordSetGen<T> copySet() {
     final CoordSetGen<T> cs = makeAnother(mSize);
     cs.mAllColours = false;
     for (int i = 0; i < mSize; i++) {

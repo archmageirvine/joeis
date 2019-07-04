@@ -5,7 +5,7 @@ package jmason.poly;
  * @author jmason
  * @param <T> type of element
  */
-abstract class Element<T extends Element> {
+abstract class Element<T extends Element<T>> {
   protected int[] mCoords;
   protected int mColour;
   //public static final int EMPTY = 0;

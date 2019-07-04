@@ -1,7 +1,7 @@
 package jmason.poly;
 
 /**
- * Makes a unique string from a coordset2, but according to whether we are looking for free, fixed or one-sided polyominoes.
+ * Makes a unique string from a coordinate set, but according to whether we are looking for free, fixed or one-sided polyominoes.
  * @author jmason
  */
 public class UniqueMaker2 {

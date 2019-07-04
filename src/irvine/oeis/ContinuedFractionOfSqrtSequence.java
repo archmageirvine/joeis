@@ -31,7 +31,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   protected int mPerLen; // length of period
   protected int mPerLeast; // least element of the period
   protected int mPerCount1; // number of ONEs in the period
-  protected int mPerCenter; // central element(s) in period
+  //protected int mPerCenter; // central element(s) in period
   protected int[] mPeriod;
   protected int mSize; // necessary size of mPeriod
   protected int mOffset; // OEIS offset1 as of generation time
@@ -117,10 +117,10 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
         if (mPerLen < 0) {
           if (mQ0 == mQ1) {
             mPerLen = mPerInd * 2 + 1;
-            mPerCenter = mB0;
+            //mPerCenter = mB0;
           } else if (mP0 == mP1) {
             mPerLen = mPerInd * 2;
-            mPerCenter = mB0;
+            //mPerCenter = mB0;
           }
         }
         if (mPerInd == 0) { // first period element
@@ -196,7 +196,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the count of some value in the period.
    * The caller must already have filled the period,
-   * and it must hava a length >= 1 (no perfect square).
+   * and it must hava a length &gt;= 1 (no perfect square).
    * @param value the desired value to be counted
    * @return the number of elements with the specified value
    */
@@ -215,7 +215,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the least element in the period.
    * The caller must already have filled the period,
-   * and it must hava a length >= 1 (no perfect square).
+   * and it must hava a length &gt;= 1 (no perfect square).
    * @return the least element
    */
   public int getLeastInPeriod() {
@@ -234,7 +234,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the length of the period.
    * The caller must already have filled the period,
-   * and it must hava a length >= 1 (no perfect square).
+   * and it must hava a length &gt;= 1 (no perfect square).
    * @return length of the period, including the trailing 2*root
    */
   public int getPeriodLength() {
@@ -244,9 +244,9 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get some period element.
    * The caller must already have filled the period,
-   * and it must hava a length >= 2 (no perfect square, and no square + 1).
+   * and it must have a length &gt;= 2 (no perfect square, and no square + 1).
    * @param index index of the element to be returned
-   * @return mPeriod[index].
+   * @return element of the given index
    */
   public int getPeriodElement(final int index) {
     return mPeriod[index];

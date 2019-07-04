@@ -11,9 +11,9 @@ import irvine.oeis.Sequence;
  */
 public class A003137 implements Sequence {
  
-  private String mS = null;
+  private String mS = "";
   private int mPos = 0;
-  private Z mN = Z.valueOf(1 - 1);
+  private Z mN = Z.ZERO;
 
   @Override
   public Z next() {

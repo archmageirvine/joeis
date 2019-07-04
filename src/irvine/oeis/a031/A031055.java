@@ -13,7 +13,7 @@ public class A031055 implements Sequence {
  
   private String mS = "";
   private int mPos = 0;
-  private Z mN = Z.valueOf(1 - 1);
+  private Z mN = Z.ZERO;
 
   @Override
   public Z next() {

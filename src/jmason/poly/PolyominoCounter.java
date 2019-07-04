@@ -21,7 +21,7 @@ public class PolyominoCounter {
   private final int mMax;
   private final UTest mUt;
 
-  Cumulator getCu() {
+  public Cumulator getCu() {
     return mCu;
   }
 

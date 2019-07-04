@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * An integral polyomino.
  * @author jmason
  */
-public class Polyomino extends PolyGen<CoordSet2> {
+public class Polyomino extends PolyGen<Square, CoordSet2> {
 
   private boolean mBHoly, mBHolyCalculated;
 

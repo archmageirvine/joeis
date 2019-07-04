@@ -6,10 +6,10 @@ package jmason.poly;
  * @author jmason
  * @param <T> type of coordinates
  */
-public abstract class PolyGen<T extends CoordSetGen<?>> extends PolyBase {
+public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> extends PolyBase {
 
   protected String mUniq;
-  protected CoordSetGen mCs;
+  protected CoordSetGen<U> mCs;
 
   boolean odd() {
     return (size() & 1) == 1;

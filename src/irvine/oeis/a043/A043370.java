@@ -13,7 +13,7 @@ public class A043370 extends RunsBaseSequence {
 
   /** Construct the sequence. */
   public A043370() {
-    super(1, 1 - 1); // 
+    super(1, 0); //
   }
 
   @Override

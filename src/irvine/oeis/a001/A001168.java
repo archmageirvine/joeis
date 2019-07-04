@@ -1,20 +1,21 @@
 package irvine.oeis.a001;
 
-import irvine.math.Polyomino;
-import irvine.oeis.a000.A000105;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import jmason.poly.PolyominoCounter;
 
 /**
  * A001168 Number of fixed polyominoes with n cells.
  * @author Sean A. Irvine
  */
-public class A001168 extends A000105 {
+public class A001168 implements Sequence {
+
+  private int mMax = 0;
 
   @Override
-  protected Polyomino canonicalize(final Polyomino polyomino) {
-    return polyomino.translate();
-  }
-
-  {
-    super.next();
+  public Z next() {
+    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
+    pc.run(true, true, false);
+    return Z.valueOf(pc.getCu().getCounter(mMax));
   }
 }

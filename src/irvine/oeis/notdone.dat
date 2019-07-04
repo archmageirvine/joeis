@@ -1167,6 +1167,7 @@ A023943 Theta series of laminated lattice LAMBDA_21
 A023944 Theta series of laminated lattice LAMBDA_22
 A023945 Theta series of laminated lattice LAMBDA_23
 A023994 Number of isomorphism types of symmetric configurations n_4
+A024158 Number of integer-sided triangles with sides a,b,c, a<b<c, a+b+c=n such that (c-b)(c-a)(b-a) divides (b+c-a)(c+a-b)(a+b-c), doesn't match terms
 A024187 n-th elementary symmetric function of 3,4,...,n+3 (probably A001711)
 A024211 Theta series of laminated lattice LAMBDA_25 with minimal norm 4, depends A004034
 A024313 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2) ], s = (natural numbers >= 3), t = A023531 (terms don't match definition)

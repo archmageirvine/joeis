@@ -22,7 +22,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   final boolean mFlagFixed;
   final boolean mFlagOneSided;
 
-  public CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
+  CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     mSize = size;
     mSet = new SquareSet(size);
     mFlagFree = flagFree;
@@ -176,7 +176,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     ((SquareSet) mSet).setSquare(i, x, y);
   }
 
-  public CoordSet2 copy(final int x, final int y) {
+  CoordSet2 copy(final int x, final int y) {
     final CoordSet2 cs = new CoordSet2(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       cs.mSet.setElement(i, mSet.getElement(i).copy());
@@ -185,7 +185,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return cs;
   }
 
-  public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2) {
+  CoordSet2 copy(final int x1, final int y1, final int x2, final int y2) {
     final CoordSet2 cs = new CoordSet2(mSize + 2, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       cs.mSet.setElement(i, mSet.getElement(i).copy());
@@ -195,7 +195,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return cs;
   }
 
-  public CoordSet2 copy(final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
+  CoordSet2 copy(final int x1, final int y1, final int x2, final int y2, final int x3, final int y3, final int x4, final int y4) {
     final CoordSet2 cs = new CoordSet2(mSize + 4, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       cs.mSet.setElement(i, mSet.getElement(i).copy());
@@ -597,11 +597,20 @@ public class CoordSet2 extends CoordSetGen<Square> {
   }
 
   // list r90 sons of current object
+  /**
+   * Perform rotation.
+   * @return coordinate sets
+   */
   public ArrayList<CoordSet2> listRot90CornerSons() {
     return listRot90CornerSons(null);
   }
 
-  // list r90 sons of current object avoiding putting squares in optional mHole
+  // list r90 sons of current object avoiding putting squares in optional hole
+  /**
+   * Perform rotation with an optional hole
+   * @param hole the hole
+   * @return rotation
+   */
   public ArrayList<CoordSet2> listRot90CornerSons(final CoordSet2 hole) {
     final ArrayList<CoordSet2> list = new ArrayList<>();
     final UTest h = new UTest();
@@ -635,10 +644,19 @@ public class CoordSet2 extends CoordSetGen<Square> {
     list.add(cs);
   }
 
+  /**
+   * Perform rotation.
+   * @return coordinate sets
+   */
   public ArrayList<CoordSet2> listRot180MidSideSons() {
     return listRot180MidSideSons(null);
   }
 
+  /**
+   * Perform rotation with an optional hole
+   * @param hole the hole
+   * @return rotated coordinate sets.
+   */
   public ArrayList<CoordSet2> listRot180MidSideSons(final CoordSet2 hole) {
     final ArrayList<CoordSet2> list = new ArrayList<>();
     final UTest h = new UTest();

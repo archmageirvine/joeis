@@ -6,7 +6,7 @@ package jmason.poly;
  * @author jmason
  * @param <T> type of coordinates
  */
-public abstract class PolyGen<T extends CoordSetGen> extends PolyBase {
+public abstract class PolyGen<T extends CoordSetGen<?>> extends PolyBase {
 
   protected String mUniq;
   protected CoordSetGen mCs;

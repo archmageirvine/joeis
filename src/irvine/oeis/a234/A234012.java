@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A234012.
+ * A234012 Number of unbiased free polyominoes with <code>2n</code> squares.
  * @author jmason
  */
 public class A234012 implements Sequence {

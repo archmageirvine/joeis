@@ -17,6 +17,7 @@ public class A326295 implements Sequence {
   // There are multiple MD4 implementations available for Java in various libraries, but
   // we have an explicit implementation here to avoid excessive dependence on another library
 
+  private boolean mSawZero = false;
   private long mN = -1;
 
   private int[] mMd4 = new int[4];
@@ -137,7 +138,13 @@ public class A326295 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      md4OfLong(++mN);
+      if (++mN == 0) {
+        if (mSawZero) {
+          return null; // finished (i.e. we have tried all 2^64 possible value -- not actually likely to happen
+        }
+        mSawZero = true;
+      }
+      md4OfLong(mN);
       final String binaryMd4 = IntegerUtils.toBinaryString(Integer.reverseBytes(mMd4[0])) + IntegerUtils.toBinaryString(Integer.reverseBytes(mMd4[1])) + IntegerUtils.toBinaryString(Integer.reverseBytes(mMd4[2])) + IntegerUtils.toBinaryString(Integer.reverseBytes(mMd4[3]));
       if (binaryMd4.contains(Long.toBinaryString(mN))) {
         return Z.valueOf(mN);

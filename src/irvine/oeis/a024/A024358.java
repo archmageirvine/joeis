@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024358.
+ * A024358 Sum of the sizes of binary subtrees of the perfect binary tree of height <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A024358 implements Sequence {

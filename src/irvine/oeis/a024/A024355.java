@@ -6,7 +6,7 @@ import irvine.oeis.a020.A020883;
 import irvine.oeis.a020.A020884;
 
 /**
- * A024355.
+ * A024355 Consider primitive Pythagorean triangles <code>(A^2 + B^2 = C^2, (A, B) = 1, A &lt;= B)</code>; sequence gives values of AUB, sorted.
  * @author Sean A. Irvine
  */
 public class A024355 implements Sequence {

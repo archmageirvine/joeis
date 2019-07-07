@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024361.
+ * A024361 Number of primitive Pythagorean triangles with leg <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A024361 extends A024355 {

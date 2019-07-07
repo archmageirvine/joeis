@@ -10,14 +10,13 @@
     <suppress checks="FileLength" files=".*GenerateGraphs.java"/>
     <suppress checks="FileLength" files=".*Min4Scanner.java"/>
     <suppress checks="FileLength" files=".*Min5Scanner.java"/>
-    <suppress checks="FileLength" files=".*MockResultSet.java"/>
     <suppress checks="FileLength" files=".*Modulo.java"/>
     <suppress checks="FileLength" files=".*Plantri.java"/>
     <suppress checks="FileLength" files=".*PlantriTest.java"/>
-    <suppress checks="FileLength" files=".*PrimitiveTimings.java"/>
     <suppress checks="FileLength" files=".*SchreierSims.java"/>
     <suppress checks="FileLength" files=".*SymmetricGroupTest.java"/>
     <suppress checks="FileLength" files=".*Twiddler.java"/>
+    <suppress checks="FileLength" files=".*CoordSet2.java"/>
     <suppress checks="FileLength" files=".*Z.java"/>
     <suppress checks="FileLength" files=".*A018190.java"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>

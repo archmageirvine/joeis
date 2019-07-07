@@ -9,7 +9,7 @@ import irvine.oeis.a023.A023533;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A024375.
+ * A024375 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where k <code>= [ (n+1)/2 ], s = A023532, t = A023533</code>.
  * @author Sean A. Irvine
  */
 public class A024375 extends A023533 {

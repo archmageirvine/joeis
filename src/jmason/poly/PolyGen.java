@@ -5,6 +5,7 @@ package jmason.poly;
  * It is based in a CoordSetGen which may be a set of xy coordinates or xyz coordinates
  * @author jmason
  * @param <T> type of coordinates
+ * @param <U> element type
  */
 public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> extends PolyBase {
 

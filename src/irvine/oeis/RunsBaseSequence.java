@@ -14,7 +14,7 @@ public abstract class RunsBaseSequence implements Sequence {
 
   protected int mN; // index of current term to be returned
   protected Z mK; // current number with some property
-  protected int mOffset; // OEIS offset1 as of generation time
+  //protected int mOffset; // OEIS offset1 as of generation time
 
   /**
    * Construct an instance which selects all numbers
@@ -23,7 +23,7 @@ public abstract class RunsBaseSequence implements Sequence {
    * @param offset first valid term has this index
    */
   protected RunsBaseSequence(final int offset) {
-    mOffset = offset;
+    //mOffset = offset;
     mN = offset - 1;
     mK = Z.valueOf(mN);
   }

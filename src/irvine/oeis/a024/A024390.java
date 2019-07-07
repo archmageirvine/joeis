@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024390.
+ * A024390 <code>[ (4th</code> elementary symmetric function of S(n))/(3rd elementary symmetric function of <code>S(n)) ]</code>, where <code>S(n) =</code> {first <code>n+3</code> positive integers congruent to <code>1 mod 4}</code>.
  * @author Sean A. Irvine
  */
 public class A024390 implements Sequence {

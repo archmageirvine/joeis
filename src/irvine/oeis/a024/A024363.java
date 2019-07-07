@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024363.
+ * A024363 Number of primitive Pythagorean triangles with side <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A024363 extends A024357 {

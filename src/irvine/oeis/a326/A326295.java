@@ -46,17 +46,17 @@ public class A326295 implements Sequence {
 
   private static int ff(int a, final int b, final int c, final int d, final int x, final int s) {
     a += ((b & c) | ((~b) & d)) + x;
-    return ((a << s) | (a >>> (32 - s)));
+    return (a << s) | (a >>> (32 - s));
   }
 
   private static int gg(int a, final int b, final int c, final int d, final int x, final int s) {
     a += ((b & c) | (b & d) | (c & d)) + x + 0x5a827999;
-    return ((a << s) | (a >>> (32 - s)));
+    return (a << s) | (a >>> (32 - s));
   }
 
   private static int hh(int a, final int b, final int c, final int d, final int x, final int s) {
     a += ((b ^ c) ^ d) + x + 0x6ed9eba1;
-    return ((a << s) | (a >>> (32 - s)));
+    return (a << s) | (a >>> (32 - s));
   }
 
   void md4() {

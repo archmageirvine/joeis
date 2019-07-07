@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024356.
+ * A024356 Determinant of Hankel matrix of the first <code>2n-1</code> prime numbers.
  * @author Sean A. Irvine
  */
 public class A024356 implements Sequence {

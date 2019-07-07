@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020886;
 
 /**
- * A024364.
+ * A024364 Ordered perimeters of primitive Pythagorean triangles.
  * @author Sean A. Irvine
  */
 public class A024364 extends A020886 {

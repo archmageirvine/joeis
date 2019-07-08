@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024408.
+ * A024408 Perimeters of more than one primitive Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A024408 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a023.A023531;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A024307 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2) ], s =</code> (natural numbers <code>&gt;= 2), t = A023531</code>.
+ * A024307 <code>a(n) = 2*t(n) + 3*t(n-1) + ... + (k+1)*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code> and t <code>= A023531</code>.
  * @author Sean A. Irvine
  */
 public class A024307 extends A023531 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020882;
 
 /**
- * A024409.
+ * A024409 Hypotenuses of more than one primitive Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A024409 extends A020882 {

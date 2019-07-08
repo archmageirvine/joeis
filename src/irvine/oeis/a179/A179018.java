@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179018 Partial sums of <code>ceil(Fibonacci(n)/2)</code>.
+ * A179018 Partial sums of <code>ceiling(Fibonacci(n)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A179018 extends LinearRecurrence {

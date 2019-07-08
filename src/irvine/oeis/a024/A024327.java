@@ -9,7 +9,7 @@ import irvine.oeis.a023.A023531;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A024327 <code>s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where k <code>= floor( (n+1)/2 ), s = A023531, t = A023534</code>.
+ * A024327 <code>s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where k <code>= floor( (n+1)/2 ), s = A023531, t = A014306</code>.
  * @author Sean A. Irvine
  */
 public class A024327 extends A014306 {

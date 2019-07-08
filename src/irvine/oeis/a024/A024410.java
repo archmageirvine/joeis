@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020883;
 
 /**
- * A024410.
+ * A024410 Long leg of more than one primitive Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A024410 extends A020883 {

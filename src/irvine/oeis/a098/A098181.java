@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098181 Odd numbers with two times the positive even numbers repeated in order between them.
+ * A098181 Two consecutive odd numbers separated by multiples of four, repeated twice, between them, written in increasing order.
  * @author Sean A. Irvine
  */
 public class A098181 extends LinearRecurrence {

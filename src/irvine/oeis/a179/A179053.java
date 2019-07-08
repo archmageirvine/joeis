@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179053 Partial sums of <code>ceil(Fibonacci(n)/11)</code>.
+ * A179053 Partial sums of <code>ceiling(Fibonacci(n)/11)</code>.
  * @author Georg Fischer
  */
 public class A179053 extends GeneratingFunctionSequence {

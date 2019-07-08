@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053643 <code>a(n) = ceiling(C(n,6)/n)</code>.
+ * A053643 <code>a(n) = ceiling(binomial(n,6)/n)</code>.
  * @author Georg Fischer
  */
 public class A053643 extends GeneratingFunctionSequence {

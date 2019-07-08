@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A007370 Numbers n such that sigma <code>(x) = n</code> has a unique solution.
+ * A007370 Numbers n such that <code>sigma(x) = n</code> has a unique solution.
  * @author Sean A. Irvine
  */
 public class A007370 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307637 allocated for Donghwi Park.
+ * A307637 Sum of the second largest parts of the partitions of n into 7 primes.
  * @author Sean A. Irvine
  */
 public class A307637 implements Sequence {

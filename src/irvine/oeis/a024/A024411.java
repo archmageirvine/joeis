@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020884;
 
 /**
- * A024411.
+ * A024411 Short leg of more than one primitive Pythagorean triangle.
  * @author Sean A. Irvine
  */
 public class A024411 extends A020884 {

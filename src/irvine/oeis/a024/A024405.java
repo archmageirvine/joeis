@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024405.
+ * A024405 Number of products of distinct primes <code>&lt;= p(n)</code> equal to <code>1 (mod p(n))</code>.
  * @author Sean A. Irvine
  */
 public class A024405 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A163999 Decimal expansion of the Faraday constant.
+ * A163999 Decimal expansion of the Faraday constant according to the 2019 SI system.
  * @author Sean A. Irvine
  */
 public class A163999 extends DoubleDecimalExpansionSequence {

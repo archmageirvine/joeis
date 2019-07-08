@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004961 Ceiling of <code>n*phi^6</code>, where phi is the golden ratio.
+ * A004961 <code>a(n) = ceiling(n*phi^6)</code>, where phi is the golden ratio.
  * @author Sean A. Irvine
  */
 public class A004961 implements Sequence {

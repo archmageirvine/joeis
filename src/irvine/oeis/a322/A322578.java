@@ -3,7 +3,7 @@ package irvine.oeis.a322;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A322578 Decimal expansion of the Avogadro constant <code>N_A</code> in the 2019 SI system in units <code>mol^{-1}</code>.
+ * A322578 Decimal expansion of the Avogadro constant <code>N_A</code> in the 2019 SI system in units <code>mol^(-1)</code>.
  * @author Georg Fischer
  */
 public class A322578 extends FiniteSequence {

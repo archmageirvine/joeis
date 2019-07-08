@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A014694 <code>a(n) = ithprime(n+1) - (-1)^n*ceiling(n/2)</code>.
+ * A014694 <code>a(n) = prime(n+1) - (-1)^n*ceiling(n/2)</code>.
  * @author Sean A. Irvine
  */
 public class A014694 extends A000040 {

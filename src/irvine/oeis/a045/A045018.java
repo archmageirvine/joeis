@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A045018 Numbers n with property that in base 4 representation the numbers of <code>0</code>'s and <code>1</code>'s are 1 and 0, respectively.
+ * A045018 Numbers n with property that in <code>base-4</code> representation the numbers of <code>0</code>'s and <code>1</code>'s are 1 and 0, respectively.
  * @author Georg Fischer
  */
 public class A045018 extends RunsBaseSequence {

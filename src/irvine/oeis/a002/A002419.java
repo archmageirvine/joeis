@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002419 4-dimensional figurate numbers: <code>(6n-2)*binomial(n+2,3)/4</code>.
+ * A002419 4-dimensional figurate numbers: <code>(6*n-2)*binomial(n+2,3)/4</code>.
  * @author Sean A. Irvine
  */
 public class A002419 implements Sequence {

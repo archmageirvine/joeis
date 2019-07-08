@@ -3,7 +3,7 @@ package irvine.oeis.a036;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A036406 <code>Ceiling(n^2/8)</code>.
+ * A036406 <code>a(n) = ceiling(n^2/8)</code>.
  * @author Sean A. Irvine
  */
 public class A036406 extends LinearRecurrence {

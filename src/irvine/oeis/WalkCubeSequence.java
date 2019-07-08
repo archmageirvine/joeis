@@ -174,10 +174,9 @@ public class WalkCubeSequence implements Sequence {
   protected Z next24() {
     ++mN;
     Z sum = Z.ZERO;
-    int i, j;
     final int m = mN;
-    for (i = m * mMulti; i >= 0; --i) {
-      for (j = m * mMultj; j >= 0; --j) {
+    for (int i = m * mMulti; i >= 0; --i) {
+      for (int j = m * mMultj; j >= 0; --j) {
         sum = sum.add(aux24(i, j, m * mFactor));
       } // for j
     } // for i
@@ -223,10 +222,9 @@ public class WalkCubeSequence implements Sequence {
   protected Z next25() {
     ++mN;
     Z sum = Z.ZERO;
-    int i, j;
     final int m = mN;
-    for (i = m * mMulti; i >= 0; --i) {
-      for (j = m * mMultj; j >= 0; --j) {
+    for (int i = m * mMulti; i >= 0; --i) {
+      for (int j = m * mMultj; j >= 0; --j) {
         sum = sum.add(aux25(i, j, m * mFactor));
       } // for j
     } // for i

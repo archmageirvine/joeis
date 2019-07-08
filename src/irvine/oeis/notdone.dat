@@ -53,7 +53,6 @@ A001035 Posets [current impl. is a cheat]
 A001062 Sequence is incorrect but not dead
 A001066 Dimensions Lie algebra (depends A003038)
 A001070 Latin squares
-A001071 Polynominoes
 A001086 Elliptic curve continued fraction, have paper
 A001087 Boolean functions, insufficient detail
 A001111 Number of inequivalent Hadamard designs of order 4n

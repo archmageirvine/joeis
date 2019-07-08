@@ -196,7 +196,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the count of some value in the period.
    * The caller must already have filled the period,
-   * and it must hava a length &gt;= 1 (no perfect square).
+   * and it must have a length &gt;= 1 (no perfect square).
    * @param value the desired value to be counted
    * @return the number of elements with the specified value
    */
@@ -215,7 +215,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the least element in the period.
    * The caller must already have filled the period,
-   * and it must hava a length &gt;= 1 (no perfect square).
+   * and it must have a length &gt;= 1 (no perfect square).
    * @return the least element
    */
   public int getLeastInPeriod() {
@@ -234,7 +234,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
   /**
    * Get the length of the period.
    * The caller must already have filled the period,
-   * and it must hava a length &gt;= 1 (no perfect square).
+   * and it must have a length &gt;= 1 (no perfect square).
    * @return length of the period, including the trailing 2*root
    */
   public int getPeriodLength() {

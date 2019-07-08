@@ -2,6 +2,8 @@ package irvine.oeis;
 
 import java.util.HashMap;
 
+import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunction4;
 import irvine.math.z.Z;
 
 /**
@@ -52,6 +54,7 @@ public class WalkCubeSequence implements Sequence {
   protected String mEndCode; // empty, or "e0" = anding at (0,0[,0]), "ey" = ending at the vertical axis
   protected int mMulti; // factor for start of i loop (only for 2D)
   protected int mMultj; // factor for start of j loop (only for 2D)
+  private final Sequence mGen;
 
   /**
    * Construct an instance which computes the walks
@@ -94,471 +97,392 @@ public class WalkCubeSequence implements Sequence {
     mN = offset - 1;
     mK = Z.valueOf(mN);
     mCache = new HashMap<>(16384);
+    if (dim == 2) {
+      switch (noSteps) {
+        case 3:
+          mGen = new W2Sequence(new W23());
+          break;
+        case 4:
+          mGen = new W2Sequence(new W24());
+          break;
+        case 5:
+          mGen = new W2Sequence(new W25());
+          break;
+        case 6:
+          mGen = new W2Sequence(new W26());
+          break;
+        case 7:
+          mGen = new W2Sequence(new W26());
+          break;
+        case 8:
+          mGen = new W2Sequence(new W26());
+          break;
+        default:
+          throw new RuntimeException();
+      }
+    } else {
+      assert dim == 3;
+      switch (noSteps) {
+        case 3:
+          mGen = new W3Sequence(new W33());
+          break;
+        case 4:
+          mGen = new W3Sequence(new W34());
+          break;
+        case 5:
+          mGen = new W3Sequence(new W35());
+          break;
+        default:
+          throw new RuntimeException();
+      }
+    }
   }
 
-  /**
-   * Construct an instance which computes the walks
-   * for the default sequence: A147999.
-   * @param offset first valid term has this index
-   */
-  protected WalkCubeSequence(final int offset) {
-    mOffset = offset;
-    mDim = 3;
-    mNoSteps = 4;
-    mEndCode = "";
-    mFactor = 1;
-    mMulti = mFactor;
-    mMultj = mFactor;
-    // A147999 Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0)
-    // and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)}
-    mMatrix = new int[][]
-      {{-1, -1, -1}
-        , {-1, -1, 1}
-        , {-1, 1, 0}
-        , {1, 0, 0}
-      };
-    mN = offset - 1;
-    mK = Z.valueOf(mN);
-    mCache = new HashMap<>(16384);
+//  /**
+//   * Construct an instance which computes the walks
+//   * for the default sequence: A147999.
+//   * @param offset first valid term has this index
+//   */
+//  protected WalkCubeSequence(final int offset) {
+//    mOffset = offset;
+//    mDim = 3;
+//    mNoSteps = 4;
+//    mEndCode = "";
+//    mFactor = 1;
+//    mMulti = mFactor;
+//    mMultj = mFactor;
+//    // A147999 Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0)
+//    // and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)}
+//    mMatrix = new int[][]
+//      {{-1, -1, -1}
+//        , {-1, -1, 1}
+//        , {-1, 1, 0}
+//        , {1, 0, 0}
+//      };
+//    mN = offset - 1;
+//    mK = Z.valueOf(mN);
+//    mCache = new HashMap<>(16384);
+//  }
+
+  private final class W2Sequence implements Sequence {
+
+    private final MemoryFunction3<Integer, Z> mF;
+
+    private W2Sequence(final MemoryFunction3<Integer, Z> f) {
+      mF = f;
+    }
+
+    @Override
+    public Z next() {
+      ++mN;
+      Z sum = Z.ZERO;
+      final int m = mN;
+      for (int i = m * mMulti; i >= 0; --i) {
+        for (int j = m * mMultj; j >= 0; --j) {
+          sum = sum.add(mF.get(i, j, m * mFactor));
+        } // for j
+      } // for i
+      return sum;
+    }
   }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next23() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux23(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next23
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux23(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W23 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux23(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux23(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux23(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
         ;
       }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux23
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next24() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux24(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next24
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux24(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
-      if (i > m || j > m
-        || i < 0 || j < 0
-        ) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = aux24(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux24(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux24(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(aux24(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-        ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux24
-
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next25() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux25(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next25
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux25(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W24 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux25(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux25(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux25(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(aux25(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(aux25(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
         ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux25
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next26() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux26(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next26
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux26(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W25 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux26(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux26(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux26(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(aux26(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(aux26(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(aux26(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
         ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux26
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next27() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux27(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next27
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux27(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W26 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
+      final String key = i + "," + j + "," + m;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux27(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux27(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux27(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(aux27(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(aux27(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(aux27(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
-          .add(aux27(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
         ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux27
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next28() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m * mMulti; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        sum = sum.add(aux28(i, j, m * mFactor));
-      } // for j
-    } // for i
-    return sum;
-  } // next28
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^2 square.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param m current edge length of the square
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux28(final int i, final int j, final int m) {
-    final String key = i + "," + j + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W27 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 4).equals("0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux28(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(aux28(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(aux28(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(aux28(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(aux28(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(aux28(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
-          .add(aux28(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
-          .add(aux28(i - mMatrix[7][0], j - mMatrix[7][1], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+          .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
         ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux28
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next33() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m; i >= 0; --i) {
-      for (int j = m; j >= 0; --j) {
-        for (int k = m; k >= 0; --k) {
-          sum = sum.add(aux33(i, j, k, m));
-        } // for k
-      } // for j
-    } // for i
-    return sum;
-  } // next33
+  private final class W28 extends MemoryFunction3<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer m) {
+      final Z result;
+      if (i > m || j > m || i < 0 || j < 0) {
+        result = Z.ZERO;
+      } else if (m == 0) {
+        // the Kronecker delta
+        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
+      } else {
+        final int mn1 = m - 1;
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+          .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
+          .add(get(i - mMatrix[7][0], j - mMatrix[7][1], mn1))
+        ;
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^3 cube.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param k z coordinate of the point
-   * @param m current edge length of the cube
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux33(final int i, final int j, final int k, final int m) {
-    final String key = i + "," + j + "," + k + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W3Sequence implements Sequence {
+
+    private final MemoryFunction4<Integer, Z> mF;
+
+    private W3Sequence(final MemoryFunction4<Integer, Z> f) {
+      mF = f;
+    }
+
+    @Override
+    public Z next() {
+      ++mN;
+      Z sum = Z.ZERO;
+      final int m = mN;
+      for (int i = m; i >= 0; --i) {
+        for (int j = m; j >= 0; --j) {
+          for (int k = m; k >= 0; --k) {
+            sum = sum.add(mF.get(i, j, k, m));
+          } // for k
+        } // for j
+      } // for i
+      return sum;
+    }
+  }
+
+  private final class W33 extends MemoryFunction4<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^3 cube.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param k z coordinate of the point
+     * @param m current edge length of the cube
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
+      final Z result;
       if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 6).equals("0,0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux33(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(aux33(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(aux33(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
         ;
-      }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux33
+      } // result == null
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next34() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m; i >= 0; --i) {
-      for (int j = m; j >= 0; --j) {
-        for (int k = m; k >= 0; --k) {
-          sum = sum.add(aux34(i, j, k, m));
-        } // for k
-      } // for j
-    } // for i
-    return sum;
-  } // next4
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^3 cube.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param k z coordinate of the point
-   * @param m current edge length of the cube
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux34(final int i, final int j, final int k, final int m) {
-    final String key = i + "," + j + "," + k + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
+  private final class W34 extends MemoryFunction4<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^3 cube.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param k z coordinate of the point
+     * @param m current edge length of the cube
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
+      final Z result;
       if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = key.substring(0, 6).equals("0,0,0,") ? Z.ONE : Z.ZERO;
+        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux34(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(aux34(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(aux34(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
-          .add(aux34(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
         ;
       }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux34
+      return result;
+    }
+  }
 
-  /**
-   * Get the next term of the sequence.
-   * @return the next term
-   */
-  protected Z next35() {
-    ++mN;
-    Z sum = Z.ZERO;
-    final int m = mN;
-    for (int i = m; i >= 0; --i) {
-      for (int j = m * mMultj; j >= 0; --j) {
-        for (int k = m; k >= 0; --k) {
-          sum = sum.add(aux35(i, j, k, m));
-        } // for k
-      } // for j
-    } // for i
-    return sum;
-  } // next5
-
-  /**
-   * Determine the number of possible next steps
-   * for some point in the m^3 cube.
-   * @param i x coordinate of the point
-   * @param j y coordinate of the point
-   * @param k z coordinate of the point
-   * @param m current edge length of the cube
-   * @return number of possible steps starting at this point
-   */
-  protected Z aux35(final int i, final int j, final int k, final int m) {
-    final String key = i + "," + j + "," + k + "," + m;
-    Z result = mCache.get(key);
-    if (result == null) {
-      if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0
-        ) {
+  private final class W35 extends MemoryFunction4<Integer, Z> {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^3 cube.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param k z coordinate of the point
+     * @param m current edge length of the cube
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
+      final Z result;
+      if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
-        if (key.substring(0, 6).equals("0,0,0,")) {
-          result = Z.ONE; // the Kronecker delta
-        } else {
-          result = Z.ZERO;
-        }
+        // the Kronecker delta
+        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
       } else {
         final int mn1 = m - 1;
-        result = aux35(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(aux35(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(aux35(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
-          .add(aux35(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
-          .add(aux35(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
+        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
+          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
+          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
         ;
       }
-      mCache.put(key, result);
-    } // result == null
-    return result;
-  } // aux35
+      return result;
+    } // aux35
+  }
 
   /**
    * Get the next term of the sequence.
@@ -567,7 +491,7 @@ public class WalkCubeSequence implements Sequence {
    */
   @Override
   public Z next() {
-    return next34();
+    return mGen.next();
   } // next
 
   //=====================================

@@ -1,7 +1,7 @@
 package jmason.poly;
 
 /**
- * A generic coordinate set, either xy or xyz.
+ * A generic coordinate set, either <code>xy</code> or <code>xyz</code>.
  * @author jmason
  * @param <T> type of set
  */

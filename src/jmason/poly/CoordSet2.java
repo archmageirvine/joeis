@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A set of xy coordinates
+ * A set of <code>xy</code> coordinates
  * @author jmason
  */
 public class CoordSet2 extends CoordSetGen<Square> {

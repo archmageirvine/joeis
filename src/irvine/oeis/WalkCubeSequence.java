@@ -76,8 +76,7 @@ public class WalkCubeSequence implements Sequence {
     if (endCode.equals("e0")) { // ending at (0,0)
       mMulti = 0;
       mMultj = 0;
-    }
-    if (endCode.equals("ey")) { // ending on vertical axis
+    } else if (endCode.equals("ey")) { // ending on vertical axis
       mMulti = 0;
     }
     mMatrix = new int[mNoSteps][dim];

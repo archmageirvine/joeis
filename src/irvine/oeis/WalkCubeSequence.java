@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import java.util.HashMap;
-
 import irvine.math.MemoryFunction3;
 import irvine.math.MemoryFunction4;
 import irvine.math.z.Z;
@@ -46,7 +44,6 @@ public class WalkCubeSequence implements Sequence {
   protected Z mK; // current number with some property
   protected int mN; // index of current term to be returned
   protected int mOffset; // OEIS offset1 as of generation time
-  protected HashMap<String, Z> mCache; // simulate Maple's "option remember"
   protected int[][] mMatrix; // 3 coordinate increments (columns) per step (row)
   protected int mDim; // dimension: 2 for square, 3 for cube
   protected int mNoSteps; // number of steps possible at one point
@@ -96,7 +93,6 @@ public class WalkCubeSequence implements Sequence {
     } // for irow
     mN = offset - 1;
     mK = Z.valueOf(mN);
-    mCache = new HashMap<>(16384);
     if (dim == 2) {
       switch (noSteps) {
         case 3:
@@ -238,7 +234,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
           .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -268,7 +264,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
           .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -285,7 +281,6 @@ public class WalkCubeSequence implements Sequence {
     @Override
     protected Z compute(final Integer i, final Integer j, final Integer m) {
       final Z result;
-      final String key = i + "," + j + "," + m;
       if (i > m || j > m || i < 0 || j < 0) {
         result = Z.ZERO;
       } else if (m == 0) {
@@ -300,7 +295,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
           .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -332,7 +327,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
           .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -365,7 +360,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
           .add(get(i - mMatrix[7][0], j - mMatrix[7][1], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -418,7 +413,7 @@ public class WalkCubeSequence implements Sequence {
           .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
           .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
         ;
-      } // result == null
+      }
       return result;
     }
   }
@@ -481,7 +476,7 @@ public class WalkCubeSequence implements Sequence {
         ;
       }
       return result;
-    } // aux35
+    }
   }
 
   /**
@@ -547,4 +542,4 @@ end proc:
 seq(f(0, 0, 0, n), n=0..50); # Robert Israel, Nov 07 2017
 */
 
-} // WalkCubeSequence
+}

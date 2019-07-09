@@ -12,6 +12,7 @@ public class Quadruple<T> {
   private final T mB;
   private final T mC;
   private final T mD;
+  private final int mHashCode;
 
   /**
    * Construct a new quadruple.
@@ -25,6 +26,7 @@ public class Quadruple<T> {
     mB = b;
     mC = c;
     mD = d;
+    mHashCode = mA.hashCode() ^ (mB.hashCode() * 65537) ^ (mC.hashCode() * 7) ^ (mD.hashCode() * 31);
   }
 
   /**
@@ -78,7 +80,7 @@ public class Quadruple<T> {
 
   @Override
   public int hashCode() {
-    return mA.hashCode() ^ mB.hashCode() ^ mC.hashCode() ^ mD.hashCode();
+    return mHashCode;
   }
 
 }

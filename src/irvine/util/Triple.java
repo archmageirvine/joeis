@@ -2,7 +2,6 @@ package irvine.util;
 
 /**
  * A triple of a particular type.
- *
  * @author Sean A. Irvine
  * @param <T> type
  */
@@ -26,7 +25,6 @@ public class Triple<T> {
 
   /**
    * Left of triple.
-   *
    * @return left of triple
    */
   public T left() {
@@ -35,7 +33,6 @@ public class Triple<T> {
 
   /**
    * Middle of triple.
-   *
    * @return middle of triple
    */
   public T mid() {
@@ -44,7 +41,6 @@ public class Triple<T> {
 
   /**
    * Right of triple.
-   *
    * @return right of triple
    */
   public T right() {
@@ -70,7 +66,7 @@ public class Triple<T> {
 
   @Override
   public int hashCode() {
-    return mLeft.hashCode() ^ mRight.hashCode() ^ mMid.hashCode();
+    return mLeft.hashCode() ^ (mRight.hashCode() * 65537) ^ (mMid.hashCode() * 31);
   }
 
 }

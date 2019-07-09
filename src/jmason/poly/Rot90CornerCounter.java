@@ -9,9 +9,9 @@ public class Rot90CornerCounter extends Counter {
   UTest mH;
 
 //  // max is multiple of 4
-//  public Rot90CornerCounter(final int max, final int fase, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
+//  public Rot90CornerCounter(final int max, final int fase, final boolean mFlagFree, final boolean flagFixed, final boolean mFlagOneSided) {
 //    super("R90", max, null);
-//    CoordSet2 cs = new CoordSet2(4, flagFree, flagFixed, flagOneSided);
+//    CoordSet2 cs = new CoordSet2(4, mFlagFree, flagFixed, mFlagOneSided);
 //    int t = (max - 4) / 4;
 //    t = t * t;
 //    if (t < max) {

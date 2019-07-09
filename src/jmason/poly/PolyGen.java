@@ -1,8 +1,8 @@
 package jmason.poly;
 
 /**
- * A PolyGen may become a Polyomino or a PolyCube.
- * It is based in a CoordSetGen which may be a set of <code>xy</code> coordinates or <code>xyz</code> coordinates
+ * A PolyGen may become a <code>Polyomino</code> or a <code>PolyCube</code>.
+ * It is based in a <code>CoordSetGen</code> which may be a set of <code>xy</code> coordinates or <code>xyz</code> coordinates
  * @author jmason
  * @param <T> type of coordinates
  * @param <U> element type

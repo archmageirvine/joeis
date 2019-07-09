@@ -3,7 +3,7 @@ package jmason.poly;
 import java.util.HashSet;
 
 /**
- * A UTest object allows you to test strings, coordinate pairs or coordinate triples, for uniqueness.
+ * An object allowing testing of strings, coordinate pairs or coordinate triples, for uniqueness.
  * @author jmason
  */
 public class UTest {
@@ -15,12 +15,10 @@ public class UTest {
   }
 
   public boolean put(final int x, final int y) {
-
     return put(prepare(x, y));
   }
 
   public boolean put(final int x, final int y, final int z) {
-
     return put(prepare(x, y, z));
   }
 

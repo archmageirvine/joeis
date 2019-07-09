@@ -94,7 +94,7 @@ public class PolyominoCounter {
     if (axes == 2) {
       mTwoAxis.add(c);
     }
-    if (((CoordSet2) (p.mCs)).twoTouch()) {
+    if (((CoordSet2) p.mCs).twoTouch()) {
       mTwoTouch.add(c);
     }
 
@@ -104,7 +104,7 @@ public class PolyominoCounter {
       mUnbcu.add(c);
     }
     if (mWantSym) {
-      if (!((CoordSet2) (p.mCs)).symReflect()) {
+      if (!((CoordSet2) p.mCs).symReflect()) {
         mAssymcu.add(c);
       }
     }
@@ -113,7 +113,7 @@ public class PolyominoCounter {
     }
 
     if (c < max) {
-      if (mOnlyUnbiased && p.mCs.bias() > (max - c)) {
+      if (mOnlyUnbiased && p.mCs.bias() > max - c) {
         return;
       }
       if (mOnlyMaxBiased) {

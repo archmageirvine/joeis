@@ -69,7 +69,7 @@ public class ContinuedFractionOfSqrtSequence implements Sequence {
 
   /**
    * Get the offset.
-   * @return OEIS offset1 as of generation time
+   * @return OEIS offset as of generation time
    */
   public int getOffset() {
     return mOffset;

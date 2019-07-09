@@ -8,7 +8,7 @@ import irvine.oeis.a234.A234007;
 import irvine.oeis.a234.A234008;
 
 /**
- * A001071.
+ * A001071 Number of one-sided chessboard polyominoes with n cells.
  * a(n) = 2*A000988(n) - M(n) -2*(R90(n) + R180(n))
  * @author jmason
  */

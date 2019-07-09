@@ -7,9 +7,9 @@ import irvine.math.z.Z;
 /**
  * Number of walks within N^3 / N^2 (the first octant / quadrant of Z^3 / Z^2)
  * starting at (0,0,0) / (0,0), maybe with a condition for the ending.
- * There is one specialized next<em>dst</em> method per variant which
- * calls the corresponding, recursive counting method aux<em>dst</em>.
- * The suffixes <em>dst</em> are encoded as follows:
+ * There is one specialized <code>next<em>dst</em></code> method per variant which
+ * calls the corresponding, recursive counting method <code>aux<em>dst</em></code>.
+ * The suffixes <code>dst</code> are encoded as follows:
  * <ul>
  * <li>d = dimension, 2 or 3</li>
  * <li>s = number of steps, 3 to 9</li>
@@ -60,7 +60,7 @@ public class WalkCubeSequence implements Sequence {
    * @param dim dimension, 2 or 3
    * @param noSteps number of steps to be selected
    * @param endCode empty, or "e0" = anding at (0,0[,0]), "ey" = ending at the vertical axis
-   * @param factor 1 for n steps, 2 for 2n steps, 4 for 4n steps
+   * @param factor 1 for n steps, 2 for <code>2n</code> steps, 4 for <code>4n</code> steps
    * @param stepCode step matrix encoded as <code>dim</code> digits per step (row),
    * 0, 1 and 2 &gt;= -1, for example 222221210100, dim = 2 &gt;=
    * (-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)
@@ -492,7 +492,7 @@ public class WalkCubeSequence implements Sequence {
 //
 //  /**
 //   * Test method - shows the b-file.
-//   * @param args command line arguments: [noterms [dim stepCode]]
+//   * @param args command line arguments: [no-terms [dim step-code]]
 //   */
 //  public static void main(String[] args) {
 //    WalkCubeSequence seq;

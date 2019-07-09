@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A set of xy coordinates
+ * A set of <code>xy</code> coordinates
  * @author jmason
  */
 public class CoordSet2 extends CoordSetGen<Square> {
@@ -232,7 +232,6 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return ((SquareSet) mSet).exists(x, y);
   }
 
-  @Override
   protected boolean near(final int j, final int i) {
     final int xi = mSet.getX(i);
     final int xj = mSet.getX(j);
@@ -476,6 +475,37 @@ public class CoordSet2 extends CoordSetGen<Square> {
       cs.mSet.setElement(i, new Square(pair[0], pair[1], pair[2]));
     }
     return cs;
+  }
+
+  boolean connected() {
+    int count = 1;
+    final boolean[] conn = new boolean[mSize];
+    conn[0] = true;
+
+    while (true) {
+      final int oldcount = count;
+      for (int i = 0; i < mSize; ++i) {
+        for (int j = i + 1; j < mSize; ++j) {
+          if (near(j, i)) {
+            if (conn[i] && !conn[j]) {
+              conn[j] = true;
+              ++count;
+            }
+            if (conn[j] && !conn[i]) {
+              conn[i] = true;
+              ++count;
+            }
+            if (count == mSize) {
+              return true;
+            }
+          }
+        }
+      }
+      if (oldcount == count || count == mSize) {
+        break;
+      }
+    }
+    return count == mSize;
   }
 
   /**

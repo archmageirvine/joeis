@@ -1,7 +1,7 @@
 package jmason.poly;
 
 /**
- * A generic coordinate set, either xy or xyz.
+ * A generic coordinate set, either <code>xy</code> or <code>xyz</code>.
  * @author jmason
  * @param <T> type of set
  */
@@ -62,8 +62,8 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
 //  }
 
   int min(final int z) {
-    int min = 99;
-    for (int i = 0; i < mSize; i++) {
+    int min = Integer.MAX_VALUE;
+    for (int i = 0; i < mSize; ++i) {
       if (mSet.getElement(i).getCoord(z) < min) {
         min = mSet.getElement(i).getCoord(z);
       }
@@ -72,8 +72,8 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   }
 
   int max(final int z) {
-    int max = -99;
-    for (int i = 0; i < mSize; i++) {
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < mSize; ++i) {
       if (mSet.getElement(i).getCoord(z) > max) {
         max = mSet.getElement(i).getCoord(z);
       }
@@ -82,9 +82,9 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   }
 
   int breadth(final int z) {
-    int max = -99;
-    int min = 99;
-    for (int i = 0; i < mSize; i++) {
+    int min = Integer.MAX_VALUE;
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < mSize; ++i) {
       if (mSet.getElement(i).getCoord(z) > max) {
         max = mSet.getElement(i).getCoord(z);
       }
@@ -94,39 +94,6 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
     }
     return max - min + 1;
   }
-
-  boolean connected() {
-    int count = 1;
-    final boolean[] conn = new boolean[mSize];
-    conn[0] = true;
-
-    while (true) {
-      final int oldcount = count;
-      for (int i = 0; i < mSize; i++) {
-        for (int j = i + 1; j < mSize; j++) {
-          if (near(j, i)) {
-            if (conn[i] && !conn[j]) {
-              conn[j] = true;
-              ++count;
-            }
-            if (conn[j] && !conn[i]) {
-              conn[i] = true;
-              ++count;
-            }
-            if (count == mSize) {
-              return true;
-            }
-          }
-        }
-      }
-      if (oldcount == count || count == mSize) {
-        break;
-      }
-    }
-    return count == mSize;
-  }
-
-  protected abstract boolean near(final int i, final int j);
 
   protected abstract void verify();
 
@@ -149,12 +116,7 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   }
 
   int bias() {
-    final int b = mSet.getWhite() - mSet.getBlack();
-    if (b >= 0) {
-      return b;
-    } else {
-      return -b;
-    }
+    return Math.abs(mSet.getWhite() - mSet.getBlack());
   }
 
   protected abstract String makeUnique();

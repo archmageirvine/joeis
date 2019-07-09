@@ -18,7 +18,6 @@ A000510 related A000509
 A000519 Number of equivalence classes of nonzero regular 0-1 matrices of order n
 A000528 1-factorizations of K_n,n (hard)
 A000576 Latin squares - perhaps sim A000315
-A000577 polynominoes (equilateral triangles)
 A000591 Automata counting, hard group theory cycle index, have paper
 A000608 depends A000112
 A000609 Boolean functions, threshold, hard
@@ -53,7 +52,6 @@ A001035 Posets [current impl. is a cheat]
 A001062 Sequence is incorrect but not dead
 A001066 Dimensions Lie algebra (depends A003038)
 A001070 Latin squares
-A001071 Polynominoes
 A001086 Elliptic curve continued fraction, have paper
 A001087 Boolean functions, insufficient detail
 A001111 Number of inequivalent Hadamard designs of order 4n
@@ -596,7 +594,6 @@ A006469 Number of rooted genus-1 maps with 2 faces, n vertices and no isthmuses
 A006474 Related to Ramsey numbers, insufficient detail
 A006475 Number of 2-tournaments on n nodes, insufficient detail
 A006476 From relations between Siegel theta series, have paper
-A006534 Number of one-sided triangular polyominoes (n-iamonds) with n cells (turning over not allowed) (holes are allowed).
 A006536 Switching classes of digraphs, insufficient detail
 A006545 Number of stable unicyclic graphs with n nodes
 A006554 Minimal discriminant of totally real number field of degree n, hard?

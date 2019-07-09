@@ -1,6 +1,6 @@
 package irvine.oeis.a034;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -9,12 +9,12 @@ import irvine.oeis.Sequence;
  * A034781 Triangle of number of rooted trees with <code>n &gt;= 2</code> nodes and height h <code>&gt;= 1</code>.
  * @author Sean A. Irvine
  */
-public class A034781 extends MemoryFunction3<Integer, Z> implements Sequence {
+public class A034781 extends MemoryFunctionInt3<Z> implements Sequence {
 
   // After Alois P. Heinz
 
   @Override
-  protected Z compute(final Integer n, final Integer i, final Integer k) {
+  protected Z compute(final int n, final int i, final int k) {
     if (n == 0) {
       return Z.ONE;
     }

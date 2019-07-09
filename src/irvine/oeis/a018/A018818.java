@@ -1,6 +1,6 @@
 package irvine.oeis.a018;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -8,12 +8,12 @@ import irvine.oeis.Sequence;
  * A018818 Number of partitions of n into divisors of <code>n</code>.
  * @author Sean A. Irvine
  */
-public class A018818 extends MemoryFunction3<Integer, Z> implements Sequence {
+public class A018818 extends MemoryFunctionInt3<Z> implements Sequence {
 
   private int mN = 0;
 
   @Override
-  protected Z compute(final Integer n, final Integer m, final Integer k) {
+  protected Z compute(final int n, final int m, final int k) {
     if (k > m) {
       return m == 0 ? Z.ONE : Z.ZERO;
     }

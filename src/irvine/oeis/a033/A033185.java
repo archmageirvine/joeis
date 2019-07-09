@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000081;
  * A033185 Rooted tree triangle read by rows: <code>a(n,k) =</code> number of forests with n nodes and k rooted trees.
  * @author Sean A. Irvine
  */
-public class A033185 extends MemoryFunction3<Integer, Z> implements Sequence {
+public class A033185 extends MemoryFunctionInt3<Z> implements Sequence {
 
   // After Alois P. Heinz
 
@@ -32,7 +32,7 @@ public class A033185 extends MemoryFunction3<Integer, Z> implements Sequence {
 
   // b function
   @Override
-  protected Z compute(final Integer n, final Integer i, final Integer p) {
+  protected Z compute(final int n, final int i, final int p) {
     if (p > n) {
       return Z.ZERO;
     }

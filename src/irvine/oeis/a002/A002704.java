@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 import irvine.math.IntegerUtils;
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -10,12 +10,12 @@ import irvine.oeis.Sequence;
  * A002704 Sets with a congruence property.
  * @author Sean A. Irvine
  */
-public class A002704 extends MemoryFunction3<Integer, Z> implements Sequence {
+public class A002704 extends MemoryFunctionInt3<Z> implements Sequence {
 
   // After R. J. Mathar
 
   @Override
-  protected Z compute(final Integer r, final Integer s, final Integer k) {
+  protected Z compute(final int r, final int s, final int k) {
     if (r <= 0) {
       return r < 0 ? Z.ZERO : Z.ONE;
     }

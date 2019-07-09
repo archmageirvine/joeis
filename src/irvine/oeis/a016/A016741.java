@@ -1,6 +1,6 @@
 package irvine.oeis.a016;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,10 +13,10 @@ public class A016741 implements Sequence {
   // todo not yet working
 
   // Player A to move
-  private final MemoryFunction3<Integer, Boolean> mPlayerACache = new MemoryFunction3<Integer, Boolean>() {
+  private final MemoryFunctionInt3<Boolean> mPlayerACache = new MemoryFunctionInt3<Boolean>() {
     // True if B has a winning strategy starting from this position
     @Override
-    protected Boolean compute(final Integer n, final Integer prevA, final Integer prevB) {
+    protected Boolean compute(final int n, final int prevA, final int prevB) {
       if (n <= 1) {
         return Boolean.FALSE; // A can simply pick up remaining stone
       }
@@ -36,10 +36,10 @@ public class A016741 implements Sequence {
   };
 
   // Player B to move
-  private final MemoryFunction3<Integer, Boolean> mPlayerBCache = new MemoryFunction3<Integer, Boolean>() {
+  private final MemoryFunctionInt3<Boolean> mPlayerBCache = new MemoryFunctionInt3<Boolean>() {
     // True if B has a winning strategy starting from this position
     @Override
-    protected Boolean compute(final Integer n, final Integer prevA, final Integer prevB) {
+    protected Boolean compute(final int n, final int prevA, final int prevB) {
       if (n <= 1) {
         return Boolean.TRUE; // B can simply pick up remaining stone
       }

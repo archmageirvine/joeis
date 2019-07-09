@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import java.util.ArrayList;
 import java.util.List;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -13,7 +13,7 @@ import irvine.oeis.a000.A000055;
  * A095133 Triangle of numbers of forests on n nodes containing k trees.
  * @author Sean A. Irvine
  */
-public class A095133 extends MemoryFunction3<Integer, Z> implements Sequence {
+public class A095133 extends MemoryFunctionInt3<Z> implements Sequence {
 
   private final Sequence mA55 = new A000055();
   private final List<Z> mT = new ArrayList<>();
@@ -27,7 +27,7 @@ public class A095133 extends MemoryFunction3<Integer, Z> implements Sequence {
 
   // g function
   @Override
-  protected Z compute(final Integer n, final Integer i, final Integer p) {
+  protected Z compute(final int n, final int i, final int p) {
     if (p > n) {
       return Z.ZERO;
     }

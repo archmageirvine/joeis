@@ -1,6 +1,6 @@
 package irvine.oeis.a004;
 
-import irvine.math.MemoryFunction4;
+import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
  * A004251 Number of graphical partitions <code>(degree-vectors</code> for simple graphs with n vertices, or possible ordered row-sum vectors for a symmetric 0-1 matrix with diagonal values <code>0)</code>.
  * @author Sean A. Irvine
  */
-public class A004251 extends MemoryFunction4<Integer, Z> implements Sequence {
+public class A004251 extends MemoryFunctionInt4<Z> implements Sequence {
 
   // Based on the Kai Wang paper
 
@@ -16,7 +16,7 @@ public class A004251 extends MemoryFunction4<Integer, Z> implements Sequence {
   private Z mA = Z.ONE;
 
   @Override
-  protected Z compute(final Integer n, final Integer k, final Integer l, final Integer s) {
+  protected Z compute(final int n, final int k, final int l, final int s) {
     if (n < 0 || k < 0 || l < 0 || s < 0) {
       return Z.ZERO;
     } else if (n == 0) {

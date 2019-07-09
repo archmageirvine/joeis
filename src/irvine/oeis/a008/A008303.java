@@ -1,6 +1,6 @@
 package irvine.oeis.a008;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  * A008303 Triangle read by rows: <code>T(n,k) (n&gt;=1; 0&lt;=k&lt;=ceiling(n/2)-1)</code> is the number of permutations of <code>[n]</code> with k peaks.
  * @author Sean A. Irvine
  */
-public class A008303 extends MemoryFunction3<Integer, Polynomial<Z>> implements Sequence {
+public class A008303 extends MemoryFunctionInt3<Polynomial<Z>> implements Sequence {
 
   // After Alois P. Heinz
 
@@ -21,7 +21,7 @@ public class A008303 extends MemoryFunction3<Integer, Polynomial<Z>> implements 
   private int mM = 0;
 
   @Override
-  protected Polynomial<Z> compute(final Integer u, final Integer o, final Integer t) {
+  protected Polynomial<Z> compute(final int u, final int o, final int t) {
     if (u + o == 0) {
       return RING.one();
     }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  * A137251 Triangle <code>T(n,k)</code> read by rows: number of k X k triangular matrices with nonnegative integer entries and without zero rows or columns such that sum of all entries is equal to n, <code>n&gt;=1, 1&lt;=k&lt;=n</code>.
  * @author Sean A. Irvine
  */
-public class A137251 extends MemoryFunction3<Integer, Z[]> implements Sequence {
+public class A137251 extends MemoryFunctionInt3<Z[]> implements Sequence {
 
   // After Alois P. Heinz
 
@@ -21,7 +21,7 @@ public class A137251 extends MemoryFunction3<Integer, Z[]> implements Sequence {
   private int mM = 0;
 
   @Override
-  protected Z[] compute(final Integer n, final Integer i, final Integer t) {
+  protected Z[] compute(final int n, final int i, final int t) {
     if (n < 1) {
       final Z[] res = new Z[t + 1];
       Arrays.fill(res, Z.ZERO);

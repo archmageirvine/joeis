@@ -1,6 +1,6 @@
 package irvine.oeis.a014;
 
-import irvine.math.MemoryFunction3;
+import irvine.math.MemoryFunctionInt3;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -15,12 +15,12 @@ public class A014088 extends A050255 {
   // After Jean-Francois Alcover
   // todo this seems stupidly slow ... even with A050255 giving a starting point
 
-  private static final class QFunction extends MemoryFunction3<Integer, Q> {
+  private static final class QFunction extends MemoryFunctionInt3<Q> {
 
     private final MemoryFactorial mF = new MemoryFactorial();
 
     @Override
-    protected Q compute(final Integer k, final Integer n, final Integer d) {
+    protected Q compute(final int k, final int n, final int d) {
       if (k == 1) {
         return new Q(mF.factorial(d), mF.factorial(d - n).multiply(Z.valueOf(d).pow(n)));
       }

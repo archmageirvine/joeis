@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.MemoryFunction4;
+import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
 import irvine.oeis.Phi2TransformSequence;
 import irvine.oeis.Sequence;
@@ -14,7 +14,7 @@ public class A006210 extends Phi2TransformSequence {
   /**
    * A sequence forming the basis for some generalized Fibonacci numbers.
    */
-  public static class PsinSequence extends MemoryFunction4<Integer, Z> implements Sequence {
+  public static class PsinSequence extends MemoryFunctionInt4<Z> implements Sequence {
 
     private int mN;
     private int mM = 0;
@@ -28,11 +28,11 @@ public class A006210 extends Phi2TransformSequence {
     }
 
     @Override
-    protected Z compute(final Integer k, final Integer i, final Integer j, final Integer n) {
+    protected Z compute(final int k, final int i, final int j, final int n) {
       assert Math.abs(j) <= n;
       if (k == 1) {
         if (i == 1) {
-          return j.equals(n) ? Z.ONE : Z.ZERO;
+          return j == n ? Z.ONE : Z.ZERO;
         } else if (i == 2) {
           return j == 1 ? Z.ONE : Z.ZERO;
         }

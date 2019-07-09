@@ -58,7 +58,6 @@ public class Counter {
   }
 
   protected void add(final Countable c) {
-    assert c.mP.mCs.connected();
     final int n = c.mP.mCs.mSize;
     mAll.add(c);
     mCuall.add(n);

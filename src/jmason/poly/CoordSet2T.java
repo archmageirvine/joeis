@@ -276,11 +276,6 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   }
 
   @Override
-  protected boolean near(final int i, final int j) {
-    return false;
-  }
-
-  @Override
   protected String makeUnique() {
     return new UniqueMaker2T(this).uniqString();
   }

@@ -95,39 +95,6 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
     return max - min + 1;
   }
 
-  boolean connected() {
-    int count = 1;
-    final boolean[] conn = new boolean[mSize];
-    conn[0] = true;
-
-    while (true) {
-      final int oldcount = count;
-      for (int i = 0; i < mSize; ++i) {
-        for (int j = i + 1; j < mSize; ++j) {
-          if (near(j, i)) {
-            if (conn[i] && !conn[j]) {
-              conn[j] = true;
-              ++count;
-            }
-            if (conn[j] && !conn[i]) {
-              conn[i] = true;
-              ++count;
-            }
-            if (count == mSize) {
-              return true;
-            }
-          }
-        }
-      }
-      if (oldcount == count || count == mSize) {
-        break;
-      }
-    }
-    return count == mSize;
-  }
-
-  protected abstract boolean near(final int i, final int j);
-
   protected abstract void verify();
 
   protected abstract String makeDiagram();

@@ -61,7 +61,7 @@ public class WalkCubeSequence implements Sequence {
    * @param noSteps number of steps to be selected
    * @param endCode empty, or "e0" = anding at (0,0[,0]), "ey" = ending at the vertical axis
    * @param factor 1 for n steps, 2 for 2n steps, 4 for 4n steps
-   * @param stepCode step matrix encoded as <em>dim</em> digits per step (row),
+   * @param stepCode step matrix encoded as <code>dim</code> digits per step (row),
    * 0, 1 and 2 &gt;= -1, for example 222221210100, dim = 2 &gt;=
    * (-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)
    */

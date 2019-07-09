@@ -196,7 +196,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   public String toString() {
     final StringBuilder ret = new StringBuilder();
     for (int i = 0; i < mSize; ++i) {
-      ret.append(getX(i)).append(",").append(getY(i)).append(" ");
+      ret.append(getX(i)).append(',').append(getY(i)).append(' ');
     }
     return ret.toString();
   }

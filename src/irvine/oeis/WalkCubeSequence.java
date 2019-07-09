@@ -73,10 +73,10 @@ public class WalkCubeSequence implements Sequence {
     mFactor = factor;
     mMulti = mFactor;
     mMultj = mFactor;
-    if (endCode.equals("e0")) { // ending at (0,0)
+    if ("e0".equals(endCode)) { // ending at (0,0)
       mMulti = 0;
       mMultj = 0;
-    } else if (endCode.equals("ey")) { // ending on vertical axis
+    } else if ("ey".equals(endCode)) { // ending on vertical axis
       mMulti = 0;
     }
     mMatrix = new int[mNoSteps][dim];

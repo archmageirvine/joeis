@@ -1,7 +1,7 @@
 package irvine.oeis;
 
-import irvine.math.MemoryFunction3;
-import irvine.math.MemoryFunction4;
+import irvine.math.MemoryFunctionInt3;
+import irvine.math.MemoryFunctionInt4;
 import irvine.math.z.Z;
 
 /**
@@ -133,37 +133,11 @@ public class WalkCubeSequence implements Sequence {
     }
   }
 
-//  /**
-//   * Construct an instance which computes the walks
-//   * for the default sequence: A147999.
-//   * @param offset first valid term has this index
-//   */
-//  protected WalkCubeSequence(final int offset) {
-//    mOffset = offset;
-//    mDim = 3;
-//    mNoSteps = 4;
-//    mEndCode = "";
-//    mFactor = 1;
-//    mMulti = mFactor;
-//    mMultj = mFactor;
-//    // A147999 Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0)
-//    // and consisting of n steps taken from {(-1, -1, -1), (-1, -1, 1), (-1, 1, 0), (1, 0, 0)}
-//    mMatrix = new int[][]
-//      {{-1, -1, -1}
-//        , {-1, -1, 1}
-//        , {-1, 1, 0}
-//        , {1, 0, 0}
-//      };
-//    mN = offset - 1;
-//    mK = Z.valueOf(mN);
-//    mCache = new HashMap<>(16384);
-//  }
-
   private final class W2Sequence implements Sequence {
 
-    private final MemoryFunction3<Integer, Z> mF;
+    private final Walk2MemoryFunctionInt3 mF;
 
-    private W2Sequence(final MemoryFunction3<Integer, Z> f) {
+    private W2Sequence(final Walk2MemoryFunctionInt3 f) {
       mF = f;
     }
 
@@ -181,35 +155,21 @@ public class WalkCubeSequence implements Sequence {
     }
   }
 
-  private final class W23 extends MemoryFunction3<Integer, Z> {
-    /**
-     * Determine the number of possible next steps
-     * for some point in the m^2 square.
-     * @param i x coordinate of the point
-     * @param j y coordinate of the point
-     * @param m current edge length of the square
-     * @return number of possible steps starting at this point
-     */
+  private abstract class Walk2MemoryFunctionInt3 extends MemoryFunctionInt3<Z> {
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
+    public Z get(final int i, final int j, final int m) {
       if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
+        return Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
+        return i == 0 && j == 0 ? Z.ONE : Z.ZERO;
       } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-        ;
+        return super.get(i, j, m);
       }
-      return result;
     }
   }
 
-  private final class W24 extends MemoryFunction3<Integer, Z> {
+  private final class W23 extends Walk2MemoryFunctionInt3 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^2 square.
@@ -219,26 +179,16 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
-      if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
         ;
-      }
-      return result;
     }
   }
 
-  private final class W25 extends MemoryFunction3<Integer, Z> {
+  private final class W24 extends Walk2MemoryFunctionInt3 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^2 square.
@@ -248,27 +198,17 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
-      if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
         ;
-      }
-      return result;
     }
   }
 
-  private final class W26 extends MemoryFunction3<Integer, Z> {
+  private final class W25 extends Walk2MemoryFunctionInt3 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^2 square.
@@ -278,28 +218,18 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
-      if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+        .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
         ;
-      }
-      return result;
     }
   }
 
-  private final class W27 extends MemoryFunction3<Integer, Z> {
+  private final class W26 extends Walk2MemoryFunctionInt3 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^2 square.
@@ -309,29 +239,19 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
-      if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
-          .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+        .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+        .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
         ;
-      }
-      return result;
     }
   }
 
-  private final class W28 extends MemoryFunction3<Integer, Z> {
+  private final class W27 extends Walk2MemoryFunctionInt3 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^2 square.
@@ -341,34 +261,48 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer m) {
-      final Z result;
-      if (i > m || j > m || i < 0 || j < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
-          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
-          .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
-          .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
-          .add(get(i - mMatrix[7][0], j - mMatrix[7][1], mn1))
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+        .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+        .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+        .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
         ;
-      }
-      return result;
+    }
+  }
+
+  private final class W28 extends Walk2MemoryFunctionInt3 {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^2 square.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param m current edge length of the square
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final int i, final int j, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], mn1))
+        .add(get(i - mMatrix[4][0], j - mMatrix[4][1], mn1))
+        .add(get(i - mMatrix[5][0], j - mMatrix[5][1], mn1))
+        .add(get(i - mMatrix[6][0], j - mMatrix[6][1], mn1))
+        .add(get(i - mMatrix[7][0], j - mMatrix[7][1], mn1))
+        ;
     }
   }
 
   private final class W3Sequence implements Sequence {
 
-    private final MemoryFunction4<Integer, Z> mF;
+    private final MemoryFunctionInt4<Z> mF;
 
-    private W3Sequence(final MemoryFunction4<Integer, Z> f) {
+    private W3Sequence(final MemoryFunctionInt4<Z> f) {
       mF = f;
     }
 
@@ -388,36 +322,21 @@ public class WalkCubeSequence implements Sequence {
     }
   }
 
-  private final class W33 extends MemoryFunction4<Integer, Z> {
-    /**
-     * Determine the number of possible next steps
-     * for some point in the m^3 cube.
-     * @param i x coordinate of the point
-     * @param j y coordinate of the point
-     * @param k z coordinate of the point
-     * @param m current edge length of the cube
-     * @return number of possible steps starting at this point
-     */
+  private abstract class Walk3MemoryFunctionInt4 extends MemoryFunctionInt4<Z> {
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
-      final Z result;
+    public Z get(final int i, final int j, final int k, final int m) {
       if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
-        result = Z.ZERO;
+        return Z.ZERO;
       } else if (m == 0) {
         // the Kronecker delta
-        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
+        return i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
       } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
-        ;
+        return super.get(i, j, k, m);
       }
-      return result;
     }
   }
 
-  private final class W34 extends MemoryFunction4<Integer, Z> {
+  private final class W33 extends Walk3MemoryFunctionInt4 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^3 cube.
@@ -428,26 +347,16 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
-      final Z result;
-      if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
+    protected Z compute(final int i, final int j, final int k, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
         ;
-      }
-      return result;
     }
   }
 
-  private final class W35 extends MemoryFunction4<Integer, Z> {
+  private final class W34 extends Walk3MemoryFunctionInt4 {
     /**
      * Determine the number of possible next steps
      * for some point in the m^3 cube.
@@ -458,23 +367,36 @@ public class WalkCubeSequence implements Sequence {
      * @return number of possible steps starting at this point
      */
     @Override
-    protected Z compute(final Integer i, final Integer j, final Integer k, final Integer m) {
-      final Z result;
-      if (i > m || j > m || k > m || i < 0 || j < 0 || k < 0) {
-        result = Z.ZERO;
-      } else if (m == 0) {
-        // the Kronecker delta
-        result = i == 0 && j == 0 && k == 0 ? Z.ONE : Z.ZERO;
-      } else {
-        final int mn1 = m - 1;
-        result = get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
-          .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
-          .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
-          .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
-          .add(get(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
+    protected Z compute(final int i, final int j, final int k, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
         ;
-      }
-      return result;
+    }
+
+  }
+
+  private final class W35 extends Walk3MemoryFunctionInt4 {
+    /**
+     * Determine the number of possible next steps
+     * for some point in the m^3 cube.
+     * @param i x coordinate of the point
+     * @param j y coordinate of the point
+     * @param k z coordinate of the point
+     * @param m current edge length of the cube
+     * @return number of possible steps starting at this point
+     */
+    @Override
+    protected Z compute(final int i, final int j, final int k, final int m) {
+      final int mn1 = m - 1;
+      return get(i - mMatrix[0][0], j - mMatrix[0][1], k - mMatrix[0][2], mn1)
+        .add(get(i - mMatrix[1][0], j - mMatrix[1][1], k - mMatrix[1][2], mn1))
+        .add(get(i - mMatrix[2][0], j - mMatrix[2][1], k - mMatrix[2][2], mn1))
+        .add(get(i - mMatrix[3][0], j - mMatrix[3][1], k - mMatrix[3][2], mn1))
+        .add(get(i - mMatrix[4][0], j - mMatrix[4][1], k - mMatrix[4][2], mn1))
+        ;
     }
   }
 

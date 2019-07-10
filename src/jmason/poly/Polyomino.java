@@ -131,7 +131,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
 //      }
 //      Polyomino tmp = new Polyomino(cs, false);
 //
-//      if (tmp.mUniq.compareTo(this.mUniq) < 0) {
+//      if (tmp.mUniq.compare(this.mUniq) < 0) {
 //        return true;
 //      }
 //    }

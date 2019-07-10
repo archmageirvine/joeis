@@ -25,7 +25,7 @@ public class Triangle extends Element<Triangle> {
     return flip ? new Triangle(getX(), getY(), -mColour) : new Triangle(getX(), getY(), mColour);
   }
 
-  int compareTo(final Triangle s) {
+  int compare(final Triangle s) {
     final int c = Integer.compare(getX(), s.getX());
     if (c != 0) {
       return c;

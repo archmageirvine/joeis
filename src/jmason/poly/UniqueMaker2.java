@@ -29,7 +29,7 @@ public class UniqueMaker2 {
       final String tmp4 = ts.makeString();
 
 
-      // ret.compareTo(tmp) > 0 means ret greater than tmp
+      // ret.compare(tmp) > 0 means ret greater than tmp
       String ret = tmp1;
 
       if (ret.compareTo(tmp2) > 0) {
@@ -92,7 +92,7 @@ public class UniqueMaker2 {
       ts = ts.mirrorHoriz();
       final String tmp3 = makeString(ts);
 
-      // ret.compareTo(tmp) > 0 means ret greater than tmp
+      // ret.compare(tmp) > 0 means ret greater than tmp
       String ret = tmp1;
 
       if (ret.compareTo(tmp2) > 0) {

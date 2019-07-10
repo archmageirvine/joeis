@@ -31,7 +31,7 @@ public class UniqueMaker2T {
 
       final String tmp6 = ts.makeString();
 
-      // ret.compareTo(tmp) > 0 means ret greater than tmp
+      // ret.compare(tmp) > 0 means ret greater than tmp
       String ret = tmp1;
       if (ret.compareTo(tmp2) > 0) {
         ret = tmp2;

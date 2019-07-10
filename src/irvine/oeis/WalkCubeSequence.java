@@ -107,10 +107,10 @@ public class WalkCubeSequence implements Sequence {
           mGen = new W2Sequence(new W26());
           break;
         case 7:
-          mGen = new W2Sequence(new W26());
+          mGen = new W2Sequence(new W27());
           break;
         case 8:
-          mGen = new W2Sequence(new W26());
+          mGen = new W2Sequence(new W28());
           break;
         default:
           throw new RuntimeException();
@@ -273,6 +273,10 @@ public class WalkCubeSequence implements Sequence {
         ;
     }
   }
+
+  /*
+  aux[i_Integer, j_Integer, n_Integer] := Which[Min[i, j, n] < 0 || Max[i, j] > n, 0, n == 0, KroneckerDelta[i, j, n], True, aux[i, j, n] = aux[-1 + i, j, -1 + n] + aux[-1 + i, 1 + j, -1 + n] + aux[i, -1 + j, -1 + n] + aux[i, 1 + j, -1 + n] + aux[1 + i, -1 + j, -1 + n] + aux[1 + i, j, -1 + n] + aux[1 + i, 1 + j, -1 + n]]; Table[Sum[aux[i, j, n], {i, 0, n}, {j, 0, n}], {n, 0, 25}]
+   */
 
   private final class W28 extends Walk2MemoryFunctionInt3 {
     /**

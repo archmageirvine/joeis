@@ -6,18 +6,20 @@ package jmason.poly;
  * @param <T> type of element
  */
 abstract class Element<T extends Element<T>> {
-  protected int[] mCoords;
-  protected int mColour;
-  //public static final int EMPTY = 0;
+
   private static final String TRANS = "-ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   static final int BLACK = 1;
   static final int WHITE = -BLACK;
 
+  protected int[] mCoords;
+  protected int mColour;
+  //public static final int EMPTY = 0;
+
   static int opp(final int z) {
-    // 0 -----> -1
-    // 1 -----> -2
-    // -1 ----> 0
-    // -2 ----> 1
+    //  0 ----> -1
+    //  1 ----> -2
+    // -1 ---->  0
+    // -2 ---->  1
     return -z - 1;
   }
 
@@ -38,7 +40,7 @@ abstract class Element<T extends Element<T>> {
   }
 
   void setColour(final int colour) {
-    this.mColour = colour;
+    mColour = colour;
   }
 
   protected T copy() {

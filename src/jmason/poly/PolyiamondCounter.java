@@ -3,7 +3,7 @@ package jmason.poly;
 import java.util.ArrayList;
 
 /**
- * A counter of polyominoes
+ * A counter of polyominoes.
  * @author jmason
  */
 public class PolyiamondCounter {

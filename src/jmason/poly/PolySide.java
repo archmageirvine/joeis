@@ -60,7 +60,7 @@ class PolySide  extends PolyBase {
   }
 
   boolean hasSide(final Coord3Set c) {
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       if (mSides[i].mCoords.isSame(c)) {
         return true;
       }
@@ -70,7 +70,7 @@ class PolySide  extends PolyBase {
 
   String makeDiagram() {
     final StringBuilder ret = new StringBuilder();
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       ret.append('(').append(mSides[i].makeDiagram()).append(')');
     }
     return ret.toString();
@@ -81,10 +81,10 @@ class PolySide  extends PolyBase {
     final int minx = min(0);
     final int miny = min(1);
     final int minz = min(2);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       final Side s = mSides[i];
       String sideString = "";
-      for (int j = 0; j < 4; j++) {
+      for (int j = 0; j < 4; ++j) {
         int pos = s.mCoords.mCoords[j].mX - minx;
         String tmp = CoordSet2.TRANSFORM.substring(pos, pos + 1);
         pos = s.mCoords.mCoords[j].mY - miny;
@@ -116,7 +116,7 @@ class PolySide  extends PolyBase {
   PolySide rotxy() {
     //System.err.println("rotxy");
     final PolySide p = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       p.setSide(i, mSides[i].rotxy());
     }
     return p;
@@ -125,7 +125,7 @@ class PolySide  extends PolyBase {
   PolySide rotxz() {
     //System.err.println("rotxz");
     final PolySide p = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       p.setSide(i, mSides[i].rotxz());
     }
     return p;
@@ -134,7 +134,7 @@ class PolySide  extends PolyBase {
   PolySide mirrorxy() {
     //System.err.println("mirrorxy");
     final PolySide p = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       p.setSide(i, mSides[i].mirrorxy());
     }
     return p;
@@ -143,7 +143,7 @@ class PolySide  extends PolyBase {
   PolySide mirrorxz() {
     //System.err.println("mirrorxz");
     final PolySide p = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       p.setSide(i, mSides[i].mirrorxz());
     }
     return p;
@@ -152,7 +152,7 @@ class PolySide  extends PolyBase {
   PolySide mirrorz() {
     //System.err.println("mirrorz");
     final PolySide p = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       p.setSide(i, mSides[i].mirrorz());
     }
     return p;
@@ -160,7 +160,7 @@ class PolySide  extends PolyBase {
 
   PolySide copy() {
     final PolySide ps = new PolySide(mSize);
-    for (int i = 0; i < mSize; i++) {
+    for (int i = 0; i < mSize; ++i) {
       ps.setSide(i, mSides[i].copy());
     }
     return ps;

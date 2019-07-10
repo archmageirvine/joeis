@@ -4,7 +4,7 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
 /**
- * A024416.
+ * A024416 <code>a(n) =</code> position of <code>next-to-largest s(n,k)</code>, for <code>k=1,2,...,n</code>, in <code>A024412, n &gt;= 3</code>, where <code>s(n,k) =</code> Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
 public class A024416 extends A024412 {

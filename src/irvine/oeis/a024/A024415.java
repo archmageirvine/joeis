@@ -4,7 +4,7 @@ import irvine.math.z.Stirling;
 import irvine.math.z.Z;
 
 /**
- * A024415.
+ * A024415 Position of <code>max{s(n,k): k=1,2,...,n}</code> in <code>A024412, n &gt;= 1</code>, where <code>s(n,k) =</code> Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
 public class A024415 extends A024412 {

@@ -20,11 +20,11 @@ import irvine.math.z.Z;
 public class SquareDigitsSequence implements Sequence {
 
   protected int mN; // index of current term to be returned
-  protected Z mK; // current number with some property
-  protected int mOffset; // OEIS offset1 as of generation time
+  //protected Z mK; // current number with some property
+  //protected int mOffset; // OEIS offset1 as of generation time
   protected String mSubset; // the decimal digits of the subset in ascending order
-  protected int mBase; // base of the numbers: 2-99
-  protected int mMode; // type of the test: 2 = digits in square
+  //protected int mBase; // base of the numbers: 2-99
+  //protected int mMode; // type of the test: 2 = digits in square
   protected Pattern mAllowPattern; // pattern matching the subset of not-allowed decimal digits 
   protected int mDigLen; // number of digits in subset
   protected String[] mDigits; // the allowed digits as Strings
@@ -35,7 +35,7 @@ public class SquareDigitsSequence implements Sequence {
   private int mIndDig; // index of current digit
   private int mIndQ; // index of number in mQueue
   private int mWidth; // width of numbers in current block
-  protected int mDebug = 0;
+  //protected int mDebug = 0;
 
   /**
    * Construct an instance which selects all numbers
@@ -47,11 +47,11 @@ public class SquareDigitsSequence implements Sequence {
    * @param subset String of decimal digits in ascending order, representing the desire subset
    */
   protected SquareDigitsSequence(final int offset, final int base, final int mode, final String subset) {
-    mOffset = offset;
+    //mOffset = offset;
     mN = 0;
-    mK = Z.ZERO;
-    mBase = base;
-    mMode = mode;
+    //mK = Z.ZERO;
+    //mBase = base;
+    //mMode = mode;
     mSubset = subset;
     mDigLen = mSubset.length();
     mAllowPattern = Pattern.compile("[" + subset + "]*");

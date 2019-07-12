@@ -13,7 +13,9 @@ public class UniqueMaker2T {
   }
 
   String uniqString() {
-    if (mCs.mFlagOneSided) {
+    if (mCs.mFlagFixed) {
+      return mCs.makeString();
+    } else if (mCs.mFlagOneSided) {
       final String tmp1 = mCs.makeString();
       CoordSet2T ts = mCs.rotate60();
 

@@ -17,7 +17,7 @@ public class FiniteSequence implements Sequence {
    * Construct the sequence.
    * @param seq the values
    */
-  protected FiniteSequence(final long... seq) {
+  public FiniteSequence(final long... seq) {
     mSeq = new Z[seq.length];
     for (int k = 0; k < seq.length; ++k) {
       mSeq[k] = Z.valueOf(seq[k]);

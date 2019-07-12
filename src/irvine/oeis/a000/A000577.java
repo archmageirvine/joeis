@@ -19,7 +19,7 @@ public class A000577 implements Sequence {
   @Override
   public Z next() {
     final PolyiamondCounter pc = new PolyiamondCounter(++mN);
-    pc.run(true,  false, mPrevList, true);
+    pc.run(true, false, false, mPrevList, true);
     mPrevList = pc.getList();
     return Z.valueOf(pc.getCu().getCounter(mN)); 
   }    

@@ -24,16 +24,18 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   private int mWidth;
   private int mHeight;
   private final boolean mFlagFree;
+  final boolean mFlagFixed;
   final boolean mFlagOneSided;
 
   @Override
   protected void verify() {
   }
 
-  CoordSet2T(final int size, final boolean flagFree, final boolean flagOneSided) {
+  CoordSet2T(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     mSize = size;
     mSet = new TriangleSet(size);
     mFlagFree = flagFree;
+    mFlagFixed = flagFixed;
     mFlagOneSided = flagOneSided;
   }
 
@@ -101,7 +103,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   }
 
   CoordSet2T copy(final int x, final int y) {
-    final CoordSet2T cs = new CoordSet2T(mSize + 1, mFlagFree, mFlagOneSided);
+    final CoordSet2T cs = new CoordSet2T(mSize + 1, mFlagFree, mFlagFixed, mFlagOneSided);
     for (int i = 0; i < mSize; ++i) {
       cs.mSet.setElement(i, mSet.getElement(i).copy());
     }
@@ -115,7 +117,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   }
 
   private CoordSet2T mirror(final int xm, final int ym, final int x, final int y) {
-    final CoordSet2T cs = new CoordSet2T(mSize, mFlagFree, mFlagOneSided);
+    final CoordSet2T cs = new CoordSet2T(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     cs.mAllColours = mAllColours;
     for (int i = 0; i < mSize; ++i) {
       ((TriangleSet) (cs.mSet)).setTriangle(i, xm * mSet.getCoord(i, x), ym * mSet.getCoord(i, y), mSet.getColour(i));
@@ -126,7 +128,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
   }
 
   CoordSet2T rotate60() {
-    final CoordSet2T cs = new CoordSet2T(mSize, mFlagFree, mFlagOneSided);
+    final CoordSet2T cs = new CoordSet2T(mSize, mFlagFree, mFlagFixed, mFlagOneSided);
     cs.mAllColours = mAllColours;
     //placeInSextant();
     //if (dbg) System.out.println("aft sext this : " + toString());        
@@ -241,13 +243,13 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     final int bitSize = withColour ? 3 : 2;
     for (int i = 0; i < mSize; i++) {
       int pos = getX(i);
-      String tmp = CoordSet2.TRANSFORM.substring(pos, pos + 1);
+      final StringBuilder tmp = new StringBuilder(CoordSet2.TRANSFORM.substring(pos, pos + 1));
       pos = getY(i);
-      tmp += CoordSet2.TRANSFORM.substring(pos, pos + 1);
+      tmp.append(CoordSet2.TRANSFORM.substring(pos, pos + 1));
       if (withColour) {
-        tmp += Square.colourString(mAllColours, mSet.getColour(i));
+        tmp.append(Square.colourString(mAllColours, mSet.getColour(i)));
       }
-      ret = insert(ret, tmp, bitSize);
+      ret = insert(ret, tmp.toString(), bitSize);
     }
     return ret;
   }
@@ -272,7 +274,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
 
   @Override
   protected CoordSet2T makeAnother(final int size) {
-    return new CoordSet2T(size, mFlagFree, mFlagOneSided);
+    return new CoordSet2T(size, mFlagFree, mFlagFixed, mFlagOneSided);
   }
 
   @Override

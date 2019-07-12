@@ -1,29 +1,22 @@
 package irvine.oeis.a124;
 
-import java.util.ArrayList;
-
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence;
 import irvine.oeis.a018.A018782;
 
 /**
  * A124980 Smallest strictly positive number decomposable in n different ways as a sum of two squares.
  * @author Sean A. Irvine
  */
-public class A124980 extends A018782 {
+public class A124980 implements Sequence {
 
   private int mN = 0;
-  private final ArrayList<Z> mA18782 = new ArrayList<>();
-
-  private Z getA18782(final int n) {
-    while (n >= mA18782.size()) {
-      mA18782.add(super.next());
-    }
-    return mA18782.get(n);
-  }
+  private final MemorySequence mA18782 = MemorySequence.cachedSequence(new A018782());
 
   @Override
   public Z next() {
     ++mN;
-    return getA18782(2 * mN - 1).min(getA18782(2 * mN - 2));
+    return mA18782.a(2 * mN - 1).min(mA18782.a(2 * mN - 2));
   }
 }

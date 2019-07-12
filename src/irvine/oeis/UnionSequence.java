@@ -3,7 +3,7 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * Union between two sequences.
+ * Union between two sequences. Assumes input sequences are sorted.
  * @author Sean A. Irvine
  */
 public class UnionSequence implements Sequence {
@@ -28,16 +28,42 @@ public class UnionSequence implements Sequence {
   @Override
   public Z next() {
     final Z t;
-    if (mNextA.equals(mNextB)) {
-      t = mNextA;
+    if (mNextA == null) {
+      t = mNextB;
       mNextB = mSeqB.next();
+    } else if (mNextB == null) {
+      t = mNextA;
       mNextA = mSeqA.next();
+    } else if (mNextA.equals(mNextB)) {
+      t = mNextA;
+      do {
+        mNextB = mSeqB.next();
+      } while (t.equals(mNextB));
+      do {
+        mNextA = mSeqA.next();
+      } while (t.equals(mNextA));
     } else if (mNextA.compareTo(mNextB) < 0) {
       t = mNextA;
       mNextA = mSeqA.next();
     } else {
       t = mNextB;
       mNextB = mSeqB.next();
+    }
+    return t;
+  }
+
+  /**
+   * Construct the union of an arbitrary number of sequences.
+   * @param sequences sequences to form union of
+   * @return union
+   */
+  public static Sequence createUnion(final Sequence... sequences) {
+    if (sequences == null || sequences.length == 0) {
+      return null;
+    }
+    Sequence t = sequences[0];
+    for (int k = 1; k < sequences.length; ++k) {
+      t = new UnionSequence(t, sequences[k]);
     }
     return t;
   }

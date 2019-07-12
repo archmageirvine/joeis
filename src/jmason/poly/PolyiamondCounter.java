@@ -29,13 +29,14 @@ public class PolyiamondCounter {
   /**
    * Run the search.
    * @param flagFree free
+   * @param flagFixed fixed
    * @param flagOneSided one-sided
    * @param prevList previous results
    * @param optim optimization flag
    */
-  public void run(final boolean flagFree, final boolean flagOneSided, final ArrayList<Polyiamond> prevList, final boolean optim) {
+  public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided, final ArrayList<Polyiamond> prevList, final boolean optim) {
     if (prevList == null || !optim) {
-      final CoordSet2T cs = new CoordSet2T(1, flagFree, flagOneSided);
+      final CoordSet2T cs = new CoordSet2T(1, flagFree, flagFixed, flagOneSided);
       cs.initMonoiamond();
       count(1, mMax, new Polyiamond(cs), optim);
     } else {
@@ -61,7 +62,7 @@ public class PolyiamondCounter {
 
     if (c < max) {
       final ArrayList<Polyiamond> sons = p.listSons(0 /* onlyIfColour */); // guarantee of uniqueness
-      for (Polyiamond son : sons) {
+      for (final Polyiamond son : sons) {
         count(c + 1, max, son, optim);
       }
     }

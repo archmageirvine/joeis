@@ -1,11 +1,11 @@
 package irvine.oeis.a013;
 
-import java.util.ArrayList;
-
 import irvine.math.MemoryFunction2;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -15,18 +15,7 @@ import irvine.oeis.Sequence;
 public class A013924 extends MemoryFunction2<Integer, Z> implements Sequence {
 
   private final MemoryFactorial mF = new MemoryFactorial();
-  private final A013922 mB = new A013922();
-  private final ArrayList<Z> mBL = new ArrayList<>();
-  {
-    mBL.add(null);
-  }
-
-  private Z b(final int n) {
-    while (mBL.size() <= n) {
-      mBL.add(mB.next());
-    }
-    return mBL.get(n);
-  }
+  private final MemorySequence mB = MemorySequence.cachedSequence(new PrependSequence(new A013922(), 0));
 
   // [x^m z^n]{(\PhiS(x,z))}^q=\sum_{j,k}[x^j z^k]\Phi S(x,z)[x^{m-j}z^{n-k}]{(\Phi S(x,z))}^{q-1}
   // Not particularly efficient
@@ -48,7 +37,7 @@ public class A013924 extends MemoryFunction2<Integer, Z> implements Sequence {
   @Override
   protected Z compute(final Integer m, final Integer n) {
     if (m == 0) {
-      return b(n);
+      return mB.a(n);
     }
     if (n.equals(m)) {
       return Z.ZERO;
@@ -62,7 +51,7 @@ public class A013924 extends MemoryFunction2<Integer, Z> implements Sequence {
           .divide(mF.factorial(k - 1 - q));
         t = t.add(u);
       }
-      smn = smn.add(t.multiply(b(k)));
+      smn = smn.add(t.multiply(mB.a(k)));
     }
     return smn.multiply(mF.factorial(n)).divide(n - m).toZ();
   }

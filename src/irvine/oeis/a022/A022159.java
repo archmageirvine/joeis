@@ -30,7 +30,7 @@ public class A022159 extends MemorySequence {
 
   private final ArrayList<Z> mBTerms = new ArrayList<>();
 
-  private Z a(final int n) {
+  private Z aa(final int n) {
     return h().multiply(CR.valueOf(n)).floor();
   }
 
@@ -45,12 +45,12 @@ public class A022159 extends MemorySequence {
   protected Z computeNext() {
     final int j = size();
     if (j <= 1) {
-      return j == 0 ? a(1).square() : b(a(1).intValueExact());
+      return j == 0 ? aa(1).square() : b(aa(1).intValueExact());
     }
     if ((j & 1) == 1) {
       return b(get(j - 2).intValueExact());
     } else {
-      return a(get(j - 1).intValueExact());
+      return aa(get(j - 1).intValueExact());
     }
   }
 }

@@ -1,12 +1,11 @@
 package irvine.oeis.a059;
 
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000079;
 import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000984;
-
-import java.util.ArrayList;
 
 /**
  * A059366 Triangle <code>T(m,s), m &gt;= 0, 0 &lt;= s &lt;=</code> m, arising in computation of certain integrals.
@@ -14,20 +13,12 @@ import java.util.ArrayList;
  */
 public class A059366 implements Sequence {
 
-  private final A000984 mA0984 = new A000984();
-  private final A000142 mA0142 = new A000142();
-  private final A000079 mA0079 = new A000079();
-  private final ArrayList<Z> mSeq984 = new ArrayList<>();
-  private final ArrayList<Z> mSeq142 = new ArrayList<>();
-  private final ArrayList<Z> mSeq79 = new ArrayList<>();
+  private final MemorySequence mA0984 = MemorySequence.cachedSequence(new A000984());
+  private final MemorySequence mA0142 = MemorySequence.cachedSequence(new A000142());
+  private final MemorySequence mA0079 = MemorySequence.cachedSequence(new A000079());
 
   protected Z t(final int n, final int s) {
-    while (n >= mSeq984.size()) {
-      mSeq984.add(mA0984.next());
-      mSeq142.add(mA0142.next());
-      mSeq79.add(mA0079.next());
-    }
-    return mSeq984.get(s).multiply(mSeq984.get(n - s)).multiply(mSeq142.get(n)).divide(mSeq79.get(n));
+    return mA0984.a(s).multiply(mA0984.a(n - s)).multiply(mA0142.a(n)).divide(mA0079.a(n));
   }
 
   private int mN = -1;

@@ -1,9 +1,9 @@
 package irvine.oeis.a035;
 
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
 
 /**
  * A035283 Expansion of zeta function of ring <code>H(Q(sqrt(2))</code>.
@@ -11,20 +11,8 @@ import java.util.ArrayList;
  */
 public class A035283 implements Sequence {
 
-  private final Sequence mA = new A035185();
-  private final ArrayList<Z> mASeq = new ArrayList<>();
-  {
-    mASeq.add(Z.ZERO);
-  }
-
+  private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A035185(), 0));
   private int mN = 0;
-
-  private Z a(final int n) {
-    while (mASeq.size() <= n) {
-      mASeq.add(mA.next());
-    }
-    return mASeq.get(n);
-  }
 
   @Override
   public Z next() {
@@ -34,7 +22,7 @@ public class A035283 implements Sequence {
       for (int k = 1; k <= mN; ++k) {
         final int t = mN / k;
         if (t * k == mN) {
-          sum = sum.add(a(t).multiply(a(k).multiply(k)));
+          sum = sum.add(mA.a(t).multiply(mA.a(k).multiply(k)));
         }
       }
       if (!Z.ZERO.equals(sum)) {

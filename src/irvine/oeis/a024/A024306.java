@@ -1,18 +1,17 @@
 package irvine.oeis.a024;
 
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.HalfConvolutionSequence;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.a000.A000027;
 
 /**
- * A024306 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where <code>k=[ (n+1)/2) ], s =</code> (natural numbers <code>&gt;= 2), t =</code> (natural numbers <code>&gt;= 3)</code>.
+ * A024306.
  * @author Sean A. Irvine
  */
-public class A024306 implements Sequence {
+public class A024306 extends HalfConvolutionSequence {
 
-  private long mN = 0;
-
-  @Override
-  public Z next() {
-    return Z.valueOf(++mN).multiply(4).add(45).multiply(mN).add(116).multiply(mN).add(48).signedAdd((mN & 1) == 1, Z.valueOf(mN + 4).square().multiply(3)).divide(48);
+  /** Construct the sequence. */
+  public A024306() {
+    super(new A000027(), new SkipSequence(new A000027(), 1));
   }
 }

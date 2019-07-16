@@ -1,0 +1,21 @@
+package irvine.oeis.a024;
+
+import irvine.math.z.Z;
+
+/**
+ * A024525.
+ * @author Sean A. Irvine
+ */
+public class A024525 extends A024450 {
+
+  private boolean mFirst = true;
+
+  @Override
+  public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
+    return super.next().add(1);
+  }
+}

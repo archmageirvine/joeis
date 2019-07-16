@@ -27,21 +27,3 @@ public class A309076 implements Sequence {
     return sum;
   }
 }
-
-/*
- def a309076(n):
-
-    result = 0
-
-    lnphi = ln((1+sqrt(5))/2)
-
-    while n > 0:
-
-        k = floor(ln(n*sqrt(5)+1/2)/lnphi)
-
-        n = n - fibonacci(k)
-
-        result = result + fibonacci(1 - k)
-
-    return result
- */

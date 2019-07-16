@@ -1,30 +1,16 @@
 package irvine.oeis.a023;
 
-import java.util.ArrayList;
-
-import irvine.math.z.Z;
+import irvine.oeis.HalfConvolutionSequence;
+import irvine.oeis.a001.A001477;
 
 /**
- * A023859 <code>a(n) = 1*t(n) + 2*t(n-1) + ... + k*t(n+1-k)</code>, where <code>k=floor((n+1)/2)</code>, and t <code>= A023532</code>.
+ * A023859.
  * @author Sean A. Irvine
  */
-public class A023859 extends A023532 {
+public class A023859 extends HalfConvolutionSequence {
 
-  private final ArrayList<Z> mA = new ArrayList<>();
-  private int mN = 0;
-  {
-    super.next();
-  }
-
-  @Override
-  public Z next() {
-    ++mN;
-    mA.add(super.next());
-    Z sum = Z.ZERO;
-    for (int k = 1; k <= (mN + 1) / 2; ++k) {
-      sum = sum.add(mA.get(mN - k).multiply(k));
-    }
-    return sum;
+  /** Construct the sequence. */
+  public A023859() {
+    super(new A001477(), new A023532());
   }
 }
-

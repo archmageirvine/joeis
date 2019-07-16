@@ -3,7 +3,7 @@
 # Report on various state of implementaitons.
 
 DEAD=src/irvine/oeis/dead.lst
-NOT_DONE=src/irvine/oeis/notdone.dat
+NOT_DONE=notdone.dat
 
 echo "Checking for implementations without tests"
 find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s; do

@@ -1,0 +1,22 @@
+package irvine.oeis.a024;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.oeis.SkipSequence;
+
+/**
+ * A024534.
+ * @author Sean A. Irvine
+ */
+public class A024534 extends A024523 {
+
+  private final Sequence mA = new SkipSequence(new A024522(), 1);
+  {
+    next();
+  }
+
+  @Override
+  public Z next() {
+    return super.next().divide(mA.next());
+  }
+}

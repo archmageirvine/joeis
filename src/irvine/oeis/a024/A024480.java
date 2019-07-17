@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a008.A008578;
 
 /**
- * A024480.
+ * A024480 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k)</code>, where k <code>= [ (n+1)/2 ], s = (1, p(1), p(2), ...), t =</code> (composite numbers).
  * @author Sean A. Irvine
  */
 public class A024480 extends HalfConvolutionSequence {

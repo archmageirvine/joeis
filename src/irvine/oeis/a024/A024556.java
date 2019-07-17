@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024546.
+ * A024556 Odd squarefree composite numbers.
  * @author Sean A. Irvine
  */
 public class A024556 implements Sequence {

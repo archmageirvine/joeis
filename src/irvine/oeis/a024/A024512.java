@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004431;
 
 /**
- * A024512.
+ * A024512 Position of <code>1 + n^2</code> in <code>A004431</code> (sums of 2 distinct nonzero squares).
  * @author Sean A. Irvine
  */
 public class A024512 extends A004431 {

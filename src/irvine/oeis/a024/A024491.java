@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024491.
+ * A024491 <code>a(n) = (1/(4n-1))*C(4n,2n)</code>.
  * @author Sean A. Irvine
  */
 public class A024491 implements Sequence {

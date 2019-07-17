@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024489.
+ * A024489 <code>a(n) = (1/(9n-3))*M(3n; n,n,n)</code>, where <code>M()</code> is a multinomial coefficient.
  * @author Sean A. Irvine
  */
 public class A024489 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024530.
+ * A024530 Numerator of <code>-Sum_{k=1..n} (-1)^k / prime(k)</code>.
  * @author Sean A. Irvine
  */
 public class A024530 extends A000040 {

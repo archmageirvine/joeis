@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024503.
+ * A024503 <code>a(n) = floor(binomial(2*n,n)/3^n)</code>.
  * @author Sean A. Irvine
  */
 public class A024503 implements Sequence {

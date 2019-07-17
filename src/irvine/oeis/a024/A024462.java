@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024462.
+ * A024462 Triangle <code>T(n,k)</code> read by rows, arising in enumeration of catafusenes.
  * @author Sean A. Irvine
  */
 public class A024462 extends MemoryFunction2<Long, Z> implements Sequence {

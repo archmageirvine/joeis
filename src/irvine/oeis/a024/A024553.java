@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024553.
+ * A024553 <code>[ 1/{n*sqrt(5)} ]</code>, where <code>{x} := x - [ x ]</code>.
  * @author Sean A. Irvine
  */
 public class A024553 implements Sequence {

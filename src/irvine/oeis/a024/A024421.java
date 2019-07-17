@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024421 <code>a(n) = n!(1/C(n,0) - 1/C(n,1) - ... - 1/C(n,[ n/2 ]))</code>.
+ * A024421 <code>a(n) = n!*(1/C(n,0) - 1/C(n,1) - ... - 1/C(n,[ n/2 ]))</code>.
  * @author Sean A. Irvine
  */
 public class A024421 implements Sequence {

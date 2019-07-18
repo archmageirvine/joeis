@@ -19,7 +19,7 @@ public class A024358 implements Sequence {
   public Z next() {
     if (mB == null) {
       mB = RING.one();
-      return Z.ONE;
+      return Z.ZERO;
     } else {
       mB = RING.add(RING.one(), RING.pow(mB, 2).shift(1));
     }

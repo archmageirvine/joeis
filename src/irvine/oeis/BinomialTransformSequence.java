@@ -61,7 +61,7 @@ public class BinomialTransformSequence implements Sequence {
   public static void main(final String[] args) throws IOException {
     final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
     try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
-      final BinomialTransformSequence seq = new BinomialTransformSequence(new ReaderSequence(r), skip);
+      final Sequence seq = new BinomialTransformSequence(new ReaderSequence(r), skip);
       Z a;
       while ((a = seq.next()) != null) {
         System.out.println(a);

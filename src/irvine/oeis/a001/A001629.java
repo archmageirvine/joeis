@@ -1,26 +1,16 @@
 package irvine.oeis.a001;
 
-import irvine.math.z.Z;
+import irvine.oeis.ConvolutionSequence;
 import irvine.oeis.a000.A000045;
 
 /**
  * A001629 Self-convolution of Fibonacci numbers.
  * @author Sean A. Irvine
  */
-public class A001629 extends A000045 {
+public class A001629 extends ConvolutionSequence {
 
-  private Z mA = null;
-  private long mN = 0;
-
-  @Override
-  public Z next() {
-    if (mA == null) {
-      mA = super.next();
-      return Z.ZERO;
-    }
-    final Z f = super.next();
-    final Z t = mA.multiply(++mN).multiply2().add(f.multiply(mN - 1));
-    mA = f;
-    return t.divide(5);
+  /** Construct the sequence. */
+  public A001629() {
+    super(new A000045());
   }
 }

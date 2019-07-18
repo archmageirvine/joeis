@@ -51,6 +51,6 @@ public class A024542 implements Sequence {
       cumulativeDistance += distance(cards);
       ++faros;
     } while (!isIdentity(cards));
-    return new Q(cumulativeDistance, (faros * (mN - 1))).floor();
+    return new Q(cumulativeDistance, faros * (mN - 1)).floor();
   }
 }

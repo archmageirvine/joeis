@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import irvine.math.z.Z;
@@ -50,5 +53,20 @@ public class ConvolutionSequence implements Sequence {
       s = s.add(mTermsA.get(k).multiply(mTermsB.get(n - k)));
     }
     return s;
+  }
+
+  /**
+   * Apply the self-convolution to the sequence supplied on standard input.
+   * @param args ignored
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final Sequence seq = new ConvolutionSequence(new ReaderSequence(r));
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
   }
 }

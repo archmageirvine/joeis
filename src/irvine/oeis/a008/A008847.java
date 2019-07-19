@@ -20,7 +20,7 @@ public class A008847 implements Sequence {
         return Z.ONE;
       }
       final Z sum = Cheetah.factor(mN).square().sigma();
-      if (Z.ZERO.equals(sum.sqrtAndRemainder()[1])) {
+      if (sum.isSquare()) {
         return mN;
       }
     }

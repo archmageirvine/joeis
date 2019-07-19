@@ -40,7 +40,7 @@ A000794 Permanent projective plane (does not exist for 6?) - how to make matrix?
 A000840 Graph colouring, insufficient detail [geng -d3 -D3 (2n) | pickg -b (does't do automorphism part)]
 A000843 Graph colouring, insufficient detail
 A000876 Need more detail [had 1 email from author], cf. A000361
-A000937 Hard depth-first search, have paper
+A000937 Length of longest simple cycle without chords in the n-dimensional hypercube graph, have paper
 A000952 Hard, matrix
 A000983 Covering code -- supposedly hard -- need more detail
 A000997 Have paper, can't find exact sequence in paper, pos. like A000998

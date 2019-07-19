@@ -18,7 +18,7 @@ public class A020377 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!Z.ZERO.equals(mN.sqrtAndRemainder()[1])) {
+      if (!mN.isSquare()) {
         final List<Z> conv = Convergents.continuedFractionConvergentsSqrt(mN.longValueExact());
         if (conv.size() == 39) {
           return mN;

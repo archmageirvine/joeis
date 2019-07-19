@@ -54,12 +54,9 @@ public class A018884 implements Sequence {
           t = t.multiply(10);
           v >>>= 1;
         }
-        if (n.compareTo(mPrev) > 0 && accept(n)) {
-          n.sqrt();
-          if (n.auxiliary() == 1) {
-            mPrev = n;
-            return n;
-          }
+        if (n.compareTo(mPrev) > 0 && accept(n) && n.isSquare()) {
+          mPrev = n;
+          return n;
         }
       }
     }

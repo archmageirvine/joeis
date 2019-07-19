@@ -22,7 +22,7 @@ public class A063831 implements Sequence {
       for (final Z d : fs.divisors()) {
         s = s.add(d.pow(3));
       }
-      if (Z.ZERO.equals(s.sqrtAndRemainder()[1])) {
+      if (s.isSquare()) {
         return Z.valueOf(mN);
       }
     }

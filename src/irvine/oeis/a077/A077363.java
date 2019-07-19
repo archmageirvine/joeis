@@ -12,7 +12,7 @@ public class A077363 implements Sequence {
   private int mN = 0;
 
   private boolean checkInnerSquare(final String s) {
-    return Z.ZERO.equals(new Z(s.substring(1, s.length() - 1)).sqrtAndRemainder()[1]);
+    return new Z(s.substring(1, s.length() - 1)).isSquare();
   }
 
   @Override

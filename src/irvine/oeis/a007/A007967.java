@@ -27,12 +27,12 @@ public class A007967 implements Sequence {
         final Z br2 = b.multiply(r * r);
         final Z br2p1 = br2.add(1);
         final Z[] qr1 = br2p1.divideAndRemainder(c);
-        if (Z.ZERO.equals(qr1[1]) && Z.ZERO.equals(qr1[0].sqrtAndRemainder()[1])) {
+        if (Z.ZERO.equals(qr1[1]) && qr1[0].isSquare()) {
           return c; // 1-happy
         }
         final Z br2p2 = br2.add(2);
         final Z[] qr2 = br2p2.divideAndRemainder(c);
-        if (Z.ZERO.equals(qr2[1]) && Z.ZERO.equals(qr2[0].sqrtAndRemainder()[1])) {
+        if (Z.ZERO.equals(qr2[1]) && qr2[0].isSquare()) {
           return c; // 2-happy
         }
       }

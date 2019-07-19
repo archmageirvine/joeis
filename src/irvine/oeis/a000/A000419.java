@@ -17,7 +17,7 @@ public class A000419 extends A000378 {
         boolean ok = true;
         final Z r = s[0];
         for (Z x = Z.ONE; x.compareTo(r) <= 0; x = x.add(1)) {
-          if (Z.ZERO.equals(t.subtract(x.square()).sqrtAndRemainder()[1])) {
+          if (t.subtract(x.square()).isSquare()) {
             ok = false;
             break;
           }

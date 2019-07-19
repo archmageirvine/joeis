@@ -11,11 +11,6 @@ public class A009404 implements Sequence {
 
   private Z mN = Z.SIX;
 
-  private boolean isSquare(final Z v) {
-    v.sqrt();
-    return v.auxiliary() == 1;
-  }
-
   private boolean isSquareDecomposable(final String s, final boolean multipart) {
     if (s.isEmpty()) {
       return multipart;
@@ -23,7 +18,7 @@ public class A009404 implements Sequence {
     // Peel off a square from the left, end limit depends if we already have a part
     for (int k = 1; k <= (multipart ? s.length() : s.length() - 1); ++k) {
       final Z v = new Z(s.substring(0, k));
-      if (isSquare(v) && isSquareDecomposable(s.substring(k), true)) {
+      if (v.isSquare() && isSquareDecomposable(s.substring(k), true)) {
         return true;
       }
     }

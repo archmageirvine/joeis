@@ -16,7 +16,7 @@ public class A013944 implements Sequence {
   public Z next() {
     while (true) {
       final Z n = Z.valueOf(++mN);
-      if (Z.ZERO.equals(n.sqrtAndRemainder()[1])) {
+      if (n.isSquare()) {
         continue;
       }
       Z sum = null;

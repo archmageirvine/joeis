@@ -16,7 +16,7 @@ public class A002332 extends A033203 {
     while (true) {
       x = x.add(1);
       final Z twoy2 = p.subtract(x.square());
-      if (twoy2.isEven() && Z.ZERO.equals(twoy2.divide2().sqrtAndRemainder()[1])) {
+      if (twoy2.isEven() && twoy2.divide2().isSquare()) {
         return x;
       }
     }

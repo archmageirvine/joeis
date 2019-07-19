@@ -12,7 +12,7 @@ public class A000415 extends A000404 {
   public Z next() {
     while (true) {
       final Z t = super.next();
-      if (!Z.ZERO.equals(t.sqrtAndRemainder()[1])) {
+      if (!t.isSquare()) {
         return t;
       }
     }

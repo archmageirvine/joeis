@@ -14,7 +14,7 @@ public class A002331 extends A002313 {
     Z x = Z.ZERO;
     while (true) {
       x = x.add(1);
-      if (Z.ZERO.equals(p.subtract(x.square()).sqrtAndRemainder()[1])) {
+      if (p.subtract(x.square()).isSquare()) {
         return x;
       }
     }

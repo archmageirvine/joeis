@@ -17,7 +17,7 @@ public class A002496 implements Sequence {
   public Z next() {
     while (true) {
       mP = mPrime.nextPrime(mP);
-      if (Z.ZERO.equals(mP.subtract(1).sqrtAndRemainder()[1])) {
+      if (mP.subtract(1).isSquare()) {
         return mP;
       }
     }

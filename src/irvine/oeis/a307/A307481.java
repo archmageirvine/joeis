@@ -32,8 +32,7 @@ public class A307481 implements Sequence {
             x2y2.sqrt();
             if (x2y2.auxiliary() == 1) {
               final Z s = x2y2.add(y2z2);
-              s.sqrt();
-              if (s.auxiliary() == 1) {
+              if (s.isSquare()) {
                 mS.add(s);
               }
             }
@@ -41,8 +40,7 @@ public class A307481 implements Sequence {
             x2z2.sqrt();
             if (x2z2.auxiliary() == 1) {
               final Z s = x2z2.add(y2z2);
-              s.sqrt();
-              if (s.auxiliary() == 1) {
+              if (s.isSquare()) {
                 mS.add(s);
               }
             }

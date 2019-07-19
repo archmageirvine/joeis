@@ -16,9 +16,7 @@ public class A023110 implements Sequence {
     while (true) {
       mN = mN.add(1);
       final Z s = mN.square();
-      final Z t = s.divide(10);
-      t.sqrt();
-      if (t.auxiliary() == 1) {
+      if (s.divide(10).isSquare()) {
         return s;
       }
     }

@@ -21,11 +21,8 @@ public class A022999 implements Sequence {
         final Z[] qr = u.divideAndRemainder(v);
         if (Z.ZERO.equals(qr[1])) {
           final Z discriminant = qr[0];
-          if (discriminant.testBit(0) == (((b - c) & 1) == 1)) {
-            discriminant.sqrt();
-            if (discriminant.auxiliary() == 1) {
-              return true;
-            }
+          if (discriminant.testBit(0) == (((b - c) & 1) == 1) && discriminant.isSquare()) {
+            return true;
           }
         }
       }

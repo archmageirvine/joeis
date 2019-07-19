@@ -15,10 +15,9 @@ public class A010341 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    mN.sqrt();
     Z prev = Z.ZERO;
     Z sum = Z.ZERO;
-    if (mN.auxiliary() == 0) {
+    if (!mN.isSquare()) {
       boolean first = true;
       for (final Z c : Convergents.continuedFractionConvergentsSqrt(mN.longValueExact())) {
         if (first) {

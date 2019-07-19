@@ -32,8 +32,7 @@ public class A025494 implements Sequence {
         }
       }
       final Z v = mSums.get(mPos);
-      v.sqrt();
-      if (v.auxiliary() == 1) {
+      if (v.isSquare()) {
         return v;
       }
     }

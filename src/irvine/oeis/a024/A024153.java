@@ -23,11 +23,8 @@ public class A024153 implements Sequence {
         final long c = mN - a - b;
         if (c > b) {
           final Z t = Z.valueOf(p).multiply(p - a).multiply(p - b).multiply(p - c);
-          if (t.signum() > 0) {
-            t.sqrt();
-            if (t.auxiliary() == 1) {
-              ++count;
-            }
+          if (t.signum() > 0 && t.isSquare()) {
+            ++count;
           }
         }
       }

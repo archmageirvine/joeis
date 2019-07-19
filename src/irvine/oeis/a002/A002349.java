@@ -23,7 +23,7 @@ public class A002349 implements Sequence {
     Z y = Z.ZERO;
     while (true) {
       y = y.add(1);
-      if (Z.ZERO.equals(Z.ONE.add(y.square().multiply(mN)).sqrtAndRemainder()[1])) {
+      if (Z.ONE.add(y.square().multiply(mN)).isSquare()) {
         return y;
       }
     }

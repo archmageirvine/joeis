@@ -619,6 +619,14 @@ public class Z extends Number implements Comparable<Z> {
   }
 
   /**
+   * Test if this number is a square.
+   * @return true iff this number is a perfect square
+   */
+  public boolean isSquare() {
+    return Z.ZERO.equals(Sqrt.sqrt(this)[1]);
+  }
+
+  /**
    * Compute this integer modulo another integer.  The sign of
    * result is the sign of the moduli unless the result is 0.
    * @param n moduli

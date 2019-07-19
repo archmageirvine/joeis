@@ -1,13 +1,12 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000961;
 
 /**
- * A024626 Positions of squares among the powers of primes <code>(A000961)</code>.
+ * A024671 Positions of even numbers in <code>A024670</code> (distinct sums of cubes of distinct positive integers).
  * @author Sean A. Irvine
  */
-public class A024626 extends A000961 {
+public class A024671 extends A024670 {
 
   private long mN = 0;
 
@@ -15,7 +14,7 @@ public class A024626 extends A000961 {
   public Z next() {
     while (true) {
       ++mN;
-      if (super.next().isSquare()) {
+      if (super.next().isEven()) {
         return Z.valueOf(mN);
       }
     }

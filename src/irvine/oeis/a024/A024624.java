@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A024624.
+ * A024624 <code>a(n) =</code> position of square of n-th prime among the powers of primes <code>(A000961)</code>.
  * @author Sean A. Irvine
  */
 public class A024624 extends A000961 {

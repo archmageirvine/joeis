@@ -1,31 +1,18 @@
 package irvine.oeis.a024;
 
-import java.util.ArrayList;
-
-import irvine.math.z.Z;
+import irvine.oeis.HalfConvolutionSequence;
+import irvine.oeis.SkipSequence;
+import irvine.oeis.a000.A000027;
 import irvine.oeis.a000.A000045;
 
 /**
- * A024315 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1)</code>, where k <code>= [ n/2 ], s =</code> (natural numbers <code>&gt;= 3), t =</code> (Fibonacci numbers).
+ * A024315.
  * @author Sean A. Irvine
  */
-public class A024315 extends A000045 {
+public class A024315 extends HalfConvolutionSequence {
 
-  private final ArrayList<Z> mA = new ArrayList<>();
-  {
-    mA.add(super.next());
-    mA.add(super.next());
-  }
-  private int mN = 1;
-
-  @Override
-  public Z next() {
-    mA.add(super.next());
-    ++mN;
-    Z sum = Z.ZERO;
-    for (int k = 1; k <= mN / 2; ++k) {
-      sum = sum.add(mA.get(mN + 1 - k).multiply(k + 2));
-    }
-    return sum;
+  /** Construct the sequence. */
+  public A024315() {
+    super(new SkipSequence(new A000027(), 1), new SkipSequence(new A000045(), 1));
   }
 }

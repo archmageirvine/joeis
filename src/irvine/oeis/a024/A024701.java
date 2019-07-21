@@ -1,0 +1,20 @@
+package irvine.oeis.a024;
+
+import irvine.math.z.Z;
+import irvine.oeis.a000.A000040;
+
+/**
+ * A024701.
+ * @author Sean A. Irvine
+ */
+public class A024701 extends A000040 {
+
+  {
+    super.next(); // skip 2
+  }
+
+  @Override
+  public Z next() {
+    return super.next().square().subtract(1).divide(4);
+  }
+}

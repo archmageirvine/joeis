@@ -8,15 +8,15 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024746 Binomial coefficients: <code>C(n,k), 2 &lt;= k &lt;= n-2</code>, sorted.
+ * A024754 Binomial coefficients: <code>C(n,k), 10 &lt;= k &lt;= n-10</code>, sorted.
  * @author Sean A. Irvine
  */
-public class A024746 implements Sequence {
+public class A024754 implements Sequence {
 
   private final TreeMap<Z, Integer> mA = new TreeMap<>();
-  private Z mB = Z.SIX;
+  private Z mB = Z.valueOf(184756);
   private int mCount = 1;
-  private long mM = 4;
+  private long mM = 20;
 
   @Override
   public Z next() {
@@ -26,7 +26,7 @@ public class A024746 implements Sequence {
     }
     if (mM <= mB.longValueExact()) {
       ++mM;
-      for (long k = 2; k < mM - 1; ++k) {
+      for (long k = 10; k < mM - 9; ++k) {
         final Z v = Binomial.binomial(mM, k);
         final Integer c = mA.get(v);
         mA.put(v, c == null ? 1 : c + 1);

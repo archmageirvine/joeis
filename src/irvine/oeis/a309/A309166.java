@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a309.A309279.State;
 
 /**
- * A309166.
+ * A309166 Langton's ant on a truncated hexagonal tiling: number of black cells after n moves of the ant when starting on a dodecagon and looking towards an edge where the dodecagon meets a triangle.
  * @author Sean A. Irvine
  */
 public class A309166 implements Sequence {

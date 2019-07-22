@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A309279.
+ * A309279 allocated for Felix Fr&#246;hlich.
  * @author Sean A. Irvine
  */
 public class A309279 implements Sequence {

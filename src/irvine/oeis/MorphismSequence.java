@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 /**
  * A typical example for these sequences is:
  * <pre>
- * A171588 The Pell word: Fixed point of the morphism 0->001, 1->0.
+ * A171588 The Pell word: Fixed point of the morphism 0-&gt;001, 1-&gt;0.
  * S(0) = 0
  * S(1) = 001
  * S(2) = 001 001 0
@@ -166,7 +166,7 @@ public class MorphismSequence implements Sequence {
 
   /**
    * Test method
-   * @param args command line arguments: [noterms [mappings [start]]]
+   * @param args command line arguments: [no-terms [mappings [start]]]
    * Computes the fixed point of a mapping.
    */
   public static void main(final String[] args) {

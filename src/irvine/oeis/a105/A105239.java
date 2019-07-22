@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A105239 Trajectory of 1 under the morphism 1 -> 121, 2 -> 434, 3 -> 212, 4 -> 343.
+ * A105239 Trajectory of 1 under the morphism <code>1 -&gt; 121, 2 -&gt; 434, 3 -&gt; 212, 4 -&gt; 343</code>.
  * @author Georg Fischer
  */
 public class A105239 extends MorphismSequence {

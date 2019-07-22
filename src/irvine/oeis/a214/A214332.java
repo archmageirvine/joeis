@@ -5,7 +5,7 @@ package irvine.oeis.a214;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A214332 Trajectory of 0 under the morphism 0 -> 01, 1 -> 202, 2 -> empty string.
+ * A214332 Trajectory of 0 under the morphism <code>0 -&gt; 01, 1 -&gt; 202, 2 -&gt</code>; empty string.
  * @author Georg Fischer
  */
 public class A214332 extends MorphismSequence {

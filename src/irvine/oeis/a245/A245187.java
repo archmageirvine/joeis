@@ -5,7 +5,7 @@ package irvine.oeis.a245;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A245187 Trajectory of 1 under repeated applications of the morphism 0->12, 1->12, 2->00.
+ * A245187 Trajectory of 1 under repeated applications of the morphism <code>0-&gt;12, 1-&gt;12, 2-&gt;00</code>.
  * @author Georg Fischer
  */
 public class A245187 extends MorphismSequence {

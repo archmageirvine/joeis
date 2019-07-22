@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A143668 Result of the morphing 01->01021212, 02->0102121201, 12->01021201, iterated from '01'. Sequence of the Fibonacci word fractal.
+ * A143668 Result of the morphing <code>01-&gt;01021212, 02-&gt;0102121201, 12-&gt;01021201</code>, iterated from <code>'01'</code>. Sequence of the Fibonacci word fractal.
  * @author Georg Fischer
  */
 public class A143668 extends MorphismSequence {

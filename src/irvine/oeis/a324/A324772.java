@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A324772 The "Octanacci" sequence: Trajectory of 0 under the morphism 0->{0,1,0}, 1->{0}.
+ * A324772 The "Octanacci" sequence: Trajectory of 0 under the morphism <code>0-&gt;{0,1,0}, 1-&gt;{0}</code>.
  * @author Georg Fischer
  */
 public class A324772 extends MorphismSequence {

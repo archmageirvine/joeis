@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A319956 Image of 3 under repeated application of the morphism 1 -> 1, 2 -> 22, 3 -> 312.
+ * A319956 Image of 3 under repeated application of the morphism <code>1 -&gt; 1, 2 -&gt; 22, 3 -&gt; 312</code>.
  * @author Georg Fischer
  */
 public class A319956 extends MorphismSequence {

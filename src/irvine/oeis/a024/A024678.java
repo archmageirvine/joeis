@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a018.A018252;
 
 /**
- * A024678.
+ * A024678 <code>a(n)</code> is the position of <code>(prime(n+1) + prime(n+2))/2</code> in the ordered nonprimes.
  * @author Sean A. Irvine
  */
 public class A024678 extends A024675 {

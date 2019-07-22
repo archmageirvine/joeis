@@ -5,7 +5,7 @@ package irvine.oeis.a191;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A191818 A sum-square avoiding sequence; fixed point of the map 0 -> 03; 1 -> 43; 3 -> 1; 4 -> 01.
+ * A191818 A sum-square avoiding sequence; fixed point of the map <code>0 -&gt; 03; 1 -&gt; 43; 3 -&gt; 1; 4 -&gt; 01</code>.
  * @author Georg Fischer
  */
 public class A191818 extends MorphismSequence {

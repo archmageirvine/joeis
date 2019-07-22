@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024683.
+ * A024683 <code>a(n) =</code> number of ways <code>p(n)</code> is a sum of two composite numbers r,s satisfying r <code>&lt</code>; s.
  * @author Sean A. Irvine
  */
 public class A024683 implements Sequence {

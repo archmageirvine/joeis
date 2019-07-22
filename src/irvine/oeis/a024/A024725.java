@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A024725.
+ * A024725 <code>a(n) =</code> Sum <code>(a(2i-1)*a(n-2i+1), i = 1,2,...,k)</code>, where k <code>= [ (n+1)/4 ]</code>.
  * @author Sean A. Irvine
  */
 public class A024725 extends MemorySequence {

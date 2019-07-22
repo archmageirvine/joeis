@@ -5,7 +5,7 @@ package irvine.oeis.a096;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A096271 Ternary sequence that is a fixed point of the morphism 0 -> 01, 1 -> 02, 2 -> 00.
+ * A096271 Ternary sequence that is a fixed point of the morphism <code>0 -&gt; 01, 1 -&gt; 02, 2 -&gt; 00</code>.
  * @author Georg Fischer
  */
 public class A096271 extends MorphismSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a284;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A284932 Fixed point of the mapping 00->001, 1->10, starting with 00.
+ * A284932 Fixed point of the mapping <code>00-&gt;001, 1-&gt;10</code>, starting with 00.
  * @author Georg Fischer
  */
 public class A284932 extends MorphismSequence {

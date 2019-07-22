@@ -26,12 +26,12 @@ public class A309279 implements Sequence {
   // restrictions are more severe -- e.g. in a square there are only four possible values).
   // Angles measure clockwise.
 
-  private static final class State {
-    private int mX;
-    private int mY;
-    private char mK;
+  static final class State {
+    int mX;
+    int mY;
+    char mK;
 
-    private State(final int x, final int y, final char k) {
+    State(final int x, final int y, final char k) {
       mX = x;
       mY = y;
       mK = k;

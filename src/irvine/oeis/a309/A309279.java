@@ -26,23 +26,40 @@ public class A309279 implements Sequence {
   // restrictions are more severe -- e.g. in a square there are only four possible values).
   // Angles measure clockwise.
 
-  static final class State {
+  /**
+   * A cell in the truncated trihexagonal tiling.
+   */
+  public static final class Cell {
     int mX;
     int mY;
     char mK;
 
-    State(final int x, final int y, final char k) {
+    /**
+     * Construct a new cell.
+     * @param x x-coordinate
+     * @param y y-coordinate
+     * @param k cell type
+     */
+    public Cell(final int x, final int y, final char k) {
       mX = x;
       mY = y;
       mK = k;
     }
 
+    /**
+     * Get the type of the cell.
+     * @return the cell type
+     */
+    public char getType() {
+      return mK;
+    }
+
     @Override
     public boolean equals(final Object obj) {
-      if (!(obj instanceof State)) {
+      if (!(obj instanceof Cell)) {
         return false;
       }
-      final State that = (State) obj;
+      final Cell that = (Cell) obj;
       return that.mX == mX && that.mY == mY && that.mK == mK;
     }
 
@@ -52,7 +69,7 @@ public class A309279 implements Sequence {
     }
   }
 
-  private State normal(final int x, final int y, final char k) {
+  private Cell normal(final int x, final int y, final char k) {
     switch (k) {
       case 'A':
       case 'B':
@@ -60,102 +77,102 @@ public class A309279 implements Sequence {
       case 'D':
       case 'E':
       case 'F':
-        return new State(x, y, k);
+        return new Cell(x, y, k);
       case 'G':
-        return new State(x, y - 1, 'C');
+        return new Cell(x, y - 1, 'C');
       case 'H':
-        return new State(x, y - 1, 'B');
+        return new Cell(x, y - 1, 'B');
       case 'I':
-        return new State(x - 1, y, 'E');
+        return new Cell(x - 1, y, 'E');
       case 'J':
-        return new State(x - 1, y, 'D');
+        return new Cell(x - 1, y, 'D');
       case 'K':
-        return new State(x - 1, y, 'C');
+        return new Cell(x - 1, y, 'C');
       case 'L':
-        return new State(x - 1, y + 1, 'F');
+        return new Cell(x - 1, y + 1, 'F');
       case 'M':
-        return new State(x - 1, y + 1, 'E');
+        return new Cell(x - 1, y + 1, 'E');
       default:
         throw new RuntimeException();
     }
   }
 
-  private State transit(final State state, final int theta) {
+  protected Cell transit(final Cell cell, final int theta) {
     assert theta % 30 == 0;
-    assert state != null && state.mK >= 'A' && state.mK <= 'F';
-    switch (state.mK) {
+    assert cell != null && cell.mK >= 'A' && cell.mK <= 'F';
+    switch (cell.mK) {
       case 'A':
-        return normal(state.mX, state.mY, (char) ('B' + theta / 30));
+        return normal(cell.mX, cell.mY, (char) ('B' + theta / 30));
       case 'B':
         switch (theta) {
           case 0:
-            return normal(state.mX, state.mY + 1, 'A');
+            return normal(cell.mX, cell.mY + 1, 'A');
           case 90:
-            return normal(state.mX, state.mY, 'C');
+            return normal(cell.mX, cell.mY, 'C');
           case 180:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           case 270:
-            return normal(state.mX, state.mY, 'M');
+            return normal(cell.mX, cell.mY, 'M');
           default:
             throw new RuntimeException();
         }
       case 'C':
         switch (theta) {
           case 30:
-            return normal(state.mX, state.mY + 1, 'F');
+            return normal(cell.mX, cell.mY + 1, 'F');
           case 90:
-            return normal(state.mX + 1, state.mY, 'A');
+            return normal(cell.mX + 1, cell.mY, 'A');
           case 150:
-            return normal(state.mX, state.mY, 'D');
+            return normal(cell.mX, cell.mY, 'D');
           case 210:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           case 270:
-            return normal(state.mX, state.mY, 'B');
+            return normal(cell.mX, cell.mY, 'B');
           case 330:
-            return normal(state.mX, state.mY + 1, 'A');
+            return normal(cell.mX, cell.mY + 1, 'A');
           default:
             throw new RuntimeException();
         }
       case 'D':
         switch (theta) {
           case 60:
-            return normal(state.mX + 1, state.mY, 'A');
+            return normal(cell.mX + 1, cell.mY, 'A');
           case 150:
-            return normal(state.mX, state.mY, 'E');
+            return normal(cell.mX, cell.mY, 'E');
           case 240:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           case 330:
-            return normal(state.mX, state.mY, 'C');
+            return normal(cell.mX, cell.mY, 'C');
           default:
             throw new RuntimeException();
         }
       case 'E':
         switch (theta) {
           case 30:
-            return normal(state.mX + 1, state.mY, 'A');
+            return normal(cell.mX + 1, cell.mY, 'A');
           case 90:
-            return normal(state.mX + 1, state.mY - 1, 'B');
+            return normal(cell.mX + 1, cell.mY - 1, 'B');
           case 150:
-            return normal(state.mX + 1, state.mY - 1, 'A');
+            return normal(cell.mX + 1, cell.mY - 1, 'A');
           case 210:
-            return normal(state.mX, state.mY, 'F');
+            return normal(cell.mX, cell.mY, 'F');
           case 270:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           case 330:
-            return normal(state.mX, state.mY, 'D');
+            return normal(cell.mX, cell.mY, 'D');
           default:
             throw new RuntimeException();
         }
       case 'F':
         switch (theta) {
           case 30:
-            return normal(state.mX, state.mY, 'E');
+            return normal(cell.mX, cell.mY, 'E');
           case 120:
-            return normal(state.mX + 1, state.mY - 1, 'A');
+            return normal(cell.mX + 1, cell.mY - 1, 'A');
           case 210:
-            return normal(state.mX, state.mY, 'G');
+            return normal(cell.mX, cell.mY, 'G');
           case 300:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           default:
             throw new RuntimeException();
         }
@@ -173,37 +190,37 @@ public class A309279 implements Sequence {
    * On a black square, turn 90 degrees left, flip the color of the tile, then move forward one unit.
    */
 
-  private final Set<State> mBlack = new HashSet<>();
-  private State mState;
+  private final Set<Cell> mBlack = new HashSet<>();
+  private Cell mCell;
   private int mAngle = 0;
 
   @Override
   public Z next() {
-    if (mState == null) {
-      mState = new State(0, 0, 'A');
+    if (mCell == null) {
+      mCell = new Cell(0, 0, 'A');
     } else {
-      if (mBlack.remove(mState)) {
+      if (mBlack.remove(mCell)) {
         // was black
-        if (mState.mK == 'A') {
+        if (mCell.mK == 'A') {
           mAngle += 330;
-        } else if (mState.mK == 'C' || mState.mK == 'E') {
+        } else if (mCell.mK == 'C' || mCell.mK == 'E') {
           mAngle += 300;
         } else {
           mAngle += 270;
         }
       } else {
         // was white
-        mBlack.add(mState);
-        if (mState.mK == 'A') {
+        mBlack.add(mCell);
+        if (mCell.mK == 'A') {
           mAngle += 30;
-        } else if (mState.mK == 'C' || mState.mK == 'E') {
+        } else if (mCell.mK == 'C' || mCell.mK == 'E') {
           mAngle += 60;
         } else {
           mAngle += 90;
         }
       }
       mAngle %= 360;
-      mState = transit(mState, mAngle);
+      mCell = transit(mCell, mAngle);
     }
     //System.out.println("(" + mState.mX + "," + mState.mY + "," + mState.mK + ") " + mAngle + " " + mBlack.contains(mState));
     return Z.valueOf(mBlack.size());

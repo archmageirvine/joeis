@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A set of <code>xy</code> coordinates
+ * A set of <code>(x,y)</code> coordinates.
  * @author jmason
  */
 public class CoordSet2 extends CoordSetGen<Square> {
@@ -569,16 +569,14 @@ public class CoordSet2 extends CoordSetGen<Square> {
     if (hole.exists(x, y)) {
       return;
     }
-    boolean b = exists(x, y);
-    assert b : "square in current";
+    assert exists(x, y) : "square in current";
     final CoordSet2 out = new CoordSet2(n, mFlagFree, mFlagFixed, mFlagOneSided);
     if (n == 4) {
       out.set4(x, y);
     } else {
       out.set2(x, y);
     }
-    b = containsAll(out);
-    assert b : "this contains out";
+    assert containsAll(out) : "this contains out";
     for (CoordSet2 cs : nl) {
       cs = cs.removeCentre(out);
       if (cs.connected()) {
@@ -626,18 +624,16 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return ncs;
   }
 
-  // list r90 sons of current object
   /**
-   * Perform rotation.
+   * Perform 90 degrees multiple rotation.
    * @return coordinate sets
    */
   public ArrayList<CoordSet2> listRot90CornerSons() {
     return listRot90CornerSons(null);
   }
 
-  // list r90 sons of current object avoiding putting squares in optional hole
   /**
-   * Perform rotation with an optional hole
+   * Perform 90 degrees multiple rotation with an optional hole
    * @param hole the hole
    * @return rotation
    */

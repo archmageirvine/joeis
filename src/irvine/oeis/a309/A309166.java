@@ -5,7 +5,7 @@ import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.oeis.a309.A309279.State;
+import irvine.oeis.a309.A309279.Cell;
 
 /**
  * A309166 Langton's ant on a truncated hexagonal tiling: number of black cells after n moves of the ant when starting on a dodecagon and looking towards an edge where the dodecagon meets a triangle.
@@ -27,69 +27,69 @@ public class A309166 implements Sequence {
   // Angles measure clockwise.
   // This is description is rotated 90 degrees from Fr&ouml;lich's pictures.
 
-  private State normal(final int x, final int y, final char k) {
+  private Cell normal(final int x, final int y, final char k) {
     switch (k) {
       case 'A':
       case 'B':
       case 'C':
-        return new State(x, y, k);
+        return new Cell(x, y, k);
       case 'D':
-        return new State(x, y - 1, 'B');
+        return new Cell(x, y - 1, 'B');
       case 'E':
-        return new State(x - 1, y, 'C');
+        return new A309279.Cell(x - 1, y, 'C');
       case 'F':
-        return new State(x - 1, y, 'B');
+        return new A309279.Cell(x - 1, y, 'B');
       case 'G':
-        return new State(x - 1, y + 1, 'C');
+        return new Cell(x - 1, y + 1, 'C');
       default:
         throw new RuntimeException();
     }
   }
 
-  private State transit(final State state, final int theta) {
+  private Cell transit(final A309279.Cell cell, final int theta) {
     assert theta % 30 == 0;
-    assert state != null && state.mK >= 'A' && state.mK <= 'C';
-    switch (state.mK) {
+    assert cell != null && cell.mK >= 'A' && cell.mK <= 'C';
+    switch (cell.mK) {
       case 'A':
         if (theta % 60 == 0) {
           switch (theta / 60) {
             case 0:
-              return new State(state.mX, state.mY + 1, 'A');
+              return new A309279.Cell(cell.mX, cell.mY + 1, 'A');
             case 1:
-              return new State(state.mX + 1, state.mY, 'A');
+              return new Cell(cell.mX + 1, cell.mY, 'A');
             case 2:
-              return new State(state.mX + 1, state.mY - 1, 'A');
+              return new Cell(cell.mX + 1, cell.mY - 1, 'A');
             case 3:
-              return new State(state.mX, state.mY - 1, 'A');
+              return new Cell(cell.mX, cell.mY - 1, 'A');
             case 4:
-              return new State(state.mX - 1, state.mY, 'A');
+              return new Cell(cell.mX - 1, cell.mY, 'A');
             case 5:
-              return new State(state.mX - 1, state.mY + 1, 'A');
+              return new A309279.Cell(cell.mX - 1, cell.mY + 1, 'A');
             default:
               throw new RuntimeException();
           }
         } else {
-          return normal(state.mX, state.mY, (char) ('B' + (theta - 30) / 60));
+          return normal(cell.mX, cell.mY, (char) ('B' + (theta - 30) / 60));
         }
       case 'B':
         switch (theta) {
           case 90:
-            return normal(state.mX + 1, state.mY, 'A');
+            return normal(cell.mX + 1, cell.mY, 'A');
           case 210:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           case 330:
-            return normal(state.mX, state.mY + 1, 'A');
+            return normal(cell.mX, cell.mY + 1, 'A');
           default:
             throw new RuntimeException();
         }
       case 'C':
         switch (theta) {
           case 30:
-            return normal(state.mX + 1, state.mY, 'A');
+            return normal(cell.mX + 1, cell.mY, 'A');
           case 150:
-            return normal(state.mX + 1, state.mY - 1, 'A');
+            return normal(cell.mX + 1, cell.mY - 1, 'A');
           case 270:
-            return normal(state.mX, state.mY, 'A');
+            return normal(cell.mX, cell.mY, 'A');
           default:
             throw new RuntimeException();
         }
@@ -105,25 +105,25 @@ public class A309166 implements Sequence {
    * On a black triangle, turn 60 degrees left, flip the color of the tile, then move forward one unit.
    */
 
-  private final Set<State> mBlack = new HashSet<>();
-  private State mState;
+  private final Set<Cell> mBlack = new HashSet<>();
+  private A309279.Cell mCell;
   private int mAngle = 90;
 
   @Override
   public Z next() {
-    if (mState == null) {
-      mState = new State(0, 0, 'A');
+    if (mCell == null) {
+      mCell = new Cell(0, 0, 'A');
     } else {
-      if (mBlack.remove(mState)) {
+      if (mBlack.remove(mCell)) {
         // was black
-        mAngle += mState.mK == 'A' ? 330 : 300;
+        mAngle += mCell.mK == 'A' ? 330 : 300;
       } else {
         // was white
-        mBlack.add(mState);
-        mAngle += mState.mK == 'A' ? 30 : 60;
+        mBlack.add(mCell);
+        mAngle += mCell.mK == 'A' ? 30 : 60;
       }
       mAngle %= 360;
-      mState = transit(mState, mAngle);
+      mCell = transit(mCell, mAngle);
     }
     //System.out.println("(" + mState.mX + "," + mState.mY + "," + mState.mK + ") " + mAngle + " " + mBlack.contains(mState));
     return Z.valueOf(mBlack.size());

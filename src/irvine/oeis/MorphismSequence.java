@@ -17,9 +17,9 @@ import irvine.math.z.Z;
 public class MorphismSequence implements Sequence {
 
   private static final int POS_FRACTION = 3; // 1 / (how much of mCurWord is reliable)
-  protected int mN; // index of current term to be returned
-  protected Z mK; // current number with some property
-  protected int mOffset; // OEIS offset1 as of generation time
+  //protected int mN; // index of current term to be returned
+  //protected Z mK; // current number with some property
+  //protected int mOffset; // OEIS offset1 as of generation time
   protected String mStart; // the starting word
   protected String mLimit; // start of the desired limiting word
   protected int mFactor; // each iterate increases the length roughly by this factor
@@ -35,7 +35,7 @@ public class MorphismSequence implements Sequence {
    * Empty constructor.
    */
   protected MorphismSequence() {
-    mOffset = 0;
+    //mOffset = 0;
   } // Constructor
 
   /**
@@ -43,10 +43,10 @@ public class MorphismSequence implements Sequence {
    * @param offset first valid term has this index
    * @param limit start of the desired limiting word (ignored)
    * @param start start with this word
-   * @param mappings pairs of digit string mappings, for example "0->001,1->0"
+   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
    */
   protected MorphismSequence(final int offset, final String start, final String limit, final String mappings) {
-    mOffset = offset;
+    //mOffset = offset;
     initialize(start, limit, mappings);
   } // Constructor
 
@@ -58,8 +58,8 @@ public class MorphismSequence implements Sequence {
    */
   protected void initialize(final String start, final String limit, final String mappings) {
     mFactor = 2;
-    mN = 0;
-    mK = Z.ZERO;
+    //mN = 0;
+    //mK = Z.ZERO;
     final String[] pairs = mappings.replaceAll(" ", "").split("\\,"); // remove spaces inserted by gen_seq4.pl
     mMap = new String[pairs.length * 2];
     int imap = 0;
@@ -183,16 +183,16 @@ public class MorphismSequence implements Sequence {
     if (iarg < args.length) {
       mappings = args[iarg++].replaceAll(" ", "");
     }
-    String start = mappings.substring(0, mappings.indexOf("-"));
+    String start = mappings.substring(0, mappings.indexOf('-'));
     if (iarg < args.length) {
-      start = args[iarg++];
+      start = args[iarg];
     }
     final MorphismSequence seq = new MorphismSequence();
     seq.mDebug = noTerms & 3; /// last 2 bits
     seq.initialize(start, start, mappings);
     int index = 1;
     while (index < noTerms) {
-      System.out.println(index + " " + seq.next().toString());
+      System.out.println(index + " " + seq.next());
       ++index;
     } // while index
   } // main

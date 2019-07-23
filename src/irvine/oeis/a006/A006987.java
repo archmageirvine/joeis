@@ -13,12 +13,16 @@ import irvine.oeis.Sequence;
 public class A006987 implements Sequence {
 
   private final TreeSet<Z> mPriority = new TreeSet<>();
-  private long mN = 4;
+  private long mN = 2 * start();
+
+  protected long start() {
+    return 2;
+  }
 
   @Override
   public Z next() {
-    while (mPriority.isEmpty() || Binomial.binomial(mN, 2).compareTo(mPriority.first()) <= 0) {
-      for (long k = 2; k <= mN / 2; ++k) {
+    while (mPriority.isEmpty() || Binomial.binomial(mN, start()).compareTo(mPriority.first()) <= 0) {
+      for (long k = start(); k <= mN / 2; ++k) {
         mPriority.add(Binomial.binomial(mN, k));
       }
       ++mN;

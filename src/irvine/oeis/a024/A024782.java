@@ -4,12 +4,12 @@ import irvine.oeis.FiniteSequence;
 
 /**
  * A024782 Every suffix prime and no 0 digits in base <code>7</code> (written in base <code>7)</code>.
- * @author Georg Fischer
+ * @author Sean A. Irvine
  */
 public class A024782 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A024782() {
-    super(2, 3, 5, 23, 25, 32, 43, 52, 65, 443, 452, 623, 625, 632, 652, 2452, 2623, 6625, 6652, 42623, 642623, 6642623);
+    super(A024781.build(7));
   }
 }

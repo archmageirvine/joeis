@@ -20,7 +20,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MontgomeryPMinusOneTest.class);
     suite.addTestSuite(PollardRhoTest.class);
     suite.addTestSuite(PMinusOneTest.class);
-    suite.addTestSuite(PPlusOneTest.class);
     suite.addTestSuite(PrimeDivisionTest.class);
     suite.addTestSuite(QuadraticSieveTest.class);
     suite.addTestSuite(SqufofTest.class);

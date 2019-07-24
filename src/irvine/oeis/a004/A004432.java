@@ -18,9 +18,10 @@ public class A004432 implements Sequence {
   public Z next() {
     while (true) {
       ++mN;
-      for (long x = 1; x <= LongUtils.sqrt(mN / 3); ++x) {
-        for (long y = x + 1; y <= LongUtils.sqrt((mN - 1 - x * x) / 2); ++y) {
-          final long z2 = mN - x * x - y * y;
+      for (long x = 1; 3 * x * x < mN; ++x) {
+        final long u = mN - x * x;
+        for (long y = x + 1; 2 * y * y < u; ++y) {
+          final long z2 = u - y * y;
           final long z = LongUtils.sqrt(z2);
           if (z * z == z2) {
             return Z.valueOf(mN);

@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000408;
+import irvine.oeis.a004.A004432;
 
 /**
- * A024797 Positions of primes in <code>A000408</code>.
+ * A024807 Positions of odd numbers in <code>A004432</code>.
  * @author Sean A. Irvine
  */
-public class A024797 extends A000408 {
+public class A024807 extends A004432 {
 
   private long mN = 0;
 
@@ -15,7 +15,7 @@ public class A024797 extends A000408 {
   public Z next() {
     while (true) {
       ++mN;
-      if (super.next().isProbablePrime()) {
+      if (!super.next().isEven()) {
         return Z.valueOf(mN);
       }
     }

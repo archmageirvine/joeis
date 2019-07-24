@@ -1,5 +1,6 @@
 package irvine.oeis.a326;
 
+import irvine.math.Cell;
 import irvine.math.z.Z;
 
 /**
@@ -15,7 +16,7 @@ public class A326745 extends A326743 {
     }
     mCount = 0;
     mPath.add(new Cell(0, 0, 'B'));
-    //search(new State(0, 0, 'B'), mN);
+    //search(new Cell(0, 0, 'B'), mN);
     // Take advantage of symmetry to make the search faster
     search(new Cell(0, 0, 'A'), mN - 1);
     search(new Cell(0, 0, 'C'), mN - 1);

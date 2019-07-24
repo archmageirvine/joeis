@@ -1,13 +1,13 @@
 package irvine.oeis.a024;
 
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000408;
+import irvine.oeis.a004.A004432;
 
 /**
- * A024797 Positions of primes in <code>A000408</code>.
+ * A024805 Positions of primes in <code>A004432</code>.
  * @author Sean A. Irvine
  */
-public class A024797 extends A000408 {
+public class A024805 extends A004432 {
 
   private long mN = 0;
 

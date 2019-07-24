@@ -5,21 +5,21 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024796 Numbers expressible in more than one way as <code>i^2 + j^2 + k^2</code>, where <code>1 &lt;= i &lt;= j &lt;=</code> k.
+ * A024804 Numbers that are the sum of 3 distinct nonzero squares in 2 or more ways.
  * @author Sean A. Irvine
  */
-public class A024796 implements Sequence {
+public class A024804 implements Sequence {
 
-  private long mN = 2;
+  private long mN = 61;
 
   @Override
   public Z next() {
     while (true) {
       ++mN;
-      long c = 0;
-      for (long x = 1; 3 * x * x <= mN; ++x) {
+      int c = 0;
+      for (long x = 1; 3 * x * x < mN; ++x) {
         final long u = mN - x * x;
-        for (long y = x; 2 * y * y <= u; ++y) {
+        for (long y = x + 1; 2 * y * y < u; ++y) {
           final long v = u - y * y;
           final long s = LongUtils.sqrt(v);
           if (s * s == v && ++c > 1) {

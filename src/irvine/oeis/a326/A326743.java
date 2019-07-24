@@ -3,6 +3,7 @@ package irvine.oeis.a326;
 import java.util.HashSet;
 import java.util.Set;
 
+import irvine.math.Cell;
 import irvine.math.z.Z;
 import irvine.oeis.a309.A309279;
 
@@ -40,7 +41,7 @@ public class A326743 extends A309279 {
     }
     mCount = 0;
     mPath.add(new Cell(0, 0, 'A'));
-    // search(new State(0, 0, 'A'), mN);
+    // search(new Cell(0, 0, 'A'), mN);
     // Take advantage of symmetry to make the search faster
     search(new Cell(0, 0, 'B'), mN - 1);
     search(new Cell(0, 0, 'C'), mN - 1);

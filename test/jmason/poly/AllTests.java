@@ -1,6 +1,5 @@
 package jmason.poly;
 
-import jmason.poly.CoordSet2Test;
 import junit.framework.Test;
 import junit.framework.TestSuite;
 
@@ -13,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(CoordSet2Test.class);
+    suite.addTestSuite(CoordSet2TTest.class);
     return suite;
   }
 }

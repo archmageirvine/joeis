@@ -24,7 +24,6 @@ public class MorphismSequence implements Sequence {
   protected String mLimit; // start of the desired limiting word
   protected int mFactor; // each iterate increases the length roughly by this factor
 
-  private String mOldWord; // previous word
   private String mCurWord; // current word expanded so far
   private String[] mMap; // pairs of String->String, flattened
   private int mPos; // current position in mCurWord
@@ -54,7 +53,7 @@ public class MorphismSequence implements Sequence {
    * Construct an instance which generates the fixed point of this morphism.
    * @param limit start of the desired limiting word (ignored)
    * @param start start with this word
-   * @param mappings pairs of digit string mappings, for example "0->001,1->0"
+   * @param mappings pairs of digit string mappings, for example "0-&gt;001,1-&gt;0"
    */
   protected void initialize(final String start, final String limit, final String mappings) {
     mFactor = 2;
@@ -87,11 +86,11 @@ public class MorphismSequence implements Sequence {
       ++iexp;
     } // while iexp
     iterates[iexp] = mCurWord;
-    mOldWord = iterates[iexp - 1];
+    final String oldWord = iterates[iexp - 1];
     mLimit = mCurWord.substring(0, 2);
-    if (!mLimit.equals(mOldWord.substring(0, 2))) {
+    if (!mLimit.equals(oldWord.substring(0, 2))) {
       mLimit = mStart;
-      mOldWord = mStart; // = iterates[0];
+      //oldWord = mStart; // = iterates[0];
     }
     mPos = 0;
     mMaxPos = mCurWord.length() / POS_FRACTION;

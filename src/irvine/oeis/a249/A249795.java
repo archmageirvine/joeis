@@ -69,10 +69,11 @@ public class A249795 implements Sequence {
       return Z.ONE;
     }
     mCount = 0;
-    //mPath.add(new Cell(0, 0, 'A'));
-     search(new Cell(0, 0, 'A'), mN);
-    // Take advantage of symmetry to make the search faster
-    //search(new Cell(0, 0, 'B'), mN - 1);
-    return Z.valueOf(mCount).multiply(1);
+    search(new Cell(0, 0, 'A'), mN);
+//    mPath.add(new Cell(0, 0, 'A'));
+//    search(new Cell(0, 0, 'B'), mN - 1);
+//    mCount *= 2L; // for the A->L transition
+//    search(new Cell(0, 1, 'F'), mN - 1);
+    return Z.valueOf(mCount);
   }
 }

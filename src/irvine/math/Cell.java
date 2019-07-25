@@ -2,8 +2,9 @@ package irvine.math;
 
 /**
  * A cell in a 2-dimensional lattice or tiling.
+ * @author Sean A. Irvine
  */
-public final class Cell {
+public class Cell {
 
   private final int mX;
   private final int mY;

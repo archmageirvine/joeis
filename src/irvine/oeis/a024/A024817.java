@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024817.
+ * A024817 <code>a(n) = [ 1/(2*t(n+1) - t(n) - t(n+2)) ]</code>, where <code>t(n) = tan(pi/2 - 1/n)</code> satisfies <code>n-1 &lt; t(n) &lt; n</code> for all <code>n &gt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A024817 implements Sequence {

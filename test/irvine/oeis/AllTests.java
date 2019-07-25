@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(BikTransformSequenceTest.class);
+    suite.addTestSuite(ContinuedFractionOfSqrtSequenceTest.class);
     suite.addTestSuite(CycleTransformSequenceTest.class);
     suite.addTestSuite(DikTransformSequenceTest.class);
     suite.addTestSuite(EuclidMullinSequenceTest.class);

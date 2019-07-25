@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024813.
+ * A024813 Positive integers m for which <code>f(m-1) &lt; f(m) &lt; f(m+1)</code>, where <code>f(m) = floor(cot(Pi/(2m)))</code>.
  * @author Sean A. Irvine
  */
 public class A024813 implements Sequence {

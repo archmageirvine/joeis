@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024815.
+ * A024815 <code>a(n) =</code> least k such that <code>tan(k) &lt; tan(a(n-1))</code>, for <code>n &gt;= 1</code>, with <code>a(0) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A024815 implements Sequence {

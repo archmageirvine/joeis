@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024812.
+ * A024812 Numbers n for which there is exactly one positive integer m such that <code>n = floor(cot(pi/(2m)))</code>.
  * @author Sean A. Irvine
  */
 public class A024812 implements Sequence {

@@ -1,4 +1,4 @@
-package irvine.oeis.a004;
+package irvine.oeis.a024;
 
 import irvine.oeis.AbstractSequenceTest;
 
@@ -6,10 +6,10 @@ import irvine.oeis.AbstractSequenceTest;
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A004104Test extends AbstractSequenceTest {
+public class A024831Test extends AbstractSequenceTest {
 
   @Override
   protected int maxTerms() {
-    return 8;
+    return 10;
   }
 }

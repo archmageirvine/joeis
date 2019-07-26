@@ -13,7 +13,7 @@ public class A024829 implements Sequence {
 
   private final MemorySequence mF = MemorySequence.cachedSequence(new A000045());
   private int mN = 1;
-  private long mM = 1;
+  private long mM = 2;
 
   private long f(final int n) {
     return mF.a(n).longValueExact();
@@ -35,10 +35,10 @@ public class A024829 implements Sequence {
   public Z next() {
     ++mN;
     while (true) {
-      ++mM;
       if (check()) {
         return Z.valueOf(mM);
       }
+      ++mM;
     }
   }
 }

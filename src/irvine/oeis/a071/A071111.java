@@ -1,21 +1,21 @@
-package irvine.oeis.a024;
+package irvine.oeis.a071;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024819 <code>a(n) =</code> least m such that if r and s in <code>{1/1, 1/3, 1/5,..., 1/(2n-1)}</code> satisfy r <code>&lt</code>; s, then r <code>&lt; k/m &lt</code>; s for some integer k.
+ * A071111.
  * @author Sean A. Irvine
  */
-public class A024819 implements Sequence {
+public class A071111 implements Sequence {
 
   private long mN = 1;
   private long mM = 1;
 
   private boolean check() {
-    for (long r = 1; r <= 2 * mN - 1; r += 2) {
+    for (long r = 2; r <= mN; ++r) {
       final long k = mM / r + 1;
-      for (long s = 1; s < r; s += 2) {
+      for (long s = 1; s < r; ++s) {
         // (1/r) < (1/s), (mM / r) < (mM / s)
         // Test if there is an integer k between
         if (s * k >= mM) {

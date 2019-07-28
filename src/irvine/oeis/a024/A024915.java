@@ -19,6 +19,8 @@ public class A024915 implements Sequence {
   // 0 to be the difference that is repeated.  Then the search is somewhat reduced and we
   // can multiply up to cover the other cases.
 
+  // There is probably a much smarter way of generating this sequence ...
+
   private long mN = 0;
   private long mCount = 0;
 

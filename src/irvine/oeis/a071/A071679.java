@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A071679 Least k such that the maximum number of elements among the continued fractions for k/1, k/2, k/3, k/4 ...., k/k equals n.
+ * A071679 Least k such that the maximum number of elements among the continued fractions for <code>k/1, k/2, k/3, k/4</code> ...., <code>k/k</code> equals <code>n</code>.
  * @author Georg Fischer
  */
 public class A071679 extends LinearRecurrence {

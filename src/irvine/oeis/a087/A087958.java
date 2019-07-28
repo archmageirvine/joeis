@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A087958 a(n) is the square of the n-th partial sum minus the n-th partial sum of the squares, divided by a(n-1), for all n>=1, starting with a(0)=1, a(1)=5.
+ * A087958 <code>a(n)</code> is the square of the n-th partial sum minus the n-th partial sum of the squares, divided by <code>a(n-1)</code>, for all <code>n&gt;=1</code>, starting with <code>a(0)=1, a(1)=5</code>.
  * @author Georg Fischer
  */
 public class A087958 extends LinearRecurrence {

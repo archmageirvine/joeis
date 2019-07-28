@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A137200 Number of ways to tile an n X 1 strip with 1 X 1 squares and 2 X 1 dominoes with the restriction that no three consecutive tiles are of the same type.
+ * A137200 Number of ways to tile an <code>n X 1</code> strip with <code>1 X 1</code> squares and <code>2 X 1</code> dominoes with the restriction that no three consecutive tiles are of the same type.
  * @author Georg Fischer
  */
 public class A137200 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A173435 Inverse binomial transform of A143025, assuming offset zero there.
+ * A173435 Inverse binomial transform of <code>A143025</code>, assuming offset zero there.
  * @author Georg Fischer
  */
 public class A173435 extends LinearRecurrence {

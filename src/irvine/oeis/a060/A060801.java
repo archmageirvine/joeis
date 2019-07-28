@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A060801 Invert transform of odd numbers: a(n) = Sum_{k=1..n} (2*k+1)*a(n-k), a(0)=1.
+ * A060801 Invert transform of odd numbers: <code>a(n) = Sum_{k=1..n} (2*k+1)*a(n-k), a(0)=1</code>.
  * @author Georg Fischer
  */
 public class A060801 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A125651 Numbers k such that A125650(k) is a perfect square.
+ * A125651 Numbers k such that <code>A125650(k)</code> is a perfect square.
  * @author Georg Fischer
  */
 public class A125651 extends LinearRecurrence {

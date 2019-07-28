@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130103 Expansion of e.g.f. <code>e^(2x)-(1+x)*e^x+x</code>.
+ * A130103 Expansion of <code>e^(2x)-(1+x)*e^x+x</code>.
  * @author Georg Fischer
  */
 public class A130103 extends GeneratingFunctionSequence {

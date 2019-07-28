@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.NegativePositiveSequence;
 
 /**
- * A131393 Conjectured permutation of the positive integers using Rule 2 with a(1)=1.
+ * A131393 Conjectured permutation of the positive integers using Rule 2 with <code>a(1)=1</code>.
  * @author Georg Fischer
  */
 public class A131393 extends NegativePositiveSequence {

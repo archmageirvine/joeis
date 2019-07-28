@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A271745 Number of set partitions of [n] such that 6 is the largest element of the last block.
+ * A271745 Number of set partitions of <code>[n]</code> such that 6 is the largest element of the last block.
  * @author Georg Fischer
  */
 public class A271745 extends LinearRecurrence {

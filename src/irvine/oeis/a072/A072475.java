@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A072475.
+ * A072475 Sum of next n composite numbers.
  * @author Sean A. Irvine
  */
 public class A072475 extends A002808 {

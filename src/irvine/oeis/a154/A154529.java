@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A154529 A090040 mod 9.
+ * A154529 <code>A090040 mod 9</code>.
  * @author Georg Fischer
  */
 public class A154529 extends LinearRecurrence {

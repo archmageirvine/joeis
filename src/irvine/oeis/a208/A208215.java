@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A208215 Number of ways of dividing a 3 X n rectangle into rectangles of integer side lengths.
+ * A208215 Number of ways of dividing a <code>3 X n</code> rectangle into rectangles of integer side lengths.
  * @author Georg Fischer
  */
 public class A208215 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a141.A141468;
 
 /**
- * A051349.
+ * A051349 Sum of first n nonprimes.
  * @author Sean A. Irvine
  */
 public class A051349 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A082210 Square root of the squares arising in A082209.
+ * A082210 Square root of the squares arising in <code>A082209</code>.
  * @author Georg Fischer
  */
 public class A082210 extends LinearRecurrence {

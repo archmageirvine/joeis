@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A024851.
+ * A024851 Least m such that if r and s in <code>{-F(2*h) + tau*(F(2*h-1): h = 1,2,...,n}</code> satisfy r <code>&lt</code>; s, then r <code>&lt; k/m &lt</code>; s for some integer k, where F <code>= A000045</code> (Fibonacci numbers) and tau <code>= (1+sqrt(5))/2</code> (golden ratio).
  * @author Sean A. Irvine
  */
 public class A024851 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A103201 a(1) = 11, a(2) = 19, a(3) = 89, a(4) = 151; for n >= 5, a(n) = sqrt(a(n-4)^2 + 60*a(n-2)^2 + 4*a(n-2)*sqrt(210 + 15*a(n-4)^2)).
+ * A103201 <code>a(1) = 11, a(2) = 19, a(3) = 89, a(4) = 151</code>; for <code>n &gt;= 5, a(n) = sqrt(a(n-4)^2 + 60*a(n-2)^2 + 4*a(n-2)*sqrt(210 + 15*a(n-4)^2))</code>.
  * @author Georg Fischer
  */
 public class A103201 extends LinearRecurrence {

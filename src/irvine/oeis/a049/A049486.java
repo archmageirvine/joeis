@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A049486 Maximum length of non-crossing path on n X n square lattice.
+ * A049486 Maximum length of non-crossing path on <code>n X n</code> square lattice.
  * @author Georg Fischer
  */
 public class A049486 extends LinearRecurrence {

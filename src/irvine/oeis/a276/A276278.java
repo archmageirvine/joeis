@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A276278 Complement of A026474.
+ * A276278 Complement of <code>A026474</code>.
  * @author Georg Fischer
  */
 public class A276278 extends LinearRecurrence {

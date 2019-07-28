@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A109474 a(1)=1, a(2)=3; thereafter, a(n) = least positive integer > a(n-1) and not equal to a(i)+a(j)+a(k) for 1<=i<=j<=k<=n-1.
+ * A109474 <code>a(1)=1, a(2)=3</code>; thereafter, <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not equal to <code>a(i)+a(j)+a(k)</code> for <code>1&lt;=i&lt;=j&lt;=k&lt;=n-1</code>.
  * @author Georg Fischer
  */
 public class A109474 extends LinearRecurrence {

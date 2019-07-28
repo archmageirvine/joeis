@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A071111.
+ * A071111 <code>a(n)</code> is the least integer x such that there exists an integer in the open interval <code>(x/(i+1), x/i)</code> for <code>i= n-1, n-2</code> ..., <code>3, 2, 1</code>.
  * @author Sean A. Irvine
  */
 public class A071111 implements Sequence {

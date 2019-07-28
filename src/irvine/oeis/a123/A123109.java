@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A123109 a(0) = 1, a(1) = 3, a(n) = 3*a(n-1) + 3 for n > 1.
+ * A123109 <code>a(0) = 1, a(1) = 3, a(n) = 3*a(n-1) + 3</code> for <code>n &gt; 1</code>.
  * @author Georg Fischer
  */
 public class A123109 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A163811 Expansion of (1 - x) * (1 - x^10) / ((1 - x^5) * (1 - x^6)) in powers of x.
+ * A163811 Expansion of <code>(1 - x) * (1 - x^10) / ((1 - x^5) * (1 - x^6))</code> in powers of <code>x</code>.
  * @author Georg Fischer
  */
 public class A163811 extends LinearRecurrence {

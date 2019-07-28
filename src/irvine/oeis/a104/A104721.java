@@ -4,7 +4,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A104721 Expansion of <code>(1+x)^2/(1-4*x^2)</code>.
+ * A104721 Expansion of <code>(1+x)^2/(1-4x^2)</code>.
  * @author Georg Fischer
  */
 public class A104721 extends GeneratingFunctionSequence {

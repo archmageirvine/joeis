@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A248834 The numerator of curvature of touching circles inscribed in a special way in the smaller segment of circle of radius 1/6 divided by a chord of length sqrt(8/75).
+ * A248834 The numerator of curvature of touching circles inscribed in a special way in the smaller segment of circle of radius 1/6 divided by a chord of length <code>sqrt(8/75)</code>.
  * @author Georg Fischer
  */
 public class A248834 extends LinearRecurrence {

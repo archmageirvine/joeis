@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A137171 Interleaved reading of A000749 and its first to third differences.
+ * A137171 Interleaved reading of <code>A000749</code> and its first to third differences.
  * @author Georg Fischer
  */
 public class A137171 extends LinearRecurrence {

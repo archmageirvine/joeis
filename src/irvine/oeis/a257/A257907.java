@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.NegativePositiveSequence;
 
 /**
- * A257907 After 1, the first differences of A257906 (its d-sequence).
+ * A257907 After 1, the first differences of <code>A257906</code> (its <code>d-sequence)</code>.
  * @author Georg Fischer
  */
 public class A257907 extends NegativePositiveSequence {

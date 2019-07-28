@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A052542 a(n) = 2*a(n-1) + a(n-2), with a(0) = 1, a(1) = 2, a(2) = 4.
+ * A052542 <code>a(n) = 2*a(n-1) + a(n-2)</code>, with <code>a(0) = 1, a(1) = 2, a(2) = 4</code>.
  * @author Georg Fischer
  */
 public class A052542 extends LinearRecurrence {

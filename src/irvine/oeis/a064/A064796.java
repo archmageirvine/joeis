@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A064796 Largest integer m such that every permutation (p_1, ..., p_n) of (1, ..., n) satisfies p_i * p_{i+1} >= m for some i, 1 <= i <= n, where p_{n+1} = p_1.
+ * A064796 Largest integer m such that every permutation <code>(p_1</code>, ..., <code>p_n)</code> of <code>(1</code>, ..., <code>n)</code> satisfies <code>p_i * p_{i+1} &gt;=</code> m for some i, <code>1 &lt;= i &lt;=</code> n, where <code>p_{n+1} = p_1</code>.
  * @author Georg Fischer
  */
 public class A064796 extends LinearRecurrence {

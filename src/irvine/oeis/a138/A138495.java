@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A138495 First differences of A138477.
+ * A138495 First differences of <code>A138477</code>.
  * @author Georg Fischer
  */
 public class A138495 extends LinearRecurrence {

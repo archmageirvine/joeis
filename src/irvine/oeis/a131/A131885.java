@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A131885 a(n) = 4a(n-1)-6a(n-2)+4a(n-3), n > 3; a(0) = 1, a(1) = 2, a(2) = 4, a(3) = 6.
+ * A131885 <code>a(n) = 4a(n-1)-6a(n-2)+4a(n-3), n &gt; 3; a(0) = 1, a(1) = 2, a(2) = 4, a(3) = 6</code>.
  * @author Georg Fischer
  */
 public class A131885 extends LinearRecurrence {

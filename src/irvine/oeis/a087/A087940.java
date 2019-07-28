@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A087940 a(n)=sum(k=0,n,binomial(n+(-1)^k,k)).
+ * A087940 <code>a(n)=sum(k=0,n,binomial(n+(-1)^k,k))</code>.
  * @author Georg Fischer
  */
 public class A087940 extends LinearRecurrence {

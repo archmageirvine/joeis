@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A091085 a(n) = mod(A078008(n),10).
+ * A091085 <code>a(n) = mod(A078008(n),10)</code>.
  * @author Georg Fischer
  */
 public class A091085 extends LinearRecurrence {

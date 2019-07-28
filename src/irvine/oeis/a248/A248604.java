@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A248604 Numbers a(n) which are the minimum number of moves needed in a variation of the tower of Hanoi with 4 towers and n disks.
+ * A248604 Numbers <code>a(n)</code> which are the minimum number of moves needed in a variation of the tower of Hanoi with 4 towers and n disks.
  * @author Georg Fischer
  */
 public class A248604 extends LinearRecurrence {

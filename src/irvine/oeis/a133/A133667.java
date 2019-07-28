@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A133667 a(n) = a(n-1)-25*a(n-2), a(0)=1, a(1)=5 .
+ * A133667 <code>a(n) = a(n-1)-25*a(n-2), a(0)=1, a(1)=5 </code>.
  * @author Georg Fischer
  */
 public class A133667 extends LinearRecurrence {

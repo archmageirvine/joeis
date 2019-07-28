@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A134067 Row sums of triangle A134066.
+ * A134067 Row sums of triangle <code>A134066</code>.
  * @author Georg Fischer
  */
 public class A134067 extends LinearRecurrence {

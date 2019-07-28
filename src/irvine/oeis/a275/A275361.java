@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A275361 An eventually quasilinear solution to Hofstadter's Q-recurrence.
+ * A275361 An eventually quasilinear solution to Hofstadter's <code>Q-recurrence</code>.
  * @author Georg Fischer
  */
 public class A275361 extends LinearRecurrence {

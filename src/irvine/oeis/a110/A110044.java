@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A110044 a(0) = 11, a(1) = 23; for n > 1, a(n) = |a(n-1) - a(n-2)|.
+ * A110044 <code>a(0) = 11, a(1) = 23</code>; for <code>n &gt; 1, a(n) = |a(n-1) - a(n-2)|</code>.
  * @author Georg Fischer
  */
 public class A110044 extends LinearRecurrence {

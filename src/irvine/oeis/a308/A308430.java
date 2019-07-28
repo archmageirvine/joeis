@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A308430 Number of <code>0</code>'s minus number of <code>1</code>'s among the edge truncated binary representations of the first n prime numbers.
+ * A308430 allocated for Andrea Fornaciari.
  * @author Sean A. Irvine
  */
 public class A308430 implements Sequence {

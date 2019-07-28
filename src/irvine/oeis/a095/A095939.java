@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A095939 a(n+2) = 5a(n+1) - 3a(n) (n >= 1); a(0) = 1, a(1) = 2, a(2) = 9.
+ * A095939 <code>a(n+2) = 5a(n+1) - 3a(n) (n &gt;= 1); a(0) = 1, a(1) = 2, a(2) = 9</code>.
  * @author Georg Fischer
  */
 public class A095939 extends LinearRecurrence {

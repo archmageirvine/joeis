@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A102709 Let a(n,m) = card{f^(n) : f is a mapping from a set of m elements into itself}, where f^(l)(x) = f^(l-1)(f(x)),l>0, f^(0)(x) = x; sequence gives a(n,5).
+ * A102709 Let <code>a(n,m) = card{f^(n)</code> : f is a mapping from a set of m elements into itself}, where <code>f^(l)(x) = f^(l-1)(f(x)),l&gt;0, f^(0)(x) =</code> x; sequence gives <code>a(n,5)</code>.
  * @author Georg Fischer
  */
 public class A102709 extends LinearRecurrence {

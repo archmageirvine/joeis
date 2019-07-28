@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A027560 Number of 5-balanced strings of length n: let d(S)=
+ * A027560 Number of 5-balanced strings of length n: let <code>d(S)= #(1)</code>'s in S <code>- #(0)</code>'s, then S is k-balanced if every substring T has <code>-k&lt;=d(T)&lt;=k</code>; here <code>k=5</code>.
  * @author Georg Fischer
  */
 public class A027560 extends LinearRecurrence {

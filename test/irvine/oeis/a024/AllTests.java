@@ -907,6 +907,16 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A024913Test.class);
     suite.addTestSuite(A024914Test.class);
     suite.addTestSuite(A024915Test.class);
+    suite.addTestSuite(A024916Test.class);
+    suite.addTestSuite(A024917Test.class);
+    suite.addTestSuite(A024918Test.class);
+    suite.addTestSuite(A024919Test.class);
+    suite.addTestSuite(A024920Test.class);
+    suite.addTestSuite(A024921Test.class);
+    suite.addTestSuite(A024922Test.class);
+    suite.addTestSuite(A024923Test.class);
+    suite.addTestSuite(A024924Test.class);
+    suite.addTestSuite(A024925Test.class);
     suite.addTestSuite(A024966Test.class);
     suite.addTestSuite(A024982Test.class);
     suite.addTestSuite(A024983Test.class);

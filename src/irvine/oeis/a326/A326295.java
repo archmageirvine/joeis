@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A326295 allocated for Matthias Wenzel.
+ * A326295 Numbers that are contained in their <code>MD4</code> hashes in binary notation.
  * @author Sean A. Irvine
  */
 public class A326295 implements Sequence {

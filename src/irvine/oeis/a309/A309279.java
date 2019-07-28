@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A309279 allocated for Felix Fr&#246;hlich.
+ * A309279 Langton's ant on a truncated trihexagonal tiling: number of black cells after n moves of the ant when starting on a dodecagon.
  * @author Sean A. Irvine
  */
 public class A309279 implements Sequence {

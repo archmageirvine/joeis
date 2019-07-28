@@ -3,7 +3,7 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * Partial sum of another sequence.
+ * Partial sums of another sequence.
  * @author Sean A. Irvine
  */
 public class PartialSumSequence implements Sequence {
@@ -12,7 +12,7 @@ public class PartialSumSequence implements Sequence {
   protected Z mSum = Z.ZERO;
 
   /**
-   * Partial sum of another sequence.
+   * Partial sums of another sequence.
    * @param seq sequence to compute partial sums of
    */
   public PartialSumSequence(final Sequence seq) {

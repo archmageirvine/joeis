@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144516 <code>(15*n^2+45*n-70)*binomial(n+4,6)/8</code>.
+ * A144516 <code>a(n) = (15*n^2+45*n-70)*binomial(n+4,6)/8</code>.
  * @author Georg Fischer
  */
 public class A144516 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a309.A309279;
 
 /**
- * A326743.
+ * A326743 Number of length <code>n self-avoiding</code> walks on the kisrhombille tiling starting at a degree 12 vertex.
  * @author Sean A. Irvine
  */
 public class A326743 extends A309279 {

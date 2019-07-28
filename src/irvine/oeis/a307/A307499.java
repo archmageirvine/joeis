@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307499 allocated for Rashid Naimi.
+ * A307499 The number of primes between two consecutive prime Lucas numbers, bounds excluded.
  * @author Sean A. Irvine
  */
 public class A307499 implements Sequence {

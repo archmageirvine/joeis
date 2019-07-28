@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A308984.
+ * A308984 allocated for Marc Morgenegg.
  * @author Sean A. Irvine
  */
 public class A308984 extends MemorySequence {
@@ -21,13 +21,7 @@ public class A308984 extends MemorySequence {
         return prev.add(n - 1).subtract(m);
       }
     }
-    // i.e. prev did not occur any earlier
+    // prev did not occur any earlier
     return prev.subtract(get(n - 2)).abs();
   }
 }
-
-/*
-
-
-If a(n) is not a term of a(0..n-1): a(n+1) = |a(n) - a(n-1)|; otherwise a(n+1) = a(n) + n - m, where a(m) = a(n), m < n, and m is maximal. a(0)=0, a(1)=1.
- */

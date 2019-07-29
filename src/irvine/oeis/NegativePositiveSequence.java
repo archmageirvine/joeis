@@ -32,7 +32,6 @@ public class NegativePositiveSequence implements Sequence {
 
   /**
    * Constructor with parameters.
-   *
    * @param rule major rule number according to Clark Kimberling
    * @param sub minor rule number
    * @param op operation: ak or dk
@@ -65,6 +64,7 @@ public class NegativePositiveSequence implements Sequence {
 
   @Override
   public Z next() {
+    // implemented variants are ak, dk only
     final Z result;
     switch (mVariant) {
       case 1: // ak
@@ -95,7 +95,7 @@ public class NegativePositiveSequence implements Sequence {
         }
       } // while downwards
       if (busy) {
-        ++mDk;
+        mDk = 1; // start upwards
       }
       while (busy) { // upwards
         mAk = mAk1 + mDk;
@@ -120,7 +120,7 @@ public class NegativePositiveSequence implements Sequence {
         }
       } // while negative
       if (busy) {
-        ++mDk; // start upwards
+        mDk = 1; // start upwards
       }
       while (busy) { // upwards
         mAk = mAk1 + mDk;
@@ -147,8 +147,7 @@ public class NegativePositiveSequence implements Sequence {
     }
     mAk1 = mAk;
     mDk1 = mDk;
-    ++mK;
+    ++mK; // iterate
     return result;
   } // next
-
 } // class NegativePositiveSequence

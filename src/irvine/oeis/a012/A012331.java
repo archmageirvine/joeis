@@ -13,13 +13,15 @@ import irvine.oeis.Sequence;
 public class A012331 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private int mN = 0;
+  private int mN = -2;
   private Z mF = Z.ONE;
 
   @Override
   public Z next() {
     mN += 2;
-    mF = mF.multiply(mN).multiply(mN - 1);
+    if (mN > 0) {
+      mF = mF.multiply(mN).multiply(mN - 1);
+    }
     return RING.atan(RING.multiply(RING.asin(RING.x(), mN), RING.sin(RING.x(), mN), mN), mN).coeff(mN).multiply(mF).toZ();
   }
 }

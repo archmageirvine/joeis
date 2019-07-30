@@ -13,7 +13,6 @@ public class A024787 extends MemoryFunction2<Integer, Z[]> implements Sequence {
   // After Alois P. Heinz
 
   private static final Z[] C1 = {Z.ONE, Z.ZERO};
-  private static final Z[] C2 = {Z.ZERO, Z.ZERO};
   private int mN = 0;
 
   protected int target() {
@@ -25,8 +24,11 @@ public class A024787 extends MemoryFunction2<Integer, Z[]> implements Sequence {
     if (n == 0 || m == 1) {
       return C1;
     }
-    final Z[] g = m > n ? C2 : get(n - m, m);
     final Z[] b = get(n, m - 1);
+    if (m > n) {
+      return b;
+    }
+    final Z[] g = get(n - m, m);
     return new Z[] {
       b[0].add(g[0]),
       b[1].add(g[1]).add(m == target() ? g[0] : Z.ZERO)

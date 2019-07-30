@@ -20,8 +20,8 @@ public class NegativePositiveSequence implements Sequence {
   protected int mDk1;
   protected int mA1;
   protected int mD1;
-  protected HashMap<Integer, Integer> mASet;
-  protected HashMap<Integer, Integer> mDSet;
+  protected HashMap<Integer, Integer> mAMap;
+  protected HashMap<Integer, Integer> mDMap;
 
   /**
    * No-args constructor.
@@ -38,13 +38,13 @@ public class NegativePositiveSequence implements Sequence {
    * @param a1 start value of ak
    * @param d1 start value pf dk
    */
-  public NegativePositiveSequence(int rule, int sub, String op, int a1, int d1) {
+  public NegativePositiveSequence(final int rule, final int sub, final String op, final int a1, final int d1) {
     mRule = rule;
     mSub = sub;
     mA1 = a1;
     mD1 = d1;
-    mASet = new HashMap<>(2048);
-    mDSet = new HashMap<>(2048);
+    mAMap = new HashMap<>(2048);
+    mDMap = new HashMap<>(2048);
     if ("ak".equals(op)) {
       mVariant = 1;
     } else if ("dk".equals(op)) {
@@ -58,8 +58,8 @@ public class NegativePositiveSequence implements Sequence {
     mAk1 = mAk;
     mDk = mD1;
     mDk1 = mDk;
-    mASet.put(mAk, mK);
-    mDSet.put(mDk, mK); // dk is h
+    mAMap.put(mAk, mK);
+    mDMap.put(mDk, mK); // dk is h
   } // no-args constructor
 
   @Override
@@ -86,10 +86,10 @@ public class NegativePositiveSequence implements Sequence {
       }
       while (busy && mDk > mSub - mAk1) { // downwards
         mAk = mAk1 + mDk;
-        if (mASet.get(mAk) == null && mDSet.get(mDk) == null && mAk > 0) {
+        if (mAk > 0 && mAMap.get(mAk) == null && mDMap.get(mDk) == null) {
           busy = false;
-          mASet.put(mAk, mK);
-          mDSet.put(mDk, mK);
+          mAMap.put(mAk, mK);
+          mDMap.put(mDk, mK);
         } else {
           --mDk;
         }
@@ -99,10 +99,10 @@ public class NegativePositiveSequence implements Sequence {
       }
       while (busy) { // upwards
         mAk = mAk1 + mDk;
-        if (mASet.get(mAk) == null && mDSet.get(mDk) == null) {
+        if (mAMap.get(mAk) == null && mDMap.get(mDk) == null) {
           busy = false;
-          mASet.put(mAk, mK);
-          mDSet.put(mDk, mK);
+          mAMap.put(mAk, mK);
+          mDMap.put(mDk, mK);
         } else {
           ++mDk;
         }
@@ -111,10 +111,10 @@ public class NegativePositiveSequence implements Sequence {
       mDk = mSub - mAk1 + 1; // start upwards in negative
       while (busy && mDk < 0) {
         mAk = mAk1 + mDk;
-        if (mASet.get(mAk) == null && mDSet.get(mDk) == null && mAk > 0) {
+        if (mAk > 0 && mAMap.get(mAk) == null && mDMap.get(mDk) == null) {
           busy = false;
-          mASet.put(mAk, mK);
-          mDSet.put(mDk, mK);
+          mAMap.put(mAk, mK);
+          mDMap.put(mDk, mK);
         } else {
           ++mDk;
         }
@@ -124,10 +124,10 @@ public class NegativePositiveSequence implements Sequence {
       }
       while (busy) { // upwards
         mAk = mAk1 + mDk;
-        if (mASet.get(mAk1 - mDk) == null && mDSet.get(mDk) == null) {
+        if (mAMap.get(mAk1 - mDk) == null && mDMap.get(mDk) == null) {
           busy = false;
-          mASet.put(mAk, mK);
-          mDSet.put(mDk, mK);
+          mAMap.put(mAk, mK);
+          mDMap.put(mDk, mK);
         } else {
           ++mDk;
         }
@@ -136,10 +136,10 @@ public class NegativePositiveSequence implements Sequence {
       mDk = mSub - mAk + 1;
       while (busy) { // upwards
         mAk = mAk1 + mDk;
-        if (mASet.get(mAk) == null && mDSet.get(mDk) == null && mAk > 0) {
+        if (mAk > 0 && mAMap.get(mAk) == null && mDMap.get(mDk) == null) {
           busy = false;
-          mASet.put(mAk, mK);
-          mDSet.put(mDk, mK);
+          mAMap.put(mAk, mK);
+          mDMap.put(mDk, mK);
         } else {
           ++mDk;
         }

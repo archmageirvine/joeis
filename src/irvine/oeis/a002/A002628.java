@@ -13,12 +13,14 @@ import irvine.oeis.a000.A000166;
 public class A002628 implements Sequence {
 
   private final MemorySequence mD = MemorySequence.cachedSequence(new A000166());
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     Z sum = Z.ZERO;
-    ++mN;
     for (int k = 0; k <= mN / 2; ++k) {
       sum = sum.add(Binomial.binomial(mN - k, k).multiply(mD.a(mN - k).add(mD.a(mN - k - 1))));
     }

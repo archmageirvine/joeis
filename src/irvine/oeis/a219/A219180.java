@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A219180.
+ * A219180 Number <code>T(n,k)</code> of partitions of n into k distinct prime parts; triangle <code>T(n,k), n&gt;=0</code>, read by rows.
  * @author Sean A. Irvine
  */
 public class A219180 extends MemoryFunction2<Integer, Z[]> implements Sequence {

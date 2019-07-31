@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024934.
+ * A024934 Sum of remainders <code>n mod</code> p, over all primes p <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A024934 implements Sequence {

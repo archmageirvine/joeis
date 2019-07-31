@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024939.
+ * A024939 Number of partitions of n into distinct odd primes.
  * @author Sean A. Irvine
  */
 public class A024939 extends A024941 {

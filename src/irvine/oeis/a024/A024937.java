@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024937.
+ * A024937 <code>a(n) =</code> number of <code>2</code>'s in all partitions of n into distinct primes.
  * @author Sean A. Irvine
  */
 public class A024937 extends MemoryFunction2<Integer, Z[]> implements Sequence {

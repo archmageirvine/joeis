@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(CoordSet2Test.class);
     suite.addTestSuite(CoordSet2TTest.class);
+    suite.addTestSuite(PolySideTest.class);
     return suite;
   }
 }

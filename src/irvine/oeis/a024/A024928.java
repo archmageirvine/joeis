@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024928.
+ * A024928 Sum of <code>floor( (n + p(k))/k ), k = 1..n</code>.
  * @author Sean A. Irvine
  */
 public class A024928 implements Sequence {

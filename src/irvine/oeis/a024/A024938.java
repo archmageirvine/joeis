@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A024938.
+ * A024938 Total number of parts in all partitions of n into distinct prime parts.
  * @author Sean A. Irvine
  */
 public class A024938 extends MemoryFunction2<Integer, Z[]> implements Sequence {

@@ -239,7 +239,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
   }
 
   @Override
-  public Group<E> subgroup(final E element) {
+  public AbstractGroup<E> subgroup(final E element) {
     if (zero().equals(element)) {
       return new Singleton<>(element);
     }
@@ -247,7 +247,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
   }
 
   @Override
-  public Group<E> generateSubgroup(final Set<E> elements) {
+  public AbstractGroup<E> generateSubgroup(final Set<E> elements) {
     if (equals(elements)) {
       return this;
     }

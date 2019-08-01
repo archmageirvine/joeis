@@ -5,7 +5,6 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class GroupFactoryTest extends TestCase {
@@ -20,5 +19,21 @@ public class GroupFactoryTest extends TestCase {
     assertEquals(Z.valueOf(16), GroupFactory.createGroup("C4:C4").size());
     assertEquals(Z.valueOf(36), GroupFactory.createGroup("C3.A4").size());
     assertEquals(Z.valueOf(27), GroupFactory.createGroup("He3").size());
+  }
+
+  public void testSmall() {
+    int n = 0;
+    while (true) {
+      try {
+        final String[] names = GroupFactory.smallGroupNames(++n);
+        assertEquals(GroupUtils.gnu(n).intValueExact(), names.length);
+        for (final String name : names) {
+          assertEquals(n, GroupFactory.createGroup(name).size().intValueExact());
+        }
+      } catch (final UnsupportedOperationException e) {
+        assertTrue(n > 10);
+        return;
+      }
+    }
   }
 }

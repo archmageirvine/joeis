@@ -1,12 +1,12 @@
 package irvine.math.group;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.api.Group;
 import irvine.math.z.Z;
-
-import java.util.Arrays;
-import java.util.HashSet;
 
 /**
  * Utility functions relating to groups.

@@ -5,6 +5,7 @@ import java.util.Iterator;
 import irvine.math.api.Group;
 import irvine.math.api.Pow;
 import irvine.math.api.Sqrt;
+import irvine.math.group.AbstractGroup;
 import irvine.math.group.AbstractOrderedIntegralDomain;
 import irvine.math.group.IntegerMultiples;
 import irvine.util.AbstractIterator;
@@ -79,7 +80,7 @@ public class Integers extends AbstractOrderedIntegralDomain<Z> implements Sqrt<Z
   }
 
   @Override
-  public Group<Z> subgroup(final Z element) {
+  public AbstractGroup<Z> subgroup(final Z element) {
     return new IntegerMultiples(element);
   }
 

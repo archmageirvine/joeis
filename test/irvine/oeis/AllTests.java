@@ -22,6 +22,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(InverseEulerTransformSequenceTest.class);
     suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);
+    suite.addTestSuite(MorphismSequenceTest.class);
     suite.addTestSuite(NamesTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
     suite.addTest(irvine.oeis.a000.AllTests.suite());

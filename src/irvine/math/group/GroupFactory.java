@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import irvine.math.api.Group;
 import irvine.math.set.FiniteSet;
 import irvine.math.set.Permutation;
 import irvine.util.io.IOUtils;
@@ -101,7 +100,7 @@ public final class GroupFactory {
    * @param name name of the group
    * @return the group
    */
-  public static Group<?> createGroup(final String name) {
+  public static AbstractGroup<?> createGroup(final String name) {
     final FiniteSet<Permutation<Integer>> gens = GENERATORS.get(name);
     if (gens != null) {
       final int order = gens.iterator().next().domain().size().intValueExact();
@@ -132,4 +131,73 @@ public final class GroupFactory {
     }
     throw new UnsupportedOperationException("Unknown: " + name);
   }
+
+  private static final String[][] SMALL_GROUPS = {
+    {},
+    {"C1"},
+    {"C2"},
+    {"C3"},
+    {"C4", "V"},
+    {"C5"},
+    {"C6", "S3"},
+    {"C7"},
+    {"C8", "Q8", "D4", "Z4xZ2", "Z2xZ2xZ2"},
+    {"C9", "Z3xZ3"},
+    {"C10", "D5"},
+    {"C11"},
+    {"C12", "Z6xZ2", "D6", "A4", "Dic3"},
+    {"C13"},
+    {"C14", "D7"},
+    {"C15"},
+    {"C16", "D8", "Z8xZ2", "Dic4", "Z2xZ2xZ2xZ2", "Z4xZ4", "Z4xZ2xZ2", "D4xZ2", "Q8xZ2", "C4oD4", "M4(2)", "SD16", "V:C4", "C4:C4"},
+    {"C17"},
+    {"C18", "D9", "Z6xZ3", "S3xZ3", "C3:S3"},
+    {"C19"},
+    {"C20", "D10", "Z10xZ2", "Dic5", "Sz(2)"},
+    {"C21", "C7:C3"},
+    {"C22", "D11"},
+    {"C23"},
+    {"C24", "D12", "Z12xZ2", "Dic6", "S4", "Z6xZ2xZ2", "S3xZ2xZ2", "A4xZ2", "Dic3xZ2", "S3xC4", "D4xC3", "Q8xC3", "C8:C3", "D4:C3", "Q3:C3"},
+    {"C25", "C5xC5"},
+    {"C26", "D13"},
+    {"C27", "C9xC3", "C3xC3xC3", "He3", "C9:C3"},
+    {"C28", "D14", "Dic7", "C14xC2"},
+    {"C29"},
+    {"C30", "D15", "D5xC3", "S3xC5"},
+    {"C31"},
+    {"C32", "D16", "Dic8", "SD32", "M5(2)", "D4oD4", "D4oQ8", "C4wrC2", "VwrC2", "C8oD4", "C4oD8", "C8:V", "C4:D4", "D4:C4", "C4:1D4", "C2^3:C4", "V:C8", "V:Q8", "C4^2:C2", "C4^2:2C2", "C4:C8", "C4:Q8", "C8:C4", "Q8:C4", "C4.D4", "C8.C4", "C4.4D4", "C8.V", "C4.10D4", "V.D4", "C2.D8", "C4.Q8", "C2.C4^2", "C4^2.C2", "Z2xZ2xZ2xZ2xZ2", "C4xC8", "C2xC16", "C2xC4xC4", "C2xC2xC8", "C2xC2xC2xC4", "C4xD4", "C2xD8", "C2xSD16", "Z2xZ2xD4", "C2xM4(2)", "C4xQ8", "C2xDic4", "Z2xZ2xQ8", "C2xC4oD4", "C2xV:C4", "C2xC4:C4"},
+    {"C33"},
+    {"C34", "D17"},
+    {"C35"},
+    {"C36", "D18", "Dic9", "C6xC6", "C2xC18", "C3xC12", "C6xS3", "S3xS3", "C3xDic3", "C3xA4", "C3^2:C4", "C3:Dic3", "C3.A4", "C2xC3:S3"},
+    {"C37"},
+    {"C38", "D19"},
+    {"C39", "C13:C3"},
+    {"C40", "D20", "Dic10", "C5:D4", "C5:C8", "C5:2C8", "C2xC20", "C2xC2xC10", "C2xSz(2)", "C4xD5", "C5xD4", "C2xC2xD5", "C5xQ8", "C2xDic5"},
+    {"C41"},
+    {"C42", "D21", "F7", "S3xC7", "C3xD7", "C2xC7:C3"},
+    {"C43"},
+    {"C44", "D22", "Dic11", "C2xC22"},
+    {"C45", "C3xC15"},
+    {"C46", "D23"},
+    {"C47"},
+  };
+
+  // todo ideally want to make these returns immutable
+  /**
+   * Return the names of all groups of the given order.  These names are suitable for use with
+   * the <code>createGroup()</code> method.
+   * @param order order of groups
+   * @return names of groups
+   */
+  public static String[] smallGroupNames(final int order) {
+    if (order < 1) {
+      throw new IllegalArgumentException();
+    }
+    if (order >= SMALL_GROUPS.length) {
+      throw new UnsupportedOperationException();
+    }
+    return SMALL_GROUPS[order];
+  }
+
 }

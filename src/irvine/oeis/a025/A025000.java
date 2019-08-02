@@ -6,19 +6,27 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A025000.
+ * A025000 <code>a(1) = 3; a(n+1) = a(n)-th</code> nonprime, where nonprimes begin at 0.
  * @author Sean A. Irvine
  */
 public class A025000 implements Sequence {
 
-  private final Sequence mNonPrimes = new ComplementSequence(new A000040(), Z.ZERO);
+  private final Sequence mNonPrimes = new ComplementSequence(new A000040(), start());
   private Z mN = null;
   private Z mM = Z.ZERO;
+
+  protected Z start() {
+    return Z.ZERO;
+  }
+
+  protected Z initial() {
+    return Z.THREE;
+  }
 
   @Override
   public Z next() {
     if (mN == null) {
-      mN = Z.THREE;
+      mN = initial();
     } else {
       final Z t = mN;
       while (!mM.equals(t)) {

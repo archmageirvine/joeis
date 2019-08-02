@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024976.
+ * A024976 Positions of primes in <code>A024975</code> (sums of three distinct cubes).
  * @author Sean A. Irvine
  */
 public class A024976 extends A024975 {

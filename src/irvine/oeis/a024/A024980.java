@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024980.
+ * A024980 <code>a(n) =</code> position of <code>n^3 + (n+1)^3 + (n+2)^3</code> in <code>A024975</code>.
  * @author Sean A. Irvine
  */
 public class A024980 extends A024975 {

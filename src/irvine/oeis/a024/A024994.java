@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000009;
 
 /**
- * A024994.
+ * A024994 Number of periodic partitions of n: each part occurs more than once and the same number of times.
  * @author Sean A. Irvine
  */
 public class A024994 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024975.
+ * A024975 Sums of three distinct positive cubes.
  * @author Sean A. Irvine
  */
 public class A024975 implements Sequence {

@@ -126,6 +126,11 @@ public final class GroupFactory {
       final int order = Integer.parseInt(name.substring(2, gf));
       final GaloisField f = new GaloisField(Integer.parseInt(name.substring(gf + 3, name.indexOf(')', gf + 3))));
       return new SpecialLinearGroup<>(order, f);
+    } else if (name.startsWith("GL")) {
+      final int gf = name.indexOf("(GF");
+      final int order = Integer.parseInt(name.substring(2, gf));
+      final GaloisField f = new GaloisField(Integer.parseInt(name.substring(gf + 3, name.indexOf(')', gf + 3))));
+      return new GeneralLinearGroup<>(order, f);
     } else if (name.startsWith("S")) {
       return SymmetricGroup.create(Integer.parseInt(name.substring(1)));
     }
@@ -181,9 +186,14 @@ public final class GroupFactory {
     {"C45", "C3xC15"},
     {"C46", "D23"},
     {"C47"},
+    {"C48", "D24", "Dic12", "Q8:S3", "Q8.S3", "C4oD12", "A4:C4", "C4xC4:C3", "C2xC2:A4", "D6:C4", "D4:S3", "C8:S3", "C24:C2", "D4:2S3", "Q8:2S3", "Q8:3S3", "C3:C16", "C4:Dic3", "C3:Q16", "Dic3:C4", "C4.A4", "D4.S3", "C4.Dic3", "C6.D4", "C4xC12", "C2xC24", "C2xC2xC2xC6", "C2xC2xC12", "C2xS4", "C4xA4", "S3xD4", "C2xC2xA4", "C2x(Q8:C3)", "S3xC8", "C3xD8", "C6xD4", "S3xQ8", "C2xD12", "S3xC2xC2xC2", "C3xSD16", "C3xM4(2)", "C6xQ8", "C3xQ16", "C4xDic3", "C2xDic6", "C2xC2xDic3", "S3xC2xC4", "C2xC3:D4", "C3xC4oD4", "C3xC2xC2:C4", "C2xC3:C8", "C3xC4:C4"},
+    {"C49", "C7xC7"},
+    {"C50", "D25", "C5:D5", "C5xC10", "C5xD5"},
+    {"C51"},
+    {"C52", "D26", "Dic13", "C13:C4", "C2xC26"},
+    {"C53"},
   };
 
-  // todo ideally want to make these returns immutable
   /**
    * Return the names of all groups of the given order.  These names are suitable for use with
    * the <code>createGroup()</code> method.

@@ -1,0 +1,23 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025035 Number of partitions of <code>{ 1, 2</code>, ..., <code>3n }</code> into sets of size 3.
+ * @author Sean A. Irvine
+ */
+public class A025035 implements Sequence {
+
+  private Z mA = Z.ONE;
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    if (++mN > 1) {
+      mA = mA.multiply(3 * mN - 2).multiply(3 * mN - 1).divide2();
+    }
+    return mA;
+  }
+}
+

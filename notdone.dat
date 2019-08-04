@@ -5,7 +5,7 @@ A000112 posets
 A000236 equivalence classes
 A000241 crossing number of complete graph
 A000315 Latin squares - hard graph-theory computation, a(12) unknown
-A000361 need more detail [Guy reference no help]
+A000361 need more detail, some notes in blog2019.tex
 A000372 very hard boolean function counting
 A000403 Number of simple equifacetted 3-manifolds with n faces, hard, insufficient detail
 A000410 0,1-matrices, have a paper, looks slow and long-winded

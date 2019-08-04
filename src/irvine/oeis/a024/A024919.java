@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024919 <code>Sum(k=1..n,(-1)^k*k*floor(n/k))</code>.
+ * A024919 <code>Sum_{k=1..n} (-1)^k*k*floor(n/k)</code>.
  * @author Sean A. Irvine
  */
 public class A024919 implements Sequence {

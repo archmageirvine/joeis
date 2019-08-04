@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025010.
+ * A025010 <code>a(1) = 5; a(n+1) = a(n)-th</code> nonprime, where nonprimes begin at 4.
  * @author Sean A. Irvine
  */
 public class A025010 extends A025000 {

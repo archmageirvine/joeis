@@ -1,5 +1,6 @@
 package irvine.factor.prime;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
@@ -7,7 +8,8 @@ import irvine.math.z.Z;
  * deal with the even numbers. The proposed number is then divided by 3, 5,
  * 7, and so on up to the square root of n. If any of these numbers is found
  * to divide n, then obviously n is composite. Works on numbers with up to
- * and including 63 bits.
+ * and including 63 bits. This is really here for demonstration only, there
+ * are better ways to do this.
  *
  * @author Sean A. Irvine
  */
@@ -18,7 +20,6 @@ public class TrialDivision implements Prime {
 
   /**
    * Test if the given number is prime using trial division.
-   *
    * @param n value to test
    * @return true if n is prime, false if n is composite
    */
@@ -37,7 +38,7 @@ public class TrialDivision implements Prime {
 
     // n is odd
     long f = 3L;
-    final long limit = (long) Math.floor(Math.sqrt(n));
+    final long limit = LongUtils.sqrt(n);
     while (f <= limit) {
       if (n % f == 0L) {
         return false;
@@ -99,7 +100,7 @@ public class TrialDivision implements Prime {
     n |= 1L; // make n odd
     n -= 2L;
 
-    // we know this loop will succeed because n >= 3
+    // we know this loop will succeed because n > 3
     while (true) {
       if (isPrime(n)) {
         return n;

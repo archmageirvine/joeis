@@ -106,6 +106,9 @@ public final class GroupFactory {
       final int order = gens.iterator().next().domain().size().intValueExact();
       return SymmetricGroup.create(order).generateSubgroup(gens);
     }
+    if (name.startsWith("(") && name.endsWith(")")) {
+      return createGroup(name.substring(1, name.length() - 1));
+    }
     final int product = name.indexOf('x');
     if (product >= 0) {
       return new DirectProduct<>(createGroup(name.substring(0, product)), createGroup(name.substring(product + 1)));
@@ -162,7 +165,7 @@ public final class GroupFactory {
     {"C21", "C7:C3"},
     {"C22", "D11"},
     {"C23"},
-    {"C24", "D12", "Z12xZ2", "Dic6", "S4", "Z6xZ2xZ2", "S3xZ2xZ2", "A4xZ2", "Dic3xZ2", "S3xC4", "D4xC3", "Q8xC3", "C8:C3", "D4:C3", "Q3:C3"},
+    {"C24", "D12", "Z12xZ2", "Dic6", "S4", "Z6xZ2xZ2", "S3xZ2xZ2", "A4xZ2", "Dic3xZ2", "S3xC4", "D4xC3", "Q8xC3", "C8:C3", "D4:C3", "Q8:C3"},
     {"C25", "C5xC5"},
     {"C26", "D13"},
     {"C27", "C9xC3", "C3xC3xC3", "He3", "C9:C3"},
@@ -192,6 +195,13 @@ public final class GroupFactory {
     {"C51"},
     {"C52", "D26", "Dic13", "C13:C4", "C2xC26"},
     {"C53"},
+    {"C54", "D27", "C9:C6", "C3xC3:C6", "He3:C2", "C9:S3", "C3xC3xC3:C2", "C3xC18", "C3xC3xC6", "S3xC9", "C3xD9", "C2xHe3", "S3xC3xC3", "C2x(C9:C3)", "C3xC3:S3"},
+    {"C55", "C11:C5"},
+    {"C56", "D28", "Dic14", "F8", "C7:D4", "C7:C8", "C2xC28", "C2xC2xC14", "C4xD7", "C7xD4", "C2xC2xD7", "C7xQ8", "C2xDic7"},
+    {"C57", "C19:C3"},
+    {"C58", "D29"},
+    {"C59"},
+    {"C60", "D30", "Dic15", "A5", "C3:F5", "C2xC30", "S3xD5", "C3xSz(2)", "C5xA4", "C6xD5", "S3xC10", "C5xDic3", "C3xDic5"},
   };
 
   /**

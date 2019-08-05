@@ -25,6 +25,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MorphismSequenceTest.class);
     suite.addTestSuite(NamesTest.class);
     suite.addTestSuite(NegativePositiveSequenceTest.class);
+    suite.addTestSuite(RunsBaseSequenceTest.class);
     suite.addTest(irvine.oeis.a000.AllTests.suite());
     suite.addTest(irvine.oeis.a001.AllTests.suite());
     suite.addTest(irvine.oeis.a002.AllTests.suite());

@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054444 Even-indexed terms of <code>A001629(n), n &gt;= 2</code>, (Fibonacci convolution).
+ * A054444 Even indexed members of <code>A001629(n), n &gt;= 2</code>, (Fibonacci convolution).
  * @author Georg Fischer
  */
 public class A054444 extends GeneratingFunctionSequence {

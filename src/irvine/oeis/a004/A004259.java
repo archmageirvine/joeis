@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004259 <code>a(n) = floor(10*log_2(n))</code>.
+ * A004259 <code>10*log_2 (n)</code> rounded down.
  * @author Sean A. Irvine
  */
 public class A004259 implements Sequence {

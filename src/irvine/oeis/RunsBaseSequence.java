@@ -1,6 +1,7 @@
 package irvine.oeis;
 
 import irvine.math.z.Z;
+
 /**
  * Properties of a (simple) periodic continued fraction
  * for the square root of a number,

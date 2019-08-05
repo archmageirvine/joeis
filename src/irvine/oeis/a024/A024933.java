@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024933 <code>a(n) = Sum_{k=1..n} k*[ (n/k)*[ (n/k)*[ n/k ] ] ]</code>.
+ * A024933 <code>a(n) =</code> sum of <code>k*[ (n/k)*[ (n/k)*[ n/k ] ] ], k = 1,2,3,...,n</code>.
  * @author Sean A. Irvine
  */
 public class A024933 implements Sequence {

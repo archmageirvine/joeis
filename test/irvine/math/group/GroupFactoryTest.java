@@ -28,10 +28,14 @@ public class GroupFactoryTest extends TestCase {
         final String[] names = GroupFactory.smallGroupNames(++n);
         assertEquals(GroupUtils.gnu(n).intValueExact(), names.length);
         for (final String name : names) {
-          assertEquals(n, GroupFactory.createGroup(name).size().intValueExact());
+          try {
+          assertEquals(n + " " + name, n, GroupFactory.createGroup(name).size().intValueExact());
+          } catch (final RuntimeException e) {
+            fail(n + " " + name + " " + e.getMessage());
+          }
         }
       } catch (final UnsupportedOperationException e) {
-        assertTrue(n > 10);
+        assertTrue(e.getMessage(), n > 60);
         return;
       }
     }

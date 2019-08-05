@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024922 <code>a(n) = Sum_{k=1..n} floor((n/k) * floor((n/k) * floor(n/k)))</code>.
+ * A024922 <code>a(n) =</code> sum of <code>[ (n/k)*[ (n/k)*[ n/k ] ] ], k = 1,2,3,...,n</code>.
  * @author Sean A. Irvine
  */
 public class A024922 implements Sequence {

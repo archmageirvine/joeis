@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307942 Number of evolutionary <code>duplication-loss-histories</code> of the complete binary species tree with 8 leaves.
+ * A307942 allocated for Cedric chauve.
  * @author Sean A. Irvine
  */
 public class A307942 implements Sequence {

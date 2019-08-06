@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A126269 implements Sequence {
 
-  // There are known formulas for this which are fast,
+  // There are conjectured formulas for this which are fast,
   // but we do it explicitly here to demonstrate the Huffman process.
 
   private int mN = 2;
@@ -67,6 +67,7 @@ public class A126269 implements Sequence {
       lengths[(int) node.mN] = depth;
       return;
     }
+    assert node.mRight != null;
     setLengths(lengths, node.mLeft, depth + 1);
     setLengths(lengths, node.mRight, depth + 1);
   }

@@ -79,6 +79,7 @@ public final class Names {
     FORMULA.add("uu");
     FORMULA.add("uf,");
     FORMULA.add("nx,");
+    FORMULA.add("bc");
     FORMULA.add("bc,");
     FORMULA.add("THTH");
     FORMULA.add("HTHH.");

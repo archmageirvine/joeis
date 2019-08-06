@@ -1,0 +1,19 @@
+package irvine.oeis.a025;
+
+import irvine.oeis.HalfConvolutionSequence;
+import irvine.oeis.PrependSequence;
+import irvine.oeis.a000.A000201;
+import irvine.oeis.a023.A023532;
+
+/**
+ * A025073.
+ * @author Sean A. Irvine
+ */
+public class A025073 extends HalfConvolutionSequence {
+
+  /** Construct the sequence. */
+  public A025073() {
+    super(new A023532(), new PrependSequence(new A000201(), 0), false);
+    next();
+  }
+}

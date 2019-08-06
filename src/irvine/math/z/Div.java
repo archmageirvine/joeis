@@ -56,6 +56,9 @@ final class Div {
     if (b.equals(a)) {
       return new Z[] {Z.ONE, Z.ZERO};
     }
+    if (b.equals(Z.ONE)) {
+      return new Z[] {a, Z.ZERO};
+    }
     // Handle small divisors
     final int top = b.mValue[sb - 1];
     if (sb == 1) {
@@ -136,6 +139,10 @@ final class Div {
     if (d == 0L) {
       throw new ArithmeticException("Division by zero.");
     }
+    if (d == 1L) {
+      a.mAuxiliary = 0;
+      return a;
+    }
     int sa = Math.abs(a.getSize());
     if (sa < 3) {
       // Use long divide if we can fit in a long, also handles 0/d case
@@ -176,12 +183,6 @@ final class Div {
       }
       b[i] = lq21;
     }
-    /*
-    while (sa >= 0 && b[sa] == 0) {
-      System.err.println("Hi: " + this.bigIntegerValue().toString() + " " + d);
-      --sa;
-    }
-    */
     ++sa;
     a.mAuxiliary = sign < 2 ? c : -c;
     // sign == 0 || sign == 3 is equiv to (sign + 1) & 2

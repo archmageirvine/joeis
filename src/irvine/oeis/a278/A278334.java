@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A278334 Numbers n such that (856*10^n - 1) / 9 is prime.
+ * A278334 Numbers n such that <code>(856*10^n - 1) / 9</code> is prime.
  * @author Georg Fischer
  */
 public class A278334 extends PowerFactorPrimeSequence {

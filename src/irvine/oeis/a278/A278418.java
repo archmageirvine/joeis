@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A278418 Numbers n such that (83*10^n - 29) / 9 is prime.
+ * A278418 Numbers n such that <code>(83*10^n - 29) / 9</code> is prime.
  * @author Georg Fischer
  */
 public class A278418 extends PowerFactorPrimeSequence {

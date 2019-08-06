@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A280272 Numbers n such that (229*10^n - 1)/3 is prime.
+ * A280272 Numbers n such that <code>(229*10^n - 1)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A280272 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273371 Numbers n such that (17*10^n-77)/3 is prime.
+ * A273371 Numbers n such that <code>(17*10^n-77)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A273371 extends PowerFactorPrimeSequence {

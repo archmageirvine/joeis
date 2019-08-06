@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A111247 Numbers k such that (31*10^k - 121) / 9 is prime.
+ * A111247 Numbers k such that <code>(31*10^k - 121) / 9</code> is prime.
  * @author Georg Fischer
  */
 public class A111247 extends PowerFactorPrimeSequence {

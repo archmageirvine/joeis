@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A289081 Numbers k such that (4*10^k - 19)/3 is prime.
+ * A289081 Numbers k such that <code>(4*10^k - 19)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A289081 extends PowerFactorPrimeSequence {

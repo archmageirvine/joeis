@@ -5,7 +5,7 @@ package irvine.oeis.a102;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A102740 Numbers k such that 7*10^k - 11 is prime.
+ * A102740 Numbers k such that <code>7*10^k - 11</code> is prime.
  * @author Georg Fischer
  */
 public class A102740 extends PowerFactorPrimeSequence {

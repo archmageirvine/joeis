@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032454 Numbers k such that 155*2^k+1 is prime.
+ * A032454 Numbers k such that <code>155*2^k+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032454 extends PowerFactorPrimeSequence {

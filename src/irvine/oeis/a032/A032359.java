@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032359 Numbers n such that 19*2^n+1 is prime.
+ * A032359 Numbers n such that <code>19*2^n+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032359 extends PowerFactorPrimeSequence {

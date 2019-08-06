@@ -5,7 +5,7 @@ package irvine.oeis.a291;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A291608 Numbers k such that 56*10^k - 3 is prime.
+ * A291608 Numbers k such that <code>56*10^k - 3</code> is prime.
  * @author Georg Fischer
  */
 public class A291608 extends PowerFactorPrimeSequence {

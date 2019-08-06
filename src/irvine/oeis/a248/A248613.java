@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A248613 Numbers n such that (4 * 6^n + 1)/5 is prime.
+ * A248613 Numbers n such that <code>(4 * 6^n + 1)/5</code> is prime.
  * @author Georg Fischer
  */
 public class A248613 extends PowerFactorPrimeSequence {

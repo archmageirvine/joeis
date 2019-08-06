@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A280861 Numbers k such that (4*10^k + 83)/3 is prime.
+ * A280861 Numbers k such that <code>(4*10^k + 83)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A280861 extends PowerFactorPrimeSequence {

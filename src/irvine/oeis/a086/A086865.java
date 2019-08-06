@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A086865 Numbers n such that 2*10^n+11 is prime.
+ * A086865 Numbers n such that <code>2*10^n+11</code> is prime.
  * @author Georg Fischer
  */
 public class A086865 extends PowerFactorPrimeSequence {

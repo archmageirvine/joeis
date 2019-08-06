@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A280018 Numbers k such that 34*10^k - 3 is prime.
+ * A280018 Numbers k such that <code>34*10^k - 3</code> is prime.
  * @author Georg Fischer
  */
 public class A280018 extends PowerFactorPrimeSequence {

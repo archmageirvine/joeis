@@ -5,7 +5,7 @@ package irvine.oeis.a321;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A321353 Numbers k such that 3*2^k - 25 is prime.
+ * A321353 Numbers k such that <code>3*2^k - 25</code> is prime.
  * @author Georg Fischer
  */
 public class A321353 extends PowerFactorPrimeSequence {

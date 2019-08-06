@@ -5,7 +5,7 @@ package irvine.oeis.a279;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A279050 Numbers k such that (14*10^k - 143)/3 is prime.
+ * A279050 Numbers k such that <code>(14*10^k - 143)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A279050 extends PowerFactorPrimeSequence {

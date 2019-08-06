@@ -5,7 +5,7 @@ package irvine.oeis.a205;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A205521 Numbers n such that 4*11^n - 1 is prime.
+ * A205521 Numbers n such that <code>4*11^n - 1</code> is prime.
  * @author Georg Fischer
  */
 public class A205521 extends PowerFactorPrimeSequence {

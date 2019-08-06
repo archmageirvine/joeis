@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A057471 Numbers n such that (11*13^n -1)/2 is prime.
+ * A057471 Numbers n such that <code>(11*13^n -1)/2</code> is prime.
  * @author Georg Fischer
  */
 public class A057471 extends PowerFactorPrimeSequence {

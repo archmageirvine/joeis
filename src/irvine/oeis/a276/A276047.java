@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276047 Numbers k such that 4*10^k + 21 is prime.
+ * A276047 Numbers k such that <code>4*10^k + 21</code> is prime.
  * @author Georg Fischer
  */
 public class A276047 extends PowerFactorPrimeSequence {

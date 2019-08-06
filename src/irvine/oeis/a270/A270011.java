@@ -5,7 +5,7 @@ package irvine.oeis.a270;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A270011 Numbers n such that 3*14^n-1 is prime.
+ * A270011 Numbers n such that <code>3*14^n-1</code> is prime.
  * @author Georg Fischer
  */
 public class A270011 extends PowerFactorPrimeSequence {

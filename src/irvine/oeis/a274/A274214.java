@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274214 Numbers k such that 4*10^k + 63 is prime.
+ * A274214 Numbers k such that <code>4*10^k + 63</code> is prime.
  * @author Georg Fischer
  */
 public class A274214 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a270;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A270738 Numbers n such that 23*10^n-7 is prime.
+ * A270738 Numbers n such that <code>23*10^n-7</code> is prime.
  * @author Georg Fischer
  */
 public class A270738 extends PowerFactorPrimeSequence {

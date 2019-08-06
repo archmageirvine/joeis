@@ -5,7 +5,7 @@ package irvine.oeis.a268;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A268448 Numbers n such that (35*10^n - 11)/3 is prime.
+ * A268448 Numbers n such that <code>(35*10^n - 11)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A268448 extends PowerFactorPrimeSequence {

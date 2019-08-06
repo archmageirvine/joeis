@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A289753 Numbers k such that 2*10^k - 43 is prime.
+ * A289753 Numbers k such that <code>2*10^k - 43</code> is prime.
  * @author Georg Fischer
  */
 public class A289753 extends PowerFactorPrimeSequence {

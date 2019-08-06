@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A101960 Indices of primes in sequence defined by A(0) = 29, A(n) = 10*A(n-1) - 41 for n > 0.
+ * A101960 Indices of primes in sequence defined by <code>A(0) = 29, A(n) = 10*A(n-1) - 41</code> for <code>n &gt; 0</code>.
  * @author Georg Fischer
  */
 public class A101960 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273726 Numbers n such that (25*10^n + 59)/3 is prime.
+ * A273726 Numbers n such that <code>(25*10^n + 59)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A273726 extends PowerFactorPrimeSequence {

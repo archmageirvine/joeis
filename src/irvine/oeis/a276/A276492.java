@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276492 Numbers k such that 5*10^k + 59 is prime.
+ * A276492 Numbers k such that <code>5*10^k + 59</code> is prime.
  * @author Georg Fischer
  */
 public class A276492 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A111022 Integers n such that 8*10^n+21 is prime.
+ * A111022 Integers n such that <code>8*10^n+21</code> is prime.
  * @author Georg Fischer
  */
 public class A111022 extends PowerFactorPrimeSequence {

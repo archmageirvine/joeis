@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050547 Numbers n such that 43*2^n-1 is prime.
+ * A050547 Numbers n such that <code>43*2^n-1</code> is prime.
  * @author Georg Fischer
  */
 public class A050547 extends PowerFactorPrimeSequence {

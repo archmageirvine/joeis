@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A103068 Numbers n such that 8*10^n - 9 is prime.
+ * A103068 Numbers n such that <code>8*10^n - 9</code> is prime.
  * @author Georg Fischer
  */
 public class A103068 extends PowerFactorPrimeSequence {

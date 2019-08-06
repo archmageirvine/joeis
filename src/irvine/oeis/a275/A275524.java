@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A275524 Numbers n such that (56*10^n + 223)/9 is prime.
+ * A275524 Numbers n such that <code>(56*10^n + 223)/9</code> is prime.
  * @author Georg Fischer
  */
 public class A275524 extends PowerFactorPrimeSequence {

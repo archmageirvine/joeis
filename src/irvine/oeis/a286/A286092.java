@@ -5,7 +5,7 @@ package irvine.oeis.a286;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A286092 Numbers k such that (199*10^k + 11)/3 is prime.
+ * A286092 Numbers k such that <code>(199*10^k + 11)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A286092 extends PowerFactorPrimeSequence {

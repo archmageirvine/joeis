@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032362 Numbers n such that 25*2^n+1 is prime.
+ * A032362 Numbers n such that <code>25*2^n+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032362 extends PowerFactorPrimeSequence {

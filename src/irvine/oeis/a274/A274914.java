@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274914 Numbers n such that 88*10^n + 7 is prime.
+ * A274914 Numbers n such that <code>88*10^n + 7</code> is prime.
  * @author Georg Fischer
  */
 public class A274914 extends PowerFactorPrimeSequence {

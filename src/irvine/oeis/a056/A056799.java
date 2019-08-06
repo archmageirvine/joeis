@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A056799 Numbers n such that 8*9^n +1 is prime.
+ * A056799 Numbers n such that <code>8*9^n +1</code> is prime.
  * @author Georg Fischer
  */
 public class A056799 extends PowerFactorPrimeSequence {

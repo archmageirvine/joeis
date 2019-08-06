@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A278442 Numbers k such that (11*10^k - 179) / 3 is prime.
+ * A278442 Numbers k such that <code>(11*10^k - 179) / 3</code> is prime.
  * @author Georg Fischer
  */
 public class A278442 extends PowerFactorPrimeSequence {

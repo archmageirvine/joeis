@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032392 Numbers n such that 85*2^n+1 is prime.
+ * A032392 Numbers n such that <code>85*2^n+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032392 extends PowerFactorPrimeSequence {

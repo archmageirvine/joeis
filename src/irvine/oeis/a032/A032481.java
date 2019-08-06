@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032481 Numbers k such that 209*2^k+1 is prime.
+ * A032481 Numbers k such that <code>209*2^k+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032481 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a283;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A283684 Numbers k such that 3*10^k + 17 is prime.
+ * A283684 Numbers k such that <code>3*10^k + 17</code> is prime.
  * @author Georg Fischer
  */
 public class A283684 extends PowerFactorPrimeSequence {

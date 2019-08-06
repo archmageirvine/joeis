@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a038.A038605;
 
 /**
- * A024926 <code>a(n) =</code> sum of <code>[ p(k)/k ], k = 1,2,3,...,n</code>.
+ * A024926 <code>a(n) = Sum_{k=1..n} floor(p(k)/k)</code>.
  * @author Sean A. Irvine
  */
 public class A024926 extends PartialSumSequence {

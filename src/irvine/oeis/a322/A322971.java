@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A322971 Numbers k such that 347*2^k+1 is prime.
+ * A322971 Numbers k such that <code>347*2^k+1</code> is prime.
  * @author Georg Fischer
  */
 public class A322971 extends PowerFactorPrimeSequence {

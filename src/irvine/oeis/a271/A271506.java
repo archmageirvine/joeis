@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A271506 Numbers k such that (7*10^k + 179)/3 is prime.
+ * A271506 Numbers k such that <code>(7*10^k + 179)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A271506 extends PowerFactorPrimeSequence {

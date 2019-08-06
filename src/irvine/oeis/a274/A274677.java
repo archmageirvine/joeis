@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274677 Numbers n such that 7*10^n + 19 is prime.
+ * A274677 Numbers n such that <code>7*10^n + 19</code> is prime.
  * @author Georg Fischer
  */
 public class A274677 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276845 Numbers n such that (25*10^n - 73) / 3 is prime.
+ * A276845 Numbers n such that <code>(25*10^n - 73) / 3</code> is prime.
  * @author Georg Fischer
  */
 public class A276845 extends PowerFactorPrimeSequence {

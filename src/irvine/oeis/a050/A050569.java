@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050569 Numbers n such that 87*2^n-1 is prime.
+ * A050569 Numbers n such that <code>87*2^n-1</code> is prime.
  * @author Georg Fischer
  */
 public class A050569 extends PowerFactorPrimeSequence {

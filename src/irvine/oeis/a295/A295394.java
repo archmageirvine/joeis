@@ -5,7 +5,7 @@ package irvine.oeis.a295;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A295394 Numbers k such that (2*10^k - 179)/3 is prime.
+ * A295394 Numbers k such that <code>(2*10^k - 179)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A295394 extends PowerFactorPrimeSequence {

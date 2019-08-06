@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A271646 Numbers n such that 22*10^n+7 is prime.
+ * A271646 Numbers n such that <code>22*10^n+7</code> is prime.
  * @author Georg Fischer
  */
 public class A271646 extends PowerFactorPrimeSequence {

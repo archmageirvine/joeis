@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A323145 Numbers k such that 433*2^k+1 is prime.
+ * A323145 Numbers k such that <code>433*2^k+1</code> is prime.
  * @author Georg Fischer
  */
 public class A323145 extends PowerFactorPrimeSequence {

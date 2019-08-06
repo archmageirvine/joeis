@@ -5,7 +5,7 @@ package irvine.oeis.a056;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A056260 Indices of primes in sequence defined by A(0) = 77, A(n) = 10*A(n-1) - 3 for n > 0. Numbers n such that (690*10^n + 3)/9 is prime.
+ * A056260 Indices of primes in sequence defined by <code>A(0) = 77, A(n) = 10*A(n-1) - 3</code> for <code>n &gt; 0</code>. Numbers n such that <code>(690*10^n + 3)/9</code> is prime.
  * @author Georg Fischer
  */
 public class A056260 extends PowerFactorPrimeSequence {

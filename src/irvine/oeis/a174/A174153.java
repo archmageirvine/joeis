@@ -5,7 +5,7 @@ package irvine.oeis.a174;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A174153 Numbers n such that 2*13^n-1 is prime.
+ * A174153 Numbers n such that <code>2*13^n-1</code> is prime.
  * @author Georg Fischer
  */
 public class A174153 extends PowerFactorPrimeSequence {

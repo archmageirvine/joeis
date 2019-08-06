@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A180431 Numbers n such that 4*17^n+1 is prime.
+ * A180431 Numbers n such that <code>4*17^n+1</code> is prime.
  * @author Georg Fischer
  */
 public class A180431 extends PowerFactorPrimeSequence {

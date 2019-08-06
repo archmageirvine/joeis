@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032365 Numbers n such that 31*2^n+1 is prime.
+ * A032365 Numbers n such that <code>31*2^n+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032365 extends PowerFactorPrimeSequence {

@@ -19,14 +19,15 @@ final class Mod {
    * @exception ArithmeticException if <code>n</code> is 0.
    */
   static Z mod(final Z a, final Z n) {
-    if (n.getSize() == 0) {
+    if (n.getSize() == 0) { // i.e. n == 0
       throw new ArithmeticException();
     }
-    if (a.getSize() == 0 || a == n) {
+    if (a.getSize() == 0 || a.equals(n) || Z.ONE.equals(n)) {
       return Z.ZERO;
     }
     int sign = 0;
-    final int sa, ssa = a.getSize();
+    final int ssa = a.getSize();
+    final int sa;
     if (ssa < 0) {
       sa = -ssa;
       a.mSign = sa;
@@ -35,11 +36,13 @@ final class Mod {
       sa = ssa;
     }
     final int ssn = n.getSize();
-    int sn = ssn;
-    if (sn < 0) {
-      sn = -sn;
+    int sn;
+    if (ssn < 0) {
+      sn = -ssn;
       n.mSign = sn;
       ++sign;
+    } else {
+      sn = ssn;
     }
     final int top = n.mValue[sn - 1];
     Z r;
@@ -94,11 +97,7 @@ final class Mod {
     }
     if (r.getSize() != 0 && sign != 0) {
       if (sign <= 2) {
-        if (sign == 1) {
-          r = Sub.subtract(r, n);
-        } else {
-          r = Sub.subtract(n, r);
-        }
+        r = sign == 1 ? Sub.subtract(r, n) : Sub.subtract(n, r);
       } else {
         r = r.negate();
       }

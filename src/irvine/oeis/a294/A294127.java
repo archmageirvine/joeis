@@ -5,7 +5,7 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294127 Numbers k such that (44*10^k - 503)/9 is prime.
+ * A294127 Numbers k such that <code>(44*10^k - 503)/9</code> is prime.
  * @author Georg Fischer
  */
 public class A294127 extends PowerFactorPrimeSequence {

@@ -15,7 +15,7 @@ public class PowerFactorPrimeSequence implements Sequence {
 
   protected int mK; // index of current term to be returned
   protected Z mA; // test is based on a property of this number
-  protected int mOffset; // OEIS offset1 as of generation time
+  //protected int mOffset; // OEIS offset1 as of generation time
   protected int mAdd; // additive term
   protected int mBase; // usually 2 or 10
   protected int mDiv; // optional divisor, or 0 for no divisor
@@ -30,7 +30,7 @@ public class PowerFactorPrimeSequence implements Sequence {
    * @param div optional divisor, or 0 for no divisor
    */
   protected PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add, final int div) {
-    mOffset = offset;
+    //mOffset = offset;
     mBase = base;
     mAdd = add;
     mDiv = div;

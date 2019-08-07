@@ -45,8 +45,18 @@ public class A126269 implements Sequence {
     }
 
     @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof Node && mId == ((Node) obj).mId;
+    }
+
+    @Override
+    public int hashCode() {
+      return (int) mId;
+    }
+
+    @Override
     public String toString() {
-      return "(" + (mLeft == null ? mN : mLeft.toString() + "," + mRight.toString()) + ")";
+      return "(" + (mLeft == null ? mN : mLeft + "," + mRight) + ")";
     }
   }
 

@@ -1,9 +1,9 @@
 A000001 gnu(n) [existing impl goes to 100 but is kind of messy]
 A000019 primitive permutation groups
 A000066 Smallest number of vertices in trivalent graph with girth (shortest cycle) = n
-A000112 posets
+A000112 posets, hard
 A000236 equivalence classes
-A000241 crossing number of complete graph
+A000241 crossing number of complete graph, hard
 A000315 Latin squares - hard graph-theory computation, a(12) unknown
 A000361 need more detail, some notes in blog2019.tex
 A000372 very hard boolean function counting

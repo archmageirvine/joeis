@@ -14,6 +14,8 @@ public class ContinuedFractionOfSqrtSequenceTest extends TestCase {
     assertEquals(Z.TWO, seq.next());
     assertEquals(Z.FOUR, seq.next());
     assertEquals(Z.FOUR, seq.next());
+    assertEquals(4, seq.getLeastInPeriod());
+    assertEquals(1, seq.getCountInPeriod(4));
   }
 
   public void test7() {

@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Coord3SetTest.class);
     suite.addTestSuite(CoordSet2Test.class);
     suite.addTestSuite(CoordSet2TTest.class);
+    suite.addTestSuite(CoordSetGenTest.class);
     suite.addTestSuite(PolyominoTest.class);
     suite.addTestSuite(PolySideTest.class);
     return suite;

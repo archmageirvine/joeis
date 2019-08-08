@@ -122,11 +122,7 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   protected abstract String makeUnique();
 
   int less() {
-    if (mSet.getWhite() < mSet.getBlack()) {
-      return mSet.getWhite();
-    } else {
-      return mSet.getBlack();
-    }
+    return mSet.getWhite() < mSet.getBlack() ? mSet.getWhite() : mSet.getBlack();
   }
 
   int lessColour() {
@@ -138,19 +134,11 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   }
 
   int moreColour() {
-    if (mSet.getWhite() > mSet.getBlack()) {
-      return Element.WHITE;
-    } else {
-      return Element.BLACK;
-    }
+    return mSet.getWhite() > mSet.getBlack() ? Element.WHITE : Element.BLACK;
   }
 
   int more() {
-    if (mSet.getWhite() > mSet.getBlack()) {
-      return mSet.getWhite();
-    } else {
-      return mSet.getBlack();
-    }
+    return mSet.getWhite() > mSet.getBlack() ? mSet.getWhite() : mSet.getBlack();
   }
 
   /*
@@ -212,5 +200,4 @@ public abstract class CoordSetGen<T extends Element<T>> extends PolyBase {
   static int minLess(final int c) {
     return (c - maxBias(c)) / 2;
   }
-
 }

@@ -1,10 +1,10 @@
 package irvine.math.set;
 
-import irvine.math.z.Z;
-import irvine.util.AbstractIterator;
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import irvine.math.z.Z;
+import irvine.util.AbstractIterator;
 
 /**
  * A set comprising a range of small integers.

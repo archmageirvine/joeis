@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A025105.
+ * A025105 <code>a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1)</code>, where k <code>= [ n/2 ], s = (F(2), F(3), F(4), ...)</code>.
  * @author Sean A. Irvine
  */
 public class A025105 extends HalfConvolutionSequence {

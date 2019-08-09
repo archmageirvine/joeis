@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000372.
+ * A000372 Dedekind numbers or Dedekind's problem: number of monotone Boolean functions of n variables, number of antichains of subsets of an <code>n-set</code>, number of elements in a free distributive lattice on n generators, number of Sperner families.
  * @author Sean A. Irvine
  */
 public class A000372 implements Sequence {
@@ -20,10 +20,10 @@ public class A000372 implements Sequence {
   // todo pos. could use {{0}} for this purpose, not distinct from {} (i.e. emptyset).
   // After Gus Wiseman
 
-  private static final FiniteSet<Integer> SPC = new FiniteSet<>(0);
-  //private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<>(new Integer[0]).powerset(); // {{}}
+  //private static final FiniteSet<Integer> SPC = new FiniteSet<>(0);
+  private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<>(new Integer[0]).powerset(); // {{}}
   //private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<>(new Integer[] {0}).powerset(); // {{}}
-  private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<Set<Integer>>(SPC);
+  //private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<Set<Integer>>(SPC);
   private int mN = 0;
 
   private <T> String toString(final Set<T> s) {
@@ -58,7 +58,7 @@ public class A000372 implements Sequence {
     final Set<Set<Integer>> ss = stableSets(new FiniteSet<>(retain));
     final ArrayList<Set<Integer>> prepend = new ArrayList<>();
     for (final Set<Integer> s : ss) {
-      prepend.add(w.equals(SPC) ? s : s.union(w));
+      prepend.add(s.union(w));
     }
     final Set<Set<Integer>> join = res.union(new FiniteSet<>(prepend));
     System.out.println("join: " + join.size() + " " + toString(join) + " w=" + w);

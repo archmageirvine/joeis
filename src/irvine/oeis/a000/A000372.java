@@ -1,10 +1,9 @@
 package irvine.oeis.a000;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 
 import irvine.math.api.Set;
-import irvine.math.set.FiniteSet;
 import irvine.math.set.IntegerSet;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -15,65 +14,55 @@ import irvine.oeis.Sequence;
  */
 public class A000372 implements Sequence {
 
-  // todo not yet working --- will only be good for a few terms
-  // todo seems to require some kind of evil distinction around empty sets, i.e. need {{}} is of type Set<Integer>
-  // todo pos. could use {{0}} for this purpose, not distinct from {} (i.e. emptyset).
-  // After Gus Wiseman
+  // Only good for about 7 terms
 
-  //private static final FiniteSet<Integer> SPC = new FiniteSet<>(0);
-  private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<>(new Integer[0]).powerset(); // {{}}
-  //private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<>(new Integer[] {0}).powerset(); // {{}}
-  //private static final Set<Set<Integer>> EMPTY_POWER_SET = new FiniteSet<Set<Integer>>(SPC);
-  private int mN = 0;
+  private int mN = -1;
+  private long mCount = 0;
+  private List<Set<Integer>> mPowerSet = null;
 
-  private <T> String toString(final Set<T> s) {
-    final StringBuilder sb = new StringBuilder();
-    sb.append('{');
-    for (final T e : s) {
-      if (sb.length() > 1) {
-        sb.append(',');
+  private boolean isIncomparable(final List<Set<Integer>> antichain, final Set<Integer> set) {
+    for (final Set<Integer> a : antichain) {
+      if (set.isSubset(a) || a.isSubset(set)) {
+        return false;
       }
-      sb.append(e);
     }
-    sb.append('}');
-    return sb.toString();
+    return true;
   }
 
-  private Set<Set<Integer>> stableSets(final Set<Set<Integer>> u) {
-    System.out.println("ss: " + u.size() + " " + toString(u));
-    if (u.isEmpty()) {
-      return EMPTY_POWER_SET;
+  private void count(final List<Set<Integer>> antichain, final int n) {
+    if (n >= mPowerSet.size()) {
+      ++mCount;
+      return;
     }
-    final Iterator<Set<Integer>> it = u.iterator();
-    final Set<Integer> w = it.next(); // consume first element
-    final FiniteSet<Set<Integer>> u1 = new FiniteSet<>(it);
-    assert u1.size().equals(u.size().subtract(1));
-    final Set<Set<Integer>> res = stableSets(u1); // everything except first element
-    final ArrayList<Set<Integer>> retain = new ArrayList<>();
-    for (final Set<Integer> r : u) {
-      if (r != w && !r.isSubset(w) && !w.isSubset(r)) {
-        retain.add(r);
-      }
+    // Choose not to include element n
+    count(antichain, n + 1);
+    // Choose to include element n if allowed
+    final Set<Integer> s = mPowerSet.get(n);
+    if (isIncomparable(antichain, s)) {
+      antichain.add(s);
+      count(antichain, n + 1);
+      antichain.remove(antichain.size() - 1);
     }
-    final Set<Set<Integer>> ss = stableSets(new FiniteSet<>(retain));
-    final ArrayList<Set<Integer>> prepend = new ArrayList<>();
-    for (final Set<Integer> s : ss) {
-      prepend.add(s.union(w));
+  }
+
+  private List<Set<Integer>> powerSetList(final int n) {
+    // Convert power set to simple list so can index elements
+    final Set<Set<Integer>> ps = new IntegerSet(1, n).powerset();
+    final ArrayList<Set<Integer>> psl = new ArrayList<>(ps.size().intValueExact());
+    for (final Set<Integer> s : ps) {
+      psl.add(s);
     }
-    final Set<Set<Integer>> join = res.union(new FiniteSet<>(prepend));
-    System.out.println("join: " + join.size() + " " + toString(join) + " w=" + w);
-    return join;
+    return psl;
   }
 
   @Override
   public Z next() {
-    // todo creation below perhaps should start at 1 to get empty set?
-    final Set<Set<Integer>> stableSets = stableSets(new IntegerSet(1, ++mN).powerset());
-    System.out.println(toString(stableSets));
-    return stableSets.size();
+    if (++mN == 0) {
+      return Z.TWO;
+    }
+    mCount = 0;
+    mPowerSet = powerSetList(mN);
+    count(new ArrayList<>(), 0);
+    return Z.valueOf(mCount);
   }
 }
-
-/*
-stableSets[u_]:=If[Length[u]===0, {{}}, With[{w=First[u]}, Join[stableSets[DeleteCases[u, w]], Prepend[#, w]&/@stableSets[DeleteCases[u, r_/; r===w||SubsetQ[r, w]||SubsetQ[w, r]]]]]];
- */

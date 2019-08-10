@@ -6,7 +6,6 @@ A000236 equivalence classes
 A000241 crossing number of complete graph, hard
 A000315 Latin squares - hard graph-theory computation, a(12) unknown
 A000361 Related to a Sierpinski-like fractal, some notes in blog2019.tex
-A000372 Dedekind numbers, cf. A006126
 A000403 Number of simple equifacetted 3-manifolds with n faces, hard, insufficient detail
 A000410 0,1-matrices, have a paper, looks slow and long-winded
 A000438 graph, hard, have papers
@@ -722,7 +721,6 @@ A007134 Number of connected labeled chordal graphs (or triangulated graphs) with
 A007135 Number of symmetry sites in all planted 1,3-trees with 2n nodes, not in Bailey paper?
 A007136 Number of symmetry sites in all planted 3-trees with n nodes
 A007140 Number of unlabeled bicolored graphs, with no isolated nodes, on 2n nodes having n nodes of each color and allowing the color classes to be interchanged, cf. A007139
-A007153 Simple dependency A000372
 A007156 Spectrum of a certain 3-element algebra, lot of work for small number of terms
 A007159 Inverse binomial transform of A007156
 A007187 Leech's tree-labeling problem for n nodes (might be doable, lots of work for few terms)
@@ -1025,7 +1023,6 @@ A014425 From table of maximal epacts e(p) and corresponding primes p, for x_0=2,
 A014426 From table of maximal epacts e(p) and corresponding primes p, for x_0=2, x_{m+1} = (x_m)^2-1; sequence gives e(p)
 A014452 Theta series of quadratic form with Gram matrix [ 1, 0, 0; 0, 2, 1; 0, 1, 2 ], insufficient detail, similar A014453?
 A014457 Theta series of quadratic form (or lattice) with Gram matrix [ 2, 1, 0; 1, 3, 1; 0, 1, 2 ]
-A014466 Simple dependency on A000372
 A014496 Theta series of hypothetical extremal 3-modular even 36-dimensional lattice with minimal norm 8 and det = 3^18
 A014497 Theta series of hypothetical extremal 3-modular even 48-dimensional lattice with minimal norm 10 and det = 3^24.
 A014529 Largest convex area that can be tiled with n equilateral triangles whose sides s_k are relatively prime, i.e., gcd(s_1,...,s_n) = 1.

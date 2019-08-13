@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(Coord3SetTest.class);
+    suite.addTestSuite(Coord3Test.class);
     suite.addTestSuite(CoordSet2Test.class);
     suite.addTestSuite(CoordSet2TTest.class);
     suite.addTestSuite(CoordSetGenTest.class);

@@ -1,27 +1,41 @@
 package irvine.oeis.a307;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000032;
 
 /**
  * A307499 The number of primes between two consecutive prime Lucas numbers, bounds excluded.
  * @author Sean A. Irvine
  */
-public class A307499 implements Sequence {
+public class A307499 extends A000032 {
 
-  private Z mP = Z.THREE;
+  private Z mP = null;
+  {
+    while (mP == null) {
+      final Z t = super.next();
+      if (t.isProbablePrime()) {
+        mP = t;
+      }
+    }
+  }
 
   @Override
   public Z next() {
-    long k = 1;
-    while (true) {
-      final Z t = mP.multiply(mP.subtract(1)).multiply(k);
-      final Z runP = t.subtract(1);
-      if (runP.isProbablePrime() && t.add(1).isProbablePrime()) {
-        mP = runP;
-        return Z.valueOf(k);
+    Z lo = mP.add(1).or(Z.ONE);
+    mP = null;
+    while (mP == null) {
+      final Z t = super.next();
+      if (t.isProbablePrime()) {
+        mP = t;
       }
-      ++k;
     }
+    long c = 0;
+    while (lo.compareTo(mP) < 0) {
+      if (lo.isProbablePrime()) {
+        ++c;
+      }
+      lo = lo.add(2);
+    }
+    return Z.valueOf(c);
   }
 }

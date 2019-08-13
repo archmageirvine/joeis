@@ -18,7 +18,7 @@ public class A000372 implements Sequence {
 
   private int mN = -1;
   private long mCount = 0;
-  private List<Set<Integer>> mPowerSet = null;
+  private List<Set<Integer>> mPowerSetList = null;
 
   private boolean isIncomparable(final List<Set<Integer>> antichain, final Set<Integer> set) {
     for (final Set<Integer> a : antichain) {
@@ -30,14 +30,14 @@ public class A000372 implements Sequence {
   }
 
   private void count(final List<Set<Integer>> antichain, final int n) {
-    if (n >= mPowerSet.size()) {
+    if (n >= mPowerSetList.size()) {
       ++mCount;
       return;
     }
     // Choose not to include element n
     count(antichain, n + 1);
     // Choose to include element n if allowed
-    final Set<Integer> s = mPowerSet.get(n);
+    final Set<Integer> s = mPowerSetList.get(n);
     if (isIncomparable(antichain, s)) {
       antichain.add(s);
       count(antichain, n + 1);
@@ -61,7 +61,7 @@ public class A000372 implements Sequence {
       return Z.TWO;
     }
     mCount = 0;
-    mPowerSet = powerSetList(mN);
+    mPowerSetList = powerSetList(mN);
     count(new ArrayList<>(), 0);
     return Z.valueOf(mCount);
   }

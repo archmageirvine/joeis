@@ -16,7 +16,7 @@ public class A326225 extends ParallelGenerateGraphsSequence {
 
   /** Construct the sequence. */
   public A326225() {
-    super(0, 0, false, false, false);
+    super(-1, 0, false, false, false);
   }
 
   private static final class DigraphCheck extends DirectedGraph {

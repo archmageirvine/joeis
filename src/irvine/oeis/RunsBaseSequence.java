@@ -152,7 +152,7 @@ public abstract class RunsBaseSequence implements Sequence {
     int count = 0;
     while (idig >= 0) {
       if (digits.substring(idig, idig + dlen).equals(search)) {
-        count++;
+        ++count;
       }
       idig -= dlen;
     } // while

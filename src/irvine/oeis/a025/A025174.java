@@ -1,0 +1,19 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025174.
+ * @author Sean A. Irvine
+ */
+public class A025174 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return ++mN == 0 ? Z.ZERO : Binomial.binomial(3 * mN - 1, mN - 1);
+  }
+}

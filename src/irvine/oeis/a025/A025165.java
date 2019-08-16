@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025165.
+ * A025165 <code>a(n) = H_n(1) / 2^floor(n/2)</code> where <code>H_n</code> is the n-th Hermite polynomial.
  * @author Sean A. Irvine
  */
 public class A025165 implements Sequence {

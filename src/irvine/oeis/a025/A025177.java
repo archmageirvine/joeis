@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025177.
+ * A025177 Triangular array, read by rows: first differences in n,n direction of trinomial array <code>A027907</code>.
  * @author Sean A. Irvine
  */
 public class A025177 extends MemoryFunction2<Long, Z> implements Sequence {

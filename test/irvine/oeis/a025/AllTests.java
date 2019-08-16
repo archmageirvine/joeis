@@ -190,7 +190,17 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A025178Test.class);
     suite.addTestSuite(A025179Test.class);
     suite.addTestSuite(A025180Test.class);
+    suite.addTestSuite(A025181Test.class);
+    suite.addTestSuite(A025182Test.class);
+    suite.addTestSuite(A025183Test.class);
+    suite.addTestSuite(A025184Test.class);
+    suite.addTestSuite(A025185Test.class);
+    suite.addTestSuite(A025186Test.class);
+    suite.addTestSuite(A025187Test.class);
+    suite.addTestSuite(A025188Test.class);
+    suite.addTestSuite(A025189Test.class);
     suite.addTestSuite(A025190Test.class);
+    suite.addTestSuite(A025191Test.class);
     suite.addTestSuite(A025211Test.class);
     suite.addTestSuite(A025234Test.class);
     suite.addTestSuite(A025280Test.class);

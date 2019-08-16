@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A194543.
+ * A194543 Triangle <code>T(n,k), n&gt;=0, 0&lt;=k&lt;=n</code>, read by rows: <code>T(n,k)</code> is the number of partitions of n into parts <code>p_i</code> such that <code>|p_i - p_j| &gt;=</code> k for i <code>!=</code> j.
  * @author Sean A. Irvine
  */
 public class A194543 extends MemoryFunctionInt3<Z> implements Sequence {

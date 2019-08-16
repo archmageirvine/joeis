@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025174.
+ * A025174 <code>a(n) = binomial(3n-1, n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A025174 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025203.
+ * A025203 <code>a(n) = [ 3rd</code> elementary symmetric function of <code>{log(k)} ], k = 2,3,...,n</code>.
  * @author Sean A. Irvine
  */
 public class A025203 extends MemoryFunction<Long, CR> implements Sequence {

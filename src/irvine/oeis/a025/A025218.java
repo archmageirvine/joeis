@@ -5,13 +5,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025224 <code>a(n) = floor(Sum_{k=1..n} sqrt(k))</code>.
+ * A025218 <code>[ Sum{sqrt(k+1)} ], k = 1,2,...,n</code>.
  * @author Sean A. Irvine
  */
-public class A025224 implements Sequence {
+public class A025218 implements Sequence {
 
+  private long mN = 1;
   private CR mSum = CR.ZERO;
-  private long mN = -1;
 
   @Override
   public Z next() {

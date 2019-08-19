@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025197.
+ * A025198 <code>[ (n-1)st</code> elementary symmetric function of <code>{sqrt(k)} ], k = 1,2,...,n</code>.
  * @author Sean A. Irvine
  */
 public class A025198 extends MemoryFunction<Long, CR> implements Sequence {

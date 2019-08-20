@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008542 Sextuple factorial numbers: <code>product[ k=0..n-1 ] (6*k+1)</code>.
+ * A008542 Sextuple factorial numbers: <code>Product_{k=0..n-1} (6*k+1)</code>.
  * @author Sean A. Irvine
  */
 public class A008542 implements Sequence {

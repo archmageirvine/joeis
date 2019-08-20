@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A025200 <code>s(n) = [ S3/S1 ]</code>, where <code>S3</code> and <code>S1</code> are, respectively, the 3rd and first elementary symmetric functions of <code>{sqrt(k), k = 1,2,...,n} ]</code>.
+ * A025200 <code>a(n) = floor(floor(S3)/floor(S1))</code>, where <code>S3</code> and <code>S1</code> are, respectively, the 3rd and first elementary symmetric functions of <code>{sqrt(k), k = 1,2,...,n}</code>.
  * @author Sean A. Irvine
  */
 public class A025200 extends A025194 {

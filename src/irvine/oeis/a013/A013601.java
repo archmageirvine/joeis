@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013601 <code>nextprime(7^n)-7^n</code>.
+ * A013601 <code>a(n) = nextprime(7^n)-7^n</code>.
  * @author Sean A. Irvine
  */
 public class A013601 implements Sequence {

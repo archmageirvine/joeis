@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A025214 4th elementary symmetric function of <code>{Sum{1/j, j = 1,2,...,k} ], k = 1,2,...,n</code>.
+ * A025214 <code>a(n) = floor(4th</code> elementary symmetric function of <code>Sum_{j=1..k} 1/j, k = 1,2,...,n)</code>.
  * @author Sean A. Irvine
  */
 public class A025214 extends A025212 {

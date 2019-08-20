@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 public class A025056 extends A025051 {
 
   private long mN = 0;
-  private long mM = 2;
+  private long mM = 0;
 
   @Override
   public Z next() {

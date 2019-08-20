@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025212 <code>a(n) = [ 2nd</code> elementary symmetric function of <code>{Sum{1/j, j = 1,2,...,k} ], k = 1,2,...,n</code>.
+ * A025212 <code>a(n) = floor(2nd</code> elementary symmetric function of <code>Sum_{j=1..k} 1/j, k = 1,2,...,n)</code>.
  * @author Sean A. Irvine
  */
 public class A025212 extends HarmonicSequence implements Sequence {

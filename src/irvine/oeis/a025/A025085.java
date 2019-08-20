@@ -14,6 +14,5 @@ public class A025085 extends HalfConvolutionSequence {
   /** Construct the sequence. */
   public A025085() {
     super(new A000045(), new PrependSequence(new A001950(), 0), false);
-    next();
   }
 }

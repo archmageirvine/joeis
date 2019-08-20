@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A308553 allocated for Mikk Heidemaa.
+ * A308553 Numbers k such that <code>5^(k+3) + 3^(k+2) + 2^(k+1) + 1</code> is prime.
  * @author Sean A. Irvine
  */
 public class A308553 implements Sequence {

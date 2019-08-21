@@ -24,6 +24,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PrimePowersTest.class);
     suite.addTestSuite(ProgressionTest.class);
     suite.addTestSuite(RandomUtilsTest.class);
+    suite.addTestSuite(ReducedLatinRectanglesTest.class);
     suite.addTestSuite(ShiftRegisterTest.class);
     suite.addTestSuite(ShuffleTest.class);
     suite.addTestSuite(SparseIntegerTest.class);

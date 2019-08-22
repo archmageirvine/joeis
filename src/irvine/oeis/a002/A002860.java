@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000315;
 
 /**
- * A002860.
+ * A002860 Number of Latin squares of order n; or labeled quasigroups.
  * @author Sean A. Irvine
  */
 public class A002860 extends A000315 {

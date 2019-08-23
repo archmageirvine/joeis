@@ -17,5 +17,10 @@ public class Coord3SetTest extends TestCase {
     assertEquals(c2, cs3.getCoord(2));
     assertEquals("[0,0,1][0,1,0][1,0,0][0,0,0]", cs3.makeDiagram());
     assertTrue(cs3.isSame(cs3));
+    assertEquals("[-1,0,1][-2,0,0][-1,1,0][-1,0,0]", cs3.rotxy().makeDiagram());
+    assertEquals("[-2,0,0][-1,1,0][-1,0,1][-1,0,0]", cs3.rotxz().makeDiagram());
+    assertEquals("[0,0,1][1,0,0][0,1,0][0,0,0]", cs3.mirrorxy().makeDiagram());
+    assertEquals("[1,0,0][0,1,0][0,0,1][0,0,0]", cs3.mirrorxz().makeDiagram());
+    assertEquals("[0,0,-1][0,1,0][1,0,0][0,0,0]", cs3.mirrorz().makeDiagram());
   }
 }

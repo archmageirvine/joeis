@@ -219,7 +219,7 @@ public final class ZUtils {
    * @param s string to get syndrome of
    * @return the syndrome
    */
-  public static String syndrome(final String s) {
+  public static String syndrome(final CharSequence s) {
     final int[] c = new int[10];
     for (int k = 0; k < s.length(); ++k) {
       c[s.charAt(k) - '0']++;

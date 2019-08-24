@@ -7,6 +7,7 @@ import irvine.math.api.Set;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.matrix.IdentityMatrix;
 import irvine.math.matrix.MinorMatrix;
+import irvine.math.matrix.Singular;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.util.Permutation;
@@ -87,8 +88,16 @@ public class MatrixRing<E> extends MatrixGroupRing<E> implements Ring<Matrix<E>>
   }
 
   /**
+   * Test if the given matrix is singular.
+   * @param m matrix to test
+   * @return true iff the matrix is singular.
+   */
+  public boolean isSingular(final Matrix<E> m) {
+    return Singular.isSingular(m, mElementRing);
+  }
+
+  /**
    * Determinant.
-   *
    * @param m matrix
    * @return determinant of matrix
    */

@@ -5,32 +5,28 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025284.
+ * A025294.
  * @author Sean A. Irvine
  */
-public class A025284 implements Sequence {
+public class A025294 implements Sequence {
 
   private long mN = 1;
 
   protected int ways() {
-    return 1;
+    return 3;
   }
 
   @Override
   public Z next() {
     while (true) {
       ++mN;
-      final long lim = LongUtils.sqrt(mN / 2);
       int c = 0;
-      for (long x = 1; x <= lim; ++x) {
+      for (long x = 1; x * x <= mN / 2; ++x) {
         final long y2 = mN - x * x;
         final long y = LongUtils.sqrt(y2);
-        if (y * y == y2 && ++c > ways()) {
-          break;
+        if (y * y == y2 && ++c >= ways()) {
+          return Z.valueOf(mN);
         }
-      }
-      if (c == ways()) {
-        return Z.valueOf(mN);
       }
     }
   }

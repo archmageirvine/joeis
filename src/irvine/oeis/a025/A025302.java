@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025284.
+ * A025302.
  * @author Sean A. Irvine
  */
-public class A025284 implements Sequence {
+public class A025302 implements Sequence {
 
   private long mN = 1;
 
@@ -23,10 +23,13 @@ public class A025284 implements Sequence {
       final long lim = LongUtils.sqrt(mN / 2);
       int c = 0;
       for (long x = 1; x <= lim; ++x) {
-        final long y2 = mN - x * x;
-        final long y = LongUtils.sqrt(y2);
-        if (y * y == y2 && ++c > ways()) {
-          break;
+        final long x2 = x * x;
+        final long y2 = mN - x2;
+        if (y2 != x2) {
+          final long y = LongUtils.sqrt(y2);
+          if (y * y == y2 && ++c > ways()) {
+            break;
+          }
         }
       }
       if (c == ways()) {

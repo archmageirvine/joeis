@@ -21,6 +21,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PolySideTest.class);
     suite.addTestSuite(Rot180MidSideCounterTest.class);
     suite.addTestSuite(SquareTest.class);
+    suite.addTestSuite(UniqueMaker3sTest.class);
     suite.addTestSuite(UniqueMaker2TTest.class);
     return suite;
   }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025321.
+ * A025321 Numbers that are the sum of 3 nonzero squares in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A025321 implements Sequence {

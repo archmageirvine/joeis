@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025302.
+ * A025302 Numbers that are the sum of 2 distinct nonzero squares in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A025302 implements Sequence {

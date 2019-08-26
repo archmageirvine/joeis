@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006776.
+ * A006776 Number of n-step spirals on hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A006776 implements Sequence {
@@ -19,7 +19,6 @@ public class A006776 implements Sequence {
   // force counting of paths, etc.)
   // Cf. A001334
   private static final int BITS_PER_COORDINATE = 16;
-  //private static final int MASK = (1 << BITS_PER_COORDINATE) - 1;
   private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
   private static final int ORIGIN = c(0, 0);
   private static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
@@ -55,8 +54,6 @@ public class A006776 implements Sequence {
   }
 
   protected int model() {
-    // I had expected overriding this to return 2 would reproduce A006775, but
-    // it appears I am missing some detail, because that does not work.
     return 3;
   }
 

@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002808;
 
 /**
- * A025283.
+ * A025283 Composites that use the same digits as their prime factorization.
  * @author Sean A. Irvine
  */
 public class A025283 extends A002808 {

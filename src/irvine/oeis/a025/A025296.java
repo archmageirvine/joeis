@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 /**
- * A025296.
+ * A025296 Numbers that are the sum of 2 nonzero squares in 5 or more ways.
  * @author Sean A. Irvine
  */
 public class A025296 extends A025294 {

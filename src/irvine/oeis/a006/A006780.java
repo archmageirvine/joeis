@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006779.
+ * A006780 Number of n-step spirals on cubic lattice.
  * @author Sean A. Irvine
  */
 public class A006780 implements Sequence {

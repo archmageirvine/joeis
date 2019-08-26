@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008683;
 
 /**
- * A285879.
+ * A285879 Number of odd squarefree numbers <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A285879 extends A008683 {

@@ -4,12 +4,12 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A025279.
+ * A025279 <code>a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-1)*a(1)</code> for <code>n &gt;= 5</code>.
  * @author Sean A. Irvine
  */
 public class A025279 extends MemorySequence {
 
-  private Z[] SMALL = {Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE};
+  private static final Z[] SMALL = {Z.ONE, Z.ZERO, Z.NEG_ONE, Z.ONE};
   {
     add(null); // 0th
   }

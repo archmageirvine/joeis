@@ -39,8 +39,7 @@ public class SmallGraph extends AbstractGraph {
    * @param adj adjacency matrix
    */
   public SmallGraph(final int order, final long[] adj) {
-    mAdj = new long[order];
-    System.arraycopy(adj, 0, mAdj, 0, order);
+    mAdj = Arrays.copyOf(adj, order);
   }
 
   @Override

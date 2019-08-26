@@ -14,6 +14,15 @@ public class SmallDigraph extends SmallGraph {
     super(order);
   }
 
+  /**
+   * Convert directly into a small directed graph.
+   * @param order order of graph
+   * @param adj adjacency matrix
+   */
+  public SmallDigraph(final int order, final long[] adj) {
+    super(order, adj);
+  }
+
   @Override
   public int size() {
     int e = 0;

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025313.
+ * A025313 Numbers that are the sum of 2 distinct nonzero squares in 3 or more ways.
  * @author Sean A. Irvine
  */
 public class A025313 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A292749.
+ * A292749 Number of 6-good trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A292749 implements Sequence {

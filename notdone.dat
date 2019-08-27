@@ -11,7 +11,6 @@ A000445 related A236
 A000474 Number of nonisomorphic 1-factorizations of complete graph K_{2n}, hard, have papers
 A000509 Complete arcs in PG(2,q) [have a paper, not easy]
 A000510 related A000509
-A000519 Number of equivalence classes of nonzero regular 0-1 matrices of order n
 A000528 1-factorizations of K_n,n (hard)
 A000591 Automata counting, hard group theory cycle index, have paper
 A000608 depends A000112
@@ -628,8 +627,7 @@ A006739 Site percolation series for hexagonal lattice
 A006740 Series for first parallel moment of hexagonal lattice
 A006741 Series for second parallel moment of hexagonal lattice
 A006742 Series for second perpendicular moment of hexagonal lattice
-A006775 Number of n-step spirals on hexagonal lattice, have paper
-A006777 Number of n-step spirals on hexagonal lattice, have paper
+A006777 Number of n-step spirals on hexagonal lattice, have paper (likely in error)
 A006778 Number of n-step spirals on hexagonal lattice, have paper
 A006780 Number of n-step spirals on cubic lattice
 A006783 Maximally extended polygons of length 2n on cubic lattice

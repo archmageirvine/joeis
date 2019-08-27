@@ -11,6 +11,13 @@ public final class Singular {
 
   private Singular() { }
 
+  /**
+   * Test if the given matrix is singular.
+   * @param matrix matrix to test
+   * @param elementRing underlying ring for elements
+   * @param <E> type of elements
+   * @return true iff the matrix is singular
+   */
   public static <E> boolean isSingular(final Matrix<E> matrix, final Ring<E> elementRing) {
     // We need to decide if the determinant is 0, but we can do slightly better
     // than explicitly computing the entire determinant.  We use row reduction,

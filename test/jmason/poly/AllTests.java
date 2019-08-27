@@ -22,6 +22,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(Rot180MidSideCounterTest.class);
     suite.addTestSuite(SquareTest.class);
     suite.addTestSuite(UniqueMaker3sTest.class);
+    suite.addTestSuite(UniqueMaker2Test.class);
     suite.addTestSuite(UniqueMaker2TTest.class);
     return suite;
   }

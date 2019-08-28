@@ -70,6 +70,9 @@ public class A133687 extends A227061 {
 
   @Override
   public Long get(final Integer n, final Integer m) {
+    if (m > n) {
+      return 0L;
+    }
     return m <= n / 2 ? super.get(n, m) : super.get(n, n - m);
   }
 

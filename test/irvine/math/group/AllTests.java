@@ -14,6 +14,7 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(AffineGroupCycleIndexTest.class);
     suite.addTestSuite(AlternatingGroupTest.class);
+    suite.addTestSuite(BaseStrongGeneratingCandidateElementTest.class);
     suite.addTestSuite(CayleyTableTest.class);
     suite.addTestSuite(CentralizerTest.class);
     suite.addTestSuite(CentreTest.class);

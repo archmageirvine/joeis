@@ -27,7 +27,7 @@ public class A006780 implements Sequence {
   private static final int X1 = 1 << Y_SHIFT;
   private static final int Y1 = 1 << BITS_PER_COORDINATE;
   private static final int[] DELTAS = {1, X1, Y1, -1, -X1, -Y1};
-  private static final int[][] STATES = {
+  private static final int[][] NEXT_STATES = {
     {0, 1},
     {0, 1, 2, 3, 5},
     {0, 1, 2, 3, 4},
@@ -52,19 +52,15 @@ public class A006780 implements Sequence {
     return false;
   }
 
-  private boolean check(final int point, final int n) {
-    return !contains(point, n);
-  }
-
   private long count(final int point, final int n, final int state) {
     if (n == mN) {
-      return 1;
+      return 2;
     }
     mPath[n] = point;
     long count = 0;
-    for (final int s : STATES[state]) {
+    for (final int s : NEXT_STATES[state]) {
       final int newPoint = point + DELTAS[s];
-      if (check(newPoint, n)) {
+      if (!contains(newPoint, n)) {
         count += count(newPoint, n + 1, s);
       }
     }
@@ -78,6 +74,6 @@ public class A006780 implements Sequence {
     }
     mPath = new int[mN];
     setPathElement(0, ORIGIN);
-    return Z.valueOf(2 * count(ORIGIN + 1, 1, 0)).add(Z.valueOf(4 * count(ORIGIN + X1, 1, 1)));
+    return Z.valueOf(count(ORIGIN + 1, 1, 0)).add(Z.valueOf(count(ORIGIN + X1, 1, 1))).add(Z.valueOf(count(ORIGIN + Y1, 1, 2)));
   }
 }

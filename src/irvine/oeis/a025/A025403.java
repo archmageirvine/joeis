@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025403.
+ * A025403 Numbers that are the sum of 4 positive cubes in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A025403 implements Sequence {

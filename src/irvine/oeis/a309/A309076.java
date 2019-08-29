@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A309076 allocated for Garth A. T. Rose.
+ * A309076 The Zeckendorf representation of n read as a NegaFibonacci representation.
  * @author Sean A. Irvine
  */
 public class A309076 implements Sequence {

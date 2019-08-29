@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015763 <code>Phi(n) | Sigma_5(n)</code>.
+ * A015763 Numbers k such that <code>phi(k)</code> divides <code>sigma_5(k)</code>.
  * @author Sean A. Irvine
  */
 public class A015763 implements Sequence {

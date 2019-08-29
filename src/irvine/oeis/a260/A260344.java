@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.a006.A006779;
 
 /**
- * A260344.
+ * A260344 Coefficients <code>phi_n</code> for three-dimensional spiral self-avoiding walks on simple cubic lattice.
  * @author Sean A. Irvine
  */
 public class A260344 extends A006779 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025399.
+ * A025399 Numbers that are the sum of 3 distinct positive cubes in exactly 1 way.
  * @author Sean A. Irvine
  */
 public class A025399 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A308595 allocated for Craig Knecht.
+ * A308595 <code>a(n)</code> is the number of pentagonal polyiamonds of all orders less than or equal to <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A308595 implements Sequence {

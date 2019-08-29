@@ -25,6 +25,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(IrreduciblePolynomialsTest.class);
     suite.addTestSuite(MultivariateMonomialTest.class);
     suite.addTestSuite(MultivariatePolynomialTest.class);
+    suite.addTestSuite(PairMultiplyTest.class);
     suite.addTestSuite(PolynomialTest.class);
     suite.addTestSuite(PolynomialUtilsTest.class);
     suite.addTestSuite(QPolynomialTest.class);

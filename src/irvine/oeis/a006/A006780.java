@@ -21,6 +21,7 @@ public class A006780 implements Sequence {
   private static final int BITS_PER_COORDINATE = 10;
   private static final int Y_SHIFT = 2 * BITS_PER_COORDINATE;
   private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
+  private static final int MASK = (1 << BITS_PER_COORDINATE) - 1;
   private static final int ORIGIN = (BIAS << (2 * BITS_PER_COORDINATE))
     | (BIAS << BITS_PER_COORDINATE)
     | BIAS;
@@ -39,6 +40,18 @@ public class A006780 implements Sequence {
   private int mN = -1;
   private int[] mPath = null;
 
+  protected static int z(final int point) {
+    return (point & MASK) - BIAS;
+  }
+
+  protected static int y(final int point) {
+    return ((point >> BITS_PER_COORDINATE) & MASK) - BIAS;
+  }
+
+  protected static int x(final int point) {
+    return ((point >> Y_SHIFT) & MASK) - BIAS;
+  }
+
   private void setPathElement(final int pos, final int value) {
     mPath[pos] = value;
   }
@@ -52,9 +65,13 @@ public class A006780 implements Sequence {
     return false;
   }
 
+  protected long count(final int point) {
+    return 2;
+  }
+
   private long count(final int point, final int n, final int state) {
     if (n == mN) {
-      return 2;
+      return count(point);
     }
     mPath[n] = point;
     long count = 0;

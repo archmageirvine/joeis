@@ -39,5 +39,33 @@ public class A048141 implements Sequence, MultidimensionalIntegerPartition.Parti
     part.generate(this);
     return Z.valueOf(mCount);
   }
+
+  // After Wouter Meeussen (private communication)
+/*
+  overmajorsQ[par : {__Integer}, child : {__Integer}] :=
+ Length[par] > Length[child] &&
+  Min[Take[Rest[par], Length[child]] - child] > 0
+  */
+//  private boolean overMajors(final Collection<Integer> par, final Collection<Integer> child) {
+//    if (par.size() <= child.size()) {
+//      return false;
+//    }
+//    int min = Integer.MAX_VALUE;
+//    final Iterator<Integer> it = par.iterator();
+//    it.next();
+//    for (final int c : child) {
+//      min = Math.min(min, it.next() - c);
+//    }
+//    return min > 0;
+//  }
+
+  /*
+  childindx =
+   MapIndexed[
+    Position[Take[bit, Max[1, First[#2] - First[#1] ]  ],
+      p : {__Integer} /; overmajorsQ[#1, p], {2}] &, bit, {2}];]
+   */
+
+
 }
 

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007589 Dodecahedral surface numbers: <code>a(0)=0, a(1)=1, a(2)=20</code>, thereafter <code>2*((3*n-7)^2 +21)</code>.
+ * A007589 Dodecahedral surface numbers: <code>a(0)=0, a(1)=1, a(2)=20</code>, thereafter <code>2*((3*n-7)^2 + 21)</code>.
  * @author Sean A. Irvine
  */
 public class A007589 implements Sequence {

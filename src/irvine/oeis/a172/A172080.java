@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172080 <code>(12*n^4+10*n^3-9*n^2-7*n)/6</code>.
+ * A172080 <code>a(n) = n*(12*n^3 + 10*n^2 - 9*n - 7)/6</code>.
  * @author Sean A. Irvine
  */
 public class A172080 extends LinearRecurrence {

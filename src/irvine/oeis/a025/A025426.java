@@ -1,32 +1,14 @@
 package irvine.oeis.a025;
 
-import irvine.math.LongUtils;
-import irvine.math.z.Z;
-import irvine.oeis.Sequence;
-
 /**
  * A025426 Number of partitions of n into 2 nonzero squares.
  * @author Sean A. Irvine
  */
-public class A025426 implements Sequence {
-
-  // After R. J. Mathar
-
-  private long mN = -1;
+public class A025426 extends A025429 {
 
   @Override
-  public Z next() {
-    ++mN;
-    long a = 0;
-    for (long x = 1; ; ++x) {
-      if (2 * x * x > mN) {
-        return Z.valueOf(a);
-      }
-      final long v = mN - x * x;
-      final long s = LongUtils.sqrt(v);
-      if (s * s == v) {
-        ++a;
-      }
-    }
+  protected int numSquares() {
+    return 2;
   }
 }
+

@@ -7,13 +7,19 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class EuclidMullinSequenceTest extends TestCase {
 
   public void test3() {
-    final EuclidMullinSequence ems = EuclidMullinSequence.create(3);
+    EuclidMullinSequence ems = EuclidMullinSequence.create(3);
+    assertEquals(Z.THREE, ems.next());
+    assertEquals(Z.TWO, ems.next());
+    assertEquals(Z.SEVEN, ems.next());
+    assertEquals(Z.valueOf(43), ems.next());
+    assertEquals(Z.valueOf(13), ems.next());
+    // Following tests reset works
+    ems = EuclidMullinSequence.create(3);
     assertEquals(Z.THREE, ems.next());
     assertEquals(Z.TWO, ems.next());
     assertEquals(Z.SEVEN, ems.next());

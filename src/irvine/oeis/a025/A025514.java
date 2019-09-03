@@ -1,0 +1,15 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Z;
+
+/**
+ * A025514 Sequence <code>A025273</code> divided by 2.
+ * @author Sean A. Irvine
+ */
+public class A025514 extends A025513 {
+
+  @Override
+  public Z next() {
+    return super.next().divide2();
+  }
+}

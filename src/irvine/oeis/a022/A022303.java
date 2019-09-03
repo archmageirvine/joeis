@@ -10,7 +10,7 @@ import irvine.util.array.LongDynamicBooleanArray;
  */
 public class A022303 implements Sequence {
 
-  private final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
+  protected final LongDynamicBooleanArray mA = new LongDynamicBooleanArray();
   {
     mA.set(1);
   }
@@ -18,9 +18,8 @@ public class A022303 implements Sequence {
   private long mS = 0;
   private long mT = 2;
 
-  @Override
-  public Z next() {
-    if (++mN == mT) {
+  protected void ensure(final long n) {
+    if (n == mT) {
       final boolean next = !mA.isSet(mT - 1);
       final boolean b = mA.isSet(mS++);
       if (b) {
@@ -38,6 +37,11 @@ public class A022303 implements Sequence {
         ++mT;
       }
     }
+  }
+
+  @Override
+  public Z next() {
+    ensure(++mN);
     return mA.isSet(mN) ? Z.TWO : Z.ONE;
   }
 }

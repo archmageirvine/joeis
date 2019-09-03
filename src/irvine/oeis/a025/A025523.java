@@ -1,0 +1,16 @@
+package irvine.oeis.a025;
+
+import irvine.oeis.PartialSumSequence;
+import irvine.oeis.a002.A002033;
+
+/**
+ * A025523 <code>a(n) = 1 + Sum_{ k &lt; n</code> and k <code>| n} a(k)</code>.
+ * @author Sean A. Irvine
+ */
+public class A025523 extends PartialSumSequence {
+
+  /** Construct the sequence. */
+  public A025523() {
+    super(new A002033());
+  }
+}

@@ -1,0 +1,23 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025527 <code>a(n) = n!/lcm{1,2,...,n} = (n-1)!/lcm{C(n-1,0), C(n-1,1)</code>, ..., <code>C(n-1,n-1)}</code>.
+ * @author Sean A. Irvine
+ */
+public class A025527 implements Sequence {
+
+  private Z mN = Z.ZERO;
+  private Z mF = Z.ONE;
+  private Z mL = Z.ONE;
+
+  @Override
+  public Z next() {
+    mN = mN.add(1);
+    mF = mF.multiply(mN);
+    mL = mL.lcm(mN);
+    return mF.divide(mL);
+  }
+}

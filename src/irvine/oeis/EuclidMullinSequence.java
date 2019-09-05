@@ -58,7 +58,7 @@ public final class EuclidMullinSequence extends StreamProcessor implements Seque
   private Z mProd = Z.ONE;
   private boolean mFileBased = false;
 
-  private EuclidMullinSequence(final Z p) throws IOException {
+  EuclidMullinSequence(final Z p) throws IOException {
     mP = p;
     if (!p.isProbablePrime()) {
       throw new IllegalArgumentException();

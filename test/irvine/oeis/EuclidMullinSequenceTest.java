@@ -27,9 +27,9 @@ public class EuclidMullinSequenceTest extends TestCase {
     assertEquals(Z.valueOf(13), ems.next());
   }
 
-  public void test5() {
+  public void test5() throws IOException {
     // This has a trusted source
-    final EuclidMullinSequence ems = EuclidMullinSequence.create(5);
+    final EuclidMullinSequence ems = new EuclidMullinSequence(Z.FIVE);
     assertEquals(Z.FIVE, ems.next());
     assertEquals(Z.TWO, ems.next());
     assertEquals(Z.valueOf(11), ems.next());
@@ -50,19 +50,19 @@ public class EuclidMullinSequenceTest extends TestCase {
     assertEquals(49, c);
   }
 
-  public void test7() {
-    final EuclidMullinSequence ems = EuclidMullinSequence.create(7);
+  public void test7() throws IOException {
+    final EuclidMullinSequence ems = new EuclidMullinSequence(Z.SEVEN);
     assertEquals(Z.SEVEN, ems.next());
     assertEquals(Z.TWO, ems.next());
     assertEquals(Z.THREE, ems.next());
     assertEquals(Z.valueOf(43), ems.next());
     assertEquals(Z.valueOf(13), ems.next());
-    assertSame(ems, EuclidMullinSequence.create(7));
     assertNotSame(ems, EuclidMullinSequence.create(5));
+    assertSame(EuclidMullinSequence.create(7), EuclidMullinSequence.create(7));
   }
 
-  public void test43() {
-    final EuclidMullinSequence ems = EuclidMullinSequence.create(43);
+  public void test43() throws IOException {
+    final EuclidMullinSequence ems = new EuclidMullinSequence(Z.valueOf(43));
     assertEquals(Z.valueOf(43), ems.next());
     assertEquals(Z.TWO, ems.next());
     assertEquals(Z.THREE, ems.next());

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099754 <code>a(n) = (3^n +1)/2 + 2^n</code>.
+ * A099754 <code>a(n) = (3^n+1)/2 + 2^n</code>.
  * @author Georg Fischer
  */
 public class A099754 extends GeneratingFunctionSequence {

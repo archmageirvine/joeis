@@ -12,7 +12,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A007146 Number of unlabeled simple connected bridgeless graphs with n nodes.
+ * A007146 Number of simple connected bridgeless graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A007146 implements Sequence {

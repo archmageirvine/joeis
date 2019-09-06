@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A025545.
+ * A025545 <code>a(n) = (1/4 + 1/6 + ... + 1/c(n))*LCM{4, 6</code>, ..., <code>c(n)}</code>, where <code>c(n) = n-th</code> composite number.
  * @author Sean A. Irvine
  */
 public class A025545 extends A002808 {

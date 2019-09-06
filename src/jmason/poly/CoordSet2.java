@@ -244,7 +244,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
   public String toString() {
     final StringBuilder ret = new StringBuilder();
     for (int i = 0; i < mSize; ++i) {
-      ret.append(getX(i)).append(getY(i)).append(TRANSFORM2.substring(getColour(i), getColour(i) + 1)).append(' ');
+      ret.append(getX(i)).append(getY(i)).append(TRANSFORM2, getColour(i), getColour(i) + 1).append(' ');
     }
     return ret.toString();
   }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A025543.
+ * A025543 Least common multiple of the first n composite numbers.
  * @author Sean A. Irvine
  */
 public class A025543 extends A018252 {

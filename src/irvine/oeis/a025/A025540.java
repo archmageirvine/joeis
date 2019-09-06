@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025540.
+ * A025540 Least common multiple of <code>{C(0,0), C(2,1)</code>, ..., <code>C(2n,n)}</code>.
  * @author Sean A. Irvine
  */
 public class A025540 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076049 Numbers n such that sum of n-th triangular number and <code>(n+2)-nd</code> triangular number is a triangular number.
+ * A076049 Numbers k such that the sum of the k-th triangular number and <code>(k+2)-nd</code> triangular number is a triangular number.
  * @author Sean A. Irvine
  */
 public class A076049 extends LinearRecurrence {

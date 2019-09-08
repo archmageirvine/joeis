@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.math.z.Z;
 
 /**
- * A134623.
+ * A134623 <code>a(n) =</code> the n-th positive integer which is missing from <code>A134624</code>.
  * @author Sean A. Irvine
  */
 public class A134623 extends A134624 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A134624 <code>a(1) = 1. a(n) =</code> the smallest integer which is <code>&gt; a(n-1)</code> and is not coprime to <code>A134623(n)</code>.
+ * A134624 <code>a(1) = 1. a(n) =</code> the smallest integer which is <code>&gt; a(n-1)</code> and is different from and not coprime to <code>A134623(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A134624 implements Sequence {

@@ -1,0 +1,31 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025586 Largest value in <code>'3x+1'</code> trajectory of <code>n</code>.
+ * @author Sean A. Irvine
+ */
+public class A025586 implements Sequence {
+
+  private Z mN = Z.ZERO;
+
+  @Override
+  public Z next() {
+    mN = mN.add(1);
+    Z max = mN;
+    Z m = mN;
+    while (!Z.ONE.equals(m)) {
+      if (m.isEven()) {
+        m = m.makeOdd();
+      } else {
+        m = m.multiply(3).add(1);
+        if (m.compareTo(max) > 0) {
+          max = m;
+        }
+      }
+    }
+    return max;
+  }
+}

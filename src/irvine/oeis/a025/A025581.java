@@ -15,7 +15,7 @@ public class A025581 implements Sequence {
   @Override
   public Z next() {
     if (--mM < 0) {
-      mM = ++ mN;
+      mM = ++mN;
     }
     return Z.valueOf(mM);
   }

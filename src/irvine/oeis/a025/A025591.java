@@ -1,0 +1,32 @@
+package irvine.oeis.a025;
+
+import irvine.math.MemoryFunction2;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025591 Maximal coefficient of <code>Product_{k&lt;=n} (x^k+1)</code>. Number of solutions to <code>+- 1 +- 2 +- 3 +- ... +- n = 0</code> or 1.
+ * @author Sean A. Irvine
+ */
+public class A025591 extends MemoryFunction2<Long, Z> implements Sequence {
+
+  // After Alois P. Heinz
+
+  private long mN = -1;
+
+  @Override
+  protected Z compute(final Long n, final Long m) {
+    if (n > m * (m + 1) / 2) {
+      return Z.ZERO;
+    }
+    if (m == 0) {
+      return Z.ONE;
+    }
+    return get(n + m, m - 1).add(get(Math.abs(n - m), m - 1));
+  }
+
+  @Override
+  public Z next() {
+    return get(0L, ++mN).add(get(1L, mN));
+  }
+}

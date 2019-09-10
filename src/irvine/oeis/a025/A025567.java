@@ -9,12 +9,12 @@ import irvine.oeis.a014.A014531;
  */
 public class A025567 extends A014531 {
 
-  private Z mA = Z.ZERO;
+  private Z mS = Z.ZERO;
 
   @Override
   public Z next() {
-    final Z t = mA;
-    mA = super.next();
-    return mA.add(t);
+    final Z t = mS;
+    mS = super.next();
+    return mS.add(t);
   }
 }

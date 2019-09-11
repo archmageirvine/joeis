@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025604.
+ * A025604 Number of n-move queen paths on <code>8x8</code> board from given corner to same corner.
  * @author Sean A. Irvine
  */
 public class A025604 extends MemoryFunctionInt3<Z> implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025610.
+ * A025610 Numbers of form <code>2^i*6^j</code>, with i, j <code>&gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A025610 implements Sequence {

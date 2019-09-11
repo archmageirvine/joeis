@@ -17,5 +17,6 @@ public class EllipticCurveModTest extends TestCase {
     assertNull(ec.zero());
     assertTrue(Arrays.equals(ec.zero(), ec.negate(ec.zero())));
     assertTrue(Arrays.equals(new Z[] {Z.valueOf(21), Z.valueOf(19)}, ec.doublePoint(new Z[] {Z.FIVE, Z.FIVE})));
+    assertEquals("[0, 12]", Arrays.toString(ec.multiply(new Z[] {Z.FIVE, Z.SEVEN}, Z.THREE)));
   }
 }

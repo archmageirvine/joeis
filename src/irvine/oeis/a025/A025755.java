@@ -1,0 +1,22 @@
+package irvine.oeis.a025;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A025755 <code>10th</code> order Patalan numbers (generalization of Catalan numbers).
+ * @author Sean A. Irvine
+ */
+public class A025755 implements Sequence {
+
+  private long mN = -1;
+  private Z mA = Z.ONE;
+
+  @Override
+  public Z next() {
+    if (++mN >= 2) {
+      mA = mA.multiply(10 * mN - 11).multiply(10).divide(mN);
+    }
+    return mA;
+  }
+}

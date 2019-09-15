@@ -1,0 +1,20 @@
+package irvine.oeis.a026;
+
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A026033 <code>C(4n,n) - C(4n,n-4)</code>.
+ * @author Sean A. Irvine
+ */
+public class A026033 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return Binomial.binomial(4 * ++mN, mN).subtract(Binomial.binomial(4 * mN, mN - 4));
+  }
+}
+

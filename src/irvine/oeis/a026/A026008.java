@@ -1,0 +1,22 @@
+package irvine.oeis.a026;
+
+import irvine.math.z.Binomial;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A026008 <code>T(n, [n/2])</code>, where T = Catalan triangle <code>(A008315)</code>.
+ * @author Sean A. Irvine
+ */
+public class A026008 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return (++mN & 1) == 0
+      ? Binomial.binomial(mN + 2, mN / 2 + 1).divide(mN / 2 + 2)
+      : Binomial.binomial(mN + 1, mN / 2).multiply(3).divide(mN / 2 + 3);
+  }
+}
+

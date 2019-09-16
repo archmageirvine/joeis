@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063497 Atoms in first n shells of type I hyperfullerene.
+ * A063497 Number of atoms in first n shells of type I hyperfullerene.
  * @author Georg Fischer
  */
 public class A063497 extends GeneratingFunctionSequence {

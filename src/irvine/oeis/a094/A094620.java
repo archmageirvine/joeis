@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094620 A palindromic sequence whose n-th term digits sum to <code>2n</code>. (See Formula for <code>definition.)</code>.
+ * A094620 Expansion of <code>x*(11 + 22*x + 20*x^2)/((1-x)*(1+x)*(1 - 10*x^2))</code>.
  * @author Sean A. Irvine
  */
 public class A094620 extends LinearRecurrence {

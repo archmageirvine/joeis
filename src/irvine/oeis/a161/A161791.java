@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A161791.
+ * A161791 Each Number <code>(n)</code> can be factorizated into two factors, a and b, such <code>a+b = Reversal(n)</code>.
  * @author Sean A. Irvine
  */
 public class A161791 implements Sequence {

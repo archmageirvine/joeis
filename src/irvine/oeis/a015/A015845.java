@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015845 Numbers n such that <code>phi(n) | sigma(n + 7)</code>.
+ * A015845 Numbers k such that <code>phi(k) | sigma(k + 7)</code>.
  * @author Sean A. Irvine
  */
 public class A015845 implements Sequence {

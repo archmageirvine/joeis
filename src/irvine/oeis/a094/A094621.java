@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094621 Sequence whose n-th term digits sum to <code>2n</code>.
+ * A094621 Expansion of <code>x*(11+13*x+20*x^2) / ( (x-1)*(1+x)*(10*x^2-1) )</code>.
  * @author Sean A. Irvine
  */
 public class A094621 extends LinearRecurrence {

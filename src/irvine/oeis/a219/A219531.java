@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219531 Sum <code>C(n, k), k = 0</code> .. 11.
+ * A219531 <code>a(n) = Sum_{k=0..11} C(n, k)</code>.
  * @author Georg Fischer
  */
 public class A219531 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008775 Expansion of <code>2(1 +</code> cos x cosh <code>x )^-1</code>.
+ * A008775 Expansion of e.g.f. <code>2/(1 +</code> cos <code>x *</code> cosh <code>x)</code> in powers of <code>x^4</code>.
  * @author Sean A. Irvine
  */
 public class A008775 implements Sequence {

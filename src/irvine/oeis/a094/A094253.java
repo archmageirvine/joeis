@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094253 Let M = the <code>3 X 3</code> Matrix <code>[ -4 4 8 / 1 0 0 / 0 1 0]</code>. Then <code>a(n) =</code> absolute value of the center term of <code>M^n * [1 1 1]</code>.
+ * A094253 Let M be the <code>3 X 3</code> Matrix <code>[ -4 4 8 / 1 0 0 / 0 1 0], a(n) =</code> absolute value of the center term of <code>M^n * [1 1 1]</code>.
  * @author Georg Fischer
  */
 public class A094253 extends GeneratingFunctionSequence {

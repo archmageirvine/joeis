@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081662 Partial sums of <code>n+F(n+1)</code>.
+ * A081662 Partial sums of <code>n + Fibonacci(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A081662 extends LinearRecurrence {

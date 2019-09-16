@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008786 <code>(n+5)^n</code>.
+ * A008786 <code>a(n) = (n+5)^n</code>.
  * @author Sean A. Irvine
  */
 public class A008786 implements Sequence {

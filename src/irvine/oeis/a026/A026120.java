@@ -11,7 +11,7 @@ public class A026120 extends A026105 {
   private long mN = -2;
   private long mM = 0;
 
-  private Z u(final long n, final long m) {
+  protected Z u(final long n, final long m) {
     if (n == 1 && m == 0) {
       return Z.ONE;
     }

@@ -5,7 +5,6 @@ import junit.framework.TestSuite;
 
 /**
  * Links all the tests in this package.
- *
  * @author Sean A. Irvine
  */
 public class AllTests extends TestSuite {
@@ -22,6 +21,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(IsomorphismTest.class);
     suite.addTestSuite(LauTest.class);
     suite.addTestSuite(OrderChainGraphTest.class);
+    suite.addTestSuite(VertexLabelingTest.class);
     suite.addTestSuite(VertexTest.class);
     return suite;
   }

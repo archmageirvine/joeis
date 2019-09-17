@@ -20,7 +20,7 @@ public class A025563 implements Sequence {
     Q a = Q.ZERO;
     for (long k = 0; k <= mN / 2; ++k) {
       final Z b = Binomial.binomial(mN - k, k);
-      a = a.signedAdd((k & 1) == 0, new Q(Z.ONE, b));
+      a = a.add(new Q(Z.ONE, b));
       l = l.lcm(b);
     }
     return a.multiply(l).toZ();

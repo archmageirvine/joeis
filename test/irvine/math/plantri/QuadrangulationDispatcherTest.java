@@ -15,6 +15,10 @@ public class QuadrangulationDispatcherTest extends TestCase {
     assertEquals(58, new Plantri().count(16, -1, -1, -1, false, false, true, false));
   }
 
+  public void testQuadrangulationsOP() {
+    assertEquals(92, new Plantri().count(16, -1, -1, -1, true, false, true, false));
+  }
+
   // Unconfirmed numbers in this test
   public void testQuadrangulationsM2C2() {
     assertEquals(4, new Plantri().count(7, 2, 2, -1, false, false, true, false));

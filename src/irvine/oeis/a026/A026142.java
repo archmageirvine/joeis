@@ -5,10 +5,10 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026136 For <code>n &gt;= 2</code>, let <code>L=n-[ n/2 ], R=n+[ n/2 ]</code>; then <code>a(L)=n</code> if <code>a(L)</code> not yet defined, else <code>a(R)=n</code>; thus <code>|a(n)-n|=[ (1/2)*a(n) ]</code>.
+ * A026142 For <code>n &gt;= 2</code>, let <code>h=[ (n+1)/2 ], L=n-h, R=n+h; a(L)=n</code> if <code>a(L)</code> not yet defined, else <code>a(R)=n</code>; thus <code>|a(n)-n| = [ (a(n)+1)/2 ]</code>.
  * @author Sean A. Irvine
  */
-public class A026136 implements Sequence {
+public class A026142 implements Sequence {
 
   private final LongDynamicLongArray mA = new LongDynamicLongArray();
   {
@@ -22,11 +22,12 @@ public class A026136 implements Sequence {
     ++mN;
     while (mA.get(mN) == 0) {
       ++mM;
-      final long l = mM - mM / 2;
+      final long h = (mM + 1) / 2;
+      final long l = mM - h;
       if (mA.get(l) == 0) {
         mA.set(l, mM);
       } else {
-        mA.set(mM + mM / 2, mM);
+        mA.set(mM + h, mM);
       }
     }
     return Z.valueOf(mA.get(mN));

@@ -5,7 +5,7 @@ import java.util.TreeMap;
 import irvine.math.z.Z;
 
 /**
- * A026167.
+ * A026167 <code>a(n) =</code> position of n in <code>A026166</code>.
  * @author Sean A. Irvine
  */
 public class A026167 extends A026166 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026172.
+ * A026172 For <code>n &gt;= 2</code>, let <code>h={n/2 ], L=n-h, R=n+h</code>; then <code>a(R)=n</code> if n even or <code>a(L)</code> already defined, else <code>a(L)=n</code>.
  * @author Sean A. Irvine
  */
 public class A026172 implements Sequence {

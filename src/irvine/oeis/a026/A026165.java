@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026165.
+ * A026165 Number of <code>(s(0), s(1)</code>, ..., <code>s(n))</code> such that every <code>s(i)</code> is a nonnegative integer, <code>s(0) = 2, |s(1) - s(0)| = 1, |s(i) - s(i-1)| &lt;= 1</code> for i <code>&gt;= 2</code>. Also sum of numbers in row <code>n+1</code> of the array T in <code>A026148</code>.
  * @author Sean A. Irvine
  */
 public class A026165 implements Sequence {

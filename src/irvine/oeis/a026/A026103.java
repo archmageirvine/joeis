@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import irvine.math.z.Z;
 
 /**
- * A026103 <code>T(n,1) + T(n-1,2) + ...+ T(n-k+1,k)</code>, where k <code>= [ (n+1)/2 ]</code> and T is the array defined in <code>A026098</code>.
+ * A026103 <code>a(n) = T(n,1) + T(n-1,2) + ...+ T(n-k+1,k)</code>, where k <code>= floor((n+1)/2)</code> and T is the array defined in <code>A026098</code>.
  * @author Sean A. Irvine
  */
 public class A026103 extends A026098 {

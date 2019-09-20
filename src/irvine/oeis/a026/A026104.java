@@ -13,7 +13,7 @@ public class A026104 extends A026098 {
   @Override
   public Z next() {
     ++mN;
-    Z max = Z.ZERO;
+    Z max = Z.ONE;
     for (long k = 0; k < mN; ++k) {
       final Z t = super.next();
       if (t.bitCount() > 1) {

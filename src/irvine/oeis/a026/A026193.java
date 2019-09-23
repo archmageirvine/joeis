@@ -1,25 +1,15 @@
 package irvine.oeis.a026;
 
-import java.util.TreeMap;
-
-import irvine.math.z.Z;
+import irvine.oeis.PositionOfNSequence;
 
 /**
  * A026193 <code>a(n) =</code> position of n in <code>A026192</code>.
  * @author Sean A. Irvine
  */
-public class A026193 extends A026192 {
+public class A026193 extends PositionOfNSequence {
 
-  private final TreeMap<Long, Long> mMap = new TreeMap<>();
-  private long mN = 0;
-  private long mM = 0;
-
-  @Override
-  public Z next() {
-    ++mN;
-    while (!mMap.containsKey(mN)) {
-      mMap.put(super.next().longValueExact(), ++mM);
-    }
-    return Z.valueOf(mMap.remove(mN));
+  /** Construct the sequence. */
+  public A026193() {
+    super(new A026192());
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026231.
+ * A026231 <code>a(n) = n-th</code> number k such that <code>t(k) = s(k) - 1</code>, where s <code>= A026142, t = A026166</code>.
  * @author Sean A. Irvine
  */
 public class A026231 extends A026142 {

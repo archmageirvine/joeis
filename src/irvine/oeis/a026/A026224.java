@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026224.
+ * A026224 Numbers n such that <code>t(n) = s(n) + 1</code>, where s <code>= A026136, t = A026142</code>.
  * @author Sean A. Irvine
  */
 public class A026224 extends A026136 {

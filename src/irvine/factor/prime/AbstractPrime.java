@@ -69,7 +69,7 @@ public abstract class AbstractPrime implements Prime {
 
   @Override
   public Z prevPrime(Z n) {
-    if (n.compareTo(Z.TWO) < 0) {
+    if (n.compareTo(Z.TWO) <= 0) {
       return Z.ZERO;
     }
     if (n.equals(Z.THREE)) {

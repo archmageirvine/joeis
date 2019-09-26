@@ -21,9 +21,19 @@ public class SumBetweenSequence extends A026276 {
   /**
    * Sum between sequence.
    * @param seq underlying sequence
+   * @param min smallest value
+   */
+  public SumBetweenSequence(final Sequence seq, final long min) {
+    mS = seq;
+    mN = min - 1;
+  }
+
+  /**
+   * Sum between sequence.
+   * @param seq underlying sequence
    */
   public SumBetweenSequence(final Sequence seq) {
-    mS = seq;
+    this(seq, 1);
   }
 
   @Override

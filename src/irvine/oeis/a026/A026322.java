@@ -6,18 +6,18 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026310 <code>sin(n) &gt; cos(n+1)</code>.
+ * A026322 <code>|sin(2n)| &gt; |sin(n)|</code>.
  * @author Sean A. Irvine
  */
-public class A026310 implements Sequence {
+public class A026322 implements Sequence {
 
-  private long mN = -1;
+  private long mN = 0;
 
   @Override
   public Z next() {
     do {
       ++mN;
-    } while (ComputableReals.SINGLETON.sin(CR.valueOf(mN)).compareTo(ComputableReals.SINGLETON.cos(CR.valueOf(mN + 1))) <= 0);
+    } while (ComputableReals.SINGLETON.sin(CR.valueOf(2 * mN)).abs().compareTo(ComputableReals.SINGLETON.sin(CR.valueOf(mN)).abs()) <= 0);
     return Z.valueOf(mN);
   }
 }

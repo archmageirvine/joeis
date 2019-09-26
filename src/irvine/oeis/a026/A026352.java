@@ -1,0 +1,19 @@
+package irvine.oeis.a026;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A026352 <code>a(n) = floor(n*tau)+n+1</code>.
+ * @author Sean A. Irvine
+ */
+public class A026352 implements Sequence {
+
+  private long mN = -1;
+
+  @Override
+  public Z next() {
+    return CR.PHI.multiply(CR.valueOf(++mN)).floor().add(mN + 1);
+  }
+}

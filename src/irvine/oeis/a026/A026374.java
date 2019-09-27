@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026374.
+ * A026374 Triangular array T read by rows: <code>T(n,0) = T(n,n) = 1</code> for all <code>n &gt;= 0, T(n,k) = T(n-1,k-1) + T(n-1,k)</code> for odd n and <code>1&lt; = k &lt;= n-1, T(n,k) = T(n-1,k-1) + T(n-1,k) + T(n-2,k-1)</code> for even n and <code>1 &lt;= k &lt;= n-1</code>.
  * @author Sean A. Irvine
  */
 public class A026374 implements Sequence {
@@ -22,8 +22,9 @@ public class A026374 implements Sequence {
   public Z next() {
     if (++mM > mGfRow.degree()) {
       mM = 0;
-      mGfRow = RING.pow(EVEN, mN / 2);
-      if ((++mN & 1) == 1) {
+      if ((++mN & 1) == 0) {
+        mGfRow = RING.pow(EVEN, mN / 2);
+      } else {
         mGfRow = RING.multiply(mGfRow, RING.onePlusXToTheN(1));
       }
     }

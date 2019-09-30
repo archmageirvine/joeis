@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A026418.
+ * A026418 Number of ordered trees with n edges and having no branches of length 1.
  * @author Sean A. Irvine
  */
 public class A026418 extends A000108 {

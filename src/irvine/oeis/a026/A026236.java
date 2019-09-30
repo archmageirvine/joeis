@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026236 <code>(s(n) + 1)/2)</code>, where s <code>= A026234</code>.
+ * A026236 <code>a(n) = (s(n) + 1)/2</code>, where <code>s(n)</code> is the n-th odd number in <code>A026234</code>.
  * @author Sean A. Irvine
  */
 public class A026236 extends A026234 {

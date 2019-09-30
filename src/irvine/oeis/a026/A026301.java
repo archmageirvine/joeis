@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a065.A065409;
 
 /**
- * A026301 G.f.: <code>sqrt(V(x))</code>, where <code>V(x) = Sum_{n &gt;= 0} A065409(n)*x^n</code>.
+ * A026301 Expansion of g.f. <code>sqrt(V(x))</code>, where <code>V(x) = Sum_{n &gt;= 0} A065409(n)*x^n</code>.
  * @author Sean A. Irvine
  */
 public class A026301 extends A065409 {

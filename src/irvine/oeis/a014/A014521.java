@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014521 Nearest integer to <code>GAMMA(n+1/2)</code>.
+ * A014521 Nearest integer to <code>Gamma(n+1/2)</code>.
  * @author Sean A. Irvine
  */
 public class A014521 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032375 Numbers n such that <code>51*2^n+1</code> is prime.
+ * A032375 Numbers k such that <code>51*2^k+1</code> is prime.
  * @author Georg Fischer
  */
 public class A032375 extends PowerFactorPrimeSequence {

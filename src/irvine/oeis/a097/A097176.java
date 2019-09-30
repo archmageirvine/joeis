@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A097176 Sum <code>k=0..n, C(floor((n+1)/2),floor((k+1)/2))5^k</code>.
+ * A097176 <code>a(n) = Sum_{k=0..n} binomial(floor((n+1)/2), floor((k+1)/2)) * 5^k</code>.
  * @author Sean A. Irvine
  */
 public class A097176 extends LinearRecurrence {

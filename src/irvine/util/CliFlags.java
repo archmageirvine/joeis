@@ -309,7 +309,7 @@ public final class CliFlags {
      * @param range a collection of Strings.
      */
     public void setParameterRange(final Collection<String> range) {
-      setParameterRange(range.toArray(new String[range.size()]));
+      setParameterRange(range.toArray(new String[0]));
     }
 
 

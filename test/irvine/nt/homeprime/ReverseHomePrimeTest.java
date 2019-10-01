@@ -19,7 +19,7 @@ public class ReverseHomePrimeTest extends TestCase {
 
   public void test() {
     final List<Z> nums = ReverseHomePrime.homePrimeTree(new Z("3331113965338635107"), 10);
-    final Z[] v = nums.toArray(new Z[nums.size()]);
+    final Z[] v = nums.toArray(new Z[0]);
     Arrays.sort(v);
     assertEquals(27, v.length);
     assertEquals(8, v[0].intValue());

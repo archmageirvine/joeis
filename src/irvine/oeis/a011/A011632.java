@@ -13,7 +13,7 @@ public class A011632 extends FiniteSequence {
 
   private static Z[] build(final int n) {
     final Polynomial<Z> poly = Cyclotomic.cyclotomic(n);
-    return poly.toArray(new Z[poly.size()]);
+    return poly.toArray(new Z[0]);
   }
 
   protected A011632(final int row) {

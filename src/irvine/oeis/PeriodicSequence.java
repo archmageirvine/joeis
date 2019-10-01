@@ -37,7 +37,7 @@ public class PeriodicSequence implements Sequence {
    * @param seq the values
    */
   public PeriodicSequence(final List<Z> seq) {
-    mSeq = seq.toArray(new Z[seq.size()]);
+    mSeq = seq.toArray(new Z[0]);
   }
 
   @Override

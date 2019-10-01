@@ -75,7 +75,7 @@ public class A173716 extends A001358 {
   @Override
   public Z next() {
     updateSemiprimes(super.next().toString());
-    final String[] semis = mSemi.toArray(new String[mSemi.size()]);
+    final String[] semis = mSemi.toArray(new String[0]);
     final StringBuilder simple = new StringBuilder();
     for (final String s : semis) {
       simple.append(s);

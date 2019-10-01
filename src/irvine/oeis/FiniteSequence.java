@@ -37,7 +37,7 @@ public class FiniteSequence implements Sequence {
    * @param seq the values
    */
   public FiniteSequence(final List<Z> seq) {
-    mSeq = seq.toArray(new Z[seq.size()]);
+    mSeq = seq.toArray(new Z[0]);
   }
 
   @Override

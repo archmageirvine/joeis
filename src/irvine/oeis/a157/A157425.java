@@ -35,7 +35,7 @@ public class A157425 implements Sequence {
         }
       }
     }
-    mCache = s.toArray(new Z[s.size()]);
+    mCache = s.toArray(new Z[0]);
     Arrays.sort(mCache);
   }
 
@@ -62,7 +62,7 @@ public class A157425 implements Sequence {
         }
       }
     }
-    mCache = s.toArray(new Z[s.size()]);
+    mCache = s.toArray(new Z[0]);
     Arrays.sort(mCache);
   }
 

@@ -304,7 +304,7 @@ public final class FactorSequence {
    */
   public Z[] toZArray() {
     final Set<Z> s = mFactors.keySet();
-    final Z[] r = s.toArray(new Z[s.size()]);
+    final Z[] r = s.toArray(new Z[0]);
     Arrays.sort(r);
     return r;
   }

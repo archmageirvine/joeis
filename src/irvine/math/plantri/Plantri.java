@@ -3411,7 +3411,7 @@ public final class Plantri {
     setMinPolyDegree(-1);
     mSplitLevel = 0;
     Arrays.fill(mEdgeBound, 0);
-    PlantriCliHelper.decodeCommandLine(this, args.toArray(new String[args.size()]));
+    PlantriCliHelper.decodeCommandLine(this, args.toArray(new String[0]));
     mOuterPlanarSwitch = orientationPreserving;
     mQuadrangulationSwitch = quadrangulations;
     mExactSwitch = exactDegree;

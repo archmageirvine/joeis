@@ -120,7 +120,7 @@ public final class ReverseHomePrime {
   public static void main(final String[] args) {
     final int base = args.length == 2 ? Integer.parseInt(args[1]) : 10;
     final List<Z> nums = homePrimeTree(new Z(args[0], base), base);
-    final Z[] v = nums.toArray(new Z[nums.size()]);
+    final Z[] v = nums.toArray(new Z[0]);
     for (final Z z : v) {
       System.out.println(z);
     }

@@ -123,7 +123,7 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
         }
         monomials.add(mm);
       }
-      return new CycleIndex(toString(), monomials.toArray(new MultivariateMonomial[monomials.size()]));
+      return new CycleIndex(toString(), monomials.toArray(new MultivariateMonomial[0]));
     }
     throw new UnsupportedOperationException();
   }

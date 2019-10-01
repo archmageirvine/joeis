@@ -413,7 +413,7 @@ public final class SparseInteger implements Comparable<SparseInteger> {
           break;
       }
     }
-    return p.isEmpty() ? create(value) : new SparseInteger(p.toArray(new SparseInteger[p.size()]), value);
+    return p.isEmpty() ? create(value) : new SparseInteger(p.toArray(new SparseInteger[0]), value);
   }
 
   @Override

@@ -40,7 +40,7 @@ public class A137251 extends MemoryFunctionInt3<Z[]> implements Sequence {
       }
       res = r;
     }
-    return res.toArray(new Z[res.size()]);
+    return res.toArray(new Z[0]);
   }
 
   @Override

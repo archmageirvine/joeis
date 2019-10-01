@@ -252,7 +252,7 @@ public class A013990 implements Sequence {
 
   static Map<Integer, Integer> successors(final Map<Comb, Integer> code, final Comb comb, final int height) {
     final Map<Integer, Integer> res = new TreeMap<>();
-    joinExistingPairs(code, res, comb.toArray(new OrderedPair[comb.size()]), 0, height, 0L);
+    joinExistingPairs(code, res, comb.toArray(new OrderedPair[0]), 0, height, 0L);
     return res;
   }
 

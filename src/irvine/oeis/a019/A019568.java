@@ -31,7 +31,7 @@ public class A019568 implements Sequence {
 
   private boolean solvable(final ArrayList<Z> powers, final ArrayList<Z> cum) {
     final Z sum = cum.get(cum.size() - 1);
-    return sum.isEven() && search(sum.divide2(), powers.size() - 1, powers.toArray(new Z[powers.size()]), cum.toArray(new Z[cum.size()]));
+    return sum.isEven() && search(sum.divide2(), powers.size() - 1, powers.toArray(new Z[0]), cum.toArray(new Z[0]));
   }
 
   @Override

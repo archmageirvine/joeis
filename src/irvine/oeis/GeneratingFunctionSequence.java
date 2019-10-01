@@ -74,7 +74,7 @@ public class GeneratingFunctionSequence implements Sequence {
    * @param den denominator
    */
   public GeneratingFunctionSequence(final Polynomial<Z> num, final Polynomial<Z> den) {
-    this(num.toArray(new Z[num.size()]), den.toArray(new Z[den.size()]));
+    this(num.toArray(new Z[0]), den.toArray(new Z[0]));
   }
 
   @Override

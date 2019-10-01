@@ -17,7 +17,7 @@ public class A026311 implements Sequence {
   public Z next() {
     do {
       ++mN;
-    } while (ComputableReals.SINGLETON.cos(CR.valueOf(mN)).compareTo(ComputableReals.SINGLETON.cos(CR.valueOf(mN + 1))) >= 0);
+    } while (ComputableReals.SINGLETON.cos(CR.valueOf(mN)).compareTo(ComputableReals.SINGLETON.cos(CR.valueOf(mN + 1))) <= 0);
     return Z.valueOf(mN);
   }
 }

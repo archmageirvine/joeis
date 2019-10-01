@@ -6,21 +6,21 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A026436 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not <code>a(i)*a(j)-1</code> for <code>1&lt;=i&lt;j&lt;=n</code>.
+ * A026457 <code>a(n) =</code> least positive integer <code>&lt; a(n-1)</code> and not <code>a(i)*a(j)-2</code> for <code>1&lt;=i&lt;j&lt;=n</code>.
  * @author Sean A. Irvine
  */
-public class A026436 extends MemorySequence {
+public class A026457 extends MemorySequence {
 
   protected final TreeSet<Z> mForbidden = new TreeSet<>();
-  private Z mN = Z.TWO;
+  private Z mN = Z.ONE;
 
   @Override
   protected Z computeNext() {
     do {
       mN = mN.add(1);
-    } while (mForbidden.remove(mN));
+    } while (Z.THREE.equals(mN) || mForbidden.remove(mN));
     for (final Z t : this) {
-      mForbidden.add(t.multiply(mN).subtract(1));
+      mForbidden.add(t.multiply(mN).subtract(2));
     }
     return mN;
   }

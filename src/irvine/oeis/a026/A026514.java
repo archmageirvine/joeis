@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A026507.
+ * A026514.
  * @author Sean A. Irvine
  */
-public class A026507 extends MemorySequence {
+public class A026514 extends MemorySequence {
 
   private final TreeSet<Z> mForbidden = new TreeSet<>();
   private Z mN = Z.ZERO;
@@ -22,15 +22,14 @@ public class A026507 extends MemorySequence {
     final Z n2 = mN.square();
     for (final Z t : this) {
       for (final Z u : this) {
+        mForbidden.add(t.add(u).square().add(n2));
         if (u.equals(t)) {
           break;
         }
-        final Z a = t.add(u).square().subtract(n2);
-        if (a.compareTo(mN) >= 0) {
-          mForbidden.add(a);
-        }
       }
+      mForbidden.add(t.add(mN).square().add(n2));
     }
+    mForbidden.add(n2.multiply(5));
     return mN;
   }
 }

@@ -13,7 +13,6 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(ByteUtilsTest.class);
-    suite.addTestSuite(FourByteVectorTest.class);
     suite.addTestSuite(IntegerUtilsTest.class);
     suite.addTestSuite(LongUtilsTest.class);
     suite.addTestSuite(MobiusTest.class);
@@ -23,9 +22,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PopCountTest.class);
     suite.addTestSuite(PrimePowersTest.class);
     suite.addTestSuite(ProgressionTest.class);
-    suite.addTestSuite(RandomUtilsTest.class);
     suite.addTestSuite(ReducedLatinRectanglesTest.class);
-    suite.addTestSuite(ShiftRegisterTest.class);
     suite.addTestSuite(ShuffleTest.class);
     suite.addTestSuite(SparseIntegerTest.class);
     suite.addTestSuite(TwoDimensionalWalkTest.class);

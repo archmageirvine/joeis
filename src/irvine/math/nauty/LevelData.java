@@ -1,7 +1,5 @@
 package irvine.math.nauty;
 
-import irvine.math.PopCount;
-
 /**
  * Structure to hold level data.
  * @author Sean A. Irvine
@@ -44,7 +42,7 @@ class LevelData {
 
     int j = 0;
     for (int i = 0; ; ++i) {
-      final int h = PopCount.popcount(i);
+      final int h = Integer.bitCount(i);
       if (h <= maxDeg) {
         mXSet[j] = i;
         mXCard[j] = h;

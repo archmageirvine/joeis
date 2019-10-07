@@ -2,7 +2,6 @@ package irvine.oeis.a005;
 
 import java.util.ArrayList;
 
-import irvine.math.PopCount;
 import irvine.math.group.GaloisField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -32,7 +31,7 @@ public class A005984 implements Sequence {
 
   void g(final long n, final LongDynamicArray<Polynomial<Z>> vg) {
     if (n >= vg.length() || vg.get(n) == null) {
-      final long vs = PopCount.popcount(n);
+      final long vs = Long.bitCount(n);
       if (vs == 1) {
         vg.set(n, q(n));
       } else {

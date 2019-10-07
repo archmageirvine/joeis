@@ -2,7 +2,6 @@ package irvine.oeis.a006;
 
 import irvine.math.IntegerUtils;
 import irvine.math.LongUtils;
-import irvine.math.PopCount;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -43,10 +42,10 @@ public class A006613 implements Sequence {
     // Check exists a 2xj submatrix all ones
     for (int row1 = 0; row1 < matrix.length; ++row1) {
       final long r1 = matrix[row1];
-      if (PopCount.popcount(r1) >= j()) {
+      if ((long) Long.bitCount(r1) >= j()) {
         for (int row2 = row1 + 1; row2 < matrix.length; ++row2) {
           final long r2 = matrix[row2] & r1;
-          if (PopCount.popcount(r2) >= j()) {
+          if ((long) Long.bitCount(r2) >= j()) {
             // Found pair of rows with at least j ones in same place, hence exist column selection
             return true;
           }

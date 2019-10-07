@@ -2,8 +2,6 @@ package irvine.math.graph;
 
 import java.util.Arrays;
 
-import irvine.math.PopCount;
-
 /**
  * Implementation supporting up to order 64 digraphs.
  * @author Sean A. Irvine
@@ -27,7 +25,7 @@ public class SmallDigraph extends SmallGraph {
   public int size() {
     int e = 0;
     for (final long v : mAdj) {
-      e += PopCount.popcount(v);
+      e += (long) Long.bitCount(v);
     }
     return e;
   }

@@ -1,7 +1,6 @@
 package irvine.oeis.a161;
 
 import irvine.factor.factor.Cheetah;
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,7 +14,8 @@ public class A161398 implements Sequence {
 
   @Override
   public Z next() {
-    final long pc = PopCount.popcount(++mN);
+    long x = ++mN;
+    final long pc = Long.bitCount(x);
     if (pc == 1) {
       return Z.ONE;
     }

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.Arrays;
 
-import irvine.math.PopCount;
 import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.graph.SmallGraph;
@@ -134,7 +133,7 @@ public class GenerateGraphs {
     final int nx = n + 1;
     final Graph gx = g.copy(nx);
 
-    final int degn = PopCount.popcount(x); 
+    final int degn = Integer.bitCount(x);
     deg[n] = degn;
 
     int xw = x;
@@ -207,7 +206,7 @@ public class GenerateGraphs {
     final int n = g.order();
     final int nx = n + 1;
     final Graph gx = g.copy(nx);
-    final int degn = PopCount.popcount(x);
+    final int degn = Integer.bitCount(x);
     deg[n] = degn;
 
     int xw = x;
@@ -261,7 +260,7 @@ public class GenerateGraphs {
       for (int ixx = 0; ixx < jxx; ++ixx) {
         if ((hv & xx[ixx]) == 0) {
           final int z = xx[ixx] | bitv;
-          if (PopCount.popcount(z) <= xubx) {
+          if (Integer.bitCount(z) <= xubx) {
             xx[kxx++] = z;
           }
         }
@@ -294,7 +293,7 @@ public class GenerateGraphs {
     final int nx = n + 1;
     final Graph gx = g.copy(nx);
     final int[] degx = Arrays.copyOf(deg, nx);
-    final int degn = PopCount.popcount(x);
+    final int degn = Integer.bitCount(x);
     degx[n] = degn;
     int xw = x;
     while (xw != 0) {
@@ -361,12 +360,12 @@ public class GenerateGraphs {
       for (int i = i1 + 1; i < nx; ++i) {
         vmax |= BIT[lab[i]];
       }
-      final int qn = (int) PopCount.popcount(((SmallGraph) gx).getEdgeVector(n) & vmax);
+      final int qn = (int) (long) Long.bitCount(((SmallGraph) gx).getEdgeVector(n) & vmax);
       int j0 = i1 + 1;
       int j1 = n;
       while (j0 <= j1) {
         final int j = lab[j0];
-        final int qv = (int) PopCount.popcount(((SmallGraph) gx).getEdgeVector(j) & vmax);
+        final int qv = (int) (long) Long.bitCount(((SmallGraph) gx).getEdgeVector(j) & vmax);
         if (qv > qn) {
           return null;
         } else if (qv < qn) {
@@ -498,7 +497,7 @@ public class GenerateGraphs {
       }
     }
 
-    if (xlb == dmax && PopCount.popcount(d) + dmax > n) {
+    if (xlb == dmax && Integer.bitCount(d) + dmax > n) {
       ++xlb;
     }
     final int nx = n + 1;
@@ -520,7 +519,7 @@ public class GenerateGraphs {
     if (nx == mMaxN) {
       for (int ixx = 0; ixx < xlim; ++ixx) {
         final int x = xx[ixx];
-        final int xc = PopCount.popcount(x);
+        final int xc = Integer.bitCount(x);
         if (xc < xlb || xc > xub) {
           continue;
         }
@@ -543,7 +542,7 @@ public class GenerateGraphs {
           mOdometer = mMod - 1;
         }
         final int x = xx[ixx];
-        final int xc = PopCount.popcount(x);
+        final int xc = Integer.bitCount(x);
         if (xc < xlb || xc > xub) {
           continue;
         }
@@ -588,7 +587,7 @@ public class GenerateGraphs {
       }
     }
 
-    if (xlb == dmax && PopCount.popcount(d) + dmax > n) {
+    if (xlb == dmax && Integer.bitCount(d) + dmax > n) {
       ++xlb;
     }
     final int nx = n + 1;

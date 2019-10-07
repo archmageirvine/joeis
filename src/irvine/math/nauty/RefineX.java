@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import irvine.math.PopCount;
 import irvine.math.graph.Graph;
 import irvine.math.graph.SmallGraph;
 
@@ -80,13 +79,13 @@ final class RefineX {
             continue;
           }
           int i = cell1;
-          int cnt = (int) PopCount.popcount(workset & ((SmallGraph) g).getEdgeVector(lab[i]));
+          int cnt = (int) (long) Long.bitCount(workset & ((SmallGraph) g).getEdgeVector(lab[i]));
           int bmin = cnt;
           int bmax = cnt;
           count[i] = cnt;
           bucket[cnt] = 1;
           while (++i <= cell2) {
-            cnt = (int) PopCount.popcount(workset & ((SmallGraph) g).getEdgeVector(lab[i]));
+            cnt = (int) (long) Long.bitCount(workset & ((SmallGraph) g).getEdgeVector(lab[i]));
             while (bmin > cnt) {
               bucket[--bmin] = 0;
             }

@@ -1,6 +1,5 @@
 package irvine.oeis.a061;
 
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,7 +16,7 @@ public class A061724 implements Sequence {
     for (int k = 0; k < n.length(); ++k) {
       c |= 1 << (n.charAt(k) - '0');
     }
-    return PopCount.popcount(c);
+    return Integer.bitCount(c);
   }
 
   @Override

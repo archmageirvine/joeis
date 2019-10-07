@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A133377 This is the complete list of decimal numbers that when converted to hexadecimal produce the mirror image of the original number. There are 14 numbers in all, including single-digit numbers.
+ * A133377 Complete list of decimal numbers that when converted to hexadecimal produce the mirror image of the original number. There are 14 numbers in all, including single-digit numbers.
  * @author Georg Fischer
  */
 public class A133377 extends FiniteSequence {

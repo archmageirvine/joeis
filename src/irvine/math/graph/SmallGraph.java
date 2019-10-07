@@ -2,8 +2,6 @@ package irvine.math.graph;
 
 import java.util.Arrays;
 
-import irvine.math.PopCount;
-
 /**
  * Implementation supporting up to order 64 graphs.
  * @author Sean A. Irvine
@@ -66,7 +64,7 @@ public class SmallGraph extends AbstractGraph {
   public int size() {
     int e = 0;
     for (final long v : mAdj) {
-      e += PopCount.popcount(v);
+      e += (long) Long.bitCount(v);
     }
     return e / 2;
   }
@@ -184,7 +182,7 @@ public class SmallGraph extends AbstractGraph {
 
   @Override
   public long degree(final int v) {
-    return PopCount.popcount(mAdj[v]);
+    return Long.bitCount(mAdj[v]);
   }
 
   @Override

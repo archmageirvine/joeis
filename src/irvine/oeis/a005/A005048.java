@@ -3,7 +3,6 @@ package irvine.oeis.a005;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -40,7 +39,7 @@ public class A005048 implements Sequence {
           v |= 1L << bit;
         }
         if (ok) {
-          assert PopCount.popcount(v) == m;
+          assert (long) Long.bitCount(v) == m;
           res.add(v);
         }
       }

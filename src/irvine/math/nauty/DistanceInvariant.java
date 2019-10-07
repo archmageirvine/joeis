@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import irvine.math.PopCount;
 import irvine.math.graph.Graph;
 import irvine.math.graph.SmallGraph;
 
@@ -21,7 +20,7 @@ final class DistanceInvariant {
       long sofar = frontier;
       for (int d = 1; frontier != 0; ++d) {
         long workset = 0;
-        inv += PopCount.popcount(frontier) ^ (0x57 + d);
+        inv += (long) Long.bitCount(frontier) ^ (0x57 + d);
         while (frontier != 0) {
           final int w = Long.numberOfLeadingZeros(frontier);
           frontier ^= GenerateGraphs.BIT[w];

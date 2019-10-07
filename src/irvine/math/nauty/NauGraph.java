@@ -1,6 +1,5 @@
 package irvine.math.nauty;
 
-import irvine.math.PopCount;
 import irvine.math.graph.Graph;
 import irvine.math.graph.SmallGraph;
 
@@ -321,13 +320,13 @@ class NauGraph extends DefaultDispatchVec {
             continue;
           }
           int i = cell1;
-          int cnt = (int) PopCount.popcount(workset0 & ((SmallGraph) g).getEdgeVector(lab[i]));
+          int cnt = (int) (long) Long.bitCount(workset0 & ((SmallGraph) g).getEdgeVector(lab[i]));
           count[i] = cnt;
           int bmin = cnt;
           int bmax = cnt;
           mBucket[cnt] = 1;
           while (++i <= cell2) {
-            cnt = (int) PopCount.popcount(workset0 & ((SmallGraph) g).getEdgeVector(lab[i]));
+            cnt = (int) (long) Long.bitCount(workset0 & ((SmallGraph) g).getEdgeVector(lab[i]));
             while (bmin > cnt) {
               mBucket[--bmin] = 0;
             }

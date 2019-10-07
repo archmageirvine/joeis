@@ -1,6 +1,5 @@
 package irvine.oeis.a000;
 
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,7 +14,8 @@ public class A000788 implements Sequence {
 
   @Override
   public Z next() {
-    mS = mS.add(PopCount.popcount(++mN));
+    long x = ++mN;
+    mS = mS.add(Long.bitCount(x));
     return mS;
   }
 }

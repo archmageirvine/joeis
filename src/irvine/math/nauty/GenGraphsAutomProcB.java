@@ -1,7 +1,5 @@
 package irvine.math.nauty;
 
-import irvine.math.PopCount;
-
 /**
  * Form orbits on power set of VG.
  * @author Brendan McKay
@@ -26,7 +24,7 @@ class GenGraphsAutomProcB implements UserAutomProc {
 
       for (int i = 0; i < xlim; ++i) {
         final int x = xx[i];
-        if (PopCount.popcount(x) >= xlb) {
+        if (Integer.bitCount(x) >= xlb) {
           xx[j1] = x;
           xorb[j1] = j1;
           ++j1;

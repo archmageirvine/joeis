@@ -1,7 +1,6 @@
 package irvine.oeis.a000;
 
 import irvine.factor.prime.Fast;
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -32,7 +31,7 @@ public class A000341 implements Sequence {
         }
         rowSumProd = rowSumProd.multiply(rowSum);
       }
-      sum = sum.signedAdd(((n - PopCount.popcount(k)) & 1) == 0, rowSumProd);
+      sum = sum.signedAdd(((n - (long) Long.bitCount(k)) & 1) == 0, rowSumProd);
     }
     return sum;
   }

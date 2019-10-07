@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026517.
+ * A026517 <code>t(1+5n)</code>, where t <code>= A001285 (Thue-Morse</code> sequence).
  * @author Sean A. Irvine
  */
 public class A026517 implements Sequence {

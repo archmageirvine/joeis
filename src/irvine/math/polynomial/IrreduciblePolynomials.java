@@ -6,7 +6,6 @@ import java.util.Iterator;
 
 import irvine.factor.factor.Cheetah;
 import irvine.math.LongUtils;
-import irvine.math.PopCount;
 import irvine.math.z.Z;
 import irvine.math.Mobius;
 import irvine.util.AbstractIterator;
@@ -171,7 +170,7 @@ public final class IrreduciblePolynomials {
       while (true) {
         do {
           mDoneToHere += 2L;
-        } while ((PopCount.popcount(mDoneToHere) & 1) == 0);
+        } while (((long) Long.bitCount(mDoneToHere) & 1) == 0);
 
         final Polynomial<Z> candidate = makePoly(mDoneToHere);
         final int dLimit = candidate.degree() / 2;

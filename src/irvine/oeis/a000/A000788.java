@@ -14,8 +14,7 @@ public class A000788 implements Sequence {
 
   @Override
   public Z next() {
-    long x = ++mN;
-    mS = mS.add(Long.bitCount(x));
+    mS = mS.add(Long.bitCount(++mN));
     return mS;
   }
 }

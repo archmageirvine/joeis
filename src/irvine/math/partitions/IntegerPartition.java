@@ -147,6 +147,20 @@ public final class IntegerPartition {
   }
 
   /**
+   * Test if this partition consists entirely of distinct parts.
+   * @param p partition
+   * @return true iff every part is distinct
+   */
+  public static boolean isDistinctParts(final int[] p) {
+    for (int k = p.length - 1; k > 0; --k) {
+      if (p[k - 1] == p[k]) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  /**
    * Print all integer partitions of given argument.
    * @param args arguments
    */

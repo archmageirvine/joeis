@@ -13,15 +13,6 @@ public class A259095 implements Sequence {
   private int mN = 0;
   private int mR = 0;
 
-  private boolean isDistinctParts(final int[] p) {
-    for (int k = p.length - 1; k > 0; --k) {
-      if (p[k - 1] == p[k]) {
-        return false;
-      }
-    }
-    return true;
-  }
-
   private boolean isMaxPart(final int[] p, final int r) {
     return p[0] == r;
   }
@@ -31,7 +22,7 @@ public class A259095 implements Sequence {
     int[] p;
     final IntegerPartition partition = new IntegerPartition(n);
     while ((p = partition.next()) != null) {
-      if (isMaxPart(p, r) && isDistinctParts(p)) {
+      if (isMaxPart(p, r) && IntegerPartition.isDistinctParts(p)) {
         Z t = Z.ONE;
         for (int k = 1; k < p.length; ++k) {
           t = t.multiply(p[k - 1] - p[k]);

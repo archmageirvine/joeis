@@ -1155,3 +1155,4 @@ A024313 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2) ],
 A024314 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n+1-k), where k=[ (n+1)/2) ], s = (natural numbers >= 3), t = A023532 (terms don't match definition)
 A026081 Integers in reverse alphabetical order in U.S. English, dumb
 A026488 a(n) = least positive integer > a(n-1) and not a(i)*a(j)-a(k) for 1<=i<=j<=k<=n, terms don't match
+2026739 Number of subgroups L of Z^n with the property that for every a in Z^n there exists precisely one b in L with d(a,b) <= 1. Here d denotes Euclidean distance

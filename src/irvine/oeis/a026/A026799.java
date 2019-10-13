@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026799.
+ * A026799 Number of partitions of n in which the least part is 6.
  * @author Sean A. Irvine
  */
 public class A026799 implements Sequence {

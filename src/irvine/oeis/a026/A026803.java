@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026803.
+ * A026803 Number of partitions of n in which the least part is 10.
  * @author Sean A. Irvine
  */
 public class A026803 implements Sequence {

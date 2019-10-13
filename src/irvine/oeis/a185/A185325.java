@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A185325.
+ * A185325 Number of partitions of n into parts <code>&gt;= 5</code>.
  * @author Sean A. Irvine
  */
 public class A185325 implements Sequence {

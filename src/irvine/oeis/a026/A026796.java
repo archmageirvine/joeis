@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a008.A008483;
 
 /**
- * A026796.
+ * A026796 Number of partitions of n in which the least part is 3.
  * @author Sean A. Irvine
  */
 public class A026796 extends PrependSequence {

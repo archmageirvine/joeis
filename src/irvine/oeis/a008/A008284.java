@@ -38,4 +38,3 @@ public class A008284 extends MemoryFunction2<Long, Z> implements Sequence {
     return get(mN, mM);
   }
 }
-

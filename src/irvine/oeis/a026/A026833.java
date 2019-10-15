@@ -20,7 +20,7 @@ public class A026833 extends MemoryFunction2<Long, Z> implements Sequence {
       return Z.ZERO;
     }
     Z t = get(n, m - 1);
-    if (m.equals(n) && (m & 1) == 0) {
+    if ((m & 1) == 0 && m.equals(n)) {
       t = t.add(1);
     } else if (m < n) {
       t = t.add(get(n - m, Math.min(n - m, m - 1)));

@@ -7,7 +7,6 @@ import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
- *
  * @author Sean A. Irvine
  */
 public class IntegerPartitionTest extends TestCase {
@@ -49,5 +48,9 @@ public class IntegerPartitionTest extends TestCase {
   public void testCount() {
     assertEquals(Z.ONE, IntegerPartition.partitions(1));
     assertEquals(Z.valueOf(42), IntegerPartition.partitions(10));
+  }
+
+  public void testStandardYoungTableaux() {
+    assertEquals(Z.valueOf(216), IntegerPartition.numStandardYoungTableaux(new int[] {4, 2, 2, 1}));
   }
 }

@@ -1,0 +1,27 @@
+package irvine.oeis.a026;
+
+import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A026845 <code>Sum_{mu</code> a partition of <code>n} (f^mu/n!)^{-2}</code> where <code>f^mu</code> is the number of standard Young tableaux of shape mu.
+ * @author Sean A. Irvine
+ */
+public class A026845 implements Sequence {
+
+  private Z mF = Z.ONE;
+  private int mN = 0;
+
+  @Override
+  public Z next() {
+    mF = mF.multiply(++mN).multiply(mN);
+    Z sum = Z.ZERO;
+    final IntegerPartition part = new IntegerPartition(mN);
+    int[] p;
+    while ((p = part.next()) != null) {
+      sum = sum.add(mF.divide(IntegerPartition.numStandardYoungTableaux(p).square()));
+    }
+    return sum;
+  }
+}

@@ -23,6 +23,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(GermanTest.class);
     suite.addTestSuite(HungarianTest.class);
     suite.addTestSuite(IrishGaelicTest.class);
+    suite.addTestSuite(ItalianTest.class);
     suite.addTestSuite(NorwegianTest.class);
     suite.addTestSuite(PolishTest.class);
     suite.addTestSuite(PostScriptTest.class);

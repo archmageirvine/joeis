@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import irvine.math.IntegerUtils;
+import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 
 /**
@@ -158,6 +159,38 @@ public final class IntegerPartition {
       }
     }
     return true;
+  }
+
+  private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
+
+  /**
+   * Return the number of standard Young tableaux corresponding to the given
+   * row lengths (i.e., partition).
+   * @param l row lengths
+   * @return number of standard Young tableaux
+   */
+  public static Z numStandardYoungTableaux(final int[] l) {
+    final Z f = FACTORIAL.factorial((int) IntegerUtils.sum(l));
+    Z d = Z.ONE;
+    for (int i = 0; i < l.length; ++i) {
+      Z t = Z.ONE;
+      for (int j = 1; j <= l[i]; ++j) {
+        long s = 0;
+        for (int k = i + 1; k < l.length; ++k) {
+          if (l[k] >= j) {
+            ++s;
+          }
+        }
+        t = t.multiply(1 + l[i] - j + s);
+      }
+      d = d.multiply(t);
+    }
+    return f.divide(d);
+    /*
+    h:= proc(l) local n; n:= nops(l);
+    add(i, i=l)! /mul(mul(1+l[i]-j+add(`if`(l[k]>=j, 1, 0), k=i+1..n), j=1..l[i]), i=1..n) end:
+
+     */
   }
 
   /**

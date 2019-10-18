@@ -14,20 +14,25 @@ public class A026374 implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> EVEN = Polynomial.create(1, 3, 1);
-  private Polynomial<Z> mGfRow = RING.zero();
-  private int mN = -1;
+  protected Polynomial<Z> mGfRow = RING.zero();
+  protected int mN = -1;
   private int mM = 0;
+
+  protected void nextRow() {
+    if ((++mN & 1) == 0) {
+      mGfRow = RING.pow(EVEN, mN / 2);
+    } else {
+      mGfRow = RING.multiply(mGfRow, RING.onePlusXToTheN(1));
+    }
+  }
 
   @Override
   public Z next() {
     if (++mM > mGfRow.degree()) {
       mM = 0;
-      if ((++mN & 1) == 0) {
-        mGfRow = RING.pow(EVEN, mN / 2);
-      } else {
-        mGfRow = RING.multiply(mGfRow, RING.onePlusXToTheN(1));
-      }
+      nextRow();
     }
     return mGfRow.coeff(mM);
   }
+
 }

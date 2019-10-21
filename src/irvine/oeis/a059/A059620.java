@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A059620 Colors of the 88 keys of the standard piano: white keys <code>= 0</code>, black keys <code>= 1</code>.
+ * A059620 Colors of the 88 keys of the standard piano: white keys <code>= 0</code>, black keys <code>= 1</code>, start with <code>A0 =</code> the <code>0th</code> key.
  * @author Sean A. Irvine
  */
 public class A059620 extends LinearRecurrence {

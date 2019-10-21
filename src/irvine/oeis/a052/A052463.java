@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052463 <code>a(n)</code> is the solution k to <code>Mod[24k,7^(2n-2)]==1</code>.
+ * A052463 <code>a(n)</code> is the smallest nonnegative solution k to <code>24k == 1 (mod 7^(2n-2))</code>.
  * @author Georg Fischer
  */
 public class A052463 extends GeneratingFunctionSequence {

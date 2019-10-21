@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A046458 The only 8 positive even integers that are not the sum of two nonprime odd integers.
+ * A046458 Positive even integers that are not the sum of two nonprime odd integers.
  * @author Georg Fischer
  */
 public class A046458 extends FiniteSequence {

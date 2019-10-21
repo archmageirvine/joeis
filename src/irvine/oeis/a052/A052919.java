@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052919 <code>a(n) = 1 + 2*3^(n-1); a(0)=2</code>.
+ * A052919 <code>a(n) = 1 + 2*3^(n-1)</code> with <code>a(0)=2</code>.
  * @author Georg Fischer
  */
 public class A052919 extends LinearRecurrence {

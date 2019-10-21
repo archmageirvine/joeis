@@ -4,7 +4,7 @@ package irvine.oeis.a170;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A170766 G.f.: <code>(1+x)/(1-46*x)</code>.
+ * A170766 Expansion of g.f.: <code>(1+x)/(1-46*x)</code>.
  * @author Georg Fischer
  */
 public class A170766 extends GeneratingFunctionSequence {

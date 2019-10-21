@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006885 Record highest point of trajectory before reaching 1 in <code>`3x+1'</code> problem, corresponding to starting values in <code>A006884</code>.
+ * A006885 Record highest point of trajectory before reaching 1 in <code>'3x+1'</code> problem, corresponding to starting values in <code>A006884</code>.
  * @author Sean A. Irvine
  */
 public class A006885 implements Sequence {

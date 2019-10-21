@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007023 Number of 4-connected polyhedra with n nodes.
+ * A007023 Number of <code>4-connected 4-regular</code> polyhedra with n nodes.
  * @author Sean A. Irvine
  */
 public class A007023 implements Sequence, PlantriGraphProcessor {

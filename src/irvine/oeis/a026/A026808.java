@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026808 Products P of distinct positive integers satisfying P <code>&lt;= n</code>.
+ * A026808 <code>a(n)</code> is the number of products P of distinct positive integers satisfying P <code>&lt;= n</code>.
  * @author Sean A. Irvine
  */
 public class A026808 implements Sequence {

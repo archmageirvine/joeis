@@ -3,7 +3,7 @@ package irvine.oeis.a062;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A062828 GCD of <code>2n</code> and <code>n(n+1)/2</code>.
+ * A062828 <code>a(n) = gcd(2n, n(n+1)/2)</code>.
  * @author Sean A. Irvine
  */
 public class A062828 extends LinearRecurrence {

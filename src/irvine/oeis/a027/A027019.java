@@ -1,0 +1,17 @@
+package irvine.oeis.a027;
+
+import irvine.math.z.Z;
+
+/**
+ * A027019 <code>T(2n+1,n+4)</code>, T given by <code>A027011</code>.
+ * @author Sean A. Irvine
+ */
+public class A027019 extends A027011 {
+
+  private long mN = 2;
+
+  @Override
+  public Z next() {
+    return ++mN == 3 ? Z.ONE : t(2 * mN + 1, mN + 4);
+  }
+}

@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077140 <code>a(1) = 1</code> and then add n to the previous term if n is coprime to the previous term else subtract n from the previous term. <code>a(1) = 1</code> and <code>a(n) = a(n-1) + n</code> if <code>GCD(n,a(n-1)) = 1</code> else <code>a(n) = a(n-1) - n</code>.
+ * A077140 <code>a(1) = 1</code> and then add n to the previous term if n is coprime to the previous term, otherwise subtract n from the previous term. <code>a(1) = 1</code> and <code>a(n) = a(n-1) + n</code> if <code>gcd(n, a(n-1)) = 1</code>, otherwise <code>a(n) = a(n-1) - n</code>.
  * @author Georg Fischer
  */
 public class A077140 extends GeneratingFunctionSequence {

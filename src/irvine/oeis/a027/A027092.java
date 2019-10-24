@@ -3,15 +3,15 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027116 <code>a(n) = T(n, n+3)</code>, T given by <code>A027113</code>.
+ * A027092 <code>T(n,2n-5)</code>, T given by <code>A027082</code>.
  * @author Sean A. Irvine
  */
-public class A027116 extends A027113 {
+public class A027092 extends A027082 {
 
   private long mN = 2;
 
   @Override
   public Z next() {
-    return get(++mN, mN + 3);
+    return get(++mN, 2 * mN - 5);
   }
 }

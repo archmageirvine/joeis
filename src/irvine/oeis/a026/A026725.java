@@ -18,7 +18,7 @@ public class A026725 extends MemoryFunction2<Long, Z> implements Sequence {
     if (m == 0 || m.equals(n)) {
       return Z.ONE;
     }
-    if ((n & 1) == 1 && m == n / 2) {
+    if (2 * m == n - 1) {
       return get(n - 1, m - 1).add(get(n - 1, m)).add(get(n - 2, m - 1));
     } else {
       return get(n - 1, m - 1).add(get(n - 1, m));

@@ -3,19 +3,19 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027178 <code>a(n) = T(n,0) + T(n,1) + ... + T(n,n)</code>, T given by <code>A027170</code>.
+ * A027156 <code>a(n) = self-convolution</code> of array T given by <code>A027144</code>.
  * @author Sean A. Irvine
  */
-public class A027178 extends A027170 {
+public class A027156 extends A027144 {
 
-  private long mN = -1;
+  private long mN = 0;
 
   @Override
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
     for (long k = 0; k <= mN; ++k) {
-      sum = sum.add(t(mN, k));
+      sum = sum.add(get(mN, k).multiply(get(mN, mN - k)));
     }
     return sum;
   }

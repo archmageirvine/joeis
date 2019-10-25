@@ -1,12 +1,13 @@
 package irvine.oeis.a027;
 
 import irvine.math.z.Z;
+import irvine.oeis.a026.A026747;
 
 /**
- * A027178 <code>a(n) = T(n,0) + T(n,1) + ... + T(n,n)</code>, T given by <code>A027170</code>.
+ * A027223 <code>a(n) = self-convolution</code> of row n of array T given by <code>A026747</code>.
  * @author Sean A. Irvine
  */
-public class A027178 extends A027170 {
+public class A027223 extends A026747 {
 
   private long mN = -1;
 
@@ -15,7 +16,7 @@ public class A027178 extends A027170 {
     ++mN;
     Z sum = Z.ZERO;
     for (long k = 0; k <= mN; ++k) {
-      sum = sum.add(t(mN, k));
+      sum = sum.add(get(mN, k).multiply(get(mN, mN - k)));
     }
     return sum;
   }

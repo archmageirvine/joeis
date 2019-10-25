@@ -1,0 +1,41 @@
+package irvine.oeis.a027;
+
+import irvine.math.MemoryFunctionInt3;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A027188 <code>a(n) =</code> number of partitions of n into an odd number of parts, the least being 2; also <code>a(n+2) =</code> number of partitions of n into an even number of parts, each <code>&gt;=2</code>.
+ * @author Sean A. Irvine
+ */
+public class A027188 extends MemoryFunctionInt3<Z> implements Sequence {
+
+  // After Alois P. Heinz
+
+  private int mN = start();
+
+  protected int start() {
+    return -3;
+  }
+
+  protected int leastPart() {
+    return 2;
+  }
+
+  @Override
+  protected Z compute(final int n, final int m, final int t) {
+    if (n == 0) {
+      return Z.valueOf(t);
+    }
+    if (m < leastPart()) {
+      return Z.ZERO;
+    }
+    final Z r = get(n, m - 1, t);
+    return m > n ? r : r.add(get(n - m, m, 1 - t));
+  }
+
+  @Override
+  public Z next() {
+    return get(++mN, mN, 1);
+  }
+}

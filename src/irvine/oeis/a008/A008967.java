@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008967 Irregular triangle read by rows: coefficients of Gaussian polynomials <code>[ n+2,2 ]</code>; also triangle of distribution of rank sums: Wilcoxon's statistic.
+ * A008967 Coefficients of Gaussian polynomials <code>q_binomial(n-2, 2)</code>. Also triangle of distribution of rank sums: Wilcoxon's statistic. Irregular triangle read by rows.
  * @author Sean A. Irvine
  */
 public class A008967 implements Sequence {

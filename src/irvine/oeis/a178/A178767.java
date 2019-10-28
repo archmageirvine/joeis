@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178767 <code>GCD(Fibonacci(n),Fibonacci(n+3)+2)</code> sorted with no repeats.
+ * A178767 Values of <code>gcd(Fibonacci(n), Fibonacci(n+3)+2)</code> sorted with no repeats.
  * @author Georg Fischer
  */
 public class A178767 extends GeneratingFunctionSequence {

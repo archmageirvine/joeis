@@ -13,6 +13,10 @@ public class A026022 implements Sequence {
   private long mN = -1;
   private long mM = 0;
 
+  protected Z t(final long n, final long m) {
+    return Binomial.binomial(n, m).subtract(Binomial.binomial(n, m - 4)).max(Z.ONE);
+  }
+
   @Override
   public Z next() {
     final long lim = mN >= 3 ? (mN + 1) / 2 + 1 : mN;
@@ -20,7 +24,7 @@ public class A026022 implements Sequence {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN, mM).subtract(Binomial.binomial(mN, mM - 4)).max(Z.ONE);
+    return t(mN, mM);
   }
 }
 

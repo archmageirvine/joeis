@@ -1,0 +1,25 @@
+package irvine.oeis.a027;
+
+import irvine.math.partitions.IntegerPartition;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A027300 Triangular array Q given by rows: <code>Q(n,k) =</code> number of partitions of n that do not contain k as an element; domain: <code>1 &lt;= k &lt;=</code> n, <code>n &gt;= 1</code>.
+ * @author Sean A. Irvine
+ */
+public class A027300 implements Sequence {
+
+  private int mN = 0;
+  private int mM = 0;
+
+  @Override
+  public Z next() {
+    if (++mM > mN) {
+      ++mN;
+      mM = 1;
+    }
+    return IntegerPartition.partitions(mN).subtract(IntegerPartition.partitions(mN - mM));
+  }
+}
+

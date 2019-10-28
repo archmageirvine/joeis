@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105635 <code>Pell(n+2)/2-(1+(-1)^n)/4</code>.
+ * A105635 <code>a(n) = (2*Pell(n+2) - (1+(-1)^n))/4</code>.
  * @author Sean A. Irvine
  */
 public class A105635 extends LinearRecurrence {

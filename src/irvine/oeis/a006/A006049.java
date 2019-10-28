@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006049 Numbers n such that n and <code>n+1</code> have same number of distinct prime divisors.
+ * A006049 Numbers n such that n and <code>n+1</code> have the same number of distinct prime divisors.
  * @author Sean A. Irvine
  */
 public class A006049 implements Sequence {

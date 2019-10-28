@@ -13,13 +13,17 @@ public class A026009 implements Sequence {
   private long mN = 0;
   private long mM = 0;
 
+  protected Z t(final long n, final long m) {
+    return Binomial.binomial(n, m).subtract(Binomial.binomial(n, m - 3)).max(Z.ONE);
+  }
+
   @Override
   public Z next() {
     if (++mM > mN / 2 + 1) {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN, mM).subtract(Binomial.binomial(mN, mM - 3)).max(Z.ONE);
+    return t(mN, mM);
   }
 }
 

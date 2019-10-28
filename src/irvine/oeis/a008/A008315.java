@@ -10,8 +10,12 @@ import irvine.oeis.Sequence;
  */
 public class A008315 implements Sequence {
 
-  private int mN = -1;
-  private int mM = 1;
+  private long mN = -1;
+  private long mM = 1;
+
+  protected Z t(final long n, final long m) {
+    return Binomial.binomial(n, m).subtract(Binomial.binomial(n, m - 1));
+  }
 
   @Override
   public Z next() {
@@ -19,6 +23,6 @@ public class A008315 implements Sequence {
       ++mN;
       mM = 0;
     }
-    return Binomial.binomial(mN, mM).subtract(Binomial.binomial(mN, mM - 1));
+    return t(mN, mM);
   }
 }

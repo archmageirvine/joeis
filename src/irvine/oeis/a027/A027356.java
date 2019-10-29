@@ -13,21 +13,21 @@ public class A027356 extends MemoryFunction2<Long, Z> implements Sequence {
   // After Alois P. Heinz
 
   private long mN = 0;
-  private long mM = 0;
+  private long mK = 0;
 
   @Override
-  protected Z compute(final Long n, final Long m) {
-    if (n > m * m) {
+  protected Z compute(final Long n, final Long k) {
+    if (n > k * k) {
       return Z.ZERO;
     }
     if (n == 0) {
       return Z.ONE;
     }
-    final long p = 2 * m - 1;
+    final long p = 2 * k - 1;
     if (p > n) {
-      return get(n, m - 1);
+      return get(n, k - 1);
     }
-    return get(n, m - 1).add(get(n - p, m - 1));
+    return get(n, k - 1).add(get(n - p, k - 1));
   }
 
   protected Z t(final long n, final long m) {
@@ -36,10 +36,10 @@ public class A027356 extends MemoryFunction2<Long, Z> implements Sequence {
 
   @Override
   public Z next() {
-    if (++mM > mN) {
+    if (++mK > mN) {
       ++mN;
-      mM = 1;
+      mK = 1;
     }
-    return t(mN, mM);
+    return t(mN, mK);
   }
 }

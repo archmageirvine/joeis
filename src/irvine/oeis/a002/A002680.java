@@ -1,13 +1,13 @@
 package irvine.oeis.a002;
 
+import java.util.Collections;
+
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.Collections;
 
 /**
  * A002680 Denominators of coefficients of polynomials arising from Chebyshev quadrature.
@@ -17,7 +17,7 @@ public class A002680 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
 
-  private int mN = 0;
+  private int mN = -1;
 
   private Polynomial<Q> s(final int n) {
     final Polynomial<Q> log2 = RING.log1p(RING.negate(RING.x()), n + 1);

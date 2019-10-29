@@ -10,31 +10,29 @@ import irvine.oeis.Sequence;
  */
 public class A027356 extends MemoryFunction2<Long, Z> implements Sequence {
 
+  // After Alois P. Heinz
+
   private long mN = 0;
   private long mM = 0;
 
   @Override
   protected Z compute(final Long n, final Long m) {
-    if ((n & 1) == 1 && m.equals(n)) {
+    if (n > m * m) {
+      return Z.ZERO;
+    }
+    if (n == 0) {
       return Z.ONE;
     }
-    if (m == 1 || n < 3 || m.equals(n) || m > n) {
-      return Z.ZERO;
+    final long p = 2 * m - 1;
+    if (p > n) {
+      return get(n, m - 1);
     }
-    if ((m & 1) == 0) {
-      return Z.ZERO;
-    }
-    Z sum = Z.ZERO;
-    for (long k = 1; k < n; ++k) {
-      sum = sum.add(get(n - m, k));
-    }
-    return sum;
+    return get(n, m - 1).add(get(n - p, m - 1));
   }
 
-  /*
-  // todo this looks wrong for T(6,3)
-  T(n, 1)=0 for all n; T(n, n)=1 for all odd n>1; and for n>=3, T(n, k)=0 if k is even, else T(n, k)=Sum{T(n-k, i): i=1, 2, ..., n-1} for k=2, 3, ..., n-1.
-   */
+  protected Z t(final long n, final long m) {
+    return (m & 1) == 0 ? Z.ZERO : get(n - m, (m - 1) / 2);
+  }
 
   @Override
   public Z next() {
@@ -42,6 +40,6 @@ public class A027356 extends MemoryFunction2<Long, Z> implements Sequence {
       ++mN;
       mM = 1;
     }
-    return get(mN, mM);
+    return t(mN, mM);
   }
 }

@@ -13,10 +13,14 @@ public class A007376 implements Sequence {
  
   private String mS = "";
   private int mPos = 0;
-  private Z mN = Z.ZERO;
+  private Z mN = null;
 
   @Override
   public Z next() {
+    if (mN == null) {
+      mN = Z.ZERO;
+      return Z.ZERO;
+    }
     ++mPos;
     if (mPos >= mS.length()) {
       mN = mN.add(1);

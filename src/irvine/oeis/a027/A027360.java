@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000700;
  * A027360.
  * @author Sean A. Irvine
  */
-public class A027360 extends A027345 {
+public class A027360 extends A027356 {
 
   private final Sequence mA = new A000700();
   private int mN = 0;
@@ -22,9 +22,7 @@ public class A027360 extends A027345 {
       mM = 1;
       mS = mA.next();
     }
-    final Z res = mS;
-    //mS = mS.add(distinctOddPartsMinimum(mN, mN + 1 - mM));
-    mS = mS.subtract(distinctOddPartsMinimum(mN, mM));
-    return res;
+    mS = mS.subtract(t(mN, mM - 1));
+    return mS;
   }
 }

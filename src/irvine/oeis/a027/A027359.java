@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027359.
+ * A027359 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n into distinct odd parts, all <code>&lt;=</code> k.
  * @author Sean A. Irvine
  */
 public class A027359 extends A027356 {

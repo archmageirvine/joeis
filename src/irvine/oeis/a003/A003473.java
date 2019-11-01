@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A003473 implements Sequence {
 
-  private int mN = 0;
+  protected int mN = 0;
 
   protected long p() {
     return 2;

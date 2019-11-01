@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000700;
 
 /**
- * A027355 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions into distinct parts, all <code>&gt;=</code> k.
+ * A027355 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions into distinct odd parts, all <code>&gt;=</code> k.
  * @author Sean A. Irvine
  */
 public class A027355 extends A027345 {

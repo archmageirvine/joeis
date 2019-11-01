@@ -4,7 +4,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088016 To obtain <code>a(n+1)</code>, add the square of the n-th partial sum to the n-th partial sum of the squares, then divide this result by <code>a(n)</code>, for all <code>n&gt;=0</code>, with <code>a(0)=1</code>.
+ * A088016 To obtain <code>a(n+1)</code>, add the square of the n-th partial sum to the n-th partial sum of the squares, then divide this result by <code>a(n)</code>, for all <code>n &gt;= 0</code>, with <code>a(0)=1</code>.
  * @author Georg Fischer
  */
 public class A088016 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A026756 <code>Sum{T(i,j)}, 0&lt;=i&lt;=n, 0&lt;=j&lt;=n</code>, T given by <code>A026747</code>.
+ * A026756 <code>a(n) = Sum_{i=0..n} Sum_{j=0..n} T(i,j)</code>, T given by <code>A026747</code>.
  * @author Sean A. Irvine
  */
 public class A026756 extends PartialSumSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100764 <code>a(1) = 1, a(2) = 2, a(3) = 3, a(n) =</code> least number not the sum of three or less previous terms.
+ * A100764 <code>a(1) = 1, a(2) = 2, a(3) = 3, a(n) =</code> least number not the sum of three or fewer previous terms.
  * @author Georg Fischer
  */
 public class A100764 extends GeneratingFunctionSequence {

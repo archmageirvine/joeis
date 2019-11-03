@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A039685 Numbers n such that <code>n^2</code> ends in 444.
+ * A039685 Numbers m such that <code>m^2</code> ends in 444.
  * @author Sean A. Irvine
  */
 public class A039685 extends LinearRecurrence {

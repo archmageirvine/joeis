@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026057 <code>a(n) = n*(n^2+12*n-25)/6</code>.
+ * A026057 <code>a(n) = n*(n^2 + 12*n - 25)/6</code>.
  * @author Sean A. Irvine
  */
 public class A026057 extends LinearRecurrence {

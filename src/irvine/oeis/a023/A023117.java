@@ -38,7 +38,7 @@ public class A023117 implements Sequence {
   }
 
   protected CR eval(final Pair<Long, Long> p) {
-    return getN().multiply(CR.valueOf(p.right())).add(CR.valueOf(p.left()));
+    return getN().multiply(p.right()).add(CR.valueOf(p.left()));
   }
 
   @Override

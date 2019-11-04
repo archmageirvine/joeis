@@ -17,7 +17,7 @@ public class A022331 implements Sequence {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mS = mS.add(LOG.multiply(CR.valueOf(mN)).ceil());
+      mS = mS.add(LOG.multiply(mN).ceil());
     }
     return mS;
   }

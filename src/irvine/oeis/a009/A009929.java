@@ -21,7 +21,7 @@ public class A009929 implements Sequence {
     ++mN;
     mF2 = mF2.multiply(mN).multiply(mN);
     final Z u = mF2.multiply(mN + 1).multiply(mN);
-    final Z t = mX.multiply(CR.valueOf(u)).floor();
+    final Z t = mX.multiply(u).floor();
     mX = mX.subtract(CR.valueOf(new Q(t, u)));
     return t;
   }

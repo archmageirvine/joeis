@@ -18,7 +18,7 @@ public class A020960 implements Sequence {
     ++mN;
     Z sum = Z.ZERO;
     for (long k = 1; k <= 2 * mN; ++k) {
-      sum = sum.add(ComputableReals.SINGLETON.pow(CR.PHI, CR.valueOf(2 - k)).multiply(CR.valueOf(mN)).floor());
+      sum = sum.add(ComputableReals.SINGLETON.pow(CR.PHI, CR.valueOf(2 - k)).multiply(mN).floor());
     }
     return sum;
   }

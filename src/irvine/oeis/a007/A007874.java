@@ -60,13 +60,13 @@ public class A007874 implements Sequence {
     // I would like a smarter method of determining when they are the same, but this seems to work for now
     final CR[] a = new CR[mN / 2 + 1];
     for (int k = 0; k <= mN / 2; ++k) {
-      a[k] = CR.TWO.subtract(CR.TWO.multiply(ComputableReals.SINGLETON.cos(CR.PI.multiply(CR.valueOf(new Q(2 * k, mN)))))).sqrt();
+      a[k] = CR.TWO.subtract(CR.TWO.multiply(ComputableReals.SINGLETON.cos(CR.PI.multiply(new Q(2 * k, mN))))).sqrt();
     }
     final HashSet<String> unique = new HashSet<>(mA.size());
     for (final List<Integer> v : mA) {
       CR sum = CR.ZERO;
       for (int k = 1; k < v.size(); ++k) {
-        sum = sum.add(a[k].multiply(CR.valueOf(v.get(k))));
+        sum = sum.add(a[k].multiply(v.get(k)));
       }
       unique.add(sum.toString(PRECISION));
     }

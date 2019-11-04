@@ -17,7 +17,7 @@ public class A007725 implements Sequence {
   private CR[] cosines(final int n) {
     final CR[] cos = new CR[n];
     for (int k = 1; k < n; ++k) {
-      cos[k] = CR.HALF_PI.multiply(CR.valueOf(new Q(k, n))).cos();
+      cos[k] = CR.HALF_PI.multiply(new Q(k, n)).cos();
     }
     return cos;
   }

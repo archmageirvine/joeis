@@ -31,7 +31,7 @@ public class A022159 extends MemorySequence {
   private final ArrayList<Z> mBTerms = new ArrayList<>();
 
   private Z aa(final int n) {
-    return h().multiply(CR.valueOf(n)).floor();
+    return h().multiply(n).floor();
   }
 
   private Z b(final int n) {

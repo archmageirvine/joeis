@@ -19,10 +19,10 @@ public class A026250 implements Sequence {
   @Override
   public Z next() {
     if (++mN == mJ) {
-      mJ = CR.SQRT2.multiply(CR.valueOf(++mJi)).floor().longValueExact();
-      return CR.SQRT2.add(CR.TWO).multiply(CR.valueOf(++mB)).floor();
+      mJ = CR.SQRT2.multiply(++mJi).floor().longValueExact();
+      return CR.SQRT2.add(CR.TWO).multiply(++mB).floor();
     } else {
-      return CR.SQRT2.multiply(CR.valueOf(++mA)).floor();
+      return CR.SQRT2.multiply(++mA).floor();
     }
   }
 }

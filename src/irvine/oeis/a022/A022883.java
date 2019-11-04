@@ -12,7 +12,7 @@ public class A022883 extends A022879 {
 
   @Override
   protected Z eval(final Pair<Long, Long> p) {
-    return CR.valueOf(CR.E.multiply(CR.valueOf(p.left())).floor())
-      .multiply(CR.E.multiply(CR.valueOf(p.right()))).floor();
+    return CR.valueOf(CR.E.multiply(p.left()).floor())
+      .multiply(CR.E.multiply(p.right())).floor();
   }
 }

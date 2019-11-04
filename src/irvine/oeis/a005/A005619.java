@@ -13,8 +13,8 @@ import irvine.oeis.Sequence;
 public class A005619 implements Sequence {
 
   private static final CR SQRT11 = CR.valueOf(11).sqrt();
-  private static final CR T1 = SQRT11.multiply(CR.valueOf(363));
-  private static final CR T2 = SQRT11.multiply(CR.valueOf(1960));
+  private static final CR T1 = SQRT11.multiply(363);
+  private static final CR T2 = SQRT11.multiply(1960);
   private static final CR T3 = SQRT11.multiply(CR.FOUR);
   private static final CR C1 = T1.subtract(CR.valueOf(1202)).divide(T2);
   private static final CR C2 = T1.add(CR.valueOf(1202)).divide(T2);

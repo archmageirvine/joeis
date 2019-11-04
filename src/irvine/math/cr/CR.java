@@ -643,7 +643,7 @@ public abstract class CR extends Number implements Comparable<CR> {
     String scaledString = scaledInt.abs().toString(radix);
     while (scaledString.length() < n) {
       // exponent was too large.  Adjust.
-      scaledRes = scaledRes.multiply(CR.valueOf(bigRadix));
+      scaledRes = scaledRes.multiply(bigRadix);
       --exponent;
       scaledInt = scaledRes.getApprox(0);
       sign = scaledInt.signum();
@@ -864,6 +864,15 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Convenience method to multiply a computable real by a rational.
+   * @param x factor
+   * @return product
+   */
+  public CR multiply(final Q x) {
+    return new Multiply(this, CR.valueOf(x));
+  }
+
+  /**
    * The multiplicative inverse of a computable real.
    * <code>x.inverse()</code> is equivalent to <code>CR.valueOf(1).divide(x)</code>.
    * @return multiplicative inverse
@@ -948,7 +957,7 @@ public abstract class CR extends Number implements Comparable<CR> {
     if (absRoughAppr.compareTo(Z.SIX) >= 0) {
       // Subtract multiples of PI
       final Z multiplier = roughAppr.divide(Z.SIX);
-      final CR adjustment = PI.multiply(CR.valueOf(multiplier));
+      final CR adjustment = PI.multiply(multiplier);
       if (multiplier.and(Z.ONE).signum() != 0) {
         return subtract(adjustment).cos().negate();
       } else {

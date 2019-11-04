@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A248507 extends DecimalExpansionSequence {
 
-  private static final CR MAGNETIC_FLUX_QUANTUM = PhysicsConstants.PLANCK_CONSTANT_CR.divide(PhysicsConstants.ELEMENTARY_CHARGE_CR).divide(CR.TWO).multiply(CR.valueOf(Z.TEN.pow(15)));
+  private static final CR MAGNETIC_FLUX_QUANTUM = PhysicsConstants.PLANCK_CONSTANT_CR.divide(PhysicsConstants.ELEMENTARY_CHARGE_CR).divide(CR.TWO).multiply(Z.TEN.pow(15));
 
   @Override
   protected CR getCR() {

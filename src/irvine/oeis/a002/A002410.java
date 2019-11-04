@@ -50,21 +50,21 @@ public class A002410 implements Sequence {
   private static final CR C2A = TAU4.multiply(18).inverse();
   private static final CR C2B = TAU2.multiply(CR.FOUR).inverse();
   private static final CR C3A = TAU6.multiply(162).inverse();
-  private static final CR C3B = TAU4.multiply(CR.valueOf(new Q(15, 2))).inverse();
+  private static final CR C3B = TAU4.multiply(new Q(15, 2)).inverse();
   private static final CR C3C = TAU2.multiply(8).inverse();
   private static final CR C4A = TAU8.multiply(1944).inverse(); // 2^3 * 3^5
-  private static final CR C4B = TAU6.multiply(CR.valueOf(new Q(360, 11))).inverse(); // 2^3 * 3^2 * 5 / 11
-  private static final CR C4C = TAU4.multiply(CR.valueOf(new Q(96, 19))).inverse();
+  private static final CR C4B = TAU6.multiply(new Q(360, 11)).inverse(); // 2^3 * 3^2 * 5 / 11
+  private static final CR C4C = TAU4.multiply(new Q(96, 19)).inverse();
   private static final CR C4D = TAU2.multiply(32).inverse();
   private static final CR C5A = TAU10.multiply(29160).inverse(); // 2^3 * 3^6 * 5
-  private static final CR C5B = TAU8.multiply(CR.valueOf(new Q(1620, 7))).inverse();
-  private static final CR C5C = TAU6.multiply(CR.valueOf(new Q(10080, 901))).inverse();
-  private static final CR C5D = TAU4.multiply(CR.valueOf(new Q(13824, 2879))).inverse();
+  private static final CR C5B = TAU8.multiply(new Q(1620, 7)).inverse();
+  private static final CR C5C = TAU6.multiply(new Q(10080, 901)).inverse();
+  private static final CR C5D = TAU4.multiply(new Q(13824, 2879)).inverse();
   private static final CR C6A = TAU12.multiply(524880).inverse();
-  private static final CR C6B = TAU10.multiply(CR.valueOf(new Q(38880, 17))).inverse();
-  private static final CR C6C = TAU8.multiply(CR.valueOf(new Q(907200, 18889))).inverse();
-  private static final CR C6D = TAU6.multiply(CR.valueOf(new Q(414720, 79267))).inverse();
-  private static final CR C6E = TAU4.multiply(CR.valueOf(new Q(18432, 2879))).inverse();
+  private static final CR C6B = TAU10.multiply(new Q(38880, 17)).inverse();
+  private static final CR C6C = TAU8.multiply(new Q(907200, 18889)).inverse();
+  private static final CR C6D = TAU6.multiply(new Q(414720, 79267)).inverse();
+  private static final CR C6E = TAU4.multiply(new Q(18432, 2879)).inverse();
   private static final int TERMS = 23;
 
   private static Polynomial<CR> psi(final Polynomial<CR> p, final int n) {

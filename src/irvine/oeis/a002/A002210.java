@@ -23,7 +23,7 @@ public class A002210 extends DecimalExpansionSequence {
   private void step() {
     ++mN;
     mS2 = mS2.add(new Q(Z.ONE, Z.TWO.multiply(1 - mN).multiply(2 * mN - 1)));
-    mS1 = mS1.add(Zeta.zeta(2 * mN).subtract(CR.ONE).multiply(CR.valueOf(mS2.divide(mN))));
+    mS1 = mS1.add(Zeta.zeta(2 * mN).subtract(CR.ONE).multiply(mS2.divide(mN)));
   }
 
   @Override

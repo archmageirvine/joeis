@@ -15,6 +15,6 @@ public class A011543 implements Sequence {
   @Override
   public Z next() {
     mA = mA == null ? Z.ONE : mA.multiply(10);
-    return CR.E.multiply(CR.valueOf(mA)).floor();
+    return CR.E.multiply(mA).floor();
   }
 }

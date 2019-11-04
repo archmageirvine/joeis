@@ -19,7 +19,7 @@ public class A022414 extends MemoryFunction2<Integer, Z> implements Sequence {
     if (k == 0) {
       return Z.valueOf(n);
     } else if (k == 1) {
-      return CR.PHI.multiply(CR.valueOf(n + 1)).floor();
+      return CR.PHI.multiply(n + 1).floor();
     } else {
       return get(n, k - 1).add(get(n, k - 2));
     }

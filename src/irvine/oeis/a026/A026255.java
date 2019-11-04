@@ -20,10 +20,10 @@ public class A026255 implements Sequence {
   @Override
   public Z next() {
     if (++mN == mJ) {
-      mJ = SQRT3.multiply(CR.valueOf(++mJi)).floor().longValueExact();
-      return SQRT3.add(CR.THREE).divide(CR.TWO).multiply(CR.valueOf(++mB)).floor();
+      mJ = SQRT3.multiply(++mJi).floor().longValueExact();
+      return SQRT3.add(CR.THREE).divide(CR.TWO).multiply(++mB).floor();
     } else {
-      return SQRT3.multiply(CR.valueOf(++mA)).floor();
+      return SQRT3.multiply(++mA).floor();
     }
   }
 }

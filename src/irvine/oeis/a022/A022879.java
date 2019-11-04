@@ -30,8 +30,8 @@ public class A022879 implements Sequence {
   }
 
   protected Z eval(final Pair<Long, Long> p) {
-    return CR.valueOf(CR.PHI.multiply(CR.valueOf(p.left())).floor())
-      .multiply(CR.PHI.multiply(CR.valueOf(p.right()))).floor();
+    return CR.valueOf(CR.PHI.multiply(p.left()).floor())
+      .multiply(CR.PHI.multiply(p.right())).floor();
   }
 
   @Override

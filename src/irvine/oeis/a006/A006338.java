@@ -15,8 +15,8 @@ public class A006338 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return CR.SQRT2.multiply(CR.valueOf(mN + 1)).round()
-      .subtract(CR.SQRT2.multiply(CR.valueOf(mN)).round());
+    return CR.SQRT2.multiply(mN + 1).round()
+      .subtract(CR.SQRT2.multiply(mN).round());
   }
 }
 

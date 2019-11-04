@@ -26,7 +26,7 @@ public class A050255 implements Sequence {
   }
 
   private CR left(final int n, final int k) {
-    return CR.valueOf(new Q(-n, 365L * k)).exp().multiply(CR.valueOf(n));
+    return CR.valueOf(new Q(-n, 365L * k)).exp().multiply(n);
   }
 
   private double error(final int n, final int k) {

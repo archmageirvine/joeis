@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A213610 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.TAU.multiply(CR.TWO).multiply(CR.valueOf(PhysicsConstants.SPEED_OF_LIGHT));
+  private static final CR N = CR.TAU.multiply(CR.TWO).multiply(PhysicsConstants.SPEED_OF_LIGHT);
 
   @Override
   protected CR getCR() {

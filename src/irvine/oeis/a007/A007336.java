@@ -28,8 +28,8 @@ public class A007336 implements Sequence {
     if (j0 == j1) {
       return Integer.compare(i0, i1);
     }
-    final CR c0 = getBase().multiply(CR.valueOf(j0)).add(CR.valueOf(i0));
-    final CR c1 = getBase().multiply(CR.valueOf(j1)).add(CR.valueOf(i1));
+    final CR c0 = getBase().multiply(j0).add(CR.valueOf(i0));
+    final CR c1 = getBase().multiply(j1).add(CR.valueOf(i1));
     return c0.compareTo(c1); // Already know they are not equal
   });
 

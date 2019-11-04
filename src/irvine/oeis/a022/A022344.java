@@ -14,7 +14,7 @@ public class A022344 implements Sequence {
 
   @Override
   public Z next() {
-    final Z t = CR.PHI.multiply(CR.valueOf(++mN + 1)).floor();
+    final Z t = CR.PHI.multiply(++mN + 1).floor();
     return t.square().subtract(t.multiply(mN)).subtract(Z.valueOf(mN).square());
   }
 }

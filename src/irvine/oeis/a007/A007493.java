@@ -14,7 +14,7 @@ public class A007493 extends DecimalExpansionSequence {
   private static final ComputableReals FLD = ComputableReals.SINGLETON;
   private static final CR SQRT = CR.valueOf(1929).sqrt();
   private static final CR THIRD = CR.ONE_THIRD;
-  private static final CR N = FLD.pow(CR.valueOf(new Q(135, 2)).subtract(SQRT.multiply(CR.valueOf(new Q(3, 2)))), THIRD).multiply(THIRD)
+  private static final CR N = FLD.pow(CR.valueOf(new Q(135, 2)).subtract(SQRT.multiply(new Q(3, 2))), THIRD).multiply(THIRD)
     .add(FLD.pow(SQRT.add(CR.valueOf(45)).multiply(CR.HALF), THIRD).divide(FLD.pow(CR.THREE, CR.valueOf(new Q(2, 3)))));
 
   @Override

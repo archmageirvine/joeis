@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A019773 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.E.multiply(CR.valueOf(new Q(2, 23)));
+  private static final CR N = CR.E.multiply(new Q(2, 23));
 
   @Override
   protected CR getCR() {

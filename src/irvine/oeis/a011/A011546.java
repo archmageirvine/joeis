@@ -15,6 +15,6 @@ public class A011546 implements Sequence {
   @Override
   public Z next() {
     mA = mA == null ? Z.ONE : mA.multiply(10);
-    return CR.PI.multiply(CR.valueOf(mA)).round();
+    return CR.PI.multiply(mA).round();
   }
 }

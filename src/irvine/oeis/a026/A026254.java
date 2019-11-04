@@ -19,7 +19,7 @@ public class A026254 implements Sequence {
   @Override
   public Z next() {
     if (++mN == mJ) {
-      mJ = SQRT3.multiply(CR.valueOf(mJi + 2)).floor().longValueExact();
+      mJ = SQRT3.multiply(mJi + 2).floor().longValueExact();
       return Z.valueOf(++mJi);
     } else {
       return Z.valueOf(++mNonJi);

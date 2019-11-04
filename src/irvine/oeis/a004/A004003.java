@@ -13,7 +13,7 @@ public class A004003 extends MemorySequence {
   private int mN = -1;
 
   private CR cos2(final int m, final int n) {
-    final CR cos = CR.PI.multiply(CR.valueOf(m)).divide(CR.valueOf(2L * n + 1)).cos();
+    final CR cos = CR.PI.multiply(m).divide(CR.valueOf(2L * n + 1)).cos();
     return cos.multiply(cos);
   }
 

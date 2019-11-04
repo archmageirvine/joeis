@@ -20,7 +20,7 @@ public class A309076 implements Sequence {
     Z sum = Z.ZERO;
     long n = ++mN;
     while (n > 0) {
-      final int k = SQRT5.multiply(CR.valueOf(n)).add(CR.HALF).log().divide(LN_PHI).floor().intValueExact();
+      final int k = SQRT5.multiply(n).add(CR.HALF).log().divide(LN_PHI).floor().intValueExact();
       n -= Fibonacci.fibonacci(k).longValueExact();
       sum = sum.add(Fibonacci.fibonacci(1 - k));
     }

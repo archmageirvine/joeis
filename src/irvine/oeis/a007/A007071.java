@@ -16,7 +16,7 @@ public class A007071 extends MemoryFunction1<Z> implements Sequence {
   private int mN = 0;
 
   private Z wythSpec(final Z n, final CR x) {
-    return x.multiply(CR.valueOf(n)).floor();
+    return x.multiply(n).floor();
   }
 
   private Z a1951(final Z n) {

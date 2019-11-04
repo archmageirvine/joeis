@@ -79,7 +79,7 @@ public final class Zeta {
       return res;
     }
     final Q q = BERNOULLI.get(n).divide(2).divide(FACTORIAL.factorial(n));
-    final CR cr = FLD.pow(CR.PI.multiply(CR.TWO), n).multiply(CR.valueOf(q));
+    final CR cr = FLD.pow(CR.PI.multiply(CR.TWO), n).multiply(q);
     final CR r = (n & 2) == 0 ? cr.negate() : cr;
     EVEN_CACHE.put(n, r);
     return r;

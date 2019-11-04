@@ -22,7 +22,7 @@ public class A024849 implements Sequence {
 
   private boolean check() {
     for (int r = 2; r <= mN; ++r) {
-      final CR k = CR.valueOf(f(r).multiply(CR.valueOf(mM)).floor().add(1));
+      final CR k = CR.valueOf(f(r).multiply(mM).floor().add(1));
       for (int s = 1; s < r; ++s) {
         if (k.divide(f(s)).compareTo(CR.valueOf(mM)) >= 0) {
           return false;

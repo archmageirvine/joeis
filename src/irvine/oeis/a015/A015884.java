@@ -26,7 +26,7 @@ public class A015884 implements Sequence {
     } else {
       a = mA.inverse().floor();
     }
-    mA = CR.ONE.subtract(mA.multiply(CR.valueOf(a))).abs();
+    mA = CR.ONE.subtract(mA.multiply(a)).abs();
     return a;
   }
 }

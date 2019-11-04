@@ -18,7 +18,7 @@ public class A019588 implements Sequence {
     final CR frac = nphi.subtract(CR.valueOf(nphi.floor()));
     long c = 1;
     for (long k = 1; k < mN; ++k) {
-      final CR u = CR.PHI.multiply(CR.valueOf(k));
+      final CR u = CR.PHI.multiply(k);
       if (u.subtract(CR.valueOf(u.floor())).compareTo(frac) >= 0) {
         ++c;
       }

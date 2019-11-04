@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A140243 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = REALS.acos(CR.valueOf(11).divide(CR.valueOf(16))).multiply(CR.valueOf(180)).divide(CR.PI);
+  private static final CR N = REALS.acos(CR.valueOf(11).divide(CR.valueOf(16))).multiply(180).divide(CR.PI);
 
   @Override
   protected CR getCR() {

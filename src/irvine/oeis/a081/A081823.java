@@ -11,7 +11,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A081823 extends DecimalExpansionSequence {
 
-  private static final CR N = PhysicsConstants.ELEMENTARY_CHARGE_CR.multiply(CR.valueOf(Z.TEN.pow(18)));
+  private static final CR N = PhysicsConstants.ELEMENTARY_CHARGE_CR.multiply(Z.TEN.pow(18));
 
   @Override
   protected CR getCR() {

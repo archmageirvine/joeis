@@ -846,6 +846,24 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Convenience method to multiply a computable real by an integer.
+   * @param x factor
+   * @return product
+   */
+  public CR multiply(final Z x) {
+    return new Multiply(this, CR.valueOf(x));
+  }
+
+  /**
+   * Convenience method to multiply a computable real by an integer.
+   * @param x factor
+   * @return product
+   */
+  public CR multiply(final long x) {
+    return new Multiply(this, CR.valueOf(x));
+  }
+
+  /**
    * The multiplicative inverse of a computable real.
    * <code>x.inverse()</code> is equivalent to <code>CR.valueOf(1).divide(x)</code>.
    * @return multiplicative inverse

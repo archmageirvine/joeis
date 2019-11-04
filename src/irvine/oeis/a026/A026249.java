@@ -18,7 +18,7 @@ public class A026249 implements Sequence {
   @Override
   public Z next() {
     if (++mN == mJ) {
-      mJ = CR.SQRT2.multiply(CR.valueOf(mJi + 2)).floor().longValueExact();
+      mJ = CR.SQRT2.multiply(mJi + 2).floor().longValueExact();
       return Z.valueOf(++mJi);
     } else {
       return Z.valueOf(++mNonJi);

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027436.
+ * A027436 <code>f(x) =</code> Sum <code>a(n)*x^n, n = 1..inf</code> satisfies <code>f(f(x)) = x*(1 + 4*x)</code>.
  * @author Sean A. Irvine
  */
 public class A027436 extends MemoryFunction2<Integer, Z> implements Sequence {

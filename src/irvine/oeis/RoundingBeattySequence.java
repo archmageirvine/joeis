@@ -27,6 +27,6 @@ public abstract class RoundingBeattySequence implements Sequence {
   
   @Override
   public Z next() {
-    return getCR().multiply(CR.valueOf(++mN)).round();
+    return getCR().multiply(++mN).round();
   }
 }

@@ -19,6 +19,6 @@ public class A277723 implements Sequence {
 
   @Override
   public Z next() {
-    return TAU3.multiply(CR.valueOf(++mN)).floor();
+    return TAU3.multiply(++mN).floor();
   }
 }

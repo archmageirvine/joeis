@@ -27,6 +27,6 @@ public abstract class BeattySequence implements Sequence {
   
   @Override
   public Z next() {
-    return getCR().multiply(CR.valueOf(++mN)).floor();
+    return getCR().multiply(++mN).floor();
   }
 }

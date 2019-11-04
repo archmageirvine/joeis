@@ -26,7 +26,6 @@ public class A027433 implements Sequence {
   public Z next() {
     ++mN;
     Z sum = Z.ZERO;
-    Z t = Z.ZERO;
     final long limit = 1L << mN;
     for (long a = 0; a < limit; ++a) {
       sum = sum.add(mN); // lcs(a,a) == n

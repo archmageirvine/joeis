@@ -24,7 +24,7 @@ public class A022159 extends MemorySequence {
     private long mN = 0;
     @Override
     public Z next() {
-      return h().multiply(CR.valueOf(++mN)).floor();
+      return h().multiply(++mN).floor();
     }
   }, Z.ONE);
 

@@ -14,6 +14,6 @@ public class A022852 implements Sequence {
 
   @Override
   public Z next() {
-    return CR.E.multiply(CR.valueOf(++mN)).round();
+    return CR.E.multiply(++mN).round();
   }
 }

@@ -20,6 +20,6 @@ public class A020941 extends A000045 {
   public Z next() {
     final Z s = mA.multiply(mN);
     mA = super.next();
-    return s.add(CR.PHI.multiply(CR.valueOf(++mN)).floor().multiply(mA));
+    return s.add(CR.PHI.multiply(++mN).floor().multiply(mA));
   }
 }

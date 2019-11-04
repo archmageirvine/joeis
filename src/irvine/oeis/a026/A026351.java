@@ -14,6 +14,6 @@ public class A026351 implements Sequence {
 
   @Override
   public Z next() {
-    return CR.PHI.multiply(CR.valueOf(++mN)).floor().add(1);
+    return CR.PHI.multiply(++mN).floor().add(1);
   }
 }

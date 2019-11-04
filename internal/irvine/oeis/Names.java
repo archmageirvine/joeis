@@ -49,6 +49,8 @@ public final class Names {
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");
     FORMULA.add("maj");
+    FORMULA.add("ijk");
+    FORMULA.add("Tmn");
     FORMULA.add("McL");
     FORMULA.add("Cn");
     FORMULA.add("INVERTi");

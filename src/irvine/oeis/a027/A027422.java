@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027422 Triangle <code>T00, T10, T11, T20, T21, T22</code>, etc. where Tmn = number of distinct products <code>ij</code> with <code>m-n&lt;=i,j&lt;=m</code>.
+ * A027422 Triangle <code>T00, T10, T11, T20, T21, T22</code>, etc. where <code>Tmn =</code> number of distinct products <code>ij</code> with <code>m-n&lt;=i,j&lt;=m</code>.
  * @author Sean A. Irvine
  */
 public class A027422 implements Sequence {

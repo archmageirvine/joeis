@@ -1,13 +1,13 @@
 package irvine.oeis.a329;
 
 import irvine.math.z.Z;
-import irvine.oeis.a027.A027447;
+import irvine.oeis.a027.A027448;
 
 /**
- * A329108.
+ * A329122.
  * @author Sean A. Irvine
  */
-public class A329108 extends A027447 {
+public class A329122 extends A027448 {
 
   private long mN = -1;
 

@@ -186,11 +186,6 @@ public final class IntegerPartition {
       d = d.multiply(t);
     }
     return f.divide(d);
-    /*
-    h:= proc(l) local n; n:= nops(l);
-    add(i, i=l)! /mul(mul(1+l[i]-j+add(`if`(l[k]>=j, 1, 0), k=i+1..n), j=1..l[i]), i=1..n) end:
-
-     */
   }
 
   /**

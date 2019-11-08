@@ -1,0 +1,21 @@
+package irvine.oeis.a027;
+
+import irvine.math.z.Z;
+
+/**
+ * A027544 Second diagonal of <code>A027539</code>.
+ * @author Sean A. Irvine
+ */
+public class A027544 extends A027539 {
+
+  private int mN = 0;
+  {
+    step();
+  }
+
+  @Override
+  public Z next() {
+    step();
+    return mMatrix.get(++mN, mN - 1).multiply(mLcm).toZ();
+  }
+}

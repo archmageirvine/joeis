@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027462 First column of <code>A027448</code>.
+ * A027462 <code>a(n)</code> is the numerator of <code>(-1/6) * Integral_{x=0..1} x^n * log^3(1-x)</code>.
  * @author Sean A. Irvine
  */
 public class A027462 extends A027448 {

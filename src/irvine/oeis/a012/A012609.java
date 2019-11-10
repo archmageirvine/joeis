@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012609 <code>sech(arcsinh(x)*arcsin(x))=1-12/4!*x^4+3472/8!*x^8-20044992/12!*x^12..</code>.
+ * A012609 Expansion of e.g.f. <code>sech(arcsinh(x)*arcsin(x))</code> in powers of <code>x^4</code>.
  * @author Sean A. Irvine
  */
 public class A012609 implements Sequence {

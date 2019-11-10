@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027481 Second subdiagonal of Triangle <code>A027477</code>, constructed from the Stirling numbers of the first kind.
+ * A027481 Second subdiagonal of triangle <code>A027477</code>, constructed from the Stirling numbers of the first kind.
  * @author Sean A. Irvine
  */
 public class A027481 extends A027477 {

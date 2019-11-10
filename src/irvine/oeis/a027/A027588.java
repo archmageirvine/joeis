@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027588.
+ * A027588 Sequence satisfies <code>T^2(a)=a</code>, where T is defined below.
  * @author Sean A. Irvine
  */
 public class A027588 implements Sequence {

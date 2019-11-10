@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027446 Square of the lower triangular mean matrix.
+ * A027446 Triangle read by rows: square of the lower triangular mean matrix.
  * @author Sean A. Irvine
  */
 public class A027446 implements Sequence {

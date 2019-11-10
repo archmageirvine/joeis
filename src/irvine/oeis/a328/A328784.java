@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A328784 allocated for Juri-Stepan Gerasimov.
+ * A328784 Integers k such that the k-th prime divides the k-th Lucas number.
  * @author Sean A. Irvine
  */
 public class A328784 extends A000032 {

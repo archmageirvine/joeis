@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298078 <code>a(n) = 7*n^2-7*n-43</code>.
+ * A298078 <code>a(n) = 7*n^2 - 7*n - 43</code>.
  * @author Georg Fischer
  */
 public class A298078 extends GeneratingFunctionSequence {

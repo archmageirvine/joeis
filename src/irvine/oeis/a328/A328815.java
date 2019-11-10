@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000032;
 
 /**
- * A328815 allocated for Dmitry Kamenetsky.
+ * A328815 The smallest k such that one can form two sets of size n with distinct numbers from 1 to k with the property that the sum of any pair of numbers from different sets is a prime.
  * @author Sean A. Irvine
  */
 public class A328815 extends A000032 {

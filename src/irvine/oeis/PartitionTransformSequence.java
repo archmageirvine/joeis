@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Collection;
 
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -11,15 +12,51 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A sequence comprising the Euler transform of another sequence.
+ * A sequence comprising the partition transform of another sequence.
  * @author Sean A. Irvine
  */
 public class PartitionTransformSequence implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private Sequence mSeq = null;
-  protected final ArrayList<Z> mTerms = new ArrayList<>();
+  protected final ArrayList<Integer> mTerms = new ArrayList<>();
   private int mN = 0;
+
+  /**
+   * Compute the partition transform of the given values.
+   * @param c values
+   * @param n maximum degree
+   * @return partition transform
+   */
+  public static Polynomial<Z> partitionTransform(final Collection<Integer> c, final int n) {
+    Polynomial<Z> p = RING.one();
+    int prev = -1;
+    for (final int u : c) {
+      if (u > prev) {
+        p = RING.multiply(p, RING.oneMinusXToTheN(u), n);
+        prev = u;
+      }
+    }
+    return RING.series(RING.one(), p, n);
+  }
+
+  /**
+   * Compute the partition transform of the given values.
+   * @param c values
+   * @param n maximum degree
+   * @return partition transform
+   */
+  public static Polynomial<Z> partitionTransformZ(final Collection<Z> c, final int n) {
+    Polynomial<Z> p = RING.one();
+    Z prev = Z.NEG_ONE;
+    for (final Z u : c) {
+      if (u.compareTo(prev) > 0) {
+        p = RING.multiply(p, RING.oneMinusXToTheN(u.intValueExact()), n);
+        prev = u;
+      }
+    }
+    return RING.series(RING.one(), p, n);
+  }
 
   /**
    * Creates a new partition transform sequence of the given sequence, skipping
@@ -54,13 +91,9 @@ public class PartitionTransformSequence implements Sequence {
     ++mN;
     final Z next = mSeq.next();
     if (next != null) {
-      mTerms.add(next);
+      mTerms.add(next.intValueExact());
     }
-    Polynomial<Z> den = RING.one();
-    for (final Z term : mTerms) {
-      den = RING.multiply(den, RING.oneMinusXToTheN(term.intValueExact()), mN);
-    }
-    return RING.coeff(RING.one(), den, mN);
+    return partitionTransform(mTerms, mN).coeff(mN);
   }
 
   /**

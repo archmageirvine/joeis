@@ -16,7 +16,7 @@ public class A027584 implements Sequence {
   private Polynomial<Z> mA = Polynomial.create(0, 1, 2, 3, 4, 5);
   private int mN = 0;
 
-  private Polynomial<Z> partitionTransform(final Polynomial<Z> a, final int n) {
+  static Polynomial<Z> specialPartitionTransform(final Polynomial<Z> a, final int n) {
     Polynomial<Z> num = RING.one();
     Polynomial<Z> den = RING.one();
     int prev = 0;
@@ -37,7 +37,7 @@ public class A027584 implements Sequence {
   @Override
   public Z next() {
     if (++mN > mA.degree()) {
-      mA = partitionTransform(partitionTransform(mA, mN + 1), mN);
+      mA = specialPartitionTransform(specialPartitionTransform(mA, mN + 1), mN);
     }
     return mA.coeff(mN);
   }

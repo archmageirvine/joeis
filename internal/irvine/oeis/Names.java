@@ -45,6 +45,11 @@ public final class Names {
     FORMULA.add("sinh");
     FORMULA.add("ddd...d");
     FORMULA.add("abcd...k,");
+    FORMULA.add("abcd");
+    FORMULA.add("abce");
+    FORMULA.add("abde");
+    FORMULA.add("acde");
+    FORMULA.add("bcde");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");

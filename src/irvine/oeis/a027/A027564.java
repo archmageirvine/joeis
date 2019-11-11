@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027564 Numbers not of form abcd + abce + abde + acde + bcde for <code>1 &lt;= a &lt;= b &lt;= c &lt;= d &lt;=</code> e.
+ * A027564 Numbers not of form <code>abcd + abce + abde + acde + bcde</code> for <code>1 &lt;= a &lt;= b &lt;= c &lt;= d &lt;=</code> e.
  * @author Sean A. Irvine
  */
 public class A027564 implements Sequence {
@@ -15,18 +15,18 @@ public class A027564 implements Sequence {
 
   private long mN = 0;
 
-  private boolean is(final long mN) {
+  private boolean is(final long n) {
     // Following limit is probably overkill on precision
-    final long limit = CR.valueOf(new Q(mN, 5)).sqrt().sqrt().floor().longValueExact();
+    final long limit = CR.valueOf(new Q(n, 5)).sqrt().sqrt().floor().longValueExact();
     for (long a = 1; a <= limit; ++a) {
-      for (long b = a; 4 * a * b * b * b + b * b * b * b <= mN; ++b) {
-        for (long c = b; 3 * a * b * c * c + (a + b) * c * c * c <= mN; ++c) {
-          for (long d = c; 2 * a * b * c * d + (b * c + a * c + a * b) * d * d <= mN; ++d) {
+      for (long b = a; 4 * a * b * b * b + b * b * b * b <= n; ++b) {
+        for (long c = b; 3 * a * b * c * c + (a + b) * c * c * c <= n; ++c) {
+          for (long d = c; 2 * a * b * c * d + (b * c + a * c + a * b) * d * d <= n; ++d) {
             for (long e = d; ; ++e) {
               final long r = a * b * c * d + a * b * c * e + a * b * d * e + a * c * d * e + b * c * d * e;
-              if (r == mN) {
+              if (r == n) {
                 return true;
-              } else if (r > mN) {
+              } else if (r > n) {
                 break;
               }
             }

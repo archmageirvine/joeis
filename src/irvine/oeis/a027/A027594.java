@@ -34,11 +34,16 @@ public class A027594 implements Sequence {
     return RING.series(num, den, n);
   }
 
+  protected Z select(final Z a, final Z b) {
+    return a;
+  }
+
   @Override
   public Z next() {
+    final Polynomial<Z> b = specialPartitionTransform(mA, mN + 1);
     if (++mN > mA.degree()) {
-      mA = specialPartitionTransform(specialPartitionTransform(mA, mN + 1), mN);
+      mA = specialPartitionTransform(b, mN);
     }
-    return mA.coeff(mN);
+    return select(mA.coeff(mN), b.coeff(mN));
   }
 }

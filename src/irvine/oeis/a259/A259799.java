@@ -24,7 +24,7 @@ public class A259799 extends MemoryFunction3<Long, Z> implements Sequence {
     if (i == 2) {
       return Z.ONE.add(n / ik);
     }
-    Z res = get(n, i - 1, k);
+    final Z res = get(n, i - 1, k);
     return ik > n ? res : res.add(get(n - ik, i, k));
   }
 

@@ -1160,3 +1160,4 @@ A027361 Number of "sorted permutations": permutations that can occur as the outp
 A027565 Largest number not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i integers >= 1, hard
 A027566 Number of numbers not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i >= 1, hard
 A027567 Number of distinct (modulo rotation and reflection) n X n panmagic = pandiagonal = diabolic = Nasik squares, hard
+A027605 Sum of two cubes in 4 ways involving at least one sum of coprime cubes (first attempt too slow)

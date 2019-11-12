@@ -50,6 +50,7 @@ public final class Names {
     FORMULA.add("abde");
     FORMULA.add("acde");
     FORMULA.add("bcde");
+    FORMULA.add("acd");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");

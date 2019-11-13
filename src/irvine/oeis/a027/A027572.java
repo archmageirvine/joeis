@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  */
 public class A027572 implements Sequence {
 
-  private Z mN = Z.ZERO;
+  private Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

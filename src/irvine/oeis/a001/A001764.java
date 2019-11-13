@@ -12,9 +12,12 @@ public class A001764 implements Sequence {
 
   private long mN = -1;
 
+  protected Z a1764(final long n) {
+    return Binomial.binomial(3 * n, n).divide(2 * n + 1);
+  }
+
   @Override
   public Z next() {
-    ++mN;
-    return Binomial.binomial(3 * mN, mN).divide(2 * mN + 1);
+    return a1764(++mN);
   }
 }

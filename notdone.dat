@@ -78,9 +78,9 @@ A001406 Partition function for b.c.c. lattice
 A001407 Partition function for b.c.c. lattice
 A001408 Ising model, A002916/3
 A001423 Semigroups
-A001426 Semigroups counting, nominally hard
-A001427 Semigroups counting, nominally hard
-A001428 Semigroups counting, nominally hard
+A001426 Semigroups counting, hard
+A001427 Semigroups counting, hard
+A001428 Semigroups counting, hard
 A001438 Latin squares
 A001439 Probably an erroneous sequence
 A001440 Costas arrays, hard
@@ -1161,3 +1161,5 @@ A027565 Largest number not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i inte
 A027566 Number of numbers not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i >= 1, hard
 A027567 Number of distinct (modulo rotation and reflection) n X n panmagic = pandiagonal = diabolic = Nasik squares, hard
 A027605 Sum of two cubes in 4 ways involving at least one sum of coprime cubes (first attempt too slow)
+A027613 Degrees of polynomials involved in analysis of a binary-tree valued Markov chain depending on one parameter; each polynomial has a unique root in [ 0,1 ], which is a lower bound for the transition from positive recurrence to null recurrence, insufficient detail
+A027614 Related to Clebsch-Gordan formulas (needs matrix logarithm?)

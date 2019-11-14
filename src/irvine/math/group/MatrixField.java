@@ -2,8 +2,8 @@ package irvine.math.group;
 
 import irvine.math.api.Field;
 import irvine.math.api.Group;
-import irvine.math.matrix.DefaultMatrix;
 import irvine.math.api.Matrix;
+import irvine.math.matrix.DefaultMatrix;
 
 /**
  * A matrix where individuals elements are drawn from a field.
@@ -229,4 +229,32 @@ public class MatrixField<E> extends MatrixRing<E> implements Field<Matrix<E>> {
   public Group<Matrix<E>> multiplicativeGroup() {
     return new MultiplicativeGroup<>(this);
   }
+
+  /**
+   * Series expansion of <code>log(1+m)</code> to specified number of terms.
+   * @param m matrix
+   * @param n maximum degree
+   * @return series for <code>log(1+m)</code>.
+   */
+  public Matrix<E> log1p(final Matrix<E> m, final int n) {
+    Matrix<E> s = zero();
+    if (!zero().equals(m)) {
+      E kk = mOne; // Tracks k in the field
+      for (int k = 1; k <= n; ++k, kk = mElementField.add(kk, mOne)) {
+        s = signedAdd((k & 1) == 1, s, multiply(pow(m, k), mElementField.inverse(kk)));
+      }
+    }
+    return s;
+  }
+
+  /**
+   * Series expansion of <code>log(m)</code> to specified number of terms.
+   * @param m matrix (assumed to have leading diagonal of 1)
+   * @param n maximum degree
+   * @return series for <code>log(p)</code>.
+   */
+  public Matrix<E> log(final Matrix<E> m, final int n) {
+    return log1p(subtract(m, one()), n);
+  }
+
 }

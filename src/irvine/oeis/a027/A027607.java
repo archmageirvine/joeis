@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A27607.
+ * A027607 Number of <code>non-well-founded</code> sets or hypersets (sets that can contain themselves) of level <code>n</code> (representable by graphs with <code>n</code> nodes).
  * @author Christopher Tubbs
  * @author Byron Heads
  * @author Lucas Holt
@@ -157,14 +157,14 @@ public class A027607 implements Sequence {
     }
 
     // check next potential
-    int b = (a + 1);  // todo promote to ints?
+    int b = a + 1;
     mask >>>= 1;
 
     byte separated = 0;      // remember nodes that separate from 'a'
     while (mask > 1) { // second node won't be the sink
       if ((partitions[p] & mask) != 0) { // found a second node to compare with 'a'
-        if (canSeparate(graph, a, b, partitions, numPartitions) ||
-          canSeparate(graph, b, a, partitions, numPartitions)) {
+        if (canSeparate(graph, a, b, partitions, numPartitions)
+          || canSeparate(graph, b, a, partitions, numPartitions)) {
           separated |= mask;
         }
       }
@@ -172,7 +172,7 @@ public class A027607 implements Sequence {
       mask >>>= 1;
     }
 
-    partitions[numPartitions] = separated;// place separated nodes in new partition
+    partitions[numPartitions] = separated; // place separated nodes in new partition
     partitions[p] ^= separated; // remove separated nodes from this partition
   }
 
@@ -235,7 +235,7 @@ public class A027607 implements Sequence {
       --k;
     }
     if (k == 0) {
-      return (0);
+      return 0;
     } else {
       int j = mN - 2;
       while (indexes[k] > indexes[j]) {
@@ -277,7 +277,7 @@ public class A027607 implements Sequence {
       // need to know what they are: just that they
       // need to be flipped
       if (((graph[r] & b1) != 0 ? 1 : 0) != ((graph[r] & b2) != 0 ? 1 : 0)) {
-        graph[r] ^= (b1 | b2);
+        graph[r] ^= b1 | b2;
       }
     }
   }

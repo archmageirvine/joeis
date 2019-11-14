@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a047.A047749;
 
 /**
- * A027610.
+ * A027610 Number of chordal planar triangulations; also number of planar triangulations with maximal number of triangles; also number of graphs obtained from the tetrahedron by repeatedly inserting vertices of degree 3 into a triangular face; also number of uniquely 4-colorable planar graphs; also number of simplicial 3-clusters with n cells; also Apollonian networks.
  * @author Sean A. Irvine
  */
 public class A027610 extends A047749 {

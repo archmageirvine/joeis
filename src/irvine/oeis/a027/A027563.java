@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027563 Numbers not of form abc + abd + acd + bcd for <code>1&lt;=a&lt;=b&lt;=c&lt;=d</code>.
+ * A027563 Numbers not of form abc + abd <code>+ acd +</code> bcd for <code>1&lt;=a&lt;=b&lt;=c&lt;=d</code>.
  * @author Sean A. Irvine
  */
 public class A027563 extends FiniteSequence {

@@ -1162,4 +1162,4 @@ A027566 Number of numbers not of form k_1 k_2 .. k_n (1/k_1 + .. + 1/k_n), k_i >
 A027567 Number of distinct (modulo rotation and reflection) n X n panmagic = pandiagonal = diabolic = Nasik squares, hard
 A027605 Sum of two cubes in 4 ways involving at least one sum of coprime cubes (first attempt too slow)
 A027613 Degrees of polynomials involved in analysis of a binary-tree valued Markov chain depending on one parameter; each polynomial has a unique root in [ 0,1 ], which is a lower bound for the transition from positive recurrence to null recurrence, insufficient detail
-A027614 Related to Clebsch-Gordan formulas (needs matrix logarithm?)
+A027623 a(0) = 1; for n > 0, a(n) = number of rings with n elements

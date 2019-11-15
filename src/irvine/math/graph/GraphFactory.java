@@ -121,4 +121,27 @@ public final class GraphFactory {
     }
     return g;
   }
+
+  /**
+   * Construct the hypercube of given dimension.
+   * @param n dimension
+   * @return <code>Q_n</code>, the hypercube of dimension n
+   */
+  public static Graph hypercube(final int n) {
+    if (n > 31) {
+      throw new UnsupportedOperationException();
+    }
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    final Graph g = create(1 << n);
+    if (n > 0) {
+      for (int u = 0; u < g.order(); ++u) {
+        for (int bit = 1; bit < g.order(); bit <<= 1) {
+          g.addEdge(u, u ^ bit);
+        }
+      }
+    }
+    return g;
+  }
 }

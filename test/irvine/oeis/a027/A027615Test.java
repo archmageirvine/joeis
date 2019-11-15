@@ -6,10 +6,5 @@ import irvine.oeis.AbstractSequenceTest;
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A027614Test extends AbstractSequenceTest {
-
-  @Override
-  protected int maxTerms() {
-    return 10;
-  }
+public class A027615Test extends AbstractSequenceTest {
 }

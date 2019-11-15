@@ -130,4 +130,15 @@ public class MatrixFieldTest extends TestCase {
     assertEquals(field.one(), a);
     assertEquals("[[-1.0-1.0i][1.0-2.0i]]", b.toString());
   }
+
+  public void testLog() {
+    final MatrixField<Q> field = new MatrixField<>(4, Rationals.SINGLETON);
+    final Matrix<Q> a = new DefaultMatrix<>(new Q[][] {
+      {Q.ONE, Q.TWO, new Q(17, 7), new Q(4, 5)},
+      {Q.ZERO, Q.ONE, new Q(3, 2), new Q(9, 10)},
+      {Q.ZERO, Q.ZERO, Q.ONE, Q.ONE},
+      {Q.ZERO, Q.ZERO, Q.ZERO, Q.ONE}
+    }, Q.ZERO);
+    assertEquals("[[0 2 13/14 -11/35][0 0 3/2 3/20][0 0 0 1][0 0 0 0]]", field.log(a, 4).toString());
+  }
 }

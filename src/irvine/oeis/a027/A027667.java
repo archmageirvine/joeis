@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027666.
+ * A027667 Number of independent subsets of nodes of <code>3^n</code> cube <code>(P_3</code> X ... X <code>P_3)</code>.
  * @author Sean A. Irvine
  */
 public class A027667 implements Sequence {

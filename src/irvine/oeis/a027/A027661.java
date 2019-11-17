@@ -1,0 +1,21 @@
+package irvine.oeis.a027;
+
+import irvine.math.cr.CR;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A027661 Fractional part of decimal expansion of <code>sqrt(n)</code> to 3 places.
+ * @author Sean A. Irvine
+ */
+public class A027661 implements Sequence {
+
+  private static final CR CR1000 = CR.valueOf(1000);
+  private static final Z Z1000 = Z.valueOf(1000);
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    return CR.valueOf(++mN).sqrt().multiply(CR1000).round().mod(Z1000);
+  }
+}

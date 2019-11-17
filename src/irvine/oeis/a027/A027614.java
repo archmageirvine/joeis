@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027614.
+ * A027614 Related to Clebsch-Gordan formulas.
  * @author Sean A. Irvine
  */
 public class A027614 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027617.
+ * A027617 Number of permutations of n elements containing a <code>3-cycle</code>.
  * @author Sean A. Irvine
  */
 public class A027617 implements Sequence {

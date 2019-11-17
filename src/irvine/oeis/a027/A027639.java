@@ -1,0 +1,16 @@
+package irvine.oeis.a027;
+
+import irvine.math.z.Z;
+import irvine.oeis.a005.A005329;
+
+/**
+ * A027639 Order of unitary <code>2^n X 2^n</code> group <code>H_{n,4}</code> acting on Siegel modular forms.
+ * @author Sean A. Irvine
+ */
+public class A027639 extends A005329 {
+
+  @Override
+  public Z next() {
+    return super.next().shiftLeft(mN * mN + 2 * mN + 2);
+  }
+}

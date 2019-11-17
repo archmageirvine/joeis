@@ -1163,3 +1163,4 @@ A027567 Number of distinct (modulo rotation and reflection) n X n panmagic = pan
 A027605 Sum of two cubes in 4 ways involving at least one sum of coprime cubes (first attempt too slow)
 A027613 Degrees of polynomials involved in analysis of a binary-tree valued Markov chain depending on one parameter; each polynomial has a unique root in [ 0,1 ], which is a lower bound for the transition from positive recurrence to null recurrence, insufficient detail
 A027623 a(0) = 1; for n > 0, a(n) = number of rings with n elements
+A027627 Maximal cardinality of 2-distance set in R^n

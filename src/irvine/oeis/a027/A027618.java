@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027618.
+ * A027618 <code>c(i,j)</code> is cost of evaluation of edit distance of two strings with lengths i and j, when you use recursion (every call has a unit cost, other computations are free); sequence gives <code>c(n,n)</code>.
  * @author Sean A. Irvine
  */
 public class A027618 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014962 Numbers n such that n divides <code>s(n)</code>, where <code>s(1)=1, s(k)=s(k-1)+k*25^(k-1)</code>.
+ * A014962 Odd numbers n such that n divides <code>25^n - 1</code>.
  * @author Sean A. Irvine
  */
 public class A014962 implements Sequence {

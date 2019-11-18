@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154286 <code>a(n) = E(k)C(n+k,k) = Euler(k)*Pascal(n+k,k)</code> for <code>k=4</code>.
+ * A154286 <code>a(n) = E(k)*C(n+k,k) = Euler(k)*binomial(n+k,k)</code> for <code>k=4</code>.
  * @author Georg Fischer
  */
 public class A154286 extends GeneratingFunctionSequence {

@@ -11,6 +11,10 @@ import irvine.oeis.Sequence;
  */
 public class A027669 implements Sequence {
 
+  // WARNING: Do not use this to extend the sequence.  It is not guaranteed to find all members
+  // of the sequence.
+
+  private static final long HEURISTIC_MULTIPLIER = 10000;
   private long mN = 2;
 
   private Z gonal(final long n, final long k) {
@@ -21,13 +25,11 @@ public class A027669 implements Sequence {
   private boolean isExistsGonalSum(final long n) {
     Z sum = Z.ZERO;
     final TreeSet<Z> partialSums = new TreeSet<>();
-    // todo ugly heuristic
-    for (long k = 1; k < 100000; ++k) {
+    for (long k = 1; k < mN * HEURISTIC_MULTIPLIER; ++k) {
       final Z g = gonal(n, k);
       while (!partialSums.isEmpty() && partialSums.first().compareTo(g) <= 0) {
-        final Z t = partialSums.pollFirst();
-        if (t.equals(g)) {
-          System.out.println("k was " + k);
+        if (g.equals(partialSums.pollFirst())) {
+          //System.out.println("n=" + mN + " k was " + k);
           return true;
         }
       }
@@ -45,5 +47,4 @@ public class A027669 implements Sequence {
       }
     }
   }
-
 }

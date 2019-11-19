@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007539 <code>a(n) =</code> first n-fold perfect number.
+ * A007539 <code>a(n) =</code> first n-fold perfect (or <code>n-multiperfect)</code> number.
  * @author Sean A. Irvine
  */
 public class A007539 implements Sequence {

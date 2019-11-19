@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020062 Integer part of <code>GAMMA(n+3/10)/GAMMA(3/10)</code>.
+ * A020062 Integer part of <code>Gamma(n+3/10)/Gamma(3/10)</code>.
  * @author Sean A. Irvine
  */
 public class A020062 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184334 Period 6 sequence <code>[ 0, 2, 2, 0, -2, -2, ...]</code> except <code>a(0) = 1</code>.
+ * A184334 Period 6 sequence <code>[0, 2, 2, 0, -2, -2, ...]</code> except <code>a(0) = 1</code>.
  * @author Georg Fischer
  */
 public class A184334 extends GeneratingFunctionSequence {

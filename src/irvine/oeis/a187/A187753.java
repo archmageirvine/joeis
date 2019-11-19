@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187753 Number of different ways to divide an <code>n X 5</code> rectangle into <code>sub-squares</code>, considering only the list of parts.
+ * A187753 Number of different ways to divide an <code>n X 5</code> rectangle into subsquares, considering only the list of parts.
  * @author Georg Fischer
  */
 public class A187753 extends GeneratingFunctionSequence {

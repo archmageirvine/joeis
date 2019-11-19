@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027596 Duplicate of <code>A007213</code>.
+ * A027596 Sequence satisfies <code>T^2(a)=a</code>, where T is defined below.
  * @author Sean A. Irvine
  */
 public class A027596 extends A027595 {

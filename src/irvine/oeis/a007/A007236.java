@@ -40,7 +40,7 @@ public class A007236 implements Sequence {
 
   @Override
   public Z next() {
-    // s = -5 + (R1(x)+R2(x)*(1-x+x^2)^(-1)*sqrt(Q1(x))) / (2*Q3(x)+2*Q2(x)*sqrt(Q1(x)))^(1/2)
+    // s(x) = -5 + (R1(x)+R2(x)*(1-x+x^2)^(-1)*sqrt(Q1(x))) / (2*Q3(x)+2*Q2(x)*sqrt(Q1(x)))^(1/2)
     // a(n) = [x^n] 2*(1-x)/s(x)
     final Polynomial<Q> sq1 = RING.sqrt(Q1, ++mN);
     final Polynomial<Q> s1 = RING.series(RING.multiply(R2, sq1), C1, mN);

@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007236.
+ * A007236 Compressibility of hard-hexagon lattice gas model.
  * @author Sean A. Irvine
  */
 public class A007236 implements Sequence {

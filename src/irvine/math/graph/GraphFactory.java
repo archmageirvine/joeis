@@ -1,5 +1,7 @@
 package irvine.math.graph;
 
+import irvine.math.z.Z;
+
 /**
  * Factory for the creation of graph objects.
  * @author Sean A. Irvine
@@ -139,6 +141,57 @@ public final class GraphFactory {
       for (int u = 0; u < g.order(); ++u) {
         for (int bit = 1; bit < g.order(); bit <<= 1) {
           g.addEdge(u, u ^ bit);
+        }
+      }
+    }
+    return g;
+  }
+
+  private static int[] unpack(final int v, final int n, final int q) {
+    final int[] r = new int[n];
+    for (int k = 0, u = v; k < r.length; ++k, u /= q) {
+      r[k] = u % q;
+    }
+    return r;
+  }
+
+  private static int pack(final int[] v, final int q) {
+    int r = 0;
+    for (int k = v.length - 1; k >= 0; --k) {
+      r *= q;
+      r += v[k];
+    }
+    return r;
+  }
+
+  /**
+   * Construct the Hamming graph of given dimension and complete size.
+   * @param n dimension
+   * @param q complete size
+   * @return <code>Q_n</code>, the hypercube of dimension n
+   */
+  public static Graph hamming(final int n, final int q) {
+    if (q == 2) {
+      return hypercube(n); // special case (faster)
+    }
+    if (n > 31) {
+      throw new UnsupportedOperationException();
+    }
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    final int m = Z.valueOf(q).pow(n).intValueExact();
+    final Graph g = GraphFactory.create(m);
+    if (n > 0) {
+      for (int u = 0; u < g.order(); ++u) {
+        final int[] v = unpack(u, n, q);
+        for (int k = 0; k < v.length; ++k) {
+          final int t = v[k];
+          for (int j = t + 1; j < q; ++j) {
+            v[k] = j;
+            g.addEdge(u, pack(v, q));
+          }
+          v[k] = t;
         }
       }
     }

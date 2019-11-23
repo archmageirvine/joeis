@@ -1,6 +1,7 @@
 package irvine.math;
 
 import java.math.BigInteger;
+import java.util.Arrays;
 import java.util.Random;
 
 import junit.framework.TestCase;
@@ -475,5 +476,14 @@ public class LongUtilsTest extends TestCase {
     assertEquals(42, LongUtils.reverse(24));
     assertEquals(1, LongUtils.reverse(10));
     assertEquals(123456789, LongUtils.reverse(9876543210L));
+  }
+
+  public void testToLongFromString() {
+    assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12,-1")));
+    assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12 -1")));
+    assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("12, -1")));
+    assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("[12,-1]")));
+    assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("(12, -1)")));
+    assertEquals("[12, -1, 42, 0]", Arrays.toString(LongUtils.toLong("{12, -1, 42,  0}")));
   }
 }

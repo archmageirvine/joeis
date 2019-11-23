@@ -304,6 +304,7 @@ public final class LongUtils {
 
   /**
    * Greatest common divisor of three integers.
+   *
    * @param a first number
    * @param b second number
    * @param c third number
@@ -335,7 +336,7 @@ public final class LongUtils {
    */
   public static long[] egcd(final long a, final long b) {
     if (b == 0) {
-      return new long[]{a, 1, 0};
+      return new long[] {a, 1, 0};
     }
     final long[] g = egcd(b, a - a / b * b);
     g[2] = g[1] - a / b * (g[1] = g[2]);
@@ -536,6 +537,7 @@ public final class LongUtils {
    * function is always 42.  Hence a deterministic sequence of random values
    * can be produced if this method is called in the same order in a different
    * execution.
+   *
    * @param v array to fill
    */
   public static void random(final long[] v) {
@@ -548,6 +550,7 @@ public final class LongUtils {
   /**
    * Sum the contents of an arbitrary dimensioned primitive int or Integer
    * array.
+   *
    * @param structure array
    * @return sum of the array
    */
@@ -572,6 +575,7 @@ public final class LongUtils {
 
   /**
    * Maximum of an array of values.
+   *
    * @param values the possible values
    * @return the maximum
    */
@@ -587,6 +591,7 @@ public final class LongUtils {
 
   /**
    * Test if the given value is square free.
+   *
    * @param n value to test
    * @return true if the number is square free
    */
@@ -597,6 +602,7 @@ public final class LongUtils {
 
   /**
    * Step to the next number with the same number of set bits.
+   *
    * @param x current value
    * @return next value
    */
@@ -613,6 +619,7 @@ public final class LongUtils {
 
   /**
    * Return a 64-character string containing the binary value of <code>n</code>.
+   *
    * @param n number
    * @return padded binary form
    */
@@ -623,6 +630,7 @@ public final class LongUtils {
 
   /**
    * Modular inverse.
+   *
    * @param k number
    * @param m modulus
    * @return inverse
@@ -659,6 +667,7 @@ public final class LongUtils {
   /**
    * Return the decimal reverse of a number. For example, reverse 24 is 42.
    * Only for nonnegative.  Might overflow without warning for large inputs.
+   *
    * @param n number to reverse
    * @return reverse
    */
@@ -674,6 +683,7 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
+   *
    * @param a array
    * @param n maximum entry
    * @return the array
@@ -687,6 +697,7 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
+   *
    * @param a array
    * @return the array
    */
@@ -696,6 +707,7 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
+   *
    * @param length length of array
    * @return the array
    */
@@ -703,6 +715,29 @@ public final class LongUtils {
     return identity(new long[length], length);
   }
 
+  /**
+   * Convert a list of integers specified as a string into an array of longs.
+   * The numbers in the string can be space or comma separated.
+   *
+   * @param string string containing numbers
+   * @return long array
+   */
+  public static long[] toLong(final String string) {
+    String s = string;
+    if (s.startsWith("[") || s.startsWith("(") || s.startsWith("{")) {
+      s = s.substring(1);
+    }
+    if (s.endsWith("]") || s.endsWith(")") || s.endsWith("}")) {
+      s = s.substring(0, s.length() - 1);
+    }
+    final String[] parts = s.split("[, ]+");
+    final long[] res = new long[parts.length];
+    for (int k = 0; k < parts.length; ++k) {
+      res[k] = Long.parseLong(parts[k]);
+    }
+    return res;
+  }
 }
+
 
 

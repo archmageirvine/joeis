@@ -92,4 +92,13 @@ public class ZUtilsTest extends TestCase {
   public void testDigitCounts() {
     assertEquals("[2, 3, 3, 1, 2, 1, 1, 1, 0, 1]", Arrays.toString(ZUtils.digitCounts(new Z("123456900212147"))));
   }
+
+  public void testToZFromString() {
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("12,-1")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("12 -1")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("12, -1")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("[12,-1]")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("(12, -1)")));
+    assertEquals("[12, -1, 42, 0]", Arrays.toString(ZUtils.toZ("{12, -1, 42,  0}")));
+  }
 }

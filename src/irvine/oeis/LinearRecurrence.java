@@ -2,6 +2,7 @@ package irvine.oeis;
 
 import java.util.Arrays;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
@@ -64,6 +65,15 @@ public class LinearRecurrence implements Sequence {
    */
   protected LinearRecurrence(final long[] recurrence, final Z[] terms) {
     this(recurrence, terms, EMPTY);
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   */
+  protected LinearRecurrence(final String recurrence, final String terms) {
+    this(LongUtils.toLong(recurrence), ZUtils.toZ(terms), EMPTY);
   }
 
   @Override

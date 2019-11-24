@@ -1,7 +1,9 @@
 package irvine.math.graph;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 
 /**
  * Implementation of common graph functions.
@@ -260,6 +262,9 @@ public abstract class AbstractGraph implements Graph {
 
   @Override
   public int numberOfComponents() {
+    if (order() > 64) {
+      throw new UnsupportedOperationException();
+    }
     int count = 0;
     mVisited = 0;
     for (int k = 0; k < order(); ++k) {
@@ -270,4 +275,50 @@ public abstract class AbstractGraph implements Graph {
     }
     return count;
   }
+
+  private void assignComponentAndSearch(final int[] componentNumber, final int[] componentSize, final int u, final int cn) {
+    componentNumber[u] = cn;
+    ++componentSize[cn];
+    int v = -1;
+    while ((v = nextVertex(u, v)) >= 0) {
+      if (componentNumber[v] == 0) {
+        assignComponentAndSearch(componentNumber, componentSize, v, cn);
+      }
+    }
+  }
+
+  @Override
+  public Collection<Graph> components() {
+    if (isConnected()) {
+      return Collections.singleton(this);
+    }
+    final int[] componentNumber = new int[order()];
+    final int[] componentSize = new int[order() + 1];
+    int cn = 0;
+    for (int k = 0; k < order(); ++k) {
+      if (componentNumber[k] == 0) {
+        assignComponentAndSearch(componentNumber, componentSize, k, ++cn);
+      }
+    }
+    final ArrayList<Graph> components = new ArrayList<>(cn);
+    for (int c = 1; c <= cn; ++c) {
+      final Graph comp = GraphFactory.create(componentSize[c]);
+      for (int k = 0, u = -1; k < componentNumber.length; ++k) {
+        if (componentNumber[k] == c) {
+          ++u;
+          for (int j = k, v = u - 1; j < componentNumber.length; ++j) {
+            if (componentNumber[j] == c) {
+              ++v;
+              if (isAdjacent(k, j)) {
+                comp.addEdge(u, v);
+              }
+            }
+          }
+        }
+      }
+      components.add(comp);
+    }
+    return components;
+  }
+
 }

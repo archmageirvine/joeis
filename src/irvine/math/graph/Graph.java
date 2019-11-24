@@ -119,7 +119,8 @@ public interface Graph {
   Graph copy(final int order);
 
   /**
-   * Return the subgraph of this graph with the specified vertex deleted.
+   * Return the subgraph of this graph with the specified vertex and any
+   * associated edges deleted.
    * @param v vertex to delete
    * @return graph with one vertex removed
    */
@@ -130,6 +131,12 @@ public interface Graph {
    * @return collection of biconnected components
    */
   Collection<Graph> biconnectedComponents();
+
+  /**
+   * Return the components of this graph.
+   * @return collection of components
+   */
+  Collection<Graph> components();
 
   /**
    * Test if the graph is planar.

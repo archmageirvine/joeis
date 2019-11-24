@@ -18,11 +18,15 @@ public class A027683 implements Sequence {
 
   static Graph torus(final int n) {
     final Graph g = GraphFactory.create(n * n);
-    for (int u = 0; u < n; ++u) {
-      for (int v = 0; v < n; ++v) {
-        final int w = v * n;
-        g.addEdge(w + u, w + ((u + 1) % n));
-        g.addEdge(w + u, ((v + 1) % n) * n + u);
+    if (n == 0) {
+      g.addEdge(0, 0);
+    } else {
+      for (int u = 0; u < n; ++u) {
+        for (int v = 0; v < n; ++v) {
+          final int w = v * n;
+          g.addEdge(w + u, w + ((u + 1) % n));
+          g.addEdge(w + u, ((v + 1) % n) * n + u);
+        }
       }
     }
     return g;

@@ -15,7 +15,6 @@ public class A001368 implements Sequence {
   @Override
   public Z next() {
     final String s = IrishGaelic.toIrishGaelic(++mN);
-    //System.err.println(mN + " " + s.replace("\u00E1", "a").replace("\u00F3", "o").replace("\u00ED", "i").replace("\u00E9", "e").replace("\u00FA", "u"));
     return Z.valueOf(s.replace(" ", "").replace("h", "").length());
   }
 }

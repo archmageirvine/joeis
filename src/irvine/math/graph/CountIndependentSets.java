@@ -15,20 +15,22 @@ public final class CountIndependentSets {
 
   private void search(final boolean[] included, final int[] set, final int count, final int current) {
     for (int v = current + 1; v < mGraph.order(); ++v) {
-      int u = -1;
-      boolean ok = true;
-      while ((u = mGraph.nextVertex(v, u)) >= 0 && u < v) {
-        if (included[u]) {
-          ok = false;
-          break;
+      if (!mGraph.isAdjacent(v, v)) {
+        int u = -1;
+        boolean ok = true;
+        while ((u = mGraph.nextVertex(v, u)) >= 0 && u < v) {
+          if (included[u]) {
+            ok = false;
+            break;
+          }
         }
-      }
-      if (ok) {
-        included[v] = true;
-        set[count] = v;
-        ++mCount;
-        search(included, set, count + 1, v);
-        included[v] = false;
+        if (ok) {
+          included[v] = true;
+          set[count] = v;
+          ++mCount;
+          search(included, set, count + 1, v);
+          included[v] = false;
+        }
       }
     }
   }

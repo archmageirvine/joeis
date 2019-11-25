@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027682.
+ * A027682 Number of independent subsets of Hamming graph <code>H(n,4)</code>.
  * @author Sean A. Irvine
  */
 public class A027682 implements Sequence {

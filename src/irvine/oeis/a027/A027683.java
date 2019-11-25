@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027683.
+ * A027683 Number of independent vertex sets of the <code>n X n</code> torus grid graph.
  * @author Sean A. Irvine
  */
 public class A027683 implements Sequence {

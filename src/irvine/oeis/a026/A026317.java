@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026317 <code>|cos(n)| &gt; |sin(n+1)|</code>.
+ * A026317 Nonnegative integers k such that <code>|cos(k)| &gt; |sin(k+1)|</code>.
  * @author Sean A. Irvine
  */
 public class A026317 implements Sequence {

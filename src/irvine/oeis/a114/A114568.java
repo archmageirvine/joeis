@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114568 A vector matrix Markov sequence whose ration approximates the fine structure constant alpha using a single prime 4691 cubic characteristic polynomial.
+ * A114568 <code>a(n) = 4694*a(n-2) + 9380*a(n-3)</code> for <code>n &gt;= 3</code> with <code>a(0) = 0</code> and <code>a(1) = a(2) = 1</code>.
  * @author Sean A. Irvine
  */
 public class A114568 extends LinearRecurrence {

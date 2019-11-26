@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007532 Powerful numbers <code>(2)</code>: a sum of positive powers of its digits.
+ * A007532 Handsome numbers: sum of positive powers of its digits; <code>a(n) = Sum_{i=1..k} d[i]^e[i]</code> where <code>d[1..k]</code> are the decimal digits of <code>a(n), e[i] &gt; 0</code>.
  * @author Sean A. Irvine
  */
 public class A007532 implements Sequence {

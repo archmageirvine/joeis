@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A124925 Interlaced triples: <code>a(3n+1)=1. a(3n+2) = 2n+3. a(3n+3)= A028387(n)</code>.
+ * A124925 Interlaced triples: <code>a(3n+1)=1, a(3n+2) = 2n+3, a(3n+3)= A028387(n)</code>.
  * @author Georg Fischer
  */
 public class A124925 extends GeneratingFunctionSequence {

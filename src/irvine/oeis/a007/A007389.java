@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A007389 7th order maximal independent sets in cycle graph.
+ * A007389 7th-order maximal independent sets in cycle graph.
  * @author Sean A. Irvine
  */
 public class A007389 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003095 <code>a(n) = a(n-1)^2 + 1</code>.
+ * A003095 <code>a(n) = a(n-1)^2 + 1</code> for <code>n &gt;= 1</code>, with <code>a(0) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A003095 implements Sequence {

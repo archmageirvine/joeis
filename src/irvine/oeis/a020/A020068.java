@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020068 Integer part of <code>GAMMA(n+2/9)/GAMMA(2/9)</code>.
+ * A020068 <code>a(n) = floor( Gamma(n+2/9) / Gamma(2/9) )</code>.
  * @author Sean A. Irvine
  */
 public class A020068 implements Sequence {

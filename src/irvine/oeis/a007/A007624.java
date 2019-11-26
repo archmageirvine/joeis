@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007624 Product of proper divisors of <code>n = n^k, k&gt;1</code>.
+ * A007624 Numbers m such that the product of proper divisors of m <code>= m^k, k&gt;1</code>.
  * @author Sean A. Irvine
  */
 public class A007624 implements Sequence {

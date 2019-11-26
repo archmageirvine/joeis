@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014701 Number of multiplications to compute n-th power by the Chandah-sutra method .
+ * A014701 Number of multiplications to compute n-th power by the Chandah-sutra method.
  * @author Sean A. Irvine
  */
 public class A014701 implements Sequence {

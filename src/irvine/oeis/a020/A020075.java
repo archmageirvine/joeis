@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020075 Integer part of <code>GAMMA(n+5/7)/GAMMA(5/7)</code>.
+ * A020075 <code>a(n) = floor( Gamma(n+5/7)/Gamma(5/7) )</code>.
  * @author Sean A. Irvine
  */
 public class A020075 implements Sequence {

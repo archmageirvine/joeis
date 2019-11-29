@@ -15,14 +15,14 @@ public class A027669 implements Sequence {
   // of the sequence.
 
   private static final long HEURISTIC_MULTIPLIER = 10000;
-  private long mN = 2;
+  protected long mN = 2;
 
-  private Z gonal(final long n, final long k) {
+  protected Z gonal(final long n, final long k) {
     final Z kz = Z.valueOf(k);
     return kz.square().subtract(k).multiply(n - 2).divide2().add(k);
   }
 
-  private boolean isExistsGonalSum(final long n) {
+  protected boolean isExistsGonalSum(final long n) {
     Z sum = Z.ZERO;
     final TreeSet<Z> partialSums = new TreeSet<>();
     for (long k = 1; k < mN * HEURISTIC_MULTIPLIER; ++k) {

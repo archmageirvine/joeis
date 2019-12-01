@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006974 Coefficients of Chebyshev polynomials.
+ * A006974 Coefficients of Chebyshev T polynomials: <code>a(n) = A053120(n+8, n), n &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A006974 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001950;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A002251 Start with sequence of nonnegative integers; then swap <code>L(k)</code> and <code>U(k)</code> for all k <code>&gt;= 1</code>, where L <code>= A000201, U = A001950</code> (lower and upper Wythoff sequences).
+ * A002251 Start with the nonnegative integers; then swap <code>L(k)</code> and <code>U(k)</code> for all k <code>&gt;= 1</code>, where L <code>= A000201, U = A001950</code> (lower and upper Wythoff sequences).
  * @author Sean A. Irvine
  */
 public class A002251 implements Sequence {

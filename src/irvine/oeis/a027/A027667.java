@@ -19,39 +19,18 @@ public class A027667 implements Sequence {
     return 3;
   }
 
-  // The graph construction could be made faster, but it does not matter
-  // since the time taken is completely dominated by counting the number
-  // of independents sets.
-
-  private int[] unpack(final int v) {
-    final int[] r = new int[mN];
-    for (int k = 0, u = v; k < r.length; ++k, u /= pathLength()) {
-      r[k] = u % pathLength();
-    }
-    return r;
-  }
-
-  private int pack(final int[] v) {
-    int r = 0;
-    for (int k = v.length - 1; k >= 0; --k) {
-      r *= pathLength();
-      r += v[k];
-    }
-    return r;
-  }
-
   private Graph pathPowerGraph(final int n) {
     final int m = Z.valueOf(pathLength()).pow(n).intValueExact();
     final Graph g = GraphFactory.create(m);
     if (n > 0) {
       for (int u = 0; u < g.order(); ++u) {
-        final int[] v = unpack(u);
+        final int[] v = GraphFactory.unpack(u, mN, pathLength());
         for (int k = 0; k < v.length; ++k) {
           if (v[k] != 0 && v[k] != pathLength() - 1) {
             --v[k];
-            g.addEdge(u, pack(v));
+            g.addEdge(u, GraphFactory.pack(v, pathLength()));
             v[k] += 2;
-            g.addEdge(u, pack(v));
+            g.addEdge(u, GraphFactory.pack(v, pathLength()));
             --v[k];
           }
         }

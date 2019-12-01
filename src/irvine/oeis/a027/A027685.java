@@ -21,27 +21,6 @@ public class A027685 implements Sequence {
     return 4;
   }
 
-  // The graph construction could be made faster, but it does not matter
-  // since the time taken is completely dominated by counting the number
-  // of independents sets.
-
-  private int[] unpack(final int v) {
-    final int[] r = new int[mN];
-    for (int k = 0, u = v; k < r.length; ++k, u /= cycleLength()) {
-      r[k] = u % cycleLength();
-    }
-    return r;
-  }
-
-  private int pack(final int[] v) {
-    int r = 0;
-    for (int k = v.length - 1; k >= 0; --k) {
-      r *= cycleLength();
-      r += v[k];
-    }
-    return r;
-  }
-
   private Graph torusGraph(final int n) {
     final int m = Z.valueOf(cycleLength()).pow(n).intValueExact();
     final Graph g = GraphFactory.create(m);
@@ -49,11 +28,11 @@ public class A027685 implements Sequence {
       g.addEdge(0, 0);
     } else {
       for (int u = 0; u < g.order(); ++u) {
-        final int[] v = unpack(u);
+        final int[] v = GraphFactory.unpack(u, mN, cycleLength());
         for (int k = 0; k < v.length; ++k) {
           final int t = v[k];
           v[k] = (t + 1) % cycleLength();
-          g.addEdge(u, pack(v));
+          g.addEdge(u, GraphFactory.pack(v, cycleLength()));
           v[k] = t;
         }
       }

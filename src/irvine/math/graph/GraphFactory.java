@@ -147,7 +147,14 @@ public final class GraphFactory {
     return g;
   }
 
-  private static int[] unpack(final int v, final int n, final int q) {
+  /**
+   * Unpack a number.
+   * @param v number
+   * @param n base
+   * @param q number of digits
+   * @return unpacked form
+   */
+  public static int[] unpack(final int v, final int n, final int q) {
     final int[] r = new int[n];
     for (int k = 0, u = v; k < r.length; ++k, u /= q) {
       r[k] = u % q;
@@ -155,7 +162,13 @@ public final class GraphFactory {
     return r;
   }
 
-  private static int pack(final int[] v, final int q) {
+  /**
+   * Pack a number.
+   * @param v unpacked form
+   * @param q based
+   * @return packed form
+   */
+  public static int pack(final int[] v, final int q) {
     int r = 0;
     for (int k = v.length - 1; k >= 0; --k) {
       r *= q;

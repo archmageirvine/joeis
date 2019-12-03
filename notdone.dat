@@ -1164,3 +1164,4 @@ A027613 Degrees of polynomials involved in analysis of a binary-tree valued Mark
 A027623 a(0) = 1; for n > 0, a(n) = number of rings with n elements
 A027627 Maximal cardinality of 2-distance set in R^n
 A027673 Number of nonisomorphic prime metrics on n points, insufficient detail
+A027763 Smallest k such that 2^^n is not congruent to 2^^(n-1) mod k, where 2^^n denotes the power tower 2^2^...^2 (in which 2 appears n times), doable but fair amount of effort

@@ -5,10 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027741.
+ * A027743.
  * @author Sean A. Irvine
  */
-public class A027741 implements Sequence {
+public class A027743 implements Sequence {
 
   private int mN = -1;
   private Z mT = Z.ONE;
@@ -18,7 +18,7 @@ public class A027741 implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    mT = mT.multiply(5);
+    mT = mT.multiply(7);
     return Jaguar.factor(mT.subtract(1)).phi().divide(mN);
   }
 }

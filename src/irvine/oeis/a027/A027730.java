@@ -73,7 +73,7 @@ public class A027730 implements Sequence {
   private Graph simplex(final int n) {
     final int order = order(n);
     final Graph g = GraphFactory.create(order);
-    int[] t = new int[dimension() + 1];
+    final int[] t = new int[dimension() + 1];
     t[t.length - 1] = n - 1;
     final Map<String, Integer> coordsToVertex = new HashMap<>();
     for (int u = 0; u < order; ++u, nextCoords(t)) {

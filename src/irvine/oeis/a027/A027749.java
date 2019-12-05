@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027749.
+ * A027749 Take the list 1,2,3,4,... and replace each n with all d <code>&gt; 1</code> that divide <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A027749 implements Sequence {

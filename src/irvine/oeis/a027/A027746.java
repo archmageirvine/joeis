@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027746.
+ * A027746 Irregular triangle in which first row is <code>1, n-th</code> row <code>(n&gt;1)</code> gives prime factors of n with repetition.
  * @author Sean A. Irvine
  */
 public class A027746 implements Sequence {

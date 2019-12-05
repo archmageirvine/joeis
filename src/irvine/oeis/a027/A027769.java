@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027769.
+ * A027769 <code>a(n) = (n+1)*binomial(n+1, 9)</code>.
  * @author Sean A. Irvine
  */
 public class A027769 implements Sequence {

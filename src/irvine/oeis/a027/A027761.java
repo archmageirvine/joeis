@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027761.
+ * A027761 Numerator of <code>sum_{p</code> prime, <code>p-1</code> divides <code>2*n} 1/p</code>.
  * @author Sean A. Irvine
  */
 public class A027761 implements Sequence {

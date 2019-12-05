@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027759.
+ * A027759 Numerator of Sum <code>1/p; p-1 | n</code>.
  * @author Sean A. Irvine
  */
 public class A027759 implements Sequence {

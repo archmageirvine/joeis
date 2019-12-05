@@ -1165,3 +1165,5 @@ A027623 a(0) = 1; for n > 0, a(n) = number of rings with n elements
 A027627 Maximal cardinality of 2-distance set in R^n
 A027673 Number of nonisomorphic prime metrics on n points, insufficient detail
 A027763 Smallest k such that 2^^n is not congruent to 2^^(n-1) mod k, where 2^^n denotes the power tower 2^2^...^2 (in which 2 appears n times), doable but fair amount of effort
+A027824 If there were a unimodular 25-dimensional lattice with minimal norm 3, it would have this as its theta series. Unfortunately, no such lattice exists
+A027825 If there were a unimodular 25-dimensional lattice with minimal norm 3, it would have this as the theta series of its shadow. Unfortunately, no such lattice exists.

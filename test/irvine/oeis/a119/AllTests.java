@@ -32,6 +32,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A119330Test.class);
     suite.addTestSuite(A119332Test.class);
     suite.addTestSuite(A119336Test.class);
+    suite.addTestSuite(A119370Test.class);
+    suite.addTestSuite(A119371Test.class);
+    suite.addTestSuite(A119372Test.class);
+    suite.addTestSuite(A119394Test.class);
+    suite.addTestSuite(A119399Test.class);
+    suite.addTestSuite(A119400Test.class);
     suite.addTestSuite(A119407Test.class);
     suite.addTestSuite(A119412Test.class);
     suite.addTestSuite(A119413Test.class);

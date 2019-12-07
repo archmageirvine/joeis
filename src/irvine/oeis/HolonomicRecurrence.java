@@ -89,7 +89,7 @@ public class HolonomicRecurrence implements Sequence {
     mPolyList = new ArrayList<>(16);
     if (start <= 1) { // linear case, only a vector of the form "[0,1,2,...]"
       final String[] polys = matrix.substring(start, behind).split("\\s*,\\s*");
-      for (int k = 0; k < polys.length; k++) {
+      for (int k = 0; k < polys.length; ++k) {
         if (sDebug >= 1) {
           System.out.println("polys[" + k + "]=" + polys[k]);
         }
@@ -97,7 +97,7 @@ public class HolonomicRecurrence implements Sequence {
       } // for k
     } else { // matrix, holonomic case
       final String[] polys = matrix.substring(start, behind).split("]\\s*,\\s*\\[");
-      for (int k = 0; k < polys.length; k++) {
+      for (int k = 0; k < polys.length; ++k) {
         if (sDebug >= 1) {
           System.out.println("polys[" + k + "]=" + polys[k]);
         }
@@ -137,14 +137,14 @@ public class HolonomicRecurrence implements Sequence {
    */
   @Override
   public Z next() {
-    Z result;
-    mN++;
+    final Z result;
+    ++mN;
     if (mN - mOffset < mInitTerms.length) {
       result = mInitTerms[mN - mOffset];
     } else {
       int nd = mN - mNDist;
       mNdPowers[1] = Z.valueOf(nd);
-      for (int m = 2; m < mMaxDegree; m++) { // fill powers of mN
+      for (int m = 2; m < mMaxDegree; ++m) { // fill powers of mN
         mNdPowers[m] = mNdPowers[m - 1].multiply(nd);
       } // for powers of mN
       int k = mPolyList.size() - 1;
@@ -177,7 +177,7 @@ public class HolonomicRecurrence implements Sequence {
       } // while k - coefficients of the recurrence
       // pvals[0..mOrder] now contain the coefficients of the recurrence equation
       Z sum = pvals[0]; // the constant term (without a(k)) in the recurrence, mostly ZERO
-      for (k = 1; k <= mOrder; k++) { // sum all previous elements of the recurrence
+      for (k = 1; k <= mOrder; ++k) { // sum all previous elements of the recurrence
         if (sDebug >= 1) {
           System.out.println("nd=" + nd + ", k=" + k);
           System.out.println("    mBuffer[" + ((mN - mOrder - 1 + k) % mOrder) + "]="

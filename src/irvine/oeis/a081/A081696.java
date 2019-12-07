@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081696 Expansion of 1/(x + sqrt(1-4x)).
+ * A081696 Expansion of <code>1/(x + sqrt(1-4x))</code>.
  * @author Georg Fischer
  */
 public class A081696 extends HolonomicRecurrence {

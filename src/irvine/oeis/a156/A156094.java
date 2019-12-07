@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156094 5 F(2n) (F(2n) - 1) + 1 where F(n) denotes the n-th Fibonacci number.
+ * A156094 <code>5 F(2n) (F(2n) - 1) + 1</code> where <code>F(n)</code> denotes the n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A156094 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110170 First differences of the central Delannoy numbers (A001850).
+ * A110170 First differences of the central Delannoy numbers <code>(A001850)</code>.
  * @author Georg Fischer
  */
 public class A110170 extends HolonomicRecurrence {

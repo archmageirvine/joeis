@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138415 Binomial transform of A000957.
+ * A138415 Binomial transform of <code>A000957</code>.
  * @author Georg Fischer
  */
 public class A138415 extends HolonomicRecurrence {

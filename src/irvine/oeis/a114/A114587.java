@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114587 Number of peaks at odd levels in all hill-free Dyck paths of semilength n+3 (a hill in a Dyck path is a peak at level 1).
+ * A114587 Number of peaks at odd levels in all hill-free Dyck paths of semilength <code>n+3 (a</code> hill in a Dyck path is a peak at level <code>1)</code>.
  * @author Georg Fischer
  */
 public class A114587 extends HolonomicRecurrence {

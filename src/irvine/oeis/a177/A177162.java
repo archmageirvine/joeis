@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177162 Sequence defined by the recurrence formula a(n+1) = sum(a(p)*a(n-p)+k,p=0..n)+l for n>=1, with here a(0)=1, a(1)=6, k=0 and l=-1.
+ * A177162 Sequence defined by the recurrence formula <code>a(n+1) = sum(a(p)*a(n-p)+k,p=0..n)+l</code> for <code>n&gt;=1</code>, with here <code>a(0)=1, a(1)=6, k=0</code> and <code>l=-1</code>.
  * @author Georg Fischer
  */
 public class A177162 extends HolonomicRecurrence {

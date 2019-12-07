@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129171 Sum of the heights of the peaks in all skew Dyck paths of semilength n.
+ * A129171 Sum of the heights of the peaks in all skew Dyck paths of semilength <code>n</code>.
  * @author Georg Fischer
  */
 public class A129171 extends HolonomicRecurrence {

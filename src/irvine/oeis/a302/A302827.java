@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A302827 a(n) = (n!)^2 * Sum_{k=1..n-1} 1/(k*(n-k))^2.
+ * A302827 <code>a(n) = (n!)^2 * Sum_{k=1..n-1} 1/(k*(n-k))^2</code>.
  * @author Georg Fischer
  */
 public class A302827 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099021 Main diagonal of array in A099020.
+ * A099021 Main diagonal of array in <code>A099020</code>.
  * @author Georg Fischer
  */
 public class A099021 extends HolonomicRecurrence {

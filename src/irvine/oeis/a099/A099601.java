@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099601 Quotient of de Bruijn sums S(4,n)/S(2,n).
+ * A099601 Quotient of de Bruijn sums <code>S(4,n)/S(2,n)</code>.
  * @author Georg Fischer
  */
 public class A099601 extends HolonomicRecurrence {

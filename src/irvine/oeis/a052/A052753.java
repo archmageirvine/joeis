@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052753 Expansion of e.g.f.: log(1-x)^4.
+ * A052753 Expansion of e.g.f.: <code>log(1-x)^4</code>.
  * @author Georg Fischer
  */
 public class A052753 extends HolonomicRecurrence {

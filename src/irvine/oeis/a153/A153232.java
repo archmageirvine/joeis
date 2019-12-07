@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A153232 a(n) = Sum((-1)^(n-i)*binomial(3i,i)*binomial(n+2i,3i)*2^i/(2i+1),i=0..n).
+ * A153232 <code>a(n) = Sum((-1)^(n-i)*binomial(3i,i)*binomial(n+2i,3i)*2^i/(2i+1),i=0..n)</code>.
  * @author Georg Fischer
  */
 public class A153232 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A259904 n*a(n+1) = (2*n^2+2n-1)*a(n)+(n+1)*a(n-1); a(0)=0, a(1)=1.
+ * A259904 <code>n*a(n+1) = (2*n^2+2n-1)*a(n)+(n+1)*a(n-1); a(0)=0, a(1)=1</code>.
  * @author Georg Fischer
  */
 public class A259904 extends HolonomicRecurrence {

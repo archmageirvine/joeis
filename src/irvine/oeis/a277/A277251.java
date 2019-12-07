@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277251 Exponential convolution of Lucas (A000032) and Catalan (A000108) numbers.
+ * A277251 Exponential convolution of Lucas <code>(A000032)</code> and Catalan <code>(A000108)</code> numbers.
  * @author Georg Fischer
  */
 public class A277251 extends HolonomicRecurrence {

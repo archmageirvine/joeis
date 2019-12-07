@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228338 Third diagonal of Catalan difference table (A059346).
+ * A228338 Third diagonal of Catalan difference table <code>(A059346)</code>.
  * @author Georg Fischer
  */
 public class A228338 extends HolonomicRecurrence {

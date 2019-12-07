@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102290 Total number of even lists in all sets of lists, cf. A000262.
+ * A102290 Total number of even lists in all sets of lists, cf. <code>A000262</code>.
  * @author Georg Fischer
  */
 public class A102290 extends HolonomicRecurrence {

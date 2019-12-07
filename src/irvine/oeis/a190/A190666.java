@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190666 Number of walks from (0,0) to (n+3,n) which take steps from {E, N, NE}.
+ * A190666 Number of walks from <code>(0,0)</code> to <code>(n+3,n)</code> which take steps from <code>{E</code>, N, NE}.
  * @author Georg Fischer
  */
 public class A190666 extends HolonomicRecurrence {

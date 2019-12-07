@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152548 Sum of squared terms in rows of triangle A152547: a(n) = Sum_{k=0..C(n,[n/2])-1} A152547(n,k)^2.
+ * A152548 Sum of squared terms in rows of triangle <code>A152547: a(n) = Sum_{k=0..C(n,[n/2])-1} A152547(n,k)^2</code>.
  * @author Georg Fischer
  */
 public class A152548 extends HolonomicRecurrence {

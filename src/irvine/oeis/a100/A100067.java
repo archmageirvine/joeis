@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100067 a(n) = Sum_{k=0..floor(n/2)} binomial(n,k)*2^(n-2*k).
+ * A100067 <code>a(n) = Sum_{k=0..floor(n/2)} binomial(n,k)*2^(n-2*k)</code>.
  * @author Georg Fischer
  */
 public class A100067 extends HolonomicRecurrence {

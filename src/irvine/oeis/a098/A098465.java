@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098465 Expansion of (sqrt(1+3*x)-sqrt(1-5*x))/(4*x*sqrt(1-x)).
+ * A098465 Expansion of <code>(sqrt(1+3*x)-sqrt(1-5*x))/(4*x*sqrt(1-x))</code>.
  * @author Georg Fischer
  */
 public class A098465 extends HolonomicRecurrence {

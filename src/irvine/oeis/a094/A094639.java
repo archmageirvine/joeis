@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094639 Partial sums of squares of Catalan numbers (A000108).
+ * A094639 Partial sums of squares of Catalan numbers <code>(A000108)</code>.
  * @author Georg Fischer
  */
 public class A094639 extends HolonomicRecurrence {

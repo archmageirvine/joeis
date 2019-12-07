@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122898 Expansion of (sqrt(21*x^2 - 10*x + 1) + 7*x - 1) / (2*x*(1 - 7*x)).
+ * A122898 Expansion of <code>(sqrt(21*x^2 - 10*x + 1) + 7*x - 1) / (2*x*(1 - 7*x))</code>.
  * @author Georg Fischer
  */
 public class A122898 extends HolonomicRecurrence {

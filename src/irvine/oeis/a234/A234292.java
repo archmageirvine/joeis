@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A234292 E.g.f. satisfies: A(x) = 1 + A(x)^4 * Integral 1/A(x) dx.
+ * A234292 E.g.f. satisfies: <code>A(x) = 1 + A(x)^4 *</code> Integral <code>1/A(x)</code> dx.
  * @author Georg Fischer
  */
 public class A234292 extends HolonomicRecurrence {

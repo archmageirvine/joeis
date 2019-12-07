@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128088 a(n) = Sum_{k=0..n} A000108(k)*A001263(n+1,k+1), where A000108 is the Catalan numbers and A001263 is the Narayana triangle.
+ * A128088 <code>a(n) = Sum_{k=0..n} A000108(k)*A001263(n+1,k+1)</code>, where <code>A000108</code> is the Catalan numbers and <code>A001263</code> is the Narayana triangle.
  * @author Georg Fischer
  */
 public class A128088 extends HolonomicRecurrence {

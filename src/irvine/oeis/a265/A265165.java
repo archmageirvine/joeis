@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A265165 a(n) = sum of the n-th column of the array A265163(n,k). See Comments for more details.
+ * A265165 <code>a(n) =</code> sum of the n-th column of the array <code>A265163(n,k)</code>. See Comments for more details.
  * @author Georg Fischer
  */
 public class A265165 extends HolonomicRecurrence {

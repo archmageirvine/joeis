@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052701 a(0) = 0; for n >= 1, a(n) = 2^(n-1)*C(n-1), where C(n) = A000108(n) Catalan numbers, n>0.
+ * A052701 <code>a(0) = 0</code>; for <code>n &gt;= 1, a(n) = 2^(n-1)*C(n-1)</code>, where <code>C(n) = A000108(n)</code> Catalan numbers, <code>n&gt;0</code>.
  * @author Georg Fischer
  */
 public class A052701 extends HolonomicRecurrence {

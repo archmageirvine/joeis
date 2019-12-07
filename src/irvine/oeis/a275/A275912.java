@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275912 G.f. is square root of g.f. for A239112.
+ * A275912 G.f. is square root of g.f. for <code>A239112</code>.
  * @author Georg Fischer
  */
 public class A275912 extends HolonomicRecurrence {

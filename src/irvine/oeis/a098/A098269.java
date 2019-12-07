@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098269 a(n) = 2^n*P_n(4), 2^n times the Legendre polynomial of order n at 4.
+ * A098269 <code>a(n) = 2^n*P_n(4), 2^n</code> times the Legendre polynomial of order n at 4.
  * @author Georg Fischer
  */
 public class A098269 extends HolonomicRecurrence {

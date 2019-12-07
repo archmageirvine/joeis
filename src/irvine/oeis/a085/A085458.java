@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085458 a(0)=1, for n>0: a(n)=4 Sum(C(2i+1,i)C(n-1,n-1-i)(-1)^(n-1-i)2^i,(i=0,..,n-1)).
+ * A085458 <code>a(0)=1</code>, for <code>n&gt;0: a(n)=4 Sum(C(2i+1,i)C(n-1,n-1-i)(-1)^(n-1-i)2^i,(i=0,..,n-1))</code>.
  * @author Georg Fischer
  */
 public class A085458 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A195660 Number of ways to place 11n nonattacking kings on a vertical cylinder 22 X 2n.
+ * A195660 Number of ways to place <code>11n</code> nonattacking kings on a vertical cylinder <code>22 X 2n</code>.
  * @author Georg Fischer
  */
 public class A195660 extends HolonomicRecurrence {

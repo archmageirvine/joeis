@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240599 Expansion of A(x) = x*B'(x)*(B(x)-x)/B(x)^2 where B(x)/x is g.f. of A027307.
+ * A240599 Expansion of <code>A(x) = x*B'(x)*(B(x)-x)/B(x)^2</code> where <code>B(x)/x</code> is g.f. of <code>A027307</code>.
  * @author Georg Fischer
  */
 public class A240599 extends HolonomicRecurrence {

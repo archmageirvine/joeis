@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A256939 Expansion of g.f.: (1-4*z-sqrt(1-8*z+12*z^2+8*z^3-4*z^4))/(2*z^2(1-z)).
+ * A256939 Expansion of g.f.: <code>(1-4*z-sqrt(1-8*z+12*z^2+8*z^3-4*z^4))/(2*z^2(1-z))</code>.
  * @author Georg Fischer
  */
 public class A256939 extends HolonomicRecurrence {

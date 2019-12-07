@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A062992 Row sums of unsigned triangle A062991.
+ * A062992 Row sums of unsigned triangle <code>A062991</code>.
  * @author Georg Fischer
  */
 public class A062992 extends HolonomicRecurrence {

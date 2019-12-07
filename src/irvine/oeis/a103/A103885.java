@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103885 a(n) = Sum_{i=1..2n} 2^i * C(n,i) * C(2n-1,i-1).
+ * A103885 <code>a(n) = Sum_{i=1..2n} 2^i * C(n,i) * C(2n-1,i-1)</code>.
  * @author Georg Fischer
  */
 public class A103885 extends HolonomicRecurrence {

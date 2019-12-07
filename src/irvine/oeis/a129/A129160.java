@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129160 Sum of the semi-abscissae of the first returns to the axis over all skew Dyck paths of semilength n.
+ * A129160 Sum of the semi-abscissae of the first returns to the axis over all skew Dyck paths of semilength <code>n</code>.
  * @author Georg Fischer
  */
 public class A129160 extends HolonomicRecurrence {

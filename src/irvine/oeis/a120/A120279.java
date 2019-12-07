@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120279 a(n) = Sum[Sum[(i+j)!/i!/j!,{i,1,j}],{j,1,n}].
+ * A120279 <code>a(n) = Sum[Sum[(i+j)!/i!/j!,{i,1,j}],{j,1,n}]</code>.
  * @author Georg Fischer
  */
 public class A120279 extends HolonomicRecurrence {

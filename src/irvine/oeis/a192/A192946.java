@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192946 G.f. satisfies: A(x) = 1 + x*Sum_{n>=0} (A(x)^3 - 1)^n.
+ * A192946 G.f. satisfies: <code>A(x) = 1 + x*Sum_{n&gt;=0} (A(x)^3 - 1)^n</code>.
  * @author Georg Fischer
  */
 public class A192946 extends HolonomicRecurrence {

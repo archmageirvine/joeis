@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213684 Logarithmic derivative of A001002.
+ * A213684 Logarithmic derivative of <code>A001002</code>.
  * @author Georg Fischer
  */
 public class A213684 extends HolonomicRecurrence {

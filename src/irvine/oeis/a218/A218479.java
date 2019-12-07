@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218479 Number of 3n-length 9-ary words, either empty or beginning with the first letter of the alphabet, that can be built by repeatedly inserting triples of identical letters into the initially empty word.
+ * A218479 Number of <code>3n-length 9-ary</code> words, either empty or beginning with the first letter of the alphabet, that can be built by repeatedly inserting triples of identical letters into the initially empty word.
  * @author Georg Fischer
  */
 public class A218479 extends HolonomicRecurrence {

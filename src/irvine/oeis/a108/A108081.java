@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108081 a(n) = Sum_{i=0..n} binomial(2*n-i, n+i).
+ * A108081 <code>a(n) = Sum_{i=0..n} binomial(2*n-i, n+i)</code>.
  * @author Georg Fischer
  */
 public class A108081 extends HolonomicRecurrence {

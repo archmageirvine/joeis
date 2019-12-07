@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A071009 Number of solutions (x,y,z,u,v,w) to x+y+z = u+v+w, 0<=x,y,z,u,v,w<=n-1, x>=y>=z, u>=v>=w.
+ * A071009 Number of solutions <code>(x,y,z,u,v,w)</code> to <code>x+y+z = u+v+w, 0&lt;=x,y,z,u,v,w&lt;=n-1, x&gt;=y&gt;=z, u&gt;=v&gt;=w</code>.
  * @author Georg Fischer
  */
 public class A071009 extends HolonomicRecurrence {

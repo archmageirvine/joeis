@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A231616 G.f. satisfies: A(x) = (1 - 3*x*A(x))^2 * (4*A(x) - 3).
+ * A231616 G.f. satisfies: <code>A(x) = (1 - 3*x*A(x))^2 * (4*A(x) - 3)</code>.
  * @author Georg Fischer
  */
 public class A231616 extends HolonomicRecurrence {

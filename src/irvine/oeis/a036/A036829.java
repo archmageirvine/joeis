@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036829 Sum(C(3*k,k)*C(3*n-3*k-2,n-k-1),k=0..n-1).
+ * A036829 <code>Sum(C(3*k,k)*C(3*n-3*k-2,n-k-1),k=0..n-1)</code>.
  * @author Georg Fischer
  */
 public class A036829 extends HolonomicRecurrence {

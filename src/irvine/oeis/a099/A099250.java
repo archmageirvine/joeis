@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099250 Bisection of Motzkin numbers A001006.
+ * A099250 Bisection of Motzkin numbers <code>A001006</code>.
  * @author Georg Fischer
  */
 public class A099250 extends HolonomicRecurrence {

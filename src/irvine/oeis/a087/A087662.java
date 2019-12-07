@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087662 Values of a certain hypergeometric function. Not known to be always integer-valued.
+ * A087662 Values of a certain hypergeometric function. Not known to be always <code>integer-valued</code>.
  * @author Georg Fischer
  */
 public class A087662 extends HolonomicRecurrence {

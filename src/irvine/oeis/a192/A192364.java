@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192364 Number of lattice paths from (0,0) to (n,n) using steps (0,1),(0,2),(1,0),(2,0),(1,1).
+ * A192364 Number of lattice paths from <code>(0,0)</code> to <code>(n,n)</code> using steps <code>(0,1),(0,2),(1,0),(2,0),(1,1)</code>.
  * @author Georg Fischer
  */
 public class A192364 extends HolonomicRecurrence {

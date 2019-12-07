@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188681 a(n) = binomial(3n,n)^2/(2n+1).
+ * A188681 <code>a(n) = binomial(3n,n)^2/(2n+1)</code>.
  * @author Georg Fischer
  */
 public class A188681 extends HolonomicRecurrence {

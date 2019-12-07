@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125305 Number of 132-segmented permutations of length n.
+ * A125305 Number of 132-segmented permutations of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A125305 extends HolonomicRecurrence {

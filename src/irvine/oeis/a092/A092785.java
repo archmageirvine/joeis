@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092785 a(n) = sum(sum(binomial(j-n-1,m),m=0..n),j=0..n).
+ * A092785 <code>a(n) = sum(sum(binomial(j-n-1,m),m=0..n),j=0..n)</code>.
  * @author Georg Fischer
  */
 public class A092785 extends HolonomicRecurrence {

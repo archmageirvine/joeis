@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138552 Returning walks of length 2n on the upper half of the square lattice, distinct under reflections about the y-axis.
+ * A138552 Returning walks of length <code>2n</code> on the upper half of the square lattice, distinct under reflections about the <code>y-axis</code>.
  * @author Georg Fischer
  */
 public class A138552 extends HolonomicRecurrence {

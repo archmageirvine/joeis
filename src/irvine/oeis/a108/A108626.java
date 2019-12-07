@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108626 Antidiagonal sums of square array A108625, in which row n equals the crystal ball sequence for A_n lattice.
+ * A108626 Antidiagonal sums of square array <code>A108625</code>, in which row n equals the crystal ball sequence for <code>A_n</code> lattice.
  * @author Georg Fischer
  */
 public class A108626 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115330 E.g.f: exp(x/(1-4*x))/sqrt(1-16*x^2).
+ * A115330 E.g.f: <code>exp(x/(1-4*x))/sqrt(1-16*x^2)</code>.
  * @author Georg Fischer
  */
 public class A115330 extends HolonomicRecurrence {

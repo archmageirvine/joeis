@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181197 Number of 3 X n matrices containing a permutation of 1..3*n in increasing order rowwise, columnwise and (downwards) antidiagonally.
+ * A181197 Number of <code>3 X n</code> matrices containing a permutation of <code>1..3*n</code> in increasing order rowwise, columnwise and (downwards) antidiagonally.
  * @author Georg Fischer
  */
 public class A181197 extends HolonomicRecurrence {

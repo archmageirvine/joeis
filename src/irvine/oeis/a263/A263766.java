@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263766 a(n) = Product_{k=1..n} (k^2 - 2).
+ * A263766 <code>a(n) = Product_{k=1..n} (k^2 - 2)</code>.
  * @author Georg Fischer
  */
 public class A263766 extends HolonomicRecurrence {

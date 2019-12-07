@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110236 Number of (1,0) steps in all peakless Motzkin paths of length n (can be easily translated into RNA secondary structure terminology).
+ * A110236 Number of <code>(1,0)</code> steps in all peakless Motzkin paths of length <code>n</code> (can be easily translated into RNA secondary structure terminology).
  * @author Georg Fischer
  */
 public class A110236 extends HolonomicRecurrence {

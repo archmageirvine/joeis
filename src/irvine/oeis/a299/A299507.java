@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A299507 a(n) = (-1)^n*hypergeom([-n, n], [1], 4).
+ * A299507 <code>a(n) = (-1)^n*hypergeom([-n, n], [1], 4)</code>.
  * @author Georg Fischer
  */
 public class A299507 extends HolonomicRecurrence {

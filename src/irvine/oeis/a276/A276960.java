@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276960 a(n) = A000262(n)^2.
+ * A276960 <code>a(n) = A000262(n)^2</code>.
  * @author Georg Fischer
  */
 public class A276960 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212403 Number of binary arrays of length 2*n+1 with no more than n ones in any length 2n subsequence (=50% duty cycle).
+ * A212403 Number of binary arrays of length <code>2*n+1</code> with no more than n ones in any length <code>2n</code> subsequence <code>(=50%</code> duty cycle).
  * @author Georg Fischer
  */
 public class A212403 extends HolonomicRecurrence {

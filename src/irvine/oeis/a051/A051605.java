@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051605 a(n) = (3*n+5)!!!/5!!!.
+ * A051605 <code>a(n) = (3*n+5)!!!/5!!!</code>.
  * @author Georg Fischer
  */
 public class A051605 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003319;
 
 /**
- * A027838.
+ * A027838 Number of subgroups of index n in fundamental group of a certain fiber space.
  * @author Sean A. Irvine
  */
 public class A027838 implements Sequence {

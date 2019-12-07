@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081671 Expansion of e.g.f. exp(4x) * I_0(2x).
+ * A081671 Expansion of e.g.f. <code>exp(4x) * I_0(2x)</code>.
  * @author Georg Fischer
  */
 public class A081671 extends HolonomicRecurrence {

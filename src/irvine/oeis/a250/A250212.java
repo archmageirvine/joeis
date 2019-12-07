@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A250212 Second partial sums of seventh powers (A001015).
+ * A250212 Second partial sums of seventh powers <code>(A001015)</code>.
  * @author Georg Fischer
  */
 public class A250212 extends HolonomicRecurrence {

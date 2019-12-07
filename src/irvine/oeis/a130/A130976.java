@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130976 G.f.: 8/(3 + 5*sqrt(1-16*x)).
+ * A130976 G.f.: <code>8/(3 + 5*sqrt(1-16*x))</code>.
  * @author Georg Fischer
  */
 public class A130976 extends HolonomicRecurrence {

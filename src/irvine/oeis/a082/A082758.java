@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082758 Sum of the squares of the trinomial coefficients (A027907).
+ * A082758 Sum of the squares of the trinomial coefficients <code>(A027907)</code>.
  * @author Georg Fischer
  */
 public class A082758 extends HolonomicRecurrence {

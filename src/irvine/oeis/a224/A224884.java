@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224884 Expansion of x / Series_Reversion(x*sqrt(1 + 4*x)).
+ * A224884 Expansion of <code>x / Series_Reversion(x*sqrt(1 + 4*x))</code>.
  * @author Georg Fischer
  */
 public class A224884 extends HolonomicRecurrence {

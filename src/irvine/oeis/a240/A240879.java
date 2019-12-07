@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240879 Self-convolution of Sum(binomial(2*n, i), i=0..n).
+ * A240879 Self-convolution of <code>Sum(binomial(2*n, i), i=0..n)</code>.
  * @author Georg Fischer
  */
 public class A240879 extends HolonomicRecurrence {

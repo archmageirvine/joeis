@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244650 G.f. A(x) satisfies: Sum_{k=0..n} [x^k] A(x)^n = binomial(5*n,2*n).
+ * A244650 G.f. <code>A(x)</code> satisfies: <code>Sum_{k=0..n} [x^k] A(x)^n = binomial(5*n,2*n)</code>.
  * @author Georg Fischer
  */
 public class A244650 extends HolonomicRecurrence {

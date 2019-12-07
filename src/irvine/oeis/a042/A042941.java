@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A042941 Convolution of Catalan numbers A000108 with A038845.
+ * A042941 Convolution of Catalan numbers <code>A000108</code> with <code>A038845</code>.
  * @author Georg Fischer
  */
 public class A042941 extends HolonomicRecurrence {

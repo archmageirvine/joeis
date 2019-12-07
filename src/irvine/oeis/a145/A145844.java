@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145844 Number of permutations of length 2n which are invariant under the reverse-complement map and have no decreasing subsequences of length 5.
+ * A145844 Number of permutations of length <code>2n</code> which are invariant under the reverse-complement map and have no decreasing subsequences of length 5.
  * @author Georg Fischer
  */
 public class A145844 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A027837.
+ * A027837 Number of subgroups of index n in free group of rank 3.
  * @author Sean A. Irvine
  */
 public class A027837 extends MemorySequence {

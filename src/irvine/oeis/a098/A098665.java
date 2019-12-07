@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098665 Sum(k=0..n, binomial(n,k) * binomial(n+1,k+1) * 4^k).
+ * A098665 <code>Sum(k=0..n, binomial(n,k) * binomial(n+1,k+1) * 4^k)</code>.
  * @author Georg Fischer
  */
 public class A098665 extends HolonomicRecurrence {

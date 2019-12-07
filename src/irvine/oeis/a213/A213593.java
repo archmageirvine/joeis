@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A213593 Stirling transform of the first kind of the Lucas numbers A000032.
+ * A213593 Stirling transform of the first kind of the Lucas numbers <code>A000032</code>.
  * @author Georg Fischer
  */
 public class A213593 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A196148 Antidiagonal sums of square array A111910.
+ * A196148 Antidiagonal sums of square array <code>A111910</code>.
  * @author Georg Fischer
  */
 public class A196148 extends HolonomicRecurrence {

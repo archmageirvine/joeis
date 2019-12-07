@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097331 Expansion of 1 + 2x/(1 + sqrt(1 - 4x^2)).
+ * A097331 Expansion of <code>1 + 2x/(1 + sqrt(1 - 4x^2))</code>.
  * @author Georg Fischer
  */
 public class A097331 extends HolonomicRecurrence {

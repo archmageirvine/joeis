@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186375 a(n) equals the sum of the squares of the expansion coefficients for (x + y + 2*z)^n.
+ * A186375 <code>a(n)</code> equals the sum of the squares of the expansion coefficients for <code>(x + y + 2*z)^n</code>.
  * @author Georg Fischer
  */
 public class A186375 extends HolonomicRecurrence {

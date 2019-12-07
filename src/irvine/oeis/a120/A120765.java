@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120765 E.g.f.: -exp(-x)*log(1-2*x)/2.
+ * A120765 E.g.f.: <code>-exp(-x)*log(1-2*x)/2</code>.
  * @author Georg Fischer
  */
 public class A120765 extends HolonomicRecurrence {

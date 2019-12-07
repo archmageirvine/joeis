@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228331 Let h(m) denote the sequence whose n-th term is Sum__{k=0..n} (k+1)^m*T(n,k)^2, where T(n,k) is the Catalan triangle A039598. This is h(5).
+ * A228331 Let <code>h(m)</code> denote the sequence whose n-th term is <code>Sum__{k=0..n} (k+1)^m*T(n,k)^2</code>, where <code>T(n,k)</code> is the Catalan triangle <code>A039598</code>. This is <code>h(5)</code>.
  * @author Georg Fischer
  */
 public class A228331 extends HolonomicRecurrence {

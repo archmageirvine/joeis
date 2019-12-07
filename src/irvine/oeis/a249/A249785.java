@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A249785 E.g.f. A(x) satisfies: (A(x)^3 - 6*x)^2 = (2 - A(x)^2)^3.
+ * A249785 E.g.f. <code>A(x)</code> satisfies: <code>(A(x)^3 - 6*x)^2 = (2 - A(x)^2)^3</code>.
  * @author Georg Fischer
  */
 public class A249785 extends HolonomicRecurrence {

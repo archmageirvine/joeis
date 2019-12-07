@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217284 a(n) = Sum_{k=0..n} (n!/k!)^3.
+ * A217284 <code>a(n) = Sum_{k=0..n} (n!/k!)^3</code>.
  * @author Georg Fischer
  */
 public class A217284 extends HolonomicRecurrence {

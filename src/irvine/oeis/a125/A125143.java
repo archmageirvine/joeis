@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125143 Almkvist-Zudilin numbers: Sum_{k=0..n} (-1)^(n-k) * ((3^(n-3*k) * (3*k)!) / (k!)^3) * binomial(n,3*k) * binomial(n+k,k).
+ * A125143 Almkvist-Zudilin numbers: <code>Sum_{k=0..n} (-1)^(n-k) * ((3^(n-3*k) * (3*k)!) / (k!)^3) * binomial(n,3*k) * binomial(n+k,k)</code>.
  * @author Georg Fischer
  */
 public class A125143 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059435 Number of lattice paths in plane starting at (0,0) and ending at (n,n) with steps from {(i,j):i+j>0,i,j >= 0} that never go below the line y=x.
+ * A059435 Number of lattice paths in plane starting at <code>(0,0)</code> and ending at <code>(n,n)</code> with steps from <code>{(i,j):i+j&gt;0,i,j &gt;= 0}</code> that never go below the line <code>y=x</code>.
  * @author Georg Fischer
  */
 public class A059435 extends HolonomicRecurrence {

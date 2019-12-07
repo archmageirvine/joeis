@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263687 b(n) in (sqrt(2))_n = b(n) + c(n)*sqrt(2), where (x)_n is the Pochhammer symbol, b(n) and c(n) are integers.
+ * A263687 <code>b(n)</code> in <code>(sqrt(2))_n = b(n) + c(n)*sqrt(2)</code>, where <code>(x)_n</code> is the Pochhammer symbol, <code>b(n)</code> and <code>c(n)</code> are integers.
  * @author Georg Fischer
  */
 public class A263687 extends HolonomicRecurrence {

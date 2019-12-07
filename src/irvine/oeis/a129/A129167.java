@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129167 Number of base pyramids in all skew Dyck paths of semilength n.
+ * A129167 Number of base pyramids in all skew Dyck paths of semilength <code>n</code>.
  * @author Georg Fischer
  */
 public class A129167 extends HolonomicRecurrence {

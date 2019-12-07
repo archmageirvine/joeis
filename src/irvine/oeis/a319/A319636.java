@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319636 a(n) = Sum_{k=1..n} binomial(2*n - 3*k + 1, n - k)*k/(n - k + 1).
+ * A319636 <code>a(n) = Sum_{k=1..n} binomial(2*n - 3*k + 1, n - k)*k/(n - k + 1)</code>.
  * @author Georg Fischer
  */
 public class A319636 extends HolonomicRecurrence {

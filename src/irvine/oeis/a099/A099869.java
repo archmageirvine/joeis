@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099869 Bisection of A014137.
+ * A099869 Bisection of <code>A014137</code>.
  * @author Georg Fischer
  */
 public class A099869 extends HolonomicRecurrence {

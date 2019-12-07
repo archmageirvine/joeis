@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120018 The third self-composition of A120010; g.f.: A(x) = G(G(G(x))), where G(x) = g.f. of A120010.
+ * A120018 The third self-composition of <code>A120010</code>; g.f.: <code>A(x) = G(G(G(x)))</code>, where <code>G(x) =</code> g.f. of <code>A120010</code>.
  * @author Georg Fischer
  */
 public class A120018 extends HolonomicRecurrence {

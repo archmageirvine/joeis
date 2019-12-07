@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A231373 G.f. A(x) satisfies: A(x-x^2-x^3) = 1/sqrt(1-2*x-3*x^2), which is the g.f. the central trinomial coefficients (A002426).
+ * A231373 G.f. <code>A(x)</code> satisfies: <code>A(x-x^2-x^3) = 1/sqrt(1-2*x-3*x^2)</code>, which is the g.f. the central trinomial coefficients <code>(A002426)</code>.
  * @author Georg Fischer
  */
 public class A231373 extends HolonomicRecurrence {

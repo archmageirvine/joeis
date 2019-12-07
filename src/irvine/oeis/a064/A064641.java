@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064641 Unidirectional 'Delannoy' variation of the Boustrophedon transform applied to all 1's sequence: construct an array in which the first element of each row is 1 and subsequent entries are given by T(n,k) = T(n,k-1) + T(n-1,k-1) + T(n-1,k) + T(n-2,k-1). The last number in row n gives a(n).
+ * A064641 Unidirectional 'Delannoy' variation of the Boustrophedon transform applied to all <code>1</code>'s sequence: construct an array in which the first element of each row is 1 and subsequent entries are given by <code>T(n,k) = T(n,k-1) + T(n-1,k-1) + T(n-1,k) + T(n-2,k-1)</code>. The last number in row n gives <code>a(n)</code>.
  * @author Georg Fischer
  */
 public class A064641 extends HolonomicRecurrence {

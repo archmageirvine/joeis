@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190724 Row sums of Riordan matrix A118384.
+ * A190724 Row sums of Riordan matrix <code>A118384</code>.
  * @author Georg Fischer
  */
 public class A190724 extends HolonomicRecurrence {

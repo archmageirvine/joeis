@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A242091 a(n) = r * (n-1)! where r is the rational number that satisfies the equation Sum_{k>=n} (-1)^(k + n)/C(k,n) = n*2^(n-1)*log(2) - r.
+ * A242091 <code>a(n) = r * (n-1)!</code> where r is the rational number that satisfies the equation <code>Sum_{k&gt;=n} (-1)^(k + n)/C(k,n) = n*2^(n-1)*log(2) -</code> r.
  * @author Georg Fischer
  */
 public class A242091 extends HolonomicRecurrence {

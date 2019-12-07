@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254747 a(n) = (1 + Sum_{j=0..n} (C(n,j)*C(3*j-1,j))) / 2.
+ * A254747 <code>a(n) = (1 + Sum_{j=0..n} (C(n,j)*C(3*j-1,j))) / 2</code>.
  * @author Georg Fischer
  */
 public class A254747 extends HolonomicRecurrence {

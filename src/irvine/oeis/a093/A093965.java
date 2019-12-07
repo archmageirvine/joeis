@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093965 Number of functions of [n] to [n] that simultaneously avoid the patterns 112 and 221.
+ * A093965 Number of functions of <code>[n]</code> to <code>[n]</code> that simultaneously avoid the patterns 112 and 221.
  * @author Georg Fischer
  */
 public class A093965 extends HolonomicRecurrence {

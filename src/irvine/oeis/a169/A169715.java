@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A169715 The function W_6(2n) (see Borwein et al. reference for definition).
+ * A169715 The function <code>W_6(2n)</code> (see Borwein et al. reference for definition).
  * @author Georg Fischer
  */
 public class A169715 extends HolonomicRecurrence {

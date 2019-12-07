@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098455 Expansion of 1/sqrt(1-4x-36x^2).
+ * A098455 Expansion of <code>1/sqrt(1-4x-36x^2)</code>.
  * @author Georg Fischer
  */
 public class A098455 extends HolonomicRecurrence {

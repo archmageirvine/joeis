@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110190 Number of (1,0)-steps on the lines y=0 and y=1 in all Schroeder paths of length 2n (a Schroeder path of length 2n is a path from (0,0) to (2n,0), consisting of steps U=(1,1), D=(1,-1) and H=(2,0) and never going below the x-axis).
+ * A110190 Number of <code>(1,0)-steps</code> on the lines <code>y=0</code> and <code>y=1</code> in all Schroeder paths of length <code>2n (a</code> Schroeder path of length <code>2n</code> is a path from <code>(0,0)</code> to <code>(2n,0)</code>, consisting of steps <code>U=(1,1), D=(1,-1)</code> and <code>H=(2,0)</code> and never going below the <code>x-axis)</code>.
  * @author Georg Fischer
  */
 public class A110190 extends HolonomicRecurrence {

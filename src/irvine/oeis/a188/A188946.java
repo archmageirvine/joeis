@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188946 Binomial partial sums of binomial(2n,n)*binomial(3n,n) (A006480).
+ * A188946 Binomial partial sums of <code>binomial(2n,n)*binomial(3n,n) (A006480)</code>.
  * @author Georg Fischer
  */
 public class A188946 extends HolonomicRecurrence {

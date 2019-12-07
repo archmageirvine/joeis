@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127360 a(n)=sum{k=0..n, C(n,floor(k/2))*4^(n-k)}.
+ * A127360 <code>a(n)=sum{k=0..n, C(n,floor(k/2))*4^(n-k)}</code>.
  * @author Georg Fischer
  */
 public class A127360 extends HolonomicRecurrence {

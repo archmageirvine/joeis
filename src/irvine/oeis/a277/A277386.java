@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277386 a(n) = Sum_{k=0..n} binomial(n, k)^3 * 3^(n-k) * k!.
+ * A277386 <code>a(n) = Sum_{k=0..n} binomial(n, k)^3 * 3^(n-k) * k!</code>.
  * @author Georg Fischer
  */
 public class A277386 extends HolonomicRecurrence {

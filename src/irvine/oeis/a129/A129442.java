@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129442 Expansion of c(x)*c(x*c(x)) where c(x) is the g.f. of A000108.
+ * A129442 Expansion of <code>c(x)*c(x*c(x))</code> where <code>c(x)</code> is the g.f. of <code>A000108</code>.
  * @author Georg Fischer
  */
 public class A129442 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091526 Coefficient of x^n in 1/((1+x)*(1-x)^(n-1)).
+ * A091526 Coefficient of <code>x^n</code> in <code>1/((1+x)*(1-x)^(n-1))</code>.
  * @author Georg Fischer
  */
 public class A091526 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283799 Number of dispersed Dyck prefixes of length 2n and height n.
+ * A283799 Number of dispersed Dyck prefixes of length <code>2n</code> and height <code>n</code>.
  * @author Georg Fischer
  */
 public class A283799 extends HolonomicRecurrence {

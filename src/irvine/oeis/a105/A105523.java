@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105523 Expansion of 1-x*c(-x^2) where c(x) is the g.f. of A000108.
+ * A105523 Expansion of <code>1-x*c(-x^2)</code> where <code>c(x)</code> is the g.f. of <code>A000108</code>.
  * @author Georg Fischer
  */
 public class A105523 extends HolonomicRecurrence {

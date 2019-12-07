@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A076026 Expansion of g.f.: (1-4*x*C)/(1-5*x*C) where C = (1/2-1/2*(1-4*x)^(1/2))/x = g.f. for Catalan numbers A000108.
+ * A076026 Expansion of g.f.: <code>(1-4*x*C)/(1-5*x*C)</code> where C <code>= (1/2-1/2*(1-4*x)^(1/2))/x =</code> g.f. for Catalan numbers <code>A000108</code>.
  * @author Georg Fischer
  */
 public class A076026 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082395 Number of shifted Young tableaux with height <= 3.
+ * A082395 Number of shifted Young tableaux with height <code>&lt;= 3</code>.
  * @author Georg Fischer
  */
 public class A082395 extends HolonomicRecurrence {

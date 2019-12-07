@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108666 Number of (1,1)-steps in all Delannoy paths of length n (a Delannoy path of length n is a path from (0,0) to (n,n), consisting of steps E=(1,0), N=(0,1) and D=(1,1)).
+ * A108666 Number of <code>(1,1)-steps</code> in all Delannoy paths of length <code>n (a</code> Delannoy path of length n is a path from <code>(0,0)</code> to <code>(n,n)</code>, consisting of steps <code>E=(1,0), N=(0,1)</code> and <code>D=(1,1))</code>.
  * @author Georg Fischer
  */
 public class A108666 extends HolonomicRecurrence {

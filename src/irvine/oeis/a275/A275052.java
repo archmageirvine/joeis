@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275052 G.f.: 3F2([1/7, 2/7, 4/7], [1/2, 1], 2401 x).
+ * A275052 G.f.: <code>3F2([1/7, 2/7, 4/7], [1/2, 1], 2401 x)</code>.
  * @author Georg Fischer
  */
 public class A275052 extends HolonomicRecurrence {

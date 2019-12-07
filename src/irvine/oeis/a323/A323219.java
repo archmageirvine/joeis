@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323219 a(n) = [x^n] (1 - 4*x)^(-n/2)*x/(1 - x).
+ * A323219 <code>a(n) = [x^n] (1 - 4*x)^(-n/2)*x/(1 - x)</code>.
  * @author Georg Fischer
  */
 public class A323219 extends HolonomicRecurrence {

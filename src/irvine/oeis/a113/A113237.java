@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113237 E.g.f.: exp(x*(1 - x^3 + x^4)/(1-x)).
+ * A113237 E.g.f.: <code>exp(x*(1 - x^3 + x^4)/(1-x))</code>.
  * @author Georg Fischer
  */
 public class A113237 extends HolonomicRecurrence {

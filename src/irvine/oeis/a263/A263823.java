@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263823 a(n) = n!*Sum_{k=0..n} Fibonacci(k-1)/k!, where Fibonacci(-1) = 1, Fibonacci(n) = A000045(n) for n>=0.
+ * A263823 <code>a(n) = n!*Sum_{k=0..n} Fibonacci(k-1)/k!</code>, where <code>Fibonacci(-1) = 1, Fibonacci(n) = A000045(n)</code> for <code>n&gt;=0</code>.
  * @author Georg Fischer
  */
 public class A263823 extends HolonomicRecurrence {

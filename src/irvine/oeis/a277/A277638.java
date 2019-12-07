@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277638 Binomial partial sums of sequence A007004.
+ * A277638 Binomial partial sums of sequence <code>A007004</code>.
  * @author Georg Fischer
  */
 public class A277638 extends HolonomicRecurrence {

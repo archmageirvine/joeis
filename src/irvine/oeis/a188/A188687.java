@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188687 Partial binomial sums of binomial(3n,n)/(2n+1) = A001764(n).
+ * A188687 Partial binomial sums of <code>binomial(3n,n)/(2n+1) = A001764(n)</code>.
  * @author Georg Fischer
  */
 public class A188687 extends HolonomicRecurrence {

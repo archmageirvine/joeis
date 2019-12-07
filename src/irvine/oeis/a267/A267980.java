@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A267980 a(n) = Catalan(n)^2*(4n + 1).
+ * A267980 <code>a(n) = Catalan(n)^2*(4n + 1)</code>.
  * @author Georg Fischer
  */
 public class A267980 extends HolonomicRecurrence {

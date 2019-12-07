@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273629 a(n) = (9*n)!/((7*n)!*n!^2).
+ * A273629 <code>a(n) = (9*n)!/((7*n)!*n!^2)</code>.
  * @author Georg Fischer
  */
 public class A273629 extends HolonomicRecurrence {

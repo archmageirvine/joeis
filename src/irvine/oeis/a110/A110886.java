@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110886 Number of signed weighted Euler trees with total weight n (associated to even switching classes of matrices of order 2n).
+ * A110886 Number of signed weighted Euler trees with total weight <code>n</code> (associated to even switching classes of matrices of order <code>2n)</code>.
  * @author Georg Fischer
  */
 public class A110886 extends HolonomicRecurrence {

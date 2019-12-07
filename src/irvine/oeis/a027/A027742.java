@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027742 <code>phi(4^n-1)/(2*n)</code>.
+ * A027742 <code>a(n) = phi(4^n-1)/(2*n)</code>.
  * @author Sean A. Irvine
  */
 public class A027742 implements Sequence {

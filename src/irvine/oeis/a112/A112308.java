@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112308 Sum of the heights of the second peaks in all Dyck paths of semilength n+2.
+ * A112308 Sum of the heights of the second peaks in all Dyck paths of semilength <code>n+2</code>.
  * @author Georg Fischer
  */
 public class A112308 extends HolonomicRecurrence {

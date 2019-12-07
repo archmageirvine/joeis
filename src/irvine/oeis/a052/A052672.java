@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052672 E.g.f. (1-x)/(1-x-2x^2+x^3).
+ * A052672 E.g.f. <code>(1-x)/(1-x-2x^2+x^3)</code>.
  * @author Georg Fischer
  */
 public class A052672 extends HolonomicRecurrence {

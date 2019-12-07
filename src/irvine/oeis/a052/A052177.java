@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052177 Number of walks on simple cubic lattice (starting on the xy plane, never going below it and finishing a height 1 above it).
+ * A052177 Number of walks on simple cubic lattice (starting on the <code>xy</code> plane, never going below it and finishing a height 1 above it).
  * @author Georg Fischer
  */
 public class A052177 extends HolonomicRecurrence {

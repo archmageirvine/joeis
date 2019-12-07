@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115137 Second diagonal of triangle A113647 (called Y(2,1)).
+ * A115137 Second diagonal of triangle <code>A113647</code> (called <code>Y(2,1))</code>.
  * @author Georg Fischer
  */
 public class A115137 extends HolonomicRecurrence {

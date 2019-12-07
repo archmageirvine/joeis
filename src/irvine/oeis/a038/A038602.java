@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038602 One half of convolution of central binomial coefficients A000984(n) with A000984(n+2), n >= 0.
+ * A038602 One half of convolution of central binomial coefficients <code>A000984(n)</code> with <code>A000984(n+2), n &gt;= 0</code>.
  * @author Georg Fischer
  */
 public class A038602 extends HolonomicRecurrence {

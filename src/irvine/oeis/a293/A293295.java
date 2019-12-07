@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A293295 a(n) = Sum_{k=1..n} (-1)^(n-k)*hypergeom([k, k-2-n], [], 1).
+ * A293295 <code>a(n) = Sum_{k=1..n} (-1)^(n-k)*hypergeom([k, k-2-n], [], 1)</code>.
  * @author Georg Fischer
  */
 public class A293295 extends HolonomicRecurrence {

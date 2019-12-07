@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111993 Fifth convolution of Schroeder's (second problem) numbers A001003(n), n>=0.
+ * A111993 Fifth convolution of Schroeder's (second problem) numbers <code>A001003(n), n&gt;=0</code>.
  * @author Georg Fischer
  */
 public class A111993 extends HolonomicRecurrence {

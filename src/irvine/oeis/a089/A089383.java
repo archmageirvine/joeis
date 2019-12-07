@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089383 Number of peaks at even level in all Schroeder paths (i.e., consisting of steps U=(1,1), D=(1,-1), H=(2,0) and never going below the axis) from (0,0) to (2n+4,0).
+ * A089383 Number of peaks at even level in all Schroeder paths <code>(i.e.</code>, consisting of steps <code>U=(1,1), D=(1,-1), H=(2,0)</code> and never going below the axis) from <code>(0,0)</code> to <code>(2n+4,0)</code>.
  * @author Georg Fischer
  */
 public class A089383 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A262664 Expansion of (1-2*x)/((2-x)*sqrt(5*x^2-6*x+1))+1/(2-x).
+ * A262664 Expansion of <code>(1-2*x)/((2-x)*sqrt(5*x^2-6*x+1))+1/(2-x)</code>.
  * @author Georg Fischer
  */
 public class A262664 extends HolonomicRecurrence {

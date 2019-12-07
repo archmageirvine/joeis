@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020057 Integer part of <code>GAMMA(n+3/11)/GAMMA(3/11)</code>.
+ * A020057 <code>a(n) = floor(Gamma(n+3/11)/Gamma(3/11))</code>.
  * @author Sean A. Irvine
  */
 public class A020057 implements Sequence {

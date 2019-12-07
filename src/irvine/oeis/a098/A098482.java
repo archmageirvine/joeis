@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098482 Expansion of 1/sqrt((1-x)^2-4*x^4).
+ * A098482 Expansion of <code>1/sqrt((1-x)^2-4*x^4)</code>.
  * @author Georg Fischer
  */
 public class A098482 extends HolonomicRecurrence {

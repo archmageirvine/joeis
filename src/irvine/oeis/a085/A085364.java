@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085364 a(0)=1, for n>0: a(n)=6*13^(n-1)-(1/2)Sum a(i)a(n-i),(i=1,..,n-1).
+ * A085364 <code>a(0)=1</code>, for <code>n&gt;0: a(n)=6*13^(n-1)-(1/2)Sum a(i)a(n-i),(i=1,..,n-1)</code>.
  * @author Georg Fischer
  */
 public class A085364 extends HolonomicRecurrence {

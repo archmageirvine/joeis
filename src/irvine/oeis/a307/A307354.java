@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307354 a(n) = Sum_{0<=i<=j<=n} (-1)^(i+j) * (i+j)!/(i!*j!).
+ * A307354 <code>a(n) = Sum_{0&lt;=i&lt;=j&lt;=n} (-1)^(i+j) * (i+j)!/(i!*j!)</code>.
  * @author Georg Fischer
  */
 public class A307354 extends HolonomicRecurrence {

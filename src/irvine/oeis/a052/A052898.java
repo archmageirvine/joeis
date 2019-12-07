@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052898 2*n! + 1.
+ * A052898 <code>2*n! + 1</code>.
  * @author Georg Fischer
  */
 public class A052898 extends HolonomicRecurrence {

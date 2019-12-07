@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A166229 Expansion of (1-2x-sqrt(1-8x+8x^2))/(2x).
+ * A166229 Expansion of <code>(1-2x-sqrt(1-8x+8x^2))/(2x)</code>.
  * @author Georg Fischer
  */
 public class A166229 extends HolonomicRecurrence {

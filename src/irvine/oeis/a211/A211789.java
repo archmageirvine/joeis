@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A211789 Row sums of A211788.
+ * A211789 Row sums of <code>A211788</code>.
  * @author Georg Fischer
  */
 public class A211789 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238300 Fourth convolution of A107841.
+ * A238300 Fourth convolution of <code>A107841</code>.
  * @author Georg Fischer
  */
 public class A238300 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080996 Special values of the hypergeometric function 3F1: a(n) = binomial(n,2) * hypergeom([1,-n+1,-n+2],[3],1).
+ * A080996 Special values of the hypergeometric function <code>3F1: a(n) = binomial(n,2) * hypergeom([1,-n+1,-n+2],[3],1)</code>.
  * @author Georg Fischer
  */
 public class A080996 extends HolonomicRecurrence {

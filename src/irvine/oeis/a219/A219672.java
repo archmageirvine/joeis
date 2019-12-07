@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A219672 a(n) = Sum_{k=0..n} binomial(n,k)^2*Fibonacci(k).
+ * A219672 <code>a(n) = Sum_{k=0..n} binomial(n,k)^2*Fibonacci(k)</code>.
  * @author Georg Fischer
  */
 public class A219672 extends HolonomicRecurrence {

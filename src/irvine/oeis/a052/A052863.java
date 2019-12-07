@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052863 E.g.f.: log(-1/(-1+x))*exp(x) - log(-1/(-1+x)).
+ * A052863 E.g.f.: <code>log(-1/(-1+x))*exp(x) - log(-1/(-1+x))</code>.
  * @author Georg Fischer
  */
 public class A052863 extends HolonomicRecurrence {

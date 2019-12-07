@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085799 Determinant of the symmetric n X n matrix A defined by A[i,j] = abs(i^2 - j^2) for 1 <= i,j <= n.
+ * A085799 Determinant of the symmetric <code>n X n</code> matrix A defined by <code>A[i,j] = abs(i^2 - j^2)</code> for <code>1 &lt;=</code> i,j <code>&lt;= n</code>.
  * @author Georg Fischer
  */
 public class A085799 extends HolonomicRecurrence {

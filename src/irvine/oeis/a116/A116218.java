@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116218 If X_1,...,X_n is a partition of a 2n-set X into 2-blocks (or pairs) then a(n) is equal to the number of permutations f of X such that f(X_i) != X_i for all i=1,...n.
+ * A116218 If <code>X_1,...,X_n</code> is a partition of a 2n-set X into <code>2-blocks</code> (or pairs) then <code>a(n)</code> is equal to the number of permutations f of X such that <code>f(X_i) != X_i</code> for all <code>i=1,...n</code>.
  * @author Georg Fischer
  */
 public class A116218 extends HolonomicRecurrence {

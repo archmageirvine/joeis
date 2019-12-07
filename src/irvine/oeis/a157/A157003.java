@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A157003 Transform of Catalan numbers whose Hankel transform gives the Somos-4 sequence.
+ * A157003 Transform of Catalan numbers whose Hankel transform gives the <code>Somos-4</code> sequence.
  * @author Georg Fischer
  */
 public class A157003 extends HolonomicRecurrence {

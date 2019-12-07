@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052141 Number of paths from (0,0) to (n,n) that always move closer to (n,n) (and do not pass (n,n) and backtrack).
+ * A052141 Number of paths from <code>(0,0)</code> to <code>(n,n)</code> that always move closer to <code>(n,n)</code> (and do not pass <code>(n,n)</code> and backtrack).
  * @author Georg Fischer
  */
 public class A052141 extends HolonomicRecurrence {

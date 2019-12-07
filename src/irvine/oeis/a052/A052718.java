@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052718 E.g.f. 1 - x - sqrt(1-4*x).
+ * A052718 E.g.f. <code>1 - x - sqrt(1-4*x)</code>.
  * @author Georg Fischer
  */
 public class A052718 extends HolonomicRecurrence {

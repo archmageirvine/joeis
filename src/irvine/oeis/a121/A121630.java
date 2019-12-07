@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121630 Finite sum involving signless Stirling numbers of the first kind and the Bell numbers. Appears in the process of normal ordering of n-th power of (a)^3*(a+*a), where a+ and a are boson creation and annihilation operators, respectively.
+ * A121630 Finite sum involving signless Stirling numbers of the first kind and the Bell numbers. Appears in the process of normal ordering of n-th power of <code>(a)^3*(a+*a)</code>, where <code>a+</code> and a are boson creation and annihilation operators, respectively.
  * @author Georg Fischer
  */
 public class A121630 extends HolonomicRecurrence {

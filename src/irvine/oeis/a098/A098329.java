@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098329 Expansion of 1/(1-2x-31x^2)^(1/2).
+ * A098329 Expansion of <code>1/(1-2x-31x^2)^(1/2)</code>.
  * @author Georg Fischer
  */
 public class A098329 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112696 Partial sum of Catalan numbers A000108 multiplied by powers of 2.
+ * A112696 Partial sum of Catalan numbers <code>A000108</code> multiplied by powers of 2.
  * @author Georg Fischer
  */
 public class A112696 extends HolonomicRecurrence {

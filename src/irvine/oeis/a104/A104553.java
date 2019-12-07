@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104553 Sum of trapezoid weights of all Schroeder paths of length 2n.
+ * A104553 Sum of trapezoid weights of all Schroeder paths of length <code>2n</code>.
  * @author Georg Fischer
  */
 public class A104553 extends HolonomicRecurrence {

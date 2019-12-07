@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245067 Number of three-dimensional random walks with 2n steps in the wedge region x >= y >= z, beginning and ending at the origin without crossing the wedge boundary.
+ * A245067 Number of three-dimensional random walks with <code>2n</code> steps in the wedge region <code>x &gt;= y &gt;=</code> z, beginning and ending at the origin without crossing the wedge boundary.
  * @author Georg Fischer
  */
 public class A245067 extends HolonomicRecurrence {

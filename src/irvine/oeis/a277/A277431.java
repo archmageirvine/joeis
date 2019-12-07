@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277431 Expansion of e.g.f.: cosh(sqrt(2)*x)/(1-x).
+ * A277431 Expansion of e.g.f.: <code>cosh(sqrt(2)*x)/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A277431 extends HolonomicRecurrence {

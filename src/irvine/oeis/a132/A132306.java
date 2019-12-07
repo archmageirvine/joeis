@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132306 a(n) = Sum_{k=0..2n-1} C(2n-1,k)*trinomial(n,k) for n>0 with a(0)=1.
+ * A132306 <code>a(n) = Sum_{k=0..2n-1} C(2n-1,k)*trinomial(n,k)</code> for <code>n&gt;0</code> with <code>a(0)=1</code>.
  * @author Georg Fischer
  */
 public class A132306 extends HolonomicRecurrence {

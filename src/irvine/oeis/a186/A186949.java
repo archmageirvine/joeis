@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A186949 <code>a(n)=2^n-2*C(1,n)+2*C(0,n)</code>.
+ * A186949 <code>a(n) = 2^n - 2*(binomial(1,n) - binomial(0,n))</code>.
  * @author Georg Fischer
  */
 public class A186949 extends GeneratingFunctionSequence {

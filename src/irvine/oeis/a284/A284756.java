@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A284756 (n + 1)^3*a(n + 1) = 2*(2*n + 1)*(5*n^2 + 5*n + 2)*a(n) - 8*n*(7*n^2 + 1)*a(n - 1) + 22*n*(n - 1)*(2*n - 1)*a(n - 2), with a(0) = 1, a(1) = 4 and a(2) = 28.
+ * A284756 <code>(n + 1)^3*a(n + 1) = 2*(2*n + 1)*(5*n^2 + 5*n + 2)*a(n) - 8*n*(7*n^2 + 1)*a(n - 1) + 22*n*(n - 1)*(2*n - 1)*a(n - 2)</code>, with <code>a(0) = 1, a(1) = 4</code> and <code>a(2) = 28</code>.
  * @author Georg Fischer
  */
 public class A284756 extends HolonomicRecurrence {

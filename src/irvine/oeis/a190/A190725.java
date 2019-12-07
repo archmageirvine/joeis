@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190725 Diagonal sums of Riordan matrix A118384.
+ * A190725 Diagonal sums of Riordan matrix <code>A118384</code>.
  * @author Georg Fischer
  */
 public class A190725 extends HolonomicRecurrence {

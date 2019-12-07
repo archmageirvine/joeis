@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112019 a(n) = Sum_{k=0..n} binomial(n,k)*binomial(n+k,k)^2.
+ * A112019 <code>a(n) = Sum_{k=0..n} binomial(n,k)*binomial(n+k,k)^2</code>.
  * @author Georg Fischer
  */
 public class A112019 extends HolonomicRecurrence {

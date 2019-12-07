@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161130 Sum of the differences between the largest and the smallest fixed points over all non-derangement permutations of {1,2,...,n}.
+ * A161130 Sum of the differences between the largest and the smallest fixed points over all non-derangement permutations of <code>{1,2,...,n}</code>.
  * @author Georg Fischer
  */
 public class A161130 extends HolonomicRecurrence {

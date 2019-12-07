@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059371 a(n) = (n-1)! + ((n+1)/2)*a(n-1), a(1)=0.
+ * A059371 <code>a(n) = (n-1)! + ((n+1)/2)*a(n-1), a(1)=0</code>.
  * @author Georg Fischer
  */
 public class A059371 extends HolonomicRecurrence {

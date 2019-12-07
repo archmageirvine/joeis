@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108427 Number of peaks of the form Ud in all paths from (0,0) to (3n,0) that stay in the first quadrant (but may touch the horizontal axis), consisting of steps u=(2,1), U=(1,2), or d=(1,-1).
+ * A108427 Number of peaks of the form Ud in all paths from <code>(0,0)</code> to <code>(3n,0)</code> that stay in the first quadrant (but may touch the horizontal axis), consisting of steps <code>u=(2,1), U=(1,2)</code>, or <code>d=(1,-1)</code>.
  * @author Georg Fischer
  */
 public class A108427 extends HolonomicRecurrence {

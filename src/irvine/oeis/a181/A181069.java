@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181069 L.g.f.: Sum_{n>=1} [ Sum_{k>=0} C(n+k-1,k)^4 *x^k ] *x^n/n.
+ * A181069 L.g.f.: <code>Sum_{n&gt;=1} [ Sum_{k&gt;=0} C(n+k-1,k)^4 *x^k ] *x^n/n</code>.
  * @author Georg Fischer
  */
 public class A181069 extends HolonomicRecurrence {

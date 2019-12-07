@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202879 E.g.f.: exp(4*x + x^2/2).
+ * A202879 E.g.f.: <code>exp(4*x + x^2/2)</code>.
  * @author Georg Fischer
  */
 public class A202879 extends HolonomicRecurrence {

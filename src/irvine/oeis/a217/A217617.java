@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217617 G.f.: Sum_{n>=0} x^n * Sum_{k=0..n} binomial(n,k)^2 * x^k*(3-x)^(n-k).
+ * A217617 G.f.: <code>Sum_{n&gt;=0} x^n * Sum_{k=0..n} binomial(n,k)^2 * x^k*(3-x)^(n-k)</code>.
  * @author Georg Fischer
  */
 public class A217617 extends HolonomicRecurrence {

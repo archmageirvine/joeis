@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254282 Expansion of (1-(1-27*x)^(1/3)) / (9*x).
+ * A254282 Expansion of <code>(1-(1-27*x)^(1/3)) / (9*x)</code>.
  * @author Georg Fischer
  */
 public class A254282 extends HolonomicRecurrence {

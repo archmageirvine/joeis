@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A069948 a(n) = 1/exp(1) * Sum_{k>=0} (k+n)!^2 / k!^3.
+ * A069948 <code>a(n) = 1/exp(1) * Sum_{k&gt;=0} (k+n)!^2 / k!^3</code>.
  * @author Georg Fischer
  */
 public class A069948 extends HolonomicRecurrence {

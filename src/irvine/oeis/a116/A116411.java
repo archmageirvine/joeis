@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116411 Coefficient of x^n in the expansion of (1+x+x^3)^n.
+ * A116411 Coefficient of <code>x^n</code> in the expansion of <code>(1+x+x^3)^n</code>.
  * @author Georg Fischer
  */
 public class A116411 extends HolonomicRecurrence {

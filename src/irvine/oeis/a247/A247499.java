@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A247499 a(n) = n!*hypergeom([-n-1], [2], -1) - 1/((n+1)*(n+2)).
+ * A247499 <code>a(n) = n!*hypergeom([-n-1], [2], -1) - 1/((n+1)*(n+2))</code>.
  * @author Georg Fischer
  */
 public class A247499 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098483 Expansion of 1/sqrt((1-x)^2-8x^4).
+ * A098483 Expansion of <code>1/sqrt((1-x)^2-8x^4)</code>.
  * @author Georg Fischer
  */
 public class A098483 extends HolonomicRecurrence {

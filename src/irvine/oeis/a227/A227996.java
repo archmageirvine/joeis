@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227996 Alternate partial sums of the binomial coefficients C(5*n,n).
+ * A227996 Alternate partial sums of the binomial coefficients <code>C(5*n,n)</code>.
  * @author Georg Fischer
  */
 public class A227996 extends HolonomicRecurrence {

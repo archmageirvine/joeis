@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052618 Expansion of e.g.f. 1/((1-x)^2*(1-x^2)).
+ * A052618 Expansion of e.g.f. <code>1/((1-x)^2*(1-x^2))</code>.
  * @author Georg Fischer
  */
 public class A052618 extends HolonomicRecurrence {

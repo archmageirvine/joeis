@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A211895 G.f.: exp( Sum_{n>=1} 3 * Jacobsthal(n)^3 * x^n/n ), where Jacobsthal(n) = A001045(n).
+ * A211895 G.f.: <code>exp( Sum_{n&gt;=1} 3 * Jacobsthal(n)^3 * x^n/n )</code>, where <code>Jacobsthal(n) = A001045(n)</code>.
  * @author Georg Fischer
  */
 public class A211895 extends HolonomicRecurrence {

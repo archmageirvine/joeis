@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246138 a(n) = sum(k=0..n-1, A246065(k) ) / n^2.
+ * A246138 <code>a(n) = sum(k=0..n-1, A246065(k) ) / n^2</code>.
  * @author Georg Fischer
  */
 public class A246138 extends HolonomicRecurrence {

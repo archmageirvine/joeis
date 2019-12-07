@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A195254 O.g.f.: Sum_{n>=0} 2*(n+2)^(n-1)*x^n/(1+n*x)^n.
+ * A195254 O.g.f.: <code>Sum_{n&gt;=0} 2*(n+2)^(n-1)*x^n/(1+n*x)^n</code>.
  * @author Georg Fischer
  */
 public class A195254 extends HolonomicRecurrence {

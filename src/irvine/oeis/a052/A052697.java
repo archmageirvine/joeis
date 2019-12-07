@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052697 E.g.f. 1/(1-x^3-x^4).
+ * A052697 E.g.f. <code>1/(1-x^3-x^4)</code>.
  * @author Georg Fischer
  */
 public class A052697 extends HolonomicRecurrence {

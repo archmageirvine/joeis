@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110099 Number of return steps to the line y = x from the line y = x+1 (i.e., E steps from the line y = x+1 to the line y = x) in all Delannoy paths of length n.
+ * A110099 Number of return steps to the line <code>y = x</code> from the line <code>y = x+1 (i.e.</code>, E steps from the line <code>y = x+1</code> to the line <code>y = x)</code> in all Delannoy paths of length <code>n</code>.
  * @author Georg Fischer
  */
 public class A110099 extends HolonomicRecurrence {

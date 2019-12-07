@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A065922 Bessel polynomial {y_n}'(4).
+ * A065922 Bessel polynomial <code>{y_n}'(4)</code>.
  * @author Georg Fischer
  */
 public class A065922 extends HolonomicRecurrence {

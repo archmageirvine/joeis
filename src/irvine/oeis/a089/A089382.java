@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089382 Total number of triangles in all the dissections of a convex (n+3)-gon by nonintersecting diagonals.
+ * A089382 Total number of triangles in all the dissections of a convex <code>(n+3)-gon</code> by nonintersecting diagonals.
  * @author Georg Fischer
  */
 public class A089382 extends HolonomicRecurrence {

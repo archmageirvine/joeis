@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156088 Alternating sum of the squares of the first n even-indexed Fibonacci numbers.
+ * A156088 Alternating sum of the squares of the first <code>n even-indexed</code> Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A156088 extends HolonomicRecurrence {

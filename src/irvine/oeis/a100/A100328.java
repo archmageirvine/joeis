@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100328 Column 1 of triangle A100326, in which row n equals the inverse binomial of column n of square array A100324, with leading zero omitted.
+ * A100328 Column 1 of triangle <code>A100326</code>, in which row n equals the inverse binomial of column n of square array <code>A100324</code>, with leading zero omitted.
  * @author Georg Fischer
  */
 public class A100328 extends HolonomicRecurrence {

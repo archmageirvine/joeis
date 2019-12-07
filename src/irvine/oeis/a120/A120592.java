@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120592 G.f. satisfies: 5*A(x) = 4 + 4*x + A(x)^3, starting with [1,2,6].
+ * A120592 G.f. satisfies: <code>5*A(x) = 4 + 4*x + A(x)^3</code>, starting with <code>[1,2,6]</code>.
  * @author Georg Fischer
  */
 public class A120592 extends HolonomicRecurrence {

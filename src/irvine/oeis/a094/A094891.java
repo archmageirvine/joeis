@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094891 Total area below the lattice paths of a given length defined by the rule [(0),(k)->(k-1)(k)(k+1)] (Motzkin paths).
+ * A094891 Total area below the lattice paths of a given length defined by the rule <code>[(0),(k)-&gt;(k-1)(k)(k+1)]</code> (Motzkin paths).
  * @author Georg Fischer
  */
 public class A094891 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087457 Number of odd length roads between any adjacent nodes in virtual optimal chordal ring of degree 3 (the length of chord < number of nodes/2).
+ * A087457 Number of odd length roads between any adjacent nodes in virtual optimal chordal ring of degree <code>3</code> (the length of chord <code>&lt</code>; number of <code>nodes/2)</code>.
  * @author Georg Fischer
  */
 public class A087457 extends HolonomicRecurrence {

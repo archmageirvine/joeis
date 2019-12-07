@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A284968 Least hairpin family matchings with n edges that are both L&P and C&C whose leftmost edge is part of a hairpin.
+ * A284968 Least hairpin family matchings with n edges that are both L&amp;P and C&amp;C whose leftmost edge is part of a hairpin.
  * @author Georg Fischer
  */
 public class A284968 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001001;
 import irvine.oeis.a060.A060640;
 
 /**
- * A027844.
+ * A027844 Number of subgroups of index n of fundamental group of the non-orientable cycle bundle over the Klein bottle.
  * @author Sean A. Irvine
  */
 public class A027844 extends A001001 {

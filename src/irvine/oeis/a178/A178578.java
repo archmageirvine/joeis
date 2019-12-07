@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178578 Diagonal sums of second binomial transform of the Narayana triangle A001263.
+ * A178578 Diagonal sums of second binomial transform of the Narayana triangle <code>A001263</code>.
  * @author Georg Fischer
  */
 public class A178578 extends HolonomicRecurrence {

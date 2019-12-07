@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114693 Number of returns to the x-axis in all hill-free Schroeder paths of length 2n+4. A Schroeder path of length 2n is a lattice path from (0,0) to (2n,0) consisting of U=(1,1), D=(1,-1) and H=(2,0) steps and never going below the x-axis. A hill is a peak at height 1.
+ * A114693 Number of returns to the x-axis in all hill-free Schroeder paths of length <code>2n+4</code>. A Schroeder path of length <code>2n</code> is a lattice path from <code>(0,0)</code> to <code>(2n,0)</code> consisting of <code>U=(1,1), D=(1,-1)</code> and <code>H=(2,0)</code> steps and never going below the <code>x-axis</code>. A hill is a peak at height 1.
  * @author Georg Fischer
  */
 public class A114693 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A222467 Denominator sequence of the n-th convergent of the continued fraction 1/(1 + 2/(2 + 2/(3 + 2/(4 + ...
+ * A222467 Denominator sequence of the n-th convergent of the continued fraction <code>1/(1 + 2/(2 + 2/(3 + 2/(4 + ..</code>.
  * @author Georg Fischer
  */
 public class A222467 extends HolonomicRecurrence {

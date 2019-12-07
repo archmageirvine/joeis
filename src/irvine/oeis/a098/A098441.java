@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098441 Expansion of 1/sqrt(1 - 2*x - 63*x^2).
+ * A098441 Expansion of <code>1/sqrt(1 - 2*x - 63*x^2)</code>.
  * @author Georg Fischer
  */
 public class A098441 extends HolonomicRecurrence {

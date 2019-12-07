@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A267840 Number of symmetric difference-closed 4-sets consisting of the empty set and sets consisting of pairwise disjoint 2-subsets of {1,2,...,n}.
+ * A267840 Number of symmetric <code>difference-closed 4-sets</code> consisting of the empty set and sets consisting of pairwise disjoint 2-subsets of <code>{1,2,...,n}</code>.
  * @author Georg Fischer
  */
 public class A267840 extends HolonomicRecurrence {

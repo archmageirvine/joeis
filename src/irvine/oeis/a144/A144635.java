@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144635 a(n) = 5^n*Sum_{ k=0..n } binomial(2*k,k)/5^k.
+ * A144635 <code>a(n) = 5^n*Sum_{ k=0..n } binomial(2*k,k)/5^k</code>.
  * @author Georg Fischer
  */
 public class A144635 extends HolonomicRecurrence {

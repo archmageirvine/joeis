@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A272492 Number of ordered set partitions of [n] with nondecreasing block sizes and maximal block size equal to two.
+ * A272492 Number of ordered set partitions of <code>[n]</code> with nondecreasing block sizes and maximal block size equal to two.
  * @author Georg Fischer
  */
 public class A272492 extends HolonomicRecurrence {

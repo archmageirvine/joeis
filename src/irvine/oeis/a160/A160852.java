@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160852 Chebyshev transform of A107841.
+ * A160852 Chebyshev transform of <code>A107841</code>.
  * @author Georg Fischer
  */
 public class A160852 extends HolonomicRecurrence {

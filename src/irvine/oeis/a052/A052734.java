@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052734 a(0)=0; thereafter a(n) = Catalan(n-1)*4^(n-1)*n!.
+ * A052734 <code>a(0)=0</code>; thereafter <code>a(n) = Catalan(n-1)*4^(n-1)*n!</code>.
  * @author Georg Fischer
  */
 public class A052734 extends HolonomicRecurrence {

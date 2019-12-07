@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129164 Sum of pyramid weights in all skew Dyck paths of semilength n.
+ * A129164 Sum of pyramid weights in all skew Dyck paths of semilength <code>n</code>.
  * @author Georg Fischer
  */
 public class A129164 extends HolonomicRecurrence {

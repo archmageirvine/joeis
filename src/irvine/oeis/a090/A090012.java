@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090012 Permanent of (0,1)-matrix of size n X (n+d) with d=2 and n-1 zeros not on a line.
+ * A090012 Permanent of <code>(0,1)-matrix</code> of size <code>n X (n+d)</code> with <code>d=2</code> and <code>n-1</code> zeros not on a line.
  * @author Georg Fischer
  */
 public class A090012 extends HolonomicRecurrence {

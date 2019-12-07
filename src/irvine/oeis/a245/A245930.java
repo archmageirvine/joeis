@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245930 G.f.: 1 / AGM((1 - 3*x)^2, (1 + x)^2).
+ * A245930 G.f.: <code>1 / AGM((1 - 3*x)^2, (1 + x)^2)</code>.
  * @author Georg Fischer
  */
 public class A245930 extends HolonomicRecurrence {

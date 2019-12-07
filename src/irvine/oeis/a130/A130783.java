@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130783 Maximum value of the n-th difference of a permutation of 0..n.
+ * A130783 Maximum value of the n-th difference of a permutation of <code>0..n</code>.
  * @author Georg Fischer
  */
 public class A130783 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103370 Row sums of triangle A095801 (matrix square of the Narayana triangle A001263).
+ * A103370 Row sums of triangle <code>A095801</code> (matrix square of the Narayana triangle <code>A001263)</code>.
  * @author Georg Fischer
  */
 public class A103370 extends HolonomicRecurrence {

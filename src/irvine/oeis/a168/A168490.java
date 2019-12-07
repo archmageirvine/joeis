@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168490 Sequence with Hankel transform equal to 2^floor(n^2/2).
+ * A168490 Sequence with Hankel transform equal to <code>2^floor(n^2/2)</code>.
  * @author Georg Fischer
  */
 public class A168490 extends HolonomicRecurrence {

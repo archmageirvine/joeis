@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A249608 Expansion of e.g.f.: exp(x) * BesselI(0, 2*x) * BesselI(0, 2*sqrt(2)*x).
+ * A249608 Expansion of e.g.f.: <code>exp(x) * BesselI(0, 2*x) * BesselI(0, 2*sqrt(2)*x)</code>.
  * @author Georg Fischer
  */
 public class A249608 extends HolonomicRecurrence {

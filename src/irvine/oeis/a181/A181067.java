@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181067 a(n) = Sum_{k=0..n-1} C(n-1,k)^2 * C(n,k).
+ * A181067 <code>a(n) = Sum_{k=0..n-1} C(n-1,k)^2 * C(n,k)</code>.
  * @author Georg Fischer
  */
 public class A181067 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A215542 a(n) = binomial(6*n,n)*(4*n+1)/(5*n+1).
+ * A215542 <code>a(n) = binomial(6*n,n)*(4*n+1)/(5*n+1)</code>.
  * @author Georg Fischer
  */
 public class A215542 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224071 Number of Schroeder paths of semilength n in which there are no (2,0)-steps at level 1.
+ * A224071 Number of Schroeder paths of semilength n in which there are no <code>(2,0)-steps</code> at level 1.
  * @author Georg Fischer
  */
 public class A224071 extends HolonomicRecurrence {

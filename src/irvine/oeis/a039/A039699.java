@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A039699 Number of 4-dimensional cubic lattice walks that start and end at origin after 2n steps, free to pass through origin at intermediate stages.
+ * A039699 Number of 4-dimensional cubic lattice walks that start and end at origin after <code>2n</code> steps, free to pass through origin at intermediate stages.
  * @author Georg Fischer
  */
 public class A039699 extends HolonomicRecurrence {

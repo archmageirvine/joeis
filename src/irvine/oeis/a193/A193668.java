@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193668 a(n) = Sum_{i=0..n-1} (n+i)*a(n-1-i) for n>1, a(0)=1, a(1)=1.
+ * A193668 <code>a(n) = Sum_{i=0..n-1} (n+i)*a(n-1-i)</code> for <code>n&gt;1, a(0)=1, a(1)=1</code>.
  * @author Georg Fischer
  */
 public class A193668 extends HolonomicRecurrence {

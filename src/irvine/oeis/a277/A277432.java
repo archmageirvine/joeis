@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277432 E.g.f.: sinh(sqrt(2)*x)/(sqrt(2)*(1-x)).
+ * A277432 E.g.f.: <code>sinh(sqrt(2)*x)/(sqrt(2)*(1-x))</code>.
  * @author Georg Fischer
  */
 public class A277432 extends HolonomicRecurrence {

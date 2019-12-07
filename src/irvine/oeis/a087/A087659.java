@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087659 a(n) = hypergeom([ -n, (n+4)/2, (n+5)/2], [3, 2], -4).
+ * A087659 <code>a(n) = hypergeom([ -n, (n+4)/2, (n+5)/2], [3, 2], -4)</code>.
  * @author Georg Fischer
  */
 public class A087659 extends HolonomicRecurrence {

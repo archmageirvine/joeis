@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052654 E.g.f. 1/((1-x)(1-4x)).
+ * A052654 E.g.f. <code>1/((1-x)(1-4x))</code>.
  * @author Georg Fischer
  */
 public class A052654 extends HolonomicRecurrence {

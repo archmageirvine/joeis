@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052761 a(n) = 3!*n*S(n-1,3), where S denotes the Stirling numbers of second kind.
+ * A052761 <code>a(n) = 3!*n*S(n-1,3)</code>, where S denotes the Stirling numbers of second kind.
  * @author Georg Fischer
  */
 public class A052761 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143749 Series reversion of x * (1 - x) / (1 + 9*x).
+ * A143749 Series reversion of <code>x * (1 - x) / (1 + 9*x)</code>.
  * @author Georg Fischer
  */
 public class A143749 extends HolonomicRecurrence {

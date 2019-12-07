@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130977 G.f.: 5/(2+3*sqrt(1-20*x)).
+ * A130977 G.f.: <code>5/(2+3*sqrt(1-20*x))</code>.
  * @author Georg Fischer
  */
 public class A130977 extends HolonomicRecurrence {

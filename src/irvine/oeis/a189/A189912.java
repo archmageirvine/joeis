@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189912 Extended Motzkin numbers, Sum_{k>=0} C(n,k)C(k), C(k) the extended Catalan number A057977(k).
+ * A189912 Extended Motzkin numbers, <code>Sum_{k&gt;=0} C(n,k)C(k), C(k)</code> the extended Catalan number <code>A057977(k)</code>.
  * @author Georg Fischer
  */
 public class A189912 extends HolonomicRecurrence {

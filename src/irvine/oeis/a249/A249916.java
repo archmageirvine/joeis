@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A249916 a(n) = 4*(n - 1) - a(n-3), n >= 3, a(0) = a(1) = 1, a(2) = 5.
+ * A249916 <code>a(n) = 4*(n - 1) - a(n-3), n &gt;= 3, a(0) = a(1) = 1, a(2) = 5</code>.
  * @author Georg Fischer
  */
 public class A249916 extends HolonomicRecurrence {

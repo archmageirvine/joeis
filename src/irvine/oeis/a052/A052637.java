@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052637 E.g.f. 3x(1+x-x^2)/(1-x).
+ * A052637 E.g.f. <code>3x(1+x-x^2)/(1-x)</code>.
  * @author Georg Fischer
  */
 public class A052637 extends HolonomicRecurrence {

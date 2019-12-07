@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176806 Consider asymmetric 1-D random walk with set of possible jumps {-1,+1,+2}. Sequence gives number of paths of length n ending at origin.
+ * A176806 Consider asymmetric 1-D random walk with set of possible jumps <code>{-1,+1,+2}</code>. Sequence gives number of paths of length n ending at origin.
  * @author Georg Fischer
  */
 public class A176806 extends HolonomicRecurrence {

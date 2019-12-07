@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188680 Alternate partial sums of binomial(3n,n)^2.
+ * A188680 Alternate partial sums of <code>binomial(3n,n)^2</code>.
  * @author Georg Fischer
  */
 public class A188680 extends HolonomicRecurrence {

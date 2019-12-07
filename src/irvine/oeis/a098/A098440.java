@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098440 Expansion of 1/sqrt(1-2x-59x^2).
+ * A098440 Expansion of <code>1/sqrt(1-2x-59x^2)</code>.
  * @author Georg Fischer
  */
 public class A098440 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a060.A060240;
 
 /**
- * A027840.
+ * A027840 Number of subgroups of index n in fundamental group of a certain fiber space.
  * @author Sean A. Irvine
  */
 public class A027840 extends A060240 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269731 Dimensions of the 3-polytridendriform operad TDendr_3.
+ * A269731 Dimensions of the 3-polytridendriform operad <code>TDendr_3</code>.
  * @author Georg Fischer
  */
 public class A269731 extends HolonomicRecurrence {

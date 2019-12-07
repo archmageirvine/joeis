@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179191 Expansion of o.g.f. (1/2)*(-1 + 1/sqrt(1 - 4*x - 4*x^2)).
+ * A179191 Expansion of o.g.f. <code>(1/2)*(-1 + 1/sqrt(1 - 4*x - 4*x^2))</code>.
  * @author Georg Fischer
  */
 public class A179191 extends HolonomicRecurrence {

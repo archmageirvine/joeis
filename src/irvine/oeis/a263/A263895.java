@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263895 Expansion of e.g.f.: exp(-x)*x/(1-2*x)^2.
+ * A263895 Expansion of e.g.f.: <code>exp(-x)*x/(1-2*x)^2</code>.
  * @author Georg Fischer
  */
 public class A263895 extends HolonomicRecurrence {

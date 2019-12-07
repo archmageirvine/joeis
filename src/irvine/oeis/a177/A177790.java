@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177790 Number of paths from (0,0) to (n,n) avoiding 3 or more consecutive east steps and 3 or more consecutive north steps.
+ * A177790 Number of paths from <code>(0,0)</code> to <code>(n,n)</code> avoiding 3 or more consecutive east steps and 3 or more consecutive north steps.
  * @author Georg Fischer
  */
 public class A177790 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086618 a(n) = Sum{k=0..n} binomial(n,k)^2*C(k), where C() = A000108() are the Catalan numbers.
+ * A086618 <code>a(n) = Sum{k=0..n} binomial(n,k)^2*C(k)</code>, where <code>C() = A000108()</code> are the Catalan numbers.
  * @author Georg Fischer
  */
 public class A086618 extends HolonomicRecurrence {

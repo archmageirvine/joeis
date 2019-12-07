@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089915 Special values of generalized Laguerre polynomials L_n^(alpha)(x): a(n) = 4^n *n! *L_n^(-1/4)(-1).
+ * A089915 Special values of generalized Laguerre polynomials <code>L_n^(alpha)(x): a(n) = 4^n *n! *L_n^(-1/4)(-1)</code>.
  * @author Georg Fischer
  */
 public class A089915 extends HolonomicRecurrence {

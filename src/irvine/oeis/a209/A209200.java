@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209200 G.f.: (1-4*x)^(-1/2) * (1-8*x)^(-1/4).
+ * A209200 G.f.: <code>(1-4*x)^(-1/2) * (1-8*x)^(-1/4)</code>.
  * @author Georg Fischer
  */
 public class A209200 extends HolonomicRecurrence {

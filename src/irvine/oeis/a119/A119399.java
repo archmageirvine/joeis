@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119399 a(n) = Sum_{k=0..n} (n!/k!)^2*binomial(n-1,k-1).
+ * A119399 <code>a(n) = Sum_{k=0..n} (n!/k!)^2*binomial(n-1,k-1)</code>.
  * @author Georg Fischer
  */
 public class A119399 extends HolonomicRecurrence {

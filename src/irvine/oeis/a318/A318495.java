@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318495 Scaled g.f. T(u) = Sum_{n>=0} a(n)*(u/16)^n satisfies 5*(21*u-16)*T + d/du( 4*u*(u-1)*(27*u-32)*T') = 0, and a(0)=1; sequence gives a(n).
+ * A318495 Scaled g.f. <code>T(u) = Sum_{n&gt;=0} a(n)*(u/16)^n</code> satisfies <code>5*(21*u-16)*T + d/du( 4*u*(u-1)*(27*u-32)*T') = 0</code>, and <code>a(0)=1</code>; sequence gives <code>a(n)</code>.
  * @author Georg Fischer
  */
 public class A318495 extends HolonomicRecurrence {

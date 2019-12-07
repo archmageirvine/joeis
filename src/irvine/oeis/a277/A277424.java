@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277424 Total number of nodes summed over all self-avoiding planar walks starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1).
+ * A277424 Total number of nodes summed over all self-avoiding planar walks starting at <code>(0,0)</code>, ending at <code>(n,0)</code>, remaining in the first quadrant and using steps <code>(0,1), (1,0), (1,1), (-1,1)</code>, and <code>(1,-1)</code>.
  * @author Georg Fischer
  */
 public class A277424 extends HolonomicRecurrence {

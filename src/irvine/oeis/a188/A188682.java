@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188682 Partial sums of binomials bin(3n,n)^2/(2n+1).
+ * A188682 Partial sums of binomials <code>bin(3n,n)^2/(2n+1)</code>.
  * @author Georg Fischer
  */
 public class A188682 extends HolonomicRecurrence {

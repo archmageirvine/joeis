@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176085 a(n) = A136431(n,n).
+ * A176085 <code>a(n) = A136431(n,n)</code>.
  * @author Georg Fischer
  */
 public class A176085 extends HolonomicRecurrence {

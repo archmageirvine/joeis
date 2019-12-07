@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A303224 a(0)=0, a(1)=1; for n>1, a(n) = n*a(n-1) - 3*a(n-2).
+ * A303224 <code>a(0)=0, a(1)=1</code>; for <code>n&gt;1, a(n) = n*a(n-1) - 3*a(n-2)</code>.
  * @author Georg Fischer
  */
 public class A303224 extends HolonomicRecurrence {

@@ -1,0 +1,23 @@
+package irvine.oeis.a060;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A060640.
+ * @author Sean A. Irvine
+ */
+public class A060640 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    Z s = Z.ZERO;
+    for (final Z d : Cheetah.factor(++mN).divisors()) {
+      s = s.add(d.multiply(Cheetah.factor(mN / d.longValue()).sigma()));
+    }
+    return s;
+  }
+}

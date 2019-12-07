@@ -199,7 +199,11 @@ public class HolonomicRecurrence implements Sequence {
         result = quotRemd[0];
       }
     }
-    mBuffer[mN % mOrder] = result;
+    if (mOrder > 0) {
+      mBuffer[mN % mOrder] = result;
+    } else {
+      mBuffer[0] = result;
+    }
     return result;
   } // next
 

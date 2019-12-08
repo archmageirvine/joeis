@@ -1169,3 +1169,6 @@ A027824 If there were a unimodular 25-dimensional lattice with minimal norm 3, i
 A027825 If there were a unimodular 25-dimensional lattice with minimal norm 3, it would have this as the theta series of its shadow. Unfortunately, no such lattice exists.
 A027832 Number of symmetric {-1, +1} matrices of order n with nonnegative row and column sums.
 A027835 Number of unlabeled strongly connected n-state 2-input automata, no formula in article?
+A027845 Number of subgroups of index n in fundamental group of a certain fiber space, not in paper, possibly erroneous
+A027846 Number of subgroups of index n in fundamental group of a certain fiber space, not in paper, possibly erroneous
+A027851 Number of nonisomorphic semigroups of order n, hard

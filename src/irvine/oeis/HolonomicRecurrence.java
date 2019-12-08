@@ -1,7 +1,9 @@
 /* Holonomic sequences where the recurrence equation for a(n)
  * has polynomials in n as coefficients.
  * @(#) $Id$
- * 2019-04-12, Georg Fischer
+ * 2019-12-08: optimize for the linear case
+ * 2019-12-07, Sean Irvine: jOEIS conventions
+ * 2019-12-04, Georg Fischer
  */
 package irvine.oeis;
 
@@ -37,7 +39,7 @@ public class HolonomicRecurrence implements Sequence {
   protected int mOrder; // order k-1 of the recurrence, number of previous sequence elements used to compute a(n)
   protected ArrayList<Z[]> mPolyList; // polynomials as coefficients of <code>n^i, i=0..m</code>
   protected Z[] mBuffer; // ring buffer for the elements involved in the recurrence, indexed with mN modulo mOrder
-
+  protected int mBufSize; // size of the ring buffer
   /**
    * Empty constructor.
    */
@@ -116,11 +118,12 @@ public class HolonomicRecurrence implements Sequence {
     mN = mOffset - 1;
     mMaxDegree = 1;
     int k = mPolyList.size() - 1;
+    mBufSize = k + 2; // at least 1
+    mBuffer = new Z[mBufSize];
     mOrder = k - 1;
     if (sDebug >= 1) {
       System.out.println("order=" + mOrder);
     }
-    mBuffer = new Z[mOrder];
     while (k >= 0) { // determine mMaxDegree
       int klen = mPolyList.get(k).length;
       if (klen > mMaxDegree) {
@@ -180,11 +183,11 @@ public class HolonomicRecurrence implements Sequence {
       for (k = 1; k <= mOrder; ++k) { // sum all previous elements of the recurrence
         if (sDebug >= 1) {
           System.out.println("nd=" + nd + ", k=" + k);
-          System.out.println("    mBuffer[" + ((mN - mOrder - 1 + k) % mOrder) + "]="
-            + mBuffer[(mN - mOrder - 1 + k) % mOrder]
+          System.out.println("    mBuffer[" + ((mN - mOrder - 1 + k) % mBufSize) + "]="
+            + mBuffer[(mN - mOrder - 1 + k) % mBufSize]
             + ", old_sum=" + sum);
         }
-        sum = sum.add(pvals[k].multiply(mBuffer[(mN - mOrder - 1 + k) % mOrder]));
+        sum = sum.add(pvals[k].multiply(mBuffer[(mN - mOrder - 1 + k) % mBufSize]));
         if (sDebug >= 1) {
           System.out.println("new_sum=" + sum);
         }
@@ -199,11 +202,7 @@ public class HolonomicRecurrence implements Sequence {
         result = quotRemd[0];
       }
     }
-    if (mOrder > 0) {
-      mBuffer[mN % mOrder] = result;
-    } else {
-      mBuffer[0] = result;
-    }
+    mBuffer[mN % mBufSize] = result;
     return result;
   } // next
 

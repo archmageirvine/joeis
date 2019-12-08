@@ -93,11 +93,13 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A173650Test.class);
     suite.addTestSuite(A173653Test.class);
     suite.addTestSuite(A173657Test.class);
+    suite.addTestSuite(A173659Test.class);
     suite.addTestSuite(A173661Test.class);
     suite.addTestSuite(A173674Test.class);
     suite.addTestSuite(A173686Test.class);
     suite.addTestSuite(A173690Test.class);
     suite.addTestSuite(A173691Test.class);
+    suite.addTestSuite(A173692Test.class);
     suite.addTestSuite(A173704Test.class);
     suite.addTestSuite(A173707Test.class);
     suite.addTestSuite(A173711Test.class);

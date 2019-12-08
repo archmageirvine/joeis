@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000107;
 
 /**
- * A038002.
+ * A038002 Number of connected functions on n points with a single labeled point.
  * @author Sean A. Irvine
  */
 public class A038002 extends A000107 {

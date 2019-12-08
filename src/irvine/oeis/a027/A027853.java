@@ -5,7 +5,7 @@ import irvine.oeis.a001.A001372;
 import irvine.oeis.a038.A038002;
 
 /**
- * A027853.
+ * A027853 Functions on n points with a single labeled point.
  * @author Sean A. Irvine
  */
 public class A027853 extends ConvolutionSequence {

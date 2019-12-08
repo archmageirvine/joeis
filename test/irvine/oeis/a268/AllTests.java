@@ -63,6 +63,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A268586Test.class);
     suite.addTestSuite(A268598Test.class);
     suite.addTestSuite(A268599Test.class);
+    suite.addTestSuite(A268613Test.class);
+    suite.addTestSuite(A268615Test.class);
     suite.addTestSuite(A268622Test.class);
     suite.addTestSuite(A268633Test.class);
     suite.addTestSuite(A268644Test.class);

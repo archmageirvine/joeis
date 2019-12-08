@@ -13,7 +13,7 @@ public class A027423 implements Sequence {
 
   private final FactorSequence mFactorSequence = new FactorSequence();
   private final PrimeDivision mFactor = new PrimeDivision();
-  private int mN = -1;
+  protected int mN = -1;
 
   @Override
   public Z next() {

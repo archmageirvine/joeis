@@ -125,7 +125,7 @@ public class HolonomicRecurrence implements Sequence {
       System.out.println("order=" + mOrder);
     }
     while (k >= 0) { // determine mMaxDegree
-      int klen = mPolyList.get(k).length;
+      final int klen = mPolyList.get(k).length;
       if (klen > mMaxDegree) {
         mMaxDegree = klen;
       }
@@ -145,7 +145,7 @@ public class HolonomicRecurrence implements Sequence {
     if (mN - mOffset < mInitTerms.length) {
       result = mInitTerms[mN - mOffset];
     } else {
-      int nd = mN - mNDist;
+      final int nd = mN - mNDist;
       mNdPowers[1] = Z.valueOf(nd);
       for (int m = 2; m < mMaxDegree; ++m) { // fill powers of mN
         mNdPowers[m] = mNdPowers[m - 1].multiply(nd);

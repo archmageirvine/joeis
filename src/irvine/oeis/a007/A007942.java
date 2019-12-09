@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007942 Decimal concatenation of sequence <code>(n,n-1,..,2,1,2,..,n-1,n)</code>.
+ * A007942 Decimal concatenation of sequence <code>(n, n-1</code>, ..., <code>2, 1, 2</code>, ..., <code>n-1, n)</code>.
  * @author Sean A. Irvine
  */
 public class A007942 implements Sequence {

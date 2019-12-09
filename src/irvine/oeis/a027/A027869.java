@@ -1,0 +1,34 @@
+package irvine.oeis.a027;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A027869 Number of <code>0</code>'s in <code>n!</code>.
+ * @author Sean A. Irvine
+ */
+public class A027869 implements Sequence {
+
+  private long mN = -1;
+  private Z mF = Z.ONE;
+
+  static long count(Z n) {
+    long c = 0;
+    while (!Z.ZERO.equals(n)) {
+      final Z[] qr = n.divideAndRemainder(Z.TEN);
+      if (Z.ZERO.equals(qr[1])) {
+        ++c;
+      }
+      n = qr[0];
+    }
+    return c;
+  }
+
+  @Override
+  public Z next() {
+    if (++mN > 1) {
+      mF = mF.multiply(mN);
+    }
+    return Z.valueOf(count(mF));
+  }
+}

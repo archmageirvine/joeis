@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027857.
+ * A027857 Number of positive divisors of <code>n!</code>, read <code>mod n</code>.
  * @author Sean A. Irvine
  */
 public class A027857 extends A027423 {

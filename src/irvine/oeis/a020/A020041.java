@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020041 Nearest integer to <code>GAMMA(n+3/4)/GAMMA(3/4)</code>.
+ * A020041 <code>a(n) = round( Gamma(n+3/4)/Gamma(3/4) )</code>.
  * @author Sean A. Irvine
  */
 public class A020041 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027859.
+ * A027859 Theta series of odd Leech lattice (the unique unimodular 24-dimensional lattice with minimal norm <code>3)</code>.
  * @author Sean A. Irvine
  */
 public class A027859 implements Sequence {

@@ -8,6 +8,7 @@
 package irvine.oeis;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -28,7 +29,7 @@ import irvine.math.z.ZUtils;
  * @author Georg Fischer
  */
 public class HolonomicRecurrence implements Sequence {
-  protected static int sDebug = 0;
+  protected static final int DEBUG = 0;
 
   protected Z[] mInitTerms; // initial terms for a(n)
   protected int mNDist; // d > 0 if a(n+d) is the highest and next element to be computed (0 <= d <= k).
@@ -63,7 +64,7 @@ public class HolonomicRecurrence implements Sequence {
     mOffset = offset;
     mNDist = nDist;
     mPolyList = polyList;
-    mInitTerms = initTerms;
+    mInitTerms = Arrays.copyOf(initTerms, initTerms.length);
     initialize();
   } // Constructor
 
@@ -92,7 +93,7 @@ public class HolonomicRecurrence implements Sequence {
     if (start <= 1) { // linear case, only a vector of the form "[0,1,2,...]"
       final String[] polys = matrix.substring(start, behind).split("\\s*,\\s*");
       for (int k = 0; k < polys.length; ++k) {
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("polys[" + k + "]=" + polys[k]);
         }
         mPolyList.add(new Z[] {new Z(polys[k])});
@@ -100,7 +101,7 @@ public class HolonomicRecurrence implements Sequence {
     } else { // matrix, holonomic case
       final String[] polys = matrix.substring(start, behind).split("]\\s*,\\s*\\[");
       for (int k = 0; k < polys.length; ++k) {
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("polys[" + k + "]=" + polys[k]);
         }
         mPolyList.add(ZUtils.toZ(polys[k]));
@@ -121,7 +122,7 @@ public class HolonomicRecurrence implements Sequence {
     mBufSize = k + 2; // at least 1
     mBuffer = new Z[mBufSize];
     mOrder = k - 1;
-    if (sDebug >= 1) {
+    if (DEBUG >= 1) {
       System.out.println("order=" + mOrder);
     }
     while (k >= 0) { // determine mMaxDegree
@@ -173,7 +174,7 @@ public class HolonomicRecurrence implements Sequence {
           }
         } // for i - terms of one polynomial in nd
         pvals[k] = pvalk;
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("pvals[" + k + "]=" + pvals[k]);
         }
         --k;
@@ -181,20 +182,20 @@ public class HolonomicRecurrence implements Sequence {
       // pvals[0..mOrder] now contain the coefficients of the recurrence equation
       Z sum = pvals[0]; // the constant term (without a(k)) in the recurrence, mostly ZERO
       for (k = 1; k <= mOrder; ++k) { // sum all previous elements of the recurrence
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("nd=" + nd + ", k=" + k);
           System.out.println("    mBuffer[" + ((mN - mOrder - 1 + k) % mBufSize) + "]="
             + mBuffer[(mN - mOrder - 1 + k) % mBufSize]
             + ", old_sum=" + sum);
         }
         sum = sum.add(pvals[k].multiply(mBuffer[(mN - mOrder - 1 + k) % mBufSize]));
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("new_sum=" + sum);
         }
       } // for k - summing
       final Z[] quotRemd = sum.negate().divideAndRemainder(pvals[mOrder + 1]);
       if (!quotRemd[1].equals(Z.ZERO)) {
-        if (sDebug >= 1) {
+        if (DEBUG >= 1) {
           System.out.println("assertion: division with rest " + quotRemd[1].toString());
         }
         result = null;

@@ -21,7 +21,7 @@ public class A051424 implements Sequence {
   private final HashMap<Pair<Pair<Long, Long>, Set<Long>>, Z> mCache = new HashMap<>();
 
   private Set<Long> select(final Set<Long> s, final long i) {
-    return s.stream().filter((x) -> x < i).collect(Collectors.toSet());
+    return s.stream().filter(x -> x < i).collect(Collectors.toSet());
   }
 
   private boolean isEmptyIntersection(final Set<Long> s, final Z[] f) {

@@ -6,7 +6,6 @@
         <property name="file" value="${checkstyle.suppressions.file}"/>
     </module>
     <module name="TreeWalker">
-        <module name="FileContentsHolder"/>
         <module name="JavadocType">
             <property name="scope" value="public"/>
             <property name="authorFormat" value="\S"/>
@@ -127,11 +126,9 @@
             <property name="scope" value="public"/>
             <property name="authorFormat" value="\S"/>
         </module>
-        <module name="JavadocMethod">
+        <module name="MissingJavadocMethod">
             <property name="scope" value="public"/>
-            <property name="allowUndeclaredRTE" value="true"/>
             <property name="allowMissingPropertyJavadoc" value="true"/>
-            <property name="suppressLoadErrors" value="true"/>
         </module>
         <module name="JavadocVariable">
             <property name="scope" value="public"/>
@@ -143,6 +140,7 @@
         <module name="FinalLocalVariable">
             <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
         </module>
+        <module name="SuppressionCommentFilter"/>
     </module>
     <module name="FileLength">
       <property name="max" value="750"/>
@@ -150,5 +148,4 @@
     <module name="FileTabCharacter"/>
     <module name="NewlineAtEndOfFile"/>
     <module name="Translation"/>
-    <module name="SuppressionCommentFilter"/>
 </module>

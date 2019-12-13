@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027886.
+ * A027886 Primes of form <code>n + (n+1)^2 + (n+2)^3 + (n+3)^4 + (n+4)^5</code>.
  * @author Sean A. Irvine
  */
 public class A027886 implements Sequence {

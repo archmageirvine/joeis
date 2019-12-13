@@ -209,7 +209,7 @@ public class HolonomicRecurrence implements Sequence {
 
 //  /**
 //   * Test method
-//   * @param args command line arguments: offset, matrix, initTerms, nDist
+//   * @param args command line arguments: <code>offset, matrix, initTerms, nDist</code>
 //   */
 //  public static void main(String[] args) {
 //    int maxTerms     = 16;

@@ -1,5 +1,7 @@
 package irvine.oeis.a027;
 
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
@@ -10,6 +12,6 @@ public class A027896 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A027896() {
-    super(1, 3, 9, 21649, 64947, 194841, 513239, 1539717, 4619151, 11111111111L, 33333333333L, 99999999999L);
+    super(Jaguar.factor(Z.valueOf(99999999999L)).divisorsSorted());
   }
 }

@@ -1,9 +1,11 @@
 package irvine.oeis.a027;
 
+import irvine.factor.factor.Jaguar;
+import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027892.
+ * A027892 Divisors of 999999.
  * @author Sean A. Irvine
  */
 public class A027892 extends FiniteSequence {
@@ -12,6 +14,6 @@ public class A027892 extends FiniteSequence {
    * Construct the sequence.
    */
   public A027892() {
-    super(1, 3, 7, 9, 11, 13, 21, 27, 33, 37, 39, 63, 77, 91, 99, 111, 117, 143, 189, 231, 259, 273, 297, 333, 351, 407, 429, 481, 693, 777, 819, 999, 1001, 1221, 1287, 1443, 2079, 2331, 2457, 2849, 3003, 3367, 3663, 3861, 4329, 5291, 6993, 8547, 9009, 10101, 10989, 12987, 15873, 25641, 27027, 30303, 37037, 47619, 76923, 90909, 111111, 142857, 333333, 999999);
+    super(Jaguar.factor(Z.valueOf(999999)).divisorsSorted());
   }
 }

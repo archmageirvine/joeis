@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028248.
+ * A028248 Expansion of <code>exp(exp(exp(x) - 1 - x) - 1)</code>.
  * @author Sean A. Irvine
  */
 public class A028248 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028251.
+ * A028251 Sequence arising in multiprocessor page migration.
  * @author Sean A. Irvine
  */
 public class A028251 implements Sequence {

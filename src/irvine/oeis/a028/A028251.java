@@ -29,7 +29,9 @@ public class A028251 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 1) {
+      return Z.THREE;
+    }
     final Z d = Z.valueOf(20 * mN).subtract(4).multiply(mN).add(1);
     final long k = CR.valueOf(d).sqrt().divide(CR.TWO).add(CR.valueOf(mN)).subtract(CR.HALF).floor().longValueExact();
     final Q u = max(mN, k);

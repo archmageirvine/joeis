@@ -59,6 +59,7 @@ public final class Names {
     FORMULA.add("Tmn");
     FORMULA.add("McL");
     FORMULA.add("Cn");
+    FORMULA.add("CIJ");
     FORMULA.add("INVERTi");
     FORMULA.add("EXPCONV");
     FORMULA.add("REVEGF");
@@ -74,6 +75,7 @@ public final class Names {
     FORMULA.add("z");
     FORMULA.add("ij");
     FORMULA.add("xy");
+    FORMULA.add("xz");
     FORMULA.add("XY");
     FORMULA.add("Pn");
     FORMULA.add("xj");
@@ -84,6 +86,7 @@ public final class Names {
     FORMULA.add("yz");
     FORMULA.add("ub");
     FORMULA.add("uv");
+    FORMULA.add("wz");
     FORMULA.add("uu");
     FORMULA.add("uf,");
     FORMULA.add("nx,");

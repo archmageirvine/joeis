@@ -1173,3 +1173,5 @@ A027845 Number of subgroups of index n in fundamental group of a certain fiber s
 A027846 Number of subgroups of index n in fundamental group of a certain fiber space, not in paper, possibly erroneous
 A027851 Number of nonisomorphic semigroups of order n, hard
 A027881 a(i)=a(i-1)+a(j_1)*a(j_2) {where j_1+j_2=i-1, j_1 <= q j_2} + a(j_1)*a(j_2)*a(j_3) {where j_1+j_2+j_3=i-1, j_1 <= q j_2 <= q j_3} +...+ a(1)^{i-1}, possibly erroneous
+A028241 Weight distribution of (256,2^240,6) Preparata code
+A028247 Number of T-frame polyominoes with n cells, insufficient information

@@ -8,6 +8,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A028239 extends FiniteSequence {
 
+  /** Construct the sequence. */
   public A028239() {
     super(1, 0, 0, 41664, 2118168, 74203584, 1602647424, 23369897088L, 238532662620L, 1758643689600L,
       9579950593920L, 39232098538560L, 122387418032040L, 293729091759936L, 546275088069376L,

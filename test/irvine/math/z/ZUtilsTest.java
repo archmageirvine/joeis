@@ -98,7 +98,8 @@ public class ZUtilsTest extends TestCase {
     assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("12 -1")));
     assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("12, -1")));
     assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("[12,-1]")));
-    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("(12, -1)")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("[  12,-1]")));
+    assertEquals("[12, -1]", Arrays.toString(ZUtils.toZ("(12, -1 )")));
     assertEquals("[12, -1, 42, 0]", Arrays.toString(ZUtils.toZ("{12, -1, 42,  0}")));
     assertEquals("[12, -1, 42, 0]", Arrays.toString(ZUtils.toZ("{12 -1 42  0}")));
   }

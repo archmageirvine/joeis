@@ -542,7 +542,7 @@ public final class ZUtils {
     if (s.endsWith("]") || s.endsWith(")") || s.endsWith("}")) {
       s = s.substring(0, s.length() - 1);
     }
-    final String[] parts = s.split("[, ]+");
+    final String[] parts = s.trim().split("[, ]+");
     final Z[] res = new Z[parts.length];
     for (int k = 0; k < parts.length; ++k) {
       res[k] = new Z(parts[k]);

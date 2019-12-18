@@ -1,17 +1,17 @@
 package irvine.util.string;
 
 /**
- * Norwegian (Bokmal) related string functions.
+ * Norwegian (Nynorsk) related string functions.
  *
  * @author Sean A. Irvine
  */
-public final class Norwegian {
+public final class Nynorsk {
 
-  private Norwegian() { }
+  private Nynorsk() { }
 
   private static final String[] SMALL = {
     "null",
-    "\u00e9n",
+    "\u00e9in",
     "to",
     "tre",
     "fire",
@@ -32,18 +32,7 @@ public final class Norwegian {
     "nitten"
   };
 
-  static final String[] TENS = {
-    null,
-    null,
-    "tjue",
-    "tretti",
-    "f\u00f8rti",
-    "femti",
-    "seksti",
-    "sytti",
-    "\u00e5tti",
-    "nitti"
-  };
+  private static final String[] TENS = Norwegian.TENS;
 
   /**
    * Return a Norwegian string representing the supplied integer value.

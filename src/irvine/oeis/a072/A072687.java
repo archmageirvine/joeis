@@ -23,7 +23,7 @@ public class A072687 implements Sequence {
       throw new UnsupportedOperationException();
     }
     while ((mP = mPrime.nextPrime(mP)) < mLimit) {
-      final int plen = English.toEnglish((int) mP).replaceAll("[ \\-]", "").length();
+      final int plen = English.SINGLETON.toText((int) mP).replaceAll("[ \\-]", "").length();
       if (mPrime.isPrime(plen)) {
         ++mC;
       }

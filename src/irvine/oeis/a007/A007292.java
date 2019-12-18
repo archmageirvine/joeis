@@ -15,7 +15,7 @@ public class A007292 implements Sequence {
 
   @Override
   public Z next() {
-    final String hungarian = Hungarian.toHungarian(++mN);
+    final String hungarian = Hungarian.SINGLETON.toText(++mN);
     final int length = hungarian.replace("gy", "X").replace("ny", "X").replace("sz", "X").length();
     if (mVerbose) {
       System.out.println(mN + " " + hungarian + " (" + length + ")");

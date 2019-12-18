@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Dutch related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Dutch {
+public final class Dutch extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Dutch SINGLETON = new Dutch();
 
   private Dutch() {
   }
@@ -150,13 +152,8 @@ public final class Dutch {
     return sb.toString().trim();
   }
 
-  /**
-   * Return an Dutch string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Dutch text representation
-   */
-  public static String toDutch(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

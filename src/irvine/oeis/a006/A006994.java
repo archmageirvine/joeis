@@ -14,6 +14,6 @@ public class A006994 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Russian.toRussian(++mN).replace(" ", "").length());
+    return Z.valueOf(Russian.SINGLETON.toRawText(++mN).length());
   }
 }

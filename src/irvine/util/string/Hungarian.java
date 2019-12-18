@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Hungarian related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Hungarian {
+public final class Hungarian extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Hungarian SINGLETON = new Hungarian();
 
   private Hungarian() { }
 
@@ -17,13 +19,8 @@ public final class Hungarian {
     null, "t\u00EDzen", "huszon", "harminc", "negyven", "\u00F6tven", "hatvan", "hetven", "nyolcvan", "kilencven"
   };
 
-  /**
-   * Return an Hungarian string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Hungarian text representation
-   */
-  public static String toHungarian(int x) {
+  @Override
+  public String toText(int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

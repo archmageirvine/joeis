@@ -16,13 +16,6 @@ public class A027684 implements Sequence {
 
   @Override
   public Z next() {
-    final String s = DottedHebrew.toDottedHebrew(++mN);
-    final StringBuilder sb = new StringBuilder();
-    for (int k = 0; k < s.length(); ++k) {
-      if (Character.isLetter(s.charAt(k))) {
-        sb.append(s.charAt(k));
-      }
-    }
-    return Z.valueOf(sb.length());
+    return Z.valueOf(DottedHebrew.SINGLETON.toRawText(++mN).length());
   }
 }

@@ -23,7 +23,7 @@ public class A108968 implements Sequence {
   public Z next() {
     final StringBuilder sb = new StringBuilder();
     while (true) {
-      final String s = English.toEnglish(++mN);
+      final String s = English.SINGLETON.toText(++mN);
       sb.setLength(0);
       for (int k = 0; k < s.length(); ++k) {
         final char c = s.charAt(k);

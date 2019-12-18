@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Polish related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Polish {
+public final class Polish extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Polish SINGLETON = new Polish();
 
   private Polish() { }
 
@@ -71,13 +73,8 @@ public final class Polish {
     "tysi\u0119cy",
   };
 
-  /**
-   * Return a Polish string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Polish text representation
-   */
-  public static String toPolish(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 99999) {
       throw new UnsupportedOperationException();
     }
@@ -86,11 +83,11 @@ public final class Polish {
         return "tysi\u0105c";
       }
       if (x < 2000) {
-        return "tysi\u0105c " + toPolish(x % 1000);
+        return "tysi\u0105c " + toText(x % 1000);
       } else if (x % 1000 != 0) {
-        return toPolish(x / 1000) + " " + THOUSANDS[x / 1000] + " " + toPolish(x % 1000);
+        return toText(x / 1000) + " " + THOUSANDS[x / 1000] + " " + toText(x % 1000);
       } else {
-        return toPolish(x / 1000) + " " + THOUSANDS[x / 1000];
+        return toText(x / 1000) + " " + THOUSANDS[x / 1000];
       }
     }
     if (x >= 100) {
@@ -98,9 +95,9 @@ public final class Polish {
         return "sto";
       }
       if (x < 200) {
-        return "sto " + toPolish(x % 100);
+        return "sto " + toText(x % 100);
       } else if (x % 100 != 0) {
-        return HUNDREDS[x / 100] + " " + toPolish(x % 100);
+        return HUNDREDS[x / 100] + " " + toText(x % 100);
       } else {
         return HUNDREDS[x / 100];
       }

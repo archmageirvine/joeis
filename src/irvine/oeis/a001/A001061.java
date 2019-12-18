@@ -15,8 +15,8 @@ public class A001061 extends A001058 {
   private static class MyComparator implements Comparator<Z>, Serializable {
     @Override
     public int compare(final Z z1, final Z z2) {
-      final String a = German.toGerman(z1.intValue()).replace("\u00DF", "ss");
-      final String b = German.toGerman(z2.intValue()).replace("\u00DF", "ss");
+      final String a = German.SINGLETON.toText(z1.intValue()).replace("\u00DF", "ss");
+      final String b = German.SINGLETON.toText(z2.intValue()).replace("\u00DF", "ss");
       return a.compareTo(b);
     }
   }

@@ -30,7 +30,7 @@ public class A139132 implements Sequence {
     while (!vowel(++mPos)) {
       // do nothing
     }
-    mBuilder.append(French.toFrench(mPos).replace(" ", "").replace("-", ""));
+    mBuilder.append(French.SINGLETON.toRawText(mPos));
     //System.out.println(mBuilder.toString());
     return Z.valueOf(mPos);
   }

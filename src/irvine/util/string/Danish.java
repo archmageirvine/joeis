@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Danish related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Danish {
+public final class Danish extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Danish SINGLETON = new Danish();
 
   private Danish() { }
 
@@ -45,13 +47,8 @@ public final class Danish {
     "falvfems",
   };
 
-  /**
-   * Return a Danish string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Danish text representation
-   */
-  public static String toDanish(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 99999) {
       throw new UnsupportedOperationException();
     }
@@ -60,15 +57,15 @@ public final class Danish {
         return "tusind";
       }
       if (x < 2000) {
-        return "tusind " + toDanish(x % 1000);
+        return "tusind " + toText(x % 1000);
       } else if (x % 1000 != 0) {
         if (x % 1000 >= 100) {
-          return toDanish(x / 1000) + " tusinde " + toDanish(x % 1000);
+          return toText(x / 1000) + " tusinde " + toText(x % 1000);
         } else {
-          return toDanish(x / 1000) + " tusinde og " + toDanish(x % 1000);
+          return toText(x / 1000) + " tusinde og " + toText(x % 1000);
         }
       } else {
-        return toDanish(x / 1000) + " tusinde";
+        return toText(x / 1000) + " tusinde";
       }
     }
     if (x >= 100) {
@@ -76,11 +73,11 @@ public final class Danish {
         return "hundrede";
       }
       if (x < 200) {
-        return "hundrede og " + toDanish(x % 100);
+        return "hundrede og " + toText(x % 100);
       } else if (x % 100 != 0) {
-        return toDanish(x / 100) + " hundrede og " + toDanish(x % 100);
+        return toText(x / 100) + " hundrede og " + toText(x % 100);
       } else {
-        return toDanish(x / 100) + " hundrede";
+        return toText(x / 100) + " hundrede";
       }
     }
     if (x < SMALL.length) {

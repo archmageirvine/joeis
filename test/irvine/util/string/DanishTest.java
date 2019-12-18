@@ -9,23 +9,23 @@ import junit.framework.TestCase;
 public class DanishTest extends TestCase {
 
   public void testIntToText() {
-    assertEquals("nul", Danish.toDanish(0));
-    assertEquals("en", Danish.toDanish(1));
-    assertEquals("to", Danish.toDanish(2));
-    assertEquals("tre", Danish.toDanish(3));
-    assertEquals("ti", Danish.toDanish(10));
-    assertEquals("elleve", Danish.toDanish(11));
-    assertEquals("tyve", Danish.toDanish(20));
-    assertEquals("hundrede", Danish.toDanish(100));
-    assertEquals("hundrede og en", Danish.toDanish(101));
-    assertEquals("hundrede og femogtyve", Danish.toDanish(125));
-    assertEquals("to hundrede", Danish.toDanish(200));
-    assertEquals("to hundrede og en", Danish.toDanish(201));
-    assertEquals("to hundrede og to", Danish.toDanish(202));
-    assertEquals("to hundrede og treogfyrre", Danish.toDanish(243));
-    assertEquals("tusind", Danish.toDanish(1000));
-    assertEquals("to tusinde", Danish.toDanish(2000));
-    assertEquals("to tusinde fem hundrede", Danish.toDanish(2500));
-    assertEquals("fire tusinde to hundrede og fireogtyve", Danish.toDanish(4224));
+    assertEquals("nul", Danish.SINGLETON.toText(0));
+    assertEquals("en", Danish.SINGLETON.toText(1));
+    assertEquals("to", Danish.SINGLETON.toText(2));
+    assertEquals("tre", Danish.SINGLETON.toText(3));
+    assertEquals("ti", Danish.SINGLETON.toText(10));
+    assertEquals("elleve", Danish.SINGLETON.toText(11));
+    assertEquals("tyve", Danish.SINGLETON.toText(20));
+    assertEquals("hundrede", Danish.SINGLETON.toText(100));
+    assertEquals("hundrede og en", Danish.SINGLETON.toText(101));
+    assertEquals("hundrede og femogtyve", Danish.SINGLETON.toText(125));
+    assertEquals("to hundrede", Danish.SINGLETON.toText(200));
+    assertEquals("to hundrede og en", Danish.SINGLETON.toText(201));
+    assertEquals("to hundrede og to", Danish.SINGLETON.toText(202));
+    assertEquals("to hundrede og treogfyrre", Danish.SINGLETON.toText(243));
+    assertEquals("tusind", Danish.SINGLETON.toText(1000));
+    assertEquals("to tusinde", Danish.SINGLETON.toText(2000));
+    assertEquals("to tusinde fem hundrede", Danish.SINGLETON.toText(2500));
+    assertEquals("fire tusinde to hundrede og fireogtyve", Danish.SINGLETON.toText(4224));
   }
 }

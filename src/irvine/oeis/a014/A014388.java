@@ -18,7 +18,7 @@ public class A014388 implements Sequence {
       return Z.valueOf((mN + 1) / 2);
     } else {
       int k = 0;
-      while (English.toEnglish(++k).replaceAll("[- ]", "").length() != mN / 2) {
+      while (English.SINGLETON.toText(++k).replaceAll("[- ]", "").length() != mN / 2) {
         // do nothing
       }
       return Z.valueOf(k);

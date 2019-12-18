@@ -15,6 +15,6 @@ public class A079048 implements Sequence {
 
   @Override
   public Z next() {
-    return new Z(Telephone.dial(English.toEnglish(++mN)));
+    return new Z(Telephone.dial(English.SINGLETON.toText(++mN)));
   }
 }

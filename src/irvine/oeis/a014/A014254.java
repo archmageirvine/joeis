@@ -15,7 +15,7 @@ public class A014254 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      if (!French.toFrench(++mN).contains("e")) {
+      if (!French.SINGLETON.toText(++mN).contains("e")) {
         return Z.valueOf(mN);
       }
     }

@@ -14,7 +14,7 @@ public class A014656 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Norwegian.toNorwegian(++mN).replace(" ", "").length());
+    return Z.valueOf(Norwegian.SINGLETON.toRawText(++mN).length());
   }
 }
 

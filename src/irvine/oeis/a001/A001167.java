@@ -13,7 +13,7 @@ public class A001167 implements Sequence {
   private int mN = 0;
 
   static int wordCount(final int v) {
-    final String eng = English.toEnglish(v);
+    final String eng = English.SINGLETON.toText(v);
     int c = 1;
     for (int k = 3; k < eng.length(); ++k) {
       final char ch = eng.charAt(k);

@@ -14,7 +14,7 @@ public class A005606 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(English.toEnglish(++mN).charAt(0) - '`');
+    return Z.valueOf(English.SINGLETON.toText(++mN).charAt(0) - '`');
   }
 }
 

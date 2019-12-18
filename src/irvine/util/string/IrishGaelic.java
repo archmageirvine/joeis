@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Irish Gaelic related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class IrishGaelic {
+public final class IrishGaelic extends AbstractLanguage {
+
+  /** Instance. */
+  public static final IrishGaelic SINGLETON = new IrishGaelic();
 
   private IrishGaelic() { }
 
@@ -20,13 +22,8 @@ public final class IrishGaelic {
     "c\u00E9ad",
   };
 
-  /**
-   * Return an Irish Gaelic string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Irish Gaelic text representation
-   */
-  public static String toIrishGaelic(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

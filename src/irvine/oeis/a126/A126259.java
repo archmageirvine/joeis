@@ -15,7 +15,7 @@ public class A126259 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final String s = English.toEnglish(++mN);
+      final String s = English.SINGLETON.toText(++mN);
       int c = 0;
       for (int k = 0; k < s.length(); ++k) {
         if (Character.isLetter(s.charAt(k))) {

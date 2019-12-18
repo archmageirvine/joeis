@@ -14,6 +14,6 @@ public class A011762 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Spanish.toSpanish(++mN).replace(" ", "").length());
+    return Z.valueOf(Spanish.SINGLETON.toRawText(++mN).length());
   }
 }

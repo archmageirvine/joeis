@@ -15,7 +15,7 @@ public class A014287 implements Sequence {
 
   @Override
   public Z next() {
-    final String french = French.toFrench(++mN).replace('u', 'v');
+    final String french = French.SINGLETON.toText(++mN).replace('u', 'v');
     final StringBuilder roman = new StringBuilder();
     for (int k = 0; k < french.length(); ++k) {
       final char c = french.charAt(k);

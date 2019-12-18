@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Finnish related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Finnish {
+public final class Finnish extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Finnish SINGLETON = new Finnish();
 
   private Finnish() { }
 
@@ -17,13 +19,8 @@ public final class Finnish {
     "kahdeksantoista", "yhdeks\u00E4ntoista",
   };
 
-  /**
-   * Return an Finnish string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Finnish text representation
-   */
-  public static String toFinnish(int x) {
+  @Override
+  public String toText(int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

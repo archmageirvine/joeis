@@ -27,7 +27,7 @@ public class A139133 implements Sequence {
     while (vowel(++mPos) || mPos == 2) {
       // do nothing
     }
-    mBuilder.append(English.toRawEnglish(mPos));
+    mBuilder.append(English.SINGLETON.toRawText(mPos));
     //System.out.println(mBuilder.toString());
     return Z.valueOf(mPos);
   }

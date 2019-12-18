@@ -20,7 +20,7 @@ public class A000916 implements Sequence {
     final int letters = (mN + 1) / 2 + 2;
     int k = 0;
     // this sequence requires "and" at appropriate places in numbers
-    while (English.toEnglish(++k).replace("-", "").replace(" ", "").length() != letters) {
+    while (English.SINGLETON.toText(++k).replace("-", "").replace(" ", "").length() != letters) {
       // do nothing
     }
     return Z.valueOf(k);

@@ -15,7 +15,7 @@ public class A000867 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      if (English.toEnglish(++mN).charAt(0) == 'f') {
+      if (English.SINGLETON.toText(++mN).charAt(0) == 'f') {
         return Z.valueOf(mN);
       }
     }

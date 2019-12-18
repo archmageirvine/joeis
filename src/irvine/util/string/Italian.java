@@ -4,7 +4,10 @@ package irvine.util.string;
  * Italian related string functions.
  * @author Sean A. Irvine
  */
-public final class Italian {
+public final class Italian extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Italian SINGLETON = new Italian();
 
   private Italian() { }
 
@@ -44,25 +47,8 @@ public final class Italian {
     "novanta",
   };
 
-  private static final String[] HUNDREDS = {
-    null,
-    "ciento",
-    "doscientos",
-    "trescientos",
-    "cuatrocientos",
-    "quinientos",
-    "seiscientos",
-    "setecientos",
-    "ochocientos",
-    "novecientos",
-  };
-
-  /**
-   * Return an Italian string representing the supplied integer value.
-   * @param x number to convert
-   * @return Italian text representation
-   */
-  public static String toItalian(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 99999) {
       throw new UnsupportedOperationException();
     }
@@ -71,11 +57,11 @@ public final class Italian {
         return "mille";
       }
       if (x < 2000) {
-        return "mille " + toItalian(x % 1000);
+        return "mille " + toText(x % 1000);
       } else if (x % 1000 != 0) {
-        return toItalian(x / 1000) + "mila " + toItalian(x % 1000);
+        return toText(x / 1000) + "mila " + toText(x % 1000);
       } else {
-        return toItalian(x / 1000) + "mila";
+        return toText(x / 1000) + "mila";
       }
     }
     if (x >= 100) {
@@ -83,7 +69,7 @@ public final class Italian {
         return "cento";
       }
       final int r = x % 100;
-      final String small = r == 0 ? "" : toItalian(r);
+      final String small = r == 0 ? "" : toText(r);
       final String t = "cento" + (small.startsWith("o") && !"otto".equals(small) ? small.substring(1) : small);
       if (x < 200) {
         return t;

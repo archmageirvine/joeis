@@ -4,7 +4,10 @@ package irvine.util.string;
  * Spanish related string functions.
  * @author Sean A. Irvine
  */
-public final class Spanish {
+public final class Spanish extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Spanish SINGLETON = new Spanish();
 
   private Spanish() { }
 
@@ -67,12 +70,8 @@ public final class Spanish {
     "novecientos",
   };
 
-  /**
-   * Return a Spanish string representing the supplied integer value.
-   * @param x number to convert
-   * @return Spanish text representation
-   */
-  public static String toSpanish(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 99999) {
       throw new UnsupportedOperationException();
     }
@@ -81,11 +80,11 @@ public final class Spanish {
         return "mil";
       }
       if (x < 2000) {
-        return "mil " + toSpanish(x % 1000);
+        return "mil " + toText(x % 1000);
       } else if (x % 1000 != 0) {
-        return toSpanish(x / 1000) + " mil " + toSpanish(x % 1000);
+        return toText(x / 1000) + " mil " + toText(x % 1000);
       } else {
-        return toSpanish(x / 1000) + " mil";
+        return toText(x / 1000) + " mil";
       }
     }
     if (x >= 100) {
@@ -94,7 +93,7 @@ public final class Spanish {
       }
       final String res = HUNDREDS[x / 100];
       if (x % 100 != 0) {
-        return res + " " + toSpanish(x % 100);
+        return res + " " + toText(x % 100);
       } else {
         return res;
       }

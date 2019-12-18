@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Russian related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Russian {
+public final class Russian extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Russian SINGLETON = new Russian();
 
   private Russian() { }
 
@@ -25,13 +27,8 @@ public final class Russian {
     "\u0441\u0435\u043c\u044c\u0441\u043e\u0442", "\u0432\u043e\u0441\u0435\u043c\u044c\u0441\u043e\u0442", "\u0434\u0435\u0432\u044f\u0442\u044c\u0441\u043e\u0442"
   };
 
-  /**
-   * Return a Russian string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Russian text representation
-   */
-  public static String toRussian(int x) {
+  @Override
+  public String toText(int x) {
     if (x < 0 || x >= 2000) {
       throw new UnsupportedOperationException();
     }

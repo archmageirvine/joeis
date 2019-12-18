@@ -14,7 +14,7 @@ public class A005589 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(English.toRawEnglish(++mN).length());
+    return Z.valueOf(English.SINGLETON.toRawText(++mN).length());
   }
 }
 

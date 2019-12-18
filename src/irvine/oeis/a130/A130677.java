@@ -17,7 +17,7 @@ public class A130677 implements Sequence {
   @Override
   public Z next() {
     if (mPos >= mS.length()) {
-      mS = English.toRawEnglish(mN);
+      mS = English.SINGLETON.toRawText(mN);
       mN <<= 1;
       mPos = 0;
     }

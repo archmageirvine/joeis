@@ -14,7 +14,7 @@ public class A007005 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(French.toFrench(++mN).length());
+    return Z.valueOf(French.SINGLETON.toText(++mN).length());
   }
 }
 

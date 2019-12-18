@@ -17,7 +17,7 @@ public class A001619 implements Sequence {
   @Override
   public Z next() {
     while (true) {
-      final String name = English.toEnglish(++mN);
+      final String name = English.SINGLETON.toText(++mN);
       final int len = name.replace(" ", "").length();
       if (len > mLetterCount) {
         mLetterCount = len;

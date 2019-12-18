@@ -14,7 +14,7 @@ public class A008962 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Polish.toPolish(++mN).replace(" ", "").length());
+    return Z.valueOf(Polish.SINGLETON.toRawText(++mN).length());
   }
 }
 

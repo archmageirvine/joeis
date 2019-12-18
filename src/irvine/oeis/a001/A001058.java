@@ -17,8 +17,8 @@ public class A001058 implements Sequence {
   private static class MyComparator implements Comparator<Z>, Serializable {
     @Override
     public int compare(final Z z1, final Z z2) {
-      final String a = English.toRawEnglish(z1.intValue());
-      final String b = English.toRawEnglish(z2.intValue());
+      final String a = English.SINGLETON.toRawText(z1.intValue());
+      final String b = English.SINGLETON.toRawText(z2.intValue());
       return b.compareTo(a);
     }
   }

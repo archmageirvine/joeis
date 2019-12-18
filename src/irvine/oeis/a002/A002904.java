@@ -17,7 +17,7 @@ public class A002904 implements Sequence {
 
   @Override
   public Z next() {
-    final String english = English.toEnglish(++mN);
+    final String english = English.SINGLETON.toText(++mN);
     final StringBuilder roman = new StringBuilder();
     for (int k = 0; k < english.length(); ++k) {
       final char c = english.charAt(k);

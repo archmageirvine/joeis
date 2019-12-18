@@ -17,7 +17,7 @@ public class A016037 implements Sequence {
     long c = 0;
     int m = ++mN;
     while (m != 4) {
-      m = English.toRawEnglish(m).length();
+      m = English.SINGLETON.toRawText(m).length();
       ++c;
     }
     return Z.valueOf(c);

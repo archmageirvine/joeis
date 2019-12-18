@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * English related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class English {
+public final class English extends AbstractLanguage {
+
+  /** Instance. */
+  public static final English SINGLETON = new English();
 
   private English() { }
 
@@ -21,16 +23,8 @@ public final class English {
     "sixty", "seventy", "eighty", "ninety"
   };
 
-  /**
-   * Return an English string representing the supplied integer value. For
-   * numbers in the range -1000000000 &lt; x &lt; 1000000000 the returned string will be a
-   * textual representation of the number. For larger values the supplied int is
-   * returned as a numerical string.
-   *
-   * @param x number to convert
-   * @return English text representation
-   */
-  public static String toEnglish(int x) {
+  @Override
+  public String toText(int x) {
     final StringBuilder b = new StringBuilder();
     if (x < 0) {
       b.append("negative ");
@@ -45,7 +39,7 @@ public final class English {
       throw new UnsupportedOperationException();
     }
     if (x >= 20000000) {
-      return b.append(toEnglish(x / 1000000)).append(" million ").append(toEnglish(x % 1000000)).toString();
+      return b.append(toText(x / 1000000)).append(" million ").append(toText(x % 1000000)).toString();
     }
     // x>=20 && x < 20000000
     if (x >= 1000000) {
@@ -105,20 +99,11 @@ public final class English {
         }
       }
     }
-
     return b.toString().trim();
   }
 
-  /**
-   * Return an English string representing the supplied integer value. For
-   * numbers in the range 0 &lt;= x &lt; 20000000 the returned string will be a
-   * textual representation of the number. Differs from <code>toEnglish</code> in that
-   * all spaces, hyphens, etc. are omitted.
-   *
-   * @param x number to convert
-   * @return English text representation
-   */
-  public static String toRawEnglish(int x) {
+  @Override
+  public String toRawText(int x) {
     final StringBuilder b = new StringBuilder();
     if (x < 0 || x > 19999999) {
       throw new UnsupportedOperationException();
@@ -185,12 +170,11 @@ public final class English {
 
   /**
    * Print numbers.
-   *
    * @param args numerical values
    */
   public static void main(final String[] args) {
     for (final String s : args) {
-      System.out.println(toEnglish(Integer.parseInt(s)));
+      System.out.println(SINGLETON.toText(Integer.parseInt(s)));
     }
   }
 }

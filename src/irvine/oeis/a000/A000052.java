@@ -24,7 +24,7 @@ public class A000052 implements Sequence {
         throw new UnsupportedOperationException();
       }
       for (int k = mLow; k < mHigh; ++k) {
-        mMap.put(English.toRawEnglish(k), k);
+        mMap.put(English.SINGLETON.toRawText(k), k);
       }
       mLow = mHigh;
       mHigh *= 10;

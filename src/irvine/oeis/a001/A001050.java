@@ -14,6 +14,6 @@ public class A001050 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Finnish.toFinnish(++mN).length());
+    return Z.valueOf(Finnish.SINGLETON.toText(++mN).length());
   }
 }

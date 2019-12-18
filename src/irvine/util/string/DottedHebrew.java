@@ -4,7 +4,10 @@ package irvine.util.string;
  * Hebrew numbers.
  * @author Sean A. Irvine
  */
-public final class DottedHebrew {
+public final class DottedHebrew extends AbstractLanguage {
+
+  /** Instance. */
+  public static final DottedHebrew SINGLETON = new DottedHebrew();
 
   private DottedHebrew() { }
 
@@ -56,13 +59,8 @@ public final class DottedHebrew {
     "\u05ea\u05b4\u05bc\u05e9\u05b0\u05c1\u05e2\u05b4\u05d9\u05dd"
   };
 
-  /**
-   * Return an dotted Hebrew string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return dotted Hebrew text representation
-   */
-  public static String toDottedHebrew(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 100) {
       throw new UnsupportedOperationException();
     }

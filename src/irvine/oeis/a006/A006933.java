@@ -16,7 +16,7 @@ public class A006933 implements Sequence {
   public Z next() {
     while (true) {
       mN += 2;
-      if (!English.toEnglish(mN).contains("e")) {
+      if (!English.SINGLETON.toText(mN).contains("e")) {
         return Z.valueOf(mN);
       }
     }

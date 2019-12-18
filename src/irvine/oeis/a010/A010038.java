@@ -14,7 +14,7 @@ public class A010038 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Czech.toCzech(++mN).replace(" ", "").length());
+    return Z.valueOf(Czech.SINGLETON.toRawText(++mN).length());
   }
 }
 

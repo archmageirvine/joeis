@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * French related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class French {
+public final class French extends AbstractLanguage {
+
+  /** Instance. */
+  public static final French SINGLETON = new French();
 
   private French() { }
 
@@ -155,13 +157,8 @@ public final class French {
     return sb.toString().trim();
   }
 
-  /**
-   * Return an French string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return French text representation
-   */
-  public static String toFrench(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

@@ -14,6 +14,6 @@ public class A090589 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(Dutch.toDutch(++mN).replace(" ", "").length());
+    return Z.valueOf(Dutch.SINGLETON.toRawText(++mN).length());
   }
 }

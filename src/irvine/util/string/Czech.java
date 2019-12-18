@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * Czech related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class Czech {
+public final class Czech extends AbstractLanguage {
+
+  /** Instance. */
+  public static final Czech SINGLETON = new Czech();
 
   private Czech() { }
 
@@ -71,13 +73,8 @@ public final class Czech {
     "tis\u00edc",
   };
 
-  /**
-   * Return a Czech string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return Czech text representation
-   */
-  public static String toCzech(final int x) {
+  @Override
+  public String toText(final int x) {
     if (x < 0 || x > 99999) {
       throw new UnsupportedOperationException();
     }
@@ -86,11 +83,11 @@ public final class Czech {
         return "tysi\u0105c";
       }
       if (x < 2000) {
-        return "tysi\u0105c " + toCzech(x % 1000);
+        return "tysi\u0105c " + toText(x % 1000);
       } else if (x % 1000 != 0) {
-        return toCzech(x / 1000) + " " + THOUSANDS[x / 1000] + " " + toCzech(x % 1000);
+        return toText(x / 1000) + " " + THOUSANDS[x / 1000] + " " + toText(x % 1000);
       } else {
-        return toCzech(x / 1000) + " " + THOUSANDS[x / 1000];
+        return toText(x / 1000) + " " + THOUSANDS[x / 1000];
       }
     }
     if (x >= 100) {
@@ -101,9 +98,9 @@ public final class Czech {
         return "sto jedna";
       }
       if (x < 200) {
-        return "sto " + toCzech(x % 100);
+        return "sto " + toText(x % 100);
       } else if (x % 100 != 0) {
-        return HUNDREDS[x / 100] + " " + toCzech(x % 100);
+        return HUNDREDS[x / 100] + " " + toText(x % 100);
       } else {
         return HUNDREDS[x / 100];
       }

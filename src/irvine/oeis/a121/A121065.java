@@ -19,7 +19,7 @@ public class A121065 implements Sequence {
     if (g != 0) {
       return g - 1;
     }
-    final String s = English.toEnglish(n);
+    final String s = English.SINGLETON.toText(n);
     int r = 0;
     for (int k = 0; k < s.length(); ++k) {
       final char d = s.charAt(k);

@@ -29,7 +29,7 @@ public class A139282 implements Sequence {
       mPrev = 0;
       return Z.ZERO;
     }
-    mPrev += vowelCount(English.toEnglish(mPrev));
+    mPrev += vowelCount(English.SINGLETON.toText(mPrev));
     return Z.valueOf(mPrev);
   }
 }

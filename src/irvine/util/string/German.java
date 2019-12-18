@@ -2,10 +2,12 @@ package irvine.util.string;
 
 /**
  * German related string functions.
- *
  * @author Sean A. Irvine
  */
-public final class German {
+public final class German extends AbstractLanguage {
+
+  /** Instance. */
+  public static final German SINGLETON = new German();
 
   private German() { }
 
@@ -20,13 +22,8 @@ public final class German {
     "siebzig", "achtzig", "neunzig"
   };
 
-  /**
-   * Return an German string representing the supplied integer value.
-   *
-   * @param x number to convert
-   * @return German text representation
-   */
-  public static String toGerman(int x) {
+  @Override
+  public String toText(int x) {
     if (x < 0) {
       throw new UnsupportedOperationException();
     }

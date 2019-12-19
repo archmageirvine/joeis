@@ -6,7 +6,7 @@ import irvine.factor.prime.Fast;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A012883 Numbers in which every prefix (in base <code>10)</code> is 1 or a prime.
+ * A012883 Numbers in which every prefix (in base 10) is 1 or a prime.
  * @author Sean A. Irvine
  */
 public class A012883 extends FiniteSequence {

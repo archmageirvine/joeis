@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213046 Convolution of Lucas numbers and positive integers repeated <code>(A000032</code> and <code>A008619)</code>.
+ * A213046 Convolution of Lucas numbers and positive integers repeated (A000032 and <code>A008619)</code>.
  * @author Sean A. Irvine
  */
 public class A213046 extends LinearRecurrence {

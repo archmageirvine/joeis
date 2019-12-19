@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114044 Number of (ordered) sequences of coins (each of which has value <code>1, 5, 10, 25, 50</code> or <code>100)</code> which add to <code>n</code>.
+ * A114044 Number of (ordered) sequences of coins (each of which has value <code>1, 5, 10, 25, 50</code> or 100) which add to <code>n</code>.
  * @author Georg Fischer
  */
 public class A114044 extends GeneratingFunctionSequence {

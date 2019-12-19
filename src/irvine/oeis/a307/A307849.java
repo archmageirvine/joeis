@@ -4,7 +4,7 @@ package irvine.oeis.a307;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A307849 Number of ways to pay n dollars using Canadian coins, that is: nickels <code>(5</code> cents), dimes <code>(10</code> cents), quarters <code>(25</code> cents), loonies <code>(100</code> cents or <code>$1</code> coins) and toonies <code>($2</code> coins).
+ * A307849 Number of ways to pay n dollars using Canadian coins, that is: nickels <code>(5</code> cents), dimes <code>(10</code> cents), quarters <code>(25</code> cents), loonies (100 cents or <code>$1</code> coins) and toonies <code>($2</code> coins).
  * @author Georg Fischer
  */
 public class A307849 extends LinearRecurrence {

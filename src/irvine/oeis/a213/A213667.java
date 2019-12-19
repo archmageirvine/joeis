@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213667 Number of dominating subsets with k vertices in all the graphs <code>G(n) (n&gt;=1)</code> obtained by taking n copies of the path <code>P_3</code> and identifying one of their endpoints <code>(a</code> star with n branches of length <code>2)</code>.
+ * A213667 Number of dominating subsets with k vertices in all the graphs <code>G(n) (n&gt;=1)</code> obtained by taking n copies of the path <code>P_3</code> and identifying one of their endpoints (a star with n branches of length <code>2)</code>.
  * @author Georg Fischer
  */
 public class A213667 extends GeneratingFunctionSequence {

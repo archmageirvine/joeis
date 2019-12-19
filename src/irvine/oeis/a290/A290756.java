@@ -3,7 +3,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290756 Number of <code>(non-null)</code> connected induced subgraphs of the complete tripartite graph <code>K_{n,n,n}</code>.
+ * A290756 Number of (non-null) connected induced subgraphs of the complete tripartite graph <code>K_{n,n,n}</code>.
  * @author Sean A. Irvine
  */
 public class A290756 extends LinearRecurrence {

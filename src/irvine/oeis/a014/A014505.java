@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014505 Number of digraphs with unlabeled <code>(non-isolated)</code> nodes and n labeled edges.
+ * A014505 Number of digraphs with unlabeled (non-isolated) nodes and n labeled edges.
  * @author Sean A. Irvine
  */
 public class A014505 implements Sequence {

@@ -142,8 +142,13 @@ public final class Names {
     }
     for (int k = 0; k < parts.length; ++k) {
       if (formula[k]) {
+        if (parts[k].startsWith("(non")) {
+          formula[k] = false;
+          continue;
+        }
         if (!isFormula(parts[k]) && ((!parts[k].startsWith("(mod") && parts[k].matches("[({\\[][A-Za-z]{2,}")) || parts[k].matches("[({\\[]?[A-Za-z]{2,}[)}\\]][.,;]?"))) {
           formula[k] = false;
+          continue;
         }
         if (formula[k] && (k == 0 || !formula[k - 1]) && (k == parts.length - 1 || !formula[k + 1])) {
           if (parts[k].length() == 1
@@ -152,6 +157,7 @@ public final class Names {
             || parts[k].matches("[a-zA-Z0-9]+-[a-zA-Z]+")
             || parts[k].matches("[4-9]th$")
             || parts[k].matches("\\([a-zA-Z0-9]+")
+            || parts[k].matches("[a-zA-Z0-9]{2,}\\)")
             || parts[k].endsWith("1st")
             || parts[k].endsWith("2nd")
             || parts[k].endsWith("3rd")

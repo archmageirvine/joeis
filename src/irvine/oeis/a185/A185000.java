@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185000 Trajectory of <code>x+1</code> under the map (see <code>A185544)</code> defined in the Comments.
+ * A185000 Trajectory of <code>x+1</code> under the map (see A185544) defined in the Comments.
  * @author Georg Fischer
  */
 public class A185000 extends GeneratingFunctionSequence {

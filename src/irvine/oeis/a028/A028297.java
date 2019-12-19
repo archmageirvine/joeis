@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028297.
+ * A028297 Coefficients of Chebyshev polynomials of the first kind: triangle of coefficients in expansion of <code>cos(n*x)</code> in descending powers of <code>cos(x)</code>.
  * @author Sean A. Irvine
  */
 public class A028297 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181626 Number of closed walks of length n in a kite graph <code>(K4</code> with one edge deleted).
+ * A181626 Number of closed walks of length n in a kite graph (K4 with one edge deleted).
  * @author Georg Fischer
  */
 public class A181626 extends HolonomicRecurrence {

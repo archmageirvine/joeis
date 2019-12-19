@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290757 Number of <code>(non-null)</code> connected induced subgraphs in the <code>(2 n)-crossed</code> prism graph.
+ * A290757 Number of (non-null) connected induced subgraphs in the <code>(2 n)-crossed</code> prism graph.
  * @author Georg Fischer
  */
 public class A290757 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286184 Number of connected induced <code>(non-null)</code> subgraphs of the helm graph with <code>2n+1</code> nodes.
+ * A286184 Number of connected induced (non-null) subgraphs of the helm graph with <code>2n+1</code> nodes.
  * @author Georg Fischer
  */
 public class A286184 extends LinearRecurrence {

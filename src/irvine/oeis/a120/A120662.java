@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120662 Sequence produced by <code>10 X 10</code> Markov chain based on <code>10 X 10</code> pentagonal prism bonding graph <code>(3d</code> analog of <code>D5</code> dihedral and <code>so(5)</code> groups).
+ * A120662 Sequence produced by <code>10 X 10</code> Markov chain based on <code>10 X 10</code> pentagonal prism bonding graph (3d analog of <code>D5</code> dihedral and <code>so(5)</code> groups).
  * @author Georg Fischer
  */
 public class A120662 extends LinearRecurrence {

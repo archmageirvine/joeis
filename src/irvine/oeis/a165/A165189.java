@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165189 Partial sums of partial sums of <code>(A001840</code> interleaved with zeros).
+ * A165189 Partial sums of partial sums of (A001840 interleaved with zeros).
  * @author Georg Fischer
  */
 public class A165189 extends GeneratingFunctionSequence {

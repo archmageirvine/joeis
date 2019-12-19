@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160825 <code>a(1) = 1</code>. For <code>n &gt;=2, a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> such that both <code>a(n)</code> and <code>a(n)-a(n-1)</code> have the same number of <code>(non-leading) 0</code>'s when they are represented in binary.
+ * A160825 <code>a(1) = 1</code>. For <code>n &gt;=2, a(n) =</code> the smallest integer <code>&gt; a(n-1)</code> such that both <code>a(n)</code> and <code>a(n)-a(n-1)</code> have the same number of (non-leading) <code>0</code>'s when they are represented in binary.
  * @author Georg Fischer
  */
 public class A160825 extends GeneratingFunctionSequence {

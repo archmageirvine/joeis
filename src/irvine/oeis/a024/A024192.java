@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024192 Integer part of <code>(4th</code> elementary symmetric function of <code>3,4,...,n+5)/(3+4+...+n+5)</code>.
+ * A024192 Integer part of (4th elementary symmetric function of <code>3,4,...,n+5)/(3+4+...+n+5)</code>.
  * @author Sean A. Irvine
  */
 public class A024192 implements Sequence {

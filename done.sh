@@ -5,12 +5,14 @@
 
 max=350
 
+DEAD=src/irvine/oeis/dead.lst
+
 for bucket in $(seq 0 ${max}); do
     b="00${bucket}"
     b=${b: -3}
-    dead=$(grep -c "^A${b}" dead.lst)
-    if [[ -d a${b} ]]; then
-        impl=$(find "a${b}" -name "A${b}???.java" | wc -l)
+    dead=$(grep -c "^A${b}" "${DEAD}")
+    if [[ -d src/irvine/oeis/a${b} ]]; then
+        impl=$(find "src/irvine/oeis/a${b}" -name "A${b}[0-9][0-9][0-9].java" | wc -l)
     else
         impl=0
     fi
@@ -29,14 +31,14 @@ EOF
 
 # A heat map view showing red for dead sequences and green for implmented
 {
-    sed 's/^A0*//' <dead.lst | while read dead; do
+    sed 's/^A0*//' <"${DEAD}" | while read dead; do
         echo "$((dead/1000)) $((dead%1000)) r"
     done
     for bucket in $(seq 0 ${max}); do
         b="00${bucket}"
         b=${b: -3}
-        if [[ -d a${b} ]]; then
-            find "a${b}" -name "A${b}???.java" | sed 's/.*A0*//;s/\.java//' | while read impl; do
+        if [[ -d src/irvine/oeis/a${b} ]]; then
+            find "src/irvine/oeis/a${b}" -name "A${b}[0-9][0-9][0-9].java" | sed 's/.*A0*//;s/\.java//' | while read impl; do
                 echo "${impl}"
                 echo "$((impl/1000)) $((impl%1000)) g"
             done
@@ -44,4 +46,4 @@ EOF
     done
 } | awk -vmax=${max} '{pix[$1,$2]=$3}END{print "P6 1000 "max" 1"; for (y=0;y<max;y++) for(x=0; x<1000;x++) {val=pix[y,x]; if (val=="r") {printf "%c%c%c", 1, 0, 0} else if (val=="g") {printf "%c%c%c", 0, 1, 0} else {printf "%c%c%c", 0, 0, 0 }}}' | pnmtopng >oeis-implemented.png
 
-mv ./*.png ../../../doc
+mv ./*.png doc

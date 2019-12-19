@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A121065Test.class);
+    suite.addTestSuite(A121102Test.class);
     suite.addTestSuite(A121105Test.class);
     suite.addTestSuite(A121106Test.class);
     suite.addTestSuite(A121107Test.class);
@@ -20,10 +21,19 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121109Test.class);
     suite.addTestSuite(A121110Test.class);
     suite.addTestSuite(A121111Test.class);
+    suite.addTestSuite(A121123Test.class);
+    suite.addTestSuite(A121124Test.class);
+    suite.addTestSuite(A121125Test.class);
+    suite.addTestSuite(A121126Test.class);
+    suite.addTestSuite(A121127Test.class);
     suite.addTestSuite(A121133Test.class);
+    suite.addTestSuite(A121134Test.class);
     suite.addTestSuite(A121135Test.class);
     suite.addTestSuite(A121136Test.class);
+    suite.addTestSuite(A121138Test.class);
+    suite.addTestSuite(A121145Test.class);
     suite.addTestSuite(A121173Test.class);
+    suite.addTestSuite(A121177Test.class);
     suite.addTestSuite(A121199Test.class);
     suite.addTestSuite(A121200Test.class);
     suite.addTestSuite(A121201Test.class);
@@ -70,10 +80,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121509Test.class);
     suite.addTestSuite(A121511Test.class);
     suite.addTestSuite(A121512Test.class);
+    suite.addTestSuite(A121515Test.class);
     suite.addTestSuite(A121517Test.class);
     suite.addTestSuite(A121523Test.class);
     suite.addTestSuite(A121525Test.class);
     suite.addTestSuite(A121530Test.class);
+    suite.addTestSuite(A121532Test.class);
     suite.addTestSuite(A121544Test.class);
     suite.addTestSuite(A121545Test.class);
     suite.addTestSuite(A121591Test.class);
@@ -103,10 +115,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A121801Test.class);
     suite.addTestSuite(A121803Test.class);
     suite.addTestSuite(A121804Test.class);
+    suite.addTestSuite(A121816Test.class);
     suite.addTestSuite(A121822Test.class);
     suite.addTestSuite(A121832Test.class);
     suite.addTestSuite(A121833Test.class);
     suite.addTestSuite(A121887Test.class);
+    suite.addTestSuite(A121888Test.class);
     suite.addTestSuite(A121907Test.class);
     suite.addTestSuite(A121953Test.class);
     suite.addTestSuite(A121955Test.class);

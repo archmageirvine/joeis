@@ -151,6 +151,7 @@ public final class Names {
             || parts[k].matches("[a-zA-Z]{2,}/[a-zA-Z]{2,}")
             || parts[k].matches("[a-zA-Z0-9]+-[a-zA-Z]+")
             || parts[k].matches("[4-9]th$")
+            || parts[k].matches("\\([a-zA-Z0-9]+")
             || parts[k].endsWith("1st")
             || parts[k].endsWith("2nd")
             || parts[k].endsWith("3rd")

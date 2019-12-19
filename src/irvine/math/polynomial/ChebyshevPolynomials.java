@@ -15,6 +15,10 @@ public final class ChebyshevPolynomials extends MemoryFunction<Integer, Polynomi
 
   private final int mKind;
 
+  /**
+   * Construct Chebyshev polynomials of a particular kind.
+   * @param kind 1 or 2
+   */
   public ChebyshevPolynomials(final int kind) {
     mKind = kind;
   }

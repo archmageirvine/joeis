@@ -1,6 +1,7 @@
 package irvine.oeis.a053;
 
-import irvine.math.z.Binomial;
+import irvine.math.polynomial.ChebyshevPolynomials;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,23 +11,17 @@ import irvine.oeis.Sequence;
  */
 public class A053117 implements Sequence {
 
-  private int mN = -1;
-  private int mM = 0;
+  private final ChebyshevPolynomials mChebyshevPolynomials = new ChebyshevPolynomials(2);
+  private Polynomial<Z> mPoly = mChebyshevPolynomials.getValue(0);
+  private int mN = 0;
+  private int mM = -1;
 
   @Override
   public Z next() {
-    if (mN < 0) {
-      ++mN;
-      return Z.ONE;
-    }
-    if (++mM > mN) {
-      ++mN;
+    if (++mM > mPoly.degree()) {
+      mPoly = mChebyshevPolynomials.getValue(++mN);
       mM = 0;
     }
-    if (((mN + mM) & 1) == 1) {
-      return Z.ZERO;
-    }
-    final Z t = Binomial.binomial((mN + mM) / 2, mM).shiftLeft(mM);
-    return (((mN + mM) / 2 + mM) & 1) == 0 ? t : t.negate();
+    return mPoly.coeff(mM);
   }
 }

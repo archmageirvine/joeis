@@ -28,6 +28,6 @@ public final class ChebyshevPolynomials extends MemoryFunction<Integer, Polynomi
     if (n <= 1) {
       return n == 0 ? RING.one() : RING.multiply(RING.x(), Z.valueOf(mKind));
     }
-    return RING.subtract(RING.multiply(get(n - 1).shift(1), Z.TWO), get(n - 2));
+    return RING.subtract(RING.multiply(getValue(n - 1).shift(1), Z.TWO), getValue(n - 2));
   }
 }

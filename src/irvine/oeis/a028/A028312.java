@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
+import java.util.BitSet;
 import java.util.List;
-import java.util.Set;
 
 import irvine.math.z.Z;
 
@@ -17,8 +17,7 @@ public class A028312 extends A028311 {
   public Z next() {
     while (true) {
       mN += 2;
-      final List<Set<Integer>> cosets = cosets(mN);
-      //System.out.println("cosets: " + cosets);
+      final List<BitSet> cosets = cosets(mN);
       if (!isA028311(cosets)) {
         return Z.valueOf(mN);
       }

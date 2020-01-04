@@ -14,6 +14,7 @@ import irvine.math.api.Group;
 import irvine.math.api.Set;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
+import irvine.math.partitions.MurnaghanNakayama;
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.polynomial.MultivariateMonomial;
 import irvine.math.q.Q;
@@ -294,5 +295,28 @@ public class SymmetricGroup<T> extends AbstractGroup<Permutation<T>> {
       perm.put(e, r[k++]);
     }
     return new Permutation<>(mSet, perm);
+  }
+
+  /**
+   * Compute the entire character table for this group.
+   * @return character table
+   */
+  public Z[][] characterTable() {
+    final int t = IntegerPartition.partitions(mSet.size().intValueExact()).intValueExact();
+    final Z[][] res = new Z[t][t];
+    int[] lambda;
+    int[] mu;
+    final int mN = mSet.size().intValueExact();
+    int k = t - 1;
+    final IntegerPartition part1 = new IntegerPartition(mN);
+    while ((lambda = part1.next()) != null) {
+      int j = t;
+      final IntegerPartition part2 = new IntegerPartition(mN);
+      while ((mu = part2.next()) != null) {
+        res[k][--j] = MurnaghanNakayama.character(lambda, mu);
+      }
+      --k;
+    }
+    return res;
   }
 }

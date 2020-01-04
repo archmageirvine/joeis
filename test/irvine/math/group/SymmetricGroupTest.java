@@ -1,6 +1,7 @@
 package irvine.math.group;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -754,6 +755,9 @@ public class SymmetricGroupTest extends TestCase {
       h.add(g.random(r));
     }
     assertEquals(24, h.size());
+  }
 
+  public void testCharacterTable() {
+    assertEquals("[[1, -1, 1, 1, -1, -1, 1], [4, -2, 0, 1, 1, 0, -1], [5, -1, 1, -1, -1, 1, 0], [6, 0, -2, 0, 0, 0, 1], [5, 1, 1, -1, 1, -1, 0], [4, 2, 0, 1, -1, 0, -1], [1, 1, 1, 1, 1, 1, 1]]", Arrays.deepToString(SymmetricGroup.create(5).characterTable()));
   }
 }

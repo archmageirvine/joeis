@@ -42,6 +42,7 @@ public final class Names {
     FORMULA.add("Hmmss");
     FORMULA.add("frac");
     FORMULA.add("maxjumps");
+    FORMULA.add("Stirling2");
     FORMULA.add("sinh");
     FORMULA.add("ddd...d");
     FORMULA.add("abcd...k,");

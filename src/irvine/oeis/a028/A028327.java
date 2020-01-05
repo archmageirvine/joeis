@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028327.
+ * A028327 Elements in the even-Pascal triangle <code>A028326</code> that are not 2.
  * @author Sean A. Irvine
  */
 public class A028327 extends A028326 {

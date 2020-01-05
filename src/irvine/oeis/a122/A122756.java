@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122756 Odd indexed terms, <code>a(n) = 2^n</code>. Even indexed terms, <code>a(n) = floor(2^n+2^(n-1))</code>.
+ * A122756 Odd-indexed terms, <code>a(n) = 2^n. Even-indexed</code> terms, <code>a(n) = floor(2^n+2^(n-1))</code>.
  * @author Georg Fischer
  */
 public class A122756 extends HolonomicRecurrence {

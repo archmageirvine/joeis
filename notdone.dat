@@ -751,7 +751,6 @@ A007293 Dimension of space of weight systems of chord diagrams, conj. g.f., actu
 A007299 Number of Hadamard matrices of order 4n, lot of effort for small number of terms
 A007303 Earliest monotonic sequence fixed (apart from signs) under reversion, revert is easy, but how do you tell is earliest such sequence, greedy approach gets blocked
 A007308 Number of crystallographic orbits in n dimensions, hard
-A007323 Number of bases for symmetric functions of n variables; also the number of numerical semigroups of "genus" n, have paper
 A007324 Least number for which Solovay-Strassen primality test on bases < p fails, strange definition of Solovay-Strassen? could not reproduce with reasonble guesses of what is meant
 A007355 Prime race mod 10 (likely incorrect data, cf. A297408)
 A007361 Numerator of n-th power of Hermite constant for dimension n, hard

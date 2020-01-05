@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308401 Number of bracelets (turnover necklaces) of length n that have no reflection symmetry and consist of 6 white beads and <code>n - 6</code> black beads.
+ * A308401 Number of bracelets (turnover necklaces) of length n that have no reflection symmetry and consist of 6 white beads and <code>n-6</code> black beads.
  * @author Georg Fischer
  */
 public class A308401 extends HolonomicRecurrence {

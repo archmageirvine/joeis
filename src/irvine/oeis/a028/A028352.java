@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028352.
+ * A028352 A Golomb-like recurrence that decreases infinitely often.
  * @author Sean A. Irvine
  */
 public class A028352 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicBooleanArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A028307.
+ * A028307 Form a triangle with n numbers in top row; all other numbers are the sum of their parents. E.g.: <code>4 1 2 7; 5 3 9; 8 12; 20</code>. The numbers must be positive and distinct and the final number is to be minimized. Sequence gives final number.
  * @author Sean A. Irvine
  */
 public class A028307 implements Sequence {

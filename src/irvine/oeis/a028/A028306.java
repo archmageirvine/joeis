@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A028306.
+ * A028306 Triangle read by rows of numbers of permutations eliminating just card k out of n in game of Mousetrap.
  * @author Sean A. Irvine
  */
 public class A028306 implements Sequence {

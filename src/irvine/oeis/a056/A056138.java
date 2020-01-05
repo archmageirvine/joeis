@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A056138 Number of ways in which n can be the shorter leg (shortest side) of an <code>integer-sided right-angled</code> triangle.
+ * A056138 Number of ways in which n can be the shorter leg (shortest side) of an integer-sided right triangle.
  * @author Sean A. Irvine
  */
 public class A056138 implements Sequence {

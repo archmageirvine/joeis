@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261327 Numerators of <code>(4 + n^2)/4</code>.
+ * A261327 Numerators of <code>1 + n^2/4</code>.
  * @author Sean A. Irvine
  */
 public class A261327 extends LinearRecurrence {

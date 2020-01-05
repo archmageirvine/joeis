@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A028354.
+ * A028354 How the astronomical clock <code>("Orloj")</code> in Prague strikes the hours (digits follow <code>12343212343... (A028356), n-th</code> group adds to <code>n)</code>.
  * @author Sean A. Irvine
  */
 public class A028354 extends PeriodicSequence {

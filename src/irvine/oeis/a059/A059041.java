@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A059041 Numbers n such that <code>3*7^n + 2</code> is prime.
+ * A059041 Numbers k such that <code>3*7^k + 2</code> is prime.
  * @author Georg Fischer
  */
 public class A059041 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A028332.
+ * A028332 Distinct elements to the right of the central elements of the even-Pascal triangle <code>A028326</code>.
  * @author Sean A. Irvine
  */
 public class A028332 extends A028330 {

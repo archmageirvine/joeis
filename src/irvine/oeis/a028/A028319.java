@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A028319.
+ * A028319 Distinct odd elements in the 5-Pascal triangle <code>A028313</code>.
  * @author Sean A. Irvine
  */
 public class A028319 extends A028315 {

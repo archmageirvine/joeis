@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024176 <code>(n+2)!(1/3 - 1/4 + ... + c/(n+2))</code>, where <code>c=(-1)^(n+1)</code>.
+ * A024176 <code>a(n) = (n+2)!(1/3 - 1/4 + ... + c/(n+2))</code>, where <code>c=(-1)^(n+1)</code>.
  * @author Sean A. Irvine
  */
 public class A024176 implements Sequence {

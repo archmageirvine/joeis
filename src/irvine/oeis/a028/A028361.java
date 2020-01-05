@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028361.
+ * A028361 Number of totally isotropic spaces of index n in orthogonal geometry of dimension <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A028361 implements Sequence {

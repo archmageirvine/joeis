@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028336.
+ * A028336 Positive numbers k such that <code>k*(k+1)</code> is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028336 implements Sequence {

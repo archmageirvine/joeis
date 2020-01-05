@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134888 <code>E_8</code> numbers: <code>a(n)=2^(2*n) * 3^(3*n) * 5^n * 839^n</code>. (Constants are prime numbers).
+ * A134888 <code>E_8</code> numbers: <code>a(n) = 2^(2*n) * 3^(3*n) * 5^n * 839^n</code>. (Constants are prime numbers).
  * @author Georg Fischer
  */
 public class A134888 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028303.
+ * A028303 <code>a(n) = floor((1/(ceiling(n/2)+1))*binomial(n,floor(n/2)))</code> (interpolates between Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A028303 implements Sequence {

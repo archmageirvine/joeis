@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217482 Quarter-square tetrahedrals; <code>a(n)= 1/6*(k*(k - 1)*(k - 2)), k = A002620(n)</code>.
+ * A217482 Quarter-square tetrahedrals: <code>a(n) = k*(k - 1)*(k - 2)/6, k = A002620(n)</code>.
  * @author Sean A. Irvine
  */
 public class A217482 extends LinearRecurrence {

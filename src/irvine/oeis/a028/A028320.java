@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A028320.
+ * A028320 Distinct even elements in the 5-Pascal triangle <code>A028313</code>.
  * @author Sean A. Irvine
  */
 public class A028320 extends A028317 {

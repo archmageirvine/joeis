@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328351 <code>a(n)*S</code> is the sum of all positive integers whose decimal expansion is up to n digits and uses four distinct nonzero digits p,q,r,t such that <code>p+q+r+t=S</code>.
+ * A328351 Let S be any integer in the range <code>10 &lt;= S &lt;= 30</code>. Sequence has the property that <code>a(n)*S</code> is the sum of all positive integers whose decimal expansion has <code>&lt;= n</code> digits and contains at most four distinct nonzero digits <code>d1, d2, d3</code> and <code>d4</code> such that <code>d1+d2+d3+d4=S</code>.
  * @author Georg Fischer
  */
 public class A328351 extends HolonomicRecurrence {

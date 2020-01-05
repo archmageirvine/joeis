@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085333 <code>a(n)</code> is the least n-th power of a prime that are sum of two positive cubes, or 0 if no solution exists (for <code>n=3k)</code>.
+ * A085333 <code>a(n)</code> is the least n-th power of a prime that is the sum of two positive cubes, or 0 if no solution exists (for <code>n=3k)</code>.
  * @author Georg Fischer
  */
 public class A085333 extends GeneratingFunctionSequence {

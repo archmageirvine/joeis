@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023201 Sexy primes: numbers n such that n and <code>n + 6</code> are both prime.
+ * A023201 Primes p such that p <code>+ 6</code> is also prime. (Lesser of a pair of sexy <code>primes.)</code>.
  * @author Sean A. Irvine
  */
 public class A023201 extends A000040 {

@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120658 <code>9 X 9</code> Matrix Markov of simple polygonal mesh bonding graph torus: Characteristic <code>polynomial:80 - 144 x - 56 x^2 + 184 x^3 + 9 x^4 - 89 x^5 - 2 x^6 + 18 x^7 + x^8 - x^9</code>.
+ * A120658 Expansion of <code>2*x*(6 + 30*x - 13*x^2 - 70*x^3)/((1-x)*(1+2*x)*(1 - 4*x - 3*x^2 + 10*x^3))</code>.
  * @author Georg Fischer
  */
 public class A120658 extends HolonomicRecurrence {

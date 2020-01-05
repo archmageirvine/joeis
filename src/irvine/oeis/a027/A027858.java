@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027858 Triangle of "Harmonic Coefficients" <code>T(j,k)</code>, read by rows: <code>(sum:n=1</code> to j: <code>T(j,n)*k^n)*k!/((j+k)!*j!) =(sum:n=1</code> to <code>k:(1/n-1/(n+j)) =j*(sum:n=1</code> to <code>k:1/(n*(n+j))))</code>.
+ * A027858 Triangle of "Harmonic Coefficients" <code>T(n,k)</code>, read by rows: <code>(Sum_{i=1..n} T(n,i) * k^i) * k! / ((n+k)! * n!) = (Sum_{i=1..k} (1/i-1/(i+n)) = n * (Sum_{i=1..k} 1/(i*(i+n))))</code>.
  * @author Sean A. Irvine
  */
 public class A027858 implements Sequence {

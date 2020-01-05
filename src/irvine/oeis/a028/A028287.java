@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028287 Odd elements to right of central elements in 4-Pascal triangle <code>A028275</code>.
+ * A028287 Odd elements (greater than <code>1)</code> to right of central elements in 4-Pascal triangle <code>A028275</code>.
  * @author Sean A. Irvine
  */
 public class A028287 extends A028285 {

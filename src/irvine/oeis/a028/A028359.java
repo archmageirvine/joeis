@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028359.
+ * A028359 Two-bell analog of <code>A028355</code>.
  * @author Sean A. Irvine
  */
 public class A028359 implements Sequence {

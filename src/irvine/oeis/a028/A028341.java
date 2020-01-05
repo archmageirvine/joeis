@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028341.
+ * A028341 Coefficient of <code>x^4</code> in expansion of <code>(x+1)*(x+3)*...*(x+2*n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A028341 extends A028338 {

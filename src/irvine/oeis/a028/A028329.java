@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A028329.
+ * A028329 Twice central binomial coefficients.
  * @author Sean A. Irvine
  */
 public class A028329 extends A000984 {

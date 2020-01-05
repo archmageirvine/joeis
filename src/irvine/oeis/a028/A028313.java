@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028313.
+ * A028313 Elements in the 5-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
 public class A028313 implements Sequence {

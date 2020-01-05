@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028363.
+ * A028363 Total number of <code>doubly-even self-dual</code> binary codes of length <code>8n</code>.
  * @author Sean A. Irvine
  */
 public class A028363 implements Sequence {

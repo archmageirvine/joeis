@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328605 allocated for Kyle MacLean Smith.
+ * A328605 Expansion of <code>(1 + 5*x - 2*x^2 - 15*x^3) / (1 - 12*x^2 + 25*x^4)</code>.
  * @author Georg Fischer
  */
 public class A328605 extends HolonomicRecurrence {

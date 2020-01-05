@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028350.
+ * A028350 Expansion of <code>-1/x + 6*3F2( 5/6, 1, 7/6; 3/2, 2; 108*x)</code>.
  * @author Sean A. Irvine
  */
 public class A028350 implements Sequence {

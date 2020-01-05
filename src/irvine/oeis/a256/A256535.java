@@ -5,7 +5,7 @@ package irvine.oeis.a256;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A256535 The largest number of T-tetrominos that fit within an <code>n X n</code> square.
+ * A256535 The largest number of T-tetrominoes that fit within an <code>n X n</code> square.
  * @author Georg Fischer
  */
 public class A256535 extends HolonomicRecurrence {

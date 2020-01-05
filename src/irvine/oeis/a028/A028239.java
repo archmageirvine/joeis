@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028239 Weight distribution of <code>(64,2^52,6)</code> Preparata code.
+ * A028239 Weight distribution of <code>(64, 2^52, 6)</code> Preparata code.
  * @author Sean A. Irvine
  */
 public class A028239 extends FiniteSequence {

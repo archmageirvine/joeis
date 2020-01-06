@@ -1,25 +1,16 @@
 package irvine.oeis.a014;
 
-import java.util.TreeSet;
-
-import irvine.math.z.Z;
+import irvine.oeis.DistinctSequence;
 import irvine.oeis.a007.A007318;
 
 /**
  * A014631 Numbers in order in which they appear in Pascal's triangle.
  * @author Sean A. Irvine
  */
-public class A014631 extends A007318 {
+public class A014631 extends DistinctSequence {
 
-  private final TreeSet<Z> mSeen = new TreeSet<>();
-
-  @Override
-  public Z next() {
-    while (true) {
-      final Z a = super.next();
-      if (mSeen.add(a)) {
-        return a;
-      }
-    }
+  /** Construct the sequence. */
+  public A014631() {
+    super(new A007318());
   }
 }

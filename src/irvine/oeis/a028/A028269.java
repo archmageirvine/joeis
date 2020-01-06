@@ -1,24 +1,15 @@
 package irvine.oeis.a028;
 
-import java.util.TreeSet;
-
-import irvine.math.z.Z;
+import irvine.oeis.DistinctSequence;
 
 /**
  * A028269 Distinct even elements in 3-Pascal triangle <code>A028262</code> (by row).
  * @author Sean A. Irvine
  */
-public class A028269 extends A028266 {
+public class A028269 extends DistinctSequence {
 
-  private final TreeSet<Z> mSeen = new TreeSet<>();
-
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      if (mSeen.add(t)) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A028269() {
+    super(new A028266());
   }
 }

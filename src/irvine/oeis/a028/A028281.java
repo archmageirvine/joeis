@@ -1,24 +1,15 @@
 package irvine.oeis.a028;
 
-import java.util.TreeSet;
-
-import irvine.math.z.Z;
+import irvine.oeis.DistinctSequence;
 
 /**
  * A028281 Distinct odd elements in 4-Pascal triangle <code>A028275</code> (by row).
  * @author Sean A. Irvine
  */
-public class A028281 extends A028277 {
+public class A028281 extends DistinctSequence {
 
-  private final TreeSet<Z> mSeen = new TreeSet<>();
-
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      if (mSeen.add(t)) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A028281() {
+    super(new A028277());
   }
 }

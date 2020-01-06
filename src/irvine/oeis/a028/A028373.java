@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028373.
+ * A028373 Numbers that have only the straight digits <code>{1, 4, 7}</code>.
  * @author Sean A. Irvine
  */
 public class A028373 implements Sequence {

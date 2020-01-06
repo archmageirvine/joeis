@@ -64,7 +64,7 @@ public class A007323 implements Sequence {
     ++mN;
     long count = 0;
     //final long[] counts = new long[mN + 1]; // probably only need to count genus mN
-    Stack<Semigroup> stack = new Stack<>();
+    final Stack<Semigroup> stack = new Stack<>();
     stack.push(root(mN));
     while (!stack.isEmpty()) {
       final Semigroup s = stack.pop();

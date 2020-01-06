@@ -13,6 +13,6 @@ public class A028368 extends A005329 {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE: super.next().shiftLeft(mN * (mN + 1) / 2);
+    return ++mN == 0 ? Z.ONE : super.next().shiftLeft(mN * (mN + 1) / 2);
   }
 }

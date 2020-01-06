@@ -10,17 +10,21 @@ import irvine.math.z.Z;
  */
 public class DistinctSequence implements Sequence {
 
-  private final Sequence mA;
+  private final Sequence mSequence;
   private final TreeSet<Z> mSeen = new TreeSet<>();
 
-  public DistinctSequence(final Sequence a) {
-    mA = a;
+  /**
+   * Construct a new distinct sequence from the specified sequence
+   * @param sequence underlying sequence
+   */
+  public DistinctSequence(final Sequence sequence) {
+    mSequence = sequence;
   }
 
   @Override
   public Z next() {
     while (true) {
-      final Z t = mA.next();
+      final Z t = mSequence.next();
       if (mSeen.add(t)) {
         return t;
       }

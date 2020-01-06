@@ -97,12 +97,16 @@ public final class Names {
     FORMULA.add("HTHH.");
     FORMULA.add("HN.");
     FORMULA.add("Hn");
+    FORMULA.add("K4");
+    FORMULA.add("ud");
+    FORMULA.add("UD");
     FORMULA.add("Xa");
     FORMULA.add("Xb");
     FORMULA.add("Xf");
     FORMULA.add("Zp");
     FORMULA.add("xRy");
     FORMULA.add("VVV..VV;");
+    FORMULA.add("AAAAAAA");
     FORMULA.add("abacabaabacababac...");
     FORMULA.add("aabbccdd...,");
     FORMULA.add("aab");

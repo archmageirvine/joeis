@@ -22,7 +22,7 @@ public class A007333 implements Sequence {
       case 2:
         return Z.valueOf(k).multiply(k - 1).multiply(7 * k * k - 3 * k - 1).divide(6);
       default: // 3
-        return Z.valueOf(k).square().multiply(k - 1).multiply(7 * k + 4). divide(6);
+        return Z.valueOf(k).square().multiply(k - 1).multiply(7 * k + 4).divide(6);
     }
   }
 }

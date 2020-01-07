@@ -52,7 +52,7 @@ A001116 Maximal kissing number of an n-dimensional lattice, hard
 A001119 Number of skew-symmetric Hadamard matrices of order 4n, cf. A001111
 A001121 Depends Hadamard matrices of order 4n, cf. A001111
 A001139 Insufficient detail, stable shift registers, obvious formula 2^(2^n-n-1) does not work, stable means it produces all 0s after some initital run
-A001153 Primitive trinomials, have paper
+A001153 Primitive trinomials, have paper, probably doable for small terms
 A001170 Polynominoes, possible Maple code
 A001183 Related somehow to A001181?, Baxter functions = A1184 / 2. [papers now available]
 A001184 Depends A121788(2n), walks, hard?, no known formula?
@@ -62,7 +62,7 @@ A001198 Hard?, Zarankiewicz, matrix problem
 A001200 Number of linear geometries on n (unlabeled) points, hard
 A001201 Steiner triple systems (STS's) on 6n+1 or 6n+3 elements, hard
 A001206 Monotone Boolean functions, cf. also A007006, hard
-A001209 Stamp counting, cf. A001208
+A001209 Stamp counting, cf. A001208, papers available, glorified DFS
 A001210 Stamp counting, cf. A001208
 A001211 Stamp counting, cf. A001208
 A001213 Stamp counting, cf. A001208
@@ -124,8 +124,7 @@ A002077 Self-dual functions
 A002078 Depends A000609
 A002079 Self-dual functions
 A002080 Self-dual functions, insufficient detail
-A002086 Paper accessible but hard to understand, tournaments
-A002087 Paper accessible but hard to understand, tournaments
+A002087 Paper accessible but hard to understand, tournaments, pos. like A002086
 A002090 Hamilton numbers, paper is in French
 A002106 Transitive permutation groups, hard
 A002116 Some special numbers, insufficient detail
@@ -142,9 +141,9 @@ A002158 Rank of elliptic curves (no known algorithm?)
 A002159 Rank of elliptic curves (no known algorithm?)
 A002164 A partition function, have paper
 A002165 A partition function -- Ising model?, could not get paper
-A002166 Susceptibility f.c.c, could not get paper
-A002167 Specific heat f.c.c, could not get paper
-A002168 Susceptibility b.c.c, could not get paper
+A002166 Susceptibility f.c.c, have paper
+A002167 Specific heat f.c.c, have paper
+A002168 Susceptibility b.c.c, have paper
 A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002218 Very complicated looking cycle index, paper available

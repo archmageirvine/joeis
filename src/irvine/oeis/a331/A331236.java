@@ -7,7 +7,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A002887.
+ * A331236.
  * @author Sean A. Irvine
  */
 public class A331236 extends ParallelGenerateGraphsSequence {
@@ -53,7 +53,6 @@ public class A331236 extends ParallelGenerateGraphsSequence {
   protected void graphGenInit(final GenerateGraphs gg) {
     gg.setVertices(mN);
     gg.setMinEdges(mN - 1);
-    //gg.setMaxEdges(mN - 1); // Trees
     gg.setMaxEdges(mN * (mN - 1) / 2);
     gg.setConnectionLevel(1);
   }

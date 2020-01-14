@@ -4,16 +4,16 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028403.
+ * A028402.
  * @author Sean A. Irvine
  */
-public class A028403 implements Sequence {
+public class A028402 implements Sequence {
 
-  private int mN = -1;
+  private int mN = 0;
 
   @Override
   public Z next() {
-    return Z.ONE.shiftLeft(++mN).add(1).shiftLeft(mN + 1);
+    return Z.ONE.shiftLeft(++mN).add(1).shiftLeft(mN);
   }
 }
 

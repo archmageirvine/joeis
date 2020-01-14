@@ -43,8 +43,8 @@ public class A331237 extends ParallelGenerateGraphsSequence {
     assert k == el.length;
 
     // Cutting numbers
-    int[] c = new int[p];
-    int[] d = new int[p];
+    final int[] c = new int[p];
+    final int[] d = new int[p];
     for (int i = 0; i < pa.length; ++i) {
       d[pa[i]] += d[el[i]] + 1;
       c[pa[i]] += (d[el[i]] + 1) * (p - 2 - d[el[i]]);

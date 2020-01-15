@@ -1,6 +1,7 @@
 package irvine.oeis.a331;
 
 import java.io.IOException;
+import java.util.Collection;
 
 import irvine.math.IntegerUtils;
 import irvine.math.graph.Graph;
@@ -56,9 +57,37 @@ public class A331238 implements Sequence, GraphProcessor {
     return IntegerUtils.max(c) / 2;
   }
 
+  private int cuttingNumber(final Graph graph, final int vertex) {
+    final Collection<Graph> branches = graph.delete(vertex).components();
+    if (branches.size() <= 1) {
+      return 0;
+    }
+    final int p = graph.order();
+    int cn = (p - 1) * (p - 2) / 2;
+    for (final Graph g : branches) {
+      final long pg = g.order();
+      cn -= pg * (pg - 1) / 2;
+    }
+    return cn;
+  }
+
+  private int cuttingNumber(final Graph graph) {
+    int cn = 0;
+    for (int v = 0; v < graph.order(); ++v) {
+      if (graph.degree(v) > 1) {
+        final int cnv = cuttingNumber(graph, v);
+        if (cnv > cn) {
+          cn = cnv;
+        }
+      }
+    }
+    return cn;
+  }
+
   @Override
   public void process(final Graph graph) throws IOException {
-    ++mCounts[getCuttingNumber(graph)];
+    ++mCounts[cuttingNumber(graph)];
+    //++mCounts[getCuttingNumber(graph)];
   }
 
   @Override
@@ -71,7 +100,8 @@ public class A331238 implements Sequence, GraphProcessor {
       final GenerateGraphs gg = new GenerateGraphs(1);
       gg.setVertices(mN);
       gg.setMinEdges(mN - 1);
-      gg.setMaxEdges(mN - 1);
+      //gg.setMaxEdges(mN - 1); // trees
+      gg.setMaxEdges(mN * (mN - 1) / 2); // graphs
       gg.setConnectionLevel(1);
       gg.setProcessor(this);
       gg.sanitizeParams();

@@ -19,6 +19,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(EulerTransformSequenceTest.class);
     suite.addTestSuite(FactorizationSequenceTest.class);
     suite.addTestSuite(FiniteSequenceTest.class);
+    suite.addTestSuite(HolonomicRecurrenceTest.class);
     suite.addTestSuite(InverseEulerTransformSequenceTest.class);
     suite.addTestSuite(InverseMobiusTransformSequenceTest.class);
     suite.addTestSuite(LyndonTransformSequenceTest.class);

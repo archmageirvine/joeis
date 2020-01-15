@@ -106,7 +106,7 @@ public final class Names {
     FORMULA.add("Zp");
     FORMULA.add("xRy");
     FORMULA.add("VVV..VV;");
-    FORMULA.add("AAAAAAA");
+    FORMULA.add("AAAAAAA...");
     FORMULA.add("abacabaabacababac...");
     FORMULA.add("aabbccdd...,");
     FORMULA.add("aab");

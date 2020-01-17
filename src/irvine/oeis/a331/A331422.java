@@ -10,10 +10,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A331238.
+ * A331422.
  * @author Sean A. Irvine
  */
-public class A331238 implements Sequence, GraphProcessor {
+public class A331422 implements Sequence, GraphProcessor {
 
   private int mN = 0;
   private int mM = 0;
@@ -21,7 +21,7 @@ public class A331238 implements Sequence, GraphProcessor {
 
   @Override
   public void process(final Graph graph) throws IOException {
-    ++mCounts[GraphUtils.cuttingNumberOfTree(graph)];
+    ++mCounts[GraphUtils.cuttingNumber(graph)];
   }
 
   @Override
@@ -33,7 +33,7 @@ public class A331238 implements Sequence, GraphProcessor {
       final GenerateGraphs gg = new GenerateGraphs(1);
       gg.setVertices(mN);
       gg.setMinEdges(mN - 1);
-      gg.setMaxEdges(mN - 1); // trees
+      gg.setMaxEdges(mN * (mN - 1) / 2);
       gg.setConnectionLevel(1);
       gg.setProcessor(this);
       gg.sanitizeParams();

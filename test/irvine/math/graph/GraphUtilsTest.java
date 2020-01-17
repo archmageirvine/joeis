@@ -2,6 +2,8 @@ package irvine.math.graph;
 
 import irvine.math.z.Z;
 import irvine.oeis.a007.A007036;
+import irvine.oeis.a331.A331236;
+import irvine.oeis.a331.A331237;
 import junit.framework.TestCase;
 
 /**
@@ -63,5 +65,23 @@ public class GraphUtilsTest extends TestCase {
     assertEquals(Z.ONE, seq.next());
     assertEquals(Z.FIVE, seq.next());
     assertEquals(Z.valueOf(40), seq.next());
+  }
+
+  public void testCuttingNumber() {
+    final A331236 seq = new A331236();
+    assertEquals(Z.ZERO, seq.next());
+    assertEquals(Z.ZERO, seq.next());
+    assertEquals(Z.ONE, seq.next());
+    assertEquals(Z.SEVEN, seq.next());
+    assertEquals(Z.valueOf(43), seq.next());
+  }
+
+  public void testCuttingNumberTree() {
+    final A331237 seq = new A331237();
+    assertEquals(Z.ZERO, seq.next());
+    assertEquals(Z.ZERO, seq.next());
+    assertEquals(Z.ONE, seq.next());
+    assertEquals(Z.FIVE, seq.next());
+    assertEquals(Z.valueOf(15), seq.next());
   }
 }

@@ -1,9 +1,11 @@
 package irvine.math.graph;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -213,4 +215,87 @@ public final class GraphUtils {
     }
     return true;
   }
+
+  /**
+   * Compute the cutting-number of the specified vertex in a graph.
+   * @param graph the graph
+   * @param vertex the vertex
+   * @return cutting-number
+   */
+  public static int cuttingNumber(final Graph graph, final int vertex) {
+    final Collection<Graph> branches = graph.delete(vertex).components();
+    if (branches.size() <= 1) {
+      return 0;
+    }
+    final int p = graph.order();
+    int cn = (p - 1) * (p - 2) / 2;
+    for (final Graph g : branches) {
+      final int pg = g.order();
+      cn -= pg * (pg - 1) / 2;
+    }
+    return cn;
+  }
+
+  /**
+   * Compute the cutting-number of a graph.
+   * @param graph the graph
+   * @return cutting-number
+   */
+  public static int cuttingNumber(final Graph graph) {
+    int cn = 0;
+    for (int v = 0; v < graph.order(); ++v) {
+      if (graph.degree(v) > 1) {
+        final int cnv = cuttingNumber(graph, v);
+        if (cnv > cn) {
+          cn = cnv;
+        }
+      }
+    }
+    return cn;
+  }
+
+  private static int postorder(final Graph graph, final int[] el, final int[] pa, final boolean[] visited, final int v, final int parent, int k) {
+    visited[v] = true;
+    el[--k] = v;
+    if (v != parent) {
+      pa[k] = parent;
+    }
+    int u = -1;
+    while ((u = graph.nextVertex(v, u)) >= 0) {
+      if (!visited[u]) {
+        k = postorder(graph, el, pa, visited, u, v, k);
+      }
+    }
+    return k;
+  }
+
+  /**
+   * Compute the cutting-number of a tree.  Note this is likely faster than computing
+   * the cutting-number of a general graph. Behaviour is undefined if the input is not
+   * a tree.
+   * @param tree the tree
+   * @return cutting-number
+   */
+  public static int cuttingNumberOfTree(final Graph tree) {
+    // Compute cutting number of tree using Harary, Slater
+
+    // Create a post ordering of the nodes in the tree
+    final int p = tree.order();
+    final int[] el = new int[p];
+    final int[] pa = new int[p - 1];
+    final int k = postorder(tree, el, pa, new boolean[el.length], 0, 0, p);
+    assert k == 0;
+
+    // Cutting numbers
+    final int[] c = new int[p];
+    final int[] d = new int[p];
+    for (int i = 0; i < pa.length; ++i) {
+      d[pa[i]] += d[el[i]] + 1;
+      c[pa[i]] += (d[el[i]] + 1) * (p - 2 - d[el[i]]);
+      c[el[i]] += (p - 1 - d[el[i]]) * d[el[i]];
+    }
+    return IntegerUtils.max(c) / 2;
+  }
+
+
 }

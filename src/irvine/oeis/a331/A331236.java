@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A331236.
+ * A331236 Total cutting number of all simple connected graphs of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A331236 extends ParallelGenerateGraphsSequence {

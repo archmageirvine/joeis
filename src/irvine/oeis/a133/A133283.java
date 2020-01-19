@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133283 Numbers n such that <code>30*n^2+6</code> is a square.
+ * A133283 Numbers n such that <code>30*n^2 + 6</code> is a square.
  * @author Sean A. Irvine
  */
 public class A133283 extends LinearRecurrence {

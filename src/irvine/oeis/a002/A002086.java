@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002086.
+ * A002086 Number of circulant tournaments on <code>2n+1</code> nodes up to Cayley isomorphism.
  * @author Sean A. Irvine
  */
 public class A002086 implements Sequence {

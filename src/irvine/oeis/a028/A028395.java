@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028395.
+ * A028395 Iterate the map in <code>A006368</code> starting at 14.
  * @author Sean A. Irvine
  */
 public class A028395 implements Sequence {

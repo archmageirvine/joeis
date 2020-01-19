@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019295 <code>a(n) = sigma(sigma(...(sigma(n))...) /</code> n, where sigma <code>(A000203)</code> is iterated <code>A019294(n)</code> times.
+ * A019295 <code>a(n) = sigma(sigma(...(sigma(n))...)) /</code> n, where sigma <code>(A000203)</code> is iterated until a multiple of n is reached.
  * @author Sean A. Irvine
  */
 public class A019295 implements Sequence {

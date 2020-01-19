@@ -5,7 +5,7 @@ package irvine.oeis.a175;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A175921 Period 5: repeat [1, 2, 2, -1, 1].
+ * A175921 Period <code>5</code>: repeat <code>[1, 2, 2, -1, 1]</code>.
  * @author Georg Fischer
  */
 public class A175921 extends PeriodicSequence {

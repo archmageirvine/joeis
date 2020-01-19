@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020449 Primes that contain digits 0 and 1 only.
+ * A020449 Primes whose greatest digit is 1.
  * @author Sean A. Irvine
  */
 public class A020449 implements Sequence {

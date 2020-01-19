@@ -5,7 +5,7 @@ package irvine.oeis.a118;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A118828 Numerators of the convergents of the 2-adic continued fraction of zero given by A118827.
+ * A118828 Numerators of the convergents of the 2-adic continued fraction of zero given by <code>A118827</code>.
  * @author Georg Fischer
  */
 public class A118828 extends PeriodicSequence {

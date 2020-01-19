@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028388.
+ * A028388 Good primes (version <code>2): prime(n)</code> such that <code>prime(n)^2 &gt; prime(n-i)*prime(n+i)</code> for all <code>1 &lt;= i &lt;= n-1</code>.
  * @author Sean A. Irvine
  */
 public class A028388 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a076;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A076785 Let u(1)=u(2)=u(3)=1, u(n)=(2^floor(u(n-1)/2)+2^floor(u(n-2)/2)+1)/u(n-3) then a(n) = denominator of u(n).
+ * A076785 Let <code>u(1)=u(2)=u(3)=1, u(n)=(2^floor(u(n-1)/2)+2^floor(u(n-2)/2)+1)/u(n-3)</code> then <code>a(n) =</code> denominator of <code>u(n)</code>.
  * @author Georg Fischer
  */
 public class A076785 extends PeriodicSequence {

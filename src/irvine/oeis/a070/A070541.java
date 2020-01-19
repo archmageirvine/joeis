@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A070541 a(n) = n^4 mod 22.
+ * A070541 <code>a(n) = n^4 mod 22</code>.
  * @author Georg Fischer
  */
 public class A070541 implements Sequence {

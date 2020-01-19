@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A028398.
+ * A028398 When map in <code>A006368</code> is iterated, all numbers fall into cycles; order cycles by smallest entry; <code>a(n)</code> is smallest entry in n-th cycle (some cycles are infinite).
  * @author Sean A. Irvine
  */
 public class A028398 extends A028397 {

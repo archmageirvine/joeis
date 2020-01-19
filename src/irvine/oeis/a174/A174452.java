@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A174452 a(n) = n^2 mod 1000.
+ * A174452 <code>a(n) = n^2 mod 1000</code>.
  * @author Georg Fischer
  */
 public class A174452 implements Sequence {

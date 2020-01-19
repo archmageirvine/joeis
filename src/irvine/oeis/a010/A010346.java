@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A010346 Base 5 Armstrong or narcissistic numbers (written in base <code>10)</code>.
+ * A010346 <code>Base-5</code> Armstrong or narcissistic numbers (written in base <code>10)</code>.
  * @author Sean A. Irvine
  */
 public class A010346 extends FiniteSequence {

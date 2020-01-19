@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002737 Coefficients for extrapolation.
+ * A002737 <code>a(n) = Sum_{j=0..n} (n+j)*binomial(n+j,j)</code>.
  * @author Sean A. Irvine
  */
 public class A002737 implements Sequence {

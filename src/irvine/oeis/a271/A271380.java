@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A271380 a(n) = 5^n mod 163.
+ * A271380 <code>a(n) = 5^n mod 163</code>.
  * @author Georg Fischer
  */
 public class A271380 extends PeriodicSequence {

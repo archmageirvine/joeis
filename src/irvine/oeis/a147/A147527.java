@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147527 Numbers n such that there exists x in N : <code>(x+103)^3-x^3=n^2</code>.
+ * A147527 Numbers k such that there exists x in N : <code>(x + 103)^3 - x^3 = k^2</code>.
  * @author Sean A. Irvine
  */
 public class A147527 extends LinearRecurrence {

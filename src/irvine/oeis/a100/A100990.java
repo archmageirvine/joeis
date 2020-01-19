@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A100990 a(n) = n^21 mod 100.
+ * A100990 <code>a(n) = n^21 mod 100</code>.
  * @author Georg Fischer
  */
 public class A100990 implements Sequence {

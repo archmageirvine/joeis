@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028391.
+ * A028391 <code>a(n) = n - floor(sqrt(n))</code>.
  * @author Sean A. Irvine
  */
 public class A028391 implements Sequence {

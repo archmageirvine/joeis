@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028386.
+ * A028386 Numbers k such that <code>k*(3k-1)/2</code> is a pentagonal palindrome.
  * @author Sean A. Irvine
  */
 public class A028386 implements Sequence {

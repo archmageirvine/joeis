@@ -12,7 +12,7 @@ import irvine.util.array.DynamicIntArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A002887.
+ * A002887 The minimum number of nodes of a tree with a cutting center of n nodes.
  * @author Sean A. Irvine
  */
 public class A002887 implements Sequence, GraphProcessor {

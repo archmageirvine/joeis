@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004018 Theta series of square lattice (or number of ways of writing n as a sum of <code>2</code> squares).
+ * A004018 Theta series of square lattice (or number of ways of writing n as a sum of <code>2</code> squares). Often denoted by <code>r(n)</code> or <code>r_2(n)</code>.
  * @author Sean A. Irvine
  */
 public class A004018 implements Sequence {

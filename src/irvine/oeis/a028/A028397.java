@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028397.
+ * A028397 Start at n and iterate the map in <code>A006368; a(n)</code> is the smallest number in the trajectory.
  * @author Sean A. Irvine
  */
 public class A028397 implements Sequence {

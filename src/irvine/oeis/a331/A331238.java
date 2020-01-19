@@ -40,7 +40,7 @@ public class A331238 implements Sequence, GraphProcessor {
       try {
         gg.run(false, false, false, 0, 0);
       } catch (final IOException e) {
-        throw new RuntimeException(e); // We are not generating output anyway
+        throw new RuntimeException(e);
       }
     }
     return Z.valueOf(mCounts[mM]);

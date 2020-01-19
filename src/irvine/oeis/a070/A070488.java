@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class A070488 implements Sequence {
 
   private int mN = 0;
-  private final Z mExp = Z.valueOf(3);
+  private final Z mExp = Z.THREE;
   private final Z mMod = Z.valueOf(26);
 
   @Override

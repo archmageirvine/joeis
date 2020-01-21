@@ -1174,3 +1174,10 @@ A028252 Sequence arising in multiprocessor page migration, not in paper
 A028333 Number of nonzero terms in expansion of square of Vandermonde determinant of order (n+1)x(n+1) in terms of Schur functions, looks complicated
 A028351 Dimension of invariant subspace of Lie polynomials of degree 2n under action of SL_2(C) on free Lie algebra of rank 2,indexes seem to exceed character table?
 A028404 Number of types of Boolean functions of n variables under a certain group, cycle index, formula not in paper, similar A00614?
+A028405 Number of equivalence classes of Boolean functions of n variables under action of M(n,2), hard cycle index, have papers
+A028406 Number of types of Boolean functions of n variables under a certain group
+A028407 Number of equivalence classes of Boolean functions of n variables under action of LSD(n,2)
+A028408 Number of types of Boolean functions of n variables under a certain group
+A028409 Number of types of Boolean functions of n variables under a certain group
+A028410 Number of types of Boolean functions of n variables under a certain group
+A028411 Number of types of Boolean functions of n variables under a certain group

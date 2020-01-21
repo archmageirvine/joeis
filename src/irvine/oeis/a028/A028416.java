@@ -1,0 +1,26 @@
+package irvine.oeis.a028;
+
+import irvine.factor.prime.Fast;
+import irvine.math.group.IntegersModMul;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A028416.
+ * @author Sean A. Irvine
+ */
+public class A028416 implements Sequence {
+
+  private final Fast mPrime = new Fast();
+  private Z mP = Z.FIVE;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mP = mPrime.nextPrime(mP);
+      if (new IntegersModMul(mP).order(Z.TEN).isEven()) {
+        return mP;
+      }
+    }
+  }
+}

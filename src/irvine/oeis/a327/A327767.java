@@ -12,6 +12,6 @@ public class A327767 extends PeriodicSequence {
 
   /** Construct the sequence. */
   public A327767() {
-    super(1,-2);
+    super(1, -2);
   }
 }

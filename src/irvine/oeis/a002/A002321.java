@@ -11,7 +11,7 @@ import irvine.math.Mobius;
 public class A002321 implements Sequence {
 
   private long mLimit = 1000000;
-  private long mN = 0;
+  protected long mN = 0;
   private Mobius mMobius = new Mobius(mLimit);
 
   @Override

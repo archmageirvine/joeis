@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001055;
 
 /**
- * A028422.
+ * A028422 Number of ways n can be properly factored.
  * @author Sean A. Irvine
  */
 public class A028422 extends A001055 {

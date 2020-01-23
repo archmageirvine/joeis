@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A028412.
+ * A028412 Rectangular array of numbers <code>Fibonacci(m(n+1))/Fibonacci(m), m &gt;= 1, n &gt;= 0</code>, read by downward antidiagonals.
  * @author Sean A. Irvine
  */
 public class A028412 implements Sequence {

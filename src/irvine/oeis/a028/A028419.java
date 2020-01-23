@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A028419.
+ * A028419 Congruence classes of triangles which can be drawn using lattice points in <code>n X n</code> grid as vertices.
  * @author Sean A. Irvine
  */
 public class A028419 implements Sequence {

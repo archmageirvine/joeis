@@ -1182,3 +1182,6 @@ A028409 Number of types of Boolean functions of n variables under a certain grou
 A028410 Number of types of Boolean functions of n variables under a certain group
 A028411 Number of types of Boolean functions of n variables under a certain group
 A028420 Number of monomer-dimer tilings of n X n chessboard, existing b-file unknown algorithm
+A028441 Triangulations of 4-dimensional cyclic polytopes, cf. A007815
+A028444 Busy Beaver sequence, or Rado's sigma function: maximal number of 1's that an n-state Turing machine can print on an initially blank tape before halting
+A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}, probably hard

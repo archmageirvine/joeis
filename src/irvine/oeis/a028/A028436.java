@@ -5,21 +5,29 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028427 Clog sequence in base 6. Right to left concatenation of <code>n,int(log_6(n)),int(log_6(int(log_6(n)))),..</code>. in <code>base6</code>.
+ * A028436 Golc sequence in base 6. Left to right concatenation of <code>n,int(log_6(n)),int(log_6(int(log_6(n)))),..</code>. in <code>base6</code>.
  * @author Sean A. Irvine
  */
-public class A028427 implements Sequence {
+public class A028436 implements Sequence {
 
   private static final CR BASE_LOG = CR.valueOf(6).log();
   private long mN = 0;
 
   @Override
   public Z next() {
-    long m = ++mN;
+    if (++mN == 1) {
+      return Z.SIX;
+    }
+    long m = mN;
+    long pm = m;
     final StringBuilder sb = new StringBuilder();
     while (m > 0) {
-      sb.insert(0, Long.toString(m, 6));
+      pm = m;
+      sb.append(Long.toString(m, 6));
       m = CR.valueOf(m).log().divide(BASE_LOG).floor().longValueExact();
+    }
+    if (pm > 1) {
+      sb.append('0');
     }
     return new Z(sb, 6);
   }

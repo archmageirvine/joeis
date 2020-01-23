@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028418.
+ * A028418 Sum over all <code>n!</code> permutations of n letters of maximum cycle length.
  * @author Sean A. Irvine
  */
 public class A028418 extends MemoryFunction2<Long, Z> implements Sequence {

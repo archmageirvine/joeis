@@ -1,7 +1,6 @@
 package irvine.oeis.a027;
 
 import irvine.math.graph.CountIndependentSets;
-import irvine.math.graph.Graph;
 import irvine.math.graph.GraphFactory;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -19,28 +18,8 @@ public class A027667 implements Sequence {
     return 3;
   }
 
-  private Graph pathPowerGraph(final int n) {
-    final int m = Z.valueOf(pathLength()).pow(n).intValueExact();
-    final Graph g = GraphFactory.create(m);
-    if (n > 0) {
-      for (int u = 0; u < g.order(); ++u) {
-        final int[] v = GraphFactory.unpack(u, mN, pathLength());
-        for (int k = 0; k < v.length; ++k) {
-          if (v[k] != 0 && v[k] != pathLength() - 1) {
-            --v[k];
-            g.addEdge(u, GraphFactory.pack(v, pathLength()));
-            v[k] += 2;
-            g.addEdge(u, GraphFactory.pack(v, pathLength()));
-            --v[k];
-          }
-        }
-      }
-    }
-    return g;
-  }
-
   @Override
   public Z next() {
-    return Z.valueOf(CountIndependentSets.count(pathPowerGraph(++mN)));
+    return Z.valueOf(CountIndependentSets.count(GraphFactory.pathPowerGraph(pathLength(), ++mN)));
   }
 }

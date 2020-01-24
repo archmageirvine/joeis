@@ -17,7 +17,7 @@ public class A028445 implements Sequence {
 
   private boolean isMatch(final String v, int k, int j, final int l) {
     for (int i = 0; i < l; ++i) {
-      if (v.charAt(--k) != v.charAt((--j))) {
+      if (v.charAt(--k) != v.charAt(--j)) {
         return false;
       }
     }

@@ -211,4 +211,33 @@ public final class GraphFactory {
     return g;
   }
 
+  /**
+   * Return the graph <code>P(r)^n</code>.
+   * @param r number of vertices in path
+   * @param n power
+   * @return path power graph
+   */
+  public static Graph pathPowerGraph(final int r, final int n) {
+    final int m = Z.valueOf(r).pow(n).intValueExact();
+    final Graph g = create(m);
+    if (n > 0) {
+      for (int u = 0; u < g.order(); ++u) {
+        final int[] v = unpack(u, n, r);
+        for (int k = 0; k < v.length; ++k) {
+          if (v[k] != 0 && v[k] != r - 1) {
+            --v[k];
+            g.addEdge(u, pack(v, r));
+            v[k] += 2;
+            g.addEdge(u, pack(v, r));
+            --v[k];
+          } else if (r == 2 && v[k] == 0) {
+            ++v[k];
+            g.addEdge(u, pack(v, r));
+            --v[k];
+          }
+        }
+      }
+    }
+    return g;
+  }
 }

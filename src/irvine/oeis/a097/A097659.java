@@ -5,7 +5,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097659 <code>1001^n, n &gt;= 0</code>.
+ * A097659 <code>a(n) = 1001^n</code>.
  * @author Georg Fischer
  */
 public class A097659 extends HolonomicRecurrence {

@@ -12,6 +12,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(A136004Test.class);
     suite.addTestSuite(A136008Test.class);
     suite.addTestSuite(A136010Test.class);
     suite.addTestSuite(A136016Test.class);

@@ -10,11 +10,11 @@ import irvine.oeis.a001.A001065;
  * @author Georg Fischer
  */
 public class A053867 extends A001065 {
-  private int mN = 1 - 1;
+  private int mN = 0;
   
   public A053867() {
     super();
-    int bOffset = 1 - 1;
+    int bOffset = 0;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

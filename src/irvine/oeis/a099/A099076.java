@@ -14,7 +14,7 @@ public class A099076 extends A000960 {
   
   public A099076() {
     super();
-    int bOffset = 1 - 1;
+    int bOffset = 0;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

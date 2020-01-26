@@ -10,7 +10,7 @@ import irvine.oeis.a002.A002275;
  * @author Georg Fischer
  */
 public class A110369 extends A002275 {
-  private int mN = 1 - 1;
+  private int mN = 0;
   
   public A110369() {
     super();

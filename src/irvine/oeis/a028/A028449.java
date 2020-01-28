@@ -12,12 +12,7 @@ public class A028449 extends GeneratingFunctionSequence {
   /** Construct the sequence. */
   public A028449() {
     super(new Z[]{
-        Z.ONE,
-        new Z("-30"),
-        new Z("-197"),
-        new Z("9832"),
-        new Z("7846"),
-        new Z("-1304748"),
+        Z.ONE, new Z("-30"), new Z("-197"), new Z("9832"), new Z("7846"), new Z("-1304748"),
         new Z("819462"),
         new Z("93250164"),
         new Z("-101041570"),
@@ -82,19 +77,10 @@ public class A028449 extends GeneratingFunctionSequence {
         new Z("93250164"),
         new Z("-819462"),
         new Z("-1304748"),
-        new Z("-7846"),
-        new Z("9832"),
-        new Z("197"),
-        new Z("-30"),
-        Z.NEG_ONE
+        new Z("-7846"), new Z("9832"), new Z("197"), new Z("-30"), Z.NEG_ONE
       },
       new Z[]{
-        Z.ONE,
-        new Z("-38"),
-        new Z("-343"),
-        new Z("15356"),
-        new Z("48279"),
-        new Z("-2465138"),
+        Z.ONE, new Z("-38"), new Z("-343"), new Z("15356"), new Z("48279"), new Z("-2465138"),
         new Z("-3427834"),
         new Z("210050358"),
         new Z("110016576"),
@@ -161,11 +147,7 @@ public class A028449 extends GeneratingFunctionSequence {
         new Z("-210050358"),
         new Z("-3427834"),
         new Z("2465138"),
-        new Z("48279"),
-        new Z("-15356"),
-        new Z("-343"),
-        new Z("38"),
-        Z.ONE
+        new Z("48279"), new Z("-15356"), new Z("-343"), new Z("38"), Z.ONE
       });
   }
 }

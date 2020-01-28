@@ -3,7 +3,6 @@ package irvine.oeis.a115;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A115932 Numbers n such that n and <code>8*n</code>, taken together, are zeroless pandigital.

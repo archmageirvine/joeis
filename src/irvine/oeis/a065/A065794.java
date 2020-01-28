@@ -3,7 +3,6 @@ package irvine.oeis.a065;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A065794 Numbers n such that the sum of all possible subsets of the digits in n, excluding n itself, sums to <code>n</code>.

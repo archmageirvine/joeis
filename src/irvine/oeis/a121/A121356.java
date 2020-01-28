@@ -3,7 +3,6 @@ package irvine.oeis.a121;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a121.A121355;
 
 /**
  * A121356 Number of transitive <code>PSL_2(ZZ)</code> actions on a finite dotted and labeled set of size <code>n</code>.
@@ -12,6 +11,7 @@ import irvine.oeis.a121.A121355;
 public class A121356 extends A121355 {
   private int mN = 0;
   
+  /** Construct the sequence. */
   public A121356() {
     super();
     int bOffset = 0;

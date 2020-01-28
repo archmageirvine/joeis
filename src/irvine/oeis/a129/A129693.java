@@ -3,7 +3,6 @@ package irvine.oeis.a129;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A129693 Right truncatable primes in base <code>9</code> (written in decimal form).

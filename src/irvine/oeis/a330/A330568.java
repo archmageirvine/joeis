@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330568 Coordination sequence for 1-skeleton of rhombic enneacontahedron with respect to a hexavalent node.

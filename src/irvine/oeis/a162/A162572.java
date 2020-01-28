@@ -3,7 +3,6 @@ package irvine.oeis.a162;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A162572 Decimal numbers n which, when converted to a lower number base, show the reversed digits of <code>n</code>.

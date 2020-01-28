@@ -3,7 +3,6 @@ package irvine.oeis.a274;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A274833 6-white numbers: partition digits of <code>n^6</code> into blocks of 6 starting at right; sum of these 6-digit numbers equals <code>n</code>.

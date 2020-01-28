@@ -3,7 +3,6 @@ package irvine.oeis.a106;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A106605 Vertically symmetrical dates DDMMYYYY excluding years which are divisible by 10, considered as numbers, in increasing order.

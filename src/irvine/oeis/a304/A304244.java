@@ -3,7 +3,6 @@ package irvine.oeis.a304;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A304244 Numbers that yield a prime when <code>prime(k)</code> is inserted after the k-th digit, for any k <code>&gt;= 1, k &lt</code>; number of digits.

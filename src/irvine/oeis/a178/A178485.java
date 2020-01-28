@@ -3,7 +3,6 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A178485 <code>(A178475(n)-6)/9</code>.

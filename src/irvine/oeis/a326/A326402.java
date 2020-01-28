@@ -3,7 +3,6 @@ package irvine.oeis.a326;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A326402 Record high values in <code>A326344</code>.

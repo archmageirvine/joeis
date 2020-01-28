@@ -3,7 +3,6 @@ package irvine.oeis.a255;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A255729 Distinct-digit numbers that are the concatenation of m and <code>prime(m)</code> for some number m.

@@ -3,7 +3,6 @@ package irvine.oeis.a307;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A307769 Decimal expansion of <code>2^(-149)</code>.

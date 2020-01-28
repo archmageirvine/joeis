@@ -3,7 +3,6 @@ package irvine.oeis.a307;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A307344 Cells visited by a single pawn move for an even cell and a double pawn move for an odd cell on a numbered <code>3D</code> grid and moving to the lowest available unvisited cell of different parity at each step.

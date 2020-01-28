@@ -3,7 +3,6 @@ package irvine.oeis.a328;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A328852 Quotients of consecutive terms of <code>A328549</code>.

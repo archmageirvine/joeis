@@ -3,7 +3,6 @@ package irvine.oeis.a307;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A307586 Numbers k such that the determinant of the Vandermonde matrix of their digits is equal to <code>sigma(k)</code>, the sum of divisors of k.

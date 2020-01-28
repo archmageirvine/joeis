@@ -3,7 +3,6 @@ package irvine.oeis.a305;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A305500 <code>a(n) = (-1) * j((1+Sqrt(-A003173(n+2))/2)</code>.

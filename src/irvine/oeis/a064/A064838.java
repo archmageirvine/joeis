@@ -3,7 +3,6 @@ package irvine.oeis.a064;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a064.A064837;
 
 /**
  * A064838 <code>a(n) = A064837(n)/2</code>.
@@ -12,6 +11,7 @@ import irvine.oeis.a064.A064837;
 public class A064838 extends A064837 {
   private int mN = 0 - 1;
   
+  /** Construct the sequence. */
   public A064838() {
     super();
     int bOffset = 0 - 1;

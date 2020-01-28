@@ -3,7 +3,6 @@ package irvine.oeis.a161;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A161716 Number of reduced words of length n in the Weyl group <code>B_7</code>.

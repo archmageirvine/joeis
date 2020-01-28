@@ -3,7 +3,6 @@ package irvine.oeis.a185;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A185641 Least k such that <code>A098591(k) = n</code> or 0 if no such k exists.

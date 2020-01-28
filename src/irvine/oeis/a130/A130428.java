@@ -3,7 +3,6 @@ package irvine.oeis.a130;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A130428 List of numbers n such that n is equal to the number of <code>6</code>'s in the decimal digits of all numbers <code>&lt;= n</code>.

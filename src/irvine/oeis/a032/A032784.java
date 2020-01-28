@@ -3,7 +3,6 @@ package irvine.oeis.a032;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A032784 Numbers k such that <code>k(k+1)(k+2)...(k+11) / (k+(k+1)+(k+2)+...+(k+11))</code> is an integer.

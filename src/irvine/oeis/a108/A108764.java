@@ -3,7 +3,6 @@ package irvine.oeis.a108;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A108764 Products of exactly two supersingular primes <code>(A002267)</code>.

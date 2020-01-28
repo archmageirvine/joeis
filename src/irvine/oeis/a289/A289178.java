@@ -3,7 +3,6 @@ package irvine.oeis.a289;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A289178 Numbers n such that <code>binomial(2*n,n) &lt; (2*n)^pi(n)</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a173;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A173071 Palindromic mountain primes.

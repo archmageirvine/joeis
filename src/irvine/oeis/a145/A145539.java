@@ -3,7 +3,6 @@ package irvine.oeis.a145;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A145539 Number of numbers removed in each step of Eratosthenes's sieve for <code>10^6</code>.

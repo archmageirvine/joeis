@@ -3,7 +3,6 @@ package irvine.oeis.a259;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A259143 Number of distinct digits needed to write the calendar date of n-th day of a non-leap year in decimal representation, without leading zeros.

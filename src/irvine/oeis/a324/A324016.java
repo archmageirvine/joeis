@@ -3,7 +3,6 @@ package irvine.oeis.a324;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A324016 N-digit substring of 81654327 taken from the left.

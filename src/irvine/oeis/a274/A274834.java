@@ -3,7 +3,6 @@ package irvine.oeis.a274;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A274834 7-white numbers: partition digits of <code>n^7</code> into blocks of 7 starting at right; sum of these 7-digit numbers equals <code>n</code>.

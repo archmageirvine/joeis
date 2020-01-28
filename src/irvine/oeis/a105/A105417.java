@@ -3,7 +3,6 @@ package irvine.oeis.a105;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A105417 Numbers that are pandigital in Roman numerals, using each of the symbols I, V, X, L, C, D and M at least once.

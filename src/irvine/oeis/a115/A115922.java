@@ -3,7 +3,6 @@ package irvine.oeis.a115;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A115922 Numbers n such that n and <code>2*n</code>, taken together are pandigital.

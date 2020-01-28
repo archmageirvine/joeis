@@ -3,7 +3,6 @@ package irvine.oeis.a211;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A211772 Nonprime numbers all of whose divisors are numbers whose decimal digits are in ascending order.

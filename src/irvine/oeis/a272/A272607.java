@@ -3,7 +3,6 @@ package irvine.oeis.a272;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A272607 Possible single line scores, not counting multiples, in duplicate bridge.

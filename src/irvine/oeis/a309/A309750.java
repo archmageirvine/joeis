@@ -3,7 +3,6 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A309750 Number of letters in the English names of the months when the names are arranged in alphabetical order.

@@ -3,7 +3,6 @@ package irvine.oeis.a296;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a296.A296065;
 
 /**
  * A296066 <code>a(n) = A296065(n)/n</code>.
@@ -12,6 +11,7 @@ import irvine.oeis.a296.A296065;
 public class A296066 extends A296065 {
   private int mN = 0;
   
+  /** Construct the sequence. */
   public A296066() {
     super();
     int bOffset = 0;

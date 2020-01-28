@@ -3,7 +3,6 @@ package irvine.oeis.a247;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A247616 Numbers with more than two distinct digits in arithmetic progression.

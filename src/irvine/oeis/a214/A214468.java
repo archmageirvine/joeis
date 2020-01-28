@@ -3,7 +3,6 @@ package irvine.oeis.a214;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A214468 Degrees of irreducible representations of symplectic group <code>S6(3)</code>.

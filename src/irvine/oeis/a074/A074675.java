@@ -3,7 +3,6 @@ package irvine.oeis.a074;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A074675 <code>Three-digit distinct-digit</code> primes.

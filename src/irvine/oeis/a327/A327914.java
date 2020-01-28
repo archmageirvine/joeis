@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327914 The 58 prime dates of each non-leap year of the form <code>concatenate(month,day)</code> with leading zero for days 1..9.

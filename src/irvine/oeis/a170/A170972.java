@@ -3,7 +3,6 @@ package irvine.oeis.a170;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A170972 Expansion of <code>Prod((1+x^(4*i+1)),i=0..m-1)</code> for m <code>= 9</code>.

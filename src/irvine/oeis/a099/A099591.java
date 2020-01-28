@@ -3,7 +3,6 @@ package irvine.oeis.a099;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A099591 Numbers that are the sum of no fewer than 17 biquadrates <code>(4th</code> powers).

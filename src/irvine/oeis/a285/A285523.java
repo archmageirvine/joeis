@@ -3,7 +3,6 @@ package irvine.oeis.a285;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A285523 Numbers n such that <code>n^2 + 1</code> is 100-smooth.

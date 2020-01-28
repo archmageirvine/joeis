@@ -3,7 +3,6 @@ package irvine.oeis.a076;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A076491 <code>a(2*n), a(2*n+1)</code> is the smallest consecutive prime pairs with at least n distinct common decimal digits.

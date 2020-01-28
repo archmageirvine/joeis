@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331057 Coordination sequence for 10-valent vertex in 1-skeleton of disdyakis triacontahedron.

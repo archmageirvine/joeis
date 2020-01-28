@@ -3,7 +3,6 @@ package irvine.oeis.a316;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A316603 Double prime times.

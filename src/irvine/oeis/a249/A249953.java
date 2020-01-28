@@ -3,7 +3,6 @@ package irvine.oeis.a249;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A249953 Primes with distinct digits: <code>a(n)</code> is the least prime <code>&gt; a(n-1)</code> such that <code>a(n-1)</code> and <code>a(n)</code> share just one digit.

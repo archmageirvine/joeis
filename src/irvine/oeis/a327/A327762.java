@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327762 <code>a(n) =</code> smallest positive number not already in the sequence such that all <code>n(n+1)/2</code> numbers in the triangle of differences of the first n terms are distinct.

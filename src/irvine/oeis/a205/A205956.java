@@ -3,7 +3,6 @@ package irvine.oeis.a205;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A205956 Distinct primes occurring as not necessarily consecutive subsequences in decimal representation of 39467139.

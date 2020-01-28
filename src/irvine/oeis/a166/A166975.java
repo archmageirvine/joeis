@@ -3,7 +3,6 @@ package irvine.oeis.a166;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A166975 Four-digit primes such that, if the digits are ABCD, then <code>AB+CD</code> and <code>A+B+C+D</code> are also primes.

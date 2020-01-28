@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330364 Values of <code>abs(P(x))</code>, with <code>P(x) = (1/72)*x^6 + (1/24)*x^5 - (1583/72)*x^4 - (3161/24)*x^3 + (200807/36)*x^2 + (97973/3)*x - 11351</code>, for <code>-45 &lt;= x &lt;= 12</code>, sorted by size. All values in the given range are prime.

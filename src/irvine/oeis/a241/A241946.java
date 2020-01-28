@@ -3,7 +3,6 @@ package irvine.oeis.a241;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A241946 Numbers n equal to the sum of all the four-digit numbers formed without repetition from the digits of <code>n</code>.

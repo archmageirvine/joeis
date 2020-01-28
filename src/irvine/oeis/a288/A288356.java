@@ -3,7 +3,6 @@ package irvine.oeis.a288;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A288356 Strings of 6 digits from 1...9, such that no formula using the single digits in the given order exists that evaluates to 0.

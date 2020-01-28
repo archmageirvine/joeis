@@ -3,7 +3,6 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A309071 Complete list of solutions to <code>y^2 = x^3 + 20*x</code>; sequence gives x values.

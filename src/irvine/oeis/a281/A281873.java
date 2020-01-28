@@ -13,6 +13,6 @@ public class A281873 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A281873() {
-    super(new Z[]{Z.ONE,new Z("2"),new Z("3"),new Z("4"),new Z("5"),new Z("6"),new Z("7"),new Z("8"),new Z("9"),new Z("10"),new Z("11"),new Z("12"),new Z("13"),new Z("14"),new Z("15"),new Z("16"),new Z("17"),new Z("18"),new Z("19"),new Z("20"),new Z("21"),new Z("22"),new Z("23"),new Z("24"),new Z("25"),new Z("26"),new Z("27"),new Z("28"),new Z("29"),new Z("30"),new Z("200"),new Z("77706"),new Z("16532869712"),new Z("3230579689970657935732"),new Z("36802906522516375115639735990520502954652700")});
+    super(new Z[]{Z.ONE, new Z("2"), new Z("3"), new Z("4"), new Z("5"), new Z("6"), new Z("7"), new Z("8"), new Z("9"), new Z("10"), new Z("11"), new Z("12"), new Z("13"), new Z("14"), new Z("15"), new Z("16"), new Z("17"), new Z("18"), new Z("19"), new Z("20"), new Z("21"), new Z("22"), new Z("23"), new Z("24"), new Z("25"), new Z("26"), new Z("27"), new Z("28"), new Z("29"), new Z("30"), new Z("200"), new Z("77706"), new Z("16532869712"), new Z("3230579689970657935732"), new Z("36802906522516375115639735990520502954652700")});
   }
 }

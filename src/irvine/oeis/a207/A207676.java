@@ -3,7 +3,6 @@ package irvine.oeis.a207;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A207676 Nonlinearities of 3-variable boolean functions ordered lexicographically.

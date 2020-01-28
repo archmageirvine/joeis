@@ -3,7 +3,6 @@ package irvine.oeis.a113;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A113116 Divisors of <code>10^17 - 1</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a218;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A218560 Numbers with d distinct ternary digits <code>(d=1,2,3)</code> such that for each <code>k=1,...,d</code>, some digit occurs exactly k times.

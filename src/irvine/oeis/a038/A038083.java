@@ -3,7 +3,6 @@ package irvine.oeis.a038;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A038083 Number of n-node rooted identity trees of height at most 4.

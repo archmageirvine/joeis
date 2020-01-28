@@ -3,7 +3,6 @@ package irvine.oeis.a118;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A118850 Number of minutes past midnight represented by <code>A118849(n)</code>.

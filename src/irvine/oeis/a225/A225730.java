@@ -3,7 +3,6 @@ package irvine.oeis.a225;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A225730 Numbers n such that <code>n &lt; d(n)^(22/10)</code>, where <code>d(n)</code> is the number of divisors of <code>n</code>.

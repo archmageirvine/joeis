@@ -3,7 +3,6 @@ package irvine.oeis.a267;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A267496 Autobiographical numbers in base <code>8</code>: numbers which are fixed or belong to a cycle under the operator T.

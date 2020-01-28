@@ -3,7 +3,6 @@ package irvine.oeis.a214;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A214024 Decimal expansion of <code>4^4^4</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a260;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A260751 25 primes in arithmetic progression: <code>a(n) = 6171054912832631 + (n-1)*81737658082080</code> for <code>n = 1, 2</code>, ..., 25.

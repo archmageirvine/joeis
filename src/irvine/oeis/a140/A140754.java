@@ -3,7 +3,6 @@ package irvine.oeis.a140;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A140754 Array <code>T(n,k) = 19n^2 + 10k^2</code>, read by rows, with 14 columns and 14 rows.

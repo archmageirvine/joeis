@@ -3,7 +3,6 @@ package irvine.oeis.a328;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A328274 Numbers m such that <code>phi(m) = rad(m)^3</code>, where phi is the Euler totient function <code>(A000010)</code> and rad is the squarefree kernel function <code>(A007947)</code>.

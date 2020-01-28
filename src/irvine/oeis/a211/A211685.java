@@ -3,7 +3,6 @@ package irvine.oeis.a211;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A211685 Prime numbers <code>&gt; 1000</code> such that all the substrings of length <code>&gt;= 3</code> are primes (substrings with leading <code>'0'</code> are considered to be nonprime).

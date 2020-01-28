@@ -3,7 +3,6 @@ package irvine.oeis.a130;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A130734 List of numbers of cents you can have in US coins without having change for a dollar.

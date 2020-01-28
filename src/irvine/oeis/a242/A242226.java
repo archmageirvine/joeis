@@ -3,7 +3,6 @@ package irvine.oeis.a242;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A242226 Numbers that can be written as a sum of numbers using only nonzero decimal digits in ascending order.

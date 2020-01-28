@@ -3,7 +3,6 @@ package irvine.oeis.a328;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A328933 For any negative number, add the digits (assigning the negative sign just to the first digit), square the result and add it to the original number. This sequence shows negative numbers which give a positive answer.

@@ -3,7 +3,6 @@ package irvine.oeis.a300;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A300007 Index of the inverse/opposite of the <code>n-th 2 X 2</code> sandpile <code>A300006(n)</code>. An involution <code>(self-inverse</code> permutation) of the integers <code>[1..192]</code>.

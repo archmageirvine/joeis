@@ -3,7 +3,6 @@ package irvine.oeis.a090;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A090429 3-digit numbers that do not resolve to 495 under the Kaprekar routine.

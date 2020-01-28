@@ -3,7 +3,6 @@ package irvine.oeis.a215;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A215409 The Goodstein sequence <code>G_n(3)</code>.

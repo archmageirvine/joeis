@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330083 <code>a(n)</code> is the smallest number k <code>&gt; 0</code> such that for each b <code>= 2..n</code> the base-b expansion of k has exactly <code>n -</code> b zeros.

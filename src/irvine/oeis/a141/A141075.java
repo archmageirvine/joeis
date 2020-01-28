@@ -3,7 +3,6 @@ package irvine.oeis.a141;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A141075 Nonprimes of form <code>(2*3*5*7*11-p)</code>, where p is prime.

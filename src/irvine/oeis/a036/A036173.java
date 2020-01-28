@@ -3,7 +3,6 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A036173 Log base <code>2 (n) mod 61</code>.

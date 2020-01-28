@@ -3,7 +3,6 @@ package irvine.oeis.a308;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A308562 Squares visited a knight moving on a board numbered by Hilbert's space-filling curve and moving to the lowest-numbered available unvisited square at each step.

@@ -3,7 +3,6 @@ package irvine.oeis.a283;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A283563 Numbers n such that <code>A112368(n) = Sum_{i=0..n} 2^i*i!</code> is prime.

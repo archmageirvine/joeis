@@ -3,7 +3,6 @@ package irvine.oeis.a085;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A085451 Numbers n such that n and <code>prime[n]</code> together use only distinct digits.

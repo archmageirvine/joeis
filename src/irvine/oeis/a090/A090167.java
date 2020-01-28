@@ -3,7 +3,6 @@ package irvine.oeis.a090;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A090167 Number of configurations of the <code>6 X 2</code> variant of the so-called "Sam Loyd" sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.

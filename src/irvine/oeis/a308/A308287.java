@@ -3,7 +3,6 @@ package irvine.oeis.a308;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A308287 Length 20 arithmetic progression of primes <code>(PAP-20)</code>.

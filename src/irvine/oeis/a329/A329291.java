@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329291 Ratio <code>A101337(m)/m</code> for m <code>= A306360(n)</code>, numbers dividing the value of their narcissistic function.

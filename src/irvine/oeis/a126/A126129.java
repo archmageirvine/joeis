@@ -3,7 +3,6 @@ package irvine.oeis.a126;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A126129 y-coordinate of n in the magic square <code>A124472</code>.

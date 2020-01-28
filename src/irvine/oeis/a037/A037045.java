@@ -3,7 +3,6 @@ package irvine.oeis.a037;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A037045 5-white numbers: partition digits of <code>n^5</code> into blocks of 5 starting at right; sum of these 5-digit numbers equals <code>n</code>.

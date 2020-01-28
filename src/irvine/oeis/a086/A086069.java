@@ -3,7 +3,6 @@ package irvine.oeis.a086;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A086069 Records in <code>A086068</code>.

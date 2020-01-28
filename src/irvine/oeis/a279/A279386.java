@@ -3,7 +3,6 @@ package irvine.oeis.a279;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A279386 Decimal expansion of <code>h^2</code>, where h is the Planck constant in SI units.

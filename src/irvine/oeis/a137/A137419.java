@@ -3,7 +3,6 @@ package irvine.oeis.a137;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A137419 <code>a(n) = (a(n - 4) + 1 - ((-1)^a(a(n - 1)) + 1)*(a(a(n - 1)) - a(a(n - 2)))/2)</code>.

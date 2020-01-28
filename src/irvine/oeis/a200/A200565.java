@@ -3,7 +3,6 @@ package irvine.oeis.a200;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A200565 Integral x solutions of elliptic curve <code>x^3-y^2 = 54814765 = A200218(2)</code>.

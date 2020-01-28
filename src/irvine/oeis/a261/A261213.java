@@ -3,7 +3,6 @@ package irvine.oeis.a261;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A261213 Odd numbers n such that <code>n^2 = m + (m+1)</code>, where both m and <code>m+1</code> have no repeated digits.

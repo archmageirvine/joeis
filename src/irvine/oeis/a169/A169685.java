@@ -3,7 +3,6 @@ package irvine.oeis.a169;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A169685 Decimal expansion of <code>2^521 - 1</code>.

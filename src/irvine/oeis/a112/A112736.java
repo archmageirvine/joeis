@@ -3,7 +3,6 @@ package irvine.oeis.a112;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A112736 Numbers whose square is exclusionary.

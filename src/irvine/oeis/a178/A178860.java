@@ -3,7 +3,6 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A178860 Divisors of 10080.

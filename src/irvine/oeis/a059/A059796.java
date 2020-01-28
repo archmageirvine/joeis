@@ -3,7 +3,6 @@ package irvine.oeis.a059;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A059796 Degrees of irreducible representations of symmetric group <code>S_14</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a302;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A302095 <code>a(n)</code> is the smallest positive integer not yet in the increasing sequence that is obtained when the largest digit from <code>a(n-1)</code> is deleted and the remaining digits are permuted such that no digit in <code>a(n)</code> has the same position it had in <code>a(n-1)</code> (counting from left to right). No repeated digits allowed; <code>a(1)=10</code>.

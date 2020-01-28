@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330189 Squares visited by a knight moving on a square-spiral numbered board where the knight moves to the unvisited square with the fewest visited neighbors. In case of a tie it chooses the square with the lowest spiral number.

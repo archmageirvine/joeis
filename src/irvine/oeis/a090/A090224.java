@@ -3,7 +3,6 @@ package irvine.oeis.a090;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A090224 Number of possible positions for n discs on a standard <code>7 X 6</code> board of <code>Connect-Four</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a060;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A060717 Degrees of irreducible representations of alternating group <code>A_14</code>.

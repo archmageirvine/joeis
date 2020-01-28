@@ -3,7 +3,6 @@ package irvine.oeis.a159;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A159774 Least number m, written in base n, such that <code>m/2</code> is obtained merely by shifting the leftmost digit of m to the right end, and <code>2m</code> by shifting the rightmost digit of m to the left end, digits defined in base <code>n</code>.

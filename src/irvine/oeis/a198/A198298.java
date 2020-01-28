@@ -3,7 +3,6 @@ package irvine.oeis.a198;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A198298 Pandigital numbers <code>(A050278)</code> with each product of adjacent digits visible as a substring of the digits.

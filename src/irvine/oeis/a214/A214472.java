@@ -3,7 +3,6 @@ package irvine.oeis.a214;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A214472 Degrees of irreducible representations of orthogonal group <code>O10+(2)</code>.

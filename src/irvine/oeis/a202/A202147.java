@@ -3,7 +3,6 @@ package irvine.oeis.a202;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A202147 Numbers n such that the sum of <code>digits^4</code> of n equals the sum of <code>d|n, 1&lt;d&lt;n</code>.

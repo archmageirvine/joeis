@@ -3,7 +3,6 @@ package irvine.oeis.a190;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A190218 Numbers all of whose divisors are numbers whose decimal digits are in strictly increasing order.

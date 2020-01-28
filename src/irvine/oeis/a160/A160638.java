@@ -3,7 +3,6 @@ package irvine.oeis.a160;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A160638 <code>Bit-reversed 8-bit</code> binary numbers.

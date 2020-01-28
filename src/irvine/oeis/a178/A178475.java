@@ -3,7 +3,6 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A178475 Permutations of <code>12345</code>: Numbers having each of the decimal digits 1,...,5 exactly once, and no other digit.

@@ -3,7 +3,6 @@ package irvine.oeis.a146;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a146.A146081;
 
 /**
  * A146082 <code>a(n) = A146081(n) mod 9</code>.
@@ -12,6 +11,7 @@ import irvine.oeis.a146.A146081;
 public class A146082 extends A146081 {
   private int mN = 0 - 1;
   
+  /** Construct the sequence. */
   public A146082() {
     super();
     int bOffset = 0 - 1;

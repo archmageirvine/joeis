@@ -3,7 +3,6 @@ package irvine.oeis.a274;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A274944 Numbers with at least three digits and with the property that the sum of the squares of the first and last digits equals the number obtained when the first and last digits are deleted.

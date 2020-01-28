@@ -3,7 +3,6 @@ package irvine.oeis.a278;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A278063 Relative of Hofstadter <code>Q-sequence: a(n) = n</code> for <code>1 &lt;= n &lt;= 11; a(n) = a(n-a(n-1)) + a(n-a(n-2))</code> for <code>n &gt; 11</code>.

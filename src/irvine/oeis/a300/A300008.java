@@ -3,7 +3,6 @@ package irvine.oeis.a300;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A300008 Inverse of the <code>n-th 2 X 2</code> sandpile <code>A300006(n)</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a101;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A101641 Positive integers n for which <code>n = f(n)</code>, where <code>f(n)</code> is the total number of <code>4</code>'s required when writing out all numbers between 0 and <code>n</code>.

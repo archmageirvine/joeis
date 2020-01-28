@@ -3,7 +3,6 @@ package irvine.oeis.a259;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A259233 Random number table used by Doom.

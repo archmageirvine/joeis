@@ -12,6 +12,7 @@ import irvine.oeis.a000.A000959;
 public class A139269 extends A000959 {
   private int mN = 0;
   
+  /** Construct the sequence. */
   public A139269() {
     super();
     int bOffset = 0;

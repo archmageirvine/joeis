@@ -11,6 +11,7 @@ import irvine.math.z.Z;
 public class A146082 extends A146081 {
   private int mN = 0 - 1;
   
+  /** Construct the sequence. */
   public A146082() {
     super();
     int bOffset = 0 - 1;

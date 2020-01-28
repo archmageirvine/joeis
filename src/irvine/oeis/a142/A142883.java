@@ -10,7 +10,8 @@ import irvine.math.z.Z;
  */
 public class A142883 extends A142590 {
   private int mN = 0 - 1;
-  
+
+  /** Construct the sequence. */
   public A142883() {
     super();
     int bOffset = 0 - 1;

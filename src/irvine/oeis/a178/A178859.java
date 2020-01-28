@@ -3,7 +3,6 @@ package irvine.oeis.a178;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A178859 Divisors of 7560.

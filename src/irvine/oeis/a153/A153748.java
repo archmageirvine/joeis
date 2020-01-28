@@ -3,7 +3,6 @@ package irvine.oeis.a153;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A153748 Numbers n such that there are 10 digits in <code>n^2</code> and for each factor f of <code>10 (1, 2, 5)</code> the sum of digit groupings of size f is a square.

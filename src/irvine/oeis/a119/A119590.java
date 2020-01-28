@@ -3,7 +3,6 @@ package irvine.oeis.a119;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A119590 <code>a(n) =</code> position of n in the lexicographical ordering <code>A119589</code> of natural numbers from 1 to 100.

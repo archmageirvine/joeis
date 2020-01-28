@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329914 Numbers k such that there exist numbers <code>M_k</code> which, when 1 is placed at both ends of <code>M_k</code>, the number <code>M_k</code> is multiplied by k.

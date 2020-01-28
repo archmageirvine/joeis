@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330938 Numbers that cannot be written as the sum of four proper powers. A proper power is an integer number m of the form <code>a^b</code> where a,b are integers greater than or equal to 2.

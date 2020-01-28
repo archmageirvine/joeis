@@ -3,7 +3,6 @@ package irvine.oeis.a175;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A175697 <code>a(n) =</code> smallest positive number such <code>a(n)*n</code> is an anagram of <code>a(n)*8</code>.

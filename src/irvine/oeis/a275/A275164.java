@@ -3,7 +3,6 @@ package irvine.oeis.a275;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A275164 The 167 numbers n such that <code>n(n+1)</code> is <code>19-smooth</code>.

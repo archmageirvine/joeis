@@ -3,7 +3,6 @@ package irvine.oeis.a087;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A087006 Divisors of 30030.

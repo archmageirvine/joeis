@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327347 The 54 prime dates of each year of the form <code>concatenate(day,month)</code> with leading zero for months <code>1, 3, 7, 9</code> (no leading zero for days).

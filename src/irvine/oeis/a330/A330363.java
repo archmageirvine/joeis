@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330363 58 consecutive function values of the prime generating polynomial <code>P(x) = (1/72)*x^6 + (1/24)*x^5 - (1583/72)*x^4 - (3161/24)*x^3 + (200807/36)*x^2 + (97973/3)*x - 11351. Abs(P(n))</code> is prime for <code>-45 &lt;= n &lt; 12</code>.

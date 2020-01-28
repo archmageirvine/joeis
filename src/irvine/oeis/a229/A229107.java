@@ -3,7 +3,6 @@ package irvine.oeis.a229;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A229107 Palindromic prime time display in hours, minutes, seconds on a <code>six-digit 24-hour</code> digital clock.

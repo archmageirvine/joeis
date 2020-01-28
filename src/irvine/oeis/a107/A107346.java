@@ -3,7 +3,6 @@ package irvine.oeis.a107;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A107346 Differences between successive permutations of 1,2,3,4,5 regarded as decimal numbers arranged in increasing order.

@@ -3,7 +3,6 @@ package irvine.oeis.a054;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A054037 Numbers n such that <code>n^2</code> contains exactly 9 different digits.

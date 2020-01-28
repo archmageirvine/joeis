@@ -3,7 +3,6 @@ package irvine.oeis.a290;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A290462 Consider decimal fractions r <code>= abc/def</code> with b <code>!= 0, d != 0</code> such that r <code>= ac/df</code>, sorted first by def and then by abc; sequence gives the numerators abc.

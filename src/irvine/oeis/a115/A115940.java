@@ -3,7 +3,6 @@ package irvine.oeis.a115;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A115940 Pandigital (meaning every digit appears exactly once) triangular numbers.

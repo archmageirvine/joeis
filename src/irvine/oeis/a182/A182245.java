@@ -3,7 +3,6 @@ package irvine.oeis.a182;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A182245 Integers n such that either <code>(a) A186053(n)</code> does not equal <code>A002024(n) + A182298(A025581(n))</code> or <code>(b) A182298(n)</code> does not equal <code>1 + A002024(n) + A186053(A025581(n))</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a157;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A157008 Four-digit primes that have at least 4 permutations (without leading zeros) that are primes.

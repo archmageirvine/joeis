@@ -3,7 +3,6 @@ package irvine.oeis.a289;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A289253 Areas of integer-sided triangles whose area equals 7 times their perimeter.

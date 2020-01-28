@@ -3,7 +3,6 @@ package irvine.oeis.a102;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A102806 Numbers that are not the sum of distinct tetrahedral numbers.

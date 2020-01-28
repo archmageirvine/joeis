@@ -3,7 +3,6 @@ package irvine.oeis.a115;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A115939 Numbers n such that the n-th triangular number contains each of the 10 decimal digits exactly once.

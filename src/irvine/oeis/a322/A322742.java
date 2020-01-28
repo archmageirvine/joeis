@@ -3,7 +3,6 @@ package irvine.oeis.a322;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A322742 Sorted list of 120 distinct triangle areas corresponding to the unique solution to the problem of placing 10 points on a grid rectangle of minimal area, such that all triangles formed by any 3 of the points have distinct areas <code>&gt; 0</code>.

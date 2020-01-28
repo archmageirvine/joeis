@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329743 Number of compositions of n with <code>runs-resistance n - 3</code>.

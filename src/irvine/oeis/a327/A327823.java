@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327823 Odd integers m such that every odd integer k with <code>1 &lt; k &lt</code>; m and <code>gcd(k,m) = 1</code> is prime.

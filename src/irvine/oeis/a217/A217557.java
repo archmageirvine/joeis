@@ -3,7 +3,6 @@ package irvine.oeis.a217;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A217557 The difference between the reversal of an 8-bit integer and the original integer.

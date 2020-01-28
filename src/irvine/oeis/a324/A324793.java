@@ -3,7 +3,6 @@ package irvine.oeis.a324;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A324793 Numbers k such that <code>A000793(k) = A159685(k)</code>.

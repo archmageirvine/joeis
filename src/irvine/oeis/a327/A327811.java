@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327811 Numbers obtained from cyclically permuting the <code>base-7</code> digits of 13143449029 and converting back to decimal.

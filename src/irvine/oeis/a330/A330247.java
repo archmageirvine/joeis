@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330247 The decimal form of the n-th color mentioned in the song "I Can Sing a Rainbow".

@@ -3,7 +3,6 @@ package irvine.oeis.a135;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A135209 D'Agapeyeff cipher.

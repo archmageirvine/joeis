@@ -3,7 +3,6 @@ package irvine.oeis.a257;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A257299 Numbers n for which each of the digits 0-9 appears exactly once as first digit in the orbit of n under iterations of <code>n -&gt</code>; (first digit of <code>n)*(n</code> with first digit removed) until a single digit is reached; no leading zeros allowed.

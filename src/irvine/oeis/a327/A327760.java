@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327760 Primes in Rob Gahan's arithmetic progression of 27 primes.

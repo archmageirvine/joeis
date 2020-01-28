@@ -3,7 +3,6 @@ package irvine.oeis.a266;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A266916 Multiply and add: distinct numbers <code>a*b + c*d + e*f + g*h + i*j</code> where a..j are permutations of 0..9.

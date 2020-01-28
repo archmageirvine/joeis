@@ -3,7 +3,6 @@ package irvine.oeis.a323;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A323593 Position on a Dvorak typewriter (or computer) keyboard where the n-th letter of the alphabet can be found.

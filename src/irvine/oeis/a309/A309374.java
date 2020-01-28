@@ -3,7 +3,6 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A309374 Numbers k such that <code>k+j</code> is prime for every j, where <code>1 &lt;= j &lt</code>; k and <code>gcd(j,k) = 1</code>.

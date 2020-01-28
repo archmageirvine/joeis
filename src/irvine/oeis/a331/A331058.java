@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331058 Coordination sequence for trivalent vertex in 1-skeleton of deltoidal icositetrahedron.

@@ -3,7 +3,6 @@ package irvine.oeis.a162;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A162825 Positive numbers k such that <code>60*k/(60-k)</code> are integers.

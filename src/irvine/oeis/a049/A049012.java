@@ -3,7 +3,6 @@ package irvine.oeis.a049;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A049012 Composite numbers n such that number of nonprime d with <code>0 &lt; d &lt</code>; n, <code>gcd(n,d)=1</code>, is <code>pi(n)</code>.

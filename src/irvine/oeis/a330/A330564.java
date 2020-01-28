@@ -3,7 +3,6 @@ package irvine.oeis.a330;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A330564 Coordination sequence for 1-skeleton of small stellated dodecahedron with respect to a trivalent node <code>(a</code> valley).

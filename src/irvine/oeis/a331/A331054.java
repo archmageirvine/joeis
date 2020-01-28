@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331054 Coordination sequence for tetravalent vertex in 1-skeleton of disdyakis dodecahedron.

@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329469 Perfectly cyclic numbers: numbers k such that the iterations of the mapping <code>x -&gt; f(x) = x^2 + c (mod k)</code>, starting at <code>x = f(c)</code>, is purely periodic for all <code>0 &lt;= c &lt;=</code> k.

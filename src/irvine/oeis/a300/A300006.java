@@ -3,7 +3,6 @@ package irvine.oeis.a300;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A300006 Matrices of the <code>2 X 2</code> sandpile group, with matrix <code>[a,b;c,d]</code> encoded as <code>concat(a,b,c,d)</code>, leading 0 omitted.

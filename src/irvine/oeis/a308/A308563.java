@@ -3,7 +3,6 @@ package irvine.oeis.a308;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A308563 Langton's ant on a three-dimensional grid: iterations where the ant passes through the origin.

@@ -3,7 +3,6 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A309566 <code>a(n)</code> is the least prime that can be written as a sequence of primes separated by n single zeros, and where every 0-splitting is prime.

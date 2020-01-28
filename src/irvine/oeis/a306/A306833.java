@@ -3,7 +3,6 @@ package irvine.oeis.a306;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A306833 <code>a(1) = 3; a(n+1)</code> is the smallest k <code>&gt; a(n)</code> such that <code>2^(k-1) == 1 (mod a(n))</code>.

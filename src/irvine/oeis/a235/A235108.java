@@ -3,7 +3,6 @@ package irvine.oeis.a235;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A235108 Semiprimes with digits in strictly decreasing order.

@@ -3,7 +3,6 @@ package irvine.oeis.a138;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A138481 Mutually-praising pairs excluding autobiographical numbers <code>A046043</code>. Version <code>1</code>: both numbers in a pair have at most 10 digits.

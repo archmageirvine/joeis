@@ -3,7 +3,6 @@ package irvine.oeis.a242;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A242732 Number of edges of Johnson solids in the order given by Johnson.

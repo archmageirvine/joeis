@@ -3,7 +3,6 @@ package irvine.oeis.a122;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A122986 Squares <code>mod 1000</code>.

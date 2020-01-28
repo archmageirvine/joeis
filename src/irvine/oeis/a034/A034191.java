@@ -3,7 +3,6 @@ package irvine.oeis.a034;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A034191 Number of binary codes of length 6 with n words.

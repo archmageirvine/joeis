@@ -3,7 +3,6 @@ package irvine.oeis.a061;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A061191 Numbers of the form <code>(10*a + b)^2 + (10*b + a)^2</code> with a and b less than 10, in numerical order.

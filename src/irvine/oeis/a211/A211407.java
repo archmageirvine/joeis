@@ -3,7 +3,6 @@ package irvine.oeis.a211;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A211407 Degrees of irreducible representations of group <code>L3(11)</code>.

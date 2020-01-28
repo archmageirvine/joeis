@@ -3,7 +3,6 @@ package irvine.oeis.a257;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A257937 Primes p such that one digit appears exactly six times together with a single different digit.

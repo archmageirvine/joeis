@@ -3,7 +3,6 @@ package irvine.oeis.a046;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A046048 Numbers that are the sum of 17 but no fewer nonzero fourth powers.

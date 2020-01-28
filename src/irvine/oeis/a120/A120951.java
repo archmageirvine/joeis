@@ -3,7 +3,6 @@ package irvine.oeis.a120;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A120951 Numbers that are not the sum of 5 distinct nonzero squares.

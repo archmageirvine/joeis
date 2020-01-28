@@ -3,7 +3,6 @@ package irvine.oeis.a328;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A328794 Squares visited by a knight moving on a binary numbered <code>single-digit square-spiral</code> board where the knight moves to the smallest numbered unvisited square; the minimum distance from the origin is used if the square numbers are equal; the smallest spiral number ordering is used if the distances are equal.

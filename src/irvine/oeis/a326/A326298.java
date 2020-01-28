@@ -3,7 +3,6 @@ package irvine.oeis.a326;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A326298 Indices at which record high values occur in <code>A326344</code>.

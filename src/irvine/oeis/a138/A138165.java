@@ -3,7 +3,6 @@ package irvine.oeis.a138;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A138165 Prime numbers that contain each of the digits 0,1,4,6,8,9 exactly once.

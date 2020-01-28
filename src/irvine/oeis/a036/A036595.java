@@ -3,7 +3,6 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A036595 Number of binary rooted trees with n nodes and height exactly 6.

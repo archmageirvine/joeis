@@ -3,7 +3,6 @@ package irvine.oeis.a242;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A242717 The number of ways that a score of n can be obtained using four darts on a standard dartboard.

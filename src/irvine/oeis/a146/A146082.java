@@ -3,7 +3,6 @@ package irvine.oeis.a146;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a146.A146081;
 
 /**
  * A146082 <code>a(n) = A146081(n) mod 9</code>.

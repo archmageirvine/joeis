@@ -3,7 +3,6 @@ package irvine.oeis.a254;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A254756 Numbers such that all their proper hexadecimal prefixes and suffixes represent primes.

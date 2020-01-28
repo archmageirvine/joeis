@@ -3,7 +3,6 @@ package irvine.oeis.a260;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A260214 <code>a(n)</code> is the first triangular number whose decimal representation uses n distinct digits.

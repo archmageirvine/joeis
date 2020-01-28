@@ -3,7 +3,6 @@ package irvine.oeis.a237;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A237602 Largest prime with n hexadecimal digits which is a right-truncatable prime in base 16.

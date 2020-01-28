@@ -3,7 +3,6 @@ package irvine.oeis.a071;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A071073 Minimal "multiples of <code>3"</code> set in base 10.

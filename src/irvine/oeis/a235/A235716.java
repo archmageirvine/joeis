@@ -3,7 +3,6 @@ package irvine.oeis.a235;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A235716 Average of twin prime pairs n having their decimal expansion of the form abcabc or <code>abcabc0</code> such that n contains three twin primes as divisors.

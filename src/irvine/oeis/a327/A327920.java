@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327920 The 16 pure prime dates of each year of the form <code>concatenate(day,month)</code> with month and day also prime numbers.

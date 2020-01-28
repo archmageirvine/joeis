@@ -3,7 +3,6 @@ package irvine.oeis.a106;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A106305 Divisors of <code>10^14 - 1</code>.

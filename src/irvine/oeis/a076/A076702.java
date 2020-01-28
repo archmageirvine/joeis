@@ -3,7 +3,6 @@ package irvine.oeis.a076;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A076702 Distinct-digit prime powers of prime numbers.

@@ -3,7 +3,6 @@ package irvine.oeis.a155;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A155763 Indices of primes with digits in strictly increasing order.

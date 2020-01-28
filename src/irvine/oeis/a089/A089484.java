@@ -3,7 +3,6 @@ package irvine.oeis.a089;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A089484 Number of configurations of the sliding block 15-puzzle that require a minimum of n moves to be reached, starting with the empty square in one of the corners.

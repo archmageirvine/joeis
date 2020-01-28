@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327349 The 67 prime dates in each leap year of the form concatenate <code>(month,day)</code> without leading zeros for days.

@@ -3,7 +3,6 @@ package irvine.oeis.a122;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A122469 Write Roman numerals I, V, X, L, C, D, M in increasing order: <code>[I], [I][V], [I][V][X]</code>, ..., etc.

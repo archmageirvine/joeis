@@ -3,7 +3,6 @@ package irvine.oeis.a203;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A203813 Michael Stifel's <code>16 X 16</code> magic square read by rows.

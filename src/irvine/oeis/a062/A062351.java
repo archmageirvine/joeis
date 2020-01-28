@@ -3,7 +3,6 @@ package irvine.oeis.a062;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A062351 Palindromic primes with strictly increasing digits up to the middle and then strictly decreasing.

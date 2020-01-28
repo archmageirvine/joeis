@@ -3,7 +3,6 @@ package irvine.oeis.a118;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A118849 Digital clock primes such that the number of minutes past midnight is also prime.

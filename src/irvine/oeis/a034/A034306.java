@@ -3,7 +3,6 @@ package irvine.oeis.a034;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A034306 Palindromes P such that Fibonacci iterations starting with <code>(1, P)</code> lead to a "nine digits anagram".

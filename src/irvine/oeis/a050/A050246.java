@@ -3,7 +3,6 @@ package irvine.oeis.a050;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A050246 Digital clock primes.

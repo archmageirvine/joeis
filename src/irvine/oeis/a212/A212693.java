@@ -3,7 +3,6 @@ package irvine.oeis.a212;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A212693 Number of legal <code>7 X 6 Connect-Four</code> positions after n plies.

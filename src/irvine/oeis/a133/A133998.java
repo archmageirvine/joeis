@@ -3,7 +3,6 @@ package irvine.oeis.a133;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A133998 Number of isomers of the soccerball <code>C_60H_n</code> Buckminster fullerene.

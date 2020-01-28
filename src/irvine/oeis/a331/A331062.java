@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331062 Coordination sequence for pentavalent vertex in 1-skeleton of deltoidal hexecontahedron.

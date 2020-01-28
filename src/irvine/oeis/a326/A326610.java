@@ -3,7 +3,6 @@ package irvine.oeis.a326;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A326610 Least k such that <code>A000790(k) = A108574(n)</code>.

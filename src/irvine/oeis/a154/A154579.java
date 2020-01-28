@@ -3,7 +3,6 @@ package irvine.oeis.a154;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A154579 Primes p <code>= prime(k)</code> such that all the digits of the concatenation of p and k are distinct.

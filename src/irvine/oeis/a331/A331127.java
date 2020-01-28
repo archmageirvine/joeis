@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331127 Number of n-regular hypergraphs on 5 labeled vertices.

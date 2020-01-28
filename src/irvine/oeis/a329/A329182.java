@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329182 Negative discriminants with form class group isomorphic to <code>C_2 X C_2</code> (negated).

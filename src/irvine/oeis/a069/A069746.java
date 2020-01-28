@@ -3,7 +3,6 @@ package irvine.oeis.a069;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A069746 Four-digit numbers that do not resolve to 6174 under the Kaprekar map (see <code>A151949)</code>.

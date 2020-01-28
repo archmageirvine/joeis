@@ -3,7 +3,6 @@ package irvine.oeis.a059;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A059496 <code>a(1) = 2; a(n+1)</code> is obtained by and trying to change just one digit of <code>a(n)</code>, starting with the least significant digit, until a new prime is reached. Take the lexicographically earliest sequence. Digits may be replaced by any nonzero digit.

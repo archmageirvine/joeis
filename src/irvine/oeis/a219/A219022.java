@@ -3,7 +3,6 @@ package irvine.oeis.a219;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A219022 &#256;ryabha&#7789;a's sine table. (Also Aryabhata or <code>&#2310;&#2352;&#2381;&#2351;&#2349;&#2335;.)</code>.

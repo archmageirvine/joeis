@@ -3,7 +3,6 @@ package irvine.oeis.a156;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A156977 Numbers n such that <code>n^2</code> contains every decimal digit exactly once.

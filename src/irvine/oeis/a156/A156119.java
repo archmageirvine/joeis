@@ -3,7 +3,6 @@ package irvine.oeis.a156;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A156119 Primes formed by rearranging five consecutive decimal digits (avoiding leading <code>0)</code>.

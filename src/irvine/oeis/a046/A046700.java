@@ -3,7 +3,6 @@ package irvine.oeis.a046;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A046700 <code>a(1) = a(2) = a(3) = 1, a(n) = a(n - a(n-1)) + a(n - a(n-3))</code> for <code>3 &lt; n &lt; 165</code>.

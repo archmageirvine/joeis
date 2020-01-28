@@ -3,7 +3,6 @@ package irvine.oeis.a166;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A166491 The same as <code>A166461</code> except for <code>a(1)=43</code>.

@@ -3,7 +3,6 @@ package irvine.oeis.a046;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A046018 Discriminants of imaginary quadratic fields with class number <code>21</code> (negated).

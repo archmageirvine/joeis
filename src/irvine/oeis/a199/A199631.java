@@ -3,7 +3,6 @@ package irvine.oeis.a199;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A199631 Numbers having each digit once and whose cube has each digit three times.

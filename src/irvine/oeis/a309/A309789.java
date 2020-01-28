@@ -3,7 +3,6 @@ package irvine.oeis.a309;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A309789 Numbers n such that <code>-1 + Sum_{k=1..n} prime(k)!</code> is prime, where <code>prime(k)</code> is the k-th prime.

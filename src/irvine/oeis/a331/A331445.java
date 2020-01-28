@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331445 Complete list of numbers of twisted cubics on a general Calabi-Yau threefold which is a complete intersection in some projective space.

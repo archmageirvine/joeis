@@ -3,7 +3,6 @@ package irvine.oeis.a230;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A230288 Sum of two digits touching a comma = difference between the two terms separated by that comma; start with <code>a(0)=0, a(1)=5</code>. If there is a choice, choose the smaller value for <code>a(n)</code>.

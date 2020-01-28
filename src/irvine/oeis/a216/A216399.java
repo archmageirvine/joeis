@@ -3,7 +3,6 @@ package irvine.oeis.a216;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A216399 Numbers n such that the number of times digit 'm' used for writing the decimal representation of the numbers from 1 to n is equal to n for more than one value of m in the range m <code>= 1</code> to 9.

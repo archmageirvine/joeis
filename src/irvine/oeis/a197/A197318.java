@@ -3,7 +3,6 @@ package irvine.oeis.a197;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A197318 Divisors of the repunit <code>111111111111 = A002275(12)</code>.

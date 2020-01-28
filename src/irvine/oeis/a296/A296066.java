@@ -3,7 +3,6 @@ package irvine.oeis.a296;
 // DO NOT EDIT here!
 
 import irvine.math.z.Z;
-import irvine.oeis.a296.A296065;
 
 /**
  * A296066 <code>a(n) = A296065(n)/n</code>.

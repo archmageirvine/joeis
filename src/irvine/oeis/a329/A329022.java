@@ -3,7 +3,6 @@ package irvine.oeis.a329;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A329022 Squares visited by a knight moving on a diagonal spiral numbered board and moving to the lowest available unvisited square at each step.

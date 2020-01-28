@@ -3,7 +3,6 @@ package irvine.oeis.a228;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A228017 Numbers n divisible by the sum of any k-subset of digits of n with k <code>&gt;= 1</code>.

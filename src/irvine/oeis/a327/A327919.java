@@ -3,7 +3,6 @@ package irvine.oeis.a327;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A327919 The 17 pure prime dates of each leap year of the form <code>concatenate(month,day)</code> with month and day also prime numbers.

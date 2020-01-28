@@ -3,7 +3,6 @@ package irvine.oeis.a052;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A052015 Primes with distinct digits in ascending order.

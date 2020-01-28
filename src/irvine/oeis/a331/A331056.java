@@ -3,7 +3,6 @@ package irvine.oeis.a331;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A331056 Coordination sequence for hexavalent vertex in 1-skeleton of disdyakis triacontahedron.

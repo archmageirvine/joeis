@@ -3,7 +3,6 @@ package irvine.oeis.a153;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A153842 First Sunday in n-th month of 365-day year starting on Wednesday.

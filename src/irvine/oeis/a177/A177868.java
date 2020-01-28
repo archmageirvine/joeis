@@ -3,7 +3,6 @@ package irvine.oeis.a177;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A177868 <code>a(n) =</code> number of 2-digit primes with digit sum n, where n runs through the non-multiples of 3 in the range <code>[2..17]</code>.

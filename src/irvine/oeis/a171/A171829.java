@@ -3,7 +3,6 @@ package irvine.oeis.a171;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A171829 Nonnegative integers that can be made by using six sixes <code>(6 6's)</code> and the four basic operators <code>{+, -, *, /}</code>.

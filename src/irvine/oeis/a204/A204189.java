@@ -3,7 +3,6 @@ package irvine.oeis.a204;
 // DO NOT EDIT here!
 
 import irvine.oeis.FiniteSequence;
-import irvine.math.z.Z;
 
 /**
  * A204189 Beno&#238;t Perichon's 26 primes in arithmetic progression.

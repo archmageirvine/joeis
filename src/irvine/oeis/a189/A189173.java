@@ -11,6 +11,6 @@ public class A189173 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A189173() {
-    super(new long[] {-1, 46}, new long[] {1, 47}, new long[] {0});
+    super(new long[] {-1, 46}, new long[] {1, 47}, 0);
   }
 }

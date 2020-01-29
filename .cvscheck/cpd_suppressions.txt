@@ -100,7 +100,7 @@ irvine/oeis/a021/A021185.java
 irvine/oeis/a021/A021366.java
 irvine/oeis/a021/A021728.java
 irvine/oeis/a021/A021366.java
-irvine/oeis/a182/A126129.java
+irvine/oeis/a126/A126129.java
 irvine/oeis/a182/A182086.java
 irvine/oeis/a173/A173549.java
 irvine/oeis/a174/A174020.java

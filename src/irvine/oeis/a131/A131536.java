@@ -7,9 +7,13 @@ package irvine.oeis.a131;
 public class A131536 extends A131541 {
 
   @Override
+  protected long start() {
+    return -1;
+  }
+
+  @Override
   protected int getSpecialDigit() {
     return 2;
   }
-
 }
 

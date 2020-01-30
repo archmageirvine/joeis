@@ -10,11 +10,15 @@ import irvine.util.array.DynamicByteArray;
  */
 public class A131541 implements Sequence {
 
-  private long mN = 0;
+  private long mN = start();
   private DynamicByteArray mBuf = null;
 
   protected int getSpecialDigit() {
     return 7;
+  }
+
+  protected long start() {
+    return 0;
   }
 
   private void mul2() {
@@ -53,9 +57,9 @@ public class A131541 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    int v = 1;
+    int v = 0;
     mBuf = new DynamicByteArray();
-    mBuf.set(0, (byte) 2);
+    mBuf.set(0, (byte) 1);
     while (!bingo()) {
       mul2();
       ++v;

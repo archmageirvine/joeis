@@ -13,6 +13,6 @@ public class A095505 extends FiniteSequence {
 
   /** Construct the sequence. */
   public A095505() {
-    super(new Z[]{new Z("40"), new Z("44"), new Z("48"), new Z("51"), new Z("56"), new Z("62"), new Z("70"), new Z("110"), new Z("132"), new Z("211"), new Z("320"), new Z("2002"), new Z("111000"), new Z("11111111111111111111111111111111111111111111111111111111")});
+    super(new Z("40"), new Z("44"), new Z("48"), new Z("51"), new Z("56"), new Z("62"), new Z("70"), new Z("110"), new Z("132"), new Z("211"), new Z("320"), new Z("2002"), new Z("111000"), new Z("11111111111111111111111111111111111111111111111111111111"));
   }
 }

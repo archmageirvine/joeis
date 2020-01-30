@@ -11,6 +11,6 @@ public class A275153 extends LinearRecurrence {
 
   /** Construct the sequence. */
   public A275153() {
-    super(new long[] {-2L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 7L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, -9L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 5L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L}, new long[] {7L, 9L, 9L, 10L, 4L, 9L, 9L, 3L, 9L, 16L, 9L, 9L, 20L, 4L, 9L, 18L, 3L, 9L, 34L, 9L, 9L, 40L, 4L, 9L, 27L, 3L, 9L, 61L, 9L, 9L, 80L, 4L, 9L, 36L, 3L, 9L}, new long[] {9L, 0L, 0L, 0L});
+    super(new long[] {-2L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 7L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, -9L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 5L, 0L, 0L, 0L, 0L, 0L, 0L, 0L, 0L}, new long[] {7L, 9L, 9L, 10L, 4L, 9L, 9L, 3L, 9L, 16L, 9L, 9L, 20L, 4L, 9L, 18L, 3L, 9L, 34L, 9L, 9L, 40L, 4L, 9L, 27L, 3L, 9L, 61L, 9L, 9L, 80L, 4L, 9L, 36L, 3L, 9L}, 9L, 0L, 0L, 0L);
   }
 }

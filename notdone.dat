@@ -1185,3 +1185,11 @@ A028420 Number of monomer-dimer tilings of n X n chessboard, existing b-file unk
 A028441 Triangulations of 4-dimensional cyclic polytopes, cf. A007815
 A028444 Busy Beaver sequence, or Rado's sigma function: maximal number of 1's that an n-state Turing machine can print on an initially blank tape before halting
 A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}, probably hard
+A028453 Number of perfect matchings in graph P_{3} X P_{4} X P_{n}, long g.f. or recurrence will exist
+A028454 Number of perfect matchings in graph P_{4} X P_{4} X P_{n}, long g.f. or recurrence will exist
+A028459 Number of perfect matchings in graph P_{2} X C_{7} X P_{n}, long g.f. or recurrence will exist
+A028461 Number of perfect matchings in graph P_{3} X C_{4} X P_{n}, long g.f. or recurrence will exist
+A028462 Number of perfect matchings in graph P_{3} X C_{5} X P_{2n}, long g.f. or recurrence will exist
+A028463 Number of perfect matchings in graph P_{4} X C_{4} X P_{n}, long g.f. or recurrence will exist
+A028466 Number of perfect matchings in graph C_{3} X C_{5} X P_{2n}, long g.f. or recurrence will exist
+A028467 Number of perfect matchings in graph C_{4} X C_{4} X P_{n}, long g.f. or recurrence will exist

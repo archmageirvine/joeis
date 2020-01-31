@@ -16,7 +16,7 @@ public class LinearRecurrence implements Sequence {
 
   private Z[] mPreTerms;
   private Z[] mPrev;
-  private long[] mRecur;
+  private Z[] mRecur;
   private int mN;
 
   private static void checkLength(final int a, final int b) {
@@ -31,12 +31,22 @@ public class LinearRecurrence implements Sequence {
    * @param terms initial terms of the recurrence
    * @param preTerms terms to produce before the recurrence
    */
-  protected LinearRecurrence(final long[] recurrence, final Z[] terms, final Z... preTerms) {
+  protected LinearRecurrence(final Z[] recurrence, final Z[] terms, final Z... preTerms) {
     checkLength(recurrence.length, terms.length);
     mPreTerms = Arrays.copyOf(preTerms, preTerms.length);
     mPrev = Arrays.copyOf(terms, terms.length);
     mRecur = Arrays.copyOf(recurrence, recurrence.length);
     mN = 0;
+  }
+
+  /**
+   * Construct the specified recurrence.
+   * @param recurrence multipliers on the coefficients with the oldest term first
+   * @param terms initial terms of the recurrence
+   * @param preTerms terms to produce before the recurrence
+   */
+  protected LinearRecurrence(final long[] recurrence, final Z[] terms, final Z... preTerms) {
+    this(ZUtils.toZ(recurrence), terms, preTerms);
   }
 
   /**

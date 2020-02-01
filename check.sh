@@ -14,6 +14,9 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
     [[ -r ${t} ]] || grep -q "${a}" "${NOT_DONE}" || grep -q "${a}" "${DEAD}" || ./make_oeis_test.sh "${a}"
 done
 
+echo "Checking for implementations of dead sequences"
+find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | grep -F -f "${DEAD}"
+
 echo "First unimplemented sequences"
 {
     find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | sed 's%.*/%%;s%.java%%'

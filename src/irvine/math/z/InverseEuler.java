@@ -1,7 +1,6 @@
 package irvine.math.z;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.TreeSet;
 
 import irvine.factor.factor.PrimeDivision;
 import irvine.factor.prime.Fast;
@@ -15,7 +14,7 @@ class InverseEuler {
 
   private final PrimeDivision mFactor = new PrimeDivision();
   private final Fast mPrime = new Fast();
-  private final Set<Z> mInverses = new HashSet<>();
+  private final TreeSet<Z> mInverses = new TreeSet<>();
 
   /*
    * Recursively generates solutions to the equation euler(n) = m.
@@ -71,7 +70,7 @@ class InverseEuler {
    * @param m euler value
    * @return set of values having given totient value
    */
-  public Set<Z> inversePhi(final Z m) {
+  public TreeSet<Z> inversePhi(final Z m) {
     mInverses.clear();
     getInversePhi(m, Z.ONE);
     return mInverses;

@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075848 <code>2*n^2 + 9</code> is a square.
+ * A075848 Numbers k such that <code>2*k^2 + 9</code> is a square.
  * @author Sean A. Irvine
  */
 public class A075848 extends LinearRecurrence {

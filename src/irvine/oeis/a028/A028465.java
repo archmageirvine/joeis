@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A0284645
+ * A028465 Number of perfect matchings in graph <code>C_{3} X C_{4} X P_{n}</code>.
  * @author Sean A. Irvine
  */
 public class A028465 extends LinearRecurrence {

@@ -1,7 +1,7 @@
 package irvine.math.z;
 
 import java.util.Arrays;
-import java.util.Set;
+import java.util.TreeSet;
 
 import irvine.factor.factor.Factorizer;
 import irvine.factor.factor.PrimeDivision;
@@ -103,7 +103,7 @@ public class Euler {
    * @param m euler value
    * @return set of solutions
    */
-  public static Set<Z> inversePhi(final Z m) {
+  public static TreeSet<Z> inversePhi(final Z m) {
     return new InverseEuler().inversePhi(m);
   }
 }

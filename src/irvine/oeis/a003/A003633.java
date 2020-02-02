@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003633 The sequence <code>2^(1-n)*a(n)</code> is fixed (up to signs) by <code>Stirling-2</code> transform.
+ * A003633 The sequence <code>2^(1-n)*a(n)</code> is fixed (up to signs) by <code>Stirling2</code> transform.
  * @author Sean A. Irvine
  */
 public class A003633 implements Sequence, RationalSequence {

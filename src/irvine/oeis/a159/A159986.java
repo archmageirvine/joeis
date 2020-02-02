@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A159986 Catalan numbers read modulo <code>7 </code>.
+ * A159986 Catalan numbers read modulo 7.
  * @author Georg Fischer
  */
 public class A159986 extends A000108 {

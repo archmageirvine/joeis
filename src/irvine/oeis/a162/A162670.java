@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162670 Generalized Fibonacci numbers.
+ * A162670 Expansion of <code>x/(1 - x - 100*x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A162670 extends LinearRecurrence {

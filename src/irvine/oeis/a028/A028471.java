@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028471.
+ * A028471 Number of perfect matchings (or domino tilings) in the graph <code>P_9 X P_2n</code>.
  * @author Sean A. Irvine
  */
 public class A028471 extends LinearRecurrence {

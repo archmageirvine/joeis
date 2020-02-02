@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A331642 allocated for Andrew Howroyd.
+ * A331642 Number of binary matrices with 5 columns and any number of distinct nonzero rows with n ones in every column.
  * @author Georg Fischer
  */
 public class A331642 extends FiniteSequence {

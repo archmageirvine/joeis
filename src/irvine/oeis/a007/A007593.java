@@ -14,7 +14,6 @@ public class A007593 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
     while (true) {
       final long sigma = Cheetah.factor(++mN).sigma().longValueExact();
       final long s = sigma - mN - 1;

@@ -9,6 +9,6 @@ import junit.framework.TestCase;
 public class InverseEulerTest extends TestCase {
 
   public void test() {
-    assertEquals("[22, 11]", new InverseEuler().inversePhi(Z.TEN).toString());
+    assertEquals("[11, 22]", new InverseEuler().inversePhi(Z.TEN).toString());
   }
 }

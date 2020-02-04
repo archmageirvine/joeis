@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002819;
 
 /**
- * A028488.
+ * A028488 Numbers n such that summatory Liouville function <code>L(n) (A002819)</code> is zero.
  * @author Sean A. Irvine
  */
 public class A028488 extends A002819 {

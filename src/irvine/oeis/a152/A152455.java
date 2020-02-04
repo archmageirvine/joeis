@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A152455.
+ * A152455 <code>a(n) =</code> minimal integer m such that there exists an m X m integer matrix of order <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A152455 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A026185 Position of n in <code>A026184</code>.
+ * A026185 If n even, then <code>2n</code>. If n odd, then nearest integer to <code>2n/3</code>.
  * @author Sean A. Irvine
  */
 public class A026185 extends PositionOfNSequence {

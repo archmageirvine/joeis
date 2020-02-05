@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242604 <code>a(n) = (n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1</code>, for <code>n &gt;= 1</code>.
+ * A242604 <code>(n - 1)*(n^3 + 1) = n^4 - n^3 + n - 1</code>, for <code>n &gt;= 1</code>.
  * @author Georg Fischer
  */
 public class A242604 extends GeneratingFunctionSequence {

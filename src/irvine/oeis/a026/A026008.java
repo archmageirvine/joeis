@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026008 <code>a(n) = T(n, floor(n/2))</code>, where T = Catalan triangle <code>(A008315)</code>.
+ * A026008 <code>T(n, [n/2])</code>, where T = Catalan triangle <code>(A008315)</code>.
  * @author Sean A. Irvine
  */
 public class A026008 implements Sequence {

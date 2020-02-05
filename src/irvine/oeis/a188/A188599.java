@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188599 Expansion of <code>x/(1-6*x+25*x^2)</code>.
+ * A188599 G.f.: <code>x/(1-6*x+25*x^2)</code>.
  * @author Georg Fischer
  */
 public class A188599 extends GeneratingFunctionSequence {

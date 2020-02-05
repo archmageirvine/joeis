@@ -1,8 +1,8 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-
 import java.util.ArrayList;
+
+import irvine.math.z.Z;
 
 /**
  * A000700 Expansion of <code>Product_{k&gt;=0} (1 + x^(2k+1))</code>; number of partitions of n into distinct odd parts; number of self-conjugate partitions; number of symmetric Ferrers graphs with n nodes.
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  */
 public class A000700 extends A000593 {
 
-  private final ArrayList<Z> mA = new ArrayList<>();
+  protected final ArrayList<Z> mA = new ArrayList<>();
   private final ArrayList<Z> mB = new ArrayList<>();
   private boolean mFirst = true;
 

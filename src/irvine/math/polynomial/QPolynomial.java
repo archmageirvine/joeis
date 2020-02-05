@@ -1,5 +1,6 @@
 package irvine.math.polynomial;
 
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -25,6 +26,22 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
     for (int k = 0; k < coeffs.length; ++k) {
       if (coeffs[k] != 0) {
         c.put(new Q(k), Z.valueOf(coeffs[k]));
+      }
+    }
+    return c;
+  }
+
+  /**
+   * Helper convenience method for the common task of creating an integer
+   * polynomial.
+   * @param coeffs integer coefficients
+   * @return polynomial over integers
+   */
+  public static QPolynomial<Z> create(final List<Z> coeffs) {
+    final QPolynomial<Z> c = new QPolynomial<>("q", Z.ZERO, Z.ONE);
+    for (int k = 0; k < coeffs.size(); ++k) {
+      if (!Z.ZERO.equals(coeffs.get(k))) {
+        c.put(new Q(k), coeffs.get(k));
       }
     }
     return c;

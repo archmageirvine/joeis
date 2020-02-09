@@ -47,13 +47,14 @@ public final class Names {
     FORMULA.add("ddd...d");
     FORMULA.add("abcd...k,");
     FORMULA.add("abcd");
-    FORMULA.add("ABCD");
+    FORMULA.add("ABCD,");
     FORMULA.add("abcabc");
     FORMULA.add("abce");
     FORMULA.add("abde");
     FORMULA.add("acde");
     FORMULA.add("bcde");
     FORMULA.add("acd");
+    FORMULA.add("hdu");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");

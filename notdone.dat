@@ -1195,3 +1195,15 @@ A028466 Number of perfect matchings in graph C_{3} X C_{5} X P_{2n}, long g.f. o
 A028467 Number of perfect matchings in graph C_{4} X C_{4} X P_{n}, long g.f. or recurrence will exist
 A028475 Total number of Hamiltonian cycles avoiding the root-edge in rooted cubic bipartite planar maps with 2n nodes, paper describes algorithm insufficient detail
 A028497 Maximum number of facets of n-dimensional polytope with {0,1}-coordinates, hard
+A028526 Character of extremal vertex operator algebra of rank 8.5
+A028527 Character of extremal vertex operator algebra of rank 9
+A028528 Character of extremal vertex operator algebra of rank 9.5
+A028529 Character of extremal vertex operator algebra of rank 10
+A028530 Character of extremal vertex operator algebra of rank 10.5
+A028531 Character of extremal vertex operator algebra of rank 11
+A028532 Character of extremal vertex operator algebra of rank 11.5
+A028533 Character of extremal vertex operator algebra of rank 12.5
+A028534 Character of extremal vertex operator algebra of rank 13
+A028535 Character of extremal vertex operator algebra of rank 13.5
+A028536 Character of extremal vertex operator algebra of rank 14.5
+A028537 Character of extremal vertex operator algebra of rank 16

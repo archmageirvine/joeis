@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026196 <code>(1/5)*s(n)</code>, where <code>s(n)</code> is the n-th multiple of 5 in <code>A026142</code>.
+ * A026196 Duplicate of <code>A026177</code>.
  * @author Sean A. Irvine
  */
 public class A026196 extends A026142 {

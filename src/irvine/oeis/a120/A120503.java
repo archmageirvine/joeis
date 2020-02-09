@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007844;
 
 /**
- * A120503 Generalized Meta-fibonacci sequence <code>a(n)</code> with parameters <code>s=0</code> and <code>k=3</code>.
+ * A120503 Generalized meta-Fibonacci sequence <code>a(n)</code> with parameters <code>s=0</code> and <code>k=3</code>.
  * @author Georg Fischer
  */
 public class A120503 extends A007844 {

@@ -5,7 +5,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166975 Four-digit primes such that, if the digits are ABCD, then <code>AB+CD</code> and <code>A+B+C+D</code> are also primes.
+ * A166975 Four-digit primes such that, if the digits are <code>ABCD</code>, then <code>AB+CD</code> and <code>A+B+C+D</code> are also primes.
  * @author Georg Fischer
  */
 public class A166975 extends FiniteSequence {

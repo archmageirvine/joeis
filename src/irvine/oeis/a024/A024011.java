@@ -9,17 +9,17 @@ import irvine.oeis.a000.A000040;
  */
 public class A024011 extends A000040 {
 
-  private Z mSum = Z.ZERO;
+  protected Z mSum = Z.ZERO;
+  protected Z mP;
   private long mN = 0;
 
   @Override
   public Z next() {
-    Z p;
     do {
       ++mN;
-      p = super.next();
-      mSum = mSum.add(p);
-    } while (!Z.ZERO.equals(mSum.mod(p)));
+      mP = super.next();
+      mSum = mSum.add(mP);
+    } while (!Z.ZERO.equals(mSum.mod(mP)));
     return Z.valueOf(mN);
   }
 }

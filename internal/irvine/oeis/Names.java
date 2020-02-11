@@ -54,7 +54,7 @@ public final class Names {
     FORMULA.add("acde");
     FORMULA.add("bcde");
     FORMULA.add("acd");
-    FORMULA.add("hdu");
+    FORMULA.add("hdu,");
     FORMULA.add("axbxc");
     FORMULA.add("sopfr");
     FORMULA.add("mmdd");

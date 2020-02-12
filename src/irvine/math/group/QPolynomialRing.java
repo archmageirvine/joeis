@@ -220,11 +220,13 @@ public class QPolynomialRing<E> extends AbstractRing<QPolynomial<E>> {
     final QPolynomial<E> t = new QPolynomial<>(mIndeterminate, mZero, mOne);
     for (final Map.Entry<Q, E> e : a.entrySet()) {
       final Q p = e.getKey();
-      final E v = e.getValue();
-      for (final Map.Entry<Q, E> d : b.entrySet()) {
-        final Q s = p.add(d.getKey());
-        if (s.compareTo(degreeLimit) <= 0) {
-          t.put(s, mElementRing.add(t.coeff(s), mElementRing.multiply(v, d.getValue())));
+      if (p.compareTo(degreeLimit) <= 0) {
+        final E v = e.getValue();
+        for (final Map.Entry<Q, E> d : b.entrySet()) {
+          final Q s = p.add(d.getKey());
+          if (s.compareTo(degreeLimit) <= 0) {
+            t.put(s, mElementRing.add(t.coeff(s), mElementRing.multiply(v, d.getValue())));
+          }
         }
       }
     }

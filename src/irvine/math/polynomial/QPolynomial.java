@@ -168,7 +168,26 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
 
   /**
    * Expand the polynomial by making the substitution <code>x=x^power</code>.
-   *
+   * @param power power
+   * @param max maximum degree
+   * @return substituted polynomial
+   */
+  public QPolynomial<E> substitutePower(final Q power, final Q max) {
+    if (Q.ONE.equals(power)) {
+      return this;
+    }
+    final QPolynomial<E> c = new QPolynomial<>(mIndeterminate, mZero, mOne);
+    for (final Map.Entry<Q, E> e : entrySet()) {
+      final Q p = e.getKey().multiply(power);
+      if (p.compareTo(max) <= 0) {
+        c.put(p, e.getValue());
+      }
+    }
+    return c;
+  }
+
+  /**
+   * Expand the polynomial by making the substitution <code>x=x^power</code>.
    * @param power power
    * @return substituted polynomial
    */
@@ -185,7 +204,16 @@ public class QPolynomial<E> extends TreeMap<Q, E> {
 
   /**
    * Expand the polynomial by making the substitution <code>x=x^power</code>.
-   *
+   * @param power power
+   * @param degreeLimit maximum degree
+   * @return substituted polynomial
+   */
+  public QPolynomial<E> substitutePower(final int power, final Q degreeLimit) {
+    return substitutePower(new Q(power), degreeLimit);
+  }
+
+  /**
+   * Expand the polynomial by making the substitution <code>x=x^power</code>.
    * @param power power
    * @return substituted polynomial
    */

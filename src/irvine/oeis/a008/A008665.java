@@ -15,18 +15,17 @@ import irvine.oeis.Sequence;
 public class A008665 implements Sequence {
 
   private static final QPolynomialRing<Z> RING = new QPolynomialRing<>(Integers.SINGLETON);
-  private static final Q QUARTER = Q.ONE_QUARTER;
-  private Q mN = QUARTER.negate();
+  private Q mN = Q.ONE_QUARTER.negate();
 
-  protected int copies() {
+  protected int power() {
     return 2;
   }
 
   @Override
   public Z next() {
-    mN = mN.add(QUARTER);
+    mN = mN.add(Q.ONE_QUARTER);
     final QPolynomial<Z> t1 = RING.pow(ThetaFunctions.theta2(mN), 3, mN);
     final QPolynomial<Z> t2 = RING.pow(ThetaFunctions.theta3(mN), 3, mN);
-    return RING.pow(RING.add(t1, t2), copies(), mN).coeff(mN);
+    return RING.pow(RING.add(t1, t2), power(), mN).coeff(mN);
   }
 }

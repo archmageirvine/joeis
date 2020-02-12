@@ -1,15 +1,14 @@
 package irvine.oeis;
 
-import irvine.util.io.IOUtils;
-import junit.framework.TestCase;
-
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.IOException;
 
+import irvine.util.io.IOUtils;
+import junit.framework.TestCase;
+
 /**
- * Tests the corresponding class.
- *
+ * Test a sequence.
  * @author Sean A. Irvine
  */
 public abstract class AbstractSequenceTest extends TestCase {

@@ -8,8 +8,4 @@ import irvine.oeis.AbstractSequenceTest;
  */
 public class A102027Test extends AbstractSequenceTest {
 
-  @Override
-  protected int maxTerms() {
-    return 2;
-  }
 }

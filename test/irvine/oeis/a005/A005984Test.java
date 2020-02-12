@@ -23,8 +23,4 @@ public class A005984Test extends AbstractSequenceTest {
     assertEquals("1+x+x^4+x^6", vg.get(5).toString());
   }
 
-  @Override
-  protected int maxTerms() {
-    return 6;
-  }
 }

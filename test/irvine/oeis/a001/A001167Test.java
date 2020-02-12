@@ -8,11 +8,6 @@ import irvine.oeis.AbstractSequenceTest;
  */
 public class A001167Test extends AbstractSequenceTest {
 
-  @Override
-  protected int maxTerms() {
-    return 10;
-  }
-
   public void testWords() {
     assertEquals(13, A001167.wordCount(1121121));
     assertEquals(14, A001167.wordCount(21121121));

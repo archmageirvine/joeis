@@ -12,8 +12,4 @@ public class A002410Test extends AbstractSequenceTest {
     assertEquals(87.9721652317872, A002410.theta(100), 1e-9);
   }
 
-  @Override
-  protected int maxTerms() {
-    return 15;
-  }
 }

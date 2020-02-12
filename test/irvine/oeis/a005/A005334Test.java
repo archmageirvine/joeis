@@ -25,9 +25,4 @@ public class A005334Test extends AbstractSequenceTest {
     assertEquals(Z.valueOf(474455938988053L), seq.mH.get(6, 7));
   }
 
-  @Override
-  protected int maxTerms() {
-    // XXX This test actually currently fails for reasonable values
-    return 0;
-  }
 }

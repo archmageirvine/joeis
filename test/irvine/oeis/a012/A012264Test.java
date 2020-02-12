@@ -26,8 +26,4 @@ public class A012264Test extends AbstractSequenceTest {
     assertEquals("[-1-x+x^3+x^4, -1+3x^2+4x^3, 15/16+3/4x+3/16x^2, -64-32x, -3/16]", A012264.sturmList(f).toString());
   }
 
-  @Override
-  protected int maxTerms() {
-    return 10;
-  }
 }

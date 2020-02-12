@@ -54,10 +54,11 @@ alltests="test/irvine/oeis/${dir}/AllTests.java"
 
 [[ -r ${alltests} ]] || create-all-tests "${dir}"
 
-if [ "$max_terms" == "" ]; then
+if [ "${max_terms}" == "" ]; then
     sed "s/A000031/$seq/g;s/a000/$dir/" <test/irvine/oeis/a000/A000031Test.java >"test/irvine/oeis/${dir}/${seq}Test.java"
 else
-    sed "s/A000881/$seq/g;s/a000/$dir/;s/return 4/return $max_terms/" <test/irvine/oeis/a000/A000881Test.java >"test/irvine/oeis/${dir}/${seq}Test.java"
+    grep -v "^${seq}" <test/irvine/oeis/test-terms.dat >test/irvine/oeis/test-terms.dat.t && mv test/irvine/oeis/test-terms.dat.t test/irvine/oeis/test-terms.dat
+    echo "${seq} ${max_terms}" >>test/irvine/oeis/test-terms.dat
 fi
 git add "test/irvine/oeis/${dir}/${seq}Test.java"
 

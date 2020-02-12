@@ -3,6 +3,7 @@ package irvine.oeis;
 import java.io.BufferedReader;
 import java.io.Closeable;
 import java.io.IOException;
+import java.util.HashMap;
 
 import irvine.util.io.IOUtils;
 import junit.framework.TestCase;
@@ -12,6 +13,22 @@ import junit.framework.TestCase;
  * @author Sean A. Irvine
  */
 public abstract class AbstractSequenceTest extends TestCase {
+
+  private static final String TEST_TERMS_LOCATION = "irvine/oeis/test-terms.dat";
+  private static final HashMap<String, Integer> TEST_TERMS = new HashMap<>();
+  static {
+    try (final BufferedReader r = IOUtils.reader(TEST_TERMS_LOCATION)) {
+      String line;
+      while ((line = r.readLine()) != null) {
+        if (!line.isEmpty()) {
+          final int space = line.indexOf(' ');
+          TEST_TERMS.put(line.substring(0, space), Integer.parseInt(line.substring(space + 1)));
+        }
+      }
+    } catch (final IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
 
   private static final int LINES_PER_FILE = 1000;
 
@@ -33,10 +50,6 @@ public abstract class AbstractSequenceTest extends TestCase {
     }
   }
 
-  protected int maxTerms() {
-    return Integer.MAX_VALUE;
-  }
-
   public void test() throws IOException {
     final String name = getClass().getName();
     final int len = name.length();
@@ -49,8 +62,9 @@ public abstract class AbstractSequenceTest extends TestCase {
     } else {
       final String[] parts = vector.split(",");
       assertTrue(parts.length > 0);
-      final Sequence seq = SequenceFactory.sequence("A" + seqId);
-      final int termsToExamine = Math.min(parts.length, maxTerms());
+      final String aNumber = "A" + seqId;
+      final Sequence seq = SequenceFactory.sequence(aNumber);
+      final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
       for (int k = 0; k < termsToExamine; ++k) {
         assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
       }

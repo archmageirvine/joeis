@@ -10,11 +10,6 @@ import irvine.oeis.AbstractSequenceTest;
  */
 public class A003190Test extends AbstractSequenceTest {
 
-  @Override
-  protected int maxTerms() {
-    return 6;
-  }
-
   public void testSymFn5() {
     final A003190.SymFn fn = new A003190.SymFn();
     final CycleIndex s5 = fn.sx(3, 5);

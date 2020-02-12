@@ -12,7 +12,7 @@ import junit.framework.TestCase;
  * Test a sequence.
  * @author Sean A. Irvine
  */
-public abstract class AbstractSequenceTest extends TestCase {
+public class AbstractSequenceTest extends TestCase {
 
   private static final String TEST_TERMS_LOCATION = "irvine/oeis/test-terms.dat";
   private static final HashMap<String, Integer> TEST_TERMS = new HashMap<>();
@@ -50,15 +50,14 @@ public abstract class AbstractSequenceTest extends TestCase {
     }
   }
 
-  public void test() throws IOException {
-    final String name = getClass().getName();
-    final int len = name.length();
-    final String seqId = name.substring(len - 10, len - 4);
+  private void check(final String className) throws IOException {
+    final int len = className.length();
+    final String seqId = className.endsWith("Test") ? className.substring(len - 10, len - 4) : className.substring(len - 6);
     final int id = Integer.parseInt(seqId);
     final String vector = getTestVector(id);
     final long start = System.currentTimeMillis();
     if (vector == null) {
-      System.err.println("Skipping: " + name + " because there is no active test vector");
+      System.err.println("Skipping: " + className + " because there is no active test vector");
     } else {
       final String[] parts = vector.split(",");
       assertTrue(parts.length > 0);
@@ -75,6 +74,22 @@ public abstract class AbstractSequenceTest extends TestCase {
     final long delta = System.currentTimeMillis() - start;
     if (delta > 9000) {
       System.out.println("A" + seqId + " " + (delta / 1000) + " s");
+    }
+  }
+
+  public void test() throws IOException {
+    check(getClass().getName());
+  }
+
+  /**
+   * Directly test the supplied sequences.
+   * @param args sequences to test
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    for (final String aNumber : args) {
+      System.out.println("Running " + aNumber);
+      new AbstractSequenceTest().check(aNumber);
     }
   }
 }

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028845.
+ * A028845 Iterated product of digits of n is a nonzero square.
  * @author Sean A. Irvine
  */
 public class A028845 implements Sequence {

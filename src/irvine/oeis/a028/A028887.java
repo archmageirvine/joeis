@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028887.
+ * A028887 Theta series of <code>4-dimensional 5-modular</code> lattice with det 25 and minimal norm 2.
  * @author Sean A. Irvine
  */
 public class A028887 implements Sequence {

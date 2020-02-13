@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A028890.
+ * A028890 Product of digits of n is a nonzero Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A028890 extends A000045 {

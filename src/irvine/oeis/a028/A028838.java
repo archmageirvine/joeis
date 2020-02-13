@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028838.
+ * A028838 Numbers whose sum of digits is a power of 2.
  * @author Sean A. Irvine
  */
 public class A028838 implements Sequence {

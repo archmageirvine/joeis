@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000079;
 import irvine.util.string.StringUtils;
 
 /**
- * A028909.
+ * A028909 Arrange digits of <code>2^n</code> in ascending order.
  * @author Sean A. Irvine
  */
 public class A028909 extends A000079 {

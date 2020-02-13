@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028835.
+ * A028835 Numbers n such that iterated sum of digits of n is a prime.
  * @author Sean A. Irvine
  */
 public class A028835 implements Sequence {

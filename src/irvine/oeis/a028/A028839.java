@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028839.
+ * A028839 Sum of digits of n is a square.
  * @author Sean A. Irvine
  */
 public class A028839 implements Sequence {

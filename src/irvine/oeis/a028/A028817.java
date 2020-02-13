@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028817.
+ * A028817 Palindromic squares with an odd number of digits.
  * @author Sean A. Irvine
  */
 public class A028817 implements Sequence {

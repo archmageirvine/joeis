@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A028840.
+ * A028840 Numbers n such that sum of digits of n is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A028840 extends A000045 {

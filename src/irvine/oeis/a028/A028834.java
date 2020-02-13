@@ -6,7 +6,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028834.
+ * A028834 Numbers n such that sum of digits of n is a prime.
  * @author Sean A. Irvine
  */
 public class A028834 implements Sequence {

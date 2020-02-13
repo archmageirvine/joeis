@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000290;
 import irvine.util.string.StringUtils;
 
 /**
- * A028907.
+ * A028907 Arrange digits of squares in ascending order.
  * @author Sean A. Irvine
  */
 public class A028907 extends A000290 {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a016.A016116;
 
 /**
- * A028892.
+ * A028892 <code>a(n) = Fibonacci(n) - 2^(floor(n/2))</code>.
  * @author Sean A. Irvine
  */
 public class A028892 extends A000045 {

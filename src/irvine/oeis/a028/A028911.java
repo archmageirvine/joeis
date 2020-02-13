@@ -7,7 +7,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A028911.
+ * A028911 Sort digits of primes into descending order <code>(A028906)</code> then sort this sequence into ascending order.
  * @author Sean A. Irvine
  */
 public class A028911 extends A028906 {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028841.
+ * A028841 Iterated sum of digits of n is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A028841 implements Sequence {

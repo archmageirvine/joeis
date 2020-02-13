@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A028867.
+ * A028867 Primes with digits in nonincreasing order.
  * @author Sean A. Irvine
  */
 public class A028867 extends A000040 {

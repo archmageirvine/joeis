@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028823.
+ * A028823 Numbers n such that <code>n^2 + n + 17</code> is prime.
  * @author Sean A. Irvine
  */
 public class A028823 implements Sequence {

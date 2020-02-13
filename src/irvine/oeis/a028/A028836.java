@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028836.
+ * A028836 Iterated sum of digits of n is a power of 2.
  * @author Sean A. Irvine
  */
 public class A028836 implements Sequence {

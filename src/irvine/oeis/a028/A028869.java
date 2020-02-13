@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A028869.
+ * A028869 Squares of primes with digits in descending order.
  * @author Sean A. Irvine
  */
 public class A028869 extends A000040 {

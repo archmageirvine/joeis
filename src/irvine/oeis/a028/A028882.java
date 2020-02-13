@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028882.
+ * A028882 Numbers n such that <code>n^2 - 7</code> is prime.
  * @author Sean A. Irvine
  */
 public class A028882 implements Sequence {

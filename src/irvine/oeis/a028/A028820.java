@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A028820.
+ * A028820 Squares with digits in nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A028820 implements Sequence {

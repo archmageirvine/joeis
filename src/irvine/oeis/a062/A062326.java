@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A062326.
+ * A062326 Primes p such that <code>p^2 - 2</code> is also prime.
  * @author Sean A. Irvine
  */
 public class A062326 extends A000040 {

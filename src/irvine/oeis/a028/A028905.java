@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.util.string.StringUtils;
 
 /**
- * A028905.
+ * A028905 Arrange digits of primes in ascending order.
  * @author Sean A. Irvine
  */
 public class A028905 extends A000040 {

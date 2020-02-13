@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A028863.
+ * A028863 <code>[ cos(Fibonacci(n)) ]</code>.
  * @author Sean A. Irvine
  */
 public class A028863 extends A000045 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028891.
+ * A028891 Iterated product of digits of n is a Fibonacci number.
  * @author Sean A. Irvine
  */
 public class A028891 implements Sequence {

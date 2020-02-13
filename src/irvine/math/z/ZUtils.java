@@ -13,7 +13,6 @@ import irvine.factor.prime.Fast;
 
 /**
  * Utility functions.
- *
  * @author Sean A. Irvine
  */
 public final class ZUtils {
@@ -548,5 +547,41 @@ public final class ZUtils {
       res[k] = new Z(parts[k]);
     }
     return res;
+  }
+
+  /**
+   * Test if the supplied integers has non-decreasing digits.
+   * @param n number to test
+   * @return true iff digits are non-decreasing
+   */
+  public static boolean isNondecreasingDigits(Z n) {
+    Z t = Z.TEN;
+    while (!Z.ZERO.equals(n)) {
+      final Z[] qr = n.divideAndRemainder(Z.TEN);
+      if (qr[1].compareTo(t) > 0) {
+        return false;
+      }
+      t = qr[1];
+      n = qr[0];
+    }
+    return true;
+  }
+
+  /**
+   * Test if the supplied integers has non-increasing digits.
+   * @param n number to test
+   * @return true iff digits are non-decreasing
+   */
+  public static boolean isNonincreasingDigits(Z n) {
+    Z t = Z.ZERO;
+    while (!Z.ZERO.equals(n)) {
+      final Z[] qr = n.divideAndRemainder(Z.TEN);
+      if (qr[1].compareTo(t) < 0) {
+        return false;
+      }
+      t = qr[1];
+      n = qr[0];
+    }
+    return true;
   }
 }

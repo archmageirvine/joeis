@@ -1221,3 +1221,16 @@ A028548 Character of extremal vertex operator algebra of rank 21.5
 A028549 Character of extremal vertex operator algebra of rank 22
 A028550 Character of extremal vertex operator algebra of rank 22.5
 A028551 Character of extremal vertex operator algebra of rank 23
+A028818 Palindromic squares with odd number of digits and non-palindromic and "non-core" square roots, cf. A016106
+A028847 Number of composite labeled topologies on n points
+A028848 Number of composite labeled T_0 topologies on n points
+A028849 Number of composite unlabeled topologies (i.e., composite homeomorphism classes) on n points
+A028850 Number of composite unlabeled T_0 topologies (i.e., composite T_0 homeomorphism classes) on n points
+A028851 Number of composite unlabeled connected topologies (i.e., composite connected homeomorphism classes) on n points
+A028852 Number of composite unlabeled connected T_0 topologies (i.e., composite T_0 connected homeomorphism classes) on n points
+A028853 Number of prime labeled topologies on n points
+A028854 Number of prime labeled T_0 topologies on n points
+A028855 Number of prime unlabeled topologies (i.e., prime homeomorphism classes) on n points
+A028856 Number of prime unlabeled T_0 topologies (i.e., prime T_0 homeomorphism classes) on n points
+A028857 Number of prime unlabeled connected topologies (i.e., prime connected homeomorphism classes) on n points
+A028858 Number of prime unlabeled connected T_0 topologies (i.e., prime T_0 connected homeomorphism classes) on n points

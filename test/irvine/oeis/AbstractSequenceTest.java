@@ -22,7 +22,7 @@ public class AbstractSequenceTest extends TestCase {
       while ((line = r.readLine()) != null) {
         if (!line.isEmpty()) {
           final int space = line.indexOf(' ');
-          TEST_TERMS.put(line.substring(0, space), Integer.parseInt(line.substring(space + 1)));
+          TEST_TERMS.put(line.substring(0, space), Integer.valueOf(line.substring(space + 1)));
         }
       }
     } catch (final IOException e) {

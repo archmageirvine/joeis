@@ -1234,3 +1234,7 @@ A028855 Number of prime unlabeled topologies (i.e., prime homeomorphism classes)
 A028856 Number of prime unlabeled T_0 topologies (i.e., prime T_0 homeomorphism classes) on n points
 A028857 Number of prime unlabeled connected topologies (i.e., prime connected homeomorphism classes) on n points
 A028858 Number of prime unlabeled connected T_0 topologies (i.e., prime T_0 connected homeomorphism classes) on n points
+A028923 Kissing number of n-dimensional lattice Kappa_n
+A028924 Maximal number of pairs of minimal vectors in n-dimensional laminated lattice, simple dependency on A002336
+A028925 Maximal number of pairs of minimal vectors in an n-dimensional lattice, simple dependency on A001116
+A028926 Number of pairs of minimal vectors in n-dimensional lattice Kappa_n, simple dependency on A028923

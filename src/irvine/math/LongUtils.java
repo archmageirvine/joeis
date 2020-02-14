@@ -148,6 +148,31 @@ public final class LongUtils {
     }
   }
 
+  /**
+   * Kronecker symbol.
+   * @param m first argument
+   * @param n second argument
+   * @return kronecker symbol
+   */
+  public static int kronecker(final long m, final long n) {
+    if (n == -1) {
+      return m >= 0 ? 1 : -1;
+    }
+    if (n == 0) {
+      return m == 1 || m == -1 ? 1 : 0;
+    }
+    if (n == 2) {
+      if ((m & 1) == 0) {
+        return 0;
+      }
+      return (m & 3) == 1 ? 1 : -1;
+    }
+    if ((n & 1) == 0) {
+      return kronecker(m, 2) * kronecker(m, n / 2);
+    }
+    return jacobi(m, n);
+  }
+
 
   // two less than the number of bits in a long
   private static final int BITS = 62;

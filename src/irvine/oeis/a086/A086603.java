@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086603 <code>n^3*3^(n-1)</code>.
+ * A086603 <code>a(n) = n^3*3^(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A086603 extends LinearRecurrence {

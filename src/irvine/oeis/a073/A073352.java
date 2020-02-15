@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073352 Positive integers making <code>n^2(n-1)(2n-1)^2(7n-1)/36</code> a square.
+ * A073352 Positive integers making <code>n^2*(n-1)*(2*n-1)^2*(7*n-1)/36</code> a square.
  * @author Georg Fischer
  */
 public class A073352 extends LinearRecurrence {

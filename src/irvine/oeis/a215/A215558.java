@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A215558 Cube numbers where the final digit or the final two digits are the cube root.
+ * A215558 Cubes whose final digit or final two digits are the cube root.
  * @author Georg Fischer
  */
 public class A215558 extends FiniteSequence {

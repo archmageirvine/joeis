@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A130111.
+ * A130111 Rearrangement of natural numbers such that each five terms sum up to a perfect square.
  * @author Sean A. Irvine
  */
 public class A130111 implements Sequence {

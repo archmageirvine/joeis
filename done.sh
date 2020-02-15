@@ -24,6 +24,7 @@ gnuplot <<EOF
    set output "oeis-done.png"
    set xlabel "Sequence Bin"
    set ylabel "Implemented"
+   set yrange [0:1000]
    set tics out
    set title "Implemented OEIS Sequences (bins of 1000 sequences)"
    plot "oeis_done.dat" using 1:2 with impulses title "Total Implemented"

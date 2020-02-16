@@ -5,16 +5,16 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028934 Negative of numerator of y-coordinate of <code>(2n+1)*P</code> where P is the generator for rational points on the curve <code>y^2 + y = x^3 - x</code>.
+ * A028944.
  * @author Sean A. Irvine
  */
-public class A028934 implements Sequence {
+public class A028944 implements Sequence {
 
   private Q mX = null;
   private Q mY = Q.ZERO;
 
-  protected Z select(final Q y) {
-    return y.num().negate();
+  protected Z select(final Q q) {
+    return q.num();
   }
 
   @Override
@@ -33,7 +33,7 @@ public class A028934 implements Sequence {
       mY = mY.multiply(x1).divide(mX).negate().subtract(1);
       mX = x1;
     }
-    return select(mY);
+    return select(mX);
   }
 }
 

@@ -1238,3 +1238,5 @@ A028923 Kissing number of n-dimensional lattice Kappa_n
 A028924 Maximal number of pairs of minimal vectors in n-dimensional laminated lattice, simple dependency on A002336
 A028925 Maximal number of pairs of minimal vectors in an n-dimensional lattice, simple dependency on A001116
 A028926 Number of pairs of minimal vectors in n-dimensional lattice Kappa_n, simple dependency on A028923
+A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, papers describe an algorithm, a lot of work
+A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice

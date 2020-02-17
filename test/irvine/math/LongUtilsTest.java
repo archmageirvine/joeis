@@ -486,4 +486,11 @@ public class LongUtilsTest extends TestCase {
     assertEquals("[12, -1]", Arrays.toString(LongUtils.toLong("(12, -1)")));
     assertEquals("[12, -1, 42, 0]", Arrays.toString(LongUtils.toLong("{12, -1, 42,  0}")));
   }
+
+  public void testKronecker() {
+    assertEquals(0, LongUtils.kronecker(15, 15));
+    assertEquals(1, LongUtils.kronecker(-15, 2));
+    assertEquals(-1, LongUtils.kronecker(5, 2));
+    assertEquals(-1, LongUtils.kronecker(5, 3));
+  }
 }

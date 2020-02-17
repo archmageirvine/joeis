@@ -17,8 +17,7 @@ import irvine.util.string.StringUtils;
  */
 public final class LongUtils {
 
-  private LongUtils() {
-  }
+  private LongUtils() { }
 
   /**
    * A hard limit for the <code>modPow</code> function
@@ -27,7 +26,6 @@ public final class LongUtils {
 
   /**
    * Compute <code>a^e mod n</code>, provided n does not exceed sqrt(Long.MAX_VALUE).
-   *
    * @param a base
    * @param e exponent
    * @param n modulus
@@ -40,25 +38,18 @@ public final class LongUtils {
     if (a < 0) {
       throw new IllegalArgumentException("Base can only be nonnegative in this implementation");
     }
-
     // handle some special cases
     if (n == 1) {
       return 0;
     }
     a %= n;
-    if (a == 1) {
+    if (a == 1 || e == 0) {
       return 1;
-    }
-    if (e == 0) {
-      return 1;
-    }
-    if (a == 0) {
+    } else if (a == 0) {
       return 0;
-    }
-    if (e == 1) {
+    } else if (e == 1) {
       return a;
-    }
-    if (e == 2) {
+    } else if (e == 2) {
       return (a * a) % n;
     }
 
@@ -76,10 +67,8 @@ public final class LongUtils {
     return r;
   }
 
-
   /**
    * Compute the Jacobi symbol of m and n.
-   *
    * @param m first parameter
    * @param n second parameter
    * @return the Jacobi symbol of m and n
@@ -89,7 +78,6 @@ public final class LongUtils {
     if ((n & 1) == 0) {
       throw new ArithmeticException();
     }
-
     long m2 = Math.abs(n);
     long m1 = (m >= 0) ? m % m2 : (m2 - (-m % m2));
     int j = 1;
@@ -152,27 +140,23 @@ public final class LongUtils {
    * Kronecker symbol.
    * @param m first argument
    * @param n second argument
-   * @return kronecker symbol
+   * @return Kronecker symbol
    */
   public static int kronecker(final long m, final long n) {
     if (n == -1) {
       return m >= 0 ? 1 : -1;
-    }
-    if (n == 0) {
+    } else if (n == 0) {
       return m == 1 || m == -1 ? 1 : 0;
-    }
-    if (n == 2) {
+    } else if (n == 2) {
       if ((m & 1) == 0) {
         return 0;
       }
-      return (m & 3) == 1 ? 1 : -1;
-    }
-    if ((n & 1) == 0) {
+      return (m & 7) == 1 || (m & 7) == 7 ? 1 : -1;
+    } else if ((n & 1) == 0) {
       return kronecker(m, 2) * kronecker(m, n / 2);
     }
     return jacobi(m, n);
   }
-
 
   // two less than the number of bits in a long
   private static final int BITS = 62;
@@ -189,11 +173,9 @@ public final class LongUtils {
     if (n <= 8L) {
       if (n < 0) {
         throw new ArithmeticException();
-      }
-      if (n == 0L) {
+      } else if (n == 0L) {
         return 0L;
-      }
-      if (n <= 3L) {
+      } else if (n <= 3L) {
         return 1L;
       }
       return 2L;
@@ -234,70 +216,8 @@ public final class LongUtils {
     }
   }
 
-  /*
-  public static long endian4(final long v) {
-    long s = v;
-    long r = s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    s >>>= 8;
-    r <<= 8;
-    r += s & 0xFF;
-    return r;
-  }
-
-  public static long endian1(final long v) {
-    return ((v & 0xFF) << 56)
-      + ((v & 0xFF00) << 40)
-      + ((v & 0xFF0000) << 24)
-      + ((v & 0xFF000000L) << 8)
-      + ((v >>> 8) & 0xFF000000L)
-      + ((v >>> 24) & 0xFF0000)
-      + ((v >>> 40) & 0xFF00)
-      + (v >>> 56);
-  }
-
-  private static int endian4(final int v) {
-    return ((v & 0xFF) << 24)
-      + ((v & 0xFF00) << 8)
-      + ((v >>> 8) & 0xFF00)
-      + (v >>> 24);
-  }
-
-  public static long endian2(final long v) {
-    return (((long) endian((int) v)) << 32) + (endian((int) (v >> 32)) & 0xFFFFFFFFL);
-  }
-
-  private static int endian1(final int v) {
-    final int a = ((v & 0x00FF00FF) << 8) + ((v >>> 8) & 0x00FF00FF);
-    return (a >>> 16) + (a << 16);
-  }
-
-  // this one is fastest for 32-bit
-  public static long endian3(final long v) {
-    return (((long) endian1((int) v)) << 32) + (endian1((int) (v >> 32)) & 0xFFFFFFFFL);
-  }
-  */
-
   /**
    * Swap the byte order of the given long.
-   *
    * @param v long value
    * @return swapped version
    */
@@ -313,7 +233,6 @@ public final class LongUtils {
 
   /**
    * Compute the greatest common denominator of two integers.
-   *
    * @param a first integer
    * @param b second integer
    * @return <code>gcd(a,b)</code>
@@ -329,7 +248,6 @@ public final class LongUtils {
 
   /**
    * Greatest common divisor of three integers.
-   *
    * @param a first number
    * @param b second number
    * @param c third number
@@ -341,7 +259,6 @@ public final class LongUtils {
 
   /**
    * Compute the least common multiple of two integers.
-   *
    * @param a first integer
    * @param b second integer
    * @return <code>lcm(a,b)</code>
@@ -399,7 +316,6 @@ public final class LongUtils {
 
   /**
    * Return Euler phi function of a positive long.
-   *
    * @param n parameter
    * @return phi(n)
    * @throws IllegalArgumentException if <code>n</code> is less than 1.
@@ -600,7 +516,6 @@ public final class LongUtils {
 
   /**
    * Maximum of an array of values.
-   *
    * @param values the possible values
    * @return the maximum
    */
@@ -616,7 +531,6 @@ public final class LongUtils {
 
   /**
    * Test if the given value is square free.
-   *
    * @param n value to test
    * @return true if the number is square free
    */
@@ -655,7 +569,6 @@ public final class LongUtils {
 
   /**
    * Modular inverse.
-   *
    * @param k number
    * @param m modulus
    * @return inverse
@@ -708,7 +621,6 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
-   *
    * @param a array
    * @param n maximum entry
    * @return the array
@@ -722,7 +634,6 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
-   *
    * @param a array
    * @return the array
    */

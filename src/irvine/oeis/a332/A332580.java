@@ -15,13 +15,21 @@ public class A332580 implements Sequence {
 
   private long findK(final long n) {
     long k = 0;
-    final StringBuilder sb = new StringBuilder().append(n);
+    long mul = 10;
+    while (mul <= n) {
+      mul *= 10;
+    }
+    Z concat = Z.valueOf(n);
     do {
-      sb.append(n + ++k);
+      final long u = n + ++k;
+      if (u == mul) {
+        mul *= 10;
+      }
+      concat = concat.multiply(mul).add(u);
       if (mVerbose && (k % 10000) == 0) {
         StringUtils.message("n=" + n + " k=" + k);
       }
-    } while (((n + k) & 1) == 1 || new Z(sb).mod(n + k + 1) != 0);
+    } while (((n + k) & 1) == 1 || concat.mod(n + k + 1) != 0);
     return k;
   }
 

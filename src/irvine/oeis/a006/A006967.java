@@ -10,11 +10,14 @@ import irvine.oeis.a084.A084894;
 public class A006967 extends A084894 {
 
   private Z mF = Z.ONE;
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    mF = mF.multiply(++mN);
+    if (++mN == 0) {
+      return Z.ONE;
+    }
+    mF = mF.multiply(mN);
     return mF.subtract(super.next());
   }
 }

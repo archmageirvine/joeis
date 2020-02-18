@@ -15,10 +15,6 @@ public class A007999 extends A000111 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C = RING.monomial(Q.ONE, 2);
-  {
-    super.next();
-    super.next();
-  }
 
   @Override
   public Z next() {

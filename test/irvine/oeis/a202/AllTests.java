@@ -14,10 +14,12 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A202012Test.class);
     suite.addTestSuite(A202018Test.class);
+    suite.addTestSuite(A202023Test.class);
     suite.addTestSuite(A202048Test.class);
     suite.addTestSuite(A202049Test.class);
     suite.addTestSuite(A202050Test.class);
     suite.addTestSuite(A202051Test.class);
+    suite.addTestSuite(A202064Test.class);
     suite.addTestSuite(A202077Test.class);
     suite.addTestSuite(A202093Test.class);
     suite.addTestSuite(A202107Test.class);
@@ -36,6 +38,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A202201Test.class);
     suite.addTestSuite(A202206Test.class);
     suite.addTestSuite(A202207Test.class);
+    suite.addTestSuite(A202209Test.class);
     suite.addTestSuite(A202254Test.class);
     suite.addTestSuite(A202263Test.class);
     suite.addTestSuite(A202264Test.class);
@@ -64,7 +67,10 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A202380Test.class);
     suite.addTestSuite(A202383Test.class);
     suite.addTestSuite(A202384Test.class);
+    suite.addTestSuite(A202390Test.class);
     suite.addTestSuite(A202391Test.class);
+    suite.addTestSuite(A202395Test.class);
+    suite.addTestSuite(A202396Test.class);
     suite.addTestSuite(A202440Test.class);
     suite.addTestSuite(A202442Test.class);
     suite.addTestSuite(A202443Test.class);
@@ -80,10 +86,12 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A202493Test.class);
     suite.addTestSuite(A202520Test.class);
     suite.addTestSuite(A202522Test.class);
+    suite.addTestSuite(A202551Test.class);
     suite.addTestSuite(A202563Test.class);
     suite.addTestSuite(A202564Test.class);
     suite.addTestSuite(A202565Test.class);
     suite.addTestSuite(A202602Test.class);
+    suite.addTestSuite(A202603Test.class);
     suite.addTestSuite(A202604Test.class);
     suite.addTestSuite(A202606Test.class);
     suite.addTestSuite(A202619Test.class);

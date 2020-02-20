@@ -29,6 +29,15 @@ public class A028961 implements Sequence {
           ++cnt;
         }
       }
+//      if (y != 0) {
+//        final long d1 = 12 * t - 4 * y * y;
+//        if (d1 >= 0) {
+//          final long s = LongUtils.sqrt(d1);
+//          if (s * s == d1) {
+//            ++cnt;
+//          }
+//        }
+//      }
     }
     return Z.valueOf(2 * cnt);
   }

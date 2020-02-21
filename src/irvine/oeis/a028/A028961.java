@@ -20,26 +20,22 @@ public class A028961 implements Sequence {
       return Z.ONE;
     }
     long cnt = 0;
-    for (long y = 0; y * y <= mN; ++y) {
+    for (long y = 0; 8 * y * y <= mN; ++y) {
       final long t = mN - 8 * y * y;
       final long d = 12 * t + 4 * y * y;
       if (d >= 0) {
         final long s = LongUtils.sqrt(d);
         if (s * s == d) {
-          ++cnt;
+          if ((-2 * y + s) % 6 == 0) {
+            cnt += y == 0 ? 1 : 2;
+          }
+          if (s != 0 && (-2 * y - s) % 6 == 0) {
+            cnt += y == 0 ? 1 : 2;
+          }
         }
       }
-//      if (y != 0) {
-//        final long d1 = 12 * t - 4 * y * y;
-//        if (d1 >= 0) {
-//          final long s = LongUtils.sqrt(d1);
-//          if (s * s == d1) {
-//            ++cnt;
-//          }
-//        }
-//      }
     }
-    return Z.valueOf(2 * cnt);
+    return Z.valueOf(cnt);
   }
 
 //  @Override

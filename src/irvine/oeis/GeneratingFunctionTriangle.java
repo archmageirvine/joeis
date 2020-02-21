@@ -14,11 +14,11 @@ import irvine.math.z.ZUtils;
  * Generating functions with 2 variables yielding a (lower left) triangle.
  * The coefficients of the numerator and denominator parameter polynomials 
  * as well as the resulting triangle are flattened, 
- * and the linear array elements have "triangle" indexes for [x,y], x=0..maxrow, y=0..ix: 
- * [0,0], [1,0],[1,1], [2,0],[2,1],[2,2], [3,0],[3,1],[3,2],[3,3], [4,0] ...
+ * and the linear array elements have "triangle" indexes for <code>[x,y], x=0..maxrow, y=0..ix:
+ * [0,0], [1,0],[1,1], [2,0],[2,1],[2,2], [3,0],[3,1],[3,2],[3,3], [4,0] ...</code>
  * Only the coefficients are stored in the input triangles, and the exponents
  * of x,y coincide with the "triangle" indexes.
- * mDen[0] must be +1.
+ * <code>mDen[0]</code> must be +1.
  * @author Georg Fischer
  */
 public class GeneratingFunctionTriangle implements Sequence {
@@ -118,7 +118,7 @@ public class GeneratingFunctionTriangle implements Sequence {
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x
    * @param iy index/exponent for y
-   * @return coefficient of monomial x^ix*yîy, or ZERO if the element does not (yet) exist
+   * @return coefficient of monomial <code>x^ix*yîy</code>, or ZERO if the element does not (yet) exist
    */
   protected Z getTri(final ArrayList<Z> triangle, final int ix, final int iy) {
     final int itri = ix * (ix + 1) / 2 + iy;
@@ -135,7 +135,7 @@ public class GeneratingFunctionTriangle implements Sequence {
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x
    * @param iy index/exponent for y
-   * @param coeff coefficient of monomial x^ix*yîy
+   * @param coeff coefficient of monomial <code>x^ix*yîy</code>
    */
   protected void setTri(final ArrayList<Z> triangle, final int ix, final int iy, final Z coeff) {
     final int itri = ix * (ix + 1) / 2 + iy;
@@ -185,7 +185,7 @@ public class GeneratingFunctionTriangle implements Sequence {
 //   * Test method, shows some fixed triangle with no arguments, or the
 //   * sequence resulting from the input parameters.
 //   * @param args command line arguments: none for A007318, or
-//   * noTerms num_coeffs den_coeff
+//   * number of terms num_coeffs den_coeff
 //   */
 //  public static void main(String[] args) {
 //    GeneratingFunctionTriangle triangle = new GeneratingFunctionTriangle

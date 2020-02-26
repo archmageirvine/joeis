@@ -9,7 +9,7 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class MultivariablePolynomialRingTest extends TestCase {
+public class MultivariatePolynomialRingTest extends TestCase {
 
   public void test() {
     final MultivariatePolynomialRing ring = new MultivariatePolynomialRing(2);

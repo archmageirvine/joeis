@@ -1,0 +1,25 @@
+package irvine.oeis.a028;
+
+import irvine.factor.factor.Cheetah;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.string.StringUtils;
+
+/**
+ * A028980 Numbers n such that sum of divisors of n is palindromic.
+ * @author Sean A. Irvine
+ */
+public class A028980 implements Sequence {
+
+  private Z mN = Z.ZERO;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mN = mN.add(1);
+      if (StringUtils.isPalindrome(Cheetah.factor(mN).sigma().toString())) {
+        return mN;
+      }
+    }
+  }
+}

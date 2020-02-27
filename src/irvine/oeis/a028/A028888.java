@@ -10,7 +10,7 @@ import irvine.util.string.StringUtils;
  */
 public class A028888 extends A000040 {
 
-  private Z mPrev = Z.NEG_ONE;
+  protected Z mPrev = Z.NEG_ONE;
 
   @Override
   public Z next() {

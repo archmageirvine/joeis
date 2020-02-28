@@ -7,5 +7,4 @@ import irvine.oeis.AbstractSequenceTest;
  * @author Sean A. Irvine
  */
 public class A029519Test extends AbstractSequenceTest {
-
 }

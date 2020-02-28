@@ -14,7 +14,7 @@ public class A028977 implements Sequence {
 
   // After Michael Somos
 
-  private final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
 
   @Override

@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084969 Multiples of 11 whose GCD's with 210 is 1.
+ * A084969 Numbers whose smallest prime factor is 11.
  * @author Georg Fischer
  */
 public class A084969 extends GeneratingFunctionSequence {

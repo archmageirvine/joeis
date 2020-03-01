@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084967 Multiples of 5 whose GCD's with 6 is 1.
+ * A084967 Multiples of 5 whose GCD with 6 is 1.
  * @author Sean A. Irvine
  */
 public class A084967 extends LinearRecurrence {

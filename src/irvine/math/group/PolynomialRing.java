@@ -297,6 +297,9 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     if (zero().equals(p)) {
       return n == 0 ? one() : zero();
     }
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
     switch (n) {
       case 0:
         return one();

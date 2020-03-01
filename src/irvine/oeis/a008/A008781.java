@@ -6,7 +6,7 @@ import irvine.util.Permutation;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A008781 For any circular arrangement of <code>0..n-1</code>, let S = sum of cubes of every sum of two contiguous numbers; then <code>a(n) = #</code> of distinct values of S.
+ * A008781 For any circular arrangement of <code>0..n-1</code>, let S be the sum of cubes of every sum of two contiguous numbers; then <code>a(n)</code> is the number of distinct values of S.
  * @author Sean A. Irvine
  */
 public class A008781 implements Sequence {

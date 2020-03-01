@@ -254,6 +254,9 @@ public class QPolynomialRing<E> extends AbstractRing<QPolynomial<E>> {
    * @return <code>p^n</code>
    */
   public QPolynomial<E> pow(final QPolynomial<E> p, final int n, final Q degreeLimit) {
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
     switch (n) {
     case 0:
       return one();

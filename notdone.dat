@@ -163,8 +163,6 @@ A002402 Coefficients for integration, have paper, hard to understand
 A002403 Coefficients for integration, have paper, hard to understand
 A002404 Coefficients for integration, have paper, hard to understand
 A002406 Coefficients for integration, have paper, hard to understand
-A002490 Theta sum, insufficient detail
-A002495 Theta sum, insufficient detail
 A002497 Composite sequence, not obvious criteria, have dependencies
 A002498 Depends A002497
 A002543 Post functions, insufficient detail
@@ -335,7 +333,6 @@ A004029 Number of n-dimensional space groups
 A004030 Number of n-dimensional Bravais lattices (version 1)
 A004031 Number of n-dimensional crystal systems
 A004032 Number of n-dimensional crystal families
-A004033 Theta series of lattice A_2 tensor E_8, need Delta_12
 A004034 Theta series of Leech lattice with respect to deep hole of type A_1, insufficient detail
 A004035 The coding-theoretic function A(n,4,5)
 A004036 The coding-theoretic function A(n,4,6)
@@ -494,7 +491,7 @@ A005865 The coding-theoretic function A(n,6)
 A005866 The coding-theoretic function A(n,8)
 A005873 Theta series of hexagonal close-packing with respect to tetrahedral hole, eqn error?
 A005924 From solution to a difference equation, simple conjecture, could not find seq in paper
-A005933 Theta series of laminated lattice LAMBDA_9, couldn't see formula
+A005933 Theta series of laminated lattice LAMBDA_9, couldn't see formula (very slow with Gram matrix)
 A005944 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 1024 and minimal norm 4, insufficient details
 A005950 Theta series of 18-dimensional lattice associated with Sp_4(4), with det 256 and minimal norm 3
 A005951 Theta series of P_{9a} packing
@@ -1189,32 +1186,6 @@ A028466 Number of perfect matchings in graph C_{3} X C_{5} X P_{2n}, long g.f. o
 A028467 Number of perfect matchings in graph C_{4} X C_{4} X P_{n}, long g.f. or recurrence will exist
 A028475 Total number of Hamiltonian cycles avoiding the root-edge in rooted cubic bipartite planar maps with 2n nodes, paper describes algorithm insufficient detail
 A028497 Maximum number of facets of n-dimensional polytope with {0,1}-coordinates, hard
-A028526 Character of extremal vertex operator algebra of rank 8.5
-A028527 Character of extremal vertex operator algebra of rank 9
-A028528 Character of extremal vertex operator algebra of rank 9.5
-A028529 Character of extremal vertex operator algebra of rank 10
-A028530 Character of extremal vertex operator algebra of rank 10.5
-A028531 Character of extremal vertex operator algebra of rank 11
-A028532 Character of extremal vertex operator algebra of rank 11.5
-A028533 Character of extremal vertex operator algebra of rank 12.5
-A028534 Character of extremal vertex operator algebra of rank 13
-A028535 Character of extremal vertex operator algebra of rank 13.5
-A028536 Character of extremal vertex operator algebra of rank 14.5
-A028537 Character of extremal vertex operator algebra of rank 16
-A028538 Character of extremal vertex operator algebra of rank 16.5
-A028539 Character of extremal vertex operator algebra of rank 17
-A028540 Character of extremal vertex operator algebra of rank 17.5
-A028541 Character of extremal vertex operator algebra of rank 18
-A028542 Character of extremal vertex operator algebra of rank 18.5
-A028543 Character of extremal vertex operator algebra of rank 19
-A028544 Character of extremal vertex operator algebra of rank 19.5
-A028545 Character of extremal vertex operator algebra of rank 20
-A028546 Character of extremal vertex operator algebra of rank 20.5
-A028547 Character of extremal vertex operator algebra of rank 21
-A028548 Character of extremal vertex operator algebra of rank 21.5
-A028549 Character of extremal vertex operator algebra of rank 22
-A028550 Character of extremal vertex operator algebra of rank 22.5
-A028551 Character of extremal vertex operator algebra of rank 23
 A028818 Palindromic squares with odd number of digits and non-palindromic and "non-core" square roots, cf. A016106
 A028847 Number of composite labeled topologies on n points
 A028848 Number of composite labeled T_0 topologies on n points
@@ -1234,3 +1205,5 @@ A028925 Maximal number of pairs of minimal vectors in an n-dimensional lattice, 
 A028926 Number of pairs of minimal vectors in n-dimensional lattice Kappa_n, simple dependency on A028923
 A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, papers describe an algorithm, a lot of work
 A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice
+A029550 Highest minimal norm for an (even or odd) 2-modular lattice in dimension n
+A029551 Highest minimal norm for an (even or odd) 3-modular lattice in dimension n

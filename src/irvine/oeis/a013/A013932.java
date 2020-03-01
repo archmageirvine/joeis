@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013932 <code>a(n)</code> is squarefree and is sum of first k squarefrees for some k.
+ * A013932 Integers that are squarefree and also the sum of first k squarefrees for some k.
  * @author Sean A. Irvine
  */
 public class A013932 implements Sequence {

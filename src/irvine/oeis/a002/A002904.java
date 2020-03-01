@@ -6,7 +6,7 @@ import irvine.util.string.English;
 import irvine.util.string.Roman;
 
 /**
- * A002904 Delete all letters except c,d,i,l,m,v,x from n then read as Roman numeral if possible, otherwise 0.
+ * A002904 Delete all letters except c, d, i, l, m, v, x from the English name of n, then read as Roman numeral if possible, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A002904 implements Sequence {

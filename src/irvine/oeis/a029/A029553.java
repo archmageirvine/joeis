@@ -13,7 +13,8 @@ public class A029553 extends A120944 {
   static boolean isQuasiCarmichael(final Z n, final long base) {
     final Z m = n.subtract(base);
     for (final Z p : Cheetah.factor(n).toZArray()) {
-      if (!Z.ZERO.equals(m.mod(p.subtract(base)))) {
+      final Z s = p.subtract(base);
+      if (s.signum() <= 0 || !Z.ZERO.equals(m.mod(s))) {
         return false;
       }
     }

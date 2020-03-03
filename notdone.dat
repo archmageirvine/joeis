@@ -1207,3 +1207,7 @@ A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, pa
 A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice
 A029550 Highest minimal norm for an (even or odd) 2-modular lattice in dimension n
 A029551 Highest minimal norm for an (even or odd) 3-modular lattice in dimension n
+A029702 Q(sqrt(n)) has class number 2, simple dep. on A003649
+A029703 Q(sqrt(n)) has class number 3, simple dep. on A003649
+A029704 Q(sqrt(n)) has class number 4, simple dep. on A003649
+A029705 Q(sqrt(n)) has class number 5, simple dep. on A003649

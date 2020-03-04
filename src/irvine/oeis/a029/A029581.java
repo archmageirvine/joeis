@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A029581 implements Sequence {
 
-  private static long[] DIGITS = {9, 4, 6, 8};
+  private static final long[] DIGITS = {9, 4, 6, 8};
   private long mN = 0;
 
   @Override

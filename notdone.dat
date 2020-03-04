@@ -1211,3 +1211,12 @@ A029702 Q(sqrt(n)) has class number 2, simple dep. on A003649
 A029703 Q(sqrt(n)) has class number 3, simple dep. on A003649
 A029704 Q(sqrt(n)) has class number 4, simple dep. on A003649
 A029705 Q(sqrt(n)) has class number 5, simple dep. on A003649
+A029723 Trace of Frobenius of the reduction mod 2 of the elliptic curve C / L, L a lattice with Gram matrix [ 4 1; 1 2n ]
+A029725 Number of distinct subgroups of alternating group A_n, counting conjugates as distinct
+A029726 Number of conjugacy classes of subgroups of the alternating group A_n
+A029729 Degree of the variety of pairs of commuting n X n matrices
+A029752 Theta series of any of the 5 extremal odd unimodular 32-dimensional lattices (with minimal norm 4)
+A029753 Theta series of shadow of any of the 5 extremal odd unimodular 32-dimensional lattices (with minimal norm 4)
+A029754 Theta series of shadow of shorter Leech lattice
+A029755 Smallest dimension in which a unimodular lattice of minimal norm n occurs
+A029756 Smallest dimension in which a strictly odd unimodular lattice of minimal norm n occurs

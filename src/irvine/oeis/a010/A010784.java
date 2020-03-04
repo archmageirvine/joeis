@@ -26,10 +26,11 @@ public class A010784 implements Sequence {
 
   @Override
   public Z next() {
-    while (true) {
-      if (isDistinctDigits(++mN)) {
+    while (++mN <= 9876543210L) {
+      if (isDistinctDigits(mN)) {
         return Z.valueOf(mN);
       }
     }
+    return null;
   }
 }

@@ -1,6 +1,5 @@
 package irvine.oeis.a002;
 
-import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,23 +9,26 @@ import irvine.oeis.Sequence;
  */
 public class A002034 implements Sequence {
 
-  private final Fast mPrime = new Fast();
   protected int mN = 0;
+
+  protected Z kempner(final Z n) {
+    if (n.isProbablePrime()) {
+      return n;
+    }
+    long c = 1;
+    Z f = Z.ONE;
+    while (true) {
+      f = f.mod(n);
+      if (Z.ZERO.equals(f)) {
+        return Z.valueOf(c);
+      }
+      f = f.multiply(++c);
+    }
+  }
 
   @Override
   public Z next() {
-    if (mPrime.isPrime(++mN)) {
-      return Z.valueOf(mN);
-    }
-    long c = 1;
-    long f = 1;
-    while (true) {
-      f %= mN;
-      if (f == 0) {
-        return Z.valueOf(c);
-      }
-      f *= ++c;
-    }
+    return kempner(Z.valueOf(++mN));
   }
 }
 

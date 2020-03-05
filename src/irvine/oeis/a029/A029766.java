@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a040.A040039;
 
 /**
- * A029766.
+ * A029766 Unary-binary rooted trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A029766 extends A040039 {

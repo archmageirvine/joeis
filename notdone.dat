@@ -765,8 +765,6 @@ A007565 Number of Go games with n moves, hard for small number of terms
 A007577 Number of chess games with n plies (another version) -- this one likely useless
 A007656 Mass number of the most abundant isotope of the element with atomic number Z = n
 A007673 Number of coins needed for ApSimon's mints problem, hard
-A007717 Number of symmetric polynomial functions of degree n of a symmetric matrix, pos. cycle index, couldn't get ref
-A007719 Simple dep. A007717
 A007720 Arises in attempts to apply Engel's `probabilistic abacus' to random walks on infinite square grid, insufficient detail
 A007760 Number of solid partitions of height n in a cube of side n, insufficient detail
 A007762 Number of domino tilings of a certain region, insufficient detail, emailed author
@@ -1220,3 +1218,16 @@ A029753 Theta series of shadow of any of the 5 extremal odd unimodular 32-dimens
 A029754 Theta series of shadow of shorter Leech lattice
 A029755 Smallest dimension in which a unimodular lattice of minimal norm n occurs
 A029756 Smallest dimension in which a strictly odd unimodular lattice of minimal norm n occurs
+A029811 Average theta series of odd unimodular lattices of dimension 9 (multiplied by 17)
+A029812 Average theta series of odd unimodular lattices of dimension 10 (multiplied by 5).
+A029813 Average theta series of odd unimodular lattices of dimension 11 (multiplied by 31).
+A029814 Average theta series of odd unimodular lattices of dimension 13 (multiplied by 691).
+A029815 Average theta series of odd unimodular lattices of dimension 14 (multiplied by 61).
+A029816 Average theta series of odd unimodular lattices of dimension 15 (multiplied by 43).
+A029818 Average theta series of odd unimodular lattices of dimension 17 (multiplied by 929569).
+A029819 Average theta series of odd unimodular lattices of dimension 18 (multiplied by 1385).
+A029820 Average theta series of odd unimodular lattices of dimension 19 (multiplied by 3202291).
+A029822 Average theta series of odd unimodular lattices of dimension 21 (multiplied by 5412941).
+A029823 Average theta series of odd unimodular lattices of dimension 22 (multiplied by 50521).
+A029824 Average theta series of odd unimodular lattices of dimension 23 (multiplied by 53057489).
+A029825 Average theta series of odd unimodular lattices of dimension 24 (multiplied by 691).

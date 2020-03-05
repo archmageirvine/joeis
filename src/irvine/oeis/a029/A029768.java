@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A029768.
+ * A029768 Number of increasing mobiles with n elements.
  * @author Sean A. Irvine
  */
 public class A029768 extends MemorySequence {

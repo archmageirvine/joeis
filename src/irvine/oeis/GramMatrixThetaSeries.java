@@ -2,6 +2,7 @@ package irvine.oeis;
 
 import java.util.Arrays;
 
+import irvine.math.IntegerUtils;
 import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 import irvine.util.string.StringUtils;
@@ -72,7 +73,9 @@ public class GramMatrixThetaSeries implements Sequence {
     while (mN * mStep >= mLastMin) {
       ++mM;
       Arrays.fill(mVec, -mM); // We will search hypercube [-mM,mM]^dim
-      mVec[0] = 0; // Use symmetry for 0th coordinate; i.e., search only [0,mM] for 0-th coordinate
+      // Use symmetry for 0th coordinate; i.e., search only [0,mM] for 0-th coordinate
+      // In the special case of 1-dimension the only value to try is mM
+      mVec[0] = mVec.length == 1 ? mM : 0;
       long min = Long.MAX_VALUE;
       do {
         // Compute vec * matrix * vec^T which is a single integer
@@ -98,5 +101,26 @@ public class GramMatrixThetaSeries implements Sequence {
       mLastMin = min;
     }
     return Z.valueOf(mCounts.get(mStep * mN));
+  }
+
+  /**
+   * Run on the specified matrix
+   * @param args the matrix (space separated numbers, assumed to be a square matrix)
+   */
+  public static void main(final String[] args) {
+    final int s = IntegerUtils.sqrt(args.length);
+    if (s * s != args.length) {
+      throw new IllegalArgumentException("Not a square matrix");
+    }
+    final long[][] m = new long[s][s];
+    for (int r = 0, k = 0; r < s; ++r) {
+      for (int c = 0; c < s; ++c, ++k) {
+        m[r][c] = Integer.parseInt(args[k]);
+      }
+    }
+    final GramMatrixThetaSeries seq = new GramMatrixThetaSeries(m);
+    while (true) {
+      System.out.println(seq.next());
+    }
   }
 }

@@ -1234,3 +1234,8 @@ A029851 Number of self-converse semigroups of order n, depends A001423
 A029865 Smallest covering radius of [ n,6 ] binary code, hard
 A029866 Size of minimal covering code of length n and covering radius 2
 A029867 Size of minimal covering code with 1 ternary coordinate and n binary coordinates, with covering radius 1
+A029872 Low temperature series for spin-1/2 Ising specific heat on 2D square lattice
+A029873 Low temperature series for spin-1/2 Ising specific heat on 2D square lattice, multiplied by 4
+A029874 Low temperature series for spin-1/2 Ising specific heat on 2D square lattice, divided by 8
+A029875 Related to a bound for Giuga's conjecture
+A029876 Number of Giuga sequences of length n, hard

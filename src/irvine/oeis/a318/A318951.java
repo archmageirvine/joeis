@@ -52,7 +52,7 @@ public class A318951 implements Sequence {
     final IntegerPartition parts = new IntegerPartition(m);
     int[] q;
     while ((q = parts.next()) != null) {
-      Polynomial<Q> ks = RING.create(Collections.emptyList());
+      final Polynomial<Q> ks = RING.create(Collections.emptyList());
       ks.add(Q.ZERO);
       for (int t = 1; t <= n; ++t) {
         ks.add(new Q(k(q, t, k), Z.valueOf(t)));

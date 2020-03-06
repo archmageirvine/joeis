@@ -1107,8 +1107,6 @@ A023686 Discriminants of totally real sextic fields
 A023687 Discriminants of totally complex sextic fields
 A023814 Number of associative binary operations on an n-set; number of labeled semigroups
 A023815 Number of binary operations on an n-set that are commutative and associative; labeled commutative semigroups
-A023921 Theta series of A*_9 lattice (complicated formula is known)
-A023923 Theta series of A*_11 lattice
 A023925 Theta series of A*_13 lattice
 A023926 Theta series of A*_14 lattice
 A023927 Theta series of A*_15 lattice
@@ -1231,3 +1229,8 @@ A029822 Average theta series of odd unimodular lattices of dimension 21 (multipl
 A029823 Average theta series of odd unimodular lattices of dimension 22 (multiplied by 50521).
 A029824 Average theta series of odd unimodular lattices of dimension 23 (multiplied by 53057489).
 A029825 Average theta series of odd unimodular lattices of dimension 24 (multiplied by 691).
+A029849 Number of nonisomorphic and nonantiisomorphic relations
+A029851 Number of self-converse semigroups of order n, depends A001423
+A029865 Smallest covering radius of [ n,6 ] binary code, hard
+A029866 Size of minimal covering code of length n and covering radius 2
+A029867 Size of minimal covering code with 1 ternary coordinate and n binary coordinates, with covering radius 1

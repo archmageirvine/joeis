@@ -1238,3 +1238,9 @@ A029873 Low temperature series for spin-1/2 Ising specific heat on 2D square lat
 A029874 Low temperature series for spin-1/2 Ising specific heat on 2D square lattice, divided by 8
 A029875 Related to a bound for Giuga's conjecture
 A029876 Number of Giuga sequences of length n, hard
+A029889 Number of graphical partitions (degree-vectors for graphs with n vertices, allowing self-loops which count as degree 1; or possible ordered row-sum vectors for a symmetric 0-1 matrix)
+A029890 Number of odd graphical partitions
+A029891 Number of even graphical partitions
+A029892 Number of even graphical partitions of order 2n - number of odd partition
+A029893 Number of graphical partitions with up to n parts (?)
+A029897 Theta series of 13-dimensional lattice Kappa_13 with minimal norm 4

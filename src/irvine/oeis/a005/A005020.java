@@ -8,7 +8,7 @@ import irvine.math.z.Z;
  */
 public class A005020 extends A005019 {
 
-  // W. H. Lam describes a potentially more efficient approach.
+  // Clement W. H. Lam describes a potentially more efficient approach.
   // Nevertheless the following was sufficient to verify the existing terms.
 
   // My approach:

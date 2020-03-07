@@ -21,7 +21,7 @@ public class EulerTransformSequence implements Sequence {
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
   private int mN = -1;
-  private Z mInitial = null;
+  private Z mInitial;
 
   /**
    * Creates a new Euler transform sequence of the given sequence, skipping
@@ -64,6 +64,33 @@ public class EulerTransformSequence implements Sequence {
     return RING.coeff(RING.one(), den, n);
   }
 
+  // The following version attempts to address the speed by only recomputing
+  // the entire sequence when the current degree limit (which increases as
+  // powers of 2) is exceeded.
+
+  private static final int DEFAULT_DEGREE_LIMIT = 1 << 5;
+  private int mDegreeLimit = DEFAULT_DEGREE_LIMIT;
+  private Polynomial<Z> mDen = RING.one();
+  private int mNextSeqIndex = 0;
+
+  private Z incrementalEulerTransform(final List<Z> seq, final int n) {
+    if (n >= mDegreeLimit) {
+      // Complete recomputation to extract higher terms is needed
+      mDegreeLimit *= 2;
+      mDen = RING.one();
+      for (int k = 0; k < seq.size(); ++k) {
+        mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), mDegreeLimit), mDegreeLimit);
+      }
+      mNextSeqIndex = seq.size();
+    }
+    while (mNextSeqIndex < seq.size()) {
+      // If the underlying sequence has another term then add it into the mix
+      mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(mNextSeqIndex + 1), seq.get(mNextSeqIndex), mDegreeLimit), mDegreeLimit);
+      ++mNextSeqIndex;
+    }
+    return RING.coeff(RING.one(), mDen, n); // Finally extract the transformed value
+  }
+
   @Override
   public Z next() {
     if (mInitial != null) {
@@ -74,13 +101,14 @@ public class EulerTransformSequence implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    // Recomputes for each term, not the most efficient way perhaps,
-    // but saves a lot of housekeeping and memory
     final Z next = mSeq.next();
     if (next != null) {
       mTerms.add(next);
     }
-    return eulerTransform(mTerms, mN);
+    return incrementalEulerTransform(mTerms, mN);
+//    // Recomputes for each term, not the most efficient way perhaps,
+//    // but saves a lot of housekeeping and memory
+//    return eulerTransform(mTerms, mN);
   }
 
   /**

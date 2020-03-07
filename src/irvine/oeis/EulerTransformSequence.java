@@ -50,6 +50,14 @@ public class EulerTransformSequence implements Sequence {
     this(seq, skip, null);
   }
 
+  private static Polynomial<Z> product(final List<Z> seq, final int degreeLimit) {
+    Polynomial<Z> prod = RING.one();
+    for (int k = 0; k < seq.size(); ++k) {
+      prod = RING.multiply(prod, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), degreeLimit), degreeLimit);
+    }
+    return prod;
+  }
+
   /**
    * The next term in an Euler transform.
    * @param seq current sequence terms
@@ -57,11 +65,7 @@ public class EulerTransformSequence implements Sequence {
    * @return next term of Euler transform
    */
   public static Z eulerTransform(final List<Z> seq, final int n) {
-    Polynomial<Z> den = RING.one();
-    for (int k = 0; k < seq.size(); ++k) {
-      den = RING.multiply(den, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), n), n);
-    }
-    return RING.coeff(RING.one(), den, n);
+    return RING.coeff(RING.one(), product(seq, n), n);
   }
 
   // The following version attempts to run faster by only recomputing
@@ -78,13 +82,14 @@ public class EulerTransformSequence implements Sequence {
     // n is the term to be returned, seq is underlying sequence and is assumed
     // to have sufficient terms needed to determine
     boolean changed = false;
-    if (n >= mDegreeLimit) {
+    if (n == 1) {
+      mDen = product(seq, mDegreeLimit);
+      mNextSeqIndex = seq.size();
+      changed = true;
+    } else if (n >= mDegreeLimit) {
       // Complete recomputation to extract higher terms is needed
       mDegreeLimit *= 2;
-      mDen = RING.one();
-      for (int k = 0; k < seq.size(); ++k) {
-        mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), mDegreeLimit), mDegreeLimit);
-      }
+      mDen = product(seq, mDegreeLimit);
       mNextSeqIndex = seq.size();
       changed = true;
     }
@@ -114,7 +119,8 @@ public class EulerTransformSequence implements Sequence {
     if (mSeq instanceof PeriodicSequence || mSeq instanceof FiniteSequence) {
       // Special speed up for "fast" underlying sequences.  This helps avoid excessive
       // recomputation of the transform
-      while (mTerms.size() < mDegreeLimit) {
+      final int len = mN >= mDegreeLimit ? mDegreeLimit * 2 : mDegreeLimit;
+      while (mTerms.size() < len) {
         final Z next = mSeq.next();
         if (next == null) {
           break;

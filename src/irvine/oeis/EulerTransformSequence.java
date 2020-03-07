@@ -64,16 +64,20 @@ public class EulerTransformSequence implements Sequence {
     return RING.coeff(RING.one(), den, n);
   }
 
-  // The following version attempts to address the speed by only recomputing
+  // The following version attempts to run faster by only recomputing
   // the entire sequence when the current degree limit (which increases as
   // powers of 2) is exceeded.
 
   private static final int DEFAULT_DEGREE_LIMIT = 1 << 5;
   private int mDegreeLimit = DEFAULT_DEGREE_LIMIT;
   private Polynomial<Z> mDen = RING.one();
+  private Polynomial<Z> mEulerTransform = null;
   private int mNextSeqIndex = 0;
 
   private Z incrementalEulerTransform(final List<Z> seq, final int n) {
+    // n is the term to be returned, seq is underlying sequence and is assumed
+    // to have sufficient terms needed to determine
+    boolean changed = false;
     if (n >= mDegreeLimit) {
       // Complete recomputation to extract higher terms is needed
       mDegreeLimit *= 2;
@@ -82,13 +86,18 @@ public class EulerTransformSequence implements Sequence {
         mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(k + 1), seq.get(k), mDegreeLimit), mDegreeLimit);
       }
       mNextSeqIndex = seq.size();
+      changed = true;
     }
     while (mNextSeqIndex < seq.size()) {
       // If the underlying sequence has another term then add it into the mix
       mDen = RING.multiply(mDen, RING.pow(RING.oneMinusXToTheN(mNextSeqIndex + 1), seq.get(mNextSeqIndex), mDegreeLimit), mDegreeLimit);
       ++mNextSeqIndex;
+      changed = true;
     }
-    return RING.coeff(RING.one(), mDen, n); // Finally extract the transformed value
+    if (changed) {
+      mEulerTransform = RING.series(RING.one(), mDen, mDegreeLimit); // Finally extract the transformed value
+    }
+    return mEulerTransform.coeff(n);
   }
 
   @Override
@@ -101,14 +110,25 @@ public class EulerTransformSequence implements Sequence {
     if (++mN == 0) {
       return Z.ONE;
     }
-    final Z next = mSeq.next();
-    if (next != null) {
-      mTerms.add(next);
+
+    if (mSeq instanceof PeriodicSequence || mSeq instanceof FiniteSequence) {
+      // Special speed up for "fast" underlying sequences.  This helps avoid excessive
+      // recomputation of the transform
+      while (mTerms.size() < mDegreeLimit) {
+        final Z next = mSeq.next();
+        if (next == null) {
+          break;
+        }
+        mTerms.add(next);
+      }
+    } else {
+      // In general case, add one more term from underlying sequence
+      final Z next = mSeq.next();
+      if (next != null) {
+        mTerms.add(next);
+      }
     }
     return incrementalEulerTransform(mTerms, mN);
-//    // Recomputes for each term, not the most efficient way perhaps,
-//    // but saves a lot of housekeeping and memory
-//    return eulerTransform(mTerms, mN);
   }
 
   /**

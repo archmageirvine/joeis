@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 /**
- * A028544 Character of extremal vertex operator algebra of rank 39/2.
+ * A028544 Character of extremal vertex operator algebra of rank 19.5.
  * @author Sean A. Irvine
  */
 public class A028544 extends A028537 {

@@ -4,7 +4,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029881.
+ * A029881 Moebius transform of Thue-Morse sequence <code>A001285</code>.
  * @author Sean A. Irvine
  */
 public class A029881 extends MobiusTransformSequence {

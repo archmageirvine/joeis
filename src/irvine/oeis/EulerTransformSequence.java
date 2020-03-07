@@ -21,6 +21,23 @@ public class EulerTransformSequence implements Sequence {
   private final Sequence mSeq;
   protected final ArrayList<Z> mTerms = new ArrayList<>();
   private int mN = -1;
+  private Z mInitial = null;
+
+  /**
+   * Creates a new Euler transform sequence of the given sequence, skipping
+   * the specified number of terms in advance.
+   *
+   * @param seq underlying sequence
+   * @param skip number of terms to skip
+   * @param initial an initial term
+   */
+  public EulerTransformSequence(final Sequence seq, final int skip, final Z initial) {
+    mSeq = seq;
+    mInitial = initial;
+    for (int k = 0; k < skip; ++k) {
+      seq.next();
+    }
+  }
 
   /**
    * Creates a new Euler transform sequence of the given sequence, skipping
@@ -30,10 +47,7 @@ public class EulerTransformSequence implements Sequence {
    * @param skip number of terms to skip
    */
   public EulerTransformSequence(final Sequence seq, final int skip) {
-    mSeq = seq;
-    for (int k = 0; k < skip; ++k) {
-      seq.next();
-    }
+    this(seq, skip, null);
   }
 
   /**
@@ -52,6 +66,11 @@ public class EulerTransformSequence implements Sequence {
 
   @Override
   public Z next() {
+    if (mInitial != null) {
+      final Z t = mInitial;
+      mInitial = null;
+      return t;
+    }
     if (++mN == 0) {
       return Z.ONE;
     }

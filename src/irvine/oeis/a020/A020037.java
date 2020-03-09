@@ -19,6 +19,6 @@ public class A020037 implements Sequence {
     if (++mN >= 0) {
       mA = mA.multiply(C.add(mN));
     }
-    return mA.add(Q.HALF).floor();
+    return mA.round();
   }
 }

@@ -16,6 +16,6 @@ public class A029918 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    return METRES_TO_FEET.multiply(mN).add(Q.HALF).floor();
+    return METRES_TO_FEET.multiply(mN).round();
   }
 }

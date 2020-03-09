@@ -18,6 +18,6 @@ public class A020042 implements Sequence {
     if (++mN >= 0) {
       mA = mA.multiply(Q.ONE_QUARTER.add(mN));
     }
-    return mA.add(Q.HALF).floor();
+    return mA.round();
   }
 }

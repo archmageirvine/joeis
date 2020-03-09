@@ -63,6 +63,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PolynomialRingFieldTest.class);
     suite.addTestSuite(PolynomialRingTest.class);
     suite.addTestSuite(QPolynomialRingTest.class);
+    suite.addTestSuite(QuadraticFieldUtilsTest.class);
     suite.addTestSuite(RightCosetTest.class);
     suite.addTestSuite(RingFactorialTest.class);
     suite.addTestSuite(SchreierArrayTest.class);

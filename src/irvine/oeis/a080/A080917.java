@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A080917 Number of integer solutions to the equation 2*x^2 + y^2 + 8*z^2 = n.
+ * A080917 Number of integer solutions to the equation <code>2*x^2 + y^2 + 8*z^2 = n</code>.
  * @author Georg Fischer
  */
 public class A080917 extends EulerTransformSequence {

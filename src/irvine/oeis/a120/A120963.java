@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a014.A014197;
 
 /**
- * A120963 Number of monic polynomials with integer coefficients of degree n with all roots on the unit circle; number of products of cyclotomic polynomials of degree n.
+ * A120963 Number of monic polynomials with integer coefficients of degree n with all roots on the unit circle; number of products of cyclotomic polynomials of degree <code>n</code>.
  * @author Georg Fischer
  */
 public class A120963 extends EulerTransformSequence {

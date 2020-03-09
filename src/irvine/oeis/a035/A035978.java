@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A035978 Number of partitions of n into parts not of the form 19k, 19k+9 or 19k-9. Also number of partitions with at most 8 parts of size 1 and differences between parts at distance 8 are greater than 1.
+ * A035978 Number of partitions of n into parts not of the form <code>19k, 19k+9</code> or <code>19k-9</code>. Also number of partitions with at most 8 parts of size 1 and differences between parts at distance 8 are greater than 1.
  * @author Georg Fischer
  */
 public class A035978 extends EulerTransformSequence {

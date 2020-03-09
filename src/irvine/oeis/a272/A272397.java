@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A272397 Number of partitions of n into parts congruent to 1, 3, 6, 8 (mod 9).
+ * A272397 Number of partitions of n into parts congruent to <code>1, 3, 6, 8 (mod 9)</code>.
  * @author Georg Fischer
  */
 public class A272397 extends EulerTransformSequence {

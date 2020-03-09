@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a008.A008480;
 
 /**
- * A308271 G.f. A(x) satisfies: A(x) = (1/(1 - x)) * A(x^2)*A(x^3)*A(x^5)* ... *A(x^prime(k))* ...
+ * A308271 G.f. <code>A(x)</code> satisfies: <code>A(x) = (1/(1 - x)) * A(x^2)*A(x^3)*A(x^5)* ... *A(x^prime(k))* ..</code>.
  * @author Georg Fischer
  */
 public class A308271 extends EulerTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A308399 Expansion of 1 / Sum_{k=-oo..oo} (-x)^(k*(4*k + 1)).
+ * A308399 Expansion of <code>1 / Sum_{k=-oo..oo} (-x)^(k*(4*k + 1))</code>.
  * @author Georg Fischer
  */
 public class A308399 extends EulerTransformSequence {

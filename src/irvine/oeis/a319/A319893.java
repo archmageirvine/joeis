@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.BlockMultAddSequence;
 
 /**
- * A319893 a(n) = 10*9*8*7*6*5*4*3*2*1 - 20*19*18*17*16*15*14*13*12*11 + 30*19*18*17*16*15*14*13*12*11 - ... + (up to the n-th term).
+ * A319893 <code>a(n) = 10*9*8*7*6*5*4*3*2*1 - 20*19*18*17*16*15*14*13*12*11 + 30*19*18*17*16*15*14*13*12*11 - ... +</code> (up to the <code>n-th</code> term).
  * @author Georg Fischer
  */
 public class A319893 extends BlockMultAddSequence {

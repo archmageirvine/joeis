@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029894.
+ * A029894 Number of directed (or <code>Gale-Ryser)</code> graphical partitions: degree-vector pairs <code>(in-degree, out-degree)</code> for directed graphs (loops allowed) with n vertices; or possible ordered pair <code>(row-sum, column-sum)</code> vectors for a 0-1 matrix.
  * @author Sean A. Irvine
  */
 public class A029894 extends MemoryFunctionInt4<Z> implements Sequence {

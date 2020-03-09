@@ -6,16 +6,17 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029899.
+ * A029899 Number of strategic configurations in <code>3 X n</code> Chomp rectangle.
  * @author Sean A. Irvine
  */
 public class A029899 implements Sequence {
 
-  private final TreeSet<Long> mPPositions = new TreeSet<>();
+  private static final int BITS_PER_VALUE = 21;
+  protected final TreeSet<Long> mPPositions = new TreeSet<>();
   private int mN = -1;
 
-  private long pack(final int p, final int q, final int r) {
-    return (((long) p) << 42) + (((long) q) << 21) + r;
+  protected long pack(final int p, final int q, final int r) {
+    return (((long) p) << (2 * BITS_PER_VALUE)) + (((long) q) << BITS_PER_VALUE) + r;
   }
 
   private boolean isP(final int p, final int q, final int r) {
@@ -45,7 +46,10 @@ public class A029899 implements Sequence {
 
   @Override
   public Z next() {
-    if (++mN > 0) {
+    if (++mN >= 1L << BITS_PER_VALUE) {
+      throw new UnsupportedOperationException();
+    }
+    if (mN > 0) {
       for (int q = 0; q <= mN; ++q) {
         for (int r = 0; r <= q; ++r) {
           if (isP(mN, q, r)) {

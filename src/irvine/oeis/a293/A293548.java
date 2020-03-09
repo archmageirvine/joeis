@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001221;
 
 /**
- * A293548 Expansion of Product_{k>=2} 1/(1 - x^k)^omega(k), where omega(k) is the number of distinct primes dividing k (A001221).
+ * A293548 Expansion of <code>Product_{k&gt;=2} 1/(1 - x^k)^omega(k)</code>, where <code>omega(k)</code> is the number of distinct primes dividing k <code>(A001221)</code>.
  * @author Georg Fischer
  */
 public class A293548 extends EulerTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A035969 Number of partitions of n into parts not of the form 17k, 17k+8 or 17k-8. Also number of partitions with at most 7 parts of size 1 and differences between parts at distance 7 are greater than 1.
+ * A035969 Number of partitions of n into parts not of the form <code>17k, 17k+8</code> or <code>17k-8</code>. Also number of partitions with at most 7 parts of size 1 and differences between parts at distance 7 are greater than 1.
  * @author Georg Fischer
  */
 public class A035969 extends EulerTransformSequence {

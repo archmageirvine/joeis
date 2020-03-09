@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029895.
+ * A029895 Number of partitions of <code>floor(n^2/2)</code> with at most n parts and maximal height <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A029895 implements Sequence {

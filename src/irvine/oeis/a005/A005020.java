@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005020.
+ * A005020 <code>(0,1)-matrices</code> by <code>1-width</code>.
  * @author Sean A. Irvine
  */
 public class A005020 extends A005019 {

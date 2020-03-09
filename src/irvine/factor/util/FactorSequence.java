@@ -733,4 +733,19 @@ public final class FactorSequence {
     }
     return true;
   }
+
+  /**
+   * Return the sum of prime factors with multiplicity.
+   * @return <code>sopfr(this)</code>
+   */
+  public Z sopfr() {
+    if (!isComplete()) {
+      throw new UnsupportedOperationException();
+    }
+    Z s = Z.ZERO;
+    for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
+      s = s.add(e.getKey().multiply(e.getValue().mExponent));
+    }
+    return s;
+  }
 }

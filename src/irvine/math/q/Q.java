@@ -204,6 +204,14 @@ public class Q implements Comparable<Q>, Serializable {
   }
 
   /**
+   * Round this number.
+   * @return round function
+   */
+  public Z round() {
+    return signum() >= 0 ? subtract(Q.HALF).ceiling() : add(Q.HALF).floor();
+  }
+
+  /**
    * Add a rational to this rational.
    *
    * @param n rational to add

@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 public class A216128 implements Sequence {
 
   private int mN = 1;
-  private final Z mBase = Z.valueOf(6);
+  private final Z mBase = Z.SIX;
   private final Z mMod = Z.valueOf(10000);
 
   @Override

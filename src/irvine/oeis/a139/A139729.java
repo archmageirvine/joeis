@@ -12,8 +12,8 @@ import irvine.oeis.Sequence;
 public class A139729 implements Sequence {
 
   private int mN = 0;
-  private final Z mBase = Z.valueOf(9);
-  private final Z mMod = Z.valueOf(4);
+  private final Z mBase = Z.NINE;
+  private final Z mMod = Z.FOUR;
 
   @Override
   public Z next() {

@@ -20,7 +20,7 @@ A000615 Threshold functions, related A000609?
 A000617 Number of NP-equivalence classes of threshold functions of n or fewer variables
 A000619 NP-equivalence classes of threshold functions of exactly n variable
 A000637 Simple dependency on A000638
-A000638 Intimate relation with A000637, counting transitive permutations
+A000638 Number of permutation groups of degree n
 A000663 Insufficient detail, pos. similar to A000662, cf. A000595, cycle index, have paper in German, depends A046858
 A000679 Subset of A000001, hard
 A000758 Insufficient detail, mailed author (he no longer knows what it is)

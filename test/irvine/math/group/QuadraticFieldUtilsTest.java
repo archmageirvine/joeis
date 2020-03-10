@@ -31,4 +31,8 @@ public class QuadraticFieldUtilsTest extends TestCase {
       // ok
     }
   }
+
+  public void testClassNumber() {
+    assertEquals(1, QuadraticFieldUtils.classNumber(Z.FIVE));
+  }
 }

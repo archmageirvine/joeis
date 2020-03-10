@@ -41,11 +41,7 @@ public class Euler {
     if (!fs.isComplete()) {
       throw new UnsupportedOperationException();
     }
-    Z phi = Z.ONE;
-    for (final Z t : fs.toZArray()) {
-      phi = phi.multiply(t.pow(fs.getExponent(t) - 1)).multiply(t.subtract(Z.ONE));
-    }
-    return phi;
+    return fs.phi();
   }
 
   private final int[] mPhi;

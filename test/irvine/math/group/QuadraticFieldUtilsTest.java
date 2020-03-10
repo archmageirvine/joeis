@@ -13,11 +13,13 @@ import junit.framework.TestCase;
 public class QuadraticFieldUtilsTest extends TestCase {
 
   public void testFundamentalUnit() {
-    assertEquals("[1, 0]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.FIVE)));
-    assertEquals(CR.HALF, QuadraticFieldUtils.fundamentalUnit(Z.valueOf(5)));
+    assertEquals("[1, 1]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.FIVE)));
+    assertEquals(CR.PHI, QuadraticFieldUtils.fundamentalUnit(Z.FIVE));
+    assertEquals(Z.NEG_ONE, QuadraticFieldUtils.fundamentalUnitNorm(Z.FIVE));
 
-    assertEquals("[2, 0]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.EIGHT)));
-    assertEquals("[3, 0]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.valueOf(13))));
+    assertEquals("[2, 1]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.EIGHT)));
+    assertEquals("[3, 1]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.valueOf(13))));
+    assertEquals("[8, 2]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.valueOf(17))));
 
     assertEquals("[46, 8]", Arrays.toString(QuadraticFieldUtils.fundamentalUnitPair(Z.valueOf(33))));
     assertEquals(CR.valueOf(33).sqrt().multiply(CR.FOUR).add(CR.valueOf(23)), QuadraticFieldUtils.fundamentalUnit(Z.valueOf(33)));

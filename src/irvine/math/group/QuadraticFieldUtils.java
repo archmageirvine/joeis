@@ -56,7 +56,7 @@ public final class QuadraticFieldUtils {
       // Test for odd period
       if (q.equals(t) && !Z.ZERO.equals(v2)) {
         final Z u = u1.multiply(u2).add(discriminant.multiply(v1).multiply(v2)).divide(q).abs();
-        final Z v = u1.multiply(v2).add(u2).multiply(v1).divide(q).abs();
+        final Z v = u1.multiply(v2).add(u2.multiply(v1)).divide(q).abs();
         return new Z[] {u, v};
       }
     }
@@ -72,5 +72,17 @@ public final class QuadraticFieldUtils {
   public static CR fundamentalUnit(final Z discriminant) {
     final Z[] uv = fundamentalUnitPair(discriminant);
     return CR.valueOf(discriminant).sqrt().multiply(uv[1]).add(CR.valueOf(uv[0])).divide(CR.TWO);
+  }
+
+  /**
+   * Compute the norm of the fundamental unit of <code>Q(sqrt(discriminant))</code> for a
+   * positive discriminant.
+   * @param discriminant the discriminant
+   * @return the fundamental unit
+   * @throws IllegalArgumentException if the discriminant is non-positive.
+   */
+  public static Z fundamentalUnitNorm(final Z discriminant) {
+    final Z[] uv = fundamentalUnitPair(discriminant);
+    return uv[0].square().subtract(uv[1].square().multiply(discriminant)).divide(4);
   }
 }

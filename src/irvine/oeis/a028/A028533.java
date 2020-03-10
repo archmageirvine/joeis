@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000700;
 
 /**
- * A028533 Character of extremal vertex operator algebra of rank 12.5.
+ * A028533 Character of extremal vertex operator algebra of rank 15/2.
  * @author Sean A. Irvine
  */
 public class A028533 extends A000700 {

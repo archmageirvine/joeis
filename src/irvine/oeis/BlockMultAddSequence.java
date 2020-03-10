@@ -81,7 +81,7 @@ public class BlockMultAddSequence implements Sequence {
     System.out.println("# irvine.oeis.BlockMultAddSequence " + blockLen + " \"" + oper + "\"");
     while ((a = seq.next()) != null && n < 1000) {
       ++n;
-      System.out.println(n + " " + a.toString());
+      System.out.println(n + " " + a);
     }
   }
 }

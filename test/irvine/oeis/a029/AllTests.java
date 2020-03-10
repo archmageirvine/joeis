@@ -893,8 +893,18 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A029922Test.class);
     suite.addTestSuite(A029923Test.class);
     suite.addTestSuite(A029924Test.class);
+    suite.addTestSuite(A029925Test.class);
+    suite.addTestSuite(A029926Test.class);
+    suite.addTestSuite(A029927Test.class);
+    suite.addTestSuite(A029928Test.class);
     suite.addTestSuite(A029929Test.class);
+    suite.addTestSuite(A029930Test.class);
+    suite.addTestSuite(A029931Test.class);
     suite.addTestSuite(A029932Test.class);
+    suite.addTestSuite(A029933Test.class);
+    suite.addTestSuite(A029934Test.class);
+    suite.addTestSuite(A029935Test.class);
+    suite.addTestSuite(A029936Test.class);
     suite.addTestSuite(A029941Test.class);
     return suite;
   }

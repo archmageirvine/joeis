@@ -318,7 +318,6 @@ A003649 Class number of real quadratic field Q(sqrt f), where f is the n-th squa
 A003650 Class number of real quadratic field with discriminant 4n+1
 A003651 Class number of real quadratic field with discriminant 4n, n == 2,3 (mod 4)
 A003652 Class number of real quadratic field with discriminant A003658(n)
-A003653 Discriminants of quadratic fields whose fundamental unit has norm -1
 A003655 Discriminants of real quadratic fields with narrow class number 1
 A003656 Discriminants of real quadratic fields with unique factorization
 A003660 Number of nontrivial disconnected complements of Steinhaus graphs on n nodes, have paper

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000902 E.g.f.: <code>(1/2)*(exp(2x + x^2) + 1)</code>.
+ * A000902 Expansion of e.g.f. <code>(1/2)*(exp(2*x + x^2) + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A000902 implements Sequence {

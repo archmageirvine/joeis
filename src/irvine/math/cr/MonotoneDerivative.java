@@ -64,7 +64,7 @@ class MonotoneDerivative extends UnaryCRFunction {
       if (leftDiff.signum() < 0 || rightDiff.signum() < 0) {
         throw new ArithmeticException();
       }
-      mMaxDeltaMsd = maxDeltaLeftMsd < maxDeltaRightMsd ? maxDeltaLeftMsd : maxDeltaRightMsd;
+      mMaxDeltaMsd = Math.min(maxDeltaLeftMsd, maxDeltaRightMsd);
     }
     
     @Override

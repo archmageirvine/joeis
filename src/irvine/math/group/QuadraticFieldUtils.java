@@ -1,8 +1,8 @@
 package irvine.math.group;
 
-import irvine.factor.prime.Fast;
 import irvine.math.cr.CR;
-import irvine.math.q.Q;
+import irvine.math.cr.ComputableReals;
+import irvine.math.r.Stats;
 import irvine.math.z.Z;
 
 /**
@@ -99,7 +99,11 @@ public final class QuadraticFieldUtils {
     return fundamentalUnit(discriminant).log();
   }
 
-  private static final CR CLASSNO_C1 = CR.valueOf(new Q(1, 10));
+  private static final int CLASSNO_TERMS = 20;
+
+  private static CR e1(final CR x) {
+    return ComputableReals.SINGLETON.ei(x.negate()).negate();
+  }
 
   /**
    * Compute the class number of <code>Q(sqrt(discriminant))</code> for a
@@ -111,37 +115,17 @@ public final class QuadraticFieldUtils {
    * solved using the current algorithm.
    */
   public static long classNumber(final Z discriminant) {
-    // Heuristic Algorithm 5.6.13 from Cohen, "A Course in Computational Algebraic Number Theory"
-    // todo deal to magic constants in this
-    // todo I've yet to see this work for any discriminant
-    final CR regulator = regulator(discriminant);
-    final CR d = CR.valueOf(discriminant);
-    final CR sqrtd = d.sqrt();
-    if (regulator.compareTo(sqrtd.sqrt()) < 0) {
-      //throw new UnsupportedOperationException("Sorry regulator was too small: " + regulator + " cf. " + sqrtd.sqrt());
-      return 0;
+    // Proposition 5.6.11 from Cohen, "A Course in Computational Algebraic Number Theory"
+    CR sum = CR.ZERO;
+    for (int k = 1; k < CLASSNO_TERMS; ++k) {
+      final double erfc = Stats.erfc(k * Math.sqrt(Math.PI / discriminant.doubleValue())); // todo CR
+      final CR crd = CR.valueOf(discriminant);
+      final CR a = crd.sqrt().multiply(CR.valueOf(erfc)).divide(CR.valueOf(k));
+      final CR b = e1(CR.PI.multiply(CR.valueOf(k * (long) k)).divide(crd));
+      final CR c = a.add(b);
+      sum = sum.add(c.multiply(CR.valueOf(discriminant.jacobi(Z.valueOf(k)))));
+      //System.out.println("sum is now " + sum + " a=" + a + " b=" + b);
     }
-    CR h1 = sqrtd.divide(regulator.multiply(2));
-    long h = 0;
-    long c = 0;
-    long k = 0;
-    final Fast primes = new Fast();
-    long p =1;
-    while (true) {
-      for (long j = 500 * k + 1; j <= 500 * (k + 1); ++j) {
-        p = primes.nextPrime(p);
-        h1 = h1.multiply(CR.valueOf(Q.ONE.subtract(new Q(discriminant.jacobi(Z.valueOf(p)), p))).inverse());
-      }
-      ++k;
-      final Z m = h1.round();
-      if (CR.valueOf(m).subtract(h1).compareTo(CLASSNO_C1) <= 0) {
-        if (m.longValue() != h) {
-          h = m.longValueExact();
-          c = 1;
-        } else if (++c > 5) {
-          return h;
-        }
-      }
-    }
+    return sum.divide(regulator(discriminant)).divide(CR.TWO).round().longValueExact();
   }
 }

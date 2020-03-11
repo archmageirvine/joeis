@@ -6,13 +6,33 @@ import irvine.util.Pair;
 
 /**
  * A046721.
- * @author Andrew Howroyd
- * @author Sean A. Irvine (Java port)
+ * @author Sean A. Irvine
  */
 public class A046721 extends A006657 {
 
   @Override
   protected Iterable<Pair<Integer, Z>> initialStates(final MeandersByComponents mbc) {
-    return mbc.semiMeanderInitialStates(null); // todo
+    return mbc.semiMeanderInitialStates(k -> true); // todo
+  }
+
+  private int mN = components() - 1;
+
+  @Override
+  public Z next() {
+    ++mN;
+    final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<Pair<Integer, Z>>() {
+      @Override
+      protected Z total(final Iterable<Pair<Pair<Integer, Z>, Z>> counts) {
+        Z count = Z.ZERO;
+        for (final Pair<Pair<Integer, Z>, Z> e : counts) {
+          if (e.left().left() == components()) {
+            count = count.add(e.right());
+          }
+        }
+        return count;
+      }
+    };
+    processor.setCreateStateMachine(k -> new MeandersByComponents(k, components()));
+    return processor.process(mN, initialStates(new MeandersByComponents(mN, components())));
   }
 }

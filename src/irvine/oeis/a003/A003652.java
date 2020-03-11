@@ -4,10 +4,10 @@ import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
 
 /**
- * A003646.
+ * A003652.
  * @author Sean A. Irvine
  */
-public class A003646 extends A003658 {
+public class A003652 extends A003658 {
 
   {
     super.next(); // skip 1

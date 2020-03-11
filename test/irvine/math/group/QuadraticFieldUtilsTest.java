@@ -34,5 +34,14 @@ public class QuadraticFieldUtilsTest extends TestCase {
 
   public void testClassNumber() {
     assertEquals(1, QuadraticFieldUtils.classNumber(Z.FIVE));
+    assertEquals(1, QuadraticFieldUtils.classNumber(Z.EIGHT));
+    assertEquals(2, QuadraticFieldUtils.classNumber(Z.valueOf(40)));
+  }
+
+  public void testRegulator() {
+    assertEquals(0.4812, QuadraticFieldUtils.regulator(Z.FIVE).doubleValue(), 1e-3);
+    assertEquals(0.8814, QuadraticFieldUtils.regulator(Z.EIGHT).doubleValue(), 1e-3);
+    assertEquals(1.317, QuadraticFieldUtils.regulator(Z.valueOf(12)).doubleValue(), 1e-3);
+    assertEquals(1.818, QuadraticFieldUtils.regulator(Z.valueOf(40)).doubleValue(), 1e-3);
   }
 }

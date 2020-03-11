@@ -21,7 +21,7 @@ public class A006657 extends A005316 {
   public static class MeandersByComponents extends MeanderProblem implements StateMachine<Pair<Integer, Z>> {
     private final Z mLimit;
     private final Integer mMaxComponents;
-    //private final int mRemainingBridges;
+    private final int mRemainingBridges;
 
     /**
      * Construct meanders by components.
@@ -30,29 +30,29 @@ public class A006657 extends A005316 {
      */
     public MeandersByComponents(final int remainingBridges, final Integer maxComponents) {
       super(remainingBridges);
-      //mRemainingBridges = remainingBridges;
+      mRemainingBridges = remainingBridges;
       mLimit = Z.ONE.shiftLeft(2 + (WORD_SHIFT * remainingBridges));
       mMaxComponents = remainingBridges == 0 || maxComponents == null ? null : maxComponents - 1;
     }
 
-//        /**
-//         * Initial states for semi-meander systems.
-//         */
-//        public Iterator<Pair<Integer, Z>> SemiMeanderInitialStates( Func<Integer, Boolean> windingPredicate )      {
-//            Z bits = Z.ONE;
-//            var state = pack( bits, bits );
-//            int winding = 0;
-//            while (state < m_Limit)
-//            {
-//                if ((winding & 1) == (m_RemainingBridges & 1) && (windingPredicate == null || windingPredicate( winding )))
-//                {
-//                    yield return Pair.Create( 0, state );
-//                }
-//                ++winding;
-//                bits = (bits << WORD_SHIFT) | Z.ONE;
-//                state = pack( bits, bits );
-//            }
-//        }
+    /**
+     * Initial states for semi-meander systems.
+     */
+    public Iterable<Pair<Integer, Z>> semiMeanderInitialStates(Func<Integer, Boolean> windingPredicate ) {
+      final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();
+      Z bits = Z.ONE;
+      Z state = pack(bits, bits);
+      int winding = 0;
+      while (state.compareTo(mLimit) < 0) {
+        if ((winding & 1) == (mRemainingBridges & 1) && (windingPredicate == null || windingPredicate.f(winding))) {
+          res.add(new Pair<>(0, state));
+        }
+        ++winding;
+        bits = bits.shiftLeft(WORD_SHIFT).or(Z.ONE);
+        state = pack(bits, bits);
+      }
+      return res;
+    }
 
     public Iterable<Pair<Integer, Z>> enumerate(final Pair<Integer, Z> state) {
       final int n = state.left();
@@ -68,7 +68,7 @@ public class A006657 extends A005316 {
 
   private int mN = components() * 2 - 2;
 
-  protected Iterable<Pair<Integer, Z>> initialStates() {
+  protected Iterable<Pair<Integer, Z>> initialStates(final MeandersByComponents mbc) {
     // Initial states for closed meander systems.
     return Collections.singleton(new Pair<>(0, mDefaultInitialState));
   }
@@ -93,6 +93,6 @@ public class A006657 extends A005316 {
       }
     };
     processor.setCreateStateMachine(k -> new MeandersByComponents(k, components()));
-    return processor.process(mN, initialStates());
+    return processor.process(mN, initialStates(new MeandersByComponents(mN, components())));
   }
 }

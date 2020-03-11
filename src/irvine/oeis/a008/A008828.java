@@ -34,7 +34,7 @@ public class A008828 extends A006657 {
         }
       };
       processor.setCreateStateMachine(k -> new MeandersByComponents(k, mN + 1));
-      processor.process(2 * mN, initialStates());
+      processor.process(2 * mN, initialStates(null));
     }
     return mTotals[mM];
   }

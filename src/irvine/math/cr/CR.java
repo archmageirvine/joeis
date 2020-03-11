@@ -174,7 +174,7 @@ public abstract class CR extends Number implements Comparable<CR> {
 
   static int boundLog2(final int n) {
     final int absN = Math.abs(n);
-    return (int) Math.ceil(Math.log((double) (absN + 1)) / Constants.LN2);
+    return (int) Math.ceil(Math.log(absN + 1) / Constants.LN2);
   }
   
   // Check that a precision is at least a factor of 8 away from

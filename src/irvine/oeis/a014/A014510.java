@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A014510 implements Sequence {
 
-  private static final CR SQRT_PI = CR.PI.sqrt();
+  private static final CR SQRT_PI = CR.SQRT_PI;
   private Z mF = Z.ONE;
   private int mN = -1;
 

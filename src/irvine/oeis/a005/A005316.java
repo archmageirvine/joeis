@@ -89,6 +89,24 @@ public class A005316 implements Sequence {
   protected static int WORD_SHIFT = 2;
   protected static int WORD_MASK = (1 << WORD_SHIFT) - 1;
 
+  /**
+   * Combines the states for the lower and upper halves into a single integer.
+   * Each half only uses even numbered bits, so they can be interleaved with a simple bit shift.
+   * @param lower lower half
+   * @param upper upper half
+   */
+  protected static Z pack(final Z lower, final Z upper) {
+    if (lower.equals(Z.ZERO) || upper.equals(Z.ZERO)) {
+      throw new IllegalStateException("invalid state");
+    }
+    return lower.or(upper.multiply2());
+  }
+
+  /*
+   * The initial state of the traversal.
+   */
+  protected static Z mDefaultInitialState = pack(Z.ONE, Z.ONE);
+
   protected interface Func<S, R> {
     R f(S x);
   }
@@ -197,19 +215,6 @@ public class A005316 implements Sequence {
     }
 
     /**
-     * Combines the states for the lower and upper halves into a single integer.
-     * Each half only uses even numbered bits, so they can be interleaved with a simple bit shift.
-     * @param lower lower half
-     * @param upper upper half
-     */
-    protected Z pack(final Z lower, final Z upper) {
-      if (lower.equals(Z.ZERO) || upper.equals(Z.ZERO)) {
-        throw new IllegalStateException("invalid state");
-      }
-      return lower.or(upper.multiply2());
-    }
-
-    /**
      * Variation on pack that may swap lower and upper words. This reduces the total
      * number of states by about half, but is not safe in those cases where the distinction
      * between upper and lower is important. (This is purely a questionable optimisation
@@ -235,12 +240,6 @@ public class A005316 implements Sequence {
       }
       return v.and(mask);
     }
-
-
-    /*
-     * The initial state of the traversal.
-     */
-    protected Z mDefaultInitialState = pack(Z.ONE, Z.ONE);
 
 
 //    /**

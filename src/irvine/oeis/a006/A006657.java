@@ -18,23 +18,21 @@ public class A006657 extends A005316 {
    * Processing component to count meander systems or semi-meander systems by number of component.
    * A006657, A006658, A008828, A046721, A046726
    */
-  protected static class MeandersByComponents extends MeanderProblem implements StateMachine<Pair<Integer, Z>> {
+  public static class MeandersByComponents extends MeanderProblem implements StateMachine<Pair<Integer, Z>> {
     private final Z mLimit;
     private final Integer mMaxComponents;
     //private final int mRemainingBridges;
 
-    MeandersByComponents(final int remainingBridges, final Integer maxComponents) {
+    /**
+     * Construct meanders by components.
+     * @param remainingBridges remaining bridges
+     * @param maxComponents maximum number of components
+     */
+    public MeandersByComponents(final int remainingBridges, final Integer maxComponents) {
       super(remainingBridges);
       //mRemainingBridges = remainingBridges;
       mLimit = Z.ONE.shiftLeft(2 + (WORD_SHIFT * remainingBridges));
       mMaxComponents = remainingBridges == 0 || maxComponents == null ? null : maxComponents - 1;
-    }
-
-    /**
-     * Initial states for closed meander systems.
-     */
-    public Iterable<Pair<Integer, Z>> closedMeanderInitialStates() {
-      return Collections.singleton(new Pair<>(0, mDefaultInitialState));
     }
 
 //        /**
@@ -70,6 +68,11 @@ public class A006657 extends A005316 {
 
   private int mN = components() * 2 - 2;
 
+  protected Iterable<Pair<Integer, Z>> initialStates() {
+    // Initial states for closed meander systems.
+    return Collections.singleton(new Pair<>(0, mDefaultInitialState));
+  }
+
   protected int components() {
     return 2;
   }
@@ -90,6 +93,6 @@ public class A006657 extends A005316 {
       }
     };
     processor.setCreateStateMachine(k -> new MeandersByComponents(k, components()));
-    return processor.process(mN, new MeandersByComponents(mN, components()).closedMeanderInitialStates());
+    return processor.process(mN, initialStates());
   }
 }

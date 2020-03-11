@@ -406,8 +406,6 @@ A005306 Representation degeneracies for Ramond strings
 A005307 Bosonic string states, likely similar to A005308
 A005310 Fermionic string states
 A005311 Solution to Berlekamp's switching game (or lightbulb game) on an n X n board, have paper, lot of work for few terms
-A005315 Simple subset of A005316
-A005316 Meandric numbers: number of ways a river can cross a road n times
 A005334 Number of 2-colored graphs, have close attempt and papers (see blog2016.tex)
 A005335 Simple dependency A005334
 A005336 Simple dependency A005334
@@ -592,8 +590,6 @@ A006652 From the graph reconstruction problem, have paper
 A006653 From the graph reconstruction problem, have paper
 A006654 From the graph reconstruction problem, have paper
 A006655 From the graph reconstruction problem, have paper
-A006657 Closed meanders with 2 components and 2n bridges
-A006658 Closed meanders with 3 components and 2n bridges
 A006660 Number of meanders in which first bridge is 3
 A006661 Number of meanders in which first bridge is 5
 A006662 Number of meanders in which first bridge is 7
@@ -821,7 +817,6 @@ A008562 Denominators of strong coupling expansion, SU(3) lattice gauge theory
 A008664 Theta series of direct sum of f.c.c. and b.c.c. lattices, cf. A008663, a008664, couldn't get this to work
 A008741 Putative number of uniform tight n-dimensional sphere packings, hard
 A008745 Year of birth of n-th President of U.S.A.
-A008828 Triangle read by rows: T(n,k) = number of closed meander systems of order n with k<=n components
 A008840 Number of monotone self-dual boolean functions of n variables that are inequivalent under the symmetric group
 A008841 Number of self-dual boolean functions of n variables with transitive symmetry group
 A008842 Number of inequivalent self-dual boolean functions of n variables with transitive symmetry group

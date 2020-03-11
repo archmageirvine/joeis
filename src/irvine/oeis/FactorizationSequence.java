@@ -69,12 +69,10 @@ public class FactorizationSequence implements Sequence, Closeable {
     }
   }
 
-
   @Override
   public void close() throws IOException {
     mInput.close();
   }
-
 
   @Override
   public Z next() {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007434;
 
 /**
- * A115000.
+ * A115000 <code>a(n) = J_2(n) / 24</code>.
  * @author Sean A. Irvine
  */
 public class A115000 extends A007434 {

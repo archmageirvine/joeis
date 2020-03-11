@@ -1,8 +1,8 @@
 package irvine.oeis.a005;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A005316.
+ * A005316 Meandric numbers: number of ways a river can cross a road n times.
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */
@@ -56,11 +56,11 @@ public class A005316 implements Sequence {
 
         Sample usage:
         
-        public Z OpenMeanderCount( int length )
+        public Z OpenMeanderCount( int length)
         {
             int nn = length - 1;
-            var processor = new SimpleProcessor<Z>() { CreateStateMachine = k => new BasicMeanderProblem( k ) };
-            return processor.Process( nn, new BasicMeanderProblem( nn ).OpenMeanderInitialStates );
+            var processor = new SimpleProcessor<Z>() { CreateStateMachine = k => new BasicMeanderProblem( k) };
+            return processor.Process( nn, new BasicMeanderProblem( nn).OpenMeanderInitialStates);
         }
 
         ArchConfiguration which is un-related and independent of the other classes is a set of utilities for working
@@ -105,7 +105,7 @@ public class A005316 implements Sequence {
     NONE, NEW_ARCH, JOIN_ARCH, MOVE_UP, MOVE_DOWN, CLOSE_LOOP
   }
 
-  protected abstract class MeanderProblem {
+  protected static abstract class MeanderProblem {
     protected final int mLayerIndex;
 
     /**
@@ -224,7 +224,7 @@ public class A005316 implements Sequence {
     /**
      * Extracts the lower arch configuration from an encoding.
      * The upper arch configuration can the be obtained by subtraction.
-     * This undoes the encoding of Pack.
+     * This undoes the encoding of pack.
      */
     protected Z extractLower(Z v) {
       Z mask = Z.valueOf(0x5555555555555555L);
@@ -295,23 +295,7 @@ public class A005316 implements Sequence {
      * Initial states to enumerate open meanders.
      */
     public Iterable<Z> openMeanderInitialStates() {
-      return () -> new Iterator<Z>() {
-        boolean mFirst = true;
-
-        @Override
-        public boolean hasNext() {
-          if (mFirst) {
-            mFirst = false;
-            return true;
-          }
-          return false;
-        }
-
-        @Override
-        public Z next() {
-          return mIsOdd ? pack(((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE).shiftLeft(WORD_SHIFT)), Z.ONE) : pack((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE), (Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE));
-        }
-      };
+      return Collections.singleton(mIsOdd ? pack(((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE).shiftLeft(WORD_SHIFT)), Z.ONE) : pack((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE), (Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE)));
     }
 
 //    /**
@@ -356,7 +340,7 @@ public class A005316 implements Sequence {
      */
     public Iterable<Z> enumerate(final Z state) {
       final ArrayList<Z> list = new ArrayList<>();
-      for (final Z next : enumeratePossibilities(state, (action, lower, upper) -> pack(lower, upper) )) {
+      for (final Z next : enumeratePossibilities(state, (action, lower, upper) -> pack(lower, upper))) {
         if (mLimit.signum() < 0 || next.compareTo(mLimit) < 0) {
           list.add(next);
         }
@@ -382,7 +366,7 @@ public class A005316 implements Sequence {
 //        private final int m_Remaining;
 //        private final int m_Sign;
 //
-//        public ParallelRoadsMeanderProblem( int remaining, int maxRoads, boolean isPath, boolean isOdd ) : base( remaining )
+//        public ParallelRoadsMeanderProblem( int remaining, int maxRoads, boolean isPath, boolean isOdd) : base( remaining)
 //        {
 //            m_Limit = Z.ONE << (2 + (WORD_SHIFT * (remaining + 1)));
 //            m_Remaining = remaining;
@@ -396,20 +380,20 @@ public class A005316 implements Sequence {
 //            get
 //            {
 //                return Pair.Create( m_IsPath ? -1 : 1,
-//              m_Remaining % 2 == 0 ? Pack( (Z.ONE << WORD_SHIFT) | Z.ONE, (Z.ONE << WORD_SHIFT) | Z.ONE )
-//              : Pack( Z.ONE, ((Z.ONE << WORD_SHIFT) | Z.ONE) << WORD_SHIFT ) );
+//              m_Remaining % 2 == 0 ? Pack( (Z.ONE << WORD_SHIFT) | Z.ONE, (Z.ONE << WORD_SHIFT) | Z.ONE)
+//              : Pack( Z.ONE, ((Z.ONE << WORD_SHIFT) | Z.ONE) << WORD_SHIFT));
 //            }
 //        }
 //
-//        public Iterator<Pair<int, Z>> Enumerate( Pair<int, Z> state )
+//        public Iterator<Pair<int, Z>> Enumerate( Pair<int, Z> state)
 //        {
 //            return EnumeratePossibilities( state.Item2,
-//                    ( action, lower, upper ) => Pair.Create( state.Item1 < 0 && upper.equals(Z.ONE) ? -state.Item1 : state.Item1, Pack( lower, upper ) ) )
-//                .Where( next => m_Limit.Sign < 0 || next.Item2 < m_Limit )
-//                .SelectMany( Fork );
+//                    ( action, lower, upper) => Pair.Create( state.Item1 < 0 && upper.equals(Z.ONE) ? -state.Item1 : state.Item1, Pack( lower, upper)))
+//                .Where( next => m_Limit.Sign < 0 || next.Item2 < m_Limit)
+//                .SelectMany( Fork);
 //        }
 //
-//        private Iterator<Pair<int, Z>> Fork( Pair<int, Z> state )
+//        private Iterator<Pair<int, Z>> Fork( Pair<int, Z> state)
 //        {
 //            // There is always the option to stay on the current road.
 //            yield return state;
@@ -417,20 +401,20 @@ public class A005316 implements Sequence {
 //            // If we are not yet at the limit, also look into the possibility of moving to the next.
 //            if (state.Item1 < m_MaxRoads && -state.Item1 < m_MaxRoads)
 //            {
-//                var lower = ExtractLower( state.Item2 );
+//                var lower = ExtractLower( state.Item2);
 //                var upper = (state.Item2 - lower) >> 1;
 //                boolean canAdvance = (state.Item1 & 1) == m_Sign ? lower.equals(Z.ONE)
 //                                : state.Item1 < 0 ? upper == ((1 << WORD_SHIFT) | 1) : upper.equals(Z.ONE);
 //                if (canAdvance)
 //                {
-//                    yield return Pair.Create( state.Item1 + (state.Item1 < 0 ? -1 : 1), state.Item2 );
+//                    yield return Pair.Create( state.Item1 + (state.Item1 < 0 ? -1 : 1), state.Item2);
 //                }
 //            }
 //        }
 //
-//        protected override Action ClosingAction( Z lower, Z upper )
+//        protected override Action ClosingAction( Z lower, Z upper)
 //        {
-//            return base.ClosingAction( lower, upper ) == Action.JoinArch ? Action.JoinArch : Action.None;
+//            return base.ClosingAction( lower, upper) == Action.JoinArch ? Action.JoinArch : Action.None;
 //        }
 //    }
 
@@ -476,7 +460,7 @@ public class A005316 implements Sequence {
       }
       int nn = bridges;
       while (nn > 0) {
-        counts = accumulate(mCreateStateMachine.f(--nn), counts);
+        counts = accumulate(getCreateStateMachine().f(--nn), counts);
       }
       return total(counts);
     }
@@ -523,7 +507,7 @@ public class A005316 implements Sequence {
 //     * Ideally we want to use as much memory as possible to reduce the number of times the data needs to be repartitioned.
 //     * The author has not investigated best practice heuristics.
 //     * For better performance we really want to work as much as possible with 64-bit unsigned ints.
-//     * (Code for this is really a lot of ugly duplication so is not included here: C# generics does not readily accomodate this.)
+//     * (Code for this is really a lot of ugly duplication so is not included here: C# generics does not readily accommodate this.)
 //     * This method was successfully used to compute a003516(55) in about 24 hours on a single core, requiring the processing of nearly 400 billion state transitions.
 //     * </remarks>
 //    class DivideAndConquerProcessor : SimpleProcessor<Z>
@@ -546,23 +530,23 @@ public class A005316 implements Sequence {
 //        /**
 //         * Main function. Processes initial states down to final count. 
 //         */
-//        public override Z Process( int bridges, Iterator<Z> initialStates )
+//        public override Z Process( int bridges, Iterator<Z> initialStates)
 //        {
-//            var counts = initialStates.Select( state => new Pair<Z, Z>( state, Z.ONE ) ).ToArray();
-//            return ProcessCluster( new[] { counts }.ToList(), bridges );
+//            var counts = initialStates.Select( state => new Pair<Z, Z>( state, Z.ONE)).ToArray();
+//            return ProcessCluster( new[] { counts }.ToList(), bridges);
 //        }
 //
 //        /**
 //         * Called recursively to process a partitioned work-load.
 //         */
-//        private Z ProcessCluster( List<Pair<Z, Z>[]> work, int remainingBridges )
+//        private Z ProcessCluster( List<Pair<Z, Z>[]> work, int remainingBridges)
 //        {
-//            LogProgress( "Begin Cluster at {0}; items={1}", remainingBridges, work.Count );
+//            LogProgress( "Begin Cluster at {0}; items={1}", remainingBridges, work.Count);
 //
 //            Z total = Z.ZERO;
 //            for (int workIndex = 0; workIndex < work.Count; ++workIndex)
 //            {
-//                LogProgress( "Layer {0}: Processing List {1} of {2}, items={3}", remainingBridges, workIndex + 1, work.Count, work[ workIndex ].length );
+//                LogProgress( "Layer {0}: Processing List {1} of {2}, items={3}", remainingBridges, workIndex + 1, work.Count, work[ workIndex ].length);
 //
 //                var counts = work[ workIndex ];
 //                work[ workIndex ] = null;
@@ -570,21 +554,21 @@ public class A005316 implements Sequence {
 //                int b = remainingBridges;
 //                while (b > 0 && counts.length < SplitLimit)
 //                {
-//                    counts = Accumulate( CreateStateMachine( --b ), counts );
+//                    counts = Accumulate( CreateStateMachine( --b), counts);
 //                }
 //                if (b == 0)
 //                {
-//                    total += Total( counts );
+//                    total += Total( counts);
 //                }
 //                else
 //                {
-//                    var partitions = BuildCluster( counts, RepartionBucketSize );
+//                    var partitions = BuildCluster( counts, RepartionBucketSize);
 //                    GC.Collect();
 //                    counts = null;
-//                    total += ProcessCluster( partitions, b );
+//                    total += ProcessCluster( partitions, b);
 //                }
 //            }
-//            LogProgress( "End Cluster at {0}", remainingBridges );
+//            LogProgress( "End Cluster at {0}", remainingBridges);
 //            return total;
 //        }
 //
@@ -592,11 +576,11 @@ public class A005316 implements Sequence {
 //         * Given a source list of state-value pairs, partitions the list into multiple buckets for separate processing.
 //         * State-value pairs are represented by key-value pairs of Z meander states and NumberType.
 //         */
-//        private List<Pair<Z, NumberType>[]> BuildCluster<NumberType>( Iterator<Pair<Z, NumberType>> source, int maxSize )
+//        private List<Pair<Z, NumberType>[]> BuildCluster<NumberType>( Iterator<Pair<Z, NumberType>> source, int maxSize)
 //        {
 //            var current = new List<List<Pair<Z, NumberType>>>();
 //            var output = new List<Pair<Z, NumberType>[]>();
-//            current.Add( source.ToList() );
+//            current.Add( source.ToList());
 //            for (int level = 4; current.Count > 0; ++level)
 //            {
 //                var stillToBig = new List<List<Pair<Z, NumberType>>>();
@@ -608,14 +592,14 @@ public class A005316 implements Sequence {
 //                    var index = new Dictionary<int, List<Pair<Z, NumberType>>>();
 //                    foreach (var kv in stateDictionary)
 //                    {
-//                        var cluster = MeanderState.Cluster( kv.Key, level );
+//                        var cluster = MeanderState.Cluster( kv.Key, level);
 //                        List<Pair<Z, NumberType>> inner;
-//                        if (!index.TryGetValue( cluster, out inner ))
+//                        if (!index.TryGetValue( cluster, out inner))
 //                        {
 //                            inner = new List<Pair<Z, NumberType>>();
-//                            index.Add( cluster, inner );
+//                            index.Add( cluster, inner);
 //                        }
-//                        inner.Add( kv );
+//                        inner.Add( kv);
 //                    }
 //                    stateDictionary = null;
 //                    // now sort through each list, putting onto either output list or stillToBig as appropriate.
@@ -624,11 +608,11 @@ public class A005316 implements Sequence {
 //                    {
 //                        if (component.Count > maxSize)
 //                        {
-//                            stillToBig.Add( component );
+//                            stillToBig.Add( component);
 //                        }
 //                        else if (component.Count > maxSize / 2)
 //                        {
-//                            output.Add( component.ToArray() );
+//                            output.Add( component.ToArray());
 //                        }
 //                        else if (small == null)
 //                        {
@@ -636,17 +620,17 @@ public class A005316 implements Sequence {
 //                        }
 //                        else
 //                        {
-//                            small.AddRange( component );
+//                            small.AddRange( component);
 //                            if (small.Count > maxSize / 2)
 //                            {
-//                                output.Add( small.ToArray() );
+//                                output.Add( small.ToArray());
 //                                small = null;
 //                            }
 //                        }
 //                    }
 //                    if (small != null)
 //                    {
-//                        output.Add( small.ToArray() );
+//                        output.Add( small.ToArray());
 //                        small = null;
 //                    }
 //                }
@@ -655,340 +639,6 @@ public class A005316 implements Sequence {
 //            return output;
 //        }
 //    }
-
-  /**
-   * Set of utility methods for exploring arch configurations and meanders.
-   * These are mostly suitable for small n, but have the advantage that the actual meander is obtainable.
-   *
-   * Both arch configurations and meanders are permutations with a length that is even.
-   * They are represented using integer arrays of their permutation in an obvious manner.
-   * This class although self contained does not include general methods for working with permutations.
-   */
-  public static class ArchConfiguration {
-
-    /**
-     * The number of arch configurations. (Catalan numbers) (A000108)
-     */
-    public static int archConfigurationCount(int n) {
-      int c = 0;
-      for (final int[] a : enumerateArches(n, arch -> arch)) {
-        ++c;
-      }
-      return c;
-    }
-
-    /**
-     * The number of closed meanders. (A005315)
-     */
-    public static int closedMeanderCount(final int n) {
-      int c = 0;
-      for (final int cnt : enumerateArches(n, arch -> archMeanderCount(arch))) {
-        c += cnt;
-      }
-      return c;
-    }
-
-//    /**
-//     * The number of open meanders with an even number of bridges. (A077054)
-//     */
-//    public static int OpenMeanderCount(int n) {
-//      return EnumerateArches(n, arch = > ExteriorArchCount(arch) * ArchMeanderCount(arch) ).Sum();
-//    }
-//
-//    /**
-//     * The number of symmetric closed meanders. (A060206)
-//     */
-//    public static int SymmetricClosedMeanderCount(int n) {
-//      int nn = 4 * n - 2;
-//      return EnumerateArches(nn / 2, arch = > arch )
-//                    .Where(arch = > IsSymmetricArch(arch, k = > nn - k - 1 ) )
-//                    .Count();
-//    }
-//
-//    /**
-//     * The number of symmetric open meanders. (A223096)
-//     */
-//    public static int SymmetricOpenMeanderCount(int n) {
-//      int nn = 2 * n + 2;
-//      return EnumerateArches(nn / 2, arch = > arch )
-//                    .Where(arch = > IsSymmetricArch(arch, k = > k == 0 ? 0 : nn - k ) )
-//                    .Count() / 2;
-//    }
-
-    /**
-     * The number of arch configurations which have reflective symmetry. (gives A001405)
-     */
-    public static int reflectiveArchConfigurationCount(final int n) {
-      int c = 0;
-      for (final int[] arch1 : enumerateArches(n, arch -> arch )) {
-        if (isReflectiveArch(arch1)) {
-          ++c;
-        }
-      }
-      return c;
-    }
-
-//    /**
-//     * The number of isomorphic arch configurations, where equivalence is defined on rotation. (gives A002995)
-//     */
-//    public static int CyclicallyDistinctArchConfigurationCount(int n) {
-//      return ArchConfiguratonsByCyclicOrder(n).Select(kv -> kv.Value ).Sum();
-//    }
-
-//    /**
-//     * Groups arch configurations according to cyclic order.
-//     */
-//    public static TreeMap<Integer, Integer> ArchConfiguratonsByCyclicOrder(int n) {
-//      var results = EnumerateArches(n, arch -> CyclicOrder(arch) ).GroupBy(k -> k ).ToDictionary(g -> g.Key, g -> g.Count() / g.Key );
-//      return new TreeMap<>(results);
-//    }
-
-//    /**
-//     * Groups arch configurations according to the number of meanders they form. (no obvious use for this break down).
-//     */
-//    public static TreeMap<Integer, Integer> ArchConfiguratonsByMeanders(int n) {
-//      var results = EnumerateArches(n, arch -> ArchMeanderCount(arch) ) .GroupBy(k -> k ).ToDictionary(g -> g.Key, g ->g.Count() );
-//      return new TreeMap<>(results);
-//    }
-
-    /**
-     * Determines the number of meanders an arch can form.
-     */
-    public static int archMeanderCount(final int[] arch) {
-      int c = 0;
-      for (final int[] arch1 : enumerateArches(arch.length / 2, arch2 -> arch2)) {
-        if (isMeander(arch, arch1)) {
-          ++c;
-        }
-      }
-      return c;
-    }
-
-    /**
-     * Enumerates all closed meanders with 2n bridges.
-     */
-    public static <T> Iterator<T> enumerateClosedMeanders(final int n, final Func2<int[],int[],T> capture) {
-      final ArrayList<T> q = new ArrayList<>();
-      for (final int[] arch1 : enumerateArches(n, arch1 -> arch1)) {
-        for (final int[] arch2 : enumerateArches(n, arch2 -> arch2)) {
-          if (isMeander(arch1, arch2)) {
-            q.add(capture.f(arch1, arch2));
-          }
-        }
-      }
-      return q.iterator();
-    }
-
-    /**
-     * Tests if two arch configurations come together to make a meander.
-     */
-    public static boolean isMeander(final int[] arch1, final int[] arch2) {
-      int n = arch1.length;
-      int p = 0;
-      for (int i = 0; i < n; i += 2) {
-        if (p == 0 && i > 0) {
-          return false;
-        }
-        p = arch2[arch1[p]];
-      }
-      if (p != 0) {
-        throw new IllegalStateException("internal error");
-      }
-      return true;
-    }
-
-    /**
-     * Converts lower and upper arch configurations into a meander permutation. Also works with meander systems.
-     */
-    public static int[] archesToMeander(final int[] arch1, final int[] arch2) {
-      int n = arch1.length;
-      int[] meander = new int[n];
-      for (int i = 0; i < n; i += 2) {
-        meander[i] = arch1[i];
-        meander[i + 1] = arch2[i + 1];
-      }
-      return meander;
-    }
-
-    /**
-     * Converts a meander into a pair of arches. This is the converse of ArchesToMeander.
-     */
-    public static Pair<int[], int[]> meanderToArches(final int[] meander) {
-      int n = meander.length;
-      int[] arch1 = new int[n];
-      int[] arch2 = new int[n];
-      for (int i = 0; i < n; i += 2) {
-        int q = meander[i];
-        arch1[i] = q;
-        arch1[q] = i;
-        int j = i + 1;
-        q = meander[j];
-        arch2[j] = q;
-        arch2[q] = j;
-      }
-
-      return new Pair<>(arch1, arch2);
-    }
-
-    /**
-     * Returns the number of exterior arches in an arch configuration.
-     */
-    public static int exteriorArchCount(final int[] arch) {
-      int count = 0;
-      for (int p = 0; p < arch.length; p = arch[p] + 1) {
-        ++count;
-      }
-      return count;
-    }
-
-    /**
-     * Tests if an arch configuration can be combined with it-self to make a meander.
-     */
-    public static boolean isSymmetricArch(int[] arch, Func<Integer, Integer> reflection) {
-      int n = arch.length;
-      int p = 0;
-      for (int i = 0; i < n; i += 2) {
-        if (p == 0 && i > 0) {
-          return false;
-        }
-        p = arch[p];
-        p = reflection.f(arch[reflection.f(p)]);
-      }
-      if (p != 0) {
-        throw new IllegalStateException("internal error");
-      }
-      return true;
-    }
-
-    /**
-     * Tests if an arch configuration when reflected gives it-self.
-     */
-    public static boolean isReflectiveArch(int[] arch) {
-      int nm1 = arch.length - 1;
-      for (int k = 0; k < arch.length; ++k) {
-        if (nm1 - arch[k] != arch[nm1 - k]) {
-          return false;
-        }
-      }
-      return true;
-    }
-
-    /**
-     * Determines the minimum amount of rotation required to bring an arch configuration back to it-self.
-     */
-    public static int cyclicOrder(int[] arch) {
-      for (int i = 1; i < arch.length; ++i) {
-        if (cyclicSelfCompare(arch, i) == 0) {
-          return i;
-        }
-      }
-      return arch.length;
-    }
-
-
-    /**
-     * Compares an arch configuration with a cyclic shift of itself.
-     */
-    public static int cyclicSelfCompare(int[] arch, int shift) {
-      int d = 0;
-      for (int i = 0; d == 0 && i < arch.length; ++i) {
-        final int ai = arch[i];
-        d = Integer.compare(arch[(i >= shift ? i : arch.length + i) - shift], ((ai >= shift ? ai : arch.length + ai) - shift));
-      }
-      return d;
-    }
-
-    /**
-     * Tests if an array of values represents a valid arch configuration permutation.
-     */
-    public static boolean isArchConfiguration(int[] arch) {
-      for (int i = 0; i < arch.length; ++i) {
-        int t = arch[i];
-        if (t < 0 || t >= arch.length || t == i || arch[t] != i) {
-          return false;
-        }
-      }
-      return true;
-    }
-
-    /**
-     * Enumerates all arch configurations with 2n points.
-     * This method non-recursively enumerates permutations which are arch configurations. (Count gives Catalan numbers)
-     * Use this in preference to low level InitialArchConfiguration / NextArchConfiguration methods.
-     */
-    public static <T> Iterable<T> enumerateArches(int n, Func<int[],T> capture ) {
-      return () -> new Iterator<T>() {
-        int[] perm = initialArchConfiguration(n);
-
-        @Override
-        public boolean hasNext() {
-          return nextArchConfiguration(perm);
-        }
-
-        @Override
-        public T next() {
-          return capture.f(perm);
-        }
-      };
-    }
-
-    /**
-     * Gets an initial arch configuration permutation that can be used with NextArchConfiguration to get the full sequence.
-     */
-    public static int[] initialArchConfiguration(final int n) {
-      final int[] perm = new int[2 * n];
-      for (int i = 0; i < perm.length; ++i) {
-        perm[i] = perm.length - 1 - i;
-      }
-      return perm;
-    }
-
-    /**
-     * Given an arch configuration, updates it to the 'next' one. No state is required to perform this update.
-     * Note that this performs a destructive update for efficiency.
-     * Arch configurations are ordered with the deepest possible nesting first. '((()))' -> '(()())' ... -> '()()()'.
-     */
-    public static boolean nextArchConfiguration(final int[] perm) {
-      int pushed = 0;
-      int stack = -1;
-      int idx = perm.length;
-      boolean backtracking = true;
-      while (backtracking && idx != 0) {
-        --idx;
-        if (idx == stack) {
-          stack = perm[idx];
-          --pushed;
-          backtracking = pushed == 0;
-        } else {
-          perm[perm[idx]] = stack;
-          stack = perm[idx];
-          ++pushed;
-        }
-      }
-      if (pushed > 0) {
-        perm[idx] = stack;
-        stack = perm[stack];
-        perm[perm[idx]] = idx;
-        --pushed;
-        ++idx;
-      }
-
-      do {
-        if (idx < perm.length - pushed) {
-          perm[idx] = stack;
-          stack = idx;
-          ++pushed;
-        } else {
-          perm[idx] = stack;
-          stack = perm[stack];
-          perm[perm[idx]] = idx;
-          --pushed;
-        }
-      } while (++idx < perm.length);
-
-      return !backtracking;
-    }
-  }
 
   private int mN = -2;
 

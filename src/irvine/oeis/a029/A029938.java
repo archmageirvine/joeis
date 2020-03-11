@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A029938.
+ * A029938 <code>(p-5)(p-7)/24</code>, where <code>p=prime(n)</code>.
  * @author Sean A. Irvine
  */
 public class A029938 extends A000040 {

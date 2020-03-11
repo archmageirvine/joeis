@@ -1,14 +1,14 @@
 package irvine.oeis.a006;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.Collections;
 
 import irvine.math.z.Z;
 import irvine.oeis.a005.A005316;
 import irvine.util.Pair;
 
 /**
- * A006657.
+ * A006657 Closed meanders with 2 components and <code>2n</code> bridges.
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */
@@ -16,9 +16,9 @@ public class A006657 extends A005316 {
 
   /**
    * Processing component to count meander systems or semi-meander systems by number of component.
-   * A006657, A008828, A046721, A046726
+   * A006657, A006658, A008828, A046721, A046726
    */
-  class MeandersByComponents extends MeanderProblem implements StateMachine<Pair<Integer, Z>> {
+  protected static class MeandersByComponents extends MeanderProblem implements StateMachine<Pair<Integer, Z>> {
     private final Z mLimit;
     private final Integer mMaxComponents;
     //private final int mRemainingBridges;
@@ -30,31 +30,11 @@ public class A006657 extends A005316 {
       mMaxComponents = remainingBridges == 0 || maxComponents == null ? null : maxComponents - 1;
     }
 
-    MeandersByComponents(final int remainingBridges) {
-      this(remainingBridges, null);
-    }
-
     /**
      * Initial states for closed meander systems.
      */
     public Iterable<Pair<Integer, Z>> closedMeanderInitialStates() {
-      return () -> new Iterator<Pair<Integer, Z>>() {
-        boolean mFirst = true;
-
-        @Override
-        public boolean hasNext() {
-          if (mFirst) {
-            mFirst = false;
-            return true;
-          }
-          return false;
-        }
-
-        @Override
-        public Pair<Integer, Z> next() {
-          return new Pair<>(0, mDefaultInitialState);
-        }
-      };
+      return Collections.singleton(new Pair<>(0, mDefaultInitialState));
     }
 
 //        /**
@@ -77,7 +57,7 @@ public class A006657 extends A005316 {
 //        }
 
     public Iterable<Pair<Integer, Z>> enumerate(final Pair<Integer, Z> state) {
-      int n = state.left();
+      final int n = state.left();
       final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();
       for (final Pair<Integer, Z> next : enumeratePossibilities(state.right(), (action, lower, upper) -> new Pair<>(action == Action.CLOSE_LOOP ? n + 1 : n, packSymmetrical(lower, upper)))) {
         if ((mLimit.signum() < 0 || next.right().compareTo(mLimit) < 0) && (mMaxComponents == null || state.left() <= mMaxComponents)) {
@@ -88,13 +68,28 @@ public class A006657 extends A005316 {
     }
   }
 
-  private int mN = -4;
+  private int mN = components() * 2 - 2;
+
+  protected int components() {
+    return 2;
+  }
 
   @Override
   public Z next() {
     mN += 2;
-    final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<>();
-    processor.setCreateStateMachine(k -> new MeandersByComponents(k, 2));
-    return processor.process(mN, new MeandersByComponents(mN, 2).closedMeanderInitialStates());
+    final SimpleProcessor<Pair<Integer, Z>> processor = new SimpleProcessor<Pair<Integer, Z>>() {
+      @Override
+      protected Z total(final Iterable<Pair<Pair<Integer, Z>, Z>> counts) {
+        Z count = Z.ZERO;
+        for (final Pair<Pair<Integer, Z>, Z> e : counts) {
+          if (e.left().left() == components()) {
+            count = count.add(e.right());
+          }
+        }
+        return count;
+      }
+    };
+    processor.setCreateStateMachine(k -> new MeandersByComponents(k, components()));
+    return processor.process(mN, new MeandersByComponents(mN, components()).closedMeanderInitialStates());
   }
 }

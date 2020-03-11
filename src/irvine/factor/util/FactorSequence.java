@@ -473,8 +473,7 @@ public final class FactorSequence {
   }
 
   /**
-   * Return the sum of the divisors squared.
-   *
+   * Return the sum of the divisors raised to the specified power.
    * @param degree exponent of each divisor
    * @return sum of the divisors to the specified degree
    * @exception UnsupportedOperationException if factor sequence is not completely
@@ -483,8 +482,7 @@ public final class FactorSequence {
   public Z sigma(final int degree) {
     if (degree == 0) {
       return sigma0();
-    }
-    if (degree == 1) {
+    } else if (degree == 1) {
       return sigma();
     }
     if (!isComplete()) {

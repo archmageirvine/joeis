@@ -406,8 +406,6 @@ A005306 Representation degeneracies for Ramond strings
 A005307 Bosonic string states, likely similar to A005308
 A005310 Fermionic string states
 A005311 Solution to Berlekamp's switching game (or lightbulb game) on an n X n board, have paper, lot of work for few terms
-A005315 Simple subset of A005316
-A005316 Meandric numbers: number of ways a river can cross a road n times
 A005334 Number of 2-colored graphs, have close attempt and papers (see blog2016.tex)
 A005335 Simple dependency A005334
 A005336 Simple dependency A005334

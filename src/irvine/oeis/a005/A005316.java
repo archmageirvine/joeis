@@ -20,7 +20,7 @@ public class A005316 implements Sequence {
   // Java implementation based on a C# implementation by Andrew Howroyd.
   // https://oeis.org/A005316/a005316.cs.txt
   // Original documentation for C# version follows.
-  // Note some of the functionality discussed is not present in this Java version
+  // Note some of the functionality discussed is not present in this Java version.
 
   /* Author: Andrew Howroyd. (c) 2015
      Terms of use: You may freely use this software for personal, open source, educational or commercial use.
@@ -60,7 +60,7 @@ public class A005316 implements Sequence {
         {
             int nn = length - 1;
             var processor = new SimpleProcessor<Z>() { CreateStateMachine = k => new BasicMeanderProblem( k) };
-            return processor.Process( nn, new BasicMeanderProblem( nn).OpenMeanderInitialStates);
+            return processor.Process(nn, new BasicMeanderProblem(nn).OpenMeanderInitialStates);
         }
 
         ArchConfiguration which is un-related and independent of the other classes is a set of utilities for working
@@ -72,8 +72,10 @@ public class A005316 implements Sequence {
    * Base class for meander enumeration problems.
    *
    * Algorithm:
-   * Based on: I. Jensen, A transfer matrix approach to the enumeration of plane meanders, J. Phys. A 33 (2000), no. 34, 5953-5963.
-   * http://arXiv.org/abs/cond-mat/0008178
+   * Based on: I. Jensen,
+   * <a href="http://arXiv.org/abs/cond-mat/0008178">A transfer matrix approach to the enumeration of plane meanders</a>,
+   * J. Phys. A 33 (2000), no. 34, 5953-5963.
+   *
    * There are a few minor implementation differences.
    *   - Two separate bit sequences are used for the lower and upper segments, with the least significant bits closest to the road.
    *     These are inter-woven into a single integer valued state.
@@ -86,8 +88,9 @@ public class A005316 implements Sequence {
    * The algorithm as presented here uses Z for both states and counts. For better cpu performance,  64-bit long integers can be used
    * at least for the open meander problem up to about 60 bridges before overflow will be an issue.
    */
-  protected static int WORD_SHIFT = 2;
-  protected static int WORD_MASK = (1 << WORD_SHIFT) - 1;
+  protected static final int WORD_SHIFT = 2;
+  //protected static final int WORD_MASK = (1 << WORD_SHIFT) - 1;
+  private static final Z ODD_BITS = Z.valueOf(0x5555555555555555L);
 
   /**
    * Combines the states for the lower and upper halves into a single integer.
@@ -105,7 +108,7 @@ public class A005316 implements Sequence {
   /*
    * The initial state of the traversal.
    */
-  protected static Z mDefaultInitialState = pack(Z.ONE, Z.ONE);
+  protected static final Z DEFAULT_INITIAL_STATE = pack(Z.ONE, Z.ONE);
 
   protected interface Func<S, R> {
     R f(S x);
@@ -123,7 +126,7 @@ public class A005316 implements Sequence {
     NONE, NEW_ARCH, JOIN_ARCH, MOVE_UP, MOVE_DOWN, CLOSE_LOOP
   }
 
-  protected static abstract class MeanderProblem {
+  protected abstract static class MeanderProblem {
     protected final int mLayerIndex;
 
     /**
@@ -165,7 +168,7 @@ public class A005316 implements Sequence {
 
       // 4. Arch connection. Possible if not at edge guard on either side.
       if (!lower.equals(Z.ONE) && !upper.equals(Z.ONE)) {
-        Action test = closingAction(lower, upper);
+        final Action test = closingAction(lower, upper);
         if (test != Action.NONE) {
           list.add(capture.f(test, joinArch(lower, upper).shiftRight(WORD_SHIFT), joinArch(upper, lower).shiftRight(WORD_SHIFT)));
         }
@@ -217,7 +220,7 @@ public class A005316 implements Sequence {
     /**
      * Variation on pack that may swap lower and upper words. This reduces the total
      * number of states by about half, but is not safe in those cases where the distinction
-     * between upper and lower is important. (This is purely a questionable optimisation
+     * between upper and lower is important. (This is purely a questionable optimization
      * that in a few cases allows an extra term to be computed)
      * @param lower lower half
      * @param upper upper half
@@ -231,8 +234,8 @@ public class A005316 implements Sequence {
      * The upper arch configuration can the be obtained by subtraction.
      * This undoes the encoding of pack.
      */
-    protected Z extractLower(Z v) {
-      Z mask = Z.valueOf(0x5555555555555555L);
+    protected Z extractLower(final Z v) {
+      Z mask = ODD_BITS;
       int bits = 64;
       while (mask.compareTo(v) < 0) {
         mask = mask.or(mask.shiftLeft(bits));
@@ -240,30 +243,6 @@ public class A005316 implements Sequence {
       }
       return v.and(mask);
     }
-
-
-//    /**
-//     * Provides a heuristic to group states into partitions. Used by the DivideAndConquerProcessor.
-//     * The aim is to put similar states into the same partition, but there is no guarantee that this achieves that goal.
-//     */
-//    public static int Cluster(Z state, int level) {
-//      Func<Z, Z> Reduce = v =>
-//      {
-//        var limit = Z.ONE.shiftLeft(2 + (WORD_SHIFT * level));
-//        if (v < limit) {
-//          return Z.ONE;
-//        }
-//        while (v >= limit) {
-//          v >>= WORD_SHIFT;
-//        }
-//        return v;
-//      }
-//      ;
-//      var lower = ExtractLower(state);
-//      var upper = (state - lower) >> 1;
-//      return (int) Pack(Reduce(lower), Reduce(upper));
-//    }
-
   }
 
   /**
@@ -280,7 +259,7 @@ public class A005316 implements Sequence {
   /**
    * Processing component to determine number of open meanders. (A005316).
    */
-  class BasicMeanderProblem extends MeanderProblem implements StateMachine<Z> {
+  protected static class BasicMeanderProblem extends MeanderProblem implements StateMachine<Z> {
     private final Z mLimit;
     private final boolean mIsOdd;
 
@@ -292,28 +271,27 @@ public class A005316 implements Sequence {
 
     /**
      * Initial states to enumerate open meanders.
+     * @return initial states
      */
     public Iterable<Z> openMeanderInitialStates() {
-      return Collections.singleton(mIsOdd ? pack(((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE).shiftLeft(WORD_SHIFT)), Z.ONE) : pack((Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE), (Z.ONE.shiftLeft(WORD_SHIFT)).or(Z.ONE)));
+      return Collections.singleton(mIsOdd ? pack(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE).shiftLeft(WORD_SHIFT), Z.ONE) : pack(Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE), Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE)));
     }
 
-//    /**
-//     * Initial states used to enumerate semi-meanders. (A000682)
-//     */
-//    public Iterator<Z> SemiMeanderInitialStates
-//    {
-//      get
-//      {
-//        Z bits = m_IsOdd ? 1 : (1 << WORD_SHIFT) | 1;
-//        var state = Pack(bits, bits);
-//        while (state < m_Limit) {
-//          yield return state;
-//          bits = (((bits << WORD_SHIFT) | Z.ONE) << WORD_SHIFT) | Z.ONE;
-//          state = Pack(bits, bits);
-//        }
-//      }
-//    }
-//
+    /**
+     * Initial states used to enumerate semi-meanders. (A000682)
+     */
+    public Iterable<Z> semiMeanderInitialStates() {
+      final ArrayList<Z> res = new ArrayList<>();
+      Z bits = mIsOdd ? Z.ONE : Z.ONE.shiftLeft(WORD_SHIFT).or(Z.ONE);
+      Z state = pack(bits, bits);
+      while (state.compareTo(mLimit) < 0) {
+        res.add(state);
+        bits = bits.shiftLeft(WORD_SHIFT).or(Z.ONE).shiftLeft(WORD_SHIFT).or(Z.ONE);
+        state = pack(bits, bits);
+      }
+      return res;
+    }
+
 //    /**
 //     * Initial states for rotationally symmetric loops on two parallel roads. (part of A086031)
 //     * gives 1,3,16,105,786,6398,55280,499293,4667290,44840730
@@ -422,7 +400,7 @@ public class A005316 implements Sequence {
    * @param <S> state type
    */
   public static class SimpleProcessor<S> {
-    public long mTotalTransitions;
+    private long mTotalTransitions;
     
     long getTotalTransitions() {
       return mTotalTransitions;
@@ -496,148 +474,6 @@ public class A005316 implements Sequence {
       return res;
     }
   }
-
-//    #region DivideAndConquerProcessor
-//    /**
-//     * Enhanced processor that will partition the work into buckets as required in order to reduce memory load. Works only with basic Z state.
-//     */
-//     * <remarks>
-//     * Optimal choice of split limit and repartition bucket size is dependent on the number of bridges to be processed as well as memory constraints.
-//     * Ideally we want to use as much memory as possible to reduce the number of times the data needs to be repartitioned.
-//     * The author has not investigated best practice heuristics.
-//     * For better performance we really want to work as much as possible with 64-bit unsigned ints.
-//     * (Code for this is really a lot of ugly duplication so is not included here: C# generics does not readily accommodate this.)
-//     * This method was successfully used to compute a003516(55) in about 24 hours on a single core, requiring the processing of nearly 400 billion state transitions.
-//     * </remarks>
-//    class DivideAndConquerProcessor : SimpleProcessor<Z>
-//    {
-//
-//        public int SplitLimit
-//        { get; set; }
-//        public int RepartionBucketSize
-//        { get; set; }
-//
-//        /**
-//         * Constructor.
-//         */
-//        public DivideAndConquerProcessor()
-//        {
-//            SplitLimit = 1000000;
-//            RepartionBucketSize = 150000;
-//        }
-//
-//        /**
-//         * Main function. Processes initial states down to final count. 
-//         */
-//        public override Z Process( int bridges, Iterator<Z> initialStates)
-//        {
-//            var counts = initialStates.Select( state => new Pair<Z, Z>( state, Z.ONE)).ToArray();
-//            return ProcessCluster( new[] { counts }.ToList(), bridges);
-//        }
-//
-//        /**
-//         * Called recursively to process a partitioned work-load.
-//         */
-//        private Z ProcessCluster( List<Pair<Z, Z>[]> work, int remainingBridges)
-//        {
-//            LogProgress( "Begin Cluster at {0}; items={1}", remainingBridges, work.Count);
-//
-//            Z total = Z.ZERO;
-//            for (int workIndex = 0; workIndex < work.Count; ++workIndex)
-//            {
-//                LogProgress( "Layer {0}: Processing List {1} of {2}, items={3}", remainingBridges, workIndex + 1, work.Count, work[ workIndex ].length);
-//
-//                var counts = work[ workIndex ];
-//                work[ workIndex ] = null;
-//
-//                int b = remainingBridges;
-//                while (b > 0 && counts.length < SplitLimit)
-//                {
-//                    counts = Accumulate( CreateStateMachine( --b), counts);
-//                }
-//                if (b == 0)
-//                {
-//                    total += Total( counts);
-//                }
-//                else
-//                {
-//                    var partitions = BuildCluster( counts, RepartionBucketSize);
-//                    GC.Collect();
-//                    counts = null;
-//                    total += ProcessCluster( partitions, b);
-//                }
-//            }
-//            LogProgress( "End Cluster at {0}", remainingBridges);
-//            return total;
-//        }
-//
-//        /**
-//         * Given a source list of state-value pairs, partitions the list into multiple buckets for separate processing.
-//         * State-value pairs are represented by key-value pairs of Z meander states and NumberType.
-//         */
-//        private List<Pair<Z, NumberType>[]> BuildCluster<NumberType>( Iterator<Pair<Z, NumberType>> source, int maxSize)
-//        {
-//            var current = new List<List<Pair<Z, NumberType>>>();
-//            var output = new List<Pair<Z, NumberType>[]>();
-//            current.Add( source.ToList());
-//            for (int level = 4; current.Count > 0; ++level)
-//            {
-//                var stillToBig = new List<List<Pair<Z, NumberType>>>();
-//                for (int currentIndex = 0; currentIndex < current.Count; ++currentIndex)
-//                {
-//                    var stateDictionary = current[ currentIndex ];
-//                    current[ currentIndex ] = null;
-//                    // divide each item in stateDictionary into a bucket based on MeanderState.Cluster.
-//                    var index = new Dictionary<int, List<Pair<Z, NumberType>>>();
-//                    foreach (var kv in stateDictionary)
-//                    {
-//                        var cluster = MeanderState.Cluster( kv.Key, level);
-//                        List<Pair<Z, NumberType>> inner;
-//                        if (!index.TryGetValue( cluster, out inner))
-//                        {
-//                            inner = new List<Pair<Z, NumberType>>();
-//                            index.Add( cluster, inner);
-//                        }
-//                        inner.Add( kv);
-//                    }
-//                    stateDictionary = null;
-//                    // now sort through each list, putting onto either output list or stillToBig as appropriate.
-//                    List<Pair<Z, NumberType>> small = null;
-//                    foreach (var component in index.Values)
-//                    {
-//                        if (component.Count > maxSize)
-//                        {
-//                            stillToBig.Add( component);
-//                        }
-//                        else if (component.Count > maxSize / 2)
-//                        {
-//                            output.Add( component.ToArray());
-//                        }
-//                        else if (small == null)
-//                        {
-//                            small = component;
-//                        }
-//                        else
-//                        {
-//                            small.AddRange( component);
-//                            if (small.Count > maxSize / 2)
-//                            {
-//                                output.Add( small.ToArray());
-//                                small = null;
-//                            }
-//                        }
-//                    }
-//                    if (small != null)
-//                    {
-//                        output.Add( small.ToArray());
-//                        small = null;
-//                    }
-//                }
-//                current = stillToBig;
-//            }
-//            return output;
-//        }
-//    }
 
   private int mN = -2;
 

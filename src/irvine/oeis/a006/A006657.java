@@ -37,8 +37,9 @@ public class A006657 extends A005316 {
 
     /**
      * Initial states for semi-meander systems.
+     * @param windingPredicate winding predicate
      */
-    public Iterable<Pair<Integer, Z>> semiMeanderInitialStates(Func<Integer, Boolean> windingPredicate) {
+    public Iterable<Pair<Integer, Z>> semiMeanderInitialStates(final Func<Integer, Boolean> windingPredicate) {
       final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();
       Z bits = Z.ONE;
       Z state = pack(bits, bits);
@@ -54,6 +55,7 @@ public class A006657 extends A005316 {
       return res;
     }
 
+    @Override
     public Iterable<Pair<Integer, Z>> enumerate(final Pair<Integer, Z> state) {
       final int n = state.left();
       final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();
@@ -70,7 +72,7 @@ public class A006657 extends A005316 {
 
   protected Iterable<Pair<Integer, Z>> initialStates(final MeandersByComponents mbc) {
     // Initial states for closed meander systems.
-    return Collections.singleton(new Pair<>(0, mDefaultInitialState));
+    return Collections.singleton(new Pair<>(0, DEFAULT_INITIAL_STATE));
   }
 
   protected int components() {

@@ -157,6 +157,8 @@ public abstract class CR extends Number implements Comparable<CR> {
   // pi/4 = 4*atan(1/5) - atan(1/239)
   /** Pi over 2. */
   public static final CR HALF_PI = PI.shiftRight(1);
+  /** Square root of pi. */
+  public static final CR SQRT_PI = CR.PI.sqrt();
   /** The real number 1/2. */
   public static final CR HALF = CR.TWO.inverse();
   /** The real number 1/3. */
@@ -1024,6 +1026,14 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public CR ei() {
     return new PrescaledEi(this).add(EulerGamma.SINGLETON).add(abs().log());
+  }
+
+  /**
+   * The error function <code>erf</code> of this real number.
+   * @return error function integral
+   */
+  public CR erf() {
+    return new PrescaledErf(this).multiply(CR.TWO).divide(CR.SQRT_PI);
   }
 
   /**

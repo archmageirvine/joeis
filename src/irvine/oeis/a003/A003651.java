@@ -4,7 +4,7 @@ import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
 
 /**
- * A003651.
+ * A003651 Class number of real quadratic field with discriminant <code>4n, n == 2,3 ( mod 4)</code>.
  * @author Sean A. Irvine
  */
 public class A003651 extends A003658 {

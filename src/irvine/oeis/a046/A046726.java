@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.util.Pair;
 
 /**
- * A008828.
+ * A046726 Triangle of numbers of semi-meanders of order n with k components.
  * @author Sean A. Irvine
  */
 public class A046726 extends A046721 {

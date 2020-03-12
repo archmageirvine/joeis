@@ -118,7 +118,6 @@ A002012 Almost trivalent maps, like A002005?
 A002043 Have attempt, recurrence and g.f. in paper does not reproduce numbers, see blog2018.tex
 A002044 Have attempt, recurrence in paper does not reproduce numbers
 A002045 Have attempt, recurrence in paper does not reproduce numbers
-A002052 Class numbers, have paper is 1 page, but don't understand, gp impl exists now
 A002060 Sequence is almost certainly erroneous
 A002077 Self-dual functions
 A002078 Depends A000609
@@ -128,7 +127,6 @@ A002087 Paper accessible but hard to understand, tournaments, pos. like A002086
 A002090 Hamilton numbers, paper is in French
 A002106 Transitive permutation groups, hard
 A002116 Some special numbers, insufficient detail
-A002142 Class numbers
 A002150 Rank of elliptic curves (no known algorithm?)
 A002151 Rank of elliptic curves (no known algorithm?)
 A002152 Rank of elliptic curves (no known algorithm?)
@@ -244,7 +242,6 @@ A003104 Number of hexagonal n-element polyominoes whose graph is a path
 A003119 Susceptibility for diamond, have paper
 A003155 Halving chess board - probably possible but lot of effort for small number of terms
 A003171 Finite sequence, but not clear what all the terms are, class groups
-A003172 Class numbers, might be possible, doesn't seem to match existing class number impl
 A003178 Number of indecomposable self-dual binary codes of length 2n
 A003179 Number of self-dual binary codes of length 2n
 A003181 Nondegenerate Boolean functions of n variables
@@ -314,7 +311,6 @@ A003616 Symmetries in unrooted 4-trees on n+1 vertices, could not get exact pape
 A003646 Class number of binary quadratic forms with fundamental discriminant A003658(n),n>=2, cf. also A003636
 A003647 Class number of real quadratic forms with discriminant 4n+1
 A003648 Class number of quadratic forms with discriminant 4n, n == 2,3(mod 4)
-A003649 Class number of real quadratic field Q(sqrt f), where f is the n-th squarefree number A005117(n)
 A003655 Discriminants of real quadratic fields with narrow class number 1
 A003656 Discriminants of real quadratic fields with unique factorization
 A003660 Number of nontrivial disconnected complements of Steinhaus graphs on n nodes, have paper
@@ -1193,9 +1189,6 @@ A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, pa
 A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice
 A029550 Highest minimal norm for an (even or odd) 2-modular lattice in dimension n
 A029551 Highest minimal norm for an (even or odd) 3-modular lattice in dimension n
-A029702 Q(sqrt(n)) has class number 2, simple dep. on A003649
-A029703 Q(sqrt(n)) has class number 3, simple dep. on A003649
-A029704 Q(sqrt(n)) has class number 4, simple dep. on A003649
 A029705 Q(sqrt(n)) has class number 5, simple dep. on A003649
 A029723 Trace of Frobenius of the reduction mod 2 of the elliptic curve C / L, L a lattice with Gram matrix [ 4 1; 1 2n ]
 A029725 Number of distinct subgroups of alternating group A_n, counting conjugates as distinct

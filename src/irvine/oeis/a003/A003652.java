@@ -4,7 +4,7 @@ import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
 
 /**
- * A003652.
+ * A003652 Class number of real quadratic field with discriminant <code>A003658(n), n &gt;= 2</code>.
  * @author Sean A. Irvine
  */
 public class A003652 extends A003658 {
@@ -15,7 +15,6 @@ public class A003652 extends A003658 {
 
   @Override
   public Z next() {
-    final Z n = super.next();
-    return Z.valueOf(QuadraticFieldUtils.classNumber(n));
+    return Z.valueOf(QuadraticFieldUtils.classNumber(super.next()));
   }
 }

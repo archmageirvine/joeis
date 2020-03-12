@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006657;
 import irvine.util.Pair;
 
 /**
- * A046721.
+ * A046721 Number of semi-meanders of order n with 2 components.
  * @author Sean A. Irvine
  */
 public class A046721 extends A006657 {

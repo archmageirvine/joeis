@@ -99,9 +99,9 @@ public final class QuadraticFieldUtils {
     return fundamentalUnit(discriminant).log();
   }
 
-  private static final int MAX_CLASSNO_TERMS = 100;
+  private static final int MAX_CLASSNO_TERMS = 500;
   private static final int MIN_CLASSNO_TERMS = 5;
-  private static final CR CLASSNO_THRESHOLD = CR.valueOf(0.05);
+  private static final CR CLASSNO_THRESHOLD = CR.valueOf(0.005);
 
   private static CR e1(final CR x) {
     return ComputableReals.SINGLETON.ei(x.negate()).negate();

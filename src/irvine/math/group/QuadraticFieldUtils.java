@@ -1,8 +1,8 @@
 package irvine.math.group;
 
+import irvine.math.LongUtils;
 import irvine.math.cr.CR;
 import irvine.math.cr.ComputableReals;
-import irvine.math.r.Stats;
 import irvine.math.z.Z;
 
 /**
@@ -99,7 +99,9 @@ public final class QuadraticFieldUtils {
     return fundamentalUnit(discriminant).log();
   }
 
-  private static final int CLASSNO_TERMS = 20;
+  private static final int MAX_CLASSNO_TERMS = 100;
+  private static final int MIN_CLASSNO_TERMS = 5;
+  private static final CR CLASSNO_THRESHOLD = CR.valueOf(0.05);
 
   private static CR e1(final CR x) {
     return ComputableReals.SINGLETON.ei(x.negate()).negate();
@@ -117,15 +119,26 @@ public final class QuadraticFieldUtils {
   public static long classNumber(final Z discriminant) {
     // Proposition 5.6.11 from Cohen, "A Course in Computational Algebraic Number Theory"
     CR sum = CR.ZERO;
-    for (int k = 1; k < CLASSNO_TERMS; ++k) {
-      final double erfc = Stats.erfc(k * Math.sqrt(Math.PI / discriminant.doubleValue())); // todo CR
-      final CR crd = CR.valueOf(discriminant);
-      final CR a = crd.sqrt().multiply(CR.valueOf(erfc)).divide(CR.valueOf(k));
+    final long dl = discriminant.longValueExact();
+    final CR crd = CR.valueOf(discriminant);
+    final CR scrd = crd.sqrt();
+    final CR t = CR.SQRT_PI.divide(scrd);
+    for (int k = 1; k < MAX_CLASSNO_TERMS; ++k) {
+      final CR erfc = t.multiply(k).erfc();
+      final CR a = scrd.multiply(erfc).divide(CR.valueOf(k));
       final CR b = e1(CR.PI.multiply(CR.valueOf(k * (long) k)).divide(crd));
       final CR c = a.add(b);
-      sum = sum.add(c.multiply(CR.valueOf(discriminant.jacobi(Z.valueOf(k)))));
-      //System.out.println("sum is now " + sum + " a=" + a + " b=" + b);
+      final long kron = LongUtils.kronecker(dl, k);
+      if (kron == 1) {
+        sum = sum.add(c);
+      } else if (kron == -1) {
+        sum = sum.subtract(c);
+      }
+      final CR cn = sum.divide(regulator(discriminant)).divide(CR.TWO);
+      if (k >= MIN_CLASSNO_TERMS && cn.subtract(CR.valueOf(cn.floor())).compareTo(CLASSNO_THRESHOLD) < 0) {
+        return cn.round().longValueExact();
+      }
     }
-    return sum.divide(regulator(discriminant)).divide(CR.TWO).round().longValueExact();
+    throw new UnsupportedOperationException("Failed to find class number after " + MAX_CLASSNO_TERMS + " iterations");
   }
 }

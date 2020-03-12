@@ -1028,12 +1028,23 @@ public abstract class CR extends Number implements Comparable<CR> {
     return new PrescaledEi(this).add(EulerGamma.SINGLETON).add(abs().log());
   }
 
+
+  private static final CR ERF_C1 = CR.TWO.divide(CR.SQRT_PI);
+
   /**
    * The error function <code>erf</code> of this real number.
    * @return error function integral
    */
   public CR erf() {
-    return new PrescaledErf(this).multiply(CR.TWO).divide(CR.SQRT_PI);
+    return new PrescaledErf(this).multiply(ERF_C1);
+  }
+
+  /**
+   * The complement error function <code>erfc</code> of this real number.
+   * @return complement error function integral
+   */
+  public CR erfc() {
+    return CR.ONE.subtract(erf());
   }
 
   /**

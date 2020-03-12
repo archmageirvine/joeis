@@ -315,9 +315,6 @@ A003646 Class number of binary quadratic forms with fundamental discriminant A00
 A003647 Class number of real quadratic forms with discriminant 4n+1
 A003648 Class number of quadratic forms with discriminant 4n, n == 2,3(mod 4)
 A003649 Class number of real quadratic field Q(sqrt f), where f is the n-th squarefree number A005117(n)
-A003650 Class number of real quadratic field with discriminant 4n+1
-A003651 Class number of real quadratic field with discriminant 4n, n == 2,3 (mod 4)
-A003652 Class number of real quadratic field with discriminant A003658(n)
 A003655 Discriminants of real quadratic fields with narrow class number 1
 A003656 Discriminants of real quadratic fields with unique factorization
 A003660 Number of nontrivial disconnected complements of Steinhaus graphs on n nodes, have paper
@@ -590,7 +587,7 @@ A006652 From the graph reconstruction problem, have paper
 A006653 From the graph reconstruction problem, have paper
 A006654 From the graph reconstruction problem, have paper
 A006655 From the graph reconstruction problem, have paper
-A006660 Number of meanders in which first bridge is 3
+A006660 Number of meanders in which first bridge is 3, cf. A005315
 A006661 Number of meanders in which first bridge is 5
 A006662 Number of meanders in which first bridge is 7
 A006663 Number of projective meanders

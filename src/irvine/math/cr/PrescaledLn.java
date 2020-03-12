@@ -47,7 +47,7 @@ class PrescaledLn extends SlowCR {
       currentSign = -currentSign;
       xNth = scale(xNth.multiply(opAppr), opPrec);
       currentTerm = xNth.divide(Z.valueOf(n * currentSign));
-      // x**n / (n * (-1)^(n-1))
+      // x^n / (n * (-1)^(n-1))
       currentSum = currentSum.add(currentTerm);
     }
     return scale(currentSum, calcPrecision - p);

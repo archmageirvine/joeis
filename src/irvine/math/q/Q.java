@@ -208,7 +208,7 @@ public class Q implements Comparable<Q>, Serializable {
    * @return round function
    */
   public Z round() {
-    return signum() >= 0 ? subtract(Q.HALF).ceiling() : add(Q.HALF).floor();
+    return signum() < 0 ? subtract(Q.HALF).ceiling() : add(Q.HALF).floor();
   }
 
   /**

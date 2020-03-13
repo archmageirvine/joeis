@@ -118,7 +118,7 @@ public class GeneratingFunctionTriangle implements Sequence {
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x
    * @param iy index/exponent for y
-   * @return coefficient of monomial <code>x^ix*yîy</code>, or ZERO if the element does not (yet) exist
+   * @return coefficient of monomial <code>x^ix*y^iy</code>, or ZERO if the element does not (yet) exist
    */
   protected Z getTri(final ArrayList<Z> triangle, final int ix, final int iy) {
     final int itri = ix * (ix + 1) / 2 + iy;
@@ -135,7 +135,7 @@ public class GeneratingFunctionTriangle implements Sequence {
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x
    * @param iy index/exponent for y
-   * @param coeff coefficient of monomial <code>x^ix*yîy</code>
+   * @param coeff coefficient of monomial <code>x^ix*y^iy</code>
    */
   protected void setTri(final ArrayList<Z> triangle, final int ix, final int iy, final Z coeff) {
     final int itri = ix * (ix + 1) / 2 + iy;

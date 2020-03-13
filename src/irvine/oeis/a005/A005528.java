@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005528 St&#248;rmer numbers or arc-cotangent irreducible numbers: largest prime factor of <code>n^2 + 1</code> is <code>&gt;= 2n</code>.
+ * A005528 St&#248;rmer numbers or arc-cotangent irreducible numbers: numbers k such that the largest prime factor of <code>k^2 + 1</code> is <code>&gt;= 2*k</code>.
  * @author Sean A. Irvine
  */
 public class A005528 implements Sequence {

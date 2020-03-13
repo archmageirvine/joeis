@@ -6,7 +6,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045992 <code>binomial(2n,n)-n</code>; number of (weakly) increasing or decreasing maps from <code>1,...,n</code> to <code>1,...,n</code>.
+ * A045992 <code>a(n) = binomial(2n,n) -</code> n; number of (weakly) increasing or decreasing maps from <code>1,...,n</code> to <code>1,...,n</code>.
  * @author Georg Fischer
  */
 public class A045992 extends HolonomicRecurrence {

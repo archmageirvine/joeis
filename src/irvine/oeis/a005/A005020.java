@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.math.z.Z;
 
 /**
- * A005020 <code>(0,1)-matrices</code> by <code>1-width</code>.
+ * A005020 The number of <code>n X n (0,1)-matrices</code> with a 1-width of 2.
  * @author Sean A. Irvine
  */
 public class A005020 extends A005019 {

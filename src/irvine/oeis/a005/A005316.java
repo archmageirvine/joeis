@@ -48,7 +48,7 @@ public class A005316 implements Sequence {
         In addition to a sub-class of BasicMeanderProblem a state machine processor is required. Two are included here.
         SimpleProcessor is the most natural and simple implementation, but will eventually fail at about 40 bridges due to
         insufficient memory to contain the entire state space. This is suitable for many needs.
-        DivideAndConquerProcessor is a processor that reduces memory use at the cost of additional cpu by sub-dividing
+        DivideAndConquerProcessor is a processor that reduces memory use at the cost of additional CPU by sub-dividing
         the problem into multiple partitions which are processed independently.
 
         The method is generally applicable to any meander problem that can be reduced to a simple left to right scan of the meander.
@@ -83,9 +83,9 @@ public class A005316 implements Sequence {
    *   - This algorithm does not have any notion of a free end - there is always a loop. Open meanders can be enumerated with an alternative initial state.
    *
    * Performance:
-   * The primary limiting factor of the algorithm as presented here is memory rather than cpu. Approximately 2GB is required to get to about 40 bridges.
-   * However, by adopting a multi-stage process it is possible to some extent to trade memory usage for additional cpu.
-   * The algorithm as presented here uses Z for both states and counts. For better cpu performance,  64-bit long integers can be used
+   * The primary limiting factor of the algorithm as presented here is memory rather than CPU. Approximately 2 GB is required to get to about 40 bridges.
+   * However, by adopting a multi-stage process it is possible to some extent to trade memory usage for additional CPU.
+   * The algorithm as presented here uses Z for both states and counts. For better CPU performance,  64-bit long integers can be used
    * at least for the open meander problem up to about 60 bridges before overflow will be an issue.
    */
   protected static final int WORD_SHIFT = 2;

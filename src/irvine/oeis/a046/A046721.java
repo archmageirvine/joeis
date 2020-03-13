@@ -12,7 +12,7 @@ public class A046721 extends A006657 {
 
   @Override
   protected Iterable<Pair<Integer, Z>> initialStates(final MeandersByComponents mbc) {
-    return mbc.semiMeanderInitialStates(k -> true); // todo
+    return mbc.semiMeanderInitialStates(k -> Boolean.TRUE);
   }
 
   private int mN = components() - 1;

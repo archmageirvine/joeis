@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125641 Square of the modulus of the <code>(3,1)-entry</code> of the <code>3 X 3</code> matrix <code>M^n</code>, where M <code>= [1,0,0; 1,1,0, 1,i,1]</code>.
+ * A125641 Square of the <code>(3,1)-entry</code> of the <code>3 X 3</code> matrix <code>M^n</code>, where M <code>= [1,0,0; 1,1,0, 1,i,1]</code>.
  * @author Georg Fischer
  */
 public class A125641 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A035495 Musical scales consisting of n notes.
+ * A035495 Number of musical scales consisting of n notes.
  * @author Georg Fischer
  */
 public class A035495 extends FiniteSequence {

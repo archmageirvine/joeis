@@ -7,7 +7,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A103631 Triangle read by rows: an invertible triangle whose row sums are <code>F(n+1)</code>.
+ * A103631 Triangle read by rows: <code>T(n,k) = abs(qStirling2(n,k,q))</code> for q <code>= -1</code>, with <code>0 &lt;= k &lt;= n</code>.
  * @author Georg Fischer
  */
 public class A103631 extends GeneratingFunctionTriangle {

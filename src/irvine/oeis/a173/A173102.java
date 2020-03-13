@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173102 Number of partitions <code>x+y=z</code> with <code>{x,y,z}</code> in <code>{1,2,3,..,3n}</code> and <code>z&gt;y&gt;=x</code>.
+ * A173102 Number of partitions <code>x + y = z</code> with <code>{x,y,z}</code> in <code>{1,2,3,..,3n}</code> and <code>z &gt; y &gt;= x</code>.
  * @author Georg Fischer
  */
 public class A173102 extends GeneratingFunctionSequence {

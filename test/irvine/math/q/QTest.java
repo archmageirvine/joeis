@@ -93,5 +93,9 @@ public class QTest extends TestCase {
     assertEquals(Q.ZERO, Q.ZERO.divide(Z.TWO));
     assertEquals(Q.ZERO, Q.ZERO.divide(Q.TWO));
   }
+
+  public void testRound() {
+    assertEquals(64, new Q(127, 2).round().longValue());
+  }
 }
 

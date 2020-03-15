@@ -44,6 +44,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A105257Test.class);
     suite.addTestSuite(A105261Test.class);
     suite.addTestSuite(A105262Test.class);
+    suite.addTestSuite(A105277Test.class);
     suite.addTestSuite(A105279Test.class);
     suite.addTestSuite(A105280Test.class);
     suite.addTestSuite(A105281Test.class);
@@ -86,6 +87,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A105580Test.class);
     suite.addTestSuite(A105584Test.class);
     suite.addTestSuite(A105605Test.class);
+    suite.addTestSuite(A105633Test.class);
     suite.addTestSuite(A105635Test.class);
     suite.addTestSuite(A105636Test.class);
     suite.addTestSuite(A105637Test.class);
@@ -99,6 +101,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A105694Test.class);
     suite.addTestSuite(A105698Test.class);
     suite.addTestSuite(A105723Test.class);
+    suite.addTestSuite(A105748Test.class);
     suite.addTestSuite(A105754Test.class);
     suite.addTestSuite(A105755Test.class);
     suite.addTestSuite(A105770Test.class);
@@ -125,6 +128,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A105870Test.class);
     suite.addTestSuite(A105899Test.class);
     suite.addTestSuite(A105918Test.class);
+    suite.addTestSuite(A105926Test.class);
     suite.addTestSuite(A105938Test.class);
     suite.addTestSuite(A105939Test.class);
     suite.addTestSuite(A105940Test.class);

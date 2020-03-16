@@ -1,0 +1,24 @@
+package irvine.oeis.a030;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A030001 Smallest power of 2 whose decimal expansion contains <code>n</code>.
+ * @author Sean A. Irvine
+ */
+public class A030001 implements Sequence {
+
+  private Z mN = Z.NEG_ONE;
+
+  @Override
+  public Z next() {
+    mN = mN.add(1);
+    final String s = mN.toString();
+    Z t = Z.ONE;
+    while (!t.toString().contains(s)) {
+      t = t.multiply2();
+    }
+    return t;
+  }
+}

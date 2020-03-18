@@ -121,6 +121,7 @@ public class HolonomicRecurrence implements Sequence {
     int k = mPolyList.size() - 1;
     mBufSize = k + 2; // at least 1
     mBuffer = new Z[mBufSize];
+    Arrays.fill(mBuffer, Z.ZERO);
     mOrder = k - 1;
     if (DEBUG >= 1) {
       System.out.println("order=" + mOrder);
@@ -203,7 +204,7 @@ public class HolonomicRecurrence implements Sequence {
         result = quotRemd[0];
       }
     }
-    mBuffer[mN % mBufSize] = result;
+    mBuffer[(mN + mBufSize) % mBufSize] = result;
     return result;
   } // next
 

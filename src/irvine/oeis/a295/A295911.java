@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295911 Number of (not necessarily minimum) cliques in the n-Hanoi graph.
+ * A295911 Number of (not necessarily maximal) cliques in the n-Hanoi graph.
  * @author Georg Fischer
  */
 public class A295911 extends LinearRecurrence {

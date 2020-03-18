@@ -4,7 +4,7 @@ package irvine.oeis.a050;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A050930 Number of directed multigraphs on 4 nodes with n arcs.
+ * A050930 Number of directed loopless multigraphs on 4 nodes with n arcs.
  * @author Georg Fischer
  */
 public class A050930 extends GeneratingFunctionSequence {

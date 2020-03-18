@@ -137,9 +137,6 @@ public class HolonomicRecurrence implements Sequence {
     mNdPowers[0] = Z.ONE;
   } // initialize
 
-  /**
-   * Gets the next term of the sequence.
-   */
   @Override
   public Z next() {
     final Z result;

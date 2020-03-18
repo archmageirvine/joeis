@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308603 Number of (not necessarily minimum) cliques in the n-dipyramidal graph.
+ * A308603 Number of (not necessarily maximal) cliques in the n-dipyramidal graph.
  * @author Georg Fischer
  */
 public class A308603 extends HolonomicRecurrence {

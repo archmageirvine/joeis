@@ -63,7 +63,7 @@ public class A030052 implements Sequence {
     ++mN;
     mPowers.clear();
     mPrecomputedValues.clear();
-    final int precompute = Math.min(2 * mN, 30);
+    final int precompute = Math.min(2 * mN, 28);
     buildTree(Z.ZERO, precompute, 0, 0);
 
     Z m = Z.ONE;

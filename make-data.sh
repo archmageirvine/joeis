@@ -9,17 +9,22 @@ if [[ ${a} = "" ]]; then
     exit
 fi
 target=${2:-260}
-res=
-java irvine.oeis.SequenceFactory "${a}" | while read term; do
-    len=$((${#res}+${#term}+2))
-    if [[ ${len} -gt ${target} ]]; then
-        echo "${res}"
-        break
-    fi
-    if [[ ${res} = "" ]]; then
-        res=${term}
-    else
-        res="${res}, ${term}"
-    fi
-done
 
+function collect() {
+    res=
+    while read term; do
+        len=$((${#res}+${#term}+2))
+        if [[ ${len} -gt ${target} ]]; then
+            echo "${res}"
+            return
+        fi
+        if [[ ${res} = "" ]]; then
+            res=${term}
+        else
+            res="${res}, ${term}"
+        fi
+    done
+    echo "${res}"
+}
+
+java irvine.oeis.SequenceFactory "${a}" | collect

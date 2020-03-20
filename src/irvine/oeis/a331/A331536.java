@@ -26,7 +26,7 @@ public class A331536 implements Sequence {
       mSeen.add("i");
       mNewlySeen.add("i");
     } else {
-      final HashSet<String> evolved = new HashSet<>();
+      final HashSet<String> evolved = new HashSet<>(10 * mNewlySeen.size());
       for (final String word : mNewlySeen) {
         add(evolved, word + word);
         if (word.endsWith("i")) {

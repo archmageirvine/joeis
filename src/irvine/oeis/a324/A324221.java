@@ -4,7 +4,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324221 Number of connected 2n-regular multigraphs with five nodes.
+ * A324221 Number of connected 2n-regular loopless multigraphs with five nodes.
  * @author Georg Fischer
  */
 public class A324221 extends GeneratingFunctionSequence {

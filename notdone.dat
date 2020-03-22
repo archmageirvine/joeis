@@ -1247,3 +1247,13 @@ A030046 Low temperature series for spin-1/2 Ising magnetic susceptibility on 4D 
 A030047 Low temperature series for spin-1/2 Ising free energy on 5D simple cubic lattice
 A030048 High temperature series for spin-1/2 Ising free energy on 5D simple cubic lattice, have paper
 A030049 High temperature series for spin-1/2 Ising free energy on 6D simple cubic lattice
+A030070 Numerator of Second Mills Number M_2(n)
+A030071 Denominator of Second Mills Number M_2(n)
+A030077 Take n equally spaced points on circle, connect them by a path with n-1 line segments; sequence gives number of distinct path lengths under action of dihedral group, sim A007874, but not as simple as 1 less edge
+A030120 Spontaneous magnetization coefficients for square lattice spin 3/2 Ising model
+A030121 Spontaneous magnetization coefficients for square lattice spin 5/2 Ising model
+A030122 Specific heat coefficients for square lattice spin 3 Ising model
+A030126 Schur's numbers (version 1), hard, for small number of terms
+A030128 Steiner triple systems (STS's) on n elements, hard
+A030129 Number of nonisomorphic Steiner triple systems (STS's) S(2,3,n) on n points, hard
+A030131 Site percolation series for hexagonal net

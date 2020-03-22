@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015954 Numbers n such that <code>n | 7^n + 1</code>.
+ * A015954 Numbers k such that k <code>| 7^k + 1</code>.
  * @author Sean A. Irvine
  */
 public class A015954 implements Sequence {

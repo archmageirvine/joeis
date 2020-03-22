@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A331536.
+ * A331536 allocated for Brian Tenneson.
  * @author Sean A. Irvine
  */
 public class A331536 implements Sequence {

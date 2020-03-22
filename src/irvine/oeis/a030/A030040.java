@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A030040 <code>a(n+1)=</code> Sum <code>a(k)a(n-k), k = 0 ... [ n/tau ]</code>, tau <code>= (1+sqrt(5))/2</code>.
+ * A030040 <code>a(n+1) = Sum_{k=0..floor(n/tau)} a(k) * a(n-k)</code>, where tau <code>= (1+sqrt(5))/2</code>.
  * @author Sean A. Irvine
  */
 public class A030040 extends MemorySequence {

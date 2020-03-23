@@ -522,7 +522,6 @@ public final class FactorSequence {
 
   /**
    * Return the Euler phi.
-   *
    * @return Euler phi function
    * @exception UnsupportedOperationException if factor sequence is not completely
    * resolved to primes and probable primes.
@@ -535,6 +534,24 @@ public final class FactorSequence {
     for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
       final Z p = e.getKey();
       phi = phi.multiply(p.subtract(Z.ONE)).multiply(p.pow(e.getValue().mExponent - 1));
+    }
+    return phi;
+  }
+
+  /**
+   * Return the unitary Euler phi.
+   * @return unitary Euler phi function
+   * @exception UnsupportedOperationException if factor sequence is not completely
+   * resolved to primes and probable primes.
+   */
+  public Z unitaryPhi() {
+    if (!isComplete()) {
+      throw new UnsupportedOperationException();
+    }
+    Z phi = Z.ONE;
+    for (final Map.Entry<Z, Factor> e : mFactors.entrySet()) {
+      final Z p = e.getKey();
+      phi = phi.multiply(p.pow(e.getValue().mExponent).subtract(1));
     }
     return phi;
   }

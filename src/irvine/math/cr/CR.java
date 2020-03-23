@@ -290,10 +290,13 @@ public abstract class CR extends Number implements Comparable<CR> {
     return CR.valueOf(scaledResult).divide(CR.valueOf(divisor));
   }
     
-  // Multiply by 2^n, rounding result
-  // Appears to follow Maple style semantics for rounding
-  // Differences between BigInteger and Z shiftRight mean care needed here
-  static Z scale(final Z k, final int n) {
+  /**
+   * Multiply by <code>2^n</code> rounding the result (with Maple style semantics).
+   * @param k number
+   * @param n exponent
+   * @return scaled form
+   */
+  public static Z scale(final Z k, final int n) {
     if (n >= 0) {
       return k.shiftLeft(n);
     } else if (k.signum() >= 0) {
@@ -1054,5 +1057,13 @@ public abstract class CR extends Number implements Comparable<CR> {
    */
   public CR agm(final CR x) {
     return new Agm(this, x);
+  }
+
+  /**
+   * The log gamma function of this real number.
+   * @return log gamma
+   */
+  public CR lnGamma() {
+    return new PrescaledLnGamma(this).subtract(this.log()).subtract(EulerGamma.SINGLETON.multiply(this));
   }
 }

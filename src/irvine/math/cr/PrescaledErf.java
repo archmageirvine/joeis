@@ -25,18 +25,18 @@ class PrescaledErf extends CR {
     final Z x2Appr = mX.multiply(mX).getApprox(p);
     Z currentTerm = xAppr; // x
     Z currentSum = currentTerm;
-    int n = 0;
+    int k = 0;
     while (currentTerm.abs().compareTo(Z.ONE) >= 0) {
       if (Thread.interrupted() || sPleaseStop) {
         throw new AbortedError();
       }
-      ++n;
+      ++k;
       // currentTerm = currentTerm * x^2 / n
       currentTerm = scale(currentTerm.multiply(x2Appr), p);
-      currentTerm = currentTerm.divide(Z.valueOf(n));
-      currentSum = currentSum.signedAdd((n & 1) == 0, currentTerm.divide(2 * n + 1));
+      currentTerm = currentTerm.divide(Z.valueOf(k));
+      currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm.divide(2 * k + 1));
     }
-    return scale(currentSum, 0);
+    return currentSum;
   }
 }
 

@@ -11,8 +11,13 @@ import irvine.math.z.Z;
  */
 class PrescaledLnGamma extends CR {
 
+  // todo this is very slow
+
   private static final double DIGITS_TO_BITS = Math.log(10) / Math.log(2);
+  private static final CR C1 = TAU.log().divide(TWO);
   private final CR mX;
+  private CR mProd = CR.ONE;
+  private int mShift = 0;
 
   PrescaledLnGamma(final CR x) {
     if (x.signum(32) < 0) {
@@ -28,16 +33,15 @@ class PrescaledLnGamma extends CR {
     }
 
     // See D. E. G. Hare, "Computing the Principal Branch of log-Gamma"
-    // Use lgamma(z) = lgamma(z+1) - ln(z), to increase z
-    CR logSum = CR.ZERO;
+    // Use lgamma(z) = lgamma(z+1) - ln(z), to increase z >> 1
     final int runUp = 1 + (int) (-0.5 * p / DIGITS_TO_BITS);
-    for (int k = 0; k < runUp; ++k) {
-      logSum = logSum.add(mX.add(CR.valueOf(k)).log());
+    while (mShift < runUp) {
+      mProd = mProd.multiply(mX.add(CR.valueOf(mShift)));
+      ++mShift;
     }
     final CR z = mX.add(CR.valueOf(runUp));
-    final CR u = TAU.log().divide(TWO).subtract(z).add(z.subtract(HALF).multiply(z.log()));
-    Z currentSum = u.subtract(logSum).approximate(p);
-    //System.out.println("Run up: " + currentSum + " R=" + logSum + " z=" + z);
+    final CR u = C1.subtract(z).add(z.subtract(HALF).multiply(z.log()));
+    Z currentSum = u.subtract(mProd.log()).approximate(p);
 
     // Use Bernoulli series
     final BernoulliSequence bernoulli = new BernoulliSequence(0);

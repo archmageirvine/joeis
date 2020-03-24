@@ -8,7 +8,7 @@ import irvine.oeis.ContinuedFractionSequence;
  */
 public class A030170 extends ContinuedFractionSequence {
 
-  // todo This is stupidly slow and probably not working at all?
+  // todo This is stupidly slow because underlying lnGamma is very slow
 
   /** Construct the sequence. */
   public A030170() {

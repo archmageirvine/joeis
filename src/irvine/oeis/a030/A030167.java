@@ -34,6 +34,7 @@ public class A030167 extends ContinuedFractionSequence {
     }
   };
 
+  /** Construct the sequence. */
   public A030167() {
     super(new DecimalExpansionSequence() {
       @Override

@@ -2,8 +2,9 @@ package irvine.math.cr;
 
 import java.math.BigInteger;
 
-import junit.framework.TestCase;
+import irvine.math.q.Q;
 import irvine.math.z.Z;
+import junit.framework.TestCase;
 
 /**
  * Test the corresponding class.
@@ -149,5 +150,18 @@ public class CRTest extends TestCase {
   public void testExpNear0() {
     assertEquals(Z.ONE, CR.valueOf(Double.MIN_VALUE).exp().floor(32));
     assertEquals(Z.ONE, CR.valueOf(Double.MIN_VALUE).negate().exp().floor(32));
+  }
+
+  public void testLnGamma() {
+    assertEqualsApproximate("lnGamma(1/2)", CR.PI.sqrt().log().doubleValue(), CR.HALF.lnGamma().doubleValue());
+    for (long k = 1, f = 1; k <= 10; f *= k, ++k) {
+      assertEqualsApproximate(k + "!", Math.log(f), CR.valueOf(k).lnGamma().doubleValue());
+    }
+  }
+
+  public void testPsi() {
+    final UnaryCRFunction psi = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
+    assertEquals("0.0364899740", psi.execute(CR.valueOf(new Q(3, 2))).toString());
+    assertEquals("-0.0000000009", psi.execute(CR.valueOf(1.461632144)).toString());
   }
 }

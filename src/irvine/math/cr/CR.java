@@ -1032,7 +1032,7 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
 
-  private static final CR ERF_C1 = CR.TWO.divide(CR.SQRT_PI);
+  private static final CR ERF_C1 = TWO.divide(SQRT_PI);
 
   /**
    * The error function <code>erf</code> of this real number.
@@ -1047,7 +1047,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return complement error function integral
    */
   public CR erfc() {
-    return CR.ONE.subtract(erf());
+    return ONE.subtract(erf());
   }
 
   /**
@@ -1064,6 +1064,6 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return log gamma
    */
   public CR lnGamma() {
-    return new PrescaledLnGamma(this).subtract(this.log()).subtract(EulerGamma.SINGLETON.multiply(this));
+    return new PrescaledLnGamma(this);
   }
 }

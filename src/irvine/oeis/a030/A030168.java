@@ -33,6 +33,7 @@ public class A030168 extends ContinuedFractionSequence {
     }
   };
 
+  /** Construct the sequence. */
   public A030168() {
     super(new DecimalExpansionSequence() {
       @Override

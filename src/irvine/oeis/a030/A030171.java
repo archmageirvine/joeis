@@ -6,12 +6,12 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A030171.
+ * A030171 Decimal expansion of real number y such that <code>y = Gamma(x)</code> is a minimum.
  * @author Sean A. Irvine
  */
 public class A030171 extends DecimalExpansionSequence {
 
-  // Very very slow.
+  // Slow.
 
   private static final UnaryCRFunction PSI = new LnGamma().monotoneDerivative(CR.HALF, CR.FOUR);
   private static final CR N = PSI.inverseMonotone(CR.ONE, CR.TWO).execute(CR.ZERO).lnGamma().exp();

@@ -1,5 +1,7 @@
 package irvine.math.cr;
 
+import java.util.HashMap;
+
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -16,8 +18,21 @@ class PrescaledLnGamma extends CR {
   private static final double DIGITS_TO_BITS = Math.log(10) / Math.log(2);
   private static final CR C1 = TAU.log().divide(TWO);
   private final CR mX;
-  private CR mProd = CR.ONE;
-  private int mShift = 0;
+
+  private static final BernoulliSequence BERNOULLI_SEQUENCE = new BernoulliSequence(0);
+  private static final HashMap<Integer, CR> BERNOULLI_CACHE = new HashMap<>();
+
+  private static CR bernoulli(final int k) {
+    final CR res = BERNOULLI_CACHE.get(k);
+    if (res != null) {
+      return res;
+    }
+    final Q b2k = BERNOULLI_SEQUENCE.get(2L * k);
+    final Q c = b2k.divide(2L * k).divide(2L * k - 1);
+    final CR b = CR.valueOf(c);
+    BERNOULLI_CACHE.put(k, b);
+    return b;
+  }
 
   PrescaledLnGamma(final CR x) {
     if (x.signum(32) < 0) {
@@ -34,25 +49,25 @@ class PrescaledLnGamma extends CR {
 
     // See D. E. G. Hare, "Computing the Principal Branch of log-Gamma"
     // Use lgamma(z) = lgamma(z+1) - ln(z), to increase z >> 1
+    //StringUtils.message("Starting run up: " + p + " " + System.identityHashCode(this));
     final int runUp = 1 + (int) (-0.5 * p / DIGITS_TO_BITS);
-    while (mShift < runUp) {
-      mProd = mProd.multiply(mX.add(CR.valueOf(mShift)));
-      ++mShift;
+    Z currentSum = Z.ZERO;
+    for (int k = 0; k < runUp; ++k) {
+      final Z a = mX.add(CR.valueOf(k)).log().approximate(p);
+      currentSum = currentSum.add(a);
     }
     final CR z = mX.add(CR.valueOf(runUp));
-    final CR u = C1.subtract(z).add(z.subtract(HALF).multiply(z.log()));
-    Z currentSum = u.subtract(mProd.log()).approximate(p);
+    currentSum = C1.subtract(z).add(z.subtract(HALF).multiply(z.log())).approximate(p).subtract(currentSum);
 
+   // StringUtils.message("Starting bernoulli");
     // Use Bernoulli series
-    final BernoulliSequence bernoulli = new BernoulliSequence(0);
     int k = 0;
     while (true) {
-      if (Thread.interrupted() || sPleaseStop) {
-        throw new AbortedError();
-      }
-      final Q b2k = bernoulli.get(2L * ++k);
-      final Q c = b2k.divide(2L * k).divide(2L * k - 1);
-      final CR t = CR.valueOf(c).divide(ComputableReals.SINGLETON.pow(z, 2L * k - 1));
+//      final Z ta = bernoulli(++k).approximate(p);
+//      final Z tb = ComputableReals.SINGLETON.pow(z, 2L * k - 1).approximate(p);
+//      final Z currentTerm = ta.divide(tb);
+
+      final CR t = bernoulli(++k).divide(ComputableReals.SINGLETON.pow(z, 2L * k - 1));
       final Z currentTerm = t.approximate(p);
       if (Z.ZERO.equals(currentTerm)) {
         break;
@@ -60,6 +75,7 @@ class PrescaledLnGamma extends CR {
       currentSum = currentSum.add(currentTerm);
       //System.out.println("Current sum is now " + currentSum + " ct=" + currentTerm);
     }
+    //StringUtils.message("Done");
     return currentSum;
   }
 

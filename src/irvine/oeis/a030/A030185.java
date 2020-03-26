@@ -1,0 +1,40 @@
+package irvine.oeis.a030;
+
+import java.util.Collections;
+
+import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000521;
+import irvine.oeis.a145.A145200;
+
+/**
+ * A030185 Coefficients in expansion of <code>E_2*E_4/(E_6*j)</code> in powers of <code>1/j</code>.
+ * @author Sean A. Irvine
+ */
+public class A030185 extends MemorySequence {
+
+  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private final Sequence mTSeq = new A145200();
+  private final Sequence mUSeq = new A000521();
+  private final Polynomial<Z> mT = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mU = RING.create(Collections.emptyList()); // = x * A000521(x)
+
+  {
+    next(); // skip leading 0
+  }
+
+  @Override
+  protected Z computeNext() {
+    mT.add(mTSeq.next());
+    mU.add(mUSeq.next());
+    Polynomial<Z> s = mT;
+    for (int k = 0; k < size(); ++k) {
+      s = RING.subtract(s, RING.series(RING.monomial(get(k), k), RING.pow(mU, k, size()), size()));
+    }
+    return s.coeff(size());
+  }
+}

@@ -91,7 +91,6 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
 
   void setTriangle(final int i, final int x, final int y, final int colour) {
     ((TriangleSet) mSet).setTriangle(i, x, y, colour);
-
   }
 
   void initMonoiamond() {
@@ -114,6 +113,10 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
 
   CoordSet2T mirrorVert() {
     return mirror(-1, 1, 0, 1);
+  }
+
+  CoordSet2T mirrorHoriz() {
+    return mirror(1, -1, 0, 1);
   }
 
   private CoordSet2T mirror(final int xm, final int ym, final int x, final int y) {
@@ -245,7 +248,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
       int pos = getX(i);
       final StringBuilder tmp = new StringBuilder(CoordSet2.TRANSFORM.substring(pos, pos + 1));
       pos = getY(i);
-      tmp.append(CoordSet2.TRANSFORM.substring(pos, pos + 1));
+      tmp.append(CoordSet2.TRANSFORM, pos, pos + 1);
       if (withColour) {
         tmp.append(Square.colourString(mAllColours, mSet.getColour(i)));
       }
@@ -258,7 +261,7 @@ public class CoordSet2T extends CoordSetGen<Triangle> {
     final StringBuilder ret = new StringBuilder();
     for (int i = 0; i < mSize; ++i) {
       final int col = getColour(i);
-      ret.append(CoordSet2.TRANSFORM.substring(col, col + 1));
+      ret.append(CoordSet2.TRANSFORM, col, col + 1);
     }
     return ret.toString();
   }

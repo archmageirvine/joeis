@@ -82,4 +82,42 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     }
     list.add(p);
   }
+
+  public boolean isBilateralSymmetric() {
+    final CoordSet2T coords = (CoordSet2T) mCs;
+//    System.out.println("Testing:");
+//    System.out.println(coords.makeDiagram());
+    if (coords.mirrorVert().makeDiagram().equals(coords.makeDiagram())) {
+    //  System.out.println("Simple");
+      return true;
+    }
+    if (coords.mirrorHoriz().makeDiagram().equals(coords.makeDiagram())) {
+    //  System.out.println("SimpleH");
+      return true;
+    }
+    final CoordSet2T rot60 = coords.rotate60();
+    if (rot60.mirrorVert().makeDiagram().equals(rot60.makeDiagram())) {
+    //  System.out.println("rot60");
+      return true;
+    }
+    if (rot60.mirrorHoriz().makeDiagram().equals(rot60.makeDiagram())) {
+    //  System.out.println("rot60H");
+      return true;
+    }
+    final CoordSet2T rot120 = rot60.rotate60();
+//    System.out.println("rot120=");
+//    System.out.println(rot120.makeDiagram());
+//    System.out.println("cf");
+//    System.out.println(rot120.mirrorVert().makeDiagram());
+    if (rot120.mirrorVert().makeDiagram().equals(rot120.makeDiagram())) {
+    //  System.out.println("rot120");
+      return true;
+    }
+    if (rot120.mirrorHoriz().makeDiagram().equals(rot120.makeDiagram())) {
+//      System.out.println("rot120H");
+      return true;
+    }
+  //  System.out.println("NOT BILATERALLY SYMMETRIC");
+    return false;
+  }
 }

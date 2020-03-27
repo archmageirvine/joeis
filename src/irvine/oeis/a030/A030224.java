@@ -8,10 +8,10 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A030223.
+ * A030224.
  * @author Sean A. Irvine
  */
-public class A030223 implements Sequence {
+public class A030224 implements Sequence {
 
   private int mN = 0;
   private ArrayList<Polyiamond> mPrevList = null;
@@ -23,7 +23,7 @@ public class A030223 implements Sequence {
     mPrevList = pc.getList();
     long c = 0;
     for (final Polyiamond p : mPrevList) {
-      if (p.isBilateralSymmetric()) {
+      if (!p.isBilateralSymmetric()) {
         ++c;
       }
     }

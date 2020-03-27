@@ -1,11 +1,11 @@
 package irvine.oeis.a030;
 
+import java.util.HashSet;
+
 import irvine.math.Polyomino;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Point;
-
-import java.util.HashSet;
 
 /**
  * A030222 Number of <code>n-polyplets</code> (polyominoes connected at edges or corners); may contain holes.
@@ -17,6 +17,14 @@ public class A030222 implements Sequence {
 
   private static final int[] DX = {0, 0, 1, -1, 1, 1, -1, -1};
   private static final int[] DY = {1, -1, 0, 0, 1, -1, 1, -1};
+
+  protected Polyomino canon(final Polyomino p) {
+    return p.freeCanonical();
+  }
+
+  protected Z count(final HashSet<Polyomino> a) {
+    return Z.valueOf(a.size());
+  }
 
   @Override
   public Z next() {
@@ -35,7 +43,7 @@ public class A030222 implements Sequence {
             if (!p.contains(c)) {
               final Polyomino np = new Polyomino(p);
               np.add(c);
-              nextSet.add(np.freeCanonical());
+              nextSet.add(canon(np));
             }
           }
         }
@@ -43,6 +51,6 @@ public class A030222 implements Sequence {
       mA = nextSet;
       //System.out.println(mA);
     }
-    return Z.valueOf(mA.size());
+    return count(mA);
   }
 }

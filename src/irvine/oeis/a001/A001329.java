@@ -19,10 +19,10 @@ public class A001329 implements Sequence {
     return -1;
   }
 
-  protected Z innerSum(final int[] j, final int lcm) {
+  protected Z innerSum(final int[] j, final int m) {
     Z sum = Z.ZERO;
     for (int d = 1; d < j.length; ++d) {
-      if (lcm % d == 0) {
+      if (m % d == 0) {
         sum = sum.add(d * j[d]);
       }
     }

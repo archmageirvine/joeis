@@ -1257,3 +1257,29 @@ A030126 Schur's numbers (version 1), hard, for small number of terms
 A030128 Steiner triple systems (STS's) on n elements, hard
 A030129 Number of nonisomorphic Steiner triple systems (STS's) S(2,3,n) on n points, hard
 A030131 Site percolation series for hexagonal net
+A030241 Minimal determinant of any n-dimensional even lattice, not on indicated page?
+A030242 Number of n-point nonisomorphic relations with no symmetry
+A030243 Number of nonisomorphic relations with a nontrivial symmetry
+A030244 Number of connected nonisomorphic relations with no symmetry
+A030245 Number of nonisomorphic groupoids with no symmetry
+A030246 Number of nonisomorphic groupoids with a nontrivial symmetry
+A030248 Number of nonisomorphic idempotent groupoids with no symmetry
+A030249 Number of nonisomorphic idempotent groupoids with a nontrivial symmetry
+A030250 Number of nonisomorphic groupoids with no idempotents
+A030251 Number of nonisomorphic groupoids with no idempotents and no symmetry
+A030252 Number of nonisomorphic groupoids with no idempotents and a nontrivial symmetry
+A030253 Number of nonisomorphic groupoids with 1 idempotent
+A030254 Number of nonisomorphic groupoids with 1 idempotent and a nontrivial symmetry
+A030255 Number of nonisomorphic commutative groupoids with no symmetry
+A030256 Number of nonisomorphic commutative groupoids with a nontrivial symmetry
+A030258 Number of nonisomorphic commutative idempotent groupoids with no symmetry
+A030259 Number of nonisomorphic commutative idempotent groupoids with a nontrivial symmetry
+A030260 Number of nonisomorphic commutative groupoids with no idempotents
+A030261 Number of nonisomorphic commutative groupoids with no idempotents and no symmetry
+A030262 Number of nonisomorphic commutative groupoids with no idempotents and a nontrivial symmetry
+A030263 Number of nonisomorphic commutative groupoids with 1 idempotent
+A030264 Number of nonisomorphic commutative groupoids with 1 idempotent and no symmetry
+A030265 Number of nonisomorphic commutative groupoids with 1 idempotent and a nontrivial symmetry
+A030268 Number of nonisomorphic connected partial lattices, depends on A006966
+A030269 Number of nonisomorphic disconnected partial lattices, depends on A006966
+A030271 Number of nonisomorphic groupoids with 1 idempotent and no symmetry

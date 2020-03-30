@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030201.
+ * A030201 Expansion of <code>eta(q^3)*eta(q^21)</code>.
  * @author Sean A. Irvine
  */
 public class A030201 implements Sequence {

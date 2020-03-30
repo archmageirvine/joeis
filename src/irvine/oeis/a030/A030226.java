@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000228;
 import irvine.oeis.a006.A006535;
 
 /**
- * A030226.
+ * A030226 Number of n-celled polyhexes (hexagonal polyominoes) without bilateral symmetry.
  * @author Sean A. Irvine
  */
 public class A030226 extends A000228 {

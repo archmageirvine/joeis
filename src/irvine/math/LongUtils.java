@@ -673,7 +673,23 @@ public final class LongUtils {
     }
     return res;
   }
+
+  /**
+   * Return the syndrome of a number; that is, a number with a bit set for each
+   * distinct digit of the given number.
+   * @param n number to get syndrome of
+   * @return syndrome
+   */
+  public static int syndrome(long n) {
+    int s = 0;
+    while (n != 0) {
+      s |= 1 << (n % 10);
+      n /= 10;
+    }
+    return s;
+  }
 }
+
 
 
 

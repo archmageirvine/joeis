@@ -1,5 +1,6 @@
 package irvine.oeis.a249;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -10,15 +11,6 @@ import irvine.oeis.Sequence;
 public class A249517 implements Sequence {
 
   private long mN = -1;
-
-  private static int syndrome(long n) {
-    int s = 0;
-    while (n != 0) {
-      s |= 1 << (n % 10);
-      n /= 10;
-    }
-    return s;
-  }
 
   private static boolean test(long n) {
     // NB this gives wrong answer for n == 0 due to init of p == 1
@@ -36,7 +28,7 @@ public class A249517 implements Sequence {
         return false; // will never match
       }
     }
-    return s == syndrome(d) && s == syndrome(p);
+    return s == LongUtils.syndrome(d) && s == LongUtils.syndrome(p);
   }
 
   @Override

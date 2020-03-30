@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000295;
 import irvine.oeis.a008.A008292;
 
 /**
- * A030196.
+ * A030196 Distinct elements occurring in triangle of Eulerian numbers (sorted).
  * @author Sean A. Irvine
  */
 public class A030196 extends A000295 {

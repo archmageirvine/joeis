@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A030194.
+ * A030194 Let S = triangular numbers; <code>a(0)=0; a(n) =</code> smallest m such that m <code>- a(i)</code> is not in S for any i <code>&lt; n</code>.
  * @author Sean A. Irvine
  */
 public class A030194 extends MemorySequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030230.
+ * A030230 Numbers n such that number of distinct primes dividing n is odd.
  * @author Sean A. Irvine
  */
 public class A030230 implements Sequence {

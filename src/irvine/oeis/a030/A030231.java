@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030231.
+ * A030231 Number of distinct primes dividing n is even.
  * @author Sean A. Irvine
  */
 public class A030231 implements Sequence {

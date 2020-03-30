@@ -1,6 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -18,7 +19,8 @@ public class A020667 implements Sequence {
     }
     Z m = Z.TWO;
     Z power;
-    while (A020666.syndrome(power = m.pow(mN)) != 0b1111111111) {
+    Z n = power = m.pow(mN);
+    while (ZUtils.syn(n) != 0b1111111111) {
       m = m.add(1);
     }
     return power;

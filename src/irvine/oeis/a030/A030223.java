@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A030223.
+ * A030223 Triangular polyominoes <code>(n-iamonds)</code> with bilateral symmetry (holes are allowed).
  * @author Sean A. Irvine
  */
 public class A030223 implements Sequence {

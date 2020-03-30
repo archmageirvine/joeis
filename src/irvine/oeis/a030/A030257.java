@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001329;
 
 /**
- * A030257.
+ * A030257 Number of nonisomorphic commutative idempotent groupoids.
  * @author Sean A. Irvine
  */
 public class A030257 extends A001329 {

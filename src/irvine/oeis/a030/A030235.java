@@ -6,7 +6,7 @@ import irvine.math.Polyomino;
 import irvine.math.z.Z;
 
 /**
- * A030235.
+ * A030235 Number of n-celled polyplets without bilateral symmetry.
  * @author Sean A. Irvine
  */
 public class A030235 extends A030222 {

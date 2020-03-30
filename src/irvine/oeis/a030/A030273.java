@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030273.
+ * A030273 Number of partitions of <code>n^2</code> into distinct squares.
  * @author Sean A. Irvine
  */
 public class A030273 extends MemoryFunction2<Long, Z> implements Sequence {

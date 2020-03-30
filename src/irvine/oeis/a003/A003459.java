@@ -1,6 +1,7 @@
 package irvine.oeis.a003;
 
 import irvine.factor.prime.Fast;
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Permutation;
@@ -20,15 +21,6 @@ public class A003459 implements Sequence {
   private final Fast mPrime = new Fast();
   private long mP = 1;
   private Z mR = new Z("111111111111111111");
-
-  private int syndrome(long p) {
-    int s = 0;
-    while (p != 0) {
-      s |= 1 << (p % 10);
-      p /= 10;
-    }
-    return s;
-  }
 
   private boolean testPermutations(final long prime) {
     final String s = String.valueOf(prime);
@@ -54,7 +46,7 @@ public class A003459 implements Sequence {
       if (mP <= 7) {
         return Z.valueOf(mP);
       }
-      final int syndrome = syndrome(mP);
+      final int syndrome = LongUtils.syndrome(mP);
       if ((syndrome & ~MASK) == 0 && (syndrome & MASK) != MASK && testPermutations(mP)) {
         return Z.valueOf(mP);
       }

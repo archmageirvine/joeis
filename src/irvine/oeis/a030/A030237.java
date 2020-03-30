@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030237.
+ * A030237 Catalan's triangle with right border removed <code>(n &gt; 0, 0 &lt;= k &lt; n)</code>.
  * @author Sean A. Irvine
  */
 public class A030237 implements Sequence {

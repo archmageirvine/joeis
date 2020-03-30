@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030266.
+ * A030266 Shifts left under COMPOSE transform with itself.
  * @author Sean A. Irvine
  */
 public class A030266 implements Sequence {

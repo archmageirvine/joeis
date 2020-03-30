@@ -1,30 +1,33 @@
 package irvine.oeis.a030;
 
-import irvine.math.group.PolynomialRing;
-import irvine.math.polynomial.Polynomial;
-import irvine.math.z.Integers;
+import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030272.
+ * A030272 Number of partitions of <code>n^3</code> into distinct cubes.
  * @author Sean A. Irvine
  */
-public class A030272 implements Sequence {
+public class A030272 extends MemoryFunction2<Long, Z> implements Sequence {
 
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private int mN = -1;
+  private long mN = -1;
+
+  @Override
+  protected Z compute(final Long n, final Long m) {
+    if (n == 0) {
+      return Z.ONE;
+    }
+    final long t = m * (m + 1);
+    if (n > t * t / 4) {
+      // n exceeds sum(k^3,k=1..n)
+      return Z.ZERO;
+    }
+    final Z a = get(n, m - 1);
+    return m * m * m > n ? a : a.add(get(n - m * m * m, m - 1));
+  }
 
   @Override
   public Z next() {
-    if (++mN > 1290) {
-      throw new UnsupportedOperationException();
-    }
-    final int cube = mN * mN * mN;
-    Polynomial<Z> prod = RING.one();
-    for (int k = 1; k <= mN; ++k) {
-      prod = RING.multiply(prod, RING.onePlusXToTheN(k * k * k), cube);
-    }
-    return prod.coeff(cube);
+    return get(++mN * mN * mN, mN);
   }
 }

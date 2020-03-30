@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000105;
 import irvine.oeis.a000.A000988;
 
 /**
- * A030227.
+ * A030227 Number of achiral polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A030227 extends A000105 {

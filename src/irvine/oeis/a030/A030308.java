@@ -13,7 +13,7 @@ public class A030308 implements Sequence {
  
   private StringBuilder mS = new StringBuilder();
   private int mPos = 0;
-  private Z mN = Z.valueOf(0 - 1);
+  private Z mN = Z.NEG_ONE;
 
   @Override
   public Z next() {

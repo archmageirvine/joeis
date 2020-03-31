@@ -1,5 +1,7 @@
 package irvine.math.cr;
 
+import java.util.Iterator;
+
 import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.HyperbolicTrigonometric;
@@ -10,8 +12,6 @@ import irvine.math.generic.HyperbolicTrigonometricImpl;
 import irvine.math.group.AbstractOrderedField;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
-
-import java.util.Iterator;
 
 /**
  * Field of real numbers under addition and multiplication.
@@ -161,6 +161,10 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
   @Override
   public CR cot(final CR n) {
     return UnaryCRFunction.TAN.execute(n).inverse();
+  }
+
+  public CR csc(final CR n) {
+    return n.sin().inverse();
   }
 
   @Override

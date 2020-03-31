@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A050997.
+ * A050997 Fifth powers of primes.
  * @author Sean A. Irvine
  */
 public class A050997 extends A000040 {

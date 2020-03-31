@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030293.
+ * A030293 Cubes with at most two different digits.
  * @author Sean A. Irvine
  */
 public class A030293 implements Sequence {

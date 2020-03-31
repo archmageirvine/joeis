@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030296.
+ * A030296 Smallest start for a run of at least n composite numbers.
  * @author Sean A. Irvine
  */
 public class A030296 implements Sequence {

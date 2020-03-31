@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030300.
+ * A030300 Runs have lengths <code>2^n, n &gt;= 0</code>.
  * @author Sean A. Irvine
  */
 public class A030300 implements Sequence {

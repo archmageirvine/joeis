@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 
 /**
- * A333187.
+ * A333188 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A333188 extends A333187 {

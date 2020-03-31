@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002385;
 
 /**
- * A030286.
+ * A030286 Palindromic primes whose digits do not appear in previous term.
  * @author Sean A. Irvine
  */
 public class A030286 extends A002385 {

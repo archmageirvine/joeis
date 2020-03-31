@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030291.
+ * A030291 Primes with at most two different digits.
  * @author Sean A. Irvine
  */
 public class A030291 extends A000040 {

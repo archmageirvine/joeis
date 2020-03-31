@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a002.A002113;
 
 /**
- * A030285.
+ * A030285 Palindromes whose digits do not appear in previous term.
  * @author Sean A. Irvine
  */
 public class A030285 extends A002113 {

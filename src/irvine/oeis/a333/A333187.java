@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333187.
+ * A333187 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A333187 implements Sequence {

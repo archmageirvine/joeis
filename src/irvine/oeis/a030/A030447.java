@@ -6,22 +6,18 @@ import jmason.poly.ChildGeneratorFactory;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A030446.
+ * A030447.
  * @author Sean A. Irvine
  */
-public class A030446 implements Sequence {
+public class A030447 implements Sequence {
 
   private int mMax = 0;
 
-  protected Z count(final PolyominoCounter pc) {
-    return Z.valueOf(pc.getCu().getCounter(mMax));
-  }
-
   @Override
   public Z next() {
-    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
+    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, true);
     pc.setGenerator(ChildGeneratorFactory.POLYKNIGHT_GENERATOR);
     pc.run(true, false, false);
-    return count(pc);
+    return Z.valueOf(pc.getCu().getCounter(mMax) - pc.getAsymmetricCounter().getCounter(mMax));
   }
 }

@@ -1,6 +1,7 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A counter of polyominoes.
@@ -34,14 +35,14 @@ public class PolyiamondCounter {
    * @param prevList previous results
    * @param optim optimization flag
    */
-  public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided, final ArrayList<Polyiamond> prevList, final boolean optim) {
+  public void run(final boolean flagFree, final boolean flagFixed, final boolean flagOneSided, final List<Polyiamond> prevList, final boolean optim) {
     if (prevList == null || !optim) {
       final CoordSet2T cs = new CoordSet2T(1, flagFree, flagFixed, flagOneSided);
       cs.initMonoiamond();
       count(1, mMax, new Polyiamond(cs), optim);
     } else {
       for (final Polyiamond p : prevList) {
-        final ArrayList<Polyiamond> sons = p.listSons(0); // guarantee of uniqueness
+        final List<Polyiamond> sons = p.listSons(0); // guarantee of uniqueness
         for (final Polyiamond son : sons) {
           count(mMax, mMax, son, optim);
         }
@@ -68,7 +69,7 @@ public class PolyiamondCounter {
     }
   }
 
-  public ArrayList<Polyiamond> getList() {
+  public List<Polyiamond> getList() {
     return mList;
   }
 }

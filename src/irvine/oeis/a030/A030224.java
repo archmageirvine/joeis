@@ -1,6 +1,6 @@
 package irvine.oeis.a030;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -14,7 +14,7 @@ import jmason.poly.PolyiamondCounter;
 public class A030224 implements Sequence {
 
   private int mN = 0;
-  private ArrayList<Polyiamond> mPrevList = null;
+  private List<Polyiamond> mPrevList = null;
 
   @Override
   public Z next() {

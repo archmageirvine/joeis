@@ -30,9 +30,9 @@ public class PolyominoCounter {
     return mUnbcu;
   }
 
-//  public Cumulator getAssymcu() {
-//    return mAssymcu;
-//  }
+  public Cumulator getAsymmetricCounter() {
+    return mAssymcu;
+  }
 
   public Cumulator getMbcu() {
     return mMbcu;

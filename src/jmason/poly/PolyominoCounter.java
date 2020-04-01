@@ -20,6 +20,7 @@ public class PolyominoCounter {
 
   private final int mMax;
   private final UTest mUt;
+  private ChildGenerator mGen = ChildGeneratorFactory.POLYOMINO_GENERATOR;
 
   public Cumulator getCu() {
     return mCu;
@@ -38,9 +39,9 @@ public class PolyominoCounter {
   }
 
   /**
-   * Count polyominoes
+   * Count polyominoes.
    * @param max maximum size
-   * @param onlyUnbiased only could unbiased
+   * @param onlyUnbiased only count unbiased
    * @param onlyMaxBiased only count maximally biased
    * @param wantSym count symmetric cases
    */
@@ -62,7 +63,7 @@ public class PolyominoCounter {
   }
 
   /**
-   * Do the processing
+   * Do the processing.
    * @param flagFree free
    * @param flagFixed fixed
    * @param flagOneSided one-sided
@@ -124,9 +125,13 @@ public class PolyominoCounter {
           }
         }
       }
-      for (final Polyomino son : p.listSons(onlyIfColour)) {
+      for (final Polyomino son : p.listSons(mGen, onlyIfColour)) {
         count(c + 1, max, son);
       }
     }
+  }
+
+  public void setGenerator(final ChildGenerator gen) {
+    mGen = gen;
   }
 }

@@ -1,6 +1,7 @@
 package jmason.poly;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * An integral polyomino.
@@ -8,7 +9,8 @@ import java.util.ArrayList;
  */
 public class Polyomino extends PolyGen<Square, CoordSet2> {
 
-  private boolean mBHoly, mBHolyCalculated;
+  private boolean mBHoly;
+  private boolean mBHolyCalculated;
 
   // build a polyomino cloning a coordinate set
   Polyomino(final CoordSet2 c) {
@@ -86,25 +88,12 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   }
 
   // build a list (without duplicates) of polyominoes that may be generated from current
-  ArrayList<Polyomino> listSons(final int addOnlyToColour) {
-    final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
-
-    for (int i = 0; i < size(); i++) {
-      if (addOnlyToColour != 0 && mCs.getColour(i) != addOnlyToColour) {
-        continue;
-      }
-      trySquare(i, 1, 0, list, h, hc);
-      trySquare(i, -1, 0, list, h, hc);
-      trySquare(i, 0, 1, list, h, hc);
-      trySquare(i, 0, -1, list, h, hc);
-    }
-    return list;
+  protected List<Polyomino> listSons(final ChildGenerator gen, final int addOnlyToColour) {
+    return gen.listSons(this, addOnlyToColour);
   }
 
   // try to build a polyomino adding a specific square to current
-  private void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
+  protected void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {

@@ -19,8 +19,7 @@ public class A020667 implements Sequence {
     }
     Z m = Z.TWO;
     Z power;
-    Z n = power = m.pow(mN);
-    while (ZUtils.syn(n) != 0b1111111111) {
+    while (ZUtils.syn(power = m.pow(mN)) != 0b1111111111) {
       m = m.add(1);
     }
     return power;

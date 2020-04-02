@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030432.
+ * A030432 Primes of form <code>10n+7</code>.
  * @author Sean A. Irvine
  */
 public class A030432 implements Sequence {

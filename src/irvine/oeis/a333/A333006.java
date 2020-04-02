@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333006.
+ * A333006 allocated for Mathilde Bouvel.
  * @author Sean A. Irvine
  */
 public class A333006 implements Sequence {

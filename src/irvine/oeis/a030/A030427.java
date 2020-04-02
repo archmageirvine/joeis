@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030427.
+ * A030427 <code>a(n) = prime(Fibonacci(n))</code>.
  * @author Sean A. Irvine
  */
 public class A030427 extends A000040 {

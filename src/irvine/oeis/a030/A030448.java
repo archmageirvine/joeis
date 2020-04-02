@@ -6,7 +6,7 @@ import jmason.poly.ChildGeneratorFactory;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A030448.
+ * A030448 Number of n-celled polyknights without bilateral symmetry.
  * @author Sean A. Irvine
  */
 public class A030448 implements Sequence {

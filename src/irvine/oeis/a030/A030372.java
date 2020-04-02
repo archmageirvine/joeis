@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030372.
+ * A030372 <code>(# 1's)-(# 2's)</code> in first n terms of <code>A030363</code>.
  * @author Sean A. Irvine
  */
 public class A030372 extends A030363 {

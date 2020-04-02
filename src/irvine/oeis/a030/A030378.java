@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A030378.
+ * A030378 Least k such that base 4 representation of n begins at <code>s(k)</code>, where <code>s=A030373</code>.
  * @author Sean A. Irvine
  */
 public class A030378 implements Sequence {

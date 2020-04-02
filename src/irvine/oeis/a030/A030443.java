@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003781;
 
 /**
- * A030443.
+ * A030443 Nonzero coefficients in theta series of <code>{E_7}*</code> lattice.
  * @author Sean A. Irvine
  */
 public class A030443 extends A003781 {

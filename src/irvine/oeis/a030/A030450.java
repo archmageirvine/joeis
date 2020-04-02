@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030450.
+ * A030450 Related to number of elements in the free band (idempotent semigroup) on n generators.
  * @author Sean A. Irvine
  */
 public class A030450 implements Sequence {

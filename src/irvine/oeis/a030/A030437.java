@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A106533 The rumor constant: decimal expansion of the number x defined by <code>x*e^(2 - 2*x) = 1</code>.
+ * A030437 Decimal expansion of x such that <code>x^x = Pi</code>.
  * @author Sean A. Irvine
  */
 public class A030437 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030422.
+ * A030422 Length of n-th run of digit 3 in <code>A030413</code>.
  * @author Sean A. Irvine
  */
 public class A030422 extends A030413 {

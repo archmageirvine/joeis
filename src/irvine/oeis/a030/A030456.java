@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030456.
+ * A030456 <code>a(0) = 2; a(n)</code> is smallest prime containing <code>a(n-1)</code> as substring.
  * @author Sean A. Irvine
  */
 public class A030456 implements Sequence {

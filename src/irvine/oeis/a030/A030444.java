@@ -6,7 +6,7 @@ import jmason.poly.ChildGeneratorFactory;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A030444.
+ * A030444 Number of fixed n-celled polyknights.
  * @author Sean A. Irvine
  */
 public class A030444 implements Sequence {

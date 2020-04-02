@@ -1,0 +1,24 @@
+package irvine.oeis.a030;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A030458 Primes formed by concatenating n with <code>n+1</code>.
+ * @author Sean A. Irvine
+ */
+public class A030458 implements Sequence {
+
+  private long mN = 0;
+
+  @Override
+  public Z next() {
+    while (true) {
+      mN += 2;
+      Z p;
+      if (mN % 3 != 1 && mN % 5 != 4 && (p = new Z(mN + String.valueOf(mN + 1))).isProbablePrime()) {
+        return p;
+      }
+    }
+  }
+}

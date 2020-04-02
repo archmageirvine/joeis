@@ -6,7 +6,7 @@ import jmason.poly.ChildGeneratorFactory;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A030446.
+ * A030446 Number of n-celled polyknights (polyominoes connected by knight's moves).
  * @author Sean A. Irvine
  */
 public class A030446 implements Sequence {

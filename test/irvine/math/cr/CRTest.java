@@ -154,8 +154,10 @@ public class CRTest extends TestCase {
 
   public void testLnGamma() {
     assertEqualsApproximate("lnGamma(1/2)", CR.PI.sqrt().log().doubleValue(), CR.HALF.lnGamma().doubleValue());
-    for (long k = 1, f = 1; k <= 10; f *= k, ++k) {
-      assertEqualsApproximate(k + "!", Math.log(f), CR.valueOf(k).lnGamma().doubleValue());
+    for (long k = 2, f = 1; k <= 10; f *= k, ++k) {
+      final double a = Math.log(f);
+      final double b = CR.valueOf(k).lnGamma().doubleValue();
+      assertEqualsApproximate(k + "! " + a + " " + b, a, b);
     }
   }
 

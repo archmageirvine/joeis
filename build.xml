@@ -130,6 +130,40 @@
     </jar>
   </target>
 
+  <target name="z-jar" description="Make a jar for Z big integer arithmetic" depends="compile-src,compile-internal,compile-test">
+    <jar destfile="${build.dir}/z.jar" update="false">
+      <fileset dir="${build.dir}/classes" includes="irvine/math/z/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/api/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/group/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/set/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/r/Constants.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/r/DoubleUtils.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/IntegerUtils.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/LongUtils.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/MemoryFunction2.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/factor/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/factorial/Factorial.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/math/factorial/MemoryFactorial.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/util/AbstractIterator.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/util/Pair.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/util/io/**/*.class"/>
+      <fileset dir="${build.dir}/classes" includes="irvine/util/string/StringUtils.class"/>
+      <fileset dir="${src.dir}" includes="irvine/math/z/fibonacci/*.dat"/>
+
+      <!-- Stuff only needed for unit tests -->
+      <fileset dir="${build.dir}/classes" includes="irvine/StandardIoTestCase.class"/>
+      <fileset dir="${src.dir}" includes="irvine/oeis/a046/a046461.dat"/>
+      <zipfileset src="${lib.dir}/junit.jar" excludes="META-INF/**"/>
+
+      <manifest>
+        <attribute name="Main-Class" value="irvine.math.z.AllTests"/>
+        <attribute name="Implementation-Title" value="Z"/>
+        <attribute name="Implementation-Version" value="1.1"/>
+        <attribute name="Implementation-Vendor" value="Sean A. Irvine"/>
+      </manifest>
+    </jar>
+  </target>
+
   <!--
   <property name="pitest.dir" value="pitest"/>
   <path id="pitest.classpath">

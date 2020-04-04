@@ -1285,3 +1285,6 @@ A030269 Number of nonisomorphic disconnected partial lattices, depends on A00696
 A030271 Number of nonisomorphic groupoids with 1 idempotent and no symmetry
 A030453 Number of linearly ordered Abelian monoids of size n (semi-groups with greatest element of the corresponding chain as neutral element); triangular norms on an n-chain
 A030455 Numbers having the same number of digits as letters in their US English spelling, pretty dumb
+A030536 Expansion of Molien series for 32-D extraspecial group 2^{1+2*5}, rat g.f.?
+A030537 Expansion of Molien series for 64-D extraspecial group 2^{1+2*6}
+

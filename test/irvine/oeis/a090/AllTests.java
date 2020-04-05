@@ -39,6 +39,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A090133Test.class);
     suite.addTestSuite(A090134Test.class);
     suite.addTestSuite(A090139Test.class);
+    suite.addTestSuite(A090142Test.class);
+    suite.addTestSuite(A090143Test.class);
     suite.addTestSuite(A090166Test.class);
     suite.addTestSuite(A090167Test.class);
     suite.addTestSuite(A090168Test.class);
@@ -83,6 +85,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A090344Test.class);
     suite.addTestSuite(A090381Test.class);
     suite.addTestSuite(A090386Test.class);
+    suite.addTestSuite(A090388Test.class);
     suite.addTestSuite(A090390Test.class);
     suite.addTestSuite(A090391Test.class);
     suite.addTestSuite(A090392Test.class);
@@ -100,14 +103,17 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A090449Test.class);
     suite.addTestSuite(A090453Test.class);
     suite.addTestSuite(A090454Test.class);
+    suite.addTestSuite(A090458Test.class);
     suite.addTestSuite(A090466Test.class);
     suite.addTestSuite(A090468Test.class);
     suite.addTestSuite(A090470Test.class);
+    suite.addTestSuite(A090488Test.class);
     suite.addTestSuite(A090490Test.class);
     suite.addTestSuite(A090491Test.class);
     suite.addTestSuite(A090492Test.class);
     suite.addTestSuite(A090508Test.class);
     suite.addTestSuite(A090509Test.class);
+    suite.addTestSuite(A090551Test.class);
     suite.addTestSuite(A090570Test.class);
     suite.addTestSuite(A090572Test.class);
     suite.addTestSuite(A090579Test.class);
@@ -119,6 +125,9 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A090592Test.class);
     suite.addTestSuite(A090596Test.class);
     suite.addTestSuite(A090597Test.class);
+    suite.addTestSuite(A090611Test.class);
+    suite.addTestSuite(A090654Test.class);
+    suite.addTestSuite(A090656Test.class);
     suite.addTestSuite(A090666Test.class);
     suite.addTestSuite(A090667Test.class);
     suite.addTestSuite(A090692Test.class);

@@ -603,12 +603,14 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A169609Test.class);
     suite.addTestSuite(A169610Test.class);
     suite.addTestSuite(A169622Test.class);
+    suite.addTestSuite(A169624Test.class);
     suite.addTestSuite(A169630Test.class);
     suite.addTestSuite(A169634Test.class);
     suite.addTestSuite(A169642Test.class);
     suite.addTestSuite(A169651Test.class);
     suite.addTestSuite(A169661Test.class);
     suite.addTestSuite(A169667Test.class);
+    suite.addTestSuite(A169670Test.class);
     suite.addTestSuite(A169671Test.class);
     suite.addTestSuite(A169672Test.class);
     suite.addTestSuite(A169675Test.class);

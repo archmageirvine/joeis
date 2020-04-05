@@ -15,7 +15,6 @@ public class A002607 implements Sequence {
   private int mN = 0;
 
   @Override
-  @SuppressWarnings("unchecked")
   public Z next() {
     final int m = (int) Math.sqrt(++mN);
     Pair<Z, Z> sum = GI.zero();

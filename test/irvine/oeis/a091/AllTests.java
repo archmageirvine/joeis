@@ -37,6 +37,9 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A091103Test.class);
     suite.addTestSuite(A091104Test.class);
     suite.addTestSuite(A091105Test.class);
+    suite.addTestSuite(A091131Test.class);
+    suite.addTestSuite(A091132Test.class);
+    suite.addTestSuite(A091133Test.class);
     suite.addTestSuite(A091135Test.class);
     suite.addTestSuite(A091140Test.class);
     suite.addTestSuite(A091141Test.class);
@@ -61,11 +64,14 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A091426Test.class);
     suite.addTestSuite(A091434Test.class);
     suite.addTestSuite(A091435Test.class);
+    suite.addTestSuite(A091474Test.class);
+    suite.addTestSuite(A091476Test.class);
     suite.addTestSuite(A091496Test.class);
     suite.addTestSuite(A091498Test.class);
     suite.addTestSuite(A091520Test.class);
     suite.addTestSuite(A091526Test.class);
     suite.addTestSuite(A091527Test.class);
+    suite.addTestSuite(A091556Test.class);
     suite.addTestSuite(A091565Test.class);
     suite.addTestSuite(A091571Test.class);
     suite.addTestSuite(A091572Test.class);
@@ -75,6 +81,9 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A091628Test.class);
     suite.addTestSuite(A091629Test.class);
     suite.addTestSuite(A091650Test.class);
+    suite.addTestSuite(A091651Test.class);
+    suite.addTestSuite(A091667Test.class);
+    suite.addTestSuite(A091682Test.class);
     suite.addTestSuite(A091684Test.class);
     suite.addTestSuite(A091685Test.class);
     suite.addTestSuite(A091686Test.class);
@@ -106,6 +115,8 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A091881Test.class);
     suite.addTestSuite(A091882Test.class);
     suite.addTestSuite(A091883Test.class);
+    suite.addTestSuite(A091899Test.class);
+    suite.addTestSuite(A091900Test.class);
     suite.addTestSuite(A091903Test.class);
     suite.addTestSuite(A091904Test.class);
     suite.addTestSuite(A091905Test.class);
@@ -117,6 +128,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A091927Test.class);
     suite.addTestSuite(A091928Test.class);
     suite.addTestSuite(A091929Test.class);
+    suite.addTestSuite(A091933Test.class);
     suite.addTestSuite(A091940Test.class);
     suite.addTestSuite(A091949Test.class);
     suite.addTestSuite(A091950Test.class);

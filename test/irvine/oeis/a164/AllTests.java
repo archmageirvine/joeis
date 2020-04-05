@@ -13,6 +13,7 @@ public class AllTests extends TestSuite {
   public static Test suite() {
     final TestSuite suite = new TestSuite();
     suite.addTestSuite(A164001Test.class);
+    suite.addTestSuite(A164003Test.class);
     suite.addTestSuite(A164004Test.class);
     suite.addTestSuite(A164005Test.class);
     suite.addTestSuite(A164006Test.class);
@@ -63,6 +64,13 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A164096Test.class);
     suite.addTestSuite(A164097Test.class);
     suite.addTestSuite(A164102Test.class);
+    suite.addTestSuite(A164103Test.class);
+    suite.addTestSuite(A164104Test.class);
+    suite.addTestSuite(A164105Test.class);
+    suite.addTestSuite(A164106Test.class);
+    suite.addTestSuite(A164107Test.class);
+    suite.addTestSuite(A164108Test.class);
+    suite.addTestSuite(A164109Test.class);
     suite.addTestSuite(A164110Test.class);
     suite.addTestSuite(A164111Test.class);
     suite.addTestSuite(A164112Test.class);
@@ -381,6 +389,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A164827Test.class);
     suite.addTestSuite(A164828Test.class);
     suite.addTestSuite(A164832Test.class);
+    suite.addTestSuite(A164833Test.class);
     suite.addTestSuite(A164835Test.class);
     suite.addTestSuite(A164839Test.class);
     suite.addTestSuite(A164840Test.class);

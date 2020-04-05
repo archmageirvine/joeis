@@ -15,10 +15,10 @@ public class A003460 implements Sequence {
   public Z next() {
     final StringBuilder sb = new StringBuilder(mDragon);
     sb.append('1');
-    if (mDragon.length() > 0) {
+    if (!mDragon.isEmpty()) {
       final int flipPos = mDragon.length() / 2;
       final char mid = mDragon.charAt(flipPos);
-      sb.append(mDragon.substring(0, flipPos));
+      sb.append(mDragon, 0, flipPos);
       sb.append(mid == '0' ? '1' : '0');
       sb.append(mDragon.substring(flipPos + 1));
     }

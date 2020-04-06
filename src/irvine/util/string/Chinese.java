@@ -29,28 +29,28 @@ public final class Chinese extends AbstractLanguage {
     }
     final StringBuilder sb = new StringBuilder();
     if (x >= 10000) {
-      sb.append(M_DIGITS[x / 10000]).append("\u4e07");
+      sb.append(M_DIGITS[x / 10000]).append('\u4e07');
       x %= 10000;
     }
     if (x >= 1000) {
       if (x / 1000 > 1) {
         sb.append(M_DIGITS[x / 1000]);
       }
-      sb.append("\u5343");
+      sb.append('\u5343');
       x %= 1000;
     }
     if (x >= 100) {
       if (x / 100 > 1) {
         sb.append(M_DIGITS[x / 100]);
       }
-      sb.append("\u767e");
+      sb.append('\u767e');
       x %= 100;
     }
     if (x >= 10) {
       if (x / 10 > 1) {
         sb.append(M_DIGITS[x / 10]);
       }
-      sb.append("\u5341");
+      sb.append('\u5341');
       x %= 10;
     }
     if (x != 0) {

@@ -27,7 +27,7 @@ public class A030196 extends A000295 {
   public Z next() {
     if (mS.isEmpty() || mS.first().compareTo(mA) <= 0) {
       ++mRow;
-      for (long col = 2; col <= (mRow + 1) /2; ++col) {
+      for (long col = 2; col <= (mRow + 1) / 2; ++col) {
         mS.add(mEuler.get(mRow, col));
       }
       mA = super.next();

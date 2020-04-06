@@ -23,7 +23,7 @@ public class A030519 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Z t = mM.a(mN + 3).subtract(mM.a(mN + 2)).subtract(mM.a(mN+1).multiply(3)).add(mM.a(mN).multiply(3)).add(mLPrime.a(mN)).divide2();
+    final Z t = mM.a(mN + 3).subtract(mM.a(mN + 2)).subtract(mM.a(mN + 1).multiply(3)).add(mM.a(mN).multiply(3)).add(mLPrime.a(mN)).divide2();
     return mA.a(mN + 3).subtract(mA.a(mN + 2).multiply(9)).add(mA.a(mN + 1).multiply(25)).subtract(mA.a(mN).multiply(21)).add(t);
   }
 }

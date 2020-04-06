@@ -15,7 +15,7 @@ public class A030458 implements Sequence {
   public Z next() {
     while (true) {
       mN += 2;
-      Z p;
+      final Z p;
       if (mN % 3 != 1 && mN % 5 != 4 && (p = new Z(mN + String.valueOf(mN + 1))).isProbablePrime()) {
         return p;
       }

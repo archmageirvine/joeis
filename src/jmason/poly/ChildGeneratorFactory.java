@@ -30,6 +30,7 @@ public final class ChildGeneratorFactory {
     return list;
   };
 
+  /** Generator for polyknights. */
   public static final ChildGenerator POLYKNIGHT_GENERATOR = (polyomino, addOnlyToColour) -> {
     final ArrayList<Polyomino> list = new ArrayList<>();
     final UTest h = new UTest();

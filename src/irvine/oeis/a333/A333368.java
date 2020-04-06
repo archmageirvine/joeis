@@ -11,7 +11,7 @@ import irvine.oeis.a002.A002385;
  */
 public class A333368 extends A002385 {
 
-  private static class Node implements Comparable<Node> {
+  private static final class Node implements Comparable<Node> {
     final int mK;
     final int mM;
     final Z mV;

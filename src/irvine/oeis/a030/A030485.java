@@ -12,11 +12,11 @@ public class A030485 implements Sequence {
   // 1 -> 2, 2 -> 5, 0 -> 7
   // all terms of form ...25
 
-  private static long[] MAP = {7, 2, 5};
+  private static final long[] MAP = {7, 2, 5};
   private long mN = -1;
 
-  private Z to257(final long mN) {
-    long m = mN;
+  private Z to257(final long n) {
+    long m = n;
     Z t = Z.ONE;
     Z a = Z.ZERO;
     while (m > 0) {

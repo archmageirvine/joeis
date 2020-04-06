@@ -13,11 +13,9 @@ import irvine.math.z.Z;
  * can have the state UNKNOWN, COMPOSITE, PRIME, or PROB_PRIME. The
  * value -1 is given special treatment, so that when its exponent is
  * even it is silently suppressed.
- *
  * @author Sean A. Irvine
  */
 public final class FactorSequence {
-
   /** Number status is unknown */
   public static final int UNKNOWN = 0;
   /** Number is definitely composite */
@@ -30,7 +28,6 @@ public final class FactorSequence {
   public static final int YES = 1;
   /** Negative identification. */
   public static final int NO = 2;
-
   /** Used for special handling of -1. */
   private static final Z NEG_ONE = Z.NEG_ONE;
 
@@ -97,11 +94,9 @@ public final class FactorSequence {
   /** Stores the factors we know about */
   private final Map<Z, Factor> mFactors = new HashMap<>();
 
-
   /**
    * Add the integer n with the specified status, and increment
    * its exponent by the specified amount.
-   *
    * @param n integer to add
    * @param status status to use
    * @param exponent exponent for n
@@ -136,7 +131,6 @@ public final class FactorSequence {
 
   /**
    * Add integer n with the specified status.
-   *
    * @param n integer to add
    * @param status status to use
    */
@@ -146,7 +140,6 @@ public final class FactorSequence {
 
   /**
    * Add the specified integer with UNKNOWN status.
-   *
    * @param n integer to add
    */
   public final void add(final Z n) {
@@ -156,7 +149,6 @@ public final class FactorSequence {
   /**
    * Add the integer n with the specified status, and increment
    * its exponent by the specified amount.
-   *
    * @param n integer to add
    * @param status status to use
    * @param exponent exponent for n
@@ -167,7 +159,6 @@ public final class FactorSequence {
 
   /**
    * Add integer n with the specified status.
-   *
    * @param n integer to add
    * @param status status to use
    */
@@ -177,7 +168,6 @@ public final class FactorSequence {
 
   /**
    * Add the specified integer with UNKNOWN status.
-   *
    * @param n integer to add
    */
   public void add(final long n) {
@@ -186,7 +176,6 @@ public final class FactorSequence {
 
   /**
    * Remove the specified factor.
-   *
    * @param n factor to remove
    */
   public void remove(final Z n) {
@@ -196,7 +185,6 @@ public final class FactorSequence {
   /**
    * Get the exponent associated with the specified factor.
    * If the factor is not present then return 0.
-   *
    * @param n factor to get exponent for
    * @return exponent
    */
@@ -211,22 +199,17 @@ public final class FactorSequence {
   /**
    * Get the status associated with the specified factor.
    * If the factor is not present then return UNKNOWN.
-   *
    * @param n factor to get status for
    * @return status
    */
   public int getStatus(final Z n) {
     final Factor f = mFactors.get(n);
-    if (f == null) {
-      return UNKNOWN;
-    }
-    return f.mStatus;
+    return f == null ? UNKNOWN : f.mStatus;
   }
 
   /**
    * Test if every number in this factor sequence is a prime or probable
    * prime. Thus, this method can be used to check for a complete factorization.
-   *
    * @return true if the factorization is complete
    */
   public boolean isComplete() {
@@ -299,7 +282,6 @@ public final class FactorSequence {
 
   /**
    * Return all the integers in this FactorSequence. Sorted into ascending order.
-   *
    * @return array of integers
    */
   public Z[] toZArray() {
@@ -316,7 +298,6 @@ public final class FactorSequence {
    * the number formed by the product of all the values in the factor
    * sequence.  There is no guarantee on the order in which the divisors
    * will be presented.
-   *
    * @param completeCheck only produce divisors if factorization in
    * complete. In rare cases it might be useful to skip this test.
    * @return array of divisors
@@ -400,10 +381,8 @@ public final class FactorSequence {
    * the number formed by the product of all the values in the factor
    * sequence.  There is no guarantee on the order in which the divisors
    * will be presented.
-   *
    * @return array of divisors
-   * @exception ArithmeticException if the number of divisors exceeds
-   * 2^31.
+   * @exception ArithmeticException if the number of divisors exceeds 2^31.
    */
   public Z[] divisors() {
     return divisors(true);
@@ -421,7 +400,6 @@ public final class FactorSequence {
 
   /**
    * Return the sum of the divisors.
-   *
    * @return sum of the divisors
    * @exception UnsupportedOperationException if factor sequence is not completely
    * resolved to primes and probable primes.
@@ -498,7 +476,6 @@ public final class FactorSequence {
 
   /**
    * Return the sum of the divisors squared.
-   *
    * @return sum of the divisors squared
    * @exception UnsupportedOperationException if factor sequence is not completely
    * resolved to primes and probable primes.
@@ -509,7 +486,6 @@ public final class FactorSequence {
 
   /**
    * Merge the contents of another factor sequence into this sequence.
-   *
    * @param fs a <code>FactorSequence</code> value
    */
   public void merge(final FactorSequence fs) {
@@ -558,7 +534,6 @@ public final class FactorSequence {
 
   /**
    * Return a string representation of this factor sequence.
-   *
    * @return string version of factor sequence
    */
   public String toString() {
@@ -595,7 +570,6 @@ public final class FactorSequence {
    * Determine if this factor sequence represents a semiprime. That is, a product
    * of two primes.  It returns YES for a semiprime, NO for non-semiprime,
    * and UNKNOWN if the determination cannot be made.
-   *
    * @return semiprime status
    */
   public int isSemiprime() {
@@ -639,7 +613,6 @@ public final class FactorSequence {
 
   /**
    * Return the maximum exponent of any number in this factor sequence.
-   *
    * @return maximum exponent
    */
   public int maxExponent() {

@@ -11,11 +11,11 @@ public class A030484 implements Sequence {
 
   // 1 -> 2, 2 -> 5, 0 -> 6
 
-  private static long[] MAP = {6, 2, 5};
+  private static final long[] MAP = {6, 2, 5};
   private long mN = 0;
 
-  private Z to256(final long mN) {
-    long m = mN;
+  private Z to256(final long n) {
+    long m = n;
     Z t = Z.ONE;
     Z a = Z.ZERO;
     while (m > 0) {

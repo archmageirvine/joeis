@@ -2,6 +2,7 @@ package irvine.util.array;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * A long dynamic array of longs. See <code>LongDynamicArray</code> for a
@@ -117,6 +118,19 @@ public class LongDynamicLongArray implements Serializable {
         }
       }
     }
+  }
+
+  /**
+   * Return a deep copy of this array.
+   * @return copy
+   */
+  public LongDynamicLongArray copy() {
+    final LongDynamicLongArray res = new LongDynamicLongArray();
+    for (final long[] a : mChunks) {
+      res.mChunks.add(Arrays.copyOf(a, a.length));
+    }
+    res.mLength = mLength;
+    return res;
   }
 }
 

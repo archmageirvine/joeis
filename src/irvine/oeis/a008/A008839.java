@@ -1,6 +1,7 @@
 package irvine.oeis.a008;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -18,7 +19,7 @@ public class A008839 implements Sequence {
       if (++mN > 0) {
         mA = mA.multiply(5);
       }
-      if (mA.toString().indexOf('0') < 0) {
+      if (!ZUtils.containsZero(mA)) {
         return Z.valueOf(mN);
       }
     }

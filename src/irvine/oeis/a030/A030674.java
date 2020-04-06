@@ -1,0 +1,16 @@
+package irvine.oeis.a030;
+
+import irvine.math.z.Z;
+
+/**
+ * A030674 Cube root of <code>A030673</code>.
+ * @author Sean A. Irvine
+ */
+public class A030674 extends A030673 {
+
+  @Override
+  public Z next() {
+    return super.next().root(3);
+  }
+}
+

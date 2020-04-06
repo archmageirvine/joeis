@@ -1287,4 +1287,4 @@ A030453 Number of linearly ordered Abelian monoids of size n (semi-groups with g
 A030455 Numbers having the same number of digits as letters in their US English spelling, pretty dumb
 A030536 Expansion of Molien series for 32-D extraspecial group 2^{1+2*5}, rat g.f.?
 A030537 Expansion of Molien series for 64-D extraspecial group 2^{1+2*6}
-
+A030659 Smallest possible maximum denominator in an expression for 1 as a sum of n distinct unit (Egyptian) fractions, hard (backtrack I tried very slow)

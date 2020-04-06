@@ -12,24 +12,10 @@ public class A009101 implements Sequence {
 
   private long mN = -1;
 
-  private boolean containsZero(Z n) {
-    if (n.equals(Z.ZERO)) {
-      return true;
-    }
-    while (!Z.ZERO.equals(n)) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
-        return true;
-      }
-      n = qr[0];
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     Z m = Z.valueOf(++mN);
-    while (!containsZero(m)) {
+    while (!ZUtils.containsZero(m)) {
       m = m.add(ZUtils.digitProduct(m));
     }
     return m;

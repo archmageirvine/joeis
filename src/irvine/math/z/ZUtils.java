@@ -599,4 +599,24 @@ public final class ZUtils {
     }
     return true;
   }
+
+  /**
+   * Test if the decimal expansion of n contain a 0.
+   * @param n number to test
+   * @return true iff and n contains a zero
+   */
+  public static boolean containsZero(Z n) {
+    if (Z.ZERO.equals(n)) {
+      return true;
+    }
+    while (!Z.ZERO.equals(n)) {
+      final Z[] qr = n.divideAndRemainder(Z.TEN);
+      if (Z.ZERO.equals(qr[1])) {
+        return true;
+      }
+      n = qr[0];
+    }
+    return false;
+  }
+
 }

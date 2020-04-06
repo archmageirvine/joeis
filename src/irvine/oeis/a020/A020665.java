@@ -1,6 +1,7 @@
 package irvine.oeis.a020;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -15,18 +16,6 @@ public class A020665 implements Sequence {
 
   private long mN = 1;
 
-  private boolean containsZero(Z n) {
-    assert !Z.ZERO.equals(n);
-    while (!Z.ZERO.equals(n)) {
-      final Z[] qr = n.divideAndRemainder(Z.TEN);
-      if (Z.ZERO.equals(qr[1])) {
-        return true;
-      }
-      n = qr[0];
-    }
-    return false;
-  }
-
   @Override
   public Z next() {
     if (++mN % 10 == 0 || mN % 100 == 1) {
@@ -36,7 +25,7 @@ public class A020665 implements Sequence {
     Z t = Z.valueOf(mN);
     for (int m = 2; m <= HEURISTIC_LIMIT; ++m) {
       t = t.multiply(mN);
-      if (!containsZero(t)) {
+      if (!ZUtils.containsZero(t)) {
         best = m;
       }
     }

@@ -17,7 +17,8 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/Z\.valueOf(10L\?)/Z.TEN/g' \
         -e 's/Z\.valueOf(-1L\?)/Z.NEG_ONE/g' \
         -e 's/(\((CR\.[A-Z_]\+)\))/\1/g' \
-        -e 's/((EulerGamma.SINGLETON))/(EulerGamma.SINGLETON)/g' \
+        -e 's/ (\(CR\.[A-Z_]\+\))/ \1/g' \
+        -e 's/ (EulerGamma.SINGLETON)/ EulerGamma.SINGLETON/g' \
         -e 's/ 1 - 1;/ 0;/g' \
         <"${s}" >"${s}.t"
     if cmp -s "${s}" "${s}.t" >&/dev/null; then

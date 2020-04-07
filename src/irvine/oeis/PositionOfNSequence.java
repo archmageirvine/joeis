@@ -5,9 +5,9 @@ import java.util.TreeMap;
 import irvine.math.z.Z;
 
 /**
- * A sequence reporting the position on <code>n</code> in a permutation.  Use with
- * other non-permutations may fail or enter infinite loop.  Sequences exceeding
- * the value of a long will also fail at some point.
+ * A sequence reporting the position on <code>n</code> in a sequence.  It assumes
+ * that every value not less than the initial value occurs at some point in the
+ * sequence.  Sequences exceeding the value of a long will also fail at some point.
  * @author Sean A. Irvine
  */
 public class PositionOfNSequence implements Sequence {
@@ -39,7 +39,7 @@ public class PositionOfNSequence implements Sequence {
   public Z next() {
     ++mN;
     while (!mMap.containsKey(mN)) {
-      mMap.put(mS.next().longValueExact(), ++mM);
+      mMap.putIfAbsent(mS.next().longValueExact(), ++mM);
     }
     return Z.valueOf(mMap.remove(mN));
   }

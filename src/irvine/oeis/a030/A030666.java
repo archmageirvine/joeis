@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A030666 implements Sequence {
 
-  private long[] STEPS = {1, 1, 3, 1, 1, 3};
+  private static final long[] STEPS = {1, 1, 3, 1, 1, 3};
   private long mN = 0;
 
   @Override

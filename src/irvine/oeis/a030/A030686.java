@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000290;
  */
 public class A030686 extends A000290 {
 
-  private long[] STEPS = {1, 1, 3, 1, 1, 3};
+  private static final long[] STEPS = {1, 1, 3, 1, 1, 3};
   {
     super.next();
   }

@@ -1,4 +1,4 @@
-package irvine.oeis.a030;
+package irvine.oeis.a333;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -6,10 +6,10 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A030717.
+ * A333867.
  * @author Sean A. Irvine
  */
-public class A030717 implements Sequence {
+public class A333867 implements Sequence {
 
   private final DynamicLongArray mA = new DynamicLongArray();
   private final DynamicLongArray mB = new DynamicLongArray();
@@ -32,11 +32,9 @@ public class A030717 implements Sequence {
       final LongDynamicLongArray oldTotals = mTotals.copy(); // because we are modifying this in the loop
       for (long j = 1; j < lim; ++j) {
         final long cnt = oldTotals.get(j);
-        if (cnt != 0) {
-          mA.set(mA.length(), cnt);
-          mB.set(mB.length(), j);
-          mTotals.set(cnt, mTotals.get(cnt) + 1);
-        }
+        mA.set(mA.length(), cnt);
+        mB.set(mB.length(), j);
+        mTotals.set(cnt, mTotals.get(cnt) + 1);
       }
     }
     return Z.valueOf(select(mA.get(mN), mB.get(mN)));

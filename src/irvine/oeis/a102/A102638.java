@@ -14,7 +14,7 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A102638 extends DecimalExpansionSequence {
 
   private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = CR.PI.multiply(CR.valueOf(163).sqrt()).sqrt().subtract(REALS.pow((EulerGamma.SINGLETON), CR.TWO));
+  private static final CR N = CR.PI.multiply(CR.valueOf(163).sqrt()).sqrt().subtract(REALS.pow(EulerGamma.SINGLETON, CR.TWO));
 
   @Override
   protected CR getCR() {

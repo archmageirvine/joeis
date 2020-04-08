@@ -43,11 +43,13 @@ public class A008323 implements Sequence {
     return true;
   }
 
-  private int mN = 0;
+  private int mN = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     Z sum = Z.ZERO;
     for (int r = 0; r <= mN; ++r) {
       final RegularConnectedBipartiteGenerator gen = new RegularConnectedBipartiteGenerator(mN, r, connected());

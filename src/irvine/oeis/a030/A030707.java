@@ -16,8 +16,12 @@ public class A030707 implements Sequence {
   private final LongDynamicLongArray mTotals = new LongDynamicLongArray();
   private int mN = -1;
   {
-    mA.set(0, 1L);
-    mTotals.set(1, 1L);
+    mA.set(0, initialTerm());
+    mTotals.set(initialTerm(), 1L);
+  }
+
+  protected long initialTerm() {
+    return 1;
   }
 
   protected long select(final long a, final long b) {

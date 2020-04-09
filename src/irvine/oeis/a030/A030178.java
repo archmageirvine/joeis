@@ -20,7 +20,7 @@ public class A030178 extends DecimalExpansionSequence {
     }
   }
 
-  private static final CR N = new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO);
+  static final CR N = new MyFunction().inverseMonotone(CR.ZERO, CR.ONE).execute(CR.ZERO);
 
   @Override
   protected CR getCR() {

@@ -15,8 +15,12 @@ public class A030709 implements Sequence {
   private final DynamicLongArray mB = new DynamicLongArray();
   private final LongDynamicLongArray mTotals = new LongDynamicLongArray();
   {
-    mA.set(0, 1L);
-    mTotals.set(1, 1L);
+    mA.set(0, initialTerm());
+    mTotals.set(initialTerm(), 1L);
+  }
+
+  protected long initialTerm() {
+    return 1;
   }
 
   @Override

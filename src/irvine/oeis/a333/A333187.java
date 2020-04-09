@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333187 allocated for Clark Kimberling.
+ * A333187 <code>a(n) = floor(2^n cot(1/n))</code>.
  * @author Sean A. Irvine
  */
 public class A333187 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A332437 allocated for Wolfdieter Lang.
+ * A332437 Decimal expansion of <code>2*cos(Pi/9)</code>.
  * @author Georg Fischer
  */
 public class A332437 extends DecimalExpansionSequence {

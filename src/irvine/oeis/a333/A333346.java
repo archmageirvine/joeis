@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A333346 allocated for Kevin Ryde.
+ * A333346 Decimal expansion of <code>((11 + sqrt(85))/2)^(1/7)</code>.
  * @author Georg Fischer
  */
 public class A333346 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a073.A073006;
 
 /**
- * A030652 Continued fraction for <code>GAMMA(2/3)</code>.
+ * A030652 Continued fraction for <code>Gamma(2/3)</code>.
  * @author Sean A. Irvine
  */
 public class A030652 extends ContinuedFractionSequence {

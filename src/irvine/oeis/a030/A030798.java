@@ -6,7 +6,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A030798.
+ * A030798 Decimal expansion of the solution to <code>x^x = 2</code>.
  * @author Sean A. Irvine
  */
 public class A030798 extends DecimalExpansionSequence {

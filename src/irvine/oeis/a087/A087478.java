@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A087478 Decimal expansion of <code>(Sqrt[20467] - Sqrt[19578] + Sqrt[10177] - Sqrt[9553])/2</code>.
+ * A087478 Decimal expansion of <code>(sqrt(20467) - sqrt(19578) + sqrt(10177) - sqrt(9553))/2</code>.
  * @author Georg Fischer
  */
 public class A087478 extends DecimalExpansionSequence {

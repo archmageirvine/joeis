@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030783.
+ * A030783 <code>s(k)=1</code>, where <code>s=A030777</code>.
  * @author Sean A. Irvine
  */
 public class A030783 extends A030777 {

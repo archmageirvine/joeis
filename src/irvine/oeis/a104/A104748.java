@@ -5,7 +5,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.a030.A030798;
 
 /**
- * A030797.
+ * A104748 Decimal expansion of solution to <code>x*2^x = 1</code>.
  * @author Sean A. Irvine
  */
 public class A104748 extends DecimalExpansionSequence {

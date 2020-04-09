@@ -11,7 +11,7 @@ import irvine.oeis.a039.A039919;
 import irvine.oeis.a055.A055879;
 
 /**
- * A030532 Number of polyhexes of class <code>PF2</code>.
+ * A030532 Number of polyhexes of class <code>PF2</code> with symmetry point group <code>C_s</code>.
  * @author Sean A. Irvine
  */
 public class A030532 implements Sequence {

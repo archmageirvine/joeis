@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000455;
 
 /**
- * A030622 Powers of 2 grouped in pairs of 2 digits (version <code>1)</code>.
+ * A030622 Powers of 2 grouped in pairs of two digits (version <code>1)</code>.
  * @author Sean A. Irvine
  */
 public class A030622 extends A000455 {

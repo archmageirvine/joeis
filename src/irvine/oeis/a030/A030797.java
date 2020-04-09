@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A030797.
+ * A030797 Decimal expansion of the constant x such that <code>x^x =</code> e. Inverse of <code>W(1)</code>, where W is Lambert's function.
  * @author Sean A. Irvine
  */
 public class A030797 extends DecimalExpansionSequence {

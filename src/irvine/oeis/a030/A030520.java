@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a055.A055879;
 
 /**
- * A030520 Number of polyhexes of class <code>PF2</code>.
+ * A030520 Number of polyhexes of class <code>PF2</code> with <code>C_{2n}</code> symmetry.
  * @author Sean A. Irvine
  */
 public class A030520 implements Sequence {

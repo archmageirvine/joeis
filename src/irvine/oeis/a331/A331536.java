@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A331536 allocated for Brian Tenneson.
+ * A331536 Number of words that can be reached in at most <code>n - 1</code> steps in the MIU system starting from the word 'mi'.
  * @author Sean A. Irvine
  */
 public class A331536 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A030780.
+ * A030780 <code>a(n)=least</code> k such that <code>s(k)=n</code>, where <code>A=000001</code>.
  * @author Sean A. Irvine
  */
 public class A030780 extends PositionOfNSequence {

@@ -10,7 +10,7 @@ import irvine.oeis.a039.A039919;
 import irvine.oeis.a055.A055879;
 
 /**
- * A030525 Number of polyhexes of class <code>PF2</code>.
+ * A030525 Number of polyhexes of class <code>PF2</code> with a particular symmetry.
  * @author Sean A. Irvine
  */
 public class A030525 implements Sequence {

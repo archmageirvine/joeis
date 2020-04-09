@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000931 Padovan sequence (or Padovan <code>numbers): a(n) = a(n-2) + a(n-3)</code> with <code>a(0)=1, a(1)=a(2)=0</code>.
+ * A000931 Padovan sequence (or Padovan <code>numbers): a(n) = a(n-2) + a(n-3)</code> with <code>a(0) = 1, a(1) = a(2) = 0</code>.
  * @author Sean A. Irvine
  */
 public class A000931 implements Sequence {

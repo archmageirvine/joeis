@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007672;
 
 /**
- * A139148 Smallest number of the form <code>(m!+n)/n</code>.
+ * A139148 Smallest positive integer of the form <code>(m!+n)/n</code>.
  * @author Georg Fischer
  */
 public class A139148 extends A007672 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006724;
 
 /**
- * A008855 Table of polygons on square lattice by area and perimeter.
+ * A008855 Triangle <code>T(n,k), n&gt;=1</code>, read by rows, where <code>T(n,k)</code> is the number of lattice polygons with area n and perimeter <code>2*k</code>.
  * @author Sean A. Irvine
  */
 public class A008855 extends A006724 {

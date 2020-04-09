@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333005 allocated for Mathilde Bouvel.
+ * A333005 Number of unrooted <code>level-2</code> phylogenetic networks with <code>n+1</code> labeled leaves, when multiple <code>(i.e.</code>, parallel) edges are not allowed.
  * @author Sean A. Irvine
  */
 public class A333005 implements Sequence {

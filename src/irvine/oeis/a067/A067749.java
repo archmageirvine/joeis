@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067749 Numbers n such that n and <code>3^n</code> end with the same two digits.
+ * A067749 Numbers k such that k and <code>3^k</code> end with the same two digits.
  * @author Sean A. Irvine
  */
 public class A067749 extends LinearRecurrence {

@@ -1,0 +1,22 @@
+package irvine.oeis.a030;
+
+import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
+import irvine.oeis.Sequence;
+
+/**
+ * A030993 8-automorphic numbers: final digits of <code>8*n^2</code> agree with <code>n</code>.
+ * @author Sean A. Irvine
+ */
+public class A030993 implements Sequence {
+
+  private int mN = 0;
+  private Z mF = Z.ONE;
+
+  @Override
+  public Z next() {
+    ++mN;
+    mF = mF.multiply(5);
+    return ZUtils.chineseRemainderTheorem(new Z[] {Z.ZERO, Z.EIGHT.modInverse(mF)}, new Z[] {Z.ONE.shiftLeft(mN), mF});
+  }
+}

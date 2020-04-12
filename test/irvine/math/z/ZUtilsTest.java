@@ -103,4 +103,8 @@ public class ZUtilsTest extends TestCase {
     assertEquals("[12, -1, 42, 0]", Arrays.toString(ZUtils.toZ("{12, -1, 42,  0}")));
     assertEquals("[12, -1, 42, 0]", Arrays.toString(ZUtils.toZ("{12 -1 42  0}")));
   }
+
+  public void testCRT() {
+    assertEquals(Z.EIGHT, ZUtils.chineseRemainderTheorem(new Z[] {Z.ZERO, Z.THREE}, new Z[] {Z.TWO, Z.FIVE}));
+  }
 }

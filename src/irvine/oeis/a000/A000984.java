@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 public class A000984 implements Sequence {
 
   private Z mV = Z.ONE;
-  private long mN = -1;
+  protected long mN = -1;
 
   @Override
   public Z next() {

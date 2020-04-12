@@ -619,4 +619,23 @@ public final class ZUtils {
     return false;
   }
 
+  /**
+   * Chinese remainder theorem (CRT).
+   * @param divs arguments
+   * @param mods moduli
+   * @return smallest solution or null if there is no solution
+   */
+  public static Z chineseRemainderTheorem(final Z[] divs, final Z[] mods) {
+    if (divs.length != mods.length) {
+      throw new IllegalArgumentException("Array lengths mismatch");
+    }
+    final Z product = Arrays.stream(mods).reduce(Z.ONE, Z::multiply);
+    Z p;
+    Z sm = Z.ZERO;
+    for (int k = 0; k < mods.length; ++k) {
+      p = product.divide(mods[k]);
+      sm = sm.add(divs[k].multiply(p.modInverse(mods[k])).multiply(p));
+    }
+    return sm.mod(product);
+  }
 }

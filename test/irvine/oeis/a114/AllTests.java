@@ -28,11 +28,16 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A114112Test.class);
     suite.addTestSuite(A114113Test.class);
     suite.addTestSuite(A114119Test.class);
+    suite.addTestSuite(A114121Test.class);
     suite.addTestSuite(A114122Test.class);
     suite.addTestSuite(A114126Test.class);
     suite.addTestSuite(A114138Test.class);
     suite.addTestSuite(A114140Test.class);
+    suite.addTestSuite(A114161Test.class);
     suite.addTestSuite(A114182Test.class);
+    suite.addTestSuite(A114190Test.class);
+    suite.addTestSuite(A114191Test.class);
+    suite.addTestSuite(A114194Test.class);
     suite.addTestSuite(A114196Test.class);
     suite.addTestSuite(A114197Test.class);
     suite.addTestSuite(A114199Test.class);
@@ -68,8 +73,10 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A114479Test.class);
     suite.addTestSuite(A114480Test.class);
     suite.addTestSuite(A114481Test.class);
+    suite.addTestSuite(A114487Test.class);
     suite.addTestSuite(A114490Test.class);
     suite.addTestSuite(A114493Test.class);
+    suite.addTestSuite(A114495Test.class);
     suite.addTestSuite(A114496Test.class);
     suite.addTestSuite(A114514Test.class);
     suite.addTestSuite(A114540Test.class);
@@ -78,6 +85,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A114553Test.class);
     suite.addTestSuite(A114568Test.class);
     suite.addTestSuite(A114569Test.class);
+    suite.addTestSuite(A114582Test.class);
     suite.addTestSuite(A114587Test.class);
     suite.addTestSuite(A114590Test.class);
     suite.addTestSuite(A114594Test.class);
@@ -94,6 +102,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A114696Test.class);
     suite.addTestSuite(A114697Test.class);
     suite.addTestSuite(A114703Test.class);
+    suite.addTestSuite(A114710Test.class);
     suite.addTestSuite(A114723Test.class);
     suite.addTestSuite(A114724Test.class);
     suite.addTestSuite(A114725Test.class);
@@ -108,9 +117,11 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A114798Test.class);
     suite.addTestSuite(A114803Test.class);
     suite.addTestSuite(A114849Test.class);
+    suite.addTestSuite(A114851Test.class);
     suite.addTestSuite(A114855Test.class);
     suite.addTestSuite(A114864Test.class);
     suite.addTestSuite(A114867Test.class);
+    suite.addTestSuite(A114870Test.class);
     suite.addTestSuite(A114904Test.class);
     suite.addTestSuite(A114938Test.class);
     suite.addTestSuite(A114948Test.class);

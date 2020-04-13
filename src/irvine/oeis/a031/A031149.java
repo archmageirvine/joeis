@@ -43,7 +43,6 @@ public class A031149 implements Sequence {
     }
     final int k = mN / 7;
     switch (mN % 7) {
-      default:
       case 0:
         return REALS.pow(E1, k - 1).multiply(T1).add(REALS.pow(E2, k - 1).multiply(T2)).toZ();
       case 1:
@@ -58,6 +57,8 @@ public class A031149 implements Sequence {
         return REALS.pow(E1, k).multiply(S1).add(REALS.pow(E2, k).multiply(S2)).toZ();
       case 6:
         return REALS.pow(E1, k).multiply(W1).add(REALS.pow(E2, k).multiply(W2)).toZ();
+      default:
+        throw new RuntimeException();
     }
   }
 }

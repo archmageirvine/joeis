@@ -46,7 +46,7 @@ public class HolonomicRecurrence implements Sequence {
   protected Z[] mBuffer; // ring buffer for the elements involved in the recurrence, indexed with mN modulo mOrder
   protected int mBufSize; // size of the ring buffer
   protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
-  protected Z mFactorial; // accumulate n! here
+  //protected Z mFactorial; // accumulate n! here
   
   /**
    * Empty constructor.
@@ -206,7 +206,7 @@ public class HolonomicRecurrence implements Sequence {
    */
   private void initialize() {
     mGfType = 0; // normally it is an ordinary g.f.
-    mFactorial = Z.ONE;
+    //mFactorial = Z.ONE;
     mN = mOffset - 1;
     mMaxDegree = 1;
     int k = mPolyList.size() - 1;

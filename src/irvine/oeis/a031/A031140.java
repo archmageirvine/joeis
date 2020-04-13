@@ -32,8 +32,8 @@ public class A031140 implements Sequence {
     while (true) {
       ++mN;
       // Use the following alternative if you are worried about the heuristic
-      // mT = mT.multiply2();
-      mT = mT == null ? Z.ONE: mT.multiply2().mod(mMod);
+      // mT = mT == null ? Z.ONE : mT.multiply2();
+      mT = mT == null ? Z.ONE : mT.multiply2().mod(mMod);
       final int z = positionRightMostZero(mT);
       if (z > mPrevBest) {
         mPrevBest = z;

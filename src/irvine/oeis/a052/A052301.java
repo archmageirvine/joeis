@@ -36,7 +36,7 @@ public class A052301 extends MemorySequence {
 
   @Override
   protected Z computeNext() {
-    int n = size();
+    final int n = size();
     return mB.get(n - 1, n - 1).add(mB.get(n, n - 1));
   }
 }

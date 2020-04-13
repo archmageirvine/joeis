@@ -39,6 +39,22 @@ public class Polyomino extends HashSet<Point> {
     return super.add(e);
   }
 
+  @Override
+  public boolean remove(final Object e) {
+    final boolean r = super.remove(e);
+    final Point p = (Point) e;
+    if (p.left() == mExtentX || p.right() == mExtentY) {
+      // recompute extents
+      mExtentX = 0;
+      mExtentY = 0;
+      for (final Point q : this) {
+        mExtentX = Math.max(mExtentX, q.left());
+        mExtentY = Math.max(mExtentY, q.right());
+      }
+    }
+    return r;
+  }
+
   private int compare(final long[] a, final long[] b) {
     assert a.length == b.length;
     for (int k = 0; k < a.length; ++k) {

@@ -33,7 +33,7 @@ import irvine.math.z.ZUtils;
  * @author Georg Fischer
  */
 public class HolonomicRecurrence implements Sequence {
-  protected static int sDebug = 0;
+  static int sDebug = 0;
 
   protected Z[] mInitTerms; // initial terms for a(n)
   protected int mNDist; // d >= 0 if a(n+d) is the highest and next element to be computed (0 <= d <= k).
@@ -158,7 +158,7 @@ public class HolonomicRecurrence implements Sequence {
    * @param initTerms initial values of a[0..k], as a String vector, for example "[0,1,2,3]"
    */
   public HolonomicRecurrence(final int offset, final String matrix, final String prefix, final String initTerms) {
-    this(offset, matrix, ((prefix.isEmpty() || prefix.equals("[]") ? "" : prefix + ",")
+    this(offset, matrix, ((prefix.isEmpty() || "[]".equals(prefix) ? "" : prefix + ",")
         + initTerms).replaceAll("\\s*]\\s*,\\s*\\[\\s*", ","), 0);
   } // Constructor
 
@@ -188,7 +188,7 @@ public class HolonomicRecurrence implements Sequence {
    * Set the type of the generating function.
    * @param gfType code for the type: 0 = ordinary, 1 = exponential
    */
-  public void setGfType(int gfType) {
+  public void setGfType(final int gfType) {
     mGfType = gfType;
   }
   
@@ -196,7 +196,7 @@ public class HolonomicRecurrence implements Sequence {
    * Set the debugging level.
    * @param level code for the debugging level: 0 = none, 1 = some, 2 = more.
    */
-  public void setDebug(int level) {
+  public static void setDebug(final int level) {
     sDebug = level;
   }
   
@@ -234,7 +234,7 @@ public class HolonomicRecurrence implements Sequence {
   @Override
   public Z next() {
     int ibuf; // index in mBuffer
-    Z result;
+    final Z result;
     ++mN;
     if (mN - mOffset < mInitTerms.length) {
       result = mInitTerms[mN - mOffset];
@@ -290,14 +290,14 @@ public class HolonomicRecurrence implements Sequence {
           System.out.println("    new_sum=" + sum);
         }
       } // for k - summing
-      if (! pvals[mOrder + 1].equals(Z.ZERO)) {
+      if (!pvals[mOrder + 1].equals(Z.ZERO)) {
         if (mGfType == 1 && mN >= 2) { // exponential: multiply by mN 
           sum = sum.multiply(Z.valueOf(mN));
         }
         final Z[] quotRemd = sum.negate().divideAndRemainder(pvals[mOrder + 1]);
         if (!quotRemd[1].equals(Z.ZERO)) {
           if (sDebug >= 1) {
-            System.out.println("assertion: division with rest " + quotRemd[1].toString() 
+            System.out.println("assertion: division with rest " + quotRemd[1]
                 + " for " + sum.negate() + " / " + pvals[mOrder + 1]);
           }
           result = null;
@@ -306,16 +306,16 @@ public class HolonomicRecurrence implements Sequence {
         }
       } else {
         if (sDebug >= 1) {
-          System.out.println("assertion: division by zero " );
+          System.out.println("assertion: division by zero ");
         }
         result = null;
       }
     }
     if (mGfType == 1 && result != null) { // exponential: multiply buffer by mN 
-      Z zmN = Z.valueOf(mN);
+      final Z zn = Z.valueOf(mN);
       for (ibuf = 0; ibuf < mBufSize; ++ibuf) {
         if (mBuffer[ibuf] != null) {
-          mBuffer[ibuf] = mBuffer[ibuf].multiply(zmN);
+          mBuffer[ibuf] = mBuffer[ibuf].multiply(zn);
         }
       }
     }
@@ -331,11 +331,11 @@ public class HolonomicRecurrence implements Sequence {
       for (int jbuf = 0; jbuf < mBufSize; ++jbuf) {
         System.out.print(sep + mBuffer[jbuf]);
         if (ibuf == jbuf) {
-          System.out.print("*");
+          System.out.print('*');
         }
         sep = ",";
       } // for
-      System.out.println("]");
+      System.out.println(']');
     }
      return result;
   } // next
@@ -370,7 +370,7 @@ public class HolonomicRecurrence implements Sequence {
    * Gets the vector for the initial terms.
    * @return a vector for the initial values of the sequence.
    */
-  public Z[] getInitTerms() {
+  protected Z[] getInitTerms() {
     return mInitTerms;
   }
 

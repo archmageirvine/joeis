@@ -4,7 +4,7 @@ package irvine.oeis.a047;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A047855 <code>a(n) = T(7,n)</code>, array T given by <code>A047848</code>.
+ * A047855 <code>a(n) = T(7, n)</code>, array T given by <code>A047848</code>.
  * @author Georg Fischer
  */
 public class A047855 extends GeneratingFunctionSequence {

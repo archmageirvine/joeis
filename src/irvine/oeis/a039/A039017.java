@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039017 Numbers n such that representation in base 6 has same number of <code>0</code>'s and <code>2</code>'s.
+ * A039017 Numbers whose representation in base 6 has the same number of <code>0</code>'s and <code>2</code>'s.
  * @author Georg Fischer
  */
 public class A039017 extends RunsBaseSequence {

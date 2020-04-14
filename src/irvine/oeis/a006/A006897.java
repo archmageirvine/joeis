@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a000.A000088;
 
 /**
- * A006897 Hierarchical linear models on n factors allowing 2-way interactions; or graphs with <code>&lt;= n</code> nodes.
+ * A006897 <code>a(n)</code> is the number of hierarchical linear models on n unlabeled factors allowing 2-way interactions (but no higher order interactions); or the number of unlabeled simple graphs with <code>&lt;= n</code> nodes.
  * @author Sean A. Irvine
  */
 public class A006897 extends PartialSumSequence {

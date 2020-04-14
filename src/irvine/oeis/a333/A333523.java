@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A333523 allocated for Daniel Starodubtsev.
+ * A333523 Number of iterations of Reverse And Add needed to reach a number divisible by <code>n</code> (or 0 if such a number is never reached).
  * @author Sean A. Irvine
  */
 public class A333523 implements Sequence {

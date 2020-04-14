@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028246 Triangular array <code>a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*C(k,i)*i^n; n &gt;= 1, 1 &lt;= k &lt;=</code> n, read by rows.
+ * A028246 Triangular array <code>a(n,k) = (1/k)*Sum_{i=0..k} (-1)^(k-i)*binomial(k,i)*i^n; n &gt;= 1, 1 &lt;= k &lt;=</code> n, read by rows.
  * @author Sean A. Irvine
  */
 public class A028246 implements Sequence {

@@ -379,8 +379,23 @@ public final class LongUtils {
   }
 
   /**
+   * Return the sums of the squares of the digits of a number
+   * @param n the number
+   * @return sum of squares of digits of <code>n</code>
+   */
+  public static long digitSumSquares(final long n) {
+    long m = Math.abs(n);
+    long sum = 0;
+    while (m != 0) {
+      final long r = m % 10;
+      sum += r * r;
+      m /= 10;
+    }
+    return sum;
+  }
+
+  /**
    * Compute the product of the digits in <code>|n|</code>.
-   *
    * @param n number
    * @return digit product
    */

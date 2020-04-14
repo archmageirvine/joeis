@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000105;
 import irvine.util.Point;
 
 /**
- * A000105 Number of free polyominoes (or square animals) with n cells.
+ * A098891 Define the n-mino graph to be the graph whose vertices are each of the <code>n-minoes</code>, two of which are joined by an edge if one can be obtained from the other by cutting out one of the latter's component squares (thus obtaining an <code>(n-1)-mino)</code> and glueing it elsewhere. The sequence counts the edges in these graphs.
  * @author Sean A. Irvine
  */
 public class A098891 extends A000105 {

@@ -1,5 +1,6 @@
 package irvine.oeis.a003;
 
+import irvine.math.LongUtils;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,13 +14,7 @@ public class A003132 implements Sequence {
 
   @Override
   public Z next() {
-    final String s = String.valueOf(++mN);
-    long sum = 0;
-    for (int k = 0; k < s.length(); ++k) {
-      final int v = s.charAt(k) - '0';
-      sum += v * v;
-    }
-    return Z.valueOf(sum);
+    return Z.valueOf(LongUtils.digitSumSquares(++mN));
   }
 }
 

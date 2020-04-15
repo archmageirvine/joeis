@@ -1,5 +1,6 @@
 /* Coxeter group sequences
  * @(#) $Id$
+ * 2020-04-13: expand exponential g.f. with setGfType(1)
  * 2019-05-11: Georg Fischer, 3rd parameter offset
  * 2019-05-10: Sean Irvine, Z parameters
  * 2019-05-09: Georg Fischer
@@ -21,27 +22,32 @@ public class GeneratingFunctionSequence implements Sequence {
   protected Z[] mNum; // coefficients of the numerator   polynomial, index is the exponent
   protected Z[] mDen; // coefficients of the denominator polynomial
   protected int mIndex = 0; // index of next term to be generated
+  protected final int mOffset; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
+  protected int mGfType; // type of the g.f.: 0 = ordinary, 1 = exponential, 2 = dirichlet ...
+  protected Z mFactorial; // accumulate n! here
 
-  protected GeneratingFunctionSequence() { }
-
- /**
-   * Construct a new rational integer polynomial generating function sequence.
-  * @param offset first valid term has this index
-   * @param num numerator
-   * @param den denominator
-   */
-  public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
-    mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
-    mDen = Arrays.copyOf(den, den.length);
+  protected GeneratingFunctionSequence() {
+    mOffset = 0;
     mIndex = 0;
-    while (mIndex < offset) { // skip over leading coefficients
-      next();
-      ++mIndex;
-    } // while
   }
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
+   *
+   * @param offset first valid term has this index
+   * @param num    numerator
+   * @param den    denominator
+   */
+  public GeneratingFunctionSequence(final int offset, final Z[] num, final Z[] den) {
+    mOffset = offset;
+    mIndex = 0;
+    mNum = Arrays.copyOf(num, num.length); // copy because this class modifies num
+    mDen = Arrays.copyOf(den, den.length);
+  }
+
+  /**
+   * Construct a new rational integer polynomial generating function sequence.
+   *
    * @param num numerator
    * @param den denominator
    */
@@ -51,6 +57,7 @@ public class GeneratingFunctionSequence implements Sequence {
 
   /**
    * Construct the specified generating function.
+   *
    * @param num coefficients of the numerator   polynomial
    * @param den coefficients of the denominator polynomial
    */
@@ -60,9 +67,10 @@ public class GeneratingFunctionSequence implements Sequence {
 
   /**
    * Construct the specified generating function.
+   *
    * @param offset first valid term has this index
-   * @param num coefficients of the numerator   polynomial
-   * @param den coefficients of the denominator polynomial
+   * @param num    coefficients of the numerator   polynomial
+   * @param den    coefficients of the denominator polynomial
    */
   public GeneratingFunctionSequence(final int offset, final long[] num, final long[] den) {
     this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
@@ -70,6 +78,7 @@ public class GeneratingFunctionSequence implements Sequence {
 
   /**
    * Construct a new rational integer polynomial generating function sequence.
+   *
    * @param num numerator
    * @param den denominator
    */
@@ -77,14 +86,89 @@ public class GeneratingFunctionSequence implements Sequence {
     this(num.toArray(new Z[0]), den.toArray(new Z[0]));
   }
 
+  /**
+   * Construct a coefficient sequence from String parameters.
+   *
+   * @param offset first valid term has this index
+   * @param num    coefficients of <code>x^i, i=0..m</code> for the numerator of the generating function
+   *               as a String vectors, for example "[0,1,2,17,0,18]".
+   * @param den    coefficients for the denominator.
+   */
+  public GeneratingFunctionSequence(final int offset, final String num, final String den) {
+    mOffset = offset;
+    mIndex = 0;
+    mNum = ZUtils.toZ(num);
+    mDen = ZUtils.toZ(den);
+  }
+
+  /**
+   * Get the type of the generating function.
+   *
+   * @return code for the type: 0 = ordinary, 1 = exponential
+   */
+  public int getGfType() {
+    return mGfType;
+  }
+
+  /**
+   * Set the type of the generating function.
+   * This method must be called before any call of {@link #next()}.
+   *
+   * @param gfType code for the type: 0 = ordinary, 1 = exponential
+   */
+  public void setGfType(final int gfType) {
+    mGfType = gfType;
+  }
+
+  /**
+   * Gets the offset
+   *
+   * @return the index where the sequence elements start
+   */
+  public int getOffset() {
+    return mOffset;
+  }
+
+  /**
+   * Gets the coefficients of the numerator polynomial.
+   * This method must be called before any call of {@link #next()}.
+   *
+   * @return an array starting with the coefficient for x^0.
+   */
+  public Z[] getNum() {
+    return Arrays.copyOf(mNum, mNum.length);
+  }
+
+  /**
+   * Gets the coefficients of the denominator polynomial.
+   * This method must be called before any call of {@link #next()}.
+   *
+   * @return an array starting with the coefficient for x^0.
+   */
+  public Z[] getDen() {
+    return Arrays.copyOf(mDen, mDen.length);
+  }
+
   @Override
   public Z next() {
+    while (mIndex < mOffset) { // skip over leading coefficients
+      iterate();
+    } // while
+    return iterate();
+  }
+
+  /**
+   * Advance to next term
+   *
+   * @return next term
+   */
+  private Z iterate() {
     final Z divisor = mDen[0];
     if (divisor.equals(Z.ZERO)) {
       throw new IllegalArgumentException("divisor is zero");
     }
     final Z[] quotRest = mNum[0].divideAndRemainder(divisor);
-    final Z result = quotRest[0];
+    Z result = quotRest[0];
     if (!quotRest[1].equals(Z.ZERO)) {
       throw new IllegalArgumentException("no even division");
     }
@@ -105,6 +189,13 @@ public class GeneratingFunctionSequence implements Sequence {
       ++iterm;
     } // while iterm
     mNum = vect1;
+    if (mGfType == 1) { // e.g.f.
+      if (mIndex >= 2) {
+        mFactorial = mFactorial.multiply(Z.valueOf(mIndex));
+        result = result.multiply(mFactorial);
+      }
+    } // e.g.f.
+    ++mIndex;
     return result;
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031195.
+ * A031195 Periods of sum of 6th powers of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
 public class A031195 implements Sequence {

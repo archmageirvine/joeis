@@ -1,0 +1,20 @@
+package irvine.oeis.a031;
+
+import irvine.math.z.Z;
+
+/**
+ * A031204.
+ * @author Sean A. Irvine
+ */
+public class A031204 extends A031200 {
+
+  private static final Z Z12 = Z.valueOf(12);
+
+  @Override
+  public Z next() {
+    while (!Z12.equals(super.next())) {
+      // do nothing
+    }
+    return Z.valueOf(mN);
+  }
+}

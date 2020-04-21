@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101386 Expansion of g.f.: <code>(5 - 3*x)/(x^2 - 6*x + 1)</code>.
+ * A101386 Expansion of g.f.: <code>(5 - 3*x)/(1 - 6*x + x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A101386 extends LinearRecurrence {

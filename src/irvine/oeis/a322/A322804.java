@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322804 Number of different positions a sphinx tile can occupy in an equilateral triangle of order <code>n</code>.
+ * A322804 Numbers that can be written as a product of one or more consecutive primorial numbers.
  * @author Georg Fischer
  */
 public class A322804 extends GeneratingFunctionSequence {

@@ -10,6 +10,8 @@ import irvine.oeis.HolonomicRecurrence;
  */
 public class A307201 extends HolonomicRecurrence {
 
+  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
+
   /** Construct the sequence. */
   public A307201() {
     super(1, "[[0],[1],[0],[0],[0],[-2],[0],[0],[0],[1]]", "[1,3,9,12,21,30,30,33,42]", 0);

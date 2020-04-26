@@ -9,6 +9,8 @@ import irvine.oeis.GeneratingFunctionSequence;
  */
 public class A063284 extends GeneratingFunctionSequence {
 
+  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
+
   /** Construct the sequence. */
   public A063284() {
     super(2, new long[] {0, 0, -1, 1, 5, 10, 16, 19, 21, 19, 15, 10, 4, -1},

@@ -11,6 +11,8 @@ import irvine.oeis.RunsBaseSequence;
  */
 public class A044140 extends RunsBaseSequence {
 
+  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
+
   private static final String P12 = "02";
 
   /** Construct the sequence. */

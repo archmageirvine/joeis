@@ -8,6 +8,8 @@ import irvine.oeis.LinearRecurrence;
  */
 public class A265688 extends LinearRecurrence {
 
+  // WARNING Conjectural formula: do not use this implementation to extend the sequence.
+
   /** Construct the sequence. */
   public A265688() {
     super(new long[] {-100, 1, 100}, new long[] {1, 111, 11101});

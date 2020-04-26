@@ -11,4 +11,3 @@ public class A031356 extends A031349 {
     return 10;
   }
 }
-

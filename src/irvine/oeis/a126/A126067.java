@@ -24,7 +24,7 @@ public class A126067 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final MemoryFactorial FACTORIAL = new MemoryFactorial();
 
-  private int mN = 0;
+  private int mN = -1;
   private int mM = 0;
   private Polynomial<Q> mPoly = RING.zero();
   
@@ -85,7 +85,10 @@ public class A126067 implements Sequence {
   public Z next() {
     if (++mM > mPoly.degree()) {
       mM = 0;
-      final CycleIndex ci = i(++mN);
+      if (++mN == 0) {
+        return Z.ONE;
+      }
+      final CycleIndex ci = i(mN);
       mPoly = ci.applyOnePlusXToTheN();
       // Note mPoly.eval(1) is A002499(n)
     }

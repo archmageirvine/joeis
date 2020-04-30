@@ -112,6 +112,7 @@
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
 
       <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
+      <fileset dir="${test.dir}" includes="irvine/oeis/**/*.dat"/>
       <fileset dir="${test.dir}" includes="irvine/math/nauty/*.lst"/>
       <fileset dir="${test.dir}" includes="irvine/factor/**/*.dat"/>
       <fileset dir="${test.dir}" includes="irvine/graph/*.gph"/>

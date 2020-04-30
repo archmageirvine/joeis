@@ -22,7 +22,7 @@ public class A031361 extends A031360 {
   }
   private int mN = 0;
 
-  private static List<Z> dirichletProduct(final List<Z> a, final List<Z> b) {
+  static List<Z> dirichletProduct(final List<Z> a, final List<Z> b) {
     final int lim = Math.min(a.size(), b.size());
     final ArrayList<Z> c = new ArrayList<>(lim);
     for (int k = 0; k < lim; ++k) {

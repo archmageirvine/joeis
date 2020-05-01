@@ -1,10 +1,10 @@
 package irvine.oeis.a031;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import irvine.factor.prime.Fast;
+import irvine.math.z.Dirichlet;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -27,27 +27,6 @@ public class A031362 implements Sequence {
     mZetaP.add(Z.ONE);
   }
 
-  static List<Z> zetaNum(final int p, final int max, final Z f) {
-    final Z[] res = new Z[max + 1];
-    Arrays.fill(res, Z.ZERO);
-    res[1] = Z.ONE;
-    if (p <= max) {
-      res[p] = f;
-    }
-    return Arrays.asList(res);
-  }
-
-  static List<Z> zeta(final int p, final int max, final Z f) {
-    final Z[] res = new Z[max + 1];
-    Arrays.fill(res, Z.ZERO);
-    res[1] = Z.ONE;
-    Z u = f;
-    for (int q = p; q <= max; q *= p, u = u.multiply(f)) {
-      res[q] = u;
-    }
-    return Arrays.asList(res);
-  }
-
   @Override
   public Z next() {
     mN += 10;
@@ -60,11 +39,11 @@ public class A031362 implements Sequence {
       List<Z> zp = mZetaP;
       for (int e = 1; e <= mMaxOrd; e += 5) {
         if (mPrime.isPrime(e)) {
-          zp = A031361.dirichletProduct(zp, zetaNum(e, mMaxOrd, Z.ONE));
-          zp = A031361.dirichletProduct(zp, zeta(e, mMaxOrd, Z.ONE));
+          zp = Dirichlet.dirichletProduct(zp, Dirichlet.zetaNum(e, mMaxOrd, Z.ONE));
+          zp = Dirichlet.dirichletProduct(zp, Dirichlet.zeta(e, mMaxOrd, Z.ONE));
         }
       }
-      zp = A031361.dirichletProduct(zp, zp);
+      zp = Dirichlet.dirichletProduct(zp, zp);
       mDirichlet = zp;
     }
     return mDirichlet.get(mN);

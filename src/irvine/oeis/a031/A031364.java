@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import irvine.factor.prime.Fast;
+import irvine.math.z.Dirichlet;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -36,18 +37,18 @@ public class A031364 implements Sequence {
       for (int p = 2; p < mMaxOrd; p = (int) mPrime.nextPrime(p)) {
         switch (p % 5) {
           case 0: // i.e. p == 5
-            zp = A031361.dirichletProduct(zp, A031362.zetaNum(p, mMaxOrd, Z.ONE));
-            zp = A031361.dirichletProduct(zp, A031362.zeta(p, mMaxOrd, Z.valueOf(p)));
+            zp = Dirichlet.dirichletProduct(zp, Dirichlet.zetaNum(p, mMaxOrd, Z.ONE));
+            zp = Dirichlet.dirichletProduct(zp, Dirichlet.zeta(p, mMaxOrd, Z.valueOf(p)));
             break;
           case 1:
           case 4:
-            final List<Z> t = A031361.dirichletProduct(A031362.zetaNum(p, mMaxOrd, Z.ONE), A031362.zeta(p, mMaxOrd, Z.valueOf(p)));
-            zp = A031361.dirichletProduct(zp, A031361.dirichletProduct(t, t));
+            final List<Z> t = Dirichlet.dirichletProduct(Dirichlet.zetaNum(p, mMaxOrd, Z.ONE), Dirichlet.zeta(p, mMaxOrd, Z.valueOf(p)));
+            zp = Dirichlet.dirichletProduct(zp, Dirichlet.dirichletProduct(t, t));
             break;
           case 2:
           case 3:
-            zp = A031361.dirichletProduct(zp, A031362.zetaNum(p * p, mMaxOrd, Z.ONE));
-            zp = A031361.dirichletProduct(zp, A031362.zeta(p * p, mMaxOrd, Z.valueOf(p * p)));
+            zp = Dirichlet.dirichletProduct(zp, Dirichlet.zetaNum(p * p, mMaxOrd, Z.ONE));
+            zp = Dirichlet.dirichletProduct(zp, Dirichlet.zeta(p * p, mMaxOrd, Z.valueOf(p * p)));
             break;
         }
       }

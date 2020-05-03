@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A163836 Composites whose largest prime factor is equal to the sum of all the other prime factors.
+ * A163836 Composites whose largest prime factor is equal to the sum of all the other prime factors (with repetition).
  * @author Sean A. Irvine
  */
 public class A163836 implements Sequence {

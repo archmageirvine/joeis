@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012891 <code>cos(sin(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+5/4!*x^4-10/5!*x^5..</code>.
+ * A012891 Expansion of e.g.f.: <code>cos(sin(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+5/4!*x^4-10/5!*x^5..</code>.
  * @author Sean A. Irvine
  */
 public class A012891 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a158;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A158242 Smallest n-digit number with distinct digits such that every k-digit substring <code>(k &lt;= n)</code> taken from the left is divisible by k <code>(k=1..n)</code>.
+ * A158242 Smallest n-digit number with distinct digits such that every k-digit substring <code>(k &lt;= n)</code> taken from the left is divisible by k <code>(k = 1..n)</code>.
  * @author Georg Fischer
  */
 public class A158242 extends FiniteSequence {

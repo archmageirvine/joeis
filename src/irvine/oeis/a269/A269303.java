@@ -5,7 +5,7 @@ package irvine.oeis.a269;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A269303 Numbers n such that <code>(266*10^n+1)/3</code> is prime.
+ * A269303 Numbers k such that <code>(266*10^k + 1)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A269303 extends PowerFactorPrimeSequence {

@@ -26,8 +26,8 @@ public class A031414 implements Sequence {
         final List<Z> conv = Convergents.continuedFractionConvergentsSqrt(mN.longValueExact());
         final int s = conv.size();
         if ((s & 1) == 0
-          && target().equals(conv.get(s / 2))
-          && target().equals(conv.get(s / 2 - 1))) {
+          && target().equals(conv.get((s + 1) / 2))) {
+          //&& target().equals(conv.get(s / 2 - 1))) {
           return mN;
         }
       }

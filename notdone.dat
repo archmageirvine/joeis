@@ -1289,3 +1289,5 @@ A031436 Number of proper linear spaces of order n
 A031437 Number of nonisomorphic regular linear spaces RLIN(n)
 A031438 Number of nonisomorphic proper regular linear spaces, PRLIN(n)
 A031501 Triangle of numbers maxfit[ i ][ j ] = upper bound on number of incidences in a geometry with <= i points and <= j blocks
+A031507 Smallest k>0 such that the elliptic curve y^2 = x^3 + k has rank n, if k exists
+A031508 Smallest k>0 such that the elliptic curve y^2 = x^3 - k has rank n, if k exists

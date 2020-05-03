@@ -511,22 +511,32 @@ public final class ZUtils {
   }
 
   /**
-   * Return the count of each digit in the number
+   * Return the count of each digit in the number when written in the specified base.
    * @param n number
+   * @param base base to use
    * @return count of each digit
    */
-  public static int[] digitCounts(final Z n) {
-    final int[] counts = new int[10];
+  public static int[] digitCounts(final Z n, final int base) {
+    final int[] counts = new int[base];
     if (Z.ZERO.equals(n)) {
       ++counts[0];
     } else {
       Z m = n.abs();
       while (!Z.ZERO.equals(m)) {
-        ++counts[(int) m.mod(10)];
-        m = m.divide(10);
+        ++counts[(int) m.mod(base)];
+        m = m.divide(base);
       }
     }
     return counts;
+  }
+
+  /**
+   * Return the count of each digit in the number
+   * @param n number
+   * @return count of each digit
+   */
+  public static int[] digitCounts(final Z n) {
+    return digitCounts(n, 10);
   }
 
   /**

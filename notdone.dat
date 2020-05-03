@@ -1285,3 +1285,7 @@ A030455 Numbers having the same number of digits as letters in their US English 
 A030536 Expansion of Molien series for 32-D extraspecial group 2^{1+2*5}, rat g.f.?
 A030537 Expansion of Molien series for 64-D extraspecial group 2^{1+2*6}
 A030659 Smallest possible maximum denominator in an expression for 1 as a sum of n distinct unit (Egyptian) fractions, hard (backtrack I tried very slow)
+A031436 Number of proper linear spaces of order n
+A031437 Number of nonisomorphic regular linear spaces RLIN(n)
+A031438 Number of nonisomorphic proper regular linear spaces, PRLIN(n)
+A031501 Triangle of numbers maxfit[ i ][ j ] = upper bound on number of incidences in a geometry with <= i points and <= j blocks

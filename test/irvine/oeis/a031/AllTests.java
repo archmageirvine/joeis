@@ -990,9 +990,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(A031986Test.class);
     suite.addTestSuite(A031987Test.class);
     suite.addTestSuite(A031991Test.class);
-    suite.addTestSuite(A031996Test.class);
     suite.addTestSuite(A031997Test.class);
-    suite.addTestSuite(A031998Test.class);
     suite.addTestSuite(A031999Test.class);
     return suite;
   }

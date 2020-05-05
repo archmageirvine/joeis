@@ -1,21 +1,15 @@
 package irvine.oeis.a029;
 
-import irvine.math.z.Z;
-import irvine.util.string.StringUtils;
+import irvine.oeis.PalindromeSequence;
 
 /**
  * A029731 Palindromic in bases 10 and 16.
  * @author Sean A. Irvine
  */
-public class A029731 extends A029730 {
+public class A029731 extends PalindromeSequence {
 
-  @Override
-  public Z next() {
-    while (true) {
-      final Z t = super.next();
-      if (StringUtils.isPalindrome(t.toString())) {
-        return t;
-      }
-    }
+  /** Construct the sequence. */
+  public A029731() {
+    super(new A029730());
   }
 }

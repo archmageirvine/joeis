@@ -9,22 +9,6 @@ import irvine.oeis.Sequence;
  */
 public class A009994 implements Sequence {
 
-//  private final TreeSet<Z> mSeq = new TreeSet<>();
-//  {
-//    mSeq.add(Z.ZERO);
-//  }
-//
-//  @Override
-//  public Z nextQ() {
-//    final Z t = mSeq.pollFirst();
-//    final long r = t.mod(10);
-//    final Z u = t.multiply(10);
-//    for (long k = Math.max(1, r); k < 10; ++k) {
-//      mSeq.add(u.add(k));
-//    }
-//    return t;
-//  }
-
   private long mN = -1;
 
   @Override

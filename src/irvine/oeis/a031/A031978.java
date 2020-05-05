@@ -1,0 +1,23 @@
+package irvine.oeis.a031;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A031978 Omit digits <code>0, 1, 8</code> from <code>n</code>.
+ * @author Sean A. Irvine
+ */
+public class A031978 implements Sequence {
+
+  private long mN = 1;
+
+  @Override
+  public Z next() {
+    while (true) {
+      final String s = String.valueOf(++mN).replaceAll("[018]", "");
+      if (!s.isEmpty()) {
+        return new Z(s);
+      }
+    }
+  }
+}

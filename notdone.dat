@@ -999,8 +999,6 @@ A014627 Some sort of bipartite graph counting, could not find paper
 A014810 Multiplicity of trivial character in V_n, where V = Sum V_n is the graded module for the Monster simple group, looks complicated, have paper
 A014843 Sum modulo n of the sum modulo n of all the digits of n in every base from 2 to n-1, huh?, doesn't work
 A014982 Number of "coherent" reduced decompositions for the longest permutation n n-1 n-2 ... 3 2 1 in the symmetric group on n letters, looks complicated
-A015069 Weight distribution of [100,78,6] code associated with Hoffman-Singleton and Higman-Sims graphs, have paper
-A015071 Weight distribution of [100,78,8] code associated with Hoffman-Singleton and Higman-Sims graphs, have paper
 A015158 Theta series of 17-dimensional lattice Q_17(6)
 A015159 Theta series of 17-dimensional lattice Q_17(6)^{+2}
 A015160 Theta series of 17-dimensional lattice Q_17(6)^{+3}

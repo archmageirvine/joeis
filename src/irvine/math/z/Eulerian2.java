@@ -15,8 +15,11 @@ public final class Eulerian2 extends MemoryFunction2<Long, Z> {
 
   @Override
   protected Z compute(final Long n, final Long m) {
+    if (m == 0) {
+      return Z.ONE;
+    }
     if (n == 1) {
-      return m == 0 ? Z.ONE : Z.ZERO;
+      return Z.ZERO;
     }
     return get(n - 1, m).multiply(m + 1).add(get(n - 1, m - 1).multiply(2 * n - m - 1));
   }

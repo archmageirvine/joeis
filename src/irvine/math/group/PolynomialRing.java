@@ -455,4 +455,22 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
     }
     return res;
   }
+
+  /**
+   * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
+   * @return Laplace series
+   */
+  public Polynomial<E> serlaplace(final Polynomial<E> p) {
+    final Polynomial<E> res = create(Collections.emptyList());
+    E f = mOne;
+    for (int k = 0; k <= p.degree(); ++k) {
+      if (k > 1) {
+        f = mElementRing.multiply(f, mElementRing.coerce(k));
+      }
+      res.add(mElementRing.multiply(p.coeff(k), f));
+    }
+    return res;
+  }
+
+
 }

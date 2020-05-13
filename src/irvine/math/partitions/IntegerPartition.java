@@ -84,7 +84,7 @@ public final class IntegerPartition {
   public static void toCountForm(final int[] partition, final int[] counts) {
     Arrays.fill(counts, 0);
     for (final int p : partition) {
-      counts[p]++;
+      ++counts[p];
     }
   }
 

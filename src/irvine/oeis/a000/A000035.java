@@ -9,11 +9,11 @@ import irvine.oeis.Sequence;
  */
 public class A000035 implements Sequence {
 
-  private int mN = 0;
+  private long mN = -1;
 
   @Override
   public Z next() {
-    return (mN++ & 1) == 0 ? Z.ZERO : Z.ONE;
+    return (++mN & 1) == 0 ? Z.ZERO : Z.ONE;
   }
 }
 

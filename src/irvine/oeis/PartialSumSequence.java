@@ -1,5 +1,9 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 import irvine.math.z.Z;
 
 /**
@@ -23,5 +27,20 @@ public class PartialSumSequence implements Sequence {
   public Z next() {
     mSum = mSum.add(mSeq.next());
     return mSum;
+  }
+
+  /**
+   * Apply the partial sum function to the sequence supplied on standard input.
+   * @param args number of terms to skip
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final Sequence seq = new PartialSumSequence(new ReaderSequence(r));
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
   }
 }

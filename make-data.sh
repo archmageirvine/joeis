@@ -6,6 +6,7 @@
 a=${1}
 if [[ ${a} = "" ]]; then
     echo "Usage: $0 A-number"
+    echo "Usage: $0 -  (read from standard input)"
     exit
 fi
 target=${2:-260}
@@ -27,4 +28,8 @@ function collect() {
     echo "${res}"
 }
 
-java irvine.oeis.SequenceFactory "${a}" | collect
+if [[ ${a} == "-" ]]; then
+    collect
+else
+    java irvine.oeis.SequenceFactory "${a}" | collect
+fi

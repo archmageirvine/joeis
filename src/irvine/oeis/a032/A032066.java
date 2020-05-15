@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032066.
+ * A032066 Number of dyslexic rooted planar trees with n nodes where any 2 subtrees extending from the same node are different.
  * @author Sean A. Irvine
  */
 public class A032066 extends MemorySequence {

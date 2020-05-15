@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A032067.
+ * A032067 Shifts left 2 places under "BGK" <code>(reversible</code>, element, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032067 extends A032065 {

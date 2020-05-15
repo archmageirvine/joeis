@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032068.
+ * A032068 Number of series-reduced dyslexic planted planar trees with n leaves of 2 colors where any 2 subtrees extending from the same node are different.
  * @author Sean A. Irvine
  */
 public class A032068 extends MemorySequence {

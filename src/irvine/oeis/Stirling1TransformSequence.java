@@ -1,5 +1,8 @@
 package irvine.oeis;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,4 +71,19 @@ public class Stirling1TransformSequence implements Sequence {
     return stirling1(mTerms);
   }
 
+  /**
+   * Apply the Stirling transform to the sequence supplied on standard input.
+   * @param args number of terms to skip
+   * @throws IOException if an I/O error occurs.
+   */
+  public static void main(final String[] args) throws IOException {
+    final int skip = args.length > 0 ? Integer.parseInt(args[0]) : 0;
+    try (final BufferedReader r = new BufferedReader(new InputStreamReader(System.in))) {
+      final Stirling1TransformSequence seq = new Stirling1TransformSequence(new ReaderSequence(r), skip);
+      Z a;
+      while ((a = seq.next()) != null) {
+        System.out.println(a);
+      }
+    }
+  }
 }

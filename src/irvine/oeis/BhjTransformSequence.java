@@ -5,7 +5,6 @@ import java.util.List;
 
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.partitions.IntegerPartition;
-import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
@@ -25,9 +24,9 @@ public class BhjTransformSequence implements Sequence {
     mA.next();
   }
 
-  Z t(final List<Z> a, final int n) {
+  private Z t(final List<Z> a, final int n) {
     final IntegerPartition part = new IntegerPartition(n);
-    Z sum = a.get(0).multiply2();
+    Z sum = a.get(n - 1).multiply2();
     int[] p;
     final int[] q = new int[n + 1];
     while ((p = part.next()) != null) {
@@ -41,12 +40,8 @@ public class BhjTransformSequence implements Sequence {
           if ((q[i] & 1) == 1) {
             ++odd;
           }
-          //if (!Z.ZERO.equals(a.get(i - 1))) {
-            t1 = t1.multiply(a.get(i - 1).pow(q[i])).divide(mFactorial.factorial(q[i]));
-            //t2 = t2.multiply(a.get(i - 1).pow(q[i] / 2)).divide(mFactorial.factorial(q[i] / 2));
-            t2 = t2.multiply(a.get(i - 1).pow((q[i] + 1) / 2)).divide(mFactorial.factorial(q[i] / 2));
-          //}
-          //t2 = t2.multiply(a.get(i - 1).pow(q[i] / 2)).multiply(p.length / 2 + 1).divide(mFactorial.factorial(q[i] / 2));
+          t1 = t1.multiply(a.get(i - 1).pow(q[i])).divide(mFactorial.factorial(q[i]));
+          t2 = t2.multiply(a.get(i - 1).pow((q[i] + 1) / 2)).divide(mFactorial.factorial(q[i] / 2));
           d = d.multiply(mFactorial.factorial(i).pow(q[i]));
         }
       }
@@ -56,45 +51,11 @@ public class BhjTransformSequence implements Sequence {
       sum = sum.add(t);
     }
 
-    //System.out.println(sum + " cf. " + tq(a, n).multiply(2));
-
-    return sum.divide(2);
-  }
-
-  Q tq(final List<Z> a, final int n) {
-    final IntegerPartition part = new IntegerPartition(n);
-    Q sum = new Q(a.get(0)).multiply(2); //Z.ONE;
-    int[] p;
-    final int[] q = new int[n + 1];
-    while ((p = part.next()) != null) {
-      IntegerPartition.toCountForm(p, q);
-      int odd = 0;
-      Q d = Q.ONE;
-      Q t1 = new Q(mFactorial.factorial(p.length));
-      Q t2 = new Q(mFactorial.factorial(p.length / 2));
-      for (int i = 1; i < q.length; ++i) {
-        if (q[i] != 0) {
-          if ((q[i] & 1) == 1) {
-            ++odd;
-          }
-          //  if (!Z.ZERO.equals(a.get(i - 1))) {
-          t1 = t1.multiply(a.get(i - 1).pow(q[i])).divide(mFactorial.factorial(q[i]));
-          t2 = t2.multiply(a.get(i - 1).pow((q[i] + 1) / 2)).divide(mFactorial.factorial(q[i] / 2));
-          //   }
-          d = d.multiply(mFactorial.factorial(i).pow(q[i]));
-        }
-      }
-      final Q t3 = odd > 1 ? t1 : t1.subtract(t2);
-      final Q t = t3.multiply(mFactorial.factorial(n)).divide(d);
-      //System.out.println(n + " " + Arrays.toString(p) + " " + Arrays.toString(q) + " k=" + p.length + " t=" + t + " t1=" + t1 + " t2=" + t2 + " #odd=" + odd);
-      sum = sum.add(t);
-    }
     return sum.divide(2);
   }
 
   private List<Z> bhj(final List<Z> a) {
     final ArrayList<Z> res = new ArrayList<>(a.size());
-//    res.add(a.get(0));
     for (int k = 1; k <= a.size(); ++k) {
       res.add(t(a, k));
     }

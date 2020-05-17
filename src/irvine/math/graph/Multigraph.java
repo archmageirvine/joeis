@@ -2,7 +2,9 @@ package irvine.math.graph;
 
 import java.util.Arrays;
 
+import irvine.math.IntegerUtils;
 import irvine.util.Permutation;
+import irvine.util.array.Sort;
 
 /**
  * Multigraph with canonicalization support.
@@ -71,6 +73,8 @@ public class Multigraph implements Comparable<Multigraph> {
       if (deg != 0) {
         return deg;
       }
+    }
+    for (int k = 0; k < mAdj.length; ++k) {
       for (int j = 0; j < mAdj.length; ++j) {
         final int e = Integer.compare(mAdj[k][j], that.mAdj[k][j]);
         if (e != 0) {
@@ -163,10 +167,22 @@ public class Multigraph implements Comparable<Multigraph> {
       // vertex u -> perm[u]
       for (int v = 0; v < order(); ++v) {
         // vertex v -> perm[v]
-        a[perm[u]][perm[v]] = mAdj[u][v];
+        a[u][v] = mAdj[perm[u]][perm[v]];
       }
     }
     return new Multigraph(a);
+  }
+
+  private boolean bump(final Permutation[] perms) {
+    // Increment across all permutation state objects
+    for (int k = 0; perms[k] != null; ++k) {
+      if (perms[k].next() != null) {
+        return true;
+      }
+      // Permutation k was exhausted, reset it and move to next permutation
+      perms[k] = new Permutation(perms[k].current().length);
+    }
+    return false;
   }
 
   /**
@@ -174,8 +190,72 @@ public class Multigraph implements Comparable<Multigraph> {
    * @return canonical form
    */
   public Multigraph canon() {
+    // First arrange vertices in degree order
+    final int n = order();
+    final int[] id = new int[n];
+    final long[] deg = new long[n];
+    for (int k = 0; k < n; ++k) {
+      id[k] = k;
+      final int d = degree(k);
+      deg[k] = d;
+    }
+    Sort.sort(deg, id);
+    // Form initial vertex arrangement based on increasing degree
+    Multigraph res = permute(id);
+    // Work out offsets for each degree increase
+    final int[] offset = new int[n];
+    final int[] arity = new int[n];
+    arity[0] = 1;
+    for (int k = 1, j = 0; k < deg.length; ++k) {
+      if (deg[k] != deg[k - 1]) {
+        offset[++j] = k;
+        arity[j] = 1;
+      } else {
+        ++arity[j];
+      }
+    }
+    // If there are j vertices of degree d, we try all permutation of those vertices
+    // Obviously we only need to permute those with multiple options
+    final Permutation[] perms = new Permutation[n];
+    int j = 0;
+    for (int k = 0; k < arity.length; ++k) {
+      if (arity[k] > 1) {
+        perms[j] = new Permutation(arity[k]);
+        offset[j] = offset[k]; // pack offsets leftward
+        ++j;
+      }
+    }
+    //System.out.println("deg=" + Arrays.toString(deg) + " " + Arrays.toString(id) + " " + this + " -> " + res + " j=" + j + " arity=" + Arrays.toString(arity) + " offsets=" + Arrays.toString(offset));
+
+    final Multigraph sorted = res;
+    final int[] vertexPerm = IntegerUtils.identity(new int[n]);
+    while (bump(perms)) {
+      for (int k = 0; perms[k] != null; ++k) {
+        final int o = offset[k];
+        final int[] p = perms[k].current();
+        for (int i = 0; i < p.length; ++i) {
+          vertexPerm[o + i] = o + p[i];
+        }
+      }
+      //System.out.println(" p=" + Arrays.toString(vertexPerm));
+      final Multigraph m = sorted.permute(vertexPerm);
+      if (m.canonCompare(res) < 0) {
+        res = m;
+      }
+    }
+
+//    if (!res.equals(simpleCanon())) {
+//      System.out.println("Mismatch: " + res + " cf. " + simpleCanon());
+//    }
+
+  //  System.out.println("res=" + res);
+    return res;
+
+  }
+
+  private Multigraph simpleCanon() {
+    // Simpler implementation that simply tries every possible permutation of vertices
     Multigraph res = this;
-    // todo this can be made smarter by an initial sort by degree and only permuting up to degree
     final Permutation perm = new Permutation(order());
     int[] p;
     while ((p = perm.next()) != null) {

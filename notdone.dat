@@ -214,7 +214,6 @@ A002926 Magnetic susceptibility, see Finch
 A002927 Magnetic susceptibility, see Finch
 A002929 Magnetization cubic lattice
 A002930 Magnetization diamond
-A002935 Number of series-reduced star graphs with n edges, have paper
 A002936 Solid partition, distinct rows, might be doable, not much detail available [partial impl]
 A002962 Counting squares in rectangle, possible? but hard
 A002967 Egyptian fractions, hard to do efficient (sim A002966)

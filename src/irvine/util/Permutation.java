@@ -2,6 +2,8 @@ package irvine.util;
 
 import java.util.Arrays;
 
+import irvine.math.IntegerUtils;
+
 /**
  * Provides a mechanism for generating all the permutations of the integers
  * up to some specified bound.
@@ -24,21 +26,12 @@ public class Permutation {
     Arrays.sort(mPermutation);
   }
 
-  private static int[] identity(final int n) {
-    final int[] p = new int[n];
-    for (int k = 0; k < n; ++k) {
-      p[k] = k;
-    }
-    return p;
-  }
-
   /**
    * Construct a permutation on specified number of elements.
-   *
    * @param n number of elements
    */
   public Permutation(final int n) {
-    this(identity(n));
+    this(IntegerUtils.identity(new int[n]));
   }
 
   private void swap(final int j, final int l) {
@@ -87,6 +80,14 @@ public class Permutation {
    */
   public int[] next() {
     return step() ? mPermutation : null;
+  }
+
+  /**
+   * Return the current permutation.
+   * @return permutation
+   */
+  public int[] current() {
+    return mPermutation;
   }
 
   /**

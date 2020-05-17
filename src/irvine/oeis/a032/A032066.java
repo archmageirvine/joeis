@@ -27,7 +27,7 @@ public class A032066 extends MemorySequence {
     mBfk.add(null);
   }
 
-  static Polynomial<Polynomial<Q>> product(List<Z> v) {
+  static Polynomial<Polynomial<Q>> product(final List<Z> v) {
     Polynomial<Polynomial<Q>> prod = RING.one();
     final Polynomial<Q> t1 = Y_RING.monomial(Q.ONE, 1);
     for (int k = 1; k < v.size(); ++k) {
@@ -38,8 +38,8 @@ public class A032066 extends MemorySequence {
   }
 
   static List<Z> cgk(final List<Z> v) {
-    Polynomial<Polynomial<Q>> prod = product(v);
-    List<Z> res = new ArrayList<>();
+    final Polynomial<Polynomial<Q>> prod = product(v);
+    final List<Z> res = new ArrayList<>();
     for (final Polynomial<Q> t : prod) {
       res.add(Y_RING.eval(Y_RING.serlaplace(t.shift(-1)), Q.ONE).toZ());
     }

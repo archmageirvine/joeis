@@ -47,6 +47,7 @@ public class A031364 implements Sequence {
             break;
           case 2:
           case 3:
+          default:
             zp = Dirichlet.dirichletProduct(zp, Dirichlet.zetaNum(p * p, mMaxOrd, Z.ONE));
             zp = Dirichlet.dirichletProduct(zp, Dirichlet.zeta(p * p, mMaxOrd, Z.valueOf(p * p)));
             break;

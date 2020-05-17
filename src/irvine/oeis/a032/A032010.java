@@ -37,8 +37,8 @@ public class A032010 extends MemorySequence {
   }
 
   private List<Z> afk(final List<Z> v) {
-    Polynomial<Polynomial<Q>> prod = product(v);
-    List<Z> res = new ArrayList<>();
+    final Polynomial<Polynomial<Q>> prod = product(v);
+    final List<Z> res = new ArrayList<>();
     for (final Polynomial<Q> t : prod) {
       res.add(Y_RING.eval(Y_RING.serlaplace(t), Q.ONE).toZ());
     }
@@ -46,8 +46,8 @@ public class A032010 extends MemorySequence {
   }
 
   static List<Z> cfk(final List<Z> v) {
-    Polynomial<Polynomial<Q>> prod = product(v);
-    List<Z> res = new ArrayList<>();
+    final Polynomial<Polynomial<Q>> prod = product(v);
+    final List<Z> res = new ArrayList<>();
     for (final Polynomial<Q> t : prod) {
       res.add(Y_RING.eval(Y_RING.serlaplace(t.shift(-1)), Q.ONE).toZ());
     }

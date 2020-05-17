@@ -19,8 +19,8 @@ public class A106594 implements Sequence {
     mN += 4;
     long a = 0;
     for (long x = 1; x * x < mN; ++x) {
-      long y = mN - x * x;
-      long s = LongUtils.sqrt(y);
+      final long y = mN - x * x;
+      final long s = LongUtils.sqrt(y);
       if (s * s == y && s <= x && LongUtils.gcd(x, s) == 1) {
         ++a;
       }

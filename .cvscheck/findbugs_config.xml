@@ -167,6 +167,9 @@
      <Match classregex="irvine.math.elliptic.EllipticCurveMod">
        <BugCode name="EI"/>
      </Match>
+     <Match classregex="irvine.math.Permutation">
+       <BugCode name="EI"/>
+     </Match>
 
      <!-- Don't care about serialization in the OEIS -->
      <Match classregex="irvine.oeis.*">

@@ -34,6 +34,16 @@ public class A333368 extends A002385 {
       }
       return Integer.compare(mM, o.mM);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof Node && compareTo((Node) obj) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+      return mV.hashCode();
+    }
   }
 
   private final TreeSet<Node> mCandidates = new TreeSet<>();

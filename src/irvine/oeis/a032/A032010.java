@@ -32,8 +32,7 @@ public class A032010 extends MemorySequence {
       final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(Y_RING.monomial(new Q(v.get(k)), 1), k);
       prod = RING.multiply(prod, u, v.size());
     }
-    prod = RING.subtract(prod, RING.one());
-    return prod;
+    return RING.subtract(prod, RING.one());
   }
 
   private List<Z> afk(final List<Z> v) {

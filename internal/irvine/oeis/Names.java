@@ -102,6 +102,7 @@ public final class Names {
     FORMULA.add("Hn");
     FORMULA.add("K4");
     FORMULA.add("ud");
+    FORMULA.add("uhh...hd");
     FORMULA.add("UD");
     FORMULA.add("UHD,");
     FORMULA.add("UHHD,");

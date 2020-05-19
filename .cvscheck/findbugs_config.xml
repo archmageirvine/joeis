@@ -167,7 +167,7 @@
      <Match classregex="irvine.math.elliptic.EllipticCurveMod">
        <BugCode name="EI"/>
      </Match>
-     <Match classregex="irvine.math.Permutation">
+     <Match classregex="irvine.util.Permutation">
        <BugCode name="EI"/>
      </Match>
 

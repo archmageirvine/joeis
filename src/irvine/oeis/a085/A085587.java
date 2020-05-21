@@ -8,8 +8,4 @@ import irvine.oeis.a010.A010760;
  */
 public class A085587 extends A010760 {
 
-  {
-    super.next();
-    super.next();
-  }
 }

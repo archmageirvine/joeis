@@ -8,6 +8,8 @@ import irvine.math.z.Z;
  */
 public class A001335 extends A001334 {
 
+  private boolean mFirst = true;
+
   @Override
   protected long count(final int point) {
     if (mN > 1) {
@@ -22,6 +24,10 @@ public class A001335 extends A001334 {
 
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      return Z.ONE;
+    }
     if (++mN == 0) {
       return Z.ZERO;
     }

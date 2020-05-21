@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A003002 implements Sequence {
 
-  private int mN = 0;
+  private int mN = -1;
   private int mMax = 0;
 
   private void search(final boolean[] included, final int[] excluded, final int count, final int lastIndex) {

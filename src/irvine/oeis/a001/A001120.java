@@ -10,13 +10,16 @@ import irvine.oeis.Sequence;
 public class A001120 implements Sequence {
 
   private Z mPrev = Z.TWO;
-  private long mN = 0;
+  private long mN = -1;
   private long mA = 1;
 
   @Override
   public Z next() {
+    if (++mN == 0) {
+      return Z.ONE;
+    }
     mA = -mA;
-    mPrev = mPrev.multiply(++mN).add(mA);
+    mPrev = mPrev.multiply(mN).add(mA);
     return mPrev;
   }
 }

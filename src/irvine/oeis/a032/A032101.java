@@ -21,18 +21,22 @@ public class A032101 implements Sequence {
     mA.add(Z.ZERO);
   }
 
-  private Polynomial<Z> bhk(final Polynomial<Z> p) {
+  private static Polynomial<Z> bhk(final Polynomial<Z> p) {
     final Polynomial<Z> t = RING.subtract(RING.one(), p);
     final Polynomial<Z> u = RING.series(RING.add(RING.one(), p), t.substitutePower(2, p.degree()), p.degree());
     final Polynomial<Z> v = RING.series(RING.one(), t, p.degree());
     return RING.add(p, RING.divide(RING.subtract(v, u), Z.TWO));
   }
 
+  protected Z start() {
+    return Z.ONE;
+  }
+
   @Override
   public Z next() {
     if (++mN < 3) {
-      mA.add(Z.ONE);
-      return Z.ONE;
+      mA.add(start());
+      return start();
     }
     final Z t = bhk(mA).coeff(mN - 1);
     mA.add(t);

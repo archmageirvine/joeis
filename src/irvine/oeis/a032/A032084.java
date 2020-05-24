@@ -5,7 +5,7 @@ import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032084.
+ * A032084 Doubles (index <code>2+)</code> under "BHJ" <code>(reversible</code>, identity, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032084 extends MemorySequence {

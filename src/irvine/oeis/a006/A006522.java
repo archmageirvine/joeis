@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A006522 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of n-gon in general position.
+ * A006522 4-dimensional analog of centered polygonal numbers. Also number of regions created by sides and diagonals of a convex n-gon in general position.
  * @author Sean A. Irvine
  */
 public class A006522 extends LinearRecurrence {

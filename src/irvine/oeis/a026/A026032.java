@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026032 <code>C(3n,n) - C(3n,n-4)</code>.
+ * A026032 <code>a(n) = C(3n,n) - C(3n,n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A026032 implements Sequence {

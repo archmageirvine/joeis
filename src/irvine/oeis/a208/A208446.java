@@ -5,7 +5,7 @@ package irvine.oeis.a208;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A208446 Inverse binomial transform of the Franel numbers <code>(A000172)</code>.
+ * A208446 Duplicate of <code>A172634</code>.
  * @author Georg Fischer
  */
 public class A208446 extends HolonomicRecurrence {

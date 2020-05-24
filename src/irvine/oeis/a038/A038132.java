@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A038132 3rd-longest sequence <code>(6</code> terms) of primes according to the rule stipulated in <code>A005150</code>.
+ * A038132 Third earliest sequence of 6 primes according to the rules stipulated in <code>A005150</code>.
  * @author Georg Fischer
  */
 public class A038132 extends FiniteSequence {

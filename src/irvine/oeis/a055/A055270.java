@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055270 <code>a(n) = 7a(n-1) + (-1^n)*binomial(2,2-n); a(-1)=0</code>.
+ * A055270 <code>a(n) = 7*a(n-1) + (-1)^n * binomial(2,2-n)</code> with <code>a(-1)=0</code>.
  * @author Georg Fischer
  */
 public class A055270 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114938 Number of permutations of the multiset <code>{1,1,2,2,....,n,n}</code> with no two consecutive terms equal.
+ * A114938 Number of permutations of the multiset <code>{1,1,2,2,...,n,n}</code> with no two consecutive terms equal.
  * @author Georg Fischer
  */
 public class A114938 extends HolonomicRecurrence {

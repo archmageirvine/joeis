@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.DhkTransformSequence;
 
 /**
- * A032102.
+ * A032102 Number of dyslexic identity rooted planar trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A032102 extends DhkTransformSequence {

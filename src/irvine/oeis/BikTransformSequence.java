@@ -1,7 +1,5 @@
 package irvine.oeis;
 
-import java.util.ArrayList;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -17,13 +15,10 @@ public class BikTransformSequence implements Sequence {
   private static final Polynomial<Z> TWO = Polynomial.create(2);
   private final Sequence mSeq;
   private Polynomial<Z> mA = RING.zero();
-  private final ArrayList<Z> mOneMinusA = new ArrayList<>();
-  private final ArrayList<Z> mOnePlusA = new ArrayList<>();
   private int mN = -1;
 
   /**
    * Creates a new reversible, indistinct, unlabeled transform.
-   *
    * @param seq underlying sequence
    * @param skip number of terms to skip
    */
@@ -32,8 +27,19 @@ public class BikTransformSequence implements Sequence {
     for (int k = 0; k < skip; ++k) {
       seq.next();
     }
-    mOneMinusA.add(Z.ONE);
-    mOnePlusA.add(Z.ONE);
+  }
+
+  /**
+   * Compute the BIK transform of a polynomial.
+   * @param seq sequence
+   * @return BIK transform
+   */
+  public static Polynomial<Z> bik(final Polynomial<Z> seq) {
+    final int mN = seq.degree();
+    final Polynomial<Z> aa = seq.substitutePower(2, mN);
+    final Polynomial<Z> b1 = RING.series(RING.subtract(TWO, RING.pow(seq, 2, mN)), RING.subtract(RING.one(), seq), mN);
+    final Polynomial<Z> b2 = RING.series(RING.multiply(aa, RING.add(RING.one(), seq)), RING.subtract(RING.one(), aa), mN);
+    return RING.divide(RING.add(b1, b2), Z.TWO);
   }
 
   @Override
@@ -46,11 +52,6 @@ public class BikTransformSequence implements Sequence {
       return null;
     }
     mA = RING.add(mA, RING.monomial(an, mN));
-    mOnePlusA.add(an);
-    mOneMinusA.add(an.negate());
-    final Polynomial<Z> aa = mA.substitutePower(2, mN);
-    final Polynomial<Z> b1 = RING.series(RING.subtract(TWO, RING.pow(mA, 2, mN)), RING.create(mOneMinusA), mN);
-    final Polynomial<Z> b2 = RING.series(RING.multiply(aa, RING.create(mOnePlusA)), RING.subtract(RING.one(), aa), mN);
-    return RING.add(b1, b2).coeff(mN).divide2();
+    return bik(mA).coeff(mN);
   }
 }

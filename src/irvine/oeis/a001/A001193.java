@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001193 <code>a(n) = (n+1)(2n)!/(2^n*n!) ( = (n+1)(2n-1)!!)</code>.
+ * A001193 <code>a(n) = (n+1)*(2*n)!/(2^n*n!) = (n+1)*(2n-1)!!</code>.
  * @author Sean A. Irvine
  */
 public class A001193 implements Sequence {

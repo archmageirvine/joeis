@@ -5,7 +5,7 @@ import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032082.
+ * A032082 Shifts left under "BHJ" <code>(reversible</code>, identity, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032082 extends MemorySequence {

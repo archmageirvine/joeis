@@ -5,7 +5,7 @@ package irvine.oeis.a270;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A270890 Numbers n such that <code>(8*10^n+49)/3</code> is prime.
+ * A270890 Numbers k such that <code>(8*10^k + 49)/3</code> is prime.
  * @author Georg Fischer
  */
 public class A270890 extends PowerFactorPrimeSequence {

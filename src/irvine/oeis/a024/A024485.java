@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024485 <code>a(n) = (2/(3n-1))*C(3n,n)</code>.
+ * A024485 <code>a(n) = (2/(3*n-1))*binomial(3*n,n)</code>.
  * @author Sean A. Irvine
  */
 public class A024485 implements Sequence {

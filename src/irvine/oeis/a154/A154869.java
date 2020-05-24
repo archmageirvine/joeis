@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A154869 A triangular sequence: <code>t0(n,m) = Sum[(-1)^j*Binomial[n + 2, j]*(m - j + 1)^(n + 1), {j, 0, m + 1}]; t1(n,m)=-Sum[(-1)^j*t0[n + 2, j]*(m - j + 1)^(n + 1), {j, 0, m + 1}]; t(n,m)=t1(n,m)+t1(n,n-m)</code>.
+ * A154869 A triangular sequence: <code>T(n,m) = t1(n,m) + t1(n,n-m)</code> where <code>t1(n,m) = -Sum_{j=0..m+1} (-1)^j * t0(n + 2, j) * (m - j + 1)^(n + 1)</code> and <code>t0(n,m) = Sum_{j=0..m+1} (-1)^j * binomial(n + 2, j) * (m - j + 1)^(n + 1)</code>.
  * @author Sean A. Irvine
  */
 public class A154869 implements Sequence {

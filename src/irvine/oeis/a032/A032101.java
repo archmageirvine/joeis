@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032101.
+ * A032101 Number of dyslexic identity planted planar trees with <code>n+1</code> nodes.
  * @author Sean A. Irvine
  */
 public class A032101 implements Sequence {
@@ -21,7 +21,7 @@ public class A032101 implements Sequence {
     mA.add(Z.ZERO);
   }
 
-  private static Polynomial<Z> bhk(final Polynomial<Z> p) {
+  static Polynomial<Z> bhk(final Polynomial<Z> p) {
     final Polynomial<Z> t = RING.subtract(RING.one(), p);
     final Polynomial<Z> u = RING.series(RING.add(RING.one(), p), t.substitutePower(2, p.degree()), p.degree());
     final Polynomial<Z> v = RING.series(RING.one(), t, p.degree());

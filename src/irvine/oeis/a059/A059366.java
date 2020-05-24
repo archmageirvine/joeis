@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000142;
 import irvine.oeis.a000.A000984;
 
 /**
- * A059366 Triangle <code>T(m,s), m &gt;= 0, 0 &lt;= s &lt;=</code> m, arising in computation of certain integrals.
+ * A059366 Triangle <code>T(m,s), m &gt;= 0, 0 &lt;= s &lt;=</code> m, arising in the computation of certain integrals.
  * @author Sean A. Irvine
  */
 public class A059366 implements Sequence {

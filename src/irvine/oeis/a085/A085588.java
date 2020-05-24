@@ -8,6 +8,11 @@ import irvine.math.z.Z;
  */
 public class A085588 extends A085587 {
 
+  {
+    super.next();
+    super.next();
+  }
+
   @Override
   protected Z step(final Z state) {
     final Z a = state.divide2().or(state.and(Z.ONE).shiftLeft(mN - 1));

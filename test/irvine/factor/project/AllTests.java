@@ -14,7 +14,6 @@ public class AllTests extends TestSuite {
     final TestSuite suite = new TestSuite();
     suite.addTest(irvine.factor.project.alonso.AllTests.suite());
     suite.addTest(irvine.factor.project.em.AllTests.suite());
-    suite.addTest(irvine.factor.project.hp.AllTests.suite());
     suite.addTest(irvine.factor.project.smarandache.AllTests.suite());
     return suite;
   }

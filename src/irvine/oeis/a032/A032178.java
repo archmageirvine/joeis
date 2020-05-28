@@ -1,32 +1,32 @@
 package irvine.oeis.a032;
 
-import java.util.Collections;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
+import irvine.oeis.MemorySequence;
+import irvine.oeis.PrependSequence;
+import irvine.oeis.Sequence;
 
 /**
  * A032178 Functions of n points with no fixed points and with no symmetries.
  * @author Sean A. Irvine
  */
-public class A032178 extends A032177 {
+public class A032178 implements Sequence {
 
-  // WEIGH transform
+  // WEIGH transform (actually weighout in Maple transforms)
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private final Polynomial<Z> mA = RING.create(Collections.emptyList());
+  private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A032177(), 0));
   private int mN = 0;
-  {
-    mA.add(Z.ZERO);
-  }
 
   @Override
   public Z next() {
-    mA.add(super.next());
-    return RING.series(RING.subtract(RING.one(), mA.substitutePower(2, ++mN)),
-      RING.subtract(RING.one(), mA), mN)
-      .coeff(mN);
+    ++mN;
+    Polynomial<Z> prod = RING.one();
+    for (int k = 1; k <= mN; ++k) {
+      prod = RING.multiply(prod, RING.powz(RING.onePlusXToTheN(k), mA.a(k), mN), mN);
+    }
+    return prod.coeff(mN);
   }
 }

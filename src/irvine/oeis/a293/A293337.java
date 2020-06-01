@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a027.A027437;
 
 /**
- * A293337 Least integer k such that <code>k/2^n &gt</code>; e.
+ * A293337 Least integer k such that <code>k/2^n &gt;</code> e.
  * @author Georg Fischer
  */
 public class A293337 extends A027437 {

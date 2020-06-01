@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002271 All odd numbers k, <code>1 &lt; k &lt</code>; n, relatively prime to n are primes.
+ * A002271 All odd numbers k, <code>1 &lt; k &lt;</code> n, relatively prime to n are primes.
  * @author Sean A. Irvine
  */
 public class A002271 extends FiniteSequence {

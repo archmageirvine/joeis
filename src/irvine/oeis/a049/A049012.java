@@ -5,7 +5,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049012 Composite numbers n such that number of nonprime d with <code>0 &lt; d &lt</code>; n, <code>gcd(n,d)=1</code>, is <code>pi(n)</code>.
+ * A049012 Composite numbers n such that number of nonprime d with <code>0 &lt; d &lt;</code> n, <code>gcd(n,d)=1</code>, is <code>pi(n)</code>.
  * @author Georg Fischer
  */
 public class A049012 extends FiniteSequence {

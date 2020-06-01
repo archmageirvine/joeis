@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229858 Consider all 120-degree triangles with sides A <code>&lt; B &lt</code>; C. The sequence gives the values of A.
+ * A229858 Consider all 120-degree triangles with sides A <code>&lt; B &lt;</code> C. The sequence gives the values of A.
  * @author Georg Fischer
  */
 public class A229858 extends GeneratingFunctionSequence {

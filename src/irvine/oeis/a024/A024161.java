@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024161 Number of integer-sided triangles with sides a,b,c, a <code>&lt; b &lt</code>; c, <code>a+b+c = n</code> such that a,b,c are pairwise relatively prime.
+ * A024161 Number of integer-sided triangles with sides a,b,c, a <code>&lt; b &lt;</code> c, <code>a+b+c = n</code> such that a,b,c are pairwise relatively prime.
  * @author Sean A. Irvine
  */
 public class A024161 implements Sequence {

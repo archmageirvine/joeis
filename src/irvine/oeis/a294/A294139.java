@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294139 Sum of the areas of the distinct rectangles (and the areas of the squares on their sides) with positive integer sides such that L <code>+ W =</code> n, W <code>&lt</code>; L.
+ * A294139 Sum of the areas of the distinct rectangles (and the areas of the squares on their sides) with positive integer sides such that L <code>+ W =</code> n, W &lt; L.
  * @author Georg Fischer
  */
 public class A294139 extends GeneratingFunctionSequence {

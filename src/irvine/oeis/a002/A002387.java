@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.q.Q;
 
 /**
- * A002387 Least k such that <code>H(k) &gt</code>; n, where <code>H(k)</code> is the harmonic number <code>Sum_{i=1..k} 1/i</code>.
+ * A002387 Least k such that <code>H(k) &gt;</code> n, where <code>H(k)</code> is the harmonic number <code>Sum_{i=1..k} 1/i</code>.
  * @author Sean A. Irvine
  */
 public class A002387 implements Sequence {

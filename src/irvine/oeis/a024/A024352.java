@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024352 Numbers which are the difference of two positive squares, <code>c^2 - b^2</code> with <code>1 &lt;= b &lt</code>; c.
+ * A024352 Numbers which are the difference of two positive squares, <code>c^2 - b^2</code> with <code>1 &lt;= b &lt;</code> c.
  * @author Sean A. Irvine
  */
 public class A024352 implements Sequence {

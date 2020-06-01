@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A096453 Primes p such that the number of primes q, <code>5 &lt;= q &lt</code>; p, congruent to <code>1 mod 3</code>, is two less than the number of such primes congruent to <code>2 mod 3</code>.
+ * A096453 Primes p such that the number of primes q, <code>5 &lt;= q &lt;</code> p, congruent to <code>1 mod 3</code>, is two less than the number of such primes congruent to <code>2 mod 3</code>.
  * @author Sean A. Irvine
  */
 public class A096453 implements Sequence {

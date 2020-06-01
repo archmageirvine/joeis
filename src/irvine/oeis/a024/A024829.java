@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A024829 <code>a(n) =</code> least m such that if r and s in <code>{F(2*h-1)/F(2*h): h = 1,2,...,n}</code> satisfy r <code>&lt</code>; s, then r <code>&lt; k/m &lt</code>; s for some integer k, where F <code>= A000045</code> (Fibonacci numbers).
+ * A024829 <code>a(n) =</code> least m such that if r and s in <code>{F(2*h-1)/F(2*h): h = 1,2,...,n}</code> satisfy r &lt; s, then r <code>&lt; k/m &lt;</code> s for some integer k, where F <code>= A000045</code> (Fibonacci numbers).
  * @author Sean A. Irvine
  */
 public class A024829 implements Sequence {

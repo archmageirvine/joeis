@@ -19,7 +19,7 @@ public class A001072 implements Sequence, GraphProcessor {
   private long mCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.isMinimallyTwoEdgeConnected()) {
       ++mCount;
       if (mVerbose) {

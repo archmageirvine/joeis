@@ -20,7 +20,7 @@ public class A003317 implements Sequence, GraphProcessor {
   private long mCount = 0;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (graph.isMinimallyBiconnected()) {
       ++mCount;
     }

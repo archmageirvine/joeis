@@ -199,7 +199,7 @@ public class A000942 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mTreeCount;
     // Embed first vertex at (0,2)
     final Set<Point> usedLatticeNodes = new HashSet<>();

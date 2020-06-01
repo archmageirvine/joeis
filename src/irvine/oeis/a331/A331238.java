@@ -20,7 +20,7 @@ public class A331238 implements Sequence, GraphProcessor {
   private long[] mCounts = new long[0];
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     ++mCounts[GraphUtils.cuttingNumberOfTree(graph)];
   }
 

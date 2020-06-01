@@ -76,7 +76,7 @@ public class A005007 implements Sequence, GraphProcessor {
   }
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     if (isMoore(graph)) {
       ++mCount;
     }

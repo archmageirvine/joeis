@@ -19,7 +19,7 @@ public class A019535 implements Sequence, GraphProcessor {
   private int mN = 6;
 
   @Override
-  public void process(final Graph graph) throws IOException {
+  public void process(final Graph graph) {
     final long independentSetCount = CountIndependentSets.count(graph);
     if (independentSetCount > mMax) {
       mMax = independentSetCount;

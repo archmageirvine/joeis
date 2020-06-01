@@ -50,7 +50,7 @@
             <property name="tokens" value="METHOD_DEF"/>
         </module>
         <module name="MethodParamPad"/>
-        <module name="NoWhitespaceAfter"/>
+        <!-- <module name="NoWhitespaceAfter"/> -->
         <module name="NoWhitespaceBefore">
             <property name="tokens" value="POST_DEC,POST_INC"/>
         </module>

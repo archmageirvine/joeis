@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122446 G.f. satisfies: <code>A(x) = 1 + x*A(x)^2 + 2*x^2*(A(x)^2 - A(x))</code>; equals the base sequence of pendular trinomial triangle <code>A122445</code>.
+ * A122446 G.f. satisfies: <code>A(x) = 1 + x*A(x)^2 + 2*x^2*(A(x)^2 - A(x));</code> equals the base sequence of pendular trinomial triangle <code>A122445</code>.
  * @author Georg Fischer
  */
 public class A122446 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012950 <code>a(n) = (2n+1)! * [x^(2n+1)]</code>; expansion of <code>arcsin(tan(x)+arcsin(x))</code>.
+ * A012950 <code>a(n) = (2n+1)! * [x^(2n+1)];</code> expansion of <code>arcsin(tan(x)+arcsin(x))</code>.
  * @author Sean A. Irvine
  */
 public class A012950 implements Sequence {

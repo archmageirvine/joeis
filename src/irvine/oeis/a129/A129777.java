@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129777 Number of <code>freely-braided hexagon-avoiding</code> permutations in <code>S_n</code>; the <code>freely-braided hexagon-avoiding</code> permutations are those that avoid <code>3421, 4231, 4312, 4321, 46718235, 46781235, 56718234</code> and 56781234.
+ * A129777 Number of <code>freely-braided hexagon-avoiding</code> permutations in <code>S_n;</code> the <code>freely-braided hexagon-avoiding</code> permutations are those that avoid <code>3421, 4231, 4312, 4321, 46718235, 46781235, 56718234</code> and 56781234.
  * @author Georg Fischer
  */
 public class A129777 extends LinearRecurrence {

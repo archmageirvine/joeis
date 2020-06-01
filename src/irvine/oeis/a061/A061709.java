@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061709 Consider a (hollow) triangle with n cells on each edge, for a total of <code>3(n-1)</code> cells if <code>n&gt;1</code>, or 1 cell if <code>n=1; a(n)</code> is number of ways of labeling cells with <code>0</code>'s and <code>1</code>'s; triangle may be rotated and turned over.
+ * A061709 Consider a (hollow) triangle with n cells on each edge, for a total of <code>3(n-1)</code> cells if <code>n&gt;1</code>, or 1 cell if <code>n=1; a(n)</code> is number of ways of labeling cells with <code>0</code>'s and <code>1's;</code> triangle may be rotated and turned over.
  * @author Georg Fischer
  */
 public class A061709 extends GeneratingFunctionSequence {

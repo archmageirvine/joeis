@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184017 <code>n-1+ceiling((n/3)^2)</code>; complement of <code>A184016</code>.
+ * A184017 <code>n-1+ceiling((n/3)^2);</code> complement of <code>A184016</code>.
  * @author Sean A. Irvine
  */
 public class A184017 extends LinearRecurrence {

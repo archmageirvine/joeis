@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006844 <code>a(1)=4, a(2)=5</code>; thereafter <code>a(n)</code> is smallest number that is greater than <code>a(n-1)</code> and having a unique representation as <code>a(j) + a(k)</code> for j&lt;k.
+ * A006844 <code>a(1)=4, a(2)=5;</code> thereafter <code>a(n)</code> is smallest number that is greater than <code>a(n-1)</code> and having a unique representation as <code>a(j) + a(k)</code> for j&lt;k.
  * @author Sean A. Irvine
  */
 public class A006844 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308659 <code>a(1)=1</code>; for <code>n &gt; 1, a(n)</code> is the length of the longest palindromic suffix of <code>(a(1)</code>, ..., <code>a(n-1))</code>.
+ * A308659 <code>a(1)=1;</code> for <code>n &gt; 1, a(n)</code> is the length of the longest palindromic suffix of <code>(a(1)</code>, ..., <code>a(n-1))</code>.
  * @author Georg Fischer
  */
 public class A308659 extends HolonomicRecurrence {

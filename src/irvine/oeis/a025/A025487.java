@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025487 Least integer of each prime signature <code>A124832</code>; also products of primorial numbers <code>A002110</code>.
+ * A025487 Least integer of each prime signature <code>A124832;</code> also products of primorial numbers <code>A002110</code>.
  * @author Sean A. Irvine
  */
 public class A025487 implements Sequence {

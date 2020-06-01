@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006720 <code>Somos-4</code> sequence: <code>a(0)=a(1)=a(2)=a(3)=1</code>; for <code>n &gt;= 4, a(n) = (a(n-1) * a(n-3) + a(n-2)^2) / a(n-4)</code>.
+ * A006720 <code>Somos-4</code> sequence: <code>a(0)=a(1)=a(2)=a(3)=1;</code> for <code>n &gt;= 4, a(n) = (a(n-1) * a(n-3) + a(n-2)^2) / a(n-4)</code>.
  * @author Sean A. Irvine
  */
 public class A006720 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A182456 <code>a(0)=1</code>; for <code>n&gt;0, a(n) = ( a(n-1) mod (n+3) )*(n+3)</code>.
+ * A182456 <code>a(0)=1;</code> for <code>n&gt;0, a(n) = ( a(n-1) mod (n+3) )*(n+3)</code>.
  * @author Georg Fischer
  */
 public class A182456 extends GeneratingFunctionSequence {

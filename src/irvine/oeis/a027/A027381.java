@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027381 Number of irreducible polynomials of degree n over <code>GF(9)</code>; dimensions of free Lie algebras.
+ * A027381 Number of irreducible polynomials of degree n over <code>GF(9);</code> dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
 public class A027381 implements Sequence {

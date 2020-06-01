@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005418 Number of <code>(n-1)-bead black-white</code> reversible strings; also binary grids; also row sums of Losanitsch's triangle <code>A034851</code>; also number of caterpillar graphs on n nodes.
+ * A005418 Number of <code>(n-1)-bead black-white</code> reversible strings; also binary grids; also row sums of Losanitsch's triangle <code>A034851;</code> also number of caterpillar graphs on n nodes.
  * @author Sean A. Irvine
  */
 public class A005418 implements Sequence {

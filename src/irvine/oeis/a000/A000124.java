@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000124 Central polygonal numbers (the Lazy Caterer's <code>sequence): n(n+1)/2 + 1</code>; or, maximal number of pieces formed when slicing a pancake with n cuts.
+ * A000124 Central polygonal numbers (the Lazy Caterer's <code>sequence): n(n+1)/2 + 1;</code> or, maximal number of pieces formed when slicing a pancake with n cuts.
  * @author Sean A. Irvine
  */
 public class A000124 implements Sequence {

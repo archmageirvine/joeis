@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292412 Numbers of the form <code>Fibonacci(2*k-1)</code> or <code>Lucas(2*k-1)</code>; i.e., union of sequences <code>A001519</code> and <code>A002878</code>.
+ * A292412 Numbers of the form <code>Fibonacci(2*k-1)</code> or <code>Lucas(2*k-1);</code> i.e., union of sequences <code>A001519</code> and <code>A002878</code>.
  * @author Sean A. Irvine
  */
 public class A292412 extends LinearRecurrence {

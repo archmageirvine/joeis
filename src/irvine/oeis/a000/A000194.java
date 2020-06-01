@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000194 n appears <code>2n</code> times, for <code>n &gt;= 1</code>; also nearest integer to square root of <code>n</code>.
+ * A000194 n appears <code>2n</code> times, for <code>n &gt;= 1;</code> also nearest integer to square root of <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A000194 implements Sequence {

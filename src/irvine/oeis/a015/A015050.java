@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013929;
 
 /**
- * A015050 Let m <code>= A013929(n)</code>; then <code>a(n) =</code> smallest k such that m divides <code>k^3</code>.
+ * A015050 Let m <code>= A013929(n);</code> then <code>a(n) =</code> smallest k such that m divides <code>k^3</code>.
  * @author Sean A. Irvine
  */
 public class A015050 extends A013929 {

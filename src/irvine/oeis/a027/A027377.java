@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A027377 Number of irreducible polynomials of degree n over <code>GF(4)</code>; dimensions of free Lie algebras.
+ * A027377 Number of irreducible polynomials of degree n over <code>GF(4);</code> dimensions of free Lie algebras.
  * @author Sean A. Irvine
  */
 public class A027377 implements Sequence {

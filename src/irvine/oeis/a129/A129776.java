@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129776 Number of <code>maximally-clustered hexagon-avoiding</code> permutations in <code>S_n</code>; the <code>maximally-clustered hexagon-avoiding</code> permutations are those that avoid <code>3421, 4312, 4321, 46718235, 46781235, 56718234, 56781234</code>.
+ * A129776 Number of <code>maximally-clustered hexagon-avoiding</code> permutations in <code>S_n;</code> the <code>maximally-clustered hexagon-avoiding</code> permutations are those that avoid <code>3421, 4312, 4321, 46718235, 46781235, 56718234, 56781234</code>.
  * @author Georg Fischer
  */
 public class A129776 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001764;
 
 /**
- * A047749 If <code>n = 2m</code> then <code>a(n) = binomial(3m,m)/(2m+1)</code>; if <code>n=2m+1</code> then <code>a(n) = binomial(3m+1,m+1)/(2m+1)</code>.
+ * A047749 If <code>n = 2m</code> then <code>a(n) = binomial(3m,m)/(2m+1);</code> if <code>n=2m+1</code> then <code>a(n) = binomial(3m+1,m+1)/(2m+1)</code>.
  * @author Sean A. Irvine
  */
 public class A047749 extends A001764 {

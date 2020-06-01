@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322914 <code>a(0)=0</code>; for <code>n&gt;0, a(n)</code> is the number of rooted 4-regular maps on the torus having n vertices.
+ * A322914 <code>a(0)=0;</code> for <code>n&gt;0, a(n)</code> is the number of rooted 4-regular maps on the torus having n vertices.
  * @author Georg Fischer
  */
 public class A322914 extends HolonomicRecurrence {

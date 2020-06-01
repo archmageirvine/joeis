@@ -5,7 +5,7 @@ package irvine.oeis.a087;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087640 To obtain <code>a(n+1)</code>, take the square of the n-th partial sum, minus the sum of the first n squared terms, then divide this difference by <code>a(n)</code>; for all <code>n&gt;1</code>, starting with <code>a(0)=1, a(1)=1</code>.
+ * A087640 To obtain <code>a(n+1)</code>, take the square of the n-th partial sum, minus the sum of the first n squared terms, then divide this difference by <code>a(n);</code> for all <code>n&gt;1</code>, starting with <code>a(0)=1, a(1)=1</code>.
  * @author Georg Fischer
  */
 public class A087640 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321002 <code>a(0)=3</code>; thereafter <code>a(n) = 20*6^(n-1)-2^(n-1)</code>.
+ * A321002 <code>a(0)=3;</code> thereafter <code>a(n) = 20*6^(n-1)-2^(n-1)</code>.
  * @author Georg Fischer
  */
 public class A321002 extends GeneratingFunctionSequence {

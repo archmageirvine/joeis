@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019312 Taxman sequence: define <code>T(S)</code> by <code>max{x+T(S \ {c : c|x})}</code>, where the max is over all x in S for which S also contains a proper divisor of x; if no such x exists, <code>T(S)=0</code>; set <code>T(n)=T({1,...,n})</code>.
+ * A019312 Taxman sequence: define <code>T(S)</code> by <code>max{x+T(S \ {c : c|x})}</code>, where the max is over all x in S for which S also contains a proper divisor of x; if no such x exists, <code>T(S)=0;</code> set <code>T(n)=T({1,...,n})</code>.
  * @author Sean A. Irvine
  */
 public class A019312 implements Sequence {

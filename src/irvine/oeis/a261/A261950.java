@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261950 Start with a single equilateral triangle for <code>n=0</code>; for the odd n-th generation add a triangle at each expandable vertex of the triangles of the <code>(n-1)-th</code> generation (this is the "side to vertex" version); for the even n-th generation use the "vertex to vertex" version; <code>a(n)</code> is the number of triangles added in the n-th generation.
+ * A261950 Start with a single equilateral triangle for <code>n=0;</code> for the odd n-th generation add a triangle at each expandable vertex of the triangles of the <code>(n-1)-th</code> generation (this is the "side to vertex" version); for the even n-th generation use the "vertex to vertex" version; <code>a(n)</code> is the number of triangles added in the n-th generation.
  * @author Georg Fischer
  */
 public class A261950 extends GeneratingFunctionSequence {

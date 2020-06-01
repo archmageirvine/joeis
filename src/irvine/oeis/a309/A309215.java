@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309215 <code>a(0)=0</code>; thereafter <code>a(n) = a(n-1)+n</code> if <code>a(n-1)</code> odd, otherwise <code>a(n) = a(n-1)-n</code>.
+ * A309215 <code>a(0)=0;</code> thereafter <code>a(n) = a(n-1)+n</code> if <code>a(n-1)</code> odd, otherwise <code>a(n) = a(n-1)-n</code>.
  * @author Georg Fischer
  */
 public class A309215 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092530 <code>a(0) = 0</code>; for <code>n &gt; 0, a(n) = T(n) +</code> k where <code>T(n)</code> is the n-th triangular number <code>(A000217)</code> and k (see A026741) is the smallest positive number such that <code>a(n)</code> is divisible by <code>n</code>.
+ * A092530 <code>a(0) = 0;</code> for <code>n &gt; 0, a(n) = T(n) +</code> k where <code>T(n)</code> is the n-th triangular number <code>(A000217)</code> and k (see A026741) is the smallest positive number such that <code>a(n)</code> is divisible by <code>n</code>.
  * @author Georg Fischer
  */
 public class A092530 extends GeneratingFunctionSequence {

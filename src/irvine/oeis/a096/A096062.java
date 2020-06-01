@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A096062 <code>a(1) = a(2) = 1</code>; for <code>n &gt; 2</code>, if <code>a(n-2) + a(n-1) &gt; n</code> then <code>a(n) = abs(a(n-2) - a(n-1))</code> else <code>a(n) = a(n-2) + a(n-1)</code>.
+ * A096062 <code>a(1) = a(2) = 1;</code> for <code>n &gt; 2</code>, if <code>a(n-2) + a(n-1) &gt; n</code> then <code>a(n) = abs(a(n-2) - a(n-1))</code> else <code>a(n) = a(n-2) + a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A096062 extends GeneratingFunctionSequence {

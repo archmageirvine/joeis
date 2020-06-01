@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005156 Number of alternating sign <code>2n+1 X 2n+1</code> matrices symmetric about the vertical axis <code>(VSASM's)</code>; also <code>2n X 2n off-diagonally</code> symmetric alternating sign matrices <code>(OSASM's)</code>.
+ * A005156 Number of alternating sign <code>2n+1 X 2n+1</code> matrices symmetric about the vertical axis <code>(VSASM's);</code> also <code>2n X 2n off-diagonally</code> symmetric alternating sign matrices <code>(OSASM's)</code>.
  * @author Sean A. Irvine
  */
 public class A005156 implements Sequence {

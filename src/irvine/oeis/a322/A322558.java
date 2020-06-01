@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322558 <code>a(0)=1, a(1)=1</code>; for <code>n&gt;1, a(n)=a(n-1)+a(n-2)</code> if <code>a(n-1)</code> is less than or equal to <code>n-1</code>, otherwise <code>a(n)=a(n-1)-(n-1)</code>.
+ * A322558 <code>a(0)=1, a(1)=1;</code> for <code>n&gt;1, a(n)=a(n-1)+a(n-2)</code> if <code>a(n-1)</code> is less than or equal to <code>n-1</code>, otherwise <code>a(n)=a(n-1)-(n-1)</code>.
  * @author Georg Fischer
  */
 public class A322558 extends HolonomicRecurrence {

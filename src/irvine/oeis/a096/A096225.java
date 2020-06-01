@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A096225 <code>a(0) = 1</code>; for <code>n &gt;= 0, a(n+1) =</code> smallest prime factor of <code>a(n)! + 1</code>.
+ * A096225 <code>a(0) = 1;</code> for <code>n &gt;= 0, a(n+1) =</code> smallest prime factor of <code>a(n)! + 1</code>.
  * @author Sean A. Irvine
  */
 public class A096225 implements Sequence {

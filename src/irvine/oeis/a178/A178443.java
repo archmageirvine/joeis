@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A178443 Two numbers k and l we call equivalent if they have the same vector of exponents with positive components in prime power factorization. Let <code>a(1)=1, a(2)=3</code>. If <code>n&gt;=3</code> is prime, then <code>a(n)</code> is the smallest prime greater than <code>a(n-1)</code>; otherwise, <code>a(n)&gt;a(n-1)</code> is the smallest number equivalent to n such that prime power factorization of <code>a(n)</code> contains only primes which already appeared in the sequence.
+ * A178443 Two numbers k and l we call equivalent if they have the same vector of exponents with positive components in prime power factorization. Let <code>a(1)=1, a(2)=3</code>. If <code>n&gt;=3</code> is prime, then <code>a(n)</code> is the smallest prime greater than <code>a(n-1);</code> otherwise, <code>a(n)&gt;a(n-1)</code> is the smallest number equivalent to n such that prime power factorization of <code>a(n)</code> contains only primes which already appeared in the sequence.
  * @author Georg Fischer
  */
 public class A178443 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a256;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A256137 <code>a(2) = 1; a(3) = 4</code>; for <code>n &gt;= 4, a(n) = 2 + Sum_{i=4..n} d(i)</code>, where <code>d(i) =</code> i for even i, <code>d(i) = i-3</code> for odd i.
+ * A256137 <code>a(2) = 1; a(3) = 4;</code> for <code>n &gt;= 4, a(n) = 2 + Sum_{i=4..n} d(i)</code>, where <code>d(i) =</code> i for even i, <code>d(i) = i-3</code> for odd i.
  * @author Georg Fischer
  */
 public class A256137 extends GeneratingFunctionSequence {

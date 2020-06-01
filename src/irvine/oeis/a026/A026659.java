@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026659 Triangular array T read by rows: <code>T(n,0)=T(n,n)=1</code> for <code>n &gt;= 0</code>; for <code>n &gt;= 2</code> and <code>1&lt;=k&lt;=n-1</code>, if n is odd, then <code>T(n,k)=T(n-1,k-1)+T(n-2,k-1)+T(n-1,k)</code> if k is odd and <code>&lt;=[ n/2 ]</code> or if k is even and <code>&gt;[ n/2 ]</code>; in all other cases, <code>T(n,k)=T(n-1,k-1)+T(n-1,k)</code>.
+ * A026659 Triangular array T read by rows: <code>T(n,0)=T(n,n)=1</code> for <code>n &gt;= 0;</code> for <code>n &gt;= 2</code> and <code>1&lt;=k&lt;=n-1</code>, if n is odd, then <code>T(n,k)=T(n-1,k-1)+T(n-2,k-1)+T(n-1,k)</code> if k is odd and <code>&lt;=[ n/2 ]</code> or if k is even and <code>&gt;[ n/2 ];</code> in all other cases, <code>T(n,k)=T(n-1,k-1)+T(n-1,k)</code>.
  * @author Sean A. Irvine
  */
 public class A026659 extends MemoryFunction2<Long, Z> implements Sequence {

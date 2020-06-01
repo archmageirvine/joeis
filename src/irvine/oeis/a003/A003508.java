@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003508 <code>a(1) = 1</code>; for <code>n&gt;1, a(n) = a(n-1) + 1 +</code> sum of distinct prime factors of <code>a(n-1)</code> that are <code>&lt; a(n-1)</code>.
+ * A003508 <code>a(1) = 1;</code> for <code>n&gt;1, a(n) = a(n-1) + 1 +</code> sum of distinct prime factors of <code>a(n-1)</code> that are <code>&lt; a(n-1)</code>.
  * @author Sean A. Irvine
  */
 public class A003508 implements Sequence {

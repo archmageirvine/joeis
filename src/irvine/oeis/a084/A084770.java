@@ -5,7 +5,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084770 Coefficients of <code>1/(1-4x-16x^2)^(1/2)</code>; also, <code>a(n)</code> is the central coefficient of <code>(1+2x+5x^2)^n</code>.
+ * A084770 Coefficients of <code>1/(1-4x-16x^2)^(1/2);</code> also, <code>a(n)</code> is the central coefficient of <code>(1+2x+5x^2)^n</code>.
  * @author Georg Fischer
  */
 public class A084770 extends HolonomicRecurrence {

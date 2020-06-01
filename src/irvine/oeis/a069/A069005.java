@@ -5,7 +5,7 @@ package irvine.oeis.a069;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A069005 Let M <code>= 4 X 4</code> matrix with rows /1,1,1,1/1,1,1,0/1,1,0,0/1,0,0,0/ and <code>A(n) =</code> vector <code>(x(n),y(n),z(n),t(n)) = M^n*A</code> where A is the vector <code>(1,1,1,1)</code>; then <code>a(n)=z(n)</code>.
+ * A069005 Let M <code>= 4 X 4</code> matrix with rows /1,1,1,1/1,1,1,0/1,1,0,0/1,0,0,0/ and <code>A(n) =</code> vector <code>(x(n),y(n),z(n),t(n)) = M^n*A</code> where A is the vector <code>(1,1,1,1);</code> then <code>a(n)=z(n)</code>.
  * @author Georg Fischer
  */
 public class A069005 extends HolonomicRecurrence {

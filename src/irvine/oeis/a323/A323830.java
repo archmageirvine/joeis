@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323830 <code>a(0) = 1</code>; thereafter <code>a(n)</code> is obtained by doubling <code>a(n-1)</code> and repeatedly deleting any string of identical digits.
+ * A323830 <code>a(0) = 1;</code> thereafter <code>a(n)</code> is obtained by doubling <code>a(n-1)</code> and repeatedly deleting any string of identical digits.
  * @author Georg Fischer
  */
 public class A323830 extends GeneratingFunctionSequence {

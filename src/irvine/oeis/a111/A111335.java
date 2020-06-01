@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A111335 Let <code>qf(a,q) = Product(1-a*q^j,j=0..infinity)</code>; g.f. is <code>qf(q^3,q^4)/qf(q,q^4)</code>.
+ * A111335 Let <code>qf(a,q) = Product(1-a*q^j,j=0..infinity);</code> g.f. is <code>qf(q^3,q^4)/qf(q,q^4)</code>.
  * @author Georg Fischer
  */
 public class A111335 extends EulerTransformSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A083329 <code>a(0) = 1</code>; for <code>n &gt; 0, a(n) = 3*2^(n-1) - 1</code>.
+ * A083329 <code>a(0) = 1;</code> for <code>n &gt; 0, a(n) = 3*2^(n-1) - 1</code>.
  * @author Georg Fischer
  */
 public class A083329 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118264 Coefficient of <code>q^n</code> in <code>(1-q)^3/(1-3q)</code>; dimensions of the enveloping algebra of the derived free Lie algebra on 3 letters.
+ * A118264 Coefficient of <code>q^n</code> in <code>(1-q)^3/(1-3q);</code> dimensions of the enveloping algebra of the derived free Lie algebra on 3 letters.
  * @author Georg Fischer
  */
 public class A118264 extends GeneratingFunctionSequence {

@@ -208,7 +208,7 @@ public final class Names {
       .replace("<", "&lt;")
       .replace(">", "&gt;"))
       .replace("*/", "* /")
-      .replaceAll("([.,;:])</code>", "</code>$1")
+      .replaceAll("([.,:])</code>", "</code>$1")
       .replace("'s</code>", "</code>'s")
       ;
     final StringBuilder sb = new StringBuilder();

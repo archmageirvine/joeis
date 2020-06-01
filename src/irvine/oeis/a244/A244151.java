@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244151 0-additive sequence: start with <code>a(1) = 2</code>; thereafter, <code>a(n) =</code> smallest number not already in sequence which is not the sum of any previous two terms.
+ * A244151 0-additive sequence: start with <code>a(1) = 2;</code> thereafter, <code>a(n) =</code> smallest number not already in sequence which is not the sum of any previous two terms.
  * @author Georg Fischer
  */
 public class A244151 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108142 <code>a[1] = 1; a[2] = 1; a[3] = 1; a[4] = 1; a[5] = 1; a[6] = 1</code>; for <code>n &gt;= 7, a[n] = 6*a[n - 1] - 5*a[n - 2] - 4*a[n - 3] - 3*a[ n - 4] + 2*a[n - 5] + a[n - 6]</code>; then take absolute values.
+ * A108142 <code>a[1] = 1; a[2] = 1; a[3] = 1; a[4] = 1; a[5] = 1; a[6] = 1;</code> for <code>n &gt;= 7, a[n] = 6*a[n - 1] - 5*a[n - 2] - 4*a[n - 3] - 3*a[ n - 4] + 2*a[n - 5] + a[n - 6];</code> then take absolute values.
  * @author Georg Fischer
  */
 public class A108142 extends LinearRecurrence {

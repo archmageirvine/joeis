@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005836;
 
 /**
- * A033162 Begins with <code>(3, 4)</code>; avoids 3-term arithmetic progressions.
+ * A033162 Begins with <code>(3, 4);</code> avoids 3-term arithmetic progressions.
  * @author Georg Fischer
  */
 public class A033162 extends A005836 {

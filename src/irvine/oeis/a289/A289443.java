@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289443 <code>a(0)=2, a(1)=6</code>; thereafter <code>a(n) = 3*n^2</code>.
+ * A289443 <code>a(0)=2, a(1)=6;</code> thereafter <code>a(n) = 3*n^2</code>.
  * @author Georg Fischer
  */
 public class A289443 extends GeneratingFunctionSequence {

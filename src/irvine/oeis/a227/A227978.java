@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227978 <code>a(0)=1, a(1)=2</code>; for <code>n&gt;1, a(n) = n*(2^n+4)/4</code>.
+ * A227978 <code>a(0)=1, a(1)=2;</code> for <code>n&gt;1, a(n) = n*(2^n+4)/4</code>.
  * @author Georg Fischer
  */
 public class A227978 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A072345 Volume of n-dimensional sphere of radius r is <code>V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n</code>; sequence gives numerator of <code>C_n</code>.
+ * A072345 Volume of n-dimensional sphere of radius r is <code>V_n*r^n = Pi^(n/2)*r^n/(n/2)! = C_n*Pi^floor(n/2)*r^n;</code> sequence gives numerator of <code>C_n</code>.
  * @author Sean A. Irvine
  */
 public class A072345 extends LinearRecurrence {

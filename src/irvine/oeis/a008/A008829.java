@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A008829 Smallest number <code>a(n)</code> formed from consecutive sequences of digits of <code>Pi</code> and satisfying <code>a(n) &gt; a(n-1)</code>; first 3 is omitted.
+ * A008829 Smallest number <code>a(n)</code> formed from consecutive sequences of digits of <code>Pi</code> and satisfying <code>a(n) &gt; a(n-1);</code> first 3 is omitted.
  * @author Sean A. Irvine
  */
 public class A008829 extends A000796 {

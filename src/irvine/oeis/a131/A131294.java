@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131294 <code>a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1</code>; where <code>ds_3=digital</code> sum base 3.
+ * A131294 <code>a(n)=ds_3(a(n-1))+ds_3(a(n-2)), a(0)=0, a(1)=1;</code> where <code>ds_3=digital</code> sum base 3.
  * @author Georg Fischer
  */
 public class A131294 extends HolonomicRecurrence {

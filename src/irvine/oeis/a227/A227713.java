@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227713 The Wiener index of the tree <code>g[n] (n&gt;=0)</code> defined recursively in the following manner: denoting by <code>P[n]</code> the path on n vertices, we define <code>g[0] =P[2]</code> while <code>g[n] (n&gt;=1)</code> is the tree obtained by identifying the roots of 2 copies of <code>g[n-1]</code> and one of the end-vertices of <code>P[n+1]</code>; the root of <code>g[n]</code> is defined to be the other end-vertex of <code>P[n+1]</code>.
+ * A227713 The Wiener index of the tree <code>g[n] (n&gt;=0)</code> defined recursively in the following manner: denoting by <code>P[n]</code> the path on n vertices, we define <code>g[0] =P[2]</code> while <code>g[n] (n&gt;=1)</code> is the tree obtained by identifying the roots of 2 copies of <code>g[n-1]</code> and one of the end-vertices of <code>P[n+1];</code> the root of <code>g[n]</code> is defined to be the other end-vertex of <code>P[n+1]</code>.
  * @author Georg Fischer
  */
 public class A227713 extends GeneratingFunctionSequence {

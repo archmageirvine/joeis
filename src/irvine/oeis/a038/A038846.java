@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038846 4-fold convolution of <code>A000302</code> (powers of <code>4)</code>; expansion of <code>1/(1-4*x)^4</code>.
+ * A038846 4-fold convolution of <code>A000302</code> (powers of <code>4);</code> expansion of <code>1/(1-4*x)^4</code>.
  * @author Georg Fischer
  */
 public class A038846 extends GeneratingFunctionSequence {

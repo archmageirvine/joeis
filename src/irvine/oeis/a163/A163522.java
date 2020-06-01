@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163522 <code>a(1)=2</code>; for <code>n&gt;1, a(n) =</code> sum of digits of <code>a(n-1)^2</code>.
+ * A163522 <code>a(1)=2;</code> for <code>n&gt;1, a(n) =</code> sum of digits of <code>a(n-1)^2</code>.
  * @author Georg Fischer
  */
 public class A163522 extends GeneratingFunctionSequence {

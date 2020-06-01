@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051047 For <code>n &gt; 5, a(n) = 15*a(n-1) - 15*a(n-2) + a(n-3)</code>; initial terms are <code>1, 3, 8, 120, 1680</code>.
+ * A051047 For <code>n &gt; 5, a(n) = 15*a(n-1) - 15*a(n-2) + a(n-3);</code> initial terms are <code>1, 3, 8, 120, 1680</code>.
  * @author Georg Fischer
  */
 public class A051047 extends LinearRecurrence {

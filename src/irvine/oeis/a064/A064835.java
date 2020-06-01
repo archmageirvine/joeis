@@ -4,7 +4,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064835 If <code>n mod 2 = 0</code> then <code>a(n) = n^4/4 - 2*n^2 + 3*n</code>; otherwise, <code>a(n) = n^4/4 - 2*n^2 + 3*n - 5/4</code>.
+ * A064835 If <code>n mod 2 = 0</code> then <code>a(n) = n^4/4 - 2*n^2 + 3*n;</code> otherwise, <code>a(n) = n^4/4 - 2*n^2 + 3*n - 5/4</code>.
  * @author Georg Fischer
  */
 public class A064835 extends LinearRecurrence {

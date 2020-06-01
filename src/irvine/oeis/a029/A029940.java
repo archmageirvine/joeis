@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029940 Product <code>phi(d)</code>; d divides <code>n</code>.
+ * A029940 Product <code>phi(d);</code> d divides <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A029940 implements Sequence {

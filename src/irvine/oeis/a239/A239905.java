@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239905 If <code>n &lt;= 5</code> then <code>a(n) = 1</code>, if <code>6 &lt;= n &lt;= 8</code> then 2, if <code>n = 9</code> or 10 then 3, if <code>n = 11, 12</code> or 13 then <code>n-7</code>; otherwise <code>a(n) = 2*a(n - 4) + a(n - 12)</code>.
+ * A239905 If <code>n &lt;= 5</code> then <code>a(n) = 1</code>, if <code>6 &lt;= n &lt;= 8</code> then 2, if <code>n = 9</code> or 10 then 3, if <code>n = 11, 12</code> or 13 then <code>n-7;</code> otherwise <code>a(n) = 2*a(n - 4) + a(n - 12)</code>.
  * @author Georg Fischer
  */
 public class A239905 extends GeneratingFunctionSequence {

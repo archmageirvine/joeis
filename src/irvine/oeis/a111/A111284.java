@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111284 Number of permutations of <code>[n]</code> avoiding the patterns <code>{2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312}</code>; number of strong sorting classes based on 2143.
+ * A111284 Number of permutations of <code>[n]</code> avoiding the patterns <code>{2143, 2341, 2413, 2431, 3142, 3241, 3412, 3421, 4123, 4213, 4231, 4321, 4132, 4312};</code> number of strong sorting classes based on 2143.
  * @author Georg Fischer
  */
 public class A111284 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002426;
 
 /**
- * A039966 <code>a(0) = 1</code>; thereafter <code>a(3n+2) = 0, a(3n) = a(3n+1) = a(n)</code>.
+ * A039966 <code>a(0) = 1;</code> thereafter <code>a(3n+2) = 0, a(3n) = a(3n+1) = a(n)</code>.
  * @author Georg Fischer
  */
 public class A039966 extends A002426 {

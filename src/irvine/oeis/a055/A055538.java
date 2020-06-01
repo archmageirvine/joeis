@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055538 Number of asymmetric types of <code>(3,n)-hypergraphs</code> without isolated nodes, under action of symmetric group <code>S_3</code>; asymmetric n-covers of an unlabeled <code>3-set</code>.
+ * A055538 Number of asymmetric types of <code>(3,n)-hypergraphs</code> without isolated nodes, under action of symmetric group <code>S_3;</code> asymmetric n-covers of an unlabeled <code>3-set</code>.
  * @author Georg Fischer
  */
 public class A055538 extends GeneratingFunctionSequence {

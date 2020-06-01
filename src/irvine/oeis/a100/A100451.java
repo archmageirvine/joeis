@@ -5,7 +5,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100451 <code>a(n) = 0</code> for <code>n &lt;= 2</code>; for <code>n &gt;= 3, a(n) = (n-2)*floor((n^2-2)/(n-2))</code>.
+ * A100451 <code>a(n) = 0</code> for <code>n &lt;= 2;</code> for <code>n &gt;= 3, a(n) = (n-2)*floor((n^2-2)/(n-2))</code>.
  * @author Georg Fischer
  */
 public class A100451 extends HolonomicRecurrence {

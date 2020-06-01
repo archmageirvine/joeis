@@ -6,7 +6,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296069 <code>a(1)=0</code>; thereafter <code>a(n)</code> is the smallest number (in absolute value) not yet in the sequence such that the arithmetic mean of the first n terms <code>a(1), a(2)</code>, ..., <code>a(n)</code> is a nonzero integer. Preference is given to positive values of <code>a(n)</code>.
+ * A296069 <code>a(1)=0;</code> thereafter <code>a(n)</code> is the smallest number (in absolute value) not yet in the sequence such that the arithmetic mean of the first n terms <code>a(1), a(2)</code>, ..., <code>a(n)</code> is a nonzero integer. Preference is given to positive values of <code>a(n)</code>.
  * @author Georg Fischer
  */
 public class A296069 extends GeneratingFunctionSequence {

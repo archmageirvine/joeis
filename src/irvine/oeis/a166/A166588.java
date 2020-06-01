@@ -6,7 +6,7 @@ package irvine.oeis.a166;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A166588 Partial sums of <code>A097331</code>; binomial transform of <code>A166587</code>.
+ * A166588 Partial sums of <code>A097331;</code> binomial transform of <code>A166587</code>.
  * @author Georg Fischer
  */
 public class A166588 extends HolonomicRecurrence {

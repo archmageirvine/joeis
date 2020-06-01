@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000698 A problem of configurations: <code>a(0) = 1</code>; for <code>n&gt;0, a(n) = (2n-1)!! - Sum_{k=1..n-1} (2k-1)!! a(n-k)</code>. Also the number of shellings of an <code>n-cube</code>, divided by <code>2^n n!</code>.
+ * A000698 A problem of configurations: <code>a(0) = 1;</code> for <code>n&gt;0, a(n) = (2n-1)!! - Sum_{k=1..n-1} (2k-1)!! a(n-k)</code>. Also the number of shellings of an <code>n-cube</code>, divided by <code>2^n n!</code>.
  * @author Sean A. Irvine
  */
 public class A000698 extends MemorySequence {

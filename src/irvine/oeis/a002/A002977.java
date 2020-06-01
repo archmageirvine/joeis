@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A002977 Klarner-Rado sequence: <code>a(1) = 1</code>; subsequent terms are defined by the rule that if m is present so are <code>2m+1</code> and <code>3m+1</code>.
+ * A002977 Klarner-Rado sequence: <code>a(1) = 1;</code> subsequent terms are defined by the rule that if m is present so are <code>2m+1</code> and <code>3m+1</code>.
  * @author Sean A. Irvine
  */
 public class A002977 implements Sequence {

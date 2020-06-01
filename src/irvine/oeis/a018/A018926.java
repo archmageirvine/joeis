@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018926 Number of ways to partition an n-cube into subcubes (without reducing isomorphic cases); number of labeled squashed <code>n-cubes</code>; ways to make a tautology from disjoint terms with n Boolean variables; number of Rivest compression schemes for n-bit retrieval.
+ * A018926 Number of ways to partition an n-cube into subcubes (without reducing isomorphic cases); number of labeled squashed <code>n-cubes;</code> ways to make a tautology from disjoint terms with n Boolean variables; number of Rivest compression schemes for n-bit retrieval.
  * @author Sean A. Irvine
  */
 public class A018926 implements Sequence {

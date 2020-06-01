@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125577 <code>a(0) = 1</code>; for <code>n &gt;= 1, a(n) = n^2 - a(n-1)</code>.
+ * A125577 <code>a(0) = 1;</code> for <code>n &gt;= 1, a(n) = n^2 - a(n-1)</code>.
  * @author Georg Fischer
  */
 public class A125577 extends GeneratingFunctionSequence {

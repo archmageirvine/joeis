@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000003 Number of classes of primitive positive definite binary quadratic forms of discriminant D <code>= -4n</code>; or equivalently the class number of the quadratic order of discriminant D <code>= -4n</code>.
+ * A000003 Number of classes of primitive positive definite binary quadratic forms of discriminant D <code>= -4n;</code> or equivalently the class number of the quadratic order of discriminant D <code>= -4n</code>.
  * @author Sean A. Irvine
  */
 public class A000003 implements Sequence {

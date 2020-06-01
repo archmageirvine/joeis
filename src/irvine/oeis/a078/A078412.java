@@ -4,7 +4,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078412 <code>a(0) = 5, a(1) = 8</code>; for <code>n &gt;1, a(n)=(a(n-1)+a(n-2))/3^n</code>, where <code>3^n</code> is the highest power of 3 dividing <code>a(n-1)+a(n-2)</code>.
+ * A078412 <code>a(0) = 5, a(1) = 8;</code> for <code>n &gt;1, a(n)=(a(n-1)+a(n-2))/3^n</code>, where <code>3^n</code> is the highest power of 3 dividing <code>a(n-1)+a(n-2)</code>.
  * @author Georg Fischer
  */
 public class A078412 extends LinearRecurrence {

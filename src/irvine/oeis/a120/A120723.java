@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A120723 Let M be the <code>8 X 8</code> matrix M <code>= {{0, 1, 1, 0, 0, 1, 0, 0}, {1, 0, 0, 1, 1, 0, 0, 0}, {1, 0, 0, 1, 0, 1, 1, 0}, {0, 1, 1, 0, 1, 0, 1, 0}, {0, 1, 0, 1, 0, 1, 0, 1}, {1, 0, 1, 0, 1, 0, 0, 1}, {0, 0, 1, 1, 0, 0, 0, 1}, {0, 0, 0, 0, 1, 1, 1, 0}}</code>; let <code>v[1] = [Fibonacci[1]</code>, ..., <code>Fibonacci[8]]</code>; let <code>v[n] = M.v[n - 1]</code>; then <code>a(n) = v[n][[1]]</code>.
+ * A120723 Let M be the <code>8 X 8</code> matrix M <code>= {{0, 1, 1, 0, 0, 1, 0, 0}, {1, 0, 0, 1, 1, 0, 0, 0}, {1, 0, 0, 1, 0, 1, 1, 0}, {0, 1, 1, 0, 1, 0, 1, 0}, {0, 1, 0, 1, 0, 1, 0, 1}, {1, 0, 1, 0, 1, 0, 0, 1}, {0, 0, 1, 1, 0, 0, 0, 1}, {0, 0, 0, 0, 1, 1, 1, 0}};</code> let <code>v[1] = [Fibonacci[1]</code>, ..., <code>Fibonacci[8]];</code> let <code>v[n] = M.v[n - 1];</code> then <code>a(n) = v[n][[1]]</code>.
  * @author Georg Fischer
  */
 public class A120723 extends GeneratingFunctionSequence {

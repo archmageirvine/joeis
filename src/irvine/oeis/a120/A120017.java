@@ -6,7 +6,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120017 The <code>2nd self-composition</code> of <code>A120010</code>; g.f.: <code>A(x) = G(G(x))</code>, where <code>G(x) =</code> g.f. of <code>A120010</code>.
+ * A120017 The <code>2nd self-composition</code> of <code>A120010;</code> g.f.: <code>A(x) = G(G(x))</code>, where <code>G(x) =</code> g.f. of <code>A120010</code>.
  * @author Georg Fischer
  */
 public class A120017 extends HolonomicRecurrence {

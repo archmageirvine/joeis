@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261958 Start with a single square for <code>n=0</code>; for the odd n-th generation add a square at each expandable vertex of the squares of the <code>(n-1)-th</code> generation (this is the "vertex to vertex" version); for the even n-th generation use the "side to vertex" version; <code>a(n)</code> is the number of squares added in the n-th generation.
+ * A261958 Start with a single square for <code>n=0;</code> for the odd n-th generation add a square at each expandable vertex of the squares of the <code>(n-1)-th</code> generation (this is the "vertex to vertex" version); for the even n-th generation use the "side to vertex" version; <code>a(n)</code> is the number of squares added in the n-th generation.
  * @author Georg Fischer
  */
 public class A261958 extends GeneratingFunctionSequence {

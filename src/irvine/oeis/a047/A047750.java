@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047750 If <code>n mod 2 = 0</code> then m <code>:= n/2</code> and <code>a(n) = (3*m)!*(5*m+1)/((m+1)!*(2*m+1)!)</code>; otherwise m <code>:= (n-1)/2, a(n) = 6*(3*m+2)!/(m!*(2*m+3)!)</code>.
+ * A047750 If <code>n mod 2 = 0</code> then m <code>:= n/2</code> and <code>a(n) = (3*m)!*(5*m+1)/((m+1)!*(2*m+1)!);</code> otherwise m <code>:= (n-1)/2, a(n) = 6*(3*m+2)!/(m!*(2*m+3)!)</code>.
  * @author Georg Fischer
  */
 public class A047750 extends HolonomicRecurrence {

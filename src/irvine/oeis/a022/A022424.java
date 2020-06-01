@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006016;
 
 /**
- * A022424 Solution <code>a( )</code> of the complementary equation <code>a(n) = b(n-1) + b(n-2)</code>, where <code>a(0) = 1, a(1) = 2</code>; see Comments.
+ * A022424 Solution <code>a( )</code> of the complementary equation <code>a(n) = b(n-1) + b(n-2)</code>, where <code>a(0) = 1, a(1) = 2;</code> see Comments.
  * @author Sean A. Irvine
  */
 public class A022424 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031442 <code>a(0) = 13</code>; for <code>n &gt; 0, a(n)</code> is the greatest prime factor of <code>PreviousPrime(a(n-1))*a(n-1)-1</code> where <code>PreviousPrime(prime(k))=prime(k-1)</code>.
+ * A031442 <code>a(0) = 13;</code> for <code>n &gt; 0, a(n)</code> is the greatest prime factor of <code>PreviousPrime(a(n-1))*a(n-1)-1</code> where <code>PreviousPrime(prime(k))=prime(k-1)</code>.
  * @author Sean A. Irvine
  */
 public class A031442 implements Sequence {

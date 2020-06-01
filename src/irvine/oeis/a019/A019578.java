@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.math.z.Z;
 
 /**
- * A019578 Place n distinguishable balls in n boxes (in <code>n^n</code> ways); let <code>f(n,k) =</code> number of ways that max in any box is k, for <code>1&lt;=k&lt;=n</code>; sequence gives <code>f(n,3)/n</code>.
+ * A019578 Place n distinguishable balls in n boxes (in <code>n^n</code> ways); let <code>f(n,k) =</code> number of ways that max in any box is k, for <code>1&lt;=k&lt;=n;</code> sequence gives <code>f(n,3)/n</code>.
  * @author Sean A. Irvine
  */
 public class A019578 extends A019575 {

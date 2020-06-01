@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024915 Number of positions in which <code>2n semi-queens</code> may be placed on an <code>2n X 2n</code> toroidal board, with only one semi-queen attacking another <code>semi-queen</code>; also, number of interval method wirings for a cryptographic rotor of size <code>2n</code>.
+ * A024915 Number of positions in which <code>2n semi-queens</code> may be placed on an <code>2n X 2n</code> toroidal board, with only one semi-queen attacking another <code>semi-queen;</code> also, number of interval method wirings for a cryptographic rotor of size <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A024915 implements Sequence {

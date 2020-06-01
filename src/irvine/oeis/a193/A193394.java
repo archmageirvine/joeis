@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193394 Hyper-Wiener index of a benzenoid consisting of a zig-zag chain of n hexagons <code>(s=13</code>; see the Gutman et al. reference).
+ * A193394 Hyper-Wiener index of a benzenoid consisting of a zig-zag chain of n hexagons <code>(s=13;</code> see the Gutman et al. reference).
  * @author Sean A. Irvine
  */
 public class A193394 extends LinearRecurrence {

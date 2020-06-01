@@ -5,7 +5,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A001896 Numerators of cosecant numbers <code>{-2*(2^(2*n-1)-1)*Bernoulli(2*n)}</code>; also of <code>Bernoulli(2n,1/2)</code> and <code>Bernoulli(2n,1/4)</code>.
+ * A001896 Numerators of cosecant numbers <code>{-2*(2^(2*n-1)-1)*Bernoulli(2*n)};</code> also of <code>Bernoulli(2n,1/2)</code> and <code>Bernoulli(2n,1/4)</code>.
  * @author Sean A. Irvine
  */
 public class A001896 implements Sequence {

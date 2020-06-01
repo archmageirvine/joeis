@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111286 Number of permutations avoiding the patterns <code>{1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321}</code>; number of strong sorting class based on 1342.
+ * A111286 Number of permutations avoiding the patterns <code>{1342, 1432, 2341, 2431, 3142, 3241, 3412, 3421, 4132, 4231, 4312, 4321};</code> number of strong sorting class based on 1342.
  * @author Georg Fischer
  */
 public class A111286 extends HolonomicRecurrence {

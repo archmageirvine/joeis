@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029935 <code>a(n) =</code> Sum <code>phi(d)*phi(n/d)</code>; d divides <code>n</code>.
+ * A029935 <code>a(n) =</code> Sum <code>phi(d)*phi(n/d);</code> d divides <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A029935 implements Sequence {

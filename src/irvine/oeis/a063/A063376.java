@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063376 <code>a(-1) = 1</code>; for <code>n &gt;= 0, a(n) = 2^n + 4^n = 2^n*(1 + 2^n)</code>.
+ * A063376 <code>a(-1) = 1;</code> for <code>n &gt;= 0, a(n) = 2^n + 4^n = 2^n*(1 + 2^n)</code>.
  * @author Georg Fischer
  */
 public class A063376 extends HolonomicRecurrence {

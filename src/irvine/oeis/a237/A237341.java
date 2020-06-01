@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A237341 For k in <code>{2,3,...,9}</code> define a sequence as follows: <code>a(0)=0</code>; for <code>n&gt;=0, a(n+1)=a(n)+1</code>, unless <code>a(n)</code> ends in k, in which case <code>a(n+1)</code> is obtained by replacing the last digit of <code>a(n)</code> with the <code>digit(s)</code> of <code>k^2</code>. This is <code>k(4)</code>.
+ * A237341 For k in <code>{2,3,...,9}</code> define a sequence as follows: <code>a(0)=0;</code> for <code>n&gt;=0, a(n+1)=a(n)+1</code>, unless <code>a(n)</code> ends in k, in which case <code>a(n+1)</code> is obtained by replacing the last digit of <code>a(n)</code> with the <code>digit(s)</code> of <code>k^2</code>. This is <code>k(4)</code>.
  * @author Georg Fischer
  */
 public class A237341 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069009 Let M denote the <code>6 X 6</code> matrix with rows <code>/ 1,1,1,1,1,1 / 1,1,1,1,1,0 / 1,1,1,1,0,0 / 1,1,1,0,0,0 / 1,1,0,0,0,0 / 1,0,0,0,0,0 /</code> and <code>A(n)</code> the vector <code>(x(n),y(n),z(n),t(n),u(n),v(n)) = M^n*A</code> where A is the vector <code>(1,1,1,1,1,1)</code>; then <code>a(n) = t(n)</code>.
+ * A069009 Let M denote the <code>6 X 6</code> matrix with rows <code>/ 1,1,1,1,1,1 / 1,1,1,1,1,0 / 1,1,1,1,0,0 / 1,1,1,0,0,0 / 1,1,0,0,0,0 / 1,0,0,0,0,0 /</code> and <code>A(n)</code> the vector <code>(x(n),y(n),z(n),t(n),u(n),v(n)) = M^n*A</code> where A is the vector <code>(1,1,1,1,1,1);</code> then <code>a(n) = t(n)</code>.
  * @author Georg Fischer
  */
 public class A069009 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073530 <code>a(0) = 1</code>; for <code>n&gt;0 a(n)=sum(binomial(n,k)*binomial(n+k,k+1)*binomial(n+k,k),k=0..n)/n</code>.
+ * A073530 <code>a(0) = 1;</code> for <code>n&gt;0 a(n)=sum(binomial(n,k)*binomial(n+k,k+1)*binomial(n+k,k),k=0..n)/n</code>.
  * @author Georg Fischer
  */
 public class A073530 extends HolonomicRecurrence {

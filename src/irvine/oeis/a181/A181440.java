@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181440 <code>a(1) = 2</code>; for <code>n &gt; 1, a(n) = A000217(n)-(sum</code> of previous terms).
+ * A181440 <code>a(1) = 2;</code> for <code>n &gt; 1, a(n) = A000217(n)-(sum</code> of previous terms).
  * @author Georg Fischer
  */
 public class A181440 extends GeneratingFunctionSequence {

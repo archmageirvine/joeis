@@ -6,7 +6,7 @@ Encyclopedia of Integer Sequences](https://oeis.org/) (OEIS).
 
 This is likely the largest coherent collection of programs for OEIS
 sequences beyond the Maple, Mathematica, and Pari programs directly
-associated with many entries.  Currently over 82000 sequences are
+associated with many entries.  Currently over 89000 sequences are
 implemented. The following plot shows the number of sequences
 implemented (in bins of 1000):
 
@@ -60,6 +60,9 @@ classes based on Hans-J. Boehm's [constructible real
 arithmetic](http://www.hboehm.info/crcalc/CRCalc.html).  A smaller
 number of real number based sequences make use of Mikko Tommila's
 [apfloat library](http://www.apfloat.org/apfloat_java/).
+
+A large number of linear recurrences, generating functions, and tiling
+sequences are based on code developed by Georg Fischer.
 
 Certain parts of the nauty package for computing automorphism groups
 of graphs and digraphs were ported to Java.  Included here by

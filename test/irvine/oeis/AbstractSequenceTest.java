@@ -32,6 +32,16 @@ public class AbstractSequenceTest extends TestCase {
 
   private static final int LINES_PER_FILE = 1000;
 
+  private final String mClassName;
+
+  public AbstractSequenceTest(final String className) {
+    mClassName = className;
+  }
+
+  public AbstractSequenceTest() {
+    mClassName = getClass().getName();
+  }
+
   private String getTestVector(final int id) throws IOException {
     final String path = "irvine/oeis/seq/" + id / LINES_PER_FILE;
     try (final BufferedReader r = IOUtils.reader(path)) {
@@ -78,7 +88,7 @@ public class AbstractSequenceTest extends TestCase {
   }
 
   public void test() throws IOException {
-    check(getClass().getName());
+    check(mClassName);
   }
 
   /**

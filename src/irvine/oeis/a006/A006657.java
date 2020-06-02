@@ -38,6 +38,7 @@ public class A006657 extends A005316 {
     /**
      * Initial states for semi-meander systems.
      * @param windingPredicate winding predicate
+     * @return initial states
      */
     public Iterable<Pair<Integer, Z>> semiMeanderInitialStates(final Func<Integer, Boolean> windingPredicate) {
       final ArrayList<Pair<Integer, Z>> res = new ArrayList<>();

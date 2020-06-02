@@ -20,7 +20,10 @@ public class A023637 extends ParallelGenerateGraphsSequence {
 
   private final int mValency;
 
-  /** Construct the sequence. */
+  /**
+   * Construct the sequence.
+   * @param valency the valency
+   */
   protected A023637(final int valency) {
     super(valency & ~1, 0, false, false, false);
     mValency = valency;

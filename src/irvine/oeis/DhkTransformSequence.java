@@ -20,6 +20,7 @@ public class DhkTransformSequence implements Sequence {
   /**
    * Compute the DHK transform of the given polynomial.
    * @param p polynomial
+   * @param n maximum degree
    * @return DHK transform
    */
   public static Polynomial<Q> dhk(final Polynomial<Q> p, final int n) {

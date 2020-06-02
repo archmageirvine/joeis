@@ -22,7 +22,7 @@ public class BlockMultAddSequence implements Sequence {
    * Creates a new Add/Multiply sequence.
    *
    * @param blockLen number of factors in a block
-   * @param oper String of operations containing '<', '>', '+' and '-'
+   * @param oper String of operations containing '&lt;', '&gt;', '+' and '-'
    */
   public BlockMultAddSequence(final int blockLen, final String oper) {
     mBlockLen = blockLen;

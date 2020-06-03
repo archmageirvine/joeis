@@ -89,7 +89,7 @@ public class AbstractSequenceTest extends TestCase {
   public static void main(final String[] args) throws IOException {
     for (final String aNumber : args) {
       System.out.println("Running " + aNumber);
-      new AbstractSequenceTest().check(aNumber);
+      new AbstractSequenceTest().check(aNumber.endsWith(".java") ? aNumber.substring(0, aNumber.length() - 5) : aNumber);
     }
   }
 }

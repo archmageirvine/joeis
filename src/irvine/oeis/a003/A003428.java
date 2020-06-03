@@ -2,6 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A003428 Number of trees by stability index.
@@ -21,7 +22,7 @@ public class A003428 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
 //    ++mN;
 //    Polynomial<Q> a = RING.one();
 //    for (int k = 1; k <= mN; ++k) {

@@ -1,12 +1,12 @@
 package irvine.oeis.a145;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A145418Test extends AbstractSequenceTest {
+public class A145418Test extends TestCase {
 
   public void testSum() {
     final A145418 seq = new A145418();

@@ -32,6 +32,22 @@ public class AbstractSequenceTest extends TestCase {
 
   private static final int LINES_PER_FILE = 1000;
 
+  private final String mClassName;
+
+  public AbstractSequenceTest(final String className) {
+    super("test");
+    mClassName = className;
+  }
+
+  public AbstractSequenceTest() {
+    this(null);
+  }
+
+  @Override
+  public String getName() {
+    return mClassName;
+  }
+
   private String getTestVector(final int id) throws IOException {
     final String path = "irvine/oeis/seq/" + id / LINES_PER_FILE;
     try (final BufferedReader r = IOUtils.reader(path)) {
@@ -64,8 +80,12 @@ public class AbstractSequenceTest extends TestCase {
       final String aNumber = "A" + seqId;
       final Sequence seq = SequenceFactory.sequence(aNumber);
       final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
-      for (int k = 0; k < termsToExamine; ++k) {
-        assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+      try {
+        for (int k = 0; k < termsToExamine; ++k) {
+          assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+        }
+      } catch (final UnimplementedException e) {
+        // ok, these ones get a free pass
       }
       if (seq instanceof Closeable) {
         ((Closeable) seq).close();
@@ -78,7 +98,7 @@ public class AbstractSequenceTest extends TestCase {
   }
 
   public void test() throws IOException {
-    check(getClass().getName());
+    check(mClassName == null ? getClass().getName() : mClassName);
   }
 
   /**

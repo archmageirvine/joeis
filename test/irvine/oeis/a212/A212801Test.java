@@ -1,12 +1,12 @@
 package irvine.oeis.a212;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A212801Test extends AbstractSequenceTest {
+public class A212801Test extends TestCase {
 
   public void testUnity() {
     final A212801 seq = new A212801();

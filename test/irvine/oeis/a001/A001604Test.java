@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 import java.util.Arrays;
 
@@ -8,7 +8,7 @@ import java.util.Arrays;
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A001604Test extends AbstractSequenceTest {
+public class A001604Test extends TestCase {
 
   public void testSqrt5Binomial() {
     assertEquals("[1, 0]", Arrays.toString(A001604.sqrt5binomial(7, 3, 0)));

@@ -1,12 +1,12 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A007154Test extends AbstractSequenceTest {
+public class A007154Test extends TestCase {
 
   public void testComplement() {
     assertEquals(0b110100, A007154.complement(0b000111, 3));

@@ -104,6 +104,8 @@ public final class SequenceFactory {
       } else {
         System.err.println("Sorry " + args[0] + " is not yet implemented");
       }
+    } catch (final UnimplementedException e) {
+      System.err.println("Sorry " + args[0] + " is not yet implemented");
     }
   }
 }

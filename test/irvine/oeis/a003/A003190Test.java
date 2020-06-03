@@ -2,13 +2,13 @@ package irvine.oeis.a003;
 
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.q.Q;
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A003190Test extends AbstractSequenceTest {
+public class A003190Test extends TestCase {
 
   public void testSymFn5() {
     final A003190.SymFn fn = new A003190.SymFn();

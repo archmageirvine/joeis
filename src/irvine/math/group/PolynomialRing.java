@@ -458,6 +458,7 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
 
   /**
    * Replaces the power series sum of <code>a_n*x^n/n!</code> by sum of <code>a_n*x^n</code>
+   * @param p polynomial
    * @return Laplace series
    */
   public Polynomial<E> serlaplace(final Polynomial<E> p) {

@@ -23,12 +23,13 @@ final class NautyUtil {
   private static final int[] WORKPERM = new int[Nauty.MAXN];
 
   /**
-   *  The position of the first element in set <code>set</code>
-   *  which occupies a position greater than <code>pos</code>.  If no such element exists,
-   *  the value is -1.  pos can have any value less than n, including negative
-   *  values.
-   *  @param set the set
-   *  @param pos position
+   * The position of the first element in set <code>set</code>
+   * which occupies a position greater than <code>pos</code>.  If no such element exists,
+   * the value is -1.  pos can have any value less than n, including negative
+   * values.
+   * @param set the set
+   * @param pos position
+   * @return next element
    */
   static int nextElement(final long set, final int pos) {
     final long setwd = pos < 0 ? set : set & GenerateGraphs.bitmask(pos);

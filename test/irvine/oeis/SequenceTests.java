@@ -1,7 +1,8 @@
 package irvine.oeis;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Enumeration;
-import java.util.Vector;
 
 import io.github.classgraph.ClassGraph;
 import io.github.classgraph.ClassInfo;
@@ -20,16 +21,16 @@ public class SequenceTests extends TestSuite {
   }
 
   @Override
-  public Enumeration tests() {
-    final Vector<Test> tests = new Vector<>();
+  public Enumeration<?> tests() {
+    final ArrayList<Test> tests = new ArrayList<>();
     try (ScanResult scanResult = new ClassGraph().whitelistPackages("irvine.oeis").scan()) {
-      for (ClassInfo routeClassInfo : scanResult.getClassesImplementing("irvine.oeis.Sequence")) {
+      for (ClassInfo routeClassInfo : scanResult.getAllClasses()) {
         if (routeClassInfo.getName().matches(".*A[0-9]{6}")) {
           tests.add(new AbstractSequenceTest(routeClassInfo.getName()));
         }
       }
     }
-    return tests.elements();
+    return Collections.enumeration(tests);
   }
 
   /**

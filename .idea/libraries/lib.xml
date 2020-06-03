@@ -8,6 +8,7 @@
       <root url="jar://$PROJECT_DIR$/lib/junit.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/antlr-4.5-complete.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/teherba.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/classgraph-4.8.80.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

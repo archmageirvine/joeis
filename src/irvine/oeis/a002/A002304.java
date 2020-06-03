@@ -2,6 +2,7 @@ package irvine.oeis.a002;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A002304 Numerators of coefficients in asymptotic expansion of <code>(2/Pi)*Integral_{0..inf}</code> (sin <code>x / x)^n</code> dx.
@@ -88,6 +89,6 @@ public class A002304 implements Sequence {
 //    System.out.println("int2 = " + integrate2(coeffPoly));
 //    System.out.println("int3 = " + integrate3(mN));
 //    return Z.ZERO;
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
   }
 }

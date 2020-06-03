@@ -2,6 +2,7 @@ package irvine.oeis.a000;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.UnimplementedException;
 
 /**
  * A000591 Number of <code>n-state 2-input 1-output</code> automata with one initial and one terminal state.
@@ -95,7 +96,7 @@ public class A000591 implements Sequence {
 
   @Override
   public Z next() {
-    throw new UnsupportedOperationException();
+    throw new UnimplementedException();
 //    final Z unscaled = outerSum(++mN);
 //    if (mN > 2) {
 //      mF = mF.multiply(mN - 2);

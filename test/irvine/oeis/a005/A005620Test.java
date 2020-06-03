@@ -3,14 +3,14 @@ package irvine.oeis.a005;
 import java.util.Random;
 
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 import irvine.util.Pair;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A005620Test extends AbstractSequenceTest {
+public class A005620Test extends TestCase {
 
   public void testXyToUlamSpiral() {
     assertEquals(Z.ONE, A005620.xyToUlamSpiral(Z.ZERO, Z.ZERO));

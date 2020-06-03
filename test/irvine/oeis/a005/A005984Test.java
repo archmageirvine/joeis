@@ -2,14 +2,14 @@ package irvine.oeis.a005;
 
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
-import irvine.oeis.AbstractSequenceTest;
+import junit.framework.TestCase;
 import irvine.util.array.LongDynamicArray;
 
 /**
  * Tests the corresponding class.
  * @author Sean A. Irvine
  */
-public class A005984Test extends AbstractSequenceTest {
+public class A005984Test extends TestCase {
 
   public void testG() {
     final LongDynamicArray<Polynomial<Z>> vg = new LongDynamicArray<>();

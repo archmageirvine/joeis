@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123358 Kekul&#233; numbers for certain benzenoids (see the Cyvin-Gutman book for details).
+ * A123358 Kekul\u00e9 numbers for certain benzenoids (see the Cyvin-Gutman book for details).
  * @author Georg Fischer
  */
 public class A123358 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A254873 Recam&#225;n <code>[divide, -, +, *]-sequence</code> with seed 14 and step 2.
+ * A254873 Recam\u00e1n <code>[divide, -, +, *]-sequence</code> with seed 14 and step 2.
  * @author Georg Fischer
  */
 public class A254873 extends FiniteSequence {

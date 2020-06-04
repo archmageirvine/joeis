@@ -5,7 +5,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204189 Beno&#238;t Perichon's 26 primes in arithmetic progression.
+ * A204189 Beno\u00eet Perichon's 26 primes in arithmetic progression.
  * @author Georg Fischer
  */
 public class A204189 extends FiniteSequence {

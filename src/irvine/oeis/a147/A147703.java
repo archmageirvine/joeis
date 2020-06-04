@@ -7,7 +7,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A147703 Triangle <code>[1,1,1,0,0,0,...]</code> DELTA <code>[1,0,0,0,...]</code> with Del&#233;ham DELTA defined in <code>A084938</code>.
+ * A147703 Triangle <code>[1,1,1,0,0,0,...]</code> DELTA <code>[1,0,0,0,...]</code> with Del\u00e9ham DELTA defined in <code>A084938</code>.
  * @author Georg Fischer
  */
 public class A147703 extends GeneratingFunctionTriangle {

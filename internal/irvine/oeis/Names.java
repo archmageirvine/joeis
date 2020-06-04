@@ -215,7 +215,9 @@ public final class Names {
     for (int k = 0; k < s.length(); ++k) {
       final char c = s.charAt(k);
       if (c > 127) {
-        sb.append("&#").append((int) c).append(';');
+        final String hex = "00" + Integer.toHexString(c);
+        sb.append("\\u").append(hex.substring(hex.length() - 4));
+        //sb.append("&#").append((int) c).append(';');
       } else {
         sb.append(c);
       }

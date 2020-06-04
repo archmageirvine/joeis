@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263200 Number of perfect matchings on a M&#246;bius strip of width 3 and length <code>2n</code>.
+ * A263200 Number of perfect matchings on a M\u00f6bius strip of width 3 and length <code>2n</code>.
  * @author Sean A. Irvine
  */
 public class A263200 extends LinearRecurrence {

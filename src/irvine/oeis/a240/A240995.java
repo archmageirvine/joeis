@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A240995 Decimal expansion of <code>Pi^2/(12*log(2)*log(10))</code>, a constant appearing in several contexts, namely, <code>Khintchine-L&#233;vy</code> Constants, Gauss-Kuzmin distribution and Pell's equation.
+ * A240995 Decimal expansion of <code>Pi^2/(12*log(2)*log(10))</code>, a constant appearing in several contexts, namely, <code>Khintchine-L\u00e9vy</code> Constants, Gauss-Kuzmin distribution and Pell's equation.
  * @author Georg Fischer
  */
 public class A240995 extends DecimalExpansionSequence {

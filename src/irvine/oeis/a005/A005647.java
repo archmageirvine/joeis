@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000795;
 
 /**
- * A005647 Sali&#233; numbers.
+ * A005647 Sali\u00e9 numbers.
  * @author Sean A. Irvine
  */
 public class A005647 extends A000795 {

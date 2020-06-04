@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110691 Kekul&#233; numbers for certain benzenoids.
+ * A110691 Kekul\u00e9 numbers for certain benzenoids.
  * @author Georg Fischer
  */
 public class A110691 extends GeneratingFunctionSequence {

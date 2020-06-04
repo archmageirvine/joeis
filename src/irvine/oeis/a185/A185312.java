@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185312 Ker&#228;nen's sequence of length 98 on the <code>alphabet{1,2,3,4}</code> used to construct an abelian squarefree endomorphism of size 98.
+ * A185312 Ker\u00e4nen's sequence of length 98 on the <code>alphabet{1,2,3,4}</code> used to construct an abelian squarefree endomorphism of size 98.
  * @author Georg Fischer
  */
 public class A185312 extends FiniteSequence {

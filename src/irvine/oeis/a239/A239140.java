@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239140 Number of strict partitions of n having standard deviation &#963; <code>&lt; 1</code>.
+ * A239140 Number of strict partitions of n having standard deviation \u03c3 <code>&lt; 1</code>.
  * @author Georg Fischer
  */
 public class A239140 extends GeneratingFunctionSequence {

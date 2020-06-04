@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294782 Spherical growth of the Lamplighter group: number of elements in the Lamplighter group Z &#8768; Z of length n with respect to the standard generating set <code>{a,t}</code>.
+ * A294782 Spherical growth of the Lamplighter group: number of elements in the Lamplighter group Z \u2240 Z of length n with respect to the standard generating set <code>{a,t}</code>.
  * @author Georg Fischer
  */
 public class A294782 extends GeneratingFunctionSequence {

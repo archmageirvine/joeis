@@ -5,7 +5,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244620 Initial terms of <code>Erd&#337;s-Wood</code> intervals of length 22.
+ * A244620 Initial terms of <code>Erd\u0151s-Wood</code> intervals of length 22.
  * @author Georg Fischer
  */
 public class A244620 extends HolonomicRecurrence {

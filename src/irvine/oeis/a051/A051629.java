@@ -5,7 +5,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051629 Poincar&#233; series [or Poincare series] for <code>Gamma_2(1,2)</code>.
+ * A051629 Poincar\u00e9 series [or Poincare series] for <code>Gamma_2(1,2)</code>.
  * @author Georg Fischer
  */
 public class A051629 extends HolonomicRecurrence {

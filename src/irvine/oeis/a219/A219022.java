@@ -5,7 +5,7 @@ package irvine.oeis.a219;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A219022 &#256;ryabha&#7789;a's sine table. (Also Aryabhata or <code>&#2310;&#2352;&#2381;&#2351;&#2349;&#2335;.)</code>.
+ * A219022 \u0100ryabha\u1e6da's sine table. (Also Aryabhata or <code>\u0906\u0930\u094d\u092f\u092d\u091f.)</code>.
  * @author Georg Fischer
  */
 public class A219022 extends FiniteSequence {

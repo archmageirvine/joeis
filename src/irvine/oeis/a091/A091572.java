@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091572 Poincar&#233; series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type <code>E_7</code>.
+ * A091572 Poincar\u00e9 series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type <code>E_7</code>.
  * @author Georg Fischer
  */
 public class A091572 extends GeneratingFunctionSequence {

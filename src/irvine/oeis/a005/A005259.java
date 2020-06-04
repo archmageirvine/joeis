@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005259 Apery <code>(Ap&#233;ry)</code> numbers: <code>Sum_{k=0..n} (binomial(n,k)*binomial(n+k,k))^2</code>.
+ * A005259 Apery <code>(Ap\u00e9ry)</code> numbers: <code>Sum_{k=0..n} (binomial(n,k)*binomial(n+k,k))^2</code>.
  * @author Sean A. Irvine
  */
 public class A005259 implements Sequence {

@@ -4,18 +4,17 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032210 "DFJ" <code>(bracelet</code>, size, labeled) transform of 2,1,1,1...
+ * A032215.
  * @author Sean A. Irvine
  */
-public class A032210 extends A032209 {
+public class A032215 extends A032214 {
 
   @Override
   protected Polynomial<Polynomial<Q>> product(final int n) {
+    final Polynomial<Q> t = Y_RING.monomial(Q.ONE, 1);
     Polynomial<Polynomial<Q>> prod = RING.onePlusXToTheN(Y_RING.monomial(Q.TWO, 1), 1);
-    Q f = Q.ONE;
     for (int k = 2; k <= n; ++k) {
-      f = f.divide(new Q(k));
-      final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(Y_RING.monomial(f, 1), k);
+      final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t, k);
       prod = RING.multiply(prod, u, n);
     }
     return prod;

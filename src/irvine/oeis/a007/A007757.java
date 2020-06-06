@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007757 Dwork-Kontsevich sequence evaluated at <code>2n</code>.
+ * A007757 Dwork-Kontsevich sequence evaluated at <code>2*n</code>.
  * @author Sean A. Irvine
  */
 public class A007757 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002385;
 
 /**
- * A333368 allocated for Eder Vanzei.
+ * A333368 Primes of the form <code>k*m^(k*m) - 1</code> with m <code>&gt; 1</code>.
  * @author Sean A. Irvine
  */
 public class A333368 extends A002385 {

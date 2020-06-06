@@ -8,22 +8,22 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032214 "DFK" <code>(bracelet</code>, size, unlabeled) transform of 2,2,2,2...
+ * A032231 "DGK" <code>(bracelet</code>, element, unlabeled) transform of 2,2,2,2,...
  * @author Sean A. Irvine
  */
-public class A032214 implements Sequence {
+public class A032231 implements Sequence {
 
   protected static final PolynomialRingField<Q> Y_RING = new PolynomialRingField<>("y", Rationals.SINGLETON);
   protected static final PolynomialRingField<Polynomial<Q>> RING = new PolynomialRingField<>(Y_RING);
   private static final Polynomial<Polynomial<Q>> Y1 = RING.monomial(Y_RING.negate(Y_RING.oneMinusXToTheN(1)), 0);
+  protected static final Polynomial<Q> T = Y_RING.monomial(Q.ONE, 1);
 
   private int mN = -1;
 
   protected Polynomial<Polynomial<Q>> product(final int n) {
-    final Polynomial<Q> t = Y_RING.monomial(Q.TWO, 1);
     Polynomial<Polynomial<Q>> prod = RING.one();
     for (int k = 1; k <= n; ++k) {
-      final Polynomial<Polynomial<Q>> u = RING.onePlusXToTheN(t, k);
+      final Polynomial<Polynomial<Q>> u = RING.pow(RING.onePlusXToTheN(T, k), 2, n);
       prod = RING.multiply(prod, u, n);
     }
     return prod;

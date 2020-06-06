@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A030052 Smallest number whose n-th power is a sum of distinct smaller n-th powers.
+ * A030052 Smallest number whose n-th power is a sum of distinct smaller positive n-th powers.
  * @author Sean A. Irvine
  */
 public class A030052 implements Sequence {

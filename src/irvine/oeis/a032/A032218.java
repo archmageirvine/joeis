@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032218.
+ * A032218 Number of dyslexic rooted compound windmills with n nodes where any 2 submills extending from the same node are different sizes.
  * @author Sean A. Irvine
  */
 public class A032218 extends MemorySequence {

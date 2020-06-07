@@ -63,6 +63,6 @@ public class DhkTransformSequence implements Sequence {
       return Z.ONE;
     }
     mA.add(new Q(mSeq.next()));
-    return dhk(mA, mN).get(mN).toZ();
+    return dhk(mA, mN).coeff(mN).toZ();
   }
 }

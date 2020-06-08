@@ -14,9 +14,9 @@ public class A222229 extends A001477 {
   @Override
   public Z next() {
     return new Z(super.next().toString(10)
-        .replace("2", "a")
-        .replace("5", "2")
-        .replace("a", "5"), 10);
+        .replace('2', 'a')
+        .replace('5', '2')
+        .replace('a', '5'), 10);
   }
 
 }

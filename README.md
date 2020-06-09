@@ -18,6 +18,11 @@ not needed). Black indicates to be done, feel free to help.
 
 ![implemented-plot](doc/oeis-implemented.png)
 
+The following plot shows how the number of implemented sequences has
+changed over the years.
+
+![history-plot](doc/oeis-history.png)
+
 Implementations of specific sequences implement the ```Sequence```
 interface which provides a single method ```next()```.  The contract
 requires this to produce either the next member of the sequence or

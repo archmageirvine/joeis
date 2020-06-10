@@ -10,7 +10,7 @@ import irvine.oeis.a006.A006266;
  * @author Georg Fischer
  */
 public class A145451 extends A006266 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A145451() {

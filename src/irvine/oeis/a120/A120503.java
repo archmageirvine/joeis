@@ -15,7 +15,7 @@ public class A120503 extends A007844 {
   /** Construct the sequence. */
   public A120503() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

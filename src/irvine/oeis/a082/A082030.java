@@ -10,12 +10,12 @@ import irvine.oeis.a001.A001340;
  * @author Georg Fischer
  */
 public class A082030 extends A001340 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A082030() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

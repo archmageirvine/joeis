@@ -9,12 +9,12 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class A064836 extends A064835 {
-  private int mN = 0 - 1;
+  private int mN = -1;
   
   /** Construct the sequence. */
   public A064836() {
     super();
-    int bOffset = 0 - 1;
+    int bOffset = -1;
     while (bOffset < mN) {
       ++bOffset;
       super.next();

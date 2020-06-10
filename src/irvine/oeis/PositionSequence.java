@@ -31,7 +31,7 @@ public class PositionSequence implements Sequence {
    * This method may be overwritten in order to test some other property.
    * @return true iff the current number <code>mK</code> has some property.
    */
-  protected boolean isOk(Z term) {
+  protected boolean isOk(final Z term) {
     return term.compareTo(mValue) == 0;
   } // isOk
 

@@ -300,7 +300,7 @@ public class A007756 implements Sequence {
       } else {
         d.mOrientation[j] = omega;
         d.mOrientation[q] = -omega;
-        mOriente[mFree++] = j < q ? j : q;
+        mOriente[mFree++] = Math.min(j, q);
       }
     }
     return true;

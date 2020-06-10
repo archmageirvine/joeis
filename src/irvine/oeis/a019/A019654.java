@@ -119,11 +119,7 @@ public class A019654 implements Sequence {
 
     // mirrored 270
     rotate(mWorkspace1, mWorkspace2);
-    if (compare(board, mWorkspace2) > 0) {
-      return false;
-    }
-
-    return true;
+    return compare(board, mWorkspace2) <= 0;
   }
 
   private boolean markAndCheck(final int[] attacks, final int x0, final int y0, final int dx, final int dy, final int bit) {

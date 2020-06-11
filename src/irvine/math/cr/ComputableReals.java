@@ -172,6 +172,15 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return n.sin().inverse();
   }
 
+  /**
+   * The secant of a number.
+   * @param n number
+   * @return secant
+   */
+  public CR sec(final CR n) {
+    return n.cos().inverse();
+  }
+
   @Override
   public CR asin(final CR n) {
     return UnaryCRFunction.ASIN.execute(n);

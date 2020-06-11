@@ -9,9 +9,9 @@ import irvine.math.z.Z;
  */
 public class PositionSequence implements Sequence {
 
-  private final Sequence mSeq; // the underlying sequence
-  private Z mValue; // return the positions of this number
-  private long mN; // current index
+  protected final Sequence mSeq; // the underlying sequence
+  protected Z mValue; // return the positions of this number
+  protected long mN; // current index
 
   /**
    * Creates a sequence of the positions where a digit occurs in another sequence.

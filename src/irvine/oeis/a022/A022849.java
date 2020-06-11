@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A022849 implements Sequence {
 
-  private static final CR N = CR.valueOf(6).sqrt();
+  private static final CR N = CR.SIX.sqrt();
   private long mN = -1;
 
   @Override

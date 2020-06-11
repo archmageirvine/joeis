@@ -8,7 +8,7 @@ import irvine.math.cr.CR;
  */
 public class A023131 extends A023117 {
 
-  private static final CR N = CR.valueOf(8).sqrt();
+  private static final CR N = CR.EIGHT.sqrt();
 
   @Override
   protected CR getN() {

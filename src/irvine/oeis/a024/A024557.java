@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A024557 implements Sequence {
 
-  private static final CR C = CR.valueOf(6).sqrt().subtract(CR.TWO);
+  private static final CR C = CR.SIX.sqrt().subtract(CR.TWO);
   private Z mA = null;
 
   @Override

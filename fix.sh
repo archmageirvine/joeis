@@ -24,6 +24,11 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/CR\.valueOf(3L\?)/CR.THREE/g' \
         -e 's/CR\.valueOf(4L\?)/CR.FOUR/g' \
         -e 's/CR\.valueOf(5L\?)/CR.FIVE/g' \
+        -e 's/CR\.valueOf(6L\?)/CR.SIX/g' \
+        -e 's/CR\.valueOf(7L\?)/CR.SEVEN/g' \
+        -e 's/CR\.valueOf(8L\?)/CR.EIGHT/g' \
+        -e 's/CR\.valueOf(9L\?)/CR.NINE/g' \
+        -e 's/CR\.valueOf(10L\?)/CR.TEN/g' \
         <"${s}" >"${s}.t"
     if cmp -s "${s}" "${s}.t" >&/dev/null; then
         /bin/rm "${s}.t"

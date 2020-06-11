@@ -9,7 +9,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A153855 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(8).log().divide(CR.valueOf(13).log());
+  private static final CR N = CR.EIGHT.log().divide(CR.valueOf(13).log());
 
   @Override
   protected CR getCR() {

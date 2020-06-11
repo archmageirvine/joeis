@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A188079 implements Sequence {
   private long mN = 0;
   private static final CR R = CR.THREE.sqrt();
-  private static final CR K = CR.valueOf(6);
+  private static final CR K = CR.SIX;
 
   @Override
   public Z next() {

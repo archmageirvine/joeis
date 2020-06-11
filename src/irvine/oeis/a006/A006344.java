@@ -19,7 +19,7 @@ public class A006344 implements Sequence {
   private static final CR TWELVE = CR.valueOf(12);
   private static final Polynomial<CR> S = RING.create(Arrays.asList(TWELVE, CR.valueOf(-16), CR.FIVE));
   private static final Polynomial<CR> M = RING.create(Arrays.asList(CR.THREE.negate(), CR.TWO));
-  private static final Polynomial<CR> A = RING.create(Arrays.asList(TWELVE, CR.valueOf(-17), CR.valueOf(6)));
+  private static final Polynomial<CR> A = RING.create(Arrays.asList(TWELVE, CR.valueOf(-17), CR.SIX));
   private static final Polynomial<CR> D = RING.create(Arrays.asList(CR.valueOf(72), CR.valueOf(-156), CR.valueOf(110), CR.valueOf(-25)));
   private static final Polynomial<CR> F = RING.monomial(CR.FIVE, 0);
   private static final Polynomial<CR> E = RING.create(Arrays.asList(CR.FOUR, CR.TWO));

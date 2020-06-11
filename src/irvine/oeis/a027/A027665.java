@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 public class A027665 implements Sequence {
 
   private static final CR CR100000 = CR.valueOf(100000);
-  private static final CR LOG10 = CR.valueOf(10).log();
+  private static final CR LOG10 = CR.TEN.log();
   private long mN = 0;
 
   @Override

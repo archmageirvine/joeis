@@ -11,8 +11,8 @@ import irvine.oeis.Sequence;
  */
 public class A023966 implements Sequence {
 
-  private static final CR TEN = CR.valueOf(10);
-  private static final CR R = CR.valueOf(7).inverse();
+  private static final CR TEN = CR.TEN;
+  private static final CR R = CR.SEVEN.inverse();
   private long mN = 0;
 
   @Override

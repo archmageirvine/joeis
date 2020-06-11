@@ -11,7 +11,7 @@ import irvine.util.Pair;
  */
 public class A022771 extends A022765 {
 
-  private static final CR SQRT7 = CR.valueOf(7).sqrt();
+  private static final CR SQRT7 = CR.SEVEN.sqrt();
 
   @Override
   protected Z eval(final Pair<Long, Long> p) {

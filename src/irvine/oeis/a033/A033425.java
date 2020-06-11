@@ -17,6 +17,6 @@ public class A033425 implements Sequence {
 
   @Override
   public Z next() {
-    return REALS.pow(CR.valueOf(10), CR.valueOf(7)).divide(CR.valueOf(++mN)).floor();
+    return REALS.pow(CR.TEN, CR.SEVEN).divide(CR.valueOf(++mN)).floor();
   }
 }

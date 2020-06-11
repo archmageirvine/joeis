@@ -9,7 +9,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A004563 extends DecimalExpansionSequence {
 
-  private static final CR N = CR.valueOf(6).sqrt();
+  private static final CR N = CR.SIX.sqrt();
 
   /** Construct the sequence. */
   public A004563() {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A028429 implements Sequence {
 
-  private static final CR BASE_LOG = CR.valueOf(8).log();
+  private static final CR BASE_LOG = CR.EIGHT.log();
   private long mN = 0;
 
   @Override

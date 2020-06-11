@@ -10,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A005486 extends DecimalExpansionSequence {
 
-  private static final CR N = ComputableReals.SINGLETON.pow(CR.valueOf(6), CR.THREE.inverse());
+  private static final CR N = ComputableReals.SINGLETON.pow(CR.SIX, CR.THREE.inverse());
 
   @Override
   protected CR getCR() {

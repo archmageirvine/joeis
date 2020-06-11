@@ -8,7 +8,7 @@ import irvine.math.cr.CR;
  */
 public class A023128 extends A023117 {
 
-  private static final CR N = CR.valueOf(6).sqrt().inverse();
+  private static final CR N = CR.SIX.sqrt().inverse();
 
   @Override
   protected CR getN() {

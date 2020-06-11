@@ -150,9 +150,19 @@ public abstract class CR extends Number implements Comparable<CR> {
   public static final CR THREE = valueOf(3);
   /** The real number 4. */
   public static final CR FOUR = valueOf(4);
-  /** The real number 4. */
+  /** The real number 5. */
   public static final CR FIVE = valueOf(5);
-  /** The ratio of a circle's circumference to its diameter. */
+  /** The real number 6. */
+  public static final CR SIX = valueOf(6);
+  /** The real number 7. */
+  public static final CR SEVEN = valueOf(7);
+  /** The real number 8. */
+  public static final CR EIGHT = valueOf(8);
+  /** The real number 9. */
+  public static final CR NINE = valueOf(9);
+  /** The real number 10. */
+  public static final CR TEN = valueOf(10);
+  /** Pi, the ratio of a circle's circumference to its diameter. */
   public static final CR PI = FOUR.multiply(FOUR.multiply(atanReciprocal(5)).subtract(atanReciprocal(239)));
   // pi/4 = 4*atan(1/5) - atan(1/239)
   /** Pi over 2. */

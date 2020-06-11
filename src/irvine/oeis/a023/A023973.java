@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A023973 implements Sequence {
 
-  private static final CR R = CR.valueOf(6).inverse();
+  private static final CR R = CR.SIX.inverse();
   private long mN = 0;
 
   @Override

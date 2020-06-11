@@ -16,6 +16,6 @@ public class A033329 implements Sequence {
   @Override
   public Z next() {
     final CR n = CR.valueOf(++mN);
-    return CR.valueOf(9).divide(n).floor();
+    return CR.NINE.divide(n).floor();
   }
 }

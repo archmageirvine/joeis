@@ -12,8 +12,8 @@ import irvine.oeis.Sequence;
  */
 public class A190233 implements Sequence {
   private long mN = 0;
-  private static final CR U = CR.PI.divide(CR.valueOf(8)).sin();
-  private static final CR V = CR.PI.divide(CR.valueOf(8)).cos();
+  private static final CR U = CR.PI.divide(CR.EIGHT).sin();
+  private static final CR V = CR.PI.divide(CR.EIGHT).cos();
 
   @Override
   public Z next() {

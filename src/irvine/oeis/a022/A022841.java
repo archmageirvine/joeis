@@ -9,7 +9,7 @@ import irvine.oeis.BeattySequence;
  */
 public class A022841 extends BeattySequence {
 
-  private static final CR N = CR.valueOf(7).sqrt();
+  private static final CR N = CR.SEVEN.sqrt();
 
   @Override
   protected CR getCR() {

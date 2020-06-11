@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A023962 implements Sequence {
 
-  private static final CR TEN = CR.valueOf(10);
+  private static final CR TEN = CR.TEN;
   private long mN = 0;
 
   @Override

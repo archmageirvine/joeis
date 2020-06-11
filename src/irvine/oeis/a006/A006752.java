@@ -13,7 +13,7 @@ import irvine.oeis.DecimalExpansionSequence;
 public class A006752 extends DecimalExpansionSequence {
 
   // G = (pi/8) * log(2 + sqrt(3)) + (3/8) * sum_{n=0..infty} 1/((2n+1)^2 * binomial(2n,n))
-  private static final CR C = CR.PI.divide(CR.valueOf(8)).multiply(CR.TWO.add(CR.THREE.sqrt()).log());
+  private static final CR C = CR.PI.divide(CR.EIGHT).multiply(CR.TWO.add(CR.THREE.sqrt()).log());
   private static final Q D = new Q(3, 8);
 
   private Q mSum = Q.ZERO;

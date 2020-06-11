@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A277723 implements Sequence {
 
   private static final ZPolynomial POLY = new ZPolynomial(Polynomial.create(-1, 5, -7, 1));
-  private static final CR TAU3 = POLY.inverseMonotone(CR.valueOf(6), CR.valueOf(7)).execute(CR.ZERO);
+  private static final CR TAU3 = POLY.inverseMonotone(CR.SIX, CR.SEVEN).execute(CR.ZERO);
 
   private long mN = -1;
 

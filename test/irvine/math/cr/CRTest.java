@@ -166,4 +166,8 @@ public class CRTest extends TestCase {
     assertEquals("0.0364899740", psi.execute(CR.valueOf(new Q(3, 2))).toString());
     assertEquals("-0.0000000009", psi.execute(CR.valueOf(1.461632144)).toString());
   }
+
+  public void testFrac() {
+    assertEquals("0.1415926536", CR.PI.frac().toString());
+  }
 }

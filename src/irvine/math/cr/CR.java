@@ -736,6 +736,16 @@ public abstract class CR extends Number implements Comparable<CR> {
   }
 
   /**
+   * Return the fractional part of this number.
+   * @return fractional part
+   */
+  public CR frac() {
+    return compareTo(CR.ZERO) < 0
+      ? subtract(CR.valueOf(ceil()))
+      : subtract(CR.valueOf(floor()));
+  }
+
+  /**
    * Return a Z which differs by less than one from the computable real.
    * @return integer value
    */

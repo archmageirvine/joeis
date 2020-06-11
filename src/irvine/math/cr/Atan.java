@@ -1,7 +1,7 @@
 package irvine.math.cr;
 
 /**
- * Arc tangent function
+ * Arctangent function
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */

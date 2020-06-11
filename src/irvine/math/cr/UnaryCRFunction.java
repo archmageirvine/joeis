@@ -102,10 +102,16 @@ public abstract class UnaryCRFunction implements Serializable {
   public static final UnaryCRFunction ACOS = new Acos();
 
   /**
-   * The function object corresponding to the inverse cosine (arctangent) function.
+   * The function object corresponding to the inverse tangent (arctangent) function.
    * The result is between -PI/2 and PI/2.
    */
   public static final UnaryCRFunction ATAN = new Atan();
+
+  /**
+   * The function object corresponding to the inverse cotangent (arccotangent) function.
+   * The result is between -PI/2 and PI/2.
+   */
+  public static final UnaryCRFunction ACOT = new Acot();
 
   /**
    * The function object corresponding to the <tt>ln</tt> method of CR.

@@ -188,6 +188,11 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return UnaryCRFunction.ATAN.execute(n);
   }
 
+  @Override
+  public CR acot(final CR n) {
+    return UnaryCRFunction.ACOT.execute(n);
+  }
+
   /**
    * Return <code>n^e</code> for computable reals <code>n</code> and <code>e</code>.
    * @param n base

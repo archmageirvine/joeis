@@ -1,7 +1,7 @@
 package irvine.math.cr;
 
 /**
- * Arc cosine function
+ * Arccosine function
  * @author Hans.Boehm@hp.com
  * @author Sean A. Irvine
  */

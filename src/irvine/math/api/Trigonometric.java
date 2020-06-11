@@ -60,14 +60,21 @@ public interface Trigonometric<E> {
   /**
    * Returns the arccosine of a number.
    * @param n element
-   * @return cosine
+   * @return arccosine
    */
   E acos(final E n);
 
   /**
    * Returns the arctangent of a number.
    * @param n element
-   * @return tangent
+   * @return arctangent
    */
   E atan(final E n);
+
+  /**
+   * Returns the arccotangent of a number.
+   * @param n element
+   * @return arccotangent
+   */
+  E acot(final E n);
 }

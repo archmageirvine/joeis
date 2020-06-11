@@ -368,6 +368,11 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
   }
 
   @Override
+  public CC acot(final CC z) {
+    return subtract(new CC(CR.HALF_PI), atan(z));
+  }
+
+  @Override
   public Z characteristic() {
     return Z.ZERO;
   }

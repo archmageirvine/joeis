@@ -437,6 +437,11 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   }
 
   @Override
+  public C acot(final C z) {
+    return subtract(new C(Constants.HALF_PI), atan(z));
+  }
+
+  @Override
   public C gamma(final C z) {
     return ComplexGamma.gamma(z);
   }

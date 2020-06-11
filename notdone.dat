@@ -1288,3 +1288,7 @@ A031438 Number of nonisomorphic proper regular linear spaces, PRLIN(n)
 A031501 Triangle of numbers maxfit[ i ][ j ] = upper bound on number of incidences in a geometry with <= i points and <= j blocks
 A031507 Smallest k>0 such that the elliptic curve y^2 = x^3 + k has rank n, if k exists
 A031508 Smallest k>0 such that the elliptic curve y^2 = x^3 - k has rank n, if k exists
+A032256 Number of dyslexic rooted compound windmills with n nodes with no symmetries, terms don't match definition?
+A032257 Number of dyslexic rooted compound windmills with n nodes and leaves of 2 colors with no symmetries, terms don't match definition?
+A032258 Shifts left 2 places under "DHK" (bracelet, identity, unlabeled) transform, terms don't match definition?
+A032259 Number of series-reduced dyslexic planted compound windmills with n leaves of 2 colors with no symmetries, terms don't match definition?

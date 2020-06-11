@@ -300,6 +300,16 @@ public final class ComplexField extends AbstractField<C> implements Exp<C>, Hype
   }
 
   @Override
+  public C sec(final C z) {
+    return inverse(cos(z));
+  }
+
+  @Override
+  public C csc(final C z) {
+    return inverse(sin(z));
+  }
+
+  @Override
   public Z size() {
     return null;
   }

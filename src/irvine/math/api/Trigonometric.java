@@ -37,6 +37,20 @@ public interface Trigonometric<E> {
   E cot(final E n);
 
   /**
+   * The secant of a number.
+   * @param n number
+   * @return secant
+   */
+  E sec(final E n);
+
+  /**
+   * The cosecant of a number.
+   * @param n number
+   * @return cosecant
+   */
+  E csc(final E n);
+
+  /**
    * Returns the arcsine of a number.
    * @param n element
    * @return arcsine

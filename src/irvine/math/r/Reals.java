@@ -1,5 +1,7 @@
 package irvine.math.r;
 
+import java.util.Iterator;
+
 import irvine.math.api.Ei;
 import irvine.math.api.Exp;
 import irvine.math.api.Gamma;
@@ -10,8 +12,6 @@ import irvine.math.api.Trigonometric;
 import irvine.math.group.AbstractOrderedField;
 import irvine.math.z.Z;
 import irvine.util.AbstractIterator;
-
-import java.util.Iterator;
 
 /**
  * Field of real numbers under addition and multiplication.
@@ -176,6 +176,16 @@ public final class Reals extends AbstractOrderedField<Double> implements Exp<Dou
   @Override
   public Double cot(final Double n) {
     return 1.0 / Math.tan(n);
+  }
+
+  @Override
+  public Double sec(final Double n) {
+    return 1.0 / Math.cos(n);
+  }
+
+  @Override
+  public Double csc(final Double n) {
+    return 1.0 / Math.sin(n);
   }
 
   @Override

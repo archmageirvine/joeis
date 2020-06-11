@@ -163,20 +163,12 @@ public final class ComputableReals extends AbstractOrderedField<CR> implements E
     return UnaryCRFunction.TAN.execute(n).inverse();
   }
 
-  /**
-   * The cosecant of a number.
-   * @param n number
-   * @return cosecant
-   */
+  @Override
   public CR csc(final CR n) {
     return n.sin().inverse();
   }
 
-  /**
-   * The secant of a number.
-   * @param n number
-   * @return secant
-   */
+  @Override
   public CR sec(final CR n) {
     return n.cos().inverse();
   }

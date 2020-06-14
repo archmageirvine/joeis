@@ -1,5 +1,7 @@
 package irvine.math.z;
 
+import irvine.util.string.StringUtils;
+
 /**
  * Generate string representations of integers.
  *
@@ -95,14 +97,18 @@ final class ZString {
     if (base == 10) {
       return toString(n);
     }
-    if (base < 2) {
-      throw new IllegalArgumentException("Base must be at least 2");
+    if (base < 1) {
+      throw new IllegalArgumentException("Base must be at least 1");
     }
     if (base > 36) {
       throw new IllegalArgumentException("Base must be at most 36");
     }
     if (n.getSize() == 0) {
       return "0";
+    }
+    if (base == 1) {
+      final String tally = StringUtils.rep('1', Math.abs(n.intValueExact()));
+      return n.getSize() < 0 ? "-" + tally : tally;
     }
     final StringBuilder sb = new StringBuilder();
     if (base == 2) {

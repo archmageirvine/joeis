@@ -15,14 +15,13 @@ public final class Convert {
 
   /**
    * Convert a string in given radix to an integer.
-   *
    * @param val value to convert
    * @param radix base of string
    * @return integer representation
    */
   public static Z valueOf(final CharSequence val, final int radix) {
-    if (radix < 2 || radix > 36) {
-      throw new IllegalArgumentException("Radix must be in [2,36].");
+    if (radix < 1 || radix > 36) {
+      throw new IllegalArgumentException("Radix must be in [1,36].");
     }
     final int len = val.length();
     if (len == 0) {
@@ -35,6 +34,12 @@ public final class Convert {
         throw new IllegalArgumentException("Minus without digits.");
       }
       cnt = 1;
+    }
+    if (radix == 1) {
+      if (val.equals("0")) {
+        return Z.ZERO;
+      }
+      return negative ? Z.valueOf(-(val.length() - 1)) : Z.valueOf(val.length());
     }
     Z a = Z.ZERO;
     final int limit = (int) (Math.log(Long.MAX_VALUE) / Math.log(radix)) - 1;

@@ -76,7 +76,6 @@ public class ZTest extends TestCase {
     consBad("G", 15);
     consBad("g", 15);
     consBad("0", 0);
-    consBad("0", 1);
     consBad("0", -1);
     consBad("-", -2);
     consBad("0", 37);

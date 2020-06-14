@@ -1,16 +1,17 @@
-package irvine.oeis.a009;
+package irvine.oeis.a032;
 
 import irvine.math.group.PolynomialRingField;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009145 Expansion of e.g.f.: <code>cosh(sin(x))/exp(x)</code>.
+ * A032269 "DIJ" <code>(bracelet</code>, indistinct, labeled) transform of 1,2,3,4,...
  * @author Sean A. Irvine
  */
-public class A009145 implements Sequence {
+public class A032269 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private int mN = -1;
@@ -22,6 +23,7 @@ public class A009145 implements Sequence {
       return Z.ONE;
     }
     mF = mF.multiply(mN);
-    return RING.coeff(RING.cosh(RING.sin(RING.x(), mN), mN), RING.exp(RING.x(), mN), mN).multiply(mF).toZ();
+    final Polynomial<Q> g = RING.exp(RING.x(), mN).shift(1);
+    return RING.divide(RING.subtract(RING.add(g, RING.divide(RING.pow(g, 2, mN), Q.TWO)), RING.log1p(RING.negate(g), mN)), Q.TWO).coeff(mN).multiply(mF).toZ();
   }
 }

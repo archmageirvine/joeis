@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276514 If we call \u201cS\u201d this sequence and consider the k-digit term <code>a(n)</code> of S with digits <code>abcd...k</code>, then <code>a(n+1) = [a(n) +</code> the a-th digit of S + the b-th digit of S + the c-th digit of S <code>+ ... +</code> the k-th digit of <code>S]</code>. This is the lexicographically first such finite sequence with no duplicate term.
+ * A276514 If we call "S" this sequence and consider the k-digit term <code>a(n)</code> of S with digits <code>abcd...k</code>, then <code>a(n+1) = [a(n) +</code> the a-th digit of S + the b-th digit of S + the c-th digit of S <code>+ ... +</code> the k-th digit of <code>S]</code>. This is the lexicographically first such finite sequence with no duplicate term.
  * @author Georg Fischer
  */
 public class A276514 extends FiniteSequence {

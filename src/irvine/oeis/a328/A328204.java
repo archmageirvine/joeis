@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328204 Two-digit numbers in the order in which they first appear in the decimal expansion of <code>Pi</code>.
+ * A328204 allocated for Michel Lagneau.
  * @author Georg Fischer
  */
 public class A328204 extends FiniteSequence {

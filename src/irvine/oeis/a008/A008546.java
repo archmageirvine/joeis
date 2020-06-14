@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008546 Quintuple factorial numbers: <code>Product_{k=0..n-1} (5*k+4)</code>.
+ * A008546 Quintuple factorial numbers: <code>Product_{k = 0..n-1} (5*k + 4)</code>.
  * @author Sean A. Irvine
  */
 public class A008546 implements Sequence {

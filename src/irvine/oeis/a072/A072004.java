@@ -12,7 +12,7 @@ import irvine.oeis.a024.A024450;
  * @author Georg Fischer
  */
 public class A072004 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
   protected final Sequence mPsqSum = new A024450();
 
 

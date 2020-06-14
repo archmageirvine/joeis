@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000959;
  * @author Georg Fischer
  */
 public class A032602 extends A000040 {
-  protected long mN = 0 - 1;
+  protected long mN = -1;
 final Sequence mLuckies = new A000959();
 
   @Override

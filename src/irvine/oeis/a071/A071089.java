@@ -12,7 +12,7 @@ import irvine.oeis.a007.A007504;
  * @author Georg Fischer
  */
 public class A071089 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
   protected final Sequence mPrimSum = new A007504();
 
   {

@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000040;
  * @author Georg Fischer
  */
 public class A071168 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
 protected final Sequence mPhi = new A000010();
 
   @Override

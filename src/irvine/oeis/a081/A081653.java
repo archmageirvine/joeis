@@ -11,7 +11,7 @@ import irvine.oeis.a000.A000040;
  * @author Georg Fischer
  */
 public class A081653 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
   @Override
   public Z next() {
     ++mN;

@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
  * @author Georg Fischer
  */
 public class A084369 extends A000040 {
-  protected long mK = 1 - 1;
+  protected long mK = 0;
   protected Z nextPrime = null;
   protected boolean isOk() {
     return ! nextPrime.toString().matches(".*[02468].*");

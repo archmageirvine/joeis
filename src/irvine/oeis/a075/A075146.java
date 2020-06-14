@@ -12,7 +12,7 @@ import irvine.oeis.a001.A001597;
  * @author Georg Fischer
  */
 public class A075146 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
   protected final Sequence mPerfPows = new A001597();
 
 

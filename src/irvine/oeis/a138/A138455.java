@@ -10,11 +10,11 @@ import irvine.oeis.a000.A000040;
  * @author Georg Fischer
  */
 public class A138455 extends A000040 {
-  protected long mN = 1 - 1;
+  protected long mN = 0;
   @Override
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return nextPrime.pow(6).subtract(nextPrime.pow(4)).divide(Z.valueOf(4));
+    return nextPrime.pow(6).subtract(nextPrime.pow(4)).divide(Z.FOUR);
   }
 }

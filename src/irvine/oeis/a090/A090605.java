@@ -10,7 +10,7 @@ import irvine.oeis.a000.A000040;
  * @author Georg Fischer
  */
 public class A090605 extends A000040 {
-  protected long mK = 1 - 1;
+  protected long mK = 0;
   protected Z mNP = null;
   protected boolean isOk() {
     return mNP.mod(Z.valueOf(60)).equals(Z.ONE);

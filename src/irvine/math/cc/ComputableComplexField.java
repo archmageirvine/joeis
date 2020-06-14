@@ -289,7 +289,7 @@ public final class ComputableComplexField extends AbstractField<CC> implements E
 
   @Override
   public CC csc(final CC z) {
-    return inverse(csc(z));
+    return inverse(sin(z));
   }
 
   @Override

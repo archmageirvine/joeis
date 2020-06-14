@@ -22,7 +22,7 @@ public class A032305 extends MemoryFunction2<Long, Z> implements Sequence {
     Z sum = Z.ZERO;
     if (m >= 1) {
       for (int j = 0; j <= Math.min(1, n / m); ++j) {
-        sum = sum.add(get(n - m * j, m - 1).multiply(j == 0 ? Z.ONE : get(m - 1, m -1)));
+        sum = sum.add(get(n - m * j, m - 1).multiply(j == 0 ? Z.ONE : get(m - 1, m - 1)));
       }
     }
     return sum;

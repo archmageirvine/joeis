@@ -16,6 +16,7 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/Z\.valueOf(9L\?)/Z.NINE/g' \
         -e 's/Z\.valueOf(10L\?)/Z.TEN/g' \
         -e 's/Z\.valueOf(-1L\?)/Z.NEG_ONE/g' \
+        -e 's/ 2 - 1;/ 1;/g' \
         -e 's/ 1 - 1;/ 0;/g' \
         -e 's/ 0 - 1;/ -1;/g' \
         -e 's/CR\.valueOf(0L\?)/CR.ZERO/g' \

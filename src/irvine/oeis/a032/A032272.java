@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 public class A032272 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static Polynomial<Q> TWO = RING.create(Collections.singletonList(Q.TWO));
+  private static final Polynomial<Q> TWO = RING.create(Collections.singletonList(Q.TWO));
   private Polynomial<Q> mA = RING.zero();
   private int mN = 0;
   private Z mF = Z.ONE;

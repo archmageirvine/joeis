@@ -15,11 +15,10 @@ public class A072583 extends A000040 {
   protected Z mNP = null;
 
   protected boolean isOk() {
-    int p0 = ZUtils.digitCounts(mNP, 2)[0];
-    int p1 = ZUtils.digitCounts(mNP, 2)[1];
-    int k0 = ZUtils.digitCounts(Z.valueOf(mK), 2)[0];
-    int k1 = ZUtils.digitCounts(Z.valueOf(mK), 2)[1];
-
+    final int p0 = ZUtils.digitCounts(mNP, 2)[0];
+    final int p1 = ZUtils.digitCounts(mNP, 2)[1];
+    final int k0 = ZUtils.digitCounts(Z.valueOf(mK), 2)[0];
+    final int k1 = ZUtils.digitCounts(Z.valueOf(mK), 2)[1];
     return p0 != k0 && p0 != k1 && p1 != k0 && p1 != k1;
   }
 

@@ -12,10 +12,11 @@ import irvine.oeis.a000.A000040;
  */
 public class A067087 extends A000040 {
   protected long mN = 0;
+
   @Override
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return new Z(nextPrime.toString() + ZUtils.reverse(nextPrime).toString());
+    return new Z(nextPrime.toString() + ZUtils.reverse(nextPrime));
   }
 }

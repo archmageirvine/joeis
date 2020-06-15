@@ -13,12 +13,12 @@ import irvine.oeis.a000.A000959;
  */
 public class A032603 extends A000040 {
   protected long mN = 0;
-final Sequence mLuckies = new A000959();
+  final Sequence mLuckies = new A000959();
 
   @Override
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return new Z(nextPrime.toString() + mLuckies.next().toString());
+    return new Z(nextPrime.toString() + mLuckies.next());
   }
 }

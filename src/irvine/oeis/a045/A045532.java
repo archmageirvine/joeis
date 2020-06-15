@@ -15,6 +15,6 @@ public class A045532 extends A000040 {
   public Z next() {
     ++mN;
     final Z nextPrime = super.next();
-    return new Z(String.valueOf(mN) + nextPrime.toString());
+    return new Z(mN + nextPrime.toString());
   }
 }

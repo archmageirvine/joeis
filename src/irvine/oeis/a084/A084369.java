@@ -11,20 +11,20 @@ import irvine.oeis.a000.A000040;
  */
 public class A084369 extends A000040 {
   protected long mK = 0;
-  protected Z nextPrime = null;
+  protected Z mNP = null;
+
   protected boolean isOk() {
-    return ! nextPrime.toString().matches(".*[02468].*");
+    return !mNP.toString().matches(".*[02468].*");
   }
-  
+
   @Override
   public Z next() {
     ++mK;
-    nextPrime = super.next();
-    while (! isOk()) {
+    mNP = super.next();
+    while (!isOk()) {
       ++mK;
-      nextPrime = super.next();
-    }  
+      mNP = super.next();
+    }
     return Z.valueOf(mK);
   }
-
 }

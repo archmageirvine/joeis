@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000203;
 
 /**
- * A071170 n-th prime reduced modulo sigma[n].
+ * A071170 n-th prime reduced modulo <code>sigma[n]</code>.
  * @author Georg Fischer
  */
 public class A071170 extends A000040 {

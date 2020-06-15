@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138408 a(n) = prime(n)^6 - prime(n).
+ * A138408 <code>a(n) = prime(n)^6 - prime(n)</code>.
  * @author Georg Fischer
  */
 public class A138408 extends A000040 {

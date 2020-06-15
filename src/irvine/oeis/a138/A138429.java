@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138429 a(n) = (prime(n)^5 - prime(n))/15.
+ * A138429 <code>a(n) = (prime(n)^5 - prime(n))/15</code>.
  * @author Georg Fischer
  */
 public class A138429 extends A000040 {

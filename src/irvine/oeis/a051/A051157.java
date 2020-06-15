@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A051157 a(n) = (2^p^3 - 1)/(2^p^2 - 1) where p = n-th prime.
+ * A051157 <code>a(n) = (2^p^3 - 1)/(2^p^2 - 1)</code> where p <code>= n-th</code> prime.
  * @author Georg Fischer
  */
 public class A051157 extends A000040 {

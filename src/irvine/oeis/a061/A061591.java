@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061591 a(n) = 2^x, where x = p*(p-1)/2 and p is the n-th prime.
+ * A061591 <code>a(n) = 2^x</code>, where <code>x = p*(p-1)/2</code> and p is the n-th prime.
  * @author Georg Fischer
  */
 public class A061591 extends A000040 {

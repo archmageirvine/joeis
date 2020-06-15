@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A068395 a(n) = n-th prime minus its sum of digits.
+ * A068395 <code>a(n) = n-th</code> prime minus its sum of digits.
  * @author Georg Fischer
  */
 public class A068395 extends A000040 {

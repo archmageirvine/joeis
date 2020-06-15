@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138403 a(n) = p^3*(p-1), where p = prime(n).
+ * A138403 <code>a(n) = p^3*(p-1)</code>, where p <code>= prime(n)</code>.
  * @author Georg Fischer
  */
 public class A138403 extends A000040 {

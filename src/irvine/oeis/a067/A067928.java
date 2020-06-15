@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A067928 Numbers n such that the digits of the n-th prime begin with n.
+ * A067928 Numbers n such that the digits of the n-th prime begin with <code>n</code>.
  * @author Georg Fischer
  */
 public class A067928 extends A000040 {

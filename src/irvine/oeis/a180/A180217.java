@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A180217 a(n) = (n-th prime modulo 3) + (n-th prime modulo 4).
+ * A180217 <code>a(n) = (n-th</code> prime modulo <code>3) + (n-th</code> prime modulo <code>4)</code>.
  * @author Georg Fischer
  */
 public class A180217 extends A000040 {

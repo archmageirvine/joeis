@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A061028 a(n) = n^p - (n-1)^p, where p is the n-th prime.
+ * A061028 <code>a(n) = n^p - (n-1)^p</code>, where p is the n-th prime.
  * @author Georg Fischer
  */
 public class A061028 extends A000040 {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a006.A006450;
 
 /**
- * A076240 Remainder when 2nd order prime pp(n) = A006450(n) is divided by n-th prime = A000040(n).
+ * A076240 Remainder when 2nd order prime <code>pp(n) = A006450(n)</code> is divided by n-th prime <code>= A000040(n)</code>.
  * @author Georg Fischer
  */
 public class A076240 extends A000040 {

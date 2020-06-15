@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138407 a(n) = p^4*(p-1), where p = prime(n).
+ * A138407 <code>a(n) = p^4*(p-1)</code>, where p <code>= prime(n)</code>.
  * @author Georg Fischer
  */
 public class A138407 extends A000040 {

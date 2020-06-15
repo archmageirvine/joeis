@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A071260 Integer part of the geometric mean of the n-th prime prime(n) and the n-th composite number C(n).
+ * A071260 Integer part of the geometric mean of the n-th prime <code>prime(n)</code> and the n-th composite number <code>C(n)</code>.
  * @author Georg Fischer
  */
 public class A071260 extends A000040 {

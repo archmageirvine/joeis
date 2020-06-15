@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001358;
 
 /**
- * A065870 n-th prime - n-th semiprime.
+ * A065870 n-th prime <code>- n-th</code> semiprime.
  * @author Georg Fischer
  */
 public class A065870 extends A000040 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138406 a(n) = prime(n)^5 - prime(n)^3.
+ * A138406 <code>a(n) = prime(n)^5 - prime(n)^3</code>.
  * @author Georg Fischer
  */
 public class A138406 extends A000040 {

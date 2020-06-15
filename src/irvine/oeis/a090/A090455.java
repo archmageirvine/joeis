@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090455 Difference between numbers of binary 1's of n and binary 1's of n-th prime.
+ * A090455 Difference between numbers of binary <code>1</code>'s of n and binary <code>1</code>'s of n-th prime.
  * @author Georg Fischer
  */
 public class A090455 extends A000040 {

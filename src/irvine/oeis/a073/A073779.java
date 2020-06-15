@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A073779 Number of 0's in base-3 representation of n-th prime.
+ * A073779 Number of <code>0</code>'s in <code>base-3</code> representation of n-th prime.
  * @author Georg Fischer
  */
 public class A073779 extends A000040 {

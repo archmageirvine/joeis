@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A089622 a(n) = n^n + n-th prime.
+ * A089622 <code>a(n) = n^n + n-th</code> prime.
  * @author Georg Fischer
  */
 public class A089622 extends A000040 {

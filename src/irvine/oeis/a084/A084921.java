@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A084921 a(n) = lcm(p-1, p+1) where p is the n-th prime.
+ * A084921 <code>a(n) = lcm(p-1, p+1)</code> where p is the n-th prime.
  * @author Georg Fischer
  */
 public class A084921 extends A000040 {

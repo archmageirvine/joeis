@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A089621 n^4 + n-th prime.
+ * A089621 <code>n^4 + n-th</code> prime.
  * @author Georg Fischer
  */
 public class A089621 extends A000040 {

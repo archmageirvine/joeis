@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138418 a(n) = ((n-th prime)^4-(n-th prime)^2)/2.
+ * A138418 <code>a(n) = ((n-th prime)^4-(n-th prime)^2)/2</code>.
  * @author Georg Fischer
  */
 public class A138418 extends A000040 {

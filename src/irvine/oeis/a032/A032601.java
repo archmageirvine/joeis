@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032601 a(n) = n-th prime number x n-th lucky number.
+ * A032601 <code>a(n) = n-th</code> prime number <code>x n-th</code> lucky number.
  * @author Georg Fischer
  */
 public class A032601 extends A000040 {

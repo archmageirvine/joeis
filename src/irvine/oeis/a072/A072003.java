@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072003 10's complement of final digit of n-th prime.
+ * A072003 <code>10</code>'s complement of final digit of n-th prime.
  * @author Georg Fischer
  */
 public class A072003 extends A000040 {

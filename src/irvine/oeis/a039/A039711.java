@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A039711 Primes mod 13.
+ * A039711 Primes <code>mod 13</code>.
  * @author Georg Fischer
  */
 public class A039711 extends A000040 {

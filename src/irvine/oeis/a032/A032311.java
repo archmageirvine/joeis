@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032311.
+ * A032311 Number of ways to partition n labeled elements into sets of different sizes of at least 2.
  * @author Sean A. Irvine
  */
 public class A032311 extends MemoryFunction2<Long, Z> implements Sequence {
@@ -24,7 +24,7 @@ public class A032311 extends MemoryFunction2<Long, Z> implements Sequence {
       return Z.ZERO;
     }
     final Z b = get(n, m - 1);
-    return m > n ? b : b.add(Binomial.binomial(n, m));
+    return m > n ? b : b.add(get(n - m, m - 1).multiply(Binomial.binomial(n, m)));
   }
 
   @Override

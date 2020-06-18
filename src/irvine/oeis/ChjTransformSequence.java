@@ -26,7 +26,6 @@ public class ChjTransformSequence implements Sequence {
   protected ChjTransformSequence(final Sequence seq) {
     // The mA sequence will be numbered from 0
     mA = MemorySequence.cachedSequence(seq);
-    mA.next();
   }
 
   private static boolean isDivisor(final int[] q, final int d) {
@@ -47,9 +46,8 @@ public class ChjTransformSequence implements Sequence {
       final int k = p.length; // number of parts
       IntegerPartition.toCountForm(p, q);
       Z t2 = Z.ZERO;
-      for (int d = 1; d < IntegerUtils.max(q); ++d) {
+      for (int d = 1; d <= IntegerUtils.max(q); ++d) {
         if (isDivisor(q, d)) {
-          System.out.println("Accepted divisor " + d);
           final int mu = Mobius.mobius(d);
           if (mu != 0) {
             Z u = FACTORIAL.factorial(k / d);
@@ -59,7 +57,6 @@ public class ChjTransformSequence implements Sequence {
                 u = u.divide(FACTORIAL.factorial(q[i] / d));
               }
             }
-            //System.out.println(u + "/" + v);
             t2 = t2.signedAdd(mu == 1, u);
           }
         }
@@ -70,6 +67,7 @@ public class ChjTransformSequence implements Sequence {
           t2 = t2.divide(FACTORIAL.factorial(i).pow(q[i]));
         }
       }
+      assert t2.mod(k) == 0;
       sum = sum.add(t2.divide(k));
     }
     return sum;
@@ -85,7 +83,6 @@ public class ChjTransformSequence implements Sequence {
     for (int k = 1; k <= a.size(); ++k) {
       res.add(t(a, k));
     }
-    //System.out.println(res);
     return res;
   }
 

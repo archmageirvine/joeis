@@ -21,7 +21,6 @@ public class BhjTransformSequence implements Sequence {
   protected BhjTransformSequence(final Sequence seq) {
     // The mA sequence will be numbered from 0
     mA = MemorySequence.cachedSequence(seq);
-    mA.next();
   }
 
   private static Z t(final List<Z> a, final int n) {

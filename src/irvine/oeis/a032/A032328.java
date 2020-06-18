@@ -1,0 +1,16 @@
+package irvine.oeis.a032;
+
+import irvine.oeis.ChjTransformSequence;
+import irvine.oeis.PeriodicSequence;
+
+/**
+ * A032328 "CHJ" <code>(necklace</code>, identity, labeled) transform of 2,2,2,2...
+ * @author Sean A. Irvine
+ */
+public class A032328 extends ChjTransformSequence {
+
+  /** Construct the sequence. */
+  public A032328() {
+    super(new PeriodicSequence(2));
+  }
+}

@@ -21,7 +21,7 @@ export RES_MODULES=""
 export DOC_MODULES=""
 export JAVADOC_MODULES="src"
 # javadoc is just too slow on a project this large ...
-export DOCUMENTERS=""
+export DOCUMENTERS=" "
 export DOCUMENT_CHECKERS="classdocs spelldocs2008"
 export JAVAC_OPTS="-source 1.8 -Xlint -Xlint:-serial -proc:none"
 export COMPILERS="javacall"

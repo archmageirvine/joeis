@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032348.
+ * A032348 Coefficients of Jacobi function <code>c(3,m)</code>.
  * @author Sean A. Irvine
  */
 public class A032348 implements Sequence {

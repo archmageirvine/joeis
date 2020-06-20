@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032369.
+ * A032369 Hall normalization constants.
  * @author Sean A. Irvine
  */
 public class A032369 implements Sequence {

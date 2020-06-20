@@ -5,7 +5,7 @@ import irvine.oeis.a018.A018252;
 import irvine.util.string.StringUtils;
 
 /**
- * A032350.
+ * A032350 Palindromic nonprime numbers.
  * @author Sean A. Irvine
  */
 public class A032350 extends A018252 {

@@ -33,12 +33,9 @@ public class PowerFactorPrimeSequence implements Sequence {
     //mOffset = offset;
     mBase = base;
     mAdd = add;
-    mDiv = div == 0 ? 1 : div;
+    mDiv = div;
     mK = start - 1;
-    mA = Z.valueOf(num);
-    for (int k = 1; k <= start; ++k) {
-      mA = mA.multiply(mBase); // don't start with base^0, but with a higher power
-    }
+    mA = Z.valueOf(num).multiply(Z.valueOf(mBase).pow(start));
   }
 
   /**

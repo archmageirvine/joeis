@@ -12,6 +12,6 @@ public class A323148 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A323148() {
-    super(1, 6, 439, 2, +1, 0);
+    super(1, 6, 439, 2, +1);
   }
 }

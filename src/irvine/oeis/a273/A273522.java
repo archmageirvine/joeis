@@ -12,6 +12,6 @@ public class A273522 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A273522() {
-    super(0, 1, 12, 14, -1, 0);
+    super(0, 1, 12, 14, -1);
   }
 }

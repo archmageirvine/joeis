@@ -12,6 +12,6 @@ public class A050889 extends PowerFactorPrimeSequence {
 
   /** Construct the sequence. */
   public A050889() {
-    super(1, 1, 261, 2, -1, 0);
+    super(1, 1, 261, 2, -1);
   }
 }

@@ -1,9 +1,5 @@
 package irvine.oeis.a032;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -34,23 +30,16 @@ public class A032426 implements Sequence {
   // entries of that sequence.
 
   private Z mScale = null;
-  private long mM = 0;
-  private List<Q> mReciprocalFactorials = new ArrayList<>();
-  {
-    mReciprocalFactorials.add(Q.ONE);
-  }
 
   @Override
   public Z next() {
     mScale = mScale == null ? Z.ONE : mScale.multiply(10);
-    Q t = mReciprocalFactorials.get(mReciprocalFactorials.size() - 1);
-    while (t.multiply(mScale).toZ().signum() > 0) {
-      t = t.divide(++mM);
-      mReciprocalFactorials.add(t);
-    }
+    Z rf = mScale;
     Z sum = Z.ZERO;
-    for (final Q rf : mReciprocalFactorials) {
-      sum = sum.add(rf.multiply(mScale).toZ().mod(10));
+    long k = 0;
+    while (!Z.ZERO.equals(rf)) {
+      sum = sum.add(rf.mod(10));
+      rf = rf.divide(++k);
     }
     return sum;
   }

@@ -1292,3 +1292,4 @@ A032256 Number of dyslexic rooted compound windmills with n nodes with no symmet
 A032257 Number of dyslexic rooted compound windmills with n nodes and leaves of 2 colors with no symmetries, terms don't match definition?
 A032258 Shifts left 2 places under "DHK" (bracelet, identity, unlabeled) transform, terms don't match definition?
 A032259 Number of series-reduced dyslexic planted compound windmills with n leaves of 2 colors with no symmetries, terms don't match definition?
+A032355 Number of connected transitive trivalent (or cubic) graphs with 2n nodes

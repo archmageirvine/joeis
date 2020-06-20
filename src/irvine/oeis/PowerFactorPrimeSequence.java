@@ -33,7 +33,7 @@ public class PowerFactorPrimeSequence implements Sequence {
     //mOffset = offset;
     mBase = base;
     mAdd = add;
-    mDiv = div;
+    mDiv = div == 0 ? 1 : div;
     mK = start - 1;
     mA = Z.valueOf(num);
     for (int k = 1; k <= start; ++k) {
@@ -41,19 +41,26 @@ public class PowerFactorPrimeSequence implements Sequence {
     }
   }
 
+  /**
+   * Construct an instance which selects the appropriate indexes k.
+   * @param offset first valid term has this index
+   * @param start start with this k
+   * @param num factor
+   * @param base usually 2 or 10
+   * @param add additive term
+   * @param div optional divisor, or 0 for no divisor
+   */
+  protected PowerFactorPrimeSequence(final int offset, final int start, final int num, final int base, final int add) {
+    this(offset, start, num, base, add, 1);
+  }
+
   @Override
   public Z next() {
     boolean busy = true;
     while (busy) {
       ++mK;
-      if (mDiv != 0) {
-        if (mA.add(mAdd).divide(mDiv).isProbablePrime()) {
-          busy = false;
-        }
-      } else { // no mDiv
-        if (mA.add(mAdd).isProbablePrime()) {
-          busy = false;
-        }
+      if (mA.add(mAdd).divide(mDiv).isProbablePrime()) {
+        busy = false;
       }
       mA = mBase == 2 ? mA.multiply2() : mA.multiply(mBase);
     } // while

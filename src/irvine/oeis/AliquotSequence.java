@@ -7,9 +7,26 @@ import irvine.math.z.Z;
  * Generate an aliquot sequence.
  * @author Sean A. Irvine
  */
-public abstract class AbstractAliquotSequence implements Sequence {
+public abstract class AliquotSequence implements Sequence {
 
   private Z mA = null;
+  private final Z mStart;
+
+  /**
+   * Construct a new aliquot sequence.
+   * @param start starting value
+   */
+  public AliquotSequence(final Z start) {
+    mStart = start;
+  }
+
+  /**
+   * Construct a new aliquot sequence.
+   * @param start starting value
+   */
+  public AliquotSequence(final long start) {
+    this(Z.valueOf(start));
+  }
 
   private Z aliquot(final Z n) {
     if (Z.ONE.equals(n)) {
@@ -20,14 +37,12 @@ public abstract class AbstractAliquotSequence implements Sequence {
     return Jaguar.factor(n).sigma().subtract(n);
   }
 
-  protected abstract Z start();
-
   @Override
   public Z next() {
     if (Z.ZERO.equals(mA)) {
       return null;
     }
-    mA = mA == null ? start() : aliquot(mA);
+    mA = mA == null ? mStart : aliquot(mA);
     return mA;
   }
 }

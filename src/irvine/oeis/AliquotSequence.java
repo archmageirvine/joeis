@@ -7,7 +7,7 @@ import irvine.math.z.Z;
  * Generate an aliquot sequence.
  * @author Sean A. Irvine
  */
-public abstract class AliquotSequence implements Sequence {
+public class AliquotSequence implements Sequence {
 
   private Z mA = null;
   private final Z mStart;

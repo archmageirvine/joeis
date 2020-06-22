@@ -1,0 +1,35 @@
+package irvine.oeis.a032;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import irvine.factor.factor.Cheetah;
+import irvine.factor.util.FactorSequence;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A032452.
+ * @author Sean A. Irvine
+ */
+public class A032452 implements Sequence {
+
+  private final List<Z> mNextTerms = new ArrayList<>();
+  private long mN = 0;
+  private int mM = 0;
+
+  @Override
+  public Z next() {
+    if (++mM >= mNextTerms.size()) {
+      mNextTerms.clear();
+      mM = 0;
+      Z t = Z.valueOf(++mN);
+      do {
+        final FactorSequence fs = Cheetah.factor(t);
+        t = (mNextTerms.size() % 3) == 1 ? fs.sigma() : fs.phi();
+        mNextTerms.add(t);
+      } while (!Z.ONE.equals(t));
+    }
+    return mNextTerms.get(mM);
+  }
+}

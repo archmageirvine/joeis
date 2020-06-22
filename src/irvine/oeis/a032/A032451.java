@@ -10,7 +10,7 @@ import irvine.oeis.AliquotSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A032451.
+ * A032451 Irregular triangle read by rows: there is a row for each value of n for which the aliquot sequence starting at n eventually reaches 1, giving the part of the sequence from n to 1.
  * @author Sean A. Irvine
  */
 public class A032451 implements Sequence {

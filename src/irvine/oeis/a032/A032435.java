@@ -38,14 +38,13 @@ public class A032435 implements Sequence {
     return res;
   }
 
-
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
     }
-    System.out.println(Arrays.toString(josephus(mN, mM)));
+    System.out.println("J1: " + Arrays.toString(josephus(mN, mM)));
     return Z.valueOf(josephus(mN, mM)[mN - 2] + 1);
   }
 

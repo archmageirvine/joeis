@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A010094 extends MemoryFunction2<Integer, Z> implements Sequence {
 
-  private int mN = -1;
+  private int mN = 0;
   private int mM = 0;
 
   @Override

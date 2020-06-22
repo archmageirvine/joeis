@@ -12,12 +12,14 @@ import irvine.math.q.BernoulliSequence;
 public class A002432 implements Sequence {
 
   private final BernoulliSequence mB = new BernoulliSequence(1);
-  private int mN = 0;
+  private int mN = -1;
   private Z mF = Z.ONE;
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN == 0) {
+      return Z.TWO;
+    }
     mF = mF.multiply(2 * mN).multiply(2 * mN - 1);
     mB.nextQ();
     final Q b = mB.nextQ();

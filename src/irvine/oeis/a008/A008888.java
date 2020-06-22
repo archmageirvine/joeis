@@ -8,7 +8,7 @@ import irvine.oeis.AliquotSequence;
  */
 public class A008888 extends AliquotSequence {
 
-  /* Construct the sequence. */
+  /** Construct the sequence. */
   public A008888() {
     super(138);
   }

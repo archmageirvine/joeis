@@ -648,4 +648,36 @@ public final class ZUtils {
     }
     return sm.mod(product);
   }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static Z sortDigitsAscending(final Z n) {
+    final int[] counts = digitCounts(n);
+    Z res = Z.ZERO;
+    for (int k = 1; k < counts.length; ++k) {
+      for (int j = 0; j < counts[k]; ++j) {
+        res = res.multiply(10).add(k);
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static Z sortDigitsDescending(final Z n) {
+    final int[] counts = digitCounts(n);
+    Z res = Z.ZERO;
+    for (int k = 9; k >= 0; --k) {
+      for (int j = 0; j < counts[k]; ++j) {
+        res = res.multiply(10).add(k);
+      }
+    }
+    return res;
+  }
 }

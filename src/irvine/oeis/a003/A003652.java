@@ -9,6 +9,9 @@ import irvine.math.z.Z;
  */
 public class A003652 extends A003658 {
 
+  // WARNING: Do not use this to extend the sequence, the underlying implementation
+  // contains heuristics.
+
   {
     super.next(); // skip 1
   }

@@ -99,9 +99,8 @@ public final class QuadraticFieldUtils {
     return fundamentalUnit(discriminant).log();
   }
 
-  private static final int MAX_CLASSNO_TERMS = 500;
-  private static final int MIN_CLASSNO_TERMS = 5;
-  private static final CR CLASSNO_THRESHOLD = CR.valueOf(0.005);
+  private static final int DEFAULT_MAX_CLASSNO_TERMS = 500;
+  private static final int DEFAULT_MIN_CLASSNO_TERMS = 15;
 
   private static CR e1(final CR x) {
     return ComputableReals.SINGLETON.ei(x.negate()).negate();
@@ -119,26 +118,24 @@ public final class QuadraticFieldUtils {
   public static long classNumber(final Z discriminant) {
     // Proposition 5.6.11 from Cohen, "A Course in Computational Algebraic Number Theory"
     CR sum = CR.ZERO;
+    final int maxTerms = Math.max(DEFAULT_MAX_CLASSNO_TERMS, discriminant.intValueExact()); // Heuristic
+    final int minTerms = Math.max(DEFAULT_MIN_CLASSNO_TERMS, (int) discriminant.log(2)); // Heuristic
+    final CR threshold = CR.valueOf(discriminant).inverse(); // Heuristic
     final long dl = discriminant.longValueExact();
     final CR crd = CR.valueOf(discriminant);
     final CR scrd = crd.sqrt();
     final CR t = CR.SQRT_PI.divide(scrd);
-    for (int k = 1; k < MAX_CLASSNO_TERMS; ++k) {
+    for (int k = 1; k < maxTerms; ++k) {
       final CR erfc = t.multiply(k).erfc();
       final CR a = scrd.multiply(erfc).divide(CR.valueOf(k));
       final CR b = e1(CR.PI.multiply(CR.valueOf(k * (long) k)).divide(crd));
       final CR c = a.add(b);
-      final long kron = LongUtils.kronecker(dl, k);
-      if (kron == 1) {
-        sum = sum.add(c);
-      } else if (kron == -1) {
-        sum = sum.subtract(c);
-      }
+      sum = sum.add(c.multiply(LongUtils.kronecker(dl, k)));
       final CR cn = sum.divide(regulator(discriminant)).divide(CR.TWO);
-      if (k >= MIN_CLASSNO_TERMS && cn.subtract(CR.valueOf(cn.floor())).compareTo(CLASSNO_THRESHOLD) < 0) {
+      if (k >= minTerms && cn.subtract(CR.valueOf(cn.floor())).compareTo(threshold) < 0) {
         return cn.round().longValueExact();
       }
     }
-    throw new UnsupportedOperationException("Failed to find class number after " + MAX_CLASSNO_TERMS + " iterations");
+    throw new UnsupportedOperationException("Failed to find class number after " + DEFAULT_MAX_CLASSNO_TERMS + " iterations");
   }
 }

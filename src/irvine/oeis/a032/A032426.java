@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032426 <code>Sum(a(n)/10^n,n=0..infinity)=exp(1)</code>, from a vertical algorithm for e in base 10.
+ * A032426 <code>Sum_{n&gt;=0} a(n)/10^n = exp(1)</code>.
  * @author Sean A. Irvine
  */
 public class A032426 implements Sequence {

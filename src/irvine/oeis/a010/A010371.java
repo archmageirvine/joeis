@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010371 Number of segments needed to represent n on calculator display (second version).
+ * A010371 Number of segments used to represent n on a 7-segment calculator display; version where <code>'6', '7'</code> and <code>'9'</code> use <code>6, 4</code> and 6 segments, respectively.
  * @author Sean A. Irvine
  */
 public class A010371 implements Sequence {

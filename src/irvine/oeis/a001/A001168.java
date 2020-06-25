@@ -10,11 +10,14 @@ import jmason.poly.PolyominoCounter;
  */
 public class A001168 implements Sequence {
 
-  private int mMax = 0;
+  private int mMax = -1;
 
   @Override
   public Z next() {
-    final PolyominoCounter pc = new PolyominoCounter(++mMax, false, false, false);
+    if (++mMax == 0) {
+      return Z.ONE;
+    }
+    final PolyominoCounter pc = new PolyominoCounter(mMax, false, false, false);
     pc.run(true, true, false);
     return Z.valueOf(pc.getCu().getCounter(mMax));
   }

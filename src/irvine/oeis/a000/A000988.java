@@ -1,11 +1,10 @@
 package irvine.oeis.a000;
 
-import irvine.math.z.Z;
-import irvine.math.Polyomino;
-import irvine.oeis.Sequence;
-
 import java.util.HashSet;
 
+import irvine.math.Polyomino;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
@@ -14,10 +13,14 @@ import irvine.util.Point;
  */
 public class A000988 implements Sequence {
 
-  protected HashSet<Polyomino> mA = new HashSet<>();
+  protected HashSet<Polyomino> mA = null;
 
   @Override
   public Z next() {
+    if (mA == null) {
+      mA = new HashSet<>();
+      return Z.ONE;
+    }
     if (mA.isEmpty()) {
       final Polyomino p = new Polyomino();
       p.add(new Point(0, 0));

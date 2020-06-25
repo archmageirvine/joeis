@@ -12,11 +12,11 @@ import irvine.oeis.Sequence;
  * @author Georg Fischer
  */
 public class A032637 implements Sequence {
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
+
   private long mN = -1;
 
   @Override
   public Z next() {
-    return REALS.pow(CR.PI, CR.valueOf(++mN)).divide(CR.E).floor();
+    return ComputableReals.SINGLETON.pow(CR.PI, CR.valueOf(++mN)).divide(CR.E).floor();
   }
 }

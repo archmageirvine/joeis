@@ -8,9 +8,9 @@ import irvine.math.z.Z;
  */
 public class RecordPositionSequence implements Sequence {
 
-  private final Sequence mSeq;
-  private Z mMax = Z.NEG_ONE;
-  private long mN;
+  protected final Sequence mSeq;
+  protected Z mMax = Z.NEG_ONE;
+  protected long mN;
 
   /**
    * Creates a record position sequence of another sequence.

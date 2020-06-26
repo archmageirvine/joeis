@@ -573,6 +573,7 @@ A006557 Minimal discriminant of number field of degree n
 A006560 Smallest starting prime for n consecutive primes in arithmetic progression, hard
 A006574 Number of domino n-tuples, insufficient detail
 A006602 Number of hierarchical models with linear terms forced, dep. on A003182
+A006607 I think the OEIS entry is incorrect
 A006627 Number of nonisomorphic 2-graphs with n nodes with first and second cohomology invariants both 0, have paper two-graphs.pdf
 A006638 Restricted postage stamp problem with n denominations and 2 stamps, have paper, and A001212
 A006639 Restricted postage stamp problem
@@ -1295,3 +1296,5 @@ A032259 Number of series-reduced dyslexic planted compound windmills with n leav
 A032355 Number of connected transitive trivalent (or cubic) graphs with 2n nodes
 A032435 Triangle of second-to-last man to survive in Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
 A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
+A032800 If there were a 9-dimensional unimodular lattice with minimal norm 2, this would be its theta series; however, no such lattice exists
+A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal norm 2 in dimension 16

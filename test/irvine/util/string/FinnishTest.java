@@ -33,7 +33,12 @@ public class FinnishTest extends TestCase {
     assertEquals("kaksikymment\u00E4yksi", Finnish.SINGLETON.toText(21));
     assertEquals("kolmekymment\u00E4", Finnish.SINGLETON.toText(30));
     assertEquals("sata", Finnish.SINGLETON.toText(100));
+    assertEquals("satayksi", Finnish.SINGLETON.toText(101));
+    assertEquals("satakaksi", Finnish.SINGLETON.toText(102));
+    assertEquals("kaksisataa", Finnish.SINGLETON.toText(200));
     assertEquals("tuhat", Finnish.SINGLETON.toText(1000));
     assertEquals("kolmetuhattaseitsem\u00E4nsataakaksikymment\u00E4yksi", Finnish.SINGLETON.toText(3721));
+    assertEquals("kymmenentuhatta", Finnish.SINGLETON.toText(10000));
+    assertEquals("kaksitoistatuhattakolmesataanelj\u00e4kymment\u00e4viisi", Finnish.SINGLETON.toText(12345));
   }
 }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005408;
 
 /**
- * A032764.
+ * A032764 Take list of odd numbers, move left digit of each term to end of previous term.
  * @author Sean A. Irvine
  */
 public class A032764 extends A005408 {

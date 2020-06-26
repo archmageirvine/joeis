@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000578;
 
 /**
- * A032761.
+ * A032761 Take list of cubes, move left digit of each term to end of previous term.
  * @author Sean A. Irvine
  */
 public class A032761 extends A000578 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A032762.
+ * A032762 Take list of integers <code>n &gt;= 0</code>, move left digit of each term to end of previous term.
  * @author Sean A. Irvine
  */
 public class A032762 extends A001477 {

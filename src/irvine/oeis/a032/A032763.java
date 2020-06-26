@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005843;
 
 /**
- * A032763.
+ * A032763 Take list of even numbers, move left digit of each term to end of previous term.
  * @author Sean A. Irvine
  */
 public class A032763 extends A005843 {

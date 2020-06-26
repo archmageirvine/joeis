@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032764.
+ * A032767 <code>a(n) =</code> floor <code>( n(n+1)(n+2)(n+3) / (n+(n+1)+(n+2)+(n+3)) )</code>.
  * @author Sean A. Irvine
  */
 public class A032767 implements Sequence {

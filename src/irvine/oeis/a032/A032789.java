@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A032789.
+ * A032789 Numbers n such that <code>(n*(n+1)*(n+2)) / (n+(n+1)+(n+2))</code> is a palindrome.
  * @author Sean A. Irvine
  */
 public class A032789 implements Sequence {

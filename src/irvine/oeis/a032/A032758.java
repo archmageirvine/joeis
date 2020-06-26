@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032758.
+ * A032758 Undulating primes (digits alternate).
  * @author Sean A. Irvine
  */
 public class A032758 implements Sequence {

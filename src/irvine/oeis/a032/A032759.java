@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A032759.
+ * A032759 Take list of primes, move left digit of each term to end of previous term.
  * @author Sean A. Irvine
  */
 public class A032759 extends A000040 {

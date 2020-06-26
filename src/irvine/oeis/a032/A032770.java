@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032770.
+ * A032770 Integer quotients of <code>n(n + 1)(n + 2)(n + 3)(n + 4) / (n+(n+1)+(n+2)+(n+3)+(n+4))</code>.
  * @author Sean A. Irvine
  */
 public class A032770 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032779.
+ * A032779 Integer quotients <code>n(n+1)(n+2)...(n+7) / (n+(n+1)+(n+2)+...+(n+7))</code>.
  * @author Sean A. Irvine
  */
 public class A032779 extends FiniteSequence {

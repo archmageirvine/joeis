@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032785.
+ * A032785 Numbers k such that <code>k*(k+1)*(k+2) ... (k+13) / (k+(k+1)+(k+2)+ ... +(k+13))</code> is an integer.
  * @author Sean A. Irvine
  */
 public class A032785 implements Sequence {

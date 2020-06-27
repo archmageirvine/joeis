@@ -50,10 +50,8 @@ public class A170896 implements Sequence {
             for (int j = 0; j < DELTA.length; ++j) {
               final int sx = nx + DELTA[j];
               final int sy = ny + DELTA[DELTA.length - 1 - j];
-              if (mOn.contains(new Pair<>(sx, sy))) {
-                if (++c > 1) {
-                  break;
-                }
+              if (mOn.contains(new Pair<>(sx, sy)) && ++c > 1) {
+                break;
               }
             }
             assert c > 0;

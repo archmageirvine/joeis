@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A046939 "Magic numbers" for the number of neutrons in nucleus.
  * @author Georg Fischer
  */
-
 public class A046939 extends NoncomputableSequence {
 
   /** Construct the sequence. */

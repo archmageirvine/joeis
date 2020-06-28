@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A218969 Number of atomic species corresponding to conjugacy classes of subgroups of the symmetric group which are not subgroups of the alternating group.
  * @author Georg Fischer
  */
-
 public class A218969 extends NoncomputableSequence {
 
   /** Construct the sequence. */

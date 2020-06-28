@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081098 Atomic numbers of the chemical elements sorted with respect to melting point.
  * @author Georg Fischer
  */
-
 public class A081098 extends NoncomputableSequence {
 
   /** Construct the sequence. */

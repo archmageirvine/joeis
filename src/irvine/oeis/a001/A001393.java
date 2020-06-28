@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A001393 High temperature series for <code>spin-1/2</code> Ising free energy on 3-dimensional simple cubic lattice.
  * @author Georg Fischer
  */
-
 public class A001393 extends NoncomputableSequence {
 
   /** Construct the sequence. */

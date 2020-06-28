@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A249874 Atomic numbers of the chemical elements sorted by date of discovery.
  * @author Georg Fischer
  */
-
 public class A249874 extends NoncomputableSequence {
 
   /** Construct the sequence. */

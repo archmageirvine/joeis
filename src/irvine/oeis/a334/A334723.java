@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A334723 Denominators of fractions in Kilminster's FracTran program for prime numbers, 10-fraction version.
  * @author Georg Fischer
  */
-
 public class A334723 extends FiniteSequence {
 
   /** Construct the sequence. */

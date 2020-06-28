@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A060529 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the ratios of three complementary pairs of simple musical tones: 7/6 and <code>12/7, 6/5</code> and 5/3 and 7/5 and 10/7.
  * @author Georg Fischer
  */
-
 public class A060529 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080540 Number of neutrons in longest known radioactive decay series ending with Lead 209, reversed.
  * @author Georg Fischer
  */
-
 public class A080540 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A168208 Irregular table of the number of electrons of the n-th element of the PSE in atomic shells, read by rows.
  * @author Georg Fischer
  */
-
 public class A168208 extends NoncomputableSequence {
 
   /** Construct the sequence. */

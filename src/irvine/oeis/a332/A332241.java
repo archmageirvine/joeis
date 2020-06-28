@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332241 Indices of <code>A224078(n)</code> in <code>A025487</code>.
  * @author Georg Fischer
  */
-
 public class A332241 extends FiniteSequence {
 
   /** Construct the sequence. */

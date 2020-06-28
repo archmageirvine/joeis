@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A270391 "Story primes" (see comments).
  * @author Georg Fischer
  */
-
 public class A270391 extends FiniteSequence {
 
   /** Construct the sequence. */

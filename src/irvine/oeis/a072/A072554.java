@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A072554 <code>E24</code> range of preferred resistor values in electronic engineering.
  * @author Georg Fischer
  */
-
 public class A072554 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A090232 Year in which n-th President of U.S.A. assumed office.
  * @author Georg Fischer
  */
-
 public class A090232 extends NoncomputableSequence {
 
   /** Construct the sequence. */

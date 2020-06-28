@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A135559 Atomic numbers in the 32-column Mendeleyev periodic table, beginning with the first term in each column and read down columns. If the number is <code>&gt; 118</code> then skip to the next column.
  * @author Georg Fischer
  */
-
 public class A135559 extends NoncomputableSequence {
 
   /** Construct the sequence. */

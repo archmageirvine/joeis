@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A115035 Natural numbers which when multiplied by 10 do not yield valid duplicate bridge scores.
  * @author Georg Fischer
  */
-
 public class A115035 extends NoncomputableSequence {
 
   /** Construct the sequence. */

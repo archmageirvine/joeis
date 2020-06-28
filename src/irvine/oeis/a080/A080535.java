@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080535 Number of protons in longest known radioactive decay series ending with Lead <code>208 ("thorium series")</code>, reversed.
  * @author Georg Fischer
  */
-
 public class A080535 extends NoncomputableSequence {
 
   /** Construct the sequence. */

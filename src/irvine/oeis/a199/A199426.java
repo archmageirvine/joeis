@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A199426 Janet helicoidal classification of the periodic table.
  * @author Georg Fischer
  */
-
 public class A199426 extends NoncomputableSequence {
 
   /** Construct the sequence. */

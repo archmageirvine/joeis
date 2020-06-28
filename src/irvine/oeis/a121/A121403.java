@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A121403 Decimal expansion of the area of home plate (USA major league baseball) in square inches.
  * @author Georg Fischer
  */
-
 public class A121403 extends NoncomputableSequence {
 
   /** Construct the sequence. */

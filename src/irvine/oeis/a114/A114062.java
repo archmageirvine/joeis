@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A114062 United States Postal Rates (in cents) for the first ounce, starting in 1863.
  * @author Georg Fischer
  */
-
 public class A114062 extends NoncomputableSequence {
 
   /** Construct the sequence. */

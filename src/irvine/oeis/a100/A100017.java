@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A100017 Atomic radii of noble gases in picometers.
  * @author Georg Fischer
  */
-
 public class A100017 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A225359 Decimal expansion of suggested value for <code>N_eff</code>: the effective number of neutrino species present in the era before recombination.
  * @author Georg Fischer
  */
-
 public class A225359 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A335015 Smallest side lengths of equable Heronian triangles (with multiplicity).
  * @author Georg Fischer
  */
-
 public class A335015 extends FiniteSequence {
 
   /** Construct the sequence. */

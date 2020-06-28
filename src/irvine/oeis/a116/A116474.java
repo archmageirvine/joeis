@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A116474 Equal divisions of the octave with progressively increasing consistency levels.
  * @author Georg Fischer
  */
-
 public class A116474 extends NoncomputableSequence {
 
   /** Construct the sequence. */

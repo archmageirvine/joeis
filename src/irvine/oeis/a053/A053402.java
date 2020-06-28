@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A053402 Running distances (in meters) in Olympic athletics.
  * @author Georg Fischer
  */
-
 public class A053402 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A071761 Dealing cards in a game of solitaire.
  * @author Georg Fischer
  */
-
 public class A071761 extends NoncomputableSequence {
 
   /** Construct the sequence. */

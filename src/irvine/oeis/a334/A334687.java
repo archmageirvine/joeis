@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A334687 Dates of birth of Kings Felipe (Philip) I, II, ... of Spain.
  * @author Georg Fischer
  */
-
 public class A334687 extends NoncomputableSequence {
 
   /** Construct the sequence. */

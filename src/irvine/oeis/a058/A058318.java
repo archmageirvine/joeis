@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A058318 Number of energy levels in atoms of n-th element of periodic table.
  * @author Georg Fischer
  */
-
 public class A058318 extends NoncomputableSequence {
 
   /** Construct the sequence. */

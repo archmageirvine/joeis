@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A104101 The Lost Numbers.
  * @author Georg Fischer
  */
-
 public class A104101 extends NoncomputableSequence {
 
   /** Construct the sequence. */

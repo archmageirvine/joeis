@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254291 Decimal expansion of muon mass in kg.
  * @author Georg Fischer
  */
-
 public class A254291 extends NoncomputableSequence {
 
   /** Construct the sequence. */

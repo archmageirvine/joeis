@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A109869 Day numbers in Chris Cagle's song "What a beautiful day".
  * @author Georg Fischer
  */
-
 public class A109869 extends NoncomputableSequence {
 
   /** Construct the sequence. */

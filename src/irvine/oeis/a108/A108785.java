@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A108785 Location of the restriction sites for the enzyme BsuRI in <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
-
 public class A108785 extends NoncomputableSequence {
 
   /** Construct the sequence. */

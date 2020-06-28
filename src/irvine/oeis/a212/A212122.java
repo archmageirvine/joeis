@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A212122 Triangle read by rows in which row n lists the number of states of the subshells of the n-th shell of the nuclear shell model ordered by energy level in increasing order.
  * @author Georg Fischer
  */
-
 public class A212122 extends NoncomputableSequence {
 
   /** Construct the sequence. */

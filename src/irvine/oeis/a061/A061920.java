@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A061920 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the 7 pairs of complementary target ratios needed to express the 12 unsymmetrical steps of the untempered (Just Intonation) scale known as the Duodene: 3/2 and <code>4/3, 5/4</code> and <code>8/5, 6/5</code> and <code>5/3, 9/8</code> and <code>16/9, 10/9</code> and <code>9/5, 16/15</code> and 15/8 and 45/32 and 64/45.
  * @author Georg Fischer
  */
-
 public class A061920 extends NoncomputableSequence {
 
   /** Construct the sequence. */

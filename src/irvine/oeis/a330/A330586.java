@@ -10,7 +10,6 @@ import irvine.oeis.FiniteSequence;
  * A330586 The intersection of <code>A330584</code> and <code>A330585</code>.
  * @author Georg Fischer
  */
-
 public class A330586 extends FiniteSequence {
 
   /** Construct the sequence. */

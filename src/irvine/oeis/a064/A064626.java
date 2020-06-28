@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A064626 Football tournament numbers: the number of possible point series for a tournament of n teams playing each other once where 3 points are awarded to the winning team and 1 to each in the case of a tie.
  * @author Georg Fischer
  */
-
 public class A064626 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A219242 Distribution of letters in the name of all months of the year (English).
  * @author Georg Fischer
  */
-
 public class A219242 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A033546 Uniform numbers retired by New York Yankees (in chronological order).
  * @author Georg Fischer
  */
-
 public class A033546 extends NoncomputableSequence {
 
   /** Construct the sequence. */

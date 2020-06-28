@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A243240 Densities of noble gases in liquid phase in grams per cubic decimeter.
  * @author Georg Fischer
  */
-
 public class A243240 extends NoncomputableSequence {
 
   /** Construct the sequence. */

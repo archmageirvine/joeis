@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A005227 Number of atomic species of degree n which are not nontrivial substitutions.
  * @author Georg Fischer
  */
-
 public class A005227 extends NoncomputableSequence {
 
   /** Construct the sequence. */

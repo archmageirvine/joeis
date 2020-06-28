@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A008745 Year of birth of n-th President of U.S.A.
  * @author Georg Fischer
  */
-
 public class A008745 extends NoncomputableSequence {
 
   /** Construct the sequence. */

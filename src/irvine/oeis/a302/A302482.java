@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A302482 Elementary automaton rules that include every possible substring of length 3 in an output.
  * @author Georg Fischer
  */
-
 public class A302482 extends FiniteSequence {
 
   /** Construct the sequence. */

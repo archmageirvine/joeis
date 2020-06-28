@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A327958 Decimal expansion of neutron magnetic moment to nuclear magneton ratio, negated.
  * @author Georg Fischer
  */
-
 public class A327958 extends NoncomputableSequence {
 
   /** Construct the sequence. */

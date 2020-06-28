@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A152789 Football tournament numbers with distinct point totals: number of point series in <code>A064626</code> in which no two teams have the same total number of points.
  * @author Georg Fischer
  */
-
 public class A152789 extends NoncomputableSequence {
 
   /** Construct the sequence. */

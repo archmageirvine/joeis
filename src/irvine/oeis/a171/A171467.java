@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A171467 Years in which a transit of Venus (as seen from Earth) took place or is expected to occur, according to the catalog by Fred Espenak.
  * @author Georg Fischer
  */
-
 public class A171467 extends NoncomputableSequence {
 
   /** Construct the sequence. */

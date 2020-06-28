@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248569 Decimal expansion of <code>Sun-to-Earth</code> mass ratio.
  * @author Georg Fischer
  */
-
 public class A248569 extends NoncomputableSequence {
 
   /** Construct the sequence. */

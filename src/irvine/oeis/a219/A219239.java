@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A219239 Double magic numbers (in physics).
  * @author Georg Fischer
  */
-
 public class A219239 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254246 Decimal expansion of atomic unit of electric dipole moment in C m.
  * @author Georg Fischer
  */
-
 public class A254246 extends NoncomputableSequence {
 
   /** Construct the sequence. */

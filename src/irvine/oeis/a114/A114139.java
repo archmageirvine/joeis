@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A114139 Changes in United States postal rates per ounce since 1863.
  * @author Georg Fischer
  */
-
 public class A114139 extends NoncomputableSequence {
 
   /** Construct the sequence. */

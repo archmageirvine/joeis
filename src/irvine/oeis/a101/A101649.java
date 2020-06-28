@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A101649 Atomic numbers of the poor metals on the periodic table.
  * @author Georg Fischer
  */
-
 public class A101649 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254154 Decimal expansion of alpha particle mass equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254154 extends NoncomputableSequence {
 
   /** Construct the sequence. */

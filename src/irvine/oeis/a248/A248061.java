@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248061 Element numbers of the chemical elements sorted with respect to density.
  * @author Georg Fischer
  */
-
 public class A248061 extends NoncomputableSequence {
 
   /** Construct the sequence. */

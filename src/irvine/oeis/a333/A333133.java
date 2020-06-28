@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A333133 7-Kaprekar numbers.
  * @author Georg Fischer
  */
-
 public class A333133 extends FiniteSequence {
 
   /** Construct the sequence. */

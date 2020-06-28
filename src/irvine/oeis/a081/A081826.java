@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081826 Tau-electron mass ratio.
  * @author Georg Fischer
  */
-
 public class A081826 extends NoncomputableSequence {
 
   /** Construct the sequence. */

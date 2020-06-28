@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A078302 Decimal expansion of Planck time (in seconds).
  * @author Georg Fischer
  */
-
 public class A078302 extends NoncomputableSequence {
 
   /** Construct the sequence. */

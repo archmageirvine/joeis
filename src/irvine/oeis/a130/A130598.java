@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A130598 A shell geometric model of the nucleus. The location of the magic numbers. A triangle.
  * @author Georg Fischer
  */
-
 public class A130598 extends NoncomputableSequence {
 
   /** Construct the sequence. */

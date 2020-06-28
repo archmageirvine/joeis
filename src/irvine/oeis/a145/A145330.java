@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A145330 Melody from the main theme for Star Wars, as played on a touch-tone phone pad.
  * @author Georg Fischer
  */
-
 public class A145330 extends NoncomputableSequence {
 
   /** Construct the sequence. */

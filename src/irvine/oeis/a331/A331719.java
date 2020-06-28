@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A331719 Number of nonequivalent 5-column binary matrices with n ones in every column and any number of distinct nonzero rows up to permutation of rows and columns.
  * @author Georg Fischer
  */
-
 public class A331719 extends FiniteSequence {
 
   /** Construct the sequence. */

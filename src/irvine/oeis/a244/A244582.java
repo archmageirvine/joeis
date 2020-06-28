@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A244582 First 88 elements listed by melting point from lowest to highest.
  * @author Georg Fischer
  */
-
 public class A244582 extends NoncomputableSequence {
 
   /** Construct the sequence. */

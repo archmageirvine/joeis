@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332879 Areas of integer-sided triangles whose area equals 6 times their perimeter.
  * @author Georg Fischer
  */
-
 public class A332879 extends FiniteSequence {
 
   /** Construct the sequence. */

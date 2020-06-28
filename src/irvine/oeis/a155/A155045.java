@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A155045 Primes with distinct odd digits.
  * @author Georg Fischer
  */
-
 public class A155045 extends FiniteSequence {
 
   /** Construct the sequence. */

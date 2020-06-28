@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A137846 Successive structures last number of elements periodic table (Seaborg extended to <code>32 columns,118</code> terms or <code>Janet,120)</code>. First 87 terms.
  * @author Georg Fischer
  */
-
 public class A137846 extends NoncomputableSequence {
 
   /** Construct the sequence. */

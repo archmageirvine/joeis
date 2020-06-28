@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081803 Decimal expansion of Compton electron radius in meters.
  * @author Georg Fischer
  */
-
 public class A081803 extends NoncomputableSequence {
 
   /** Construct the sequence. */

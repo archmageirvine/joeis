@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A090245 Maximum numbers of cards that would have no SET in an n-attribute version of the SET card game.
  * @author Georg Fischer
  */
-
 public class A090245 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A068581 Let <code>phi_m(x) = phi(phi(...(phi(x))...))</code> m times; sequence gives values of k such that <code>phi_4(k) = tau(k)</code>.
  * @author Georg Fischer
  */
-
 public class A068581 extends FiniteSequence {
 
   /** Construct the sequence. */

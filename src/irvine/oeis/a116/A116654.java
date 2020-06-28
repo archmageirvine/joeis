@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A116654 Number of atomic species based on even permutation groups that are not substitutions of smaller species.
  * @author Georg Fischer
  */
-
 public class A116654 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -10,7 +10,6 @@ import irvine.oeis.FiniteSequence;
  * A082241 <code>a(n) = A082240(n)/n</code>.
  * @author Georg Fischer
  */
-
 public class A082241 extends FiniteSequence {
 
   /** Construct the sequence. */

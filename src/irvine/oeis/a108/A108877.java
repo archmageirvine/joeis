@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A108877 Location of restriction sites for the enzyme PfeI in <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
-
 public class A108877 extends NoncomputableSequence {
 
   /** Construct the sequence. */

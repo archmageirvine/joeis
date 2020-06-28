@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A239890 Number of terms in consolidated series for normal reflectance of a three-layer thin film system of path length <code>n</code>.
  * @author Georg Fischer
  */
-
 public class A239890 extends NoncomputableSequence {
 
   /** Construct the sequence. */

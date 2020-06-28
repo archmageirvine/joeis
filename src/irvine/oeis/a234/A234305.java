@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A234305 Irregular triangle read by rows. Theoretical distribution of electrons based on the Janet's sequence <code>A167268</code>.
  * @author Georg Fischer
  */
-
 public class A234305 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A072954 Numbers n without letters a, i, l or t.
  * @author Georg Fischer
  */
-
 public class A072954 extends FiniteSequence {
 
   /** Construct the sequence. */

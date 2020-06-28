@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A131071 12-note scale in Hertz (without decimals).
  * @author Georg Fischer
  */
-
 public class A131071 extends NoncomputableSequence {
 
   /** Construct the sequence. */

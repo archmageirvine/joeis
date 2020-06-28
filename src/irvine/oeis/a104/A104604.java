@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A104604 From a mathematical riddle that I could not solve.
  * @author Georg Fischer
  */
-
 public class A104604 extends NoncomputableSequence {
 
   /** Construct the sequence. */

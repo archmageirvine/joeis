@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254293 Decimal expansion of triton mass in kg.
  * @author Georg Fischer
  */
-
 public class A254293 extends NoncomputableSequence {
 
   /** Construct the sequence. */

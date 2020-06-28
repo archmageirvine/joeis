@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A319904 Calculated atomic radii (in picometers) of the chemical elements.
  * @author Georg Fischer
  */
-
 public class A319904 extends NoncomputableSequence {
 
   /** Construct the sequence. */

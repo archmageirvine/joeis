@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A291810 Diatonic harmonica standard Richter tone layout.
  * @author Georg Fischer
  */
-
 public class A291810 extends NoncomputableSequence {
 
   /** Construct the sequence. */

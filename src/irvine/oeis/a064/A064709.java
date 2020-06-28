@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A064709 Initial term of run of (exactly) n consecutive numbers with just 2 distinct prime factors.
  * @author Georg Fischer
  */
-
 public class A064709 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A199715 A puzzle - explanation is not known.
  * @author Georg Fischer
  */
-
 public class A199715 extends NoncomputableSequence {
 
   /** Construct the sequence. */

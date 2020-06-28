@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254179 Decimal expansion of atomic unit of time in s.
  * @author Georg Fischer
  */
-
 public class A254179 extends NoncomputableSequence {
 
   /** Construct the sequence. */

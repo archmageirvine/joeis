@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A173788 Nuclear charge numbers in Eric Scerri's periodic table of the elements read down columns.
  * @author Georg Fischer
  */
-
 public class A173788 extends NoncomputableSequence {
 
   /** Construct the sequence. */

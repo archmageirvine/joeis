@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A182240 Number of inequivalent ways to select n cards in the game of SET.
  * @author Georg Fischer
  */
-
 public class A182240 extends NoncomputableSequence {
 
   /** Construct the sequence. */

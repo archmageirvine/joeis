@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A278658 Value of Margot's planetary discriminant <code>Pi</code> for n-th planet from the Sun.
  * @author Georg Fischer
  */
-
 public class A278658 extends NoncomputableSequence {
 
   /** Construct the sequence. */

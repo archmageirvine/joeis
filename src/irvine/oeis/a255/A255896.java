@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A255896 Decimal expansion of Planck energy in Joules.
  * @author Georg Fischer
  */
-
 public class A255896 extends NoncomputableSequence {
 
   /** Construct the sequence. */

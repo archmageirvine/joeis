@@ -10,7 +10,6 @@ import irvine.oeis.NoncomputableSequence;
  * A261400 Number of <code>n X n</code> knot mosaics.
  * @author Georg Fischer
  */
-
 public class A261400 extends NoncomputableSequence {
 
   /** Construct the sequence. */

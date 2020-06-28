@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A033177 Number of distinct distances between n electrons in minimal energy configuration on a sphere.
  * @author Georg Fischer
  */
-
 public class A033177 extends NoncomputableSequence {
 
   /** Construct the sequence. */

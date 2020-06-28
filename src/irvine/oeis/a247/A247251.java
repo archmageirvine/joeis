@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A247251 Atomic radii of the elements, arranged from smallest to largest, rounded to the nearest picometer (pm).
  * @author Georg Fischer
  */
-
 public class A247251 extends NoncomputableSequence {
 
   /** Construct the sequence. */

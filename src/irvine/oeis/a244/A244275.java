@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A244275 Year of state admission into the United States sorted by years.
  * @author Georg Fischer
  */
-
 public class A244275 extends NoncomputableSequence {
 
   /** Construct the sequence. */

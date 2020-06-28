@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A335013 Middle side lengths of equable Heronian triangles.
  * @author Georg Fischer
  */
-
 public class A335013 extends FiniteSequence {
 
   /** Construct the sequence. */

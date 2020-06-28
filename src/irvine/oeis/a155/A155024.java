@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A155024 Primes with distinct nonprime digits.
  * @author Georg Fischer
  */
-
 public class A155024 extends FiniteSequence {
 
   /** Construct the sequence. */

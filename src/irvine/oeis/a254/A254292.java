@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254292 Decimal expansion of muon mass energy equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254292 extends NoncomputableSequence {
 
   /** Construct the sequence. */

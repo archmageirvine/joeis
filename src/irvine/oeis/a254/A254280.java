@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254280 Decimal expansion of deuteron mass energy equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254280 extends NoncomputableSequence {
 
   /** Construct the sequence. */

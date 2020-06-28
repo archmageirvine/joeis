@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A130788 Solar planets' average orbit velocity (inverse ratio relative to one of Mercury), multiplied by 3 and rounded to the nearest integer.
  * @author Georg Fischer
  */
-
 public class A130788 extends NoncomputableSequence {
 
   /** Construct the sequence. */

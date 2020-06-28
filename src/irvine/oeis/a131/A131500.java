@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A131500 Radii of orbits of planets in solar system, in units of radius of orbit of Mercury, multiplied by 4.
  * @author Georg Fischer
  */
-
 public class A131500 extends NoncomputableSequence {
 
   /** Construct the sequence. */

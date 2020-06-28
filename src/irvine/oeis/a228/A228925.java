@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A228925 Stern's triatomic sequence.
  * @author Georg Fischer
  */
-
 public class A228925 extends NoncomputableSequence {
 
   /** Construct the sequence. */

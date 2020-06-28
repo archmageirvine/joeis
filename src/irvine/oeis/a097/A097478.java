@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A097478 Atomic numbers of halogens in the periodic table.
  * @author Georg Fischer
  */
-
 public class A097478 extends NoncomputableSequence {
 
   /** Construct the sequence. */

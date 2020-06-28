@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080915 Number of electrons in outermost electron shell (valence electrons) in chemical element number <code>n</code>.
  * @author Georg Fischer
  */
-
 public class A080915 extends NoncomputableSequence {
 
   /** Construct the sequence. */

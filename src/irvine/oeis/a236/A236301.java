@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A236301 <code>Al-Antaakii's 15 X 15</code> magic square read by rows.
  * @author Georg Fischer
  */
-
 public class A236301 extends FiniteSequence {
 
   /** Construct the sequence. */

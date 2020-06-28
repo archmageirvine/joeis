@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A330008 Squares visited by a knight moving on a square-spiral numbered board where the knight moves to an unvisited square with the lowest prime spiral number, or lowest composite number if no primes are available.
  * @author Georg Fischer
  */
-
 public class A330008 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A255823 Decimal expansion of the classical Thomson cross section of an electron in square meters.
  * @author Georg Fischer
  */
-
 public class A255823 extends NoncomputableSequence {
 
   /** Construct the sequence. */

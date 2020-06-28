@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081800 Decimal expansion of atomic unit of velocity in SI units <code>(meters/second)</code>.
  * @author Georg Fischer
  */
-
 public class A081800 extends NoncomputableSequence {
 
   /** Construct the sequence. */

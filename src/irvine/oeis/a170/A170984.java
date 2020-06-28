@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A170984 Expansion of <code>Prod((1+x^(4*i-1)),i=1..m-1)*(1+x^(2*m-1))</code> for m <code>= 12</code>.
  * @author Georg Fischer
  */
-
 public class A170984 extends FiniteSequence {
 
   /** Construct the sequence. */

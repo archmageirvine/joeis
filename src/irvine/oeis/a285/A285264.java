@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A285264 Decimal expansion of the mass energy equivalent of the charged pions <code>pi^+</code> and <code>pi^-</code> in MeV.
  * @author Georg Fischer
  */
-
 public class A285264 extends NoncomputableSequence {
 
   /** Construct the sequence. */

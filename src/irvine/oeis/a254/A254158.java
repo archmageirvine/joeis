@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254158 Decimal expansion of alpha particle-proton mass ratio.
  * @author Georg Fischer
  */
-
 public class A254158 extends NoncomputableSequence {
 
   /** Construct the sequence. */

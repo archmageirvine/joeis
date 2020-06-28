@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A116475 Equal divisions of the octave with progressively increasing consistency limits and distinct approximations for all the ratios in the tonality diamond of that limit.
  * @author Georg Fischer
  */
-
 public class A116475 extends NoncomputableSequence {
 
   /** Construct the sequence. */

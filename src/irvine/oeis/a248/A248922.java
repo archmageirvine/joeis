@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248922 Number of wavelengths of the orange-red line of a krypton isotope with mass number 86 in a vacuum.
  * @author Georg Fischer
  */
-
 public class A248922 extends NoncomputableSequence {
 
   /** Construct the sequence. */

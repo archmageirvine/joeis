@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A212123 Total number of pairs of states of the first n subshells of the nuclear shell model in which the subshells are ordered by energy level in increasing order.
  * @author Georg Fischer
  */
-
 public class A212123 extends NoncomputableSequence {
 
   /** Construct the sequence. */

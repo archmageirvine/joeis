@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254271 Decimal expansion of atomic unit of magnetic flux density in T.
  * @author Georg Fischer
  */
-
 public class A254271 extends NoncomputableSequence {
 
   /** Construct the sequence. */

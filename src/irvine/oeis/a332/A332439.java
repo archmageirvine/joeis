@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332439 Primitive period of the partial sums of the periodic unsigned Schick sequence for N <code>= 7 (A130794)</code>, taken modulo 14, and the related Euler tour using all regular 14-gon vertices.
  * @author Georg Fischer
  */
-
 public class A332439 extends FiniteSequence {
 
   /** Construct the sequence. */

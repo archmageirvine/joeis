@@ -8,7 +8,6 @@ import irvine.oeis.FiniteSequence;
  * A036189 Log base <code>2 (n) mod 139</code>.
  * @author Georg Fischer
  */
-
 public class A036189 extends FiniteSequence {
 
   /** Construct the sequence. */

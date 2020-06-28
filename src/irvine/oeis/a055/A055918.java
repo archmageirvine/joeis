@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A055918 Coefficients of a polynomial used in calculation of <code>A055915</code>.
  * @author Georg Fischer
  */
-
 public class A055918 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A248026 Atomic numbers of the chemical elements sorted by electronegativity (Pauling scale).
  * @author Georg Fischer
  */
-
 public class A248026 extends NoncomputableSequence {
 
   /** Construct the sequence. */

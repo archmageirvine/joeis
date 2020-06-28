@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332545 The j-invariants of the elliptic curves defined over Q with good reduction away from 2.
  * @author Georg Fischer
  */
-
 public class A332545 extends FiniteSequence {
 
   /** Construct the sequence. */

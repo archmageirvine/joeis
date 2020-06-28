@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A291812 Twelve-hole chromatic harmonica standard tone solo layout.
  * @author Georg Fischer
  */
-
 public class A291812 extends NoncomputableSequence {
 
   /** Construct the sequence. */

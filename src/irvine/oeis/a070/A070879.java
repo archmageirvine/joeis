@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A070879 Stern's diatomic array read by rows (version <code>3 -</code> same as version <code>2, A070878</code>, but with final 0 in each row omitted).
  * @author Georg Fischer
  */
-
 public class A070879 extends NoncomputableSequence {
 
   /** Construct the sequence. */

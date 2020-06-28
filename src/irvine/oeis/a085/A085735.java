@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A085735 Lyrics of "Aquarius", by Boards of Canada.
  * @author Georg Fischer
  */
-
 public class A085735 extends NoncomputableSequence {
 
   /** Construct the sequence. */

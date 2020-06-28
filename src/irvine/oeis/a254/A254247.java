@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254247 Decimal expansion of atomic unit of electric field in V <code>m^-1</code>.
  * @author Georg Fischer
  */
-
 public class A254247 extends NoncomputableSequence {
 
   /** Construct the sequence. */

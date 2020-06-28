@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254281 Decimal expansion of deuteron mass in u.
  * @author Georg Fischer
  */
-
 public class A254281 extends NoncomputableSequence {
 
   /** Construct the sequence. */

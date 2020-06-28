@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A072235 Years of recorded observations of Comet Halley.
  * @author Georg Fischer
  */
-
 public class A072235 extends NoncomputableSequence {
 
   /** Construct the sequence. */

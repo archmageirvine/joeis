@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A103742 Number of letters in Turkish names for days of week.
  * @author Georg Fischer
  */
-
 public class A103742 extends FiniteSequence {
 
   /** Construct the sequence. */

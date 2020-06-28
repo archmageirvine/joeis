@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A051385 Portuguese linear measures used in the <code>18th</code> century.
  * @author Georg Fischer
  */
-
 public class A051385 extends NoncomputableSequence {
 
   /** Construct the sequence. */

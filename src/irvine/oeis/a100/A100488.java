@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A100488 Boiling point of noble gases in Kelvin.
  * @author Georg Fischer
  */
-
 public class A100488 extends NoncomputableSequence {
 
   /** Construct the sequence. */

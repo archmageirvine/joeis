@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A331802 Integers having no representation as sum of two nonsquarefree numbers.
  * @author Georg Fischer
  */
-
 public class A331802 extends FiniteSequence {
 
   /** Construct the sequence. */

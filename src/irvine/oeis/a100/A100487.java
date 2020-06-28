@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A100487 Melting point of noble gases in degrees Kelvin.
  * @author Georg Fischer
  */
-
 public class A100487 extends NoncomputableSequence {
 
   /** Construct the sequence. */

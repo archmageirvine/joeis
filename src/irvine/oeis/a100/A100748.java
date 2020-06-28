@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A100748 Years of recorded appearances of Halley's Comet (negative years are <code>B.C.)</code>.
  * @author Georg Fischer
  */
-
 public class A100748 extends NoncomputableSequence {
 
   /** Construct the sequence. */

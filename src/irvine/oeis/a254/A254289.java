@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254289 Decimal expansion of neutron mass equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254289 extends NoncomputableSequence {
 
   /** Construct the sequence. */

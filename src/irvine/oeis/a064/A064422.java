@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A064422 Football league numbers: the possible point series for a league of n teams playing each other twice where for each match 3 points are awarded to the winning team and 1 to each in the case of a tie.
  * @author Georg Fischer
  */
-
 public class A064422 extends NoncomputableSequence {
 
   /** Construct the sequence. */

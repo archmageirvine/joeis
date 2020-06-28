@@ -10,7 +10,6 @@ import irvine.oeis.NoncomputableSequence;
  * A051862 Perturbation expansion in quantum field theory: scalar case in 6 spacetime dimensions.
  * @author Georg Fischer
  */
-
 public class A051862 extends NoncomputableSequence {
 
   /** Construct the sequence. */

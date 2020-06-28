@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A146293 Number of games in Major League Baseball's World Series for the year <code>1900 + n</code>.
  * @author Georg Fischer
  */
-
 public class A146293 extends NoncomputableSequence {
 
   /** Construct the sequence. */

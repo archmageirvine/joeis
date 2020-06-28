@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A101648 Atomic numbers of the metalloids or semimetals on the periodic table.
  * @author Georg Fischer
  */
-
 public class A101648 extends NoncomputableSequence {
 
   /** Construct the sequence. */

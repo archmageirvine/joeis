@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A126061 Number of letters in symbol for n-th element in periodic table.
  * @author Georg Fischer
  */
-
 public class A126061 extends NoncomputableSequence {
 
   /** Construct the sequence. */

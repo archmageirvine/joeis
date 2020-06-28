@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A138098 The Mendeleyev-Seaborg periodic table read from right to left (with spaces omitted).
  * @author Georg Fischer
  */
-
 public class A138098 extends NoncomputableSequence {
 
   /** Construct the sequence. */

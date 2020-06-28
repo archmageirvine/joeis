@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A116653 Number of connected even permutation groups; conjugacy classes of connected subgroups of the alternating group <code>A_n;</code> atomic species based on even permutation groups.
  * @author Georg Fischer
  */
-
 public class A116653 extends NoncomputableSequence {
 
   /** Construct the sequence. */

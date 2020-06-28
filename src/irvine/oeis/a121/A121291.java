@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A121291 Rounded partial sum of atomic weights of first n elements.
  * @author Georg Fischer
  */
-
 public class A121291 extends NoncomputableSequence {
 
   /** Construct the sequence. */

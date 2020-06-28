@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A319960 Number of terminal 3-polytopes of size <code>n</code>.
  * @author Georg Fischer
  */
-
 public class A319960 extends FiniteSequence {
 
   /** Construct the sequence. */

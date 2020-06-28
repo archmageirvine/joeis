@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081816 Electron mass energy equivalent <code>m_e*c^2</code>.
  * @author Georg Fischer
  */
-
 public class A081816 extends NoncomputableSequence {
 
   /** Construct the sequence. */

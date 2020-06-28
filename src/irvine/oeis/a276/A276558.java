@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A276558 Decimal expansion of the neutron mass energy equivalent in MeV.
  * @author Georg Fischer
  */
-
 public class A276558 extends NoncomputableSequence {
 
   /** Construct the sequence. */

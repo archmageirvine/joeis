@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A137684 Number of <code>tie-less</code> (American) football games with n scoring events.
  * @author Georg Fischer
  */
-
 public class A137684 extends NoncomputableSequence {
 
   /** Construct the sequence. */

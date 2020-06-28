@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A319959 Number of canonical 3-polytopes of size <code>n</code>.
  * @author Georg Fischer
  */
-
 public class A319959 extends FiniteSequence {
 
   /** Construct the sequence. */

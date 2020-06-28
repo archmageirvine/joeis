@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A303128 Decimal expansion of proton magnetic moment to nuclear magneton ratio.
  * @author Georg Fischer
  */
-
 public class A303128 extends NoncomputableSequence {
 
   /** Construct the sequence. */

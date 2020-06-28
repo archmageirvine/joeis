@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254251 Decimal expansion of atomic unit of Hartree energy in eV.
  * @author Georg Fischer
  */
-
 public class A254251 extends NoncomputableSequence {
 
   /** Construct the sequence. */

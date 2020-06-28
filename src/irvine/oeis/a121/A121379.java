@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A121379 Successive records for the number of hits by a single batter in a single season of (USA) major league baseball.
  * @author Georg Fischer
  */
-
 public class A121379 extends NoncomputableSequence {
 
   /** Construct the sequence. */

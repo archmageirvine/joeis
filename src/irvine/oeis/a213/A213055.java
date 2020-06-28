@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A213055 Decimal expansion of second Chandrasekhar's nearest neighbor constant.
  * @author Georg Fischer
  */
-
 public class A213055 extends NoncomputableSequence {
 
   /** Construct the sequence. */

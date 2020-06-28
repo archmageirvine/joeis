@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254277 Decimal expansion of classical electron radius in meters.
  * @author Georg Fischer
  */
-
 public class A254277 extends NoncomputableSequence {
 
   /** Construct the sequence. */

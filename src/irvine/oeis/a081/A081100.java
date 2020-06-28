@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081100 Atomic numbers of chemical elements sorted by atomic radius.
  * @author Georg Fischer
  */
-
 public class A081100 extends NoncomputableSequence {
 
   /** Construct the sequence. */

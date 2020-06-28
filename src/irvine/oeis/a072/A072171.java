@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A072171 Number of stars of visual magnitude <code>n</code>.
  * @author Georg Fischer
  */
-
 public class A072171 extends NoncomputableSequence {
 
   /** Construct the sequence. */

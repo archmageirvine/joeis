@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A053406 Number of stars brighter than visual magnitude <code>n-1</code>.
  * @author Georg Fischer
  */
-
 public class A053406 extends NoncomputableSequence {
 
   /** Construct the sequence. */

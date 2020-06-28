@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A230438 Decimal expansion of the proton mass energy equivalent in Joules.
  * @author Georg Fischer
  */
-
 public class A230438 extends NoncomputableSequence {
 
   /** Construct the sequence. */

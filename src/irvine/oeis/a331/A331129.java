@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A331129 Number of n-regular hypergraphs on 6 labeled vertices.
  * @author Georg Fischer
  */
-
 public class A331129 extends FiniteSequence {
 
   /** Construct the sequence. */

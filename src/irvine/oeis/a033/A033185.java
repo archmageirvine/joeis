@@ -44,7 +44,7 @@ public class A033185 extends MemoryFunctionInt3<Z> implements Sequence {
     }
     Z sum = Z.ZERO;
     for (int j = 0; j <= Math.min(n / i, p); ++j) {
-      sum = sum.add(get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(getT(i).longValueExact() + j - 1, j)));
+      sum = sum.add(get(n - i * j, i - 1, p - j).multiply(Binomial.binomial(getT(i).add(j - 1), Z.valueOf(j))));
     }
     return sum;
   }

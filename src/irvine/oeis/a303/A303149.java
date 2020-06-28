@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A303149 Group number of n-th element in the periodic table, or 0 if the element does not have a group number.
  * @author Georg Fischer
  */
-
 public class A303149 extends NoncomputableSequence {
 
   /** Construct the sequence. */

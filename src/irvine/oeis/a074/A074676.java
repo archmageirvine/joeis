@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A074676 Differences between consecutive <code>three-digit distinct-digit</code> primes.
  * @author Georg Fischer
  */
-
 public class A074676 extends FiniteSequence {
 
   /** Construct the sequence. */

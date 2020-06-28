@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A168342 Even atomic numbers in the Janet table of the PSE, read right to left along rows.
  * @author Georg Fischer
  */
-
 public class A168342 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A138724 Atomic numbers of the periodic table of the elements, read downwards along 18 columns, up to the 7th period.
  * @author Georg Fischer
  */
-
 public class A138724 extends NoncomputableSequence {
 
   /** Construct the sequence. */

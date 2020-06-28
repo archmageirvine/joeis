@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A266369 Four-digit primes such that simultaneously swapping the first two digits and swapping the last two digits produces another prime.
  * @author Georg Fischer
  */
-
 public class A266369 extends FiniteSequence {
 
   /** Construct the sequence. */

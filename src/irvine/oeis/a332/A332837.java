@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332837 Squares visited by a knight moving on a double spiral numbered board and moving to the lowest available unvisited square at each step.
  * @author Georg Fischer
  */
-
 public class A332837 extends FiniteSequence {
 
   /** Construct the sequence. */

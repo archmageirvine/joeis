@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254270 Decimal expansion of atomic unit of magnetic dipole moment in J <code>T^-1</code>.
  * @author Georg Fischer
  */
-
 public class A254270 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A072198 <code>E12</code> range of preferred resistor values in electronic engineering.
  * @author Georg Fischer
  */
-
 public class A072198 extends NoncomputableSequence {
 
   /** Construct the sequence. */

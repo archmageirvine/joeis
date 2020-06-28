@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A137295 P-positions in sparse Atomic Wari, octal game .37.
  * @author Georg Fischer
  */
-
 public class A137295 extends NoncomputableSequence {
 
   /** Construct the sequence. */

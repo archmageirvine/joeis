@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A219241 Distribution of letters in the name of the days of the week (English).
  * @author Georg Fischer
  */
-
 public class A219241 extends FiniteSequence {
 
   /** Construct the sequence. */

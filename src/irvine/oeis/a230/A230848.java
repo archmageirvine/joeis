@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A230848 Decimal expansion of neutron mass (kg).
  * @author Georg Fischer
  */
-
 public class A230848 extends NoncomputableSequence {
 
   /** Construct the sequence. */

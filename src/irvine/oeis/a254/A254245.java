@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254245 Decimal expansion of atomic unit of current in A.
  * @author Georg Fischer
  */
-
 public class A254245 extends NoncomputableSequence {
 
   /** Construct the sequence. */

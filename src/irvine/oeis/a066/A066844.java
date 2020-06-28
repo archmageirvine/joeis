@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A066844 Film speeds.
  * @author Georg Fischer
  */
-
 public class A066844 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A130556 A model of the atomic nucleus (Shell model of nucleus). A triangle.
  * @author Georg Fischer
  */
-
 public class A130556 extends NoncomputableSequence {
 
   /** Construct the sequence. */

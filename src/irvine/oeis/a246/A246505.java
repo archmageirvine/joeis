@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A246505 Decimal expansion of Planck area in square meters.
  * @author Georg Fischer
  */
-
 public class A246505 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A320507 Atomic numbers of the chemical elements sorted with respect to first ionization energy.
  * @author Georg Fischer
  */
-
 public class A320507 extends NoncomputableSequence {
 
   /** Construct the sequence. */

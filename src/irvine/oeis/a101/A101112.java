@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A101112 Third Beale cipher.
  * @author Georg Fischer
  */
-
 public class A101112 extends NoncomputableSequence {
 
   /** Construct the sequence. */

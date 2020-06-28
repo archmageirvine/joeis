@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A109571 Prague bus clock sequence <code>#2</code>.
  * @author Georg Fischer
  */
-
 public class A109571 extends NoncomputableSequence {
 
   /** Construct the sequence. */

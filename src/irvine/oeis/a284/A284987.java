@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A284987 Juggler sequence starting at 37.
  * @author Georg Fischer
  */
-
 public class A284987 extends FiniteSequence {
 
   /** Construct the sequence. */

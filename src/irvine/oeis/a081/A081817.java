@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081817 Electron mass energy equivalent in MeV.
  * @author Georg Fischer
  */
-
 public class A081817 extends NoncomputableSequence {
 
   /** Construct the sequence. */

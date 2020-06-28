@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254294 Decimal expansion of triton mass energy equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254294 extends NoncomputableSequence {
 
   /** Construct the sequence. */

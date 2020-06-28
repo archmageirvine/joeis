@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A209467 Football league numbers with distinct point totals for a league of n teams playing each other twice where for each match 3 points are awarded to the winning team and 1 to each in the case of a tie.
  * @author Georg Fischer
  */
-
 public class A209467 extends NoncomputableSequence {
 
   /** Construct the sequence. */

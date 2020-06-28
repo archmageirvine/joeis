@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A061919 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the pair of ratios 6/5 and 5/3 which generate two complementary musical harmonies, the Minor <code>3rd (6/5)</code> and the Major <code>6th (5/3)</code>.
  * @author Georg Fischer
  */
-
 public class A061919 extends NoncomputableSequence {
 
   /** Construct the sequence. */

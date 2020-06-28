@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A124673 Numbers with distinct prime digits.
  * @author Georg Fischer
  */
-
 public class A124673 extends FiniteSequence {
 
   /** Construct the sequence. */

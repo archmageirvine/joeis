@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A101145 List of molecules in Hintze-Adami artificial chemistry (see comments for definition).
  * @author Georg Fischer
  */
-
 public class A101145 extends NoncomputableSequence {
 
   /** Construct the sequence. */

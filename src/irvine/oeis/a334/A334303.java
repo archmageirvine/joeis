@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A334303 Numbers n such that the Thue chromatic number of graph <code>C_n</code> is equal to 4.
  * @author Georg Fischer
  */
-
 public class A334303 extends FiniteSequence {
 
   /** Construct the sequence. */

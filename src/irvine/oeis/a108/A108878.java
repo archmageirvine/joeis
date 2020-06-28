@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A108878 Location of restriction sites for the enzyme SchI in <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
-
 public class A108878 extends NoncomputableSequence {
 
   /** Construct the sequence. */

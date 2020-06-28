@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A070217 Numbers not represented by a known atomic weight.
  * @author Georg Fischer
  */
-
 public class A070217 extends NoncomputableSequence {
 
   /** Construct the sequence. */

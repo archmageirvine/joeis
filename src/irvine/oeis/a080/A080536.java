@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080536 Number of protons in longest known radioactive decay series ending with Lead 209, reversed.
  * @author Georg Fischer
  */
-
 public class A080536 extends NoncomputableSequence {
 
   /** Construct the sequence. */

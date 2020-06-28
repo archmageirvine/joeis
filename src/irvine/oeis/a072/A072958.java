@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A072958 Caliban numbers: without letters a, c, i, or l.
  * @author Georg Fischer
  */
-
 public class A072958 extends FiniteSequence {
 
   /** Construct the sequence. */

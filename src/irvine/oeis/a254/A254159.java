@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254159 Decimal expansion of atomic mass constant energy equivalent in J.
  * @author Georg Fischer
  */
-
 public class A254159 extends NoncomputableSequence {
 
   /** Construct the sequence. */

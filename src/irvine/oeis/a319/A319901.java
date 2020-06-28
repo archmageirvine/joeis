@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A319901 List of elements whose electron configuration does not satisfy the Aufbau principle.
  * @author Georg Fischer
  */
-
 public class A319901 extends NoncomputableSequence {
 
   /** Construct the sequence. */

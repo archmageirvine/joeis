@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081099 Atomic numbers of the chemical elements sorted with respect to boiling point.
  * @author Georg Fischer
  */
-
 public class A081099 extends NoncomputableSequence {
 
   /** Construct the sequence. */

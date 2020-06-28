@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A131062 Rounded frequencies of notes in a Pythagorean scale, starting with 260.7 Hertz for a C.
  * @author Georg Fischer
  */
-
 public class A131062 extends NoncomputableSequence {
 
   /** Construct the sequence. */

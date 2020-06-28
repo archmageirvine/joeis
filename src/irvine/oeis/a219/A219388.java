@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A219388 Basic quantic arrangement for the 1 to 120 planetary electrons and elementary periods (circles I to XX) distributed by energy levels.
  * @author Georg Fischer
  */
-
 public class A219388 extends NoncomputableSequence {
 
   /** Construct the sequence. */

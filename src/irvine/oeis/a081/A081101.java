@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081101 Atomic numbers of the chemical elements sorted with respect to single-bond covalent radius.
  * @author Georg Fischer
  */
-
 public class A081101 extends NoncomputableSequence {
 
   /** Construct the sequence. */

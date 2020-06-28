@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080537 Number of neutrons in longest known radioactive decay series ending with Lead <code>206 ("uranium series")</code>, reversed.
  * @author Georg Fischer
  */
-
 public class A080537 extends NoncomputableSequence {
 
   /** Construct the sequence. */

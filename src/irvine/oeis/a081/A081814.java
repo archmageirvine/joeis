@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081814 Deuteron-electron mass ratio.
  * @author Georg Fischer
  */
-
 public class A081814 extends NoncomputableSequence {
 
   /** Construct the sequence. */

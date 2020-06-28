@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A113491 The primary sequence of numbers used by contestant Michael Larson to decode the movements of squares on the CBS game show "Press Your Luck" in 1984, winning him exactly <code>$110237</code> in cash and prizes.
  * @author Georg Fischer
  */
-
 public class A113491 extends NoncomputableSequence {
 
   /** Construct the sequence. */

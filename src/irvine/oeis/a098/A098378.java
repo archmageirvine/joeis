@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A098378 Number of characters needed to write number n in the traditional Ethiopic (Geez) number system.
  * @author Georg Fischer
  */
-
 public class A098378 extends NoncomputableSequence {
 
   /** Construct the sequence. */

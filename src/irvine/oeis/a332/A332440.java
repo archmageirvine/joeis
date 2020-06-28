@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A332440 Three-column array read by rows: the sequence of 14 triples of the positions of the numbers 0 to 13 in sequence <code>A332439</code>.
  * @author Georg Fischer
  */
-
 public class A332440 extends FiniteSequence {
 
   /** Construct the sequence. */

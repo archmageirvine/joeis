@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A139283 Numbers of spots seen on ladybugs.
  * @author Georg Fischer
  */
-
 public class A139283 extends NoncomputableSequence {
 
   /** Construct the sequence. */

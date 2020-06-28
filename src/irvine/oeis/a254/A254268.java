@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254268 Decimal expansion of atomic unit of force in N.
  * @author Georg Fischer
  */
-
 public class A254268 extends NoncomputableSequence {
 
   /** Construct the sequence. */

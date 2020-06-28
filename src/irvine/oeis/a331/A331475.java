@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A331475 <code>a(n)</code> is the smallest n-digit number using each digit 0 to <code>n-1</code> once, such that the numbers formed by its last k digits are divisible by k, <code>(k = 1..n)</code>.
  * @author Georg Fischer
  */
-
 public class A331475 extends FiniteSequence {
 
   /** Construct the sequence. */

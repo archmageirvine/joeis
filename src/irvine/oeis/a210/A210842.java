@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A210842 Number of states in the n-th shell of the nuclear shell model.
  * @author Georg Fischer
  */
-
 public class A210842 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A061921 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the 11 pairs of target ratios needed to express the 22 steps of the theoretical Hindu scale known as the 22 Srutis: 45/32 and <code>64/45, 27/20</code> and <code>40/27, 4/3</code> and <code>3/2, 81/64</code> and <code>128/81, 5/4</code> and <code>8/5, 6/5</code> and <code>5/3, 32/27</code> and <code>27/16, 9/8</code> and <code>16/9, 10/9</code> and <code>9/5, 16/15</code> and <code>15/8, 256/243</code> and 243/128.
  * @author Georg Fischer
  */
-
 public class A061921 extends NoncomputableSequence {
 
   /** Construct the sequence. */

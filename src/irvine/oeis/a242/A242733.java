@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A242733 Number of vertices of Johnson solids in the order given by Johnson.
  * @author Georg Fischer
  */
-
 public class A242733 extends FiniteSequence {
 
   /** Construct the sequence. */

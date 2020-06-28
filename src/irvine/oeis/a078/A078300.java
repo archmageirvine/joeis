@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A078300 Decimal expansion of Planck length.
  * @author Georg Fischer
  */
-
 public class A078300 extends NoncomputableSequence {
 
   /** Construct the sequence. */

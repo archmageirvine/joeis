@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A174868 Partial sums of Stern's diatomic series <code>A002487</code>.
  * @author Georg Fischer
  */
-
 public class A174868 extends NoncomputableSequence {
 
   /** Construct the sequence. */

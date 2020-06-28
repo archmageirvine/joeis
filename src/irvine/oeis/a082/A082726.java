@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A082726 Continued fraction expansion of current estimate of the fine-structure constant alpha.
  * @author Georg Fischer
  */
-
 public class A082726 extends NoncomputableSequence {
 
   /** Construct the sequence. */

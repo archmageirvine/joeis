@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A081815 Decimal expansion of electron charge to mass quotient (negated).
  * @author Georg Fischer
  */
-
 public class A081815 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A087007 Divisors of 510510.
  * @author Georg Fischer
  */
-
 public class A087007 extends FiniteSequence {
 
   /** Construct the sequence. */

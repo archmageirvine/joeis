@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A108749 Location of the restriction sites for the enzyme <code>BceA1I</code> in <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
-
 public class A108749 extends NoncomputableSequence {
 
   /** Construct the sequence. */

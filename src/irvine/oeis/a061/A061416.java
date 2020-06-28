@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A061416 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the pair of ratios 11/8 and 16/11 which generate two complementary musical tones.
  * @author Georg Fischer
  */
-
 public class A061416 extends NoncomputableSequence {
 
   /** Construct the sequence. */

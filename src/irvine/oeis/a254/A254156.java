@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A254156 Decimal expansion of alpha particle mass in u.
  * @author Georg Fischer
  */
-
 public class A254156 extends NoncomputableSequence {
 
   /** Construct the sequence. */

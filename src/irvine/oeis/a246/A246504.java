@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A246504 Decimal expansion of Planck charge in coulombs.
  * @author Georg Fischer
  */
-
 public class A246504 extends NoncomputableSequence {
 
   /** Construct the sequence. */

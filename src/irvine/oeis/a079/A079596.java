@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A079596 Number of ways to get ten-pin bowling score of <code>300-n</code>.
  * @author Georg Fischer
  */
-
 public class A079596 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A327846 Full days remaining in the month on the Gregorian calendar starting at n-th day of a non-leap year.
  * @author Georg Fischer
  */
-
 public class A327846 extends FiniteSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A130602 A shell geometric model of the atomic nucleus.
  * @author Georg Fischer
  */
-
 public class A130602 extends NoncomputableSequence {
 
   /** Construct the sequence. */

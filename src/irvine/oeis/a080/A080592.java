@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A080592 My school teacher gave it to me as a challenge. But he died last week and I do not have the answer.
  * @author Georg Fischer
  */
-
 public class A080592 extends NoncomputableSequence {
 
   /** Construct the sequence. */

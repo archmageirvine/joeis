@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A284832 Decimal expansion of the proton mass energy equivalent in MeV.
  * @author Georg Fischer
  */
-
 public class A284832 extends NoncomputableSequence {
 
   /** Construct the sequence. */

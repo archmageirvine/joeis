@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A319914 Single-bond covalent radii (in picometers) of the chemical elements.
  * @author Georg Fischer
  */
-
 public class A319914 extends NoncomputableSequence {
 
   /** Construct the sequence. */

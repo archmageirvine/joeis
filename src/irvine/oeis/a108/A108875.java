@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A108875 Location of restriction sites for the enzyme LweI in <code>PhiX174</code> DNA.
  * @author Georg Fischer
  */
-
 public class A108875 extends NoncomputableSequence {
 
   /** Construct the sequence. */

@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A063516 Multiples of single electron masses yielding stable particles intermediate between an electron and a proton as given in reference below.
  * @author Georg Fischer
  */
-
 public class A063516 extends NoncomputableSequence {
 
   /** Construct the sequence. */

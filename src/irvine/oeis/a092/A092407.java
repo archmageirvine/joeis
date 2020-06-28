@@ -9,7 +9,6 @@ import irvine.oeis.NoncomputableSequence;
  * A092407 Coins and notes in the Norwegian currency.
  * @author Georg Fischer
  */
-
 public class A092407 extends NoncomputableSequence {
 
   /** Construct the sequence. */

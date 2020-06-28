@@ -9,7 +9,6 @@ import irvine.oeis.FiniteSequence;
  * A334601 Positive integers m such that sum of cubes of the digits of m, <code>t=A055012(m)</code>, is a multiple of m <code>(m/A055012(m)</code> is an integer <code>&gt;= 1)</code>.
  * @author Georg Fischer
  */
-
 public class A334601 extends FiniteSequence {
 
   /** Construct the sequence. */

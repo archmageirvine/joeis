@@ -23,7 +23,7 @@ public class A034781 extends MemoryFunctionInt3<Z> implements Sequence {
     }
     Z s = Z.ZERO;
     for (int j = 0; j <= n / i; ++j) {
-      s = s.add(Binomial.binomial(get(i - 1, i - 1, k - 1).longValueExact() + j - 1, j).multiply(get(n - i * j, i - 1, k)));
+      s = s.add(Binomial.binomial(get(i - 1, i - 1, k - 1).add(j - 1), Z.valueOf(j)).multiply(get(n - i * j, i - 1, k)));
     }
     return s;
   }

@@ -6,44 +6,45 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032849 Numbers n such that base 2 representation <code>Sum{d(i)*2^i: i=0,1,...,m)</code> has <code>d(m)&lt;=d(m-1)&gt;=d(m-2)&lt;=..</code>.
+ * A032937 Numbers n such that base 2 representation <code>Sum{d(i)*2^(m-i): i=0,1,...,m}</code> has <code>d(i)=0</code> for all odd i, excluding 0. Here m is the position of the leading bit of <code>n</code>.
  * @author Sean A. Irvine
  */
-public class A032849 implements Sequence {
+public class A032937 implements Sequence {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());
-  private boolean mUp = initialDirection();
+  private boolean mUp = odd();
 
   {
-    for (long k = 1; k < base(); ++k) {
+    for (long k = start(); k < base(); ++k) {
       mA.add(Z.valueOf(k));
     }
   }
 
-  protected long base() {
+  protected boolean odd() {
+    return true;
+  }
+
+  protected int base() {
     return 2;
   }
 
-  protected boolean initialDirection() {
-    return true;
+  protected long start() {
+    return 1;
   }
 
   @Override
   public Z next() {
     final Z res = mA.pollFirst();
-    final long last = res.mod(base());
     if (res.compareTo(mLimit) >= 0) {
       mUp = !mUp;
       mLimit = mLimit.multiply(base());
     }
     final Z t = res.multiply(base());
     if (mUp) {
-      for (long k = last; k < base(); ++k) {
-        mA.add(t.add(k));
-      }
+      mA.add(t);
     } else {
-      for (long k = 0; k <= last; ++k) {
+      for (long k = 0; k < base(); ++k) {
         mA.add(t.add(k));
       }
     }

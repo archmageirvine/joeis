@@ -1,9 +1,7 @@
 package irvine.oeis.a109;
 
-import irvine.factor.factor.Cheetah;
-import irvine.factor.factor.Factorizer;
+import irvine.factor.factor.Jaguar;
 import irvine.factor.util.FactorSequence;
-import irvine.math.z.Semiprime;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,9 +12,6 @@ import irvine.oeis.Sequence;
 public class A109757 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
-  private final Factorizer mFactor = new Cheetah(false);
-  private final Semiprime mSemiprime = new Semiprime("irvine/oeis/a109/a109757.dat");
-
   private long mN = 0;
 
   private static long tensComplement(final long n) {
@@ -43,14 +38,13 @@ public class A109757 implements Sequence {
         System.out.println("[" + mN + "]: " + candidate);
         System.out.flush();
       }
-      final FactorSequence fs = new FactorSequence(candidate);
-      mFactor.factor(fs);
+      final FactorSequence fs = Jaguar.factorAllowIncomplete(candidate);
       final int sp = fs.isSemiprime();
       if (sp == FactorSequence.YES) {
         return Z.valueOf(mN);
       }
-      if (sp == FactorSequence.UNKNOWN && mSemiprime.semiprime(candidate) != null) {
-        return Z.valueOf(mN);
+      if (sp == FactorSequence.UNKNOWN) {
+        throw new UnsupportedOperationException("Cannot determine if " + candidate + " is semiprime");
       }
     }
   }

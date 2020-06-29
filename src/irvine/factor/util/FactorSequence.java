@@ -573,7 +573,7 @@ public final class FactorSequence {
    * @return semiprime status
    */
   public int isSemiprime() {
-    if (mFactors.size() > 2) {
+    if (mFactors.size() > 2 || mFactors.isEmpty()) {
       return NO;
     }
     int e = 0;

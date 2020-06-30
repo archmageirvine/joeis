@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A234692 implements Sequence {
 
-  private static final Z[] DIGIT_COUNTS = new Z[] {
+  private static final Z[] DIGIT_COUNTS = {
     Z.valueOf(63),
     Z.valueOf(6),
     Z.valueOf(91),

@@ -39,7 +39,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(PowTest.class);
     suite.addTestSuite(PrimeTest.class);
     suite.addTestSuite(RootTest.class);
-    suite.addTestSuite(SemiprimeTest.class);
     suite.addTestSuite(ShiftTest.class);
     suite.addTestSuite(SqrTest.class);
     suite.addTestSuite(SqrtTest.class);

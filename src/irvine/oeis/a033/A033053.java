@@ -1,4 +1,4 @@
-package irvine.oeis.a032;
+package irvine.oeis.a033;
 
 import java.util.TreeSet;
 
@@ -6,10 +6,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032937 Numbers n such that base 2 representation <code>Sum{d(i)*2^(m-i): i=0,1,...,m}</code> has <code>d(i)=0</code> for all odd i, excluding 0. Here m is the position of the leading bit of <code>n</code>.
+ * A033053 Numbers n such that base 2 representation <code>Sum{d(i)*2^i: i=0,1,...,m}</code> has <code>d(i)=1</code> when i&lt;&gt;m <code>mod 2</code>.
  * @author Sean A. Irvine
  */
-public class A032937 implements Sequence {
+public class A033053 implements Sequence {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private Z mLimit = Z.valueOf(base());
@@ -42,7 +42,9 @@ public class A032937 implements Sequence {
     }
     final Z t = res.multiply(base());
     if (mOdd) {
-      mA.add(t);
+      for (long k = 1; k < base(); k += 2) {
+        mA.add(t.add(k));
+      }
     } else {
       for (long k = 0; k < base(); ++k) {
         mA.add(t.add(k));

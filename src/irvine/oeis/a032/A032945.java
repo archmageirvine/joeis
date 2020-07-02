@@ -7,6 +7,11 @@ package irvine.oeis.a032;
 public class A032945 extends A032937 {
 
   @Override
+  protected long start() {
+    return 0;
+  }
+
+  @Override
   protected int base() {
     return 10;
   }

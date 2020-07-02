@@ -39,7 +39,7 @@ public class A000170 implements Sequence {
     return Z.ONE;
   }
 
-  private Z count(final int[] q, final int n) {
+  protected Z count(final int[] q, final int n) {
     Z c;
     if (n == q.length) {
       c = count(q);

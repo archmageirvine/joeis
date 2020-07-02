@@ -1,0 +1,28 @@
+package irvine.oeis.a033;
+
+import irvine.math.cr.CR;
+import irvine.math.cr.ComputableReals;
+import irvine.math.cr.Zeta;
+import irvine.oeis.DecimalExpansionSequence;
+
+/**
+ * A033150.
+ * @author Sean A. Irvine
+ */
+public class A033150 extends DecimalExpansionSequence {
+
+  private CR mA = null;
+
+  @Override
+  protected void ensureAccuracy(final int n) {
+    mA = CR.ONE;
+    for (int k = 2; k <= 2 * n; ++k) { // Heuristic number of terms!
+      mA = ComputableReals.SINGLETON.add(mA, CR.ONE.subtract(Zeta.zeta(k, n).inverse()));
+    }
+  }
+
+  @Override
+  protected CR getCR() {
+    return mA;
+  }
+}

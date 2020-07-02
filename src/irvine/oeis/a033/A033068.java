@@ -14,9 +14,13 @@ public class A033068 implements Sequence {
   private final TreeSet<Z> mA = new TreeSet<>();
 
   {
-    for (long k = 1; k < base(); ++k) {
+    for (long k = start(); k < base(); ++k) {
       mA.add(Z.valueOf(k));
     }
+  }
+
+  protected long start() {
+    return 1;
   }
 
   protected int base() {
@@ -32,9 +36,11 @@ public class A033068 implements Sequence {
     final Z res = mA.pollFirst();
     final long d = res.mod(base());
     final Z t = res.multiply(base());
-    for (long k = 0; k < base(); ++k) {
-      if (Math.abs(d - k) == diff()) {
-        mA.add(t.add(k));
+    if (!Z.ZERO.equals(t)) {
+      for (long k = 0; k < base(); ++k) {
+        if (Math.abs(d - k) == diff()) {
+          mA.add(t.add(k));
+        }
       }
     }
     return res;

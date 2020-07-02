@@ -41,11 +41,13 @@ public class A032937 implements Sequence {
       mLimit = mLimit.multiply(base());
     }
     final Z t = res.multiply(base());
-    if (mOdd) {
-      mA.add(t);
-    } else {
-      for (long k = 0; k < base(); ++k) {
-        mA.add(t.add(k));
+    if (!Z.ZERO.equals(t)) {
+      if (mOdd) {
+        mA.add(t);
+      } else {
+        for (long k = 0; k < base(); ++k) {
+          mA.add(t.add(k));
+        }
       }
     }
     return res;

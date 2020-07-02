@@ -17,7 +17,7 @@ public class A033030 implements Sequence {
   public Z next() {
     if (++mN == 0) {
       return Z.ONE;
-    } else if (mN > 1){
+    } else if (mN > 1) {
       final Z t = mA.add(mB).multiply(mN - 1).multiply(3);
       mA = mB;
       mB = t;

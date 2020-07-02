@@ -1,6 +1,7 @@
 package irvine.oeis.a032;
 
 import irvine.oeis.PartialSumSequence;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.a100.A100196;
 
 /**
@@ -11,6 +12,6 @@ public class A032514 extends PartialSumSequence {
 
   /** Construct the sequence. */
   public A032514() {
-    super(new A100196());
+    super(new PrependSequence(new A100196(), 0));
   }
 }

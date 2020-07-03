@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033147.
+ * A033147 Decimal expansion of <code>n!</code> begins with <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A033147 implements Sequence {

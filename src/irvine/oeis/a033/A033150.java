@@ -6,18 +6,22 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A033150.
+ * A033150 Niven's constant.
  * @author Sean A. Irvine
  */
 public class A033150 extends DecimalExpansionSequence {
 
   private CR mA = null;
+  private int mPrevAccuracy = 0;
 
   @Override
   protected void ensureAccuracy(final int n) {
-    mA = CR.ONE;
-    for (int k = 2; k <= 2 * n; ++k) { // Heuristic number of terms!
-      mA = ComputableReals.SINGLETON.add(mA, CR.ONE.subtract(Zeta.zeta(k, n).inverse()));
+    if (n > mPrevAccuracy) {
+      mPrevAccuracy = n;
+      mA = CR.ONE;
+      for (int k = 2; k <= 2 * n; ++k) { // Heuristic number of terms!
+        mA = ComputableReals.SINGLETON.add(mA, CR.ONE.subtract(Zeta.zeta(k, n).inverse()));
+      }
     }
   }
 

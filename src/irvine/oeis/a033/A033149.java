@@ -1,29 +1,16 @@
 package irvine.oeis.a033;
 
-import irvine.math.z.Z;
+import irvine.oeis.PositionOfNSequence;
 import irvine.oeis.a002.A002852;
-import irvine.util.array.DynamicIntArray;
 
 /**
- * A033149.
+ * A033149 Position of first occurrence of n in the continued fraction for the Euler-Mascheroni constant (gamma).
  * @author Sean A. Irvine
  */
-public class A033149 extends A002852 {
+public class A033149 extends PositionOfNSequence {
 
-  private final DynamicIntArray mA = new DynamicIntArray();
-  private int mM = 0;
-  private int mN = 0;
-
-  @Override
-  public Z next() {
-    ++mN;
-    while (mA.get(mN) == 0) {
-      ++mM;
-      final int v = super.next().intValueExact();
-      if (mA.get(v) == 0) {
-        mA.set(v, mM);
-      }
-    }
-    return Z.valueOf(mA.get(mN));
+  /** Construct the sequence. */
+  public A033149() {
+    super(new A002852(), 1);
   }
 }

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000170;
 
 /**
- * A033148.
+ * A033148 Number of rotationally symmetric solutions for queens on <code>n X n</code> board.
  * @author Sean A. Irvine
  */
 public class A033148 extends A000170 {

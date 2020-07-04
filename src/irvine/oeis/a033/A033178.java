@@ -39,7 +39,7 @@ public class A033178 implements Sequence {
     return false;
   }
 
-  private void search(int[] v) {
+  private void search(final int[] v) {
     while (bump(v)) {
       // do nothing
     }

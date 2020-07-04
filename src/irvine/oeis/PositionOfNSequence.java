@@ -5,7 +5,7 @@ import java.util.TreeMap;
 import irvine.math.z.Z;
 
 /**
- * A sequence reporting the position on <code>n</code> in a sequence.  It assumes
+ * A sequence reporting the position of <code>n</code> in a sequence.  It assumes
  * that every value not less than the initial value occurs at some point in the
  * sequence.  Sequences exceeding the value of a long will also fail at some point.
  * @author Sean A. Irvine

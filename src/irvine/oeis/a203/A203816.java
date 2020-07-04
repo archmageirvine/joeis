@@ -3,7 +3,6 @@ package irvine.oeis.a203;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -13,7 +12,6 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A203816 extends DecimalExpansionSequence {
 
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
   private static final CR N = CR.E.multiply(EulerGamma.SINGLETON).multiply(CR.PI);
 
   @Override

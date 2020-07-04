@@ -5,6 +5,7 @@ import java.util.HashMap;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.q.BernoulliSequence;
 import irvine.math.q.Q;
+import irvine.math.z.Z;
 
 /**
  * Compute zeta function.
@@ -60,6 +61,34 @@ public final class Zeta {
     return FLD.divide(sum, crp);
   }
 
+  private static final CR ZETA3 = new CR() {
+    @Override
+    protected Z approximate(final int p) {
+      // Amdeberhan and Zeilberger
+      // zeta(3) = (1/64) * Sum_{k >= 0} (-)^k * k!^10 * (205*k^2+250*k+77) / (2*k+1)!^5
+      // Formula asymptotically gives just over 3 digits of accuracy per term
+      if (p >= 1) {
+        return Z.ZERO;
+      }
+      Z kf0 = Z.ONE;  // k!
+      Z kf1 = Z.ONE;  // (2k+1)!
+      Z currentSum = Z.ZERO;
+      Z currentTerm;
+      long k = -1;
+      do {
+        if (++k > 0) {
+          kf0 = kf0.multiply(k);
+          kf1 = kf1.multiply(2 * k).multiply(2 * k + 1);
+        }
+        final Z num = kf0.pow(10).multiply(Z.valueOf(205 * k + 250).multiply(k).add(77));
+        final Z den = kf1.pow(5);
+        currentTerm = scale(num, -p).divide(den);
+        currentSum = currentSum.signedAdd((k & 1) == 0, currentTerm);
+      } while (!Z.ZERO.equals(currentTerm));
+      return currentSum.shiftRight(6);  // / 64
+    }
+  };
+
   /**
    * Zeta function.
    * @param n argument
@@ -68,6 +97,9 @@ public final class Zeta {
    */
   public static CR zeta(final int n, final int terms) {
     if ((n & 1) == 1) {
+      if (n == 3) {
+        return ZETA3; // we have a comparatively "fast" implementation for this
+      }
       if ((n & 3) == 3) {
         return zeta4m((n + 1) / 4, terms);
       } else {

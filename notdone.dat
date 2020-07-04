@@ -1298,3 +1298,4 @@ A032435 Triangle of second-to-last man to survive in Josephus problem of n men i
 A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
 A032800 If there were a 9-dimensional unimodular lattice with minimal norm 2, this would be its theta series; however, no such lattice exists
 A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal norm 2 in dimension 16
+A033186 Remove all 2's from decimal expansion of Pi, then all 3's, ..., then all 11's, ... (running through primes in order), ill-defined?

@@ -3,7 +3,6 @@ package irvine.oeis.a088;
 // DO NOT EDIT here!
 
 import irvine.math.cr.CR;
-import irvine.math.cr.ComputableReals;
 import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -13,8 +12,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A088453 extends DecimalExpansionSequence {
 
-  private static final ComputableReals REALS = ComputableReals.SINGLETON;
-  private static final CR N = CR.ONE.divide(Zeta.zeta(3));
+  private static final CR N = Zeta.zeta(3).inverse();
 
   @Override
   protected CR getCR() {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005929;
 
 /**
- * A045839 a(n) = A005929(n)/2.
+ * A045839 <code>a(n) = A005929(n)/2</code>.
  * @author Georg Fischer
  */
 public class A045839 implements Sequence {

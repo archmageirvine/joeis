@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A100371 a(n) = 2^phi(n) - 1 = A066781(n) - 1.
+ * A100371 <code>a(n) = 2^phi(n) - 1 = A066781(n) - 1</code>.
  * @author Georg Fischer
  */
 public class A100371 implements Sequence {

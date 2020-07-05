@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001222;
 
 /**
- * A081707 a(n) = tau(n) - bigomega(n) = A000005(n) - A001222(n).
+ * A081707 <code>a(n) = tau(n) - bigomega(n) = A000005(n) - A001222(n)</code>.
  * @author Georg Fischer
  */
 public class A081707 implements Sequence {

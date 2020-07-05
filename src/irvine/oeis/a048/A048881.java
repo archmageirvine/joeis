@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000120;
 
 /**
- * A048881 a(n) = A000120(n+1) - 1 = wt(n+1) - 1.
+ * A048881 <code>a(n) = A000120(n+1) - 1 = wt(n+1) - 1</code>.
  * @author Georg Fischer
  */
 public class A048881 implements Sequence {

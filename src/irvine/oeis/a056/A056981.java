@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002596;
 
 /**
- * A056981 a(n) = A002596(n)^2.
+ * A056981 <code>a(n) = A002596(n)^2</code>.
  * @author Georg Fischer
  */
 public class A056981 implements Sequence {

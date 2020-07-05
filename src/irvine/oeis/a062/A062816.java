@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000010;
 
 /**
- * A062816 a(n) = phi(n)*tau(n) - 2n = A000010(n)*A000005(n) - 2*n.
+ * A062816 <code>a(n) = phi(n)*tau(n) - 2n = A000010(n)*A000005(n) - 2*n</code>.
  * @author Georg Fischer
  */
 public class A062816 implements Sequence {

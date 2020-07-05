@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a141.A141468;
 
 /**
- * A161671 a(n) = prime(n) - A141468(n).
+ * A161671 <code>a(n) = prime(n) - A141468(n)</code>.
  * @author Georg Fischer
  */
 public class A161671 implements Sequence {

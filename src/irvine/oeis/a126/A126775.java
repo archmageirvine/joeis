@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000010;
 
 /**
- * A126775 a(n) = phi(n)^2 * d(n) = A000010(n)^2 * A000005(n).
+ * A126775 <code>a(n) = phi(n)^2 * d(n) = A000010(n)^2 * A000005(n)</code>.
  * @author Georg Fischer
  */
 public class A126775 implements Sequence {

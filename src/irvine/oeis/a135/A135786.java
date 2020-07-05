@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000404;
 
 /**
- * A135786 a(n) = A000404(n)^4.
+ * A135786 <code>a(n) = A000404(n)^4</code>.
  * @author Georg Fischer
  */
 public class A135786 implements Sequence {

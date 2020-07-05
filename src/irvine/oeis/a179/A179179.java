@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a001.A001221;
 
 /**
- * A179179 a(n) = phi(n) - omega(n) = A000010(n) - A001221(n).
+ * A179179 <code>a(n) = phi(n) - omega(n) = A000010(n) - A001221(n)</code>.
  * @author Georg Fischer
  */
 public class A179179 implements Sequence {

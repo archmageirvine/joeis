@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000010;
 
 /**
- * A243305 a(n) = 2^phi(n)+1 = A066781(n)+1.
+ * A243305 <code>a(n) = 2^phi(n)+1 = A066781(n)+1</code>.
  * @author Georg Fischer
  */
 public class A243305 implements Sequence {

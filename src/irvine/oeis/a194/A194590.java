@@ -8,7 +8,7 @@ import irvine.oeis.a056.A056040;
 import irvine.oeis.a152.A152271;
 
 /**
- * A194590 a(n) = (-1)^n*(A056040(n+1)*A152271(n)-2^n)/2.
+ * A194590 <code>a(n) = (-1)^n*(A056040(n+1)*A152271(n)-2^n)/2</code>.
  * @author Georg Fischer
  */
 public class A194590 implements Sequence {

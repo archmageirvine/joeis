@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002457;
 import irvine.oeis.a003.A003046;
 
 /**
- * A185149 a(n) = 3^n*A003046(n+1)/A002457(n).
+ * A185149 <code>a(n) = 3^n*A003046(n+1)/A002457(n)</code>.
  * @author Georg Fischer
  */
 public class A185149 implements Sequence {

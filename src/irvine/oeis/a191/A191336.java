@@ -8,7 +8,7 @@ import irvine.oeis.a022.A022838;
 import irvine.oeis.a054.A054406;
 
 /**
- * A191336 (A022838 mod 2)+(A054406 mod 2)
+ * A191336 <code>(A022838 mod 2)+(A054406 mod 2)</code>.
  * @author Georg Fischer
  */
 public class A191336 implements Sequence {

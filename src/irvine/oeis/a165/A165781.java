@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002326;
 
 /**
- * A165781 a(n) = (2^A002326(n)-1)/(2*n+1).
+ * A165781 <code>a(n) = (2^A002326(n)-1)/(2*n+1)</code>.
  * @author Georg Fischer
  */
 public class A165781 implements Sequence {

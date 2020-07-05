@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A145594 A145593(n) mod 9.
+ * A145594 <code>A145593(n) mod 9</code>.
  * @author Georg Fischer
  */
 public class A145594 implements Sequence {

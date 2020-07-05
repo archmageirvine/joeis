@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A101926 a(n) = 2^A101925(n).
+ * A101926 <code>a(n) = 2^A101925(n)</code>.
  * @author Georg Fischer
  */
 public class A101926 implements Sequence {

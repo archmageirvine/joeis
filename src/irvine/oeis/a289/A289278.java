@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005259;
 
 /**
- * A289278 a(n) = A005259(n) mod (2*n+1)^2.
+ * A289278 <code>a(n) = A005259(n) mod (2*n+1)^2</code>.
  * @author Georg Fischer
  */
 public class A289278 implements Sequence {

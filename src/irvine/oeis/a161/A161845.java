@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002808;
 import irvine.oeis.a141.A141468;
 
 /**
- * A161845 a(n) = A002808(n)^A141468(n).
+ * A161845 <code>a(n) = A002808(n)^A141468(n)</code>.
  * @author Georg Fischer
  */
 public class A161845 implements Sequence {

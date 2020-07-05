@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001221;
 import irvine.oeis.a001.A001222;
 
 /**
- * A229121 a(n) = Omega(n)^2 - omega(n)^2 = A001222(n)^2 - A001221(n)^2.
+ * A229121 <code>a(n) = Omega(n)^2 - omega(n)^2 = A001222(n)^2 - A001221(n)^2</code>.
  * @author Georg Fischer
  */
 public class A229121 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000217;
 import irvine.oeis.a000.A000312;
 
 /**
- * A109391 a(n) = (n^(n+1))*(n + 1)/2 = A000217(n)*A000312(n).
+ * A109391 <code>a(n) = (n^(n+1))*(n + 1)/2 = A000217(n)*A000312(n)</code>.
  * @author Georg Fischer
  */
 public class A109391 implements Sequence {

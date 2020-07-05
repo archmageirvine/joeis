@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000139;
 
 /**
- * A324964 a(n) = A000139(n) mod 2; Characteristic function of odd fibbinary numbers (A022341).
+ * A324964 <code>a(n) = A000139(n) mod 2;</code> Characteristic function of odd fibbinary numbers <code>(A022341)</code>.
  * @author Georg Fischer
  */
 public class A324964 implements Sequence {

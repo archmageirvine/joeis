@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000712;
 import irvine.oeis.a011.A011782;
 
 /**
- * A116600 a(n) = A011782(n) + A000219(n) - A000712(n).
+ * A116600 <code>a(n) = A011782(n) + A000219(n) - A000712(n)</code>.
  * @author Georg Fischer
  */
 public class A116600 implements Sequence {

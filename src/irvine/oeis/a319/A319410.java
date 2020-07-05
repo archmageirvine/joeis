@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a032.A032741;
 
 /**
- * A319410 Twice A032741.
+ * A319410 Twice <code>A032741</code>.
  * @author Georg Fischer
  */
 public class A319410 implements Sequence {

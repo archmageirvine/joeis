@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000984;
 import irvine.oeis.a081.A081085;
 
 /**
- * A239226 a(n) = A000984(n) * A081085(n).
+ * A239226 <code>a(n) = A000984(n) * A081085(n)</code>.
  * @author Georg Fischer
  */
 public class A239226 implements Sequence {

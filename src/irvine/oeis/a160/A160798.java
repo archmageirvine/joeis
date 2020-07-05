@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A160798 a(n) = A160797(n+2)/3.
+ * A160798 <code>a(n) = A160797(n+2)/3</code>.
  * @author Georg Fischer
  */
 public class A160798 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a155.A155067;
 import irvine.oeis.a155.A155750;
 
 /**
- * A110854 A155750(n)-A155067(n) = prime(2n+2)-prime(2n+1)-prime(2n)+prime(2n-1).
+ * A110854 <code>A155750(n)-A155067(n) = prime(2n+2)-prime(2n+1)-prime(2n)+prime(2n-1)</code>.
  * @author Georg Fischer
  */
 public class A110854 implements Sequence {

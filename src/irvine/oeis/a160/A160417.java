@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A160417 a(n) = A160415(n+1)/4.
+ * A160417 <code>a(n) = A160415(n+1)/4</code>.
  * @author Georg Fischer
  */
 public class A160417 implements Sequence {

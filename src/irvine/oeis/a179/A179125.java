@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000037;
 
 /**
- * A179125 a(n) = A000037(n)^3.
+ * A179125 <code>a(n) = A000037(n)^3</code>.
  * @author Georg Fischer
  */
 public class A179125 implements Sequence {

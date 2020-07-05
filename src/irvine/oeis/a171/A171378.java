@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006046;
 
 /**
- * A171378 a(n) = (n+1)^2 - A006046(n+1).
+ * A171378 <code>a(n) = (n+1)^2 - A006046(n+1)</code>.
  * @author Georg Fischer
  */
 public class A171378 implements Sequence {

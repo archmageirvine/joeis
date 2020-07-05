@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033274.
+ * A033274 Primes that do not contain any other prime as a substring.
  * @author Sean A. Irvine
  */
 public class A033274 extends A000040 {

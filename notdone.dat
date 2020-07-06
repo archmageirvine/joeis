@@ -1301,3 +1301,4 @@ A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal no
 A033186 Remove all 2's from decimal expansion of Pi, then all 3's, ..., then all 11's, ... (running through primes in order), ill-defined?
 A033188 Minimal difference of any increasing arithmetic progression of n primes
 A033189 Smallest first term of arithmetic progression of n primes with difference A033188(n)
+A033288 Theta series of 20-dimensional lattice L_20 with group 2.M_22.2

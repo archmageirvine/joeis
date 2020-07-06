@@ -9,6 +9,7 @@ import irvine.oeis.FiniteSequence;
  */
 public class A033290 extends FiniteSequence {
 
+  /** Construct the sequence. */
   public A033290() {
     super(
       new Z("100996972469714247637786655587969840329509324689190041803603417758904341703348882159067229719"),

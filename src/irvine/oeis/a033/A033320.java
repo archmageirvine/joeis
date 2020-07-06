@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  */
 public class A033320 implements Sequence {
 
-  private CR C = CR.valueOf(new Q(3, 2));
+  private static final CR C = CR.valueOf(new Q(3, 2));
   private int mN = -1;
 
   @Override

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 // DO NOT EDIT here!
 
 import irvine.oeis.DifferenceSequence;
-import irvine.oeis.a000.A000108;
+import irvine.oeis.a026.A026012;
 
 /**
  * A033434 Third differences of Catalan numbers <code>A000108</code>.
@@ -13,6 +13,6 @@ public class A033434 extends DifferenceSequence {
 
   /** Construct the sequence. */
   public A033434() {
-    super(new DifferenceSequence(new DifferenceSequence(new A000108())));
+    super(new A026012());
   }
 }

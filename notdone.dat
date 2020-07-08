@@ -1298,7 +1298,23 @@ A032435 Triangle of second-to-last man to survive in Josephus problem of n men i
 A032436 Triangle of third-to-last man to survive in the Josephus problem of n men in a circle with every k-th killed, with k<=n, data doesn't matched definition?
 A032800 If there were a 9-dimensional unimodular lattice with minimal norm 2, this would be its theta series; however, no such lattice exists
 A032802 Theta series of extremal odd unimodular lattice D_8^{+2} with minimal norm 2 in dimension 16
-A033186 Remove all 2's from decimal expansion of Pi, then all 3's, ..., then all 11's, ... (running through primes in order), ill-defined?
 A033188 Minimal difference of any increasing arithmetic progression of n primes
 A033189 Smallest first term of arithmetic progression of n primes with difference A033188(n)
 A033288 Theta series of 20-dimensional lattice L_20 with group 2.M_22.2
+A033512 Number of matchings in graph P_{9} X P_{n}, will have rat g.f.
+A033513 Number of matchings in graph P_{10} X P_{n}, will have rat g.f.
+A033514 Number of matchings in graph P_{11} X P_{n}, will have rat g.f.
+A033521 Number of matchings in graph C_{9} X P_{n}, will have rat g.f.
+A033522 Number of matchings in graph C_{10} X P_{n}, will have rat g.f.
+A033523 Number of matchings in graph C_{11} X P_{n}
+A033524 Number of matchings in graph C_{12} X P_{n}
+A033525 Number of matchings in graph C_{13} X P_{n}
+A033527 Number of matchings in graph P_{2} X P_{4} X P_{n}
+A033528 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033529 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033530 Number of matchings in graph P_{2} X P_{5} X P_{n}
+A033531 Number of matchings in graph P_{3} X P_{4} X P_{n}
+A033532 Number of matchings in graph C_{4} X C_{4} X P_{n}
+A033533 Number of matchings in graph P_{4} X P_{4} X P_{n}
+A033534 Number of matchings in graph P_{5} X P_{5} X P_{n}
+A033535 Number of matchings in graph P_{n} X P_{n} X P_{n}

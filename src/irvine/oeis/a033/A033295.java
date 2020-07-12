@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033295 <code>[ GAMMA(sqrt(n)) ]</code>.
+ * A033295 <code>a(n) = [ Gamma(sqrt(n)) ]</code>.
  * @author Sean A. Irvine
  */
 public class A033295 implements Sequence {

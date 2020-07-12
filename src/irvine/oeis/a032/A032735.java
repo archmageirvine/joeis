@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A032735 Palindromes that cannot be prefixed or followed by any digit to form a prime.
+ * A032735 Palindromes that cannot be prefixed and followed by any digit to form a prime.
  * @author Sean A. Irvine
  */
 public class A032735 extends A002113 {

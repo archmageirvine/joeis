@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
 /**
- * A085274 <code>(n!/n#) + 1</code> is a semiprime, where <code>n# =</code> primorial numbers <code>A034386</code>.
+ * A085274 Composite k such that <code>(k!/k#) + 1</code> is a semiprime, where <code>k# =</code> primorial numbers <code>A034386</code>.
  * @author Sean A. Irvine
  */
 public class A085274 extends SemiprimeSequence {

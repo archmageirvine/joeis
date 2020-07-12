@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032745 <code>Super-5</code> Numbers <code>(5 x n^5</code> contains substring <code>'55555'</code> in its decimal expansion).
+ * A032745 <code>Super-5</code> Numbers <code>(5 * n^5</code> contains substring <code>'55555'</code> in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A032745 implements Sequence {

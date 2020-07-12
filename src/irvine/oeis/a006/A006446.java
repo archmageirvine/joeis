@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006446 Numbers n such that <code>floor(sqrt(n))</code> divides <code>n</code>.
+ * A006446 Numbers k such that <code>floor(sqrt(k))</code> divides k.
  * @author Sean A. Irvine
  */
 public class A006446 implements Sequence {

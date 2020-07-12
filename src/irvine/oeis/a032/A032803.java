@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032803 Expansion of <code>sum( q^i*theta_3^i, i=0..inf)</code>.
+ * A032803 Expansion of <code>Sum_{i&gt;=0} q^i*theta_3^i</code>.
  * @author Sean A. Irvine
  */
 public class A032803 implements Sequence {

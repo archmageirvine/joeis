@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010785;
 
 /**
- * A033618 Number of ways n-th repdigit number <code>(A010785[ n ])</code> can be expressed as a polygonal number.
+ * A033618 Number of ways n-th repdigit number, <code>A010785(n)</code>, can be expressed as a polygonal number.
  * @author Sean A. Irvine
  */
 public class A033618 extends A010785 {

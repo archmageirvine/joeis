@@ -1318,3 +1318,4 @@ A033532 Number of matchings in graph C_{4} X C_{4} X P_{n}
 A033533 Number of matchings in graph P_{4} X P_{4} X P_{n}
 A033534 Number of matchings in graph P_{5} X P_{5} X P_{n}
 A033535 Number of matchings in graph P_{n} X P_{n} X P_{n}
+A033635 Square-root-perfect numbers: srsigma(n)=m*n^(1/2) for some integer m, insufficient detail

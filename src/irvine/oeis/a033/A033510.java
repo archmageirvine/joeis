@@ -13,8 +13,7 @@ public class A033510 extends GeneratingFunctionSequence {
    * Construct the sequence.
    */
   public A033510() {
-    super(0,
-      new Z[] {
+    super(0, new Z[] {
         Z.ONE,
         new Z("-29"),
         new Z("-2320"),
@@ -85,8 +84,7 @@ public class A033510 extends GeneratingFunctionSequence {
         new Z("2043"),
         new Z("396"),
         new Z("-5"),
-        Z.NEG_ONE
-      },
+        Z.NEG_ONE},
       new Z[] {
         Z.ONE,
         new Z("-50"),
@@ -160,8 +158,6 @@ public class A033510 extends GeneratingFunctionSequence {
         new Z("-2584"),
         new Z("-458"),
         Z.SIX,
-        Z.ONE
-      }
-    );
+        Z.ONE});
   }
 }

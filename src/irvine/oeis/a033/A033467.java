@@ -19,7 +19,7 @@ public class A033467 implements Sequence {
 
   @Override
   public Z next() {
-    mSum = mSum.add(new Q(1, (++mN * mN + 1)));
+    mSum = mSum.add(new Q(1, ++mN * mN + 1));
     return select(mSum);
   }
 }

@@ -18,7 +18,7 @@ public class A033465 implements Sequence {
 
   @Override
   public Z next() {
-    return select(new Q(1, (++mN * mN + 1)).subtract(new Q(1, (mN + 1) * (mN + 1) + 1)));
+    return select(new Q(1, ++mN * mN + 1).subtract(new Q(1, (mN + 1) * (mN + 1) + 1)));
   }
 }
 

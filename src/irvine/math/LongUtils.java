@@ -703,8 +703,34 @@ public final class LongUtils {
     }
     return s;
   }
+
+  /**
+   * Kronecker matrix product (tensor product). Suitable for relatively small integer matrices.
+   * @param a first matrix
+   * @param b second matrix
+   * @return Kronecker product
+   */
+  public static long[][] kroneckerProduct(final long[][] a, final long[][] b) {
+    final long[][] c = new long[a.length * b.length][a[0].length * b[0].length];
+    for (int y = 0; y < a.length; ++y) {
+      for (int x = 0; x < a[0].length; ++x) {
+        for (int u = 0; u < b.length; ++u) {
+          for (int v = 0; v < b[0].length; ++v) {
+            c[y * b.length + u][x * b[0].length + v] = a[y][x] * b[u][v];
+          }
+        }
+      }
+    }
+    return c;
+  }
+
+  /**
+   * Kronecker matrix square.
+   * @param a matrix
+   * @return Kronecker product
+   */
+  public static long[][] kroneckerSquare(final long[][] a) {
+    return kroneckerProduct(a, a);
+  }
 }
-
-
-
 

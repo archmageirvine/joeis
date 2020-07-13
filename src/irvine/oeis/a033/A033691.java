@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033691.
+ * A033691 Minimal number of vertices in 1-1 deficient regular graph where minimal degree is 1 and maximal degree is <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A033691 implements Sequence {

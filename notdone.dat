@@ -1322,11 +1322,8 @@ A033635 Square-root-perfect numbers: srsigma(n)=m*n^(1/2) for some integer m, in
 A033688 Theta series of tensor cube of A_2 lattice (dimension 8, det 3^12), insufficient detail
 A033689 Number of extreme quadratic forms or lattices in dimension n
 A033692 Theta series of lattice D_4 tensor D_4 (dimension 16, det. 65536, min. norm 4)
-A033693 Theta series of lattice D3 tensor D3 (dimension 9, det. 4096, min. norm 4)
-A033694 Theta series of lattice D3 tensor D3* (dimension 9, det. 262144, min. norm 6)
 A033695 Theta series of lattice E6 tensor E6 (dimension 36, det. 531441, min. norm 4)
 A033696 Theta series of lattice D_3 tensor D_4 (dimension 12, det. 16384, min. norm 4)
 A033697 Theta series of lattice A_2 tensor D_5 (dimension 10, det. 3888, min. norm 4)
 A033698 Theta series of lattice A_2 tensor E_6 (dimension 12, det. 6561, min. norm 4)
 A033699 Theta series of lattice A_2 tensor E_7 (dimension 14, determinant 8748, minimal norm 4)
-A033700 Number of connected transitive 4-valent (or quartic) graphs with n nodes

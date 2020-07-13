@@ -1,11 +1,15 @@
 package irvine.math.graph;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 
 import irvine.math.IntegerUtils;
+import irvine.math.nauty.Nauty;
+import irvine.math.nauty.OptionBlk;
+import irvine.math.nauty.StatsBlk;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -297,5 +301,19 @@ public final class GraphUtils {
     return IntegerUtils.max(c) / 2;
   }
 
-
+  /**
+   * Test if a graph is vertex transitive.
+   * @param graph graph to test
+   * @return true iff the graph is vertex transitive
+   */
+  public static boolean isTransitive(final Graph graph) {
+    final StatsBlk mNautyStats = new StatsBlk();
+    final int[] orbits = new int[graph.order()];
+    try {
+      new Nauty(graph, new int[graph.order()], new int[graph.order()], null, orbits, new OptionBlk(), mNautyStats, new long[50]);
+    } catch (final IOException e) {
+      throw new RuntimeException(e);
+    }
+    return IntegerUtils.isZero(orbits);
+  }
 }

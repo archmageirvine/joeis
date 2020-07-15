@@ -9,7 +9,7 @@ import irvine.oeis.a023.A023902;
 public class A008445 extends A023902 {
 
   @Override
-  protected int order() {
+  protected int dimension() {
     return 5;
   }
 }

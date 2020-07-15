@@ -8,13 +8,13 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023926.
+ * A023926 Theta series of <code>A*_14</code> lattice.
  * @author Sean A. Irvine
  */
 public class A023926 implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private int mN = -2;
+  private int mN = (dimension() & 1) - 2;
 
   protected int dimension() {
     return 14;
@@ -32,14 +32,27 @@ public class A023926 implements Sequence {
       if (m + 1 - k2 > 0) {
         final long[] t = new long[m + 1 - k2];
         ++t[0];
-        int u;
-        for (int j = 1; (u = n * j * j + 2 * k * j) < t.length; ++j) {
+        for (int u, j = 1; (u = n * j * j + 2 * k * j) < t.length; ++j) {
           ++t[u];
         }
-        for (int j = 1; (u = n * j * j - 2 * k * j) < t.length; ++j) {
+        for (int u, j = 1; (u = n * j * j - 2 * k * j) < t.length; ++j) {
           ++t[u];
         }
         sum = RING.add(sum, RING.multiply(RING.pow(Polynomial.create(t), n, t.length - 1), Z.TWO).shift(k2));
+      }
+    }
+    if ((n & 1) == 0) {
+      final int ns4 = (n / 2) * (n / 2);
+      if (m + 1 - ns4 > 0) {
+        final long[] t = new long[m + 1 - ns4];
+        t[0] = 1;
+        for (int u, j = 1; (u = n * j * j + n * j) < t.length; ++j) {
+          ++t[u];
+        }
+        for (int u, j = 1; (u = n * j * j - n * j) < t.length; ++j) {
+          ++t[u];
+        }
+        sum = RING.add(sum, RING.pow(Polynomial.create(t), n, t.length - 1).shift(ns4));
       }
     }
     return sum;
@@ -47,7 +60,7 @@ public class A023926 implements Sequence {
 
   @Override
   public Z next() {
-    mN += 2;
+    mN += 2 - (dimension() & 1);
     return RING.coeff(f(dimension() + 1, mN), ThetaFunctions.theta3z(mN), mN);
   }
 }

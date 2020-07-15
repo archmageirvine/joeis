@@ -1,27 +1,13 @@
 package irvine.oeis.a023;
 
-import irvine.oeis.GramMatrixThetaSeries;
-
 /**
  * A023923 Theta series of <code>A*_11</code> lattice.
  * @author Sean A. Irvine
  */
-public class A023923 extends GramMatrixThetaSeries {
+public class A023923 extends A023926 {
 
-  /** Construct the sequence. */
-  public A023923() {
-    super(new long[][]{
-      {11, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-      {-1, 11, -1, -1, -1, -1, -1, -1, -1, -1, -1},
-      {-1, -1, 11, -1, -1, -1, -1, -1, -1, -1, -1},
-      {-1, -1, -1, 11, -1, -1, -1, -1, -1, -1, -1},
-      {-1, -1, -1, -1, 11, -1, -1, -1, -1, -1, -1},
-      {-1, -1, -1, -1, -1, 11, -1, -1, -1, -1, -1},
-      {-1, -1, -1, -1, -1, -1, 11, -1, -1, -1, -1},
-      {-1, -1, -1, -1, -1, -1, -1, 11, -1, -1, -1},
-      {-1, -1, -1, -1, -1, -1, -1, -1, 11, -1, -1},
-      {-1, -1, -1, -1, -1, -1, -1, -1, -1, 11, -1},
-      {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 11}
-    });
+  @Override
+  protected int dimension() {
+    return 11;
   }
 }

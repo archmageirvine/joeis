@@ -56,13 +56,13 @@ public class A023902 implements Sequence {
     return RING.divide(RING.series(num, den, prec), Z.valueOf(n));
   }
 
-  protected int order() {
+  protected int dimension() {
     return 11;
   }
 
   @Override
   public Z next() {
     mN += 2;
-    return aaa(order() + 1, mN).coeff(mN);
+    return aaa(dimension() + 1, mN).coeff(mN);
   }
 }

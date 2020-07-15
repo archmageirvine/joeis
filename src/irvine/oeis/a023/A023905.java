@@ -7,7 +7,7 @@ package irvine.oeis.a023;
 public class A023905 extends A023902 {
 
   @Override
-  protected int order() {
+  protected int dimension() {
     return 14;
   }
 }

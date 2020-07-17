@@ -1307,7 +1307,6 @@ A033533 Number of matchings in graph P_{4} X P_{4} X P_{n}
 A033534 Number of matchings in graph P_{5} X P_{5} X P_{n}
 A033535 Number of matchings in graph P_{n} X P_{n} X P_{n}
 A033635 Square-root-perfect numbers: srsigma(n)=m*n^(1/2) for some integer m, insufficient detail
-A033688 Theta series of tensor cube of A_2 lattice (dimension 8, det 3^12), insufficient detail
 A033689 Number of extreme quadratic forms or lattices in dimension n
 A033692 Theta series of lattice D_4 tensor D_4 (dimension 16, det. 65536, min. norm 4)
 A033695 Theta series of lattice E6 tensor E6 (dimension 36, det. 531441, min. norm 4)

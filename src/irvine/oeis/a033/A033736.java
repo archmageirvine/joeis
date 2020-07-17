@@ -1,13 +1,13 @@
 package irvine.oeis.a033;
 
 /**
- * A033762.
+ * A033736.
  * @author Sean A. Irvine
  */
-public class A033762 extends A033763 {
+public class A033736 extends A033720 {
 
   @Override
   protected int base() {
-    return 3;
+    return 24;
   }
 }

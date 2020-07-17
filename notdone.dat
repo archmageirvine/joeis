@@ -1314,3 +1314,11 @@ A033696 Theta series of lattice D_3 tensor D_4 (dimension 12, det. 16384, min. n
 A033697 Theta series of lattice A_2 tensor D_5 (dimension 10, det. 3888, min. norm 4)
 A033698 Theta series of lattice A_2 tensor E_6 (dimension 12, det. 6561, min. norm 4)
 A033699 Theta series of lattice A_2 tensor E_7 (dimension 14, determinant 8748, minimal norm 4)
+A033704 Fancy primitive repdigit polygonal numbers, lots of mucking around to do
+A033705 Fancy primitive repdigit polygonal numbers (with multiplicity), depends A033704
+A033706 Values of k associated with A033705
+A033707 Values of n associated with A033705
+A033708 Number of simple repdigit polyhedral numbers with n digits
+A033709 Number of simple repdigit polyhedral numbers with <=n digits
+A033710 Number of fancy repdigit polyhedral numbers with n digits
+A033711 Number of fancy repdigit polyhedral numbers with <=n digits

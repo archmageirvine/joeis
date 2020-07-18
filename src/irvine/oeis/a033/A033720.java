@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033720.
+ * A033720 Product <code>theta3(q^d); d | 8</code>.
  * @author Sean A. Irvine
  */
 public class A033720 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a138.A138613;
 
 /**
- * A033766.
+ * A033766 Number of prime divisors (counted without multiplicity) of <code>A138613(n)</code>.
  * @author Sean A. Irvine
  */
 public class A033766 extends A138613 {

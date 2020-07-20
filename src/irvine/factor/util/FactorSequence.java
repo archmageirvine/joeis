@@ -673,7 +673,7 @@ public final class FactorSequence {
    * Return the number of the unitary divisors in this factor sequence.
    * @return number of unitary divisors
    */
-  public long unitarySigma0() {
+  public Z unitarySigma0() {
     if (!isComplete()) {
       throw new UnsupportedOperationException();
     }
@@ -683,7 +683,7 @@ public final class FactorSequence {
       final Z unitary = p.pow(e);
       flatten.add(unitary, FactorSequence.PRIME);
     }
-    return flatten.sigma0AsLong();
+    return flatten.sigma0();
   }
 
   /**

@@ -200,6 +200,9 @@ public final class ZUtils {
    * @return sorted number
    */
   public static Z sortDigitsAscending(final Z n) {
+    if (Z.ZERO.equals(n)) {
+      return Z.ZERO;
+    }
     final int[] counts = digitCounts(n);
     int numDigits = 0;
     for (int k = 1; k < counts.length; ++k) {

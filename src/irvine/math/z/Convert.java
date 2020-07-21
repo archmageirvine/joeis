@@ -110,7 +110,7 @@ public final class Convert {
     int bytes = 1 + (Bit.bitLength(n) >>> 3);
     final byte[] num = new byte[bytes];
     int offset = 1;
-    long value = (long) n.mValue[0];
+    long value = n.mValue[0];
     int bitsLeft = Z.BASE_BITS;
     // Change endianness and base
     while (--bytes >= 0) {
@@ -137,9 +137,9 @@ public final class Convert {
     case 0:
       return 0L;
     case 1:
-      return (long) n.mValue[0];
+      return n.mValue[0];
     case -1:
-      return (long) -n.mValue[0];
+      return -n.mValue[0];
     case 2:
       return ((long) n.mValue[1] << Z.BASE_BITS) | n.mValue[0];
     case -2:
@@ -161,7 +161,7 @@ public final class Convert {
     double r = 0.0;
     for (int i = (sign ? -n.getSize() : n.getSize()) - 1; i >= 0; --i) {
       r *= Z.DBASE;
-      r += (double) n.mValue[i];
+      r += n.mValue[i];
     }
     return sign ? -r : r;
   }

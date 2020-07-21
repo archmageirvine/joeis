@@ -10,6 +10,8 @@ import java.util.Random;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
+import irvine.util.array.DynamicArray;
+import irvine.util.array.DynamicIntArray;
 
 /**
  * Utility functions.
@@ -19,9 +21,77 @@ public final class ZUtils {
 
   private ZUtils() { }
 
+  // Several functions relating to processing the digits of a number in a particular
+  // base can be made faster by operating on several digits at a time.  The
+  // following tables work out how many digits in a given base safely fit inside a
+  // signed long.
+  private static final DynamicArray<Z> BASE_POWER = new DynamicArray<>();
+  private static final DynamicIntArray LOG_BASE_POWER = new DynamicIntArray();
+
+  private static Z basePower(final int base) {
+    final Z bp = BASE_POWER.get(base);
+    if (bp != null) {
+      return bp;
+    }
+    int lu = 0;
+    Z t = Z.valueOf(base);
+    Z u = Z.ONE;
+    while (t.bitLength() < Long.SIZE) {
+      u = t;
+      t = t.multiply(base);
+      ++lu;
+    }
+    BASE_POWER.set(base, u);
+    LOG_BASE_POWER.set(base, lu);
+    return u;
+  }
+
+  private static void digitCounts(final int[] counts, long v, final int base) {
+    while (v != 0) {
+      ++counts[(int) (v % base)];
+      v /= base;
+    }
+  }
+
+  /**
+   * Return the count of each digit in the number when written in the specified base.
+   * @param n number
+   * @param base base to use
+   * @return count of each digit
+   */
+  public static int[] digitCounts(final Z n, final int base) {
+    final int[] counts = new int[base];
+    if (Z.ZERO.equals(n)) {
+      ++counts[0];
+    } else {
+      Z m = n.abs();
+      final Z bb = basePower(base);
+      final int lu = LOG_BASE_POWER.get(base);
+      while (m.compareTo(bb) >= 0) {
+        final Z[] qr = m.divideAndRemainder(bb);
+        long v = qr[1].longValue();
+        for (int k = 0; k < lu; ++k) {
+          ++counts[(int) (v % base)];
+          v /= base;
+        }
+        m = qr[0];
+      }
+      digitCounts(counts, m.longValue(), base);
+    }
+    return counts;
+  }
+
+  /**
+   * Return the count of each digit in the number
+   * @param n number
+   * @return count of each digit
+   */
+  public static int[] digitCounts(final Z n) {
+    return digitCounts(n, 10);
+  }
+
   /**
    * Compute the sum of the digits in an integer.
-   *
    * @param v integer
    * @param base the base
    * @return sum of digits
@@ -35,19 +105,18 @@ public final class ZUtils {
     return sum;
   }
 
-
   /**
    * Compute the sum of the digits in an integer.
-   *
    * @param v integer
    * @param base the base
    * @return sum of digits
    */
-  public static long digitSum(Z v, final Z base) {
+  public static long digitSum(Z v, final int base) {
+    final Z bp = basePower(base);
     long sum = 0;
     while (!Z.ZERO.equals(v)) {
-      final Z[] qr = v.divideAndRemainder(base);
-      sum += qr[1].longValue();
+      final Z[] qr = v.divideAndRemainder(bp);
+      sum += digitSum(qr[1].longValue(), base);
       v = qr[0];
     }
     return sum;
@@ -55,7 +124,6 @@ public final class ZUtils {
 
   /**
    * Compute the sum of the digits in an integer.
-   *
    * @param v integer
    * @return sum of digits
    */
@@ -63,24 +131,13 @@ public final class ZUtils {
     return digitSum(v, 10);
   }
 
-
   /**
    * Compute the sum of the digits in an integer.
-   *
    * @param v integer
    * @return sum of digits
    */
-  public static long digitSum(Z v) {
-    long sum = 0;
-    if (v.bitLength() < Long.SIZE) {
-      sum += digitSum(v.longValue());
-    } else {
-      while (!Z.ZERO.equals(v)) {
-        sum += digitSum(v.mod(1000000000000000000L));
-        v = v.divide(1000000000000000000L);
-      }
-    }
-    return sum;
+  public static long digitSum(final Z v) {
+    return digitSum(v, 10);
   }
 
   private static long digitProduct(long v) {
@@ -465,7 +522,7 @@ public final class ZUtils {
     final int bits = max.bitLength() + 1;
     final int wordCount = (bits + Z.BASE_BITS - 1) / Z.BASE_BITS;
     final int excessInLastWord = wordCount * Z.BASE_BITS - bits;
-    assert excessInLastWord >= 0 && excessInLastWord < Z.BASE_BITS : String.valueOf(excessInLastWord) + " " + bits;
+    assert excessInLastWord >= 0 && excessInLastWord < Z.BASE_BITS : excessInLastWord + " " + bits;
     //assert Z.BASE_BITS < 31;
     final int lastWordMask = -1 >>> excessInLastWord;
     final int[] words = new int[wordCount];
@@ -508,35 +565,6 @@ public final class ZUtils {
     final Z changedBits = x.xor(leftBits);
     final Z rightBits = changedBits.divide(lowestBit).shiftRight(2);
     return leftBits.or(rightBits);
-  }
-
-  /**
-   * Return the count of each digit in the number when written in the specified base.
-   * @param n number
-   * @param base base to use
-   * @return count of each digit
-   */
-  public static int[] digitCounts(final Z n, final int base) {
-    final int[] counts = new int[base];
-    if (Z.ZERO.equals(n)) {
-      ++counts[0];
-    } else {
-      Z m = n.abs();
-      while (!Z.ZERO.equals(m)) {
-        ++counts[(int) m.mod(base)];
-        m = m.divide(base);
-      }
-    }
-    return counts;
-  }
-
-  /**
-   * Return the count of each digit in the number
-   * @param n number
-   * @return count of each digit
-   */
-  public static int[] digitCounts(final Z n) {
-    return digitCounts(n, 10);
   }
 
   /**
@@ -656,13 +684,15 @@ public final class ZUtils {
    */
   public static Z sortDigitsAscending(final Z n) {
     final int[] counts = digitCounts(n);
-    Z res = Z.ZERO;
+    int numDigits = 0;
     for (int k = 1; k < counts.length; ++k) {
-      for (int j = 0; j < counts[k]; ++j) {
-        res = res.multiply(10).add(k);
-      }
+      numDigits += counts[k];
     }
-    return res;
+    final char[] c = new char[numDigits];
+    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return new Z(new String(c));
   }
 
   /**
@@ -672,12 +702,14 @@ public final class ZUtils {
    */
   public static Z sortDigitsDescending(final Z n) {
     final int[] counts = digitCounts(n);
-    Z res = Z.ZERO;
-    for (int k = 9; k >= 0; --k) {
-      for (int j = 0; j < counts[k]; ++j) {
-        res = res.multiply(10).add(k);
-      }
+    int numDigits = 0;
+    for (final int count : counts) {
+      numDigits += count;
     }
-    return res;
+    final char[] c = new char[numDigits];
+    for (int k = 9, j = 0; k >= 0; j += counts[k--]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return new Z(new String(c));
   }
 }

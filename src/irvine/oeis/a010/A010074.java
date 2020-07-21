@@ -22,7 +22,7 @@ public class A010074 implements Sequence {
       }
       mB = Z.ONE;
     } else {
-      final Z t = Z.valueOf(ZUtils.digitSum(mA, Z.SEVEN) + ZUtils.digitSum(mB, Z.SEVEN));
+      final Z t = Z.valueOf(ZUtils.digitSum(mA, 7) + ZUtils.digitSum(mB, 7));
       mA = mB;
       mB = t;
     }

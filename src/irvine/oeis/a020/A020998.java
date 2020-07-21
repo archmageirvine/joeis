@@ -10,13 +10,12 @@ import irvine.oeis.a000.A000032;
  */
 public class A020998 extends A000032 {
 
-  private static final Z TWELVE = Z.valueOf(12);
   private long mN = -1;
 
   @Override
   public Z next() {
     while (true) {
-      if (ZUtils.digitSum(super.next(), TWELVE) == ++mN) {
+      if (ZUtils.digitSum(super.next(), 12) == ++mN) {
         return Z.valueOf(mN);
       }
     }

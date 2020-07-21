@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A033720 implements Sequence {
 
-  private final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;
 
   protected int base() {

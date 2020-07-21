@@ -15,7 +15,7 @@ public class A033810 implements Sequence {
   private static final CR LN2 = CR.TWO.log();
   private static final CR LN2S = LN2.multiply(LN2);
   private static final CR LN2S2 = LN2S.multiply(2);
-  private static final CR C0 =CR.THREE.subtract(LN2.multiply(2)).divide(CR.SIX);
+  private static final CR C0 = CR.THREE.subtract(LN2.multiply(2)).divide(CR.SIX);
   private static final CR C1 = CR.NINE.subtract(LN2S.multiply(4));
 
   private long mN = 0;

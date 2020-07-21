@@ -22,7 +22,7 @@ public class A010067 extends ComplementSequence {
       @Override
       public Z next() {
         while (mSet.isEmpty() || mSet.first().compareTo(mN) >= 0) {
-          mSet.add(mN.add(ZUtils.digitSum(mN, Z.SIX)));
+          mSet.add(mN.add(ZUtils.digitSum(mN, 6)));
           mN = mN.add(1);
         }
         return mSet.pollFirst();

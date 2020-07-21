@@ -15,8 +15,8 @@ final class ZString {
   private static final double BASE_LOG_10 = Math.log(Z.DBASE) / Math.log(10.0);
 
   /** Constants used in decimal string creation. */
-  private static final int DIV;
-  private static final int LDIV;
+  protected static final int DIV;
+  protected static final int LDIV;
   private static final String ZEROS;
   static {
     int div = 10;

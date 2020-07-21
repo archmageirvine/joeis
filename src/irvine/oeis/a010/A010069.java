@@ -14,7 +14,7 @@ public class A010069 implements Sequence {
 
   @Override
   public Z next() {
-    mA = mA == null ? Z.ONE : mA.add(ZUtils.digitSum(mA, Z.SEVEN));
+    mA = mA == null ? Z.ONE : mA.add(ZUtils.digitSum(mA, 7));
     return mA;
   }
 }

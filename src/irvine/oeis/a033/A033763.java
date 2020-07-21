@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A033763 implements Sequence {
 
-  private final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
+  private static final QPolynomialRingField<Z> RING = new QPolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -2;
 
   protected int base() {

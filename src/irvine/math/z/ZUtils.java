@@ -143,14 +143,15 @@ public final class ZUtils {
   /**
    * Compute the product of the digits in an integer.
    * @param v integer
+   * @param base the base
    * @return product of digits
    */
-  public static long digitProduct(long v) {
+  public static long digitProduct(final long v, final long base) {
     long m = Math.abs(v);
     long p = 1;
     do {
-      p *= m % 10;
-      m /= 10;
+      p *= m % base;
+      m /= base;
     } while (m != 0 && p != 0);
     return p;
   }
@@ -160,20 +161,100 @@ public final class ZUtils {
    * @param v integer
    * @return product of digits
    */
-  public static Z digitProduct(Z v) {
+  public static long digitProduct(final long v) {
+    return digitProduct(v, 10);
+  }
+
+  /**
+   * Compute the product of the digits in an integer.
+   * @param v integer
+   * @param base the base
+   * @return product of digits
+   */
+  public static Z digitProduct(Z v, final int base) {
     if (Z.ZERO.equals(v)) {
       return Z.ZERO;
     }
+    final Z bp = basePower(base);
     Z prod = Z.ONE;
-    if (v.bitLength() < Long.SIZE) {
-      prod = prod.multiply(digitProduct(v.longValue()));
-    } else {
-      while (!Z.ZERO.equals(v) && !Z.ZERO.equals(prod)) {
-        prod = prod.multiply(digitProduct(v.mod(1000000000000000000L)));
-        v = v.divide(1000000000000000000L);
-      }
+    while (!Z.ZERO.equals(v) && !Z.ZERO.equals(prod)) {
+      final Z[] qr = v.divideAndRemainder(bp);
+      prod = prod.multiply(digitProduct(qr[1].longValue(), base));
+      v = qr[0];
     }
     return prod;
+  }
+
+  /**
+   * Compute the product of the digits in an integer.
+   * @param v integer
+   * @return product of digits
+   */
+  public static Z digitProduct(final Z v) {
+    return digitProduct(v, 10);
+  }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static Z sortDigitsAscending(final Z n) {
+    final int[] counts = digitCounts(n);
+    int numDigits = 0;
+    for (int k = 1; k < counts.length; ++k) {
+      numDigits += counts[k];
+    }
+    final char[] c = new char[numDigits];
+    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return new Z(new String(c));
+  }
+
+  /**
+   * Sort the digits of a number.
+   * @param n number
+   * @return sorted number
+   */
+  public static Z sortDigitsDescending(final Z n) {
+    final int[] counts = digitCounts(n);
+    int numDigits = 0;
+    for (final int count : counts) {
+      numDigits += count;
+    }
+    final char[] c = new char[numDigits];
+    for (int k = 9, j = 0; k >= 0; j += counts[k--]) {
+      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
+    }
+    return new Z(new String(c));
+  }
+
+  /**
+   * Reverse the digits of a number in specified base.
+   * @param n number to reverse
+   * @param base base to use
+   * @return reversed number
+   */
+  public static Z reverse(Z n, final long base) {
+    final Z b = Z.valueOf(base);
+    Z r = Z.ZERO;
+    while (!Z.ZERO.equals(n)) {
+      final Z[] qr = n.divideAndRemainder(b);
+      r = r.multiply(base);
+      r = r.add(qr[1]);
+      n = qr[0];
+    }
+    return r;
+  }
+
+  /**
+   * Reverse the decimal digits of a number.
+   * @param n number to reverse
+   * @return reversed number
+   */
+  public static Z reverse(final Z n) {
+    return reverse(n, 10);
   }
 
   /**
@@ -221,33 +302,6 @@ public final class ZUtils {
   }
 
   /**
-   * Reverse the digits of a number in specified base.
-   * @param n number to reverse
-   * @param base base to use
-   * @return reversed number
-   */
-  public static Z reverse(Z n, final long base) {
-    final Z b = Z.valueOf(base);
-    Z r = Z.ZERO;
-    while (!Z.ZERO.equals(n)) {
-      final Z[] qr = n.divideAndRemainder(b);
-      r = r.multiply(base);
-      r = r.add(qr[1]);
-      n = qr[0];
-    }
-    return r;
-  }
-
-  /**
-   * Reverse the decimal digits of a number.
-   * @param n number to reverse
-   * @return reversed number
-   */
-  public static Z reverse(final Z n) {
-    return reverse(n, 10);
-  }
-
-  /**
    * Describe the number. For example, 3445, is one 3, two 4s, one 5 to give 132415.
    * @param n number to describe
    * @return description of the number
@@ -280,9 +334,10 @@ public final class ZUtils {
    * @return the syndrome
    */
   public static String syndrome(final CharSequence s) {
+    // Like digitCounts, but using string input
     final int[] c = new int[10];
     for (int k = 0; k < s.length(); ++k) {
-      c[s.charAt(k) - '0']++;
+      ++c[s.charAt(k) - '0'];
     }
     return Arrays.toString(c);
   }
@@ -296,7 +351,7 @@ public final class ZUtils {
    * @return the syndrome
    */
   public static String syndrome(final Z n) {
-    return syndrome(n.toString());
+    return Arrays.toString(digitCounts(n));
   }
 
   /**
@@ -681,39 +736,4 @@ public final class ZUtils {
     return sm.mod(product);
   }
 
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @return sorted number
-   */
-  public static Z sortDigitsAscending(final Z n) {
-    final int[] counts = digitCounts(n);
-    int numDigits = 0;
-    for (int k = 1; k < counts.length; ++k) {
-      numDigits += counts[k];
-    }
-    final char[] c = new char[numDigits];
-    for (int k = 1, j = 0; k < counts.length; j += counts[k++]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return new Z(new String(c));
-  }
-
-  /**
-   * Sort the digits of a number.
-   * @param n number
-   * @return sorted number
-   */
-  public static Z sortDigitsDescending(final Z n) {
-    final int[] counts = digitCounts(n);
-    int numDigits = 0;
-    for (final int count : counts) {
-      numDigits += count;
-    }
-    final char[] c = new char[numDigits];
-    for (int k = 9, j = 0; k >= 0; j += counts[k--]) {
-      Arrays.fill(c, j, j + counts[k], (char) ('0' + k));
-    }
-    return new Z(new String(c));
-  }
 }

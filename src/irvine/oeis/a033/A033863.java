@@ -11,7 +11,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A033863.
+ * A033863 Least number of <code>Sort-then-add</code> persistence <code>n</code>.
  * @author Sean A. Irvine
  */
 public class A033863 implements Sequence {

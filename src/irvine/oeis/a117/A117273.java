@@ -1,8 +1,8 @@
 package irvine.oeis.a117;
 
 import irvine.factor.prime.Fast;
-import irvine.math.LongUtils;
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -22,7 +22,7 @@ public class A117273 implements Sequence {
       if (mPrime.isPrime(++mN)) {
         ++mPiN;
       }
-      if (LongUtils.digitProduct(mN) == pi) {
+      if (ZUtils.digitProduct(mN) == pi) {
         return Z.valueOf(mN);
       }
     }

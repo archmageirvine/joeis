@@ -140,19 +140,23 @@ public final class ZUtils {
     return digitSum(v, 10);
   }
 
-  private static long digitProduct(long v) {
-    long prod = 1;
-    while (v != 0 && prod != 0) {
-      prod *= v % 10;
-      v /= 10;
-    }
-    return prod;
+  /**
+   * Compute the product of the digits in an integer.
+   * @param v integer
+   * @return product of digits
+   */
+  public static long digitProduct(long v) {
+    long m = Math.abs(v);
+    long p = 1;
+    do {
+      p *= m % 10;
+      m /= 10;
+    } while (m != 0 && p != 0);
+    return p;
   }
-
 
   /**
    * Compute the product of the digits in an integer.
-   *
    * @param v integer
    * @return product of digits
    */

@@ -33,6 +33,26 @@ public class A033863 implements Sequence {
   protected int mN = -1;
   private long mM = 0; // Last value started to far
 
+  // A lot of chains coalesce, so keep track of previously computed values
+  //private final TreeMap<Z, Z> mCache = new TreeMap<>();
+
+  private Z sortDigits(final Z v) {
+    return ZUtils.sortDigitsAscending(v);
+
+    // Following option is likely faster, but uses a lot of memory
+//    if (v.bitLength() < 60) {
+//      // Don't bother remembering small results
+//      return ZUtils.sortDigitsAscending(v);
+//    }
+//    final Z res = mCache.get(v);
+//    if (res != null) {
+//      return res;
+//    }
+//    final Z t = ZUtils.sortDigitsAscending(v);
+//    mCache.put(v, t);
+//    return t;
+  }
+
   @Override
   public Z next() {
     ++mN;
@@ -46,7 +66,7 @@ public class A033863 implements Sequence {
         final State s = e.getValue();
         while (s.mIndex < mM) {
           ++s.mIndex;
-          final Z t = ZUtils.sortDigitsAscending(s.mValue);
+          final Z t = sortDigits(s.mValue);
           if (t.equals(s.mValue)) {
             if (mLeastSolution.get(s.mIndex) == 0) {
               mLeastSolution.set(s.mIndex, e.getKey());
@@ -68,7 +88,7 @@ public class A033863 implements Sequence {
         Z a = Z.valueOf(++mM);
         boolean solved = false;
         for (int k = 0; k <= mN; ++k) {
-          final Z t = ZUtils.sortDigitsAscending(a);
+          final Z t = sortDigits(a);
           if (t.equals(a)) {
             if (mLeastSolution.get(k) == 0) {
               mLeastSolution.set(k, mM);

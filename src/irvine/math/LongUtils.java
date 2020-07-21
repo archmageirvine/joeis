@@ -394,21 +394,6 @@ public final class LongUtils {
     return sum;
   }
 
-  /**
-   * Compute the product of the digits in <code>|n|</code>.
-   * @param n number
-   * @return digit product
-   */
-  public static long digitProduct(final long n) {
-    long m = Math.abs(n);
-    long p = 1;
-    do {
-      p *= m % 10;
-      m /= 10;
-    } while (m != 0 && p != 0);
-    return p;
-  }
-
   // Faster heuristic algorithms are known
 
   /**

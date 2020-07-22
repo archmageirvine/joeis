@@ -141,6 +141,57 @@ public final class ZUtils {
   }
 
   /**
+   * Compute the sum of the squares of the digits in an integer.
+   * @param v integer
+   * @param base the base
+   * @return sum of squares of digits
+   */
+  public static long digitSumSquares(long v, final long base) {
+    long sum = 0;
+    while (v != 0) {
+      final long t = v % base;
+      sum += t * t;
+      v /= base;
+    }
+    return sum;
+  }
+
+  /**
+   * Compute the sum of the squares of the digits in an integer.
+   * @param v integer
+   * @param base the base
+   * @return sum of squares of digits
+   */
+  public static long digitSumSquares(Z v, final int base) {
+    final Z bp = basePower(base);
+    long sum = 0;
+    while (!Z.ZERO.equals(v)) {
+      final Z[] qr = v.divideAndRemainder(bp);
+      sum += digitSumSquares(qr[1].longValue(), base);
+      v = qr[0];
+    }
+    return sum;
+  }
+
+  /**
+   * Compute the sum of the squares of the digits in an integer.
+   * @param v integer
+   * @return sum of squares of digits
+   */
+  public static long digitSumSquares(final long v) {
+    return digitSumSquares(v, 10);
+  }
+
+  /**
+   * Compute the sum of the squares of the digits in an integer.
+   * @param v integer
+   * @return sum of squares of digits
+   */
+  public static long digitSumSquares(final Z v) {
+    return digitSumSquares(v, 10);
+  }
+
+  /**
    * Compute the product of the digits in an integer.
    * @param v integer
    * @param base the base

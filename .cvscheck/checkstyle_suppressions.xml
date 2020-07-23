@@ -18,6 +18,7 @@
     <suppress checks="FileLength" files=".*Twiddler.java"/>
     <suppress checks="FileLength" files=".*CoordSet2.java"/>
     <suppress checks="FileLength" files=".*Z.java"/>
+    <suppress checks="FileLength" files=".*ZUtils.java"/>
     <suppress checks="FileLength" files=".*A018190.java"/>
     <suppress checks="FileLength" files=".*A028451.java"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>

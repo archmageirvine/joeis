@@ -59,19 +59,19 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
           //  B, A103883
           //  n:= 4; CoefficientList[Series[(Sum[(Binomial[2n + 1, 2k] - 2*k*Binomial[n, k])*x^k, {k, 0, n}])/(1 - x)^n, {x,0,11}],x]
           //  {1, 32, 224, 768, 1856, 3680, 6432, 10304, 15488, 22176, 30560, 40832}
-          coeff = binomial(2 * n + 1, 2 * k).subtract(Z.valueOf(2 * k).multiply(binomial(n, k)));
+          coeff = binomial(2L * n + 1, 2L * k).subtract(Z.valueOf(2L * k).multiply(binomial(n, k)));
           break;
         case 'C':
           //  C, A103884
           //  n:= 4; CoefficientList[Series[(Sum[Binomial[2n,2k]*x^k, {k, 0, n}])/(1-x)^n, {x,0,11}],x]
           //  {1, 32, 192, 608, 1408, 2720, 4672, 7392, 11008, 15648, 21440, 28512}
-          coeff = binomial(2 * n, 2 * k);
+          coeff = binomial(2L * n, 2L * k);
           break;
         case 'D':
           //  D, A103903
           //  n:= 4; CoefficientList[Series[(Sum[(Binomial[2n,2k]-2*n*Binomial[n-2,k-1])*x^k, {k, 0, n}])/(1-x)^n, {x,0,11}],x]
           //  {1, 24, 144, 456, 1056, 2040, 3504, 5544, 8256, 11736, 16080, 21384}
-          coeff = binomial(2 * n, 2 * k).subtract(Z.valueOf(2 * n).multiply(binomial(n - 2, k - 1)));
+          coeff = binomial(2L * n, 2L * k).subtract(Z.valueOf(2L * n).multiply(binomial(n - 2, k - 1)));
           break;
         case 'd':
           //  D*, A035706

@@ -10,6 +10,8 @@ import irvine.math.IntegerUtils;
 import irvine.math.nauty.Nauty;
 import irvine.math.nauty.OptionBlk;
 import irvine.math.nauty.StatsBlk;
+import irvine.math.r.Constants;
+import irvine.math.r.DoubleUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.util.Pair;
@@ -315,5 +317,53 @@ public final class GraphUtils {
       throw new RuntimeException(e);
     }
     return IntegerUtils.isZero(orbits);
+  }
+
+  private static int[] ORDER4 = {0, 2, 1, 3};
+
+  private static int node(final int order, final int u) {
+    // Aesthetic correction for order == 4 graphs
+    if (order == 4) {
+      return ORDER4[u];
+    }
+    return u;
+  }
+
+  /**
+   * Return an unlabelled dot graph representation of a graph.
+   * Uses fixed node positions obeyed by <code>neato</code>.
+   * @param graph graph to convert to dot format
+   * @return string
+   */
+  public static String toDot(final Graph graph) {
+    final int n = graph.order();
+    if (n == 0) {
+      return "graph G {\n}\n";
+    }
+    if (n == 1) {
+      return "graph G {\n  0 [shape=point];\n}\n";
+    }
+    final double alpha = Constants.TAU / n;
+    double theta = (n & 1) == 1 ? 0 : Math.PI / n;
+    final double r = 0.25 / (2 * Math.sin(0.5 * alpha));
+    final StringBuilder sb = new StringBuilder();
+    sb.append("graph G {\n");
+    sb.append("  node [shape=point];\n");
+    // Position nodes
+    for (int k = 0; k < n; ++k, theta += alpha) {
+      sb.append("  ").append(k).append(" [pos=\"")
+        .append(DoubleUtils.NF3.format(r * Math.sin(theta)))
+        .append(',')
+        .append(DoubleUtils.NF3.format(r * Math.cos(theta)))
+        .append("!\"];\n");
+    }
+    // Add edges
+    for (int u = 0; u < n; ++u) {
+      for (int v = graph.nextVertex(u, u); v >= 0; v = graph.nextVertex(u, v)) {
+        sb.append("  ").append(node(n, u)).append("--").append(node(n, v)).append(";\n");
+      }
+    }
+    sb.append("}\n");
+    return sb.toString();
   }
 }

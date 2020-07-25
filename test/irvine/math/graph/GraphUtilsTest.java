@@ -84,4 +84,11 @@ public class GraphUtilsTest extends TestCase {
     assertEquals(Z.FIVE, seq.next());
     assertEquals(Z.valueOf(15), seq.next());
   }
+
+  public void testDot() {
+    final Graph g = GraphFactory.create(3);
+    g.addEdge(0, 1);
+    g.addEdge(1, 2);
+    assertEquals("", GraphUtils.toDot(g));
+  }
 }

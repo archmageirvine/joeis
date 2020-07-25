@@ -1,7 +1,5 @@
 package irvine.math.group;
 
-import java.io.IOException;
-
 import irvine.math.polynomial.CycleIndex;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -19,11 +17,9 @@ public final class GenerateCycleIndexTables {
 
   /**
    * Generate cycle index tables.
-   *
    * @param args ignored
-   * @exception IOException if an I/O error occurs.
    */
-  public static void main(final String[] args) throws IOException {
+  public static void main(final String[] args) {
     if ("sym".equals(args[0])) {
       Z f = Z.ONE;
       for (int k = 1; k <= 12; ++k) {

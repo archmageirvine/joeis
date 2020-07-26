@@ -11,7 +11,7 @@ public class A234692 implements Sequence {
 
   private static final Z[] DIGIT_COUNTS = {
     Z.valueOf(63),
-    Z.valueOf(6),
+    Z.SIX,
     Z.valueOf(91),
     Z.valueOf(79),
     Z.valueOf(102),

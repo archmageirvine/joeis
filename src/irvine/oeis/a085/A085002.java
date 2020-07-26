@@ -19,6 +19,6 @@ public class A085002 extends A000201 {
 
   @Override
   public Z next() {
-    return super.next().mod(Z.valueOf(2));
+    return super.next().mod(Z.TWO);
   }
 }

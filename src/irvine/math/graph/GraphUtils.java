@@ -319,7 +319,7 @@ public final class GraphUtils {
     return IntegerUtils.isZero(orbits);
   }
 
-  private static int[] ORDER4 = {0, 2, 1, 3};
+  private static final int[] ORDER4 = {0, 2, 1, 3};
 
   private static int node(final int order, final int u) {
     // Aesthetic correction for order == 4 graphs

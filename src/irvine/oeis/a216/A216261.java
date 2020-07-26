@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A216261 Smallest number needing exactly n segments on calculator display.
+ * A216261 Smallest positive number using exactly n segments on a calculator display (when <code>'6'</code> and <code>'7'</code> are represented using 6 resp. <code>3</code> segments).
  * @author Georg Fischer
  */
 public class A216261 extends GeneratingFunctionSequence {

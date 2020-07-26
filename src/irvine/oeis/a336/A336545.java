@@ -41,7 +41,7 @@ public class A336545 extends ParallelGenerateGraphsSequence {
           subgraphs.add(new Nauty(s, lab, ptn, set, orb, options, stats, workspace).canon());
         }
       }
-    } catch (IOException e) {
+    } catch (final IOException e) {
       throw new RuntimeException(e);
     }
     //System.out.println(graph + " " + subgraphs.size() + " " + subgraphs);

@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A074459 Number of segments needed to be changed to display from a number n to the next number <code>n+1</code> in 7-segment LED display <code>(i.e.</code>, digital number display, such as calculators).
+ * A074459 Number of segments which change from display of a number n to the next number <code>n+1</code> on a 7-segment display: version where <code>'6', '7', '9'</code> use <code>6, 4</code>, resp. 5 segments.
  * @author Georg Fischer
  */
 public class A074459 extends FiniteSequence {

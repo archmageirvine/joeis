@@ -92,8 +92,6 @@ public class A033961 implements Sequence {
       lambda.remove(p);
     }
     return sum;
-
-
   }
 
   @Override
@@ -119,12 +117,11 @@ public class A033961 implements Sequence {
         }
       }
 
-      // Using the last equation from (4) we choose exactly one lambda to be 1
+      // Using the last equation from (4) we choose zero or one lambda variable to be 1
       for (int k = -1; k < subAllowed.size(); ++k) { // -1 lets all variables be 0
         for (int j = 0; j < subAllowed.size(); ++j) {
           lambda.put(subAllowed.get(j), j == k ? 1 : 0);
         }
-        //dumpEqns(allowed, lambda);
         sum = sum.add(count(allowed, lambda, 2));
       }
     } else {
@@ -155,7 +152,7 @@ public class A033961 implements Sequence {
         sum = sum.add(count(allowed, lambda, 2));
       }
 
-      // Choose two of them k and j
+      // Choose two variables from first set of them k and j
       for (final Point p : subAllowed2) {
         lambda.put(p, 0);
       }
@@ -167,6 +164,8 @@ public class A033961 implements Sequence {
           sum = sum.add(count(allowed, lambda, 2));
         }
       }
+
+      // Choose single variable from first set and assign it 1 or 2
       for (int v = 1; v <= 2; ++v) {
         for (int k = 0; k < subAllowed1.size(); ++k) { // Set one variable to v
           for (int i = 0; i < subAllowed1.size(); ++i) {

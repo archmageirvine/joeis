@@ -12,7 +12,7 @@ import irvine.math.nauty.StatsBlk;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A336545.
+ * A336545 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A336545 extends ParallelGenerateGraphsSequence {

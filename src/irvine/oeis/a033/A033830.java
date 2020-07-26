@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033830 Numbers that can be expressed as the product of three 2-digit numbers in at least one way.
+ * A033830 Numbers that can be expressed as the product of three 2-digit numbers.
  * @author Sean A. Irvine
  */
 public class A033830 extends FiniteSequence {

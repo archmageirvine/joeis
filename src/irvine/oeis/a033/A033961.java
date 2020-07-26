@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A033961.
+ * A033961 Number of different sets <code>("cut sets")</code> of triangles a regular <code>(n+2)-gon</code> can be dissected into; two triangulations of an <code>(n+2)-gon</code> are equal if all numbers of congruent triangles coincide.
  * @author Sean A. Irvine
  */
 public class A033961 implements Sequence {

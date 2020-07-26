@@ -190,7 +190,19 @@ public class A033961 implements Sequence {
         }
       }
 
+      final ArrayList<Point> subAllowed1 = new ArrayList<>();
+      for (int a = 1; 2 * a <= mN - 1 - a; ++a) {
+        for (int b = a; 2 * b <= mN - 1 - a; ++b) {
+          if (a + b == mN / 2 - 1) {
+            subAllowed1.add(new Point(a, b));
+          }
+        }
+      }
+
       // Choose single variable from second set
+      for (final Point p : subAllowed1) {
+        lambda.put(p, 0L);
+      }
       for (int k = -1; k < subAllowed.size(); ++k) { // -1 lets all variables be 0
         for (int j = 0; j < subAllowed.size(); ++j) {
           lambda.put(subAllowed.get(j), j == k ? 1L : 0L);
@@ -199,20 +211,14 @@ public class A033961 implements Sequence {
         sum = sum.add(count(allowed, lambda, 2));
       }
 
-      subAllowed.clear();
-      for (int a = 1; 2 * a <= mN - 1 - a; ++a) {
-        for (int b = a; 2 * b <= mN - 1 - a; ++b) {
-          if (a + b == mN / 2 - 1) {
-            subAllowed.add(new Point(a, b));
-          }
-        }
-      }
-
       // Choose one or two of them k and j
-      for (int k = -1; k < subAllowed.size(); ++k) { // -1 allows for a 0
-        for (int j = k + 1; j < subAllowed.size(); ++j) {
-          for (int i = 0; i < subAllowed.size(); ++i) {
-            lambda.put(subAllowed.get(i), i == k || i == j ? 1L : 0L);
+      for (final Point p : subAllowed) {
+        lambda.put(p, 0L);
+      }
+      for (int k = -1; k < subAllowed1.size(); ++k) { // -1 allows for a 0
+        for (int j = k + 1; j < subAllowed1.size(); ++j) {
+          for (int i = 0; i < subAllowed1.size(); ++i) {
+            lambda.put(subAllowed1.get(i), i == k || i == j ? 1L : 0L);
           }
         }
         //dumpEqns(allowed, lambda);

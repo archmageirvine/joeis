@@ -12,7 +12,7 @@ import irvine.math.polynomial.Polynomial;
  */
 public class A002288 implements Sequence {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private int mN = -1;
 
   @Override

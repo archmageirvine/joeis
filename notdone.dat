@@ -146,7 +146,6 @@ A002169 A partition function -- Ising model?, could not get paper
 A002170 A partition function -- Ising model?, could not get paper
 A002218 Very complicated looking cycle index, paper available (doable non-cycle index but only for small n)
 A002268 Dimensions of integral lattices that are irreducible modulo every prime (there may be missing terms!)
-A002272 Theta series, paper available, but insufficient detail?
 A002273 Theta series, paper available, but insufficient detail?
 A002304 Partially done, can't quite make it work, papers are available
 A002305 Simple dependency on A002304
@@ -1029,7 +1028,7 @@ A018203 Possible numbers of complements of topologies on 12 points
 A018204 Possible numbers of complements of topologies on 13 points
 A018216 Maximal number of subgroups in a group with n elements, needs all groups enumeration
 A018223 Number of 5-voter voting schemes with n linearly ranked choices, probably has linear recurrence, cf. A007010, A007009
-A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, couldn't find ref
+A018234 Theta series of 52-dimensional lattice of det 2^26 and minimal norm 3, gross1996.pdf
 A018240 Rational knots with n crossings (up to mirroring)
 A018242 Number of projective order types; number of simple arrangements of n lines, hard?
 A018807 Number of ways to place n^2 nonattacking kings on 2n X 2n chessboard

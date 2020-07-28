@@ -3,7 +3,6 @@ package irvine.oeis.a006;
 import java.util.HashMap;
 
 import irvine.math.TwoDimensionalWalk;
-import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 import irvine.util.Pair;
 
@@ -46,7 +45,7 @@ public class A006814 extends A001411 {
     return cnt;
   }
 
-  protected long linearExtent(final TwoDimensionalWalk w) {
+  protected long count(final TwoDimensionalWalk w) {
     preparePath(w);
     long linearExtent = 0;
     int z = 0;
@@ -68,15 +67,5 @@ public class A006814 extends A001411 {
       }
     }
     return linearExtent;
-  }
-
-  @Override
-  public Z next() {
-    super.next();
-    Z sum = Z.ZERO;
-    for (final TwoDimensionalWalk w : mWalks) {
-      sum = sum.add(linearExtent(w));
-    }
-    return sum;
   }
 }

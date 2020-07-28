@@ -6,14 +6,14 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a006.A006744;
 import irvine.util.Point;
 
 /**
  * A002931 Number of self-avoiding polygons of length <code>2n</code> on square lattice (not allowing rotations).
  * @author Sean A. Irvine
  */
-public class A002931 implements Sequence {
+public class A002931 extends A006744 {
 
   // Backtracking search -- only good for a few terms of this sequence!
 

@@ -16,7 +16,7 @@ public class A006815 extends A006814 {
   private int[] mPath = new int[0];
 
   @Override
-  protected long linearExtent(final TwoDimensionalWalk w) {
+  protected long count(final TwoDimensionalWalk w) {
     final int length = preparePath(w);
     if (length > mPath.length) {
       mPath = new int[length];

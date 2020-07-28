@@ -10,7 +10,7 @@ import irvine.util.Pair;
 public class A006816 extends A006814 {
 
   @Override
-  protected long linearExtent(final TwoDimensionalWalk w) {
+  protected long count(final TwoDimensionalWalk w) {
     preparePath(w);
     long bonds = 0;
     TwoDimensionalWalk u = w;

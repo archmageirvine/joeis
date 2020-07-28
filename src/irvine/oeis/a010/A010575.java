@@ -29,7 +29,7 @@ public class A010575 implements Sequence {
   protected static final int X1 = 1 << Z_SHIFT;
   protected static final int Y1 = 1 << Y_SHIFT;
   protected static final int Z1 = 1 << BITS_PER_COORDINATE;
-  private static final int[] DELTAS = {X1, -X1, Y1, -Y1, Z1, -Z1, 1, -1};
+  protected static final int[] DELTAS = {X1, -X1, Y1, -Y1, Z1, -Z1, 1, -1};
 
   protected static int t(final int point) {
     return point & MASK;

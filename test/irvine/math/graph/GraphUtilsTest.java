@@ -89,6 +89,6 @@ public class GraphUtilsTest extends TestCase {
     final Graph g = GraphFactory.create(3);
     g.addEdge(0, 1);
     g.addEdge(1, 2);
-    assertEquals("", GraphUtils.toDot(g));
+    assertEquals("graph G {\n  node [shape=point];\n  0 [pos=\"0.000,0.144!\"];\n  1 [pos=\"0.125,-0.072!\"];\n  2 [pos=\"-0.125,-0.072!\"];\n  0--1;\n  1--2;\n}\n", GraphUtils.toDot(g));
   }
 }

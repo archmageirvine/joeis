@@ -32,7 +32,7 @@ public class A010576 implements Sequence {
   protected static final long Y1 = 1L << Z_SHIFT;
   protected static final long Z1 = 1L << T_SHIFT;
   protected static final long T1 = 1L << BITS_PER_COORDINATE;
-  private static final long[] DELTAS = {X1, -X1, Y1, -Y1, Z1, -Z1, T1, -T1, 1, -1};
+  protected static final long[] DELTAS = {X1, -X1, Y1, -Y1, Z1, -Z1, T1, -T1, 1, -1};
 
   protected static long u(final long point) {
     return point & MASK;

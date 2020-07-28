@@ -26,7 +26,7 @@ public class A001412 implements Sequence {
     | BIAS;
   protected static final int X1 = 1 << Y_SHIFT;
   protected static final int Y1 = 1 << BITS_PER_COORDINATE;
-  private static final int[] DELTAS = {X1, -X1, Y1, -Y1, 1, -1};
+  protected static final int[] DELTAS = {X1, -X1, Y1, -Y1, 1, -1};
 
   protected static int z(final int point) {
     return point & MASK;

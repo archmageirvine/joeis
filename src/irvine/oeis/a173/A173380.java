@@ -16,9 +16,9 @@ public class A173380 implements Sequence {
   private long mCount = 0;
 
   private boolean isOk(final TwoDimensionalWalk walk, final int nx, final int ny) {
-    int nnc = - 1; // -1 for where we are coming from
+    int neighbourCount = - 1; // -1 for where we are coming from
     for (int e = 0; e < DELTA_X.length; ++e) {
-      if (walk.contains(nx + DELTA_X[e], ny + DELTA_Y[e]) && ++nnc > 0) {
+      if (walk.contains(nx + DELTA_X[e], ny + DELTA_Y[e]) && ++neighbourCount > 0) {
         return false;
       }
     }

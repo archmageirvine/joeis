@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.TwoDimensionalWalk;
 import irvine.math.z.Z;
@@ -18,6 +19,23 @@ public class A001411 implements Sequence {
   private int mN = -1;
   protected ArrayList<TwoDimensionalWalk> mWalks = new ArrayList<>();
 
+  protected void update(final List<TwoDimensionalWalk> newWalks, final TwoDimensionalWalk w) {
+    final int x = w.x();
+    final int y = w.y();
+    if (!w.contains(x + 1, y)) {
+      newWalks.add(new TwoDimensionalWalk(x + 1, y, w));
+    }
+    if (!w.contains(x - 1, y)) {
+      newWalks.add(new TwoDimensionalWalk(x - 1, y, w));
+    }
+    if (!w.contains(x, y + 1)) {
+      newWalks.add(new TwoDimensionalWalk(x, y + 1, w));
+    }
+    if (!w.contains(x, y - 1)) {
+      newWalks.add(new TwoDimensionalWalk(x, y - 1, w));
+    }
+  }
+
   @Override
   public Z next() {
     if (++mN == 0) {
@@ -28,20 +46,7 @@ public class A001411 implements Sequence {
     } else {
       final ArrayList<TwoDimensionalWalk> newWalks = new ArrayList<>((int) (2.7 * mWalks.size()));
       for (final TwoDimensionalWalk w : mWalks) {
-        final int x = w.x();
-        final int y = w.y();
-        if (!w.contains(x + 1, y)) {
-          newWalks.add(new TwoDimensionalWalk(x + 1, y, w));
-        }
-        if (!w.contains(x - 1, y)) {
-          newWalks.add(new TwoDimensionalWalk(x - 1, y, w));
-        }
-        if (!w.contains(x, y + 1)) {
-          newWalks.add(new TwoDimensionalWalk(x, y + 1, w));
-        }
-        if (!w.contains(x, y - 1)) {
-          newWalks.add(new TwoDimensionalWalk(x, y - 1, w));
-        }
+        update(newWalks, w);
       }
       mWalks = newWalks;
       /*

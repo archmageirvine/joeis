@@ -1,8 +1,5 @@
 package irvine.oeis.a006;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import irvine.math.TwoDimensionalWalk;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -17,35 +14,51 @@ public class A006744 implements Sequence {
   // Manhattan lattice, square lattice with alternate rows (and columns)
   // running in opposite directions.
 
-  private int mN = 0;
-  private ArrayList<TwoDimensionalWalk> mWalks = new ArrayList<>();
+  private static final TwoDimensionalWalk ORIGIN = new TwoDimensionalWalk(0, 0, null);
+  protected int mN = init();
 
-  private int d(final int z) {
+  protected int d(final int z) {
     //return (z & 1) == 0 ? 1 : -1;
     return 1 - ((z & 1) << 1);
   }
 
-  private void addIfAllowed(final List<TwoDimensionalWalk> newWalks, final TwoDimensionalWalk w, final int x, final int y) {
-    if (w.contains(x, y)) {
-      return; // Already have this point
+  protected long count(final TwoDimensionalWalk w) {
+    return 1;
+  }
+
+  protected int step() {
+    return 1;
+  }
+
+  protected int init() {
+    return 0;
+  }
+
+  protected boolean accept(final TwoDimensionalWalk w, final int x, final int y, final int remaining) {
+    return !w.contains(x, y);
+  }
+
+  private long count(final TwoDimensionalWalk w, final int remaining) {
+    if (remaining == 0) {
+      return count(w);
     }
-    newWalks.add(new TwoDimensionalWalk(x, y, w));
+    long sum = 0;
+    final int x = w.x();
+    final int y = w.y();
+    final int nx = x + d(y);
+    if (accept(w, nx, y, remaining)) {
+      sum += count(new TwoDimensionalWalk(nx, y, w), remaining - 1);
+    }
+    final int ny = y + d(x);
+    if (accept(w, x, ny, remaining)) {
+      sum += count(new TwoDimensionalWalk(x, ny, w), remaining - 1);
+    }
+    return sum;
   }
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      mWalks.add(new TwoDimensionalWalk(1, 0, new TwoDimensionalWalk(0, 0, null)));
-    } else {
-      final ArrayList<TwoDimensionalWalk> newWalks = new ArrayList<>((int) (1.8 * mWalks.size()));
-      for (final TwoDimensionalWalk w : mWalks) {
-        final int x = w.x();
-        final int y = w.y();
-        addIfAllowed(newWalks, w, x + d(y), y);
-        addIfAllowed(newWalks, w, x, y + d(x));
-      }
-      mWalks = newWalks;
-    }
-    return Z.valueOf(mWalks.size());
+    mN += step();
+    return mN <= 0 ? Z.ONE : Z.valueOf(count(new TwoDimensionalWalk(1, 0, ORIGIN), mN - 1));
   }
 }

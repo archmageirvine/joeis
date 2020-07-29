@@ -51,7 +51,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
     // now some patches
     if (iPoly == 1 && (mRowNo & 1) == 1) {
         result = result.negate();
-    } else if (latticeType.equals("D")) {
+    } else if ("D".equals(latticeType)) {
       result = result.abs();
     }
     ++mColNo;
@@ -65,7 +65,7 @@ public class LatticeCoordinationSequence extends GeneratingFunctionSequence {
    */
   protected void configure(final String latticeType, final int d) {
     char typeCode = latticeType.charAt(0);
-    if (latticeType.equals("D^+")) { // special treatment for diamond structures
+    if ("D^+".equals(latticeType)) { // special treatment for diamond structures
       mFactor = 2;
       // This can be tested with the following Mathematica:
       // a[d_,n_]:=2^(d-1)*Binomial[(d+2*n)/2-1,d-1]+(1-Mod[n,2])*Sum[2^k*Binomial[d,k]*Binomial[n-1,k-1],{k,0,d}];

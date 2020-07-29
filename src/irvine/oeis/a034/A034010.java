@@ -24,7 +24,7 @@ public class A034010 extends A002931 {
 
   @Override
   protected Z postFilter() {
-    long c =0;
+    long c = 0;
     for (final Polygon p : mPolygons) {
       if (isOk(p)) {
         ++c;

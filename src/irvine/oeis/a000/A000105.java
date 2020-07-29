@@ -14,6 +14,7 @@ import irvine.util.Point;
  */
 public class A000105 implements Sequence {
 
+  protected static final Point ORIGIN = new Point(0, 0);
   protected HashSet<Polyomino> mA = null;
 
   protected void filter(final Set<Polyomino> polyominoes) {
@@ -50,7 +51,7 @@ public class A000105 implements Sequence {
     }
     if (mA.isEmpty()) {
       final Polyomino p = new Polyomino();
-      p.add(new Point(0, 0));
+      p.add(ORIGIN);
       mA.add(p);
     } else {
       final HashSet<Polyomino> nextSet = new HashSet<>();

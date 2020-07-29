@@ -24,7 +24,7 @@ public class A336628 extends A006744 {
   @Override
   protected boolean accept(final TwoDimensionalWalk w, final int x, final int y, final int remaining) {
     // Because we are looking for cycles, fail if we cannot make it back in remaining steps
-    return x + y <= remaining && !w.contains(x, y);
+    return Math.abs(x) + Math.abs(y) <= remaining && !w.contains(x, y);
   }
 
   @Override

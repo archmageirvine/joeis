@@ -223,6 +223,15 @@
      <Match classregex="irvine.math.polynomial.CycleIndexReadBigN">
        <BugCode name="DMI"/>
      </Match>
+     <Match classregex="irvine.oeis.a001.A001412">
+       <BugCode name="MS"/>
+     </Match>
+     <Match classregex="irvine.oeis.a010.A010575">
+       <BugCode name="MS"/>
+     </Match>
+     <Match classregex="irvine.oeis.a010.A010576">
+       <BugCode name="MS"/>
+     </Match>
 
      <!-- I am allowed to ignore return values and have absolute paths in a test -->
      <Match classregex=".*Test">

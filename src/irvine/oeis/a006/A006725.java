@@ -10,11 +10,6 @@ import irvine.math.z.Z;
 public class A006725 extends A006724 {
 
   @Override
-  protected Polyomino canonicalize(final Polyomino polyomino) {
-    return polyomino.translate();
-  }
-
-  @Override
   public Z next() {
     super.next();
     long c = 0;

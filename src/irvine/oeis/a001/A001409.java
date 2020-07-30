@@ -46,7 +46,7 @@ public class A001409 implements Sequence {
       final int dx = Math.abs(x);
       final int dy = Math.abs(y);
       final int dz = Math.abs(z);
-      final int d = Math.max(Math.max(dx, dy), dz);
+      final int d = dx + dy + dz;
       if (d <= stepsRemaining) {
         final int coord = coord(x, y, z);
         if (!mUsed[coord]) {

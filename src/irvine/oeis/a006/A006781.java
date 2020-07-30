@@ -34,7 +34,7 @@ public class A006781 implements Sequence {
       // Origin is not leftmost topmost
       return;
     }
-    if (x + y > remaining) {
+    if (Math.abs(x) + Math.abs(y) > remaining) {
       // Cannot possibly make it back to origin in remaining moves (A*)
       return;
     }

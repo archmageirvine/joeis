@@ -9,6 +9,19 @@ import irvine.math.z.Z;
 public class A010569 extends A010576 {
 
   @Override
+  protected boolean check(final long point, final int n) {
+    if (!super.check(point, n)) {
+      return false;
+    }
+    final long u = u(point) - BIAS;
+    final long t = t(point) - BIAS;
+    final long z = z(point) - BIAS;
+    final long y = y(point) - BIAS;
+    final long x = x(point) - BIAS;
+    return Math.abs(u) + Math.abs(t) + Math.abs(z) + Math.abs(y) + Math.abs(x) <= mN - n;
+  }
+
+  @Override
   protected long count(final long point) {
     final long u = u(point) - BIAS;
     final long t = t(point) - BIAS;

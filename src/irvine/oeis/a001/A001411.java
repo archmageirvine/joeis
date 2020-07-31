@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
  */
 public class A001411 implements Sequence {
 
-  private static final TwoDimensionalWalk ORIGIN = new TwoDimensionalWalk(0, 0, null);
+  protected static final TwoDimensionalWalk ORIGIN = new TwoDimensionalWalk(0, 0, null);
   protected int mN = init();
 
   protected long count(final TwoDimensionalWalk w) {

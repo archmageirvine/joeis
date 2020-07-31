@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033985 Number of partitions of n into distinct nonzero squares.
+ * A033985 Number of partitions of n into two or more distinct nonzero squares.
  * @author Sean A. Irvine
  */
 public class A033985 implements Sequence {

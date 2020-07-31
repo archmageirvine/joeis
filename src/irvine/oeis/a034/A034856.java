@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034856 <code>a(n) = binomial(n+1, 2) + n - 1 = n(n + 3)/2 - 1</code>.
+ * A034856 <code>a(n) = binomial(n+1, 2) + n - 1 = n*(n + 3)/2 - 1</code>.
  * @author Sean A. Irvine
  */
 public class A034856 extends LinearRecurrence {

@@ -22,7 +22,7 @@ public class A001334 implements Sequence {
   private static final int BIAS = 1 << (BITS_PER_COORDINATE - 1);
   protected static final int ORIGIN = c(0, 0);
   protected static final int D1 = (1 << BITS_PER_COORDINATE) + 1;
-  static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
+  protected static final int[] DELTAS = {2 << BITS_PER_COORDINATE,
     (-2) << BITS_PER_COORDINATE,
     D1,
     (1 << BITS_PER_COORDINATE) - 1,

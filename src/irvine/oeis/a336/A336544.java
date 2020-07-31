@@ -12,7 +12,7 @@ import irvine.math.nauty.StatsBlk;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A336544 allocated for Sean A. Irvine.
+ * A336544 Sum over all unlabeled graphs of order n, of the number of graphs obtainable by deletion of a single vertex in the graph.
  * @author Sean A. Irvine
  */
 public class A336544 extends ParallelGenerateGraphsSequence {

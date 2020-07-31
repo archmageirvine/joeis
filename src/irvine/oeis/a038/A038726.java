@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.a010.A010576;
 
 /**
- * A038726 Configurations of linear chains in a 5-dimensional hypercubic lattice.
+ * A038726 The number of <code>n-step self-avoiding</code> walks in a 5-dimensional hypercubic lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A038726 extends A010576 {

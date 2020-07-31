@@ -1,42 +1,64 @@
 package irvine.oeis.a336;
 
-import irvine.math.TwoDimensionalWalk;
-import irvine.oeis.a006.A006744;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+import irvine.util.Point;
 
 /**
- * A336627 allocated for Sean A. Irvine.
+ * A336628 allocated for David A. Corneth.
  * @author Sean A. Irvine
  */
-public class A336628 extends A006744 {
+public class A336628 implements Sequence {
 
   // todo this is not the right sequence number
 
-  @Override
-  protected int init() {
-    return -5; // We want -1, 3, 7, 11 because our count() handles closing the loop
+  private static final Point ORIGIN = new Point(0, 0);
+  private final HashSet<Point> mSeen = new HashSet<>();
+  private Collection<Point> mNew = new HashSet<>();
+
+  private int d(final int z) {
+    //return (z & 1) == 0 ? 1 : -1;
+    return 1 - ((z & 1) << 1);
   }
 
-  @Override
-  protected int step() {
-    return 4;
-  }
+//  // Used to (partially) make the illustration (manhattan.sh)
+//  private int mStep = -1;
+//  private static final String[] COLOR = {"black", "red", "blue", "brown4", "cyan", "magenta", "darkgreen", "deeppink"};
+//  private void dump() {
+//    ++mStep;
+//    for (final Point p : mNew) {
+//      System.out.println("  l" + (7 - p.left()) + "_" + (7 - p.right()) + " [pos=\"" + (7.15 - p.left()) + "," + (7.15 - p.right()) + "!\", shape=none, label=<<font color='" + COLOR[mStep % COLOR.length] + "'><b>" + mStep + "</b></font>>];");
+//    }
+//  }
 
   @Override
-  protected boolean accept(final TwoDimensionalWalk w, final int x, final int y, final int remaining) {
-    // Because we are looking for cycles, fail if we cannot make it back in remaining steps
-    return Math.abs(x) + Math.abs(y) <= remaining && !w.contains(x, y);
-  }
-
-  @Override
-  protected long count(final TwoDimensionalWalk w) {
-    final int x = w.x();
-    final int y = w.y();
-    if (x == 0 && y + d(x) == 0) {
-      return 2;
+  public Z next() {
+    if (mNew.isEmpty()) {
+      mNew.add(ORIGIN);
+      mSeen.add(ORIGIN);
+    } else {
+      final Collection<Point> next = new ArrayList<>(2 * mNew.size());
+      for (final Point p : mNew) {
+        final Point a = new Point(p.left() + d(p.right()), p.right());
+        if (mSeen.add(a)) {
+          next.add(a);
+        }
+        final Point b = new Point(p.left(), p.right() + 1);
+        if (mSeen.add(b)) {
+          next.add(b);
+        }
+        final Point c = new Point(p.left(), p.right() - 1);
+        if (mSeen.add(c)) {
+          next.add(c);
+        }
+      }
+      mNew = next;
     }
-    if (y == 0 && x + d(x) == 0) {
-      return 2;
-    }
-    return 0;
+    //dump();
+    return Z.valueOf(mNew.size());
   }
 }

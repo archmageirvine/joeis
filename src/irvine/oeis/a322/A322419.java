@@ -4,14 +4,12 @@ import irvine.math.TwoDimensionalWalk;
 import irvine.oeis.a001.A001411;
 
 /**
- * A322419.
+ * A322419 Number of <code>n-step self-avoiding</code> walks on <code>L-lattice</code>.
  * @author Sean A. Irvine
  */
 public class A322419 extends A001411 {
 
   // L lattice, each step perpendicular to previous step.
-
-  protected int mN = init();
 
   @Override
   protected long count(final TwoDimensionalWalk w) {

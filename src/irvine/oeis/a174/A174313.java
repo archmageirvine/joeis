@@ -1,19 +1,19 @@
-package irvine.oeis.a034;
+package irvine.oeis.a174;
 
-import irvine.oeis.a010.A010575;
+import irvine.oeis.a001.A001334;
 
 /**
- * A034006 Number of <code>n-step self-avoiding</code> walks on the 4-dimensional hypercubic lattice with no non-contiguous adjacencies.
+ * A174313 Number of n-step walks on hexagonal lattice (no points repeated, no adjacent points unless consecutive in path).
  * @author Sean A. Irvine
  */
-public class A034006 extends A010575 {
+public class A174313 extends A001334 {
 
   @Override
   protected boolean check(final int point, final int n) {
     if (!super.check(point, n)) {
       return false;
     }
-    int neighbourCount = -1;
+    int neighbourCount = - 1; // -1 for where we are coming from
     for (final int delta : DELTAS) {
       final int newPoint = point + delta;
       if (contains(newPoint, n) && ++neighbourCount > 0) {

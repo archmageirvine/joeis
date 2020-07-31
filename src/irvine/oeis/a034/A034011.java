@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034011.
+ * A034011 Related to curves <code>y^2=x^5-n</code>.
  * @author Sean A. Irvine
  */
 public class A034011 implements Sequence {
@@ -53,7 +53,7 @@ public class A034011 implements Sequence {
         final long[] v2a = val(mN, 2);
         final long v2 = v2a[0];
         final long a2 = v2a[1];
-        if ((v2 & 1) == 1 || v2 == 8 || a2 % 4 == -1) {
+        if (v2 == 8 || (v2 & 1) == 1 || a2 % 4 == -1) {
           if (isOk(mN) && LongUtils.classNumber(4 * mN) % 5 != 0 && LongUtils.classNumber(4 * 5 * mN) % 5 != 0) {
             return Z.valueOf(-mN);
           }

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000086;
 
 /**
- * A034017.
+ * A034017 Numbers that are primitively represented by <code>x^2 + xy + y^2</code>.
  * @author Sean A. Irvine
  */
 public class A034017 extends A000086 {

@@ -1,15 +1,18 @@
-package irvine.oeis.a006;
+package irvine.oeis.a336;
 
 import irvine.math.TwoDimensionalWalk;
+import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 
 /**
- * A006744 Number of <code>n-step self-avoiding</code> walks on a Manhattan lattice.
+ * A336629 allocated for David A. Corneth.
  * @author Sean A. Irvine
  */
-public class A006744 extends A001411 {
+public class A336629 extends A001411 {
 
-  // Manhattan lattice, square lattice with alternate rows (and columns)
+  // todo not a valid A-number
+
+  // Half-Manhattan lattice, square lattice with alternate rows
   // running in opposite directions.
 
   protected int d(final int z) {
@@ -39,10 +42,19 @@ public class A006744 extends A001411 {
     if (accept(w, nx, y, remaining)) {
       sum += count(new TwoDimensionalWalk(nx, y, w), remaining - 1);
     }
-    final int ny = y + d(x);
-    if (accept(w, x, ny, remaining)) {
-      sum += count(new TwoDimensionalWalk(x, ny, w), remaining - 1);
+    if (accept(w, x, y + 1, remaining)) {
+      sum += count(new TwoDimensionalWalk(x, y + 1, w), remaining - 1);
+    }
+    if (accept(w, x, y - 1, remaining)) {
+      sum += count(new TwoDimensionalWalk(x, y - 1, w), remaining - 1);
     }
     return sum;
+  }
+
+  @Override
+  public Z next() {
+    mN += step();
+    return mN <= 0 ? Z.ONE : Z.valueOf(count(new TwoDimensionalWalk(1, 0, ORIGIN), mN - 1))
+      .add(Z.valueOf(count(new TwoDimensionalWalk(0, 1, ORIGIN), mN - 1)).multiply2());
   }
 }

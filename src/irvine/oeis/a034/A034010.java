@@ -5,7 +5,7 @@ import irvine.oeis.a002.A002931;
 import irvine.util.Point;
 
 /**
- * A034010.
+ * A034010 Number of 2n-step self avoiding closed walks on square grid, restricted to a quadrant and passing through origin.
  * @author Sean A. Irvine
  */
 public class A034010 extends A002931 {

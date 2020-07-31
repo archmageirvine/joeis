@@ -4,7 +4,7 @@ import irvine.math.TwoDimensionalWalk;
 import irvine.oeis.a117.A117633;
 
 /**
- * A336662 Self-avoiding Manhattan no non-contiguous adjacencies.
+ * A336662 Number of <code>n-step self-avoiding</code> walks on the Manhattan lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A336662 extends A117633 {

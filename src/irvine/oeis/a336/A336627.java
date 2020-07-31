@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A336627 allocated for Sean A. Irvine.
+ * A336627 Coordination sequence for the Manhattan lattice.
  * @author Sean A. Irvine
  */
 public class A336627 implements Sequence {

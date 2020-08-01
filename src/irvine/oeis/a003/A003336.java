@@ -23,6 +23,7 @@ public class A003336 implements Sequence {
     return 4;
   }
 
+  // Remembers powers, computing new powers as needed
   private Z pow(final int n) {
     while (n >= mPowers.size()) {
       mPowers.add(Z.valueOf(mPowers.size()).pow(power()));

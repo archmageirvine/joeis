@@ -1,5 +1,8 @@
 package irvine.oeis.a003;
 
+import java.util.ArrayList;
+import java.util.TreeSet;
+
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -9,25 +12,33 @@ import irvine.oeis.Sequence;
  */
 public class A003336 implements Sequence {
 
-  private Z mN = Z.ONE;
+  private final TreeSet<Z> mA = new TreeSet<>();
+  private final ArrayList<Z> mPowers = new ArrayList<>();
+  {
+    mPowers.add(Z.ONE); // 0^power() (actually ignored)
+  }
+  private int mM = 1; // mM^power() is next to be considered
 
   protected int power() {
     return 4;
   }
 
+  private Z pow(final int n) {
+    while (n >= mPowers.size()) {
+      mPowers.add(Z.valueOf(mPowers.size()).pow(power()));
+    }
+    return mPowers.get(n);
+  }
+
   @Override
   public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      for (Z t = mN.root(power()); t.compareTo(Z.ONE) >= 0; t = t.subtract(1)) {
-        final Z k = mN.subtract(t.pow(power()));
-        if (k.signum() > 0) {
-          k.root(power());
-          if (k.auxiliary() == 1) {
-            return mN;
-          }
-        }
+    while (mA.isEmpty() || mA.first().compareTo(pow(mM)) > 0) {
+      final Z mp = pow(mM);
+      for (int k = 1; k <= mM; ++k) {
+        mA.add(mp.add(pow(k)));  // i.e. m^p + k^p, k >= 1
       }
+      ++mM;
     }
+    return mA.pollFirst();
   }
 }

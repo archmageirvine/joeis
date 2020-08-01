@@ -14,9 +14,6 @@ public class A003336 implements Sequence {
 
   private final TreeSet<Z> mA = new TreeSet<>();
   private final ArrayList<Z> mPowers = new ArrayList<>();
-  {
-    mPowers.add(Z.ONE); // 0^power() (actually ignored)
-  }
   private int mM = 1; // mM^power() is next to be considered
 
   protected int power() {

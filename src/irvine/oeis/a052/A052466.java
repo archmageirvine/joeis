@@ -3,7 +3,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052466 <code>a(n)</code> is the solution k to <code>Mod[24k,13^n]==1</code>.
+ * A052466 <code>a(n)</code> is the smallest positive solution k to <code>24*k == 1 (mod 13^n)</code>.
  * @author Sean A. Irvine
  */
 public class A052466 extends LinearRecurrence {

@@ -9,12 +9,10 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A336628 allocated for David A. Corneth.
+ * A336705 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
-public class A336628 implements Sequence {
-
-  // todo this is not the right sequence number
+public class A336705 implements Sequence {
 
   private static final Point ORIGIN = new Point(0, 0);
   private final HashSet<Point> mSeen = new HashSet<>();

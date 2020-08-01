@@ -5,12 +5,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 
 /**
- * A336629 allocated for David A. Corneth.
+ * A336724.
  * @author Sean A. Irvine
  */
-public class A336629 extends A001411 {
-
-  // todo not a valid A-number
+public class A336724 extends A001411 {
 
   // Half-Manhattan lattice, square lattice with alternate rows
   // running in opposite directions.
@@ -27,7 +25,7 @@ public class A336629 extends A001411 {
 
   @Override
   protected int init() {
-    return 0;
+    return -1;
   }
 
   @Override

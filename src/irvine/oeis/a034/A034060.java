@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034060.
+ * A034060 Decimal part of <code>a(n)^(1/5)</code> starts with <code>n</code> (powers excluded).
  * @author Sean A. Irvine
  */
 public class A034060 implements Sequence {

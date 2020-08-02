@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034063.
+ * A034063 Decimal part of <code>a(n)^(1/8)</code> starts with <code>n</code> (powers excluded).
  * @author Sean A. Irvine
  */
 public class A034063 implements Sequence {

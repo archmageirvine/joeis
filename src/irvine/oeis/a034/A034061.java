@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034061.
+ * A034061 Decimal part of <code>a(n)^(1/6)</code> starts with <code>n</code> (powers excluded).
  * @author Sean A. Irvine
  */
 public class A034061 implements Sequence {

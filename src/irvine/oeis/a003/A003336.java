@@ -12,16 +12,16 @@ import irvine.oeis.Sequence;
  */
 public class A003336 implements Sequence {
 
-  private final TreeSet<Z> mA = new TreeSet<>();
+  protected final TreeSet<Z> mA = new TreeSet<>();
   private final ArrayList<Z> mPowers = new ArrayList<>();
-  private int mM = 1; // mM^power() is next to be considered
+  protected int mM = 1; // mM^power() is next to be considered
 
   protected int power() {
     return 4;
   }
 
   // Remembers powers, computing new powers as needed
-  private Z pow(final int n) {
+  protected Z pow(final int n) {
     while (n >= mPowers.size()) {
       mPowers.add(Z.valueOf(mPowers.size()).pow(power()));
     }

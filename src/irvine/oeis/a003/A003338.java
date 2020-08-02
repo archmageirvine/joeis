@@ -1,43 +1,30 @@
 package irvine.oeis.a003;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A003338 Numbers that are the sum of 4 nonzero 4th powers.
  * @author Sean A. Irvine
  */
-public class A003338 implements Sequence {
-
-  private Z mN = Z.THREE;
-
-  protected int power() {
-    return 4;
-  }
+public class A003338 extends A003336 {
 
   @Override
   public Z next() {
-    while (true) {
-      mN = mN.add(1);
-      for (Z t = mN.root(power()); t.compareTo(Z.ONE) >= 0; t = t.subtract(1)) {
-        final Z k = mN.subtract(t.pow(power()));
-        if (k.compareTo(Z.THREE) >= 0) {
-          for (Z u = k.root(power()); u.compareTo(t) >= 0; u = u.subtract(1)) {
-            final Z j = k.subtract(u.pow(power()));
-            if (j.compareTo(Z.TWO) >= 0) {
-              for (Z v = k.root(power()); v.compareTo(u) >= 0; v = v.subtract(1)) {
-                final Z i = j.subtract(v.pow(power()));
-                if (i.signum() > 0) {
-                  i.root(power());
-                  if (i.auxiliary() == 1) {
-                    return mN;
-                  }
-                }
-              }
-            }
+    while (mA.isEmpty() || mA.first().compareTo(pow(mM)) > 0) {
+      final Z mp1 = pow(mM);
+      for (int k2 = 1; k2 <= mM; ++k2) {
+        for (int k3 = k2; k3 <= mM; ++k3) {
+          for (int k4 = k3; k4 <= mM; ++k4) {
+            mA.add(mp1
+                .add(pow(k2))
+                .add(pow(k3))
+                .add(pow(k4))
+                ); 
           }
         }
       }
+      ++mM;
     }
+    return mA.pollFirst();
   }
 }

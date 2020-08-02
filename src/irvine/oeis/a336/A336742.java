@@ -7,10 +7,10 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A336727.
+ * A336742.
  * @author Sean A. Irvine
  */
-public class A336727 implements Sequence {
+public class A336742 implements Sequence {
 
   private int mN = -2;
   private long mCount = 0;

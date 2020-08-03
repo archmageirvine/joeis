@@ -22,7 +22,7 @@ public class A034089 implements Sequence {
   private Z period(final long p, final long q) {
     final TreeSet<Z> s = new TreeSet<>();
     Z zp = Z.valueOf(p);
-    Z zq = Z.valueOf(q);
+    final Z zq = Z.valueOf(q);
     while (!s.contains(zp)) {
       s.add(zp);
       zp = zp.modMultiply(10, zq);

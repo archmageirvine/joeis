@@ -454,7 +454,7 @@ public final class FactorSequence {
     Z prod = Z.ONE;
     for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
       final Z p = f.getKey();
-      prod = prod.multiply(p.pow((f.getValue().mExponent + 1)).subtract(p.multiply2()).add(1)).divide(p.subtract(1));
+      prod = prod.multiply(p.pow(f.getValue().mExponent + 1).subtract(p.multiply2()).add(1)).divide(p.subtract(1));
     }
     return prod;
   }

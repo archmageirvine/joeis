@@ -16,7 +16,7 @@ public class A031178 implements Sequence {
    * @param n the number
    * @return sum of cubes of digits of <code>n</code>
    */
-  private static long digitSumCubes(final long n) {
+  public static long digitSumCubes(final long n) {
     long m = Math.abs(n);
     long sum = 0;
     while (m != 0) {

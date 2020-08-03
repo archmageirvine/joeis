@@ -450,6 +450,15 @@ public final class FactorSequence {
     return sigma0().longValueExact();
   }
 
+  private Z sigmaNeg1() {
+    Z prod = Z.ONE;
+    for (final Map.Entry<Z, Factor> f : mFactors.entrySet()) {
+      final Z p = f.getKey();
+      prod = prod.multiply(p.pow((f.getValue().mExponent + 1)).subtract(p.multiply2()).add(1)).divide(p.subtract(1));
+    }
+    return prod;
+  }
+
   /**
    * Return the sum of the divisors raised to the specified power.
    * @param degree exponent of each divisor
@@ -462,6 +471,8 @@ public final class FactorSequence {
       return sigma0();
     } else if (degree == 1) {
       return sigma();
+    } else if (degree == -1) {
+      return sigmaNeg1();
     }
     if (!isComplete()) {
       throw new UnsupportedOperationException();

@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 import irvine.math.TwoDimensionalWalk;
 
 /**
- * A336726 Number of <code>n-step self-avoiding</code> walks on the half-Manhattan lattice with no non-contiguous adjacencies.
+ * A336726 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A336726 extends A336724 {

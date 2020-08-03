@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A336742.
+ * A336742 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A336742 implements Sequence {

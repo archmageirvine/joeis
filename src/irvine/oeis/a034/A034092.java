@@ -13,15 +13,19 @@ public class A034092 implements Sequence {
   private int mN = 0;
 
   private int[] count() {
-    final int[] c = new int[39 + 38 + 37 + 1];
-    for (int k = 1; k <= 39; ++k) {
-      for (int j = k + 1; j <= 39; ++j) {
-        for (int i = j + 1; i <= 39; ++i) {
+    final int[] c = new int[3 * max() - 2];
+    for (int k = 1; k <= max(); ++k) {
+      for (int j = k + 1; j <= max(); ++j) {
+        for (int i = j + 1; i <= max(); ++i) {
           ++c[k + j + i];
         }
       }
     }
     return c;
+  }
+
+  protected int max() {
+    return 39;
   }
 
   @Override

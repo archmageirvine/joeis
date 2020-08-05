@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073447 Decimal expansion of csc 1.
+ * A073447 Decimal expansion of <code>csc(1)</code>.
  * @author Sean A. Irvine
  */
 public class A073447 extends DecimalExpansionSequence {

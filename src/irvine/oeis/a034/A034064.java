@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034064 Decimal part of <code>a(n)^(1/9)</code> starts with <code>n</code> (powers excluded).
+ * A034064 Decimal part of <code>a(n)^(1/9)</code> starts with <code>n (9th</code> powers excluded).
  * @author Sean A. Irvine
  */
 public class A034064 implements Sequence {

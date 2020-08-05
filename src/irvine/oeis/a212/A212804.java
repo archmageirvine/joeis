@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A212804 Expansion of <code>(1-x)/(1-x-x^2)</code>.
+ * A212804 Expansion of <code>(1 - x)/(1 - x - x^2)</code>.
  * @author Sean A. Irvine
  */
 public class A212804 extends A000045 {

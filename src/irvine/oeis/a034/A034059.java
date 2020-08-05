@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034059 Decimal part of <code>a(n)^(1/4)</code> starts with <code>n</code> (powers excluded).
+ * A034059 Decimal part of <code>a(n)^(1/4)</code> starts with <code>n (4th</code> powers excluded).
  * @author Sean A. Irvine
  */
 public class A034059 implements Sequence {

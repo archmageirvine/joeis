@@ -10,6 +10,7 @@ public class A034184 extends LinearRecurrence {
 
   // WARNING: Conjectural
 
+  /** Construct the sequence. */
   public A034184() {
     super(
       new long[] {1, -6, -9, 29, -15, -21, 45, -33, 10},

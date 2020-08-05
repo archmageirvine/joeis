@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034065 Decimal part of <code>a(n)^(1/10)</code> starts with <code>n</code> (powers excluded).
+ * A034065 Decimal part of <code>a(n)^(1/10)</code> starts with <code>n (10th</code> powers excluded).
  * @author Sean A. Irvine
  */
 public class A034065 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.a001.A001668;
 import irvine.util.Point;
 
 /**
- * A336758.
+ * A336758 Number of <code>n-step self-avoiding</code> walks on the honeycomb lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A336758 extends A001668 {

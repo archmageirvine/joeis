@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.math.z.Z;
 
 /**
- * A003345 Sum of 11 nonzero 4th powers.
+ * A003345 Numbers that are the sum of 11 positive 4th powers.
  * @author Sean A. Irvine
  */
 public class A003345 extends A003336 {

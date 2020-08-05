@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
- * A336742 allocated for Sean A. Irvine.
+ * A336742 Number of self-avoiding cycles of length <code>2n</code> on the half-Manhattan lattice.
  * @author Sean A. Irvine
  */
 public class A336742 implements Sequence {

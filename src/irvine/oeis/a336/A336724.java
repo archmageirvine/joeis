@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001411;
 
 /**
- * A336724 allocated for Sean A. Irvine.
+ * A336724 Number of <code>n-step self-avoiding</code> walks on the half-Manhattan square lattice.
  * @author Sean A. Irvine
  */
 public class A336724 extends A001411 {

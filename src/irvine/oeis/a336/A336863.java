@@ -50,9 +50,13 @@ public class A336863 implements Sequence {
     mN += 2;
     if (mN == 0) {
       return Z.ONE;
+    } else if (mN == 2) {
+      // We don't allow polygons with no area, but if we were counting cycles
+      // this number should be 1 (i.e., go to a vertex, then return to origin).
+      return Z.ZERO;
     }
     mCount = 0;
-    search(mN - 2, 1, 1);
+    search(mN - 4, 1, 1);
     return Z.valueOf(mCount);
   }
 }

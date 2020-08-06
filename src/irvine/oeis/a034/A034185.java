@@ -47,8 +47,16 @@ public class A034185 implements Sequence {
     return true;
   }
 
+  /**
+   * Perform the actions for adding another column.
+   * @param colsRemaining the number of columns remaining to reached the middle of the grid
+   * @param prev binary representation of the previous column
+   * @param connectivity component numbers for previous column (<code>Integer.MAX_VALUE</code> is black)
+   * @param edgeConstraintSatisfied true iff all the edge requirements have been satisfied
+   * (effectively means a cell has been detected on the top of the grid -- we get the bottom
+   * for free by symmetry and there is one on the left (and hence right) by construction).
+   */
   private void symmetricCount(final int colsRemaining, final int prev, final int[] connectivity, final boolean edgeConstraintSatisfied) {
-    //System.out.println(colsRemaining + " " + Arrays.toString(connectivity) + " " + edgeConstraintSatisfied);
     // Check if we finished to the middle
     if (colsRemaining <= 0) {
       if (!edgeConstraintSatisfied) {
@@ -78,6 +86,7 @@ public class A034185 implements Sequence {
       }
     }
 
+    // k loops over all possible of assignments of black and white for the column
     outer:
     for (int k = 1; k < 1L << height(); ++k) {
       int c = componentNumber;
@@ -93,6 +102,7 @@ public class A034185 implements Sequence {
           }
         }
       }
+      // Minimize component numbers
       for (int j = height() - 1; j > 0; --j) {
         if ((k & (1 << (j - 1))) != 0) {
           newConnectivity[j - 1] = Math.min(newConnectivity[j - 1], newConnectivity[j]);
@@ -105,7 +115,6 @@ public class A034185 implements Sequence {
           mWorkspace[connectivity[j]] = true;
         }
       }
-      //System.out.println(colsRemaining + " k=" + k + " newcon=" + Arrays.toString(newConnectivity));
       for (int j = 0; j < height(); ++j) {
         if (connectivity[j] != Integer.MAX_VALUE && !mWorkspace[connectivity[j]]) {
           continue outer; // connectivity fails

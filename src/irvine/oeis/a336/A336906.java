@@ -3,10 +3,10 @@ package irvine.oeis.a336;
 import irvine.oeis.a001.A001666;
 
 /**
- * A336999.
+ * A336906.
  * @author Sean A. Irvine
  */
-public class A336999 extends A001666 {
+public class A336906 extends A001666 {
 
   @Override
   protected boolean check(final int point, final int n) {

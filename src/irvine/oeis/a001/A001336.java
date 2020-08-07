@@ -26,7 +26,7 @@ public class A001336 implements Sequence {
     | BIAS;
   protected static final int X1 = 1 << Y_SHIFT;
   protected static final int Y1 = 1 << BITS_PER_COORDINATE;
-  private static final int[] DELTAS = {
+  protected static final int[] DELTAS = {
     X1 + Y1, X1 - Y1, -X1 + Y1, -X1 - Y1,
     X1 + 1, X1 - 1, -X1 + 1, -X1 - 1,
     Y1 + 1, Y1 - 1, -Y1 + 1, -Y1 - 1,

@@ -2,9 +2,11 @@ package irvine.math.polynomial;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.function.Function;
 
 import irvine.math.q.Q;
 import irvine.math.z.Z;
@@ -364,13 +366,7 @@ public class MultivariateMonomial extends HashMap<Pair<String, Integer>, Z> impl
   private List<Pair<String, Integer>> powerDescriptors(final MultivariateMonomial a, final MultivariateMonomial b) {
     final ArrayList<Pair<String, Integer>> desc = new ArrayList<>(a.keySet());
     desc.addAll(b.keySet());
-    desc.sort((a1, b1) -> {
-      final int c = a1.left().compareTo(b1.left());
-      if (c != 0) {
-        return c;
-      }
-      return a1.right().compareTo(b1.right());
-    });
+    desc.sort(Comparator.comparing((Function<Pair<String, Integer>, String>) Pair::left).thenComparingInt(Pair::right));
     return desc;
   }
 

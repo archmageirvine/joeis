@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A047700 Numbers that are the sum of 5 nonzero squares.
+ * A047700 Numbers that are the sum of 5 positive squares.
  * @author Sean A. Irvine
  */
 public class A047700 extends SumOfLikePowersSequence {

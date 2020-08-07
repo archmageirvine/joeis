@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003342 Numbers that are the sum of 8 nonzero 4th powers.
+ * A003342 Numbers that are the sum of 8 positive 4th powers.
  * @author Sean A. Irvine
  */
 public class A003342 extends SumOfLikePowersSequence {

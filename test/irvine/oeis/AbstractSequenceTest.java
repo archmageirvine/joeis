@@ -78,17 +78,19 @@ public class AbstractSequenceTest extends TestCase {
       final String[] parts = vector.split(",");
       assertTrue(parts.length > 0);
       final String aNumber = "A" + seqId;
-      final Sequence seq = SequenceFactory.sequence(aNumber);
       final int termsToExamine = Math.min(parts.length, TEST_TERMS.getOrDefault(aNumber, Integer.MAX_VALUE));
-      try {
-        for (int k = 0; k < termsToExamine; ++k) {
-          assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+      if (termsToExamine > 0) {
+        final Sequence seq = SequenceFactory.sequence(aNumber);
+        try {
+          for (int k = 0; k < termsToExamine; ++k) {
+            assertEquals("a(" + (k + 1) + ")", parts[k], seq.next().toString());
+          }
+        } catch (final UnimplementedException e) {
+          // ok, these ones get a free pass
         }
-      } catch (final UnimplementedException e) {
-        // ok, these ones get a free pass
-      }
-      if (seq instanceof Closeable) {
-        ((Closeable) seq).close();
+        if (seq instanceof Closeable) {
+          ((Closeable) seq).close();
+        }
       }
     }
     final long delta = System.currentTimeMillis() - start;

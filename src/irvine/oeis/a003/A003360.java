@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003360 Numbers that are the sum of 4 nonzero 6th powers.
+ * A003360 Numbers that are the sum of 4 positive 6th powers.
  * @author Sean A. Irvine
  */
 public class A003360 extends SumOfLikePowersSequence {

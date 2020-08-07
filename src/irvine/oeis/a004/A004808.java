@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A004808 Numbers that are the sum of 8 nonzero <code>10th</code> powers.
+ * A004808 Numbers that are the sum of 8 positive <code>10th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004808 extends SumOfLikePowersSequence {

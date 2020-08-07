@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003378 Sum of 11 positive 7th powers.
+ * A003378 Numbers that are the sum of 11 positive 7th powers.
  * @author Sean A. Irvine
  */
 public class A003378 extends SumOfLikePowersSequence {

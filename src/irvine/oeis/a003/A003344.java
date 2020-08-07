@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003344 Sum of 10 nonzero 4th powers.
+ * A003344 Numbers that are the sum of 10 positive 4th powers.
  * @author Sean A. Irvine
  */
 public class A003344 extends SumOfLikePowersSequence {

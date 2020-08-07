@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003333 Sum of 10 positive cubes.
+ * A003333 Numbers that are the sum of 10 positive cubes.
  * @author Sean A. Irvine
  */
 public class A003333 extends SumOfLikePowersSequence {

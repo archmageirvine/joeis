@@ -393,20 +393,30 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
 
   /**
    * Replace each indeterminate with <code>1+x^n</code>.
+   * @param maxDegree maximum degree of the result
    * @return polynomial result
    * @exception ArithmeticException if the application does not yield an integer polynomial.
    */
-  public Polynomial<Q> applyOnePlusXToTheN() {
+  public Polynomial<Q> applyOnePlusXToTheN(final int maxDegree) {
     Polynomial<Q> result = RING.zero();
     for (final MultivariateMonomial m : values()) {
       Polynomial<Q> term = RING.one();
       for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
-        term = RING.multiply(term, RING.pow(RING.onePlusXToTheN(e.getKey().right()), e.getValue().intValueExact()));
+        term = RING.multiply(term, RING.pow(RING.onePlusXToTheN(e.getKey().right()), e.getValue().intValueExact(), maxDegree), maxDegree);
       }
       term = RING.multiply(term, m.getCoefficient());
       result = RING.add(result, term);
     }
     return result;
+  }
+
+  /**
+   * Replace each indeterminate with <code>1+x^n</code>.
+   * @return polynomial result
+   * @exception ArithmeticException if the application does not yield an integer polynomial.
+   */
+  public Polynomial<Q> applyOnePlusXToTheN() {
+    return applyOnePlusXToTheN(Integer.MAX_VALUE);
   }
 
   private CycleIndex scaleIndex(final int k) {

@@ -9,14 +9,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034190 Number of binary codes of length 5 with n words.
+ * A034194 Number of binary codes of length 9 with n words.
  * @author Sean A. Irvine
  */
-public class A034190 implements Sequence {
+public class A034194 implements Sequence {
 
   private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
-  private static final CycleIndex Z5 = SymmetricGroup.create(5).cycleIndex();
-  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z2, Z5).applyOnePlusXToTheN();
+  private static final CycleIndex Z9 = SymmetricGroup.create(9).cycleIndex();
+  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z2, Z9).applyOnePlusXToTheN();
   private int mN = -1;
 
   @Override

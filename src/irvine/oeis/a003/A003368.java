@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003368 Sum of 12 nonzero 6th powers.
+ * A003368 Numbers that are the sum of 12 positive 6th powers.
  * @author Sean A. Irvine
  */
 public class A003368 extends SumOfLikePowersSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A004821 Sum of 10 positive <code>11th</code> powers.
+ * A004821 Numbers that are the sum of 10 positive <code>11th</code> powers.
  * @author Sean A. Irvine
  */
 public class A004821 extends SumOfLikePowersSequence {

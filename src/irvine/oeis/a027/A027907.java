@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027907 Irregular triangle of trinomial coefficients <code>T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= 2n)</code>, read by rows <code>(n-th</code> row is obtained by expanding <code>(1 + x + x^2)^n)</code>.
+ * A027907 Irregular triangle of trinomial coefficients <code>T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= 2*n)</code>, read by rows: n-th row is obtained by expanding <code>(1 + x + x^2)^n</code>.
  * @author Sean A. Irvine
  */
 public class A027907 implements Sequence {

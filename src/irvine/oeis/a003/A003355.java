@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003355 Sum of 10 positive 5th powers.
+ * A003355 Numbers that are the sum of 10 positive 5th powers.
  * @author Sean A. Irvine
  */
 public class A003355 extends SumOfLikePowersSequence {

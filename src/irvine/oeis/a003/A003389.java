@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A003389 Sum of 11 nonzero 8th powers.
+ * A003389 Numbers that are the sum of 11 positive 8th powers.
  * @author Sean A. Irvine
  */
 public class A003389 extends SumOfLikePowersSequence {

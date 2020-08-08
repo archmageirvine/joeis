@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034225.
+ * A034225 Number of ternary codes (not necessarily linear) of length n with 5 words.
  * @author Sean A. Irvine
  */
 public class A034225 implements Sequence {

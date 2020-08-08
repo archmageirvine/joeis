@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034223.
+ * A034223 Number of ternary codes (not necessarily linear) of length n with 3 words.
  * @author Sean A. Irvine
  */
 public class A034223 implements Sequence {

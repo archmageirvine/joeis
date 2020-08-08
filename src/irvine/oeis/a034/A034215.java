@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034215.
+ * A034215 Number of ternary codes of length 3 with n words.
  * @author Sean A. Irvine
  */
 public class A034215 implements Sequence {
@@ -20,7 +20,7 @@ public class A034215 implements Sequence {
 
   @Override
   public Z next() {
-    Z r = mA.coeff(++mN).toZ();
+    final Z r = mA.coeff(++mN).toZ();
     return Z.ZERO.equals(r) ? null : r;
   }
 }

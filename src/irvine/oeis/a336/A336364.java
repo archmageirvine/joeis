@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336364.
+ * A336364 allocated for Clark Kimberling.
  * @author Sean A. Irvine
  */
 public class A336364 implements Sequence {
@@ -18,7 +18,11 @@ public class A336364 implements Sequence {
   private final List<TreeSet<Long>> mRows = new ArrayList<>();
   private int mCurrentRow = -1;
   private int mMaxRow = 0;
-  private long mM = 0;
+  private long mM = start();
+
+  protected long start() {
+    return 0;
+  }
 
   @Override
   public Z next() {
@@ -31,7 +35,13 @@ public class A336364 implements Sequence {
     }
     while (mCurrentRow >= mRows.size() || mRows.get(mCurrentRow).isEmpty()) {
       // We need to keep looking to find the next term for this row
-      if (mPrime.isPrime(++mM)) {
+      if (++mM == 0) {
+        // Only needed for A336365
+        mRows.add(new TreeSet<>());
+        mRows.add(new TreeSet<>());
+        mRows.add(new TreeSet<>());
+        mRows.get(2).add(0L);
+      } else if (mPrime.isPrime(mM)) {
         mRows.get(0).add(mM);
       } else {
         final int d = (int) Math.min(mPrime.nextPrime(mM) - mM, mM - mPrime.prevPrime(mM));

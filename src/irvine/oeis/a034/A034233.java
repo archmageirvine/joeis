@@ -9,20 +9,19 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034216 Number of ternary codes of length 4 with n words.
+ * A034233 Number of quaternary codes of length 2 with n words.
  * @author Sean A. Irvine
  */
-public class A034216 implements Sequence {
+public class A034233 implements Sequence {
 
-  private static final CycleIndex Z3 = SymmetricGroup.create(3).cycleIndex();
   private static final CycleIndex Z4 = SymmetricGroup.create(4).cycleIndex();
-  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z3, Z4).applyOnePlusXToTheN();
+  private static final CycleIndex Z2 = SymmetricGroup.create(2).cycleIndex();
+  private final Polynomial<Q> mA = WreathExponentiation.exponentiation(Z4, Z2).applyOnePlusXToTheN();
   private int mN = -1;
 
   @Override
   public Z next() {
-    final Z r = mA.coeff(++mN).toZ();
-    return Z.ZERO.equals(r) ? null : r;
+    return mA.coeff(++mN).toZ();
   }
 }
 

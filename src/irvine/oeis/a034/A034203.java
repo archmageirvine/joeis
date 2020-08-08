@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034203.
+ * A034203 Number of binary codes (not necessarily linear) of length n with 8 words.
  * @author Sean A. Irvine
  */
 public class A034203 implements Sequence {

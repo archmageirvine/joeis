@@ -318,13 +318,10 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
   }
 
   /**
-   * Apply this cycle index to the given polynomial, limiting the degree
-   * of the result.
-   *
-   * @param polys the polynomials to substitute
+   * Apply this cycle index to the given polynomial, limiting the degree of the result.
+   * @param polys the polynomials to substitute (with <code>x_1</code> is position 0 of array)
    * @param maxDegree maximum degree term guaranteed to retain in the result
    * @return polynomial result
-   * @exception ArithmeticException if the application does not yield an integer polynomial.
    */
   public Polynomial<Q> apply(final List<Polynomial<Q>> polys, final Z maxDegree) {
     Polynomial<Q> result = RING.zero();

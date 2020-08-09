@@ -4,12 +4,17 @@ To produce more GL cycle indexes do the following in a temporary directory
 tar zxvf SYM2_0_tar.gz
 make
 gcc -DALLTRUE -DFAST seangl.c bar.o bi.o boe.o bruch.o classical.o de.o di.o ff.o galois.o ga.o gra.o hash.o hiccup.o io.o ko.o list.o lo.o ma.o mee.o mem.o mes.o mhe.o mhh.o mhm.o mhp.o mhs.o mmm.o mms.o mod_dg_sbd.o mo.o mpp.o mps.o mse.o msh.o msm.o mss.o muir.o na.o nb.o nc.o nu.o part.o pee.o peh.o pem.o perm.o pes.o phe.o phh.o phm.o phs.o plet.o pme.o pmh.o poly.o ppe.o pph.o ppm.o ppp.o pps.o pr.o pse.o psh.o psm.o pss.o rest.o rh.o sab.o sb.o sc.o sr.o ta.o teh.o tem.o tep.o tes.o the.o thm.o thp.o ths.o tme.o tmh.o tmp.o tms.o tpe.o tph.o tpm.o tps.o tse.o tsh.o tsm.o tsp.o vc.o zo.o zykelind.o zyk.o -o seangl -lm
-for ((k=1;k<20;k++)); do echo -e "2\n$k" |./seangl 2>/dev/null | tr -d '\n\.' | sed 's| */ *|/|g' | java irvine.util.math.group.FixGeneralLinear | gzip -9 >~/joeis/src/irvine/util/math/group/gl/$k.gz; done
+for ((k=1;k<20;k++)); do echo -e "2\n$k" |./seangl 2>/dev/null | tr -d '\n\.' | sed 's| */ *|/|g' | java irvine.math.group.FixGeneralLinear | gzip -9 >~/joeis/src/irvine/math/group/gl/$k.gz; done
 
 # Higher values would presumeably work, but hte files get big.
 
 Similarly for AG:
 
 gcc -DALLTRUE -DFAST seanag.c bar.o bi.o boe.o bruch.o classical.o de.o di.o ff.o galois.o ga.o gra.o hash.o hiccup.o io.o ko.o list.o lo.o ma.o mee.o mem.o mes.o mhe.o mhh.o mhm.o mhp.o mhs.o mmm.o mms.o mod_dg_sbd.o mo.o mpp.o mps.o mse.o msh.o msm.o mss.o muir.o na.o nb.o nc.o nu.o part.o pee.o peh.o pem.o perm.o pes.o phe.o phh.o phm.o phs.o plet.o pme.o pmh.o poly.o ppe.o pph.o ppm.o ppp.o pps.o pr.o pse.o psh.o psm.o pss.o rest.o rh.o sab.o sb.o sc.o sr.o ta.o teh.o tem.o tep.o tes.o the.o thm.o thp.o ths.o tme.o tmh.o tmp.o tms.o tpe.o tph.o tpm.o tps.o tse.o tsh.o tsm.o tsp.o vc.o zo.o zykelind.o zyk.o -o seanag -lm
-for ((k=1;k<20;k++)); do echo -e "2\n$k" |./seanag 2>/dev/null | tr -d '\n\.' | sed 's| */ *|/|g' | java irvine.util.math.group.FixGeneralLinear | gzip -9 >~/joeis/src/irvine/util/math/group/ag/$k.gz; done
+for ((k=1;k<20;k++)); do echo -e "2\n$k" |./seanag 2>/dev/null | tr -d '\n\.' | sed 's| */ *|/|g' | java irvine.math.group.FixGeneralLinear | gzip -9 >~/joeis/src/irvine/math/group/ag/$k.gz; done
+
+Similarly for PGL:
+
+gcc -DALLTRUE -DFAST seanpgl.c bar.o bi.o boe.o bruch.o classical.o de.o di.o ff.o galois.o ga.o gra.o hash.o hiccup.o io.o ko.o list.o lo.o ma.o mee.o mem.o mes.o mhe.o mhh.o mhm.o mhp.o mhs.o mmm.o mms.o mod_dg_sbd.o mo.o mpp.o mps.o mse.o msh.o msm.o mss.o muir.o na.o nb.o nc.o nu.o part.o pee.o peh.o pem.o perm.o pes.o phe.o phh.o phm.o phs.o plet.o pme.o pmh.o poly.o ppe.o pph.o ppm.o ppp.o pps.o pr.o pse.o psh.o psm.o pss.o rest.o rh.o sab.o sb.o sc.o sr.o ta.o teh.o tem.o tep.o tes.o the.o thm.o thp.o ths.o tme.o tmh.o tmp.o tms.o tpe.o tph.o tpm.o tps.o tse.o tsh.o tsm.o tsp.o vc.o zo.o zykelind.o zyk.o -o seanpgl -lm
+for ((k=1;k<20;k++)); do echo -e "2\n$k" |./seanpgl 2>/dev/null | tr -d '\n\.' | sed 's| */ *|/|g' | java irvine.math.group.FixGeneralLinear | gzip -9 >~/joeis/src/irvine/math/group/pgl/$k.gz; done
 

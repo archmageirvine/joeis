@@ -33,19 +33,26 @@ public class A076832 implements Sequence {
     return mCycleIndices.get(n);
   }
 
+  protected Z t(final int n, final int m) {
+    if (m < 1) {
+      return Z.ZERO;
+    }
+    final CycleIndex ci = getCycleIndex(m);
+    final ArrayList<Polynomial<Q>> polys = new ArrayList<>();
+    for (int k = 1; k <= ci.maxIndex(); ++k) {
+      polys.add(RING.series(RING.one(), RING.oneMinusXToTheN(k), n));
+    }
+    final Polynomial<Q> gf = ci.apply(polys, Z.valueOf(n));
+    return gf.coeff(n).toZ();
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
     }
-    final CycleIndex ci = getCycleIndex(mM);
-    final ArrayList<Polynomial<Q>> polys = new ArrayList<>();
-    for (int k = 1; k <= ci.maxIndex(); ++k) {
-      polys.add(RING.series(RING.one(), RING.oneMinusXToTheN(k), mN));
-    }
-    final Polynomial<Q> gf = ci.apply(polys, Z.valueOf(mN));
-    return gf.coeff(mN).toZ();
+    return t(mN, mM);
   }
 }
 

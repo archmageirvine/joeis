@@ -235,6 +235,12 @@
      <Match classregex="irvine.oeis.a001.A001334">
        <BugCode name="MS"/>
      </Match>
+     <Match classregex="irvine.oeis.a001.A001336">
+       <BugCode name="MS"/>
+     </Match>
+     <Match classregex="irvine.oeis.a001.A001666">
+       <BugCode name="MS"/>
+     </Match>
      <Match classregex="irvine.oeis.a034.A034011">
        <BugCode name="SEO"/>
      </Match>

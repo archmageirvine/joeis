@@ -19,7 +19,7 @@ public class PolyominoCounter {
   private final Cumulator mMbcu;
 
   private final int mMax;
-  private final UTest mUt;
+  private final UniquenessTester mUt;
   private ChildGenerator mGen = ChildGeneratorFactory.POLYOMINO_GENERATOR;
 
   public Cumulator getCu() {
@@ -59,7 +59,7 @@ public class PolyominoCounter {
     mOnlyUnbiased = onlyUnbiased;
     mOnlyMaxBiased = onlyMaxBiased;
     mWantSym = wantSym;
-    mUt = new UTest();
+    mUt = new UniquenessTester();
   }
 
   /**

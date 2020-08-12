@@ -15,8 +15,8 @@ public final class ChildGeneratorFactory {
    */
   public static final ChildGenerator POLYOMINO_GENERATOR = (polyomino, addOnlyToColour) -> {
     final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
 
     for (int k = 0; k < polyomino.size(); ++k) {
       if (addOnlyToColour != 0 && polyomino.mCs.getColour(k) != addOnlyToColour) {
@@ -33,8 +33,8 @@ public final class ChildGeneratorFactory {
   /** Generator for polyknights. */
   public static final ChildGenerator POLYKNIGHT_GENERATOR = (polyomino, addOnlyToColour) -> {
     final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
 
     for (int k = 0; k < polyomino.size(); ++k) {
       if (addOnlyToColour != 0 && polyomino.mCs.getColour(k) != addOnlyToColour) {
@@ -57,8 +57,8 @@ public final class ChildGeneratorFactory {
    */
   public static final ChildGenerator DIRECTED_GENERATOR = (polyomino, addOnlyToColour) -> {
     final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
 
     for (int k = 0; k < polyomino.size(); ++k) {
       if (addOnlyToColour != 0 && polyomino.mCs.getColour(k) != addOnlyToColour) {

@@ -61,8 +61,8 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   // No guarantee that not generatable from previous
   ArrayList<Polyomino> listMirrorSons() {
     final ArrayList<Polyomino> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
     for (int i = 0; i < size(); i++) {
       tryMirrorSquare(i, 1, 0, list, h, hc);
       tryMirrorSquare(i, -1, 0, list, h, hc);
@@ -72,7 +72,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     return list;
   }
 
-  private void tryMirrorSquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
+  private void tryMirrorSquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UniquenessTester h, final UniquenessTester hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {
@@ -96,7 +96,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   }
 
   // try to build a polyomino adding a specific square to current
-  protected void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UTest h, final UTest hc) {
+  protected void trySquare(final int i, final int dx, final int dy, final ArrayList<Polyomino> list, final UniquenessTester h, final UniquenessTester hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
     if (((CoordSet2) mCs).exists(x, y)) {

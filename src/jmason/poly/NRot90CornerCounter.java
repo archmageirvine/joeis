@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 public class NRot90CornerCounter extends Counter {
 
-  UTest mH;
+  UniquenessTester mH;
 
   /**
    * Counts polyominoes that are 90 degree rotatable around a corner.
@@ -29,19 +29,19 @@ public class NRot90CornerCounter extends Counter {
 
     final Rot90CornerCounter r90 = new Rot90CornerCounter(max, cs, false, null);
     add(r90);
-    final UTest hh = new UTest();
+    final UniquenessTester hh = new UniquenessTester();
     for (int i = 0; i < r90.mAll.size(); ++i) {
       add(new NRot90CornerCounter(max, r90.mAll.get(i).mP, hh));
     }
   }
 
-  NRot90CornerCounter(final int max, final Polyomino starter, final UTest hh) {
+  NRot90CornerCounter(final int max, final Polyomino starter, final UniquenessTester hh) {
     super("R90", max, null);
-    mH = new UTest();
+    mH = new UniquenessTester();
     count(starter, hh, false);
   }
 
-  private void count(final Polyomino starter, final UTest hh, final boolean bInclude) {
+  private void count(final Polyomino starter, final UniquenessTester hh, final boolean bInclude) {
     if (bInclude) {
       add(new Countable(starter, !((CoordSet2) starter.mCs).symXaxis() && !((CoordSet2) starter.mCs).symYaxis()));
     }

@@ -6,7 +6,7 @@ package jmason.poly;
  */
 public class Rot90CornerCounter extends Counter {
 
-  UTest mH;
+  UniquenessTester mH;
 
 //  // max is multiple of 4
 //  public Rot90CornerCounter(final int max, final int fase, final boolean mFlagFree, final boolean flagFixed, final boolean mFlagOneSided) {
@@ -53,7 +53,7 @@ public class Rot90CornerCounter extends Counter {
    */
   public Rot90CornerCounter(final int max, final CoordSet2 starter, final boolean onlyForPerim, final CoordSet2 hole) {
     super("R90", max, hole);
-    mH = new UTest();
+    mH = new UniquenessTester();
     count(starter.mSize, max, starter, onlyForPerim);
   }
 

@@ -42,8 +42,8 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
   // build a list (without duplicates) of polyominoes that may be generated from current
   ArrayList<Polyiamond> listSons(final int addOnlyToColour) {
     final ArrayList<Polyiamond> list = new ArrayList<>();
-    final UTest h = new UTest();
-    final UTest hc = new UTest();
+    final UniquenessTester h = new UniquenessTester();
+    final UniquenessTester hc = new UniquenessTester();
 
     for (int i = 0; i < size(); ++i) {
       if (addOnlyToColour != 0 && mCs.getColour(i) != addOnlyToColour) {
@@ -64,7 +64,7 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
   }
 
   // try to build a polyomino adding a specific triangle to current
-  private void tryTriangle(final int i, final int dx, final int dy, final ArrayList<Polyiamond> list, final UTest h, final UTest hc) {
+  private void tryTriangle(final int i, final int dx, final int dy, final ArrayList<Polyiamond> list, final UniquenessTester h, final UniquenessTester hc) {
     final int x = mCs.getX(i) + dx;
     final int y = mCs.getY(i) + dy;
 

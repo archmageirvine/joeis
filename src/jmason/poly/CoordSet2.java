@@ -2,6 +2,9 @@ package jmason.poly;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
+
+import irvine.util.Pair;
 
 /**
  * A set of <code>(x,y)</code> coordinates.
@@ -22,7 +25,14 @@ public class CoordSet2 extends CoordSetGen<Square> {
   final boolean mFlagFixed;
   final boolean mFlagOneSided;
 
-  CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
+  /**
+   * Construct a new coordinate set.
+   * @param size size
+   * @param flagFree true if free
+   * @param flagFixed true if fixed
+   * @param flagOneSided true if one sided
+   */
+  public CoordSet2(final int size, final boolean flagFree, final boolean flagFixed, final boolean flagOneSided) {
     mSize = size;
     mSet = new SquareSet(size);
     mFlagFree = flagFree;
@@ -156,7 +166,10 @@ public class CoordSet2 extends CoordSetGen<Square> {
     ((SquareSet) mSet).overSquare(i, x, y, colour);
   }
 
-  void initMonomino() {
+  /**
+   * The monomino.
+   */
+  public void initMonomino() {
     setSquare(0, 0, 0, Square.BLACK);
   }
 
@@ -397,7 +410,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     assert getBlack() == black && getWhite() == white && black + white == mSize : "bad colours";
   }
 
-  CoordSet2 perim() {
+  CoordSet2 perimeter() {
     final UTest h = new UTest();
     final ArrayList<int[]> a = new ArrayList<>();
     for (int i = 0; i < mSize; i++) {
@@ -409,6 +422,28 @@ public class CoordSet2 extends CoordSetGen<Square> {
     return aToCs(a);
   }
 
+  /**
+   * Compute the size of the perimeter of this coordinate set.
+   * @return perimeter size
+   */
+  public int perimeterSize() {
+    final HashSet<Pair<Integer, Integer>> h = new HashSet<>();
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.add(new Pair<>(x + 1, y));
+      h.add(new Pair<>(x - 1, y));
+      h.add(new Pair<>(x, y + 1));
+      h.add(new Pair<>(x, y - 1));
+    }
+    for (int k = 0; k < mSize; k++) {
+      final int x = mSet.getX(k);
+      final int y = mSet.getY(k);
+      h.remove(new Pair<>(x, y));
+    }
+    return h.size();
+  }
+
   private void tryPerim(final UTest h, final ArrayList<int[]> a, final int i, final int dx, final int dy) {
     final int x = mSet.getX(i) + dx;
     final int y = mSet.getY(i) + dy;
@@ -416,7 +451,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
       return;
     }
     final String s = x + ";" + y;
-    if (!h.put(s)) {
+    if (!h.add(s)) {
       return;
     }
     a.add(new int[]{x, y, -mSet.getColour(i)});
@@ -664,7 +699,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
     }
     final CoordSet2 cs = copy(x, y, Square.opp(y), x, Square.opp(x), Square.opp(y), y, Square.opp(x));
     final String uniq = cs.makeString();
-    if (!h.put(uniq)) {
+    if (!h.add(uniq)) {
       return;
     }
     list.add(cs);
@@ -712,7 +747,7 @@ public class CoordSet2 extends CoordSetGen<Square> {
 
     final CoordSet2 cs = copy(x, y, -x, Square.opp(y));
     final String uniq = new UniqueMaker2(cs).uniqString();
-    if (!h.put(uniq)) {
+    if (!h.add(uniq)) {
       return;
     }
     list.add(cs);

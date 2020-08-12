@@ -72,12 +72,12 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
       return;
     }
     final String t = x + " " + y;
-    if (!hc.put(t)) {
+    if (!hc.add(t)) {
       return;
     }
 
     final Polyiamond p = new Polyiamond((CoordSet2T) mCs, x, y);
-    if (!h.put(p.mUniq)) {
+    if (!h.add(p.mUniq)) {
       return;
     }
     list.add(p);

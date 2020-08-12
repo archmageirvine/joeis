@@ -32,7 +32,7 @@ public class PolySideCounter {
   private void count(final int c, final int max, final PolySide p) {
 
     final UniqueMaker3s u = new UniqueMaker3s(p);
-    if (!mUt.put(u.uniqString())) {
+    if (!mUt.add(u.uniqString())) {
       return;
     }
     mA.get(c).add(p);

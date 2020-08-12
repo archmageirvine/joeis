@@ -73,7 +73,7 @@ public class Rot90CornerCounter extends Counter {
           continue;
         }
         final String uniq = new UniqueMaker2(newcs).uniqString();
-        if (!mH.put(uniq)) {
+        if (!mH.add(uniq)) {
           continue;
         }
         count(c + 4, max, newcs, onlyForPerim);

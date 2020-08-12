@@ -25,6 +25,10 @@ public abstract class PolyGen<U extends Element<U>, T extends CoordSetGen<U>> ex
     mUniq = mCs.makeUnique();
   }
 
+  public String getUniq() {
+    return mUniq;
+  }
+
   @Override
   public String toString() {
     return mCs.toString() + mUniq;

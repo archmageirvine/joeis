@@ -23,7 +23,7 @@ public class Cumulator {
   }
 
   void add(final int i) {
-    mCounters[i]++;
+    ++mCounters[i];
   }
 
   void print() {

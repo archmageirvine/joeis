@@ -42,7 +42,7 @@ public class Accumulator {
   }
 
   boolean add(final Countable c) {
-    if (!mUt.put(c.mP.mUniq)) {
+    if (!mUt.add(c.mP.mUniq)) {
       if (c.mCountable) {
         throw new RuntimeException(c.mP.mCs.makeDiagram());
       }

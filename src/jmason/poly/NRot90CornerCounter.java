@@ -47,10 +47,10 @@ public class NRot90CornerCounter extends Counter {
     }
     final ArrayList<Polyomino> sons = ((CoordSet2) (starter.mCs)).nlistRot90CornerSons(); // no guarantee of uniqueness
     for (final Polyomino p : sons) {
-      if (!mH.put(p.mUniq)) {
+      if (!mH.add(p.mUniq)) {
         continue;
       }
-      if (!hh.put(p.mUniq)) {
+      if (!hh.add(p.mUniq)) {
         continue;
       }
       count(p, hh, true);

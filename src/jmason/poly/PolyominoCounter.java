@@ -77,7 +77,7 @@ public class PolyominoCounter {
   private void count(final int c, final int max, final Polyomino p) {
     int onlyIfColour = 0;
     p.mCs.verify();
-    if (!mUt.put(p.mUniq)) {
+    if (!mUt.add(p.mUniq)) {
       return;
     }
 

@@ -36,7 +36,7 @@ public class Rot180MidSideCounter extends Counter {
       if (c.mP.holy()) {
         continue;
       }
-      final CoordSet2 perim = ((CoordSet2) (c.mP.mCs)).perim();
+      final CoordSet2 perim = ((CoordSet2) (c.mP.mCs)).perimeter();
       if (perim.mSize <= max) {
         r180 = new Rot180MidSideCounter(max, perim, false, (CoordSet2) c.mP.mCs);
         add(r180);
@@ -72,7 +72,7 @@ public class Rot180MidSideCounter extends Counter {
           continue;
         }
         final String uniq = new UniqueMaker2(newcs).uniqString();
-        if (mH.put(uniq)) {
+        if (mH.add(uniq)) {
           count(c + 2, max, newcs, onlyForPerim);
         }
       }

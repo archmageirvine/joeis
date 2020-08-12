@@ -12,8 +12,11 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
   private boolean mBHoly;
   private boolean mBHolyCalculated;
 
-  // build a polyomino cloning a coordinate set
-  Polyomino(final CoordSet2 c) {
+  /**
+   * A polyomino backed by a coordinate set.
+   * @param c the coordinate set
+   */
+  public Polyomino(final CoordSet2 c) {
     builder(c, true);
     ((CoordSet2) mCs).calculate();
   }
@@ -75,12 +78,12 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
-    if (!hc.put(x + " " + y)) {
+    if (!hc.add(x + " " + y)) {
       return;
     }
 
     final Polyomino p = new Polyomino((CoordSet2) mCs, x, y, Square.opp(x), y);
-    if (!h.put(p.mUniq)) {
+    if (!h.add(p.mUniq)) {
       return;
     }
 
@@ -99,11 +102,11 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     if (((CoordSet2) mCs).exists(x, y)) {
       return;
     }
-    if (!hc.put(x + " " + y)) {
+    if (!hc.add(x + " " + y)) {
       return;
     }
     final Polyomino p = new Polyomino((CoordSet2) mCs, x, y);
-    if (!h.put(p.mUniq)) {
+    if (!h.add(p.mUniq)) {
       return;
     }
     list.add(p);
@@ -192,7 +195,7 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
     if (mBHolyCalculated) {
       return mBHoly;
     }
-    final CoordSet2 neg = this.negative();
+    final CoordSet2 neg = negative();
     mBHoly = !neg.connected();
     mBHolyCalculated = true;
     return mBHoly;
@@ -214,5 +217,13 @@ public class Polyomino extends PolyGen<Square, CoordSet2> {
       }
     }
     return neg;
+  }
+
+  /**
+   * Compute the size of the perimeter of this polyomino.
+   * @return the size of the perimeter
+   */
+  public int perimeterSize() {
+    return ((CoordSet2) mCs).perimeterSize();
   }
 }

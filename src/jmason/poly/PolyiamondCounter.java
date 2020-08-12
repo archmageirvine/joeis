@@ -52,7 +52,7 @@ public class PolyiamondCounter {
 
   private void count(final int c, final int max, final Polyiamond p, final boolean optim) {
     p.mCs.verify();
-    if (!mUt.put(p.mUniq)) {
+    if (!mUt.add(p.mUniq)) {
       return;
     }
 

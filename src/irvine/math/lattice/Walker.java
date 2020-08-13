@@ -10,7 +10,6 @@ public class Walker extends LinkedHashSet<Long>  {
 
   private final Lattice mLattice;
   private long mCount = 0;
-  private long[] mWorkspace;
 
   /**
    * Construct a walker on the specified lattice.
@@ -18,9 +17,6 @@ public class Walker extends LinkedHashSet<Long>  {
    */
   public Walker(final Lattice lattice) {
     mLattice = lattice;
-    // Assume every point has same number of neighbours.  If this is not the case then
-    // search will need to be overridden
-    mWorkspace = mLattice.neighbours(mLattice.origin());
   }
 
   /**
@@ -44,17 +40,13 @@ public class Walker extends LinkedHashSet<Long>  {
   }
 
   protected void search(final long point, final int remainingSteps) {
-    System.out.println(mLattice.toString(point) + " " + remainingSteps);
     if (remainingSteps <= 0) {
       mCount += weight();
     } else {
-      // todo this mechanism does not work real well, cannot use the second form
-      // due to recursion that is going on here.  It might be better to ask
-      // for neighbour 0,1,2,3,... and define such methods on lattice
-      // todo something else is not working here
-      for (final long p : mLattice.neighbours(point)) {
-        //for (final long p : mLattice.neighbours(mWorkspace, point)) {
-        if (isAcceptable(point, remainingSteps)) {
+      final int nc = mLattice.neighbourCount(point);
+      for (int k = 0; k < nc; ++k) {
+        final long p = mLattice.neighbour(point, k);
+        if (isAcceptable(p, remainingSteps)) {
           add(p);
           search(p, remainingSteps - 1);
           remove(p);
@@ -65,18 +57,32 @@ public class Walker extends LinkedHashSet<Long>  {
 
   /**
    * Return the number of walks of specified length.
-   * @param n length of walk
+   * @param steps length of walk
+   * @param initialPoints any initial points shared by all walks
    * @return number of walks
    */
-  public long count(final int n) {
-    if (n <= 0) {
-      return n < 0 ? 0 : 1;
+  public long count(final int steps, final long... initialPoints) {
+    if (steps <= 0) {
+      return steps < 0 ? 0 : 1;
+    }
+    for (final long pt : initialPoints) {
+      add(pt);
     }
     mCount = 0;
-
-    // todo initial symmetry considerations
-    search(mLattice.origin(), n);
+    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length);
     return mCount;
+  }
+
+  @Override
+  public String toString() {
+    final StringBuilder walk = new StringBuilder();
+    for (final Long pt : this) {
+      if (walk.length() > 0) {
+        walk.append("->");
+      }
+      walk.append(mLattice.toString(pt));
+    }
+    return walk.toString();
   }
 
   /**
@@ -84,9 +90,10 @@ public class Walker extends LinkedHashSet<Long>  {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final Walker walker = new Walker(new SquareLattice());
-    for (int k = 0; k < 20; ++k) {
-      System.out.println(walker.count(k));
+    final SquareLattice sl = new SquareLattice();
+    final Walker walker = new Walker(sl);
+    for (int k = 0; k < 22; ++k) {
+      System.out.println(4 * walker.count(k, sl.origin(), sl.toPoint(1, 0)));
     }
   }
 }

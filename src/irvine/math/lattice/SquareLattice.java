@@ -12,13 +12,14 @@ public class SquareLattice extends AbstractLattice {
   private static final long BIAS = 1L << (BITS_PER_COORDINATE - 1);
   private static final long Y1 = 1L << BITS_PER_COORDINATE;
   private static final long ORIGIN = pack(0, 0);
+  private static final long[] DELTA = {1, -1, Y1, -Y1};
 
   private static long pack(final long x, final long y) {
     return ((BIAS + y) << BITS_PER_COORDINATE) + BIAS + x;
   }
 
   @Override
-  protected int neighbourCount() {
+  public int neighbourCount(final long point) {
     return 4;
   }
 
@@ -67,12 +68,8 @@ public class SquareLattice extends AbstractLattice {
   }
 
   @Override
-  public long[] neighbours(final long[] workspace, final long point) {
-    workspace[0] = point + 1;
-    workspace[1] = point - 1;
-    workspace[2] = point + Y1;
-    workspace[3] = point - Y1;
-    return workspace;
+  public long neighbour(final long point, final int neighbourNumber) {
+    return point + DELTA[neighbourNumber];
   }
 
 }

@@ -50,22 +50,24 @@ public interface Lattice {
   long ordinate(final long point, final int ordinate);
 
   /**
-   * Return an array containing all the immediate neighbours of a point.  The memory
-   * associated with the return will be newly allocated.
+   * Return the number of neighbours of the specified point.
+   * @param point a point
+   * @return the number of neighbours of the point
+   */
+  int neighbourCount(final long point);
+
+  /**
+   * Return the specified neighbour of the specified point.
+   * @param point the point
+   * @param neighbourNumber the neighbour number
+   * @return array of neighbours
+   */
+  long neighbour(final long point, final int neighbourNumber);
+
+  /**
+   * Return an array containing all the immediate neighbours of a point.
    * @param point the point
    * @return array of neighbours
    */
   long[] neighbours(final long point);
-
-  /**
-   * Return an array containing all the immediate neighbours of a point.  The returned
-   * array will be the same as that provided as an argument.  It is assumed that the
-   * workspace is of sufficient size to store all neighbours of the point.  If the
-   * array is longer than necessary, then subsequent values are not modified.
-   * This method is provided for performance reasons, allowing memory to be reused.
-   * @param workspace memory in which to store the result
-   * @param point the point
-   * @return array of neighbours
-   */
-  long[] neighbours(final long[] workspace, final long point);
 }

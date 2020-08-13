@@ -7,7 +7,7 @@ import java.util.HashSet;
  * @author jmason
  */
 public class UniquenessTester extends HashSet<String> {
-  
+
   public boolean add(final int x, final int y) {
     return add(prepare(x, y));
   }

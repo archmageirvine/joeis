@@ -29,10 +29,12 @@ public abstract class AbstractLattice implements Lattice {
     return sb.toString();
   }
 
-  protected abstract int neighbourCount();
-
   @Override
   public long[] neighbours(final long point) {
-    return neighbours(new long[neighbourCount()], point);
+    final long[] neighbours = new long[neighbourCount(point)];
+    for (int k = 0; k < neighbours.length; ++k) {
+      neighbours[k] = neighbour(point, k);
+    }
+    return neighbours;
   }
 }

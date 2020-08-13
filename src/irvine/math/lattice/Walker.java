@@ -1,15 +1,24 @@
 package irvine.math.lattice;
 
-import java.util.LinkedHashSet;
+import irvine.oeis.Sequence;
+import irvine.oeis.a001.A001411;
 
 /**
  * Count the number of self-avoiding walks (and similar concepts) on a specified lattice.
  * @author Sean A. Irvine
  */
-public class Walker extends LinkedHashSet<Long>  {
+public class Walker {
+
+  // One of the main concerns is being able to quickly determine if a point is
+  // already in the walk.  Their are various approaches to doing this.  Timing
+  // suggests that simply searching through an unsorted array of points is
+  // much faster than using a TreeSet, HashSet, or LinkedHashSet.  This
+  // obviously cannot be true for exceedingly long walks, but for those that
+  // can be practically done with brute force, the simple array solution is faster.
 
   private final Lattice mLattice;
   private long mCount = 0;
+  private long[] mWalk = null;
 
   /**
    * Construct a walker on the specified lattice.
@@ -27,7 +36,15 @@ public class Walker extends LinkedHashSet<Long>  {
    * @return true iff the point is valid for inclusion in the current path
    */
   protected boolean isAcceptable(final long point, final int remainingSteps) {
-    return !contains(point);
+    // Test if the point is already in the walk.  We work backwards
+    // through the list because it is more likely that a given point
+    // will be the same as a recent point and a distant point.
+    for (int k = mWalk.length - remainingSteps - 1; k >= 0; --k) {
+      if (mWalk[k] == point) {
+        return false;
+      }
+    }
+    return true;
   }
 
   /**
@@ -43,13 +60,13 @@ public class Walker extends LinkedHashSet<Long>  {
     if (remainingSteps <= 0) {
       mCount += weight();
     } else {
+      final int t = mWalk.length - remainingSteps;
       final int nc = mLattice.neighbourCount(point);
       for (int k = 0; k < nc; ++k) {
         final long p = mLattice.neighbour(point, k);
         if (isAcceptable(p, remainingSteps)) {
-          add(p);
+          mWalk[t] = p;
           search(p, remainingSteps - 1);
-          remove(p);
         }
       }
     }
@@ -62,38 +79,44 @@ public class Walker extends LinkedHashSet<Long>  {
    * @return number of walks
    */
   public long count(final int steps, final long... initialPoints) {
-    if (steps <= 0) {
-      return steps < 0 ? 0 : 1;
+    if (initialPoints.length > steps) {
+      return 1;
     }
-    for (final long pt : initialPoints) {
-      add(pt);
-    }
+    mWalk = new long[steps + 1];
+    System.arraycopy(initialPoints, 0, mWalk, 0, initialPoints.length);
     mCount = 0;
-    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length);
+    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1);
     return mCount;
   }
 
-  @Override
-  public String toString() {
-    final StringBuilder walk = new StringBuilder();
-    for (final Long pt : this) {
-      if (walk.length() > 0) {
-        walk.append("->");
-      }
-      walk.append(mLattice.toString(pt));
-    }
-    return walk.toString();
-  }
+//  @Override
+//  public String toString() {
+//    final StringBuilder walk = new StringBuilder();
+//    for (final Long pt : this) {
+//      if (walk.length() > 0) {
+//        walk.append("->");
+//      }
+//      walk.append(mLattice.toString(pt));
+//    }
+//    return walk.toString();
+//  }
 
   /**
    * Noddy.
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final SquareLattice sl = new SquareLattice();
-    final Walker walker = new Walker(sl);
-    for (int k = 0; k < 22; ++k) {
-      System.out.println(4 * walker.count(k, sl.origin(), sl.toPoint(1, 0)));
+    if (args.length > 0 && "old".equals(args[0])) {
+      final Sequence seq = new A001411();
+      for (int k = 0; k < 21; ++k) {
+        System.out.println(seq.next());
+      }
+    } else {
+      final SquareLattice sl = new SquareLattice();
+      final Walker walker = new Walker(sl);
+      for (int k = 0; k < 21; ++k) {
+        System.out.println(4 * walker.count(k, sl.origin(), sl.toPoint(1, 0)));
+      }
     }
   }
 }

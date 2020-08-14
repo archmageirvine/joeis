@@ -29,7 +29,19 @@ public class Walker {
     mAllAxesMask = (1 << mLattice.dimension()) - 1;
   }
 
-  void setAccumulator(final Accumulator accumulator) {
+  /**
+   * Increment the count by the specified amount.
+   * @param count amount to increment count by
+   */
+  public void increment(final long count) {
+    mCount += count;
+  }
+
+  /**
+   * Set the function called for each walk.
+   * @param accumulator the accumulator
+   */
+  public void setAccumulator(final Accumulator accumulator) {
     mAccumulator = accumulator;
   }
 

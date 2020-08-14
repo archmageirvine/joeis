@@ -35,9 +35,11 @@ public class ParallelWalker extends Walker {
   private final ArrayList<Seed> mSeeds = new ArrayList<>();
 
   /**
-   * Construct a walker on the specified lattice.
+   * Construct a walker on the specified lattice.  This works by stepping out to a
+   * given distance and then completing those walks in parallel.
    * @param creator an object capable of creating new walkers
    * @param lattice underlying lattice
+   * @param nonParallelSteps number of steps to seed parallel walker with
    */
   public ParallelWalker(final WalkerCreator creator, final Lattice lattice, final int nonParallelSteps) {
     super(lattice);
@@ -71,21 +73,12 @@ public class ParallelWalker extends Walker {
     // Expand seed paths in parallel, use our own thread point to control number of threads
     ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
     try {
-      return forkJoinPool.submit(() -> mSeeds.parallelStream().mapToLong(state -> mCreator.create().count(steps, state.mWeight, state.mAxesMask, state.mSeeds)).sum()).get();
+      return forkJoinPool.submit(() -> mSeeds.parallelStream()
+        .mapToLong(state -> mCreator.create()
+          .count(steps, state.mWeight, state.mAxesMask, state.mSeeds)).sum())
+        .get();
     } catch (final InterruptedException | ExecutionException e) {
       throw new RuntimeException(e);
-    }
-  }
-
-  /**
-   * Noddy.
-   * @param args ignored
-   */
-  public static void main(final String[] args) {
-    final SquareLattice sl = new SquareLattice();
-    final ParallelWalker walker = new ParallelWalker(() -> new Walker(sl), sl, 8);
-    for (int k = 0; k < 21; ++k) {
-      System.out.println(walker.count(k, 4, 1, sl.origin(), sl.toPoint(1, 0)));
     }
   }
 }

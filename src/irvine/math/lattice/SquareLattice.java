@@ -71,5 +71,4 @@ public class SquareLattice extends AbstractLattice {
   public long neighbour(final long point, final int neighbourNumber) {
     return point + DELTA[neighbourNumber];
   }
-
 }

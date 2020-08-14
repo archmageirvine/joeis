@@ -30,15 +30,18 @@ public class ParallelWalker extends Walker {
     }
   }
 
+  private final WalkerCreator mCreator;
   private final int mNonParallelSteps;
   private final ArrayList<Seed> mSeeds = new ArrayList<>();
 
   /**
    * Construct a walker on the specified lattice.
+   * @param creator an object capable of creating new walkers
    * @param lattice underlying lattice
    */
-  public ParallelWalker(final Lattice lattice, final int nonParallelSteps) {
+  public ParallelWalker(final WalkerCreator creator, final Lattice lattice, final int nonParallelSteps) {
     super(lattice);
+    mCreator = creator;
     mNonParallelSteps = nonParallelSteps;
   }
 
@@ -56,7 +59,7 @@ public class ParallelWalker extends Walker {
   public long count(final int steps, final int weight, final int axesMask, final long... initialPoints) {
     // Non-parallel for small cases or for explicit single-threaded
     if (steps <= mNonParallelSteps || THREADS == 1) {
-      return new Walker(mLattice).count(steps, weight, axesMask, initialPoints);
+      return mCreator.create().count(steps, weight, axesMask, initialPoints);
     }
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
@@ -68,7 +71,7 @@ public class ParallelWalker extends Walker {
     // Expand seed paths in parallel, use our own thread point to control number of threads
     ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
     try {
-      return forkJoinPool.submit(() -> mSeeds.parallelStream().mapToLong(state -> new Walker(mLattice).count(steps, state.mWeight, state.mAxesMask, state.mSeeds)).sum()).get();
+      return forkJoinPool.submit(() -> mSeeds.parallelStream().mapToLong(state -> mCreator.create().count(steps, state.mWeight, state.mAxesMask, state.mSeeds)).sum()).get();
     } catch (final InterruptedException | ExecutionException e) {
       throw new RuntimeException(e);
     }
@@ -80,7 +83,7 @@ public class ParallelWalker extends Walker {
    */
   public static void main(final String[] args) {
     final SquareLattice sl = new SquareLattice();
-    final ParallelWalker walker = new ParallelWalker(sl, 8);
+    final ParallelWalker walker = new ParallelWalker(() -> new Walker(sl), sl, 8);
     for (int k = 0; k < 21; ++k) {
       System.out.println(walker.count(k, 4, 1, sl.origin(), sl.toPoint(1, 0)));
     }

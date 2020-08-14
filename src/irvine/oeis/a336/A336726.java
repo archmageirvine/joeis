@@ -1,31 +1,39 @@
 package irvine.oeis.a336;
 
-import irvine.math.TwoDimensionalWalk;
+import irvine.math.lattice.HalfManhattanLattice;
+import irvine.math.lattice.NonadjacentWalker;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SquareLattice;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A336726 Number of <code>n-step self-avoiding</code> walks on the half-Manhattan lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A336726 extends A336724 {
+public class A336726 implements Sequence {
+
+  private final HalfManhattanLattice mHalfManhattanLattice = new HalfManhattanLattice();
+  private final ParallelWalker mWalker = new ParallelWalker(() -> new NonadjacentWalker(mHalfManhattanLattice, new SquareLattice()), mHalfManhattanLattice, 8);
+  private final long mX1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 0);
+  private final long mY1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 1);
+  private int mN = -1;
 
   @Override
-  protected boolean accept(final TwoDimensionalWalk w, final int x, final int y, final int remaining) {
-    if (w.contains(x, y)) {
-      return false;
+  public Z next() {
+    if (++mN == 0) {
+      return Z.ONE;
     }
-    int neighbourCount = - 1; // -1 for where we are coming from
-    if (w.contains(x + 1, y) && ++neighbourCount > 0) {
-      return false;
-    }
-    if (w.contains(x - 1, y) && ++neighbourCount > 0) {
-      return false;
-    }
-    if (w.contains(x, y + 1) && ++neighbourCount > 0) {
-      return false;
-    }
-    if (w.contains(x, y - 1) && ++neighbourCount > 0) {
-      return false;
-    }
-    return true;
+    // There is only one horizontal direction to move in the first step,
+    // but we can assume the first vertical step will be up (and double weight
+    // thereafter).  Hence we use 1 for initial weight and 1 for axes (i.e.,
+    // indicating no y-step has been taken).
+    final Z a = Z.valueOf(mWalker.count(mN, 1, 1, mHalfManhattanLattice.origin(), mX1));
+    mWalker.clear();
+    // Going up for the first step is equivalent to going down, hence symmetry 2
+    // But horizontal steps are not symmetric so set axes to 0b11.
+    final Z b = Z.valueOf(mWalker.count(mN, 2, 3, mHalfManhattanLattice.origin(), mY1));
+    mWalker.clear();
+    return a.add(b);
   }
 }

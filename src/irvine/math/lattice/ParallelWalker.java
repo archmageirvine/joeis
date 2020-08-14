@@ -47,6 +47,13 @@ public class ParallelWalker extends Walker {
   }
 
   /**
+   * Clear any existing seeds. Necessary if called with different initial points.
+   */
+  public void clear() {
+    mSeeds.clear();
+  }
+
+  /**
    * Return the number of walks of specified length.
    * @param steps length of walk
    * @param initialPoints any initial points shared by all walks
@@ -67,7 +74,7 @@ public class ParallelWalker extends Walker {
       }
     }
     // Expand seed paths in parallel, use our own thread point to control number of threads
-    ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
+    final ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
     try {
       return forkJoinPool.submit(() -> mSeeds.parallelStream()
         .mapToLong(state -> mCreator.create()

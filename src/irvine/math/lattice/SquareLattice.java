@@ -10,7 +10,7 @@ public class SquareLattice extends AbstractLattice {
   protected static final int BITS_PER_COORDINATE = 32;
   private static final long MASK = (1L << BITS_PER_COORDINATE) - 1;
   private static final long BIAS = 1L << (BITS_PER_COORDINATE - 1);
-  private static final long Y1 = 1L << BITS_PER_COORDINATE;
+  protected static final long Y1 = 1L << BITS_PER_COORDINATE;
   private static final long ORIGIN = pack(0, 0);
   protected static final long[] DELTA = {1, -1, Y1, -Y1};
 

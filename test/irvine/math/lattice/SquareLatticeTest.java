@@ -15,6 +15,7 @@ public class SquareLatticeTest extends TestCase {
     final long p = sl.toPoint(10, -12);
     assertEquals(10, sl.x(p));
     assertEquals(-12, sl.y(p));
+    assertEquals(4, sl.neighbourCount(sl.origin()));
     final long[] np = sl.neighbours(p);
     assertEquals(4, np.length);
     assertEquals("(11,-12)", sl.toString(np[0]));

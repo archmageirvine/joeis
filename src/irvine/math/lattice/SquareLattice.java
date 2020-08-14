@@ -7,12 +7,12 @@ package irvine.math.lattice;
  */
 public class SquareLattice extends AbstractLattice {
 
-  private static final int BITS_PER_COORDINATE = 32;
+  protected static final int BITS_PER_COORDINATE = 32;
   private static final long MASK = (1L << BITS_PER_COORDINATE) - 1;
   private static final long BIAS = 1L << (BITS_PER_COORDINATE - 1);
   private static final long Y1 = 1L << BITS_PER_COORDINATE;
   private static final long ORIGIN = pack(0, 0);
-  private static final long[] DELTA = {1, -1, Y1, -Y1};
+  protected static final long[] DELTA = {1, -1, Y1, -Y1};
 
   private static long pack(final long x, final long y) {
     return ((BIAS + y) << BITS_PER_COORDINATE) + BIAS + x;

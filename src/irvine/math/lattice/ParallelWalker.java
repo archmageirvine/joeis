@@ -13,6 +13,9 @@ import irvine.util.string.StringUtils;
  */
 public class ParallelWalker extends Walker {
 
+  // todo the above is not general enough, the proxy through to Walker to get the seeds
+  // also needs to be in terms of the WalkerCreator!
+
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));

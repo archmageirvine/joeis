@@ -11,6 +11,7 @@ public class AllTests extends TestSuite {
 
   public static Test suite() {
     final TestSuite suite = new TestSuite();
+    suite.addTestSuite(ManhattanLatticeTest.class);
     suite.addTestSuite(SquareLatticeTest.class);
     return suite;
   }

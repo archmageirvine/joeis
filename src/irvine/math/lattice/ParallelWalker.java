@@ -13,20 +13,16 @@ import irvine.util.string.StringUtils;
  */
 public class ParallelWalker extends Walker {
 
-  // todo the above is not general enough, the proxy through to Walker to get the seeds
-  // also needs to be in terms of the WalkerCreator!
-
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
-  private static class Seed {
-
+  private static class SeedWalk {
     long[] mSeeds;
     int mWeight;
     int mAxesMask;
 
-    private Seed(final int weight, final int axesMask, final long[] seeds) {
+    SeedWalk(final int weight, final int axesMask, final long[] seeds) {
       mWeight = weight;
       mAxesMask = axesMask;
       mSeeds = Arrays.copyOf(seeds, seeds.length);
@@ -35,7 +31,7 @@ public class ParallelWalker extends Walker {
 
   private final WalkerCreator mCreator;
   private final int mNonParallelSteps;
-  private final ArrayList<Seed> mSeeds = new ArrayList<>();
+  private final ArrayList<SeedWalk> mSeeds = new ArrayList<>();
 
   /**
    * Construct a walker on the specified lattice.  This works by stepping out to a
@@ -48,11 +44,6 @@ public class ParallelWalker extends Walker {
     super(lattice);
     mCreator = creator;
     mNonParallelSteps = nonParallelSteps;
-  }
-
-  @Override
-  protected void count(final int weight, final int axesMask) {
-    mSeeds.add(new Seed(weight, axesMask, mWalk));
   }
 
   /**
@@ -68,7 +59,9 @@ public class ParallelWalker extends Walker {
     }
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
-      super.count(mNonParallelSteps, weight, axesMask, initialPoints);
+      final Walker walker = mCreator.create();
+      walker.setAccumulator((walk, weight1, axesMask1) -> mSeeds.add(new SeedWalk(weight1, axesMask1, walk)));
+      walker.count(mNonParallelSteps, weight, axesMask, initialPoints);
       if (VERBOSE) {
         StringUtils.message("Total numbers of seeds: " + mSeeds.size());
       }
@@ -84,4 +77,5 @@ public class ParallelWalker extends Walker {
       throw new RuntimeException(e);
     }
   }
+
 }

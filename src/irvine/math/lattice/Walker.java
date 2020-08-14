@@ -1,8 +1,5 @@
 package irvine.math.lattice;
 
-import irvine.oeis.Sequence;
-import irvine.oeis.a001.A001411;
-
 /**
  * Count the number of self-avoiding walks (and similar concepts) on a specified lattice.
  * @author Sean A. Irvine
@@ -21,6 +18,7 @@ public class Walker {
   private final int mAllAxesMask;
   private long mCount = 0;
   protected long[] mWalk = null;
+  private Accumulator mAccumulator = (walk, weight, axesMask) -> mCount += weight;
 
   /**
    * Construct a walker on the specified lattice.
@@ -29,6 +27,10 @@ public class Walker {
   public Walker(final Lattice lattice) {
     mLattice = lattice;
     mAllAxesMask = (1 << mLattice.dimension()) - 1;
+  }
+
+  void setAccumulator(final Accumulator accumulator) {
+    mAccumulator = accumulator;
   }
 
   /**
@@ -51,15 +53,6 @@ public class Walker {
   }
 
   /**
-   * Called for each completed walk.
-   * @param weight weight associated with the walk
-   * @param axesMask axes information (be careful using this) // todo
-   */
-  protected void count(final int weight, final int axesMask) {
-    mCount += weight;
-  }
-
-  /**
    * Walk.  If your lattice is at all complicated (e.g. more than one dimension
    * changes per step, then <code>axesMask</code> should be <code>mAllAxesMask</code>).
    * @param point the current head of the walk
@@ -69,7 +62,7 @@ public class Walker {
    */
   protected void search(final long point, final int remainingSteps, final int weight, final int axesMask) {
     if (remainingSteps <= 0) {
-      count(weight, axesMask);
+      mAccumulator.accumulate(mWalk, weight, axesMask);
     } else {
       final int t = mWalk.length - remainingSteps;
       final int nc = mLattice.neighbourCount(point);
@@ -115,24 +108,5 @@ public class Walker {
     mCount = 0;
     search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1, weight, axesMask);
     return mCount;
-  }
-
-  /**
-   * Noddy.
-   * @param args ignored
-   */
-  public static void main(final String[] args) {
-    if (args.length > 0 && "old".equals(args[0])) {
-      final Sequence seq = new A001411();
-      for (int k = 0; k < 21; ++k) {
-        System.out.println(seq.next());
-      }
-    } else {
-      final SquareLattice sl = new SquareLattice();
-      final Walker walker = new Walker(sl);
-      for (int k = 0; k < 21; ++k) {
-        System.out.println(walker.count(k, 4, 1, sl.origin(), sl.toPoint(1, 0)));
-      }
-    }
   }
 }

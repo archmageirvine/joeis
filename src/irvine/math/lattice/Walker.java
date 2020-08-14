@@ -12,13 +12,15 @@ public class Walker {
   // One of the main concerns is being able to quickly determine if a point is
   // already in the walk.  Their are various approaches to doing this.  Timing
   // suggests that simply searching through an unsorted array of points is
-  // much faster than using a TreeSet, HashSet, or LinkedHashSet.  This
+  // much faster than using a TreeSet, HashSet, or LinkedHashSet or even
+  // a primitive long hash set such as the HPPC LongHashSet.  This
   // obviously cannot be true for exceedingly long walks, but for those that
   // can be practically done with brute force, the simple array solution is faster.
 
-  private final Lattice mLattice;
+  protected final Lattice mLattice;
+  private final int mAllAxesMask;
   private long mCount = 0;
-  private long[] mWalk = null;
+  protected long[] mWalk = null;
 
   /**
    * Construct a walker on the specified lattice.
@@ -26,6 +28,7 @@ public class Walker {
    */
   public Walker(final Lattice lattice) {
     mLattice = lattice;
+    mAllAxesMask = (1 << mLattice.dimension()) - 1;
   }
 
   /**
@@ -48,25 +51,50 @@ public class Walker {
   }
 
   /**
-   * Return the amount to increment the total count by for the current path.
-   * In certain cases this is useful to handle symmetry considerations.
-   * @return weight for the path
+   * Called for each completed walk.
+   * @param weight weight associated with the walk
+   * @param axesMask axes information (be careful using this) // todo
    */
-  protected long weight() {
-    return 1;
+  protected void count(final int weight, final int axesMask) {
+    mCount += weight;
   }
 
-  protected void search(final long point, final int remainingSteps) {
+  /**
+   * Walk.  If your lattice is at all complicated (e.g. more than one dimension
+   * changes per step, then <code>axesMask</code> should be <code>mAllAxesMask</code>).
+   * @param point the current head of the walk
+   * @param remainingSteps the number of steps yet to be made
+   * @param weight weight of this walk (i.e., accounting for symmetry etc.)
+   * @param axesMask bits indicating which axes have been used so far
+   */
+  protected void search(final long point, final int remainingSteps, final int weight, final int axesMask) {
     if (remainingSteps <= 0) {
-      mCount += weight();
+      count(weight, axesMask);
     } else {
       final int t = mWalk.length - remainingSteps;
       final int nc = mLattice.neighbourCount(point);
+      outer:
       for (int k = 0; k < nc; ++k) {
         final long p = mLattice.neighbour(point, k);
         if (isAcceptable(p, remainingSteps)) {
           mWalk[t] = p;
-          search(p, remainingSteps - 1);
+          if (axesMask != mAllAxesMask) {
+            // This walk has not yet used every available axis in a symmetric lattice.
+            // Use symmetry to ensure first step in each axis is in the positive direction.
+            for (int j = 0, i = 1; j < mLattice.dimension(); ++j, i <<= 1) {
+              if ((axesMask & i) == 0) {
+                final long o = mLattice.ordinate(p, j);
+                if (o == 1) {
+                  // First step in axis j, by symmetry we can skip the -1 change
+                  search(p, remainingSteps - 1, 2 * weight, axesMask | i);
+                  continue outer; // Assumes at most one axis changes!
+                } else if (o == -1) {
+                  continue outer;
+                }
+              }
+            }
+          }
+          search(p, remainingSteps - 1, weight, axesMask);
         }
       }
     }
@@ -78,14 +106,14 @@ public class Walker {
    * @param initialPoints any initial points shared by all walks
    * @return number of walks
    */
-  public long count(final int steps, final long... initialPoints) {
+  public long count(final int steps, final int weight, final int axesMask, final long... initialPoints) {
     if (initialPoints.length > steps) {
-      return 1;
+      return weight; // todo perhaps this should exception?
     }
     mWalk = new long[steps + 1];
     System.arraycopy(initialPoints, 0, mWalk, 0, initialPoints.length);
     mCount = 0;
-    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1);
+    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1, weight, axesMask);
     return mCount;
   }
 
@@ -115,7 +143,7 @@ public class Walker {
       final SquareLattice sl = new SquareLattice();
       final Walker walker = new Walker(sl);
       for (int k = 0; k < 21; ++k) {
-        System.out.println(4 * walker.count(k, sl.origin(), sl.toPoint(1, 0)));
+        System.out.println(walker.count(k, 4, 1, sl.origin(), sl.toPoint(1, 0)));
       }
     }
   }

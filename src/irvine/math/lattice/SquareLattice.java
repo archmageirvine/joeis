@@ -71,4 +71,9 @@ public class SquareLattice extends AbstractLattice {
   public long neighbour(final long point, final int neighbourNumber) {
     return point + DELTA[neighbourNumber];
   }
+
+  @Override
+  public long distanceBound(final long point) {
+    return Math.abs(x(point)) + Math.abs(y(point));
+  }
 }

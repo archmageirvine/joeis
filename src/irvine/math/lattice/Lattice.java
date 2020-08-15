@@ -31,6 +31,14 @@ public interface Lattice {
   long norm(final long point);
 
   /**
+   * A lower bound on the number of steps required to return to the origin from
+   * the specified point.
+   * @param point the point
+   * @return lower bound on number of lattice steps to origin
+   */
+  long distanceBound(final long point);
+
+  /**
    * Return a string representation of a point.  For example, in a two-dimensional
    * lattice, a string like <code>(-2,42)</code> representing the <code>x</code>
    * and <code>y</code> coordinates of the point.
@@ -70,4 +78,11 @@ public interface Lattice {
    * @return array of neighbours
    */
   long[] neighbours(final long point);
+
+  /**
+   * Test if the specified point is adjacent to the origin.
+   * @param point point to test
+   * @return true iff the point is adjacent to the origin
+   */
+  boolean isAdjacentToOrigin(final long point);
 }

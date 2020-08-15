@@ -37,4 +37,15 @@ public abstract class AbstractLattice implements Lattice {
     }
     return neighbours;
   }
+
+  @Override
+  public boolean isAdjacentToOrigin(final long point) {
+    for (int k = 0; k < neighbourCount(point); ++k) {
+      if (origin() == neighbour(point, k)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
 }

@@ -15,10 +15,10 @@ public class Walker {
   // can be practically done with brute force, the simple array solution is faster.
 
   protected final Lattice mLattice;
-  private final int mAllAxesMask;
+  protected final int mAllAxesMask;
   private long mCount = 0;
   protected long[] mWalk = null;
-  private Accumulator mAccumulator = (walk, weight, axesMask) -> mCount += weight;
+  protected Accumulator mAccumulator = (walk, weight, axesMask) -> mCount += weight;
 
   /**
    * Construct a walker on the specified lattice.
@@ -46,6 +46,24 @@ public class Walker {
   }
 
   /**
+   * Test if the walk already contains the specified point.
+   * @param point the point
+   * @param remainingSteps number of remaining steps
+   * @return true iff the walk contains the given point
+   */
+  protected boolean contains(final long point, final int remainingSteps) {
+    // Test if the point is already in the walk.  We work backwards
+    // through the list because it is more likely that a given point
+    // will be the same as a recent point and a distant point.
+    for (int k = mWalk.length - remainingSteps - 1; k >= 0; --k) {
+      if (mWalk[k] == point) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
    * Is the given point acceptable to add to the path in progress.  This can be
    * overridden in subclasses to allow for exclusion of particular kinds of points
    * (for example those with negative coordinates or those adjacent to existing points).
@@ -53,15 +71,7 @@ public class Walker {
    * @return true iff the point is valid for inclusion in the current path
    */
   protected boolean isAcceptable(final long point, final int remainingSteps) {
-    // Test if the point is already in the walk.  We work backwards
-    // through the list because it is more likely that a given point
-    // will be the same as a recent point and a distant point.
-    for (int k = mWalk.length - remainingSteps - 1; k >= 0; --k) {
-      if (mWalk[k] == point) {
-        return false;
-      }
-    }
-    return true;
+    return !contains(point, remainingSteps);
   }
 
   /**

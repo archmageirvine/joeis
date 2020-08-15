@@ -1,6 +1,7 @@
 package irvine.oeis.a006;
 
-import irvine.math.TwoDimensionalWalk;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.util.Pair;
 
 /**
@@ -10,22 +11,26 @@ import irvine.util.Pair;
 public class A006816 extends A006814 {
 
   @Override
-  protected long count(final TwoDimensionalWalk w) {
-    preparePath(w);
-    long bonds = 0;
-    TwoDimensionalWalk u = w;
-    while (u != null) {
-      final int x = u.x();
-      final int y = u.y();
-      for (int k = 0; k < DELTA_X.length; ++k) {
-        final Pair<Integer, Integer> p = new Pair<>(x + DELTA_X[k], y + DELTA_Y[k]);
-        final Integer nz = mWorkspace.get(p);
-        if (nz != null) {
-          ++bonds;
-        }
+  protected ParallelWalker getParallelWalker() {
+    return new ParallelWalker(mSquareLattice, 8, () -> new SelfAvoidingWalker(mSquareLattice) {
+      {
+        setAccumulator((walk, weight, axesMask) -> {
+          preparePath(walk);
+          long bonds = 0;
+          for (int j = walk.length - 1; j >= 0; --j) {
+            final int x = (int) mSquareLattice.x(walk[j]);
+            final int y = (int) mSquareLattice.y(walk[j]);
+            for (int k = 0; k < DELTA_X.length; ++k) {
+              final Pair<Integer, Integer> p = new Pair<>(x + DELTA_X[k], y + DELTA_Y[k]);
+              final Integer nz = mWorkspace.get(p);
+              if (nz != null) {
+                ++bonds;
+              }
+            }
+          }
+          increment(weight * bonds / 2);
+        });
       }
-      u = u.getPrevious();
-    }
-    return bonds / 2;
+    });
   }
 }

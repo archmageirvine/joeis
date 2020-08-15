@@ -1,21 +1,35 @@
 package irvine.oeis.a007;
 
-import irvine.oeis.a001.A001334;
+import irvine.math.lattice.HexagonalLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.Walker;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A007275 Walks on hexagonal lattice using each point at most three times.
  * @author Sean A. Irvine
  */
-public class A007275 extends A001334 {
+public class A007275 implements Sequence {
+
+  private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
+  private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(mHexagonalLattice, 8, () -> new Walker(mHexagonalLattice) {
+    @Override
+    protected boolean isAcceptable(final long point, final int remainingSteps) {
+      int count = 0;
+      for (int k = mWalk.length - remainingSteps - 1; k >= 0; --k) {
+        if (mWalk[k] == point && ++count > 2) {
+          return false;
+        }
+      }
+      return true;
+    }
+  });
+  private int mN = -1;
 
   @Override
-  protected boolean contains(final int point, final int n) {
-    int count = 0;
-    for (int k = 0; k <= n; ++k) {
-      if (getPathElement(k) == point && ++count > 2) {
-        return true;
-      }
-    }
-    return false;
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 1, mHexagonalLattice.origin(), mC));
   }
 }

@@ -1,38 +1,27 @@
 package irvine.oeis.a001;
 
+import irvine.math.lattice.HexagonalLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingCycler;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A001335 Number of n-step polygons on hexagonal lattice.
  * @author Sean A. Irvine
  */
-public class A001335 extends A001334 {
+public class A001335 implements Sequence {
 
-  private boolean mFirst = true;
-
-  @Override
-  protected long count(final int point) {
-    if (mN > 1) {
-      for (final int delta : DELTAS) {
-        if (point == ORIGIN + delta) {
-          return 6;
-        }
-      }
-    }
-    return 0;
-  }
+  private int mN = -1;
+  private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
+  private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(8,
+    () -> new SelfAvoidingWalker(mHexagonalLattice),
+    () -> new SelfAvoidingCycler(mHexagonalLattice, true));
 
   @Override
   public Z next() {
-    if (mFirst) {
-      mFirst = false;
-      return Z.ONE;
-    }
-    if (++mN == 0) {
-      return Z.ZERO;
-    }
-    setPathLength(mN);
-    setPathElement(0, ORIGIN);
-    return Z.valueOf(count(ORIGIN + D1, 1));
+    return ++mN == 0 ? Z.ONE: Z.valueOf(mWalker.count(mN, 6, 1, mHexagonalLattice.origin(), mC));
   }
 }

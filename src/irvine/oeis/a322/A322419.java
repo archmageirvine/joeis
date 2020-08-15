@@ -1,49 +1,24 @@
 package irvine.oeis.a322;
 
-import irvine.math.TwoDimensionalWalk;
-import irvine.oeis.a001.A001411;
+import irvine.math.lattice.LLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingWalker;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A322419 Number of <code>n-step self-avoiding</code> walks on <code>L-lattice</code>.
  * @author Sean A. Irvine
  */
-public class A322419 extends A001411 {
+public class A322419 implements Sequence {
 
-  // L lattice, each step perpendicular to previous step.
-
-  @Override
-  protected long count(final TwoDimensionalWalk w) {
-    return 2;
-  }
+  private final LLattice mLLattice = new LLattice();
+  private final ParallelWalker mWalker = new ParallelWalker(mLLattice, 8, () -> new SelfAvoidingWalker(mLLattice));
+  private final long mX1 = mLLattice.neighbour(mLLattice.origin(), 0);
+  private int mN = -1;
 
   @Override
-  protected int init() {
-    return -1;
-  }
-
-  @Override
-  protected long count(final TwoDimensionalWalk w, final int remaining) {
-    if (remaining == 0) {
-      return count(w);
-    }
-    long sum = 0;
-    final int x = w.x();
-    final int y = w.y();
-    if (((x + y) & 1) == 0) {
-      if (accept(w, x + 1, y, remaining)) {
-        sum += count(new TwoDimensionalWalk(x + 1, y, w), remaining - 1);
-      }
-      if (accept(w, x - 1, y, remaining)) {
-        sum += count(new TwoDimensionalWalk(x - 1, y, w), remaining - 1);
-      }
-    } else {
-      if (accept(w, x, y + 1, remaining)) {
-        sum += count(new TwoDimensionalWalk(x, y + 1, w), remaining - 1);
-      }
-      if (accept(w, x, y - 1, remaining)) {
-        sum += count(new TwoDimensionalWalk(x, y - 1, w), remaining - 1);
-      }
-    }
-    return sum;
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 2, 1, mLLattice.origin(), mX1));
   }
 }

@@ -5,7 +5,6 @@ import junit.framework.TestSuite;
 
 /**
  * Links all the tests in this package.
- *
  * @author Sean A. Irvine
  */
 public class AllTests extends TestSuite {
@@ -24,7 +23,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ReducedLatinRectanglesTest.class);
     suite.addTestSuite(ShuffleTest.class);
     suite.addTestSuite(SparseIntegerTest.class);
-    suite.addTestSuite(TwoDimensionalWalkTest.class);
     suite.addTestSuite(WolframAutomataTest.class);
     suite.addTest(irvine.math.c.AllTests.suite());
     suite.addTest(irvine.math.cc.AllTests.suite());
@@ -35,6 +33,7 @@ public class AllTests extends TestSuite {
     suite.addTest(irvine.math.generic.AllTests.suite());
     suite.addTest(irvine.math.graph.AllTests.suite());
     suite.addTest(irvine.math.group.AllTests.suite());
+    suite.addTest(irvine.math.lattice.AllTests.suite());
     suite.addTest(irvine.math.matrix.AllTests.suite());
     suite.addTest(irvine.math.nauty.AllTests.suite());
     suite.addTest(irvine.math.partitions.AllTests.suite());

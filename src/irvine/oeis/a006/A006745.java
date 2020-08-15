@@ -1,9 +1,11 @@
 package irvine.oeis.a006;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
-import irvine.math.TwoDimensionalWalk;
+import irvine.math.lattice.ManhattanLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,53 +15,56 @@ import irvine.oeis.Sequence;
  */
 public class A006745 implements Sequence {
 
-  // Needs to avoid paths that lead to traps
+  private final ManhattanLattice mManhattanLattice = new ManhattanLattice();
+  private final ParallelWalker mWalker = new ParallelWalker(mManhattanLattice, 8, () -> new SelfAvoidingWalker(mManhattanLattice) {
+    // Compute a bounding box for the walk so far
+    private long[] bounds(final int remainingSteps) {
+      final long[] bounds = new long[4];
+      for (int k = mWalk.length - remainingSteps - 1; k >= 0; --k) {
+        final long x = mLattice.ordinate(mWalk[k], 0);
+        final long y = mLattice.ordinate(mWalk[k], 1);
+        bounds[0] = Math.min(bounds[0], x);
+        bounds[1] = Math.max(bounds[1], x);
+        bounds[2] = Math.min(bounds[2], y);
+        bounds[3] = Math.max(bounds[3], y);
+      }
+      return bounds;
+    }
 
-  private int mN = 0;
-  private ArrayList<TwoDimensionalWalk> mWalks = new ArrayList<>();
-
-  private int d(final int z) {
-    return (z & 1) == 0 ? 1 : -1;
-  }
-
-  // Recursively search outwards until we prove able to get outside the current path
-  // bound box, which is proof we could get to infinity
-  private boolean checkAllowed(final int[] bounds, final TwoDimensionalWalk w, final int x, final int y) {
-    if (w.contains(x, y)) {
+    private boolean isAcceptable(final Set<Long> forbidden, final long[] bounds, final long point, final int remainingSteps) {
+      // Effectively this tries to extend the walk (keeping track of new points in forbidden),
+      // until either we reach outside the current bounding box or until we determine it is
+      // impossible to expand the path any further.
+      if (contains(point, remainingSteps) || forbidden.contains(point)) {
+        return false;
+      }
+      final long x = mLattice.ordinate(point, 0);
+      final long y = mLattice.ordinate(point, 1);
+      if (x < bounds[0] || x > bounds[1] || y < bounds[2] || y > bounds[3]) {
+        return true; // We are passed current edge
+      }
+      forbidden.add(point);
+      for (int k = 0; k < mLattice.neighbourCount(point); ++k) {
+        if (isAcceptable(forbidden, bounds, mLattice.neighbour(point, k), remainingSteps)) {
+          forbidden.remove(point);
+          return true;
+        }
+      }
+      forbidden.remove(point);
       return false;
     }
-    if (x < bounds[0] || x > bounds[1] || y < bounds[2] || y > bounds[3]) {
-      return true; // We are passed current edge
-    }
-    final TwoDimensionalWalk v = new TwoDimensionalWalk(x, y, w); // So we don't recheck this point
-    return checkAllowed(bounds, v, x + d(y), y) || checkAllowed(bounds, v, x, y + d(x));
-  }
 
-  private void addIfAllowed(final List<TwoDimensionalWalk> newWalks, final TwoDimensionalWalk w, final int x, final int y) {
-    final int[] bounds = w.bounds();
-    if (checkAllowed(bounds, w, x, y)) {
-      newWalks.add(new TwoDimensionalWalk(x, y, w));
+    @Override
+    protected boolean isAcceptable(final long point, final int remainingSteps) {
+      // We need to check it is possible to reach the current bounding box of the walk
+      return isAcceptable(new HashSet<>(), bounds(remainingSteps), point, remainingSteps);
     }
-  }
+  });
+  private final long mC = mManhattanLattice.neighbour(mManhattanLattice.origin(), 0);
+  private int mN = 0;
 
   @Override
   public Z next() {
-    if (++mN == 0) {
-      return Z.ONE;
-    }
-    if (mN == 1) {
-      mWalks.add(new TwoDimensionalWalk(1, 0, new TwoDimensionalWalk(0, 0, null)));
-    } else {
-      final ArrayList<TwoDimensionalWalk> newWalks = new ArrayList<>((int) (1.8 * mWalks.size()));
-      for (final TwoDimensionalWalk w : mWalks) {
-        final int x = w.x();
-        final int y = w.y();
-        addIfAllowed(newWalks, w, x + d(y), y);
-        addIfAllowed(newWalks, w, x, y + d(x));
-      }
-      mWalks = newWalks;
-    }
-    return Z.valueOf(mWalks.size());
+    return Z.valueOf(mWalker.count(++mN, 1, 3, mManhattanLattice.origin(), mC));
   }
-
 }

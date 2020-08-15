@@ -23,7 +23,6 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(ReducedLatinRectanglesTest.class);
     suite.addTestSuite(ShuffleTest.class);
     suite.addTestSuite(SparseIntegerTest.class);
-    suite.addTestSuite(TwoDimensionalWalkTest.class);
     suite.addTestSuite(WolframAutomataTest.class);
     suite.addTest(irvine.math.c.AllTests.suite());
     suite.addTest(irvine.math.cc.AllTests.suite());

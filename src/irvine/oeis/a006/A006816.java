@@ -12,7 +12,7 @@ public class A006816 extends A006814 {
 
   @Override
   protected ParallelWalker getParallelWalker() {
-    return new ParallelWalker(() -> new SelfAvoidingWalker(mSquareLattice) {
+    return new ParallelWalker(mSquareLattice, 8, () -> new SelfAvoidingWalker(mSquareLattice) {
       {
         setAccumulator((walk, weight, axesMask) -> {
           preparePath(walk);
@@ -31,6 +31,6 @@ public class A006816 extends A006814 {
           increment(weight * bonds / 2);
         });
       }
-    }, mSquareLattice, 8);
+    });
   }
 }

@@ -87,6 +87,6 @@ public class HexagonalLattice extends AbstractLattice {
   public long distanceBound(final long point) {
     final long x = Math.abs(x(point));
     final long y = Math.abs(y(point));
-    return Math.max(y, x - y);
+    return Math.max(y, x / 2);
   }
 }

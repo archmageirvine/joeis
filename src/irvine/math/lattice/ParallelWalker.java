@@ -30,20 +30,34 @@ public class ParallelWalker extends SelfAvoidingWalker {
   }
 
   private final WalkerCreator mCreator;
+  private final WalkerCreator mSeeder;
   private final int mNonParallelSteps;
   private final ArrayList<SeedWalk> mSeeds = new ArrayList<>();
 
   /**
    * Construct a walker on the specified lattice.  This works by stepping out to a
    * given distance and then completing those walks in parallel.
-   * @param creator an object capable of creating new walkers
    * @param lattice underlying lattice
    * @param nonParallelSteps number of steps to seed parallel walker with
+   * @param seeder an object capable of generate the walker used to make seed paths
+   * @param creator an object capable of creating new walkers
    */
-  public ParallelWalker(final WalkerCreator creator, final Lattice lattice, final int nonParallelSteps) {
+  public ParallelWalker(final Lattice lattice, final int nonParallelSteps, final WalkerCreator seeder, final WalkerCreator creator) {
     super(lattice);
     mCreator = creator;
+    mSeeder = seeder;
     mNonParallelSteps = nonParallelSteps;
+  }
+
+  /**
+   * Construct a walker on the specified lattice.  This works by stepping out to a
+   * given distance and then completing those walks in parallel.
+   * @param lattice underlying lattice
+   * @param nonParallelSteps number of steps to seed parallel walker with
+   * @param creator an object capable of creating new walkers
+   */
+  public ParallelWalker(final Lattice lattice, final int nonParallelSteps, final WalkerCreator creator) {
+    this(lattice, nonParallelSteps, creator, creator);
   }
 
   /**
@@ -66,7 +80,7 @@ public class ParallelWalker extends SelfAvoidingWalker {
     }
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
-      final Walker walker = mCreator.create();
+      final Walker walker = mSeeder.create();
       walker.setAccumulator((walk, weight1, axesMask1) -> mSeeds.add(new SeedWalk(weight1, axesMask1, walk)));
       walker.count(mNonParallelSteps, weight, axesMask, initialPoints);
       if (VERBOSE) {

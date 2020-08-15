@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A174313 implements Sequence {
 
   private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(() -> new NonadjacentWalker(mHexagonalLattice), mHexagonalLattice, 8);
+  private final ParallelWalker mWalker = new ParallelWalker(mHexagonalLattice, 8, () -> new NonadjacentWalker(mHexagonalLattice));
   private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
   private int mN = -1;
 

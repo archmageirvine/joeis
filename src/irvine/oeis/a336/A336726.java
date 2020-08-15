@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
 public class A336726 implements Sequence {
 
   private final HalfManhattanLattice mHalfManhattanLattice = new HalfManhattanLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(() -> new NonadjacentWalker(mHalfManhattanLattice, new SquareLattice()), mHalfManhattanLattice, 8);
+  private final ParallelWalker mWalker = new ParallelWalker(mHalfManhattanLattice, 8, () -> new NonadjacentWalker(mHalfManhattanLattice, new SquareLattice()));
   private final long mX1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 0);
   private final long mY1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 1);
   private int mN = -1;

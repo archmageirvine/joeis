@@ -3,6 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.lattice.HexagonalLattice;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -15,11 +16,9 @@ public class A001335 implements Sequence {
   private int mN = -1;
   private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
   private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
-
-  // todo parallel walker for self-avoiding cycles needs different walker for the seeds
-  // todo actually this is a general problemm perhaps provide a two arg constructor to deal with this
-
-  private final ParallelWalker mWalker = new ParallelWalker(() -> new SelfAvoidingCycler(mHexagonalLattice, true), mHexagonalLattice, 8);
+  private final ParallelWalker mWalker = new ParallelWalker(mHexagonalLattice, 8,
+    () -> new SelfAvoidingWalker(mHexagonalLattice),
+    () -> new SelfAvoidingCycler(mHexagonalLattice, true));
 
   @Override
   public Z next() {

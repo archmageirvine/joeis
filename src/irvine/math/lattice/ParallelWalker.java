@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  * Count the number of self-avoiding walks (and similar concepts) on a specified lattice.
  * @author Sean A. Irvine
  */
-public class ParallelWalker extends SelfAvoidingWalker {
+public class ParallelWalker {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));
@@ -36,17 +36,21 @@ public class ParallelWalker extends SelfAvoidingWalker {
 
   /**
    * Construct a walker on the specified lattice.  This works by stepping out to a
-   * given distance and then completing those walks in parallel.
-   * @param lattice underlying lattice
+   * given distance and then completing those walks in parallel.  The
+   * <code>nonParallelSteps</code> parameter controls the number of seed paths
+   * calculated. Walks out to this distance will be expanded single-thread and
+   * then queued for parallel extension.  So this parameter should be large
+   * enough that the number of seeds exceeds available cores, but not so large
+   * that the number of such walks is too high or too slow.  In practice, a
+   * value of about 8 seems to work well (typically several thousand walks).
    * @param nonParallelSteps number of steps to seed parallel walker with
    * @param seeder an object capable of generate the walker used to make seed paths
    * @param creator an object capable of creating new walkers
    */
-  public ParallelWalker(final Lattice lattice, final int nonParallelSteps, final WalkerCreator seeder, final WalkerCreator creator) {
-    super(lattice);
+  public ParallelWalker(final int nonParallelSteps, final WalkerCreator seeder, final WalkerCreator creator) {
+    mNonParallelSteps = nonParallelSteps;
     mCreator = creator;
     mSeeder = seeder;
-    mNonParallelSteps = nonParallelSteps;
   }
 
   /**
@@ -57,7 +61,7 @@ public class ParallelWalker extends SelfAvoidingWalker {
    * @param creator an object capable of creating new walkers
    */
   public ParallelWalker(final Lattice lattice, final int nonParallelSteps, final WalkerCreator creator) {
-    this(lattice, nonParallelSteps, creator, creator);
+    this(nonParallelSteps, creator, creator);
   }
 
   /**

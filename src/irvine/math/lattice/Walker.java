@@ -1,22 +1,14 @@
 package irvine.math.lattice;
 
 /**
- * Count the number of self-avoiding walks (and similar concepts) on a specified lattice.
+ * Count the number of walks (and similar concepts) on a specified lattice.
  * @author Sean A. Irvine
  */
 public class Walker {
 
-  // One of the main concerns is being able to quickly determine if a point is
-  // already in the walk.  Their are various approaches to doing this.  Timing
-  // suggests that simply searching through an unsorted array of points is
-  // much faster than using a TreeSet, HashSet, or LinkedHashSet or even
-  // a primitive long hash set such as the HPPC LongHashSet.  This
-  // obviously cannot be true for exceedingly long walks, but for those that
-  // can be practically done with brute force, the simple array solution is faster.
-
   protected final Lattice mLattice;
   protected final int mAllAxesMask;
-  private long mCount = 0;
+  protected long mCount = 0;
   protected long[] mWalk = null;
   protected Accumulator mAccumulator = (walk, weight, axesMask) -> mCount += weight;
 
@@ -71,7 +63,7 @@ public class Walker {
    * @return true iff the point is valid for inclusion in the current path
    */
   protected boolean isAcceptable(final long point, final int remainingSteps) {
-    return !contains(point, remainingSteps);
+    return true;
   }
 
   /**

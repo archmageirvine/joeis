@@ -2,7 +2,7 @@ package irvine.oeis.a336;
 
 import irvine.math.lattice.HalfManhattanLattice;
 import irvine.math.lattice.ParallelWalker;
-import irvine.math.lattice.Walker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A336724 implements Sequence {
 
   private final HalfManhattanLattice mHalfManhattanLattice = new HalfManhattanLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(() -> new Walker(mHalfManhattanLattice), mHalfManhattanLattice, 8);
+  private final ParallelWalker mWalker = new ParallelWalker(() -> new SelfAvoidingWalker(mHalfManhattanLattice), mHalfManhattanLattice, 8);
   private final long mX1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 0);
   private final long mY1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 1);
   private int mN = -1;

@@ -6,7 +6,7 @@ package irvine.math.lattice;
  * walks need not have exact number of specified contacts.
  * @author Sean A. Irvine
  */
-public class ExactContactsWalker extends Walker {
+public class ExactContactsWalker extends SelfAvoidingWalker {
 
   private final int mTargetContacts;
   private int mContacts = 0;

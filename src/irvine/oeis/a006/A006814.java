@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SquareLattice;
-import irvine.math.lattice.Walker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 import irvine.util.Pair;
@@ -25,7 +25,7 @@ public class A006814 implements Sequence {
   protected final ParallelWalker mWalker = getParallelWalker();
 
   protected ParallelWalker getParallelWalker() {
-    return new ParallelWalker(() -> new Walker(mSquareLattice) {
+    return new ParallelWalker(() -> new SelfAvoidingWalker(mSquareLattice) {
       {
         setAccumulator((walk, weight, axesMask) -> {
           preparePath(walk);

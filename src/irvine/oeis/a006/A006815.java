@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.Arrays;
 
 import irvine.math.lattice.ParallelWalker;
-import irvine.math.lattice.Walker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.util.Pair;
 
 /**
@@ -16,7 +16,7 @@ public class A006815 extends A006814 {
 
   @Override
   protected ParallelWalker getParallelWalker() {
-    return new ParallelWalker(() -> new Walker(mSquareLattice) {
+    return new ParallelWalker(() -> new SelfAvoidingWalker(mSquareLattice) {
       private int[] mPath = new int[0];
       {
         setAccumulator((walk, weight, axesMask) -> {

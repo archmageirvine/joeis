@@ -2,7 +2,7 @@ package irvine.oeis.a046;
 
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SquareLattice;
-import irvine.math.lattice.Walker;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A046661 implements Sequence {
 
   private final SquareLattice mSquareLattice = new SquareLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(() -> new Walker(mSquareLattice), mSquareLattice, 8);
+  private final ParallelWalker mWalker = new ParallelWalker(() -> new SelfAvoidingWalker(mSquareLattice), mSquareLattice, 8);
   private final long mX1 = mSquareLattice.toPoint(1, 0);
   private int mN = 0;
 

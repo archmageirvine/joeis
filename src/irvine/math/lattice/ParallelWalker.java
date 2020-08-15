@@ -11,7 +11,7 @@ import irvine.util.string.StringUtils;
  * Count the number of self-avoiding walks (and similar concepts) on a specified lattice.
  * @author Sean A. Irvine
  */
-public class ParallelWalker extends Walker {
+public class ParallelWalker extends SelfAvoidingWalker {
 
   private static final int THREADS = Integer.parseInt(System.getProperty("oeis.threads",
     String.valueOf(Runtime.getRuntime().availableProcessors())));

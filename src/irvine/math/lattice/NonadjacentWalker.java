@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * A self-avoiding walker that has no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class NonadjacentWalker extends Walker {
+public class NonadjacentWalker extends SelfAvoidingWalker {
 
   private final Lattice mAdjacencyLattice;
 

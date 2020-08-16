@@ -1,7 +1,6 @@
 package irvine.oeis.a003;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -13,10 +12,10 @@ import jmason.poly.Polyiamond;
 import jmason.poly.UniquenessTester;
 
 /**
- * A003203.
+ * A003204.
  * @author Sean A. Irvine
  */
-public class A003202 implements Sequence {
+public class A003204 implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);
@@ -41,9 +40,6 @@ public class A003202 implements Sequence {
 
   @Override
   public Z next() {
-
-    // todo it might be special case n==1 is supposed to be 2!
-
     if (++mN > 0) {
       mPerimeterCounts = new long[2 * mN + 3];
       if (mN == 1) {
@@ -54,11 +50,8 @@ public class A003202 implements Sequence {
         cs.initMonoiamond();
         count(1, mN, new Polyiamond(cs));
       }
-      //final Z t = Z.valueOf(mN).multiply(mN + 1).divide2();
       mS = RING.add(mS, RING.multiply(RING.substitute(Polynomial.create(mPerimeterCounts), C, Integer.MAX_VALUE), Z.valueOf(mN).square()).shift(mN));
-      //mS = RING.add(mS, RING.multiply(RING.substitute(Polynomial.create(mPerimeterCounts), C, Integer.MAX_VALUE), t).shift(mN));
     }
-    System.out.println(Arrays.toString(mPerimeterCounts));
-    return mS.coeff(mN);
+    return mS.coeff(mN).divide2();
   }
 }

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A070217 Numbers not represented by a known atomic weight.
+ * A070217 Numbers not represented by a known atomic weight as given in Francis W. Aston's Nobel lecture in 1922.
  * @author Georg Fischer
  */
 public class A070217 extends NoncomputableSequence {

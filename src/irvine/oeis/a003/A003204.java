@@ -12,7 +12,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.UniquenessTester;
 
 /**
- * A003204.
+ * A003204 Cluster series for honeycomb.
  * @author Sean A. Irvine
  */
 public class A003204 implements Sequence {

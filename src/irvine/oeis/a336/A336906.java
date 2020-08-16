@@ -3,7 +3,7 @@ package irvine.oeis.a336;
 import irvine.oeis.a001.A001666;
 
 /**
- * A336906.
+ * A336906 Number of <code>n-step self-avoiding</code> walks on the b.c.c. lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A336906 extends A001666 {

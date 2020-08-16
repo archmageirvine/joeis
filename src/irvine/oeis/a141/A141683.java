@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141683 <code>b(n) = b(n-2) + b(n-3); a(n) = Sum_{k=1..n} b(k)*a(n - k)</code>.
+ * A141683 <code>a(n) = Sum_{k=1..n} b(k)*a(n - k)</code> for <code>n &gt;= 1</code>, where <code>b(n) = b(n-2) + b(n-3)</code> for <code>n &gt;= 3</code> with <code>b(0) = 0</code> and <code>b(1) = b(2) = 1</code>.
  * @author Georg Fischer
  */
 public class A141683 extends LinearRecurrence {

@@ -7,13 +7,13 @@ import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
-import irvine.oeis.a001.A001207;
+import irvine.oeis.a001.A001931;
 
 /**
- * A003202 Cluster series for hexagonal lattice.
+ * A003211 Cluster series for cubic lattice.
  * @author Sean A. Irvine
  */
-public class A003202 extends A001207 {
+public class A003211 extends A001931 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);
@@ -33,7 +33,7 @@ public class A003202 extends A001207 {
   public Z next() {
     super.next(); // updates mPrev
     if (++mN > 0) {
-      final long[] perimeterCounts = new long[2 * mN + 5];
+      final long[] perimeterCounts = new long[4 * mN + 3];
       for (final List<Point> animal : mPrev) {
         ++perimeterCounts[perimeter(animal)];
       }

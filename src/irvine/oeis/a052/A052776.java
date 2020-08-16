@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052776 <code>4!*n*S2(n-1,4)</code>.
+ * A052776 <code>a(n) = 4!*n*Stirling2(n-1,4)</code>.
  * @author Georg Fischer
  */
 public class A052776 extends HolonomicRecurrence {

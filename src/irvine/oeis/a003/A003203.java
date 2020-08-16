@@ -11,7 +11,7 @@ import jmason.poly.Polyomino;
 import jmason.poly.UniquenessTester;
 
 /**
- * A003203.
+ * A003203 Cluster series for square lattice.
  * @author Sean A. Irvine
  */
 public class A003203 implements Sequence {

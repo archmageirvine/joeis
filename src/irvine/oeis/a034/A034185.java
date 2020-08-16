@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034185 Number of symmetric <code>n x 3</code> crossword puzzle grids.
+ * A034185 Number of symmetric <code>n X 3</code> crossword puzzle grids.
  * @author Sean A. Irvine
  */
 public class A034185 implements Sequence {

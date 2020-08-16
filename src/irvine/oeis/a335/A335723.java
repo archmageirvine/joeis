@@ -3,7 +3,7 @@ package irvine.oeis.a335;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A335723 allocated for Tomohiro Yamada.
+ * A335723 Perfect powers whose totients are factorials.
  * @author Sean A. Irvine
  */
 public class A335723 extends FiniteSequence {

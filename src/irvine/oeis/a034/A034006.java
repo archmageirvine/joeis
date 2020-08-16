@@ -1,25 +1,24 @@
 package irvine.oeis.a034;
 
-import irvine.oeis.a010.A010575;
+import irvine.math.lattice.NonadjacentWalker;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.Z4Lattice;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A034006 Number of <code>n-step self-avoiding</code> walks on the 4-dimensional hypercubic lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A034006 extends A010575 {
+public class A034006 implements Sequence {
+
+  private final Z4Lattice mLattice = new Z4Lattice();
+  private final ParallelWalker mWalker = new ParallelWalker(mLattice, 8, () -> new NonadjacentWalker(mLattice));
+  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private int mN = -1;
 
   @Override
-  protected boolean check(final int point, final int n) {
-    if (!super.check(point, n)) {
-      return false;
-    }
-    int neighbourCount = -1;
-    for (final int delta : DELTAS) {
-      final int newPoint = point + delta;
-      if (contains(newPoint, n) && ++neighbourCount > 0) {
-        return false;
-      }
-    }
-    return true;
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 8, 1, mLattice.origin(), mC));
   }
 }

@@ -22,6 +22,6 @@ public class A001335 implements Sequence {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE: Z.valueOf(mWalker.count(mN, 6, 1, mHexagonalLattice.origin(), mC));
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 1, mHexagonalLattice.origin(), mC));
   }
 }

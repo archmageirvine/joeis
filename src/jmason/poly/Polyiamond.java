@@ -8,8 +8,11 @@ import java.util.ArrayList;
  */
 public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
 
-  // build a polyomino cloning a coordinate set
-  Polyiamond(final CoordSet2T c) {
+  /**
+   * Build a polyiamond from a coordinate set.
+   * @param c coordinates
+   */
+  public Polyiamond(final CoordSet2T c) {
     builder(c, true);
     ((CoordSet2T) mCs).calculate();
   }
@@ -37,10 +40,13 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     return ((CoordSet2T) mCs).getHeight();
   }
 
-  // build list of mirror polyominoes generable form current
-  // No guarantee that not generable from previous
-  // build a list (without duplicates) of polyominoes that may be generated from current
-  ArrayList<Polyiamond> listSons(final int addOnlyToColour) {
+  /**
+   * Build list (without duplicates) of polyiamonds that can be generated from
+   * this polyiamond.
+   * @param addOnlyToColour color
+   * @return children
+   */
+  public ArrayList<Polyiamond> listSons(final int addOnlyToColour) {
     final ArrayList<Polyiamond> list = new ArrayList<>();
     final UniquenessTester h = new UniquenessTester();
     final UniquenessTester hc = new UniquenessTester();
@@ -101,5 +107,13 @@ public class Polyiamond extends PolyGen<Triangle, CoordSet2T> {
     final CoordSet2T rot120 = rot60.rotate60();
     final String c120s = rot120.makeString();
     return rot120.mirrorVert().makeString().equals(c120s) || rot120.mirrorHoriz().makeString().equals(c120s);
+  }
+
+  /**
+   * Compute the size of the perimeter of this polyomino.
+   * @return the size of the perimeter
+   */
+  public int perimeterSize() {
+    return ((CoordSet2T) mCs).perimeterSize();
   }
 }

@@ -1,10 +1,11 @@
 package irvine.oeis.a006;
 
-import java.util.HashSet;
-
+import irvine.math.lattice.ManhattanLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.SelfAvoidingCycler;
+import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import irvine.util.Point;
 
 /**
  * A006781 Number of polygons of length <code>4n</code> on Manhattan lattice.
@@ -12,46 +13,15 @@ import irvine.util.Point;
  */
 public class A006781 implements Sequence {
 
-  // Manhattan lattice, square lattice with alternate rows (and columns)
-  // running in opposite directions.
-
   private int mN = 0;
-  private long mCount = 0;
-  private final HashSet<Point> mUsed = new HashSet<>();
-
-  private int d(final int z) {
-    return 1 - ((z & 1) << 1);
-  }
-
-  private void search(final int x, final int y, final int remaining) {
-    if (remaining == 0) {
-      if (x == 0 && y == 0) {
-        ++mCount;
-      }
-      return;
-    }
-    if (y > 0 || (y == 0 && x < 0)) {
-      // Origin is not leftmost topmost
-      return;
-    }
-    if (Math.abs(x) + Math.abs(y) > remaining) {
-      // Cannot possibly make it back to origin in remaining moves (A*)
-      return;
-    }
-    final Point p = new Point(x, y);
-    if (mUsed.add(p)) {
-      search(x + d(y), y, remaining - 1);
-      search(x, y + d(x), remaining - 1);
-      mUsed.remove(p);
-    }
-  }
+  private final ManhattanLattice mLattice = new ManhattanLattice();
+  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(8,
+    () -> new SelfAvoidingWalker(mLattice),
+    () -> new SelfAvoidingCycler(mLattice, true));
 
   @Override
   public Z next() {
-    mN += 4;
-    mCount = 0;
-    mUsed.add(new Point(0, 0));
-    search(1, 0, mN - 1);
-    return Z.valueOf(mCount);
+    return Z.valueOf(mWalker.count(4 * ++mN, 1, 3, mLattice.origin(), mC)).divide(mN);
   }
 }

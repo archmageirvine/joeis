@@ -16,7 +16,7 @@ import irvine.oeis.Sequence;
 public class A006745 implements Sequence {
 
   private final ManhattanLattice mManhattanLattice = new ManhattanLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(mManhattanLattice, 8, () -> new SelfAvoidingWalker(mManhattanLattice) {
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(mManhattanLattice) {
     // Compute a bounding box for the walk so far
     private long[] bounds(final int remainingSteps) {
       final long[] bounds = new long[4];

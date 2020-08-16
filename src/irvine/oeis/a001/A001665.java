@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A001665 implements Sequence {
 
   private final KagomeLattice mKagomeLattice = new KagomeLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(mKagomeLattice, 8, () -> new SelfAvoidingWalker(mKagomeLattice));
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(mKagomeLattice));
   private final long mC = mKagomeLattice.toPoint(1, 1);
   private int mN = -1;
 

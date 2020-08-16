@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A001411 implements Sequence {
 
   protected final SquareLattice mSquareLattice = new SquareLattice();
-  protected final ParallelWalker mWalker = new ParallelWalker(mSquareLattice, 8, () -> new SelfAvoidingWalker(mSquareLattice));
+  protected final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(mSquareLattice));
   private final long mX1 = mSquareLattice.toPoint(1, 0);
   private int mN = -1;
 

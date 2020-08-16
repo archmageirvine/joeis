@@ -56,11 +56,10 @@ public class ParallelWalker {
   /**
    * Construct a walker on the specified lattice.  This works by stepping out to a
    * given distance and then completing those walks in parallel.
-   * @param lattice underlying lattice
    * @param nonParallelSteps number of steps to seed parallel walker with
    * @param creator an object capable of creating new walkers
    */
-  public ParallelWalker(final Lattice lattice, final int nonParallelSteps, final WalkerCreator creator) {
+  public ParallelWalker(final int nonParallelSteps, final WalkerCreator creator) {
     this(nonParallelSteps, creator, creator);
   }
 

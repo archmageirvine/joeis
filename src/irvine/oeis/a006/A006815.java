@@ -16,7 +16,7 @@ public class A006815 extends A006814 {
 
   @Override
   protected ParallelWalker getParallelWalker() {
-    return new ParallelWalker(mSquareLattice, 8, () -> new SelfAvoidingWalker(mSquareLattice) {
+    return new ParallelWalker(8, () -> new SelfAvoidingWalker(mSquareLattice) {
       private int[] mPath = new int[0];
       {
         setAccumulator((walk, weight, axesMask) -> {

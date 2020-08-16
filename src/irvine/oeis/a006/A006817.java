@@ -14,7 +14,7 @@ public class A006817 implements Sequence {
 
   private final SquareLattice mSquareLattice = new SquareLattice();
   private final long mC = mSquareLattice.neighbour(mSquareLattice.origin(), 0);
-  private final ParallelWalker mWalker = new ParallelWalker(mSquareLattice, 8, () -> new Trailer(mSquareLattice));
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Trailer(mSquareLattice));
   private int mN = -1;
 
   @Override

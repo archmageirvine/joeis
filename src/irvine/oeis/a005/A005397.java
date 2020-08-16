@@ -14,14 +14,14 @@ import irvine.oeis.Sequence;
 public class A005397 implements Sequence {
 
   private int mN = 2;
-  private final KagomeLattice mKagomeLattice = new KagomeLattice();
-  private final long mC = mKagomeLattice.neighbour(mKagomeLattice.origin(), 0);
+  private final KagomeLattice mLattice = new KagomeLattice();
+  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mKagomeLattice),
-    () -> new SelfAvoidingCycler(mKagomeLattice, true));
+    () -> new SelfAvoidingWalker(mLattice),
+    () -> new SelfAvoidingCycler(mLattice, true));
 
   @Override
   public Z next() {
-    return Z.valueOf(mWalker.count(++mN, 4, 3, mKagomeLattice.origin(), mC));
+    return Z.valueOf(mWalker.count(++mN, 4, 3, mLattice.origin(), mC));
   }
 }

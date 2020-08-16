@@ -115,12 +115,13 @@ public class Walker {
    */
   public long count(final int steps, final int weight, final int axesMask, final long... initialPoints) {
     if (initialPoints.length > steps) {
-      return weight;
+      mAccumulator.accumulate(initialPoints, weight, axesMask);
+    } else {
+      mWalk = new long[steps + 1];
+      System.arraycopy(initialPoints, 0, mWalk, 0, initialPoints.length);
+      mCount = 0;
+      search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1, weight, axesMask);
     }
-    mWalk = new long[steps + 1];
-    System.arraycopy(initialPoints, 0, mWalk, 0, initialPoints.length);
-    mCount = 0;
-    search(initialPoints[initialPoints.length - 1], steps - initialPoints.length + 1, weight, axesMask);
     return mCount;
   }
 }

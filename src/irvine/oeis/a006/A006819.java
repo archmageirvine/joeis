@@ -1,29 +1,24 @@
 package irvine.oeis.a006;
 
-import irvine.oeis.a001.A001412;
+import irvine.math.lattice.CubicLattice;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.lattice.Trailer;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A006819 Trails of length n on cubic lattice.
  * @author Sean A. Irvine
  */
-public class A006819 extends A001412 {
+public class A006819 implements Sequence {
 
-  /*
-   * Check if this walk contains a particular edge.
-   */
-  private boolean contains(final int prevPoint, final int point, final int n) {
-    for (int k = 1; k <= n; ++k) {
-      final int p = getPathElement(k - 1);
-      final int q = getPathElement(k);
-      if ((p == prevPoint && q == point) || (p == point && q == prevPoint)) {
-        return true;
-      }
-    }
-    return false;
-  }
+  private final CubicLattice mLattice = new CubicLattice();
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Trailer(mLattice));
+  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private int mN = -1;
 
   @Override
-  protected boolean check(final int point, final int n) {
-    return !contains(getPathElement(n), point, n);
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 1, mLattice.origin(), mC));
   }
 }

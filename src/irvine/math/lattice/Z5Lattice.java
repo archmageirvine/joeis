@@ -52,7 +52,7 @@ public class Z5Lattice extends AbstractLattice {
 
   @Override
   public long ordinate(final long point, final int ordinate) {
-    assert ordinate >= 0 && ordinate <= 1;
+    assert ordinate >= 0 && ordinate < dimension();
     return (point >> (ordinate * BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 

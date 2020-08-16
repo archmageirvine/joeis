@@ -13,7 +13,7 @@ import irvine.oeis.Sequence;
 public class A001668 implements Sequence {
 
   private final HoneycombLattice mLattice = new HoneycombLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(mLattice, 8, () -> new SelfAvoidingWalker(mLattice));
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(mLattice));
   private final long mC = mLattice.neighbour(mLattice.origin(), 0);
   private int mN = -1;
 

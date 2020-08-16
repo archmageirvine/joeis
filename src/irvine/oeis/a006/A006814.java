@@ -25,7 +25,7 @@ public class A006814 implements Sequence {
   protected final ParallelWalker mWalker = getParallelWalker();
 
   protected ParallelWalker getParallelWalker() {
-    return new ParallelWalker(mSquareLattice, 8, () -> new SelfAvoidingWalker(mSquareLattice) {
+    return new ParallelWalker(8, () -> new SelfAvoidingWalker(mSquareLattice) {
       {
         setAccumulator((walk, weight, axesMask) -> {
           preparePath(walk);

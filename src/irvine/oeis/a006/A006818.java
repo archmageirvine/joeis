@@ -14,7 +14,7 @@ public class A006818 implements Sequence {
 
   private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
   private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
-  private final ParallelWalker mWalker = new ParallelWalker(mHexagonalLattice, 8, () -> new Trailer(mHexagonalLattice));
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Trailer(mHexagonalLattice));
   private int mN = -1;
 
   @Override

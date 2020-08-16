@@ -21,7 +21,7 @@ public class CubicLattice extends AbstractLattice {
   protected static final long ORIGIN = pack(0, 0, 0);
   protected static final long Z1 = 1L << Z_SHIFT;
   protected static final long Y1 = 1L << BITS_PER_COORDINATE;
-  protected static final long[] DELTAS = {1, -1, Y1, -Y1, Z1, -Z1};
+  private static final long[] DELTAS = {1, -1, Y1, -Y1, Z1, -Z1};
 
   private static long pack(final long x, final long y, final long z) {
     return ((BIAS + z) << Z_SHIFT)

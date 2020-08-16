@@ -1,25 +1,24 @@
 package irvine.oeis.a336;
 
-import irvine.oeis.a001.A001666;
+import irvine.math.lattice.BccLattice;
+import irvine.math.lattice.NonadjacentWalker;
+import irvine.math.lattice.ParallelWalker;
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
 
 /**
  * A336906 Number of <code>n-step self-avoiding</code> walks on the b.c.c. lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
-public class A336906 extends A001666 {
+public class A336906 implements Sequence {
+
+  private final BccLattice mLattice = new BccLattice();
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(mLattice));
+  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private int mN = -1;
 
   @Override
-  protected boolean check(final int point, final int n) {
-    if (!super.check(point, n)) {
-      return false;
-    }
-    int neighbourCount = -1;
-    for (final int delta : DELTAS) {
-      final int newPoint = point + delta;
-      if (contains(newPoint, n) && ++neighbourCount > 0) {
-        return false;
-      }
-    }
-    return true;
+  public Z next() {
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 8, 7, mLattice.origin(), mC));
   }
 }

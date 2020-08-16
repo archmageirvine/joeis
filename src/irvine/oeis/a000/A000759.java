@@ -24,10 +24,10 @@ public class A000759 implements Sequence {
         });
       }
 
-//      @Override
-//      protected boolean isAcceptable(final long point, final int remainingSteps) {
-//        return super.isAcceptable(point, remainingSteps) && Math.abs(mLattice.ordinate(point, 0) - targetX()) <= remainingSteps;
-//      }
+      @Override
+      protected boolean isAcceptable(final long point, final int remainingSteps) {
+        return super.isAcceptable(point, remainingSteps) && Math.abs(mLattice.ordinate(point, 0) - targetX()) <= remainingSteps;
+      }
     });
   private final long mX = mLattice.toPoint(1, 0, 0);
   private final long mXN = mLattice.toPoint(-1, 0, 0);

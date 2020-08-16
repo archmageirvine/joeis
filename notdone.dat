@@ -1319,3 +1319,6 @@ A033711 Number of fancy repdigit polyhedral numbers with <=n digits
 A033943 Sum of coefficients of a polynomial associated to a family of digraphs, author deceased, sequence not in his 2000 paper
 A034254 Triangle read by rows giving T(n,k) = number of inequivalent indecomposable linear [ n,k ] binary codes without 0 columns (n >= 2, 1 <= k <= n), have paper
 A034257 Maximal discrete supergroups of Gamma_0(n)
+A034258 Write n! as a product of n numbers, n = k(1)*k(2)*...*k(n) with k(1) <= k(2) <= ..., in all possible ways; a(n) = max value of k(1)
+A034259 Smallest m such that A034258(m) >= n
+A034260 Largest m such that A034258(m) <= n

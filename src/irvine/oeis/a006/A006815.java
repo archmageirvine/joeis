@@ -41,7 +41,7 @@ public class A006815 extends A006814 {
             ++z;
           }
           assert z == length;
-          increment(mPath[z - 1] * weight);
+          increment(mPath[z - 1] * (long) weight);
         });
       }
     });

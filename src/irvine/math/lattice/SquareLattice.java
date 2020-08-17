@@ -12,7 +12,7 @@ public class SquareLattice extends AbstractLattice {
   private static final long BIAS = 1L << (BITS_PER_COORDINATE - 1);
   protected static final long Y1 = 1L << BITS_PER_COORDINATE;
   private static final long ORIGIN = pack(0, 0);
-  protected static final long[] DELTAS = {1, -1, Y1, -Y1};
+  private static final long[] DELTAS = {1, -1, Y1, -Y1};
 
   private static long pack(final long x, final long y) {
     return ((BIAS + y) << BITS_PER_COORDINATE) + BIAS + x;

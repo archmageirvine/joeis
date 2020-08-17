@@ -6,7 +6,7 @@ package irvine.math.lattice;
  */
 public class HexagonalLattice extends SquareLattice {
 
-  protected static final long[] DELTA = {2, -2, 1 + Y1, 1 - Y1, -1 + Y1, -1 - Y1};
+  private static final long[] DELTAS = {2, -2, 1 + Y1, 1 - Y1, -1 + Y1, -1 - Y1};
 
   @Override
   public int neighbourCount(final long point) {
@@ -15,7 +15,7 @@ public class HexagonalLattice extends SquareLattice {
 
   @Override
   public long neighbour(final long point, final int neighbourNumber) {
-    return point + DELTA[neighbourNumber];
+    return point + DELTAS[neighbourNumber];
   }
 
   /**

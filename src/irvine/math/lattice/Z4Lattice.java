@@ -23,7 +23,7 @@ public class Z4Lattice extends AbstractLattice {
   protected static final long Z1 = 1L << Z_SHIFT;
   protected static final long Y1 = 1L << Y_SHIFT;
   protected static final long X1 = 1L << BITS_PER_COORDINATE;
-  protected static final long[] DELTAS = {1, -1, X1, -X1, Y1, -Y1, Z1, -Z1};
+  private static final long[] DELTAS = {1, -1, X1, -X1, Y1, -Y1, Z1, -Z1};
 
   private static long pack(final long t, final long x, final long y, final long z) {
     return ((BIAS + z) << Z_SHIFT)

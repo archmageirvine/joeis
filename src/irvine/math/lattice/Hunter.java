@@ -10,7 +10,7 @@ public class Hunter {
 
   protected final Lattice mLattice;
   protected long mCount = 0;
-  protected Keeper mKeeper = (animal) -> increment(1);
+  protected Keeper mKeeper = animal -> increment(1);
   private final Canonicalizer mCanon;
 
   /**
@@ -28,7 +28,7 @@ public class Hunter {
    * @param lattice underlying lattice
    */
   public Hunter(final Lattice lattice) {
-    this(lattice, (animal) -> animal);
+    this(lattice, animal -> animal);
   }
 
   /**
@@ -96,6 +96,10 @@ public class Hunter {
     return count(steps, animal);
   }
 
+  /**
+   * Noddy for testing.
+   * @param args ignored
+   */
   public static void main(final String[] args) {
     final Lattice l = new SquareLattice();
     final Canonicalizer canonicalizer = Canons.createTranslator(l);

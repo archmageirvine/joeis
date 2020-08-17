@@ -85,4 +85,11 @@ public interface Lattice {
    * @return true iff the point is adjacent to the origin
    */
   boolean isAdjacentToOrigin(final long point);
+
+  /**
+   * Convert individual coordinates into a point.
+   * @param coordinates coordinate value
+   * @return point
+   */
+  long toPoint(final long... coordinates);
 }

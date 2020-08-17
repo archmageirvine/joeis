@@ -57,14 +57,10 @@ public class SquareLattice extends AbstractLattice {
     return ((point >> BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 
-  /**
-   * Convenience method to convert an <code>(x,y)</code> pair into a point.
-   * @param x <code>x</code>-coordinate
-   * @param y <code>y</code>-coordinate
-   * @return point
-   */
-  public long toPoint(final long x, final long y) {
-    return pack(x, y);
+  @Override
+  public long toPoint(final long... coordinates) {
+    assert coordinates.length == 2;
+    return pack(coordinates[0], coordinates[1]);
   }
 
   @Override

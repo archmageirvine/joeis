@@ -50,15 +50,9 @@ public class CubicLattice extends AbstractLattice {
     return (point >> (ordinate * BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 
-  /**
-   * Convenience method to convert an <code>(x,y,z)</code> pair into a point.
-   * @param x <code>x</code>-coordinate
-   * @param y <code>y</code>-coordinate
-   * @param z <code>z</code>-coordinate
-   * @return point
-   */
-  public long toPoint(final long x, final long y, final long z) {
-    return pack(x, y, z);
+  @Override
+  public long toPoint(final long... coordinates) {
+    return pack(coordinates[0], coordinates[1], coordinates[2]);
   }
 
   @Override

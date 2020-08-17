@@ -56,17 +56,9 @@ public class Z5Lattice extends AbstractLattice {
     return (point >> (ordinate * BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 
-  /**
-   * Convenience method to convert an <code>(t,u,x,y,z)</code> pair into a point.
-   * @param t <code>t</code>-coordinate
-   * @param u <code>u</code>-coordinate
-   * @param x <code>x</code>-coordinate
-   * @param y <code>y</code>-coordinate
-   * @param z <code>z</code>-coordinate
-   * @return point
-   */
-  public long toPoint(final long t, final long u, final long x, final long y, final long z) {
-    return pack(t, u, x, y, z);
+  @Override
+  public long toPoint(final long... coordinates) {
+    return pack(coordinates[0], coordinates[1], coordinates[2], coordinates[3], coordinates[4]);
   }
 
   @Override

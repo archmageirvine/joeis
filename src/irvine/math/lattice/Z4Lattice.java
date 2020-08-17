@@ -53,16 +53,9 @@ public class Z4Lattice extends AbstractLattice {
     return (point >> (ordinate * BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 
-  /**
-   * Convenience method to convert an <code>(t,x,y,z)</code> pair into a point.
-   * @param t <code>t</code>-coordinate
-   * @param x <code>x</code>-coordinate
-   * @param y <code>y</code>-coordinate
-   * @param z <code>z</code>-coordinate
-   * @return point
-   */
-  public long toPoint(final long t, final long x, final long y, final long z) {
-    return pack(t, x, y, z);
+  @Override
+  public long toPoint(final long... coordinates) {
+    return pack(coordinates[0], coordinates[1], coordinates[2], coordinates[3]);
   }
 
   @Override

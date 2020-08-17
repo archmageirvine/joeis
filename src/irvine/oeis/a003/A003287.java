@@ -16,7 +16,7 @@ public class A003287 implements Sequence {
   private int mN = 1;
   private final FccLattice mLattice = new FccLattice();
   private final long mC = mLattice.neighbour(mLattice.origin(), 0);
-  private final ParallelWalker mWalker = new ParallelWalker(10,
+  private final ParallelWalker mWalker = new ParallelWalker(8,
     () -> new SelfAvoidingWalker(mLattice),
     () -> new SelfAvoidingCycler(mLattice, false));
 

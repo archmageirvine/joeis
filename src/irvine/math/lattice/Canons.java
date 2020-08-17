@@ -19,6 +19,11 @@ public final class Canons {
     return true;
   }
 
+  /**
+   * A canonicalizer that translates animals based on an origin.
+   * @param lattice underlying lattice
+   * @return canonicalizer
+   */
   public static Canonicalizer createTranslator(final Lattice lattice) {
     return animal -> {
       final int d = lattice.dimension();

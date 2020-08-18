@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034268.
+ * A034268 Least common multiple of <code>{2^k - 1, k=1..n}</code>.
  * @author Sean A. Irvine
  */
 public class A034268 implements Sequence {

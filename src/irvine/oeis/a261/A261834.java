@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A261834.
+ * A261834 Number of n-step adjacent expansions on the hexagonal (honeycomb) lattice. Holes allowed.
  * @author Sean A. Irvine
  */
 public class A261834 implements Sequence {

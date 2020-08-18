@@ -103,6 +103,9 @@ public class Hunter {
       return 1;
     }
     final Animal animal = new Animal(mLattice.origin());
+    // todo the following needs a generalize to any lattice
+    animal.mForbidden.add(mLattice.toPoint(-1, 0));
+    animal.mForbidden.add(mLattice.toPoint(0, -1));
     return count(steps, animal);
   }
 
@@ -121,21 +124,15 @@ public class Hunter {
 
           @Override
           public void process(final Animal animal) {
+            increment(1);
             if (mUnique.add(canonicalizer.canon(animal))) {
-              // todo note this will not parallelize as is because uniqueness only up to thread!
-
-//              final StringBuilder sb = new StringBuilder();
-//              for (final long p : canonicalizer.canon(animal)) {
-//                sb.append(l.toString(p));
-//              }
-//              System.out.println(sb);
               increment(1);
             }
           }
         });
       }
     };
-    for (int k = 0; k < 12; ++k) {
+    for (int k = 0; k < 13; ++k) {
       System.out.println(k + " " + h.count(k));
     }
   }

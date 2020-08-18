@@ -20,12 +20,11 @@ public class A027652 extends A134414 {
   private final Sequence mE4 = new A004009();
   private final Polynomial<Z> mE4x4 = RING.create(Collections.emptyList());
   private final Polynomial<Z> mA = RING.create(Collections.emptyList());
-  protected int mN = -1;
 
   @Override
   public Z next() {
-    mE4x4.add((++mN & 3) == 0 ? mE4.next() : Z.ZERO);
     mA.add(super.next());
+    mE4x4.add((mN & 3) == 0 ? mE4.next() : Z.ZERO);
     return RING.multiply(mA, mE4x4, mN).coeff(mN).negate();
   }
 }

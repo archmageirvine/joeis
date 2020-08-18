@@ -29,7 +29,7 @@ public final class Canons {
       final int d = lattice.dimension();
       final long[] minPerDimension = new long[d];
       Arrays.fill(minPerDimension, Long.MAX_VALUE);
-      for (final long p : animal) {
+      for (final long p : animal.points()) {
         for (int k = 0; k < d; ++k) {
           minPerDimension[k] = Math.min(minPerDimension[k], lattice.ordinate(p, k));
         }
@@ -39,12 +39,12 @@ public final class Canons {
       }
 
       // todo the following is not quite what I want
-      long delta = lattice.toPoint(minPerDimension);
+      // long delta = lattice.toPoint(minPerDimension);
 
-      delta = 0;
-      //for (int k = 0; k < minPerDimension.length; ++k) {
+      final int bitsPerDimension = Long.SIZE / d;  // !!! brittle, assumes lattice implementation does this
+      long delta = 0;
       for (int k = minPerDimension.length - 1; k >= 0; --k) {
-        delta <<= 32; // todo !!! square lattice only
+        delta <<= bitsPerDimension;
         delta += minPerDimension[k];
       }
 
@@ -57,9 +57,13 @@ public final class Canons {
 //
 //      System.out.println("Mins: " + Arrays.toString(minPerDimension));
 
-      final Animal a = new Animal();
-      for (final long p : animal) {
-        a.add(p - delta);
+      final long[] translatedPoints = new long[animal.size()];
+      for (int k = 0; k < translatedPoints.length; ++k) {
+        translatedPoints[k] = animal.points()[k] - delta;
+      }
+      final Animal a = new Animal(translatedPoints);
+      for (final long p : animal.mForbidden) {
+        a.mForbidden.add(p - delta);
       }
 
 //      System.out.println("Post-trans");

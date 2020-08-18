@@ -12,15 +12,18 @@ public class Hunter {
   protected long mCount = 0;
   protected Keeper mKeeper = animal -> increment(1);
   private final Canonicalizer mCanon;
+  private final boolean mForbidden;
 
   /**
    * Construct a hunter on the specified lattice.
    * @param lattice underlying lattice
    * @param canon canonicalizer
+   * @param forbidden should forbidden points implementation be used (normally set this to true)
    */
-  public Hunter(final Lattice lattice, final Canonicalizer canon) {
+  public Hunter(final Lattice lattice, final Canonicalizer canon, final boolean forbidden) {
     mLattice = lattice;
     mCanon = canon;
+    mForbidden = forbidden;
   }
 
   /**
@@ -28,7 +31,7 @@ public class Hunter {
    * @param lattice underlying lattice
    */
   public Hunter(final Lattice lattice) {
-    this(lattice, animal -> animal);
+    this(lattice, animal -> animal, false);
   }
 
   /**
@@ -53,14 +56,22 @@ public class Hunter {
     } else {
       final HashSet<Animal> h = new HashSet<>();
       final HashSet<Long> hc = new HashSet<>();
-      for (final long p : animal) {
+      for (final long p : animal.points()) {
         for (int k = 0; k < mLattice.neighbourCount(p); ++k) {
           final long q = mLattice.neighbour(p, k);
-          if (!animal.contains(q) && hc.add(q)) {
+          if (!animal.contains(q) && !animal.mForbidden.contains(q) && hc.add(q)) {
             final Animal a = new Animal(animal, q);
+
+            if (mForbidden) {
+              // Set forbidden points (these points should never be considered
+              // in future expansion of this animal
+              a.mForbidden.addAll(hc);
+              a.mForbidden.remove(q); // not strictly necessary
+            }
+
             final Animal c = mCanon.canon(a);
             if (h.add(c)) {
-              search(a, remainingSteps - 1);
+              search(c, remainingSteps - 1);
             }
           }
         }
@@ -91,8 +102,7 @@ public class Hunter {
     if (steps <= 1) {
       return 1;
     }
-    final Animal animal = new Animal();
-    animal.add(mLattice.origin());
+    final Animal animal = new Animal(mLattice.origin());
     return count(steps, animal);
   }
 
@@ -102,8 +112,9 @@ public class Hunter {
    */
   public static void main(final String[] args) {
     final Lattice l = new SquareLattice();
+    //final Lattice l = new FccLattice();
     final Canonicalizer canonicalizer = Canons.createTranslator(l);
-    final Hunter h = new Hunter(l, canonicalizer) {
+    final Hunter h = new Hunter(l, canonicalizer, true) {
       {
         setKeeper(new Keeper() {
           final HashSet<Animal> mUnique = new HashSet<>();
@@ -124,7 +135,7 @@ public class Hunter {
         });
       }
     };
-    for (int k = 0; k < 10; ++k) {
+    for (int k = 0; k < 12; ++k) {
       System.out.println(k + " " + h.count(k));
     }
   }

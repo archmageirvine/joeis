@@ -54,11 +54,21 @@ public class Hunter {
     if (remainingSteps == 0) {
       mKeeper.process(animal);
     } else {
-      final HashSet<Animal> h = new HashSet<>();
+      //final HashSet<Animal> h = new HashSet<>();
       final HashSet<Long> hc = new HashSet<>();
       for (final long p : animal.points()) {
         for (int k = 0; k < mLattice.neighbourCount(p); ++k) {
           final long q = mLattice.neighbour(p, k);
+          if (mForbidden) {
+            // todo the following conditions only good for 2-d lattice
+            // todo presumably a simple cascade d(i) == 0 && d(i+1) < 0 would work
+            if (mLattice.ordinate(q, 0) < 0) {
+              continue;
+            }
+            if (mLattice.ordinate(q, 0) == 0 && mLattice.ordinate(q, 1) < 0) {
+              continue;
+            }
+          }
           if (!animal.contains(q) && !animal.mForbidden.contains(q) && hc.add(q)) {
             final Animal a = new Animal(animal, q);
 
@@ -69,10 +79,12 @@ public class Hunter {
               a.mForbidden.remove(q); // not strictly necessary
             }
 
-            final Animal c = mCanon.canon(a);
-            if (h.add(c)) {
-              search(c, remainingSteps - 1);
-            }
+           // final Animal c = mCanon.canon(a);
+           // if (h.add(c)) {
+              search(a, remainingSteps - 1);
+           // } else {
+           //   System.out.println("Dupe");
+           // }
           }
         }
       }
@@ -86,10 +98,11 @@ public class Hunter {
    */
   public long count(final int steps, final Animal animal) {
     if (steps <= animal.size()) {
-      return 1;
+      mKeeper.process(animal);
+    } else {
+      mCount = 0;
+      search(animal, steps - animal.size());
     }
-    mCount = 0;
-    search(animal, steps - animal.size());
     return mCount;
   }
 
@@ -99,13 +112,16 @@ public class Hunter {
    * @return number of walks
    */
   public long count(final int steps) {
-    if (steps <= 1) {
-      return 1;
-    }
     final Animal animal = new Animal(mLattice.origin());
+    if (steps <= 1) {
+      mKeeper.process(animal);
+      return mCount;
+    }
     // todo the following needs a generalize to any lattice
-    animal.mForbidden.add(mLattice.toPoint(-1, 0));
-    animal.mForbidden.add(mLattice.toPoint(0, -1));
+    if (mForbidden) {
+      animal.mForbidden.add(mLattice.toPoint(-1, 0));
+      animal.mForbidden.add(mLattice.toPoint(0, -1));
+    }
     return count(steps, animal);
   }
 
@@ -118,21 +134,22 @@ public class Hunter {
     //final Lattice l = new FccLattice();
     final Canonicalizer canonicalizer = Canons.createTranslator(l);
     final Hunter h = new Hunter(l, canonicalizer, true) {
-      {
-        setKeeper(new Keeper() {
-          final HashSet<Animal> mUnique = new HashSet<>();
-
-          @Override
-          public void process(final Animal animal) {
-            increment(1);
-            if (mUnique.add(canonicalizer.canon(animal))) {
-              increment(1);
-            }
-          }
-        });
-      }
+//      {
+//        setKeeper(new Keeper() {
+//          final HashSet<Animal> mUnique = new HashSet<>();
+//
+//          @Override
+//          public void process(final Animal animal) {
+//            if (mUnique.add(canonicalizer.canon(animal))) {
+//              increment(1);
+//            } else {
+//              System.out.println("Dupe");
+//            }
+//          }
+//        });
+//      }
     };
-    for (int k = 0; k < 13; ++k) {
+    for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));
     }
   }

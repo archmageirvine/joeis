@@ -272,6 +272,9 @@
      <Match classregex="irvine.language.LiquidTokenizer">
        <BugCode name="LEST"/>
      </Match>
+     <Match classregex="irvine.math.lattice.*">
+       <BugCode name="COM"/>
+     </Match>
 
      <!-- false-positives? -->
      <Match classregex="irvine.oeis.a007.A007756">

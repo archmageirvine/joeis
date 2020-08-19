@@ -76,6 +76,24 @@ public class Animal {
     return mAnimal;
   }
 
+  /**
+   * Return the size of the perimeter of this animal with respect to the specified lattice.
+   * @param lattice underlying lattice
+   * @return perimeter size
+   */
+  public int perimeterSize(final Lattice lattice) {
+    final HashSet<Long> perim = new HashSet<>();
+    for (final long p : mAnimal) {
+      for (int k = 0; k < lattice.neighbourCount(p); ++k) {
+        perim.add(lattice.neighbour(p, k));
+      }
+    }
+    for (final long p : mAnimal) {
+      perim.remove(p);
+    }
+    return perim.size();
+  }
+
   @Override
   public boolean equals(final Object obj) {
     return obj instanceof Animal && Arrays.equals(mAnimal, ((Animal) obj).mAnimal);

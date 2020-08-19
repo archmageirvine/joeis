@@ -25,7 +25,7 @@ public class A007200 implements Sequence {
             return;
           }
           final long hi = walk[(mN - mM) / 2];
-          final long lo = walk[(mN + mM) / 2];
+          final long lo = walk[(mN + mM) >>> 1];
           if (mHexagonalLattice.isAdjacent(lo, hi)) {
             increment(weight);
           }

@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The honeycomb lattice.
  * @author Sean A. Irvine
  */
-public class HoneycombLattice extends SquareLattice {
+class HoneycombLattice extends SquareLattice {
 
   @Override
   public int neighbourCount(final long point) {

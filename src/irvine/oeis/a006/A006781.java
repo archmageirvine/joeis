@@ -1,6 +1,6 @@
 package irvine.oeis.a006;
 
-import irvine.math.lattice.ManhattanLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
@@ -14,14 +14,13 @@ import irvine.oeis.Sequence;
 public class A006781 implements Sequence {
 
   private int mN = 0;
-  private final ManhattanLattice mLattice = new ManhattanLattice();
-  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private final long mC = Lattices.MANHATTAN.neighbour(Lattices.MANHATTAN.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mLattice),
-    () -> new SelfAvoidingCycler(mLattice, true));
+    () -> new SelfAvoidingWalker(Lattices.MANHATTAN),
+    () -> new SelfAvoidingCycler(Lattices.MANHATTAN, true));
 
   @Override
   public Z next() {
-    return Z.valueOf(mWalker.count(4 * ++mN, 1, 3, mLattice.origin(), mC)).divide(mN);
+    return Z.valueOf(mWalker.count(4 * ++mN, 1, 3, Lattices.MANHATTAN.origin(), mC)).divide(mN);
   }
 }

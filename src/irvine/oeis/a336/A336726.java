@@ -1,9 +1,8 @@
 package irvine.oeis.a336;
 
-import irvine.math.lattice.HalfManhattanLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.NonadjacentWalker;
 import irvine.math.lattice.ParallelWalker;
-import irvine.math.lattice.SquareLattice;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,10 +12,9 @@ import irvine.oeis.Sequence;
  */
 public class A336726 implements Sequence {
 
-  private final HalfManhattanLattice mHalfManhattanLattice = new HalfManhattanLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(mHalfManhattanLattice, new SquareLattice()));
-  private final long mX1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 0);
-  private final long mY1 = mHalfManhattanLattice.neighbour(mHalfManhattanLattice.origin(), 1);
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new NonadjacentWalker(Lattices.HALF_MANHATTAN, Lattices.Z2));
+  private final long mX1 = Lattices.HALF_MANHATTAN.neighbour(Lattices.HALF_MANHATTAN.origin(), 0);
+  private final long mY1 = Lattices.HALF_MANHATTAN.neighbour(Lattices.HALF_MANHATTAN.origin(), 1);
   private int mN = -1;
 
   @Override
@@ -28,11 +26,11 @@ public class A336726 implements Sequence {
     // but we can assume the first vertical step will be up (and double weight
     // thereafter).  Hence we use 1 for initial weight and 1 for axes (i.e.,
     // indicating no y-step has been taken).
-    final Z a = Z.valueOf(mWalker.count(mN, 1, 1, mHalfManhattanLattice.origin(), mX1));
+    final Z a = Z.valueOf(mWalker.count(mN, 1, 1, Lattices.HALF_MANHATTAN.origin(), mX1));
     mWalker.clear();
     // Going up for the first step is equivalent to going down, hence symmetry 2
     // But horizontal steps are not symmetric so set axes to 0b11.
-    final Z b = Z.valueOf(mWalker.count(mN, 2, 3, mHalfManhattanLattice.origin(), mY1));
+    final Z b = Z.valueOf(mWalker.count(mN, 2, 3, Lattices.HALF_MANHATTAN.origin(), mY1));
     mWalker.clear();
     return a.add(b);
   }

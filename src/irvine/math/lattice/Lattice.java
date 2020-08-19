@@ -80,6 +80,14 @@ public interface Lattice {
   long[] neighbours(final long point);
 
   /**
+   * Test if a pair of points are adjacent.
+   * @param u first point
+   * @param v second point
+   * @return true iff the points are adjacent
+   */
+  boolean isAdjacent(final long u, final long v);
+
+  /**
    * Test if the specified point is adjacent to the origin.
    * @param point point to test
    * @return true iff the point is adjacent to the origin

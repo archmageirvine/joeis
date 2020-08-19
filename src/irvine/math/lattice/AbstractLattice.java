@@ -39,13 +39,17 @@ public abstract class AbstractLattice implements Lattice {
   }
 
   @Override
-  public boolean isAdjacentToOrigin(final long point) {
-    for (int k = 0; k < neighbourCount(point); ++k) {
-      if (origin() == neighbour(point, k)) {
+  public boolean isAdjacent(final long u, final long v) {
+    for (int k = 0; k < neighbourCount(u); ++k) {
+      if (neighbour(u, k) == v) {
         return true;
       }
     }
     return false;
   }
 
+  @Override
+  public boolean isAdjacentToOrigin(final long point) {
+    return isAdjacent(point, origin());
+  }
 }

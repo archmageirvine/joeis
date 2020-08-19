@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The face-centered cubic (f.c.c.) lattice.
  * @author Sean A. Irvine
  */
-public class FccLattice extends CubicLattice {
+class FccLattice extends CubicLattice {
 
   // Face-centered cubic, f.c.c
   //

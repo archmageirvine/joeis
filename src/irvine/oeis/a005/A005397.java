@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.lattice.KagomeLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
@@ -14,14 +14,13 @@ import irvine.oeis.Sequence;
 public class A005397 implements Sequence {
 
   private int mN = 2;
-  private final KagomeLattice mLattice = new KagomeLattice();
-  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private final long mC = Lattices.KAGOME.neighbour(Lattices.KAGOME.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mLattice),
-    () -> new SelfAvoidingCycler(mLattice, true));
+    () -> new SelfAvoidingWalker(Lattices.KAGOME),
+    () -> new SelfAvoidingCycler(Lattices.KAGOME, true));
 
   @Override
   public Z next() {
-    return Z.valueOf(mWalker.count(++mN, 4, 3, mLattice.origin(), mC));
+    return Z.valueOf(mWalker.count(++mN, 4, 3, Lattices.KAGOME.origin(), mC));
   }
 }

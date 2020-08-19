@@ -2,8 +2,7 @@ package irvine.oeis.a003;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.lattice.Hunter;
-import irvine.math.lattice.Lattice;
-import irvine.math.lattice.SquareLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
@@ -17,7 +16,6 @@ public class A003203 implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);
-  private static final Lattice Z2 = new SquareLattice();
   private int mN = 0;
   private Polynomial<Z> mS = RING.one();
   private long[] mPerimeterCounts = null;
@@ -26,9 +24,9 @@ public class A003203 implements Sequence {
   public Z next() {
     if (++mN > 0) {
       mPerimeterCounts = new long[2 * mN + 3];
-      final Hunter h = new Hunter(Z2, true) {
+      final Hunter h = new Hunter(Lattices.Z2, true) {
         {
-          setKeeper(animal -> ++mPerimeterCounts[animal.perimeterSize(Z2)]);
+          setKeeper(animal -> ++mPerimeterCounts[animal.perimeterSize(Lattices.Z2)]);
         }
       };
       h.count(mN);

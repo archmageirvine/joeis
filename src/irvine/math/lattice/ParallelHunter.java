@@ -55,7 +55,7 @@ public class ParallelHunter {
   public long count(final int steps) {
     // Non-parallel for small cases or for explicit single-threaded
     if (steps <= mNonParallelSteps || THREADS == 1) {
-      return new Hunter(mLattice).count(steps);
+      return new Hunter(mLattice, mForbidden).count(steps);
     }
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
@@ -83,8 +83,8 @@ public class ParallelHunter {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final Lattice l = new SquareLattice();
-    //final Lattice l = Lattices.Z4;
+    //final Lattice l = new SquareLattice();
+    final Lattice l = Lattices.Z5;
     final ParallelHunter h = new ParallelHunter(4, l, true);
     for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));

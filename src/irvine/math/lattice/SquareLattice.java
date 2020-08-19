@@ -5,7 +5,7 @@ package irvine.math.lattice;
  * lattices.
  * @author Sean A. Irvine
  */
-public class SquareLattice extends AbstractLattice {
+class SquareLattice extends AbstractLattice {
 
   protected static final int BITS_PER_COORDINATE = 32;
   private static final long MASK = (1L << BITS_PER_COORDINATE) - 1;
@@ -44,7 +44,7 @@ public class SquareLattice extends AbstractLattice {
    * @param point the point
    * @return <code>x</code> coordinate
    */
-  public long x(final long point) {
+  long x(final long point) {
     return (point & MASK) - BIAS;
   }
 
@@ -53,7 +53,7 @@ public class SquareLattice extends AbstractLattice {
    * @param point the point
    * @return <code>y</code> coordinate
    */
-  public long y(final long point) {
+  long y(final long point) {
     return ((point >> BITS_PER_COORDINATE) & MASK) - BIAS;
   }
 

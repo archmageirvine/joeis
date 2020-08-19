@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The two-dimensional L lattice.
  * @author Sean A. Irvine
  */
-public class LLattice extends SquareLattice {
+class LLattice extends SquareLattice {
 
   // Each step is perpendicular to the previous step
 

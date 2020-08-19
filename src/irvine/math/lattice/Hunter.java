@@ -121,8 +121,8 @@ public class Hunter {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final Lattice l = new SquareLattice();
-    //final Lattice l = Lattices.Z4;
+    //final Lattice l = new SquareLattice();
+    final Lattice l = Lattices.Z5;
     final Hunter h = new Hunter(l, true) {
 //      {
 //        setKeeper(new Keeper() {

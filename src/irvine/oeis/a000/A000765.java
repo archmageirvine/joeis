@@ -1,6 +1,6 @@
 package irvine.oeis.a000;
 
-import irvine.math.lattice.FccLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
@@ -12,10 +12,9 @@ import irvine.oeis.Sequence;
  */
 public class A000765 implements Sequence {
 
-  private final FccLattice mLattice = new FccLattice();
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mLattice),
-    () -> new SelfAvoidingWalker(mLattice) {
+    () -> new SelfAvoidingWalker(Lattices.FCC),
+    () -> new SelfAvoidingWalker(Lattices.FCC) {
       {
         setAccumulator((walk, weight, axesMask) -> {
           if (mLattice.ordinate(walk[walk.length - 1], 0) == targetX()) {
@@ -29,9 +28,9 @@ public class A000765 implements Sequence {
         return super.isAcceptable(point, remainingSteps) && Math.abs(mLattice.ordinate(point, 0) - targetX()) <= remainingSteps;
       }
     });
-  private final long mA = mLattice.toPoint(1, 1, 0);
-  private final long mAN = mLattice.toPoint(-1, 1, 0);
-  private final long mB = mLattice.toPoint(0, 1, 1);
+  private final long mA = Lattices.FCC.toPoint(1, 1, 0);
+  private final long mAN = Lattices.FCC.toPoint(-1, 1, 0);
+  private final long mB = Lattices.FCC.toPoint(0, 1, 1);
   private int mN = -1;
 
   protected long targetX() {
@@ -49,16 +48,16 @@ public class A000765 implements Sequence {
     // multiplicity of 2 for symmetry +1 versus -1.
     final Z a;
     if (targetX() == 0) {
-      a = Z.valueOf(mWalker.count(mN, 8, 7, mLattice.origin(), mA));
+      a = Z.valueOf(mWalker.count(mN, 8, 7, Lattices.FCC.origin(), mA));
       mWalker.clear();
     } else {
-      final Z a1 = Z.valueOf(mWalker.count(mN, 4, 7, mLattice.origin(), mA));
+      final Z a1 = Z.valueOf(mWalker.count(mN, 4, 7, Lattices.FCC.origin(), mA));
       mWalker.clear();
-      final Z a2 = Z.valueOf(mWalker.count(mN, 4, 7, mLattice.origin(), mAN));
+      final Z a2 = Z.valueOf(mWalker.count(mN, 4, 7, Lattices.FCC.origin(), mAN));
       mWalker.clear();
       a = a1.add(a2);
     }
-    final Z b = Z.valueOf(mWalker.count(mN, 4, 7, mLattice.origin(), mB));
+    final Z b = Z.valueOf(mWalker.count(mN, 4, 7, Lattices.FCC.origin(), mB));
     mWalker.clear();
     return a.add(b);
   }

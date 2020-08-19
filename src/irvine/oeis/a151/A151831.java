@@ -1,4 +1,4 @@
-package irvine.oeis.a261;
+package irvine.oeis.a151;
 
 import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelHunter;
@@ -6,12 +6,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A261834 Number of n-step adjacent expansions on the hexagonal (honeycomb) lattice. Holes allowed.
+ * A151831.
  * @author Sean A. Irvine
  */
-public class A261834 implements Sequence {
+public class A151831 implements Sequence {
 
-  private final ParallelHunter mHunter = new ParallelHunter(4, Lattices.HEXAGONAL, false);
+  private final ParallelHunter mHunter = new ParallelHunter(4, Lattices.Z5, true);
   private int mN = 0;
 
   @Override

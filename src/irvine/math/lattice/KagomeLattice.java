@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The Kagome lattice.
  * @author Sean A. Irvine
  */
-public class KagomeLattice extends SquareLattice {
+class KagomeLattice extends SquareLattice {
 
   private static final long[] DELTA_EVEN = {1 + Y1, 1 - Y1, -1 + Y1, -1 - Y1};
   private static final long[] DELTA_A = {2, -2, 1 + Y1, -1 - Y1};

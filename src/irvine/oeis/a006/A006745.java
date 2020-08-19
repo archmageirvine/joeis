@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import java.util.HashSet;
 import java.util.Set;
 
-import irvine.math.lattice.ManhattanLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
@@ -15,8 +15,7 @@ import irvine.oeis.Sequence;
  */
 public class A006745 implements Sequence {
 
-  private final ManhattanLattice mManhattanLattice = new ManhattanLattice();
-  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(mManhattanLattice) {
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new SelfAvoidingWalker(Lattices.MANHATTAN) {
     // Compute a bounding box for the walk so far
     private long[] bounds(final int remainingSteps) {
       final long[] bounds = new long[4];
@@ -60,11 +59,11 @@ public class A006745 implements Sequence {
       return isAcceptable(new HashSet<>(), bounds(remainingSteps), point, remainingSteps);
     }
   });
-  private final long mC = mManhattanLattice.neighbour(mManhattanLattice.origin(), 0);
+  private final long mC = Lattices.MANHATTAN.neighbour(Lattices.MANHATTAN.origin(), 0);
   private int mN = 0;
 
   @Override
   public Z next() {
-    return Z.valueOf(mWalker.count(++mN, 1, 3, mManhattanLattice.origin(), mC));
+    return Z.valueOf(mWalker.count(++mN, 1, 3, Lattices.MANHATTAN.origin(), mC));
   }
 }

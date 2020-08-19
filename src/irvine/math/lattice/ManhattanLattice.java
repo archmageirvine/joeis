@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The two-dimensional Manhattan lattice.
  * @author Sean A. Irvine
  */
-public class ManhattanLattice extends SquareLattice {
+class ManhattanLattice extends SquareLattice {
 
   @Override
   public int neighbourCount(final long point) {

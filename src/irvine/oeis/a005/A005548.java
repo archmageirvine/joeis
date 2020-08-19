@@ -1,6 +1,6 @@
 package irvine.oeis.a005;
 
-import irvine.math.lattice.FccLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
@@ -16,10 +16,9 @@ public class A005548 implements Sequence {
 
   private int mN;
   private final long mTarget;
-  private final FccLattice mLattice = new FccLattice();
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mLattice),
-    () -> new SelfAvoidingWalker(mLattice) {
+    () -> new SelfAvoidingWalker(Lattices.FCC),
+    () -> new SelfAvoidingWalker(Lattices.FCC) {
       {
         setAccumulator((walk, weight, axesMask) -> {
           if (walk[walk.length - 1] == mLattice.origin()) {
@@ -35,7 +34,7 @@ public class A005548 implements Sequence {
     });
 
   protected A005548(final long x, final long y, final long z, final int start) {
-    mTarget = mLattice.toPoint(x, y, z);
+    mTarget = Lattices.FCC.toPoint(x, y, z);
     mN = start;
   }
 

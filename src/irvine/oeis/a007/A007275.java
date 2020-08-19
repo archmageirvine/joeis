@@ -1,6 +1,6 @@
 package irvine.oeis.a007;
 
-import irvine.math.lattice.HexagonalLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.Walker;
 import irvine.math.z.Z;
@@ -12,9 +12,8 @@ import irvine.oeis.Sequence;
  */
 public class A007275 implements Sequence {
 
-  private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
-  private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
-  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Walker(mHexagonalLattice) {
+  private final long mC = Lattices.HEXAGONAL.neighbour(Lattices.HEXAGONAL.origin(), 0);
+  private final ParallelWalker mWalker = new ParallelWalker(8, () -> new Walker(Lattices.HEXAGONAL) {
     @Override
     protected boolean isAcceptable(final long point, final int remainingSteps) {
       int count = 0;
@@ -30,6 +29,6 @@ public class A007275 implements Sequence {
 
   @Override
   public Z next() {
-    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 1, mHexagonalLattice.origin(), mC));
+    return ++mN == 0 ? Z.ONE : Z.valueOf(mWalker.count(mN, 6, 1, Lattices.HEXAGONAL.origin(), mC));
   }
 }

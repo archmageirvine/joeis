@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The cubic lattice.
  * @author Sean A. Irvine
  */
-public class CubicLattice extends AbstractLattice {
+class CubicLattice extends AbstractLattice {
 
   // 3-dimensional lattice
   // Coordinate of a point is (x,y,z).

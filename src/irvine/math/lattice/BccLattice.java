@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The body-centered cubic (b.c.c.) lattice.
  * @author Sean A. Irvine
  */
-public class BccLattice extends CubicLattice {
+class BccLattice extends CubicLattice {
 
   // Represents b.c.c. lattice by assigning even coordinates to nodes in the
   // center of the cubes and odd to those forming the corners of the cube.

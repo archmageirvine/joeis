@@ -1,7 +1,7 @@
 package irvine.oeis.a007;
 
 import irvine.math.lattice.Accumulator;
-import irvine.math.lattice.HexagonalLattice;
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.SelfAvoidingWalker;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -14,9 +14,8 @@ public class A007200 implements Sequence {
 
   private int mN;
   private final int mM;
-  private final HexagonalLattice mHexagonalLattice = new HexagonalLattice();
-  private final long mC = mHexagonalLattice.neighbour(mHexagonalLattice.origin(), 0);
-  private final SelfAvoidingWalker mWalker = new SelfAvoidingWalker(mHexagonalLattice) {
+  private final long mC = Lattices.HEXAGONAL.neighbour(Lattices.HEXAGONAL.origin(), 0);
+  private final SelfAvoidingWalker mWalker = new SelfAvoidingWalker(Lattices.HEXAGONAL) {
     {
       setAccumulator(new Accumulator() {
         @Override
@@ -26,11 +25,11 @@ public class A007200 implements Sequence {
           }
           final long hi = walk[(mN - mM) / 2];
           final long lo = walk[(mN + mM) >>> 1];
-          if (mHexagonalLattice.isAdjacent(lo, hi)) {
+          if (Lattices.HEXAGONAL.isAdjacent(lo, hi)) {
             increment(weight);
           }
           if (((mN ^ mM) & 1) == 1) {
-            if (mHexagonalLattice.isAdjacent(lo, walk[(mN + mM - 1) / 2])) {
+            if (Lattices.HEXAGONAL.isAdjacent(lo, walk[(mN + mM - 1) / 2])) {
               increment(weight);
             }
           }
@@ -51,6 +50,6 @@ public class A007200 implements Sequence {
 
   @Override
   public Z next() {
-    return Z.valueOf(mWalker.count(++mN, 6, 1, mHexagonalLattice.origin(), mC));
+    return Z.valueOf(mWalker.count(++mN, 6, 1, Lattices.HEXAGONAL.origin(), mC));
   }
 }

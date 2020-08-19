@@ -18,6 +18,7 @@ public class ParallelHunter {
 
   private final int mNonParallelSteps;
   private final Lattice mLattice;
+  private final boolean mForbidden;
   private final ArrayList<Animal> mSeeds = new ArrayList<>();
 
   /**
@@ -31,10 +32,12 @@ public class ParallelHunter {
    * value of about 6 seems to work well (typically several thousand animals).
    * @param nonParallelSteps number of steps to seed parallel walker with
    * @param lattice the lattice on which to generate animals
+   * @param forbidden should forbidden handling be enabled (use true unless you know what you are doing)
    */
-  public ParallelHunter(final int nonParallelSteps, final Lattice lattice) {
+  public ParallelHunter(final int nonParallelSteps, final Lattice lattice, final boolean forbidden) {
     mNonParallelSteps = nonParallelSteps;
     mLattice = lattice;
+    mForbidden = forbidden;
   }
 
   /**
@@ -56,7 +59,7 @@ public class ParallelHunter {
     }
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
-      final Hunter hunter = new Hunter(mLattice);
+      final Hunter hunter = new Hunter(mLattice, mForbidden);
       hunter.setKeeper(mSeeds::add);
       hunter.count(mNonParallelSteps);
       if (VERBOSE) {
@@ -67,11 +70,26 @@ public class ParallelHunter {
     final ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
     try {
       return forkJoinPool.submit(() -> mSeeds.parallelStream()
-        .mapToLong(animal -> new Hunter(mLattice)
+        .mapToLong(animal -> new Hunter(mLattice, mForbidden)
           .count(steps, animal)).sum())
         .get();
     } catch (final InterruptedException | ExecutionException e) {
       throw new RuntimeException(e);
     }
   }
+
+  /**
+   * Noddy for testing.
+   * @param args ignored
+   */
+  public static void main(final String[] args) {
+    final Lattice l = new SquareLattice();
+    //final Lattice l = Lattices.Z4;
+    final ParallelHunter h = new ParallelHunter(4, l, true);
+    for (int k = 0; k < 14; ++k) {
+      System.out.println(k + " " + h.count(k));
+    }
+  }
+
 }
+

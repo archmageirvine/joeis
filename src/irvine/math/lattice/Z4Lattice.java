@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The <code>Z^4</code> lattice.
  * @author Sean A. Irvine
  */
-public class Z4Lattice extends AbstractLattice {
+class Z4Lattice extends AbstractLattice {
 
   // 4-dimensional lattice
   // Coordinate of a point is (t,x,y,z).

@@ -47,6 +47,7 @@ public class Hunter {
     mCount += count;
   }
 
+  // It might make sense to define this on the lattice!
   private boolean isPointAllowed(final long point) {
     // Check that the point is above right of the origin (and equivalent
     // generalization for higher dimension lattices).
@@ -97,10 +98,10 @@ public class Hunter {
    * @return number of walks
    */
   public long count(final int steps, final Animal animal) {
+    mCount = 0;
     if (steps <= animal.size()) {
       mKeeper.process(animal);
     } else {
-      mCount = 0;
       search(animal, steps - animal.size());
     }
     return mCount;
@@ -112,12 +113,7 @@ public class Hunter {
    * @return number of walks
    */
   public long count(final int steps) {
-    final Animal animal = new Animal(mLattice.origin());
-    if (steps <= 1) {
-      mKeeper.process(animal);
-      return mCount;
-    }
-    return count(steps, animal);
+    return count(steps, new Animal(mLattice.origin()));
   }
 
   /**
@@ -126,7 +122,7 @@ public class Hunter {
    */
   public static void main(final String[] args) {
     final Lattice l = new SquareLattice();
-    //final Lattice l = new FccLattice();
+    //final Lattice l = Lattices.Z4;
     final Hunter h = new Hunter(l, true) {
 //      {
 //        setKeeper(new Keeper() {

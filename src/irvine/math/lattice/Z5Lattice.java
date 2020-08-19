@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The <code>Z^5</code> lattice.
  * @author Sean A. Irvine
  */
-public class Z5Lattice extends AbstractLattice {
+class Z5Lattice extends AbstractLattice {
 
   // 5-dimensional lattice
   // Coordinate of a point is (t,u,x,y,z).

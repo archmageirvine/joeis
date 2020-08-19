@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A007846 implements Sequence {
 
-  private final ParallelHunter mHunter = new ParallelHunter(4, new SquareLattice());
+  private final ParallelHunter mHunter = new ParallelHunter(4, new SquareLattice(), false);
   private int mN = -1;
 
   @Override

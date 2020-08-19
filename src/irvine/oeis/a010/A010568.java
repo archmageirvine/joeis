@@ -1,9 +1,9 @@
 package irvine.oeis.a010;
 
+import irvine.math.lattice.Lattices;
 import irvine.math.lattice.ParallelWalker;
 import irvine.math.lattice.SelfAvoidingCycler;
 import irvine.math.lattice.SelfAvoidingWalker;
-import irvine.math.lattice.Z4Lattice;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -14,15 +14,14 @@ import irvine.oeis.Sequence;
 public class A010568 implements Sequence {
 
   private int mN = 0;
-  private final Z4Lattice mLattice = new Z4Lattice();
-  private final long mC = mLattice.neighbour(mLattice.origin(), 0);
+  private final long mC = Lattices.Z4.neighbour(Lattices.Z4.origin(), 0);
   private final ParallelWalker mWalker = new ParallelWalker(8,
-    () -> new SelfAvoidingWalker(mLattice),
-    () -> new SelfAvoidingCycler(mLattice, false));
+    () -> new SelfAvoidingWalker(Lattices.Z4),
+    () -> new SelfAvoidingCycler(Lattices.Z4, false));
 
   @Override
   public Z next() {
     mN += 2;
-    return Z.valueOf(mWalker.count(mN, 8, 1, mLattice.origin(), mC));
+    return Z.valueOf(mWalker.count(mN, 8, 1, Lattices.Z4.origin(), mC));
   }
 }

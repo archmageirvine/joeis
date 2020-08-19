@@ -4,7 +4,7 @@ package irvine.math.lattice;
  * The <code>Z^6</code> lattice.
  * @author Sean A. Irvine
  */
-public class Z6Lattice extends AbstractLattice {
+class Z6Lattice extends AbstractLattice {
 
   // 6-dimensional lattice
   // Coordinate of a point is (t,u,v,x,y,z).

@@ -42,4 +42,9 @@ public final class Lattices {
   /** The body-centered cubic (b.c.c.) lattice. */
   public static final Lattice BCC = new BccLattice();
 
+  // Others
+
+  /** Diamond lattice (using 4-dimensional coordinates). */
+  public static final Lattice DIAMOND = new DiamondLattice();
+
 }

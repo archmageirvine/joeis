@@ -122,7 +122,7 @@ public class Hunter {
    */
   public static void main(final String[] args) {
     //final Lattice l = new SquareLattice();
-    final Lattice l = Lattices.BCC;
+    final Lattice l = Lattices.DIAMOND;
     final Hunter h = new Hunter(l, true) {
 //      {
 //        setKeeper(new Keeper() {

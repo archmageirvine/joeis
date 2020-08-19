@@ -8,7 +8,6 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-import jmason.poly.UniquenessTester;
 
 /**
  * A003203 Cluster series for square lattice.
@@ -27,7 +26,7 @@ public class A003203 implements Sequence {
   public Z next() {
     if (++mN > 0) {
       mPerimeterCounts = new long[2 * mN + 3];
-      final Hunter h = new Hunter(Z2, animal -> animal, true) {
+      final Hunter h = new Hunter(Z2, true) {
         {
           setKeeper(animal -> ++mPerimeterCounts[animal.perimeterSize(Z2)]);
         }

@@ -11,18 +11,15 @@ public class Hunter {
   protected final Lattice mLattice;
   protected long mCount = 0;
   protected Keeper mKeeper = animal -> increment(1);
-  private final Canonicalizer mCanon;
   private final boolean mForbidden;
 
   /**
    * Construct a hunter on the specified lattice.
    * @param lattice underlying lattice
-   * @param canon canonicalizer
    * @param forbidden should forbidden points implementation be used (normally set this to true)
    */
-  public Hunter(final Lattice lattice, final Canonicalizer canon, final boolean forbidden) {
+  public Hunter(final Lattice lattice, final boolean forbidden) {
     mLattice = lattice;
-    mCanon = canon;
     mForbidden = forbidden;
   }
 
@@ -31,7 +28,7 @@ public class Hunter {
    * @param lattice underlying lattice
    */
   public Hunter(final Lattice lattice) {
-    this(lattice, animal -> animal, false);
+    this(lattice, false);
   }
 
   /**
@@ -50,22 +47,31 @@ public class Hunter {
     mCount += count;
   }
 
+  private boolean isPointAllowed(final long point) {
+    // Check that the point is above right of the origin (and equivalent
+    // generalization for higher dimension lattices).
+    for (int k = 0; k < mLattice.dimension(); ++k) {
+      final long v = mLattice.ordinate(point, k);
+      if (v > 0) {
+        return true;
+      }
+      if (v < 0) {
+        return false;
+      }
+    }
+    return false; // point was the origin
+  }
+
   private void search(final Animal animal, final int remainingSteps) {
     if (remainingSteps == 0) {
       mKeeper.process(animal);
     } else {
-      //final HashSet<Animal> h = new HashSet<>();
       final HashSet<Long> hc = new HashSet<>();
       for (final long p : animal.points()) {
         for (int k = 0; k < mLattice.neighbourCount(p); ++k) {
           final long q = mLattice.neighbour(p, k);
           if (mForbidden) {
-            // todo the following conditions only good for 2-d lattice
-            // todo presumably a simple cascade d(i) == 0 && d(i+1) < 0 would work
-            if (mLattice.ordinate(q, 0) < 0) {
-              continue;
-            }
-            if (mLattice.ordinate(q, 0) == 0 && mLattice.ordinate(q, 1) < 0) {
+            if (!isPointAllowed(q)) {
               continue;
             }
           }
@@ -76,15 +82,9 @@ public class Hunter {
               // Set forbidden points (these points should never be considered
               // in future expansion of this animal
               a.mForbidden.addAll(hc);
-              a.mForbidden.remove(q); // not strictly necessary
+              a.mForbidden.remove(q); // not strictly necessary but saves space
             }
-
-           // final Animal c = mCanon.canon(a);
-           // if (h.add(c)) {
-              search(a, remainingSteps - 1);
-           // } else {
-           //   System.out.println("Dupe");
-           // }
+            search(a, remainingSteps - 1);
           }
         }
       }
@@ -117,11 +117,6 @@ public class Hunter {
       mKeeper.process(animal);
       return mCount;
     }
-    // todo the following needs a generalize to any lattice
-    if (mForbidden) {
-      animal.mForbidden.add(mLattice.toPoint(-1, 0));
-      animal.mForbidden.add(mLattice.toPoint(0, -1));
-    }
     return count(steps, animal);
   }
 
@@ -132,8 +127,7 @@ public class Hunter {
   public static void main(final String[] args) {
     final Lattice l = new SquareLattice();
     //final Lattice l = new FccLattice();
-    final Canonicalizer canonicalizer = Canons.createTranslator(l);
-    final Hunter h = new Hunter(l, canonicalizer, true) {
+    final Hunter h = new Hunter(l, true) {
 //      {
 //        setKeeper(new Keeper() {
 //          final HashSet<Animal> mUnique = new HashSet<>();

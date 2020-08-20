@@ -39,7 +39,7 @@ public class A098891 extends A000105 {
         reduced.remove(pt);
         final Polyomino canonical = reduced.freeCanonical();
         // At this point "canonical" need not be a proper polyomino (e.g. it might be disconnected)
-        // but it will always be the same one up to the usually symmetry requirements
+        // but it will always be the same one up to the usual symmetry requirements
         final BitSet set = b.get(canonical);
         if (set != null) {
           set.set(polyNumber);

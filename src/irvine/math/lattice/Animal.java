@@ -1,7 +1,9 @@
 package irvine.math.lattice;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 
 import irvine.math.LongUtils;
 
@@ -92,7 +94,7 @@ public class Animal implements Comparable<Animal> {
 
   /**
    * Return the size of the perimeter of this animal with respect to the specified lattice.
-   * @param lattice underlying lattice
+   * @param lattice the underlying lattice
    * @return perimeter size
    */
   public int perimeterSize(final Lattice lattice) {
@@ -106,6 +108,91 @@ public class Animal implements Comparable<Animal> {
       perim.remove(p);
     }
     return perim.size();
+  }
+
+  /**
+   * Return the size of edge edge perimeter of this animal with respect to the specified lattice
+   * @param lattice the underlying lattice
+   * @return perimeter size
+   */
+  public int edgePerimeterSize(final Lattice lattice) {
+    final Map<Long, Integer> pts = new HashMap<>();
+    for (final long p : mAnimal) {
+      for (int k = 0; k < lattice.neighbourCount(p); ++k) {
+        pts.merge(lattice.neighbour(p, k), 1, Integer::sum);
+      }
+    }
+    for (final long p : mAnimal) {
+      pts.keySet().remove(p);
+    }
+    int perimeter = 0;
+    for (final Integer p : pts.values()) {
+      perimeter += p;
+    }
+    return perimeter;
+
+  }
+
+  private void fillIt(final boolean[][] marks, final int extentX, final int extentY, final int x, final int y) {
+    if (x < 0 || y < 0 || x > extentX || y > extentY || marks[x][y]) {
+      return;
+    }
+    marks[x][y] = true;
+    fillIt(marks, extentX, extentY, x + 1, y);
+    fillIt(marks, extentX, extentY, x - 1, y);
+    fillIt(marks, extentX, extentY, x, y + 1);
+    fillIt(marks, extentX, extentY, x, y - 1);
+  }
+
+  /**
+   * Test if the animal contains any holes.
+   * @return true iff the animal has a hole
+   */
+  public boolean isHoly(final Lattice lattice) {
+    final int dim = lattice.dimension();
+    if (dim != 2) {
+      // Be nice to remove this limitation
+      throw new UnsupportedOperationException();
+    }
+    final long[] min = new long[dim];
+    Arrays.fill(min, Long.MAX_VALUE);
+    final long[] max = new long[dim];
+    Arrays.fill(max, Long.MIN_VALUE);
+    for (final long p : mAnimal) {
+      for (int k = 0; k < dim; ++k) {
+        min[k] = Math.min(min[k], lattice.ordinate(p, k));
+        max[k] = Math.max(max[k], lattice.ordinate(p, k));
+      }
+    }
+    final long[] extent = new long[dim];
+    for (int k = 0; k < dim; ++k) {
+      extent[k] = max[k] - min[k];
+    }
+
+    // From here on, currently limited to 2D (in fact probably only correct for Z2)
+    final int extentX = (int) extent[0];
+    final int extentY = (int) extent[1];
+    final boolean[][] marks = new boolean[extentX + 1][extentY + 1];
+    for (final long cell : mAnimal) {
+      marks[(int) (lattice.ordinate(cell, 0) - min[0])][(int) (lattice.ordinate(cell, 1) - min[1])] = true;
+    }
+    for (int x = 0; x <= extentX; ++x) {
+      fillIt(marks, extentX, extentY, x, 0);
+      fillIt(marks, extentX, extentY, x, extentY);
+    }
+    for (int y = 1; y < extentY; ++y) {
+      fillIt(marks, extentX, extentY, 0, y);
+      fillIt(marks, extentX, extentY, extentX, y);
+    }
+    for (int x = 0; x <= extentX; ++x) {
+      final boolean[] row = marks[x];
+      for (int y = 0; y <= extentY; ++y) {
+        if (!row[y]) {
+          return true;
+        }
+      }
+    }
+    return false;
   }
 
   @Override

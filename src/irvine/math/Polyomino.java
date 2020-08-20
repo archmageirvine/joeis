@@ -1,8 +1,6 @@
 package irvine.math;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 
 import irvine.util.Point;
 
@@ -218,16 +216,6 @@ public class Polyomino extends HashSet<Point> {
     return res;
   }
 
-  private Polyomino bestNaturalOr180() {
-    final long[] natural = syndrome();
-    // Compute 180 degree syndrome without explicitly creating the polyomino
-    final long[] rotate180 = new long[mExtentY + 1];
-    for (final Point cell : this) {
-      rotate180[mExtentY - cell.right()] |= 1L << cell.left();
-    }
-    return compare(natural, rotate180) <= 0 ? this : rotate180();
-  }
-
   private long[] syndrome() {
     final long[] natural = new long[mExtentY + 1];
     for (final Point cell : this) {
@@ -260,111 +248,6 @@ public class Polyomino extends HashSet<Point> {
     } else {
       return swap;
     }
-  }
-  
-  /**
-   * Return the canonical form of this polyomino considered as a two-sided rectangular polyomino.
-   * These do NOT support rotation by 90 or 270 degrees.
-   * @return canonical form
-   */
-  public Polyomino twoSidedRectangleCanonical() {
-    final Polyomino zeroed = translate();
-    // Tie in x and y extent, need to explore further symmetries
-    final Polyomino natural = zeroed.bestNaturalOr180();
-    final Polyomino leftRight = zeroed.reflectHorizontal().bestNaturalOr180();
-    final Polyomino upDown = zeroed.reflectVertical().bestNaturalOr180();
-    final long[] nat = natural.syndrome();
-    final long[] lr = leftRight.syndrome();
-    final long[] ud = upDown.syndrome();
-    if (compare(nat, lr) <= 0) {
-      if (compare(nat, ud) <= 0) {
-        return natural;
-      } else {
-        return upDown;
-      }
-    } else if (compare(lr, ud) <= 0) {
-      return leftRight;
-    } else {
-      return upDown;
-    }
-  }
-
-  private void fillIt(final boolean[][] marks, final int extentX, final int extentY, final int x, final int y) {
-    if (x < 0 || y < 0 || x > extentX || y > extentY || marks[x][y]) {
-      return;
-    }
-    marks[x][y] = true;
-    fillIt(marks, extentX, extentY, x + 1, y);
-    fillIt(marks, extentX, extentY, x - 1, y);
-    fillIt(marks, extentX, extentY, x, y + 1);
-    fillIt(marks, extentX, extentY, x, y - 1);
-  }
-
-  /**
-   * Test if the polyomino contains any holes.
-   * @return true iff the polyomino has a hole
-   */
-  public boolean isHoly() {
-    // This works even if the polyomino is not translated to zero
-    int minX = Integer.MAX_VALUE;
-    int minY = Integer.MAX_VALUE;
-    int maxX = Integer.MIN_VALUE;
-    int maxY = Integer.MIN_VALUE;
-    for (final Point cell : this) {
-      minX = Math.min(minX, cell.left());
-      maxX = Math.max(maxX, cell.left());
-      minY = Math.min(minY, cell.right());
-      maxY = Math.max(maxY, cell.right());
-    }
-    final int extentX = maxX - minX;
-    final int extentY = maxY - minY;
-    final boolean[][] marks = new boolean[extentX + 1][extentY + 1];
-    for (final Point cell : this) {
-      marks[cell.left() - minX][cell.right() - minY] = true;
-    }
-    for (int x = 0; x <= extentX; ++x) {
-      fillIt(marks, extentX, extentY, x, 0);
-      fillIt(marks, extentX, extentY, x, extentY);
-    }
-    for (int y = 1; y < extentY; ++y) {
-      fillIt(marks, extentX, extentY, 0, y);
-      fillIt(marks, extentX, extentY, extentX, y);
-    }
-    for (int x = 0; x <= extentX; ++x) {
-      final boolean[] row = marks[x];
-      for (int y = 0; y <= extentY; ++y) {
-        if (!row[y]) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
-  private void bumpCount(final Map<Point, Integer> pts, final Point p) {
-    pts.merge(p, 1, (x, y) -> x + y);
-  }
-
-  /**
-   * Compute the perimeter of the polyomino.
-   * @return perimeter
-   */
-  public int perimeter() {
-    // Compute perimeter by expanding shape outwards in all possible ways,
-    // then removing the original shape
-    final HashMap<Point, Integer> pts = new HashMap<>();
-    for (final Point p : this) {
-      bumpCount(pts, new Point(p.left() + 1, p.right()));
-      bumpCount(pts, new Point(p.left() - 1, p.right()));
-      bumpCount(pts, new Point(p.left(), p.right() + 1));
-      bumpCount(pts, new Point(p.left(), p.right() - 1));
-    }
-    pts.keySet().removeAll(this);
-    int perimeter = 0;
-    for (final Integer p : pts.values()) {
-      perimeter += p;
-    }
-    return perimeter;
   }
   
   @Override

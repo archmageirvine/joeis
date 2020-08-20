@@ -163,4 +163,74 @@ public final class Canons {
       || a.equals(reflect45(a))
       || a.equals(reflect45(rotate180(a, extentX, extentY)));
   };
+
+  /** Check for a two-sided rectangle. */
+  public static final CanonChecker Z2_TWO_SIDED_RECTABLE = animal -> {
+    final Animal a = translate(animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    return a.compareTo(rotate180(a, extentX, extentY)) <= 0
+      && a.compareTo(reflectHorizontal(a, extentX)) <= 0
+      && a.compareTo(reflectVertical(a, extentY)) <= 0;
+  };
+
+  /** Check for C<sub>2</sub> symmetry. */
+  public static final CanonChecker Z2_C2 = animal -> {
+    final Animal a = translate(animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    return a.equals(r180)
+      && !a.equals(reflectHorizontal(a, extentX))
+      && !a.equals(reflectVertical(a, extentY))
+      && !a.equals(reflect45(a))
+      && !a.equals(reflect45(r180))
+      && !a.equals(rotate90(a, extentX))
+      && !a.equals(rotate270(a, extentY));
+  };
+
+  /** Check for mirror 90 degrees symmetry. */
+  public static final CanonChecker Z2_AXIALLY_SYMMETRIC = animal -> {
+    final Animal a = translate(animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    if (a.equals(reflectHorizontal(a, extentX)) ^ a.equals(reflectVertical(a, extentY))) {
+      final Animal r180 = rotate180(a, extentX, extentY);
+      return !a.equals(r180)
+        && !a.equals(reflect45(a))
+        && !a.equals(reflect45(r180))
+        && !a.equals(rotate90(a, extentX))
+        && !a.equals(rotate270(a, extentY));
+    }
+    return false;
+  };
+
+  /** Check for mirror 45 degrees symmetry. */
+  public static final CanonChecker Z2_DIAGONALLY_SYMMETRIC = animal -> {
+    final Animal a = translate(animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    return !a.equals(r180)
+      && (a.equals(reflect45(a)) || a.equals(reflect45(r180)))
+      && !a.equals(reflectHorizontal(a, extentX))
+      && !a.equals(reflectVertical(a, extentY))
+      && !a.equals(rotate90(a, extentX))
+      && !a.equals(rotate270(a, extentY));
+  };
+
+  /** Check for asymmetry. */
+  public static final CanonChecker Z2_ASYMMETRIC = animal -> {
+    final Animal a = translate(animal);
+    final long extentX = a.extent(Lattices.Z2, 0);
+    final long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    return !a.equals(r180)
+      && !a.equals(reflect45(r180))
+      && !a.equals(reflect45(a))
+      && !a.equals(reflectHorizontal(a, extentX))
+      && !a.equals(reflectVertical(a, extentY))
+      && !a.equals(rotate90(a, extentX))
+      && !a.equals(rotate270(a, extentY));
+  };
 }

@@ -717,5 +717,26 @@ public final class LongUtils {
   public static long[][] kroneckerSquare(final long[][] a) {
     return kroneckerProduct(a, a);
   }
+
+  /**
+   * Compare two arrays of longs.
+   * @param a first array
+   * @param b second array
+   * @return comparison of a and b
+   */
+  public static int compare(final long[] a, final long[] b) {
+    final int c = Integer.compare(a.length, b.length);
+    if (c != 0) {
+      return c;
+    }
+    for (int k = 0; k < a.length; ++k) {
+      final int v = Long.compare(a[k], b[k]);
+      if (v != 0) {
+        return v;
+      }
+    }
+    return 0;
+  }
 }
+
 

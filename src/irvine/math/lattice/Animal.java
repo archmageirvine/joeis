@@ -3,11 +3,13 @@ package irvine.math.lattice;
 import java.util.Arrays;
 import java.util.HashSet;
 
+import irvine.math.LongUtils;
+
 /**
  * An animal or polyomino.
  * @author Sean A. Irvine
  */
-public class Animal {
+public class Animal implements Comparable<Animal> {
 
   private final long[] mAnimal;
   private final int mHashCode;
@@ -61,6 +63,21 @@ public class Animal {
   }
 
   /**
+   * Return the maximum value of the specified coordinate of this animal with
+   * respect to the specified lattice.
+   * @param lattice underlying lattice
+   * @param dimension dimension number
+   * @return maximum value in specified dimension
+   */
+  public long extent(final Lattice lattice, final int dimension) {
+    long max = Integer.MIN_VALUE;
+    for (final long p : mAnimal) {
+      max = Math.max(max, lattice.ordinate(p, dimension));
+    }
+    return max;
+  }
+
+  /**
    * Size of this animal.
    * @return size
    */
@@ -95,6 +112,11 @@ public class Animal {
   }
 
   @Override
+  public int compareTo(final Animal o) {
+    return LongUtils.compare(mAnimal, o.mAnimal);
+  }
+
+  @Override
   public boolean equals(final Object obj) {
     return obj instanceof Animal && Arrays.equals(mAnimal, ((Animal) obj).mAnimal);
   }
@@ -102,5 +124,21 @@ public class Animal {
   @Override
   public int hashCode() {
     return mHashCode;
+  }
+
+  /**
+   * String representation of this animal.
+   * @param lattice underlying lattice
+   * @return string representation
+   */
+  public String toString(final Lattice lattice) {
+    final StringBuilder sb = new StringBuilder();
+    for (final long p : mAnimal) {
+      if (sb.length() > 0) {
+        sb.append(',');
+      }
+      sb.append(lattice.toString(p));
+    }
+    return sb.toString();
   }
 }

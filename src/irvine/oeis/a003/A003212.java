@@ -16,6 +16,9 @@ import irvine.oeis.Sequence;
  */
 public class A003212 implements Sequence {
 
+  // todo this is currently broken, might actually need complement of diamond
+  // todo for larger n appears to get twice the required value, but wrong for small n
+
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);
   private int mN = 0;

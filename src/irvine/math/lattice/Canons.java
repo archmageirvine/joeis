@@ -1,7 +1,5 @@
 package irvine.math.lattice;
 
-import java.util.Arrays;
-
 /**
  * Pre-built canonicalization functions.
  * @author Sean A. Irvine
@@ -10,70 +8,82 @@ public final class Canons {
 
   private Canons() { }
 
-  private static boolean isZero(final long... a) {
-    for (final long v : a) {
-      if (v != 0) {
-        return false;
+  public static final CanonChecker Z2_ONE_SIDED = new CanonChecker() {
+
+    // todo this can be done generic on animal? -- might not be valid for every lattice
+    public Animal translate(final Animal animal) {
+      long minX = Integer.MAX_VALUE;
+      long minY = Integer.MAX_VALUE;
+      for (final long point : animal.points()) {
+        final long x = Lattices.Z2.ordinate(point, 0);
+        final long y = Lattices.Z2.ordinate(point, 1);
+        minX = Math.min(minX, x);
+        minY = Math.min(minY, y);
       }
+      if (minX == 0 && minY == 0) {
+        return animal;
+      }
+      final long[] translate = new long[animal.size()];
+      int k = 0;
+      for (final long point : animal.points()) {
+        final long x = Lattices.Z2.ordinate(point, 0);
+        final long y = Lattices.Z2.ordinate(point, 1);
+        translate[k++] = Lattices.Z2.toPoint(x - minX, y - minY);
+      }
+      return new Animal(translate);
     }
-    return true;
-  }
 
-  /**
-   * A canonicalizer that translates animals based on an origin.
-   * @param lattice underlying lattice
-   * @return canonicalizer
-   */
-  public static Canonicalizer createTranslator(final Lattice lattice) {
-    return animal -> {
-      final int d = lattice.dimension();
-      final long[] minPerDimension = new long[d];
-      Arrays.fill(minPerDimension, Long.MAX_VALUE);
-      for (final long p : animal.points()) {
-        for (int k = 0; k < d; ++k) {
-          minPerDimension[k] = Math.min(minPerDimension[k], lattice.ordinate(p, k));
-        }
+    private Animal rotate90(final Animal animal, final long extentX) {
+      final long[] rotatedPoints = new long[animal.size()];
+      int k = 0;
+      for (final long point : animal.points()) {
+        final long x = Lattices.Z2.ordinate(point, 0);
+        final long y = Lattices.Z2.ordinate(point, 1);
+        rotatedPoints[k++] = Lattices.Z2.toPoint(y, extentX - x);
       }
-      if (isZero(minPerDimension)) {
-        return animal; // This animal was already translated appropriately
+      return new Animal(rotatedPoints);
+    }
+
+    private boolean isLt90(final Animal animal, final long extentX) {
+      return animal.compareTo(rotate90(animal, extentX)) <= 0;
+    }
+
+    private Animal rotate180(final Animal animal, final long extentX, final long extentY) {
+      final long[] rotatedPoints = new long[animal.size()];
+      int k = 0;
+      for (final long point : animal.points()) {
+        final long x = Lattices.Z2.ordinate(point, 0);
+        final long y = Lattices.Z2.ordinate(point, 1);
+        rotatedPoints[k++] = Lattices.Z2.toPoint(extentX - x, extentY - y);
       }
+      return new Animal(rotatedPoints);
+    }
 
-      // todo the following is not quite what I want
-      // long delta = lattice.toPoint(minPerDimension);
+    private boolean isLt180(final Animal animal, final long extentX, final long extentY) {
+      return animal.compareTo(rotate180(animal, extentX, extentY)) <= 0;
+    }
 
-      final int bitsPerDimension = Long.SIZE / d;  // !!! brittle, assumes lattice implementation does this
-      long delta = 0;
-      for (int k = minPerDimension.length - 1; k >= 0; --k) {
-        delta <<= bitsPerDimension;
-        delta += minPerDimension[k];
+    private Animal rotate270(final Animal animal, final long extentY) {
+      final long[] rotatedPoints = new long[animal.size()];
+      int k = 0;
+      for (final long point : animal.points()) {
+        final long x = Lattices.Z2.ordinate(point, 0);
+        final long y = Lattices.Z2.ordinate(point, 1);
+        rotatedPoints[k++] = Lattices.Z2.toPoint(extentY - y, x);
       }
+      return new Animal(rotatedPoints);
+    }
 
-//      System.out.println("Pre-trans");
-//      final StringBuilder sb = new StringBuilder();
-//      for (final long p : animal) {
-//        sb.append(lattice.toString(p));
-//      }
-//      System.out.println(sb);
-//
-//      System.out.println("Mins: " + Arrays.toString(minPerDimension));
+    private boolean isLt270(final Animal animal, final long extentY) {
+      return animal.compareTo(rotate270(animal, extentY)) <= 0;
+    }
 
-      final long[] translatedPoints = new long[animal.size()];
-      for (int k = 0; k < translatedPoints.length; ++k) {
-        translatedPoints[k] = animal.points()[k] - delta;
-      }
-      final Animal a = new Animal(translatedPoints);
-      for (final long p : animal.mForbidden) {
-        a.mForbidden.add(p - delta);
-      }
-
-//      System.out.println("Post-trans");
-//      final StringBuilder sb2 = new StringBuilder();
-//      for (final long p : a) {
-//        sb2.append(lattice.toString(p));
-//      }
-//      System.out.println(sb2);
-
-      return a;
-    };
-  }
+    @Override
+    public boolean isCanonical(final Animal a) {
+      final Animal animal = translate(a);
+      final long extentX = animal.extent(Lattices.Z2, 0);
+      final long extentY = animal.extent(Lattices.Z2, 1);
+      return isLt180(animal, extentX, extentY) && isLt90(animal, extentX) && isLt270(animal, extentY);
+    }
+  };
 }

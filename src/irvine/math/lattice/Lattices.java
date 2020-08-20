@@ -25,6 +25,8 @@ public final class Lattices {
   public static final Lattice HEXAGONAL = new HexagonalLattice();
   /** The honeycomb lattice. */
   public static final Lattice HONEYCOMB = new HoneycombLattice();
+  /** The square lattice also allowing diagonal movement. */
+  public static final Lattice Z2Q = new Z2QLattice();
 
   /** The Kagome lattice. */
   public static final Lattice KAGOME = new KagomeLattice();

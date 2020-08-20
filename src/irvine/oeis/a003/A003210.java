@@ -26,7 +26,7 @@ public class A003210 implements Sequence {
       mPerimeterCounts = new long[6 * mN + 3];
       final Hunter h = new Hunter(Lattices.BCC, true) {
         {
-          setKeeper(animal -> ++mPerimeterCounts[animal.perimeterSize(Lattices.BCC)]);
+          setKeeper((animal, forbidden) -> ++mPerimeterCounts[animal.perimeterSize(Lattices.BCC)]);
         }
       };
       h.count(mN);

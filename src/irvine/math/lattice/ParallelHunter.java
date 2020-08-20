@@ -1,6 +1,8 @@
 package irvine.math.lattice;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 
@@ -16,8 +18,18 @@ public class ParallelHunter {
     String.valueOf(Runtime.getRuntime().availableProcessors())));
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
+  private static class SeedAnimal {
+    Animal mAnimal;
+    Set<Long> mForbidden;
+
+    SeedAnimal(final Animal animal, final Set<Long> forbidden) {
+      mAnimal = animal;
+      mForbidden = forbidden;
+    }
+  }
+
   private final int mNonParallelSteps;
-  private final ArrayList<Animal> mSeeds = new ArrayList<>();
+  private final ArrayList<SeedAnimal> mSeeds = new ArrayList<>();
   private final HunterCreator mSeeder;
   private final HunterCreator mCreator;
 
@@ -93,7 +105,7 @@ public class ParallelHunter {
     // Build initial set of paths
     if (mSeeds.isEmpty()) {
       final Hunter hunter = mSeeder.create();
-      hunter.setKeeper(mSeeds::add);
+      hunter.setKeeper((animal, forbidden) -> mSeeds.add(new SeedAnimal(animal, new HashSet<>(forbidden))));
       hunter.count(mNonParallelSteps);
       if (VERBOSE) {
         StringUtils.message("Total numbers of seeds: " + mSeeds.size());
@@ -103,8 +115,8 @@ public class ParallelHunter {
     final ForkJoinPool forkJoinPool = new ForkJoinPool(THREADS);
     try {
       return forkJoinPool.submit(() -> mSeeds.parallelStream()
-        .mapToLong(animal -> mCreator.create()
-          .count(steps, animal)).sum())
+        .mapToLong(seed -> mCreator.create()
+          .count(steps, seed.mAnimal, seed.mForbidden)).sum())
         .get();
     } catch (final InterruptedException | ExecutionException e) {
       throw new RuntimeException(e);
@@ -116,8 +128,8 @@ public class ParallelHunter {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    //final Lattice l = new SquareLattice();
-    final Lattice l = Lattices.Z5;
+    final Lattice l = new SquareLattice();
+    //final Lattice l = Lattices.Z5;
     final ParallelHunter h = new ParallelHunter(4, l, true);
     for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));
@@ -126,3 +138,4 @@ public class ParallelHunter {
 
 }
 
+// todo update this to remember forbidden state for each seed animal

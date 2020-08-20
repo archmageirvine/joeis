@@ -1,6 +1,7 @@
 package irvine.math.lattice;
 
 import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Count the number of animals on a specified lattice.
@@ -10,7 +11,7 @@ public class Hunter {
 
   protected final Lattice mLattice;
   protected long mCount = 0;
-  protected Keeper mKeeper = animal -> increment(1);
+  protected Keeper mKeeper = (animal, forbidden) -> increment(1);
   private final boolean mForbidden;
 
   /**
@@ -63,29 +64,27 @@ public class Hunter {
     return false; // point was the origin
   }
 
-  private void search(final Animal animal, final int remainingSteps) {
+  private void search(final Animal animal, final int remainingSteps, final Set<Long> forbidden) {
     if (remainingSteps == 0) {
-      mKeeper.process(animal);
+      mKeeper.process(animal, forbidden);
     } else {
       final HashSet<Long> hc = new HashSet<>();
       for (final long p : animal.points()) {
         for (int k = 0; k < mLattice.neighbourCount(p); ++k) {
           final long q = mLattice.neighbour(p, k);
-          if (mForbidden) {
-            if (!isPointAllowed(q)) {
-              continue;
-            }
+          if (mForbidden && !isPointAllowed(q)) {
+            continue;
           }
-          if (!animal.contains(q) && !animal.mForbidden.contains(q) && hc.add(q)) {
+          if (!animal.contains(q) && !forbidden.contains(q) && hc.add(q)) {
             final Animal a = new Animal(animal, q);
-
             if (mForbidden) {
-              // Set forbidden points (these points should never be considered
-              // in future expansion of this animal
-              a.mForbidden.addAll(hc);
-              a.mForbidden.remove(q); // not strictly necessary but saves space
+              // Set forbidden points never to be considered in future expansion of this animal
+              forbidden.addAll(hc);
+              search(a, remainingSteps - 1, forbidden);
+              forbidden.removeAll(hc);
+            } else {
+              search(a, remainingSteps - 1, forbidden);
             }
-            search(a, remainingSteps - 1);
           }
         }
       }
@@ -97,12 +96,12 @@ public class Hunter {
    * @param steps length of walk
    * @return number of walks
    */
-  public long count(final int steps, final Animal animal) {
+  public long count(final int steps, final Animal animal, final Set<Long> forbidden) {
     mCount = 0;
     if (steps <= animal.size()) {
-      mKeeper.process(animal);
+      mKeeper.process(animal, forbidden);
     } else {
-      search(animal, steps - animal.size());
+      search(animal, steps - animal.size(), forbidden);
     }
     return mCount;
   }
@@ -113,7 +112,7 @@ public class Hunter {
    * @return number of walks
    */
   public long count(final int steps) {
-    return count(steps, new Animal(mLattice.origin()));
+    return count(steps, new Animal(mLattice.origin()), new HashSet<>());
   }
 
   /**
@@ -121,24 +120,9 @@ public class Hunter {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    //final Lattice l = new SquareLattice();
-    final Lattice l = Lattices.DIAMOND;
-    final Hunter h = new Hunter(l, true) {
-//      {
-//        setKeeper(new Keeper() {
-//          final HashSet<Animal> mUnique = new HashSet<>();
-//
-//          @Override
-//          public void process(final Animal animal) {
-//            if (mUnique.add(canonicalizer.canon(animal))) {
-//              increment(1);
-//            } else {
-//              System.out.println("Dupe");
-//            }
-//          }
-//        });
-//      }
-    };
+    final Lattice l = new SquareLattice();
+    //final Lattice l = Lattices.DIAMOND;
+    final Hunter h = new Hunter(l, true);
     for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));
     }

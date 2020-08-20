@@ -116,59 +116,51 @@ public final class Canons {
     }
     final Animal a = translate(animal);
     final Animal r45 = reflect45(a);
-    if (a.compareTo(r45) > 0) {
+    final int c0 = a.compareTo(r45);
+    if (c0 > 0) {
       return false;
-    }
-
-    // todo if r45 == rh then skip the following
-
-    long extentX = r45.extent(Lattices.Z2, 0);
-    long extentY = r45.extent(Lattices.Z2, 1);
-    if (a.compareTo(rotate90(r45, extentX)) > 0) {
-      return false;
-    }
-    if (a.compareTo(rotate180(r45, extentX, extentY)) > 0) {
-      return false;
-    }
-    if (a.compareTo(rotate270(r45, extentY)) > 0) {
-      return false;
+    } else if (c0 != 0) {
+      final long extentX = r45.extent(Lattices.Z2, 0);
+      final long extentY = r45.extent(Lattices.Z2, 1);
+      if (a.compareTo(rotate90(r45, extentX)) > 0) {
+        return false;
+      }
+      if (a.compareTo(rotate180(r45, extentX, extentY)) > 0) {
+        return false;
+      }
+      if (a.compareTo(rotate270(r45, extentY)) > 0) {
+        return false;
+      }
     }
     final Animal rh = reflectHorizontal(a, a.extent(Lattices.Z2, 0));
-    if (a.compareTo(rh) > 0) {
+    final int c1 = a.compareTo(rh);
+    if (c1 > 0) {
       return false;
-    }
-    extentX = rh.extent(Lattices.Z2, 0);
-    extentY = rh.extent(Lattices.Z2, 1);
-    if (a.compareTo(rotate90(rh, extentX)) > 0) {
-      return false;
-    }
-    if (a.compareTo(rotate180(rh, extentX, extentY)) > 0) {
-      return false;
-    }
-    if (a.compareTo(rotate270(rh, extentY)) > 0) {
-      return false;
+    } else if (c1 != 0) {
+      final long extentX = rh.extent(Lattices.Z2, 0);
+      final long extentY = rh.extent(Lattices.Z2, 1);
+      if (a.compareTo(rotate90(rh, extentX)) > 0) {
+        return false;
+      }
+      if (a.compareTo(rotate180(rh, extentX, extentY)) > 0) {
+        return false;
+      }
+      if (a.compareTo(rotate270(rh, extentY)) > 0) {
+        return false;
+      }
     }
     // todo might need reflectV check
     return true;
   };
 
-  /** Check for animals with no bilateral symmetry. */
-  public static final CanonChecker Z2_NO_BILATERAL = animal -> {
+  /** Check for animals with bilateral symmetry. */
+  public static final CanonChecker Z2_BILATERAL = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
     final long extentY = a.extent(Lattices.Z2, 1);
-    if (a.equals(reflectVertical(a, extentY))) {
-      return false;
-    }
-    if (a.equals(reflectHorizontal(a, extentX))) {
-      return false;
-    }
-    if (a.equals(reflect45(a))) {
-      return false;
-    }
-    if (a.equals(reflect45(rotate180(a, extentX, extentY)))) {
-      return false;
-    }
-    return true;
+    return a.equals(reflectVertical(a, extentY))
+      || a.equals(reflectHorizontal(a, extentX))
+      || a.equals(reflect45(a))
+      || a.equals(reflect45(rotate180(a, extentX, extentY)));
   };
 }

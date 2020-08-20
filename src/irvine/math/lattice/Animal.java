@@ -14,8 +14,6 @@ public class Animal implements Comparable<Animal> {
   private final long[] mAnimal;
   private final int mHashCode;
 
-  HashSet<Long> mForbidden = new HashSet<>();
-
   /**
    * Construct an animal with the specified points.
    * @param points points
@@ -44,7 +42,6 @@ public class Animal implements Comparable<Animal> {
     mAnimal[k + 1] = q;
     Arrays.sort(mAnimal);
     mHashCode = Arrays.hashCode(mAnimal);
-    mForbidden.addAll(animal.mForbidden);
   }
 
   /**

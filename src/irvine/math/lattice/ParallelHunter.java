@@ -135,7 +135,4 @@ public class ParallelHunter {
       System.out.println(k + " " + h.count(k));
     }
   }
-
 }
-
-// todo update this to remember forbidden state for each seed animal

@@ -1,32 +1,16 @@
 package irvine.oeis.a006;
 
-import irvine.math.lattice.Canons;
-import irvine.math.lattice.Hunter;
-import irvine.math.lattice.Keeper;
-import irvine.math.lattice.Lattices;
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
+import irvine.oeis.a000.A000988;
 
 /**
  * A006758 Number of one-sided polyominoes with n cells.
  * @author Sean A. Irvine
  */
-public class A006758 implements Sequence {
-
-  private final Hunter mHunter = new Hunter(Lattices.Z2, true) {
-    {
-      setKeeper(animal -> {
-        if (Canons.Z2_ONE_SIDED.isCanonical(animal)) {
-          increment(1);
-        }
-      });
-    }
-  };
-
-  private int mN = -1;
+public class A006758 extends A000988 {
 
   @Override
   public Z next() {
-    return Z.valueOf(mHunter.count(++mN) - 1);
+    return super.next().subtract(1);
   }
 }

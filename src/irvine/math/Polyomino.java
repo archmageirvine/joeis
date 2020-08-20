@@ -263,42 +263,6 @@ public class Polyomino extends HashSet<Point> {
   }
   
   /**
-   * Return the canonical form of this polyomino considered as a one-sided polyomino.
-   * @return canonical form
-   */
-  public Polyomino oneSidedCanonical() {
-    final Polyomino zeroed = translate();
-    final int extentX = zeroed.mExtentX;
-    final int extentY = zeroed.mExtentY;
-    if (extentX < extentY) {
-      // Rotate by 90 degrees to make x direction longer and try again
-      return zeroed.rotate90().oneSidedCanonical();
-    }
-    if (extentX > extentY) {
-      // Choose between this orientation and rotation by 180
-      return zeroed.bestNaturalOr180();
-    }
-    // Tie in x and y extent, need to explore further symmetries
-    final Polyomino natural = zeroed.bestNaturalOr180();
-    final Polyomino rotate90 = zeroed.rotate90().bestNaturalOr180();
-    final Polyomino rotate270 = zeroed.rotate270().bestNaturalOr180();
-    final long[] nat = natural.syndrome();
-    final long[] r90 = rotate90.syndrome();
-    final long[] r270 = rotate270.syndrome();
-    if (compare(nat, r90) <= 0) {
-      if (compare(nat, r270) <= 0) {
-        return natural;
-      } else {
-        return rotate270;
-      }
-    } else if (compare(r90, r270) <= 0) {
-      return rotate90;
-    } else {
-      return rotate270;
-    }
-  }
-
-  /**
    * Return the canonical form of this polyomino considered as a two-sided rectangular polyomino.
    * These do NOT support rotation by 90 or 270 degrees.
    * @return canonical form

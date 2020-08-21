@@ -195,6 +195,18 @@ public class Animal implements Comparable<Animal> {
     return false;
   }
 
+  /**
+   * Return this animal with one points removed
+   * @param pointNumber point to remove <code>0 &le; pointNumber &lt; size()</code>
+   * @return reduced animal
+   */
+  public Animal remove(final int pointNumber) {
+    final long[] pts = new long[size() - 1];
+    System.arraycopy(mAnimal, 0, pts, 0, pointNumber);
+    System.arraycopy(mAnimal, pointNumber + 1, pts, pointNumber, size() - pointNumber - 1);
+    return new Animal(pts);
+  }
+
   @Override
   public int compareTo(final Animal o) {
     return LongUtils.compare(mAnimal, o.mAnimal);

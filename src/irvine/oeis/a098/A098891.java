@@ -1,43 +1,58 @@
 package irvine.oeis.a098;
 
+import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import irvine.math.Polyomino;
+import irvine.math.lattice.Animal;
+import irvine.math.lattice.Canons;
+import irvine.math.lattice.Hunter;
+import irvine.math.lattice.Lattices;
+import irvine.math.lattice.ParallelHunter;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000105;
+import irvine.oeis.Sequence;
 import irvine.util.Point;
 
 /**
  * A098891 Define the n-omino graph to be the graph whose vertices are each of the <code>n-ominoes</code>, two of which are joined by an edge if one can be obtained from the other by cutting out one of the latter's component squares (thus obtaining an <code>(n-1)-omino</code> for most cases) and gluing it elsewhere. The sequence counts the edges in these graphs.
  * @author Sean A. Irvine
  */
-public class A098891 extends A000105 {
+public class A098891 implements Sequence {
 
-  {
-    super.next(); // skip size 0 polyominoes
-  }
+  private final ArrayList<Animal> mAnimals = new ArrayList<>();
+  private final ParallelHunter mHunter = new ParallelHunter(6,
+    () -> new Hunter(Lattices.Z2, true),
+    () -> new Hunter(Lattices.Z2, true) {
+      {
+        setKeeper((animal, forbidden) -> {
+          if (Canons.Z2_FREE.isCanonical(animal)) {
+            mAnimals.add(Canons.freeCanon(animal));
+          }
+        });
+      }
+    }
+  );
+
+  private int mN = 0;
 
   @Override
   public Z next() {
-    super.next(); // Generate all polyominoes of order n
-
+    mAnimals.clear();
+    mHunter.count(++mN); // computes mAnimals
     int polyNumber = -1; // Distinct number assigned to each original polyomino
 
     // We are going to delete one cell out of each polyomino in each possible way.
     // The following map keeps track of the resulting pseudo-polyominoes and which
     // original polyominoes reduced to it.
-    final HashMap<Polyomino, BitSet> b = new HashMap<>();
+    final HashMap<Animal, BitSet> b = new HashMap<>();
 
     // Consider each polyomino in turn
-    for (final Polyomino p : mA) {
+    for (final Animal p : mAnimals) {
       ++polyNumber;
       // Delete each cell in turn
-      for (final Point pt : p) {
-        final Polyomino reduced = new Polyomino(p);
-        reduced.remove(pt);
-        final Polyomino canonical = reduced.freeCanonical();
+      for (int k = 0; k < p.size(); ++k) {
+        final Animal canonical = Canons.freeCanon(p.remove(k));
         // At this point "canonical" need not be a proper polyomino (e.g. it might be disconnected)
         // but it will always be the same one up to the usual symmetry requirements
         final BitSet set = b.get(canonical);

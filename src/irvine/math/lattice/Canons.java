@@ -6,7 +6,8 @@ package irvine.math.lattice;
  */
 public final class Canons {
 
-  private Canons() { }
+  private Canons() {
+  }
 
   // todo this can be done generic on animal? -- might not be valid for every lattice
   // todo better home for these methods
@@ -98,7 +99,9 @@ public final class Canons {
     return new Animal(reflectedPoints);
   }
 
-  /** Check for a one-sided canonical animal on a square lattice. */
+  /**
+   * Check for a one-sided canonical animal on a square lattice.
+   */
   public static final CanonChecker Z2_ONE_SIDED = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -108,7 +111,9 @@ public final class Canons {
       && a.compareTo(rotate270(a, extentY)) <= 0;
   };
 
-  /** Check for a free canonical animal on a square lattice. */
+  /**
+   * Check for a free canonical animal on a square lattice.
+   */
   public static final CanonChecker Z2_FREE = animal -> {
     // todo this is pretty ugly needs improvements
     if (!Z2_ONE_SIDED.isCanonical(animal)) {
@@ -132,28 +137,12 @@ public final class Canons {
         return false;
       }
     }
-    final Animal rh = reflectHorizontal(a, a.extent(Lattices.Z2, 0));
-    final int c1 = a.compareTo(rh);
-    if (c1 > 0) {
-      return false;
-    } else if (c1 != 0) {
-      final long extentX = rh.extent(Lattices.Z2, 0);
-      final long extentY = rh.extent(Lattices.Z2, 1);
-      if (a.compareTo(rotate90(rh, extentX)) > 0) {
-        return false;
-      }
-      if (a.compareTo(rotate180(rh, extentX, extentY)) > 0) {
-        return false;
-      }
-      if (a.compareTo(rotate270(rh, extentY)) > 0) {
-        return false;
-      }
-    }
-    // todo might need reflectV check
     return true;
   };
 
-  /** Check for animals with bilateral symmetry. */
+  /**
+   * Check for animals with bilateral symmetry.
+   */
   public static final CanonChecker Z2_BILATERAL = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -164,7 +153,9 @@ public final class Canons {
       || a.equals(reflect45(rotate180(a, extentX, extentY)));
   };
 
-  /** Check for a two-sided rectangle. */
+  /**
+   * Check for a two-sided rectangle.
+   */
   public static final CanonChecker Z2_TWO_SIDED_RECTABLE = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -174,7 +165,9 @@ public final class Canons {
       && a.compareTo(reflectVertical(a, extentY)) <= 0;
   };
 
-  /** Check for C<sub>2</sub> symmetry. */
+  /**
+   * Check for C<sub>2</sub> symmetry.
+   */
   public static final CanonChecker Z2_C2 = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -189,7 +182,9 @@ public final class Canons {
       && !a.equals(rotate270(a, extentY));
   };
 
-  /** Check for mirror 90 degrees symmetry. */
+  /**
+   * Check for mirror 90 degrees symmetry.
+   */
   public static final CanonChecker Z2_AXIALLY_SYMMETRIC = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -205,7 +200,9 @@ public final class Canons {
     return false;
   };
 
-  /** Check for mirror 45 degrees symmetry. */
+  /**
+   * Check for mirror 45 degrees symmetry.
+   */
   public static final CanonChecker Z2_DIAGONALLY_SYMMETRIC = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -219,7 +216,9 @@ public final class Canons {
       && !a.equals(rotate270(a, extentY));
   };
 
-  /** Check for asymmetry. */
+  /**
+   * Check for asymmetry.
+   */
   public static final CanonChecker Z2_ASYMMETRIC = animal -> {
     final Animal a = translate(animal);
     final long extentX = a.extent(Lattices.Z2, 0);
@@ -233,4 +232,45 @@ public final class Canons {
       && !a.equals(rotate90(a, extentX))
       && !a.equals(rotate270(a, extentY));
   };
+
+  /**
+   * Return the canonical form of the given animal.
+   */
+  public static Animal freeCanon(final Animal animal) {
+    final Animal a = translate(animal);
+    Animal canon = a;
+    long extentX = a.extent(Lattices.Z2, 0);
+    long extentY = a.extent(Lattices.Z2, 1);
+    final Animal r180 = rotate180(a, extentX, extentY);
+    if (r180.compareTo(canon) < 0) {
+      canon = r180;
+    }
+    final Animal r90 = rotate90(a, extentX);
+    if (r90.compareTo(canon) < 0) {
+      canon = r90;
+    }
+    final Animal r270 = rotate270(a, extentY);
+    if (r270.compareTo(canon) < 0) {
+      canon = r270;
+    }
+    final Animal r45 = reflect45(a);
+    if (r45.compareTo(canon) < 0) {
+      canon = r45;
+    }
+    extentX = r45.extent(Lattices.Z2, 0);
+    extentY = r45.extent(Lattices.Z2, 1);
+    final Animal r45r90 = rotate90(r45, extentX);
+    if (r45r90.compareTo(canon) < 0) {
+      canon = r45r90;
+    }
+    final Animal r45r180 = rotate180(r45, extentX, extentY);
+    if (r45r180.compareTo(canon) < 0) {
+      canon = r45r180;
+    }
+    final Animal r45r270 = rotate270(r45, extentY);
+    if (r45r270.compareTo(canon) < 0) {
+      canon = r45r270;
+    }
+    return canon;
+  }
 }

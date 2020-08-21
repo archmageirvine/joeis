@@ -122,7 +122,15 @@ public class Hunter {
   public static void main(final String[] args) {
     final Lattice l = new SquareLattice();
     //final Lattice l = Lattices.DIAMOND;
-    final Hunter h = new Hunter(l, true);
+    final Hunter h = new Hunter(l, true) {
+      {
+        setKeeper((animal, forbidden) -> {
+          if (Canons.Z2_FREE.isCanonical(animal)) {
+            increment(1);
+          }
+        });
+      }
+    };
     for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));
     }

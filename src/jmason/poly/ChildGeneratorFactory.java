@@ -52,23 +52,4 @@ public final class ChildGeneratorFactory {
     return list;
   };
 
-  /**
-   * A generator for directed polyominos.
-   */
-  public static final ChildGenerator DIRECTED_GENERATOR = (polyomino, addOnlyToColour) -> {
-    final ArrayList<Polyomino> list = new ArrayList<>();
-    final UniquenessTester h = new UniquenessTester();
-    final UniquenessTester hc = new UniquenessTester();
-
-    for (int k = 0; k < polyomino.size(); ++k) {
-      if (addOnlyToColour != 0 && polyomino.mCs.getColour(k) != addOnlyToColour) {
-        continue;
-      }
-      polyomino.trySquare(k, 1, 0, list, h, hc);
-      polyomino.trySquare(k, -1, 0, list, h, hc);
-      polyomino.trySquare(k, 0, 1, list, h, hc);
-    }
-    return list;
-  };
-
 }

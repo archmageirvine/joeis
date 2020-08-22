@@ -34,6 +34,8 @@ public final class Lattices {
   public static final Lattice MANHATTAN = new ManhattanLattice();
   /** The half-Manhattan lattice. */
   public static final Lattice HALF_MANHATTAN = new HalfManhattanLattice();
+  /** The partially directed square lattice. */
+  public static final Lattice Z2PD = new Z2PDLattice();
   /** The L lattice. */
   public static final Lattice L = new LLattice();
 

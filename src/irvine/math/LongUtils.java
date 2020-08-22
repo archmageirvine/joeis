@@ -164,7 +164,6 @@ public final class LongUtils {
   /**
    * Return the integer square root of a positive long. If <code>n&lt;0</code> then an
    * arithmetic exception is thrown.
-   *
    * @param n number
    * @return <code>floor(sqrt(n))</code>
    * @throws ArithmeticException if <code>n&lt;0</code>.
@@ -202,7 +201,6 @@ public final class LongUtils {
   /**
    * Compute the number of bits in <code>a</code>. The
    * absolute value of <code>a</code> is considered.
-   *
    * @param a number to take logarithm of.
    * @return base 2 logarithm of <code>a</code>
    */
@@ -265,24 +263,6 @@ public final class LongUtils {
    */
   public static long lcm(final long a, final long b) {
     return (a / gcd(a, b)) * b;
-  }
-
-  /**
-   * Compute the greatest common denominator of two integers and
-   * return integers <code>u,v</code> such that
-   * <code>egcd[0] = a * egcd[1] + b * egcd[2]</code>
-   *
-   * @param a first integer
-   * @param b second integer
-   * @return extended Euclidean result
-   */
-  public static long[] egcd(final long a, final long b) {
-    if (b == 0) {
-      return new long[] {a, 1, 0};
-    }
-    final long[] g = egcd(b, a - a / b * b);
-    g[2] = g[1] - a / b * (g[1] = g[2]);
-    return g;
   }
 
   /**
@@ -398,7 +378,6 @@ public final class LongUtils {
 
   /**
    * Algorithm 5.3.5 in Cohen, A Course in Computational Algebraic Number Theory
-   *
    * @param discriminant the discriminant
    * @return the class number
    */
@@ -459,7 +438,6 @@ public final class LongUtils {
    * Read numbers from a stream into an array.  Empty lines or lines starting
    * with <code>#</code> are ignored. Behaviour on out of range numbers is
    * undefined.
-   *
    * @param resource reader source
    * @return array of numbers
    */
@@ -478,7 +456,6 @@ public final class LongUtils {
    * function is always 42.  Hence a deterministic sequence of random values
    * can be produced if this method is called in the same order in a different
    * execution.
-   *
    * @param v array to fill
    */
   public static void random(final long[] v) {
@@ -487,11 +464,8 @@ public final class LongUtils {
     }
   }
 
-
   /**
-   * Sum the contents of an arbitrary dimensioned primitive int or Integer
-   * array.
-   *
+   * Sum the contents of an arbitrary dimensioned primitive int or Integer array.
    * @param structure array
    * @return sum of the array
    */
@@ -553,10 +527,8 @@ public final class LongUtils {
     return Cheetah.factor(n).maxExponent() <= 1;
   }
 
-
   /**
    * Step to the next number with the same number of set bits.
-   *
    * @param x current value
    * @return next value
    */
@@ -620,7 +592,6 @@ public final class LongUtils {
   /**
    * Return the decimal reverse of a number. For example, reverse 24 is 42.
    * Only for nonnegative.  Might overflow without warning for large inputs.
-   *
    * @param n number to reverse
    * @return reverse
    */
@@ -658,7 +629,6 @@ public final class LongUtils {
 
   /**
    * Make the array an identity map up to entry <code>n</code>.
-   *
    * @param length length of array
    * @return the array
    */
@@ -669,7 +639,6 @@ public final class LongUtils {
   /**
    * Convert a list of integers specified as a string into an array of longs.
    * The numbers in the string can be space or comma separated.
-   *
    * @param string string containing numbers
    * @return long array
    */
@@ -753,5 +722,3 @@ public final class LongUtils {
     return 0;
   }
 }
-
-

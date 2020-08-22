@@ -530,6 +530,21 @@ public final class LongUtils {
   }
 
   /**
+   * Minimum of an array of values.
+   * @param values the possible values
+   * @return the minimum
+   */
+  public static long min(final long... values) {
+    long m = Long.MAX_VALUE;
+    for (final long v : values) {
+      if (v < m) {
+        m = v;
+      }
+    }
+    return m;
+  }
+
+  /**
    * Test if the given value is square free.
    * @param n value to test
    * @return true if the number is square free

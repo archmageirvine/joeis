@@ -88,7 +88,7 @@ public class Animal implements Comparable<Animal> {
    * Return actual points in the animal.  Callers should not modify the result.
    * @return points
    */
-  long[] points() {
+  public long[] points() {
     return mAnimal;
   }
 

@@ -13,6 +13,7 @@ import irvine.oeis.Sequence;
  */
 public class A000988 implements Sequence {
 
+  private int mN = -1;
   private final ParallelHunter mHunter = new ParallelHunter(7, () -> new Hunter(Lattices.Z2, true) {
     {
       setKeeper((animal, forbidden) -> {
@@ -22,8 +23,6 @@ public class A000988 implements Sequence {
       });
     }
   });
-
-  private int mN = -1;
 
   @Override
   public Z next() {

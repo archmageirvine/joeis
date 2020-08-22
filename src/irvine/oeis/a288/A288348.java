@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288348 Spherical growth function of the Lamplighter group <code>L_2</code> with respect to the standard generators a, t.
+ * A288348 Spherical growth function of the Lamplighter group L_2 with respect to the standard generators a, t.
  * @author Georg Fischer
  */
 public class A288348 extends GeneratingFunctionSequence {

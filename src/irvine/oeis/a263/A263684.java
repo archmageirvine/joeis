@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A263684 Numbers whose <code>base-4</code> and <code>base-5</code> representations have only <code>0</code>'s and <code>1</code>'s.
+ * A263684 Numbers whose base-4 and base-5 representations have only 0's and 1's.
  * @author Georg Fischer
  */
 public class A263684 extends FiniteSequence {

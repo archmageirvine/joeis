@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A300148 Trajectory of the "Erase or triple" protocol applied to <code>1</code> (see Comments section for how the protocol works).
+ * A300148 Trajectory of the "Erase or triple" protocol applied to 1 (see Comments section for how the protocol works).
  * @author Georg Fischer
  */
 public class A300148 extends PaddingSequence {

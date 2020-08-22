@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060941 Duchon's numbers: the number of paths of length <code>5*n</code> from the origin to the line <code>y = 2*x/3</code> with unit East and North steps that stay below the line or touch it.
+ * A060941 Duchon's numbers: the number of paths of length 5*n from the origin to the line y = 2*x/3 with unit East and North steps that stay below the line or touch it.
  * @author Georg Fischer
  */
 public class A060941 extends HolonomicRecurrence {

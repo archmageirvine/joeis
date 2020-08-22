@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A024710 Greatest prime divisor of <code>A024702(n)</code>.
+ * A024710 Greatest prime divisor of A024702(n).
  * @author Sean A. Irvine
  */
 public class A024710 extends A024702 {

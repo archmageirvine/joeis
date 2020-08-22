@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A098193 Terms in a specific cycle of length 7 of the map <code>x-&gt;A098189(x)</code>.
+ * A098193 Terms in a specific cycle of length 7 of the map x-&gt;A098189(x).
  * @author Georg Fischer
  */
 public class A098193 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007967 Second factor in happy factorization of <code>n</code>.
+ * A007967 Second factor in happy factorization of n.
  * @author Sean A. Irvine
  */
 public class A007967 implements Sequence {

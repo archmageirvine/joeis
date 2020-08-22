@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A004696 <code>a(n) = floor(Fibonacci(n)/3)</code>.
+ * A004696 a(n) = floor(Fibonacci(n)/3).
  * @author Sean A. Irvine
  */
 public class A004696 extends A000045 {

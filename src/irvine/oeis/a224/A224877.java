@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A224877 Expansion of <code>f(x^29, x^31) - x^3 * f(x^11, x^49)</code> in powers of x where <code>f()</code> is a Ramanujan theta function.
+ * A224877 Expansion of f(x^29, x^31) - x^3 * f(x^11, x^49) in powers of x where f() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A224877 extends EulerTransform {

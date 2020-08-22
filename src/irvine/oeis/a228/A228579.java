@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228579 x-values in the solution to the Pell equation <code>x^2 - 106*y^2 = -1</code>.
+ * A228579 x-values in the solution to the Pell equation x^2 - 106*y^2 = -1.
  * @author Sean A. Irvine
  */
 public class A228579 extends LinearRecurrence {

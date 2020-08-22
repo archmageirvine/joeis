@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023417 Numerator of <code>n*(n-3)*(3*n^2-6*n+2)/(3*(n-1)*(n-2))</code>.
+ * A023417 Numerator of n*(n-3)*(3*n^2-6*n+2)/(3*(n-1)*(n-2)).
  * @author Sean A. Irvine
  */
 public class A023417 implements Sequence {

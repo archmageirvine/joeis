@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000984;
 
 /**
- * A002894 <code>a(n) = binomial(2n, n)^2</code>.
+ * A002894 a(n) = binomial(2n, n)^2.
  * @author Sean A. Irvine
  */
 public class A002894 extends A000984 {

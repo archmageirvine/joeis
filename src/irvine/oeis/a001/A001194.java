@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001194 <code>a(n) = A059366(n,n-2) = A059366(n,2)</code> for <code>n &gt;= 2</code>, where the triangle <code>A059366</code> arises in the expansion of a trigonometric integral.
+ * A001194 a(n) = A059366(n,n-2) = A059366(n,2) for n &gt;= 2, where the triangle A059366 arises in the expansion of a trigonometric integral.
  * @author Sean A. Irvine
  */
 public class A001194 implements Sequence {

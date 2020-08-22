@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009944 <code>Left-right/right-left</code> numbers: <code>n =</code> pq such that <code>n=q_reversed*p_reversed</code>.
+ * A009944 Left-right/right-left numbers: n = pq such that n=q_reversed*p_reversed.
  * @author Sean A. Irvine
  */
 public class A009944 implements Sequence {

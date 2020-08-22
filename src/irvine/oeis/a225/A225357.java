@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A225357 Decimal expansion of <code>(4/7)*(43/57)^(4/3)</code>.
+ * A225357 Decimal expansion of (4/7)*(43/57)^(4/3).
  * @author Georg Fischer
  */
 public class A225357 extends DecimalExpansionSequence {

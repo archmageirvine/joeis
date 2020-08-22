@@ -5,7 +5,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294445 <code>a(n) = (2*n + 4)!*(n^2 + 11*n + 2)/(2*(n-1)!*(n+6)!)</code>.
+ * A294445 a(n) = (2*n + 4)!*(n^2 + 11*n + 2)/(2*(n-1)!*(n+6)!).
  * @author Georg Fischer
  */
 public class A294445 extends HolonomicRecurrence {

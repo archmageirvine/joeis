@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A281258 Digital root of <code>n*(n+1)*(n+2)/2</code>.
+ * A281258 Digital root of n*(n+1)*(n+2)/2.
  * @author Georg Fischer
  */
 public class A281258 extends PaddingSequence {

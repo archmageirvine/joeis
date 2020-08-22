@@ -6,7 +6,7 @@ package irvine.oeis.a295;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A295518 <code>a(n) = e^2 * Sum_{k=0..n-1} Gamma(k + 1, 2)</code>.
+ * A295518 a(n) = e^2 * Sum_{k=0..n-1} Gamma(k + 1, 2).
  * @author Georg Fischer
  */
 public class A295518 extends HolonomicRecurrence {

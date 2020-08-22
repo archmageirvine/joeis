@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284519 Number of elements of order n in the Suzuki group <code>Sz(32)</code>.
+ * A284519 Number of elements of order n in the Suzuki group Sz(32).
  * @author Sean A. Irvine
  */
 public class A284519 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a146;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A146308 <code>a(n)</code> is the smallest k such that the numerator of <code>(k-6)/(2k)</code> equals <code>n</code>.
+ * A146308 a(n) is the smallest k such that the numerator of (k-6)/(2k) equals n.
  * @author Georg Fischer
  */
 public class A146308 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A033501 <code>Almost-squares</code>: m such that <code>m/p(m) &gt;= k/p(k)</code> for all k&lt;m, where <code>p(m)</code> is the least perimeter of a rectangle with integer side lengths and area m.
+ * A033501 Almost-squares: m such that m/p(m) &gt;= k/p(k) for all k&lt;m, where p(m) is the least perimeter of a rectangle with integer side lengths and area m.
  * @author Sean A. Irvine
  */
 public class A033501 extends A000217 {

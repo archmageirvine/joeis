@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108671 <code>a(n) = (n+1)(n+2)^3*(n+3)(13n^2 + 37n + 30)/720</code>.
+ * A108671 a(n) = (n+1)(n+2)^3*(n+3)(13n^2 + 37n + 30)/720.
  * @author Georg Fischer
  */
 public class A108671 extends HolonomicRecurrence {

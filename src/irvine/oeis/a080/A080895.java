@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080895 Expansion of the exponential series <code>exp( x R(x) ) = exp((1 + x - sqrt(1 - 2 x - 3x^2))/(2(1 + x)))</code>, where <code>R(x)</code> is the ordinary generating series of the Riordan numbers <code>A005043</code>.
+ * A080895 Expansion of the exponential series exp( x R(x) ) = exp((1 + x - sqrt(1 - 2 x - 3x^2))/(2(1 + x))), where R(x) is the ordinary generating series of the Riordan numbers A005043.
  * @author Georg Fischer
  */
 public class A080895 extends HolonomicRecurrence {

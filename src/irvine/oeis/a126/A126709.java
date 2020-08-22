@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126709 The <code>Loh-Shu 3 x 3</code> magic square, variant 2.
+ * A126709 The Loh-Shu 3 x 3 magic square, variant 2.
  * @author Georg Fischer
  */
 public class A126709 extends FiniteSequence {

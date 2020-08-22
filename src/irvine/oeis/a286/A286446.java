@@ -4,7 +4,7 @@ package irvine.oeis.a286;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A286446 Number of non-equivalent ways to tile an <code>n X n X n</code> triangular area with four <code>2 X 2 X 2</code> triangular tiles and an appropriate number <code>(= n^2-16)</code> of <code>1 X 1 X 1</code> tiles.
+ * A286446 Number of non-equivalent ways to tile an n X n X n triangular area with four 2 X 2 X 2 triangular tiles and an appropriate number (= n^2-16) of 1 X 1 X 1 tiles.
  * @author Georg Fischer
  */
 public class A286446 extends GeneratingFunctionSequence {

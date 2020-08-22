@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027561 Number of 4-unbalanced strings of length <code>n (=2^n-A027559(n))</code>.
+ * A027561 Number of 4-unbalanced strings of length n (=2^n-A027559(n)).
  * @author Georg Fischer
  */
 public class A027561 extends GeneratingFunctionSequence {

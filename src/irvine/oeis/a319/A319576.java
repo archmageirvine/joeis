@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319576 <code>a(n) = (4/15)*n*(n - 1)*(n^3 - 9*n^2 + 26*n - 9)</code>.
+ * A319576 a(n) = (4/15)*n*(n - 1)*(n^3 - 9*n^2 + 26*n - 9).
  * @author Georg Fischer
  */
 public class A319576 extends GeneratingFunctionSequence {

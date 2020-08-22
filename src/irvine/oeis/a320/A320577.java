@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A320577 Number of isosceles triangles whose vertices are the vertices of a regular <code>n-gon</code>.
+ * A320577 Number of isosceles triangles whose vertices are the vertices of a regular n-gon.
  * @author Georg Fischer
  */
 public class A320577 extends GeneratingFunctionSequence {

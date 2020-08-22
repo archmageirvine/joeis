@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027157 Triangular array T given <code>T(n,k)=(1/2)*t(n+1,k+1), 0&lt;=k&lt;=n, n &gt;= 0</code>, t given by <code>A027144</code>.
+ * A027157 Triangular array T given T(n,k)=(1/2)*t(n+1,k+1), 0&lt;=k&lt;=n, n &gt;= 0, t given by A027144.
  * @author Sean A. Irvine
  */
 public class A027157 extends A027144 {

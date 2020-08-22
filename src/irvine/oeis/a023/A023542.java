@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000027;
 import irvine.oeis.a001.A001950;
 
 /**
- * A023542 Convolution of natural numbers with Beatty sequence for <code>tau^2 A001950</code>.
+ * A023542 Convolution of natural numbers with Beatty sequence for tau^2 A001950.
  * @author Sean A. Irvine
  */
 public class A023542 extends ConvolutionSequence {

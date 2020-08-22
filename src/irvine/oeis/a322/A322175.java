@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A322175 Determinant of the symmetric <code>n X n</code> matrix M defined by <code>M(i,j) = mu(gcd(i,j))</code> for <code>1 &lt;=</code> i,j <code>&lt;= n</code> where mu is the Moebius function.
+ * A322175 Determinant of the symmetric n X n matrix M defined by M(i,j) = mu(gcd(i,j)) for 1 &lt;= i,j &lt;= n where mu is the Moebius function.
  * @author Georg Fischer
  */
 public class A322175 extends PaddingSequence {

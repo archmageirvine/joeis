@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143451 Expansion of <code>1/(x^k*(1-x-2*x^(k+1)))</code> for <code>k=8</code>.
+ * A143451 Expansion of 1/(x^k*(1-x-2*x^(k+1))) for k=8.
  * @author Sean A. Irvine
  */
 public class A143451 extends LinearRecurrence {

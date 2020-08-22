@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050190 <code>T(n,5)</code>, array T as in <code>A050186;</code> a count of aperiodic binary words.
+ * A050190 T(n,5), array T as in A050186; a count of aperiodic binary words.
  * @author Georg Fischer
  */
 public class A050190 extends HolonomicRecurrence {

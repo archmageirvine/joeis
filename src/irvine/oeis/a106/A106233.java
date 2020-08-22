@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106233 An inverse Catalan transform of <code>A003462</code>.
+ * A106233 An inverse Catalan transform of A003462.
  * @author Sean A. Irvine
  */
 public class A106233 extends LinearRecurrence {

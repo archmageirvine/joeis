@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160866 <code>512*P_11(n), 512</code> times the Legendre polynomial of order 13 at <code>n</code>.
+ * A160866 512*P_11(n), 512 times the Legendre polynomial of order 13 at n.
  * @author Georg Fischer
  */
 public class A160866 extends GeneratingFunctionSequence {

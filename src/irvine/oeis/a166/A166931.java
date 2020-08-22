@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166931 Numbers n with property that <code>n mod</code> k is <code>k-1</code> for all k <code>= 2..9</code>.
+ * A166931 Numbers n with property that n mod k is k-1 for all k = 2..9.
  * @author Sean A. Irvine
  */
 public class A166931 extends LinearRecurrence {

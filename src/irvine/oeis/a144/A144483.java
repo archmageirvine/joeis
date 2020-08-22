@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A144483 <code>A144481(4n-3)</code>.
+ * A144483 A144481(4n-3).
  * @author Georg Fischer
  */
 public class A144483 extends PaddingSequence {

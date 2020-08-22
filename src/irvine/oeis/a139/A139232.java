@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000668;
 
 /**
- * A139232 Second differences of Mersenne primes <code>A000668</code>.
+ * A139232 Second differences of Mersenne primes A000668.
  * @author Georg Fischer
  */
 public class A139232 extends DifferenceSequence {

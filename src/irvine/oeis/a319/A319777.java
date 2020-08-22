@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319777 <code>a(n)</code> is the number of equivalence classes of triples of sets each with n or fewer elements where two triples are equivalent if the number of elements in all intersections is the same.
+ * A319777 a(n) is the number of equivalence classes of triples of sets each with n or fewer elements where two triples are equivalent if the number of elements in all intersections is the same.
  * @author Georg Fischer
  */
 public class A319777 extends GeneratingFunctionSequence {

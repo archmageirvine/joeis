@@ -4,7 +4,7 @@ import irvine.oeis.PositionOfNSequence;
 import irvine.oeis.a006.A006577;
 
 /**
- * A033491 <code>a(n)</code> is the smallest integer that takes n halving and tripling steps to reach 1 in the <code>3x+1</code> problem.
+ * A033491 a(n) is the smallest integer that takes n halving and tripling steps to reach 1 in the 3x+1 problem.
  * @author Sean A. Irvine
  */
 public class A033491 extends PositionOfNSequence {

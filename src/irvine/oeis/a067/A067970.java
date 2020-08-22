@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a014.A014076;
 
 /**
- * A067970 First differences of <code>A014076</code>, the odd nonprimes.
+ * A067970 First differences of A014076, the odd nonprimes.
  * @author Georg Fischer
  */
 public class A067970 extends DifferenceSequence {

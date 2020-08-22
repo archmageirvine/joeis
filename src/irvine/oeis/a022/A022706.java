@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A022706 Expansion of <code>Product_{m&gt;=1} (1+m*q^m)^-14</code>.
+ * A022706 Expansion of Product_{m&gt;=1} (1+m*q^m)^-14.
  * @author Sean A. Irvine
  */
 public class A022706 extends A022642 {

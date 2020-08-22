@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029690 Theta series of 6-dimensional lattice <code>P6.4 = A6,2</code>.
+ * A029690 Theta series of 6-dimensional lattice P6.4 = A6,2.
  * @author Sean A. Irvine
  */
 public class A029690 extends GramMatrixThetaSeries {

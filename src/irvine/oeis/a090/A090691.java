@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A090691 <code>5x - 1</code> sequence starting at 50.
+ * A090691 5x - 1 sequence starting at 50.
  * @author Georg Fischer
  */
 public class A090691 extends PaddingSequence {

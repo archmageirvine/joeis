@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A175564 Number of <code>n X n</code> binary matrices that contain no <code>2 X 2</code> submatrix consisting of all zeros or all ones.
+ * A175564 Number of n X n binary matrices that contain no 2 X 2 submatrix consisting of all zeros or all ones.
  * @author Georg Fischer
  */
 public class A175564 extends PaddingSequence {

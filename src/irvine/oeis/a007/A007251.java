@@ -6,7 +6,7 @@ import irvine.oeis.a106.A106248;
 import irvine.oeis.a121.A121591;
 
 /**
- * A007251 McKay-Thompson series of class <code>5A</code> for the Monster group.
+ * A007251 McKay-Thompson series of class 5A for the Monster group.
  * @author Sean A. Irvine
  */
 public class A007251 extends A106248 {

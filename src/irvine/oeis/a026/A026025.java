@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026025 <code>a(n) = (n!)^2 * (1 + Sum(k=0...n-1) 1/((k+1)(k!)^2))</code>.
+ * A026025 a(n) = (n!)^2 * (1 + Sum(k=0...n-1) 1/((k+1)(k!)^2)).
  * @author Sean A. Irvine
  */
 public class A026025 implements Sequence {

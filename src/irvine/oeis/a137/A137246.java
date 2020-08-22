@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137246 <code>a(n)</code> is the ratio of the sum of the squares of the bends (curvatures) of the n-th generation of an Apollonian packing to the sum of the squares of the bends of the initial four-circle configuration.
+ * A137246 a(n) is the ratio of the sum of the squares of the bends (curvatures) of the n-th generation of an Apollonian packing to the sum of the squares of the bends of the initial four-circle configuration.
  * @author Georg Fischer
  */
 public class A137246 extends HolonomicRecurrence {

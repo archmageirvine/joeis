@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A182054 Number of independent sets of nodes in the generalized Petersen graph <code>G(2n,2) (n&gt;=0)</code>.
+ * A182054 Number of independent sets of nodes in the generalized Petersen graph G(2n,2) (n&gt;=0).
  * @author Georg Fischer
  */
 public class A182054 extends GeneratingFunctionSequence {

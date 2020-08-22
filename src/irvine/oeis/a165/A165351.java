@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165351 Numerator of <code>3n/2</code>.
+ * A165351 Numerator of 3n/2.
  * @author Georg Fischer
  */
 public class A165351 extends GeneratingFunctionSequence {

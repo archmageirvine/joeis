@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061991 Number of ways to place 5 nonattacking queens on a <code>5 X n</code> board.
+ * A061991 Number of ways to place 5 nonattacking queens on a 5 X n board.
  * @author Georg Fischer
  */
 public class A061991 extends GeneratingFunctionSequence {

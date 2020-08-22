@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043525 Numbers n such that number of <code>9</code>'s in base 10 is 1.
+ * A043525 Numbers n such that number of 9's in base 10 is 1.
  * @author Georg Fischer
  */
 public class A043525 extends RunsBaseSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128043 <code>(n^3+n)*6^n</code>.
+ * A128043 (n^3+n)*6^n.
  * @author Georg Fischer
  */
 public class A128043 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A010780 Decimal expansion of <code>18th</code> root of 2.
+ * A010780 Decimal expansion of 18th root of 2.
  * @author Sean A. Irvine
  */
 public class A010780 extends DecimalExpansionSequence {

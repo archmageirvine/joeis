@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032682 Numbers k such that k surrounded by digit <code>'1'</code> is a prime.
+ * A032682 Numbers k such that k surrounded by digit '1' is a prime.
  * @author Sean A. Irvine
  */
 public class A032682 implements Sequence {

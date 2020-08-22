@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160842 Number of lines through at least 2 points of a <code>2 X n</code> grid of points.
+ * A160842 Number of lines through at least 2 points of a 2 X n grid of points.
  * @author Georg Fischer
  */
 public class A160842 extends GeneratingFunctionSequence {

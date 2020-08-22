@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A271750 <code>a(1) = 1; a(n+1) =</code> smallest Fibonacci number <code>&gt; a(n)</code> with leading digit equal to the final digit of <code>a(n)</code>.
+ * A271750 a(1) = 1; a(n+1) = smallest Fibonacci number &gt; a(n) with leading digit equal to the final digit of a(n).
  * @author Georg Fischer
  */
 public class A271750 extends FiniteSequence {

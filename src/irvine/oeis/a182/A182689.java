@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A182689 <code>a(n) =</code> the smallest 2-digit number with exactly n divisors, <code>a(n) = 0</code> if no such number exists.
+ * A182689 a(n) = the smallest 2-digit number with exactly n divisors, a(n) = 0 if no such number exists.
  * @author Georg Fischer
  */
 public class A182689 extends PaddingSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008964 Number of elements of order <code>&lt;= 2</code> in group of <code>n X n</code> upper triangular matrices over <code>GF(2)</code>.
+ * A008964 Number of elements of order &lt;= 2 in group of n X n upper triangular matrices over GF(2).
  * @author Sean A. Irvine
  */
 public class A008964 extends MemoryFunction2<Integer, Z> implements Sequence {

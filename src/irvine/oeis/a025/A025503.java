@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A025503 Least k such that first k terms of Kolakoski sequence <code>(A000002)</code> contain n more <code>2</code>'s than <code>1</code>'s.
+ * A025503 Least k such that first k terms of Kolakoski sequence (A000002) contain n more 2's than 1's.
  * @author Sean A. Irvine
  */
 public class A025503 extends A000002 {

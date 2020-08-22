@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065679 If n is even, <code>a(n) = n^2</code> else <code>a(n) = n</code>.
+ * A065679 If n is even, a(n) = n^2 else a(n) = n.
  * @author Sean A. Irvine
  */
 public class A065679 extends LinearRecurrence {

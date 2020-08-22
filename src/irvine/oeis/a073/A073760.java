@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073760 Integers m such that <code>A073758(m) = 4</code>.
+ * A073760 Integers m such that A073758(m) = 4.
  * @author Sean A. Irvine
  */
 public class A073760 extends LinearRecurrence {

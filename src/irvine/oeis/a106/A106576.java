@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A106576 Period 20. Sequence gives last digit of <code>A106157</code>, starting from the first positive term.
+ * A106576 Period 20. Sequence gives last digit of A106157, starting from the first positive term.
  * @author Georg Fischer
  */
 public class A106576 extends PaddingSequence {

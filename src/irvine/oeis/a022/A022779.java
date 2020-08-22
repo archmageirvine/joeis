@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a023.A023117;
 
 /**
- * A022779 Place where <code>n-th 1</code> occurs in <code>A023117</code>.
+ * A022779 Place where n-th 1 occurs in A023117.
  * @author Sean A. Irvine
  */
 public class A022779 extends A023117 {

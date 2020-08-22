@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122986 Squares <code>mod 1000</code>.
+ * A122986 Squares mod 1000.
  * @author Georg Fischer
  */
 public class A122986 extends FiniteSequence {

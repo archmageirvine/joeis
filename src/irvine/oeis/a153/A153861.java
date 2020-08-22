@@ -7,7 +7,7 @@ package irvine.oeis.a153;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A153861 Triangle read by rows, binomial transform of triangle <code>A153860</code>.
+ * A153861 Triangle read by rows, binomial transform of triangle A153860.
  * @author Georg Fischer
  */
 public class A153861 extends GeneratingFunctionTriangle {

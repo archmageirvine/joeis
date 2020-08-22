@@ -3,7 +3,7 @@ package irvine.oeis.a252;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A252360 Numbers n such that the pentagonal number <code>P(n)</code> is equal to the sum of the heptagonal numbers <code>H(m)</code> and <code>H(m+1)</code> for some m.
+ * A252360 Numbers n such that the pentagonal number P(n) is equal to the sum of the heptagonal numbers H(m) and H(m+1) for some m.
  * @author Sean A. Irvine
  */
 public class A252360 extends LinearRecurrence {

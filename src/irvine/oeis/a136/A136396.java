@@ -3,7 +3,7 @@ package irvine.oeis.a136;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A136396 <code>1+n*(n+1)*(n^2-n+12)/12</code>.
+ * A136396 1+n*(n+1)*(n^2-n+12)/12.
  * @author Sean A. Irvine
  */
 public class A136396 extends LinearRecurrence {

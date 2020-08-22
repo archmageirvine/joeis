@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a001.A001065;
 
 /**
- * A318784 Expansion of <code>Product_{k&gt;=1} 1/(1 - x^k)^(sigma_1(k)-k)</code>, where <code>sigma_1(k) =</code> sum of divisors of k <code>(A000203)</code>.
+ * A318784 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(sigma_1(k)-k), where sigma_1(k) = sum of divisors of k (A000203).
  * @author Georg Fischer
  */
 public class A318784 extends EulerTransformSequence {

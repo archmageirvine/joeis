@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002023 <code>a(n) = 6*4^n</code>.
+ * A002023 a(n) = 6*4^n.
  * @author Sean A. Irvine
  */
 public class A002023 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003506 Triangle of denominators in Leibniz's Harmonic Triangle <code>a(n,k), n &gt;= 1, 1&lt;=k&lt;=n</code>.
+ * A003506 Triangle of denominators in Leibniz's Harmonic Triangle a(n,k), n &gt;= 1, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A003506 implements Sequence {

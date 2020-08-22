@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002476;
 
 /**
- * A024892 Numbers k such that <code>3*k+1</code> is prime.
+ * A024892 Numbers k such that 3*k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A024892 extends A002476 {

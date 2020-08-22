@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090995 Number of meaningful differential operations of the n-th order on the space <code>R^10</code>.
+ * A090995 Number of meaningful differential operations of the n-th order on the space R^10.
  * @author Georg Fischer
  */
 public class A090995 extends GeneratingFunctionSequence {

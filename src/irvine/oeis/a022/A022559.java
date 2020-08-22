@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001222;
 
 /**
- * A022559 Sum of exponents in prime-power factorization of <code>n!</code>.
+ * A022559 Sum of exponents in prime-power factorization of n!.
  * @author Sean A. Irvine
  */
 public class A022559 extends PartialSumSequence {

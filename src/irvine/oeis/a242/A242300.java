@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242300 <code>a(n) = Sum_{0&lt;=i&lt;j&lt;=n}L(i)*L(j)</code>, where <code>L(k)=A000032(k)</code> is the k-th Lucas number.
+ * A242300 a(n) = Sum_{0&lt;=i&lt;j&lt;=n}L(i)*L(j), where L(k)=A000032(k) is the k-th Lucas number.
  * @author Sean A. Irvine
  */
 public class A242300 extends LinearRecurrence {

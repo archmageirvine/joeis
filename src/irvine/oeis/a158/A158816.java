@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A158816 Prime factors of <code>2^843 - 1</code>.
+ * A158816 Prime factors of 2^843 - 1.
  * @author Georg Fischer
  */
 public class A158816 extends FiniteSequence {

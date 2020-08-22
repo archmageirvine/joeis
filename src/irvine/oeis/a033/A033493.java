@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033493 Sum of the numbers in the trajectory of n for the <code>3x+1</code> problem.
+ * A033493 Sum of the numbers in the trajectory of n for the 3x+1 problem.
  * @author Sean A. Irvine
  */
 public class A033493 implements Sequence {

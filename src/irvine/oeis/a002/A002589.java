@@ -5,7 +5,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A002589 Largest primitive factor of <code>2^(2n+1) + 1</code>.
+ * A002589 Largest primitive factor of 2^(2n+1) + 1.
  *
  * @author Sean A. Irvine
  */

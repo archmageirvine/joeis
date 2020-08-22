@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000010;
 import irvine.oeis.a000.A000040;
 
 /**
- * A071168 n-th prime reduced modulo <code>phi(n)</code>.
+ * A071168 n-th prime reduced modulo phi(n).
  * @author Georg Fischer
  */
 public class A071168 extends A000040 {

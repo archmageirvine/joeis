@@ -6,7 +6,7 @@ package irvine.oeis.a254;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254316 Hankel transform of <code>a(n)</code> is <code>A006720(n+1)</code>. Hankel transform of <code>a(n+1)</code> is <code>A006720(n+3)</code>.
+ * A254316 Hankel transform of a(n) is A006720(n+1). Hankel transform of a(n+1) is A006720(n+3).
  * @author Georg Fischer
  */
 public class A254316 extends HolonomicRecurrence {

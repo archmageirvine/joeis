@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030063 Fermat's Diophantine <code>m-tuple: 1 +</code> the product of any two distinct terms is a square.
+ * A030063 Fermat's Diophantine m-tuple: 1 + the product of any two distinct terms is a square.
  * @author Sean A. Irvine
  */
 public class A030063 extends FiniteSequence {

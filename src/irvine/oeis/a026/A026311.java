@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026311 n-th nonnegative integer k satisfying <code>cos(k) &gt; cos(k+1)</code>.
+ * A026311 n-th nonnegative integer k satisfying cos(k) &gt; cos(k+1).
  * @author Sean A. Irvine
  */
 public class A026311 implements Sequence {

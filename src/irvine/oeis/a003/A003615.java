@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.util.Triple;
 
 /**
- * A003615 Symmetries in planted 4-trees on <code>n+1</code> vertices.
+ * A003615 Symmetries in planted 4-trees on n+1 vertices.
  * @author Sean A. Irvine
  */
 public class A003615 extends A003613 {

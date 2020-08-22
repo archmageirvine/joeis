@@ -7,7 +7,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A117317 Triangle related to partitions of <code>n</code>.
+ * A117317 Triangle related to partitions of n.
  * @author Georg Fischer
  */
 public class A117317 extends GeneratingFunctionTriangle {

@@ -6,7 +6,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052704 Apart from the leading term, <code>a(n) = Catalan(n-1)*4^(n-1)</code>.
+ * A052704 Apart from the leading term, a(n) = Catalan(n-1)*4^(n-1).
  * @author Georg Fischer
  */
 public class A052704 extends HolonomicRecurrence {

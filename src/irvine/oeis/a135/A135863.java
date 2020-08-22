@@ -6,7 +6,7 @@ package irvine.oeis.a135;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A135863 G.f. <code>A(x) = 1 + 4x*A(x)^(1/2) ; A(x) = 1 + 8x^2 + 4x*sqrt(1 + 4x^2)</code>.
+ * A135863 G.f. A(x) = 1 + 4x*A(x)^(1/2) ; A(x) = 1 + 8x^2 + 4x*sqrt(1 + 4x^2).
  * @author Georg Fischer
  */
 public class A135863 extends HolonomicRecurrence {

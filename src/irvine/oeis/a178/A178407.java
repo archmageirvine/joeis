@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178407 <code>a(n+1) = a(n)*1000 + 101^n</code> with <code>a(0)= 0</code>.
+ * A178407 a(n+1) = a(n)*1000 + 101^n with a(0)= 0.
  * @author Sean A. Irvine
  */
 public class A178407 extends LinearRecurrence {

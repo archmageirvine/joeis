@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017697 Numerator of sum of <code>-17th</code> powers of divisors of <code>n</code>.
+ * A017697 Numerator of sum of -17th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017697 implements Sequence {

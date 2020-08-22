@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050545 Numbers n such that <code>39*2^n-1</code> is a prime.
+ * A050545 Numbers n such that 39*2^n-1 is a prime.
  * @author Georg Fischer
  */
 public class A050545 extends PowerFactorPrimeSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026476 For <code>n&gt;3, a(n) = 7*n - 21 + 2*(-1)^n</code>.
+ * A026476 For n&gt;3, a(n) = 7*n - 21 + 2*(-1)^n.
  * @author Sean A. Irvine
  */
 public class A026476 extends LinearRecurrence {

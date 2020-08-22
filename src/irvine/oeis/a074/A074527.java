@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074527 <code>a(n) = 2^n + 3^n + 5^n</code>.
+ * A074527 a(n) = 2^n + 3^n + 5^n.
  * @author Sean A. Irvine
  */
 public class A074527 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014891 n is equal to the number of <code>2</code>'s in all numbers <code>&lt;= n</code> written in base 6.
+ * A014891 n is equal to the number of 2's in all numbers &lt;= n written in base 6.
  * @author Sean A. Irvine
  */
 public class A014891 extends FiniteSequence {

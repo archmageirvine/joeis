@@ -6,7 +6,7 @@ package irvine.oeis.a257;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A257520 Number of factorizations of <code>m^2</code> into 2 factors, where m is a product of exactly n distinct primes and each factor is a product of n primes (counted with multiplicity).
+ * A257520 Number of factorizations of m^2 into 2 factors, where m is a product of exactly n distinct primes and each factor is a product of n primes (counted with multiplicity).
  * @author Georg Fischer
  */
 public class A257520 extends HolonomicRecurrence {

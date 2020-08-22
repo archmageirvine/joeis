@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A328927 Decimal expansion of <code>(9^2 + (19^2)/22)^(1/4)</code>: an approximation for <code>Pi</code> from Srinivasa Ramanujan.
+ * A328927 Decimal expansion of (9^2 + (19^2)/22)^(1/4): an approximation for Pi from Srinivasa Ramanujan.
  * @author Georg Fischer
  */
 public class A328927 extends DecimalExpansionSequence {

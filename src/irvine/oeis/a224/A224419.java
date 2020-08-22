@@ -3,7 +3,7 @@ package irvine.oeis.a224;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A224419 Numbers n such that <code>triangular(n) + triangular(2*n)</code> is a square.
+ * A224419 Numbers n such that triangular(n) + triangular(2*n) is a square.
  * @author Sean A. Irvine
  */
 public class A224419 extends LinearRecurrence {

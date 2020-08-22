@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022303;
 
 /**
- * A025518 Least k such that first k terms of <code>A022303</code> contain n more <code>2</code>'s than <code>1</code>'s.
+ * A025518 Least k such that first k terms of A022303 contain n more 2's than 1's.
  * @author Sean A. Irvine
  */
 public class A025518 extends A022303 {

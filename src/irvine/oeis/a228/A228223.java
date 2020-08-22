@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228223 Number of second differences of arrays of length 8 of numbers in <code>0..n</code>.
+ * A228223 Number of second differences of arrays of length 8 of numbers in 0..n.
  * @author Georg Fischer
  */
 public class A228223 extends GeneratingFunctionSequence {

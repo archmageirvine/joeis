@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032509 <code>a(n) = round(tan(Pi*(1-1/n)/2))</code>.
+ * A032509 a(n) = round(tan(Pi*(1-1/n)/2)).
  * @author Sean A. Irvine
  */
 public class A032509 implements Sequence {

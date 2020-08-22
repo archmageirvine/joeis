@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033463 <code>EXPCONV</code> of squares <code>A000290</code> with themselves.
+ * A033463 EXPCONV of squares A000290 with themselves.
  * @author Sean A. Irvine
  */
 public class A033463 extends LinearRecurrence {

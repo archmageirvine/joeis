@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273628 <code>a(n) = (7*n)!/((5*n)!*n!^2)</code>.
+ * A273628 a(n) = (7*n)!/((5*n)!*n!^2).
  * @author Georg Fischer
  */
 public class A273628 extends HolonomicRecurrence {

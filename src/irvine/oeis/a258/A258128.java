@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258128 Octagonal numbers <code>(A000567)</code> that are the sum of two consecutive octagonal numbers.
+ * A258128 Octagonal numbers (A000567) that are the sum of two consecutive octagonal numbers.
  * @author Sean A. Irvine
  */
 public class A258128 extends LinearRecurrence {

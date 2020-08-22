@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152225 Number of Dyck paths of semilength n with no peaks at height <code>0 (mod 3)</code> and no valleys at height <code>2 (mod 3)</code>.
+ * A152225 Number of Dyck paths of semilength n with no peaks at height 0 (mod 3) and no valleys at height 2 (mod 3).
  * @author Georg Fischer
  */
 public class A152225 extends HolonomicRecurrence {

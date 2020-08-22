@@ -3,7 +3,7 @@ package irvine.oeis.a200;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A200048 Number of real singularities on a family of <code>degree-3n</code> algebraic surfaces.
+ * A200048 Number of real singularities on a family of degree-3n algebraic surfaces.
  * @author Sean A. Irvine
  */
 public class A200048 extends LinearRecurrence {

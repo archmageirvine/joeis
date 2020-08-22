@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254273 Decimal expansion of atomic unit of momentum in kg m <code>s^-1</code>.
+ * A254273 Decimal expansion of atomic unit of momentum in kg m s^-1.
  * @author Georg Fischer
  */
 public class A254273 extends NoncomputableSequence {

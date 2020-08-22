@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A244540 Expansion of <code>phi(q) * (phi(q) + phi(q^2)) / 2</code> in powers of q where <code>phi()</code> is a Ramanujan theta function.
+ * A244540 Expansion of phi(q) * (phi(q) + phi(q^2)) / 2 in powers of q where phi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A244540 extends EulerTransform {

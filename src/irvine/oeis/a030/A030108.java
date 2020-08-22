@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030108 Base 9 reversal of <code>n</code> (written in base <code>10)</code>.
+ * A030108 Base 9 reversal of n (written in base 10).
  * @author Sean A. Irvine
  */
 public class A030108 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250162 Number of length <code>n+1 0..3</code> arrays with the sum of adjacent differences multiplied by some arrangement of <code>+-1</code> equal to zero.
+ * A250162 Number of length n+1 0..3 arrays with the sum of adjacent differences multiplied by some arrangement of +-1 equal to zero.
  * @author Georg Fischer
  */
 public class A250162 extends GeneratingFunctionSequence {

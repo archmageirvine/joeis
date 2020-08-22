@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a255.A255270;
 
 /**
- * A032512 Sum of the integer part of 4th roots of integers <code>&lt;= n</code>.
+ * A032512 Sum of the integer part of 4th roots of integers &lt;= n.
  * @author Sean A. Irvine
  */
 public class A032512 extends PartialSumSequence {

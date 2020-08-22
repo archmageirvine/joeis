@@ -6,7 +6,7 @@ package irvine.oeis.a161;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161482 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2+(x+151)^2 = y^2</code>.
+ * A161482 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+151)^2 = y^2.
  * @author Georg Fischer
  */
 public class A161482 extends HolonomicRecurrence {

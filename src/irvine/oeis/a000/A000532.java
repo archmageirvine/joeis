@@ -5,7 +5,7 @@ import irvine.nt.misc.GreekTour;
 import irvine.oeis.Sequence;
 
 /**
- * A000532 Number of Hamiltonian paths from NW to SW corners in an <code>n X n</code> grid.
+ * A000532 Number of Hamiltonian paths from NW to SW corners in an n X n grid.
  * @author Sean A. Irvine
  */
 public class A000532 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A053304 Number of <code>7 X 7</code> binary matrices with <code>n=0..49</code> ones up to row and column permutations.
+ * A053304 Number of 7 X 7 binary matrices with n=0..49 ones up to row and column permutations.
  * @author Georg Fischer
  */
 public class A053304 extends FiniteSequence {

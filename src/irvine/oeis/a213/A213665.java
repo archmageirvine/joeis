@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213665 Number of dominating subsets of the graph <code>G(n)</code> obtained by joining a vertex with two consecutive vertices of the cycle graph <code>C_n (n &gt;=3)</code>.
+ * A213665 Number of dominating subsets of the graph G(n) obtained by joining a vertex with two consecutive vertices of the cycle graph C_n (n &gt;=3).
  * @author Sean A. Irvine
  */
 public class A213665 extends LinearRecurrence {

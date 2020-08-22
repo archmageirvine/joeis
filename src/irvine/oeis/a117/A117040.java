@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A117040 Decimal expansion of (cos <code>1)^(1/5)</code>.
+ * A117040 Decimal expansion of (cos 1)^(1/5).
  * @author Georg Fischer
  */
 public class A117040 extends DecimalExpansionSequence {

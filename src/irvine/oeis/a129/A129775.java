@@ -6,7 +6,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129775 Number of maximally clustered permutations in <code>S_n;</code> the maximally clustered permutations are those that avoid <code>3421, 4312</code> and 4321.
+ * A129775 Number of maximally clustered permutations in S_n; the maximally clustered permutations are those that avoid 3421, 4312 and 4321.
  * @author Georg Fischer
  */
 public class A129775 extends HolonomicRecurrence {

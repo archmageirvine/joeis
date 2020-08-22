@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011780 Expansion of <code>1/(1-2*x)^3/(1-x^2)^2</code>.
+ * A011780 Expansion of 1/(1-2*x)^3/(1-x^2)^2.
  * @author Sean A. Irvine
  */
 public class A011780 implements Sequence {

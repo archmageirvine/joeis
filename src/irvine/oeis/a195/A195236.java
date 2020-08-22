@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A195236 Number of lower triangles of a <code>6 X 6 0..n</code> array with each element differing from all of its diagonal, vertical, antidiagonal and horizontal neighbors by one or less.
+ * A195236 Number of lower triangles of a 6 X 6 0..n array with each element differing from all of its diagonal, vertical, antidiagonal and horizontal neighbors by one or less.
  * @author Georg Fischer
  */
 public class A195236 extends GeneratingFunctionSequence {

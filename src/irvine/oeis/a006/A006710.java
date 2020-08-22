@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006710 Expansion of <code>eta(q^10)^12/(eta(q^2)^4*eta(q^5)^8)</code> in powers of q.
+ * A006710 Expansion of eta(q^10)^12/(eta(q^2)^4*eta(q^5)^8) in powers of q.
  * @author Sean A. Irvine
  */
 public class A006710 implements Sequence {

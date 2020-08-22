@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293310 Number of magic labelings of the graph LOOP X <code>C_9</code> (see comments) having magic sum n, <code>n &gt;= 0</code>.
+ * A293310 Number of magic labelings of the graph LOOP X C_9 (see comments) having magic sum n, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A293310 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171386 The characteristic function of 2 and <code>3: 1</code> if n is prime such that either <code>n-1</code> or <code>n+1</code> is prime, else 0.
+ * A171386 The characteristic function of 2 and 3: 1 if n is prime such that either n-1 or n+1 is prime, else 0.
  * @author Georg Fischer
  */
 public class A171386 extends LinearRecurrence {

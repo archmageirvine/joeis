@@ -7,7 +7,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A005994 Alkane (or paraffin) numbers <code>l(7,n)</code>.
+ * A005994 Alkane (or paraffin) numbers l(7,n).
  * @author Georg Fischer
  */
 public class A005994 extends EulerTransform {

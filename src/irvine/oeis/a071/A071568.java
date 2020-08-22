@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071568 Smallest k&gt;n such that <code>n^3+1</code> divides <code>k*n^2+1</code>.
+ * A071568 Smallest k&gt;n such that n^3+1 divides k*n^2+1.
  * @author Georg Fischer
  */
 public class A071568 extends GeneratingFunctionSequence {

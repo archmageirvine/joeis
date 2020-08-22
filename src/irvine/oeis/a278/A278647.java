@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a009.A009003;
 
 /**
- * A278647 First differences of Hypotenuse numbers <code>A009003</code>.
+ * A278647 First differences of Hypotenuse numbers A009003.
  * @author Georg Fischer
  */
 public class A278647 extends DifferenceSequence {

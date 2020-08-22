@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032307 Shifts left 2 places under "EFK" <code>(unordered</code>, size, unlabeled) transform.
+ * A032307 Shifts left 2 places under "EFK" (unordered, size, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032307 extends MemorySequence {

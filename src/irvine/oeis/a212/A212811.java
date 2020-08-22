@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A212811 Iterate the morphism <code>1-&gt;1123, 2-&gt;223, 3-&gt;133</code> starting with 1.
+ * A212811 Iterate the morphism 1-&gt;1123, 2-&gt;223, 3-&gt;133 starting with 1.
  * @author Georg Fischer
  */
 public class A212811 extends MorphismSequence {

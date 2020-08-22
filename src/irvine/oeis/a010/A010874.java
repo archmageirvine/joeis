@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010874 <code>a(n) = n mod 5</code>.
+ * A010874 a(n) = n mod 5.
  * @author Sean A. Irvine
  */
 public class A010874 extends PeriodicSequence {

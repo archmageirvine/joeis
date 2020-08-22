@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 
 /**
- * A032158 "CGK" <code>(necklace</code>, element, unlabeled) transform of 1,2,3,4,...
+ * A032158 "CGK" (necklace, element, unlabeled) transform of 1,2,3,4,...
  * @author Sean A. Irvine
  */
 public class A032158 extends A032153 {

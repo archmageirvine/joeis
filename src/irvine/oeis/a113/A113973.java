@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A113973 Expansion of <code>phi(x^3)^3/phi(x)</code> where <code>phi()</code> is a Ramanujan theta function.
+ * A113973 Expansion of phi(x^3)^3/phi(x) where phi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A113973 extends EulerTransform {

@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143285 Number of binary words of length n containing at least one subword 1000001 and no subwords <code>10^{i}1</code> with <code>i&lt;5</code>.
+ * A143285 Number of binary words of length n containing at least one subword 1000001 and no subwords 10^{i}1 with i&lt;5.
  * @author Sean A. Irvine
  */
 public class A143285 extends LinearRecurrence {

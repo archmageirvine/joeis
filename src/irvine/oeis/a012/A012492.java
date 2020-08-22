@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012492 <code>sech(cos(x)*arcsin(x))=1-1/2!*x^2+13/4!*x^4-325/6!*x^6+14873/8!*x^8..</code>.
+ * A012492 sech(cos(x)*arcsin(x))=1-1/2!*x^2+13/4!*x^4-325/6!*x^6+14873/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012492 implements Sequence {

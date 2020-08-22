@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A096231 Number of n-th generation triangles in the tiling of the hyperbolic plane by triangles with angles <code>{pi/2, pi/3, 0}</code>.
+ * A096231 Number of n-th generation triangles in the tiling of the hyperbolic plane by triangles with angles {pi/2, pi/3, 0}.
  * @author Georg Fischer
  */
 public class A096231 extends GeneratingFunctionSequence {

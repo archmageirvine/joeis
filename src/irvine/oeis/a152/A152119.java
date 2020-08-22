@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152119 <code>a(n) = prod(k=1..(n-1)/2, 5 + 4*cos(k*Pi/n)^2 )</code>.
+ * A152119 a(n) = prod(k=1..(n-1)/2, 5 + 4*cos(k*Pi/n)^2 ).
  * @author Georg Fischer
  */
 public class A152119 extends HolonomicRecurrence {

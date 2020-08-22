@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316459 Expansion of <code>30*x*(1 + x) / (1 - x)^4</code>.
+ * A316459 Expansion of 30*x*(1 + x) / (1 - x)^4.
  * @author Georg Fischer
  */
 public class A316459 extends GeneratingFunctionSequence {

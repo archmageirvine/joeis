@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228294 <code>a(n) = Sum_{k=1..10} n^k</code>.
+ * A228294 a(n) = Sum_{k=1..10} n^k.
  * @author Georg Fischer
  */
 public class A228294 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217123 Number of possible ordered pairs <code>(x, y)</code> where x is the number of beads adjacent to at least one black bead and y the number of beads adjacent to at least one white bead in a binary necklace of length <code>n</code>.
+ * A217123 Number of possible ordered pairs (x, y) where x is the number of beads adjacent to at least one black bead and y the number of beads adjacent to at least one white bead in a binary necklace of length n.
  * @author Georg Fischer
  */
 public class A217123 extends HolonomicRecurrence {

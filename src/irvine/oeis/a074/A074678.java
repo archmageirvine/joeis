@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074678 <code>a(n) = Sum_{j=0..floor(n/2)} (-1)^(j+floor(n/2))*S(2j+q)</code>, where <code>S(n)</code> are generalized tribonacci numbers <code>(A001644)</code> and q <code>= (1-(-1)^n)/2</code>.
+ * A074678 a(n) = Sum_{j=0..floor(n/2)} (-1)^(j+floor(n/2))*S(2j+q), where S(n) are generalized tribonacci numbers (A001644) and q = (1-(-1)^n)/2.
  * @author Georg Fischer
  */
 public class A074678 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133854 <code>a(n)*a(n-13) = a(n-1)*a(n-12)+a(n-6)+a(n-7)</code> with initial terms <code>a(1)=...=a(13)=1</code>.
+ * A133854 a(n)*a(n-13) = a(n-1)*a(n-12)+a(n-6)+a(n-7) with initial terms a(1)=...=a(13)=1.
  * @author Sean A. Irvine
  */
 public class A133854 extends LinearRecurrence {

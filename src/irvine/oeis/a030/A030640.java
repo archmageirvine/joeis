@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030640 Discriminant of lattice <code>A_n</code> of determinant <code>n+1</code>.
+ * A030640 Discriminant of lattice A_n of determinant n+1.
  * @author Sean A. Irvine
  */
 public class A030640 extends LinearRecurrence {

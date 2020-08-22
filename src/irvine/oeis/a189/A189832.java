@@ -6,7 +6,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189832 Expansion of <code>2/((x+3)*sqrt(-3*x^2-2*x+1)+3*x^2+2*x-1)</code>.
+ * A189832 Expansion of 2/((x+3)*sqrt(-3*x^2-2*x+1)+3*x^2+2*x-1).
  * @author Georg Fischer
  */
 public class A189832 extends HolonomicRecurrence {

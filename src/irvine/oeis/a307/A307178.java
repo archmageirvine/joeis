@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A307178 Decimal expansion of <code>coth(1/2)</code>.
+ * A307178 Decimal expansion of coth(1/2).
  * @author Georg Fischer
  */
 public class A307178 extends DecimalExpansionSequence {

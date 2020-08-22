@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A185590 Iterate the map in <code>A006369</code> starting at 44.
+ * A185590 Iterate the map in A006369 starting at 44.
  * @author Georg Fischer
  */
 public class A185590 extends PaddingSequence {

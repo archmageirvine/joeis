@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289521 Number of vertices in a planar Apollonian graph at iteration <code>n</code>.
+ * A289521 Number of vertices in a planar Apollonian graph at iteration n.
  * @author Sean A. Irvine
  */
 public class A289521 extends LinearRecurrence {

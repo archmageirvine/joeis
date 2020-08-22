@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100169 Structured pentagonal hexacontahedral numbers (vertex structure <code>16)</code>.
+ * A100169 Structured pentagonal hexacontahedral numbers (vertex structure 16).
  * @author Georg Fischer
  */
 public class A100169 extends GeneratingFunctionSequence {

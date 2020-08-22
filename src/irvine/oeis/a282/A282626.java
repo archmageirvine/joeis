@@ -6,7 +6,7 @@ package irvine.oeis.a282;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A282626 Exponential expansion of the real root <code>y = y(x)</code> of <code>y^3 - 3*x*y - 1</code>.
+ * A282626 Exponential expansion of the real root y = y(x) of y^3 - 3*x*y - 1.
  * @author Georg Fischer
  */
 public class A282626 extends HolonomicRecurrence {

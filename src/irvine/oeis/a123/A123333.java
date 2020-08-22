@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123333 <code>a(n) = 3^n*(Gamma(n+1/3)/Gamma(1/3) + (n-1)!)</code>.
+ * A123333 a(n) = 3^n*(Gamma(n+1/3)/Gamma(1/3) + (n-1)!).
  * @author Georg Fischer
  */
 public class A123333 extends HolonomicRecurrence {

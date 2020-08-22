@@ -5,7 +5,7 @@ package irvine.oeis.a142;
 import irvine.math.z.Z;
 
 /**
- * A142883 <code>a(n) = A142590(n)/3</code>.
+ * A142883 a(n) = A142590(n)/3.
  * @author Georg Fischer
  */
 public class A142883 extends A142590 {

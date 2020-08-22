@@ -4,7 +4,7 @@ package irvine.oeis.a026;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A026395 <code>a(n) = 5*a(n-2)</code>, starting 1,2,4.
+ * A026395 a(n) = 5*a(n-2), starting 1,2,4.
  * @author Georg Fischer
  */
 public class A026395 extends GeneratingFunctionSequence {

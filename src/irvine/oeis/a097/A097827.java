@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097827 Partial sums of Chebyshev sequence <code>S(n,12)= U(n,6)=A004191(n)</code>.
+ * A097827 Partial sums of Chebyshev sequence S(n,12)= U(n,6)=A004191(n).
  * @author Georg Fischer
  */
 public class A097827 extends HolonomicRecurrence {

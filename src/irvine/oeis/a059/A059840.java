@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059840 <code>a(n) = F(n)*F(n-1)</code> if n odd otherwise <code>F(n)*F(n-1)-1</code>, where F = Fibonacci numbers <code>A000045</code>.
+ * A059840 a(n) = F(n)*F(n-1) if n odd otherwise F(n)*F(n-1)-1, where F = Fibonacci numbers A000045.
  * @author Georg Fischer
  */
 public class A059840 extends GeneratingFunctionSequence {

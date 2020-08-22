@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090019 <code>(3*10^n+2*0^n)/5</code>.
+ * A090019 (3*10^n+2*0^n)/5.
  * @author Georg Fischer
  */
 public class A090019 extends GeneratingFunctionSequence {

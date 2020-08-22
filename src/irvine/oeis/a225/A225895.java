@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225895 Number of <code>n X 3</code> binary arrays whose sum with another <code>n X 3</code> binary array containing no more than a single 1 has rows and columns in lexicographically nondecreasing order.
+ * A225895 Number of n X 3 binary arrays whose sum with another n X 3 binary array containing no more than a single 1 has rows and columns in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A225895 extends GeneratingFunctionSequence {

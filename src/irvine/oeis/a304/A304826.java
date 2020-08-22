@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304826 <code>a(n) = 32*7^n/21 - 8/3, n&gt;=1</code>.
+ * A304826 a(n) = 32*7^n/21 - 8/3, n&gt;=1.
  * @author Georg Fischer
  */
 public class A304826 extends LinearRecurrence {

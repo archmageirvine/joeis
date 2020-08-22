@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007755 Smallest number m such that the trajectory of m under iteration of Euler's totient function <code>phi(n) [A000010]</code> contains exactly n distinct numbers, including m and the fixed point.
+ * A007755 Smallest number m such that the trajectory of m under iteration of Euler's totient function phi(n) [A000010] contains exactly n distinct numbers, including m and the fixed point.
  * @author Sean A. Irvine
  */
 public class A007755 extends MemoryFunction1<TreeSet<Z>> implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008881 <code>a(n) = Product_{j=0..5} floor((n+j)/6)</code>.
+ * A008881 a(n) = Product_{j=0..5}  floor((n+j)/6).
  * @author Sean A. Irvine
  */
 public class A008881 implements Sequence {

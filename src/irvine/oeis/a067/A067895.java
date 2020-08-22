@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067895 Write <code>2^n, 2^n+1, 2^n+2</code>, ..., <code>2^(n+1)-1</code> in binary and add as if they were decimal numbers.
+ * A067895 Write 2^n, 2^n+1, 2^n+2, ..., 2^(n+1)-1 in binary and add as if they were decimal numbers.
  * @author Georg Fischer
  */
 public class A067895 extends GeneratingFunctionSequence {

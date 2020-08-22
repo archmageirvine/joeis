@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A111661 Expansion of <code>eta(q)^4 * eta(q^2) * eta(q^6)^5 / eta(q^3)^4</code> in powers of q.
+ * A111661 Expansion of eta(q)^4 * eta(q^2) * eta(q^6)^5 / eta(q^3)^4 in powers of q.
  * @author Georg Fischer
  */
 public class A111661 extends EulerTransform {

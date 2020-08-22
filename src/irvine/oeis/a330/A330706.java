@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A330706 Numbers m such that the prime factorization of <code>m!</code> contains no composite exponents.
+ * A330706 Numbers m such that the prime factorization of m! contains no composite exponents.
  * @author Georg Fischer
  */
 public class A330706 extends FiniteSequence {

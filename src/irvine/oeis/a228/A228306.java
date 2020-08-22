@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228306 The Wiener index of the Kneser graph <code>K(n,2) (n&gt;=5)</code>.
+ * A228306 The Wiener index of the Kneser graph K(n,2) (n&gt;=5).
  * @author Georg Fischer
  */
 public class A228306 extends GeneratingFunctionSequence {

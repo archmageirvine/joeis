@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167543 <code>a(n) = (n-5)*(n-6)*(n-7)*(n-16)/24</code>.
+ * A167543 a(n) = (n-5)*(n-6)*(n-7)*(n-16)/24.
  * @author Georg Fischer
  */
 public class A167543 extends GeneratingFunctionSequence {

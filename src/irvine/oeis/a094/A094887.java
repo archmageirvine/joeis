@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A094887 Decimal expansion of <code>phi*sqrt(2)</code>, where phi <code>= (1+sqrt(5))/2</code>.
+ * A094887 Decimal expansion of phi*sqrt(2), where phi = (1+sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A094887 extends DecimalExpansionSequence {

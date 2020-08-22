@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A218135 Norm of coefficients in the expansion of <code>1 / (1 - x - 2*I*x^2)</code>, where <code>I^2=-1</code>.
+ * A218135 Norm of coefficients in the expansion of 1 / (1 - x - 2*I*x^2), where I^2=-1.
  * @author Georg Fischer
  */
 public class A218135 extends GeneratingFunctionSequence {

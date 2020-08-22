@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200252 Number of <code>0..n</code> arrays <code>x(0..2)</code> of 3 elements with each no smaller than the sum of its previous elements modulo <code>(n+1)</code>.
+ * A200252 Number of 0..n arrays x(0..2) of 3 elements with each no smaller than the sum of its previous elements modulo (n+1).
  * @author Georg Fischer
  */
 public class A200252 extends GeneratingFunctionSequence {

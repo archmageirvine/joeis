@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131935 <code>a(n)</code> is the number of Khalimsky-continuous functions with four-point codomain and an n-point range.
+ * A131935 a(n) is the number of Khalimsky-continuous functions with four-point codomain and an n-point range.
  * @author Georg Fischer
  */
 public class A131935 extends GeneratingFunctionSequence {

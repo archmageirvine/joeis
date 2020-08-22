@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a010.A010809;
 
 /**
- * A022537 Nexus numbers <code>(n+1)^21 - n^21</code>.
+ * A022537 Nexus numbers (n+1)^21 - n^21.
  * @author Sean A. Irvine
  */
 public class A022537 extends DifferenceSequence {

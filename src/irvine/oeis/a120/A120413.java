@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120413 Largest even number strictly less than <code>n^2</code>.
+ * A120413 Largest even number strictly less than n^2.
  * @author Sean A. Irvine
  */
 public class A120413 extends LinearRecurrence {

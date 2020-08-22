@@ -6,7 +6,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294039 <code>a(n) = e*Gamma(2*n,1)</code>.
+ * A294039 a(n) = e*Gamma(2*n,1).
  * @author Georg Fischer
  */
 public class A294039 extends HolonomicRecurrence {

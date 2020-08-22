@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327479 <code>a(n)</code> is the minimum number of squares of unit area that must be removed from an <code>n X n</code> square to obtain a connected figure without holes and of the longest perimeter.
+ * A327479 a(n) is the minimum number of squares of unit area that must be removed from an n X n square to obtain a connected figure without holes and of the longest perimeter.
  * @author Georg Fischer
  */
 public class A327479 extends HolonomicRecurrence {

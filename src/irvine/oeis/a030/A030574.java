@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030574 <code>a(n)=least</code> k such that base 6 representation of n begins at <code>s(k)</code>, where <code>s=A030567</code>.
+ * A030574 a(n)=least k such that base 6 representation of n begins at s(k), where s=A030567.
  * @author Sean A. Irvine
  */
 public class A030574 extends A030555 {

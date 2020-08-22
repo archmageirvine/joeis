@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084085 Length of lists created by n substitutions k <code>-&gt; Range[0,Mod[k+1,4]]</code> starting with <code>{0}</code>.
+ * A084085 Length of lists created by n substitutions k -&gt; Range[0,Mod[k+1,4]] starting with {0}.
  * @author Georg Fischer
  */
 public class A084085 extends GeneratingFunctionSequence {

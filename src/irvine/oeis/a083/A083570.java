@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A083570 A de Bruijn sequence of length 9 over <code>{0, 1, 2}</code>, repeated.
+ * A083570 A de Bruijn sequence of length 9 over {0, 1, 2}, repeated.
  * @author Georg Fischer
  */
 public class A083570 extends PaddingSequence {

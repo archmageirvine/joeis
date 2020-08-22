@@ -6,7 +6,7 @@ package irvine.oeis.a231;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A231617 G.f. satisfies: <code>A(x) = (1 - 3*x*A(x)^2) * sqrt(4*A(x)^2 - 3)</code>.
+ * A231617 G.f. satisfies: A(x) = (1 - 3*x*A(x)^2) * sqrt(4*A(x)^2 - 3).
  * @author Georg Fischer
  */
 public class A231617 extends HolonomicRecurrence {

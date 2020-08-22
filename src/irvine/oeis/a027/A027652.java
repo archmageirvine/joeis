@@ -11,7 +11,7 @@ import irvine.oeis.a004.A004009;
 import irvine.oeis.a134.A134414;
 
 /**
- * A027652 Values of Zagier's function <code>J_1</code>.
+ * A027652 Values of Zagier's function J_1.
  * @author Sean A. Irvine
  */
 public class A027652 extends A134414 {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029778 Digits of <code>n^3</code> appear in <code>n</code>.
+ * A029778 Digits of n^3 appear in n.
  * @author Sean A. Irvine
  */
 public class A029778 implements Sequence {

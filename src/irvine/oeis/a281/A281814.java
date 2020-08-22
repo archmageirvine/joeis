@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A281814 Expansion of <code>f(x, x^8)</code> in powers of x where <code>f(, )</code> is Ramanujan's general theta function.
+ * A281814 Expansion of f(x, x^8) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A281814 extends EulerTransform {

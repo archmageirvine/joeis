@@ -3,7 +3,7 @@ package irvine.oeis.a018;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A018887 Waring's problem: historical upper bounds on <code>A079611</code>, as stated in a web page in 1996.
+ * A018887 Waring's problem: historical upper bounds on A079611, as stated in a web page in 1996.
  * @author Sean A. Irvine
  */
 public class A018887 extends NoncomputableSequence {

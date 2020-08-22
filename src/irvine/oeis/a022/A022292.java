@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A022292 Exactly half of first <code>a(n)</code> terms of Kolakoski sequence <code>A000002</code> are <code>1</code>'s (not known to be infinite).
+ * A022292 Exactly half of first a(n) terms of Kolakoski sequence A000002 are 1's (not known to be infinite).
  * @author Sean A. Irvine
  */
 public class A022292 extends A000002 {

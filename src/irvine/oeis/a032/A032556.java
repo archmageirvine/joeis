@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032556 Quotient of <code>'base-12'</code> division described in <code>A032555</code>.
+ * A032556 Quotient of 'base-12' division described in A032555.
  * @author Sean A. Irvine
  */
 public class A032556 implements Sequence {

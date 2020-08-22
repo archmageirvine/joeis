@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A329220 Decimal expansion of <code>2^(11/12)</code>.
+ * A329220 Decimal expansion of 2^(11/12).
  * @author Georg Fischer
  */
 public class A329220 extends DecimalExpansionSequence {

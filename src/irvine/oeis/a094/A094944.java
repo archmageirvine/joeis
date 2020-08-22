@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094944 A sequence with <code>a(n)/a(n-1)</code> converging to 7, generated from a semi-magic square.
+ * A094944 A sequence with a(n)/a(n-1) converging to 7, generated from a semi-magic square.
  * @author Sean A. Irvine
  */
 public class A094944 extends LinearRecurrence {

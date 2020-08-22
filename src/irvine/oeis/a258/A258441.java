@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258441 9-gonal numbers <code>(A001106)</code> that are the sum of two consecutive 9-gonal numbers.
+ * A258441 9-gonal numbers (A001106) that are the sum of two consecutive 9-gonal numbers.
  * @author Sean A. Irvine
  */
 public class A258441 extends LinearRecurrence {

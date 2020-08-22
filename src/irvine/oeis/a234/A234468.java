@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A234468 Decimal expansion of <code>log(27/4)/log(8)</code>.
+ * A234468 Decimal expansion of log(27/4)/log(8).
  * @author Georg Fischer
  */
 public class A234468 extends DecimalExpansionSequence {

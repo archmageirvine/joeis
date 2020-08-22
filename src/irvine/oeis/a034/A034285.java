@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034285 Decimal part of <code>a(n)^(1/10)</code> starts with a 'nine digits' anagram.
+ * A034285 Decimal part of a(n)^(1/10) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
 public class A034285 implements Sequence {

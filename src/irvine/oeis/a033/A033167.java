@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a013.A013631;
 
 /**
- * A033167 Positions of the incrementally largest terms in the continued fraction for <code>zeta(3)</code> (indexing <code>a(0)</code> as <code>a(1))</code>.
+ * A033167 Positions of the incrementally largest terms in the continued fraction for zeta(3) (indexing a(0) as a(1)).
  * @author Sean A. Irvine
  */
 public class A033167 extends RecordPositionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a046;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A046224 Distinct numbers seen when writing first numerator and then denominator of central elements of <code>1/2-Pascal</code> triangle.
+ * A046224 Distinct numbers seen when writing first numerator and then denominator of central elements of 1/2-Pascal triangle.
  * @author Georg Fischer
  */
 public class A046224 extends HolonomicRecurrence {

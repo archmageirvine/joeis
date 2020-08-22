@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107255 <code>a(n) = n^5 - 31*n + 31</code>, with <code>n*a(n) + n*( n - 1 )*31 = n^6</code>.
+ * A107255 a(n) = n^5 - 31*n + 31, with n*a(n) + n*( n - 1 )*31 = n^6.
  * @author Georg Fischer
  */
 public class A107255 extends HolonomicRecurrence {

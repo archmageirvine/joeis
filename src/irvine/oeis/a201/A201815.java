@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201815 Number of arrays of 7 integers in <code>-n..n</code> with sum zero and equal numbers of elements greater than zero and less than zero.
+ * A201815 Number of arrays of 7 integers in -n..n with sum zero and equal numbers of elements greater than zero and less than zero.
  * @author Georg Fischer
  */
 public class A201815 extends GeneratingFunctionSequence {

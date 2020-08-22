@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A072969 Least k <code>&gt; 0</code> such that the last digit of <code>k^n</code> is the same as the last digit of <code>n^k</code>.
+ * A072969 Least k &gt; 0 such that the last digit of k^n is the same as the last digit of n^k.
  * @author Georg Fischer
  */
 public class A072969 extends PaddingSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100238 G.f. <code>A(x)</code> satisfies: <code>2^n + 1 = Sum_{k=0..n} [x^k] A(x)^n</code> for <code>n&gt;=1</code>.
+ * A100238 G.f. A(x) satisfies: 2^n + 1 = Sum_{k=0..n} [x^k] A(x)^n for n&gt;=1.
  * @author Georg Fischer
  */
 public class A100238 extends HolonomicRecurrence {

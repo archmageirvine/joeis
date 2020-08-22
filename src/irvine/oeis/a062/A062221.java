@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062221 Numbers k such that the smoothly undulating palindromic number <code>(72*10^k - 27)/99</code> is a prime.
+ * A062221 Numbers k such that the smoothly undulating palindromic number (72*10^k - 27)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062221 extends PowerFactorPrimeSequence {

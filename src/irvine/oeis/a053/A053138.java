@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053138 Binomial coefficients <code>C(2*n+9,9)</code>.
+ * A053138 Binomial coefficients C(2*n+9,9).
  * @author Sean A. Irvine
  */
 public class A053138 extends LinearRecurrence {

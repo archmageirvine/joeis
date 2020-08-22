@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249860 <code>a(n) =</code> Least common multiple of <code>n + 3</code> and <code>n - 3</code>.
+ * A249860 a(n) = Least common multiple of n + 3 and n - 3.
  * @author Georg Fischer
  */
 public class A249860 extends GeneratingFunctionSequence {

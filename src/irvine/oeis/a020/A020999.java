@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014097;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A020999 Conjectured number of irreducible multiple zeta values of depth n and weight <code>3n</code> (confirmed up to <code>n=7)</code>.
+ * A020999 Conjectured number of irreducible multiple zeta values of depth n and weight 3n (confirmed up to n=7).
  * @author Sean A. Irvine
  */
 public class A020999 extends A014097 {

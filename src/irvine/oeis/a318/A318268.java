@@ -5,7 +5,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318268 <code>a(n)</code> is the number of configurations of n indistinguishable pairs placed on the vertices of the ladder graph <code>P_2 X P_n</code> such that all but 3 such pairs are joined by an edge.
+ * A318268 a(n) is the number of configurations of n indistinguishable pairs placed on the vertices of the ladder graph P_2 X P_n such that all but 3 such pairs are joined by an edge.
  * @author Georg Fischer
  */
 public class A318268 extends HolonomicRecurrence {

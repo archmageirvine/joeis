@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A197689 Decimal expansion of <code>3*pi/(6+pi)</code>.
+ * A197689 Decimal expansion of 3*pi/(6+pi).
  * @author Georg Fischer
  */
 public class A197689 extends DecimalExpansionSequence {

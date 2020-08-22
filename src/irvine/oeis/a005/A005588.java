@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002658;
 
 /**
- * A005588 Number of free binary trees admitting height <code>n</code>.
+ * A005588 Number of free binary trees admitting height n.
  * @author Sean A. Irvine
  */
 public class A005588 extends A002658 {

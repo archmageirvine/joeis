@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113968 Series expansion of Farey rational polynomial based on <code>A112627</code>.
+ * A113968 Series expansion of Farey rational polynomial based on A112627.
  * @author Georg Fischer
  */
 public class A113968 extends HolonomicRecurrence {

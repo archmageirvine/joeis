@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259992 Irregular triangle read by rows: <code>T(n,k) =</code> number of Havender tableaux of height 2 with n columns and k empty squares <code>(n &gt;= 0, 0 &lt;= k &lt;= 2*n)</code>.
+ * A259992 Irregular triangle read by rows: T(n,k) = number of Havender tableaux of height 2 with n columns and k empty squares (n &gt;= 0, 0 &lt;= k &lt;= 2*n).
  * @author Sean A. Irvine
  */
 public class A259992 implements Sequence {

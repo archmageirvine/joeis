@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239450 Numbers m such that <code>T(m)^2 + T(m^2)</code> is a perfect square, where T <code>= A000217</code>.
+ * A239450 Numbers m such that T(m)^2 + T(m^2) is a perfect square, where T = A000217.
  * @author Georg Fischer
  */
 public class A239450 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112654 Numbers n such that <code>n^3</code> is congruent to <code>n (mod 11)</code>.
+ * A112654 Numbers n such that n^3 is congruent to n (mod 11).
  * @author Georg Fischer
  */
 public class A112654 extends GeneratingFunctionSequence {

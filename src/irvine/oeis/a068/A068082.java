@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068082 <code>a(1) = 1, a(n) =</code> smallest triangular number of the form <code>k*a(n-1) + 1</code> for some positive integer k.
+ * A068082 a(1) = 1, a(n) = smallest triangular number of the form k*a(n-1) + 1 for some positive integer k.
  * @author Georg Fischer
  */
 public class A068082 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092270 If <code>n mod 2 == 0</code> then <code>3^n</code> else <code>2^n</code>.
+ * A092270 If n mod 2 == 0 then 3^n else 2^n.
  * @author Georg Fischer
  */
 public class A092270 extends GeneratingFunctionSequence {

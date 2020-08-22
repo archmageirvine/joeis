@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A135008 Decimal expansion of <code>8/e</code>.
+ * A135008 Decimal expansion of 8/e.
  * @author Georg Fischer
  */
 public class A135008 extends DecimalExpansionSequence {

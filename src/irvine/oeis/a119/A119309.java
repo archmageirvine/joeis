@@ -6,7 +6,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119309 <code>a(n) = binomial(2*n,n) * 6^n</code>.
+ * A119309 a(n) = binomial(2*n,n) * 6^n.
  * @author Georg Fischer
  */
 public class A119309 extends HolonomicRecurrence {

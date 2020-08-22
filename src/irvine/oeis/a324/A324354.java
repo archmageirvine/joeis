@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324354 Total number of occurrences of 4 in the (signed) displacement sets of all permutations of <code>[n+4]</code> divided by <code>4!</code>.
+ * A324354 Total number of occurrences of 4 in the (signed) displacement sets of all permutations of [n+4] divided by 4!.
  * @author Georg Fischer
  */
 public class A324354 extends HolonomicRecurrence {

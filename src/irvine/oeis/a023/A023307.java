@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023307 Numbers n such that n remains prime through 4 iterations of function <code>f(x) = 3x + 2</code>.
+ * A023307 Numbers n such that n remains prime through 4 iterations of function f(x) = 3x + 2.
  * @author Sean A. Irvine
  */
 public class A023307 extends A023277 {

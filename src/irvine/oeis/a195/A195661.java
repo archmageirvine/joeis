@@ -5,7 +5,7 @@ package irvine.oeis.a195;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A195661 Number of ways to place <code>12n</code> nonattacking kings on a vertical cylinder <code>24 X 2n</code>.
+ * A195661 Number of ways to place 12n nonattacking kings on a vertical cylinder 24 X 2n.
  * @author Georg Fischer
  */
 public class A195661 extends HolonomicRecurrence {

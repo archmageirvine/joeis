@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029936 Number of cusps of <code>Gamma_1(n)\P_1(Q)</code>.
+ * A029936 Number of cusps of Gamma_1(n)\P_1(Q).
  * @author Sean A. Irvine
  */
 public class A029936 extends PrependSequence {

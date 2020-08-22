@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183629 Number of <code>(n+1) X 7 0..2</code> arrays with every <code>2 X 2</code> subblock summing to 4.
+ * A183629 Number of (n+1) X 7 0..2 arrays with every 2 X 2 subblock summing to 4.
  * @author Georg Fischer
  */
 public class A183629 extends GeneratingFunctionSequence {

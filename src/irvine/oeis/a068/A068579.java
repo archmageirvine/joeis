@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A068579 Let <code>phi_m(x) = phi(phi(...(phi(x))...))</code> m times; sequence gives values of k such that <code>phi_3(k) = tau(k)</code>.
+ * A068579 Let phi_m(x) = phi(phi(...(phi(x))...)) m times; sequence gives values of k such that phi_3(k) = tau(k).
  * @author Georg Fischer
  */
 public class A068579 extends FiniteSequence {

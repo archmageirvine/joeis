@@ -5,7 +5,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174810 A transform of the little Schroeder numbers <code>A001003</code>.
+ * A174810 A transform of the little Schroeder numbers A001003.
  * @author Georg Fischer
  */
 public class A174810 extends HolonomicRecurrence {

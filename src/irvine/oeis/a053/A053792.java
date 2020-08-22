@@ -5,7 +5,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053792 Number of walks of length n on the square lattice that start from <code>(0,0)</code> and do not touch the <code>half-line {x=y, x &lt;= 0}</code> once they have left their starting point.
+ * A053792 Number of walks of length n on the square lattice that start from (0,0) and do not touch the half-line {x=y, x &lt;= 0} once they have left their starting point.
  * @author Georg Fischer
  */
 public class A053792 extends HolonomicRecurrence {

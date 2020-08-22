@@ -6,7 +6,7 @@ package irvine.oeis.a284;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A284778 Number of self-avoiding planar walks of length <code>n+1</code> starting at <code>(0,0)</code>, ending at <code>(n,0)</code>, remaining in the first quadrant and using steps <code>(0,1), (1,0), (1,1), (-1,1)</code>, and <code>(1,-1)</code> with the restriction that <code>(0,1)</code> is never used below the diagonal and <code>(1,0)</code> is never used above the diagonal.
+ * A284778 Number of self-avoiding planar walks of length n+1 starting at (0,0), ending at (n,0), remaining in the first quadrant and using steps (0,1), (1,0), (1,1), (-1,1), and (1,-1) with the restriction that (0,1) is never used below the diagonal and (1,0) is never used above the diagonal.
  * @author Georg Fischer
  */
 public class A284778 extends HolonomicRecurrence {

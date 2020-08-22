@@ -4,7 +4,7 @@ package irvine.oeis.a039;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A039301 Number of distinct quadratic residues <code>mod 4^n</code>.
+ * A039301 Number of distinct quadratic residues mod 4^n.
  * @author Georg Fischer
  */
 public class A039301 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023827 Sum of exponents in prime-power factorization of <code>C(4n,n-1)</code>.
+ * A023827 Sum of exponents in prime-power factorization of C(4n,n-1).
  * @author Sean A. Irvine
  */
 public class A023827 extends A023847 {

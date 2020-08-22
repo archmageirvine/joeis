@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328002 <code>a(n) = sqrt(2/Pi)*Sum_{k=0..n} s(k)*s(n-k-1/2)</code> where <code>s(n) = 2^n*(Gamma(n/2 + 1/2)/Gamma(n/2 + 1))^cos(n*Pi)</code>.
+ * A328002 a(n) = sqrt(2/Pi)*Sum_{k=0..n} s(k)*s(n-k-1/2) where s(n) = 2^n*(Gamma(n/2 + 1/2)/Gamma(n/2 + 1))^cos(n*Pi).
  * @author Georg Fischer
  */
 public class A328002 extends HolonomicRecurrence {

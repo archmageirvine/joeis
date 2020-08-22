@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000170;
 
 /**
- * A032522 Number of point symmetric solutions to non-attacking queens problem on <code>n X n</code> board.
+ * A032522 Number of point symmetric solutions to non-attacking queens problem on n X n board.
  * @author Sean A. Irvine
  */
 public class A032522 extends A000170 {

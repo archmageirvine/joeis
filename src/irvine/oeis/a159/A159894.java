@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159894 Decimal expansion of <code>(731+54*sqrt(2))/727</code>.
+ * A159894 Decimal expansion of (731+54*sqrt(2))/727.
  * @author Georg Fischer
  */
 public class A159894 extends DecimalExpansionSequence {

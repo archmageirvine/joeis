@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A101263 Decimal expansion of <code>sqrt(2 - sqrt(3))</code>, edge length of a regular dodecagon with circumradius 1.
+ * A101263 Decimal expansion of sqrt(2 - sqrt(3)), edge length of a regular dodecagon with circumradius 1.
  * @author Georg Fischer
  */
 public class A101263 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A261445 Expansion of <code>f(x, x^3) * f(x, x^2)^3</code> in powers of x where <code>f(, )</code> is Ramanujan's general theta function.
+ * A261445 Expansion of f(x, x^3) * f(x, x^2)^3 in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A261445 extends EulerTransform {

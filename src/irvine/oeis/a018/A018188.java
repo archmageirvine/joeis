@@ -11,7 +11,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A018188 The <code>$620</code> prime list.
+ * A018188 The $620 prime list.
  * @author Sean A. Irvine
  */
 public class A018188 extends FiniteSequence {

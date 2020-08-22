@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A006862 Euclid numbers: <code>1 +</code> product of the first n primes.
+ * A006862 Euclid numbers: 1 + product of the first n primes.
  * @author Sean A. Irvine
  */
 public class A006862 extends A002110 {

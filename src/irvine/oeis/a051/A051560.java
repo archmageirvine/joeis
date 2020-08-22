@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051560 Second unsigned column of triangle <code>A051379</code>.
+ * A051560 Second unsigned column of triangle A051379.
  * @author Georg Fischer
  */
 public class A051560 extends HolonomicRecurrence {

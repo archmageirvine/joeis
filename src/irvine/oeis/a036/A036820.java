@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A036820 Number of partitions satisfying <code>(cn(2,5) = cn(3,5) = 0)</code>.
+ * A036820 Number of partitions satisfying (cn(2,5) = cn(3,5) = 0).
  * @author Georg Fischer
  */
 public class A036820 extends EulerTransform {

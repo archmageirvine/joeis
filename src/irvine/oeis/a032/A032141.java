@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032141 "CFK" <code>(necklace</code>, size, unlabeled) transform of 1,2,3,4...
+ * A032141 "CFK" (necklace, size, unlabeled) transform of 1,2,3,4...
  * @author Sean A. Irvine
  */
 public class A032141 implements Sequence {

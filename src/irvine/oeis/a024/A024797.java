@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000408;
 
 /**
- * A024797 Positions of primes in <code>A000408</code>.
+ * A024797 Positions of primes in A000408.
  * @author Sean A. Irvine
  */
 public class A024797 extends A000408 {

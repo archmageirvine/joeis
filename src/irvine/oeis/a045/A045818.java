@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A045818 Number of times the digits are repeated in <code>A045817</code>.
+ * A045818 Number of times the digits are repeated in A045817.
  * @author Sean A. Irvine
  */
 public class A045818 implements Sequence {

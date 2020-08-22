@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187301 Number of 6-step one space leftwards or up, two space rightwards or down asymmetric rook's tours on an <code>n X n</code> board summed over all starting positions.
+ * A187301 Number of 6-step one space leftwards or up, two space rightwards or down asymmetric rook's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187301 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A057695 Number of 5-card poker hands with deuces wild of <code>5-of-a-kind</code>, royal flush, straight flush, <code>4-of-a-kind</code>, full house, flush, straight, <code>3-of-a-kind</code>, two pairs, one pair, no pair.
+ * A057695 Number of 5-card poker hands with deuces wild of 5-of-a-kind, royal flush, straight flush, 4-of-a-kind, full house, flush, straight, 3-of-a-kind, two pairs, one pair, no pair.
  * @author Georg Fischer
  */
 public class A057695 extends FiniteSequence {

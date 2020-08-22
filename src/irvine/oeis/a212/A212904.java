@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212904 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and <code>|w-x|+|x-y+|y-z|=n</code>.
+ * A212904 Number of (w,x,y,z) with all terms in {0,...,n} and |w-x|+|x-y+|y-z|=n.
  * @author Georg Fischer
  */
 public class A212904 extends HolonomicRecurrence {

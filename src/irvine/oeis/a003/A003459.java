@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A003459 Absolute primes (or permutable <code>primes)</code>: every permutation of the digits is a prime.
+ * A003459 Absolute primes (or permutable primes): every permutation of the digits is a prime.
  * @author Sean A. Irvine
  */
 public class A003459 implements Sequence {

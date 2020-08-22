@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183586 1/24 the number of <code>(n+1) X 2 0..3</code> arrays with every <code>2 X 2</code> subblock containing exactly three distinct values.
+ * A183586 1/24 the number of (n+1) X 2 0..3 arrays with every 2 X 2 subblock containing exactly three distinct values.
  * @author Georg Fischer
  */
 public class A183586 extends GeneratingFunctionSequence {

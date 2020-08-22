@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226695 Pell equation solutions <code>(32*b(n))^2 - 41*(5*a(n))^2 = -1</code> with <code>b(n) := A226694(n), n&gt;=0</code>.
+ * A226695 Pell equation solutions (32*b(n))^2 - 41*(5*a(n))^2 = -1 with b(n) := A226694(n), n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A226695 extends LinearRecurrence {

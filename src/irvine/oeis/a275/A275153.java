@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A275153 A linear-recurrent solution to Hofstadter's <code>Q-recurrence</code>.
+ * A275153 A linear-recurrent solution to Hofstadter's Q-recurrence.
  * @author Georg Fischer
  */
 public class A275153 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029609 Central numbers in the <code>(2,3)-Pascal</code> triangle <code>A029600</code>.
+ * A029609 Central numbers in the (2,3)-Pascal triangle A029600.
  * @author Sean A. Irvine
  */
 public class A029609 implements Sequence {

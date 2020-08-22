@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A135654 Divisors of <code>8128</code> (the 4th perfect number), written in base 2.
+ * A135654 Divisors of 8128 (the 4th perfect number), written in base 2.
  * @author Georg Fischer
  */
 public class A135654 extends FiniteSequence {

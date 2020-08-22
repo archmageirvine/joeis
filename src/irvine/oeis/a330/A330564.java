@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A330564 Coordination sequence for 1-skeleton of small stellated dodecahedron with respect to a trivalent node <code>(a</code> valley).
+ * A330564 Coordination sequence for 1-skeleton of small stellated dodecahedron with respect to a trivalent node (a valley).
  * @author Georg Fischer
  */
 public class A330564 extends FiniteSequence {

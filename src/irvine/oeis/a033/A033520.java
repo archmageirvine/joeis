@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033520 Number of matchings in graph <code>C_{8} X P_{n}</code>.
+ * A033520 Number of matchings in graph C_{8} X P_{n}.
  * @author Sean A. Irvine
  */
 public class A033520 extends GeneratingFunctionSequence {

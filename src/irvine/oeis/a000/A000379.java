@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000379 Numbers n where total number of 1-bits in the exponents of their prime factorization is even; a 2-way classification of integers: complement of <code>A000028</code>.
+ * A000379 Numbers n where total number of 1-bits in the exponents of their prime factorization is even; a 2-way classification of integers: complement of A000028.
  * @author Sean A. Irvine
  */
 public class A000379 implements Sequence {

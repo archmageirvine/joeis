@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A113282 Logarithmic derivative of the g.f. of <code>A113281</code>.
+ * A113282 Logarithmic derivative of the g.f. of A113281.
  * @author Georg Fischer
  */
 public class A113282 extends GeneratingFunctionSequence {

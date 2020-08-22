@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A271621 <code>a(1) = 2, a(2) = 3, a(n) = A020639(a(n-2)) + A006530(a(n-1))</code>.
+ * A271621 a(1) = 2, a(2) = 3, a(n) = A020639(a(n-2)) + A006530(a(n-1)).
  * @author Georg Fischer
  */
 public class A271621 extends PaddingSequence {

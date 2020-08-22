@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226903 Shiraishi numbers: a parametrized family of solutions c to the Diophantine equation <code>a^3 + b^3 + c^3 = d^3</code> with d <code>= c+1</code>.
+ * A226903 Shiraishi numbers: a parametrized family of solutions c to the Diophantine equation a^3 + b^3 + c^3 = d^3 with d = c+1.
  * @author Georg Fischer
  */
 public class A226903 extends GeneratingFunctionSequence {

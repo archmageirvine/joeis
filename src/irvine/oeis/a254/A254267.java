@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254267 Decimal expansion of atomic unit of electric quadrupole moment in C <code>m^2</code>.
+ * A254267 Decimal expansion of atomic unit of electric quadrupole moment in C m^2.
  * @author Georg Fischer
  */
 public class A254267 extends NoncomputableSequence {

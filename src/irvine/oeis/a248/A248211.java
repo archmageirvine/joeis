@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a001.A001221;
 
 /**
- * A248211 First differences of <code>omega(n)</code>, the number of distinct prime factors function <code>(A001221)</code>.
+ * A248211 First differences of omega(n), the number of distinct prime factors function (A001221).
  * @author Georg Fischer
  */
 public class A248211 extends DifferenceSequence {

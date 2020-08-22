@@ -8,7 +8,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000796;
 
 /**
- * A033186 Remove all <code>2</code>'s from decimal expansion of Pi, then all <code>3</code>'s, ..., then all <code>11's, ..</code>. (running through primes in order) with the restriction that only digits contiguous in the original expansion are removed.
+ * A033186 Remove all 2's from decimal expansion of Pi, then all 3's, ..., then all 11's, ... (running through primes in order) with the restriction that only digits contiguous in the original expansion are removed.
  * @author Sean A. Irvine
  */
 public class A033186 extends A000796 {

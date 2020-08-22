@@ -3,7 +3,7 @@ package irvine.oeis.a011;
 import irvine.oeis.LinearFeedbackShiftRegisterSequence;
 
 /**
- * A011672 Expansion of reciprocal of <code>x^6+x^3+1 (mod 2)</code>.
+ * A011672 Expansion of reciprocal of x^6+x^3+1 (mod 2).
  * @author Sean A. Irvine
  */
 public class A011672 extends LinearFeedbackShiftRegisterSequence {

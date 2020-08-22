@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007911 <code>a(n) = (n-1)!! - (n-2)!!</code>.
+ * A007911 a(n) = (n-1)!! - (n-2)!!.
  * @author Sean A. Irvine
  */
 public class A007911 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154958 Antidiagonal sums of number triangle <code>A154957</code> regarded as a lower triangular infinite matrix.
+ * A154958 Antidiagonal sums of number triangle A154957 regarded as a lower triangular infinite matrix.
  * @author Sean A. Irvine
  */
 public class A154958 extends LinearRecurrence {

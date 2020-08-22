@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A272005 Decimal expansion of <code>Cp(4)</code>, the molar specific heat of an tetraatomic ideal gas at constant pressure, in J <code>mol^-1 K^-1</code>.
+ * A272005 Decimal expansion of Cp(4), the molar specific heat of an tetraatomic ideal gas at constant pressure, in J mol^-1 K^-1.
  * @author Georg Fischer
  */
 public class A272005 extends NoncomputableSequence {

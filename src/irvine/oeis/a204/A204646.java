@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204646 Number of <code>(n+1) X 4 0..1</code> arrays with column and row pair sums <code>b(i,j)=a(i,j)+a(i,j-1)</code> and <code>c(i,j)=a(i,j)+a(i-1,j)</code> nondecreasing in column and row directions, respectively.
+ * A204646 Number of (n+1) X 4 0..1 arrays with column and row pair sums b(i,j)=a(i,j)+a(i,j-1) and c(i,j)=a(i,j)+a(i-1,j) nondecreasing in column and row directions, respectively.
  * @author Georg Fischer
  */
 public class A204646 extends GeneratingFunctionSequence {

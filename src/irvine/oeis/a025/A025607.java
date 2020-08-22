@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025607 Number of n-move rook paths on <code>8 X 8</code> board from given corner to same corner.
+ * A025607 Number of n-move rook paths on 8 X 8 board from given corner to same corner.
  * @author Georg Fischer
  */
 public class A025607 extends GeneratingFunctionSequence {

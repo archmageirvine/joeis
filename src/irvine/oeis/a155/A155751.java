@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A155751 A variation on <code>10^n mod 17</code>.
+ * A155751 A variation on 10^n mod 17.
  * @author Georg Fischer
  */
 public class A155751 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089264 Number of permutations of length n containing exactly once 132 and 213, likewise for pattern pair <code>(231,312)</code>.
+ * A089264 Number of permutations of length n containing exactly once 132 and 213, likewise for pattern pair (231,312).
  * @author Georg Fischer
  */
 public class A089264 extends GeneratingFunctionSequence {

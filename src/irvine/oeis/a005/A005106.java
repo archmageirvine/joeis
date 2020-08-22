@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A005106 Class <code>2+</code> primes (for definition see <code>A005105)</code>.
+ * A005106 Class 2+ primes (for definition see A005105).
  * @author Sean A. Irvine
  */
 public class A005106 extends A000040 {

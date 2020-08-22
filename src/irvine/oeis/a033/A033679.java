@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033679 <code>a(1) = 2; a(n)</code> is smallest number <code>&gt;= a(n-1)</code> such that the juxtaposition <code>a(1)a(2)...a(n)</code> is a prime.
+ * A033679 a(1) = 2; a(n) is smallest number &gt;= a(n-1) such that the juxtaposition a(1)a(2)...a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A033679 implements Sequence {

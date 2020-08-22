@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A309928 Decimal expansion of <code>Pi^9/Zeta(9)</code>.
+ * A309928 Decimal expansion of Pi^9/Zeta(9).
  * @author Georg Fischer
  */
 public class A309928 extends DecimalExpansionSequence {

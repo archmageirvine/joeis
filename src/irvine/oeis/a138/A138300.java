@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A138300 Differences of each column for atomic numbers of <code>Mendeleyev-Seaborg 7*32</code> elements periodic table,first <code>extension,A138096 table.86</code> terms.Horizontal lecture.
+ * A138300 Differences of each column for atomic numbers of Mendeleyev-Seaborg 7*32 elements periodic table,first extension,A138096 table.86 terms.Horizontal lecture.
  * @author Georg Fischer
  */
 public class A138300 extends NoncomputableSequence {

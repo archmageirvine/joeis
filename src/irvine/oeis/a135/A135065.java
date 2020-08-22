@@ -7,7 +7,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A135065 <code>A127733 * A007318</code> as infinite lower triangular matrices.
+ * A135065 A127733 * A007318 as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A135065 extends GeneratingFunctionTriangle {

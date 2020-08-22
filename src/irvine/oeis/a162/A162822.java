@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162822 Positive numbers k such that <code>36*k/(36-k)</code> are integers.
+ * A162822 Positive numbers k such that 36*k/(36-k) are integers.
  * @author Georg Fischer
  */
 public class A162822 extends FiniteSequence {

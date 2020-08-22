@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A282611 Expansion of <code>q^(-1/3) * c(q) * c(q^3) / 9</code> in powers of q where <code>c()</code> is a cubic AGM theta function.
+ * A282611 Expansion of q^(-1/3) * c(q) * c(q^3) / 9 in powers of q where c() is a cubic AGM theta function.
  * @author Georg Fischer
  */
 public class A282611 extends EulerTransform {

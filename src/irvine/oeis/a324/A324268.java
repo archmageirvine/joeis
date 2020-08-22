@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324268 <code>a(n) = 31*11^(5*n)</code>.
+ * A324268 a(n) = 31*11^(5*n).
  * @author Georg Fischer
  */
 public class A324268 extends HolonomicRecurrence {

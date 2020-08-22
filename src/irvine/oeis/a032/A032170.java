@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004146;
 
 /**
- * A032170 "CHK" <code>(necklace</code>, identity, unlabeled) transform of <code>1, 2, 3, 4, ..</code>.
+ * A032170 "CHK" (necklace, identity, unlabeled) transform of 1, 2, 3, 4, ...
  * @author Sean A. Irvine
  */
 public class A032170 implements Sequence {

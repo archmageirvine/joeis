@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A185353 <code>a(n) = (1^1 + 2^2</code> . . . <code>+ n^n) mod 10</code>.
+ * A185353 a(n) = (1^1 + 2^2 . . . + n^n) mod 10.
  * @author Georg Fischer
  */
 public class A185353 extends PaddingSequence {

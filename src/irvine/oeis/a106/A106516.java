@@ -7,7 +7,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A106516 A Pascal-like triangle based on <code>3^n</code>.
+ * A106516 A Pascal-like triangle based on 3^n.
  * @author Georg Fischer
  */
 public class A106516 extends GeneratingFunctionTriangle {

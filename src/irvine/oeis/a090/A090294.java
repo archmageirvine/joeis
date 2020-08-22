@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090294 <code>a(n) = K_3(n) = Sum_{k&gt;=0} A090285(3,k)*2^k*binomial(n,k). a(n) = (4*n^3+30*n^2+56*n+15)/3</code>.
+ * A090294 a(n) = K_3(n) = Sum_{k&gt;=0} A090285(3,k)*2^k*binomial(n,k). a(n) = (4*n^3+30*n^2+56*n+15)/3.
  * @author Georg Fischer
  */
 public class A090294 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294054 Number of set partitions of <code>[n]</code> such that the maximal absolute difference between consecutive elements within a block equals five.
+ * A294054 Number of set partitions of [n] such that the maximal absolute difference between consecutive elements within a block equals five.
  * @author Georg Fischer
  */
 public class A294054 extends GeneratingFunctionSequence {

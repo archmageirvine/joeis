@@ -4,7 +4,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.math.z.Z;
 
 /**
- * A028691 Least positive value of k for which the n-th sorted Galois number divides <code>k!</code>.
+ * A028691 Least positive value of k for which the n-th sorted Galois number divides k!.
  * @author Sean A. Irvine
  */
 public class A028691 extends A028689 {

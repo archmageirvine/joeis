@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A026429 Position of n-th odd prime in <code>A026417</code>.
+ * A026429 Position of n-th odd prime in A026417.
  * @author Sean A. Irvine
  */
 public class A026429 extends A026417 {

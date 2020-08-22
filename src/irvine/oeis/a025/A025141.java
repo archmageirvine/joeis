@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025141 <code>a(n) = (k-1)st</code> elementary symmetric function of <code>C(n,0), C(n,1)</code>, ..., <code>C(n,k)</code>, where k <code>= floor( n/2 )</code>.
+ * A025141 a(n) = (k-1)st elementary symmetric function of C(n,0), C(n,1), ..., C(n,k), where k = floor( n/2 ).
  * @author Sean A. Irvine
  */
 public class A025141 extends A025134 {

@@ -6,7 +6,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033504 <code>a(n)/4^n</code> is the expected number of tosses of a coin required to obtain <code>n+1</code> heads or <code>n+1</code> tails.
+ * A033504 a(n)/4^n is the expected number of tosses of a coin required to obtain n+1 heads or n+1 tails.
  * @author Georg Fischer
  */
 public class A033504 extends HolonomicRecurrence {

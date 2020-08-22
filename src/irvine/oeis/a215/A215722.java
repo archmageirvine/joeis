@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A215722 Decimal expansion of <code>Pi*(3 - gamma)/32</code>, where gamma is Euler's constant <code>A001620</code>.
+ * A215722 Decimal expansion of Pi*(3 - gamma)/32, where gamma is Euler's constant A001620.
  * @author Georg Fischer
  */
 public class A215722 extends DecimalExpansionSequence {

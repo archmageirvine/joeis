@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250258 Least nonnegative integer whose decimal digits divide the plane into n regions <code>(A250257</code> variant).
+ * A250258 Least nonnegative integer whose decimal digits divide the plane into n regions (A250257 variant).
  * @author Georg Fischer
  */
 public class A250258 extends GeneratingFunctionSequence {

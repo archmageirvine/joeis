@@ -5,7 +5,7 @@ package irvine.oeis.a140;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A140164 Binomial transform of <code>[1, 1, 1, 1, -1, -1, 5, -11, 19, -29, 41, ...]</code>.
+ * A140164 Binomial transform of [1, 1, 1, 1, -1, -1, 5, -11, 19, -29, 41, ...].
  * @author Georg Fischer
  */
 public class A140164 extends HolonomicRecurrence {

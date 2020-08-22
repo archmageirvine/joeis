@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A324471 <code>a(n) = 10 mod n</code>.
+ * A324471 a(n) = 10 mod n.
  * @author Georg Fischer
  */
 public class A324471 extends PaddingSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A105698 Fixed point of morphism <code>1-&gt;{1, 4, 2, 1}, 2-&gt;{2, 1, 3, 2}, 3-&gt;{3, 2, 4, 3}, 4-&gt;{4, 1, 3, 4}</code>.
+ * A105698 Fixed point of morphism 1-&gt;{1, 4, 2, 1}, 2-&gt;{2, 1, 3, 2}, 3-&gt;{3, 2, 4, 3}, 4-&gt;{4, 1, 3, 4}.
  * @author Georg Fischer
  */
 public class A105698 extends MorphismSequence {

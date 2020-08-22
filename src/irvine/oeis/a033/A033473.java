@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033473 Numerator of <code>(2*n+1)!*8*Bernoulli(2*n,1/2)</code>.
+ * A033473 Numerator of (2*n+1)!*8*Bernoulli(2*n,1/2).
  * @author Sean A. Irvine
  */
 public class A033473 implements Sequence {

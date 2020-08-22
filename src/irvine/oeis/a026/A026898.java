@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026898 <code>a(n) = Sum_{k=0..n} (n-k+1)^k</code>.
+ * A026898 a(n) = Sum_{k=0..n} (n-k+1)^k.
  * @author Sean A. Irvine
  */
 public class A026898 implements Sequence {

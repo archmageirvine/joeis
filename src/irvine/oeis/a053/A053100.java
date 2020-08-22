@@ -6,7 +6,7 @@ package irvine.oeis.a053;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A053100 <code>a(n) = ((6*n+7)(!^6))/7</code>, related to <code>A008542 ((6*n+1)(!^6)</code> sextic, or <code>6-factorials)</code>.
+ * A053100 a(n) = ((6*n+7)(!^6))/7, related to A008542 ((6*n+1)(!^6) sextic, or 6-factorials).
  * @author Georg Fischer
  */
 public class A053100 extends HolonomicRecurrence {

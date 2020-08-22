@@ -4,7 +4,7 @@ package irvine.oeis.a033;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033453 "INVERT" transform of squares <code>A000290</code>.
+ * A033453 "INVERT" transform of squares A000290.
  * @author Georg Fischer
  */
 public class A033453 extends GeneratingFunctionSequence {

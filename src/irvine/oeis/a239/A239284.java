@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239284 <code>a(n) = (15^n - (-1)^n)/16</code>.
+ * A239284 a(n) = (15^n - (-1)^n)/16.
  * @author Georg Fischer
  */
 public class A239284 extends GeneratingFunctionSequence {

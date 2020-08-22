@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135351 <code>a(n) = (2^n + 3 - 7*(-1)^n + 3*0^n)/6;</code> or <code>a(0) = 0</code> and for <code>n &gt; 0, a(n) = A005578(n-1) - (-1)^n</code>.
+ * A135351 a(n) = (2^n + 3 - 7*(-1)^n + 3*0^n)/6; or a(0) = 0 and for n &gt; 0, a(n) = A005578(n-1) - (-1)^n.
  * @author Georg Fischer
  */
 public class A135351 extends GeneratingFunctionSequence {

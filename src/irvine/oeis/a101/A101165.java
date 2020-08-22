@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101165 <code>a(n) = (7*n^3 + 6*n^2 + 5*n) / 6</code>.
+ * A101165 a(n) = (7*n^3 + 6*n^2 + 5*n) / 6.
  * @author Georg Fischer
  */
 public class A101165 extends GeneratingFunctionSequence {

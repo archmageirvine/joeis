@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000257;
 
 /**
- * A004040 Inversion of <code>A000257</code>.
+ * A004040 Inversion of A000257.
  * @author Sean A. Irvine
  */
 public class A004040 extends A000257 {

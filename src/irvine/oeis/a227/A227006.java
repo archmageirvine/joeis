@@ -5,7 +5,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227006 Numbers n such that <code>n-1</code> is not squarefree or a prime divisor of <code>n-1</code> is in the sequence.
+ * A227006 Numbers n such that n-1 is not squarefree or a prime divisor of n-1 is in the sequence.
  * @author Georg Fischer
  */
 public class A227006 extends HolonomicRecurrence {

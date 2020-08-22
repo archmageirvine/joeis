@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166725 <code>a(n) = (2*n+1)*25^n</code>.
+ * A166725 a(n) = (2*n+1)*25^n.
  * @author Georg Fischer
  */
 public class A166725 extends LinearRecurrence {

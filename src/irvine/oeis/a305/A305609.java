@@ -6,7 +6,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305609 Expansion of <code>1/2 * (((1 + 8*x)/(1 - 8*x))^(1/8) - 1)</code>.
+ * A305609 Expansion of 1/2 * (((1 + 8*x)/(1 - 8*x))^(1/8) - 1).
  * @author Georg Fischer
  */
 public class A305609 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143165 Expansion of the exponential generating function <code>arcsin(2*x)/(2*(1-2*x)^(3/2))</code>.
+ * A143165 Expansion of the exponential generating function arcsin(2*x)/(2*(1-2*x)^(3/2)).
  * @author Georg Fischer
  */
 public class A143165 extends HolonomicRecurrence {

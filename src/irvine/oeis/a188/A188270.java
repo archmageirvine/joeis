@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188270 Number of nondecreasing strings of numbers <code>(x(i), i=1..n)</code> in -2..2 with sum <code>x(i)^3</code> equal to 0.
+ * A188270 Number of nondecreasing strings of numbers (x(i), i=1..n) in -2..2 with sum x(i)^3 equal to 0.
  * @author Georg Fischer
  */
 public class A188270 extends HolonomicRecurrence {

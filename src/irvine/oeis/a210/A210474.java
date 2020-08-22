@@ -6,7 +6,7 @@ package irvine.oeis.a210;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A210474 The number of different lattice paths from <code>(0,0)</code> to <code>(2n,0)</code> using steps of <code>S={(i,i)</code> or <code>(i,-i): i=1,2,...,n}</code> with j <code>flaws(j=1,2,...,n-1)</code>, where the j flaws is the sum of lengths of down steps below the <code>x-axis</code>. (For down steps that are partly above and partly below the x-axis we just count the part below the <code>x-axis.)</code> This number is independent of the number of flaws.
+ * A210474 The number of different lattice paths from (0,0) to (2n,0) using steps of S={(i,i) or (i,-i): i=1,2,...,n} with j flaws(j=1,2,...,n-1), where the j flaws is the sum of lengths of down steps below the x-axis. (For down steps that are partly above and partly below the x-axis we just count the part below the x-axis.) This number is independent of the number of flaws.
  * @author Georg Fischer
  */
 public class A210474 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023234 Numbers n such that n and <code>9n + 4</code> are both prime.
+ * A023234 Numbers n such that n and 9n + 4 are both prime.
  * @author Sean A. Irvine
  */
 public class A023234 extends A000040 {

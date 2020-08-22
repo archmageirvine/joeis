@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188727 Decimal expansion of <code>(e+sqrt(16+e^2))/4</code>.
+ * A188727 Decimal expansion of (e+sqrt(16+e^2))/4.
  * @author Georg Fischer
  */
 public class A188727 extends DecimalExpansionSequence {

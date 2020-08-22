@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234833 Number of tilings of a box with sides <code>2 X 2 X 3n</code> in <code>R^3</code> by boxes of sides <code>Tricube-V(3-dimensional</code> dominoes).
+ * A234833 Number of tilings of a box with sides 2 X 2 X 3n in R^3 by boxes of sides Tricube-V(3-dimensional dominoes).
  * @author Sean A. Irvine
  */
 public class A234833 extends LinearRecurrence {

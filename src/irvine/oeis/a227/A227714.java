@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227714 The hyper-Wiener index of the tree <code>g[n] (n&gt;=0)</code> defined recursively in the following manner: denoting by <code>P[n]</code> the path on n vertices, we define <code>g[0] =P[2]</code> while <code>g[n] (n&gt;=1)</code> is the tree obtained by identifying the roots of 2 copies of <code>g[n-1]</code> and one of the end-vertices of <code>P[n+1];</code> the root of <code>g[n]</code> is defined to be the other end-vertex of <code>P[n+1]</code>.
+ * A227714 The hyper-Wiener index of the tree g[n] (n&gt;=0) defined recursively in the following manner: denoting by P[n] the path on n vertices, we define g[0] =P[2] while g[n] (n&gt;=1) is the tree obtained by identifying the roots of 2 copies of g[n-1] and one of the end-vertices of P[n+1]; the root of g[n] is defined to be the other end-vertex of P[n+1].
  * @author Georg Fischer
  */
 public class A227714 extends GeneratingFunctionSequence {

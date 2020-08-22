@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a007.A007921;
 
 /**
- * A030173 Differences <code>p(i)-p(j)</code> between primes, sorted in numerical order.
+ * A030173 Differences p(i)-p(j) between primes, sorted in numerical order.
  * @author Sean A. Irvine
  */
 public class A030173 extends ComplementSequence {

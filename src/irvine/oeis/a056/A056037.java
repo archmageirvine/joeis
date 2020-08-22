@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A056037 Number of <code>6x6</code> binary matrices with n ones, with no zero rows or columns, up to row and column permutation.
+ * A056037 Number of 6x6 binary matrices with n ones, with no zero rows or columns, up to row and column permutation.
  * @author Georg Fischer
  */
 public class A056037 extends FiniteSequence {

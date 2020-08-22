@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144969 Stirling numbers of second kind <code>S(n,n-6)</code>.
+ * A144969 Stirling numbers of second kind S(n,n-6).
  * @author Sean A. Irvine
  */
 public class A144969 extends LinearRecurrence {

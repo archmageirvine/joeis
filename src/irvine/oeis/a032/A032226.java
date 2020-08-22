@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032226 Shifts left under "DGJ" <code>(bracelet</code>, element, labeled) transform.
+ * A032226 Shifts left under "DGJ" (bracelet, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032226 extends A032213 {

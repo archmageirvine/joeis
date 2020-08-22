@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141310 The odd numbers interlaced with the <code>constant-2</code> sequence.
+ * A141310 The odd numbers interlaced with the constant-2 sequence.
  * @author Georg Fischer
  */
 public class A141310 extends GeneratingFunctionSequence {

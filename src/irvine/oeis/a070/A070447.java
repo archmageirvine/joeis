@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070447 <code>a(n) = n^2 mod 25</code>.
+ * A070447 a(n) = n^2 mod 25.
  * @author Georg Fischer
  */
 public class A070447 extends GeneratingFunctionSequence {

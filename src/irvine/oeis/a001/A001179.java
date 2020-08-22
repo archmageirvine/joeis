@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001179 Leonardo logarithm of <code>n</code>.
+ * A001179 Leonardo logarithm of n.
  * @author Sean A. Irvine
  */
 public class A001179 implements Sequence {

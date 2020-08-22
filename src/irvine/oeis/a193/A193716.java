@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A193716 Decimal expansion of <code>Pi^3*log(2)/24 - 3*Pi*zeta(3)/16</code>.
+ * A193716 Decimal expansion of Pi^3*log(2)/24 - 3*Pi*zeta(3)/16.
  * @author Georg Fischer
  */
 public class A193716 extends DecimalExpansionSequence {

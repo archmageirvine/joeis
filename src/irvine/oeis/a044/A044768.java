@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A044768 Numbers n such that string 5,5 occurs in the base 10 representation of n but not of <code>n+1</code>.
+ * A044768 Numbers n such that string 5,5 occurs in the base 10 representation of n but not of n+1.
  * @author Georg Fischer
  */
 public class A044768 extends RunsBaseSequence {

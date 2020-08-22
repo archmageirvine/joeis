@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137282 Final digit of <code>A136408(n)</code>.
+ * A137282 Final digit of A136408(n).
  * @author Georg Fischer
  */
 public class A137282 extends HolonomicRecurrence {

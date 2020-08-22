@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107956 <code>a(n) = (n+1)(n+2)^2*(n+3)^2*(n+4)(5n^2 + 21n + 20)/2880</code>.
+ * A107956 a(n) = (n+1)(n+2)^2*(n+3)^2*(n+4)(5n^2 + 21n + 20)/2880.
  * @author Georg Fischer
  */
 public class A107956 extends HolonomicRecurrence {

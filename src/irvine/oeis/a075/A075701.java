@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075701 <code>a(1)=1, a(n+1)=sigma(a(n))-2*a(n)</code>.
+ * A075701 a(1)=1, a(n+1)=sigma(a(n))-2*a(n).
  * @author Georg Fischer
  */
 public class A075701 extends HolonomicRecurrence {

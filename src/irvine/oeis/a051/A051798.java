@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051798 <code>a(n) = (n+1)*(n+2)*(n+3)*(9n+4)/24</code>.
+ * A051798 a(n) = (n+1)*(n+2)*(n+3)*(9n+4)/24.
  * @author Sean A. Irvine
  */
 public class A051798 extends LinearRecurrence {

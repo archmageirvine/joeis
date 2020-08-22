@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A024743 <code>a(n) = Sum_{i=1..floor((n+1)/4)} a(2*i-1) * a(n-2*i+1)</code>, with <code>a(1)=3, a(2)=1</code>, and <code>a(3)=2</code>.
+ * A024743 a(n) = Sum_{i=1..floor((n+1)/4)} a(2*i-1) * a(n-2*i+1), with a(1)=3, a(2)=1, and a(3)=2.
  * @author Sean A. Irvine
  */
 public class A024743 extends MemorySequence {

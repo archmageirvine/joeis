@@ -6,7 +6,7 @@ package irvine.oeis.a035;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A035323 Related to deca-factorial numbers <code>A045757</code>.
+ * A035323 Related to deca-factorial numbers A045757.
  * @author Georg Fischer
  */
 public class A035323 extends HolonomicRecurrence {

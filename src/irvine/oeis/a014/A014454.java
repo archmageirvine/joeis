@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014454 <code>Sum_{1&lt;=k&lt;n} gcd(k!,n!/k!)</code>.
+ * A014454 Sum_{1&lt;=k&lt;n} gcd(k!,n!/k!).
  * @author Sean A. Irvine
  */
 public class A014454 implements Sequence {

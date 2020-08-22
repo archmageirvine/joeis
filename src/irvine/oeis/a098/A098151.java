@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A098151 Number of partitions of <code>2n</code> prime to 3 with all odd parts occurring with even multiplicities. There is no restriction on the even parts.
+ * A098151 Number of partitions of 2n prime to 3 with all odd parts occurring with even multiplicities. There is no restriction on the even parts.
  * @author Georg Fischer
  */
 public class A098151 extends EulerTransform {

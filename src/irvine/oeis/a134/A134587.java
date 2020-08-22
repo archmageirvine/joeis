@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134587 A Heron sequence with small terms starting from <code>60, 275, 325</code>.
+ * A134587 A Heron sequence with small terms starting from 60, 275, 325.
  * @author Georg Fischer
  */
 public class A134587 extends FiniteSequence {

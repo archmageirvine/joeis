@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006781 Number of polygons of length <code>4n</code> on Manhattan lattice.
+ * A006781 Number of polygons of length 4n on Manhattan lattice.
  * @author Sean A. Irvine
  */
 public class A006781 implements Sequence {

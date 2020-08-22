@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214505 <code>a(n) = 1</code> if n is four times a triangular number, -1 if one more than twelve times a triangular number else 0.
+ * A214505 a(n) = 1 if n is four times a triangular number, -1 if one more than twelve times a triangular number else 0.
  * @author Georg Fischer
  */
 public class A214505 extends EulerTransform {

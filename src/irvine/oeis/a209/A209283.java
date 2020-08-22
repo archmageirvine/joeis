@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A209283 <code>a(n)</code> is difference of indices of terms <code>&gt;= 6</code> in <code>A187824</code>.
+ * A209283 a(n) is difference of indices of terms &gt;= 6 in A187824.
  * @author Georg Fischer
  */
 public class A209283 extends PaddingSequence {

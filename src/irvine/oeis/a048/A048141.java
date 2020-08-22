@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Triple;
 
 /**
- * A048141 Number of symmetrical planar partitions of n: planar partitions <code>(A000219)</code> that when regarded as 3-D objects have a threefold axis of symmetry that is the intersection of 3 mirror planes, i.e., <code>C3v</code> symmetry.
+ * A048141 Number of symmetrical planar partitions of n: planar partitions (A000219) that when regarded as 3-D objects have a threefold axis of symmetry that is the intersection of 3 mirror planes, i.e., C3v symmetry.
  * @author Sean A. Irvine
  */
 public class A048141 implements Sequence, MultidimensionalIntegerPartition.PartitionUser {

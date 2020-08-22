@@ -6,7 +6,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306455 Total number of covered falling diagonals in all <code>n X n</code> permutation matrices.
+ * A306455 Total number of covered falling diagonals in all n X n permutation matrices.
  * @author Georg Fischer
  */
 public class A306455 extends HolonomicRecurrence {

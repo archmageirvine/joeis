@@ -5,7 +5,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134267 <code>a(n) = |A090964(n+1) - A090964(n)|</code>.
+ * A134267 a(n) = |A090964(n+1) - A090964(n)|.
  * @author Georg Fischer
  */
 public class A134267 extends HolonomicRecurrence {

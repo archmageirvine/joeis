@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171089 <code>a(n) = 2*(Lucas(n)^2 - (-1)^n))</code>.
+ * A171089 a(n) = 2*(Lucas(n)^2 - (-1)^n)).
  * @author Sean A. Irvine
  */
 public class A171089 extends LinearRecurrence {

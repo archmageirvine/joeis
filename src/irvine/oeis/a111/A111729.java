@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A111729 Historical progression of years from the song "In The Year <code>2525"</code> by Denny Zager and Rick Evans.
+ * A111729 Historical progression of years from the song "In The Year 2525" by Denny Zager and Rick Evans.
  * @author Georg Fischer
  */
 public class A111729 extends NoncomputableSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109588 n followed by <code>n^2</code> followed by <code>n^3</code>.
+ * A109588 n followed by n^2 followed by n^3.
  * @author Georg Fischer
  */
 public class A109588 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001668 Number of <code>self-avoiding n-step</code> walks on honeycomb lattice.
+ * A001668 Number of self-avoiding n-step walks on honeycomb lattice.
  * @author Sean A. Irvine
  */
 public class A001668 implements Sequence {

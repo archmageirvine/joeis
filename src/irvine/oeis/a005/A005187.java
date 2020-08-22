@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005187 <code>a(n) = a(floor(n/2)) +</code> n; also denominators in expansion of <code>1/sqrt(1-x)</code> are <code>2^a(n);</code> also <code>2n -</code> number of <code>1</code>'s in binary expansion of <code>2n</code>.
+ * A005187 a(n) = a(floor(n/2)) + n; also denominators in expansion of 1/sqrt(1-x) are 2^a(n); also 2n - number of 1's in binary expansion of 2n.
  * @author Sean A. Irvine
  */
 public class A005187 implements Sequence {

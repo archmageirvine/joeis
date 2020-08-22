@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204140 Numbers m such that both m and <code>7m</code> are zeroless pandigital numbers <code>(A050289)</code>.
+ * A204140 Numbers m such that both m and 7m are zeroless pandigital numbers (A050289).
  * @author Georg Fischer
  */
 public class A204140 extends FiniteSequence {

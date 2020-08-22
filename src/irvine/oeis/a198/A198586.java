@@ -6,7 +6,7 @@ package irvine.oeis.a198;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A198586 <code>a(n) = (4^A001651(n+1) - 1)/3</code>: numbers <code>(4^k-1)/3</code> for k <code>&gt; 1</code>, not multiples of 3.
+ * A198586 a(n) = (4^A001651(n+1) - 1)/3: numbers (4^k-1)/3 for k &gt; 1, not multiples of 3.
  * @author Georg Fischer
  */
 public class A198586 extends HolonomicRecurrence {

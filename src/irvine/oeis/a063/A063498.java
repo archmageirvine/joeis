@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063498 Atoms in cluster of n layers around <code>C_60</code>.
+ * A063498 Atoms in cluster of n layers around C_60.
  * @author Georg Fischer
  */
 public class A063498 extends GeneratingFunctionSequence {

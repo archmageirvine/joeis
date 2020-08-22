@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113179 Expansion of <code>1/sqrt((1-2x)^2-8x^3)</code>.
+ * A113179 Expansion of 1/sqrt((1-2x)^2-8x^3).
  * @author Georg Fischer
  */
 public class A113179 extends HolonomicRecurrence {

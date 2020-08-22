@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A033690 Theta series of <code>A2[hole]^4</code>.
+ * A033690 Theta series of A2[hole]^4.
  * @author Georg Fischer
  */
 public class A033690 extends EulerTransform {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032188 Number of labeled series-reduced mobiles (circular rooted trees) with n leaves (root has degree 0 or <code>&gt;= 2)</code>.
+ * A032188 Number of labeled series-reduced mobiles (circular rooted trees) with n leaves (root has degree 0 or &gt;= 2).
  * @author Sean A. Irvine
  */
 public class A032188 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A165953 Decimal expansion of <code>(5sqrt(3)+sqrt(15))/(6Pi)</code>.
+ * A165953 Decimal expansion of (5sqrt(3)+sqrt(15))/(6Pi).
  * @author Georg Fischer
  */
 public class A165953 extends DecimalExpansionSequence {

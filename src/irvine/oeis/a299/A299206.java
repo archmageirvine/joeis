@@ -6,7 +6,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299206 Ramanujan's tau function (or tau numbers <code>(A000594))</code> for <code>5^n</code>.
+ * A299206 Ramanujan's tau function (or tau numbers (A000594)) for 5^n.
  * @author Georg Fischer
  */
 public class A299206 extends GeneratingFunctionSequence {

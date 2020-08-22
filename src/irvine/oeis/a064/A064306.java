@@ -5,7 +5,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064306 Convolution of <code>A052701</code> (Catalan numbers multiplied by powers of <code>2)</code> with powers of -1.
+ * A064306 Convolution of A052701 (Catalan numbers multiplied by powers of 2) with powers of -1.
  * @author Georg Fischer
  */
 public class A064306 extends HolonomicRecurrence {

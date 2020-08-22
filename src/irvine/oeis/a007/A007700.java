@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007700 Numbers n such that n, <code>2n+1</code>, and <code>4n+3</code> all prime.
+ * A007700 Numbers n such that n, 2n+1, and 4n+3 all prime.
  * @author Sean A. Irvine
  */
 public class A007700 implements Sequence {

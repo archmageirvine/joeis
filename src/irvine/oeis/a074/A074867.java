@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A074867 <code>a(n)=M[a(n-1)]+M[a(n-2)]</code> where <code>a(0)=a(1)=1</code> and <code>M(n)</code> is the product of the digits of n in base 10.
+ * A074867 a(n)=M[a(n-1)]+M[a(n-2)] where a(0)=a(1)=1 and M(n) is the product of the digits of n in base 10.
  * @author Georg Fischer
  */
 public class A074867 extends PaddingSequence {

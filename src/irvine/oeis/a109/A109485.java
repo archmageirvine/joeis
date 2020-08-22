@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109485 Weight enumerator of <code>[64,36,12]</code> extended BCH code.
+ * A109485 Weight enumerator of [64,36,12] extended BCH code.
  * @author Georg Fischer
  */
 public class A109485 extends FiniteSequence {

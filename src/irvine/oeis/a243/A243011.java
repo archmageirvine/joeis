@@ -3,7 +3,7 @@ package irvine.oeis.a243;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A243011 Sum of the three largest parts in the partitions of <code>4n</code> into 4 parts.
+ * A243011 Sum of the three largest parts in the partitions of 4n into 4 parts.
  * @author Sean A. Irvine
  */
 public class A243011 extends LinearRecurrence {

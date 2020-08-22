@@ -7,7 +7,7 @@ import irvine.oeis.a039.A039598;
 
 
 /**
- * A128937 Triangle formed by reading <code>A039598 mod 2</code>.
+ * A128937 Triangle formed by reading A039598 mod 2.
  * @author Georg Fischer
  */
 public class A128937 extends A039598 {

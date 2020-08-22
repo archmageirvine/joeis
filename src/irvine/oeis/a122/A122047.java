@@ -6,7 +6,7 @@ package irvine.oeis.a122;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122047 Degree of the polynomial <code>P(n,x)</code>, defined by a <code>Somos-6</code> type sequence: <code>P(n,x)=(x^(n-1)*P(n-1,x)*P(n-5,x) + P(n-2,x)*P(n-4,x))/P(n-6,x)</code>, initialized with <code>P(n,x)=1</code> at <code>n&lt;0</code>.
+ * A122047 Degree of the polynomial P(n,x), defined by a Somos-6 type sequence: P(n,x)=(x^(n-1)*P(n-1,x)*P(n-5,x) + P(n-2,x)*P(n-4,x))/P(n-6,x), initialized with P(n,x)=1 at n&lt;0.
  * @author Georg Fischer
  */
 public class A122047 extends HolonomicRecurrence {

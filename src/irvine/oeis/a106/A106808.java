@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A106808 Numbers n such that <code>4440011 * 10^n - 1</code> is prime.
+ * A106808 Numbers n such that 4440011 * 10^n - 1 is prime.
  * @author Georg Fischer
  */
 public class A106808 extends PowerFactorPrimeSequence {

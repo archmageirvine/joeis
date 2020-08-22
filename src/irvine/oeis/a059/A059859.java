@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059859 Sum of squares of first <code>n quarter-squares (A002620)</code>.
+ * A059859 Sum of squares of first n quarter-squares (A002620).
  * @author Georg Fischer
  */
 public class A059859 extends GeneratingFunctionSequence {

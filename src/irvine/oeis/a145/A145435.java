@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A145435 Decimal expansion of <code>log(1/2 + 1/sqrt(2))/sqrt(5)</code>.
+ * A145435 Decimal expansion of log(1/2 + 1/sqrt(2))/sqrt(5).
  * @author Georg Fischer
  */
 public class A145435 extends DecimalExpansionSequence {

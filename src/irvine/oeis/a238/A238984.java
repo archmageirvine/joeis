@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A238984 <code>a(n+1)</code> is the product of the last three digits of the sequence up to <code>a(n)</code>, start with <code>a(0)=2</code>.
+ * A238984 a(n+1) is the product of the last three digits of the sequence up to a(n), start with a(0)=2.
  * @author Georg Fischer
  */
 public class A238984 extends PaddingSequence {

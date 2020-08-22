@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A308637 Decimal expansion of <code>Pi^3/Zeta(3)</code>.
+ * A308637 Decimal expansion of Pi^3/Zeta(3).
  * @author Georg Fischer
  */
 public class A308637 extends DecimalExpansionSequence {

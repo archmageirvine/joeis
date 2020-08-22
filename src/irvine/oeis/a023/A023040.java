@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023040 w such that <code>w^3+x^3+y^3+z^3=0, w&gt;|x|&gt;|y|&gt;|z|</code>, is soluble (all solutions).
+ * A023040 w such that w^3+x^3+y^3+z^3=0, w&gt;|x|&gt;|y|&gt;|z|, is soluble (all solutions).
  * @author Sean A. Irvine
  */
 public class A023040 implements Sequence {

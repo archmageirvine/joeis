@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027564 Numbers not of form <code>abcd + abce + abde + acde + bcde</code> for <code>1 &lt;= a &lt;= b &lt;= c &lt;= d &lt;=</code> e.
+ * A027564 Numbers not of form abcd + abce + abde + acde + bcde for 1 &lt;= a &lt;= b &lt;= c &lt;= d &lt;= e.
  * @author Sean A. Irvine
  */
 public class A027564 implements Sequence {

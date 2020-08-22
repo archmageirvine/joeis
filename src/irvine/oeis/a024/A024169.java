@@ -4,7 +4,7 @@ package irvine.oeis.a024;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A024169 Integer part of ((2nd elementary symmetric function of <code>1,2,...,n)/(1+2+...+n))</code>.
+ * A024169 Integer part of ((2nd elementary symmetric function of 1,2,...,n)/(1+2+...+n)).
  * @author Georg Fischer
  */
 public class A024169 extends GeneratingFunctionSequence {

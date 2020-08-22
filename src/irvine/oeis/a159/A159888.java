@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159888 Numbers congruent to <code>{-5,29,39,41,43,45,55,57,59,93,103,105,107,109,119,121} mod 256 </code>.
+ * A159888 Numbers congruent to {-5,29,39,41,43,45,55,57,59,93,103,105,107,109,119,121} mod 256 .
  * @author Sean A. Irvine
  */
 public class A159888 extends LinearRecurrence {

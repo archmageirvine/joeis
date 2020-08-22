@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062210 Numbers k such that the smoothly undulating palindromic number <code>(14*10^k - 41)/99</code> is a prime.
+ * A062210 Numbers k such that the smoothly undulating palindromic number (14*10^k - 41)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062210 extends PowerFactorPrimeSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035175 Coefficients in expansion of Dirichlet series <code>Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1)</code> for m <code>= -15</code>.
+ * A035175 Coefficients in expansion of Dirichlet series Product_p (1-(Kronecker(m,p)+1)*p^(-s)+Kronecker(m,p)*p^(-2s))^(-1) for m = -15.
  * @author Georg Fischer
  */
 public class A035175 extends EulerTransform {

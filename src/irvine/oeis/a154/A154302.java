@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154302 Primes of the form <code>(1+2+...+m)/87 = A000217(m)/87</code>.
+ * A154302 Primes of the form (1+2+...+m)/87 = A000217(m)/87.
  * @author Georg Fischer
  */
 public class A154302 extends FiniteSequence {

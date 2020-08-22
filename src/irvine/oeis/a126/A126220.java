@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126220 Number of binary trees <code>(i.e.</code>, rooted trees where each vertex has either <code>0, 1</code>, or 2 children; and, when only one child is present, it is either a right child or a left child) with n edges and no adjacent vertices of outdegree 2.
+ * A126220 Number of binary trees (i.e., rooted trees where each vertex has either 0, 1, or 2 children; and, when only one child is present, it is either a right child or a left child) with n edges and no adjacent vertices of outdegree 2.
  * @author Georg Fischer
  */
 public class A126220 extends HolonomicRecurrence {

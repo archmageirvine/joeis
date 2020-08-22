@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007662 Quadruple factorial numbers <code>n!!!!: a(n) = n*a(n-4)</code>.
+ * A007662 Quadruple factorial numbers n!!!!: a(n) = n*a(n-4).
  * @author Sean A. Irvine
  */
 public class A007662 implements Sequence {

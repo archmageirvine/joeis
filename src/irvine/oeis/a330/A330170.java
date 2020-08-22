@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330170 <code>a(n) = 2^n + 3^n + 6^n - 1</code>.
+ * A330170 a(n) = 2^n + 3^n + 6^n - 1.
  * @author Georg Fischer
  */
 public class A330170 extends HolonomicRecurrence {

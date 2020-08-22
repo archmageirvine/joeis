@@ -6,7 +6,7 @@ package irvine.oeis.a258;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A258723 Expansion of <code>1/(1-12*x+48*x^2)^(1/2)</code>.
+ * A258723 Expansion of 1/(1-12*x+48*x^2)^(1/2).
  * @author Georg Fischer
  */
 public class A258723 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019556 Dimension of space of Jacobi forms of weight 4 and index <code>n</code>.
+ * A019556 Dimension of space of Jacobi forms of weight 4 and index n.
  * @author Sean A. Irvine
  */
 public class A019556 implements Sequence {

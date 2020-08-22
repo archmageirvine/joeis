@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020483 Least prime p such that <code>p+2n</code> is also prime.
+ * A020483 Least prime p such that p+2n is also prime.
  * @author Sean A. Irvine
  */
 public class A020483 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.math.z.Z;
 
 /**
- * A015937 Positive integers n such that <code>2^n == 2^12 (mod n)</code>.
+ * A015937 Positive integers n such that 2^n == 2^12 (mod n).
  * @author Sean A. Irvine
  */
 public class A015937 extends A015910 {

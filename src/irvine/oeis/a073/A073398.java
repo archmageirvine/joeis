@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073398 Ninth convolution of <code>A002605(n)</code> (generalized <code>(2,2)-Fibonacci), n&gt;=0</code>, with itself.
+ * A073398 Ninth convolution of A002605(n) (generalized (2,2)-Fibonacci), n&gt;=0, with itself.
  * @author Georg Fischer
  */
 public class A073398 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304505 <code>a(n) = 4*(n+1)*(9*n+4)</code>.
+ * A304505 a(n) = 4*(n+1)*(9*n+4).
  * @author Georg Fischer
  */
 public class A304505 extends GeneratingFunctionSequence {

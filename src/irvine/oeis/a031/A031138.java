@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A031138 Numbers k such that <code>1^5 + 2^5 + ... + k^5</code> is a square.
+ * A031138 Numbers k such that 1^5 + 2^5 + ... + k^5 is a square.
  * @author Sean A. Irvine
  */
 public class A031138 extends LinearRecurrence {

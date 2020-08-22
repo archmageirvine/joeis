@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A089958 Number of partitions of n in which every part occurs <code>2, 3</code>, or 5 times.
+ * A089958 Number of partitions of n in which every part occurs 2, 3, or 5 times.
  * @author Georg Fischer
  */
 public class A089958 extends EulerTransform {

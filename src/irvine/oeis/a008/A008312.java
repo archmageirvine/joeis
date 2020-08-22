@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a053.A053117;
 
 /**
- * A008312 Triangle of coefficients of Chebyshev polynomials <code>U_n(x)</code>.
+ * A008312 Triangle of coefficients of Chebyshev polynomials U_n(x).
  * @author Sean A. Irvine
  */
 public class A008312 extends A053117 {

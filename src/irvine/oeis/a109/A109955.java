@@ -7,7 +7,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A109955 Number triangle <code>binomial(n+2k,3k)</code>.
+ * A109955 Number triangle binomial(n+2k,3k).
  * @author Georg Fischer
  */
 public class A109955 extends GeneratingFunctionTriangle {

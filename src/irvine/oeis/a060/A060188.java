@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060188 A column and diagonal of <code>A060187</code>.
+ * A060188 A column and  diagonal of A060187.
  * @author Sean A. Irvine
  */
 public class A060188 extends LinearRecurrence {

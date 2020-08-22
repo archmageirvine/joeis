@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025732 Index of <code>8^n</code> within sequence of numbers of form <code>8^i*9^j</code>.
+ * A025732 Index of 8^n within sequence of numbers of form 8^i*9^j.
  * @author Sean A. Irvine
  */
 public class A025732 extends A025633 {

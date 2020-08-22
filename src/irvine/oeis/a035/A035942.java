@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035942 Number of partitions of n into distinct prime power parts (1 and <code>2</code> excluded).
+ * A035942 Number of partitions of n into distinct prime power parts (1 and 2 excluded).
  * @author Sean A. Irvine
  */
 public class A035942 implements Sequence {

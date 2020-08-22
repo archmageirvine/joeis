@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012655 Expansion of e.g.f. <code>arcsinh(tanh(x) * log(x+1))</code>.
+ * A012655 Expansion of e.g.f. arcsinh(tanh(x) * log(x+1)).
  * @author Sean A. Irvine
  */
 public class A012655 implements Sequence {

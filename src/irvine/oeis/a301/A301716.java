@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // DO NOT EDIT here!
 
 /**
- * A301716 Coordination sequence for node of type <code>V1</code> in "kre" 2-D tiling (or net).
+ * A301716 Coordination sequence for node of type V1 in "kre" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301716 extends A301718 {

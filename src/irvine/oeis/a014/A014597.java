@@ -6,7 +6,7 @@ import irvine.util.array.LongDynamicArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A014597 Numbers n such that <code>n^2</code> is a sum of distinct factorials.
+ * A014597 Numbers n such that n^2 is a sum of distinct factorials.
  * @author Sean A. Irvine
  */
 public class A014597 implements Sequence {

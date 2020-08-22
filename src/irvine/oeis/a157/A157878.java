@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157878 Expansion of <code>x*(1+x)/(x^2-30*x+1)</code>.
+ * A157878 Expansion of x*(1+x)/(x^2-30*x+1).
  * @author Georg Fischer
  */
 public class A157878 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018241 Number of simple allowable sequences on <code>1..n</code>.
+ * A018241 Number of simple allowable sequences on 1..n.
  * @author Sean A. Irvine
  */
 public class A018241 implements Sequence {

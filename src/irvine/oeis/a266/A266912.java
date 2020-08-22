@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266912 Numbers n which are anagrams of <code>n+18</code>.
+ * A266912 Numbers n which are anagrams of n+18.
  * @author Georg Fischer
  */
 public class A266912 extends GeneratingFunctionSequence {

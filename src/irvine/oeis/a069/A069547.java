@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A069547 <code>n^2 mod n-th</code> prime.
+ * A069547 n^2 mod n-th prime.
  * @author Georg Fischer
  */
 public class A069547 extends A000040 {

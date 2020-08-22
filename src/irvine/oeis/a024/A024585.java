@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A024585 <code>a(n) = Sum_{k=1..n} [ 1/{k*Pi} ]</code>, where <code>{x} := x - [ x ]</code>.
+ * A024585 a(n) = Sum_{k=1..n} [ 1/{k*Pi} ], where {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024585 extends PartialSumSequence {

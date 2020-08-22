@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A169963 Number of <code>(2n+1)-digit</code> squares in carryless arithmetic <code>mod 10</code>.
+ * A169963 Number of (2n+1)-digit squares in carryless arithmetic mod 10.
  * @author Sean A. Irvine
  */
 public class A169963 extends LinearRecurrence {

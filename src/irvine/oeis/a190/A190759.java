@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190759 Number of tilings of a <code>5 X n</code> rectangle using right trominoes and <code>2 X 2</code> tiles.
+ * A190759 Number of tilings of a 5 X n rectangle using right trominoes and 2 X 2 tiles.
  * @author Georg Fischer
  */
 public class A190759 extends GeneratingFunctionSequence {

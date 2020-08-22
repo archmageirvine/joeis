@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204671 <code>a(n) = n^n (mod 6)</code>.
+ * A204671 a(n) = n^n (mod 6).
  * @author Georg Fischer
  */
 public class A204671 extends GeneratingFunctionSequence {

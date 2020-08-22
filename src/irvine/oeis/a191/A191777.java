@@ -7,7 +7,7 @@ import irvine.oeis.a020.A020903;
 
 
 /**
- * A191777 Positions of 1 in <code>A020903;</code> complement of <code>A020904</code>.
+ * A191777 Positions of 1 in A020903; complement of A020904.
  * @author Georg Fischer
  */
 public class A191777 extends PositionSequence {

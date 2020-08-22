@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266449 Number of OFF (white) cells in the n-th iteration of the "Rule <code>25"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A266449 Number of OFF (white) cells in the n-th iteration of the "Rule 25" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266449 extends GeneratingFunctionSequence {

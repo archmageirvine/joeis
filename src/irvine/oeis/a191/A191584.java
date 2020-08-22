@@ -5,7 +5,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191584 Diagonal sums of the Riordan matrix <code>(1/(1-3*x^2),x/(1-x)) (A191582)</code>.
+ * A191584 Diagonal sums of the Riordan matrix (1/(1-3*x^2),x/(1-x)) (A191582).
  * @author Georg Fischer
  */
 public class A191584 extends HolonomicRecurrence {

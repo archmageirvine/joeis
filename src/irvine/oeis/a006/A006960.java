@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A006960 Reverse and <code>Add!</code> sequence starting with 196.
+ * A006960 Reverse and Add! sequence starting with 196.
  * @author Sean A. Irvine
  */
 public class A006960 implements Sequence {

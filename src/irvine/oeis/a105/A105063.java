@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105063 Define <code>a(1)=0, a(2)=0, a(3)=8, a(4)=24</code> and then <code>a(n)=66*a(n-2)+32-a(n-4)</code>.
+ * A105063 Define a(1)=0, a(2)=0, a(3)=8, a(4)=24 and then a(n)=66*a(n-2)+32-a(n-4).
  * @author Georg Fischer
  */
 public class A105063 extends HolonomicRecurrence {

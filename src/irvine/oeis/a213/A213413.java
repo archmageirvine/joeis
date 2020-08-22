@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213413 Half the number of <code>n X 3</code> binary arrays with no <code>3 X 3</code> submatrix formed with any three rows and columns equal to <code>J-I</code>.
+ * A213413 Half the number of n X 3 binary arrays with no 3 X 3 submatrix formed with any three rows and columns equal to J-I.
  * @author Georg Fischer
  */
 public class A213413 extends GeneratingFunctionSequence {

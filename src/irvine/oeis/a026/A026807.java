@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026807 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n in which every part is <code>&gt;=k</code>, for <code>k=1,2,...,n</code>.
+ * A026807 Triangular array T read by rows: T(n,k) = number of partitions of n in which every part is &gt;=k, for k=1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A026807 extends MemoryFunction2<Long, Z> implements Sequence {

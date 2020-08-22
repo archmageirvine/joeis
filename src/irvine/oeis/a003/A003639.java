@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003639 Number of classes per genus in <code>Q(sqrt -n), n</code> squarefree.
+ * A003639 Number of classes per genus in Q(sqrt -n), n squarefree.
  * @author Sean A. Irvine
  */
 public class A003639 implements Sequence {

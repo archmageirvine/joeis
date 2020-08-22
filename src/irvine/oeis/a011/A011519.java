@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011519 Decimal expansion of <code>100th</code> root of 100.
+ * A011519 Decimal expansion of 100th root of 100.
  * @author Sean A. Irvine
  */
 public class A011519 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A225923 Expansion of <code>q^(-1/2) * k(q) * (1 - k(q)^4) * (K(q) / (pi/2))^6 / 4</code> in powers of q where <code>k(), k'(), K()</code> are Jacobi elliptic functions.
+ * A225923 Expansion of q^(-1/2) * k(q) * (1 - k(q)^4) * (K(q) / (pi/2))^6 / 4 in powers of q where k(), k'(), K() are Jacobi elliptic functions.
  * @author Sean A. Irvine
  */
 public class A225923 implements Sequence {

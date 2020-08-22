@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269215 Number of <code>2 X n 0..3</code> arrays with some element plus some horizontally, diagonally or antidiagonally adjacent neighbor totalling three exactly once.
+ * A269215 Number of 2 X n 0..3 arrays with some element plus some horizontally, diagonally or antidiagonally adjacent neighbor totalling three exactly once.
  * @author Georg Fischer
  */
 public class A269215 extends GeneratingFunctionSequence {

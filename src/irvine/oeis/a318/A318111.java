@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A318111 Number of maximal 1-intersecting families of 2-sets of <code>[n] = {1,2,...,n}</code>.
+ * A318111 Number of maximal 1-intersecting families of 2-sets of [n] = {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A318111 extends GeneratingFunctionSequence {

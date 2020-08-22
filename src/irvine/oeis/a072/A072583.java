@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072583 Numbers n with property that there is no match when comparing the <code>0</code>'s and the <code>1</code>'s of n and the n-th prime in their binary representations.
+ * A072583 Numbers n with property that there is no match when comparing the 0's and the 1's of n and the n-th prime in their binary representations.
  * @author Georg Fischer
  */
 public class A072583 extends A000040 {

@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162397 <code>a(n) = n * Kronecker(-3, n)</code>.
+ * A162397 a(n) = n * Kronecker(-3, n).
  * @author Georg Fischer
  */
 public class A162397 extends GeneratingFunctionSequence {

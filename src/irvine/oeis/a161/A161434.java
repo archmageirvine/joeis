@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161434 Number of <code>6-compositions</code>.
+ * A161434 Number of 6-compositions.
  * @author Georg Fischer
  */
 public class A161434 extends GeneratingFunctionSequence {

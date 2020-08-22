@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A022577 Expansion of <code>Product_{m&gt;=1} (1+x^m)^12</code>.
+ * A022577 Expansion of Product_{m&gt;=1} (1+x^m)^12.
  * @author Georg Fischer
  */
 public class A022577 extends EulerTransform {

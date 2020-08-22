@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A000015 Smallest prime power <code>&gt;= n</code>.
+ * A000015 Smallest prime power &gt;= n.
  * @author Sean A. Irvine
  */
 public class A000015 implements Sequence {

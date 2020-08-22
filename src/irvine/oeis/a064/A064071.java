@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.a000.A000233;
 
 /**
- * A064071 Generalized Euler number <code>c(10,n)</code>.
+ * A064071 Generalized Euler number c(10,n).
  * @author Sean A. Irvine
  */
 public class A064071 extends A000233 {

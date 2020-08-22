@@ -6,7 +6,7 @@ package irvine.oeis.a030;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A030180 <code>a(n) = (n^7 - n)/42</code>.
+ * A030180 a(n) = (n^7 - n)/42.
  * @author Georg Fischer
  */
 public class A030180 extends HolonomicRecurrence {

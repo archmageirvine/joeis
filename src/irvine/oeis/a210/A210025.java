@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A210025 <code>a(0)=1</code>. Let S = string of digits of <code>a(0),a(1),a(2),..</code>. To get <code>a(n+1) (n&gt;=0)</code>, subtract next element of S from <code>a(n)</code> if that would give a positive number, otherwise add it to <code>a(n)</code>.
+ * A210025 a(0)=1. Let S = string of digits of a(0),a(1),a(2),... To get a(n+1) (n&gt;=0), subtract next element of S from a(n) if that would give a positive number, otherwise add it to a(n).
  * @author Sean A. Irvine
  */
 public class A210025 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A095601 <code>a(n) = 105</code> written in base <code>17 - n</code>.
+ * A095601 a(n) = 105 written in base 17 - n.
  * @author Georg Fischer
  */
 public class A095601 extends FiniteSequence {

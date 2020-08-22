@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A031144 Numbers n such that <code>n!</code> has a record number of zeros.
+ * A031144 Numbers n such that n! has a record number of zeros.
  * @author Sean A. Irvine
  */
 public class A031144 extends A000142 {

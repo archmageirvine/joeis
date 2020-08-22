@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030177 When squared gives number composed of digits <code>{4,5,6}</code>.
+ * A030177 When squared gives number composed of digits {4,5,6}.
  * @author Sean A. Irvine
  */
 public class A030177 implements Sequence {

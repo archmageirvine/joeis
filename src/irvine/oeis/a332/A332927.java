@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A332927 <code>6*a(n)</code> are the perimeters of distinct triangles with integer sides i <code>&lt;= j &lt;=</code> k, whose area equals 7 times their perimeter. Terms occurring more than once belong to different triangles.
+ * A332927 6*a(n) are the perimeters of distinct triangles with integer sides i &lt;= j &lt;= k, whose area equals 7 times their perimeter. Terms occurring more than once belong to different triangles.
  * @author Georg Fischer
  */
 public class A332927 extends FiniteSequence {

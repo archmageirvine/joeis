@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174778 y-values in the solution to <code>x^2 - 41*y^2 = 1</code>.
+ * A174778 y-values in the solution to  x^2 - 41*y^2 = 1.
  * @author Sean A. Irvine
  */
 public class A174778 extends LinearRecurrence {

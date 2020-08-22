@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123691 <code>a(n) =</code> number of standard Young tableaux of type <code>(n,n-1,n-1)</code>.
+ * A123691 a(n) = number of standard Young tableaux of type (n,n-1,n-1).
  * @author Georg Fischer
  */
 public class A123691 extends HolonomicRecurrence {

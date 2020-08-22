@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A239341 Decimal expansion of <code>7 + 2021/3003</code>.
+ * A239341 Decimal expansion of 7 + 2021/3003.
  * @author Georg Fischer
  */
 public class A239341 extends DecimalExpansionSequence {

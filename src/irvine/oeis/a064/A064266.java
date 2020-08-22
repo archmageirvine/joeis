@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064266 Lune of Jan 01 in Julian calendar for a year with Golden Number <code>n</code>.
+ * A064266 Lune of Jan 01 in Julian calendar for a year with Golden Number n.
  * @author Georg Fischer
  */
 public class A064266 extends FiniteSequence {

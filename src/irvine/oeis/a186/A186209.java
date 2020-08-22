@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A186209 Coefficients of modular function denoted <code>g_5(tau)</code> by Atkin.
+ * A186209 Coefficients of modular function denoted g_5(tau) by Atkin.
  * @author Georg Fischer
  */
 public class A186209 extends EulerTransform {

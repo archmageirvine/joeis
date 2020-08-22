@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243215 Number of 4-matchings of the <code>n X n</code> grid graph.
+ * A243215 Number of 4-matchings of the n X n grid graph.
  * @author Georg Fischer
  */
 public class A243215 extends GeneratingFunctionSequence {

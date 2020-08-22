@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078907 Expansion of modular function <code>j/256</code> in powers of <code>m=k^2=lambda(t)</code>.
+ * A078907 Expansion of modular function j/256 in powers of m=k^2=lambda(t).
  * @author Georg Fischer
  */
 public class A078907 extends HolonomicRecurrence {

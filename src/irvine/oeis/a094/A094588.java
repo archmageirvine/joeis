@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094588 <code>a(n) = n*F(n-1) + F(n)</code>, where F <code>= A000045</code>.
+ * A094588 a(n) = n*F(n-1) + F(n), where F = A000045.
  * @author Sean A. Irvine
  */
 public class A094588 extends LinearRecurrence {

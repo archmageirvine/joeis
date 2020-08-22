@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013958 <code>sigma_10(n)</code>, the sum of the <code>10th</code> powers of the divisors of <code>n</code>.
+ * A013958 sigma_10(n), the sum of the 10th powers of the divisors of n.
  * @author Sean A. Irvine
  */
 public class A013958 implements Sequence {

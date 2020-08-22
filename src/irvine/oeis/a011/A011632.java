@@ -6,7 +6,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A011632 <code>28th</code> cyclotomic polynomial.
+ * A011632 28th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A011632 extends FiniteSequence {

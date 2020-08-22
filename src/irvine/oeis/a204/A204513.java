@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204513 <code>A204517(n)^2 = floor[A055859(n)/7]</code>: Squares which written in base 7, with some digit appended, yield another square.
+ * A204513 A204517(n)^2 = floor[A055859(n)/7]: Squares which written in base 7, with some digit appended, yield another square.
  * @author Georg Fischer
  */
 public class A204513 extends GeneratingFunctionSequence {

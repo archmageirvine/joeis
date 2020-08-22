@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004003 Number of domino tilings (or dimer coverings) of a <code>2n X 2n</code> square.
+ * A004003 Number of domino tilings (or dimer coverings) of a 2n X 2n square.
  * @author Sean A. Irvine
  */
 public class A004003 extends MemorySequence {

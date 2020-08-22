@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A064108 <code>a(n) = (20^n-1)/19</code>.
+ * A064108 a(n) = (20^n-1)/19.
  * @author Sean A. Irvine
  */
 public class A064108 extends LinearRecurrence {

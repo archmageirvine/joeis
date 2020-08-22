@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A205633 Expansion of <code>f(x^3, x^7)</code> in powers of x where <code>f()</code> is Ramanujan's two-variable theta function.
+ * A205633 Expansion of f(x^3, x^7) in powers of x where f() is Ramanujan's two-variable theta function.
  * @author Georg Fischer
  */
 public class A205633 extends EulerTransform {

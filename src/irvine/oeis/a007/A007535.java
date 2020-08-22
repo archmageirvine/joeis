@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007535 Smallest pseudoprime <code>( &gt; n )</code> to base n: smallest composite number m <code>&gt; n</code> such that <code>n^(m-1)-1</code> is divisible by m.
+ * A007535 Smallest pseudoprime ( &gt; n ) to base n: smallest composite number m &gt; n such that n^(m-1)-1 is divisible by m.
  * @author Sean A. Irvine
  */
 public class A007535 implements Sequence {

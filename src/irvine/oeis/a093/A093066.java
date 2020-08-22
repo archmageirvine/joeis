@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093066 Decimal expansion of <code>(4 + 17*sqrt(2) - 6*sqrt(3) - 7*Pi + 21*log(1+sqrt(2)) + 42*log(2+sqrt(3)))/75</code>.
+ * A093066 Decimal expansion of (4 + 17*sqrt(2) - 6*sqrt(3) - 7*Pi + 21*log(1+sqrt(2)) + 42*log(2+sqrt(3)))/75.
  * @author Georg Fischer
  */
 public class A093066 extends DecimalExpansionSequence {

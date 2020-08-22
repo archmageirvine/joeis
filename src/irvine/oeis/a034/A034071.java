@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034071 Decimal part of <code>a(n)^(1/6)</code> starts with n so that <code>a(n)&lt;a(n+1)</code>.
+ * A034071 Decimal part of a(n)^(1/6) starts with n so that a(n)&lt;a(n+1).
  * @author Sean A. Irvine
  */
 public class A034071 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035172 <code>a(n) = Sum_{d|n} Kronecker(-18, d)</code>.
+ * A035172 a(n) = Sum_{d|n} Kronecker(-18, d).
  * @author Georg Fischer
  */
 public class A035172 extends EulerTransform {

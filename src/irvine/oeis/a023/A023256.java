@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023256 Numbers n such that n remains prime through 2 iterations of function <code>f(x) = 6x + 1</code>.
+ * A023256 Numbers n such that n remains prime through 2 iterations of function f(x) = 6x + 1.
  * @author Sean A. Irvine
  */
 public class A023256 extends A000040 {

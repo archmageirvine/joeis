@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A220119 <code>a(n) = Sum_{0&lt;=j&lt;=n, 0&lt;=k&lt;=n} binomial(n,j)^2 * binomial(n,k)^2 * binomial(n+j,n) * binomial(n+k,n) * binomial(j+k,n)</code>.
+ * A220119 a(n) = Sum_{0&lt;=j&lt;=n, 0&lt;=k&lt;=n} binomial(n,j)^2 * binomial(n,k)^2 * binomial(n+j,n) * binomial(n+k,n) * binomial(j+k,n).
  * @author Georg Fischer
  */
 public class A220119 extends HolonomicRecurrence {

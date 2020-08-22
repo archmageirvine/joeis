@@ -4,7 +4,7 @@ package irvine.oeis.a207;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A207996 Number of <code>nX7 0..2</code> arrays with new values 0..2 introduced in row major order and no element equal to any horizontal or vertical neighbor (colorings ignoring permutations of colors).
+ * A207996 Number of nX7 0..2 arrays with new values 0..2 introduced in row major order and no element equal to any horizontal or vertical neighbor (colorings ignoring permutations of colors).
  * @author Georg Fischer
  */
 public class A207996 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a095.A095901;
 
 
 /**
- * A283482 Positions of even terms in <code>A004001</code>.
+ * A283482 Positions of even terms in A004001.
  * @author Georg Fischer
  */
 public class A283482 extends PositionSequence {

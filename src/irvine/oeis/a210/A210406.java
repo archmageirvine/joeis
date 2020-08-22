@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A210406 Number of <code>(n+1) X 2 0..3</code> arrays with every <code>2 X 2</code> subblock having three or four distinct values, and new values 0..3 introduced in row major order.
+ * A210406 Number of (n+1) X 2 0..3 arrays with every 2 X 2 subblock having three or four distinct values, and new values 0..3 introduced in row major order.
  * @author Georg Fischer
  */
 public class A210406 extends GeneratingFunctionSequence {

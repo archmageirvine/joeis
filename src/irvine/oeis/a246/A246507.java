@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246507 <code>a(n) = 70*(n+1)*binomial(2*n+1,n+1)/(n+5)</code>.
+ * A246507 a(n) = 70*(n+1)*binomial(2*n+1,n+1)/(n+5).
  * @author Georg Fischer
  */
 public class A246507 extends HolonomicRecurrence {

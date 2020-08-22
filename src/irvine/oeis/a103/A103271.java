@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001043;
 
 
 /**
- * A103271 <code>a(n) = (prime(n)+prime(n+1)) mod 4</code>.
+ * A103271 a(n) = (prime(n)+prime(n+1)) mod 4.
  * @author Georg Fischer
  */
 public class A103271 extends A001043 {

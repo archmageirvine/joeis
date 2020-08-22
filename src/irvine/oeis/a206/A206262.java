@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206262 Number of <code>(n+1) X 4 0..1</code> arrays with the number of rightwards and downwards edge increases in each <code>2 X 2</code> subblock equal to the number in all its horizontal and vertical neighbors.
+ * A206262 Number of (n+1) X 4 0..1 arrays with the number of rightwards and downwards edge increases in each 2 X 2 subblock equal to the number in all its horizontal and vertical neighbors.
  * @author Georg Fischer
  */
 public class A206262 extends GeneratingFunctionSequence {

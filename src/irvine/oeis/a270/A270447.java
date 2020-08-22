@@ -5,7 +5,7 @@ package irvine.oeis.a270;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A270447 Binomial <code>transform(2)</code> of Catalan numbers.
+ * A270447 Binomial transform(2) of Catalan numbers.
  * @author Georg Fischer
  */
 public class A270447 extends HolonomicRecurrence {

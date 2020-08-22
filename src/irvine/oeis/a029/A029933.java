@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029933 Numerator of <code>n * Product_{d|n} (1 + 1/d)</code>.
+ * A029933 Numerator of n * Product_{d|n} (1 + 1/d).
  * @author Sean A. Irvine
  */
 public class A029933 implements Sequence {

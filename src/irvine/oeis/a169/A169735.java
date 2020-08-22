@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A169735 <code>a(1) = 100;</code> for <code>n&gt;1, a(n) = a(n-1) - digitsum(a(n-1))</code>.
+ * A169735 a(1) = 100; for n&gt;1, a(n) = a(n-1) - digitsum(a(n-1)).
  * @author Georg Fischer
  */
 public class A169735 extends PaddingSequence {

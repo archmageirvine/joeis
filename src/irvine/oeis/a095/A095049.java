@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A095049 Number of distinct digits needed to write in decimal representation all positive non-divisors of n that are less than <code>n</code>.
+ * A095049 Number of distinct digits needed to write in decimal representation all positive non-divisors of n that are less than n.
  * @author Georg Fischer
  */
 public class A095049 extends PaddingSequence {

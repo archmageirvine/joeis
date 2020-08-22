@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002807 <code>a(n) = Sum_{k=3..n} (k-1)!*C(n,k)/2</code>.
+ * A002807 a(n) = Sum_{k=3..n} (k-1)!*C(n,k)/2.
  * @author Sean A. Irvine
  */
 public class A002807 implements Sequence {

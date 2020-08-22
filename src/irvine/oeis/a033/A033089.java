@@ -4,7 +4,7 @@ import irvine.oeis.RecordSequence;
 import irvine.oeis.a001.A001203;
 
 /**
- * A033089 Incrementally largest terms in the continued fraction for <code>Pi</code>.
+ * A033089 Incrementally largest terms in the continued fraction for Pi.
  * @author Sean A. Irvine
  */
 public class A033089 extends RecordSequence {

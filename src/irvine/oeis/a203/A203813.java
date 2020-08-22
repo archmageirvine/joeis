@@ -5,7 +5,7 @@ package irvine.oeis.a203;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A203813 Michael Stifel's <code>16 X 16</code> magic square read by rows.
+ * A203813 Michael Stifel's 16 X 16 magic square read by rows.
  * @author Georg Fischer
  */
 public class A203813 extends FiniteSequence {

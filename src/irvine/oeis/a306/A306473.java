@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306473 <code>a(n)</code> is the maximum number of distinct palindromic not necessarily contiguous subwords over all binary words of length <code>n</code>.
+ * A306473 a(n) is the maximum number of distinct palindromic not necessarily contiguous subwords over all binary words of length n.
  * @author Georg Fischer
  */
 public class A306473 extends GeneratingFunctionSequence {

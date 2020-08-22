@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051376 Number of Boolean functions of n variables and rank 4 from Post class <code>F(5,inf)</code>.
+ * A051376 Number of Boolean functions of n variables and rank 4 from Post class F(5,inf).
  * @author Sean A. Irvine
  */
 public class A051376 extends LinearRecurrence {

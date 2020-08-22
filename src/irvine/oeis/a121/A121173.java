@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121173 Sequence S with property that for n in S, <code>a(n) = a(1) + a(2) +...+ a(n-1)</code> and for n not in S, <code>a(n) = n+1</code>.
+ * A121173 Sequence S with property that for n in S, a(n) = a(1) + a(2) +...+ a(n-1) and for n not in S, a(n) = n+1.
  * @author Georg Fischer
  */
 public class A121173 extends GeneratingFunctionSequence {

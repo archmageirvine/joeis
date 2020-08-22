@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A261276 100-gonal numbers: <code>a(n) = 98*n*(n-1)/2 + n</code>.
+ * A261276 100-gonal numbers: a(n) = 98*n*(n-1)/2 + n.
  * @author Sean A. Irvine
  */
 public class A261276 extends LinearRecurrence {

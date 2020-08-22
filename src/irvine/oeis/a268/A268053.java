@@ -4,7 +4,7 @@ package irvine.oeis.a268;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A268053 Number of <code>n X 5 0..2</code> arrays with new values introduced in each row and column in sequential order starting with zero.
+ * A268053 Number of n X 5 0..2 arrays with new values introduced in each row and column in sequential order starting with zero.
  * @author Georg Fischer
  */
 public class A268053 extends GeneratingFunctionSequence {

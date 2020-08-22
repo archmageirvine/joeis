@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013875 <code>a(n) = 15^(5*n + 2)</code>.
+ * A013875 a(n) = 15^(5*n + 2).
  * @author Sean A. Irvine
  */
 public class A013875 implements Sequence {

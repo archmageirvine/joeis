@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A227061 <code>T(n,k) =</code> Number of <code>(n+k-1) X (n+k-1)</code> binary arrays with k <code>1s</code> in every row and column with rows and columns in lexicographically nondecreasing order.
+ * A227061 T(n,k) = Number of (n+k-1) X (n+k-1) binary arrays with k 1s in every row and column with rows and columns in lexicographically nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A227061 extends MemoryFunction2<Integer, Long> implements Sequence {

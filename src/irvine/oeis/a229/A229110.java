@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a024.A024816;
 
 /**
- * A229110 Sum of non-divisors of n reduced modulo <code>n</code>.
+ * A229110 Sum of non-divisors of n reduced modulo n.
  * @author Georg Fischer
  */
 public class A229110 extends A024816 {

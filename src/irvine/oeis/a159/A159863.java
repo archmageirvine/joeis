@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A159863 <code>a(3)(baseN) =</code> least number m such that the quotient <code>m/3</code> is obtained merely by shifting the leftmost digit (MSD) of m to the right end (LSD), and the multiple <code>3m</code> by shifting the LSD of m to the MSD, in order of increasing number base, N.
+ * A159863 a(3)(baseN) = least number m such that the quotient m/3 is obtained merely by shifting the leftmost digit (MSD) of m to the right end (LSD), and the multiple 3m by shifting the LSD of m to the MSD, in order of increasing number base, N.
  * @author Georg Fischer
  */
 public class A159863 extends FiniteSequence {

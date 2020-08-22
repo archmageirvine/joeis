@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A285265 Decimal expansion of the mass energy equivalent of the neutral pion <code>pi^0</code> in MeV.
+ * A285265 Decimal expansion of the mass energy equivalent of the neutral pion pi^0 in MeV.
  * @author Georg Fischer
  */
 public class A285265 extends NoncomputableSequence {

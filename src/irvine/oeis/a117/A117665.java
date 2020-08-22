@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117665 n times the <code>n-th n-gonal</code> number.
+ * A117665 n times the n-th n-gonal number.
  * @author Georg Fischer
  */
 public class A117665 extends GeneratingFunctionSequence {

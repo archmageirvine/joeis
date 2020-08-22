@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249572 Least positive integer whose decimal digits divide the plane into <code>n+1</code> regions. Equivalently, least positive integer with n holes in its decimal digits.
+ * A249572 Least positive integer whose decimal digits divide the plane into n+1 regions. Equivalently, least positive integer with n holes in its decimal digits.
  * @author Georg Fischer
  */
 public class A249572 extends GeneratingFunctionSequence {

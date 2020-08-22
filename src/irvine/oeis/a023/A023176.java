@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023176 Numbers n such that <code>Fibonacci(n) == 5 (mod n)</code>.
+ * A023176 Numbers n such that Fibonacci(n) == 5 (mod n).
  * @author Sean A. Irvine
  */
 public class A023176 extends A000045 {

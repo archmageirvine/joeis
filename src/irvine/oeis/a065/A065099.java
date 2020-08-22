@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A065099 Weight 5 level 11 cusp form with complex multiplication by <code>Q(sqrt(11))</code> and trivial character.
+ * A065099 Weight 5 level 11 cusp form with complex multiplication by Q(sqrt(11)) and trivial character.
  * @author Sean A. Irvine
  */
 public class A065099 implements Sequence {

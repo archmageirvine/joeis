@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001099 <code>a(n) = n^n - a(n-1)</code>, with <code>a(1) = 1</code>.
+ * A001099 a(n) = n^n - a(n-1), with a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A001099 implements Sequence {

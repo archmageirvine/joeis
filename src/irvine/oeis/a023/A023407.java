@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023407 If any power of 2 ends with k <code>3</code>'s and <code>6</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023407 If any power of 2 ends with k 3's and 6's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023407 implements Sequence {

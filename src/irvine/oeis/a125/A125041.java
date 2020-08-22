@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a057.A057205;
 
 /**
- * A125041 Primes of the form <code>24k+17</code> generated recursively. Initial prime is 17. General term is <code>a(n) =</code> Min <code>{p</code> is prime; p divides <code>(2Q)^4 + 1; p == 1 (mod 24)}</code>, where Q is the product of previous terms in the sequence.
+ * A125041 Primes of the form 24k+17 generated recursively. Initial prime is 17. General term is a(n) = Min {p is prime; p divides (2Q)^4 + 1; p == 1 (mod 24)}, where Q is the product of previous terms in the sequence.
  * @author Sean A. Irvine
  */
 public class A125041 extends A057205 {

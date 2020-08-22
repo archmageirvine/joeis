@@ -3,7 +3,7 @@ package irvine.oeis.a010;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A010730 <code>a(n) = (17 -3*(-1)^n)/2</code>.
+ * A010730 a(n) = (17 -3*(-1)^n)/2.
  * @author Sean A. Irvine
  */
 public class A010730 extends PeriodicSequence {

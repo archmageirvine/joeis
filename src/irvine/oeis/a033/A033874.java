@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033874 Difference between the largest prime <code>&lt; 10^n (A003618)</code> and <code>10^n</code>.
+ * A033874 Difference between the largest prime &lt; 10^n (A003618) and 10^n.
  * @author Sean A. Irvine
  */
 public class A033874 implements Sequence {

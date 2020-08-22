@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A028947 Difference between <code>P(n)</code> and nearest integer to <code>P(n-1)^2 / P(n-2)</code>, where <code>P(i) =i-th</code> prime.
+ * A028947 Difference between P(n) and nearest integer to P(n-1)^2 / P(n-2), where P(i) =i-th prime.
  * @author Sean A. Irvine
  */
 public class A028947 extends A000040 {

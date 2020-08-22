@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033998 Numbers n such that the sum of the primes <code>&lt;= n</code> is a square.
+ * A033998 Numbers n such that the sum of the primes &lt;= n is a square.
  * @author Sean A. Irvine
  */
 public class A033998 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A185295 <code>a(n) = - A010815(7*n + 1)</code>.
+ * A185295 a(n) = - A010815(7*n + 1).
  * @author Georg Fischer
  */
 public class A185295 extends EulerTransform {

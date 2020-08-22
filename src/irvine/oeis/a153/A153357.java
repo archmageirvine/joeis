@@ -4,7 +4,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a001.A001008;
 
 /**
- * A153357 Numbers n such that the harmonic number numerator <code>A001008(n)</code> is a semiprime.
+ * A153357 Numbers n such that the harmonic number numerator A001008(n) is a semiprime.
  * @author Sean A. Irvine
  */
 public class A153357 extends SemiprimeSequence {

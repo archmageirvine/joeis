@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052056 Numbers k such that <code>k!</code> starts with its largest prime substring.
+ * A052056 Numbers k such that k! starts with its largest prime substring.
  * @author Sean A. Irvine
  */
 public class A052056 implements Sequence {

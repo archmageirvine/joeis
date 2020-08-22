@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024498 <code>a(n) = [ C(2n,n)/n ]</code>.
+ * A024498 a(n) = [ C(2n,n)/n ].
  * @author Sean A. Irvine
  */
 public class A024498 implements Sequence {

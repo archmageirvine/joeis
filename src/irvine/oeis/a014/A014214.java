@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014214 <code>[ (Pi/2)^n ]</code>.
+ * A014214 [ (Pi/2)^n ].
  * @author Sean A. Irvine
  */
 public class A014214 implements Sequence {

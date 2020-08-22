@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034167 Product of primes <code>= 1 (mod 7)</code> and cubes of primes <code>= 2</code> or <code>4 (mod 7)</code>.
+ * A034167 Product of primes = 1 (mod 7) and cubes of primes = 2 or 4 (mod 7).
  * @author Sean A. Irvine
  */
 public class A034167 implements Sequence {

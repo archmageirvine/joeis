@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A196751 Decimal expansion of <code>8*Pi^4/729</code>.
+ * A196751 Decimal expansion of 8*Pi^4/729.
  * @author Georg Fischer
  */
 public class A196751 extends DecimalExpansionSequence {

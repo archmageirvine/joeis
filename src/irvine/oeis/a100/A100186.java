@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100186 Structured heptagonal anti-diamond numbers (vertex structure <code>7)</code>.
+ * A100186 Structured heptagonal anti-diamond numbers (vertex structure 7).
  * @author Georg Fischer
  */
 public class A100186 extends GeneratingFunctionSequence {

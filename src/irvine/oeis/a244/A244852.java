@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A244852 Least number k <code>&gt; 0</code> such that <code>3^k</code> begins with exactly n consecutive increasing digits.
+ * A244852 Least number k &gt; 0 such that 3^k begins with exactly n consecutive increasing digits.
  * @author Georg Fischer
  */
 public class A244852 extends FiniteSequence {

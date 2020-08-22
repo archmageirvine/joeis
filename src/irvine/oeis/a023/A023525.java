@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A023525 Greatest prime divisor of <code>prime(n)*prime(n-1) + 1</code>.
+ * A023525 Greatest prime divisor of prime(n)*prime(n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A023525 extends A023523 {

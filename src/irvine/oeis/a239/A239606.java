@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A239606 Decimal expansion of <code>e^6 - (Pi^5 + Pi^4)</code>.
+ * A239606 Decimal expansion of e^6 - (Pi^5 + Pi^4).
  * @author Georg Fischer
  */
 public class A239606 extends DecimalExpansionSequence {

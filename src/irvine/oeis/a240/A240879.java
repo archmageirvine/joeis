@@ -5,7 +5,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240879 Self-convolution of <code>Sum(binomial(2*n, i), i=0..n)</code>.
+ * A240879 Self-convolution of Sum(binomial(2*n, i), i=0..n).
  * @author Georg Fischer
  */
 public class A240879 extends HolonomicRecurrence {

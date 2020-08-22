@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059597 Ninth column <code>(m=8)</code> of convolution triangle <code>A059594(n,m)</code>.
+ * A059597 Ninth column (m=8) of convolution triangle A059594(n,m).
  * @author Georg Fischer
  */
 public class A059597 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053107 Expansion of <code>1/(1-8*x)^8</code>.
+ * A053107 Expansion of 1/(1-8*x)^8.
  * @author Georg Fischer
  */
 public class A053107 extends GeneratingFunctionSequence {

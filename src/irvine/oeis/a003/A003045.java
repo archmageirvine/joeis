@@ -1,7 +1,7 @@
 package irvine.oeis.a003;
 
 /**
- * A003045 <code>a(n) (n&gt;6)</code> is least integer <code>&gt; a(n-1)</code> with precisely three representations <code>a(n) = a(i) + a(j), 1&lt;=i&lt;j&lt;n</code>.
+ * A003045 a(n) (n&gt;6) is least integer &gt; a(n-1) with precisely three representations a(n) = a(i) + a(j), 1&lt;=i&lt;j&lt;n.
  * @author Sean A. Irvine
  */
 public class A003045 extends A003044 {

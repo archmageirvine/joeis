@@ -6,7 +6,7 @@ package irvine.oeis.a316;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A316320 Coordination sequence for a hexavalent node in a chamfered version of the <code>3^6</code> triangular tiling of the plane.
+ * A316320 Coordination sequence for a hexavalent node in a chamfered version of the 3^6 triangular tiling of the plane.
  * @author Georg Fischer
  */
 public class A316320 extends HolonomicRecurrence {

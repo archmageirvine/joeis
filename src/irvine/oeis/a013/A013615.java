@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013615 Triangle of coefficients in expansion of <code>(1+8x)^n</code>.
+ * A013615 Triangle of coefficients in expansion of (1+8x)^n.
  * @author Sean A. Irvine
  */
 public class A013615 implements Sequence {

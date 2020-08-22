@@ -7,7 +7,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A098493 Triangle <code>T(n,k)</code> read by rows: difference between <code>A098489</code> and <code>A098490</code> at triangular rows.
+ * A098493 Triangle T(n,k) read by rows: difference between A098489 and A098490 at triangular rows.
  * @author Georg Fischer
  */
 public class A098493 extends GeneratingFunctionTriangle {

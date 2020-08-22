@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007778;
 
 
 /**
- * A122606 <code>n^(n+1) mod 7</code>.
+ * A122606 n^(n+1) mod 7.
  * @author Georg Fischer
  */
 public class A122606 extends A007778 {

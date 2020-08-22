@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A030686 Smallest nontrivial extension of <code>n^2</code> which is a square.
+ * A030686 Smallest nontrivial extension of n^2 which is a square.
  * @author Sean A. Irvine
  */
 public class A030686 extends A000290 {

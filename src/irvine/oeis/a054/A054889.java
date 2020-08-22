@@ -6,7 +6,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054889 Layer counting sequence for hyperbolic tessellation by regular pentagons of angle <code>2*Pi/5</code>.
+ * A054889 Layer counting sequence for hyperbolic tessellation by regular pentagons of angle 2*Pi/5.
  * @author Georg Fischer
  */
 public class A054889 extends GeneratingFunctionSequence {

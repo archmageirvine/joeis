@@ -5,7 +5,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061990 Number of ways to place 4 nonattacking queens on a <code>4 X n</code> board.
+ * A061990 Number of ways to place 4 nonattacking queens on a 4 X n board.
  * @author Georg Fischer
  */
 public class A061990 extends HolonomicRecurrence {

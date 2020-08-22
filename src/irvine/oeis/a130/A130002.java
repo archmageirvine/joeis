@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130002 Alternating sum along antidiagonals of the array of <code>A129952</code> and its iterated differences.
+ * A130002 Alternating sum along antidiagonals of the array of A129952 and its iterated differences.
  * @author Georg Fischer
  */
 public class A130002 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A023886 Average of proper divisors (excluding <code>1)</code> is an integer.
+ * A023886 Average of proper divisors (excluding 1) is an integer.
  * @author Sean A. Irvine
  */
 public class A023886 extends A002808 {

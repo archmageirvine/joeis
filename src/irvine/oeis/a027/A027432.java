@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027432 Related to sorting procedure studied by West: number of permutations that are both sorted <code>(i.e.</code>, obtainable as output of the sorting procedure) and one-stack sortable.
+ * A027432 Related to sorting procedure studied by West: number of permutations that are both sorted (i.e., obtainable as output of the sorting procedure) and one-stack sortable.
  * @author Sean A. Irvine
  */
 public class A027432 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188731 Decimal expansion of <code>(5+sqrt(41))/4</code>.
+ * A188731 Decimal expansion of (5+sqrt(41))/4.
  * @author Georg Fischer
  */
 public class A188731 extends DecimalExpansionSequence {

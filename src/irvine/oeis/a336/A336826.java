@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A336826 Bogot\u00e1 numbers: numbers k such that k <code>= m*p(m)</code> where <code>p(m)</code> is the digital product of m.
+ * A336826 Bogot\u00e1 numbers: numbers k such that k = m*p(m) where p(m) is the digital product of m.
  * @author Sean A. Irvine
  */
 public class A336826 implements Sequence {

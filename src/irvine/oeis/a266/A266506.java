@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266506 <code>a(2n) = a(2n - 4) + a(2n - 3)</code> and <code>a(2n + 1) = 2*a(2n - 4) + a(2n - 3)</code>, with <code>a(0) = 2, a(1) = -1, a(2) = 2, a(3) = 1</code>. Alternatively, interleave denominators <code>(A266504)</code> and numerators <code>(A266505)</code> of convergents to <code>sqrt(2)</code>.
+ * A266506 a(2n) =  a(2n - 4) + a(2n - 3) and a(2n + 1) = 2*a(2n - 4) + a(2n - 3), with a(0) = 2, a(1) = -1, a(2) = 2, a(3) = 1. Alternatively, interleave denominators (A266504) and numerators (A266505) of convergents to sqrt(2).
  * @author Georg Fischer
  */
 public class A266506 extends GeneratingFunctionSequence {

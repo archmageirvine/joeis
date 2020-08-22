@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A217458 Decimal expansion of <code>2^(Pi*sqrt(2))</code>.
+ * A217458 Decimal expansion of 2^(Pi*sqrt(2)).
  * @author Georg Fischer
  */
 public class A217458 extends DecimalExpansionSequence {

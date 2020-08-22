@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028816 Numbers n such that <code>n^2</code> is a palindrome with an odd number of digits.
+ * A028816 Numbers n such that n^2 is a palindrome with an odd number of digits.
  * @author Sean A. Irvine
  */
 public class A028816 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A277631 Number of aperiodic necklaces (Lyndon words) with <code>k&lt;=6</code> black beads and n-k white beads.
+ * A277631 Number of aperiodic necklaces (Lyndon words) with k&lt;=6 black beads and n-k white beads.
  * @author Georg Fischer
  */
 public class A277631 extends GeneratingFunctionSequence {

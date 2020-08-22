@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162289 <code>a(n) = 1</code> if n is relatively prime to 30 else 0.
+ * A162289 a(n) = 1 if n is relatively prime to 30 else 0.
  * @author Georg Fischer
  */
 public class A162289 extends GeneratingFunctionSequence {

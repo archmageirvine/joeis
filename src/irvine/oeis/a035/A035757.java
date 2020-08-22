@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A035757 Coordination sequence for <code>C_20</code> lattice.
+ * A035757 Coordination sequence for C_20 lattice.
  * @author Georg Fischer
  */
 public class A035757 extends LatticeCoordinationSequence {

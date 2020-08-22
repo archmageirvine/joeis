@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A110191 Decimal expansion of <code>1/6 - 1/(2*Pi)</code>.
+ * A110191 Decimal expansion of 1/6 - 1/(2*Pi).
  * @author Georg Fischer
  */
 public class A110191 extends DecimalExpansionSequence {

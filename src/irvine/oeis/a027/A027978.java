@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027978 <code>a(n) = self-convolution</code> of row n of array T given by <code>A027960</code>.
+ * A027978 a(n) = self-convolution of row n of array T given by A027960.
  * @author Georg Fischer
  */
 public class A027978 extends GeneratingFunctionSequence {

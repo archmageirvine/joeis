@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A023527 Least odd prime divisor of <code>p(n)*p(n-1) + 1</code>, or 1 if <code>p(n)*p(n-1) + 1</code> is a power of 2.
+ * A023527 Least odd prime divisor of p(n)*p(n-1) + 1, or 1 if p(n)*p(n-1) + 1 is a power of 2.
  * @author Sean A. Irvine
  */
 public class A023527 extends A023523 {

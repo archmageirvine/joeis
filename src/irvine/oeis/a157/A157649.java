@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157649 Decimal expansion of <code>(387 + 182*sqrt(2))/17^2</code>.
+ * A157649 Decimal expansion of (387 + 182*sqrt(2))/17^2.
  * @author Georg Fischer
  */
 public class A157649 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A030719 Number of new terms at stage n in the formation of <code>A030717</code>.
+ * A030719 Number of new terms at stage n in the formation of A030717.
  * @author Sean A. Irvine
  */
 public class A030719 implements Sequence {

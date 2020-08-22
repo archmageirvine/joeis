@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177116 Partial sums of <code>round(n^2/11)</code>.
+ * A177116 Partial sums of round(n^2/11).
  * @author Sean A. Irvine
  */
 public class A177116 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048260 The sum of <code>2</code> (not necessarily distinct) abundant numbers.
+ * A048260 The sum of 2 (not necessarily distinct) abundant numbers.
  * @author Georg Fischer
  */
 public class A048260 extends HolonomicRecurrence {

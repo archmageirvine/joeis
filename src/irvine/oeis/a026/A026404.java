@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026404 <code>a(n) =</code> greatest number of numbers between consecutive appearances of n in <code>A026400</code>.
+ * A026404 a(n) = greatest number of numbers between consecutive appearances of n in A026400.
  * @author Sean A. Irvine
  */
 public class A026404 extends A026400 {

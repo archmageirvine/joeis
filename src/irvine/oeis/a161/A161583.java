@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161583 The list of the k values in the common solutions to the 2 equations <code>15*k+1=A^2, 19*k+1=B^2</code>.
+ * A161583 The list of the k values in the common solutions to the 2 equations 15*k+1=A^2, 19*k+1=B^2.
  * @author Georg Fischer
  */
 public class A161583 extends GeneratingFunctionSequence {

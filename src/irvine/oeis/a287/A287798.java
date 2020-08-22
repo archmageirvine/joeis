@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A287798 Least k such that <code>A006667(k)/A006577(k) = 1/n</code>.
+ * A287798 Least k such that A006667(k)/A006577(k) = 1/n.
  * @author Georg Fischer
  */
 public class A287798 extends GeneratingFunctionSequence {

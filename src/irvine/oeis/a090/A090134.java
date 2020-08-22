@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090134 <code>a(n) = (6*n!/(n+5)) *binomial(n+5,n-1)* 6F6(-n+1, 1/5*n+1, 1/5*n+9/5, 1/5*n+8/5, 1/5*n+7/5, 1/5*n+6/5; 7/6, 4/3, 3/2, 5/3, 11/6, 2; -3125/46656)</code>, where <code>6F6(;;)</code> is the generalized hypergeometric series.
+ * A090134 a(n) = (6*n!/(n+5)) *binomial(n+5,n-1)* 6F6(-n+1, 1/5*n+1, 1/5*n+9/5, 1/5*n+8/5, 1/5*n+7/5, 1/5*n+6/5; 7/6, 4/3, 3/2, 5/3, 11/6, 2; -3125/46656), where 6F6(;;) is the generalized hypergeometric series.
  * @author Georg Fischer
  */
 public class A090134 extends HolonomicRecurrence {

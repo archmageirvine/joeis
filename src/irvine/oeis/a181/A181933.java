@@ -6,7 +6,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181933 <code>a(n) = Sum_{k=0..n} binomial(n+k,k)*sin(Pi*(n+k)/2)</code>.
+ * A181933 a(n) = Sum_{k=0..n} binomial(n+k,k)*sin(Pi*(n+k)/2).
  * @author Georg Fischer
  */
 public class A181933 extends HolonomicRecurrence {

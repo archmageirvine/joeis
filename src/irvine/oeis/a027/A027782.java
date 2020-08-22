@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027782 <code>a(n) = 9*(n+1)*binomial(n+2,9)/2</code>.
+ * A027782 a(n) = 9*(n+1)*binomial(n+2,9)/2.
  * @author Georg Fischer
  */
 public class A027782 extends GeneratingFunctionSequence {

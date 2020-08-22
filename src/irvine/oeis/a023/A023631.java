@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A023631 <code>a(n) = c([ (n+1)/2 ]) +</code> n, with <code>a(1) = 1</code> and <code>a(2) = 4, c =</code> complement to a.
+ * A023631 a(n) = c([ (n+1)/2 ]) + n, with a(1) = 1 and a(2) = 4, c = complement to a.
  * @author Sean A. Irvine
  */
 public class A023631 implements Sequence {

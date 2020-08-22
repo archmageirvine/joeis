@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033272 Number of odd nonprimes dividing <code>n</code>.
+ * A033272 Number of odd nonprimes dividing n.
  * @author Sean A. Irvine
  */
 public class A033272 implements Sequence {

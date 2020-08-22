@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicArray;
 import java.util.Arrays;
 
 /**
- * A003407 Number of permutations of <code>[n]</code> with no 3-term arithmetic progression.
+ * A003407 Number of permutations of [n] with no 3-term arithmetic progression.
  * @author Sean A. Irvine
  */
 public class A003407 implements Sequence {

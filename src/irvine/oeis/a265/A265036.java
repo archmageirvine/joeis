@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 // DO NOT EDIT here!
 
 /**
- * A265036 Coordination sequence of 2-uniform tiling <code>{3.4.6.4, 4.6.12}</code> with respect to a point of type 3.4.6.4.
+ * A265036 Coordination sequence of 2-uniform tiling {3.4.6.4, 4.6.12} with respect to a point of type 3.4.6.4.
  * @author Georg Fischer
  */
 public class A265036 extends A265035 {

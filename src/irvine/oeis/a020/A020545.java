@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020545 3rd Bernoulli polynomial evaluated at <code>x=n!</code>.
+ * A020545 3rd Bernoulli polynomial evaluated at x=n!.
  * @author Sean A. Irvine
  */
 public class A020545 implements Sequence {

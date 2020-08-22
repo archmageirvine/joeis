@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054343 Number of nonnegative integer <code>3 X 3</code> matrices with sum of elements equal to n, under action of dihedral group of the square <code>D_4</code>.
+ * A054343 Number of nonnegative integer 3 X 3 matrices with sum of elements equal to n, under action of dihedral group of the square D_4.
  * @author Georg Fischer
  */
 public class A054343 extends GeneratingFunctionSequence {

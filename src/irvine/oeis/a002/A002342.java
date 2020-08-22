@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002342 Least positive integer x such that <code>p=(x^2-5y^2)/4</code> where p is the n-th odd prime such that 5 is a square <code>mod</code> p.
+ * A002342 Least positive integer x such that p=(x^2-5y^2)/4 where p is the n-th odd prime such that 5 is a square mod p.
  * @author Sean A. Irvine
  */
 public class A002342 implements Sequence {

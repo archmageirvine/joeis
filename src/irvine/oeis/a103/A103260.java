@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A103260 Number of partitions of <code>2n</code> prime to 3 with all odd parts occurring with multiplicity 2. The even parts occur with multiplicity 1.
+ * A103260 Number of partitions of 2n prime to 3 with all odd parts occurring with multiplicity 2. The even parts occur with multiplicity 1.
  * @author Georg Fischer
  */
 public class A103260 extends EulerTransform {

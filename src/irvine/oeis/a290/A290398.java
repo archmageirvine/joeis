@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290398 Number of tiles in distance d from a given heptagon in the truncated <code>order-3</code> tiling of the heptagonal plane <code>(a.k.a</code>. the "hyperbolic <code>soccerball")</code>.
+ * A290398 Number of tiles in distance d from a given heptagon in the truncated order-3 tiling of the heptagonal plane (a.k.a. the "hyperbolic soccerball").
  * @author Georg Fischer
  */
 public class A290398 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A173991 <code>Bayley-Thomsen-Bohr</code> periodic <code>table(s) (1882-1895-1922)</code> adapted by Scerri <code>(1997)</code>.
+ * A173991 Bayley-Thomsen-Bohr periodic table(s) (1882-1895-1922) adapted by Scerri (1997).
  * @author Georg Fischer
  */
 public class A173991 extends NoncomputableSequence {

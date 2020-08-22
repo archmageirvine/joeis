@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054621 Number of ways to color vertices of a heptagon using <code>&lt;= n</code> colors, allowing only rotations.
+ * A054621 Number of ways to color vertices of a heptagon using &lt;= n colors, allowing only rotations.
  * @author Sean A. Irvine
  */
 public class A054621 extends LinearRecurrence {

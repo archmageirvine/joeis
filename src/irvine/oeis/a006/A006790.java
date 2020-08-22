@@ -8,7 +8,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a000.A000055;
 
 /**
- * A006790 Exponentiation of e.g.f. for trees <code>A000055(n-1)</code>.
+ * A006790 Exponentiation of e.g.f. for trees A000055(n-1).
  * @author Sean A. Irvine
  */
 public class A006790 extends MemorySequence {

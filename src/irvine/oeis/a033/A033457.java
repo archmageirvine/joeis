@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000290;
 
 /**
- * A033457 GCD-convolution of squares <code>A000290</code> with themselves.
+ * A033457 GCD-convolution of squares A000290 with themselves.
  * @author Sean A. Irvine
  */
 public class A033457 implements Sequence {

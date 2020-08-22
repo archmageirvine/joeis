@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236453 Number of length n strings on the alphabet <code>{0,1,2}</code> of the form <code>0^i 1^j 2^k</code> such that <code>i,j,k&gt;=0</code> and if <code>i=1</code> then <code>j=k</code>.
+ * A236453 Number of length n strings on the alphabet {0,1,2} of the form 0^i 1^j 2^k such that i,j,k&gt;=0 and if i=1 then j=k.
  * @author Georg Fischer
  */
 public class A236453 extends GeneratingFunctionSequence {

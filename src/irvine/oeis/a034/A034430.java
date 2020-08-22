@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034430 Convolution of <code>A001147</code> (double factorial numbers) with itself.
+ * A034430 Convolution of A001147 (double factorial numbers) with itself.
  * @author Georg Fischer
  */
 public class A034430 extends HolonomicRecurrence {

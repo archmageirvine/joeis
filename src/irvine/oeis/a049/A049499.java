@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A049499 A finite sequence of primes: the primes <code>671353+4^k</code> for <code>k=1, 2, 3, 4, 5, 6, 7, 8, 9</code>.
+ * A049499 A finite sequence of primes: the primes 671353+4^k for k=1, 2, 3, 4, 5, 6, 7, 8, 9.
  * @author Georg Fischer
  */
 public class A049499 extends FiniteSequence {

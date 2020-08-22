@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a123.A123071;
 
 /**
- * A005631 Bishops on a <code>2n+1 X 2n+1</code> board (see Robinson paper for details).
+ * A005631 Bishops on a 2n+1 X 2n+1 board (see Robinson paper for details).
  * @author Sean A. Irvine
  */
 public class A005631 extends A123071 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032272 Shifts left under "DIJ" <code>(bracelet</code>, indistinct, labeled) transform, with <code>a(1)=2</code>.
+ * A032272 Shifts left under "DIJ" (bracelet, indistinct, labeled) transform, with a(1)=2.
  * @author Sean A. Irvine
  */
 public class A032272 implements Sequence {

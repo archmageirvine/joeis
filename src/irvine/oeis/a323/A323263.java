@@ -5,7 +5,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323263 The sequence denoted by <code>d_n</code> used in the calculation of <code>A323260</code>.
+ * A323263 The sequence denoted by d_n used in the calculation of A323260.
  * @author Georg Fischer
  */
 public class A323263 extends HolonomicRecurrence {

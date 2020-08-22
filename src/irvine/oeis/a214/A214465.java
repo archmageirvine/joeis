@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214465 Degrees of irreducible representations of symplectic group <code>S4(4)</code>.
+ * A214465 Degrees of irreducible representations of symplectic group S4(4).
  * @author Georg Fischer
  */
 public class A214465 extends FiniteSequence {

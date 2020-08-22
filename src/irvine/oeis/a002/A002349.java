@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002349 Take solution to Pellian equation <code>x^2 - n*y^2 = 1</code> with smallest positive y and <code>x &gt;= 0;</code> sequence gives <code>a(n) =</code> y, or 0 if n is a square. <code>A002350</code> gives values of <code>x</code>.
+ * A002349 Take solution to Pellian equation x^2 - n*y^2 = 1 with smallest positive y and x &gt;= 0; sequence gives a(n) = y, or 0 if n is a square. A002350 gives values of x.
  * @author Sean A. Irvine
  */
 public class A002349 implements Sequence {

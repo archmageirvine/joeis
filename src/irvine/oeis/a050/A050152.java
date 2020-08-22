@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050152 <code>a(n) = T(n,n+3)</code>, array T as in <code>A050143</code>.
+ * A050152 a(n) = T(n,n+3), array T as in A050143.
  * @author Georg Fischer
  */
 public class A050152 extends HolonomicRecurrence {

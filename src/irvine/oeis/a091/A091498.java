@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091498 The sixth column of triangle <code>A091492</code>, excluding leading zeros.
+ * A091498 The sixth column of triangle A091492, excluding leading zeros.
  * @author Sean A. Irvine
  */
 public class A091498 extends LinearRecurrence {

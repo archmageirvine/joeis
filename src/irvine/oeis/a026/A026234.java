@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a018.A018252;
 
 /**
- * A026234 In the sequence of positive integers, swap the k-th prime and k-th nonprime, for k <code>= 1,2,3,..</code>.
+ * A026234 In the sequence of positive integers, swap the k-th prime and k-th nonprime, for k = 1,2,3,...
  * @author Sean A. Irvine
  */
 public class A026234 implements Sequence {

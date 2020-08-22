@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070292 <code>a(n) = lcm(12,n)/gcd(12,n)</code>.
+ * A070292 a(n) = lcm(12,n)/gcd(12,n).
  * @author Georg Fischer
  */
 public class A070292 extends HolonomicRecurrence {

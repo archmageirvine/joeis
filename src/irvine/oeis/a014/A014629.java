@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014629 Number of segments created by diagonals of <code>n-gon</code>.
+ * A014629 Number of segments created by diagonals of n-gon.
  * @author Sean A. Irvine
  */
 public class A014629 implements Sequence {

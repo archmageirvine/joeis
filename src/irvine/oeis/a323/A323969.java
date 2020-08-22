@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323969 Number of <code>5 X n</code> integer matrices <code>(m_{i,j})</code> such that <code>m_{1,1}=0, m_{5,n}=2</code>, and all rows, columns, and falling diagonals are (weakly) monotonic without jumps of 2.
+ * A323969 Number of 5 X n integer matrices (m_{i,j}) such that m_{1,1}=0, m_{5,n}=2, and all rows, columns, and falling diagonals are (weakly) monotonic without jumps of 2.
  * @author Georg Fischer
  */
 public class A323969 extends GeneratingFunctionSequence {

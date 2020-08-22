@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271489 Maximal term of TRIP-Stern sequence of level n corresponding to permutation triple <code>(e,132,e)</code>.
+ * A271489 Maximal term of TRIP-Stern sequence of level n corresponding to permutation triple (e,132,e).
  * @author Georg Fischer
  */
 public class A271489 extends GeneratingFunctionSequence {

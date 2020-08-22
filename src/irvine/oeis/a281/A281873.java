@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A281873 <code>a(n+1)</code> is the smallest number greater than <code>a(n)</code> such that <code>Sum_{j=1..n+1} 1/a(j) &lt;= 4, a(1) = 1</code>.
+ * A281873 a(n+1) is the smallest number greater than a(n) such that Sum_{j=1..n+1} 1/a(j) &lt;= 4, a(1) = 1.
  * @author Georg Fischer
  */
 public class A281873 extends FiniteSequence {

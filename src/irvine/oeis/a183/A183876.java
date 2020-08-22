@@ -6,7 +6,7 @@ package irvine.oeis.a183;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A183876 G.f. satisfies: <code>A(x) = Sum_{n&gt;=0} x^n*[Sum_{k=0..n} C(n,k)^2 *x^k* A(x)^(2k)]</code>.
+ * A183876 G.f. satisfies: A(x) = Sum_{n&gt;=0} x^n*[Sum_{k=0..n} C(n,k)^2 *x^k* A(x)^(2k)].
  * @author Georg Fischer
  */
 public class A183876 extends HolonomicRecurrence {

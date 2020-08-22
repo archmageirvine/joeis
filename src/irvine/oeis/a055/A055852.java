@@ -6,7 +6,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055852 Convolution of <code>A055589</code> with <code>A011782</code>.
+ * A055852 Convolution of A055589 with A011782.
  * @author Georg Fischer
  */
 public class A055852 extends GeneratingFunctionSequence {

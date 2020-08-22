@@ -6,7 +6,7 @@ package irvine.oeis.a238;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238111 Twice the large Schroeder numbers <code>A006318</code>.
+ * A238111 Twice the large Schroeder numbers A006318.
  * @author Georg Fischer
  */
 public class A238111 extends HolonomicRecurrence {

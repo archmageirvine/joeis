@@ -6,7 +6,7 @@ package irvine.oeis.a171;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A171461 <code>a(n) = 1 + 6*10^n + 100^n</code>.
+ * A171461 a(n) = 1 + 6*10^n + 100^n.
  * @author Georg Fischer
  */
 public class A171461 extends HolonomicRecurrence {

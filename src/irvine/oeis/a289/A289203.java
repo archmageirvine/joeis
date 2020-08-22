@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289203 Number of maximum independent vertex sets in the <code>n X n</code> knight graph.
+ * A289203 Number of maximum independent vertex sets in the n X n knight graph.
  * @author Georg Fischer
  */
 public class A289203 extends GeneratingFunctionSequence {

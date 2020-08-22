@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A023636 <code>a(n) = s(3n) - s(3n-1)</code>, where <code>s( )</code> is sequence <code>A023635</code>.
+ * A023636 a(n) = s(3n) - s(3n-1), where s( ) is sequence A023635.
  * @author Sean A. Irvine
  */
 public class A023636 extends DifferenceSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024153 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> that have integer area.
+ * A024153 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n that have integer area.
  * @author Sean A. Irvine
  */
 public class A024153 implements Sequence {

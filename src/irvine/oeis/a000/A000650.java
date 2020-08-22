@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000650 Number of alkyls S <code>C_{n+4} H_{2n+4}</code> with n carbon atoms.
+ * A000650 Number of alkyls S C_{n+4} H_{2n+4} with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000650 extends A000598 {

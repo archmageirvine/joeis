@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A094338 (Sum of composites among next <code>n numbers)-(sum</code> of primes among next <code>n</code> numbers).
+ * A094338 (Sum of composites among next n numbers)-(sum of primes among next n numbers).
  * @author Sean A. Irvine
  */
 public class A094338 implements Sequence {

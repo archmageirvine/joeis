@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032184 "CIJ" <code>(necklace</code>, indistinct, labeled) transform of <code>1, 3, 5, 7,..</code>.
+ * A032184 "CIJ" (necklace, indistinct, labeled) transform of 1, 3, 5, 7,...
  * @author Georg Fischer
  */
 public class A032184 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A034175 <code>a(n)</code> is minimal such that <code>a(n)+a(n-1)</code> is a square and <code>a(n)</code> is not in <code>{a(0)</code>, ..., <code>a(n-1)}</code>.
+ * A034175 a(n) is minimal such that a(n)+a(n-1) is a square and a(n) is not in {a(0), ..., a(n-1)}.
  * @author Sean A. Irvine
  */
 public class A034175 implements Sequence {

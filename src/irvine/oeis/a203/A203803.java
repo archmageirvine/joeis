@@ -6,7 +6,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203803 G.f.: <code>exp( Sum_{n&gt;=1} A000204(n)^3 * x^n/n )</code> where <code>A000204</code> is the Lucas numbers.
+ * A203803 G.f.: exp( Sum_{n&gt;=1} A000204(n)^3 * x^n/n ) where A000204 is the Lucas numbers.
  * @author Georg Fischer
  */
 public class A203803 extends GeneratingFunctionSequence {

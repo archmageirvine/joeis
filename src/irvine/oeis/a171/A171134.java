@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A171134 Similar to <code>A168612</code>, but append on the right a string with the smallest number of <code>0</code>'s followed by a 1.
+ * A171134 Similar to A168612, but append on the right a string with the smallest number of 0's followed by a 1.
  * @author Georg Fischer
  */
 public class A171134 extends FiniteSequence {

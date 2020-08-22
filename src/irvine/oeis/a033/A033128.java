@@ -5,7 +5,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033128 Decimal expansion of <code>a(n)</code> is given by the first n terms of the periodic sequence with initial period 1,0,1.
+ * A033128 Decimal expansion of a(n) is given by the first n terms of the periodic sequence with initial period 1,0,1.
  * @author Georg Fischer
  */
 public class A033128 extends HolonomicRecurrence {

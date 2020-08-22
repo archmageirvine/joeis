@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A318406 For <code>n &gt; 4, a(n) = a(n-1) + a(n-2)</code> if n is even and <code>a(n) = 3*a(n-2) + a(n-4) - a(n-5)</code> if n is odd; <code>a(0) = 0, a(1) = 1, a(2) = 1, a(3) = 2</code>, and <code>a(4) = 3</code>.
+ * A318406 For n &gt; 4, a(n) = a(n-1) + a(n-2) if n is even and a(n) = 3*a(n-2) + a(n-4) - a(n-5) if n is odd; a(0) = 0, a(1) = 1, a(2) = 1, a(3) = 2, and a(4) = 3.
  * @author Georg Fischer
  */
 public class A318406 extends LinearRecurrence {

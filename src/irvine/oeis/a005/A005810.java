@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005810 <code>a(n) = binomial(4n,n)</code>.
+ * A005810 a(n) = binomial(4n,n).
  * @author Sean A. Irvine
  */
 public class A005810 implements Sequence {

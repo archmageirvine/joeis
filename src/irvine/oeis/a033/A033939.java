@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002385;
 import irvine.util.string.StringUtils;
 
 /**
- * A033939 Period of <code>1/n</code> in sequence <code>A033938</code>.
+ * A033939 Period of 1/n in sequence A033938.
  * @author Sean A. Irvine
  */
 public class A033939 extends A002385 {

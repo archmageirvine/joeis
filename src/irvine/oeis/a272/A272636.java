@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A272636 <code>a(0)=0, a(1)=1;</code> thereafter <code>a(n) =</code> squarefree part of <code>a(n-1)+a(n-2)</code>.
+ * A272636 a(0)=0, a(1)=1; thereafter a(n) = squarefree part of a(n-1)+a(n-2).
  * @author Georg Fischer
  */
 public class A272636 extends PaddingSequence {

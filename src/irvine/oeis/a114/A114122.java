@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114122 Expansion of <code>(1+x)^2/(1+2x-4x^3-4x^4)</code>.
+ * A114122 Expansion of (1+x)^2/(1+2x-4x^3-4x^4).
  * @author Georg Fischer
  */
 public class A114122 extends GeneratingFunctionSequence {

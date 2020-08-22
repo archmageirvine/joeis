@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132411 <code>a(0) = 0, a(1) = 1</code> and <code>a(n) = n^2 - 1</code> with <code>n&gt;=2</code>.
+ * A132411 a(0) = 0, a(1) = 1 and a(n) = n^2 - 1 with n&gt;=2.
  * @author Georg Fischer
  */
 public class A132411 extends GeneratingFunctionSequence {

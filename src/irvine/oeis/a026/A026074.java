@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a024.A024996;
 
 /**
- * A026074 <code>a(n) = T(3n,n)</code>, where T is the array defined in <code>A024996</code>.
+ * A026074 a(n) = T(3n,n), where T is the array defined in A024996.
  * @author Sean A. Irvine
  */
 public class A026074 extends A024996 {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000594;
 
 /**
- * A027364 Coefficients of unique normalized cusp form <code>Delta_16</code> of weight 16 for full modular group.
+ * A027364 Coefficients of unique normalized cusp form Delta_16 of weight 16 for full modular group.
  * @author Sean A. Irvine
  */
 public class A027364 extends A000594 {

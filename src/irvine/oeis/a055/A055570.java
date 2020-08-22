@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A055570 Sum of digits of <code>(a(n)^4)</code> is greater than or equal to <code>a(n)</code>.
+ * A055570 Sum of digits of (a(n)^4) is greater than or equal to a(n).
  * @author Georg Fischer
  */
 public class A055570 extends FiniteSequence {

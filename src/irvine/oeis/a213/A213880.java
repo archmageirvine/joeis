@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A213880 <code>a(n) =</code> sum of n-digit numbers with distinct nonzero digits.
+ * A213880 a(n) = sum of n-digit numbers with distinct nonzero digits.
  * @author Georg Fischer
  */
 public class A213880 extends FiniteSequence {

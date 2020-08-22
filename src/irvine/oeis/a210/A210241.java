@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022559;
 
 /**
- * A210241 Partial sums of <code>A073093</code>.
+ * A210241 Partial sums of A073093.
  * @author Georg Fischer
  */
 public class A210241 extends A022559 {

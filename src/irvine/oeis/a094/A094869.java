@@ -6,7 +6,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094869 E.g.f.: <code>exp(5x)/(1-5x)^(1/5)</code>.
+ * A094869 E.g.f.: exp(5x)/(1-5x)^(1/5).
  * @author Georg Fischer
  */
 public class A094869 extends HolonomicRecurrence {

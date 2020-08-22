@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127907 A <code>5 x 5</code> magic square read by rows.
+ * A127907 A 5 x 5 magic square read by rows.
  * @author Georg Fischer
  */
 public class A127907 extends FiniteSequence {

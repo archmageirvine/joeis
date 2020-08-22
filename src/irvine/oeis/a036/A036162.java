@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036162 <code>a(n) = 6^n mod 229</code>.
+ * A036162 a(n) = 6^n mod 229.
  * @author Georg Fischer
  */
 public class A036162 implements Sequence {

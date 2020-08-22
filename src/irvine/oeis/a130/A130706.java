@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A130706 <code>a(0) = 1, a(1) = 2, a(n) = 0</code> for <code>n &gt; 1</code>.
+ * A130706 a(0) = 1, a(1) = 2, a(n) = 0 for n &gt; 1.
  * @author Georg Fischer
  */
 public class A130706 extends PaddingSequence {

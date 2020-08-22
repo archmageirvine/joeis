@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A115157 Numbers abc such that <code>(a+2)(b+2)(c+2)=2abc</code>.
+ * A115157 Numbers abc such that (a+2)(b+2)(c+2)=2abc.
  * @author Georg Fischer
  */
 public class A115157 extends FiniteSequence {

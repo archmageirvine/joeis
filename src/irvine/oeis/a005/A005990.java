@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005990 <code>a(n) = (n-1)*(n+1)!/6</code>.
+ * A005990 a(n) = (n-1)*(n+1)!/6.
  * @author Sean A. Irvine
  */
 public class A005990 implements Sequence {

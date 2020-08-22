@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A186682 Total number of positive integers below <code>10^n</code> requiring 18 positive biquadrates in their representation as sum of biquadrates.
+ * A186682 Total number of positive integers below 10^n requiring 18 positive biquadrates in their representation as sum of biquadrates.
  * @author Georg Fischer
  */
 public class A186682 extends GeneratingFunctionSequence {

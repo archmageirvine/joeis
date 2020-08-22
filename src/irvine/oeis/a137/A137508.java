@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A137508 Successive structures of alkaline earth metals (periodic table elements from <code>2nd</code> column).
+ * A137508 Successive structures of alkaline earth metals (periodic table elements from 2nd column).
  * @author Georg Fischer
  */
 public class A137508 extends NoncomputableSequence {

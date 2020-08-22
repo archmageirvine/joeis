@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.math.z.Z;
 
 /**
- * A001555 <code>a(n) = 1^n + 2^n + ... + 8^n</code>.
+ * A001555 a(n) = 1^n + 2^n + ... + 8^n.
  * @author Sean A. Irvine
  */
 public class A001555 extends A001554 {

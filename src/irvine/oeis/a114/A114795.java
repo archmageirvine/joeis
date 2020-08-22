@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000422;
 
 /**
- * A114795 {concatenation n, <code>n-1, n-2, ...3,2,1} mod n</code>.
+ * A114795 {concatenation n, n-1, n-2, ...3,2,1} mod n.
  * @author Georg Fischer
  */
 public class A114795 extends A000422 {

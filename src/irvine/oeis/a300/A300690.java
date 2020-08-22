@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A300690 Decimal expansion of <code>sqrt(Pi^2/8 - 1)</code>.
+ * A300690 Decimal expansion of sqrt(Pi^2/8 - 1).
  * @author Georg Fischer
  */
 public class A300690 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a096;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A096268 Period-doubling sequence (or <code>period-doubling word)</code>: fixed point of the morphism <code>0 -&gt; 01, 1 -&gt; 00</code>.
+ * A096268 Period-doubling sequence (or period-doubling word): fixed point of the morphism 0 -&gt; 01, 1 -&gt; 00.
  * @author Georg Fischer
  */
 public class A096268 extends MorphismSequence {

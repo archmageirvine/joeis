@@ -4,7 +4,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255043 <code>a(n) = (5*9^n - 1)/2</code>.
+ * A255043 a(n) = (5*9^n - 1)/2.
  * @author Georg Fischer
  */
 public class A255043 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302393 Number of even parts in the partitions of <code>3n</code> into 3 parts.
+ * A302393 Number of even parts in the partitions of 3n into 3 parts.
  * @author Georg Fischer
  */
 public class A302393 extends GeneratingFunctionSequence {

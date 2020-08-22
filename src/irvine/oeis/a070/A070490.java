@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A070490 <code>a(n) = n^3 mod 28</code>.
+ * A070490 a(n) = n^3 mod 28.
  * @author Georg Fischer
  */
 public class A070490 implements Sequence {

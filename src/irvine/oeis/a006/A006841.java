@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006841 Permutation arrays of period <code>n</code>.
+ * A006841 Permutation arrays of period n.
  * Compute number of different patterns that arise from permutations on a torus.
  *
  * If you have a permutation <code>p_i</code>, i.e. an element of the symmetric group <code>S_n</code>,

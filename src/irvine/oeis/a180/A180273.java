@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180273 Squares which are a sum of consecutive squares starting with <code>7^2</code>.
+ * A180273 Squares which are a sum of consecutive squares starting with 7^2.
  * @author Georg Fischer
  */
 public class A180273 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180259 Squares which are the sum of consecutive squares starting with <code>25^2</code>.
+ * A180259 Squares which are the sum of consecutive squares starting with 25^2.
  * @author Georg Fischer
  */
 public class A180259 extends FiniteSequence {

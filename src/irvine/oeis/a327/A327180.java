@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A327180 <code>a(n) = [(2n+1)r] - [(n+1)r] -</code> [nr], where <code>[ ] =</code> floor and r <code>= sqrt(3)</code>.
+ * A327180 a(n) = [(2n+1)r] - [(n+1)r] - [nr], where [ ] = floor and r = sqrt(3).
  * @author Georg Fischer
  */
 public class A327180 implements Sequence {

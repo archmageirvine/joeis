@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168126 <code>a(n) = n^2*(n^8+1)/2</code>.
+ * A168126 a(n) = n^2*(n^8+1)/2.
  * @author Georg Fischer
  */
 public class A168126 extends GeneratingFunctionSequence {

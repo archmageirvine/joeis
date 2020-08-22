@@ -6,7 +6,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036090 Centered cube numbers: <code>(n+1)^12 + n^12</code>.
+ * A036090 Centered cube numbers: (n+1)^12 + n^12.
  * @author Georg Fischer
  */
 public class A036090 extends GeneratingFunctionSequence {

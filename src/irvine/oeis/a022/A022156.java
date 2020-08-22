@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a020.A020991;
 
 /**
- * A022156 Difference sequence of <code>A020991</code>.
+ * A022156 Difference sequence of A020991.
  * @author Sean A. Irvine
  */
 public class A022156 extends DifferenceSequence {

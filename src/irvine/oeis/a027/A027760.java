@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A027760 Denominator of <code>Sum_{p</code> prime, <code>p-1</code> divides <code>n} 1/p</code>.
+ * A027760 Denominator of Sum_{p prime, p-1 divides n} 1/p.
  * @author Sean A. Irvine
  */
 public class A027760 extends A027759 {

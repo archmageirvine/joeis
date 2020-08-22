@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034006 Number of <code>n-step self-avoiding</code> walks on the 4-dimensional hypercubic lattice with no non-contiguous adjacencies.
+ * A034006 Number of n-step self-avoiding walks on the 4-dimensional hypercubic lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A034006 implements Sequence {

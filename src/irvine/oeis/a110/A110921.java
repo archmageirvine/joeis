@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A110921 Numbers n such that <code>n = digit_sum(n)*R(digit_sum(n))</code> where <code>digit_sum</code> is the sum of digits and R is the digit reversal.
+ * A110921 Numbers n such that n = digit_sum(n)*R(digit_sum(n)) where digit_sum is the sum of digits and R is the digit reversal.
  * @author Georg Fischer
  */
 public class A110921 extends FiniteSequence {

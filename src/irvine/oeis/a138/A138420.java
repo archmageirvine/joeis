@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138420 <code>a(n) = ((prime(n))^4-(prime(n))^2)/4</code>.
+ * A138420 a(n) = ((prime(n))^4-(prime(n))^2)/4.
  * @author Georg Fischer
  */
 public class A138420 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013356 <code>sinh(sin(x)-tan(x))=-3/3!*x^3-15/5!*x^5-273/7!*x^7-15495/9!*x^9..</code>.
+ * A013356 sinh(sin(x)-tan(x))=-3/3!*x^3-15/5!*x^5-273/7!*x^7-15495/9!*x^9...
  * @author Sean A. Irvine
  */
 public class A013356 implements Sequence {

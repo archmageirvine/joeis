@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192579 Primes p for which there is no prime q <code>== 3 (mod 4)</code> that is smaller than p and is a quadratic residue modulo p.
+ * A192579 Primes p for which there is no prime q == 3 (mod 4) that is smaller than p and is a quadratic residue modulo p.
  * @author Georg Fischer
  */
 public class A192579 extends FiniteSequence {

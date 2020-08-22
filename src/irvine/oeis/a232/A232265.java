@@ -6,7 +6,7 @@ package irvine.oeis.a232;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A232265 <code>a(n) = 10*binomial(9*n + 10, n)/(9*n + 10)</code>.
+ * A232265 a(n) = 10*binomial(9*n + 10, n)/(9*n + 10).
  * @author Georg Fischer
  */
 public class A232265 extends HolonomicRecurrence {

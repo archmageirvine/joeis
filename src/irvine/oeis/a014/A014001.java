@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PisotSequence;
 
 /**
- * A014001 Pisot sequence <code>E(7,15), a(n)=[ a(n-1)^2/a(n-2)+1/2 ]</code>.
+ * A014001 Pisot sequence E(7,15), a(n)=[ a(n-1)^2/a(n-2)+1/2 ].
  * @author Sean A. Irvine
  */
 public class A014001 extends PisotSequence {

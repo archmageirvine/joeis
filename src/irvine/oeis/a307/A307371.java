@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307371 Numbers k such that the digits of <code>sqrt(k)</code> begin with k.
+ * A307371 Numbers k such that the digits of sqrt(k) begin with k.
  * @author Georg Fischer
  */
 public class A307371 extends HolonomicRecurrence {

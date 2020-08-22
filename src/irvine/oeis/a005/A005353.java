@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020478;
 
 /**
- * A005353 Number of <code>2 X 2</code> matrices with entries <code>mod n</code> and nonzero determinant.
+ * A005353 Number of 2 X 2 matrices with entries mod n and nonzero determinant.
  * @author Sean A. Irvine
  */
 public class A005353 extends A020478 {

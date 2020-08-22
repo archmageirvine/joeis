@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001996 Number of partitions of n into parts <code>2, 3, 4, 5, 6, 7</code>.
+ * A001996 Number of partitions of n into parts 2, 3, 4, 5, 6, 7.
  * @author Sean A. Irvine
  */
 public class A001996 implements Sequence {

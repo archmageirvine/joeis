@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A220902 <code>a(n) = Catalan(n) - A000245(n-2)</code>.
+ * A220902 a(n) = Catalan(n) - A000245(n-2).
  * @author Georg Fischer
  */
 public class A220902 extends HolonomicRecurrence {

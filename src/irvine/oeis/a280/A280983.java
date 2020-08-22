@@ -3,7 +3,7 @@ package irvine.oeis.a280;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A280983 The complete list of numbers <code>a(n)</code> such that precisely half of the numbers from 1 to <code>a(n)</code> contain consecutive repeated digits.
+ * A280983 The complete list of numbers a(n) such that precisely half of the numbers from 1 to a(n) contain consecutive repeated digits.
  * @author Georg Fischer
  */
 public class A280983 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 
 /**
- * A002479 Numbers of form <code>x^2 + 2y^2</code>.
+ * A002479 Numbers of form x^2 + 2y^2.
  * @author Sean A. Irvine
  */
 public class A002479 implements Sequence {

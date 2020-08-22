@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A329678 Number of excursions of length n with Motzkin-steps consisting only of consecutive steps <code>UD</code> and DH.
+ * A329678 Number of excursions of length n with Motzkin-steps consisting only of consecutive steps UD and DH.
  * @author Georg Fischer
  */
 public class A329678 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023262 Numbers n such that n remains prime through 2 iterations of function <code>f(x) = 8x + 5</code>.
+ * A023262 Numbers n such that n remains prime through 2 iterations of function f(x) = 8x + 5.
  * @author Sean A. Irvine
  */
 public class A023262 extends A000040 {

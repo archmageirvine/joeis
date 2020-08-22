@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000031;
 
 /**
- * A053634 <code>a(n) = Sum_{</code> d divides <code>n } phi(d)*2^(n/d)/(2n)</code>.
+ * A053634 a(n) = Sum_{ d divides n } phi(d)*2^(n/d)/(2n).
  * @author Georg Fischer
  */
 public class A053634 extends A000031 {

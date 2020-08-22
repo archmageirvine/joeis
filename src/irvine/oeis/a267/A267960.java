@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267960 Number of <code>n X 1 0..2</code> arrays with every repeated value in every row and column greater than the previous repeated value.
+ * A267960 Number of n X 1 0..2 arrays with every repeated value in every row and column greater than the previous repeated value.
  * @author Georg Fischer
  */
 public class A267960 extends GeneratingFunctionSequence {

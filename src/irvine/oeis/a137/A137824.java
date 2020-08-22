@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A137824 Index at which <code>A137823(n)</code> occurs first in <code>A137822</code> (gaps in numbers m such that <code>3 | sum( Catalan(k), k=1..2m))</code>.
+ * A137824 Index at which A137823(n) occurs first in A137822 (gaps in numbers m such that 3 | sum( Catalan(k), k=1..2m)).
  * @author Sean A. Irvine
  */
 public class A137824 extends LinearRecurrence {

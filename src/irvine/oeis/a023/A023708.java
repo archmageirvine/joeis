@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023708 Numbers with exactly <code>3 0</code>'s in base 4 expansion.
+ * A023708 Numbers with exactly 3 0's in base 4 expansion.
  * @author Sean A. Irvine
  */
 public class A023708 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244749 0-additive sequence: <code>a(n)</code> is the smallest number larger than <code>a(n-1)</code> that is not the sum of any subset of earlier terms, starting with initial values <code>{2, 5}</code>.
+ * A244749 0-additive sequence: a(n) is the smallest number larger than a(n-1) that is not the sum of any subset of earlier terms, starting with initial values {2, 5}.
  * @author Georg Fischer
  */
 public class A244749 extends GeneratingFunctionSequence {

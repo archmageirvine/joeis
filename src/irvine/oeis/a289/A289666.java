@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289666 <code>a(n) =</code> number of weakly threshold graphs on n nodes.
+ * A289666 a(n) = number of weakly threshold graphs on n nodes.
  * @author Georg Fischer
  */
 public class A289666 extends GeneratingFunctionSequence {

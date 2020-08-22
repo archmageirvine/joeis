@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278064 Relative of Hofstadter <code>Q-sequence: a(n) = n</code> for <code>1 &lt;= n &lt;= 12; a(n) = a(n-a(n-1)) + a(n-a(n-2))</code> for <code>n &gt; 12</code>.
+ * A278064 Relative of Hofstadter Q-sequence: a(n) = n for 1 &lt;= n &lt;= 12; a(n) = a(n-a(n-1)) + a(n-a(n-2)) for n &gt; 12.
  * @author Georg Fischer
  */
 public class A278064 extends FiniteSequence {

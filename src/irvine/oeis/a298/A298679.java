@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298679 Start with the hexagonal tile of the Shield tiling and recursively apply the substitution rule. <code>a(n)</code> is the number of square tiles after n iterations.
+ * A298679 Start with the hexagonal tile of the Shield tiling and recursively apply the substitution rule. a(n) is the number of square tiles after n iterations.
  * @author Georg Fischer
  */
 public class A298679 extends GeneratingFunctionSequence {

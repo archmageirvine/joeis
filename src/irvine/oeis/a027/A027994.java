@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027994 <code>a(n) = (F(2n+3) - F(n))/2</code> where <code>F() =</code> Fibonacci numbers <code>A000045</code>.
+ * A027994 a(n) = (F(2n+3) - F(n))/2 where F() = Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A027994 implements Sequence {

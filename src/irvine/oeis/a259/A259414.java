@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259414 Triangular numbers <code>(A000217)</code> that are the sum of thirteen consecutive triangular numbers.
+ * A259414 Triangular numbers (A000217) that are the sum of thirteen consecutive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A259414 extends LinearRecurrence {

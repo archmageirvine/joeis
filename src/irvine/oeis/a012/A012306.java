@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012306 Expansion of e.g.f. <code>tan(arcsin(x) * log(x+1))</code>.
+ * A012306 Expansion of e.g.f. tan(arcsin(x) * log(x+1)).
  * @author Sean A. Irvine
  */
 public class A012306 implements Sequence {

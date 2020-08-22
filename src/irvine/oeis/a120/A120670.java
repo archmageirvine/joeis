@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A120670 Decimal expansion of <code>180*arccos(1-8/(Pi^2))/Pi</code>.
+ * A120670 Decimal expansion of 180*arccos(1-8/(Pi^2))/Pi.
  * @author Georg Fischer
  */
 public class A120670 extends DecimalExpansionSequence {

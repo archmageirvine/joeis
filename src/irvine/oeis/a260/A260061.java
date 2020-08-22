@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A260061 Decimal expansion of <code>Pi / (4*sqrt(6*Pi^2 - 72*log(2)^2))</code>.
+ * A260061 Decimal expansion of Pi / (4*sqrt(6*Pi^2 - 72*log(2)^2)).
  * @author Georg Fischer
  */
 public class A260061 extends DecimalExpansionSequence {

@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A096429 Decimal expansion of <code>-(8*(EulerGamma - log(2)))/3</code>.
+ * A096429 Decimal expansion of -(8*(EulerGamma - log(2)))/3.
  * @author Georg Fischer
  */
 public class A096429 extends DecimalExpansionSequence {

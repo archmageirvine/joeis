@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038340 Second line of 5-wave sequence <code>A038201</code>.
+ * A038340 Second line of 5-wave sequence A038201.
  * @author Sean A. Irvine
  */
 public class A038340 extends LinearRecurrence {

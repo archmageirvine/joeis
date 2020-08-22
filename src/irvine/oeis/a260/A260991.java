@@ -3,7 +3,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260991 Numbers n such that the modular curve <code>X_0(n)</code> has a bielliptic involution of Atkin-Lehner type.
+ * A260991 Numbers n such that the modular curve X_0(n) has a bielliptic involution of Atkin-Lehner type.
  * @author Georg Fischer
  */
 public class A260991 extends FiniteSequence {

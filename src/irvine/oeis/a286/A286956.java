@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010815;
 
 /**
- * A286956 Main diagonal of <code>A286950</code>.
+ * A286956 Main diagonal of A286950.
  * @author Georg Fischer
  */
 public class A286956 extends A010815 {

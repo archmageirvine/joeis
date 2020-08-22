@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109118 <code>a(n) = 2*(n^2 + 3*n + 1)^3</code>.
+ * A109118 a(n) = 2*(n^2 + 3*n + 1)^3.
  * @author Georg Fischer
  */
 public class A109118 extends GeneratingFunctionSequence {

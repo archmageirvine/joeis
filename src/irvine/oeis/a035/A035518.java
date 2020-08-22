@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A035518 20 consecutive primes of the form <code>4k+3</code>.
+ * A035518 20 consecutive primes of the form 4k+3.
  * @author Georg Fischer
  */
 public class A035518 extends FiniteSequence {

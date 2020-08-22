@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019531 Let <code>I_c(n,d)</code> be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives <code>I_c(2n,3)</code>.
+ * A019531 Let I_c(n,d) be maximal number of independent sets in d-regular simple connected graphs with n vertices; sequence gives I_c(2n,3).
  * @author Sean A. Irvine
  */
 public class A019531 implements Sequence, GraphProcessor {

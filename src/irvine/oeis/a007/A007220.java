@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007220 Almost-convex polygons of perimeter <code>2n</code> on square lattice.
+ * A007220 Almost-convex polygons of perimeter 2n on square lattice.
  * @author Sean A. Irvine
  */
 public class A007220 implements Sequence {

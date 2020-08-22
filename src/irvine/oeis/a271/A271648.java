@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271648 Number of permutations in <code>S_{2*n+3}</code> containing the pattern <code>2143...(2n)(2n-1)</code>.
+ * A271648 Number of permutations in S_{2*n+3} containing the pattern 2143...(2n)(2n-1).
  * @author Georg Fischer
  */
 public class A271648 extends GeneratingFunctionSequence {

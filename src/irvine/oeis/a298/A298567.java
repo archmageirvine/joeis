@@ -6,7 +6,7 @@ package irvine.oeis.a298;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A298567 <code>a(n) = Sum_{k=0..2*n/3} C(n-k,2*k-n)^2</code>.
+ * A298567 a(n) = Sum_{k=0..2*n/3} C(n-k,2*k-n)^2.
  * @author Georg Fischer
  */
 public class A298567 extends HolonomicRecurrence {

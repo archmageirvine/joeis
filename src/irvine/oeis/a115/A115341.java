@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115341 <code>a(n) = abs(A154879(n+1))</code>.
+ * A115341 a(n) = abs(A154879(n+1)).
  * @author Georg Fischer
  */
 public class A115341 extends GeneratingFunctionSequence {

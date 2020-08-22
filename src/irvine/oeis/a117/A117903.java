@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117903 Diagonal sums of number triangle <code>A117901</code>.
+ * A117903 Diagonal sums of number triangle A117901.
  * @author Georg Fischer
  */
 public class A117903 extends GeneratingFunctionSequence {

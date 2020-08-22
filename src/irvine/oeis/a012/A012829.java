@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012829 <code>tanh(sec(x)*arcsinh(x))=x-504/7!*x^7+11904/9!*x^9-1023616/11!*x^11..</code>.
+ * A012829 tanh(sec(x)*arcsinh(x))=x-504/7!*x^7+11904/9!*x^9-1023616/11!*x^11...
  * @author Sean A. Irvine
  */
 public class A012829 implements Sequence {

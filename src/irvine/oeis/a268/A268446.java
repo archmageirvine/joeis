@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268446 Number of North-East lattice paths from <code>(0,0)</code> to <code>(n,n)</code> that cross the diagonal <code>y = x</code> horizontally exactly three times.
+ * A268446 Number of North-East lattice paths from (0,0) to (n,n) that cross the diagonal y = x horizontally exactly three times.
  * @author Georg Fischer
  */
 public class A268446 extends HolonomicRecurrence {

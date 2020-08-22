@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043511 Numbers such that the number of <code>5</code>'s in their decimal representation is 3.
+ * A043511 Numbers such that the number of 5's in their decimal representation is 3.
  * @author Georg Fischer
  */
 public class A043511 extends RunsBaseSequence {

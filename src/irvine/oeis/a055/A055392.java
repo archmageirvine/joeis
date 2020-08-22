@@ -6,7 +6,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055392 Number of bracketings of <code>0#0#0#...#0</code> giving result 0, where <code>0#0 = 1, 0#1 = 1#0 = 1#1 = 0</code>.
+ * A055392 Number of bracketings of 0#0#0#...#0 giving result 0, where 0#0 = 1, 0#1 = 1#0 = 1#1 = 0.
  * @author Georg Fischer
  */
 public class A055392 extends HolonomicRecurrence {

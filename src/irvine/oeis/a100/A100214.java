@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100214 <code>a(n) = 4*n^3 + 4</code>.
+ * A100214 a(n) = 4*n^3 + 4.
  * @author Georg Fischer
  */
 public class A100214 extends GeneratingFunctionSequence {

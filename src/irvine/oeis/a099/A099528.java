@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099528 Row sums of triangle <code>A099527</code>, so that <code>a(n) = Sum_{k=0..n}</code> coefficient of <code>z^k</code> in <code>(2 + 3*z + z^2)^(n-[k/2])</code>, where <code>[k/2]</code> is the integer floor of <code>k/2</code>.
+ * A099528 Row sums of triangle A099527, so that a(n) = Sum_{k=0..n} coefficient of z^k in (2 + 3*z + z^2)^(n-[k/2]), where [k/2] is the integer floor of k/2.
  * @author Georg Fischer
  */
 public class A099528 extends GeneratingFunctionSequence {

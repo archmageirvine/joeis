@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144564 Bisection of <code>A147757</code>.
+ * A144564 Bisection of A147757.
  * @author Georg Fischer
  */
 public class A144564 extends GeneratingFunctionSequence {

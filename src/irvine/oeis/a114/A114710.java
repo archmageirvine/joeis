@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114710 Number of hill-free Schroeder paths of length <code>2n</code> that have no horizontal steps on the <code>x-axis</code>.
+ * A114710 Number of hill-free Schroeder paths of length 2n that have no horizontal steps on the x-axis.
  * @author Georg Fischer
  */
 public class A114710 extends HolonomicRecurrence {

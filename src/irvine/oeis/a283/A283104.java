@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002487;
 
 /**
- * A283104 Second differences of Stern's diatomic sequence <code>(A002487)</code>.
+ * A283104 Second differences of Stern's diatomic sequence (A002487).
  * @author Georg Fischer
  */
 public class A283104 extends DifferenceSequence {

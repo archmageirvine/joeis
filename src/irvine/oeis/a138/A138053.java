@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138053 Sequence generated from the <code>Z/4Z</code> addition table considered as a matrix.
+ * A138053 Sequence generated from the Z/4Z addition table considered as a matrix.
  * @author Sean A. Irvine
  */
 public class A138053 extends LinearRecurrence {

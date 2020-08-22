@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034168 Disjoint discriminants (one form per genus) of type <code>2</code> (doubled).
+ * A034168 Disjoint discriminants (one form per genus) of type 2 (doubled).
  * @author Sean A. Irvine
  */
 public class A034168 extends FiniteSequence {

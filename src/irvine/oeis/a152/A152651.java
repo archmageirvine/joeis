@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A152651 Decimal expansion of <code>3*Zeta(5) - Zeta(3)*Pi^2/6</code>.
+ * A152651 Decimal expansion of 3*Zeta(5) - Zeta(3)*Pi^2/6.
  * @author Georg Fischer
  */
 public class A152651 extends DecimalExpansionSequence {

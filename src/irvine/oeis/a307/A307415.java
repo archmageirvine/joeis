@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A307415 Total number of parts in all symmetric m-color cyclic compositions of <code>n</code> (that is, the total number of parts in all achiral cyclic compositions of n where a part with size m can be colored with one of m colors).
+ * A307415 Total number of parts in all symmetric m-color cyclic compositions of n (that is, the total number of parts in all achiral cyclic compositions of n where a part with size m can be colored with one of m colors).
  * @author Georg Fischer
  */
 public class A307415 extends GeneratingFunctionSequence {

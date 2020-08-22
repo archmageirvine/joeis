@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309805 Maximum number of nonattacking kings placeable on a hexagonal board with <code>edge-length n</code> in Glinski's hexagonal chess.
+ * A309805 Maximum number of nonattacking kings placeable on a hexagonal board with edge-length n in Glinski's hexagonal chess.
  * @author Georg Fischer
  */
 public class A309805 extends HolonomicRecurrence {

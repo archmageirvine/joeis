@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032183 "CIJ" <code>(necklace</code>, indistinct, labeled) transform of 3,3,3,3...
+ * A032183 "CIJ" (necklace, indistinct, labeled) transform of 3,3,3,3...
  * @author Sean A. Irvine
  */
 public class A032183 implements Sequence {

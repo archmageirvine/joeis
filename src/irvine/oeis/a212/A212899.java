@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212899 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> and (least <code>gapsize)&gt;2</code>.
+ * A212899 Number of (w,x,y,z) with all terms in {0,...,n} and (least gapsize)&gt;2.
  * @author Georg Fischer
  */
 public class A212899 extends GeneratingFunctionSequence {

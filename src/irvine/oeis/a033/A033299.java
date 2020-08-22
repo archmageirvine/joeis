@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033299 Smallest safe prime <code>((p-1)/2</code> is also prime) <code>&gt; n</code>.
+ * A033299 Smallest safe prime ((p-1)/2 is also prime) &gt; n.
  * @author Sean A. Irvine
  */
 public class A033299 extends A000040 {

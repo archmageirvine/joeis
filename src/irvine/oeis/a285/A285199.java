@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285199 Product of <code>n!</code> and the n-th Legendre polynomial evaluated at 2.
+ * A285199 Product of n! and the n-th Legendre polynomial evaluated at 2.
  * @author Georg Fischer
  */
 public class A285199 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097893 Partial sums of the central trinomial coefficients <code>(A002426)</code>.
+ * A097893 Partial sums of the central trinomial coefficients (A002426).
  * @author Georg Fischer
  */
 public class A097893 extends HolonomicRecurrence {

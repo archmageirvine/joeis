@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215774 Number of undirected labeled graphs on <code>n+4</code> nodes with exactly n cycle graphs as connected components.
+ * A215774 Number of undirected labeled graphs on n+4 nodes with exactly n cycle graphs as connected components.
  * @author Georg Fischer
  */
 public class A215774 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036089 Centered cube numbers: <code>(n+1)^11 + n^11</code>.
+ * A036089 Centered cube numbers: (n+1)^11 + n^11.
  * @author Georg Fischer
  */
 public class A036089 extends HolonomicRecurrence {

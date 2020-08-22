@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005718 Quadrinomial coefficients: <code>C(2+n,n) + C(3+n,n) + C(4+n,n)</code>.
+ * A005718 Quadrinomial coefficients: C(2+n,n) + C(3+n,n) + C(4+n,n).
  * @author Sean A. Irvine
  */
 public class A005718 implements Sequence {

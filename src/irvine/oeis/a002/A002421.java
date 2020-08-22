@@ -10,7 +10,7 @@ import irvine.math.q.Q;
 import java.util.Arrays;
 
 /**
- * A002421 Expansion of <code>(1-4*x)^(3/2)</code> in powers of <code>x</code>.
+ * A002421 Expansion of (1-4*x)^(3/2) in powers of x.
  * @author Sean A. Irvine
  */
 public class A002421 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A119806 Decimal expansion of <code>cos(gamma)</code>.
+ * A119806 Decimal expansion of cos(gamma).
  * @author Georg Fischer
  */
 public class A119806 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031976 Remove digits <code>0, 1, 4, 9</code> from <code>n</code>.
+ * A031976 Remove digits 0, 1, 4, 9 from n.
  * @author Sean A. Irvine
  */
 public class A031976 implements Sequence {

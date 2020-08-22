@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237415 For k in <code>{2,3,...,9}</code> define a sequence as follows: <code>a(0)=0;</code> for <code>n&gt;=0, a(n+1)=a(n)+1</code>, unless <code>a(n)</code> ends in k, in which case <code>a(n+1)</code> is obtained by replacing the last digit of <code>a(n)</code> with the <code>digit(s)</code> of <code>k^3</code>. This is <code>k(2)</code>.
+ * A237415 For k in {2,3,...,9} define a sequence as follows: a(0)=0; for n&gt;=0, a(n+1)=a(n)+1, unless a(n) ends in k, in which case a(n+1) is obtained by replacing the last digit of a(n) with the digit(s) of k^3. This is k(2).
  * @author Sean A. Irvine
  */
 public class A237415 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109052 <code>a(n) = lcm(n,11)</code>.
+ * A109052 a(n) = lcm(n,11).
  * @author Georg Fischer
  */
 public class A109052 extends GeneratingFunctionSequence {

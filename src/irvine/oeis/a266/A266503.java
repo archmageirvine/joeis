@@ -6,7 +6,7 @@ package irvine.oeis.a266;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A266503 Number of symmetric <code>difference-closed 4-sets</code> consisting of sets consisting of an even number of pairwise disjoint 2-subsets of <code>{1,2,...,n}</code>.
+ * A266503 Number of symmetric difference-closed 4-sets consisting of sets consisting of an even number of pairwise disjoint 2-subsets of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A266503 extends HolonomicRecurrence {

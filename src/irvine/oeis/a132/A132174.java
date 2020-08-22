@@ -4,7 +4,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A132174 Index of starting position of n-th generation of terms in <code>A063882</code>.
+ * A132174 Index of starting position of n-th generation of terms in A063882.
  * @author Georg Fischer
  */
 public class A132174 extends GeneratingFunctionSequence {

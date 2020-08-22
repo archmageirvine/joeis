@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032783 Integer quotients <code>n(n+1)(n+2)...(n+9) / (n+(n+1)+(n+2)+...+(n+9))</code>.
+ * A032783 Integer quotients n(n+1)(n+2)...(n+9) / (n+(n+1)+(n+2)+...+(n+9)).
  * @author Sean A. Irvine
  */
 public class A032783 implements Sequence {

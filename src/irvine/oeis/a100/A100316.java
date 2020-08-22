@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100316 Number of <code>4 X n 0-1</code> matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) <code>(00;1), (01;0), (10;0)</code> and <code>(01;1)</code>.
+ * A100316 Number of 4 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (01;0), (10;0) and (01;1).
  * @author Georg Fischer
  */
 public class A100316 extends GeneratingFunctionSequence {

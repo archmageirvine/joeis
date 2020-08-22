@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115500 Number of monic irreducible polynomials of degree 1 in <code>GF(2^n)[x1,x2,x3,x4]</code>.
+ * A115500 Number of monic irreducible polynomials of degree 1 in GF(2^n)[x1,x2,x3,x4].
  * @author Georg Fischer
  */
 public class A115500 extends GeneratingFunctionSequence {

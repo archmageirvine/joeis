@@ -4,7 +4,7 @@ package irvine.oeis.a282;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A282641 Number of <code>nX2 0..1</code> arrays with no 1 equal to more than one of its king-move neighbors.
+ * A282641 Number of nX2 0..1 arrays with no 1 equal to more than one of its king-move neighbors.
  * @author Georg Fischer
  */
 public class A282641 extends GeneratingFunctionSequence {

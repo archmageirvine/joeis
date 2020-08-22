@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293774 Number of permutations of length n sortable by 3 passes through a <code>pop-stack</code>.
+ * A293774 Number of permutations of length n sortable by 3 passes through a pop-stack.
  * @author Georg Fischer
  */
 public class A293774 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a030.A030197;
 
 /**
- * A045480 McKay-Thompson series of class <code>3A</code> for Monster. Expansion of Hauptmodul for <code>X_0^{+}(3)</code>.
+ * A045480 McKay-Thompson series of class 3A for Monster. Expansion of Hauptmodul for X_0^{+}(3).
  * @author Sean A. Irvine
  */
 public class A045480 extends A030197 {

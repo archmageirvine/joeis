@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A297217 Most common value of the number of divisors function among all composites up to <code>composite(n)</code> inclusive, or 0 if there is a tie.
+ * A297217 Most common value of the number of divisors function among all composites up to composite(n) inclusive, or 0 if there is a tie.
  * @author Georg Fischer
  */
 public class A297217 extends PaddingSequence {

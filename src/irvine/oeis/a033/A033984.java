@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033984 Odd integers n such that <code>2^n == 16 (mod n)</code>.
+ * A033984 Odd integers n such that 2^n == 16 (mod n).
  * @author Sean A. Irvine
  */
 public class A033984 implements Sequence {

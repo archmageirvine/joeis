@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052767 Expansion of e.g.f.: <code>-(log(1-x))^5</code>.
+ * A052767 Expansion of e.g.f.: -(log(1-x))^5.
  * @author Georg Fischer
  */
 public class A052767 extends HolonomicRecurrence {

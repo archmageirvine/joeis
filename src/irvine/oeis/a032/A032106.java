@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032106 Number of reversible strings with n black beads and <code>n-1</code> white beads. String is not palindromic.
+ * A032106 Number of reversible strings with n black beads and n-1 white beads. String is not palindromic.
  * @author Sean A. Irvine
  */
 public class A032106 implements Sequence {

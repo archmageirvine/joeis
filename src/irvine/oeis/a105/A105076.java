@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105076 Numbers k such that <code>60*k^2 + 60*k + 1</code> is a square.
+ * A105076 Numbers k such that 60*k^2 + 60*k + 1 is a square.
  * @author Georg Fischer
  */
 public class A105076 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090992 Number of meaningful differential operations of the n-th order on the space <code>R^7</code>.
+ * A090992 Number of meaningful differential operations of the n-th order on the space R^7.
  * @author Sean A. Irvine
  */
 public class A090992 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099859 A Chebyshev transform of <code>A006053</code> related to the knot <code>7_1</code>.
+ * A099859 A Chebyshev transform of A006053 related to the knot 7_1.
  * @author Georg Fischer
  */
 public class A099859 extends GeneratingFunctionSequence {

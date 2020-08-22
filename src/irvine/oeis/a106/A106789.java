@@ -6,7 +6,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106789 Sum of two consecutive squares of Lucas 3-step numbers <code>(A001644)</code>.
+ * A106789 Sum of two consecutive squares of Lucas 3-step numbers (A001644).
  * @author Georg Fischer
  */
 public class A106789 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323620 Expansion of e.g.f. <code>2*sqrt(1 + x)*sinh(sqrt(5)*log(1 + x)/2)/sqrt(5)</code>.
+ * A323620 Expansion of e.g.f. 2*sqrt(1 + x)*sinh(sqrt(5)*log(1 + x)/2)/sqrt(5).
  * @author Georg Fischer
  */
 public class A323620 extends HolonomicRecurrence {

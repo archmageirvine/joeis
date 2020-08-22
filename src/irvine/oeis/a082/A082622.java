@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A082622 <code>a(1) = 3, a(n) =</code> smallest palindromic prime obtained by inserting two paired digits anywhere in <code>a(n-1)</code>.
+ * A082622 a(1) = 3, a(n) = smallest palindromic prime obtained by inserting two paired digits anywhere in a(n-1).
  * @author Georg Fischer
  */
 public class A082622 extends FiniteSequence {

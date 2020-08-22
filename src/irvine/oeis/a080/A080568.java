@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080568 Sum of the Fibonacci numbers <code>A000045</code> and the factorials <code>A000142</code>.
+ * A080568 Sum of the Fibonacci numbers A000045 and the factorials A000142.
  * @author Georg Fischer
  */
 public class A080568 extends HolonomicRecurrence {

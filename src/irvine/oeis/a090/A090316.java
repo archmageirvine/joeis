@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090316 <code>a(n) = 24*a(n-1) + a(n-2)</code>, starting with <code>a(0) = 2</code> and <code>a(1) = 24</code>.
+ * A090316 a(n) = 24*a(n-1) + a(n-2), starting with a(0) = 2 and a(1) = 24.
  * @author Sean A. Irvine
  */
 public class A090316 extends LinearRecurrence {

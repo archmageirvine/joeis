@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A323601 Decimal expansion of <code>sin(Pi/7)</code>.
+ * A323601 Decimal expansion of sin(Pi/7).
  * @author Georg Fischer
  */
 public class A323601 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024910 Numbers n such that <code>9*n-2</code> is prime.
+ * A024910 Numbers n such that 9*n-2 is prime.
  * @author Sean A. Irvine
  */
 public class A024910 implements Sequence {

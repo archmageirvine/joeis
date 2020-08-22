@@ -6,7 +6,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325482 Number of colored set partitions of <code>[n]</code> where colors of the elements of subsets are distinct and in increasing order and exactly two colors are used.
+ * A325482 Number of colored set partitions of [n] where colors of the elements of subsets are distinct and in increasing order and exactly two colors are used.
  * @author Georg Fischer
  */
 public class A325482 extends HolonomicRecurrence {

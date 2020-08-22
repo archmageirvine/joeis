@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a012.A012863;
 
 /**
- * A202619 Denominators of coefficients in Taylor series expansion of <code>log(cotan(x)*log(x+1))</code>.
+ * A202619 Denominators of coefficients in Taylor series expansion of log(cotan(x)*log(x+1)).
  * @author Sean A. Irvine
  */
 public class A202619 extends A012863 {

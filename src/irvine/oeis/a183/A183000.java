@@ -3,7 +3,7 @@ package irvine.oeis.a183;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A183000 Decimal expansion of the integer <code>c^3</code> where c <code>= 299792458</code> is the exact speed of light in vacuum <code>(m/s)</code>.
+ * A183000 Decimal expansion of the integer c^3 where c = 299792458 is the exact speed of light in vacuum (m/s).
  * @author Georg Fischer
  */
 public class A183000 extends FiniteSequence {

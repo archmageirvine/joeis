@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156071 Concatenation chain arising in <code>A156069</code>.
+ * A156071 Concatenation chain arising in A156069.
  * @author Georg Fischer
  */
 public class A156071 extends FiniteSequence {

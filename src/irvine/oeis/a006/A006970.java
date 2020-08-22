@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006970 Euler pseudoprimes: <code>2^((n-1)/2) == +- 1 mod n</code>.
+ * A006970 Euler pseudoprimes: 2^((n-1)/2) == +- 1 mod n.
  * @author Sean A. Irvine
  */
 public class A006970 implements Sequence {

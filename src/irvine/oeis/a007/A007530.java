@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007530 Prime quadruples: numbers k such that k, <code>k+2, k+6, k+8</code> are all prime.
+ * A007530 Prime quadruples: numbers k such that k, k+2, k+6, k+8 are all prime.
  * @author Sean A. Irvine
  */
 public class A007530 implements Sequence {

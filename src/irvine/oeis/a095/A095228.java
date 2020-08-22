@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A095228 n-th decimal digit of <code>1/n!</code>.
+ * A095228 n-th decimal digit of 1/n!.
  * @author Georg Fischer
  */
 public class A095228 extends PaddingSequence {

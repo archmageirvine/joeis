@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024168 <code>a(n) = n!*(1/2 - 1/3 + ... + c/n)</code>, where c <code>= (-1)^n</code>.
+ * A024168 a(n) = n!*(1/2 - 1/3 + ... + c/n), where c = (-1)^n.
  * @author Sean A. Irvine
  */
 public class A024168 implements Sequence {

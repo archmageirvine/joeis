@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152692 <code>a(n) = n*3^n - n*2^n - n*1^n</code>.
+ * A152692 a(n) = n*3^n - n*2^n - n*1^n.
  * @author Georg Fischer
  */
 public class A152692 extends GeneratingFunctionSequence {

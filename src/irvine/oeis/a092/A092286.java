@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092286 Fourth diagonal <code>(m=3)</code> of triangle <code>A084938; a(n) = A084938(n+3,n) = (n^3 + 9*n^2 + 26*n)/6</code>.
+ * A092286 Fourth diagonal (m=3) of triangle A084938; a(n) = A084938(n+3,n) = (n^3 + 9*n^2 + 26*n)/6.
  * @author Georg Fischer
  */
 public class A092286 extends GeneratingFunctionSequence {

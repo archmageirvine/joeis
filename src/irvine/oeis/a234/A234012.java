@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A234012 Number of unbiased free polyominoes with <code>2n</code> squares.
+ * A234012 Number of unbiased free polyominoes with 2n squares.
  * @author jmason
  */
 public class A234012 implements Sequence {

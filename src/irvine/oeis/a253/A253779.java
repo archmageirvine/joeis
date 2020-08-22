@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253779 Numbers c whose cubes are equal to the sum of <code>m^3</code> consecutive cubes for <code>m^3</code> not divisible by <code>3 (A118719)</code>.
+ * A253779 Numbers c whose cubes are equal to the sum of m^3 consecutive cubes for m^3 not divisible by 3 (A118719).
  * @author Georg Fischer
  */
 public class A253779 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A038504 Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose <code>1"</code>.
+ * A038504 Sum of every 4th entry of row n in Pascal's triangle, starting at "n choose 1".
  * @author Georg Fischer
  */
 public class A038504 extends LinearRecurrence {

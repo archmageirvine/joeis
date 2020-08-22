@@ -5,7 +5,7 @@ package irvine.oeis.a206;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A206840 Number of <code>2 X n 0..3</code> arrays avoiding the pattern <code>z-2 z-1 z</code> in any row, column, <code>nw-to-se</code> diagonal or <code>ne-to-sw</code> antidiagonal.
+ * A206840 Number of 2 X n 0..3 arrays avoiding the pattern z-2 z-1 z in any row, column, nw-to-se diagonal or ne-to-sw antidiagonal.
  * @author Georg Fischer
  */
 public class A206840 extends HolonomicRecurrence {

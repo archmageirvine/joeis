@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206012 Modular recursion: <code>a(0)=a(1)=a(2)=a(3)=1</code>, thereafter: <code>a(n)</code> equals <code>a(n - 2) + a(n - 3)</code> when <code>n = 0 mod 5, a(n - 1) + a(n - 3)</code> when <code>n = 1 mod 5, a(n - 1) + a(n - 2)</code> when <code>n = 2 mod 5, a(n - 1) + a(n - 4)</code> when <code>n = 3 mod 5</code>, and <code>a(n - 1) + a(n - 2) + a(n - 3)</code> otherwise.
+ * A206012 Modular recursion: a(0)=a(1)=a(2)=a(3)=1, thereafter: a(n) equals a(n - 2) + a(n - 3) when n = 0 mod 5, a(n - 1) + a(n - 3) when n = 1 mod 5, a(n - 1) + a(n - 2) when n = 2 mod 5, a(n - 1) + a(n - 4) when n = 3 mod 5, and a(n - 1) + a(n - 2) + a(n - 3) otherwise.
  * @author Georg Fischer
  */
 public class A206012 extends GeneratingFunctionSequence {

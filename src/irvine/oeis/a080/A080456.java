@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080456 <code>a(1) = a(2) = 2;</code> for <code>n &gt; 2, a(n) = a(n-1)</code> if n is already in the sequence, <code>a(n) = a(n-1) + 4</code> otherwise.
+ * A080456 a(1) = a(2) = 2; for n &gt; 2, a(n) = a(n-1) if n is already in the sequence, a(n) = a(n-1) + 4 otherwise.
  * @author Georg Fischer
  */
 public class A080456 extends GeneratingFunctionSequence {

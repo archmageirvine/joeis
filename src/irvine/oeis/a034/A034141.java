@@ -1,7 +1,7 @@
 package irvine.oeis.a034;
 
 /**
- * A034141 Number of partitions of n into distinct parts from <code>[ 1, 11 ]</code>.
+ * A034141 Number of partitions of n into distinct parts from [ 1, 11 ].
  * @author Sean A. Irvine
  */
 public class A034141 extends A034136 {

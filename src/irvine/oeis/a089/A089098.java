@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089098 Sign twisted convoluted convolved Fibonacci numbers <code>H_j^(2)</code>.
+ * A089098 Sign twisted convoluted convolved Fibonacci numbers H_j^(2).
  * @author Sean A. Irvine
  */
 public class A089098 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072855 Number of permutations satisfying <code>i-3&lt;=p(i)&lt;=i+5, i=1..n</code>.
+ * A072855 Number of permutations satisfying i-3&lt;=p(i)&lt;=i+5, i=1..n.
  * @author Georg Fischer
  */
 public class A072855 extends GeneratingFunctionSequence {

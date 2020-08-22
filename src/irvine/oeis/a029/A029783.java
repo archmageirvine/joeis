@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029783 Exclusionary squares: numbers n such that no digit of n is present in <code>n^2</code>.
+ * A029783 Exclusionary squares: numbers n such that no digit of n is present in n^2.
  * @author Sean A. Irvine
  */
 public class A029783 implements Sequence {

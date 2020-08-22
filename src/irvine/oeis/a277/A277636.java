@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277636 Number of <code>3 X 3</code> matrices having all elements in <code>{0,...,n}</code> with determinant = permanent.
+ * A277636 Number of 3 X 3 matrices having all elements in {0,...,n} with determinant = permanent.
  * @author Sean A. Irvine
  */
 public class A277636 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245799 <code>Lucas(3*n) - Fibonacci(n)</code>.
+ * A245799 Lucas(3*n) - Fibonacci(n).
  * @author Georg Fischer
  */
 public class A245799 extends GeneratingFunctionSequence {

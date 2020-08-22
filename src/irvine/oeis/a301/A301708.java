@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // DO NOT EDIT here!
 
 /**
- * A301708 Coordination sequence for node of type <code>V1</code> in "krc" 2-D tiling (or net).
+ * A301708 Coordination sequence for node of type V1 in "krc" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301708 extends A301710 {

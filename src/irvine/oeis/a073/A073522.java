@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073522 A set of 25 consecutive primes that form a <code>5 X 5</code> magic square with the (non-minimal) magic constant 1703.
+ * A073522 A set of 25 consecutive primes that form a 5 X 5 magic square with the (non-minimal) magic constant 1703.
  * @author Georg Fischer
  */
 public class A073522 extends FiniteSequence {

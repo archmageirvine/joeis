@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A334537 <code>a(n)</code> is the largest n-digit number using each digit 0 to <code>n-1</code> once, such that the numbers formed by its last k digits are divisible by k, <code>(k = 1..n)</code>.
+ * A334537 a(n) is the largest n-digit number using each digit 0 to n-1 once, such that the numbers formed by its last k digits are divisible by k, (k = 1..n).
  * @author Georg Fischer
  */
 public class A334537 extends FiniteSequence {

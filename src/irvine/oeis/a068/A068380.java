@@ -6,7 +6,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068380 Engel expansion of <code>sinh(1/3)</code>.
+ * A068380 Engel expansion of sinh(1/3).
  * @author Georg Fischer
  */
 public class A068380 extends HolonomicRecurrence {

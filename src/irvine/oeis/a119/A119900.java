@@ -7,7 +7,7 @@ package irvine.oeis.a119;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A119900 Triangle read by rows: <code>T(n,k)</code> is the number of binary words of length n with k strictly increasing runs, for <code>0&lt;=k&lt;=n</code>.
+ * A119900 Triangle read by rows: T(n,k) is the number of binary words of length n with k strictly increasing runs, for 0&lt;=k&lt;=n.
  * @author Georg Fischer
  */
 public class A119900 extends GeneratingFunctionTriangle {

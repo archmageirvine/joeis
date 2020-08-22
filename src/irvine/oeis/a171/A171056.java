@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A171056 In the sequence of prime numbers, replace all the <code>'9'</code> digits with <code>'7'</code> and vice versa.
+ * A171056 In the sequence of prime numbers, replace all the '9' digits with '7' and vice versa.
  * @author Georg Fischer
  */
 public class A171056 extends A000040 {

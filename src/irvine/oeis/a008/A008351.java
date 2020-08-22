@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008351 <code>a(n)</code> is the concatenation of <code>a(n-1)</code> and <code>a(n-2)</code>.
+ * A008351 a(n) is the concatenation of a(n-1) and a(n-2).
  * @author Sean A. Irvine
  */
 public class A008351 implements Sequence {

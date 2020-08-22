@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330602 <code>a(n) = a(n-1)</code> XOR <code>(n+1)</code>, with <code>a(0) = 0</code>.
+ * A330602 a(n) = a(n-1) XOR (n+1), with a(0) = 0.
  * @author Georg Fischer
  */
 public class A330602 extends HolonomicRecurrence {

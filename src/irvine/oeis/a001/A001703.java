@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001703 Decimal concatenation of n, <code>n+1</code>, and <code>n+2</code>.
+ * A001703 Decimal concatenation of n, n+1, and n+2.
  * @author Sean A. Irvine
  */
 public class A001703 implements Sequence {

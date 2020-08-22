@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000110;
 
 /**
- * A008827 Coefficients from fractional iteration of <code>exp(x) -1</code>.
+ * A008827 Coefficients from fractional iteration of exp(x) -1.
  * @author Sean A. Irvine
  */
 public class A008827 extends A000110 {

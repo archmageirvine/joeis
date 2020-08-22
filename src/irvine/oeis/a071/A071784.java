@@ -6,7 +6,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071784 Determinant of the <code>n X n</code> matrix whose element <code>(i,j)</code> equals the <code>floor( Phi^(i-j) + 1)</code>.
+ * A071784 Determinant of the n X n matrix whose element (i,j) equals the floor( Phi^(i-j) + 1).
  * @author Georg Fischer
  */
 public class A071784 extends GeneratingFunctionSequence {

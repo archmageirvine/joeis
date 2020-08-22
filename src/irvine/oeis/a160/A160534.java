@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A160534 Coefficients in the expansion of <code>B^7/C</code>, in Watson's notation of page 118.
+ * A160534 Coefficients in the expansion of B^7/C, in Watson's notation of page 118.
  * @author Georg Fischer
  */
 public class A160534 extends EulerTransform {

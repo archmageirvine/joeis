@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025065 Number of palindromic partitions of <code>n</code>.
+ * A025065 Number of palindromic partitions of n.
  * @author Sean A. Irvine
  */
 public class A025065 implements Sequence {

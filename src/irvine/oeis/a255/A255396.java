@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A255396 McKay-Thompson series of class <code>24h</code> for the Monster group with <code>a(0) = 2</code>.
+ * A255396 McKay-Thompson series of class 24h for the Monster group with a(0) = 2.
  * @author Georg Fischer
  */
 public class A255396 extends EulerTransform {

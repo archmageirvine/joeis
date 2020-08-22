@@ -6,7 +6,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316571 <code>a(1) = 1;</code> for <code>n &gt; 1: a(n) =</code> smallest number such that <code>(Sum_{k=1..n} a(k))</code> is divisible by <code>n - 1</code>.
+ * A316571 a(1) = 1; for n &gt; 1: a(n) = smallest number such that (Sum_{k=1..n} a(k)) is divisible by n - 1.
  * @author Georg Fischer
  */
 public class A316571 extends GeneratingFunctionSequence {

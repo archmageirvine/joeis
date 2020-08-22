@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033182 Number of pairs <code>(p,q)</code> such that <code>5*p + 6*q = n</code>.
+ * A033182 Number of pairs (p,q) such that 5*p + 6*q = n.
  * @author Sean A. Irvine
  */
 public class A033182 implements Sequence {

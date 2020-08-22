@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A111317 Let <code>f(a,q) = prod(j&gt;=0, 1-a*q^j );</code> g.f. is <code>f(q^2,q^3) / f(q,q^3)</code>.
+ * A111317 Let f(a,q) = prod(j&gt;=0, 1-a*q^j ); g.f. is f(q^2,q^3) / f(q,q^3).
  * @author Georg Fischer
  */
 public class A111317 extends EulerTransform {

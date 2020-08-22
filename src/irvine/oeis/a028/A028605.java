@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028605 Expansion of <code>(theta_3(z)*theta_3(10z)+theta_2(z)*theta_2(10z))</code>.
+ * A028605 Expansion of (theta_3(z)*theta_3(10z)+theta_2(z)*theta_2(10z)).
  * @author Sean A. Irvine
  */
 public class A028605 implements Sequence {

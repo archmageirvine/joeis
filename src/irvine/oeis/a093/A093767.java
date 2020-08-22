@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093767 Decimal expansion of <code>(8 - 4*sqrt(2) - log(2))/(-1 + 2*sqrt(2))</code>.
+ * A093767 Decimal expansion of (8 - 4*sqrt(2) - log(2))/(-1 + 2*sqrt(2)).
  * @author Georg Fischer
  */
 public class A093767 extends DecimalExpansionSequence {

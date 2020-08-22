@@ -6,7 +6,7 @@ package irvine.oeis.a289;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A289147 Number of <code>(n+1) X (n+1)</code> binary matrices M with at most one 1 in each of the first n rows and each of the first n columns and <code>M[n+1,n+1] = 0</code>.
+ * A289147 Number of (n+1) X (n+1) binary matrices M with at most one 1 in each of the first n rows and each of the first n columns and M[n+1,n+1] = 0.
  * @author Georg Fischer
  */
 public class A289147 extends HolonomicRecurrence {

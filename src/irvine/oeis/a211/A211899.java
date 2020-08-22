@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211899 Number of triangular <code>n X n X n</code> arrays colored with integers 0 upwards introduced in row major order, with no element equal to any neighbor, and containing the value <code>n(n+1)/2-2</code>.
+ * A211899 Number of triangular n X n X n arrays colored with integers 0 upwards introduced in row major order, with no element equal to any neighbor, and containing the value n(n+1)/2-2.
  * @author Georg Fischer
  */
 public class A211899 extends GeneratingFunctionSequence {

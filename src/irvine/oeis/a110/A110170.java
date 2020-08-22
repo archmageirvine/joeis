@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110170 First differences of the central Delannoy numbers <code>(A001850)</code>.
+ * A110170 First differences of the central Delannoy numbers (A001850).
  * @author Georg Fischer
  */
 public class A110170 extends HolonomicRecurrence {

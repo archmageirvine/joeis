@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020878 Number of maximum matchings in the n-Moebius ladder <code>M_n</code>.
+ * A020878 Number of maximum matchings in the n-Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020878 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319013 <code>a(n)</code> is the sum over each permutation of <code>S_n</code> of the least element of the descent set.
+ * A319013 a(n) is the sum over each permutation of S_n of the least element of the descent set.
  * @author Georg Fischer
  */
 public class A319013 extends HolonomicRecurrence {

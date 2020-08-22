@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173243 G.f. <code>(x + 1)^10/(x^10 + x^9 - x^7 - x^6 - x^5 - x^4 - x^3 + x + 1)</code>.
+ * A173243 G.f. (x + 1)^10/(x^10 + x^9 - x^7 - x^6 - x^5 - x^4 - x^3 + x + 1).
  * @author Georg Fischer
  */
 public class A173243 extends GeneratingFunctionSequence {

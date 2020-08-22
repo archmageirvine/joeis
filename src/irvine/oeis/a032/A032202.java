@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032202 Sequence <code>(a(n): n &gt;= 1)</code> that shifts left 2 places under the "CIK" <code>(necklace</code>, indistinct, unlabeled) transform and satisfies <code>a(1) = a(2) = 1</code>.
+ * A032202 Sequence (a(n): n &gt;= 1) that shifts left 2 places under the "CIK" (necklace, indistinct, unlabeled) transform and satisfies a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
 public class A032202 extends MemorySequence {

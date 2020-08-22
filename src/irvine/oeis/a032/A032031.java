@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032031 Triple factorial numbers: <code>(3n)!!! = 3^n*n!</code>.
+ * A032031 Triple factorial numbers: (3n)!!! = 3^n*n!.
  * @author Sean A. Irvine
  */
 public class A032031 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A066586 Number of normal subgroups of the group of <code>n X n</code> signed permutations matrices (described in sequence <code>A066051)</code>.
+ * A066586 Number of normal subgroups of the group of n X n signed permutations matrices (described in sequence A066051).
  * @author Georg Fischer
  */
 public class A066586 extends PaddingSequence {

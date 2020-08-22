@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317252 (Number of <code>4 X 4</code> pandiagonal magic squares with distinct positive entries less than <code>n)/384</code>.
+ * A317252 (Number of 4 X 4 pandiagonal magic squares with distinct positive entries less than n)/384.
  * @author Georg Fischer
  */
 public class A317252 extends GeneratingFunctionSequence {

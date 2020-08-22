@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A277342 <code>Base-100</code> digital root of <code>n</code> (equivalent to repeatedly adding pairs of decimal digits starting from the least significant pair).
+ * A277342 Base-100 digital root of n (equivalent to repeatedly adding pairs of decimal digits starting from the least significant pair).
  * @author Georg Fischer
  */
 public class A277342 extends PaddingSequence {

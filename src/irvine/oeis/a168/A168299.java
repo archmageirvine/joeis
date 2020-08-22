@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168299 <code>a(n) = 1 + 3^n * n^3</code>.
+ * A168299 a(n) = 1 + 3^n * n^3.
  * @author Georg Fischer
  */
 public class A168299 extends GeneratingFunctionSequence {

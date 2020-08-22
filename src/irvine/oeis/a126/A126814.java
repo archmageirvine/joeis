@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000594;
 
 
 /**
- * A126814 Ramanujan numbers <code>(A000594)</code> read <code>mod 16</code>.
+ * A126814 Ramanujan numbers (A000594) read mod 16.
  * @author Georg Fischer
  */
 public class A126814 extends A000594 {

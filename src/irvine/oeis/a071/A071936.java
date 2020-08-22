@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A071936 <code>K(n+1,n)</code> where <code>K(x,y)</code> is the Kronecker symbol <code>(x/y)</code>.
+ * A071936 K(n+1,n) where K(x,y) is the Kronecker symbol (x/y).
  * @author Georg Fischer
  */
 public class A071936 extends PaddingSequence {

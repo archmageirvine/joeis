@@ -3,7 +3,7 @@ package irvine.oeis.a219;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A219396 Numbers k such that <code>19*k+1</code> is a square.
+ * A219396 Numbers k such that 19*k+1 is a square.
  * @author Sean A. Irvine
  */
 public class A219396 extends LinearRecurrence {

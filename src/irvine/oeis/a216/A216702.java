@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216702 <code>a(n) =</code> prod <code>_{k=1..n} (16 - 4/k)</code>.
+ * A216702 a(n) = prod _{k=1..n} (16 - 4/k).
  * @author Georg Fischer
  */
 public class A216702 extends HolonomicRecurrence {

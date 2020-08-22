@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004948 Nearest integer to <code>n*phi^13</code>, where phi is the golden ratio, <code>A001622</code>.
+ * A004948 Nearest integer to n*phi^13, where phi is the golden ratio, A001622.
  * @author Sean A. Irvine
  */
 public class A004948 implements Sequence {

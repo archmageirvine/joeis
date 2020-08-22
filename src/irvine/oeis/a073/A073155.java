@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073155 Leftmost column sequence of triangle <code>A073153</code>.
+ * A073155 Leftmost column sequence of triangle A073153.
  * @author Georg Fischer
  */
 public class A073155 extends HolonomicRecurrence {

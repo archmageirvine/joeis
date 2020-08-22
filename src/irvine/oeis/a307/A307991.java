@@ -3,7 +3,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307991 Fibonacci numbers of the form <code>k^2 - k - 1</code> with integer k.
+ * A307991 Fibonacci numbers of the form k^2 - k - 1 with integer k.
  * @author Georg Fischer
  */
 public class A307991 extends FiniteSequence {

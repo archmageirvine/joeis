@@ -6,7 +6,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180316 Concatenation of n and <code>A008954(n)</code>.
+ * A180316 Concatenation of n and A008954(n).
  * @author Georg Fischer
  */
 public class A180316 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A322419 Number of <code>n-step self-avoiding</code> walks on <code>L-lattice</code>.
+ * A322419 Number of n-step self-avoiding walks on L-lattice.
  * @author Sean A. Irvine
  */
 public class A322419 implements Sequence {

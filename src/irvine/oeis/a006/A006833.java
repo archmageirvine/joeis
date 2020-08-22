@@ -4,7 +4,7 @@ import irvine.math.r.PhysicsConstants;
 import irvine.oeis.DoubleDecimalExpansionSequence;
 
 /**
- * A006833 Decimal expansion of <code>neutron-to-electron</code> mass ratio.
+ * A006833 Decimal expansion of neutron-to-electron mass ratio.
  * @author Sean A. Irvine
  */
 public class A006833 extends DoubleDecimalExpansionSequence {

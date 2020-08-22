@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024156 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> that are obtuse.
+ * A024156 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n that are obtuse.
  * @author Sean A. Irvine
  */
 public class A024156 implements Sequence {

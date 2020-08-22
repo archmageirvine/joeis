@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206918 Sum of binary palindromes p <code>&lt; 2^n</code>.
+ * A206918 Sum of binary palindromes p &lt; 2^n.
  * @author Georg Fischer
  */
 public class A206918 extends GeneratingFunctionSequence {

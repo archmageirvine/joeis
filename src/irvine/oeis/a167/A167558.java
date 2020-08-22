@@ -6,7 +6,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167558 The second right hand column of triangle <code>A167557</code>.
+ * A167558 The second right hand column of triangle A167557.
  * @author Georg Fischer
  */
 public class A167558 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309842 <code>a(n)</code> is the total surface area of a hollow cubic block (defined as a block with a shell thickness of <code>1</code> cube) where n is the edge length of the removed volume.
+ * A309842 a(n) is the total surface area of a hollow cubic block (defined as a block with a shell thickness of 1 cube) where n is the edge length of the removed volume.
  * @author Georg Fischer
  */
 public class A309842 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A306324 Decimal expansion of <code>2*Pi*tanh(sqrt(5/3)*Pi/2)/sqrt(15)</code>.
+ * A306324 Decimal expansion of 2*Pi*tanh(sqrt(5/3)*Pi/2)/sqrt(15).
  * @author Georg Fischer
  */
 public class A306324 extends DecimalExpansionSequence {

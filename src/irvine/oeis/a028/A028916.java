@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028916 Friedlander-Iwaniec primes: Primes of form <code>a^2 + b^4</code>.
+ * A028916 Friedlander-Iwaniec primes: Primes of form a^2 + b^4.
  * @author Sean A. Irvine
  */
 public class A028916 implements Sequence {

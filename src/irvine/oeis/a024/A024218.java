@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024218 <code>a(n) = s(1)*s(2)*...*s(n+1)(1/s(2) - 1/s(3) + ... + c/s(n+1))</code>, where <code>c=(-1)^n+1</code> and <code>s(k) = 3k-2</code> for k <code>= 1,2,3,..</code>.
+ * A024218 a(n) = s(1)*s(2)*...*s(n+1)(1/s(2) - 1/s(3) + ... + c/s(n+1)), where c=(-1)^n+1 and s(k) = 3k-2 for k = 1,2,3,...
  * @author Sean A. Irvine
  */
 public class A024218 implements Sequence {

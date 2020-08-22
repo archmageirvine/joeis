@@ -10,7 +10,7 @@ import irvine.math.q.Q;
 import java.util.Arrays;
 
 /**
- * A002424 Expansion of <code>(1-4*x)^(9/2)</code>.
+ * A002424 Expansion of (1-4*x)^(9/2).
  * @author Sean A. Irvine
  */
 public class A002424 implements Sequence {

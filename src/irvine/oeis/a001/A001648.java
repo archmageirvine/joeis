@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001648 Tetranacci numbers <code>A073817</code> without the leading term 4.
+ * A001648 Tetranacci numbers A073817 without the leading term 4.
  * @author Sean A. Irvine
  */
 public class A001648 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a205;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A205088 <code>a(n)=n 8</code>'s sandwiched between two <code>1</code>'s.
+ * A205088 a(n)=n 8's sandwiched between two 1's.
  * @author Sean A. Irvine
  */
 public class A205088 extends LinearRecurrence {

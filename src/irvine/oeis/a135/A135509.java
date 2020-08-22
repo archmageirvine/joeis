@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135509 Nonnegative integers c such that there are nonnegative integers a and b that satisfy <code>a^(1/2) + b^(1/2) = c^(1/2)</code> and <code>a^2 + b =</code> c.
+ * A135509 Nonnegative integers c such that there are nonnegative integers a and b that satisfy a^(1/2) + b^(1/2) = c^(1/2) and a^2 + b = c.
  * @author Sean A. Irvine
  */
 public class A135509 extends LinearRecurrence {

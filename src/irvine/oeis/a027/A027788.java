@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027788 <code>a(n) = 15*(n+1)*C(n+2,15)/2</code>.
+ * A027788 a(n) = 15*(n+1)*C(n+2,15)/2.
  * @author Georg Fischer
  */
 public class A027788 extends GeneratingFunctionSequence {

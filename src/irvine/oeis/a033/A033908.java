@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A033908 Least number of <code>Sort-then-add</code> persistence <code>n</code>.
+ * A033908 Least number of Sort-then-add persistence n.
  * @author Sean A. Irvine
  */
 public class A033908 extends PrependSequence {

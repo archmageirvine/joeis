@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A057522 <code>a(n+1) = a(n)/2</code> if <code>2|a(n), a(n)/3</code> if <code>3|a(n), a(n)/5</code> if <code>5|a(n), a(n)/7</code> if <code>7|a(n), a(n)/11</code> if <code>11|a(n)</code>, else <code>13*a(n)+1</code>.
+ * A057522 a(n+1) = a(n)/2 if 2|a(n), a(n)/3 if 3|a(n), a(n)/5 if 5|a(n), a(n)/7 if 7|a(n), a(n)/11 if 11|a(n), else 13*a(n)+1.
  * @author Georg Fischer
  */
 public class A057522 extends PaddingSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a169;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A169961 <code>a(n) = binomial(12*n, n)</code>.
+ * A169961 a(n) = binomial(12*n, n).
  * @author Georg Fischer
  */
 public class A169961 extends HolonomicRecurrence {

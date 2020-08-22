@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178789 <code>4^(n-1) + 2</code>: Number of acute angles after n iterations of the Koch snowflake construction.
+ * A178789 4^(n-1) + 2: Number of acute angles after n iterations of the Koch snowflake construction.
  * @author Georg Fischer
  */
 public class A178789 extends GeneratingFunctionSequence {

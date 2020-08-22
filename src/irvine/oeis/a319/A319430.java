@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003726;
 
 /**
- * A319430 First differences of the tribonacci representation numbers (A003726 or <code>A278038)</code>.
+ * A319430 First differences of the tribonacci representation numbers (A003726 or A278038).
  * @author Georg Fischer
  */
 public class A319430 extends DifferenceSequence {

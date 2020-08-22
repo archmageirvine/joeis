@@ -4,7 +4,7 @@ package irvine.oeis.a128;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A128473 Numbers of the form <code>30*k+23</code> or numbers that cannot be part of a twin prime pair.
+ * A128473 Numbers of the form 30*k+23 or numbers that cannot be part of a twin prime pair.
  * @author Georg Fischer
  */
 public class A128473 extends GeneratingFunctionSequence {

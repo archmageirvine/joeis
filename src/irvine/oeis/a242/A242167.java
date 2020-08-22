@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242167 Number of length n binary words that contain 000 and 001 and 010 and 011 and 100 and 101 and 110 and 111 as contiguous subsequences. The 3 letter subsequences are allowed to overlap.
+ * A242167 Number of length n binary words that contain 000 and 001 and 010 and 011 and 100 and 101 and 110 and 111 as contiguous subsequences.  The 3 letter subsequences are allowed to overlap.
  * @author Georg Fischer
  */
 public class A242167 extends GeneratingFunctionSequence {

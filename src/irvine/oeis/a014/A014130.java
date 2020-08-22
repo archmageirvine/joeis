@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014130 <code>((n+3)!/6)*product( 2*k+1, k=0..n)</code>.
+ * A014130 ((n+3)!/6)*product( 2*k+1, k=0..n).
  * @author Sean A. Irvine
  */
 public class A014130 implements Sequence {

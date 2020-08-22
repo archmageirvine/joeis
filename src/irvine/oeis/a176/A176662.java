@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A176662 <code>a(0)=2, a(1)=7</code>, and <code>a(n) = (3*n+1)*2^(n-1)</code> if <code>n &gt; 1</code>.
+ * A176662 a(0)=2, a(1)=7, and a(n) = (3*n+1)*2^(n-1) if n &gt; 1.
  * @author Georg Fischer
  */
 public class A176662 extends GeneratingFunctionSequence {

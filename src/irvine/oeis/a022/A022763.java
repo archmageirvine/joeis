@@ -6,7 +6,7 @@ import irvine.oeis.a007.A007520;
 import irvine.oeis.a007.A007521;
 
 /**
- * A022763 <code>n-th 8k+3</code> prime plus <code>n-th 8k+5</code> prime.
+ * A022763 n-th 8k+3 prime plus n-th 8k+5 prime.
  * @author Sean A. Irvine
  */
 public class A022763 implements Sequence {

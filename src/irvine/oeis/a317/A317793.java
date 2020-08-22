@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317793 <code>a(n) = (4^n + (-3)^n + 2^n + (-1)^n)/2</code>.
+ * A317793 a(n) = (4^n + (-3)^n + 2^n + (-1)^n)/2.
  * @author Georg Fischer
  */
 public class A317793 extends GeneratingFunctionSequence {

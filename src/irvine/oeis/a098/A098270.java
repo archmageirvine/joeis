@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098270 <code>a(n) = 2^n*P_n(5), 2^n</code> times the Legendre polynomial of order n at 5.
+ * A098270 a(n) = 2^n*P_n(5), 2^n times the Legendre polynomial of order n at 5.
  * @author Georg Fischer
  */
 public class A098270 extends HolonomicRecurrence {

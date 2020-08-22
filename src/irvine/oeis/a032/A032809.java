@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032809 Numbers whose set of base 9 digits is <code>{2,3}</code>.
+ * A032809 Numbers whose set of base 9 digits is {2,3}.
  * @author Sean A. Irvine
  */
 public class A032809 extends MemorySequence {

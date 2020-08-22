@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A271836 Decimal expansion of <code>3^(1/3) / 2^(1/6)</code>.
+ * A271836 Decimal expansion of 3^(1/3) / 2^(1/6).
  * @author Georg Fischer
  */
 public class A271836 extends DecimalExpansionSequence {

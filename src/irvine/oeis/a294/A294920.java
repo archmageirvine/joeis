@@ -5,7 +5,7 @@ package irvine.oeis.a294;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A294920 Numbers k such that <code>41*10^k - 1</code> is prime.
+ * A294920 Numbers k such that 41*10^k - 1 is prime.
  * @author Georg Fischer
  */
 public class A294920 extends PowerFactorPrimeSequence {

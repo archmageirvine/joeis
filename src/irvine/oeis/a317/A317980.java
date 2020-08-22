@@ -5,7 +5,7 @@ package irvine.oeis.a317;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A317980 <code>a(n) = Product_{i=1..n} floor(5*i/2)</code>.
+ * A317980 a(n) = Product_{i=1..n} floor(5*i/2).
  * @author Georg Fischer
  */
 public class A317980 extends HolonomicRecurrence {

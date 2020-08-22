@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A081622 Number of 6-core partitions of <code>n</code>.
+ * A081622 Number of 6-core partitions of n.
  * @author Georg Fischer
  */
 public class A081622 extends EulerTransform {

@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A074582 <code>a(n) = S(3n)</code>, where <code>S(n)</code> is the generalized tribonacci sequence <code>A001644</code>.
+ * A074582 a(n) = S(3n), where S(n) is the generalized tribonacci sequence A001644.
  * @author Georg Fischer
  */
 public class A074582 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034866 <code>a(n) = n!*(n-4)/2, n &gt; 4</code>, and <code>a(4) = 4</code>.
+ * A034866 a(n) = n!*(n-4)/2, n &gt; 4, and a(4) = 4.
  * @author Georg Fischer
  */
 public class A034866 extends HolonomicRecurrence {

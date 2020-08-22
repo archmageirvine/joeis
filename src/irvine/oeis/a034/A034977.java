@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034977 Expansion of <code>1/(1-64*x)^(1/8)</code>, related to octo-factorial numbers <code>A045755</code>.
+ * A034977 Expansion of 1/(1-64*x)^(1/8), related to octo-factorial numbers A045755.
  * @author Georg Fischer
  */
 public class A034977 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a009.A009749;
 
 /**
- * A024292 Expansion of <code>tan(x)*tan(sinh(x))/2</code>.
+ * A024292 Expansion of tan(x)*tan(sinh(x))/2.
  * @author Sean A. Irvine
  */
 public class A024292 extends A009749 {

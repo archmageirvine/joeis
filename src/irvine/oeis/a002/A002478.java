@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000930;
 
 /**
- * A002478 Bisection of <code>A000930</code>.
+ * A002478 Bisection of A000930.
  * @author Sean A. Irvine
  */
 public class A002478 extends A000930 {

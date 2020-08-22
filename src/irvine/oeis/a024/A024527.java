@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A024527 <code>a(n) =</code> sum of cubes of <code>p(j) - p(i)</code>, for <code>0 &lt;= i &lt; j &lt;=</code> n, where <code>p(0) = 1</code>.
+ * A024527 a(n) = sum of cubes of p(j) - p(i), for 0 &lt;= i &lt; j &lt;= n, where p(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024527 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010029 Irregular triangle read by rows: <code>T(n,k) (n&gt;=1, 0 &lt;= k &lt;= floor(n/2)) =</code> number of permutations of <code>1..n</code> with exactly <code>floor(n/2) -</code> k runs of consecutive pairs up.
+ * A010029 Irregular triangle read by rows: T(n,k) (n&gt;=1, 0 &lt;= k &lt;= floor(n/2)) = number of permutations of 1..n with exactly floor(n/2) - k runs of consecutive pairs up.
  * @author Sean A. Irvine
  */
 public class A010029 implements Sequence {

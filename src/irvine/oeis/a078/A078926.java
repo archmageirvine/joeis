@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A078926 Number of primitive Pythagorean triangles with perimeter <code>2n</code>.
+ * A078926 Number of primitive Pythagorean triangles with perimeter 2n.
  * @author Sean A. Irvine
  */
 public class A078926 implements Sequence {

@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a033.A033762;
 
 /**
- * A004046 Theta series of extremal 3-modular even 24-dimensional lattice with minimal norm 6 and det <code>= 3^12</code>.
+ * A004046 Theta series of extremal 3-modular even 24-dimensional lattice with minimal norm 6 and det = 3^12.
  * @author Sean A. Irvine
  */
 public class A004046 implements Sequence {

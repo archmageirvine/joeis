@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a079.A079126;
 
 /**
- * A026840 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n into distinct parts <code>&lt;=</code> k, for <code>k=1,2,...n</code>.
+ * A026840 Triangular array T read by rows: T(n,k) = number of partitions of n into distinct parts &lt;= k, for k=1,2,...n.
  * @author Sean A. Irvine
  */
 public class A026840 extends A079126 {

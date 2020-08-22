@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004164 Sum of digits of <code>n^3</code>.
+ * A004164 Sum of digits of n^3.
  * @author Sean A. Irvine
  */
 public class A004164 implements Sequence {

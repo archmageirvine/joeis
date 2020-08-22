@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051688 <code>a(n) = (5*n+7)(!^5)/7(!^5)</code>, related to <code>A034323 ((5*n+2)(!^5)</code> quintic, or <code>5-factorials)</code>.
+ * A051688 a(n) = (5*n+7)(!^5)/7(!^5), related to A034323 ((5*n+2)(!^5) quintic, or 5-factorials).
  * @author Georg Fischer
  */
 public class A051688 extends HolonomicRecurrence {

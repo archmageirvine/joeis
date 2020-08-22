@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032774 <code>[ n(n+1)(n+2)...(n+6) / (n+(n+1)+(n+2)+...+(n+6)) ]</code>.
+ * A032774 [ n(n+1)(n+2)...(n+6) / (n+(n+1)+(n+2)+...+(n+6)) ].
  * @author Sean A. Irvine
  */
 public class A032774 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011557 Powers of <code>10: a(n) = 10^n</code>.
+ * A011557 Powers of 10: a(n) = 10^n.
  * @author Sean A. Irvine
  */
 public class A011557 implements Sequence {

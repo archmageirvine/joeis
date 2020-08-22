@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002610 Glaisher's function <code>H'(4n+1) (18</code> squares version).
+ * A002610 Glaisher's function H'(4n+1) (18 squares version).
  * @author Sean A. Irvine
  */
 public class A002610 extends MemorySequence {

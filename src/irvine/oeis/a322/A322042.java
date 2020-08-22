@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322042 Maximum edge-distance of a point in the quotient graph <code>E/nE</code> from the origin (see <code>A322041</code> for further information).
+ * A322042 Maximum edge-distance of a point in the quotient graph E/nE from the origin (see A322041 for further information).
  * @author Georg Fischer
  */
 public class A322042 extends HolonomicRecurrence {

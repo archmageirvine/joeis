@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023534 Numbers n such that the largest power of 2 dividing n equals <code>2^omega(n)</code>.
+ * A023534 Numbers n such that the largest power of 2 dividing n equals 2^omega(n).
  * @author Sean A. Irvine
  */
 public class A023534 implements Sequence {

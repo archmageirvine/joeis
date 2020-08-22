@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229031 Number of 5-colorings of the strong product of the complete graph <code>K2</code> and the cycle graph <code>Cn</code>.
+ * A229031 Number of 5-colorings of the strong product of the complete graph K2 and the cycle graph Cn.
  * @author Sean A. Irvine
  */
 public class A229031 extends LinearRecurrence {

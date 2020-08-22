@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007180;
 
 /**
- * A001397 Number of <code>2n-step self-avoiding</code> walks on diamond lattice ending at point with <code>x = 2</code>.
+ * A001397 Number of 2n-step self-avoiding walks on diamond lattice ending at point with x = 2.
  * @author Sean A. Irvine
  */
 public class A001397 extends A007180 {

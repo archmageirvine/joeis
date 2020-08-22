@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034057 Decimal part of <code>a(n)^(1/2)</code> starts with <code>n</code> (squares excluded).
+ * A034057 Decimal part of a(n)^(1/2) starts with n (squares excluded).
  * @author Sean A. Irvine
  */
 public class A034057 implements Sequence {

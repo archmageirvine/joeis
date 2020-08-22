@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A212907 Expansion of <code>x^(-1/3) * psi(x^3) * c(x) / 3</code> in powers of x where <code>psi()</code> is a Ramanujan theta function and <code>c()</code> is a cubic AGM theta function.
+ * A212907 Expansion of x^(-1/3) * psi(x^3) * c(x) / 3 in powers of x where psi() is a Ramanujan theta function and c() is a cubic AGM theta function.
  * @author Georg Fischer
  */
 public class A212907 extends EulerTransform {

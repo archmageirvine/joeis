@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A198378 Smallest prime with multiplicative digital root value <code>0 &lt;= n &lt;= 9</code>.
+ * A198378 Smallest prime with multiplicative digital root value 0 &lt;= n &lt;= 9.
  * @author Georg Fischer
  */
 public class A198378 extends FiniteSequence {

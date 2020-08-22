@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A003903 Degrees of irreducible representations of Conway group <code>Co1</code>.
+ * A003903 Degrees of irreducible representations of Conway group Co1.
  * @author Sean A. Irvine
  */
 public class A003903 extends FiniteSequence {

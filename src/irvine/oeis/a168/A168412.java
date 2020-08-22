@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168412 <code>a(n) = n^5*(n^6 + 1)/2</code>.
+ * A168412 a(n) = n^5*(n^6 + 1)/2.
  * @author Georg Fischer
  */
 public class A168412 extends GeneratingFunctionSequence {

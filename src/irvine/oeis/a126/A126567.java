@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126567 Sequence generated from the <code>E6</code> Cartan matrix.
+ * A126567 Sequence generated from the E6 Cartan matrix.
  * @author Sean A. Irvine
  */
 public class A126567 extends LinearRecurrence {

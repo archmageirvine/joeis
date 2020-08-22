@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A080534 Number of protons in longest known radioactive decay series ending with Lead <code>207 ("actinium series")</code>, reversed.
+ * A080534 Number of protons in longest known radioactive decay series ending with Lead 207 ("actinium series"), reversed.
  * @author Georg Fischer
  */
 public class A080534 extends NoncomputableSequence {

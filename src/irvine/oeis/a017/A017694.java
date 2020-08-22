@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017694 Denominator of sum of <code>-15th</code> powers of divisors of <code>n</code>.
+ * A017694 Denominator of sum of -15th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017694 implements Sequence {

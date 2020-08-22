@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A144558 Expansion of <code>Product_{n &gt;= 1} (1+q^(2*n-1))/((1-q^(4*n))*(1+q^(4*n-2)))</code>.
+ * A144558 Expansion of Product_{n &gt;= 1} (1+q^(2*n-1))/((1-q^(4*n))*(1+q^(4*n-2))).
  * @author Georg Fischer
  */
 public class A144558 extends EulerTransform {

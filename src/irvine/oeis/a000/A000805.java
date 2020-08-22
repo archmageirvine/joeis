@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000805 Permanent of a certain cyclic <code>n X n (0,1)</code> matrix.
+ * A000805 Permanent of a certain cyclic n X n (0,1) matrix.
  * @author Sean A. Irvine
  */
 public class A000805 extends PrependSequence {

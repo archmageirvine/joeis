@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253636 Second partial sums of eighth powers <code>(A001016)</code>.
+ * A253636 Second partial sums of eighth powers (A001016).
  * @author Sean A. Irvine
  */
 public class A253636 extends LinearRecurrence {

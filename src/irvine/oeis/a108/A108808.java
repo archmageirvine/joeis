@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A108808 Number of compositions of grid graph <code>G_{3,n} = P_3 X P_n</code>.
+ * A108808 Number of compositions of grid graph G_{3,n} = P_3 X P_n.
  * @author Sean A. Irvine
  */
 public class A108808 extends LinearRecurrence {

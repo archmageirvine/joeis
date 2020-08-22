@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143960 <code>a(n) =</code> the n-th positive integer with exactly n zeros and n ones in its binary representation.
+ * A143960 a(n) = the n-th positive integer with exactly n zeros and n ones in its binary representation.
  * @author Georg Fischer
  */
 public class A143960 extends GeneratingFunctionSequence {

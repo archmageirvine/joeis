@@ -5,7 +5,7 @@ package irvine.oeis.a211;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A211685 Prime numbers <code>&gt; 1000</code> such that all the substrings of length <code>&gt;= 3</code> are primes (substrings with leading <code>'0'</code> are considered to be nonprime).
+ * A211685 Prime numbers &gt; 1000 such that all the substrings of length &gt;= 3 are primes (substrings with leading '0' are considered to be nonprime).
  * @author Georg Fischer
  */
 public class A211685 extends FiniteSequence {

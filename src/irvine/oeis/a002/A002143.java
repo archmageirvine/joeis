@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002143 Class numbers <code>h(-p)</code> where p runs through the primes p <code>== 3 (mod 4)</code>.
+ * A002143 Class numbers h(-p) where p runs through the primes p == 3 (mod 4).
  * @author Sean A. Irvine
  */
 public class A002143 implements Sequence {

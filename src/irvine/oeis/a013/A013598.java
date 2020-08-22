@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013598 <code>a(n) = nextprime(3^n)-3^n</code>.
+ * A013598 a(n) = nextprime(3^n)-3^n.
  * @author Sean A. Irvine
  */
 public class A013598 implements Sequence {

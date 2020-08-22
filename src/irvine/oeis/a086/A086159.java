@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086159 Number of partitions of n into the first three triangular numbers, <code>1, 3</code> and 6.
+ * A086159 Number of partitions of n into the first three triangular numbers, 1, 3 and 6.
  * @author Sean A. Irvine
  */
 public class A086159 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053310 <code>a(n) = (n+3)*binomial(n+8, 8)/3</code>.
+ * A053310 a(n) = (n+3)*binomial(n+8, 8)/3.
  * @author Sean A. Irvine
  */
 public class A053310 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.a030.A030998;
 import irvine.util.array.LongDynamicIntArray;
 
 /**
- * A031006 <code>a(n)=least</code> k such that base 7 representation of n begins at <code>s(k)</code>, where <code>s=A030998</code>.
+ * A031006 a(n)=least k such that base 7 representation of n begins at s(k), where s=A030998.
  * @author Sean A. Irvine
  */
 public class A031006 implements Sequence {

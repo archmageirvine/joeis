@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108177 Integers of the form <code>2^(4n-1)</code> or <code>2^(4n), n&gt;0</code> and their immediate neighbors, together with <code>-1, 0</code> and 1.
+ * A108177 Integers of the form 2^(4n-1) or 2^(4n), n&gt;0 and their immediate neighbors, together with -1, 0 and 1.
  * @author Georg Fischer
  */
 public class A108177 extends GeneratingFunctionSequence {

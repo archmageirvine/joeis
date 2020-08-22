@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A240352 Inverse of <code>67th</code> cyclotomic polynomial.
+ * A240352 Inverse of 67th cyclotomic polynomial.
  * @author Georg Fischer
  */
 public class A240352 extends PaddingSequence {

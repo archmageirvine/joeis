@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153780 10 times pentagonal numbers: <code>a(n) = 5*n*(3*n-1)</code>.
+ * A153780 10 times pentagonal numbers: a(n) = 5*n*(3*n-1).
  * @author Sean A. Irvine
  */
 public class A153780 extends LinearRecurrence {

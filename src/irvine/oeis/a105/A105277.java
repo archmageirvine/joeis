@@ -6,7 +6,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105277 Let <code>b(n)</code> denote the Fibonacci numbers, <code>A000045: a(n) = Sum{k=0..n}C(n,k)^2*(n-k)!*b(k)</code>.
+ * A105277 Let b(n) denote the Fibonacci numbers, A000045: a(n) = Sum{k=0..n}C(n,k)^2*(n-k)!*b(k).
  * @author Georg Fischer
  */
 public class A105277 extends HolonomicRecurrence {

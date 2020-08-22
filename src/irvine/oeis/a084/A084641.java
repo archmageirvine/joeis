@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084641 Binomial transform of <code>n^7</code>.
+ * A084641 Binomial transform of n^7.
  * @author Sean A. Irvine
  */
 public class A084641 extends LinearRecurrence {

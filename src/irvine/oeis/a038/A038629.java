@@ -6,7 +6,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038629 Convolution of Catalan numbers <code>A000108</code> with Catalan numbers but <code>C(0)=1</code> replaced by 3.
+ * A038629 Convolution of Catalan numbers A000108 with Catalan numbers but C(0)=1 replaced by 3.
  * @author Georg Fischer
  */
 public class A038629 extends HolonomicRecurrence {

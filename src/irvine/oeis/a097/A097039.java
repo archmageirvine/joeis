@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097039 <code>a(n) = Sum_{i=0..n} i*L(i)</code>, where L <code>= A000032</code>.
+ * A097039 a(n) = Sum_{i=0..n} i*L(i), where L = A000032.
  * @author Georg Fischer
  */
 public class A097039 extends GeneratingFunctionSequence {

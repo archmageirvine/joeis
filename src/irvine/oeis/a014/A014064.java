@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A014064 Coefficients of the reciprocal of the <code>55th</code> cyclotomic polynomial.
+ * A014064 Coefficients of the reciprocal of the 55th cyclotomic polynomial.
  * @author Sean A. Irvine
  */
 public class A014064 extends PeriodicSequence {

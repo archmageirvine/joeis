@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016244 Expansion of <code>1/((1-x)(1-6x)(1-9x))</code>.
+ * A016244 Expansion of 1/((1-x)(1-6x)(1-9x)).
  * @author Sean A. Irvine
  */
 public class A016244 implements Sequence {

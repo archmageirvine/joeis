@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A231317 Number of <code>(n+1) X (1+1) 0..2</code> arrays with no element equal to a strict majority of its diagonal and antidiagonal neighbors, with values 0..2 introduced in row major order.
+ * A231317 Number of (n+1) X (1+1) 0..2 arrays with no element equal to a strict majority of its diagonal and antidiagonal neighbors, with values 0..2 introduced in row major order.
  * @author Georg Fischer
  */
 public class A231317 extends GeneratingFunctionSequence {

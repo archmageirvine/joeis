@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180592 Digital root of <code>2n</code>.
+ * A180592 Digital root of 2n.
  * @author Georg Fischer
  */
 public class A180592 extends HolonomicRecurrence {

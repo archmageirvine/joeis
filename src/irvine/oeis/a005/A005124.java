@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005124 Numbers n such that <code>8n + 3</code> is prime.
+ * A005124 Numbers n such that 8n + 3 is prime.
  * @author Sean A. Irvine
  */
 public class A005124 implements Sequence {

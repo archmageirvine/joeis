@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006657;
 import irvine.util.Pair;
 
 /**
- * A008828 Triangle read by rows: <code>T(n,k) =</code> number of closed meander systems of order n with <code>k&lt;=n</code> components.
+ * A008828 Triangle read by rows: T(n,k) = number of closed meander systems of order n with k&lt;=n components.
  * @author Sean A. Irvine
  */
 public class A008828 extends A006657 {

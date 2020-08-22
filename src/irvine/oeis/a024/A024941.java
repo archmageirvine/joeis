@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002144;
 
 /**
- * A024941 Number of partitions of n into distinct primes of the form <code>4k + 1</code>.
+ * A024941 Number of partitions of n into distinct primes of the form 4k + 1.
  * @author Sean A. Irvine
  */
 public class A024941 implements Sequence {

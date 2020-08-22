@@ -3,7 +3,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160739 <code>16*P_6(n), 16</code> times the Legendre Polynomial of order 6 at <code>n</code>.
+ * A160739 16*P_6(n), 16 times the Legendre Polynomial of order 6 at n.
  * @author Sean A. Irvine
  */
 public class A160739 extends LinearRecurrence {

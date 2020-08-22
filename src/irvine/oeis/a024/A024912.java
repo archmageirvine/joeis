@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024912 Numbers n such that <code>10n + 1</code> is prime.
+ * A024912 Numbers n such that 10n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A024912 implements Sequence {

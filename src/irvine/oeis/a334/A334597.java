@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A334597 Dimensions of the finite-dimensional Lie algebras of type <code>E_n (n=3,...,8)</code>.
+ * A334597 Dimensions of the finite-dimensional Lie algebras of type E_n (n=3,...,8).
  * @author Georg Fischer
  */
 public class A334597 extends FiniteSequence {

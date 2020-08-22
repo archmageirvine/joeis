@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059030 Fourth main diagonal of <code>A059026: a(n) = B(n+3,n) = lcm(n+3,n)/(n+3) + lcm(n+3,n)/n - 1</code> for all <code>n &gt;= 1</code>.
+ * A059030 Fourth main diagonal of A059026: a(n) = B(n+3,n) = lcm(n+3,n)/(n+3) + lcm(n+3,n)/n - 1 for all n &gt;= 1.
  * @author Georg Fischer
  */
 public class A059030 extends GeneratingFunctionSequence {

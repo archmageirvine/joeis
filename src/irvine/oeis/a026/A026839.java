@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026839 <code>a(n) = MAX{T(n,k}</code> for <code>k=1,2,...,n</code>, T given in <code>A026836</code>.
+ * A026839 a(n) = MAX{T(n,k} for k=1,2,...,n, T given in A026836.
  * @author Sean A. Irvine
  */
 public class A026839 extends A026836 {

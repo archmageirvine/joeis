@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144429 Starts <code>1 2 3</code> then successive terms have differences <code>1 2 3</code>.
+ * A144429 Starts 1 2 3 then successive terms have differences 1 2 3.
  * @author Georg Fischer
  */
 public class A144429 extends GeneratingFunctionSequence {

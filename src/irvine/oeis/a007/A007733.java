@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007733 Period of binary representation of <code>1/n</code>. Also, multiplicative order of 2 modulo the odd part of <code>n (= A000265(n))</code>.
+ * A007733 Period of binary representation of 1/n. Also, multiplicative order of 2 modulo the odd part of n (= A000265(n)).
  * @author Sean A. Irvine
  */
 public class A007733 implements Sequence {

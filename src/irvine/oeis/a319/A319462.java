@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A319462 Decimal expansion of <code>1/24 - 1/(8*Pi)</code>.
+ * A319462 Decimal expansion of 1/24 - 1/(8*Pi).
  * @author Georg Fischer
  */
 public class A319462 extends DecimalExpansionSequence {

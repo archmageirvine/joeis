@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262402 <code>a(n) =</code> number of triangles that can be formed from the points of a <code>3 X n</code> grid.
+ * A262402 a(n) = number of triangles that can be formed from the points of a 3 X n grid.
  * @author Georg Fischer
  */
 public class A262402 extends GeneratingFunctionSequence {

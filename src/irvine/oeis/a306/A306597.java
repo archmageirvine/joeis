@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A306597 <code>a(n) = Card({ Sum_{k=1..n}(x_k * k) : (x_k)_{k=1..n}</code> is an n-tuple of nonnegative integers such that <code>Sum_{k=1..n}(x_k * T_k) = T_n })</code>, where <code>T_k</code> denotes the k-th triangular number.
+ * A306597 a(n) = Card({ Sum_{k=1..n}(x_k * k) : (x_k)_{k=1..n} is an n-tuple of nonnegative integers such that Sum_{k=1..n}(x_k * T_k) = T_n }), where T_k denotes the k-th triangular number.
  * @author Luc Rousseau
  */
 public class A306597 implements Sequence {

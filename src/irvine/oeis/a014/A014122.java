@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014122 Numbers of form <code>|2^i +- 3^j|</code>.
+ * A014122 Numbers of form |2^i +- 3^j|.
  * @author Sean A. Irvine
  */
 public class A014122 implements Sequence {

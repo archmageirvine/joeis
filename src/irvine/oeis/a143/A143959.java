@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A143959 Final digit of <code>n^(n+1)-(n+1)^n</code> for <code>n&gt;2</code>.
+ * A143959 Final digit of n^(n+1)-(n+1)^n for n&gt;2.
  * @author Georg Fischer
  */
 public class A143959 extends PaddingSequence {

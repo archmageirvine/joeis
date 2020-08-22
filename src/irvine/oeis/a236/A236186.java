@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A236186 Differences between terms of compacting Eratosthenes sieve for <code>prime(5) = 11</code>.
+ * A236186 Differences between terms of compacting Eratosthenes sieve for prime(5) = 11.
  * @author Georg Fischer
  */
 public class A236186 extends PaddingSequence {

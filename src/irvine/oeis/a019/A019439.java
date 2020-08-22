@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A019439 Number of ways of tiling a <code>2 X n</code> rectangle with dominoes and triominoes.
+ * A019439 Number of ways of tiling a 2 X n rectangle with dominoes and triominoes.
  * @author Sean A. Irvine
  */
 public class A019439 extends LinearRecurrence {

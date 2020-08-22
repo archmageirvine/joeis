@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213787 <code>a(n) = Sum_{1&lt;=i&lt;j&lt;k&lt;=n} F(i)*F(j)*F(k)</code>, where <code>F(m)</code> is the m-th Fibonacci number.
+ * A213787 a(n) = Sum_{1&lt;=i&lt;j&lt;k&lt;=n} F(i)*F(j)*F(k), where F(m) is the m-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A213787 extends LinearRecurrence {

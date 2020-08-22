@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000045;
 import irvine.oeis.a005.A005408;
 
 /**
- * A023652 Convolution of <code>(F(2), F(3), F(4), ...)</code> and odd numbers.
+ * A023652 Convolution of (F(2), F(3), F(4), ...) and odd numbers.
  * @author Sean A. Irvine
  */
 public class A023652 extends ConvolutionSequence {

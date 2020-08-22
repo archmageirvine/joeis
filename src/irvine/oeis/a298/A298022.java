@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298022 Coordination sequence for <code>Dual(3^3.4^2)</code> tiling with respect to a trivalent node.
+ * A298022 Coordination sequence for Dual(3^3.4^2) tiling with respect to a trivalent node.
  * @author Georg Fischer
  */
 public class A298022 extends GeneratingFunctionSequence {

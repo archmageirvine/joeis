@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001265 Table <code>T(n,k)</code> in which n-th row lists prime factors of <code>2^n - 1 (n &gt;= 2)</code>, with repetition.
+ * A001265 Table T(n,k) in which n-th row lists prime factors of 2^n - 1 (n &gt;= 2), with repetition.
  * @author Sean A. Irvine
  */
 public class A001265 implements Sequence {

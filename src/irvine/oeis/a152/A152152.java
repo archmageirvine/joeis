@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152152 A sequence related to sine products and the Fibonacci numbers <code>A000045: a(n) = Product_{k=1..n} (1 + 4*sin(2*Pi*k/n)^2)</code>.
+ * A152152 A sequence related to sine products and the Fibonacci numbers A000045: a(n) = Product_{k=1..n} (1 + 4*sin(2*Pi*k/n)^2).
  * @author Georg Fischer
  */
 public class A152152 extends GeneratingFunctionSequence {

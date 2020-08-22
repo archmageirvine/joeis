@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A161184 Digital roots of highly composite numbers <code>(A002182)</code>.
+ * A161184 Digital roots of highly composite numbers (A002182).
  * @author Georg Fischer
  */
 public class A161184 extends PaddingSequence {

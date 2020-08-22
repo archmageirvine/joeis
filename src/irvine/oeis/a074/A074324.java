@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074324 <code>a(2n+1) = 3^n, a(2n) = 4*3^(n-1)</code> except for <code>a(0) = 1</code>.
+ * A074324 a(2n+1) = 3^n, a(2n) = 4*3^(n-1) except for a(0) = 1.
  * @author Georg Fischer
  */
 public class A074324 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139798 Coefficient of <code>x^5</code> in <code>(1-x-x^2)^(-n)</code>.
+ * A139798 Coefficient of x^5 in (1-x-x^2)^(-n).
  * @author Sean A. Irvine
  */
 public class A139798 extends LinearRecurrence {

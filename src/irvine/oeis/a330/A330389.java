@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A330389 Maximal order of an element in the <code>n X n X n</code> Rubik's cube group.
+ * A330389 Maximal order of an element in the n X n X n Rubik's cube group.
  * @author Georg Fischer
  */
 public class A330389 extends PaddingSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278815 Number of tilings of a <code>2 X n</code> grid with monomers, dimers, and trimers.
+ * A278815 Number of tilings of a 2 X n grid with monomers, dimers, and trimers.
  * @author Sean A. Irvine
  */
 public class A278815 extends LinearRecurrence {

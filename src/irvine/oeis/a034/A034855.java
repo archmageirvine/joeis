@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034855 Triangle read by rows giving number of rooted labeled trees with <code>n &gt;= 2</code> nodes and height d <code>&gt;= 1</code>.
+ * A034855 Triangle read by rows giving number of rooted labeled trees with n &gt;= 2 nodes and height d &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A034855 implements Sequence {

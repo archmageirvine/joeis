@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298806 Growth series for group with presentation <code>&lt;</code> S, T : <code>S^3 = T^6 = (S*T)^6 = 1 &gt;</code>.
+ * A298806 Growth series for group with presentation &lt; S, T : S^3 = T^6 = (S*T)^6 = 1 &gt;.
  * @author Georg Fischer
  */
 public class A298806 extends GeneratingFunctionSequence {

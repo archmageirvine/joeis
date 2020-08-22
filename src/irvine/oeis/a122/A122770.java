@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122770 Numbers k such that <code>A056109(k)</code> is a square.
+ * A122770 Numbers k such that A056109(k) is a square.
  * @author Sean A. Irvine
  */
 public class A122770 extends LinearRecurrence {

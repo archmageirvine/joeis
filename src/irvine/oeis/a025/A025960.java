@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025960 Expansion of <code>1/((1-2x)(1-4x)(1-5x)(1-8x))</code>.
+ * A025960 Expansion of 1/((1-2x)(1-4x)(1-5x)(1-8x)).
  * @author Georg Fischer
  */
 public class A025960 extends GeneratingFunctionSequence {

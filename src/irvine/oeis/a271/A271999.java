@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271999 Halogen sequence: <code>a(n) = A018227(n)-1</code>.
+ * A271999 Halogen sequence: a(n) = A018227(n)-1.
  * @author Georg Fischer
  */
 public class A271999 extends GeneratingFunctionSequence {

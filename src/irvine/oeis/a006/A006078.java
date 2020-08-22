@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006078 Number of triangulated <code>(n+2)-gons</code> rooted at an exterior edge.
+ * A006078 Number of triangulated (n+2)-gons rooted at an exterior edge.
  * @author Sean A. Irvine
  */
 public class A006078 implements Sequence {

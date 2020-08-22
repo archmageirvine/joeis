@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A127890 Largest <code>n-digit right-truncatable</code> prime.
+ * A127890 Largest n-digit right-truncatable prime.
  * @author Georg Fischer
  */
 public class A127890 extends FiniteSequence {

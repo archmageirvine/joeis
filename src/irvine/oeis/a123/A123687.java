@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123687 E.g.f.: <code>(1-x^2)^(-1/2)*exp(x^2/(1-x^2))*BesselI(0,x^2/(x^2-1))</code> (since this is an even function, we do not give the intercalating <code>0's)</code>.
+ * A123687 E.g.f.: (1-x^2)^(-1/2)*exp(x^2/(1-x^2))*BesselI(0,x^2/(x^2-1)) (since this is an even function, we do not give the intercalating 0's).
  * @author Georg Fischer
  */
 public class A123687 extends HolonomicRecurrence {

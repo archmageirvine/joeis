@@ -6,7 +6,7 @@ package irvine.oeis.a303;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A303952 <code>a(n)</code> is the number of monic polynomials <code>P(z)</code> of degree n over the complex numbers such that <code>P(z)</code> divides <code>P(z^2)</code>.
+ * A303952 a(n) is the number of monic polynomials P(z) of degree n over the complex numbers such that P(z) divides P(z^2).
  * @author Georg Fischer
  */
 public class A303952 extends HolonomicRecurrence {

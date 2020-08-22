@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A291152 Sequence of numbers on the <code>double-zero</code> (American) roulette wheel, read counterclockwise.
+ * A291152 Sequence of numbers on the double-zero (American) roulette wheel, read counterclockwise.
  * @author Georg Fischer
  */
 public class A291152 extends FiniteSequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A123162 Triangle read by rows: <code>T(n,k) = binomial(2*n - 1, 2*k - 1)</code> for <code>0 &lt; k &lt;= n</code> and <code>T(n,0) = 1</code>.
+ * A123162 Triangle read by rows: T(n,k) = binomial(2*n - 1, 2*k - 1) for 0 &lt; k &lt;= n and T(n,0) = 1.
  * @author Georg Fischer
  */
 public class A123162 extends GeneratingFunctionTriangle {

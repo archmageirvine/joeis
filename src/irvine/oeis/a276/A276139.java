@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276139 Series expansion of <code>(1 + 2x + 4x^2)/(1 - 3x - 5x^2)</code>.
+ * A276139 Series expansion of (1 + 2x + 4x^2)/(1 - 3x - 5x^2).
  * @author Georg Fischer
  */
 public class A276139 extends HolonomicRecurrence {

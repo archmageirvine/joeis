@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a033.A033473;
 
 /**
- * A238015 Denominator of <code>(2*n+1)!*8*Bernoulli(2*n,1/2)</code>.
+ * A238015 Denominator of (2*n+1)!*8*Bernoulli(2*n,1/2).
  * @author Sean A. Irvine
  */
 public class A238015 extends A033473 {

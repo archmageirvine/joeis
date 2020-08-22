@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030099 Numbers n such that <code>n^3</code> has only odd digits.
+ * A030099 Numbers n such that n^3 has only odd digits.
  * @author Sean A. Irvine
  */
 public class A030099 implements Sequence {

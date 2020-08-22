@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128418 <code>a(n) = Sum_{k=0..n} 2^(n-k)*C(2n,n-k)</code>.
+ * A128418 a(n) = Sum_{k=0..n} 2^(n-k)*C(2n,n-k).
  * @author Georg Fischer
  */
 public class A128418 extends HolonomicRecurrence {

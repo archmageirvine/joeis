@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076824 Let <code>a(1)=a(2)=1, a(n)=(2^ceiling(a(n-1)/2)+1)/a(n-2)</code>.
+ * A076824 Let a(1)=a(2)=1, a(n)=(2^ceiling(a(n-1)/2)+1)/a(n-2).
  * @author Sean A. Irvine
  */
 public class A076824 extends LinearRecurrence {

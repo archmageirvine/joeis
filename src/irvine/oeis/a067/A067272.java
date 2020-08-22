@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067272 <code>2*10^(n-1)-1</code>.
+ * A067272 2*10^(n-1)-1.
  * @author Georg Fischer
  */
 public class A067272 extends GeneratingFunctionSequence {

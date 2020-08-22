@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138815 Divisors of <code>16775168</code> (half the 5th perfect number).
+ * A138815 Divisors of 16775168 (half the 5th perfect number).
  * @author Georg Fischer
  */
 public class A138815 extends FiniteSequence {

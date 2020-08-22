@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020342 Vampire numbers: (definition <code>1): n</code> has a nontrivial factorization using n's digits.
+ * A020342 Vampire numbers: (definition 1): n has a nontrivial factorization using n's digits.
  * @author Sean A. Irvine
  */
 public class A020342 implements Sequence {

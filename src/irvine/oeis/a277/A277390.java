@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A277390 Decimal expansion of <code>5-2*sqrt(5)+sqrt(25-10*sqrt(5))-sqrt(5-2*sqrt(5))</code>.
+ * A277390 Decimal expansion of 5-2*sqrt(5)+sqrt(25-10*sqrt(5))-sqrt(5-2*sqrt(5)).
  * @author Georg Fischer
  */
 public class A277390 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092882 Number of ordered 4-multiantichains on an <code>n-set</code>.
+ * A092882 Number of ordered 4-multiantichains on an n-set.
  * @author Georg Fischer
  */
 public class A092882 extends GeneratingFunctionSequence {

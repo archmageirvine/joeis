@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025594 Number of n-move bishop paths on <code>8x8</code> board from given corner to opposite corner.
+ * A025594 Number of n-move bishop paths on 8x8 board from given corner to opposite corner.
  * @author Georg Fischer
  */
 public class A025594 extends GeneratingFunctionSequence {

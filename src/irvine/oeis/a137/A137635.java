@@ -6,7 +6,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137635 <code>a(n) = Sum_{k=0..n} C(2k,k)*C(2k,n-k);</code> equals row 0 of square array <code>A137634</code>.
+ * A137635 a(n) = Sum_{k=0..n} C(2k,k)*C(2k,n-k); equals row 0 of square array A137634.
  * @author Georg Fischer
  */
 public class A137635 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a286;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A286069 Independence and clique covering number of the <code>n X n</code> antelope graph.
+ * A286069 Independence and clique covering number of the n X n antelope graph.
  * @author Georg Fischer
  */
 public class A286069 extends HolonomicRecurrence {

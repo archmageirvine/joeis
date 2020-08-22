@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A098594 Numbers n such that <code>n!-1</code> and <code>n!+1</code> are both semiprime.
+ * A098594 Numbers n such that n!-1 and n!+1 are both semiprime.
  * @author Sean A. Irvine
  */
 public class A098594 implements Sequence {

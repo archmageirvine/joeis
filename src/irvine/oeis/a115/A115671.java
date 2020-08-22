@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A115671 Number of partitions of n into parts not congruent to <code>0, 2, 12, 14, 16, 18, 20, 30 (mod 32)</code>.
+ * A115671 Number of partitions of n into parts not congruent to 0, 2, 12, 14, 16, 18, 20, 30 (mod 32).
  * @author Georg Fischer
  */
 public class A115671 extends EulerTransform {

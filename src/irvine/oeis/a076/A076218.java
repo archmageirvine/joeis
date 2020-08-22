@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076218 Numbers n such that <code>2*n^2 - 3*n + 1</code> is a square.
+ * A076218 Numbers n such that 2*n^2 - 3*n + 1 is a square.
  * @author Georg Fischer
  */
 public class A076218 extends LinearRecurrence {

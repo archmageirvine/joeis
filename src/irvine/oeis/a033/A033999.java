@@ -4,7 +4,7 @@ package irvine.oeis.a033;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033999 <code>a(n) = (-1)^n</code>.
+ * A033999 a(n) = (-1)^n.
  * @author Georg Fischer
  */
 public class A033999 extends GeneratingFunctionSequence {

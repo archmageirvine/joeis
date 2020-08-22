@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067996 Number of ways of making change for n cents using coins of <code>1, 2, 3, 5, 10, 20, 25, 50, 100</code> cents (all historical U.S.A. coinage from 1 to <code>100</code> cents).
+ * A067996 Number of ways of making change for n cents using coins of 1, 2, 3, 5, 10, 20, 25, 50, 100 cents (all historical U.S.A. coinage from 1 to 100 cents).
  * @author Georg Fischer
  */
 public class A067996 extends GeneratingFunctionSequence {

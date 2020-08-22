@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003141;
 
 /**
- * A001225 Consistent arcs in a tournament (equals <code>C(n,2) - A003141)</code>.
+ * A001225 Consistent arcs in a tournament (equals C(n,2) - A003141).
  * @author Sean A. Irvine
  */
 public class A001225 extends A003141 {

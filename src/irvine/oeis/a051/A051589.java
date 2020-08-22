@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051589 Number of <code>5xn</code> binary matrices such that any 2 rows have a common 1.
+ * A051589 Number of 5xn binary matrices such that any 2 rows have a common 1.
  * @author Georg Fischer
  */
 public class A051589 extends GeneratingFunctionSequence {

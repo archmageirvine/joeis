@@ -6,7 +6,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288550 Number of strings of n digits from 1...9 such that a signed summation of the digits exists making the sum <code>= 0</code>.
+ * A288550 Number of strings of n digits from 1...9 such that a signed summation of the digits exists making the sum = 0.
  * @author Georg Fischer
  */
 public class A288550 extends GeneratingFunctionSequence {

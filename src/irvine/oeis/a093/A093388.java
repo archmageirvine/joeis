@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093388 <code>(n+1)^2*a(n+1) = (17n^2+17n+6)*a(n) - 72*n^2*a(n-1)</code>.
+ * A093388 (n+1)^2*a(n+1) = (17n^2+17n+6)*a(n) - 72*n^2*a(n-1).
  * @author Georg Fischer
  */
 public class A093388 extends HolonomicRecurrence {

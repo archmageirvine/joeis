@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A003823 Power series expansion of the Rogers-Ramanujan continued fraction <code>1+x/(1+x^2/(1+x^3/(1+x^4/(1+...))))</code>.
+ * A003823 Power series expansion of the Rogers-Ramanujan continued fraction 1+x/(1+x^2/(1+x^3/(1+x^4/(1+...)))).
  * @author Georg Fischer
  */
 public class A003823 extends EulerTransform {

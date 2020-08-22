@@ -6,7 +6,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061162 <code>a(n) = (6n)!n!/((3n)!(2n)!^2)</code>.
+ * A061162 a(n) = (6n)!n!/((3n)!(2n)!^2).
  * @author Georg Fischer
  */
 public class A061162 extends HolonomicRecurrence {

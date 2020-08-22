@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081899 A sequence related to <code>binomial(n+4, 4)</code>.
+ * A081899 A sequence related to binomial(n+4, 4).
  * @author Georg Fischer
  */
 public class A081899 extends LinearRecurrence {

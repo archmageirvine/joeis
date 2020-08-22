@@ -5,7 +5,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166491 The same as <code>A166461</code> except for <code>a(1)=43</code>.
+ * A166491 The same as A166461 except for a(1)=43.
  * @author Georg Fischer
  */
 public class A166491 extends FiniteSequence {

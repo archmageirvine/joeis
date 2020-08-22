@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185268 Gauss's choice of primitive elements for the first 32 primes or prime powers listed in <code>A185189</code>.
+ * A185268 Gauss's choice of primitive elements for the first 32 primes or prime powers listed in A185189.
  * @author Georg Fischer
  */
 public class A185268 extends FiniteSequence {

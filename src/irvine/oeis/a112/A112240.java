@@ -6,7 +6,7 @@ package irvine.oeis.a112;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112240 Expansion of <code>exp(x/(1-x-2x^2))</code>.
+ * A112240 Expansion of exp(x/(1-x-2x^2)).
  * @author Georg Fischer
  */
 public class A112240 extends HolonomicRecurrence {

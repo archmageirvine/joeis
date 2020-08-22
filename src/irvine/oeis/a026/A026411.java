@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A026411 Position of the second n in <code>A026409</code>.
+ * A026411 Position of the second n in A026409.
  * @author Sean A. Irvine
  */
 public class A026411 extends A026409 {

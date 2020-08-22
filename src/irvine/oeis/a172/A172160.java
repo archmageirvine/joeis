@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172160 <code>a(0)=1. a(n)= 2^n*(5-n)/4, n&gt;0</code>.
+ * A172160 a(0)=1. a(n)= 2^n*(5-n)/4, n&gt;0.
  * @author Georg Fischer
  */
 public class A172160 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A171263 Primes of the form <code>1 + 4-multiperfect</code> numbers.
+ * A171263 Primes of the form 1 + 4-multiperfect numbers.
  * @author Georg Fischer
  */
 public class A171263 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003320 <code>a(n) = max_{k=0..n} k^(n-k)</code>.
+ * A003320 a(n) = max_{k=0..n} k^(n-k).
  * @author Sean A. Irvine
  */
 public class A003320 implements Sequence {

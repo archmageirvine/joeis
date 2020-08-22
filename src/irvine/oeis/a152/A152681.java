@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152681 <code>[x^(n+1)]Reversion[x*(1-x)/(1-3*x)]</code>.
+ * A152681 [x^(n+1)]Reversion[x*(1-x)/(1-3*x)].
  * @author Georg Fischer
  */
 public class A152681 extends HolonomicRecurrence {

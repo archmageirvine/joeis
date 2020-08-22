@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012459 Expansion of e.g.f. <code>arctan(arctan(x)*arctan(x))</code> (even powers only).
+ * A012459 Expansion of e.g.f. arctan(arctan(x)*arctan(x)) (even powers only).
  * @author Sean A. Irvine
  */
 public class A012459 implements Sequence {

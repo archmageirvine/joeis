@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103459 <code>a(n) = 8^n + 1 - 0^n</code>.
+ * A103459 a(n) = 8^n + 1 - 0^n.
  * @author Georg Fischer
  */
 public class A103459 extends GeneratingFunctionSequence {

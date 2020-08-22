@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055104 Expansion of <code>1 + q/((1-q)*(1-q^2)) + q^2/((1-q)*(1-q^2)*(1-q^3)*(1-q^4))</code>.
+ * A055104 Expansion of 1 + q/((1-q)*(1-q^2)) + q^2/((1-q)*(1-q^2)*(1-q^3)*(1-q^4)).
  * @author Georg Fischer
  */
 public class A055104 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029592 Theta series of <code>6-dimensional 11-modular</code> odd lattice of minimal norm 4.
+ * A029592 Theta series of 6-dimensional 11-modular odd lattice of minimal norm 4.
  * @author Sean A. Irvine
  */
 public class A029592 extends GramMatrixThetaSeries {

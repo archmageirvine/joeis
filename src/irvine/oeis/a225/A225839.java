@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225839 Triangular numbers representable as <code>triangular(m) + triangular(2m)</code>.
+ * A225839 Triangular numbers representable as triangular(m) + triangular(2m).
  * @author Sean A. Irvine
  */
 public class A225839 extends LinearRecurrence {

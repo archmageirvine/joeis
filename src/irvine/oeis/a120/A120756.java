@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120756 <code>a(n) =</code> leftmost term of <code>M^n * [1,0,0,0,0,0]</code> where M is the <code>6 X 6</code> matrix <code>[1,2,3,4,5,6; 2,3,1,5,6,4; 3,1,2,6,4,5; 4,6,5,1,3,2; 5,4,6,2,1,3; 6,5,4,3,2,1]</code>.
+ * A120756 a(n) = leftmost term of M^n * [1,0,0,0,0,0] where M is the 6 X 6 matrix [1,2,3,4,5,6; 2,3,1,5,6,4; 3,1,2,6,4,5; 4,6,5,1,3,2; 5,4,6,2,1,3; 6,5,4,3,2,1].
  * @author Georg Fischer
  */
 public class A120756 extends LinearRecurrence {

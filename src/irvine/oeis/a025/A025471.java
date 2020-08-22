@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A025471 Position of <code>5^n</code> among the powers of primes <code>(A000961)</code>.
+ * A025471 Position of 5^n among the powers of primes (A000961).
  * @author Sean A. Irvine
  */
 public class A025471 extends A000961 {

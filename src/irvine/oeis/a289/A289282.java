@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A289282 The least significant four bytes of <code>n!</code> interpreted in two's complement.
+ * A289282 The least significant four bytes of n! interpreted in two's complement.
  * @author Georg Fischer
  */
 public class A289282 extends PaddingSequence {

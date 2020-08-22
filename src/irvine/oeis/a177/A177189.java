@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177189 Partial sums of <code>round(n^2/16)</code>.
+ * A177189 Partial sums of round(n^2/16).
  * @author Georg Fischer
  */
 public class A177189 extends HolonomicRecurrence {

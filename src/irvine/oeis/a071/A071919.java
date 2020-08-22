@@ -7,7 +7,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A071919 Number of monotone nondecreasing functions <code>[n]-&gt;[m]</code> for <code>n&gt;=0, m&gt;=0</code>, read by antidiagonals.
+ * A071919 Number of monotone nondecreasing functions [n]-&gt;[m] for n&gt;=0, m&gt;=0, read by antidiagonals.
  * @author Georg Fischer
  */
 public class A071919 extends GeneratingFunctionTriangle {

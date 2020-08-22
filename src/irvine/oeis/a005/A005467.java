@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005467 <code>6 X 6</code> stochastic matrices of integers.
+ * A005467 6 X 6 stochastic matrices of integers.
  * @author Sean A. Irvine
  */
 public class A005467 extends FiniteSequence {

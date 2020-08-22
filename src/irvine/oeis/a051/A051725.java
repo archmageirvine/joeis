@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A051725 Denominator of <code>n/12</code>.
+ * A051725 Denominator of n/12.
  * @author Georg Fischer
  */
 public class A051725 extends PaddingSequence {

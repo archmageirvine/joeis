@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303647 <code>a(n) = ceiling(a(n-1)/(2^(1/3)-1)+1), a(1)=1</code>.
+ * A303647 a(n) = ceiling(a(n-1)/(2^(1/3)-1)+1), a(1)=1.
  * @author Georg Fischer
  */
 public class A303647 extends GeneratingFunctionSequence {

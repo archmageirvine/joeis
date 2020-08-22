@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024573 <code>a(n) = floor(1/frac(n*e))</code>.
+ * A024573 a(n) = floor(1/frac(n*e)).
  * @author Sean A. Irvine
  */
 public class A024573 implements Sequence {

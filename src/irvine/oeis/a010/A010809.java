@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010809 21st powers: <code>a(n) = n^21</code>.
+ * A010809 21st powers: a(n) = n^21.
  * @author Sean A. Irvine
  */
 public class A010809 implements Sequence {

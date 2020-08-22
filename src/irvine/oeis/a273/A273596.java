@@ -6,7 +6,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273596 For <code>n &gt;= 2, a(n)</code> is the number of slim rectangular diagrams of length <code>n</code>.
+ * A273596 For n &gt;= 2, a(n) is the number of slim rectangular diagrams of length n.
  * @author Georg Fischer
  */
 public class A273596 extends HolonomicRecurrence {

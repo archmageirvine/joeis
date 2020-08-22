@@ -5,7 +5,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a007.A007770;
 
 /**
- * A031177 Unhappy numbers: numbers having <code>period-8 2-digitized</code> sequences.
+ * A031177 Unhappy numbers: numbers having period-8 2-digitized sequences.
  * @author Sean A. Irvine
  */
 public class A031177 extends ComplementSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A024116 <code>10^n-n^2</code>.
+ * A024116 10^n-n^2.
  * @author Sean A. Irvine
  */
 public class A024116 extends A000290 {

@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143990 <code>n!*A001515(n-1)</code> with <code>a(0) = 1</code>.
+ * A143990 n!*A001515(n-1) with a(0) = 1.
  * @author Georg Fischer
  */
 public class A143990 extends HolonomicRecurrence {

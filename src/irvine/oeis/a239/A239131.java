@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A239131 A sequence with period length 54; the companion of <code>x(n) = A239130(n)</code>, the smallest positive solution of <code>3^4*x - 2^n*y = 1</code> for <code>n &gt;= 0</code>.
+ * A239131 A sequence with period length 54; the companion of x(n) = A239130(n), the smallest positive solution of 3^4*x - 2^n*y = 1 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A239131 extends PaddingSequence {

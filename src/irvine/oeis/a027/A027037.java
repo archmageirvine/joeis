@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027037 Diagonal sum of left-justified array T given by <code>A027023</code>.
+ * A027037 Diagonal sum of left-justified array T given by A027023.
  * @author Sean A. Irvine
  */
 public class A027037 extends A027023 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007576 Number of solutions to <code>k_1 + 2*k_2 + ... + n*k_n = 0</code>, where <code>k_i</code> are from <code>{-1,0,1}, i=1..n</code>.
+ * A007576 Number of solutions to k_1 + 2*k_2 + ... + n*k_n = 0, where k_i are from {-1,0,1}, i=1..n.
  * @author Sean A. Irvine
  */
 public class A007576 implements Sequence {

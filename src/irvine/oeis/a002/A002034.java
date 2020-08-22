@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002034 Kempner numbers: smallest positive integer m such that n divides <code>m!</code>.
+ * A002034 Kempner numbers: smallest positive integer m such that n divides m!.
  * @author Sean A. Irvine
  */
 public class A002034 implements Sequence {

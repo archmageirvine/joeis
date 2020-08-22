@@ -3,7 +3,7 @@ package irvine.oeis.a305;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A305257 If <code>pd(x)</code> is the product of the digits of the number x and <code>sd(x)</code> the sum of the digits of the number x then the sequence lists all the positive numbers n for which <code>pd(n) = sd(n)</code> and <code>sd(pd(n)) = pd(sd(n))</code>.
+ * A305257 If pd(x) is the product of the digits of the number x and sd(x) the sum of the digits of the number x then the sequence lists all the positive numbers n for which pd(n) = sd(n) and sd(pd(n)) = pd(sd(n)).
  * @author Georg Fischer
  */
 public class A305257 extends FiniteSequence {

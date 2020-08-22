@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A329915 <code>a(n)</code> is the least M such that <code>A329914(n) * M = 1M1</code>, where <code>1M1</code> denotes the concatenation of 1, M and 1.
+ * A329915 a(n) is the least M such that A329914(n) * M = 1M1, where 1M1 denotes the concatenation of 1, M and 1.
  * @author Georg Fischer
  */
 public class A329915 extends FiniteSequence {

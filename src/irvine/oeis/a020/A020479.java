@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000252;
 
 /**
- * A020479 Number of noninvertible <code>2 X 2</code> matrices over <code>Z/nZ</code> (determinant is a divisor of <code>0)</code>.
+ * A020479 Number of noninvertible 2 X 2 matrices over Z/nZ (determinant is a divisor of 0).
  * @author Sean A. Irvine
  */
 public class A020479 extends A000252 {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160099 Decimal expansion of <code>(843 + 418*sqrt(2))/601</code>.
+ * A160099 Decimal expansion of (843 + 418*sqrt(2))/601.
  * @author Georg Fischer
  */
 public class A160099 extends DecimalExpansionSequence {

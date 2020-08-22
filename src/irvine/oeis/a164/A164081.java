@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A164081 Floor of <code>2^(n-1)</code> times the surface area of the unit sphere in 2n-dimensional space.
+ * A164081 Floor of 2^(n-1) times the surface area of the unit sphere in 2n-dimensional space.
  * @author Georg Fischer
  */
 public class A164081 extends PaddingSequence {

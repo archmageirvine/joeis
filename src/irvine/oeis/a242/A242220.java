@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A242220 Decimal expansion of <code>(10^(1/3)-1)/2</code>, an approximation to Euler-Mascheroni constant.
+ * A242220 Decimal expansion of (10^(1/3)-1)/2, an approximation to Euler-Mascheroni constant.
  * @author Georg Fischer
  */
 public class A242220 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005614;
 
 /**
- * A028894 <code>a(n) =</code> either <code>4a(n-1)+1</code> or <code>4a(n-1)+3</code> depending on corresponding term of <code>A005614, +1</code> for <code>0, +3</code> for 1.
+ * A028894 a(n) = either 4a(n-1)+1 or 4a(n-1)+3 depending on corresponding term of A005614, +1 for 0, +3 for 1.
  * @author Sean A. Irvine
  */
 public class A028894 extends A005614 {

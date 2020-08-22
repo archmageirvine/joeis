@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000217;
 
 /**
- * A166474 <code>a(1)=1; a(2)=2;</code> for <code>a&gt;2, a(n)=a(n-1)+A000217(n-1)*a(n-2)</code>.
+ * A166474 a(1)=1; a(2)=2; for a&gt;2, a(n)=a(n-1)+A000217(n-1)*a(n-2).
  * @author Sean A. Irvine
  */
 public class A166474 extends A000217 {

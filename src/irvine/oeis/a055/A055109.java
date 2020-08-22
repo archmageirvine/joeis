@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A055109 Numbers k such that <code>Q(sqrt(-k))</code> has class number 6.
+ * A055109 Numbers k such that Q(sqrt(-k)) has class number 6.
  * @author Georg Fischer
  */
 public class A055109 extends FiniteSequence {

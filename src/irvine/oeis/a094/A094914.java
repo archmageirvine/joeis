@@ -5,7 +5,7 @@ import irvine.oeis.LinearRecurrence;
 import irvine.math.z.Z;
 
 /**
- * A094914 Absolute value of <code>n^2 + n - 1354363</code>.
+ * A094914 Absolute value of n^2 + n - 1354363.
  * @author Sean A. Irvine
  */
 public class A094914 extends LinearRecurrence {

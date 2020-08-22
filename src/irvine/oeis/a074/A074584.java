@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074584 Esanacci (hexanacci or <code>"6-anacci")</code> numbers.
+ * A074584 Esanacci (hexanacci or "6-anacci") numbers.
  * @author Sean A. Irvine
  */
 public class A074584 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A054042 Decimal expansion of <code>1 - 1/sqrt(10)</code>.
+ * A054042 Decimal expansion of 1 - 1/sqrt(10).
  * @author Georg Fischer
  */
 public class A054042 extends DecimalExpansionSequence {

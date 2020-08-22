@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050591 Numbers n such that <code>131*2^n-1</code> is prime.
+ * A050591 Numbers n such that 131*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050591 extends PowerFactorPrimeSequence {

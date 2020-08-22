@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003950 Expansion of g.f.: <code>(1+x)/(1-7*x)</code>.
+ * A003950 Expansion of g.f.: (1+x)/(1-7*x).
  * @author Sean A. Irvine
  */
 public class A003950 implements Sequence {

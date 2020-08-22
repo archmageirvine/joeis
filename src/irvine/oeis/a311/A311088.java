@@ -6,7 +6,7 @@ package irvine.oeis.a311;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A311088 Coordination sequence <code>Gal.4.25.4</code> where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+ * A311088 Coordination sequence Gal.4.25.4 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
  * @author Georg Fischer
  */
 public class A311088 extends HolonomicRecurrence {

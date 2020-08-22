@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030649 Dimensions of multiples of minimal representation of complex Lie algebra <code>E7</code>.
+ * A030649 Dimensions of multiples of minimal representation of complex Lie algebra E7.
  * @author Sean A. Irvine
  */
 public class A030649 implements Sequence {

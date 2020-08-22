@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A024623 <code>a(n)</code> is the number of prime powers <code>&lt;= 3^n</code>.
+ * A024623 a(n) is the number of prime powers &lt;= 3^n.
  * @author Sean A. Irvine
  */
 public class A024623 extends A000961 {

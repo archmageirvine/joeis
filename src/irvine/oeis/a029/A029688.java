@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029688 n-th digit after decimal point of 8th root of <code>n</code>.
+ * A029688 n-th digit after decimal point of 8th root of n.
  * @author Sean A. Irvine
  */
 public class A029688 implements Sequence {

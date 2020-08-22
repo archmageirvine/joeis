@@ -5,7 +5,7 @@ package irvine.oeis.a142;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A142970 Numerators of n-th approximants of a continued fraction for <code>Pi-3</code>.
+ * A142970 Numerators of n-th approximants of a continued fraction for Pi-3.
  * @author Georg Fischer
  */
 public class A142970 extends HolonomicRecurrence {

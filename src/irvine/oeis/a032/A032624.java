@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032624 Numbers n such that n concatenated with <code>n + 9</code> is a prime.
+ * A032624 Numbers n such that n concatenated with n + 9 is a prime.
  * @author Sean A. Irvine
  */
 public class A032624 implements Sequence {

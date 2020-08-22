@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031213 Periods of sum of <code>10th</code> powers of digits iterated until the sequence becomes periodic.
+ * A031213 Periods of sum of 10th powers of digits iterated until the sequence becomes periodic.
  * @author Sean A. Irvine
  */
 public class A031213 implements Sequence {

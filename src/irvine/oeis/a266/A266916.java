@@ -5,7 +5,7 @@ package irvine.oeis.a266;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A266916 Multiply and add: distinct numbers <code>a*b + c*d + e*f + g*h + i*j</code> where a..j are permutations of 0..9.
+ * A266916 Multiply and add: distinct numbers a*b + c*d + e*f + g*h + i*j where a..j are permutations of 0..9.
  * @author Georg Fischer
  */
 public class A266916 extends FiniteSequence {

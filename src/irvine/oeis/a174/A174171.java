@@ -6,7 +6,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174171 A generalized Chebyshev transform of the Motzkin numbers <code>A001006</code>.
+ * A174171 A generalized Chebyshev transform of the Motzkin numbers A001006.
  * @author Georg Fischer
  */
 public class A174171 extends HolonomicRecurrence {

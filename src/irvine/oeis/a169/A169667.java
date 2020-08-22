@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A169667 The classical Lie superfactorial of types <code>E6, E7, E8</code>.
+ * A169667 The classical Lie superfactorial of types E6, E7, E8.
  * @author Georg Fischer
  */
 public class A169667 extends FiniteSequence {

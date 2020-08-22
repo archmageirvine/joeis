@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033265 Number of i such that <code>d(i)&gt;=d(i-1)</code>, where <code>Sum{d(i)*2^i: i=0,1,...,m}</code> is base 2 representation of <code>n</code>.
+ * A033265 Number of i such that d(i)&gt;=d(i-1), where Sum{d(i)*2^i: i=0,1,...,m} is base 2 representation of n.
  * @author Sean A. Irvine
  */
 public class A033265 implements Sequence {

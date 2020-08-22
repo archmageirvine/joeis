@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A220131 Number of tilings of an <code>n X 6</code> rectangle using integer sided rectangular tiles of area <code>n</code>.
+ * A220131 Number of tilings of an n X 6 rectangle using integer sided rectangular tiles of area n.
  * @author Georg Fischer
  */
 public class A220131 extends PaddingSequence {

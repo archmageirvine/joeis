@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027476 Third column of <code>A027467</code>.
+ * A027476 Third column of A027467.
  * @author Sean A. Irvine
  */
 public class A027476 implements Sequence {

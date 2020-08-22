@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001263;
 
 
 /**
- * A166360 Triangle of Narayana numbers <code>mod 2, T(n,k) = A001263(n,k) mod 2</code>.
+ * A166360 Triangle of Narayana numbers mod 2, T(n,k) = A001263(n,k) mod 2.
  * @author Georg Fischer
  */
 public class A166360 extends A001263 {

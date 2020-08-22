@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101103 Partial sums of <code>A101104</code>. First differences of <code>A005914</code>.
+ * A101103 Partial sums of A101104. First differences of A005914.
  * @author Georg Fischer
  */
 public class A101103 extends GeneratingFunctionSequence {

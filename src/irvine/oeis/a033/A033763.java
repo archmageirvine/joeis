@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033763 Product <code>t2(q^d); d | 4</code>, where <code>t2 = theta2(q)/(2*q^(1/4))</code>.
+ * A033763 Product t2(q^d); d | 4, where t2 = theta2(q)/(2*q^(1/4)).
  * @author Sean A. Irvine
  */
 public class A033763 implements Sequence {

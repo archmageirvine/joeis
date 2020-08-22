@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020881 Number of strong restricted edge-subgraphs in Moebius ladder <code>M_n</code>.
+ * A020881 Number of strong restricted edge-subgraphs in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020881 implements Sequence {

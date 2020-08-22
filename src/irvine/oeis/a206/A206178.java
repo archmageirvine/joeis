@@ -5,7 +5,7 @@ package irvine.oeis.a206;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A206178 <code>a(n) = Sum_{k=0..n} binomial(n,k)^3 * 2^k</code>.
+ * A206178 a(n) = Sum_{k=0..n} binomial(n,k)^3 * 2^k.
  * @author Georg Fischer
  */
 public class A206178 extends HolonomicRecurrence {

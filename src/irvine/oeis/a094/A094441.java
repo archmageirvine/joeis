@@ -7,7 +7,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A094441 Triangular array <code>T(n,k) = Fibonacci(n+1-k)*C(n,k), 0 &lt;= k &lt;= n</code>.
+ * A094441 Triangular array T(n,k) = Fibonacci(n+1-k)*C(n,k), 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A094441 extends GeneratingFunctionTriangle {

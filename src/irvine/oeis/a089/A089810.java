@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A089810 Expansion of Jacobi theta function <code>theta_3(Pi/6, q)</code> in powers of q.
+ * A089810 Expansion of Jacobi theta function theta_3(Pi/6, q) in powers of q.
  * @author Georg Fischer
  */
 public class A089810 extends EulerTransform {

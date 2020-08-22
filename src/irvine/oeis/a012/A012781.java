@@ -3,7 +3,7 @@ package irvine.oeis.a012;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A012781 Take every 5th term of Padovan sequence <code>A000931</code>, beginning with the second term.
+ * A012781 Take every 5th term of Padovan sequence A000931, beginning with the second term.
  * @author Sean A. Irvine
  */
 public class A012781 extends LinearRecurrence {

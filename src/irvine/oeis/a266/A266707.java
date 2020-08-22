@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266707 Coefficient of <code>x^2</code> in minimal polynomial of the continued fraction <code>[1^n,tau,1,1,1,...]</code>, where <code>1^n</code> means n ones and tau = golden ratio <code>= (1 + sqrt(5))/2</code>.
+ * A266707 Coefficient of x^2 in minimal polynomial of the continued fraction [1^n,tau,1,1,1,...], where 1^n means n ones and tau = golden ratio = (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A266707 extends GeneratingFunctionSequence {

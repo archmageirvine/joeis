@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A026038 <code>a(n) = (d(n)-r(n))/2</code>, where d <code>= A026037</code> and r is the periodic sequence with fundamental period <code>(1,0,0,1)</code>.
+ * A026038 a(n) = (d(n)-r(n))/2, where d = A026037 and r is the periodic sequence with fundamental period (1,0,0,1).
  * @author Sean A. Irvine
  */
 public class A026038 extends LinearRecurrence {

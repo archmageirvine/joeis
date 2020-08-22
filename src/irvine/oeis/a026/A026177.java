@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026177 For <code>n &gt;= 2</code>, let <code>h=floor(n/2), L=n-h, R=n+h;</code> then <code>a(R)=n</code> if n odd or <code>a(L)</code> already defined, otherwise <code>a(L)=n</code>.
+ * A026177 For n &gt;= 2, let h=floor(n/2), L=n-h, R=n+h; then a(R)=n if n odd or a(L) already defined, otherwise a(L)=n.
  * @author Sean A. Irvine
  */
 public class A026177 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A029838 Expansion of square root of q times normalized Hauptmodul for <code>Gamma(4)</code> in powers of <code>q^8</code>.
+ * A029838 Expansion of square root of q times normalized Hauptmodul for Gamma(4) in powers of q^8.
  * @author Georg Fischer
  */
 public class A029838 extends EulerTransform {

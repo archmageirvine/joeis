@@ -6,7 +6,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064063 Generalized Catalan numbers <code>C(3; n)</code>.
+ * A064063 Generalized Catalan numbers C(3; n).
  * @author Georg Fischer
  */
 public class A064063 extends HolonomicRecurrence {

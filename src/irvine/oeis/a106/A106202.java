@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106202 Expansion of <code>Im(x/(1 - x - 2*i*x^2)), i=sqrt(-1)</code>.
+ * A106202 Expansion of Im(x/(1 - x - 2*i*x^2)), i=sqrt(-1).
  * @author Sean A. Irvine
  */
 public class A106202 extends LinearRecurrence {

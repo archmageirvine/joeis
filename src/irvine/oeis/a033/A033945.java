@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.RecordSequence;
 
 /**
- * A033945 Record highs in <code>A033885 (3n -</code> sum of divisors of <code>n)</code>.
+ * A033945 Record highs in A033885 (3n - sum of divisors of n).
  * @author Sean A. Irvine
  */
 public class A033945 extends RecordSequence {

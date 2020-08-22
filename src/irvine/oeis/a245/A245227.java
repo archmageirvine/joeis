@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245227 Maximum frustration of complete bipartite graph <code>K(n,5)</code>.
+ * A245227 Maximum frustration of complete bipartite graph K(n,5).
  * @author Georg Fischer
  */
 public class A245227 extends GeneratingFunctionSequence {

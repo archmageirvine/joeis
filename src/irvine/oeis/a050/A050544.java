@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050544 Numbers k such that <code>37*2^k-1</code> is prime.
+ * A050544 Numbers k such that 37*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050544 extends PowerFactorPrimeSequence {

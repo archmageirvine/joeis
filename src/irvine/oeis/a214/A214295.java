@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214295 <code>a(n) = 1</code> if n is a square, -1 if n is three times a square, 0 otherwise.
+ * A214295 a(n) = 1 if n is a square, -1 if n is three times a square, 0 otherwise.
  * @author Georg Fischer
  */
 public class A214295 extends EulerTransform {

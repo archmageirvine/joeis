@@ -6,7 +6,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227546 <code>n! + n^2 + 1</code>.
+ * A227546 n! + n^2 + 1.
  * @author Georg Fischer
  */
 public class A227546 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A033701 Theta series of lattice <code>A_2</code> tensor <code>D_3</code> (dimension 6, det. 432, min. norm <code>4)</code>.
+ * A033701 Theta series of lattice A_2 tensor D_3 (dimension 6, det. 432, min. norm 4).
  * @author Sean A. Irvine
  */
 public class A033701 extends GramMatrixThetaSeries {

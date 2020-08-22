@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028253 <code>n mod Fibonacci(n)</code>.
+ * A028253 n mod Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A028253 implements Sequence {

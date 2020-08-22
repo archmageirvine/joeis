@@ -7,7 +7,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A063967 Triangle read by rows, <code>a(n,k) = a(n-1,k) + a(n-2,k) + a(n-1,k-1) + a(n-2,k-1)</code> and <code>a(0,0) = 1</code>.
+ * A063967 Triangle read by rows, a(n,k) = a(n-1,k) + a(n-2,k) + a(n-1,k-1) + a(n-2,k-1) and a(0,0) = 1.
  * @author Georg Fischer
  */
 public class A063967 extends GeneratingFunctionTriangle {

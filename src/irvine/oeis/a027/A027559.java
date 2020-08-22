@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027559 Number of 4-balanced strings of length n: let <code>d(S)= #(1)</code>'s in S <code>- #(0)</code>'s, then S is k-balanced if every substring T has <code>-k&lt;=d(T)&lt;=k;</code> here <code>k=4</code>.
+ * A027559 Number of 4-balanced strings of length n: let d(S)= #(1)'s in S - #(0)'s, then S is k-balanced if every substring T has -k&lt;=d(T)&lt;=k; here k=4.
  * @author Georg Fischer
  */
 public class A027559 extends GeneratingFunctionSequence {

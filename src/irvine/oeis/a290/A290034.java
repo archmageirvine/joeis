@@ -6,7 +6,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290034 Number of set partitions of <code>[n]</code> having exactly five blocks of size <code>&gt; 1</code>.
+ * A290034 Number of set partitions of [n] having exactly five blocks of size &gt; 1.
  * @author Georg Fischer
  */
 public class A290034 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a225;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A225883 <code>a(n) = (-1)^n * (1 - 2^n)</code>.
+ * A225883 a(n) = (-1)^n * (1 - 2^n).
  * @author Sean A. Irvine
  */
 public class A225883 extends LinearRecurrence {

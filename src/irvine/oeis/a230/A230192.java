@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A230192 Decimal expansion of <code>log(6^9*10^5)/25</code>.
+ * A230192 Decimal expansion of log(6^9*10^5)/25.
  * @author Georg Fischer
  */
 public class A230192 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001576 <code>a(n) = 1^n + 2^n + 4^n</code>.
+ * A001576 a(n) = 1^n + 2^n + 4^n.
  * @author Sean A. Irvine
  */
 public class A001576 implements Sequence {

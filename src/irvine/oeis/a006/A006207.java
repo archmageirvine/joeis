@@ -6,7 +6,7 @@ import irvine.oeis.MobiusTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A006207 Generalized Fibonacci numbers <code>A_{n,2}</code>.
+ * A006207 Generalized Fibonacci numbers A_{n,2}.
  * @author Sean A. Irvine
  */
 public class A006207 extends MobiusTransformSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009963 Triangle of numbers <code>n!(n-1)!...(n-k+1)!/(1!2!...k!)</code>.
+ * A009963 Triangle of numbers n!(n-1)!...(n-k+1)!/(1!2!...k!).
  * @author Sean A. Irvine
  */
 public class A009963 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A101464 Decimal expansion of <code>sqrt(2-sqrt(2))</code>, edge length of a regular octagon with circumradius 1.
+ * A101464 Decimal expansion of sqrt(2-sqrt(2)), edge length of a regular octagon with circumradius 1.
  * @author Georg Fischer
  */
 public class A101464 extends DecimalExpansionSequence {

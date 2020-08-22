@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A191102 Decimal expansion of <code>(1/3)*arccos(6/Pi^2-1)</code>.
+ * A191102 Decimal expansion of (1/3)*arccos(6/Pi^2-1).
  * @author Georg Fischer
  */
 public class A191102 extends DecimalExpansionSequence {

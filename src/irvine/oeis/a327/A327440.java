@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327440 <code>a(n) = floor(3*n/10)</code>.
+ * A327440 a(n) = floor(3*n/10).
  * @author Georg Fischer
  */
 public class A327440 extends HolonomicRecurrence {

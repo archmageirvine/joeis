@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A092697 For <code>1 &lt;= n &lt;= 9, a(n) =</code> least number m such that the product <code>n*m</code> is obtained merely by shifting the rightmost digit of m to the left end (a finite sequence).
+ * A092697 For 1 &lt;= n &lt;= 9, a(n) = least number m such that the product n*m is obtained merely by shifting the rightmost digit of m to the left end (a finite sequence).
  * @author Georg Fischer
  */
 public class A092697 extends FiniteSequence {

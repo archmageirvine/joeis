@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A028450 Number of perfect matchings in graph <code>P_{2} X P_{6} X P_{n}</code>.
+ * A028450 Number of perfect matchings in graph P_{2} X P_{6} X P_{n}.
  * @author Sean A. Irvine
  */
 public class A028450 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A122071 Sum over divisors d of <code>2n+1</code> of <code>Kronecker(-18/d)</code>.
+ * A122071 Sum over divisors d of 2n+1 of Kronecker(-18/d).
  * @author Georg Fischer
  */
 public class A122071 extends EulerTransform {

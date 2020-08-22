@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A044523 Numbers n such that string 0,4 occurs in the base 7 representation of n but not of <code>n+1</code>.
+ * A044523 Numbers n such that string 0,4 occurs in the base 7 representation of n but not of n+1.
  * @author Georg Fischer
  */
 public class A044523 extends RunsBaseSequence {

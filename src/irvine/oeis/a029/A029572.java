@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029572 Number of permutations of an n-set containing a <code>5-cycle</code>.
+ * A029572 Number of permutations of an n-set containing a 5-cycle.
  * @author Sean A. Irvine
  */
 public class A029572 implements Sequence {

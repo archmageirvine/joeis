@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289927 p-INVERT of <code>A014217</code> (starting at <code>n=1)</code>, where <code>p(S) = 1 - S - S^2</code>.
+ * A289927 p-INVERT of A014217 (starting at n=1), where p(S) = 1 - S - S^2.
  * @author Georg Fischer
  */
 public class A289927 extends GeneratingFunctionSequence {

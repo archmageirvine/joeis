@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A209231 Number of binary words of length n such that there is at least one 0 and every run of consecutive <code>0</code>'s is of length <code>&gt;= 4</code>.
+ * A209231 Number of binary words of length n such that there is at least one 0  and every run of consecutive 0's is of length &gt;= 4.
  * @author Georg Fischer
  */
 public class A209231 extends GeneratingFunctionSequence {

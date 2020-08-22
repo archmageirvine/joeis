@@ -5,7 +5,7 @@ package irvine.oeis.a296;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A296064 <code>a(1) = 0;</code> thereafter <code>a(n)</code> is the smallest number (in absolute value) not yet in the sequence such that the arithmetic mean of the first n terms <code>a(1), a(2)</code>, ..., <code>a(n)</code> is an integer. Preference is given to positive values of <code>a(n)</code>.
+ * A296064 a(1) = 0; thereafter a(n) is the smallest number (in absolute value) not yet in the sequence such that the arithmetic mean of the first n terms a(1), a(2), ..., a(n) is an integer. Preference is given to positive values of a(n).
  * @author Georg Fischer
  */
 public class A296064 extends HolonomicRecurrence {

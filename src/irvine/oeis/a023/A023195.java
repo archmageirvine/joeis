@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023195 Prime numbers that are the sum of the divisors of some <code>n</code>.
+ * A023195 Prime numbers that are the sum of the divisors of some n.
  * @author Sean A. Irvine
  */
 public class A023195 implements Sequence {

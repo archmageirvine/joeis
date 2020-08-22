@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A100823 G.f.: <code>Product_{k&gt;0} (1+x^k)/((1-x^k)*(1+x^(3k))*(1+x^(5k)))</code>.
+ * A100823 G.f.: Product_{k&gt;0} (1+x^k)/((1-x^k)*(1+x^(3k))*(1+x^(5k))).
  * @author Georg Fischer
  */
 public class A100823 extends EulerTransform {

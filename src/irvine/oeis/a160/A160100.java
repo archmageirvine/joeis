@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160100 Decimal expansion of <code>(361299 +5950*sqrt(2))/601^2</code>.
+ * A160100 Decimal expansion of (361299 +5950*sqrt(2))/601^2.
  * @author Georg Fischer
  */
 public class A160100 extends DecimalExpansionSequence {

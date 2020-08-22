@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A074948 Decimal representation of <code>sqrt((Pi^2 + e^2)/2)</code>.
+ * A074948 Decimal representation of sqrt((Pi^2 + e^2)/2).
  * @author Georg Fischer
  */
 public class A074948 extends DecimalExpansionSequence {

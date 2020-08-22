@@ -1,7 +1,7 @@
 package irvine.oeis.a023;
 
 /**
- * A023916 Theta series of <code>A*_4</code> lattice.
+ * A023916 Theta series of A*_4 lattice.
  * @author Sean A. Irvine
  */
 public class A023916 extends A023926 {

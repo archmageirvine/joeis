@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001147 Double factorial of odd numbers: <code>a(n) = (2*n-1)!! = 1*3*5*...*(2*n-1)</code>.
+ * A001147 Double factorial of odd numbers: a(n) = (2*n-1)!! = 1*3*5*...*(2*n-1).
  * @author Sean A. Irvine
  */
 public class A001147 implements Sequence {

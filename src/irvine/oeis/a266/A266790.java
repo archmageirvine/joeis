@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266790 Binary representation of the middle column of the "Rule <code>61"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A266790 Binary representation of the middle column of the "Rule 61" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A266790 extends GeneratingFunctionSequence {

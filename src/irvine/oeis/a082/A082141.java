@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082141 A transform of <code>C(n,7)</code>.
+ * A082141 A transform of C(n,7).
  * @author Georg Fischer
  */
 public class A082141 extends GeneratingFunctionSequence {

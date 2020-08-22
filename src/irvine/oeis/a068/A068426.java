@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A068426 Expansion of <code>log(2)</code> in base 2.
+ * A068426 Expansion of log(2) in base 2.
  * @author Georg Fischer
  */
 public class A068426 extends DecimalExpansionSequence {

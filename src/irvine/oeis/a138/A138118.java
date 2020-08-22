@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138118 Concatenation of <code>2n-1</code> digits 1 and n digits 0.
+ * A138118 Concatenation of 2n-1 digits 1 and n digits 0.
  * @author Georg Fischer
  */
 public class A138118 extends HolonomicRecurrence {

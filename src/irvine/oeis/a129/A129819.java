@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129819 Antidiagonal sums of triangular array T: <code>T(j,k) = (k+1)/2</code> for odd k, <code>T(j,k) = 0</code> for k <code>= 0, T(j,k) = j+1-k/2</code> for even k <code>&gt; 0; 0 &lt;= k &lt;=</code> j.
+ * A129819 Antidiagonal sums of triangular array T: T(j,k) = (k+1)/2 for odd k, T(j,k) = 0 for k = 0, T(j,k) = j+1-k/2 for even k &gt; 0; 0 &lt;= k &lt;= j.
  * @author Georg Fischer
  */
 public class A129819 extends GeneratingFunctionSequence {

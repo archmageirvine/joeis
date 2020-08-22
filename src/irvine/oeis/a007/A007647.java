@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007647 Numbers n such that <code>n*10^n + 1</code> is prime.
+ * A007647 Numbers n such that n*10^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A007647 implements Sequence {

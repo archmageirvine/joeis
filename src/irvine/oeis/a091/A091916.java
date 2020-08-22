@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091916 Maximum of odd products of partitions of <code>n</code>.
+ * A091916 Maximum of odd products of partitions of n.
  * @author Georg Fischer
  */
 public class A091916 extends GeneratingFunctionSequence {

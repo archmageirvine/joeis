@@ -6,7 +6,7 @@ package irvine.oeis.a117;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A117813 Consider 1-D random walk with jumps up to the third neighbor, i.e., set of possible jumps is <code>{-3,-2,-1,+1,+2,+3}</code>. Sequence gives number of paths of length n ending at origin.
+ * A117813 Consider 1-D random walk with jumps up to the third neighbor, i.e., set of possible jumps is {-3,-2,-1,+1,+2,+3}. Sequence gives number of paths of length n ending at origin.
  * @author Georg Fischer
  */
 public class A117813 extends HolonomicRecurrence {

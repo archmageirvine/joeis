@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030817 <code>Floor(exp(12/23) * n!)</code>.
+ * A030817 Floor(exp(12/23) * n!).
  * @author Sean A. Irvine
  */
 public class A030817 implements Sequence {

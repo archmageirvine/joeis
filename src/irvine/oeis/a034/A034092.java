@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034092 Number of partitions of n into 3 distinct parts from <code>[ 1,39 ]</code>.
+ * A034092 Number of partitions of n into 3 distinct parts from [ 1,39 ].
  * @author Sean A. Irvine
  */
 public class A034092 implements Sequence {

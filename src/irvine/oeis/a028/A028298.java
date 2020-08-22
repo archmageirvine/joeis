@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028298 Triangle of coefficients in expansion of <code>sin(n*x)</code> (or <code>sin(n*x)/cos(x)</code> if n is even) in ascending powers of <code>sin(x)</code>.
+ * A028298 Triangle of coefficients in expansion of sin(n*x) (or sin(n*x)/cos(x) if n is even) in ascending powers of sin(x).
  * @author Sean A. Irvine
  */
 public class A028298 implements Sequence {

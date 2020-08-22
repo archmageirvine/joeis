@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107240 Sum of squares of first n tribonacci numbers <code>(A000213)</code>.
+ * A107240 Sum of squares of first n tribonacci numbers (A000213).
  * @author Sean A. Irvine
  */
 public class A107240 extends LinearRecurrence {

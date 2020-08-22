@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174882 A <code>(3/2,-1) Somos-4</code> sequence.
+ * A174882 A (3/2,-1) Somos-4 sequence.
  * @author Sean A. Irvine
  */
 public class A174882 extends LinearRecurrence {

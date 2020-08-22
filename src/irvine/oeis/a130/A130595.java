@@ -6,7 +6,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle <code>(A007318)</code> regarded as a lower triangular matrix.
+ * A130595 Triangle read by rows: lower triangular matrix which is inverse to Pascal's triangle (A007318) regarded as a lower triangular matrix.
  * @author Georg Fischer
  */
 public class A130595 extends LatticeCoordinationSequence {

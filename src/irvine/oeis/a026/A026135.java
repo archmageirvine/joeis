@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a025.A025179;
 
 /**
- * A026135 Number of <code>(s(0),s(1),...,s(n))</code> such that every <code>s(i)</code> is a nonnegative integer, <code>s(0) = 1, |s(1) - s(0)| = 1, |s(i) - s(i-1)| &lt;= 1</code> for i <code>&gt;= 2</code>. Also sum of numbers in row <code>n+1</code> of the array T defined in <code>A026120</code>.
+ * A026135 Number of (s(0),s(1),...,s(n)) such that every s(i) is a nonnegative integer, s(0) = 1, |s(1) - s(0)| = 1, |s(i) - s(i-1)| &lt;= 1 for i &gt;= 2. Also sum of numbers in row n+1 of the array T defined in A026120.
  * @author Sean A. Irvine
  */
 public class A026135 implements Sequence {

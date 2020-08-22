@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019663 Decimal expansion of <code>sqrt(Pi*e)/19</code>.
+ * A019663 Decimal expansion of sqrt(Pi*e)/19.
  * @author Sean A. Irvine
  */
 public class A019663 extends DecimalExpansionSequence {

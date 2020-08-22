@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079003 Least k <code>&gt;= 3</code> such that <code>Fibonacci(k) == -1 (mod 3^n)</code>.
+ * A079003 Least k &gt;= 3 such that Fibonacci(k) == -1 (mod 3^n).
  * @author Georg Fischer
  */
 public class A079003 extends HolonomicRecurrence {

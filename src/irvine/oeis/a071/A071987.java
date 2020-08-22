@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A071987 225 written in base <code>15-n</code>.
+ * A071987 225 written in base 15-n.
  * @author Georg Fischer
  */
 public class A071987 extends FiniteSequence {

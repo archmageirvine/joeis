@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A005159 <code>a(n) = 3^n*Catalan(n)</code>.
+ * A005159 a(n) = 3^n*Catalan(n).
  * @author Sean A. Irvine
  */
 public class A005159 extends A000108 {

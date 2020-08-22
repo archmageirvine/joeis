@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157142 Signed denominators of Leibniz series for <code>Pi/4</code>.
+ * A157142 Signed denominators of Leibniz series for Pi/4.
  * @author Georg Fischer
  */
 public class A157142 extends GeneratingFunctionSequence {

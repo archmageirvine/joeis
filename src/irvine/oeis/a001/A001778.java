@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001778 Lah numbers: <code>n!C(n-1,5)/6!</code>.
+ * A001778 Lah numbers: n!C(n-1,5)/6!.
  * @author Sean A. Irvine
  */
 public class A001778 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305555 Sum of the areas of all L-elevated skew paths of <code>semi-length n</code>.
+ * A305555 Sum of the areas of all L-elevated skew paths of semi-length n.
  * @author Georg Fischer
  */
 public class A305555 extends HolonomicRecurrence {

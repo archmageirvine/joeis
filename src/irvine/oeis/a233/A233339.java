@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233339 Number of tilings of a <code>4 X 3n</code> rectangle using <code>4n</code> trominoes of any shape.
+ * A233339 Number of tilings of a 4 X 3n rectangle using 4n trominoes of any shape.
  * @author Georg Fischer
  */
 public class A233339 extends GeneratingFunctionSequence {

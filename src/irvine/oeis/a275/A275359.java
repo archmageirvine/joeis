@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275359 Maximum incarceration of numbers in an <code>n X n X n</code> number cubes with full incarceration volumes.
+ * A275359 Maximum incarceration of numbers in an n X n X n number cubes with full incarceration volumes.
  * @author Georg Fischer
  */
 public class A275359 extends GeneratingFunctionSequence {

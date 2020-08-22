@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050511 <code>a(n) = (-1)^n * Sum_{i=0..n} binomial(n+1,i+1)*Catalan(i)</code>.
+ * A050511 a(n) = (-1)^n * Sum_{i=0..n} binomial(n+1,i+1)*Catalan(i).
  * @author Georg Fischer
  */
 public class A050511 extends HolonomicRecurrence {

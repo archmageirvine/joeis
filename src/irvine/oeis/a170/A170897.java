@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A170897 Number of new cells turned ON at generation n in cellular automaton described in <code>A170896</code>.
+ * A170897 Number of new cells turned ON at generation n in cellular automaton described in A170896.
  * @author Sean A. Irvine
  */
 public class A170897 extends DifferenceSequence {

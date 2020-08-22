@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a005.A005384;
 
 /**
- * A074259 Gaps between primes p such that <code>2p+1</code> is also prime, i.e., Sophie-Germain primes <code>A005384</code>.
+ * A074259 Gaps between primes p such that 2p+1 is also prime, i.e., Sophie-Germain primes A005384.
  * @author Georg Fischer
  */
 public class A074259 extends DifferenceSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A332763 Numbers k such that <code>6*17^k + 1</code> is prime.
+ * A332763 Numbers k such that 6*17^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A332763 extends PowerFactorPrimeSequence {

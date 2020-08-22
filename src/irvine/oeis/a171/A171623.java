@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A171623 <code>Floor(n-th</code> composite <code>/ n)</code>.
+ * A171623 Floor(n-th composite / n).
  * @author Georg Fischer
  */
 public class A171623 extends PaddingSequence {

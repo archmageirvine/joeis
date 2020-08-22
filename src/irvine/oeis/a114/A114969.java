@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114969 Repeatedly divide by k, add d: <code>k=2, d=5</code> case.
+ * A114969 Repeatedly divide by k, add d: k=2, d=5 case.
  * @author Georg Fischer
  */
 public class A114969 extends GeneratingFunctionSequence {

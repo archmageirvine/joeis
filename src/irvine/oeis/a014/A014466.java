@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000372;
 
 /**
- * A014466 Dedekind numbers: monotone Boolean functions, or nonempty antichains of subsets of an <code>n-set</code>.
+ * A014466 Dedekind numbers: monotone Boolean functions, or nonempty antichains of subsets of an n-set.
  * @author Sean A. Irvine
  */
 public class A014466 extends A000372 {

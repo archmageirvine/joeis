@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a007.A007304;
 
 /**
- * A239656 First differences of sphenic numbers, cf. <code>A007304</code>.
+ * A239656 First differences of sphenic numbers, cf. A007304.
  * @author Georg Fischer
  */
 public class A239656 extends DifferenceSequence {

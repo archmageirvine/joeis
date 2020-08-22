@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099196 Figurate numbers based on the 9-dimensional regular convex polytope called the <code>9-dimensional cross-polytope</code>, or 9-dimensional hyperoctahedron, which is represented by the Schlaefli symbol <code>{3, 3, 3, 3, 3, 3, 3, 4}</code>. It is the dual of the 9-dimensional hypercube.
+ * A099196 Figurate numbers based on the 9-dimensional regular convex polytope called the 9-dimensional cross-polytope, or 9-dimensional hyperoctahedron, which is represented by the Schlaefli symbol {3, 3, 3, 3, 3, 3, 3, 4}. It is the dual of the 9-dimensional hypercube.
  * @author Sean A. Irvine
  */
 public class A099196 extends LinearRecurrence {

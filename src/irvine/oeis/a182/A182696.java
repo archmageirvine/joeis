@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A182696 <code>a(n) =</code> the largest 4-digit number with exactly n divisors, <code>a(n) = 0</code> if no such number exists.
+ * A182696 a(n) = the largest 4-digit number with exactly n divisors, a(n) = 0 if no such number exists.
  * @author Georg Fischer
  */
 public class A182696 extends FiniteSequence {

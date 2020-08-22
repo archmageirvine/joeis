@@ -5,7 +5,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268615 Lucas numbers <code>mod 40</code>.
+ * A268615 Lucas numbers mod 40.
  * @author Georg Fischer
  */
 public class A268615 extends HolonomicRecurrence {

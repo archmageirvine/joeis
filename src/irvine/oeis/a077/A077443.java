@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077443 Numbers k such that <code>(k^2 - 7)/2</code> is a square.
+ * A077443 Numbers k such that (k^2 - 7)/2 is a square.
  * @author Sean A. Irvine
  */
 public class A077443 extends LinearRecurrence {

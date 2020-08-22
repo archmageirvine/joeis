@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091426 Expansion of <code>(1 + x^18 + x^21 + x^22 + x^23 + x^24 + x^27 + x^45) / ( (1 - x^8)*(1 - x^12)*(1 - x^14)*(1 - x^15))</code>.
+ * A091426 Expansion of (1 + x^18 + x^21 + x^22 + x^23 + x^24 + x^27 + x^45) / ( (1 - x^8)*(1 - x^12)*(1 - x^14)*(1 - x^15)).
  * @author Georg Fischer
  */
 public class A091426 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032308 Expansion of <code>Product_{k&gt;=1} (1 + 3*x^k)</code>.
+ * A032308 Expansion of Product_{k&gt;=1} (1 + 3*x^k).
  * @author Sean A. Irvine
  */
 public class A032308 extends MemoryFunction2<Long, Z> implements Sequence {

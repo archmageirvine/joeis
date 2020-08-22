@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A029714 <code>a(n) =</code> Sum <code>S(k)</code>, k divides <code>3^n</code>, where S is the Kempner function <code>A002034</code>.
+ * A029714 a(n) = Sum S(k), k divides 3^n, where S is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A029714 extends A002034 {

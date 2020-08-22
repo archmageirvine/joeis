@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214507 <code>a(n) = 1</code> if n is one or two times an even square, -1 if one or two times an odd square else 0.
+ * A214507 a(n) = 1 if n is one or two times an even square, -1 if one or two times an odd square else 0.
  * @author Georg Fischer
  */
 public class A214507 extends EulerTransform {

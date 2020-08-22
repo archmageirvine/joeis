@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A005318 Conway-Guy sequence: <code>a(n + 1) = 2a(n) - a(n - floor( 1/2 + sqrt(2n) ))</code>.
+ * A005318 Conway-Guy sequence: a(n + 1) = 2a(n) - a(n - floor( 1/2 + sqrt(2n) )).
  * @author Sean A. Irvine
  */
 public class A005318 extends MemorySequence {

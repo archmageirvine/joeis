@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014371 Number of trivalent connected simple graphs with <code>2n</code> nodes and girth at least 4.
+ * A014371 Number of trivalent connected simple graphs with 2n nodes and girth at least 4.
  * @author Sean A. Irvine
  */
 public class A014371 implements Sequence {

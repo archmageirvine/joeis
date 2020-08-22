@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A116560 Sequentially switched Markov of six <code>2 X 2</code> matrices based on the Anharmonic group that gives a chaotic vector output.
+ * A116560 Sequentially switched Markov of six 2 X 2 matrices based on the Anharmonic group that gives a chaotic vector output.
  * @author Georg Fischer
  */
 public class A116560 extends GeneratingFunctionSequence {

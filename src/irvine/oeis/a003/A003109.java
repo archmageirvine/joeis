@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A003109 <code>a(n) =</code> number of special even permutations of <code>2*n+1</code>.
+ * A003109 a(n) = number of special even permutations of 2*n+1.
  * @author Sean A. Irvine
  */
 public class A003109 implements Sequence {

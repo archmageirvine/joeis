@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086940 <code>a(n) =</code> k where <code>R(k+4) = 2</code>.
+ * A086940 a(n) = k where R(k+4) = 2.
  * @author Sean A. Irvine
  */
 public class A086940 extends LinearRecurrence {

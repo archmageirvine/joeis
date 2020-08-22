@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100230 Main diagonal of triangle <code>A100229</code>.
+ * A100230 Main diagonal of triangle A100229.
  * @author Sean A. Irvine
  */
 public class A100230 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274832 Values of n such that <code>2*n+1</code> and <code>7*n+1</code> are both triangular numbers <code>(A000217)</code>.
+ * A274832 Values of n such that 2*n+1 and 7*n+1 are both triangular numbers (A000217).
  * @author Sean A. Irvine
  */
 public class A274832 extends LinearRecurrence {

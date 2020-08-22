@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147597 <code>a(n)</code> is the number whose binary representation is <code>A138146(n)</code>.
+ * A147597 a(n) is the number whose binary representation is A138146(n).
  * @author Georg Fischer
  */
 public class A147597 extends GeneratingFunctionSequence {

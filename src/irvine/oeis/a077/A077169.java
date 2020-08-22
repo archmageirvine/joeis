@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077169 Initial terms of rows of <code>A077168</code>.
+ * A077169 Initial terms of rows of A077168.
  * @author Georg Fischer
  */
 public class A077169 extends GeneratingFunctionSequence {

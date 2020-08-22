@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035954 Number of partitions of n into parts not of the form <code>13k, 13k+6</code> or <code>13k-6</code>. Also number of partitions with at most 5 parts of size 1 and differences between parts at distance 5 are greater than 1.
+ * A035954 Number of partitions of n into parts not of the form 13k, 13k+6 or 13k-6. Also number of partitions with at most 5 parts of size 1 and differences between parts at distance 5 are greater than 1.
  * @author Georg Fischer
  */
 public class A035954 extends EulerTransform {

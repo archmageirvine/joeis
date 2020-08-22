@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A067336 <code>a(0)=1, a(1)=2, a(n) = a(n-1)*9/2 - Catalan(n-1)</code> where <code>Catalan(n) = binomial(2n,n)/(n+1) = A000108(n)</code>.
+ * A067336 a(0)=1, a(1)=2, a(n) = a(n-1)*9/2 - Catalan(n-1) where Catalan(n) = binomial(2n,n)/(n+1) = A000108(n).
  * @author Georg Fischer
  */
 public class A067336 extends HolonomicRecurrence {

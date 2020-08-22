@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A275410 Numbers n such that <code>(493*10^n-7)/9</code> is prime.
+ * A275410 Numbers n such that (493*10^n-7)/9 is prime.
  * @author Georg Fischer
  */
 public class A275410 extends PowerFactorPrimeSequence {

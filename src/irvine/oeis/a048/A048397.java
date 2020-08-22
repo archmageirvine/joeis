@@ -4,7 +4,7 @@ package irvine.oeis.a048;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A048397 Sum of consecutive <code>non-fourth-powers</code>.
+ * A048397 Sum of consecutive non-fourth-powers.
  * @author Georg Fischer
  */
 public class A048397 extends GeneratingFunctionSequence {

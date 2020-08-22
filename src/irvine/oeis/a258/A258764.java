@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A258764 Expansion of <code>chi(-x^2) * psi(-x^3)^2</code> in powers of x where <code>psi(), chi()</code> are Ramanujan theta functions.
+ * A258764 Expansion of chi(-x^2) * psi(-x^3)^2 in powers of x where psi(), chi() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A258764 extends EulerTransform {

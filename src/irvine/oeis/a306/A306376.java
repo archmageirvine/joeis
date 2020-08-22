@@ -6,7 +6,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306376 Sum of the <code>2 X 2</code> minors in the <code>n X n</code> Pascal matrix.
+ * A306376 Sum of the 2 X 2 minors in the n X n Pascal matrix.
  * @author Georg Fischer
  */
 public class A306376 extends HolonomicRecurrence {

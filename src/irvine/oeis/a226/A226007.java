@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A226007 Expansion of <code>x * f(-x^7) * f(-x^21) / (f(-x) * f(-x^3))</code> where <code>f()</code> is a Ramanujan theta function.
+ * A226007 Expansion of x * f(-x^7) * f(-x^21) / (f(-x) * f(-x^3)) where f() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A226007 extends EulerTransform {

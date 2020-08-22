@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167167 <code>A001045</code> with <code>a(0)</code> replaced by -1.
+ * A167167 A001045 with a(0) replaced by -1.
  * @author Georg Fischer
  */
 public class A167167 extends GeneratingFunctionSequence {

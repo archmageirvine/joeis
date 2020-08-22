@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A039706 <code>a(n) = n-th</code> prime modulo 8.
+ * A039706 a(n) = n-th prime modulo 8.
  * @author Georg Fischer
  */
 public class A039706 extends A000040 {

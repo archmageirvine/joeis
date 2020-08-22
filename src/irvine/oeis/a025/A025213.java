@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A025213 <code>a(n) = floor(3rd</code> elementary symmetric function of <code>Sum_{j=1..k} 1/j, k = 1,2,...,n)</code>.
+ * A025213 a(n) = floor(3rd elementary symmetric function of Sum_{j=1..k} 1/j, k = 1,2,...,n).
  * @author Sean A. Irvine
  */
 public class A025213 extends A025212 {

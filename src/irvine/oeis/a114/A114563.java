@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A114563 Number of "escalator" lattices in dimension <code>n</code>.
+ * A114563 Number of "escalator" lattices in dimension n.
  * @author Georg Fischer
  */
 public class A114563 extends PaddingSequence {

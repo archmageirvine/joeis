@@ -6,7 +6,7 @@ package irvine.oeis.a154;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A154825 Reversion of <code>x(1-2x)/(1-3x)</code>.
+ * A154825 Reversion of x(1-2x)/(1-3x).
  * @author Georg Fischer
  */
 public class A154825 extends HolonomicRecurrence {

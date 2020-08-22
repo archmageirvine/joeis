@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094257 Let M be the <code>3 X 3</code> matrix <code>[0 1 0 / 0 0 1 / 7 -35 21]</code>. Take <code>M^n * [1 1 1] = [p q r];</code> then <code>a(n-1), a(n), a(n+1) = -p, -q, -r</code> respectively.
+ * A094257 Let M be the 3 X 3 matrix [0 1 0 / 0 0 1 / 7 -35 21]. Take M^n * [1 1 1] = [p q r]; then a(n-1), a(n), a(n+1) = -p, -q, -r respectively.
  * @author Georg Fischer
  */
 public class A094257 extends GeneratingFunctionSequence {

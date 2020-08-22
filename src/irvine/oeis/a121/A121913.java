@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a014.A014106;
 
 /**
- * A121913 <code>a(n) = 2^(n*(2*n+3)) = 2^A014106(n)</code>.
+ * A121913 a(n) = 2^(n*(2*n+3)) = 2^A014106(n).
  * @author Georg Fischer
  */
 public class A121913 implements Sequence {

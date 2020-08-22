@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059602 Expansion of <code>(5+10*x+x^2)/(1-x)^10</code>.
+ * A059602 Expansion of (5+10*x+x^2)/(1-x)^10.
  * @author Georg Fischer
  */
 public class A059602 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308604 Number of (not necessarily maximal) cliques in the <code>n X n</code> fiveleaper graph.
+ * A308604 Number of (not necessarily maximal) cliques in the n X n fiveleaper graph.
  * @author Georg Fischer
  */
 public class A308604 extends HolonomicRecurrence {

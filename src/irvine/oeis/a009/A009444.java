@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009444 E.g.f. <code>log(1 + x*exp(-x))</code>.
+ * A009444 E.g.f. log(1 + x*exp(-x)).
  * @author Sean A. Irvine
  */
 public class A009444 implements Sequence {

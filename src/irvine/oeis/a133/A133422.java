@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A133422 Number of steps to reach 1 under repeated applications of the <code>"7x+1"</code> map of <code>A133421</code>, or -1 if 1 is never reached.
+ * A133422 Number of steps to reach 1 under repeated applications of the "7x+1" map of A133421, or -1 if 1 is never reached.
  * @author Sean A. Irvine
  */
 public class A133422 implements Sequence {

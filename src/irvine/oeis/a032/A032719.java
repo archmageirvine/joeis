@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032719 Numbers n such that n prefixed by <code>'2'</code> and followed by <code>'7'</code> is prime.
+ * A032719 Numbers n such that n prefixed by '2' and followed by '7' is prime.
  * @author Sean A. Irvine
  */
 public class A032719 implements Sequence {

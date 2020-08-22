@@ -7,7 +7,7 @@ import irvine.oeis.a004.A004718;
 
 
 /**
- * A083866 Positions of zeros in Per N\u00f8rg\u00e5rd's infinity sequence <code>(A004718)</code>.
+ * A083866 Positions of zeros in Per N\u00f8rg\u00e5rd's infinity sequence (A004718).
  * @author Georg Fischer
  */
 public class A083866 extends PositionSequence {

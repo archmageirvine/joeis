@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064377 Numbers n such that <code>sigma_4(n) &gt; phi(n)^5</code>.
+ * A064377 Numbers n such that sigma_4(n) &gt; phi(n)^5.
  * @author Georg Fischer
  */
 public class A064377 extends FiniteSequence {

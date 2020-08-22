@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302757 <code>a(n)</code> is the smallest number whose greedy representation as a sum of terms of <code>A126684</code> uses n terms.
+ * A302757 a(n) is the smallest number whose greedy representation as a sum of terms of A126684 uses n terms.
  * @author Georg Fischer
  */
 public class A302757 extends GeneratingFunctionSequence {

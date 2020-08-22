@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213245 Number of nonzero elements in <code>GF(2^n)</code> that are 7th powers.
+ * A213245 Number of nonzero elements in GF(2^n) that are 7th powers.
  * @author Sean A. Irvine
  */
 public class A213245 extends LinearRecurrence {

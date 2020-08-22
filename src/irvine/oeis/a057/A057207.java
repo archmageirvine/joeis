@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.z.Z;
 
 /**
- * A057207 <code>a(1)=5, a(n)</code> is the smallest prime dividing <code>4*Q^2 + 1</code> where Q is the product of all previous terms in the sequence.
+ * A057207 a(1)=5, a(n) is the smallest prime dividing 4*Q^2 + 1 where Q is the product of all previous terms in the sequence.
  * @author Sean A. Irvine
  */
 public class A057207 extends A057205 {

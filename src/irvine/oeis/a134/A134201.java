@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A134201 Number of rigid hypergroups of order <code>n</code>.
+ * A134201 Number of rigid hypergroups of order n.
  * @author Georg Fischer
  */
 public class A134201 extends PaddingSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145112 Numbers of length n binary words with fewer than <code>4 0-digits</code> between any pair of consecutive <code>1-digits</code>.
+ * A145112 Numbers of length n binary words with fewer than 4 0-digits between any pair of consecutive 1-digits.
  * @author Georg Fischer
  */
 public class A145112 extends GeneratingFunctionSequence {

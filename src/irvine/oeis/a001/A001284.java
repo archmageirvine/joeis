@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001284 Numbers of form <code>m*k</code> with <code>m+1 &lt;= k &lt;= 2m-1</code>.
+ * A001284 Numbers of form m*k with m+1 &lt;= k &lt;= 2m-1.
  * @author Sean A. Irvine
  */
 public class A001284 implements Sequence {

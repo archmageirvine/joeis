@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022300;
 
 /**
- * A025513 Exactly half of first <code>a(n)</code> terms of <code>A022300</code> are <code>1</code>'s (not known to be infinite).
+ * A025513 Exactly half of first a(n) terms of A022300 are 1's (not known to be infinite).
  * @author Sean A. Irvine
  */
 public class A025513 extends A022300 {

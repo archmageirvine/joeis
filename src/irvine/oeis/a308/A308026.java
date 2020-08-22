@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308026 <code>a(n) = n*(2*n - 3 - (-1)^n)*(11*n + (-1)^n)/24</code>.
+ * A308026 a(n) = n*(2*n - 3 - (-1)^n)*(11*n + (-1)^n)/24.
  * @author Georg Fischer
  */
 public class A308026 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319006 Sum of the next n positive integers repeated <code>(A008619)</code>.
+ * A319006 Sum of the next n positive integers repeated (A008619).
  * @author Georg Fischer
  */
 public class A319006 extends GeneratingFunctionSequence {

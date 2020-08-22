@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A119016 Numerators of "Farey fraction" approximations to <code>sqrt(2)</code>.
+ * A119016 Numerators of "Farey fraction" approximations to sqrt(2).
  * @author Sean A. Irvine
  */
 public class A119016 extends LinearRecurrence {

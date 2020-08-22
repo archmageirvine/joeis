@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163415 <code>a(n) = 18*a(n-1) - 79*a(n-2)</code> for <code>n&gt;1, a(0)=1, a(1)=13</code>.
+ * A163415 a(n) = 18*a(n-1) - 79*a(n-2) for n&gt;1, a(0)=1, a(1)=13.
  * @author Georg Fischer
  */
 public class A163415 extends LinearRecurrence {

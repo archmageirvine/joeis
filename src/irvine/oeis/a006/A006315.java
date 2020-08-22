@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006315 Numbers n such that <code>n^32 + 1</code> is prime.
+ * A006315 Numbers n such that n^32 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A006315 implements Sequence {

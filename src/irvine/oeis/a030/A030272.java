@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030272 Number of partitions of <code>n^3</code> into distinct cubes.
+ * A030272 Number of partitions of n^3 into distinct cubes.
  * @author Sean A. Irvine
  */
 public class A030272 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030363 Write <code>(n+1)st</code> Fibonacci number in base 3 and juxtapose.
+ * A030363 Write (n+1)st Fibonacci number in base 3 and juxtapose.
  * @author Georg Fischer
  */
 public class A030363 implements Sequence {

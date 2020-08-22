@@ -3,7 +3,7 @@ package irvine.oeis.a203;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A203627 Numbers which are both <code>9-gonal</code> (nonagonal) and <code>10-gonal</code> (decagonal).
+ * A203627 Numbers which are both 9-gonal (nonagonal) and 10-gonal (decagonal).
  * @author Sean A. Irvine
  */
 public class A203627 extends LinearRecurrence {

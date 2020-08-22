@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159759 Decimal expansion of <code>(83+18*sqrt(2))/79</code>.
+ * A159759 Decimal expansion of (83+18*sqrt(2))/79.
  * @author Georg Fischer
  */
 public class A159759 extends DecimalExpansionSequence {

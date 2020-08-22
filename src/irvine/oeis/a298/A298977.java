@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298977 <code>Base-7</code> complementary numbers: n equals the product of the 7 complement <code>(7-d)</code> of its <code>base-7</code> digits d.
+ * A298977 Base-7 complementary numbers: n equals the product of the 7 complement (7-d) of its base-7 digits d.
  * @author Georg Fischer
  */
 public class A298977 extends GeneratingFunctionSequence {

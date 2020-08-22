@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138509 Janet (or <code>left-step)</code> periodic table from right to left. 120 terms. 8 rows, 32 columns without spaces.
+ * A138509 Janet (or left-step) periodic table from right to left. 120 terms. 8 rows, 32 columns without spaces.
  * @author Georg Fischer
  */
 public class A138509 extends FiniteSequence {

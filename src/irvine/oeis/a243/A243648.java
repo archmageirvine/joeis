@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243648 Number of ways five L-tiles can be placed on an <code>n X n</code> square.
+ * A243648 Number of ways five L-tiles can be placed on an n X n square.
  * @author Georg Fischer
  */
 public class A243648 extends GeneratingFunctionSequence {

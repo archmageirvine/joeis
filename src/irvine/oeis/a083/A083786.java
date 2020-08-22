@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002808;
 
 
 /**
- * A083786 Composite numbers <code>mod 10</code>.
+ * A083786 Composite numbers mod 10.
  * @author Georg Fischer
  */
 public class A083786 extends A002808 {

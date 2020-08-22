@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179042 Partial sums of <code>ceiling(Fibonacci(n)/4)</code>.
+ * A179042 Partial sums of ceiling(Fibonacci(n)/4).
  * @author Sean A. Irvine
  */
 public class A179042 extends LinearRecurrence {

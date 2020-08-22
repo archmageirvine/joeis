@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020053 <code>a(n) = floor(Gamma(n + 7/11)/Gamma(7/11))</code>.
+ * A020053 a(n) = floor(Gamma(n + 7/11)/Gamma(7/11)).
  * @author Sean A. Irvine
  */
 public class A020053 implements Sequence {

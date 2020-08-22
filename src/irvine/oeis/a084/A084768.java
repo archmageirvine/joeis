@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084768 <code>P_n(7)</code>, where <code>P_n</code> is n-th Legendre polynomial; also, <code>a(n) =</code> central coefficient of <code>(1 + 7*x + 12*x^2)^n</code>.
+ * A084768 P_n(7), where P_n is n-th Legendre polynomial; also, a(n) = central coefficient of (1 + 7*x + 12*x^2)^n.
  * @author Georg Fischer
  */
 public class A084768 extends HolonomicRecurrence {

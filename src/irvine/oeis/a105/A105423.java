@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105423 Number of compositions of <code>n+2</code> having exactly two parts equal to 1.
+ * A105423 Number of compositions of n+2 having exactly two parts equal to 1.
  * @author Georg Fischer
  */
 public class A105423 extends LinearRecurrence {

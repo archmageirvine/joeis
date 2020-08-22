@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A080916 Number of electrons in outermost electron subshell in chemical element number <code>n</code>.
+ * A080916 Number of electrons in outermost electron subshell in chemical element number n.
  * @author Georg Fischer
  */
 public class A080916 extends NoncomputableSequence {

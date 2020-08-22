@@ -5,7 +5,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A085245 Least k such that <code>k*2^n + 1</code> is a semiprime.
+ * A085245 Least k such that k*2^n + 1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085245 implements Sequence {

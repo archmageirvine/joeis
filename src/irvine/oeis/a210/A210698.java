@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210698 Number of <code>2 X 2</code> matrices having all terms in <code>{1,...,n}</code> and determinant <code>= 0 (mod 3)</code>.
+ * A210698 Number of 2 X 2 matrices having all terms in {1,...,n} and determinant = 0 (mod 3).
  * @author Georg Fischer
  */
 public class A210698 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a054;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A054441 Convolution of (shifted) <code>A026671</code> with <code>A000984</code> (central binomial coefficients of even order).
+ * A054441 Convolution of (shifted) A026671 with A000984 (central binomial coefficients of even order).
  * @author Georg Fischer
  */
 public class A054441 extends HolonomicRecurrence {

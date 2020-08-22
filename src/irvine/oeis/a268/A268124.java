@@ -3,7 +3,7 @@ package irvine.oeis.a268;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A268124 <code>a(n) = n^4 * (n+3)^6 * 4^(-n)</code>.
+ * A268124 a(n) = n^4 * (n+3)^6 * 4^(-n).
  * @author Georg Fischer
  */
 public class A268124 extends FiniteSequence {

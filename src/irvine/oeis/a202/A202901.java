@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202901 Number of <code>n X 3 0..1</code> arrays with every one equal to some NW, E or S neighbor.
+ * A202901 Number of n X 3 0..1 arrays with every one equal to some NW, E or S neighbor.
  * @author Georg Fischer
  */
 public class A202901 extends GeneratingFunctionSequence {

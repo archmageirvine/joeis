@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073455 Numbers n such that to <code>phi(n) = pi(n)-1</code>.
+ * A073455 Numbers n such that to phi(n) = pi(n)-1.
  * @author Georg Fischer
  */
 public class A073455 extends FiniteSequence {

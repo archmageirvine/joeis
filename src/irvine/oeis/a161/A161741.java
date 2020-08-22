@@ -6,7 +6,7 @@ package irvine.oeis.a161;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161741 Fifth right hand column of the <code>RSEG2</code> triangle <code>A161739</code>.
+ * A161741 Fifth right hand column of the RSEG2 triangle A161739.
  * @author Georg Fischer
  */
 public class A161741 extends HolonomicRecurrence {

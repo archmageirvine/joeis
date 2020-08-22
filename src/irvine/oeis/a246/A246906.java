@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246906 G.f.: <code>1 / AGM(1-21*x, sqrt((1-9*x)*(1-49*x)))</code>.
+ * A246906 G.f.:  1 / AGM(1-21*x, sqrt((1-9*x)*(1-49*x))).
  * @author Georg Fischer
  */
 public class A246906 extends HolonomicRecurrence {

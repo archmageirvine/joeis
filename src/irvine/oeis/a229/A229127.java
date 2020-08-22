@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229127 Number of n-digit numbers containing the digit <code>'0'</code>.
+ * A229127 Number of n-digit numbers containing the digit '0'.
  * @author Georg Fischer
  */
 public class A229127 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a005.A005382;
 
 /**
- * A074258 Gaps between primes p such that <code>2p-1</code> is also prime.
+ * A074258 Gaps between primes p such that 2p-1 is also prime.
  * @author Georg Fischer
  */
 public class A074258 extends DifferenceSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267317 <code>a(n) =</code> final digit of <code>2^n-1</code>.
+ * A267317 a(n) = final digit of 2^n-1.
  * @author Georg Fischer
  */
 public class A267317 extends GeneratingFunctionSequence {

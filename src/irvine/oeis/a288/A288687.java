@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288687 Number of n-digit biquanimous strings using digits <code>{0,1,2,3}</code>.
+ * A288687 Number of n-digit biquanimous strings using digits {0,1,2,3}.
  * @author Georg Fischer
  */
 public class A288687 extends LinearRecurrence {

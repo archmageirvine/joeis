@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A258707 Decimal expansion of <code>((1/exp(1))^(1/exp(1)))^2</code>.
+ * A258707 Decimal expansion of ((1/exp(1))^(1/exp(1)))^2.
  * @author Georg Fischer
  */
 public class A258707 extends DecimalExpansionSequence {

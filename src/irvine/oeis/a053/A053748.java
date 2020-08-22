@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000796;
 
 
 /**
- * A053748 Positions of <code>4</code>'s in the decimal expansion of <code>Pi</code>.
+ * A053748 Positions of 4's in the decimal expansion of Pi.
  * @author Georg Fischer
  */
 public class A053748 extends PositionSequence {

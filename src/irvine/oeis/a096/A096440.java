@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A096440 Decimal expansion of <code>(Pi^3 - e^3)^(1/3)</code>.
+ * A096440 Decimal expansion of (Pi^3 - e^3)^(1/3).
  * @author Georg Fischer
  */
 public class A096440 extends DecimalExpansionSequence {

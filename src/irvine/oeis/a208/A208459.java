@@ -7,7 +7,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A208459 Triangle <code>T_x = T(n,k)</code> given by <code>(0, 1/x, 1-1/x, 0, 0, 0, 0, 0, 0, 0, ...)</code> DELTA <code>(x, 1/x-1, -1/x, 0, 0, 0, 0, 0, 0, 0, ...)</code> where DELTA is the operator defined in <code>A084938</code>, for <code>x = 0</code>.
+ * A208459 Triangle T_x = T(n,k) given by (0, 1/x, 1-1/x, 0, 0, 0, 0, 0, 0, 0, ...) DELTA (x, 1/x-1, -1/x, 0, 0, 0, 0, 0, 0, 0, ...) where DELTA is the operator defined in A084938, for x = 0.
  * @author Georg Fischer
  */
 public class A208459 extends GeneratingFunctionTriangle {

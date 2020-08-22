@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247066 Dynamic Betting Game <code>D(n,6,2)</code>.
+ * A247066 Dynamic Betting Game D(n,6,2).
  * @author Georg Fischer
  */
 public class A247066 extends GeneratingFunctionSequence {

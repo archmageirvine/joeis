@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195789 Decimal expansion of <code>arctan(10)</code>.
+ * A195789 Decimal expansion of arctan(10).
  * @author Georg Fischer
  */
 public class A195789 extends DecimalExpansionSequence {

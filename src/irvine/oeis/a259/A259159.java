@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259159 Positive squares <code>(A000290)</code> that are heptagonal numbers <code>(A000566)</code> divided by 2.
+ * A259159 Positive squares (A000290) that are heptagonal numbers (A000566) divided by 2.
  * @author Sean A. Irvine
  */
 public class A259159 extends LinearRecurrence {

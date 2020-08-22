@@ -3,7 +3,7 @@ package irvine.oeis.a239;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A239609 <code>Sin(arcsin(n)- 3 arccos(n))^2</code>.
+ * A239609 Sin(arcsin(n)- 3 arccos(n))^2.
  * @author Sean A. Irvine
  */
 public class A239609 extends LinearRecurrence {

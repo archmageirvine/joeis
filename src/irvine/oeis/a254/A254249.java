@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254249 Decimal expansion of atomic unit of electric field gradient in V <code>m^-2</code>.
+ * A254249 Decimal expansion of atomic unit of electric field gradient in V m^-2.
  * @author Georg Fischer
  */
 public class A254249 extends NoncomputableSequence {

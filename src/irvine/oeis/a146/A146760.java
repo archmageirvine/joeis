@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A146760 Last prime subtrahend at <code>10^n</code> in <code>A146759</code>.
+ * A146760 Last prime subtrahend at 10^n in A146759.
  * @author Sean A. Irvine
  */
 public class A146760 implements Sequence {

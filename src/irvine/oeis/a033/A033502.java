@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002322;
 
 /**
- * A033502 Carmichael numbers of the form <code>(6*k+1)*(12*k+1)*(18*k+1)</code>, where <code>6*k+1, 12*k+1</code> and <code>18*k+1</code> are all primes.
+ * A033502 Carmichael numbers of the form (6*k+1)*(12*k+1)*(18*k+1), where 6*k+1, 12*k+1 and 18*k+1 are all primes.
  * @author Sean A. Irvine
  */
 public class A033502 extends A002322 {

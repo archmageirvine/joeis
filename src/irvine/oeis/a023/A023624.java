@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a014.A014306;
 
 /**
- * A023624 Convolution of Lucas numbers and <code>A014306</code>.
+ * A023624 Convolution of Lucas numbers and A014306.
  * @author Sean A. Irvine
  */
 public class A023624 extends ConvolutionSequence {

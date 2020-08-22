@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005206;
 
 /**
- * A003258 The number m such that <code>c'(m) = A005206(A003231(n))</code>, where <code>c'(m) = A249115(m)</code> is the m-th positive integer not in <code>A003231</code>.
+ * A003258 The number m such that c'(m) = A005206(A003231(n)), where c'(m) = A249115(m) is the m-th positive integer not in A003231.
  * @author Sean A. Irvine
  */
 public class A003258 extends A003231 {

@@ -4,7 +4,7 @@ import irvine.oeis.RecordPositionSequence;
 import irvine.oeis.a030.A030168;
 
 /**
- * A033311 Positions of incrementally largest terms in continued fraction for <code>Copeland-Erd\u0151s</code> constant.
+ * A033311 Positions of incrementally largest terms in continued fraction for Copeland-Erd\u0151s constant.
  * @author Sean A. Irvine
  */
 public class A033311 extends RecordPositionSequence {

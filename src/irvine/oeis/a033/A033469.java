@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033469 Denominator of <code>Bernoulli(2n,1/2)</code>.
+ * A033469 Denominator of Bernoulli(2n,1/2).
  * @author Sean A. Irvine
  */
 public class A033469 implements Sequence {

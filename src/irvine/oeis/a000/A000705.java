@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * A000705 n-th superior highly composite number <code>A002201(n)</code> is product of first n terms of this sequence.
+ * A000705 n-th superior highly composite number A002201(n) is product of first n terms of this sequence.
  * @author Sean A. Irvine
  */
 public class A000705 implements Sequence {

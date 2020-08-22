@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052867 E.g.f.: <code>log(-(-1+x)^2/(-1+2*x))</code>.
+ * A052867 E.g.f.: log(-(-1+x)^2/(-1+2*x)).
  * @author Georg Fischer
  */
 public class A052867 extends HolonomicRecurrence {

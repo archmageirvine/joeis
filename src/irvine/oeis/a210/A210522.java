@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A210522 Decimal expansion of <code>10^(3/4)</code>.
+ * A210522 Decimal expansion of 10^(3/4).
  * @author Georg Fischer
  */
 public class A210522 extends DecimalExpansionSequence {

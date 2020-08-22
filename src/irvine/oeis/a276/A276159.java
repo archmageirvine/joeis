@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A276159 Convolution of nonzero octagonal numbers <code>(A000567)</code> with themselves.
+ * A276159 Convolution of nonzero octagonal numbers (A000567) with themselves.
  * @author Sean A. Irvine
  */
 public class A276159 extends LinearRecurrence {

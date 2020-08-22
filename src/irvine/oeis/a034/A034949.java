@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A034949 Expansion of <code>eta(8z)*eta(16z)*theta_3(z)</code>.
+ * A034949 Expansion of eta(8z)*eta(16z)*theta_3(z).
  * @author Georg Fischer
  */
 public class A034949 extends EulerTransform {

@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A052749 <code>2n*S2(n-1,2)</code>.
+ * A052749 2n*S2(n-1,2).
  * @author Georg Fischer
  */
 public class A052749 extends LinearRecurrence {

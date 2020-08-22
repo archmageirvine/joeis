@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000120;
 
 /**
- * A256135 <code>a(n) = 5^A000120(n)</code>.
+ * A256135 a(n) = 5^A000120(n).
  * @author Georg Fischer
  */
 public class A256135 implements Sequence {

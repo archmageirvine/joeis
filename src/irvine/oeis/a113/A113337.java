@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113337 Number of noncrossing partitions of <code>[n]</code> with all blocks of odd size and 1 and n in the same block.
+ * A113337 Number of noncrossing partitions of [n] with all blocks of odd size and 1 and n in the same block.
  * @author Georg Fischer
  */
 public class A113337 extends HolonomicRecurrence {

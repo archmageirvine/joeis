@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144044 <code>a(n) = ((1+sqrt(11))^n-(1-sqrt(11))^n)^2/44</code>.
+ * A144044 a(n) = ((1+sqrt(11))^n-(1-sqrt(11))^n)^2/44.
  * @author Georg Fischer
  */
 public class A144044 extends GeneratingFunctionSequence {

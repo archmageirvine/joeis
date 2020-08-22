@@ -6,7 +6,7 @@ package irvine.oeis.a309;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A309301 <code>(1/9)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by nine.
+ * A309301 (1/9) times the sum of the elements of all subsets of [n] whose sum is divisible by nine.
  * @author Georg Fischer
  */
 public class A309301 extends GeneratingFunctionSequence {

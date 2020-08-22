@@ -8,7 +8,7 @@ import irvine.math.group.IntegerField;
 import irvine.math.polynomial.Polynomial;
 
 /**
- * A002482 Theta series of Borcherds' 27-dimensional unimodular lattice <code>U_27</code>.
+ * A002482 Theta series of Borcherds' 27-dimensional unimodular lattice U_27.
  * @author Sean A. Irvine
  */
 public class A002482 implements Sequence {

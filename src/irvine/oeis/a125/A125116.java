@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125116 Number of <code>8 X 8</code> pandiagonal Franklin squares with magic sum <code>4n</code>.
+ * A125116 Number of 8 X 8 pandiagonal Franklin squares with magic sum 4n.
  * @author Sean A. Irvine
  */
 public class A125116 extends LinearRecurrence {

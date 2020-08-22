@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062749 Sixth column <code>(r=5)</code> of <code>FS(3)</code> staircase array <code>A062745</code>.
+ * A062749 Sixth column (r=5) of FS(3) staircase array A062745.
  * @author Georg Fischer
  */
 public class A062749 extends GeneratingFunctionSequence {

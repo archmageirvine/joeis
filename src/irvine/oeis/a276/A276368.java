@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276368 G.f. <code>A(x)</code> satisfies: <code>A(x - 3*x^3) = 1/(1 - 3*x)</code>.
+ * A276368 G.f. A(x) satisfies: A(x - 3*x^3) = 1/(1 - 3*x).
  * @author Georg Fischer
  */
 public class A276368 extends HolonomicRecurrence {

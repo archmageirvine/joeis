@@ -6,7 +6,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A108558 Symmetric triangle, read by rows, where row n equals the <code>(n+1)-th</code> differences of the crystal ball sequence for <code>D_n</code> lattice, for <code>n&gt;=0</code>.
+ * A108558 Symmetric triangle, read by rows, where row n equals the (n+1)-th differences of the crystal ball sequence for D_n lattice, for n&gt;=0.
  * @author Georg Fischer
  */
 public class A108558 extends LatticeCoordinationSequence {

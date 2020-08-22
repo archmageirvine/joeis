@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A308259 <code>a(n)</code> is equal to the sum of the factorials of the digits of <code>a(n-1)</code>, initial term is 3.
+ * A308259 a(n) is equal to the sum of the factorials of the digits of a(n-1), initial term is 3.
  * @author Georg Fischer
  */
 public class A308259 extends PaddingSequence {

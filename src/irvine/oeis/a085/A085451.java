@@ -5,7 +5,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085451 Numbers n such that n and <code>prime[n]</code> together use only distinct digits.
+ * A085451 Numbers n such that n and prime[n] together use only distinct digits.
  * @author Georg Fischer
  */
 public class A085451 extends FiniteSequence {

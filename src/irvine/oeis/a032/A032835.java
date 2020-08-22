@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032835 Numbers whose set of base 11 digits is <code>{3,4} </code>.
+ * A032835 Numbers whose set of base 11 digits is {3,4} .
  * @author Sean A. Irvine
  */
 public class A032835 extends MemorySequence {

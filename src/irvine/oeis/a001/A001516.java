@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001516 Bessel polynomial <code>{y_n}''(1)</code>.
+ * A001516 Bessel polynomial {y_n}''(1).
  * @author Sean A. Irvine
  */
 public class A001516 extends MemoryFunction1<Polynomial<Z>> implements Sequence {

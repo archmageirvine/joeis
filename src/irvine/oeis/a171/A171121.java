@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171121 The <code>81 three-digit</code> lunar primes.
+ * A171121 The 81 three-digit lunar primes.
  * @author Georg Fischer
  */
 public class A171121 extends FiniteSequence {

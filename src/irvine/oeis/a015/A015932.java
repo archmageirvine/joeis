@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.math.z.Z;
 
 /**
- * A015932 Positive integers n such that <code>2^n == 2^10 (mod n)</code>.
+ * A015932 Positive integers n such that 2^n == 2^10 (mod n).
  * @author Sean A. Irvine
  */
 public class A015932 extends A015910 {

@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130626 Second differences of <code>A130624</code>.
+ * A130626 Second differences of A130624.
  * @author Georg Fischer
  */
 public class A130626 extends GeneratingFunctionSequence {

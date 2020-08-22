@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201916 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2+(x+2737)^2 = y^2</code>.
+ * A201916 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+2737)^2 = y^2.
  * @author Georg Fischer
  */
 public class A201916 extends GeneratingFunctionSequence {

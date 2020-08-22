@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169684 Decimal expansion of <code>2^107 - 1</code>.
+ * A169684 Decimal expansion of 2^107 - 1.
  * @author Georg Fischer
  */
 public class A169684 extends FiniteSequence {

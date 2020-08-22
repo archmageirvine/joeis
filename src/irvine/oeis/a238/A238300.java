@@ -5,7 +5,7 @@ package irvine.oeis.a238;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238300 Fourth convolution of <code>A107841</code>.
+ * A238300 Fourth convolution of A107841.
  * @author Georg Fischer
  */
 public class A238300 extends HolonomicRecurrence {

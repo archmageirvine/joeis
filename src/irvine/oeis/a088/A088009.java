@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088009 Number of "sets of odd lists", cf. <code>A000262</code>.
+ * A088009 Number of "sets of odd lists", cf. A000262.
  * @author Georg Fischer
  */
 public class A088009 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057681 <code>a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j)</code>.
+ * A057681 a(n) = Sum_{j=0..floor(n/3)} (-1)^j*binomial(n,3*j).
  * @author Georg Fischer
  */
 public class A057681 extends GeneratingFunctionSequence {

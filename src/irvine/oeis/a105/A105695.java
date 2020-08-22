@@ -6,7 +6,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105695 Expansion of <code>(1-x)*c(x/(1+x))</code>, where <code>c(x)</code> is the g.f. of the Catalan numbers <code>(A000108)</code>.
+ * A105695 Expansion of (1-x)*c(x/(1+x)), where c(x) is the g.f. of the Catalan numbers (A000108).
  * @author Georg Fischer
  */
 public class A105695 extends HolonomicRecurrence {

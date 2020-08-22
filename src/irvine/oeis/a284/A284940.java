@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A284940 Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule <code>107"</code>, based on the 5-celled von Neumann neighborhood.
+ * A284940 Binary representation of the diagonal from the corner to the origin of the n-th stage of growth of the two-dimensional cellular automaton defined by "Rule 107", based on the 5-celled von Neumann neighborhood.
  * @author Georg Fischer
  */
 public class A284940 extends GeneratingFunctionSequence {

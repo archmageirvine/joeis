@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292465 <code>a(n) = n*F(n)*F(n+1)</code>, where F <code>= A000045</code>.
+ * A292465 a(n) = n*F(n)*F(n+1), where F = A000045.
  * @author Sean A. Irvine
  */
 public class A292465 extends LinearRecurrence {

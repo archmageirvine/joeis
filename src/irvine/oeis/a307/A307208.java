@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307208 <code>a(n)</code> is the forgotten index of the Fibonacci cube <code>Gamma(n)</code>.
+ * A307208 a(n) is the forgotten index of the Fibonacci cube Gamma(n).
  * @author Georg Fischer
  */
 public class A307208 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172518 Number of ways to place 3 nonattacking queens on an <code>n X n</code> toroidal board.
+ * A172518 Number of ways to place 3 nonattacking queens on an n X n toroidal board.
  * @author Sean A. Irvine
  */
 public class A172518 extends LinearRecurrence {

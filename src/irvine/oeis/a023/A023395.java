@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023395 Only Fermat number divisible by <code>A023394(n)</code> is <code>2^2^a(n) + 1</code>.
+ * A023395 Only Fermat number divisible by A023394(n) is 2^2^a(n) + 1.
  * @author Sean A. Irvine
  */
 public class A023395 implements Sequence {

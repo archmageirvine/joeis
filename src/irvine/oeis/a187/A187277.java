@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187277 Let S denote the palindromes in the language <code>{0,1,2,...,n-1}*; a(n) =</code> number of words of length 4 in the language SS.
+ * A187277 Let S denote the palindromes in the language {0,1,2,...,n-1}*; a(n) = number of words of length 4 in the language SS.
  * @author Georg Fischer
  */
 public class A187277 extends GeneratingFunctionSequence {

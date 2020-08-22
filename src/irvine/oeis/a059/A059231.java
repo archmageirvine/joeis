@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059231 Number of different lattice paths running from <code>(0,0)</code> to <code>(n,0)</code> using steps from S <code>= {(k,k)</code> or <code>(k,-k)</code>: k positive integer} that never go below the <code>x-axis</code>.
+ * A059231 Number of different lattice paths running from (0,0) to (n,0) using steps from S = {(k,k) or (k,-k): k positive integer} that never go below the x-axis.
  * @author Georg Fischer
  */
 public class A059231 extends HolonomicRecurrence {

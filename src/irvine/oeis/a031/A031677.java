@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031677 Numbers n such that continued fraction for <code>sqrt(n)</code> has odd period and central terms 89.
+ * A031677 Numbers n such that continued fraction for sqrt(n) has odd period and central terms 89.
  * @author Sean A. Irvine
  */
 public class A031677 extends A031414 {

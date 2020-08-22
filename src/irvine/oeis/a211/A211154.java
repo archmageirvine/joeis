@@ -5,7 +5,7 @@ import irvine.oeis.GeneratingFunctionSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A211154 Number of <code>2 X 2</code> matrices having all terms in <code>{-n,...,0,..,n}</code> and even determinant.
+ * A211154 Number of 2 X 2 matrices having all terms in {-n,...,0,..,n} and even determinant.
  * @author Georg Fischer
  */
 public class A211154 extends PrependSequence {

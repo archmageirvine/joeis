@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239670 Expansion of <code>1/((1-x)*(1-81*x))</code>.
+ * A239670 Expansion of 1/((1-x)*(1-81*x)).
  * @author Georg Fischer
  */
 public class A239670 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140273 Decimal expansion of <code>180*arctan(3*sqrt(15)/29)/Pi</code>.
+ * A140273 Decimal expansion of 180*arctan(3*sqrt(15)/29)/Pi.
  * @author Georg Fischer
  */
 public class A140273 extends DecimalExpansionSequence {

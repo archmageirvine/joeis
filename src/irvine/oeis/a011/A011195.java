@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011195 <code>a(n) = n*(n+1)*(2*n+1)*(3*n+1)/6</code>.
+ * A011195 a(n) = n*(n+1)*(2*n+1)*(3*n+1)/6.
  * @author Sean A. Irvine
  */
 public class A011195 implements Sequence {

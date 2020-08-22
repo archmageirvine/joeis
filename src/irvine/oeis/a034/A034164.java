@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034164 Related to triple factorial numbers <code>2*A034000(n+1)</code>.
+ * A034164 Related to triple factorial numbers 2*A034000(n+1).
  * @author Georg Fischer
  */
 public class A034164 extends HolonomicRecurrence {

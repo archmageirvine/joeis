@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A006216 Number of down-up permutations of <code>n+4</code> starting with 4.
+ * A006216 Number of down-up permutations of n+4 starting with 4.
  * @author Sean A. Irvine
  */
 public class A006216 extends A000111 {

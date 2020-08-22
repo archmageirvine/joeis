@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062218 Numbers k such that the smoothly undulating palindromic number <code>(35*10^k - 53)/99</code> is a prime.
+ * A062218 Numbers k such that the smoothly undulating palindromic number (35*10^k - 53)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062218 extends PowerFactorPrimeSequence {

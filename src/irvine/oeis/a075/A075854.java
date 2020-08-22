@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A075854 Smallest integer composed of digits <code>1..n</code> such that no subsequence is repeated and every possible subsequence of length 2 appears.
+ * A075854 Smallest integer composed of digits 1..n such that no subsequence is repeated and every possible subsequence of length 2 appears.
  * @author Georg Fischer
  */
 public class A075854 extends FiniteSequence {

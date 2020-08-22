@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226517 Number of <code>(19,14)-reverse</code> multiples with n digits.
+ * A226517 Number of (19,14)-reverse multiples with n digits.
  * @author Georg Fischer
  */
 public class A226517 extends GeneratingFunctionSequence {

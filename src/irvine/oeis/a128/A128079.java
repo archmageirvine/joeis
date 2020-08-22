@@ -5,7 +5,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128079 <code>a(n) = Sum_{k=0..n} A000984(k)*A001263(n+1,k+1)</code>, where <code>A000984</code> is the central binomial coefficients and <code>A001263</code> is the Narayana triangle.
+ * A128079 a(n) = Sum_{k=0..n} A000984(k)*A001263(n+1,k+1), where A000984 is the central binomial coefficients and A001263 is the Narayana triangle.
  * @author Georg Fischer
  */
 public class A128079 extends HolonomicRecurrence {

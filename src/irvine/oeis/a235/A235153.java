@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A235153 Let <code>x(1)x(2)...x(q)</code> the decimal expansion of the numbers k having exactly q distinct prime divisors <code>p(1) &lt; p(2) &lt; ... &lt; p(q)</code>. Sequence lists the numbers k such that <code>p(1)/x(q) + p(2)/x(q-1)+ ... + p(q)/x(1)</code> is an integer.
+ * A235153 Let x(1)x(2)...x(q) the decimal expansion of the numbers k having exactly q distinct prime divisors p(1) &lt; p(2) &lt; ... &lt; p(q). Sequence lists the numbers k such that p(1)/x(q) + p(2)/x(q-1)+ ... + p(q)/x(1) is an integer.
  * @author Georg Fischer
  */
 public class A235153 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049086 Number of tilings of <code>4 X 3n</code> rectangle by <code>1 X 3</code> rectangles. Rotations and reflections are considered distinct tilings.
+ * A049086 Number of tilings of 4 X 3n rectangle by 1 X 3 rectangles. Rotations and reflections are considered distinct tilings.
  * @author Sean A. Irvine
  */
 public class A049086 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a161;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A161755 Number of reduced words of length n in the Weyl group <code>B_10</code>.
+ * A161755 Number of reduced words of length n in the Weyl group B_10.
  * @author Georg Fischer
  */
 public class A161755 extends FiniteSequence {

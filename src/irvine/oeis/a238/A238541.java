@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238541 A fourth-order linear divisibility sequence: <code>a(n) := A(n)/A(1)</code> where <code>A(n) := ( (3^n + 2^n)*(3^(3*n) - 2^(3*n)) )</code>.
+ * A238541 A fourth-order linear divisibility sequence: a(n) := A(n)/A(1) where A(n) := ( (3^n + 2^n)*(3^(3*n) - 2^(3*n)) ).
  * @author Georg Fischer
  */
 public class A238541 extends LinearRecurrence {

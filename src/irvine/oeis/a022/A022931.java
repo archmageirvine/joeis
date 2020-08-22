@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022931 Number of <code>e^m</code> between <code>Pi^n</code> and <code>Pi^(n+1)</code>.
+ * A022931 Number of e^m between Pi^n and Pi^(n+1).
  * @author Sean A. Irvine
  */
 public class A022931 implements Sequence {

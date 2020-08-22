@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272267 The union of centered square numbers <code>(A001844)</code> and centered 9-gonal numbers <code>(A060544)</code>.
+ * A272267 The union of centered square numbers (A001844) and centered 9-gonal numbers (A060544).
  * @author Georg Fischer
  */
 public class A272267 extends GeneratingFunctionSequence {

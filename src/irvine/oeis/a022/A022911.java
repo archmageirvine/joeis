@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A022911 Arrange the nontrivial binomial coefficients <code>C(m,k) (2 &lt;= k &lt;= m/2)</code> in increasing order (not removing duplicates); record the sequence of m's.
+ * A022911 Arrange the nontrivial binomial coefficients C(m,k) (2 &lt;= k &lt;= m/2) in increasing order (not removing duplicates); record the sequence of m's.
  * @author Sean A. Irvine
  */
 public class A022911 implements Sequence {

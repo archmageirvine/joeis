@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A226797 Number of n-digit numbers x such that the digits of <code>x^2</code> occur with frequency 1.
+ * A226797 Number of n-digit numbers x such that the digits of x^2 occur with frequency 1.
  * @author Georg Fischer
  */
 public class A226797 extends PaddingSequence {

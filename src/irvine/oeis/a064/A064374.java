@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064374 Numbers k such that <code>sigma(k) &gt; phi(k)^2</code>.
+ * A064374 Numbers k such that sigma(k) &gt; phi(k)^2.
  * @author Georg Fischer
  */
 public class A064374 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A027720 Palindromes of form <code>k^2 + 1</code>.
+ * A027720 Palindromes of form k^2 + 1.
  * @author Sean A. Irvine
  */
 public class A027720 implements Sequence {

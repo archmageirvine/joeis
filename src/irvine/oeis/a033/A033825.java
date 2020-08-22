@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033825 Finite sequence associated with <code>M24</code>.
+ * A033825 Finite sequence associated with M24.
  * @author Georg Fischer
  */
 public class A033825 extends FiniteSequence {

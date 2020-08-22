@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.English;
 
 /**
- * A130677 Write the English name of <code>2^n</code> and replace each letter with its rank in the alphabet.
+ * A130677 Write the English name of 2^n and replace each letter with its rank in the alphabet.
  * @author Sean A. Irvine
  */
 public class A130677 implements Sequence {

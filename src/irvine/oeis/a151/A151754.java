@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A151754 Number of n-digit numbers that are divisible by <code>5^n</code>.
+ * A151754 Number of n-digit numbers that are divisible by 5^n.
  * @author Sean A. Irvine
  */
 public class A151754 extends LinearRecurrence {

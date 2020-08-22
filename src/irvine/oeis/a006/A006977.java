@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006977 Cellular automaton with Rule <code>230: 000, 001, 010, 011</code>, ..., <code>111 -&gt; 0,1,1,0,0,1,1,1</code>.
+ * A006977 Cellular automaton with Rule 230: 000, 001, 010, 011, ..., 111 -&gt; 0,1,1,0,0,1,1,1.
  * @author Sean A. Irvine
  */
 public class A006977 implements Sequence {

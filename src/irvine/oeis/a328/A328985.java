@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328985 First differences of <code>A328984</code>.
+ * A328985 First differences of A328984.
  * @author Georg Fischer
  */
 public class A328985 extends HolonomicRecurrence {

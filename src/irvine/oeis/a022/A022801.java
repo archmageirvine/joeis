@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a090.A090946;
 
 /**
- * A022801 n-th Lucas number <code>(A000204(n)) + n-th non-Lucas</code> number <code>(A090946(n+1))</code>.
+ * A022801 n-th Lucas number (A000204(n)) + n-th non-Lucas number (A090946(n+1)).
  * @author Sean A. Irvine
  */
 public class A022801 implements Sequence {

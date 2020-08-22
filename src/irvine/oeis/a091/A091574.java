@@ -3,7 +3,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091574 Poincar\u00e9 series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type <code>D_4</code>.
+ * A091574 Poincar\u00e9 series [or Poincare series] of the preprojective algebra of an extended Dynkin diagram of type D_4.
  * @author Sean A. Irvine
  */
 public class A091574 extends LinearRecurrence {

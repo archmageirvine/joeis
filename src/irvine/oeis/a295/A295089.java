@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A295089 <code>a(n) = 3*n^2 + n + 3</code>.
+ * A295089 a(n) = 3*n^2 + n + 3.
  * @author Georg Fischer
  */
 public class A295089 extends LinearRecurrence {

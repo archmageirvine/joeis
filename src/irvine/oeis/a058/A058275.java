@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A058275 Number of connected 5-regular simple graphs on <code>2n</code> vertices with girth at least 4.
+ * A058275 Number of connected 5-regular simple graphs on 2n vertices with girth at least 4.
  * @author Sean A. Irvine
  */
 public class A058275 extends ParallelGenerateGraphsSequence {

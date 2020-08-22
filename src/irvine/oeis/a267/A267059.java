@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A267059 Chess diagrams for rank <code>n</code>.
+ * A267059 Chess diagrams for rank n.
  * @author Georg Fischer
  */
 public class A267059 extends FiniteSequence {

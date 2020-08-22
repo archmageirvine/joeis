@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A138481 Mutually-praising pairs excluding autobiographical numbers <code>A046043</code>. Version <code>1</code>: both numbers in a pair have at most 10 digits.
+ * A138481 Mutually-praising pairs excluding autobiographical numbers A046043. Version 1: both numbers in a pair have at most 10 digits.
  * @author Georg Fischer
  */
 public class A138481 extends FiniteSequence {

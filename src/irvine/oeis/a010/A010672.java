@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A010672 A <code>B_2</code> sequence: <code>a(n) =</code> least value such that sequence increases and pairwise sums of distinct elements are all distinct.
+ * A010672 A B_2 sequence: a(n) = least value such that sequence increases and pairwise sums of distinct elements are all distinct.
  * @author Sean A. Irvine
  */
 public class A010672 extends MemorySequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A051881 Number of subgroups of order n in special orthogonal group <code>SO(3)</code>.
+ * A051881 Number of subgroups of order n in special orthogonal group SO(3).
  * @author Georg Fischer
  */
 public class A051881 extends PaddingSequence {

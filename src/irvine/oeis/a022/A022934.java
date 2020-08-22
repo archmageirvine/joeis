@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022934 Number of <code>2^m</code> between <code>e^n</code> and <code>e^(n+1)</code>.
+ * A022934 Number of 2^m between e^n and e^(n+1).
  * @author Sean A. Irvine
  */
 public class A022934 implements Sequence {

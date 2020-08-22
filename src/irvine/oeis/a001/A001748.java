@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001748 <code>3 *</code> primes.
+ * A001748 3 * primes.
  * @author Sean A. Irvine
  */
 public class A001748 implements Sequence {

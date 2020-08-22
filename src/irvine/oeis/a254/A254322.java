@@ -5,7 +5,7 @@ package irvine.oeis.a254;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254322 E.g.f.: <code>(1-11*x)^(-10/11)</code>.
+ * A254322 E.g.f.: (1-11*x)^(-10/11).
  * @author Georg Fischer
  */
 public class A254322 extends HolonomicRecurrence {

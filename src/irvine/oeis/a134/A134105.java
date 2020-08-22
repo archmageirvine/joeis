@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A134105 Complete list of solutions to <code>y^2 = x^3 + 297;</code> sequence gives x values.
+ * A134105 Complete list of solutions to y^2 = x^3 + 297; sequence gives x values.
  * @author Georg Fischer
  */
 public class A134105 extends FiniteSequence {

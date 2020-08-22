@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024396 <code>a(n) = (</code> Product <code>{k = 1..n} 3*k - 1 ) * (</code> Sum <code>{k = 1..n} (-1)^(k+1)/(3*k - 1) )</code>.
+ * A024396 a(n) = ( Product {k = 1..n} 3*k - 1 ) * ( Sum {k = 1..n} (-1)^(k+1)/(3*k - 1) ).
  * @author Sean A. Irvine
  */
 public class A024396 implements Sequence {

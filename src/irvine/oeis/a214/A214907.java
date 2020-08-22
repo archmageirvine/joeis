@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214907 Number of <code>3 X 3 X 3</code> triangular <code>0..n</code> arrays with every horizontal row nondecreasing and having the same average value.
+ * A214907 Number of 3 X 3 X 3 triangular 0..n arrays with every horizontal row nondecreasing and having the same average value.
  * @author Georg Fischer
  */
 public class A214907 extends GeneratingFunctionSequence {

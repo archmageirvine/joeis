@@ -5,7 +5,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130429 List of all numbers n such that n is equal to the number of <code>7</code>'s in the decimal digits of all numbers <code>&lt;= n</code>.
+ * A130429 List of all numbers n such that n is equal to the number of 7's in the decimal digits of all numbers &lt;= n.
  * @author Georg Fischer
  */
 public class A130429 extends FiniteSequence {

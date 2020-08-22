@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138333 <code>C(n+9, 9)*(n+5)*(-1)^(n+1)*256/5</code>.
+ * A138333 C(n+9, 9)*(n+5)*(-1)^(n+1)*256/5.
  * @author Georg Fischer
  */
 public class A138333 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202195 Number of <code>(n+2) X 3</code> binary arrays avoiding patterns 001 and 101 in rows and columns.
+ * A202195 Number of (n+2) X 3 binary arrays avoiding patterns 001 and 101 in rows and columns.
  * @author Georg Fischer
  */
 public class A202195 extends GeneratingFunctionSequence {

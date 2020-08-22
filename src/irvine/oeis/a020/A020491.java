@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020491 Numbers k such that <code>sigma_0(k)</code> divides <code>phi(k)</code>.
+ * A020491 Numbers k such that sigma_0(k) divides phi(k).
  * @author Sean A. Irvine
  */
 public class A020491 implements Sequence {

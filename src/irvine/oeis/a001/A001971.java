@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001971 Nearest integer to <code>n^2/8</code>.
+ * A001971 Nearest integer to n^2/8.
  * @author Sean A. Irvine
  */
 public class A001971 implements Sequence {

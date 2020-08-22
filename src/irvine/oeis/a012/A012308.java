@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012308 Expansion of e.g.f. <code>cos(arcsin(x)*log(x+1))=1-12/4!*x^4+60/5!*x^5-450/6!*x^6+2940/7!*x^7..</code>.
+ * A012308 Expansion of e.g.f. cos(arcsin(x)*log(x+1))=1-12/4!*x^4+60/5!*x^5-450/6!*x^6+2940/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A012308 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.q.Rationals;
 import irvine.math.q.Q;
 
 /**
- * A002206 Numerators of logarithmic numbers (also of Gregory coefficients <code>G(n))</code>.
+ * A002206 Numerators of logarithmic numbers (also of Gregory coefficients G(n)).
  * @author Sean A. Irvine
  */
 public class A002206 implements Sequence {

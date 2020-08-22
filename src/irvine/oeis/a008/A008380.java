@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008380 <code>4*(2n-1)!*H(2n)</code>, where <code>H(n) =</code> Sum <code>1/i</code> are harmonic numbers.
+ * A008380 4*(2n-1)!*H(2n), where H(n) = Sum 1/i are harmonic numbers.
  * @author Sean A. Irvine
  */
 public class A008380 implements Sequence {

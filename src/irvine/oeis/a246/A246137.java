@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A246137 Number of maximal classes determined by elementary Abelian <code>p-groups</code>.
+ * A246137 Number of maximal classes determined by elementary Abelian p-groups.
  * @author Sean A. Irvine
  */
 public class A246137 implements Sequence {

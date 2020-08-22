@@ -5,7 +5,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179820 <code>a(n) = n-th</code> triangular number <code>mod (n+2)</code>.
+ * A179820 a(n) = n-th triangular number mod (n+2).
  * @author Georg Fischer
  */
 public class A179820 extends HolonomicRecurrence {

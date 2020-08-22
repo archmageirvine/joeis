@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271662 Convolution of nonzero pentagonal numbers <code>(A000326)</code> with themselves.
+ * A271662 Convolution of nonzero pentagonal numbers (A000326) with themselves.
  * @author Sean A. Irvine
  */
 public class A271662 extends LinearRecurrence {

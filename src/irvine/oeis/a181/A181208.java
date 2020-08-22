@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181208 Number of <code>n X 4</code> binary matrices with no two <code>1</code>'s adjacent diagonally or antidiagonally.
+ * A181208 Number of n X 4 binary matrices with no two 1's adjacent diagonally or antidiagonally.
  * @author Georg Fischer
  */
 public class A181208 extends GeneratingFunctionSequence {

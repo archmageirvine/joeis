@@ -4,7 +4,7 @@ package irvine.oeis.a083;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A083885 <code>(4^n+2^n+0^n+(-2)^n)/4</code>.
+ * A083885 (4^n+2^n+0^n+(-2)^n)/4.
  * @author Georg Fischer
  */
 public class A083885 extends GeneratingFunctionSequence {

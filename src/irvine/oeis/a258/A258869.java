@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A258869 Expansion of 1 to the basis <code>1.880000478655... (A127583)</code>.
+ * A258869 Expansion of 1 to the basis 1.880000478655... (A127583).
  * @author Georg Fischer
  */
 public class A258869 extends GeneratingFunctionSequence {

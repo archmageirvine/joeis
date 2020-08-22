@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a054.A054552;
 
 /**
- * A033293 A Connell-like sequence: take 1 number <code>= 1 (mod Q), 2</code> numbers <code>= 2 (mod Q), 3</code> numbers <code>= 3 (mod Q)</code>, etc., where Q <code>= 8</code>.
+ * A033293 A Connell-like sequence: take 1 number = 1 (mod Q), 2 numbers = 2 (mod Q), 3 numbers = 3 (mod Q), etc., where Q = 8.
  * @author Sean A. Irvine
  */
 public class A033293 extends A054552 {

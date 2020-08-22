@@ -6,7 +6,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129173 Total area below all skew Dyck paths of semilength <code>n</code>.
+ * A129173 Total area below all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A129173 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206568 Expand <code>1/(8 - 8 x + 3 x^3 - 2 x^4)</code> in powers of x, then multiply coefficient of <code>x^n</code> by <code>8^(1 + floor(n/3))</code> to get integers.
+ * A206568 Expand 1/(8 - 8 x + 3 x^3 - 2 x^4) in powers of x, then multiply coefficient of x^n by 8^(1 + floor(n/3)) to get integers.
  * @author Georg Fischer
  */
 public class A206568 extends GeneratingFunctionSequence {

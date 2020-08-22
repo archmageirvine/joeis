@@ -6,7 +6,7 @@ import irvine.oeis.PositionSequence;
 
 
 /**
- * A188259 Positions of 1 in <code>A188257;</code> complement of <code>A188258</code>.
+ * A188259 Positions of 1 in A188257; complement of A188258.
  * @author Georg Fischer
  */
 public class A188259 extends PositionSequence {

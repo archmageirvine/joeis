@@ -3,7 +3,7 @@ package irvine.oeis.a077;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A077447 Numbers n such that <code>(n^2 - 14)/2</code> is a square.
+ * A077447 Numbers n such that (n^2 - 14)/2 is a square.
  * @author Sean A. Irvine
  */
 public class A077447 extends LinearRecurrence {

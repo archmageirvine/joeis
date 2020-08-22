@@ -4,7 +4,7 @@ import irvine.oeis.HalfConvolutionSequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A025129 <code>a(n) = p(1)p(n) + p(2)p(n-1) + ... + p(k)p(n-k+1)</code>, where k <code>= [ n/2 ], p = A000040</code>, the primes.
+ * A025129 a(n) = p(1)p(n) + p(2)p(n-1) + ... + p(k)p(n-k+1), where k = [ n/2 ], p = A000040, the primes.
  * @author Sean A. Irvine
  */
 public class A025129 extends HalfConvolutionSequence {

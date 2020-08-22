@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054460 <code>A001333(n), n &gt;= 1</code>, convolved twice with itself.
+ * A054460 A001333(n), n &gt;= 1, convolved twice with itself.
  * @author Georg Fischer
  */
 public class A054460 extends GeneratingFunctionSequence {

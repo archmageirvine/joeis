@@ -5,7 +5,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091629 Product of digits associated with <code>A091628(n)</code>. Essentially the same as <code>A007283</code>.
+ * A091629 Product of digits associated with A091628(n). Essentially the same as A007283.
  * @author Georg Fischer
  */
 public class A091629 extends HolonomicRecurrence {

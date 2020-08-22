@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172261 Number of ways to place 8 nonattacking kings on an <code>8 X n</code> board.
+ * A172261 Number of ways to place 8 nonattacking kings on an 8 X n board.
  * @author Georg Fischer
  */
 public class A172261 extends GeneratingFunctionSequence {

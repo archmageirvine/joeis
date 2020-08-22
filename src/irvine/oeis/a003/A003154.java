@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003154 Centered 12-gonal numbers. Also star numbers: <code>6*n*(n-1) + 1</code>.
+ * A003154 Centered 12-gonal numbers. Also star numbers: 6*n*(n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A003154 implements Sequence {

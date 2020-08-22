@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086950 Binomial transform of decagonal numbers <code>A001107</code>.
+ * A086950 Binomial transform of decagonal numbers A001107.
  * @author Sean A. Irvine
  */
 public class A086950 extends LinearRecurrence {

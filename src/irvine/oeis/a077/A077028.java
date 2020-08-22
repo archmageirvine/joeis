@@ -7,7 +7,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A077028 The rascal triangle, read by rows: <code>T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) = k(n-k) + 1</code>.
+ * A077028 The rascal triangle, read by rows: T(n,k) (n &gt;= 0, 0 &lt;= k &lt;= n) = k(n-k) + 1.
  * @author Georg Fischer
  */
 public class A077028 extends GeneratingFunctionTriangle {

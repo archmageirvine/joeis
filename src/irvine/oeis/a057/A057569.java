@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057569 Numbers of the form <code>k*(5*k+1)/2</code> or <code>k*(5*k-1)/2</code>.
+ * A057569 Numbers of the form k*(5*k+1)/2 or k*(5*k-1)/2.
  * @author Sean A. Irvine
  */
 public class A057569 extends LinearRecurrence {

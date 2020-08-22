@@ -7,7 +7,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A072405 Triangle of <code>C(n,k)-C(n-2,k-1)</code>.
+ * A072405 Triangle of C(n,k)-C(n-2,k-1).
  * @author Georg Fischer
  */
 public class A072405 extends GeneratingFunctionTriangle {

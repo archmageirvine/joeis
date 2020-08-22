@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109094 Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in <code>K_n</code>, the complete graph on n vertices.
+ * A109094 Length of the longest path (repeated edges not allowed) between two arbitrary, distinct nodes in K_n, the complete graph on n vertices.
  * @author Georg Fischer
  */
 public class A109094 extends GeneratingFunctionSequence {

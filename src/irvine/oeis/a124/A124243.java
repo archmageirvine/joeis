@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A124243 Expansion of <code>q*psi(q^9)/psi(q)</code> in powers of q.
+ * A124243 Expansion of q*psi(q^9)/psi(q) in powers of q.
  * @author Georg Fischer
  */
 public class A124243 extends EulerTransform {

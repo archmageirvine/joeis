@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A233766 Digital root of Lucas numbers <code>(A030133)</code> indexed by natural numbers not divisible by <code>2, 3</code> or <code>5 (A007775)</code>.
+ * A233766 Digital root of Lucas numbers (A030133) indexed by natural numbers not divisible by 2, 3 or 5 (A007775).
  * @author Georg Fischer
  */
 public class A233766 extends PaddingSequence {

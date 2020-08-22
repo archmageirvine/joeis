@@ -1,7 +1,7 @@
 package irvine.oeis.a011;
 
 /**
- * A011530 Stirling numbers of first kind <code>S1(20,n)</code>.
+ * A011530 Stirling numbers of first kind S1(20,n).
  * @author Sean A. Irvine
  */
 public class A011530 extends A011520 {

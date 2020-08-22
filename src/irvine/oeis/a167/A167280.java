@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A167280 Period length <code>12: 0,0,1,2,4,7,4,8,7,4,8,5</code> (and repeat).
+ * A167280 Period length 12: 0,0,1,2,4,7,4,8,7,4,8,5 (and repeat).
  * @author Georg Fischer
  */
 public class A167280 extends PaddingSequence {

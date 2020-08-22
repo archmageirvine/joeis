@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173151 <code>a(n) = a(n-1) - [a(n-1)/2] + a(n-2) - [a(n-5)/2]</code> where <code>[k] = floor(k)</code>.
+ * A173151 a(n) = a(n-1) - [a(n-1)/2] + a(n-2) - [a(n-5)/2] where [k] = floor(k).
  * @author Georg Fischer
  */
 public class A173151 extends GeneratingFunctionSequence {

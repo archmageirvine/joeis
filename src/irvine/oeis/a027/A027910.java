@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027910 <code>T(2n,n-2)</code>, T given by <code>A027907</code>.
+ * A027910 T(2n,n-2), T given by A027907.
  * @author Sean A. Irvine
  */
 public class A027910 implements Sequence {

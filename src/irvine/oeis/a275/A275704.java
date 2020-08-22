@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275704 Digital root of <code>n + (n+1)^2</code>.
+ * A275704 Digital root of n + (n+1)^2.
  * @author Georg Fischer
  */
 public class A275704 extends GeneratingFunctionSequence {

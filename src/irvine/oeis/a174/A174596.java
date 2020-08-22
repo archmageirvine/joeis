@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A174596 Numbers k such that, taken together, the <code>base-10</code> and base-b expansions of k are pandigital for some b <code>&lt; 10</code>.
+ * A174596 Numbers k such that, taken together, the base-10 and base-b expansions of k are pandigital for some b &lt; 10.
  * @author Georg Fischer
  */
 public class A174596 extends FiniteSequence {

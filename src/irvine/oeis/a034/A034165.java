@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034165 Number of <code>'zig-zag' self-avoiding</code> walks on an <code>n X n</code> lattice from a corner to opposite one.
+ * A034165 Number of 'zig-zag' self-avoiding walks on an n X n lattice from a corner to opposite one.
  * @author Sean A. Irvine
  */
 public class A034165 implements Sequence {

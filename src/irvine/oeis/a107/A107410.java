@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107410 Each term is sum of three previous terms <code>mod 9</code>.
+ * A107410 Each term is sum of three previous terms mod 9.
  * @author Sean A. Irvine
  */
 public class A107410 extends LinearRecurrence {

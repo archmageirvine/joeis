@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187854 Number of <code>6-step king-knight</code>'s tours (piece capable of both kinds of moves) on an <code>n X n</code> board summed over all starting positions.
+ * A187854 Number of 6-step king-knight's tours (piece capable of both kinds of moves) on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187854 extends GeneratingFunctionSequence {

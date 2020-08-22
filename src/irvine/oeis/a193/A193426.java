@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A193426 Expansion of <code>(a(q^2) + a(q^3) - 2*a(q^6)) / 6</code> in powers of q where <code>a()</code> is a cubic AGM function.
+ * A193426 Expansion of (a(q^2) + a(q^3) - 2*a(q^6)) / 6 in powers of q where a() is a cubic AGM function.
  * @author Georg Fischer
  */
 public class A193426 extends EulerTransform {

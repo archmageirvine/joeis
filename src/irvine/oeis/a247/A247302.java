@@ -6,7 +6,7 @@ package irvine.oeis.a247;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A247302 Rectangular array read upwards by columns: T <code>= T(n,k) =</code> number of paths from <code>(0,1)</code> to <code>(n,k)</code>, where <code>0 &gt;= k &lt;= 2</code>, consisting of segments given by the vectors <code>(1,1), (2,1), (1,-1)</code>.
+ * A247302 Rectangular array read upwards by columns: T = T(n,k) = number of paths from (0,1) to (n,k), where 0 &gt;= k &lt;= 2, consisting of segments given by the vectors (1,1), (2,1), (1,-1).
  * @author Georg Fischer
  */
 public class A247302 extends HolonomicRecurrence {

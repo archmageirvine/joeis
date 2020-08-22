@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325688 Number of <code>length-3</code> compositions of n such that every distinct consecutive subsequence has a different sum.
+ * A325688 Number of length-3 compositions of n such that every distinct consecutive subsequence has a different sum.
  * @author Georg Fischer
  */
 public class A325688 extends HolonomicRecurrence {

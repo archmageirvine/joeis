@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129164 Sum of pyramid weights in all skew Dyck paths of semilength <code>n</code>.
+ * A129164 Sum of pyramid weights in all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A129164 extends HolonomicRecurrence {

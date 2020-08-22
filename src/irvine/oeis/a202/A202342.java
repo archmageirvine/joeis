@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005374;
 
 /**
- * A202342 Numbers occurring exactly twice in Hofstadter <code>H-sequence A005374</code>.
+ * A202342 Numbers occurring exactly twice in Hofstadter H-sequence A005374.
  * @author Sean A. Irvine
  */
 public class A202342 extends A005374 {

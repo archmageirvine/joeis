@@ -6,7 +6,7 @@ package irvine.oeis.a253;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A253487 Number of lattice paths of <code>2*n+2</code> steps in the first quadrant from <code>(0,0)</code> to <code>(n,n)</code>.
+ * A253487 Number of lattice paths of 2*n+2 steps in the first quadrant from (0,0) to (n,n).
  * @author Georg Fischer
  */
 public class A253487 extends HolonomicRecurrence {

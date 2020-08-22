@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289797 p-INVERT of the triangular numbers <code>(A000217)</code>, where <code>p(S) = 1 - S - S^2</code>.
+ * A289797 p-INVERT of the triangular numbers (A000217), where p(S) = 1 - S - S^2.
  * @author Sean A. Irvine
  */
 public class A289797 extends LinearRecurrence {

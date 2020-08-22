@@ -5,7 +5,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189790 Number of ways to place n nonattacking bishops on an <code>n x n</code> toroidal board.
+ * A189790 Number of ways to place n nonattacking bishops on an n x n toroidal board.
  * @author Georg Fischer
  */
 public class A189790 extends HolonomicRecurrence {

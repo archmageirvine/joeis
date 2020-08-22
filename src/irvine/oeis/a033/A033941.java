@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A033941 Number of ways <code>A002808(n)</code> can be properly factored into 2 integers.
+ * A033941 Number of ways A002808(n) can be properly factored into 2 integers.
  * @author Sean A. Irvine
  */
 public class A033941 extends A002808 {

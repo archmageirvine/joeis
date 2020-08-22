@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002113;
 
 /**
- * A032750 Palindromic <code>Super-2</code> Numbers.
+ * A032750 Palindromic Super-2 Numbers.
  * @author Sean A. Irvine
  */
 public class A032750 extends A002113 {

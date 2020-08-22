@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A259679 Lampard's constant, decimal expansion of <code>log(2)/(4*Pi^2)</code>.
+ * A259679 Lampard's constant, decimal expansion of log(2)/(4*Pi^2).
  * @author Georg Fischer
  */
 public class A259679 extends DecimalExpansionSequence {

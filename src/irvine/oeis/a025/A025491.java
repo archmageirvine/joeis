@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000032;
 
 /**
- * A025491 In base <code>11, a(n) =</code> sum of digits of <code>Lucas(a(n))</code>.
+ * A025491 In base 11, a(n) = sum of digits of Lucas(a(n)).
  * @author Sean A. Irvine
  */
 public class A025491 extends A000032 {

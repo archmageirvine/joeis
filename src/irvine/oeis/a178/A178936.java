@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178936 <code>Floor((2*3^n+3*2^n)/5)</code>.
+ * A178936 Floor((2*3^n+3*2^n)/5).
  * @author Sean A. Irvine
  */
 public class A178936 extends LinearRecurrence {

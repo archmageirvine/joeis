@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033677 Smallest divisor of <code>n &gt;= sqrt(n)</code>.
+ * A033677 Smallest divisor of n &gt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A033677 extends A033676 {

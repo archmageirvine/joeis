@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032704 n prefixed by <code>'4'</code> and followed by <code>'1'</code> is prime.
+ * A032704 n prefixed by '4' and followed by '1' is prime.
  * @author Sean A. Irvine
  */
 public class A032704 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141407 <code>a(n) = binomial(n+7,7)*6^n</code>.
+ * A141407 a(n) = binomial(n+7,7)*6^n.
  * @author Georg Fischer
  */
 public class A141407 extends GeneratingFunctionSequence {

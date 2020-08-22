@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305061 <code>a(n) = 20*2^n + 14</code>.
+ * A305061 a(n) = 20*2^n + 14.
  * @author Georg Fischer
  */
 public class A305061 extends GeneratingFunctionSequence {

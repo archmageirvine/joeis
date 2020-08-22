@@ -4,7 +4,7 @@ package irvine.oeis.a196;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A196410 <code>a(n) = n*2^(n-5)</code>.
+ * A196410 a(n) = n*2^(n-5).
  * @author Georg Fischer
  */
 public class A196410 extends GeneratingFunctionSequence {

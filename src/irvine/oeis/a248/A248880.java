@@ -4,7 +4,7 @@ package irvine.oeis.a248;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A248880 Number of tilings of an <code>n X 1</code> rectangle by tiles of dimension <code>1 X 1</code> and <code>2 X 1</code> such that every tile shares an equal-length edge with a tile of the same size.
+ * A248880 Number of tilings of an n X 1 rectangle by tiles of dimension 1 X 1 and 2 X 1 such that every tile shares an equal-length edge with a tile of the same size.
  * @author Georg Fischer
  */
 public class A248880 extends GeneratingFunctionSequence {

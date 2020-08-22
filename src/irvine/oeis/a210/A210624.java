@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A210624 Decimal expansion of <code>(7/83)^(2/9)</code>.
+ * A210624 Decimal expansion of (7/83)^(2/9).
  * @author Georg Fischer
  */
 public class A210624 extends DecimalExpansionSequence {

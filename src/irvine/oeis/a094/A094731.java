@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094731 Number of connected ordered 4-element multiantichains on a labeled <code>n-set</code>.
+ * A094731 Number of connected ordered 4-element multiantichains on a labeled n-set.
  * @author Georg Fischer
  */
 public class A094731 extends HolonomicRecurrence {

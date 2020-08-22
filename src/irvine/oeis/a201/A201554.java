@@ -5,7 +5,7 @@ package irvine.oeis.a201;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A201554 Number of arrays of 7 integers in <code>-n..n</code> with sum zero.
+ * A201554 Number of arrays of 7 integers in -n..n with sum zero.
  * @author Georg Fischer
  */
 public class A201554 extends HolonomicRecurrence {

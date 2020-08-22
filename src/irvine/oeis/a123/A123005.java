@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123005 G.f. <code>x^2/(1-2*x-49*x^2)</code>.
+ * A123005 G.f. x^2/(1-2*x-49*x^2).
  * @author Georg Fischer
  */
 public class A123005 extends GeneratingFunctionSequence {

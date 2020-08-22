@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A002618 <code>a(n) = n*phi(n)</code>.
+ * A002618 a(n) = n*phi(n).
  * @author Sean A. Irvine
  */
 public class A002618 extends A000010 {

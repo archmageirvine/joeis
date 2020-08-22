@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A172290 Prime divisors of <code>2^1092-1</code>, listed with multiplicities.
+ * A172290 Prime divisors of 2^1092-1, listed with multiplicities.
  * @author Georg Fischer
  */
 public class A172290 extends FiniteSequence {

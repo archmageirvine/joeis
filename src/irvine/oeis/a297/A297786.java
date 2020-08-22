@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A297786 Decimal expansion of <code>10980011/999^3</code>.
+ * A297786 Decimal expansion of 10980011/999^3.
  * @author Georg Fischer
  */
 public class A297786 extends DecimalExpansionSequence {

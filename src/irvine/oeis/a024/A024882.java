@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a023.A023531;
 
 /**
- * A024882 <code>a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1)</code>, where k <code>= [ n/2 ], s = A023531, t =</code> (Lucas numbers).
+ * A024882 a(n) = s(1)t(n) + s(2)t(n-1) + ... + s(k)t(n-k+1), where k = [ n/2 ], s = A023531, t = (Lucas numbers).
  * @author Sean A. Irvine
  */
 public class A024882 extends HalfConvolutionSequence {

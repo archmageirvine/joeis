@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140300 <code>a(n) = 1024^n</code>.
+ * A140300 a(n) = 1024^n.
  * @author Georg Fischer
  */
 public class A140300 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027701 Primes with even number of <code>1</code>'s in binary expansion such that next prime also has even number of <code>1</code>'s.
+ * A027701 Primes with even number of 1's in binary expansion such that next prime also has even number of 1's.
  * @author Sean A. Irvine
  */
 public class A027701 implements Sequence {

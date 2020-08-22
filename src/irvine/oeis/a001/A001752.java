@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001752 Expansion of <code>1/((1+x)*(1-x)^5)</code>.
+ * A001752 Expansion of 1/((1+x)*(1-x)^5).
  * @author Sean A. Irvine
  */
 public class A001752 implements Sequence {

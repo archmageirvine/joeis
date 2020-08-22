@@ -4,7 +4,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A072381 Numbers n such that <code>Fibonacci(n)</code> is a semiprime.
+ * A072381 Numbers n such that Fibonacci(n) is a semiprime.
  * @author Sean A. Irvine
  */
 public class A072381 extends SemiprimeSequence {

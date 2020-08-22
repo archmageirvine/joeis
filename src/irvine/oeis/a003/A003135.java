@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * A003135 <code>n!</code> is a nontrivial product of factorials. It is conjectured that the list is complete.
+ * A003135 n! is a nontrivial product of factorials. It is conjectured that the list is complete.
  * @author Sean A. Irvine
  */
 public class A003135 implements Sequence {

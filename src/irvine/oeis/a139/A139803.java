@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139803 <code>A033875(n) + 2^a(n) = A033875(n+1)</code>.
+ * A139803 A033875(n) + 2^a(n) = A033875(n+1).
  * @author Sean A. Irvine
  */
 public class A139803 implements Sequence {

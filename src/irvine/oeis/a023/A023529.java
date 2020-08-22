@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A023529 Sum of distinct prime divisors of <code>p(n)*p(n-1) + 1</code>.
+ * A023529 Sum of distinct prime divisors of p(n)*p(n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A023529 extends A023523 {

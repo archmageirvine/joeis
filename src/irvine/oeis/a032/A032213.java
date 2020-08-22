@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032213 Shifts left under "DFJ" <code>(bracelet</code>, size, labeled) transform.
+ * A032213 Shifts left under "DFJ" (bracelet, size, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032213 extends MemorySequence {

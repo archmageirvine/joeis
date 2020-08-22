@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012595 <code>sech(arcsinh(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-15/4!*x^4+60/5!*x^5..</code>.
+ * A012595 sech(arcsinh(x)*exp(x))=1-1/2!*x^2-6/3!*x^3-15/4!*x^4+60/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012595 implements Sequence {

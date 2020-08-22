@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188732 Decimal expansion of <code>(5+sqrt(61))/6</code>.
+ * A188732 Decimal expansion of (5+sqrt(61))/6.
  * @author Georg Fischer
  */
 public class A188732 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a046;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A046854 Triangle in which k-th entry of row n is <code>binomial(floor((n+k)/2), k), n&gt;=0, n &gt;= k &gt;= 0</code>.
+ * A046854 Triangle in which k-th entry of row n is binomial(floor((n+k)/2), k), n&gt;=0, n &gt;= k &gt;= 0.
  * @author Georg Fischer
  */
 public class A046854 extends GeneratingFunctionTriangle {

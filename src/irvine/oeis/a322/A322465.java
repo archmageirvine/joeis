@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322465 Numbers on the <code>0-9-10-line</code> in a spiral on an equilateral triangular lattice.
+ * A322465 Numbers on the 0-9-10-line in a spiral on an equilateral triangular lattice.
  * @author Georg Fischer
  */
 public class A322465 extends GeneratingFunctionSequence {

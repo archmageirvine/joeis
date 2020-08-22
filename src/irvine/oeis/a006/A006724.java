@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006724 Number of fixed <code>n-celled self-avoiding</code> polygons on square lattice.
+ * A006724 Number of fixed n-celled self-avoiding polygons on square lattice.
  * @author Sean A. Irvine
  */
 public class A006724 implements Sequence {

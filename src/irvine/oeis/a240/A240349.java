@@ -5,7 +5,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240349 Inverse of <code>59th</code> cyclotomic polynomial.
+ * A240349 Inverse of 59th cyclotomic polynomial.
  * @author Georg Fischer
  */
 public class A240349 extends HolonomicRecurrence {

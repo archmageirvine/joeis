@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032536 Integer part of decimal <code>'base-3</code> looking' numbers divided by their actual <code>base-3</code> values.
+ * A032536 Integer part of decimal 'base-3 looking' numbers divided by their actual base-3 values.
  * @author Sean A. Irvine
  */
 public class A032536 implements Sequence {

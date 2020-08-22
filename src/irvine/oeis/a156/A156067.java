@@ -4,7 +4,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156067 <code>a(0)=1. a(n)= -2^(n-1)-3*(-1)^n, n&gt;1</code>.
+ * A156067 a(0)=1. a(n)= -2^(n-1)-3*(-1)^n, n&gt;1.
  * @author Georg Fischer
  */
 public class A156067 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110159 <code>a(n) = (n+1)(n+2)(n+3)(9n^2 + 26n + 20)/120</code>.
+ * A110159 a(n) = (n+1)(n+2)(n+3)(9n^2 + 26n + 20)/120.
  * @author Georg Fischer
  */
 public class A110159 extends GeneratingFunctionSequence {

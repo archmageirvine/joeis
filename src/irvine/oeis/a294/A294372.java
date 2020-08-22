@@ -5,7 +5,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294372 Expansion of <code>(1-x)^4/(x^2 + 4*x + 1)</code>.
+ * A294372 Expansion of (1-x)^4/(x^2 + 4*x + 1).
  * @author Georg Fischer
  */
 public class A294372 extends HolonomicRecurrence {

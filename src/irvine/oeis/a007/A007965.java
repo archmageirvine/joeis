@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007965 <code>a(n) = n^prime(n) - prime(n)^n</code>.
+ * A007965 a(n) = n^prime(n) - prime(n)^n.
  * @author Sean A. Irvine
  */
 public class A007965 implements Sequence {

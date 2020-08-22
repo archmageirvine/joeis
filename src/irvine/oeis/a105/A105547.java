@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A105547 Hamming weight distribution of code obtained by lifting Golay code of length 24 to <code>Z/4Z</code>.
+ * A105547 Hamming weight distribution of code obtained by lifting Golay code of length 24 to Z/4Z.
  * @author Georg Fischer
  */
 public class A105547 extends FiniteSequence {

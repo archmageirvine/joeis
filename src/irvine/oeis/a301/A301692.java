@@ -5,7 +5,7 @@ package irvine.oeis.a301;
 import org.teherba.tile.TilingSequence;
 
 /**
- * A301692 Coordination sequence for node of type <code>V2</code> in "krf" 2-D tiling (or net).
+ * A301692 Coordination sequence for node of type V2 in "krf" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301692 extends TilingSequence {

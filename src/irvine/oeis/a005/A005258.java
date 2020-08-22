@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005258 Ap\u00e9ry numbers: <code>a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k)</code>.
+ * A005258 Ap\u00e9ry numbers: a(n) = Sum_{k=0..n} binomial(n,k)^2 * binomial(n+k,k).
  * @author Sean A. Irvine
  */
 public class A005258 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305724 Crystal ball sequence for the lattice <code>C_10</code>.
+ * A305724 Crystal ball sequence for the lattice C_10.
  * @author Georg Fischer
  */
 public class A305724 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023970 First bit in fractional part of binary expansion of cube root of <code>n</code>.
+ * A023970 First bit in fractional part of binary expansion of cube root of n.
  * @author Sean A. Irvine
  */
 public class A023970 implements Sequence {

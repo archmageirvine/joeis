@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000614 Complemented types of Boolean functions of n variables under action of <code>AG(n,2)</code>.
+ * A000614 Complemented types of Boolean functions of n variables under action of AG(n,2).
  * @author Sean A. Irvine
  */
 public class A000614 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A301973 <code>a(n) = (n^2 - 3*n + 6)*binomial(n+2,3)/4</code>.
+ * A301973 a(n) = (n^2 - 3*n + 6)*binomial(n+2,3)/4.
  * @author Georg Fischer
  */
 public class A301973 extends LinearRecurrence {

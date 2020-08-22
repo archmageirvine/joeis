@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A014073 Number of vectors abcdefg with a,b,... <code>&gt;= 0, a+...+g=n, a&gt;={b,...g}</code>.
+ * A014073 Number of vectors abcdefg with a,b,... &gt;= 0, a+...+g=n, a&gt;={b,...g}.
  * @author Sean A. Irvine
  */
 public class A014073 extends GeneratingFunctionSequence {

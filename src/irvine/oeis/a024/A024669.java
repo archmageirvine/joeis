@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003325;
 
 /**
- * A024669 Position of <code>n^3 + (n+1)^3</code> in <code>A003325</code>.
+ * A024669 Position of n^3 + (n+1)^3 in A003325.
  * @author Sean A. Irvine
  */
 public class A024669 extends A003325 {

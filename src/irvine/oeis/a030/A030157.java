@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030157 Even numbers n such that in <code>n^2</code> the parity of digits alternates.
+ * A030157 Even numbers n such that in n^2 the parity of digits alternates.
  * @author Sean A. Irvine
  */
 public class A030157 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059605 <code>a(n) = (1/3!)*(n^3 + 24*n^2 + 107*n + 90)</code>, compare <code>A059604</code>.
+ * A059605 a(n) = (1/3!)*(n^3 + 24*n^2 + 107*n + 90), compare A059604.
  * @author Georg Fischer
  */
 public class A059605 extends GeneratingFunctionSequence {

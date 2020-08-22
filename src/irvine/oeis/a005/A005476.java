@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005476 <code>a(n) = n*(5*n - 1)/2</code>.
+ * A005476 a(n) = n*(5*n - 1)/2.
  * @author Sean A. Irvine
  */
 public class A005476 implements Sequence {

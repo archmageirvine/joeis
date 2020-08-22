@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301728 <code>a(0)=1;</code> thereafter, <code>a(n) = 2n-1</code> if <code>n == 0 (mod 3), (5n+1)/3</code> if <code>n == 1 (mod 3), (5n+2)/3</code> if <code>n == 2 (mod 3)</code>.
+ * A301728 a(0)=1; thereafter, a(n) = 2n-1 if n == 0 (mod 3), (5n+1)/3 if n == 1 (mod 3), (5n+2)/3 if n == 2 (mod 3).
  * @author Georg Fischer
  */
 public class A301728 extends GeneratingFunctionSequence {

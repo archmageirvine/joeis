@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172519 Number of ways to place 4 nonattacking queens on an <code>n X n</code> toroidal board.
+ * A172519 Number of ways to place 4 nonattacking queens on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A172519 extends GeneratingFunctionSequence {

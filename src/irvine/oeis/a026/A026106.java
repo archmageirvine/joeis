@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002212;
 import irvine.oeis.a007.A007317;
 
 /**
- * A026106 Number of polyhexes of class <code>PF2</code> (with one catafusene annealated to pyrene).
+ * A026106 Number of polyhexes of class PF2 (with one catafusene annealated to pyrene).
  * @author Sean A. Irvine
  */
 public class A026106 extends A002212 {

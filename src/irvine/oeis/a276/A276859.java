@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a022.A022843;
 
 /**
- * A276859 First differences of the Beatty sequence <code>A022843</code> for e.
+ * A276859 First differences of the Beatty sequence A022843 for e.
  * @author Georg Fischer
  */
 public class A276859 extends DifferenceSequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A135089 <code>T(n,k) = 5*binomial(n,k), n&gt;0, (0&lt;=k&lt;=n)</code>.
+ * A135089 T(n,k) = 5*binomial(n,k), n&gt;0, (0&lt;=k&lt;=n).
  * @author Georg Fischer
  */
 public class A135089 extends GeneratingFunctionTriangle {

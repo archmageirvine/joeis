@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088984 <code>a(n) = (n!!)^2 - n!</code>.
+ * A088984 a(n) = (n!!)^2 - n!.
  * @author Georg Fischer
  */
 public class A088984 extends HolonomicRecurrence {

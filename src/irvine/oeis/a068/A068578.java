@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A068578 Numbers k such that <code>tau(k)*sigma(k) &gt; k*phi(k)</code>.
+ * A068578 Numbers k such that tau(k)*sigma(k) &gt; k*phi(k).
  * @author Georg Fischer
  */
 public class A068578 extends FiniteSequence {

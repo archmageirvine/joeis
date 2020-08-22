@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a000.A000203;
 
 /**
- * A094471 <code>a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n)</code>.
+ * A094471 a(n) = n*tau(n) - sigma(n) = n*A000005(n) - A000203(n).
  * @author Georg Fischer
  */
 public class A094471 implements Sequence {

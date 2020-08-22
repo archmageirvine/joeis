@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173989 Base 2 logarithm of <code>A173300</code>.
+ * A173989 Base 2 logarithm of A173300.
  * @author Georg Fischer
  */
 public class A173989 extends GeneratingFunctionSequence {

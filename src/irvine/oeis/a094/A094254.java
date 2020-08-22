@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094254 Let M be the <code>3 X 3</code> matrix <code>[ 6 0 -8 / 1 0 0 / 0 1 0]</code>. Then <code>M^n * [1 1 1] = [a(n-1), a(n), a(n+1)]</code>.
+ * A094254 Let M be the 3 X 3 matrix [ 6 0 -8 / 1 0 0 / 0 1 0]. Then M^n * [1 1 1] = [a(n-1), a(n), a(n+1)].
  * @author Georg Fischer
  */
 public class A094254 extends GeneratingFunctionSequence {

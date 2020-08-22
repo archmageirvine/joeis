@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131710 Overlay of Pell numbers: <code>a(n)=A000129(n)+A000129(n-6)</code>.
+ * A131710 Overlay of Pell numbers: a(n)=A000129(n)+A000129(n-6).
  * @author Georg Fischer
  */
 public class A131710 extends GeneratingFunctionSequence {

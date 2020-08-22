@@ -4,7 +4,7 @@ package irvine.oeis.a081;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A081037 Inverse binary transform of <code>A027656</code>.
+ * A081037 Inverse binary transform of A027656.
  * @author Georg Fischer
  */
 public class A081037 extends GeneratingFunctionSequence {

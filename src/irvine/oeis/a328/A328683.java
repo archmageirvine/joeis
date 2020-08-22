@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328683 Positive integers that are equal to <code>99...99</code> (repdigit with n digits <code>9)</code> times the sum of their digits.
+ * A328683 Positive integers that are equal to 99...99 (repdigit with n digits 9) times the sum of their digits.
  * @author Georg Fischer
  */
 public class A328683 extends HolonomicRecurrence {

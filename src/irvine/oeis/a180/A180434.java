@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A180434 Decimal expansion of constant <code>(2 - Pi/2)</code>.
+ * A180434 Decimal expansion of constant (2 - Pi/2).
  * @author Georg Fischer
  */
 public class A180434 extends DecimalExpansionSequence {

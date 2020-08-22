@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020923 Expansion of <code>(1-4*x)^(11/2)</code>.
+ * A020923 Expansion of (1-4*x)^(11/2).
  * @author Sean A. Irvine
  */
 public class A020923 implements Sequence {

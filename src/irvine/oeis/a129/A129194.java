@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129194 <code>a(n) = n^2*(3/4 - (-1)^n/4)</code>.
+ * A129194 a(n) = n^2*(3/4 - (-1)^n/4).
  * @author Sean A. Irvine
  */
 public class A129194 extends LinearRecurrence {

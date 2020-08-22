@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A091085 <code>a(n) = mod(A078008(n),10)</code>.
+ * A091085 a(n) = mod(A078008(n),10).
  * @author Georg Fischer
  */
 public class A091085 extends LinearRecurrence {

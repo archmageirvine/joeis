@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097192 Main diagonal of triangle <code>A097190</code>, in which the n-th row polynomial <code>R_n(y)</code> is formed from the initial <code>(n+1)</code> terms of g.f. <code>A097191(y)^(n+1)</code>, where <code>R_n(1/3) = 9^n</code> for all <code>n&gt;=0</code>.
+ * A097192 Main diagonal of triangle A097190, in which the n-th row polynomial R_n(y) is formed from the initial (n+1) terms of g.f. A097191(y)^(n+1), where R_n(1/3) = 9^n for all n&gt;=0.
  * @author Georg Fischer
  */
 public class A097192 extends HolonomicRecurrence {

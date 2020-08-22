@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091337 <code>a(n) = (2/n)</code>, where <code>(k/n)</code> is the Kronecker symbol.
+ * A091337 a(n) = (2/n), where (k/n) is the Kronecker symbol.
  * @author Georg Fischer
  */
 public class A091337 extends GeneratingFunctionSequence {

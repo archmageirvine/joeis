@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A031980 <code>a(n) =</code> smallest number <code>&gt;= 1</code> not occurring earlier and not the sum of cubes of two distinct earlier terms.
+ * A031980 a(n) = smallest number &gt;= 1 not occurring earlier and not the sum of cubes of two distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A031980 extends MemorySequence {

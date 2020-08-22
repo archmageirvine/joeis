@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056573 Sixth power of Fibonacci numbers <code>A000045</code>.
+ * A056573 Sixth power of Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A056573 extends LinearRecurrence {

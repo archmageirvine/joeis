@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015708 Numbers n such that <code>n | (phi(n) * sigma(n))</code> but <code>(phi(n) + sigma(n))/n</code> does not increase.
+ * A015708 Numbers n such that n | (phi(n) * sigma(n)) but (phi(n) + sigma(n))/n does not increase.
  * @author Sean A. Irvine
  */
 public class A015708 implements Sequence {

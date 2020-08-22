@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070778 Let M denote the <code>6 X 6</code> matrix = row by row /1,1,1,1,1,1/1,1,1,1,1,0/1,1,1,1,0,0/1,1,1,0,0,0/1,1,0,0,0,0/1,0,0,0,0,0/ and <code>A(n)</code> the vector <code>(x(n),y(n),z(n),t(n),u(n),v(n)) = M^n*A</code> where A is the vector <code>(1,1,1,1,1,1);</code> then <code>a(n) = u(n)</code>.
+ * A070778 Let M denote the 6 X 6 matrix = row by row /1,1,1,1,1,1/1,1,1,1,1,0/1,1,1,1,0,0/1,1,1,0,0,0/1,1,0,0,0,0/1,0,0,0,0,0/ and A(n) the vector (x(n),y(n),z(n),t(n),u(n),v(n)) = M^n*A where A is the vector (1,1,1,1,1,1); then a(n) = u(n).
  * @author Sean A. Irvine
  */
 public class A070778 extends LinearRecurrence {

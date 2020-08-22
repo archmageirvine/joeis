@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000737 Boustrophedon transform of natural numbers, cf. <code>A000027</code>.
+ * A000737 Boustrophedon transform of natural numbers, cf. A000027.
  * @author Sean A. Irvine
  */
 public class A000737 extends A000674 {

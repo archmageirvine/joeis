@@ -5,7 +5,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244713 Positive numbers primitively represented by the binary quadratic form <code>(1, 1, -2)</code>.
+ * A244713 Positive numbers primitively represented by the binary quadratic form (1, 1, -2).
  * @author Georg Fischer
  */
 public class A244713 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160582 Decimal expansion of <code>(213651 +31850*sqrt(2))/457^2</code>.
+ * A160582 Decimal expansion of (213651 +31850*sqrt(2))/457^2.
  * @author Georg Fischer
  */
 public class A160582 extends DecimalExpansionSequence {

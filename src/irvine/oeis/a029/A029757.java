@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029757 <code>a(n) = 5^n mod 2^n</code>.
+ * A029757 a(n) = 5^n mod 2^n.
  * @author Sean A. Irvine
  */
 public class A029757 implements Sequence {

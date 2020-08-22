@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057222 Number of <code>4 X n</code> binary matrices with 1 unit column up to row and column permutations.
+ * A057222 Number of 4 X n binary matrices with 1 unit column up to row and column permutations.
  * @author Georg Fischer
  */
 public class A057222 extends GeneratingFunctionSequence {

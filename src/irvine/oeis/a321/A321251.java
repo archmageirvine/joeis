@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321251 <code>a(n)</code> is the number of ways to place non-attacking knights on a <code>3 X n</code> chessboard.
+ * A321251 a(n) is the number of ways to place non-attacking knights on a 3 X n chessboard.
  * @author Georg Fischer
  */
 public class A321251 extends GeneratingFunctionSequence {

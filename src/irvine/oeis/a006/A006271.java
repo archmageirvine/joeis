@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006271 Numerators of a continued fraction for <code>1 + sqrt(2)</code>.
+ * A006271 Numerators of a continued fraction for 1 + sqrt(2).
  * @author Sean A. Irvine
  */
 public class A006271 extends A006266 {

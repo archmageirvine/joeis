@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A160056 Decimal expansion of <code>(107+42*sqrt(2))/89</code>.
+ * A160056 Decimal expansion of (107+42*sqrt(2))/89.
  * @author Georg Fischer
  */
 public class A160056 extends DecimalExpansionSequence {

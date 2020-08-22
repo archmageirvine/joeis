@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A248885 Decimal expansion of <code>e^(Pi*42^(1/42))</code>.
+ * A248885 Decimal expansion of e^(Pi*42^(1/42)).
  * @author Georg Fischer
  */
 public class A248885 extends DecimalExpansionSequence {

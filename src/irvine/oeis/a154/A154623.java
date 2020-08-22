@@ -6,7 +6,7 @@ package irvine.oeis.a154;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A154623 Sequence with g.f. <code>1+(x/(1-5*x))*c(x/(1-5*x)), c(x)</code> the g.f. of <code>A000108</code>.
+ * A154623 Sequence with g.f. 1+(x/(1-5*x))*c(x/(1-5*x)), c(x) the g.f. of A000108.
  * @author Georg Fischer
  */
 public class A154623 extends HolonomicRecurrence {

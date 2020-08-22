@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126431 <code>a(n) = n * 10^n</code>.
+ * A126431 a(n) = n * 10^n.
  * @author Sean A. Irvine
  */
 public class A126431 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A271352 <code>a(n) = 3^n mod 211</code>.
+ * A271352 a(n) = 3^n mod 211.
  * @author Georg Fischer
  */
 public class A271352 implements Sequence {

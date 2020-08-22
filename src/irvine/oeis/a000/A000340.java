@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000340 <code>a(0)=1, a(n) = 3*a(n-1) + n + 1</code>.
+ * A000340 a(0)=1, a(n) = 3*a(n-1) + n + 1.
  * @author Sean A. Irvine
  */
 public class A000340 implements Sequence {

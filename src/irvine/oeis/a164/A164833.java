@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A164833 Decimal expansion of <code>Pi/8 - log(2)/2</code>.
+ * A164833 Decimal expansion of Pi/8 - log(2)/2.
  * @author Georg Fischer
  */
 public class A164833 extends DecimalExpansionSequence {

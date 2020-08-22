@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003112 Permanent of Schur's matrix of order <code>2n+1</code>.
+ * A003112 Permanent of Schur's matrix of order 2n+1.
  * @author Sean A. Irvine
  */
 public class A003112 implements Sequence {

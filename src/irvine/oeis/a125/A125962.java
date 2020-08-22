@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125962 Numbers whose <code>base-9</code> representation is 555555555......5.
+ * A125962 Numbers whose base-9 representation is 555555555......5.
  * @author Georg Fischer
  */
 public class A125962 extends GeneratingFunctionSequence {

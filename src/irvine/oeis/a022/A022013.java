@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022013 Initial members of prime octuplets <code>(p, p+6, p+8, p+14, p+18, p+20, p+24, p+26)</code>.
+ * A022013 Initial members of prime octuplets (p, p+6, p+8, p+14, p+18, p+20, p+24, p+26).
  * @author Sean A. Irvine
  */
 public class A022013 implements Sequence {

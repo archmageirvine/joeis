@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032248 <code>"DHK[ 7 ]" (bracelet</code>, identity, unlabeled, <code>7</code> parts) transform of 1,1,1,1,...
+ * A032248 "DHK[ 7 ]" (bracelet, identity, unlabeled, 7 parts) transform of 1,1,1,1,...
  * @author Georg Fischer
  */
 public class A032248 extends GeneratingFunctionSequence {

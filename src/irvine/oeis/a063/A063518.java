@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A063518 Values of <code>17^n mod 23</code>.
+ * A063518 Values of 17^n mod 23.
  * @author Georg Fischer
  */
 public class A063518 extends PaddingSequence {

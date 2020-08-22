@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013699 Degree of variety <code>K_{2,n}^2</code>.
+ * A013699 Degree of variety K_{2,n}^2.
  * @author Sean A. Irvine
  */
 public class A013699 implements Sequence {

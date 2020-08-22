@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025191 <code>a(n) = Sum{T(n,k)}, k = 0,1,...,n</code>, where T is the array defined in <code>A025177</code>.
+ * A025191 a(n) = Sum{T(n,k)}, k = 0,1,...,n, where T is the array defined in A025177.
  * @author Sean A. Irvine
  */
 public class A025191 extends A025177 {

@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A032039 "BFJ" <code>(reversible</code>, size, labeled) transform of 2,1,1,1...
+ * A032039 "BFJ" (reversible, size, labeled) transform of 2,1,1,1...
  * @author Sean A. Irvine
  */
 public class A032039 extends A032001 {

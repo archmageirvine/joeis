@@ -6,7 +6,7 @@ package irvine.oeis.a235;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A235321 E.g.f. satisfies: <code>A'(x) = A(x)^4 * A(-x)^2</code> with <code>A(0) = 1</code>.
+ * A235321 E.g.f. satisfies: A'(x) = A(x)^4 * A(-x)^2 with A(0) = 1.
  * @author Georg Fischer
  */
 public class A235321 extends HolonomicRecurrence {

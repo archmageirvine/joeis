@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098302 Member <code>r=17</code> of the family of Chebyshev sequences <code>S_r(n)</code> defined in <code>A092184</code>.
+ * A098302 Member r=17 of the family of Chebyshev sequences S_r(n) defined in A092184.
  * @author Georg Fischer
  */
 public class A098302 extends HolonomicRecurrence {

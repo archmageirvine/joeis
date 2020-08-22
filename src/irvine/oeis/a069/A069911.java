@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A069911 Expansion of <code>Product_{i</code> in <code>A069909} 1/(1 - x^i)</code>.
+ * A069911 Expansion of Product_{i in A069909} 1/(1 - x^i).
  * @author Georg Fischer
  */
 public class A069911 extends EulerTransform {

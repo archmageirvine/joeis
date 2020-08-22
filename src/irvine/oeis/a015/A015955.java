@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015955 Numbers k such that k <code>| 8^k + 1</code>.
+ * A015955 Numbers k such that k | 8^k + 1.
  * @author Sean A. Irvine
  */
 public class A015955 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A036022 Number of partitions of n into parts not of form <code>4k+2, 16k, 16k+5</code> or <code>16k-5</code>.
+ * A036022 Number of partitions of n into parts not of form 4k+2, 16k, 16k+5 or 16k-5.
  * @author Georg Fischer
  */
 public class A036022 extends EulerTransform {

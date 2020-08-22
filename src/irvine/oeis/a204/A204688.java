@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204688 <code>a(n) = n^n (mod 3)</code>.
+ * A204688 a(n) = n^n (mod 3).
  * @author Georg Fischer
  */
 public class A204688 extends GeneratingFunctionSequence {

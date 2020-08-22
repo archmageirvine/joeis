@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000260;
 
 /**
- * A002712 Triangulations of the disk <code>K_{n,0}</code>.
+ * A002712 Triangulations of the disk K_{n,0}.
  * @author Sean A. Irvine
  */
 public class A002712 extends A000260 {

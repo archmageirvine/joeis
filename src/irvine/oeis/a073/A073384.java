@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073384 Seventh convolution of <code>A000129(n+1)</code> (generalized <code>(2,1)-Fibonacci</code>, called Pell numbers), <code>n&gt;=0</code>, with itself.
+ * A073384 Seventh convolution of A000129(n+1) (generalized (2,1)-Fibonacci, called Pell numbers), n&gt;=0, with itself.
  * @author Georg Fischer
  */
 public class A073384 extends GeneratingFunctionSequence {

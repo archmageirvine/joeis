@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032715 n prefixed by <code>'7'</code> and followed by <code>'3'</code> is a prime.
+ * A032715 n prefixed by '7' and followed by '3' is a prime.
  * @author Sean A. Irvine
  */
 public class A032715 implements Sequence {

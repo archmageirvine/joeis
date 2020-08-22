@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007948 Largest cubefree number dividing <code>n</code>.
+ * A007948 Largest cubefree number dividing n.
  * @author Sean A. Irvine
  */
 public class A007948 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a299.A299921;
 
 /**
- * A301318 <code>a(n) = sqrt(A299921(n))</code>.
+ * A301318 a(n) = sqrt(A299921(n)).
  * @author Georg Fischer
  */
 public class A301318 implements Sequence {

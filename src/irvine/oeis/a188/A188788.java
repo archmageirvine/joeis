@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188788 Number of <code>5-step self-avoiding</code> walks on an <code>n X n X n X n 4-cube</code> summed over all starting positions.
+ * A188788 Number of 5-step self-avoiding walks on an n X n X n X n 4-cube summed over all starting positions.
  * @author Georg Fischer
  */
 public class A188788 extends GeneratingFunctionSequence {

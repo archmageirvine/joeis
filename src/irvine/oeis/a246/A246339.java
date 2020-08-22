@@ -7,7 +7,7 @@ import irvine.oeis.a004.A004539;
 
 
 /**
- * A246339 Positions of 0 in <code>base-2</code> representation of <code>1/sqrt(2)</code>.
+ * A246339 Positions of 0 in base-2 representation of 1/sqrt(2).
  * @author Georg Fischer
  */
 public class A246339 extends PositionSequence {

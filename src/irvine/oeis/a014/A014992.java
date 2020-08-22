@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014992 <code>a(n) = (1 - (-10)^n)/11</code>.
+ * A014992 a(n) = (1 - (-10)^n)/11.
  * @author Sean A. Irvine
  */
 public class A014992 implements Sequence {

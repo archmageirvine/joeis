@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A187976 <code>a(n) = [nr+kr]-[nr]-[kr]</code>, where <code>r=sqrt(2), k=6, [ ]=floor</code>.
+ * A187976 a(n) = [nr+kr]-[nr]-[kr], where r=sqrt(2), k=6, [ ]=floor.
  * @author Georg Fischer
  */
 public class A187976 implements Sequence {

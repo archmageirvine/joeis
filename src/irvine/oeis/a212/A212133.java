@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212133 Number of <code>(w,x,y,z)</code> with all terms in <code>{1,...,n}</code> and <code>median=mean</code>.
+ * A212133 Number of (w,x,y,z) with all terms in {1,...,n} and median=mean.
  * @author Georg Fischer
  */
 public class A212133 extends GeneratingFunctionSequence {

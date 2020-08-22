@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A188020 <code>[nr]-[nr-kr]-[kr]</code>, where <code>r=(1+sqrt(5))/2, k=7, [ ]=floor</code>.
+ * A188020 [nr]-[nr-kr]-[kr], where r=(1+sqrt(5))/2, k=7, [ ]=floor.
  * @author Georg Fischer
  */
 public class A188020 implements Sequence {

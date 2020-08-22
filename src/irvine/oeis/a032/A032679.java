@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032679 Digit <code>'7'</code> concatenated with <code>a(n)</code> is a lucky number.
+ * A032679 Digit '7' concatenated with a(n) is a lucky number.
  * @author Sean A. Irvine
  */
 public class A032679 extends A000959 {

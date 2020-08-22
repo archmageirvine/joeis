@@ -6,7 +6,7 @@ package irvine.oeis.a293;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A293962 Number of linear chord diagrams having n chords and maximal chord length n, <code>a(0)=1</code>.
+ * A293962 Number of linear chord diagrams having n chords and maximal chord length n, a(0)=1.
  * @author Georg Fischer
  */
 public class A293962 extends HolonomicRecurrence {

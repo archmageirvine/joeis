@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108574 Range of <code>A000790</code> (primary pretenders).
+ * A108574 Range of A000790 (primary pretenders).
  * @author Georg Fischer
  */
 public class A108574 extends FiniteSequence {

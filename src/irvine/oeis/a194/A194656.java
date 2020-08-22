@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A194656 Decimal expansion of <code>(2*Pi^5*log(2) - 30*Pi^3*zeta(3) + 225*Pi*zeta(5))/320</code>.
+ * A194656 Decimal expansion of (2*Pi^5*log(2) - 30*Pi^3*zeta(3) + 225*Pi*zeta(5))/320.
  * @author Georg Fischer
  */
 public class A194656 extends DecimalExpansionSequence {

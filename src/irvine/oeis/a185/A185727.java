@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185727 Integers of the form <code>A145911(k)/(k+1)</code> sorted along increasing k.
+ * A185727 Integers of the form A145911(k)/(k+1) sorted along increasing k.
  * @author Georg Fischer
  */
 public class A185727 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a023;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A023441 Dying rabbits: <code>a(n) = a(n-1) + a(n-2) - a(n-11)</code>.
+ * A023441 Dying rabbits: a(n) = a(n-1) + a(n-2) - a(n-11).
  * @author Georg Fischer
  */
 public class A023441 extends GeneratingFunctionSequence {

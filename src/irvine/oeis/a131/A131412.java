@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131412 <code>a(n) = n*(Fibonacci(n) - 1) + Fibonacci(n + 2) - 1</code>.
+ * A131412 a(n) = n*(Fibonacci(n) - 1) + Fibonacci(n + 2) - 1.
  * @author Georg Fischer
  */
 public class A131412 extends GeneratingFunctionSequence {

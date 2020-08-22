@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036088 Centered cube numbers: <code>(n+1)^10 + n^10</code>.
+ * A036088 Centered cube numbers: (n+1)^10 + n^10.
  * @author Georg Fischer
  */
 public class A036088 extends GeneratingFunctionSequence {

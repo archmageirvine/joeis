@@ -5,7 +5,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192355 Constant term of the reduction of the polynomial <code>p(n,x)=(1/2)((x+2)^n+(x-2)^n)</code> by <code>x^2-&gt;x+2</code>.
+ * A192355 Constant term of the reduction of the polynomial p(n,x)=(1/2)((x+2)^n+(x-2)^n) by x^2-&gt;x+2.
  * @author Georg Fischer
  */
 public class A192355 extends HolonomicRecurrence {

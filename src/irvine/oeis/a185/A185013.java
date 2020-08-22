@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A185013 Characteristic function of <code>{3}</code>.
+ * A185013 Characteristic function of {3}.
  * @author Georg Fischer
  */
 public class A185013 extends PaddingSequence {

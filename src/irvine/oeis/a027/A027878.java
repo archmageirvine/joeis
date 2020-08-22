@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002283;
 
 /**
- * A027878 <code>a(n) = Product_{i=1..n} (10^i - 1)</code>.
+ * A027878 a(n) = Product_{i=1..n} (10^i - 1).
  * @author Sean A. Irvine
  */
 public class A027878 extends PartialProductSequence {

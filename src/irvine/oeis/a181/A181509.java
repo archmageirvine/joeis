@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181509 <code>a(1) = 2, a(n) = (n-th-even n^3) -</code> (sum of previous terms).
+ * A181509 a(1) = 2, a(n) = (n-th-even n^3) - (sum of previous terms).
  * @author Georg Fischer
  */
 public class A181509 extends GeneratingFunctionSequence {

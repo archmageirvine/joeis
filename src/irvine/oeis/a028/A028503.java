@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028503 Numbers k such that <code>k*(k+2)</code> is a palindrome.
+ * A028503 Numbers k such that k*(k+2) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028503 implements Sequence {

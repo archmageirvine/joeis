@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248086 Sum of the eccentricities of all vertices in the Lucas cube <code>Lambda(n)</code>.
+ * A248086 Sum of the eccentricities of all vertices in the Lucas cube Lambda(n).
  * @author Sean A. Irvine
  */
 public class A248086 extends LinearRecurrence {

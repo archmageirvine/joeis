@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023962 First digit after decimal point of cube root of <code>n</code>.
+ * A023962 First digit after decimal point of cube root of n.
  * @author Sean A. Irvine
  */
 public class A023962 implements Sequence {

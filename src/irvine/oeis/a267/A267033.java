@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A267033 Decimal expansion of <code>4*arctan(sqrt(2)/5)-Pi/3</code>.
+ * A267033 Decimal expansion of 4*arctan(sqrt(2)/5)-Pi/3.
  * @author Georg Fischer
  */
 public class A267033 extends DecimalExpansionSequence {

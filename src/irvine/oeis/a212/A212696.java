@@ -6,7 +6,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212696 Central coefficient of the triangle <code>A097609</code>.
+ * A212696 Central coefficient of the triangle A097609.
  * @author Georg Fischer
  */
 public class A212696 extends HolonomicRecurrence {

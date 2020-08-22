@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274946 Boyd's Pisot-like sequence <code>F(0,5,11)</code>.
+ * A274946 Boyd's Pisot-like sequence F(0,5,11).
  * @author Georg Fischer
  */
 public class A274946 extends GeneratingFunctionSequence {

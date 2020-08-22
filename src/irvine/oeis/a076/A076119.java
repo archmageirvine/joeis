@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A076119 Every second sector of a dart board, starting at the top <code>(20)</code> and working around clockwise.
+ * A076119 Every second sector of a dart board, starting at the top (20) and working around clockwise.
  * @author Sean A. Irvine
  */
 public class A076119 extends LinearRecurrence {

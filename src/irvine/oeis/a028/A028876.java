@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028876 Numbers n such that <code>n^2 - 5</code> is prime.
+ * A028876 Numbers n such that n^2 - 5 is prime.
  * @author Sean A. Irvine
  */
 public class A028876 implements Sequence {

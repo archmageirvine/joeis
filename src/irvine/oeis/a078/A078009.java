@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078009 <code>a(0)=1</code>, for <code>n&gt;=1 a(n) = Sum_{k=0..n} 5^k*N(n,k)</code> where <code>N(n,k) = C(n,k)*C(n,k+1)/n</code> are the Narayana numbers <code>(A001263)</code>.
+ * A078009 a(0)=1, for n&gt;=1 a(n) = Sum_{k=0..n} 5^k*N(n,k) where N(n,k) = C(n,k)*C(n,k+1)/n are the Narayana numbers (A001263).
  * @author Georg Fischer
  */
 public class A078009 extends HolonomicRecurrence {

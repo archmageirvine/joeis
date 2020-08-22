@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A130544 Multiplicative persistence of <code>n!!</code>.
+ * A130544 Multiplicative persistence of n!!.
  * @author Georg Fischer
  */
 public class A130544 extends PaddingSequence {

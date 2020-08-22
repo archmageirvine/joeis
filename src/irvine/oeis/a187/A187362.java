@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187362 Pell trisection: <code>Pell(3*n+2), n &gt;= 0</code>.
+ * A187362 Pell trisection: Pell(3*n+2), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A187362 extends GeneratingFunctionSequence {

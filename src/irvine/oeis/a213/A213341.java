@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A213341 Smallest palindrome with digital root n and <code>n + 1</code> decimal digits.
+ * A213341 Smallest palindrome with digital root n and n + 1 decimal digits.
  * @author Georg Fischer
  */
 public class A213341 extends FiniteSequence {

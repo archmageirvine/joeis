@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A165273 Partial sums of <code>A165271</code>.
+ * A165273 Partial sums of A165271.
  * @author Georg Fischer
  */
 public class A165273 extends PaddingSequence {

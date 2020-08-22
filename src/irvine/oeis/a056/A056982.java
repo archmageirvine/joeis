@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a005.A005187;
 
 /**
- * A056982 <code>a(n) = 4^A005187(n)</code>. The denominators of the Landau constants.
+ * A056982 a(n) = 4^A005187(n). The denominators of the Landau constants.
  * @author Georg Fischer
  */
 public class A056982 implements Sequence {

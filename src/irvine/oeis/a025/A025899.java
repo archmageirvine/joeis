@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025899 Expansion of <code>1/((1-x^6)(1-x^7)(1-x^10))</code>.
+ * A025899 Expansion of 1/((1-x^6)(1-x^7)(1-x^10)).
  * @author Georg Fischer
  */
 public class A025899 extends GeneratingFunctionSequence {

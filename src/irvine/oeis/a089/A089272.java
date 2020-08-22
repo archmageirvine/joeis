@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089272 Fourth column <code>(k=5)</code> of array <code>A078739(n,k) ((2,2)-</code> generalized Stirling2) divided by 12.
+ * A089272 Fourth column (k=5) of array A078739(n,k) ((2,2)- generalized Stirling2) divided by 12.
  * @author Georg Fischer
  */
 public class A089272 extends GeneratingFunctionSequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 /**
- * A010838 Expansion of Product <code>(1-x^k )^44</code>.
+ * A010838 Expansion of Product (1-x^k )^44.
  * @author Sean A. Irvine
  */
 public class A010838 extends A010816 {

@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080412 Exchange rightmost two binary digits of <code>n &gt; 1; a(0)=0, a(1)=2</code>.
+ * A080412 Exchange rightmost two binary digits of n &gt; 1; a(0)=0, a(1)=2.
  * @author Sean A. Irvine
  */
 public class A080412 extends LinearRecurrence {

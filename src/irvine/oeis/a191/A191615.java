@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A191615 <code>a(1) = 1; a(n)</code> is the smallest number such that <code>a(n)-a(n-1) = A085392 (m)</code>, where <code>A085392(m)</code> is the largest noncomposite divisor &lt;m of m.
+ * A191615 a(1) = 1; a(n) is the smallest number such that a(n)-a(n-1) = A085392 (m), where A085392(m) is the largest noncomposite divisor &lt;m  of m.
  * @author Georg Fischer
  */
 public class A191615 extends FiniteSequence {

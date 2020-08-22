@@ -4,7 +4,7 @@ package irvine.oeis.a151;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A151556 Values of <code>(n^5+47*n)/48</code> as n ranges over the numbers that are <code>== +-1 mod 6</code>.
+ * A151556 Values of (n^5+47*n)/48 as n ranges over the numbers that are == +-1 mod 6.
  * @author Georg Fischer
  */
 public class A151556 extends GeneratingFunctionSequence {

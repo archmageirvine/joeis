@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A175770 In the sequence of prime numbers, replace all the <code>'3'</code> digits with <code>'1'</code> and vice versa.
+ * A175770 In the sequence of prime numbers, replace all the '3' digits with '1' and vice versa.
  * @author Georg Fischer
  */
 public class A175770 extends A000040 {

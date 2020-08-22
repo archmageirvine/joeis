@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033467 Partial sums of sequence <code>{1/(i^2+1): i=0..n}</code> (numerators).
+ * A033467 Partial sums of sequence {1/(i^2+1): i=0..n} (numerators).
  * @author Sean A. Irvine
  */
 public class A033467 implements Sequence {

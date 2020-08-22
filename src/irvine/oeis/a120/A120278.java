@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120278 <code>Sum[Sum[C(2k,k),{k,1,m}],{m,1,n}]</code>, where <code>C(2k,k)=(2k)!/(k!)^2=A000984[k]</code>.
+ * A120278 Sum[Sum[C(2k,k),{k,1,m}],{m,1,n}], where C(2k,k)=(2k)!/(k!)^2=A000984[k].
  * @author Georg Fischer
  */
 public class A120278 extends HolonomicRecurrence {

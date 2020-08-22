@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276643 Number of distinct 4-digit vehicle plates whose sum is <code>n</code>.
+ * A276643 Number of distinct 4-digit vehicle plates whose sum is n.
  * @author Georg Fischer
  */
 public class A276643 extends FiniteSequence {

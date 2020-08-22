@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012019 E.g.f.: <code>exp(sin(arctan(x)))</code>.
+ * A012019 E.g.f.: exp(sin(arctan(x))).
  * @author Sean A. Irvine
  */
 public class A012019 implements Sequence {

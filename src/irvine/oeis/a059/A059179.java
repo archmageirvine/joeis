@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A059179 Engel expansion of <code>3^(1/3) = 1.44225</code>.
+ * A059179 Engel expansion of 3^(1/3) = 1.44225.
  * @author Sean A. Irvine
  */
 public class A059179 implements Sequence {

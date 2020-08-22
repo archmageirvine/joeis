@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247107 <code>a(0) = 0, a(n) =</code> previous term + repunit of length of previous term for <code>n &gt; 0</code>.
+ * A247107 a(0) = 0, a(n) = previous term + repunit of length of previous term for n &gt; 0.
  * @author Georg Fischer
  */
 public class A247107 extends GeneratingFunctionSequence {

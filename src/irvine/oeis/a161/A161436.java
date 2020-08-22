@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A161436 Number of reduced words of length n in the Weyl group <code>A_4</code>.
+ * A161436 Number of reduced words of length n in the Weyl group A_4.
  * @author Georg Fischer
  */
 public class A161436 extends PaddingSequence {

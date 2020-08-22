@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002036 Compressed primes: <code>a(n)</code> is the nearest integer to <code>prime(n)/log prime(n)</code>.
+ * A002036 Compressed primes: a(n) is the nearest integer to prime(n)/log prime(n).
  * @author Sean A. Irvine
  */
 public class A002036 implements Sequence {

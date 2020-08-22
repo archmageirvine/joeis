@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223381 Number of <code>n X 2 0..2</code> arrays with all horizontally or vertically connected equal values in a straight line, and new values 0..2 introduced in row major order.
+ * A223381 Number of n X 2 0..2 arrays with all horizontally or vertically connected equal values in a straight line, and new values 0..2 introduced in row major order.
  * @author Georg Fischer
  */
 public class A223381 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a275;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275607 <code>a(n) = 2*12^n*Gamma(n+1/2)*(n+1)/(sqrt(Pi)*Gamma(n+3))</code>.
+ * A275607 a(n) = 2*12^n*Gamma(n+1/2)*(n+1)/(sqrt(Pi)*Gamma(n+3)).
  * @author Georg Fischer
  */
 public class A275607 extends HolonomicRecurrence {

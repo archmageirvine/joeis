@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324631 Number of permutations p of <code>[n]</code> such that four is the maximum of the number of elements in any integer interval <code>[p(i)..i+n*[i&lt;p(i)]]</code>.
+ * A324631 Number of permutations p of [n] such that four is the maximum of the number of elements in any integer interval [p(i)..i+n*[i&lt;p(i)]].
  * @author Georg Fischer
  */
 public class A324631 extends HolonomicRecurrence {

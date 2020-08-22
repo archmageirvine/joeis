@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007395;
 
 /**
- * A034077 Decimal part of n-th root of <code>a(n)</code> starts with digit 0.
+ * A034077 Decimal part of n-th root of a(n) starts with digit 0.
  * @author Sean A. Irvine
  */
 public class A034077 extends PrependSequence {

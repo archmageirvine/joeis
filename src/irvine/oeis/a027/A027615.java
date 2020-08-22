@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027615 Number of <code>1</code>'s when n is written in base -2.
+ * A027615 Number of 1's when n is written in base -2.
  * @author Sean A. Irvine
  */
 public class A027615 implements Sequence {

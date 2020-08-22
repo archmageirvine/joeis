@@ -4,7 +4,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051048 <code>Sqrt[a(n)a(n+1)+1]</code> of <code>A051047</code>.
+ * A051048 Sqrt[a(n)a(n+1)+1] of A051047.
  * @author Georg Fischer
  */
 public class A051048 extends GeneratingFunctionSequence {

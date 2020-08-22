@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277661 1st-order coefficients of the <code>1/N-expansion</code> of traces of negative powers of real Wishart matrices with parameter <code>c=2</code>.
+ * A277661 1st-order coefficients of the 1/N-expansion of traces of negative powers of real Wishart matrices with parameter c=2.
  * @author Georg Fischer
  */
 public class A277661 extends HolonomicRecurrence {

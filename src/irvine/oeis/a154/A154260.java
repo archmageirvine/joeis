@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154260 Numbers of the form <code>m*(4*m +- 1)/2</code>.
+ * A154260 Numbers of the form m*(4*m +- 1)/2.
  * @author Sean A. Irvine
  */
 public class A154260 extends LinearRecurrence {

@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A022894 Number of solutions to <code>c(1)*prime(1) +...+ c(2n+1)*prime(2n+1) = 0</code>, where <code>c(i) = +-1</code> for i <code>&gt; 1, c(1) = 1</code>.
+ * A022894 Number of solutions to c(1)*prime(1) +...+ c(2n+1)*prime(2n+1) = 0, where c(i) = +-1 for i &gt; 1, c(1) = 1.
  * @author Sean A. Irvine
  */
 public class A022894 extends MemoryFunction2<Long, Z> implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a102;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A102947 Numbers n such that <code>2*10^n-3</code> is prime.
+ * A102947 Numbers n such that 2*10^n-3 is prime.
  * @author Georg Fischer
  */
 public class A102947 extends PowerFactorPrimeSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184637 <code>a(n) = floor(1/{(n^4+3*n)^(1/4)})</code>, where <code>{}=fractional</code> part.
+ * A184637 a(n) = floor(1/{(n^4+3*n)^(1/4)}), where {}=fractional part.
  * @author Georg Fischer
  */
 public class A184637 extends GeneratingFunctionSequence {

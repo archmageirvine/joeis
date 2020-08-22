@@ -4,7 +4,7 @@ package irvine.oeis.a277;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A277384 Least common multiple of <code>n + 4</code> and <code>n - 4</code>.
+ * A277384 Least common multiple of n + 4 and n - 4.
  * @author Georg Fischer
  */
 public class A277384 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241979 <code>(0,1)</code> sequence such that lengths of three consecutive runs are always distinct.
+ * A241979 (0,1) sequence such that lengths of three consecutive runs are always distinct.
  * @author Sean A. Irvine
  */
 public class A241979 extends LinearRecurrence {

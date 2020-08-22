@@ -6,7 +6,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063090 <code>a(n)/(n*n!)</code> is the average number of comparisons needed to find a node in a binary search tree containing n nodes inserted in a random order.
+ * A063090 a(n)/(n*n!) is the average number of comparisons needed to find a node in a binary search tree containing n nodes inserted in a random order.
  * @author Georg Fischer
  */
 public class A063090 extends HolonomicRecurrence {

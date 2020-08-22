@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024420 <code>a(n) = n! * Sum_{j=0..floor(n/2)} (-1)^j/binomial(n,j)</code>.
+ * A024420 a(n) = n! * Sum_{j=0..floor(n/2)} (-1)^j/binomial(n,j).
  * @author Sean A. Irvine
  */
 public class A024420 implements Sequence {

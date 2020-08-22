@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302644 <code>a(n) = (n+2)*(n+1)*(n^6-12*n^5+70*n^4-210*n^3+409*n^2-378*n+360)/720</code>.
+ * A302644 a(n) = (n+2)*(n+1)*(n^6-12*n^5+70*n^4-210*n^3+409*n^2-378*n+360)/720.
  * @author Georg Fischer
  */
 public class A302644 extends GeneratingFunctionSequence {

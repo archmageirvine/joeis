@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024214 <code>a(n) = 4th</code> elementary symmetric function of first <code>n+3</code> positive integers congruent to <code>1 mod 3</code>.
+ * A024214 a(n) = 4th elementary symmetric function of first n+3 positive integers congruent to 1 mod 3.
  * @author Sean A. Irvine
  */
 public class A024214 extends LinearRecurrence {

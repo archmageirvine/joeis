@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259211 Positive octagonal numbers <code>(A000567)</code> that are other octagonal numbers divided by 3.
+ * A259211 Positive octagonal numbers (A000567) that are other octagonal numbers divided by 3.
  * @author Sean A. Irvine
  */
 public class A259211 extends LinearRecurrence {

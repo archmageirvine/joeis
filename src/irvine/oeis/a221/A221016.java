@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221016 The Wiener index of the fullerenyl anion <code>G[n]C[60]</code>, defined pictorially in the Arezoomand reference (see Fig. <code>5)</code>.
+ * A221016 The Wiener index of the fullerenyl anion G[n]C[60], defined pictorially in the Arezoomand reference (see Fig. 5).
  * @author Georg Fischer
  */
 public class A221016 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068045 Number of subsets of <code>{1,2,3,...,n}</code> that sum to <code>0 mod 64</code>.
+ * A068045 Number of subsets of {1,2,3,...,n} that sum to 0 mod 64.
  * @author Georg Fischer
  */
 public class A068045 extends GeneratingFunctionSequence {

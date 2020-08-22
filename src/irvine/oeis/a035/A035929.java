@@ -6,7 +6,7 @@ package irvine.oeis.a035;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A035929 Number of Dyck n-paths starting <code>U^mD^m</code> (an <code>m-pyramid)</code>, followed by a pyramid-free Dyck path.
+ * A035929 Number of Dyck n-paths starting U^mD^m (an m-pyramid), followed by a pyramid-free Dyck path.
  * @author Georg Fischer
  */
 public class A035929 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267534 Indices of Lucas numbers that are not of the form <code>x^2 + y^2 + z^2</code> where x, y and z are integers.
+ * A267534 Indices of Lucas numbers that are not of the form x^2 + y^2 + z^2 where x, y and z are integers.
  * @author Georg Fischer
  */
 public class A267534 extends GeneratingFunctionSequence {

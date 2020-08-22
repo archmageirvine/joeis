@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025695 Index of <code>2^n</code> within sequence of numbers of form <code>2^i*10^j</code>.
+ * A025695 Index of 2^n within sequence of numbers of form 2^i*10^j.
  * @author Sean A. Irvine
  */
 public class A025695 extends A025612 {

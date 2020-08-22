@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270063 Number of tilings of a <code>3 X n</code> rectangle using monominoes and trominoes of any shape.
+ * A270063 Number of tilings of a 3 X n rectangle using monominoes and trominoes of any shape.
  * @author Georg Fischer
  */
 public class A270063 extends GeneratingFunctionSequence {

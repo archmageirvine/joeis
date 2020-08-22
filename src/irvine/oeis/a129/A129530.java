@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129530 <code>(1/2)n(n-1)3^(n-1)</code>.
+ * A129530 (1/2)n(n-1)3^(n-1).
  * @author Sean A. Irvine
  */
 public class A129530 extends LinearRecurrence {

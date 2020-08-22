@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051030 Ramanujan's <code>c-series</code>: expansion of <code>(2+8*x-10*x^2)/(1-82*x-82*x^2+x^3)</code>.
+ * A051030 Ramanujan's c-series: expansion of (2+8*x-10*x^2)/(1-82*x-82*x^2+x^3).
  * @author Sean A. Irvine
  */
 public class A051030 extends LinearRecurrence {

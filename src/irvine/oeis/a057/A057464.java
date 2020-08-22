@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A057464 Numbers k such that <code>10*13^k + 1</code> is prime.
+ * A057464 Numbers k such that 10*13^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A057464 extends PowerFactorPrimeSequence {

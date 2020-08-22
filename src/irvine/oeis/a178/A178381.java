@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178381 Number of paths of length n starting at initial node of the path graph <code>P_9</code>.
+ * A178381 Number of paths of length n starting at initial node of the path graph P_9.
  * @author Georg Fischer
  */
 public class A178381 extends GeneratingFunctionSequence {

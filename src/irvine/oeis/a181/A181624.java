@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A181624 Decimal expansion of <code>486^(1/3)</code>.
+ * A181624 Decimal expansion of 486^(1/3).
  * @author Georg Fischer
  */
 public class A181624 extends DecimalExpansionSequence {

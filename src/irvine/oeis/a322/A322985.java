@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A322985 Numbers k such that <code>123456789*10^k+1</code> is prime.
+ * A322985 Numbers k such that 123456789*10^k+1 is prime.
  * @author Georg Fischer
  */
 public class A322985 extends PowerFactorPrimeSequence {

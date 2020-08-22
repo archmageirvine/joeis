@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031153 Numbers k such that <code>k^2</code> contains only digits <code>{1,2,5}</code>.
+ * A031153 Numbers k such that k^2 contains only digits {1,2,5}.
  * @author Sean A. Irvine
  */
 public class A031153 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A245670 Decimal expansion of <code>28*sqrt(3) - 48</code>.
+ * A245670 Decimal expansion of 28*sqrt(3) - 48.
  * @author Georg Fischer
  */
 public class A245670 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028501 18-hyperperfect numbers: <code>n = 18*(sigma(n)-n-1) + 1</code>.
+ * A028501 18-hyperperfect numbers: n = 18*(sigma(n)-n-1) + 1.
  * @author Sean A. Irvine
  */
 public class A028501 implements Sequence {

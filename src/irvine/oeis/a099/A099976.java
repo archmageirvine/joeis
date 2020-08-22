@@ -6,7 +6,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099976 Bisection of <code>A000984</code>.
+ * A099976 Bisection of A000984.
  * @author Georg Fischer
  */
 public class A099976 extends HolonomicRecurrence {

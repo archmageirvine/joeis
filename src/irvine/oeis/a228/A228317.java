@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228317 The hyper-Wiener index of the triangular graph <code>T(n) (n &gt;= 1)</code>.
+ * A228317 The hyper-Wiener index of the triangular graph T(n) (n &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A228317 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012512 Expansion of e.g.f.: <code>tan(sinh(x)*log(x+1))=2/2!*x^2-3/3!*x^3+12/4!*x^4-40/5!*x^5..</code>.
+ * A012512 Expansion of e.g.f.: tan(sinh(x)*log(x+1))=2/2!*x^2-3/3!*x^3+12/4!*x^4-40/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012512 implements Sequence {

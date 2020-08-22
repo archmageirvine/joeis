@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A182690 <code>a(n) =</code> the largest 2-digit number with exactly n divisors, <code>a(n) = 0</code> if no such number exists.
+ * A182690 a(n) = the largest 2-digit number with exactly n divisors, a(n) = 0 if no such number exists.
  * @author Georg Fischer
  */
 public class A182690 extends PaddingSequence {

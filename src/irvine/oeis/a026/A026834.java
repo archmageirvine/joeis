@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026834 <code>a(n) =</code> number of numbers k such that only one partition of n into distinct parts has least part k.
+ * A026834 a(n) = number of numbers k such that only one partition of n into distinct parts has least part k.
  * @author Sean A. Irvine
  */
 public class A026834 extends A026821 {

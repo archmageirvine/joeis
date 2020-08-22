@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045899 Numbers k such that <code>k+1</code> and <code>3*k+1</code> are perfect squares.
+ * A045899 Numbers k such that k+1 and 3*k+1 are perfect squares.
  * @author Sean A. Irvine
  */
 public class A045899 extends LinearRecurrence {

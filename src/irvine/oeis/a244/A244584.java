@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244584 <code>a(n) = n</code> OR 3.
+ * A244584 a(n) = n OR 3.
  * @author Georg Fischer
  */
 public class A244584 extends GeneratingFunctionSequence {

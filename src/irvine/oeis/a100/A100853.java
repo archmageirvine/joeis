@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A100853 Number of partitions of n in which every part occurs <code>1, 4</code>, or 5 times. Also number of partitions of n in which every part is congruent to <code>{1, 3, 4, 5, 7} mod 8</code>.
+ * A100853 Number of partitions of n in which every part occurs 1, 4, or 5 times. Also number of partitions of n in which every part is congruent to {1, 3, 4, 5, 7} mod 8.
  * @author Georg Fischer
  */
 public class A100853 extends EulerTransform {

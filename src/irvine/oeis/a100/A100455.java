@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100455 <code>a(n) = 2^n + sin(n*Pi/2)</code>.
+ * A100455 a(n) = 2^n + sin(n*Pi/2).
  * @author Sean A. Irvine
  */
 public class A100455 extends LinearRecurrence {

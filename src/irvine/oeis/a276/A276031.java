@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A276031 Number of edges in the graded poset of the partitions of n taken modulo 3, where a partition into k parts is joined to a partition into <code>k+1</code> parts if the latter is a refinement of the former.
+ * A276031 Number of edges in the graded poset of the partitions of n taken modulo 3, where a partition into k parts is joined to a partition into k+1 parts if the latter is a refinement of the former.
  * @author Georg Fischer
  */
 public class A276031 extends GeneratingFunctionSequence {

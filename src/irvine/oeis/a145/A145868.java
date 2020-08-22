@@ -6,7 +6,7 @@ package irvine.oeis.a145;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145868 Number of involutions of length <code>2n+1</code> which are invariant under the reverse-complement map and have no decreasing subsequences of length 7.
+ * A145868 Number of involutions of length 2n+1 which are invariant under the reverse-complement map and have no decreasing subsequences of length 7.
  * @author Georg Fischer
  */
 public class A145868 extends HolonomicRecurrence {

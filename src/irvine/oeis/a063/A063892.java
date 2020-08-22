@@ -3,7 +3,7 @@ package irvine.oeis.a063;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A063892 <code>a(1) = a(2) = a(3) = 1, a(n) = a(n-a(n-2))+a(n-a(n-3))</code> for <code>n&gt;3</code>.
+ * A063892 a(1) = a(2) = a(3) = 1, a(n) = a(n-a(n-2))+a(n-a(n-3)) for n&gt;3.
  * @author Georg Fischer
  */
 public class A063892 extends FiniteSequence {

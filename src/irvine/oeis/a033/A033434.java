@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a026.A026012;
 
 /**
- * A033434 Third differences of Catalan numbers <code>A000108</code>.
+ * A033434 Third differences of Catalan numbers A000108.
  * @author Georg Fischer
  */
 public class A033434 extends DifferenceSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.PrependSequence;
 
 /**
- * A328788 Expansion of <code>psi(x^6)^5/psi(-x^3) * (f(-x)/f(-x^4))^3</code> in powers of x where <code>psi(), f()</code> are Ramanujan theta functions.
+ * A328788 Expansion of psi(x^6)^5/psi(-x^3) * (f(-x)/f(-x^4))^3 in powers of x where psi(), f() are Ramanujan theta functions.
  * @author Sean A. Irvine
  */
 public class A328788 extends PrependSequence {

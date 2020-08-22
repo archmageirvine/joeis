@@ -7,7 +7,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a001.A001861;
 
 /**
- * A029706 Sum <code>C(n,k)*b(k), k=1..n</code>, where <code>b(k)</code> is given by <code>A001861</code>.
+ * A029706 Sum C(n,k)*b(k), k=1..n, where b(k) is given by A001861.
  * @author Sean A. Irvine
  */
 public class A029706 implements Sequence {

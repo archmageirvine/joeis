@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A072751 Greatest of the most frequent prime factors of squarefree numbers <code>&lt;=</code> n; <code>a(1)=1</code>.
+ * A072751 Greatest of the most frequent prime factors of squarefree numbers &lt;= n; a(1)=1.
  * @author Georg Fischer
  */
 public class A072751 extends PaddingSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000037;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A033318 Least D in the Pellian <code>x^2 - D*y^2 = 1</code> for which y has least solution <code>n</code>.
+ * A033318 Least D in the Pellian x^2 - D*y^2 = 1 for which y has least solution n.
  * @author Sean A. Irvine
  */
 public class A033318 extends A000037 {

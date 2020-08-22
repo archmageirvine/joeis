@@ -5,7 +5,7 @@ package irvine.oeis.a154;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A154579 Primes p <code>= prime(k)</code> such that all the digits of the concatenation of p and k are distinct.
+ * A154579 Primes p = prime(k) such that all the digits of the concatenation of p and k are distinct.
  * @author Georg Fischer
  */
 public class A154579 extends FiniteSequence {

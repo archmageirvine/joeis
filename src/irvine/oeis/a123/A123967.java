@@ -7,7 +7,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A123967 Triangle read by rows: <code>T(0,0)=1;</code> for <code>n &gt;= 1 T(n,k)</code> is the coefficient of <code>x^k</code> in the monic characteristic polynomial of the tridiagonal <code>n X n</code> matrix with main diagonal 5,5,5,... and <code>sub-</code> and superdiagonals <code>1,1,1,... (0 &lt;= k &lt;= n)</code>.
+ * A123967 Triangle read by rows: T(0,0)=1; for n &gt;= 1 T(n,k) is the coefficient of x^k in the monic characteristic polynomial of the tridiagonal n X n matrix with main diagonal 5,5,5,... and sub- and superdiagonals 1,1,1,... (0 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A123967 extends GeneratingFunctionTriangle {

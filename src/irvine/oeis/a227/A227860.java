@@ -5,7 +5,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227860 Sequence of integers such that there are d terms between pairs of integers d. Cycle through <code>d=0,1,2,3</code>, trying to insert the least unused pair starting at the next free position.
+ * A227860 Sequence of integers such that there are d terms between pairs of integers d. Cycle through d=0,1,2,3, trying to insert the least unused pair starting at the next free position.
  * @author Georg Fischer
  */
 public class A227860 extends HolonomicRecurrence {

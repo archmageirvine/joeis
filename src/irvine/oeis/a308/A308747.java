@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A308747 Number of achiral m-color cyclic compositions of <code>n</code> (that is, number of cyclic compositions of n with reflection symmetry where each part of size m can be colored with one of m colors).
+ * A308747 Number of achiral m-color cyclic compositions of n (that is, number of cyclic compositions of n with reflection symmetry where each part of size m can be colored with one of m colors).
  * @author Georg Fischer
  */
 public class A308747 extends GeneratingFunctionSequence {

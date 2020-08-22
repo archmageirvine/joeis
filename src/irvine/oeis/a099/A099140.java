@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099140 <code>a(n) = 4^n * T(n,3/2)</code> where T is the Chebyshev polynomial of the first kind.
+ * A099140 a(n) = 4^n * T(n,3/2) where T is the Chebyshev polynomial of the first kind.
  * @author Sean A. Irvine
  */
 public class A099140 extends LinearRecurrence {

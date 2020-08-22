@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A132126 Number of nonassociative subloops of order <code>8n</code> of the Cayley octonions (up to isomorphism).
+ * A132126 Number of nonassociative subloops of order 8n of the Cayley octonions (up to isomorphism).
  * @author Georg Fischer
  */
 public class A132126 extends PaddingSequence {

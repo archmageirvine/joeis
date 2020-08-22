@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272912 Difference sequence of the sequence <code>A116470</code> of all distinct Fibonacci numbers and Lucas numbers <code>(A000032)</code>.
+ * A272912 Difference sequence of the sequence A116470 of all distinct Fibonacci numbers and Lucas numbers (A000032).
  * @author Georg Fischer
  */
 public class A272912 extends GeneratingFunctionSequence {

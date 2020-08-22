@@ -4,7 +4,7 @@ import irvine.oeis.ChjTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A032328 "CHJ" <code>(necklace</code>, identity, labeled) transform of 2,2,2,2...
+ * A032328 "CHJ" (necklace, identity, labeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
 public class A032328 extends ChjTransformSequence {

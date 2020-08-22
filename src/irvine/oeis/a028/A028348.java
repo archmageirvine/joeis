@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028348 Numbers n such that <code>n^2 + 3*n + 1</code> is a palindrome.
+ * A028348 Numbers n such that n^2 + 3*n + 1 is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028348 implements Sequence {

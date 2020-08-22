@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090605 Numbers n such that n-th prime is of the form <code>60*k+1</code>.
+ * A090605 Numbers n such that n-th prime is of the form 60*k+1.
  * @author Georg Fischer
  */
 public class A090605 extends A000040 {

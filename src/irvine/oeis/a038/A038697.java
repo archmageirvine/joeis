@@ -6,7 +6,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038697 Convolution of <code>A000917</code> with <code>A000984</code> (central binomial coefficients).
+ * A038697 Convolution of A000917 with A000984 (central binomial coefficients).
  * @author Georg Fischer
  */
 public class A038697 extends HolonomicRecurrence {

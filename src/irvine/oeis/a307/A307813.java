@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307813 <code>a(n) = (5/32)*4^n - floor((n^2 + 1)/2)*2^(n - 2)</code>.
+ * A307813 a(n) = (5/32)*4^n - floor((n^2 + 1)/2)*2^(n - 2).
  * @author Georg Fischer
  */
 public class A307813 extends HolonomicRecurrence {

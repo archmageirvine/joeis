@@ -6,7 +6,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257722 Hexagonal numbers <code>(A000384)</code> that are the sum of eleven consecutive hexagonal numbers.
+ * A257722 Hexagonal numbers (A000384) that are the sum of eleven consecutive hexagonal numbers.
  * @author Georg Fischer
  */
 public class A257722 extends GeneratingFunctionSequence {

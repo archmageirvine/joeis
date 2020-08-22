@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032749 <code>Super-9</code> Numbers <code>(9*n^9</code> contains substring <code>'999999999'</code> in its decimal expansion).
+ * A032749 Super-9 Numbers (9*n^9 contains substring '999999999' in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A032749 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091712 <code>a(n)=6(2n-4)!/((n-2)!n!)</code>, if <code>n&gt;2. a(0)=1,a(1)=a(2)=2</code>.
+ * A091712 a(n)=6(2n-4)!/((n-2)!n!), if n&gt;2. a(0)=1,a(1)=a(2)=2.
  * @author Georg Fischer
  */
 public class A091712 extends HolonomicRecurrence {

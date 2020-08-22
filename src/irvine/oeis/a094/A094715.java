@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094715 <code>a(n) = sum(2i+3j=n, 0&lt;=i&lt;=n, 0&lt;=j&lt;=n, n!/((2i)!(3j)!))</code>.
+ * A094715 a(n) = sum(2i+3j=n, 0&lt;=i&lt;=n, 0&lt;=j&lt;=n, n!/((2i)!(3j)!)).
  * @author Georg Fischer
  */
 public class A094715 extends GeneratingFunctionSequence {

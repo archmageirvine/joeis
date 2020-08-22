@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028428 Clog sequence in base 7. Right to left concatenation of <code>n,int(log_7(n)),int(log_7(int(log_7(n)))),..</code>. in <code>base7</code>.
+ * A028428 Clog sequence in base 7. Right to left concatenation of n,int(log_7(n)),int(log_7(int(log_7(n)))),... in base7.
  * @author Sean A. Irvine
  */
 public class A028428 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a142;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A142155 Expansion of <code>x/( 1+x-x^2-x^4-x^5-x^6-x^7+x^9+x^10 )</code>.
+ * A142155 Expansion of x/( 1+x-x^2-x^4-x^5-x^6-x^7+x^9+x^10 ).
  * @author Sean A. Irvine
  */
 public class A142155 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213247 Number of nonzero elements in <code>GF(2^n)</code> that are <code>11th</code> powers.
+ * A213247 Number of nonzero elements in GF(2^n) that are 11th powers.
  * @author Georg Fischer
  */
 public class A213247 extends GeneratingFunctionSequence {

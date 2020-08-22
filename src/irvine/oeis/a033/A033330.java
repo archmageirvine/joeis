@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033330 <code>Floor(10/n)</code>.
+ * A033330 Floor(10/n).
  * @author Sean A. Irvine
  */
 public class A033330 implements Sequence {

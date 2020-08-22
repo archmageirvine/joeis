@@ -7,7 +7,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A134400 M <code>* A007318</code>, where M = triangle with <code>(1, 1, 2, 3,...)</code> in the main diagonal and the rest zeros.
+ * A134400 M * A007318, where M = triangle with (1, 1, 2, 3,...) in the main diagonal and the rest zeros.
  * @author Georg Fischer
  */
 public class A134400 extends GeneratingFunctionTriangle {

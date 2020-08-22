@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174747 x-values in the solution to <code>x^2-37*y^2=1</code>.
+ * A174747 x-values in the solution to x^2-37*y^2=1.
  * @author Sean A. Irvine
  */
 public class A174747 extends LinearRecurrence {

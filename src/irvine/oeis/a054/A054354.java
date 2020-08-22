@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000002;
 
 /**
- * A054354 First differences of Kolakoski sequence <code>A000002</code>.
+ * A054354 First differences of Kolakoski sequence A000002.
  * @author Georg Fischer
  */
 public class A054354 extends DifferenceSequence {

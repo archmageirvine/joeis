@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014401 Denominators of coefficients of expansion of Bessel function <code>J_3(x)</code>.
+ * A014401 Denominators of coefficients of expansion of Bessel function J_3(x).
  * @author Sean A. Irvine
  */
 public class A014401 implements Sequence {

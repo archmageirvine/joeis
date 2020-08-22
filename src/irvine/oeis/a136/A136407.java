@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A136407 Valid strings, in lexicographic order, of Balls <code>("1")</code> and Strikes <code>("2")</code> in a Baseball <code>at-bat</code>. Numbers that contain only <code>1</code>'s and <code>2</code>'s never exceeding 3 total <code>2</code>'s or 4 total <code>1</code>'s, whichever comes first.
+ * A136407 Valid strings, in lexicographic order, of Balls ("1") and Strikes ("2") in a Baseball at-bat. Numbers that contain only 1's and 2's never exceeding 3 total 2's or 4 total 1's, whichever comes first.
  * @author Georg Fischer
  */
 public class A136407 extends NoncomputableSequence {

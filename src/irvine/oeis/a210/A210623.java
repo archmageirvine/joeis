@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A210623 Decimal expansion of <code>(11111111/10^8)^(1/4)</code>.
+ * A210623 Decimal expansion of (11111111/10^8)^(1/4).
  * @author Georg Fischer
  */
 public class A210623 extends DecimalExpansionSequence {

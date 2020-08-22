@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093353 <code>a(n) = (n + n mod 2)*(n + 1)/2</code>.
+ * A093353 a(n) = (n + n mod 2)*(n + 1)/2.
  * @author Sean A. Irvine
  */
 public class A093353 extends LinearRecurrence {

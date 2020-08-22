@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032734 All 81 combinations of prefixing and following <code>a(n)</code> by a single digit are nonprime.
+ * A032734 All 81 combinations of prefixing and following a(n) by a single digit are nonprime.
  * @author Sean A. Irvine
  */
 public class A032734 implements Sequence {

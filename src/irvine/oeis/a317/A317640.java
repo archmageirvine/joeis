@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317640 The <code>7x+-1</code> function: <code>a(n) = 7n+1</code> if <code>n == +1 (mod 4), a(n) = 7n-1</code> if <code>n == -1 (mod 4)</code>, otherwise <code>a(n) = n/2</code>.
+ * A317640 The 7x+-1 function: a(n) = 7n+1 if n == +1 (mod 4), a(n) = 7n-1 if n == -1 (mod 4), otherwise a(n) = n/2.
  * @author Georg Fischer
  */
 public class A317640 extends GeneratingFunctionSequence {

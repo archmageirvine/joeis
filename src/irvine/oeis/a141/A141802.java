@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A141802 Numbers n such that <code>2*29^n + 1</code> is prime.
+ * A141802 Numbers n such that 2*29^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A141802 extends PowerFactorPrimeSequence {

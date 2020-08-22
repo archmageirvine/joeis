@@ -7,7 +7,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A134309 Triangle read by rows, where row n consists of n zeros followed by <code>2^(n-1)</code>.
+ * A134309 Triangle read by rows, where row n consists of n zeros followed by 2^(n-1).
  * @author Georg Fischer
  */
 public class A134309 extends GeneratingFunctionTriangle {

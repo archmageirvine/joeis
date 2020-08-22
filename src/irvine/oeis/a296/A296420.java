@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A296420 Period of last digit of multiples of <code>n</code>.
+ * A296420 Period of last digit of multiples of n.
  * @author Georg Fischer
  */
 public class A296420 extends PaddingSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049875 <code>a(n)=Sum{a(k): k=0,1,2,...,n-4,n-2,n-1}; a(n-3)</code> is not a summand; 3 initial terms required.
+ * A049875 a(n)=Sum{a(k): k=0,1,2,...,n-4,n-2,n-1}; a(n-3) is not a summand; 3 initial terms required.
  * @author Georg Fischer
  */
 public class A049875 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032664 Digit <code>'1'</code> concatenated with <code>a(n)</code> is a prime.
+ * A032664 Digit '1' concatenated with a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A032664 implements Sequence {

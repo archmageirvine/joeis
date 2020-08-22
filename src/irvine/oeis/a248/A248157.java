@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A248157 Expansion of <code>(1 - 2*x^2)/(1 + x)^2</code>. First column of Riordan triangle <code>A248156</code>.
+ * A248157 Expansion of (1 - 2*x^2)/(1 + x)^2. First column of Riordan triangle A248156.
  * @author Georg Fischer
  */
 public class A248157 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032662 Smallest n concatenated with <code>n + d (d = 0,1,2,3,...)</code> is a prime.
+ * A032662 Smallest n concatenated with n + d (d = 0,1,2,3,...) is a prime.
  * @author Sean A. Irvine
  */
 public class A032662 implements Sequence {

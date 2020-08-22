@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A022828 <code>a(n) =</code> absolute value of <code>( a([ (n+1)/2 ]) - a([ (n+1)/3 ])+...+((-1)^n)a([ (n+1)/n ]) )</code>.
+ * A022828 a(n) = absolute value of ( a([ (n+1)/2 ]) - a([ (n+1)/3 ])+...+((-1)^n)a([ (n+1)/n ]) ).
  * @author Sean A. Irvine
  */
 public class A022828 extends MemorySequence {

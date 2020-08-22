@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225948 <code>a(0) = -1;</code> for <code>n&gt;0, a(n) = numerator(1/4 - 4/n^2)</code>.
+ * A225948 a(0) = -1; for n&gt;0, a(n) = numerator(1/4 - 4/n^2).
  * @author Georg Fischer
  */
 public class A225948 extends GeneratingFunctionSequence {

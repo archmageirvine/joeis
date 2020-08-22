@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245524 <code>a(n) = n^2 - floor(n/2)*(-1)^n</code>.
+ * A245524 a(n) = n^2 - floor(n/2)*(-1)^n.
  * @author Georg Fischer
  */
 public class A245524 extends GeneratingFunctionSequence {

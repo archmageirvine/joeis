@@ -7,7 +7,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A133087 <code>A133080 * A007318</code>.
+ * A133087 A133080 * A007318.
  * @author Georg Fischer
  */
 public class A133087 extends GeneratingFunctionTriangle {

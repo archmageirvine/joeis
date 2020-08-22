@@ -5,7 +5,7 @@ package irvine.oeis.a163;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A163872 Inverse binomial transform of the beta numbers <code>1/beta(n+1,n+1) (A002457)</code>.
+ * A163872 Inverse binomial transform of the beta numbers 1/beta(n+1,n+1) (A002457).
  * @author Georg Fischer
  */
 public class A163872 extends HolonomicRecurrence {

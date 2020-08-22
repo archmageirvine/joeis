@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A166152 <code>a(n) = (6^n+12*(-7)^n)/13</code>.
+ * A166152 a(n) = (6^n+12*(-7)^n)/13.
  * @author Georg Fischer
  */
 public class A166152 extends LinearRecurrence {

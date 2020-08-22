@@ -8,7 +8,7 @@ import jmason.poly.Polyiamond;
 import jmason.poly.PolyiamondCounter;
 
 /**
- * A001420 Number of fixed <code>2-dimensional triangular-celled</code> animals with n cells <code>(n-iamonds</code>, polyiamonds) in the 2-dimensional hexagonal lattice.
+ * A001420 Number of fixed 2-dimensional triangular-celled animals with n cells (n-iamonds, polyiamonds) in the 2-dimensional hexagonal lattice.
  * @author Sean A. Irvine
  */
 public class A001420 implements Sequence {

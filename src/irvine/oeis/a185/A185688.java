@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A185688 First differences of <code>A060819(n-4)*A060819(n)</code>.
+ * A185688 First differences of A060819(n-4)*A060819(n).
  * @author Sean A. Irvine
  */
 public class A185688 extends LinearRecurrence {

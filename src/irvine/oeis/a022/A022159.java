@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A022159 First row of spectral array <code>W(sqrt(3))</code>.
+ * A022159 First row of spectral array W(sqrt(3)).
  * @author Sean A. Irvine
  */
 public class A022159 extends MemorySequence {

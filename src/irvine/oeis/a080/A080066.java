@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000966;
 
 /**
- * A080066 First differences of <code>A000966</code> (number of zeros that <code>n!</code> will never end in).
+ * A080066 First differences of A000966 (number of zeros that n! will never end in).
  * @author Georg Fischer
  */
 public class A080066 extends DifferenceSequence {

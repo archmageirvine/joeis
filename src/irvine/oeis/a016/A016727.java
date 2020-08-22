@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016727 Number of inequivalent solutions to <code>x^2+y^2+z^2 = n^2</code>.
+ * A016727 Number of inequivalent solutions to x^2+y^2+z^2 = n^2.
  * @author Sean A. Irvine
  */
 public class A016727 implements Sequence {

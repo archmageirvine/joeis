@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033234 Primes of form <code>x^2+53*y^2</code>.
+ * A033234 Primes of form x^2+53*y^2.
  * @author Sean A. Irvine
  */
 public class A033234 extends A000040 {

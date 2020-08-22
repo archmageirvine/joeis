@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045798 Oddish numbers (prime to 10 and <code>10</code>'s digit is odd).
+ * A045798 Oddish numbers (prime to 10 and 10's digit is odd).
  * @author Georg Fischer
  */
 public class A045798 extends HolonomicRecurrence {

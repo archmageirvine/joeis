@@ -6,7 +6,7 @@ package irvine.oeis.a304;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A304655 <code>a(n) = (n!)^3 * Sum_{k=1..n-1} 1/(k^3*(n-k)^2)</code>.
+ * A304655 a(n) = (n!)^3 * Sum_{k=1..n-1} 1/(k^3*(n-k)^2).
  * @author Georg Fischer
  */
 public class A304655 extends HolonomicRecurrence {

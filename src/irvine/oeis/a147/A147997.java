@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147997 Number of nonnegative even integers <code>&lt;= Fibonacci(n)</code>.
+ * A147997 Number of nonnegative even integers &lt;= Fibonacci(n).
  * @author Georg Fischer
  */
 public class A147997 extends GeneratingFunctionSequence {

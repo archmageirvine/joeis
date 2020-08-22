@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117606 <code>a(n) =</code> ones digit minus tens digit of the square of <code>a(n-1)</code>, with <code>a(0) = 2</code>.
+ * A117606 a(n) = ones digit minus tens digit of the square of a(n-1), with a(0) = 2.
  * @author Georg Fischer
  */
 public class A117606 extends GeneratingFunctionSequence {

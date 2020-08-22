@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117216 Number of points in the standard root system version of the <code>D_4</code> lattice having <code>L_infinity</code> norm <code>n</code>.
+ * A117216 Number of points in the standard root system version of the D_4 lattice having L_infinity norm n.
  * @author Georg Fischer
  */
 public class A117216 extends GeneratingFunctionSequence {

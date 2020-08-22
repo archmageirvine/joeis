@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029772 Every digit that appears in n also appears at least once in <code>n^2</code>.
+ * A029772 Every digit that appears in n also appears at least once in n^2.
  * @author Sean A. Irvine
  */
 public class A029772 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A057127 -2 is a square <code>mod n</code>.
+ * A057127 -2 is a square mod n.
  * @author Sean A. Irvine
  */
 public class A057127 implements Sequence {

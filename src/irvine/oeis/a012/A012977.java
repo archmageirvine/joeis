@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012977 <code>cos(arctan(x)+sin(x))=1-4/2!*x^2+40/4!*x^4-934/6!*x^6+42648/8!*x^8..</code>.
+ * A012977 cos(arctan(x)+sin(x))=1-4/2!*x^2+40/4!*x^4-934/6!*x^6+42648/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A012977 implements Sequence {

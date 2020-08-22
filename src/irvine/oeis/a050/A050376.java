@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A050376 <code>"Fermi-Dirac</code> primes": numbers of the form <code>p^(2^k)</code> where p is prime and k <code>&gt;= 0</code>.
+ * A050376 "Fermi-Dirac primes": numbers of the form p^(2^k) where p is prime and k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A050376 implements Sequence {

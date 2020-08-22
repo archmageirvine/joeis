@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029785 Numbers k whose cube <code>k^3</code> has no digit in common with k.
+ * A029785 Numbers k whose cube k^3 has no digit in common with k.
  * @author Sean A. Irvine
  */
 public class A029785 implements Sequence {

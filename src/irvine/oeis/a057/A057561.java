@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003586;
 
 /**
- * A057561 Size of the largest set encompassing no <code>{x, 2x, 3x}</code> contained in <code>D(n) =</code> the first <code>n 3-smooth</code> numbers <code>{1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 27, ...} (A003586)</code>.
+ * A057561 Size of the largest set encompassing no {x, 2x, 3x} contained in D(n) = the first n 3-smooth numbers {1, 2, 3, 4, 6, 8, 9, 12, 16, 18, 24, 27, ...} (A003586).
  * @author Sean A. Irvine
  */
 public class A057561 extends A003586 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000064 Partial sums of (unordered) ways of making change for n cents using coins of <code>1, 2, 5, 10</code> cents.
+ * A000064 Partial sums of (unordered) ways of making change for n cents using coins of 1, 2, 5, 10 cents.
  * @author Sean A. Irvine
  */
 public class A000064 implements Sequence {

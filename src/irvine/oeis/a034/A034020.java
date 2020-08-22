@@ -4,7 +4,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a003.A003136;
 
 /**
- * A034020 Not of the form <code>x^2 + x*y + y^2</code>.
+ * A034020 Not of the form x^2 + x*y + y^2.
  * @author Sean A. Irvine
  */
 public class A034020 extends ComplementSequence {

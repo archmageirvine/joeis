@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145840 Number of 4-compositions of <code>n</code>.
+ * A145840 Number of 4-compositions of n.
  * @author Georg Fischer
  */
 public class A145840 extends GeneratingFunctionSequence {

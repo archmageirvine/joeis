@@ -5,7 +5,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159058 <code>A102370(n)</code> modulo <code>8 </code>.
+ * A159058 A102370(n) modulo 8 .
  * @author Georg Fischer
  */
 public class A159058 extends HolonomicRecurrence {

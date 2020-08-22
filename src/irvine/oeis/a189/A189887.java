@@ -5,7 +5,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189887 Dimension of homogeneous component of degree n in x in the Malcev-Poisson superalgebra <code>S^tilde(M)</code>.
+ * A189887 Dimension of homogeneous component of degree n in x in the Malcev-Poisson superalgebra S^tilde(M).
  * @author Georg Fischer
  */
 public class A189887 extends HolonomicRecurrence {

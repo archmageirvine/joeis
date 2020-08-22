@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319667 Palindromes <code>a(n) = (10^n + 1)*(10^(n+1) + 1)</code>.
+ * A319667 Palindromes a(n) = (10^n + 1)*(10^(n+1) + 1).
  * @author Georg Fischer
  */
 public class A319667 extends GeneratingFunctionSequence {

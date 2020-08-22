@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A153048 Numbers n with property that <code>n^2</code> is a concatenation of two 3-digit primes.
+ * A153048 Numbers n with property that n^2 is a concatenation of two 3-digit primes.
  * @author Georg Fischer
  */
 public class A153048 extends FiniteSequence {

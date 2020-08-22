@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013333 <code>sinh(exp(x)-sec(x)) = x + 2/3!*x^3 - 4/4!*x^4 + 12/5!*x^5 - 120/6!*x^6 + ..</code>.
+ * A013333 sinh(exp(x)-sec(x)) = x + 2/3!*x^3 - 4/4!*x^4 + 12/5!*x^5 - 120/6!*x^6 + ...
  * @author Sean A. Irvine
  */
 public class A013333 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A165978 Largest prime factor of number formed from <code>a(n-1)</code> with a 1 added at the end, <code>a(1)=2</code>.
+ * A165978 Largest prime factor of number formed from a(n-1) with a 1 added at the end, a(1)=2.
  * @author Georg Fischer
  */
 public class A165978 extends PaddingSequence {

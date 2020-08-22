@@ -5,7 +5,7 @@ package irvine.oeis.a067;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A067870 Numbers k such that k and <code>3^k</code> end with the same digit.
+ * A067870 Numbers k such that k and 3^k end with the same digit.
  * @author Georg Fischer
  */
 public class A067870 extends HolonomicRecurrence {

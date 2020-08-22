@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007845 Least positive integer k for which <code>5^n</code> divides <code>k!</code>.
+ * A007845 Least positive integer k for which 5^n divides k!.
  * @author Sean A. Irvine
  */
 public class A007845 implements Sequence {

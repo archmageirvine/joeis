@@ -6,7 +6,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224747 Number of lattice paths from <code>(0,0)</code> to <code>(n,0)</code> that do not go below the x-axis and consist of steps <code>U=(1,1), D=(1,-1)</code> and <code>H=(1,0)</code>, where H-steps are only allowed if <code>y=1</code>.
+ * A224747 Number of lattice paths from (0,0) to (n,0) that do not go below the x-axis and consist of steps U=(1,1), D=(1,-1) and H=(1,0), where H-steps are only allowed if y=1.
  * @author Georg Fischer
  */
 public class A224747 extends HolonomicRecurrence {

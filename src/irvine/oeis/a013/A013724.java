@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013724 <code>a(n) = 19^(2*n + 1)</code>.
+ * A013724 a(n) = 19^(2*n + 1).
  * @author Sean A. Irvine
  */
 public class A013724 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129450 <code>a(n) =</code> smallest perfect power that begins and ends with digit n, <code>1 &lt;= n &lt;= 9; one-digit</code> numbers are excluded.
+ * A129450 a(n) = smallest perfect power that begins and ends with digit n, 1 &lt;= n &lt;= 9; one-digit numbers are excluded.
  * @author Georg Fischer
  */
 public class A129450 extends FiniteSequence {

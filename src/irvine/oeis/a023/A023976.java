@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023976 First bit in fractional part of binary expansion of 9th root of <code>n</code>.
+ * A023976 First bit in fractional part of binary expansion of 9th root of n.
  * @author Sean A. Irvine
  */
 public class A023976 implements Sequence {

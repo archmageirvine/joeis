@@ -3,7 +3,7 @@ package irvine.oeis.a240;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A240137 Sum of n consecutive cubes starting from <code>n^3</code>.
+ * A240137 Sum of n consecutive cubes starting from n^3.
  * @author Sean A. Irvine
  */
 public class A240137 extends LinearRecurrence {

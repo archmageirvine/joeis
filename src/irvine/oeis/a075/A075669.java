@@ -6,7 +6,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075669 Sum of next <code>n 8th</code> powers.
+ * A075669 Sum of next n 8th powers.
  * @author Georg Fischer
  */
 public class A075669 extends HolonomicRecurrence {

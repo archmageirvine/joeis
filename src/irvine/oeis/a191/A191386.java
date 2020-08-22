@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191386 Number of ascents of length 1 in all dispersed Dyck paths of length <code>n (i.e.</code>, in all Motzkin paths of length n with no <code>(1,0)</code> steps at positive heights). An ascent is a maximal sequence of consecutive <code>(1,1)-steps</code>.
+ * A191386 Number of ascents of length 1 in all dispersed Dyck paths of length n (i.e., in all Motzkin paths of length n with no (1,0) steps at positive heights). An ascent is a maximal sequence of consecutive (1,1)-steps.
  * @author Georg Fischer
  */
 public class A191386 extends HolonomicRecurrence {

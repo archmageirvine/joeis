@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143607 Numerators of principal and intermediate convergents to <code>2^(1/2)</code>.
+ * A143607 Numerators of principal and intermediate convergents to 2^(1/2).
  * @author Georg Fischer
  */
 public class A143607 extends LinearRecurrence {

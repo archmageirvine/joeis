@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004016;
 
 /**
- * A033668 Theta series of 4-dimensional lattice <code>A_2</code> tensor <code>A2</code>, with det 81, minimal norm 4.
+ * A033668 Theta series of 4-dimensional lattice A_2 tensor A2, with det 81, minimal norm 4.
  * @author Sean A. Irvine
  */
 public class A033668 implements Sequence {

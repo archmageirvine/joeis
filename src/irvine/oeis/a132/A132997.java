@@ -3,7 +3,7 @@ package irvine.oeis.a132;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A132997 Divisors of 299792458, the speed of light <code>(meters/second)</code>.
+ * A132997 Divisors of 299792458, the speed of light (meters/second).
  * @author Georg Fischer
  */
 public class A132997 extends FiniteSequence {

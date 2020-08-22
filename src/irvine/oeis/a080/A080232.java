@@ -7,7 +7,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A080232 Triangle <code>T(n,k)</code> of differences of pairs of consecutive terms of triangle <code>A071919</code>.
+ * A080232 Triangle T(n,k) of differences of pairs of consecutive terms of triangle A071919.
  * @author Georg Fischer
  */
 public class A080232 extends GeneratingFunctionTriangle {

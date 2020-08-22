@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160967 Numbers of the form <code>(4^k - 1)/3</code> or <code>2^k</code>.
+ * A160967 Numbers of the form (4^k - 1)/3 or 2^k.
  * @author Georg Fischer
  */
 public class A160967 extends GeneratingFunctionSequence {

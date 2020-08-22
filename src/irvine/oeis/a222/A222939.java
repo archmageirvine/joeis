@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222939 Number of <code>n X 1 0..4</code> arrays with no element equal to another at a city block distance of exactly two, and new values 0..4 introduced in row major order.
+ * A222939 Number of n X 1 0..4 arrays with no element equal to another at a city block distance of exactly two, and new values 0..4 introduced in row major order.
  * @author Georg Fischer
  */
 public class A222939 extends GeneratingFunctionSequence {

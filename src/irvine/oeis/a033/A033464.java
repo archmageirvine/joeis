@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A033464 Logarithmic (or <code>"LOG")</code> transform of squares <code>A000290</code>.
+ * A033464 Logarithmic (or "LOG") transform of squares A000290.
  * @author Sean A. Irvine
  */
 public class A033464 extends MemorySequence {

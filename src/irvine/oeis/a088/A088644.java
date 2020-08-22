@@ -7,7 +7,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A088644 Smallest n-digit number divisible by <code>n!</code>.
+ * A088644 Smallest n-digit number divisible by n!.
  * @author Georg Fischer
  */
 public class A088644 extends FiniteSequence {

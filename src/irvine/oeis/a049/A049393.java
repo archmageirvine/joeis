@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A049393 Expansion of <code>(1-25*x)^(1/5)</code>.
+ * A049393 Expansion of (1-25*x)^(1/5).
  * @author Sean A. Irvine
  */
 public class A049393 implements Sequence {

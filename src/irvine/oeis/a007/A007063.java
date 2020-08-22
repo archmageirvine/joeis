@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a035.A035486;
 
 /**
- * A007063 Main diagonal of Kimberling's expulsion array <code>(A035486)</code>.
+ * A007063 Main diagonal of Kimberling's expulsion array (A035486).
  * @author Sean A. Irvine
  */
 public class A007063 extends A035486 {

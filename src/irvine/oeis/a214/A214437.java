@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A214437 Least numbers whose groups of <code>2,3,..,n</code> digits taken from the left are divisible by <code>2,3,..,n</code>.
+ * A214437 Least numbers whose groups of 2,3,..,n digits taken from the left are divisible by 2,3,..,n.
  * @author Georg Fischer
  */
 public class A214437 extends FiniteSequence {

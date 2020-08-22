@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A054540 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the six simple ratios of musical harmony: <code>6/5, 5/4, 4/3, 3/2, 8/5</code> and 5/3.
+ * A054540 A list of equal temperaments (equal divisions of the octave) whose nearest scale steps are closer and closer approximations to the six simple ratios of musical harmony: 6/5, 5/4, 4/3, 3/2, 8/5 and 5/3.
  * @author Georg Fischer
  */
 public class A054540 extends NoncomputableSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247375 Numbers n such that <code>floor(n/2)</code> is a square.
+ * A247375 Numbers n such that floor(n/2) is a square.
  * @author Sean A. Irvine
  */
 public class A247375 extends LinearRecurrence {

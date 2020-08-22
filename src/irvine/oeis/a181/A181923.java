@@ -7,7 +7,7 @@ import irvine.oeis.a018.A018252;
 
 
 /**
- * A181923 Nonprimes <code>(A018252) mod 2</code>.
+ * A181923 Nonprimes (A018252) mod 2.
  * @author Georg Fischer
  */
 public class A181923 extends A018252 {

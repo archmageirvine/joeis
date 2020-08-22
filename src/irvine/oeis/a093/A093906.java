@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093906 Start with <code>{2}</code> and close under the operations <code>XY</code> and <code>XY+1;</code> sequence gives complete list of numbers that do not appear.
+ * A093906 Start with {2} and close under the operations XY and XY+1; sequence gives complete list of numbers that do not appear.
  * @author Georg Fischer
  */
 public class A093906 extends FiniteSequence {

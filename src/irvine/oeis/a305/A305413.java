@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305413 <code>a(n) = Fibonacci(11*n)/89</code>.
+ * A305413 a(n) = Fibonacci(11*n)/89.
  * @author Georg Fischer
  */
 public class A305413 extends GeneratingFunctionSequence {

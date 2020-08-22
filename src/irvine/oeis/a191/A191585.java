@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191585 Central coefficients of the Riordan matrix <code>(1/(1-3*x^2),x/(1-x)) (A191582)</code>.
+ * A191585 Central coefficients of the Riordan matrix (1/(1-3*x^2),x/(1-x)) (A191582).
  * @author Georg Fischer
  */
 public class A191585 extends HolonomicRecurrence {

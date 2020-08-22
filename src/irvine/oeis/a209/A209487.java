@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A209487 Number of 6-bead necklaces labeled with numbers <code>-n..n</code> allowing reversal, with sum zero and avoiding the patterns <code>z z+1 z+2</code> and <code>z z-1 z-2</code>.
+ * A209487 Number of 6-bead necklaces labeled with numbers -n..n allowing reversal, with sum zero and avoiding the patterns z z+1 z+2 and z z-1 z-2.
  * @author Georg Fischer
  */
 public class A209487 extends LinearRecurrence {

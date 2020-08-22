@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152299 A threes sequence that gets more even factors out: <code>a(n)=(3^n - 1)*(3^n + 1)/2^(4 - Mod[n, 2])</code>.
+ * A152299 A threes sequence that gets more even factors out: a(n)=(3^n - 1)*(3^n + 1)/2^(4 - Mod[n, 2]).
  * @author Georg Fischer
  */
 public class A152299 extends HolonomicRecurrence {

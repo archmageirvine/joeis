@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 /**
- * A006978 Cellular automaton with <code>000, 001, 010, 011</code>, ..., <code>111 -&gt; 0,1,1,1,0,1,1,0</code>.
+ * A006978 Cellular automaton with 000, 001, 010, 011, ..., 111 -&gt; 0,1,1,1,0,1,1,0.
  * @author Sean A. Irvine
  */
 public class A006978 extends A006977 {

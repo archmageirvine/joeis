@@ -6,7 +6,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064585 <code>a(n) = n^24*(n^2-1)*(n^6+1)*(n^8-1)*(n^12+1)</code>.
+ * A064585 a(n) = n^24*(n^2-1)*(n^6+1)*(n^8-1)*(n^12+1).
  * @author Georg Fischer
  */
 public class A064585 extends HolonomicRecurrence {

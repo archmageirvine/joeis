@@ -5,7 +5,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246999 <code>a(n)</code> is the binary word <code>s21s211s2</code> where s is a string of <code>n 1</code>'s.
+ * A246999 a(n) is the binary word s21s211s2 where s is a string of n 1's.
  * @author Georg Fischer
  */
 public class A246999 extends HolonomicRecurrence {

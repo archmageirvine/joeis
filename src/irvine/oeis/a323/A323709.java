@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323709 <code>a(n)</code> is the number of perfect matchings in the circulant graph on <code>2*n</code> vertices with jumps <code>1, 2</code>, and 3.
+ * A323709 a(n) is the number of perfect matchings in the circulant graph on 2*n vertices with jumps 1, 2, and 3.
  * @author Georg Fischer
  */
 public class A323709 extends GeneratingFunctionSequence {

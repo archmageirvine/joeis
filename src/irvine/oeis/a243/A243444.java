@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A243444 Decimal expansion of <code>6^(1/sqrt(6))</code>.
+ * A243444 Decimal expansion of 6^(1/sqrt(6)).
  * @author Georg Fischer
  */
 public class A243444 extends DecimalExpansionSequence {

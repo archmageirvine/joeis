@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a002.A002419;
 
 /**
- * A317021 Expansion of <code>Product_{k&gt;=1} 1/(1 - x^k)^((3*k-1)*binomial(k+2,3)/2)</code>.
+ * A317021 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^((3*k-1)*binomial(k+2,3)/2).
  * @author Georg Fischer
  */
 public class A317021 extends EulerTransformSequence {

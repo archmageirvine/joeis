@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A130909 Simple periodic sequence <code>(n mod 16)</code>.
+ * A130909 Simple periodic sequence (n mod 16).
  * @author Sean A. Irvine
  */
 public class A130909 extends LinearRecurrence {

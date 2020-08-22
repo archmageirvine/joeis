@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090393 Eighth diagonal <code>(m=7)</code> of triangle <code>A084938; a(n) = A084938(n+7,n) = (n^7 + 63*n^6 + 1855*n^5 + 34125*n^4 + 438424*n^3 + 3980172*n^2 + 20946960*n)/5040</code>.
+ * A090393 Eighth diagonal (m=7) of triangle A084938; a(n) = A084938(n+7,n) = (n^7 + 63*n^6 + 1855*n^5 + 34125*n^4 + 438424*n^3 + 3980172*n^2 + 20946960*n)/5040.
  * @author Georg Fischer
  */
 public class A090393 extends GeneratingFunctionSequence {

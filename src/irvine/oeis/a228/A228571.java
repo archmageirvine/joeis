@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228571 The backwards antidiagonal sums of triangle <code>A228570</code>.
+ * A228571 The backwards antidiagonal sums of triangle A228570.
  * @author Georg Fischer
  */
 public class A228571 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A108812 <code>11^n mod 50</code>.
+ * A108812 11^n mod 50.
  * @author Georg Fischer
  */
 public class A108812 implements Sequence {

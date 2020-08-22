@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078621 Values of n such that <code>Sum[ -(-1)^(k) n/k (n-1)/(k+1),{k,1,n}] (n!!)</code> is an integer.
+ * A078621 Values of n such that Sum[ -(-1)^(k) n/k (n-1)/(k+1),{k,1,n}] (n!!) is an integer.
  * @author Georg Fischer
  */
 public class A078621 extends HolonomicRecurrence {

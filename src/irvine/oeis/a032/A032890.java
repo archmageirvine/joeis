@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032890 Numbers n such that base 2 representation <code>Sum{d(i)*2^i: i=0,1,...,m</code> has <code>d(0)&gt;=d(1)&lt;=d(2)&gt;=..</code>.
+ * A032890 Numbers n such that base 2 representation Sum{d(i)*2^i: i=0,1,...,m has d(0)&gt;=d(1)&lt;=d(2)&gt;=...
  * @author Sean A. Irvine
  */
 public class A032890 implements Sequence {

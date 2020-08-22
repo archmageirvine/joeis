@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A180597 Digital root of <code>7n</code>.
+ * A180597 Digital root of 7n.
  * @author Georg Fischer
  */
 public class A180597 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013810 <code>19^(4*n+1)</code>.
+ * A013810 19^(4*n+1).
  * @author Sean A. Irvine
  */
 public class A013810 implements Sequence {

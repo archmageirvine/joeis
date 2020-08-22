@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002444 Denominator in Feinler's formula for unsigned Bernoulli number <code>|B_{2n}|</code>.
+ * A002444 Denominator in Feinler's formula for unsigned Bernoulli number |B_{2n}|.
  * @author Sean A. Irvine
  */
 public class A002444 implements Sequence {

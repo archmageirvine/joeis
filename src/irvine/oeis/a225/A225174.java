@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a165.A165430;
 
 /**
- * A225174 Square array read by antidiagonals: <code>T(m,n) =</code> greatest common unitary divisor of m and <code>n</code>.
+ * A225174 Square array read by antidiagonals: T(m,n) = greatest common unitary divisor of m and n.
  * @author Sean A. Irvine
  */
 public class A225174 implements Sequence {

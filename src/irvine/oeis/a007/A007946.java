@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007946 <code>a(n) = 6*(2*n+1)! / ((n!)^2*(n+3))</code>.
+ * A007946 a(n) = 6*(2*n+1)! / ((n!)^2*(n+3)).
  * @author Sean A. Irvine
  */
 public class A007946 implements Sequence {

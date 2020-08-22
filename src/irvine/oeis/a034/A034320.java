@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A034320 Coefficients of completely replicable function <code>50a</code> with <code>a(0) = 1</code>.
+ * A034320 Coefficients of completely replicable function 50a with a(0) = 1.
  * @author Georg Fischer
  */
 public class A034320 extends EulerTransform {

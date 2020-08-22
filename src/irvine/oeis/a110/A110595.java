@@ -4,7 +4,7 @@ package irvine.oeis.a110;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A110595 <code>a(1)=5</code>. For <code>n &gt; 1, a(n) = 4*5^(n-1) = A005054(n)</code>.
+ * A110595 a(1)=5. For n &gt; 1, a(n) = 4*5^(n-1) = A005054(n).
  * @author Georg Fischer
  */
 public class A110595 extends GeneratingFunctionSequence {

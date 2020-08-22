@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199336 x-values in the solution to <code>15*x^2 - 14 = y^2</code>.
+ * A199336 x-values in the solution to 15*x^2 - 14 = y^2.
  * @author Sean A. Irvine
  */
 public class A199336 extends LinearRecurrence {

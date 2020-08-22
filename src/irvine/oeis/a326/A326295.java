@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A326295 <code>a(n) =</code> decimal concatenation of <code>n,a(n-1),a(n-2),...,a(1)</code>.
+ * A326295 a(n) = decimal concatenation of n,a(n-1),a(n-2),...,a(1).
  * @author Sean A. Irvine
  */
 public class A326295 extends MemorySequence {

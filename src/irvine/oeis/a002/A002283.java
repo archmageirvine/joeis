@@ -1,7 +1,7 @@
 package irvine.oeis.a002;
 
 /**
- * A002283 <code>a(n) = 10^n - 1</code>.
+ * A002283 a(n) = 10^n - 1.
  * @author Sean A. Irvine
  */
 public class A002283 extends A002275 {

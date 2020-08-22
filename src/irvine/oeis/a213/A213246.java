@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A213246 Number of nonzero elements in <code>GF(2^n)</code> that are 9th powers.
+ * A213246 Number of nonzero elements in GF(2^n) that are 9th powers.
  * @author Sean A. Irvine
  */
 public class A213246 extends LinearRecurrence {

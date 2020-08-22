@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245159 Number of length <code>n 0..4</code> arrays with new values introduced in order from both ends.
+ * A245159 Number of length n 0..4 arrays with new values introduced in order from both ends.
  * @author Georg Fischer
  */
 public class A245159 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A117540 Scrambled version of the first 8 terms of the Fibonacci sequence appearing as one of the clues in <code>_The</code> Da Vinci <code>Code_</code>.
+ * A117540 Scrambled version of the first 8 terms of the Fibonacci sequence appearing as one of the clues in _The Da Vinci Code_.
  * @author Georg Fischer
  */
 public class A117540 extends NoncomputableSequence {

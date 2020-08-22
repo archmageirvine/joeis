@@ -6,7 +6,7 @@ package irvine.oeis.a153;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A153396 G.f.: <code>A(x) = F(x*G(x)^3)</code> where <code>F(x) = G(x/F(x)^2) = 1 + x*F(x)^2</code> is the g.f. of <code>A000108</code> (Catalan) and <code>G(x) = F(x*G(x)^2) = 1 + x*G(x)^4</code> is the g.f. of <code>A002293</code>.
+ * A153396 G.f.: A(x) = F(x*G(x)^3) where F(x) = G(x/F(x)^2) = 1 + x*F(x)^2 is the g.f. of A000108 (Catalan) and G(x) = F(x*G(x)^2) = 1 + x*G(x)^4 is the g.f. of A002293.
  * @author Georg Fischer
  */
 public class A153396 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A031398 Squarefree n with no <code>4k+3</code> factors such that Pell equation <code>x^2 - n y^2 = -1</code> is insoluble.
+ * A031398 Squarefree n with no 4k+3 factors such that Pell equation x^2 - n y^2 = -1 is insoluble.
  * @author Sean A. Irvine
  */
 public class A031398 extends A031399 {

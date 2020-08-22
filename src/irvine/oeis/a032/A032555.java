@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032555 Numbers k whose decimal representation, read as a <code>base-12</code> value and divided by k, yields an integer.
+ * A032555 Numbers k whose decimal representation, read as a base-12 value and divided by k, yields an integer.
  * @author Sean A. Irvine
  */
 public class A032555 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014925 Number of zeros in numbers 1 to <code>111...1 (n+1</code> digits).
+ * A014925 Number of zeros in numbers 1 to 111...1 (n+1 digits).
  * @author Sean A. Irvine
  */
 public class A014925 extends LinearRecurrence {

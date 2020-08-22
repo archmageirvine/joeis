@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123178 Define <code>K(n) = Integral_{t=-1..1} (t^(2n)*(1-t^2)^(2n)/(1+it)^(3n+1))dt</code>, and write <code>K(n) = a(n)*Pi - b(n)/c(n)</code> where <code>a(n), b(n), c(n)</code> are positive integers; the sequence gives <code>a(n)</code>.
+ * A123178 Define K(n) = Integral_{t=-1..1} (t^(2n)*(1-t^2)^(2n)/(1+it)^(3n+1))dt, and write K(n) = a(n)*Pi - b(n)/c(n) where a(n), b(n), c(n) are positive integers; the sequence gives a(n).
  * @author Georg Fischer
  */
 public class A123178 extends HolonomicRecurrence {

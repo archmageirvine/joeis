@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034019 Numbers that are imprimitively (and possibly also primitively) represented by <code>x^2+xy+y^2</code>.
+ * A034019 Numbers that are imprimitively (and possibly also primitively) represented by x^2+xy+y^2.
  * @author Sean A. Irvine
  */
 public class A034019 implements Sequence {

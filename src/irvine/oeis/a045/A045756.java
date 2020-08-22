@@ -6,7 +6,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045756 Expansion of e.g.f. <code>(1-9*x)^(-1/9), 9-factorial</code> numbers.
+ * A045756 Expansion of e.g.f. (1-9*x)^(-1/9), 9-factorial numbers.
  * @author Georg Fischer
  */
 public class A045756 extends HolonomicRecurrence {

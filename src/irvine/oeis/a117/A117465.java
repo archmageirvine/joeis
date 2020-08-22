@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117465 Denominator of <code>-16/((n+2)*n*(n-2)*(n-4))</code>.
+ * A117465 Denominator of -16/((n+2)*n*(n-2)*(n-4)).
  * @author Georg Fischer
  */
 public class A117465 extends GeneratingFunctionSequence {

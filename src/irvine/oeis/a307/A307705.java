@@ -6,7 +6,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a051.A051953;
 
 /**
- * A307705 Expansion of <code>Product_{k&gt;=1} 1/(1 - x^k)^(k-phi(k))</code>, where <code>phi()</code> is the Euler totient function <code>(A000010)</code>.
+ * A307705 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k-phi(k)), where phi() is the Euler totient function (A000010).
  * @author Georg Fischer
  */
 public class A307705 extends EulerTransformSequence {

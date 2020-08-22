@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000796;
 
 
 /**
- * A053746 Positions of <code>2</code>'s in the decimal expansion of <code>Pi</code>.
+ * A053746 Positions of 2's in the decimal expansion of Pi.
  * @author Georg Fischer
  */
 public class A053746 extends PositionSequence {

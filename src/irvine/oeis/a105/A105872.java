@@ -6,7 +6,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105872 <code>a(n) = Sum_{k=0..floor(n/2)} C(2n-3k, n)</code>.
+ * A105872 a(n) = Sum_{k=0..floor(n/2)} C(2n-3k, n).
  * @author Georg Fischer
  */
 public class A105872 extends HolonomicRecurrence {

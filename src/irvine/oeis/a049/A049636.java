@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A049636 Congruent to 0 or <code>2 mod 3</code>, but not equal to 0 or 3.
+ * A049636 Congruent to 0 or 2 mod 3, but not equal to 0 or 3.
  * @author Georg Fischer
  */
 public class A049636 extends GeneratingFunctionSequence {

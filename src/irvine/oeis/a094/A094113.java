@@ -6,7 +6,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094113 Total area of all 1-histograms of length <code>n</code>.
+ * A094113 Total area of all 1-histograms of length n.
  * @author Georg Fischer
  */
 public class A094113 extends HolonomicRecurrence {

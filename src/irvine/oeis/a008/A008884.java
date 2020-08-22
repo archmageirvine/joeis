@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008884 <code>3x+1</code> sequence starting at 27.
+ * A008884 3x+1 sequence starting at 27.
  * @author Sean A. Irvine
  */
 public class A008884 implements Sequence {

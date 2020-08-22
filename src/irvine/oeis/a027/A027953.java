@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027953 <code>a(0)=1, a(n) = Fibonacci(2n+4) - (2n+3)</code>.
+ * A027953 a(0)=1, a(n) = Fibonacci(2n+4) - (2n+3).
  * @author Georg Fischer
  */
 public class A027953 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A280381 Numbers k such that <code>(17*10^k + 31)/3</code> is prime.
+ * A280381 Numbers k such that (17*10^k + 31)/3 is prime.
  * @author Georg Fischer
  */
 public class A280381 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111160 G.f.: C - Z; where C is the g.f. for the Catalan numbers <code>(A000108)</code> and Z is the g.f. for <code>A055113</code> with offset 0.
+ * A111160 G.f.: C - Z; where C is the g.f. for the Catalan numbers (A000108) and Z is the g.f. for A055113 with offset 0.
  * @author Georg Fischer
  */
 public class A111160 extends HolonomicRecurrence {

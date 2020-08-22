@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023961 First digit after decimal point of square root of <code>n</code>.
+ * A023961 First digit after decimal point of square root of n.
  * @author Sean A. Irvine
  */
 public class A023961 implements Sequence {

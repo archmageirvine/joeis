@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191394 Number of base pyramids in all dispersed Dyck paths of length <code>n (i.e.</code>, in all Motzkin paths of length n with no <code>(1,0)-steps</code> at positive heights).
+ * A191394 Number of base pyramids in all dispersed Dyck paths of length n (i.e., in all Motzkin paths of length n with no (1,0)-steps at positive heights).
  * @author Georg Fischer
  */
 public class A191394 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A116711 Number of permutations of length n which avoid the patterns <code>123, 3214, 4312</code>.
+ * A116711 Number of permutations of length n which avoid the patterns 123, 3214, 4312.
  * @author Georg Fischer
  */
 public class A116711 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A008915 Order of universal twisted Chevalley group <code>2_E_6 (q), q =</code> prime power.
+ * A008915 Order of universal twisted Chevalley group 2_E_6 (q), q = prime power.
  * @author Sean A. Irvine
  */
 public class A008915 extends A000961 {

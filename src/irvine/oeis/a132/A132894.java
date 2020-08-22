@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132894 Number of <code>(1,0)</code> steps in all paths of length n with steps <code>U=(1,1), D=(1,-1)</code> and <code>H=(1,0)</code>, starting at <code>(0,0)</code>, staying weakly above the <code>x-axis (i.e.</code>, in all length-n left factors of Motzkin paths).
+ * A132894 Number of (1,0) steps in all paths of length n with steps U=(1,1), D=(1,-1) and H=(1,0), starting at (0,0), staying weakly above the x-axis (i.e., in all length-n left factors of Motzkin paths).
  * @author Georg Fischer
  */
 public class A132894 extends HolonomicRecurrence {

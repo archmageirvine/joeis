@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061038 Denominator of <code>1/4 - 1/n^2</code>.
+ * A061038 Denominator of 1/4 - 1/n^2.
  * @author Sean A. Irvine
  */
 public class A061038 extends LinearRecurrence {

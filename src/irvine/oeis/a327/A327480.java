@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327480 <code>a(n)</code> is the maximum number of squares of unit area that can be removed from an <code>n X n</code> square while still obtaining a connected figure without holes and of the longest perimeter.
+ * A327480 a(n) is the maximum number of squares of unit area that can be removed from an n X n square while still obtaining a connected figure without holes and of the longest perimeter.
  * @author Georg Fischer
  */
 public class A327480 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103505 Denominator in expansion of <code>(1-x)*log(1-x)</code>.
+ * A103505 Denominator in expansion of (1-x)*log(1-x).
  * @author Georg Fischer
  */
 public class A103505 extends GeneratingFunctionSequence {

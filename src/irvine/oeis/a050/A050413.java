@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050413 Numbers k such that <code>74*2^k-1</code> is prime.
+ * A050413 Numbers k such that 74*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050413 extends PowerFactorPrimeSequence {

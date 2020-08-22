@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179600 Eight white kings and one red king on a <code>3 X 3</code> chessboard. G.f.: <code>(1 + x)/(1 - 2*x - 10*x^2 - 4*x^3)</code>.
+ * A179600 Eight white kings and one red king on a 3 X 3 chessboard. G.f.: (1 + x)/(1 - 2*x - 10*x^2 - 4*x^3).
  * @author Georg Fischer
  */
 public class A179600 extends GeneratingFunctionSequence {

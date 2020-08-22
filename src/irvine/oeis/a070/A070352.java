@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070352 <code>a(n) = 3^n mod 5;</code> or period 4, repeat <code>[1, 3, 4, 2]</code>.
+ * A070352 a(n) = 3^n mod 5; or period 4, repeat [1, 3, 4, 2].
  * @author Sean A. Irvine
  */
 public class A070352 extends LinearRecurrence {

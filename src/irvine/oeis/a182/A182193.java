@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182193 Sequence of row differences related to table <code>A182355</code>.
+ * A182193 Sequence of row differences related to table A182355.
  * @author Sean A. Irvine
  */
 public class A182193 extends LinearRecurrence {

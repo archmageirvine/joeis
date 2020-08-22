@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032747 <code>Super-7</code> Numbers <code>(7 x n^7</code> contains substring <code>'7777777'</code> in its decimal expansion).
+ * A032747 Super-7 Numbers (7 x n^7 contains substring '7777777' in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A032747 implements Sequence {

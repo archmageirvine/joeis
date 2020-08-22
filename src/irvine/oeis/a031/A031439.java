@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031439 <code>a(0) = 1, a(n)</code> is the greatest prime factor of <code>a(n-1)^2+1</code> for <code>n &gt; 0</code>.
+ * A031439 a(0) = 1, a(n) is the greatest prime factor of a(n-1)^2+1 for n &gt; 0.
  * @author Sean A. Irvine
  */
 public class A031439 implements Sequence {

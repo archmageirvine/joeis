@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022486 Number of <code>3</code>'s in n-th term of <code>A022482</code>.
+ * A022486 Number of 3's in n-th term of A022482.
  * @author Sean A. Irvine
  */
 public class A022486 extends A022482 {

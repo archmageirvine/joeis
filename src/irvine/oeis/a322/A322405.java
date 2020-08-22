@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322405 Number of compositions of n into parts <code>1, 8, 9</code>.
+ * A322405 Number of compositions of n into parts 1, 8, 9.
  * @author Georg Fischer
  */
 public class A322405 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248924 Sequence derived from arithmetic relations between powers of phi <code>(A001622): a(n) = phi^n - (-1)^n * (n - phi^-n)</code>.
+ * A248924 Sequence derived from arithmetic relations between powers of phi (A001622): a(n) = phi^n - (-1)^n * (n - phi^-n).
  * @author Sean A. Irvine
  */
 public class A248924 extends LinearRecurrence {

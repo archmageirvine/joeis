@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032515 Sum of the integer part of <code>5/2-th</code> roots of integers less than or equal to <code>n</code>.
+ * A032515 Sum of the integer part of 5/2-th roots of integers less than or equal to n.
  * @author Sean A. Irvine
  */
 public class A032515 implements Sequence {

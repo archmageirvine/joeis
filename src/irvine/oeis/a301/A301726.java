@@ -6,7 +6,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301726 Coordination sequence for node of type <code>V2</code> in "kra" 2-D tiling (or net).
+ * A301726 Coordination sequence for node of type V2 in "kra" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301726 extends GeneratingFunctionSequence {

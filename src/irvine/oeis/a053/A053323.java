@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a031.A031928;
 
 /**
- * A053323 First differences of <code>A031928</code>.
+ * A053323 First differences of A031928.
  * @author Georg Fischer
  */
 public class A053323 extends DifferenceSequence {

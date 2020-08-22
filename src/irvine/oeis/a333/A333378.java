@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333378 <code>a(n) = F(n) * (-1)^(n*(n-1)/2)</code> where <code>F(n) = A000045(n)</code> Fibonacci numbers.
+ * A333378 a(n) = F(n) * (-1)^(n*(n-1)/2) where F(n) = A000045(n) Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A333378 extends GeneratingFunctionSequence {

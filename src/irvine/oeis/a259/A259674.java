@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259674 Numbers n such that the sum of the divisors of n equals the third power of the sum of the digits of <code>n</code>.
+ * A259674 Numbers n such that the sum of the divisors of n equals the third power of the sum of the digits of n.
  * @author Georg Fischer
  */
 public class A259674 extends FiniteSequence {

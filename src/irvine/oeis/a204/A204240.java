@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204240 Determinant of the n-th principal submatrix of <code>A204158</code>.
+ * A204240 Determinant of the n-th principal submatrix of A204158.
  * @author Georg Fischer
  */
 public class A204240 extends GeneratingFunctionSequence {

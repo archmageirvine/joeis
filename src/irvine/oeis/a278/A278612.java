@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278612 Sum of terms in level n of TRIP - Stern sequence associated with permutation triple <code>(e</code>, e, <code>e)</code>.
+ * A278612 Sum of terms in level n of TRIP - Stern sequence associated with permutation triple (e, e, e).
  * @author Georg Fischer
  */
 public class A278612 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135989 <code>a(n) = 6*n + 3 + 90*floor((6*n+3)/10)</code>.
+ * A135989 a(n) = 6*n + 3 + 90*floor((6*n+3)/10).
  * @author Georg Fischer
  */
 public class A135989 extends GeneratingFunctionSequence {

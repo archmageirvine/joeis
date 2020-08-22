@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A169604 <code>a(n) = 3*6^n</code>.
+ * A169604 a(n) = 3*6^n.
  * @author Georg Fischer
  */
 public class A169604 extends GeneratingFunctionSequence {

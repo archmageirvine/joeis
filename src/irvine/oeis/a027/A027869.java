@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027869 Number of <code>0</code>'s in <code>n!</code>.
+ * A027869 Number of 0's in n!.
  * @author Sean A. Irvine
  */
 public class A027869 implements Sequence {

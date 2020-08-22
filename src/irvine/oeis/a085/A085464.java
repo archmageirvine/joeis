@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085464 Number of monotone n-weightings of complete bipartite digraph <code>K(4,2)</code>.
+ * A085464 Number of monotone n-weightings of complete bipartite digraph K(4,2).
  * @author Georg Fischer
  */
 public class A085464 extends GeneratingFunctionSequence {

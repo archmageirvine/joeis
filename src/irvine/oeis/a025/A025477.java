@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A025477 Exponent of n-th nontrivial prime power <code>(A025475)</code>.
+ * A025477 Exponent of n-th nontrivial prime power (A025475).
  * @author Sean A. Irvine
  */
 public class A025477 extends A025475 {

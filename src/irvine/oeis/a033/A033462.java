@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A033462 Exponential (or <code>"EXP")</code> transform of squares <code>A000290</code>.
+ * A033462 Exponential (or "EXP") transform of squares A000290.
  * @author Sean A. Irvine
  */
 public class A033462 extends MemorySequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163805 Expansion of <code>(1 - x) * (1 - x^6) / ((1 - x^3) * (1 - x^4))</code> in powers of <code>x</code>.
+ * A163805 Expansion of (1 - x) * (1 - x^6) / ((1 - x^3) * (1 - x^4)) in powers of x.
  * @author Georg Fischer
  */
 public class A163805 extends GeneratingFunctionSequence {

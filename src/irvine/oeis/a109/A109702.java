@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A109702 Number of partitions of n into parts each equal to <code>5 mod 6</code>.
+ * A109702 Number of partitions of n into parts each equal to 5 mod 6.
  * @author Georg Fischer
  */
 public class A109702 extends EulerTransform {

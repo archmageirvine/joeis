@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025763 <code>10th</code> order Vatalan numbers (generalization of Catalan numbers).
+ * A025763 10th order Vatalan numbers (generalization of Catalan numbers).
  * @author Sean A. Irvine
  */
 public class A025763 implements Sequence {

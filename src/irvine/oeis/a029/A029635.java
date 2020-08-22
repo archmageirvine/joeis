@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029635 The <code>(1,2)-Pascal</code> triangle (or Lucas triangle) read by rows.
+ * A029635 The (1,2)-Pascal triangle (or Lucas triangle) read by rows.
  * @author Sean A. Irvine
  */
 public class A029635 extends MemoryFunction2<Long, Z> implements Sequence {

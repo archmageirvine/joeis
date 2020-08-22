@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179708 Number of permutations of <code>1..n</code> having exactly 5 maxima.
+ * A179708 Number of permutations of 1..n having exactly 5 maxima.
  * @author Georg Fischer
  */
 public class A179708 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050833 Numbers k such that <code>163*2^k-1</code> is a prime.
+ * A050833 Numbers k such that 163*2^k-1 is a prime.
  * @author Georg Fischer
  */
 public class A050833 extends PowerFactorPrimeSequence {

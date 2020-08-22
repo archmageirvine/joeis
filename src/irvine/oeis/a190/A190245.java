@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A190245 <code>a(n) = [nu+nv]-[nu]-[nv]</code>, where <code>u=sqrt(2), v=2u</code>, and <code>[]=floor</code>.
+ * A190245 a(n) = [nu+nv]-[nu]-[nv], where u=sqrt(2), v=2u, and []=floor.
  * @author Georg Fischer
  */
 public class A190245 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089324 Number of lattice paths from <code>(0,0)</code> to the line <code>x+y=n</code> that use the step set <code>{(0,1),(1,0),(2,0),(3,0),...}</code> and never pass below <code>y=x</code>.
+ * A089324 Number of lattice paths from (0,0) to the line x+y=n that use the step set {(0,1),(1,0),(2,0),(3,0),...} and never pass below y=x.
  * @author Georg Fischer
  */
 public class A089324 extends HolonomicRecurrence {

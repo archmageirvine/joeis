@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005521 <code>1 +</code> (sum of first n odd primes <code>- n)/2</code>.
+ * A005521 1 + (sum of first n odd primes - n)/2.
  * @author Sean A. Irvine
  */
 public class A005521 implements Sequence {

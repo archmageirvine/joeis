@@ -5,7 +5,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A085747 Least positive k such that <code>n! +</code> k is a semiprime.
+ * A085747 Least positive k such that n! + k is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085747 implements Sequence {

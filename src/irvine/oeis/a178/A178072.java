@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178072 Sequence with Hankel transform equal to the <code>Somos-4</code> sequence <code>A006769(n+2)</code>.
+ * A178072 Sequence with Hankel transform equal to the Somos-4 sequence A006769(n+2).
  * @author Georg Fischer
  */
 public class A178072 extends HolonomicRecurrence {

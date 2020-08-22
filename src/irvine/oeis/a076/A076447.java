@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A076447 Let <code>v(1)=v(2)=v(3)=1, v(n)=(-1)^n*sign(v(n-1)-v(n-2))*v(n-3)</code>, then <code>a(n) =1+v(n)</code>.
+ * A076447 Let v(1)=v(2)=v(3)=1, v(n)=(-1)^n*sign(v(n-1)-v(n-2))*v(n-3), then a(n) =1+v(n).
  * @author Georg Fischer
  */
 public class A076447 extends PaddingSequence {

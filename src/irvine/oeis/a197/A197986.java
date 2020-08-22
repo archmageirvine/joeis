@@ -5,7 +5,7 @@ package irvine.oeis.a197;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A197986 <code>Round((n+1/n)^3)</code>.
+ * A197986 Round((n+1/n)^3).
  * @author Georg Fischer
  */
 public class A197986 extends HolonomicRecurrence {

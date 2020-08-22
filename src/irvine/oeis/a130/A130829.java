@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001670;
 
 /**
- * A130829 <code>2n+1</code> appears <code>2n</code> times.
+ * A130829 2n+1 appears 2n times.
  * @author Georg Fischer
  */
 public class A130829 extends A001670 {

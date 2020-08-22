@@ -6,7 +6,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045621 <code>a(n) = 2^n - binomial(n, floor(n/2))</code>.
+ * A045621 a(n) = 2^n - binomial(n, floor(n/2)).
  * @author Georg Fischer
  */
 public class A045621 extends HolonomicRecurrence {

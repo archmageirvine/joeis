@@ -6,7 +6,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201471 Maximal diameter of a connected <code>n-gamma_t-vertex-critical</code> graph.
+ * A201471 Maximal diameter of a connected n-gamma_t-vertex-critical graph.
  * @author Georg Fischer
  */
 public class A201471 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A109252 Number of fair sudoku problems with n given values on a <code>4 x 4</code> grid.
+ * A109252 Number of fair sudoku problems with n given values on a 4 x 4 grid.
  * @author Georg Fischer
  */
 public class A109252 extends FiniteSequence {

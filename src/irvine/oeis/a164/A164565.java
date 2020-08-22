@@ -5,7 +5,7 @@ package irvine.oeis.a164;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A164565 <code>A156977/3</code>.
+ * A164565 A156977/3.
  * @author Georg Fischer
  */
 public class A164565 extends FiniteSequence {

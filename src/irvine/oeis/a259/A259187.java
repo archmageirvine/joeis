@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259187 Primes p such that both p and <code>p^2</code> are distinct-digit numbers.
+ * A259187 Primes p such that both p and p^2 are distinct-digit numbers.
  * @author Georg Fischer
  */
 public class A259187 extends FiniteSequence {

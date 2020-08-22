@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034085 Decimal part of n-th root of <code>a(n)</code> starts with digit 8.
+ * A034085 Decimal part of n-th root of a(n) starts with digit 8.
  * @author Sean A. Irvine
  */
 public class A034085 implements Sequence {

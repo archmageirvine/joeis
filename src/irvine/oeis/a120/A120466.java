@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120466 <code>a(n) = Sum_{i=1..16} (M^n)_{1,i}</code>, where M is a <code>16 X 16</code> matrix given in the comments.
+ * A120466 a(n) = Sum_{i=1..16} (M^n)_{1,i}, where M is a 16 X 16 matrix given in the comments.
  * @author Georg Fischer
  */
 public class A120466 extends HolonomicRecurrence {

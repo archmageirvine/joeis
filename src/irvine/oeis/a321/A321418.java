@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321418 Number of n element multisets of the <code>15th</code> roots of unity with zero sum.
+ * A321418 Number of n element multisets of the 15th roots of unity with zero sum.
  * @author Georg Fischer
  */
 public class A321418 extends GeneratingFunctionSequence {

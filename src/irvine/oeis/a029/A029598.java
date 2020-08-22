@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixRepresentatives;
 
 /**
- * A029598 Numbers represented by quadratic form with Gram matrix <code>[ 2, 1, 0; 1, 2, 1; 0, 1, 3 ]</code>.
+ * A029598 Numbers represented by quadratic form with Gram matrix [ 2, 1, 0; 1, 2, 1; 0, 1, 3 ].
  * @author Sean A. Irvine
  */
 public class A029598 extends GramMatrixRepresentatives {

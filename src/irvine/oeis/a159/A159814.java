@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A159814 Expansion of <code>eta(z)^2*eta(4*z)^6/eta(2*z)</code>.
+ * A159814 Expansion of eta(z)^2*eta(4*z)^6/eta(2*z).
  * @author Georg Fischer
  */
 public class A159814 extends EulerTransform {

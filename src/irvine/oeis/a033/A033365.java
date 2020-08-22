@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033365 <code>[ 45/n ]</code>.
+ * A033365 [ 45/n ].
  * @author Sean A. Irvine
  */
 public class A033365 implements Sequence {

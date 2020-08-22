@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190570 Number of <code>n-step one-sided</code> prudent walks, avoiding exactly two consecutive west steps and two consecutive east steps.
+ * A190570 Number of n-step one-sided prudent walks, avoiding exactly two consecutive west steps and two consecutive east steps.
  * @author Georg Fischer
  */
 public class A190570 extends GeneratingFunctionSequence {

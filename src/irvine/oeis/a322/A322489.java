@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322489 Numbers k such that <code>k^k</code> ends with 4.
+ * A322489 Numbers k such that k^k ends with 4.
  * @author Georg Fischer
  */
 public class A322489 extends GeneratingFunctionSequence {

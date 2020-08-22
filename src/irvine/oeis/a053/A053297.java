@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053297 Row sums of array T in <code>A053199</code>.
+ * A053297 Row sums of array T in A053199.
  * @author Georg Fischer
  */
 public class A053297 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030646 Weight enumerator of <code>[ 42,21,10 ]</code> XQR code.
+ * A030646 Weight enumerator of [ 42,21,10 ] XQR code.
  * @author Georg Fischer
  */
 public class A030646 extends FiniteSequence {

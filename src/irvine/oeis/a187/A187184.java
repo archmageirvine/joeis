@@ -5,7 +5,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187184 Parse the infinite string 0123450123450123450... into distinct phrases <code>0, 1, 2, 3, 4, 5, 01, 23, 45, 012, 34</code>, ...; <code>a(n) =</code> length of n-th phrase.
+ * A187184 Parse the infinite string 0123450123450123450... into distinct phrases 0, 1, 2, 3, 4, 5, 01, 23, 45, 012, 34, ...; a(n) = length of n-th phrase.
  * @author Georg Fischer
  */
 public class A187184 extends HolonomicRecurrence {

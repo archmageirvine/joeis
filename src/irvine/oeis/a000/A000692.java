@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
 import irvine.util.io.IOUtils;
 
 /**
- * A000692 An approximation to population of <code>x^2 + y^2</code>.
+ * A000692 An approximation to population of x^2 + y^2.
  * @author Sean A. Irvine
  */
 public class A000692 implements Sequence {

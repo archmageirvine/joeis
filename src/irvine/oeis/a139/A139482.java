@@ -4,7 +4,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139482 Binomial transform of <code>[1, 1, 2, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, ...]</code>.
+ * A139482 Binomial transform of [1, 1, 2, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, ...].
  * @author Georg Fischer
  */
 public class A139482 extends LinearRecurrence {

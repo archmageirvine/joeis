@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A022583 Expansion of <code>Product_{m&gt;=1} (1+x^m)^18</code>.
+ * A022583 Expansion of Product_{m&gt;=1} (1+x^m)^18.
  * @author Sean A. Irvine
  */
 public class A022583 extends EulerTransformSequence {

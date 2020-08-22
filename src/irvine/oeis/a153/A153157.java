@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a007.A007916;
 
 /**
- * A153157 <code>A007916(n)^4</code>.
+ * A153157 A007916(n)^4.
  * @author Georg Fischer
  */
 public class A153157 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.PositionOfNSequence;
 
 /**
- * A026267 <code>a(n) =</code> position of n in <code>A026266</code>.
+ * A026267 a(n) = position of n in A026266.
  * @author Sean A. Irvine
  */
 public class A026267 extends PositionOfNSequence {

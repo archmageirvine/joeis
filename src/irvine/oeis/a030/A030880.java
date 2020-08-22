@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030880 <code>a(n) = floor( exp(11/18)*n! )</code>.
+ * A030880 a(n) = floor( exp(11/18)*n! ).
  * @author Sean A. Irvine
  */
 public class A030880 implements Sequence {

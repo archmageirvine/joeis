@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177146 n-th derivative of <code>arctan(x)</code> at <code>x = 1, n &gt;= 4</code>.
+ * A177146 n-th derivative of arctan(x) at x = 1, n &gt;= 4.
  * @author Georg Fischer
  */
 public class A177146 extends HolonomicRecurrence {

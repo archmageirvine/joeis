@@ -6,7 +6,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168503 Expansion of <code>1/(1-x/(1-2x/(1-3x/(1-x/(1-2x/(1-3x/(1-..</code>. (continued fraction).
+ * A168503 Expansion of 1/(1-x/(1-2x/(1-3x/(1-x/(1-2x/(1-3x/(1-... (continued fraction).
  * @author Georg Fischer
  */
 public class A168503 extends HolonomicRecurrence {

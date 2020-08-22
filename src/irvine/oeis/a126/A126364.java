@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126364 Number of base <code>10 n-digit</code> numbers with adjacent digits differing by one or less.
+ * A126364 Number of base 10 n-digit numbers with adjacent digits differing by one or less.
  * @author Sean A. Irvine
  */
 public class A126364 extends LinearRecurrence {

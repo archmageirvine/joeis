@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008631 Molien series for alternating group <code>Alt_8</code> (or <code>A_8)</code>.
+ * A008631 Molien series for alternating group Alt_8 (or A_8).
  * @author Sean A. Irvine
  */
 public class A008631 extends LinearRecurrence {

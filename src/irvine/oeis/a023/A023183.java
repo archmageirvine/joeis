@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023183 <code>a(n) =</code> least k such that <code>Fib(k)</code> ends with <code>n</code>.
+ * A023183 a(n) = least k such that Fib(k) ends with n.
  * @author Sean A. Irvine
  */
 public class A023183 implements Sequence {

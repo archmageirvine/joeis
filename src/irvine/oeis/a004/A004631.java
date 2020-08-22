@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004631 Squares written in base <code>16</code>. (Next term contains a <code>non-decimal character.)</code>.
+ * A004631 Squares written in base 16. (Next term contains a non-decimal character.).
  * @author Sean A. Irvine
  */
 public class A004631 implements Sequence {

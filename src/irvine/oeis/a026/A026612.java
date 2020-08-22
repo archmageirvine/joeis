@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026612 <code>a(n) =</code> number of <code>1</code>'s between <code>n-th 3</code> and <code>(n+1)st 3</code> in <code>A026600</code>.
+ * A026612 a(n) = number of 1's between n-th 3 and (n+1)st 3 in A026600.
  * @author Sean A. Irvine
  */
 public class A026612 extends A026600 {

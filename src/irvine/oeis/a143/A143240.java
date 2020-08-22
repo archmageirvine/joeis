@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A143240 Expansion of <code>Product_{k&gt;0} (1 - x^(3*k)) / (1 - x^(3*k - 1))</code>.
+ * A143240 Expansion of Product_{k&gt;0} (1 - x^(3*k)) / (1 - x^(3*k - 1)).
  * @author Georg Fischer
  */
 public class A143240 extends EulerTransform {

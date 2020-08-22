@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013244 <code>sec(log(x+1)-tan(x))=1+3/4!*x^4+90/6!*x^6-168/7!*x^7+5145/8!*x^8..</code>.
+ * A013244 sec(log(x+1)-tan(x))=1+3/4!*x^4+90/6!*x^6-168/7!*x^7+5145/8!*x^8...
  * @author Sean A. Irvine
  */
 public class A013244 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005797 Expansion of Jacobi nome q in terms of parameter <code>m/16</code>.
+ * A005797 Expansion of Jacobi nome q in terms of parameter m/16.
  * @author Sean A. Irvine
  */
 public class A005797 implements Sequence {

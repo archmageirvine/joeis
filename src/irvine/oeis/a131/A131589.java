@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131589 Expansion of <code>(3+9*x+2*x^2)/((x+1)*(x^2+3*x+1))</code>.
+ * A131589 Expansion of (3+9*x+2*x^2)/((x+1)*(x^2+3*x+1)).
  * @author Georg Fischer
  */
 public class A131589 extends HolonomicRecurrence {

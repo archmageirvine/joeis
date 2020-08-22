@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A230113 Digital root of summed Fibonacci and Lucas digital roots indexed by numbers not divisible by <code>2, 3</code> or 5.
+ * A230113 Digital root of summed Fibonacci and Lucas digital roots indexed by numbers not divisible by 2, 3 or 5.
  * @author Georg Fischer
  */
 public class A230113 extends PaddingSequence {

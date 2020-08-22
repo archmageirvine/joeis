@@ -4,7 +4,7 @@ package irvine.oeis.a194;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A194494 Number of ways to arrange 4 nonattacking queens on the lower triangle of an <code>n X n</code> board.
+ * A194494 Number of ways to arrange 4 nonattacking queens on the lower triangle of an n X n board.
  * @author Georg Fischer
  */
 public class A194494 extends GeneratingFunctionSequence {

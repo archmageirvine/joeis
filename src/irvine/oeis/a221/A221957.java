@@ -5,7 +5,7 @@ package irvine.oeis.a221;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A221957 Number of <code>n X n</code> rook placements avoiding the pattern 012.
+ * A221957 Number of n X n rook placements avoiding the pattern 012.
  * @author Georg Fischer
  */
 public class A221957 extends HolonomicRecurrence {

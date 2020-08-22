@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A132130 McKay-Thompson series of class <code>10D</code> for the Monster group with <code>a(0) = 6</code>.
+ * A132130 McKay-Thompson series of class 10D for the Monster group with a(0) = 6.
  * @author Georg Fischer
  */
 public class A132130 extends EulerTransform {

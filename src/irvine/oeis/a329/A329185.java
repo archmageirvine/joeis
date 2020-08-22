@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329185 Number of ways to tile a <code>2 X n</code> grid with dominoes and L-trominoes such that no four tiles meet at a corner.
+ * A329185 Number of ways to tile a 2 X n grid with dominoes and L-trominoes such that no four tiles meet at a corner.
  * @author Georg Fischer
  */
 public class A329185 extends HolonomicRecurrence {

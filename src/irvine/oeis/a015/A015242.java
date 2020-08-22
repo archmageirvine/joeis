@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015242 <code>a(n) = (2*n - 7)*n^2</code>.
+ * A015242 a(n) = (2*n - 7)*n^2.
  * @author Sean A. Irvine
  */
 public class A015242 implements Sequence {

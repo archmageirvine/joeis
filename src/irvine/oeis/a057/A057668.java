@@ -6,7 +6,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057668 Number of minimal 7-covers of a labeled <code>n-set</code>.
+ * A057668 Number of minimal 7-covers of a labeled n-set.
  * @author Georg Fischer
  */
 public class A057668 extends GeneratingFunctionSequence {

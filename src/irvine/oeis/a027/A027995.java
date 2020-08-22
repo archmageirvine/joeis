@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027995 <code>a(n)=Sum{T(n,k)*T(n,k+1)}, 0&lt;=k&lt;=2n-1</code>, T given by <code>A027926</code>.
+ * A027995 a(n)=Sum{T(n,k)*T(n,k+1)}, 0&lt;=k&lt;=2n-1, T given by A027926.
  * @author Sean A. Irvine
  */
 public class A027995 implements Sequence {

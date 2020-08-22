@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239288 Maximal sum of <code>x0 + x0*x1 + ... + x0*x1*...*xk</code> over all compositions <code>x0 + ... + xk = n</code>.
+ * A239288 Maximal sum of x0 + x0*x1 + ... + x0*x1*...*xk over all compositions x0 + ... + xk = n.
  * @author Georg Fischer
  */
 public class A239288 extends GeneratingFunctionSequence {

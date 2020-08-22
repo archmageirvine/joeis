@@ -5,7 +5,7 @@ package irvine.oeis.a054;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A054888 Layer counting sequence for hyperbolic tessellation by regular pentagons of angle <code>Pi/2</code>.
+ * A054888 Layer counting sequence for hyperbolic tessellation by regular pentagons of angle Pi/2.
  * @author Georg Fischer
  */
 public class A054888 extends HolonomicRecurrence {

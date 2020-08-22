@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247996 Number of length <code>1+5 0..n</code> arrays with no disjoint triples in any consecutive six terms having the same sum.
+ * A247996 Number of length 1+5 0..n arrays with no disjoint triples in any consecutive six terms having the same sum.
  * @author Georg Fischer
  */
 public class A247996 extends GeneratingFunctionSequence {

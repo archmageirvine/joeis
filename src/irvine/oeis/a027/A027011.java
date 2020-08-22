@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027011 Triangular array T read by rows: <code>T(n,k) = t(n, 2k+1)</code> for <code>0 &lt;= k &lt;= floor((2n-1)/2)</code>, t given by <code>A027960, n &gt;= 0</code>.
+ * A027011 Triangular array T read by rows: T(n,k) = t(n, 2k+1) for 0 &lt;= k &lt;= floor((2n-1)/2), t given by A027960, n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A027011 extends A027960 {

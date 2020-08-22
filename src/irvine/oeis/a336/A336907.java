@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336907 Number of <code>n-step self-avoiding</code> walks on the f.c.c. lattice with no non-contiguous adjacencies.
+ * A336907 Number of n-step self-avoiding walks on the f.c.c. lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A336907 implements Sequence {

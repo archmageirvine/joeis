@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001620;
 
 
 /**
- * A054312 Positions of <code>6</code>'s in the decimal expansion of Euler's constant.
+ * A054312 Positions of 6's in the decimal expansion of Euler's constant.
  * @author Georg Fischer
  */
 public class A054312 extends PositionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A324002 Row 3 of array in <code>A324000</code>.
+ * A324002 Row 3 of array in A324000.
  * @author Georg Fischer
  */
 public class A324002 extends PaddingSequence {

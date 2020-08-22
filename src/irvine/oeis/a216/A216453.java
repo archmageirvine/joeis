@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A216453 Number of points hidden from the central point by a closer point in a hexagonal orchard of order <code>n</code>.
+ * A216453 Number of points hidden from the central point by a closer point in a hexagonal orchard of order n.
  * @author Sean A. Irvine
  */
 public class A216453 implements Sequence {

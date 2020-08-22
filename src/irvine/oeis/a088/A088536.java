@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088536 Number of unimodal functions <code>[1..n]-&gt;[1..n]</code>.
+ * A088536 Number of unimodal functions [1..n]-&gt;[1..n].
  * @author Georg Fischer
  */
 public class A088536 extends HolonomicRecurrence {

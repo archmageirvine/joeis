@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014432;
 
 /**
- * A025237 Expansion of <code>(1 -x -sqrt(1-2*x-11*x^2))/(6*x^2)</code>.
+ * A025237 Expansion of (1 -x -sqrt(1-2*x-11*x^2))/(6*x^2).
  * @author Sean A. Irvine
  */
 public class A025237 extends A014432 {

@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089094 Convoluted convolved Fibonacci numbers <code>G_j^(7)</code>.
+ * A089094 Convoluted convolved Fibonacci numbers G_j^(7).
  * @author Georg Fischer
  */
 public class A089094 extends GeneratingFunctionSequence {

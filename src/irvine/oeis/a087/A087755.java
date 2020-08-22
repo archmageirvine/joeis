@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008275;
 
 
 /**
- * A087755 Triangle read by rows: Stirling numbers of the first kind <code>(A008275) mod 2</code>.
+ * A087755 Triangle read by rows: Stirling numbers of the first kind (A008275) mod 2.
  * @author Georg Fischer
  */
 public class A087755 extends A008275 {

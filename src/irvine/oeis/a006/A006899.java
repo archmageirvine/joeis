@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000079;
 import irvine.oeis.a000.A000244;
 
 /**
- * A006899 Numbers of the form <code>2^i</code> or <code>3^j</code>.
+ * A006899 Numbers of the form 2^i or 3^j.
  * @author Sean A. Irvine
  */
 public class A006899 extends UnionSequence {

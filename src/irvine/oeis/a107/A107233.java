@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107233 An inverse Chebyshev transform of <code>n^3</code>.
+ * A107233 An inverse Chebyshev transform of n^3.
  * @author Georg Fischer
  */
 public class A107233 extends HolonomicRecurrence {

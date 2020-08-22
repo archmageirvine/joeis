@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254244 Decimal expansion of atomic unit of charge density in C <code>m^-3</code>.
+ * A254244 Decimal expansion of atomic unit of charge density in C m^-3.
  * @author Georg Fischer
  */
 public class A254244 extends NoncomputableSequence {

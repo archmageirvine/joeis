@@ -6,7 +6,7 @@ package irvine.oeis.a242;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A242798 Expansion of <code>-x*d(log((1-x*(2/sqrt(3*x)) * sin((1/3) * arcsin(sqrt(27*x/4))))))/dx</code>.
+ * A242798 Expansion of -x*d(log((1-x*(2/sqrt(3*x)) * sin((1/3) * arcsin(sqrt(27*x/4))))))/dx.
  * @author Georg Fischer
  */
 public class A242798 extends HolonomicRecurrence {

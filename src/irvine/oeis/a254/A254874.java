@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254874 <code>a(n) = floor((10*n^3 + 63*n^2 + 126*n + 89) / 72)</code>.
+ * A254874 a(n) = floor((10*n^3 + 63*n^2 + 126*n + 89) / 72).
  * @author Sean A. Irvine
  */
 public class A254874 extends LinearRecurrence {

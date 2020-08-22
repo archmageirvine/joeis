@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289841 Number of elements added at n-th stage to the structure of the complex square cross described in <code>A289840</code>.
+ * A289841 Number of elements added at n-th stage to the structure of the complex square cross described in A289840.
  * @author Georg Fischer
  */
 public class A289841 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029913 Start with n; if prime, stop; repeatedly sum squares of prime factors (counted with multiplicity), until reach 16 or a prime; set <code>a(n) = 0</code> if no limit exists.
+ * A029913 Start with n; if prime, stop; repeatedly sum squares of prime factors (counted with multiplicity), until reach 16 or a prime; set a(n) = 0 if no limit exists.
  * @author Sean A. Irvine
  */
 public class A029913 implements Sequence {

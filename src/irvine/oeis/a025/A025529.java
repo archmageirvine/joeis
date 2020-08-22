@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025529 <code>a(n) = (1/1 + 1/2 + ... + 1/n)*lcm{1,2,...,n}</code>.
+ * A025529 a(n) = (1/1 + 1/2 + ... + 1/n)*lcm{1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A025529 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180972 Numbers n such that <code>8^9 + n^2</code> is a square.
+ * A180972 Numbers n such that 8^9 + n^2 is a square.
  * @author Georg Fischer
  */
 public class A180972 extends FiniteSequence {

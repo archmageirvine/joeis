@@ -7,7 +7,7 @@ import irvine.math.group.PolynomialRingField;
 import irvine.math.group.IntegerField;
 
 /**
- * A002655 Expansion of <code>Product_{i &gt;= 1} (1-q^i)(1-q^{7i})</code>.
+ * A002655 Expansion of Product_{i &gt;= 1} (1-q^i)(1-q^{7i}).
  * @author Sean A. Irvine
  */
 public class A002655 implements Sequence {

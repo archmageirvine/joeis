@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A285631 <code>a(n) =</code> negative of exponent of <code>s(1)</code> in factorization of <code>s(n)</code> where <code>s(1)^2 * s(n+2) * s(n-2) = s(2)^2 * s(n+1) * s(n-1) - s(3) * s(1) * s(n)^2, s(n) = -s(-n)</code> for all n in Z, with <code>a(0) = -3</code>, and <code>s(1), s(2), s(3), s(4)</code> are variables.
+ * A285631 a(n) = negative of exponent of s(1) in factorization of s(n) where s(1)^2 * s(n+2) * s(n-2) = s(2)^2 * s(n+1) * s(n-1) - s(3) * s(1) * s(n)^2, s(n) = -s(-n) for all n in Z,  with a(0) = -3, and s(1), s(2), s(3), s(4) are variables.
  * @author Georg Fischer
  */
 public class A285631 extends GeneratingFunctionSequence {

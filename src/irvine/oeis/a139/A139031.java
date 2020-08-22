@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139031 Imaginary part of <code>(4 + 3i)^n</code>.
+ * A139031 Imaginary part of (4 + 3i)^n.
  * @author Sean A. Irvine
  */
 public class A139031 extends LinearRecurrence {

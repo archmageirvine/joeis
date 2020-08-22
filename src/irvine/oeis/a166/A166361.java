@@ -3,7 +3,7 @@ package irvine.oeis.a166;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A166361 Scale degrees of the roots of chords in a traditional <code>"twelve-bar</code> blues" in Western music.
+ * A166361 Scale degrees of the roots of chords in a traditional "twelve-bar blues" in Western music.
  * @author Georg Fischer
  */
 public class A166361 extends FiniteSequence {

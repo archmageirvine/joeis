@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050831 Numbers n such that <code>159*2^n-1</code> is prime.
+ * A050831 Numbers n such that 159*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050831 extends PowerFactorPrimeSequence {

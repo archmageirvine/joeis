@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113116 Divisors of <code>10^17 - 1</code>.
+ * A113116 Divisors of 10^17 - 1.
  * @author Georg Fischer
  */
 public class A113116 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 
 
 /**
- * A095143 Triangle formed by reading Pascal's triangle <code>(A007318) mod 9</code>.
+ * A095143 Triangle formed by reading Pascal's triangle (A007318) mod 9.
  * @author Georg Fischer
  */
 public class A095143 extends A007318 {

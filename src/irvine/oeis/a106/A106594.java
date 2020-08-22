@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A106594 <code>a(n) =</code> number of primitive solutions to <code>4n+1 = x^2 + y^2</code>.
+ * A106594 a(n) = number of primitive solutions to 4n+1 = x^2 + y^2.
  * @author Sean A. Irvine
  */
 public class A106594 implements Sequence {

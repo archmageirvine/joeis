@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A092872 Expansion of <code>r(q^9) / (r(q) r(q^3))</code> in powers of q where <code>r()</code> is the Rogers-Ramanujan continued fraction function <code>(A007325)</code>.
+ * A092872 Expansion of r(q^9) / (r(q) r(q^3)) in powers of q where r() is the Rogers-Ramanujan continued fraction function (A007325).
  * @author Georg Fischer
  */
 public class A092872 extends EulerTransform {

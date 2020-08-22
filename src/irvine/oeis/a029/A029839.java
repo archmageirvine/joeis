@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A029839 McKay-Thompson series of class <code>16B</code> for the Monster group.
+ * A029839 McKay-Thompson series of class 16B for the Monster group.
  * @author Georg Fischer
  */
 public class A029839 extends EulerTransform {

@@ -4,7 +4,7 @@ package irvine.oeis.a113;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A113806 Numbers that are congruent to <code>{6, 8} mod 14</code>.
+ * A113806 Numbers that are congruent to {6, 8} mod 14.
  * @author Georg Fischer
  */
 public class A113806 extends GeneratingFunctionSequence {

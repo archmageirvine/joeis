@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A071619 <code>a(n) = ceiling( 2*n^2/3 )</code>.
+ * A071619 a(n) = ceiling( 2*n^2/3 ).
  * @author Sean A. Irvine
  */
 public class A071619 extends LinearRecurrence {

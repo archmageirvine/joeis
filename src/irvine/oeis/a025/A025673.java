@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025673 Exponent of <code>8</code> (value of <code>j)</code> in n-th number of form <code>5^i*8^j</code>.
+ * A025673 Exponent of 8 (value of j) in n-th number of form 5^i*8^j.
  * @author Sean A. Irvine
  */
 public class A025673 extends A025623 {

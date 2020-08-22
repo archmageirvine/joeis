@@ -6,7 +6,7 @@ package irvine.oeis.a067;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A067370 The weight of the periphery of the alternating group, denoted <code>v(P_N)</code>.
+ * A067370 The weight of the periphery of the alternating group, denoted v(P_N).
  * @author Georg Fischer
  */
 public class A067370 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094829 Number of <code>(s(0), s(1)</code>, ..., <code>s(2n+1))</code> such that <code>0 &lt; s(i) &lt; 9</code> and <code>|s(i) - s(i-1)| = 1</code> for i <code>= 1,2,....,2n+1, s(0) = 1, s(2n+1) = 6</code>.
+ * A094829 Number of (s(0), s(1), ..., s(2n+1)) such that 0 &lt; s(i) &lt; 9 and |s(i) - s(i-1)| = 1 for i = 1,2,....,2n+1, s(0) = 1, s(2n+1) = 6.
  * @author Georg Fischer
  */
 public class A094829 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006878;
 
 /**
- * A033492 Record number of steps to reach 1 in <code>'3x+1'</code> problem, corresponding to starting values in <code>A006877</code> (same as <code>A006878</code> except here we start counting at 1 instead of <code>0)</code>.
+ * A033492 Record number of steps to reach 1 in '3x+1' problem, corresponding to starting values in A006877 (same as A006878 except here we start counting at 1 instead of 0).
  * @author Sean A. Irvine
  */
 public class A033492 extends A006878 {

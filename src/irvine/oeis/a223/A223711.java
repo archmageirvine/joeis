@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223711 Number of <code>n X 2 0..1</code> arrays with row sums and column sums unimodal.
+ * A223711 Number of n X 2 0..1 arrays with row sums and column sums unimodal.
  * @author Georg Fischer
  */
 public class A223711 extends GeneratingFunctionSequence {

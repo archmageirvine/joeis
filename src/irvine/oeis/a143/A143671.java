@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A143671 Number of terms in <code>A144688</code> of length <code>n</code>.
+ * A143671 Number of terms in A144688 of length n.
  * @author Georg Fischer
  */
 public class A143671 extends PaddingSequence {

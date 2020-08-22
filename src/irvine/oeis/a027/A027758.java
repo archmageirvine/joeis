@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027758 Primes of the form <code>k^2 + k + 9</code>.
+ * A027758 Primes of the form k^2 + k + 9.
  * @author Sean A. Irvine
  */
 public class A027758 implements Sequence {

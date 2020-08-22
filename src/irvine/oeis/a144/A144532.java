@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A144532 Continued fraction for <code>sqrt(8/9)</code>.
+ * A144532 Continued fraction for sqrt(8/9).
  * @author Georg Fischer
  */
 public class A144532 extends PaddingSequence {

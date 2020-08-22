@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251601 Numbers n such that hexagonal numbers <code>H(n)</code> and <code>H(n+1)</code> sum to another hexagonal number.
+ * A251601 Numbers n such that hexagonal numbers H(n) and H(n+1) sum to another hexagonal number.
  * @author Sean A. Irvine
  */
 public class A251601 extends LinearRecurrence {

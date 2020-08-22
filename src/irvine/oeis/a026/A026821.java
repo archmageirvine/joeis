@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026821 Triangular array T read by rows: <code>T(n,k) =</code> number of partitions of n into distinct parts, the least being k, for <code>k=1,2,...,n</code>.
+ * A026821 Triangular array T read by rows: T(n,k) = number of partitions of n into distinct parts, the least being k, for k=1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A026821 extends MemoryFunction2<Long, Z> implements Sequence {

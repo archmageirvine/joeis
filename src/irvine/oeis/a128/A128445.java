@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128445 Number of facets of the Alternating Sign Matrix polytope <code>ASM(n)</code>.
+ * A128445 Number of facets of the Alternating Sign Matrix polytope ASM(n).
  * @author Sean A. Irvine
  */
 public class A128445 extends LinearRecurrence {

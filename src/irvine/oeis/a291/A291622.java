@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291622 Number of irredundant sets in the <code>n X n</code> rook complement graph.
+ * A291622 Number of irredundant sets in the n X n rook complement graph.
  * @author Georg Fischer
  */
 public class A291622 extends GeneratingFunctionSequence {

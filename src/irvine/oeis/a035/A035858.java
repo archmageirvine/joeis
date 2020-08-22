@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A035858 Coordination sequence for <code>A_32</code> lattice.
+ * A035858 Coordination sequence for A_32 lattice.
  * @author Georg Fischer
  */
 public class A035858 extends LatticeCoordinationSequence {

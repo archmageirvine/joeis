@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A285932 Expansion of <code>(Product_{k&gt;0} (1 - x^k) / (1 - x^(5*k)))^5</code> in powers of <code>x</code>.
+ * A285932 Expansion of (Product_{k&gt;0} (1 - x^k) / (1 - x^(5*k)))^5 in powers of x.
  * @author Georg Fischer
  */
 public class A285932 extends EulerTransform {

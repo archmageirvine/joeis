@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316349 Consider coefficients <code>U(m,L,k)</code> defined by the identity <code>Sum_{k=1..L} Sum_{j=0..m} A302971(m,j)/A304042(m,j) * k^j * (T-k)^j = Sum_{k=0..m} (-1)^(m-k) * U(m,L,k) * T^k</code> that holds for all positive integers L,m,T. This sequence gives 3-column table read by rows, where the n-th row lists coefficients <code>U(2,n,k)</code> for k <code>= 0, 1, 2; n &gt;= 1</code>.
+ * A316349 Consider coefficients U(m,L,k) defined by the identity Sum_{k=1..L} Sum_{j=0..m} A302971(m,j)/A304042(m,j) * k^j * (T-k)^j = Sum_{k=0..m} (-1)^(m-k) * U(m,L,k) * T^k that holds for all positive integers L,m,T. This sequence gives 3-column table read by rows, where the n-th row lists coefficients U(2,n,k) for k = 0, 1, 2; n &gt;= 1.
  * @author Georg Fischer
  */
 public class A316349 extends GeneratingFunctionSequence {

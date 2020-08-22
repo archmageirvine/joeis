@@ -9,7 +9,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A001004 Number of nonequivalent dissections of an <code>(n+2)-gon</code> by nonintersecting diagonals up to rotation and reflection.
+ * A001004 Number of nonequivalent dissections of an (n+2)-gon by nonintersecting diagonals up to rotation and reflection.
  * @author Sean A. Irvine
  */
 public class A001004 extends A001003 {

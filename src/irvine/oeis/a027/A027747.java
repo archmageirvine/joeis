@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027747 <code>a(n) = n^n^n^..^n (6-n</code> terms, <code>n&lt;=5)</code>.
+ * A027747 a(n) = n^n^n^..^n (6-n terms, n&lt;=5).
  * @author Georg Fischer
  */
 public class A027747 extends FiniteSequence {

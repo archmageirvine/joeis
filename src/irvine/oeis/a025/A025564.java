@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025564 Triangular array, read by rows: pairwise sums of trinomial array <code>A027907</code>.
+ * A025564 Triangular array, read by rows: pairwise sums of trinomial array A027907.
  * @author Sean A. Irvine
  */
 public class A025564 extends MemoryFunction2<Long, Z> implements Sequence {

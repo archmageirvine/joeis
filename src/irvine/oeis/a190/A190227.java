@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A190227 <code>a(n) = [n*u + n*v] - [n*u] - [n*v]</code>, where <code>u=sin(Pi/5), v=cos(Pi/5)</code>, and <code>[]=floor</code>.
+ * A190227 a(n) = [n*u + n*v] - [n*u] - [n*v], where u=sin(Pi/5), v=cos(Pi/5), and []=floor.
  * @author Georg Fischer
  */
 public class A190227 implements Sequence {

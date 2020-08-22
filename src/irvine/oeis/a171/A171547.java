@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A171547 Decimal expansion of <code>sqrt(3/14)</code>.
+ * A171547 Decimal expansion of sqrt(3/14).
  * @author Georg Fischer
  */
 public class A171547 extends DecimalExpansionSequence {

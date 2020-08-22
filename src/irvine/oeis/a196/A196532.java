@@ -6,7 +6,7 @@ package irvine.oeis.a196;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A196532 <code>a(n) = (n+1)!*(H(n)+H(n+1))</code>, where <code>H(n) = Sum_{k=1..n} 1/k</code> is the n-th harmonic number.
+ * A196532 a(n) = (n+1)!*(H(n)+H(n+1)), where H(n) = Sum_{k=1..n} 1/k is the n-th harmonic number.
  * @author Georg Fischer
  */
 public class A196532 extends HolonomicRecurrence {

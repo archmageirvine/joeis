@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A114956 <code>a(0) = a(1) = 1</code>, for <code>n&gt;1 a(n) = ceiling(a(n-1)^(3/4) + a(n-2)^(3/4))</code>.
+ * A114956 a(0) = a(1) = 1, for n&gt;1 a(n) = ceiling(a(n-1)^(3/4) + a(n-2)^(3/4)).
  * @author Georg Fischer
  */
 public class A114956 extends PaddingSequence {

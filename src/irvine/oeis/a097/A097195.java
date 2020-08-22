@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097195 Expansion of <code>s(12)^3*s(18)^2/(s(6)^2*s(36))</code>, where <code>s(k) := subs(q=q^k, eta(q))</code> and <code>eta(q)</code> is Dedekind's function, cf. <code>A010815</code>. Then replace <code>q^6</code> with q.
+ * A097195 Expansion of s(12)^3*s(18)^2/(s(6)^2*s(36)), where s(k) := subs(q=q^k, eta(q)) and eta(q) is Dedekind's function, cf. A010815. Then replace q^6 with q.
  * @author Georg Fischer
  */
 public class A097195 extends EulerTransform {

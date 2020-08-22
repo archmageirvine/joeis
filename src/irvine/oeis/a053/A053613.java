@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A053613 Exceptional primes: there does not exist a consecutive triple of integers such that <code>a(n)</code> (prime) such that each number in the triple is a cubic residue of <code>a(n)</code>.
+ * A053613 Exceptional primes: there does not exist a consecutive triple of integers such that a(n) (prime) such that each number in the triple is a cubic residue of a(n).
  * @author Georg Fischer
  */
 public class A053613 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a274;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A274781 Diagonal of the rational function <code>1/(1 - x - y - z - x y - x y z)</code>.
+ * A274781 Diagonal of the rational function 1/(1 - x - y - z - x y - x y z).
  * @author Georg Fischer
  */
 public class A274781 extends HolonomicRecurrence {

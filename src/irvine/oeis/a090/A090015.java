@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090015 Permanent of <code>(0,1)-matrix</code> of size <code>n X (n+d)</code> with <code>d=5</code> and <code>n-1</code> zeros not on a line.
+ * A090015 Permanent of (0,1)-matrix of size n X (n+d) with d=5 and n-1 zeros not on a line.
  * @author Georg Fischer
  */
 public class A090015 extends HolonomicRecurrence {

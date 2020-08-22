@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a006.A006094;
 
 /**
- * A109805 <code>a(n) = prime(n+2)*prime(n+1) - prime(n)*prime(n+1)</code>.
+ * A109805 a(n) = prime(n+2)*prime(n+1) - prime(n)*prime(n+1).
  * @author Georg Fischer
  */
 public class A109805 extends DifferenceSequence {

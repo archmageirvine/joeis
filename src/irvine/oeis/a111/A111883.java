@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111883 Unsigned row sums of triangle <code>A111595</code> (normalized rescaled squared Hermite polynomials).
+ * A111883 Unsigned row sums of triangle A111595 (normalized rescaled squared Hermite polynomials).
  * @author Georg Fischer
  */
 public class A111883 extends HolonomicRecurrence {

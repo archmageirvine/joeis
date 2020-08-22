@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011801 Triangle read by rows, the inverse Bell transform of <code>n!*binomial(4,n)</code> (without column <code>0)</code>.
+ * A011801 Triangle read by rows, the inverse Bell transform of n!*binomial(4,n) (without column 0).
  * @author Sean A. Irvine
  */
 public class A011801 extends MemoryFunction2<Long, Z> implements Sequence {

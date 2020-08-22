@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239265 Number of domicule tilings of a <code>3 X 2n</code> grid.
+ * A239265 Number of domicule tilings of a 3 X 2n grid.
  * @author Georg Fischer
  */
 public class A239265 extends GeneratingFunctionSequence {

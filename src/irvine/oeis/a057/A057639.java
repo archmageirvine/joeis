@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a028.A028442;
 
 /**
- * A057639 First differences of <code>zero-sites (A028442)</code> of Mertens's function <code>A002321</code>.
+ * A057639 First differences of zero-sites (A028442) of Mertens's function A002321.
  * @author Georg Fischer
  */
 public class A057639 extends DifferenceSequence {

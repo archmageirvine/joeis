@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A193534 Decimal expansion of <code>(1/3) * (Pi/sqrt(3) - log(2))</code>.
+ * A193534 Decimal expansion of (1/3) * (Pi/sqrt(3) - log(2)).
  * @author Georg Fischer
  */
 public class A193534 extends DecimalExpansionSequence {

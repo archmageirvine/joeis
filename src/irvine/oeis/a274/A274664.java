@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274664 Sum of n-th powers of the roots of <code>x^3 + 11*x^2 - 4*x - 1</code>.
+ * A274664 Sum of n-th powers of the roots of x^3 + 11*x^2 - 4*x - 1.
  * @author Georg Fischer
  */
 public class A274664 extends GeneratingFunctionSequence {

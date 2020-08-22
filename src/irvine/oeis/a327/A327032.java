@@ -6,7 +6,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327032 <code>a(n) = T(n, 4)</code> with <code>T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d)</code>.
+ * A327032 a(n) = T(n, 4) with T(n, k) = Sum_{d|k} phi(d)*binomial(n - 1 + k/d, k/d).
  * @author Georg Fischer
  */
 public class A327032 extends HolonomicRecurrence {

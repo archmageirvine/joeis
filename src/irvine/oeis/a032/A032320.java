@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.math.z.Z;
 
 /**
- * A032320 Doubles (index <code>2+)</code> under "EGJ" <code>(unordered</code>, element, labeled) transform.
+ * A032320 Doubles (index 2+) under "EGJ" (unordered, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032320 extends A032318 {

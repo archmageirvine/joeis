@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007119 Expansion of <code>(1-x)^sin(x)</code>.
+ * A007119 Expansion of (1-x)^sin(x).
  * @author Sean A. Irvine
  */
 public class A007119 implements Sequence {

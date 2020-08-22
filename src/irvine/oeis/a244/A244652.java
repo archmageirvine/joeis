@@ -6,7 +6,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244652 G.f. <code>A(x)</code> satisfies: <code>Sum_{k=0..n} [x^k] A(x)^n = binomial(6*n,3*n)</code>.
+ * A244652 G.f. A(x) satisfies: Sum_{k=0..n} [x^k] A(x)^n = binomial(6*n,3*n).
  * @author Georg Fischer
  */
 public class A244652 extends HolonomicRecurrence {

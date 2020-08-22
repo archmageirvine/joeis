@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A071259 Integer part of the arithmetic mean of the n-th prime <code>p(n)</code> and the n-th composite number <code>C(n)</code>.
+ * A071259 Integer part of the arithmetic mean of the n-th prime p(n) and the n-th composite number C(n).
  * @author Georg Fischer
  */
 public class A071259 extends A000040 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030001 Smallest power of 2 whose decimal expansion contains <code>n</code>.
+ * A030001 Smallest power of 2 whose decimal expansion contains n.
  * @author Sean A. Irvine
  */
 public class A030001 implements Sequence {

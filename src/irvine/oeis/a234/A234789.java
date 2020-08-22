@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234789 Number of <code>(n+1) X (1+1) 0..3</code> arrays with each <code>2 X 2</code> subblock having the number of clockwise edge increases less than or equal to the number of counterclockwise edge increases.
+ * A234789 Number of (n+1) X (1+1) 0..3 arrays with each 2 X 2 subblock having the number of clockwise edge increases less than or equal to the number of counterclockwise edge increases.
  * @author Georg Fischer
  */
 public class A234789 extends GeneratingFunctionSequence {

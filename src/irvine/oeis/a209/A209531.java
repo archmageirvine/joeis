@@ -4,7 +4,7 @@ package irvine.oeis.a209;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A209531 Half the number of <code>(n+1) X 5 0..2</code> arrays with every <code>2 X 2</code> subblock having exactly two distinct clockwise edge differences.
+ * A209531 Half the number of (n+1) X 5 0..2 arrays with every 2 X 2 subblock having exactly two distinct clockwise edge differences.
  * @author Georg Fischer
  */
 public class A209531 extends GeneratingFunctionSequence {

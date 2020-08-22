@@ -4,7 +4,7 @@ package irvine.oeis.a284;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A284122 Number of binary words w of length n for which s, the longest proper suffix of w that appears at least twice in w, is of length <code>1 (i.e.</code>, either s <code>= 0</code> or s <code>= 1)</code>.
+ * A284122 Number of binary words w of length n for which s, the longest proper suffix of w that appears at least twice in w, is of length 1 (i.e., either s = 0 or s = 1).
  * @author Georg Fischer
  */
 public class A284122 extends GeneratingFunctionSequence {

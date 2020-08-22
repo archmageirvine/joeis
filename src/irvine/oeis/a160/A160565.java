@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160565 Diagonal sums of number triangle <code>[k&lt;=n]*C(n,2n-2k)2^(n-k)A000108(n-k)</code>.
+ * A160565 Diagonal sums of number triangle [k&lt;=n]*C(n,2n-2k)2^(n-k)A000108(n-k).
  * @author Georg Fischer
  */
 public class A160565 extends HolonomicRecurrence {

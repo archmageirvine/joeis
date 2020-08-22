@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001286 Lah numbers: <code>(n-1)*n!/2</code>.
+ * A001286 Lah numbers: (n-1)*n!/2.
  * @author Sean A. Irvine
  */
 public class A001286 implements Sequence {

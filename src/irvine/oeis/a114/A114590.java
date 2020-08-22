@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114590 Number of peaks at even levels in all hill-free Dyck paths of semilength <code>n+2 (a</code> hill in a Dyck path is a peak at level <code>1)</code>.
+ * A114590 Number of peaks at even levels in all hill-free Dyck paths of semilength n+2 (a hill in a Dyck path is a peak at level 1).
  * @author Georg Fischer
  */
 public class A114590 extends HolonomicRecurrence {

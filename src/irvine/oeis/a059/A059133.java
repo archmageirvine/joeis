@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059133 A hierarchical sequence <code>(S(W2{2}c) -</code> see <code>A059126)</code>.
+ * A059133 A hierarchical sequence (S(W2{2}c) - see A059126).
  * @author Georg Fischer
  */
 public class A059133 extends GeneratingFunctionSequence {

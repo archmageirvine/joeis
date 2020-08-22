@@ -3,7 +3,7 @@ package irvine.oeis.a106;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A106374 Primitive exponents of the Weyl group <code>W(E_7)</code>.
+ * A106374 Primitive exponents of the Weyl group W(E_7).
  * @author Georg Fischer
  */
 public class A106374 extends FiniteSequence {

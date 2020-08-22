@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008307 Table <code>T(n,k)</code> giving number of permutations of <code>[1..n]</code> with order dividing k, read by antidiagonals.
+ * A008307 Table T(n,k) giving number of permutations of [1..n] with order dividing k, read by antidiagonals.
  * @author Sean A. Irvine
  */
 public class A008307 extends MemoryFunction2<Long, Z> implements Sequence {

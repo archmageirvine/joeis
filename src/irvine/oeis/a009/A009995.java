@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009995 Numbers with digits in strictly decreasing order. From the Macaulay expansion of <code>n</code>.
+ * A009995 Numbers with digits in strictly decreasing order. From the Macaulay expansion of n.
  * @author Sean A. Irvine
  */
 public class A009995 implements Sequence {

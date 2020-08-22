@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122874 List of pairs <code>n+7, 13-n, n &gt;= 0</code>.
+ * A122874 List of pairs n+7, 13-n, n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A122874 extends LinearRecurrence {

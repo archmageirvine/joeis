@@ -6,7 +6,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064378 <code>a(0) = 2, a(n) = 2^(n+1)*(n-1)! (n &gt;= 1)</code>.
+ * A064378 a(0) = 2, a(n) = 2^(n+1)*(n-1)! (n &gt;= 1).
  * @author Georg Fischer
  */
 public class A064378 extends HolonomicRecurrence {

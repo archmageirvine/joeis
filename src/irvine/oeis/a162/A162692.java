@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162692 Strictly positive numbers n such that <code>28*n/(28+n)</code> are integers.
+ * A162692 Strictly positive numbers n such that 28*n/(28+n) are integers.
  * @author Georg Fischer
  */
 public class A162692 extends FiniteSequence {

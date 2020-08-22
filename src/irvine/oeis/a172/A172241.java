@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172241 <code>a(n) = (1/18)*(8^n - (-1)^n - 9)</code>.
+ * A172241 a(n) = (1/18)*(8^n - (-1)^n - 9).
  * @author Georg Fischer
  */
 public class A172241 extends GeneratingFunctionSequence {

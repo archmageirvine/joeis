@@ -4,7 +4,7 @@ package irvine.oeis.a280;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A280364 Number of <code>2 X 2</code> matrices with all elements in <code>{0,...,n}</code> with permanent <code>= determinant^n</code>.
+ * A280364 Number of 2 X 2 matrices with all elements in {0,...,n} with permanent = determinant^n.
  * @author Georg Fischer
  */
 public class A280364 extends GeneratingFunctionSequence {

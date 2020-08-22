@@ -6,7 +6,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288692 Number of n-digit biquanimous strings using digits <code>{0,1,...,8}</code>.
+ * A288692 Number of n-digit biquanimous strings using digits {0,1,...,8}.
  * @author Georg Fischer
  */
 public class A288692 extends GeneratingFunctionSequence {

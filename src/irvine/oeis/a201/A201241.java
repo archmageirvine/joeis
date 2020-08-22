@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201241 Number of ways to place <code>7 non-attacking</code> wazirs on an <code>n X n</code> toroidal board.
+ * A201241 Number of ways to place 7 non-attacking wazirs on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A201241 extends GeneratingFunctionSequence {

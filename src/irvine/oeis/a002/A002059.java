@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002059 Number of partitions of a n-gon into <code>(n-4)</code> parts.
+ * A002059 Number of partitions of a n-gon into (n-4) parts.
  * @author Sean A. Irvine
  */
 public class A002059 implements Sequence {

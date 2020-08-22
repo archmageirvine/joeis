@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000120;
 
 /**
- * A120738 <code>a(n) = 4*n - A000120(n)</code>.
+ * A120738 a(n) = 4*n - A000120(n).
  * @author Georg Fischer
  */
 public class A120738 implements Sequence {

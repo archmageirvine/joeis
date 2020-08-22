@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030283 <code>a(0) = 0;</code> for <code>n&gt;0, a(n)</code> is the smallest number greater than <code>a(n-1)</code> which does not use any digit used by <code>a(n-1)</code>.
+ * A030283 a(0) = 0; for n&gt;0, a(n) is the smallest number greater than a(n-1) which does not use any digit used by a(n-1).
  * @author Sean A. Irvine
  */
 public class A030283 implements Sequence {

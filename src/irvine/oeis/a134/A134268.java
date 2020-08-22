@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A134268 <code>a(n+2) = sum_digits[a(n+1)] + sum_digits[a(n)] + sum_digits[a(n+1)]*sum_digits[a(n)]</code>, with <code>a(0)=0, a(1)=1</code>.
+ * A134268 a(n+2) = sum_digits[a(n+1)] + sum_digits[a(n)] + sum_digits[a(n+1)]*sum_digits[a(n)], with a(0)=0, a(1)=1.
  * @author Georg Fischer
  */
 public class A134268 extends PaddingSequence {

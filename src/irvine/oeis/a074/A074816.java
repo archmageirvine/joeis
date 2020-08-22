@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001221;
 
 /**
- * A074816 <code>a(n) = 3^A001221(n) = 3^omega(n)</code>.
+ * A074816 a(n) = 3^A001221(n) = 3^omega(n).
  * @author Georg Fischer
  */
 public class A074816 implements Sequence {

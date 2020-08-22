@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A173642 A distribution of electrons. By rows whose sum is <code>A000027</code> (for periodic table).
+ * A173642 A distribution of electrons. By rows whose sum is A000027 (for periodic table).
  * @author Georg Fischer
  */
 public class A173642 extends NoncomputableSequence {

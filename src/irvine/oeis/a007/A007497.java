@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007497 <code>a(1) = 2, a(n) = sigma(a(n-1))</code>.
+ * A007497 a(1) = 2, a(n) = sigma(a(n-1)).
  * @author Sean A. Irvine
  */
 public class A007497 implements Sequence {

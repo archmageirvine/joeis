@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A070468 <code>a(n) = n^2 mod 46</code>.
+ * A070468 a(n) = n^2 mod 46.
  * @author Georg Fischer
  */
 public class A070468 implements Sequence {

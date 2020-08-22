@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001223;
 
 /**
- * A031131 Difference between n-th prime and <code>(n+2)-nd</code> prime.
+ * A031131 Difference between n-th prime and (n+2)-nd prime.
  * @author Sean A. Irvine
  */
 public class A031131 extends A001223 {

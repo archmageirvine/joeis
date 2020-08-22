@@ -5,7 +5,7 @@ import irvine.oeis.ChjTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032336 Doubles (index <code>2+)</code> under "CHJ" <code>(necklace</code>, identity, labeled) transform.
+ * A032336 Doubles (index 2+) under "CHJ" (necklace, identity, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032336 extends MemorySequence {

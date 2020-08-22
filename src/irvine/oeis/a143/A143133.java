@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A143133 Number of cribbage hands with score <code>n</code>.
+ * A143133 Number of cribbage hands with score n.
  * @author Georg Fischer
  */
 public class A143133 extends NoncomputableSequence {

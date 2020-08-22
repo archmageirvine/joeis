@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A002529 <code>a(n) = A002527(n+1) - A002527(n) - A002526(n)</code>.
+ * A002529 a(n) = A002527(n+1) - A002527(n) - A002526(n).
  * @author Sean A. Irvine
  */
 public class A002529 extends GeneratingFunctionSequence {

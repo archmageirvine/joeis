@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A208130 Numbers that when expressed in decimal are equal to the sum of the digits sorted into nondecreasing order and raised to the powers <code>1, 2, 3, ..</code>.
+ * A208130 Numbers that when expressed in decimal are equal to the sum of the digits sorted into nondecreasing order and raised to the powers 1, 2, 3, ...
  * @author Georg Fischer
  */
 public class A208130 extends FiniteSequence {

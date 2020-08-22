@@ -6,7 +6,7 @@ package irvine.oeis.a233;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A233481 Number of singletons (strong fixed points) in <code>pair-partitions</code>.
+ * A233481 Number of singletons (strong fixed points) in pair-partitions.
  * @author Georg Fischer
  */
 public class A233481 extends HolonomicRecurrence {

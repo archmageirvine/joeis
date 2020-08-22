@@ -6,7 +6,7 @@ import irvine.oeis.a001.A001190;
 import java.util.ArrayList;
 
 /**
- * A000672 Number of 3-valent trees <code>(=</code> boron trees or binary trees) with n nodes.
+ * A000672 Number of 3-valent trees (= boron trees or binary trees) with n nodes.
  * @author Sean A. Irvine
  */
 public class A000672 extends A001190 {

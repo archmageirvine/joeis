@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026022;
 
 /**
- * A027299 <code>a(n) = Sum_{k=0..m} (k+1) * A026022(n, m-k)</code>, where <code>m=n</code> for <code>n=0,1</code> and m <code>= floor((n+3)/2)</code> for <code>n &gt;= 2</code>.
+ * A027299 a(n) = Sum_{k=0..m} (k+1) * A026022(n, m-k), where m=n for n=0,1 and m = floor((n+3)/2) for n &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A027299 extends A026022 {

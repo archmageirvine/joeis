@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108557 Row sums of triangle <code>A108556</code>, in which row n equals the inverse binomial transform of the crystal ball sequence for <code>D_n</code> lattice.
+ * A108557 Row sums of triangle A108556, in which row n equals the inverse binomial transform of the crystal ball sequence for D_n lattice.
  * @author Georg Fischer
  */
 public class A108557 extends GeneratingFunctionSequence {

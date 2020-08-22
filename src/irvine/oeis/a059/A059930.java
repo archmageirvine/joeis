@@ -3,7 +3,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059930 Numbers n such that n and <code>n^2</code> combined use different digits.
+ * A059930 Numbers n such that n and n^2 combined use different digits.
  * @author Georg Fischer
  */
 public class A059930 extends FiniteSequence {

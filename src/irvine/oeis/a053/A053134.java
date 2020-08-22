@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053134 Binomial coefficients <code>C(2*n+4,4)</code>.
+ * A053134 Binomial coefficients C(2*n+4,4).
  * @author Georg Fischer
  */
 public class A053134 extends GeneratingFunctionSequence {

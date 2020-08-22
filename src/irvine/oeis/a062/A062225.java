@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062225 Numbers k such that the smoothly undulating palindromic number <code>(78*10^k - 87)/99</code> is a prime.
+ * A062225 Numbers k such that the smoothly undulating palindromic number (78*10^k - 87)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062225 extends PowerFactorPrimeSequence {

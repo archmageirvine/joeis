@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189450 Number of <code>2 X n</code> array permutations with each element moving zero or one space horizontally or diagonally.
+ * A189450 Number of 2 X n array permutations with each element moving zero or one space horizontally or diagonally.
  * @author Georg Fischer
  */
 public class A189450 extends GeneratingFunctionSequence {

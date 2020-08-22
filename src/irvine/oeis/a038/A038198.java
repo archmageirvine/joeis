@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A038198 Numbers n such that <code>n^2 + 7</code> is a power of 2.
+ * A038198 Numbers n such that n^2 + 7 is a power of 2.
  * @author Georg Fischer
  */
 public class A038198 extends FiniteSequence {

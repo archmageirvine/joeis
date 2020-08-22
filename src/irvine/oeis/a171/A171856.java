@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171856 Number of <code>n-step up-side self-avoiding</code> walks on the lattice strip <code>{-1,0,1} x Z (up-side</code> means that the walks move up and sideways but not down).
+ * A171856 Number of n-step up-side self-avoiding walks on the lattice strip {-1,0,1} x Z (up-side means that the walks move up and sideways but not down).
  * @author Georg Fischer
  */
 public class A171856 extends GeneratingFunctionSequence {

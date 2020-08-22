@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294090 <code>Base-10</code> complementary numbers: n equals the product of the <code>10</code>'s complement of its digits.
+ * A294090 Base-10 complementary numbers: n equals the product of the 10's complement of its digits.
  * @author Georg Fischer
  */
 public class A294090 extends GeneratingFunctionSequence {

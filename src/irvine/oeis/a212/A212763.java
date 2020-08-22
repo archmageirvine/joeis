@@ -3,7 +3,7 @@ package irvine.oeis.a212;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A212763 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code>, and w, x and y odd.
+ * A212763 Number of (w,x,y,z) with all terms in {0,...,n}, and w, x and y odd.
  * @author Sean A. Irvine
  */
 public class A212763 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211013 Second 13-gonal numbers: <code>a(n) = n*(11*n+9)/2</code>.
+ * A211013 Second 13-gonal numbers: a(n) = n*(11*n+9)/2.
  * @author Sean A. Irvine
  */
 public class A211013 extends LinearRecurrence {

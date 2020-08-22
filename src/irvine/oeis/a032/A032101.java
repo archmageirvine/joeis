@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032101 Number of dyslexic identity planted planar trees with <code>n+1</code> nodes.
+ * A032101 Number of dyslexic identity planted planar trees with n+1 nodes.
  * @author Sean A. Irvine
  */
 public class A032101 implements Sequence {

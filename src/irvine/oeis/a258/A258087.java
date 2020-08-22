@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A258087 Start with all terms set to 0. Then add n to the next <code>n+2</code> terms for <code>n=0,1,2,... </code>.
+ * A258087 Start with all terms set to 0. Then add n to the next n+2 terms for n=0,1,2,... .
  * @author Georg Fischer
  */
 public class A258087 extends GeneratingFunctionSequence {

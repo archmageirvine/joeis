@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000720;
 
 /**
- * A033270 Number of odd primes <code>&lt;= n</code>.
+ * A033270 Number of odd primes &lt;= n.
  * @author Sean A. Irvine
  */
 public class A033270 extends A000720 {

@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A025210 <code>a(n) = floor(floor(S3)/floor(S1));</code> where <code>S3</code> and <code>S1</code> are, respectively, the third and first elementary symmetric functions of <code>{log(k)}, k = 1,2,...,n</code>.
+ * A025210 a(n) = floor(floor(S3)/floor(S1)); where S3 and S1 are, respectively, the third and first elementary symmetric functions of {log(k)}, k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025210 extends A025203 {

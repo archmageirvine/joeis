@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A184742 <code>a(n) = floor(n*r + h)</code>, where r <code>= sqrt(Pi), h = -1/2</code>.
+ * A184742 a(n) = floor(n*r + h), where r = sqrt(Pi), h = -1/2.
  * @author Georg Fischer
  */
 public class A184742 implements Sequence {

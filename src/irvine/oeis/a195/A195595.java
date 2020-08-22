@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A195595 Number of ways to place <code>7n</code> nonattacking kings on a vertical cylinder <code>14 X 2n</code>.
+ * A195595 Number of ways to place 7n nonattacking kings on a vertical cylinder 14 X 2n.
  * @author Georg Fischer
  */
 public class A195595 extends GeneratingFunctionSequence {

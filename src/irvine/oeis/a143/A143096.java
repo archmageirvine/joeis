@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143096 <code>a(n) = 2*a(n-1)-1</code>, with <code>a(1)=1, a(2)=4, a(3)=5</code>.
+ * A143096 a(n) = 2*a(n-1)-1, with a(1)=1, a(2)=4, a(3)=5.
  * @author Georg Fischer
  */
 public class A143096 extends GeneratingFunctionSequence {

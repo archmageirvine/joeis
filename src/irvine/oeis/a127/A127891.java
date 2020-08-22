@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A127891 Smallest <code>n-digit left-truncatable</code> prime.
+ * A127891 Smallest n-digit left-truncatable prime.
  * @author Georg Fischer
  */
 public class A127891 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167270 <code>a(n) = Fibonacci(n + 2) + floor(n/2)</code>.
+ * A167270 a(n) = Fibonacci(n + 2) + floor(n/2).
  * @author Georg Fischer
  */
 public class A167270 extends GeneratingFunctionSequence {

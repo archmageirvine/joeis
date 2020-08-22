@@ -4,7 +4,7 @@ package irvine.oeis.a195;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A195523 Number of lower triangles of a <code>5 X 5 -n..n</code> array with all row and column sums zero.
+ * A195523 Number of lower triangles of a 5 X 5 -n..n array with all row and column sums zero.
  * @author Georg Fischer
  */
 public class A195523 extends GeneratingFunctionSequence {

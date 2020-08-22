@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A322461 Sum of n-th powers of the roots of <code>x^3 + 8*x^2 + 5*x - 1</code>.
+ * A322461 Sum of n-th powers of the roots of x^3 + 8*x^2 + 5*x - 1.
  * @author Georg Fischer
  */
 public class A322461 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A015137 Consider Fibonacci-type sequences <code>b(0)=X, b(1)=Y, b(k)=b(k-1)+b(k-2) mod</code> n; all are periodic; sequence gives number of nontrivial periods of minimal length.
+ * A015137 Consider Fibonacci-type sequences b(0)=X, b(1)=Y, b(k)=b(k-1)+b(k-2) mod n; all are periodic; sequence gives number of nontrivial periods of minimal length.
  * @author Sean A. Irvine
  */
 public class A015137 implements Sequence {

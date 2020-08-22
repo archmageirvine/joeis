@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005100 Deficient numbers: numbers n such that <code>sigma(n) &lt; 2n</code>.
+ * A005100 Deficient numbers: numbers n such that sigma(n) &lt; 2n.
  * @author Sean A. Irvine
  */
 public class A005100 implements Sequence {

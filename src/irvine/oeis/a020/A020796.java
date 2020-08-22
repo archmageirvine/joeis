@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020796 Decimal expansion of <code>1/sqrt(39)</code>.
+ * A020796 Decimal expansion of 1/sqrt(39).
  * @author Sean A. Irvine
  */
 public class A020796 extends DecimalExpansionSequence {

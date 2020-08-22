@@ -6,7 +6,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305730 <code>a(n)</code> is the total displacement of all letters in all permutations of n letters with no fixed points.
+ * A305730 a(n) is the total displacement of all letters in all permutations of n letters with no fixed points.
  * @author Georg Fischer
  */
 public class A305730 extends HolonomicRecurrence {

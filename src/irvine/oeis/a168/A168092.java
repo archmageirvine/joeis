@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A168092 <code>a(n) =</code> number of natural numbers m such that <code>n - 2 &lt;= m &lt;= n + 2</code>.
+ * A168092 a(n) = number of natural numbers m such that n - 2 &lt;= m &lt;= n + 2.
  * @author Georg Fischer
  */
 public class A168092 extends PaddingSequence {

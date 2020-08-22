@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195721 Decimal expansion of <code>arctan(sqrt(1/6))</code>.
+ * A195721 Decimal expansion of arctan(sqrt(1/6)).
  * @author Georg Fischer
  */
 public class A195721 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // DO NOT EDIT here!
 
 /**
- * A301712 Coordination sequence for node of type <code>V1</code> in "usm" 2-D tiling (or net).
+ * A301712 Coordination sequence for node of type V1 in "usm" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301712 extends A301714 {

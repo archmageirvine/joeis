@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164619 Integers of the form <code>A164577(k)/3</code>.
+ * A164619 Integers of the form A164577(k)/3.
  * @author Sean A. Irvine
  */
 public class A164619 extends LinearRecurrence {

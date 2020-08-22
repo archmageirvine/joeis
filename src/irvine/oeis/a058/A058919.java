@@ -4,7 +4,7 @@ package irvine.oeis.a058;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A058919 <code>a(n) = n^4/2 - n^3 + 3n^2/2 - n + 1</code>.
+ * A058919 a(n) = n^4/2 - n^3 + 3n^2/2 - n + 1.
  * @author Georg Fischer
  */
 public class A058919 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161714 <code>a(n) = 28*n + 1</code>.
+ * A161714 a(n) = 28*n + 1.
  * @author Georg Fischer
  */
 public class A161714 extends GeneratingFunctionSequence {

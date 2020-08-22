@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030101 <code>a(n)</code> is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
+ * A030101 a(n) is the number produced when n is converted to binary digits, the binary digits are reversed and then converted back into a decimal number.
  * @author Sean A. Irvine
  */
 public class A030101 implements Sequence {

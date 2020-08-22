@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001191;
 
 
 /**
- * A175959 Positions of <code>1</code>'s in <code>A001191</code> (Digits of squares).
+ * A175959 Positions of 1's in A001191 (Digits of squares).
  * @author Georg Fischer
  */
 public class A175959 extends PositionSequence {

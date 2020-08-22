@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008457 <code>a(n) = Sum_{ d &gt;= 1</code>, d divides <code>n} (-1)^(n-d)*d^3</code>.
+ * A008457 a(n) = Sum_{ d &gt;= 1, d divides n} (-1)^(n-d)*d^3.
  * @author Sean A. Irvine
  */
 public class A008457 implements Sequence {

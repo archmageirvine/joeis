@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A212434 Triangle read by rows, related to Stern's diatomic series <code>A002487</code>, or <code>fusc(n)</code>. See Comments for precise definition.
+ * A212434 Triangle read by rows, related to Stern's diatomic series A002487, or fusc(n). See Comments for precise definition.
  * @author Georg Fischer
  */
 public class A212434 extends NoncomputableSequence {

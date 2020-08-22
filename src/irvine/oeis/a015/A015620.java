@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015620 Number of triples of different integers from <code>[ 2,n ]</code> with no common factors between pairs.
+ * A015620 Number of triples of different integers from [ 2,n ] with no common factors between pairs.
  * @author Sean A. Irvine
  */
 public class A015620 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A186742 Expansion of <code>f(x, x^11)</code> in powers of x where <code>f(, )</code> is Ramanujan's general theta function.
+ * A186742 Expansion of f(x, x^11) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A186742 extends EulerTransform {

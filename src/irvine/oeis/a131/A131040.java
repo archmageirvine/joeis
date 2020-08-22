@@ -6,7 +6,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131040 <code>a(n) = (1/2+1/2*i*sqrt(11))^n + (1/2-1/2*i*sqrt(11))^n</code>, where <code>i=sqrt(-1)</code>.
+ * A131040 a(n) = (1/2+1/2*i*sqrt(11))^n + (1/2-1/2*i*sqrt(11))^n, where i=sqrt(-1).
  * @author Georg Fischer
  */
 public class A131040 extends HolonomicRecurrence {

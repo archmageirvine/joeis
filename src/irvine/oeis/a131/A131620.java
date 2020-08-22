@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131620 Weight distribution of a certain binary linear code of length 56 defined by AES (or Rijndael) <code>S-box</code>.
+ * A131620 Weight distribution of a certain binary linear code of length 56 defined by AES (or Rijndael) S-box.
  * @author Georg Fischer
  */
 public class A131620 extends FiniteSequence {

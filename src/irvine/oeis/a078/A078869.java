@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A078869 Number of n-tuples with elements in <code>{2,4,6}</code> which can occur as the differences between <code>n+1</code> consecutive primes <code>&gt; n+1</code>. (Values of <code>a(11)</code>, ..., <code>a(18)</code> are conjectured to be correct, but are only known to be upper <code>bounds.)</code>.
+ * A078869 Number of n-tuples with elements in {2,4,6} which can occur as the differences between n+1 consecutive primes &gt; n+1. (Values of a(11), ..., a(18) are conjectured to be correct, but are only known to be upper bounds.).
  * @author Georg Fischer
  */
 public class A078869 extends PaddingSequence {

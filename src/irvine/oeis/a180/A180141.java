@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180141 Eight rooks and one berserker on a <code>3 X 3</code> chessboard. G.f.: <code>(1 + x - 2*x^2)/(1 - 3*x - 6*x^2)</code>.
+ * A180141 Eight rooks and one berserker on a 3 X 3 chessboard. G.f.: (1 + x - 2*x^2)/(1 - 3*x - 6*x^2).
  * @author Georg Fischer
  */
 public class A180141 extends GeneratingFunctionSequence {

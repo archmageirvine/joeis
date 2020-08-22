@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A112282 <code>a(n) = (-1)^n*(2*n+1) (mod 9)</code>.
+ * A112282 a(n) = (-1)^n*(2*n+1) (mod 9).
  * @author Georg Fischer
  */
 public class A112282 extends PeriodicSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a092;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092563 Coefficients in asymptotic expansion of <code>I_0(x)sqrt(2*Pi*x)/e^x</code> in powers of <code>1/(16x)</code>.
+ * A092563 Coefficients in asymptotic expansion of I_0(x)sqrt(2*Pi*x)/e^x in powers of 1/(16x).
  * @author Georg Fischer
  */
 public class A092563 extends HolonomicRecurrence {

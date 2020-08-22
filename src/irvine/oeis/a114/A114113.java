@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114113 <code>a(n) = sum{k=1</code> to <code>n} (A114112(k))</code>. (For <code>n&gt;=2, a(n) = sum{k=1</code> to <code>n} (A014681(k)) =sum{k=1</code> to <code>n} (A103889(k)).)</code>.
+ * A114113 a(n) = sum{k=1 to n} (A114112(k)). (For n&gt;=2, a(n) = sum{k=1 to n} (A014681(k)) =sum{k=1 to n} (A103889(k)).).
  * @author Georg Fischer
  */
 public class A114113 extends HolonomicRecurrence {

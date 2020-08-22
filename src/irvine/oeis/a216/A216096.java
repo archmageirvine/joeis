@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A216096 <code>a(n) = 3^n mod 1000</code>.
+ * A216096 a(n) = 3^n mod 1000.
  * @author Georg Fischer
  */
 public class A216096 implements Sequence {

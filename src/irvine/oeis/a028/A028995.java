@@ -8,7 +8,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A028995 Theta series of <code>10-d 11-modular</code> Craig lattice <code>A_10^(3)</code>.
+ * A028995 Theta series of 10-d 11-modular Craig lattice A_10^(3).
  * @author Sean A. Irvine
  */
 public class A028995 extends A028609 {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A280585 Decimal expansion of <code>8*sin(Pi/8)</code>.
+ * A280585 Decimal expansion of 8*sin(Pi/8).
  * @author Georg Fischer
  */
 public class A280585 extends DecimalExpansionSequence {

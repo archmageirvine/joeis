@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061650 <code>a(n) = n*20^(n-1)</code>.
+ * A061650 a(n) = n*20^(n-1).
  * @author Georg Fischer
  */
 public class A061650 extends GeneratingFunctionSequence {

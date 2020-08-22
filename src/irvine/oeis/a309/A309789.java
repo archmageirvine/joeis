@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A309789 Numbers n such that <code>-1 + Sum_{k=1..n} prime(k)!</code> is prime, where <code>prime(k)</code> is the k-th prime.
+ * A309789 Numbers n such that -1 + Sum_{k=1..n} prime(k)! is prime, where prime(k) is the k-th prime.
  * @author Georg Fischer
  */
 public class A309789 extends FiniteSequence {

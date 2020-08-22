@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A163194 <code>a(n) = F(n)^2 * L(n+1)^2 * F(n-1) * L(n+2)</code>, where <code>F(n)</code> and <code>L(n)</code> are the Fibonacci and Lucas numbers, respectively.
+ * A163194 a(n) = F(n)^2 * L(n+1)^2 * F(n-1) * L(n+2), where F(n) and L(n) are the Fibonacci and Lucas numbers, respectively.
  * @author Sean A. Irvine
  */
 public class A163194 extends LinearRecurrence {

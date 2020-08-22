@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089165 Partial sums of the central Delannoy numbers <code>(A001850)</code>.
+ * A089165 Partial sums of the central Delannoy numbers (A001850).
  * @author Georg Fischer
  */
 public class A089165 extends HolonomicRecurrence {

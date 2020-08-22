@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080958 <code>a(n) = n!*(2/1 - 3/2 + 4/3 - ... + s*(n+1)/n)</code>, where s <code>= (-1)^(n+1)</code>.
+ * A080958 a(n) = n!*(2/1 - 3/2 + 4/3 - ... + s*(n+1)/n), where s = (-1)^(n+1).
  * @author Georg Fischer
  */
 public class A080958 extends HolonomicRecurrence {

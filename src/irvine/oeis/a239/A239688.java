@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239688 Number of paths joining opposite corners of an <code>n X 2</code> grid with every vertex appearing at most twice in the path.
+ * A239688 Number of paths joining opposite corners of an n X 2 grid with every vertex appearing at most twice in the path.
  * @author Georg Fischer
  */
 public class A239688 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221526 Number of <code>0..n</code> arrays of length 6 with each element differing from at least one neighbor by 2 or more.
+ * A221526 Number of 0..n arrays of length 6 with each element differing from at least one neighbor by 2 or more.
  * @author Georg Fischer
  */
 public class A221526 extends GeneratingFunctionSequence {

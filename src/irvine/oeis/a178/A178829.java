@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178829 Partial sums of <code>(1/2)*floor(7^n/10)</code>.
+ * A178829 Partial sums of (1/2)*floor(7^n/10).
  * @author Sean A. Irvine
  */
 public class A178829 extends LinearRecurrence {

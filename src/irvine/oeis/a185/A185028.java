@@ -3,7 +3,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185028 Numbers of the <code>base-10</code> form <code>ddd...d</code> having Hamming weight d.
+ * A185028 Numbers of the base-10 form ddd...d having Hamming weight d.
  * @author Georg Fischer
  */
 public class A185028 extends FiniteSequence {

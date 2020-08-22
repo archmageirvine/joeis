@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023890 Sum of nonprime divisors of <code>n</code>.
+ * A023890 Sum of nonprime divisors of n.
  * @author Sean A. Irvine
  */
 public class A023890 implements Sequence {

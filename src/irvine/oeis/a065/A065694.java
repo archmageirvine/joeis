@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A065694 Braided power sequence: <code>A065692</code> is <code>b(n+1)=3b(n)+2d(n)-c(n), A065693</code> is <code>c(n+1)=3c(n)+2b(n)-d(n)</code> and this is <code>d(n+1)=3d(n)+2c(n)-b(n)</code>, starting with <code>b(0)=0, c(0)=1</code> and <code>d(0)=2</code>.
+ * A065694 Braided power sequence: A065692 is b(n+1)=3b(n)+2d(n)-c(n), A065693 is c(n+1)=3c(n)+2b(n)-d(n) and this is d(n+1)=3d(n)+2c(n)-b(n), starting with b(0)=0, c(0)=1 and d(0)=2.
  * @author Georg Fischer
  */
 public class A065694 extends GeneratingFunctionSequence {

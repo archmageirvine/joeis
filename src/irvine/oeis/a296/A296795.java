@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296795 Numbers k such that m <code>= 2*k</code> is the middle side in a Heronian triangle with sides m <code>- 11</code>, m, m <code>+ 11</code>.
+ * A296795 Numbers k such that m = 2*k is the middle side in a Heronian triangle with sides m - 11, m, m + 11.
  * @author Georg Fischer
  */
 public class A296795 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183430 One third the number of <code>n X 2 0..3</code> arrays with no element equal to its row sum plus its column sum <code>mod 4</code>.
+ * A183430 One third the number of n X 2 0..3 arrays with no element equal to its row sum plus its column sum mod 4.
  * @author Georg Fischer
  */
 public class A183430 extends GeneratingFunctionSequence {

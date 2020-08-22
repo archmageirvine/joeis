@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A044036 Numbers n such that 6 and 8 occur juxtaposed in the base 10 representation of n but not of <code>n+1</code>.
+ * A044036 Numbers n such that 6 and 8 occur juxtaposed in the base 10 representation of n but not of n+1.
  * @author Georg Fischer
  */
 public class A044036 implements Sequence {

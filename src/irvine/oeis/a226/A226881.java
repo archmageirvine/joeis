@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226881 Number of n-length binary words w with <code>#(w,0) &gt;= #(w,1) &gt;= 1</code>, where <code>#(w,x)</code> gives the number of digits x in w.
+ * A226881 Number of n-length binary words w with #(w,0) &gt;= #(w,1) &gt;= 1, where #(w,x) gives the number of digits x in w.
  * @author Georg Fischer
  */
 public class A226881 extends HolonomicRecurrence {

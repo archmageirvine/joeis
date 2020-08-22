@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A259081 <code>a(n) =</code> largest k such that the decimal representation of <code>3^k</code> does not contain the digit <code>n</code>.
+ * A259081 a(n) = largest k such that the decimal representation of 3^k does not contain the digit n.
  * @author Georg Fischer
  */
 public class A259081 extends FiniteSequence {

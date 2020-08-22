@@ -3,7 +3,7 @@ package irvine.oeis.a174;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A174592 Numbers n such that <code>n^2 + 2*(n+2)^2</code> is a square.
+ * A174592 Numbers n such that n^2 + 2*(n+2)^2 is a square.
  * @author Sean A. Irvine
  */
 public class A174592 extends LinearRecurrence {

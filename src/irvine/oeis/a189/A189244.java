@@ -6,7 +6,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189244 The n-th derivative of <code>e^((2-x-x^2)/(1-x-x^2))</code>, evaluated at <code>x=1</code>.
+ * A189244 The n-th derivative of e^((2-x-x^2)/(1-x-x^2)), evaluated at x=1.
  * @author Georg Fischer
  */
 public class A189244 extends HolonomicRecurrence {

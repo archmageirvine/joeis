@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082874 Independence number of king <code>KG_4</code> on triangle board <code>B_n</code>.
+ * A082874 Independence number of king KG_4 on triangle board B_n.
  * @author Georg Fischer
  */
 public class A082874 extends GeneratingFunctionSequence {

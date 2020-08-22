@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A175867 <code>a(0) = 2; a(n) = a(n - 1) * 2 + 1</code> if <code>a(n - 1)</code> is prime, or <code>a(n - 1) /</code> (smallest prime factor) if it is composite.
+ * A175867 a(0) = 2; a(n) = a(n - 1) * 2 + 1 if a(n - 1) is prime, or a(n - 1) / (smallest prime factor) if it is composite.
  * @author Georg Fischer
  */
 public class A175867 extends PaddingSequence {

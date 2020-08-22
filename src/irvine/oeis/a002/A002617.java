@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002617 Weight distribution of <code>Cheng-Sloane [ 32,17,8 ]</code> code.
+ * A002617 Weight distribution of Cheng-Sloane [ 32,17,8 ] code.
  * @author Sean A. Irvine
  */
 public class A002617 extends FiniteSequence {

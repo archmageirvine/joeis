@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238187 Gaussian norm of <code>1+(1+i)^n</code>.
+ * A238187 Gaussian norm of 1+(1+i)^n.
  * @author Georg Fischer
  */
 public class A238187 extends GeneratingFunctionSequence {

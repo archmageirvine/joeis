@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168605 Number of ways of partitioning the multiset <code>{1,1,1,2,3,...,n-2}</code> into exactly three nonempty parts.
+ * A168605 Number of ways of partitioning the multiset {1,1,1,2,3,...,n-2} into exactly three nonempty parts.
  * @author Georg Fischer
  */
 public class A168605 extends GeneratingFunctionSequence {

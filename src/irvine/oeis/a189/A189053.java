@@ -6,7 +6,7 @@ package irvine.oeis.a189;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A189053 Expansion of <code>d/dx log(1/(1-x/sqrt(1-4*x^2)))</code>.
+ * A189053 Expansion of d/dx log(1/(1-x/sqrt(1-4*x^2))).
  * @author Georg Fischer
  */
 public class A189053 extends HolonomicRecurrence {

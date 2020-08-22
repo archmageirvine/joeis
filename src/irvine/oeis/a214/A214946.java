@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214946 Number of squarefree words of length 7 in an <code>(n+1)-ary</code> alphabet.
+ * A214946 Number of squarefree words of length 7 in an (n+1)-ary alphabet.
  * @author Georg Fischer
  */
 public class A214946 extends GeneratingFunctionSequence {

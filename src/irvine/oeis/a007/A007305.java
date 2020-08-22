@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007305 Numerators of Farey (or <code>Stern-Brocot)</code> tree fractions.
+ * A007305 Numerators of Farey (or Stern-Brocot) tree fractions.
  * @author Sean A. Irvine
  */
 public class A007305 implements Sequence {

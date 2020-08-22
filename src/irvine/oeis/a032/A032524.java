@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A032524 Arrange digits of primes in ascending order (omitting any that contain <code>0's)</code>, sort list, remove duplicates.
+ * A032524 Arrange digits of primes in ascending order (omitting any that contain 0's), sort list, remove duplicates.
  * @author Sean A. Irvine
  */
 public class A032524 implements Sequence {

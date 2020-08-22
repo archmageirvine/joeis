@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001704 <code>a(n) = n</code> concatenated with <code>n + 1</code>.
+ * A001704 a(n) = n concatenated with n + 1.
  * @author Sean A. Irvine
  */
 public class A001704 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131130 Binomial transform of <code>[1,1,7,1,7,1,7,1,...]</code>.
+ * A131130 Binomial transform of [1,1,7,1,7,1,7,1,...].
  * @author Georg Fischer
  */
 public class A131130 extends HolonomicRecurrence {

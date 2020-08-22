@@ -5,7 +5,7 @@ package irvine.oeis.a302;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A302122 Numbers k such that <code>3*10^k + 29</code> is prime.
+ * A302122 Numbers k such that 3*10^k + 29 is prime.
  * @author Georg Fischer
  */
 public class A302122 extends PowerFactorPrimeSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008339 <code>a(1)=1;</code> for <code>n &gt;= 1, a(n+1) = lcm(a(n),n) / gcd(a(n),n)</code>.
+ * A008339 a(1)=1; for n &gt;= 1, a(n+1) = lcm(a(n),n) / gcd(a(n),n).
  * @author Sean A. Irvine
  */
 public class A008339 implements Sequence {

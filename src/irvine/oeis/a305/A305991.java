@@ -6,7 +6,7 @@ package irvine.oeis.a305;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A305991 Expansion of <code>(1-27*x)^(1/9)</code>.
+ * A305991 Expansion of (1-27*x)^(1/9).
  * @author Georg Fischer
  */
 public class A305991 extends HolonomicRecurrence {

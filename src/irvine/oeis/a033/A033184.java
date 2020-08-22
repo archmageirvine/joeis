@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033184 Catalan triangle <code>A009766</code> transposed.
+ * A033184 Catalan triangle A009766 transposed.
  * @author Sean A. Irvine
  */
 public class A033184 implements Sequence {

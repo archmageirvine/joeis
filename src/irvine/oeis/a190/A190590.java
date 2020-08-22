@@ -5,7 +5,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190590 Expansion of series reversion of <code>x/(1 + x + 2*x^4)</code>.
+ * A190590 Expansion of series reversion of x/(1 + x + 2*x^4).
  * @author Georg Fischer
  */
 public class A190590 extends HolonomicRecurrence {

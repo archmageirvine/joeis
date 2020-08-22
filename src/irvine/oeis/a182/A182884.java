@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182884 Number of <code>(1,0)-steps</code> of weight 1 in all weighted lattice paths in <code>L_n</code>.
+ * A182884 Number of (1,0)-steps of weight 1 in all weighted lattice paths in L_n.
  * @author Georg Fischer
  */
 public class A182884 extends HolonomicRecurrence {

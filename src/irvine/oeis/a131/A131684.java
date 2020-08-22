@@ -6,7 +6,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131684 <code>a(n) = 24*(n^1 + 1!)*(n^2 + 2!)*(n^3 + 3!)*...*(n^6 + 6!)/6!</code>.
+ * A131684 a(n) = 24*(n^1 + 1!)*(n^2 + 2!)*(n^3 + 3!)*...*(n^6 + 6!)/6!.
  * @author Georg Fischer
  */
 public class A131684 extends GeneratingFunctionSequence {

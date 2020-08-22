@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028446 Number of perfect matchings in graph <code>P_{2n} X P_{2n} X P_{2n}</code>.
+ * A028446 Number of perfect matchings in graph P_{2n} X P_{2n} X P_{2n}.
  * @author Sean A. Irvine
  */
 public class A028446 implements Sequence {

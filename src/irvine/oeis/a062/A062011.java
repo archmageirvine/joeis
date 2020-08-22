@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000005;
 
 /**
- * A062011 <code>a(n) = 2*tau(n) = 2*A000005(n)</code>.
+ * A062011 a(n) = 2*tau(n) = 2*A000005(n).
  * @author Georg Fischer
  */
 public class A062011 implements Sequence {

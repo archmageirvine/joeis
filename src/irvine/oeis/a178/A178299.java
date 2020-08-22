@@ -5,7 +5,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178299 Number of collinear point 4-tuples in a <code>6 X 6 X 6</code> X... n-dimensional cubic grid.
+ * A178299 Number of collinear point 4-tuples in a 6 X 6 X 6 X... n-dimensional cubic grid.
  * @author Georg Fischer
  */
 public class A178299 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A020941 Main diagonal of Wythoff array: <code>w(n,n)=[ n*tau ]F(n+1)+(n-1)F(n)</code>, where <code>tau=(1+sqrt(5))/2, F(n) =</code> Fibonacci numbers.
+ * A020941 Main diagonal of Wythoff array: w(n,n)=[ n*tau ]F(n+1)+(n-1)F(n), where tau=(1+sqrt(5))/2, F(n) = Fibonacci numbers.
  * @author Sean A. Irvine
  */
 public class A020941 extends A000045 {

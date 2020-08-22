@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010054;
 
 /**
- * A014787 Expansion of Jacobi theta constant <code>(theta_2/2)^12</code>.
+ * A014787 Expansion of Jacobi theta constant (theta_2/2)^12.
  * @author Sean A. Irvine
  */
 public class A014787 extends A010054 {

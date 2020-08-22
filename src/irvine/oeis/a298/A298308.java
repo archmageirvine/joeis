@@ -6,7 +6,7 @@ package irvine.oeis.a298;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A298308 Expansion of <code>(9*x^3+9*x+1)^(1/3)</code>.
+ * A298308 Expansion of (9*x^3+9*x+1)^(1/3).
  * @author Georg Fischer
  */
 public class A298308 extends HolonomicRecurrence {

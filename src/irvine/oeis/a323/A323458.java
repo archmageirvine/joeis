@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A323458 Decimal expansion of <code>log(2^(1/2)*3^(1/3) / 6^(1/6))</code>.
+ * A323458 Decimal expansion of log(2^(1/2)*3^(1/3) / 6^(1/6)).
  * @author Georg Fischer
  */
 public class A323458 extends DecimalExpansionSequence {

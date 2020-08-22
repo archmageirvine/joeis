@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289181 Number of 6-cycles in the <code>n X n</code> knight graph.
+ * A289181 Number of 6-cycles in the n X n knight graph.
  * @author Georg Fischer
  */
 public class A289181 extends GeneratingFunctionSequence {

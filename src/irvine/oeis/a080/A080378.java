@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001223;
 
 
 /**
- * A080378 Residues <code>mod 4</code> of the n-th difference between consecutive primes.
+ * A080378 Residues mod 4 of the n-th difference between consecutive primes.
  * @author Georg Fischer
  */
 public class A080378 extends A001223 {

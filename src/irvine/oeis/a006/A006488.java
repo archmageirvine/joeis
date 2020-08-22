@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000142;
 
 /**
- * A006488 Numbers n such that <code>n!</code> has a square number of digits.
+ * A006488 Numbers n such that n! has a square number of digits.
  * @author Sean A. Irvine
  */
 public class A006488 extends A000142 {

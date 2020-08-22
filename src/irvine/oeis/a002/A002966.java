@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000058;
 
 /**
- * A002966 Egyptian fractions: number of solutions of <code>1 = 1/x_1 + ... + 1/x_n</code> where <code>0 &lt; x_1 &lt;= ... &lt;= x_n</code>.
+ * A002966 Egyptian fractions: number of solutions of 1 = 1/x_1 + ... + 1/x_n where 0 &lt; x_1 &lt;= ... &lt;= x_n.
  * @author Sean A. Irvine
  */
 public class A002966 extends A000058 {

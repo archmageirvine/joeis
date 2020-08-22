@@ -6,7 +6,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194566 Centered cube numbers: <code>(n+1)^100+n^100</code>.
+ * A194566 Centered cube numbers: (n+1)^100+n^100.
  * @author Georg Fischer
  */
 public class A194566 extends HolonomicRecurrence {

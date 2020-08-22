@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A282152 Decimal expansion of <code>20/log(10)</code>.
+ * A282152 Decimal expansion of 20/log(10).
  * @author Georg Fischer
  */
 public class A282152 extends DecimalExpansionSequence {

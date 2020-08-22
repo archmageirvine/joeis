@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179023 <code>a(n) = n(F(n+2) - 1)</code> where <code>F(n)</code> is defined by <code>A000045</code>.
+ * A179023 a(n) = n(F(n+2) - 1) where F(n) is defined by A000045.
  * @author Sean A. Irvine
  */
 public class A179023 extends LinearRecurrence {

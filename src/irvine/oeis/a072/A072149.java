@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A072149 Coordination sequence for <code>AlPO_4-11</code> structure with respect to node <code>(X)</code> where decagon and two hexagons meet.
+ * A072149 Coordination sequence for AlPO_4-11 structure with respect to node (X) where decagon and two hexagons meet.
  * @author Sean A. Irvine
  */
 public class A072149 implements Sequence {

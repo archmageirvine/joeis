@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131608 Period <code>24</code>: repeat <code>1, 1, 3, 7, 7, 1, 9, 9, 7, 3, 3, 9, -1, -1, -3, -7, -7, -1, -9, -9, -7, -3, -3, -9</code>.
+ * A131608 Period 24: repeat 1, 1, 3, 7, 7, 1, 9, 9, 7, 3, 3, 9, -1, -1, -3, -7, -7, -1, -9, -9, -7, -3, -3, -9.
  * @author Georg Fischer
  */
 public class A131608 extends GeneratingFunctionSequence {

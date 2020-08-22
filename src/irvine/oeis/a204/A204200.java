@@ -5,7 +5,7 @@ package irvine.oeis.a204;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A204200 INVERT transform of <code>[1, 0, 1, 3, 9, 27, 81, ...]</code>.
+ * A204200 INVERT transform of [1, 0, 1, 3, 9, 27, 81, ...].
  * @author Georg Fischer
  */
 public class A204200 extends HolonomicRecurrence {

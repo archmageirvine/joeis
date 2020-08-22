@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A210459 McKay-Thompson series of class <code>20A</code> for the Monster group with <code>a(0) = 4</code>.
+ * A210459 McKay-Thompson series of class 20A for the Monster group with a(0) = 4.
  * @author Georg Fischer
  */
 public class A210459 extends EulerTransform {

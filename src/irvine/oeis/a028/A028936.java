@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028936 Numerator of x-coordinate of <code>(2n)*P</code> where P is the generator for rational points on the curve <code>y^2 + y = x^3 - x</code>.
+ * A028936 Numerator of x-coordinate of (2n)*P where P is the generator for rational points on the curve y^2 + y = x^3 - x.
  * @author Sean A. Irvine
  */
 public class A028936 implements Sequence {

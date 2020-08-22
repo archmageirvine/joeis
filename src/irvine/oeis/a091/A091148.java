@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091148 Expansion of <code>(1-x-sqrt(1-2x-19x^2))/(10x^2)</code>.
+ * A091148 Expansion of (1-x-sqrt(1-2x-19x^2))/(10x^2).
  * @author Georg Fischer
  */
 public class A091148 extends HolonomicRecurrence {

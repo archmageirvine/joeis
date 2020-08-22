@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147976 <code>5^n-4^n-3^n-2^n-1</code>.
+ * A147976 5^n-4^n-3^n-2^n-1.
  * @author Georg Fischer
  */
 public class A147976 extends GeneratingFunctionSequence {

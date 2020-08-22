@@ -6,7 +6,7 @@ import irvine.oeis.ContinuedFractionOfSqrtSequence;
 import irvine.math.z.Z;
 
 /**
- * A041700 Numerators of continued fraction convergents to <code>sqrt(370)</code>.
+ * A041700 Numerators of continued fraction convergents to sqrt(370).
  * @author Georg Fischer
  */
 public class A041700 extends ContinuedFractionOfSqrtSequence {

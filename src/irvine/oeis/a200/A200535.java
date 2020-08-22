@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200535 G.f. satisfies: <code>A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n )</code>.
+ * A200535 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} C(2*n,k)^2 * x^k] / A(x)^n * x^n/n ).
  * @author Georg Fischer
  */
 public class A200535 extends GeneratingFunctionSequence {

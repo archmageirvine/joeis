@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270700 Triangular Star of David numbers (the figurate number of triangles framing a hexagram: <code>a(0) = 12;</code> thereafter <code>a(n) = 36*n+6)</code>.
+ * A270700 Triangular Star of David numbers (the figurate number of triangles framing a hexagram: a(0) = 12; thereafter a(n) = 36*n+6).
  * @author Georg Fischer
  */
 public class A270700 extends GeneratingFunctionSequence {

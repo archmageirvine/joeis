@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014309 <code>a(n) = (n+2)*(n+1)*(n^2 + 7*n - 12)/24</code>.
+ * A014309 a(n) = (n+2)*(n+1)*(n^2 + 7*n - 12)/24.
  * @author Sean A. Irvine
  */
 public class A014309 implements Sequence {

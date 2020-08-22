@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A128516 McKay-Thompson series of class <code>14C</code> for the Monster group with <code>a(0) = 4</code>.
+ * A128516 McKay-Thompson series of class 14C for the Monster group with a(0) = 4.
  * @author Georg Fischer
  */
 public class A128516 extends EulerTransform {

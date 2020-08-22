@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243464 Number of ways 2 domicules can be placed on an <code>n X n</code> square.
+ * A243464 Number of ways 2 domicules can be placed on an n X n square.
  * @author Georg Fischer
  */
 public class A243464 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263690 Number of length n arrays of permutations of <code>0..n-1</code> with each element moved by <code>-n</code> to n places and every three consecutive elements having its maximum within 3 of its minimum.
+ * A263690 Number of length n arrays of permutations of 0..n-1 with each element moved by -n to n places and every three consecutive elements having its maximum within 3 of its minimum.
  * @author Georg Fischer
  */
 public class A263690 extends GeneratingFunctionSequence {

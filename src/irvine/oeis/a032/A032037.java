@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001003;
 
 /**
- * A032037 Doubles (index <code>2+)</code> under "AIJ" <code>(ordered</code>, indistinct, labeled) transform.
+ * A032037 Doubles (index 2+) under "AIJ" (ordered, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032037 extends A001003 {

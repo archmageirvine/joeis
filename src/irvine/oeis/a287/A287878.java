@@ -3,7 +3,7 @@ package irvine.oeis.a287;
 import irvine.oeis.AlonsoSequence;
 
 /**
- * A287878 Trajectory of 234 under the map <code>x -&gt; A230625(x)</code>.
+ * A287878 Trajectory of 234 under the map x -&gt; A230625(x).
  * @author Sean A. Irvine
  */
 public class A287878 extends AlonsoSequence {

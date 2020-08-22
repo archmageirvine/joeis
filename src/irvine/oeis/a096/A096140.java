@@ -4,7 +4,7 @@ package irvine.oeis.a096;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A096140 <code>a(n) =</code> sum of n Fibonacci numbers starting from <code>F(n)</code>.
+ * A096140 a(n) = sum of n Fibonacci numbers starting from F(n).
  * @author Georg Fischer
  */
 public class A096140 extends GeneratingFunctionSequence {

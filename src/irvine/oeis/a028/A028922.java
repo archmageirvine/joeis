@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028922 Determinant of n-dimensional lattice <code>Kappa(n)</code> (non-integral beyond the entries shown).
+ * A028922 Determinant of n-dimensional lattice Kappa(n) (non-integral beyond the entries shown).
  * @author Sean A. Irvine
  */
 public class A028922 extends FiniteSequence {

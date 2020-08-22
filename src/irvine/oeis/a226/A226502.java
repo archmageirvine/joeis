@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a090.A090076;
 
 /**
- * A226502 Let <code>P(k)</code> denote the k-th prime <code>(P(1)=2, P(2)=3 ...); a(n) = P(n+1)P(n+3) - P(n)P(n+2)</code>.
+ * A226502 Let P(k) denote the k-th prime (P(1)=2, P(2)=3 ...); a(n) = P(n+1)P(n+3) - P(n)P(n+2).
  * @author Georg Fischer
  */
 public class A226502 extends DifferenceSequence {

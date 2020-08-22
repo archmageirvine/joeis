@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025536 <code>a(n) = (1/C(n,0) - 1/C(n,1) + ... + d/C(n,k))*L</code>, where d <code>= (-1)^k,k = [ n/2 ], L = LCM{C(n,0), C(n,1),..., C(n,n)}</code>.
+ * A025536 a(n) = (1/C(n,0) - 1/C(n,1) + ... + d/C(n,k))*L, where d = (-1)^k,k = [ n/2 ], L = LCM{C(n,0), C(n,1),..., C(n,n)}.
  * @author Sean A. Irvine
  */
 public class A025536 implements Sequence {

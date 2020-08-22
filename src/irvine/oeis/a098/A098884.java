@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A098884 Number of partitions of n into distinct parts in which each part is congruent to 1 or <code>5 mod 6</code>.
+ * A098884 Number of partitions of n into distinct parts in which each part is congruent to 1 or 5 mod 6.
  * @author Georg Fischer
  */
 public class A098884 extends EulerTransform {

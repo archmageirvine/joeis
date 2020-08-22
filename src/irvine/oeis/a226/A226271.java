@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A226271 Index of <code>1/n</code> in the Fibonacci (or rabbit) ordering of the positive rationals.
+ * A226271 Index of 1/n in the Fibonacci (or rabbit) ordering of the positive rationals.
  * @author Georg Fischer
  */
 public class A226271 extends LinearRecurrence {

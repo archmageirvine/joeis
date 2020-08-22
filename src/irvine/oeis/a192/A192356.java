@@ -5,7 +5,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192356 Coefficients of x in the reduction of the polynomial <code>p(n,x) = ((x+2)^n + (x-2)^n)/2</code> by <code>x^2-&gt;x+2</code>.
+ * A192356 Coefficients of x in the reduction of the polynomial p(n,x) = ((x+2)^n + (x-2)^n)/2 by x^2-&gt;x+2.
  * @author Georg Fischer
  */
 public class A192356 extends HolonomicRecurrence {

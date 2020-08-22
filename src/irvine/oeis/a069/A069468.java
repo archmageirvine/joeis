@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A069468 Number of ways writing <code>n!</code> as a product of some other numbers which has no digits equal to 1.
+ * A069468 Number of ways writing n! as a product of some other numbers which has no digits equal to 1.
  * @author Georg Fischer
  */
 public class A069468 extends PaddingSequence {

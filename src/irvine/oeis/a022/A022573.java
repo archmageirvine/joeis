@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A022573 Expansion of <code>Product_{m&gt;=1} (1+x^m)^8</code>.
+ * A022573 Expansion of Product_{m&gt;=1} (1+x^m)^8.
  * @author Georg Fischer
  */
 public class A022573 extends EulerTransform {

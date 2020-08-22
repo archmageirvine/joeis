@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A000641 Number of paraffins <code>C_n H_{2n-1} X_3</code> with n carbon atoms.
+ * A000641 Number of paraffins C_n H_{2n-1} X_3 with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A000641 extends A000598 {

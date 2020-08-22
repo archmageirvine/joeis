@@ -5,7 +5,7 @@ package irvine.oeis.a153;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A153367 Number of zig-zag paths from top to bottom of a rectangle of width 9 with <code>2n-1</code> rows whose color is not that of the top right corner.
+ * A153367 Number of zig-zag paths from top to bottom of a rectangle of width 9 with 2n-1 rows whose color is not that of the top right corner.
  * @author Georg Fischer
  */
 public class A153367 extends HolonomicRecurrence {

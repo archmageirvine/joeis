@@ -6,7 +6,7 @@ package irvine.oeis.a061;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A061714 Number of types of <code>(n-1)-swap</code> moves for traveling salesman problem. Number of circular permutations on elements <code>0,1,...,2n-1</code> where every two elements <code>2i,2i+1</code> and no two elements <code>2i-1,2i</code> are adjacent.
+ * A061714 Number of types of (n-1)-swap moves for traveling salesman problem. Number of circular permutations on elements 0,1,...,2n-1 where every two elements 2i,2i+1 and no two elements 2i-1,2i are adjacent.
  * @author Georg Fischer
  */
 public class A061714 extends HolonomicRecurrence {

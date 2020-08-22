@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A258756 <code>a(n) =</code> common difference giving the highest score in the game "Sequences" for a sequence with largest element n and as many elements as possible.
+ * A258756 a(n) = common difference giving the highest score in the game "Sequences" for a sequence with largest element n and as many elements as possible.
  * @author Georg Fischer
  */
 public class A258756 extends PaddingSequence {

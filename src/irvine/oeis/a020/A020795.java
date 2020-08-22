@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020795 Decimal expansion of <code>1/sqrt(38)</code>.
+ * A020795 Decimal expansion of 1/sqrt(38).
  * @author Sean A. Irvine
  */
 public class A020795 extends DecimalExpansionSequence {

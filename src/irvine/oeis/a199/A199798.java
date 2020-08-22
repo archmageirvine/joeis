@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199798 y-values in the solution to <code>17*x^2 + 16 = y^2</code>.
+ * A199798 y-values in the solution to 17*x^2 + 16 = y^2.
  * @author Sean A. Irvine
  */
 public class A199798 extends LinearRecurrence {

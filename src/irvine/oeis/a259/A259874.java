@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002004;
 
 /**
- * A259874 Array read by antidiagonals upwards: Davenport-Schinzel numbers <code>T(n,k), n &gt;= 1, k &gt;= 1</code>.
+ * A259874 Array read by antidiagonals upwards: Davenport-Schinzel numbers T(n,k), n &gt;= 1, k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A259874 extends A002004 {

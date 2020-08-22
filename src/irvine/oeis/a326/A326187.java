@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a003.A003557;
 
 /**
- * A326187 <code>a(n) = sigma(n) - A003557(n)</code>.
+ * A326187 a(n) = sigma(n) - A003557(n).
  * @author Georg Fischer
  */
 public class A326187 implements Sequence {

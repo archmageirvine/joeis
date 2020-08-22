@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077955 Expansion of <code>1/(1-x+2*x^2+x^3)</code>.
+ * A077955 Expansion of 1/(1-x+2*x^2+x^3).
  * @author Georg Fischer
  */
 public class A077955 extends GeneratingFunctionSequence {

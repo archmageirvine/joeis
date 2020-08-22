@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
 /**
- * A029570 Quasi-Carmichael numbers to base <code>-10</code>: squarefree composites n such that prime <code>p|n ==&gt; p+10|n+10</code>.
+ * A029570 Quasi-Carmichael numbers to base -10: squarefree composites n such that prime p|n ==&gt; p+10|n+10.
  * @author Sean A. Irvine
  */
 public class A029570 extends A120944 {

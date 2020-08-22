@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032401 Numbers k such that <code>103*2^k+1</code> is prime.
+ * A032401 Numbers k such that 103*2^k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A032401 extends PowerFactorPrimeSequence {

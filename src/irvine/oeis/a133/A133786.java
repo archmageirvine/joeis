@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133786 Numbers prime to <code>10, 10</code>'s digit is odd and <code>100</code>'s digit is odd.
+ * A133786 Numbers prime to 10, 10's digit is odd and 100's digit is odd.
  * @author Georg Fischer
  */
 public class A133786 extends HolonomicRecurrence {

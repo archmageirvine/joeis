@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A079908 Solution to the Dancing School Problem with 3 girls and <code>n+3</code> boys: <code>f(3,n)</code>.
+ * A079908 Solution to the Dancing School Problem with 3 girls and n+3 boys: f(3,n).
  * @author Georg Fischer
  */
 public class A079908 extends GeneratingFunctionSequence {

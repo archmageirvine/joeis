@@ -6,7 +6,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080144 <code>a(n) = F(4)*F(n)*F(n+1) + F(5)*F(n+1)^2</code> if n odd, <code>a(n) = F(4)*F(n)*F(n+1) + F(5)*F(n+1)^2 - F(5)</code> if n even, where <code>F(n)</code> is the n-th Fibonacci number <code>(A000045)</code>.
+ * A080144 a(n) = F(4)*F(n)*F(n+1) + F(5)*F(n+1)^2 if n odd, a(n) = F(4)*F(n)*F(n+1) + F(5)*F(n+1)^2 - F(5) if n even, where F(n) is the n-th Fibonacci number (A000045).
  * @author Georg Fischer
  */
 public class A080144 extends HolonomicRecurrence {

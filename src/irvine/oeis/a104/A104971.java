@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104971 Numbers with 4 distinct digits <code>{1,2,3,4}</code> such that all adjacent <code>digits(as</code> well as first and last digits) are coprime.
+ * A104971 Numbers with 4 distinct digits {1,2,3,4} such that all adjacent digits(as well as first and last digits) are coprime.
  * @author Georg Fischer
  */
 public class A104971 extends FiniteSequence {

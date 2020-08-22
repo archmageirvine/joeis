@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090667 Number of compositions of <code>3n</code> with each part less than or equal to <code>n</code>.
+ * A090667 Number of compositions of 3n with each part less than or equal to n.
  * @author Georg Fischer
  */
 public class A090667 extends GeneratingFunctionSequence {

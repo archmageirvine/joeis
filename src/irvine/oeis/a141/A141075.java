@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A141075 Nonprimes of form <code>(2*3*5*7*11-p)</code>, where p is prime.
+ * A141075 Nonprimes of form (2*3*5*7*11-p), where p is prime.
  * @author Georg Fischer
  */
 public class A141075 extends FiniteSequence {

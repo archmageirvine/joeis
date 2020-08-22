@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A030547 Number of terms (including the initial term) needed to reach a palindrome when the Reverse Then <code>Add!</code> map <code>(x -&gt; x + (x-with-digits-reversed))</code> is repeatedly applied to n, or -1 if a palindrome is never reached.
+ * A030547 Number of terms (including the initial term) needed to reach a palindrome when the Reverse Then Add! map (x -&gt; x + (x-with-digits-reversed)) is repeatedly applied to n, or -1 if a palindrome is never reached.
  * @author Sean A. Irvine
  */
 public class A030547 implements Sequence {

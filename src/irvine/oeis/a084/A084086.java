@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084086 Length of lists created by n substitutions k <code>-&gt; Range[ -1-Abs[k]+MoebiusMu[Abs[k]],k+1+MoebiusMu[Abs[k]],2]</code> starting with <code>{-1}</code>.
+ * A084086 Length of lists created by n substitutions k -&gt; Range[ -1-Abs[k]+MoebiusMu[Abs[k]],k+1+MoebiusMu[Abs[k]],2] starting with {-1}.
  * @author Georg Fischer
  */
 public class A084086 extends GeneratingFunctionSequence {

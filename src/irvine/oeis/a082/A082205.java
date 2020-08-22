@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082205 Palindromes pertaining to <code>A082204</code>.
+ * A082205 Palindromes pertaining to A082204.
  * @author Georg Fischer
  */
 public class A082205 extends LinearRecurrence {

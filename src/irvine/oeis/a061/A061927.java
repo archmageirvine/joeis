@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061927 <code>a(n) = n(n+1)(2n+1)(n^2+n+3)/30</code>.
+ * A061927 a(n) = n(n+1)(2n+1)(n^2+n+3)/30.
  * @author Sean A. Irvine
  */
 public class A061927 extends LinearRecurrence {

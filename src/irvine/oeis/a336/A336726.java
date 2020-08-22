@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336726 Number of <code>n-step self-avoiding</code> walks on the half-Manhattan lattice with no non-contiguous adjacencies.
+ * A336726 Number of n-step self-avoiding walks on the half-Manhattan lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A336726 implements Sequence {

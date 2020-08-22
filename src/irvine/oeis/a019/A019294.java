@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019294 Number <code>(&gt; 0)</code> of iterations of sigma <code>(A000203)</code> required to reach a multiple of n when starting with <code>n</code>.
+ * A019294 Number (&gt; 0) of iterations of sigma (A000203) required to reach a multiple of n when starting with n.
  * @author Sean A. Irvine
  */
 public class A019294 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257712 Triangular numbers <code>(A000217)</code> that are the sum of eight consecutive triangular numbers.
+ * A257712 Triangular numbers (A000217) that are the sum of eight consecutive triangular numbers.
  * @author Sean A. Irvine
  */
 public class A257712 extends LinearRecurrence {

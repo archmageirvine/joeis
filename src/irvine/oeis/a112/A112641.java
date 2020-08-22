@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112641 Weight distribution of quadratic residue code of length 23 over <code>GF(3)</code>.
+ * A112641 Weight distribution of quadratic residue code of length 23 over GF(3).
  * @author Georg Fischer
  */
 public class A112641 extends FiniteSequence {

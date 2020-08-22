@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109265 Row sums of Riordan array <code>(1-x-x^2,x(1-x))</code>.
+ * A109265 Row sums of Riordan array (1-x-x^2,x(1-x)).
  * @author Georg Fischer
  */
 public class A109265 extends GeneratingFunctionSequence {

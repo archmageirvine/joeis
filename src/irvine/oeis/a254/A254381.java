@@ -6,7 +6,7 @@ package irvine.oeis.a254;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254381 <code>a(n) = 3^n*(2*n + 1)!/n!</code>.
+ * A254381 a(n) = 3^n*(2*n + 1)!/n!.
  * @author Georg Fischer
  */
 public class A254381 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105252 <code>a(n) = binomial(n+5,n)*binomial(n+9,n)</code>.
+ * A105252 a(n) = binomial(n+5,n)*binomial(n+9,n).
  * @author Sean A. Irvine
  */
 public class A105252 extends LinearRecurrence {

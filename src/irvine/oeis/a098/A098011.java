@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098011 <code>10^a(n) + 1 = A088773(n)</code>.
+ * A098011 10^a(n) + 1 = A088773(n).
  * @author Georg Fischer
  */
 public class A098011 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331106 Number of plane trees of total weight n of combinatorial class <code>T=Z*U + Z*T^2/(1-T)</code> with nodes Z of weight one and leaves U of weight three.
+ * A331106 Number of plane trees of total weight n of combinatorial class T=Z*U + Z*T^2/(1-T) with nodes Z of weight one and leaves U of weight three.
  * @author Georg Fischer
  */
 public class A331106 extends HolonomicRecurrence {

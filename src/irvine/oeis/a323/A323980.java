@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A323980 Expansion of determinant of <code>24 X 24</code> matrix <code>M_{u,v} = q^(inv(u*v^-1))</code> where u, v in <code>S_4</code> and inv is number of inversions.
+ * A323980 Expansion of determinant of 24 X 24 matrix M_{u,v} = q^(inv(u*v^-1)) where u, v in S_4 and inv is number of inversions.
  * @author Georg Fischer
  */
 public class A323980 extends FiniteSequence {

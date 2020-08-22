@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 /**
- * A025510 Least <code>k&gt;1</code> such that complement of first n terms of <code>A006928</code> repeats beginning at k-th term.
+ * A025510 Least k&gt;1 such that complement of first n terms of A006928 repeats beginning at k-th term.
  * @author Sean A. Irvine
  */
 public class A025510 extends A025508 {

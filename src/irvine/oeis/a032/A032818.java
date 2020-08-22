@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032818 Numbers whose set of base 6 digits is <code>{1,4}</code>.
+ * A032818 Numbers whose set of base 6 digits is {1,4}.
  * @author Sean A. Irvine
  */
 public class A032818 extends MemorySequence {

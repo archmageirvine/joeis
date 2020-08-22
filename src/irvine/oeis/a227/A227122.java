@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227122 Number of <code>n X 3 0,1</code> arrays indicating <code>2 X 2</code> subblocks of some larger <code>(n+1) X 4</code> binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
+ * A227122 Number of n X 3 0,1 arrays indicating 2 X 2 subblocks of some larger (n+1) X 4 binary array having a sum of zero, with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A227122 extends GeneratingFunctionSequence {

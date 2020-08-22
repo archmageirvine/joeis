@@ -4,7 +4,7 @@ import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 
 /**
- * A000795 Sali\u00e9 numbers: expansion of cosh <code>x /</code> cos <code>x = Sum_{n &gt;= 0} a(n)*x^(2n)/(2n)!</code>.
+ * A000795 Sali\u00e9 numbers: expansion of cosh x / cos x = Sum_{n &gt;= 0} a(n)*x^(2n)/(2n)!.
  * @author Sean A. Irvine
  */
 public class A000795 extends A000364 {

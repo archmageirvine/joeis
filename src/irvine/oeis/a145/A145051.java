@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145051 Numerator of the first convergent to <code>sqrt(n)</code> using the recursion <code>x = (n/x + x)/2</code>.
+ * A145051 Numerator of the first convergent to sqrt(n) using the recursion x = (n/x + x)/2.
  * @author Georg Fischer
  */
 public class A145051 extends GeneratingFunctionSequence {

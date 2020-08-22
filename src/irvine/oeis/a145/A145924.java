@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145924 Last digit of <code>A145923(n)</code>.
+ * A145924 Last digit of A145923(n).
  * @author Georg Fischer
  */
 public class A145924 extends GeneratingFunctionSequence {

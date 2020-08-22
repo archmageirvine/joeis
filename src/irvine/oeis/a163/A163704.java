@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163704 Number of <code>n X 2</code> binary arrays with all <code>1s</code> connected, a path of <code>1s</code> from left column to lower right corner, and no 1 having more than two <code>1s</code> adjacent.
+ * A163704 Number of n X 2 binary arrays with all 1s connected, a path of 1s from left column to lower right corner, and no 1 having more than two 1s adjacent.
  * @author Georg Fischer
  */
 public class A163704 extends GeneratingFunctionSequence {

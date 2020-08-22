@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034037 Numbers that are primitively represented by <code>(x^2+xy+2y^2</code> with <code>x &gt;= 0, y &gt;= 0)</code>.
+ * A034037 Numbers that are primitively represented by (x^2+xy+2y^2 with x &gt;= 0, y &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A034037 implements Sequence {

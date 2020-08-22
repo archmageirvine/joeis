@@ -5,7 +5,7 @@ package irvine.oeis.a065;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A065794 Numbers n such that the sum of all possible subsets of the digits in n, excluding n itself, sums to <code>n</code>.
+ * A065794 Numbers n such that the sum of all possible subsets of the digits in n, excluding n itself, sums to n.
  * @author Georg Fischer
  */
 public class A065794 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274221 List of quadruples: <code>3*n*(3*n-1), 3*n*(3*n+1), (3*n+1)^2, (3*n+2)^2</code>.
+ * A274221 List of quadruples: 3*n*(3*n-1), 3*n*(3*n+1), (3*n+1)^2, (3*n+2)^2.
  * @author Georg Fischer
  */
 public class A274221 extends GeneratingFunctionSequence {

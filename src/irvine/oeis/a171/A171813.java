@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A171813 Trajectory of 1 under repeated applications of the map i <code>-&gt; A171798(i)</code>.
+ * A171813 Trajectory of 1 under repeated applications of the map i -&gt; A171798(i).
  * @author Georg Fischer
  */
 public class A171813 extends PaddingSequence {

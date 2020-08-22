@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A131296 <code>a(n) = ds_5(a(n-1))+ds_5(a(n-2)), a(0)=0, a(1)=1;</code> where <code>ds_5=digital</code> sum base 5.
+ * A131296 a(n) = ds_5(a(n-1))+ds_5(a(n-2)), a(0)=0, a(1)=1; where ds_5=digital sum base 5.
  * @author Georg Fischer
  */
 public class A131296 extends PaddingSequence {

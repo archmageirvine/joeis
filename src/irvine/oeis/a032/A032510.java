@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032510 Scan decimal expansion of <code>Pi</code> until all n-digit strings have been seen; <code>a(n)</code> is last string seen.
+ * A032510 Scan decimal expansion of Pi until all n-digit strings have been seen; a(n) is last string seen.
  * @author Sean A. Irvine
  */
 public class A032510 implements Sequence {

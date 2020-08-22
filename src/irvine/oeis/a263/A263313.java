@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263313 Permutation of the nonnegative integers: <code>[4k+3, 4k, 4k+1, 4k+2, ...]</code>.
+ * A263313 Permutation of the nonnegative integers: [4k+3, 4k, 4k+1, 4k+2, ...].
  * @author Sean A. Irvine
  */
 public class A263313 extends LinearRecurrence {

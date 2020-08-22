@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A218012 The decimal expansion of <code>-sqrt(7) + sqrt(11)</code>, Andrica's Maximum <code>A_n</code>.
+ * A218012 The decimal expansion of -sqrt(7) + sqrt(11), Andrica's Maximum A_n.
  * @author Georg Fischer
  */
 public class A218012 extends DecimalExpansionSequence {

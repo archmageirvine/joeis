@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222182 Numbers m such that <code>2*m+11</code> is a square.
+ * A222182 Numbers m such that 2*m+11 is a square.
  * @author Sean A. Irvine
  */
 public class A222182 extends LinearRecurrence {

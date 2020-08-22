@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143056 <code>a(n) = Re(b(n))</code> where <code>b(n)=(1+i)*b(n-1)+b(n-2)</code>, with <code>b(1)=0, b(2)=1</code>.
+ * A143056 a(n) = Re(b(n)) where b(n)=(1+i)*b(n-1)+b(n-2), with b(1)=0, b(2)=1.
  * @author Georg Fischer
  */
 public class A143056 extends HolonomicRecurrence {

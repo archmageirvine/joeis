@@ -5,7 +5,7 @@ package irvine.oeis.a116;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116921 <code>a(n) =</code> largest integer <code>&lt;= n/2</code> which is coprime to <code>n</code>.
+ * A116921 a(n) = largest integer &lt;= n/2 which is coprime to n.
  * @author Georg Fischer
  */
 public class A116921 extends HolonomicRecurrence {

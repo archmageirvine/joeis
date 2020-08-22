@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167058 Number of spanning trees in <code>(S_5 + e) X P_n</code>.
+ * A167058 Number of spanning trees in (S_5 + e) X P_n.
  * @author Georg Fischer
  */
 public class A167058 extends GeneratingFunctionSequence {

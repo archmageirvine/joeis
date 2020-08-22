@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157700 Decimal expansion of <code>log(4/(1 + sqrt(2)))</code>.
+ * A157700 Decimal expansion of log(4/(1 + sqrt(2))).
  * @author Georg Fischer
  */
 public class A157700 extends DecimalExpansionSequence {

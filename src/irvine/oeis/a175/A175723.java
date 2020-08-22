@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A175723 <code>a(1)=a(2)=1;</code> thereafter <code>a(n) = gpf(a(n-1)+a(n-2))</code>, where <code>gpf =</code> "greatest prime factor".
+ * A175723 a(1)=a(2)=1; thereafter a(n) = gpf(a(n-1)+a(n-2)), where gpf = "greatest prime factor".
  * @author Georg Fischer
  */
 public class A175723 extends PaddingSequence {

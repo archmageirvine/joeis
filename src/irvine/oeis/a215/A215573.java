@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215573 <code>a(n) = n*(n+1)*(2n+1)/6</code> modulo <code>n</code>.
+ * A215573 a(n) = n*(n+1)*(2n+1)/6 modulo n.
  * @author Georg Fischer
  */
 public class A215573 extends GeneratingFunctionSequence {

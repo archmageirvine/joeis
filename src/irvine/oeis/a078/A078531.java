@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078531 Coefficients of power series that satisfies <code>A(x)^2 - 4*x*A(x)^3 = 1, A(0)=1</code>.
+ * A078531 Coefficients of power series that satisfies A(x)^2 - 4*x*A(x)^3 = 1, A(0)=1.
  * @author Georg Fischer
  */
 public class A078531 extends HolonomicRecurrence {

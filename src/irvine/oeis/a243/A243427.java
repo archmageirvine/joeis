@@ -6,7 +6,7 @@ package irvine.oeis.a243;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A243427 Floored (rational) values of <code>sqrt(xy)</code> such that <code>sqrt(x) + sqrt(y) = sqrt(xy)</code>.
+ * A243427 Floored (rational) values of sqrt(xy) such that sqrt(x) + sqrt(y) = sqrt(xy).
  * @author Georg Fischer
  */
 public class A243427 extends HolonomicRecurrence {

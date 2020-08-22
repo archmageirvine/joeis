@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115197 Convolution of generalized Catalan numbers <code>A064062</code> (called <code>C(n;2))</code>.
+ * A115197 Convolution of generalized Catalan numbers A064062 (called C(n;2)).
  * @author Georg Fischer
  */
 public class A115197 extends HolonomicRecurrence {

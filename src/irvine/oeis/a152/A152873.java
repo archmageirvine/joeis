@@ -6,7 +6,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152873 Number of permutations of <code>{1,2,...,n} (n&gt;=2)</code> having a single run of even entries. For example, the permutation 513284679 has a single run of even entries: 2846.
+ * A152873 Number of permutations of {1,2,...,n} (n&gt;=2) having a single run of even entries. For example, the permutation 513284679 has a single run of even entries: 2846.
  * @author Georg Fischer
  */
 public class A152873 extends HolonomicRecurrence {

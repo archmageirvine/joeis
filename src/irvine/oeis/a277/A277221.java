@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277221 Number of permutations of length n which avoid the patterns <code>4123, 1324</code>, and 3124.
+ * A277221 Number of permutations of length n which avoid the patterns 4123, 1324, and 3124.
  * @author Georg Fischer
  */
 public class A277221 extends HolonomicRecurrence {

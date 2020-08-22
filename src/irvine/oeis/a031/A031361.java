@@ -7,7 +7,7 @@ import irvine.math.z.Dirichlet;
 import irvine.math.z.Z;
 
 /**
- * A031361 Number of symmetrically inequivalent coincidence rotations of index n in lattice <code>Z^4</code>.
+ * A031361 Number of symmetrically inequivalent coincidence rotations of index n in lattice Z^4.
  * @author Sean A. Irvine
  */
 public class A031361 extends A031360 {

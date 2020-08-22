@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330640 <code>a(n)</code> is the number of partitions of n with Durfee square of size <code>&lt;= 2</code>.
+ * A330640 a(n) is the number of partitions of n with Durfee square of size &lt;= 2.
  * @author Georg Fischer
  */
 public class A330640 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332756 A loop sequence within <code>Pi</code>. Let <code>a(1) = 19</code>. For <code>n &gt; 1, a(n+1)</code> is the position of the first occurrence of <code>a(n)</code> after the decimal point in the decimal expansion of <code>Pi</code>.
+ * A332756 A loop sequence within Pi. Let a(1) = 19. For n &gt; 1, a(n+1) is the position of the first occurrence of a(n) after the decimal point in the decimal expansion of Pi.
  * @author Georg Fischer
  */
 public class A332756 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A272002 Decimal expansion of <code>Cp(1)</code>, the molar specific heat of an atomic ideal gas at constant pressure.
+ * A272002 Decimal expansion of Cp(1), the molar specific heat of an atomic ideal gas at constant pressure.
  * @author Georg Fischer
  */
 public class A272002 extends NoncomputableSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A038194 Iterated <code>sum-of-digits</code> of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
+ * A038194 Iterated sum-of-digits of n-th prime; or digital root of n-th prime; or n-th prime modulo 9.
  * @author Georg Fischer
  */
 public class A038194 extends A000040 {

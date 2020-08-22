@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178159 Modified variant of <code>A006645</code>, the self-convolution of the Pell series.
+ * A178159 Modified variant of A006645, the self-convolution of the Pell series.
  * @author Sean A. Irvine
  */
 public class A178159 extends LinearRecurrence {

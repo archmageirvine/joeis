@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A110845 Weight enumerator of <code>[128,64,16] Reed-Muller</code> code <code>RM(3,7)</code>.
+ * A110845 Weight enumerator of [128,64,16] Reed-Muller code RM(3,7).
  * @author Georg Fischer
  */
 public class A110845 extends FiniteSequence {

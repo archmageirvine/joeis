@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126765 <code>a(n) =</code> number of L-convex polyominoes inscribed in an <code>(n+1) X (n+1)</code> box.
+ * A126765 a(n) = number of L-convex polyominoes inscribed in an (n+1) X (n+1) box.
  * @author Georg Fischer
  */
 public class A126765 extends HolonomicRecurrence {

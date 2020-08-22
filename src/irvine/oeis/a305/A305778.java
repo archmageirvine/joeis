@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305778 Number of set partitions of <code>[n]</code> with alternating parity of elements and exactly four blocks.
+ * A305778 Number of set partitions of [n] with alternating parity of elements and exactly four blocks.
  * @author Georg Fischer
  */
 public class A305778 extends GeneratingFunctionSequence {

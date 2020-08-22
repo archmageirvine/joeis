@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028435 Golc sequence in base 5. Left to right concatenation of <code>n,int(log_5(n)),int(log_5(int(log_5(n)))),..</code>. in <code>base5</code>.
+ * A028435 Golc sequence in base 5. Left to right concatenation of n,int(log_5(n)),int(log_5(int(log_5(n)))),... in base5.
  * @author Sean A. Irvine
  */
 public class A028435 implements Sequence {

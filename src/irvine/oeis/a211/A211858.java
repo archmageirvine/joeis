@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211858 Number of partitions of n into parts <code>&lt;= 3</code> with the property that all parts have distinct multiplicities.
+ * A211858 Number of partitions of n into parts &lt;= 3 with the property that all parts have distinct multiplicities.
  * @author Georg Fischer
  */
 public class A211858 extends GeneratingFunctionSequence {

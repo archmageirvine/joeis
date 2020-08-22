@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A222480 Decimal expansion of <code>cos(1)/(1+cos(1))</code>.
+ * A222480 Decimal expansion of cos(1)/(1+cos(1)).
  * @author Georg Fischer
  */
 public class A222480 extends DecimalExpansionSequence {

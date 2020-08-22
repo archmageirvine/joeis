@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000984;
 
 /**
- * A134759 <code>a(n) = 2*A000984(n) - (n+1)</code>.
+ * A134759 a(n) = 2*A000984(n) - (n+1).
  * @author Georg Fischer
  */
 public class A134759 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026099 Row of <code>A026098</code> that contains <code>n</code>.
+ * A026099 Row of A026098 that contains n.
  * @author Sean A. Irvine
  */
 public class A026099 extends A026098 {

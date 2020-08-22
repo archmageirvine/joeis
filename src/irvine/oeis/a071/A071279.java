@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A071279 Kissing number of regular <code>n-gon</code>.
+ * A071279 Kissing number of regular n-gon.
  * @author Georg Fischer
  */
 public class A071279 extends PaddingSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a229;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A229154 The clubs patterns appearing in <code>n X n</code> coins, with rotation allowed.
+ * A229154 The clubs patterns appearing in n X n coins, with rotation allowed.
  * @author Georg Fischer
  */
 public class A229154 extends HolonomicRecurrence {

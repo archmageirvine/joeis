@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057711 <code>a(0)=0, a(1)=1, a(n) = n*2^(n-2)</code> for <code>n &gt;= 2</code>.
+ * A057711 a(0)=0, a(1)=1, a(n) = n*2^(n-2) for n &gt;= 2.
  * @author Georg Fischer
  */
 public class A057711 extends GeneratingFunctionSequence {

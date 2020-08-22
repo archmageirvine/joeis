@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152107 <code>a(n) = ((6+sqrt(5))^n+(6-sqrt(5))^n)/2</code>.
+ * A152107 a(n) = ((6+sqrt(5))^n+(6-sqrt(5))^n)/2.
  * @author Georg Fischer
  */
 public class A152107 extends GeneratingFunctionSequence {

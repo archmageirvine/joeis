@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032428 Coefficients of Jacobi elliptic function <code>c(5,m)</code>.
+ * A032428 Coefficients of Jacobi elliptic function c(5,m).
  * @author Sean A. Irvine
  */
 public class A032428 extends MemoryFunctionInt3<Z> implements Sequence {

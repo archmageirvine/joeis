@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293156 Number of linear chord diagrams with <code>n+2</code> chords such that every chord has length at least <code>n</code>.
+ * A293156 Number of linear chord diagrams with n+2 chords such that every chord has length at least n.
  * @author Georg Fischer
  */
 public class A293156 extends GeneratingFunctionSequence {

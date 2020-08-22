@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028665 Galois numbers for <code>p=3;</code> order of group <code>AGL(n,3)</code>.
+ * A028665 Galois numbers for p=3; order of group AGL(n,3).
  * @author Sean A. Irvine
  */
 public class A028665 implements Sequence {

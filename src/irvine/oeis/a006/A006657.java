@@ -8,7 +8,7 @@ import irvine.oeis.a005.A005316;
 import irvine.util.Pair;
 
 /**
- * A006657 Closed meanders with 2 components and <code>2n</code> bridges.
+ * A006657 Closed meanders with 2 components and 2n bridges.
  * @author Andrew Howroyd
  * @author Sean A. Irvine (Java port)
  */

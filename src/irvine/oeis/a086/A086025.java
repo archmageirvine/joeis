@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086025 <code>a(n) = Sum_{i=1..n} C(i+4,5)^2</code>.
+ * A086025 a(n) = Sum_{i=1..n} C(i+4,5)^2.
  * @author Georg Fischer
  */
 public class A086025 extends GeneratingFunctionSequence {

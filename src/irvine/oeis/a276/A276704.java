@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A276704 Records in <code>A249859</code>.
+ * A276704 Records in A249859.
  * @author Georg Fischer
  */
 public class A276704 extends GeneratingFunctionSequence {

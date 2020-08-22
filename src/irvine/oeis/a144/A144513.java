@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144513 <code>a(n) = Sum_{k=0..n} (n+k+2)!/((n-k)!*k!*2^k)</code>.
+ * A144513 a(n) = Sum_{k=0..n} (n+k+2)!/((n-k)!*k!*2^k).
  * @author Georg Fischer
  */
 public class A144513 extends HolonomicRecurrence {

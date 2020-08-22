@@ -6,7 +6,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167070 Number of spanning trees in G X <code>P_n</code>, where G <code>= {{1, 2}, {1, 3}, {1, 4}, {2, 5}}</code>.
+ * A167070 Number of spanning trees in G X P_n, where G = {{1, 2}, {1, 3}, {1, 4}, {2, 5}}.
  * @author Georg Fischer
  */
 public class A167070 extends GeneratingFunctionSequence {

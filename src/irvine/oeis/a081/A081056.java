@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A081056 Number of partitions of <code>2n+1</code> in which no parts are multiples of 4.
+ * A081056 Number of partitions of 2n+1 in which no parts are multiples of 4.
  * @author Georg Fischer
  */
 public class A081056 extends EulerTransform {

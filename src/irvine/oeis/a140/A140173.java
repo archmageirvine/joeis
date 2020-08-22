@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A140173 Numbers k such that <code>sigma(k) = phi(k)*(sum</code> of the digits of <code>k)</code>.
+ * A140173 Numbers k such that sigma(k) = phi(k)*(sum of the digits of k).
  * @author Sean A. Irvine
  */
 public class A140173 implements Sequence {

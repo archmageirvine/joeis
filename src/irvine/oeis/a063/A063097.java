@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063097 Dimension of the space of weight <code>2n</code> cusp forms for <code>Gamma_0( 29 )</code>.
+ * A063097 Dimension of the space of weight 2n cusp forms for Gamma_0( 29 ).
  * @author Georg Fischer
  */
 public class A063097 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A210017 In base 6, numbers n which have 6 distinct digits, do not start with 0, and have property that the product (written in base <code>6)</code> of any two adjacent digits is a substring of <code>n</code>.
+ * A210017 In base 6, numbers n which have 6 distinct digits, do not start with 0, and have property that the product (written in base 6) of any two adjacent digits is a substring of n.
  * @author Georg Fischer
  */
 public class A210017 extends FiniteSequence {

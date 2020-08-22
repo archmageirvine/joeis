@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061594 Number of ways to place <code>3n</code> nonattacking kings on a <code>6 X 2n</code> chessboard.
+ * A061594 Number of ways to place 3n nonattacking kings on a 6 X 2n chessboard.
  * @author Georg Fischer
  */
 public class A061594 extends GeneratingFunctionSequence {

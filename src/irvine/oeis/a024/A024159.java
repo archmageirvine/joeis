@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024159 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> such that n divides <code>a^3 + b^3 + c^3</code>.
+ * A024159 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that n divides a^3 + b^3 + c^3.
  * @author Sean A. Irvine
  */
 public class A024159 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a030;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A030439 <code>a(n+1) =</code> smallest number not containing any digits of <code>a(n)</code>, working in base 3.
+ * A030439 a(n+1) = smallest number not containing any digits of a(n), working in base 3.
  * @author Georg Fischer
  */
 public class A030439 extends HolonomicRecurrence {

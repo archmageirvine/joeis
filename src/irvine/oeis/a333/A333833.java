@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333833 Number of permutations p of <code>[n]</code> such that <code>|p(i) - p(i-1)| &lt;= 2</code> and <code>|p(i) - p(i-2)| &lt;= 3</code>.
+ * A333833 Number of permutations p of [n] such that |p(i) - p(i-1)| &lt;= 2 and |p(i) - p(i-2)| &lt;= 3.
  * @author Georg Fischer
  */
 public class A333833 extends GeneratingFunctionSequence {

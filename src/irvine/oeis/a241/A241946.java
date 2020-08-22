@@ -5,7 +5,7 @@ package irvine.oeis.a241;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A241946 Numbers n equal to the sum of all the four-digit numbers formed without repetition from the digits of <code>n</code>.
+ * A241946 Numbers n equal to the sum of all the four-digit numbers formed without repetition from the digits of n.
  * @author Georg Fischer
  */
 public class A241946 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A008687 Number of <code>1</code>'s in <code>2</code>'s complement representation of <code>-n</code>.
+ * A008687 Number of 1's in 2's complement representation of -n.
  * @author Sean A. Irvine
  */
 public class A008687 extends MemorySequence {

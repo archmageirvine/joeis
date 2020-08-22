@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001900 Successive numerators of Wallis's approximation to <code>Pi/2</code> (unreduced).
+ * A001900 Successive numerators of Wallis's approximation to Pi/2 (unreduced).
  * @author Sean A. Irvine
  */
 public class A001900 implements Sequence {

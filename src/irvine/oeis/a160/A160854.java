@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A160854 Expansion of <code>(1+147*x+1098*x^2+1638*x^3+632*x^4+59*x^5+x^6)/(1-x)^7</code>.
+ * A160854 Expansion of (1+147*x+1098*x^2+1638*x^3+632*x^4+59*x^5+x^6)/(1-x)^7.
  * @author Georg Fischer
  */
 public class A160854 extends LinearRecurrence {

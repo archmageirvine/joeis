@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072373 Complexity of doubled cycle (regarding case <code>n = 2</code> as a graph).
+ * A072373 Complexity of doubled cycle (regarding case n = 2 as a graph).
  * @author Georg Fischer
  */
 public class A072373 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113283 Even bisection of <code>A113281: a(n) = A113281(2*n)</code>.
+ * A113283 Even bisection of A113281: a(n) = A113281(2*n).
  * @author Georg Fischer
  */
 public class A113283 extends HolonomicRecurrence {

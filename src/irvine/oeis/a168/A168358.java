@@ -6,7 +6,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168358 Self-convolution square of <code>A001246</code>, which is the squares of Catalan numbers.
+ * A168358 Self-convolution square of A001246, which is the squares of Catalan numbers.
  * @author Georg Fischer
  */
 public class A168358 extends HolonomicRecurrence {

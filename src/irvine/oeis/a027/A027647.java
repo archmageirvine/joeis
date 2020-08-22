@@ -1,7 +1,7 @@
 package irvine.oeis.a027;
 
 /**
- * A027647 Numerators of poly-Bernoulli numbers <code>B_n^(k)</code> with <code>k=4</code>.
+ * A027647 Numerators of poly-Bernoulli numbers B_n^(k) with k=4.
  * @author Sean A. Irvine
  */
 public class A027647 extends A027643 {

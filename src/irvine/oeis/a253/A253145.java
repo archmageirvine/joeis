@@ -5,7 +5,7 @@ package irvine.oeis.a253;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A253145 Triangular numbers <code>(A000217)</code> omitting the term 1.
+ * A253145 Triangular numbers (A000217) omitting the term 1.
  * @author Georg Fischer
  */
 public class A253145 extends HolonomicRecurrence {

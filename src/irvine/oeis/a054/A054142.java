@@ -7,7 +7,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A054142 Triangular array <code>C(2*n-k, k), k=0..n, n &gt;= 0</code>.
+ * A054142 Triangular array C(2*n-k, k), k=0..n, n &gt;= 0.
  * @author Georg Fischer
  */
 public class A054142 extends GeneratingFunctionTriangle {

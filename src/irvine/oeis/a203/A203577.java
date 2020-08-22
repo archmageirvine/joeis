@@ -6,7 +6,7 @@ package irvine.oeis.a203;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A203577 Exponential (or binomial) half-convolution of the sequence <code>A000108</code> (Catalan) with itself.
+ * A203577 Exponential (or binomial) half-convolution of the sequence A000108 (Catalan) with itself.
  * @author Georg Fischer
  */
 public class A203577 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004152;
 
 /**
- * A202708 Sum of digits of <code>n!</code> divided by 9.
+ * A202708 Sum of digits of n! divided by 9.
  * @author Georg Fischer
  */
 public class A202708 extends A004152 {

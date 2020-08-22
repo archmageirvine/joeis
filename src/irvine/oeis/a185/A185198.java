@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A185198 Decimal expansion of <code>2*Pi^2/(7*Zeta(3))</code>.
+ * A185198 Decimal expansion of 2*Pi^2/(7*Zeta(3)).
  * @author Georg Fischer
  */
 public class A185198 extends DecimalExpansionSequence {

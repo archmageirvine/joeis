@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A238936 Powers of 6 without the digit <code>'0'</code> in their decimal expansion.
+ * A238936 Powers of 6 without the digit '0' in their decimal expansion.
  * @author Georg Fischer
  */
 public class A238936 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063758 <code>a(0)=1, a(n) = 2*Fibonacci(n+4) - 6</code>.
+ * A063758 a(0)=1, a(n) = 2*Fibonacci(n+4) - 6.
  * @author Georg Fischer
  */
 public class A063758 extends GeneratingFunctionSequence {

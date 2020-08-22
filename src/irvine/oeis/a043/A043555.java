@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043555 Number of runs in <code>base-3</code> representation of <code>n</code>.
+ * A043555 Number of runs in base-3 representation of n.
  * @author Georg Fischer
  */
 public class A043555 extends RunsBaseSequence {

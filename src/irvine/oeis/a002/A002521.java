@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A002521 Weight distribution of <code>[ 28,14,9 ]</code> ternary self-dual code.
+ * A002521 Weight distribution of [ 28,14,9 ] ternary self-dual code.
  * @author Sean A. Irvine
  */
 public class A002521 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118443 Row sums of triangle <code>A118441</code>, which is the matrix log of triangle <code>A118435</code>.
+ * A118443 Row sums of triangle A118441, which is the matrix log of triangle A118435.
  * @author Georg Fischer
  */
 public class A118443 extends GeneratingFunctionSequence {

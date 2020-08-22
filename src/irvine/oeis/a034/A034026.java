@@ -4,7 +4,7 @@ import irvine.oeis.SetDifferenceSequence;
 import irvine.oeis.a001.A001481;
 
 /**
- * A034026 Numbers that are primitively or imprimitively represented by <code>x^2+y^2</code>, but not both.
+ * A034026 Numbers that are primitively or imprimitively represented by x^2+y^2, but not both.
  * @author Sean A. Irvine
  */
 public class A034026 extends SetDifferenceSequence {

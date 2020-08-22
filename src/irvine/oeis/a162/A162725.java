@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162725 <code>a(n) = 8*a(n-1) - 19*a(n-2) + 12*a(n-3) (n &gt;= 3)</code> with <code>a(0) = a(1) = 1, a(2) = 2</code>.
+ * A162725 a(n) = 8*a(n-1) - 19*a(n-2) + 12*a(n-3) (n &gt;= 3) with a(0) = a(1) = 1, a(2) = 2.
  * @author Georg Fischer
  */
 public class A162725 extends GeneratingFunctionSequence {

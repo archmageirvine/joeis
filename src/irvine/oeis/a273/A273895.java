@@ -7,7 +7,7 @@ package irvine.oeis.a273;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A273895 <code>T(n, k)</code> is the number of Horizontal Convex Polyominoes with n cells and k rows.
+ * A273895 T(n, k) is the number of Horizontal Convex Polyominoes with n cells and k rows.
  * @author Georg Fischer
  */
 public class A273895 extends GeneratingFunctionTriangle {

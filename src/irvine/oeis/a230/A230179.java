@@ -4,7 +4,7 @@ package irvine.oeis.a230;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A230179 Number of <code>n X 3 0..2</code> arrays <code>x(i,j)</code> with each element horizontally or antidiagonally next to at least one element with value <code>2-x(i,j)</code>.
+ * A230179 Number of n X 3 0..2 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value 2-x(i,j).
  * @author Georg Fischer
  */
 public class A230179 extends GeneratingFunctionSequence {

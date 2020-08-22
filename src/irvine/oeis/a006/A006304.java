@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006304 Coefficients of the '2nd order' mock theta function <code>A(q)</code>.
+ * A006304 Coefficients of the '2nd order' mock theta function A(q).
  * @author Sean A. Irvine
  */
 public class A006304 implements Sequence {

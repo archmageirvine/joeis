@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093587 Decimal expansion of <code>35/(48*Pi^2)</code>.
+ * A093587 Decimal expansion of 35/(48*Pi^2).
  * @author Georg Fischer
  */
 public class A093587 extends DecimalExpansionSequence {

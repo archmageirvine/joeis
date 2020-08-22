@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007806 Integer part of <code>Sum_{i=1..n} binomial(n,i) * (n/i)^i</code>.
+ * A007806 Integer part of Sum_{i=1..n} binomial(n,i) * (n/i)^i.
  * @author Sean A. Irvine
  */
 public class A007806 implements Sequence {

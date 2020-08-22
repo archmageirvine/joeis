@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a027.A027709;
 
 /**
- * A235382 <code>a(n) =</code> smallest number of unit squares required to enclose n units of area.
+ * A235382 a(n) = smallest number of unit squares required to enclose n units of area.
  * @author Georg Fischer
  */
 public class A235382 extends A027709 {

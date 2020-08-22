@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027569 Initial members of prime decaplets <code>(p, p+2, p+6, p+8, p+12, p+18, p+20, p+26, p+30, p+32)</code>.
+ * A027569 Initial members of prime decaplets (p, p+2, p+6, p+8, p+12, p+18, p+20, p+26, p+30, p+32).
  * @author Sean A. Irvine
  */
 public class A027569 implements Sequence {

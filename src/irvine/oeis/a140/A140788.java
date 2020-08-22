@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140788 <code>a(n) = 6*4^n + 2</code>.
+ * A140788 a(n) = 6*4^n + 2.
  * @author Georg Fischer
  */
 public class A140788 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113485 Number of partitions of <code>[n]</code> avoiding the pattern 12/34.
+ * A113485 Number of partitions of [n] avoiding the pattern 12/34.
  * @author Georg Fischer
  */
 public class A113485 extends HolonomicRecurrence {

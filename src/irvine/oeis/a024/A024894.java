@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024894 Numbers k such that <code>5*k + 1</code> is prime.
+ * A024894 Numbers k such that 5*k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A024894 implements Sequence {

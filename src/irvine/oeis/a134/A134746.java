@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A134746 Expansion of <code>1+k</code> in powers of <code>q^(1/2)</code> where q is Jacobi's nome and k is the elliptic modulus.
+ * A134746 Expansion of 1+k in powers of q^(1/2) where q is Jacobi's nome and k is the elliptic modulus.
  * @author Georg Fischer
  */
 public class A134746 extends EulerTransform {

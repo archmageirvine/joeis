@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141212 <code>a(n) = 1</code>, if <code>n == {1,3,4} mod 6;</code> otherwise 0.
+ * A141212 a(n) = 1, if n == {1,3,4} mod 6; otherwise 0.
  * @author Georg Fischer
  */
 public class A141212 extends GeneratingFunctionSequence {

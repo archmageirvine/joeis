@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029599 Theta series of quadratic form with Gram matrix <code>[ 4, 1, 0; 1, 2, 1; 0, 1, 6 ]</code>.
+ * A029599 Theta series of quadratic form with Gram matrix [ 4, 1, 0; 1, 2, 1; 0, 1, 6 ].
  * @author Sean A. Irvine
  */
 public class A029599 extends GramMatrixThetaSeries {

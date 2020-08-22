@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A175829 Partial sums of <code>ceiling(n^2/11)</code>.
+ * A175829 Partial sums of ceiling(n^2/11).
  * @author Georg Fischer
  */
 public class A175829 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123512 Arises in the normal ordering of functions of <code>a*(a+)*a</code>, where a and <code>a+</code> are the boson annihilation and creation operators, respectively.
+ * A123512 Arises in the normal ordering of functions of a*(a+)*a, where a and a+ are the boson annihilation and creation operators, respectively.
  * @author Georg Fischer
  */
 public class A123512 extends HolonomicRecurrence {

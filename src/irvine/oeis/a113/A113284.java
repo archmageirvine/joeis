@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113284 Odd bisection of <code>A113281: a(n) = A113281(2*n+1)</code>.
+ * A113284 Odd bisection of A113281: a(n) = A113281(2*n+1).
  * @author Georg Fischer
  */
 public class A113284 extends HolonomicRecurrence {

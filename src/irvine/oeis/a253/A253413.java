@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253413 Number of n-bit legal circular binary words with maximal set of <code>1</code>'s.
+ * A253413 Number of n-bit legal circular binary words with maximal set of 1's.
  * @author Georg Fischer
  */
 public class A253413 extends GeneratingFunctionSequence {

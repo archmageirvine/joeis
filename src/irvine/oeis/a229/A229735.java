@@ -3,7 +3,7 @@ package irvine.oeis.a229;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A229735 <code>151*n^7/315+2*n^5/9+7*n^3/45+n/7</code>.
+ * A229735 151*n^7/315+2*n^5/9+7*n^3/45+n/7.
  * @author Sean A. Irvine
  */
 public class A229735 extends LinearRecurrence {

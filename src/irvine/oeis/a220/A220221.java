@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220221 Odd positive integers k such that <code>k^2</code> has at most three nonzero binary digits.
+ * A220221 Odd positive integers k such that k^2 has at most three nonzero binary digits.
  * @author Georg Fischer
  */
 public class A220221 extends GeneratingFunctionSequence {

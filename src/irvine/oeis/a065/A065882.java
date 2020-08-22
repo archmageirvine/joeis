@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007913;
 
 
 /**
- * A065882 Ultimate modulo <code>4: right-hand</code> nonzero digit of n when written in base 4.
+ * A065882 Ultimate modulo 4: right-hand nonzero digit of n when written in base 4.
  * @author Georg Fischer
  */
 public class A065882 extends A007913 {

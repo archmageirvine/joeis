@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011897 <code>a(n) = floor(n*(n-1)*(n-2)/15)</code>.
+ * A011897 a(n) = floor(n*(n-1)*(n-2)/15).
  * @author Sean A. Irvine
  */
 public class A011897 implements Sequence {

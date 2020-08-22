@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020738 Consider number of divisors of <code>binomial(n, k), k=0..n; a(n) =</code> multiplicity of maximal value.
+ * A020738 Consider number of divisors of binomial(n, k), k=0..n; a(n) = multiplicity of maximal value.
  * @author Sean A. Irvine
  */
 public class A020738 implements Sequence {

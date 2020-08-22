@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A134448 <code>a(n) =</code> discriminant of Brioschi quintic polynomial <code>x^5 - 10*n*x^3 + 45*n^2*x - n^2</code>.
+ * A134448 a(n) = discriminant of Brioschi quintic polynomial x^5 - 10*n*x^3 + 45*n^2*x - n^2.
  * @author Sean A. Irvine
  */
 public class A134448 extends LinearRecurrence {

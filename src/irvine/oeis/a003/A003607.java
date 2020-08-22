@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003607 Location of <code>0</code>'s when natural numbers are listed in binary.
+ * A003607 Location of 0's when natural numbers are listed in binary.
  * @author Sean A. Irvine
  */
 public class A003607 implements Sequence {

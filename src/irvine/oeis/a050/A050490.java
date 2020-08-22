@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050490 <code>a(n) = C(n)*(11n+1)</code> where <code>C(n)=Catalan</code> numbers <code>(A000108)</code>.
+ * A050490 a(n) = C(n)*(11n+1) where C(n)=Catalan numbers (A000108).
  * @author Georg Fischer
  */
 public class A050490 extends HolonomicRecurrence {

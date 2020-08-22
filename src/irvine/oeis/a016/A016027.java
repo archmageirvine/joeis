@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016027 Indices of prime Mersenne numbers <code>(A001348)</code>.
+ * A016027 Indices of prime Mersenne numbers (A001348).
  * @author Sean A. Irvine
  */
 public class A016027 implements Sequence {

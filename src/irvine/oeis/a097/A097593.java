@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097593 Number of increasing runs of even length in all permutations of <code>[n]</code>.
+ * A097593 Number of increasing runs of even length in all permutations of [n].
  * @author Georg Fischer
  */
 public class A097593 extends HolonomicRecurrence {

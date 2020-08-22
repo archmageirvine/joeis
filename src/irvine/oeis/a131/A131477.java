@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131477 <code>a(n) = ceiling(n^3/3)</code>.
+ * A131477 a(n) = ceiling(n^3/3).
  * @author Georg Fischer
  */
 public class A131477 extends GeneratingFunctionSequence {

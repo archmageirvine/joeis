@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A005132 Recam\u00e1n's sequence (or Recaman's <code>sequence): a(0) = 0;</code> for <code>n &gt; 0, a(n) = a(n-1) - n</code> if nonnegative and not already in the sequence, otherwise <code>a(n) = a(n-1) + n</code>.
+ * A005132 Recam\u00e1n's sequence (or Recaman's sequence): a(0) = 0; for n &gt; 0, a(n) = a(n-1) - n if nonnegative and not already in the sequence, otherwise a(n) = a(n-1) + n.
  * @author Sean A. Irvine
  */
 public class A005132 implements Sequence {

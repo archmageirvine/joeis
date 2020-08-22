@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001622;
 
 
 /**
- * A054289 Positions of <code>3</code>'s in the decimal expansion of <code>(1 + sqrt(5))/2</code>.
+ * A054289 Positions of 3's in the decimal expansion of (1 + sqrt(5))/2.
  * @author Georg Fischer
  */
 public class A054289 extends PositionSequence {

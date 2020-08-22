@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A006215 Number of down-up permutations of <code>n+6</code> starting with <code>n+1</code>.
+ * A006215 Number of down-up permutations of n+6 starting with n+1.
  * @author Sean A. Irvine
  */
 public class A006215 extends A000111 {

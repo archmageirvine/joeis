@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008778;
 
 /**
- * A026052 <code>(d(n)-r(n))/2</code>, where d <code>= A008778</code> and r is the periodic sequence with fundamental period <code>(1,1,0,1)</code>.
+ * A026052 (d(n)-r(n))/2, where d = A008778 and r is the periodic sequence with fundamental period (1,1,0,1).
  * @author Sean A. Irvine
  */
 public class A026052 extends A008778 {

@@ -5,7 +5,7 @@ import irvine.oeis.a006.A006156;
 import irvine.util.string.StringUtils;
 
 /**
- * A012212 Number of squarefree palindromes over <code>{0, 1, 2}</code> of length <code>2n+1</code>.
+ * A012212 Number of squarefree palindromes over {0, 1, 2} of length 2n+1.
  * @author Sean A. Irvine
  */
 public class A012212 extends A006156 {

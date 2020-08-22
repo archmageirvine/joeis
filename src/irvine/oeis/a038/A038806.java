@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038806 Convolution of <code>A008549</code> with <code>A000302</code> (powers of <code>4)</code>.
+ * A038806 Convolution of A008549 with A000302 (powers of 4).
  * @author Georg Fischer
  */
 public class A038806 extends HolonomicRecurrence {

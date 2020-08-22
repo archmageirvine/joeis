@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000978 Wagstaff numbers: numbers n such that <code>(2^n + 1)/3</code> is prime.
+ * A000978 Wagstaff numbers: numbers n such that (2^n + 1)/3 is prime.
  * @author Sean A. Irvine
  */
 public class A000978 implements Sequence {

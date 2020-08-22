@@ -5,7 +5,7 @@ package irvine.oeis.a180;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A180974 Numbers n such that <code>10^11 + n^2</code> is a square.
+ * A180974 Numbers n such that 10^11 + n^2 is a square.
  * @author Georg Fischer
  */
 public class A180974 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a130;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A130447 Numbering the days of a 365-day year from <code>1</code> (Jan 01) to <code>365</code> (Dec <code>31)</code>, these are the days that start months.
+ * A130447 Numbering the days of a 365-day year from 1 (Jan 01) to 365 (Dec 31), these are the days that start months.
  * @author Georg Fischer
  */
 public class A130447 extends FiniteSequence {

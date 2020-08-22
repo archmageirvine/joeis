@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024189 <code>a(n) = ((n+3)!/2)*Sum_{k=1..n} (-1)^(k+1)/(k+3)</code>.
+ * A024189 a(n) = ((n+3)!/2)*Sum_{k=1..n} (-1)^(k+1)/(k+3).
  * @author Sean A. Irvine
  */
 public class A024189 implements Sequence {

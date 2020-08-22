@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125687 The base 6 numbers <code>4 44 444 4444 44444</code> ... converted to base 10.
+ * A125687 The base 6 numbers 4 44 444 4444 44444 ... converted to base 10.
  * @author Georg Fischer
  */
 public class A125687 extends GeneratingFunctionSequence {

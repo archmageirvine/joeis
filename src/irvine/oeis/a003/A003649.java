@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A003649 Class number of real quadratic field <code>Q(sqrt f)</code>, where f is the n-th squarefree number <code>A005117(n)</code>.
+ * A003649 Class number of real quadratic field Q(sqrt f), where f is the n-th squarefree number A005117(n).
  * @author Sean A. Irvine
  */
 public class A003649 extends A005117 {

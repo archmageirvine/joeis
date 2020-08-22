@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A165998 Denominators of Taylor series expansion of <code>1/(3*x)*log((1+x)/(1-x)^2)</code>.
+ * A165998 Denominators of Taylor series expansion of 1/(3*x)*log((1+x)/(1-x)^2).
  * @author Sean A. Irvine
  */
 public class A165998 extends LinearRecurrence {

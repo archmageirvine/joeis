@@ -6,7 +6,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A005086 Number of Fibonacci numbers 1,2,3,5,... dividing <code>n</code>.
+ * A005086 Number of Fibonacci numbers 1,2,3,5,... dividing n.
  * @author Sean A. Irvine
  */
 public class A005086 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A065729 n-th partition number <code>(A000041(n))</code> is a semiprime.
+ * A065729 n-th partition number (A000041(n)) is a semiprime.
  * @author Sean A. Irvine
  */
 public class A065729 extends SemiprimeSequence {

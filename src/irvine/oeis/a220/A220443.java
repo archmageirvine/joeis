@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A220443 <code>a(n) = Sum_{i=1..n} (3i)^2</code>.
+ * A220443 a(n) = Sum_{i=1..n} (3i)^2.
  * @author Sean A. Irvine
  */
 public class A220443 extends LinearRecurrence {

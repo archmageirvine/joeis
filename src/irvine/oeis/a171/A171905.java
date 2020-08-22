@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A171905 <code>a(1) = 1</code> and <code>a(2) = 2, a(n) = |(sum</code> of previous terms) <code>- n|</code>.
+ * A171905 a(1) = 1 and a(2) = 2, a(n) = |(sum of previous terms) - n|.
  * @author Georg Fischer
  */
 public class A171905 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A255270 Integer part of fourth root of <code>n</code>.
+ * A255270 Integer part of fourth root of n.
  * @author Sean A. Irvine
  */
 public class A255270 implements Sequence {

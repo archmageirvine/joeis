@@ -6,7 +6,7 @@ package irvine.oeis.a087;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087301 <code>a(n) = n!*Sum_{i=1..n-1} (-1)^(i+1)/i</code>.
+ * A087301 a(n) = n!*Sum_{i=1..n-1} (-1)^(i+1)/i.
  * @author Georg Fischer
  */
 public class A087301 extends HolonomicRecurrence {

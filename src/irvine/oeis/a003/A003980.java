@@ -5,7 +5,7 @@ import irvine.factor.util.FactorSequence;
 import irvine.math.z.Z;
 
 /**
- * A003980 M\u00f6bius transform of <code>A003965</code>.
+ * A003980 M\u00f6bius transform of A003965.
  * @author Sean A. Irvine
  */
 public class A003980 extends A003965 {

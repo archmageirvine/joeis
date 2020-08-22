@@ -3,7 +3,7 @@ package irvine.oeis.a049;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A049450 Pentagonal numbers multiplied by <code>2: a(n) = n*(3*n-1)</code>.
+ * A049450 Pentagonal numbers multiplied by 2: a(n) = n*(3*n-1).
  * @author Sean A. Irvine
  */
 public class A049450 extends LinearRecurrence {

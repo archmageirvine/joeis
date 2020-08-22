@@ -5,7 +5,7 @@ package irvine.oeis.a295;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A295388 <code>a(n)</code> is the least k <code>&gt; n</code> such that n divides k, and <code>n+1</code> divides <code>k+1</code>, and <code>n+2</code> divides <code>k+2</code>.
+ * A295388 a(n) is the least k &gt; n such that n divides k, and n+1 divides k+1, and n+2 divides k+2.
  * @author Georg Fischer
  */
 public class A295388 extends HolonomicRecurrence {

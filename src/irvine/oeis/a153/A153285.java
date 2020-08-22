@@ -4,7 +4,7 @@ package irvine.oeis.a153;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A153285 <code>a(1)=1;</code> for <code>n &gt; 1, a(n) = n^2 + Sum_{j=1..n-1} (-1)^j*a(j)</code>.
+ * A153285 a(1)=1; for n &gt; 1, a(n) = n^2 + Sum_{j=1..n-1} (-1)^j*a(j).
  * @author Georg Fischer
  */
 public class A153285 extends GeneratingFunctionSequence {

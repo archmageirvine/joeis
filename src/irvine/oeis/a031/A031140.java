@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031140 Position of rightmost 0 in <code>2^n</code> increases.
+ * A031140 Position of rightmost 0 in 2^n increases.
  * @author Sean A. Irvine
  */
 public class A031140 implements Sequence {

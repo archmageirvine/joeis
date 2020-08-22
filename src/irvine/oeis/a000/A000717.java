@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a008.A008406;
 
 /**
- * A000717 Number of graphs with n nodes and <code>floor(n(n-1)/4)</code> edges.
+ * A000717 Number of graphs with n nodes and floor(n(n-1)/4) edges.
  * @author Sean A. Irvine
  */
 public class A000717 implements Sequence {

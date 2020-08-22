@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084481 Number of fault-free tilings of a <code>4 X 2n</code> rectangle with L tetrominoes.
+ * A084481 Number of fault-free tilings of a 4 X 2n rectangle with L tetrominoes.
  * @author Georg Fischer
  */
 public class A084481 extends GeneratingFunctionSequence {

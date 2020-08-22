@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309523 Start with <code>a(1) = 1</code> and apply certain patterns of operations on <code>a(n-1)</code> to obtain <code>a(n)</code> as described in comments.
+ * A309523 Start with a(1) = 1 and apply certain patterns of operations on a(n-1) to obtain a(n) as described in comments.
  * @author Georg Fischer
  */
 public class A309523 extends HolonomicRecurrence {

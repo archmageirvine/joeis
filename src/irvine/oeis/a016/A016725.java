@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004013;
 
 /**
- * A016725 Number of integer solutions to <code>x^2+y^2+z^2 = n^2</code>, allowing zeros and distinguishing signs and order.
+ * A016725 Number of integer solutions to x^2+y^2+z^2 = n^2, allowing zeros and distinguishing signs and order.
  * @author Sean A. Irvine
  */
 public class A016725 implements Sequence {

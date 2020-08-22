@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289207 <code>a(n) = max(0, n-2)</code>.
+ * A289207 a(n) = max(0, n-2).
  * @author Georg Fischer
  */
 public class A289207 extends GeneratingFunctionSequence {

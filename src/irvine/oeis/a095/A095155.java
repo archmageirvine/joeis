@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095155 Number of 6-block covers of a labeled <code>n-set</code>.
+ * A095155 Number of 6-block covers of a labeled n-set.
  * @author Sean A. Irvine
  */
 public class A095155 extends LinearRecurrence {

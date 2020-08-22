@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188379 <code>a(n) = A002526(n+1) - A002527(n+1)</code>.
+ * A188379 a(n) = A002526(n+1) - A002527(n+1).
  * @author Georg Fischer
  */
 public class A188379 extends GeneratingFunctionSequence {

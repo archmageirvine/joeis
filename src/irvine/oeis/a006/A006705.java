@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.math.z.Z;
 
 /**
- * A006705 Solution to Pellian: y such that <code>x^2 - n y^2 = +- 1, +- 4</code>.
+ * A006705 Solution to Pellian: y such that x^2 - n y^2 = +- 1, +- 4.
  * @author Sean A. Irvine
  */
 public class A006705 extends A006703 {

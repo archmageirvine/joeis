@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A253214 Decimal expansion of <code>log(640320^3)/sqrt(163)</code>, a Ramanujan constant producing 16 correct digits of <code>Pi</code>.
+ * A253214 Decimal expansion of log(640320^3)/sqrt(163), a Ramanujan constant producing 16 correct digits of Pi.
  * @author Georg Fischer
  */
 public class A253214 extends DecimalExpansionSequence {

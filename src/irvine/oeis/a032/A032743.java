@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032743 <code>Super-2</code> Numbers <code>(2 * n^2</code> contains substring <code>'22'</code> in its decimal expansion).
+ * A032743 Super-2 Numbers (2 * n^2 contains substring '22' in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A032743 implements Sequence {

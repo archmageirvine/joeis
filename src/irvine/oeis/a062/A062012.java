@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A062012 Decimal numbers N such that there is some base b such that (N regarded as a base b number) <code>= (1/b)*(N</code> regarded as a base <code>10</code> number).
+ * A062012 Decimal numbers N such that there is some base b such that (N regarded as a base b number) = (1/b)*(N regarded as a base 10 number).
  * @author Georg Fischer
  */
 public class A062012 extends FiniteSequence {

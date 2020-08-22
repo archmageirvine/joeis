@@ -5,7 +5,7 @@ package irvine.oeis.a126;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A126129 y-coordinate of n in the magic square <code>A124472</code>.
+ * A126129 y-coordinate of n in the magic square A124472.
  * @author Georg Fischer
  */
 public class A126129 extends FiniteSequence {

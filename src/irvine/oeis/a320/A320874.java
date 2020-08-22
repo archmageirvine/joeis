@@ -3,7 +3,7 @@ package irvine.oeis.a320;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A320874 Lexicographically first <code>4 X 4</code> pandiagonal magic square made of consecutive primes.
+ * A320874 Lexicographically first 4 X 4 pandiagonal magic square made of consecutive primes.
  * @author Georg Fischer
  */
 public class A320874 extends FiniteSequence {

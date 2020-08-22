@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120571 <code>2n^4+6n^2+4 = 2(n^2+1)(n^2+2)</code>.
+ * A120571 2n^4+6n^2+4 = 2(n^2+1)(n^2+2).
  * @author Sean A. Irvine
  */
 public class A120571 extends LinearRecurrence {

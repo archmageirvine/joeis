@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000292;
 
 /**
- * A014306 <code>a(n) = 0</code> if n of form <code>m(m+1)(m+2)/6</code>, otherwise 1.
+ * A014306 a(n) = 0 if n of form m(m+1)(m+2)/6, otherwise 1.
  * @author Sean A. Irvine
  */
 public class A014306 extends A000292 {

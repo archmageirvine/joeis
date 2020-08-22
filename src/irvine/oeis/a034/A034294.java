@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A034294 Numbers k not ending in 0 such that for some base b, <code>k_b</code> is the reverse of <code>k_10</code> (where <code>k_b</code> denotes k written in base <code>b)</code>.
+ * A034294 Numbers k not ending in 0 such that for some base b, k_b is the reverse of k_10 (where k_b denotes k written in base b).
  * @author Sean A. Irvine
  */
 public class A034294 implements Sequence {

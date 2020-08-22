@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115492 Number of monic irreducible polynomials of degree 2 in <code>GF(2^n)[x,y]</code>.
+ * A115492 Number of monic irreducible polynomials of degree 2 in GF(2^n)[x,y].
  * @author Sean A. Irvine
  */
 public class A115492 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A282610 Expansion of <code>b(q) * b(q^3)</code> in powers of q where <code>b()</code> is a cubic AGM function.
+ * A282610 Expansion of b(q) * b(q^3) in powers of q where b() is a cubic AGM function.
  * @author Georg Fischer
  */
 public class A282610 extends EulerTransform {

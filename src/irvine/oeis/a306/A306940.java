@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306940 Expansion of <code>1/((1 - x)^6 + x^6)</code>.
+ * A306940 Expansion of 1/((1 - x)^6 + x^6).
  * @author Georg Fischer
  */
 public class A306940 extends HolonomicRecurrence {

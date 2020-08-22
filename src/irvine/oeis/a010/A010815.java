@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010815 From Euler's Pentagonal Theorem: coefficient of <code>q^n</code> in <code>Product_{m&gt;=1} (1 - q^m)</code>.
+ * A010815 From Euler's Pentagonal Theorem: coefficient of q^n in Product_{m&gt;=1} (1 - q^m).
  * @author Sean A. Irvine
  */
 public class A010815 implements Sequence {

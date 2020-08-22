@@ -7,7 +7,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A054458 Convolution triangle based on <code>A001333(n), n &gt;= 1</code>.
+ * A054458 Convolution triangle based on A001333(n), n &gt;= 1.
  * @author Georg Fischer
  */
 public class A054458 extends GeneratingFunctionTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223299 <code>4 X 4 X 4</code> triangular graph coloring a rectangular array: number of <code>n X 2 0..9</code> arrays where 0..9 label nodes of a graph with edges <code>0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 3,6 3,7 4,7 6,7 4,8 5,8 7,8 5,9 8,9</code> and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
+ * A223299 4 X 4 X 4 triangular graph coloring a rectangular array: number of n X 2 0..9 arrays where 0..9 label nodes of a graph with edges 0,1 0,2 1,2 1,3 1,4 2,4 3,4 2,5 4,5 3,6 3,7 4,7 6,7 4,8 5,8 7,8 5,9 8,9 and every array movement to a horizontal or vertical neighbor moves along an edge of this graph.
  * @author Georg Fischer
  */
 public class A223299 extends GeneratingFunctionSequence {

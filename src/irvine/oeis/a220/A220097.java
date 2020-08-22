@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A220097 Number of words on <code>{1,1,2,2,3,3,...,n,n}</code> avoiding the pattern 123.
+ * A220097 Number of words on {1,1,2,2,3,3,...,n,n} avoiding the pattern 123.
  * @author Georg Fischer
  */
 public class A220097 extends HolonomicRecurrence {

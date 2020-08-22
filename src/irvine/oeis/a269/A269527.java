@@ -6,7 +6,7 @@ package irvine.oeis.a269;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269527 <code>a(n) = n^20 + n^15 + n^10 + n^5 + 1</code>.
+ * A269527 a(n) = n^20 + n^15 + n^10 + n^5 + 1.
  * @author Georg Fischer
  */
 public class A269527 extends HolonomicRecurrence {

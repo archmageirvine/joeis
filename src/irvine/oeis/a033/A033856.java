@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A033856 Numbers k such that <code>j(k)*phi(k) = sigma(phi(k)), j(k) = A033831(k)</code>.
+ * A033856 Numbers k such that j(k)*phi(k) = sigma(phi(k)), j(k) = A033831(k).
  * @author Sean A. Irvine
  */
 public class A033856 extends A033831 {

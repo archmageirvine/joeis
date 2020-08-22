@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318526 Decimal expansion of <code>(7*20^(1/3)-19)^(1/6)</code>.
+ * A318526 Decimal expansion of (7*20^(1/3)-19)^(1/6).
  * @author Georg Fischer
  */
 public class A318526 extends DecimalExpansionSequence {

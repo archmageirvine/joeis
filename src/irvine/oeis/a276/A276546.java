@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A276546 Numbers k such that <code>(151*10^k - 1)/3</code> is prime.
+ * A276546 Numbers k such that (151*10^k - 1)/3 is prime.
  * @author Georg Fischer
  */
 public class A276546 extends PowerFactorPrimeSequence {

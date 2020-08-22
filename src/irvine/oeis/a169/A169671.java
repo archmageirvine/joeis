@@ -5,7 +5,7 @@ package irvine.oeis.a169;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A169671 Lexicographically earliest de Bruijn sequence for <code>n = 6</code> and k <code>= 2</code>.
+ * A169671 Lexicographically earliest de Bruijn sequence for n = 6 and k = 2.
  * @author Georg Fischer
  */
 public class A169671 extends HolonomicRecurrence {

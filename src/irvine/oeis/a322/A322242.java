@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322242 G.f.: <code>1/sqrt(1 - 6*x - 7*x^2)</code>.
+ * A322242 G.f.: 1/sqrt(1 - 6*x - 7*x^2).
  * @author Georg Fischer
  */
 public class A322242 extends HolonomicRecurrence {

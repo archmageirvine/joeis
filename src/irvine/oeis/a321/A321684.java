@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321684 Independent domination number of the <code>n X n</code> grid graph.
+ * A321684 Independent domination number of the n X n grid graph.
  * @author Georg Fischer
  */
 public class A321684 extends GeneratingFunctionSequence {

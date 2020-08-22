@@ -3,7 +3,7 @@ package irvine.oeis.a084;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A084875 Number of <code>(k,m,n)-antichains</code> of multisets with <code>k=3</code> and <code>m=3</code>.
+ * A084875 Number of (k,m,n)-antichains of multisets with k=3 and m=3.
  * @author Sean A. Irvine
  */
 public class A084875 extends LinearRecurrence {

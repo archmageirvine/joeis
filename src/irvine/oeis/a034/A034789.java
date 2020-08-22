@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034789 Related to sextic factorial numbers <code>A008542</code>.
+ * A034789 Related to sextic factorial numbers A008542.
  * @author Georg Fischer
  */
 public class A034789 extends HolonomicRecurrence {

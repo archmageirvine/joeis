@@ -6,7 +6,7 @@ package irvine.oeis.a309;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A309462 Limiting row sequence for Pascal-like triangle <code>A140995 (Stepan</code>'s triangle with index of asymmetry s <code>= 3)</code>.
+ * A309462 Limiting row sequence for Pascal-like triangle A140995 (Stepan's triangle with index of asymmetry s = 3).
  * @author Georg Fischer
  */
 public class A309462 extends GeneratingFunctionSequence {

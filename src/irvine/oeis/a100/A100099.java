@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100099 An inverse Chebyshev transform of <code>x/(1-2x)</code>.
+ * A100099 An inverse Chebyshev transform of x/(1-2x).
  * @author Georg Fischer
  */
 public class A100099 extends HolonomicRecurrence {

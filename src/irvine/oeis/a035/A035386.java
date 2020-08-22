@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035386 Number of partitions of n into parts congruent to <code>2 mod 3</code>.
+ * A035386 Number of partitions of n into parts congruent to 2 mod 3.
  * @author Georg Fischer
  */
 public class A035386 extends EulerTransform {

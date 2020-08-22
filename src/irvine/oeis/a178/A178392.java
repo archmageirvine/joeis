@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178392 <code>a(n) = (n^2-1)^2-1</code>.
+ * A178392 a(n) = (n^2-1)^2-1.
  * @author Georg Fischer
  */
 public class A178392 extends HolonomicRecurrence {

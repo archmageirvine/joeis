@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133357 Number of 2-colorings of a <code>3 X n</code> rectangle for which no subsquare has monochromatic corners.
+ * A133357 Number of 2-colorings of a 3 X n rectangle for which no subsquare has monochromatic corners.
  * @author Georg Fischer
  */
 public class A133357 extends GeneratingFunctionSequence {

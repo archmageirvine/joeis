@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A054024 Sum of divisors of n reduced modulo <code>n</code>.
+ * A054024 Sum of divisors of n reduced modulo n.
  * @author Georg Fischer
  */
 public class A054024 extends A000203 {

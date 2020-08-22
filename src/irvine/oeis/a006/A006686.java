@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006686 Octavan primes: primes of the form p <code>= x^8 + y^8</code>.
+ * A006686 Octavan primes: primes of the form p = x^8 + y^8.
  * @author Sean A. Irvine
  */
 public class A006686 implements Sequence {

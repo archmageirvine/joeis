@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a023.A023109;
 
 /**
- * A033866 Least number of <code>Reverse-then-add</code> persistence <code>n</code>.
+ * A033866 Least number of Reverse-then-add persistence n.
  * @author Sean A. Irvine
  */
 public class A033866 extends PrependSequence {

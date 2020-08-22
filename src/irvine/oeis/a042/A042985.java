@@ -6,7 +6,7 @@ package irvine.oeis.a042;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A042985 Convolution of <code>A000108</code> (Catalan numbers) with <code>A038846</code>.
+ * A042985 Convolution of A000108 (Catalan numbers) with A038846.
  * @author Georg Fischer
  */
 public class A042985 extends HolonomicRecurrence {

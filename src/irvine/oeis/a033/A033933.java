@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033933 Least nonnegative m such that <code>n!-m</code> is prime.
+ * A033933 Least nonnegative m such that n!-m is prime.
  * @author Sean A. Irvine
  */
 public class A033933 implements Sequence {

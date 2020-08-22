@@ -6,7 +6,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038737 <code>T(n,n-2)</code>, array T as in <code>A038792</code>.
+ * A038737 T(n,n-2), array T as in A038792.
  * @author Georg Fischer
  */
 public class A038737 extends GeneratingFunctionSequence {

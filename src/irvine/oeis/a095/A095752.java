@@ -4,7 +4,7 @@ package irvine.oeis.a095;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A095752 <code>a(n) = (1/9)*(-1+10^n)*(4*n+3)</code>.
+ * A095752 a(n) = (1/9)*(-1+10^n)*(4*n+3).
  * @author Georg Fischer
  */
 public class A095752 extends GeneratingFunctionSequence {

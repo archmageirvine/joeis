@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114495 Number of returns to the x-axis in all hill-free Dyck paths of semilength <code>n (a</code> Dyck path is said to be hill-free if it has no peaks at level <code>1)</code>.
+ * A114495 Number of returns to the x-axis in all hill-free Dyck paths of semilength n (a Dyck path is said to be hill-free if it has no peaks at level 1).
  * @author Georg Fischer
  */
 public class A114495 extends HolonomicRecurrence {

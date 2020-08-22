@@ -3,7 +3,7 @@ package irvine.oeis.a285;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A285528 Numbers n such that <code>A217723(n)</code> (sum of first n primorial numbers minus <code>1)</code> is prime.
+ * A285528 Numbers n such that A217723(n) (sum of first n primorial numbers minus 1) is prime.
  * @author Georg Fischer
  */
 public class A285528 extends FiniteSequence {

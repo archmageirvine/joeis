@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006820;
 
 /**
- * A033483 Number of disconnected <code>4-valent</code> (or quartic) graphs with n nodes.
+ * A033483 Number of disconnected 4-valent (or quartic) graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A033483 extends A033301 {

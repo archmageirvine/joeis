@@ -6,7 +6,7 @@ package irvine.oeis.a151;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A151881 Sum (number of <code>cycles)^2</code> over all <code>n!</code> permutations of <code>[1..n]</code>.
+ * A151881 Sum (number of cycles)^2 over all n! permutations of [1..n].
  * @author Georg Fischer
  */
 public class A151881 extends HolonomicRecurrence {

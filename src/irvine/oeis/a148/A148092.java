@@ -6,7 +6,7 @@ package irvine.oeis.a148;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A148092 The partition function <code>G(n,6)</code>.
+ * A148092 The partition function G(n,6).
  * @author Georg Fischer
  */
 public class A148092 extends HolonomicRecurrence {

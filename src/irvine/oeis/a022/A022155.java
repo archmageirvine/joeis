@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020985;
 
 /**
- * A022155 Values of n at which <code>Golay-Rudin-Shapiro</code> sequence <code>A020985</code> is negative.
+ * A022155 Values of n at which Golay-Rudin-Shapiro sequence A020985 is negative.
  * @author Sean A. Irvine
  */
 public class A022155 extends A020985 {

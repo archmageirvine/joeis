@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318739 Decimal expansion of <code>Pi^2 / 24 - (1/12) * log(2 + sqrt(5))^2</code>.
+ * A318739 Decimal expansion of Pi^2 / 24 - (1/12) * log(2 + sqrt(5))^2.
  * @author Georg Fischer
  */
 public class A318739 extends DecimalExpansionSequence {

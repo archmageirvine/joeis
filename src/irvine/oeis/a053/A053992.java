@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A053992 The number <code>phi_3(n)</code> of Frobenius partitions that allow up to 3 repetitions of an integer in a row.
+ * A053992 The number phi_3(n) of Frobenius partitions that allow up to 3 repetitions of an integer in a row.
  * @author Georg Fischer
  */
 public class A053992 extends EulerTransform {

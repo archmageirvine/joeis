@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173041 <code>a(n) = 2*10^n + 3</code>.
+ * A173041 a(n) = 2*10^n + 3.
  * @author Georg Fischer
  */
 public class A173041 extends GeneratingFunctionSequence {

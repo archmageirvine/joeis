@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027694 <code>a(n) = n^2 + n + 9</code>.
+ * A027694 a(n) = n^2 + n + 9.
  * @author Sean A. Irvine
  */
 public class A027694 extends LinearRecurrence {

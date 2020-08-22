@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032612 Concatenation of n and <code>n+7</code>.
+ * A032612 Concatenation of n and n+7.
  * @author Sean A. Irvine
  */
 public class A032612 implements Sequence {

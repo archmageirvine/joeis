@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047672 Row 3 of square array defined in <code>A047671</code>.
+ * A047672 Row 3 of square array defined in A047671.
  * @author Georg Fischer
  */
 public class A047672 extends HolonomicRecurrence {

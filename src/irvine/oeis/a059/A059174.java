@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059174 Maximal number of regions into which 5-space can be divided by <code>n hyper-spheres</code>.
+ * A059174 Maximal number of regions into which 5-space can be divided by n hyper-spheres.
  * @author Georg Fischer
  */
 public class A059174 extends GeneratingFunctionSequence {

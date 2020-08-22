@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A260158 Expansion of <code>psi(x)^4 * psi(-x^3) / f(x)</code> in powers of x where psi, <code>f()</code> are Ramanujan theta functions.
+ * A260158 Expansion of psi(x)^4 * psi(-x^3) / f(x) in powers of x where psi, f() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A260158 extends EulerTransform {

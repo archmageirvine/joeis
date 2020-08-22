@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A008959 Final digit of squares: <code>n^2 mod 10</code>.
+ * A008959 Final digit of squares: n^2 mod 10.
  * @author Sean A. Irvine
  */
 public class A008959 extends PeriodicSequence {

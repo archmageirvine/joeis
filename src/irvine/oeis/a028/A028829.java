@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028829 List of orders of elements of Conway simple group <code>Co_2</code>.
+ * A028829 List of orders of elements of Conway simple group Co_2.
  * @author Georg Fischer
  */
 public class A028829 extends FiniteSequence {

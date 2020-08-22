@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A060143 <code>a(n) = floor(n/tau)</code>, where tau <code>= (1 + sqrt(5))/2</code>.
+ * A060143 a(n) = floor(n/tau), where tau = (1 + sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A060143 implements Sequence, Serializable {

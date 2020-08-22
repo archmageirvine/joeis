@@ -6,7 +6,7 @@ package irvine.oeis.a072;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A072167 <code>T_10(n)</code> in the notation of Bergeron et al., <code>u_10(n)</code> in the notation of Gessel: Related to Young tableaux of bounded height.
+ * A072167 T_10(n) in the notation of Bergeron et al., u_10(n) in the notation of Gessel: Related to Young tableaux of bounded height.
  * @author Georg Fischer
  */
 public class A072167 extends HolonomicRecurrence {

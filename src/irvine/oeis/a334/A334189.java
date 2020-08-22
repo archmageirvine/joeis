@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A334189 Positive solutions m of the Diophantine equation <code>x * (x+1) * (x+2) = y * (y+1) * (y+2) * (y+3) =</code> m.
+ * A334189 Positive solutions m of the Diophantine equation x * (x+1) * (x+2) = y * (y+1) * (y+2) * (y+3) = m.
  * @author Georg Fischer
  */
 public class A334189 extends FiniteSequence {

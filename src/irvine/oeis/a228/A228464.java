@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228464 Number of arrays of maxima of three adjacent elements of some <code>0..n</code> array of length 9.
+ * A228464 Number of arrays of maxima of three adjacent elements of some 0..n array of length 9.
  * @author Georg Fischer
  */
 public class A228464 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027384 Number of distinct products <code>ij</code> with <code>0 &lt;=</code> i, j <code>&lt;= n</code>.
+ * A027384 Number of distinct products ij with 0 &lt;= i, j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A027384 implements Sequence {

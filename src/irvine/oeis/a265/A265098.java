@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A265098 Integers n such that <code>A138523(n)</code> is 1 or a prime.
+ * A265098 Integers n such that A138523(n) is 1 or a prime.
  * @author Georg Fischer
  */
 public class A265098 extends FiniteSequence {

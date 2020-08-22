@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A225543 G.f.: <code>Product_{k&gt;0} (1 - x^k)^4 * (1 - (-x)^k)^8</code>.
+ * A225543 G.f.: Product_{k&gt;0} (1 - x^k)^4 * (1 - (-x)^k)^8.
  * @author Georg Fischer
  */
 public class A225543 extends EulerTransform {

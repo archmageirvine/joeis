@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023896 Sum of positive integers in smallest positive reduced residue system modulo <code>n. a(1) = 1</code> by convention.
+ * A023896 Sum of positive integers in smallest positive reduced residue system modulo n. a(1) = 1 by convention.
  * @author Sean A. Irvine
  */
 public class A023896 extends A023022 {

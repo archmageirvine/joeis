@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152746 Six times hexagonal numbers: <code>6*n*(2*n-1)</code>.
+ * A152746 Six times hexagonal numbers: 6*n*(2*n-1).
  * @author Sean A. Irvine
  */
 public class A152746 extends LinearRecurrence {

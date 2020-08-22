@@ -6,7 +6,7 @@ package irvine.oeis.a171;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A171199 G.f. satisfies: <code>A(x) = exp( Sum_{n&gt;=1} [A(x)^n + A(x)^-n]*x^n/n )</code>.
+ * A171199 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [A(x)^n + A(x)^-n]*x^n/n ).
  * @author Georg Fischer
  */
 public class A171199 extends HolonomicRecurrence {

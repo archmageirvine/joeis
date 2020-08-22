@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179050 Decimal expansion of <code>5/(2*sqrt(5+2*sqrt(5)))</code>, area of regular pentagram with base edge length 1.
+ * A179050 Decimal expansion of 5/(2*sqrt(5+2*sqrt(5))), area of regular pentagram with base edge length 1.
  * @author Georg Fischer
  */
 public class A179050 extends DecimalExpansionSequence {

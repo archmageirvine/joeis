@@ -4,7 +4,7 @@ import irvine.oeis.ContinuedFractionSequence;
 import irvine.oeis.a020.A020860;
 
 /**
- * A028509 Continued fraction expansion for <code>log_2(7)</code>.
+ * A028509 Continued fraction expansion for log_2(7).
  * @author Sean A. Irvine
  */
 public class A028509 extends ContinuedFractionSequence {

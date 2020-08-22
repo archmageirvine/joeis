@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026472 <code>{3, 7}</code> together with the numbers congruent to <code>{1, 2} mod 12</code>.
+ * A026472 {3, 7} together with the numbers congruent to {1, 2} mod 12.
  * @author Sean A. Irvine
  */
 public class A026472 implements Sequence {

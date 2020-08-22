@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a014.A014532;
 
 /**
- * A025568 <code>a(n) = T(n,n+2)</code> where T is the array defined in <code>A025564</code>.
+ * A025568 a(n) = T(n,n+2) where T is the array defined in A025564.
  * @author Sean A. Irvine
  */
 public class A025568 extends A014532 {

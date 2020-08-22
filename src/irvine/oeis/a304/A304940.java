@@ -6,7 +6,7 @@ package irvine.oeis.a304;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A304940 Expansion of <code>((1 + 4*x)/(1 - 4*x))^(1/2)</code>.
+ * A304940 Expansion of ((1 + 4*x)/(1 - 4*x))^(1/2).
  * @author Georg Fischer
  */
 public class A304940 extends HolonomicRecurrence {

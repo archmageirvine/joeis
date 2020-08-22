@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062124 Fourth column of <code>A046741</code>.
+ * A062124 Fourth column of A046741.
  * @author Georg Fischer
  */
 public class A062124 extends GeneratingFunctionSequence {

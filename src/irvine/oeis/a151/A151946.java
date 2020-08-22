@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A151946 <code>a(1) = 8127;</code> thereafter <code>a(n) = (a(n-1)</code> with digits sorted into descending order) <code>- (a(n-1)</code> with digits sorted into ascending order) (see the Kaprekar map, <code>A151949)</code>.
+ * A151946 a(1) = 8127; thereafter a(n) = (a(n-1) with digits sorted into descending order) - (a(n-1) with digits sorted into ascending order) (see the Kaprekar map, A151949).
  * @author Georg Fischer
  */
 public class A151946 extends PaddingSequence {

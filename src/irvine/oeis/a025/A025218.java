@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025218 <code>[ Sum{sqrt(k+1)} ], k = 1,2,...,n</code>.
+ * A025218 [ Sum{sqrt(k+1)} ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025218 implements Sequence {

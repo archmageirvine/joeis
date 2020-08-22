@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277082 Generalized <code>15-gonal</code> (or pentadecagonal) numbers: <code>n*(13*n - 11)/2, n = 0,+1,-1,+2,-2,+3,-3, ..</code>.
+ * A277082 Generalized 15-gonal (or pentadecagonal) numbers: n*(13*n - 11)/2, n = 0,+1,-1,+2,-2,+3,-3, ...
  * @author Sean A. Irvine
  */
 public class A277082 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327834 Expansion of <code>1 / AGM(1, 1 - 8*x)^2</code> in powers of <code>x</code>.
+ * A327834 Expansion of 1 / AGM(1, 1 - 8*x)^2 in powers of x.
  * @author Georg Fischer
  */
 public class A327834 extends HolonomicRecurrence {

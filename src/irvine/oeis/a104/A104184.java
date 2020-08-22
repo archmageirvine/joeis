@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104184 <code>a(n)</code> is the number of paths from <code>(0,0)</code> to <code>(n,0)</code> using steps of the form <code>(1,2),(1,1),(1,0),(1,-1)</code> or <code>(1,-2)</code> and staying above the <code>x-axis</code>. Also, <code>a(n)</code> is the number of possible combinations of balls on the lawn after n turns, using a Motzkin variation of the <code>(4,2)-case</code> of the tennis ball problem considered by D. Merlini, R. Sprugnoli and M. C. Verri.
+ * A104184 a(n) is the number of paths from (0,0) to (n,0) using steps of the form (1,2),(1,1),(1,0),(1,-1) or (1,-2) and staying above the x-axis. Also, a(n) is the number of possible combinations of balls on the lawn after n turns, using a Motzkin variation of the (4,2)-case of the tennis ball problem considered by D. Merlini, R. Sprugnoli and M. C. Verri.
  * @author Georg Fischer
  */
 public class A104184 extends HolonomicRecurrence {

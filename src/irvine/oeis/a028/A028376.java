@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000108;
 
 /**
- * A028376 Triangle read by rows: <code>T(n,m) =</code> Sum <code>Catalan(n-k)*Catalan(k), k=0..m</code>.
+ * A028376 Triangle read by rows: T(n,m) = Sum Catalan(n-k)*Catalan(k), k=0..m.
  * @author Sean A. Irvine
  */
 public class A028376 implements Sequence {

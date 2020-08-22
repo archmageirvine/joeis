@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092140 Decimal expansion of <code>(Pi*e)^4</code>.
+ * A092140 Decimal expansion of (Pi*e)^4.
  * @author Georg Fischer
  */
 public class A092140 extends DecimalExpansionSequence {

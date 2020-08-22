@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004013 Theta series of body-centered cubic <code>(b.c.c.)</code> lattice.
+ * A004013 Theta series of body-centered cubic (b.c.c.) lattice.
  * @author Sean A. Irvine
  */
 public class A004013 implements Sequence {

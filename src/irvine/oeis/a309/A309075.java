@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A309075 Total number of black cells after n iterations of Langton's ant with two ants on the grid placed <code>side-by-side</code> on neighboring squares and initially looking in the same direction.
+ * A309075 Total number of black cells after n iterations of Langton's ant with two ants on the grid placed side-by-side on neighboring squares and initially looking in the same direction.
  * @author Georg Fischer
  */
 public class A309075 extends PaddingSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191349 Binomial sums <code>a(n) = sum(binomial(n-k,2*k)^2,k=0..floor(n/3))</code>.
+ * A191349 Binomial sums a(n) = sum(binomial(n-k,2*k)^2,k=0..floor(n/3)).
  * @author Georg Fischer
  */
 public class A191349 extends HolonomicRecurrence {

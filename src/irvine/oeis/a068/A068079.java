@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A068079 Decimal expansion of <code>355 / 113</code>.
+ * A068079 Decimal expansion of 355 / 113.
  * @author Georg Fischer
  */
 public class A068079 extends DecimalExpansionSequence {

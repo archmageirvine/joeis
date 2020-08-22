@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024154 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> that are acute.
+ * A024154 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n that are acute.
  * @author Sean A. Irvine
  */
 public class A024154 implements Sequence {

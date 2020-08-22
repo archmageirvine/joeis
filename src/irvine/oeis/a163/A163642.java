@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.HashSet;
 
 /**
- * A163642 <code>a(n) =</code> the smallest composite positive integer that is not yet in the sequence and that is coprime to <code>n</code>.
+ * A163642 a(n) = the smallest composite positive integer that is not yet in the sequence and that is coprime to n.
  * @author Sean A. Irvine
  */
 public class A163642 implements Sequence {

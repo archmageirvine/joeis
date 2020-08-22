@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288534 <code>a(n) = n*(2*n^2 + 3), n &gt;= 1; a(0)=1</code>.
+ * A288534 a(n) = n*(2*n^2 + 3), n &gt;= 1; a(0)=1.
  * @author Georg Fischer
  */
 public class A288534 extends GeneratingFunctionSequence {

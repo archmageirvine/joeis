@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A108876 Location of restriction sites for the enzyme MboII in <code>PhiX174</code> DNA.
+ * A108876 Location of restriction sites for the enzyme MboII in PhiX174 DNA.
  * @author Georg Fischer
  */
 public class A108876 extends NoncomputableSequence {

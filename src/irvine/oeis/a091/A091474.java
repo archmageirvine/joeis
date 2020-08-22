@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A091474 Decimal expansion of <code>Pi^2 * (2-sqrt(2))/32</code>.
+ * A091474 Decimal expansion of Pi^2 * (2-sqrt(2))/32.
  * @author Georg Fischer
  */
 public class A091474 extends DecimalExpansionSequence {

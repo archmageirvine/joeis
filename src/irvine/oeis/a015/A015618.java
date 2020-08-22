@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015618 Number of triples of different integers from <code>[ 2,n ]</code> with no global factor.
+ * A015618 Number of triples of different integers from [ 2,n ] with no global factor.
  * @author Sean A. Irvine
  */
 public class A015618 implements Sequence {

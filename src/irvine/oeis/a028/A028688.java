@@ -8,7 +8,7 @@ import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
 /**
- * A028688 Sorted factorial and k-factorial numbers (numbers of form <code>k-1</code> excluded).
+ * A028688 Sorted factorial and k-factorial numbers (numbers of form k-1 excluded).
  * @author Sean A. Irvine
  */
 public class A028688 implements Sequence {

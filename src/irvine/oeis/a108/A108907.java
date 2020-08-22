@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A108907 Number of times a point sum n is attained in all <code>6^6</code> permutations of throwing 6 dice.
+ * A108907 Number of times a point sum n is attained in all 6^6 permutations of throwing 6 dice.
  * @author Georg Fischer
  */
 public class A108907 extends PaddingSequence {

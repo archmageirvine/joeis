@@ -6,7 +6,7 @@ package irvine.oeis.a155;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A155867 A 'Morgan Voyce' transform of the large Schroeder numbers <code>A006318</code>.
+ * A155867 A 'Morgan Voyce' transform of the large Schroeder numbers A006318.
  * @author Georg Fischer
  */
 public class A155867 extends HolonomicRecurrence {

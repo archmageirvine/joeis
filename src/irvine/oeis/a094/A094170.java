@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094170 Number of quasi-triominoes in an <code>n X n</code> bounding box.
+ * A094170 Number of quasi-triominoes in an n X n bounding box.
  * @author Georg Fischer
  */
 public class A094170 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033950 Refactorable numbers: number of divisors of n divides <code>n</code>. Also known as tau numbers.
+ * A033950 Refactorable numbers: number of divisors of n divides n. Also known as tau numbers.
  * @author Sean A. Irvine
  */
 public class A033950 implements Sequence {

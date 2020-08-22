@@ -5,7 +5,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079340 Absolute value of determinant of <code>n X n</code> matrix whose entries are the integers from 1 to <code>n^2</code> spiraling outward, ending in a corner.
+ * A079340 Absolute value of determinant of n X n matrix whose entries are the integers from 1 to n^2 spiraling outward, ending in a corner.
  * @author Georg Fischer
  */
 public class A079340 extends HolonomicRecurrence {

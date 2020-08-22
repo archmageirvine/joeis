@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A332735 Numbers of graphs which are double triangle descendants of <code>K_5</code> with four more vertices than triangles.
+ * A332735 Numbers of graphs which are double triangle descendants of K_5 with four more vertices than triangles.
  * @author Georg Fischer
  */
 public class A332735 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A154955 <code>a(1) = 1, a(2) = -1</code>, followed by <code>0, 0, 0</code>, ... .
+ * A154955 a(1) = 1, a(2) = -1, followed by 0, 0, 0, ... .
  * @author Georg Fischer
  */
 public class A154955 extends PaddingSequence {

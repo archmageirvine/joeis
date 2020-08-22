@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a005.A005132;
 
 /**
- * A160356 First differences of Recam\u00e1n's sequence <code>A005132</code>.
+ * A160356 First differences of Recam\u00e1n's sequence A005132.
  * @author Georg Fischer
  */
 public class A160356 extends DifferenceSequence {

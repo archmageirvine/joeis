@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055841 Number of compositions of n into <code>3*j-1</code> kinds of j's for all j <code>&gt;= 1</code>.
+ * A055841 Number of compositions of n into 3*j-1 kinds of j's for all j &gt;= 1.
  * @author Georg Fischer
  */
 public class A055841 extends HolonomicRecurrence {

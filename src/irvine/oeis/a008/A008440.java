@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A008440 Expansion of Jacobi theta constant <code>theta_2^6 /(64q^(3/2))</code>.
+ * A008440 Expansion of Jacobi theta constant theta_2^6 /(64q^(3/2)).
  * @author Georg Fischer
  */
 public class A008440 extends EulerTransform {

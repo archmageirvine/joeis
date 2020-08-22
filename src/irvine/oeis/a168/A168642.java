@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168642 <code>a(n) = (8*2^n + (-1)^n)/3</code> for <code>n &gt; 0; a(0) = 1</code>.
+ * A168642 a(n) = (8*2^n + (-1)^n)/3 for n &gt; 0; a(0) = 1.
  * @author Georg Fischer
  */
 public class A168642 extends GeneratingFunctionSequence {

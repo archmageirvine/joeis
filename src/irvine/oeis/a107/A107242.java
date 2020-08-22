@@ -3,7 +3,7 @@ package irvine.oeis.a107;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A107242 Sum of squares of tetranacci numbers <code>(A001630)</code>.
+ * A107242 Sum of squares of tetranacci numbers (A001630).
  * @author Sean A. Irvine
  */
 public class A107242 extends LinearRecurrence {

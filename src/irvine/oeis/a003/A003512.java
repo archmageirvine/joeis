@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A003512 A Beatty sequence: <code>floor(n*(sqrt(3) + 2))</code>.
+ * A003512 A Beatty sequence: floor(n*(sqrt(3) + 2)).
  * @author Sean A. Irvine
  */
 public class A003512 extends BeattySequence {

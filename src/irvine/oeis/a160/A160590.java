@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A160590 <code>Next-to-least</code> significant digit of <code>2^n</code>.
+ * A160590 Next-to-least significant digit of 2^n.
  * @author Georg Fischer
  */
 public class A160590 extends PaddingSequence {

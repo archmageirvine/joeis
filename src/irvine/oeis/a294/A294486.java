@@ -6,7 +6,7 @@ package irvine.oeis.a294;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A294486 <code>a(n) = binomial(2n,n) * (2n+1)^2</code>.
+ * A294486 a(n) = binomial(2n,n) * (2n+1)^2.
  * @author Georg Fischer
  */
 public class A294486 extends HolonomicRecurrence {

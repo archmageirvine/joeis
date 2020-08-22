@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A263190 G.f. satisfies: <code>[x^(n-1)] A(x)^(n^2) = (n!)^2</code> for <code>n&gt;=1</code>.
+ * A263190 G.f. satisfies: [x^(n-1)] A(x)^(n^2) = (n!)^2 for n&gt;=1.
  * @author Sean A. Irvine
  */
 public class A263190 implements Sequence {

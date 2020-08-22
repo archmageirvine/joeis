@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A251809 Decimal expansion of <code>3*sqrt(2)*Pi^3/128</code>.
+ * A251809 Decimal expansion of 3*sqrt(2)*Pi^3/128.
  * @author Georg Fischer
  */
 public class A251809 extends DecimalExpansionSequence {

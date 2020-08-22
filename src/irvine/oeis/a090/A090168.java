@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090168 <code>Floor( 3n/2 ) - floor( 2n/3 )</code>.
+ * A090168 Floor( 3n/2 ) - floor( 2n/3 ).
  * @author Georg Fischer
  */
 public class A090168 extends GeneratingFunctionSequence {

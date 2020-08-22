@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A023418 Denominator of <code>n*(n-3)*(3*n^2 - 6*n + 2)/(3*(n-1)*(n-2))</code>.
+ * A023418 Denominator of n*(n-3)*(3*n^2 - 6*n + 2)/(3*(n-1)*(n-2)).
  * @author Sean A. Irvine
  */
 public class A023418 extends A023417 {

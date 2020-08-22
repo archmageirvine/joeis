@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A056849 Final digit of <code>n^n</code>.
+ * A056849 Final digit of n^n.
  * @author Sean A. Irvine
  */
 public class A056849 extends PeriodicSequence {

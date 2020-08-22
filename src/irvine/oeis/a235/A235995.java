@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A235995 Decimal expansion of Planck angular frequency in Hertz with six proved digits: <code>1.85492 * 10^43</code> Hz.
+ * A235995 Decimal expansion of Planck angular frequency in Hertz with six proved digits: 1.85492 * 10^43 Hz.
  * @author Georg Fischer
  */
 public class A235995 extends NoncomputableSequence {

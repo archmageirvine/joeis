@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026005 <code>a(n) = T(4*n,n)</code>, where T = Catalan triangle <code>(A008315)</code>.
+ * A026005 a(n) = T(4*n,n), where T = Catalan triangle (A008315).
  * @author Sean A. Irvine
  */
 public class A026005 implements Sequence {

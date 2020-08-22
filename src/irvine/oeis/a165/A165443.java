@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165443 <code>a(n) = ( 16^(2*n+1) + 81^(2*n+1) )/97</code>.
+ * A165443 a(n) = ( 16^(2*n+1) + 81^(2*n+1) )/97.
  * @author Georg Fischer
  */
 public class A165443 extends GeneratingFunctionSequence {

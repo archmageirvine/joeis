@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247060 Dynamic Betting Game <code>D(n,4,1)</code>.
+ * A247060 Dynamic Betting Game D(n,4,1).
  * @author Sean A. Irvine
  */
 public class A247060 extends LinearRecurrence {

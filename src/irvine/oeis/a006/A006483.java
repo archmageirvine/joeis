@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a103.A103435;
 
 /**
- * A006483 <code>a(n) = Fibonacci(n)*2^n + 1</code>.
+ * A006483 a(n) = Fibonacci(n)*2^n + 1.
  * @author Sean A. Irvine
  */
 public class A006483 extends A103435 {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086269 Decimal expansion of <code>-41/16 + (3*sqrt(3))/2</code>.
+ * A086269 Decimal expansion of -41/16 + (3*sqrt(3))/2.
  * @author Georg Fischer
  */
 public class A086269 extends DecimalExpansionSequence {

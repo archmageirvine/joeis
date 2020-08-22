@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124101 <code>Sum_(x^i*y^j*z^k)</code> with i <code>+ j + k =</code> m and <code>(x</code>, y, <code>z) =</code> the primitive Pythagorean triple <code>(7, 24, 25)</code>.
+ * A124101 Sum_(x^i*y^j*z^k) with i + j + k = m and (x, y, z) = the primitive Pythagorean triple (7, 24, 25).
  * @author Georg Fischer
  */
 public class A124101 extends LinearRecurrence {

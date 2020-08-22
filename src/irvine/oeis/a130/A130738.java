@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A130738 Greedy odd Egyptian fraction representation of <code>1</code> (without repeats).
+ * A130738 Greedy odd Egyptian fraction representation of 1 (without repeats).
  * @author Georg Fischer
  */
 public class A130738 extends FiniteSequence {

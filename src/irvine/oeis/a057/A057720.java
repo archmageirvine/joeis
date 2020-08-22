@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A057720 Decimal expansion of <code>muon-to-electron</code> mass ratio.
+ * A057720 Decimal expansion of muon-to-electron mass ratio.
  * @author Georg Fischer
  */
 public class A057720 extends NoncomputableSequence {

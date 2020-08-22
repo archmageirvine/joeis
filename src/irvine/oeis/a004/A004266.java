@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004266 <code>a(n) = round(1000*log_2(n))</code>.
+ * A004266 a(n) = round(1000*log_2(n)).
  * @author Sean A. Irvine
  */
 public class A004266 implements Sequence {

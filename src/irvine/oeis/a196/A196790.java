@@ -6,7 +6,7 @@ package irvine.oeis.a196;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A196790 Binomial coefficients <code>C(2*n-9,10)</code>.
+ * A196790 Binomial coefficients C(2*n-9,10).
  * @author Georg Fischer
  */
 public class A196790 extends GeneratingFunctionSequence {

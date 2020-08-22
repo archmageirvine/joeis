@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A274833 6-white numbers: partition digits of <code>n^6</code> into blocks of 6 starting at right; sum of these 6-digit numbers equals <code>n</code>.
+ * A274833 6-white numbers: partition digits of n^6 into blocks of 6 starting at right; sum of these 6-digit numbers equals n.
  * @author Georg Fischer
  */
 public class A274833 extends FiniteSequence {

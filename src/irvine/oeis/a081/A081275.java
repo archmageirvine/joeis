@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081275 Shallow diagonal of triangular spiral in <code>A051682</code>.
+ * A081275 Shallow diagonal of triangular spiral in A051682.
  * @author Sean A. Irvine
  */
 public class A081275 extends LinearRecurrence {

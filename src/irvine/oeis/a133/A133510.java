@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133510 Number of primitive H-invariant prime ideals in <code>O_q(M_{2,n})</code> generic quantum matrices.
+ * A133510 Number of primitive H-invariant prime ideals in O_q(M_{2,n}) generic quantum matrices.
  * @author Georg Fischer
  */
 public class A133510 extends GeneratingFunctionSequence {

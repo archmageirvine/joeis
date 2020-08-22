@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121471 <code>a(n) = 9*n^2/4 -4*n +19/8 -3*(-1)^n/8</code>.
+ * A121471 a(n) = 9*n^2/4 -4*n +19/8 -3*(-1)^n/8.
  * @author Georg Fischer
  */
 public class A121471 extends GeneratingFunctionSequence {

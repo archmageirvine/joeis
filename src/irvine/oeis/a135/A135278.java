@@ -7,7 +7,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A135278 Triangle read by rows, giving the numbers <code>T(n,m) = binomial(n+1, m+1);</code> or, Pascal's triangle <code>A007318</code> with its left-hand edge removed.
+ * A135278 Triangle read by rows, giving the numbers T(n,m) = binomial(n+1, m+1); or, Pascal's triangle A007318 with its left-hand edge removed.
  * @author Georg Fischer
  */
 public class A135278 extends GeneratingFunctionTriangle {

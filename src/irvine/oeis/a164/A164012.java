@@ -5,7 +5,7 @@ package irvine.oeis.a164;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A164012 Zero together with row 12 of the array in <code>A163280</code>.
+ * A164012 Zero together with row 12 of the array in A163280.
  * @author Georg Fischer
  */
 public class A164012 extends HolonomicRecurrence {

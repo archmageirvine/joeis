@@ -5,7 +5,7 @@ package irvine.oeis.a092;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A092164 Let M <code>= 2 X 2</code> matrix <code>[ 1 2 / 5 4 ]; a(n) = (1,1)</code> entry of <code>M^n</code>.
+ * A092164 Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (1,1) entry of M^n.
  * @author Georg Fischer
  */
 public class A092164 extends HolonomicRecurrence {

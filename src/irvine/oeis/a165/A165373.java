@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165373 Number of slanted <code>n X 4 (i=1..n) X (j=i..4+i-1) 1..4</code> arrays with all <code>1s</code> connected, all <code>2s</code> connected, all <code>3s</code> connected, all <code>4s</code> connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, and 4 in the lower right corner.
+ * A165373 Number of slanted n X 4 (i=1..n) X (j=i..4+i-1) 1..4 arrays with all 1s connected, all 2s connected, all 3s connected, all 4s connected, 1 in the upper left corner, 2 in the upper right corner, 3 in the lower left corner, and 4 in the lower right corner.
  * @author Georg Fischer
  */
 public class A165373 extends GeneratingFunctionSequence {

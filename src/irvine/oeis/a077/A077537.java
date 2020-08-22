@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a005.A005370;
 
 /**
- * A077537 Sum of next <code>F(n)</code> Fibonacci numbers, where <code>F(n) = n-th</code> Fibonacci number.
+ * A077537 Sum of next F(n) Fibonacci numbers, where F(n) = n-th Fibonacci number.
  * @author Georg Fischer
  */
 public class A077537 extends DifferenceSequence {

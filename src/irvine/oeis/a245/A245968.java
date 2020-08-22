@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245968 The edge independence number of the Lucas cube <code>Lambda(n)</code>.
+ * A245968 The edge independence number of the Lucas cube Lambda(n).
  * @author Sean A. Irvine
  */
 public class A245968 extends LinearRecurrence {

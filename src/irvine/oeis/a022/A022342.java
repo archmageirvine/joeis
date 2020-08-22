@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000201;
 
 /**
- * A022342 Integers with "even" Zeckendorf expansions (do not end with <code>...+F1 = ...+1)</code> (the <code>Fibonacci-even</code> numbers); also, apart from first term, <code>a(n) =</code> Fibonacci successor to <code>n-1</code>.
+ * A022342 Integers with "even" Zeckendorf expansions (do not end with ...+F1 = ...+1) (the Fibonacci-even numbers); also, apart from first term, a(n) = Fibonacci successor to n-1.
  * @author Sean A. Irvine
  */
 public class A022342 extends A000201 {

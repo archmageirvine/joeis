@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072071 Number of integer solutions to the equation <code>4x^2+y^2+32z^2=n</code>.
+ * A072071 Number of integer solutions to the equation 4x^2+y^2+32z^2=n.
  * @author Sean A. Irvine
  */
 public class A072071 extends A072070 {

@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029792 Cubes such that digits of cube root of n are not present in <code>n^(2/3)</code> or <code>n</code>.
+ * A029792 Cubes such that digits of cube root of n are not present in n^(2/3) or n.
  * @author Sean A. Irvine
  */
 public class A029792 extends A029790 {

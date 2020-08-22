@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A099651 For each of the <code>C(10,2) = 45</code> pairs of decimal digits, record the smallest prime containing only these digits (if one exists); sort.
+ * A099651 For each of the C(10,2) = 45 pairs of decimal digits, record the smallest prime containing only these digits (if one exists); sort.
  * @author Georg Fischer
  */
 public class A099651 extends FiniteSequence {

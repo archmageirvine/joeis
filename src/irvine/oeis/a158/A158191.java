@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A158191 Attach the smallest prime to the end of the string <code>a(n-1)</code> so <code>a(n)</code> is also prime.
+ * A158191 Attach the smallest prime to the end of the string a(n-1) so a(n) is also prime.
  * @author Sean A. Irvine
  */
 public class A158191 implements Sequence {

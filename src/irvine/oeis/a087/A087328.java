@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087328 Independence numbers for <code>KT_3</code> knight on hexagonal board.
+ * A087328 Independence numbers for KT_3 knight on hexagonal board.
  * @author Georg Fischer
  */
 public class A087328 extends GeneratingFunctionSequence {

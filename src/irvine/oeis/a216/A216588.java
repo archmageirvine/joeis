@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A216588 Number of Hamiltonian cycles in <code>C_4 X C_n</code>.
+ * A216588 Number of Hamiltonian cycles in C_4 X C_n.
  * @author Georg Fischer
  */
 public class A216588 extends GeneratingFunctionSequence {

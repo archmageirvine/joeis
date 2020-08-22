@@ -5,7 +5,7 @@ package irvine.oeis.a223;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A223580 Number of <code>nX3 0..3</code> arrays with antidiagonals unimodal.
+ * A223580 Number of nX3 0..3 arrays with antidiagonals unimodal.
  * @author Georg Fischer
  */
 public class A223580 extends HolonomicRecurrence {

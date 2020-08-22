@@ -5,7 +5,7 @@ package irvine.oeis.a049;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A049321 Primitive Chacon sequence: fixed under <code>0-&gt;0012, 1-&gt;12, 2-&gt;012</code>.
+ * A049321 Primitive Chacon sequence: fixed under 0-&gt;0012, 1-&gt;12, 2-&gt;012.
  * @author Georg Fischer
  */
 public class A049321 extends MorphismSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004432;
 
 /**
- * A024806 Positions of even numbers in <code>A004432</code>.
+ * A024806 Positions of even numbers in A004432.
  * @author Sean A. Irvine
  */
 public class A024806 extends A004432 {

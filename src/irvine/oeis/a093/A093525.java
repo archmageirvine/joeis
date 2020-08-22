@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A093525 Decimal expansion of <code>13/720 - Pi^2/15015</code>.
+ * A093525 Decimal expansion of 13/720 - Pi^2/15015.
  * @author Georg Fischer
  */
 public class A093525 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189004 Number of domino tilings of the <code>7 X n</code> grid with upper left corner removed iff n is odd.
+ * A189004 Number of domino tilings of the 7 X n grid with upper left corner removed iff n is odd.
  * @author Georg Fischer
  */
 public class A189004 extends GeneratingFunctionSequence {

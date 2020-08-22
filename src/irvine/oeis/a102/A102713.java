@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102713 Total sum of odd parts in all compositions of <code>n</code>.
+ * A102713 Total sum of odd parts in all compositions of n.
  * @author Georg Fischer
  */
 public class A102713 extends HolonomicRecurrence {

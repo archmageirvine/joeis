@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.math.q.Q;
 
 /**
- * A022163 First row of spectral array <code>W(sqrt(3/2))</code>.
+ * A022163 First row of spectral array W(sqrt(3/2)).
  * @author Sean A. Irvine
  */
 public class A022163 extends A022159 {

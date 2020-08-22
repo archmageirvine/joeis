@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A044140 Numbers k such that substring <code>"02"</code> occurs in the <code>base-7</code> representation of k but not of <code>k-1</code>.
+ * A044140 Numbers k such that substring "02" occurs in the base-7 representation of k but not of k-1.
  * @author Georg Fischer
  */
 public class A044140 extends RunsBaseSequence {

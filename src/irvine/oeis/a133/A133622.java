@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133622 <code>a(n) = 1</code> if n is odd, <code>a(n) = n/2+1</code> if n is even.
+ * A133622 a(n) = 1 if n is odd, a(n) = n/2+1 if n is even.
  * @author Georg Fischer
  */
 public class A133622 extends HolonomicRecurrence {

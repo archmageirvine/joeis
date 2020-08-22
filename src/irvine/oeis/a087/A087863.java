@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087863 <code>(n^3+24*n^2+65*n+36)/6</code>.
+ * A087863 (n^3+24*n^2+65*n+36)/6.
  * @author Sean A. Irvine
  */
 public class A087863 extends LinearRecurrence {

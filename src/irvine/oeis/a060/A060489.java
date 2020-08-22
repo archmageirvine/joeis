@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060489 Number of 5-block ordered tricoverings of an unlabeled <code>n-set</code>.
+ * A060489 Number of 5-block ordered tricoverings of an unlabeled n-set.
  * @author Georg Fischer
  */
 public class A060489 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194770 E.g.f. <code>2*sqrt(3)/3*arctan(sqrt(3)*x/(x+2))</code>.
+ * A194770 E.g.f. 2*sqrt(3)/3*arctan(sqrt(3)*x/(x+2)).
  * @author Georg Fischer
  */
 public class A194770 extends HolonomicRecurrence {

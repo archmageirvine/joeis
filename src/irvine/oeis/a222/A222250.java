@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A222250 In the number n, replace all (decimal) digits <code>'6'</code> with <code>'8'</code> and vice versa.
+ * A222250 In the number n, replace all (decimal) digits '6' with '8' and vice versa.
  * @author Georg Fischer
  */
 public class A222250 extends A001477 {

@@ -6,7 +6,7 @@ package irvine.oeis.a099;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A099022 <code>a(n) = Sum_{k=0..n} C(n,k)*(2*n-k)!</code>.
+ * A099022 a(n) = Sum_{k=0..n} C(n,k)*(2*n-k)!.
  * @author Georg Fischer
  */
 public class A099022 extends HolonomicRecurrence {

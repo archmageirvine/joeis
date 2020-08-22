@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A121225 Decimal expansion of <code>-log(2-2*cos(1))/2</code>.
+ * A121225 Decimal expansion of -log(2-2*cos(1))/2.
  * @author Georg Fischer
  */
 public class A121225 extends DecimalExpansionSequence {

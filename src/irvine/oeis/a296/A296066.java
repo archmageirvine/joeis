@@ -5,7 +5,7 @@ package irvine.oeis.a296;
 import irvine.math.z.Z;
 
 /**
- * A296066 <code>a(n) = A296065(n)/n</code>.
+ * A296066 a(n) = A296065(n)/n.
  * @author Georg Fischer
  */
 public class A296066 extends A296065 {

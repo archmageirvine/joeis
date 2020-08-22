@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015000 q-integers for <code>q=-13</code>.
+ * A015000 q-integers for q=-13.
  * @author Sean A. Irvine
  */
 public class A015000 implements Sequence {

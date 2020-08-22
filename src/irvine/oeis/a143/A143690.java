@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143690 <code>A007318 * [1, 6, 14, 9, 0, 0, 0,...]</code>.
+ * A143690 A007318 * [1, 6, 14, 9, 0, 0, 0,...].
  * @author Georg Fischer
  */
 public class A143690 extends GeneratingFunctionSequence {

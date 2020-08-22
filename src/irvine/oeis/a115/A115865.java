@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115865 <code>a(n) = Legendre_P(n,2)*6^n</code>.
+ * A115865 a(n) = Legendre_P(n,2)*6^n.
  * @author Georg Fischer
  */
 public class A115865 extends HolonomicRecurrence {

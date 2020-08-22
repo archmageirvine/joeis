@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A032790 Palindromic quotients <code>n(n+1)(n+2) / (n+(n+1)+(n+2))</code>.
+ * A032790 Palindromic quotients n(n+1)(n+2) / (n+(n+1)+(n+2)).
  * @author Sean A. Irvine
  */
 public class A032790 implements Sequence {

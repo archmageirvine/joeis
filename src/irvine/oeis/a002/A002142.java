@@ -4,7 +4,7 @@ import irvine.math.group.QuadraticFieldUtils;
 import irvine.math.z.Z;
 
 /**
- * A002142 Primes p <code>== 1 (mod 4)</code> where class number of <code>Q(sqrt p)</code> increases.
+ * A002142 Primes p == 1 (mod 4) where class number of Q(sqrt p) increases.
  * @author Sean A. Irvine
  */
 public class A002142 extends A002144 {

@@ -3,7 +3,7 @@ package irvine.oeis.a303;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A303878 Consider the representation of some integer <code>(&gt;1)</code> as the sum of distinct unit fraction <code>(&lt;1)</code>. The sum of these denominators is least.
+ * A303878 Consider the representation of some integer (&gt;1) as the sum of distinct unit fraction (&lt;1). The sum of these denominators is least.
  * @author Georg Fischer
  */
 public class A303878 extends FiniteSequence {

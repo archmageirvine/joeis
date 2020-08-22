@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060452 Let v <code>= (1,4,9,...,n^2), x = (0,1,2,4,6,...)</code> [first n terms of <code>A002620]; a(n) =</code> v.v * x.x <code>- (v.x)^2</code>.
+ * A060452 Let v = (1,4,9,...,n^2), x = (0,1,2,4,6,...) [first n terms of A002620]; a(n) = v.v * x.x - (v.x)^2.
  * @author Georg Fischer
  */
 public class A060452 extends GeneratingFunctionSequence {

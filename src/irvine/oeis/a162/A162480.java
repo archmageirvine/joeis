@@ -6,7 +6,7 @@ package irvine.oeis.a162;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A162480 Expansion of <code>1/((1-x)^2*sqrt(1-4x/(1-x)^4))</code>.
+ * A162480 Expansion of 1/((1-x)^2*sqrt(1-4x/(1-x)^4)).
  * @author Georg Fischer
  */
 public class A162480 extends HolonomicRecurrence {

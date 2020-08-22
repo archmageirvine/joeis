@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A171013 In the sequence of prime numbers, replace all digits <code>'1'</code> with <code>'0'</code> and vice versa.
+ * A171013 In the sequence of prime numbers, replace all digits '1' with '0' and vice versa.
  * @author Georg Fischer
  */
 public class A171013 extends A000040 {

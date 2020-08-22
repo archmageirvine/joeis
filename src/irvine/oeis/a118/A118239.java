@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118239 Engel expansion of <code>cosh(1)</code>.
+ * A118239 Engel expansion of cosh(1).
  * @author Georg Fischer
  */
 public class A118239 extends GeneratingFunctionSequence {

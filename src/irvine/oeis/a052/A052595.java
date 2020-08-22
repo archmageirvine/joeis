@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052595 E.g.f. <code>1/(1-3x-x^2)</code>.
+ * A052595 E.g.f. 1/(1-3x-x^2).
  * @author Georg Fischer
  */
 public class A052595 extends HolonomicRecurrence {

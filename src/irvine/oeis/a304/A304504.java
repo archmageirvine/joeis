@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304504 <code>a(n) = 3*(3*n+1)*(9*n+8)/2</code>.
+ * A304504 a(n) = 3*(3*n+1)*(9*n+8)/2.
  * @author Georg Fischer
  */
 public class A304504 extends GeneratingFunctionSequence {

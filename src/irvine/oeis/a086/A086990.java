@@ -6,7 +6,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086990 Expansion of <code>(1+4x-sqrt(1+4x^2))/(4+6x)</code> in powers of <code>x</code>.
+ * A086990 Expansion of (1+4x-sqrt(1+4x^2))/(4+6x) in powers of x.
  * @author Georg Fischer
  */
 public class A086990 extends HolonomicRecurrence {

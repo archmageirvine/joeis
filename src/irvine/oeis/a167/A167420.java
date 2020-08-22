@@ -5,7 +5,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167420 <code>2^n mod 14</code>.
+ * A167420 2^n mod 14.
  * @author Georg Fischer
  */
 public class A167420 extends HolonomicRecurrence {

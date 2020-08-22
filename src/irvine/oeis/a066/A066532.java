@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066532 If n is odd <code>a(n) = 1</code>, if n is even <code>a(n) = 2^(n-1)</code>.
+ * A066532 If n is odd a(n) = 1, if n is even a(n) = 2^(n-1).
  * @author Sean A. Irvine
  */
 public class A066532 extends LinearRecurrence {

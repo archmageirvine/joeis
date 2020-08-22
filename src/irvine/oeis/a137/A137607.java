@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137607 <code>a(0)=361, a(n+1)=a(n)/2</code> if <code>a(n)</code> is even, else <code>a(n+1)=a(0)-(a(n)+1)/2</code>.
+ * A137607 a(0)=361, a(n+1)=a(n)/2 if a(n) is even, else a(n+1)=a(0)-(a(n)+1)/2.
  * @author Georg Fischer
  */
 public class A137607 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059345 Central column of Pascal's "rhombus" (actually <code>a</code> triangle) <code>A059317</code>.
+ * A059345 Central column of Pascal's "rhombus" (actually a triangle) A059317.
  * @author Georg Fischer
  */
 public class A059345 extends HolonomicRecurrence {

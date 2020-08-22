@@ -5,7 +5,7 @@ package irvine.oeis.a301;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A301758 Clique covering number of the <code>n X n</code> fiveleaper graph.
+ * A301758 Clique covering number of the n X n fiveleaper graph.
  * @author Georg Fischer
  */
 public class A301758 extends HolonomicRecurrence {

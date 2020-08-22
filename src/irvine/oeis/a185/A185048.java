@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185048 Length of the continued fraction for <code>floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n)</code>.
+ * A185048 Length of the continued fraction for floor(Fibonacci(n)*(1+sqrt(5))/2) / Fibonacci(n).
  * @author Georg Fischer
  */
 public class A185048 extends GeneratingFunctionSequence {

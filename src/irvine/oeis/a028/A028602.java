@@ -1,7 +1,7 @@
 package irvine.oeis.a028;
 
 /**
- * A028602 Expansion of <code>(theta_3(z)*theta_3(9z)+theta_2(z)*theta_2(9z))^2</code>.
+ * A028602 Expansion of (theta_3(z)*theta_3(9z)+theta_2(z)*theta_2(9z))^2.
  * @author Sean A. Irvine
  */
 public class A028602 extends A028601 {

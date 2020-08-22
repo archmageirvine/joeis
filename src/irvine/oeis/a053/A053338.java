@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A053338 <code>a(n)</code> contains n digits (either <code>'6'</code> or <code>'9')</code> and is divisible by <code>2^n</code>.
+ * A053338 a(n) contains n digits (either '6' or '9') and is divisible by 2^n.
  * @author Sean A. Irvine
  */
 public class A053338 implements Sequence {

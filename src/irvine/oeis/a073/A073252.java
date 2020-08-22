@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A073252 Coefficients of replicable function number <code>"48g"</code>.
+ * A073252 Coefficients of replicable function number "48g".
  * @author Georg Fischer
  */
 public class A073252 extends EulerTransform {

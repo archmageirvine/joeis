@@ -3,7 +3,7 @@ package irvine.oeis.a072;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A072896 5th-order digital invariants: the sum of the 5th powers of the digits of n equals some number k and the sum of the 5th powers of the digits of k equals <code>n</code>.
+ * A072896 5th-order digital invariants: the sum of the 5th powers of the digits of n equals some number k and the sum of the 5th powers of the digits of k equals n.
  * @author Georg Fischer
  */
 public class A072896 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006266;
 
 /**
- * A145451 <code>a(n) = (1/2) * ((1 + sqrt(2))^(3^n) + (1 - sqrt(2))^(3^n))</code>.
+ * A145451 a(n) = (1/2) * ((1 + sqrt(2))^(3^n) + (1 - sqrt(2))^(3^n)).
  * @author Georg Fischer
  */
 public class A145451 extends A006266 {

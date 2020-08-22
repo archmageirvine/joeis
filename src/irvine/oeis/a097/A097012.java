@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 
 
 /**
- * A097012 <code>a(n) = sigma(n) mod 210</code>.
+ * A097012 a(n) = sigma(n) mod 210.
  * @author Georg Fischer
  */
 public class A097012 extends A000203 {

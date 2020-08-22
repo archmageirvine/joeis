@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184688 1/3 the number of <code>n X 3 0..2</code> arrays with no element equal both to the element above and to the element to its left.
+ * A184688 1/3 the number of n X 3 0..2 arrays with no element equal both to the element above and to the element to its left.
  * @author Georg Fischer
  */
 public class A184688 extends GeneratingFunctionSequence {

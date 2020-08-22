@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333760 Number of self-avoiding closed paths in the <code>4 X n</code> grid graph which pass through all vertices on four <code>(left</code>, right, upper, lower) sides of the graph.
+ * A333760 Number of self-avoiding closed paths in the 4 X n grid graph which pass through all vertices on four (left, right, upper, lower) sides of the graph.
  * @author Georg Fischer
  */
 public class A333760 extends GeneratingFunctionSequence {

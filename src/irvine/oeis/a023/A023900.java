@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023900 Dirichlet inverse of Euler totient function <code>(A000010)</code>.
+ * A023900 Dirichlet inverse of Euler totient function (A000010).
  * @author Sean A. Irvine
  */
 public class A023900 implements Sequence {

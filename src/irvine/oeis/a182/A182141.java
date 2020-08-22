@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A182141 Number of independent sets of nodes in the armchair <code>(3,3)</code> carbon nanotorus graph of breadth <code>n (n&gt;=1)</code>.
+ * A182141 Number of independent sets of nodes in the armchair (3,3) carbon nanotorus graph of breadth n (n&gt;=1).
  * @author Georg Fischer
  */
 public class A182141 extends GeneratingFunctionSequence {

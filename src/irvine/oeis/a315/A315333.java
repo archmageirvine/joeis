@@ -5,7 +5,7 @@ package irvine.oeis.a315;
 import org.teherba.tile.TilingSequence;
 
 /**
- * A315333 Coordination sequence <code>Gal.5.292.2</code> where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
+ * A315333 Coordination sequence Gal.5.292.2 where G.u.t.v denotes the coordination sequence for a vertex of type v in tiling number t in the Galebach list of u-uniform tilings.
  * @author Georg Fischer
  */
 public class A315333 extends TilingSequence {

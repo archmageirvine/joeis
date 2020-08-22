@@ -5,7 +5,7 @@ package irvine.oeis.a267;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A267350 Binary representation of the n-th iteration of the "Rule <code>123"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A267350 Binary representation of the n-th iteration of the "Rule 123" elementary cellular automaton starting with a single ON (black) cell.
  * @author Georg Fischer
  */
 public class A267350 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169923 Integer values of <code>3*n-36+360/(n+10)</code> (see <code>A169922)</code>.
+ * A169923 Integer values of 3*n-36+360/(n+10) (see A169922).
  * @author Georg Fischer
  */
 public class A169923 extends FiniteSequence {

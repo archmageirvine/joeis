@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199402 Binary XOR of <code>2^k - (-1)^k</code> as k varies from 1 to <code>n</code>.
+ * A199402 Binary XOR of 2^k - (-1)^k as k varies from 1 to n.
  * @author Georg Fischer
  */
 public class A199402 extends GeneratingFunctionSequence {

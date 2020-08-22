@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A234692 Decimal value of the bitmap of active segments in 7-segment display of the number n, variant <code>2 ("abcdefg"</code> scheme: bits represent segments in clockwise order).
+ * A234692 Decimal value of the bitmap of active segments in 7-segment display of the number n, variant 2 ("abcdefg" scheme: bits represent segments in clockwise order).
  * @author Georg Fischer
  */
 public class A234692 implements Sequence {

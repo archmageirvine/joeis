@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086027 <code>a(n) = Sum_{i=1..n} binomial(i+5,6)^2</code>.
+ * A086027 a(n) = Sum_{i=1..n} binomial(i+5,6)^2.
  * @author Georg Fischer
  */
 public class A086027 extends GeneratingFunctionSequence {

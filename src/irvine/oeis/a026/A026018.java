@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a003.A003518;
 
 /**
- * A026018 <code>a(n) =</code> number of <code>(s(0), s(1)</code>, ..., <code>s(2n-1))</code> such that <code>s(i)</code> is a nonnegative integer and <code>|s(i) - s(i-1)| = 1</code> for i <code>= 1,2,...,n, s(0) = 2, s(2n-1) = 7</code>. Also <code>a(n) = T(2n-1,n-3)</code>, where T is the array defined in <code>A026009</code>.
+ * A026018 a(n) = number of (s(0), s(1), ..., s(2n-1)) such that s(i) is a nonnegative integer and |s(i) - s(i-1)| = 1 for i = 1,2,...,n, s(0) = 2, s(2n-1) = 7. Also a(n) = T(2n-1,n-3), where T is the array defined in A026009.
  * @author Sean A. Irvine
  */
 public class A026018 extends DifferenceSequence {

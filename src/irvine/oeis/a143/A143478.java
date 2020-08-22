@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143478 Expansion of <code>1/(x^10*p(1/x))</code>, where <code>p(x) = x^11 + x^10 - 11*x^9 - 11*x^8 + 42*x^7 + 40*x^6 - 66*x^5 - 54*x^4 + 42*x^3 + 24*x^2 - 8*x - 1</code> is a Salem polynomial.
+ * A143478 Expansion of 1/(x^10*p(1/x)), where p(x) = x^11 + x^10 - 11*x^9 - 11*x^8 + 42*x^7 + 40*x^6 - 66*x^5 - 54*x^4 + 42*x^3 + 24*x^2 - 8*x - 1 is a Salem polynomial.
  * @author Georg Fischer
  */
 public class A143478 extends GeneratingFunctionSequence {

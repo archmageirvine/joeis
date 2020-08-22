@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A204556 Left edge of the triangle <code>A045975</code>.
+ * A204556 Left edge of the triangle A045975.
  * @author Sean A. Irvine
  */
 public class A204556 extends LinearRecurrence {

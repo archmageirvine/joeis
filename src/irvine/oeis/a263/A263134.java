@@ -5,7 +5,7 @@ package irvine.oeis.a263;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263134 <code>a(n) = Sum_{k=0..n} binomial(3*k+1,k)</code>.
+ * A263134 a(n) = Sum_{k=0..n} binomial(3*k+1,k).
  * @author Georg Fischer
  */
 public class A263134 extends HolonomicRecurrence {

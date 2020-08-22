@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A081549 <code>a(1) = 1;</code> for <code>n &gt; 1, a(n) &gt; a(n-1)</code> is the smallest number such that the concatenation <code>a(1)a(2)a(3)..</code>. forms a cyclic concatenation of <code>123456789</code> (of nonzero digits).
+ * A081549 a(1) = 1; for n &gt; 1, a(n) &gt; a(n-1) is the smallest number such that the concatenation a(1)a(2)a(3)... forms a cyclic concatenation of 123456789 (of nonzero digits).
  * @author Sean A. Irvine
  */
 public class A081549 implements Sequence {

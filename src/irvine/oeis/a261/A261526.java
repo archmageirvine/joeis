@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A261526 Expansion of <code>(H(-x) / chi(-x))^2</code> in powers of x where <code>chi()</code> is a Ramanujan theta function and <code>G()</code> is a Rogers-Ramanujan function.
+ * A261526 Expansion of (H(-x) / chi(-x))^2 in powers of x where chi() is a Ramanujan theta function and G() is a Rogers-Ramanujan function.
  * @author Georg Fischer
  */
 public class A261526 extends EulerTransform {

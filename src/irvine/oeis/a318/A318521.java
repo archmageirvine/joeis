@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318521 Decimal expansion of <code>sqrt(5^(1/3)-4^(1/3))</code>.
+ * A318521 Decimal expansion of sqrt(5^(1/3)-4^(1/3)).
  * @author Georg Fischer
  */
 public class A318521 extends DecimalExpansionSequence {

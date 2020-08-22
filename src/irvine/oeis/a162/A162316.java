@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162316 <code>a(n) = 5n^2 + 20n + 1</code>.
+ * A162316 a(n) = 5n^2 + 20n + 1.
  * @author Sean A. Irvine
  */
 public class A162316 extends LinearRecurrence {

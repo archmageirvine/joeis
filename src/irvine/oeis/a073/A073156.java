@@ -6,7 +6,7 @@ package irvine.oeis.a073;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A073156 Main diagonal sequence of triangle <code>A073153</code>.
+ * A073156 Main diagonal sequence of triangle A073153.
  * @author Georg Fischer
  */
 public class A073156 extends HolonomicRecurrence {

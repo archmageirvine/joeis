@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027854 Mutinous numbers: <code>n&gt;1</code> such that <code>n/p^k &gt;</code> p, where p is the largest prime dividing n and <code>p^k</code> is the highest power of p dividing <code>n</code>.
+ * A027854 Mutinous numbers: n&gt;1 such that n/p^k &gt; p, where p is the largest prime dividing n and p^k is the highest power of p dividing n.
  * @author Sean A. Irvine
  */
 public class A027854 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187074 <code>a(n) = 0</code> if and only if n is of the form <code>3*k</code> or <code>4*k + 2</code>, otherwise <code>a(n) = 1</code>.
+ * A187074 a(n) = 0 if and only if n is of the form 3*k or 4*k + 2, otherwise a(n) = 1.
  * @author Georg Fischer
  */
 public class A187074 extends GeneratingFunctionSequence {

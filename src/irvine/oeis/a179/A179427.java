@@ -6,7 +6,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179427 Number of ways to place 7 nonattacking kings on an <code>n X n</code> toroidal board.
+ * A179427 Number of ways to place 7 nonattacking kings on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A179427 extends GeneratingFunctionSequence {

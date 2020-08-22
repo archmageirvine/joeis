@@ -5,7 +5,7 @@ package irvine.oeis.a060;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A060022 Expansion of <code>(1-x-x^N)/((1-x)(1-x^2)(1-x^3)...(1-x^N))</code> for N <code>= 3</code>.
+ * A060022 Expansion of (1-x-x^N)/((1-x)(1-x^2)(1-x^3)...(1-x^N)) for N = 3.
  * @author Georg Fischer
  */
 public class A060022 extends HolonomicRecurrence {

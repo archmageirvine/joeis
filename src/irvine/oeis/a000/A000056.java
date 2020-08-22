@@ -7,7 +7,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A000056 Order of the group <code>SL(2,Z_n)</code>.
+ * A000056 Order of the group SL(2,Z_n).
  * @author Sean A. Irvine
  */
 public class A000056 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174687 Central coefficients <code>T(2n,n)</code> of the Catalan triangle <code>A033184</code>.
+ * A174687 Central coefficients T(2n,n) of the Catalan triangle A033184.
  * @author Georg Fischer
  */
 public class A174687 extends HolonomicRecurrence {

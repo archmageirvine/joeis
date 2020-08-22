@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015961 Positive integers k such that k <code>| (12^k + 1)</code>.
+ * A015961 Positive integers k such that k | (12^k + 1).
  * @author Sean A. Irvine
  */
 public class A015961 implements Sequence {

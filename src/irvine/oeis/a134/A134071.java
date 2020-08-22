@@ -3,7 +3,7 @@ package irvine.oeis.a134;
 import irvine.math.z.Z;
 
 /**
- * A134071 Primes in <code>A134072</code>.
+ * A134071 Primes in A134072.
  * @author Sean A. Irvine
  */
 public class A134071 extends A134072 {

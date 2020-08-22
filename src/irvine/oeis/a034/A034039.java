@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.SetDifferenceSequence;
 
 /**
- * A034039 Numbers that are primitively but not imprimitively represented by <code>(x^2+xy+2y^2, x&gt;=0, y&gt;=0)</code>.
+ * A034039 Numbers that are primitively but not imprimitively represented by (x^2+xy+2y^2, x&gt;=0, y&gt;=0).
  * @author Sean A. Irvine
  */
 public class A034039 extends SetDifferenceSequence {

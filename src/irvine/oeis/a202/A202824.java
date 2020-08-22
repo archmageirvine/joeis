@@ -6,7 +6,7 @@ package irvine.oeis.a202;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A202824 Expansion of e.g.f.: <code>exp( (1+x)^4 - 1 )</code>.
+ * A202824 Expansion of e.g.f.: exp( (1+x)^4 - 1 ).
  * @author Georg Fischer
  */
 public class A202824 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A239120 Decimal expansion of <code>1/2 - Pi/8</code>.
+ * A239120 Decimal expansion of 1/2 - Pi/8.
  * @author Georg Fischer
  */
 public class A239120 extends DecimalExpansionSequence {

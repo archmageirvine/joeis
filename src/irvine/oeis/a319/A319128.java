@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A319128 Interleave <code>n*(3*n - 2), 3*n^2 + n - 1, n=0,0,1,1</code>, ... .
+ * A319128 Interleave n*(3*n - 2), 3*n^2 + n - 1, n=0,0,1,1, ... .
  * @author Georg Fischer
  */
 public class A319128 extends LinearRecurrence {

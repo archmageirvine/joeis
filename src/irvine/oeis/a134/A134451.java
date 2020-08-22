@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A134451 Ternary digital root of <code>n</code>.
+ * A134451 Ternary digital root of n.
  * @author Georg Fischer
  */
 public class A134451 extends PaddingSequence {

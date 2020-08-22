@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A105782 Coefficients of the <code>C-Rogers mod 14</code> identity.
+ * A105782 Coefficients of the C-Rogers mod 14 identity.
  * @author Georg Fischer
  */
 public class A105782 extends EulerTransform {

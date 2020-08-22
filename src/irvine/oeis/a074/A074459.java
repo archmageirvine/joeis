@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074459 Number of segments which change from display of a number n to the next number <code>n+1</code> on a 7-segment display: version where <code>'6', '7', '9'</code> use <code>6, 4</code>, resp. 5 segments.
+ * A074459 Number of segments which change from display of a number n to the next number n+1 on a 7-segment display: version where '6', '7', '9' use 6, 4, resp. 5 segments.
  * @author Sean A. Irvine
  */
 public class A074459 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A307234 Decimal expansion of <code>2/3 + Pi/6 + sqrt(3)/4</code>.
+ * A307234 Decimal expansion of 2/3 + Pi/6 + sqrt(3)/4.
  * @author Georg Fischer
  */
 public class A307234 extends DecimalExpansionSequence {

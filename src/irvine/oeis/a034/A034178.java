@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034178 Number of solutions to <code>n = a^2 - b^2, a &gt; b &gt;= 0</code>.
+ * A034178 Number of solutions to n = a^2 - b^2, a &gt; b &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A034178 implements Sequence {

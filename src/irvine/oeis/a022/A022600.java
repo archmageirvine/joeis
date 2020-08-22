@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A022600 Expansion of <code>Product_{m&gt;=1} (1+q^m)^(-5)</code>.
+ * A022600 Expansion of Product_{m&gt;=1} (1+q^m)^(-5).
  * @author Sean A. Irvine
  */
 public class A022600 extends EulerTransformSequence {

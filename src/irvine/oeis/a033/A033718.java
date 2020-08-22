@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A033718 Product <code>theta3(q^d); d | 5</code>.
+ * A033718 Product theta3(q^d); d | 5.
  * @author Georg Fischer
  */
 public class A033718 extends EulerTransform {

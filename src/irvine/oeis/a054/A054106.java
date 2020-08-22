@@ -7,7 +7,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A054106 Alternating sums of vertically aligned numbers in Pascal's triangle: <code>T(n,k) = C(n,k) - C(n-2,k-1) + C(n-4,k-2) - ... +- C(n-2[n/2],m)</code>.
+ * A054106 Alternating sums of vertically aligned numbers in Pascal's triangle: T(n,k) = C(n,k) - C(n-2,k-1) + C(n-4,k-2) - ... +- C(n-2[n/2],m).
  * @author Georg Fischer
  */
 public class A054106 extends GeneratingFunctionTriangle {

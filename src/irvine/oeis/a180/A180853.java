@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180853 Trajectory of 4 under map <code>n-&gt;A006368(n)</code>.
+ * A180853 Trajectory of 4 under map n-&gt;A006368(n).
  * @author Sean A. Irvine
  */
 public class A180853 extends LinearRecurrence {

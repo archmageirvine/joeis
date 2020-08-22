@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A078905 The q expansion of <code>Lambda^5</code>, a Hauptmodul for <code>Gamma_1(5)</code>.
+ * A078905 The q expansion of Lambda^5, a Hauptmodul for Gamma_1(5).
  * @author Georg Fischer
  */
 public class A078905 extends EulerTransform {

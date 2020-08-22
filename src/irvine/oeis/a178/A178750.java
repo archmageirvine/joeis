@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178750 Partial sums of <code>floor(5^n/9)</code>.
+ * A178750 Partial sums of floor(5^n/9).
  * @author Georg Fischer
  */
 public class A178750 extends GeneratingFunctionSequence {

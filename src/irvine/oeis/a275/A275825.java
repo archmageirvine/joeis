@@ -5,7 +5,7 @@ package irvine.oeis.a275;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A275825 Third-order sequence with non-constant coefficients: <code>a(n) = (n-3)*a(n-1) + (n-1)*a(n-3); a(0) = a(1) = a(2) = 1</code>.
+ * A275825 Third-order sequence with non-constant coefficients: a(n) = (n-3)*a(n-1) + (n-1)*a(n-3); a(0) = a(1) = a(2) = 1.
  * @author Georg Fischer
  */
 public class A275825 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187611 Number of 7-step one space for components leftwards or up, two space for components rightwards or down asymmetric <code>quasi-bishop</code>'s tours (antidiagonal moves become knight moves) on an <code>n X n</code> board summed over all starting positions.
+ * A187611 Number of 7-step one space for components leftwards or up, two space for components rightwards or down asymmetric quasi-bishop's tours (antidiagonal moves become knight moves) on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187611 extends GeneratingFunctionSequence {

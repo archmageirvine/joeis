@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052631 <code>a(n) = n!*Pell(n)</code> (or <code>n!*A000129(n))</code>.
+ * A052631 a(n) = n!*Pell(n) (or n!*A000129(n)).
  * @author Georg Fischer
  */
 public class A052631 extends HolonomicRecurrence {

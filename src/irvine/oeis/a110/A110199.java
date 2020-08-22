@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110199 <code>a(n) = Sum_{k=0..floor(n/2)} Catalan(k)</code>.
+ * A110199 a(n) = Sum_{k=0..floor(n/2)} Catalan(k).
  * @author Georg Fischer
  */
 public class A110199 extends HolonomicRecurrence {

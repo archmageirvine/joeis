@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030989 6-automorphic numbers: final digits of <code>6n^2</code> agree with <code>n</code>.
+ * A030989 6-automorphic numbers: final digits of 6n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030989 implements Sequence {

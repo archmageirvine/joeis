@@ -6,7 +6,7 @@ package irvine.oeis.a096;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A096654 Denominators of self-convergents to <code>1/(e-2)</code>.
+ * A096654 Denominators of self-convergents to 1/(e-2).
  * @author Georg Fischer
  */
 public class A096654 extends HolonomicRecurrence {

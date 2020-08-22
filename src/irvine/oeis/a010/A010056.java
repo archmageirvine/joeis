@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A010056 Characteristic function of Fibonacci numbers: <code>a(n) = 1</code> if n is a Fibonacci number, otherwise 0.
+ * A010056 Characteristic function of Fibonacci numbers: a(n) = 1 if n is a Fibonacci number, otherwise 0.
  * @author Sean A. Irvine
  */
 public class A010056 extends A000045 {

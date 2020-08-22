@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173712 Numbers n such that <code>(n+n+1)</code> divides the decimal concatenation <code>[n, n+1]</code>.
+ * A173712 Numbers n such that (n+n+1) divides the decimal concatenation [n, n+1].
  * @author Sean A. Irvine
  */
 public class A173712 extends LinearRecurrence {

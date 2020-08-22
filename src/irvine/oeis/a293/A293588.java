@@ -6,7 +6,7 @@ package irvine.oeis.a293;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A293588 E.g.f.: <code>exp(x + x^6/6)</code>.
+ * A293588 E.g.f.: exp(x + x^6/6).
  * @author Georg Fischer
  */
 public class A293588 extends HolonomicRecurrence {

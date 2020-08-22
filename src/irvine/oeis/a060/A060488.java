@@ -3,7 +3,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060488 Number of 4-block ordered tricoverings of an unlabeled <code>n-set</code>.
+ * A060488 Number of 4-block ordered tricoverings of an unlabeled n-set.
  * @author Sean A. Irvine
  */
 public class A060488 extends LinearRecurrence {

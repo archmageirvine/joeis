@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002425;
 
 /**
- * A089607 <code>a(n)=((-1)^(n+1)*A002425(n))</code> modulo 4.
+ * A089607 a(n)=((-1)^(n+1)*A002425(n)) modulo 4.
  * @author Georg Fischer
  */
 public class A089607 implements Sequence {

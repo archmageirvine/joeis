@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002591 Largest factor of <code>3^(2n+1) - 1</code>.
+ * A002591 Largest factor of 3^(2n+1) - 1.
  * @author Sean A. Irvine
  */
 public class A002591 implements Sequence {

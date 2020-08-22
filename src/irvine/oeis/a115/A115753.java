@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A115753 If <code>a(n)</code> is a k-digit number, <code>a(n+1)</code> is the product of the number formed by the initial <code>k-1</code> digits of <code>a(n)</code> and the final digit of <code>a(n)</code>. If <code>k=1</code>, set <code>a(n+1) = 0</code>.
+ * A115753 If a(n) is a k-digit number, a(n+1) is the product of the number formed by the initial k-1 digits of a(n) and the final digit of a(n). If k=1, set a(n+1) = 0.
  * @author Georg Fischer
  */
 public class A115753 extends PaddingSequence {

@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073742 Decimal expansion of <code>sinh(1)</code>.
+ * A073742 Decimal expansion of sinh(1).
  * @author Sean A. Irvine
  */
 public class A073742 extends DecimalExpansionSequence {

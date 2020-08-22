@@ -6,7 +6,7 @@ package irvine.oeis.a158;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A158074 Number of (directed) Hamiltonian cycles on a <code>3 X (2n)</code> knight's tour graph.
+ * A158074 Number of (directed) Hamiltonian cycles on a 3 X (2n) knight's tour graph.
  * @author Georg Fischer
  */
 public class A158074 extends HolonomicRecurrence {

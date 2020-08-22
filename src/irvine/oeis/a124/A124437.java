@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124437 Experience Points thresholds for levels in the <code>P&amp;P-RPG</code> "Das Schwarze Auge" <code>(DSA</code>, aka "The Dark <code>Eye")</code>.
+ * A124437 Experience Points thresholds for levels in the P&amp;P-RPG "Das Schwarze Auge" (DSA, aka "The Dark Eye").
  * @author Sean A. Irvine
  */
 public class A124437 extends LinearRecurrence {

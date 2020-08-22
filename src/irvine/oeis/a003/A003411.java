@@ -3,7 +3,7 @@ package irvine.oeis.a003;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003411 Losing initial positions in game: two players alternate in removing <code>&gt;= 1</code> stones; last player wins; first player may not remove all stones; each move <code>&lt;= 3</code> times previous move.
+ * A003411 Losing initial positions in game: two players alternate in removing &gt;= 1 stones; last player wins; first player may not remove all stones; each move &lt;= 3 times previous move.
  * @author Sean A. Irvine
  */
 public class A003411 extends LinearRecurrence {

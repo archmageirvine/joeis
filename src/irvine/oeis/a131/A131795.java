@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A131795 G.f.: <code>Product_{k&gt;0} (1-x^(4k-1)) / (1-x^(4k-2))</code>.
+ * A131795 G.f.: Product_{k&gt;0} (1-x^(4k-1)) / (1-x^(4k-2)).
  * @author Georg Fischer
  */
 public class A131795 extends EulerTransform {

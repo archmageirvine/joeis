@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195692 Decimal expansion of <code>arccos(1/phi)</code>, where phi <code>= (1+sqrt(5))/2</code> (the golden ratio).
+ * A195692 Decimal expansion of arccos(1/phi), where phi = (1+sqrt(5))/2 (the golden ratio).
  * @author Georg Fischer
  */
 public class A195692 extends DecimalExpansionSequence {

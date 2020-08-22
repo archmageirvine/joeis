@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233196 Number of <code>n X 2 0..7</code> arrays with no element <code>x(i,j)</code> adjacent to itself or value <code>7-x(i,j)</code> horizontally, antidiagonally or vertically, top left element zero, and 1 appearing before <code>2 3 4 5</code> and <code>6, 2</code> appearing before <code>3 4</code> and 5, and 3 appearing before 4 in row major order (unlabelled 8-colorings with no clashing color pairs).
+ * A233196 Number of n X 2 0..7 arrays with no element x(i,j) adjacent to itself or value 7-x(i,j) horizontally, antidiagonally or vertically, top left element zero, and 1 appearing before 2 3 4 5 and 6, 2 appearing before 3 4 and 5, and 3 appearing before 4 in row major order (unlabelled 8-colorings with no clashing color pairs).
  * @author Georg Fischer
  */
 public class A233196 extends GeneratingFunctionSequence {

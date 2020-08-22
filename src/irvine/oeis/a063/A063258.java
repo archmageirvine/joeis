@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063258 <code>a(n) = binomial(n+5,4) - 1</code>.
+ * A063258 a(n) = binomial(n+5,4) - 1.
  * @author Georg Fischer
  */
 public class A063258 extends HolonomicRecurrence {

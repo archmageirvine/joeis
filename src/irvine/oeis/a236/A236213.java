@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236213 Number of units in the imaginary quadratic field <code>Q(sqrt(-d))</code>, where d <code>&gt; 0</code> is the n-th squarefree number.
+ * A236213 Number of units in the imaginary quadratic field Q(sqrt(-d)), where d &gt; 0 is the n-th squarefree number.
  * @author Georg Fischer
  */
 public class A236213 extends GeneratingFunctionSequence {

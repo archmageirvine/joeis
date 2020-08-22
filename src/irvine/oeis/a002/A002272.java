@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a004.A004011;
 
 /**
- * A002272 Theta series of 32-dimensional Quebbemann lattice <code>Q_32</code>.
+ * A002272 Theta series of 32-dimensional Quebbemann lattice Q_32.
  * @author Sean A. Irvine
  */
 public class A002272 extends A002288 {

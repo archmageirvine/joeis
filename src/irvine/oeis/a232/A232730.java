@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232730 Number of n-digit numbers that yield an <code>(n+1)-digit</code> number after Reverse and Add.
+ * A232730 Number of n-digit numbers that yield an (n+1)-digit number after Reverse and Add.
  * @author Georg Fischer
  */
 public class A232730 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a214;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A214772 Number of partitions of n into parts <code>6, 9</code> or 20.
+ * A214772 Number of partitions of n into parts 6, 9 or 20.
  * @author Georg Fischer
  */
 public class A214772 extends GeneratingFunctionSequence {

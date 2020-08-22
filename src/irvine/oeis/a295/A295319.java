@@ -4,7 +4,7 @@ package irvine.oeis.a295;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A295319 <code>a(n)</code> is the sum of all n-digit palindromes.
+ * A295319 a(n) is the sum of all n-digit palindromes.
  * @author Georg Fischer
  */
 public class A295319 extends GeneratingFunctionSequence {

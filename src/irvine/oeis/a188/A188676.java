@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188676 Alternate partial sums of the binomial coefficients <code>binomial(3*n,n)</code>.
+ * A188676 Alternate partial sums of the binomial coefficients binomial(3*n,n).
  * @author Georg Fischer
  */
 public class A188676 extends HolonomicRecurrence {

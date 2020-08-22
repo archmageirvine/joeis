@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030494 If n is even, <code>2(n/2 + 1)! - 1;</code> if n is odd, <code>((n + 1)/2 + 1)! - 1</code>.
+ * A030494 If n is even, 2(n/2 + 1)! - 1; if n is odd, ((n + 1)/2 + 1)! - 1.
  * @author Sean A. Irvine
  */
 public class A030494 implements Sequence {

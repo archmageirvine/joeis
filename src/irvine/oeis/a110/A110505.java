@@ -5,7 +5,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110505 Numerators of unsigned columns of triangle <code>A110504: a(n) = n!*A110504(n,0) = (-1)^k*n!*A110504(n+k,k)</code> for all k <code>&gt;= 0</code>.
+ * A110505 Numerators of unsigned columns of triangle A110504: a(n) = n!*A110504(n,0) = (-1)^k*n!*A110504(n+k,k) for all k &gt;= 0.
  * @author Georg Fischer
  */
 public class A110505 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003099 <code>a(n) = Sum_{k=0..n} binomial(n,k^2)</code>.
+ * A003099 a(n) = Sum_{k=0..n} binomial(n,k^2).
  * @author Sean A. Irvine
  */
 public class A003099 implements Sequence {

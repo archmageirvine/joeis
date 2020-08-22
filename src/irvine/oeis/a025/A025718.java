@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025718 Index of <code>6^n</code> within sequence of numbers of form <code>6^i*9^j</code>.
+ * A025718 Index of 6^n within sequence of numbers of form 6^i*9^j.
  * @author Sean A. Irvine
  */
 public class A025718 extends A025628 {

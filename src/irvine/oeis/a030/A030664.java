@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030664 Product of largest prime <code>&lt;= n</code> and smallest prime <code>&gt;= n</code>.
+ * A030664 Product of largest prime &lt;= n and smallest prime &gt;= n.
  * @author Sean A. Irvine
  */
 public class A030664 implements Sequence {

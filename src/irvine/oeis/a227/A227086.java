@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227086 Number of <code>n X 3</code> binary arrays indicating whether each <code>2 X 2</code> subblock of a larger binary array has lexicographically increasing rows and columns, for some larger <code>(n+1) X 4</code> binary array with rows and columns of the latter in lexicographically nondecreasing order.
+ * A227086 Number of n X 3 binary arrays indicating whether each 2 X 2 subblock of a larger binary array has lexicographically increasing rows and columns, for some larger (n+1) X 4 binary array with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A227086 extends GeneratingFunctionSequence {

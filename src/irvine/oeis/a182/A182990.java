@@ -5,7 +5,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182990 Powers of c, the exact speed of light in vacuum <code>(m/s)</code>.
+ * A182990 Powers of c, the exact speed of light in vacuum (m/s).
  * @author Georg Fischer
  */
 public class A182990 extends HolonomicRecurrence {

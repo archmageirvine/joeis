@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178697 Expansion of the polynomial <code>(1+x^3)*(1+x^5)*(1+x^7)*(1+x^9)*(1+x^11)*(1+x^13)*(1+x^15)*(1+x^17)*(1+x^19)*(1+x^21)</code>.
+ * A178697 Expansion of the polynomial (1+x^3)*(1+x^5)*(1+x^7)*(1+x^9)*(1+x^11)*(1+x^13)*(1+x^15)*(1+x^17)*(1+x^19)*(1+x^21).
  * @author Georg Fischer
  */
 public class A178697 extends FiniteSequence {

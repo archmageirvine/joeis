@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027132 <code>a(n) =</code> diagonal sum of right justified array T given by <code>A027113</code>.
+ * A027132 a(n) = diagonal sum of right justified array T given by A027113.
  * @author Sean A. Irvine
  */
 public class A027132 extends A027113 {

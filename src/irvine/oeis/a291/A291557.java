@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291557 <code>a(n) = 23*2^n - 1</code>.
+ * A291557 a(n) = 23*2^n - 1.
  * @author Georg Fischer
  */
 public class A291557 extends GeneratingFunctionSequence {

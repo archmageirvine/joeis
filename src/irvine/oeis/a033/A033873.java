@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033873 Difference between first prime <code>&gt; 10^n (A003617)</code> and <code>10^n</code>.
+ * A033873 Difference between first prime &gt; 10^n (A003617) and 10^n.
  * @author Sean A. Irvine
  */
 public class A033873 implements Sequence {

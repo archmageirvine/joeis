@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144689 <code>A098777 mod 7</code>.
+ * A144689 A098777 mod 7.
  * @author Georg Fischer
  */
 public class A144689 extends GeneratingFunctionSequence {

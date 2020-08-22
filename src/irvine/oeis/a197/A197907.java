@@ -5,7 +5,7 @@ package irvine.oeis.a197;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A197907 <code>Ceiling((n+1/n)^8)</code>.
+ * A197907 Ceiling((n+1/n)^8).
  * @author Georg Fischer
  */
 public class A197907 extends HolonomicRecurrence {

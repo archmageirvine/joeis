@@ -4,7 +4,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A125849 <code>a(n) = sum_{m=1..n-1} floor[m(n-2)/2]^2</code>.
+ * A125849 a(n) = sum_{m=1..n-1} floor[m(n-2)/2]^2.
  * @author Georg Fischer
  */
 public class A125849 extends GeneratingFunctionSequence {

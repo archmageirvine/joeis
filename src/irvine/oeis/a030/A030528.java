@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030528 Triangle read by rows: <code>a(n,k) = binomial(k,n-k)</code>.
+ * A030528 Triangle read by rows: a(n,k) = binomial(k,n-k).
  * @author Sean A. Irvine
  */
 public class A030528 extends MemoryFunction2<Long, Z> implements Sequence {

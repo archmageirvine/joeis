@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006907 Number of zeros in character table of symmetric group <code>S_n</code>.
+ * A006907 Number of zeros in character table of symmetric group S_n.
  * @author Sean A. Irvine
  */
 public class A006907 implements Sequence {

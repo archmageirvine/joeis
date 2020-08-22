@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026342 <code>a(n) = a(m)</code> if <code>a(m)</code> has already occurred exactly once and <code>n = m+[ (m+1)/2 ]</code>, else <code>a(n) =</code> least positive integer that has not yet occurred.
+ * A026342 a(n) = a(m) if a(m) has already occurred exactly once and n = m+[ (m+1)/2 ], else a(n) = least positive integer that has not yet occurred.
  * @author Sean A. Irvine
  */
 public class A026342 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A028342 Expansion of <code>Product_{i&gt;=1} (1 - x^i)^(-1/i);</code> also of <code>exp(Sum_{n&gt;=1} (d(n)*x^n/n))</code> where d is number of divisors function.
+ * A028342 Expansion of Product_{i&gt;=1} (1 - x^i)^(-1/i); also of exp(Sum_{n&gt;=1} (d(n)*x^n/n)) where d is number of divisors function.
  * @author Sean A. Irvine
  */
 public class A028342 extends MemorySequence {

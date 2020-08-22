@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A033637 Products of partition numbers <code>A000041(n)</code>.
+ * A033637 Products of partition numbers A000041(n).
  * @author Sean A. Irvine
  */
 public class A033637 extends MultiplicativeClosureSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012671 <code>sinh(tanh(x)*tan(x))=2/2!*x^2+232/6!*x^6+405152/10!*x^10..</code>.
+ * A012671 sinh(tanh(x)*tan(x))=2/2!*x^2+232/6!*x^6+405152/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A012671 implements Sequence {

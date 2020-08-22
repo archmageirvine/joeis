@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156119 Primes formed by rearranging five consecutive decimal digits (avoiding leading <code>0)</code>.
+ * A156119 Primes formed by rearranging five consecutive decimal digits (avoiding leading 0).
  * @author Georg Fischer
  */
 public class A156119 extends FiniteSequence {

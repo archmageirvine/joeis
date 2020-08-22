@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024160 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> such that <code>(c-b)(c-a)(b-a)</code> divides <code>(c+b)(c+a)(b+a)</code>.
+ * A024160 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that (c-b)(c-a)(b-a) divides (c+b)(c+a)(b+a).
  * @author Sean A. Irvine
  */
 public class A024160 implements Sequence {

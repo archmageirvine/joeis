@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005529 Primitive prime factors of the sequence <code>k^2 + 1 (A002522)</code> in the order that they are found.
+ * A005529 Primitive prime factors of the sequence k^2 + 1 (A002522) in the order that they are found.
  * @author Sean A. Irvine
  */
 public class A005529 implements Sequence {

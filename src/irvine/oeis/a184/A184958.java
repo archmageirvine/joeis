@@ -6,7 +6,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184958 Number of nonincreasing even cycles in all permutations of <code>{1,2,...,n}</code>. A cycle <code>(b(1), b(2), ...)</code> is said to be increasing if, when written with its smallest element in the first position, it satisfies <code>b(1)&lt;b(2)&lt;b(3)&lt;..</code>. . A cycle is said to be even if it has an even number of entries.
+ * A184958 Number of nonincreasing even cycles in all permutations of {1,2,...,n}. A cycle (b(1), b(2), ...) is said to be increasing if, when written with its smallest element in the first position, it satisfies b(1)&lt;b(2)&lt;b(3)&lt;... .  A cycle is said to be even if it has an even number of entries.
  * @author Georg Fischer
  */
 public class A184958 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007886 Number of cycles induced by iterating the Gray-coding of an n-bit number: <code>a(n+1) = a(n) + ( 2^n / C_n)</code>, where <code>C_n =</code> least power of <code>2 &gt;= n (C_n</code> is the length of the cycle).
+ * A007886 Number of cycles induced by iterating the Gray-coding of an n-bit number: a(n+1) = a(n) + ( 2^n / C_n), where C_n = least power of 2 &gt;= n (C_n is the length of the cycle).
  * @author Sean A. Irvine
  */
 public class A007886 implements Sequence {

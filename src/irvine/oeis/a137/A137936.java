@@ -4,7 +4,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137936 <code>a(n) = 5*mod(n,5) + floor(n/5)</code>.
+ * A137936 a(n) = 5*mod(n,5) + floor(n/5).
  * @author Georg Fischer
  */
 public class A137936 extends GeneratingFunctionSequence {

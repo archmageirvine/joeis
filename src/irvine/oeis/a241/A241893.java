@@ -4,7 +4,7 @@ package irvine.oeis.a241;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A241893 The total number of rectangles appearing in the Thue-Morse sequence logical matrices <code>(1, 0</code> version) after n stages.
+ * A241893 The total number of rectangles appearing in the Thue-Morse sequence logical matrices (1, 0 version) after n stages.
  * @author Georg Fischer
  */
 public class A241893 extends GeneratingFunctionSequence {

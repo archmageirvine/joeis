@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034720 Number of different words that can be formed from an <code>n X n</code> grid of letters, reading horizontally, vertically or diagonally.
+ * A034720 Number of different words that can be formed from an n X n grid of letters, reading horizontally, vertically or diagonally.
  * @author Georg Fischer
  */
 public class A034720 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A122831 Expansion of <code>b(q^3)b(q^2)^2/(b(q)b(q^6)^2)</code> in powers of q where <code>b(q)</code> is a cubic AGM function.
+ * A122831 Expansion of b(q^3)b(q^2)^2/(b(q)b(q^6)^2) in powers of q where b(q) is a cubic AGM function.
  * @author Georg Fischer
  */
 public class A122831 extends EulerTransform {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321416 Number of n element multisets of the <code>10th</code> roots of unity with zero sum.
+ * A321416 Number of n element multisets of the 10th roots of unity with zero sum.
  * @author Georg Fischer
  */
 public class A321416 extends GeneratingFunctionSequence {

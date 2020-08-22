@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033030 Derangement numbers <code>d(n,3)</code> where <code>d(n,k) = k(n-1)(d(n-1,k) + d(n-2,k))</code>, with <code>d(0,k) = 1</code> and <code>d(1,k) = 0</code>.
+ * A033030 Derangement numbers d(n,3) where d(n,k) = k(n-1)(d(n-1,k) + d(n-2,k)), with d(0,k) = 1 and d(1,k) = 0.
  * @author Sean A. Irvine
  */
 public class A033030 implements Sequence {

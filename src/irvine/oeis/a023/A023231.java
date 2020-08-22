@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023231 Numbers n such that n and <code>8n + 7</code> are both prime.
+ * A023231 Numbers n such that n and 8n + 7 are both prime.
  * @author Sean A. Irvine
  */
 public class A023231 extends A000040 {

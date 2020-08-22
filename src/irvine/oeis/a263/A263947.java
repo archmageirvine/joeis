@@ -3,7 +3,7 @@ package irvine.oeis.a263;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A263947 Positive integers n such that <code>(n+57)^3 - n^3</code> is a square.
+ * A263947 Positive integers n such that (n+57)^3 - n^3 is a square.
  * @author Sean A. Irvine
  */
 public class A263947 extends LinearRecurrence {

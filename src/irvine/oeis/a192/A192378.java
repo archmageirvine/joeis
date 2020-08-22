@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A192378 <code>(A192377)/2</code>.
+ * A192378 (A192377)/2.
  * @author Georg Fischer
  */
 public class A192378 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156089 Alternating sum of the squares of the first <code>n odd-indexed</code> Fibonacci numbers.
+ * A156089 Alternating sum of the squares of the first n odd-indexed Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A156089 extends HolonomicRecurrence {

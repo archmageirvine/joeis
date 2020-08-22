@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023141 Number of cycles of function <code>f(x) = 9x mod n</code>.
+ * A023141 Number of cycles of function f(x) = 9x mod n.
  * @author Sean A. Irvine
  */
 public class A023141 implements Sequence {

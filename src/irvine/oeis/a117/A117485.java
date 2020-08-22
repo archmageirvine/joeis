@@ -5,7 +5,7 @@ package irvine.oeis.a117;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A117485 Expansion of <code>x^9/((1-x)*(1-x^2)*(1-x^3))^2</code>.
+ * A117485 Expansion of x^9/((1-x)*(1-x^2)*(1-x^3))^2.
  * @author Georg Fischer
  */
 public class A117485 extends HolonomicRecurrence {

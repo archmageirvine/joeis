@@ -6,7 +6,7 @@ import irvine.oeis.MemorySequence;
 import java.util.HashSet;
 
 /**
- * A003151 Beatty sequence for <code>1+sqrt(2); a(n) = floor(n*(1+sqrt(2)))</code>.
+ * A003151 Beatty sequence for 1+sqrt(2); a(n) = floor(n*(1+sqrt(2))).
  * @author Sean A. Irvine
  */
 public class A003151 extends MemorySequence {

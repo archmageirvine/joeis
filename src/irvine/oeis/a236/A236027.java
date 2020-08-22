@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A236027 Decimal expansion of <code>5^(1/2) - 7^(1/3)</code>.
+ * A236027 Decimal expansion of 5^(1/2) - 7^(1/3).
  * @author Georg Fischer
  */
 public class A236027 extends DecimalExpansionSequence {

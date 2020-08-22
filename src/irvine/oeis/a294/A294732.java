@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294732 Maximal diameter of the connected cubic graphs on <code>2*n</code> vertices.
+ * A294732 Maximal diameter of the connected cubic graphs on 2*n vertices.
  * @author Georg Fischer
  */
 public class A294732 extends GeneratingFunctionSequence {

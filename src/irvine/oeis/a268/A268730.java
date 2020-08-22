@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268730 <code>a(n) = Product_{k = 0..n} 2*(8*k + 5)</code>.
+ * A268730 a(n) = Product_{k = 0..n} 2*(8*k + 5).
  * @author Georg Fischer
  */
 public class A268730 extends HolonomicRecurrence {

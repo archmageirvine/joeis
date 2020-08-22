@@ -6,7 +6,7 @@ package irvine.oeis.a278;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A278991 <code>a(n)</code> is the number of simple linear diagrams with <code>n+1</code> chords.
+ * A278991 a(n) is the number of simple linear diagrams with n+1 chords.
  * @author Georg Fischer
  */
 public class A278991 extends HolonomicRecurrence {

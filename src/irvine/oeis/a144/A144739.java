@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144739 7-factorial numbers <code>A114799(7*n+3)</code>: Partial products of <code>A017017(k) = 7*k+3, a(0) = 1</code>.
+ * A144739 7-factorial numbers A114799(7*n+3): Partial products of A017017(k) = 7*k+3, a(0) = 1.
  * @author Georg Fischer
  */
 public class A144739 extends HolonomicRecurrence {

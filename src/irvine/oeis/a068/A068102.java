@@ -5,7 +5,7 @@ package irvine.oeis.a068;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A068102 <code>a(n) = n! * 2^n * Sum_{i=1..n} 1/(i*2^i)</code>.
+ * A068102 a(n) = n! * 2^n * Sum_{i=1..n} 1/(i*2^i).
  * @author Georg Fischer
  */
 public class A068102 extends HolonomicRecurrence {

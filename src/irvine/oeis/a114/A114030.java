@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A114030 n-th partial concatenation of <code>A114729</code> divided by <code>Fibonacci(n)</code>.
+ * A114030 n-th partial concatenation of A114729 divided by Fibonacci(n).
  * @author Georg Fischer
  */
 public class A114030 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a085;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A085622 Maximal number of segments <code>(equivalently</code>, corners) in a rook circuit of a <code>2n X 2n</code> board.
+ * A085622 Maximal number of segments (equivalently, corners) in a rook circuit of a 2n X 2n board.
  * @author Georg Fischer
  */
 public class A085622 extends HolonomicRecurrence {

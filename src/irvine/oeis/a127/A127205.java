@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A127205 Decimal expansion of <code>81*sqrt(3)/(8*Pi^3)</code>.
+ * A127205 Decimal expansion of 81*sqrt(3)/(8*Pi^3).
  * @author Georg Fischer
  */
 public class A127205 extends DecimalExpansionSequence {

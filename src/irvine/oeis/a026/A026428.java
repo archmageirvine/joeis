@@ -4,7 +4,7 @@ import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 
 /**
- * A026428 <code>a(n) =</code> position of n-th prime in <code>A026416</code>.
+ * A026428 a(n) = position of n-th prime in A026416.
  * @author Sean A. Irvine
  */
 public class A026428 extends A026416 {

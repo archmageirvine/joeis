@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A128639 Expansion of <code>(1/3) * (c(q)^2 / c(q^2)) / (b(q)^2 / b(q^2))</code> in powers of q where <code>b(), c()</code> are cubic AGM theta functions.
+ * A128639 Expansion of (1/3) * (c(q)^2 / c(q^2)) / (b(q)^2 / b(q^2)) in powers of q where b(), c() are cubic AGM theta functions.
  * @author Georg Fischer
  */
 public class A128639 extends EulerTransform {

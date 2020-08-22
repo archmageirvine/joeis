@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A002513 Number of "cubic partitions" of n: expansion of <code>Product_{k&gt;0} 1/((1-x^(2k))^2*(1-x^(2k-1)))</code> in powers of <code>x</code>.
+ * A002513 Number of "cubic partitions" of n: expansion of Product_{k&gt;0} 1/((1-x^(2k))^2*(1-x^(2k-1))) in powers of x.
  * @author Georg Fischer
  */
 public class A002513 extends EulerTransform {

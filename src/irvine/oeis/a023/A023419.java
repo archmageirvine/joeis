@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A023419 <code>a(n) = c([ n/2 ]) + c([ n/3 ]) + ... + c([ n/n ])</code> for <code>n &gt;=3</code>, where <code>a(1) = 1, a(2) = 2</code> and <code>c(n) = n-th</code> number not in sequence <code>a( )</code>.
+ * A023419 a(n) = c([ n/2 ]) + c([ n/3 ]) + ... + c([ n/n ]) for n &gt;=3, where a(1) = 1, a(2) = 2 and c(n) = n-th number not in sequence a( ).
  * @author Sean A. Irvine
  */
 public class A023419 implements Sequence {

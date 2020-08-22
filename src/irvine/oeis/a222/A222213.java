@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A222213 Replace all (decimal) digits <code>'0'</code> with <code>'4'</code> and vice versa.
+ * A222213 Replace all (decimal) digits '0' with '4' and vice versa.
  * @author Georg Fischer
  */
 public class A222213 extends A001477 {

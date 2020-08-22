@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a014.A014580;
 
 /**
- * A091223 Differences between consecutive irreducible <code>GF(2)[X]-polynomials</code>.
+ * A091223 Differences between consecutive irreducible GF(2)[X]-polynomials.
  * @author Georg Fischer
  */
 public class A091223 extends DifferenceSequence {

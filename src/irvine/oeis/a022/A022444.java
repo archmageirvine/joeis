@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.a007.A007825;
 
 /**
- * A022444 Number of self-avoiding closed walks (from <code>(0,0)</code> to <code>(0,0))</code> of length <code>2n</code> in strip <code>{-1, 0, 1}</code> X Z.
+ * A022444 Number of self-avoiding closed walks (from (0,0) to (0,0)) of length 2n in strip {-1, 0, 1} X Z.
  * @author Sean A. Irvine
  */
 public class A022444 extends A007825 {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A101230 Number of partitions of <code>2n</code> in which both odd parts and parts that are multiples of 3 occur with even multiplicities. There is no restriction on the other even parts.
+ * A101230 Number of partitions of 2n in which both odd parts and parts that are multiples of 3 occur with even multiplicities. There is no restriction on the other even parts.
  * @author Georg Fischer
  */
 public class A101230 extends EulerTransform {

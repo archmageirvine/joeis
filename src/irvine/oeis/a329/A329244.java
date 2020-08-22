@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329244 Sum of every third term of the Padovan sequence <code>A000931</code>.
+ * A329244 Sum of every third term of the Padovan sequence A000931.
  * @author Georg Fischer
  */
 public class A329244 extends HolonomicRecurrence {

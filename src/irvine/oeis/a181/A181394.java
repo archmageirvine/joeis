@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181394 Summed lengths of all nonintersecting rook paths on a <code>3 x n</code> board.
+ * A181394 Summed lengths of all nonintersecting rook paths on a 3 x n board.
  * @author Georg Fischer
  */
 public class A181394 extends GeneratingFunctionSequence {

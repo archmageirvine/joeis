@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033982 Integers n such that <code>2^n == 11 (mod n)</code>.
+ * A033982 Integers n such that 2^n == 11 (mod n).
  * @author Sean A. Irvine
  */
 public class A033982 implements Sequence {

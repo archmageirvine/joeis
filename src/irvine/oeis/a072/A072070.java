@@ -1,7 +1,7 @@
 package irvine.oeis.a072;
 
 /**
- * A072070 Number of integer solutions to the equation <code>4*x^2 + y^2 + 8*z^2 = n</code>.
+ * A072070 Number of integer solutions to the equation 4*x^2 + y^2 + 8*z^2 = n.
  * @author Sean A. Irvine
  */
 public class A072070 extends A072068 {

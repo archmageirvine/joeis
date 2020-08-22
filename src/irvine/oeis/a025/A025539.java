@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025539 <code>a(n) = (Sum{1/C(i,j)})*LCM{C(i,j)}, 0 &lt;= j &lt;= i &lt;= n</code>.
+ * A025539 a(n) = (Sum{1/C(i,j)})*LCM{C(i,j)}, 0 &lt;= j &lt;= i &lt;= n.
  * @author Sean A. Irvine
  */
 public class A025539 implements Sequence {

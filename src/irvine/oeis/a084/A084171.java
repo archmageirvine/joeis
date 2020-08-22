@@ -4,7 +4,7 @@ package irvine.oeis.a084;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A084171 Binomial transform of generalized Jacobsthal numbers <code>A084170</code>.
+ * A084171 Binomial transform of generalized Jacobsthal numbers A084170.
  * @author Georg Fischer
  */
 public class A084171 extends GeneratingFunctionSequence {

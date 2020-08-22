@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190636 <code>a(n)=(n^3+3*n^7)/4</code>.
+ * A190636 a(n)=(n^3+3*n^7)/4.
  * @author Georg Fischer
  */
 public class A190636 extends GeneratingFunctionSequence {

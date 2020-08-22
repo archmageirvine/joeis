@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A284817 <code>a(n) = 2n - 1 - A284776(n)</code>.
+ * A284817 a(n) = 2n - 1 - A284776(n).
  * @author Georg Fischer
  */
 public class A284817 implements Sequence {

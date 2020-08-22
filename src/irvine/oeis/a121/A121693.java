@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121693 Number of deco polyominoes of height n and vertical height <code>3 (i.e.</code>, having <code>3</code> rows).
+ * A121693 Number of deco polyominoes of height n and vertical height 3 (i.e., having 3 rows).
  * @author Georg Fischer
  */
 public class A121693 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012532 <code>sech(sinh(x)*sin(x)) = 1-12/4!*x^4+8848/8!*x^8-45051072/12!*x^12..</code>.
+ * A012532 sech(sinh(x)*sin(x)) = 1-12/4!*x^4+8848/8!*x^8-45051072/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A012532 implements Sequence {

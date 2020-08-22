@@ -5,7 +5,7 @@ package irvine.oeis.a143;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A143616 Record values in <code>A010371</code>.
+ * A143616 Record values in A010371.
  * @author Georg Fischer
  */
 public class A143616 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137419 <code>a(n) = (a(n - 4) + 1 - ((-1)^a(a(n - 1)) + 1)*(a(a(n - 1)) - a(a(n - 2)))/2)</code>.
+ * A137419 a(n) = (a(n - 4) + 1 - ((-1)^a(a(n - 1)) + 1)*(a(a(n - 1)) - a(a(n - 2)))/2).
  * @author Georg Fischer
  */
 public class A137419 extends FiniteSequence {

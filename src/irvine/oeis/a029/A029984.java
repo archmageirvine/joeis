@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A029984 Numbers n such that <code>n^2</code> is palindromic in base 3.
+ * A029984 Numbers n such that n^2 is palindromic in base 3.
  * @author Sean A. Irvine
  */
 public class A029984 implements Sequence {

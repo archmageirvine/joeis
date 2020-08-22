@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 // DO NOT EDIT here!
 
 /**
- * A301720 Coordination sequence for node of type <code>V1</code> in "krb" 2-D tiling (or net).
+ * A301720 Coordination sequence for node of type V1 in "krb" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301720 extends A301722 {

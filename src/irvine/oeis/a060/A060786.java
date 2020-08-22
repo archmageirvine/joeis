@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060786 <code>a(n) = 9*(n-2)*(5*n-13)*(5*n^2 - 19*n + 16)/2</code>.
+ * A060786 a(n) = 9*(n-2)*(5*n-13)*(5*n^2 - 19*n + 16)/2.
  * @author Georg Fischer
  */
 public class A060786 extends GeneratingFunctionSequence {

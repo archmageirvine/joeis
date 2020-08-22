@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A023857 <code>a(n) = 1*(n+3-1) + 2*(n+3-2) +</code> .... <code>+ k*(n+3-k)</code>, where <code>k=floor((n+1)/2)</code>.
+ * A023857 a(n) = 1*(n+3-1) + 2*(n+3-2) + .... + k*(n+3-k), where k=floor((n+1)/2).
  * @author Sean A. Irvine
  */
 public class A023857 extends LinearRecurrence {

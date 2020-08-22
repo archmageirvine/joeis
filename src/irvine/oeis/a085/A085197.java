@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007001;
 
 
 /**
- * A085197 Positions of ones in <code>A007001</code>. Repeating part in each <code>sub-permutation A082315[A014137(n-1)..A014138(n-1)]</code> normalized to begin from 1.
+ * A085197 Positions of ones in A007001. Repeating part in each sub-permutation A082315[A014137(n-1)..A014138(n-1)] normalized to begin from 1.
  * @author Georg Fischer
  */
 public class A085197 extends PositionSequence {

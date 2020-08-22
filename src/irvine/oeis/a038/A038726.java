@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A038726 The number of <code>n-step self-avoiding</code> walks in a 5-dimensional hypercubic lattice with no non-contiguous adjacencies.
+ * A038726 The number of n-step self-avoiding walks in a 5-dimensional hypercubic lattice with no non-contiguous adjacencies.
  * @author Sean A. Irvine
  */
 public class A038726 implements Sequence {

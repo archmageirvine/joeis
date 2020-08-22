@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059988 <code>a(n) = (10^n - 1)^2</code>.
+ * A059988 a(n) = (10^n - 1)^2.
  * @author Georg Fischer
  */
 public class A059988 extends GeneratingFunctionSequence {

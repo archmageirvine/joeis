@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008855 Triangle <code>T(n,k), n&gt;=1</code>, read by rows, where <code>T(n,k)</code> is the number of lattice polygons with area n and perimeter <code>2*k</code>.
+ * A008855 Triangle T(n,k), n&gt;=1, read by rows, where T(n,k) is the number of lattice polygons with area n and perimeter 2*k.
  * @author Sean A. Irvine
  */
 public class A008855 implements Sequence {

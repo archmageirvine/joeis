@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000960;
 
 /**
- * A099076 <code>a(n) = A000960(n) mod 3</code>.
+ * A099076 a(n) = A000960(n) mod 3.
  * @author Georg Fischer
  */
 public class A099076 extends A000960 {

@@ -4,7 +4,7 @@ package irvine.oeis.a203;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A203286 Number of arrays of <code>2n</code> nondecreasing integers in -3..3 with sum zero and equal numbers greater than zero and less than zero.
+ * A203286 Number of arrays of 2n nondecreasing integers in -3..3 with sum zero and equal numbers greater than zero and less than zero.
  * @author Georg Fischer
  */
 public class A203286 extends GeneratingFunctionSequence {

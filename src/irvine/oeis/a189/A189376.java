@@ -3,7 +3,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189376 Expansion of <code>1/((1-x)^5*(x^3+x^2+x+1)^2)</code>.
+ * A189376 Expansion of 1/((1-x)^5*(x^3+x^2+x+1)^2).
  * @author Sean A. Irvine
  */
 public class A189376 extends LinearRecurrence {

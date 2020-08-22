@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A271746 Number of set partitions of <code>[n]</code> such that 7 is the largest element of the last block.
+ * A271746 Number of set partitions of [n] such that 7 is the largest element of the last block.
  * @author Georg Fischer
  */
 public class A271746 extends HolonomicRecurrence {

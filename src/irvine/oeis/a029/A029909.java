@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a018.A018252;
 
 /**
- * A029909 Starting with <code>n</code> (but omitting the primes), repeatedly sum prime factors (counted with multiplicity) until reaching a limit.
+ * A029909 Starting with n (but omitting the primes), repeatedly sum prime factors (counted with multiplicity) until reaching a limit.
  * @author Sean A. Irvine
  */
 public class A029909 extends A018252 {

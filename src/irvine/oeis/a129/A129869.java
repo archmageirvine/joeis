@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129869 Number of positive clusters of type <code>D_n</code>.
+ * A129869 Number of positive clusters of type D_n.
  * @author Georg Fischer
  */
 public class A129869 extends HolonomicRecurrence {

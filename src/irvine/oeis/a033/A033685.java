@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033685 Theta series of hexagonal lattice <code>A_2</code> with respect to deep hole.
+ * A033685 Theta series of hexagonal lattice A_2 with respect to deep hole.
  * @author Sean A. Irvine
  */
 public class A033685 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a115;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A115376 <code>&lt;h[d+1,d-1],s[d,d]*s[d,d]*s[d,d]&gt;</code> where <code>h[d+1,d-1]</code> is a homogeneous symmetric function, <code>s[d,d]</code> is a Schur function indexed by two parts, * represents the Kronecker product and &lt;, <code>&gt;</code> is the standard scalar product on symmetric functions.
+ * A115376 &lt;h[d+1,d-1],s[d,d]*s[d,d]*s[d,d]&gt; where h[d+1,d-1] is a homogeneous symmetric function, s[d,d] is a Schur function indexed by two parts, * represents the Kronecker product and &lt;, &gt; is the standard scalar product on symmetric functions.
  * @author Georg Fischer
  */
 public class A115376 extends GeneratingFunctionSequence {

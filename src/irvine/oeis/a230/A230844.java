@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A230844 Decimal expansion of <code>m_p*c</code> in SI units <code>(kg*m/s)</code>, where <code>m_p</code> is the proton mass and c is the speed of light in vacuum.
+ * A230844 Decimal expansion of m_p*c in SI units (kg*m/s), where m_p is the proton mass and c is the speed of light in vacuum.
  * @author Georg Fischer
  */
 public class A230844 extends NoncomputableSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a270;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A270577 Generalized Catalan numbers <code>C(3,n)</code>, where the <code>(m,n)-th</code> Catalan is the number of paths in <code>R^m</code> from the origin to the point <code>(n,...,n,(m-1)n)</code> with m kinds of moves such that the path never rises above the hyperplane <code>x_m = x_1+...+x_{m-1}</code>.
+ * A270577 Generalized Catalan numbers C(3,n), where the (m,n)-th Catalan is the number of paths in R^m from the origin to the point (n,...,n,(m-1)n) with m kinds of moves such that the path never rises above the hyperplane x_m = x_1+...+x_{m-1}.
  * @author Georg Fischer
  */
 public class A270577 extends HolonomicRecurrence {

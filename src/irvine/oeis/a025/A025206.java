@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025206 <code>[ Sum{(log(j)-log(i))^2} ], 2 &lt;= i &lt; j &lt;= n</code>.
+ * A025206 [ Sum{(log(j)-log(i))^2} ], 2 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A025206 extends MemoryFunction<Long, CR> implements Sequence {

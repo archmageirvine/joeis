@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicLongArray;
 
 /**
- * A034276 Smallest prime that generates a prime pyramid of height <code>n</code>.
+ * A034276 Smallest prime that generates a prime pyramid of height n.
  * @author Sean A. Irvine
  */
 public class A034276 implements Sequence {

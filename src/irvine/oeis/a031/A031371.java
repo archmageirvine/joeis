@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031371 <code>a(n) = prime(5n-1)</code>.
+ * A031371 a(n) = prime(5n-1).
  * @author Sean A. Irvine
  */
 public class A031371 extends A000040 {

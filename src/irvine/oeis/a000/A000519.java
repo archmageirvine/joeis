@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a133.A133687;
 
 /**
- * A000519 Number of equivalence classes of nonzero regular 0-1 matrices of order <code>n</code>.
+ * A000519 Number of equivalence classes of nonzero regular 0-1 matrices of order n.
  * @author Sean A. Irvine
  */
 public class A000519 extends A133687 {

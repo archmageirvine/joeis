@@ -13,7 +13,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A076832 Triangle <code>T(n,k)</code>, read by rows, giving the total number of inequivalent binary linear <code>[n,i]</code> codes with no column of zeros, summed for i <code>&lt;= k (n &gt;= 1, 1 &lt;= k &lt;= n)</code>.
+ * A076832 Triangle T(n,k), read by rows, giving the total number of inequivalent binary linear [n,i] codes with no column of zeros, summed for i &lt;= k (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A076832 implements Sequence {

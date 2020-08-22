@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029712 PDan numbers: numbers n of the form <code>3^A * 5^B * 7^C * 11^D</code> with <code>n+-2</code> and <code>n+-4</code> prime.
+ * A029712 PDan numbers: numbers n of the form 3^A * 5^B * 7^C * 11^D with n+-2 and n+-4 prime.
  * @author Sean A. Irvine
  */
 public class A029712 implements Sequence {

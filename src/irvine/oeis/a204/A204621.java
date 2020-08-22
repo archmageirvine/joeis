@@ -6,7 +6,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A204621 Triangle read by rows: coordinator triangle for lattice <code>A*_n</code>.
+ * A204621 Triangle read by rows: coordinator triangle for lattice A*_n.
  * @author Georg Fischer
  */
 public class A204621 extends LatticeCoordinationSequence {

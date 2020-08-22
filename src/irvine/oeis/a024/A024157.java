@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024157 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, <code>a+b+c=n</code> such that n divides abc.
+ * A024157 Number of integer-sided triangles with sides a,b,c, a&lt;b&lt;c, a+b+c=n such that n divides abc.
  * @author Sean A. Irvine
  */
 public class A024157 implements Sequence {

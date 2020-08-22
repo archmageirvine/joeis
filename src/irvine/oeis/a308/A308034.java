@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308034 Number of partitions of n into 3 parts with at least 1 part that is a nondivisor of <code>n</code>.
+ * A308034 Number of partitions of n into 3 parts with at least 1 part that is a nondivisor of n.
  * @author Georg Fischer
  */
 public class A308034 extends HolonomicRecurrence {

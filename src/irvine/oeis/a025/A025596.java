@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025596 Number of n-move king paths on <code>8x8</code> board from given corner to same corner.
+ * A025596 Number of n-move king paths on 8x8 board from given corner to same corner.
  * @author Sean A. Irvine
  */
 public class A025596 extends MemoryFunctionInt3<Z> implements Sequence {

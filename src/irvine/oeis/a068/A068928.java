@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068928 Number of incongruent ways to tile a <code>3 X 2n</code> room with <code>1x2</code> Tatami mats. At most 3 Tatami mats may meet at a point.
+ * A068928 Number of incongruent ways to tile a 3 X 2n room with 1x2 Tatami mats. At most 3 Tatami mats may meet at a point.
  * @author Georg Fischer
  */
 public class A068928 extends GeneratingFunctionSequence {

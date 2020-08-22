@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A135011 Decimal expansion of <code>11/e</code>.
+ * A135011 Decimal expansion of 11/e.
  * @author Georg Fischer
  */
 public class A135011 extends DecimalExpansionSequence {

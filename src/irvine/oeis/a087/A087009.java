@@ -4,7 +4,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087009 Least m such that <code>omega(m) + Omega(m) =</code> n, or 0 if no such m exists.
+ * A087009 Least m such that omega(m) + Omega(m) = n, or 0 if no such m exists.
  * @author Georg Fischer
  */
 public class A087009 extends GeneratingFunctionSequence {

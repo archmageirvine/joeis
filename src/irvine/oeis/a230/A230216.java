@@ -5,7 +5,7 @@ package irvine.oeis.a230;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A230216 Number of binary strings of length n avoiding "squares" (that is, repeated blocks of the form xx) with <code>|x| = 3</code>.
+ * A230216 Number of binary strings of length n avoiding "squares" (that is, repeated blocks of the form xx) with |x| = 3.
  * @author Georg Fischer
  */
 public class A230216 extends HolonomicRecurrence {

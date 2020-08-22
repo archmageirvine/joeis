@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A033454 Reversion of e.g.f. for squares <code>A000290</code>.
+ * A033454 Reversion of e.g.f. for squares A000290.
  * @author Sean A. Irvine
  */
 public class A033454 extends A000290 {

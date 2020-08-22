@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260033 Number of configurations of the general monomer-dimer model for a <code>2 X 2n</code> square lattice.
+ * A260033 Number of configurations of the general monomer-dimer model for a 2 X 2n square lattice.
  * @author Georg Fischer
  */
 public class A260033 extends GeneratingFunctionSequence {

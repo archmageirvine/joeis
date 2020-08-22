@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306672 Partial sums of the even Lucas numbers <code>(A014448)</code>.
+ * A306672 Partial sums of the even Lucas numbers (A014448).
  * @author Georg Fischer
  */
 public class A306672 extends HolonomicRecurrence {

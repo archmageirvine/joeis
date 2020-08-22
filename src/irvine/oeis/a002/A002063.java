@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002063 <code>a(n) = 9*4^n</code>.
+ * A002063 a(n) = 9*4^n.
  * @author Sean A. Irvine
  */
 public class A002063 implements Sequence {

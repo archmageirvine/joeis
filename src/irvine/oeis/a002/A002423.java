@@ -10,7 +10,7 @@ import irvine.math.q.Q;
 import java.util.Arrays;
 
 /**
- * A002423 Expansion of <code>(1-4*x)^(7/2)</code>.
+ * A002423 Expansion of (1-4*x)^(7/2).
  * @author Sean A. Irvine
  */
 public class A002423 implements Sequence {

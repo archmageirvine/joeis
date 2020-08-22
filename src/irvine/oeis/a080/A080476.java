@@ -5,7 +5,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080476 <code>Floor(</code> geometric mean of next n numbers <code>)</code>.
+ * A080476 Floor( geometric mean of next n numbers ).
  * @author Georg Fischer
  */
 public class A080476 extends HolonomicRecurrence {

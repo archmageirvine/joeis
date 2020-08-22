@@ -6,7 +6,7 @@ package irvine.oeis.a203;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A203576 Exponential (or binomial) half-convolution of <code>A000984</code> (central binomial) with itself.
+ * A203576 Exponential (or binomial) half-convolution of A000984 (central binomial) with itself.
  * @author Georg Fischer
  */
 public class A203576 extends HolonomicRecurrence {

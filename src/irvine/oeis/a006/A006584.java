@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006584 If <code>n mod 2 = 0</code> then <code>n*(n^2-4)/12</code> else <code>n*(n^2-1)/12</code>.
+ * A006584 If n mod 2 = 0 then n*(n^2-4)/12 else n*(n^2-1)/12.
  * @author Sean A. Irvine
  */
 public class A006584 implements Sequence {

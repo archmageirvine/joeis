@@ -3,7 +3,7 @@ package irvine.oeis.a213;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A213353 A subset of numbers n such that <code>n^4</code> is a Sierpinski number.
+ * A213353 A subset of numbers n such that n^4 is a Sierpinski number.
  * @author Georg Fischer
  */
 public class A213353 extends FiniteSequence {

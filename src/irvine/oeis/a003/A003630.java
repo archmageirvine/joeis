@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003630 Inert rational primes in <code>Q[sqrt(3)]</code>.
+ * A003630 Inert rational primes in Q[sqrt(3)].
  * @author Sean A. Irvine
  */
 public class A003630 implements Sequence {

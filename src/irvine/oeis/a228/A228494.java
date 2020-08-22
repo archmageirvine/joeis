@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A228494 The number of 3-length segments in all possible covers of L-length line by these segments with allowed gaps <code>&lt; 3</code>.
+ * A228494 The number of 3-length segments in all possible covers of L-length line by these segments with allowed gaps &lt; 3.
  * @author Sean A. Irvine
  */
 public class A228494 extends LinearRecurrence {

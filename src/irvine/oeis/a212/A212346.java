@@ -4,7 +4,7 @@ package irvine.oeis.a212;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A212346 Sequence of coefficients of <code>x^0</code> in marked mesh pattern generating function <code>Q_{n,132}^(0,4,0,0)(x)</code>.
+ * A212346 Sequence of coefficients of x^0 in marked mesh pattern generating function Q_{n,132}^(0,4,0,0)(x).
  * @author Georg Fischer
  */
 public class A212346 extends GeneratingFunctionSequence {

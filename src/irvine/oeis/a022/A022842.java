@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A022842 Beatty sequence for <code>sqrt(8)</code>.
+ * A022842 Beatty sequence for sqrt(8).
  * @author Sean A. Irvine
  */
 public class A022842 extends BeattySequence {

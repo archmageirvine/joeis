@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A144609 Sturmian word of slope <code>Pi</code>.
+ * A144609 Sturmian word of slope Pi.
  * @author Georg Fischer
  */
 public class A144609 extends PaddingSequence {

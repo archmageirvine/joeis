@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A100811 Decimal expansion of <code>exp(Pi*sqrt(29/8))</code>.
+ * A100811 Decimal expansion of exp(Pi*sqrt(29/8)).
  * @author Georg Fischer
  */
 public class A100811 extends DecimalExpansionSequence {

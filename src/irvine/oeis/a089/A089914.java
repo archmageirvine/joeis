@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089914 <code>a(n) = 3^n *n! *L_{n}^{-1/3}(-1)</code>, where <code>L_n^{alpha}(x)</code> are generalized Laguerre polynomials.
+ * A089914 a(n) = 3^n *n! *L_{n}^{-1/3}(-1), where L_n^{alpha}(x) are generalized Laguerre polynomials.
  * @author Georg Fischer
  */
 public class A089914 extends HolonomicRecurrence {

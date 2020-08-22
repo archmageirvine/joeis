@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027632 Molien series for group <code>Gamma_{3,0}(2)</code>.
+ * A027632 Molien series for group Gamma_{3,0}(2).
  * @author Sean A. Irvine
  */
 public class A027632 extends LinearRecurrence {

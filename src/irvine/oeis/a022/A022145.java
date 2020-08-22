@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A022145 Coordination sequence for root lattice <code>B_3</code>.
+ * A022145 Coordination sequence for root lattice B_3.
  * @author Georg Fischer
  */
 public class A022145 extends LatticeCoordinationSequence {

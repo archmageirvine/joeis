@@ -7,7 +7,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A131129 <code>3*A007318 - 2*A097806</code>, where <code>A007318 =</code> Pascal's triangle and <code>A097806 =</code> the pairwise operator.
+ * A131129 3*A007318 - 2*A097806, where A007318 = Pascal's triangle and A097806 = the pairwise operator.
  * @author Georg Fischer
  */
 public class A131129 extends GeneratingFunctionTriangle {

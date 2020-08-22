@@ -3,7 +3,7 @@ package irvine.oeis.a071;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A071817 Number of 3-digit numbers whose digits add up to <code>n</code>.
+ * A071817 Number of 3-digit numbers whose digits add up to n.
  * @author Georg Fischer
  */
 public class A071817 extends FiniteSequence {

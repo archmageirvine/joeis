@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006883;
 
 /**
- * A004042 Periods of reciprocals of <code>A006883</code>, starting with first nonzero digit.
+ * A004042 Periods of reciprocals of A006883, starting with first nonzero digit.
  * @author Sean A. Irvine
  */
 public class A004042 extends A006883 {

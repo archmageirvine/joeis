@@ -4,7 +4,7 @@ package irvine.oeis.a142;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A142964 One half of second column <code>(m=1)</code> of triangle <code>A142963</code>.
+ * A142964 One half of second column (m=1) of triangle A142963.
  * @author Georg Fischer
  */
 public class A142964 extends GeneratingFunctionSequence {

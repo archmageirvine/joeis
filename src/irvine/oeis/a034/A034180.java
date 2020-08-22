@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034180 Numbers m with property that rotating digits of m right gives <code>k*m + 1</code> for some k <code>&gt;= 1</code>.
+ * A034180 Numbers m with property that rotating digits of m right gives k*m + 1 for some k &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A034180 implements Sequence {

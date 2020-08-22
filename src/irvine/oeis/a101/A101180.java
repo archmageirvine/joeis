@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101180 Numbers n such that <code>19*n^2 + 19*n + 1</code> is a square.
+ * A101180 Numbers n such that 19*n^2 + 19*n + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A101180 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A108776 Location of the restriction sites for the enzyme BseMII in <code>PhiX174</code> DNA.
+ * A108776 Location of the restriction sites for the enzyme BseMII in PhiX174 DNA.
  * @author Georg Fischer
  */
 public class A108776 extends NoncomputableSequence {

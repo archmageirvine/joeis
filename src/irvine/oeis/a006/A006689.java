@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006689 Number of deterministic, <code>completely-defined, initially-connected</code> finite automata with 2 inputs and n unlabeled states.
+ * A006689 Number of deterministic, completely-defined, initially-connected finite automata with 2 inputs and n unlabeled states.
  * @author Sean A. Irvine
  */
 public class A006689 extends MemorySequence {

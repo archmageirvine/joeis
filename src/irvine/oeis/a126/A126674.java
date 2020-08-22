@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126674 <code>a(n) = n!*Sum_{j=0..n-1} 2^j/(j+1)</code>.
+ * A126674 a(n) = n!*Sum_{j=0..n-1} 2^j/(j+1).
  * @author Georg Fischer
  */
 public class A126674 extends HolonomicRecurrence {

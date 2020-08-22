@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A048914 Indices of pentagonal numbers which are also <code>9-gonal</code>.
+ * A048914 Indices of pentagonal numbers which are also 9-gonal.
  * @author Sean A. Irvine
  */
 public class A048914 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a116;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116362 Smallest m such that <code>A116361(m) = n</code>.
+ * A116362 Smallest m such that A116361(m) = n.
  * @author Georg Fischer
  */
 public class A116362 extends HolonomicRecurrence {

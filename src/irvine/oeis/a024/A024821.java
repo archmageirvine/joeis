@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024821 Least m such that if r and s in <code>{1/sqrt(h): h = 1,2,...,n}</code> satisfy r <code>&lt;</code> s, then r <code>&lt; k/m &lt;</code> s for some integer k.
+ * A024821 Least m such that if r and s in {1/sqrt(h): h = 1,2,...,n} satisfy r &lt; s, then r &lt; k/m &lt; s for some integer k.
  * @author Sean A. Irvine
  */
 public class A024821 implements Sequence {

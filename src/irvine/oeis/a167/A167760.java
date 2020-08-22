@@ -6,7 +6,7 @@ package irvine.oeis.a167;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A167760 The number of permutations w of <code>[n]</code> with no <code>w(i)+1 = w(i+1), mod n</code>.
+ * A167760 The number of permutations w of [n] with no w(i)+1 = w(i+1), mod n.
  * @author Georg Fischer
  */
 public class A167760 extends HolonomicRecurrence {

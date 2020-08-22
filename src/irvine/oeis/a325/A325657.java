@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325657 <code>a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2</code>.
+ * A325657 a(n) = (1/2)*(-1 + (-1)^n)*(n-1) + n^2.
  * @author Georg Fischer
  */
 public class A325657 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247614 <code>a(n) = Sum_{k=0..9} binomial(18,k)*binomial(n,k)</code>.
+ * A247614 a(n) = Sum_{k=0..9} binomial(18,k)*binomial(n,k).
  * @author Sean A. Irvine
  */
 public class A247614 extends LinearRecurrence {

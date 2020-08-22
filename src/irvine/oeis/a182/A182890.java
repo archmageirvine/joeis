@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182890 Number of <code>(1,0)-steps</code> of weight 1 at level 0 in all weighted lattice paths in <code>L_n</code>.
+ * A182890 Number of (1,0)-steps of weight 1 at level 0 in all weighted lattice paths in L_n.
  * @author Sean A. Irvine
  */
 public class A182890 extends LinearRecurrence {

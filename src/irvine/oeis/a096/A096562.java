@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A096562 Coefficients of replicable function number <code>"25a"</code> with <code>a(0) = -1</code>.
+ * A096562 Coefficients of replicable function number "25a" with a(0) = -1.
  * @author Georg Fischer
  */
 public class A096562 extends EulerTransform {

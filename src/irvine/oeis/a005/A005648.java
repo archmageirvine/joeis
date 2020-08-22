@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003239;
 
 /**
- * A005648 Number of <code>2n-bead black-white</code> reversible necklaces with n black beads.
+ * A005648 Number of 2n-bead black-white reversible necklaces with n black beads.
  * @author Sean A. Irvine
  */
 public class A005648 extends A003239 {

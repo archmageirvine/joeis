@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007209 Number of partitions of n into parts of sizes <code>{a( )}</code> is <code>a(n)</code>.
+ * A007209 Number of partitions of n into parts of sizes {a( )} is a(n).
  * @author Sean A. Irvine
  */
 public class A007209 implements Sequence {

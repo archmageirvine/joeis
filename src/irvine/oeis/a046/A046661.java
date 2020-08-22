@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A046661 Number of <code>n-step self-avoiding</code> walks on the square lattice with first step specified.
+ * A046661 Number of n-step self-avoiding walks on the square lattice with first step specified.
  * @author Sean A. Irvine
  */
 public class A046661 implements Sequence {

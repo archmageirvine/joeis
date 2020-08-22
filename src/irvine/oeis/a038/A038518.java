@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038518 Number of elements of <code>GF(2^n)</code> with trace 0 and subtrace 0.
+ * A038518 Number of elements of GF(2^n) with trace 0 and subtrace 0.
  * @author Georg Fischer
  */
 public class A038518 extends GeneratingFunctionSequence {

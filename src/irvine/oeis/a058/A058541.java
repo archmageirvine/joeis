@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A058541 Trajectory of 1 under map that sends x to <code>3x - sigma(x)</code>.
+ * A058541 Trajectory of 1 under map that sends x to 3x - sigma(x).
  * @author Georg Fischer
  */
 public class A058541 extends PaddingSequence {

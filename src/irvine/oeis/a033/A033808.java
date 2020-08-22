@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A033808 All slopes <code>(a(n)-a(m))/(n-m)</code> are distinct; generated from 0 by greedy algorithm.
+ * A033808 All slopes (a(n)-a(m))/(n-m) are distinct; generated from 0 by greedy algorithm.
  * @author Sean A. Irvine
  */
 public class A033808 extends MemorySequence {

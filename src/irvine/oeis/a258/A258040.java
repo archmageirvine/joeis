@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A258040 Expansion of <code>f(x) / f(-x)</code> in powers of x where <code>f()</code> is the g.f. for <code>A007325</code>.
+ * A258040 Expansion of f(x) / f(-x) in powers of x where f() is the g.f. for A007325.
  * @author Georg Fischer
  */
 public class A258040 extends EulerTransform {

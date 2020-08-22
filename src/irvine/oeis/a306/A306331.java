@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306331 Numbers congruent to 6 or <code>31 mod 38</code>.
+ * A306331 Numbers congruent to 6 or 31 mod 38.
  * @author Georg Fischer
  */
 public class A306331 extends HolonomicRecurrence {

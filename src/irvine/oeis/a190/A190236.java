@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A190236 <code>a(n) = [n*u + n*v] -[n*u] -[n*v]</code>, where <code>u=1/2, v=(1+sqrt(5))/2</code>, and <code>[]=floor</code>.
+ * A190236 a(n) = [n*u + n*v] -[n*u] -[n*v], where u=1/2, v=(1+sqrt(5))/2, and []=floor.
  * @author Georg Fischer
  */
 public class A190236 implements Sequence {

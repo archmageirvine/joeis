@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A169624 Decimal expansion of <code>e^(Pi*sqrt(58))</code>.
+ * A169624 Decimal expansion of e^(Pi*sqrt(58)).
  * @author Georg Fischer
  */
 public class A169624 extends DecimalExpansionSequence {

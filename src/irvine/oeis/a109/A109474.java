@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109474 <code>a(1)=1, a(2)=3;</code> thereafter, <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not equal to <code>a(i)+a(j)+a(k)</code> for <code>1&lt;=i&lt;=j&lt;=k&lt;=n-1</code>.
+ * A109474 a(1)=1, a(2)=3; thereafter, a(n) = least positive integer &gt; a(n-1) and not equal to a(i)+a(j)+a(k) for 1&lt;=i&lt;=j&lt;=k&lt;=n-1.
  * @author Georg Fischer
  */
 public class A109474 extends LinearRecurrence {

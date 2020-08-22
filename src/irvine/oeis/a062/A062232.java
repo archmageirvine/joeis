@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062232 Numbers k such that the smoothly undulating palindromic number <code>(98*10^k - 89)/99</code> is a prime.
+ * A062232 Numbers k such that the smoothly undulating palindromic number (98*10^k - 89)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062232 extends PowerFactorPrimeSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332392 Number of minimal total dominating sets in the <code>2 X n</code> king graph.
+ * A332392 Number of minimal total dominating sets in the 2 X n king graph.
  * @author Georg Fischer
  */
 public class A332392 extends HolonomicRecurrence {

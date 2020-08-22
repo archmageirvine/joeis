@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022306 Sequence <code>A022305</code> divided by 2.
+ * A022306 Sequence A022305 divided by 2.
  * @author Sean A. Irvine
  */
 public class A022306 extends A022305 {

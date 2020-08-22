@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039041 Numbers whose representation in base 7 has the same number of <code>2</code>'s and <code>4</code>'s.
+ * A039041 Numbers whose representation in base 7 has the same number of 2's and 4's.
  * @author Georg Fischer
  */
 public class A039041 extends RunsBaseSequence {

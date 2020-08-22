@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301985 <code>a(n) = n^2 + 2329n + 1697</code>.
+ * A301985 a(n) = n^2 + 2329n + 1697.
  * @author Georg Fischer
  */
 public class A301985 extends GeneratingFunctionSequence {

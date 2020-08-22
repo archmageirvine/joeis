@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.a006.A006945;
 
 /**
- * A014233 Smallest odd number for which Miller-Rabin primality test on bases <code>&lt;= n-th</code> prime does not reveal compositeness.
+ * A014233 Smallest odd number for which Miller-Rabin primality test on bases &lt;= n-th prime does not reveal compositeness.
  * @author Sean A. Irvine
  */
 public class A014233 extends A006945 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015617 Number of (unordered) triples of integers from <code>[1,n]</code> with no common factors between pairs.
+ * A015617 Number of (unordered) triples of integers from [1,n] with no common factors between pairs.
  * @author Sean A. Irvine
  */
 public class A015617 implements Sequence {

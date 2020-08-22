@@ -4,7 +4,7 @@ package irvine.oeis.a205;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A205579 <code>a(n) = round(r^n)</code> where r is the smallest Pisot number (real root <code>r=1.3247179.</code>. of <code>x^3-x-1)</code>.
+ * A205579 a(n) = round(r^n) where r is the smallest Pisot number (real root r=1.3247179.. of x^3-x-1).
  * @author Georg Fischer
  */
 public class A205579 extends GeneratingFunctionSequence {

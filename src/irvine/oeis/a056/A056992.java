@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056992 Digital roots of square numbers <code>A000290</code>.
+ * A056992 Digital roots of square numbers A000290.
  * @author Georg Fischer
  */
 public class A056992 extends GeneratingFunctionSequence {

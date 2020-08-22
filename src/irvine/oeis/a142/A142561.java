@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A142561 Primes congruent to <code>31 mod 53</code>.
+ * A142561 Primes congruent to 31 mod 53.
  * @author Sean Irvine
  */
 public class A142561 extends A000040 {

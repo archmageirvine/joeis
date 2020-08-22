@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227392 Number of <code>2-Bottom-Card</code> shuffles required to return a deck of size n to original order.
+ * A227392 Number of 2-Bottom-Card shuffles required to return a deck of size n to original order.
  * @author Georg Fischer
  */
 public class A227392 extends GeneratingFunctionSequence {

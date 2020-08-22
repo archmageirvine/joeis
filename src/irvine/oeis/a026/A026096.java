@@ -5,7 +5,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A026096 <code>Sum{T(n,k)}, k = 0,1,...,n</code>, where T is the array defined in <code>A026082</code>.
+ * A026096 Sum{T(n,k)}, k = 0,1,...,n, where T is the array defined in A026082.
  * @author Sean A. Irvine
  */
 public class A026096 extends PrependSequence {

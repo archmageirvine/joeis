@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032445 Number the digits of the decimal expansion of Pi: 3 is the first, 1 is the second, 4 is the third and so on; <code>a(n)</code> gives the starting position of the first occurrence of <code>n</code>.
+ * A032445 Number the digits of the decimal expansion of Pi: 3 is the first, 1 is the second, 4 is the third and so on; a(n) gives the starting position of the first occurrence of n.
  * @author Sean A. Irvine
  */
 public class A032445 implements Sequence {

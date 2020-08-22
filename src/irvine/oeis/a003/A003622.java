@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.BeattySequence;
 
 /**
- * A003622 The Wythoff compound sequence AA: <code>[n*phi^2] - 1</code>, where phi <code>= (1+sqrt(5))/2</code>.
+ * A003622 The Wythoff compound sequence AA: [n*phi^2] - 1, where phi = (1+sqrt(5))/2.
  * @author Sean A. Irvine
  */
 public class A003622 extends BeattySequence {

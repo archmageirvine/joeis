@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032661 Lucky numbers that are the smallest decimal concatenations of n with <code>n + (0,1,2,3,...)</code>.
+ * A032661 Lucky numbers that are the smallest decimal concatenations of n with n + (0,1,2,3,...).
  * @author Sean A. Irvine
  */
 public class A032661 implements Sequence {

@@ -7,7 +7,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A085840 Triangle read by rows: <code>T(n,m) = 4^m * (2*n+1)! / ( (2*n - 2*m + 1)! * (2*m)! )</code>, row n has <code>n+1</code> terms.
+ * A085840 Triangle read by rows: T(n,m) = 4^m * (2*n+1)! / ( (2*n - 2*m + 1)! * (2*m)! ), row n has n+1 terms.
  * @author Georg Fischer
  */
 public class A085840 extends GeneratingFunctionTriangle {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A220261 Decimal expansion of <code>(1/e) * log_10(e)</code>, where <code>1/e = A068985, log_10(e) = A002285</code>.
+ * A220261 Decimal expansion of (1/e) * log_10(e), where 1/e = A068985, log_10(e) = A002285.
  * @author Georg Fischer
  */
 public class A220261 extends DecimalExpansionSequence {

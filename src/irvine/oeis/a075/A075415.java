@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075415 Squares of <code>A002280</code> or numbers <code>(666...6)^2</code>.
+ * A075415 Squares of A002280 or numbers (666...6)^2.
  * @author Sean A. Irvine
  */
 public class A075415 extends LinearRecurrence {

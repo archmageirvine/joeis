@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020043 <code>a(n) = round(Gamma(n+2/3)/Gamma(2/3))</code>.
+ * A020043 a(n) = round(Gamma(n+2/3)/Gamma(2/3)).
  * @author Sean A. Irvine
  */
 public class A020043 implements Sequence {

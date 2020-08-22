@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a050.A050447;
 
 /**
- * A079502 Triangle <code>T(n,k)</code> read by rows; related to number of preorders.
+ * A079502 Triangle T(n,k) read by rows; related to number of preorders.
  * @author Sean A. Irvine
  */
 public class A079502 extends MemoryFunction1<Z[]> implements Sequence {

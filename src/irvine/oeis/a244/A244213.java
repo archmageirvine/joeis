@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244213 Inverse binomial transform of -2 followed by <code>A000032(n+1)</code>.
+ * A244213 Inverse binomial transform of -2 followed by A000032(n+1).
  * @author Sean A. Irvine
  */
 public class A244213 extends LinearRecurrence {

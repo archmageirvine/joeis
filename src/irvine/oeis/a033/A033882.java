@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033882 Abundancy of the abundant or perfect numbers: m <code>= sigma(n)-2n</code> for n such that m <code>&gt;= 0</code>.
+ * A033882 Abundancy of the abundant or perfect numbers: m = sigma(n)-2n for n such that m &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A033882 extends A033880 {

@@ -5,7 +5,7 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293537 Numbers k such that <code>(88*10^k - 1)/3</code> is prime.
+ * A293537 Numbers k such that (88*10^k - 1)/3 is prime.
  * @author Georg Fischer
  */
 public class A293537 extends PowerFactorPrimeSequence {

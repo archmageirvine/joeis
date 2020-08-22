@@ -6,7 +6,7 @@ package irvine.oeis.a102;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A102773 <code>a(n) = Sum_{i=0..n} binomial(n,i)^2*i!*4^i</code>.
+ * A102773 a(n) = Sum_{i=0..n} binomial(n,i)^2*i!*4^i.
  * @author Georg Fischer
  */
 public class A102773 extends HolonomicRecurrence {

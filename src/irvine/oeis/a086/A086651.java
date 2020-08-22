@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086651 <code>a(1)=1, a(2)=1</code> and for <code>n&gt;2, a(n)</code> is the smallest positive integer such that the third order absolute difference gives the Fibonacci numbers <code>A000045 = {1,1,2,3,5,8,...}</code>.
+ * A086651 a(1)=1, a(2)=1 and for n&gt;2, a(n) is the smallest positive integer such that the third order absolute difference gives the Fibonacci numbers A000045 = {1,1,2,3,5,8,...}.
  * @author Georg Fischer
  */
 public class A086651 extends GeneratingFunctionSequence {

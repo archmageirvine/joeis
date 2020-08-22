@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030123 Most likely total for a roll of <code>n 6-sided</code> dice, choosing the smallest if there is a choice.
+ * A030123 Most likely total for a roll of n 6-sided dice, choosing the smallest if there is a choice.
  * @author Sean A. Irvine
  */
 public class A030123 implements Sequence {

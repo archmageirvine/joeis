@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A213440 Decimal expansion of <code>1 + log(gamma)</code>, where gamma is Euler's constant <code>A001620</code>.
+ * A213440 Decimal expansion of 1 + log(gamma), where gamma is Euler's constant A001620.
  * @author Georg Fischer
  */
 public class A213440 extends DecimalExpansionSequence {

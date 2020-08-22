@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299914 <code>a(n) = a(n-1) + 3*a(n-2)</code> if n even, or <code>2*a(n-1) + 4*a(n-2)</code> if n odd, starting with <code>0, 1</code>.
+ * A299914 a(n) = a(n-1) + 3*a(n-2) if n even, or 2*a(n-1) + 4*a(n-2) if n odd, starting with 0, 1.
  * @author Georg Fischer
  */
 public class A299914 extends GeneratingFunctionSequence {

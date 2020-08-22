@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232921 Number of <code>2 X n 0..2</code> arrays with no element <code>x(i,j)</code> adjacent to value <code>2-x(i,j)</code> horizontally, diagonally or antidiagonally.
+ * A232921 Number of 2 X n 0..2 arrays with no element x(i,j) adjacent to value 2-x(i,j) horizontally, diagonally or antidiagonally.
  * @author Georg Fischer
  */
 public class A232921 extends GeneratingFunctionSequence {

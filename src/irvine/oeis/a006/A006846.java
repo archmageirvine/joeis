@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006846 Hammersley's polynomial <code>p_n(1)</code>.
+ * A006846 Hammersley's polynomial p_n(1).
  * @author Sean A. Irvine
  */
 public class A006846 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A316742 Stepping through the Mersenne sequence <code>(A000225)</code> one step back, two steps forward.
+ * A316742 Stepping through the Mersenne sequence (A000225) one step back, two steps forward.
  * @author Georg Fischer
  */
 public class A316742 extends LinearRecurrence {

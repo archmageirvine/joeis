@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000002;
 
 /**
- * A025508 Least <code>k&gt;1</code> such that first n terms of <code>A006928</code> repeat beginning at k-th term.
+ * A025508 Least k&gt;1 such that first n terms of A006928 repeat beginning at k-th term.
  * @author Sean A. Irvine
  */
 public class A025508 extends A000002 {

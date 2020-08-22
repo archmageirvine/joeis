@@ -5,7 +5,7 @@ package irvine.oeis.a331;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A331125 Numbers k such that there is no prime p between k and <code>(9/8)k</code>, exclusive.
+ * A331125 Numbers k such that there is no prime p between k and (9/8)k, exclusive.
  * @author Georg Fischer
  */
 public class A331125 extends FiniteSequence {

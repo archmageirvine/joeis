@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A043107 Numbers n such that 0 and 2 occur juxtaposed in the base 5 representation of n but not of <code>n-1</code>.
+ * A043107 Numbers n such that 0 and 2 occur juxtaposed in the base 5 representation of n but not of n-1.
  * @author Georg Fischer
  */
 public class A043107 implements Sequence {

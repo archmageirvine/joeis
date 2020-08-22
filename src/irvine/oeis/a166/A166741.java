@@ -6,7 +6,7 @@ package irvine.oeis.a166;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A166741 E.g.f.: <code>exp(2*arcsin(x))</code>.
+ * A166741 E.g.f.: exp(2*arcsin(x)).
  * @author Georg Fischer
  */
 public class A166741 extends HolonomicRecurrence {

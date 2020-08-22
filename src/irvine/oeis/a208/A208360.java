@@ -3,7 +3,7 @@ package irvine.oeis.a208;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A208360 Numbered stops on the Lexington Avenue Express <code>(#5)</code> Subway in New York City.
+ * A208360 Numbered stops on the Lexington Avenue Express (#5) Subway in New York City.
  * @author Georg Fischer
  */
 public class A208360 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a272;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A272266 The union of squares <code>(A000290)</code> and 10-gonal numbers <code>(A001107)</code>.
+ * A272266 The union of squares (A000290) and 10-gonal numbers (A001107).
  * @author Georg Fischer
  */
 public class A272266 extends GeneratingFunctionSequence {

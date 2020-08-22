@@ -7,7 +7,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A099510 Triangle, read by rows, of trinomial coefficients arranged so that there are <code>n+1</code> terms in row n by setting <code>T(n,k)</code> equal to the coefficient of <code>z^k</code> in <code>(1 + 2*z + z^2)^(n-[k/2])</code>, for <code>n&gt;=k&gt;=0</code>, where <code>[k/2]</code> is the integer floor of <code>k/2</code>.
+ * A099510 Triangle, read by rows, of trinomial coefficients arranged so that there are n+1 terms in row n by setting T(n,k) equal to the coefficient of z^k in (1 + 2*z + z^2)^(n-[k/2]), for n&gt;=k&gt;=0, where [k/2] is the integer floor of k/2.
  * @author Georg Fischer
  */
 public class A099510 extends GeneratingFunctionTriangle {

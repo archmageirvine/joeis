@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091135 Number of Dyck paths of semilength <code>n+4</code>, having exactly two long ascents <code>(i.e.</code>, ascents of length at least two).
+ * A091135 Number of Dyck paths of semilength n+4, having exactly two long ascents (i.e., ascents of length at least two).
  * @author Georg Fischer
  */
 public class A091135 extends GeneratingFunctionSequence {

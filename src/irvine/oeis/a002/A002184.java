@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002184 <code>a(n) =</code> least primitive factor of <code>2^(2n+1) - 1</code>.
+ * A002184 a(n) = least primitive factor of 2^(2n+1) - 1.
  * @author Sean A. Irvine
  */
 public class A002184 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329914 Numbers k such that there exist numbers <code>M_k</code> which, when 1 is placed at both ends of <code>M_k</code>, the number <code>M_k</code> is multiplied by k.
+ * A329914 Numbers k such that there exist numbers M_k which, when 1 is placed at both ends of M_k, the number M_k is multiplied by k.
  * @author Georg Fischer
  */
 public class A329914 extends FiniteSequence {

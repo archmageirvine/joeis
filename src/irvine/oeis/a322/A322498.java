@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322498 Number of tilings of a <code>5 X n</code> rectangle using V <code>(2m+1)-ominoes (m &gt;= 0)</code> in standard orientation.
+ * A322498 Number of tilings of a 5 X n rectangle using V (2m+1)-ominoes (m &gt;= 0) in standard orientation.
  * @author Georg Fischer
  */
 public class A322498 extends GeneratingFunctionSequence {

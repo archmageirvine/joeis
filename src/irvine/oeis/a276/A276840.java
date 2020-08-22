@@ -4,7 +4,7 @@ package irvine.oeis.a276;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A276840 Number of permutations of <code>[n]</code> such that for each cycle c the smallest integer interval containing all elements of c has at most six elements.
+ * A276840 Number of permutations of [n] such that for each cycle c the smallest integer interval containing all elements of c has at most six elements.
  * @author Georg Fischer
  */
 public class A276840 extends GeneratingFunctionSequence {

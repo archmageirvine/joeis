@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108262 Second order recursive series having the property that the product of any two adjacent terms equals 4 times a triangular number. That is <code>a(n)*a(n+1)= 4*T(c) = 2c(c+1)</code>, where c = the term <code>a(n+1)</code> of related series <code>A108261</code>.
+ * A108262 Second order recursive series having the property that the product of any two adjacent terms equals 4 times a triangular number. That is a(n)*a(n+1)= 4*T(c) = 2c(c+1), where c = the term a(n+1) of related series A108261.
  * @author Georg Fischer
  */
 public class A108262 extends HolonomicRecurrence {

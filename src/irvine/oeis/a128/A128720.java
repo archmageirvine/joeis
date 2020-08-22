@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128720 Number of paths in the first quadrant from <code>(0,0)</code> to <code>(n,0)</code> using steps <code>U=(1,1), D=(1,-1), h=(1,0)</code> and <code>H=(2,0)</code>.
+ * A128720 Number of paths in the first quadrant from (0,0) to (n,0) using steps U=(1,1), D=(1,-1), h=(1,0) and H=(2,0).
  * @author Georg Fischer
  */
 public class A128720 extends HolonomicRecurrence {

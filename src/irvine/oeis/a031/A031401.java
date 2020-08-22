@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A031401 Period of continued fraction for <code>sqrt(A031400(n))</code>.
+ * A031401 Period of continued fraction for sqrt(A031400(n)).
  * @author Sean A. Irvine
  */
 public class A031401 extends A003285 {

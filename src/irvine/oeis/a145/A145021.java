@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A145021 <code>a(n) =</code> number of different positive integers that can be formed from different groupings of expressions of the form <code>n op1 n op2 n op3</code> n, where each of <code>op1, op2</code> and <code>op3</code> are addition, subtraction, multiplication or division.
+ * A145021 a(n) = number of different positive integers that can be formed from different groupings of expressions of the form n op1 n op2 n op3 n, where each of op1, op2 and op3 are addition, subtraction, multiplication or division.
  * @author Georg Fischer
  */
 public class A145021 extends PaddingSequence {

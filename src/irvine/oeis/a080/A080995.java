@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A080995 Characteristic function of generalized pentagonal numbers <code>A001318</code>.
+ * A080995 Characteristic function of generalized pentagonal numbers A001318.
  * @author Georg Fischer
  */
 public class A080995 extends EulerTransform {

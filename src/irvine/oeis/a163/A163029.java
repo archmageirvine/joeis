@@ -5,7 +5,7 @@ package irvine.oeis.a163;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A163029 Number of <code>n X 3</code> binary arrays with all <code>1</code>'s connected and a path of <code>1</code>'s from top row to bottom row.
+ * A163029 Number of n X 3 binary arrays with all 1's connected and a path of 1's from top row to bottom row.
  * @author Georg Fischer
  */
 public class A163029 extends HolonomicRecurrence {

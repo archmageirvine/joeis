@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032447 Inverse function of <code>phi( )</code>.
+ * A032447 Inverse function of phi( ).
  * @author Sean A. Irvine
  */
 public class A032447 implements Sequence {

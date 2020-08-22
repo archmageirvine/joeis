@@ -6,7 +6,7 @@ package irvine.oeis.a218;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218184 Number of true entries in truth tables of bracketed formulas connected by modified implication (case <code>1)</code>.
+ * A218184 Number of true entries in truth tables of bracketed formulas connected by modified implication (case 1).
  * @author Georg Fischer
  */
 public class A218184 extends HolonomicRecurrence {

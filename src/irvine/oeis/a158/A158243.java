@@ -6,7 +6,7 @@ package irvine.oeis.a158;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A158243 Derangements with at least one <code>2-cycle</code>.
+ * A158243 Derangements with at least one 2-cycle.
  * @author Georg Fischer
  */
 public class A158243 extends HolonomicRecurrence {

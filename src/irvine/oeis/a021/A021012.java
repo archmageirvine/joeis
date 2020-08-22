@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A021012 Triangle of coefficients in expansion of <code>x^n</code> in terms of Laguerre polynomials <code>L_n(x)</code>.
+ * A021012 Triangle of coefficients in expansion of x^n in terms of Laguerre polynomials L_n(x).
  * @author Sean A. Irvine
  */
 public class A021012 implements Sequence {

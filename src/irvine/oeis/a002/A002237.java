@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002237 Numbers n such that <code>15*2^n-1</code> is prime.
+ * A002237 Numbers n such that 15*2^n-1 is prime.
  * @author Sean A. Irvine
  */
 public class A002237 implements Sequence {

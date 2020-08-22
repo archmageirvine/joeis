@@ -5,7 +5,7 @@ package irvine.oeis.a036;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A036765 Number of ordered rooted trees with <code>n non-root</code> nodes and all outdegrees <code>&lt;=</code> three.
+ * A036765 Number of ordered rooted trees with n non-root nodes and all outdegrees &lt;= three.
  * @author Georg Fischer
  */
 public class A036765 extends HolonomicRecurrence {

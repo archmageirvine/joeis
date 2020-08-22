@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140147 <code>a(1)=1, a(n)=a(n-1)+n^1</code> if n odd, <code>a(n)=a(n-1)+ n^5</code> if n is even.
+ * A140147 a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^5 if n is even.
  * @author Georg Fischer
  */
 public class A140147 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027102 <code>a(n) =</code> greatest number in row n of array T given by <code>A027082</code>.
+ * A027102 a(n) = greatest number in row n of array T given by A027082.
  * @author Sean A. Irvine
  */
 public class A027102 extends A027082 {

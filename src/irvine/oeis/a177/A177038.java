@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177038 Decimal expansion of <code>(195+sqrt(65029))/314</code>.
+ * A177038 Decimal expansion of (195+sqrt(65029))/314.
  * @author Georg Fischer
  */
 public class A177038 extends DecimalExpansionSequence {

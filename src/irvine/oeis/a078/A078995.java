@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078995 <code>a(n) = Sum_{k=0..n} C(4*k,k)*C(4*(n-k),n-k)</code>.
+ * A078995 a(n) = Sum_{k=0..n} C(4*k,k)*C(4*(n-k),n-k).
  * @author Georg Fischer
  */
 public class A078995 extends HolonomicRecurrence {

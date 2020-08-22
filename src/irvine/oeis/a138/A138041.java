@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A138041 <code>a(1) = 1, a(2) = 10;</code> for <code>n&gt;2, a(n+1) = 4*a(n) + 6*a(n-1)</code>. Also <code>a(n) =</code> upper left term in the <code>2 X 2</code> matrix <code>[1,3; 3,3]</code>.
+ * A138041 a(1) = 1, a(2) = 10; for n&gt;2, a(n+1) = 4*a(n) + 6*a(n-1). Also a(n) = upper left term in the 2 X 2 matrix [1,3; 3,3].
  * @author Sean A. Irvine
  */
 public class A138041 extends LinearRecurrence {

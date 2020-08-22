@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215191 Number of arrays of <code>4 0..n</code> integers with no sum of consecutive elements equal to a disjoint adjacent sum of an equal number of elements.
+ * A215191 Number of arrays of 4 0..n integers with no sum of consecutive elements equal to a disjoint adjacent sum of an equal number of elements.
  * @author Georg Fischer
  */
 public class A215191 extends GeneratingFunctionSequence {

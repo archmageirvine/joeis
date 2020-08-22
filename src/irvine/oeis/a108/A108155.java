@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108155 Numbers of the forms <code>2^n-2, 2^n-1, 2^n, 2^n+1</code> and <code>2^n+2</code>.
+ * A108155 Numbers of the forms 2^n-2, 2^n-1, 2^n, 2^n+1 and 2^n+2.
  * @author Georg Fischer
  */
 public class A108155 extends HolonomicRecurrence {

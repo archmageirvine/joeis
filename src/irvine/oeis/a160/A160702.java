@@ -5,7 +5,7 @@ package irvine.oeis.a160;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160702 Sequence such that the Hankel transform of <code>a(n+1)</code> satisfies a generalized <code>Somos-4</code> recurrence.
+ * A160702 Sequence such that the Hankel transform of a(n+1) satisfies a generalized Somos-4 recurrence.
  * @author Georg Fischer
  */
 public class A160702 extends HolonomicRecurrence {

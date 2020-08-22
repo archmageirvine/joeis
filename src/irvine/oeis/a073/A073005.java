@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A073005 Decimal expansion of <code>Gamma(1/3)</code>.
+ * A073005 Decimal expansion of Gamma(1/3).
  * @author Sean A. Irvine
  */
 public class A073005 extends DecimalExpansionSequence {

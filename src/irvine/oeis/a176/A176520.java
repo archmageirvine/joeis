@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176520 Decimal expansion of <code>(63+3*sqrt(469))/14</code>.
+ * A176520 Decimal expansion of (63+3*sqrt(469))/14.
  * @author Georg Fischer
  */
 public class A176520 extends DecimalExpansionSequence {

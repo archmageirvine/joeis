@@ -6,7 +6,7 @@ package irvine.oeis.a128;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A128730 Number of UDL's in all skew Dyck paths of semilength <code>n</code>.
+ * A128730 Number of UDL's in all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A128730 extends HolonomicRecurrence {

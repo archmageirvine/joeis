@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A190188 <code>a(n) = [n*u+n*v]-[n*u]-[n*v]</code>, where <code>u=e, v=1/e</code>, and <code>[]=floor</code>.
+ * A190188 a(n) = [n*u+n*v]-[n*u]-[n*v], where u=e, v=1/e, and []=floor.
  * @author Georg Fischer
  */
 public class A190188 implements Sequence {

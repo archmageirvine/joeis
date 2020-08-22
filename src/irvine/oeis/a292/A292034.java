@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292034 Linear divisibility sequence based on Salem number of order <code>4</code> (case <code>t=6</code>, see formula).
+ * A292034 Linear divisibility sequence based on Salem number of order 4 (case t=6, see formula).
  * @author Georg Fischer
  */
 public class A292034 extends GeneratingFunctionSequence {

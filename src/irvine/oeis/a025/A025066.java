@@ -4,7 +4,7 @@ import irvine.oeis.HalfConvolutionSequence;
 import irvine.oeis.a023.A023532;
 
 /**
- * A025066 <code>a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1)</code>, where k <code>= [ n/2 ]</code> and s <code>= A023532</code>.
+ * A025066 a(n) = s(1)s(n) + s(2)s(n-1) + ... + s(k)s(n-k+1), where k = [ n/2 ] and s = A023532.
  * @author Sean A. Irvine
  */
 public class A025066 extends HalfConvolutionSequence {

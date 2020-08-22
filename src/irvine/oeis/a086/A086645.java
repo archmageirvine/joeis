@@ -6,7 +6,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A086645 Triangle read by rows: <code>T(n, k) = binomial(2n, 2k)</code>.
+ * A086645 Triangle read by rows: T(n, k) = binomial(2n, 2k).
  * @author Georg Fischer
  */
 public class A086645 extends LatticeCoordinationSequence {

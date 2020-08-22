@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029576 Number of permutations of an n-set containing a <code>9-cycle</code>.
+ * A029576 Number of permutations of an n-set containing a 9-cycle.
  * @author Sean A. Irvine
  */
 public class A029576 implements Sequence {

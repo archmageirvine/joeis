@@ -6,7 +6,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033321 Binomial transform of Fine's sequence <code>A000957: 1, 0, 1, 2, 6, 18, 57, 186, ..</code>.
+ * A033321 Binomial transform of Fine's sequence A000957: 1, 0, 1, 2, 6, 18, 57, 186, ...
  * @author Georg Fischer
  */
 public class A033321 extends HolonomicRecurrence {

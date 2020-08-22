@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A123649 Expansion of <code>c(q^4) / c(q)</code> in powers of q where <code>c()</code> is a cubic AGM theta function.
+ * A123649 Expansion of c(q^4) / c(q) in powers of q where c() is a cubic AGM theta function.
  * @author Georg Fischer
  */
 public class A123649 extends EulerTransform {

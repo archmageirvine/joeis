@@ -1,7 +1,7 @@
 package irvine.oeis.a000;
 
 /**
- * A000729 Expansion of <code>Product_{k &gt;= 1} (1 - x^k)^6</code>.
+ * A000729 Expansion of Product_{k &gt;= 1} (1 - x^k)^6.
  * @author Sean A. Irvine
  */
 public class A000729 extends A000727 {

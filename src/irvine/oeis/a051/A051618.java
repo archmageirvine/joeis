@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051618 <code>a(n) = (4*n+6)(!^4)/6(!^4)</code>.
+ * A051618 a(n) = (4*n+6)(!^4)/6(!^4).
  * @author Georg Fischer
  */
 public class A051618 extends HolonomicRecurrence {

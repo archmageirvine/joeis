@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003137;
 
 /**
- * A030337 Length of n-th run of digit 1 in <code>A003137</code>.
+ * A030337 Length of n-th run of digit 1 in A003137.
  * @author Sean A. Irvine
  */
 public class A030337 extends A003137 {

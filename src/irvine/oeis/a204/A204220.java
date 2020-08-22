@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A204220 Expansion of <code>f(-x^2, -x^3) * f(-x^2, -x^4) / f(-x, -x^2)</code> in powers of x where <code>f(, )</code> is Ramanujan's general theta function.
+ * A204220 Expansion of f(-x^2, -x^3) * f(-x^2, -x^4) / f(-x, -x^2) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A204220 extends EulerTransform {

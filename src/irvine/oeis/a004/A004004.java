@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004004 <code>a(n) = (3^{2n+1} - 8*n - 3)/16</code>.
+ * A004004 a(n) = (3^{2n+1} - 8*n - 3)/16.
  * @author Sean A. Irvine
  */
 public class A004004 extends MemorySequence {

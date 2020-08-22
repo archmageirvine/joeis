@@ -5,7 +5,7 @@ package irvine.oeis.a288;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A288484 Numbers k such that <code>(298*10^k - 7)/3</code> is prime.
+ * A288484 Numbers k such that (298*10^k - 7)/3 is prime.
  * @author Georg Fischer
  */
 public class A288484 extends PowerFactorPrimeSequence {

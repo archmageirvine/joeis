@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032250 <code>"DHK[ n ](2n)" (bracelet</code>, identity, unlabeled, n parts, evaluated at 2n) transform of 1,1,1,1,...
+ * A032250 "DHK[ n ](2n)" (bracelet, identity, unlabeled, n parts, evaluated at 2n) transform of 1,1,1,1,...
  * @author Sean A. Irvine
  */
 public class A032250 implements Sequence {

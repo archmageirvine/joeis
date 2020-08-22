@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004785 <code>5!(2n-6)!/n!(n-1)!</code> is an integer.
+ * A004785 5!(2n-6)!/n!(n-1)! is an integer.
  * @author Sean A. Irvine
  */
 public class A004785 implements Sequence {

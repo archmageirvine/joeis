@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138437 <code>a(n) = ((n-th prime)^5-(n-th prime)^3)/12</code>.
+ * A138437 a(n) = ((n-th prime)^5-(n-th prime)^3)/12.
  * @author Georg Fischer
  */
 public class A138437 extends A000040 {

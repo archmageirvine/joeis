@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A189889 Maximum number of nonattacking kings on an <code>n X n</code> toroidal board.
+ * A189889 Maximum number of nonattacking kings on an n X n toroidal board.
  * @author Georg Fischer
  */
 public class A189889 extends GeneratingFunctionSequence {

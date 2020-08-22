@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057138 Add <code>(n mod 10)*10^(n-1)</code> to the previous term, with <code>a(0) = 0</code>.
+ * A057138 Add (n mod 10)*10^(n-1) to the previous term, with a(0) = 0.
  * @author Georg Fischer
  */
 public class A057138 extends GeneratingFunctionSequence {

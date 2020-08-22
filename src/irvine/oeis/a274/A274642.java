@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274642 Numbers of the form <code>4^k*(8*j+7)</code> that have exactly three partitions into four positive squares.
+ * A274642 Numbers of the form 4^k*(8*j+7) that have exactly three partitions into four positive squares.
  * @author Georg Fischer
  */
 public class A274642 extends GeneratingFunctionSequence {

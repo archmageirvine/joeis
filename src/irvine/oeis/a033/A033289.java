@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033289 Odd Power Perfect numbers: <code>opsigma(n) = 2*n</code>.
+ * A033289 Odd Power Perfect numbers: opsigma(n) = 2*n.
  * @author Sean A. Irvine
  */
 public class A033289 extends A033634 {

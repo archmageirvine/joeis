@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002426;
 
 /**
- * A007987 Number of irreducible words of length <code>2n</code> in the free group with generators x,y such that the total degree of x and the total degree of y both equal zero.
+ * A007987 Number of irreducible words of length 2n in the free group with generators x,y such that the total degree of x and the total degree of y both equal zero.
  * @author Sean A. Irvine
  */
 public class A007987 extends A002426 {

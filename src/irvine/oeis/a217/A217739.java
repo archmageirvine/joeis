@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A217739 Decimal expansion of <code>8/Pi^2</code>.
+ * A217739 Decimal expansion of 8/Pi^2.
  * @author Georg Fischer
  */
 public class A217739 extends DecimalExpansionSequence {

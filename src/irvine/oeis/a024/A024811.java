@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024811 <code>a(n) = [ tan(m*pi/2) ]</code>, where m <code>= 1 - 1/n</code>.
+ * A024811 a(n) = [ tan(m*pi/2) ], where m = 1 - 1/n.
  * @author Sean A. Irvine
  */
 public class A024811 implements Sequence {

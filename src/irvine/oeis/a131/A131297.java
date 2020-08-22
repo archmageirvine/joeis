@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A131297 <code>a(n) = ds_11(a(n-1))+ds_11(a(n-2)), a(0)=0, a(1)=1;</code> where <code>ds_11=digital</code> sum base 11.
+ * A131297 a(n) = ds_11(a(n-1))+ds_11(a(n-2)), a(0)=0, a(1)=1; where ds_11=digital sum base 11.
  * @author Georg Fischer
  */
 public class A131297 extends PaddingSequence {

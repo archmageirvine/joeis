@@ -6,7 +6,7 @@ package irvine.oeis.a210;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A210670 Central coefficients of triangle <code>A210658</code>.
+ * A210670 Central coefficients of triangle A210658.
  * @author Georg Fischer
  */
 public class A210670 extends HolonomicRecurrence {

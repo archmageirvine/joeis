@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178795 Expansion of the polynomial <code>(x^15-1)*(x^12-1)*(x^10-1)*(x^9-1)*(x^7-1)*(x^6-1)*(x^4-1)*(x-1)</code> in increasing powers of <code>x</code>.
+ * A178795 Expansion of the polynomial (x^15-1)*(x^12-1)*(x^10-1)*(x^9-1)*(x^7-1)*(x^6-1)*(x^4-1)*(x-1) in increasing powers of x.
  * @author Georg Fischer
  */
 public class A178795 extends FiniteSequence {

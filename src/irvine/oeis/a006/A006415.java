@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006415 Nonseparable toroidal tree-rooted maps with <code>n + 3</code> edges and <code>n + 1</code> vertices.
+ * A006415 Nonseparable toroidal tree-rooted maps with n + 3 edges and n + 1 vertices.
  * @author Sean A. Irvine
  */
 public class A006415 implements Sequence {

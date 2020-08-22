@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A128617 Expansion of <code>q^2 * psi(q) * psi(q^15)</code> in powers of q where <code>psi()</code> is a Ramanujan theta function.
+ * A128617 Expansion of q^2 * psi(q) * psi(q^15) in powers of q where psi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A128617 extends EulerTransform {

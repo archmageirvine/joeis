@@ -5,7 +5,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080522 Leading diagonal of triangle in <code>A080521</code>.
+ * A080522 Leading diagonal of triangle in A080521.
  * @author Georg Fischer
  */
 public class A080522 extends HolonomicRecurrence {

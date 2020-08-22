@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283958 <code>a(n) = (Sum_{j=1..h-1} a(n-j) + a(n-1)*a(n-h+1))/a(n-h)</code> with <code>a(1)</code>, ..., <code>a(h)=1</code>, where h <code>= 4</code>.
+ * A283958 a(n) = (Sum_{j=1..h-1} a(n-j) + a(n-1)*a(n-h+1))/a(n-h) with a(1), ..., a(h)=1, where h = 4.
  * @author Georg Fischer
  */
 public class A283958 extends GeneratingFunctionSequence {

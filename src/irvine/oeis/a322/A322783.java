@@ -5,7 +5,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322783 <code>a(n) = 1 - n + (2^(n+2) - (-1)^n)/3</code>.
+ * A322783 a(n) = 1 - n + (2^(n+2) - (-1)^n)/3.
  * @author Georg Fischer
  */
 public class A322783 extends HolonomicRecurrence {

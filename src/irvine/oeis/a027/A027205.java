@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026714;
 
 /**
- * A027205 <code>a(n) = Sum_{k=0..n} (k+1) * A026714(n, k)</code>.
+ * A027205 a(n) = Sum_{k=0..n} (k+1) * A026714(n, k).
  * @author Sean A. Irvine
  */
 public class A027205 extends A026714 {

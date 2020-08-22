@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222459 Number of <code>n X 3 0..7</code> arrays with no entry increasing <code>mod 8</code> by 7 rightwards or downwards, starting with upper left zero.
+ * A222459 Number of n X 3 0..7 arrays with no entry increasing mod 8 by 7 rightwards or downwards, starting with upper left zero.
  * @author Georg Fischer
  */
 public class A222459 extends GeneratingFunctionSequence {

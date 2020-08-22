@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A063482 <code>p(n) *</code> last digit of <code>p(n)</code> where <code>p(n)</code> is n-th prime.
+ * A063482 p(n) * last digit of p(n) where p(n) is n-th prime.
  * @author Georg Fischer
  */
 public class A063482 extends A000040 {

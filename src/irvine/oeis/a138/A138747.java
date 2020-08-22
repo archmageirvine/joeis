@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138747 <code>a(n) = 4*a(n-1) - 3*a(n-2) + 2*a(n-3) - 1*a(n-4)</code>.
+ * A138747 a(n) = 4*a(n-1) - 3*a(n-2) + 2*a(n-3) - 1*a(n-4).
  * @author Georg Fischer
  */
 public class A138747 extends GeneratingFunctionSequence {

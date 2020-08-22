@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332348 Number of maximal independent sets in the <code>3 X n</code> king graph.
+ * A332348 Number of maximal independent sets in the 3 X n king graph.
  * @author Georg Fischer
  */
 public class A332348 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A088667 <code>n^4 + 6 mod 10</code>.
+ * A088667 n^4 + 6 mod 10.
  * @author Georg Fischer
  */
 public class A088667 extends PaddingSequence {

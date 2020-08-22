@@ -3,7 +3,7 @@ package irvine.oeis.a286;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A286887 Number of irredundant sets in the path graph <code>P_n</code>.
+ * A286887 Number of irredundant sets in the path graph P_n.
  * @author Sean A. Irvine
  */
 public class A286887 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251769 Numbers n such that the sum of the heptagonal numbers <code>H(n), H(n+1)</code> and <code>H(n+2)</code> is equal to the sum of three consecutive squares.
+ * A251769 Numbers n such that the sum of the heptagonal numbers H(n), H(n+1) and H(n+2) is equal to the sum of three consecutive squares.
  * @author Sean A. Irvine
  */
 public class A251769 extends LinearRecurrence {

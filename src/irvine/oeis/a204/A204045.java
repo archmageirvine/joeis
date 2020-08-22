@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204045 Smallest integer m such that both m and <code>n*m</code> are decimal pandigital numbers <code>(A050278)</code>.
+ * A204045 Smallest integer m such that both m and n*m are decimal pandigital numbers (A050278).
  * @author Georg Fischer
  */
 public class A204045 extends FiniteSequence {

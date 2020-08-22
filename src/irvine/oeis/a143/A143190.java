@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A143190 <code>a(n)</code> is the smallest natural number we cannot obtain from n, <code>n+1, n+2, n+3</code> and the operators <code>+, -, *, /</code>, using each number only once.
+ * A143190 a(n) is the smallest natural number we cannot obtain from n, n+1, n+2, n+3 and the operators +, -, *, /, using each number only once.
  * @author Georg Fischer
  */
 public class A143190 extends PaddingSequence {

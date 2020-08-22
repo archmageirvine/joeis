@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A047076 <code>a(n+1)</code> is the smallest palindromic prime containing exactly 2 more digits on each end than the previous term, with <code>a(n)</code> as a central substring.
+ * A047076 a(n+1) is the smallest palindromic prime containing exactly 2 more digits on each end than the previous term, with a(n) as a central substring.
  * @author Georg Fischer
  */
 public class A047076 extends FiniteSequence {

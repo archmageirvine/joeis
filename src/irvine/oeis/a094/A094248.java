@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094248 Consider <code>3 X 3</code> matrix M <code>= [0 1 0 / 0 0 1 / 5 2 0]; a(n) =</code> the center term in <code>M^n * [1 1 1]</code>.
+ * A094248 Consider 3 X 3 matrix M = [0 1 0 / 0 0 1 / 5 2 0]; a(n) = the center term in M^n * [1 1 1].
  * @author Georg Fischer
  */
 public class A094248 extends HolonomicRecurrence {

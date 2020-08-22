@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073320 <code>A073259(n)=3</code>: the length of iteration transient leading to n-th composite number equals 3.
+ * A073320 A073259(n)=3: the length of iteration transient leading to n-th composite number equals 3.
  * @author Georg Fischer
  */
 public class A073320 extends FiniteSequence {

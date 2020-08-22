@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A085677 Decimal expansion of <code>-cos(10^50)</code>.
+ * A085677 Decimal expansion of -cos(10^50).
  * @author Georg Fischer
  */
 public class A085677 extends DecimalExpansionSequence {

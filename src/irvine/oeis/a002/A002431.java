@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.BernoulliSequence;
 
 /**
- * A002431 Numerators in Taylor series for cot <code>x</code>.
+ * A002431 Numerators in Taylor series for cot x.
  * @author Sean A. Irvine
  */
 public class A002431 implements Sequence {

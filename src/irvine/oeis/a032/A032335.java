@@ -5,7 +5,7 @@ import irvine.oeis.ChjTransformSequence;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032335 Shifts left 2 places under "CHJ" <code>(necklace</code>, identity, labeled) transform.
+ * A032335 Shifts left 2 places under "CHJ" (necklace, identity, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032335 extends MemorySequence {

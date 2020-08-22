@@ -5,7 +5,7 @@ package irvine.oeis.a158;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A158938 Numbers congruent to <code>{-3,7,9,11,13,23,25,27} mod 64</code>.
+ * A158938 Numbers congruent to {-3,7,9,11,13,23,25,27} mod 64.
  * @author Georg Fischer
  */
 public class A158938 extends HolonomicRecurrence {

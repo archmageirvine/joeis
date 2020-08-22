@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A032592 Initial terms of <code>'4-block'</code> primes as described in <code>A032591</code>.
+ * A032592 Initial terms of '4-block' primes as described in A032591.
  * @author Sean A. Irvine
  */
 public class A032592 extends A000040 {

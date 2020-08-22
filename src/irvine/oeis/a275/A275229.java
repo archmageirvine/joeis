@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275229 Number of <code>3 X n 0..2</code> arrays with no element equal to any value at offset <code>(-2,-1) (-2,1)</code> or <code>(-1,0)</code> and new values introduced in order 0..2.
+ * A275229 Number of 3 X n 0..2 arrays with no element equal to any value at offset (-2,-1) (-2,1) or (-1,0) and new values introduced in order 0..2.
  * @author Georg Fischer
  */
 public class A275229 extends GeneratingFunctionSequence {

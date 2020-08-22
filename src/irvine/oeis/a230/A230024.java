@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A230024 Final nonzero digit of <code>n^n</code> in base 16.
+ * A230024 Final nonzero digit of n^n in base 16.
  * @author Georg Fischer
  */
 public class A230024 extends PaddingSequence {

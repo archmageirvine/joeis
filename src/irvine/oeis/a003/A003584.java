@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003584 Unicursal <code>(i.e.</code>, possessing an Eulerian path) planar rooted maps with n edges.
+ * A003584 Unicursal (i.e., possessing an Eulerian path) planar rooted maps with n edges.
  * @author Sean A. Irvine
  */
 public class A003584 implements Sequence {

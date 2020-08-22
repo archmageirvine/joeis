@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a008.A008364;
 
 /**
- * A049296 First differences of <code>A008364</code>. Also first differences of reduced residue system (RRS) for 4th primorial number, <code>A002110(4)=210</code>.
+ * A049296 First differences of A008364. Also first differences of reduced residue system (RRS) for 4th primorial number, A002110(4)=210.
  * @author Georg Fischer
  */
 public class A049296 extends DifferenceSequence {

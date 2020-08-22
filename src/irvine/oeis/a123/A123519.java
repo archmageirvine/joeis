@@ -7,7 +7,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A123519 Triangle read by rows: <code>T(n,k)</code> number of tilings of a <code>2n X 3</code> grid by dominoes, <code>2k</code> of which are in a vertical position <code>(0&lt;=k&lt;=n)</code>.
+ * A123519 Triangle read by rows: T(n,k) number of tilings of a 2n X 3 grid by dominoes, 2k of which are in a vertical position (0&lt;=k&lt;=n).
  * @author Georg Fischer
  */
 public class A123519 extends GeneratingFunctionTriangle {

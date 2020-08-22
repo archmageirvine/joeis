@@ -6,7 +6,7 @@ package irvine.oeis.a301;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A301271 Expansion of <code>(1-16*x)^(1/8)</code>.
+ * A301271 Expansion of (1-16*x)^(1/8).
  * @author Georg Fischer
  */
 public class A301271 extends HolonomicRecurrence {

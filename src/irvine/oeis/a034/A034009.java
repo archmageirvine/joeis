@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034009 Convolution of <code>A000295(n+2) (n&gt;=0)</code> with itself.
+ * A034009 Convolution of A000295(n+2) (n&gt;=0) with itself.
  * @author Georg Fischer
  */
 public class A034009 extends GeneratingFunctionSequence {

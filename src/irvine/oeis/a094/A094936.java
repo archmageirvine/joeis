@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A094936 Decimal expansion of <code>2/(Pi*e)</code>.
+ * A094936 Decimal expansion of 2/(Pi*e).
  * @author Georg Fischer
  */
 public class A094936 extends DecimalExpansionSequence {

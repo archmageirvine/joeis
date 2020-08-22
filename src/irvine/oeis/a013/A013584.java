@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013584 Smallest m such that <code>0!+1!+...+(m-1)!</code> is divisible by n, or 0 if no such m exists.
+ * A013584 Smallest m such that 0!+1!+...+(m-1)! is divisible by n, or 0 if no such m exists.
  * @author Sean A. Irvine
  */
 public class A013584 implements Sequence {

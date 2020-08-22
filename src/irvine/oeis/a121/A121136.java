@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121136 Numbers of isomers of unbranched <code>a-4-catapolypentagons -</code> see Brunvoll reference for precise definition.
+ * A121136 Numbers of isomers of unbranched a-4-catapolypentagons - see Brunvoll reference for precise definition.
  * @author Georg Fischer
  */
 public class A121136 extends GeneratingFunctionSequence {

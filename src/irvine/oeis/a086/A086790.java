@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086790 <code>a(n) = floor((1+n+2*n^2+4*n^3)/(1+2*n+n^2))</code>.
+ * A086790 a(n) = floor((1+n+2*n^2+4*n^3)/(1+2*n+n^2)).
  * @author Georg Fischer
  */
 public class A086790 extends HolonomicRecurrence {

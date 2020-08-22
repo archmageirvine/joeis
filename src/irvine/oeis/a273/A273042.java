@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273042 Numbers k such that <code>(28*10^k + 191)/3</code> is prime.
+ * A273042 Numbers k such that (28*10^k + 191)/3 is prime.
  * @author Georg Fischer
  */
 public class A273042 extends PowerFactorPrimeSequence {

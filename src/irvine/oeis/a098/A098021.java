@@ -7,7 +7,7 @@ import irvine.oeis.a187.A187967;
 
 
 /**
- * A098021 Positions of <code>0</code>'s in the zero-one sequence <code>[nr+2r]-[nr]-[2r]</code>, where <code>r=sqrt(2)</code> and <code>[ ]=floor;</code> see <code>A187967</code>.
+ * A098021 Positions of 0's in the zero-one sequence [nr+2r]-[nr]-[2r], where r=sqrt(2) and [ ]=floor; see A187967.
  * @author Georg Fischer
  */
 public class A098021 extends PositionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200890 Number of <code>0..n</code> arrays <code>x(0..6)</code> of 7 elements without any interior element greater than both neighbors.
+ * A200890 Number of 0..n arrays x(0..6) of 7 elements without any interior element greater than both neighbors.
  * @author Georg Fischer
  */
 public class A200890 extends GeneratingFunctionSequence {

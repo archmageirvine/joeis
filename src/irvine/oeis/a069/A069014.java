@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A069014 Integers n at which the difference between <code>e^(Pi*sqrt(n))</code> and its nearest integer is a new minimum.
+ * A069014 Integers n at which the difference between e^(Pi*sqrt(n)) and its nearest integer is a new minimum.
  * @author Sean A. Irvine
  */
 public class A069014 implements Sequence {

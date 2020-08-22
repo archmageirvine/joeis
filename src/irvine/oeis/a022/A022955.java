@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022955 Unique increasing sequence satisfying <code>a(n) = a(n-3) + c(n-3);</code> where <code>c( )</code> is complement of <code>a( )</code>.
+ * A022955 Unique increasing sequence satisfying a(n) = a(n-3) + c(n-3); where c( ) is complement of a( ).
  * @author Sean A. Irvine
  */
 public class A022955 implements Sequence {

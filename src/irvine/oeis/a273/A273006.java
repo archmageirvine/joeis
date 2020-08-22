@@ -5,7 +5,7 @@ package irvine.oeis.a273;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A273006 Numbers k such that <code>88*10^k + 3</code> is prime.
+ * A273006 Numbers k such that 88*10^k + 3 is prime.
  * @author Georg Fischer
  */
 public class A273006 extends PowerFactorPrimeSequence {

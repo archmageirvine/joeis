@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A164105 Decimal expansion of <code>Pi^3/6</code>.
+ * A164105 Decimal expansion of Pi^3/6.
  * @author Georg Fischer
  */
 public class A164105 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001176 Number of zeros in fundamental period of Fibonacci numbers <code>mod n</code>.
+ * A001176 Number of zeros in fundamental period of Fibonacci numbers mod n.
  * @author Sean A. Irvine
  */
 public class A001176 implements Sequence {

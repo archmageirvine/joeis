@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050555 Numbers n such that <code>59*2^n-1</code> is prime.
+ * A050555 Numbers n such that 59*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050555 extends PowerFactorPrimeSequence {

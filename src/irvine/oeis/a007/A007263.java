@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007263 Coefficients of completely replicable function <code>"6d"</code>.
+ * A007263 Coefficients of completely replicable function "6d".
  * @author Sean A. Irvine
  */
 public class A007263 implements Sequence {

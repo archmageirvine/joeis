@@ -6,7 +6,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060895 <code>n^16 + 1</code>.
+ * A060895 n^16 + 1.
  * @author Georg Fischer
  */
 public class A060895 extends GeneratingFunctionSequence {

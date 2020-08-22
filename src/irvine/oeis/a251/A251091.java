@@ -3,7 +3,7 @@ package irvine.oeis.a251;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A251091 <code>a(n) = n^2 / gcd(n+2, 4)</code>.
+ * A251091 a(n) = n^2 / gcd(n+2, 4).
  * @author Sean A. Irvine
  */
 public class A251091 extends LinearRecurrence {

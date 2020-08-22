@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029719 Theta series of odd <code>8-dimensional 5-modular</code> lattice <code>O(5)</code>.
+ * A029719 Theta series of odd 8-dimensional 5-modular lattice O(5).
  * @author Sean A. Irvine
  */
 public class A029719 extends GramMatrixThetaSeries {

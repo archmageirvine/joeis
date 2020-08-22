@@ -7,7 +7,7 @@ import irvine.util.array.LongDynamicByteArray;
 import irvine.util.string.StringUtils;
 
 /**
- * A025282 Smallest number requiring n Fibonacci numbers to build using + and <code>*</code>.
+ * A025282 Smallest number requiring n Fibonacci numbers to build using + and *.
  * @author Sean A. Irvine
  */
 public class A025282 implements Sequence {

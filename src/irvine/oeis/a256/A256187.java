@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a004.A004718;
 
 /**
- * A256187 First differences of Per N\u00f8rg\u00e5rd's "infinity sequence" <code>A004718</code>.
+ * A256187 First differences of Per N\u00f8rg\u00e5rd's "infinity sequence" A004718.
  * @author Georg Fischer
  */
 public class A256187 extends DifferenceSequence {

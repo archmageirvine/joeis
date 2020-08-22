@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008288;
 
 /**
- * A026001 <code>a(n) = T(3n,n)</code>, where T = Delannoy triangle <code>(A008288)</code>.
+ * A026001 a(n) = T(3n,n), where T = Delannoy triangle (A008288).
  * @author Sean A. Irvine
  */
 public class A026001 extends A008288 {

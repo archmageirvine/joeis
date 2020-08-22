@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130216 <code>a(0) = 3; a(n) = a(n-1) +</code> (number of multiples of 3 so far in the sequence).
+ * A130216 a(0) = 3; a(n) = a(n-1) + (number of multiples of 3 so far in the sequence).
  * @author Georg Fischer
  */
 public class A130216 extends GeneratingFunctionSequence {

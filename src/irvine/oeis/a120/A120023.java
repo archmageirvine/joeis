@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A120023 Numbers n such that <code>2*6^n+1</code> is prime.
+ * A120023 Numbers n such that 2*6^n+1 is prime.
  * @author Georg Fischer
  */
 public class A120023 extends PowerFactorPrimeSequence {

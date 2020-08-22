@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028476 Greatest k such that <code>phi(k) = phi(n)</code>, where phi is Euler's totient function.
+ * A028476 Greatest k such that phi(k) = phi(n), where phi is Euler's totient function.
  * @author Sean A. Irvine
  */
 public class A028476 implements Sequence {

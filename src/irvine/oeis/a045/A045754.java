@@ -6,7 +6,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045754 7-fold factorials: <code>a(n) = Product_{k=0..n-1} (7*k+1)</code>.
+ * A045754 7-fold factorials: a(n) = Product_{k=0..n-1} (7*k+1).
  * @author Georg Fischer
  */
 public class A045754 extends HolonomicRecurrence {

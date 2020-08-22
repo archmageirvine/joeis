@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181192 Number of <code>n X 5</code> matrices containing a permutation of <code>1..n*5</code> in increasing order rowwise, columnwise, diagonally and (downwards) antidiagonally.
+ * A181192 Number of n X 5 matrices containing a permutation of 1..n*5 in increasing order rowwise, columnwise, diagonally and (downwards) antidiagonally.
  * @author Georg Fischer
  */
 public class A181192 extends GeneratingFunctionSequence {

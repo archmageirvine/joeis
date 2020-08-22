@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A008837 <code>a(n) = p*(p-1)/2</code> for p <code>= prime(n)</code>.
+ * A008837 a(n) = p*(p-1)/2 for p = prime(n).
  * @author Sean A. Irvine
  */
 public class A008837 extends A000040 {

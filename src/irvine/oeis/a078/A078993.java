@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078993 Starting at the chess position shown, <code>a(n)</code> is the number of ways Black can make n consecutive moves, followed by a checkmate in one move by White.
+ * A078993 Starting at the chess position shown, a(n) is the number of ways Black can make n consecutive moves, followed by a checkmate in one move by White.
  * @author Georg Fischer
  */
 public class A078993 extends HolonomicRecurrence {

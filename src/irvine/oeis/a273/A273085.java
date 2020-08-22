@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A273085 Prime divisors of <code>68^112 - 1</code>, listed with multiplicities.
+ * A273085 Prime divisors of 68^112 - 1, listed with multiplicities.
  * @author Georg Fischer
  */
 public class A273085 extends FiniteSequence {

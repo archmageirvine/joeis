@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171091 Digits in the order in which they appear in the fractional part of the decimal expansion of <code>Pi</code>.
+ * A171091 Digits in the order in which they appear in the fractional part of the decimal expansion of Pi.
  * @author Georg Fischer
  */
 public class A171091 extends FiniteSequence {

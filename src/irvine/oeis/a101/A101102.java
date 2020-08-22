@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101102 Fifth partial sums of cubes <code>(A000578)</code>.
+ * A101102 Fifth partial sums of cubes (A000578).
  * @author Sean A. Irvine
  */
 public class A101102 extends LinearRecurrence {

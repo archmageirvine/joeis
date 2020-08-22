@@ -6,7 +6,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216696 <code>a(n) = Sum_{k=0..n} binomial(n,k)^4 * 2^k</code>.
+ * A216696 a(n) = Sum_{k=0..n} binomial(n,k)^4 * 2^k.
  * @author Georg Fischer
  */
 public class A216696 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001935;
 
 /**
- * A014605 Partial sums of <code>A001935;</code> at one time this was conjectured to agree with <code>A007478</code>.
+ * A014605 Partial sums of A001935; at one time this was conjectured to agree with A007478.
  * @author Sean A. Irvine
  */
 public class A014605 extends PartialSumSequence {

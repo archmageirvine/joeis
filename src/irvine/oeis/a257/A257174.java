@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257174 <code>a(n) = 4*n/3</code> if <code>n = 3*k</code> and <code>n!=0</code>, otherwise <code>a(n) = n</code> except <code>a(0) = 1</code>.
+ * A257174 a(n) = 4*n/3 if n = 3*k and n!=0, otherwise a(n) = n except a(0) = 1.
  * @author Georg Fischer
  */
 public class A257174 extends GeneratingFunctionSequence {

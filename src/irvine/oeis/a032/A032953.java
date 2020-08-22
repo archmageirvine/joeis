@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032953 Numbers n such that base 3 representation <code>Sum{d(i)*3^i: i=0,1,...,m}</code> has even <code>d(i)</code> for all odd i.
+ * A032953 Numbers n such that base 3 representation Sum{d(i)*3^i: i=0,1,...,m} has even d(i) for all odd i.
  * @author Sean A. Irvine
  */
 public class A032953 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253879 Indices of centered heptagonal numbers <code>(A069099)</code> which are also triangular numbers <code>(A000217)</code>.
+ * A253879 Indices of centered heptagonal numbers (A069099) which are also triangular numbers (A000217).
  * @author Sean A. Irvine
  */
 public class A253879 extends LinearRecurrence {

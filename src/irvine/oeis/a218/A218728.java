@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218728 <code>a(n) = (25^n-1)/24</code>.
+ * A218728 a(n) = (25^n-1)/24.
  * @author Sean A. Irvine
  */
 public class A218728 extends LinearRecurrence {

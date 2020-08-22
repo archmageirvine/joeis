@@ -6,7 +6,7 @@ package irvine.oeis.a221;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A221058 Number of inversions in all Dyck prefixes of length <code>n</code>.
+ * A221058 Number of inversions in all Dyck prefixes of length n.
  * @author Georg Fischer
  */
 public class A221058 extends HolonomicRecurrence {

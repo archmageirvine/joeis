@@ -4,7 +4,7 @@ package irvine.oeis.a061;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A061184 Fifth <code>(m=4)</code> column of triangle <code>A060921</code> (bisection of Fibonacci triangle, odd part).
+ * A061184 Fifth (m=4) column of triangle A060921 (bisection of Fibonacci triangle, odd part).
  * @author Georg Fischer
  */
 public class A061184 extends GeneratingFunctionSequence {

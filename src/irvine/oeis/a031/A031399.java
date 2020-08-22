@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003814;
 
 /**
- * A031399 Numbers n with no <code>4k+3</code> factors such that Pell equation <code>x^2 - n y^2 = -1</code> insoluble.
+ * A031399 Numbers n with no 4k+3 factors such that Pell equation x^2 - n y^2 = -1 insoluble.
  * @author Sean A. Irvine
  */
 public class A031399 implements Sequence {

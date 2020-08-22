@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A256552 Expansion of the unique weight <code>11/2 Gamma1(4)</code> cusp form in powers of q.
+ * A256552 Expansion of the unique weight 11/2 Gamma1(4) cusp form in powers of q.
  * @author Georg Fischer
  */
 public class A256552 extends EulerTransform {

@@ -3,7 +3,7 @@ package irvine.oeis.a204;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A204691 Numbers n such that n contains exactly 5 digits, all distinct, and <code>n^2</code> contains exactly 9 distinct digits.
+ * A204691 Numbers n such that n contains exactly 5 digits, all distinct, and n^2 contains exactly 9 distinct digits.
  * @author Georg Fischer
  */
 public class A204691 extends FiniteSequence {

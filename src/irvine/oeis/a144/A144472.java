@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A144472 Negative values along the main diagonal of the array defined by <code>A020806</code> and its differences.
+ * A144472 Negative values along the main diagonal of the array defined by A020806 and its differences.
  * @author Georg Fischer
  */
 public class A144472 extends GeneratingFunctionSequence {

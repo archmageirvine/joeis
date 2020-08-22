@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114243 <code>a(n) = (n+1)(n+2)^2*(n+3)(n+4)(3n+5)/240</code>.
+ * A114243 a(n) = (n+1)(n+2)^2*(n+3)(n+4)(3n+5)/240.
  * @author Sean A. Irvine
  */
 public class A114243 extends LinearRecurrence {

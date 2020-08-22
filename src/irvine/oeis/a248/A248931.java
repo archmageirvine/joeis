@@ -5,7 +5,7 @@ package irvine.oeis.a248;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A248931 Decimal expansion of <code>2^1279 - 1</code>, the <code>15th</code> Mersenne prime <code>A000668(15)</code>.
+ * A248931 Decimal expansion of 2^1279 - 1, the 15th Mersenne prime A000668(15).
  * @author Georg Fischer
  */
 public class A248931 extends FiniteSequence {

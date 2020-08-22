@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A104785 <code>a(n) =</code> number of members of <code>A047841</code> with n digits.
+ * A104785 a(n) = number of members of A047841 with n digits.
  * @author Georg Fischer
  */
 public class A104785 extends FiniteSequence {

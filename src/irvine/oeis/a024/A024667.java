@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003325;
 
 /**
- * A024667 <code>a(n) =</code> position of <code>2*n^3</code> in <code>A003325</code>.
+ * A024667 a(n) = position of 2*n^3 in A003325.
  * @author Sean A. Irvine
  */
 public class A024667 extends A003325 {

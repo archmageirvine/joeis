@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031997 Odd numbers which when cubed give number composed just of the digits <code>0, 1, 2, 3</code>.
+ * A031997 Odd numbers which when cubed give number composed just of the digits 0, 1, 2, 3.
  * @author Sean A. Irvine
  */
 public class A031997 implements Sequence {

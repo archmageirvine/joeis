@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003970 M\u00f6bius transform of <code>A003960</code> (with alternating zeros omitted).
+ * A003970 M\u00f6bius transform of A003960 (with alternating zeros omitted).
  * @author Sean A. Irvine
  */
 public class A003970 implements Sequence {

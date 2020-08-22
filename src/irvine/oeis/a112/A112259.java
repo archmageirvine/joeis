@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112259 Let p = the golden mean <code>= (1+sqrt(5))/2</code>. A point in 3-space is identified by three numbers t <code>= (a,b,c). f(t)</code> is the product <code>a*b*c</code>. Let t <code>= (-1/p,1,p)</code>: using the rules of 'triternion' multiplication, e.g., <code>(1,2,3)*(1,2,3)= 1,2,3 + 6,2,4 + 6,9,3 = (13,13,10)</code>, then <code>-f(t^n)</code> gives the sequence.
+ * A112259 Let p = the golden mean = (1+sqrt(5))/2. A point in 3-space is identified by three numbers t = (a,b,c). f(t) is the product a*b*c. Let t = (-1/p,1,p): using the rules of 'triternion' multiplication, e.g., (1,2,3)*(1,2,3)= 1,2,3 + 6,2,4 + 6,9,3 = (13,13,10), then -f(t^n) gives the sequence.
  * @author Georg Fischer
  */
 public class A112259 extends GeneratingFunctionSequence {

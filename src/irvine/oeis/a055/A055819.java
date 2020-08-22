@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055819 Row sums of array T in <code>A055818;</code> twice the odd-indexed Fibonacci numbers after initial term.
+ * A055819 Row sums of array T in A055818; twice the odd-indexed Fibonacci numbers after initial term.
  * @author Georg Fischer
  */
 public class A055819 extends GeneratingFunctionSequence {

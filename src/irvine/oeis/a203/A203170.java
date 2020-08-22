@@ -5,7 +5,7 @@ package irvine.oeis.a203;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A203170 Sum of the fourth powers of the first <code>n odd-indexed</code> Fibonacci numbers.
+ * A203170 Sum of the fourth powers of the first n odd-indexed Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A203170 extends HolonomicRecurrence {

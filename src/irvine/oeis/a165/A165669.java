@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A165669 First digit of the decimal expansion of <code>(n^2+2)/7</code> after the decimal point.
+ * A165669 First digit of the decimal expansion of (n^2+2)/7 after the decimal point.
  * @author Georg Fischer
  */
 public class A165669 extends PaddingSequence {

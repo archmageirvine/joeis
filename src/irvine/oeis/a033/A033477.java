@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033477 Products <code>p^3</code> or <code>p^2*q</code>, where <code>{p,q}</code> are consecutive primes.
+ * A033477 Products p^3 or p^2*q, where {p,q} are consecutive primes.
  * @author Sean A. Irvine
  */
 public class A033477 extends A000040 {

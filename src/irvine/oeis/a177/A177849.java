@@ -4,7 +4,7 @@ package irvine.oeis.a177;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A177849 The number of ways of minimal weight to make change for n cents using fairly valued United States coins (copper 1-cent coin, a nickel 5-cent coin, and silver 10-cent and <code>25-cent</code> coins) assuming that silver is more valuable than nickel and that nickel is more valuable than copper.
+ * A177849 The number of ways of minimal weight to make change for n cents using fairly valued United States coins (copper 1-cent coin, a nickel 5-cent coin, and silver 10-cent and 25-cent coins) assuming that silver is more valuable than nickel and that nickel is more valuable than copper.
  * @author Georg Fischer
  */
 public class A177849 extends GeneratingFunctionSequence {

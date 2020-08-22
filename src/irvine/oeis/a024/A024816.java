@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a000.A000217;
 
 /**
- * A024816 <code>Antisigma(n)</code>: Sum of the numbers less than n that do not divide <code>n</code>.
+ * A024816 Antisigma(n): Sum of the numbers less than n that do not divide n.
  * @author Sean A. Irvine
  */
 public class A024816 extends A000217 {

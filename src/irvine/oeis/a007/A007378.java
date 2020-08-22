@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A007378 <code>a(n), n&gt;=2</code>, is smallest positive integer which is consistent with sequence being monotonically increasing and satisfying <code>a(a(n)) = 2n</code>.
+ * A007378 a(n), n&gt;=2, is smallest positive integer which is consistent with sequence being monotonically increasing and satisfying a(a(n)) = 2n.
  * @author Sean A. Irvine
  */
 public class A007378 extends MemorySequence {

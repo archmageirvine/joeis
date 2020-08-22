@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018796 Smallest square that begins with <code>n</code>.
+ * A018796 Smallest square that begins with n.
  * @author Sean A. Irvine
  */
 public class A018796 implements Sequence {

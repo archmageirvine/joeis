@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026120 Triangle T by rows: second differences of Motzkin triangle <code>(A026300), (i &gt;= -1, -1&lt;=j&lt;=i)</code>.
+ * A026120 Triangle T by rows: second differences of Motzkin triangle (A026300), (i &gt;= -1, -1&lt;=j&lt;=i).
  * @author Sean A. Irvine
  */
 public class A026120 extends A026105 {

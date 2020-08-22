@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101120 Records in <code>A101119</code>, which forms the nonzero differences of <code>A006519</code> and <code>A003484</code>.
+ * A101120 Records in A101119, which forms the nonzero differences of A006519 and A003484.
  * @author Georg Fischer
  */
 public class A101120 extends GeneratingFunctionSequence {

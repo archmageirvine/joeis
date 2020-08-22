@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134297 <code>a(n) = 107*n</code>.
+ * A134297 a(n) = 107*n.
  * @author Georg Fischer
  */
 public class A134297 extends GeneratingFunctionSequence {

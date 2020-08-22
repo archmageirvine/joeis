@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086452 Number of maximal triangulations (using all <code>2(n+2)</code> points) of a convex polygon having <code>(n+2)</code> sides and an interior point in the middle of each side.
+ * A086452 Number of maximal triangulations (using all 2(n+2) points) of a convex polygon having (n+2) sides and an interior point in the middle of each side.
  * @author Georg Fischer
  */
 public class A086452 extends HolonomicRecurrence {

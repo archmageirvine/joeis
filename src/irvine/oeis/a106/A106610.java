@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106610 Numerator of <code>n/(n+9)</code>.
+ * A106610 Numerator of n/(n+9).
  * @author Georg Fischer
  */
 public class A106610 extends HolonomicRecurrence {

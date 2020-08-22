@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202254 Number of <code>zero-sum -n..n</code> arrays of 4 elements with adjacent element differences also in <code>-n..n</code>.
+ * A202254 Number of zero-sum -n..n arrays of 4 elements with adjacent element differences also in -n..n.
  * @author Georg Fischer
  */
 public class A202254 extends GeneratingFunctionSequence {

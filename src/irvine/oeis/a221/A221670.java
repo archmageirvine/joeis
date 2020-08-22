@@ -3,7 +3,7 @@ package irvine.oeis.a221;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A221670 Seven numbers whose squares are among the entries in a <code>3 x 3</code> magic square.
+ * A221670 Seven numbers whose squares are among the entries in a 3 x 3 magic square.
  * @author Georg Fischer
  */
 public class A221670 extends FiniteSequence {

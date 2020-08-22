@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A275477 Decimal expansion of <code>arccos(2/Pi)</code>.
+ * A275477 Decimal expansion of arccos(2/Pi).
  * @author Georg Fischer
  */
 public class A275477 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a297;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A297740 The number of distinct positions on an infinite chessboard reachable by the <code>(2,3)-leaper</code> in <code>&lt;= n</code> moves.
+ * A297740 The number of distinct positions on an infinite chessboard reachable by the (2,3)-leaper in &lt;= n moves.
  * @author Georg Fischer
  */
 public class A297740 extends GeneratingFunctionSequence {

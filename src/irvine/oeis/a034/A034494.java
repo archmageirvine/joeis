@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034494 <code>a(n) = (7^n+1)/2</code>.
+ * A034494 a(n) = (7^n+1)/2.
  * @author Georg Fischer
  */
 public class A034494 extends GeneratingFunctionSequence {

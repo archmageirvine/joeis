@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104574 Sum of trapezoid weights of all Motzkin paths of length <code>n</code>.
+ * A104574 Sum of trapezoid weights of all Motzkin paths of length n.
  * @author Georg Fischer
  */
 public class A104574 extends HolonomicRecurrence {

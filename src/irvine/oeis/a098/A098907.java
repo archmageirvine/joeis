@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A098907 Decimal expansion of <code>1/gamma</code>, where gamma is Euler-Mascheroni constant.
+ * A098907 Decimal expansion of 1/gamma, where gamma is Euler-Mascheroni constant.
  * @author Georg Fischer
  */
 public class A098907 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062258 Number of <code>(0,1)-strings</code> of length n not containing the substring 0100100.
+ * A062258 Number of (0,1)-strings of length n not containing the substring 0100100.
  * @author Georg Fischer
  */
 public class A062258 extends GeneratingFunctionSequence {

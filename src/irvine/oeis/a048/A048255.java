@@ -3,7 +3,7 @@ package irvine.oeis.a048;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A048255 Integers whose sum of divisors is <code>6^5 = 7776</code>.
+ * A048255 Integers whose sum of divisors is 6^5 = 7776.
  * @author Georg Fischer
  */
 public class A048255 extends FiniteSequence {

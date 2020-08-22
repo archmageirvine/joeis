@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033724 Product <code>theta3(q^d); d | 12</code>.
+ * A033724 Product theta3(q^d); d | 12.
  * @author Sean A. Irvine
  */
 public class A033724 extends A033720 {

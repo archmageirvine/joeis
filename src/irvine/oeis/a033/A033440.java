@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033440 Number of edges in 8-partite Tur\u00e1n graph of order <code>n</code>.
+ * A033440 Number of edges in 8-partite Tur\u00e1n graph of order n.
  * @author Sean A. Irvine
  */
 public class A033440 extends LinearRecurrence {

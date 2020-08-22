@@ -3,7 +3,7 @@ package irvine.oeis.a163;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A163273 Fixed points of <code>A036742</code>.
+ * A163273 Fixed points of A036742.
  * @author Georg Fischer
  */
 public class A163273 extends FiniteSequence {

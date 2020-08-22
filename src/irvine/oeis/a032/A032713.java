@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032713 Numbers n such that n prefixed by <code>'5'</code> and followed by <code>'3'</code> is prime.
+ * A032713 Numbers n such that n prefixed by '5' and followed by '3' is prime.
  * @author Sean A. Irvine
  */
 public class A032713 implements Sequence {

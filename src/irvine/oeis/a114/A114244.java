@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114244 <code>a(n) = (n+1)(n+2)^2*(n+3)(7n^2 + 28n + 30)/360</code>.
+ * A114244 a(n) = (n+1)(n+2)^2*(n+3)(7n^2 + 28n + 30)/360.
  * @author Georg Fischer
  */
 public class A114244 extends GeneratingFunctionSequence {

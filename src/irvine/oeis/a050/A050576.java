@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050576 Numbers n such that <code>101*2^n-1</code> is prime.
+ * A050576 Numbers n such that 101*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050576 extends PowerFactorPrimeSequence {

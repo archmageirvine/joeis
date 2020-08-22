@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028903 Map <code>n =</code> Sum <code>c_i 10^i</code> to <code>a(n) =</code> Sum <code>c_i 8^i</code>.
+ * A028903 Map n = Sum c_i 10^i to a(n) = Sum c_i 8^i.
  * @author Sean A. Irvine
  */
 public class A028903 implements Sequence {

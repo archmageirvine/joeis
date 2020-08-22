@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A084119 Decimal expansion of the Fibonacci binary number, <code>Sum_{k&gt;0} 1/2^F(k)</code>, where <code>F(k) = A000045(k)</code>.
+ * A084119 Decimal expansion of the Fibonacci binary number, Sum_{k&gt;0} 1/2^F(k), where F(k) = A000045(k).
  * @author Sean A. Irvine
  */
 public class A084119 extends DecimalExpansionSequence {

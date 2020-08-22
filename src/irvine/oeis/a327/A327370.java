@@ -6,7 +6,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327370 Number of labeled simple graphs with n vertices and exactly <code>n - 1</code> endpoints (vertices of degree <code>1)</code>.
+ * A327370 Number of labeled simple graphs with n vertices and exactly n - 1 endpoints (vertices of degree 1).
  * @author Georg Fischer
  */
 public class A327370 extends HolonomicRecurrence {

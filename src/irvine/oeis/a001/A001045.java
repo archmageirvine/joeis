@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001045 Jacobsthal sequence (or Jacobsthal <code>numbers): a(n) = a(n-1) + 2*a(n-2)</code>, with <code>a(0) = 0, a(1) = 1</code>.
+ * A001045 Jacobsthal sequence (or Jacobsthal numbers): a(n) = a(n-1) + 2*a(n-2), with a(0) = 0, a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A001045 implements Sequence {

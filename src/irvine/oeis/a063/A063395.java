@@ -6,7 +6,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063395 <code>T(2n,n)</code> with <code>T(n,m)</code> as in <code>A063394</code>.
+ * A063395 T(2n,n) with T(n,m) as in A063394.
  * @author Georg Fischer
  */
 public class A063395 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254308 <code>a(n) = a(n-1) +</code> (if <code>a(n-1)</code> is odd <code>a(n-2)</code> else <code>a(n-3))</code> with <code>a(0) = 0, a(1) = 1</code>.
+ * A254308 a(n) = a(n-1) + (if a(n-1) is odd a(n-2) else a(n-3)) with a(0) = 0, a(1) = 1.
  * @author Georg Fischer
  */
 public class A254308 extends GeneratingFunctionSequence {

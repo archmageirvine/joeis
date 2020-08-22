@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003572 Order of <code>3 mod 3n+2</code>.
+ * A003572 Order of 3 mod 3n+2.
  * @author Sean A. Irvine
  */
 public class A003572 implements Sequence {

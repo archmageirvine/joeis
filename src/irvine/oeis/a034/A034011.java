@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034011 Related to curves <code>y^2=x^5-n</code>.
+ * A034011 Related to curves y^2=x^5-n.
  * @author Sean A. Irvine
  */
 public class A034011 implements Sequence {

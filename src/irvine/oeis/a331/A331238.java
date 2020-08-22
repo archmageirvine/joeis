@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A331238 Triangle <code>T(n, k)</code> of the number of trees of order n with cutting number k <code>&gt;= 0</code>.
+ * A331238 Triangle T(n, k) of the number of trees of order n with cutting number k &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A331238 implements Sequence, GraphProcessor {

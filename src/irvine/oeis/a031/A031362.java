@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031362 Number of coincidence site modules of index <code>10n+1</code> with 10-fold symmetry in plane.
+ * A031362 Number of coincidence site modules of index 10n+1 with 10-fold symmetry in plane.
  * @author Sean A. Irvine
  */
 public class A031362 implements Sequence {

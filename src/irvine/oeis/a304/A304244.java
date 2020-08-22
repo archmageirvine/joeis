@@ -5,7 +5,7 @@ package irvine.oeis.a304;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A304244 Numbers that yield a prime when <code>prime(k)</code> is inserted after the k-th digit, for any k <code>&gt;= 1, k &lt;</code> number of digits.
+ * A304244 Numbers that yield a prime when prime(k) is inserted after the k-th digit, for any k &gt;= 1, k &lt; number of digits.
  * @author Georg Fischer
  */
 public class A304244 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085891 Maximal product of three numbers with sum n: <code>a(n) = max(r*s*t), n = r+s+t</code>.
+ * A085891 Maximal product of three numbers with sum n: a(n) = max(r*s*t), n = r+s+t.
  * @author Georg Fischer
  */
 public class A085891 extends GeneratingFunctionSequence {

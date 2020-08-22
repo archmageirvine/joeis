@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A020986 <code>a(n) = n-th</code> partial sum of <code>Golay-Rudin-Shapiro</code> sequence <code>A020985</code>.
+ * A020986 a(n) = n-th partial sum of Golay-Rudin-Shapiro sequence A020985.
  * @author Sean A. Irvine
  */
 public class A020986 extends PartialSumSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034027 Numbers of the form <code>x^2+2y^2</code> with <code>x &gt;= y &gt;= 0</code>.
+ * A034027 Numbers of the form x^2+2y^2 with x &gt;= y &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A034027 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000108;
 
 
 /**
- * A152669 Last digit of Catalan number <code>A000108(n)</code>.
+ * A152669 Last digit of Catalan number A000108(n).
  * @author Georg Fischer
  */
 public class A152669 extends A000108 {

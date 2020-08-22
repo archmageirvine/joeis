@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028880 Primes of the form <code>n^2 - 6</code>.
+ * A028880 Primes of the form n^2 - 6.
  * @author Sean A. Irvine
  */
 public class A028880 implements Sequence {

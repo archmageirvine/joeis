@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098614 Product of Fibonacci and Catalan numbers: <code>a(n) = A000045(n+1)*A000108(n)</code>.
+ * A098614 Product of Fibonacci and Catalan numbers: a(n) = A000045(n+1)*A000108(n).
  * @author Georg Fischer
  */
 public class A098614 extends HolonomicRecurrence {

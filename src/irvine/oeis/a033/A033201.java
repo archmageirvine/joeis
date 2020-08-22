@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033201 Primes of the form <code>x^2 + 10*y^2</code>.
+ * A033201 Primes of the form x^2 + 10*y^2.
  * @author Sean A. Irvine
  */
 public class A033201 extends A000040 {

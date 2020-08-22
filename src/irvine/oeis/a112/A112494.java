@@ -3,7 +3,7 @@ package irvine.oeis.a112;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A112494 Sixth diagonal of the <code>Stirling2</code> triangle <code>A048993</code> and sixth column of triangle <code>A008278</code>.
+ * A112494 Sixth diagonal of the Stirling2 triangle A048993 and sixth column of triangle A008278.
  * @author Sean A. Irvine
  */
 public class A112494 extends LinearRecurrence {

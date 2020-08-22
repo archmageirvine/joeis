@@ -7,7 +7,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A032291 Shifts left 2 places under "DIK" <code>(bracelet</code>, indistinct, unlabeled) transform.
+ * A032291 Shifts left 2 places under "DIK" (bracelet, indistinct, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032291 extends MemorySequence {

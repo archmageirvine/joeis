@@ -4,7 +4,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254233 Number of ways to partition the multiset consisting of n copies each of <code>1, 2</code>, and 3 into n sets of size 3.
+ * A254233 Number of ways to partition the multiset consisting of n copies each of 1, 2, and 3 into n sets of size 3.
  * @author Georg Fischer
  */
 public class A254233 extends GeneratingFunctionSequence {

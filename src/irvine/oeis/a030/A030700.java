@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030700 Decimal expansion of <code>3^n</code> contains no zeros (probably finite).
+ * A030700 Decimal expansion of 3^n contains no zeros (probably finite).
  * @author Sean A. Irvine
  */
 public class A030700 implements Sequence {

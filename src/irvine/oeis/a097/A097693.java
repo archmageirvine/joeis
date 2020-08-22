@@ -4,7 +4,7 @@ package irvine.oeis.a097;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A097693 Largest achievable determinant of a <code>3 X 3</code> matrix whose elements are 9 distinct integers chosen from the range <code>-n...n</code>.
+ * A097693 Largest achievable determinant of a 3 X 3 matrix whose elements are 9 distinct integers chosen from the range -n...n.
  * @author Georg Fischer
  */
 public class A097693 extends GeneratingFunctionSequence {

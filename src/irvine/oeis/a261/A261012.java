@@ -5,7 +5,7 @@ package irvine.oeis.a261;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A261012 <code>Sign(n)</code> (with offset <code>-1): a(n) = 1</code> if <code>n&gt;0, = -1</code> if <code>n&lt;0, = 0</code> if <code>n = 0</code>.
+ * A261012 Sign(n) (with offset -1): a(n) = 1 if n&gt;0, = -1 if n&lt;0, = 0 if n = 0.
  * @author Georg Fischer
  */
 public class A261012 extends HolonomicRecurrence {

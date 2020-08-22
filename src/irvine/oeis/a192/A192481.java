@@ -6,7 +6,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192481 <code>a(n) = Sum_{i=1..n-1} (2^i*C(i)-a(i)) * (2^(n-i)*C(n-i)-a(n-i)), a(0)=0, a(1)=1</code>, where <code>C(i)=A000108(i-1)</code> are Catalan numbers.
+ * A192481 a(n) = Sum_{i=1..n-1} (2^i*C(i)-a(i)) * (2^(n-i)*C(n-i)-a(n-i)), a(0)=0, a(1)=1, where C(i)=A000108(i-1) are Catalan numbers.
  * @author Georg Fischer
  */
 public class A192481 extends HolonomicRecurrence {

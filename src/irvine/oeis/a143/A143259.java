@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A143259 <code>a(n) = 1</code> if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
+ * A143259 a(n) = 1 if n is a nonzero square, -1 if n is twice a nonzero square, 0 otherwise.
  * @author Georg Fischer
  */
 public class A143259 extends EulerTransform {

@@ -6,7 +6,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131676 <code>a(n) = (Product_{i=1..6} n^i+i) / 6!</code>.
+ * A131676 a(n) = (Product_{i=1..6} n^i+i) / 6!.
  * @author Georg Fischer
  */
 public class A131676 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a199;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A199969 <code>a(n) =</code> the greatest non-divisor h of <code>n (1&lt;h&lt;n)</code>, or 0 if no such h exists.
+ * A199969 a(n) = the greatest non-divisor h of n (1&lt;h&lt;n), or 0 if no such h exists.
  * @author Georg Fischer
  */
 public class A199969 extends HolonomicRecurrence {

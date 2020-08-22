@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336279 <code>a(n) = Sum_{k=1..n} mu(k)*k^5</code>.
+ * A336279 a(n) = Sum_{k=1..n} mu(k)*k^5.
  * @author Sean A. Irvine
  */
 public class A336279 implements Sequence {

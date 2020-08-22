@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019566;
 
 /**
- * A083449 <code>a(n) = A019566(n) /9</code>.
+ * A083449 a(n) = A019566(n) /9.
  * @author Georg Fischer
  */
 public class A083449 extends A019566 {

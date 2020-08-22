@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086836 On a <code>3 X 3</code> board, number of distinct positions of n digits <code>(modulo rotation/reflection))</code>.
+ * A086836 On a 3 X 3 board, number of distinct positions of n digits (modulo rotation/reflection)).
  * @author Georg Fischer
  */
 public class A086836 extends FiniteSequence {

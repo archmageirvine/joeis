@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032317 Shifts left under "EGJ" <code>(unordered</code>, element, labeled) transform.
+ * A032317 Shifts left under "EGJ" (unordered, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032317 extends MemoryFunction2<Integer, Z> implements Sequence {

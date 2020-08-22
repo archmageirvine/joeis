@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A183919 Characteristic sequence for <code>sin(2Pi/n)</code> being rational.
+ * A183919 Characteristic sequence for sin(2Pi/n) being rational.
  * @author Georg Fischer
  */
 public class A183919 extends PaddingSequence {

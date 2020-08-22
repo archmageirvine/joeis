@@ -5,7 +5,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100327 Row sums of triangle <code>A100326</code>, in which row n equals the inverse binomial of column n of square array <code>A100324</code>.
+ * A100327 Row sums of triangle A100326, in which row n equals the inverse binomial of column n of square array A100324.
  * @author Georg Fischer
  */
 public class A100327 extends HolonomicRecurrence {

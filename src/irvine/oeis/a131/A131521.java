@@ -6,7 +6,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131521 Expansion of <code>9/(4 + 5*sqrt(1-36*x))</code>.
+ * A131521 Expansion of 9/(4 + 5*sqrt(1-36*x)).
  * @author Georg Fischer
  */
 public class A131521 extends HolonomicRecurrence {

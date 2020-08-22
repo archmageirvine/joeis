@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215039 <code>a(n) = Fibonacci(2*n)^3, n&gt;=0</code>.
+ * A215039 a(n) = Fibonacci(2*n)^3, n&gt;=0.
  * @author Sean A. Irvine
  */
 public class A215039 extends LinearRecurrence {

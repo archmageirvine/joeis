@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266472 Number of <code>5 X n</code> binary arrays with rows and columns lexicographically nondecreasing and column sums nonincreasing.
+ * A266472 Number of 5 X n binary arrays with rows and columns lexicographically nondecreasing and column sums nonincreasing.
  * @author Georg Fischer
  */
 public class A266472 extends GeneratingFunctionSequence {

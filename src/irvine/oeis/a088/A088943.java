@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A088943 <code>a(n)=60*sum(1&lt;=i&lt;=j&lt;=k&lt;=n,i*j^2/k)</code>.
+ * A088943 a(n)=60*sum(1&lt;=i&lt;=j&lt;=k&lt;=n,i*j^2/k).
  * @author Sean A. Irvine
  */
 public class A088943 extends LinearRecurrence {

@@ -7,7 +7,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A130123 Infinite lower triangular matrix with <code>2^k</code> in the right diagonal and the rest zeros. Triangle, <code>T(n,k), n</code> zeros followed by the term <code>2^k</code>. Triangle by columns, <code>(2^k, 0, 0, 0, ...)</code>.
+ * A130123 Infinite lower triangular matrix with 2^k in the right diagonal and the rest zeros. Triangle, T(n,k), n zeros followed by the term 2^k. Triangle by columns, (2^k, 0, 0, 0, ...).
  * @author Georg Fischer
  */
 public class A130123 extends GeneratingFunctionTriangle {

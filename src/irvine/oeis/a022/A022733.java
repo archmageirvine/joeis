@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A022733 Expansion of <code>Product_{m&gt;=1} 1/(1 - m*q^m)^9</code>.
+ * A022733 Expansion of Product_{m&gt;=1} 1/(1 - m*q^m)^9.
  * @author Sean A. Irvine
  */
 public class A022733 extends A022669 {

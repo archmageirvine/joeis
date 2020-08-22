@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007360;
 
 /**
- * A023892 Derivative of log of <code>A007360</code>.
+ * A023892 Derivative of log of A007360.
  * @author Sean A. Irvine
  */
 public class A023892 extends A007360 {

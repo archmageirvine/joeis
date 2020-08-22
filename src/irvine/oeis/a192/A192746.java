@@ -5,7 +5,7 @@ package irvine.oeis.a192;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A192746 Constant term of the reduction by <code>x^2 -&gt; x+1</code> of the polynomial <code>p(n,x)</code> defined below in Comments.
+ * A192746 Constant term of the reduction by x^2 -&gt; x+1 of the polynomial p(n,x) defined below in Comments.
  * @author Georg Fischer
  */
 public class A192746 extends HolonomicRecurrence {

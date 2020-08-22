@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301285 Coordination sequence for node of type <code>V2</code> in "car" 2-D tiling (or net).
+ * A301285 Coordination sequence for node of type V2 in "car" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301285 extends GeneratingFunctionSequence {

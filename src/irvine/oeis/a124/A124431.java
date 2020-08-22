@@ -6,7 +6,7 @@ package irvine.oeis.a124;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A124431 <code>a(n) = Sum_{k=0..n} 2^k*C([(n+k)/2],k)*C([(n+k+1)/2],k))</code> where <code>[x]=floor(x)</code>.
+ * A124431 a(n) = Sum_{k=0..n} 2^k*C([(n+k)/2],k)*C([(n+k+1)/2],k)) where [x]=floor(x).
  * @author Georg Fischer
  */
 public class A124431 extends HolonomicRecurrence {

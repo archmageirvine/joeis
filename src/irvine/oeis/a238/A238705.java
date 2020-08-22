@@ -3,7 +3,7 @@ package irvine.oeis.a238;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A238705 Number of partitions of <code>4n</code> into 4 parts with smallest part <code>= 1</code>.
+ * A238705 Number of partitions of 4n into 4 parts with smallest part = 1.
  * @author Sean A. Irvine
  */
 public class A238705 extends LinearRecurrence {

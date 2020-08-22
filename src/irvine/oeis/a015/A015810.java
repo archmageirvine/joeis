@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A015810 k is the first integer such that <code>phi(k+n) | sigma(k)+n</code>.
+ * A015810 k is the first integer such that phi(k+n) | sigma(k)+n.
  * @author Sean A. Irvine
  */
 public class A015810 implements Sequence {

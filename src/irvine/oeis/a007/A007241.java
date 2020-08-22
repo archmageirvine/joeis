@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007241 McKay-Thompson series of class <code>2A</code> for the Monster group with <code>a(0) = 24</code>.
+ * A007241 McKay-Thompson series of class 2A for the Monster group with a(0) = 24.
  * @author Sean A. Irvine
  */
 public class A007241 implements Sequence {

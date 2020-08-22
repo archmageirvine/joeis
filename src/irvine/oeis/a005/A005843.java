@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005843 The nonnegative even numbers: <code>a(n) = 2n</code>.
+ * A005843 The nonnegative even numbers: a(n) = 2n.
  * @author Sean A. Irvine
  */
 public class A005843 implements Sequence {

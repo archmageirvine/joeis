@@ -7,7 +7,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A099557 Slanted Pascal's triangle, read by rows, such that <code>T(n,k) = binomial(n-[k/2],k)</code> for <code>[n*2/3]&gt;=k&gt;=0</code>, where <code>[x]=floor(x)</code>.
+ * A099557 Slanted Pascal's triangle, read by rows, such that T(n,k) = binomial(n-[k/2],k) for [n*2/3]&gt;=k&gt;=0, where [x]=floor(x).
  * @author Georg Fischer
  */
 public class A099557 extends GeneratingFunctionTriangle {

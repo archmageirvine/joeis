@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ConvolutionSequence;
 
 /**
- * A000628 Number of n-node unrooted steric quartic trees; number of n-carbon alkanes <code>C(n)H(2n+2)</code> taking stereoisomers into account.
+ * A000628 Number of n-node unrooted steric quartic trees; number of n-carbon alkanes C(n)H(2n+2) taking stereoisomers into account.
  * @author Sean A. Irvine
  */
 public class A000628 extends A000625 {

@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129160 Sum of the semi-abscissae of the first returns to the axis over all skew Dyck paths of semilength <code>n</code>.
+ * A129160 Sum of the semi-abscissae of the first returns to the axis over all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A129160 extends HolonomicRecurrence {

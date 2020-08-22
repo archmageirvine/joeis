@@ -4,7 +4,7 @@ package irvine.oeis.a240;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A240836 Numbers n such that <code>n^3 = x*y*z</code> where <code>2 &lt;= x &lt;= y &lt;= z , n^3+1 = (x-1)*(y+1)*(z+1)</code>.
+ * A240836 Numbers n such that n^3 = x*y*z where 2 &lt;= x &lt;= y &lt;= z , n^3+1 = (x-1)*(y+1)*(z+1).
  * @author Georg Fischer
  */
 public class A240836 extends GeneratingFunctionSequence {

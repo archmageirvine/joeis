@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127147 <code>Q(n,5)</code>, where <code>Q(m,k)</code> is defined in <code>A127080</code> and <code>A127137</code>.
+ * A127147 Q(n,5), where Q(m,k) is defined in A127080 and A127137.
  * @author Sean A. Irvine
  */
 public class A127147 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a232;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A232636 The second largest value of permanent of <code>(0,1)</code> square matrices of order n with row and column sums equal to 3.
+ * A232636 The second largest value of permanent of (0,1) square matrices of order n with row and column sums equal to 3.
  * @author Georg Fischer
  */
 public class A232636 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A078408 Number of ways to partition <code>2n+1</code> into distinct positive integers.
+ * A078408 Number of ways to partition 2n+1 into distinct positive integers.
  * @author Georg Fischer
  */
 public class A078408 extends EulerTransform {

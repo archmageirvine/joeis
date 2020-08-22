@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145400 Number of 2-factors in <code>P_6 X P_n</code>.
+ * A145400 Number of 2-factors in P_6 X P_n.
  * @author Georg Fischer
  */
 public class A145400 extends GeneratingFunctionSequence {

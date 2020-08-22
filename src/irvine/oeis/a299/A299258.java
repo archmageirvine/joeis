@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299258 Coordination sequence for <code>3D</code> uniform tiling formed by stacking parallel layers of the <code>4.6.12 2D</code> tiling <code>(cf. A072154)</code>.
+ * A299258 Coordination sequence for 3D uniform tiling formed by stacking parallel layers of the 4.6.12 2D tiling (cf. A072154).
  * @author Georg Fischer
  */
 public class A299258 extends GeneratingFunctionSequence {

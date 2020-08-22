@@ -8,7 +8,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A010070 Base 8 self or Colombian numbers (not of form <code>n +</code> sum of base 8 digits of <code>n)</code>.
+ * A010070 Base 8 self or Colombian numbers (not of form n + sum of base 8 digits of n).
  * @author Sean A. Irvine
  */
 public class A010070 extends ComplementSequence {

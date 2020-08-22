@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093699 Maximum number of odd <code>2 X 2</code> submatrices over all <code>2n X 2n (0,1)</code> matrices.
+ * A093699 Maximum number of odd 2 X 2 submatrices over all 2n X 2n (0,1) matrices.
  * @author Georg Fischer
  */
 public class A093699 extends GeneratingFunctionSequence {

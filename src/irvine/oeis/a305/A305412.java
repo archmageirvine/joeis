@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305412 <code>a(n) = F(n)*F(n+1) + F(n+2)</code>, where F <code>= A000045</code> (Fibonacci numbers).
+ * A305412 a(n) = F(n)*F(n+1) + F(n+2), where F = A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A305412 extends GeneratingFunctionSequence {

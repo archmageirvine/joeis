@@ -8,7 +8,7 @@ import irvine.oeis.DecimalExpansionSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A033435 Continued fraction for Champernowne constant <code>= 0.01234567891011121314..</code>.
+ * A033435 Continued fraction for Champernowne constant = 0.01234567891011121314...
  * @author Sean A. Irvine
  */
 public class A033435 extends ContinuedFractionSequence {

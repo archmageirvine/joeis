@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002296 Number of dissections of a polygon: <code>binomial(7n,n)/(6n+1)</code>.
+ * A002296 Number of dissections of a polygon: binomial(7n,n)/(6n+1).
  * @author Sean A. Irvine
  */
 public class A002296 implements Sequence {

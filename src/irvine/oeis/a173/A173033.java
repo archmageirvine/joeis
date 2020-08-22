@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173033 Second diagonal under the main diagonal in <code>A172119</code> written in a square (see comment).
+ * A173033 Second diagonal under the main diagonal in A172119 written in a square (see comment).
  * @author Georg Fischer
  */
 public class A173033 extends GeneratingFunctionSequence {

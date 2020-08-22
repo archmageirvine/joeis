@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A244476 6th-largest term in n-th row of Stern's diatomic triangle <code>A002487</code>.
+ * A244476 6th-largest term in n-th row of Stern's diatomic triangle A002487.
  * @author Georg Fischer
  */
 public class A244476 extends NoncomputableSequence {

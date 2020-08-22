@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178982 Partial sums of <code>floor(Fibonacci(n)/2)</code>.
+ * A178982 Partial sums of floor(Fibonacci(n)/2).
  * @author Georg Fischer
  */
 public class A178982 extends GeneratingFunctionSequence {

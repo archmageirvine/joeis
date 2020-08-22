@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013321 E.g.f.: <code>sech(exp(x)-cos(x))</code>.
+ * A013321 E.g.f.: sech(exp(x)-cos(x)).
  * @author Sean A. Irvine
  */
 public class A013321 implements Sequence {

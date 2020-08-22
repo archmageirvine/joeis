@@ -5,7 +5,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268316 <code>a(n)</code> is the number of Dyck paths of length <code>4n</code> and height <code>n</code>.
+ * A268316 a(n) is the number of Dyck paths of length 4n and height n.
  * @author Georg Fischer
  */
 public class A268316 extends HolonomicRecurrence {

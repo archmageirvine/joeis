@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicByteArray;
 
 /**
- * A126971 Left border of array in <code>A105605</code>.
+ * A126971 Left border of array in A105605.
  * @author Sean A. Irvine
  */
 public class A126971 implements Sequence {

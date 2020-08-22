@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322830 <code>a(n) = 32*n^3 + 48*n^2 + 18*n + 1</code>.
+ * A322830 a(n) = 32*n^3 + 48*n^2 + 18*n + 1.
  * @author Georg Fischer
  */
 public class A322830 extends GeneratingFunctionSequence {

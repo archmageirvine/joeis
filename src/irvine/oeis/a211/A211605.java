@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211605 <code>a(n)</code> is the nearest integer to <code>x(n)</code>, where <code>x(1) = 1, x(2) = 2, x(n) =</code> operation <code>(n-2 mod 4)</code> applied to the pair <code>(x(n-1), x(n-2))</code>, where operation 1 is addition, operation 2 is multiplication, operation 3 is subtraction and operation 0 is division.
+ * A211605 a(n) is the nearest integer to x(n), where x(1) = 1, x(2) = 2, x(n) = operation (n-2 mod 4) applied to the pair (x(n-1), x(n-2)), where operation 1 is addition, operation 2 is multiplication, operation 3 is subtraction and operation 0 is division.
  * @author Georg Fischer
  */
 public class A211605 extends GeneratingFunctionSequence {

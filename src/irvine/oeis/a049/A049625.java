@@ -4,7 +4,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A049625 Congruent to <code>1, 2, 4, 6, 8</code> or <code>9 mod 11</code>, but with 2 instead of 1.
+ * A049625 Congruent to 1, 2, 4, 6, 8 or 9 mod 11, but with 2 instead of 1.
  * @author Georg Fischer
  */
 public class A049625 extends GeneratingFunctionSequence {

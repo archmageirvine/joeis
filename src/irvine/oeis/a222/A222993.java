@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222993 Number of <code>n X 2 0..2</code> arrays with successive rows and columns fitting to straight lines with nondecreasing slope, with a single point array taken as having zero slope.
+ * A222993 Number of n X 2 0..2 arrays with successive rows and columns fitting to straight lines with nondecreasing slope, with a single point array taken as having zero slope.
  * @author Georg Fischer
  */
 public class A222993 extends GeneratingFunctionSequence {

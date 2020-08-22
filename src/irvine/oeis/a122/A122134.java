@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A122134 Expansion of <code>Sum_{k&gt;=0} x^(k^2+k)/((1-x)(1-x^2)...(1-x^(2k)))</code>.
+ * A122134 Expansion of Sum_{k&gt;=0} x^(k^2+k)/((1-x)(1-x^2)...(1-x^(2k))).
  * @author Georg Fischer
  */
 public class A122134 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A098108 <code>a(n) = 1</code> if n is an odd square, otherwise 0.
+ * A098108 a(n) = 1 if n is an odd square, otherwise 0.
  * @author Georg Fischer
  */
 public class A098108 extends EulerTransform {

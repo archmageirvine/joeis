@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124161 <code>a(n) = n*(n-1)*(n^3 + 21*n^2 - 4*n + 96)/120</code>.
+ * A124161 a(n) = n*(n-1)*(n^3 + 21*n^2 - 4*n + 96)/120.
  * @author Sean A. Irvine
  */
 public class A124161 extends LinearRecurrence {

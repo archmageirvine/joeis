@@ -4,7 +4,7 @@ package irvine.oeis.a287;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A287839 Number of words of length n over the alphabet <code>{0,1,...,10}</code> such that no two consecutive terms have distance 9.
+ * A287839 Number of words of length n over the alphabet {0,1,...,10} such that no two consecutive terms have distance 9.
  * @author Georg Fischer
  */
 public class A287839 extends LinearRecurrence {

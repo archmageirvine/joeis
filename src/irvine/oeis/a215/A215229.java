@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215229 Number of <code>length-6 0..k</code> arrays connected <code>end-around</code>, with no sequence of L&lt;n elements immediately followed by itself (periodic <code>"squarefree")</code>.
+ * A215229 Number of length-6 0..k arrays connected end-around, with no sequence of L&lt;n elements immediately followed by itself (periodic "squarefree").
  * @author Georg Fischer
  */
 public class A215229 extends GeneratingFunctionSequence {

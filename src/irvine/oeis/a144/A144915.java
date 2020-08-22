@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A144915 Trajectory of 16 under iteration of the map k <code>-&gt; A087712(k)</code>.
+ * A144915 Trajectory of 16 under iteration of the map k -&gt; A087712(k).
  * @author Georg Fischer
  */
 public class A144915 extends PaddingSequence {

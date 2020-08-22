@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.RecordSequence;
 
 /**
- * A033315 Incrementally largest values of minimal x satisfying Pell equation <code>x^2-Dy^2=1</code>.
+ * A033315 Incrementally largest values of minimal x satisfying Pell equation x^2-Dy^2=1.
  * @author Sean A. Irvine
  */
 public class A033315 extends RecordSequence {

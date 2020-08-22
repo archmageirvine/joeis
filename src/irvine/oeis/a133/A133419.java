@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133419 Image of n under one application of the <code>"5x+1"</code> map.
+ * A133419 Image of n under one application of the "5x+1" map.
  * @author Georg Fischer
  */
 public class A133419 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020478 Number of singular <code>2 X 2</code> matrices over <code>Z(n) (i.e.</code>, with determinant <code>= 0)</code>.
+ * A020478 Number of singular 2 X 2 matrices over Z(n) (i.e., with determinant = 0).
  * @author Sean A. Irvine
  */
 public class A020478 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274497 Sum of the degrees of asymmetry of all binary words of length <code>n</code>.
+ * A274497 Sum of the degrees of asymmetry of all binary words of length n.
  * @author Georg Fischer
  */
 public class A274497 extends GeneratingFunctionSequence {

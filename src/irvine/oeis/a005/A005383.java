@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005383 Numbers n such that both n and <code>(n+1)/2</code> are primes.
+ * A005383 Numbers n such that both n and (n+1)/2 are primes.
  * @author Sean A. Irvine
  */
 public class A005383 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129647 Largest order of a permutation of n elements with exactly 2 cycles. Also the largest LCM of a 2-partition of <code>n</code>.
+ * A129647 Largest order of a permutation of n elements with exactly 2 cycles. Also the largest LCM of a 2-partition of n.
  * @author Georg Fischer
  */
 public class A129647 extends HolonomicRecurrence {

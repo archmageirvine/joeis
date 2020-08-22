@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305069 <code>a(n) = 117*n - 72 (n&gt;=1)</code>.
+ * A305069 a(n) = 117*n - 72 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A305069 extends GeneratingFunctionSequence {

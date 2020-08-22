@@ -7,7 +7,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A078802 Triangular array T given by <code>T(n,k) =</code> number of 01-words of length n containing k <code>1</code>'s, no three of which are consecutive.
+ * A078802 Triangular array T given by T(n,k) = number of 01-words of length n containing k 1's, no three of which are consecutive.
  * @author Georg Fischer
  */
 public class A078802 extends GeneratingFunctionTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a052;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A052266 Number of <code>3 X n</code> matrices over <code>GF(3)</code> under row and column permutations.
+ * A052266 Number of 3 X n matrices over GF(3) under row and column permutations.
  * @author Georg Fischer
  */
 public class A052266 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a119;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A119568 Lenny Conundrum <code>#168</code>: Neopet species in alphabetical order, converted to digits by the phone keypad code.
+ * A119568 Lenny Conundrum #168: Neopet species in alphabetical order, converted to digits by the phone keypad code.
  * @author Georg Fischer
  */
 public class A119568 extends FiniteSequence {

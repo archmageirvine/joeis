@@ -6,7 +6,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054849 <code>a(n) = 2^(n-5)*binomial(n,5)</code>. Number of <code>5D</code> hypercubes in an n-dimensional hypercube.
+ * A054849 a(n) = 2^(n-5)*binomial(n,5). Number of 5D hypercubes in an n-dimensional hypercube.
  * @author Georg Fischer
  */
 public class A054849 extends GeneratingFunctionSequence {

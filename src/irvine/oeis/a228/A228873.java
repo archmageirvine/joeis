@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228873 <code>F(n) * F(n+1) * F(n+2) * F(n+3)</code>, the product of four consecutive Fibonacci numbers, <code>A000045</code>.
+ * A228873 F(n) * F(n+1) * F(n+2) * F(n+3), the product of four consecutive Fibonacci numbers, A000045.
  * @author Georg Fischer
  */
 public class A228873 extends GeneratingFunctionSequence {

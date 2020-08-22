@@ -7,7 +7,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A091186 Triangle read by rows, in which n-th row gives expansion of <code>x^n/((1-x)(1-x-x^2)^n)</code>.
+ * A091186 Triangle read by rows, in which n-th row gives expansion of x^n/((1-x)(1-x-x^2)^n).
  * @author Georg Fischer
  */
 public class A091186 extends GeneratingFunctionTriangle {

@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201244 Number of ways to place <code>3 non-attacking</code> ferses on an <code>n X n</code> board.
+ * A201244 Number of ways to place 3 non-attacking ferses on an n X n board.
  * @author Georg Fischer
  */
 public class A201244 extends GeneratingFunctionSequence {

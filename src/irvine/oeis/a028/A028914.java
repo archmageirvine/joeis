@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028914 Divide <code>A028913</code> by 2.
+ * A028914 Divide A028913 by 2.
  * @author Sean A. Irvine
  */
 public class A028914 extends A028913 {

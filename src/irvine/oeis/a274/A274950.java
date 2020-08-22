@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A274950 Trajectory of 0 under the morphism <code>0 -&gt; 0001101, 1 -&gt; 0011001</code>.
+ * A274950 Trajectory of 0 under the morphism 0 -&gt; 0001101, 1 -&gt; 0011001.
  * @author Georg Fischer
  */
 public class A274950 extends MorphismSequence {

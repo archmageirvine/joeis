@@ -5,7 +5,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240880 Expansion of g.f.: <code>(-1 + sqrt(1+12*x+48*x^2)) / (6*x)</code>.
+ * A240880 Expansion of g.f.: (-1 + sqrt(1+12*x+48*x^2)) / (6*x).
  * @author Georg Fischer
  */
 public class A240880 extends HolonomicRecurrence {

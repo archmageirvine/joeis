@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A026098 Triangular array T read by rows: <code>T(1,1)=1, T(2,1)=3, T(2,2)=2;</code> for <code>n &gt;= 3, T(n,1)=prime(n)</code> and for <code>k=2,3,...,n, T(n,k) = m*prime(n+1-k)</code>, where m is the least positive integer such that <code>m*p(n+1-k)</code> is not any <code>T(i,j)</code> for <code>1&lt;=i&lt;=n-1</code> nor any <code>T(n,j)</code> for <code>j&lt;=k-1</code>.
+ * A026098 Triangular array T read by rows: T(1,1)=1, T(2,1)=3, T(2,2)=2; for n &gt;= 3, T(n,1)=prime(n) and for k=2,3,...,n, T(n,k) = m*prime(n+1-k), where m is the least positive integer such that m*p(n+1-k) is not any T(i,j) for 1&lt;=i&lt;=n-1 nor any T(n,j) for j&lt;=k-1.
  * @author Sean A. Irvine
  */
 public class A026098 implements Sequence {

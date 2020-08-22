@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168499 Primes n of the form <code>100p+q</code> with primes p and q, <code>98&gt;p&gt;q&gt;10</code>.
+ * A168499 Primes n of the form 100p+q with primes p and q, 98&gt;p&gt;q&gt;10.
  * @author Georg Fischer
  */
 public class A168499 extends FiniteSequence {

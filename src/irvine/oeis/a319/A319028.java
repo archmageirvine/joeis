@@ -5,7 +5,7 @@ package irvine.oeis.a319;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A319028 Number of permutations pi of <code>[n]</code> such that <code>s(pi)</code> avoids the patterns 132 and 321, where s is West's stack-sorting map.
+ * A319028 Number of permutations pi of [n] such that s(pi) avoids the patterns 132 and 321, where s is West's stack-sorting map.
  * @author Georg Fischer
  */
 public class A319028 extends HolonomicRecurrence {

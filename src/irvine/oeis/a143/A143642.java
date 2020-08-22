@@ -3,7 +3,7 @@ package irvine.oeis.a143;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A143642 Numerators of principal and intermediate convergents to <code>3^(1/2)</code>.
+ * A143642 Numerators of principal and intermediate convergents to 3^(1/2).
  * @author Sean A. Irvine
  */
 public class A143642 extends LinearRecurrence {

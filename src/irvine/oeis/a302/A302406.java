@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302406 Total domination number of the <code>n X n</code> torus grid graph.
+ * A302406 Total domination number of the n X n torus grid graph.
  * @author Georg Fischer
  */
 public class A302406 extends GeneratingFunctionSequence {

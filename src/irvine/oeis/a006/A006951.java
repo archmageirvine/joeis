@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a008.A008965;
 
 /**
- * A006951 Number of conjugacy classes in <code>GL(n,2)</code>.
+ * A006951 Number of conjugacy classes in GL(n,2).
  * @author Sean A. Irvine
  */
 public class A006951 extends EulerTransformSequence {

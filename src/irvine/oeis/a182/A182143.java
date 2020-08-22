@@ -3,7 +3,7 @@ package irvine.oeis.a182;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A182143 Number of independent vertex sets in the Moebius ladder graph with <code>2n</code> nodes <code>(n &gt;= 0)</code>.
+ * A182143 Number of independent vertex sets in the Moebius ladder graph with 2n nodes (n &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A182143 extends LinearRecurrence {

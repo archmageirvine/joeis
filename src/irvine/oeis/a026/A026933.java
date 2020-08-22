@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026933 <code>a(n) = self-convolution</code> of array T given by <code>A008288</code>.
+ * A026933 a(n) = self-convolution of array T given by A008288.
  * @author Sean A. Irvine
  */
 public class A026933 implements Sequence {

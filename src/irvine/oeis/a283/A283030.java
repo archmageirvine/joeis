@@ -6,7 +6,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283030 Number of inequivalent <code>5 X 5</code> matrices with entries in <code>{1,2,3,...,n}</code> up to row permutations.
+ * A283030 Number of inequivalent 5 X 5 matrices with entries in {1,2,3,...,n} up to row permutations.
  * @author Georg Fischer
  */
 public class A283030 extends HolonomicRecurrence {

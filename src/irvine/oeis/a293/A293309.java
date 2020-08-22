@@ -3,7 +3,7 @@ package irvine.oeis.a293;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A293309 Number of magic labelings of the graph LOOP X <code>C_10</code> (see comments) having magic sum n, <code>n &gt;= 0</code>.
+ * A293309 Number of magic labelings of the graph LOOP X C_10 (see comments) having magic sum n, n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A293309 extends LinearRecurrence {

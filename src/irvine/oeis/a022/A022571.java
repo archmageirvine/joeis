@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A022571 Expansion of <code>Product_{m&gt;=1} (1+x^m)^6</code>.
+ * A022571 Expansion of Product_{m&gt;=1} (1+x^m)^6.
  * @author Georg Fischer
  */
 public class A022571 extends EulerTransform {

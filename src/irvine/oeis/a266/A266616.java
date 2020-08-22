@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266616 Number of OFF (white) cells in the n-th iteration of the "Rule <code>41"</code> elementary cellular automaton starting with a single ON (black) cell.
+ * A266616 Number of OFF (white) cells in the n-th iteration of the "Rule 41" elementary cellular automaton starting with a single ON (black) cell.
  * @author Sean A. Irvine
  */
 public class A266616 extends LinearRecurrence {

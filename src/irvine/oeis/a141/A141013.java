@@ -5,7 +5,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141013 E.g.f. <code>Sum_{d|M} (exp(d*x)-1)/d, M=14</code>.
+ * A141013 E.g.f. Sum_{d|M} (exp(d*x)-1)/d, M=14.
  * @author Georg Fischer
  */
 public class A141013 extends HolonomicRecurrence {

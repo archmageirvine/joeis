@@ -3,7 +3,7 @@ package irvine.oeis.a097;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A097389 Numbers that appear in <code>A097390</code>.
+ * A097389 Numbers that appear in A097390.
  * @author Georg Fischer
  */
 public class A097389 extends FiniteSequence {

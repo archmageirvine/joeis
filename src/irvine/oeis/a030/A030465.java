@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030465 Numbers n such that n concatenated with <code>n+1</code> is a square.
+ * A030465 Numbers n such that n concatenated with n+1 is a square.
  * @author Sean A. Irvine
  */
 public class A030465 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a023;
 import irvine.math.z.Z;
 
 /**
- * A023853 Sum of exponents in prime-power factorization of <code>binomial(6n, 2n)</code>.
+ * A023853 Sum of exponents in prime-power factorization of binomial(6n, 2n).
  * @author Sean A. Irvine
  */
 public class A023853 extends A023847 {

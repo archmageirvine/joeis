@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a014.A014612;
 
 /**
- * A114403 3-almost prime gaps. First differences of <code>A014612</code>.
+ * A114403 3-almost prime gaps. First differences of A014612.
  * @author Georg Fischer
  */
 public class A114403 extends DifferenceSequence {

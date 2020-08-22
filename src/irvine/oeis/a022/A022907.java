@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000123;
 
 /**
- * A022907 The sequence <code>m(n)</code> in <code>A022905</code>.
+ * A022907 The sequence m(n) in A022905.
  * @author Sean A. Irvine
  */
 public class A022907 extends A000123 {

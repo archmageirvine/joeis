@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032937 Numbers n such that base 2 representation <code>Sum{d(i)*2^(m-i): i=0,1,...,m}</code> has <code>d(i)=0</code> for all odd i, excluding 0. Here m is the position of the leading bit of <code>n</code>.
+ * A032937 Numbers n such that base 2 representation Sum{d(i)*2^(m-i): i=0,1,...,m} has d(i)=0 for all odd i, excluding 0. Here m is the position of the leading bit of n.
  * @author Sean A. Irvine
  */
 public class A032937 implements Sequence {

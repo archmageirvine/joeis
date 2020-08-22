@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A126924 Coordination sequence for 16-dimensional cyclotomic lattice <code>Z[zeta_34]</code>.
+ * A126924 Coordination sequence for 16-dimensional cyclotomic lattice Z[zeta_34].
  * @author Georg Fischer
  */
 public class A126924 extends GeneratingFunctionSequence {

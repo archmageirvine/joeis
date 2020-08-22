@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015734 Odd n such that <code>d(n)</code> does not divide <code>phi(n)</code>.
+ * A015734 Odd n such that d(n) does not divide phi(n).
  * @author Sean A. Irvine
  */
 public class A015734 implements Sequence {

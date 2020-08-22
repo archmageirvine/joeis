@@ -4,7 +4,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075156 Binomial transform of pentanacci numbers <code>A074048: a(n) = Sum_{k=0..n} binomial(n,k)*A074048(k)</code>.
+ * A075156 Binomial transform of pentanacci numbers A074048: a(n) = Sum_{k=0..n} binomial(n,k)*A074048(k).
  * @author Georg Fischer
  */
 public class A075156 extends LinearRecurrence {

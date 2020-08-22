@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157291 Decimal expansion of <code>Zeta(5)/Zeta(10)</code>.
+ * A157291 Decimal expansion of Zeta(5)/Zeta(10).
  * @author Georg Fischer
  */
 public class A157291 extends DecimalExpansionSequence {

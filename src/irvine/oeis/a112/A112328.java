@@ -6,7 +6,7 @@ package irvine.oeis.a112;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A112328 <code>a(n) = (n+1)*binomial(2n+2,n+1)-3*4^n+binomial(2n,n)</code>.
+ * A112328 a(n) = (n+1)*binomial(2n+2,n+1)-3*4^n+binomial(2n,n).
  * @author Georg Fischer
  */
 public class A112328 extends HolonomicRecurrence {

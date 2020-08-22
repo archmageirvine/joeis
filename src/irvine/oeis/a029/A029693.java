@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029693 n-th binary digit in fractional part of cube root of <code>n</code>.
+ * A029693 n-th binary digit in fractional part of cube root of n.
  * @author Sean A. Irvine
  */
 public class A029693 implements Sequence {

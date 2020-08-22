@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A086850 Determinant of the <code>n X n</code> matrix <code>K(i,j)</code> where <code>K(i,j)</code> is the Kronecker symbol <code>(a(n) = 0</code> for <code>n&gt;=8)</code>.
+ * A086850 Determinant of the n X n matrix K(i,j) where K(i,j) is the Kronecker symbol (a(n) = 0 for n&gt;=8).
  * @author Georg Fischer
  */
 public class A086850 extends PaddingSequence {

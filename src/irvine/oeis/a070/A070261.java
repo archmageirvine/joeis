@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070261 4th diagonal of triangle defined in <code>A051537</code>.
+ * A070261 4th diagonal of triangle defined in A051537.
  * @author Sean A. Irvine
  */
 public class A070261 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a279;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A279112 Number of non-equivalent ways to place <code>3 non-attacking</code> kings on an <code>n X n</code> board.
+ * A279112 Number of non-equivalent ways to place 3 non-attacking kings on an n X n board.
  * @author Georg Fischer
  */
 public class A279112 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109344 <code>a(n)</code> consists of <code>n 4's, n-1 8</code>'s and a single <code>9</code> (in that order).
+ * A109344 a(n) consists of n 4's, n-1 8's and a single 9 (in that order).
  * @author Sean A. Irvine
  */
 public class A109344 extends LinearRecurrence {

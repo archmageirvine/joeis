@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a001.A001221;
 
 /**
- * A013939 Partial sums of sequence <code>A001221</code> (number of distinct primes dividing <code>n)</code>.
+ * A013939 Partial sums of sequence A001221 (number of distinct primes dividing n).
  * @author Sean A. Irvine
  */
 public class A013939 extends PartialSumSequence {

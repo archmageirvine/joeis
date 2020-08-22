@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144773 10-fold factorials: <code>Product_{k=0..n-1} (10*k+1)</code>.
+ * A144773 10-fold factorials: Product_{k=0..n-1} (10*k+1).
  * @author Georg Fischer
  */
 public class A144773 extends HolonomicRecurrence {

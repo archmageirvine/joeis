@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020546 4th Bernoulli polynomial evaluated at <code>x=n!</code> (multiplied by <code>30)</code>.
+ * A020546 4th Bernoulli polynomial evaluated at x=n! (multiplied by 30).
  * @author Sean A. Irvine
  */
 public class A020546 implements Sequence {

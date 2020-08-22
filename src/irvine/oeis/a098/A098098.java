@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A098098 <code>a(n) = sigma(6*n+5)/6</code>.
+ * A098098 a(n) = sigma(6*n+5)/6.
  * @author Georg Fischer
  */
 public class A098098 extends EulerTransform {

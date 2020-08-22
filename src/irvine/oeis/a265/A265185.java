@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265185 Non-vanishing traces of the powers of the adjacency matrix for the simple Lie algebra <code>B_4: 2 * ((2 + sqrt(2))^n + (2 - sqrt(2))^n)</code>.
+ * A265185 Non-vanishing traces of the powers of the adjacency matrix for the simple Lie algebra B_4: 2 * ((2 + sqrt(2))^n + (2 - sqrt(2))^n).
  * @author Georg Fischer
  */
 public class A265185 extends GeneratingFunctionSequence {

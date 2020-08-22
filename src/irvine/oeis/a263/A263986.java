@@ -6,7 +6,7 @@ package irvine.oeis.a263;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263986 Difference between Catalan numbers and Fibonacci numbers: <code>a(n) = C(n) - F(n)</code>.
+ * A263986 Difference between Catalan numbers and Fibonacci numbers: a(n) = C(n) - F(n).
  * @author Georg Fischer
  */
 public class A263986 extends HolonomicRecurrence {

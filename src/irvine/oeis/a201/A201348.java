@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201348 Number of <code>n X 3 0..1</code> arrays with rows and columns lexicographically nondecreasing and every element equal to at least one horizontal or vertical neighbor.
+ * A201348 Number of n X 3 0..1 arrays with rows and columns lexicographically nondecreasing and every element equal to at least one horizontal or vertical neighbor.
  * @author Georg Fischer
  */
 public class A201348 extends GeneratingFunctionSequence {

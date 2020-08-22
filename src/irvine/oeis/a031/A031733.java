@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031733 Least term in period of continued fraction for <code>sqrt(n)</code> is 55.
+ * A031733 Least term in period of continued fraction for sqrt(n) is 55.
  * @author Sean A. Irvine
  */
 public class A031733 extends A031424 {

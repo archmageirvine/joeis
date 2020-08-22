@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A225579 The Amelia Code (numbers appearing in the TV series <code>"Touch")</code>.
+ * A225579 The Amelia Code (numbers appearing in the TV series "Touch").
  * @author Georg Fischer
  */
 public class A225579 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A209676 Expansion of <code>f(x)^12</code> in powers of x where <code>f()</code> is a Ramanujan theta function.
+ * A209676 Expansion of f(x)^12 in powers of x where f() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A209676 extends EulerTransform {

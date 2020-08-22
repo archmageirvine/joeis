@@ -3,7 +3,7 @@ package irvine.oeis.a151;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A151701 Weight distribution of <code>[31,11,11]</code> primitive binary BCH code.
+ * A151701 Weight distribution of [31,11,11] primitive binary BCH code.
  * @author Georg Fischer
  */
 public class A151701 extends FiniteSequence {

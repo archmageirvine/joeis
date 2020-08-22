@@ -6,7 +6,7 @@ import irvine.util.array.DynamicLongArray;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A333867 Table with <code>T(1,1) = 1;</code> for <code>n&gt;1, T(n,k)</code> is the number of k's in rows 1 through <code>n-1</code>.
+ * A333867 Table with T(1,1) = 1; for n&gt;1, T(n,k) is the number of k's in rows 1 through n-1.
  * @author Sean A. Irvine
  */
 public class A333867 implements Sequence {

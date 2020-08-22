@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A033860 <code>Sort-then-add</code> sequence: <code>a(n+1) = a(n) + sort(a(n))</code>.
+ * A033860 Sort-then-add sequence: a(n+1) = a(n) + sort(a(n)).
  * @author Sean A. Irvine
  */
 public class A033860 implements Sequence {

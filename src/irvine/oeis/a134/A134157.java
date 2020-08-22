@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A134157 Number of partitions of n into parts that are odd or <code>== +- 4 mod 10</code>.
+ * A134157 Number of partitions of n into parts that are odd or == +- 4 mod 10.
  * @author Georg Fischer
  */
 public class A134157 extends EulerTransform {

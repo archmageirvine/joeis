@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026403 <code>a(n) =</code> position of the <code>n-th n</code> in <code>A026400</code>.
+ * A026403 a(n) = position of the n-th n in A026400.
  * @author Sean A. Irvine
  */
 public class A026403 extends A026400 {

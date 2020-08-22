@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A024622 Position of <code>2^n</code> among the powers of primes <code>(A000961)</code>.
+ * A024622 Position of 2^n among the powers of primes (A000961).
  * @author Sean A. Irvine
  */
 public class A024622 extends A000961 {

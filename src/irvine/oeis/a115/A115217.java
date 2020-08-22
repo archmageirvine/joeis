@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115217 Diagonal sums of "correlation triangle" for <code>2^n</code>.
+ * A115217 Diagonal sums of "correlation triangle" for 2^n.
  * @author Sean A. Irvine
  */
 public class A115217 extends LinearRecurrence {

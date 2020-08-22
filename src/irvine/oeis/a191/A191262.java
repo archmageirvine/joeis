@@ -6,7 +6,7 @@ import irvine.oeis.PositionSequence;
 
 
 /**
- * A191262 Positions of 0 in <code>A191261</code>.
+ * A191262 Positions of 0 in A191261.
  * @author Georg Fischer
  */
 public class A191262 extends PositionSequence {

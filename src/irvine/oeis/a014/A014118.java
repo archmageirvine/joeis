@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014118 Write in binary and read in <code>ternary!</code>.
+ * A014118 Write in binary and read in ternary!.
  * @author Sean A. Irvine
  */
 public class A014118 implements Sequence {

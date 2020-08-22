@@ -4,7 +4,7 @@ package irvine.oeis.a063;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A063726 <code>a(n) = gcd(1 + Fibonacci(n+1), 1 + Fibonacci(n))</code>.
+ * A063726 a(n) = gcd(1 + Fibonacci(n+1), 1 + Fibonacci(n)).
  * @author Georg Fischer
  */
 public class A063726 extends GeneratingFunctionSequence {

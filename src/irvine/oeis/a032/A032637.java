@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032637 <code>[ pi^n / e ]</code>.
+ * A032637 [ pi^n / e ].
  * @author Georg Fischer
  */
 public class A032637 implements Sequence {

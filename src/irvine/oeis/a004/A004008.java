@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004008 Expansion of theta series of <code>E_7</code> lattice in powers of <code>q^2</code>.
+ * A004008 Expansion of theta series of E_7 lattice in powers of q^2.
  * @author Sean A. Irvine
  */
 public class A004008 implements Sequence {

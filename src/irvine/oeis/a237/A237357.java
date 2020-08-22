@@ -4,7 +4,7 @@ package irvine.oeis.a237;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A237357 The number of tilings of the <code>3 X 3 X (2n)</code> room with <code>1 X 2 X 3</code> boxes.
+ * A237357 The number of tilings of the 3 X 3 X (2n) room with 1 X 2 X 3 boxes.
  * @author Georg Fischer
  */
 public class A237357 extends GeneratingFunctionSequence {

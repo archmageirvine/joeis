@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A027696 Nonparametric solutions to problem in <code>A027669: n</code> such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
+ * A027696 Nonparametric solutions to problem in A027669: n such that for some m, the sum of the first m n-gonal numbers is again an n-gonal number.
  * @author Sean A. Irvine
  */
 public class A027696 extends A027669 {

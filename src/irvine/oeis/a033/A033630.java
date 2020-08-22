@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033630 Number of partitions of n into distinct divisors of <code>n</code>.
+ * A033630 Number of partitions of n into distinct divisors of n.
  * @author Sean A. Irvine
  */
 public class A033630 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a267;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A267167 Growth series for affine Coxeter group <code>B_4</code>.
+ * A267167 Growth series for affine Coxeter group B_4.
  * @author Georg Fischer
  */
 public class A267167 extends HolonomicRecurrence {

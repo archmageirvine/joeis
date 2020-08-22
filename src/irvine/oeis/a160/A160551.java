@@ -6,7 +6,7 @@ package irvine.oeis.a160;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A160551 Number of (unordered) ways of making change for n dollars using coins of denominations <code>1, 5, 10</code>, and 25.
+ * A160551 Number of (unordered) ways of making change for n dollars using coins of denominations 1, 5, 10, and 25.
  * @author Georg Fischer
  */
 public class A160551 extends HolonomicRecurrence {

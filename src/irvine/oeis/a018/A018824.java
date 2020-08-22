@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018824 n is the sum of k nonzero squares for all <code>5 &lt;= k &lt;= n-14</code> (contains all integers <code>&gt;= 19</code> except <code>33)</code>.
+ * A018824 n is the sum of k nonzero squares for all 5 &lt;= k &lt;= n-14 (contains all integers &gt;= 19 except 33).
  * @author Sean A. Irvine
  */
 public class A018824 implements Sequence {

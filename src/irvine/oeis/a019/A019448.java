@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019448 Number of monomials in expansion of determinant of an <code>n X n</code> Hankel matrix <code>[ t(i+j) ]</code> in terms of its entries.
+ * A019448 Number of monomials in expansion of determinant of an n X n Hankel matrix [ t(i+j) ] in terms of its entries.
  * @author Sean A. Irvine
  */
 public class A019448 implements Sequence {

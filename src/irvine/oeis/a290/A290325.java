@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290325 Number of minimal dominating sets (and maximal irredundant sets) in the complete tripartite graph <code>K_{n,n,n}</code>.
+ * A290325 Number of minimal dominating sets (and maximal irredundant sets) in the complete tripartite graph K_{n,n,n}.
  * @author Georg Fischer
  */
 public class A290325 extends GeneratingFunctionSequence {

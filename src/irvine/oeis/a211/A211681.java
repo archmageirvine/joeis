@@ -4,7 +4,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A211681 Numbers such that all the substrings of length <code>&lt;= 2</code> are primes.
+ * A211681 Numbers such that all the substrings of length &lt;= 2 are primes.
  * @author Georg Fischer
  */
 public class A211681 extends GeneratingFunctionSequence {

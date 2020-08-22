@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A139738 <code>a(n) = 10^n mod 8^n</code>.
+ * A139738 a(n) = 10^n mod 8^n.
  * @author Georg Fischer
  */
 public class A139738 implements Sequence {

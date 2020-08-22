@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176402 Decimal expansion of <code>(9+sqrt(87))/3</code>.
+ * A176402 Decimal expansion of (9+sqrt(87))/3.
  * @author Georg Fischer
  */
 public class A176402 extends DecimalExpansionSequence {

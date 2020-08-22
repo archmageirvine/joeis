@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033853 Integers k such that <code>j(k)*d(k)=phi(k)</code>, where j <code>= A033831</code>.
+ * A033853 Integers k such that j(k)*d(k)=phi(k), where j = A033831.
  * @author Sean A. Irvine
  */
 public class A033853 extends A033831 {

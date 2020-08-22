@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091541 Four times triple factorials <code>(3*n-2)!!!</code> with leading 1 added.
+ * A091541 Four times triple factorials (3*n-2)!!! with leading 1 added.
  * @author Georg Fischer
  */
 public class A091541 extends HolonomicRecurrence {

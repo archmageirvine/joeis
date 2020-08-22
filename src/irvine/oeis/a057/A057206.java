@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.z.Z;
 
 /**
- * A057206 Primes of the form <code>6k+5</code> generated recursively: <code>a(1)=5; a(n) = min{p</code>, prime; p <code>mod 6 = 5; p | 6Q-1}</code>, where Q is the product of all previous terms in the sequence.
+ * A057206 Primes of the form 6k+5 generated recursively: a(1)=5; a(n) = min{p, prime; p mod 6 = 5; p | 6Q-1}, where Q is the product of all previous terms in the sequence.
  * @author Sean A. Irvine
  */
 public class A057206 extends A057205 {

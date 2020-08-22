@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033676 Largest divisor of <code>n &lt;= sqrt(n)</code>.
+ * A033676 Largest divisor of n &lt;= sqrt(n).
  * @author Sean A. Irvine
  */
 public class A033676 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288920 Number of 6-cycles in the <code>n X n</code> king graph.
+ * A288920 Number of 6-cycles in the n X n king graph.
  * @author Georg Fischer
  */
 public class A288920 extends GeneratingFunctionSequence {

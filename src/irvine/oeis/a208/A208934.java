@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A208934 Smallest positive integer containing the n-th letter of the alphabet in German, including the umlauts and \u00df (sharp <code>s)</code>, but treating the letters a, o, u separately from their umlauted versions, or -1 if no such integer exists.
+ * A208934 Smallest positive integer containing the n-th letter of the alphabet in German, including the umlauts and \u00df (sharp s), but treating the letters a, o, u separately from their umlauted versions, or -1 if no such integer exists.
  * @author Georg Fischer
  */
 public class A208934 extends FiniteSequence {

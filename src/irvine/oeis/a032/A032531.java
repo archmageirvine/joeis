@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002262;
 
 /**
- * A032531 <code>a(n) =</code> number of <code>a(i)</code> for <code>0&lt;=i&lt;n</code> that are equal to <code>A002262(n)</code>.
+ * A032531 a(n) = number of a(i) for 0&lt;=i&lt;n that are equal to A002262(n).
  * @author Sean A. Irvine
  */
 public class A032531 extends MemorySequence {

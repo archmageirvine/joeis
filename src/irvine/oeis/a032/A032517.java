@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032517 Sum of the integer part of <code>9/2-th</code> roots of integers less than <code>n</code>.
+ * A032517 Sum of the integer part of 9/2-th roots of integers less than n.
  * @author Sean A. Irvine
  */
 public class A032517 implements Sequence {

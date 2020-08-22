@@ -3,7 +3,7 @@ package irvine.oeis.a004;
 import irvine.math.z.Z;
 
 /**
- * A004789 Least k such that number of distinct prime divisors of the numbers in row k of Pascal's triangle is <code>n</code>.
+ * A004789 Least k such that number of distinct prime divisors of the numbers in row k of Pascal's triangle is n.
  * @author Sean A. Irvine
  */
 public class A004789 extends A004788 {

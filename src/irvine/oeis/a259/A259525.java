@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a007.A007318;
 
 /**
- * A259525 First differences of <code>A007318</code>, when Pascal's triangle is seen as flattened list.
+ * A259525 First differences of A007318, when Pascal's triangle is seen as flattened list.
  * @author Georg Fischer
  */
 public class A259525 extends DifferenceSequence {

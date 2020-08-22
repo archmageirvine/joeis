@@ -5,7 +5,7 @@ import irvine.math.group.IntegersMod;
 import irvine.oeis.OrdersFiniteGroupSequence;
 
 /**
- * A145752 <code>a(n) =</code> number of elements of order n in simple group <code>Alt(7)</code> of order 2520.
+ * A145752 a(n) = number of elements of order n in simple group Alt(7) of order 2520.
  * @author Sean A. Irvine
  */
 public class A145752 extends OrdersFiniteGroupSequence {

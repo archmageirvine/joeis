@@ -3,7 +3,7 @@ package irvine.oeis.a100;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A100189 Equatorial structured <code>meta-anti-diamond</code> numbers, the n-th number from an equatorial structured <code>n-gonal anti-diamond</code> number sequence.
+ * A100189 Equatorial structured meta-anti-diamond numbers, the n-th number from an equatorial structured n-gonal anti-diamond number sequence.
  * @author Sean A. Irvine
  */
 public class A100189 extends LinearRecurrence {

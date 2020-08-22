@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A193887 Decimal expansion of <code>Pi * sqrt(2)/8</code>.
+ * A193887 Decimal expansion of Pi * sqrt(2)/8.
  * @author Georg Fischer
  */
 public class A193887 extends DecimalExpansionSequence {

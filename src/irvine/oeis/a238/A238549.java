@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238549 <code>a(n)</code> is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
+ * A238549 a(n) is one fourth of the total number of free ends of 4 line segments expansion at n iterations (see Comments lines for definition).
  * @author Georg Fischer
  */
 public class A238549 extends GeneratingFunctionSequence {

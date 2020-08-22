@@ -6,7 +6,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178792 Dot product of the rows of triangle <code>A046899</code> with vector <code>(1,2,4,8,...) (= A000079)</code>.
+ * A178792 Dot product of the rows of triangle A046899 with vector (1,2,4,8,...) (= A000079).
  * @author Georg Fischer
  */
 public class A178792 extends HolonomicRecurrence {

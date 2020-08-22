@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A051916 The Greek sequence: <code>2^a * 3^b * 5^c</code> where a <code>= 0,1,2,3...</code>, b,c in <code>{0,1}</code>, excluding the terms 1,2; that is: <code>(a,b,c) =/= (0,0,0), (1,0,0)):</code>.
+ * A051916 The Greek sequence: 2^a * 3^b * 5^c where a = 0,1,2,3..., b,c in {0,1}, excluding the terms 1,2; that is: (a,b,c) =/= (0,0,0), (1,0,0)):.
  * @author Georg Fischer
  */
 public class A051916 extends GeneratingFunctionSequence {

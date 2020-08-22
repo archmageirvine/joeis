@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262258 <code>a(n) =</code> the number of hills (arch length of 1 with no covering arches) for semi-meander solutions with n arches and <code>floor((n+2)/2)</code> arch group returns to the x axis.
+ * A262258 a(n) = the number of hills (arch length of 1 with no covering arches) for semi-meander solutions with n arches and floor((n+2)/2) arch group returns to the x axis.
  * @author Georg Fischer
  */
 public class A262258 extends GeneratingFunctionSequence {

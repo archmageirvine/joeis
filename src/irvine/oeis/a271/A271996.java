@@ -3,7 +3,7 @@ package irvine.oeis.a271;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A271996 The crystallogen sequence <code>(a(n) = A018227(n)-4)</code>.
+ * A271996 The crystallogen sequence (a(n) = A018227(n)-4).
  * @author Sean A. Irvine
  */
 public class A271996 extends LinearRecurrence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032116 Shifts left under "BIJ" <code>(reversible</code>, indistinct, labeled) transform.
+ * A032116 Shifts left under "BIJ" (reversible, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032116 implements Sequence {

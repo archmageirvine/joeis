@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A035043 Replace any decimal digit <code>'1'</code> with <code>'2'</code> and vice versa.
+ * A035043 Replace any decimal digit '1' with '2' and vice versa.
  * @author Georg Fischer
  */
 public class A035043 extends A001477 {

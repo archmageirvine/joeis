@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181214 Number of <code>n X 3</code> binary matrices with no three <code>1</code>'s adjacent in a line diagonally or antidiagonally.
+ * A181214 Number of n X 3 binary matrices with no three 1's adjacent in a line diagonally or antidiagonally.
  * @author Georg Fischer
  */
 public class A181214 extends LinearRecurrence {

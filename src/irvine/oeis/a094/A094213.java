@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094213 <code>a(n) = Sum_{k=0..n} binomial(9*n,9*k)</code>.
+ * A094213 a(n) = Sum_{k=0..n} binomial(9*n,9*k).
  * @author Georg Fischer
  */
 public class A094213 extends HolonomicRecurrence {

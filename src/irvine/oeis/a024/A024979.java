@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024979 Position of <code>n^3 + 9</code> in <code>A024975</code>.
+ * A024979 Position of n^3 + 9 in A024975.
  * @author Sean A. Irvine
  */
 public class A024979 extends A024975 {

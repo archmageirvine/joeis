@@ -4,7 +4,7 @@ package irvine.oeis.a073;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A073376 Sixth convolution of <code>A001045(n+1)</code> (generalized <code>(1,2)-Fibonacci), n&gt;=0</code>, with itself.
+ * A073376 Sixth convolution of A001045(n+1) (generalized (1,2)-Fibonacci), n&gt;=0, with itself.
  * @author Georg Fischer
  */
 public class A073376 extends GeneratingFunctionSequence {

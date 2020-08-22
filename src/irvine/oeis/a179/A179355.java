@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179355 Number of permutations of <code>1..n</code> with <code>i-9&lt;=p(i)&lt;=i+2</code>.
+ * A179355 Number of permutations of 1..n with i-9&lt;=p(i)&lt;=i+2.
  * @author Georg Fischer
  */
 public class A179355 extends GeneratingFunctionSequence {

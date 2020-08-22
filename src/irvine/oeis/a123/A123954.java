@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123954 Expansion of g.f.: <code>x^5/((1-3*x)*(1-4*x)*(1-5*x)*(1 - 8*x + 13*x^2))</code>.
+ * A123954 Expansion of g.f.: x^5/((1-3*x)*(1-4*x)*(1-5*x)*(1 - 8*x + 13*x^2)).
  * @author Georg Fischer
  */
 public class A123954 extends GeneratingFunctionSequence {

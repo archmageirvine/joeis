@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108261 2nd order recursive series having the property that the product of any two adjacent terms is a triangular number, <code>T(b) = b(b+1)/2</code> where b equals term <code>a(n)</code> of related series <code>A108262</code>.
+ * A108261 2nd order recursive series having the property that the product of any two adjacent terms is a triangular number, T(b) = b(b+1)/2 where b equals term a(n) of related series A108262.
  * @author Georg Fischer
  */
 public class A108261 extends HolonomicRecurrence {

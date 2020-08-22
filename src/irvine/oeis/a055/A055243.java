@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055243 First differences of <code>A001628</code> (Fibonacci convolution).
+ * A055243 First differences of A001628 (Fibonacci convolution).
  * @author Georg Fischer
  */
 public class A055243 extends GeneratingFunctionSequence {

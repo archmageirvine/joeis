@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152263 <code>a(n) = ((8 + sqrt(6))^n + (8 - sqrt(6))^n)/2</code>.
+ * A152263 a(n) = ((8 + sqrt(6))^n + (8 - sqrt(6))^n)/2.
  * @author Georg Fischer
  */
 public class A152263 extends GeneratingFunctionSequence {

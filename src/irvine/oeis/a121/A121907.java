@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121907 Expansion of g.f.: <code>(1 + x + x^2)/(1 - 2*x - 2*x^2)</code>.
+ * A121907 Expansion of g.f.: (1 + x + x^2)/(1 - 2*x - 2*x^2).
  * @author Georg Fischer
  */
 public class A121907 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a068;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A068244 1/6 the number of colorings of a <code>3 X 3 rhombic-</code> or <code>staggered-</code> hexagonal array with n colors.
+ * A068244 1/6 the number of colorings of a 3 X 3 rhombic- or staggered- hexagonal array with n colors.
  * @author Georg Fischer
  */
 public class A068244 extends GeneratingFunctionSequence {

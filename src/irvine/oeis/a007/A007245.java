@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007245 McKay-Thompson series of class <code>3C</code> for the Monster group.
+ * A007245 McKay-Thompson series of class 3C for the Monster group.
  * @author Sean A. Irvine
  */
 public class A007245 implements Sequence {

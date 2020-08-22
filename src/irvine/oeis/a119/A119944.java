@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003418;
 
 /**
- * A119944 First differences of <code>A003418(n) = lcm(1..n)</code>.
+ * A119944 First differences of A003418(n) = lcm(1..n).
  * @author Georg Fischer
  */
 public class A119944 extends DifferenceSequence {

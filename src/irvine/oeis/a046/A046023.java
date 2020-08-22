@@ -3,7 +3,7 @@ package irvine.oeis.a046;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A046023 Number of ways to color edges of a tetrahedron using <code>&lt;= n</code> colors.
+ * A046023 Number of ways to color edges of a tetrahedron using &lt;= n colors.
  * @author Sean A. Irvine
  */
 public class A046023 extends LinearRecurrence {

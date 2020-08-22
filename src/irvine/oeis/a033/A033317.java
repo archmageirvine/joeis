@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A033317 Smallest positive integer y satisfying the Pell equation <code>x^2 - D*y^2 = 1</code> for nonsquare D.
+ * A033317 Smallest positive integer y satisfying the Pell equation x^2 - D*y^2 = 1 for nonsquare D.
  * @author Sean A. Irvine
  */
 public class A033317 extends A033313 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000290;
 
 /**
- * A024038 <code>a(n) = 4^n - n^2</code>.
+ * A024038 a(n) = 4^n - n^2.
  * @author Sean A. Irvine
  */
 public class A024038 extends A000290 {

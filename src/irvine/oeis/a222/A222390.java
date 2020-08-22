@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222390 Nonnegative integers m such that <code>10*m*(m+1)+1</code> is a square.
+ * A222390 Nonnegative integers m such that 10*m*(m+1)+1 is a square.
  * @author Sean A. Irvine
  */
 public class A222390 extends LinearRecurrence {

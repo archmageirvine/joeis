@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a154.A154811;
 
 /**
- * A156872 Period <code>12: 1,3,-1,3,1,0,-1,-3,1,-3,-1,0</code> repeated.
+ * A156872 Period 12: 1,3,-1,3,1,0,-1,-3,1,-3,-1,0 repeated.
  * @author Georg Fischer
  */
 public class A156872 extends DifferenceSequence {

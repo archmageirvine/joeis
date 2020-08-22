@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321324 <code>a(n) = (n^2 - c(n)) / 7 + 1</code> where <code>c(n) = c(-n) = c(n+7)</code> for all n in Z and <code>a(n) = 1</code> if <code>0 &lt;= n &lt;=3</code> except <code>a(1) = 0</code>.
+ * A321324 a(n) = (n^2 - c(n)) / 7 + 1 where c(n) = c(-n) = c(n+7) for all n in Z and a(n) = 1 if 0 &lt;= n &lt;=3 except a(1) = 0.
  * @author Georg Fischer
  */
 public class A321324 extends GeneratingFunctionSequence {

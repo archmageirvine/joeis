@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001562 Numbers n such that <code>(10^n + 1)/11</code> is a prime.
+ * A001562 Numbers n such that (10^n + 1)/11 is a prime.
  * @author Sean A. Irvine
  */
 public class A001562 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a054;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A054447 Row sums of triangle <code>A054446</code> (partial row sums triangle of Fibonacci convolution triangle).
+ * A054447 Row sums of triangle A054446 (partial row sums triangle of Fibonacci convolution triangle).
  * @author Georg Fischer
  */
 public class A054447 extends HolonomicRecurrence {

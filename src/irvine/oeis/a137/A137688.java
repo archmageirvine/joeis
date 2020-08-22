@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a007.A007664;
 
 /**
- * A137688 <code>2^A003056: 2^n</code> appears <code>n+1</code> times.
+ * A137688 2^A003056: 2^n appears n+1 times.
  * @author Georg Fischer
  */
 public class A137688 extends DifferenceSequence {

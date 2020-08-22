@@ -5,7 +5,7 @@ package irvine.oeis.a244;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A244328 <code>a(1) = a(2) = 0;</code> for <code>n &gt;= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n))</code>.
+ * A244328 a(1) = a(2) = 0; for n &gt;= 3: a(n) = floor((n*(n+1)/2) / antisigma(n)) = floor(A000217(n) / A024816(n)).
  * @author Georg Fischer
  */
 public class A244328 extends HolonomicRecurrence {

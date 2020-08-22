@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031914 <code>a(n) = prime(10*n - 6)</code>.
+ * A031914 a(n) = prime(10*n - 6).
  * @author Sean A. Irvine
  */
 public class A031914 extends A000040 {

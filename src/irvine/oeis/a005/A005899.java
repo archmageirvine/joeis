@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005899 Number of points on surface of octahedron; also coordination sequence for cubic lattice: <code>a(0) = 1;</code> for <code>n &gt; 0, a(n) = 4n^2 + 2</code>,.
+ * A005899 Number of points on surface of octahedron; also coordination sequence for cubic lattice: a(0) = 1; for n &gt; 0, a(n) = 4n^2 + 2,.
  * @author Sean A. Irvine
  */
 public class A005899 implements Sequence {

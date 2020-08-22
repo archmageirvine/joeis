@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014884 n is equal to the number of <code>1</code>'s in all numbers <code>&lt;= n</code> written in base 9.
+ * A014884 n is equal to the number of 1's in all numbers &lt;= n written in base 9.
  * @author Sean A. Irvine
  */
 public class A014884 implements Sequence {

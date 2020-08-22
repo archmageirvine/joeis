@@ -6,7 +6,7 @@ package irvine.oeis.a265;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A265939 Central terms of triangle <code>A102363</code>.
+ * A265939 Central terms of triangle A102363.
  * @author Georg Fischer
  */
 public class A265939 extends HolonomicRecurrence {

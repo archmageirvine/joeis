@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028553 Numbers n such that <code>n(n+3)</code> is a palindrome.
+ * A028553 Numbers n such that n(n+3) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028553 implements Sequence {

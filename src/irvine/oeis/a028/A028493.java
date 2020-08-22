@@ -4,7 +4,7 @@ package irvine.oeis.a028;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A028493 <code>a(0) = 16, a(n+1) = 3a(n) - (6-n)^2</code>.
+ * A028493 a(0) = 16, a(n+1) = 3a(n) - (6-n)^2.
  * @author Georg Fischer
  */
 public class A028493 extends GeneratingFunctionSequence {

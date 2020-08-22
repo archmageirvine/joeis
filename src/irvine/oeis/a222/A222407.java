@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222407 Digital roots of tribonacci numbers <code>A000073</code>.
+ * A222407 Digital roots of tribonacci numbers A000073.
  * @author Georg Fischer
  */
 public class A222407 extends GeneratingFunctionSequence {

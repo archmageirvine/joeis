@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007908;
 
 /**
- * A019524 Duplicate terms of <code>A007908</code>.
+ * A019524 Duplicate terms of A007908.
  * @author Sean A. Irvine
  */
 public class A019524 extends A007908 {

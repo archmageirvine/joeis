@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035938 Number of partitions in parts not of the form <code>7k, 7k+2</code> or <code>7k-2</code>. Also number of partitions with 1 part of size 1 and differences between parts at distance 2 are greater than 1.
+ * A035938 Number of partitions in parts not of the form 7k, 7k+2 or 7k-2. Also number of partitions with 1 part of size 1 and differences between parts at distance 2 are greater than 1.
  * @author Georg Fischer
  */
 public class A035938 extends EulerTransform {

@@ -3,7 +3,7 @@ package irvine.oeis.a164;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A164849 Diagonal sum of <code>(100^n,1)</code> Pascal Triangle.
+ * A164849 Diagonal sum of (100^n,1) Pascal Triangle.
  * @author Sean A. Irvine
  */
 public class A164849 extends LinearRecurrence {

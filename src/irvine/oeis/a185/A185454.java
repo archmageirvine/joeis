@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185454 Trajectory of 5 under repeated application of the map in <code>A185452</code>.
+ * A185454 Trajectory of 5 under repeated application of the map in A185452.
  * @author Georg Fischer
  */
 public class A185454 extends GeneratingFunctionSequence {

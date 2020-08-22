@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a000.A000720;
 
 /**
- * A065133 Remainder when n-th prime is divided by the number of primes not exceeding <code>n</code>.
+ * A065133 Remainder when n-th prime is divided by the number of primes not exceeding n.
  * @author Georg Fischer
  * @author Sean A. Irvine
  */

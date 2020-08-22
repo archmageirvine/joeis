@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033271 Number of odd nonprimes <code>&lt;= n</code>.
+ * A033271 Number of odd nonprimes &lt;= n.
  * @author Sean A. Irvine
  */
 public class A033271 extends A033270 {

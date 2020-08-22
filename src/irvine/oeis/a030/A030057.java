@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030057 Least number that is not a sum of distinct divisors of <code>n</code>.
+ * A030057 Least number that is not a sum of distinct divisors of n.
  * @author Sean A. Irvine
  */
 public class A030057 implements Sequence {

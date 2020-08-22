@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025176 <code>a(n) =</code> Jacobi <code>P-Polynomial P_n(alpha=1, beta=1, x=sqrt(2))</code> multiplied by <code>2^(n/2+floor(n/2))</code> and divided by <code>n+1</code>.
+ * A025176 a(n) = Jacobi P-Polynomial P_n(alpha=1, beta=1, x=sqrt(2)) multiplied by 2^(n/2+floor(n/2)) and divided by n+1.
  * @author Sean A. Irvine
  */
 public class A025176 implements Sequence {

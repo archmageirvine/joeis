@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002001 <code>a(n) = 3*4^(n-1), n&gt;0; a(0)=1</code>.
+ * A002001 a(n) = 3*4^(n-1), n&gt;0; a(0)=1.
  * @author Sean A. Irvine
  */
 public class A002001 implements Sequence {

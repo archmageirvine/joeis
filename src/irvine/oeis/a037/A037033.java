@@ -3,7 +3,7 @@ package irvine.oeis.a037;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A037033 Earliest sequence of 6 primes according to the rules stipulated in <code>A005150</code>.
+ * A037033 Earliest sequence of 6 primes according to the rules stipulated in A005150.
  * @author Georg Fischer
  */
 public class A037033 extends FiniteSequence {

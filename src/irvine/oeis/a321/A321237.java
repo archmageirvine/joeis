@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321237 Start with a square of dimension <code>1 X 1</code>, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; <code>a(n)</code> gives the number of squares appended at n-th step.
+ * A321237 Start with a square of dimension 1 X 1, and repeatedly append along the squares of the previous step squares with half their side length that do not overlap with any prior square; a(n) gives the number of squares appended at n-th step.
  * @author Georg Fischer
  */
 public class A321237 extends GeneratingFunctionSequence {

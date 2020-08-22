@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013465 <code>cos(arctan(x)-arctanh(x))=1-160/6!*x^6-691200/10!*x^10+3942400/12!*x^12..</code>.
+ * A013465 cos(arctan(x)-arctanh(x))=1-160/6!*x^6-691200/10!*x^10+3942400/12!*x^12...
  * @author Sean A. Irvine
  */
 public class A013465 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026409 For <code>n &gt;= 1, n</code> n's take places at stage n: the first takes the least untaken place <code>(l.u.p)</code> and for <code>2&lt;=k&lt;=n</code>, the <code>k-th n</code> takes the l.u.p. more than <code>n-1</code> places past the place of the <code>(k-1)st n</code>.
+ * A026409 For n &gt;= 1, n n's take places at stage n: the first takes the least untaken place (l.u.p) and for 2&lt;=k&lt;=n, the k-th n takes the l.u.p. more than n-1 places past the place of the (k-1)st n.
  * @author Sean A. Irvine
  */
 public class A026409 implements Sequence {

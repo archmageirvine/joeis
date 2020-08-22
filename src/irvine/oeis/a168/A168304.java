@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168304 The fifth left hand column of triangle <code>A167565</code>.
+ * A168304 The fifth left hand column of triangle A167565.
  * @author Georg Fischer
  */
 public class A168304 extends LinearRecurrence {

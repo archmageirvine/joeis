@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088037 Smallest square k <code>== 1 (mod</code> some <code>n-th</code> power), <code>k &gt; 1</code>.
+ * A088037 Smallest square k == 1 (mod some n-th power), k &gt; 1.
  * @author Georg Fischer
  */
 public class A088037 extends HolonomicRecurrence {

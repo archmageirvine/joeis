@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024427 <code>S(n,1) + S(n-1,2) + S(n-2,3) + ... + S(n+1-k,k)</code>, where k <code>= floor((n+1)/2)</code> and <code>S(i,j)</code> are Stirling numbers of the second kind.
+ * A024427 S(n,1) + S(n-1,2) + S(n-2,3) + ... + S(n+1-k,k), where k = floor((n+1)/2) and S(i,j) are Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
 public class A024427 implements Sequence {

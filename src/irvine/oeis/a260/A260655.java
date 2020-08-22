@@ -6,7 +6,7 @@ package irvine.oeis.a260;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A260655 <code>a(n) = 4*36^n*Gamma(n+3/2)/(sqrt(Pi)*(n+2)!)</code>.
+ * A260655 a(n) = 4*36^n*Gamma(n+3/2)/(sqrt(Pi)*(n+2)!).
  * @author Georg Fischer
  */
 public class A260655 extends HolonomicRecurrence {

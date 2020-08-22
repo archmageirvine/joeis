@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138459 <code>a(n) = ((n-th prime)^6-(n-th prime)^4))/12</code>.
+ * A138459 a(n) = ((n-th prime)^6-(n-th prime)^4))/12.
  * @author Georg Fischer
  */
 public class A138459 extends A000040 {

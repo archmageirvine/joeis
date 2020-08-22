@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A032591 Four consecutive primes whose 'last digit cycle' equals <code>{1,3,7,9}</code>.
+ * A032591 Four consecutive primes whose 'last digit cycle' equals {1,3,7,9}.
  * @author Sean A. Irvine
  */
 public class A032591 extends A000040 {

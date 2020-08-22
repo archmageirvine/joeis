@@ -3,7 +3,7 @@ package irvine.oeis.a094;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A094703 <code>a(1)=1, a(2)=11, a(n+2) = 8*a(n+1) + 21*a(n)</code>.
+ * A094703 a(1)=1, a(2)=11, a(n+2) = 8*a(n+1) + 21*a(n).
  * @author Sean A. Irvine
  */
 public class A094703 extends LinearRecurrence {

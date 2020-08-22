@@ -4,7 +4,7 @@ import irvine.math.LongUtils;
 import irvine.math.z.Z;
 
 /**
- * A001991 Class numbers associated with entries of <code>A001990</code>.
+ * A001991 Class numbers associated with entries of A001990.
  * @author Sean A. Irvine
  */
 public class A001991 extends A001990 {

@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A332241 Indices of <code>A224078(n)</code> in <code>A025487</code>.
+ * A332241 Indices of A224078(n) in A025487.
  * @author Georg Fischer
  */
 public class A332241 extends FiniteSequence {

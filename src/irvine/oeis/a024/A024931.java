@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024931 <code>a(n) =</code> sum of remainders of <code>n mod 2,4,6,...,2k</code>, where k <code>= [ n/2 ]</code>.
+ * A024931 a(n) = sum of remainders of n mod 2,4,6,...,2k, where k = [ n/2 ].
  * @author Sean A. Irvine
  */
 public class A024931 implements Sequence {

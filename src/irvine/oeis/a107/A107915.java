@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107915 <code>a(n) = binomial(n+4,4)*binomial(n+5,4)*binomial(n+6,4)/75</code>.
+ * A107915 a(n) = binomial(n+4,4)*binomial(n+5,4)*binomial(n+6,4)/75.
  * @author Georg Fischer
  */
 public class A107915 extends GeneratingFunctionSequence {

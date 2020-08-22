@@ -6,7 +6,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174195 Number of permutations of <code>1..n</code> that almost avoid 231.
+ * A174195 Number of permutations of 1..n that almost avoid 231.
  * @author Georg Fischer
  */
 public class A174195 extends HolonomicRecurrence {

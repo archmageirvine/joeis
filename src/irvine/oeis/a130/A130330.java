@@ -7,7 +7,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A130330 Triangle read by rows, the matrix product <code>A130321 * A000012</code>, both taken as infinite lower triangular matrices.
+ * A130330 Triangle read by rows, the matrix product A130321 * A000012, both taken as infinite lower triangular matrices.
  * @author Georg Fischer
  */
 public class A130330 extends GeneratingFunctionTriangle {

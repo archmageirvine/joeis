@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a194.A194543;
 
 /**
- * A025157 Number of partitions of n with distinct parts <code>p(i)</code> such that if i <code>!=</code> j, then <code>|p(i) - p(j)| &gt;= 3</code>.
+ * A025157 Number of partitions of n with distinct parts p(i) such that if i != j, then |p(i) - p(j)| &gt;= 3.
  * @author Sean A. Irvine
  */
 public class A025157 extends A194543 {

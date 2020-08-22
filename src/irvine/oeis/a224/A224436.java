@@ -5,7 +5,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224436 The hyper-Wiener index of the polyphenylene dendrimer <code>G[n]</code> defined pictorially in the N. E. Arif et al. reference.
+ * A224436 The hyper-Wiener index of the polyphenylene dendrimer G[n] defined pictorially in the N. E. Arif et al. reference.
  * @author Georg Fischer
  */
 public class A224436 extends HolonomicRecurrence {

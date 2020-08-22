@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032621 Numbers n such that n concatenated with <code>n + 6</code> is a prime.
+ * A032621 Numbers n such that n concatenated with n + 6 is a prime.
  * @author Sean A. Irvine
  */
 public class A032621 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A228001 Prime factors of <code>10^100 - 2</code>.
+ * A228001 Prime factors of 10^100 - 2.
  * @author Georg Fischer
  */
 public class A228001 extends FiniteSequence {

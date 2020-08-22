@@ -6,7 +6,7 @@ package irvine.oeis.a265;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A265610 <code>a(n) = rf(n, n+2)/(n+2)! - rf(n, n)/n!</code>, rf the rising factorial <code>A265609</code>.
+ * A265610 a(n) = rf(n, n+2)/(n+2)! - rf(n, n)/n!, rf the rising factorial A265609.
  * @author Georg Fischer
  */
 public class A265610 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a128;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A128922 Numbers simultaneously 10-gonal and centered <code>10-gonal</code>.
+ * A128922 Numbers simultaneously 10-gonal and centered 10-gonal.
  * @author Sean A. Irvine
  */
 public class A128922 extends LinearRecurrence {

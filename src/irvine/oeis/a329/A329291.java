@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329291 Ratio <code>A101337(m)/m</code> for m <code>= A306360(n)</code>, numbers dividing the value of their narcissistic function.
+ * A329291 Ratio A101337(m)/m for m = A306360(n), numbers dividing the value of their narcissistic function.
  * @author Georg Fischer
  */
 public class A329291 extends FiniteSequence {

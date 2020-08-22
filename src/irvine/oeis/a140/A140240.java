@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A140240 Decimal expansion of <code>arccos(7/8)</code>.
+ * A140240 Decimal expansion of arccos(7/8).
  * @author Sean A. Irvine
  */
 public class A140240 extends DecimalExpansionSequence {

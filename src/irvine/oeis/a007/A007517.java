@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007517 <code>a(n) = phi(n) * (sigma(n) - n)</code>.
+ * A007517 a(n) = phi(n) * (sigma(n) - n).
  * @author Sean A. Irvine
  */
 public class A007517 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145409 Number of perfect matchings (or domino tilings) in <code>K_6 X P_n</code>.
+ * A145409 Number of perfect matchings (or domino tilings) in K_6 X P_n.
  * @author Georg Fischer
  */
 public class A145409 extends GeneratingFunctionSequence {

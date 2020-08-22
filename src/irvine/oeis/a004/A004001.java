@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A004001 <code>Hofstadter-Conway $10000</code> sequence: <code>a(n) = a(a(n-1)) + a(n-a(n-1))</code> with <code>a(1) = a(2) = 1</code>.
+ * A004001 Hofstadter-Conway $10000 sequence: a(n) = a(a(n-1)) + a(n-a(n-1)) with a(1) = a(2) = 1.
  * @author Sean A. Irvine
  */
 public class A004001 extends MemorySequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000035 Period <code>2</code>: repeat <code>[0, 1]; a(n) = n mod 2;</code> parity of <code>n</code>.
+ * A000035 Period 2: repeat [0, 1]; a(n) = n mod 2; parity of n.
  * @author Sean A. Irvine
  */
 public class A000035 implements Sequence {

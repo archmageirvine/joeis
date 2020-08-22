@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000655 <code>a(n) =</code> number of letters in <code>a(n-1)</code> (in English).
+ * A000655 a(n) = number of letters in a(n-1) (in English).
  * @author Sean A. Irvine
  */
 public class A000655 implements Sequence {

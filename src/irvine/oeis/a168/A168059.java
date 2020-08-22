@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168059 Denominator of <code>(n+2)/(n*(n+1))</code>.
+ * A168059 Denominator of (n+2)/(n*(n+1)).
  * @author Georg Fischer
  */
 public class A168059 extends GeneratingFunctionSequence {

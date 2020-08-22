@@ -5,7 +5,7 @@ package irvine.oeis.a266;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A266340 G.f. <code>= b(2)*b(4)*b(6)/(x^8+x^6-x^5+x^4-2*x^3-x+1)</code>, where <code>b(k) = (1-x^k)/(1-x)</code>.
+ * A266340 G.f. = b(2)*b(4)*b(6)/(x^8+x^6-x^5+x^4-2*x^3-x+1), where b(k) = (1-x^k)/(1-x).
  * @author Georg Fischer
  */
 public class A266340 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A008623 Molien series of 4-dimensional representation of <code>SL(2,7)</code>.
+ * A008623 Molien series of 4-dimensional representation of SL(2,7).
  * @author Sean A. Irvine
  */
 public class A008623 extends LinearRecurrence {

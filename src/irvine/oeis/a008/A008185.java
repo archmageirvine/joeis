@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A008185 Coordination sequence <code>T4</code> for Zeolite Code MOR.
+ * A008185 Coordination sequence T4 for Zeolite Code MOR.
  * @author Sean A. Irvine
  */
 public class A008185 extends CoordinationSequence {

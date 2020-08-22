@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A033831 Number of numbers d dividing n such that d <code>&gt;= 3</code> and <code>1 &lt;= n/d &lt;= d-2</code>.
+ * A033831 Number of numbers d dividing n such that d &gt;= 3 and 1 &lt;= n/d &lt;= d-2.
  * @author Sean A. Irvine
  */
 public class A033831 implements Sequence {

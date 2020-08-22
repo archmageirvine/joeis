@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A057446 To get next term, multiply by 13, add 1 and discard any prime factors <code>&lt; 13</code>.
+ * A057446 To get next term, multiply by 13, add 1 and discard any prime factors &lt; 13.
  * @author Georg Fischer
  */
 public class A057446 extends PaddingSequence {

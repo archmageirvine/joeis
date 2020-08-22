@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328808 Constant term in the expansion of <code>(3 + x + y + z + 1/x + 1/y + 1/z + x*y + y*z + z*x + 1/(x*y) + 1/(y*z) + 1/(z*x) + x*y*z + 1/(x*y*z))^n</code>.
+ * A328808 Constant term in the expansion of (3 + x + y + z + 1/x + 1/y + 1/z + x*y + y*z + z*x + 1/(x*y) + 1/(y*z) + 1/(z*x) + x*y*z + 1/(x*y*z))^n.
  * @author Georg Fischer
  */
 public class A328808 extends HolonomicRecurrence {

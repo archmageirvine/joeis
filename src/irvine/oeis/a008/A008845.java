@@ -3,7 +3,7 @@ package irvine.oeis.a008;
 import irvine.math.z.Z;
 
 /**
- * A008845 Numbers k such that <code>k+1</code> and <code>k/2+1</code> are squares.
+ * A008845 Numbers k such that k+1 and k/2+1 are squares.
  * @author Sean A. Irvine
  */
 public class A008845 extends A008844 {

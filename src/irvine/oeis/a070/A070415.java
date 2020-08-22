@@ -4,7 +4,7 @@ package irvine.oeis.a070;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A070415 <code>a(n) = 7^n mod 31</code>.
+ * A070415 a(n) = 7^n mod 31.
  * @author Georg Fischer
  */
 public class A070415 extends GeneratingFunctionSequence {

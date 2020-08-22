@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023887 <code>a(n) = sigma_n(n)</code>: sum of n-th powers of divisors of <code>n</code>.
+ * A023887 a(n) = sigma_n(n): sum of n-th powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A023887 implements Sequence {

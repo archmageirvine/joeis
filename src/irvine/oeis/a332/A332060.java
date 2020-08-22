@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A332060 <code>a(n) = 3*a(n-1) + a(n-2)</code> after initial values <code>a(0..5) = (0, 1, 2, 3, 5, 13)</code>.
+ * A332060 a(n) = 3*a(n-1) + a(n-2) after initial values a(0..5) = (0, 1, 2, 3, 5, 13).
  * @author Georg Fischer
  */
 public class A332060 extends GeneratingFunctionSequence {

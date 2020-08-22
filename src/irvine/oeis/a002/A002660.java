@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A002660 <code>a(n) = Sum_{d|n, d &lt;= 3} d^2 + 3*Sum_{d|n, d&gt;3}</code> d.
+ * A002660 a(n) = Sum_{d|n, d &lt;= 3} d^2 + 3*Sum_{d|n, d&gt;3} d.
  * @author Sean A. Irvine
  */
 public class A002660 extends A000203 {

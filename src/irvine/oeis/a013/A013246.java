@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013246 E.g.f.: <code>sin(log(x+1)-arctan(x)) = -1/2!*x^2+4/3!*x^3-6/4!*x^4-105/6!*x^6..</code>.
+ * A013246 E.g.f.: sin(log(x+1)-arctan(x)) = -1/2!*x^2+4/3!*x^3-6/4!*x^4-105/6!*x^6...
  * @author Sean A. Irvine
  */
 public class A013246 implements Sequence {

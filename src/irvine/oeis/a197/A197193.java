@@ -4,7 +4,7 @@ package irvine.oeis.a197;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A197193 <code>Binomial(n+10, 10)*7^n</code>.
+ * A197193 Binomial(n+10, 10)*7^n.
  * @author Georg Fischer
  */
 public class A197193 extends GeneratingFunctionSequence {

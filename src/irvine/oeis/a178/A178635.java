@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178635 <code>a(n) = 72 * ((10^n - 1)/9)^2</code>.
+ * A178635 a(n) = 72 * ((10^n - 1)/9)^2.
  * @author Sean A. Irvine
  */
 public class A178635 extends LinearRecurrence {

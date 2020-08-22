@@ -6,7 +6,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240881 Chebyshev transform of <code>A107841</code>.
+ * A240881 Chebyshev transform of A107841.
  * @author Georg Fischer
  */
 public class A240881 extends HolonomicRecurrence {

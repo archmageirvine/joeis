@@ -5,7 +5,7 @@ package irvine.oeis.a065;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A065096 Sums of lists produced by a variant of the iteration that produces the Catalan numbers: start with 0 and at each iteration replace each integer k with the list <code>0,1,...,k-1,k,k+1,k,k-1,...,1,0</code> and let <code>a(n)</code> be the sum of the resulting (flattened) list after n iterations.
+ * A065096 Sums of lists produced by a variant of the iteration that produces the Catalan numbers: start with 0 and at each iteration replace each integer k with the list 0,1,...,k-1,k,k+1,k,k-1,...,1,0 and let a(n) be the sum of the resulting (flattened) list after n iterations.
  * @author Georg Fischer
  */
 public class A065096 extends HolonomicRecurrence {

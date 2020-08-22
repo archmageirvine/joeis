@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001623 Number of <code>3 X n</code> reduced (normalized) Latin rectangles.
+ * A001623 Number of 3 X n reduced (normalized) Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001623 implements Sequence {

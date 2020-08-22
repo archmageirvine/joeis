@@ -4,7 +4,7 @@ package irvine.oeis.a028;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A028309 Molien series for ring of symmetrized weight enumerators of self-dual codes (with respect to Euclidean inner product) of length n over <code>GF(4)</code>.
+ * A028309 Molien series for ring of symmetrized weight enumerators of self-dual codes (with respect to Euclidean inner product) of length n over GF(4).
  * @author Georg Fischer
  */
 public class A028309 extends LinearRecurrence {

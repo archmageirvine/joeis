@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032104 Shifts left 2 places under "BHK" <code>(reversible</code>, identity, unlabeled) transform.
+ * A032104 Shifts left 2 places under "BHK" (reversible, identity, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032104 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a116;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A116471 Values <code>2*(n -+ 1)^2</code> sorted.
+ * A116471 Values 2*(n -+ 1)^2 sorted.
  * @author Georg Fischer
  */
 public class A116471 extends GeneratingFunctionSequence {

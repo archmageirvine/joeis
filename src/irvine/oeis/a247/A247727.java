@@ -4,7 +4,7 @@ package irvine.oeis.a247;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A247727 Number of length <code>1+3 0..n</code> arrays with no disjoint pairs in any consecutive four terms having the same sum.
+ * A247727 Number of length 1+3 0..n arrays with no disjoint pairs in any consecutive four terms having the same sum.
  * @author Georg Fischer
  */
 public class A247727 extends GeneratingFunctionSequence {

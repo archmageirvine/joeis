@@ -5,7 +5,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125629 Expansion of <code>-1/(1 - x + x^2 - x^3 + x^4 + x^6)</code>.
+ * A125629 Expansion of -1/(1 - x + x^2 - x^3 + x^4 + x^6).
  * @author Georg Fischer
  */
 public class A125629 extends HolonomicRecurrence {

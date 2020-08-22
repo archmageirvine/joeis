@@ -5,7 +5,7 @@ package irvine.oeis.a178;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A178298 Number of collinear point triples in a <code>5 X 5 X 5</code> X... n-dimensional cubic grid.
+ * A178298 Number of collinear point triples in a 5 X 5 X 5 X... n-dimensional cubic grid.
  * @author Georg Fischer
  */
 public class A178298 extends HolonomicRecurrence {

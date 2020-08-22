@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159550 Decimal expansion of <code>(91443+58282*sqrt(2))/199^2</code>.
+ * A159550 Decimal expansion of (91443+58282*sqrt(2))/199^2.
  * @author Georg Fischer
  */
 public class A159550 extends DecimalExpansionSequence {

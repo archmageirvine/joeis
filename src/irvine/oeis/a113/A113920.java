@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113920 G.f.: <code>(x^3 - x + 1)^3/(x^3*(1 - x)^3)</code>.
+ * A113920 G.f.: (x^3 - x + 1)^3/(x^3*(1 - x)^3).
  * @author Georg Fischer
  */
 public class A113920 extends HolonomicRecurrence {

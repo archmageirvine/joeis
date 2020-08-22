@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030061 Weight distribution of <code>[ 17,8,8 ]</code> code over <code>GF(4)</code>.
+ * A030061 Weight distribution of [ 17,8,8 ] code over GF(4).
  * @author Georg Fischer
  */
 public class A030061 extends FiniteSequence {

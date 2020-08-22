@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A279687 <code>a(0) = 1, a(n)</code> is the least prime factor of <code>a(n-1)^2+1</code> that has not previously appeared in the sequence for <code>n &gt; 0</code>.
+ * A279687 a(0) = 1, a(n) is the least prime factor of a(n-1)^2+1 that has not previously appeared in the sequence for n &gt; 0.
  * @author Georg Fischer
  */
 public class A279687 extends FiniteSequence {

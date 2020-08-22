@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110935 <code>a(n) =</code> if <code>n mod 2 = 0</code> then <code>8*F(n)-n</code> otherwise <code>8*F(n)-4</code>, where <code>F() =</code> Fibonacci numbers <code>A000045</code>.
+ * A110935 a(n) = if n mod 2 = 0 then 8*F(n)-n otherwise 8*F(n)-4, where F() = Fibonacci numbers A000045.
  * @author Sean A. Irvine
  */
 public class A110935 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026845 <code>Sum_{mu</code> a partition of <code>n} (f^mu/n!)^{-2}</code> where <code>f^mu</code> is the number of standard Young tableaux of shape mu.
+ * A026845 Sum_{mu a partition of n} (f^mu/n!)^{-2} where f^mu is the number of standard Young tableaux of shape mu.
  * @author Sean A. Irvine
  */
 public class A026845 implements Sequence {

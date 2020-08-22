@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A178094 <code>a(1)=a(2)=1;</code> thereafter <code>a(n) = lpf(a(n-1)+a(n-2))</code>, where lpf = "least prime factor".
+ * A178094 a(1)=a(2)=1; thereafter a(n) = lpf(a(n-1)+a(n-2)), where lpf = "least prime factor".
  * @author Georg Fischer
  */
 public class A178094 extends PaddingSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226785 If <code>n=0 (mod 7)</code> then <code>a(n)=0</code>, otherwise <code>a(n)=7^(-1)</code> in <code>Z/nZ*</code>.
+ * A226785 If n=0 (mod 7) then a(n)=0, otherwise a(n)=7^(-1) in Z/nZ*.
  * @author Georg Fischer
  */
 public class A226785 extends GeneratingFunctionSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001597;
 
 /**
- * A075146 n-th perfect power <code>- n-th</code> prime: <code>pp(n) - prime(n)</code>.
+ * A075146 n-th perfect power - n-th prime: pp(n) - prime(n).
  * @author Georg Fischer
  */
 public class A075146 extends A000040 {

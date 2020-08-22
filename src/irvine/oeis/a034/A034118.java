@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034118 Decimal part of cube root of <code>a(n)</code> starts with digit 2.
+ * A034118 Decimal part of cube root of a(n) starts with digit 2.
  * @author Sean A. Irvine
  */
 public class A034118 implements Sequence {

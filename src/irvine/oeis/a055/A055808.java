@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055808 <code>a(n)</code> and <code>floor(a(n)/4)</code> are both squares; i.e., squares that remain squares when written in base 4 and last digit is removed.
+ * A055808 a(n) and floor(a(n)/4) are both squares; i.e., squares that remain squares when written in base 4 and last digit is removed.
  * @author Georg Fischer
  */
 public class A055808 extends LinearRecurrence {

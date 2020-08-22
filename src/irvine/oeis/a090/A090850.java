@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A090850 Clark's triangle with <code>f=6</code> read by row.
+ * A090850 Clark's triangle with f=6 read by row.
  * @author Sean A. Irvine
  */
 public class A090850 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A290285 Determinant of circulant matrix of order 3 with entries in the first row <code>(-1)^j * Sum_{k&gt;=0} binomial(n,3*k+j), j=0,1,2</code>.
+ * A290285 Determinant of circulant matrix of order 3 with entries in the first row (-1)^j * Sum_{k&gt;=0} binomial(n,3*k+j), j=0,1,2.
  * @author Georg Fischer
  */
 public class A290285 extends GeneratingFunctionSequence {

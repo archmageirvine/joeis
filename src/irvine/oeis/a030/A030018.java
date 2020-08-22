@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A030018 Coefficients in <code>1/(1+P(x))</code>, where <code>P(x)</code> is the generating function of the primes.
+ * A030018 Coefficients in 1/(1+P(x)), where P(x) is the generating function of the primes.
  * @author Sean A. Irvine
  */
 public class A030018 extends MemorySequence {

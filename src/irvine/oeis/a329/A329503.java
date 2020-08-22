@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A329503 G.f. <code>= (1+x)*(1+2*x+2*x^2)/(1-x)</code>.
+ * A329503 G.f. = (1+x)*(1+2*x+2*x^2)/(1-x).
  * @author Georg Fischer
  */
 public class A329503 extends GeneratingFunctionSequence {

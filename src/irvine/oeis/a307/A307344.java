@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307344 Cells visited by a single pawn move for an even cell and a double pawn move for an odd cell on a numbered <code>3D</code> grid and moving to the lowest available unvisited cell of different parity at each step.
+ * A307344 Cells visited by a single pawn move for an even cell and a double pawn move for an odd cell on a numbered 3D grid and moving to the lowest available unvisited cell of different parity at each step.
  * @author Georg Fischer
  */
 public class A307344 extends FiniteSequence {

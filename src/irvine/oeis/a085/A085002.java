@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000201;
 
 
 /**
- * A085002 <code>a(n) = floor(phi*n) - 2*floor(phi*n/2)</code> where phi is the golden ratio.
+ * A085002 a(n) = floor(phi*n) - 2*floor(phi*n/2) where phi is the golden ratio.
  * @author Georg Fischer
  */
 public class A085002 extends A000201 {

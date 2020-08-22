@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A251687 G.f. satisfies: <code>A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} T(n,k)^2 * x^k] / A(x)^n * x^n/n )</code>, where <code>T(n,k)</code> is the coefficient of <code>x^k</code> in <code>(1 + x + 2*x^2)^n</code>.
+ * A251687 G.f. satisfies: A(x) = exp( Sum_{n&gt;=1} [Sum_{k=0..2*n} T(n,k)^2 * x^k] / A(x)^n * x^n/n ), where T(n,k) is the coefficient of x^k in (1 + x + 2*x^2)^n.
  * @author Georg Fischer
  */
 public class A251687 extends GeneratingFunctionSequence {

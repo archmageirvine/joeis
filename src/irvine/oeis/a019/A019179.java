@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.oeis.a018.A018940;
 
 /**
- * A019179 Cycle class sequence <code>c(n)</code> (the number of true cycles of length n in which a certain node is included) for zeolite MOR = Mordenite <code>Na8[ Al8Si40O96 ] . 24 H2O</code>.
+ * A019179 Cycle class sequence c(n) (the number of true cycles of length n in which a certain node is included) for zeolite MOR = Mordenite Na8[ Al8Si40O96 ] . 24 H2O.
  * @author Sean A. Irvine
  */
 public class A019179 extends A018940 {

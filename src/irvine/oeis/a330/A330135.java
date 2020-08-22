@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A330135 <code>a(n) = ((10^(n+1))^4 - 1)/9999</code> for <code>n &gt;= 0</code>.
+ * A330135 a(n) = ((10^(n+1))^4 - 1)/9999 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A330135 extends GeneratingFunctionSequence {

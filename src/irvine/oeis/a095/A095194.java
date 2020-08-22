@@ -5,7 +5,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A095194 Least number that yields a semiprime when appended to <code>n!</code>.
+ * A095194 Least number that yields a semiprime when appended to n!.
  * @author Sean A. Irvine
  */
 public class A095194 implements Sequence {

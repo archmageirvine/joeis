@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000985 Number of <code>n X n</code> symmetric matrices with nonnegative entries and all row sums 2.
+ * A000985 Number of n X n symmetric matrices with nonnegative entries and all row sums 2.
  * @author Sean A. Irvine
  */
 public class A000985 implements Sequence {

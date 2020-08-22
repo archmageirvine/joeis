@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028415 Numerator of <code>Sum_{k=1..n} 1/phi(k)</code>.
+ * A028415 Numerator of Sum_{k=1..n} 1/phi(k).
  * @author Sean A. Irvine
  */
 public class A028415 implements Sequence {

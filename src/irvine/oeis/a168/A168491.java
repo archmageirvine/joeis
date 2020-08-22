@@ -6,7 +6,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168491 <code>a(n) = (-1)^n*Catalan(n)</code>.
+ * A168491 a(n) = (-1)^n*Catalan(n).
  * @author Georg Fischer
  */
 public class A168491 extends HolonomicRecurrence {

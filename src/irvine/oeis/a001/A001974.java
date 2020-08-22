@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.TreeSet;
 
 /**
- * A001974 Numbers that are the sum of 3 distinct squares, i.e., of the form <code>x^2 + y^2 + z^2</code> with <code>0 &lt;= x &lt; y &lt; z</code>.
+ * A001974 Numbers that are the sum of 3 distinct squares, i.e., of the form x^2 + y^2 + z^2 with 0 &lt;= x &lt; y &lt; z.
  * @author Sean A. Irvine
  */
 public class A001974 implements Sequence {

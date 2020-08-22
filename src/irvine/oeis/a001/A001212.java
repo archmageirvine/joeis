@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicShortArray;
 
 /**
- * A001212 <code>a(n) =</code> solution to the postage stamp problem with n denominations and 2 stamps.
+ * A001212 a(n) = solution to the postage stamp problem with n denominations and 2 stamps.
  * @author Sean A. Irvine
  */
 public class A001212 implements Sequence {

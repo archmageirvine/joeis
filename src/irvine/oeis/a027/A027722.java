@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A027722 Numbers k such that <code>k^2+k+7</code> is a palindrome.
+ * A027722 Numbers k such that k^2+k+7 is a palindrome.
  * @author Sean A. Irvine
  */
 public class A027722 implements Sequence {

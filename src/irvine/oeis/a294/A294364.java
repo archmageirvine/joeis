@@ -3,7 +3,7 @@ package irvine.oeis.a294;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A294364 Linear recurrence with signature <code>(1,1,-1,1,1)</code>, where the first terms are powers of <code>2 (1,2,4,8,16)</code>.
+ * A294364 Linear recurrence with signature (1,1,-1,1,1), where the first terms are powers of 2 (1,2,4,8,16).
  * @author Sean A. Irvine
  */
 public class A294364 extends LinearRecurrence {

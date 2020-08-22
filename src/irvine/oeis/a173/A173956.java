@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002110;
 
 /**
- * A173956 n-th primorial modulo <code>n</code>.
+ * A173956 n-th primorial modulo n.
  * @author Georg Fischer
  */
 public class A173956 extends A002110 {

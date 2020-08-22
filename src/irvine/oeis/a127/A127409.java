@@ -3,7 +3,7 @@ package irvine.oeis.a127;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A127409 Negative value of coefficient of <code>x^(n-4)</code> in the characteristic polynomial of a certain <code>n X n</code> integer circulant matrix.
+ * A127409 Negative value of coefficient of x^(n-4) in the characteristic polynomial of a certain n X n integer circulant matrix.
  * @author Sean A. Irvine
  */
 public class A127409 extends LinearRecurrence {

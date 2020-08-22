@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.DistinctSequence;
 
 /**
- * A028281 Distinct odd elements in 4-Pascal triangle <code>A028275</code> (by row).
+ * A028281 Distinct odd elements in 4-Pascal triangle A028275 (by row).
  * @author Sean A. Irvine
  */
 public class A028281 extends DistinctSequence {

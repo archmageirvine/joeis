@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122391 Dimension of <code>2-variable non-commutative</code> harmonics (Hausdorff derivative). The dimension of the space of non-commutative polynomials in 2 variables which are killed by all symmetric differential operators (where for a monomial w, <code>d_{xi} ( w ) =</code> sum over all subwords of w deleting xi once).
+ * A122391 Dimension of 2-variable non-commutative harmonics (Hausdorff derivative). The dimension of the space of non-commutative polynomials in 2 variables which are killed by all symmetric differential operators (where for a monomial w, d_{xi} ( w ) = sum over all subwords of w deleting xi once).
  * @author Georg Fischer
  */
 public class A122391 extends HolonomicRecurrence {

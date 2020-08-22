@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289199 <code>a(n)</code> is the number of odd integers divisible by 13 in the open interval <code>(12*(n-1)^2, 12*n^2)</code>.
+ * A289199 a(n) is the number of odd integers divisible by 13 in the open interval (12*(n-1)^2, 12*n^2).
  * @author Sean A. Irvine
  */
 public class A289199 extends LinearRecurrence {

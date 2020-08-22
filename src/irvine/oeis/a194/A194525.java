@@ -6,7 +6,7 @@ package irvine.oeis.a194;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A194525 Second coordinate of <code>(4,7)-Lagrange</code> pair for <code>n</code>.
+ * A194525 Second coordinate of (4,7)-Lagrange pair for n.
  * @author Georg Fischer
  */
 public class A194525 extends HolonomicRecurrence {

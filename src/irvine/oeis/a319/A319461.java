@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A319461 Decimal expansion of <code>Pi^2/8 - (3/8)*log(2)^2</code>.
+ * A319461 Decimal expansion of Pi^2/8 - (3/8)*log(2)^2.
  * @author Georg Fischer
  */
 public class A319461 extends DecimalExpansionSequence {

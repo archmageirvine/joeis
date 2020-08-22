@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a002.A002026;
 
 /**
- * A026107 Second differences of Motzkin numbers <code>(A001006)</code>.
+ * A026107 Second differences of Motzkin numbers (A001006).
  * @author Sean A. Irvine
  */
 public class A026107 extends DifferenceSequence {

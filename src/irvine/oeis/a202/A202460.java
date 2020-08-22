@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202460 Number of <code>(n+2) X 9</code> binary arrays with consecutive windows of three bits considered as a binary number nondecreasing in every row and column.
+ * A202460 Number of (n+2) X 9 binary arrays with consecutive windows of three bits considered as a binary number nondecreasing in every row and column.
  * @author Georg Fischer
  */
 public class A202460 extends GeneratingFunctionSequence {

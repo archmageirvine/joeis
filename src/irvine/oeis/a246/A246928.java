@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A246928 Number of integer solutions to <code>x^2 + 3*y^2 + 3*z^2 = n</code>.
+ * A246928 Number of integer solutions to x^2 + 3*y^2 + 3*z^2 = n.
  * @author Georg Fischer
  */
 public class A246928 extends EulerTransform {

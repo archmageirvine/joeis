@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303930 Number of no-leaf subgraphs of the <code>2 X n</code> grid up to horizontal and vertical reflection.
+ * A303930 Number of no-leaf subgraphs of the 2 X n grid up to horizontal and vertical reflection.
  * @author Georg Fischer
  */
 public class A303930 extends GeneratingFunctionSequence {

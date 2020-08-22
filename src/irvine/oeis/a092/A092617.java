@@ -6,7 +6,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092617 Number of connected ordered 5-element antichains on an unlabeled <code>n-set</code>.
+ * A092617 Number of connected ordered 5-element antichains on an unlabeled n-set.
  * @author Georg Fischer
  */
 public class A092617 extends GeneratingFunctionSequence {

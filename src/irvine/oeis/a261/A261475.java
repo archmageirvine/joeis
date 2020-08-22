@@ -4,7 +4,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261475 Number of binary strings of length <code>n+10</code> such that the smallest number whose binary representation is not visible in the string is 10.
+ * A261475 Number of binary strings of length n+10 such that the smallest number whose binary representation is not visible in the string is 10.
  * @author Georg Fischer
  */
 public class A261475 extends GeneratingFunctionSequence {

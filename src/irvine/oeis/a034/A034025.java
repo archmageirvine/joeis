@@ -4,7 +4,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a008.A008784;
 
 /**
- * A034025 Both primitively and imprimitively represented by <code>x^2+y^2</code>.
+ * A034025 Both primitively and imprimitively represented by x^2+y^2.
  * @author Sean A. Irvine
  */
 public class A034025 extends IntersectionSequence {

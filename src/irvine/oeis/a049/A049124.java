@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049124 Revert transform of <code>(-1 + x + x^2)/((x - 1)*(x + 1))</code>.
+ * A049124 Revert transform of (-1 + x + x^2)/((x - 1)*(x + 1)).
  * @author Georg Fischer
  */
 public class A049124 extends HolonomicRecurrence {

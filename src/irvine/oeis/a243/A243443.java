@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A243443 Decimal expansion of <code>7^(1/sqrt(7))</code>.
+ * A243443 Decimal expansion of 7^(1/sqrt(7)).
  * @author Georg Fischer
  */
 public class A243443 extends DecimalExpansionSequence {

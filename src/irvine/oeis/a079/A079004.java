@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A079004 Least <code>x&gt;=3</code> such that <code>F(x)==1 (mod 3^n)</code> where <code>F(x)</code> denotes the x-th Fibonacci number <code>(A000045)</code>.
+ * A079004 Least x&gt;=3 such that F(x)==1 (mod 3^n) where F(x) denotes the x-th Fibonacci number (A000045).
  * @author Georg Fischer
  */
 public class A079004 extends GeneratingFunctionSequence {

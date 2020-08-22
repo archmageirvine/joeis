@@ -5,7 +5,7 @@ package irvine.oeis.a263;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A263801 Partial sums of odd double factorials <code>(A001147)</code> with alternating signs.
+ * A263801 Partial sums of odd double factorials (A001147) with alternating signs.
  * @author Georg Fischer
  */
 public class A263801 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A177824 <code>a(n) = (Fibonacci(n)*Fibonacci(n+7)) mod 7</code>.
+ * A177824 a(n) = (Fibonacci(n)*Fibonacci(n+7)) mod 7.
  * @author Georg Fischer
  */
 public class A177824 extends PaddingSequence {

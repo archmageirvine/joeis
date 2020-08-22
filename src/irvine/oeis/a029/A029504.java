@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A029504 Numbers n such that n divides the (right) concatenation of all numbers <code>&lt;= n</code> written in base <code>11</code> (most significant digit on right).
+ * A029504 Numbers n such that n divides the (right) concatenation of all numbers &lt;= n written in base 11 (most significant digit on right).
  * @author Sean A. Irvine
  */
 public class A029504 implements Sequence {

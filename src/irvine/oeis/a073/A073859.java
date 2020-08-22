@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A073859 <code>a(1)=1</code> and <code>a(n&gt;1)=min{primes</code> up to <code>n-1 | a(1)+a(2)+...+a(n-1)+a(n)</code> is a cube}.
+ * A073859 a(1)=1 and a(n&gt;1)=min{primes up to n-1 | a(1)+a(2)+...+a(n-1)+a(n) is a cube}.
  * @author Georg Fischer
  */
 public class A073859 extends FiniteSequence {

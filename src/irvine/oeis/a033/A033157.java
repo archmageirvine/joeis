@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.StanleySequence;
 
 /**
- * A033157 Begins with <code>(1, 4);</code> avoids 3-term arithmetic progressions.
+ * A033157 Begins with (1, 4); avoids 3-term arithmetic progressions.
  * @author Sean A. Irvine
  */
 public class A033157 extends StanleySequence {

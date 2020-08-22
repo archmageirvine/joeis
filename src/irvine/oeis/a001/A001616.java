@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001616 Number of parabolic vertices of <code>Gamma_0(n)</code>.
+ * A001616 Number of parabolic vertices of Gamma_0(n).
  * @author Sean A. Irvine
  */
 public class A001616 implements Sequence {

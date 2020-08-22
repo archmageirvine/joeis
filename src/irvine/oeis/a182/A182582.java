@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a096.A096268;
 
 /**
- * A182582 <code>a(n) = (A096268(n) + A182581(n)) mod 2</code>.
+ * A182582 a(n) = (A096268(n) + A182581(n)) mod 2.
  * @author Georg Fischer
  */
 public class A182582 implements Sequence {

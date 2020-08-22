@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086302 <code>a(n) = 4*n^4 + 24*n^3 + 48*n^2 + 36*n + 8</code>.
+ * A086302 a(n) = 4*n^4 + 24*n^3 + 48*n^2 + 36*n + 8.
  * @author Georg Fischer
  */
 public class A086302 extends GeneratingFunctionSequence {

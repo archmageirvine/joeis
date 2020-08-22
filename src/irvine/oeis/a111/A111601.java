@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111601 Exponential (binomial) convolution of <code>A001818</code> (with interspersed zeros) and <code>A000142</code> (factorials).
+ * A111601 Exponential (binomial) convolution of A001818 (with interspersed zeros) and A000142 (factorials).
  * @author Georg Fischer
  */
 public class A111601 extends HolonomicRecurrence {

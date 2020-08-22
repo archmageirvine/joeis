@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089081 <code>26th</code> powers: <code>a(n) = n^26</code>.
+ * A089081 26th powers: a(n) = n^26.
  * @author Georg Fischer
  */
 public class A089081 extends HolonomicRecurrence {

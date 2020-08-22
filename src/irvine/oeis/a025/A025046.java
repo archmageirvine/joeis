@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025046 <code>a(n) =</code> the least odd prime p such that there are exactly n consecutive quadratic remainders modulo p.
+ * A025046 a(n) = the least odd prime p such that there are exactly n consecutive quadratic remainders modulo p.
  * @author Sean A. Irvine
  */
 public class A025046 implements Sequence {

@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A102638 Decimal expansion of <code>sqrt(Pi*sqrt(163)) - gamma^2</code>.
+ * A102638 Decimal expansion of sqrt(Pi*sqrt(163)) - gamma^2.
  * @author Georg Fischer
  */
 public class A102638 extends DecimalExpansionSequence {

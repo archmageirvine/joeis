@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002808;
 
 /**
- * A025546 <code>(1/4 - 1/6 + ... + d/c(n))*LCM{4, 6</code>, ..., <code>c(n)}</code>, where d <code>= (-1)^(n-1), c(n) = n-th</code> composite number.
+ * A025546 (1/4 - 1/6 + ... + d/c(n))*LCM{4, 6, ..., c(n)}, where d = (-1)^(n-1), c(n) = n-th composite number.
  * @author Sean A. Irvine
  */
 public class A025546 extends A002808 {

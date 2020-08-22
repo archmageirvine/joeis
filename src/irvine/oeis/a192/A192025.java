@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A192025 The Wiener index of the double-comb graph <code>\/_\/_\/...\/_\/</code> with <code>3n (n&gt;=1)</code> nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
+ * A192025 The Wiener index of the double-comb graph \/_\/_\/...\/_\/ with 3n (n&gt;=1) nodes. The Wiener index of a connected graph is the sum of the distances between all unordered pairs of vertices in the graph.
  * @author Georg Fischer
  */
 public class A192025 extends GeneratingFunctionSequence {

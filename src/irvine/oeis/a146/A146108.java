@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A146108 Bell numbers <code>(A000110)</code> read <code>mod 18</code>.
+ * A146108 Bell numbers (A000110) read mod 18.
  * @author Georg Fischer
  */
 public class A146108 extends PaddingSequence {

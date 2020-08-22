@@ -5,7 +5,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125816 <code>a(n) = ((1+sqrt(13))^n + (1-sqrt(13))^n)/2</code>.
+ * A125816 a(n) = ((1+sqrt(13))^n + (1-sqrt(13))^n)/2.
  * @author Georg Fischer
  */
 public class A125816 extends HolonomicRecurrence {

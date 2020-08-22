@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a017.A017911;
 
 /**
- * A057048 <code>a(n) = A017911(n+1) = round(sqrt(2)^(n+1))</code>.
+ * A057048 a(n) = A017911(n+1) = round(sqrt(2)^(n+1)).
  * @author Georg Fischer
  */
 public class A057048 implements Sequence {

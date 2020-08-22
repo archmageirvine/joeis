@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A157647 Decimal expansion of <code>(33+8*sqrt(2))/31</code>.
+ * A157647 Decimal expansion of (33+8*sqrt(2))/31.
  * @author Georg Fischer
  */
 public class A157647 extends DecimalExpansionSequence {

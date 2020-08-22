@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265676 <code>a(n)</code> is the total number of petals of the Flower of Life at the n-th iteration.
+ * A265676 a(n) is the total number of petals of the Flower of Life at the n-th iteration.
  * @author Georg Fischer
  */
 public class A265676 extends GeneratingFunctionSequence {

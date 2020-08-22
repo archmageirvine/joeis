@@ -6,7 +6,7 @@ package irvine.oeis.a302;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A302611 Expansion of e.g.f. <code>-log(1 - x)*arctanh(x)</code>.
+ * A302611 Expansion of e.g.f. -log(1 - x)*arctanh(x).
  * @author Georg Fischer
  */
 public class A302611 extends HolonomicRecurrence {

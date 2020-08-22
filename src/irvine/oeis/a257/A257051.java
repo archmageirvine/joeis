@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A257051 <code>a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n)</code> where <code>cpg(n, m)</code> is the <code>m-th n-th-order</code> centered polygonal number.
+ * A257051 a(n) = cpg(n, 3) + cpg(n, 4) + ... + cpg(n, n) where cpg(n, m) is the m-th n-th-order centered polygonal number.
  * @author Georg Fischer
  */
 public class A257051 extends LinearRecurrence {

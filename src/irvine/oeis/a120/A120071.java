@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120071 <code>a(n) = n*(n+20)</code>.
+ * A120071 a(n) = n*(n+20).
  * @author Sean A. Irvine
  */
 public class A120071 extends LinearRecurrence {

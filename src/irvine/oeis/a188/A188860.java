@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188860 Number of <code>n X n</code> binary arrays without the pattern <code>0 1</code> diagonally, vertically or antidiagonally.
+ * A188860 Number of n X n binary arrays without the pattern 0 1 diagonally, vertically or antidiagonally.
  * @author Georg Fischer
  */
 public class A188860 extends HolonomicRecurrence {

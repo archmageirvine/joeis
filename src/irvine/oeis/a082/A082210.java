@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082210 Square root of the squares arising in <code>A082209</code>.
+ * A082210 Square root of the squares arising in A082209.
  * @author Georg Fischer
  */
 public class A082210 extends LinearRecurrence {

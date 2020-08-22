@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A003778 Number of Hamiltonian paths in <code>P_5 X P_n</code>.
+ * A003778 Number of Hamiltonian paths in P_5 X P_n.
  * @author Sean A. Irvine
  */
 public class A003778 extends LinearRecurrence {

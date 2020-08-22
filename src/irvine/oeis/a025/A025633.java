@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025633 Numbers of form <code>8^i*9^j</code>, with i, j <code>&gt;= 0</code>.
+ * A025633 Numbers of form 8^i*9^j, with i, j &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A025633 implements Sequence {

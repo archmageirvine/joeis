@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276377 <code>60th</code> powers: <code>a(n) = n^60</code>.
+ * A276377 60th powers: a(n) = n^60.
  * @author Georg Fischer
  */
 public class A276377 extends HolonomicRecurrence {

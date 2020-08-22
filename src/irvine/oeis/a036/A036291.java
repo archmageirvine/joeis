@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036291 <code>a(n) = n*5^n</code>.
+ * A036291 a(n) = n*5^n.
  * @author Georg Fischer
  */
 public class A036291 extends GeneratingFunctionSequence {

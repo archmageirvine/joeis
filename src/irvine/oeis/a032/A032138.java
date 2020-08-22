@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032138 Shifts left under "CFJ" <code>(necklace</code>, size, labeled) transform.
+ * A032138 Shifts left under "CFJ" (necklace, size, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032138 extends MemorySequence {

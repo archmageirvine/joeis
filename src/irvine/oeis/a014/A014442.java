@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002582;
 
 /**
- * A014442 Largest prime factor of <code>n^2 + 1</code>.
+ * A014442 Largest prime factor of n^2 + 1.
  * @author Sean A. Irvine
  */
 public class A014442 implements Sequence {

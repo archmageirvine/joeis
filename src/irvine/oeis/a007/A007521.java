@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007521 Primes of the form <code>8n + 5</code>.
+ * A007521 Primes of the form 8n + 5.
  * @author Sean A. Irvine
  */
 public class A007521 implements Sequence {

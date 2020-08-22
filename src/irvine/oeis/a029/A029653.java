@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029653 Numbers in <code>(2,1)-Pascal</code> triangle (by row).
+ * A029653 Numbers in (2,1)-Pascal triangle (by row).
  * @author Sean A. Irvine
  */
 public class A029653 extends MemoryFunction2<Long, Z> implements Sequence {

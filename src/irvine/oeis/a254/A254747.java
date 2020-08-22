@@ -5,7 +5,7 @@ package irvine.oeis.a254;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A254747 <code>a(n) = (1 + Sum_{j=0..n} (C(n,j)*C(3*j-1,j))) / 2</code>.
+ * A254747 a(n) = (1 + Sum_{j=0..n} (C(n,j)*C(3*j-1,j))) / 2.
  * @author Georg Fischer
  */
 public class A254747 extends HolonomicRecurrence {

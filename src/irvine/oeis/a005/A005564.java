@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005564 Number of n-step walks on square lattice in the first quadrant which finish at distance <code>n-3</code> from the <code>x-axis</code>.
+ * A005564 Number of n-step walks on square lattice in the first quadrant which finish at distance n-3 from the x-axis.
  * @author Sean A. Irvine
  */
 public class A005564 implements Sequence {

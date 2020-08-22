@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.UnionSequence;
 
 /**
- * A034022 Numbers that are primitively or imprimitively represented by <code>x^2+xy+y^2</code>, but not both.
+ * A034022 Numbers that are primitively or imprimitively represented by x^2+xy+y^2, but not both.
  * @author Sean A. Irvine
  */
 public class A034022 extends UnionSequence {

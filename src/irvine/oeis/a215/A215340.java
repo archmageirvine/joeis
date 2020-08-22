@@ -6,7 +6,7 @@ package irvine.oeis.a215;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A215340 Expansion of <code>series_reversion( x/(1 + sum(k&gt;=1, x^A032766(k)) ) ) / x</code>.
+ * A215340 Expansion of series_reversion( x/(1 + sum(k&gt;=1, x^A032766(k)) ) ) / x.
  * @author Georg Fischer
  */
 public class A215340 extends HolonomicRecurrence {

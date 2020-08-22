@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123397 Values X satisfying the equation <code>9(X-Y)^4-2XY=0</code>, where <code>X&gt;=Y</code>.
+ * A123397 Values X satisfying the equation 9(X-Y)^4-2XY=0, where X&gt;=Y.
  * @author Georg Fischer
  */
 public class A123397 extends GeneratingFunctionSequence {

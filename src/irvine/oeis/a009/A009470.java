@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009470 <code>a(n)</code> is the concatenation of n and <code>8n</code>.
+ * A009470 a(n) is the concatenation of n and 8n.
  * @author Sean A. Irvine
  */
 public class A009470 implements Sequence {

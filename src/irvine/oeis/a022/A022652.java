@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.oeis.ConvolutionSequence;
 
 /**
- * A022652 Expansion of <code>Product_{m&gt;=1} (1+m*q^m)^24</code>.
+ * A022652 Expansion of Product_{m&gt;=1} (1+m*q^m)^24.
  * @author Sean A. Irvine
  */
 public class A022652 extends ConvolutionSequence {

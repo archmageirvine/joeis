@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002370 <code>a(n) = (2*n-1)^2 * a(n-1) - 3*C(2*n-1,3) * a(n-2)</code> for <code>n&gt;1; a(0) = a(1) = 1</code>.
+ * A002370 a(n) = (2*n-1)^2 * a(n-1) - 3*C(2*n-1,3) * a(n-2) for n&gt;1; a(0) = a(1) = 1.
  * @author Sean A. Irvine
  */
 public class A002370 implements Sequence {

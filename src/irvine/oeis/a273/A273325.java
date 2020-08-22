@@ -6,7 +6,7 @@ package irvine.oeis.a273;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A273325 Number of endofunctions on <code>[2n]</code> such that the minimal cardinality of the nonempty preimages equals <code>n</code>.
+ * A273325 Number of endofunctions on [2n] such that the minimal cardinality of the nonempty preimages equals n.
  * @author Georg Fischer
  */
 public class A273325 extends HolonomicRecurrence {

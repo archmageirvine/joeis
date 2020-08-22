@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259821 <code>a(n) = floor( (3^n+1)^2/3^n )</code>.
+ * A259821 a(n) = floor( (3^n+1)^2/3^n ).
  * @author Georg Fischer
  */
 public class A259821 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008961;
 
 /**
- * A009724 Denominators of Taylor series for <code>1/(sin x +</code> tan <code>x)</code>.
+ * A009724 Denominators of Taylor series for 1/(sin x + tan x).
  * @author Sean A. Irvine
  */
 public class A009724 extends A008961 {

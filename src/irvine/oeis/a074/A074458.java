@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A074458 Number of segments lit to display the number n on a 7-segment display (as in pocket <code>calculators)</code>: variant where <code>'6', '7'</code> and <code>'9'</code> use <code>6, 4</code> resp. 5 segments.
+ * A074458 Number of segments lit to display the number n on a 7-segment display (as in pocket calculators): variant where '6', '7' and '9' use 6, 4 resp. 5 segments.
  * @author Sean A. Irvine
  */
 public class A074458 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A197870 Expansion of false theta series variation of Ramanujan theta function <code>psi(x)</code>.
+ * A197870 Expansion of false theta series variation of Ramanujan theta function psi(x).
  * @author Sean A. Irvine
  */
 public class A197870 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a320;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A320259 Terms that are on the y-axis of the square spiral built with <code>2*k, 2*k+1, 2*k+1</code> for k <code>&gt;= 0</code>.
+ * A320259 Terms that are on the y-axis of the square spiral built with 2*k, 2*k+1, 2*k+1 for k &gt;= 0.
  * @author Georg Fischer
  */
 public class A320259 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A329505 Expansion of <code>(1 + x)*(1 + 2*x - x^2) / (1 - x)</code>.
+ * A329505 Expansion of (1 + x)*(1 + 2*x - x^2) / (1 - x).
  * @author Georg Fischer
  */
 public class A329505 extends PaddingSequence {

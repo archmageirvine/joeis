@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228581 The number of binary pattern classes in the <code>(2,n)-rectangular</code> grid with <code>6 '1</code>'s and <code>(2n-6) '0</code>'s: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
+ * A228581 The number of binary pattern classes in the (2,n)-rectangular grid with 6 '1's and (2n-6) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
  * @author Georg Fischer
  */
 public class A228581 extends GeneratingFunctionSequence {

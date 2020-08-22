@@ -5,7 +5,7 @@ package irvine.oeis.a103;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103885 <code>a(n) = [x^(2*n)] ((1 + x)/(1 - x))^n</code>.
+ * A103885 a(n) = [x^(2*n)] ((1 + x)/(1 - x))^n.
  * @author Georg Fischer
  */
 public class A103885 extends HolonomicRecurrence {

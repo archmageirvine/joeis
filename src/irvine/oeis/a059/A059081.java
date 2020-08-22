@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A059081 Number of <code>5-element T_0-antichains</code> on a labeled <code>n-set, n=0,..,32</code>.
+ * A059081 Number of 5-element T_0-antichains on a labeled n-set, n=0,..,32.
  * @author Georg Fischer
  */
 public class A059081 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001978 Number of partitions of <code>3n-1</code> into n nonnegative integers each no more than 6.
+ * A001978 Number of partitions of 3n-1 into n nonnegative integers each no more than 6.
  * @author Sean A. Irvine
  */
 public class A001978 implements Sequence {

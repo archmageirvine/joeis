@@ -5,7 +5,7 @@ package irvine.oeis.a245;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A245455 Number of minimax elements in the affine Weyl group of the Lie algebra <code>so(2n)</code>.
+ * A245455 Number of minimax elements in the affine Weyl group of the Lie algebra so(2n).
  * @author Georg Fischer
  */
 public class A245455 extends HolonomicRecurrence {

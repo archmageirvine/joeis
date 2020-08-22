@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A177443 Triangle, row sums <code>= A007729;</code> derived from the generator for <code>A002487</code>, Stern's diatomic series.
+ * A177443 Triangle, row sums = A007729; derived from the generator for A002487, Stern's diatomic series.
  * @author Georg Fischer
  */
 public class A177443 extends NoncomputableSequence {

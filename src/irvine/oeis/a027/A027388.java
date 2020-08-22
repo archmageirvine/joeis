@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027388 Write digits for n, count endpoints (version <code>3)</code>.
+ * A027388 Write digits for n, count endpoints (version 3).
  * @author Sean A. Irvine
  */
 public class A027388 implements Sequence {

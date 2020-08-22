@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033181 Absolute Euler pseudoprimes: odd composite numbers n such that <code>a^((n-1)/2) == +-1 (mod n)</code> for every a coprime to <code>n</code>.
+ * A033181 Absolute Euler pseudoprimes: odd composite numbers n such that a^((n-1)/2) == +-1 (mod n) for every a coprime to n.
  * @author Sean A. Irvine
  */
 public class A033181 implements Sequence {

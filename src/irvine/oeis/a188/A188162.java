@@ -5,7 +5,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188162 <code>a(n) = ceiling( 4^n/20 - (n^2 + 1)*2^(n-1) )</code>.
+ * A188162 a(n) = ceiling( 4^n/20 - (n^2 + 1)*2^(n-1) ).
  * @author Georg Fischer
  */
 public class A188162 extends HolonomicRecurrence {

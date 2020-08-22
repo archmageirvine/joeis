@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A062216 Numbers k such that the smoothly undulating palindromic number <code>(31*10^k - 13)/99</code> is a prime.
+ * A062216 Numbers k such that the smoothly undulating palindromic number (31*10^k - 13)/99 is a prime.
  * @author Georg Fischer
  */
 public class A062216 extends PowerFactorPrimeSequence {

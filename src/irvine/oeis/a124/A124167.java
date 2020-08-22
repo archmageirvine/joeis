@@ -5,7 +5,7 @@ package irvine.oeis.a124;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A124167 <code>a(n) = 10*(10^n-1)</code>.
+ * A124167 a(n) = 10*(10^n-1).
  * @author Georg Fischer
  */
 public class A124167 extends HolonomicRecurrence {

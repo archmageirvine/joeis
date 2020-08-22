@@ -4,7 +4,7 @@ package irvine.oeis.a229;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A229149 <code>a(n) = n^6*(4*n+3)</code>.
+ * A229149 a(n) = n^6*(4*n+3).
  * @author Georg Fischer
  */
 public class A229149 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A126852 <code>a(1) = 8;</code> for <code>n&gt;1, a(n)=SPM4Sigma(a(n)-1)</code>.
+ * A126852 a(1) = 8; for n&gt;1, a(n)=SPM4Sigma(a(n)-1).
  * @author Georg Fischer
  */
 public class A126852 extends PaddingSequence {

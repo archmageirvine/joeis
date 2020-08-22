@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030233 Number of <code>n-celled one-sided</code> polyplets.
+ * A030233 Number of n-celled one-sided polyplets.
  * @author Sean A. Irvine
  */
 public class A030233 implements Sequence {

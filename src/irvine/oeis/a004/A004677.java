@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004677 Numerator of <code>2^n*(3*n-3)!/( ((n-1)!)^3 * (2*n)! )</code>.
+ * A004677 Numerator of 2^n*(3*n-3)!/( ((n-1)!)^3 * (2*n)! ).
  * @author Sean A. Irvine
  */
 public class A004677 implements Sequence {

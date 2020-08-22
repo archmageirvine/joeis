@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028498 Let <code>[n] = {0,...,n-1}; a(n)</code> is number of functions <code>f:[n] -&gt; [n]</code> for which there exists an injection <code>g:[n] -&gt; [n+1]</code> such that for j with <code>0 &lt;= j &lt;</code> n, either <code>g(j) = f(j)</code> or <code>g(j) = f(j)+1</code>.
+ * A028498 Let [n] = {0,...,n-1}; a(n) is number of functions f:[n] -&gt; [n] for which there exists an injection g:[n] -&gt; [n+1] such that for j with 0 &lt;= j &lt; n, either g(j) = f(j) or g(j) = f(j)+1.
  * @author Sean A. Irvine
  */
 public class A028498 extends MemoryFunction2<Long, Z> implements Sequence {

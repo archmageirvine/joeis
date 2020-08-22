@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164005 Zero together with row 5 of the array in <code>A163280</code>.
+ * A164005 Zero together with row 5 of the array in A163280.
  * @author Georg Fischer
  */
 public class A164005 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
 /**
- * A085746 Numbers n such that <code>n^2 + n + 1</code> is a semiprime.
+ * A085746 Numbers n such that n^2 + n + 1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085746 extends SemiprimeSequence {

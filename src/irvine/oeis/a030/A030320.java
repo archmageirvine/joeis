@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A030320 Least k such that base 2 representation of n begins at <code>s(k)</code>, where <code>s=A030317</code>.
+ * A030320 Least k such that base 2 representation of n begins at s(k), where s=A030317.
  * @author Sean A. Irvine
  */
 public class A030320 implements Sequence {

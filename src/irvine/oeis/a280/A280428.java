@@ -5,7 +5,7 @@ package irvine.oeis.a280;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A280428 <code>a(n) = 1729*n^3</code>.
+ * A280428 a(n) = 1729*n^3.
  * @author Georg Fischer
  */
 public class A280428 extends HolonomicRecurrence {

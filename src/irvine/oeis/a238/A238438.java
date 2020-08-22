@@ -5,7 +5,7 @@ package irvine.oeis.a238;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238438 Expansion of <code>1/G(0)</code> where <code>G(k) = 1 - q/(1 - q - q^3 / G(k+1) )</code>.
+ * A238438 Expansion of 1/G(0) where G(k) = 1 - q/(1 - q - q^3 / G(k+1) ).
  * @author Georg Fischer
  */
 public class A238438 extends HolonomicRecurrence {

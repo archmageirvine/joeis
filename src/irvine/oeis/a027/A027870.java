@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027870 Number of zeros in <code>2^n</code>.
+ * A027870 Number of zeros in 2^n.
  * @author Sean A. Irvine
  */
 public class A027870 implements Sequence {

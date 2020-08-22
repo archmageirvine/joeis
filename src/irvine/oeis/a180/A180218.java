@@ -6,7 +6,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180218 <code>a(n) = (n+2)!*sum(1/k, k=1..n)</code>.
+ * A180218 a(n) = (n+2)!*sum(1/k, k=1..n).
  * @author Georg Fischer
  */
 public class A180218 extends HolonomicRecurrence {

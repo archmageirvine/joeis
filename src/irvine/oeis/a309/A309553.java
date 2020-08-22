@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A309553 Imperfect numbers of the form <code>2^(2^k-1)*F_1*F_2*...*F_(k-1)</code>, where F is a Fermat number.
+ * A309553 Imperfect numbers of the form 2^(2^k-1)*F_1*F_2*...*F_(k-1), where F is a Fermat number.
  * @author Georg Fischer
  */
 public class A309553 extends FiniteSequence {

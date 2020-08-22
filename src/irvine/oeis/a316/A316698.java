@@ -6,7 +6,7 @@ package irvine.oeis.a316;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A316698 <code>a(n)</code> is the number of rooted 2-connected triangular maps on the projective plane with n vertices.
+ * A316698 a(n) is the number of rooted 2-connected triangular maps on the projective plane with n vertices.
  * @author Georg Fischer
  */
 public class A316698 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309302 <code>(1/10)</code> times the sum of the elements of all subsets of <code>[n]</code> whose sum is divisible by ten.
+ * A309302 (1/10) times the sum of the elements of all subsets of [n] whose sum is divisible by ten.
  * @author Georg Fischer
  */
 public class A309302 extends HolonomicRecurrence {

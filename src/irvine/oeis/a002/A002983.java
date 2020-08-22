@@ -10,7 +10,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A002983 Expansion of e.g.f. <code>1/(1 - x*exp(x) + x^2*exp(2*x))</code>.
+ * A002983 Expansion of e.g.f. 1/(1 - x*exp(x) + x^2*exp(2*x)).
  * @author Sean A. Irvine
  */
 public class A002983 implements Sequence {

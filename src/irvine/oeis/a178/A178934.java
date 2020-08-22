@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178934 <code>a(n) = floor((3*4^n + 2*3^n)/5)</code>.
+ * A178934 a(n) = floor((3*4^n + 2*3^n)/5).
  * @author Georg Fischer
  */
 public class A178934 extends GeneratingFunctionSequence {

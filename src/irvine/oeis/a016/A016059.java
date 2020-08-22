@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a006.A006521;
 
 /**
- * A016059 <code>(s(n)+s(n+1))/6</code>, where <code>s()=A006521</code>.
+ * A016059 (s(n)+s(n+1))/6, where s()=A006521.
  * @author Sean A. Irvine
  */
 public class A016059 extends A006521 {

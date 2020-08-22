@@ -4,7 +4,7 @@ package irvine.oeis.a188;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A188498 Number of permutations p on the set <code>[n]</code> with the properties that <code>abs(p(i)-i) &lt;= 3</code> for all i, <code>p(1) &lt;= 2</code>, and <code>p(j) &gt;= 2</code> for <code>j=3,4</code>.
+ * A188498 Number of permutations p on the set [n] with the properties that abs(p(i)-i) &lt;= 3 for all i, p(1) &lt;= 2, and p(j) &gt;= 2 for j=3,4.
  * @author Georg Fischer
  */
 public class A188498 extends GeneratingFunctionSequence {

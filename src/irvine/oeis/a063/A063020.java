@@ -5,7 +5,7 @@ package irvine.oeis.a063;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A063020 Reversion of <code>y - y^2 - y^3 + y^4</code>.
+ * A063020 Reversion of y - y^2 - y^3 + y^4.
  * @author Georg Fischer
  */
 public class A063020 extends HolonomicRecurrence {

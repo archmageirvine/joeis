@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080145 <code>a(n) = Sum_{m=1..n} Sum_{i=1..m} F(i)F(i+1)</code> where <code>F(n)=Fibonacci</code> numbers <code>A000045</code>.
+ * A080145 a(n) = Sum_{m=1..n} Sum_{i=1..m} F(i)F(i+1) where F(n)=Fibonacci numbers A000045.
  * @author Georg Fischer
  */
 public class A080145 extends GeneratingFunctionSequence {

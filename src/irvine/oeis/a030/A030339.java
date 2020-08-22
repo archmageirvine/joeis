@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003137;
 
 /**
- * A030339 <code>(# 1's)-(# 0's)</code> in first n terms of <code>A003137</code>.
+ * A030339 (# 1's)-(# 0's) in first n terms of A003137.
  * @author Sean A. Irvine
  */
 public class A030339 extends A003137 {

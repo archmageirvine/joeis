@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A139626 <code>a(n) = binomial(n+4, 4)*6^n</code>.
+ * A139626 a(n) = binomial(n+4, 4)*6^n.
  * @author Sean A. Irvine
  */
 public class A139626 extends LinearRecurrence {

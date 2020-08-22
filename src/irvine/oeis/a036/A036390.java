@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a029.A029827;
 
 /**
- * A036390 First differences of composite connected numbers <code>(A029827)</code>.
+ * A036390 First differences of composite connected numbers (A029827).
  * @author Georg Fischer
  */
 public class A036390 extends DifferenceSequence {

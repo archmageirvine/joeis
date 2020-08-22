@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106058 4th diagonal of triangle in <code>A059317</code>.
+ * A106058 4th diagonal of triangle in A059317.
  * @author Georg Fischer
  */
 public class A106058 extends HolonomicRecurrence {

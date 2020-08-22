@@ -4,7 +4,7 @@ package irvine.oeis.a124;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A124156 Thickness of complete graph <code>K_n</code>.
+ * A124156 Thickness of complete graph K_n.
  * @author Georg Fischer
  */
 public class A124156 extends LinearRecurrence {

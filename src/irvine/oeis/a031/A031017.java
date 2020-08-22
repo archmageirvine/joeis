@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031017 <code>a(n)=least</code> k such that the base 7 representation of n begins at <code>s(k)</code>, where <code>s=A031016</code>.
+ * A031017 a(n)=least k such that the base 7 representation of n begins at s(k), where s=A031016.
  * @author Sean A. Irvine
  */
 public class A031017 extends A031006 {

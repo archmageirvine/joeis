@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002980 E.g.f: <code>1/(1-sin(x)+sin(x)^2-sin(x)^3)</code>.
+ * A002980 E.g.f: 1/(1-sin(x)+sin(x)^2-sin(x)^3).
  * @author Sean A. Irvine
  */
 public class A002980 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a124;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A124474 x-coordinate of position of n in the magic square in <code>A124471</code>.
+ * A124474 x-coordinate of position of n in the magic square in A124471.
  * @author Georg Fischer
  */
 public class A124474 extends FiniteSequence {

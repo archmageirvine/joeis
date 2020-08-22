@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085441 <code>a(n) = Sum_{i=1..n} binomial(i+1,2)^6</code>.
+ * A085441 a(n) = Sum_{i=1..n} binomial(i+1,2)^6.
  * @author Sean A. Irvine
  */
 public class A085441 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a285;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A285440 Consider the sums of the numbers <code>&lt; n</code> that share the same greatest common divisor with <code>n</code>. Sequence lists numbers that have only one of those sums equal to <code>n</code>.
+ * A285440 Consider the sums of the numbers &lt; n that share the same greatest common divisor with n. Sequence lists numbers that have only one of those sums equal to n.
  * @author Georg Fischer
  */
 public class A285440 extends GeneratingFunctionSequence {

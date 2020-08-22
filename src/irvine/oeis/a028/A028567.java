@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028567 Numbers n such that <code>n(n+8)</code> is a palindrome.
+ * A028567 Numbers n such that n(n+8) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028567 implements Sequence {

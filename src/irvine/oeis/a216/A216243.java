@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A216243 Partial sums of the squares of Lucas numbers <code>(A000032)</code>.
+ * A216243 Partial sums of the squares of Lucas numbers (A000032).
  * @author Sean A. Irvine
  */
 public class A216243 extends LinearRecurrence {

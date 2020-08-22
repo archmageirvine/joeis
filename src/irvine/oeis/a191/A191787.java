@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191787 Number of triple-rises in all length n left factors of Dyck paths <code>(triple-rise =</code> three consecutive <code>(1,1)-steps)</code>.
+ * A191787 Number of triple-rises in all length n left factors of Dyck paths (triple-rise = three consecutive (1,1)-steps).
  * @author Georg Fischer
  */
 public class A191787 extends HolonomicRecurrence {

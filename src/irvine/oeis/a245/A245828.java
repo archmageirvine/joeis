@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245828 Szeged index of the grid graph <code>P_n X P_n</code>.
+ * A245828 Szeged index of the grid graph P_n X P_n.
  * @author Georg Fischer
  */
 public class A245828 extends GeneratingFunctionSequence {

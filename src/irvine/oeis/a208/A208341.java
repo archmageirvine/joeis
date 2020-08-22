@@ -7,7 +7,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A208341 Triangle read by rows, <code>T(n,k) = hypergeometric_2F1([n-k+1, -k], [1], -1)</code> for <code>n&gt;=0</code> and <code>k&gt;=0</code>.
+ * A208341 Triangle read by rows, T(n,k) = hypergeometric_2F1([n-k+1, -k], [1], -1) for n&gt;=0 and k&gt;=0.
  * @author Georg Fischer
  */
 public class A208341 extends GeneratingFunctionTriangle {

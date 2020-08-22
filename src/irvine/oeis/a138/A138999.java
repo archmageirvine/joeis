@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138999 First differences of Frobenius numbers for 8 successive numbers <code>A138988</code>.
+ * A138999 First differences of Frobenius numbers for 8 successive numbers A138988.
  * @author Georg Fischer
  */
 public class A138999 extends HolonomicRecurrence {

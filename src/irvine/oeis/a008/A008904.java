@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008904 <code>a(n) =</code> final nonzero digit of <code>n!</code>.
+ * A008904 a(n) = final nonzero digit of n!.
  * @author Sean A. Irvine
  */
 public class A008904 implements Sequence {

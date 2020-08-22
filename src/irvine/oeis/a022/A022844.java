@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.BeattySequence;
 
 /**
- * A022844 <code>a(n) = floor(n*Pi)</code>.
+ * A022844 a(n) = floor(n*Pi).
  * @author Sean A. Irvine
  */
 public class A022844 extends BeattySequence {

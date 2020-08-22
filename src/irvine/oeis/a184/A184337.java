@@ -3,7 +3,7 @@ package irvine.oeis.a184;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A184337 <code>a(n)</code> is the integer whose decimal representation consists of <code>n 8</code>'s followed by <code>n 1</code>'s.
+ * A184337 a(n) is the integer whose decimal representation consists of n 8's followed by n 1's.
  * @author Sean A. Irvine
  */
 public class A184337 extends LinearRecurrence {

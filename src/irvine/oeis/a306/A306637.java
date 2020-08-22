@@ -6,7 +6,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306637 <code>a(n) = Fibonacci(n) * A128834(n)</code>.
+ * A306637 a(n) = Fibonacci(n) * A128834(n).
  * @author Georg Fischer
  */
 public class A306637 extends GeneratingFunctionSequence {

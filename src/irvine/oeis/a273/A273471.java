@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A273471 Primes p such that at least one of <code>1093*p</code> or <code>1093*p^2</code> is a Poulet number, i.e., a term of <code>A001567</code>.
+ * A273471 Primes p such that at least one of 1093*p or 1093*p^2 is a Poulet number, i.e., a term of A001567.
  * @author Georg Fischer
  */
 public class A273471 extends FiniteSequence {

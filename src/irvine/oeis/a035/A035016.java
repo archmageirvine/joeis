@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035016 Fourier coefficients of <code>E_{0,4}</code>.
+ * A035016 Fourier coefficients of E_{0,4}.
  * @author Georg Fischer
  */
 public class A035016 extends EulerTransform {

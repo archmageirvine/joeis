@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A258056 <code>3x + 1</code> sequence starting at 75.
+ * A258056 3x + 1 sequence starting at 75.
  * @author Georg Fischer
  */
 public class A258056 extends PaddingSequence {

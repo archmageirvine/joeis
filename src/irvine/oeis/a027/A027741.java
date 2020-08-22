@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027741 Number of primitive polynomials of degree n over <code>GF(5)</code>.
+ * A027741 Number of primitive polynomials of degree n over GF(5).
  * @author Sean A. Irvine
  */
 public class A027741 implements Sequence {

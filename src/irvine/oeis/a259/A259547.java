@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259547 <code>a(n) = n^4*Fibonacci(n)</code>.
+ * A259547 a(n) = n^4*Fibonacci(n).
  * @author Sean A. Irvine
  */
 public class A259547 extends LinearRecurrence {

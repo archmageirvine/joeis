@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A088096 Primes arising in <code>A088095</code>.
+ * A088096 Primes arising in A088095.
  * @author Georg Fischer
  */
 public class A088096 extends FiniteSequence {

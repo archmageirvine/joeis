@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003317 Number of unlabeled minimally 2-connected graphs with n nodes (also called <code>"blocks")</code>.
+ * A003317 Number of unlabeled minimally 2-connected graphs with n nodes (also called "blocks").
  * @author Sean A. Irvine
  */
 public class A003317 implements Sequence, GraphProcessor {

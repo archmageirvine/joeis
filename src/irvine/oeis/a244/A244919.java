@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A244919 For odd prime p, largest k such that <code>binomial(2p-1, p-1)</code> is congruent to 1 modulo <code>p^k</code>.
+ * A244919 For odd prime p, largest k such that binomial(2p-1, p-1) is congruent to 1 modulo p^k.
  * @author Georg Fischer
  */
 public class A244919 extends PaddingSequence {

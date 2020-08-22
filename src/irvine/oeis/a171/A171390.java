@@ -4,7 +4,7 @@ package irvine.oeis.a171;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A171390 <code>a(n) = 37*2^(n-1)-1</code>.
+ * A171390 a(n) = 37*2^(n-1)-1.
  * @author Georg Fischer
  */
 public class A171390 extends GeneratingFunctionSequence {

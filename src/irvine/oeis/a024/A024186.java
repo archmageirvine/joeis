@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024186 Expansion of Molien series for 8-dimensional real Clifford group <code>2^{1+6}.Alt_8.2</code> of genus 3 and order 5160960.
+ * A024186 Expansion of Molien series for 8-dimensional real Clifford group 2^{1+6}.Alt_8.2 of genus 3 and order 5160960.
  * @author Sean A. Irvine
  */
 public class A024186 extends LinearRecurrence {

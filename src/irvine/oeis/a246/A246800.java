@@ -5,7 +5,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246800 Even-indexed terms of <code>A247984</code>, a sequence motivated by generalized quadrangles.
+ * A246800 Even-indexed terms of A247984, a sequence motivated by generalized quadrangles.
  * @author Georg Fischer
  */
 public class A246800 extends HolonomicRecurrence {

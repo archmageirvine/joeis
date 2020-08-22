@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276311 Numbers n such that <code>(13*10^n + 197)/3</code> is prime.
+ * A276311 Numbers n such that (13*10^n + 197)/3 is prime.
  * @author Georg Fischer
  */
 public class A276311 extends PowerFactorPrimeSequence {

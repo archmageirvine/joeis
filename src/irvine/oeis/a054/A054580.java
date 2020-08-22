@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A054580 <code>n^2</code> modulo 17.
+ * A054580 n^2 modulo 17.
  * @author Georg Fischer
  */
 public class A054580 extends PaddingSequence {

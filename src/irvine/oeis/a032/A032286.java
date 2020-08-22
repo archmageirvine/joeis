@@ -4,7 +4,7 @@ import irvine.oeis.DikTransformSequence;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A032286 "DIK" <code>(bracelet</code>, indistinct, unlabeled) transform of 5,5,5,5...
+ * A032286 "DIK" (bracelet, indistinct, unlabeled) transform of 5,5,5,5...
  * @author Sean A. Irvine
  */
 public class A032286 extends DikTransformSequence {

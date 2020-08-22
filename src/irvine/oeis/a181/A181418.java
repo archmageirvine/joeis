@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181418 <code>a(n) = A000984(n)*A000172(n)</code>, which is the term-wise product of the Central binomial coefficients and Franel numbers, respectively.
+ * A181418 a(n) = A000984(n)*A000172(n), which is the term-wise product of the Central binomial coefficients and Franel numbers, respectively.
  * @author Georg Fischer
  */
 public class A181418 extends HolonomicRecurrence {

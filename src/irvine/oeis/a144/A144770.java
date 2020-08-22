@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A144770 Numbers with sum of divisors <code>= 2880</code>.
+ * A144770 Numbers with sum of divisors = 2880.
  * @author Georg Fischer
  */
 public class A144770 extends FiniteSequence {

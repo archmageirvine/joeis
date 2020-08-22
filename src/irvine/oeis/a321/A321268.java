@@ -5,7 +5,7 @@ package irvine.oeis.a321;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A321268 Number of permutations on <code>[n]</code> whose up-down signature has nonnegative partial sums and which have exactly two descents.
+ * A321268 Number of permutations on [n] whose up-down signature has nonnegative partial sums and which have exactly two descents.
  * @author Georg Fischer
  */
 public class A321268 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a172;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A172200 Number of ways to place 2 nonattacking amazons (superqueens) on an <code>n X n</code> board.
+ * A172200 Number of ways to place 2 nonattacking amazons (superqueens) on an n X n board.
  * @author Sean A. Irvine
  */
 public class A172200 extends LinearRecurrence {

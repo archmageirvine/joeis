@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028492 Similarity classes of triangles which can be drawn using the lattice points in an <code>n X n</code> grid for vertices.
+ * A028492 Similarity classes of triangles which can be drawn using the lattice points in an n X n grid for vertices.
  * @author Sean A. Irvine
  */
 public class A028492 implements Sequence {

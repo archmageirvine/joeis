@@ -4,7 +4,7 @@ package irvine.oeis.a028;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A028481 Number of perfect matchings in graph <code>C_{10} X P_{n}</code>.
+ * A028481 Number of perfect matchings in graph C_{10} X P_{n}.
  * @author Georg Fischer
  */
 public class A028481 extends GeneratingFunctionSequence {

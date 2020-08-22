@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075419 <code>a(n)=Sum((-1)^(i+Floor(n/2))C(2i+e),(i=0,..,Floor(n/2)))</code>, where <code>C(n)</code> are reflected tribonacci numbers <code>(A073145)</code>.
+ * A075419 a(n)=Sum((-1)^(i+Floor(n/2))C(2i+e),(i=0,..,Floor(n/2))), where C(n) are reflected tribonacci numbers (A073145).
  * @author Georg Fischer
  */
 public class A075419 extends HolonomicRecurrence {

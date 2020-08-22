@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A228817 Decimal expansion of Planck force: <code>F_P = c^4/G</code>, in SI units.
+ * A228817 Decimal expansion of Planck force: F_P = c^4/G, in SI units.
  * @author Georg Fischer
  */
 public class A228817 extends NoncomputableSequence {

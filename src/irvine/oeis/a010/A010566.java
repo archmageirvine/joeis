@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010566 Number of <code>2n-step 2-dimensional</code> closed self-avoiding paths on square lattice.
+ * A010566 Number of 2n-step 2-dimensional closed self-avoiding paths on square lattice.
  * @author Sean A. Irvine
  */
 public class A010566 implements Sequence {

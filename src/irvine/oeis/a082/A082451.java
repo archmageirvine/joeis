@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A082451 Sum over divisors d of n of Kronecker symbol <code>(-60, d)</code>.
+ * A082451 Sum over divisors d of n of Kronecker symbol (-60, d).
  * @author Georg Fischer
  */
 public class A082451 extends EulerTransform {

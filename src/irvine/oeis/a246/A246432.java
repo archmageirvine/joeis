@@ -6,7 +6,7 @@ package irvine.oeis.a246;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A246432 Convolution inverse of <code>A001700</code>.
+ * A246432 Convolution inverse of A001700.
  * @author Georg Fischer
  */
 public class A246432 extends HolonomicRecurrence {

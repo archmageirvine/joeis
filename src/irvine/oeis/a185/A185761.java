@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185761 Number of <code>(n+1) X 2</code> binary arrays with no <code>2 X 2</code> subblock trace equal to any horizontal or vertical neighbor <code>2 X 2</code> subblock trace.
+ * A185761 Number of (n+1) X 2 binary arrays with no 2 X 2 subblock trace equal to any horizontal or vertical neighbor 2 X 2 subblock trace.
  * @author Georg Fischer
  */
 public class A185761 extends GeneratingFunctionSequence {

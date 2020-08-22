@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321048 Number of permutations of <code>[n]</code> with no fixed points where the maximal displacement of an element equals two.
+ * A321048 Number of permutations of [n] with no fixed points where the maximal displacement of an element equals two.
  * @author Georg Fischer
  */
 public class A321048 extends GeneratingFunctionSequence {

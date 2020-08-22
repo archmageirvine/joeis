@@ -5,7 +5,7 @@ package irvine.oeis.a106;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A106615 <code>a(n) =</code> numerator of <code>n/(n+14)</code>.
+ * A106615 a(n) = numerator of n/(n+14).
  * @author Georg Fischer
  */
 public class A106615 extends HolonomicRecurrence {

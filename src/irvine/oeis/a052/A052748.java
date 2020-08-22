@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052748 Expansion of e.g.f.: <code>-(log(1-x))^3</code>.
+ * A052748 Expansion of e.g.f.: -(log(1-x))^3.
  * @author Georg Fischer
  */
 public class A052748 extends HolonomicRecurrence {

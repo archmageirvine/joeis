@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A099592 Minimum index i of certain Lucas (or Lehmer) sequences such that every element with index <code>&gt;=</code> i has a primitive divisor.
+ * A099592 Minimum index i of certain Lucas (or Lehmer) sequences such that every element with index &gt;= i has a primitive divisor.
  * @author Georg Fischer
  */
 public class A099592 extends PaddingSequence {

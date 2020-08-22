@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015707 Values of n where <code>(phi(n) * sigma(n))/n</code> is an integer and increases.
+ * A015707 Values of n where (phi(n) * sigma(n))/n is an integer and increases.
  * @author Sean A. Irvine
  */
 public class A015707 implements Sequence {

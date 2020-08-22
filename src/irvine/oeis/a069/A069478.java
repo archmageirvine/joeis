@@ -4,7 +4,7 @@ package irvine.oeis.a069;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A069478 First differences of <code>A069477</code>, successive differences of <code>(n+1)^5 - n^5</code>.
+ * A069478 First differences of A069477, successive differences of (n+1)^5 - n^5.
  * @author Georg Fischer
  */
 public class A069478 extends GeneratingFunctionSequence {

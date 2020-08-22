@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032124 "BIK" <code>(reversible</code>, indistinct, unlabeled) transform of 2,2,2,2...
+ * A032124 "BIK" (reversible, indistinct, unlabeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
 public class A032124 extends LinearRecurrence {

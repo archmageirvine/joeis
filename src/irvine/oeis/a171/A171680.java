@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A171680 <code>a(n) = F(2*n)^3 - F(3*n-1)^2 - F(6*n-8)</code>.
+ * A171680 a(n) = F(2*n)^3 - F(3*n-1)^2 - F(6*n-8).
  * @author Sean A. Irvine
  */
 public class A171680 extends LinearRecurrence {

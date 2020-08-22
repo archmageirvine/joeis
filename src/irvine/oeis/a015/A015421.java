@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015421 Gaussian binomial coefficient <code>[ n,11 ]</code> for <code>q=-12</code>.
+ * A015421 Gaussian binomial coefficient [ n,11 ] for q=-12.
  * @author Sean A. Irvine
  */
 public class A015421 extends A015405 {

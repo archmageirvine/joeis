@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A152489 Finite rectangular array <code>(24x4)</code> used in <code>A152490</code>.
+ * A152489 Finite rectangular array (24x4) used in A152490.
  * @author Georg Fischer
  */
 public class A152489 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144701 Hankel transform of expansion of <code>1/c(x)^3, c(x)</code> the g.f. of <code>A000108</code>.
+ * A144701 Hankel transform of expansion of 1/c(x)^3, c(x) the g.f. of A000108.
  * @author Sean A. Irvine
  */
 public class A144701 extends LinearRecurrence {

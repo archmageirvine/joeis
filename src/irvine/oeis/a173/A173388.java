@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173388 <code>a(n) = a(n - 3) + a(n - 4)</code> if n is even, else <code>a(n - 2) + a(n - 3)</code>.
+ * A173388 a(n) = a(n - 3) + a(n - 4) if n is even, else a(n - 2) + a(n - 3).
  * @author Georg Fischer
  */
 public class A173388 extends GeneratingFunctionSequence {

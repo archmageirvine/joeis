@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A014610 Tetranacci numbers arising in connection with current algebras <code>sp(2)_n</code>.
+ * A014610 Tetranacci numbers arising in connection with current algebras sp(2)_n.
  * @author Sean A. Irvine
  */
 public class A014610 extends GeneratingFunctionSequence {

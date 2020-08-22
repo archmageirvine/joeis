@@ -4,7 +4,7 @@ package irvine.oeis.a269;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A269686 Number of <code>length-n 0..4</code> arrays with no repeated value differing from the previous repeated value by plus or minus one modulo <code>4+1</code>.
+ * A269686 Number of length-n 0..4 arrays with no repeated value differing from the previous repeated value by plus or minus one modulo 4+1.
  * @author Georg Fischer
  */
 public class A269686 extends GeneratingFunctionSequence {

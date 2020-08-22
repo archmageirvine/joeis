@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195714 Decimal expansion of <code>arctan((1/2)^(1/3))</code>.
+ * A195714 Decimal expansion of arctan((1/2)^(1/3)).
  * @author Georg Fischer
  */
 public class A195714 extends DecimalExpansionSequence {

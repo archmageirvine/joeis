@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A003052 Self numbers or Colombian numbers (numbers that are not of the form m + sum of digits of m for any <code>m)</code>.
+ * A003052 Self numbers or Colombian numbers (numbers that are not of the form m + sum of digits of m for any m).
  * @author Sean A. Irvine
  */
 public class A003052 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201044 Number of <code>-n..n</code> arrays of 5 elements with adjacent element differences also in <code>-n..n</code>.
+ * A201044 Number of -n..n arrays of 5 elements with adjacent element differences also in -n..n.
  * @author Georg Fischer
  */
 public class A201044 extends GeneratingFunctionSequence {

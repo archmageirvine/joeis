@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053743 Sum of numbers in range <code>10*n</code> to <code>10*n+9</code>.
+ * A053743 Sum of numbers in range 10*n to 10*n+9.
  * @author Sean A. Irvine
  */
 public class A053743 extends LinearRecurrence {

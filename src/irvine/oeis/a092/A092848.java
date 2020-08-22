@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A092848 Expansion of reciprocal of Hauptmodul for <code>Gamma_0(18)</code>.
+ * A092848 Expansion of reciprocal of Hauptmodul for Gamma_0(18).
  * @author Georg Fischer
  */
 public class A092848 extends EulerTransform {

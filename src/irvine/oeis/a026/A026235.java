@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026235 <code>a(n) = |s(n) - n|</code>, where s <code>= A026234</code>.
+ * A026235 a(n) = |s(n) - n|, where s = A026234.
  * @author Sean A. Irvine
  */
 public class A026235 extends A026234 {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031247 <code>a(n)=(# 1's)-(# 0's)</code> in first n terms of <code>A031235</code>.
+ * A031247 a(n)=(# 1's)-(# 0's) in first n terms of A031235.
  * @author Sean A. Irvine
  */
 public class A031247 extends A031235 {

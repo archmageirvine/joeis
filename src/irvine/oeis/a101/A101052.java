@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101052 Number of preferential arrangements of n labeled elements when only <code>k&lt;=3</code> ranks are allowed.
+ * A101052 Number of preferential arrangements of n labeled elements when only k&lt;=3 ranks are allowed.
  * @author Sean A. Irvine
  */
 public class A101052 extends LinearRecurrence {

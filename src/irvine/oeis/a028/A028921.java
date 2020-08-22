@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A028921 Determinant of n-dimensional laminated lattice <code>Lambda(n)</code> (non-integral beyond the entries shown).
+ * A028921 Determinant of n-dimensional laminated lattice Lambda(n) (non-integral beyond the entries shown).
  * @author Sean A. Irvine
  */
 public class A028921 extends FiniteSequence {

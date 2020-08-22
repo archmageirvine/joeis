@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A122580 Number of partitions of n with crank congruent to <code>0 mod 3</code>, minus number of partitions of n with crank congruent to <code>1 mod 3</code>.
+ * A122580 Number of partitions of n with crank congruent to 0 mod 3, minus number of partitions of n with crank congruent to 1 mod 3.
  * @author Georg Fischer
  */
 public class A122580 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A101277 Number of partitions of <code>2n</code> in which all odd parts occur with multiplicity 2. There is no restriction on the even parts.
+ * A101277 Number of partitions of 2n in which all odd parts occur with multiplicity 2. There is no restriction on the even parts.
  * @author Georg Fischer
  */
 public class A101277 extends EulerTransform {

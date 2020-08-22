@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031339 <code>Prime(6n)</code>.
+ * A031339 Prime(6n).
  * @author Sean A. Irvine
  */
 public class A031339 extends A031336 {

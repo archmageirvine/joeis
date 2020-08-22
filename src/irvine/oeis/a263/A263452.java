@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A263452 Expansion of <code>f(-q^3)^3 * psi(q^12) / f(-q)</code> in powers of q where <code>ps(), f()</code> are Ramanujan theta functions.
+ * A263452 Expansion of f(-q^3)^3 * psi(q^12) / f(-q) in powers of q where ps(), f() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A263452 extends EulerTransform {

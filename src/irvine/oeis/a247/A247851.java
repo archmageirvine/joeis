@@ -3,7 +3,7 @@ package irvine.oeis.a247;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A247851 The 6th Hermite Polynomial evaluated at n: <code>H_6(n) = 64*n^6-480*n^4+720*n^2-120</code>.
+ * A247851 The 6th Hermite Polynomial evaluated at n: H_6(n) = 64*n^6-480*n^4+720*n^2-120.
  * @author Sean A. Irvine
  */
 public class A247851 extends LinearRecurrence {

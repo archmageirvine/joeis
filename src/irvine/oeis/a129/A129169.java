@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129169 Number of UU's starting at level 0 in all skew Dyck paths of semilength <code>n</code>.
+ * A129169 Number of UU's starting at level 0 in all skew Dyck paths of semilength n.
  * @author Georg Fischer
  */
 public class A129169 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A117410 Expansion of <code>q^(-5/24) * eta(q^2)^3 / eta(q)</code> in powers of q.
+ * A117410 Expansion of q^(-5/24) * eta(q^2)^3 / eta(q) in powers of q.
  * @author Georg Fischer
  */
 public class A117410 extends EulerTransform {

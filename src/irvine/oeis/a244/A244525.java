@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A244525 Expansion of <code>f(-x^1, -x^7)</code> in powers of x where <code>f(, )</code> is Ramanujan's general theta function.
+ * A244525 Expansion of f(-x^1, -x^7) in powers of x where f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A244525 extends EulerTransform {

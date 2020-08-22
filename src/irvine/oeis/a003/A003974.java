@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003974 M\u00f6bius transform of <code>A003962</code>.
+ * A003974 M\u00f6bius transform of A003962.
  * @author Sean A. Irvine
  */
 public class A003974 implements Sequence {

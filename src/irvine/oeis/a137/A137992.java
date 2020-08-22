@@ -7,7 +7,7 @@ import irvine.oeis.a014.A014137;
 
 
 /**
- * A137992 <code>A014137 (=</code> partial sums of Catalan numbers <code>A000108) mod 3</code>.
+ * A137992 A014137 (= partial sums of Catalan numbers A000108) mod 3.
  * @author Georg Fischer
  */
 public class A137992 extends A014137 {

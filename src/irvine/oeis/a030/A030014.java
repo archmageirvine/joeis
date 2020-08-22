@@ -4,7 +4,7 @@ import irvine.oeis.InverseMobiusTransformSequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A030014 Inverse Moebius transform of <code>{1</code>, primes}.
+ * A030014 Inverse Moebius transform of {1, primes}.
  * @author Sean A. Irvine
  */
 public class A030014 extends InverseMobiusTransformSequence {

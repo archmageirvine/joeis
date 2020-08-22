@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A106175 Numbers n such that <code>n^2 = 67*m^2 + 67*m + 1</code>.
+ * A106175 Numbers n such that n^2 = 67*m^2 + 67*m + 1.
  * @author Sean A. Irvine
  */
 public class A106175 extends LinearRecurrence {

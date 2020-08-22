@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013166 Expansion of e.g.f.: <code>sech(arctanh(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+45/4!*x^4-300/5!*x^5..</code>.
+ * A013166 Expansion of e.g.f.: sech(arctanh(x)+log(x+1))=1-4/2!*x^2+6/3!*x^3+45/4!*x^4-300/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A013166 implements Sequence {

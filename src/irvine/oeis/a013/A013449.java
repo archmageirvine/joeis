@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013449 <code>exp(tan(x)-sinh(x))=1+1/3!*x^3+15/5!*x^5+10/6!*x^6+271/7!*x^7..</code>.
+ * A013449 exp(tan(x)-sinh(x))=1+1/3!*x^3+15/5!*x^5+10/6!*x^6+271/7!*x^7...
  * @author Sean A. Irvine
  */
 public class A013449 implements Sequence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033782 Product <code>t2(q^d); d | 23</code>, where <code>t2 = theta2(q)/(2*q^(1/4))</code>.
+ * A033782 Product t2(q^d); d | 23, where t2 = theta2(q)/(2*q^(1/4)).
  * @author Sean A. Irvine
  */
 public class A033782 extends A033763 {

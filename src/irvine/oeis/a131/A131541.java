@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicByteArray;
 
 /**
- * A131541 Least power of 2 having exactly n consecutive <code>7</code>'s in its decimal representation.
+ * A131541 Least power of 2 having exactly n consecutive 7's in its decimal representation.
  * @author Sean A. Irvine
  */
 public class A131541 implements Sequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a271;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A271905 Number of singular vector tuples for a general <code>n X n X n</code> tensor.
+ * A271905 Number of singular vector tuples for a general n X n X n tensor.
  * @author Georg Fischer
  */
 public class A271905 extends HolonomicRecurrence {

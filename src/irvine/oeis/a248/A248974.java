@@ -3,7 +3,7 @@ package irvine.oeis.a248;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A248974 <code>Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) )</code>.
+ * A248974 Floor( 1/(n*sinh(1/n) + n*sin(1/n) - 2) ).
  * @author Sean A. Irvine
  */
 public class A248974 extends LinearRecurrence {

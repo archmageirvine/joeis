@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A132000 Expansion of <code>(1/3) * b(q) * b(q^2) * c(q)^2 / c(q^2)</code> in powers of q where <code>b(), c()</code> are cubic AGM functions.
+ * A132000 Expansion of (1/3) * b(q) * b(q^2) * c(q)^2 / c(q^2) in powers of q where b(), c() are cubic AGM functions.
  * @author Georg Fischer
  */
 public class A132000 extends EulerTransform {

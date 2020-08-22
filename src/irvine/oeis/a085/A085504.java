@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085504 Horadam sequence <code>(0,1,9,3)</code>.
+ * A085504 Horadam sequence (0,1,9,3).
  * @author Georg Fischer
  */
 public class A085504 extends GeneratingFunctionSequence {

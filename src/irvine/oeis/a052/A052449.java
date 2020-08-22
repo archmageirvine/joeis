@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003266;
 
 /**
- * A052449 <code>a(n) = 1 + Product_{k=1..n} Fibonacci(k)</code>.
+ * A052449 a(n) = 1 + Product_{k=1..n} Fibonacci(k).
  * @author Georg Fischer
  */
 public class A052449 extends A003266 {

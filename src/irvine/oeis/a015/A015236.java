@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A015236 Theta series of lattice <code>Kappa_7</code>.
+ * A015236 Theta series of lattice Kappa_7.
  * @author Sean A. Irvine
  */
 public class A015236 extends GramMatrixThetaSeries {

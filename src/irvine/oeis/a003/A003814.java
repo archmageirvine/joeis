@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003814 Numbers n such that the continued fraction for <code>sqrt(n)</code> has odd period length (values of <code>n)</code>.
+ * A003814 Numbers n such that the continued fraction for sqrt(n) has odd period length (values of n).
  * @author Sean A. Irvine
  */
 public class A003814 implements Sequence {

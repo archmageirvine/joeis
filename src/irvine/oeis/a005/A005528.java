@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005528 St\u00f8rmer numbers or arc-cotangent irreducible numbers: numbers k such that the largest prime factor of <code>k^2 + 1</code> is <code>&gt;= 2*k</code>.
+ * A005528 St\u00f8rmer numbers or arc-cotangent irreducible numbers: numbers k such that the largest prime factor of k^2 + 1 is &gt;= 2*k.
  * @author Sean A. Irvine
  */
 public class A005528 implements Sequence {

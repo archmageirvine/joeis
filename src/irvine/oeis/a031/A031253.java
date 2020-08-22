@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031253 Write <code>2n-1</code> in base 5 and juxtapose.
+ * A031253 Write 2n-1 in base 5 and juxtapose.
  * @author Georg Fischer
  */
 public class A031253 implements Sequence {

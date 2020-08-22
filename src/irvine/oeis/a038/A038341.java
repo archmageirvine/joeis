@@ -4,7 +4,7 @@ package irvine.oeis.a038;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A038341 Fourth line of 5-wave sequence <code>A038201</code>.
+ * A038341 Fourth line of 5-wave sequence A038201.
  * @author Georg Fischer
  */
 public class A038341 extends GeneratingFunctionSequence {

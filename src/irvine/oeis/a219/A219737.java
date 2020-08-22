@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219737 Unmatched value maps: number of <code>n X 4</code> binary arrays indicating the locations of corresponding elements not equal to any horizontal, vertical or antidiagonal neighbor in a random <code>0..1 n X 4</code> array.
+ * A219737 Unmatched value maps: number of n X 4 binary arrays indicating the locations of corresponding elements not equal to any horizontal, vertical or antidiagonal neighbor in a random 0..1 n X 4 array.
  * @author Georg Fischer
  */
 public class A219737 extends GeneratingFunctionSequence {

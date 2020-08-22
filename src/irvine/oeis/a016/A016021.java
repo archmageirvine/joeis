@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016021 Number of permutations of <code>{1,2,...,n}</code> in which each element follows its proper divisors.
+ * A016021 Number of permutations of {1,2,...,n} in which each element follows its proper divisors.
  * @author Sean A. Irvine
  */
 public class A016021 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A015048 Numbers n such that there are no primes between <code>S(n)</code> and <code>S(n+1)</code> inclusive where S is the Kempner function <code>A002034</code>.
+ * A015048 Numbers n such that there are no primes between S(n) and S(n+1) inclusive where S is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A015048 extends A002034 {

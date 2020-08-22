@@ -5,7 +5,7 @@ package irvine.oeis.a255;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A255729 Distinct-digit numbers that are the concatenation of m and <code>prime(m)</code> for some number m.
+ * A255729 Distinct-digit numbers that are the concatenation of m and prime(m) for some number m.
  * @author Georg Fischer
  */
 public class A255729 extends FiniteSequence {

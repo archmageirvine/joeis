@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A330364 Values of <code>abs(P(x))</code>, with <code>P(x) = (1/72)*x^6 + (1/24)*x^5 - (1583/72)*x^4 - (3161/24)*x^3 + (200807/36)*x^2 + (97973/3)*x - 11351</code>, for <code>-45 &lt;= x &lt;= 12</code>, sorted by size. All values in the given range are prime.
+ * A330364 Values of abs(P(x)), with P(x) = (1/72)*x^6 + (1/24)*x^5 - (1583/72)*x^4 - (3161/24)*x^3 + (200807/36)*x^2 + (97973/3)*x - 11351, for -45 &lt;= x &lt;= 12, sorted by size. All values in the given range are prime.
  * @author Georg Fischer
  */
 public class A330364 extends FiniteSequence {

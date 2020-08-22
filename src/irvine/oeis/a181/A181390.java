@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181390 Absolute difference between (sum of previous terms) and <code>(n-th-odd</code> square) with <code>a(1) = 1</code>.
+ * A181390 Absolute difference between (sum of previous terms) and (n-th-odd square) with a(1) = 1.
  * @author Georg Fischer
  */
 public class A181390 extends GeneratingFunctionSequence {

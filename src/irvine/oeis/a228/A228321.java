@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228321 The Wiener index of the graph obtained by applying Mycielski's construction to the path graph on n vertices <code>(n&gt;=2)</code>.
+ * A228321 The Wiener index of the graph obtained by applying Mycielski's construction to the path graph on n vertices (n&gt;=2).
  * @author Georg Fischer
  */
 public class A228321 extends GeneratingFunctionSequence {

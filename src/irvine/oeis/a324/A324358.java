@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324358 Total number of occurrences of 8 in the (signed) displacement sets of all permutations of <code>[n+8]</code> divided by <code>8!</code>.
+ * A324358 Total number of occurrences of 8 in the (signed) displacement sets of all permutations of [n+8] divided by 8!.
  * @author Georg Fischer
  */
 public class A324358 extends HolonomicRecurrence {

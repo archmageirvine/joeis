@@ -8,7 +8,7 @@ import irvine.math.Mobius;
 import irvine.oeis.Sequence;
 
 /**
- * A006875 <code>Non-seed mu-atoms</code> of period n in Mandelbrot set.
+ * A006875 Non-seed mu-atoms of period n in Mandelbrot set.
  * @author Sean A. Irvine
  */
 public class A006875 extends MemoryFunction1<Z> implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221764 Number of <code>n X 3</code> arrays of occupancy after each element moves to some horizontal or vertical neighbor, without 2-loops or left turns.
+ * A221764 Number of n X 3 arrays of occupancy after each element moves to some horizontal or vertical neighbor, without 2-loops or left turns.
  * @author Georg Fischer
  */
 public class A221764 extends GeneratingFunctionSequence {

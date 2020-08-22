@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007693 Numbers n such that n and <code>6n+1</code> are primes.
+ * A007693 Numbers n such that n and 6n+1 are primes.
  * @author Sean A. Irvine
  */
 public class A007693 implements Sequence {

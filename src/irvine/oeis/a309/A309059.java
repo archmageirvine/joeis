@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A309059 <code>a(1) = 1;</code> for <code>n &gt; 1, a(n) = 2</code> if the concatenation of all the previous terms is prime and <code>a(n) = 1</code> otherwise.
+ * A309059 a(1) = 1; for n &gt; 1, a(n) = 2 if the concatenation of all the previous terms is prime and a(n) = 1 otherwise.
  * @author Sean A. Irvine
  */
 public class A309059 implements Sequence {

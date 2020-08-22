@@ -3,7 +3,7 @@ package irvine.oeis.a276;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A276186 Numbers n such that <code>A276183(n) = 3</code>.
+ * A276186 Numbers n such that A276183(n) = 3.
  * @author Georg Fischer
  */
 public class A276186 extends FiniteSequence {

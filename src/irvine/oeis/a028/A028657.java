@@ -15,7 +15,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028657 Triangle read by rows: <code>T(n,k) =</code> number of n-node graphs with k nodes in distinguished bipartite block, <code>k=0..n</code>.
+ * A028657 Triangle read by rows: T(n,k) = number of n-node graphs with k nodes in distinguished bipartite block, k=0..n.
  * @author Sean A. Irvine
  */
 public class A028657 extends MemoryFunction2<Integer, Z> implements Sequence {

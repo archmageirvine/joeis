@@ -5,7 +5,7 @@ package irvine.oeis.a120;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A120054 <code>Binomial(n+3,4)*4^4</code>.
+ * A120054 Binomial(n+3,4)*4^4.
  * @author Georg Fischer
  */
 public class A120054 extends HolonomicRecurrence {

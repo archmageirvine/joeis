@@ -5,7 +5,7 @@ package irvine.oeis.a217;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A217218 Trajectory of 44 under the map k <code>-&gt; A006368(k)</code>.
+ * A217218 Trajectory of 44 under the map k -&gt; A006368(k).
  * @author Georg Fischer
  */
 public class A217218 extends HolonomicRecurrence {

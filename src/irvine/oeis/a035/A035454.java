@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035454 Number of partitions of n into parts <code>8k+2</code> or <code>8k+3</code>.
+ * A035454 Number of partitions of n into parts 8k+2 or 8k+3.
  * @author Georg Fischer
  */
 public class A035454 extends EulerTransform {

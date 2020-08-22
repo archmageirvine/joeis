@@ -3,7 +3,7 @@ package irvine.oeis.a255;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A255185 26-gonal numbers: <code>a(n) = n*(12*n-11)</code>.
+ * A255185 26-gonal numbers: a(n) = n*(12*n-11).
  * @author Sean A. Irvine
  */
 public class A255185 extends LinearRecurrence {

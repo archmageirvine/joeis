@@ -5,7 +5,7 @@ package irvine.oeis.a064;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A064671 Number of n-digit base 4 biquanimous numbers (with leading <code>0</code>'s allowed, but not <code>all-0</code> string).
+ * A064671 Number of n-digit base 4 biquanimous numbers (with leading 0's allowed, but not all-0 string).
  * @author Georg Fischer
  */
 public class A064671 extends HolonomicRecurrence {

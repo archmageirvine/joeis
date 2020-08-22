@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005212 <code>n!</code> if n is odd otherwise <code>0</code> (from the Taylor series for sin <code>x)</code>.
+ * A005212 n! if n is odd otherwise 0 (from the Taylor series for sin x).
  * @author Sean A. Irvine
  */
 public class A005212 implements Sequence {

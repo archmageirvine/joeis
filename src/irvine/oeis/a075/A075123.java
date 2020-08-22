@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075123 <code>a(n)</code> is the least positive integer <code>&gt; a(n-1)</code> and <code>a(n)</code> is not <code>2*a(i)+a(j)</code> for <code>1&lt;=i&lt;j&lt;n</code>.
+ * A075123 a(n) is the least positive integer &gt; a(n-1) and a(n) is not 2*a(i)+a(j) for 1&lt;=i&lt;j&lt;n.
  * @author Georg Fischer
  */
 public class A075123 extends HolonomicRecurrence {

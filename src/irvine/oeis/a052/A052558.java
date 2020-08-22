@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A052558 <code>a(n) = n! *((-1)^n + 2*n + 3)/4</code>.
+ * A052558 a(n) = n! *((-1)^n + 2*n + 3)/4.
  * @author Sean A. Irvine
  */
 public class A052558 implements Sequence {

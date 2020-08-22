@@ -6,7 +6,7 @@ import irvine.oeis.a005.A005408;
 import irvine.oeis.a014.A014306;
 
 /**
- * A023661 Convolution of odd numbers and <code>A014306</code>.
+ * A023661 Convolution of odd numbers and A014306.
  * @author Sean A. Irvine
  */
 public class A023661 extends ConvolutionSequence {

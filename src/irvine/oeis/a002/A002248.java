@@ -3,7 +3,7 @@ package irvine.oeis.a002;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A002248 Number of points on <code>y^2 + xy = x^3 + x^2 + x</code> over <code>GF(2^n)</code>.
+ * A002248 Number of points on y^2 + xy = x^3 + x^2 + x over GF(2^n).
  * @author Sean A. Irvine
  */
 public class A002248 extends LinearRecurrence {

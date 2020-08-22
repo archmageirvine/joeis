@@ -6,7 +6,7 @@ package irvine.oeis.a266;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A266758 E.g.f.: <code>x*(1+x-(x^2-6*x+1)^(1/2))/8 + x^2/2</code>.
+ * A266758 E.g.f.: x*(1+x-(x^2-6*x+1)^(1/2))/8 + x^2/2.
  * @author Georg Fischer
  */
 public class A266758 extends HolonomicRecurrence {

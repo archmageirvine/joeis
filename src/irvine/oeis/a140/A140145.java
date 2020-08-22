@@ -5,7 +5,7 @@ package irvine.oeis.a140;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A140145 <code>a(1)=1, a(n)=a(n-1)+n^1</code> if n odd, <code>a(n)=a(n-1)+ n^3</code> if n is even.
+ * A140145 a(1)=1, a(n)=a(n-1)+n^1 if n odd, a(n)=a(n-1)+ n^3 if n is even.
  * @author Georg Fischer
  */
 public class A140145 extends HolonomicRecurrence {

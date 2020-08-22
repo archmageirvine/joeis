@@ -4,7 +4,7 @@ package irvine.oeis.a161;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A161718 Expansion of <code>(1+3*x^2)/(1+x)^2</code>.
+ * A161718 Expansion of (1+3*x^2)/(1+x)^2.
  * @author Georg Fischer
  */
 public class A161718 extends GeneratingFunctionSequence {

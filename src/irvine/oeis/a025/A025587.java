@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025587 <code>'3x+1' record-setters</code> (blowup factor).
+ * A025587 '3x+1' record-setters (blowup factor).
  * @author Sean A. Irvine
  */
 public class A025587 implements Sequence {

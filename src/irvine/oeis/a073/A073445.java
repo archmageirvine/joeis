@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A073445 Second differences of <code>A002808</code>, the sequence of composites.
+ * A073445 Second differences of A002808, the sequence of composites.
  * @author Georg Fischer
  */
 public class A073445 extends DifferenceSequence {

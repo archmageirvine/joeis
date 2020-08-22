@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A319451 Numbers that are congruent to <code>{0, 3, 6} mod 12; a(n) = 3*floor(4*n/3)</code>.
+ * A319451 Numbers that are congruent to {0, 3, 6} mod 12; a(n) = 3*floor(4*n/3).
  * @author Georg Fischer
  */
 public class A319451 extends LinearRecurrence {

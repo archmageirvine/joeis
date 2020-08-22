@@ -3,7 +3,7 @@ package irvine.oeis.a192;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A192102 Number of distinct (unordered) pairs of partitions of a 9-element set that have Rand distance <code>n</code>.
+ * A192102 Number of distinct (unordered) pairs of partitions of a 9-element set that have Rand distance n.
  * @author Georg Fischer
  */
 public class A192102 extends FiniteSequence {

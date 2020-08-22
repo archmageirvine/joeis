@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A289178 Numbers n such that <code>binomial(2*n,n) &lt; (2*n)^pi(n)</code>.
+ * A289178 Numbers n such that binomial(2*n,n) &lt; (2*n)^pi(n).
  * @author Georg Fischer
  */
 public class A289178 extends FiniteSequence {

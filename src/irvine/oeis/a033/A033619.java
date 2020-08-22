@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033619 Undulating numbers (of form abababab... in base <code>10)</code>.
+ * A033619 Undulating numbers (of form abababab... in base 10).
  * @author Sean A. Irvine
  */
 public class A033619 implements Sequence {

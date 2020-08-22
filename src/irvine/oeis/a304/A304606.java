@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A304606 <code>a(n) = 54*2^n + 28 (n &gt;= 1)</code>.
+ * A304606 a(n) = 54*2^n + 28 (n &gt;= 1).
  * @author Georg Fischer
  */
 public class A304606 extends LinearRecurrence {

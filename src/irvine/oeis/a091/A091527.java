@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091527 <code>a(n) = ((3*n)!/n!^2)*(Gamma(1+n/2)/Gamma(1+3n/2))</code>.
+ * A091527 a(n) = ((3*n)!/n!^2)*(Gamma(1+n/2)/Gamma(1+3n/2)).
  * @author Georg Fischer
  */
 public class A091527 extends HolonomicRecurrence {

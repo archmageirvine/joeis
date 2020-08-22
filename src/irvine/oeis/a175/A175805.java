@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A175805 <code>a(n) = 21*2^n</code>.
+ * A175805 a(n) = 21*2^n.
  * @author Georg Fischer
  */
 public class A175805 extends GeneratingFunctionSequence {

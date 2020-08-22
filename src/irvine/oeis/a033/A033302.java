@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033302 Largest prime <code>&lt;</code> largest prime <code>&lt; n</code>.
+ * A033302 Largest prime &lt; largest prime &lt; n.
  * @author Sean A. Irvine
  */
 public class A033302 implements Sequence {

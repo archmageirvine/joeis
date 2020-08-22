@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A320960 Decimal expansion of <code>(1/3)*Pi^2 + 2*gamma^2</code>.
+ * A320960 Decimal expansion of (1/3)*Pi^2 + 2*gamma^2.
  * @author Georg Fischer
  */
 public class A320960 extends DecimalExpansionSequence {

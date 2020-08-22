@@ -5,7 +5,7 @@ package irvine.oeis.a197;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A197318 Divisors of the repunit <code>111111111111 = A002275(12)</code>.
+ * A197318 Divisors of the repunit 111111111111 = A002275(12).
  * @author Georg Fischer
  */
 public class A197318 extends FiniteSequence {

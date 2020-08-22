@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A174815 Decimal expansion of <code>sqrt(2)*e^(gamma)</code>, where gamma is Euler's constant.
+ * A174815 Decimal expansion of sqrt(2)*e^(gamma), where gamma is Euler's constant.
  * @author Georg Fischer
  */
 public class A174815 extends DecimalExpansionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a229;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A229526 The c coefficients of the transform <code>ax^2 + (4a/k - b)x + 4a/k^2 + 2b/k + c= 0</code> for a,b,c <code>= 1,-1,-1, k = 1,2,3..</code>.
+ * A229526 The c coefficients of the transform ax^2 + (4a/k - b)x + 4a/k^2 + 2b/k + c= 0 for a,b,c = 1,-1,-1, k = 1,2,3...
  * @author Georg Fischer
  */
 public class A229526 extends HolonomicRecurrence {

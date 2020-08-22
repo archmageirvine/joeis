@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054455 Row sums of triangle <code>A054453</code>.
+ * A054455 Row sums of triangle A054453.
  * @author Georg Fischer
  */
 public class A054455 extends LinearRecurrence {

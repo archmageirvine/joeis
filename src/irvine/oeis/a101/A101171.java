@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A101171 <code>a(n)</code> divides the number formed by concatenating the sum of the digits of <code>a(n)</code> with <code>a(n)</code>, by a factor not previously used.
+ * A101171 a(n) divides the number formed by concatenating the sum of the digits of a(n) with a(n), by a factor not previously used.
  * @author Georg Fischer
  */
 public class A101171 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093545 Sorted mapping of <code>A093544</code> onto the integers.
+ * A093545 Sorted mapping of A093544 onto the integers.
  * @author Georg Fischer
  */
 public class A093545 extends GeneratingFunctionSequence {

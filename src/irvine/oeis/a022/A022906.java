@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A022906 <code>a(n) = M(n) - m(n)</code> for <code>n &gt;= 2</code>, where <code>M(n) = max{ a(i) + a(n-i): i = 1..n-1 }, m(n) = min{ a(i) + a(n-i): i = 1..n-1 }</code>.
+ * A022906 a(n) = M(n) - m(n) for n &gt;= 2, where M(n) = max{ a(i) + a(n-i): i = 1..n-1 }, m(n) = min{ a(i) + a(n-i): i = 1..n-1 }.
  * @author Sean A. Irvine
  */
 public class A022906 extends MemorySequence {

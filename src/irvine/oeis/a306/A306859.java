@@ -5,7 +5,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306859 <code>a(n) = Sum_{k=0..floor(n/8)} binomial(n,8*k)</code>.
+ * A306859 a(n) = Sum_{k=0..floor(n/8)} binomial(n,8*k).
  * @author Georg Fischer
  */
 public class A306859 extends HolonomicRecurrence {

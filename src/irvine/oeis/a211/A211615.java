@@ -5,7 +5,7 @@ package irvine.oeis.a211;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A211615 Number of ordered triples <code>(w,x,y)</code> with all terms in <code>{-n,...-1,1,...,n}</code> and <code>-1&lt;=w+x+y&lt;=1</code>.
+ * A211615 Number of ordered triples (w,x,y) with all terms in {-n,...-1,1,...,n} and -1&lt;=w+x+y&lt;=1.
  * @author Georg Fischer
  */
 public class A211615 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030000 <code>a(n) =</code> smallest nonnegative number k such that the decimal expansion of <code>2^k</code> contains the string <code>n</code>.
+ * A030000 a(n) = smallest nonnegative number k such that the decimal expansion of 2^k contains the string n.
  * @author Sean A. Irvine
  */
 public class A030000 implements Sequence {

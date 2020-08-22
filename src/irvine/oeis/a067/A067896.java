@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A067896 Trajectory of 41 under map <code>x -&gt; x/2</code> if x even, <code>x-&gt; 3x+3</code> if x odd.
+ * A067896 Trajectory of 41 under map x -&gt; x/2 if x even, x-&gt; 3x+3 if x odd.
  * @author Georg Fischer
  */
 public class A067896 extends PaddingSequence {

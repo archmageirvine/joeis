@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A278960 Numbers k such that <code>4*10^k - 99</code> is prime.
+ * A278960 Numbers k such that 4*10^k - 99 is prime.
  * @author Georg Fischer
  */
 public class A278960 extends PowerFactorPrimeSequence {

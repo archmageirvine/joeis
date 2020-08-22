@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002496 Primes of the form <code>n^2 + 1</code>.
+ * A002496 Primes of the form n^2 + 1.
  * @author Sean A. Irvine
  */
 public class A002496 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020958 <code>a(n) = Sum_{k &gt;= 1} floor(3*tau^(n-k))</code>.
+ * A020958 a(n) = Sum_{k &gt;= 1} floor(3*tau^(n-k)).
  * @author Sean A. Irvine
  */
 public class A020958 implements Sequence {

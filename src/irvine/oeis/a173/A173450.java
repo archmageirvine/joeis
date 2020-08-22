@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A173450 Decimal expansion of <code>(69^2)*10^6 + 69^3</code>.
+ * A173450 Decimal expansion of (69^2)*10^6 + 69^3.
  * @author Georg Fischer
  */
 public class A173450 extends FiniteSequence {

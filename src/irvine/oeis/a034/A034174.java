@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034174 <code>a(n)</code> is minimal such that prime factorizations of <code>a(n)-n+1</code>, ..., <code>a(n)</code> have same exponents.
+ * A034174 a(n) is minimal such that prime factorizations of a(n)-n+1, ..., a(n) have same exponents.
  * @author Sean A. Irvine
  */
 public class A034174 implements Sequence {

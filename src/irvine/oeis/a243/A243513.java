@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243513 Number of length <code>n+2 0..4</code> arrays with no three elements in a row with pattern aba or abb (with <code>a!=b)</code> and new values 0..4 introduced in 0..4 order.
+ * A243513 Number of length n+2 0..4 arrays with no three elements in a row with pattern aba or abb (with a!=b) and new values 0..4 introduced in 0..4 order.
  * @author Georg Fischer
  */
 public class A243513 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199900 Number of <code>-n..n</code> arrays <code>x(0..4)</code> of 5 elements with zero sum, and adjacent elements not both strictly positive and not both strictly negative.
+ * A199900 Number of -n..n arrays x(0..4) of 5 elements with zero sum, and adjacent elements not both strictly positive and not both strictly negative.
  * @author Georg Fischer
  */
 public class A199900 extends GeneratingFunctionSequence {

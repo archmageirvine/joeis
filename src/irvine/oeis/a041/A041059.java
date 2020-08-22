@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ContinuedFractionOfSqrtSequence;
 
 /**
- * A041059 Denominators of continued fraction convergents to <code>sqrt(35)</code>.
+ * A041059 Denominators of continued fraction convergents to sqrt(35).
  * @author Georg Fischer
  */
 public class A041059 extends ContinuedFractionOfSqrtSequence {

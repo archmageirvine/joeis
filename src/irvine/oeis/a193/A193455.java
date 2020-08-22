@@ -5,7 +5,7 @@ package irvine.oeis.a193;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A193455 Paradigm shift sequence with procedure length <code>p=3</code>.
+ * A193455 Paradigm shift sequence with procedure length p=3.
  * @author Georg Fischer
  */
 public class A193455 extends HolonomicRecurrence {

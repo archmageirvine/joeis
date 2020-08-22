@@ -3,7 +3,7 @@ package irvine.oeis.a156;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A156849 Numbers n such that <code>n^2 == 2 mod (23^2)</code>.
+ * A156849 Numbers n such that n^2 == 2 mod (23^2).
  * @author Sean A. Irvine
  */
 public class A156849 extends LinearRecurrence {

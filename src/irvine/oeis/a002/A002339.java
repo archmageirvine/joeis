@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002339 y such that p <code>= (x^2 + 27y^2 )/4</code>.
+ * A002339 y such that p = (x^2 + 27y^2 )/4.
  * @author Sean A. Irvine
  */
 public class A002339 implements Sequence {

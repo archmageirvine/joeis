@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032580 Quotient of <code>'base-24'</code> division described in <code>A032579</code>.
+ * A032580 Quotient of 'base-24' division described in A032579.
  * @author Sean A. Irvine
  */
 public class A032580 implements Sequence {

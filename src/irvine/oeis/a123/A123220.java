@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123220 <code>a(n)=the (1,1)-term</code> of <code>M^(n-1)</code>, where <code>M=matrix(5,5, [3,-1,-1,-1,-1; 1,3,-1,-1,-1; 1,1,3,-1,-1; 1,1,1,3,-1; 1,1,1,1,3])</code>.
+ * A123220 a(n)=the (1,1)-term of M^(n-1), where M=matrix(5,5, [3,-1,-1,-1,-1; 1,3,-1,-1,-1; 1,1,3,-1,-1; 1,1,1,3,-1; 1,1,1,1,3]).
  * @author Georg Fischer
  */
 public class A123220 extends GeneratingFunctionSequence {

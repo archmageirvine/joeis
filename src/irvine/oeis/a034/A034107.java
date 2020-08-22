@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034107 Decimal part of square root of <code>a(n)</code> starts with <code>1</code>: first term of runs.
+ * A034107 Decimal part of square root of a(n) starts with 1: first term of runs.
  * @author Sean A. Irvine
  */
 public class A034107 extends A034097 {

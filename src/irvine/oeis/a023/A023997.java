@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023997 Number of block permutations on an <code>n-set</code>.
+ * A023997 Number of block permutations on an n-set.
  * @author Sean A. Irvine
  */
 public class A023997 implements Sequence {

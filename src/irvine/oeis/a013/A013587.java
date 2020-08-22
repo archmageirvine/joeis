@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A013587 Number of rational plane curves of degree d passing through <code>3d-1</code> general points.
+ * A013587 Number of rational plane curves of degree d passing through 3d-1 general points.
  * @author Sean A. Irvine
  */
 public class A013587 extends MemorySequence {

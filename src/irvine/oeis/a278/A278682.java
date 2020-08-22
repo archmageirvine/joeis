@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A278682 Number of non-equivalent ways to place <code>3 non-attacking</code> ferses on an <code>n X n</code> board.
+ * A278682 Number of non-equivalent ways to place 3 non-attacking ferses on an n X n board.
  * @author Sean A. Irvine
  */
 public class A278682 extends LinearRecurrence {

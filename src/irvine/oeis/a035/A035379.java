@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035379 Number of partitions of n into parts <code>6k</code> or <code>6k+5</code>.
+ * A035379 Number of partitions of n into parts 6k or 6k+5.
  * @author Georg Fischer
  */
 public class A035379 extends EulerTransform {

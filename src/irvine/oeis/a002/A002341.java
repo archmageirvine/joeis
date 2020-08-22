@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.factor.prime.Fast;
 
 /**
- * A002341 Numbers y such that p <code>= x^2 - 5y^2</code>, where p <code>= 0, 1</code>, or <code>4 (mod 5)</code>.
+ * A002341 Numbers y such that p = x^2 - 5y^2, where p = 0, 1, or 4 (mod 5).
  * @author Sean A. Irvine
  */
 public class A002341 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A320036 <code>a(n)</code> is the number of integer partitions of n with largest part <code>&lt;= 7</code> for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
+ * A320036 a(n) is the number of integer partitions of n with largest part &lt;= 7 for which the index of the seaweed algebra formed by the integer partition paired with its weight is 0.
  * @author Georg Fischer
  */
 public class A320036 extends PaddingSequence {

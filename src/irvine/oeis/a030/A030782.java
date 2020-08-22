@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.RecordPositionSequence;
 
 /**
- * A030782 Positions of record values in <code>A030777</code>.
+ * A030782 Positions of record values in A030777.
  * @author Sean A. Irvine
  */
 public class A030782 extends RecordPositionSequence {

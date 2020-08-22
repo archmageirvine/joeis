@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014010 Linear recursion relative of Shallit sequence <code>S(2,6)</code>.
+ * A014010 Linear recursion relative of Shallit sequence S(2,6).
  * @author Sean A. Irvine
  */
 public class A014010 extends LinearRecurrence {

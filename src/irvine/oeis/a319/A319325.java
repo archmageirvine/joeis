@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319325 <code>a(n)</code> is the number of row convex polyglasses (polyiamonds which need only touch at corners) with n cells.
+ * A319325 a(n) is the number of row convex polyglasses (polyiamonds which need only touch at corners) with n cells.
  * @author Georg Fischer
  */
 public class A319325 extends GeneratingFunctionSequence {

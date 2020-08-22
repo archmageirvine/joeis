@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A085545 Smaller of number pairs from <code>A054038</code> which together use all ten digits once.
+ * A085545 Smaller of number pairs from A054038 which together use all ten digits once.
  * @author Georg Fischer
  */
 public class A085545 extends FiniteSequence {

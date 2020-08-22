@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A014358 Chance of getting no pair, a pair, 2 pair, 3 of a kind, other straight, other flush, full house, 4 of a kind, other straight flush, a royal flush, or 5 of a kind in poker when joker is wild is 1 in <code>a(n)</code> (rounded to nearest integer).
+ * A014358 Chance of getting no pair, a pair, 2 pair, 3 of a kind, other straight, other flush, full house, 4 of a kind, other straight flush, a royal flush, or 5 of a kind in poker when joker is wild is 1 in a(n) (rounded to nearest integer).
  * @author Sean A. Irvine
  */
 public class A014358 extends FiniteSequence {

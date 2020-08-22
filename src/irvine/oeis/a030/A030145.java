@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030145 Primes such that in <code>p^2</code> the parity of digits alternates.
+ * A030145 Primes such that in p^2 the parity of digits alternates.
  * @author Sean A. Irvine
  */
 public class A030145 extends A000040 {

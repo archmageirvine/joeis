@@ -5,7 +5,7 @@ package irvine.oeis.a257;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A257542 Square-sum pairs: Numbers n such that 0,1, ..., <code>2n-1</code> can be partitioned into n pairs, where each pair adds up to a perfect square.
+ * A257542 Square-sum pairs: Numbers n such that 0,1, ..., 2n-1 can be partitioned into n pairs, where each pair adds up to a perfect square.
  * @author Georg Fischer
  */
 public class A257542 extends HolonomicRecurrence {

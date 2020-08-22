@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118444 <code>a(n) = A118443(n)/(n+1)</code>, where <code>A118443</code> is the row sums of triangle <code>A118441</code>.
+ * A118444 a(n) = A118443(n)/(n+1), where A118443 is the row sums of triangle A118441.
  * @author Georg Fischer
  */
 public class A118444 extends GeneratingFunctionSequence {

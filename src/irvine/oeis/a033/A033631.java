@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033631 Numbers k such that <code>sigma(phi(k)) = sigma(k)</code> where sigma is the sum of divisors function <code>A000203</code> and phi is the Euler totient function <code>A000010</code>.
+ * A033631 Numbers k such that sigma(phi(k)) = sigma(k) where sigma is the sum of divisors function A000203 and phi is the Euler totient function A000010.
  * @author Sean A. Irvine
  */
 public class A033631 implements Sequence {

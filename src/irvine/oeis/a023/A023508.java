@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023508 Sum of exponents in prime-power factorization of n-th prime <code>- 1</code>.
+ * A023508 Sum of exponents in prime-power factorization of n-th prime - 1.
  * @author Sean A. Irvine
  */
 public class A023508 extends A000040 {

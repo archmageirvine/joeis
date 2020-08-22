@@ -3,7 +3,7 @@ package irvine.oeis.a273;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A273054 Numbers n such that <code>19*n^2 + 20</code> is a square.
+ * A273054 Numbers n such that 19*n^2 + 20 is a square.
  * @author Sean A. Irvine
  */
 public class A273054 extends LinearRecurrence {

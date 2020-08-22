@@ -7,7 +7,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A091435 Array <code>T(n,k) = n*(n+k)</code>, read by antidiagonals.
+ * A091435 Array T(n,k) = n*(n+k), read by antidiagonals.
  * @author Georg Fischer
  */
 public class A091435 extends GeneratingFunctionTriangle {

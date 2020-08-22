@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144166 <code>JacobiP[n,1,3,5]</code>.
+ * A144166 JacobiP[n,1,3,5].
  * @author Georg Fischer
  */
 public class A144166 extends HolonomicRecurrence {

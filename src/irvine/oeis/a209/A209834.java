@@ -3,7 +3,7 @@ package irvine.oeis.a209;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A209834 <code>a(A074773(n) mod 1519829 mod 18) = A074773(n), 1 &lt;= n &lt;= 18</code>.
+ * A209834 a(A074773(n) mod 1519829 mod 18) = A074773(n), 1 &lt;= n &lt;= 18.
  * @author Georg Fischer
  */
 public class A209834 extends FiniteSequence {

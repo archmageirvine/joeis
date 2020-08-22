@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A208856 Partitions of n into parts not congruent to <code>0, +-4, +-6, +-10, 16 (mod 32)</code>.
+ * A208856 Partitions of n into parts not congruent to 0, +-4, +-6, +-10, 16 (mod 32).
  * @author Georg Fischer
  */
 public class A208856 extends EulerTransform {

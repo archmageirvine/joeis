@@ -4,7 +4,7 @@ package irvine.oeis.a023;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A023054 Simon Plouffe's conjectured extension of sequence <code>A008368</code>.
+ * A023054 Simon Plouffe's conjectured extension of sequence A008368.
  * @author Georg Fischer
  */
 public class A023054 extends GeneratingFunctionSequence {

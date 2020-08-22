@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.math.cr.Convergents;
 
 /**
- * A002485 Numerators of convergents to <code>Pi</code>.
+ * A002485 Numerators of convergents to Pi.
  * @author Sean A. Irvine
  */
 public class A002485 implements Sequence {

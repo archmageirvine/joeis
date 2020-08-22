@@ -7,7 +7,7 @@ import irvine.oeis.a095.A095901;
 
 
 /**
- * A283481 Positions of odd terms in <code>A004001</code>.
+ * A283481 Positions of odd terms in A004001.
  * @author Georg Fischer
  */
 public class A283481 extends PositionSequence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333006 Number of rooted <code>level-2</code> phylogenetic networks with n labeled leaves, when multiple <code>(i.e.</code>, parallel) edges are not allowed.
+ * A333006 Number of rooted level-2 phylogenetic networks with n labeled leaves, when multiple (i.e., parallel) edges are not allowed.
  * @author Sean A. Irvine
  */
 public class A333006 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156906 Transform of <code>F(n+1)</code> with Hankel transform <code>(-1)^C(n+1,2)*F(n+1)</code>.
+ * A156906 Transform of F(n+1) with Hankel transform (-1)^C(n+1,2)*F(n+1).
  * @author Georg Fischer
  */
 public class A156906 extends HolonomicRecurrence {

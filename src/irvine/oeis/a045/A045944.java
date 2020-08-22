@@ -3,7 +3,7 @@ package irvine.oeis.a045;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A045944 Rhombic matchstick numbers: <code>a(n) = n*(3*n+2)</code>.
+ * A045944 Rhombic matchstick numbers: a(n) = n*(3*n+2).
  * @author Sean A. Irvine
  */
 public class A045944 extends LinearRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027666 <code>a(n)/10000000</code> gives <code>log_10(n)</code> to 7 places.
+ * A027666 a(n)/10000000 gives log_10(n) to 7 places.
  * @author Sean A. Irvine
  */
 public class A027666 implements Sequence {

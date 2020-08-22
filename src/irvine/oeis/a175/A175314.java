@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A175314 Decimal expansion of <code>exp(Pi) + exp(-Pi)</code>.
+ * A175314 Decimal expansion of exp(Pi) + exp(-Pi).
  * @author Georg Fischer
  */
 public class A175314 extends DecimalExpansionSequence {

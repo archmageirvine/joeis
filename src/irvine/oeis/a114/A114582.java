@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114582 Number of Motzkin paths of length n having no UDH's starting at level <code>0 (U=(1,1), H=(1,0), D=(1,-1))</code>.
+ * A114582 Number of Motzkin paths of length n having no UDH's starting at level 0 (U=(1,1), H=(1,0), D=(1,-1)).
  * @author Georg Fischer
  */
 public class A114582 extends HolonomicRecurrence {

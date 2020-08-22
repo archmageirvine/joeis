@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223499 Petersen graph <code>(3,1)</code> coloring a rectangular array: number of <code>n X 3 0..5</code> arrays where 0..5 label nodes of a graph with edges <code>0,1 0,3 3,5 3,4 1,2 1,4 4,5 2,0 2,5</code> and every array movement to a horizontal, diagonal or antidiagonal neighbor moves along an edge of this graph, with the array starting at 0.
+ * A223499 Petersen graph (3,1) coloring a rectangular array: number of n X 3 0..5 arrays where 0..5 label nodes of a graph with edges 0,1 0,3 3,5 3,4 1,2 1,4 4,5 2,0 2,5 and every array movement to a horizontal, diagonal or antidiagonal neighbor moves along an edge of this graph, with the array starting at 0.
  * @author Georg Fischer
  */
 public class A223499 extends GeneratingFunctionSequence {

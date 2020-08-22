@@ -3,7 +3,7 @@ package irvine.oeis.a215;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A215828 <code>a(n) = 7^(floor(n/3))*A(n)</code>, where <code>A(n) = A(n-1) + A(n-2) + A(n-3)/7</code>, with <code>A(0)=3, A(1)=1, A(2)=3</code>.
+ * A215828 a(n) = 7^(floor(n/3))*A(n), where A(n) = A(n-1) + A(n-2) + A(n-3)/7, with A(0)=3, A(1)=1, A(2)=3.
  * @author Sean A. Irvine
  */
 public class A215828 extends LinearRecurrence {

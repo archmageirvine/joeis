@@ -6,7 +6,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093393 <code>[n/9] + [n/4] + [(n+1)/9] + [(n+1)/4] + [(n+2)/9]</code>.
+ * A093393 [n/9] + [n/4] + [(n+1)/9] + [(n+1)/4] + [(n+2)/9].
  * @author Georg Fischer
  */
 public class A093393 extends GeneratingFunctionSequence {

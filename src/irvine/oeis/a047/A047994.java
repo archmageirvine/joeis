@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A047994 Unitary totient (or unitary phi) function <code>uphi(n)</code>.
+ * A047994 Unitary totient (or unitary phi) function uphi(n).
  * @author Sean A. Irvine
  */
 public class A047994 implements Sequence {

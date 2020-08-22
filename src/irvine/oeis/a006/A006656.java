@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000965;
 
 /**
- * A006656 Denominators of expansion of <code>sinh x /</code> sin <code>x</code>.
+ * A006656 Denominators of expansion of sinh x / sin x.
  * @author Sean A. Irvine
  */
 public class A006656 extends A000965 {

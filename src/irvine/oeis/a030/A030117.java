@@ -4,7 +4,7 @@ package irvine.oeis.a030;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A030117 Number of triangles a queen can make (starting anywhere) on an <code>n X n</code> board.
+ * A030117 Number of triangles a queen can make (starting anywhere) on an n X n board.
  * @author Georg Fischer
  */
 public class A030117 extends GeneratingFunctionSequence {

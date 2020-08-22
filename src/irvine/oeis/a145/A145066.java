@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145066 Partial sums of <code>A002522</code>, starting at <code>n=1</code>.
+ * A145066 Partial sums of A002522, starting at n=1.
  * @author Georg Fischer
  */
 public class A145066 extends GeneratingFunctionSequence {

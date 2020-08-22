@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A030538 <code>(2^n+2)*(2^n+4)*(4^n+9*2^n+38)/720</code>.
+ * A030538 (2^n+2)*(2^n+4)*(4^n+9*2^n+38)/720.
  * @author Sean A. Irvine
  */
 public class A030538 extends LinearRecurrence {

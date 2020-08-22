@@ -6,7 +6,7 @@ package irvine.oeis.a235;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A235378 <code>a(n) = (-1)^n*(n! - (-1)^n)</code>.
+ * A235378 a(n) = (-1)^n*(n! - (-1)^n).
  * @author Georg Fischer
  */
 public class A235378 extends HolonomicRecurrence {

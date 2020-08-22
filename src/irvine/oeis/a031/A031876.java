@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031876 <code>a(n) = Sum_{k=0..n} floor(k^(1/3))</code>.
+ * A031876 a(n) = Sum_{k=0..n} floor(k^(1/3)).
  * @author Sean A. Irvine
  */
 public class A031876 extends A031424 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001969;
 
 /**
- * A140592 <code>a(n) = 2n</code> if <code>A010060(n-1)</code> is 0, and <code>a(n) = 2n+1</code> if <code>A010060(n-1)</code> is 1.
+ * A140592 a(n) = 2n if A010060(n-1) is 0, and a(n) = 2n+1 if A010060(n-1) is 1.
  * @author Georg Fischer
  */
 public class A140592 extends A001969 {

@@ -6,7 +6,7 @@ package irvine.oeis.a327;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A327411 <code>a(n) = multinomial(2*n+3; 3, 2, 2</code>, ..., <code>2) (n</code> times <code>'2')</code>.
+ * A327411 a(n) = multinomial(2*n+3; 3, 2, 2, ..., 2) (n times '2').
  * @author Georg Fischer
  */
 public class A327411 extends HolonomicRecurrence {

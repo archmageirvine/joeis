@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228316 The hyper-Wiener index of the Cartesian product of the cycles <code>C(n)</code> and <code>C(n) (a</code> Torus Grid Graph).
+ * A228316 The hyper-Wiener index of the Cartesian product of the cycles C(n) and C(n) (a Torus Grid Graph).
  * @author Georg Fischer
  */
 public class A228316 extends GeneratingFunctionSequence {

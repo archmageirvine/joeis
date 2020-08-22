@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144087 <code>a(n)</code> is the number of partial bijections (or subpermutations) of an n-element set with exactly 2 fixed points.
+ * A144087 a(n) is the number of partial bijections (or subpermutations) of an n-element set with exactly 2 fixed points.
  * @author Georg Fischer
  */
 public class A144087 extends HolonomicRecurrence {

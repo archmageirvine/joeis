@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152011 <code>a(0) = 1</code> and <code>a(n) = (3^n - (-1)^n)/2</code> for <code>n &gt;= 1</code>.
+ * A152011 a(0) = 1 and a(n) = (3^n - (-1)^n)/2 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A152011 extends GeneratingFunctionSequence {

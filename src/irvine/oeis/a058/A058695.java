@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A058695 Number of ways to partition <code>2n+1</code> into positive integers.
+ * A058695 Number of ways to partition 2n+1 into positive integers.
  * @author Georg Fischer
  */
 public class A058695 extends EulerTransform {

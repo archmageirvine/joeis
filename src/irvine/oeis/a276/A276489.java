@@ -6,7 +6,7 @@ package irvine.oeis.a276;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A276489 <code>a(n) = 25^(n+1)*Gamma(n+8/5)/Gamma(3/5)</code>.
+ * A276489 a(n) = 25^(n+1)*Gamma(n+8/5)/Gamma(3/5).
  * @author Georg Fischer
  */
 public class A276489 extends HolonomicRecurrence {

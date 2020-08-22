@@ -1,7 +1,7 @@
 package irvine.oeis.a008;
 
 /**
- * A008929 Number of increasing sequences of Goldbach type with maximal element <code>n</code>.
+ * A008929 Number of increasing sequences of Goldbach type with maximal element n.
  * @author Sean A. Irvine
  */
 public class A008929 extends A008928 {

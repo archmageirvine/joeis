@@ -5,7 +5,7 @@ package irvine.oeis.a038;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A038519 Number of elements of <code>GF(2^n)</code> with trace 0 and subtrace 1.
+ * A038519 Number of elements of GF(2^n) with trace 0 and subtrace 1.
  * @author Georg Fischer
  */
 public class A038519 extends HolonomicRecurrence {

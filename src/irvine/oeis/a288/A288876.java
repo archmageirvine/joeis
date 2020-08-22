@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288876 <code>a(n) = binomial(n+4, n)^2</code>. Square of the fifth diagonal sequence of <code>A007318</code> (Pascal). Fifth diagonal sequence of <code>A008459</code>.
+ * A288876 a(n) = binomial(n+4, n)^2. Square of the fifth diagonal sequence of A007318 (Pascal). Fifth diagonal sequence of A008459.
  * @author Georg Fischer
  */
 public class A288876 extends GeneratingFunctionSequence {

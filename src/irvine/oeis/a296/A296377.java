@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296377 Natural numbers y such that <code>7y^2 = x^2 + x + 1</code> has a solution in natural numbers.
+ * A296377 Natural numbers y such that 7y^2 = x^2 + x + 1 has a solution in natural numbers.
  * @author Georg Fischer
  */
 public class A296377 extends GeneratingFunctionSequence {

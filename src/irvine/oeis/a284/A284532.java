@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A284532 The lexicographically earliest sequence of positive integers such that <code>a(1) = a(2) = 1</code> and <code>a(n + k) != a(n - k)</code> for all k <code>&lt;= a(n)</code>.
+ * A284532 The lexicographically earliest sequence of positive integers such that a(1) = a(2) = 1 and a(n + k) != a(n - k) for all k &lt;= a(n).
  * @author Georg Fischer
  */
 public class A284532 extends PaddingSequence {

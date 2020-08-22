@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A006159 <code>a(n)=a(a(n-4))+a(n-a(n-4))</code>.
+ * A006159 a(n)=a(a(n-4))+a(n-a(n-4)).
  * @author Sean A. Irvine
  */
 public class A006159 extends MemorySequence {

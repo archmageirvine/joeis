@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A179542 Trajectory of 1 under the morphism <code>1-&gt;(1,2,3), 2-&gt;(1,2), 3-&gt;(1)</code> related to the heptagon and <code>A006356</code>.
+ * A179542 Trajectory of 1 under the morphism 1-&gt;(1,2,3), 2-&gt;(1,2), 3-&gt;(1) related to the heptagon and A006356.
  * @author Georg Fischer
  */
 public class A179542 extends PaddingSequence {

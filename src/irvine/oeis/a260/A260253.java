@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260253 Number of <code>symmetry-allowed, linearly-independent</code> terms at n-th order in the expansion of E <code>x (e+a)</code> rovibrational perturbation matrix <code>H(Jx,Jy,Jz)</code>.
+ * A260253 Number of symmetry-allowed, linearly-independent terms at n-th order in the expansion of E x (e+a) rovibrational perturbation matrix H(Jx,Jy,Jz).
  * @author Georg Fischer
  */
 public class A260253 extends GeneratingFunctionSequence {

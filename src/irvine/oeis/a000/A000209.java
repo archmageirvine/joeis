@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000209 Nearest integer to tan <code>n</code>.
+ * A000209 Nearest integer to tan n.
  * @author Sean A. Irvine
  */
 public class A000209 implements Sequence {

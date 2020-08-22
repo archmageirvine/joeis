@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097109 G.f.: <code>s(2)^2*s(3)^3/(s(1)*s(6)^2)</code>, where <code>s(k) := subs(q=q^k, eta(q))</code> and <code>eta(q)</code> is Dedekind's function, cf. <code>A010815</code>.
+ * A097109 G.f.: s(2)^2*s(3)^3/(s(1)*s(6)^2), where s(k) := subs(q=q^k, eta(q)) and eta(q) is Dedekind's function, cf. A010815.
  * @author Georg Fischer
  */
 public class A097109 extends EulerTransform {

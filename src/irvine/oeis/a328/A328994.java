@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328994 <code>a(n) = n^2*(1+n)*(1+n^2)/4</code>.
+ * A328994 a(n) = n^2*(1+n)*(1+n^2)/4.
  * @author Georg Fischer
  */
 public class A328994 extends HolonomicRecurrence {

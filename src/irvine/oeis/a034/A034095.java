@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034095 Indices of <code>(-1)sigma</code> perfect numbers.
+ * A034095 Indices of (-1)sigma perfect numbers.
  * @author Sean A. Irvine
  */
 public class A034095 implements Sequence {

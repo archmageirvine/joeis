@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132595 Number of ways to move a chess queen from the lower left corner to square <code>(n,n)</code>, with the queen moving only up, right, or diagonally <code>up-right</code>.
+ * A132595 Number of ways to move a chess queen from the lower left corner to square (n,n), with the queen moving only up, right, or diagonally up-right.
  * @author Georg Fischer
  */
 public class A132595 extends HolonomicRecurrence {

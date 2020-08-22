@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
- * A307812 Triangular numbers <code>t(n)</code> with a zeroless decimal representation such that (product of decimal digits of <code>t(n)) / n</code> is an integer.
+ * A307812 Triangular numbers t(n) with a zeroless decimal representation such that (product of decimal digits of t(n)) / n is an integer.
  * @author Sean A. Irvine
  */
 public class A307812 extends A000217 {

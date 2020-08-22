@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191869 First differences of the dying rabbits sequence <code>A000044</code>.
+ * A191869 First differences of the dying rabbits sequence A000044.
  * @author Georg Fischer
  */
 public class A191869 extends GeneratingFunctionSequence {

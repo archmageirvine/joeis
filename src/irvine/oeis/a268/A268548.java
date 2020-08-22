@@ -6,7 +6,7 @@ package irvine.oeis.a268;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A268548 The diagonal of <code>1/((1-x-y-z -u)*(1-u-z-x z))</code>.
+ * A268548 The diagonal of 1/((1-x-y-z -u)*(1-u-z-x z)).
  * @author Georg Fischer
  */
 public class A268548 extends HolonomicRecurrence {

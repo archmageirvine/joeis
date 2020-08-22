@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023087 Numbers k such that k and <code>3*k</code> are anagrams.
+ * A023087 Numbers k such that k and 3*k are anagrams.
  * @author Sean A. Irvine
  */
 public class A023087 implements Sequence {

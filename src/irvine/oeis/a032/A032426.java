@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032426 <code>Sum_{n&gt;=0} a(n)/10^n = exp(1)</code>.
+ * A032426 Sum_{n&gt;=0} a(n)/10^n = exp(1).
  * @author Sean A. Irvine
  */
 public class A032426 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006565 Number of ways to color vertices of a hexagon using <code>&lt;= n</code> colors, allowing only rotations.
+ * A006565 Number of ways to color vertices of a hexagon using &lt;= n colors, allowing only rotations.
  * @author Sean A. Irvine
  */
 public class A006565 implements Sequence {

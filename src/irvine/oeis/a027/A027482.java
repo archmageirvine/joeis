@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027482 <code>a(n) = n*(n^3 - 1)/2</code>.
+ * A027482 a(n) = n*(n^3 - 1)/2.
  * @author Georg Fischer
  */
 public class A027482 extends GeneratingFunctionSequence {

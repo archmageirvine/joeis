@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A053993 The number <code>phi_2(n)</code> of Frobenius partitions that allow up to 2 repetitions of an integer in a row.
+ * A053993 The number phi_2(n) of Frobenius partitions that allow up to 2 repetitions of an integer in a row.
  * @author Georg Fischer
  */
 public class A053993 extends EulerTransform {

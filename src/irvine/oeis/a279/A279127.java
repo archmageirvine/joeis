@@ -6,7 +6,7 @@ package irvine.oeis.a279;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A279127 <code>a(n) = Sum_{0&lt;=m&lt;n} Product_{-m&lt;=j&lt;=m} (n-j)</code>.
+ * A279127 a(n) = Sum_{0&lt;=m&lt;n} Product_{-m&lt;=j&lt;=m} (n-j).
  * @author Georg Fischer
  */
 public class A279127 extends HolonomicRecurrence {

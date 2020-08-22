@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A178743 <code>a(n) = A000041(n) mod 10</code>.
+ * A178743 a(n) = A000041(n) mod 10.
  * @author Georg Fischer
  */
 public class A178743 implements Sequence {

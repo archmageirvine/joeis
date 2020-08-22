@@ -4,7 +4,7 @@ package irvine.oeis.a107;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A107971 <code>a(n) = (n+1)(n+2)(n+3)(35n^3 + 153n^2 + 232n + 120)/720</code>.
+ * A107971 a(n) = (n+1)(n+2)(n+3)(35n^3 + 153n^2 + 232n + 120)/720.
  * @author Georg Fischer
  */
 public class A107971 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225367 Number of palindromes of length n in base <code>3 (A118594)</code>.
+ * A225367 Number of palindromes of length n in base 3 (A118594).
  * @author Georg Fischer
  */
 public class A225367 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A171624 <code>Floor(n-th</code> nonprime <code>/ n)</code>.
+ * A171624 Floor(n-th nonprime / n).
  * @author Georg Fischer
  */
 public class A171624 extends PaddingSequence {

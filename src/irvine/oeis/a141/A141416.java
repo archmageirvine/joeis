@@ -3,7 +3,7 @@ package irvine.oeis.a141;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A141416 First differences of <code>A133730</code>.
+ * A141416 First differences of A133730.
  * @author Sean A. Irvine
  */
 public class A141416 extends LinearRecurrence {

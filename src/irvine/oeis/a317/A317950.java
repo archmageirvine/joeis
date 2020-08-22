@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a080.A080843;
 
 /**
- * A317950 First differences of ternary tribonacci word <code>A080843</code>.
+ * A317950 First differences of ternary tribonacci word A080843.
  * @author Georg Fischer
  */
 public class A317950 extends DifferenceSequence {

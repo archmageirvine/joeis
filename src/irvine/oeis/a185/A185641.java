@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A185641 Least k such that <code>A098591(k) = n</code> or 0 if no such k exists.
+ * A185641 Least k such that A098591(k) = n or 0 if no such k exists.
  * @author Georg Fischer
  */
 public class A185641 extends FiniteSequence {

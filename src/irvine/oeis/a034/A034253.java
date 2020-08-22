@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a076.A076832;
 
 /**
- * A034253 Triangle read by rows: <code>T(n,k) =</code> number of inequivalent linear <code>[n,k]</code> binary codes without 0 columns <code>(n &gt;= 1, 1 &lt;= k &lt;= n)</code>.
+ * A034253 Triangle read by rows: T(n,k) = number of inequivalent linear [n,k] binary codes without 0 columns (n &gt;= 1, 1 &lt;= k &lt;= n).
  * @author Sean A. Irvine
  */
 public class A034253 extends A076832 {

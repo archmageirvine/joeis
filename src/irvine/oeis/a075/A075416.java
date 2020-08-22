@@ -5,7 +5,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075416 Squares of <code>A002281</code>.
+ * A075416 Squares of A002281.
  * @author Georg Fischer
  */
 public class A075416 extends HolonomicRecurrence {

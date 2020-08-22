@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A078716 Sequence has period 9 and differences between successive terms are <code>4, -3, 4, -3, 4, -3, 4, -3, -4</code>.
+ * A078716 Sequence has period 9 and differences between successive terms are 4, -3, 4, -3, 4, -3, 4, -3, -4.
  * @author Georg Fischer
  */
 public class A078716 extends PaddingSequence {

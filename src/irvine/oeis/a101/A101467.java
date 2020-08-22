@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101467 Number of distinct n-term ratios <code>x_1 : x_2</code> : ... : <code>x_n</code> where each <code>x_i</code> is in the range <code>[1-10]</code>.
+ * A101467 Number of distinct n-term ratios x_1 : x_2 : ... : x_n where each x_i is in the range [1-10].
  * @author Georg Fischer
  */
 public class A101467 extends GeneratingFunctionSequence {

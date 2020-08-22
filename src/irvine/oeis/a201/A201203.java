@@ -6,7 +6,7 @@ package irvine.oeis.a201;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A201203 Alternating row sums of triangle <code>A201201</code>: first associated monic <code>Laguerre-Sonin(e)</code> polynomials with parameter <code>alpha=1</code> evaluated at <code>x=-1</code>.
+ * A201203 Alternating row sums of triangle A201201: first associated monic Laguerre-Sonin(e) polynomials with parameter alpha=1 evaluated at x=-1.
  * @author Georg Fischer
  */
 public class A201203 extends HolonomicRecurrence {

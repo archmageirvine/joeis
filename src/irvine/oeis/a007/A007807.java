@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007807 A variation on Euclid: <code>a(n)=g(n)-1</code>, where <code>g(0)=0, g(1)=1, g(n+1)=g(n)(g(n-1)+1)</code>.
+ * A007807 A variation on Euclid: a(n)=g(n)-1, where g(0)=0, g(1)=1, g(n+1)=g(n)(g(n-1)+1).
  * @author Sean A. Irvine
  */
 public class A007807 implements Sequence {

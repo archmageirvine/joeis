@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A060019 <code>a(n) = floor(2*sqrt(prime(n)-2))</code> where <code>prime(n) = n-th</code> prime.
+ * A060019 a(n) = floor(2*sqrt(prime(n)-2)) where prime(n) = n-th prime.
  * @author Georg Fischer
  */
 public class A060019 extends A000040 {

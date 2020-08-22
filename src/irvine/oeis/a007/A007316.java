@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000111;
 
 /**
- * A007316 Reversion of g.f. for Euler numbers <code>A000111(n-1)</code>.
+ * A007316 Reversion of g.f. for Euler numbers A000111(n-1).
  * @author Sean A. Irvine
  */
 public class A007316 extends A000111 {

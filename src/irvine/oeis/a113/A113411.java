@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A113411 Excess of number of divisors of <code>2n+1</code> of form <code>8k+1, 8k+3</code> over those of form <code>8k+5, 8k+7</code>.
+ * A113411 Excess of number of divisors of 2n+1 of form 8k+1, 8k+3 over those of form 8k+5, 8k+7.
  * @author Georg Fischer
  */
 public class A113411 extends EulerTransform {

@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A236686 Possible values for positive integers a,b,c,d such that <code>1/a + 1/b + 1/c + 1/d = 1</code>.
+ * A236686 Possible values for positive integers a,b,c,d such that 1/a + 1/b + 1/c + 1/d = 1.
  * @author Georg Fischer
  */
 public class A236686 extends FiniteSequence {

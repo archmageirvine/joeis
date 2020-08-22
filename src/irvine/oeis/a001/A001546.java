@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001546 <code>a(n) = (8*n+1)*(8*n+3)*(8*n+5)*(8*n+7)</code>.
+ * A001546 a(n) = (8*n+1)*(8*n+3)*(8*n+5)*(8*n+7).
  * @author Sean A. Irvine
  */
 public class A001546 implements Sequence {

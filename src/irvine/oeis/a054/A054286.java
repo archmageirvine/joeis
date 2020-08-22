@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001622;
 
 
 /**
- * A054286 Positions of <code>0</code>'s in the decimal expansion of the Golden Ratio <code>(sqrt(5)+1)/2</code>.
+ * A054286 Positions of 0's in the decimal expansion of the Golden Ratio (sqrt(5)+1)/2.
  * @author Georg Fischer
  */
 public class A054286 extends PositionSequence {

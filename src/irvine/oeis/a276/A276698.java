@@ -5,7 +5,7 @@ package irvine.oeis.a276;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A276698 Numbers k such that <code>(25*10^k - 37) / 3</code> is prime.
+ * A276698 Numbers k such that (25*10^k - 37) / 3 is prime.
  * @author Georg Fischer
  */
 public class A276698 extends PowerFactorPrimeSequence {

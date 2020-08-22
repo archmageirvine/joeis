@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A185175 <code>a(n) = A010815(7*n + 5)</code>.
+ * A185175 a(n) = A010815(7*n + 5).
  * @author Georg Fischer
  */
 public class A185175 extends EulerTransform {

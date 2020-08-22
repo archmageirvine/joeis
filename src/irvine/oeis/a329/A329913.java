@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329913 The fifth moments of the squared binomial coefficients; <code>a(n) = Sum_{m=0..n} m^5*binomial(n, m)^2</code>.
+ * A329913 The fifth moments of the squared binomial coefficients; a(n) = Sum_{m=0..n} m^5*binomial(n, m)^2.
  * @author Georg Fischer
  */
 public class A329913 extends HolonomicRecurrence {

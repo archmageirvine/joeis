@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136331 The discriminant of the characteristic polynomial of the <code>O+</code> and <code>O-</code> submatrix for spin 3 of the nuclear electric quadrupole Hamiltonian is a perfect square for these values.
+ * A136331 The discriminant of the characteristic polynomial of the O+ and O- submatrix for spin 3 of the nuclear electric quadrupole Hamiltonian is a perfect square for these values.
  * @author Georg Fischer
  */
 public class A136331 extends GeneratingFunctionSequence {

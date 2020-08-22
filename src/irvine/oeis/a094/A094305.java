@@ -7,7 +7,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A094305 Triangle read by rows: <code>T(n,k) = ((n+1)(n+2)/2) * binomial(n,k) (0 &lt;= k &lt;= n)</code>.
+ * A094305 Triangle read by rows: T(n,k) = ((n+1)(n+2)/2) * binomial(n,k) (0 &lt;= k &lt;= n).
  * @author Georg Fischer
  */
 public class A094305 extends GeneratingFunctionTriangle {

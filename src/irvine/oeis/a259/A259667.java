@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000108;
 
 /**
- * A259667 Catalan numbers <code>mod 6</code>.
+ * A259667 Catalan numbers mod 6.
  * @author Georg Fischer
  */
 public class A259667 extends A000108 {

@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060532 Number of ways to color vertices of a heptagon using <code>&lt;= n</code> colors, allowing rotations and reflections.
+ * A060532 Number of ways to color vertices of a heptagon using &lt;= n colors, allowing rotations and reflections.
  * @author Georg Fischer
  */
 public class A060532 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a240;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A240805 Coefficients in expansion of graph zeta function for complete graph <code>K_4</code>.
+ * A240805 Coefficients in expansion of graph zeta function for complete graph K_4.
  * @author Georg Fischer
  */
 public class A240805 extends HolonomicRecurrence {

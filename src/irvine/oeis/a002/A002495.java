@@ -9,7 +9,7 @@ import irvine.math.polynomial.ThetaFunctions;
 import irvine.math.z.Z;
 
 /**
- * A002495 Theta series of 27-dimensional unimodular lattice with root system <code>A_1</code> with no parity vector of norm 3.
+ * A002495 Theta series of 27-dimensional unimodular lattice with root system A_1 with no parity vector of norm 3.
  * @author Sean A. Irvine
  */
 public class A002495 extends A002408 {

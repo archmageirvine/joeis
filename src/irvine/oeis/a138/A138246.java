@@ -3,7 +3,7 @@ package irvine.oeis.a138;
 import irvine.math.z.Z;
 
 /**
- * A138246 Composite members of sequence <code>A138244</code>.
+ * A138246 Composite members of sequence A138244.
  * @author Sean A. Irvine
  */
 public class A138246 extends A138244 {

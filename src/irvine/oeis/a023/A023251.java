@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023251 Numbers n such that n remains prime through 2 iterations of function <code>f(x) = 4x + 9</code>.
+ * A023251 Numbers n such that n remains prime through 2 iterations of function f(x) = 4x + 9.
  * @author Sean A. Irvine
  */
 public class A023251 extends A000040 {

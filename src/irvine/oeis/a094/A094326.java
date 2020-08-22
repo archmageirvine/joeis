@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A094326 <code>a(n) = 8</code> written in base <code>n</code>.
+ * A094326 a(n) = 8 written in base n.
  * @author Georg Fischer
  */
 public class A094326 extends PaddingSequence {

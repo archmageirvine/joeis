@@ -7,7 +7,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A065109 Triangle <code>T(n,k)</code> of coefficients relating to Bezier curve continuity.
+ * A065109 Triangle T(n,k) of coefficients relating to Bezier curve continuity.
  * @author Georg Fischer
  */
 public class A065109 extends GeneratingFunctionTriangle {

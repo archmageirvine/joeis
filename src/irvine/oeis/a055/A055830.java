@@ -7,7 +7,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A055830 Triangle T read by rows: diagonal differences of triangle <code>A037027</code>.
+ * A055830 Triangle T read by rows: diagonal differences of triangle A037027.
  * @author Georg Fischer
  */
 public class A055830 extends GeneratingFunctionTriangle {

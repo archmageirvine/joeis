@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033871 Divisors <code>= 3 (mod 4)</code> of Descartes's 198585576189.
+ * A033871 Divisors = 3 (mod 4) of Descartes's 198585576189.
  * @author Sean A. Irvine
  */
 public class A033871 extends FiniteSequence {

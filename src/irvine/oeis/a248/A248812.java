@@ -6,7 +6,7 @@ package irvine.oeis.a248;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A248812 Repeated terms of <code>(2n)! (A010050)</code>.
+ * A248812 Repeated terms of (2n)! (A010050).
  * @author Georg Fischer
  */
 public class A248812 extends HolonomicRecurrence {

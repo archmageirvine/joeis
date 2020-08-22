@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228362 The number of all possible covers of L-length line segment by 3-length line segments with allowed gaps <code>&lt; 3</code>.
+ * A228362 The number of all possible covers of L-length line segment by 3-length line segments with allowed gaps &lt; 3.
  * @author Georg Fischer
  */
 public class A228362 extends GeneratingFunctionSequence {

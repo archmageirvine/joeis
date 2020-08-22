@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A039028 Numbers whose representation in base 6 has the same number of <code>3</code>'s and <code>5</code>'s.
+ * A039028 Numbers whose representation in base 6 has the same number of 3's and 5's.
  * @author Georg Fischer
  */
 public class A039028 extends RunsBaseSequence {

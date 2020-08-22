@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181982 Expansion of <code>(1 - x^2)^2 * (1 + x)^2 / (1 - x^6)</code> in powers of <code>x</code>.
+ * A181982 Expansion of (1 - x^2)^2 * (1 + x)^2 / (1 - x^6) in powers of x.
  * @author Georg Fischer
  */
 public class A181982 extends HolonomicRecurrence {

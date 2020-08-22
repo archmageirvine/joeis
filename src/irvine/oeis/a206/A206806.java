@@ -3,7 +3,7 @@ package irvine.oeis.a206;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A206806 <code>Sum_{0&lt;j&lt;k&lt;=n} s(k)-s(j)</code>, where <code>s(j)=A002620(j)</code> is the <code>j-th quarter-square</code>.
+ * A206806 Sum_{0&lt;j&lt;k&lt;=n} s(k)-s(j), where s(j)=A002620(j) is the j-th quarter-square.
  * @author Sean A. Irvine
  */
 public class A206806 extends LinearRecurrence {

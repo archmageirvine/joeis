@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177373 <code>a(n) = 2*n*a(n-1)</code> if the parity of the ratio <code>a(n-1)/a(n-2)</code> is odd, otherwise (for even parity) <code>a(n) = (2n-1)*a(n-1)</code>.
+ * A177373 a(n) = 2*n*a(n-1) if the parity of the ratio a(n-1)/a(n-2) is odd, otherwise (for even parity) a(n) = (2n-1)*a(n-1).
  * @author Georg Fischer
  */
 public class A177373 extends HolonomicRecurrence {

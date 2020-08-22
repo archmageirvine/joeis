@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A028506 Number of non-descending integral vectors b of length n such that number of symmetric <code>0-1-matrices</code> A of order n with row sums <code>&lt;=</code> b is odd.
+ * A028506 Number of non-descending integral vectors b of length n such that number of symmetric 0-1-matrices A of order n with row sums &lt;= b is odd.
  * @author Sean A. Irvine
  */
 public class A028506 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.q.Q;
 import irvine.math.q.Rationals;
 
 /**
- * A032151 Shifts left under "CGJ" <code>(necklace</code>, element, labeled) transform.
+ * A032151 Shifts left under "CGJ" (necklace, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032151 extends A032138 {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000765 Number of <code>n-step self-avoiding</code> walks on f.c.c. lattice ending at point with <code>x = 0</code>.
+ * A000765 Number of n-step self-avoiding walks on f.c.c. lattice ending at point with x = 0.
  * @author Sean A. Irvine
  */
 public class A000765 implements Sequence {

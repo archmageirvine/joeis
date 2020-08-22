@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099764 <code>a(n) = n^2 * (n+1)^2 * (n+2)^2 = 36*A001249(n-1)</code>.
+ * A099764 a(n) = n^2 * (n+1)^2 * (n+2)^2 = 36*A001249(n-1).
  * @author Sean A. Irvine
  */
 public class A099764 extends LinearRecurrence {

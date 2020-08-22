@@ -3,7 +3,7 @@ package irvine.oeis.a110;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A110273 <code>Pell(n)^3+Pell(n+1)^3</code>.
+ * A110273 Pell(n)^3+Pell(n+1)^3.
  * @author Sean A. Irvine
  */
 public class A110273 extends LinearRecurrence {

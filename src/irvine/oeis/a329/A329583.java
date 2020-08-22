@@ -6,7 +6,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329583 Numerators of <code>1 + n^2/4 +</code> period <code>3</code>: repeat <code>[-1, 1, 1]</code>.
+ * A329583 Numerators of 1 + n^2/4 + period 3: repeat [-1, 1, 1].
  * @author Georg Fischer
  */
 public class A329583 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331347 Number of permutations w in <code>S_n</code> that form Boolean intervals <code>[s, w]</code> in the Bruhat order for every simple reflection s in the support of w.
+ * A331347 Number of permutations w in S_n that form Boolean intervals [s, w] in the Bruhat order for every simple reflection s in the support of w.
  * @author Georg Fischer
  */
 public class A331347 extends HolonomicRecurrence {

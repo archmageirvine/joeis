@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303295 <code>a(n)</code> is the maximum water retention of a <code>height-3 length-n</code> number parallelogram with maximum water area.
+ * A303295 a(n) is the maximum water retention of a height-3 length-n number parallelogram with maximum water area.
  * @author Georg Fischer
  */
 public class A303295 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135360 <code>a(n) = 4*a(n-1) - 6*a(n-2) + 4*a(n-3)</code> for <code>n &gt; 4</code>, with first terms <code>1, 2, 4, 7</code>.
+ * A135360 a(n) = 4*a(n-1) - 6*a(n-2) + 4*a(n-3) for n &gt; 4, with first terms 1, 2, 4, 7.
  * @author Georg Fischer
  */
 public class A135360 extends GeneratingFunctionSequence {

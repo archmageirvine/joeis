@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A267649 <code>a(1) = a(2) = 2</code> then <code>a(n) = 4</code> for <code>n&gt;2</code>.
+ * A267649 a(1) = a(2) = 2 then a(n) = 4 for n&gt;2.
  * @author Georg Fischer
  */
 public class A267649 extends PaddingSequence {

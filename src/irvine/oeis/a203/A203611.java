@@ -6,7 +6,7 @@ package irvine.oeis.a203;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A203611 <code>Sum_{k=0..n} C(k-1,2*k-1-n)*C(k,2*k-n)</code>.
+ * A203611 Sum_{k=0..n} C(k-1,2*k-1-n)*C(k,2*k-n).
  * @author Georg Fischer
  */
 public class A203611 extends HolonomicRecurrence {

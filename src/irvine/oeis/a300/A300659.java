@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A300659 Product of digits of <code>n!</code>.
+ * A300659 Product of digits of n!.
  * @author Georg Fischer
  */
 public class A300659 extends PaddingSequence {

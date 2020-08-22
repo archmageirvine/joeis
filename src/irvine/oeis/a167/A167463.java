@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167463 <code>a(n) = n mod 15</code>.
+ * A167463 a(n) = n mod 15.
  * @author Georg Fischer
  */
 public class A167463 extends GeneratingFunctionSequence {

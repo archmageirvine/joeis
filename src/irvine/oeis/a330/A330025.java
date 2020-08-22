@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A330025 <code>a(n) = (-1)^floor(n/5) * sign(mod(n, 5))</code>.
+ * A330025 a(n) = (-1)^floor(n/5) * sign(mod(n, 5)).
  * @author Georg Fischer
  */
 public class A330025 extends GeneratingFunctionSequence {

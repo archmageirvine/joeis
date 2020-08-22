@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305072 <code>a(n) = 144*n^2 - 24*n (n&gt;=1)</code>.
+ * A305072 a(n) = 144*n^2 - 24*n (n&gt;=1).
  * @author Georg Fischer
  */
 public class A305072 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A005993 Expansion of <code>(1+x^2)/((1-x)^2*(1-x^2)^2)</code>.
+ * A005993 Expansion of (1+x^2)/((1-x)^2*(1-x^2)^2).
  * @author Sean A. Irvine
  */
 public class A005993 extends EulerTransformSequence {

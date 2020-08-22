@@ -6,7 +6,7 @@ package irvine.oeis.a255;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A255197 Number of dissections of a convex polygon with <code>n+3</code> sides that have exactly one triangle, and that triangle shares at least one side with the exterior polygon.
+ * A255197 Number of dissections of a convex polygon with n+3 sides that have exactly one triangle, and that triangle shares at least one side with the exterior polygon.
  * @author Georg Fischer
  */
 public class A255197 extends HolonomicRecurrence {

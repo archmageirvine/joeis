@@ -5,7 +5,7 @@ package irvine.oeis.a169;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A169685 Decimal expansion of <code>2^521 - 1</code>.
+ * A169685 Decimal expansion of 2^521 - 1.
  * @author Georg Fischer
  */
 public class A169685 extends FiniteSequence {

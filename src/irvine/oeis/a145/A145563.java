@@ -4,7 +4,7 @@ package irvine.oeis.a145;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A145563 <code>a(0)=0</code> and <code>a(n+1) = 3*a(n) + 2^(n+2)</code>.
+ * A145563 a(0)=0 and a(n+1) = 3*a(n) + 2^(n+2).
  * @author Georg Fischer
  */
 public class A145563 extends GeneratingFunctionSequence {

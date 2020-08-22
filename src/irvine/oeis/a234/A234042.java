@@ -4,7 +4,7 @@ package irvine.oeis.a234;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A234042 <code>a(n) = C(n+4,4)*gcd(n,5)/5</code>.
+ * A234042 a(n) = C(n+4,4)*gcd(n,5)/5.
  * @author Georg Fischer
  */
 public class A234042 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113775 Number of sets of lists <code>(cf. A000262)</code> whose list sizes are not a multiple of 3.
+ * A113775 Number of sets of lists (cf. A000262) whose list sizes are not a multiple of 3.
  * @author Georg Fischer
  */
 public class A113775 extends HolonomicRecurrence {

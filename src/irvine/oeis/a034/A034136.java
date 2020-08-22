@@ -8,7 +8,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000004;
 
 /**
- * A034136 Number of partitions of n into distinct parts from <code>[ 1, 6 ]</code>.
+ * A034136 Number of partitions of n into distinct parts from [ 1, 6 ].
  * @author Sean A. Irvine
  */
 public class A034136 extends PrependSequence {

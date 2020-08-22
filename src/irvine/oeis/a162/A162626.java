@@ -4,7 +4,7 @@ package irvine.oeis.a162;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A162626 If <code>0 &lt;= n &lt;= 3</code> then <code>a(n) = n(n+1)(n+2)/3</code>, if <code>n &gt;= 4</code> then <code>a(n) = n(n^2+5)/3</code>.
+ * A162626 If 0 &lt;= n &lt;= 3 then a(n) = n(n+1)(n+2)/3, if n &gt;= 4 then a(n) = n(n^2+5)/3.
  * @author Georg Fischer
  */
 public class A162626 extends GeneratingFunctionSequence {

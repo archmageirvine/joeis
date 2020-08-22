@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013935 <code>a(n)</code> is nonsquarefree and is sum of first k nonsquarefrees for some k.
+ * A013935 a(n) is nonsquarefree and is sum of first k nonsquarefrees for some k.
  * @author Sean A. Irvine
  */
 public class A013935 implements Sequence {

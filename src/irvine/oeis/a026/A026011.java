@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026011 Expansion of <code>Product_{m&gt;=1} (1 + q^m)^(2*m)</code>.
+ * A026011 Expansion of Product_{m&gt;=1} (1 + q^m)^(2*m).
  * @author Sean A. Irvine
  */
 public class A026011 implements Sequence {

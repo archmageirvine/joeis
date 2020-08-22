@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A262041 Decimal expansion of <code>3/(8 - 6*sqrt(3)/Pi)</code>.
+ * A262041 Decimal expansion of 3/(8 - 6*sqrt(3)/Pi).
  * @author Georg Fischer
  */
 public class A262041 extends DecimalExpansionSequence {

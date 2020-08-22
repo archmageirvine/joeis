@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024929 <code>a(n) = Sum_{k = 1..n} k*floor((n + prime(k))/k)</code>.
+ * A024929 a(n) = Sum_{k = 1..n} k*floor((n + prime(k))/k).
  * @author Sean A. Irvine
  */
 public class A024929 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A001219 Triangular numbers of form <code>a(a+1)(a+2)</code>.
+ * A001219 Triangular numbers of form a(a+1)(a+2).
  * @author Sean A. Irvine
  */
 public class A001219 extends FiniteSequence {

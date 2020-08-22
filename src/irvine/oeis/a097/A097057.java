@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097057 Number of integer solutions to <code>a^2 + b^2 + 2*c^2 + 2*d^2 = n</code>.
+ * A097057 Number of integer solutions to a^2 + b^2 + 2*c^2 + 2*d^2 = n.
  * @author Georg Fischer
  */
 public class A097057 extends EulerTransform {

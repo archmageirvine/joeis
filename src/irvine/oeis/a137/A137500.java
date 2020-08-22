@@ -6,7 +6,7 @@ package irvine.oeis.a137;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A137500 Binomial transform of <code>b(n) = (0, 0, A007910)</code>.
+ * A137500 Binomial transform of b(n) = (0, 0, A007910).
  * @author Georg Fischer
  */
 public class A137500 extends HolonomicRecurrence {

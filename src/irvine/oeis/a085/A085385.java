@@ -3,7 +3,7 @@ package irvine.oeis.a085;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A085385 Binomial transform of hexagonal pyramidal numbers <code>A002412</code>.
+ * A085385 Binomial transform of hexagonal pyramidal numbers A002412.
  * @author Sean A. Irvine
  */
 public class A085385 extends LinearRecurrence {

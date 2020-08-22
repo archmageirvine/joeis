@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002479;
 
 /**
- * A034029 Numbers that are primitively represented by <code>(x^2+2y^2</code> with <code>x &gt;= y &gt;= 0)</code>.
+ * A034029 Numbers that are primitively represented by (x^2+2y^2 with x &gt;= y &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A034029 extends A002479 {

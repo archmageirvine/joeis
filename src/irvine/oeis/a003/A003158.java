@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a092.A092606;
 
 /**
- * A003158 Not representable by <code>A001045</code>.
+ * A003158 Not representable by A001045.
  * @author Sean A. Irvine
  */
 public class A003158 extends A092606 {

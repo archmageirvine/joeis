@@ -3,7 +3,7 @@ package irvine.oeis.a179;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A179006 Partial sums of <code>floor(Fibonacci(n)/4)</code>.
+ * A179006 Partial sums of floor(Fibonacci(n)/4).
  * @author Sean A. Irvine
  */
 public class A179006 extends LinearRecurrence {

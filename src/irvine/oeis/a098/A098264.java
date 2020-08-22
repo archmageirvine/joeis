@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A098264 G.f.: <code>1/(1-2x-19x^2)^(1/2)</code>.
+ * A098264 G.f.: 1/(1-2x-19x^2)^(1/2).
  * @author Georg Fischer
  */
 public class A098264 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a235;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A235594 Coefficient of <code>q^4</code> in the polynomial <code>NT_{n,mu}(q)</code>.
+ * A235594 Coefficient of q^4 in the polynomial NT_{n,mu}(q).
  * @author Sean A. Irvine
  */
 public class A235594 extends LinearRecurrence {

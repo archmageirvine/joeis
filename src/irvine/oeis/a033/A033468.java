@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A033468 Partial sums of sequence <code>{1/(i^2+1): i=0..n}</code> (denominators).
+ * A033468 Partial sums of sequence {1/(i^2+1): i=0..n} (denominators).
  * @author Sean A. Irvine
  */
 public class A033468 extends A033467 {

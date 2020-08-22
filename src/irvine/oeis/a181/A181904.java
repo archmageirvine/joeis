@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a027.A027760;
 
 /**
- * A181904 <code>a(n) = 2*(4^n - 1) / A027760(n)</code>.
+ * A181904 a(n) = 2*(4^n - 1) / A027760(n).
  * @author Georg Fischer
  */
 public class A181904 implements Sequence {

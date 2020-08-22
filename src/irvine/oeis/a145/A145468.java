@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A145468 Convolution square of <code>A003106</code>.
+ * A145468 Convolution square of A003106.
  * @author Georg Fischer
  */
 public class A145468 extends EulerTransform {

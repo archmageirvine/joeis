@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308807 <code>a(n) = 4*5^(n-1) + n</code>.
+ * A308807 a(n) = 4*5^(n-1) + n.
  * @author Georg Fischer
  */
 public class A308807 extends HolonomicRecurrence {

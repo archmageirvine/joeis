@@ -4,7 +4,7 @@ package irvine.oeis.a319;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A319980 Coordination sequence for <code>(9^3, 3.9^2)</code> net with respect to a vertex of type <code>3.9^2</code>.
+ * A319980 Coordination sequence for (9^3, 3.9^2) net with respect to a vertex of type 3.9^2.
  * @author Georg Fischer
  */
 public class A319980 extends GeneratingFunctionSequence {

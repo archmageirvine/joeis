@@ -8,7 +8,7 @@ import irvine.oeis.a014.A014330;
 import irvine.oeis.a203.A203577;
 
 /**
- * A204452 <code>A014330 - A203577</code>. Difference between the exponential convolution of <code>A000108</code> (Catalan) with itself and the corresponding exponential <code>half-convolution</code>.
+ * A204452 A014330 - A203577. Difference between the exponential convolution of A000108 (Catalan) with itself and the corresponding exponential half-convolution.
  * @author Georg Fischer
  */
 public class A204452 implements Sequence {

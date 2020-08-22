@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A029692 n-th bit in binary expansion of square root of <code>n</code>.
+ * A029692 n-th bit in binary expansion of square root of n.
  * @author Sean A. Irvine
  */
 public class A029692 implements Sequence {

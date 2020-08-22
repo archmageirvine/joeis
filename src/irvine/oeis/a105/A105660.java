@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105660 G.f. <code>(1-x)(x^2-5x+3)/(x^4-6x^3+13x^2-6x+1)</code>.
+ * A105660 G.f. (1-x)(x^2-5x+3)/(x^4-6x^3+13x^2-6x+1).
  * @author Sean A. Irvine
  */
 public class A105660 extends LinearRecurrence {

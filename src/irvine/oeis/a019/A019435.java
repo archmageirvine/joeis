@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019435 Numbers k at which the fractional part of <code>tan(k)</code> reaches a record high.
+ * A019435 Numbers k at which the fractional part of tan(k) reaches a record high.
  * @author Sean A. Irvine
  */
 public class A019435 implements Sequence {

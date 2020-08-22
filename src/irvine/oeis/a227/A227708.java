@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227708 The Wiener index of the dendrimer <code>D_n</code> defined pictorially in Fig. 1 of the Heydari et al. reference.
+ * A227708 The Wiener index of the dendrimer D_n defined pictorially in Fig. 1 of the Heydari et al. reference.
  * @author Sean A. Irvine
  */
 public class A227708 extends LinearRecurrence {

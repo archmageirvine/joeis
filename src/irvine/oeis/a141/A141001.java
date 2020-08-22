@@ -4,7 +4,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141001 <code>a(n) =</code> number of different landings of a grasshopper after n hops.
+ * A141001 a(n) = number of different landings of a grasshopper after n hops.
  * @author Georg Fischer
  */
 public class A141001 extends GeneratingFunctionSequence {

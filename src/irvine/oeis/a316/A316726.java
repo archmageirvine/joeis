@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316726 The number of ways to tile (with squares and rectangles) <code>a 2 X (n+2)</code> strip with the upper left and upper right squares removed.
+ * A316726 The number of ways to tile (with squares and rectangles) a 2 X (n+2) strip with the upper left and upper right squares removed.
  * @author Georg Fischer
  */
 public class A316726 extends GeneratingFunctionSequence {

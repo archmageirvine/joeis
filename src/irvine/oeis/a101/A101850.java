@@ -5,7 +5,7 @@ package irvine.oeis.a101;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A101850 A Catalan transform of <code>Pell(n+1)</code>.
+ * A101850 A Catalan transform of Pell(n+1).
  * @author Georg Fischer
  */
 public class A101850 extends HolonomicRecurrence {

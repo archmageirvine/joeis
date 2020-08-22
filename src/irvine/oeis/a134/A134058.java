@@ -7,7 +7,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A134058 Triangle read by rows, <code>T(n,k) = 2*binomial(n,k)</code> if k <code>&gt; 0, (0 &lt;= k &lt;= n)</code>, left column <code>= (1,2,2,2,...)</code>.
+ * A134058 Triangle read by rows, T(n,k) = 2*binomial(n,k) if k &gt; 0, (0 &lt;= k &lt;= n), left column = (1,2,2,2,...).
  * @author Georg Fischer
  */
 public class A134058 extends GeneratingFunctionTriangle {

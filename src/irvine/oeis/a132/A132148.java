@@ -7,7 +7,7 @@ package irvine.oeis.a132;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A132148 Triangular array <code>T(n,k) = C(n,k)*Lucas(n-k), 0 &lt;= k &lt;= n</code>.
+ * A132148 Triangular array T(n,k) = C(n,k)*Lucas(n-k), 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A132148 extends GeneratingFunctionTriangle {

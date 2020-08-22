@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029817 Average theta series of odd unimodular lattices of dimension <code>16</code> (multiplied by <code>17)</code>.
+ * A029817 Average theta series of odd unimodular lattices of dimension 16 (multiplied by 17).
  * @author Sean A. Irvine
  */
 public class A029817 implements Sequence {

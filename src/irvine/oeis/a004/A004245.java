@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004245 <code>a(n) = ceiling(10000*log(n))</code>.
+ * A004245 a(n) = ceiling(10000*log(n)).
  * @author Sean A. Irvine
  */
 public class A004245 implements Sequence {

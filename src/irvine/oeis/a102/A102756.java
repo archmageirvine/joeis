@@ -7,7 +7,7 @@ package irvine.oeis.a102;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A102756 Triangle <code>T(n,k), 0&lt;=k&lt;=n</code>, read by rows defined by: <code>T(n,k) = T(n-1,k-1) + 2*T(n-1,k) + T(n-2,k-2) - T(n-2,k), T(0,0) = 1, T(n,k) = 0</code> if k <code>&lt; 0</code> or if <code>n &lt;</code> k.
+ * A102756 Triangle T(n,k), 0&lt;=k&lt;=n, read by rows defined by: T(n,k) = T(n-1,k-1) + 2*T(n-1,k) + T(n-2,k-2) - T(n-2,k), T(0,0) = 1, T(n,k) = 0 if k &lt; 0 or if n &lt; k.
  * @author Georg Fischer
  */
 public class A102756 extends GeneratingFunctionTriangle {

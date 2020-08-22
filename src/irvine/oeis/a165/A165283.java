@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165283 <code>a(n) = (2*n + 1)*16^n</code>.
+ * A165283 a(n) = (2*n + 1)*16^n.
  * @author Georg Fischer
  */
 public class A165283 extends GeneratingFunctionSequence {

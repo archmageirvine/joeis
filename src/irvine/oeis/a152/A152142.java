@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152142 <code>a(n) = prod(k=1..floor((n-1)/2), 1 + 4*sin(k*Pi/n)^2 + 16*sin(k*Pi/n)^4 )</code>.
+ * A152142 a(n) = prod(k=1..floor((n-1)/2), 1 + 4*sin(k*Pi/n)^2 + 16*sin(k*Pi/n)^4 ).
  * @author Georg Fischer
  */
 public class A152142 extends GeneratingFunctionSequence {

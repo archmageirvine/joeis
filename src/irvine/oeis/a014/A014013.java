@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014013 Alternating Egyptian fraction expansion of <code>Pi-3</code>.
+ * A014013 Alternating Egyptian fraction expansion of Pi-3.
  * @author Sean A. Irvine
  */
 public class A014013 implements Sequence {

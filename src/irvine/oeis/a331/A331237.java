@@ -6,7 +6,7 @@ import irvine.math.nauty.GenerateGraphs;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A331237 Total cutting number of all trees of order <code>n</code>.
+ * A331237 Total cutting number of all trees of order n.
  * @author Sean A. Irvine
  */
 public class A331237 extends ParallelGenerateGraphsSequence {

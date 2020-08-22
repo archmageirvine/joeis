@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162839 Terms in <code>A162450</code> which have two representations as concatenation of three squares.
+ * A162839 Terms in A162450 which have two representations as concatenation of three squares.
  * @author Georg Fischer
  */
 public class A162839 extends FiniteSequence {

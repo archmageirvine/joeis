@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035391 Number of partitions of n into parts <code>7k</code> or <code>7k+2</code>.
+ * A035391 Number of partitions of n into parts 7k or 7k+2.
  * @author Georg Fischer
  */
 public class A035391 extends EulerTransform {

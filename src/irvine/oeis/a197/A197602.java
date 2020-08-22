@@ -4,7 +4,7 @@ package irvine.oeis.a197;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A197602 <code>Floor((n+1/n)^3)</code>.
+ * A197602 Floor((n+1/n)^3).
  * @author Georg Fischer
  */
 public class A197602 extends GeneratingFunctionSequence {

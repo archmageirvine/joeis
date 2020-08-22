@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121515 Sum of all proper ternary numbers with n digits (those not beginning with <code>0)</code>.
+ * A121515 Sum of all proper ternary numbers with n digits (those not beginning with 0).
  * @author Georg Fischer
  */
 public class A121515 extends HolonomicRecurrence {

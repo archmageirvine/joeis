@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002538 Second-order Eulerian numbers <code>&lt;&lt;n+1,n-1&gt;&gt;</code>.
+ * A002538 Second-order Eulerian numbers &lt;&lt;n+1,n-1&gt;&gt;.
  * @author Sean A. Irvine
  */
 public class A002538 implements Sequence {

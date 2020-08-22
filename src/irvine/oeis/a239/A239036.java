@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A239036 A set of eleven distinct positive odd numbers the sum of whose reciprocals is 1 and whose <code>11th</code> term is as large as possible.
+ * A239036 A set of eleven distinct positive odd numbers the sum of whose reciprocals is 1 and whose 11th term is as large as possible.
  * @author Georg Fischer
  */
 public class A239036 extends FiniteSequence {

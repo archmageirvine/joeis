@@ -5,7 +5,7 @@ package irvine.oeis.a331;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A331202 <code>a(n)</code> is the smallest abundant number that differs from the next abundant number by <code>n</code>.
+ * A331202 a(n) is the smallest abundant number that differs from the next abundant number by n.
  * @author Georg Fischer
  */
 public class A331202 extends FiniteSequence {

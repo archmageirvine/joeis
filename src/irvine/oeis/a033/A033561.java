@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033561 Primes p such that <code>6!+p</code> is also prime.
+ * A033561 Primes p such that 6!+p is also prime.
  * @author Sean A. Irvine
  */
 public class A033561 extends A000040 {

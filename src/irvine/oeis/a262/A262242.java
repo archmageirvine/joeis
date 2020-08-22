@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262242 Triangular numbers representable as <code>2^x + 2^y</code>.
+ * A262242 Triangular numbers representable as 2^x + 2^y.
  * @author Georg Fischer
  */
 public class A262242 extends GeneratingFunctionSequence {

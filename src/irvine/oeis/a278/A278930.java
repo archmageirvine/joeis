@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278930 <code>a(n)</code> is the least positive integer that differs (in absolute value) by an <code>(n+1)-st</code> power from the reverse of its binary representation.
+ * A278930 a(n) is the least positive integer that differs (in absolute value) by an (n+1)-st power from the reverse of its binary representation.
  * @author Georg Fischer
  */
 public class A278930 extends GeneratingFunctionSequence {

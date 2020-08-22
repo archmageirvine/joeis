@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274974 Centered octahemioctahedral numbers: <code>a(n) = (4*n^3+24*n^2+8*n+3)/3</code>.
+ * A274974 Centered octahemioctahedral numbers: a(n) = (4*n^3+24*n^2+8*n+3)/3.
  * @author Georg Fischer
  */
 public class A274974 extends GeneratingFunctionSequence {

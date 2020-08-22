@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214934 Numbers <code>R(k)</code> such that <code>R(k) &gt;= 2k</code> log <code>R(k)</code>, where <code>R(k) = A104272(k)</code> is the k-th Ramanujan prime.
+ * A214934 Numbers R(k) such that R(k) &gt;= 2k log R(k), where R(k) = A104272(k) is the k-th Ramanujan prime.
  * @author Georg Fischer
  */
 public class A214934 extends FiniteSequence {

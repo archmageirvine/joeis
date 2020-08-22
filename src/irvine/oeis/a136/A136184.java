@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136184 Number of metacyclic groups of order <code>2^n</code>.
+ * A136184 Number of metacyclic groups of order 2^n.
  * @author Georg Fischer
  */
 public class A136184 extends GeneratingFunctionSequence {

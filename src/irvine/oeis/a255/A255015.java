@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A255015 Number of toroidal <code>n X n</code> binary arrays, allowing rotation of rows and/or columns as well as matrix transposition.
+ * A255015 Number of toroidal n X n binary arrays, allowing rotation of rows and/or columns as well as matrix transposition.
  * @author Sean A. Irvine
  */
 public class A255015 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081207 Main diagonal of number square <code>A081206</code>.
+ * A081207 Main diagonal of number square A081206.
  * @author Georg Fischer
  */
 public class A081207 extends HolonomicRecurrence {

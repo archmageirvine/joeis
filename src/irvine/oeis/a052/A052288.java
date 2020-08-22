@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a024.A024675;
 
 /**
- * A052288 First differences of the average of two consecutive primes <code>(A024675)</code>.
+ * A052288 First differences of the average of two consecutive primes (A024675).
  * @author Georg Fischer
  */
 public class A052288 extends DifferenceSequence {

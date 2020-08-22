@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324360 Total number of occurrences of 10 in the (signed) displacement sets of all permutations of <code>[n+10]</code> divided by <code>10!</code>.
+ * A324360 Total number of occurrences of 10 in the (signed) displacement sets of all permutations of [n+10] divided by 10!.
  * @author Georg Fischer
  */
 public class A324360 extends HolonomicRecurrence {

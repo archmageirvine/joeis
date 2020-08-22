@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176780 <code>a(n) = n^4 + 6n^3 + 14n^2 + 15n + 6</code>.
+ * A176780 a(n) = n^4 + 6n^3 + 14n^2 + 15n + 6.
  * @author Sean A. Irvine
  */
 public class A176780 extends LinearRecurrence {

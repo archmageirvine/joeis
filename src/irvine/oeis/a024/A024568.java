@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024568 <code>a(n) = [ n/{n*r} ]</code>, where r <code>= (1 + sqrt(5))/2</code> and <code>{x} := x - [ x ]</code>.
+ * A024568 a(n) = [ n/{n*r} ], where r = (1 + sqrt(5))/2 and {x} := x - [ x ].
  * @author Sean A. Irvine
  */
 public class A024568 implements Sequence {

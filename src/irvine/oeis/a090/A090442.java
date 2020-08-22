@@ -5,7 +5,7 @@ package irvine.oeis.a090;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A090442 Row sums of array <code>A090452 (s2_{3,2}</code>, scaled <code>(3,2)-Stirling2)</code>.
+ * A090442 Row sums of array A090452 (s2_{3,2}, scaled (3,2)-Stirling2).
  * @author Georg Fischer
  */
 public class A090442 extends HolonomicRecurrence {

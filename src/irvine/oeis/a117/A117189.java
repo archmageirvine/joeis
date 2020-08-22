@@ -3,7 +3,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117189 Binomial transform of the tribonacci sequence <code>A000073</code> (shifted left twice).
+ * A117189 Binomial transform of the tribonacci sequence A000073 (shifted left twice).
  * @author Sean A. Irvine
  */
 public class A117189 extends LinearRecurrence {

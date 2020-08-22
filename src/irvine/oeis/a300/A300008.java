@@ -5,7 +5,7 @@ package irvine.oeis.a300;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A300008 Inverse of the <code>n-th 2 X 2</code> sandpile <code>A300006(n)</code>.
+ * A300008 Inverse of the n-th 2 X 2 sandpile A300006(n).
  * @author Georg Fischer
  */
 public class A300008 extends FiniteSequence {

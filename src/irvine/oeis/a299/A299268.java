@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A299268 Coordination sequence for "crs" <code>3D</code> uniform tiling formed from tetrahedra and truncated tetrahedra.
+ * A299268 Coordination sequence for "crs" 3D uniform tiling formed from tetrahedra and truncated tetrahedra.
  * @author Georg Fischer
  */
 public class A299268 extends GeneratingFunctionSequence {

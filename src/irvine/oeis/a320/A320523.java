@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A320523 Smallest m <code>&gt; 1</code> such that either <code>n^m == n (mod 25)</code> or <code>n^m == 0 (mod 25)</code>.
+ * A320523 Smallest m &gt; 1 such that either n^m == n (mod 25) or n^m == 0 (mod 25).
  * @author Georg Fischer
  */
 public class A320523 extends PaddingSequence {

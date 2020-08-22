@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A180312 Number of solutions to <code>n = x + 4*y + 4*z</code> in triangular numbers.
+ * A180312 Number of solutions to n = x + 4*y + 4*z in triangular numbers.
  * @author Georg Fischer
  */
 public class A180312 extends EulerTransform {

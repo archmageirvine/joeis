@@ -6,7 +6,7 @@ package irvine.oeis.a172;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A172060 The number of returns to the origin in all possible one-dimensional walks of length <code>2n</code>.
+ * A172060 The number of returns to the origin in all possible one-dimensional walks of length 2n.
  * @author Georg Fischer
  */
 public class A172060 extends HolonomicRecurrence {

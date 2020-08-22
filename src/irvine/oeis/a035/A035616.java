@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A035616 Coefficient of <code>x^(30-n)</code> in the minimal polynomial for <code>2^(1/6)+3^(1/5)</code>.
+ * A035616 Coefficient of x^(30-n) in the minimal polynomial for 2^(1/6)+3^(1/5).
  * @author Georg Fischer
  */
 public class A035616 extends FiniteSequence {

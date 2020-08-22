@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.math.z.Z;
 
 /**
- * A269923 Triangle read by rows: <code>T(n,f)</code> is the number of rooted maps with n edges and f faces on an orientable surface of genus 3.
+ * A269923 Triangle read by rows: T(n,f) is the number of rooted maps with n edges and f faces on an orientable surface of genus 3.
  * @author Sean A. Irvine
  */
 public class A269923 extends A269920 {

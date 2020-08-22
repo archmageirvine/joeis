@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A218131 Number of length 8 primitive <code>(=aperiodic</code> or period <code>8) n-ary</code> words.
+ * A218131 Number of length 8 primitive (=aperiodic or period 8) n-ary words.
  * @author Georg Fischer
  */
 public class A218131 extends GeneratingFunctionSequence {

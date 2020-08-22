@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001950;
 
 /**
- * A003256 <code>a(n)</code> is the number m such that <code>A242094(m) = A001950(n)</code>.
+ * A003256 a(n) is the number m such that A242094(m) = A001950(n).
  * @author Sean A. Irvine
  */
 public class A003256 extends A001950 {

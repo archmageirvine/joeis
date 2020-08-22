@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024684 Number of ways <code>prime(n)</code> is a sum of three distinct primes.
+ * A024684 Number of ways prime(n) is a sum of three distinct primes.
  * @author Sean A. Irvine
  */
 public class A024684 implements Sequence {

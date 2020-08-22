@@ -4,7 +4,7 @@ package irvine.oeis.a058;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A058966 <code>a(3) = 1</code>, otherwise <code>a(n) = n*2^(n-3) - 2^(n-2) - 2</code>.
+ * A058966 a(3) = 1, otherwise a(n) = n*2^(n-3) - 2^(n-2) - 2.
  * @author Georg Fischer
  */
 public class A058966 extends GeneratingFunctionSequence {

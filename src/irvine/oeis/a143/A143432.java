@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143432 Ultimately periodic length 4 sequence <code>[ 2, 2, 0, 0, ...]</code> with <code>a(0) = a(1) = 1</code>.
+ * A143432 Ultimately periodic length 4 sequence [ 2, 2, 0, 0, ...] with a(0) = a(1) = 1.
  * @author Georg Fischer
  */
 public class A143432 extends GeneratingFunctionSequence {

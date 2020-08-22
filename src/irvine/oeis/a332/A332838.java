@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A332838 Numbers k such that <code>-tau(k)^2 == tau(k) mod</code> k where tau <code>= A000005</code>.
+ * A332838 Numbers k such that -tau(k)^2 == tau(k) mod k where tau = A000005.
  * @author Georg Fischer
  */
 public class A332838 extends FiniteSequence {

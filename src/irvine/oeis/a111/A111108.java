@@ -5,7 +5,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111108 <code>a(n) = A001333(n) - (-2)^(n-1), n &gt; 0</code>.
+ * A111108 a(n) = A001333(n) - (-2)^(n-1), n &gt; 0.
  * @author Georg Fischer
  */
 public class A111108 extends HolonomicRecurrence {

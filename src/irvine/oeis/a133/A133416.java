@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133416 <code>a(n) = (1/10)*(2^(4*n-3)-5^n*F(2*n-1)+L(4*n-2))</code>, where <code>F() =</code> Fibonacci numbers <code>A000045</code> and <code>L() =</code> Lucas numbers <code>A000032</code>.
+ * A133416 a(n) = (1/10)*(2^(4*n-3)-5^n*F(2*n-1)+L(4*n-2)), where F() = Fibonacci numbers A000045 and L() = Lucas numbers A000032.
  * @author Sean A. Irvine
  */
 public class A133416 extends LinearRecurrence {

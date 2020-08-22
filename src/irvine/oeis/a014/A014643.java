@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A014643 Triangular array starting with <code>{1,1};</code> then i-th term in a row gives number of i's in next row.
+ * A014643 Triangular array starting with {1,1}; then i-th term in a row gives number of i's in next row.
  * @author Sean A. Irvine
  */
 public class A014643 implements Sequence {

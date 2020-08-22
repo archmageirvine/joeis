@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.oeis.RunLengthSequence;
 
 /**
- * A026490 Length of n-th run of identical symbols in <code>A026465</code>.
+ * A026490 Length of n-th run of identical symbols in A026465.
  * @author Sean A. Irvine
  */
 public class A026490 extends RunLengthSequence {

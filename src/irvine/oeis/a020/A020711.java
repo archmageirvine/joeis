@@ -4,7 +4,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020711 Pisot sequences <code>E(5,7), P(5,7)</code>.
+ * A020711 Pisot sequences E(5,7), P(5,7).
  * @author Georg Fischer
  */
 public class A020711 extends LinearRecurrence {

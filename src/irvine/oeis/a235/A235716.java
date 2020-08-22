@@ -5,7 +5,7 @@ package irvine.oeis.a235;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A235716 Average of twin prime pairs n having their decimal expansion of the form <code>abcabc</code> or <code>abcabc0</code> such that n contains three twin primes as divisors.
+ * A235716 Average of twin prime pairs n having their decimal expansion of the form abcabc or abcabc0 such that n contains three twin primes as divisors.
  * @author Georg Fischer
  */
 public class A235716 extends FiniteSequence {

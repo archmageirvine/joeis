@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134311 Row sums of triangle <code>A134310</code>.
+ * A134311 Row sums of triangle A134310.
  * @author Georg Fischer
  */
 public class A134311 extends GeneratingFunctionSequence {

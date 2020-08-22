@@ -6,7 +6,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328352 Similar to <code>A328350</code>, but for 5 digits rather then 3.
+ * A328352 Similar to A328350, but for 5 digits rather then 3.
  * @author Georg Fischer
  */
 public class A328352 extends HolonomicRecurrence {

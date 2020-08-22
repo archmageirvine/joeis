@@ -6,7 +6,7 @@ package irvine.oeis.a075;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A075436 <code>Right-</code> or upward-moving paths connecting opposite corners of an <code>n X n</code> chessboard, visiting the diagonal in 0 up to <code>(n-2)</code> intermediate points between start and finish. Equivalently, subdivide the chessboard into 1 up to <code>(n-1)</code> blocks along the diagonal in all possible ways and sum the path-count over all <code>sub-blocks</code>.
+ * A075436 Right- or upward-moving paths connecting opposite corners of an n X n chessboard, visiting the diagonal in 0 up to (n-2) intermediate points between start and finish. Equivalently, subdivide the chessboard into 1 up to (n-1) blocks along the diagonal in all possible ways and sum the path-count over all sub-blocks.
  * @author Georg Fischer
  */
 public class A075436 extends HolonomicRecurrence {

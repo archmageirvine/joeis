@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A195022 Negative of the decimal expansion of the electron spin <code>g-factor</code>.
+ * A195022 Negative of the decimal expansion of the electron spin g-factor.
  * @author Georg Fischer
  */
 public class A195022 extends NoncomputableSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305155 <code>a(n) = 28*2^n - 15</code>.
+ * A305155 a(n) = 28*2^n - 15.
  * @author Georg Fischer
  */
 public class A305155 extends GeneratingFunctionSequence {

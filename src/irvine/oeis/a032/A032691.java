@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032691 Exactly 1 digit from <code>{1,2,3,4,5,6,7,8,9}</code> can precede a term to form a prime.
+ * A032691 Exactly 1 digit from {1,2,3,4,5,6,7,8,9} can precede a term to form a prime.
  * @author Sean A. Irvine
  */
 public class A032691 implements Sequence {

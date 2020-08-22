@@ -6,7 +6,7 @@ package irvine.oeis.a097;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A097188 G.f. <code>A(x)</code> satisfies <code>A057083(x*A(x)) = A(x)</code> and so equals the ratio of the g.f.s of any two adjacent diagonals of triangle <code>A097186</code>.
+ * A097188 G.f. A(x) satisfies A057083(x*A(x)) = A(x) and so equals the ratio of the g.f.s of any two adjacent diagonals of triangle A097186.
  * @author Georg Fischer
  */
 public class A097188 extends HolonomicRecurrence {

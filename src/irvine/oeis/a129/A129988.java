@@ -5,7 +5,7 @@ package irvine.oeis.a129;
 import irvine.oeis.DifferenceSequence;
 
 /**
- * A129988 Fourth differences of <code>A129983</code>.
+ * A129988 Fourth differences of A129983.
  * @author Georg Fischer
  */
 public class A129988 extends DifferenceSequence {

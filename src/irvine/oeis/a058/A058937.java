@@ -4,7 +4,7 @@ package irvine.oeis.a058;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A058937 Maximal exponent of x in all terms of Somos polynomial of order <code>n</code>.
+ * A058937 Maximal exponent of x in all terms of Somos polynomial of order n.
  * @author Georg Fischer
  */
 public class A058937 extends GeneratingFunctionSequence {

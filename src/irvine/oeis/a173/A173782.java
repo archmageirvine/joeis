@@ -6,7 +6,7 @@ package irvine.oeis.a173;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A173782 Number of ways to place <code>4n</code> nonattacking kings on an <code>8 X 2n</code> chessboard.
+ * A173782 Number of ways to place 4n nonattacking kings on an 8 X 2n chessboard.
  * @author Georg Fischer
  */
 public class A173782 extends HolonomicRecurrence {

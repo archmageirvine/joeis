@@ -6,7 +6,7 @@ package irvine.oeis.a087;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A087164 Records in <code>A087162: A087162(a(n))=n</code>.
+ * A087164 Records in A087162: A087162(a(n))=n.
  * @author Georg Fischer
  */
 public class A087164 extends GeneratingFunctionSequence {

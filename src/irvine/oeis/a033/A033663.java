@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006753;
 import irvine.util.array.LongDynamicArray;
 
 /**
- * A033663 Least Smith number having digital sum <code>A033662(n)</code>.
+ * A033663 Least Smith number having digital sum A033662(n).
  * @author Sean A. Irvine
  */
 public class A033663 extends A033662 {

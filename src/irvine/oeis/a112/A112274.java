@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A112274 Expansion of <code>k(q) = r(q) * r(q^2)^2</code> in powers of q where <code>r()</code> is the Rogers-Ramanujan continued fraction.
+ * A112274 Expansion of k(q) = r(q) * r(q^2)^2 in powers of q where r() is the Rogers-Ramanujan continued fraction.
  * @author Georg Fischer
  */
 public class A112274 extends EulerTransform {

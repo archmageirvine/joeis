@@ -3,7 +3,7 @@ package irvine.oeis.a074;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A074453 Sum of determinants of 2nd order principal minors of powers of inverse of Tetramatrix <code>((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0))</code>.
+ * A074453 Sum of determinants of 2nd order principal minors of powers of inverse of Tetramatrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).
  * @author Sean A. Irvine
  */
 public class A074453 extends LinearRecurrence {

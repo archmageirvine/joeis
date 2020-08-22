@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036220 Expansion of <code>1/(1-3*x)^7; 7-fold</code> convolution of <code>A000244</code> (powers of <code>3)</code>.
+ * A036220 Expansion of 1/(1-3*x)^7; 7-fold convolution of A000244 (powers of 3).
  * @author Georg Fischer
  */
 public class A036220 extends GeneratingFunctionSequence {

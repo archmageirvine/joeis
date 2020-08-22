@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A057079 Periodic sequence: repeat <code>[1,2,1,-1,-2,-1];</code> expansion of <code>(1+x)/(1-x+x^2)</code>.
+ * A057079 Periodic sequence: repeat [1,2,1,-1,-2,-1]; expansion of (1+x)/(1-x+x^2).
  * @author Sean A. Irvine
  */
 public class A057079 extends LinearRecurrence {

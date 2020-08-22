@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134202 Number of rigid Hv-groups of order <code>n</code>.
+ * A134202 Number of rigid Hv-groups of order n.
  * @author Georg Fischer
  */
 public class A134202 extends GeneratingFunctionSequence {

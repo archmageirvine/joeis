@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A138654 <code>7^n mod 4^n</code>.
+ * A138654 7^n mod 4^n.
  * @author Georg Fischer
  */
 public class A138654 implements Sequence {

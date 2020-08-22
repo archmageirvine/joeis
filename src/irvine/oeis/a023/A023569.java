@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023569 Greatest prime divisor of <code>prime(n) - 3</code>.
+ * A023569 Greatest prime divisor of prime(n) - 3.
  * @author Sean A. Irvine
  */
 public class A023569 extends A000040 {

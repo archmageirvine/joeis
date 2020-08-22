@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176108 Decimal expansion of <code>(9+sqrt(93))/6</code>.
+ * A176108 Decimal expansion of (9+sqrt(93))/6.
  * @author Georg Fischer
  */
 public class A176108 extends DecimalExpansionSequence {

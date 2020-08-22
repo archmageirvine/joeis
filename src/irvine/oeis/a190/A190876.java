@@ -5,7 +5,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190876 Numbers 1 through 8 together with numbers congruent to <code>9 mod 10</code>.
+ * A190876 Numbers 1 through 8 together with numbers congruent to 9 mod 10.
  * @author Georg Fischer
  */
 public class A190876 extends HolonomicRecurrence {

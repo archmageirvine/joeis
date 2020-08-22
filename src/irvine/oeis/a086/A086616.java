@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086616 Partial sums of the large Schroeder numbers <code>(A006318)</code>.
+ * A086616 Partial sums of the large Schroeder numbers (A006318).
  * @author Georg Fischer
  */
 public class A086616 extends HolonomicRecurrence {

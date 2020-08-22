@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A117612 An old nuclear shell closure sequence for 2 nucleon states (related to <code>A007290</code> and A018226) in a square potential well.
+ * A117612 An old nuclear shell closure sequence for 2 nucleon states (related to A007290 and A018226) in a square potential well.
  * @author Georg Fischer
  */
 public class A117612 extends NoncomputableSequence {

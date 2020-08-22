@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024925 Sum of remainders of <code>n mod prime(k)</code>, for k <code>= 1,2,3,...,n</code>.
+ * A024925 Sum of remainders of n mod prime(k), for k = 1,2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A024925 implements Sequence {

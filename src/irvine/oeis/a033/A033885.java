@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033885 <code>a(n) = 3*n -</code> sum of divisors of <code>n</code>.
+ * A033885 a(n) = 3*n - sum of divisors of n.
  * @author Sean A. Irvine
  */
 public class A033885 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A245070 Smallest positive non-divisor of the n-th Lucas number <code>(A000032)</code>.
+ * A245070 Smallest positive non-divisor of the n-th Lucas number (A000032).
  * @author Georg Fischer
  */
 public class A245070 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033510 Number of matchings in graph <code>P_{7} X P_{n}</code>.
+ * A033510 Number of matchings in graph P_{7} X P_{n}.
  * @author Sean A. Irvine
  */
 public class A033510 extends GeneratingFunctionSequence {

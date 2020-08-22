@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007514 <code>Pi = Sum_{n &gt;= 0} a(n)/n!</code>.
+ * A007514 Pi = Sum_{n &gt;= 0} a(n)/n!.
  * @author Sean A. Irvine
  */
 public class A007514 implements Sequence {

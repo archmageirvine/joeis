@@ -6,7 +6,7 @@ package irvine.oeis.a332;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A332051 Number of compositions of <code>2n</code> where the multiplicity of the first part equals <code>n</code>.
+ * A332051 Number of compositions of 2n where the multiplicity of the first part equals n.
  * @author Georg Fischer
  */
 public class A332051 extends HolonomicRecurrence {

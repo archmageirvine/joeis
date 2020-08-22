@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A323982 Decimal expansion of <code>cosh(Pi/6)</code>.
+ * A323982 Decimal expansion of cosh(Pi/6).
  * @author Georg Fischer
  */
 public class A323982 extends DecimalExpansionSequence {

@@ -7,7 +7,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A002619 Number of 2-colored patterns on an <code>n X n</code> board.
+ * A002619 Number of 2-colored patterns on an n X n board.
  * @author Sean A. Irvine
  */
 public class A002619 implements Sequence {

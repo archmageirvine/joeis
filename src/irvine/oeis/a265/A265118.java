@@ -6,7 +6,7 @@ package irvine.oeis.a265;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A265118 Number of <code>3Xn</code> arrays containing n copies of 0..3-1 with row sums equal, column sums equal and full-length antidiagonal sums equal to the short dimension sums.
+ * A265118 Number of 3Xn arrays containing n copies of 0..3-1 with row sums equal, column sums equal and full-length antidiagonal sums equal to the short dimension sums.
  * @author Georg Fischer
  */
 public class A265118 extends HolonomicRecurrence {

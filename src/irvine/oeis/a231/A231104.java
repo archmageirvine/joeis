@@ -4,7 +4,7 @@ package irvine.oeis.a231;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A231104 Number of <code>n X 4 0..3</code> arrays <code>x(i,j)</code> with each element horizontally or antidiagonally next to at least one element with value <code>(x(i,j)+1) mod 4</code>, no adjacent elements equal, and upper left element zero.
+ * A231104 Number of n X 4 0..3 arrays x(i,j) with each element horizontally or antidiagonally next to at least one element with value (x(i,j)+1) mod 4, no adjacent elements equal, and upper left element zero.
  * @author Georg Fischer
  */
 public class A231104 extends GeneratingFunctionSequence {

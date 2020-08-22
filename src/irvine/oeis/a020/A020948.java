@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A020948 Least k such that <code>b(k) =</code> n, where <code>b( )</code> is sequence <code>A020944</code>.
+ * A020948 Least k such that b(k) = n, where b( ) is sequence A020944.
  * @author Sean A. Irvine
  */
 public class A020948 extends A020944 {

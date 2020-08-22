@@ -6,7 +6,7 @@ package irvine.oeis.a278;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A278714 Denominators of <code>(n-1)*(n-3)/(6*(2*n-1))</code>, for <code>n &gt;= 1</code>. Denominators of Dedekind sum <code>s(2, 2*n-1)</code>.
+ * A278714 Denominators of (n-1)*(n-3)/(6*(2*n-1)), for n &gt;= 1. Denominators of Dedekind sum s(2, 2*n-1).
  * @author Georg Fischer
  */
 public class A278714 extends HolonomicRecurrence {

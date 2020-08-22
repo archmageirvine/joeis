@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A093902 Absolute differences of adjacent entries in triangle <code>A093899</code>, alternately vertical and horizontal.
+ * A093902 Absolute differences of adjacent entries in triangle A093899, alternately vertical and horizontal.
  * @author Georg Fischer
  */
 public class A093902 extends FiniteSequence {

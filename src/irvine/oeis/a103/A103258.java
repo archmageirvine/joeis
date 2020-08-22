@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A103258 G.f. <code>= theta_4(0,x^4)/theta_4(0,x)</code>.
+ * A103258 G.f. = theta_4(0,x^4)/theta_4(0,x).
  * @author Georg Fischer
  */
 public class A103258 extends EulerTransform {

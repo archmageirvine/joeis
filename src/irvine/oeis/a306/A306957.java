@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A306957 <code>a(n) = n!*binomial(10,n)</code>.
+ * A306957 a(n) = n!*binomial(10,n).
  * @author Georg Fischer
  */
 public class A306957 extends PaddingSequence {

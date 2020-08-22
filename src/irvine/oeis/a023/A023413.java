@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023413 If any power of 2 ends with k <code>5</code>'s and <code>8</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023413 If any power of 2 ends with k 5's and 8's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023413 implements Sequence {

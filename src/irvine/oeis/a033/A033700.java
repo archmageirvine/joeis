@@ -5,7 +5,7 @@ import irvine.math.graph.GraphUtils;
 import irvine.oeis.a002.A002851;
 
 /**
- * A033700 Number of connected transitive <code>4-valent</code> (or quartic) graphs with n nodes.
+ * A033700 Number of connected transitive 4-valent (or quartic) graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A033700 extends A002851 {

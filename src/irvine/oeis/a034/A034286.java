@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034286 Decimal part of <code>n^(1/11)</code> starts with a 'nine digits' anagram.
+ * A034286 Decimal part of n^(1/11) starts with a 'nine digits' anagram.
  * @author Sean A. Irvine
  */
 public class A034286 implements Sequence {

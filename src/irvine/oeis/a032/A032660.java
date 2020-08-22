@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032660 <code>a(n)</code> is the smallest positive k such that k concatenated with k <code>+ n</code> is a lucky number.
+ * A032660 a(n) is the smallest positive k such that k concatenated with k + n is a lucky number.
  * @author Sean A. Irvine
  */
 public class A032660 implements Sequence {

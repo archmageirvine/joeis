@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025486 Least k with <code>A025485(k) = n</code>.
+ * A025486 Least k with A025485(k) = n.
  * @author Sean A. Irvine
  */
 public class A025486 extends A025485 {

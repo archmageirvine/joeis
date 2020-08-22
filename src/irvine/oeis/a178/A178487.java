@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A178487 <code>a(n) = floor(n^(1/5))</code>: integer part of fifth root of <code>n</code>.
+ * A178487 a(n) = floor(n^(1/5)): integer part of fifth root of n.
  * @author Sean A. Irvine
  */
 public class A178487 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a051;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A051708 Number of ways to move a chess rook from the lower left corner to square <code>(n,n)</code>, with the rook moving only up or right.
+ * A051708 Number of ways to move a chess rook from the lower left corner to square (n,n), with the rook moving only up or right.
  * @author Georg Fischer
  */
 public class A051708 extends HolonomicRecurrence {

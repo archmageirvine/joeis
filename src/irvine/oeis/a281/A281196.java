@@ -3,7 +3,7 @@ package irvine.oeis.a281;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A281196 Number of n such that <code>A247600(n) = 5</code>.
+ * A281196 Number of n such that A247600(n) = 5.
  * @author Georg Fischer
  */
 public class A281196 extends FiniteSequence {

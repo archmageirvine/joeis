@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092167 Let M <code>= 2 X 2</code> matrix <code>[ 1 2 / 5 4 ]; a(n) = (2,2)</code> entry of <code>M^n</code>.
+ * A092167 Let M = 2 X 2 matrix [ 1 2 / 5 4 ]; a(n) = (2,2) entry of M^n.
  * @author Georg Fischer
  */
 public class A092167 extends GeneratingFunctionSequence {

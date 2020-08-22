@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A033862 Sorted number reached from starter n in <code>Sort-then-add</code> sequence, or -1 if never reaches sorted number.
+ * A033862 Sorted number reached from starter n in Sort-then-add sequence, or -1 if never reaches sorted number.
  * @author Sean A. Irvine
  */
 public class A033862 implements Sequence {

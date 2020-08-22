@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121672 Real part of <code>(n + i)^5</code>.
+ * A121672 Real part of (n + i)^5.
  * @author Sean A. Irvine
  */
 public class A121672 extends LinearRecurrence {

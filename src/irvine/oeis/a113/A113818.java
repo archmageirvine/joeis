@@ -3,7 +3,7 @@ package irvine.oeis.a113;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A113818 Decimal expansion of the integer <code>(101101101101101101101101101)/9</code>.
+ * A113818 Decimal expansion of the integer (101101101101101101101101101)/9.
  * @author Georg Fischer
  */
 public class A113818 extends FiniteSequence {

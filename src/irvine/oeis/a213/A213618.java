@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A213618 Expansion of <code>phi(-q^3) * b(q^8)</code> in powers of q where <code>phi()</code> is a Ramanujan theta function and <code>b()</code> is a cubic AGM theta function.
+ * A213618 Expansion of phi(-q^3) * b(q^8) in powers of q where phi() is a Ramanujan theta function and b() is a cubic AGM theta function.
  * @author Georg Fischer
  */
 public class A213618 extends EulerTransform {

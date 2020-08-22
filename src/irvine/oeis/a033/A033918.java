@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033918 Triangular array in which n-th row consists of the numbers <code>1^1, 2^2, ... n^n</code>.
+ * A033918 Triangular array in which n-th row consists of the numbers 1^1, 2^2, ... n^n.
  * @author Sean A. Irvine
  */
 public class A033918 implements Sequence {

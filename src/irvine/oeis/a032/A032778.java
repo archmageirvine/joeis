@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A032778 Numbers k such that <code>k*(k+1)*(k+2)*...*(k+7) / (k+(k+1)+(k+2)+...+(k+7))</code> is an integer.
+ * A032778 Numbers k such that k*(k+1)*(k+2)*...*(k+7) / (k+(k+1)+(k+2)+...+(k+7)) is an integer.
  * @author Georg Fischer
  */
 public class A032778 extends FiniteSequence {

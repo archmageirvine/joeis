@@ -4,7 +4,7 @@ package irvine.oeis.a275;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A275163 <code>a(n) = 13*2^(n+1) - 19</code>.
+ * A275163 a(n) = 13*2^(n+1) - 19.
  * @author Georg Fischer
  */
 public class A275163 extends GeneratingFunctionSequence {

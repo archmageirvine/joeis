@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A002509 Expansion of a modular function for <code>Gamma_0(14)</code>.
+ * A002509 Expansion of a modular function for Gamma_0(14).
  * @author Georg Fischer
  */
 public class A002509 extends EulerTransform {

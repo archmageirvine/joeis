@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032579 Numbers k whose decimal representation, read as a <code>base-24</code> value and divided by k, yields an integer.
+ * A032579 Numbers k whose decimal representation, read as a base-24 value and divided by k, yields an integer.
  * @author Sean A. Irvine
  */
 public class A032579 implements Sequence {

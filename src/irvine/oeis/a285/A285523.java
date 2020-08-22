@@ -5,7 +5,7 @@ package irvine.oeis.a285;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A285523 Numbers n such that <code>n^2 + 1</code> is 100-smooth.
+ * A285523 Numbers n such that n^2 + 1 is 100-smooth.
  * @author Georg Fischer
  */
 public class A285523 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A289586 Numbers k whose smallest multiple that is a Fibonacci number is <code>Fibonacci(k)</code>.
+ * A289586 Numbers k whose smallest multiple that is a Fibonacci number is Fibonacci(k).
  * @author Georg Fischer
  */
 public class A289586 extends HolonomicRecurrence {

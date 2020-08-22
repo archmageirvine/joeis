@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A329952 Numbers k such that <code>binomial(k,3)</code> is divisible by 8.
+ * A329952 Numbers k such that binomial(k,3) is divisible by 8.
  * @author Georg Fischer
  */
 public class A329952 extends HolonomicRecurrence {

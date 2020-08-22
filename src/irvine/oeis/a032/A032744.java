@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032744 <code>Super-4</code> Numbers <code>(4 * n^4</code> contains substring <code>'4444'</code> in its decimal expansion).
+ * A032744 Super-4 Numbers (4 * n^4 contains substring '4444' in its decimal expansion).
  * @author Sean A. Irvine
  */
 public class A032744 implements Sequence {

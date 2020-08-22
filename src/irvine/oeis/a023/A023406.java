@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023406 If any even power of 2 ends with k <code>1</code>'s and <code>6</code>'s, they must be the first k elements of this sequence in reverse order.
+ * A023406 If any even power of 2 ends with k 1's and 6's, they must be the first k elements of this sequence in reverse order.
  * @author Sean A. Irvine
  */
 public class A023406 implements Sequence {

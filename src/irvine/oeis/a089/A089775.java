@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A089775 Lucas numbers <code>L(12n)</code>.
+ * A089775 Lucas numbers L(12n).
  * @author Sean A. Irvine
  */
 public class A089775 extends LinearRecurrence {

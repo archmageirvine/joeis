@@ -5,7 +5,7 @@ package irvine.oeis.a250;
 import org.teherba.tile.TilingSequence;
 
 /**
- * A250124 Coordination sequence of point of type 3.3.12.4 in 4-uniform tiling <code>{3.3.4.3.4; 3.3.4.12; 3.3.12.4; 3.4.3.12}</code>.
+ * A250124 Coordination sequence of point of type 3.3.12.4 in 4-uniform tiling {3.3.4.3.4; 3.3.4.12; 3.3.12.4; 3.4.3.12}.
  * @author Georg Fischer
  */
 public class A250124 extends TilingSequence {

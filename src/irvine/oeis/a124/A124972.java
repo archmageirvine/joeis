@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A124972 Expansion of Fricke's <code>32*tau_4(z)</code> in powers of q <code>= exp(2*Pi*i*z)</code>.
+ * A124972 Expansion of Fricke's 32*tau_4(z) in powers of q = exp(2*Pi*i*z).
  * @author Georg Fischer
  */
 public class A124972 extends EulerTransform {

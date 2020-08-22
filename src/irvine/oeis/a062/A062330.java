@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A062330 <code>a(n) =</code> product of the sum and product of the digits of <code>a(n-1) (0</code> is not to be considered a factor in the product).
+ * A062330 a(n) = product of the sum and product of the digits of a(n-1) (0 is not to be considered a factor in the product).
  * @author Georg Fischer
  */
 public class A062330 extends PaddingSequence {

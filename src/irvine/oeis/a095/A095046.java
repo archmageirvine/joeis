@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A095046 The <code>(v,k,lambda)=(381,20,1)</code> cyclic difference set.
+ * A095046 The (v,k,lambda)=(381,20,1) cyclic difference set.
  * @author Georg Fischer
  */
 public class A095046 extends FiniteSequence {

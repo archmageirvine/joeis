@@ -3,7 +3,7 @@ package irvine.oeis.a191;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A191797 <code>a(n) = binomial(F(n), 2)</code> where <code>F(n) = A000045(n)</code>.
+ * A191797 a(n) = binomial(F(n), 2) where F(n) = A000045(n).
  * @author Sean A. Irvine
  */
 public class A191797 extends LinearRecurrence {

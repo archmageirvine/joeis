@@ -6,7 +6,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089656 Given a distribution of n balls, labeled <code>1,...,n</code>, among n unlabeled contents-ordered urns, arrange the nonempty urns in increasing order of their initial elements: <code>U_1,...U_k</code> and sum the quantities <code>(i-1)(card U_i - 1)</code> for <code>i=1,...,k</code> to get the "weight" of this distribution. These numbers represent the number of distributions of even weight minus the number with odd weight.
+ * A089656 Given a distribution of n balls, labeled 1,...,n, among n unlabeled contents-ordered urns, arrange the nonempty urns in increasing order of their initial elements: U_1,...U_k and sum the quantities (i-1)(card U_i - 1) for i=1,...,k to get the "weight" of this distribution. These numbers represent the number of distributions of even weight minus the number with odd weight.
  * @author Georg Fischer
  */
 public class A089656 extends HolonomicRecurrence {

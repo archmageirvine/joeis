@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003714;
 
 /**
- * A129761 First differences of Fibbinary numbers <code>(A003714)</code>.
+ * A129761 First differences of Fibbinary numbers (A003714).
  * @author Georg Fischer
  */
 public class A129761 extends DifferenceSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a146;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A146883 <code>a(n) = 6 * Sum_{m=0..n} 5^m</code>.
+ * A146883 a(n) = 6 * Sum_{m=0..n} 5^m.
  * @author Georg Fischer
  */
 public class A146883 extends GeneratingFunctionSequence {

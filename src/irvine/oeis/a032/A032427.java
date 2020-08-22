@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032427 Coefficients of Jacobi elliptic function <code>c(4,m)</code>.
+ * A032427 Coefficients of Jacobi elliptic function c(4,m).
  * @author Sean A. Irvine
  */
 public class A032427 extends A032428 {

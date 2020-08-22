@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003151;
 
 /**
- * A276862 First differences of the Beatty sequence <code>A003151</code> for <code>1 + sqrt(2)</code>.
+ * A276862 First differences of the Beatty sequence A003151 for 1 + sqrt(2).
  * @author Georg Fischer
  */
 public class A276862 extends DifferenceSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227506 Schroeder triangle sums: <code>a(2*n-1) = A010683(2*n-2)</code> and <code>a(2*n) = A010683(2*n-1) - A001003(2*n-1)</code>.
+ * A227506 Schroeder triangle sums: a(2*n-1) = A010683(2*n-2) and a(2*n) = A010683(2*n-1) - A001003(2*n-1).
  * @author Georg Fischer
  */
 public class A227506 extends HolonomicRecurrence {

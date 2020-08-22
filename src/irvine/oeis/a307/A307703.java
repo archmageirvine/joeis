@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A307703 Highly powerful numbers <code>(A005934)</code> that are not cubeful <code>(A036966)</code>.
+ * A307703 Highly powerful numbers (A005934) that are not cubeful (A036966).
  * @author Georg Fischer
  */
 public class A307703 extends FiniteSequence {

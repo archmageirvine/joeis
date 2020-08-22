@@ -3,7 +3,7 @@ package irvine.oeis.a055;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A055610 A companion sequence to <code>A011896</code>.
+ * A055610 A companion sequence to A011896.
  * @author Sean A. Irvine
  */
 public class A055610 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005117;
 
 /**
- * A033197 Discriminants of quadratic number fields <code>Q(sqrt -n)</code> for n squarefree.
+ * A033197 Discriminants of quadratic number fields Q(sqrt -n) for n squarefree.
  * @author Sean A. Irvine
  */
 public class A033197 extends A005117 {

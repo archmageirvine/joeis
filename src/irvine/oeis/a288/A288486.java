@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288486 Square rings obtained by adding four identical cuboids from <code>A169938, a(n) = 4*n*(n+1)*(n*(n+1)+1)</code>.
+ * A288486 Square rings obtained by adding four identical cuboids from A169938, a(n) = 4*n*(n+1)*(n*(n+1)+1).
  * @author Sean A. Irvine
  */
 public class A288486 extends LinearRecurrence {

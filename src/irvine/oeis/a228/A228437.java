@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228437 Denominator of <code>n/24</code>.
+ * A228437 Denominator of n/24.
  * @author Georg Fischer
  */
 public class A228437 extends GeneratingFunctionSequence {

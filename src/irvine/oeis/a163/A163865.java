@@ -6,7 +6,7 @@ package irvine.oeis.a163;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A163865 The binomial transform of the swinging factorial <code>(A056040)</code>.
+ * A163865 The binomial transform of the swinging factorial (A056040).
  * @author Georg Fischer
  */
 public class A163865 extends HolonomicRecurrence {

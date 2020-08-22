@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158450 Number of spanning forests in <code>3 X n</code> grid.
+ * A158450 Number of spanning forests in 3 X n grid.
  * @author Georg Fischer
  */
 public class A158450 extends GeneratingFunctionSequence {

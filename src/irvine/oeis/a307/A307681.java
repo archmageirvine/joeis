@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307681 Difference between the number of diagonals and the number of sides for a convex <code>n-gon</code>.
+ * A307681 Difference between the number of diagonals and the number of sides for a convex n-gon.
  * @author Georg Fischer
  */
 public class A307681 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172485 The case <code>S(-1,-2,3)</code> of the family of self-convolutive recurrences studied by Martin and Kearney.
+ * A172485 The case S(-1,-2,3) of the family of self-convolutive recurrences studied by Martin and Kearney.
  * @author Georg Fischer
  */
 public class A172485 extends GeneratingFunctionSequence {

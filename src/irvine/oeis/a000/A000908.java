@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003446;
 
 /**
- * A000908 Atom-rooted polyenoids with n edges with symmetry class <code>C_s</code>.
+ * A000908 Atom-rooted polyenoids with n edges with symmetry class C_s.
  * @author Sean A. Irvine
  */
 public class A000908 extends A003446 {

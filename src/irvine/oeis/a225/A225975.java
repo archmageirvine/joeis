@@ -4,7 +4,7 @@ package irvine.oeis.a225;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A225975 Square root of <code>A226008(n)</code>.
+ * A225975 Square root of A226008(n).
  * @author Georg Fischer
  */
 public class A225975 extends GeneratingFunctionSequence {

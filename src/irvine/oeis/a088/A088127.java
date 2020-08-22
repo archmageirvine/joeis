@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088127 E.g.f. <code>exp(-x)*cosh(x)/(1-x)^2</code>.
+ * A088127 E.g.f. exp(-x)*cosh(x)/(1-x)^2.
  * @author Georg Fischer
  */
 public class A088127 extends HolonomicRecurrence {

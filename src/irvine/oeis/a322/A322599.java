@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322599 <code>a(n)</code> is the number of unlabeled <code>rank-3</code> graded lattices with 4 coatoms and n atoms.
+ * A322599 a(n) is the number of unlabeled rank-3 graded lattices with 4 coatoms and n atoms.
  * @author Georg Fischer
  */
 public class A322599 extends GeneratingFunctionSequence {

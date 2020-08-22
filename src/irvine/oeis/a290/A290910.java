@@ -4,7 +4,7 @@ package irvine.oeis.a290;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A290910 <code>a(n) = (1/5)*A290909(n), n&gt;= 0</code>.
+ * A290910 a(n) = (1/5)*A290909(n), n&gt;= 0.
  * @author Georg Fischer
  */
 public class A290910 extends LinearRecurrence {

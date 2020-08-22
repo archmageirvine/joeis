@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026747;
 
 /**
- * A027222 <code>a(n) =</code> greatest number in row n of array T given by <code>A026747</code>.
+ * A027222 a(n) = greatest number in row n of array T given by A026747.
  * @author Sean A. Irvine
  */
 public class A027222 extends A026747 {

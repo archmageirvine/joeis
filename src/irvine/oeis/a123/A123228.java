@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123228 Sum of the n-th powers of the roots of the polynomial <code>x^6 + 14x^5 + 87x^4 + 148x^3 + 87x^2 + 14x + 1</code>.
+ * A123228 Sum of the n-th powers of the roots of the polynomial x^6 + 14x^5 + 87x^4 + 148x^3 + 87x^2 + 14x + 1.
  * @author Sean A. Irvine
  */
 public class A123228 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061349 Sum of antidiagonals of <code>A060736</code>.
+ * A061349 Sum of antidiagonals of A060736.
  * @author Sean A. Irvine
  */
 public class A061349 extends LinearRecurrence {

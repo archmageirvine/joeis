@@ -3,7 +3,7 @@ package irvine.oeis.a054;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A054454 Third column of triangle <code>A054453</code>.
+ * A054454 Third column of triangle A054453.
  * @author Sean A. Irvine
  */
 public class A054454 extends LinearRecurrence {

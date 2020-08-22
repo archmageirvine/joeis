@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032053 "BGJ" <code>(reversible</code>, element, labeled) transform of 2,1,1,1...
+ * A032053 "BGJ" (reversible, element, labeled) transform of 2,1,1,1...
  * @author Sean A. Irvine
  */
 public class A032053 extends A032052 {

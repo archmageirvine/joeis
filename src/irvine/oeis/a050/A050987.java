@@ -3,7 +3,7 @@ package irvine.oeis.a050;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A050987 Number of <code>n-digit left-truncatable</code> primes.
+ * A050987 Number of n-digit left-truncatable primes.
  * @author Georg Fischer
  */
 public class A050987 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.polynomial.CycleIndex;
 import irvine.math.z.Z;
 
 /**
- * A000859 Number of <code>n-input 2-output</code> switching networks under action of <code>S(n)</code> and complementing group <code>C(2,2)</code> on inputs and outputs.
+ * A000859 Number of n-input 2-output switching networks under action of S(n) and complementing group C(2,2) on inputs and outputs.
  * @author Sean A. Irvine
  */
 public class A000859 extends A000721 {

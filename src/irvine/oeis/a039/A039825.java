@@ -3,7 +3,7 @@ package irvine.oeis.a039;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A039825 <code>a(n) = floor((n^2 + n + 8) / 4)</code>.
+ * A039825 a(n) = floor((n^2 + n + 8) / 4).
  * @author Sean A. Irvine
  */
 public class A039825 extends LinearRecurrence {

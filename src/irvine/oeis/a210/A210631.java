@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210631 G.f. for Ehrhart quasi-polynomials for hyperplane arrangements of type <code>F_4</code>.
+ * A210631 G.f. for Ehrhart quasi-polynomials for hyperplane arrangements of type F_4.
  * @author Georg Fischer
  */
 public class A210631 extends LinearRecurrence {

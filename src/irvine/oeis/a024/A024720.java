@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024720 <code>a(n) = (1/4)*(3 + Sum_{k=0..n} C(4k,k))</code>.
+ * A024720 a(n) = (1/4)*(3 + Sum_{k=0..n} C(4k,k)).
  * @author Sean A. Irvine
  */
 public class A024720 implements Sequence {

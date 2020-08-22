@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254250 Decimal expansion of atomic unit of electric polarizability in <code>C^2 m^2 J^-1</code>.
+ * A254250 Decimal expansion of atomic unit of electric polarizability in C^2 m^2 J^-1.
  * @author Georg Fischer
  */
 public class A254250 extends NoncomputableSequence {

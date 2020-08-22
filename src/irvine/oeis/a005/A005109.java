@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A005109 Class <code>1-</code> (or Pierpont) primes: primes of the form <code>2^t*3^u + 1</code>.
+ * A005109 Class 1- (or Pierpont) primes: primes of the form 2^t*3^u + 1.
  * @author Sean A. Irvine
  */
 public class A005109 extends A000040 {

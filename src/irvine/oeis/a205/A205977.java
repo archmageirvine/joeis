@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A205977 McKay-Thompson series of class <code>30F</code> for the Monster group with <code>a(0) = 1</code>.
+ * A205977 McKay-Thompson series of class 30F for the Monster group with a(0) = 1.
  * @author Georg Fischer
  */
 public class A205977 extends EulerTransform {

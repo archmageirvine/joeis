@@ -6,7 +6,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144085 <code>a(n)</code> is the number of partial bijections (or subpermutations) of an n-element set without fixed points (also called partial derangements).
+ * A144085 a(n) is the number of partial bijections (or subpermutations) of an n-element set without fixed points (also called partial derangements).
  * @author Georg Fischer
  */
 public class A144085 extends HolonomicRecurrence {

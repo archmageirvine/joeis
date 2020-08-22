@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 /**
- * A025520 Least <code>k&gt;1</code> such that reverse of first n terms of <code>A022303</code> repeats beginning at k-th term.
+ * A025520 Least k&gt;1 such that reverse of first n terms of A022303 repeats beginning at k-th term.
  * @author Sean A. Irvine
  */
 public class A025520 extends A025519 {

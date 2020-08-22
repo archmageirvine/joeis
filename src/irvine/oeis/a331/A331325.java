@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331325 <code>a(n) = n!*[x^n] cosh(x/(1-x))/(1-x)</code>.
+ * A331325 a(n) = n!*[x^n] cosh(x/(1-x))/(1-x).
  * @author Georg Fischer
  */
 public class A331325 extends HolonomicRecurrence {

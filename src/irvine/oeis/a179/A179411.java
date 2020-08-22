@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A179411 The number of rows with alive cells in the n-th generation of cyclic sequence of patterns given in <code>A179409</code>, played in Conway's Game of Life on the <code>8x8</code> toroidal grid.
+ * A179411 The number of rows with alive cells in the n-th generation of cyclic sequence of patterns given in A179409, played in Conway's Game of Life on the 8x8 toroidal grid.
  * @author Georg Fischer
  */
 public class A179411 extends PaddingSequence {

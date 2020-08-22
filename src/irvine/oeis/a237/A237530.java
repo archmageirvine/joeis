@@ -3,7 +3,7 @@ package irvine.oeis.a237;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A237530 Number of <code>non-equivalent (mod D_3)</code> ways to choose three points in an <code>n X n X n</code> triangular grid so that they do not form a <code>2 X 2 X 2</code> subtriangle.
+ * A237530 Number of non-equivalent (mod D_3) ways to choose three points in an n X n X n triangular grid so that they do not form a 2 X 2 X 2 subtriangle.
  * @author Sean A. Irvine
  */
 public class A237530 extends LinearRecurrence {

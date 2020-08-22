@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a004.A004159;
 
 /**
- * A240752 First differences of digit sums of squares, cf. <code>A004159</code>.
+ * A240752 First differences of digit sums of squares, cf. A004159.
  * @author Georg Fischer
  */
 public class A240752 extends DifferenceSequence {

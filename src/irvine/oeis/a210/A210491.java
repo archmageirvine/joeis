@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A210491 Planck temperature <code>T_P</code>.
+ * A210491 Planck temperature T_P.
  * @author Georg Fischer
  */
 public class A210491 extends NoncomputableSequence {

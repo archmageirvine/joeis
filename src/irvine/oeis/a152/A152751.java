@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152751 3 times octagonal numbers: <code>3*n*(3*n-2)</code>.
+ * A152751 3 times octagonal numbers: 3*n*(3*n-2).
  * @author Sean A. Irvine
  */
 public class A152751 extends LinearRecurrence {

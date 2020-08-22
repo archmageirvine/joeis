@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013541 Numerator of the coefficient <code>[x^(2n)]</code> of the Taylor series <code>cos(cosec(x) - coth(x))</code>.
+ * A013541 Numerator of the coefficient [x^(2n)] of the Taylor series cos(cosec(x) - coth(x)).
  * @author Sean A. Irvine
  */
 public class A013541 implements Sequence {

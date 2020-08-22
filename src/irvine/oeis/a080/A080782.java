@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A080782 <code>a(1)=1, a(n)=a(n-1)-1</code> if n is already in the sequence, <code>a(n)=a(n-1)+2</code> otherwise.
+ * A080782 a(1)=1, a(n)=a(n-1)-1 if n is already in the sequence, a(n)=a(n-1)+2 otherwise.
  * @author Sean A. Irvine
  */
 public class A080782 extends LinearRecurrence {

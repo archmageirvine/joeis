@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000378 Sums of three squares: numbers of the form <code>x^2 + y^2 + z^2</code>.
+ * A000378 Sums of three squares: numbers of the form x^2 + y^2 + z^2.
  * @author Sean A. Irvine
  */
 public class A000378 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a138;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A138146 Palindromes with <code>2n-1</code> digits formed from the reflected decimal expansion of the concatenation of <code>1, 1, 1</code> and infinite <code>0</code>'s.
+ * A138146 Palindromes with 2n-1 digits formed from the reflected decimal expansion of the concatenation of 1, 1, 1 and infinite 0's.
  * @author Georg Fischer
  */
 public class A138146 extends GeneratingFunctionSequence {

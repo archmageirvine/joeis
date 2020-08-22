@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023041 w such that <code>w^3 = x^3+y^3+z^3, x&gt;y&gt;z&gt;=0</code>, is soluble (primitive solutions).
+ * A023041 w such that w^3 = x^3+y^3+z^3, x&gt;y&gt;z&gt;=0, is soluble (primitive solutions).
  * @author Sean A. Irvine
  */
 public class A023041 implements Sequence {

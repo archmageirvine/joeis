@@ -4,7 +4,7 @@ package irvine.oeis.a186;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A186041 Numbers of the form <code>3*k + 2, 5*k + 3</code>, or <code>7*k + 4</code>.
+ * A186041 Numbers of the form 3*k + 2, 5*k + 3, or 7*k + 4.
  * @author Georg Fischer
  */
 public class A186041 extends GeneratingFunctionSequence {

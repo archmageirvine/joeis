@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238923 Number of <code>(n+1) X (1+1) 0..3</code> arrays with no element greater than all horizontal neighbors or equal to all vertical neighbors.
+ * A238923 Number of (n+1) X (1+1) 0..3 arrays with no element greater than all horizontal neighbors or equal to all vertical neighbors.
  * @author Georg Fischer
  */
 public class A238923 extends GeneratingFunctionSequence {

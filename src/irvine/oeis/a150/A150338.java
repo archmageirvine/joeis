@@ -5,7 +5,7 @@ package irvine.oeis.a150;
 import irvine.oeis.WalkCubeSequence;
 
 /**
- * A150338 Number of walks within <code>N^3</code> (the first octant of <code>Z^3)</code> starting at <code>(0,0,0)</code> and consisting of n steps taken from <code>{(-1, -1, 0), (-1, 1, 1), (0, 0, -1), (0, 0, 1), (1, 0, 1)}</code>.
+ * A150338 Number of walks within N^3 (the first octant of Z^3) starting at (0,0,0) and consisting of n steps taken from {(-1, -1, 0), (-1, 1, 1), (0, 0, -1), (0, 0, 1), (1, 0, 1)}.
  * @author Georg Fischer
  */
 public class A150338 extends WalkCubeSequence {

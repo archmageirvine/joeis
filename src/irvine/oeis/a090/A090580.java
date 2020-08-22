@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A090580 Number of numbers with 5 decimal digits and sum of digits <code>= n</code>.
+ * A090580 Number of numbers with 5 decimal digits and sum of digits = n.
  * @author Georg Fischer
  */
 public class A090580 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304840 <code>a(n) = 52*n - 2 (n&gt;=1)</code>.
+ * A304840 a(n) = 52*n - 2 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304840 extends GeneratingFunctionSequence {

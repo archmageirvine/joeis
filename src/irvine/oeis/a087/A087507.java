@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087507 <code>#{0&lt;=k&lt;=n: k*n</code> is divisible by <code>3}</code>.
+ * A087507 #{0&lt;=k&lt;=n: k*n is divisible by 3}.
  * @author Sean A. Irvine
  */
 public class A087507 extends LinearRecurrence {

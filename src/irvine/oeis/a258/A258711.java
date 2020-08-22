@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001006;
 
 
 /**
- * A258711 Motzkin numbers <code>A001006</code> read <code>mod 7</code>.
+ * A258711 Motzkin numbers A001006 read mod 7.
  * @author Georg Fischer
  */
 public class A258711 extends A001006 {

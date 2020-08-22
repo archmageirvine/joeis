@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A287271 <code>a(n)</code> is the number of zeros of the Bernoulli <code>B(n, x)</code> polynomial in the open interval <code>(-1, +1)</code>.
+ * A287271 a(n) is the number of zeros of the Bernoulli B(n, x) polynomial in the open interval (-1, +1).
  * @author Georg Fischer
  */
 public class A287271 extends PaddingSequence {

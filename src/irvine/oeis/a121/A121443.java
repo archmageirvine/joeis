@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A121443 Sum of divisors d of n which are odd and <code>n/d</code> is not divisible by 3.
+ * A121443 Sum of divisors d of n which are odd and n/d is not divisible by 3.
  * @author Georg Fischer
  */
 public class A121443 extends EulerTransform {

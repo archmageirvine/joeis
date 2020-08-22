@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A113780 Number of solutions to <code>24*n+1 = x^2+24*y^2, x</code> a positive integer, y an integer.
+ * A113780 Number of solutions to 24*n+1 = x^2+24*y^2, x a positive integer, y an integer.
  * @author Georg Fischer
  */
 public class A113780 extends EulerTransform {

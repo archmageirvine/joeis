@@ -5,7 +5,7 @@ package irvine.oeis.a169;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A169601 <code>a(n) = (10^n-1)^2 + 2</code>.
+ * A169601 a(n) = (10^n-1)^2 + 2.
  * @author Georg Fischer
  */
 public class A169601 extends HolonomicRecurrence {

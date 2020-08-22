@@ -6,7 +6,7 @@ package irvine.oeis.a220;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A220088 <code>a(n) = 2^n - 81</code>.
+ * A220088 a(n) = 2^n - 81.
  * @author Georg Fischer
  */
 public class A220088 extends HolonomicRecurrence {

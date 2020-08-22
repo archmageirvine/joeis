@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024451 <code>a(n)</code> is the numerator of <code>Sum_{i = 1..n} 1/prime(i)</code>.
+ * A024451 a(n) is the numerator of Sum_{i = 1..n} 1/prime(i).
  * @author Sean A. Irvine
  */
 public class A024451 implements Sequence {

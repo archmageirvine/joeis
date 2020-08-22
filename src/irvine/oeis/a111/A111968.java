@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111968 <code>a(n) = Sum_{k=0..n} C(n,k)^2*C(n+k,k)^3</code>, where C <code>:=</code> binomial.
+ * A111968 a(n) = Sum_{k=0..n} C(n,k)^2*C(n+k,k)^3, where C := binomial.
  * @author Georg Fischer
  */
 public class A111968 extends HolonomicRecurrence {

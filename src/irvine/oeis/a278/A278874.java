@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278874 Number of tilings of a <code>2 X n</code> rectangle using pentominoes of any shape and monominoes.
+ * A278874 Number of tilings of a 2 X n rectangle using pentominoes of any shape and monominoes.
  * @author Georg Fischer
  */
 public class A278874 extends GeneratingFunctionSequence {

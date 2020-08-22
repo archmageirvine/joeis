@@ -6,7 +6,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081668 Expansion of <code>2sinh(x) + BesselI_0(2x)</code>.
+ * A081668 Expansion of 2sinh(x) + BesselI_0(2x).
  * @author Georg Fischer
  */
 public class A081668 extends HolonomicRecurrence {

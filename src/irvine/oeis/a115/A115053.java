@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115053 Series expansion of <code>x*(x+3)^2/(3*x+1)^2</code>.
+ * A115053 Series expansion of x*(x+3)^2/(3*x+1)^2.
  * @author Georg Fischer
  */
 public class A115053 extends HolonomicRecurrence {

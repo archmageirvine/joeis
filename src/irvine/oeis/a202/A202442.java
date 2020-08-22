@@ -4,7 +4,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202442 Number of <code>(n+2) X 5</code> binary arrays avoiding patterns 001 and 110 in rows, columns and <code>nw-to-se</code> diagonals.
+ * A202442 Number of (n+2) X 5 binary arrays avoiding patterns 001 and 110 in rows, columns and nw-to-se diagonals.
  * @author Georg Fischer
  */
 public class A202442 extends GeneratingFunctionSequence {

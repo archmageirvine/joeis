@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098207 <code>a(n)</code> is the square of near-repdigit number <code>A033175(n)</code>.
+ * A098207 a(n) is the square of near-repdigit number A033175(n).
  * @author Georg Fischer
  */
 public class A098207 extends GeneratingFunctionSequence {

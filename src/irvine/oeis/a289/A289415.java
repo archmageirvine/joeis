@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289415 <code>a(n) = ((11-sqrt(11))^n + (11+sqrt(11))^n) / 2</code>.
+ * A289415 a(n) = ((11-sqrt(11))^n + (11+sqrt(11))^n) / 2.
  * @author Sean A. Irvine
  */
 public class A289415 extends LinearRecurrence {

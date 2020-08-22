@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A019734 Decimal expansion of <code>sqrt(2*Pi)/15</code>.
+ * A019734 Decimal expansion of sqrt(2*Pi)/15.
  * @author Sean A. Irvine
  */
 public class A019734 extends DecimalExpansionSequence {

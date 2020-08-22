@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183356 One quarter the number of <code>n X 4 1..4</code> arrays with no two neighbors of any element equal to each other.
+ * A183356 One quarter the number of n X 4 1..4 arrays with no two neighbors of any element equal to each other.
  * @author Georg Fischer
  */
 public class A183356 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003957 The Dottie number: decimal expansion of root of <code>cos(x) = x</code>.
+ * A003957 The Dottie number: decimal expansion of root of cos(x) = x.
  * @author Sean A. Irvine
  */
 public class A003957 implements Sequence {

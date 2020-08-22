@@ -3,7 +3,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159254 Numbers n with property that <code>n^2</code> ends with 49.
+ * A159254 Numbers n with property that n^2 ends with 49.
  * @author Sean A. Irvine
  */
 public class A159254 extends LinearRecurrence {

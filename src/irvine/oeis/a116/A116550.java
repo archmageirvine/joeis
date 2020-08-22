@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a165.A165430;
 
 /**
- * A116550 The bi-unitary analog of Euler's totient function of <code>n</code>.
+ * A116550 The bi-unitary analog of Euler's totient function of n.
  * @author Sean A. Irvine
  */
 public class A116550 implements Sequence {

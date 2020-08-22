@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A027576 Numbers n such that <code>n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2</code> is palindromic.
+ * A027576 Numbers n such that n^2 + (n+1)^2 + (n+2)^2 + (n+3)^2 is palindromic.
  * @author Sean A. Irvine
  */
 public class A027576 implements Sequence {

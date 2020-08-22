@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.ParallelGenerateGraphsSequence;
 
 /**
- * A021103 Number of <code>two-connected</code> (or biconnected) planar graphs with n nodes.
+ * A021103 Number of two-connected (or biconnected) planar graphs with n nodes.
  * @author Sean A. Irvine
  */
 public class A021103 extends ParallelGenerateGraphsSequence {

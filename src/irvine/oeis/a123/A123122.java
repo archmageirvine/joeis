@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123122 Numbers of the form <code>5i + 7j</code> for some nonnegative integers i and j.
+ * A123122 Numbers of the form 5i + 7j for some nonnegative integers i and j.
  * @author Georg Fischer
  */
 public class A123122 extends HolonomicRecurrence {

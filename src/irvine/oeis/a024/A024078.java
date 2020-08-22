@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000578;
 
 /**
- * A024078 <code>a(n) = 7^n - n^3</code>.
+ * A024078 a(n) = 7^n - n^3.
  * @author Sean A. Irvine
  */
 public class A024078 extends A000578 {

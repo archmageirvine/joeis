@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005287 Number of permutations of <code>[n]</code> with four inversions.
+ * A005287 Number of permutations of [n] with four inversions.
  * @author Sean A. Irvine
  */
 public class A005287 implements Sequence {

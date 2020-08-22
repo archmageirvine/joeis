@@ -4,7 +4,7 @@ package irvine.oeis.a300;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A300068 A sequence based on the period 6 sequence <code>A300067</code>.
+ * A300068 A sequence based on the period 6 sequence A300067.
  * @author Georg Fischer
  */
 public class A300068 extends GeneratingFunctionSequence {

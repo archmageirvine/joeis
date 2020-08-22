@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050852 Numbers k such that <code>201*2^k-1</code> is prime.
+ * A050852 Numbers k such that 201*2^k-1 is prime.
  * @author Georg Fischer
  */
 public class A050852 extends PowerFactorPrimeSequence {

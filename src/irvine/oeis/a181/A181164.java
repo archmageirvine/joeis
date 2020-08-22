@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A181164 Decimal expansion of <code>exp(5*Pi)/8</code>.
+ * A181164 Decimal expansion of exp(5*Pi)/8.
  * @author Georg Fischer
  */
 public class A181164 extends DecimalExpansionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A024184 Third elementary symmetric function of <code>3,4,...,n+4</code>.
+ * A024184 Third elementary symmetric function of 3,4,...,n+4.
  * @author Sean A. Irvine
  */
 public class A024184 extends LinearRecurrence {

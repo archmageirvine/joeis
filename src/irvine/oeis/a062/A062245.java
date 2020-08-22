@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A062245 Expansion of Hauptmodul for group <code>G'_{27|3}</code>.
+ * A062245 Expansion of Hauptmodul for group G'_{27|3}.
  * @author Georg Fischer
  */
 public class A062245 extends EulerTransform {

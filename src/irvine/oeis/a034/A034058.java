@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034058 Decimal part of <code>a(n)^(1/3)</code> starts with <code>n</code> (cubes excluded).
+ * A034058 Decimal part of a(n)^(1/3) starts with n (cubes excluded).
  * @author Sean A. Irvine
  */
 public class A034058 implements Sequence {

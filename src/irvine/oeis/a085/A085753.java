@@ -5,7 +5,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A085753 Least k such that <code>n^n +</code> k is a semiprime.
+ * A085753 Least k such that n^n + k is a semiprime.
  * @author Sean A. Irvine
  */
 public class A085753 implements Sequence {

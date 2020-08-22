@@ -5,7 +5,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209230 Number of set partitions of <code>[n]</code> that avoid 1231 and 1121.
+ * A209230 Number of set partitions of [n] that avoid 1231 and 1121.
  * @author Georg Fischer
  */
 public class A209230 extends HolonomicRecurrence {

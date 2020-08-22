@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A227144 Numbers that are congruent to <code>{1, 2, 7, 17, 23}</code> modulo 24.
+ * A227144 Numbers that are congruent to {1, 2, 7, 17, 23} modulo 24.
  * @author Sean A. Irvine
  */
 public class A227144 extends LinearRecurrence {

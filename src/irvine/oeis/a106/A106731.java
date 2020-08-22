@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106731 Expansion of <code>-2*x/(1 - 4*x + 2*x^2)</code>.
+ * A106731 Expansion of -2*x/(1 - 4*x + 2*x^2).
  * @author Georg Fischer
  */
 public class A106731 extends GeneratingFunctionSequence {

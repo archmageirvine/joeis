@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Pair;
 
 /**
- * A024605 Number in position n when the numbers <code>i^2 - i*j + j^2 (1 &lt;= i &lt;= j)</code> are arranged in nondecreasing order.
+ * A024605 Number in position n when the numbers i^2 - i*j + j^2 (1 &lt;= i &lt;= j) are arranged in nondecreasing order.
  * @author Sean A. Irvine
  */
 public class A024605 implements Sequence {

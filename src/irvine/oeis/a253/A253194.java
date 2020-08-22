@@ -6,7 +6,7 @@ package irvine.oeis.a253;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A253194 Number of ways to place non-intersecting diagonals in a convex <code>(n+2)-gon</code> so as to create no pentagons.
+ * A253194 Number of ways to place non-intersecting diagonals in a convex (n+2)-gon so as to create no pentagons.
  * @author Georg Fischer
  */
 public class A253194 extends HolonomicRecurrence {

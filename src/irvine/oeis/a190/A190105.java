@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002145;
 
 /**
- * A190105 <code>a(n) = (3*A002145(n) - 1)/4</code>.
+ * A190105 a(n) = (3*A002145(n) - 1)/4.
  * @author Georg Fischer
  */
 public class A190105 implements Sequence {

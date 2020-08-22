@@ -5,7 +5,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104550 Number of horizontal segments in all Schroeder paths of length <code>2n (a</code> horizontal segment is a maximal string of horizontal steps). A Schroeder path is a lattice path starting from <code>(0,0)</code>, ending at a point on the <code>x-axis</code>, consisting only of steps <code>U=(1,1), D=(1,-1)</code> and <code>H=(2,0)</code> and never going below the <code>x-axis</code>. Schroeder paths are counted by the large Schroeder numbers <code>(A006318)</code>.
+ * A104550 Number of horizontal segments in all Schroeder paths of length 2n (a horizontal segment is a maximal string of horizontal steps).
  * @author Georg Fischer
  */
 public class A104550 extends HolonomicRecurrence {

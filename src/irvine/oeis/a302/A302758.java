@@ -4,7 +4,7 @@ package irvine.oeis.a302;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A302758 <code>a(n) = n^2*(n*(4*n + 3) + 3*n*(-1)^n - 4)/96</code>.
+ * A302758 a(n) = n^2*(n*(4*n + 3) + 3*n*(-1)^n - 4)/96.
  * @author Georg Fischer
  */
 public class A302758 extends GeneratingFunctionSequence {

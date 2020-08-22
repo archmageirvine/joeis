@@ -5,7 +5,7 @@ package irvine.oeis.a081;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A081250 Numbers k such that <code>A081249(m)/m^2</code> has a local minimum for m = k.
+ * A081250 Numbers k such that A081249(m)/m^2 has a local minimum for m = k.
  * @author Georg Fischer
  */
 public class A081250 extends HolonomicRecurrence {

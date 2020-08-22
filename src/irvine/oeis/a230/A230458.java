@@ -3,7 +3,7 @@ package irvine.oeis.a230;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A230458 Decimal expansion of <code>\u0394\u03bd_{Cs}</code> in unit <code>s^{-1};</code> one of the seven units of the 2019 SI system.
+ * A230458 Decimal expansion of \u0394\u03bd_{Cs} in unit s^{-1}; one of the seven units of the 2019 SI system.
  * @author Georg Fischer
  */
 public class A230458 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.math.z.Z;
 
 /**
- * A057204 Primes congruent to <code>1 mod 6</code> generated recursively. Initial prime is 7. The next term is <code>p(n) =</code> Min <code>{p</code> is prime; p divides <code>4Q^2+3; Mod[p,6]=1}</code>, where Q is the product of previous entries of the sequence.
+ * A057204 Primes congruent to 1 mod 6 generated recursively. Initial prime is 7. The next term is p(n) = Min {p is prime; p divides 4Q^2+3; Mod[p,6]=1}, where Q is the product of previous entries of the sequence.
  * @author Sean A. Irvine
  */
 public class A057204 extends A057205 {

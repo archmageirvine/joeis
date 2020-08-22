@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094233 Number of closed walks of length n at a vertex of the cyclic graph on 9 nodes <code>C_9</code>.
+ * A094233 Number of closed walks of length n at a vertex of the cyclic graph on 9 nodes C_9.
  * @author Georg Fischer
  */
 public class A094233 extends GeneratingFunctionSequence {

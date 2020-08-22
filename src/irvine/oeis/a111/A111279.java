@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111279 Number of permutations avoiding the patterns <code>{3241,3421,4321};</code> number of weak sorting class based on 3241.
+ * A111279 Number of permutations avoiding the patterns {3241,3421,4321}; number of weak sorting class based on 3241.
  * @author Georg Fischer
  */
 public class A111279 extends HolonomicRecurrence {

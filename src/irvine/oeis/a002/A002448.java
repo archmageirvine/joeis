@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.LongUtils;
 
 /**
- * A002448 Expansion of Jacobi theta function <code>theta_4(x)</code>.
+ * A002448 Expansion of Jacobi theta function theta_4(x).
  * @author Sean A. Irvine
  */
 public class A002448 implements Sequence {

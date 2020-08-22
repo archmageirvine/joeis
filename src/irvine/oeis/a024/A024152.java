@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008456;
 
 /**
- * A024152 <code>a(n) = 12^n - n^12</code>.
+ * A024152 a(n) = 12^n - n^12.
  * @author Sean A. Irvine
  */
 public class A024152 extends A008456 {

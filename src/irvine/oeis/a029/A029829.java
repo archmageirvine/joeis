@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013963;
 
 /**
- * A029829 Eisenstein series <code>E_16(q)</code> (alternate convention <code>E_8(q))</code>, multiplied by 3617.
+ * A029829 Eisenstein series E_16(q) (alternate convention E_8(q)), multiplied by 3617.
  * @author Sean A. Irvine
  */
 public class A029829 extends A013963 {

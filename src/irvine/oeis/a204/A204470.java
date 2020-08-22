@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204470 Number of 6-element subsets that can be chosen from <code>{1,2,...,6*n}</code> having element sum <code>18*n+3</code>.
+ * A204470 Number of 6-element subsets that can be chosen from {1,2,...,6*n} having element sum 18*n+3.
  * @author Georg Fischer
  */
 public class A204470 extends GeneratingFunctionSequence {

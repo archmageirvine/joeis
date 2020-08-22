@@ -3,7 +3,7 @@ package irvine.oeis.a009;
 import irvine.oeis.CoordinationSequence;
 
 /**
- * A009882 Coordination sequence <code>T2</code> for Zeolite Code iRON.
+ * A009882 Coordination sequence T2 for Zeolite Code iRON.
  * @author Sean A. Irvine
  */
 public class A009882 extends CoordinationSequence {

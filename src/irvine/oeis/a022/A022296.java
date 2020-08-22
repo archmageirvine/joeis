@@ -1,7 +1,7 @@
 package irvine.oeis.a022;
 
 /**
- * A022296 Least <code>k&gt;1</code> such that complement of first n terms of Kolakoski sequence <code>(A000002)</code> repeats beginning at k-th term.
+ * A022296 Least k&gt;1 such that complement of first n terms of Kolakoski sequence (A000002) repeats beginning at k-th term.
  * @author Sean A. Irvine
  */
 public class A022296 extends A022294 {

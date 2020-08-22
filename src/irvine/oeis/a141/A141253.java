@@ -6,7 +6,7 @@ package irvine.oeis.a141;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A141253 Number of permutations that lie in the cyclic closure of <code>Av(132)--i.e.</code>, at least one cyclic rotation of the permutation avoids the pattern 132.
+ * A141253 Number of permutations that lie in the cyclic closure of Av(132)--i.e., at least one cyclic rotation of the permutation avoids the pattern 132.
  * @author Georg Fischer
  */
 public class A141253 extends HolonomicRecurrence {

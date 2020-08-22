@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007825 Number of n step self-avoiding walks on 3 X infinity grid starting from <code>(0,1)</code>.
+ * A007825 Number of n step self-avoiding walks on 3 X infinity grid starting from (0,1).
  * @author Sean A. Irvine
  */
 public class A007825 implements Sequence {

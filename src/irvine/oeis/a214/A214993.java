@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214993 Power floor sequence of (golden <code>ratio)^5</code>.
+ * A214993 Power floor sequence of (golden ratio)^5.
  * @author Sean A. Irvine
  */
 public class A214993 extends LinearRecurrence {

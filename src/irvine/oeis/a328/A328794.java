@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328794 Squares visited by a knight moving on a binary numbered <code>single-digit square-spiral</code> board where the knight moves to the smallest numbered unvisited square; the minimum distance from the origin is used if the square numbers are equal; the smallest spiral number ordering is used if the distances are equal.
+ * A328794 Squares visited by a knight moving on a binary numbered single-digit square-spiral board where the knight moves to the smallest numbered unvisited square; the minimum distance from the origin is used if the square numbers are equal; the smallest spiral number ordering is used if the distances are equal.
  * @author Georg Fischer
  */
 public class A328794 extends FiniteSequence {

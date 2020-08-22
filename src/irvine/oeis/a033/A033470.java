@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033470 Numerator of <code>Bernoulli(2n,1/3)</code>.
+ * A033470 Numerator of Bernoulli(2n,1/3).
  * @author Sean A. Irvine
  */
 public class A033470 implements Sequence {

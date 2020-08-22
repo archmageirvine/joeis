@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A078870 Decimal concatenations of the 38 quintuples <code>(d1,d2,d3,d4,d5)</code> with elements in <code>{2,4,6}</code> for which there exists a prime p <code>&gt;= 7</code> such that the differences between the 6 consecutive primes starting with p are <code>(d1,d2,d3,d4,d5)</code>.
+ * A078870 Decimal concatenations of the 38 quintuples (d1,d2,d3,d4,d5) with elements in {2,4,6} for which there exists a prime p &gt;= 7 such that the differences between the 6 consecutive primes starting with p are (d1,d2,d3,d4,d5).
  * @author Georg Fischer
  */
 public class A078870 extends FiniteSequence {

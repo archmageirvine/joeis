@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101986 Maximum sum of products of successive pairs in a permutation of order <code>n+1</code>.
+ * A101986 Maximum sum of products of successive pairs in a permutation of order n+1.
  * @author Sean A. Irvine
  */
 public class A101986 extends LinearRecurrence {

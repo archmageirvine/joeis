@@ -4,7 +4,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259561 Numbers k such that <code>k^2+2</code> is the product of a Fibonacci number and a Lucas number.
+ * A259561 Numbers k such that k^2+2 is the product of a Fibonacci number and a Lucas number.
  * @author Georg Fischer
  */
 public class A259561 extends GeneratingFunctionSequence {

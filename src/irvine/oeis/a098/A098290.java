@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A098290 Recurrence sequence based on positions of digits in decimal places of <code>Zeta(3) (Apery</code>'s constant).
+ * A098290 Recurrence sequence based on positions of digits in decimal places of Zeta(3) (Apery's constant).
  * @author Georg Fischer
  */
 public class A098290 extends PaddingSequence {

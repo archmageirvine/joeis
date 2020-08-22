@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055792 <code>a(n)</code> and <code>floor(a(n)/2)</code> are both squares; i.e., squares which remain squares when written in base 2 and last digit is removed.
+ * A055792 a(n) and floor(a(n)/2) are both squares; i.e., squares which remain squares when written in base 2 and last digit is removed.
  * @author Georg Fischer
  */
 public class A055792 extends HolonomicRecurrence {

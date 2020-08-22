@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092294 Decimal expansion of <code>3 + sqrt(15)</code>.
+ * A092294 Decimal expansion of 3 + sqrt(15).
  * @author Georg Fischer
  */
 public class A092294 extends DecimalExpansionSequence {

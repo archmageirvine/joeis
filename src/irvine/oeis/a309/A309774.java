@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A309774 Numbers k such that <code>5*10^k + 11</code> is prime.
+ * A309774 Numbers k such that 5*10^k + 11 is prime.
  * @author Georg Fischer
  */
 public class A309774 extends PowerFactorPrimeSequence {

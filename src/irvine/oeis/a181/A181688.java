@@ -3,7 +3,7 @@ package irvine.oeis.a181;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A181688 Number of maximal self-avoiding walks from NW to SW corners of a <code>4-by-n</code> grid.
+ * A181688 Number of maximal self-avoiding walks from NW to SW corners of a 4-by-n grid.
  * @author Sean A. Irvine
  */
 public class A181688 extends LinearRecurrence {

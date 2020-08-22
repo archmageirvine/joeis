@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239576 Number of <code>non-equivalent (mod D_4)</code> binary <code>n X n</code> matrices with 4 pairwise nonadjacent <code>1</code>'s.
+ * A239576 Number of non-equivalent (mod D_4) binary n X n matrices with 4 pairwise nonadjacent 1's.
  * @author Georg Fischer
  */
 public class A239576 extends GeneratingFunctionSequence {

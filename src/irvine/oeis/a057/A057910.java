@@ -5,7 +5,7 @@ package irvine.oeis.a057;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A057910 Numbers k such that <code>2*3^k - 5</code> is prime.
+ * A057910 Numbers k such that 2*3^k - 5 is prime.
  * @author Georg Fischer
  */
 public class A057910 extends PowerFactorPrimeSequence {

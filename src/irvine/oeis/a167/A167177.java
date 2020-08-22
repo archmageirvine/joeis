@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167177 Expansion of <code>1/((1 +x +x^2)^2 *(1 +x^2 +x^3)^3)</code>.
+ * A167177 Expansion of 1/((1 +x +x^2)^2 *(1 +x^2 +x^3)^3).
  * @author Georg Fischer
  */
 public class A167177 extends GeneratingFunctionSequence {

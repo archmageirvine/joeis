@@ -4,7 +4,7 @@ package irvine.oeis.a072;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A072134 Second generation sequence in which each number is skipped that can be written as sum of distinct previous entries. To make the first generation we start with all natural numbers: this gives the powers of <code>2 (A000079)</code>. For the second generation we start with the natural numbers from which are removed the numbers of the first generation.
+ * A072134 Second generation sequence in which each number is skipped that can be written as sum of distinct previous entries. To make the first generation we start with all natural numbers: this gives the powers of 2 (A000079). For the second generation we start with the natural numbers from which are removed the numbers of the first generation.
  * @author Georg Fischer
  */
 public class A072134 extends GeneratingFunctionSequence {

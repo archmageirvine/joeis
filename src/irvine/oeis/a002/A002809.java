@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000793;
 
 /**
- * A002809 Increasing values of <code>A000793</code> (largest order of permutation of <code>n</code> elements).
+ * A002809 Increasing values of A000793 (largest order of permutation of n elements).
  * @author Sean A. Irvine
  */
 public class A002809 extends A000793 {

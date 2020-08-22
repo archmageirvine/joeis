@@ -3,7 +3,7 @@ package irvine.oeis.a140;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A140171 Numbers n such that <code>n=prime(prime(d_1!+d_2!+...+d_k!))</code> where <code>d_1d_2...d_k</code> is the decimal expansion of <code>n</code>.
+ * A140171 Numbers n such that n=prime(prime(d_1!+d_2!+...+d_k!)) where d_1d_2...d_k is the decimal expansion of n.
  * @author Georg Fischer
  */
 public class A140171 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005537 Numbers n such that <code>4*3^n + 1</code> is prime.
+ * A005537 Numbers n such that 4*3^n + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A005537 implements Sequence {

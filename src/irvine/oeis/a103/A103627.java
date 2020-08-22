@@ -4,7 +4,7 @@ package irvine.oeis.a103;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A103627 Let <code>S(n) = {n,1,n};</code> sequence gives concatenation <code>S(0), S(1), S(2), ..</code>.
+ * A103627 Let S(n) = {n,1,n}; sequence gives concatenation S(0), S(1), S(2), ...
  * @author Georg Fischer
  */
 public class A103627 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a218;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A218475 Number of <code>3n-length 5-ary</code> words, either empty or beginning with the first letter of the alphabet, that can be built by repeatedly inserting triples of identical letters into the initially empty word.
+ * A218475 Number of 3n-length 5-ary words, either empty or beginning with the first letter of the alphabet, that can be built by repeatedly inserting triples of identical letters into the initially empty word.
  * @author Georg Fischer
  */
 public class A218475 extends HolonomicRecurrence {

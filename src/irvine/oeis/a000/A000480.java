@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000480 <code>a(n) = floor(cos(n))</code>.
+ * A000480 a(n) = floor(cos(n)).
  * @author Sean A. Irvine
  */
 public class A000480 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060423 Number of obtuse triangles made from vertices of a regular <code>n-gon</code>.
+ * A060423 Number of obtuse triangles made from vertices of a regular n-gon.
  * @author Georg Fischer
  */
 public class A060423 extends GeneratingFunctionSequence {

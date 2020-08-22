@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190093 Number of rhombuses on an <code>(n+1) X 5</code> grid.
+ * A190093 Number of rhombuses on an (n+1) X 5 grid.
  * @author Georg Fischer
  */
 public class A190093 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a050;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A050850 Numbers n such that <code>197*2^n-1</code> is prime.
+ * A050850 Numbers n such that 197*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050850 extends PowerFactorPrimeSequence {

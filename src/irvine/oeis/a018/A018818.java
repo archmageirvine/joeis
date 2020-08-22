@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018818 Number of partitions of n into divisors of <code>n</code>.
+ * A018818 Number of partitions of n into divisors of n.
  * @author Sean A. Irvine
  */
 public class A018818 extends MemoryFunctionInt3<Z> implements Sequence {

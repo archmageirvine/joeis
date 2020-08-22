@@ -3,7 +3,7 @@ package irvine.oeis.a253;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A253942 <code>a(n) = 3*binomial(n+1, 5)</code>.
+ * A253942 a(n) = 3*binomial(n+1, 5).
  * @author Sean A. Irvine
  */
 public class A253942 extends LinearRecurrence {

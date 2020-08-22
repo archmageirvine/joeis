@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A233527 Decimal expansion of <code>arctan( 1/(2*Pi) )</code>: opposite angle for a right triangle of equal area to a circle.
+ * A233527 Decimal expansion of arctan( 1/(2*Pi) ): opposite angle for a right triangle of equal area to a circle.
  * @author Georg Fischer
  */
 public class A233527 extends DecimalExpansionSequence {

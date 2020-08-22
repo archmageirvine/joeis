@@ -4,7 +4,7 @@ package irvine.oeis.a089;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A089518 Third column <code>(k=5)</code> of array <code>A078741 ((3,3)-Stirling2)</code> divided by 9.
+ * A089518 Third column (k=5) of array A078741 ((3,3)-Stirling2) divided by 9.
  * @author Georg Fischer
  */
 public class A089518 extends GeneratingFunctionSequence {

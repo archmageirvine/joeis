@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.InverseBinomialTransformSequence;
 
 /**
- * A032347 Inverse binomial transform of <code>A032346</code>.
+ * A032347 Inverse binomial transform of A032346.
  * @author Sean A. Irvine
  */
 public class A032347 extends InverseBinomialTransformSequence {

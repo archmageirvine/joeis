@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027847 <code>a(n) = Sum_{d|n} sigma(n/d)*d^3</code>.
+ * A027847 a(n) = Sum_{d|n} sigma(n/d)*d^3.
  * @author Sean A. Irvine
  */
 public class A027847 implements Sequence {

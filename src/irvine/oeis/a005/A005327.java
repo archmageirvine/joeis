@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005327 Certain subgraphs of a directed graph (inverse binomial transform of <code>A005321)</code>.
+ * A005327 Certain subgraphs of a directed graph (inverse binomial transform of A005321).
  * @author Sean A. Irvine
  */
 public class A005327 implements Sequence {

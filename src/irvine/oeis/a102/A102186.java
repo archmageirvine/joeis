@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A102186 The <code>PDO(n)</code> function (Partitions with Designated summands in which all parts are <code>Odd)</code>: the sum of products of multiplicities of parts in all partitions of n into odd parts.
+ * A102186 The PDO(n) function (Partitions with Designated summands in which all parts are Odd): the sum of products of multiplicities of parts in all partitions of n into odd parts.
  * @author Georg Fischer
  */
 public class A102186 extends EulerTransform {

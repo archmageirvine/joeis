@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025586 Largest value in <code>'3x+1'</code> trajectory of <code>n</code>.
+ * A025586 Largest value in '3x+1' trajectory of n.
  * @author Sean A. Irvine
  */
 public class A025586 implements Sequence {

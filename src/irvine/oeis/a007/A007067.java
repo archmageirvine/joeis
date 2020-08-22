@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007067 Nearest integer to <code>n*tau</code>.
+ * A007067 Nearest integer to n*tau.
  * @author Sean A. Irvine
  */
 public class A007067 implements Sequence {

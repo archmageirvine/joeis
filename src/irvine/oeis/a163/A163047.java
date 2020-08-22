@@ -4,7 +4,7 @@ package irvine.oeis.a163;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A163047 Number of <code>nX3</code> binary arrays with all <code>1s</code> connected, and all corners 1.
+ * A163047 Number of nX3 binary arrays with all 1s connected, and all corners 1.
  * @author Georg Fischer
  */
 public class A163047 extends GeneratingFunctionSequence {

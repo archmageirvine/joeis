@@ -3,7 +3,7 @@ package irvine.oeis.a318;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A318436 Decimal expansion of the nominal solar mass parameter in <code>m^3 s^-2</code>.
+ * A318436 Decimal expansion of the nominal solar mass parameter in m^3 s^-2.
  * @author Georg Fischer
  */
 public class A318436 extends FiniteSequence {

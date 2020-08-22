@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A278326 Decimal expansion of <code>gamma/log(2)^2</code>.
+ * A278326 Decimal expansion of gamma/log(2)^2.
  * @author Georg Fischer
  */
 public class A278326 extends DecimalExpansionSequence {

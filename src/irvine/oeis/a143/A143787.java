@@ -6,7 +6,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143787 Number of compositions of n into <code>floor((3*j)/2)</code> kinds of j's for all <code>j&gt;=1</code>.
+ * A143787 Number of compositions of n into floor((3*j)/2) kinds of j's for all j&gt;=1.
  * @author Georg Fischer
  */
 public class A143787 extends GeneratingFunctionSequence {

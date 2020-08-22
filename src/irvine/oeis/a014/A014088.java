@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a050.A050255;
 
 /**
- * A014088 Minimal number of people to give a <code>50%</code> probability of having at least n coincident birthdays in one year.
+ * A014088 Minimal number of people to give a 50% probability of having at least n coincident birthdays in one year.
  * @author Sean A. Irvine
  */
 public class A014088 extends A050255 {

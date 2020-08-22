@@ -6,7 +6,7 @@ import irvine.oeis.PositionSequence;
 
 
 /**
- * A327217 Positions of <code>0</code>'s in <code>{A327216(n) : n &gt; 0}</code>.
+ * A327217 Positions of 0's in {A327216(n) : n &gt; 0}.
  * @author Georg Fischer
  */
 public class A327217 extends PositionSequence {

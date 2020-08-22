@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055536 Number of asymmetric types of <code>(3,n)-hypergraphs</code> under action of symmetric group <code>S_3</code>.
+ * A055536 Number of asymmetric types of (3,n)-hypergraphs under action of symmetric group S_3.
  * @author Georg Fischer
  */
 public class A055536 extends GeneratingFunctionSequence {

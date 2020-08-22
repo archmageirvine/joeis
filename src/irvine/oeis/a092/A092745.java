@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092745 Decimal expansion of <code>pi^(-5)</code>.
+ * A092745 Decimal expansion of pi^(-5).
  * @author Georg Fischer
  */
 public class A092745 extends DecimalExpansionSequence {

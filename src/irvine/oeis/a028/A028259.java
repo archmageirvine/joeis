@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028259 Engel expansion of the golden ratio, <code>(1 + sqrt(5))/2 = 1.61803... </code>.
+ * A028259 Engel expansion of the golden ratio, (1 + sqrt(5))/2 = 1.61803... .
  * @author Sean A. Irvine
  */
 public class A028259 implements Sequence {

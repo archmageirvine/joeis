@@ -6,7 +6,7 @@ package irvine.oeis.a331;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A331952 <code>a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8</code>.
+ * A331952 a(n) = (-7 + (-1)^(1+n) + 6*n^2) / 8.
  * @author Georg Fischer
  */
 public class A331952 extends HolonomicRecurrence {

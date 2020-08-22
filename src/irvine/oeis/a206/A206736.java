@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A206736 Number of permutations of length n which avoid the patterns <code>1234, 4321</code>.
+ * A206736 Number of permutations of length n which avoid the patterns 1234, 4321.
  * @author Georg Fischer
  */
 public class A206736 extends PaddingSequence {

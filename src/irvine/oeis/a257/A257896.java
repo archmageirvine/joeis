@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A257896 Decimal expansion of <code>(Pi-arctan(e))/(2*Pi)</code>.
+ * A257896 Decimal expansion of (Pi-arctan(e))/(2*Pi).
  * @author Georg Fischer
  */
 public class A257896 extends DecimalExpansionSequence {

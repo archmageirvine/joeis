@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A138726 Atomic numbers of the periodic table of the elements, read downwards along 72 columns, up to the <code>11th</code> period.
+ * A138726 Atomic numbers of the periodic table of the elements, read downwards along 72 columns, up to the 11th period.
  * @author Georg Fischer
  */
 public class A138726 extends NoncomputableSequence {

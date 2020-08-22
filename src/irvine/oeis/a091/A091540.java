@@ -6,7 +6,7 @@ package irvine.oeis.a091;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A091540 Rescaled second column <code>A091539</code> of array <code>A091534 ((5,2)-Stirling2)</code>.
+ * A091540 Rescaled second column A091539 of array A091534 ((5,2)-Stirling2).
  * @author Georg Fischer
  */
 public class A091540 extends HolonomicRecurrence {

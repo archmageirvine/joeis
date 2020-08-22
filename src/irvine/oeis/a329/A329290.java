@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A329290 Number of ordered triples <code>(i</code>, j, <code>k)</code> of integers such that <code>n = i^2 + 4*j^2 + 4*k^2</code>.
+ * A329290 Number of ordered triples (i, j, k) of integers such that n = i^2 + 4*j^2 + 4*k^2.
  * @author Georg Fischer
  */
 public class A329290 extends EulerTransform {

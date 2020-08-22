@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309335 <code>a(n) = n^3</code> if n odd, <code>7*n^3/8</code> if n even.
+ * A309335 a(n) = n^3 if n odd, 7*n^3/8 if n even.
  * @author Georg Fischer
  */
 public class A309335 extends HolonomicRecurrence {

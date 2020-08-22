@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A164562 Taylor series coefficients of <code>phi(-q^3)*phi(q)/phi(q^2)</code>, where phi is Euler's function.
+ * A164562 Taylor series coefficients of phi(-q^3)*phi(q)/phi(q^2), where phi is Euler's function.
  * @author Georg Fischer
  */
 public class A164562 extends EulerTransform {

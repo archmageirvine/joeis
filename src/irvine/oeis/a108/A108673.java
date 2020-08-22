@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108673 <code>a(n) = (n+1)(n+2)(n+3)(2n+3)(10n^2 + 27n + 20)/360</code>.
+ * A108673 a(n) = (n+1)(n+2)(n+3)(2n+3)(10n^2 + 27n + 20)/360.
  * @author Georg Fischer
  */
 public class A108673 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a013.A013929;
 
 /**
- * A078147 First differences of sequence of nonsquarefree numbers, <code>A013929</code>.
+ * A078147 First differences of sequence of nonsquarefree numbers, A013929.
  * @author Georg Fischer
  */
 public class A078147 extends DifferenceSequence {

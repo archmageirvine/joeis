@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005530 Number of Boolean functions of n variables from Post class <code>F(8,inf);</code> number of degenerate Boolean functions of n variables.
+ * A005530 Number of Boolean functions of n variables from Post class F(8,inf); number of degenerate Boolean functions of n variables.
  * @author Sean A. Irvine
  */
 public class A005530 implements Sequence {

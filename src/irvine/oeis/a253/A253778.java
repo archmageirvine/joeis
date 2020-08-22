@@ -4,7 +4,7 @@ package irvine.oeis.a253;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A253778 Numbers b that are the first of <code>m^3</code> consecutive cubes whose sum is a cube <code>c^3</code>, where <code>m^3</code> is not divisible by <code>3 (A118719)</code>.
+ * A253778 Numbers b that are the first of m^3 consecutive cubes whose sum is a cube c^3, where m^3 is not divisible by 3 (A118719).
  * @author Georg Fischer
  */
 public class A253778 extends GeneratingFunctionSequence {

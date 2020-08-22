@@ -3,7 +3,7 @@ package irvine.oeis.a227;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A227243 Powerful numbers n such that <code>n/phi(n) &gt;= e^gamma*log</code> log <code>n</code>.
+ * A227243 Powerful numbers n such that n/phi(n) &gt;= e^gamma*log log n.
  * @author Georg Fischer
  */
 public class A227243 extends FiniteSequence {

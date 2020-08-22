@@ -5,7 +5,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123761 Let <code>k(n) = mod(3,n)-1</code>. Then <code>a(n) = 4*a(n-1)</code> if n is odd, otherwise <code>((5+k(n))/4)*a(n-1)</code>, with <code>a(0) = 1, a(1) = 2</code>.
+ * A123761 Let k(n) = mod(3,n)-1. Then a(n) = 4*a(n-1) if n is odd, otherwise ((5+k(n))/4)*a(n-1), with a(0) = 1, a(1) = 2.
  * @author Georg Fischer
  */
 public class A123761 extends HolonomicRecurrence {

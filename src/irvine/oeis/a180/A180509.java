@@ -3,7 +3,7 @@ package irvine.oeis.a180;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A180509 Solutions <code>a(n)</code> of <code>(a(n)-5)*(a(n)-6) = 21 *b(n)*(b(n)-1)</code>.
+ * A180509 Solutions a(n) of (a(n)-5)*(a(n)-6) = 21 *b(n)*(b(n)-1).
  * @author Sean A. Irvine
  */
 public class A180509 extends LinearRecurrence {

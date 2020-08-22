@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A100799 <code>a(1) = 1, a(2) = 2, a(n) =</code> product of nonzero digits of previous two terms.
+ * A100799 a(1) = 1, a(2) = 2, a(n) = product of nonzero digits of previous two terms.
  * @author Georg Fischer
  */
 public class A100799 extends PaddingSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A059622 Numbers k such that <code>(5*3^k - 7)/2</code> is prime.
+ * A059622 Numbers k such that (5*3^k - 7)/2 is prime.
  * @author Georg Fischer
  */
 public class A059622 extends PowerFactorPrimeSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000515 <code>a(n) = (2n)!(2n+1)!/n!^4</code>, or equally <code>(2n+1)C(2n,n)^2</code>.
+ * A000515 a(n) = (2n)!(2n+1)!/n!^4, or equally (2n+1)C(2n,n)^2.
  * @author Sean A. Irvine
  */
 public class A000515 implements Sequence {

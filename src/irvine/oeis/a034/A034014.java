@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034014 Values y corresponding to the k in <code>A034012</code>.
+ * A034014 Values y corresponding to the k in A034012.
  * @author Sean A. Irvine
  */
 public class A034014 extends FiniteSequence {

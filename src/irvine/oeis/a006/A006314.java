@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006314 Numbers n such that <code>n^8 + 1</code> is prime.
+ * A006314 Numbers n such that n^8 + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A006314 implements Sequence {

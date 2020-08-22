@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003023 "Length" of aliquot sequence for <code>n</code>.
+ * A003023 "Length" of aliquot sequence for n.
  * @author Sean A. Irvine
  */
 public class A003023 implements Sequence {

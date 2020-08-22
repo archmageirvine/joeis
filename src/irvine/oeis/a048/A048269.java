@@ -5,7 +5,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048269 First palindrome greater than <code>n+2</code> in bases <code>n+2</code> and <code>n</code>.
+ * A048269 First palindrome greater than n+2 in bases n+2 and n.
  * @author Georg Fischer
  */
 public class A048269 extends HolonomicRecurrence {

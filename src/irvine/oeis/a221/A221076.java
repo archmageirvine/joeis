@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221076 Continued fraction expansion of <code>product_{n&gt;=0} (1-sqrt(5)*[sqrt(5)-2]^{4n+3})/(1-sqrt(5)*[sqrt(5)-2]^{4n+1})</code>.
+ * A221076 Continued fraction expansion of product_{n&gt;=0} (1-sqrt(5)*[sqrt(5)-2]^{4n+3})/(1-sqrt(5)*[sqrt(5)-2]^{4n+1}).
  * @author Georg Fischer
  */
 public class A221076 extends GeneratingFunctionSequence {

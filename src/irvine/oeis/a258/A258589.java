@@ -4,7 +4,7 @@ package irvine.oeis.a258;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A258589 Minimal most likely sum for a roll of <code>n 12-sided</code> dice.
+ * A258589 Minimal most likely sum for a roll of n 12-sided dice.
  * @author Georg Fischer
  */
 public class A258589 extends GeneratingFunctionSequence {

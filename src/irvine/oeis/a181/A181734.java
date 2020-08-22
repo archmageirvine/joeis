@@ -6,7 +6,7 @@ package irvine.oeis.a181;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A181734 G.f. <code>A(x)</code> satisfies: <code>A(x) = (1 + x*A(x)) * (1 + x^2*A(x)^3)</code>.
+ * A181734 G.f. A(x) satisfies: A(x) = (1 + x*A(x)) * (1 + x^2*A(x)^3).
  * @author Georg Fischer
  */
 public class A181734 extends HolonomicRecurrence {

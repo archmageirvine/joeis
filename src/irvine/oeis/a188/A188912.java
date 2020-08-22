@@ -6,7 +6,7 @@ package irvine.oeis.a188;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A188912 Binomial convolution of the binomial coefficients <code>bin(3n,n)/(2n+1) (A001764)</code>.
+ * A188912 Binomial convolution of the binomial coefficients bin(3n,n)/(2n+1) (A001764).
  * @author Georg Fischer
  */
 public class A188912 extends HolonomicRecurrence {

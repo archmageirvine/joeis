@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A242765 <code>a(1) = 2;</code> for <code>n&gt;1, a(n) =</code> product of digits of <code>(a(n-1)^2)</code>.
+ * A242765 a(1) = 2; for n&gt;1, a(n) = product of digits of (a(n-1)^2).
  * @author Georg Fischer
  */
 public class A242765 extends PaddingSequence {

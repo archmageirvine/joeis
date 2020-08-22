@@ -5,7 +5,7 @@ package irvine.oeis.a293;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A293034 Numbers k such that <code>(203*10^k + 1)/3</code> is prime.
+ * A293034 Numbers k such that (203*10^k + 1)/3 is prime.
  * @author Georg Fischer
  */
 public class A293034 extends PowerFactorPrimeSequence {

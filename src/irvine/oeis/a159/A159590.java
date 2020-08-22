@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159590 Decimal expansion of <code>(451+30*sqrt(2))/449</code>.
+ * A159590 Decimal expansion of (451+30*sqrt(2))/449.
  * @author Georg Fischer
  */
 public class A159590 extends DecimalExpansionSequence {

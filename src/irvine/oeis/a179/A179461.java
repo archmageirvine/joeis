@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179461 Decimal expansion of <code>sqrt(51)/7</code>.
+ * A179461 Decimal expansion of sqrt(51)/7.
  * @author Georg Fischer
  */
 public class A179461 extends DecimalExpansionSequence {

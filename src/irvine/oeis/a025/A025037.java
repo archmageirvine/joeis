@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025037 Number of partitions of <code>{ 1, 2</code>, ..., <code>5n }</code> into sets of size 5.
+ * A025037 Number of partitions of { 1, 2, ..., 5n } into sets of size 5.
  * @author Sean A. Irvine
  */
 public class A025037 implements Sequence {

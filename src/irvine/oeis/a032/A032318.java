@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032318 Shifts left under "EGJ" <code>(unordered</code>, element, labeled) transform.
+ * A032318 Shifts left under "EGJ" (unordered, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032318 extends MemorySequence {

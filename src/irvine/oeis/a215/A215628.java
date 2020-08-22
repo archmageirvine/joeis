@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215628 Number of terms in <code>10th</code> derivative of a function composed with itself n times.
+ * A215628 Number of terms in 10th derivative of a function composed with itself n times.
  * @author Georg Fischer
  */
 public class A215628 extends GeneratingFunctionSequence {

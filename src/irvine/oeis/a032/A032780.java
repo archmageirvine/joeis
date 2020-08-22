@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032780 <code>a(n) = n(n+1)(n+2)...(n+8) / (n+(n+1)+(n+2)+...+(n+8))</code>.
+ * A032780 a(n) = n(n+1)(n+2)...(n+8) / (n+(n+1)+(n+2)+...+(n+8)).
  * @author Georg Fischer
  */
 public class A032780 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001182 Number of cells of square lattice of edge <code>1/n</code> inside quadrant of unit circle centered at 0.
+ * A001182 Number of cells of square lattice of edge 1/n inside quadrant of unit circle centered at 0.
  * @author Sean A. Irvine
  */
 public class A001182 implements Sequence {

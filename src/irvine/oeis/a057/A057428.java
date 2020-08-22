@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057428 <code>Sign(-n): a(n) = 1</code> if <code>-n &gt; 0, = -1</code> if <code>-n &lt; 0, = 0</code> if <code>n = 0</code>.
+ * A057428 Sign(-n): a(n) = 1 if -n &gt; 0, = -1 if -n &lt; 0, = 0 if n = 0.
  * @author Georg Fischer
  */
 public class A057428 extends GeneratingFunctionSequence {

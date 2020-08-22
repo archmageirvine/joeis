@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A141260 <code>a(n) = 1</code> if <code>n == {0,1,3,4,5,7,9,11} mod 12</code>, otherwise <code>a(n) = 0</code>.
+ * A141260 a(n) = 1 if n == {0,1,3,4,5,7,9,11} mod 12, otherwise a(n) = 0.
  * @author Georg Fischer
  */
 public class A141260 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019514 <code>a(n) = (n!)^3 + 1</code>.
+ * A019514 a(n) = (n!)^3 + 1.
  * @author Sean A. Irvine
  */
 public class A019514 implements Sequence {

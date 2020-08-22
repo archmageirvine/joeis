@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.oeis.PisotSequence;
 
 /**
- * A020745 Pisot sequence <code>T(3,5)</code>.
+ * A020745 Pisot sequence T(3,5).
  * @author Sean A. Irvine
  */
 public class A020745 extends PisotSequence {

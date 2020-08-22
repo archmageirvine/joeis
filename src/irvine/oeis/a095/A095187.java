@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A095187 Least significant digit of <code>(n mod 10)^floor(n/10)</code>.
+ * A095187 Least significant digit of (n mod 10)^floor(n/10).
  * @author Georg Fischer
  */
 public class A095187 extends PaddingSequence {

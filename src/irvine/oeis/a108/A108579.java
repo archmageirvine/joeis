@@ -4,7 +4,7 @@ package irvine.oeis.a108;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A108579 Number of symmetry classes of <code>3 X 3</code> magic squares (with distinct positive entries) having magic sum <code>3n</code>.
+ * A108579 Number of symmetry classes of 3 X 3 magic squares (with distinct positive entries) having magic sum 3n.
  * @author Georg Fischer
  */
 public class A108579 extends GeneratingFunctionSequence {

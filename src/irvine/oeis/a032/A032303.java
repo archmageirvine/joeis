@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032303 "EFK" <code>(unordered</code>, size, unlabeled) transform of 2,1,1,1,...
+ * A032303 "EFK" (unordered, size, unlabeled) transform of 2,1,1,1,...
  * @author Sean A. Irvine
  */
 public class A032303 implements Sequence {

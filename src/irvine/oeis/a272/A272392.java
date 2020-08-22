@@ -6,7 +6,7 @@ package irvine.oeis.a272;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A272392 Degeneracies of entanglement witness eigenstates for <code>2n</code> spin 7/2 irreducible representations.
+ * A272392 Degeneracies of entanglement witness eigenstates for 2n spin 7/2 irreducible representations.
  * @author Georg Fischer
  */
 public class A272392 extends HolonomicRecurrence {

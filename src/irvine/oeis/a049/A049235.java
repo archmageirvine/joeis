@@ -6,7 +6,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049235 Sum of balls on the lawn for the <code>s=3</code> tennis ball problem.
+ * A049235 Sum of balls on the lawn for the s=3 tennis ball problem.
  * @author Georg Fischer
  */
 public class A049235 extends HolonomicRecurrence {

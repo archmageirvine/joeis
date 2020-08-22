@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027468 9 times the triangular numbers <code>A000217</code>.
+ * A027468 9 times the triangular numbers A000217.
  * @author Sean A. Irvine
  */
 public class A027468 extends LinearRecurrence {

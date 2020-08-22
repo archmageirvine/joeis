@@ -5,7 +5,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113596 <code>P(P(n))-P(P(n-1))</code>, where <code>P(n) = n(n+1)(n+2)/6 (cf. A000292)</code>.
+ * A113596 P(P(n))-P(P(n-1)), where P(n) = n(n+1)(n+2)/6 (cf. A000292).
  * @author Georg Fischer
  */
 public class A113596 extends HolonomicRecurrence {

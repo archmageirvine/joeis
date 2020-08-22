@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002411 Pentagonal pyramidal numbers: <code>a(n) = n^2*(n+1)/2</code>.
+ * A002411 Pentagonal pyramidal numbers: a(n) = n^2*(n+1)/2.
  * @author Sean A. Irvine
  */
 public class A002411 implements Sequence {

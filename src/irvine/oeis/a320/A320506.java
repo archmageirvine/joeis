@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A320506 First ionization energy (in <code>kJ/mol)</code> of the chemical elements, rounded to the nearest integer.
+ * A320506 First ionization energy (in kJ/mol) of the chemical elements, rounded to the nearest integer.
  * @author Georg Fischer
  */
 public class A320506 extends NoncomputableSequence {

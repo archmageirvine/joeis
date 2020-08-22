@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030017 <code>a(1) = 1, a(n+1) = Sum_{k = 1..n} p(k)*a(n+1-k)</code>, where <code>p(k)</code> is the k-th prime.
+ * A030017 a(1) = 1, a(n+1) = Sum_{k = 1..n} p(k)*a(n+1-k), where p(k) is the k-th prime.
  * @author Sean A. Irvine
  */
 public class A030017 implements Sequence {

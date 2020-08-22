@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A309071 Complete list of solutions to <code>y^2 = x^3 + 20*x;</code> sequence gives x values.
+ * A309071 Complete list of solutions to y^2 = x^3 + 20*x; sequence gives x values.
  * @author Georg Fischer
  */
 public class A309071 extends FiniteSequence {

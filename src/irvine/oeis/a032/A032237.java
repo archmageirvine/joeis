@@ -5,7 +5,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A032237 Shifts left 2 places under "DGK" <code>(bracelet</code>, element, unlabeled) transform.
+ * A032237 Shifts left 2 places under "DGK" (bracelet, element, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032237 extends A032235 {

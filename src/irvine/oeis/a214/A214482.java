@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A214482 Degrees of irreducible representations of Tits group <code>2F4(2)'</code>.
+ * A214482 Degrees of irreducible representations of Tits group 2F4(2)'.
  * @author Georg Fischer
  */
 public class A214482 extends FiniteSequence {

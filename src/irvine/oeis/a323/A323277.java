@@ -6,7 +6,7 @@ package irvine.oeis.a323;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A323277 G.f. <code>= (x/6)*( 1/(1-12*x)^(3/2) - 1/(1-12*x) )</code>.
+ * A323277 G.f. = (x/6)*( 1/(1-12*x)^(3/2) - 1/(1-12*x) ).
  * @author Georg Fischer
  */
 public class A323277 extends HolonomicRecurrence {

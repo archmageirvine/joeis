@@ -1,7 +1,7 @@
 package irvine.oeis.a025;
 
 /**
- * A025151 Number of partitions of n into distinct parts <code>&gt;= 6</code>.
+ * A025151 Number of partitions of n into distinct parts &gt;= 6.
  * @author Sean A. Irvine
  */
 public class A025151 extends A025148 {

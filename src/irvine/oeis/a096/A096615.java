@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A096615 Decimal expansion of <code>5 Pi^2/96</code>.
+ * A096615 Decimal expansion of 5 Pi^2/96.
  * @author Georg Fischer
  */
 public class A096615 extends DecimalExpansionSequence {

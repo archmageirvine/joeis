@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094639 Partial sums of squares of Catalan numbers <code>(A000108)</code>.
+ * A094639 Partial sums of squares of Catalan numbers (A000108).
  * @author Georg Fischer
  */
 public class A094639 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002145;
 
 /**
- * A082075 First differences of primes with <code>4k+3</code> form, <code>A002145</code>.
+ * A082075 First differences of primes with 4k+3 form, A002145.
  * @author Georg Fischer
  */
 public class A082075 extends DifferenceSequence {

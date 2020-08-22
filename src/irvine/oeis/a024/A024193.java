@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024193 Integer part of (3rd elementary symmetric function of S(n))/(2nd elementary symmetric of <code>S(n))</code>, where <code>S(n) = {3,4</code>, ..., <code>n+4}</code>.
+ * A024193 Integer part of (3rd elementary symmetric function of S(n))/(2nd elementary symmetric of S(n)), where S(n) = {3,4, ..., n+4}.
  * @author Sean A. Irvine
  */
 public class A024193 implements Sequence {

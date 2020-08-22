@@ -6,7 +6,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263451 <code>a(n)</code> is the largest anagram of <code>2*a(n-1), a(1)=1</code>.
+ * A263451 a(n) is the largest anagram of 2*a(n-1), a(1)=1.
  * @author Georg Fischer
  */
 public class A263451 extends GeneratingFunctionSequence {

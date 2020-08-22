@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200432 Number of <code>-n..n</code> arrays <code>x(0..4)</code> of 5 elements with zero sum and no two or three adjacent elements summing to zero.
+ * A200432 Number of -n..n arrays x(0..4) of 5 elements with zero sum and no two or three adjacent elements summing to zero.
  * @author Georg Fischer
  */
 public class A200432 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A279365 Expansion of <code>phi(-x)^2 / chi(-x^5)</code> in powers of x where <code>psi(), chi()</code> are Ramanujan theta functions.
+ * A279365 Expansion of phi(-x)^2 / chi(-x^5) in powers of x where psi(), chi() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A279365 extends EulerTransform {

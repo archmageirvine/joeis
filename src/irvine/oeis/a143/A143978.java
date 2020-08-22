@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143978 <code>a(n) = floor(2*n*(n+1)/3)</code>.
+ * A143978 a(n) = floor(2*n*(n+1)/3).
  * @author Georg Fischer
  */
 public class A143978 extends GeneratingFunctionSequence {

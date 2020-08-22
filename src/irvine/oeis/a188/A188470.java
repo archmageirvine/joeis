@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A188470 <code>a(n) = [5r]-[nr]-[5r-nr]</code>, where <code>r=(1+sqrt(5))/2</code> and <code>[]=floor</code>.
+ * A188470 a(n) = [5r]-[nr]-[5r-nr], where r=(1+sqrt(5))/2 and []=floor.
  * @author Georg Fischer
  */
 public class A188470 implements Sequence {

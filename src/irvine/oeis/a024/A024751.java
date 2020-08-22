@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024751 Binomial coefficients: <code>C(n,k), 7 &lt;= k &lt;= n-7</code>, sorted.
+ * A024751 Binomial coefficients: C(n,k), 7 &lt;= k &lt;= n-7, sorted.
  * @author Sean A. Irvine
  */
 public class A024751 implements Sequence {

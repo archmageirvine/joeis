@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304618 <code>a(n) = 108*n^2 - 228*n + 114 (n&gt;=2)</code>.
+ * A304618 a(n) = 108*n^2 - 228*n + 114 (n&gt;=2).
  * @author Georg Fischer
  */
 public class A304618 extends GeneratingFunctionSequence {

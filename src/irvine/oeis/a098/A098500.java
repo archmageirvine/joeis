@@ -4,7 +4,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098500 Number of squares on infinite quarter chessboard at <code>&lt;=n</code> knight moves from the corner.
+ * A098500 Number of squares on infinite quarter chessboard at &lt;=n knight moves from the corner.
  * @author Georg Fischer
  */
 public class A098500 extends GeneratingFunctionSequence {

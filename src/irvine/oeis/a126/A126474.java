@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A126474 Number of arrays in <code>[1..6]^n</code> with adjacent elements differing by three or less.
+ * A126474 Number of arrays in [1..6]^n with adjacent elements differing by three or less.
  * @author Georg Fischer
  */
 public class A126474 extends GeneratingFunctionSequence {

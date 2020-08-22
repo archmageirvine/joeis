@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A296367 Number of triangles on a <code>4 X n</code> grid.
+ * A296367 Number of triangles on a 4 X n grid.
  * @author Georg Fischer
  */
 public class A296367 extends GeneratingFunctionSequence {

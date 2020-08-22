@@ -5,7 +5,7 @@ package irvine.oeis.a239;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A239678 Least numbers k such that <code>k*2^n+1</code> is a square.
+ * A239678 Least numbers k such that k*2^n+1 is a square.
  * @author Georg Fischer
  */
 public class A239678 extends HolonomicRecurrence {

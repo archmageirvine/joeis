@@ -8,7 +8,7 @@ import irvine.math.factorial.MemoryFactorial;
 import irvine.oeis.Sequence;
 
 /**
- * A000270 For <code>n &gt;= 2, a(n) = b(n+1)+b(n)+b(n-1)</code>, where the <code>b(i)</code> are the m\u00e9nage numbers <code>A000179; a(0)=a(1)=1</code>.
+ * A000270 For n &gt;= 2, a(n) = b(n+1)+b(n)+b(n-1), where the b(i) are the m\u00e9nage numbers A000179; a(0)=a(1)=1.
  * @author Sean A. Irvine
  */
 public class A000270 implements Sequence {

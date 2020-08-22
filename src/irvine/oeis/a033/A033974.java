@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033974 Trajectory of 1 under map <code>n-&gt;37n+1</code> if n odd, <code>n-&gt;n/2</code> if n even.
+ * A033974 Trajectory of 1 under map n-&gt;37n+1 if n odd, n-&gt;n/2 if n even.
  * @author Sean A. Irvine
  */
 public class A033974 implements Sequence {

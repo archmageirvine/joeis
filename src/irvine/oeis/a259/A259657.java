@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A259657 Expansion of <code>phi(-x^3) * f(-x^4)^3 / f(-x^12)</code> in powers of x where <code>phi(), f()</code> are Ramanujan theta functions.
+ * A259657 Expansion of phi(-x^3) * f(-x^4)^3 / f(-x^12) in powers of x where phi(), f() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A259657 extends EulerTransform {

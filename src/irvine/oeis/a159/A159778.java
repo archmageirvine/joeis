@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A159778 Decimal expansion of <code>(171+26*sqrt(2))/167</code>.
+ * A159778 Decimal expansion of (171+26*sqrt(2))/167.
  * @author Georg Fischer
  */
 public class A159778 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055806 <code>a(n) = T(n,n-6)</code>, array T as in <code>A055801</code>.
+ * A055806 a(n) = T(n,n-6), array T as in A055801.
  * @author Georg Fischer
  */
 public class A055806 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164356 Expansion of <code>(1 - x^2)^4 / ((1 - x)^4 * (1 - x^4))</code> in powers of <code>x</code>.
+ * A164356 Expansion of (1 - x^2)^4 / ((1 - x)^4 * (1 - x^4)) in powers of x.
  * @author Georg Fischer
  */
 public class A164356 extends GeneratingFunctionSequence {

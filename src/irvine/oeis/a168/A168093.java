@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168093 <code>a(n) =</code> number of natural numbers m such that <code>n - 3 &lt;= m &lt;= n + 3</code>.
+ * A168093 a(n) = number of natural numbers m such that n - 3 &lt;= m &lt;= n + 3.
  * @author Georg Fischer
  */
 public class A168093 extends GeneratingFunctionSequence {

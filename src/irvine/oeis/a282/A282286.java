@@ -4,7 +4,7 @@ package irvine.oeis.a282;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A282286 Least common multiple of <code>7*n+1</code> and <code>7*n-1</code>.
+ * A282286 Least common multiple of 7*n+1 and 7*n-1.
  * @author Georg Fischer
  */
 public class A282286 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067358 Imaginary part of <code>(5+12i)^n</code>.
+ * A067358 Imaginary part of (5+12i)^n.
  * @author Georg Fischer
  */
 public class A067358 extends GeneratingFunctionSequence {

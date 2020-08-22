@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017707 Numerator of sum of -22nd powers of divisors of <code>n</code>.
+ * A017707 Numerator of sum of -22nd powers of divisors of n.
  * @author Sean A. Irvine
  */
 public class A017707 implements Sequence {

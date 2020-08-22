@@ -3,7 +3,7 @@ package irvine.oeis.a042;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A042965 Nonnegative integers not congruent to <code>2 mod 4</code>.
+ * A042965 Nonnegative integers not congruent to 2 mod 4.
  * @author Sean A. Irvine
  */
 public class A042965 extends LinearRecurrence {

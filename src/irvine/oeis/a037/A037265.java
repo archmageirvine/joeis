@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A037265 Integers arising from <code>A037264</code>.
+ * A037265 Integers arising from A037264.
  * @author Georg Fischer
  */
 public class A037265 extends PaddingSequence {

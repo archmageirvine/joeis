@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030229 Product of an even number of distinct primes (including <code>1)</code>.
+ * A030229 Product of an even number of distinct primes (including 1).
  * @author Sean A. Irvine
  */
 public class A030229 implements Sequence {

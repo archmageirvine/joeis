@@ -5,7 +5,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127359 <code>a(n) = Sum_{k=0..n} binomial(n, floor(k/2))*3^(n-k)</code>.
+ * A127359 a(n) = Sum_{k=0..n} binomial(n, floor(k/2))*3^(n-k).
  * @author Georg Fischer
  */
 public class A127359 extends HolonomicRecurrence {

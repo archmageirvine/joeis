@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108444 Number of triple descents <code>(i.e., ddd's)</code> in all paths from <code>(0,0)</code> to <code>(3n,0)</code> that stay in the first quadrant (but may touch the horizontal axis), consisting of steps <code>u=(2,1),U=(1,2)</code>, or <code>d=(1,-1)</code>.
+ * A108444 Number of triple descents (i.e., ddd's) in all paths from (0,0) to (3n,0) that stay in the first quadrant (but may touch the horizontal axis), consisting of steps u=(2,1),U=(1,2), or d=(1,-1).
  * @author Georg Fischer
  */
 public class A108444 extends HolonomicRecurrence {

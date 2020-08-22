@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.PeriodicSequence;
 
 /**
- * A007879 Chimes made by clock striking the hour and <code>half-hour</code>.
+ * A007879 Chimes made by clock striking the hour and half-hour.
  * @author Sean A. Irvine
  */
 public class A007879 extends PeriodicSequence {

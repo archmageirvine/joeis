@@ -5,7 +5,7 @@ package irvine.oeis.a027;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A027992 <code>a(n) = 1*T(n,0) + 2*T(n,1) + ... + (2n+1)*T(n,2n)</code>, T given by <code>A027926</code>.
+ * A027992 a(n) = 1*T(n,0) + 2*T(n,1) + ... + (2n+1)*T(n,2n), T given by A027926.
  * @author Georg Fischer
  */
 public class A027992 extends HolonomicRecurrence {

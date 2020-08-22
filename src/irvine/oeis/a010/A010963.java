@@ -1,7 +1,7 @@
 package irvine.oeis.a010;
 
 /**
- * A010963 Binomial coefficient <code>C(47,n)</code>.
+ * A010963 Binomial coefficient C(47,n).
  * @author Sean A. Irvine
  */
 public class A010963 extends A010926 {

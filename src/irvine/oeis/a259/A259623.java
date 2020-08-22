@@ -6,7 +6,7 @@ package irvine.oeis.a259;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A259623 Strictly increasing list of F and F <code>+ 1</code>, where F <code>= A000045</code>, the Fibonacci numbers.
+ * A259623 Strictly increasing list of F and F + 1, where F = A000045, the Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A259623 extends GeneratingFunctionSequence {

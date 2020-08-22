@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A053694 Number of <code>self-conjugate 5-core</code> partitions of <code>n</code>.
+ * A053694 Number of self-conjugate 5-core partitions of n.
  * @author Georg Fischer
  */
 public class A053694 extends EulerTransform {

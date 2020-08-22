@@ -7,7 +7,7 @@ package irvine.oeis.a104;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A104562 Inverse of the Motzkin triangle <code>A064189</code>.
+ * A104562 Inverse of the Motzkin triangle A064189.
  * @author Georg Fischer
  */
 public class A104562 extends GeneratingFunctionTriangle {

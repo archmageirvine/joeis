@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217330 The number of integer solutions to the equation <code>x1 + x2 + x3 + x4 =</code> n, with xi <code>&gt;= 0</code>, and with <code>x2 + x3</code> divisible by 3.
+ * A217330 The number of integer solutions to the equation x1 + x2 + x3 + x4 = n, with xi &gt;= 0, and with x2 + x3 divisible by 3.
  * @author Georg Fischer
  */
 public class A217330 extends GeneratingFunctionSequence {

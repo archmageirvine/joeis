@@ -3,7 +3,7 @@ package irvine.oeis.a167;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A167600 <code>7 X 7</code> square read by rows, from a silver gelatin print <code>("Diagram")</code> by the American conceptual artist Mel Bochner.
+ * A167600 7 X 7 square read by rows, from a silver gelatin print ("Diagram") by the American conceptual artist Mel Bochner.
  * @author Georg Fischer
  */
 public class A167600 extends FiniteSequence {

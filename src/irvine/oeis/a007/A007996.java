@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007996 Primes that divide at least one term of the sequence f given by <code>f(1) = 2, f(n+1) = f(n)^2-f(n)+1 = A000058(n)</code>.
+ * A007996 Primes that divide at least one term of the sequence f given by f(1) = 2, f(n+1) = f(n)^2-f(n)+1 = A000058(n).
  * @author Sean A. Irvine
  */
 public class A007996 implements Sequence {

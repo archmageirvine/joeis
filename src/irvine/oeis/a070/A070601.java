@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A070601 <code>n^5 mod 17</code>.
+ * A070601 n^5 mod 17.
  * @author Georg Fischer
  */
 public class A070601 implements Sequence {

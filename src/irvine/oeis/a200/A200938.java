@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200938 Values d for infinite sequence <code>x^3-y^2 =</code> d with increasing coefficient <code>r=sqrt(x)/|d|</code> or family of solutions Mordell curve with extension <code>sqrt(2)</code>.
+ * A200938 Values d for infinite sequence x^3-y^2 = d with increasing coefficient r=sqrt(x)/|d| or family of solutions Mordell curve with extension sqrt(2).
  * @author Georg Fischer
  */
 public class A200938 extends GeneratingFunctionSequence {

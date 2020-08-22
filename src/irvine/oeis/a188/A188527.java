@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A188527 <code>a(n) = A188526(n) / 7</code>.
+ * A188527 a(n) = A188526(n) / 7.
  * @author Georg Fischer
  */
 public class A188527 implements Sequence {

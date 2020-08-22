@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034126 Decimal part of cube root of <code>a(n)</code> starts with <code>0</code>: first term of runs (cubes excluded).
+ * A034126 Decimal part of cube root of a(n) starts with 0: first term of runs (cubes excluded).
  * @author Sean A. Irvine
  */
 public class A034126 extends A034116 {

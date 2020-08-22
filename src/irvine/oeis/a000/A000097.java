@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
- * A000097 Number of partitions of n if there are two kinds of <code>1</code>'s and two kinds of <code>2</code>'s.
+ * A000097 Number of partitions of n if there are two kinds of 1's and two kinds of 2's.
  * @author Sean A. Irvine
  */
 public class A000097 implements Sequence {

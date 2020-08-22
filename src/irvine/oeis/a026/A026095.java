@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a024.A024998;
 
 /**
- * A026095 <code>a(n) = Sum{T(k,k-1)}, k = 1,2,...,n</code>, where T is the array defined in <code>A026082</code>.
+ * A026095 a(n) = Sum{T(k,k-1)}, k = 1,2,...,n, where T is the array defined in A026082.
  * @author Sean A. Irvine
  */
 public class A026095 extends A024998 {

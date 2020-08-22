@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A251271 Number of <code>(4+1) X (n+1) 0..1</code> arrays with no <code>2 X 2</code> subblock having <code>x11-x00</code> less than <code>x10-x01</code>.
+ * A251271 Number of (4+1) X (n+1) 0..1 arrays with no 2 X 2 subblock having x11-x00 less than x10-x01.
  * @author Georg Fischer
  */
 public class A251271 extends GeneratingFunctionSequence {

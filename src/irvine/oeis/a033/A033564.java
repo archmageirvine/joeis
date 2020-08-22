@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033564 <code>a(n+1) = a(n)</code> followed by <code>a(n)+1</code>.
+ * A033564 a(n+1) = a(n) followed by a(n)+1.
  * @author Sean A. Irvine
  */
 public class A033564 implements Sequence {

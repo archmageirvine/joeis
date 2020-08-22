@@ -3,7 +3,7 @@ package irvine.oeis.a242;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A242496 <code>a(n)=sum_{j=0..n} sum_{i=0..j} F(i)*L(j)</code>, where <code>F(n)=A000045(n)</code> and <code>L(n)=A000032(n)</code>.
+ * A242496 a(n)=sum_{j=0..n} sum_{i=0..j} F(i)*L(j), where F(n)=A000045(n) and L(n)=A000032(n).
  * @author Sean A. Irvine
  */
 public class A242496 extends LinearRecurrence {

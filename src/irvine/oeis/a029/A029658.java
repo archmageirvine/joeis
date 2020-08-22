@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029658 Even numbers in the <code>(2,1)-Pascal</code> triangle <code>A029653</code>.
+ * A029658 Even numbers in the (2,1)-Pascal triangle A029653.
  * @author Sean A. Irvine
  */
 public class A029658 extends A029653 {

@@ -4,7 +4,7 @@ package irvine.oeis.a235;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A235510 Number of <code>(n+1) X (1+1) 0..1</code> arrays with the sum of each <code>2 X 2</code> subblock maximum and minimum lexicographically nondecreasing rowwise and columnwise.
+ * A235510 Number of (n+1) X (1+1) 0..1 arrays with the sum of each 2 X 2 subblock maximum and minimum lexicographically nondecreasing rowwise and columnwise.
  * @author Georg Fischer
  */
 public class A235510 extends GeneratingFunctionSequence {

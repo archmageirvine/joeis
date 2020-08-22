@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109081 Reversion of <code>x*(1-x)*(1-x^2)*(1-x^3)/(1-x^6)</code>.
+ * A109081 Reversion of x*(1-x)*(1-x^2)*(1-x^3)/(1-x^6).
  * @author Georg Fischer
  */
 public class A109081 extends HolonomicRecurrence {

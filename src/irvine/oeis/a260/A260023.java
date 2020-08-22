@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A260023 <code>a(1)=77;</code> thereafter form the product of the digits of the previous term.
+ * A260023 a(1)=77; thereafter form the product of the digits of the previous term.
  * @author Georg Fischer
  */
 public class A260023 extends PaddingSequence {

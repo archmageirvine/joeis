@@ -5,7 +5,7 @@ package irvine.oeis.a302;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A302095 <code>a(n)</code> is the smallest positive integer not yet in the increasing sequence that is obtained when the largest digit from <code>a(n-1)</code> is deleted and the remaining digits are permuted such that no digit in <code>a(n)</code> has the same position it had in <code>a(n-1)</code> (counting from left to right). No repeated digits allowed; <code>a(1)=10</code>.
+ * A302095 a(n) is the smallest positive integer not yet in the increasing sequence that is obtained when the largest digit from a(n-1) is deleted and the remaining digits are permuted such that no digit in a(n) has the same position it had in a(n-1) (counting from left to right). No repeated digits allowed; a(1)=10.
  * @author Georg Fischer
  */
 public class A302095 extends FiniteSequence {

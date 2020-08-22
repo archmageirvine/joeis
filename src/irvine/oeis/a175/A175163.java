@@ -6,7 +6,7 @@ package irvine.oeis.a175;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A175163 <code>a(n) = 32*(2^n + 1)</code>.
+ * A175163 a(n) = 32*(2^n + 1).
  * @author Georg Fischer
  */
 public class A175163 extends HolonomicRecurrence {

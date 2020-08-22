@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024557 <code>a(n) = [ a(n-1)/(sqrt(6) - 2) ]</code>, where <code>a(0) = 1</code>.
+ * A024557 a(n) = [ a(n-1)/(sqrt(6) - 2) ], where a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024557 implements Sequence {

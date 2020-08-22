@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A081227 <code>a(n)</code> is the number of digits in common between n and the n-th prime in base 10.
+ * A081227 a(n) is the number of digits in common between n and the n-th prime in base 10.
  * @author Georg Fischer
  */
 public class A081227 extends A000040 {

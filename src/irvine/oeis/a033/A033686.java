@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A033686 One-ninth of theta series of <code>A2[hole]^2</code>.
+ * A033686 One-ninth of theta series of A2[hole]^2.
  * @author Georg Fischer
  */
 public class A033686 extends EulerTransform {

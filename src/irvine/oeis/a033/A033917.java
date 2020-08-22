@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033917 Coefficients of iterated exponential function defined by <code>y(x) = x^y(x)</code> for <code>e^-e &lt; x &lt; e^(1/e)</code>, expanded about <code>x=1</code>.
+ * A033917 Coefficients of iterated exponential function defined by y(x) = x^y(x) for e^-e &lt; x &lt; e^(1/e), expanded about x=1.
  * @author Sean A. Irvine
  */
 public class A033917 implements Sequence {

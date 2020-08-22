@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062107 Diagonal of table <code>A062104</code>.
+ * A062107 Diagonal of table A062104.
  * @author Georg Fischer
  */
 public class A062107 extends GeneratingFunctionSequence {

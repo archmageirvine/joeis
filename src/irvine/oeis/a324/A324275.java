@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324275 Numbers k for which <code>A324274(k)</code> is 0, i.e., starting squares in <code>A324274</code> that yield a path of infinite length.
+ * A324275 Numbers k for which A324274(k) is 0, i.e., starting squares in A324274 that yield a path of infinite length.
  * @author Georg Fischer
  */
 public class A324275 extends HolonomicRecurrence {

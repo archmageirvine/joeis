@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032736 <code>a(n)</code> cannot be prefixed or followed by any digit to form a prime <code>('empty'</code> prefixes allowed).
+ * A032736 a(n) cannot be prefixed or followed by any digit to form a prime ('empty' prefixes allowed).
  * @author Sean A. Irvine
  */
 public class A032736 extends A032734 {

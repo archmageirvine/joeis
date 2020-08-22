@@ -6,7 +6,7 @@ package irvine.oeis.a116;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A116914 Number of UUDD's, where <code>U=(1,1)</code> and <code>D=(1,-1)</code>, in all hill-free Dyck paths of semilength <code>n (a</code> hill in a Dyck path is a peak at level <code>1)</code>.
+ * A116914 Number of UUDD's, where U=(1,1) and D=(1,-1), in all hill-free Dyck paths of semilength n (a hill in a Dyck path is a peak at level 1).
  * @author Georg Fischer
  */
 public class A116914 extends HolonomicRecurrence {

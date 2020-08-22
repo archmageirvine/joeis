@@ -5,7 +5,7 @@ package irvine.oeis.a283;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A283028 Number of inequivalent <code>4 X 4</code> matrices with entries in <code>{1,2,3,...,n}</code> up to vertical and horizontal reflections.
+ * A283028 Number of inequivalent 4 X 4 matrices with entries in {1,2,3,...,n} up to vertical and horizontal reflections.
  * @author Georg Fischer
  */
 public class A283028 extends HolonomicRecurrence {

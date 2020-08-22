@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080951 Sequence associated with recurrence <code>a(n) = 2*a(n-1) + k*(k+2)*a(n-2)</code>.
+ * A080951 Sequence associated with recurrence a(n) = 2*a(n-1) + k*(k+2)*a(n-2).
  * @author Georg Fischer
  */
 public class A080951 extends GeneratingFunctionSequence {

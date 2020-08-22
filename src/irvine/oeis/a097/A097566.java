@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097566 Number of partitions p of n for which <code>Odd(p) = Odd(p') (mod 4)</code>, where p' is the conjugate of p.
+ * A097566 Number of partitions p of n for which Odd(p) = Odd(p') (mod 4), where p' is the conjugate of p.
  * @author Georg Fischer
  */
 public class A097566 extends EulerTransform {

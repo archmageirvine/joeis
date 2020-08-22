@@ -3,7 +3,7 @@ package irvine.oeis.a125;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A125513 <code>a(n)</code> is the number of binary strings of length n such that no subsequence of length 5 or less contains 4 or more ones.
+ * A125513 a(n) is the number of binary strings of length n such that no subsequence of length 5 or less contains 4 or more ones.
  * @author Sean A. Irvine
  */
 public class A125513 extends LinearRecurrence {

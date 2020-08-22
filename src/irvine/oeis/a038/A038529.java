@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a002.A002808;
 
 /**
- * A038529 n-th prime <code>- n-th</code> composite.
+ * A038529 n-th prime - n-th composite.
  * @author Georg Fischer
  */
 public class A038529 extends A000040 {

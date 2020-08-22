@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000025;
 
 /**
- * A121062 Partition numbers <code>mod 4</code>.
+ * A121062 Partition numbers mod 4.
  * @author Georg Fischer
  */
 public class A121062 extends A000025 {

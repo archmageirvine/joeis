@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031909 <code>a(n) = prime(9*n - 5)</code>.
+ * A031909 a(n) = prime(9*n - 5).
  * @author Sean A. Irvine
  */
 public class A031909 extends A000040 {

@@ -5,7 +5,7 @@ package irvine.oeis.a329;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A329499 Coordination sequence for 1-skeleton of the 4-D polytope known as the <code>24-cell</code> (or <code>{3,4,3})</code>.
+ * A329499 Coordination sequence for 1-skeleton of the 4-D polytope known as the 24-cell (or {3,4,3}).
  * @author Georg Fischer
  */
 public class A329499 extends FiniteSequence {

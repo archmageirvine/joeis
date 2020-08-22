@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A135655 Divisors of <code>33550336</code> (the 5th perfect number), written in base 2.
+ * A135655 Divisors of 33550336 (the 5th perfect number), written in base 2.
  * @author Georg Fischer
  */
 public class A135655 extends FiniteSequence {

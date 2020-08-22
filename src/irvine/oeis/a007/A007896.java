@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007896 <code>Psi_c(n)</code>, where <code>Product_{k&gt;1} 1/(1-1/k^s)^phi(k) = Sum_{k&gt;0} psi_c(k)/k^s</code>.
+ * A007896 Psi_c(n), where Product_{k&gt;1} 1/(1-1/k^s)^phi(k) = Sum_{k&gt;0} psi_c(k)/k^s.
  * @author Sean A. Irvine
  */
 public class A007896 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164933 Word structures of length n using a 10-ary alphabet, including a special character, which may occur in the leftmost word position only if <code>n=1</code>.
+ * A164933 Word structures of length n using a 10-ary alphabet, including a special character, which may occur in the leftmost word position only if n=1.
  * @author Georg Fischer
  */
 public class A164933 extends GeneratingFunctionSequence {

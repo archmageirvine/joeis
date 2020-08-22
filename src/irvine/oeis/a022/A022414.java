@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022414 <code>Kim-sums</code>: "Kimberling sums" <code>K_n + K_3</code>.
+ * A022414 Kim-sums: "Kimberling sums" K_n + K_3.
  * @author Sean A. Irvine
  */
 public class A022414 extends MemoryFunction2<Integer, Z> implements Sequence {

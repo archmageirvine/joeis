@@ -6,7 +6,7 @@ package irvine.oeis.a229;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A229068 Number of standard Young tableaux of n cells and height <code>&lt;= 12</code>.
+ * A229068 Number of standard Young tableaux of n cells and height &lt;= 12.
  * @author Georg Fischer
  */
 public class A229068 extends HolonomicRecurrence {

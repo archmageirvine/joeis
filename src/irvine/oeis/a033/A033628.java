@@ -4,7 +4,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.a002.A002858;
 
 /**
- * A033628 Numbers that are in both the 1-additive and 0-additive sequences (A002858 and <code>A033627)</code>.
+ * A033628 Numbers that are in both the 1-additive and 0-additive sequences (A002858 and A033627).
  * @author Sean A. Irvine
  */
 public class A033628 extends IntersectionSequence {

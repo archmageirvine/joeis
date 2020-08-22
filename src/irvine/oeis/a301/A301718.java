@@ -5,7 +5,7 @@ package irvine.oeis.a301;
 import org.teherba.tile.TilingSequence;
 
 /**
- * A301718 Coordination sequence for node of type <code>V2</code> in "kre" 2-D tiling (or net).
+ * A301718 Coordination sequence for node of type V2 in "kre" 2-D tiling (or net).
  * @author Georg Fischer
  */
 public class A301718 extends TilingSequence {

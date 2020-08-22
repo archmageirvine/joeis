@@ -5,7 +5,7 @@ package irvine.oeis.a216;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A216156 Period of powers of <code>11 mod 10^n</code>.
+ * A216156 Period of powers of 11 mod 10^n.
  * @author Georg Fischer
  */
 public class A216156 extends HolonomicRecurrence {

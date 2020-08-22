@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A070457 <code>a(n) = n^2 mod 35</code>.
+ * A070457 a(n) = n^2 mod 35.
  * @author Georg Fischer
  */
 public class A070457 implements Sequence {

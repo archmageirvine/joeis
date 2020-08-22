@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305063 <code>a(n) = 110*2^n + 118</code>.
+ * A305063 a(n) = 110*2^n + 118.
  * @author Georg Fischer
  */
 public class A305063 extends GeneratingFunctionSequence {

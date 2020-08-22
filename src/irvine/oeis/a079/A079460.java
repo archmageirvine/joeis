@@ -4,7 +4,7 @@ package irvine.oeis.a079;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A079460 Let <code>r(n)</code> be the real positive root of <code>Sum_{k=1..n} x^k = 1</code>, then <code>a(n) = round(1/(r(n) - 1/2))</code>.
+ * A079460 Let r(n) be the real positive root of Sum_{k=1..n} x^k = 1, then a(n) = round(1/(r(n) - 1/2)).
  * @author Georg Fischer
  */
 public class A079460 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a025;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A025595 Number of n-move king paths on <code>8x8</code> board from given corner to any square.
+ * A025595 Number of n-move king paths on 8x8 board from given corner to any square.
  * @author Georg Fischer
  */
 public class A025595 extends GeneratingFunctionSequence {

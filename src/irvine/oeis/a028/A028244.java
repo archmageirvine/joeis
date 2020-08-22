@@ -4,7 +4,7 @@ package irvine.oeis.a028;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A028244 <code>a(n) = 4^(n-1) - 3*3^(n-1) + 3*2^(n-1) - 1</code> (essentially Stirling numbers of second kind).
+ * A028244 a(n) = 4^(n-1) - 3*3^(n-1) + 3*2^(n-1) - 1 (essentially Stirling numbers of second kind).
  * @author Georg Fischer
  */
 public class A028244 extends GeneratingFunctionSequence {

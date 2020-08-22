@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A092869 Series expansion of the <code>Ramanujan-Goellnitz-Gordon</code> continued fraction.
+ * A092869 Series expansion of the Ramanujan-Goellnitz-Gordon continued fraction.
  * @author Georg Fischer
  */
 public class A092869 extends EulerTransform {

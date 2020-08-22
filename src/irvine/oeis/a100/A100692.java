@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100692 Number of self-avoiding paths with n steps on a hexagonal lattice in the strip Z X <code>{-1,0,1}</code>.
+ * A100692 Number of self-avoiding paths with n steps on a hexagonal lattice in the strip Z X {-1,0,1}.
  * @author Georg Fischer
  */
 public class A100692 extends GeneratingFunctionSequence {

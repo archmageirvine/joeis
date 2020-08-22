@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A133153 Number of partitions of n into parts that are odd or <code>== +- 2 mod 10</code>.
+ * A133153 Number of partitions of n into parts that are odd or == +- 2 mod 10.
  * @author Georg Fischer
  */
 public class A133153 extends EulerTransform {

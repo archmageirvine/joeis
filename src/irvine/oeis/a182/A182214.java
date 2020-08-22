@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A182214 Bondage number of the Cartesian product graph G <code>= C_n X K_2</code>.
+ * A182214 Bondage number of the Cartesian product graph G = C_n X K_2.
  * @author Georg Fischer
  */
 public class A182214 extends PaddingSequence {

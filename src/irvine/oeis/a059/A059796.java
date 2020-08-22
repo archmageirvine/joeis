@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A059796 Degrees of irreducible representations of symmetric group <code>S_14</code>.
+ * A059796 Degrees of irreducible representations of symmetric group S_14.
  * @author Georg Fischer
  */
 public class A059796 extends FiniteSequence {

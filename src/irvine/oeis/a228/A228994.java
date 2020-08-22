@@ -6,7 +6,7 @@ package irvine.oeis.a228;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A228994 Total sum of the 4th powers of lengths of ascending runs in all permutations of <code>[n]</code>.
+ * A228994 Total sum of the 4th powers of lengths of ascending runs in all permutations of [n].
  * @author Georg Fischer
  */
 public class A228994 extends HolonomicRecurrence {

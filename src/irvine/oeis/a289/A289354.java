@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A289354 Number of 9-digit numbers whose sum of digits is <code>n</code>.
+ * A289354 Number of 9-digit numbers whose sum of digits is n.
  * @author Georg Fischer
  */
 public class A289354 extends FiniteSequence {

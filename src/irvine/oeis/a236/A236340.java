@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236340 Number of length n binary words such that maximal runs of <code>1</code>'s are restricted to length one or two and maximal runs of <code>0</code>'s are of odd length.
+ * A236340 Number of length n binary words such that maximal runs of 1's are restricted to length one or two and maximal runs of 0's are of odd length.
  * @author Georg Fischer
  */
 public class A236340 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000587 Rao Uppuluri-Carpenter numbers (or complementary Bell <code>numbers)</code>: e.g.f. <code>= exp(1 - exp(x))</code>.
+ * A000587 Rao Uppuluri-Carpenter numbers (or complementary Bell numbers): e.g.f. = exp(1 - exp(x)).
  * @author Sean A. Irvine
  */
 public class A000587 implements Sequence {

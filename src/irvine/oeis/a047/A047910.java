@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047910 Number of words on <code>{1,1,1,2,2,2,...,n,n,n}</code> with longest increasing subsequence of length <code>n</code>.
+ * A047910 Number of words on {1,1,1,2,2,2,...,n,n,n} with longest increasing subsequence of length n.
  * @author Georg Fischer
  */
 public class A047910 extends HolonomicRecurrence {

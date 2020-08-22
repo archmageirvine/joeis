@@ -4,7 +4,7 @@ package irvine.oeis.a160;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A160379 Number of ON cells at n-th stage of three-dimensional version of the cellular automaton <code>A160117</code> using cubes.
+ * A160379 Number of ON cells at n-th stage of three-dimensional version of the cellular automaton A160117 using cubes.
  * @author Georg Fischer
  */
 public class A160379 extends GeneratingFunctionSequence {

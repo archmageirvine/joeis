@@ -5,7 +5,7 @@ package irvine.oeis.a260;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A260214 <code>a(n)</code> is the first triangular number whose decimal representation uses n distinct digits.
+ * A260214 a(n) is the first triangular number whose decimal representation uses n distinct digits.
  * @author Georg Fischer
  */
 public class A260214 extends FiniteSequence {

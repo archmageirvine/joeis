@@ -4,7 +4,7 @@ package irvine.oeis.a213;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A213244 Number of nonzero elements in <code>GF(2^n)</code> that are 5th powers.
+ * A213244 Number of nonzero elements in GF(2^n) that are 5th powers.
  * @author Georg Fischer
  */
 public class A213244 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007415 Expand sin <code>x /</code> exp <code>x = x-x^2+x^3/3-x^5/30+..</code>. and invert nonzero coefficients.
+ * A007415 Expand sin x / exp x = x-x^2+x^3/3-x^5/30+... and invert nonzero coefficients.
  * @author Sean A. Irvine
  */
 public class A007415 implements Sequence {

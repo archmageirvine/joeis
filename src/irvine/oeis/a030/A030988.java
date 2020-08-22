@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030988 5-automorphic numbers: final digits of <code>5n^2</code> agree with <code>n</code>.
+ * A030988 5-automorphic numbers: final digits of 5n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030988 implements Sequence {

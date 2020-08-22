@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000203;
 import irvine.util.Pair;
 
 /**
- * A007609 Values taken by the sigma function <code>A000203</code>, listed with multiplicity and in ascending order.
+ * A007609 Values taken by the sigma function A000203, listed with multiplicity and in ascending order.
  * @author Sean A. Irvine
  */
 public class A007609 extends A000203 {

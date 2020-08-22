@@ -5,7 +5,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277220 Exponential convolution of Fibonacci <code>(A000045)</code> and Catalan <code>(A000108)</code> numbers.
+ * A277220 Exponential convolution of Fibonacci (A000045) and Catalan (A000108) numbers.
  * @author Georg Fischer
  */
 public class A277220 extends HolonomicRecurrence {

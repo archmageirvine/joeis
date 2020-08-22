@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a001.A001969;
 
 /**
- * A036585 Ternary Thue-Morse sequence: closed under <code>a-&gt;abc, b-&gt;ac, c-&gt;b</code>.
+ * A036585 Ternary Thue-Morse sequence: closed under a-&gt;abc, b-&gt;ac, c-&gt;b.
  * @author Georg Fischer
  */
 public class A036585 extends DifferenceSequence {

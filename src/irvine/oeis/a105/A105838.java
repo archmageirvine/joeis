@@ -3,7 +3,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105838 Nonnegative integers n such that <code>11*n^2 + 11*n + 1</code> is a square.
+ * A105838 Nonnegative integers n such that 11*n^2 + 11*n + 1 is a square.
  * @author Sean A. Irvine
  */
 public class A105838 extends LinearRecurrence {

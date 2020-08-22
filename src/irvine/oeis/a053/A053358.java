@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A053358 Numbers k such that <code>283*2^k + 1</code> is prime.
+ * A053358 Numbers k such that 283*2^k + 1 is prime.
  * @author Georg Fischer
  */
 public class A053358 extends PowerFactorPrimeSequence {

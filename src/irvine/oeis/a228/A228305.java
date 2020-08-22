@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228305 <code>a(1) = 3;</code> for <code>n &gt;= 1, a(2*n) = 2^(n+1), a(2*n+1) = 5*2^(n-1)</code>.
+ * A228305 a(1) = 3; for n &gt;= 1, a(2*n) = 2^(n+1), a(2*n+1) = 5*2^(n-1).
  * @author Georg Fischer
  */
 public class A228305 extends GeneratingFunctionSequence {

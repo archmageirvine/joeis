@@ -6,7 +6,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209876 <code>a(n) = 36*n - 6</code>.
+ * A209876 a(n) = 36*n - 6.
  * @author Georg Fischer
  */
 public class A209876 extends HolonomicRecurrence {

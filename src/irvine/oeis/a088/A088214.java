@@ -3,7 +3,7 @@ package irvine.oeis.a088;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A088214 Numbers less than the maximum possible determinant <code>A085000(3)=412</code> not occurring as determinant of a <code>3 X 3</code> matrix with elements 1..9.
+ * A088214 Numbers less than the maximum possible determinant A085000(3)=412 not occurring as determinant of a 3 X 3 matrix with elements 1..9.
  * @author Georg Fischer
  */
 public class A088214 extends FiniteSequence {

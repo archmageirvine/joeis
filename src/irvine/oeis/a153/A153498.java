@@ -5,7 +5,7 @@ package irvine.oeis.a153;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A153498 Palindromes formed from concatenation of <code>A147759(n)</code> and the same string <code>A147759(n)</code> but without its initial digit.
+ * A153498 Palindromes formed from concatenation of A147759(n) and the same string A147759(n) but without its initial digit.
  * @author Georg Fischer
  */
 public class A153498 extends HolonomicRecurrence {

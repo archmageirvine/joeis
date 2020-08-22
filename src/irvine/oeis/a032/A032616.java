@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032616 <code>a(n) = floor(n^2 /</code> Pi).
+ * A032616 a(n) = floor(n^2 / Pi).
  * @author Sean A. Irvine
  */
 public class A032616 implements Sequence {

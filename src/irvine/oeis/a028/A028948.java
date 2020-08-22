@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028948 An "extremely strange sequence": <code>a(n+1) = [ A*a(n)+B ]/p^r</code>, where <code>p^r</code> is the highest power of p dividing <code>[ A*a(n)+B ]</code> and <code>p=2, A=4.001, B=1.2</code>.
+ * A028948 An "extremely strange sequence": a(n+1) = [ A*a(n)+B ]/p^r, where p^r is the highest power of p dividing [ A*a(n)+B ] and p=2, A=4.001, B=1.2.
  * @author Sean A. Irvine
  */
 public class A028948 implements Sequence {

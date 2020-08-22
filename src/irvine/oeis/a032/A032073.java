@@ -4,7 +4,7 @@ import irvine.oeis.BhjTransformSequence;
 import irvine.oeis.a000.A000012;
 
 /**
- * A032073 "BHJ" <code>(reversible</code>, identity, labeled) transform of 1,1,1,1...
+ * A032073 "BHJ" (reversible, identity, labeled) transform of 1,1,1,1...
  * @author Sean A. Irvine
  */
 public class A032073 extends BhjTransformSequence {

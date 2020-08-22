@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004152 Sum of digits of <code>n!</code>.
+ * A004152 Sum of digits of n!.
  * @author Sean A. Irvine
  */
 public class A004152 implements Sequence {

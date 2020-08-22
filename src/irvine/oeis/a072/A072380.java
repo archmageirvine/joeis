@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A072380 Third differences of partition numbers <code>A000041</code>.
+ * A072380 Third differences of partition numbers A000041.
  * @author Georg Fischer
  */
 public class A072380 extends DifferenceSequence {

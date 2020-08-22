@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078678 Number of binary strings with <code>n 1</code>'s and <code>n 0</code>'s avoiding zigzags, that is avoiding the substrings 101 and 010.
+ * A078678 Number of binary strings with n 1's and n 0's avoiding zigzags, that is avoiding the substrings 101 and 010.
  * @author Georg Fischer
  */
 public class A078678 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a254;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A254375 Digital roots of centered heptagonal numbers <code>(A069099)</code>.
+ * A254375 Digital roots of centered heptagonal numbers (A069099).
  * @author Sean A. Irvine
  */
 public class A254375 extends LinearRecurrence {

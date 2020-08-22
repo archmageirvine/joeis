@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003188 Decimal equivalent of Gray code for <code>n</code>.
+ * A003188 Decimal equivalent of Gray code for n.
  * @author Sean A. Irvine
  */
 public class A003188 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224456 The Wiener index of the cyclic phenylene with n hexagons <code>(n&gt;=3)</code>.
+ * A224456 The Wiener index of the cyclic phenylene with n hexagons (n&gt;=3).
  * @author Georg Fischer
  */
 public class A224456 extends GeneratingFunctionSequence {

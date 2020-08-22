@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029821 Average theta series of odd unimodular lattices of dimension <code>20</code> (multiplied by <code>31)</code>.
+ * A029821 Average theta series of odd unimodular lattices of dimension 20 (multiplied by 31).
  * @author Sean A. Irvine
  */
 public class A029821 implements Sequence {

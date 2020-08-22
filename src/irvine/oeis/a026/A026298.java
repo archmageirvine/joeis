@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002212;
 import irvine.oeis.a039.A039919;
 
 /**
- * A026298 Number of polyhexes of class <code>PF2</code>.
+ * A026298 Number of polyhexes of class PF2.
  * @author Sean A. Irvine
  */
 public class A026298 extends A039919 {

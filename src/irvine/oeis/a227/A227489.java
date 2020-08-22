@@ -4,7 +4,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227489 The hyper-Wiener index of the nanostar dendrimer <code>NSC_5C_6[n]</code>, defined pictorially in the Ashrafi et al. and the Rostami et al. references.
+ * A227489 The hyper-Wiener index of the nanostar dendrimer NSC_5C_6[n], defined pictorially in the Ashrafi et al. and the Rostami et al. references.
  * @author Georg Fischer
  */
 public class A227489 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A179022 Decimal expansion of <code>3*sqrt(39)/4</code>.
+ * A179022 Decimal expansion of 3*sqrt(39)/4.
  * @author Georg Fischer
  */
 public class A179022 extends DecimalExpansionSequence {

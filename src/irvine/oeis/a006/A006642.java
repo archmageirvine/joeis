@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003636;
 
 /**
- * A006642 Class number of quadratic field with discriminant <code>-4n+1</code>.
+ * A006642 Class number of quadratic field with discriminant -4n+1.
  * @author Sean A. Irvine
  */
 public class A006642 implements Sequence {

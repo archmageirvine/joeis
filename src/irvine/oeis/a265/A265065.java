@@ -4,7 +4,7 @@ package irvine.oeis.a265;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A265065 Coordination sequence for <code>(2,5,6)</code> tiling of hyperbolic plane.
+ * A265065 Coordination sequence for (2,5,6) tiling of hyperbolic plane.
  * @author Georg Fischer
  */
 public class A265065 extends GeneratingFunctionSequence {

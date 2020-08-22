@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214341 Expansion of <code>1 / k(q) = 1 / (r(q) * r(q^2)^2)</code> in powers of q where <code>r()</code> is the Rogers-Ramanujan continued fraction.
+ * A214341 Expansion of 1 / k(q) = 1 / (r(q) * r(q^2)^2) in powers of q where r() is the Rogers-Ramanujan continued fraction.
  * @author Georg Fischer
  */
 public class A214341 extends EulerTransform {

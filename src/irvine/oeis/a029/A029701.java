@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029701 Number of lines on the intersection of two general hypersurfaces of degree n in complex projective <code>(n+2)-space</code>.
+ * A029701 Number of lines on the intersection of two general hypersurfaces of degree n in complex projective (n+2)-space.
  * @author Sean A. Irvine
  */
 public class A029701 implements Sequence {

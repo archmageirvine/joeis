@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177924 Decimal expansion of <code>(28+sqrt(2730))/56</code>.
+ * A177924 Decimal expansion of (28+sqrt(2730))/56.
  * @author Georg Fischer
  */
 public class A177924 extends DecimalExpansionSequence {

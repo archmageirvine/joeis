@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034093 Number of near-repunit primes can be formed from <code>(10^k-1)/9</code> by changing just one digit from 1 to 0.
+ * A034093 Number of near-repunit primes can be formed from (10^k-1)/9 by changing just one digit from 1 to 0.
  * @author Sean A. Irvine
  */
 public class A034093 implements Sequence {

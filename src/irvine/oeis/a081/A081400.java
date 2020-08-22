@@ -9,7 +9,7 @@ import irvine.oeis.a001.A001222;
 import irvine.oeis.a005.A005361;
 
 /**
- * A081400 <code>a(n) = d(n) - bigomega(n) - A005361(n)</code>.
+ * A081400 a(n) = d(n) - bigomega(n) - A005361(n).
  * @author Georg Fischer
  */
 public class A081400 implements Sequence {

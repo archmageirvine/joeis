@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199935 Size <code>(b^3_n)</code> of unit sphere in a certain graph (see Hazama article for precise definition).
+ * A199935 Size (b^3_n) of unit sphere in a certain graph (see Hazama article for precise definition).
  * @author Sean A. Irvine
  */
 public class A199935 extends LinearRecurrence {

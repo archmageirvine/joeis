@@ -4,7 +4,7 @@ package irvine.oeis.a175;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A175780 Partial sums of <code>floor(n^2/24)</code>.
+ * A175780 Partial sums of floor(n^2/24).
  * @author Georg Fischer
  */
 public class A175780 extends GeneratingFunctionSequence {

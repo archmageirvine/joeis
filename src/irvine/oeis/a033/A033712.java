@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A033712 <code>theta3(z) * theta3(2*z) * theta3(3*z) * theta3(6*z)</code>.
+ * A033712 theta3(z) * theta3(2*z) * theta3(3*z) * theta3(6*z).
  * @author Georg Fischer
  */
 public class A033712 extends EulerTransform {

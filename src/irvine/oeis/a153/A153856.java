@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A153856 Decimal expansion of <code>log_14 (8)</code>.
+ * A153856 Decimal expansion of log_14 (8).
  * @author Sean A. Irvine
  */
 public class A153856 extends DecimalExpansionSequence {

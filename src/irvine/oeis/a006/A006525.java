@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006525 Denominators of greedy Egyptian fraction for e <code>- 2</code>.
+ * A006525 Denominators of greedy Egyptian fraction for e - 2.
  * @author Sean A. Irvine
  */
 public class A006525 implements Sequence {

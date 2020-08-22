@@ -4,7 +4,7 @@ package irvine.oeis.a245;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A245306 <code>a(n) = Fibonacci(n)^2+1</code>.
+ * A245306 a(n) = Fibonacci(n)^2+1.
  * @author Georg Fischer
  */
 public class A245306 extends GeneratingFunctionSequence {

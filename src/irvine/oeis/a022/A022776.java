@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022776 Place where <code>n-th 1</code> occurs in <code>A023115</code>.
+ * A022776 Place where n-th 1 occurs in A023115.
  * @author Sean A. Irvine
  */
 public class A022776 implements Sequence {

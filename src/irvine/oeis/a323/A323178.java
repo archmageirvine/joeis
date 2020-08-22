@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323178 <code>a(n) = 1 + 100*n^2</code> for <code>n &gt;= 0</code>.
+ * A323178 a(n) = 1 + 100*n^2 for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A323178 extends GeneratingFunctionSequence {

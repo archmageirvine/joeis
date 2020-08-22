@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A008333 Sum of divisors of <code>p+1</code>, p prime.
+ * A008333 Sum of divisors of p+1, p prime.
  * @author Sean A. Irvine
  */
 public class A008333 extends A008864 {

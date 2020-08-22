@@ -4,7 +4,7 @@ package irvine.oeis.a057;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A057010 Number of conjugacy classes of subgroups of index 4 in free group of rank <code>n</code>.
+ * A057010 Number of conjugacy classes of subgroups of index 4 in free group of rank n.
  * @author Georg Fischer
  */
 public class A057010 extends GeneratingFunctionSequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028343 Expansion of <code>Product_{i&gt;=1} (1-x^i)^(1/i);</code> also of <code>exp(- Sum_{n&gt;=1}(d(n)*x^n/n))</code> where <code>d(n)</code> is the number of divisors of <code>n</code>.
+ * A028343 Expansion of Product_{i&gt;=1} (1-x^i)^(1/i); also of exp(- Sum_{n&gt;=1}(d(n)*x^n/n)) where d(n) is the number of divisors of n.
  * @author Sean A. Irvine
  */
 public class A028343 implements Sequence {

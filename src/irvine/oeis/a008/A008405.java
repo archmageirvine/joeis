@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003725;
 
 /**
- * A008405 n-th derivative of <code>x^(1/x)</code> at <code>x=1</code>.
+ * A008405 n-th derivative of x^(1/x) at x=1.
  * @author Sean A. Irvine
  */
 public class A008405 implements Sequence {

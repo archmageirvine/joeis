@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129525 Numbers n such that all the digits of <code>n^3</code> are distinct.
+ * A129525 Numbers n such that all the digits of n^3 are distinct.
  * @author Georg Fischer
  */
 public class A129525 extends FiniteSequence {

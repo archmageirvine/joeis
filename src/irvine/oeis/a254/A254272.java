@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A254272 Decimal expansion of atomic unit of magnetizability in J <code>T^-2</code>.
+ * A254272 Decimal expansion of atomic unit of magnetizability in J T^-2.
  * @author Georg Fischer
  */
 public class A254272 extends NoncomputableSequence {

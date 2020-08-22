@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A002121 <code>a(0) = 1, a(1) = 0, a(2) = -1;</code> for <code>n &gt;= 3, a(n) = - a(n-2) + Sum_{</code> primes p with <code>3 &lt;= p &lt;= n} a(n-p)</code>.
+ * A002121 a(0) = 1, a(1) = 0, a(2) = -1; for n &gt;= 3, a(n) = - a(n-2) + Sum_{ primes p with 3 &lt;= p &lt;= n} a(n-p).
  * @author Sean A. Irvine
  */
 public class A002121 extends MemorySequence {

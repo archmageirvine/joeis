@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000607;
 
 /**
- * A002096 Mixed partitions of <code>n</code>.
+ * A002096 Mixed partitions of n.
  * @author Sean A. Irvine
  */
 public class A002096 implements Sequence {

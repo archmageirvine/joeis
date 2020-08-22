@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A025052 Numbers not of form ab <code>+ bc +</code> ca for <code>1&lt;=a&lt;=b&lt;=c</code> (probably the list is complete).
+ * A025052 Numbers not of form ab + bc + ca for 1&lt;=a&lt;=b&lt;=c (probably the list is complete).
  * @author Sean A. Irvine
  */
 public class A025052 extends FiniteSequence {

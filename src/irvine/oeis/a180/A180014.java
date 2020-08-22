@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A180014 Decimal expansion of <code>Pi/(2*phi^2)</code>.
+ * A180014 Decimal expansion of Pi/(2*phi^2).
  * @author Georg Fischer
  */
 public class A180014 extends DecimalExpansionSequence {

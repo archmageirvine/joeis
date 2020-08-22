@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A077750 Least significant digit of <code>A077749(n)</code>.
+ * A077750 Least significant digit of A077749(n).
  * @author Georg Fischer
  */
 public class A077750 extends PaddingSequence {

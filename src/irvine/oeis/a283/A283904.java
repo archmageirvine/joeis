@@ -6,7 +6,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283904 Relative of Hofstadter <code>Q-sequence: a(1) = 1, a(2) = 1;</code> thereafter <code>a(n) = a(n-2a(n-1)) + a(n-3a(n-2))</code>.
+ * A283904 Relative of Hofstadter Q-sequence: a(1) = 1, a(2) = 1; thereafter a(n) = a(n-2a(n-1)) + a(n-3a(n-2)).
  * @author Georg Fischer
  */
 public class A283904 extends GeneratingFunctionSequence {

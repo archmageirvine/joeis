@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A122886 Interlaced merger of <code>A122883, A122884</code> and <code>A122885</code>.
+ * A122886 Interlaced merger of A122883, A122884 and A122885.
  * @author Georg Fischer
  */
 public class A122886 extends HolonomicRecurrence {

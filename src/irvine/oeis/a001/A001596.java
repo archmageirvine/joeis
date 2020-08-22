@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001596 <code>a(n) = 7^n + n^7</code>.
+ * A001596 a(n) = 7^n + n^7.
  * @author Sean A. Irvine
  */
 public class A001596 implements Sequence {

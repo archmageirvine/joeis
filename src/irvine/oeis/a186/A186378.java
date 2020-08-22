@@ -6,7 +6,7 @@ package irvine.oeis.a186;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A186378 <code>a(n)</code> equals the least sum of the squares of the coefficients in <code>((1 + x^k)^2 + x^p)^n</code> found at sufficiently large p for some fixed <code>k&gt;0</code>.
+ * A186378 a(n) equals the least sum of the squares of the coefficients in ((1 + x^k)^2 + x^p)^n found at sufficiently large p for some fixed k&gt;0.
  * @author Georg Fischer
  */
 public class A186378 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a267;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A267031 <code>a(n) = (32*n^3 - 2*n)/3</code>.
+ * A267031 a(n) = (32*n^3 - 2*n)/3.
  * @author Sean A. Irvine
  */
 public class A267031 extends LinearRecurrence {

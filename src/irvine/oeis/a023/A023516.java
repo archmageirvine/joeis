@@ -4,7 +4,7 @@ import irvine.factor.factor.Cheetah;
 import irvine.math.z.Z;
 
 /**
- * A023516 Number of distinct prime divisors of <code>prime(n)*prime(n-1) - 1</code>.
+ * A023516 Number of distinct prime divisors of prime(n)*prime(n-1) - 1.
  * @author Sean A. Irvine
  */
 public class A023516 extends A023515 {

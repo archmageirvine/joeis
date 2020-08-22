@@ -8,7 +8,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030287 <code>a(n)</code> is the smallest k <code>&gt; a(n-1)</code> such that <code>k^2</code> has no digit in common with <code>a(n-1)^2</code>.
+ * A030287 a(n) is the smallest k &gt; a(n-1) such that k^2 has no digit in common with a(n-1)^2.
  * @author Sean A. Irvine
  */
 public class A030287 implements Sequence {

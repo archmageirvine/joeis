@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208309 Number of <code>n X 3 0..1</code> arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward neighbors.
+ * A208309 Number of n X 3 0..1 arrays with new values 0..1 introduced in row major order and no element equal to more than one of its immediate leftward or upward neighbors.
  * @author Georg Fischer
  */
 public class A208309 extends GeneratingFunctionSequence {

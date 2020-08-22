@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294021 Number of elements added at n-th stage to the structure of the cellular automaton described in <code>A294020</code>.
+ * A294021 Number of elements added at n-th stage to the structure of the cellular automaton described in A294020.
  * @author Georg Fischer
  */
 public class A294021 extends GeneratingFunctionSequence {

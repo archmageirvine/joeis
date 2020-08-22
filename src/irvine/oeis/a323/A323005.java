@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A323005 Numbers k such that <code>361*2^k+1</code> is prime.
+ * A323005 Numbers k such that 361*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A323005 extends PowerFactorPrimeSequence {

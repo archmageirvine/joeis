@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007708 <code>Prime(n)*...*a(n)</code> is the least product of consecutive primes which is abundant.
+ * A007708 Prime(n)*...*a(n) is the least product of consecutive primes which is abundant.
  * @author Sean A. Irvine
  */
 public class A007708 implements Sequence {

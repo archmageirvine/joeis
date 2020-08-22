@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023999 Absolute value of determinant of <code>n X n</code> matrix whose entries are the integers from 1 to <code>n^2</code> spiraling inward, starting in a corner.
+ * A023999 Absolute value of determinant of n X n matrix whose entries are the integers from 1 to n^2 spiraling inward, starting in a corner.
  * @author Sean A. Irvine
  */
 public class A023999 implements Sequence {

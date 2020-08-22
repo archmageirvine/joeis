@@ -3,7 +3,7 @@ package irvine.oeis.a198;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A198412 <code>a(n) = (3^(6*n) - 2^(6*n))/35</code>.
+ * A198412 a(n) = (3^(6*n) - 2^(6*n))/35.
  * @author Sean A. Irvine
  */
 public class A198412 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001903 Final digit of <code>7^n</code>.
+ * A001903 Final digit of 7^n.
  * @author Sean A. Irvine
  */
 public class A001903 implements Sequence {

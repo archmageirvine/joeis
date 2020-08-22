@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A318951 Array read by rows: <code>T(n,k)</code> is the number of nonisomorphic <code>n X n</code> matrices with nonnegative integer entries and row sums k under row and column permutations, <code>(n &gt;= 1, k &gt;= 0)</code>.
+ * A318951 Array read by rows: T(n,k) is the number of nonisomorphic n X n matrices with nonnegative integer entries and row sums k under row and column permutations, (n &gt;= 1, k &gt;= 0).
  * @author Sean A. Irvine
  */
 public class A318951 implements Sequence {

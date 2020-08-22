@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030146 <code>Squares-of-primes</code> in which no two adjacent digits have the same parity.
+ * A030146 Squares-of-primes in which no two adjacent digits have the same parity.
  * @author Sean A. Irvine
  */
 public class A030146 extends A000040 {

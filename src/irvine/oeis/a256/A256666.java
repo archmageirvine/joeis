@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256666 <code>a(n) = ( 2*n*(2*n^2 + 11*n + 26) - (-1)^n + 1 )/16</code>.
+ * A256666 a(n) = ( 2*n*(2*n^2 + 11*n + 26) - (-1)^n + 1 )/16.
  * @author Sean A. Irvine
  */
 public class A256666 extends LinearRecurrence {

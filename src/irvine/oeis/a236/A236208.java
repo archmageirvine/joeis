@@ -4,7 +4,7 @@ package irvine.oeis.a236;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A236208 Numbers not divisible by <code>2, 5</code> or 11.
+ * A236208 Numbers not divisible by 2, 5 or 11.
  * @author Georg Fischer
  */
 public class A236208 extends GeneratingFunctionSequence {

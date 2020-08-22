@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A067736 Decimal expansion of <code>exp(3/2)</code>.
+ * A067736 Decimal expansion of exp(3/2).
  * @author Georg Fischer
  */
 public class A067736 extends DecimalExpansionSequence {

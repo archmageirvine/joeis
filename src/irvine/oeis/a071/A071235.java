@@ -5,7 +5,7 @@ package irvine.oeis.a071;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A071235 <code>a(n) = (n^12 + n^6)/2</code>.
+ * A071235 a(n) = (n^12 + n^6)/2.
  * @author Georg Fischer
  */
 public class A071235 extends HolonomicRecurrence {

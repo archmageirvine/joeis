@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219020 Sum of the cubes of the first <code>n even-indexed</code> Fibonacci numbers divided by the sum of the first n terms.
+ * A219020 Sum of the cubes of the first n even-indexed Fibonacci numbers divided by the sum of the first n terms.
  * @author Georg Fischer
  */
 public class A219020 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A036033 Number of partitions of n into parts not of form <code>4k+2, 24k, 24k+9</code> or <code>24k-9</code>. Also number of partitions in which no odd part is repeated, with at most 4 parts of size less than or equal to 2 and where differences between parts at distance 5 are greater than 1 when the smallest part is odd and greater than 2 when the smallest part is even.
+ * A036033 Number of partitions of n into parts not of form 4k+2, 24k, 24k+9 or 24k-9. Also number of partitions in which no odd part is repeated, with at most 4 parts of size less than or equal to 2 and where differences between parts at distance 5 are greater than 1 when the smallest part is odd and greater than 2 when the smallest part is even.
  * @author Georg Fischer
  */
 public class A036033 extends EulerTransform {

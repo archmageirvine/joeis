@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097242 Expansion of <code>q-series 1 / (q^2, q^3, q^9, q^10; q^12)_infinity</code>.
+ * A097242 Expansion of q-series 1 / (q^2, q^3, q^9, q^10; q^12)_infinity.
  * @author Georg Fischer
  */
 public class A097242 extends EulerTransform {

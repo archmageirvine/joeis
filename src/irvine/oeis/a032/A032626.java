@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PrimeSubsequence;
 
 /**
- * A032626 Primes that are concatenations of n with <code>n + 3</code>.
+ * A032626 Primes that are concatenations of n with n + 3.
  * @author Sean A. Irvine
  */
 public class A032626 extends PrimeSubsequence {

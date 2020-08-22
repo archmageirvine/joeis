@@ -4,7 +4,7 @@ package irvine.oeis.a293;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A293239 Number of terms in the fully expanded n-th derivative of <code>x^x</code>.
+ * A293239 Number of terms in the fully expanded n-th derivative of x^x.
  * @author Georg Fischer
  */
 public class A293239 extends GeneratingFunctionSequence {

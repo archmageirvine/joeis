@@ -5,7 +5,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a000.A000142;
 
 /**
- * A078781 Numbers n such that <code>n!-1</code> is a semiprime.
+ * A078781 Numbers n such that n!-1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A078781 extends SemiprimeSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036564 <code>a(n) = 2^n - 45</code> with <code>n&gt;5, a(5)=1</code>.
+ * A036564 a(n) = 2^n - 45 with n&gt;5, a(5)=1.
  * @author Georg Fischer
  */
 public class A036564 extends GeneratingFunctionSequence {

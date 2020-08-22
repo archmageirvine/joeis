@@ -6,7 +6,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254458 Number of tilings of a <code>6 X n</code> rectangle using polyominoes of shape I.
+ * A254458 Number of tilings of a 6 X n rectangle using polyominoes of shape I.
  * @author Georg Fischer
  */
 public class A254458 extends GeneratingFunctionSequence {

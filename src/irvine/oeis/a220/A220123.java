@@ -4,7 +4,7 @@ package irvine.oeis.a220;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A220123 Number of tilings of a <code>4 X n</code> rectangle using integer sided rectangular tiles of area 4.
+ * A220123 Number of tilings of a 4 X n rectangle using integer sided rectangular tiles of area 4.
  * @author Georg Fischer
  */
 public class A220123 extends GeneratingFunctionSequence {

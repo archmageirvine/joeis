@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328549 1, together with the numbers that are simultaneously superior highly composite <code>(A002201)</code>, colossally abundant <code>(A004490)</code>, deeply composite <code>(A095848)</code>, and miserable average divisor numbers <code>(A263572)</code>.
+ * A328549 1, together with the numbers that are simultaneously superior highly composite (A002201), colossally abundant (A004490), deeply composite (A095848), and miserable average divisor numbers (A263572).
  * @author Georg Fischer
  */
 public class A328549 extends FiniteSequence {

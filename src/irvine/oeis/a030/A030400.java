@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030400 <code>a(n)=least</code> k such that base 4 representation of n begins at <code>s(k)</code>, where <code>s=A030399</code>.
+ * A030400 a(n)=least k such that base 4 representation of n begins at s(k), where s=A030399.
  * @author Sean A. Irvine
  */
 public class A030400 extends A030378 {

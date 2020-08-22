@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168236 <code>a(n) = (6*n - 3*(-1)^n - 1)/4</code>.
+ * A168236 a(n) = (6*n - 3*(-1)^n - 1)/4.
  * @author Sean A. Irvine
  */
 public class A168236 extends LinearRecurrence {

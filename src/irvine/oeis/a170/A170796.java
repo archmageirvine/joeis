@@ -5,7 +5,7 @@ package irvine.oeis.a170;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A170796 <code>a(n) = n^10*(n^4 + 1)/2</code>.
+ * A170796 a(n) = n^10*(n^4 + 1)/2.
  * @author Georg Fischer
  */
 public class A170796 extends HolonomicRecurrence {

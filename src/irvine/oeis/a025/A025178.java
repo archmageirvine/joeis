@@ -4,7 +4,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a002.A002426;
 
 /**
- * A025178 First differences of the central trinomial coefficients <code>A002426</code>.
+ * A025178 First differences of the central trinomial coefficients A002426.
  * @author Sean A. Irvine
  */
 public class A025178 extends DifferenceSequence {

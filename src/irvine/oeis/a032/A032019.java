@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032019 Doubles (index <code>2+)</code> under "AGJ" <code>(ordered</code>, elements, labeled) transform.
+ * A032019 Doubles (index 2+) under "AGJ" (ordered, elements, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032019 extends MemorySequence {

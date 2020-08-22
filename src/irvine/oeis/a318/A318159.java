@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A318159 Figurate numbers based on the small stellated dodecahedron: <code>a(n) = n*(21*n^2 - 33*n + 14)/2</code>.
+ * A318159 Figurate numbers based on the small stellated dodecahedron: a(n) = n*(21*n^2 - 33*n + 14)/2.
  * @author Georg Fischer
  */
 public class A318159 extends LinearRecurrence {

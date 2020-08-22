@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086115 Number of <code>5 X n (0,1)</code> matrices such that each row and each column is nondecreasing or nonincreasing.
+ * A086115 Number of 5 X n (0,1) matrices such that each row and each column is nondecreasing or nonincreasing.
  * @author Sean A. Irvine
  */
 public class A086115 extends LinearRecurrence {

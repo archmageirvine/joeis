@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A215346 Expansion of <code>(1/q) * phi(-q) * phi(q^4) / (phi(q) * psi(q^8))</code> in powers of q where <code>phi(), psi()</code> are Ramanujan theta functions.
+ * A215346 Expansion of (1/q) * phi(-q) * phi(q^4) / (phi(q) * psi(q^8)) in powers of q where phi(), psi() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A215346 extends EulerTransform {

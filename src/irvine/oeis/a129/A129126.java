@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129126 Ninth diagonal of table <code>A060850</code> counting partitions into parts of k kinds.
+ * A129126 Ninth diagonal of table A060850 counting partitions into parts of k kinds.
  * @author Georg Fischer
  */
 public class A129126 extends GeneratingFunctionSequence {

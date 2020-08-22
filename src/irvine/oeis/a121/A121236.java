@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A121236 Primes of the form <code>A001228(n) + 1</code> and <code>A001228(n) - 1</code> where <code>A001228 =</code> orders of sporadic simple groups.
+ * A121236 Primes of the form A001228(n) + 1 and A001228(n) - 1 where A001228 = orders of sporadic simple groups.
  * @author Georg Fischer
  */
 public class A121236 extends FiniteSequence {

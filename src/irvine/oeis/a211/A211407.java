@@ -5,7 +5,7 @@ package irvine.oeis.a211;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A211407 Degrees of irreducible representations of group <code>L3(11)</code>.
+ * A211407 Degrees of irreducible representations of group L3(11).
  * @author Georg Fischer
  */
 public class A211407 extends FiniteSequence {

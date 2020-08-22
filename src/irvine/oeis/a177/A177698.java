@@ -6,7 +6,7 @@ package irvine.oeis.a177;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A177698 Expansion of e.g.f.: <code>sin(arctan(x))</code>.
+ * A177698 Expansion of e.g.f.: sin(arctan(x)).
  * @author Georg Fischer
  */
 public class A177698 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.HashMap;
 
 /**
- * A008304 Triangle read by rows: <code>T(n,k) (n&gt;=1; 1&lt;=k&lt;=n)</code> is the number of permutations of <code>[n]</code> in which the longest increasing run has length k.
+ * A008304 Triangle read by rows: T(n,k) (n&gt;=1; 1&lt;=k&lt;=n) is the number of permutations of [n] in which the longest increasing run has length k.
  * @author Sean A. Irvine
  */
 public class A008304 implements Sequence {

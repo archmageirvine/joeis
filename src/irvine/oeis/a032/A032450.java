@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032450 Period of finite sequence <code>g(n)</code> related to Poulet's Conjecture.
+ * A032450 Period of finite sequence g(n) related to Poulet's Conjecture.
  * @author Sean A. Irvine
  */
 public class A032450 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.q.Q;
 import irvine.math.z.Z;
 
 /**
- * A008994 Denominators of coefficients in expansion of cube root of <code>sin(x)</code>.
+ * A008994 Denominators of coefficients in expansion of cube root of sin(x).
  * @author Sean A. Irvine
  */
 public class A008994 extends A008993 {

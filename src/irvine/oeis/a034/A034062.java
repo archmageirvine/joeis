@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034062 Decimal part of <code>a(n)^(1/7)</code> starts with <code>n (7th</code> powers excluded).
+ * A034062 Decimal part of a(n)^(1/7) starts with n (7th powers excluded).
  * @author Sean A. Irvine
  */
 public class A034062 implements Sequence {

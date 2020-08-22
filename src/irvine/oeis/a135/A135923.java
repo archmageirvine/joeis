@@ -3,7 +3,7 @@ package irvine.oeis.a135;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A135923 <code>(n^8 - 60*n^6 + 90*n^5 + 1160*n^4 - 3204*n^3 - 5349*n^2 + 26586*n - 23760)/24</code>.
+ * A135923 (n^8 - 60*n^6 + 90*n^5 + 1160*n^4 - 3204*n^3 - 5349*n^2 + 26586*n - 23760)/24.
  * @author Sean A. Irvine
  */
 public class A135923 extends LinearRecurrence {

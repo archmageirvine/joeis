@@ -6,7 +6,7 @@ package irvine.oeis.a132;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A132063 Alternating row sums of Jabotinsky type triangle <code>S2p(-3):= A000369</code>.
+ * A132063 Alternating row sums of Jabotinsky type triangle S2p(-3):= A000369.
  * @author Georg Fischer
  */
 public class A132063 extends HolonomicRecurrence {

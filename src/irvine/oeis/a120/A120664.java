@@ -4,7 +4,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A120664 Expansion of <code>2*x*(1-6*x+12*x^2)/(1-8*x+19*x^2-12*x^3)</code>.
+ * A120664 Expansion of 2*x*(1-6*x+12*x^2)/(1-8*x+19*x^2-12*x^3).
  * @author Georg Fischer
  */
 public class A120664 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A190621 <code>a(n) = n</code> if n is not divisible by 4, otherwise 0.
+ * A190621 a(n) = n if n is not divisible by 4, otherwise 0.
  * @author Georg Fischer
  */
 public class A190621 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a210;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A210981 <code>A062725</code> and positive terms of <code>A051682</code> interleaved.
+ * A210981 A062725 and positive terms of A051682 interleaved.
  * @author Sean A. Irvine
  */
 public class A210981 extends LinearRecurrence {

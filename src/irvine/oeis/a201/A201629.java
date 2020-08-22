@@ -4,7 +4,7 @@ package irvine.oeis.a201;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A201629 <code>a(n) = n</code> if n is even and otherwise its nearest multiple of 4.
+ * A201629 a(n) = n if n is even and otherwise its nearest multiple of 4.
  * @author Georg Fischer
  */
 public class A201629 extends GeneratingFunctionSequence {

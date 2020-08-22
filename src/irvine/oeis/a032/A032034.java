@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032034 Shifts left under "AIJ" <code>(ordered</code>, indistinct, labeled) transform.
+ * A032034 Shifts left under "AIJ" (ordered, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032034 implements Sequence {

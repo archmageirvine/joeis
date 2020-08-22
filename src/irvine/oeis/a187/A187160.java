@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187160 Number of 7-step one space at a time bishop's tours on an <code>n X n</code> board summed over all starting positions.
+ * A187160 Number of 7-step one space at a time bishop's tours on an n X n board summed over all starting positions.
  * @author Georg Fischer
  */
 public class A187160 extends GeneratingFunctionSequence {

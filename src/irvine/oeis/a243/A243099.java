@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243099 <code>A002061</code> and <code>A000217</code> interleaved.
+ * A243099 A002061 and A000217 interleaved.
  * @author Georg Fischer
  */
 public class A243099 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000378;
 
 /**
- * A034043 Numbers that are imprimitively represented by <code>x^2+y^2+z^2</code>.
+ * A034043 Numbers that are imprimitively represented by x^2+y^2+z^2.
  * @author Sean A. Irvine
  */
 public class A034043 extends A000378 {

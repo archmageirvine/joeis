@@ -5,7 +5,7 @@ import irvine.oeis.a038.A038119;
 import irvine.oeis.a255.A255487;
 
 /**
- * A006760 Number of <code>one-sided 4-dimensional</code> polyominoes with n cells.
+ * A006760 Number of one-sided 4-dimensional polyominoes with n cells.
  * @author Sean A. Irvine
  */
 public class A006760 extends A255487 {

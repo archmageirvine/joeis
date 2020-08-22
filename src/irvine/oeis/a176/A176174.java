@@ -3,7 +3,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176174 Starting with 1, multiply the n-th term by 10, then subtract the sum of all terms up to and including the <code>n-th</code>, to make the <code>(n+1)th</code> term.
+ * A176174 Starting with 1, multiply the n-th term by 10, then subtract the sum of all terms up to and including the n-th, to make the (n+1)th term.
  * @author Sean A. Irvine
  */
 public class A176174 extends LinearRecurrence {

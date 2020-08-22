@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A291360 Prime divisors of <code>2^720 - 1</code>.
+ * A291360 Prime divisors of 2^720 - 1.
  * @author Georg Fischer
  */
 public class A291360 extends FiniteSequence {

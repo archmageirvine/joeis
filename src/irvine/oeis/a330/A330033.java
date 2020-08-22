@@ -7,7 +7,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A330033 <code>a(n) = Kronecker(n, 5) * (-1)^floor(n/5)</code>.
+ * A330033 a(n) = Kronecker(n, 5) * (-1)^floor(n/5).
  * @author Georg Fischer
  */
 public class A330033 extends EulerTransform {

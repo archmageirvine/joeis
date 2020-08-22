@@ -3,7 +3,7 @@ package irvine.oeis.a098;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A098140 63-gonal numbers: <code>a(n) = n*(61*n - 59)/2</code>.
+ * A098140 63-gonal numbers: a(n) = n*(61*n - 59)/2.
  * @author Sean A. Irvine
  */
 public class A098140 extends LinearRecurrence {

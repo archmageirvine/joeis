@@ -4,7 +4,7 @@ package irvine.oeis.a169;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A169634 <code>a(n) = 3*7^n</code>.
+ * A169634 a(n) = 3*7^n.
  * @author Georg Fischer
  */
 public class A169634 extends GeneratingFunctionSequence {

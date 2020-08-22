@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033845 Numbers n of the form <code>2^i*3^j</code>, i and j <code>&gt;= 1</code>.
+ * A033845 Numbers n of the form 2^i*3^j, i and j &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A033845 implements Sequence {

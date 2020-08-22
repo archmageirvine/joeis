@@ -4,7 +4,7 @@ package irvine.oeis.a121;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A121200 <code>2n+7^n+5^n</code>.
+ * A121200 2n+7^n+5^n.
  * @author Georg Fischer
  */
 public class A121200 extends GeneratingFunctionSequence {

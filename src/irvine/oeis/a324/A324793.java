@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A324793 Numbers k such that <code>A000793(k) = A159685(k)</code>.
+ * A324793 Numbers k such that A000793(k) = A159685(k).
  * @author Georg Fischer
  */
 public class A324793 extends FiniteSequence {

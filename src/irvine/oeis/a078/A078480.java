@@ -5,7 +5,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078480 Number of permutations p of <code>{1,2,...,n}</code> such that <code>|p(i)-i| != 1</code> for all i.
+ * A078480 Number of permutations p of {1,2,...,n} such that |p(i)-i| != 1 for all i.
  * @author Georg Fischer
  */
 public class A078480 extends HolonomicRecurrence {

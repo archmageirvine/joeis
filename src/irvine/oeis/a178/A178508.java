@@ -4,7 +4,7 @@ package irvine.oeis.a178;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A178508 <code>a(n) = 1, 7, A011557*(period 6</code>: repeat <code>10, 13, 31, 49, 70, 97)</code>.
+ * A178508 a(n) = 1, 7, A011557*(period 6: repeat 10, 13, 31, 49, 70, 97).
  * @author Georg Fischer
  */
 public class A178508 extends GeneratingFunctionSequence {

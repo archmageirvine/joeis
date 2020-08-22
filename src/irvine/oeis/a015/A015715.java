@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015715 Odd integers m such that <code>phi(m) | sigma(m)</code>.
+ * A015715 Odd integers m such that phi(m) | sigma(m).
  * @author Sean A. Irvine
  */
 public class A015715 implements Sequence {

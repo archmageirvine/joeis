@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A031940 Length of longest legal domino snake using full set of dominoes up to <code>[n:n]</code>.
+ * A031940 Length of longest legal domino snake using full set of dominoes up to [n:n].
  * @author Sean A. Irvine
  */
 public class A031940 extends LinearRecurrence {

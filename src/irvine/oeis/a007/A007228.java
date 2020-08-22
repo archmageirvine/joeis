@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007228 <code>a(n) = 3*binomial(4*n,n)/(n+1)</code>.
+ * A007228 a(n) = 3*binomial(4*n,n)/(n+1).
  * @author Sean A. Irvine
  */
 public class A007228 implements Sequence {

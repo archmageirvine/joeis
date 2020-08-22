@@ -4,7 +4,7 @@ package irvine.oeis.a252;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A252178 Number of length <code>2+2 0..n</code> arrays with the sum of the maximum minus the minimum of adjacent triples multiplied by some arrangement of <code>+-1</code> equal to zero.
+ * A252178 Number of length 2+2 0..n arrays with the sum of the maximum minus the minimum of adjacent triples multiplied by some arrangement of +-1 equal to zero.
  * @author Georg Fischer
  */
 public class A252178 extends GeneratingFunctionSequence {

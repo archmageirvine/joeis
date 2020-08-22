@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180594 Digital root of <code>4n</code>.
+ * A180594 Digital root of 4n.
  * @author Georg Fischer
  */
 public class A180594 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007376;
 
 /**
- * A031288 Position of <code>n-th 1</code> in <code>A007376</code>.
+ * A031288 Position of n-th 1 in A007376.
  * @author Sean A. Irvine
  */
 public class A031288 extends A007376 {

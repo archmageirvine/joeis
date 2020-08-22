@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A118403 Unsigned row sums of triangle <code>A118401; a(n) = A118402(n^2-n+2)</code>, where <code>A118402</code> is the row sums of triangle <code>A118400</code>.
+ * A118403 Unsigned row sums of triangle A118401; a(n) = A118402(n^2-n+2), where A118402 is the row sums of triangle A118400.
  * @author Georg Fischer
  */
 public class A118403 extends GeneratingFunctionSequence {

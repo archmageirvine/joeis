@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260081 Number of permutations p of <code>[n]</code> with no fixed points and cyclic displacement of elements restricted by three: <code>p(i)&lt;&gt;i</code> and <code>(i-p(i) mod n &lt;= 3</code> or <code>p(i)-i mod n &lt;= 3)</code>.
+ * A260081 Number of permutations p of [n] with no fixed points and cyclic displacement of elements restricted by three: p(i)&lt;&gt;i and (i-p(i) mod n &lt;= 3 or p(i)-i mod n &lt;= 3).
  * @author Georg Fischer
  */
 public class A260081 extends GeneratingFunctionSequence {

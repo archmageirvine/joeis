@@ -5,7 +5,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324269 <code>a(n) = 3*11^(2*n)</code>.
+ * A324269 a(n) = 3*11^(2*n).
  * @author Georg Fischer
  */
 public class A324269 extends HolonomicRecurrence {

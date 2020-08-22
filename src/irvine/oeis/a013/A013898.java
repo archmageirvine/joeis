@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013898 <code>a(n) = 21^(5*n + 1)</code>.
+ * A013898 a(n) = 21^(5*n + 1).
  * @author Sean A. Irvine
  */
 public class A013898 implements Sequence {

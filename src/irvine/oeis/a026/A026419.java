@@ -3,7 +3,7 @@ package irvine.oeis.a026;
 import irvine.math.z.Z;
 
 /**
- * A026419 <code>a(n) =</code> least positive integer <code>&gt; a(n-1)</code> and not <code>a(i)*a(j)</code> for <code>1&lt;=i&lt;j&lt;=n</code>.
+ * A026419 a(n) = least positive integer &gt; a(n-1) and not a(i)*a(j) for 1&lt;=i&lt;j&lt;=n.
  * @author Sean A. Irvine
  */
 public class A026419 extends A026416 {

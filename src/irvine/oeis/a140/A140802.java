@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140802 <code>a(n) = binomial(n+3, 3)*8^n</code>.
+ * A140802 a(n) = binomial(n+3, 3)*8^n.
  * @author Georg Fischer
  */
 public class A140802 extends GeneratingFunctionSequence {

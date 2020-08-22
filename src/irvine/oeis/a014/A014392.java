@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014392 Final 2 digits of <code>8^n</code>.
+ * A014392 Final 2 digits of 8^n.
  * @author Sean A. Irvine
  */
 public class A014392 implements Sequence {

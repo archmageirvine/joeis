@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A106745 Numbers n such that <code>101101 * 10^n + 1</code> is prime.
+ * A106745 Numbers n such that 101101 * 10^n + 1 is prime.
  * @author Georg Fischer
  */
 public class A106745 extends PowerFactorPrimeSequence {

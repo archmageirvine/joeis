@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A104410 Coefficients of the <code>C-Rogers-Selberg</code> identity.
+ * A104410 Coefficients of the C-Rogers-Selberg identity.
  * @author Georg Fischer
  */
 public class A104410 extends EulerTransform {

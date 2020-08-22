@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A243239 <code>a(n) = 10^n mod 97</code>.
+ * A243239 a(n) = 10^n mod 97.
  * @author Georg Fischer
  */
 public class A243239 implements Sequence {

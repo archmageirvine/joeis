@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A176523 Decimal expansion of <code>(45+3*sqrt(235))/10</code>.
+ * A176523 Decimal expansion of (45+3*sqrt(235))/10.
  * @author Georg Fischer
  */
 public class A176523 extends DecimalExpansionSequence {

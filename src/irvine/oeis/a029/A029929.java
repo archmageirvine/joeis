@@ -5,7 +5,7 @@ package irvine.oeis.a029;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A029929 <code>a(n) = n*(n + ceiling(2^n/12))</code>.
+ * A029929 a(n) = n*(n + ceiling(2^n/12)).
  * @author Georg Fischer
  */
 public class A029929 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A122082 Number of unlabeled bicolored graphs on <code>2n</code> nodes which are invariant when the two color classes are interchanged.
+ * A122082 Number of unlabeled bicolored graphs on 2n nodes which are invariant when the two color classes are interchanged.
  * @author Sean A. Irvine
  */
 public class A122082 implements Sequence {

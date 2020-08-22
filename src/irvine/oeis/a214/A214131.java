@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214131 Partitions of n into parts congruent to <code>+-4, +-6 (mod 13)</code>.
+ * A214131 Partitions of n into parts congruent to +-4, +-6 (mod 13).
  * @author Georg Fischer
  */
 public class A214131 extends EulerTransform {

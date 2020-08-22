@@ -6,7 +6,7 @@ package irvine.oeis.a263;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A263013 <code>a(0) = -a(1) = a(2) = 1, a(n) = 0</code> for <code>n&gt;2</code>.
+ * A263013 a(0) = -a(1) = a(2) = 1, a(n) = 0 for n&gt;2.
  * @author Georg Fischer
  */
 public class A263013 extends GeneratingFunctionSequence {

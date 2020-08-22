@@ -6,7 +6,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105752 Expansion of e.g.f. <code>cos(i*log(1 + x)), i = sqrt(-1)</code>.
+ * A105752 Expansion of e.g.f. cos(i*log(1 + x)), i = sqrt(-1).
  * @author Georg Fischer
  */
 public class A105752 extends HolonomicRecurrence {

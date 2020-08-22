@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A090572 Number of configurations of the <code>3-dimensional 2 X 2 X 2</code> sliding cube puzzle that require a minimum of n moves to be reached.
+ * A090572 Number of configurations of the 3-dimensional 2 X 2 X 2 sliding cube puzzle that require a minimum of n moves to be reached.
  * @author Georg Fischer
  */
 public class A090572 extends FiniteSequence {

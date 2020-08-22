@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266750 G.f.: <code>1/((1-t^10)*(1-t)*(1-t^3)*(1-t^5)*(1-t^7)*(1-t^9)*(1-t^11)*(1-t^13)*(1-t^15)*(1-t^17)*(1-t^19))</code>.
+ * A266750 G.f.: 1/((1-t^10)*(1-t)*(1-t^3)*(1-t^5)*(1-t^7)*(1-t^9)*(1-t^11)*(1-t^13)*(1-t^15)*(1-t^17)*(1-t^19)).
  * @author Georg Fischer
  */
 public class A266750 extends GeneratingFunctionSequence {

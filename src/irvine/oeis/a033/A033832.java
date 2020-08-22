@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033832 Sum of odd divisors of <code>n &lt; sqrt(n) =</code> sum of even divisors of <code>n &lt; sqrt(n)</code>.
+ * A033832 Sum of odd divisors of n &lt; sqrt(n) = sum of even divisors of n &lt; sqrt(n).
  * @author Sean A. Irvine
  */
 public class A033832 implements Sequence {

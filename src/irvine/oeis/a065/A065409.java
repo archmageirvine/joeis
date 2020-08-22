@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A065409 <code>Fennessey-Larcombe-French</code> sequence.
+ * A065409 Fennessey-Larcombe-French sequence.
  * @author Sean A. Irvine
  */
 public class A065409 implements Sequence {

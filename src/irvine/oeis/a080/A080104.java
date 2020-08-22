@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A080104 Le Corbusier's "modular" (or <code>"modulor")</code> numbers, based on the proportions of an ideal man.
+ * A080104 Le Corbusier's "modular" (or "modulor") numbers, based on the proportions of an ideal man.
  * @author Georg Fischer
  */
 public class A080104 extends NoncomputableSequence {

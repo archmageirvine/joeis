@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002083;
 
 /**
- * A030625 <code>n(n+Z(n))</code>, where <code>Z( )</code> is the <code>Narayana-Zidek-Capell</code> sequence <code>(A002083)</code>.
+ * A030625 n(n+Z(n)), where Z( ) is the Narayana-Zidek-Capell sequence (A002083).
  * @author Sean A. Irvine
  */
 public class A030625 extends A002083 {

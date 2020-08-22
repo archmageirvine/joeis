@@ -1,7 +1,7 @@
 package irvine.oeis.a015;
 
 /**
- * A015110 Triangle of q-binomial coefficients for <code>q=-3</code>.
+ * A015110 Triangle of q-binomial coefficients for q=-3.
  * @author Sean A. Irvine
  */
 public class A015110 extends A015109 {

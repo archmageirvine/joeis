@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305315 <code>a(n) = sqrt(5*b(n)^2 - 4)</code>, with <code>b(n) = A134493(n) = Fibonacci(6*n+1), n &gt;= 0</code>.
+ * A305315 a(n) = sqrt(5*b(n)^2 - 4), with b(n) = A134493(n) = Fibonacci(6*n+1), n &gt;= 0.
  * @author Georg Fischer
  */
 public class A305315 extends GeneratingFunctionSequence {

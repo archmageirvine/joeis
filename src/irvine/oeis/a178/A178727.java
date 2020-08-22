@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A178727 Smallest nonnegative integer whose English name has no letters in common with the English name of the previous term (starting with <code>8)</code>.
+ * A178727 Smallest nonnegative integer whose English name has no letters in common with the English name of the previous term (starting with 8).
  * @author Georg Fischer
  */
 public class A178727 extends FiniteSequence {

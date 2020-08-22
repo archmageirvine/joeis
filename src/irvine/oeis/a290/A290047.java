@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A290047 Primes in <code>A290046</code>.
+ * A290047 Primes in A290046.
  * @author Georg Fischer
  */
 public class A290047 extends FiniteSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088312 Number of sets of lists <code>(cf. A000262)</code> with even number of lists.
+ * A088312 Number of sets of lists (cf. A000262) with even number of lists.
  * @author Georg Fischer
  */
 public class A088312 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030868 <code>[ exp(10/19)*n! ]</code>.
+ * A030868 [ exp(10/19)*n! ].
  * @author Sean A. Irvine
  */
 public class A030868 implements Sequence {

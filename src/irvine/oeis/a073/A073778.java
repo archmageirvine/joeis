@@ -3,7 +3,7 @@ package irvine.oeis.a073;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A073778 <code>Sum_{k=0..n} T(k)*T(n-k)</code>, convolution of <code>A000073</code> with itself.
+ * A073778 Sum_{k=0..n} T(k)*T(n-k), convolution of A000073 with itself.
  * @author Sean A. Irvine
  */
 public class A073778 extends LinearRecurrence {

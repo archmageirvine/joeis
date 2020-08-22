@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A080539 Number of neutrons in longest known radioactive decay series ending with Lead <code>208 ("thorium series")</code>, reversed.
+ * A080539 Number of neutrons in longest known radioactive decay series ending with Lead 208 ("thorium series"), reversed.
  * @author Georg Fischer
  */
 public class A080539 extends NoncomputableSequence {

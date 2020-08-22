@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A035103 Number of <code>0</code>'s in binary representation of n-th prime.
+ * A035103 Number of 0's in binary representation of n-th prime.
  * @author Georg Fischer
  */
 public class A035103 extends A000040 {

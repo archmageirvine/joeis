@@ -3,7 +3,7 @@ package irvine.oeis.a152;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A152965 Twice 12-gonal numbers: <code>a(n) = 2*n*(5*n-4)</code>.
+ * A152965 Twice 12-gonal numbers: a(n) = 2*n*(5*n-4).
  * @author Sean A. Irvine
  */
 public class A152965 extends LinearRecurrence {

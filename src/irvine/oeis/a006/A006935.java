@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a015.A015919;
 
 /**
- * A006935 Even pseudoprimes (or primes) to base <code>2</code>: even n that divide <code>2^n - 2</code>.
+ * A006935 Even pseudoprimes (or primes) to base 2: even n that divide 2^n - 2.
  * @author Sean A. Irvine
  */
 public class A006935 extends A015919 {

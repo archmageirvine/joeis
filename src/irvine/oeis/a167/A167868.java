@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A167868 <code>a(n) = 3^n*Sum_{ k=0..n } binomial(2*k,k)^3/3^k</code>.
+ * A167868 a(n) = 3^n*Sum_{ k=0..n } binomial(2*k,k)^3/3^k.
  * @author Sean A. Irvine
  */
 public class A167868 implements Sequence {

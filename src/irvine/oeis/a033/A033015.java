@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033015 Numbers n such that every run of digits of n in base 2 has length <code>&gt;=2</code>.
+ * A033015 Numbers n such that every run of digits of n in base 2 has length &gt;=2.
  * @author Sean A. Irvine
  */
 public class A033015 implements Sequence {

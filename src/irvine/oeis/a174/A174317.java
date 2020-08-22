@@ -5,7 +5,7 @@ package irvine.oeis.a174;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A174317 <code>a(0)=1, a(1)=2, a(2)=1;</code> for <code>n&gt;2, a(n) = 7*2^(n-3)-2</code>.
+ * A174317 a(0)=1, a(1)=2, a(2)=1; for n&gt;2, a(n) = 7*2^(n-3)-2.
  * @author Georg Fischer
  */
 public class A174317 extends HolonomicRecurrence {

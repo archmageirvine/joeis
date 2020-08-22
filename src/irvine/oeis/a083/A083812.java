@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083812 <code>4n-1</code> is the digit reversal of <code>n-1</code>.
+ * A083812 4n-1 is the digit reversal of n-1.
  * @author Sean A. Irvine
  */
 public class A083812 extends LinearRecurrence {

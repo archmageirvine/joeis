@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A128763 Expansion of <code>chi(q^5) * chi(q^10) / ( chi(q) * chi(q^2))</code> in powers of q where <code>chi()</code> is a Ramanujan theta function.
+ * A128763 Expansion of chi(q^5) * chi(q^10) / ( chi(q) * chi(q^2)) in powers of q where chi() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A128763 extends EulerTransform {

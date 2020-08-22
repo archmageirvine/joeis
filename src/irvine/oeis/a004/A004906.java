@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A004906 Numbers that are the sum of at most 11 nonzero <code>10th</code> powers.
+ * A004906 Numbers that are the sum of at most 11 nonzero 10th powers.
  * @author Sean A. Irvine
  */
 public class A004906 extends SumOfLikePowersSequence {

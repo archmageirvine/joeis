@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108764 Products of exactly two supersingular primes <code>(A002267)</code>.
+ * A108764 Products of exactly two supersingular primes (A002267).
  * @author Georg Fischer
  */
 public class A108764 extends FiniteSequence {

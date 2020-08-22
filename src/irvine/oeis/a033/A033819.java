@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033819 Trimorphic numbers: <code>n^3</code> ends with <code>n</code>. Also m-morphic numbers for all m <code>&gt; 5</code> such that <code>m-1</code> is not divisible by 10 and m <code>== 3 (mod 4)</code>.
+ * A033819 Trimorphic numbers: n^3 ends with n. Also m-morphic numbers for all m &gt; 5 such that m-1 is not divisible by 10 and m == 3 (mod 4).
  * @author Sean A. Irvine
  */
 public class A033819 implements Sequence {

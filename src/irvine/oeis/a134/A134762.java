@@ -6,7 +6,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134762 <code>a(n) = 3*A000984(n) - 2</code>.
+ * A134762 a(n) = 3*A000984(n) - 2.
  * @author Georg Fischer
  */
 public class A134762 extends HolonomicRecurrence {

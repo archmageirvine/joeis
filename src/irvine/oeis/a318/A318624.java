@@ -4,7 +4,7 @@ package irvine.oeis.a318;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A318624 Number of 3-member subsets of <code>[3*n]</code> whose elements sum to a multiple of <code>n</code>.
+ * A318624 Number of 3-member subsets of [3*n] whose elements sum to a multiple of n.
  * @author Georg Fischer
  */
 public class A318624 extends LinearRecurrence {

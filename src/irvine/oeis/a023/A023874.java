@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A023874 Expansion of <code>Product_{k&gt;=1} (1 - x^k)^(-k^5)</code>.
+ * A023874 Expansion of Product_{k&gt;=1} (1 - x^k)^(-k^5).
  * @author Sean A. Irvine
  */
 public class A023874 extends MemorySequence {

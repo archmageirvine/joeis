@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a026.A026519;
 
 /**
- * A027262 <code>a(n) = self-convolution</code> of row n of array T given by <code>A026519</code>.
+ * A027262 a(n) = self-convolution of row n of array T given by A026519.
  * @author Sean A. Irvine
  */
 public class A027262 extends A026519 {

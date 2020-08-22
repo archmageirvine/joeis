@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a013.A013517;
 
 /**
- * A096664 Numerators of terms in series expansion of <code>sin(tan(x))</code>.
+ * A096664 Numerators of terms in series expansion of sin(tan(x)).
  * @author Sean A. Irvine
  */
 public class A096664 extends A013517 {

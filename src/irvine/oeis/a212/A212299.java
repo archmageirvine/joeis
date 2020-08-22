@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A212299 Decimal expansion of <code>exp((gamma - 1)/sqrt(e))</code>.
+ * A212299 Decimal expansion of exp((gamma - 1)/sqrt(e)).
  * @author Georg Fischer
  */
 public class A212299 extends DecimalExpansionSequence {

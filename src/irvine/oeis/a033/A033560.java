@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033560 Primes p such that <code>4!+p</code> is also prime.
+ * A033560 Primes p such that 4!+p is also prime.
  * @author Sean A. Irvine
  */
 public class A033560 extends A000040 {

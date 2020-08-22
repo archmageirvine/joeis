@@ -4,7 +4,7 @@ package irvine.oeis.a114;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A114239 <code>a(n) = (n+1)(n+2)^3*(n+3)(n^2 + 4n + 5)/120</code>.
+ * A114239 a(n) = (n+1)(n+2)^3*(n+3)(n^2 + 4n + 5)/120.
  * @author Georg Fischer
  */
 public class A114239 extends GeneratingFunctionSequence {

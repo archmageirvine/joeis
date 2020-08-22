@@ -4,7 +4,7 @@ package irvine.oeis.a075;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A075884 Image of n at the second step of the <code>3x+1</code> algorithm.
+ * A075884 Image of n at the second step of the 3x+1 algorithm.
  * @author Georg Fischer
  */
 public class A075884 extends GeneratingFunctionSequence {

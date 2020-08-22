@@ -4,7 +4,7 @@ package irvine.oeis.a303;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A303212 Number of minimum total dominating sets in the <code>n X n</code> rook complement graph.
+ * A303212 Number of minimum total dominating sets in the n X n rook complement graph.
  * @author Georg Fischer
  */
 public class A303212 extends GeneratingFunctionSequence {

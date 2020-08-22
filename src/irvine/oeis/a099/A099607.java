@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099607 Antidiagonal sums of triangle <code>A099605</code>, in which row n equals the inverse binomial transform of column n of the triangle <code>A034870</code> of even-indexed rows of Pascal's triangle.
+ * A099607 Antidiagonal sums of triangle A099605, in which row n equals the inverse binomial transform of column n of the triangle A034870 of even-indexed rows of Pascal's triangle.
  * @author Georg Fischer
  */
 public class A099607 extends GeneratingFunctionSequence {

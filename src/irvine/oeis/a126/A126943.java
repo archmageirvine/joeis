@@ -4,7 +4,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126943 The sequence <code>d[n]</code> defined in <code>A126939</code>.
+ * A126943 The sequence d[n] defined in A126939.
  * @author Georg Fischer
  */
 public class A126943 extends LinearRecurrence {

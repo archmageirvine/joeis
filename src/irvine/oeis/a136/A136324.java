@@ -4,7 +4,7 @@ package irvine.oeis.a136;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A136324 Interleaving of <code>A002450(n), A002450(n) + 1</code>.
+ * A136324 Interleaving of A002450(n), A002450(n) + 1.
  * @author Georg Fischer
  */
 public class A136324 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a204;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A204504 <code>A204512(n)^2 = floor[A055872(n)/8]</code>: Squares such that appending some digit in base 8 yields another square.
+ * A204504 A204512(n)^2 = floor[A055872(n)/8]: Squares such that appending some digit in base 8 yields another square.
  * @author Georg Fischer
  */
 public class A204504 extends GeneratingFunctionSequence {

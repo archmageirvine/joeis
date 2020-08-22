@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014370 If <code>n = binomial(b,2)+binomial(c,1), b&gt;c&gt;=0</code> then <code>a(n) = binomial(b+1,3)+binomial(c+1,2)</code>.
+ * A014370 If n = binomial(b,2)+binomial(c,1), b&gt;c&gt;=0 then a(n) = binomial(b+1,3)+binomial(c+1,2).
  * @author Sean A. Irvine
  */
 public class A014370 implements Sequence {

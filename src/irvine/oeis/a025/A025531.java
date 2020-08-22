@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025531 <code>a(n) = (2nd</code> elementary symmetric function of <code>{1/1, 1/2</code>, ..., <code>1/n})*(lcm(S))^2</code>, where S <code>= {1,2,...,n}</code>.
+ * A025531 a(n) = (2nd elementary symmetric function of {1/1, 1/2, ..., 1/n})*(lcm(S))^2, where S = {1,2,...,n}.
  * @author Sean A. Irvine
  */
 public class A025531 implements Sequence {

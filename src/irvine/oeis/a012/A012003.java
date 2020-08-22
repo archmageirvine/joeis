@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012003 E.g.f. <code>cos(log(cos(x)))</code>, even powers only.
+ * A012003 E.g.f. cos(log(cos(x))), even powers only.
  * @author Sean A. Irvine
  */
 public class A012003 implements Sequence {

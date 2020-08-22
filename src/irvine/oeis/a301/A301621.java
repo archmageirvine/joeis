@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301621 Numbers not divisible by <code>2, 3</code> or <code>5 (A007775)</code> with digital root 2.
+ * A301621 Numbers not divisible by 2, 3 or 5 (A007775) with digital root 2.
  * @author Georg Fischer
  */
 public class A301621 extends GeneratingFunctionSequence {

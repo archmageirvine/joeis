@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208556 Number of <code>4 X n 0..1</code> arrays avoiding <code>0 0 0</code> and <code>0 0 1</code> horizontally and <code>0 0 1</code> and <code>0 1 1</code> vertically.
+ * A208556 Number of 4 X n 0..1 arrays avoiding 0 0 0 and 0 0 1 horizontally and 0 0 1 and 0 1 1 vertically.
  * @author Georg Fischer
  */
 public class A208556 extends GeneratingFunctionSequence {

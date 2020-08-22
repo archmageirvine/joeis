@@ -3,7 +3,7 @@ package irvine.oeis.a178;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A178617 <code>a(n) = n^4 - (n+1)^3</code>.
+ * A178617 a(n) = n^4 - (n+1)^3.
  * @author Sean A. Irvine
  */
 public class A178617 extends LinearRecurrence {

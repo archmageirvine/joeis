@@ -3,7 +3,7 @@ package irvine.oeis.a199;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A199572 Number of round trips of length n on the cycle graph <code>C_2</code> from any of the two vertices.
+ * A199572 Number of round trips of length n on the cycle graph C_2 from any of the two vertices.
  * @author Sean A. Irvine
  */
 public class A199572 extends LinearRecurrence {

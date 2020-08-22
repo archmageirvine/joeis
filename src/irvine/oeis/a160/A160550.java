@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 import irvine.oeis.a001.A001065;
 
 /**
- * A160550 <code>a(n) = A001065(n) mod A000005(n)</code>.
+ * A160550 a(n) = A001065(n) mod A000005(n).
  * @author Georg Fischer
  */
 public class A160550 implements Sequence {

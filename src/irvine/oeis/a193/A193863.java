@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A193863 Expansion of <code>Product_{n&gt;=0} (1 + q*(-q^2)^n) / (1 - q*(-q^2)^n)</code>.
+ * A193863 Expansion of Product_{n&gt;=0} (1 + q*(-q^2)^n) / (1 - q*(-q^2)^n).
  * @author Georg Fischer
  */
 public class A193863 extends EulerTransform {

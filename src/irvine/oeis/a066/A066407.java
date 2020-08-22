@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066407 Number of orthogonal arrays <code>OA(6,n,2,1)</code>.
+ * A066407 Number of orthogonal arrays OA(6,n,2,1).
  * @author Sean A. Irvine
  */
 public class A066407 extends LinearRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283437 Periodic <code>{1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}</code>.
+ * A283437 Periodic {1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1}.
  * @author Georg Fischer
  */
 public class A283437 extends GeneratingFunctionSequence {

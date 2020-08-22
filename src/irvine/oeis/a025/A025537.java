@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002944;
 import irvine.oeis.a003.A003418;
 
 /**
- * A025537 <code>a(n) = (1/s(1) + 1/s(2) + ... + 1/s(n+1)) * LCM{1, 2</code>, ..., <code>n}</code>, where <code>s(k) = LCM{1,2,...,k}/k = A002944(k)</code>.
+ * A025537 a(n) = (1/s(1) + 1/s(2) + ... + 1/s(n+1)) * LCM{1, 2, ..., n}, where s(k) = LCM{1,2,...,k}/k = A002944(k).
  * @author Sean A. Irvine
  */
 public class A025537 extends A002944 {

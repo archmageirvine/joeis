@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A123152 <code>a(n) = (n-th</code> decimal digit of <code>Pi) + 1</code>.
+ * A123152 a(n) = (n-th decimal digit of Pi) + 1.
  * @author Georg Fischer
  */
 public class A123152 extends A000796 {

@@ -6,7 +6,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326290 Number of <code>non-crossing n-vertex</code> graphs with loops.
+ * A326290 Number of non-crossing n-vertex graphs with loops.
  * @author Georg Fischer
  */
 public class A326290 extends HolonomicRecurrence {

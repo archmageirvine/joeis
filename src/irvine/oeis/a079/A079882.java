@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a080.A080637;
 
 /**
- * A079882 A run of <code>2^n 1</code>'s followed by a run of <code>2^n 2</code>'s, for <code>n=0, 1, 2, ..</code>.
+ * A079882 A run of 2^n 1's followed by a run of 2^n 2's, for n=0, 1, 2, ...
  * @author Georg Fischer
  */
 public class A079882 extends DifferenceSequence {

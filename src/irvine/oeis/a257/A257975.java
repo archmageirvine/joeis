@@ -5,7 +5,7 @@ package irvine.oeis.a257;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A257975 Heptagonal numbers <code>(A000566)</code> that are the sum of five consecutive heptagonal numbers.
+ * A257975 Heptagonal numbers (A000566) that are the sum of five consecutive heptagonal numbers.
  * @author Georg Fischer
  */
 public class A257975 extends HolonomicRecurrence {

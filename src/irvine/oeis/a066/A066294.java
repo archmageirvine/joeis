@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000203;
 import irvine.oeis.a001.A001157;
 
 /**
- * A066294 <code>a(n) = A000203(n)^2 - A001157(n) - 2n = sigma(n)^2 - sigma_2(n) - 2n</code>.
+ * A066294 a(n) = A000203(n)^2 - A001157(n) - 2n = sigma(n)^2 - sigma_2(n) - 2n.
  * @author Georg Fischer
  */
 public class A066294 implements Sequence {

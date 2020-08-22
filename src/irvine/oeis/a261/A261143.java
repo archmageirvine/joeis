@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A261143 <code>a(n) = H_n(1,2)</code> where <code>H_n</code> is the n-th hyperoperator.
+ * A261143 a(n) = H_n(1,2) where H_n is the n-th hyperoperator.
  * @author Georg Fischer
  */
 public class A261143 extends PaddingSequence {

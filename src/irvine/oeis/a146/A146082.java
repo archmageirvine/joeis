@@ -5,7 +5,7 @@ package irvine.oeis.a146;
 import irvine.math.z.Z;
 
 /**
- * A146082 <code>a(n) = A146081(n) mod 9</code>.
+ * A146082 a(n) = A146081(n) mod 9.
  * @author Georg Fischer
  */
 public class A146082 extends A146081 {

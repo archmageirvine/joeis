@@ -5,7 +5,7 @@ package irvine.oeis.a200;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A200757 Noncrossing forests in the regular <code>(n+1)-polygon</code> obtained by a grafting procedure.
+ * A200757 Noncrossing forests in the regular (n+1)-polygon obtained by a grafting procedure.
  * @author Georg Fischer
  */
 public class A200757 extends HolonomicRecurrence {

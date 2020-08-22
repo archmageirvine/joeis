@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305156 <code>a(n) = 136*2^n - 78 (n&gt;=0)</code>.
+ * A305156 a(n) = 136*2^n - 78 (n&gt;=0).
  * @author Georg Fischer
  */
 public class A305156 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322043 Numbers k such that the coefficient of <code>x^k</code> in the expansion of <code>Product_{m &gt;= 1} (1-x^m)^15</code> is zero.
+ * A322043 Numbers k such that the coefficient of x^k in the expansion of Product_{m &gt;= 1} (1-x^m)^15 is zero.
  * @author Georg Fischer
  */
 public class A322043 extends GeneratingFunctionSequence {

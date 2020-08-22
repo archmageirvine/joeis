@@ -3,7 +3,7 @@ package irvine.oeis.a250;
 // DO NOT EDIT here!
 
 /**
- * A250126 Coordination sequence of point of type 3.3.4.12 in 4-uniform tiling <code>{3.3.4.3.4; 3.3.4.12; 3.3.12.4; 3.4.3.12}</code>.
+ * A250126 Coordination sequence of point of type 3.3.4.12 in 4-uniform tiling {3.3.4.3.4; 3.3.4.12; 3.3.12.4; 3.4.3.12}.
  * @author Georg Fischer
  */
 public class A250126 extends A250124 {

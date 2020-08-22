@@ -5,7 +5,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074231 Numbers n such that <code>Kronecker(8,n) = mu(gcd(8,n))</code>.
+ * A074231 Numbers n such that Kronecker(8,n) = mu(gcd(8,n)).
  * @author Georg Fischer
  */
 public class A074231 extends HolonomicRecurrence {

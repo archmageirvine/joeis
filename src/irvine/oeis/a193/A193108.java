@@ -3,7 +3,7 @@ package irvine.oeis.a193;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A193108 The tetrahedral numbers <code>A000292 mod 10</code>.
+ * A193108 The tetrahedral numbers A000292 mod 10.
  * @author Sean A. Irvine
  */
 public class A193108 extends LinearRecurrence {

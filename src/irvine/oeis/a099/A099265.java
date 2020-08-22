@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099265 Partial sum of <code>A056272 (= Sum_{m=1..n} Sum_{i=1..5} S(m,i)) (i.e.</code>, partial sum of Stirling numbers of second kind <code>S(n,i)</code> for <code>i=1..5))</code>.
+ * A099265 Partial sum of A056272 (= Sum_{m=1..n} Sum_{i=1..5} S(m,i)) (i.e., partial sum of Stirling numbers of second kind S(n,i) for i=1..5)).
  * @author Georg Fischer
  */
 public class A099265 extends GeneratingFunctionSequence {

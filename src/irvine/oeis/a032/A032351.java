@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A032351 Number of permutations of length n which avoid the patterns <code>2143, 1324</code> (smooth permutations); or avoid the patterns <code>1342, 2431;</code> etc.
+ * A032351 Number of permutations of length n which avoid the patterns 2143, 1324 (smooth permutations); or avoid the patterns 1342, 2431; etc.
  * @author Georg Fischer
  */
 public class A032351 extends HolonomicRecurrence {

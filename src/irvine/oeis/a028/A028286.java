@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.math.z.Z;
 
 /**
- * A028286 Even elements to right of central elements in 4-Pascal triangle <code>A028275</code>.
+ * A028286 Even elements to right of central elements in 4-Pascal triangle A028275.
  * @author Sean A. Irvine
  */
 public class A028286 extends A028284 {

@@ -6,7 +6,7 @@ package irvine.oeis.a182;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A182401 Number of paths from <code>(0,0)</code> to <code>(n,0)</code>, never going below the <code>x-axis</code>, using steps <code>U=(1,1), H=(1,0)</code> and <code>D=(1,-1)</code>, where the H steps come in five colors.
+ * A182401 Number of paths from (0,0) to (n,0), never going below the x-axis, using steps U=(1,1), H=(1,0) and D=(1,-1), where the H steps come in five colors.
  * @author Georg Fischer
  */
 public class A182401 extends HolonomicRecurrence {

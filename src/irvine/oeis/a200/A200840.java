@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200840 Number of <code>0..n</code> arrays <code>x(0..4)</code> of 5 elements without any two consecutive increases or two consecutive decreases.
+ * A200840 Number of 0..n arrays x(0..4) of 5 elements without any two consecutive increases or two consecutive decreases.
  * @author Georg Fischer
  */
 public class A200840 extends GeneratingFunctionSequence {

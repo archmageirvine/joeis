@@ -4,7 +4,7 @@ package irvine.oeis.a191;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A191721 Permutations in <code>S_n</code> avoiding the patterns <code>{4321, 34512, 45123, 35412, 43512, 45132, 45213, 53412, 45312, 45231}</code>.
+ * A191721 Permutations in S_n avoiding the patterns {4321, 34512, 45123, 35412, 43512, 45132, 45213, 53412, 45312, 45231}.
  * @author Georg Fischer
  */
 public class A191721 extends GeneratingFunctionSequence {

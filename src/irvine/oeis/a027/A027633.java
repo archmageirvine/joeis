@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A027633 Molien series for full <code>8x8</code> Siegel modular group <code>H_3</code> of order 371589120.
+ * A027633 Molien series for full 8x8 Siegel modular group H_3 of order 371589120.
  * @author Sean A. Irvine
  */
 public class A027633 extends LinearRecurrence {

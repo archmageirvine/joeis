@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130662 1/512 the number of permutations of <code>0..n</code> with exactly 6 maxima.
+ * A130662 1/512 the number of permutations of 0..n with exactly 6 maxima.
  * @author Georg Fischer
  */
 public class A130662 extends GeneratingFunctionSequence {

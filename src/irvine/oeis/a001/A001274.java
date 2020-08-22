@@ -5,7 +5,7 @@ import irvine.math.z.Euler;
 import irvine.oeis.Sequence;
 
 /**
- * A001274 Numbers n such that <code>phi(n) = phi(n+1)</code>.
+ * A001274 Numbers n such that phi(n) = phi(n+1).
  * @author Sean A. Irvine
  */
 public class A001274 implements Sequence {

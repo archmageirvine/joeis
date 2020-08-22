@@ -5,7 +5,7 @@ package irvine.oeis.a283;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A283563 Numbers n such that <code>A112368(n) = Sum_{i=0..n} 2^i*i!</code> is prime.
+ * A283563 Numbers n such that A112368(n) = Sum_{i=0..n} 2^i*i! is prime.
  * @author Georg Fischer
  */
 public class A283563 extends FiniteSequence {

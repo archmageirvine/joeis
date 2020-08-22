@@ -6,7 +6,7 @@ package irvine.oeis.a226;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A226170 The number of cycles over all even permutations of <code>{1,2,...,n}</code>.
+ * A226170 The number of cycles over all even permutations of {1,2,...,n}.
  * @author Georg Fischer
  */
 public class A226170 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a036;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A036087 Centered cube numbers: <code>a(n) = (n+1)^9 + n^9</code>.
+ * A036087 Centered cube numbers: a(n) = (n+1)^9 + n^9.
  * @author Georg Fischer
  */
 public class A036087 extends GeneratingFunctionSequence {

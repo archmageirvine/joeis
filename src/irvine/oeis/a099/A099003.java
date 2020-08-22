@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099003 Number of <code>4 X n 0-1</code> matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) <code>(00;1), (10;0)</code> and <code>(11;0)</code>.
+ * A099003 Number of 4 X n 0-1 matrices avoiding simultaneously the right angled numbered polyomino patterns (ranpp) (00;1), (10;0) and (11;0).
  * @author Sean A. Irvine
  */
 public class A099003 extends LinearRecurrence {

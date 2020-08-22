@@ -3,7 +3,7 @@ package irvine.oeis.a069;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A069475 First differences of <code>A069474</code>, successive differences of <code>(n+1)^6-n^6</code>.
+ * A069475 First differences of A069474, successive differences of (n+1)^6-n^6.
  * @author Sean A. Irvine
  */
 public class A069475 extends LinearRecurrence {

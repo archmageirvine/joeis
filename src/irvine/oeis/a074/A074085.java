@@ -4,7 +4,7 @@ package irvine.oeis.a074;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A074085 Coefficient of <code>q^2</code> in <code>nu(n)</code>, where <code>nu(0) = 1, nu(1) =</code> b and, for <code>n &gt;= 2, nu(n) = b*nu(n-1) + lambda*(1 + q + q^2 + ... + q^(n - 2))*nu(n-2)</code> with <code>(b,lambda) = (2,1)</code>.
+ * A074085 Coefficient of q^2 in nu(n), where nu(0) = 1, nu(1) = b and, for n &gt;= 2, nu(n) = b*nu(n-1) + lambda*(1 + q + q^2 + ... + q^(n - 2))*nu(n-2) with (b,lambda) = (2,1).
  * @author Georg Fischer
  */
 public class A074085 extends GeneratingFunctionSequence {

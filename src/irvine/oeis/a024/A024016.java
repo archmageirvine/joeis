@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001014;
 
 /**
- * A024016 <code>2^n-n^6</code>.
+ * A024016 2^n-n^6.
  * @author Sean A. Irvine
  */
 public class A024016 extends A001014 {

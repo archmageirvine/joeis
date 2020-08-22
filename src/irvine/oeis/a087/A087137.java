@@ -6,7 +6,7 @@ package irvine.oeis.a087;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A087137 <code>a(n)</code> is the number of permutations in the symmetric group <code>S_n</code> that contain an odd cycle.
+ * A087137 a(n) is the number of permutations in the symmetric group S_n that contain an odd cycle.
  * @author Georg Fischer
  */
 public class A087137 extends HolonomicRecurrence {

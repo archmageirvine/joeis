@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A080054 G.f.: <code>Product_{n &gt;= 0} (1+x^(2n+1))/(1-x^(2n+1))</code>.
+ * A080054 G.f.: Product_{n &gt;= 0} (1+x^(2n+1))/(1-x^(2n+1)).
  * @author Georg Fischer
  */
 public class A080054 extends EulerTransform {

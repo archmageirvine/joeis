@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028661 Expansion of <code>(theta_3(z)*theta_3(24z)+theta_2(z)*theta_2(24z))</code> in powers of <code>q^(1/4)</code>.
+ * A028661 Expansion of (theta_3(z)*theta_3(24z)+theta_2(z)*theta_2(24z)) in powers of q^(1/4).
  * @author Sean A. Irvine
  */
 public class A028661 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024562 <code>a(n) =</code> integer nearest <code>a(n-1)/(sqrt(6) - 2)</code>, where <code>a(0) = 1</code>.
+ * A024562 a(n) = integer nearest a(n-1)/(sqrt(6) - 2), where a(0) = 1.
  * @author Sean A. Irvine
  */
 public class A024562 implements Sequence {

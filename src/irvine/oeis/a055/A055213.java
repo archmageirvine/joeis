@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A055213 Number of n-piece positions at checkers, for <code>n=1 ... 24</code>.
+ * A055213 Number of n-piece positions at checkers, for n=1 ... 24.
  * @author Georg Fischer
  */
 public class A055213 extends FiniteSequence {

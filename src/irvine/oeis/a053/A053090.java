@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053090 Number of <code>F^3-convex</code> polyominoes on honeycomb lattice with given semiperimeter.
+ * A053090 Number of F^3-convex polyominoes on honeycomb lattice with given semiperimeter.
  * @author Georg Fischer
  */
 public class A053090 extends GeneratingFunctionSequence {

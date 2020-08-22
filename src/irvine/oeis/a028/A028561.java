@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A028561 Numbers n such that <code>n(n+6)</code> is a palindrome.
+ * A028561 Numbers n such that n(n+6) is a palindrome.
  * @author Sean A. Irvine
  */
 public class A028561 implements Sequence {

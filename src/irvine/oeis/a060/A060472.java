@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060472 Smallest positive <code>a(n)</code> such that the number of solutions to <code>a(n)=a(j)+a(k)</code>, j&lt;k&lt;n is four or less.
+ * A060472 Smallest positive a(n) such that the number of solutions to a(n)=a(j)+a(k), j&lt;k&lt;n is four or less.
  * @author Georg Fischer
  */
 public class A060472 extends GeneratingFunctionSequence {

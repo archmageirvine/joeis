@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323629 List of 6-powerful numbers (for the definition of k-powerful see <code>A323395)</code>.
+ * A323629 List of 6-powerful numbers (for the definition of k-powerful see A323395).
  * @author Georg Fischer
  */
 public class A323629 extends GeneratingFunctionSequence {

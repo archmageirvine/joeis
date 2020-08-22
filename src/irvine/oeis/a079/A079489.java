@@ -6,7 +6,7 @@ package irvine.oeis.a079;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A079489 Series reversion of <code>x(1-x^2)/(1+x^2)^2</code> expanded in odd powers of <code>x</code>.
+ * A079489 Series reversion of x(1-x^2)/(1+x^2)^2 expanded in odd powers of x.
  * @author Georg Fischer
  */
 public class A079489 extends HolonomicRecurrence {

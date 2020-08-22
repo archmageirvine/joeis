@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A033715 Number of integer solutions <code>(x, y)</code> to the equation <code>x^2 + 2y^2 = n</code>.
+ * A033715 Number of integer solutions (x, y) to the equation x^2 + 2y^2 = n.
  * @author Georg Fischer
  */
 public class A033715 extends EulerTransform {

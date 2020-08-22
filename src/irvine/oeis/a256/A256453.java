@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A256453 Expansion of cusp form for <code>Gamma1(11)</code> of weight 3 in powers of q with expansion being <code>q^5 + ..</code>.
+ * A256453 Expansion of cusp form for Gamma1(11) of weight 3 in powers of q with expansion being q^5 + ...
  * @author Georg Fischer
  */
 public class A256453 extends EulerTransform {

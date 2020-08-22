@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033409 <code>[ 89/n ]</code>.
+ * A033409 [ 89/n ].
  * @author Sean A. Irvine
  */
 public class A033409 implements Sequence {

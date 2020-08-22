@@ -5,7 +5,7 @@ package irvine.oeis.a176;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A176621 <code>a(n) = 2 + Sum_{k=0..n-1} A176513(4*k+1)</code>.
+ * A176621 a(n) = 2 + Sum_{k=0..n-1} A176513(4*k+1).
  * @author Georg Fischer
  */
 public class A176621 extends HolonomicRecurrence {

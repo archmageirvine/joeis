@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A030984 2-automorphic numbers: final digits of <code>2*n^2</code> agree with <code>n</code>.
+ * A030984 2-automorphic numbers: final digits of 2*n^2 agree with n.
  * @author Sean A. Irvine
  */
 public class A030984 implements Sequence {

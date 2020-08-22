@@ -3,7 +3,7 @@ package irvine.oeis.a168;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A168135 Numbers expressible as <code>7*k+11*m</code> (with nonnegative k, <code>m)</code> exactly in one way.
+ * A168135 Numbers expressible as 7*k+11*m (with nonnegative k, m) exactly in one way.
  * @author Georg Fischer
  */
 public class A168135 extends FiniteSequence {

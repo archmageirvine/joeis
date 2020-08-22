@@ -6,7 +6,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114870 <code>a(n) = A002627(n+1) - A002627(n) - n!</code>.
+ * A114870 a(n) = A002627(n+1) - A002627(n) - n!.
  * @author Georg Fischer
  */
 public class A114870 extends HolonomicRecurrence {

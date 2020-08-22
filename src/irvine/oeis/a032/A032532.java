@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032532 Integer part of decimal <code>'base-2</code> looking' numbers divided by their actual <code>base-2</code> values (denominator of <code>a(n)</code> is n, numerator is n written in binary but read in decimal).
+ * A032532 Integer part of decimal 'base-2 looking' numbers divided by their actual base-2 values (denominator of a(n) is n, numerator is n written in binary but read in decimal).
  * @author Sean A. Irvine
  */
 public class A032532 implements Sequence {

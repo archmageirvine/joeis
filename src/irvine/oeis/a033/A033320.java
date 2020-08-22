@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033320 <code>a(n) = floor( sqrt(2) * (3/2)^n )</code>.
+ * A033320 a(n) = floor( sqrt(2) * (3/2)^n ).
  * @author Sean A. Irvine
  */
 public class A033320 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028355 How the astronomical clock <code>("Orloj")</code> in Prague would strike <code>1,2,3,...,24,25,.</code>. (digits follow <code>12343212343... (A028356), n-th</code> group adds to <code>n)</code>.
+ * A028355 How the astronomical clock ("Orloj") in Prague would strike 1,2,3,...,24,25,.. (digits follow 12343212343... (A028356), n-th group adds to n).
  * @author Sean A. Irvine
  */
 public class A028355 implements Sequence {

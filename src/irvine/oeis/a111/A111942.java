@@ -6,7 +6,7 @@ package irvine.oeis.a111;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A111942 Column 0 of the matrix logarithm <code>(A111941)</code> of triangle <code>A111940</code>, which shifts columns left and up under matrix inverse; these terms are the result of multiplying the element in row n by <code>n!</code>.
+ * A111942 Column 0 of the matrix logarithm (A111941) of triangle A111940, which shifts columns left and up under matrix inverse; these terms are the result of multiplying the element in row n by n!.
  * @author Georg Fischer
  */
 public class A111942 extends HolonomicRecurrence {

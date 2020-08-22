@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032672 Digit <code>'9'</code> concatenated with <code>a(n)</code> is a prime.
+ * A032672 Digit '9' concatenated with a(n) is a prime.
  * @author Sean A. Irvine
  */
 public class A032672 extends A032664 {

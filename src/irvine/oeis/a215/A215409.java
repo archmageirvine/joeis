@@ -5,7 +5,7 @@ package irvine.oeis.a215;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A215409 The Goodstein sequence <code>G_n(3)</code>.
+ * A215409 The Goodstein sequence G_n(3).
  * @author Georg Fischer
  */
 public class A215409 extends FiniteSequence {

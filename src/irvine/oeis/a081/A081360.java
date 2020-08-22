@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A081360 Expansion of <code>q^(-1/24) (m (1-m) / 16)^(1/24)</code> in powers of q, where m <code>= k^2</code> is the parameter and q is the nome for Jacobian elliptic functions.
+ * A081360 Expansion of q^(-1/24) (m (1-m) / 16)^(1/24) in powers of q, where m = k^2 is the parameter and q is the nome for Jacobian elliptic functions.
  * @author Georg Fischer
  */
 public class A081360 extends EulerTransform {

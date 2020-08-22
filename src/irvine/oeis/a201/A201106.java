@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A201106 <code>Binomial(n^2,3)/(2*n)</code>.
+ * A201106 Binomial(n^2,3)/(2*n).
  * @author Sean A. Irvine
  */
 public class A201106 extends LinearRecurrence {

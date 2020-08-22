@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001074 Numbers n such that <code>Sum_{k=0..n-1} exp(2*Pi*i*k^3/n) != 0</code>.
+ * A001074 Numbers n such that Sum_{k=0..n-1} exp(2*Pi*i*k^3/n) != 0.
  * @author Sean A. Irvine
  */
 public class A001074 implements Sequence {

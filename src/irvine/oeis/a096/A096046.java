@@ -5,7 +5,7 @@ package irvine.oeis.a096;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A096046 <code>a(n) = B(2n,3)/B(2n)</code> (see comment).
+ * A096046 a(n) = B(2n,3)/B(2n) (see comment).
  * @author Georg Fischer
  */
 public class A096046 extends HolonomicRecurrence {

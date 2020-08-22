@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.util.Permutation;
 
 /**
- * A030496 Permutations of <code>1,2,...,n</code> for <code>n=1,2,3,...</code>, arranged antilexicographically.
+ * A030496 Permutations of 1,2,...,n for n=1,2,3,..., arranged antilexicographically.
  * @author Sean A. Irvine
  */
 public class A030496 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a250;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A250102 <code>a(n) = 2*5^n - (1+2i)^(2n) - (1-2i)^(2n)</code> where i <code>= sqrt(-1)</code>.
+ * A250102 a(n) = 2*5^n - (1+2i)^(2n) - (1-2i)^(2n) where i = sqrt(-1).
  * @author Georg Fischer
  */
 public class A250102 extends GeneratingFunctionSequence {

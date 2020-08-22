@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109451 <code>a(1)=1; a(n) =</code> smallest positive integer not already present such that <code>a(n-1)</code> and <code>a(n)</code> have a different number of <code>1</code>'s in their binary expansions.
+ * A109451 a(1)=1; a(n) = smallest positive integer not already present such that a(n-1) and a(n) have a different number of 1's in their binary expansions.
  * @author Georg Fischer
  */
 public class A109451 extends GeneratingFunctionSequence {

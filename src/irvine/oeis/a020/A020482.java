@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.math.z.Z;
 
 /**
- * A020482 Greatest p with p, q both prime, <code>p+q = 2n</code>.
+ * A020482 Greatest p with p, q both prime, p+q = 2n.
  * @author Sean A. Irvine
  */
 public class A020482 extends A020481 {

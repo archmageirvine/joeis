@@ -4,7 +4,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133666 <code>a(n) = a(n-1) - 16*a(n-2), a(0)=1, a(1)=4</code>.
+ * A133666 a(n) = a(n-1) - 16*a(n-2), a(0)=1, a(1)=4.
  * @author Georg Fischer
  */
 public class A133666 extends GeneratingFunctionSequence {

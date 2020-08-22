@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099461 An Alexander sequence for the knot <code>9_48</code>.
+ * A099461 An Alexander sequence for the knot 9_48.
  * @author Georg Fischer
  */
 public class A099461 extends GeneratingFunctionSequence {

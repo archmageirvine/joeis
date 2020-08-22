@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270572 <code>a(1)=3;</code> thereafter <code>a(n)</code> is the number of occurrences of <code>a(n-1)</code> in <code>{a(1)</code>, ... , <code>a(n-1)}</code>.
+ * A270572 a(1)=3; thereafter a(n) is the number of occurrences of a(n-1) in {a(1), ... , a(n-1)}.
  * @author Georg Fischer
  */
 public class A270572 extends GeneratingFunctionSequence {

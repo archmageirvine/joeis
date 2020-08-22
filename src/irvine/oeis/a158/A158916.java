@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A158916 Inverse binomial transform of <code>A153130</code>.
+ * A158916 Inverse binomial transform of A153130.
  * @author Georg Fischer
  */
 public class A158916 extends LinearRecurrence {

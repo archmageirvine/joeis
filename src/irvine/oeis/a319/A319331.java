@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A319331 Decimal expansion of <code>(1 + sqrt(3 + 2*sqrt(5)))/sqrt(2) * exp(-Pi*sqrt(55)/24)</code>.
+ * A319331 Decimal expansion of (1 + sqrt(3 + 2*sqrt(5)))/sqrt(2) * exp(-Pi*sqrt(55)/24).
  * @author Georg Fischer
  */
 public class A319331 extends DecimalExpansionSequence {

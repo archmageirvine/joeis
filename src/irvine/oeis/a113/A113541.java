@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113541 Numbers n such that <code>18n^2+1</code> is multiple of 19.
+ * A113541 Numbers n such that 18n^2+1 is multiple of 19.
  * @author Georg Fischer
  */
 public class A113541 extends HolonomicRecurrence {

@@ -1,7 +1,7 @@
 package irvine.oeis.a033;
 
 /**
- * A033737 Expansion of <code>Product_{d | 25} theta_3(q^d)</code>.
+ * A033737 Expansion of Product_{d | 25} theta_3(q^d).
  * @author Sean A. Irvine
  */
 public class A033737 extends A033720 {

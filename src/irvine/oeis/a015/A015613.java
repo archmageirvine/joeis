@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002088;
 
 /**
- * A015613 <code>a(n) = Sum_{i=1..n} phi(i) * (ceiling(n/i) - floor(n/i))</code>.
+ * A015613 a(n) = Sum_{i=1..n} phi(i) * (ceiling(n/i) - floor(n/i)).
  * @author Sean A. Irvine
  */
 public class A015613 extends A002088 {

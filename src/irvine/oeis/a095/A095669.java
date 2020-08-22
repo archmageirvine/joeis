@@ -4,7 +4,7 @@ package irvine.oeis.a095;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A095669 Seventh column <code>(m=6)</code> of <code>(1,4)-Pascal</code> triangle <code>A095666</code>.
+ * A095669 Seventh column (m=6) of (1,4)-Pascal triangle A095666.
  * @author Georg Fischer
  */
 public class A095669 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032563 Numbers k such that <code>A102489(k)</code> is divisible by k.
+ * A032563 Numbers k such that A102489(k) is divisible by k.
  * @author Sean A. Irvine
  */
 public class A032563 implements Sequence {

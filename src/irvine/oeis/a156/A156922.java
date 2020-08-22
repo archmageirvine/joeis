@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156922 Third right hand column <code>(n-m=2)</code> of the <code>A156920</code> triangle.
+ * A156922 Third right hand column (n-m=2) of the A156920 triangle.
  * @author Georg Fischer
  */
 public class A156922 extends HolonomicRecurrence {

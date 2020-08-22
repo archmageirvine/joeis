@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002251;
 
 /**
- * A026245 <code>a(n) = (1/2)*(s(n) + 1)</code>, where <code>s(n)</code> is the n-th odd number in <code>A002251</code>.
+ * A026245 a(n) = (1/2)*(s(n) + 1), where s(n) is the n-th odd number in A002251.
  * @author Sean A. Irvine
  */
 public class A026245 extends A002251 {

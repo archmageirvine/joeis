@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A205183 Euler transform of period 5 sequence <code>[ 2, 1, 1, 2, 1, ...]</code>.
+ * A205183 Euler transform of period 5 sequence [ 2, 1, 1, 2, 1, ...].
  * @author Georg Fischer
  */
 public class A205183 extends EulerTransform {

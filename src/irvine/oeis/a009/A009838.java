@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009838 Expansion of e.g.f.: <code>tanh(x)/(1+x)</code>.
+ * A009838 Expansion of e.g.f.: tanh(x)/(1+x).
  * @author Sean A. Irvine
  */
 public class A009838 implements Sequence {

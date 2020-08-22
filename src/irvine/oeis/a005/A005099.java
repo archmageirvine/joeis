@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002145;
 
 /**
- * A005099 <code>((</code> Primes <code>== -1 mod 4 ) + 1)/4</code>.
+ * A005099 (( Primes == -1 mod 4 ) + 1)/4.
  * @author Sean A. Irvine
  */
 public class A005099 extends A002145 {

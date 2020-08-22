@@ -4,7 +4,7 @@ package irvine.oeis.a094;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A094909 Let <code>p_k(n) =</code> number of partitions of n into exactly k parts; sequence gives <code>p_3(n-3) + p_2(n-2) + 1</code>.
+ * A094909 Let p_k(n) = number of partitions of n into exactly k parts; sequence gives p_3(n-3) + p_2(n-2) + 1.
  * @author Georg Fischer
  */
 public class A094909 extends GeneratingFunctionSequence {

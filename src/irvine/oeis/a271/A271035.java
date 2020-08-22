@@ -4,7 +4,7 @@ package irvine.oeis.a271;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A271035 Number of <code>3 X 3 X 3</code> triangular <code>0..n</code> arrays with some element less than a w, nw or ne neighbor exactly once.
+ * A271035 Number of 3 X 3 X 3 triangular 0..n arrays with some element less than a w, nw or ne neighbor exactly once.
  * @author Georg Fischer
  */
 public class A271035 extends GeneratingFunctionSequence {

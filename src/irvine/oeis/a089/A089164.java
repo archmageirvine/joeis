@@ -5,7 +5,7 @@ package irvine.oeis.a089;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A089164 Number of steps in all Schroeder paths <code>(i.e.</code>, consisting of steps <code>U=(1,1), D=(1,-1),H=(2,0)</code> and never going below the <code>x-axis)</code> from <code>(0,0)</code> to <code>(2n,0)</code>.
+ * A089164 Number of steps in all Schroeder paths (i.e., consisting of steps U=(1,1), D=(1,-1),H=(2,0) and never going below the x-axis) from (0,0) to (2n,0).
  * @author Georg Fischer
  */
 public class A089164 extends HolonomicRecurrence {

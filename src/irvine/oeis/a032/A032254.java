@@ -4,7 +4,7 @@ import irvine.oeis.DhkTransformSequence;
 import irvine.oeis.a000.A000027;
 
 /**
- * A032254 "DHK" <code>(bracelet</code>, identity, unlabeled) transform of 1,2,3,4,...
+ * A032254 "DHK" (bracelet, identity, unlabeled) transform of 1,2,3,4,...
  * @author Sean A. Irvine
  */
 public class A032254 extends DhkTransformSequence {

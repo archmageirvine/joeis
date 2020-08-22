@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.InverseEulerTransformSequence;
 
 /**
- * A007719 Number of independent polynomial invariants of symmetric matrix of order <code>n</code>.
+ * A007719 Number of independent polynomial invariants of symmetric matrix of order n.
  * @author Sean A. Irvine
  */
 public class A007719 extends InverseEulerTransformSequence {

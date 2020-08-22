@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112461 Absolute value of coefficient of term <code>[x^(n-5)]</code> in characteristic polynomial of maximum matrix A of size n X n, where <code>n &gt;= 5</code>. Maximum matrix <code>A(i,j)</code> is <code>MAX(i,j)</code>, where indices i and j run from 1 to <code>n</code>.
+ * A112461 Absolute value of coefficient of term [x^(n-5)] in characteristic polynomial of maximum matrix A of size n X n, where n &gt;= 5. Maximum matrix A(i,j) is MAX(i,j), where indices i and j run from 1 to n.
  * @author Georg Fischer
  */
 public class A112461 extends GeneratingFunctionSequence {

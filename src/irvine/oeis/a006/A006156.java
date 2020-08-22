@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006156 Number of ternary squarefree words of length <code>n</code>.
+ * A006156 Number of ternary squarefree words of length n.
  * @author Sean A. Irvine
  */
 public class A006156 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034038 Imprimitively represented by <code>(x^2+xy+2y^2, x&gt;=0, y&gt;=0)</code>.
+ * A034038 Imprimitively represented by (x^2+xy+2y^2, x&gt;=0, y&gt;=0).
  * @author Sean A. Irvine
  */
 public class A034038 implements Sequence {

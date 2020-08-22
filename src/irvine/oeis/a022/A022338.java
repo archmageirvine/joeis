@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022338 Index of <code>5^n</code> within sequence of numbers of form <code>3^i*5^j</code>.
+ * A022338 Index of 5^n within sequence of numbers of form 3^i*5^j.
  * @author Sean A. Irvine
  */
 public class A022338 implements Sequence {

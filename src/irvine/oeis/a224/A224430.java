@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224430 The hyper-Wiener index of the dendrimer <code>D_1[n]</code>, defined pictorially in the A. R. Ashrafi et al. reference.
+ * A224430 The hyper-Wiener index of the dendrimer D_1[n], defined pictorially in the A. R. Ashrafi et al. reference.
  * @author Georg Fischer
  */
 public class A224430 extends GeneratingFunctionSequence {

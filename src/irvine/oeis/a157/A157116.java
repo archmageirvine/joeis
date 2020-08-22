@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157116 Numbers n such that <code>n^2+1==0 (mod 41^2)</code>.
+ * A157116 Numbers n such that n^2+1==0 (mod 41^2).
  * @author Georg Fischer
  */
 public class A157116 extends GeneratingFunctionSequence {

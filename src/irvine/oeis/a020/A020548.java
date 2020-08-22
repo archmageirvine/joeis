@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020548 3rd Euler polynomial evaluated at <code>x=n!</code> (multiplied by <code>4)</code>.
+ * A020548 3rd Euler polynomial evaluated at x=n! (multiplied by 4).
  * @author Sean A. Irvine
  */
 public class A020548 implements Sequence {

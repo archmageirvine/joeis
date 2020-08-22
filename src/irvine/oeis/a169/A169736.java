@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A169736 First differences of <code>A169735</code>.
+ * A169736 First differences of A169735.
  * @author Georg Fischer
  */
 public class A169736 extends PaddingSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239057 Sum of the parts in the partitions of <code>4n</code> into 4 parts with smallest part equal to 1 minus the number of these partitions.
+ * A239057 Sum of the parts in the partitions of 4n into 4 parts with smallest part equal to 1 minus the number of these partitions.
  * @author Georg Fischer
  */
 public class A239057 extends GeneratingFunctionSequence {

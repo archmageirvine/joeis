@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006442 Expansion of <code>1/sqrt(1-10*x+x^2)</code>.
+ * A006442 Expansion of 1/sqrt(1-10*x+x^2).
  * @author Sean A. Irvine
  */
 public class A006442 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083669 Number of ordered quintuples <code>(a,b,c,d,e), -n &lt;=</code> a,b,c,d,e <code>&lt;=</code> n, such that <code>a+b+c+d+e = 0</code>.
+ * A083669 Number of ordered quintuples (a,b,c,d,e), -n &lt;= a,b,c,d,e &lt;= n, such that a+b+c+d+e = 0.
  * @author Sean A. Irvine
  */
 public class A083669 extends LinearRecurrence {

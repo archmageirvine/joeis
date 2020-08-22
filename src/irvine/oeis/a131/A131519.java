@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131519 Number of partitions of the graph <code>G_n</code> (defined below) into "strokes".
+ * A131519 Number of partitions of the graph G_n (defined below) into "strokes".
  * @author Georg Fischer
  */
 public class A131519 extends GeneratingFunctionSequence {

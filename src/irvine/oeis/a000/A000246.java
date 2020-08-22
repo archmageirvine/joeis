@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000246 Number of permutations in the symmetric group <code>S_n</code> that have odd order.
+ * A000246 Number of permutations in the symmetric group S_n that have odd order.
  * @author Sean A. Irvine
  */
 public class A000246 implements Sequence {

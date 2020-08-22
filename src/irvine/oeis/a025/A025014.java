@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025014 Central "nonomial" coefficient: largest coefficient of <code>(1+x+...+x^8)^n</code>.
+ * A025014 Central "nonomial" coefficient: largest coefficient of (1+x+...+x^8)^n.
  * @author Sean A. Irvine
  */
 public class A025014 implements Sequence {

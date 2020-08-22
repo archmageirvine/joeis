@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131588 Interlaces <code>A007583</code> with <code>A083420</code>.
+ * A131588 Interlaces A007583 with A083420.
  * @author Georg Fischer
  */
 public class A131588 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A033892 Orders of subgroups of <code>M24</code>.
+ * A033892 Orders of subgroups of M24.
  * @author Sean A. Irvine
  */
 public class A033892 extends FiniteSequence {

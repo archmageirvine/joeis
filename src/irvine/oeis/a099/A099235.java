@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099235 A quadrisection of <code>1/(1-x-x^5)</code>.
+ * A099235 A quadrisection of 1/(1-x-x^5).
  * @author Sean A. Irvine
  */
 public class A099235 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223197 Rolling cube footprints: number of <code>n X 3 0..5</code> arrays starting with 0 where 0..5 label faces of a cube and every array movement to a horizontal or vertical neighbor moves across a corresponding cube edge.
+ * A223197 Rolling cube footprints: number of n X 3 0..5 arrays starting with 0 where 0..5 label faces of a cube and every array movement to a horizontal or vertical neighbor moves across a corresponding cube edge.
  * @author Georg Fischer
  */
 public class A223197 extends GeneratingFunctionSequence {

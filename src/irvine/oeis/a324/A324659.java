@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a318.A318468;
 
 /**
- * A324659 <code>a(n) = (1/2)*A318468(n)</code>, where <code>A318468(n)</code> is bitwise-AND of <code>2*n</code> and <code>sigma(n)</code>.
+ * A324659 a(n) = (1/2)*A318468(n), where A318468(n) is bitwise-AND of 2*n and sigma(n).
  * @author Georg Fischer
  */
 public class A324659 extends A318468 {

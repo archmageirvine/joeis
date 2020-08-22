@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011975 Covering numbers <code>C(n,3,2)</code>.
+ * A011975 Covering numbers C(n,3,2).
  * @author Sean A. Irvine
  */
 public class A011975 implements Sequence {

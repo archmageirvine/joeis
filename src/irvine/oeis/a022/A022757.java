@@ -6,7 +6,7 @@ import irvine.oeis.a002.A002144;
 import irvine.oeis.a002.A002145;
 
 /**
- * A022757 <code>n-th 4k+1</code> prime plus <code>n-th 4k+3</code> prime.
+ * A022757 n-th 4k+1 prime plus n-th 4k+3 prime.
  * @author Sean A. Irvine
  */
 public class A022757 implements Sequence {

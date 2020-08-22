@@ -3,7 +3,7 @@ package irvine.oeis.a306;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A306602 Number of elements in the ten nonconvex regular <code>4-polytopes</code> (regular <code>4-dimensional star-polytopes)</code>, as a four-column array, read by rows, with rows ordered first by increasing density, then by increasing <code>cell-count</code>, then by increasing <code>face-count</code>, then by increasing edge-count and then by increasing <code>vertex-count</code>.
+ * A306602 Number of elements in the ten nonconvex regular 4-polytopes (regular 4-dimensional star-polytopes), as a four-column array, read by rows, with rows ordered first by increasing density, then by increasing cell-count, then by increasing face-count, then by increasing edge-count and then by increasing vertex-count.
  * @author Georg Fischer
  */
 public class A306602 extends FiniteSequence {

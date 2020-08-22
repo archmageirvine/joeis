@@ -4,7 +4,7 @@ package irvine.oeis.a143;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A143621 <code>a(n) = (-1)^binomial(n,4)</code>: Periodic sequence <code>1,1,1,1,-1,-1,-1,-1,... </code>.
+ * A143621 a(n) = (-1)^binomial(n,4): Periodic sequence 1,1,1,1,-1,-1,-1,-1,... .
  * @author Georg Fischer
  */
 public class A143621 extends GeneratingFunctionSequence {

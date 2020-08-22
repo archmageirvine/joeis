@@ -5,7 +5,7 @@ package irvine.oeis.a099;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A099591 Numbers that are the sum of no fewer than 17 biquadrates <code>(4th</code> powers).
+ * A099591 Numbers that are the sum of no fewer than 17 biquadrates (4th powers).
  * @author Georg Fischer
  */
 public class A099591 extends FiniteSequence {

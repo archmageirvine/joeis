@@ -4,7 +4,7 @@ package irvine.oeis.a059;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A059409 <code>a(n) = 4^n * (2^n - 1)</code>.
+ * A059409 a(n) = 4^n * (2^n - 1).
  * @author Georg Fischer
  */
 public class A059409 extends GeneratingFunctionSequence {

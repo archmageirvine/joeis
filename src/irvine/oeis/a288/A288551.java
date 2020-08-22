@@ -5,7 +5,7 @@ package irvine.oeis.a288;
 import irvine.oeis.MorphismSequence;
 
 /**
- * A288551 0-limiting word of the mapping <code>00-&gt;0101, 1-&gt;011</code>, starting with 00.
+ * A288551 0-limiting word of the mapping 00-&gt;0101, 1-&gt;011, starting with 00.
  * @author Georg Fischer
  */
 public class A288551 extends MorphismSequence {

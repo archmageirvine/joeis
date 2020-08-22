@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228138 Number of blocks in a Steiner system <code>S(2, 4, A228137(n+1))</code>.
+ * A228138 Number of blocks in a Steiner system S(2, 4, A228137(n+1)).
  * @author Georg Fischer
  */
 public class A228138 extends GeneratingFunctionSequence {

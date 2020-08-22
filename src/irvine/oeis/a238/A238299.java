@@ -5,7 +5,7 @@ package irvine.oeis.a238;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A238299 Second convolution of <code>A107841</code>.
+ * A238299 Second convolution of A107841.
  * @author Georg Fischer
  */
 public class A238299 extends HolonomicRecurrence {

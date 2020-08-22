@@ -5,7 +5,7 @@ package irvine.oeis.a291;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A291632 Column 1 of <code>A122832</code>.
+ * A291632 Column 1 of A122832.
  * @author Georg Fischer
  */
 public class A291632 extends HolonomicRecurrence {

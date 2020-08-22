@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011884 <code>Floor(n(n - 1)/31)</code>.
+ * A011884 Floor(n(n - 1)/31).
  * @author Sean A. Irvine
  */
 public class A011884 implements Sequence {

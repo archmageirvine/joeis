@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005449 Second pentagonal numbers: <code>a(n) = n*(3*n + 1)/2</code>.
+ * A005449 Second pentagonal numbers: a(n) = n*(3*n + 1)/2.
  * @author Sean A. Irvine
  */
 public class A005449 implements Sequence {

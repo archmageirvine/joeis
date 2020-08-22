@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006034 Numbers n such that <code>(17^n-1)/16</code> is prime.
+ * A006034 Numbers n such that (17^n-1)/16 is prime.
  * @author Sean A. Irvine
  */
 public class A006034 implements Sequence {

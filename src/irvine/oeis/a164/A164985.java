@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164985 Denominators of ternary BBP-type series for <code>log(5)</code>.
+ * A164985 Denominators of ternary BBP-type series for log(5).
  * @author Georg Fischer
  */
 public class A164985 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086689 <code>a(n) = Sum_{i=1..n} i^2*t(i)</code>, where t <code>= A000217</code>.
+ * A086689 a(n) = Sum_{i=1..n} i^2*t(i), where t = A000217.
  * @author Sean A. Irvine
  */
 public class A086689 extends LinearRecurrence {

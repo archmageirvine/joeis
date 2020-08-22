@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A063691 Number of solutions to <code>x^2 + y^2 + z^2 = n</code> in positive integers.
+ * A063691 Number of solutions to x^2 + y^2 + z^2 = n in positive integers.
  * @author Sean A. Irvine
  */
 public class A063691 implements Sequence {

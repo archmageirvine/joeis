@@ -3,7 +3,7 @@ package irvine.oeis.a104;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A104009 Area of <code>(a,a,a+1)-integer</code> triangle. Corresponding a's are in <code>A103974</code>.
+ * A104009 Area of (a,a,a+1)-integer triangle. Corresponding a's are in A103974.
  * @author Sean A. Irvine
  */
 public class A104009 extends LinearRecurrence {

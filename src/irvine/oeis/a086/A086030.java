@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086030 <code>a(n) = Sum_{i=1..n} C(i+6,7)^3</code>.
+ * A086030 a(n) = Sum_{i=1..n} C(i+6,7)^3.
  * @author Georg Fischer
  */
 public class A086030 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a050;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A050168 <code>a(0) = 1;</code> for <code>n &gt; 0, a(n) = binomial(n, floor(n/2)) + binomial(n-1, floor(n/2))</code>.
+ * A050168 a(0) = 1; for n &gt; 0, a(n) = binomial(n, floor(n/2)) + binomial(n-1, floor(n/2)).
  * @author Georg Fischer
  */
 public class A050168 extends HolonomicRecurrence {

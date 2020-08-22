@@ -3,7 +3,7 @@ package irvine.oeis.a258;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A258810 <code>a(n) = n^9 - 1</code>.
+ * A258810 a(n) = n^9 - 1.
  * @author Sean A. Irvine
  */
 public class A258810 extends LinearRecurrence {

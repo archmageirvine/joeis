@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224331 Number of idempotent <code>n X n 0..6</code> matrices of rank <code>n-1</code>.
+ * A224331 Number of idempotent n X n 0..6 matrices of rank n-1.
  * @author Georg Fischer
  */
 public class A224331 extends GeneratingFunctionSequence {

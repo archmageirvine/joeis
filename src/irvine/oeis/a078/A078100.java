@@ -3,7 +3,7 @@ package irvine.oeis.a078;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A078100 1/6 of the number of ways of <code>3-coloring a 4 X n</code> grid.
+ * A078100 1/6 of the number of ways of 3-coloring a 4 X n grid.
  * @author Sean A. Irvine
  */
 public class A078100 extends LinearRecurrence {

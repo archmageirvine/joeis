@@ -4,7 +4,7 @@ import irvine.oeis.IntersectionSequence;
 import irvine.oeis.PartialSumSequence;
 
 /**
- * A033944 Compare partial sums of <code>A033881</code> and <code>A033884;</code> this is the sequence of common terms.
+ * A033944 Compare partial sums of A033881 and A033884; this is the sequence of common terms.
  * @author Sean A. Irvine
  */
 public class A033944 extends IntersectionSequence {

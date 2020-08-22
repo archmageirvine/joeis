@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032274 Number of labeled series-reduced dyslexic mobiles (polygon rooted trees) with n leaves (root has degree 0 or <code>&gt;=2)</code>.
+ * A032274 Number of labeled series-reduced dyslexic mobiles (polygon rooted trees) with n leaves (root has degree 0 or &gt;=2).
  * @author Sean A. Irvine
  */
 public class A032274 implements Sequence {

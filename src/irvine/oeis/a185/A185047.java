@@ -6,7 +6,7 @@ package irvine.oeis.a185;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A185047 Expansion of <code>2F1( (1, 4/3); (3); 9 x)</code>.
+ * A185047 Expansion of 2F1( (1, 4/3);  (3); 9 x).
  * @author Georg Fischer
  */
 public class A185047 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055609 Number of <code>3 X n</code> binary matrices with no zero rows or columns, up to row and column permutation.
+ * A055609 Number of 3 X n binary matrices with no zero rows or columns, up to row and column permutation.
  * @author Georg Fischer
  */
 public class A055609 extends GeneratingFunctionSequence {

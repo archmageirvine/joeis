@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033273 Number of nonprime divisors of <code>n</code>.
+ * A033273 Number of nonprime divisors of n.
  * @author Sean A. Irvine
  */
 public class A033273 implements Sequence {

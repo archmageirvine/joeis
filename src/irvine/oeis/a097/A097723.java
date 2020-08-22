@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A097723 One fourth of sum of divisors of <code>4n+3</code>.
+ * A097723 One fourth of sum of divisors of 4n+3.
  * @author Georg Fischer
  */
 public class A097723 extends EulerTransform {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032618 Numbers n such that n concatenated with <code>n + 3</code> is a prime.
+ * A032618 Numbers n such that n concatenated with n + 3 is a prime.
  * @author Sean A. Irvine
  */
 public class A032618 implements Sequence {

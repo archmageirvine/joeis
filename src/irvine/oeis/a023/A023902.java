@@ -11,7 +11,7 @@ import irvine.nt.cyclotomic.Cyclotomic;
 import irvine.oeis.Sequence;
 
 /**
- * A023902 Theta series of <code>A_11</code> lattice.
+ * A023902 Theta series of A_11 lattice.
  * @author Sean A. Irvine
  */
 public class A023902 implements Sequence {

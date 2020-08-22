@@ -4,7 +4,7 @@ package irvine.oeis.a197;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A197194 <code>Binomial(n+9, 9)*9^n</code>.
+ * A197194 Binomial(n+9, 9)*9^n.
  * @author Georg Fischer
  */
 public class A197194 extends GeneratingFunctionSequence {

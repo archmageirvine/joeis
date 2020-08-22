@@ -5,7 +5,7 @@ package irvine.oeis.a144;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A144657 <code>a(n) = Sum[Sum[(i+j)!/(i!*j!),{i,1,n}],{j,1,n}]</code>.
+ * A144657 a(n) = Sum[Sum[(i+j)!/(i!*j!),{i,1,n}],{j,1,n}].
  * @author Georg Fischer
  */
 public class A144657 extends HolonomicRecurrence {

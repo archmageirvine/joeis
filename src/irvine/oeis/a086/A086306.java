@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A086306 Decimal expansion of <code>(280*(3 - sqrt(3)))/(840 - 280*sqrt(3) + 4*sqrt(5) - sqrt(10))</code>.
+ * A086306 Decimal expansion of (280*(3 - sqrt(3)))/(840 - 280*sqrt(3) + 4*sqrt(5) - sqrt(10)).
  * @author Georg Fischer
  */
 public class A086306 extends DecimalExpansionSequence {

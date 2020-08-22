@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131132 <code>a(n) = a(n-1) + a(n-2) + 1</code> if n is a multiple of 6, otherwise <code>a(n) = a(n-1) + a(n-2)</code>.
+ * A131132 a(n) = a(n-1) + a(n-2) + 1 if n is a multiple of 6, otherwise a(n) = a(n-1) + a(n-2).
  * @author Sean A. Irvine
  */
 public class A131132 extends LinearRecurrence {

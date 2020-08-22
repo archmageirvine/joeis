@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A203817 Decimal expansion of <code>gamma*Pi</code>.
+ * A203817 Decimal expansion of gamma*Pi.
  * @author Georg Fischer
  */
 public class A203817 extends DecimalExpansionSequence {

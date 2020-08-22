@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.math.z.Z;
 
 /**
- * A032227 Doubles (index <code>2+)</code> under "DGJ" <code>(bracelet</code>, element, labeled) transform.
+ * A032227 Doubles (index 2+) under "DGJ" (bracelet, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032227 extends A032226 {

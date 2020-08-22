@@ -4,7 +4,7 @@ import irvine.oeis.InverseEulerTransformSequence;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029878 Inverse Euler transform of <code>{A001285(0), A001285(1), ...}</code> where <code>A001285(n)</code> is Thue-Morse sequence,.
+ * A029878 Inverse Euler transform of {A001285(0), A001285(1), ...} where A001285(n) is Thue-Morse sequence,.
  * @author Sean A. Irvine
  */
 public class A029878 extends InverseEulerTransformSequence {

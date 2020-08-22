@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A244467 Decimal expansion of <code>1 + 22/60 + 7/60^2 + 42/60^3 + 33/60^4 + 4/60^5 + 40/60^6</code>, Fibonacci's solution to <code>x^3 + 2x^2 + 10x = 20</code>.
+ * A244467 Decimal expansion of 1 + 22/60 + 7/60^2 + 42/60^3 + 33/60^4 + 4/60^5 + 40/60^6, Fibonacci's solution to x^3 + 2x^2 + 10x = 20.
  * @author Georg Fischer
  */
 public class A244467 extends DecimalExpansionSequence {

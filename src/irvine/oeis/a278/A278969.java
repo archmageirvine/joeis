@@ -3,7 +3,7 @@ package irvine.oeis.a278;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A278969 Number of 7-digit numbers whose sum of digits is <code>n</code>.
+ * A278969 Number of 7-digit numbers whose sum of digits is n.
  * @author Georg Fischer
  */
 public class A278969 extends FiniteSequence {

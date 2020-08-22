@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027771 <code>(n+1)*C(n+1,11)</code>.
+ * A027771 (n+1)*C(n+1,11).
  * @author Georg Fischer
  */
 public class A027771 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a033;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A033480 <code>3x + 1</code> sequence beginning at 15.
+ * A033480 3x + 1 sequence beginning at 15.
  * @author Georg Fischer
  */
 public class A033480 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a294;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A294774 <code>a(n) = 2*n^2 + 2*n + 5</code>.
+ * A294774 a(n) = 2*n^2 + 2*n + 5.
  * @author Georg Fischer
  */
 public class A294774 extends GeneratingFunctionSequence {

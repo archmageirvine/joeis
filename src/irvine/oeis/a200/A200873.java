@@ -4,7 +4,7 @@ package irvine.oeis.a200;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A200873 Number of <code>0..n</code> arrays <code>x(0..4)</code> of 5 elements without any interior element greater than both neighbors or less than both neighbors.
+ * A200873 Number of 0..n arrays x(0..4) of 5 elements without any interior element greater than both neighbors or less than both neighbors.
  * @author Georg Fischer
  */
 public class A200873 extends GeneratingFunctionSequence {

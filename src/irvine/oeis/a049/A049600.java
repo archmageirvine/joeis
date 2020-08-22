@@ -7,7 +7,7 @@ package irvine.oeis.a049;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A049600 Array T read by diagonals; <code>T(i,j)=number</code> of paths from <code>(0,0)</code> to <code>(i,j)</code> consisting of nonvertical segments <code>(x(k),y(k))-to-(x(k+1),y(k+1))</code> such that <code>0=x(1)&lt;x(2)&lt;...&lt;x(n-1)&lt;x(n)=i, 0=y(1)&lt;=y(2)&lt;=...y(n-1)&lt;=y(n)=j</code>, for i <code>&gt;= 0, j &gt;= 0</code>.
+ * A049600 Array T read by diagonals; T(i,j)=number of paths from (0,0) to (i,j) consisting of nonvertical segments (x(k),y(k))-to-(x(k+1),y(k+1)) such that 0=x(1)&lt;x(2)&lt;...&lt;x(n-1)&lt;x(n)=i, 0=y(1)&lt;=y(2)&lt;=...y(n-1)&lt;=y(n)=j, for i &gt;= 0, j &gt;= 0.
  * @author Georg Fischer
  */
 public class A049600 extends GeneratingFunctionTriangle {

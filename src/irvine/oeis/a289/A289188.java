@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289188 Eternal domination number for <code>P_3 X P_n</code> grid graph.
+ * A289188 Eternal domination number for P_3 X P_n grid graph.
  * @author Georg Fischer
  */
 public class A289188 extends GeneratingFunctionSequence {

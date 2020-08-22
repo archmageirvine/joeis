@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034884 <code>n &lt; d(n)^2, d() =</code> number of divisors.
+ * A034884 n &lt; d(n)^2, d() = number of divisors.
  * @author Georg Fischer
  */
 public class A034884 extends FiniteSequence {

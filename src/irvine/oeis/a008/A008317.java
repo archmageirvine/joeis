@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001790;
 
 /**
- * A008317 Triangle of coefficients of expansions of powers of x in terms of Legendre polynomials <code>P_n(x)</code> over common denominator.
+ * A008317 Triangle of coefficients of expansions of powers of x in terms of Legendre polynomials P_n(x) over common denominator.
  * @author Sean A. Irvine
  */
 public class A008317 extends A001790 {

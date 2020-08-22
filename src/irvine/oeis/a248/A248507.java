@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A248507 Decimal expansion of a single magnetic flux quantum <code>Phi_0</code> in SI units.
+ * A248507 Decimal expansion of a single magnetic flux quantum Phi_0 in SI units.
  * @author Sean A. Irvine
  */
 public class A248507 extends DecimalExpansionSequence {

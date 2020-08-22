@@ -6,7 +6,7 @@ package irvine.oeis.a185;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A185020 <code>a(n) = A000108(n)*A002605(n+1)</code>, where <code>A000108</code> are the Catalan numbers.
+ * A185020 a(n) = A000108(n)*A002605(n+1), where A000108 are the Catalan numbers.
  * @author Georg Fischer
  */
 public class A185020 extends HolonomicRecurrence {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032036 Shifts left 3 places under "AIJ" <code>(ordered</code>, indistinct, labeled) transform.
+ * A032036 Shifts left 3 places under "AIJ" (ordered, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032036 implements Sequence {

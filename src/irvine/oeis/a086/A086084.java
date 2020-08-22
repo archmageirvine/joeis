@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A086084 <code>A086070</code> in binary.
+ * A086084 A086070 in binary.
  * @author Georg Fischer
  */
 public class A086084 extends FiniteSequence {

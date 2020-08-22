@@ -6,7 +6,7 @@ package irvine.oeis.a137;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A137506 <code>a(2*n+1) = 141 + 124*n, a(2*n+2) = |a(2*n) - 24|</code> with <code>a(2)=59</code>, thus <code>a(4,6,8,...) = 35,11,13,11,13..</code>.
+ * A137506 a(2*n+1) = 141 + 124*n, a(2*n+2) = |a(2*n) - 24| with a(2)=59, thus a(4,6,8,...) = 35,11,13,11,13...
  * @author Georg Fischer
  */
 public class A137506 extends GeneratingFunctionSequence {

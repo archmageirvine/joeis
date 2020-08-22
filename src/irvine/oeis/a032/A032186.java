@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032186 Shifts left 2 places under "CIJ" <code>(necklace</code>, indistinct, labeled) transform.
+ * A032186 Shifts left 2 places under "CIJ" (necklace, indistinct, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032186 implements Sequence {

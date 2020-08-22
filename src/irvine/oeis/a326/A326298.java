@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A326298 Indices at which record high values occur in <code>A326344</code>.
+ * A326298 Indices at which record high values occur in A326344.
  * @author Georg Fischer
  */
 public class A326298 extends FiniteSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A224823 Number of solutions to <code>n = x + y + 3*z</code> where x, y, z are triangular numbers.
+ * A224823 Number of solutions to n = x + y + 3*z where x, y, z are triangular numbers.
  * @author Georg Fischer
  */
 public class A224823 extends EulerTransform {

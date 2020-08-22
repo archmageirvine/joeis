@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A281445 Nonnegative k for which <code>(2*k^2 + 1)/11</code> is an integer.
+ * A281445 Nonnegative k for which (2*k^2 + 1)/11 is an integer.
  * @author Georg Fischer
  */
 public class A281445 extends GeneratingFunctionSequence {

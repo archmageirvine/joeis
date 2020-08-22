@@ -9,7 +9,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.PartitionTransformSequence;
 
 /**
- * A027582 Sequence satisfies <code>T(T(a))=a</code>, where T is defined below.
+ * A027582 Sequence satisfies T(T(a))=a, where T is defined below.
  * @author Sean A. Irvine
  */
 public class A027582 extends MemorySequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a106;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A106231 Least j <code>&gt; 1</code> such that <code>j^2 = (4*n^2 + 2)*(k^2) + (4*n^2 + 2)*k + 1</code>.
+ * A106231 Least j &gt; 1 such that j^2 = (4*n^2 + 2)*(k^2) + (4*n^2 + 2)*k + 1.
  * @author Georg Fischer
  */
 public class A106231 extends GeneratingFunctionSequence {

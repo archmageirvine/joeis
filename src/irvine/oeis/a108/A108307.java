@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108307 Number of set partitions of <code>{1</code>, ..., <code>n}</code> that avoid enhanced <code>3-crossings</code> (or enhanced <code>3-nestings)</code>.
+ * A108307 Number of set partitions of {1, ..., n} that avoid enhanced 3-crossings (or enhanced 3-nestings).
  * @author Georg Fischer
  */
 public class A108307 extends HolonomicRecurrence {

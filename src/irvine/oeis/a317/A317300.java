@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317300 Sequence obtained by taking the general formula for generalized k-gonal numbers: <code>m*((k - 2)*m - k + 4)/2</code>, where m <code>= 0, +1, -1, +2, -2, +3, -3</code>, ... and k <code>&gt;= 5</code>. Here k <code>= 0</code>.
+ * A317300 Sequence obtained by taking the general formula for generalized k-gonal numbers: m*((k - 2)*m - k + 4)/2, where m = 0, +1, -1, +2, -2, +3, -3, ... and k &gt;= 5. Here k = 0.
  * @author Georg Fischer
  */
 public class A317300 extends GeneratingFunctionSequence {

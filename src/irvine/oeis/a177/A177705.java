@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177705 Decimal expansion of <code>(3+2*sqrt(6))/5</code>.
+ * A177705 Decimal expansion of (3+2*sqrt(6))/5.
  * @author Georg Fischer
  */
 public class A177705 extends DecimalExpansionSequence {

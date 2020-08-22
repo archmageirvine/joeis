@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A108961 Number of partitions that are <code>"2-close"</code> to being <code>self-conjugate</code>.
+ * A108961 Number of partitions that are "2-close" to being self-conjugate.
  * @author Georg Fischer
  */
 public class A108961 extends EulerTransform {

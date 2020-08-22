@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093834 Expansion of <code>(1-2x)^2/((1-3x)(1-4x))</code>.
+ * A093834 Expansion of (1-2x)^2/((1-3x)(1-4x)).
  * @author Georg Fischer
  */
 public class A093834 extends GeneratingFunctionSequence {

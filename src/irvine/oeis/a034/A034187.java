@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034187 Not necessarily symmetric <code>n X 4</code> crossword puzzle grids.
+ * A034187 Not necessarily symmetric n X 4 crossword puzzle grids.
  * @author Sean A. Irvine
  */
 public class A034187 extends LinearRecurrence {

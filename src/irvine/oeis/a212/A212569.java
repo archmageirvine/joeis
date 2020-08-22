@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212569 Number of <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> such that <code>range{w,x,y,z}</code> is not one of the numbers w,x,y,z.
+ * A212569 Number of (w,x,y,z) with all terms in {0,...,n} such that range{w,x,y,z} is not one of the numbers w,x,y,z.
  * @author Georg Fischer
  */
 public class A212569 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022290 Replace <code>2^k</code> in binary expansion of n with <code>Fibonacci(k+2)</code>.
+ * A022290 Replace 2^k in binary expansion of n with Fibonacci(k+2).
  * @author Sean A. Irvine
  */
 public class A022290 implements Sequence {

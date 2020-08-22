@@ -5,7 +5,7 @@ package irvine.oeis.a308;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A308591 Number of minimal total dominating sets in the <code>(2n-1)-triangular</code> snake graph.
+ * A308591 Number of minimal total dominating sets in the (2n-1)-triangular snake graph.
  * @author Georg Fischer
  */
 public class A308591 extends HolonomicRecurrence {

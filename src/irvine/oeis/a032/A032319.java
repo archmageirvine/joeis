@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.math.z.Z;
 
 /**
- * A032319 Shifts left 2 places under "EGJ" <code>(unordered</code>, element, labeled) transform.
+ * A032319 Shifts left 2 places under "EGJ" (unordered, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032319 extends A032318 {

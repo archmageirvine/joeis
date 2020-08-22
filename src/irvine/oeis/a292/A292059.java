@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292059 Wiener index of the <code>n X n</code> white bishop graph.
+ * A292059 Wiener index of the n X n white bishop graph.
  * @author Sean A. Irvine
  */
 public class A292059 extends LinearRecurrence {

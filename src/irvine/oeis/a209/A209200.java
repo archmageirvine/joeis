@@ -5,7 +5,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209200 G.f.: <code>(1-4*x)^(-1/2) * (1-8*x)^(-1/4)</code>.
+ * A209200 G.f.: (1-4*x)^(-1/2) * (1-8*x)^(-1/4).
  * @author Georg Fischer
  */
 public class A209200 extends HolonomicRecurrence {

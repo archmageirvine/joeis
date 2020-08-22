@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A171419 Decimal expansion of <code>(5+sqrt(65))/10</code>.
+ * A171419 Decimal expansion of (5+sqrt(65))/10.
  * @author Georg Fischer
  */
 public class A171419 extends DecimalExpansionSequence {

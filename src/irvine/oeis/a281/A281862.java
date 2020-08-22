@@ -4,7 +4,7 @@ package irvine.oeis.a281;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A281862 Riordan transform of the triangular number sequence <code>A000217</code> with the Chebyshev S matrix <code>A049310</code>.
+ * A281862 Riordan transform of the triangular number sequence A000217 with the Chebyshev S matrix A049310.
  * @author Georg Fischer
  */
 public class A281862 extends GeneratingFunctionSequence {

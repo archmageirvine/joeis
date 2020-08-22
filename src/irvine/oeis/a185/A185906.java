@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A185906 Weight array of <code>A000007</code> (which has only one nonzero term and whose second accumulation array is the multiplication table for the positive integers), by antidiagonals.
+ * A185906 Weight array of A000007 (which has only one nonzero term and whose second accumulation array is the multiplication table for the positive integers), by antidiagonals.
  * @author Georg Fischer
  */
 public class A185906 extends PaddingSequence {

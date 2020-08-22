@@ -6,7 +6,7 @@ package irvine.oeis.a039;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A039959 Number of ways of numbering the vertices of a cube so sum of the 8 numbers is <code>n</code>.
+ * A039959 Number of ways of numbering the vertices of a cube so sum of the 8 numbers is n.
  * @author Georg Fischer
  */
 public class A039959 extends GeneratingFunctionSequence {

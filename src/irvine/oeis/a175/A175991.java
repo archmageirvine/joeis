@@ -6,7 +6,7 @@ package irvine.oeis.a175;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A175991 <code>a(n) = binomial(binomial(binomial(n, 2), 3), 4)/5</code>.
+ * A175991 a(n) = binomial(binomial(binomial(n, 2), 3), 4)/5.
  * @author Georg Fischer
  */
 public class A175991 extends HolonomicRecurrence {

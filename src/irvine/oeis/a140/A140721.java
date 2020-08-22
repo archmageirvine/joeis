@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140721 Alternated reading of <code>A000302</code> and negated <code>A002042</code>.
+ * A140721 Alternated reading of A000302 and negated A002042.
  * @author Georg Fischer
  */
 public class A140721 extends GeneratingFunctionSequence {

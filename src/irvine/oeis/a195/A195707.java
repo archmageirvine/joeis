@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195707 Decimal expansion of <code>arctan(sqrt(5/8))</code>.
+ * A195707 Decimal expansion of arctan(sqrt(5/8)).
  * @author Georg Fischer
  */
 public class A195707 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000203;
 
 /**
- * A053866 Parity of <code>A000203(n)</code>, the sum of the divisors of n; <code>a(n) = 1</code> when n is a square or twice a square, 0 otherwise.
+ * A053866 Parity of A000203(n), the sum of the divisors of n; a(n) = 1 when n is a square or twice a square, 0 otherwise.
  * @author Georg Fischer
  */
 public class A053866 extends A000203 {

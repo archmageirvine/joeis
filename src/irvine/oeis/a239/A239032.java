@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239032 Number of <code>5 X n 0..2</code> arrays with no element equal to the sum of elements to its left or one plus the sum of the elements above it, modulo 3.
+ * A239032 Number of 5 X n 0..2 arrays with no element equal to the sum of elements to its left or one plus the sum of the elements above it, modulo 3.
  * @author Georg Fischer
  */
 public class A239032 extends GeneratingFunctionSequence {

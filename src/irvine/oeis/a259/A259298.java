@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A259298 Numbers k such that <code>k^2*2^k + 3</code> is prime.
+ * A259298 Numbers k such that k^2*2^k + 3 is prime.
  * @author Georg Fischer
  */
 public class A259298 extends PowerFactorPrimeSequence {

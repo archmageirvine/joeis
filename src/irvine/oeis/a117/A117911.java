@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A117911 Number of <code>n-digit Lynch-Bell</code> numbers.
+ * A117911 Number of n-digit Lynch-Bell numbers.
  * @author Georg Fischer
  */
 public class A117911 extends PaddingSequence {

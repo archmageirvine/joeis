@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100727 Continued fraction expansion of <code>(1/2) [tan(1) + sec(1)]</code>.
+ * A100727 Continued fraction expansion of (1/2) [tan(1) + sec(1)].
  * @author Georg Fischer
  */
 public class A100727 extends GeneratingFunctionSequence {

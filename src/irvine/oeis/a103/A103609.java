@@ -3,7 +3,7 @@ package irvine.oeis.a103;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A103609 Fibonacci numbers repeated <code>(cf. A000045)</code>.
+ * A103609 Fibonacci numbers repeated (cf. A000045).
  * @author Sean A. Irvine
  */
 public class A103609 extends LinearRecurrence {

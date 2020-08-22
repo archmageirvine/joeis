@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001481;
 
 /**
- * A034023 Imprimitively represented by <code>x^2+y^2</code>.
+ * A034023 Imprimitively represented by x^2+y^2.
  * @author Sean A. Irvine
  */
 public class A034023 extends A001481 {

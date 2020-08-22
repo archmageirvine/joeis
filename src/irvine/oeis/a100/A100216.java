@@ -5,7 +5,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100216 Relates row sums of Pascal's triangle to expansion of <code>cos(x)/exp(x)</code>.
+ * A100216 Relates row sums of Pascal's triangle to expansion of cos(x)/exp(x).
  * @author Georg Fischer
  */
 public class A100216 extends HolonomicRecurrence {

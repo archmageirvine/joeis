@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283835 Number of length-n binary vectors beginning with 0, ending with 1, and avoiding 5 consecutive <code>0</code>'s and 5 consecutive <code>1</code>'s.
+ * A283835 Number of length-n binary vectors beginning with 0, ending with 1, and avoiding 5 consecutive 0's and 5 consecutive 1's.
  * @author Georg Fischer
  */
 public class A283835 extends GeneratingFunctionSequence {

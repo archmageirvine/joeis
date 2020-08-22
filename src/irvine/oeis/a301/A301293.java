@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301293 Expansion of <code>(x^2+x+1)^2 / ((x^2+1)*(x-1)^2)</code>.
+ * A301293 Expansion of (x^2+x+1)^2 / ((x^2+1)*(x-1)^2).
  * @author Georg Fischer
  */
 public class A301293 extends GeneratingFunctionSequence {

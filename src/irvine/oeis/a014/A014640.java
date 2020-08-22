@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000566;
 
 /**
- * A014640 Even heptagonal numbers <code>(A000566)</code>.
+ * A014640 Even heptagonal numbers (A000566).
  * @author Sean A. Irvine
  */
 public class A014640 extends A000566 {

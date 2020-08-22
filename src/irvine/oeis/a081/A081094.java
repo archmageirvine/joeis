@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000041;
 
 /**
- * A081094 4th differences of partition numbers <code>A000041</code>.
+ * A081094 4th differences of partition numbers A000041.
  * @author Georg Fischer
  */
 public class A081094 extends DifferenceSequence {

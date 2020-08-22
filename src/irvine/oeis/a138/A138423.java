@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A138423 <code>a(n) = (prime(n)^4 - prime(n)^3)/2</code>.
+ * A138423 a(n) = (prime(n)^4 - prime(n)^3)/2.
  * @author Georg Fischer
  */
 public class A138423 extends A000040 {

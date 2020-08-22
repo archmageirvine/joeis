@@ -4,7 +4,7 @@ package irvine.oeis.a198;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A198635 Total number of round trips, each of length <code>2*n</code> on the graph <code>P_5 (o-o-o-o-o)</code>.
+ * A198635 Total number of round trips, each of length 2*n on the graph P_5 (o-o-o-o-o).
  * @author Georg Fischer
  */
 public class A198635 extends GeneratingFunctionSequence {

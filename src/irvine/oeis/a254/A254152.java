@@ -6,7 +6,7 @@ package irvine.oeis.a254;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A254152 Number of independent sets in the generalized Aztec diamond <code>E(L_9,L_{2n-1})</code>.
+ * A254152 Number of independent sets in the generalized Aztec diamond E(L_9,L_{2n-1}).
  * @author Georg Fischer
  */
 public class A254152 extends GeneratingFunctionSequence {

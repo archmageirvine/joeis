@@ -5,7 +5,7 @@ package irvine.oeis.a134;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A134425 Number of paths of length n in the first quadrant, starting at the origin and consisting of 2 kinds of upsteps <code>U=(1,1) (U1</code> and <code>U2), 3</code> kinds of flatsteps <code>F=(1,0) (F1, F2</code> and F3) and 1 kind of downsteps <code>D=(1,-1)</code>.
+ * A134425 Number of paths of length n in the first quadrant, starting at the origin and consisting of 2 kinds of upsteps U=(1,1) (U1 and U2), 3 kinds of flatsteps F=(1,0) (F1, F2 and F3) and 1 kind of downsteps D=(1,-1).
  * @author Georg Fischer
  */
 public class A134425 extends HolonomicRecurrence {

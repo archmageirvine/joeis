@@ -4,7 +4,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118674 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2 + (x + 31)^2 = y^2</code>.
+ * A118674 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2 + (x + 31)^2 = y^2.
  * @author Georg Fischer
  */
 public class A118674 extends LinearRecurrence {

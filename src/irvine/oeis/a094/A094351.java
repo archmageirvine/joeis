@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.Arrays;
 
 /**
- * A094351 Rearrangement of integers such that <code>a(0)!*a(1)!*...*a(n)! + 1</code> is prime.
+ * A094351 Rearrangement of integers such that a(0)!*a(1)!*...*a(n)! + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A094351 implements Sequence {

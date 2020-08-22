@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A159955 Period <code>9</code>: repeat <code>[0, 1, 2, 1, 2, 0, 2, 0, 1]</code>.
+ * A159955 Period 9: repeat [0, 1, 2, 1, 2, 0, 2, 0, 1].
  * @author Georg Fischer
  */
 public class A159955 extends PaddingSequence {

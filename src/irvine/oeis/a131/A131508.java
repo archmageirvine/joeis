@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131508 <code>2*A000027</code> (natural numbers) sandwiched by tripled <code>A001477</code> (nonnegative numbers).
+ * A131508 2*A000027 (natural numbers) sandwiched by tripled A001477 (nonnegative numbers).
  * @author Georg Fischer
  */
 public class A131508 extends GeneratingFunctionSequence {

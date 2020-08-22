@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076616 Number of permutations of <code>{1,2,...,n}</code> that result in a binary search tree (when elements of the permutation are inserted in that order) of height <code>n-1 (i.e.</code>, the second largest possible height).
+ * A076616 Number of permutations of {1,2,...,n} that result in a binary search tree (when elements of the permutation are inserted in that order) of height n-1 (i.e., the second largest possible height).
  * @author Georg Fischer
  */
 public class A076616 extends GeneratingFunctionSequence {

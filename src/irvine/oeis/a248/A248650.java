@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A248650 Decimal expansion of hydrogen <code>(1H)</code> mass in kg.
+ * A248650 Decimal expansion of hydrogen (1H) mass in kg.
  * @author Georg Fischer
  */
 public class A248650 extends NoncomputableSequence {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A035990 Number of partitions of n into parts not of the form <code>23k, 23k+2</code> or <code>23k-2</code>. Also number of partitions with 1 part of size 1 and differences between parts at distance 10 are greater than 1.
+ * A035990 Number of partitions of n into parts not of the form 23k, 23k+2 or 23k-2. Also number of partitions with 1 part of size 1 and differences between parts at distance 10 are greater than 1.
  * @author Georg Fischer
  */
 public class A035990 extends EulerTransform {

@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A330520 Sum of even integers <code>&lt;= n</code> times the sum of odd integers <code>&lt;= n</code>.
+ * A330520 Sum of even integers &lt;= n times the sum of odd integers &lt;= n.
  * @author Georg Fischer
  */
 public class A330520 extends GeneratingFunctionSequence {

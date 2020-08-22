@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A032442 Expansion of <code>1 / Product_{k &gt;= 1} (1-q^k)^2*(1-q^(11k))^2</code>.
+ * A032442 Expansion of 1 / Product_{k &gt;= 1} (1-q^k)^2*(1-q^(11k))^2.
  * @author Georg Fischer
  */
 public class A032442 extends EulerTransform {

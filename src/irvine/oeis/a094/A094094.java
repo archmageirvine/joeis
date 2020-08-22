@@ -5,7 +5,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094094 Define <code>x[1]...x[n]</code> by the equations <code>Sum_{j=1..n} x[j]^i =</code> i, <code>i=1..n; a(n) = n! * Sum_{j=1..n} x[j]^(n+1)</code>.
+ * A094094 Define x[1]...x[n] by the equations Sum_{j=1..n} x[j]^i = i, i=1..n; a(n) = n! * Sum_{j=1..n} x[j]^(n+1).
  * @author Georg Fischer
  */
 public class A094094 extends HolonomicRecurrence {

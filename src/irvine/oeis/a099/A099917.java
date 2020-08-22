@@ -4,7 +4,7 @@ package irvine.oeis.a099;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A099917 Expansion of <code>(1+x^2)^2/(1+x^3+x^6)</code>.
+ * A099917 Expansion of (1+x^2)^2/(1+x^3+x^6).
  * @author Georg Fischer
  */
 public class A099917 extends GeneratingFunctionSequence {

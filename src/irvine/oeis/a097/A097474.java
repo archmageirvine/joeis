@@ -8,7 +8,7 @@ import irvine.util.Point;
 import java.util.HashMap;
 
 /**
- * A097474 Triangle <code>T(n,k)</code> read by rows: see formula lines for definition.
+ * A097474 Triangle T(n,k) read by rows: see formula lines for definition.
  * @author Sean A. Irvine
  */
 public class A097474 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A117452 Periodic <code>{2, -1, 1, 0, 0} - 0^n</code>.
+ * A117452 Periodic {2, -1, 1, 0, 0} - 0^n.
  * @author Georg Fischer
  */
 public class A117452 extends GeneratingFunctionSequence {

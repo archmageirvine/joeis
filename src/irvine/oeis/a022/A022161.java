@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.cr.CR;
 
 /**
- * A022161 First row of spectral array <code>W(e-1)</code>.
+ * A022161 First row of spectral array W(e-1).
  * @author Sean A. Irvine
  */
 public class A022161 extends A022159 {

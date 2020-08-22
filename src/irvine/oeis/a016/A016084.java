@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A016084 <code>a(n+1) = a(n) +</code> its digital root.
+ * A016084 a(n+1) = a(n) + its digital root.
  * @author Sean A. Irvine
  */
 public class A016084 extends LinearRecurrence {

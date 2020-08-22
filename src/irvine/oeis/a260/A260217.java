@@ -4,7 +4,7 @@ package irvine.oeis.a260;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A260217 Number of <code>base-3 n-digit</code> pandigital numbers.
+ * A260217 Number of base-3 n-digit pandigital numbers.
  * @author Georg Fischer
  */
 public class A260217 extends GeneratingFunctionSequence {

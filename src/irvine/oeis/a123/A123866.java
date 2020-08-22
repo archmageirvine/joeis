@@ -3,7 +3,7 @@ package irvine.oeis.a123;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A123866 <code>a(n) = n^6 - 1</code>.
+ * A123866 a(n) = n^6 - 1.
  * @author Sean A. Irvine
  */
 public class A123866 extends LinearRecurrence {

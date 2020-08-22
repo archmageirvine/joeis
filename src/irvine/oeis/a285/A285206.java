@@ -6,7 +6,7 @@ import irvine.oeis.PositionSequence;
 
 
 /**
- * A285206 Positions of 0 in <code>A285205;</code> complement of <code>A285207</code>. Conjecture: <code>-1 &lt; n*r - a(n) &lt; 1</code>, where r <code>= 1 + sqrt(1/3)</code>. As a word, <code>A285205 = 01001010010010...</code>, in which 0 is in positions <code>1,3,4,6,8,... s = Nest[Flatten[# /. {0 -&gt; {1, 0}, 1 -&gt; {0, 1, 0, 0}}]</code> &amp;, <code>{0}, 12]; (* A285205 *) Flatten[Position[s, 0]]; (* A285206 *) Flatten[Position[s, 1]]; (* A285207 *)</code> Cf. <code>A285205, A285207, A285208</code>. easy.
+ * A285206 Positions of 0 in A285205; complement of A285207. Conjecture: -1 &lt; n*r - a(n) &lt; 1, where r = 1 + sqrt(1/3). As a word, A285205 = 01001010010010..., in which 0 is in positions 1,3,4,6,8,... s = Nest[Flatten[# /. {0 -&gt; {1, 0}, 1 -&gt; {0, 1, 0, 0}}] &amp;, {0}, 12]; (* A285205 *) Flatten[Position[s, 0]];  (* A285206 *) Flatten[Position[s, 1]];  (* A285207 *) Cf. A285205, A285207, A285208. easy.
  * @author Georg Fischer
  */
 public class A285206 extends PositionSequence {

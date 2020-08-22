@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032268 "DIJ" <code>(bracelet</code>, indistinct, labeled) transform of 3,3,3,3,...
+ * A032268 "DIJ" (bracelet, indistinct, labeled) transform of 3,3,3,3,...
  * @author Sean A. Irvine
  */
 public class A032268 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A083335 <code>a(n)=12a(n-2)-25a(n-4)</code>.
+ * A083335 a(n)=12a(n-2)-25a(n-4).
  * @author Sean A. Irvine
  */
 public class A083335 extends LinearRecurrence {

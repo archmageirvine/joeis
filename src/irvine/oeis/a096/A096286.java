@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A096286 Number of strongly balanced binary sequences of length <code>4n</code>.
+ * A096286 Number of strongly balanced binary sequences of length 4n.
  * @author Georg Fischer
  */
 public class A096286 extends PaddingSequence {

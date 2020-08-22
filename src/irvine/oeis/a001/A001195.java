@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001195 <code>Int(n*log((14/11)*n^(10/9)))</code>.
+ * A001195 Int(n*log((14/11)*n^(10/9))).
  * @author Sean A. Irvine
  */
 public class A001195 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a089;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A089483 Number of configurations of the sliding block 8-puzzle that require a minimum of n moves to be reached, starting with the empty square at <code>mid-side</code>.
+ * A089483 Number of configurations of the sliding block 8-puzzle that require a minimum of n moves to be reached, starting with the empty square at mid-side.
  * @author Georg Fischer
  */
 public class A089483 extends FiniteSequence {

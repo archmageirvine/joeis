@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019989 Indices n such that <code>A307672(2*n) = 0</code>.
+ * A019989 Indices n such that A307672(2*n) = 0.
  * @author Sean A. Irvine
  */
 public class A019989 implements Sequence {

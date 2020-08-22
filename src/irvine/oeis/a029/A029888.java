@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a001.A001285;
 
 /**
- * A029888 Convolution of Thue-Morse sequence <code>A001285</code> with primes.
+ * A029888 Convolution of Thue-Morse sequence A001285 with primes.
  * @author Sean A. Irvine
  */
 public class A029888 extends ConvolutionSequence {

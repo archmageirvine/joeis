@@ -5,7 +5,7 @@ package irvine.oeis.a125;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A125305 Number of 132-segmented permutations of length <code>n</code>.
+ * A125305 Number of 132-segmented permutations of length n.
  * @author Georg Fischer
  */
 public class A125305 extends HolonomicRecurrence {

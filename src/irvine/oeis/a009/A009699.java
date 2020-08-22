@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009699 Expansion of <code>tan(tan(x))*sinh(x)</code>.
+ * A009699 Expansion of tan(tan(x))*sinh(x).
  * @author Sean A. Irvine
  */
 public class A009699 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226784 If <code>gcd(n,6) != 1</code> then <code>a(n)=0</code>, otherwise <code>a(n)=6^(-1)</code> in <code>Z/nZ*</code>.
+ * A226784 If gcd(n,6) != 1 then a(n)=0, otherwise a(n)=6^(-1) in Z/nZ*.
  * @author Georg Fischer
  */
 public class A226784 extends GeneratingFunctionSequence {

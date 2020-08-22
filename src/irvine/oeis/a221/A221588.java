@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221588 Equals one maps: number of <code>n X 3</code> binary arrays indicating the locations of corresponding elements equal to exactly one of their king-move neighbors in a random <code>0..3 n X 3</code> array.
+ * A221588 Equals one maps: number of n X 3 binary arrays indicating the locations of corresponding elements equal to exactly one of their king-move neighbors in a random 0..3 n X 3 array.
  * @author Georg Fischer
  */
 public class A221588 extends GeneratingFunctionSequence {

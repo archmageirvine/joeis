@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031171 <code>a(n) = prime(n+9) - prime(n)</code>.
+ * A031171 a(n) = prime(n+9) - prime(n).
  * @author Sean A. Irvine
  */
 public class A031171 extends A031169 {

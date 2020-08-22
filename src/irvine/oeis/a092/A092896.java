@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A092896 Related to random walks on the <code>4-cube</code>.
+ * A092896 Related to random walks on the 4-cube.
  * @author Georg Fischer
  */
 public class A092896 extends LinearRecurrence {

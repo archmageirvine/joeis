@@ -4,7 +4,7 @@ package irvine.oeis.a218;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A218152 <code>a(n) = 1 + n + ((n-1)*n^2)/2</code>.
+ * A218152 a(n) = 1 + n + ((n-1)*n^2)/2.
  * @author Georg Fischer
  */
 public class A218152 extends GeneratingFunctionSequence {

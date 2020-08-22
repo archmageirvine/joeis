@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A217558 <code>Split-and-swap</code> on 8-bit integers.
+ * A217558 Split-and-swap on 8-bit integers.
  * @author Georg Fischer
  */
 public class A217558 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a289;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A289741 <code>a(n) =</code> Kronecker symbol <code>(-20/n)</code>.
+ * A289741 a(n) = Kronecker symbol (-20/n).
  * @author Georg Fischer
  */
 public class A289741 extends HolonomicRecurrence {

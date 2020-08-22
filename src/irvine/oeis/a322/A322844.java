@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A322844 <code>a(n) = (1/12)*n^2*(3*(1 + n^2) - 2*(2 + n^2)*(n mod 2))</code>.
+ * A322844 a(n) = (1/12)*n^2*(3*(1 + n^2) - 2*(2 + n^2)*(n mod 2)).
  * @author Georg Fischer
  */
 public class A322844 extends GeneratingFunctionSequence {

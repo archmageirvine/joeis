@@ -4,7 +4,7 @@ package irvine.oeis.a316;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A316261 The number of ways to induce a single pinch on a compact 2-manifold with n handles. <code>(Note</code>: The manifold is embedded in Euclidean <code>2-space</code>, and each pinch partitions it into at most two <code>submanifolds.)</code>.
+ * A316261 The number of ways to induce a single pinch on a compact 2-manifold with n handles. (Note: The manifold is embedded in Euclidean 2-space, and each pinch partitions it into at most two submanifolds.).
  * @author Georg Fischer
  */
 public class A316261 extends GeneratingFunctionSequence {

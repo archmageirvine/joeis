@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328180 <code>a(n)</code> is the maximum number of 5-cycles possible in an n-vertex planar graph.
+ * A328180 a(n) is the maximum number of 5-cycles possible in an n-vertex planar graph.
  * @author Georg Fischer
  */
 public class A328180 extends HolonomicRecurrence {

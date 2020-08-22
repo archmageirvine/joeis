@@ -7,7 +7,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A100852 Triangle read by rows: <code>T(n,k) = 2^k * 3^n, 0 &lt;= k &lt;= n</code>.
+ * A100852 Triangle read by rows: T(n,k) = 2^k * 3^n, 0 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A100852 extends GeneratingFunctionTriangle {

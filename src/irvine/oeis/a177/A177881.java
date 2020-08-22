@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177881 Partial sums of <code>round(3^n/10)</code>.
+ * A177881 Partial sums of round(3^n/10).
  * @author Sean A. Irvine
  */
 public class A177881 extends LinearRecurrence {

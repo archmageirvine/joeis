@@ -4,7 +4,7 @@ package irvine.oeis.a157;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A157052 Number of integer sequences of length <code>n+1</code> with sum zero and sum of absolute values 6.
+ * A157052 Number of integer sequences of length n+1 with sum zero and sum of absolute values 6.
  * @author Georg Fischer
  */
 public class A157052 extends GeneratingFunctionSequence {

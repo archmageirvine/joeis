@@ -3,7 +3,7 @@ package irvine.oeis.a133;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A133417 <code>a(n) = sqrt(2*(P(n)^4 + 16*P(n+1)^4 + P(n+2)^4))</code>, where <code>P() =</code> Pell numbers <code>A000129</code>.
+ * A133417 a(n) = sqrt(2*(P(n)^4 + 16*P(n+1)^4 + P(n+2)^4)), where P() = Pell numbers A000129.
  * @author Sean A. Irvine
  */
 public class A133417 extends LinearRecurrence {

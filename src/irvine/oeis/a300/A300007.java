@@ -5,7 +5,7 @@ package irvine.oeis.a300;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A300007 Index of the inverse/opposite of the <code>n-th 2 X 2</code> sandpile <code>A300006(n)</code>. An involution <code>(self-inverse</code> permutation) of the integers <code>[1..192]</code>.
+ * A300007 Index of the inverse/opposite of the n-th 2 X 2 sandpile A300006(n). An involution (self-inverse permutation) of the integers [1..192].
  * @author Georg Fischer
  */
 public class A300007 extends FiniteSequence {

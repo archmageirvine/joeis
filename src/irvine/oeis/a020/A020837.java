@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A020837 Decimal expansion of <code>1/sqrt(80) = sqrt(5)/20</code>.
+ * A020837 Decimal expansion of 1/sqrt(80) = sqrt(5)/20.
  * @author Sean A. Irvine
  */
 public class A020837 extends DecimalExpansionSequence {

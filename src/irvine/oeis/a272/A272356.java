@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007504;
 
 
 /**
- * A272356 <code>(Sum_{i=1..n} prime(i)) mod 4</code>.
+ * A272356 (Sum_{i=1..n} prime(i)) mod 4.
  * @author Georg Fischer
  */
 public class A272356 extends A007504 {

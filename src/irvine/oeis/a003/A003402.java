@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003402 G.f.: <code>1/((1-x)*(1-x^2)*(1-x^3)^2*(1-x^4)*(1-x^5))</code>.
+ * A003402 G.f.: 1/((1-x)*(1-x^2)*(1-x^3)^2*(1-x^4)*(1-x^5)).
  * @author Sean A. Irvine
  */
 public class A003402 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A260595 The binary expansion of <code>log(3)/log(2)</code>.
+ * A260595 The binary expansion of log(3)/log(2).
  * @author Georg Fischer
  */
 public class A260595 extends DecimalExpansionSequence {

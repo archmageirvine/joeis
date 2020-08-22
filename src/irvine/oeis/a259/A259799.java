@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A259799 Array read by antidiagonals upwards: <code>T(n,k) =</code> number of partitions of <code>k^n</code> into n-th powers <code>(n&gt;=1, k&gt;=0)</code>.
+ * A259799 Array read by antidiagonals upwards: T(n,k) = number of partitions of k^n into n-th powers (n&gt;=1, k&gt;=0).
  * @author Sean A. Irvine
  */
 public class A259799 extends MemoryFunction3<Long, Z> implements Sequence {

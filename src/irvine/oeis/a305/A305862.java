@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305862 <code>a(n) = 384*4^n - 576*3^n + 220*2^n - 14</code>.
+ * A305862 a(n) = 384*4^n - 576*3^n + 220*2^n - 14.
  * @author Georg Fischer
  */
 public class A305862 extends GeneratingFunctionSequence {

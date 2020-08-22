@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025021 Least <code>non-residue mod n</code> is 3.
+ * A025021 Least non-residue mod n is 3.
  * @author Sean A. Irvine
  */
 public class A025021 implements Sequence {

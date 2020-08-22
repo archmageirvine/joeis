@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190864 Expansion of <code>1/(1-x*sqrt(1+4*x^2))</code>.
+ * A190864 Expansion of 1/(1-x*sqrt(1+4*x^2)).
  * @author Georg Fischer
  */
 public class A190864 extends HolonomicRecurrence {

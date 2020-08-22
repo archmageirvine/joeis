@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A131284 Numbers n such that difference between prime factors of n-th semiprime is <code>n</code>.
+ * A131284 Numbers n such that difference between prime factors of n-th semiprime is n.
  * @author Sean A. Irvine
  */
 public class A131284 implements Sequence {

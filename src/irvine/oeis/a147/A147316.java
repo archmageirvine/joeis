@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147316 Fibonacci numbers <code>(A000045)</code> starting at offset -20.
+ * A147316 Fibonacci numbers (A000045) starting at offset -20.
  * @author Sean A. Irvine
  */
 public class A147316 extends LinearRecurrence {

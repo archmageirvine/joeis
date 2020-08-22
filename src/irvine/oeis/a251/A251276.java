@@ -4,7 +4,7 @@ package irvine.oeis.a251;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A251276 Number of <code>(n+1) X (1+1) 0..3</code> arrays with no <code>2 X 2</code> subblock having its maximum diagonal element less than its minimum antidiagonal element.
+ * A251276 Number of (n+1) X (1+1) 0..3 arrays with no 2 X 2 subblock having its maximum diagonal element less than its minimum antidiagonal element.
  * @author Georg Fischer
  */
 public class A251276 extends GeneratingFunctionSequence {

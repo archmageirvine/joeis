@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009395 E.g.f.: <code>log(1 + tanh(x)*exp(x))</code>.
+ * A009395 E.g.f.: log(1 + tanh(x)*exp(x)).
  * @author Sean A. Irvine
  */
 public class A009395 implements Sequence {

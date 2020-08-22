@@ -3,7 +3,7 @@ package irvine.oeis.a061;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A061005 (Nearest integer to <code>n^6/36) / 2</code>.
+ * A061005 (Nearest integer to n^6/36) / 2.
  * @author Sean A. Irvine
  */
 public class A061005 extends LinearRecurrence {

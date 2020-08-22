@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053655 <code>a(n) = (10^n - 1)*(10^(2*n-1) - 1)/81</code>.
+ * A053655 a(n) = (10^n - 1)*(10^(2*n-1) - 1)/81.
  * @author Sean A. Irvine
  */
 public class A053655 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A229481 Final digit of <code>1^n + 2^n + ... + n^n</code>.
+ * A229481 Final digit of 1^n + 2^n + ... + n^n.
  * @author Georg Fischer
  */
 public class A229481 extends PaddingSequence {

@@ -5,7 +5,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a008.A008683;
 
 /**
- * A014193 n-th prime <code>+ mu(n)</code>.
+ * A014193 n-th prime + mu(n).
  * @author Sean A. Irvine
  */
 public class A014193 extends A000040 {

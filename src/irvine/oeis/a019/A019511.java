@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A019511 <code>a(n+1) (n &gt;= 1)</code> is smallest number <code>&gt; a(n)</code> which is the sum of cubes of distinct earlier terms.
+ * A019511 a(n+1) (n &gt;= 1) is smallest number &gt; a(n) which is the sum of cubes of distinct earlier terms.
  * @author Sean A. Irvine
  */
 public class A019511 extends MemorySequence {

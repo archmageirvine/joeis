@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033559 <code>a(n) = (q - p)/2</code>, where p is the largest prime <code>&lt; n</code> and q is the smallest prime <code>&gt; n</code>.
+ * A033559 a(n) = (q - p)/2, where p is the largest prime &lt; n and q is the smallest prime &gt; n.
  * @author Sean A. Irvine
  */
 public class A033559 implements Sequence {

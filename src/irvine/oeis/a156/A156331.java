@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A156331 <code>a(n)=8*A154811(n)</code>.
+ * A156331 a(n)=8*A154811(n).
  * @author Georg Fischer
  */
 public class A156331 extends HolonomicRecurrence {

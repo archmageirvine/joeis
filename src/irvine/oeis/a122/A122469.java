@@ -5,7 +5,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122469 Write Roman numerals I, V, X, L, C, D, M in increasing order: <code>[I], [I][V], [I][V][X]</code>, ..., etc.
+ * A122469 Write Roman numerals I, V, X, L, C, D, M in increasing order: [I], [I][V], [I][V][X], ..., etc.
  * @author Georg Fischer
  */
 public class A122469 extends FiniteSequence {

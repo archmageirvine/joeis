@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A226867 Number of <code>n X 3 (-1,0,1)</code> arrays of determinants of <code>2 X 2</code> subblocks of some <code>(n+1) X 4</code> binary array with rows and columns of the latter in lexicographically nondecreasing order.
+ * A226867 Number of n X 3 (-1,0,1) arrays of determinants of 2 X 2 subblocks of some (n+1) X 4 binary array with rows and columns of the latter in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A226867 extends GeneratingFunctionSequence {

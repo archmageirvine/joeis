@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008411 Theta series of direct sum of 3 copies of <code>E_8</code> lattice (the Niemeier lattice of type <code>E_8^3)</code>.
+ * A008411 Theta series of direct sum of 3 copies of E_8 lattice (the Niemeier lattice of type E_8^3).
  * @author Sean A. Irvine
  */
 public class A008411 implements Sequence {

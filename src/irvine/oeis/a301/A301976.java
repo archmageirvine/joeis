@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301976 Number of no-leaf subgraphs of the <code>3 X n</code> grid.
+ * A301976 Number of no-leaf subgraphs of the 3 X n grid.
  * @author Georg Fischer
  */
 public class A301976 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 
 
 /**
- * A042987 Primes congruent to <code>{2, 3, 5, 7} mod 8</code>.
+ * A042987 Primes congruent to {2, 3, 5, 7} mod 8.
  * @author Sean Irvine
  */
 public class A042987 extends A000040 {

@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002193;
 
 
 /**
- * A054298 Positions of <code>2</code>'s in the decimal expansion of <code>sqrt(2)</code>.
+ * A054298 Positions of 2's in the decimal expansion of sqrt(2).
  * @author Georg Fischer
  */
 public class A054298 extends PositionSequence {

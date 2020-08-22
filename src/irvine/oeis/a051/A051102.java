@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A051102 Floor of <code>exp(n-th</code> prime).
+ * A051102 Floor of exp(n-th prime).
  * @author Georg Fischer
  */
 public class A051102 extends A000040 {

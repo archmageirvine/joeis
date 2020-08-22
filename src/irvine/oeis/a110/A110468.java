@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110468 <code>a(n) = (2*n + 1)!/(n + 1)</code>.
+ * A110468 a(n) = (2*n + 1)!/(n + 1).
  * @author Georg Fischer
  */
 public class A110468 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A129995 <code>a(n) = (n + 1)*(n^2 + 2)*(n^3 + 3)*(n^4 + 4)/4!</code>.
+ * A129995 a(n) = (n + 1)*(n^2 + 2)*(n^3 + 3)*(n^4 + 4)/4!.
  * @author Georg Fischer
  */
 public class A129995 extends GeneratingFunctionSequence {

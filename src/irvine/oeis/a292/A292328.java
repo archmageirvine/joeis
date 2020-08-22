@@ -3,7 +3,7 @@ package irvine.oeis.a292;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A292328 p-INVERT of the Fibonacci sequence <code>(A000045)</code>, where <code>p(S) = (1 - S)^3</code>.
+ * A292328 p-INVERT of the Fibonacci sequence (A000045), where p(S) = (1 - S)^3.
  * @author Sean A. Irvine
  */
 public class A292328 extends LinearRecurrence {

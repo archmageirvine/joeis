@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A176635 <code>a(n) = 6*a(n-1)-8*a(n-2)</code> for <code>n &gt; 1; a(0) = 57, a(1) = 242</code>.
+ * A176635 a(n) = 6*a(n-1)-8*a(n-2) for n &gt; 1; a(0) = 57, a(1) = 242.
  * @author Georg Fischer
  */
 public class A176635 extends LinearRecurrence {

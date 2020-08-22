@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005261 <code>a(n) = Sum_{k = 0..n} C(n,k)^5</code>.
+ * A005261 a(n) = Sum_{k = 0..n} C(n,k)^5.
  * @author Sean A. Irvine
  */
 public class A005261 implements Sequence {

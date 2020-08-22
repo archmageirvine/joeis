@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A090076 <code>a(n) = prime(n)*prime(n+2)</code>.
+ * A090076 a(n) = prime(n)*prime(n+2).
  * @author Sean A. Irvine
  */
 public class A090076 extends A000040 {

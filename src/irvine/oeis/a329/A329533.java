@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a051.A051924;
 
 /**
- * A329533 First differences of <code>A051924</code>, or second differences of Central binomial coefficients <code>A000984</code>.
+ * A329533 First differences of A051924, or second differences of Central binomial coefficients A000984.
  * @author Georg Fischer
  */
 public class A329533 extends DifferenceSequence {

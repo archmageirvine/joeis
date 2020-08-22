@@ -4,7 +4,7 @@ package irvine.oeis.a123;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A123127 Coefficient of <code>X^3</code> in the characteristic polynomial of the n-th power of the matrix <code>M={{1,1,1,1,1},{1,0,0,0,0},{0,1,0,0,0},{0,0,1,0,0},{0,0,0,1,0}}</code>.
+ * A123127 Coefficient of X^3 in the characteristic polynomial of the n-th power of the matrix M={{1,1,1,1,1},{1,0,0,0,0},{0,1,0,0,0},{0,0,1,0,0},{0,0,0,1,0}}.
  * @author Georg Fischer
  */
 public class A123127 extends GeneratingFunctionSequence {

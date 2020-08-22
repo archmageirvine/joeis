@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093969 <code>a(n) = n*Pell(n-2)</code>.
+ * A093969 a(n) = n*Pell(n-2).
  * @author Sean A. Irvine
  */
 public class A093969 extends LinearRecurrence {

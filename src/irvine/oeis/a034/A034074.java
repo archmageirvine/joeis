@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034074 <code>a(0)=2; a(n)</code> is the smallest k <code>&gt; a(n-1)</code> such that the fractional part of <code>k^(1/9)</code> starts with <code>n</code>.
+ * A034074 a(0)=2; a(n) is the smallest k &gt; a(n-1) such that the fractional part of k^(1/9) starts with n.
  * @author Sean A. Irvine
  */
 public class A034074 implements Sequence {

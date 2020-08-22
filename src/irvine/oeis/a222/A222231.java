@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A222231 In the number n, replace all (decimal) digits <code>'2'</code> with <code>'7'</code> and vice versa.
+ * A222231 In the number n, replace all (decimal) digits '2' with '7' and vice versa.
  * @author Georg Fischer
  */
 public class A222231 extends A001477 {

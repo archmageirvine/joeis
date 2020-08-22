@@ -4,7 +4,7 @@ package irvine.oeis.a076;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A076536 Image of n at the third step in the <code>3x+1</code> Problem: <code>syr(3,n)</code>.
+ * A076536 Image of n at the third step in the 3x+1 Problem: syr(3,n).
  * @author Georg Fischer
  */
 public class A076536 extends GeneratingFunctionSequence {

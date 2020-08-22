@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304167 <code>a(n) = 3^n - 2^(n-1) + 2 (n&gt;=1)</code>.
+ * A304167 a(n) = 3^n - 2^(n-1) + 2 (n&gt;=1).
  * @author Georg Fischer
  */
 public class A304167 extends GeneratingFunctionSequence {

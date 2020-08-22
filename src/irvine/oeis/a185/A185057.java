@@ -5,7 +5,7 @@ package irvine.oeis.a185;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A185057 <code>a(n) = n^n! (mod 5)</code>.
+ * A185057 a(n) = n^n! (mod 5).
  * @author Georg Fischer
  */
 public class A185057 extends HolonomicRecurrence {

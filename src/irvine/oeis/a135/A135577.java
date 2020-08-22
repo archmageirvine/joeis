@@ -4,7 +4,7 @@ package irvine.oeis.a135;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A135577 Numbers that have only the digit <code>"1"</code> as first, central and final digit. For numbers with 5 or more digits the rest of digits are <code>"0"</code>.
+ * A135577 Numbers that have only the digit "1" as first, central and final digit. For numbers with 5 or more digits the rest of digits are "0".
  * @author Georg Fischer
  */
 public class A135577 extends GeneratingFunctionSequence {

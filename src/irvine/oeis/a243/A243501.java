@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003961;
 
 /**
- * A243501 Permutation of even numbers: <code>a(n) = 2*A048673(n)</code>.
+ * A243501 Permutation of even numbers: a(n) = 2*A048673(n).
  * @author Georg Fischer
  */
 public class A243501 extends A003961 {

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A000369 Triangle of numbers related to triangle <code>A049213;</code> generalization of Stirling numbers of second kind <code>A008277</code>, Bessel triangle <code>A001497</code>.
+ * A000369 Triangle of numbers related to triangle A049213; generalization of Stirling numbers of second kind A008277, Bessel triangle A001497.
  * @author Sean A. Irvine
  */
 public class A000369 implements Sequence {

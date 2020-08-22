@@ -3,7 +3,7 @@ package irvine.oeis.a115;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A115565 <code>a(n) = 5*n^4 - 10*n^3 + 20*n^2 - 15*n + 11</code>.
+ * A115565 a(n) = 5*n^4 - 10*n^3 + 20*n^2 - 15*n + 11.
  * @author Sean A. Irvine
  */
 public class A115565 extends LinearRecurrence {

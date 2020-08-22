@@ -4,7 +4,7 @@ package irvine.oeis.a289;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A289693 The number of partitions of <code>[n]</code> with exactly 3 blocks without peaks.
+ * A289693 The number of partitions of [n] with exactly 3 blocks without peaks.
  * @author Georg Fischer
  */
 public class A289693 extends GeneratingFunctionSequence {

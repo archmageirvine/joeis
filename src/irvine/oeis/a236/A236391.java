@@ -3,7 +3,7 @@ package irvine.oeis.a236;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A236391 Positive numbers n such that <code>100*n^2/(100+n^2)</code> are integers.
+ * A236391 Positive numbers n such that 100*n^2/(100+n^2) are integers.
  * @author Georg Fischer
  */
 public class A236391 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A077016 <code>a(1) = 1, a(2) = 4</code>, continue by dividing by the smallest prime not used earlier and multiplying with the smallest composite number just greater than the previous prime used in the division and then take the integer part at every step.
+ * A077016 a(1) = 1, a(2) = 4, continue by dividing by the smallest prime not used earlier and multiplying with the smallest composite number just greater than the previous prime used in the division and then take the integer part at every step.
  * @author Georg Fischer
  */
 public class A077016 extends PaddingSequence {

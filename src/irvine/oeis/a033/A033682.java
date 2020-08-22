@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033682 Numbers of the form <code>(q^2+(q+1)^2)*(r^2+(r+1)^2)</code>, q,r <code>&gt;= 1</code>.
+ * A033682 Numbers of the form (q^2+(q+1)^2)*(r^2+(r+1)^2), q,r &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A033682 implements Sequence {

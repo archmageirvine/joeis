@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000094;
 
 /**
- * A083751 Number of partitions of n into <code>&gt;= 2</code> parts and with minimum part <code>&gt;= 2</code>.
+ * A083751 Number of partitions of n into &gt;= 2 parts and with minimum part &gt;= 2.
  * @author Georg Fischer
  */
 public class A083751 extends DifferenceSequence {

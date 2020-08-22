@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A122106 Numbers of the form <code>(1+2n^2+3n^3)/(2n-1)</code>.
+ * A122106 Numbers of the form (1+2n^2+3n^3)/(2n-1).
  * @author Georg Fischer
  */
 public class A122106 extends FiniteSequence {

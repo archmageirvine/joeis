@@ -5,7 +5,7 @@ package irvine.oeis.a183;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A183069 L.g.f.: <code>Sum_{n&gt;=1,k&gt;=0} CATALAN(n,k)^2 * x^(n+k)/n = Sum_{n&gt;=1} a(n)*x^n/n</code>, where <code>CATALAN(n,k) = n*C(n+2*k-1,k)/(n+k)</code> is the coefficient of <code>x^k</code> in <code>C(x)^n</code> and <code>C(x)</code> is the g.f. of the Catalan numbers.
+ * A183069 L.g.f.: Sum_{n&gt;=1,k&gt;=0} CATALAN(n,k)^2 * x^(n+k)/n = Sum_{n&gt;=1} a(n)*x^n/n, where CATALAN(n,k) = n*C(n+2*k-1,k)/(n+k) is the coefficient of x^k in C(x)^n and C(x) is the g.f. of the Catalan numbers.
  * @author Georg Fischer
  */
 public class A183069 extends HolonomicRecurrence {

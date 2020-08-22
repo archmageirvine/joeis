@@ -4,7 +4,7 @@ package irvine.oeis.a183;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A183981 1/4 the number of <code>(n+1) X 5</code> binary arrays with all <code>2 X 2</code> subblock sums the same.
+ * A183981 1/4 the number of (n+1) X 5 binary arrays with all 2 X 2 subblock sums the same.
  * @author Georg Fischer
  */
 public class A183981 extends GeneratingFunctionSequence {

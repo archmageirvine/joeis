@@ -5,7 +5,7 @@ package irvine.oeis.a152;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A152257 <code>a(n) = (3^n - 1)^2*(3^n + 1)/16</code>.
+ * A152257 a(n) = (3^n - 1)^2*(3^n + 1)/16.
  * @author Georg Fischer
  */
 public class A152257 extends HolonomicRecurrence {

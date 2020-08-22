@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121205 <code>"666"</code> in bases 7 and higher rewritten in base 10.
+ * A121205 "666" in bases 7 and higher rewritten in base 10.
  * @author Sean A. Irvine
  */
 public class A121205 extends LinearRecurrence {

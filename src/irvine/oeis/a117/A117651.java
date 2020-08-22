@@ -4,7 +4,7 @@ package irvine.oeis.a117;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A117651 <code>A002415</code> and <code>A052472</code> interlaced.
+ * A117651 A002415 and A052472 interlaced.
  * @author Georg Fischer
  */
 public class A117651 extends LinearRecurrence {

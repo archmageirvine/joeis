@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A001360 Crystal ball sequence for hyperbolic tessellation <code>3^7</code> (from triangle group <code>(2,3,7))</code>.
+ * A001360 Crystal ball sequence for hyperbolic tessellation 3^7 (from triangle group (2,3,7)).
  * @author Sean A. Irvine
  */
 public class A001360 extends LinearRecurrence {

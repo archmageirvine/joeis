@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033551 Closest integer to <code>(Pi/4)*n^2</code>.
+ * A033551 Closest integer to (Pi/4)*n^2.
  * @author Sean A. Irvine
  */
 public class A033551 implements Sequence {

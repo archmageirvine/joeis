@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A139384 The number of 3-digit multiples of n whose digits sum to <code>n</code>.
+ * A139384 The number of 3-digit multiples of n whose digits sum to n.
  * @author Georg Fischer
  */
 public class A139384 extends FiniteSequence {

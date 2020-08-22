@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027748 Irregular triangle in which first row is <code>1, n-th</code> row <code>(n &gt; 1)</code> lists distinct prime factors of <code>n</code>.
+ * A027748 Irregular triangle in which first row is 1, n-th row (n &gt; 1) lists distinct prime factors of n.
  * @author Sean A. Irvine
  */
 public class A027748 implements Sequence {

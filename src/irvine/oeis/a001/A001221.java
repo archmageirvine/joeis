@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001221 Number of distinct primes dividing <code>n</code> (also called <code>omega(n))</code>.
+ * A001221 Number of distinct primes dividing n (also called omega(n)).
  * @author Sean A. Irvine
  */
 public class A001221 implements Sequence {

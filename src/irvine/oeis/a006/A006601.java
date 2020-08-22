@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006601 Numbers n such that n, <code>n+1, n+2</code> and <code>n+3</code> have the same number of divisors.
+ * A006601 Numbers n such that n, n+1, n+2 and n+3 have the same number of divisors.
  * @author Sean A. Irvine
  */
 public class A006601 implements Sequence {

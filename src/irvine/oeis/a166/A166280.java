@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008277;
 
 
 /**
- * A166280 <code>Stirling2</code> triangle <code>mod 2, T(n,k) = A008277(n,k) mod 2</code>.
+ * A166280 Stirling2 triangle mod 2, T(n,k) = A008277(n,k) mod 2.
  * @author Georg Fischer
  */
 public class A166280 extends A008277 {

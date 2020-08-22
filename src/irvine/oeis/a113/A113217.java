@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010888;
 
 /**
- * A113217 Parity of decimal digital root of <code>n</code>.
+ * A113217 Parity of decimal digital root of n.
  * @author Georg Fischer
  */
 public class A113217 extends A010888 {

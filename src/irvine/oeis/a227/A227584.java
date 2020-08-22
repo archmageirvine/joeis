@@ -6,7 +6,7 @@ package irvine.oeis.a227;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A227584 Number of lattice paths from <code>{4}^n</code> to <code>{0}^n</code> using steps that decrement one component such that for each point <code>(p_1,p_2,...,p_n)</code> we have <code>p_1&lt;=p_2&lt;=...&lt;=p_n</code>.
+ * A227584 Number of lattice paths from {4}^n to {0}^n using steps that decrement one component such that for each point (p_1,p_2,...,p_n) we have p_1&lt;=p_2&lt;=...&lt;=p_n.
  * @author Georg Fischer
  */
 public class A227584 extends HolonomicRecurrence {

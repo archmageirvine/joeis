@@ -5,7 +5,7 @@ package irvine.oeis.a278;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A278336 Numbers n such that <code>(94*10^k - 7) / 3</code> is prime.
+ * A278336 Numbers n such that (94*10^k - 7) / 3 is prime.
  * @author Georg Fischer
  */
 public class A278336 extends PowerFactorPrimeSequence {

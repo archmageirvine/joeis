@@ -4,7 +4,7 @@ package irvine.oeis.a142;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A142588 A trisection of <code>A000129</code>, the Pell numbers.
+ * A142588 A trisection of A000129, the Pell numbers.
  * @author Georg Fischer
  */
 public class A142588 extends GeneratingFunctionSequence {

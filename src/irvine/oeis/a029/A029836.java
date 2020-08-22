@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A029836 <code>log( n-th</code> prime) rounded to nearest integer.
+ * A029836 log( n-th prime) rounded to nearest integer.
  * @author Sean A. Irvine
  */
 public class A029836 extends A000040 {

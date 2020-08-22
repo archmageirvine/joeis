@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025012 Central heptanomial coefficients: largest coefficient of <code>(1+x+...+x^6)^n</code>.
+ * A025012 Central heptanomial coefficients: largest coefficient of (1+x+...+x^6)^n.
  * @author Sean A. Irvine
  */
 public class A025012 implements Sequence {

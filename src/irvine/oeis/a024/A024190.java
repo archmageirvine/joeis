@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024190 <code>[ (2nd</code> elementary symmetric function of <code>3,4,...,n+3)/(3+4+...+n+3) ]</code>.
+ * A024190 [ (2nd elementary symmetric function of 3,4,...,n+3)/(3+4+...+n+3) ].
  * @author Sean A. Irvine
  */
 public class A024190 implements Sequence {

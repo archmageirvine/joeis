@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003573 Order of <code>4 mod 4n+1</code>.
+ * A003573 Order of 4 mod 4n+1.
  * @author Sean A. Irvine
  */
 public class A003573 implements Sequence {

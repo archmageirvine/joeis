@@ -6,7 +6,7 @@ package irvine.oeis.a180;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A180255 <code>a(n)=n^2*a(n-1)+n, a(0)=0</code>.
+ * A180255 a(n)=n^2*a(n-1)+n, a(0)=0.
  * @author Georg Fischer
  */
 public class A180255 extends HolonomicRecurrence {

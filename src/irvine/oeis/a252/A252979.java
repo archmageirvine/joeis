@@ -4,7 +4,7 @@ package irvine.oeis.a252;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A252979 Number of <code>n X 4</code> nonnegative integer arrays with upper left 0 and lower right its king-move distance away minus 2 and every value increasing by 0 or 1 with every step right, diagonally se or down.
+ * A252979 Number of n X 4 nonnegative integer arrays with upper left 0 and lower right its king-move distance away minus 2 and every value increasing by 0 or 1 with every step right, diagonally se or down.
  * @author Georg Fischer
  */
 public class A252979 extends GeneratingFunctionSequence {

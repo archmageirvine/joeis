@@ -5,7 +5,7 @@ package irvine.oeis.a136;
 import irvine.oeis.SquareDigitsSequence;
 
 /**
- * A136808 Numbers k such that k and the square of k contain only the digits <code>0, 1</code> and 2.
+ * A136808 Numbers k such that k and the square of k contain only the digits 0, 1 and 2.
  * @author Georg Fischer
  */
 public class A136808 extends SquareDigitsSequence {

@@ -5,7 +5,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A030058 Least non-sum of divisors of n for some <code>n &gt;= 1</code>.
+ * A030058 Least non-sum of divisors of n for some n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A030058 extends A030057 {

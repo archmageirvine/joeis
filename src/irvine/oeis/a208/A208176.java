@@ -4,7 +4,7 @@ package irvine.oeis.a208;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A208176 <code>a(n) = F(n+1)^2</code>, if <code>n&gt;=0</code> is even <code>(F=A000045)</code> and <code>a(n) = (L(2n+2)+8)/5</code>, if n is odd <code>(L=A000204)</code>.
+ * A208176 a(n) = F(n+1)^2, if n&gt;=0 is even (F=A000045) and a(n) = (L(2n+2)+8)/5, if n is odd (L=A000204).
  * @author Georg Fischer
  */
 public class A208176 extends GeneratingFunctionSequence {

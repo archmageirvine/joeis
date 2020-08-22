@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165720 Integers of the form <code>k*(k+11)/10</code>.
+ * A165720 Integers of the form k*(k+11)/10.
  * @author Georg Fischer
  */
 public class A165720 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032633 <code>[ n^3 /</code> pi <code>]</code>.
+ * A032633 [ n^3 / pi ].
  * @author Sean A. Irvine
  */
 public class A032633 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A031449 Numbers n which in base 2 have two fewer <code>0</code>'s than <code>1</code>'s.
+ * A031449 Numbers n which in base 2 have two fewer 0's than 1's.
  * @author Sean A. Irvine
  */
 public class A031449 implements Sequence {

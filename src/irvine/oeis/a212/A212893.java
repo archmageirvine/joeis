@@ -5,7 +5,7 @@ package irvine.oeis.a212;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A212893 Number of quadruples <code>(w,x,y,z)</code> with all terms in <code>{0,...,n}</code> such that <code>w-x, x-y</code>, and y-z all have the same parity.
+ * A212893 Number of quadruples (w,x,y,z) with all terms in {0,...,n} such that w-x, x-y, and y-z all have the same parity.
  * @author Georg Fischer
  */
 public class A212893 extends HolonomicRecurrence {

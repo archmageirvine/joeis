@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000535 Card matching: coefficients <code>B[n,2]</code> of <code>t^2</code> in the reduced hit polynomial <code>A[n,n,n](t)</code>.
+ * A000535 Card matching: coefficients B[n,2] of t^2 in the reduced hit polynomial A[n,n,n](t).
  * @author Sean A. Irvine
  */
 public class A000535 implements Sequence {

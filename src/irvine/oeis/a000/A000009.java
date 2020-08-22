@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A000009 Expansion of <code>Product_{m &gt;= 1} (1 + x^m);</code> number of partitions of n into distinct parts; number of partitions of n into odd parts.
+ * A000009 Expansion of Product_{m &gt;= 1} (1 + x^m); number of partitions of n into distinct parts; number of partitions of n into odd parts.
  * @author Sean A. Irvine
  */
 public class A000009 extends MemorySequence {

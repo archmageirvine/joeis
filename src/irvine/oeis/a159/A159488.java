@@ -6,7 +6,7 @@ package irvine.oeis.a159;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A159488 Numerator of <code>Hermite(n, 1/13)</code>.
+ * A159488 Numerator of Hermite(n, 1/13).
  * @author Georg Fischer
  */
 public class A159488 extends HolonomicRecurrence {

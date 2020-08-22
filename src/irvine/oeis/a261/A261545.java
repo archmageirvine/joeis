@@ -3,7 +3,7 @@ package irvine.oeis.a261;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A261545 <code>a(n)</code> indicates which letter of the English alphabet is the n-th most common.
+ * A261545 a(n) indicates which letter of the English alphabet is the n-th most common.
  * @author Georg Fischer
  */
 public class A261545 extends FiniteSequence {

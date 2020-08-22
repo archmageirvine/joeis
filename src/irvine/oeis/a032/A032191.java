@@ -3,7 +3,7 @@ package irvine.oeis.a032;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A032191 Number of necklaces with 6 black beads and <code>n-6</code> white beads.
+ * A032191 Number of necklaces with 6 black beads and n-6 white beads.
  * @author Sean A. Irvine
  */
 public class A032191 extends LinearRecurrence {

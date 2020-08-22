@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007318;
 
 
 /**
- * A047999 Sierpi\u0144ski's <code>[Sierpinski's]</code> triangle (or <code>gasket)</code>: triangle, read by rows, formed by reading Pascal's triangle <code>mod 2</code>.
+ * A047999 Sierpi\u0144ski's [Sierpinski's] triangle (or gasket): triangle, read by rows, formed by reading Pascal's triangle mod 2.
  * @author Georg Fischer
  */
 public class A047999 extends A007318 {

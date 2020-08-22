@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A328852 Quotients of consecutive terms of <code>A328549</code>.
+ * A328852 Quotients of consecutive terms of A328549.
  * @author Georg Fischer
  */
 public class A328852 extends FiniteSequence {

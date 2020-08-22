@@ -6,7 +6,7 @@ package irvine.oeis.a285;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A285238 Number of entries in the tenth cycles of all permutations of <code>[n]</code>.
+ * A285238 Number of entries in the tenth cycles of all permutations of [n].
  * @author Georg Fischer
  */
 public class A285238 extends HolonomicRecurrence {

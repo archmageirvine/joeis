@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A025552 LCM of <code>{C(0,0), C(1,0)</code>, ..., <code>C(n, floor(n/2))}</code>.
+ * A025552 LCM of {C(0,0), C(1,0), ..., C(n, floor(n/2))}.
  * @author Sean A. Irvine
  */
 public class A025552 extends A003418 {

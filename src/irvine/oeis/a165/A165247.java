@@ -4,7 +4,7 @@ package irvine.oeis.a165;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A165247 <code>a(n) = (10^n + 71)/9</code>.
+ * A165247 a(n) = (10^n + 71)/9.
  * @author Georg Fischer
  */
 public class A165247 extends GeneratingFunctionSequence {

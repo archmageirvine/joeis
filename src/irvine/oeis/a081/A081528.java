@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003418;
 
 /**
- * A081528 <code>a(n) = n*lcm{1,2,...,n}</code>.
+ * A081528 a(n) = n*lcm{1,2,...,n}.
  * @author Georg Fischer
  */
 public class A081528 extends A003418 {

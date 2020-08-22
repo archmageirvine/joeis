@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A250091 Decimal expansion of <code>1+2^(1/2)+3^(1/3)+4^(1/4)+5^(1/5)+6^(1/6)+7^(1/7)</code>.
+ * A250091 Decimal expansion of 1+2^(1/2)+3^(1/3)+4^(1/4)+5^(1/5)+6^(1/6)+7^(1/7).
  * @author Georg Fischer
  */
 public class A250091 extends DecimalExpansionSequence {

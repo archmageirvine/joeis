@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277667 Number of n-length words over a quaternary alphabet <code>{a_1,a_2,...,a_4}</code> avoiding consecutive letters <code>a_i, a_{i+1}</code>.
+ * A277667 Number of n-length words over a quaternary alphabet {a_1,a_2,...,a_4} avoiding consecutive letters a_i, a_{i+1}.
  * @author Sean A. Irvine
  */
 public class A277667 extends LinearRecurrence {

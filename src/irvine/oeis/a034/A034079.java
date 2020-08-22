@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034079 Decimal part of n-th root of <code>a(n)</code> starts with digit 2.
+ * A034079 Decimal part of n-th root of a(n) starts with digit 2.
  * @author Sean A. Irvine
  */
 public class A034079 implements Sequence {

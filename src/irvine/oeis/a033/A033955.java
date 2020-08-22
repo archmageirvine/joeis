@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033955 <code>a(n) =</code> sum of the remainders when the n-th prime is divided by primes up to the <code>(n-1)-th</code> prime.
+ * A033955 a(n) = sum of the remainders when the n-th prime is divided by primes up to the (n-1)-th prime.
  * @author Sean A. Irvine
  */
 public class A033955 implements Sequence {

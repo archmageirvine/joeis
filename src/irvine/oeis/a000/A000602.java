@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000602 Number of n-node unrooted quartic trees; number of n-carbon alkanes <code>C(n)H(2n+2)</code> ignoring stereoisomers.
+ * A000602 Number of n-node unrooted quartic trees; number of n-carbon alkanes C(n)H(2n+2) ignoring stereoisomers.
  * @author Sean A. Irvine
  */
 public class A000602 implements Sequence {

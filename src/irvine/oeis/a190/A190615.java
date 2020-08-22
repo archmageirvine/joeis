@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A190615 Expansion of <code>f(x^2) * f(x^3) / (chi(x) * chi(x^6))</code> in powers of x where <code>f(), chi()</code> are Ramanujan theta functions.
+ * A190615 Expansion of f(x^2) * f(x^3) / (chi(x) * chi(x^6)) in powers of x where f(), chi() are Ramanujan theta functions.
  * @author Georg Fischer
  */
 public class A190615 extends EulerTransform {

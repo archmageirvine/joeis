@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.DynamicArray;
 
 /**
- * A000230 <code>a(0)=2;</code> for <code>n&gt;=1, a(n) =</code> smallest prime p such that there is a gap of exactly <code>2n</code> between p and next prime, or -1 if no such prime exists.
+ * A000230 a(0)=2; for n&gt;=1, a(n) = smallest prime p such that there is a gap of exactly 2n between p and next prime, or -1 if no such prime exists.
  * @author Sean A. Irvine
  */
 public class A000230 implements Sequence {

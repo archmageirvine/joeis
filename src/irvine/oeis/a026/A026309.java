@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026309 <code>a(n) = n-th</code> nonnegative integer k satisfying <code>sin(k) &lt; sin(k+1)</code>.
+ * A026309 a(n) = n-th nonnegative integer k satisfying sin(k) &lt; sin(k+1).
  * @author Sean A. Irvine
  */
 public class A026309 implements Sequence {

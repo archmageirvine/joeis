@@ -10,7 +10,7 @@ import irvine.oeis.BikTransformSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A032130 Shifts left under the "BIK" <code>(reversible</code>, indistinct, unlabeled) transform with <code>a(1) = 2</code>.
+ * A032130 Shifts left under the "BIK" (reversible, indistinct, unlabeled) transform with a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A032130 implements Sequence {

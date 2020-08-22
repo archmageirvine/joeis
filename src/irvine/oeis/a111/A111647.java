@@ -4,7 +4,7 @@ package irvine.oeis.a111;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A111647 <code>a(n) = A001541(n)*A001653(n)*A002315(n)</code>.
+ * A111647 a(n) = A001541(n)*A001653(n)*A002315(n).
  * @author Georg Fischer
  */
 public class A111647 extends GeneratingFunctionSequence {

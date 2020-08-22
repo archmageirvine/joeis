@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000959;
 
 /**
- * A031890 Lucky numbers with size of gaps equal to <code>8</code> (lower terms).
+ * A031890 Lucky numbers with size of gaps equal to 8 (lower terms).
  * @author Sean A. Irvine
  */
 public class A031890 extends A000959 {

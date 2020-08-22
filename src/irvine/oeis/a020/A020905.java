@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020905 Sum of n plus its prime factors associated with <code>A020700</code>.
+ * A020905 Sum of n plus its prime factors associated with A020700.
  * @author Sean A. Irvine
  */
 public class A020905 implements Sequence {

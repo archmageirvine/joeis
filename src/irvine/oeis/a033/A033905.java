@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A033905 Sort then <code>Add!</code>.
+ * A033905 Sort then Add!.
  * @author Sean A. Irvine
  */
 public class A033905 implements Sequence {

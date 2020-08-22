@@ -3,7 +3,7 @@ package irvine.oeis.a147;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A147656 The arithmetic mean of the n-th and <code>(n+1)-st</code> cubes, rounded down.
+ * A147656 The arithmetic mean of the n-th and (n+1)-st cubes, rounded down.
  * @author Sean A. Irvine
  */
 public class A147656 extends LinearRecurrence {

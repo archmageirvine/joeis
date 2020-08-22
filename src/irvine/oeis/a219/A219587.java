@@ -4,7 +4,7 @@ package irvine.oeis.a219;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A219587 Noncrossing, nonnesting, <code>2-arc-colored</code> permutations on the set <code>{1..n}</code> where lower arcs even of different colors do not cross.
+ * A219587 Noncrossing, nonnesting, 2-arc-colored permutations on the set {1..n} where lower arcs even of different colors do not cross.
  * @author Georg Fischer
  */
 public class A219587 extends GeneratingFunctionSequence {

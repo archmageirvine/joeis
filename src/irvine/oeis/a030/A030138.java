@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A030138 Number of one-sided triangular <code>n-ominoes</code> (or triominoes) on the icosahedron.
+ * A030138 Number of one-sided triangular n-ominoes (or triominoes) on the icosahedron.
  * @author Georg Fischer
  */
 public class A030138 extends FiniteSequence {

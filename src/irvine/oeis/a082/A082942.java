@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082942 <code>(n^2+1)*(4*n^2+1)*(4*n^2+3)</code>.
+ * A082942 (n^2+1)*(4*n^2+1)*(4*n^2+3).
  * @author Georg Fischer
  */
 public class A082942 extends GeneratingFunctionSequence {

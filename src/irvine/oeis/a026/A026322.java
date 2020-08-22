@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026322 <code>|sin(2n)| &gt; |sin(n)|</code>.
+ * A026322 |sin(2n)| &gt; |sin(n)|.
  * @author Sean A. Irvine
  */
 public class A026322 implements Sequence {

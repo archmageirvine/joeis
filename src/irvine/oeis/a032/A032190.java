@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001610;
 
 /**
- * A032190 Number of cyclic compositions of n into parts <code>&gt;= 2</code>.
+ * A032190 Number of cyclic compositions of n into parts &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A032190 implements Sequence {

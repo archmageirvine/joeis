@@ -6,7 +6,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088131 <code>a(n)</code> equals the square of the n-th partial sum added to twice the n-th partial sum of the squares, divided by <code>a(n-1)</code>, for all <code>n&gt;=1</code>, with <code>a(0)=1, a(1)=1</code>.
+ * A088131 a(n) equals the square of the n-th partial sum added to twice the n-th partial sum of the squares, divided by a(n-1), for all n&gt;=1, with a(0)=1, a(1)=1.
  * @author Georg Fischer
  */
 public class A088131 extends HolonomicRecurrence {

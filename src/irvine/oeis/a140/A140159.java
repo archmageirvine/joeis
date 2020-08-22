@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A140159 <code>a(1)=1, a(n) = a(n-1) + n^4</code> if n odd, <code>a(n) = a(n-1) + n^2</code> if n is even.
+ * A140159 a(1)=1, a(n) = a(n-1) + n^4 if n odd, a(n) = a(n-1) + n^2 if n is even.
  * @author Georg Fischer
  */
 public class A140159 extends LinearRecurrence {

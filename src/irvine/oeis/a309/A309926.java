@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A309926 Decimal expansion of <code>Pi^5/Zeta(5)</code>.
+ * A309926 Decimal expansion of Pi^5/Zeta(5).
  * @author Georg Fischer
  */
 public class A309926 extends DecimalExpansionSequence {

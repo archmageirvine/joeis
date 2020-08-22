@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A137575 Successive structures central number of Seaborg's periodic table of the elements (extended to <code>32</code> columns) for odd rows.
+ * A137575 Successive structures central number of Seaborg's periodic table of the elements (extended to 32 columns) for odd rows.
  * @author Georg Fischer
  */
 public class A137575 extends NoncomputableSequence {

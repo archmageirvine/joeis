@@ -5,7 +5,7 @@ package irvine.oeis.a156;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A156977 Numbers n such that <code>n^2</code> contains every decimal digit exactly once.
+ * A156977 Numbers n such that n^2 contains every decimal digit exactly once.
  * @author Georg Fischer
  */
 public class A156977 extends FiniteSequence {

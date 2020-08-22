@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184545 Number of <code>(n+2) X 8</code> binary arrays with each <code>3 X 3</code> subblock having rows and columns in lexicographically nondecreasing order.
+ * A184545 Number of (n+2) X 8 binary arrays with each 3 X 3 subblock having rows and columns in lexicographically nondecreasing order.
  * @author Georg Fischer
  */
 public class A184545 extends GeneratingFunctionSequence {

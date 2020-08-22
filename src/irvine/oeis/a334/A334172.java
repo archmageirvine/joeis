@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A334172 Bitwise XNOR of <code>prime(n)</code> and <code>prime(n + 1)</code>.
+ * A334172 Bitwise XNOR of prime(n) and prime(n + 1).
  * @author Sean A. Irvine
  */
 public class A334172 extends A000040 {

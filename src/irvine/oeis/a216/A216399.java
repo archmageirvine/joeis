@@ -5,7 +5,7 @@ package irvine.oeis.a216;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A216399 Numbers n such that the number of times digit 'm' used for writing the decimal representation of the numbers from 1 to n is equal to n for more than one value of m in the range m <code>= 1</code> to 9.
+ * A216399 Numbers n such that the number of times digit 'm' used for writing the decimal representation of the numbers from 1 to n is equal to n for more than one value of m in the range m = 1 to 9.
  * @author Georg Fischer
  */
 public class A216399 extends FiniteSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181983 <code>a(n) = (-1)^(n+1) * n</code>.
+ * A181983 a(n) = (-1)^(n+1) * n.
  * @author Georg Fischer
  */
 public class A181983 extends GeneratingFunctionSequence {

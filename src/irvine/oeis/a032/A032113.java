@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032113 "BIJ" <code>(reversible</code>, indistinct, labeled) transform of 3,3,3,3...
+ * A032113 "BIJ" (reversible, indistinct, labeled) transform of 3,3,3,3...
  * @author Sean A. Irvine
  */
 public class A032113 implements Sequence {

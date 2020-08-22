@@ -4,7 +4,7 @@ package irvine.oeis.a288;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A288599 <code>a(n) = 2*a(n-1) - a(n-4)</code> for <code>n &gt;= 4</code>, where <code>a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16</code>.
+ * A288599 a(n) = 2*a(n-1) - a(n-4) for n &gt;= 4, where a(0) = 2, a(1) = 4, a(2) = 6, a(3) = 10, a(4) = 16.
  * @author Georg Fischer
  */
 public class A288599 extends GeneratingFunctionSequence {

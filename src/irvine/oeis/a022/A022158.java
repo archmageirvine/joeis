@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022158 First column of spectral array <code>W(sqrt(3))</code>.
+ * A022158 First column of spectral array W(sqrt(3)).
  * @author Sean A. Irvine
  */
 public class A022158 implements Sequence {

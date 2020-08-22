@@ -5,7 +5,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115295 Partial sums of squares of <code>A115291(n)</code>.
+ * A115295 Partial sums of squares of A115291(n).
  * @author Georg Fischer
  */
 public class A115295 extends HolonomicRecurrence {

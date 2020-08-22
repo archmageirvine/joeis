@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A011493 Decimal expansion of <code>74th</code> root of 74.
+ * A011493 Decimal expansion of 74th root of 74.
  * @author Sean A. Irvine
  */
 public class A011493 extends DecimalExpansionSequence {

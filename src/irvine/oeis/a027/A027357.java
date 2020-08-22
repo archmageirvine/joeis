@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027357 Number of partitions of n into distinct odd parts, the greatest being congruent to <code>1 mod 4</code>.
+ * A027357 Number of partitions of n into distinct odd parts, the greatest being congruent to 1 mod 4.
  * @author Sean A. Irvine
  */
 public class A027357 extends A027356 {

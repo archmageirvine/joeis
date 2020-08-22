@@ -3,7 +3,7 @@ package irvine.oeis.a095;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A095665 Tenth column <code>(m=9)</code> of <code>(1,3)-Pascal</code> triangle <code>A095660</code>.
+ * A095665 Tenth column (m=9) of (1,3)-Pascal triangle A095660.
  * @author Sean A. Irvine
  */
 public class A095665 extends LinearRecurrence {

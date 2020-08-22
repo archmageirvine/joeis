@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A098224 Number of primes <code>&lt;=10^n</code> in which decimal digits are all distinct.
+ * A098224 Number of primes &lt;=10^n in which decimal digits are all distinct.
  * @author Georg Fischer
  */
 public class A098224 extends PaddingSequence {

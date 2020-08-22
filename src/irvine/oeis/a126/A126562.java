@@ -3,7 +3,7 @@ package irvine.oeis.a126;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A126562 Number of intersections of at least four edges in a cube of <code>n X n X n</code> smaller cubes.
+ * A126562 Number of intersections of at least four edges in a cube of n X n X n smaller cubes.
  * @author Sean A. Irvine
  */
 public class A126562 extends LinearRecurrence {

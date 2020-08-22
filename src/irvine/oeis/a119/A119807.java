@@ -8,7 +8,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A119807 Decimal expansion of <code>sin(gamma)</code>.
+ * A119807 Decimal expansion of sin(gamma).
  * @author Georg Fischer
  */
 public class A119807 extends DecimalExpansionSequence {

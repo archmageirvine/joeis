@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177972 Decimal expansion of <code>(85+sqrt(9029))/82</code>.
+ * A177972 Decimal expansion of (85+sqrt(9029))/82.
  * @author Georg Fischer
  */
 public class A177972 extends DecimalExpansionSequence {

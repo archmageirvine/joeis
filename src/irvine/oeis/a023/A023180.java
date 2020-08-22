@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023180 <code>Fib(p) == 34 (mod p)</code>.
+ * A023180 Fib(p) == 34 (mod p).
  * @author Sean A. Irvine
  */
 public class A023180 extends A000045 {

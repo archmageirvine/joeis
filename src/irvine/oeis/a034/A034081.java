@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034081 Decimal part of n-th root of <code>a(n)</code> starts with digit 4.
+ * A034081 Decimal part of n-th root of a(n) starts with digit 4.
  * @author Sean A. Irvine
  */
 public class A034081 implements Sequence {

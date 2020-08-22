@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022908 The sequence <code>M(n)</code> in <code>A022905</code>.
+ * A022908 The sequence M(n) in A022905.
  * @author Sean A. Irvine
  */
 public class A022908 extends A022907 {

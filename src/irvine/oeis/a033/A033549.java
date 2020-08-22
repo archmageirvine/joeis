@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033549 Numbers n such that sum of digits of n-th prime equals sum of digits of <code>n</code>.
+ * A033549 Numbers n such that sum of digits of n-th prime equals sum of digits of n.
  * @author Georg Fischer
  */
 public class A033549 extends A000040 {

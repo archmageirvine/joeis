@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A243447 Decimal expansion of <code>1-9/(4*Pi)+sqrt(3)/(2*Pi)</code>, an extreme value constant.
+ * A243447 Decimal expansion of 1-9/(4*Pi)+sqrt(3)/(2*Pi), an extreme value constant.
  * @author Georg Fischer
  */
 public class A243447 extends DecimalExpansionSequence {

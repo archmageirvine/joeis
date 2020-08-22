@@ -3,7 +3,7 @@ package irvine.oeis.a146;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A146074 <code>a(n) =</code> number of elements of order n in Mathieu simple group <code>M_24</code> of order 244823040.
+ * A146074 a(n) = number of elements of order n in Mathieu simple group M_24 of order 244823040.
  * @author Sean A. Irvine
  */
 public class A146074 extends FiniteSequence {

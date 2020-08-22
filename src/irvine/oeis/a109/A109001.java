@@ -6,7 +6,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A109001 Triangle, read by rows, where g.f. of row n equals the product of <code>(1-x)^n</code> and the g.f. of the coordination sequence for root lattice <code>B_n</code>, for <code>n &gt;= 0</code>.
+ * A109001 Triangle, read by rows, where g.f. of row n equals the product of (1-x)^n and the g.f. of the coordination sequence for root lattice B_n, for n &gt;= 0.
  * @author Georg Fischer
  */
 public class A109001 extends LatticeCoordinationSequence {

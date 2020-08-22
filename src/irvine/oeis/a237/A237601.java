@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A237601 Number of <code>n-digit right-truncatable</code> primes in base 16.
+ * A237601 Number of n-digit right-truncatable primes in base 16.
  * @author Georg Fischer
  */
 public class A237601 extends PaddingSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A318522 Decimal expansion of <code>sqrt(28^(1/3)-27^(1/3))</code>.
+ * A318522 Decimal expansion of sqrt(28^(1/3)-27^(1/3)).
  * @author Georg Fischer
  */
 public class A318522 extends DecimalExpansionSequence {

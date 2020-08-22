@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001181 Number of Baxter permutations of length <code>n</code>.
+ * A001181 Number of Baxter permutations of length n.
  * @author Sean A. Irvine
  */
 public class A001181 implements Sequence {

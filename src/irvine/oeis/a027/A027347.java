@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027347 Number of partitions of n into distinct odd parts, the least being congruent to <code>1 mod 4</code>.
+ * A027347 Number of partitions of n into distinct odd parts, the least being congruent to 1 mod 4.
  * @author Sean A. Irvine
  */
 public class A027347 extends A027345 {

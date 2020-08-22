@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007496 Numbers n such that the decimal expansions of <code>2^n</code> and <code>5^n</code> contain no <code>0</code>'s (probably 33 is last term).
+ * A007496 Numbers n such that the decimal expansions of 2^n and 5^n contain no 0's (probably 33 is last term).
  * @author Sean A. Irvine
  */
 public class A007496 implements Sequence {

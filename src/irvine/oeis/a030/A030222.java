@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A030222 Number of <code>n-polyplets</code> (polyominoes connected at edges or corners); may contain holes.
+ * A030222 Number of n-polyplets (polyominoes connected at edges or corners); may contain holes.
  * @author Sean A. Irvine
  */
 public class A030222 implements Sequence {

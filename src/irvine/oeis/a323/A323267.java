@@ -4,7 +4,7 @@ package irvine.oeis.a323;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A323267 The sequence denoted by <code>q_n</code> used in the calculation of <code>A323260</code>.
+ * A323267 The sequence denoted by q_n used in the calculation of A323260.
  * @author Georg Fischer
  */
 public class A323267 extends GeneratingFunctionSequence {

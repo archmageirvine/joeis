@@ -5,7 +5,7 @@ package irvine.oeis.a290;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A290962 Numbers k such that <code>(13*10^k - 43)/3</code> is prime.
+ * A290962 Numbers k such that (13*10^k - 43)/3 is prime.
  * @author Georg Fischer
  */
 public class A290962 extends PowerFactorPrimeSequence {

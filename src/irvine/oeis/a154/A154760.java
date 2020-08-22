@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A154760 Final digit of <code>n!! (A006882)</code>.
+ * A154760 Final digit of n!! (A006882).
  * @author Georg Fischer
  */
 public class A154760 extends PaddingSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a328;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A328778 Number of indecomposable closed walks of length <code>2n</code> along the edges of a cube based at a vertex.
+ * A328778 Number of indecomposable closed walks of length 2n along the edges of a cube based at a vertex.
  * @author Georg Fischer
  */
 public class A328778 extends HolonomicRecurrence {

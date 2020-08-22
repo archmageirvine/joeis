@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024433 <code>a(n) =</code> difference between greatest two Stirling numbers <code>S(n,k)</code> of second kind, for k <code>= 1,2,...,n</code>.
+ * A024433 a(n) = difference between greatest two Stirling numbers S(n,k) of second kind, for k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A024433 implements Sequence {

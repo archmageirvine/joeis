@@ -5,7 +5,7 @@ package irvine.oeis.a301;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A301740 The number of trees with 5 nodes labeled by positive integers, where each tree's label sum is <code>n</code>.
+ * A301740 The number of trees with 5 nodes labeled by positive integers, where each tree's label sum is n.
  * @author Georg Fischer
  */
 public class A301740 extends HolonomicRecurrence {

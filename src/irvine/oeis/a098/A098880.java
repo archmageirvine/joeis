@@ -6,7 +6,7 @@ package irvine.oeis.a098;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A098880 <code>a(n) = 11^n * n^11</code>.
+ * A098880 a(n) = 11^n * n^11.
  * @author Georg Fischer
  */
 public class A098880 extends GeneratingFunctionSequence {

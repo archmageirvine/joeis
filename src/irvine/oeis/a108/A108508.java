@@ -3,7 +3,7 @@ package irvine.oeis.a108;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A108508 Number of paths of length n between two arbitrary, distinct vertices in <code>K6</code>, the complete graph on 6 vertices.
+ * A108508 Number of paths of length n between two arbitrary, distinct vertices in K6, the complete graph on 6 vertices.
  * @author Georg Fischer
  */
 public class A108508 extends FiniteSequence {

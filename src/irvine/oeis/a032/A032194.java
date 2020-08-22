@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032194 Number of necklaces with 9 black beads and <code>n-9</code> white beads.
+ * A032194 Number of necklaces with 9 black beads and n-9 white beads.
  * @author Georg Fischer
  */
 public class A032194 extends GeneratingFunctionSequence {

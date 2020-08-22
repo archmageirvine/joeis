@@ -3,7 +3,7 @@ package irvine.oeis.a245;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A245961 Number of 4-cycles in the Lucas cube <code>Lambda(n)</code>.
+ * A245961 Number of 4-cycles in the Lucas cube Lambda(n).
  * @author Sean A. Irvine
  */
 public class A245961 extends LinearRecurrence {

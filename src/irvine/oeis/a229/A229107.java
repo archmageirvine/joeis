@@ -5,7 +5,7 @@ package irvine.oeis.a229;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A229107 Palindromic prime time display in hours, minutes, seconds on a <code>six-digit 24-hour</code> digital clock.
+ * A229107 Palindromic prime time display in hours, minutes, seconds on a six-digit 24-hour digital clock.
  * @author Georg Fischer
  */
 public class A229107 extends FiniteSequence {

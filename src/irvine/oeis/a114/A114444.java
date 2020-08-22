@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A114444 <code>a(n) = 16*n*(n+2)</code>.
+ * A114444 a(n) = 16*n*(n+2).
  * @author Sean A. Irvine
  */
 public class A114444 extends LinearRecurrence {

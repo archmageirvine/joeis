@@ -6,7 +6,7 @@ package irvine.oeis.a107;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A107256 <code>a(n) = n^6 - 63*n + 63</code>, with <code>n*a(n) + n*(n-1)*63 = n^7</code>.
+ * A107256 a(n) = n^6 - 63*n + 63, with n*a(n) + n*(n-1)*63 = n^7.
  * @author Georg Fischer
  */
 public class A107256 extends HolonomicRecurrence {

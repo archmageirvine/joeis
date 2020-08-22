@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168251 <code>a(n) = n^2</code> if n is odd, <code>n^2*2^(n-2)</code> if n is even.
+ * A168251 a(n) = n^2 if n is odd, n^2*2^(n-2) if n is even.
  * @author Georg Fischer
  */
 public class A168251 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277393 <code>a(n) = Integral_{x=0..infinity} H_n(x) * exp(-x)</code>, where <code>H_n(x)</code> is n-th Hermite polynomial.
+ * A277393 a(n) = Integral_{x=0..infinity} H_n(x) * exp(-x), where H_n(x) is n-th Hermite polynomial.
  * @author Georg Fischer
  */
 public class A277393 extends HolonomicRecurrence {

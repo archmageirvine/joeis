@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027023 Tribonacci array: triangular array T read by rows: <code>T(n,0)=1</code> for <code>n &gt;= 0, T(n,1) = T(n,2n) = 1</code> for <code>n &gt;= 1, T(n,2)=1</code> for <code>n &gt;= 2</code> and for <code>n &gt;= 3, T(n,k) = T(n-1,k-3) + T(n-1,k-2) + T(n-1,k-1)</code> for <code>3 &lt;= k &lt;= 2n-1</code>.
+ * A027023 Tribonacci array: triangular array T read by rows: T(n,0)=1 for n &gt;= 0, T(n,1) = T(n,2n) = 1 for n &gt;= 1, T(n,2)=1 for n &gt;= 2 and for n &gt;= 3, T(n,k) = T(n-1,k-3) + T(n-1,k-2) + T(n-1,k-1) for 3 &lt;= k &lt;= 2n-1.
  * @author Sean A. Irvine
  */
 public class A027023 extends MemoryFunction2<Long, Z> implements Sequence {

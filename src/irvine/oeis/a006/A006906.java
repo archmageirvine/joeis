@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a022.A022661;
 
 /**
- * A006906 <code>a(n) =</code> sum of products of terms in all partitions of <code>n</code>.
+ * A006906 a(n) = sum of products of terms in all partitions of n.
  * @author Sean A. Irvine
  */
 public class A006906 extends A022661 {

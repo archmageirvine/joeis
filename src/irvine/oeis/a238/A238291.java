@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A238291 Final digit of real part of <code>(n+n*i)^n</code>.
+ * A238291 Final digit of real part of (n+n*i)^n.
  * @author Georg Fischer
  */
 public class A238291 extends PaddingSequence {

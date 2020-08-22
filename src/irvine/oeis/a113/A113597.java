@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a007.A007570;
 
 /**
- * A113597 <code>a(n) = F(F(n+1)) - F(F(n))</code>, where <code>F() =</code> Fibonacci numbers.
+ * A113597 a(n) = F(F(n+1)) - F(F(n)), where F() = Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A113597 extends DifferenceSequence {

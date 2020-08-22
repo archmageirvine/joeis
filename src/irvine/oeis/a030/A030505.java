@@ -1,7 +1,7 @@
 package irvine.oeis.a030;
 
 /**
- * A030505 <code>Graham-Sloane-type</code> lower bound on the size of a ternary <code>(n,3,5) constant-weight</code> code.
+ * A030505 Graham-Sloane-type lower bound on the size of a ternary (n,3,5) constant-weight code.
  * @author Sean A. Irvine
  */
 public class A030505 extends A030503 {

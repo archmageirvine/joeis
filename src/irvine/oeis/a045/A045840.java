@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a005.A005926;
 
 /**
- * A045840 <code>a(n) = A005926(n)/2</code>.
+ * A045840 a(n) = A005926(n)/2.
  * @author Georg Fischer
  */
 public class A045840 extends A005926 {

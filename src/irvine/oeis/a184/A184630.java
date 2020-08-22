@@ -5,7 +5,7 @@ package irvine.oeis.a184;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A184630 <code>Floor(1/{(6+n^4)^(1/4)})</code>, where <code>{}=fractional</code> part.
+ * A184630 Floor(1/{(6+n^4)^(1/4)}), where {}=fractional part.
  * @author Georg Fischer
  */
 public class A184630 extends HolonomicRecurrence {

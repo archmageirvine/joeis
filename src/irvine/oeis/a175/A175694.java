@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A175694 <code>a(n)</code> is the smallest number such <code>a(n)*n</code> is an anagram of <code>a(n)*5</code>.
+ * A175694 a(n) is the smallest number such a(n)*n is an anagram of a(n)*5.
  * @author Georg Fischer
  */
 public class A175694 extends FiniteSequence {

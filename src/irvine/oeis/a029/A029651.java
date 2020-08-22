@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A029651 Central elements of the <code>(1,2)-Pascal</code> triangle <code>A029635</code>.
+ * A029651 Central elements of the (1,2)-Pascal triangle A029635.
  * @author Sean A. Irvine
  */
 public class A029651 implements Sequence {

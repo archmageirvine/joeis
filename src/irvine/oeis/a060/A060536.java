@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060536 Number of homeomorphically irreducible multigraphs (or series-reduced multigraphs or multigraphs without nodes of degree <code>2)</code> on 6 labeled nodes.
+ * A060536 Number of homeomorphically irreducible multigraphs (or series-reduced multigraphs or multigraphs without nodes of degree 2) on 6 labeled nodes.
  * @author Georg Fischer
  */
 public class A060536 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022849 Integer nearest <code>nx</code>, where <code>x = sqrt(6)</code>.
+ * A022849 Integer nearest nx, where x = sqrt(6).
  * @author Sean A. Irvine
  */
 public class A022849 implements Sequence {

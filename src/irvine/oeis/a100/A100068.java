@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100068 <code>Sum(k=0..floor(n/2), binomial(n,k)*3^(n-2*k) )</code>.
+ * A100068 Sum(k=0..floor(n/2), binomial(n,k)*3^(n-2*k) ).
  * @author Georg Fischer
  */
 public class A100068 extends HolonomicRecurrence {

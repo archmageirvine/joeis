@@ -7,7 +7,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A055374 Invert transform applied three times to Pascal's triangle <code>A007318</code>.
+ * A055374 Invert transform applied three times to Pascal's triangle A007318.
  * @author Georg Fischer
  */
 public class A055374 extends GeneratingFunctionTriangle {

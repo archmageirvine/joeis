@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A060482 New record highs reached in <code>A060030</code>.
+ * A060482 New record highs reached in A060030.
  * @author Georg Fischer
  */
 public class A060482 extends LinearRecurrence {

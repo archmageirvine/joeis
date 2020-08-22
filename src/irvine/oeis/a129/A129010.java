@@ -6,7 +6,7 @@ package irvine.oeis.a129;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A129010 Nonnegative values x of solutions <code>(x, y)</code> to the Diophantine equation <code>x^2+(x+833)^2 = y^2</code>.
+ * A129010 Nonnegative values x of solutions (x, y) to the Diophantine equation x^2+(x+833)^2 = y^2.
  * @author Georg Fischer
  */
 public class A129010 extends HolonomicRecurrence {

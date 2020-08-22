@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033921 Largest proper substring of <code>2^n</code> that is a power of <code>2 (0</code> if none).
+ * A033921 Largest proper substring of 2^n that is a power of 2 (0 if none).
  * @author Sean A. Irvine
  */
 public class A033921 implements Sequence {

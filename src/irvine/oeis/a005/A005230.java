@@ -5,7 +5,7 @@ import irvine.oeis.MemorySequence;
 import irvine.oeis.a002.A002024;
 
 /**
- * A005230 Stern's sequence: <code>a(1) = 1, a(n+1)</code> is the sum of the m preceding terms, where <code>m*(m-1)/2 &lt; n &lt;= m*(m+1)/2</code> or equivalently m <code>= ceiling((sqrt(8*n+1)-1)/2) = A002024(n)</code>.
+ * A005230 Stern's sequence: a(1) = 1, a(n+1) is the sum of the m preceding terms, where m*(m-1)/2 &lt; n &lt;= m*(m+1)/2 or equivalently m = ceiling((sqrt(8*n+1)-1)/2) = A002024(n).
  * @author Sean A. Irvine
  */
 public class A005230 extends MemorySequence {

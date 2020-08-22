@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006022 <code>Sprague-Grundy</code> (or Nim) values for the game of Maundy cake on an <code>n X 1</code> sheet.
+ * A006022 Sprague-Grundy (or Nim) values for the game of Maundy cake on an n X 1 sheet.
  * @author Sean A. Irvine
  */
 public class A006022 extends MemoryFunction1<Z> implements Sequence {

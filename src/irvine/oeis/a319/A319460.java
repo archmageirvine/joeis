@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A319460 Decimal expansion of <code>Pi^2 / (4*sqrt(5))</code>.
+ * A319460 Decimal expansion of Pi^2 / (4*sqrt(5)).
  * @author Georg Fischer
  */
 public class A319460 extends DecimalExpansionSequence {

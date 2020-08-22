@@ -4,7 +4,7 @@ import irvine.oeis.EulerTransformSequence;
 import irvine.oeis.a008.A008578;
 
 /**
- * A030012 Euler transform of <code>{1</code>, primes}.
+ * A030012 Euler transform of {1, primes}.
  * @author Sean A. Irvine
  */
 public class A030012 extends EulerTransformSequence {

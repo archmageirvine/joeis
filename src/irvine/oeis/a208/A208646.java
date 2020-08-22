@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A208646 Calendar Problem <code>#27</code>, April 2012 Mathematics Teacher.
+ * A208646 Calendar Problem #27, April 2012 Mathematics Teacher.
  * @author Georg Fischer
  */
 public class A208646 extends NoncomputableSequence {

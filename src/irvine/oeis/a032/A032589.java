@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000959;
 
 /**
- * A032589 Lucky numbers <code>(A000959)</code> ending with digit 9.
+ * A032589 Lucky numbers (A000959) ending with digit 9.
  * @author Sean A. Irvine
  */
 public class A032589 extends A000959 {

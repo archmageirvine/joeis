@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032352 Numbers k such that there is no prime between <code>10*k</code> and <code>10*k+9</code>.
+ * A032352 Numbers k such that there is no prime between 10*k and 10*k+9.
  * @author Sean A. Irvine
  */
 public class A032352 implements Sequence {

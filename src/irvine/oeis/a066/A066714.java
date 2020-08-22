@@ -4,7 +4,7 @@ package irvine.oeis.a066;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A066714 Coordination sequence for <code>ReO_3</code> net with respect to Re atom.
+ * A066714 Coordination sequence for ReO_3 net with respect to Re atom.
  * @author Georg Fischer
  */
 public class A066714 extends GeneratingFunctionSequence {

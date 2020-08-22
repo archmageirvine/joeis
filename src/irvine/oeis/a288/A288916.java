@@ -3,7 +3,7 @@ package irvine.oeis.a288;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A288916 Number of 5-cycles in the <code>n X n</code> queen graph.
+ * A288916 Number of 5-cycles in the n X n queen graph.
  * @author Sean A. Irvine
  */
 public class A288916 extends LinearRecurrence {

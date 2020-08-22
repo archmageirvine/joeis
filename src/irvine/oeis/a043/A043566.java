@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043566 Number of runs in base 14 representation of <code>n</code>.
+ * A043566 Number of runs in base 14 representation of n.
  * @author Georg Fischer
  */
 public class A043566 extends RunsBaseSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a269;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A269796 <code>a(n) = 4^n * A000108(n+1)</code>.
+ * A269796 a(n) = 4^n * A000108(n+1).
  * @author Georg Fischer
  */
 public class A269796 extends HolonomicRecurrence {

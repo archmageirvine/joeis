@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001466 Denominators of greedy Egyptian fraction expansion of <code>Pi - 3</code>.
+ * A001466 Denominators of greedy Egyptian fraction expansion of Pi - 3.
  * @author Sean A. Irvine
  */
 public class A001466 implements Sequence {

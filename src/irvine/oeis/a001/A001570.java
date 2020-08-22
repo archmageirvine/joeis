@@ -3,7 +3,7 @@ package irvine.oeis.a001;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A001570 Numbers k such that <code>k^2</code> is centered hexagonal.
+ * A001570 Numbers k such that k^2 is centered hexagonal.
  * @author Sean A. Irvine
  */
 public class A001570 extends GeneratingFunctionSequence {

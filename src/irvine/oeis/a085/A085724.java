@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.SemiprimeSequence;
 
 /**
- * A085724 Numbers n such that <code>2^n - 1</code> is a semiprime <code>(A001358)</code>.
+ * A085724 Numbers n such that 2^n - 1 is a semiprime (A001358).
  * @author Sean A. Irvine
  */
 public class A085724 extends SemiprimeSequence {

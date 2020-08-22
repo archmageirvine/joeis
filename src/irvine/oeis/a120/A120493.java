@@ -7,7 +7,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A120493 Triangle <code>T(n,k)</code> read by rows ; multiply row n of Pascal's triangle <code>(A007318)</code> by <code>A024175(n)</code>.
+ * A120493 Triangle T(n,k) read by rows ; multiply row n of Pascal's triangle (A007318) by A024175(n).
  * @author Georg Fischer
  */
 public class A120493 extends GeneratingFunctionTriangle {

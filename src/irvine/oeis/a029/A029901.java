@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.math.z.Z;
 
 /**
- * A029901 <code>g(n)</code>, where strategic move on <code>g(n) X 3</code> rectangle in Chomp is <code>(h(n),2)</code>.
+ * A029901 g(n), where strategic move on g(n) X 3 rectangle in Chomp is (h(n),2).
  * @author Sean A. Irvine
  */
 public class A029901 extends A029899 {

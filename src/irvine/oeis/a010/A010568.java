@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010568 <code>2n-step 4-dimensional</code> closed paths on 4-d cubic lattice.
+ * A010568 2n-step 4-dimensional closed paths on 4-d cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010568 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a083;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A083768 Triangle formed by dividing row n of <code>A083764</code> by <code>n</code>.
+ * A083768 Triangle formed by dividing row n of A083764 by n.
  * @author Georg Fischer
  */
 public class A083768 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A017960 Powers of <code>sqrt(18)</code> rounded up.
+ * A017960 Powers of sqrt(18) rounded up.
  * @author Sean A. Irvine
  */
 public class A017960 implements Sequence {

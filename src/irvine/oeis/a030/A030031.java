@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030031 <code>Binomial((n+1)^2, prime(n))</code>.
+ * A030031 Binomial((n+1)^2, prime(n)).
  * @author Sean A. Irvine
  */
 public class A030031 extends A000040 {

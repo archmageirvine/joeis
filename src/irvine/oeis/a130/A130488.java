@@ -4,7 +4,7 @@ package irvine.oeis.a130;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A130488 <code>a(n) = Sum_{k=0..n} (k mod 10)</code> (Partial sums of <code>A010879)</code>.
+ * A130488 a(n) = Sum_{k=0..n} (k mod 10) (Partial sums of A010879).
  * @author Georg Fischer
  */
 public class A130488 extends GeneratingFunctionSequence {

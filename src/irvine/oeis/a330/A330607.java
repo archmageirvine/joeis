@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330607 Array read by rows: <code>T(n,k)</code> is the number of solutions to the equation <code>Sum_{i=1..n} x_i^2 == k (mod 5)</code> with <code>x_i</code> in 0..4, where <code>n &gt;= 0</code> and <code>0 &lt;= k &lt;= 4</code>.
+ * A330607 Array read by rows: T(n,k) is the number of solutions to the equation Sum_{i=1..n} x_i^2 == k (mod 5) with x_i in 0..4, where n &gt;= 0 and 0 &lt;= k &lt;= 4.
  * @author Georg Fischer
  */
 public class A330607 extends HolonomicRecurrence {

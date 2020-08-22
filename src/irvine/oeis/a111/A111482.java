@@ -3,7 +3,7 @@ package irvine.oeis.a111;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A111482 Least triangular number whose digits include a permutation of <code>{0,1,...,n}</code>.
+ * A111482 Least triangular number whose digits include a permutation of {0,1,...,n}.
  * @author Georg Fischer
  */
 public class A111482 extends FiniteSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010011 <code>a(0) = 1, a(n) = 21*n^2 + 2</code> for <code>n&gt;0</code>.
+ * A010011 a(0) = 1, a(n) = 21*n^2 + 2 for n&gt;0.
  * @author Sean A. Irvine
  */
 public class A010011 implements Sequence {

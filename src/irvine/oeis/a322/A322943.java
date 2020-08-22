@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322943 <code>a(n) = n! [x^n] -exp(-1/(3*(x - 1)^3) - 1/3)/(x - 1)</code>.
+ * A322943 a(n) = n! [x^n] -exp(-1/(3*(x - 1)^3) - 1/3)/(x - 1).
  * @author Georg Fischer
  */
 public class A322943 extends HolonomicRecurrence {

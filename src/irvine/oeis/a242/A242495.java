@@ -4,7 +4,7 @@ package irvine.oeis.a242;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A242495 Number of length n words on <code>{1,2,3,4}</code> with at most one consecutive 1 and at most two consecutive <code>2</code>'s and at most three consecutive <code>3</code>'s and at most four consecutive <code>4</code>'s.
+ * A242495 Number of length n words on {1,2,3,4} with at most one consecutive 1 and at most two consecutive 2's and at most three consecutive 3's and at most four consecutive 4's.
  * @author Georg Fischer
  */
 public class A242495 extends GeneratingFunctionSequence {

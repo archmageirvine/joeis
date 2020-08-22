@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a000.A000396;
 
 /**
- * A139228 First differences of perfect numbers <code>A000396</code>.
+ * A139228 First differences of perfect numbers A000396.
  * @author Georg Fischer
  */
 public class A139228 extends DifferenceSequence {

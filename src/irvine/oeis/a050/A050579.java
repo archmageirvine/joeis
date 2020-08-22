@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A050579 Numbers n such that <code>107*2^n-1</code> is prime.
+ * A050579 Numbers n such that 107*2^n-1 is prime.
  * @author Georg Fischer
  */
 public class A050579 extends PowerFactorPrimeSequence {

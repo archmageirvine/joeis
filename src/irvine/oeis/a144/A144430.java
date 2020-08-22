@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A144430 <code>a(n) = 1 + A144429(n)</code>.
+ * A144430 a(n) = 1 + A144429(n).
  * @author Georg Fischer
  */
 public class A144430 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233637 Number of <code>(n+1) X (1+1) 0..2</code> arrays with every <code>2 X 2</code> subblock having the sum of the squares of the edge differences equal to 2.
+ * A233637 Number of (n+1) X (1+1) 0..2 arrays with every 2 X 2 subblock having the sum of the squares of the edge differences equal to 2.
  * @author Georg Fischer
  */
 public class A233637 extends GeneratingFunctionSequence {

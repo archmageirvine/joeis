@@ -5,7 +5,7 @@ package irvine.oeis.a181;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A181456 Numbers n such that 31 is the largest prime factor of <code>n^2 - 1</code>.
+ * A181456 Numbers n such that 31 is the largest prime factor of n^2 - 1.
  * @author Georg Fischer
  */
 public class A181456 extends FiniteSequence {

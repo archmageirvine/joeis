@@ -4,7 +4,7 @@ package irvine.oeis.a189;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A189173 Integers m such that <code>m^3</code> is the sum of squares of m consecutive integers.
+ * A189173 Integers m such that m^3 is the sum of squares of m consecutive integers.
  * @author Georg Fischer
  */
 public class A189173 extends LinearRecurrence {

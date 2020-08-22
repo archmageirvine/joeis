@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a001.A001348;
 
 /**
- * A139241 Second differences of Mersenne numbers <code>A001348</code>.
+ * A139241 Second differences of Mersenne numbers A001348.
  * @author Georg Fischer
  */
 public class A139241 extends DifferenceSequence {

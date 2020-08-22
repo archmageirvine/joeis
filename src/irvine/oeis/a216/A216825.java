@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A216825 Prime factors of the first 8 primary pseudoperfect numbers <code>A054377</code>.
+ * A216825 Prime factors of the first 8 primary pseudoperfect numbers A054377.
  * @author Georg Fischer
  */
 public class A216825 extends FiniteSequence {

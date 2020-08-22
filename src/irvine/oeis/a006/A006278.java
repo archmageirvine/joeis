@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A006278 Numbers that are a product of successive primes congruent to <code>1 (mod 4)</code>.
+ * A006278 Numbers that are a product of successive primes congruent to 1 (mod 4).
  * @author Sean A. Irvine
  */
 public class A006278 extends A000040 {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003116 Expansion of the reciprocal of the g.f. defining <code>A039924</code>.
+ * A003116 Expansion of the reciprocal of the g.f. defining A039924.
  * @author Sean A. Irvine
  */
 public class A003116 implements Sequence {

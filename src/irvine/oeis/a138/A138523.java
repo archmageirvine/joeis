@@ -5,7 +5,7 @@ package irvine.oeis.a138;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A138523 <code>a(n) = Sum_{k=1..n} (2k-1)!</code>.
+ * A138523 a(n) = Sum_{k=1..n} (2k-1)!.
  * @author Georg Fischer
  */
 public class A138523 extends HolonomicRecurrence {

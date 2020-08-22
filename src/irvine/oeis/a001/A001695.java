@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001695 <code>a(n) = H_n(2,n)</code> where <code>H_n</code> is the n-th hyperoperator.
+ * A001695 a(n) = H_n(2,n) where H_n is the n-th hyperoperator.
  * @author Sean A. Irvine
  */
 public class A001695 implements Sequence {

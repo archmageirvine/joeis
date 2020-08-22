@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004619 Numbers divisible only by primes congruent to <code>1 mod 7</code>.
+ * A004619 Numbers divisible only by primes congruent to 1 mod 7.
  * @author Sean A. Irvine
  */
 public class A004619 implements Sequence {

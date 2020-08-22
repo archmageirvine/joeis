@@ -4,7 +4,7 @@ package irvine.oeis.a173;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A173247 <code>a(0) = -1</code> and <code>a(n) = (-1)^n*(n - 4 - 3*n^2)/2</code> for <code>n &gt;= 1</code>.
+ * A173247 a(0) = -1 and a(n) = (-1)^n*(n - 4 - 3*n^2)/2 for n &gt;= 1.
  * @author Georg Fischer
  */
 public class A173247 extends GeneratingFunctionSequence {

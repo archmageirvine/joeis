@@ -4,7 +4,7 @@ package irvine.oeis.a179;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A179809 Number of <code>n X 4</code> arrays with every diagonal and antidiagonal of length L containing a permutation of <code>1..L</code>.
+ * A179809 Number of n X 4 arrays with every diagonal and antidiagonal of length L containing a permutation of 1..L.
  * @author Georg Fischer
  */
 public class A179809 extends GeneratingFunctionSequence {

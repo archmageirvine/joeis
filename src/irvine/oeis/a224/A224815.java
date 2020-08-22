@@ -4,7 +4,7 @@ package irvine.oeis.a224;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A224815 Number of subsets of <code>{1,2,...,n-8}</code> without differences equal to 4 or 8.
+ * A224815 Number of subsets of {1,2,...,n-8} without differences equal to 4 or 8.
  * @author Georg Fischer
  */
 public class A224815 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a232;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A232622 Number of incongruent domino tilings of the <code>3 X (2n)</code> board.
+ * A232622 Number of incongruent domino tilings of the 3 X (2n) board.
  * @author Georg Fischer
  */
 public class A232622 extends HolonomicRecurrence {

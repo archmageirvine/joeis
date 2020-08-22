@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A105955 <code>a(n) = Fibonacci(n) mod 11</code>.
+ * A105955 a(n) = Fibonacci(n) mod 11.
  * @author Georg Fischer
  */
 public class A105955 extends GeneratingFunctionSequence {

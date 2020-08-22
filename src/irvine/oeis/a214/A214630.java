@@ -3,7 +3,7 @@ package irvine.oeis.a214;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A214630 <code>a(n)</code> is the reduced numerator of <code>1/4 - 1/A109043(n)^2 = (1 - 1/A026741(n)^2)/4</code>.
+ * A214630 a(n) is the reduced numerator of 1/4 - 1/A109043(n)^2 = (1 - 1/A026741(n)^2)/4.
  * @author Sean A. Irvine
  */
 public class A214630 extends LinearRecurrence {

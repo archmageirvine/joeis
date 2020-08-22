@@ -5,7 +5,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.math.z.Z;
 
 /**
- * A007321 Number of steps needed for modified juggler sequence <code>(A094685)</code> started at n to reach 1.
+ * A007321 Number of steps needed for modified juggler sequence (A094685) started at n to reach 1.
  * @author Sean A. Irvine
  */
 public class A007321 extends A007320 {

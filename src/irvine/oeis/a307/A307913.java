@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A307913 Numbers without the decimal digits <code>3, 6</code> and 9.
+ * A307913 Numbers without the decimal digits 3, 6 and 9.
  * @author Sean A. Irvine
  */
 public class A307913 implements Sequence {

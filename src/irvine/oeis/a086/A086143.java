@@ -5,7 +5,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086143 Palindromes of the form <code>n^3 + n^2 + n + 1</code>.
+ * A086143 Palindromes of the form n^3 + n^2 + n + 1.
  * @author Georg Fischer
  */
 public class A086143 extends HolonomicRecurrence {

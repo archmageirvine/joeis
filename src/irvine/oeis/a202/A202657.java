@@ -6,7 +6,7 @@ package irvine.oeis.a202;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A202657 Number of ways to place 6 nonattacking semi-queens on an <code>n X n</code> board.
+ * A202657 Number of ways to place 6 nonattacking semi-queens on an n X n board.
  * @author Georg Fischer
  */
 public class A202657 extends GeneratingFunctionSequence {

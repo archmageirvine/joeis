@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A078634 E.g.f. <code>exp( 1 - x - sqrt( 1 - 4*x + x^2 ))</code>.
+ * A078634 E.g.f. exp( 1 - x - sqrt( 1 - 4*x + x^2 )).
  * @author Georg Fischer
  */
 public class A078634 extends HolonomicRecurrence {

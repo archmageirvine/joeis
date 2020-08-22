@@ -4,7 +4,7 @@ package irvine.oeis.a222;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A222098 Number of <code>n X 2 0..5</code> arrays with entries increasing <code>mod 6</code> by <code>0, 1, 2</code> or 3 rightwards and downwards, starting with upper left zero.
+ * A222098 Number of n X 2 0..5 arrays with entries increasing mod 6 by 0, 1, 2 or 3 rightwards and downwards, starting with upper left zero.
  * @author Georg Fischer
  */
 public class A222098 extends GeneratingFunctionSequence {

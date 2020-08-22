@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027922 Least k such that <code>1+2+...+k &gt;= 1^2 + 2^2 + ... + n^2</code>.
+ * A027922 Least k such that 1+2+...+k &gt;= 1^2 + 2^2 + ... + n^2.
  * @author Sean A. Irvine
  */
 public class A027922 implements Sequence {

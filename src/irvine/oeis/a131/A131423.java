@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A131423 <code>a(n) = n*(n+2)*(2*n-1)/3</code>. Also, row sums of triangle <code>A131422</code>.
+ * A131423 a(n) = n*(n+2)*(2*n-1)/3. Also, row sums of triangle A131422.
  * @author Sean A. Irvine
  */
 public class A131423 extends LinearRecurrence {

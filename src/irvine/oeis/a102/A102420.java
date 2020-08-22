@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A102420 Number of partitions of n into exactly k <code>= 5</code> parts with each part p <code>&lt;= 5</code>.
+ * A102420 Number of partitions of n into exactly k = 5 parts with each part p &lt;= 5.
  * @author Georg Fischer
  */
 public class A102420 extends PaddingSequence {

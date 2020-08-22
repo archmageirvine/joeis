@@ -3,7 +3,7 @@ package irvine.oeis.a090;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A090200 <code>N(7,n)</code> where <code>N(7,x)</code> is the 7th Narayana polynomial.
+ * A090200 N(7,n) where N(7,x) is the 7th Narayana polynomial.
  * @author Sean A. Irvine
  */
 public class A090200 extends LinearRecurrence {

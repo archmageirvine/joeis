@@ -5,7 +5,7 @@ package irvine.oeis.a154;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A154890 Jacobsthal numbers <code>A001045</code> alternatingly incremented by 3 and 5.
+ * A154890 Jacobsthal numbers A001045 alternatingly incremented by 3 and 5.
  * @author Georg Fischer
  */
 public class A154890 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a286;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A286175 Sum of the n-th entries in all cycles of all permutations of <code>[n+1]</code>.
+ * A286175 Sum of the n-th entries in all cycles of all permutations of [n+1].
  * @author Georg Fischer
  */
 public class A286175 extends HolonomicRecurrence {

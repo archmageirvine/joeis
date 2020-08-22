@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A033650 Trajectory of 7 under map <code>x --&gt; x + (x-with-digits-reversed)</code>.
+ * A033650 Trajectory of 7 under map x --&gt; x + (x-with-digits-reversed).
  * @author Sean A. Irvine
  */
 public class A033650 implements Sequence {

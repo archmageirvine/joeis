@@ -3,7 +3,7 @@ package irvine.oeis.a218;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A218724 <code>a(n) = (21^n - 1)/20</code>.
+ * A218724 a(n) = (21^n - 1)/20.
  * @author Sean A. Irvine
  */
 public class A218724 extends LinearRecurrence {

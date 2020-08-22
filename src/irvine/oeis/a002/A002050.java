@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A002050 Number of simplices in barycentric subdivision of <code>n-simplex</code>.
+ * A002050 Number of simplices in barycentric subdivision of n-simplex.
  * @author Sean A. Irvine
  */
 public class A002050 implements Sequence {

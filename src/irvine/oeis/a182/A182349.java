@@ -4,7 +4,7 @@ package irvine.oeis.a182;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A182349 G.f.: <code>exp( Sum_{n&gt;=1} 6 * A084214(n) * x^n/n )</code> where g.f. of <code>A084214</code> is <code>(1+x^2)/((1+x)*(1-2*x))</code>.
+ * A182349  G.f.: exp( Sum_{n&gt;=1} 6 * A084214(n) * x^n/n ) where g.f. of A084214 is (1+x^2)/((1+x)*(1-2*x)).
  * @author Georg Fischer
  */
 public class A182349 extends GeneratingFunctionSequence {

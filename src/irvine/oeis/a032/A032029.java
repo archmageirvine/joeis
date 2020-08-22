@@ -1,7 +1,7 @@
 package irvine.oeis.a032;
 
 /**
- * A032029 Shifts left twice under "AGK" <code>(ordered</code>, elements, unlabeled) transform.
+ * A032029 Shifts left twice under "AGK" (ordered, elements, unlabeled) transform.
  * @author Sean A. Irvine
  */
 public class A032029 extends A032027 {

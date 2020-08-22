@@ -3,7 +3,7 @@ package irvine.oeis.a202;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A202804 <code>a(n) = n*(6*n+4)</code>.
+ * A202804 a(n) = n*(6*n+4).
  * @author Sean A. Irvine
  */
 public class A202804 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023758 Numbers of the form <code>2^i - 2^j</code> with i <code>&gt;=</code> j.
+ * A023758 Numbers of the form 2^i - 2^j with i &gt;= j.
  * @author Sean A. Irvine
  */
 public class A023758 implements Sequence {

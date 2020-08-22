@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A177933 Decimal expansion of <code>(232405+sqrt(71216963807))/348378</code>.
+ * A177933 Decimal expansion of (232405+sqrt(71216963807))/348378.
  * @author Georg Fischer
  */
 public class A177933 extends DecimalExpansionSequence {

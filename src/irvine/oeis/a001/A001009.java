@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001009 Triangle giving number <code>L(n,k)</code> of normalized k X n Latin rectangles.
+ * A001009 Triangle giving number L(n,k) of normalized k X n Latin rectangles.
  * @author Sean A. Irvine
  */
 public class A001009 implements Sequence {

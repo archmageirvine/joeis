@@ -8,7 +8,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A309927 Decimal expansion of <code>Pi^7/Zeta(7)</code>.
+ * A309927 Decimal expansion of Pi^7/Zeta(7).
  * @author Georg Fischer
  */
 public class A309927 extends DecimalExpansionSequence {

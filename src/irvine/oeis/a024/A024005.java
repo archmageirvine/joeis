@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001015;
 
 /**
- * A024005 <code>a(n) = 1 - n^7</code>.
+ * A024005 a(n) = 1 - n^7.
  * @author Sean A. Irvine
  */
 public class A024005 extends A001015 {

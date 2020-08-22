@@ -5,7 +5,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093356 Number of occurrences of pattern 1-2 after n iterations of morphism <code>A007413</code>.
+ * A093356 Number of occurrences of pattern 1-2 after n iterations of morphism A007413.
  * @author Georg Fischer
  */
 public class A093356 extends HolonomicRecurrence {

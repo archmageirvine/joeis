@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001045;
 
 
 /**
- * A156060 Jacobsthal numbers <code>A001045 mod 9</code>.
+ * A156060 Jacobsthal numbers A001045 mod 9.
  * @author Georg Fischer
  */
 public class A156060 extends A001045 {

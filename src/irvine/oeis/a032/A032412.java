@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032412 Numbers k such that <code>125*2^k+1</code> is prime.
+ * A032412 Numbers k such that 125*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032412 extends PowerFactorPrimeSequence {

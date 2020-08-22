@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228744 Number of arrays of the median of three adjacent elements of some length <code>9 0..n</code> array.
+ * A228744 Number of arrays of the median of three adjacent elements of some length 9 0..n array.
  * @author Georg Fischer
  */
 public class A228744 extends GeneratingFunctionSequence {

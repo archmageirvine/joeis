@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a008.A008315;
 
 /**
- * A027301 <code>a(n) = self-convolution</code> of row n of Catalan triangle <code>(A008315)</code>.
+ * A027301 a(n) = self-convolution of row n of Catalan triangle (A008315).
  * @author Sean A. Irvine
  */
 public class A027301 extends A008315 {

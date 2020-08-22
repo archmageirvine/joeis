@@ -5,7 +5,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108666 Number of <code>(1, 1)-steps</code> in all Delannoy paths of length <code>n</code>.
+ * A108666 Number of (1, 1)-steps in all Delannoy paths of length n.
  * @author Georg Fischer
  */
 public class A108666 extends HolonomicRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import java.util.ArrayList;
 
 /**
- * A146526 <code>a(n) =</code> the smallest positive integer m with exactly <code>n</code> (no more, no fewer) distinct primes represented in binary as substrings within the binary representation of m.
+ * A146526 a(n) = the smallest positive integer m with exactly n (no more, no fewer) distinct primes represented in binary as substrings within the binary representation of m.
  * @author Sean A. Irvine
  */
 public class A146526 implements Sequence {

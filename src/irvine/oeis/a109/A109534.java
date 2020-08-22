@@ -3,7 +3,7 @@ package irvine.oeis.a109;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A109534 <code>a(0)=1, a(n)=n+a(n-1)</code> if <code>n mod 2=0, a(n)=3n-a(n-1)</code> if <code>n mod 2 = 1</code>.
+ * A109534 a(0)=1, a(n)=n+a(n-1) if n mod 2=0, a(n)=3n-a(n-1) if n mod 2 = 1.
  * @author Sean A. Irvine
  */
 public class A109534 extends LinearRecurrence {

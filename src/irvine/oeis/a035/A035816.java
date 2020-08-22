@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A035816 Coordination sequence for lattice <code>D*_62</code> (with edges defined by <code>l_1</code> norm <code>= 1)</code>.
+ * A035816 Coordination sequence for lattice D*_62 (with edges defined by l_1 norm = 1).
  * @author Georg Fischer
  */
 public class A035816 extends LatticeCoordinationSequence {

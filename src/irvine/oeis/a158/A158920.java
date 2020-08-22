@@ -4,7 +4,7 @@ package irvine.oeis.a158;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A158920 Binomial transform of <code>A008805</code> (triangular numbers with repeats).
+ * A158920 Binomial transform of A008805 (triangular numbers with repeats).
  * @author Georg Fischer
  */
 public class A158920 extends GeneratingFunctionSequence {

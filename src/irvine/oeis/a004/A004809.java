@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A004809 Numbers that are the sum of 9 positive <code>10th</code> powers.
+ * A004809 Numbers that are the sum of 9 positive 10th powers.
  * @author Sean A. Irvine
  */
 public class A004809 extends SumOfLikePowersSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a277;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A277361 <code>a(n) = Sum_{k=0..n} k^3 * binomial(n-k, k)</code>.
+ * A277361 a(n) = Sum_{k=0..n} k^3 * binomial(n-k, k).
  * @author Sean A. Irvine
  */
 public class A277361 extends LinearRecurrence {

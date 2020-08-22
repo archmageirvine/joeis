@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a084.A084894;
 
 /**
- * A006967 Number of graceful permutations of length <code>n</code>.
+ * A006967 Number of graceful permutations of length n.
  * @author Sean A. Irvine
  */
 public class A006967 extends A084894 {

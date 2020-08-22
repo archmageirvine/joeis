@@ -4,7 +4,7 @@ package irvine.oeis.a176;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A176413 <code>a(n) = 19*3^n</code>.
+ * A176413 a(n) = 19*3^n.
  * @author Georg Fischer
  */
 public class A176413 extends GeneratingFunctionSequence {

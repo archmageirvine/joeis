@@ -5,7 +5,7 @@ package irvine.oeis.a112;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A112718 Numbers n such that <code>pi(n)=1^d_1+2^d_2+...+k^d_k</code> where <code>d_1 d_2 ... d_k</code> is the decimal expansion of <code>n</code>.
+ * A112718 Numbers n such that pi(n)=1^d_1+2^d_2+...+k^d_k where d_1 d_2 ... d_k is the decimal expansion of n.
  * @author Georg Fischer
  */
 public class A112718 extends FiniteSequence {

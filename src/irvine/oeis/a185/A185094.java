@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A185094 Decimal expansion of <code>sqrt(3)^sqrt(3)</code>.
+ * A185094 Decimal expansion of sqrt(3)^sqrt(3).
  * @author Georg Fischer
  */
 public class A185094 extends DecimalExpansionSequence {

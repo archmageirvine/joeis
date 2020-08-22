@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A307769 Decimal expansion of <code>2^(-149)</code>.
+ * A307769 Decimal expansion of 2^(-149).
  * @author Georg Fischer
  */
 public class A307769 extends FiniteSequence {

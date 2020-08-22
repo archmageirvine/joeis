@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A112245 Numbers k such that <code>65537*2^k+1</code> is prime.
+ * A112245 Numbers k such that 65537*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A112245 extends PowerFactorPrimeSequence {

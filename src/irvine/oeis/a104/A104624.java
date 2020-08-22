@@ -6,7 +6,7 @@ package irvine.oeis.a104;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A104624 Expansion of <code>exp( arcsinh( -2*x ) )</code> in powers of <code>x</code>.
+ * A104624 Expansion of exp( arcsinh( -2*x ) ) in powers of x.
  * @author Georg Fischer
  */
 public class A104624 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a187;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A187325 <code>a(n) = floor(n/2) + floor(n/3) + floor(n/4) + floor(n/5)</code>.
+ * A187325 a(n) = floor(n/2) + floor(n/3) + floor(n/4) + floor(n/5).
  * @author Georg Fischer
  */
 public class A187325 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027797 <code>a(n) = 22*(n+1)*C(n+3,12)</code>.
+ * A027797 a(n) = 22*(n+1)*C(n+3,12).
  * @author Georg Fischer
  */
 public class A027797 extends GeneratingFunctionSequence {

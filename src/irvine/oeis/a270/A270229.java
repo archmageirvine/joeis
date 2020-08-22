@@ -6,7 +6,7 @@ package irvine.oeis.a270;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A270229 Number of matchings <code>(i.e.</code>, Hosoya index) in <code>P_{2} X K_{n}</code>.
+ * A270229 Number of matchings (i.e., Hosoya index) in P_{2} X K_{n}.
  * @author Georg Fischer
  */
 public class A270229 extends HolonomicRecurrence {

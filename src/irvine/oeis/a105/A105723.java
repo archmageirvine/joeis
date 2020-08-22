@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A105723 <code>a(n) = 3^n - (-1)^n</code>.
+ * A105723 a(n) = 3^n - (-1)^n.
  * @author Georg Fischer
  */
 public class A105723 extends LinearRecurrence {

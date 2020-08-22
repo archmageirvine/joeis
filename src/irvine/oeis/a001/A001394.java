@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A001394 Number of <code>n-step self-avoiding</code> walks on diamond.
+ * A001394 Number of n-step self-avoiding walks on diamond.
  * @author Sean A. Irvine
  */
 public class A001394 implements Sequence {

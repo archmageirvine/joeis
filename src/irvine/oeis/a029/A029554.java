@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a120.A120944;
 
 /**
- * A029554 Quasi-Carmichael numbers to base <code>9</code>: squarefree composites n such that <code>(n,2*3*5*7) = 1</code> and prime <code>p|n ==&gt; p-9|n-9</code>.
+ * A029554 Quasi-Carmichael numbers to base 9: squarefree composites n such that (n,2*3*5*7) = 1 and prime p|n ==&gt; p-9|n-9.
  * @author Sean A. Irvine
  */
 public class A029554 extends A120944 {

@@ -7,7 +7,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A257238 Triangle <code>T(n, k) = n^3 - k^3, 0 &lt;= k &lt; = n</code>.
+ * A257238 Triangle T(n, k) = n^3 - k^3, 0 &lt;= k &lt; = n.
  * @author Georg Fischer
  */
 public class A257238 extends GeneratingFunctionTriangle {

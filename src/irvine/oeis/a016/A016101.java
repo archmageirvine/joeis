@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A016101 <code>(n! - n)/2</code> for even <code>n</code>.
+ * A016101 (n! - n)/2 for even n.
  * @author Sean A. Irvine
  */
 public class A016101 implements Sequence {

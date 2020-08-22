@@ -4,7 +4,7 @@ package irvine.oeis.a090;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A090937 <code>a(1) = 1, a(2) = 2;</code> for <code>n &gt; 2, a(n) = a(n-1) +</code> (smallest integer <code>&gt;= n</code> which is coprime to <code>a(n-1))</code>.
+ * A090937 a(1) = 1, a(2) = 2; for n &gt; 2, a(n) = a(n-1) + (smallest integer &gt;= n which is coprime to a(n-1)).
  * @author Georg Fischer
  */
 public class A090937 extends GeneratingFunctionSequence {

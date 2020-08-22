@@ -4,7 +4,7 @@ package irvine.oeis.a152;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A152192 <code>a(n) = prod(k=1..floor((n-1)/2), 1 + 4*cos(2*Pi*k/n)^2 )</code>.
+ * A152192 a(n) = prod(k=1..floor((n-1)/2), 1 + 4*cos(2*Pi*k/n)^2 ).
  * @author Georg Fischer
  */
 public class A152192 extends GeneratingFunctionSequence {

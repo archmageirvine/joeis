@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A089806 Expansion of Jacobi theta function <code>(theta_3(q^(1/3))-theta_2(q^3))/2/q^(1/12)</code>.
+ * A089806 Expansion of Jacobi theta function (theta_3(q^(1/3))-theta_2(q^3))/2/q^(1/12).
  * @author Georg Fischer
  */
 public class A089806 extends EulerTransform {

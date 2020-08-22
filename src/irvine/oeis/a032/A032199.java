@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a159.A159289;
 
 /**
- * A032199 "CIK" <code>(necklace</code>, indistinct, unlabeled) transform of 3,5,7...
+ * A032199 "CIK" (necklace, indistinct, unlabeled) transform of 3,5,7...
  * @author Sean A. Irvine
  */
 public class A032199 implements Sequence {

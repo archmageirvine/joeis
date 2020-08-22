@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330592 <code>a(n)</code> is the number of subsets of <code>{1,2,...,n}</code> that contain exactly two odd numbers.
+ * A330592 a(n) is the number of subsets of {1,2,...,n} that contain exactly two odd numbers.
  * @author Georg Fischer
  */
 public class A330592 extends HolonomicRecurrence {

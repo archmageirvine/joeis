@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A122779 Expansion of <code>F(q)*F(q^5)</code> where <code>F(q) = eta(q^2)*eta(q^3)^3 / (eta(q)*eta(q^6))</code>.
+ * A122779 Expansion of F(q)*F(q^5) where F(q) = eta(q^2)*eta(q^3)^3 / (eta(q)*eta(q^6)).
  * @author Georg Fischer
  */
 public class A122779 extends EulerTransform {

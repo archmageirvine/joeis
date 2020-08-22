@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033496 Numbers n such that initial number is largest number in trajectory of Collatz <code>(3x+1)</code> problem.
+ * A033496 Numbers n such that initial number is largest number in trajectory of Collatz (3x+1) problem.
  * @author Sean A. Irvine
  */
 public class A033496 implements Sequence {

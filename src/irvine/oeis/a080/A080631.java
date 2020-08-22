@@ -3,7 +3,7 @@ package irvine.oeis.a080;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A080631 Consider <code>3 X 3 X 3</code> Rubik cube, but consider only positions of edges; sequence gives number of positions that are exactly n moves from the start up to equivalence under the full group of order 48 of the cube.
+ * A080631 Consider 3 X 3 X 3 Rubik cube, but consider only positions of edges; sequence gives number of positions that are exactly n moves from the start up to equivalence under the full group of order 48 of the cube.
  * @author Georg Fischer
  */
 public class A080631 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034135 Decimal part of cube root of n starts with <code>9</code>: first term of runs.
+ * A034135 Decimal part of cube root of n starts with 9: first term of runs.
  * @author Sean A. Irvine
  */
 public class A034135 extends A034125 {

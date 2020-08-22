@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A135237 Numbers n such that <code>n=s^pi(pi(s))</code> where s is sum of its digits.
+ * A135237 Numbers n such that n=s^pi(pi(s)) where s is sum of its digits.
  * @author Georg Fischer
  */
 public class A135237 extends FiniteSequence {

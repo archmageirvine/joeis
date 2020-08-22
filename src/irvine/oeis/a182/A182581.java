@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007949;
 
 /**
- * A182581 <code>(3-adic</code> valuation of <code>n)</code>, read <code>mod 2</code>.
+ * A182581 (3-adic valuation of n), read mod 2.
  * @author Georg Fischer
  */
 public class A182581 extends A007949 {

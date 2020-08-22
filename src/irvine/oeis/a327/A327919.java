@@ -5,7 +5,7 @@ package irvine.oeis.a327;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A327919 The 17 pure prime dates of each leap year of the form <code>concatenate(month,day)</code> with month and day also prime numbers.
+ * A327919 The 17 pure prime dates of each leap year of the form concatenate(month,day) with month and day also prime numbers.
  * @author Georg Fischer
  */
 public class A327919 extends FiniteSequence {

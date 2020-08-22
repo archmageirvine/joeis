@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A114332 English spelling of n ends with <code>a(n)-th</code> letter of the alphabet.
+ * A114332 English spelling of n ends with a(n)-th letter of the alphabet.
  * @author Georg Fischer
  */
 public class A114332 extends PaddingSequence {

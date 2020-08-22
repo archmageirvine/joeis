@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a012.A012125;
 
 /**
- * A025175 Jacobi polynomial <code>P((1, 1)</code>, n, <code>(1/2))</code>.
+ * A025175 Jacobi polynomial P((1, 1), n, (1/2)).
  * @author Sean A. Irvine
  */
 public class A025175 extends A012125 {

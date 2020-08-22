@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A137453 <code>a(0) = 2, a(1) = 9;</code> thereafter, <code>a(n) = a(n-1)*a(n-2) mod (a(n-1)+a(n-2))</code>.
+ * A137453 a(0) = 2, a(1) = 9; thereafter, a(n) = a(n-1)*a(n-2) mod (a(n-1)+a(n-2)).
  * @author Georg Fischer
  */
 public class A137453 extends PaddingSequence {

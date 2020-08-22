@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333251 Tropical version of <code>Somos-5</code> sequence <code>A006721</code>.
+ * A333251 Tropical version of Somos-5 sequence A006721.
  * @author Georg Fischer
  */
 public class A333251 extends GeneratingFunctionSequence {

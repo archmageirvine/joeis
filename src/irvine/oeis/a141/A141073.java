@@ -6,7 +6,7 @@ package irvine.oeis.a141;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A141073 List of central integer pairs in Pascal-like triangles with index of asymmetry <code>y = 3</code> and index of obliqueness <code>z = 0</code> or <code>z = 1</code>.
+ * A141073 List of central integer pairs in Pascal-like triangles with index of asymmetry y = 3 and index of obliqueness z = 0 or z = 1.
  * @author Georg Fischer
  */
 public class A141073 extends GeneratingFunctionSequence {

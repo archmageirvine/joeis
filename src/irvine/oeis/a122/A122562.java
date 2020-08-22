@@ -3,7 +3,7 @@ package irvine.oeis.a122;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A122562 <code>a(n) = n^3 + 114 * n</code>.
+ * A122562 a(n) = n^3 + 114 * n.
  * @author Sean A. Irvine
  */
 public class A122562 extends LinearRecurrence {

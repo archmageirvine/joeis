@@ -1,7 +1,7 @@
 package irvine.oeis.a031;
 
 /**
- * A031097 <code>a(n)=least</code> k such that base 9 representation of n begins at <code>s(k)</code>, where <code>s=A031087</code>.
+ * A031097 a(n)=least k such that base 9 representation of n begins at s(k), where s=A031087.
  * @author Sean A. Irvine
  */
 public class A031097 extends A031086 {

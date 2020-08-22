@@ -5,7 +5,7 @@ package irvine.oeis.a274;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A274976 Numbers n such that <code>(26*10^n + 31)/3</code> is prime.
+ * A274976 Numbers n such that (26*10^n + 31)/3 is prime.
  * @author Georg Fischer
  */
 public class A274976 extends PowerFactorPrimeSequence {

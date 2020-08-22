@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A189959 Decimal expansion of <code>(4+5*sqrt(2))/4</code>.
+ * A189959 Decimal expansion of (4+5*sqrt(2))/4.
  * @author Georg Fischer
  */
 public class A189959 extends DecimalExpansionSequence {

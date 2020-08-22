@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001951;
 
 /**
- * A022807 <code>a(n) = S(n) + c(n)</code> where <code>S(n) = [ n*sqrt(2) ] + [ n*sqrt(3) ]</code> and c is the complement of S.
+ * A022807 a(n) = S(n) + c(n) where S(n) = [ n*sqrt(2) ] + [ n*sqrt(3) ] and c is the complement of S.
  * @author Sean A. Irvine
  */
 public class A022807 implements Sequence {

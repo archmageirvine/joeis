@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A140278 Ceiling of the <code>(first-quadrant)</code> angle in degrees whose tangent is <code>n</code>.
+ * A140278 Ceiling of the (first-quadrant) angle in degrees whose tangent is n.
  * @author Georg Fischer
  */
 public class A140278 extends PaddingSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a279;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A279443 Number of ways to place 9 points on an <code>n X n</code> board so that no more than 2 points are on a vertical or horizontal straight line.
+ * A279443 Number of ways to place 9 points on an n X n board so that no more than 2 points are on a vertical or horizontal straight line.
  * @author Georg Fischer
  */
 public class A279443 extends HolonomicRecurrence {

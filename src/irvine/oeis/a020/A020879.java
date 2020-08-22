@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A020879 Number of elementary edge-subgraphs in Moebius ladder <code>M_n</code>.
+ * A020879 Number of elementary edge-subgraphs in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020879 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a109;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A109808 <code>a(n) = 2*7^(n-1)</code>.
+ * A109808 a(n) = 2*7^(n-1).
  * @author Georg Fischer
  */
 public class A109808 extends GeneratingFunctionSequence {

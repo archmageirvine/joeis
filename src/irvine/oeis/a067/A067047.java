@@ -3,7 +3,7 @@ package irvine.oeis.a067;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A067047 <code>a(n) = lcm(n, n+1, n+2, n+3)/12</code>.
+ * A067047 a(n) = lcm(n, n+1, n+2, n+3)/12.
  * @author Sean A. Irvine
  */
 public class A067047 extends LinearRecurrence {

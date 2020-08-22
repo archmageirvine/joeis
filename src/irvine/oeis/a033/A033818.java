@@ -4,7 +4,7 @@ package irvine.oeis.a033;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A033818 Convolution of natural numbers <code>n &gt;= 1</code> with Lucas numbers <code>L(k)</code> for k <code>&gt;= -2</code>.
+ * A033818 Convolution of natural numbers n &gt;= 1 with Lucas numbers L(k) for k &gt;= -2.
  * @author Georg Fischer
  */
 public class A033818 extends GeneratingFunctionSequence {

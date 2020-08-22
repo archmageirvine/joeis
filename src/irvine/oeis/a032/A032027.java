@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032027 Number of planted planar trees <code>(n+1</code> nodes) where any 2 subtrees extending from the same node are different.
+ * A032027 Number of planted planar trees (n+1 nodes) where any 2 subtrees extending from the same node are different.
  * @author Sean A. Irvine
  */
 public class A032027 extends MemorySequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033308 Decimal expansion of <code>Copeland-Erd\u0151s</code> constant: concatenate primes.
+ * A033308 Decimal expansion of Copeland-Erd\u0151s constant: concatenate primes.
  * @author Sean A. Irvine
  */
 public class A033308 extends A000040 {

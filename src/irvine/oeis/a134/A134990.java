@@ -4,7 +4,7 @@ package irvine.oeis.a134;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A134990 Interleave two arithmetic progressions 8,10,12,14,... and 15,13,11,9,... of differences <code>+2</code> and -2 respectively.
+ * A134990 Interleave two arithmetic progressions 8,10,12,14,... and 15,13,11,9,... of differences +2 and -2 respectively.
  * @author Georg Fischer
  */
 public class A134990 extends GeneratingFunctionSequence {

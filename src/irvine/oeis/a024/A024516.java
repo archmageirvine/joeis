@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000404;
 
 /**
- * A024516 Positions of odd numbers in <code>A000404</code> (sums of 2 nonzero squares).
+ * A024516 Positions of odd numbers in A000404 (sums of 2 nonzero squares).
  * @author Sean A. Irvine
  */
 public class A024516 extends A000404 {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A166926 <code>A000004</code> preceded by <code>1, 2, 4</code>.
+ * A166926 A000004 preceded by 1, 2, 4.
  * @author Georg Fischer
  */
 public class A166926 extends PaddingSequence {

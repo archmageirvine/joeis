@@ -6,7 +6,7 @@ package irvine.oeis.a127;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A127189 E.g.f.: <code>sqrt((1+4*x)/(1+2*x))</code>.
+ * A127189 E.g.f.: sqrt((1+4*x)/(1+2*x)).
  * @author Georg Fischer
  */
 public class A127189 extends HolonomicRecurrence {

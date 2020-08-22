@@ -4,7 +4,7 @@ package irvine.oeis.a085;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A085960 Size of the largest code of length 4 and minimum distance 3 over an alphabet of size <code>n</code>. This is usually denoted by <code>A_{n}(4,3)</code>.
+ * A085960 Size of the largest code of length 4 and minimum distance 3 over an alphabet of size n. This is usually denoted by A_{n}(4,3).
  * @author Georg Fischer
  */
 public class A085960 extends GeneratingFunctionSequence {

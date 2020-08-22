@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013654 Each term of the period of continued fraction for <code>sqrt(n)</code> divides <code>n</code>.
+ * A013654 Each term of the period of continued fraction for sqrt(n) divides n.
  * @author Sean A. Irvine
  */
 public class A013654 implements Sequence {

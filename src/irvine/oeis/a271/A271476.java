@@ -6,7 +6,7 @@ package irvine.oeis.a271;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A271476 Total number of burnt pancakes flipped using the <code>Min-bar(n)</code> greedy algorithm.
+ * A271476 Total number of burnt pancakes flipped using the Min-bar(n) greedy algorithm.
  * @author Georg Fischer
  */
 public class A271476 extends HolonomicRecurrence {

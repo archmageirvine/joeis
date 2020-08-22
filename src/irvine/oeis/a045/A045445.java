@@ -5,7 +5,7 @@ package irvine.oeis.a045;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A045445 Number of nonisomorphic systems of catafusenes for the unsymmetrical schemes (group <code>C_s)</code> with two appendages (see references for precise definition).
+ * A045445 Number of nonisomorphic systems of catafusenes for the unsymmetrical schemes (group C_s) with two appendages (see references for precise definition).
  * @author Georg Fischer
  */
 public class A045445 extends HolonomicRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a187;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A187071 Expansion of <code>d/dx arctan(x*A001003(x))</code>.
+ * A187071 Expansion of d/dx arctan(x*A001003(x)).
  * @author Georg Fischer
  */
 public class A187071 extends HolonomicRecurrence {

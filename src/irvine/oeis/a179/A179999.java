@@ -5,7 +5,7 @@ package irvine.oeis.a179;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A179999 Length of the n-th term in the modified Look and Say sequence <code>A110393</code>.
+ * A179999 Length of the n-th term in the modified Look and Say sequence A110393.
  * @author Georg Fischer
  */
 public class A179999 extends HolonomicRecurrence {

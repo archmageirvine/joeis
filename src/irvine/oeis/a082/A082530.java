@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A082530 <code>a(1)=1, a(n)=5*a(n-1)+1</code> if <code>a(n-1)</code> is odd, <code>a(n)=a(n-1)/2+1</code> otherwise.
+ * A082530 a(1)=1, a(n)=5*a(n-1)+1 if a(n-1) is odd, a(n)=a(n-1)/2+1 otherwise.
  * @author Georg Fischer
  */
 public class A082530 extends LinearRecurrence {

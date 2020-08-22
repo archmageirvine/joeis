@@ -6,7 +6,7 @@ package irvine.oeis.a084;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A084949 <code>a(n) = Product_{i=0..n-1} (9*i+2)</code>.
+ * A084949 a(n) = Product_{i=0..n-1} (9*i+2).
  * @author Georg Fischer
  */
 public class A084949 extends HolonomicRecurrence {

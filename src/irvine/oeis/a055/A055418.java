@@ -4,7 +4,7 @@ package irvine.oeis.a055;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A055418 Number of points in <code>N^n</code> of norm <code>&lt;= 3</code>.
+ * A055418 Number of points in N^n of norm &lt;= 3.
  * @author Georg Fischer
  */
 public class A055418 extends GeneratingFunctionSequence {

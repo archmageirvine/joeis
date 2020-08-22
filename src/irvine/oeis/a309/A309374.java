@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A309374 Numbers k such that <code>k+j</code> is prime for every j, where <code>1 &lt;= j &lt;</code> k and <code>gcd(j,k) = 1</code>.
+ * A309374 Numbers k such that k+j is prime for every j, where 1 &lt;= j &lt; k and gcd(j,k) = 1.
  * @author Georg Fischer
  */
 public class A309374 extends FiniteSequence {

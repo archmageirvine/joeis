@@ -6,7 +6,7 @@ package irvine.oeis.a082;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A082145 A subdiagonal of number array <code>A082137</code>.
+ * A082145 A subdiagonal of number array A082137.
  * @author Georg Fischer
  */
 public class A082145 extends HolonomicRecurrence {

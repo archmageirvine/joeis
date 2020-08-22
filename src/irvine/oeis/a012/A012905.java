@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A012905 Expansion of e.g.f: <code>arcsinh(arcsin(x)+log(x+1))=2*x-1/2!*x^2-5/3!*x^3+18/4!*x^4+171/5!*x^5..</code>.
+ * A012905 Expansion of e.g.f: arcsinh(arcsin(x)+log(x+1))=2*x-1/2!*x^2-5/3!*x^3+18/4!*x^4+171/5!*x^5...
  * @author Sean A. Irvine
  */
 public class A012905 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A008582 Molien series for Weyl group <code>E_8</code>.
+ * A008582 Molien series for Weyl group E_8.
  * @author Sean A. Irvine
  */
 public class A008582 extends GeneratingFunctionSequence {

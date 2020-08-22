@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010811 23rd powers: <code>a(n) = n^23</code>.
+ * A010811 23rd powers: a(n) = n^23.
  * @author Sean A. Irvine
  */
 public class A010811 implements Sequence {

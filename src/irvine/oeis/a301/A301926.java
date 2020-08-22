@@ -4,7 +4,7 @@ package irvine.oeis.a301;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A301926 <code>a(n+3) = a(n) + 24*n + 32, a(0)=0, a(1)=3, a(2)=13</code>.
+ * A301926 a(n+3) = a(n) + 24*n + 32, a(0)=0, a(1)=3, a(2)=13.
  * @author Georg Fischer
  */
 public class A301926 extends GeneratingFunctionSequence {

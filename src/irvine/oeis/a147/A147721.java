@@ -7,7 +7,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A147721 <code>a(n) = C(2,n)</code> DELTA <code>C(0,n)</code>.
+ * A147721 a(n) = C(2,n) DELTA C(0,n).
  * @author Georg Fischer
  */
 public class A147721 extends GeneratingFunctionTriangle {

@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211380 Number of pairs of intersecting diagonals in the interior and exterior of a regular <code>n-gon</code>.
+ * A211380 Number of pairs of intersecting diagonals in the interior and exterior of a regular n-gon.
  * @author Sean A. Irvine
  */
 public class A211380 extends LinearRecurrence {

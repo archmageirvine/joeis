@@ -4,7 +4,7 @@ package irvine.oeis.a086;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A086028 <code>a(n) = Sum_{i=1..n} C(i+5,6)^3</code>.
+ * A086028 a(n) = Sum_{i=1..n} C(i+5,6)^3.
  * @author Georg Fischer
  */
 public class A086028 extends GeneratingFunctionSequence {

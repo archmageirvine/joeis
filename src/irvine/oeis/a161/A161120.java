@@ -6,7 +6,7 @@ package irvine.oeis.a161;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A161120 Number of cycles with entries of opposite parities in all <code>fixed-point-free</code> involutions of <code>{1,2,...,2n}</code>.
+ * A161120 Number of cycles with entries of opposite parities in all fixed-point-free involutions of {1,2,...,2n}.
  * @author Georg Fischer
  */
 public class A161120 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A152893 Periodic sequence <code>[3, 3, 0, 0, 4]</code> of period 5.
+ * A152893 Periodic sequence [3, 3, 0, 0, 4] of period 5.
  * @author Georg Fischer
  */
 public class A152893 extends PaddingSequence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a027.A027448;
 
 /**
- * A329122 First column of <code>A027448</code>.
+ * A329122 First column of A027448.
  * @author Sean A. Irvine
  */
 public class A329122 extends A027448 {

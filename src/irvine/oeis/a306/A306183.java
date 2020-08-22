@@ -6,7 +6,7 @@ package irvine.oeis.a306;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A306183 The coefficients of x in the reduction of <code>x^2 -&gt; x + 1</code> for the polynomial <code>p(n,x) = Product_{k=1..n} (x+k)</code>.
+ * A306183 The coefficients of x in the reduction of x^2 -&gt; x + 1 for the polynomial p(n,x) = Product_{k=1..n} (x+k).
  * @author Georg Fischer
  */
 public class A306183 extends HolonomicRecurrence {

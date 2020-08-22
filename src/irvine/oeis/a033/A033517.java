@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A033517 Number of matchings in graph <code>C_{5} X P_{n}</code>.
+ * A033517 Number of matchings in graph C_{5} X P_{n}.
  * @author Sean A. Irvine
  */
 public class A033517 extends LinearRecurrence {

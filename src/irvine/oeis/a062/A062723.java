@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062723 Least common multiple (LCM) of the first <code>n+1</code> terms of <code>A000792</code>.
+ * A062723 Least common multiple (LCM) of the first n+1 terms of A000792.
  * @author Georg Fischer
  */
 public class A062723 extends GeneratingFunctionSequence {

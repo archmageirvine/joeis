@@ -5,7 +5,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307985 Number of integer-sided triangles with perimeter n and sides a, b, and c such that a <code>&lt;= b &lt;=</code> c and <code>b|n</code>.
+ * A307985 Number of integer-sided triangles with perimeter n and sides a, b, and c such that a &lt;= b &lt;= c and b|n.
  * @author Georg Fischer
  */
 public class A307985 extends HolonomicRecurrence {

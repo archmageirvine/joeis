@@ -4,7 +4,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A333419 Decimal expansion of the error function at <code>1/2, erf(1/2)</code>.
+ * A333419 Decimal expansion of the error function at 1/2, erf(1/2).
  * @author Sean A. Irvine
  */
 public class A333419 extends DecimalExpansionSequence {

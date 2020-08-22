@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 
 /**
- * A033867 Palindrome reached from <code>A033866(n)</code> by <code>Reverse-then-add</code>.
+ * A033867 Palindrome reached from A033866(n) by Reverse-then-add.
  * @author Sean A. Irvine
  */
 public class A033867 extends A033866 {

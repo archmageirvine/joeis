@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018845 Number of iterations required for the sum of n and its prime divisors = t to reach a prime (where t replaces n in each iteration) in <code>A016837</code>.
+ * A018845 Number of iterations required for the sum of n and its prime divisors = t to reach a prime (where t replaces n in each iteration) in A016837.
  * @author Sean A. Irvine
  */
 public class A018845 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a177;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A177187 Union of <code>A057080</code> and <code>A001090</code>.
+ * A177187 Union of A057080 and A001090.
  * @author Sean A. Irvine
  */
 public class A177187 extends LinearRecurrence {

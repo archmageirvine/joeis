@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070074 <code>a(n)= 2F2(n+1, n+2; 1, 2; 1) *n! *(n+1)! /exp(1)</code>, where <code>2F2</code> is the generalized hypergeometric function.
+ * A070074 a(n)= 2F2(n+1, n+2; 1, 2; 1) *n! *(n+1)! /exp(1), where 2F2 is the generalized hypergeometric function.
  * @author Georg Fischer
  */
 public class A070074 extends HolonomicRecurrence {

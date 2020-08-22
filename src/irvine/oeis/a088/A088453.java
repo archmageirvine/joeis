@@ -7,7 +7,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A088453 Decimal expansion of <code>1/zeta(3)</code>.
+ * A088453 Decimal expansion of 1/zeta(3).
  * @author Georg Fischer
  */
 public class A088453 extends DecimalExpansionSequence {

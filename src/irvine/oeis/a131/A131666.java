@@ -5,7 +5,7 @@ package irvine.oeis.a131;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A131666 First differences of (A113405 prefixed with a <code>0)</code>.
+ * A131666 First differences of (A113405 prefixed with a 0).
  * @author Georg Fischer
  */
 public class A131666 extends HolonomicRecurrence {

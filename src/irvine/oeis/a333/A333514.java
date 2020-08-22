@@ -6,7 +6,7 @@ package irvine.oeis.a333;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A333514 Number of self-avoiding closed paths on an <code>n X 4</code> grid which pass through four corners <code>((0,0), (0,3), (n-1,3), (n-1,0))</code>.
+ * A333514 Number of self-avoiding closed paths on an n X 4 grid which pass through four corners ((0,0), (0,3), (n-1,3), (n-1,0)).
  * @author Georg Fischer
  */
 public class A333514 extends GeneratingFunctionSequence {

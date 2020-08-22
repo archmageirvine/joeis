@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A033623 Grundy function for <code>turn-at-most-4-coins</code> game.
+ * A033623 Grundy function for turn-at-most-4-coins game.
  * @author Sean A. Irvine
  */
 public class A033623 extends MemorySequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000957 Fine's sequence (or Fine <code>numbers)</code>: number of relations of valence <code>&gt;= 1</code> on an <code>n-set;</code> also number of ordered rooted trees with n edges having root of even degree.
+ * A000957 Fine's sequence (or Fine numbers): number of relations of valence &gt;= 1 on an n-set; also number of ordered rooted trees with n edges having root of even degree.
  * @author Sean A. Irvine
  */
 public class A000957 extends A000108 {

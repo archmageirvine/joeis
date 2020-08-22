@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025196 <code>[ Sum{(sqrt(j)-sqrt(i))^2} ], 1 &lt;= i &lt; j &lt;= n</code>.
+ * A025196 [ Sum{(sqrt(j)-sqrt(i))^2} ], 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A025196 extends MemoryFunction<Long, CR> implements Sequence {

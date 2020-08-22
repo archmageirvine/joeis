@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000204;
 
 
 /**
- * A193686 Lucas numbers <code>(mod 100)</code>.
+ * A193686 Lucas numbers (mod 100).
  * @author Georg Fischer
  */
 public class A193686 extends A000204 {

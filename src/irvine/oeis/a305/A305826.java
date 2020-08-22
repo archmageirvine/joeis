@@ -4,7 +4,7 @@ package irvine.oeis.a305;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A305826 Number of vectors in <code>{0..4}^n</code> with sum divisible by 9.
+ * A305826 Number of vectors in {0..4}^n with sum divisible by 9.
  * @author Georg Fischer
  */
 public class A305826 extends GeneratingFunctionSequence {

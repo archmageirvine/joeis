@@ -5,7 +5,7 @@ package irvine.oeis.a032;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A032468 Numbers k such that <code>183*2^k+1</code> is prime.
+ * A032468 Numbers k such that 183*2^k+1 is prime.
  * @author Georg Fischer
  */
 public class A032468 extends PowerFactorPrimeSequence {

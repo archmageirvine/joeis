@@ -6,7 +6,7 @@ package irvine.oeis.a113;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A113236 Number of partitions of <code>{1,..,n}</code> into any number of lists of size not equal to 3, where a list means an ordered subset, cf. <code>A000262</code>.
+ * A113236 Number of partitions of {1,..,n} into any number of lists of size not equal to 3, where a list means an ordered subset, cf. A000262.
  * @author Georg Fischer
  */
 public class A113236 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A023227 Numbers n such that n and <code>7n + 10</code> both prime.
+ * A023227 Numbers n such that n and 7n + 10 both prime.
  * @author Sean A. Irvine
  */
 public class A023227 extends A000040 {

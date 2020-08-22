@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246715 <code>n * Lucas(n) - (n - 1) * Lucas(n - 1)</code>.
+ * A246715 n * Lucas(n) - (n - 1) * Lucas(n - 1).
  * @author Georg Fischer
  */
 public class A246715 extends GeneratingFunctionSequence {

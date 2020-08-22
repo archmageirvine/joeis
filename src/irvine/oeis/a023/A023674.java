@@ -6,7 +6,7 @@ import irvine.oeis.a000.A000040;
 import irvine.oeis.a014.A014306;
 
 /**
- * A023674 Convolution of <code>A014306</code> (starting <code>0,0,1,1,0,1,1,1,1,...)</code> and primes.
+ * A023674 Convolution of A014306 (starting 0,0,1,1,0,1,1,1,1,...) and primes.
  * @author Sean A. Irvine
  */
 public class A023674 extends ConvolutionSequence {

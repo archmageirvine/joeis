@@ -3,7 +3,7 @@ package irvine.oeis.a279;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A279100 <code>a(n) = Sum_{k=0..n} ceiling(phi^k)</code>, where phi is the golden ratio <code>(A001622)</code>.
+ * A279100 a(n) = Sum_{k=0..n} ceiling(phi^k), where phi is the golden ratio (A001622).
  * @author Sean A. Irvine
  */
 public class A279100 extends LinearRecurrence {

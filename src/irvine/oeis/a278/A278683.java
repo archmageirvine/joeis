@@ -4,7 +4,7 @@ package irvine.oeis.a278;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A278683 Number of non-equivalent ways to place <code>4 non-attacking</code> ferses on an <code>n X n</code> board.
+ * A278683 Number of non-equivalent ways to place 4 non-attacking ferses on an n X n board.
  * @author Georg Fischer
  */
 public class A278683 extends GeneratingFunctionSequence {

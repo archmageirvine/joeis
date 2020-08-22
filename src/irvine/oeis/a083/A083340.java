@@ -4,7 +4,7 @@ import irvine.oeis.SemiprimeSequence;
 import irvine.oeis.a020.A020549;
 
 /**
- * A083340 Numbers n such that <code>A020549(n)=(n!)^2+1</code> is a semiprime.
+ * A083340 Numbers n such that A020549(n)=(n!)^2+1 is a semiprime.
  * @author Sean A. Irvine
  */
 public class A083340 extends SemiprimeSequence {

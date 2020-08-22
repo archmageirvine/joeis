@@ -4,7 +4,7 @@ package irvine.oeis.a101;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A101098 <code>a(1)=1;</code> thereafter, <code>a(n+1) = 20*n^3 + 10*n</code>.
+ * A101098 a(1)=1; thereafter, a(n+1) = 20*n^3 + 10*n.
  * @author Georg Fischer
  */
 public class A101098 extends GeneratingFunctionSequence {

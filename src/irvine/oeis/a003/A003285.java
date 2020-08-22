@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003285 Period of continued fraction for square root of <code>n</code> (or 0 if n is a square).
+ * A003285 Period of continued fraction for square root of n (or 0 if n is a square).
  * @author Sean A. Irvine
  */
 public class A003285 implements Sequence {

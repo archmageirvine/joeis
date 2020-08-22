@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034687 Related to quintic factorial numbers <code>A008548</code>.
+ * A034687 Related to quintic factorial numbers A008548.
  * @author Georg Fischer
  */
 public class A034687 extends HolonomicRecurrence {

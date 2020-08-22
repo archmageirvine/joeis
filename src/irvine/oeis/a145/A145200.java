@@ -12,7 +12,7 @@ import irvine.oeis.a013.A013973;
 import irvine.oeis.a282.A282019;
 
 /**
- * A145200 Coefficients of expansion of <code>Phi(tau) = E_2*E_4/(E_6*j)</code>.
+ * A145200 Coefficients of expansion of Phi(tau) = E_2*E_4/(E_6*j).
  * @author Sean A. Irvine
  */
 public class A145200 extends A282019 {

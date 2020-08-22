@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A074194 Trimorphic numbers: <code>a(n)^3 == a(n) (mod 10^35)</code>.
+ * A074194 Trimorphic numbers: a(n)^3 == a(n) (mod 10^35).
  * @author Georg Fischer
  */
 public class A074194 extends FiniteSequence {

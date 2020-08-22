@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A226015 McKay-Thompson series of class <code>21D</code> for the Monster group with <code>a(0) = 2</code>.
+ * A226015 McKay-Thompson series of class 21D for the Monster group with a(0) = 2.
  * @author Georg Fischer
  */
 public class A226015 extends EulerTransform {

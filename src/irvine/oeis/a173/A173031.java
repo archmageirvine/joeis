@@ -3,7 +3,7 @@ package irvine.oeis.a173;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A173031 Sequence whose G.f is given by: <code>1/(1-z)/(1-2*z)^2/(1-z-z^2)</code>.
+ * A173031 Sequence whose G.f is given by: 1/(1-z)/(1-2*z)^2/(1-z-z^2).
  * @author Sean A. Irvine
  */
 public class A173031 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a159;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A159710 Number of permutations of <code>1..n</code> arranged in a circle with exactly 2 local maxima.
+ * A159710 Number of permutations of 1..n arranged in a circle with exactly 2 local maxima.
  * @author Georg Fischer
  */
 public class A159710 extends LinearRecurrence {

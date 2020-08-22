@@ -3,7 +3,7 @@ package irvine.oeis.a029;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A029721 Theta series of 6-dimensional extremal 5-modular lattice <code>Q6(4)^{+2}</code>.
+ * A029721 Theta series of 6-dimensional extremal 5-modular lattice Q6(4)^{+2}.
  * @author Sean A. Irvine
  */
 public class A029721 extends GramMatrixThetaSeries {

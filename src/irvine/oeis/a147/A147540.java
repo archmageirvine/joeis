@@ -4,7 +4,7 @@ package irvine.oeis.a147;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A147540 Numbers whose binary representation is the concatenation of <code>2n-1</code> digits <code>1, n</code> digits 0 and <code>2n-1</code> digits 1.
+ * A147540 Numbers whose binary representation is the concatenation of 2n-1 digits 1, n digits 0 and 2n-1 digits 1.
  * @author Georg Fischer
  */
 public class A147540 extends GeneratingFunctionSequence {

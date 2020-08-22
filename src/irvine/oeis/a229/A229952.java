@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A229952 Decimal expansion of <code>m_e*c</code> in SI units <code>(kg*m/s)</code>, where <code>m_e</code> is the electron mass and c is the speed of light in vacuum.
+ * A229952 Decimal expansion of m_e*c in SI units (kg*m/s), where m_e is the electron mass and c is the speed of light in vacuum.
  * @author Georg Fischer
  */
 public class A229952 extends NoncomputableSequence {

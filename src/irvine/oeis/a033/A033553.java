@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033553 <code>3-Kn\u00f6del</code> numbers or <code>D-numbers</code>: numbers <code>n &gt; 3</code> such that <code>n | k^(n-2)-k</code> for all k with <code>gcd(k, n) = 1</code>.
+ * A033553 3-Kn\u00f6del numbers or D-numbers: numbers n &gt; 3 such that n | k^(n-2)-k for all k with gcd(k, n) = 1.
  * @author Sean A. Irvine
  */
 public class A033553 implements Sequence {

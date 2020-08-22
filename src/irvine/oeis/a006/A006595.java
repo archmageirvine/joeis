@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006595 <code>a(n) = (n+2)!/4 + n!/2</code>.
+ * A006595 a(n) = (n+2)!/4 + n!/2.
  * @author Sean A. Irvine
  */
 public class A006595 implements Sequence {

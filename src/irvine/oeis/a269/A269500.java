@@ -3,7 +3,7 @@ package irvine.oeis.a269;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A269500 <code>a(n) = Fibonacci(10*n)</code>.
+ * A269500 a(n) = Fibonacci(10*n).
  * @author Sean A. Irvine
  */
 public class A269500 extends LinearRecurrence {

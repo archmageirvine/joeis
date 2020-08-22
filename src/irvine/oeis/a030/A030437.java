@@ -5,7 +5,7 @@ import irvine.math.cr.UnaryCRFunction;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A030437 Decimal expansion of x such that <code>x^x = Pi</code>.
+ * A030437 Decimal expansion of x such that x^x = Pi.
  * @author Sean A. Irvine
  */
 public class A030437 extends DecimalExpansionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a103;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A103626 Four interleaved sequences <code>(1,1,1,1,1,1....), (1,2,3,5,8,12,...), (1,2,4,6,10,16,..)</code> and <code>(1,2,4,7,11,18,..)</code> each with recurrence <code>b(n) = b(n-1)+b(n-2)+b(n-3)-2*b(n-4)</code>.
+ * A103626 Four interleaved sequences (1,1,1,1,1,1....), (1,2,3,5,8,12,...), (1,2,4,6,10,16,..) and (1,2,4,7,11,18,..) each with recurrence b(n) = b(n-1)+b(n-2)+b(n-3)-2*b(n-4).
  * @author Georg Fischer
  */
 public class A103626 extends HolonomicRecurrence {

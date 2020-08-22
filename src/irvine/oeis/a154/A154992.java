@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154992 <code>A048473</code> prefixed by two zeros.
+ * A154992 A048473 prefixed by two zeros.
  * @author Georg Fischer
  */
 public class A154992 extends GeneratingFunctionSequence {

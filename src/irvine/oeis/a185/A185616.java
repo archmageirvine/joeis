@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000201;
 
 /**
- * A185616 Lower Wythoff values for sequence <code>A185615(n)</code>.
+ * A185616 Lower Wythoff values for sequence A185615(n).
  * @author Sean A. Irvine
  */
 public class A185616 extends A000201 {

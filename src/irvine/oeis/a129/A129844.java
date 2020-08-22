@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A129844 Triangular sequence constructed from heights of irreducible representations of semi-simple Lie algebras (exceptional groups plus <code>A1, G2, F4, E6, E7, E8)</code>.
+ * A129844 Triangular sequence constructed from heights of irreducible representations of semi-simple Lie algebras (exceptional groups plus A1, G2, F4, E6, E7, E8).
  * @author Georg Fischer
  */
 public class A129844 extends FiniteSequence {

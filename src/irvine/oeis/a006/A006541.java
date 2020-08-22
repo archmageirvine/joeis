@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006541 Number of dissimilarity relations on an <code>n-set</code>.
+ * A006541 Number of dissimilarity relations on an n-set.
  * @author Sean A. Irvine
  */
 public class A006541 implements Sequence {

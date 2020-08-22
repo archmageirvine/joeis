@@ -4,7 +4,7 @@ package irvine.oeis.a127;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A127210 <code>a(n) = 3^n*Lucas(n)</code>, where Lucas <code>= A000204</code>.
+ * A127210 a(n) = 3^n*Lucas(n), where Lucas = A000204.
  * @author Georg Fischer
  */
 public class A127210 extends GeneratingFunctionSequence {

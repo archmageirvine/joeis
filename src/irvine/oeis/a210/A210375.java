@@ -4,7 +4,7 @@ package irvine.oeis.a210;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A210375 Number of <code>2 X 2</code> matrices with all terms in <code>{0,1,...,n}</code> and (sum of terms) <code>= n + 3</code>.
+ * A210375 Number of 2 X 2 matrices with all terms in {0,1,...,n} and (sum of terms) = n + 3.
  * @author Georg Fischer
  */
 public class A210375 extends GeneratingFunctionSequence {

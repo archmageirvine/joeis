@@ -4,7 +4,7 @@ package irvine.oeis.a071;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A071831 Frequency ratios for notes of C-major scale starting at c <code>= 1</code> (numerators).
+ * A071831 Frequency ratios for notes of C-major scale starting at c = 1 (numerators).
  * @author Georg Fischer
  */
 public class A071831 extends GeneratingFunctionSequence {

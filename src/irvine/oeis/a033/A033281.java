@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033281 Number of diagonal dissections of a convex <code>(n+9)-gon</code> into <code>n+1</code> regions.
+ * A033281 Number of diagonal dissections of a convex (n+9)-gon into n+1 regions.
  * @author Sean A. Irvine
  */
 public class A033281 implements Sequence {

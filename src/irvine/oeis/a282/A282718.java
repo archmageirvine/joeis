@@ -4,7 +4,7 @@ package irvine.oeis.a282;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A282718 Satisfies the tribonacci recurrence: <code>a(n) = a(n-1) + a(n-2) + a(n-3)</code>.
+ * A282718 Satisfies the tribonacci recurrence: a(n) = a(n-1) + a(n-2) + a(n-3).
  * @author Georg Fischer
  */
 public class A282718 extends GeneratingFunctionSequence {

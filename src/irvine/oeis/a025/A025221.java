@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025221 <code>[ 4th</code> elementary symmetric function of <code>sqrt(k+1) ], k = 1,2,...,n</code>.
+ * A025221 [ 4th elementary symmetric function of sqrt(k+1) ], k = 1,2,...,n.
  * @author Sean A. Irvine
  */
 public class A025221 implements Sequence {

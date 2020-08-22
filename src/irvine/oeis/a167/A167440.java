@@ -4,7 +4,7 @@ package irvine.oeis.a167;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A167440 <code>5th GegenbauerC</code> polynomial evaluated at powers of <code>2</code> (multiplied by <code>5)</code>.
+ * A167440 5th GegenbauerC polynomial evaluated at powers of 2 (multiplied by 5).
  * @author Georg Fischer
  */
 public class A167440 extends GeneratingFunctionSequence {

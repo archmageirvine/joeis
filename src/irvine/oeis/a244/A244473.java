@@ -4,7 +4,7 @@ package irvine.oeis.a244;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A244473 3rd-largest term in n-th row of Stern's diatomic triangle <code>A002487</code>.
+ * A244473 3rd-largest term in n-th row of Stern's diatomic triangle A002487.
  * @author Georg Fischer
  */
 public class A244473 extends GeneratingFunctionSequence {

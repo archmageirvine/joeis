@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A187076 Coefficients of L-series for elliptic curve <code>"144a1": y^2 = x^3 - 1</code>.
+ * A187076 Coefficients of L-series for elliptic curve "144a1": y^2 = x^3 - 1.
  * @author Georg Fischer
  */
 public class A187076 extends EulerTransform {

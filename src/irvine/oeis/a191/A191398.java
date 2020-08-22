@@ -6,7 +6,7 @@ package irvine.oeis.a191;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A191398 Number of dispersed Dyck paths of length <code>n (i.e.</code>, Motzkin paths of length n with no <code>(1,0)-steps</code> at positive heights) having no DHU's (here <code>U=(1,1), H=(1,0)</code>, and <code>D=(1,-1))</code>.
+ * A191398 Number of dispersed Dyck paths of length n (i.e., Motzkin paths of length n with no (1,0)-steps at positive heights) having no DHU's (here U=(1,1), H=(1,0), and D=(1,-1)).
  * @author Georg Fischer
  */
 public class A191398 extends HolonomicRecurrence {

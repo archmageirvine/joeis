@@ -3,7 +3,7 @@ package irvine.oeis.a321;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A321993 Numbers having less than 3 unique partitions into exactly 3 parts with the same product: complement of <code>A119028</code>.
+ * A321993 Numbers having less than 3 unique partitions into exactly 3 parts with the same product: complement of A119028.
  * @author Georg Fischer
  */
 public class A321993 extends FiniteSequence {

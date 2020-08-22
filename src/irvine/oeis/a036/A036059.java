@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A036059 The summarize Fibonacci sequence: summarize the previous two <code>terms!</code>.
+ * A036059 The summarize Fibonacci sequence: summarize the previous two terms!.
  * @author Georg Fischer
  */
 public class A036059 extends PaddingSequence {

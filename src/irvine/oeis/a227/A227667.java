@@ -6,7 +6,7 @@ package irvine.oeis.a227;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A227667 Number of lattice paths from <code>{n}^5</code> to <code>{0}^5</code> using steps that decrement one component by 1 such that for each point <code>(p_1,p_2,...,p_5)</code> we have <code>abs(p_{i}-p_{i+1}) &lt;= 1</code>.
+ * A227667 Number of lattice paths from {n}^5 to {0}^5 using steps that decrement one component by 1 such that for each point (p_1,p_2,...,p_5) we have abs(p_{i}-p_{i+1}) &lt;= 1.
  * @author Georg Fischer
  */
 public class A227667 extends GeneratingFunctionSequence {

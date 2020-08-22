@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A026233 <code>a(n) =</code> j if n is the j-th prime, else <code>a(n) =</code> k if n is the k-th nonprime.
+ * A026233 a(n) = j if n is the j-th prime, else a(n) = k if n is the k-th nonprime.
  * @author Sean A. Irvine
  */
 public class A026233 implements Sequence {

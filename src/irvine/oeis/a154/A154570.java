@@ -4,7 +4,7 @@ package irvine.oeis.a154;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A154570 The main diagonal of the successive differences of <code>A154127</code>.
+ * A154570 The main diagonal of the successive differences of A154127.
  * @author Georg Fischer
  */
 public class A154570 extends GeneratingFunctionSequence {

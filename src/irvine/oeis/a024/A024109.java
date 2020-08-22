@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001016;
 
 /**
- * A024109 <code>a(n) = 9^n - n^8</code>.
+ * A024109 a(n) = 9^n - n^8.
  * @author Sean A. Irvine
  */
 public class A024109 extends A001016 {

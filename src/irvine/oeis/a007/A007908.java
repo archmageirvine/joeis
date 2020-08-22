@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007908 Triangle of the gods: to get <code>a(n)</code>, concatenate the decimal numbers <code>1,2,3,...,n</code>.
+ * A007908 Triangle of the gods: to get a(n), concatenate the decimal numbers 1,2,3,...,n.
  * @author Sean A. Irvine
  */
 public class A007908 implements Sequence {

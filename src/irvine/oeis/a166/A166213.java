@@ -4,7 +4,7 @@ package irvine.oeis.a166;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A166213 Number of <code>5 X 5 X 5</code> triangular nonnegative integer arrays, symmetric under 120 degree rotation, with all sums of an element and its neighbors <code>&lt;= n</code>.
+ * A166213 Number of 5 X 5 X 5 triangular nonnegative integer arrays, symmetric under 120 degree rotation, with all sums of an element and its neighbors &lt;= n.
  * @author Georg Fischer
  */
 public class A166213 extends GeneratingFunctionSequence {

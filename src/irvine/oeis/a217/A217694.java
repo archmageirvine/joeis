@@ -4,7 +4,7 @@ package irvine.oeis.a217;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A217694 Number of n-variations of the set <code>{1,2,...,n+1}</code> satisfying <code>p(i)-i</code> in <code>{-2,0,2}, i=1..n</code> (an n-variation of the set <code>N_{n+s} = {1,2,...,n+s}</code> is any <code>1-to-1</code> mapping p from the set <code>N_n = {1,2,...,n}</code> into <code>N_{n+s} = {1,2,...,n+s})</code>.
+ * A217694 Number of n-variations of the set {1,2,...,n+1} satisfying p(i)-i in {-2,0,2}, i=1..n (an n-variation of the set N_{n+s} = {1,2,...,n+s} is any 1-to-1 mapping p from the set N_n = {1,2,...,n} into N_{n+s} = {1,2,...,n+s}).
  * @author Georg Fischer
  */
 public class A217694 extends GeneratingFunctionSequence {

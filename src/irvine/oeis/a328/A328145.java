@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A328145 <code>a(0) = 0, a(1) = 1;</code> for <code>n &gt; 1, a(n) = a(n-1) + a(n-2)</code> if <code>a(n-1) &gt;</code> k, where k is each element in the ordered set M of integers not in 0 .. <code>maximum(a(n-1))</code>. Otherwise <code>a(n+i) = a(n+i-1) -</code> k, <code>0 &lt;= i &lt; #M</code>.
+ * A328145 a(0) = 0, a(1) = 1; for n &gt; 1, a(n) = a(n-1) + a(n-2) if a(n-1) &gt; k, where k is each element in the ordered set M of integers not in 0 .. maximum(a(n-1)). Otherwise a(n+i) = a(n+i-1) - k, 0 &lt;= i &lt; #M.
  * @author Georg Fischer
  */
 public class A328145 extends PaddingSequence {

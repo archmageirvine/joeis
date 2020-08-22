@@ -3,7 +3,7 @@ package irvine.oeis.a282;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A282614 Number of inequivalent <code>3 X 3</code> matrices with entries in <code>{1,2,3,..,n}</code> up to vertical and horizontal reflections.
+ * A282614 Number of inequivalent 3 X 3 matrices with entries in {1,2,3,..,n} up to vertical and horizontal reflections.
  * @author Sean A. Irvine
  */
 public class A282614 extends LinearRecurrence {

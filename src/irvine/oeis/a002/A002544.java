@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.math.z.Binomial;
 
 /**
- * A002544 <code>a(n) = binomial(2*n+1,n)*(n+1)^2</code>.
+ * A002544 a(n) = binomial(2*n+1,n)*(n+1)^2.
  * @author Sean A. Irvine
  */
 public class A002544 implements Sequence {

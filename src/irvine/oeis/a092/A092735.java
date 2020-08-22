@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092735 Decimal expansion of <code>Pi^7</code>.
+ * A092735 Decimal expansion of Pi^7.
  * @author Georg Fischer
  */
 public class A092735 extends DecimalExpansionSequence {

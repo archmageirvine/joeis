@@ -7,7 +7,7 @@ package irvine.oeis.a129;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A129186 Right shift operator generating <code>1</code>'s in shifted spaces.
+ * A129186 Right shift operator generating 1's in shifted spaces.
  * @author Georg Fischer
  */
 public class A129186 extends GeneratingFunctionTriangle {

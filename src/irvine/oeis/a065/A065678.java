@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A065678 Minimum value t such that all quadruples of <code>Diffy_length &gt;= n</code> have a maximal value <code>&gt;=</code> t.
+ * A065678 Minimum value t such that all quadruples of Diffy_length &gt;= n have a maximal value &gt;= t.
  * @author Georg Fischer
  */
 public class A065678 extends GeneratingFunctionSequence {

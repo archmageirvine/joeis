@@ -3,7 +3,7 @@ package irvine.oeis.a216;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A216823 Prime factors of Giuga numbers <code>A007850</code> with 8 or fewer prime divisors.
+ * A216823 Prime factors of Giuga numbers A007850 with 8 or fewer prime divisors.
  * @author Georg Fischer
  */
 public class A216823 extends FiniteSequence {

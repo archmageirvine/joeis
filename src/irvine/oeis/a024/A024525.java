@@ -3,7 +3,7 @@ package irvine.oeis.a024;
 import irvine.math.z.Z;
 
 /**
- * A024525 <code>1^2+prime(1)^2+prime(2)^2+...+prime(n)^2</code>.
+ * A024525 1^2+prime(1)^2+prime(2)^2+...+prime(n)^2.
  * @author Sean A. Irvine
  */
 public class A024525 extends A024450 {

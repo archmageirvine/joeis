@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A097927 If <code>a(n-1)</code> is divisible by 2 then <code>a(n) = a(n-1)/2</code>. If <code>a(n-1)</code> is not divisible by 2 then <code>a(n) = 47-(a(n-1)+1)/2; a(0)=1</code>.
+ * A097927 If a(n-1) is divisible by 2 then a(n) = a(n-1)/2. If a(n-1) is not divisible by 2 then a(n) = 47-(a(n-1)+1)/2; a(0)=1.
  * @author Georg Fischer
  */
 public class A097927 extends PaddingSequence {

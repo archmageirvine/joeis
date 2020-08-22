@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A022629 Expansion of <code>Product_{m&gt;=1} (1 + m*q^m)</code>.
+ * A022629 Expansion of Product_{m&gt;=1} (1 + m*q^m).
  * @author Sean A. Irvine
  */
 public class A022629 extends MemoryFunction2<Long, Z> implements Sequence {

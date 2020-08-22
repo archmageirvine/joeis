@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025222 <code>a(n) = [ Sum{(sqrt(j+1)-sqrt(i+1))^2} ], 1 &lt;= i &lt; j &lt;= n</code>.
+ * A025222 a(n) = [ Sum{(sqrt(j+1)-sqrt(i+1))^2} ], 1 &lt;= i &lt; j &lt;= n.
  * @author Sean A. Irvine
  */
 public class A025222 implements Sequence {

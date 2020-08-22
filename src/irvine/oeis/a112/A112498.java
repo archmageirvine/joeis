@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112498 Third column of second-order Eulerian triangle <code>A008517</code> divided by 2.
+ * A112498 Third column of second-order Eulerian triangle A008517 divided by 2.
  * @author Georg Fischer
  */
 public class A112498 extends GeneratingFunctionSequence {

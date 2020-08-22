@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A014120 Smallest number of persistence n over <code>product-of-nonzero-digits</code> function.
+ * A014120 Smallest number of persistence n over product-of-nonzero-digits function.
  * @author Sean A. Irvine
  */
 public class A014120 implements Sequence {

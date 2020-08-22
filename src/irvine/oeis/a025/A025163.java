@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025163 The value of the associated Legendre Polynomial of index n and order 1 evaluated at <code>x=2^(-1/2)</code> multiplied by <code>2^(3*n/2-1)</code>.
+ * A025163 The value of the associated Legendre Polynomial of index n and order 1 evaluated at x=2^(-1/2) multiplied by 2^(3*n/2-1).
  * @author Sean A. Irvine
  */
 public class A025163 implements Sequence {

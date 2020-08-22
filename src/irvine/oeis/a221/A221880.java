@@ -4,7 +4,7 @@ package irvine.oeis.a221;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A221880 Number of order-preserving or order-reversing full contraction mappings (of an <code>n-chain)</code> with exactly 1 fixed point.
+ * A221880 Number of order-preserving or order-reversing full contraction mappings (of an n-chain) with exactly 1 fixed point.
  * @author Georg Fischer
  */
 public class A221880 extends GeneratingFunctionSequence {

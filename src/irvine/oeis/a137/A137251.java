@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A137251 Triangle <code>T(n,k)</code> read by rows: number of k X k triangular matrices with nonnegative integer entries and without zero rows or columns such that sum of all entries is equal to n, <code>n&gt;=1, 1&lt;=k&lt;=n</code>.
+ * A137251 Triangle T(n,k) read by rows: number of k X k triangular matrices with nonnegative integer entries and without zero rows or columns such that sum of all entries is equal to n, n&gt;=1, 1&lt;=k&lt;=n.
  * @author Sean A. Irvine
  */
 public class A137251 extends MemoryFunctionInt3<Z[]> implements Sequence {

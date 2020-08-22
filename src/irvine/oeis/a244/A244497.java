@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244497 Number of magic labelings of the prism graph I X <code>C_5</code> with magic sum <code>n</code>.
+ * A244497 Number of magic labelings of the prism graph I X C_5 with magic sum n.
  * @author Sean A. Irvine
  */
 public class A244497 extends LinearRecurrence {

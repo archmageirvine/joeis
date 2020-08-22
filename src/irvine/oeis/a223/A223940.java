@@ -4,7 +4,7 @@ package irvine.oeis.a223;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A223940 Sums of antidiagonals of <code>A223968</code>.
+ * A223940 Sums of antidiagonals of A223968.
  * @author Georg Fischer
  */
 public class A223940 extends GeneratingFunctionSequence {

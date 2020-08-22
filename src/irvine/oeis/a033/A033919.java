@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033919 Odd k for which <code>k+2^m</code> is composite for all m <code>&lt;</code> k.
+ * A033919 Odd k for which k+2^m is composite for all m &lt; k.
  * @author Sean A. Irvine
  */
 public class A033919 implements Sequence {

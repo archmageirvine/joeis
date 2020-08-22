@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033809 Smallest <code>m&gt;0</code> such that <code>(2n-1)2^m+1</code> is prime, or -1 if no such value exists.
+ * A033809 Smallest m&gt;0 such that (2n-1)2^m+1 is prime, or -1 if no such value exists.
  * @author Sean A. Irvine
  */
 public class A033809 implements Sequence {

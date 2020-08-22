@@ -3,7 +3,7 @@ package irvine.oeis.a053;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A053527 Number of bipartite graphs with 4 edges on nodes <code>{1..n}</code>.
+ * A053527 Number of bipartite graphs with 4 edges on nodes {1..n}.
  * @author Sean A. Irvine
  */
 public class A053527 extends LinearRecurrence {

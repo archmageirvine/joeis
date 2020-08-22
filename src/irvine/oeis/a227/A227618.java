@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A227618 Expansion of q <code>* f(-q) * f(-q^4) * f(-q^16) * f(-q^6, -q^10)</code> in powers of q where <code>f()</code> is a Ramanujan theta function.
+ * A227618 Expansion of q * f(-q) * f(-q^4) * f(-q^16) * f(-q^6, -q^10) in powers of q where f() is a Ramanujan theta function.
  * @author Georg Fischer
  */
 public class A227618 extends EulerTransform {

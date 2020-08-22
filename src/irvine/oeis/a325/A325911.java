@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325911 Screaming numbers in base <code>16</code>: numbers that have hexadecimal representation of <code>AAAAAAA..</code>.
+ * A325911 Screaming numbers in base 16: numbers that have hexadecimal representation of AAAAAAA...
  * @author Georg Fischer
  */
 public class A325911 extends HolonomicRecurrence {

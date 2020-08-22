@@ -5,7 +5,7 @@ package irvine.oeis.a241;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A241683 Total number of <code>2 X 2</code> squares appearing in the Thue-Morse sequence logical matrices after n stages.
+ * A241683 Total number of 2 X 2 squares appearing in the Thue-Morse sequence logical matrices after n stages.
  * @author Georg Fischer
  */
 public class A241683 extends HolonomicRecurrence {

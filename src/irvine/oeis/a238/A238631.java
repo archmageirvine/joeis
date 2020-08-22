@@ -4,7 +4,7 @@ package irvine.oeis.a238;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A238631 Number of partitions of <code>4^n</code> into parts that are at most 4.
+ * A238631 Number of partitions of 4^n into parts that are at most 4.
  * @author Georg Fischer
  */
 public class A238631 extends GeneratingFunctionSequence {

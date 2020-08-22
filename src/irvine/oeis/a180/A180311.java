@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A180311 Decimal expansion of <code>-64/(9 Pi) + Pi</code>.
+ * A180311 Decimal expansion of -64/(9 Pi) + Pi.
  * @author Georg Fischer
  */
 public class A180311 extends DecimalExpansionSequence {

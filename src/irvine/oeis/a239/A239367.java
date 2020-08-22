@@ -4,7 +4,7 @@ package irvine.oeis.a239;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A239367 The bisection of <code>A238315</code> that remains constant with changes in the offset of the exponent of the second term.
+ * A239367 The bisection of A238315 that remains constant with changes in the offset of the exponent of the second term.
  * @author Georg Fischer
  */
 public class A239367 extends GeneratingFunctionSequence {

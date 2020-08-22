@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A288143 Expansion of <code>x * phi(x) * phi(x^3)^2 * f(x, x^5)^3</code> in powers of x where <code>phi()</code> is a Ramanujan theta function and <code>f(, )</code> is Ramanujan's general theta function.
+ * A288143 Expansion of x * phi(x) * phi(x^3)^2 * f(x, x^5)^3 in powers of x where phi() is a Ramanujan theta function and f(, ) is Ramanujan's general theta function.
  * @author Georg Fischer
  */
 public class A288143 extends EulerTransform {

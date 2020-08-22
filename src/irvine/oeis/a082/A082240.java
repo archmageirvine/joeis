@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A082240 Break up the cyclic concatenation 1234567890123456789023... into parts nontrivially <code>(a(n)</code> is not equal to <code>n)</code> such that the n-th part is a multiple of <code>n</code>.
+ * A082240 Break up the cyclic concatenation 1234567890123456789023... into parts nontrivially (a(n) is not equal to n) such that the n-th part is a multiple of n.
  * @author Georg Fischer
  */
 public class A082240 extends FiniteSequence {

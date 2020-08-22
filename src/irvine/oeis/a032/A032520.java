@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032520 Sum of the integer part of <code>13/3-th</code> roots of integers less than <code>n</code>.
+ * A032520 Sum of the integer part of 13/3-th roots of integers less than n.
  * @author Sean A. Irvine
  */
 public class A032520 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a114;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A114260 Numbers n such that the 4th power of n contains exactly 4 copies of each digit of <code>n</code>.
+ * A114260 Numbers n such that the 4th power of n contains exactly 4 copies of each digit of n.
  * @author Georg Fischer
  */
 public class A114260 extends FiniteSequence {

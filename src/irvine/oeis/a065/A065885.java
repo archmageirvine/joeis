@@ -4,7 +4,7 @@ package irvine.oeis.a065;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A065885 <code>a(n)-1, a(n)</code> and <code>a(n)+1</code> form three consecutive integers that can be factored into Fibonacci numbers.
+ * A065885 a(n)-1, a(n) and a(n)+1 form three consecutive integers that can be factored into Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A065885 extends GeneratingFunctionSequence {

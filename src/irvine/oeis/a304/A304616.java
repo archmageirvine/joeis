@@ -4,7 +4,7 @@ package irvine.oeis.a304;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A304616 <code>a(n) = 81*n^2 - 69*n + 24</code>.
+ * A304616 a(n) = 81*n^2 - 69*n + 24.
  * @author Georg Fischer
  */
 public class A304616 extends GeneratingFunctionSequence {

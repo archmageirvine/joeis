@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A022459 <code>a(n) = prime(2n+1) mod prime(n)</code>.
+ * A022459 a(n) = prime(2n+1) mod prime(n).
  * @author Sean A. Irvine
  */
 public class A022459 extends A000040 {

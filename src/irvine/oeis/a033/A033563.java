@@ -5,7 +5,7 @@ import irvine.oeis.PrimeSubsequence;
 import irvine.oeis.a001.A001067;
 
 /**
- * A033563 Primes in <code>A001067</code>.
+ * A033563 Primes in A001067.
  * @author Sean A. Irvine
  */
 public class A033563 extends PrimeSubsequence {

@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A107510 Coordination sequence for <code>D_15</code> lattice.
+ * A107510 Coordination sequence for D_15 lattice.
  * @author Georg Fischer
  */
 public class A107510 extends LatticeCoordinationSequence {

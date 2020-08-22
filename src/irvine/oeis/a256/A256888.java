@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A256888 Terms of the continued fraction expansion of <code>1 + sqrt(64 / 37)</code>.
+ * A256888 Terms of the continued fraction expansion of 1 + sqrt(64 / 37).
  * @author Georg Fischer
  */
 public class A256888 extends PaddingSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a054.A054354;
 
 /**
- * A156728 <code>a(n) = abs(A054354(n))</code>.
+ * A156728 a(n) = abs(A054354(n)).
  * @author Georg Fischer
  */
 public class A156728 implements Sequence {

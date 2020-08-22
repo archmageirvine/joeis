@@ -3,7 +3,7 @@ package irvine.oeis.a121;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A121364 Convolution of <code>A066983</code> with the double Fibonacci sequence <code>A103609</code>.
+ * A121364 Convolution of A066983 with the double Fibonacci sequence A103609.
  * @author Sean A. Irvine
  */
 public class A121364 extends LinearRecurrence {

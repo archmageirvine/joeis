@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A015722 Odd composite n such that <code>phi(n) * sigma(n)</code> is one less than a square.
+ * A015722 Odd composite n such that phi(n) * sigma(n) is one less than a square.
  * @author Sean A. Irvine
  */
 public class A015722 implements Sequence {

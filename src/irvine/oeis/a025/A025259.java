@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A025259 <code>a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-3)*a(3)</code> for <code>n &gt;= 4</code>.
+ * A025259 a(n) = a(1)*a(n-1) + a(2)*a(n-2) + ...+ a(n-3)*a(3) for n &gt;= 4.
  * @author Sean A. Irvine
  */
 public class A025259 extends MemorySequence {

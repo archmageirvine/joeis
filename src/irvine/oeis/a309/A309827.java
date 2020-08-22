@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309827 <code>a(n)</code> is the square of the number consisting of one 1 and <code>n 6's: (166...6)^2</code>.
+ * A309827 a(n) is the square of the number consisting of one 1 and n 6's: (166...6)^2.
  * @author Georg Fischer
  */
 public class A309827 extends HolonomicRecurrence {

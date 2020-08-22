@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010801 <code>13th</code> powers: <code>a(n) = n^13</code>.
+ * A010801 13th powers: a(n) = n^13.
  * @author Sean A. Irvine
  */
 public class A010801 implements Sequence {

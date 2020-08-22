@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033634 <code>OddPowerSigma(n) =</code> sum of odd power divisors of <code>n</code>.
+ * A033634 OddPowerSigma(n) = sum of odd power divisors of n.
  * @author Sean A. Irvine
  */
 public class A033634 implements Sequence {

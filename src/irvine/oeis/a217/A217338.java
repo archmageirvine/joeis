@@ -3,7 +3,7 @@ package irvine.oeis.a217;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A217338 Number of inequivalent ways to color a <code>4 X 4</code> checkerboard using at most n colors allowing rotations and reflections.
+ * A217338 Number of inequivalent ways to color a 4 X 4 checkerboard using at most n colors allowing rotations and reflections.
  * @author Sean A. Irvine
  */
 public class A217338 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A101287 Rounded frequencies in Hz of the notes of the pentatonic music scale beginning at <code>F#</code>.
+ * A101287 Rounded frequencies in Hz of the notes of the pentatonic music scale beginning at F#.
  * @author Georg Fischer
  */
 public class A101287 extends NoncomputableSequence {

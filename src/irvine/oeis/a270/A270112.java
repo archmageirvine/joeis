@@ -4,7 +4,7 @@ package irvine.oeis.a270;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A270112 Number of <code>n X 2 0..7</code> arrays with some element plus some horizontally or vertically adjacent neighbor totalling seven exactly once.
+ * A270112 Number of n X 2 0..7 arrays with some element plus some horizontally or vertically adjacent neighbor totalling seven exactly once.
  * @author Georg Fischer
  */
 public class A270112 extends GeneratingFunctionSequence {

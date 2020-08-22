@@ -3,7 +3,7 @@ package irvine.oeis.a154;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A154949 Diagonal sums of Riordan array <code>A154948</code>.
+ * A154949 Diagonal sums of Riordan array A154948.
  * @author Sean A. Irvine
  */
 public class A154949 extends LinearRecurrence {

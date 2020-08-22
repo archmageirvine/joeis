@@ -4,7 +4,7 @@ package irvine.oeis.a093;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A093123 Third binomial transform of <code>Fib(3n-1) (A015448)</code>.
+ * A093123 Third binomial transform of Fib(3n-1) (A015448).
  * @author Georg Fischer
  */
 public class A093123 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.EulerGamma;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A203816 Decimal expansion of <code>e*gamma*Pi</code>, where gamma is Euler's constant.
+ * A203816 Decimal expansion of e*gamma*Pi, where gamma is Euler's constant.
  * @author Georg Fischer
  */
 public class A203816 extends DecimalExpansionSequence {

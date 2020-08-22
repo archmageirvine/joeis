@@ -3,7 +3,7 @@ package irvine.oeis.a068;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A068508 <code>a(n)=round[(a(n-1)+a(n-2))/a(n-3)]</code> starting with <code>a(1)=a(2)=a(3)=1</code>.
+ * A068508 a(n)=round[(a(n-1)+a(n-2))/a(n-3)] starting with a(1)=a(2)=a(3)=1.
  * @author Sean A. Irvine
  */
 public class A068508 extends LinearRecurrence {

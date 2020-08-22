@@ -3,7 +3,7 @@ package irvine.oeis.a015;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A015447 Generalized Fibonacci numbers: <code>a(n) = a(n-1) + 11*a(n-2)</code>.
+ * A015447 Generalized Fibonacci numbers: a(n) = a(n-1) + 11*a(n-2).
  * @author Sean A. Irvine
  */
 public class A015447 extends LinearRecurrence {

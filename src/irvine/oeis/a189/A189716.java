@@ -7,7 +7,7 @@ import irvine.oeis.a156.A156595;
 
 
 /**
- * A189716 Numbers k such that <code>A156595(k-1) = 1;</code> complement of <code>A189715</code>.
+ * A189716 Numbers k such that A156595(k-1) = 1; complement of A189715.
  * @author Georg Fischer
  */
 public class A189716 extends PositionSequence {

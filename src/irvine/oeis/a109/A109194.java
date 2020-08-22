@@ -6,7 +6,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109194 Number of returns to the <code>x-axis (i.e.</code>, d or u steps hitting the <code>x-axis)</code> in all Grand Motzkin paths of length <code>n. (A</code> Grand Motzkin path of length n is a path in the <code>half-plane x&gt;=0</code>, starting at <code>(0,0)</code>, ending at <code>(n,0)</code> and consisting of steps <code>u=(1,1), d=(1,-1)</code> and <code>h=(1,0).)</code>.
+ * A109194 Number of returns to the x-axis (i.e., d or u steps hitting the x-axis) in all Grand Motzkin paths of length n. (A Grand Motzkin path of length n is a path in the half-plane x&gt;=0, starting at (0,0), ending at (n,0) and consisting of steps u=(1,1), d=(1,-1) and h=(1,0).).
  * @author Georg Fischer
  */
 public class A109194 extends HolonomicRecurrence {

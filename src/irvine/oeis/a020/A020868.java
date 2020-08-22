@@ -3,7 +3,7 @@ package irvine.oeis.a020;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A020868 Number of single component edge-subgraphs in Moebius ladder <code>M_n</code>.
+ * A020868 Number of single component edge-subgraphs in Moebius ladder M_n.
  * @author Sean A. Irvine
  */
 public class A020868 extends LinearRecurrence {

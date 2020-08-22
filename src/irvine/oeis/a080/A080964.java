@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A080964 Euler transform of <code>period-16</code> sequence <code>[2,-3,2,1,2,-3,2,-6,2,-3,2,1,2,-3,2,-3,...]</code>.
+ * A080964 Euler transform of period-16 sequence [2,-3,2,1,2,-3,2,-6,2,-3,2,1,2,-3,2,-3,...].
  * @author Georg Fischer
  */
 public class A080964 extends EulerTransform {

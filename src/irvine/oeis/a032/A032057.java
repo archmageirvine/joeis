@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A032057 Doubles (index <code>2+)</code> under "BGJ" <code>(reversible</code>, element, labeled) transform.
+ * A032057 Doubles (index 2+) under "BGJ" (reversible, element, labeled) transform.
  * @author Sean A. Irvine
  */
 public class A032057 extends MemorySequence {

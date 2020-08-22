@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032638 <code>a(n) = floor( exp(n) / Pi )</code>.
+ * A032638 a(n) = floor( exp(n) / Pi ).
  * @author Sean A. Irvine
  */
 public class A032638 implements Sequence {

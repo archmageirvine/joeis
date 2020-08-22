@@ -3,7 +3,7 @@ package irvine.oeis.a259;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A259364 <code>a(n) = 18*n^4*(2*n^3 - 23*n^2 + 38*n - 18)^2</code>.
+ * A259364 a(n) = 18*n^4*(2*n^3 - 23*n^2 + 38*n - 18)^2.
  * @author Sean A. Irvine
  */
 public class A259364 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A145977 Expansion of <code>c(q^3) / (c(q^3) + c(q^6))</code> where <code>c()</code> is a cubic AGM function.
+ * A145977 Expansion of c(q^3) / (c(q^3) + c(q^6)) where c() is a cubic AGM function.
  * @author Georg Fischer
  */
 public class A145977 extends EulerTransform {

@@ -8,7 +8,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A022712 Expansion of <code>Product_{m&gt;=1} (1+m*q^m)^-20</code>.
+ * A022712 Expansion of Product_{m&gt;=1} (1+m*q^m)^-20.
  * @author Sean A. Irvine
  */
 public class A022712 extends A022648 {

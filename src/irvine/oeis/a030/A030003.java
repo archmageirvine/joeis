@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A030003 <code>(prime(n)-3)(prime(n)-5)(prime(n)-7)/48</code>.
+ * A030003 (prime(n)-3)(prime(n)-5)(prime(n)-7)/48.
  * @author Sean A. Irvine
  */
 public class A030003 extends A000040 {

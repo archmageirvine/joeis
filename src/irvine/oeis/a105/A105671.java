@@ -4,7 +4,7 @@ package irvine.oeis.a105;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A105671 <code>a(2n) = Lucas(2n+3)^2, a(2n+1) = Lucas(2n+1)^2</code>.
+ * A105671 a(2n) = Lucas(2n+3)^2, a(2n+1) = Lucas(2n+1)^2.
  * @author Georg Fischer
  */
 public class A105671 extends GeneratingFunctionSequence {

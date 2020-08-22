@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A093637 G.f.: <code>A(x) = Product_{n&gt;=0} 1/(1-a(n)*x^(n+1)) = Sum_{n&gt;=0} a(n)*x^n</code>.
+ * A093637 G.f.: A(x) = Product_{n&gt;=0} 1/(1-a(n)*x^(n+1)) = Sum_{n&gt;=0} a(n)*x^n.
  * @author Sean A. Irvine
  */
 public class A093637 extends MemorySequence {

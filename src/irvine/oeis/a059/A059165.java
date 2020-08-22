@@ -5,7 +5,7 @@ package irvine.oeis.a059;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A059165 <code>a(n) = (n+1)*2^(n+4)</code>.
+ * A059165 a(n) = (n+1)*2^(n+4).
  * @author Georg Fischer
  */
 public class A059165 extends HolonomicRecurrence {

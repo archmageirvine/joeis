@@ -4,7 +4,7 @@ package irvine.oeis.a100;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A100530 Numbers <code>== 0,2,5,9</code> modulo 10.
+ * A100530 Numbers == 0,2,5,9 modulo 10.
  * @author Georg Fischer
  */
 public class A100530 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A168050 Hankel transform of <code>A168049</code>.
+ * A168050 Hankel transform of A168049.
  * @author Georg Fischer
  */
 public class A168050 extends LinearRecurrence {

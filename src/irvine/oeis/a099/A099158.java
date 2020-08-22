@@ -3,7 +3,7 @@ package irvine.oeis.a099;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A099158 <code>a(n) = 5^(n-1) * U(n-1, 7/5)</code> where U is the Chebyshev polynomial of the second kind.
+ * A099158 a(n) = 5^(n-1) * U(n-1, 7/5) where U is the Chebyshev polynomial of the second kind.
  * @author Sean A. Irvine
  */
 public class A099158 extends LinearRecurrence {

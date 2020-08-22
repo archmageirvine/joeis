@@ -3,7 +3,7 @@ package irvine.oeis.a014;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A014935 <code>a(1)=1, a(n) = n*18^(n-1) + a(n-1)</code>.
+ * A014935 a(1)=1, a(n) = n*18^(n-1) + a(n-1).
  * @author Sean A. Irvine
  */
 public class A014935 extends LinearRecurrence {

@@ -6,7 +6,7 @@ import irvine.oeis.NoncomputableSequence;
 
 
 /**
- * A272001 Decimal expansion of <code>Cv(1)</code>, the molar specific heat of an atomic ideal gas at constant volume.
+ * A272001 Decimal expansion of Cv(1), the molar specific heat of an atomic ideal gas at constant volume.
  * @author Georg Fischer
  */
 public class A272001 extends NoncomputableSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a137;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A137385 Number of errors that occur when choosing n as modulus in French INSEE code <code>(0&lt;n&lt;100)</code>.
+ * A137385 Number of errors that occur when choosing n as modulus in French INSEE code (0&lt;n&lt;100).
  * @author Georg Fischer
  */
 public class A137385 extends FiniteSequence {

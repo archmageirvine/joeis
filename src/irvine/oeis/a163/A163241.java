@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001477;
 
 /**
- * A163241 Simple self-inverse permutation: Write n in base 4, then replace each digit <code>'2'</code> with <code>'3'</code> and vice versa, then convert back to decimal.
+ * A163241 Simple self-inverse permutation: Write n in base 4, then replace each digit '2' with '3' and vice versa, then convert back to decimal.
  * @author Georg Fischer
  */
 public class A163241 extends A001477 {

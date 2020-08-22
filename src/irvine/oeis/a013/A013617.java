@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013617 Triangle of coefficients in expansion of <code>(1+10x)^n</code>.
+ * A013617 Triangle of coefficients in expansion of (1+10x)^n.
  * @author Sean A. Irvine
  */
 public class A013617 implements Sequence {

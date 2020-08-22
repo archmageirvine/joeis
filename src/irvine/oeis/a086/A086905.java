@@ -6,7 +6,7 @@ package irvine.oeis.a086;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A086905 <code>a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(k,floor(k/2))</code>.
+ * A086905 a(n) = Sum_{k=0..n} (-1)^(n-k)*binomial(k,floor(k/2)).
  * @author Georg Fischer
  */
 public class A086905 extends HolonomicRecurrence {

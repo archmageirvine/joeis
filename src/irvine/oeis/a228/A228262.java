@@ -4,7 +4,7 @@ package irvine.oeis.a228;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A228262 Number of third differences of arrays of length 6 of numbers in <code>0..n</code>.
+ * A228262 Number of third differences of arrays of length 6 of numbers in 0..n.
  * @author Georg Fischer
  */
 public class A228262 extends GeneratingFunctionSequence {

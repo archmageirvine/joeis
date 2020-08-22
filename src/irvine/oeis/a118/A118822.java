@@ -3,7 +3,7 @@ package irvine.oeis.a118;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A118822 Numerators of the convergents of the 2-adic continued fraction of zero given by <code>A118821</code>.
+ * A118822 Numerators of the convergents of the 2-adic continued fraction of zero given by A118821.
  * @author Sean A. Irvine
  */
 public class A118822 extends LinearRecurrence {

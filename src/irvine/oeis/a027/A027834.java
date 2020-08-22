@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027834 Number of labeled strongly connected <code>n-state 2-input</code> automata.
+ * A027834 Number of labeled strongly connected n-state 2-input automata.
  * @author Sean A. Irvine
  */
 public class A027834 implements Sequence {

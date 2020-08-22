@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A133882 <code>a(n) = binomial(n+2,n) mod 2^2</code>.
+ * A133882 a(n) = binomial(n+2,n) mod 2^2.
  * @author Georg Fischer
  */
 public class A133882 extends GeneratingFunctionSequence {

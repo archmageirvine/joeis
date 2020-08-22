@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A173014 <code>a(1) = 1</code>, for <code>n &gt;= 2; a(n) =</code> the smallest number h such that <code>sigma(h) = A000203(h) = a(n-1) + 4, a(n) = 0</code> if no such number exists.
+ * A173014 a(1) = 1, for n &gt;= 2; a(n) = the smallest number h such that sigma(h) = A000203(h) = a(n-1) + 4, a(n) = 0 if no such number exists.
  * @author Georg Fischer
  */
 public class A173014 extends PaddingSequence {

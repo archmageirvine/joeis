@@ -5,7 +5,7 @@ package irvine.oeis.a040;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A040042 Continued fraction for <code>sqrt(50) = 5*sqrt(2)</code>.
+ * A040042 Continued fraction for sqrt(50) = 5*sqrt(2).
  * @author Georg Fischer
  */
 public class A040042 extends HolonomicRecurrence {

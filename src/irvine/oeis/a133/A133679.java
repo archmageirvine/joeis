@@ -6,7 +6,7 @@ package irvine.oeis.a133;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A133679 <code>a(n) = 7*a(n-1) + 56*a(n-2)</code> for <code>n&gt;=3, a(0)=1, a(1)=7, a(2)=98</code>.
+ * A133679 a(n) = 7*a(n-1) + 56*a(n-2) for n&gt;=3, a(0)=1, a(1)=7, a(2)=98.
  * @author Georg Fischer
  */
 public class A133679 extends HolonomicRecurrence {

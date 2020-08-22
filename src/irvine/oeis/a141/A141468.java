@@ -4,7 +4,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a002.A002808;
 
 /**
- * A141468 Zero together with the nonprime numbers <code>A018252</code>.
+ * A141468 Zero together with the nonprime numbers A018252.
  * @author Sean A. Irvine
  */
 public class A141468 extends PrependSequence {

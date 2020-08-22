@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A190413 <code>primepi(R_{n*m}) &lt;= n*primepi(R_m)</code> for m <code>&gt;= a(n)</code>, where <code>R_k</code> is the k-th Ramanujan prime <code>(A104272)</code>.
+ * A190413 primepi(R_{n*m}) &lt;= n*primepi(R_m) for m &gt;= a(n), where R_k is the k-th Ramanujan prime (A104272).
  * @author Georg Fischer
  */
 public class A190413 extends PaddingSequence {

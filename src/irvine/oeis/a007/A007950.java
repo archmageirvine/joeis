@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007950 Binary sieve: delete every 2nd number, then every <code>4th, 8th</code>, etc.
+ * A007950 Binary sieve: delete every 2nd number, then every 4th, 8th, etc.
  * @author Sean A. Irvine
  */
 public class A007950 implements Sequence {

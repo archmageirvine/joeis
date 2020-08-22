@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001203;
 
 /**
- * A032523 Index of first occurrence of n as a term in <code>A001203</code>, the continued fraction for <code>Pi</code>.
+ * A032523 Index of first occurrence of n as a term in A001203, the continued fraction for Pi.
  * @author Sean A. Irvine
  */
 public class A032523 implements Sequence {

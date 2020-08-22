@@ -6,7 +6,7 @@ package irvine.oeis.a261;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A261694 <code>a(n) = Fibonacci(n) mod 21</code>.
+ * A261694 a(n) = Fibonacci(n) mod 21.
  * @author Georg Fischer
  */
 public class A261694 extends GeneratingFunctionSequence {

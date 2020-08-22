@@ -4,7 +4,7 @@ package irvine.oeis.a298;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A298125 The hex numbers <code>(A003215)</code> together with 3.
+ * A298125 The hex numbers (A003215) together with 3.
  * @author Georg Fischer
  */
 public class A298125 extends GeneratingFunctionSequence {

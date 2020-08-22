@@ -3,7 +3,7 @@ package irvine.oeis.a076;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A076122 <code>a(1)=1, a(2)=2</code> and then <code>n^2</code> times <code>a(n)</code> is the product of its neighbors.
+ * A076122 a(1)=1, a(2)=2 and then n^2 times a(n) is the product of its neighbors.
  * @author Georg Fischer
  */
 public class A076122 extends FiniteSequence {

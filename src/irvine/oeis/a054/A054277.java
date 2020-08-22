@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001113;
 
 
 /**
- * A054277 Positions of <code>1</code>'s in the decimal expansion of <code>exp(1)</code>.
+ * A054277 Positions of 1's in the decimal expansion of exp(1).
  * @author Georg Fischer
  */
 public class A054277 extends PositionSequence {

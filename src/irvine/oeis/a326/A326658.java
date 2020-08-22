@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A326658 <code>a(n) = 6*floor(n/2) + ceiling((n-1)^2/2)</code>.
+ * A326658 a(n) = 6*floor(n/2) + ceiling((n-1)^2/2).
  * @author Georg Fischer
  */
 public class A326658 extends HolonomicRecurrence {

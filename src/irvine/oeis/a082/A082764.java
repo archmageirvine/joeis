@@ -4,7 +4,7 @@ package irvine.oeis.a082;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A082764 Trinomial transform of the Pell numbers <code>(A000129)</code>.
+ * A082764 Trinomial transform of the Pell numbers (A000129).
  * @author Georg Fischer
  */
 public class A082764 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033872 Numbers k such that <code>A033831(k)</code> is prime.
+ * A033872 Numbers k such that A033831(k) is prime.
  * @author Sean A. Irvine
  */
 public class A033872 extends A033831 {

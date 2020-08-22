@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027188 <code>a(n) =</code> number of partitions of n into an odd number of parts, the least being 2; also <code>a(n+2) =</code> number of partitions of n into an even number of parts, each <code>&gt;=2</code>.
+ * A027188 a(n) = number of partitions of n into an odd number of parts, the least being 2; also a(n+2) = number of partitions of n into an even number of parts, each &gt;=2.
  * @author Sean A. Irvine
  */
 public class A027188 extends MemoryFunctionInt3<Z> implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168190 <code>a(n) = n^3*(n^9 + 1)/2</code>.
+ * A168190 a(n) = n^3*(n^9 + 1)/2.
  * @author Georg Fischer
  */
 public class A168190 extends HolonomicRecurrence {

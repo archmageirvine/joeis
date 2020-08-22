@@ -4,7 +4,7 @@ package irvine.oeis.a062;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A062257 Number of <code>(0,1)-strings</code> of length n with no occurrences of the substrings 10101101 and 1110101.
+ * A062257 Number of (0,1)-strings of length n with no occurrences of the substrings 10101101 and 1110101.
  * @author Georg Fischer
  */
 public class A062257 extends GeneratingFunctionSequence {

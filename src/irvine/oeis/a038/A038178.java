@@ -3,7 +3,7 @@ package irvine.oeis.a038;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A038178 <code>n =</code> (sum of digits of <code>n)^(number</code> of digits of <code>n)</code>.
+ * A038178 n = (sum of digits of n)^(number of digits of n).
  * @author Georg Fischer
  */
 public class A038178 extends FiniteSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007088;
 
 /**
- * A269130 <code>a(n) = n + (n</code> base 2 regarded as a decimal number).
+ * A269130 a(n) = n + (n base 2 regarded as a decimal number).
  * @author Georg Fischer
  */
 public class A269130 extends A007088 {

@@ -3,7 +3,7 @@ package irvine.oeis.a256;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A256225 Number of partitions of <code>5n</code> into 5 parts.
+ * A256225 Number of partitions of 5n into 5 parts.
  * @author Sean A. Irvine
  */
 public class A256225 extends LinearRecurrence {

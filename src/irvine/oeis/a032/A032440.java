@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A032440 Sum <code>binomial(Fibonacci(n),i); i=0..3)</code>.
+ * A032440 Sum binomial(Fibonacci(n),i); i=0..3).
  * @author Sean A. Irvine
  */
 public class A032440 extends A000045 {

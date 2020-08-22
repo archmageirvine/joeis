@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024916 <code>a(n) = Sum_{k=1..n} k*floor(n/k);</code> also <code>Sum_{k=1..n} sigma(k)</code> where <code>sigma(n) =</code> sum of divisors of <code>n (A000203)</code>.
+ * A024916 a(n) = Sum_{k=1..n} k*floor(n/k); also Sum_{k=1..n} sigma(k) where sigma(n) = sum of divisors of n (A000203).
  * @author Sean A. Irvine
  */
 public class A024916 implements Sequence {

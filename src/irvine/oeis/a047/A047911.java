@@ -6,7 +6,7 @@ package irvine.oeis.a047;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A047911 Number of sequences with n copies each of <code>1, 2, 3</code> and longest increasing subsequence of length 3.
+ * A047911 Number of sequences with n copies each of 1, 2, 3 and longest increasing subsequence of length 3.
  * @author Georg Fischer
  */
 public class A047911 extends HolonomicRecurrence {

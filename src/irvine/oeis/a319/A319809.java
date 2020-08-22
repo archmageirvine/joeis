@@ -3,7 +3,7 @@ package irvine.oeis.a319;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A319809 Numbers k that are equal to <code>2*k</code> when expressed in base 9 and then interpreted in base 10.
+ * A319809 Numbers k that are equal to 2*k when expressed in base 9 and then interpreted in base 10.
  * @author Georg Fischer
  */
 public class A319809 extends FiniteSequence {

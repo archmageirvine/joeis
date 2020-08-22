@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A038188 Smallest integer whose name in colloquial American English (no <code>"and"s)</code> uses n different letters.
+ * A038188 Smallest integer whose name in colloquial American English (no "and"s) uses n different letters.
  * @author Georg Fischer
  */
 public class A038188 extends FiniteSequence {

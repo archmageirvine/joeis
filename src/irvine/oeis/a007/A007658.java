@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007658 Numbers n such that <code>(3^n + 1)/4</code> is prime.
+ * A007658 Numbers n such that (3^n + 1)/4 is prime.
  * @author Sean A. Irvine
  */
 public class A007658 implements Sequence {

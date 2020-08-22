@@ -6,7 +6,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330197 Number of scalene triangles whose vertices are the vertices of a regular <code>n-gon</code>.
+ * A330197 Number of scalene triangles whose vertices are the vertices of a regular n-gon.
  * @author Georg Fischer
  */
 public class A330197 extends HolonomicRecurrence {

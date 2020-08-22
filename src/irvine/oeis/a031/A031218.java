@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000961;
 
 /**
- * A031218 Largest prime power <code>&lt;= n</code>.
+ * A031218 Largest prime power &lt;= n.
  * @author Sean A. Irvine
  */
 public class A031218 extends A000961 {

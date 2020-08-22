@@ -4,7 +4,7 @@ package irvine.oeis.a233;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A233735 G.f.: <code>x^3*(x^21 - x^20 - x^11 + x^10 + x^9 - x^8 + x^6 - x^5 + x^3 + x^2 - x + 1) / ((1-x^5) * (1-x)^2)</code>.
+ * A233735 G.f.: x^3*(x^21 - x^20 - x^11 + x^10 + x^9 - x^8 + x^6 - x^5 + x^3 + x^2 - x + 1) / ((1-x^5) * (1-x)^2).
  * @author Georg Fischer
  */
 public class A233735 extends GeneratingFunctionSequence {

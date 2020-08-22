@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000301;
 
 /**
- * A011455 Sum <code>2^Fibonacci(i), i=2..n</code>.
+ * A011455 Sum 2^Fibonacci(i), i=2..n.
  * @author Sean A. Irvine
  */
 public class A011455 extends PartialSumSequence {

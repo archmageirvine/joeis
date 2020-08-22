@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A103775 Number of ways to write <code>n!</code> as product of distinct squarefree numbers.
+ * A103775 Number of ways to write n! as product of distinct squarefree numbers.
  * @author Georg Fischer
  */
 public class A103775 extends PaddingSequence {

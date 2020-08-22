@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A333108 <code>a(n) = floor(n*sin(n)*cos(n))</code>.
+ * A333108 a(n) = floor(n*sin(n)*cos(n)).
  * @author Sean A. Irvine
  */
 public class A333108 implements Sequence {

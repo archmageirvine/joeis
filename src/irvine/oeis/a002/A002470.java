@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a100.A100130;
 
 /**
- * A002470 Glaisher's function <code>W(n)</code>.
+ * A002470 Glaisher's function W(n).
  * @author Sean A. Irvine
  */
 public class A002470 extends A100130 {

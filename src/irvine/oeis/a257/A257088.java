@@ -4,7 +4,7 @@ package irvine.oeis.a257;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A257088 <code>a(2*n) = 4*n</code> if <code>n&gt;0, a(2*n + 1) = 2*n + 1, a(0) = 1</code>.
+ * A257088 a(2*n) = 4*n if n&gt;0, a(2*n + 1) = 2*n + 1, a(0) = 1.
  * @author Georg Fischer
  */
 public class A257088 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a031;
 import irvine.math.z.Z;
 
 /**
- * A031142 Position of rightmost <code>0</code> (including leading <code>0)</code> in <code>2^n</code> increases.
+ * A031142 Position of rightmost 0 (including leading 0) in 2^n increases.
  * @author Sean A. Irvine
  */
 public class A031142 extends A031140 {

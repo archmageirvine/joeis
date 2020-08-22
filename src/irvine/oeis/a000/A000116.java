@@ -3,7 +3,7 @@ package irvine.oeis.a000;
 import irvine.math.z.Z;
 
 /**
- * A000116 Number of even sequences with period <code>2n</code> (bisection of <code>A000013)</code>.
+ * A000116 Number of even sequences with period 2n (bisection of A000013).
  * @author Sean A. Irvine
  */
 public class A000116 extends A000013 {

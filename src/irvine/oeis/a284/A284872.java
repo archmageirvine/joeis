@@ -3,7 +3,7 @@ package irvine.oeis.a284;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A284872 Number of elements of order n in simple Mathieu group <code>M_23</code>.
+ * A284872 Number of elements of order n in simple Mathieu group M_23.
  * @author Sean A. Irvine
  */
 public class A284872 extends FiniteSequence {

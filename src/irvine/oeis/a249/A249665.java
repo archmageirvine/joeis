@@ -4,7 +4,7 @@ package irvine.oeis.a249;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A249665 The number of permutations p of <code>{1,...,n}</code> such that <code>p(1)=1, p(n)=n</code>, and <code>|p(i)-p(i+1)|</code> is in <code>{1,2,3}</code> for all i from 1 to <code>n-1</code>.
+ * A249665 The number of permutations p of {1,...,n} such that p(1)=1, p(n)=n, and |p(i)-p(i+1)| is in {1,2,3} for all i from 1 to n-1.
  * @author Georg Fischer
  */
 public class A249665 extends GeneratingFunctionSequence {

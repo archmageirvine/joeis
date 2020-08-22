@@ -3,7 +3,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190089 Row sums of the triangular matrix <code>A190088</code>.
+ * A190089 Row sums of the triangular matrix A190088.
  * @author Sean A. Irvine
  */
 public class A190089 extends LinearRecurrence {

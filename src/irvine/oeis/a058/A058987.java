@@ -6,7 +6,7 @@ package irvine.oeis.a058;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A058987 <code>a(n) = Catalan(n) - Motzkin(n-1)</code>.
+ * A058987 a(n) = Catalan(n) - Motzkin(n-1).
  * @author Georg Fischer
  */
 public class A058987 extends HolonomicRecurrence {

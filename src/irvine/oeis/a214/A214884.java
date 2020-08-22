@@ -6,7 +6,7 @@ package irvine.oeis.a214;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A214884 <code>a(n) = Sum_{k=0..n} (-1)^k*F(k)*F(k+2)</code>, where <code>F=A000045</code> (Fibonacci numbers).
+ * A214884 a(n) = Sum_{k=0..n} (-1)^k*F(k)*F(k+2), where F=A000045 (Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A214884 extends HolonomicRecurrence {

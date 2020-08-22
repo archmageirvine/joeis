@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005811 Number of runs in binary expansion of <code>n (n&gt;0);</code> number of <code>1</code>'s in Gray code for <code>n</code>.
+ * A005811 Number of runs in binary expansion of n (n&gt;0); number of 1's in Gray code for n.
  * @author Sean A. Irvine
  */
 public class A005811 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a054;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A054329 One quarter of fourth unsigned column of Lanczos' triangle <code>A053125</code>.
+ * A054329 One quarter of fourth unsigned column of Lanczos' triangle A053125.
  * @author Georg Fischer
  */
 public class A054329 extends GeneratingFunctionSequence {

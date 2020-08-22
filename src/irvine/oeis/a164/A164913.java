@@ -4,7 +4,7 @@ package irvine.oeis.a164;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A164913 Expansion of <code>x/(1-9*x-11*x^2+10*x^3)</code>.
+ * A164913 Expansion of x/(1-9*x-11*x^2+10*x^3).
  * @author Georg Fischer
  */
 public class A164913 extends GeneratingFunctionSequence {

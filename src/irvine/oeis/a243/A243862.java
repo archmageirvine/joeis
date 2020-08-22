@@ -4,7 +4,7 @@ package irvine.oeis.a243;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A243862 Number of length n sequences on alphabet <code>{0,1,2}</code> that contain all of <code>00, 01, 02, 10, 11, 12, 20, 21, 22</code> as (possibly overlapping) contiguous subsequences.
+ * A243862 Number of length n sequences on alphabet {0,1,2} that contain all of 00, 01, 02, 10, 11, 12, 20, 21, 22 as (possibly overlapping) contiguous subsequences.
  * @author Georg Fischer
  */
 public class A243862 extends GeneratingFunctionSequence {

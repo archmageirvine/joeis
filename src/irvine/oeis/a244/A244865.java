@@ -3,7 +3,7 @@ package irvine.oeis.a244;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A244865 Number of <code>3 X 3</code> symmetric matrices with row and column sums <code>&lt;= n</code>.
+ * A244865 Number of 3 X 3 symmetric matrices with row and column sums &lt;= n.
  * @author Sean A. Irvine
  */
 public class A244865 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a274;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A274047 Diameter of Generalized Petersen Graph <code>G(n, 2)</code>.
+ * A274047 Diameter of Generalized Petersen Graph G(n, 2).
  * @author Georg Fischer
  */
 public class A274047 extends GeneratingFunctionSequence {

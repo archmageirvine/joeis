@@ -3,7 +3,7 @@ package irvine.oeis.a153;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A153497 <code>a(n)</code> is the number whose binary expansion is <code>A153498(n)</code>.
+ * A153497 a(n) is the number whose binary expansion is A153498(n).
  * @author Sean A. Irvine
  */
 public class A153497 extends LinearRecurrence {

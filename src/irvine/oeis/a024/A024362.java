@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a020.A020882;
 
 /**
- * A024362 Number of primitive Pythagorean triangles with hypotenuse <code>n</code>.
+ * A024362 Number of primitive Pythagorean triangles with hypotenuse n.
  * @author Sean A. Irvine
  */
 public class A024362 extends A020882 {

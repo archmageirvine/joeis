@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A274541 Decimal expansion of <code>exp(sqrt(2)/2)</code>.
+ * A274541 Decimal expansion of exp(sqrt(2)/2).
  * @author Georg Fischer
  */
 public class A274541 extends DecimalExpansionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a035;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A035878 Coordination sequence for diamond structure <code>D^+_4</code>. (Edges defined by <code>l_1</code> norm <code>= 1.)</code>.
+ * A035878 Coordination sequence for diamond structure D^+_4. (Edges defined by l_1 norm = 1.).
  * @author Georg Fischer
  */
 public class A035878 extends GeneratingFunctionSequence {

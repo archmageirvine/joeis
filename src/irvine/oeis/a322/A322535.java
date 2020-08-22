@@ -6,7 +6,7 @@ package irvine.oeis.a322;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A322535 Number of arrays of 8 integers in <code>-n..n</code> with sum zero.
+ * A322535 Number of arrays of 8 integers in -n..n with sum zero.
  * @author Georg Fischer
  */
 public class A322535 extends HolonomicRecurrence {

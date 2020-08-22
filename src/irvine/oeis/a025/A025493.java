@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a002.A002034;
 
 /**
- * A025493 Smallest k that converges after exactly n iterations of the Kempner function <code>A002034</code>.
+ * A025493 Smallest k that converges after exactly n iterations of the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A025493 implements Sequence {

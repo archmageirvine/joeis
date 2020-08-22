@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175016 y-values in the solution to <code>x^2-58*y^2=1</code>.
+ * A175016 y-values in the solution to x^2-58*y^2=1.
  * @author Sean A. Irvine
  */
 public class A175016 extends LinearRecurrence {

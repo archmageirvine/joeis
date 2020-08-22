@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032148 "CGJ" <code>(necklace</code>, element, labeled) transform of 2,1,1,1...
+ * A032148 "CGJ" (necklace, element, labeled) transform of 2,1,1,1...
  * @author Sean A. Irvine
  */
 public class A032148 extends A032144 {

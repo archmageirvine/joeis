@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033810 Number of people needed so that probability of at least two sharing a birthday out of n possible days is at least <code>50%</code>.
+ * A033810 Number of people needed so that probability of at least two sharing a birthday out of n possible days is at least 50%.
  * @author Sean A. Irvine
  */
 public class A033810 implements Sequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a110;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A110110 Number of symmetric Schroeder paths of length <code>2n (A</code> Schroeder path of length <code>2n</code> is a lattice path from <code>(0,0)</code> to <code>(2n,0)</code> consisting of <code>U=(1,1), D=(1,-1)</code> and <code>H=(2,0)</code> steps and never going below the <code>x-axis)</code>.
+ * A110110 Number of symmetric Schroeder paths of length 2n (A Schroeder path of length 2n is a lattice path from (0,0) to (2n,0) consisting of U=(1,1), D=(1,-1) and H=(2,0) steps and never going below the x-axis).
  * @author Georg Fischer
  */
 public class A110110 extends HolonomicRecurrence {

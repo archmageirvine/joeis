@@ -4,7 +4,7 @@ package irvine.oeis.a246;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A246176 The hyper-Wiener index of the Lucas cube <code>Lambda(n) (n&gt;=2)</code>.
+ * A246176 The hyper-Wiener index of the Lucas cube Lambda(n) (n&gt;=2).
  * @author Georg Fischer
  */
 public class A246176 extends GeneratingFunctionSequence {

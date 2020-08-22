@@ -3,7 +3,7 @@ package irvine.oeis.a228;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A228642 Squares of primes <code>mod 100</code>.
+ * A228642 Squares of primes mod 100.
  * @author Georg Fischer
  */
 public class A228642 extends FiniteSequence {

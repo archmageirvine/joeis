@@ -5,7 +5,7 @@ package irvine.oeis.a224;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A224317 <code>a(n) = a(n-1) + 3 - a(n-1)!</code>.
+ * A224317 a(n) = a(n-1) + 3 - a(n-1)!.
  * @author Georg Fischer
  */
 public class A224317 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a301;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A301372 Conjectured best solution for the problem stated in <code>A098072</code>.
+ * A301372 Conjectured best solution for the problem stated in A098072.
  * @author Georg Fischer
  */
 public class A301372 extends FiniteSequence {

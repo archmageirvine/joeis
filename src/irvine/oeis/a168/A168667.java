@@ -6,7 +6,7 @@ package irvine.oeis.a168;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A168667 <code>a(n) = n^7*(n^10 + 1)/2</code>.
+ * A168667 a(n) = n^7*(n^10 + 1)/2.
  * @author Georg Fischer
  */
 public class A168667 extends HolonomicRecurrence {

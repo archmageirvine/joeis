@@ -12,7 +12,7 @@ import irvine.oeis.a000.A000521;
 import irvine.oeis.a145.A145200;
 
 /**
- * A030185 Coefficients in expansion of <code>E_2*E_4/(E_6*j)</code> in powers of <code>1/j</code>.
+ * A030185 Coefficients in expansion of E_2*E_4/(E_6*j) in powers of 1/j.
  * @author Sean A. Irvine
  */
 public class A030185 extends MemorySequence {

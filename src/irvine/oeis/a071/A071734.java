@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A071734 <code>a(n) = p(5n+4)/5</code> where <code>p(k)</code> denotes the k-th partition number.
+ * A071734 a(n) = p(5n+4)/5 where p(k) denotes the k-th partition number.
  * @author Georg Fischer
  */
 public class A071734 extends EulerTransform {

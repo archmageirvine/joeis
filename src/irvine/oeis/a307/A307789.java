@@ -6,7 +6,7 @@ package irvine.oeis.a307;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A307789 Number of valid hook configurations of permutations of <code>[n]</code> that avoid the patterns 231 and 1243.
+ * A307789 Number of valid hook configurations of permutations of [n] that avoid the patterns 231 and 1243.
  * @author Georg Fischer
  */
 public class A307789 extends HolonomicRecurrence {

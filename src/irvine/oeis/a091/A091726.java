@@ -4,7 +4,7 @@ package irvine.oeis.a091;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A091726 Poincar\u00e9 series [or Poincare series] (or Molien series) for a certain five-fold wreath product <code>P_5</code>.
+ * A091726 Poincar\u00e9 series [or Poincare series] (or Molien series) for a certain five-fold wreath product P_5.
  * @author Georg Fischer
  */
 public class A091726 extends GeneratingFunctionSequence {

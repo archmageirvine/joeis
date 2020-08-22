@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032312 "EGJ" <code>(unordered</code>, element, labeled) transform of 2,2,2,2...
+ * A032312 "EGJ" (unordered, element, labeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
 public class A032312 implements Sequence {

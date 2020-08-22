@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032663 Primes that are the smallest decimal concatenations of n with <code>n + (0,1,2,3,...)</code>.
+ * A032663 Primes that are the smallest decimal concatenations of n with n + (0,1,2,3,...).
  * @author Sean A. Irvine
  */
 public class A032663 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A133078 Expansion of <code>s(q)^4</code> in powers of q where <code>s()</code> is a cubic AGM function.
+ * A133078 Expansion of s(q)^4 in powers of q where s() is a cubic AGM function.
  * @author Georg Fischer
  */
 public class A133078 extends EulerTransform {

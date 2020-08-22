@@ -6,7 +6,7 @@ package irvine.oeis.a130;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A130910 Sum <code>{0&lt;=k&lt;=n, k mod 16}</code> (Partial sums of <code>A130909)</code>.
+ * A130910 Sum {0&lt;=k&lt;=n, k mod 16} (Partial sums of A130909).
  * @author Georg Fischer
  */
 public class A130910 extends HolonomicRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a222;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A222715 The number of binary pattern classes in the <code>(2,n)-rectangular</code> grid with <code>5 '1</code>'s and <code>(2n-5) '0</code>'s: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
+ * A222715 The number of binary pattern classes in the (2,n)-rectangular grid with 5 '1's and (2n-5) '0's: two patterns are in same class if one of them can be obtained by a reflection or 180-degree rotation of the other.
  * @author Sean A. Irvine
  */
 public class A222715 extends LinearRecurrence {

@@ -3,7 +3,7 @@ package irvine.oeis.a165;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A165892 Triangular numbers of form <code>n(n+2)(n+4)</code>.
+ * A165892 Triangular numbers of form n(n+2)(n+4).
  * @author Georg Fischer
  */
 public class A165892 extends FiniteSequence {

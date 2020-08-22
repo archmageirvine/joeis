@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A072577 Numbers n such that n and the n-th prime have the same number of <code>0</code>'s in their binary representation.
+ * A072577 Numbers n such that n and the n-th prime have the same number of 0's in their binary representation.
  * @author Georg Fischer
  */
 public class A072577 extends A000040 {

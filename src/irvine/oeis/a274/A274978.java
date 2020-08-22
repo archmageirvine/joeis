@@ -3,7 +3,7 @@ package irvine.oeis.a274;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A274978 Integers of the form <code>m*(m + 6)/7</code>.
+ * A274978 Integers of the form m*(m + 6)/7.
  * @author Sean A. Irvine
  */
 public class A274978 extends LinearRecurrence {

@@ -5,7 +5,7 @@ package irvine.oeis.a105;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A105219 <code>a(n) = Sum_{k=0..n} C(n,k)^2*(n-k)!*k^2</code>.
+ * A105219 a(n) = Sum_{k=0..n} C(n,k)^2*(n-k)!*k^2.
  * @author Georg Fischer
  */
 public class A105219 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a144;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A144133 Gegenbauer polynomial <code>C_n^2(3)</code>.
+ * A144133 Gegenbauer polynomial C_n^2(3).
  * @author Georg Fischer
  */
 public class A144133 extends LinearRecurrence {

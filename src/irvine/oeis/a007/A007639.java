@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007639 Primes of form <code>2n^2 - 2n + 19</code>.
+ * A007639 Primes of form 2n^2 - 2n + 19.
  * @author Sean A. Irvine
  */
 public class A007639 implements Sequence {

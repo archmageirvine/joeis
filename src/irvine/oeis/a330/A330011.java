@@ -5,7 +5,7 @@ package irvine.oeis.a330;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A330011 Number of length-n strings w over a 4-letter alphabet with the property that if x is a subword of w and <code>|x| &gt;= 2</code>, then x reversed is not a subword of w.
+ * A330011 Number of length-n strings w over a 4-letter alphabet with the property that if x is a subword of w and |x| &gt;= 2, then x reversed is not a subword of w.
  * @author Georg Fischer
  */
 public class A330011 extends HolonomicRecurrence {

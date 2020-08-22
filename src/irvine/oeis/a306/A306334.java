@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306334 <code>a(n)</code> is the number of different linear hydrocarbon molecules with n carbon atoms.
+ * A306334 a(n) is the number of different linear hydrocarbon molecules with n carbon atoms.
  * @author Georg Fischer
  */
 public class A306334 extends GeneratingFunctionSequence {

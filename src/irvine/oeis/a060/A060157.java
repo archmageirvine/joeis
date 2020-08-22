@@ -4,7 +4,7 @@ package irvine.oeis.a060;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A060157 Number of permutations of <code>[n]</code> with 3 sequences.
+ * A060157 Number of permutations of [n] with 3 sequences.
  * @author Georg Fischer
  */
 public class A060157 extends GeneratingFunctionSequence {

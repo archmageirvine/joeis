@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092578 Decimal expansion of <code>e^(-7)</code>.
+ * A092578 Decimal expansion of e^(-7).
  * @author Georg Fischer
  */
 public class A092578 extends DecimalExpansionSequence {

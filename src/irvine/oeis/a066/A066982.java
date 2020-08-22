@@ -3,7 +3,7 @@ package irvine.oeis.a066;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A066982 <code>a(n) = Lucas(n+1) - (n+1)</code>.
+ * A066982 a(n) = Lucas(n+1) - (n+1).
  * @author Sean A. Irvine
  */
 public class A066982 extends LinearRecurrence {

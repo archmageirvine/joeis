@@ -6,7 +6,7 @@ package irvine.oeis.a048;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A048965 Row sums of triangle <code>A048882</code>.
+ * A048965 Row sums of triangle A048882.
  * @author Georg Fischer
  */
 public class A048965 extends HolonomicRecurrence {

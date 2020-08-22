@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A178131 Decimal expansion of <code>(11+3*sqrt(21))/17</code>.
+ * A178131 Decimal expansion of (11+3*sqrt(21))/17.
  * @author Georg Fischer
  */
 public class A178131 extends DecimalExpansionSequence {

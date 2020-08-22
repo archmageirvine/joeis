@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188735 Decimal expansion of <code>(9+sqrt(97))/4</code>.
+ * A188735 Decimal expansion of (9+sqrt(97))/4.
  * @author Georg Fischer
  */
 public class A188735 extends DecimalExpansionSequence {

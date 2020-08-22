@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007968 Type of happy factorization of <code>n</code>.
+ * A007968 Type of happy factorization of n.
  * @author Sean A. Irvine
  */
 public class A007968 implements Sequence {

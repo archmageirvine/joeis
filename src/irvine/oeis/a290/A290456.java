@@ -7,7 +7,7 @@ import irvine.oeis.a173.A173018;
 
 
 /**
- * A290456 Triangle formed by reading the triangle of Eulerian numbers <code>(A173018) mod 6</code>.
+ * A290456 Triangle formed by reading the triangle of Eulerian numbers (A173018) mod 6.
  * @author Georg Fischer
  */
 public class A290456 extends A173018 {

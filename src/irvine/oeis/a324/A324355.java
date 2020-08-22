@@ -6,7 +6,7 @@ package irvine.oeis.a324;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A324355 Total number of occurrences of 5 in the (signed) displacement sets of all permutations of <code>[n+5]</code> divided by <code>5!</code>.
+ * A324355 Total number of occurrences of 5 in the (signed) displacement sets of all permutations of [n+5] divided by 5!.
  * @author Georg Fischer
  */
 public class A324355 extends HolonomicRecurrence {

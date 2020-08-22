@@ -5,7 +5,7 @@ import irvine.oeis.SumOfLikePowersSequence;
 
 
 /**
- * A004901 Numbers that are the sum of at most 6 nonzero <code>10th</code> powers.
+ * A004901 Numbers that are the sum of at most 6 nonzero 10th powers.
  * @author Sean A. Irvine
  */
 public class A004901 extends SumOfLikePowersSequence {

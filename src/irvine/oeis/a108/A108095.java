@@ -6,7 +6,7 @@ package irvine.oeis.a108;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A108095 Coefficients of series whose square is the weight enumerator of the <code>[8,4,4]</code> Hamming code (see <code>A002337)</code>.
+ * A108095 Coefficients of series whose square is the weight enumerator of the [8,4,4] Hamming code (see A002337).
  * @author Georg Fischer
  */
 public class A108095 extends HolonomicRecurrence {

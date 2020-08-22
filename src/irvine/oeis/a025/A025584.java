@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025584 Primes p such that <code>p-2</code> is not a prime.
+ * A025584 Primes p such that p-2 is not a prime.
  * @author Sean A. Irvine
  */
 public class A025584 implements Sequence {

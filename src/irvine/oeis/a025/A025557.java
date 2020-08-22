@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.math.z.Z;
 
 /**
- * A025557 <code>a(n) = (n+1)!/LCM{1,3,6,...,C(n+1,2)}</code>.
+ * A025557 a(n) = (n+1)!/LCM{1,3,6,...,C(n+1,2)}.
  * @author Sean A. Irvine
  */
 public class A025557 extends A025555 {

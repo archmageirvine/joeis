@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007331;
 
 /**
- * A004017 Theta series of <code>E_8</code> lattice with respect to deep hole.
+ * A004017 Theta series of E_8 lattice with respect to deep hole.
  * @author Sean A. Irvine
  */
 public class A004017 extends A007331 {

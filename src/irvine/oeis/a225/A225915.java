@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A225915 Expansion of <code>(k(q) / 4)^4</code> in powers of q where <code>k()</code> is a Jacobi elliptic function.
+ * A225915 Expansion of (k(q) / 4)^4 in powers of q where k() is a Jacobi elliptic function.
  * @author Georg Fischer
  */
 public class A225915 extends EulerTransform {

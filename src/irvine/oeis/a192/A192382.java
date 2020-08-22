@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A192382 Coefficient of x in the reduction by <code>x^2-&gt;x+2</code> of the polynomial <code>p(n,x)</code> defined below in Comments.
+ * A192382 Coefficient of x in the reduction by x^2-&gt;x+2 of the polynomial p(n,x) defined below in Comments.
  * @author Georg Fischer
  */
 public class A192382 extends GeneratingFunctionSequence {

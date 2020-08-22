@@ -3,7 +3,7 @@ package irvine.oeis.a057;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A057694 Chance of holding n-th best poker hand or better is approximately <code>1/a(n)</code>.
+ * A057694 Chance of holding n-th best poker hand or better is approximately 1/a(n).
  * @author Georg Fischer
  */
 public class A057694 extends FiniteSequence {

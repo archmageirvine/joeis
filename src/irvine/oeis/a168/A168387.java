@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A168387 <code>a(n) =</code> the smallest number whose Spanish name contains n distinct letters of the alphabet. <code>2&lt;=n&lt;=22</code>.
+ * A168387 a(n) = the smallest number whose Spanish name contains n distinct letters of the alphabet. 2&lt;=n&lt;=22.
  * @author Georg Fischer
  */
 public class A168387 extends FiniteSequence {

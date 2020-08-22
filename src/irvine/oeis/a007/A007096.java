@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A007096 Expansion of <code>theta_3 / theta_4</code>.
+ * A007096 Expansion of theta_3 / theta_4.
  * @author Georg Fischer
  */
 public class A007096 extends EulerTransform {

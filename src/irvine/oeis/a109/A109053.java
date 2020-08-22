@@ -5,7 +5,7 @@ package irvine.oeis.a109;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A109053 <code>a(n) = lcm(n,12)</code>.
+ * A109053 a(n) = lcm(n,12).
  * @author Georg Fischer
  */
 public class A109053 extends HolonomicRecurrence {

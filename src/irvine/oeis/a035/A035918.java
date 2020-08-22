@@ -5,7 +5,7 @@ import irvine.oeis.LatticeCoordinationSequence;
 
 
 /**
- * A035918 Coordination sequence for diamond structure <code>D^+_84</code>. (Edges defined by <code>l_1</code> norm <code>= 1.)</code>.
+ * A035918 Coordination sequence for diamond structure D^+_84. (Edges defined by l_1 norm = 1.).
  * @author Georg Fischer
  */
 public class A035918 extends LatticeCoordinationSequence {

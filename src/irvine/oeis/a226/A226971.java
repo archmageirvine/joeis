@@ -3,7 +3,7 @@ package irvine.oeis.a226;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A226971 Numbers k such that the sum of digits of <code>k^7</code> is equal to k.
+ * A226971 Numbers k such that the sum of digits of k^7 is equal to k.
  * @author Georg Fischer
  */
 public class A226971 extends FiniteSequence {

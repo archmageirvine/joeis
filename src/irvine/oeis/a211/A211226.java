@@ -7,7 +7,7 @@ package irvine.oeis.a211;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A211226 Triangular array: <code>T(n,k) = f(n)/(f(k)*f(n-k))</code>, where <code>f(n) = (floor(n/2))!</code>.
+ * A211226 Triangular array: T(n,k) = f(n)/(f(k)*f(n-k)), where f(n) = (floor(n/2))!.
  * @author Georg Fischer
  */
 public class A211226 extends GeneratingFunctionTriangle {

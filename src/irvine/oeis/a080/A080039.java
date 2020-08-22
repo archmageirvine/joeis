@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A080039 <code>a(n) = floor((1+sqrt(2))^n)</code>.
+ * A080039 a(n) = floor((1+sqrt(2))^n).
  * @author Sean A. Irvine
  */
 public class A080039 implements Sequence {

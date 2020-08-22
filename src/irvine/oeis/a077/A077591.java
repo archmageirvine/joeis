@@ -4,7 +4,7 @@ package irvine.oeis.a077;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A077591 Maximum number of regions into which the plane can be divided using <code>n</code> (concave) quadrilaterals.
+ * A077591 Maximum number of regions into which the plane can be divided using n (concave) quadrilaterals.
  * @author Georg Fischer
  */
 public class A077591 extends GeneratingFunctionSequence {

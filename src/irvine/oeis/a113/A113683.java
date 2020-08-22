@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A113683 <code>a(n)=a(n-1)/3</code> if <code>a(n-1)=0(mod 3), a(n)=4*a(n-1)+2</code> if <code>a(n-1)=1(mod 3), a(n)=4*a(n-1)-2</code> if <code>a(n-1)=2(mod 3)</code>.
+ * A113683 a(n)=a(n-1)/3 if a(n-1)=0(mod 3), a(n)=4*a(n-1)+2 if a(n-1)=1(mod 3), a(n)=4*a(n-1)-2 if a(n-1)=2(mod 3).
  * @author Georg Fischer
  */
 public class A113683 extends PaddingSequence {

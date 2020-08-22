@@ -6,7 +6,7 @@ package irvine.oeis.a126;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A126119 Numerators of sequence of fractions with e.g.f. <code>(1+x)/(1-x)^(3/2)</code>.
+ * A126119 Numerators of sequence of fractions with e.g.f. (1+x)/(1-x)^(3/2).
  * @author Georg Fischer
  */
 public class A126119 extends HolonomicRecurrence {

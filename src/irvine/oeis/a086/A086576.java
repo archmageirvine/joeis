@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086576 <code>a(n) =</code> k where <code>R(k+5)=5</code>.
+ * A086576 a(n) = k where R(k+5)=5.
  * @author Sean A. Irvine
  */
 public class A086576 extends LinearRecurrence {

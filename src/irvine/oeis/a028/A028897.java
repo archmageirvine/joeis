@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028897 If <code>n =</code> Sum <code>c_i 10^i</code> then <code>a(n) =</code> Sum <code>c_i 2^i</code>.
+ * A028897 If n = Sum c_i 10^i then a(n) = Sum c_i 2^i.
  * @author Sean A. Irvine
  */
 public class A028897 implements Sequence {

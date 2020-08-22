@@ -5,7 +5,7 @@ package irvine.oeis.a257;
 import irvine.oeis.PowerFactorPrimeSequence;
 
 /**
- * A257790 Numbers n such that <code>6*5^n - 1</code> is prime.
+ * A257790 Numbers n such that 6*5^n - 1 is prime.
  * @author Georg Fischer
  */
 public class A257790 extends PowerFactorPrimeSequence {

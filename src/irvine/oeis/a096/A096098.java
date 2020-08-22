@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FactorizationSequence;
 
 /**
- * A096098 <code>a(1) = 2, a(2) = 1;</code> for <code>n &gt;= 3, a(n) =</code> least number not included earlier that divides the concatenation of all previous terms.
+ * A096098 a(1) = 2, a(2) = 1; for n &gt;= 3, a(n) = least number not included earlier that divides the concatenation of all previous terms.
  * @author Sean A. Irvine
  */
 public class A096098 extends FactorizationSequence {

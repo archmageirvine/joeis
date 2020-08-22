@@ -5,7 +5,7 @@ package irvine.oeis.a209;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A209466 Final digit of <code>n^n - n</code>.
+ * A209466 Final digit of n^n - n.
  * @author Georg Fischer
  */
 public class A209466 extends HolonomicRecurrence {

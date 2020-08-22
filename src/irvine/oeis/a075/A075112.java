@@ -3,7 +3,7 @@ package irvine.oeis.a075;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A075112 <code>a(n)=Sum((-1)^(i+Floor(n/2))S(2i+e),(i=0,..,Floor(n/2)))</code>, where <code>S(n)</code> are generalized Tetranacci numbers <code>(A073817)</code> and <code>e=(1/2)(1-(-1)^n)</code>.
+ * A075112 a(n)=Sum((-1)^(i+Floor(n/2))S(2i+e),(i=0,..,Floor(n/2))), where S(n) are generalized Tetranacci numbers (A073817) and e=(1/2)(1-(-1)^n).
  * @author Sean A. Irvine
  */
 public class A075112 extends LinearRecurrence {

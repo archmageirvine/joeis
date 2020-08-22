@@ -3,7 +3,7 @@ package irvine.oeis.a101;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A101099 Third partial sums of fifth powers <code>(A000584)</code>.
+ * A101099 Third partial sums of fifth powers (A000584).
  * @author Sean A. Irvine
  */
 public class A101099 extends LinearRecurrence {

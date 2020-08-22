@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002981 Numbers k such that <code>k! + 1</code> is prime.
+ * A002981 Numbers k such that k! + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A002981 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a262;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A262715 <code>a(n) = 29^(2*n+1)</code>.
+ * A262715 a(n) = 29^(2*n+1).
  * @author Georg Fischer
  */
 public class A262715 extends GeneratingFunctionSequence {

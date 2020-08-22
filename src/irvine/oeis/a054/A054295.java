@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001622;
 
 
 /**
- * A054295 Positions of <code>9</code>'s in the decimal expansion of <code>1/2*(sqrt(5)+1))</code>.
+ * A054295 Positions of 9's in the decimal expansion of 1/2*(sqrt(5)+1)).
  * @author Georg Fischer
  */
 public class A054295 extends PositionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a120;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A120537 Sum of all matrix elements of <code>n X n</code> matrix <code>M[i,j] = Lucas[i+j-1], (i,j = 1..n)</code>, where <code>Lucas[n] = A000032[n] = Fibonacci[n-1] + Fibonacci[n+1]</code>.
+ * A120537 Sum of all matrix elements of n X n matrix M[i,j] = Lucas[i+j-1], (i,j = 1..n), where Lucas[n] = A000032[n] = Fibonacci[n-1] + Fibonacci[n+1].
  * @author Georg Fischer
  */
 public class A120537 extends GeneratingFunctionSequence {

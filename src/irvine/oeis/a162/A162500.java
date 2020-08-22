@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A162500 Expansion of the polynomial <code>(1-x^3) * (1-x^6) * (1-x^9) / (1-x)^3</code>.
+ * A162500 Expansion of the polynomial (1-x^3) * (1-x^6) * (1-x^9) / (1-x)^3.
  * @author Georg Fischer
  */
 public class A162500 extends FiniteSequence {

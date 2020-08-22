@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A085676 Decimal expansion of <code>-sin(10^50)</code>.
+ * A085676 Decimal expansion of -sin(10^50).
  * @author Georg Fischer
  */
 public class A085676 extends DecimalExpansionSequence {

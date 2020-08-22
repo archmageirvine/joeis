@@ -4,7 +4,7 @@ package irvine.oeis.a056;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A056047 Number of 4-antichain covers of a labeled <code>n-set</code>.
+ * A056047 Number of 4-antichain covers of a labeled n-set.
  * @author Georg Fischer
  */
 public class A056047 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006087 Unitary harmonic means <code>H(n)</code> of the unitary harmonic numbers <code>(A006086)</code>.
+ * A006087 Unitary harmonic means H(n) of the unitary harmonic numbers (A006086).
  * @author Sean A. Irvine
  */
 public class A006087 implements Sequence {

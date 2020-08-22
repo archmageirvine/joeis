@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A195715 Decimal expansion of <code>arccos(-(1/2)^(1/3))</code>.
+ * A195715 Decimal expansion of arccos(-(1/2)^(1/3)).
  * @author Georg Fischer
  */
 public class A195715 extends DecimalExpansionSequence {

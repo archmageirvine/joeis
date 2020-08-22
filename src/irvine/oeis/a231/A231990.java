@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a187.A187843;
 
 /**
- * A231990 First differences of Stanley sequence <code>S(0,5) (A187843)</code>.
+ * A231990 First differences of Stanley sequence S(0,5) (A187843).
  * @author Georg Fischer
  */
 public class A231990 extends DifferenceSequence {

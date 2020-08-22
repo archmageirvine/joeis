@@ -7,7 +7,7 @@ package irvine.oeis.a125;
 import irvine.oeis.GeneratingFunctionTriangle;
 
 /**
- * A125662 A convolution triangle of numbers based on <code>A001906</code> (even indexed Fibonacci numbers).
+ * A125662 A convolution triangle of numbers based on A001906 (even indexed Fibonacci numbers).
  * @author Georg Fischer
  */
 public class A125662 extends GeneratingFunctionTriangle {

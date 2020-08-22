@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000204;
 import irvine.oeis.a090.A090946;
 
 /**
- * A022810 <code>a(n) = L(n+2) + c(n)</code> where <code>L(k)</code> is the k-th Lucas number and <code>c(n)</code> is the n-th number that is 1 or 3 or is not a Lucas number.
+ * A022810 a(n) = L(n+2) + c(n) where L(k) is the k-th Lucas number and c(n) is the n-th number that is 1 or 3 or is not a Lucas number.
  * @author Sean A. Irvine
  */
 public class A022810 implements Sequence {

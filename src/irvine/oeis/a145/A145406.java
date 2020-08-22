@@ -5,7 +5,7 @@ package irvine.oeis.a145;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A145406 Number of Hamiltonian cycles in <code>O_6 X P_n</code>.
+ * A145406 Number of Hamiltonian cycles in O_6 X P_n.
  * @author Georg Fischer
  */
 public class A145406 extends HolonomicRecurrence {

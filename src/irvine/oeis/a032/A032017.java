@@ -4,7 +4,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
 
 /**
- * A032017 "AGJ" <code>(ordered</code>, elements, labeled) transform of 1,3,5,7,...
+ * A032017 "AGJ" (ordered, elements, labeled) transform of 1,3,5,7,...
  * @author Sean A. Irvine
  */
 public class A032017 extends A032000 {

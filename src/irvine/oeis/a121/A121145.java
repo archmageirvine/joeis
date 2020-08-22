@@ -5,7 +5,7 @@ package irvine.oeis.a121;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A121145 Numbers of isomers of unbranched <code>a-4-catapolyoctagons -</code> see Brunvoll reference for precise definition.
+ * A121145 Numbers of isomers of unbranched a-4-catapolyoctagons - see Brunvoll reference for precise definition.
  * @author Georg Fischer
  */
 public class A121145 extends HolonomicRecurrence {

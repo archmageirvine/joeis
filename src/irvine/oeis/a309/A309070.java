@@ -5,7 +5,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309070 <code>a(n)</code> is the number of tiles of a chosen color on the front side of the Rubik Cube after n repetitions of the following procedure: rotate the right side by a 1/4 turn clockwise, then rotate the whole cube around the front-back axis by a 1/4 turn clockwise.
+ * A309070 a(n) is the number of tiles of a chosen color on the front side of the Rubik Cube after n repetitions of the following procedure: rotate the right side by a 1/4 turn clockwise, then rotate the whole cube around the front-back axis by a 1/4 turn clockwise.
  * @author Georg Fischer
  */
 public class A309070 extends HolonomicRecurrence {

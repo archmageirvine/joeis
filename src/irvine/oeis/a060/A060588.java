@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A060588 If the final two digits of n written in base 3 are the same then this digit, otherwise <code>mod 3-sum</code> of these two digits.
+ * A060588 If the final two digits of n written in base 3 are the same then this digit, otherwise mod 3-sum of these two digits.
  * @author Georg Fischer
  */
 public class A060588 extends PaddingSequence {

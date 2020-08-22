@@ -6,7 +6,7 @@ package irvine.oeis.a078;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A078222 <code>a(1) = 2, a(n+1) &gt; a(n)</code> is the smallest multiple of <code>a(n)</code> using only even digits.
+ * A078222 a(1) = 2, a(n+1) &gt; a(n) is the smallest multiple of a(n) using only even digits.
  * @author Georg Fischer
  */
 public class A078222 extends GeneratingFunctionSequence {

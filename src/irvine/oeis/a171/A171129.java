@@ -6,7 +6,7 @@ package irvine.oeis.a171;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A171129 <code>a(n)=(n^4-n^3-n^2-n)/2</code>.
+ * A171129 a(n)=(n^4-n^3-n^2-n)/2.
  * @author Georg Fischer
  */
 public class A171129 extends HolonomicRecurrence {

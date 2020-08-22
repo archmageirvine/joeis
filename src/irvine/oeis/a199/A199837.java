@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199837 Number of <code>-n..n</code> arrays <code>x(0..7)</code> of 8 elements with zero sum and no two neighbors summing to zero.
+ * A199837 Number of -n..n arrays x(0..7) of 8 elements with zero sum and no two neighbors summing to zero.
  * @author Georg Fischer
  */
 public class A199837 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ package irvine.oeis.a190;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A190830 Number of permutations of 4 copies of <code>1..n</code> introduced in order <code>1..n</code> with no element equal to another within a distance of 1.
+ * A190830 Number of permutations of 4 copies of 1..n introduced in order 1..n with no element equal to another within a distance of 1.
  * @author Georg Fischer
  */
 public class A190830 extends HolonomicRecurrence {

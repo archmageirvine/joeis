@@ -3,7 +3,7 @@ package irvine.oeis.a087;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A087621 <code>(1,1)</code> entry of powers of the orthogonal design shown below.
+ * A087621 (1,1) entry of powers of the orthogonal design shown below.
  * @author Sean A. Irvine
  */
 public class A087621 extends LinearRecurrence {

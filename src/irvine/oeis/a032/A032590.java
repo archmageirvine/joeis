@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A032590 Primes in which 'last digit cycle' is <code>{1,3,7,9}</code>.
+ * A032590 Primes in which 'last digit cycle' is {1,3,7,9}.
  * @author Sean A. Irvine
  */
 public class A032590 extends A000040 {

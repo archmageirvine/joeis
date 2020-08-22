@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a036.A036554;
 
 /**
- * A194688 First differences of <code>A036554</code> (numbers whose binary representation ends in an odd number of zeros).
+ * A194688 First differences of A036554 (numbers whose binary representation ends in an odd number of zeros).
  * @author Georg Fischer
  */
 public class A194688 extends DifferenceSequence {

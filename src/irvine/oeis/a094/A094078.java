@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A094078 Decimal expansion of <code>Pi + arctan(e^Pi)</code>.
+ * A094078 Decimal expansion of Pi + arctan(e^Pi).
  * @author Georg Fischer
  */
 public class A094078 extends DecimalExpansionSequence {

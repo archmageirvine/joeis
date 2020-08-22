@@ -5,7 +5,7 @@ package irvine.oeis.a119;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A119394 <code>a(n) = Sum_{k=0..n} (-1)^(n-k)*(n!/k!)^2*binomial(n-1,k-1)</code>.
+ * A119394 a(n) = Sum_{k=0..n} (-1)^(n-k)*(n!/k!)^2*binomial(n-1,k-1).
  * @author Georg Fischer
  */
 public class A119394 extends HolonomicRecurrence {

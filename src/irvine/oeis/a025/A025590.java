@@ -3,7 +3,7 @@ package irvine.oeis.a025;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A025590 Number of <code>n-move self-avoiding</code> knight paths on <code>6x6</code> board, beginning at corner.
+ * A025590 Number of n-move self-avoiding knight paths on 6x6 board, beginning at corner.
  * @author Georg Fischer
  */
 public class A025590 extends FiniteSequence {

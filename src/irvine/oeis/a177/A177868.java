@@ -5,7 +5,7 @@ package irvine.oeis.a177;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A177868 <code>a(n) =</code> number of 2-digit primes with digit sum n, where n runs through the non-multiples of 3 in the range <code>[2..17]</code>.
+ * A177868 a(n) = number of 2-digit primes with digit sum n, where n runs through the non-multiples of 3 in the range [2..17].
  * @author Georg Fischer
  */
 public class A177868 extends FiniteSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a065;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A065171 Permutation of Z, folded to N, corresponding to the site swap pattern ...26120123456... which ascends infinitely after <code>t=0</code>.
+ * A065171 Permutation of Z, folded to N, corresponding to the site swap pattern ...26120123456... which ascends infinitely after t=0.
  * @author Sean A. Irvine
  */
 public class A065171 extends LinearRecurrence {

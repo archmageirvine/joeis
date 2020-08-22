@@ -3,7 +3,7 @@ package irvine.oeis.a162;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A162746 Row sums of Fibonacci-Pascal matrix <code>A162745</code>.
+ * A162746 Row sums of Fibonacci-Pascal matrix A162745.
  * @author Sean A. Irvine
  */
 public class A162746 extends LinearRecurrence {

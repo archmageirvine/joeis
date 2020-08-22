@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A323983 Decimal expansion of <code>sinh(Pi/6)</code>.
+ * A323983 Decimal expansion of sinh(Pi/6).
  * @author Georg Fischer
  */
 public class A323983 extends DecimalExpansionSequence {

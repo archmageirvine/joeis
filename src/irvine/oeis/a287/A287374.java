@@ -7,7 +7,7 @@ import irvine.oeis.a101.A101666;
 
 
 /**
- * A287374 Positions of 1 in <code>A101666</code>.
+ * A287374 Positions of 1 in A101666.
  * @author Georg Fischer
  */
 public class A287374 extends PositionSequence {

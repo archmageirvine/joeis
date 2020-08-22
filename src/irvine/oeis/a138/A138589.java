@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A138589 <code>a(n) = 5^n mod 4^n</code>.
+ * A138589 a(n) = 5^n mod 4^n.
  * @author Georg Fischer
  */
 public class A138589 implements Sequence {

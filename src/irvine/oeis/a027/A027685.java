@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027685 Number of independent subsets of <code>4^n</code> torus graph.
+ * A027685 Number of independent subsets of 4^n torus graph.
  * @author Sean A. Irvine
  */
 public class A027685 implements Sequence {

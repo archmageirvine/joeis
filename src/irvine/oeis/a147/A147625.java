@@ -5,7 +5,7 @@ package irvine.oeis.a147;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A147625 <code>Octo-factorial numbers(4)</code>.
+ * A147625 Octo-factorial numbers(4).
  * @author Georg Fischer
  */
 public class A147625 extends HolonomicRecurrence {

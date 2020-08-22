@@ -3,7 +3,7 @@ package irvine.oeis.a188;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A188480 <code>a(n) = (n^4 + 16*n^3 + 65*n^2 + 26*n + 12)/12</code>.
+ * A188480 a(n) = (n^4 + 16*n^3 + 65*n^2 + 26*n + 12)/12.
  * @author Sean A. Irvine
  */
 public class A188480 extends LinearRecurrence {

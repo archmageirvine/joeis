@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A266756 Nim value of subtraction game <code>S(2,5,7)</code> with a heap of n beans.
+ * A266756 Nim value of subtraction game S(2,5,7) with a heap of n beans.
  * @author Georg Fischer
  */
 public class A266756 extends PaddingSequence {

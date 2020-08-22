@@ -3,7 +3,7 @@ package irvine.oeis.a005;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A005933 Theta series of laminated lattice <code>LAMBDA_9</code>.
+ * A005933 Theta series of laminated lattice LAMBDA_9.
  * @author Sean A. Irvine
  */
 public class A005933 extends GramMatrixThetaSeries {

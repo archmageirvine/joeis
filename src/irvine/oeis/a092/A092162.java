@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A092162 Decimal expansion of <code>(e/pi)^6</code>.
+ * A092162 Decimal expansion of (e/pi)^6.
  * @author Georg Fischer
  */
 public class A092162 extends DecimalExpansionSequence {

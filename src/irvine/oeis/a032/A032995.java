@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032995 If d,e are consecutive digits of n in base 7, then <code>|d-e|&gt;=5</code>.
+ * A032995 If d,e are consecutive digits of n in base 7, then |d-e|&gt;=5.
  * @author Sean A. Irvine
  */
 public class A032995 implements Sequence {

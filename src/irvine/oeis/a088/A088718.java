@@ -5,7 +5,7 @@ package irvine.oeis.a088;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A088718 <code>a(n)= Gamma(n+2) *Gamma(n+1) *2F2(n+2, n+1; 2, 2; 1)/exp(1)</code>, where <code>2F2(;;)</code> is a generalized hypergeometric series.
+ * A088718 a(n)= Gamma(n+2) *Gamma(n+1) *2F2(n+2, n+1; 2, 2; 1)/exp(1), where 2F2(;;) is a generalized hypergeometric series.
  * @author Georg Fischer
  */
 public class A088718 extends HolonomicRecurrence {

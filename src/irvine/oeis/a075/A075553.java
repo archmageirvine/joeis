@@ -7,7 +7,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A075553 Numerators in the Maclaurin series for <code>arctan(1+x)</code>.
+ * A075553 Numerators in the Maclaurin series for arctan(1+x).
  * @author Georg Fischer
  */
 public class A075553 extends EulerTransform {

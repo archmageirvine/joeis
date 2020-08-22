@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019530 Smallest number m such that <code>m^m</code> is divisible by <code>n</code>.
+ * A019530 Smallest number m such that m^m is divisible by n.
  * @author Sean A. Irvine
  */
 public class A019530 implements Sequence {

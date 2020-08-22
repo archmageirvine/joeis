@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A027902 Divisors of <code>3^24 - 1</code>.
+ * A027902 Divisors of 3^24 - 1.
  * @author Sean A. Irvine
  */
 public class A027902 extends FiniteSequence {

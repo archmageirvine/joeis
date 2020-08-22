@@ -3,7 +3,7 @@ package irvine.oeis.a120;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A120469 <code>14 X 14</code> face centered cubic bonding Matrix Markov.
+ * A120469 14 X 14 face centered cubic bonding Matrix Markov.
  * @author Sean A. Irvine
  */
 public class A120469 extends LinearRecurrence {

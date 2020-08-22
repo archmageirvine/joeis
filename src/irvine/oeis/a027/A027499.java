@@ -3,7 +3,7 @@ package irvine.oeis.a027;
 import irvine.math.z.Z;
 
 /**
- * A027499 Second diagonal of <code>A027495</code>.
+ * A027499 Second diagonal of A027495.
  * @author Sean A. Irvine
  */
 public class A027499 extends A027495 {

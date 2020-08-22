@@ -4,7 +4,7 @@ package irvine.oeis.a299;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A299120 <code>a(n) = (n-1)*(n-2)*(n+3)*(n+2)/12</code>.
+ * A299120 a(n) = (n-1)*(n-2)*(n+3)*(n+2)/12.
  * @author Georg Fischer
  */
 public class A299120 extends LinearRecurrence {

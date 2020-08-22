@@ -4,7 +4,7 @@ package irvine.oeis.a267;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A267068 <code>a(n) = (n+1) / A189733(n)</code>.
+ * A267068 a(n) = (n+1) / A189733(n).
  * @author Georg Fischer
  */
 public class A267068 extends GeneratingFunctionSequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a266;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A266959 Smallest n-digit number ending in <code>n</code>.
+ * A266959 Smallest n-digit number ending in n.
  * @author Georg Fischer
  */
 public class A266959 extends GeneratingFunctionSequence {

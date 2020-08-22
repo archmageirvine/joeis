@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023196 Nondeficient numbers: numbers n such that <code>sigma(n) &gt;= 2n;</code> union of <code>A000396</code> and <code>A005101</code>.
+ * A023196 Nondeficient numbers: numbers n such that sigma(n) &gt;= 2n; union of A000396 and A005101.
  * @author Sean A. Irvine
  */
 public class A023196 implements Sequence {

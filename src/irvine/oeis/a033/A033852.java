@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033852 Integers k such that <code>j(k)*phi(k) = sigma(k)</code>, where <code>j(n) = A033831(n)</code>.
+ * A033852 Integers k such that j(k)*phi(k) = sigma(k), where j(n) = A033831(n).
  * @author Sean A. Irvine
  */
 public class A033852 extends A033831 {

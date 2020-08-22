@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicBooleanArray;
 
 /**
- * A022300 The sequence a of <code>1</code>'s and <code>2</code>'s starting with <code>(1,1,2,1)</code> such that <code>a(n)</code> is the length of the <code>(n+2)nd</code> run of a.
+ * A022300 The sequence a of 1's and 2's starting with (1,1,2,1) such that a(n) is the length of the (n+2)nd run of a.
  * @author Sean A. Irvine
  */
 public class A022300 implements Sequence {

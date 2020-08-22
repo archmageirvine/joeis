@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003985 Triangle with subscripts <code>(1,1),(2,1),(1,2),(3,1),(2,2),(1,3)</code>, etc. in which entry <code>(i,j)</code> is i AND j.
+ * A003985 Triangle with subscripts (1,1),(2,1),(1,2),(3,1),(2,2),(1,3), etc. in which entry (i,j) is i AND j.
  * @author Sean A. Irvine
  */
 public class A003985 implements Sequence {

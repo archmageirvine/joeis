@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A145652 <code>a(1)=1. a(n) =</code> the largest integer such that the finite sequence <code>(a(n-1),a(n-2),...a(n-a(n)))</code> occurs somewhere as a subsequence in the finite sequence <code>(a(1),a(2),...,a(n-1))</code>.
+ * A145652 a(1)=1. a(n) = the largest integer such that the finite sequence (a(n-1),a(n-2),...a(n-a(n))) occurs somewhere as a subsequence in the finite sequence (a(1),a(2),...,a(n-1)).
  * @author Georg Fischer
  */
 public class A145652 extends PaddingSequence {

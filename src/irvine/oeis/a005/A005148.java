@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005148 Sequence of coefficients arising in connection with a rapidly converging series for <code>Pi</code>.
+ * A005148 Sequence of coefficients arising in connection with a rapidly converging series for Pi.
  * @author Sean A. Irvine
  */
 public class A005148 implements Sequence {

@@ -4,7 +4,7 @@ package irvine.oeis.a321;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A321499 Numbers of the form <code>(x - y)(x^2 - y^2)</code> with <code>x &gt; y &gt; 0</code>.
+ * A321499 Numbers of the form (x - y)(x^2 - y^2) with x &gt; y &gt; 0.
  * @author Georg Fischer
  */
 public class A321499 extends GeneratingFunctionSequence {

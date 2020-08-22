@@ -5,7 +5,7 @@ package irvine.oeis.a080;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A080925 Binomial transform of Jacobsthal gap sequence <code>(A080924)</code>.
+ * A080925 Binomial transform of Jacobsthal gap sequence (A080924).
  * @author Georg Fischer
  */
 public class A080925 extends HolonomicRecurrence {

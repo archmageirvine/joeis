@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004431;
 
 /**
- * A024513 <code>a(n) =</code> position of <code>n^2 + (n+1)^2</code> in <code>A004431</code> (sums of 2 distinct nonzero squares).
+ * A024513 a(n) = position of n^2 + (n+1)^2 in A004431 (sums of 2 distinct nonzero squares).
  * @author Sean A. Irvine
  */
 public class A024513 extends A004431 {

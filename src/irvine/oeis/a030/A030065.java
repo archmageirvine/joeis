@@ -5,7 +5,7 @@ package irvine.oeis.a030;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A030065 <code>a(4n)=n, a(4n+2)=a(4n)+a(4n+4), a(2n+1)=a(2n)+a(2n+2)</code>.
+ * A030065 a(4n)=n, a(4n+2)=a(4n)+a(4n+4), a(2n+1)=a(2n)+a(2n+2).
  * @author Georg Fischer
  */
 public class A030065 extends HolonomicRecurrence {

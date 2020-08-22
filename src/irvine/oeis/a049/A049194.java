@@ -5,7 +5,7 @@ package irvine.oeis.a049;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A049194 Number of digits in n-th term of <code>A001387</code>.
+ * A049194 Number of digits in n-th term of A001387.
  * @author Georg Fischer
  */
 public class A049194 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A019557 Coordination sequence for <code>G_2</code> lattice.
+ * A019557 Coordination sequence for G_2 lattice.
  * @author Sean A. Irvine
  */
 public class A019557 implements Sequence {

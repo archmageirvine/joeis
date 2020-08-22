@@ -4,7 +4,7 @@ package irvine.oeis.a192;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A192308 1-sequence of reduction of <code>(3n)</code> by <code>x^2 -&gt; x+1</code>.
+ * A192308 1-sequence of reduction of (3n) by x^2 -&gt; x+1.
  * @author Georg Fischer
  */
 public class A192308 extends GeneratingFunctionSequence {

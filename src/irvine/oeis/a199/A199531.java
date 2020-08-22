@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199531 Number of <code>-n..n</code> arrays <code>x(0..3)</code> of 4 elements with zero sum and no two consecutive zero elements.
+ * A199531 Number of -n..n arrays x(0..3) of 4 elements with zero sum and no two consecutive zero elements.
  * @author Georg Fischer
  */
 public class A199531 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a129;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A129345 <code>a(2n) = A001542(n+1), a(2n+1) = A038761(n+1); a Pellian-related</code> sequence.
+ * A129345 a(2n) = A001542(n+1), a(2n+1) = A038761(n+1); a Pellian-related sequence.
  * @author Sean A. Irvine
  */
 public class A129345 extends LinearRecurrence {

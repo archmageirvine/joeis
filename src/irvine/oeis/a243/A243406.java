@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A243406 Decimal expansion of <code>8^(1/sqrt(8))</code>.
+ * A243406 Decimal expansion of 8^(1/sqrt(8)).
  * @author Georg Fischer
  */
 public class A243406 extends DecimalExpansionSequence {

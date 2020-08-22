@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A023975 First bit in fractional part of binary expansion of 8th root of <code>n</code>.
+ * A023975 First bit in fractional part of binary expansion of 8th root of n.
  * @author Sean A. Irvine
  */
 public class A023975 implements Sequence {

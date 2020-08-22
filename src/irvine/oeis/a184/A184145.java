@@ -4,7 +4,7 @@ package irvine.oeis.a184;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A184145 1/4 the number of <code>(n+1) X 2 0..3</code> arrays with every <code>2 X 2</code> subblock having at least two equal elements connected horizontally or vertically.
+ * A184145 1/4 the number of (n+1) X 2 0..3 arrays with every 2 X 2 subblock having at least two equal elements connected horizontally or vertically.
  * @author Georg Fischer
  */
 public class A184145 extends GeneratingFunctionSequence {

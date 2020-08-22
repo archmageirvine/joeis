@@ -6,7 +6,7 @@ package irvine.oeis.a100;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A100691 Number of self-avoiding paths with n steps on a triangular lattice in the strip Z <code>x {0,1}</code>.
+ * A100691 Number of self-avoiding paths with n steps on a triangular lattice in the strip Z x {0,1}.
  * @author Georg Fischer
  */
 public class A100691 extends HolonomicRecurrence {

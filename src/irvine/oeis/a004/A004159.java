@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A004159 Sum of digits of <code>n^2</code>.
+ * A004159 Sum of digits of n^2.
  * @author Sean A. Irvine
  */
 public class A004159 implements Sequence {

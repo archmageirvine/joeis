@@ -4,7 +4,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032093 Number of reversible strings with <code>n-1</code> beads of 2 colors. 6 beads are black. Strings are not palindromic.
+ * A032093 Number of reversible strings with n-1 beads of 2 colors. 6 beads are black. Strings are not palindromic.
  * @author Georg Fischer
  */
 public class A032093 extends GeneratingFunctionSequence {

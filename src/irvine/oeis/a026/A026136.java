@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.util.array.LongDynamicLongArray;
 
 /**
- * A026136 For <code>n &gt;= 2</code>, let <code>L=n-[ n/2 ], R=n+[ n/2 ];</code> then <code>a(L)=n</code> if <code>a(L)</code> not yet defined, else <code>a(R)=n;</code> thus <code>|a(n)-n|=[ (1/2)*a(n) ]</code>.
+ * A026136 For n &gt;= 2, let L=n-[ n/2 ], R=n+[ n/2 ]; then a(L)=n if a(L) not yet defined, else a(R)=n; thus |a(n)-n|=[ (1/2)*a(n) ].
  * @author Sean A. Irvine
  */
 public class A026136 implements Sequence {

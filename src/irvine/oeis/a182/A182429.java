@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a003.A003273;
 
 /**
- * A182429 First differences of congruent numbers <code>A003273</code>.
+ * A182429 First differences of congruent numbers A003273.
  * @author Georg Fischer
  */
 public class A182429 extends DifferenceSequence {

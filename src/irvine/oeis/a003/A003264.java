@@ -6,7 +6,7 @@ import irvine.math.q.BernoulliSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A003264 <code>Floor((-4n)/Bernoulli(2n))</code>.
+ * A003264 Floor((-4n)/Bernoulli(2n)).
  * @author Sean A. Irvine
  */
 public class A003264 implements Sequence {

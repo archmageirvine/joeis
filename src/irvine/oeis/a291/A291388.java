@@ -4,7 +4,7 @@ package irvine.oeis.a291;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A291388 <code>a(n) = (1/8)*A291387(n)</code>.
+ * A291388 a(n) = (1/8)*A291387(n).
  * @author Georg Fischer
  */
 public class A291388 extends GeneratingFunctionSequence {

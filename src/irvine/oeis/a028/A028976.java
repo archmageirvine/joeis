@@ -3,7 +3,7 @@ package irvine.oeis.a028;
 import irvine.oeis.GramMatrixThetaSeries;
 
 /**
- * A028976 Theta series of <code>8-d 5-modular</code> lattice <code>Q_8(1)</code> with det 625 and minimal norm 4.
+ * A028976 Theta series of 8-d 5-modular lattice Q_8(1) with det 625 and minimal norm 4.
  * @author Sean A. Irvine
  */
 public class A028976 extends GramMatrixThetaSeries {

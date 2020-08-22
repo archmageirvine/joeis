@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A034357 Number of binary <code>[ n,3 ]</code> codes.
+ * A034357 Number of binary [ n,3 ] codes.
  * @author Georg Fischer
  */
 public class A034357 extends GeneratingFunctionSequence {

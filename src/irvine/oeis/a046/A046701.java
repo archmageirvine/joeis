@@ -5,7 +5,7 @@ package irvine.oeis.a046;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A046701 <code>a(1) = a(2) = a(3) = 1, a(n) = a(n - a(n-1)) + a(n-1 - a(n-3)) (n &gt; 3)</code>.
+ * A046701 a(1) = a(2) = a(3) = 1, a(n) = a(n - a(n-1)) + a(n-1 - a(n-3)) (n &gt; 3).
  * @author Georg Fischer
  */
 public class A046701 extends HolonomicRecurrence {

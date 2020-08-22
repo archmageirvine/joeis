@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004781 Binary expansion contains 3 adjacent <code>1</code>'s.
+ * A004781 Binary expansion contains 3 adjacent 1's.
  * @author Sean A. Irvine
  */
 public class A004781 implements Sequence {

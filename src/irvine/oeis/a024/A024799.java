@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000408;
 
 /**
- * A024799 Positions of odd numbers in <code>A000408</code>.
+ * A024799 Positions of odd numbers in A000408.
  * @author Sean A. Irvine
  */
 public class A024799 extends A000408 {

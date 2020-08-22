@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007895;
 
 
 /**
- * A095076 Parity of 1-fibits in Zeckendorf expansion <code>A014417(n)</code>.
+ * A095076 Parity of 1-fibits in Zeckendorf expansion A014417(n).
  * @author Georg Fischer
  */
 public class A095076 extends A007895 {

@@ -4,7 +4,7 @@ package irvine.oeis.a027;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A027916 Least k such that <code>1+2+...+k &gt;= E{1,2,...,n}</code>, where E <code>= 2nd</code> elementary symmetric function.
+ * A027916 Least k such that 1+2+...+k &gt;= E{1,2,...,n}, where E = 2nd elementary symmetric function.
  * @author Georg Fischer
  */
 public class A027916 extends GeneratingFunctionSequence {

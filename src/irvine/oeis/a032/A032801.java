@@ -6,7 +6,7 @@ package irvine.oeis.a032;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A032801 Number of unordered sets a, b, c, d of distinct integers from <code>1..n</code> such that <code>a+b+c+d = 0 (mod n)</code>.
+ * A032801 Number of unordered sets a, b, c, d of distinct integers from 1..n such that a+b+c+d = 0 (mod n).
  * @author Georg Fischer
  */
 public class A032801 extends GeneratingFunctionSequence {

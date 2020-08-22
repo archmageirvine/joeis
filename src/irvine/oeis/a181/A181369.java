@@ -4,7 +4,7 @@ package irvine.oeis.a181;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A181369 Number of maximal rectangles in all L-convex polyominoes of semiperimeter <code>n</code>. An L-convex polyomino is a convex polyomino where any two cells can be connected by a path internal to the polyomino and which has at most 1 change of direction <code>(i.e.</code>, one of the four orientations of the letter <code>L)</code>. A maximal rectangle in an L-convex polyomino P is a rectangle included in P that is maximal with respect to inclusion.
+ * A181369 Number of maximal rectangles in all L-convex polyominoes of semiperimeter n. An L-convex polyomino is a convex polyomino where any two cells can be connected by a path internal to the polyomino and which has at most 1 change of direction (i.e., one of the four orientations of the letter L). A maximal rectangle in an L-convex polyomino P is a rectangle included in P that is maximal with respect to inclusion.
  * @author Georg Fischer
  */
 public class A181369 extends GeneratingFunctionSequence {

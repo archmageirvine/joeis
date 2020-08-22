@@ -6,7 +6,7 @@ import jmason.poly.ChildGeneratorFactory;
 import jmason.poly.PolyominoCounter;
 
 /**
- * A030445 Number of <code>one-sided n-celled</code> polyknights.
+ * A030445 Number of one-sided n-celled polyknights.
  * @author Sean A. Irvine
  */
 public class A030445 implements Sequence {

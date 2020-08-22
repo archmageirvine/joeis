@@ -6,7 +6,7 @@ package irvine.oeis.a058;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A058806 <code>a(n) = n! * H_n(n)</code> where <code>H_0(n) = 1/n, H_m(n) = Sum_{k=1..n} H_{m-1}(k)</code>.
+ * A058806 a(n) = n! * H_n(n) where H_0(n) = 1/n, H_m(n) = Sum_{k=1..n} H_{m-1}(k).
  * @author Georg Fischer
  */
 public class A058806 extends HolonomicRecurrence {

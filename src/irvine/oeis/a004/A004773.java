@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A004773 Numbers congruent to <code>{0, 1, 2} mod 4: a(n) = floor(4*n/3)</code>.
+ * A004773 Numbers congruent to {0, 1, 2} mod 4: a(n) = floor(4*n/3).
  * @author Sean A. Irvine
  */
 public class A004773 implements Sequence {

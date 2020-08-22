@@ -6,7 +6,7 @@ package irvine.oeis.a034;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A034688 Expansion of <code>(1-25*x)^(-1/5)</code>, related to quintic factorial numbers <code>A008548</code>.
+ * A034688 Expansion of (1-25*x)^(-1/5), related to quintic factorial numbers A008548.
  * @author Georg Fischer
  */
 public class A034688 extends HolonomicRecurrence {

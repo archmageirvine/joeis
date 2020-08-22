@@ -4,7 +4,7 @@ package irvine.oeis.a292;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A292054 Wiener index of the <code>n X n</code> knight graph.
+ * A292054 Wiener index of the n X n knight graph.
  * @author Georg Fischer
  */
 public class A292054 extends GeneratingFunctionSequence {

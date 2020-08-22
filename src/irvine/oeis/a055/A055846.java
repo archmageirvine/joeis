@@ -5,7 +5,7 @@ package irvine.oeis.a055;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A055846 <code>a(n) = 25*6^(n-2)</code>, with <code>a(0)=1</code> and <code>a(1)=4</code>.
+ * A055846 a(n) = 25*6^(n-2), with a(0)=1 and a(1)=4.
  * @author Georg Fischer
  */
 public class A055846 extends HolonomicRecurrence {

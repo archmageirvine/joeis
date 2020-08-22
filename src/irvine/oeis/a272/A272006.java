@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003617;
 import irvine.oeis.a062.A062397;
 
 /**
- * A272006 <code>a(n) = A003617(n) - A062397(n-1)</code>.
+ * A272006 a(n) = A003617(n) - A062397(n-1).
  * @author Georg Fischer
  */
 public class A272006 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.oeis.PeriodicSequence;
 import irvine.oeis.Sequence;
 
 /**
- * A026059 <code>a(n) = (d(n)-r(n))/5</code>, where d <code>= A026057</code> and r is the periodic sequence with fundamental period <code>(1,0,3,1,0)</code>.
+ * A026059 a(n) = (d(n)-r(n))/5, where d = A026057 and r is the periodic sequence with fundamental period (1,0,3,1,0).
  * @author Sean A. Irvine
  */
 public class A026059 extends A026057 {

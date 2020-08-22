@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A319455 Expansion of <code>Product_{k&gt;=1} 1/((1 - x^k)*(1 - x^(2*k)))^2</code>.
+ * A319455 Expansion of Product_{k&gt;=1} 1/((1 - x^k)*(1 - x^(2*k)))^2.
  * @author Georg Fischer
  */
 public class A319455 extends EulerTransform {

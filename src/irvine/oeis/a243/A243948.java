@@ -6,7 +6,7 @@ package irvine.oeis.a243;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A243948 G.f.: <code>Sum_{n&gt;=0} x^n / (1-x)^(2*n+1) * [Sum_{k=0..n} C(n,k)^2 * x^k] * [Sum_{k=0..n} C(n,k)^2 * 2^k * x^k]</code>.
+ * A243948 G.f.: Sum_{n&gt;=0} x^n / (1-x)^(2*n+1) * [Sum_{k=0..n} C(n,k)^2 * x^k] * [Sum_{k=0..n} C(n,k)^2 * 2^k * x^k].
  * @author Georg Fischer
  */
 public class A243948 extends HolonomicRecurrence {

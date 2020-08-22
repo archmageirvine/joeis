@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a001.A001037;
 
 /**
- * A006167 Number of factorization patterns of polynomials of degree n over <code>F_2</code>.
+ * A006167 Number of factorization patterns of polynomials of degree n over F_2.
  * @author Sean A. Irvine
  */
 public class A006167 extends EulerTransformSequence {

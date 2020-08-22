@@ -4,7 +4,7 @@ package irvine.oeis.a283;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A283679 G.f.: <code>F(F(F(x)))</code> where <code>F(x) = x/(1-x-x^2)</code> is the g.f. for the Fibonacci numbers.Three fold self composition of the Fibonacci generating series <code>x/(1-x-x^2)</code> in <code>A000045</code>.
+ * A283679 G.f.: F(F(F(x))) where F(x) = x/(1-x-x^2) is the g.f. for the Fibonacci numbers.Three fold self composition of the Fibonacci generating series x/(1-x-x^2) in A000045.
  * @author Georg Fischer
  */
 public class A283679 extends GeneratingFunctionSequence {

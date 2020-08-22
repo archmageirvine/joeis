@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A051796 <code>a(n)=sum((-1)^i*a(i),i=n-9..n-1);</code> with <code>a(i)=i</code> for <code>i=1..9</code>.
+ * A051796 a(n)=sum((-1)^i*a(i),i=n-9..n-1); with a(i)=i for i=1..9.
  * @author Georg Fischer
  */
 public class A051796 extends PaddingSequence {

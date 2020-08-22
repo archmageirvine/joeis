@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A247446 Decimal expansion of <code>Pi*sqrt(3)/16</code>.
+ * A247446 Decimal expansion of Pi*sqrt(3)/16.
  * @author Georg Fischer
  */
 public class A247446 extends DecimalExpansionSequence {

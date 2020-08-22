@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a006.A006068;
 
 /**
- * A268716 <code>a(n) = 2*A006068(n);</code> main diagonal of <code>A268714</code>.
+ * A268716 a(n) = 2*A006068(n); main diagonal of A268714.
  * @author Georg Fischer
  */
 public class A268716 implements Sequence {

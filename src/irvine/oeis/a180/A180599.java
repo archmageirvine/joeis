@@ -4,7 +4,7 @@ package irvine.oeis.a180;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A180599 Zero followed by infinitely many <code>9</code>'s.
+ * A180599 Zero followed by infinitely many 9's.
  * @author Georg Fischer
  */
 public class A180599 extends GeneratingFunctionSequence {

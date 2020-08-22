@@ -4,7 +4,7 @@ package irvine.oeis.a215;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A215006 <code>a(0)=0, a(n+1)</code> is the least <code>k&gt;a(n)</code> such that <code>k+a(n)+n+1</code> is a Fibonacci number.
+ * A215006 a(0)=0, a(n+1) is the least k&gt;a(n) such that k+a(n)+n+1 is a Fibonacci number.
  * @author Georg Fischer
  */
 public class A215006 extends GeneratingFunctionSequence {

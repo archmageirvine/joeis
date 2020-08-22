@@ -4,7 +4,7 @@ package irvine.oeis.a067;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A067983 Convolution of <code>L(n+1) := A000204(n+1)</code> (Lucas), <code>n&gt;=0</code>, with <code>L(n+5), n&gt;=0</code>.
+ * A067983 Convolution of L(n+1) := A000204(n+1) (Lucas), n&gt;=0, with L(n+5), n&gt;=0.
  * @author Georg Fischer
  */
 public class A067983 extends GeneratingFunctionSequence {

@@ -6,7 +6,7 @@ import irvine.oeis.DifferenceSequence;
 import irvine.oeis.a022.A022847;
 
 /**
- * A214860 First differences of <code>round(n*sqrt(3)) (A022847)</code>.
+ * A214860 First differences of round(n*sqrt(3)) (A022847).
  * @author Georg Fischer
  */
 public class A214860 extends DifferenceSequence {

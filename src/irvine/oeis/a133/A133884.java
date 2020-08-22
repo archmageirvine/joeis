@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A133884 <code>a(n) = binomial(n+4,n) mod 4</code>.
+ * A133884 a(n) = binomial(n+4,n) mod 4.
  * @author Georg Fischer
  */
 public class A133884 extends PaddingSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a266;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A266777 Molien series for invariants of finite Coxeter group <code>A_8</code>.
+ * A266777 Molien series for invariants of finite Coxeter group A_8.
  * @author Sean A. Irvine
  */
 public class A266777 extends LinearRecurrence {

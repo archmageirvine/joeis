@@ -4,7 +4,7 @@ package irvine.oeis.a172;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A172362 <code>a(n) = binomial(n+10, 10)*3^n</code>.
+ * A172362 a(n) = binomial(n+10, 10)*3^n.
  * @author Georg Fischer
  */
 public class A172362 extends GeneratingFunctionSequence {

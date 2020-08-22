@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A000574 Coefficient of <code>x^5</code> in expansion of <code>(1 + x + x^2)^n</code>.
+ * A000574 Coefficient of x^5 in expansion of (1 + x + x^2)^n.
  * @author Sean A. Irvine
  */
 public class A000574 implements Sequence {

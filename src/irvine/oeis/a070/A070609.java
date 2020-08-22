@@ -5,7 +5,7 @@ package irvine.oeis.a070;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A070609 <code>a(n) = n^5 mod 25</code>.
+ * A070609 a(n) = n^5 mod 25.
  * @author Georg Fischer
  */
 public class A070609 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000010;
 
 /**
- * A074942 <code>a(n) = phi(n) mod 3</code>.
+ * A074942 a(n) = phi(n) mod 3.
  * @author Georg Fischer
  */
 public class A074942 extends A000010 {

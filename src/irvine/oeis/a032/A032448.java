@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032448 Smallest prime <code>== -1</code> modulo <code>prime(n)</code>.
+ * A032448 Smallest prime == -1 modulo prime(n).
  * @author Sean A. Irvine
  */
 public class A032448 implements Sequence {

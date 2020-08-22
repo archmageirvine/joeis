@@ -3,7 +3,7 @@ package irvine.oeis.a033;
 import irvine.math.z.Z;
 
 /**
- * A033881 Abundancy of n-th abundant number: <code>sigma(k) - 2k</code> for k such that this is <code>&gt; 0</code>.
+ * A033881 Abundancy of n-th abundant number: sigma(k) - 2k for k such that this is &gt; 0.
  * @author Sean A. Irvine
  */
 public class A033881 extends A033880 {

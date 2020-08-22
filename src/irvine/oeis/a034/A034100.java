@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034100 Decimal part of square root of <code>a(n)</code> starts with digit 4.
+ * A034100 Decimal part of square root of a(n) starts with digit 4.
  * @author Sean A. Irvine
  */
 public class A034100 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A034012 Positive integers k satisfying <code>y^2 = x^5 -</code> k where <code>x^5</code> and <code>y^2</code> are not both divisible by <code>2^10</code> and k <code>= 2^(2*m)*d</code> with d a positive square-free integer d <code>= 7 (mod 8)</code> such that the class number of <code>Q(sqrt(-d))</code> is not divisible by 5.
+ * A034012 Positive integers k satisfying y^2 = x^5 - k where x^5 and y^2 are not both divisible by 2^10 and k = 2^(2*m)*d with d a positive square-free integer d = 7 (mod 8) such that the class number of Q(sqrt(-d)) is not divisible by 5.
  * @author Sean A. Irvine
  */
 public class A034012 extends FiniteSequence {

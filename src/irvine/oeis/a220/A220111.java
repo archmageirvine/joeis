@@ -3,7 +3,7 @@ package irvine.oeis.a220;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A220111 Main diagonal of array <code>T(k,n) = n-th</code> number in which the number of distinct base 10 digits is k.
+ * A220111 Main diagonal of array T(k,n) = n-th number in which the number of distinct base 10 digits is k.
  * @author Georg Fischer
  */
 public class A220111 extends FiniteSequence {

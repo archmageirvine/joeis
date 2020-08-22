@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A013512 <code>arctanh(sec(x)-sech(x))=2/2!*x^2+362/6!*x^6+1441682/10!*x^10..</code>.
+ * A013512 arctanh(sec(x)-sech(x))=2/2!*x^2+362/6!*x^6+1441682/10!*x^10...
  * @author Sean A. Irvine
  */
 public class A013512 implements Sequence {

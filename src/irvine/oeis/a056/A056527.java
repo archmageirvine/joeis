@@ -3,7 +3,7 @@ package irvine.oeis.a056;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A056527 Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact <code>13, 16, 13, 16, ...)</code>.
+ * A056527 Numbers where iterated sum of digits of square settles down to a cyclic pattern (in fact 13, 16, 13, 16, ...).
  * @author Sean A. Irvine
  */
 public class A056527 extends LinearRecurrence {

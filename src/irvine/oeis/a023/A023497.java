@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000032;
 import irvine.oeis.a090.A090946;
 
 /**
- * A023497 <code>a(n) = b(n) + d(n)</code>, where <code>b(n) = (n-th</code> Lucas number <code>&gt; 3)</code> and <code>d(n) = (n-th</code> number that is 1 or is not a Lucas number).
+ * A023497 a(n) = b(n) + d(n), where b(n) = (n-th Lucas number &gt; 3) and d(n) = (n-th number that is 1 or is not a Lucas number).
  * @author Sean A. Irvine
  */
 public class A023497 extends A000032 {

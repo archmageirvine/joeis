@@ -4,7 +4,7 @@ package irvine.oeis.a306;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A306603 <code>a(n) = (2 cos(Pi/15))^n + (2 cos(7 Pi/15))^n + (2 cos(11 Pi/15))^n + (2 cos(13 Pi/15))^n</code>.
+ * A306603 a(n) = (2 cos(Pi/15))^n + (2 cos(7 Pi/15))^n + (2 cos(11 Pi/15))^n + (2 cos(13 Pi/15))^n.
  * @author Georg Fischer
  */
 public class A306603 extends GeneratingFunctionSequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a131;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A131648 Primes <code>&gt; 100</code> in which every multi-digit substring is also prime.
+ * A131648 Primes &gt; 100 in which every multi-digit substring is also prime.
  * @author Georg Fischer
  */
 public class A131648 extends FiniteSequence {

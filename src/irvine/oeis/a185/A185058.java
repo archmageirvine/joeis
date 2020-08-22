@@ -4,7 +4,7 @@ package irvine.oeis.a185;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A185058 <code>a(n) = n^n! mod 7</code>.
+ * A185058 a(n) = n^n! mod 7.
  * @author Georg Fischer
  */
 public class A185058 extends GeneratingFunctionSequence {

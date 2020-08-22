@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A032214 "DFK" <code>(bracelet</code>, size, unlabeled) transform of 2,2,2,2...
+ * A032214 "DFK" (bracelet, size, unlabeled) transform of 2,2,2,2...
  * @author Sean A. Irvine
  */
 public class A032214 implements Sequence {

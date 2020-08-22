@@ -6,7 +6,7 @@ package irvine.oeis.a123;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A123642 <code>a(n) = n! - 2^n</code>.
+ * A123642 a(n) = n! - 2^n.
  * @author Georg Fischer
  */
 public class A123642 extends HolonomicRecurrence {

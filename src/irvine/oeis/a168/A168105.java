@@ -4,7 +4,7 @@ package irvine.oeis.a168;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A168105 <code>a(n) =</code> sum of natural numbers m such that <code>n - 6 &lt;= m &lt;= n + 6</code>.
+ * A168105 a(n) = sum of natural numbers m such that n - 6 &lt;= m &lt;= n + 6.
  * @author Georg Fischer
  */
 public class A168105 extends GeneratingFunctionSequence {

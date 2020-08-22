@@ -3,7 +3,7 @@ package irvine.oeis.a030;
 import irvine.math.z.Z;
 
 /**
- * A030684 Cube root of <code>A030683</code>.
+ * A030684 Cube root of A030683.
  * @author Sean A. Irvine
  */
 public class A030684 extends A030683 {

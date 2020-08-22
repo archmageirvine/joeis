@@ -4,7 +4,7 @@ package irvine.oeis.a317;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A317297 <code>a(n) = (n - 1)*(4*n^2 - 8*n + 5)</code>.
+ * A317297 a(n) = (n - 1)*(4*n^2 - 8*n + 5).
  * @author Georg Fischer
  */
 public class A317297 extends GeneratingFunctionSequence {

@@ -7,7 +7,7 @@ import irvine.math.cr.ComputableReals;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A111310 Decimal expansion of <code>(e^(Pi*sqrt(163)) - 744)^(1/3)</code>.
+ * A111310 Decimal expansion of (e^(Pi*sqrt(163)) - 744)^(1/3).
  * @author Georg Fischer
  */
 public class A111310 extends DecimalExpansionSequence {

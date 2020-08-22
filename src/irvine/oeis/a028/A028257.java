@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A028257 Engel expansion of <code>sqrt(3)</code>.
+ * A028257 Engel expansion of sqrt(3).
  * @author Sean A. Irvine
  */
 public class A028257 implements Sequence {

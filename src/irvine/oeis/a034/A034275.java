@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034275 <code>a(n)=f(n,n-2)</code> where f is given in <code>A034261</code>.
+ * A034275 a(n)=f(n,n-2) where f is given in A034261.
  * @author Sean A. Irvine
  */
 public class A034275 extends A034261 {

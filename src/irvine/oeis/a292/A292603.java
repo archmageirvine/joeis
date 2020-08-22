@@ -7,7 +7,7 @@ import irvine.oeis.a005.A005940;
 
 
 /**
- * A292603 Doudna-tree reduced modulo <code>4: a(n) = A005940(1+n) mod 4</code>.
+ * A292603 Doudna-tree reduced modulo 4: a(n) = A005940(1+n) mod 4.
  * @author Georg Fischer
  */
 public class A292603 extends A005940 {

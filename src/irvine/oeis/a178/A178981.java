@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a003.A003418;
 
 /**
- * A178981 <code>2^A003418(n);</code> for <code>n &gt;= 1</code>, the least number <code>&gt; 1</code> that can be expressed simultaneously as a k-th power of some integer for all <code>1 &lt;= k &lt;= n</code>.
+ * A178981 2^A003418(n); for n &gt;= 1, the least number &gt; 1 that can be expressed simultaneously as a k-th power of some integer for all 1 &lt;= k &lt;= n.
  * @author Georg Fischer
  */
 public class A178981 implements Sequence {

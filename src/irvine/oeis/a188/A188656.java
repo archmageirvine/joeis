@@ -6,7 +6,7 @@ import irvine.math.cr.CR;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A188656 Decimal expansion of <code>(1+sqrt(65))/8</code>.
+ * A188656 Decimal expansion of (1+sqrt(65))/8.
  * @author Georg Fischer
  */
 public class A188656 extends DecimalExpansionSequence {

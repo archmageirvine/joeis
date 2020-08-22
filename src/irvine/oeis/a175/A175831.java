@@ -3,7 +3,7 @@ package irvine.oeis.a175;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A175831 Partial sums of <code>ceiling(n^2/12)</code>.
+ * A175831 Partial sums of ceiling(n^2/12).
  * @author Sean A. Irvine
  */
 public class A175831 extends LinearRecurrence {

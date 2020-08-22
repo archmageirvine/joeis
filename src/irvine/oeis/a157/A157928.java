@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A157928 <code>a(n) = 0</code> if <code>n &lt; 2, = 1</code> otherwise.
+ * A157928 a(n) = 0 if n &lt; 2, = 1 otherwise.
  * @author Georg Fischer
  */
 public class A157928 extends PaddingSequence {

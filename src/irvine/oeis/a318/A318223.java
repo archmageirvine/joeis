@@ -6,7 +6,7 @@ package irvine.oeis.a318;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A318223 Expansion of e.g.f. <code>exp(x/(1 + 2*x))</code>.
+ * A318223 Expansion of e.g.f. exp(x/(1 + 2*x)).
  * @author Georg Fischer
  */
 public class A318223 extends HolonomicRecurrence {

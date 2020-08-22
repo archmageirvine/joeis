@@ -4,7 +4,7 @@ package irvine.oeis.a324;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A324265 <code>a(n) = 5*343^n</code>.
+ * A324265 a(n) = 5*343^n.
  * @author Georg Fischer
  */
 public class A324265 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033556 <code>a(n+1) = 2a(n) -</code> {largest prime <code>&lt; a(n)}</code>.
+ * A033556 a(n+1) = 2a(n) - {largest prime &lt; a(n)}.
  * @author Sean A. Irvine
  */
 public class A033556 implements Sequence {

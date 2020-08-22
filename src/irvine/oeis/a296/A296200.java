@@ -4,7 +4,7 @@ package irvine.oeis.a296;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A296200 Harary index of the <code>n X n</code> white bishop graph.
+ * A296200 Harary index of the n X n white bishop graph.
  * @author Georg Fischer
  */
 public class A296200 extends LinearRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a140;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A140925 <code>Binomial(m+n-1,n)^2 - binomial(m+n,n+1)*binomial(m+n-2,n-1)</code> with <code>m=12</code>.
+ * A140925 Binomial(m+n-1,n)^2 - binomial(m+n,n+1)*binomial(m+n-2,n-1) with m=12.
  * @author Georg Fischer
  */
 public class A140925 extends GeneratingFunctionSequence {

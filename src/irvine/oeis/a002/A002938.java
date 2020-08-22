@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A002938 The minimal sequence (from solving <code>n^3 - m^2 = a(n))</code>.
+ * A002938 The minimal sequence (from solving n^3 - m^2 = a(n)).
  * @author Sean A. Irvine
  */
 public class A002938 implements Sequence {

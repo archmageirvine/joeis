@@ -5,7 +5,7 @@ package irvine.oeis.a325;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A325689 Number of <code>length-3</code> compositions of n such that no part is the sum of the other two.
+ * A325689 Number of length-3 compositions of n such that no part is the sum of the other two.
  * @author Georg Fischer
  */
 public class A325689 extends HolonomicRecurrence {

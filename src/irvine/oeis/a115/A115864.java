@@ -6,7 +6,7 @@ package irvine.oeis.a115;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A115864 <code>Legendre_P(n,2)*4^n</code>.
+ * A115864 Legendre_P(n,2)*4^n.
  * @author Georg Fischer
  */
 public class A115864 extends HolonomicRecurrence {

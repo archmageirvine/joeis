@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033212 Primes congruent to 1 or <code>19 (mod 30)</code>.
+ * A033212 Primes congruent to 1 or 19 (mod 30).
  * @author Sean A. Irvine
  */
 public class A033212 extends A000040 {

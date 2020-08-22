@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A031912 <code>a(n) = prime(8*n-6)</code>.
+ * A031912 a(n) = prime(8*n-6).
  * @author Sean A. Irvine
  */
 public class A031912 extends A000040 {

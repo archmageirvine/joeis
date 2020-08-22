@@ -6,7 +6,7 @@ package irvine.oeis.a308;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A308808 Limiting row sequence of Pascal-like triangle <code>A141021</code> (with index of asymmetry s <code>= 4)</code>.
+ * A308808 Limiting row sequence of Pascal-like triangle A141021 (with index of asymmetry s = 4).
  * @author Georg Fischer
  */
 public class A308808 extends GeneratingFunctionSequence {

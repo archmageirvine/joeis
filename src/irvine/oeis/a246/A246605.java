@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 import irvine.math.z.Z;
 
 /**
- * A246605 Numbers n such that <code>n =</code> (digital root of <code>n)^(number</code> of digits of <code>n)</code>.
+ * A246605 Numbers n such that n = (digital root of n)^(number of digits of n).
  * @author Georg Fischer
  */
 public class A246605 extends FiniteSequence {

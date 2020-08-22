@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034172 Nearest integer to <code>n!/(2*log(2)^(n+1))</code>.
+ * A034172 Nearest integer to n!/(2*log(2)^(n+1)).
  * @author Sean A. Irvine
  */
 public class A034172 implements Sequence {

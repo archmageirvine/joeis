@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A098693 G.f.: <code>q*Product_{k&gt;0} (1-q^(12k))(1+q^(12k-1))(1+q^(12k-11))/(1-q^k)</code>.
+ * A098693 G.f.: q*Product_{k&gt;0} (1-q^(12k))(1+q^(12k-1))(1+q^(12k-11))/(1-q^k).
  * @author Georg Fischer
  */
 public class A098693 extends EulerTransform {

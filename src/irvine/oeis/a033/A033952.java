@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a007.A007376;
 
 /**
- * A033952 Write 1,2,... in a clockwise spiral on a square lattice, writing each digit at a separate lattice point, starting with 1 at the origin and 2 at <code>x=0, y=-1;</code> sequence gives the numbers on the positive <code>x-axis</code>.
+ * A033952 Write 1,2,... in a clockwise spiral on a square lattice, writing each digit at a separate lattice point, starting with 1 at the origin and 2 at x=0, y=-1; sequence gives the numbers on the positive x-axis.
  * @author Sean A. Irvine
  */
 public class A033952 extends A007376 {

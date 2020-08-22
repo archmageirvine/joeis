@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A004712 Positions of ones in binary expansion of <code>e-2</code>.
+ * A004712 Positions of ones in binary expansion of e-2.
  * @author Sean A. Irvine
  */
 public class A004712 extends DecimalExpansionSequence {

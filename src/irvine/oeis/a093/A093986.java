@@ -5,7 +5,7 @@ package irvine.oeis.a093;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A093986 <code>a(1) = 1, a(2) = 1, a(n+1) = 2n*a(n) - a(n-1)</code>. Symmetrically <code>a(n) = (a(n-1) + a(n+1))/((n-1) + (n+1))</code>.
+ * A093986 a(1) = 1, a(2) = 1, a(n+1) = 2n*a(n) - a(n-1). Symmetrically a(n) = (a(n-1) + a(n+1))/((n-1) + (n+1)).
  * @author Georg Fischer
  */
 public class A093986 extends HolonomicRecurrence {

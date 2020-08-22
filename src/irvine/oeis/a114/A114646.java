@@ -5,7 +5,7 @@ package irvine.oeis.a114;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A114646 Let <code>M(n)</code> be the <code>n X n</code> matrix <code>m(i,j)=min(i,j)</code> for <code>1&lt;=i,j&lt;=n</code> then <code>a(n)</code> is the trace of <code>M(n)^(-4)</code>.
+ * A114646 Let M(n) be the n X n matrix m(i,j)=min(i,j) for 1&lt;=i,j&lt;=n then a(n) is the trace of M(n)^(-4).
  * @author Georg Fischer
  */
 public class A114646 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a094;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A094201 <code>a(n) = 4*n^5 + 10*n^4 + 13*n^3 + 11*n^2 + 5*n + 1</code>.
+ * A094201 a(n) = 4*n^5 + 10*n^4 + 13*n^3 + 11*n^2 + 5*n + 1.
  * @author Georg Fischer
  */
 public class A094201 extends HolonomicRecurrence {

@@ -4,7 +4,7 @@ package irvine.oeis.a092;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A092804 Expansion of <code>(1+10x)/((1-1000x^3))</code>.
+ * A092804 Expansion of (1+10x)/((1-1000x^3)).
  * @author Georg Fischer
  */
 public class A092804 extends GeneratingFunctionSequence {

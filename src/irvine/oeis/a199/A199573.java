@@ -4,7 +4,7 @@ package irvine.oeis.a199;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A199573 Number of round trips of length n from any of the four vertices of the cycle graph <code>C_4</code>.
+ * A199573 Number of round trips of length n from any of the four vertices of the cycle graph C_4.
  * @author Georg Fischer
  */
 public class A199573 extends GeneratingFunctionSequence {

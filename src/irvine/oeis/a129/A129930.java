@@ -6,7 +6,7 @@ import irvine.oeis.PowerFactorPrimeSequence;
 
 
 /**
- * A129930 Numbers n such that <code>1077*2^n - 1</code> is prime.
+ * A129930 Numbers n such that 1077*2^n - 1 is prime.
  * @author Georg Fischer
  */
 public class A129930 extends PowerFactorPrimeSequence {

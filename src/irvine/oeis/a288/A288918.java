@@ -5,7 +5,7 @@ package irvine.oeis.a288;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A288918 Number of 4-cycles in the <code>n X n</code> king graph.
+ * A288918 Number of 4-cycles in the n X n king graph.
  * @author Georg Fischer
  */
 public class A288918 extends HolonomicRecurrence {

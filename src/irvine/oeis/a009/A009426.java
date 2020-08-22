@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A009426 Expansion of <code>log(1+x)/cos(sinh(x))</code>.
+ * A009426 Expansion of log(1+x)/cos(sinh(x)).
  * @author Sean A. Irvine
  */
 public class A009426 implements Sequence {

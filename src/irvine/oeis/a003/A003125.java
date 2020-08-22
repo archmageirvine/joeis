@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003125 Value of an urn with n balls of type -1 and <code>n+2</code> balls of type <code>+1</code>.
+ * A003125 Value of an urn with n balls of type -1 and n+2 balls of type +1.
  * @author Sean A. Irvine
  */
 public class A003125 extends MemoryFunction2<Integer, Z> implements Sequence {

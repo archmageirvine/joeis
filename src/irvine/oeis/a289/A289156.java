@@ -3,7 +3,7 @@ package irvine.oeis.a289;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A289156 Largest area of triangles with integer sides and area <code>= n</code> times perimeter.
+ * A289156 Largest area of triangles with integer sides and area = n times perimeter.
  * @author Sean A. Irvine
  */
 public class A289156 extends LinearRecurrence {

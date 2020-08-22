@@ -6,7 +6,7 @@ package irvine.oeis.a309;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A309976 Vacation Dyck paths. Discrete analog for vacation <code>M/M/1</code> queue embedded chain.
+ * A309976 Vacation Dyck paths. Discrete analog for vacation M/M/1 queue embedded chain.
  * @author Georg Fischer
  */
 public class A309976 extends HolonomicRecurrence {

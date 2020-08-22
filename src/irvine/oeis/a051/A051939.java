@@ -3,7 +3,7 @@ package irvine.oeis.a051;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A051939 Truncated triangular pyramid numbers: <code>a(n) = Sum_{k=6..n}(k*(k+1)/2 - 18)</code>.
+ * A051939 Truncated triangular pyramid numbers: a(n) = Sum_{k=6..n}(k*(k+1)/2 - 18).
  * @author Sean A. Irvine
  */
 public class A051939 extends LinearRecurrence {

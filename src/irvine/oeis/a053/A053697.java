@@ -4,7 +4,7 @@ package irvine.oeis.a053;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A053697 <code>a(n+1)=a(n)+a^(n)</code>, where the addition is in base 11 and where <code>a^(n)</code> is obtained from <code>a(n)</code> by replacing each digit with its multiplicative inverse modulo 11. Zero digits, if any, are deleted.
+ * A053697 a(n+1)=a(n)+a^(n), where the addition is in base 11 and where a^(n) is obtained from a(n) by replacing each digit with its multiplicative inverse modulo 11. Zero digits, if any, are deleted.
  * @author Georg Fischer
  */
 public class A053697 extends GeneratingFunctionSequence {

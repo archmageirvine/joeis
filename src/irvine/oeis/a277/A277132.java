@@ -5,7 +5,7 @@ package irvine.oeis.a277;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A277132 The first subdiagonal of triangle <code>A196842</code>.
+ * A277132 The first subdiagonal of triangle A196842.
  * @author Georg Fischer
  */
 public class A277132 extends HolonomicRecurrence {

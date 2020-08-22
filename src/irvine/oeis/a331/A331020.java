@@ -6,7 +6,7 @@ import irvine.oeis.FiniteSequence;
 
 
 /**
- * A331020 Values k for successive maximal records of the function A defined as <code>A(prime(k)) = log(prime(k)) - prime(k)/Pi(prime(k))</code> where <code>Pi(prime(k))</code> is number of primes <code>&lt;= prime(k)</code>.
+ * A331020 Values k for successive maximal records of the function A defined as A(prime(k)) = log(prime(k)) - prime(k)/Pi(prime(k)) where Pi(prime(k)) is number of primes &lt;= prime(k).
  * @author Georg Fischer
  */
 public class A331020 extends FiniteSequence {

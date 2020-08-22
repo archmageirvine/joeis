@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005127 Number of k for which n does not divide Stirling cycle numbers <code>[ {n \atop k} ]</code>.
+ * A005127 Number of k for which n does not divide Stirling cycle numbers [ {n \atop k} ].
  * @author Sean A. Irvine
  */
 public class A005127 implements Sequence {

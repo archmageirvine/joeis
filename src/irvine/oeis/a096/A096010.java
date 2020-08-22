@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000016;
 
 /**
- * A096010 Number of different cycles computed with the generalized <code>3x+1</code> problem using <code>C=2, B=Cn+m, A=C^m</code>.
+ * A096010 Number of different cycles computed with the generalized 3x+1 problem using C=2, B=Cn+m, A=C^m.
  * @author Georg Fischer
  */
 public class A096010 extends A000016 {

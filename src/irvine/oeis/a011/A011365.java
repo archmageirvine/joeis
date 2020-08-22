@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A011365 Reciprocal of g.f. for <code>A007863</code>.
+ * A011365 Reciprocal of g.f. for A007863.
  * @author Sean A. Irvine
  */
 public class A011365 implements Sequence {

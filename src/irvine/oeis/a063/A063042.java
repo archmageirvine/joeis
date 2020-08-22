@@ -6,7 +6,7 @@ import irvine.oeis.PaddingSequence;
 
 
 /**
- * A063042 <code>Collatz-2 (A063041)</code> trajectory starting at 3.
+ * A063042 Collatz-2 (A063041) trajectory starting at 3.
  * @author Georg Fischer
  */
 public class A063042 extends PaddingSequence {

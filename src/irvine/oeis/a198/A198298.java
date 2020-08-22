@@ -5,7 +5,7 @@ package irvine.oeis.a198;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A198298 Pandigital numbers <code>(A050278)</code> with each product of adjacent digits visible as a substring of the digits.
+ * A198298 Pandigital numbers (A050278) with each product of adjacent digits visible as a substring of the digits.
  * @author Georg Fischer
  */
 public class A198298 extends FiniteSequence {

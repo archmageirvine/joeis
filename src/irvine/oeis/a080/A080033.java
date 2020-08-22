@@ -4,7 +4,7 @@ package irvine.oeis.a080;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A080033 <code>a(n)</code> is taken to be the smallest positive integer not already present which is consistent with the condition "n is a member of the sequence if and only if <code>a(n)</code> is a multiple of <code>4"</code>.
+ * A080033 a(n) is taken to be the smallest positive integer not already present which is consistent with the condition "n is a member of the sequence if and only if a(n) is a multiple of 4".
  * @author Georg Fischer
  */
 public class A080033 extends GeneratingFunctionSequence {

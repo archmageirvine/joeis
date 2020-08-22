@@ -4,7 +4,7 @@ package irvine.oeis.a131;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A131709 Number of partitions into "bus routes" of an <code>n X 1</code> grid.
+ * A131709 Number of partitions into "bus routes" of an n X 1 grid.
  * @author Georg Fischer
  */
 public class A131709 extends GeneratingFunctionSequence {

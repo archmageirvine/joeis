@@ -3,7 +3,7 @@ package irvine.oeis.a064;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A064296 Heights of peaks of more than 8000 meters (as of Sep <code>25 2001)</code>, in decreasing order.
+ * A064296 Heights of peaks of more than 8000 meters (as of Sep 25 2001), in decreasing order.
  * @author Georg Fischer
  */
 public class A064296 extends FiniteSequence {

@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000040;
 
 /**
- * A033548 Honaker primes: primes <code>P(k)</code> such that sum of digits of <code>P(k)</code> equals sum of digits of k.
+ * A033548 Honaker primes: primes P(k) such that sum of digits of P(k) equals sum of digits of k.
  * @author Sean A. Irvine
  */
 public class A033548 extends A000040 {

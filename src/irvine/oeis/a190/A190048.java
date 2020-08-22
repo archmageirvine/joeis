@@ -4,7 +4,7 @@ package irvine.oeis.a190;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A190048 Expansion of <code>(8+6*x)/(1-x)^5</code>.
+ * A190048 Expansion of (8+6*x)/(1-x)^5.
  * @author Georg Fischer
  */
 public class A190048 extends LinearRecurrence {

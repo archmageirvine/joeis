@@ -5,7 +5,7 @@ package irvine.oeis.a147;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A147546 Vertex counting using a vector matrix Markov with characteristic polynomial: <code>36 - 36 x + 11 x^2 - x^3</code>.
+ * A147546 Vertex counting using a vector matrix Markov with characteristic polynomial: 36 - 36 x + 11 x^2 - x^3.
  * @author Georg Fischer
  */
 public class A147546 extends HolonomicRecurrence {

@@ -6,7 +6,7 @@ package irvine.oeis.a296;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A296727 Expansion of e.g.f. <code>arcsinh(x)/(1 - x)</code>.
+ * A296727 Expansion of e.g.f. arcsinh(x)/(1 - x).
  * @author Georg Fischer
  */
 public class A296727 extends HolonomicRecurrence {

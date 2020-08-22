@@ -4,7 +4,7 @@ import irvine.oeis.PartialSumSequence;
 import irvine.oeis.a002.A002870;
 
 /**
- * A024717 Sum of <code>max{S(i,j): 1&lt;=j&lt;=i}</code> for i <code>= 1,2,...,n</code>, where <code>S(i,j)</code> are Stirling numbers of the second kind.
+ * A024717 Sum of max{S(i,j): 1&lt;=j&lt;=i} for i = 1,2,...,n, where S(i,j) are Stirling numbers of the second kind.
  * @author Sean A. Irvine
  */
 public class A024717 extends PartialSumSequence {

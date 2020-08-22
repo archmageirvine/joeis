@@ -5,7 +5,7 @@ package irvine.oeis.a061;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A061191 Numbers of the form <code>(10*a + b)^2 + (10*b + a)^2</code> with a and b less than 10, in numerical order.
+ * A061191 Numbers of the form (10*a + b)^2 + (10*b + a)^2 with a and b less than 10, in numerical order.
  * @author Georg Fischer
  */
 public class A061191 extends FiniteSequence {

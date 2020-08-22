@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A214293 <code>a(n) = 1</code> if n is a square, -1 if n is five times a square.
+ * A214293 a(n) = 1 if n is a square, -1 if n is five times a square.
  * @author Georg Fischer
  */
 public class A214293 extends EulerTransform {

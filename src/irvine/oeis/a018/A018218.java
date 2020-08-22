@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A018218 <code>Sum(C(j)*(n-j)*4^(n-j-1),j=0..n-1), C =</code> Catalan numbers.
+ * A018218 Sum(C(j)*(n-j)*4^(n-j-1),j=0..n-1), C = Catalan numbers.
  * @author Sean A. Irvine
  */
 public class A018218 implements Sequence {

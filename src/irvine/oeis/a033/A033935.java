@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033935 Sum of squares of coefficients in full expansion of <code>(z1+z2+...+zn)^n</code>.
+ * A033935 Sum of squares of coefficients in full expansion of (z1+z2+...+zn)^n.
  * @author Sean A. Irvine
  */
 public class A033935 extends MemoryFunction2<Integer, Q> implements Sequence {

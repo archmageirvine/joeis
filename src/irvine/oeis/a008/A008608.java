@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008608 Number of <code>n X n</code> upper triangular matrices A of nonnegative integers such that <code>a_1i + a_2i + ... + a_{i-1,i} - a_ii - a_{i,i+1} - ... - a_in = -1</code>.
+ * A008608 Number of n X n upper triangular matrices A of nonnegative integers such that a_1i + a_2i + ... + a_{i-1,i} - a_ii - a_{i,i+1} - ... - a_in = -1.
  * @author Sean A. Irvine
  */
 public class A008608 implements Sequence {

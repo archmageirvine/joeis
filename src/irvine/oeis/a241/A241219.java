@@ -3,7 +3,7 @@ package irvine.oeis.a241;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A241219 Number of ways to choose two points on a centered hexagonal grid of size <code>n</code>.
+ * A241219 Number of ways to choose two points on a centered hexagonal grid of size n.
  * @author Sean A. Irvine
  */
 public class A241219 extends LinearRecurrence {

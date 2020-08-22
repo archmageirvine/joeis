@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027785 <code>a(n) = 6*(n+1)*binomial(n+2,12)</code>.
+ * A027785 a(n) = 6*(n+1)*binomial(n+2,12).
  * @author Sean A. Irvine
  */
 public class A027785 implements Sequence {

@@ -3,7 +3,7 @@ package irvine.oeis.a070;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A070473 <code>a(n) = n^3 mod 11</code>.
+ * A070473 a(n) = n^3 mod 11.
  * @author Sean A. Irvine
  */
 public class A070473 extends LinearRecurrence {

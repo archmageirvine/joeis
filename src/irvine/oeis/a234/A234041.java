@@ -3,7 +3,7 @@ package irvine.oeis.a234;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A234041 <code>a(n) = binomial(n+2,2)*gcd(n,3)/3, n &gt;= 0</code>.
+ * A234041 a(n) = binomial(n+2,2)*gcd(n,3)/3, n &gt;= 0.
  * @author Sean A. Irvine
  */
 public class A234041 extends LinearRecurrence {

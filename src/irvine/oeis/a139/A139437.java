@@ -3,7 +3,7 @@ package irvine.oeis.a139;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A139437 Numbers having exactly one partition into initial terms of a Collatz trajectory starting with a value less than <code>n</code>.
+ * A139437 Numbers having exactly one partition into initial terms of a Collatz trajectory starting with a value less than n.
  * @author Georg Fischer
  */
 public class A139437 extends FiniteSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a326;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A326402 Record high values in <code>A326344</code>.
+ * A326402 Record high values in A326344.
  * @author Georg Fischer
  */
 public class A326402 extends FiniteSequence {

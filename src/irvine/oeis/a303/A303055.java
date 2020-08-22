@@ -6,7 +6,7 @@ package irvine.oeis.a303;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A303055 Expansion of <code>(1-504*x)^(1/12)</code>.
+ * A303055 Expansion of (1-504*x)^(1/12).
  * @author Georg Fischer
  */
 public class A303055 extends HolonomicRecurrence {

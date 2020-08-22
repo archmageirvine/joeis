@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A015486 <code>a(0)=1, a(1)=2, a(n) = sum_{k=0}^{k=n-1} 2^k a(k)</code>.
+ * A015486 a(0)=1, a(1)=2, a(n) = sum_{k=0}^{k=n-1} 2^k a(k).
  * @author Sean A. Irvine
  */
 public class A015486 extends MemorySequence {

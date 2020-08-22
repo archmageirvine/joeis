@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A023088 Numbers k such that k and <code>4*k</code> are anagrams.
+ * A023088 Numbers k such that k and 4*k are anagrams.
  * @author Sean A. Irvine
  */
 public class A023088 implements Sequence {

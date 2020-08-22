@@ -3,7 +3,7 @@ package irvine.oeis.a171;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A171132 The smallest exponent k such that the digit n appears at two adjacent places in the decimal representation of <code>2^k</code>.
+ * A171132 The smallest exponent k such that the digit n appears at two adjacent places in the decimal representation of 2^k.
  * @author Georg Fischer
  */
 public class A171132 extends FiniteSequence {

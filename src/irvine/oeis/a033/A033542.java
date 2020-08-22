@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033542 <code>a(n) = 2*(n^2)!* Product_{k = 1..n-1} k!/(n+k)!</code>.
+ * A033542 a(n) = 2*(n^2)!* Product_{k = 1..n-1} k!/(n+k)!.
  * @author Sean A. Irvine
  */
 public class A033542 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a073.A073005;
 
 /**
- * A014511 <code>a(n) = floor( Gamma(n+1/3) )</code>.
+ * A014511 a(n) = floor( Gamma(n+1/3) ).
  * @author Sean A. Irvine
  */
 public class A014511 implements Sequence {

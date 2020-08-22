@@ -6,7 +6,7 @@ package irvine.oeis.a175;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A175962 Number of lattice paths from <code>(0,0)</code> to <code>(n,n)</code> using steps <code>S={(k,0),(0,k),(r,r)|k&gt;0,r&gt;0}</code> which never go above the line <code>y=x</code>.
+ * A175962 Number of lattice paths from (0,0) to (n,n) using steps S={(k,0),(0,k),(r,r)|k&gt;0,r&gt;0} which never go above the line y=x.
  * @author Georg Fischer
  */
 public class A175962 extends HolonomicRecurrence {

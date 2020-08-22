@@ -3,7 +3,7 @@ package irvine.oeis.a265;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A265888 <code>a(n) = n + floor(n/4)*(-1)^(n mod 4)</code>.
+ * A265888 a(n) = n + floor(n/4)*(-1)^(n mod 4).
  * @author Sean A. Irvine
  */
 public class A265888 extends LinearRecurrence {

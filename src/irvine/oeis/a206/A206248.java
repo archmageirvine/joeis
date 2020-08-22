@@ -4,7 +4,7 @@ package irvine.oeis.a206;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A206248 Number of <code>(n+1) X 2 0..3</code> arrays with every <code>2 X 2</code> subblock having zero permanent.
+ * A206248 Number of (n+1) X 2 0..3 arrays with every 2 X 2 subblock having zero permanent.
  * @author Georg Fischer
  */
 public class A206248 extends GeneratingFunctionSequence {

@@ -5,7 +5,7 @@ package irvine.oeis.a252;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A252284 Exponential generating function <code>exp(-x-x^2-x^3/3)</code>.
+ * A252284 Exponential generating function exp(-x-x^2-x^3/3).
  * @author Georg Fischer
  */
 public class A252284 extends HolonomicRecurrence {

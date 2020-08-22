@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A008833 Largest square dividing <code>n</code>.
+ * A008833 Largest square dividing n.
  * @author Sean A. Irvine
  */
 public class A008833 implements Sequence {

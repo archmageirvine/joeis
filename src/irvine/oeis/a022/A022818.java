@@ -3,7 +3,7 @@ package irvine.oeis.a022;
 import irvine.math.z.Z;
 
 /**
- * A022818 Square array read by antidiagonals: <code>A(n,k) =</code> number of terms in the n-th derivative of a function composed with itself k times <code>(n, k &gt;= 1)</code>.
+ * A022818 Square array read by antidiagonals: A(n,k) = number of terms in the n-th derivative of a function composed with itself k times (n, k &gt;= 1).
  * @author Sean A. Irvine
  */
 public class A022818 extends A022811 {

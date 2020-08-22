@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027661 Fractional part of decimal expansion of <code>sqrt(n)</code> to 3 places.
+ * A027661 Fractional part of decimal expansion of sqrt(n) to 3 places.
  * @author Sean A. Irvine
  */
 public class A027661 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039742.
+ * A039742 Lattice animals in the f.c.c. lattice (12 nearest neighbors), connected rhombic dodecahedra, edge-connected cubes.
  * @author Sean A. Irvine
  */
 public class A039742 implements Sequence {

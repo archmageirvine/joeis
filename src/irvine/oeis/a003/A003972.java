@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003972 Moebius transform of <code>A003961</code>.
+ * A003972 Moebius transform of <code>A003961; a(n) = phi(A003961(n))</code>, where <code>A003961</code> shifts the prime factorization of n one step towards the larger primes.
  * @author Sean A. Irvine
  */
 public class A003972 implements Sequence {

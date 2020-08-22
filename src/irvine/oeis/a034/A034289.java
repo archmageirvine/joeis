@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A034289.
+ * A034289 Squares which can be rearranged into squares with the same number of digits.
  * @author Sean A. Irvine
  */
 public class A034289 implements Sequence {

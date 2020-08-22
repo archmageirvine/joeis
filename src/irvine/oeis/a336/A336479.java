@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A336479.
+ * A336479 allocated for Mohamed Sami Gattoufi.
  * @author Sean A. Irvine
  */
 public class A336479 extends A000045 {

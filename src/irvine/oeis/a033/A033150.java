@@ -6,7 +6,7 @@ import irvine.math.cr.Zeta;
 import irvine.oeis.DecimalExpansionSequence;
 
 /**
- * A033150 Niven's constant.
+ * A033150 Decimal expansion of Niven's constant.
  * @author Sean A. Irvine
  */
 public class A033150 extends DecimalExpansionSequence {

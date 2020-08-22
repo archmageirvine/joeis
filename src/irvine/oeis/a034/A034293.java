@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034293.
+ * A034293 Numbers n such that <code>2^n</code> does not contain the digit <code>2</code> (probably finite).
  * @author Sean A. Irvine
  */
 public class A034293 implements Sequence {

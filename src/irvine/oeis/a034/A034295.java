@@ -14,7 +14,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034295.
+ * A034295 Number of different ways to divide an <code>n X n</code> square into <code>sub-squares</code>, considering only the list of parts.
  * @author Sean A. Irvine
  */
 public class A034295 implements Sequence {

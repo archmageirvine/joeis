@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003209.
+ * A003209 Cluster series for f.c.c. lattice.
  * @author Sean A. Irvine
  */
 public class A003209 implements Sequence {

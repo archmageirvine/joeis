@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034295.
+ * A034296 Number of flat partitions of n: partitions <code>{a_i}</code> with each <code>|a_i - a_{i-1}| &lt;= 1</code>.
  * @author Sean A. Irvine
  */
 public class A034296 extends MemoryFunction2<Long, Z> implements Sequence {

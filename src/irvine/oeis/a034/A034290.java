@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A034290.
+ * A034290 Cubes that have some nontrivial permutation of digits that is also a cube.
  * @author Sean A. Irvine
  */
 public class A034290 implements Sequence {

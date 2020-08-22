@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000045;
 
 /**
- * A034292.
+ * A034292 Fibonacci numbers with exactly 2 different digits (probably finite).
  * @author Sean A. Irvine
  */
 public class A034292 extends A000045 {

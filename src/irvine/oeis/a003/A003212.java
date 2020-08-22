@@ -11,7 +11,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A003212.
+ * A003212 Cluster series for diamond.
  * @author Sean A. Irvine
  */
 public class A003212 implements Sequence {

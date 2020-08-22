@@ -10,7 +10,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.a000.A000217;
 
 /**
- * A034291.
+ * A034291 Triangular numbers that have some nontrivial permutation of digits which is also triangular.
  * @author Sean A. Irvine
  */
 public class A034291 extends A000217 {

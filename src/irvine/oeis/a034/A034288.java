@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034288.
+ * A034288 Product of proper divisors is larger than for any smaller number.
  * @author Sean A. Irvine
  */
 public class A034288 implements Sequence {

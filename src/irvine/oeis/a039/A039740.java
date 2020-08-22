@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A039740.
+ * A039740 Lattice animals in the cubic diamond lattice (4 nearest neighbors), <code>even-vertex-connected</code> cubes.
  * @author Sean A. Irvine
  */
 public class A039740 implements Sequence {

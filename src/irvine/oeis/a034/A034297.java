@@ -22,7 +22,7 @@ public class A034297 extends MemoryFunction2<Long, Z> implements Sequence {
     if (n < 0 || m < 1) {
       return Z.ZERO;
     }
-    return get(n - m, m -1).add(get(n - m, m)).add(get(n - m, m + 1));
+    return get(n - m, m - 1).add(get(n - m, m)).add(get(n - m, m + 1));
   }
 
   @Override

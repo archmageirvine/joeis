@@ -1320,3 +1320,4 @@ A034257 Maximal discrete supergroups of Gamma_0(n)
 A034258 Write n! as a product of n numbers, n = k(1)*k(2)*...*k(n) with k(1) <= k(2) <= ..., in all possible ways; a(n) = max value of k(1)
 A034259 Smallest m such that A034258(m) >= n
 A034260 Largest m such that A034258(m) <= n
+A034298 a(n) = min_S max_i b_i where S={b_i} (1 <= i <= n), b_i > 0, b_i distinct and either b_i|b_{i-1} or b_{i-1}|b_i

@@ -16,10 +16,8 @@ public class A034096 implements Sequence {
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (!mN.isSquare()) {
-        if (CR.valueOf(mN).sqrt().frac().multiply(10).floor().longValue() == 0) {
-          return mN;
-        }
+      if (!mN.isSquare() && CR.valueOf(mN).sqrt().frac().multiply(10).floor().longValue() == 0) {
+        return mN;
       }
     }
   }

@@ -7,6 +7,11 @@ package irvine.math.lattice;
 public abstract class AbstractLattice implements Lattice {
 
   @Override
+  public int bitsPerCoordinate() {
+    return Long.SIZE / dimension();
+  }
+
+  @Override
   public long norm(final long point) {
     long norm = 0;
     for (int k = 0; k < dimension(); ++k) {

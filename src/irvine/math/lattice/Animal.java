@@ -20,7 +20,7 @@ public class Animal implements Comparable<Animal> {
    * Construct an animal with the specified points.
    * @param points points
    */
-  Animal(final long... points) {
+  public Animal(final long... points) {
     mAnimal = points;
     Arrays.sort(points);
     mHashCode = Arrays.hashCode(mAnimal);

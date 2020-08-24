@@ -1321,3 +1321,13 @@ A034258 Write n! as a product of n numbers, n = k(1)*k(2)*...*k(n) with k(1) <= 
 A034259 Smallest m such that A034258(m) >= n
 A034260 Largest m such that A034258(m) <= n
 A034298 a(n) = min_S max_i b_i where S={b_i} (1 <= i <= n), b_i > 0, b_i distinct and either b_i|b_{i-1} or b_{i-1}|b_i
+A034327 Triangle of numbers of connected regular (k X n)-matrix matroids of dimension k.
+A034328 Triangle read by rows: T(n,k) = number of loopless, regular k X n-matrix matroids of dimension k (or n-matroids of rank k)
+A034329 Number of matroids: column 3 of A034327
+A034330 Number of matroids: column 4 of A034327.
+A034331 Number of matroids: column 5 of A034327.
+A034332 Number of matroids: column 6 of A034327.
+A034333 Number of matroids: column 3 of A034328.
+A034334 Number of matroids: column 4 of A034328.
+A034335 Number of matroids: column 5 of A034328.
+A034336 Number of matroids: column 6 of A034328.

@@ -14,7 +14,7 @@ class Z5Lattice extends AbstractLattice {
   // direction (an amount that will not be exhausted in a brute force
   // counting of paths, etc.)
   // Neighbours change one coordinate by +/- 1.
-  protected static final int BITS_PER_COORDINATE = 12;
+  protected static final int BITS_PER_COORDINATE = Long.SIZE / 5;
   private static final int Z_SHIFT = 4 * BITS_PER_COORDINATE;
   private static final int Y_SHIFT = 3 * BITS_PER_COORDINATE;
   private static final int X_SHIFT = 2 * BITS_PER_COORDINATE;

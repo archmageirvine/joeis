@@ -38,6 +38,8 @@ public final class Lattices {
   public static final Lattice Z2PD = new Z2PDLattice();
   /** The L lattice. */
   public static final Lattice L = new LLattice();
+  /** Chess knight. */
+  public static final Lattice KNIGHT = new KnightLattice();
 
   // Other 3D lattices
 

@@ -23,6 +23,12 @@ public interface Lattice {
   int dimension();
 
   /**
+   * The number of bits used to store each coordinate in this lattice.
+   * @return bits per coordinate
+   */
+  int bitsPerCoordinate();
+
+  /**
    * Return the squared-distance of the specified point from the origin.  Normally
    * this will be the squared-Euclidean distance.
    * @param point the point

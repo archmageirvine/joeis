@@ -721,4 +721,18 @@ public final class LongUtils {
     }
     return 0;
   }
+
+  /**
+   * Test if an array of longs is zero
+   * @param a array to test
+   * @return true iff the array is all zero
+   */
+  public static boolean isZero(final long... a) {
+    for (final long v : a) {
+      if (v != 0) {
+        return false;
+      }
+    }
+    return true;
+  }
 }

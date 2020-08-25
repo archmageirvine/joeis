@@ -1,6 +1,7 @@
 package irvine.oeis.a030;
 
 import irvine.math.z.Z;
+import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
@@ -11,21 +12,11 @@ public class A030099 implements Sequence {
 
   private Z mN = Z.ZERO;
 
-  private boolean isAllOddDigits(Z n) {
-    while (!Z.ZERO.equals(n)) {
-      if (n.isEven()) {
-        return false;
-      }
-      n = n.divide(10);
-    }
-    return true;
-  }
-
   @Override
   public Z next() {
     while (true) {
       mN = mN.add(1);
-      if (isAllOddDigits(mN.pow(3))) {
+      if ((ZUtils.syn(mN.pow(3)) & 0b101010101) == 0) {
         return mN;
       }
     }

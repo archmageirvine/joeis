@@ -52,5 +52,7 @@ public final class Lattices {
 
   /** Diamond lattice (using 4-dimensional coordinates). */
   public static final Lattice DIAMOND = new DiamondLattice();
+  /** Pyrochlore lattice (using 4-dimensional coordinates). */
+  public static final Lattice PYROCHLORE = new PyrochloreLattice();
 
 }

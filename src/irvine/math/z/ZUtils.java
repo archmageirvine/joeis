@@ -416,6 +416,9 @@ public final class ZUtils {
    * @return syndrome
    */
   public static int syn(Z n) {
+    if (Z.ZERO.equals(n)) {
+      return 1;
+    }
     int syndrome = 0;
     while (!Z.ZERO.equals(n) && syndrome != 0b1111111111) {
       final Z[] qr = n.divideAndRemainder(Z.TEN);

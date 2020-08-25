@@ -28,10 +28,10 @@ public class A003212 implements Sequence {
   @Override
   public Z next() {
     if (++mN > 0) {
-      mPerimeterCounts = new long[2 * mN + 3];
-      final Hunter h = new Hunter(Lattices.DIAMOND, true) {
+      mPerimeterCounts = new long[2 * mN + 30];
+      final Hunter h = new Hunter(Lattices.PYROCHLORE, true) {
         {
-          setKeeper((animal, forbidden) -> ++mPerimeterCounts[animal.perimeterSize(Lattices.DIAMOND)]);
+          setKeeper((animal, forbidden) -> ++mPerimeterCounts[animal.perimeterSize(Lattices.PYROCHLORE)]);
         }
       };
       h.count(mN);

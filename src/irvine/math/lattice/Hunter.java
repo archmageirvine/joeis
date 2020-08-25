@@ -120,17 +120,9 @@ public class Hunter {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    final Lattice l = new SquareLattice();
-    //final Lattice l = Lattices.DIAMOND;
-    final Hunter h = new Hunter(l, true) {
-      {
-        setKeeper((animal, forbidden) -> {
-          if (Canons.Z2_FREE.isCanonical(animal)) {
-            increment(1);
-          }
-        });
-      }
-    };
+    //final Lattice l = new SquareLattice();
+    final Lattice l = Lattices.PYROCHLORE;
+    final Hunter h = new Hunter(l, true);
     for (int k = 0; k < 14; ++k) {
       System.out.println(k + " " + h.count(k));
     }

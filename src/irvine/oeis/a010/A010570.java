@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010570 2n-step 6-dimensional closed paths on 6-d cubic lattice.
+ * A010570 Number of 2n-step 6-dimensional closed paths on 6-d cubic lattice.
  * @author Sean A. Irvine
  */
 public class A010570 implements Sequence {

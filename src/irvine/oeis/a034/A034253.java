@@ -12,13 +12,17 @@ public class A034253 extends A076832 {
   private int mN = 0;
   private int mM = 0;
 
+  protected Z u(final int n, final int m) {
+    return t(n, m).subtract(t(n, m - 1));
+  }
+
   @Override
   public Z next() {
     if (++mM > mN) {
       ++mN;
       mM = 1;
     }
-    return t(mN, mM).subtract(t(mN, mM - 1));
+    return u(mN, mM);
   }
 }
 

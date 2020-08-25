@@ -3,16 +3,16 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034357 Number of binary [ n,3 ] codes.
+ * A034349 Number of binary [ n,8 ] codes without 0 columns.
  * @author Sean A. Irvine
  */
-public class A034357 extends A034356 {
+public class A034349 extends A034253 {
 
   private int mN = 0;
 
   @Override
   public Z next() {
-    return v(++mN, 3);
+    return u(++mN, 8);
   }
 }
 

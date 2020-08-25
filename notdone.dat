@@ -1331,3 +1331,21 @@ A034333 Number of matroids: column 3 of A034328.
 A034334 Number of matroids: column 4 of A034328.
 A034335 Number of matroids: column 5 of A034328.
 A034336 Number of matroids: column 6 of A034328.
+A034350 Number of indecomposable binary [ n,3 ] codes without 0 columns.
+A034351 Number of indecomposable binary [ n,4 ] codes without 0 columns.
+A034352 Number of indecomposable binary [ n,5 ] codes without 0 columns.
+A034353 Number of indecomposable binary [ n,6 ] codes without 0 columns.
+A034354 Number of indecomposable binary [ n,7 ] codes without 0 columns.
+A034355 Number of indecomposable binary [ n,8 ] codes without 0 columns.
+A034363 Triangle of number of linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034364 Triangle of number of indecomposable linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034365 Triangle of number of projective linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034366 Triangle of number of indecomposable projective linear [ n,k ] ternary codes (n >= 1, k >= 1) without 0 columns.
+A034367 Triangle of number of linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034368 Triangle of number of indecomposable linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034369 Triangle of number of projective linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034370 Triangle of number of indecomposable projective linear [ n,k ] GF(4) codes (n >= 1, k >= 1) without 0 columns.
+A034371 Triangle of number of linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034372 Triangle of number of indecomposable linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034373 Triangle of number of projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034374 Triangle of number of indecomposable projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.

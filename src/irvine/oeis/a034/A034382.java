@@ -1,6 +1,7 @@
 package irvine.oeis.a034;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
@@ -14,13 +15,17 @@ import irvine.oeis.Sequence;
  */
 public class A034382 implements Sequence {
 
-  // todo this is working for prime powers, but not p * q etc.
-  // todo roughly we have Aut(pq)=Aut(p)*Aut(q)
-
   private int mN = 0;
   private Z mF = Z.ONE;
 
-  private Z aut(final Z p, final int m, final int[] k) {
+  private final HashMap<String, Z> mCache = new HashMap<>();
+
+  private Z aut(final Z p, final int[] k) {
+    final String key = p + Arrays.toString(k);
+    final Z res = mCache.get(key);
+    if (res != null) {
+      return res;
+    }
     Z prod = Z.ONE;
     for (int i = 1; i < k.length; ++i) {
       if (k[i] != 0) {
@@ -38,20 +43,25 @@ public class A034382 implements Sequence {
         prod = prod.multiply(t);
       }
     }
-    System.out.println(p + " " + m + " " + Arrays.toString(k) + " -> " + prod);
+    mCache.put(key, prod);
     return prod;
   }
 
-  private Z aut(final Z p, final Z f, final int e) {
-    Z sum = Z.ZERO;
+  Z mSum = Z.ZERO;
+
+  private void sum(final Z a, final FactorSequence fs, final Z[] p, final int k) {
+    if (k >= p.length) {
+      mSum = mSum.add(a);
+      return;
+    }
+    final int e = fs.getExponent(p[k]);
     final IntegerPartition part = new IntegerPartition(e);
     final int[] c = new int[e + 1];
     int[] j;
     while ((j = part.next()) != null) {
       IntegerPartition.toCountForm(j, c);
-      sum = sum.add(f.divide(aut(p, e, c)));
+      sum(a.divide(aut(p[k], c)), fs, p, k + 1);
     }
-    return sum;
   }
 
   @Override
@@ -60,20 +70,9 @@ public class A034382 implements Sequence {
       return Z.ONE;
     }
     mF = mF.multiply(mN);
-    System.out.println("n=" + mN);
     final FactorSequence fs = Cheetah.factor(mN);
-    Z sum = Z.ZERO;
-    for (final Z p : fs.toZArray()) {
-      sum = sum.add(aut(p, mF, fs.getExponent(p)));
-//      final int e = fs.getExponent(p);
-//      final IntegerPartition part = new IntegerPartition(e);
-//      final int[] c = new int[e + 1];
-//      int[] j;
-//      while ((j = part.next()) != null) {
-//        IntegerPartition.toCountForm(j, c);
-//        sum = sum.add(mF.divide(aut(p, e, c)));
-//      }
-    }
-    return sum;
+    mSum = Z.ZERO;
+    sum(mF, fs, fs.toZArray(), 0);
+    return mSum;
   }
 }

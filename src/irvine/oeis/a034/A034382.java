@@ -66,10 +66,7 @@ public class A034382 implements Sequence {
 
   @Override
   public Z next() {
-    if (++mN == 1) {
-      return Z.ONE;
-    }
-    mF = mF.multiply(mN);
+    mF = mF.multiply(++mN);
     final FactorSequence fs = Cheetah.factor(mN);
     mSum = Z.ZERO;
     sum(mF, fs, fs.toZArray(), 0);

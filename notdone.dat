@@ -1349,3 +1349,4 @@ A034371 Triangle of number of linear [ n,k ] GF(5) codes (n >= 1, k >= 1) withou
 A034372 Triangle of number of indecomposable linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034373 Triangle of number of projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034374 Triangle of number of indecomposable projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
+A034384 Number of two-state cellular automaton rules on a (2n+1)-site neighborhood that conserve the number of 1's.

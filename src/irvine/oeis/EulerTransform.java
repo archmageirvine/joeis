@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
+
 /**
  * Apply the Euler transform to some other sequence.
  * The program follows closely the code of the OEIS implementations
@@ -13,13 +14,13 @@ import irvine.math.z.ZUtils;
  */
 public class EulerTransform implements Sequence {
 
-  private Sequence mSeq;
+  protected Sequence mSeq;
   private final ArrayList<Z> mAs = new ArrayList<>(); // underlying sequence
   private final ArrayList<Z> mBs = new ArrayList<>(); // resulting sequence
   private final ArrayList<Z> mCs = new ArrayList<>(); // auxiliary sequence 
   protected Z[] mPreTerms; // initial terms to be prepended
   protected int mIn; // index for initial terms
-  protected int mN;
+  protected int mN; // current index >= 1, may be used in advance() of a subclass
 
   /**
    * Empty constructor;
@@ -70,27 +71,35 @@ public class EulerTransform implements Sequence {
   /**
    * Create a new sequence. 
    * This constructor is used in most of the generated sequences.
-   * @param seqType: 1 = finite, 2 = periodic, 3 = linear recurrence (0 = arbitrary)
+   * @param seqType: 0 = generic, 1 = finite, 2 = periodic, 3 = linear recurrence (0 = arbitrary)
    * @param terms finite list of terms
    * @param preTerms additional terms to be prepended;
    * usually there is a leading one.
    */
   public EulerTransform(final int seqType, final String terms, final String preTerms) {
     this();
+    mPreTerms = preTerms.isEmpty() ? new Z[0] : ZUtils.toZ(preTerms);
     switch (seqType) {
-      case 0:
-        mSeq = null;
+      case 0: // generic
+        final String aseqno = terms;
+      /*
+        try {
+          mSeq = (Sequence) Class.forName("irvine.oeis." 
+              + aseqno.substring(0, 4).toLowerCase() + "." + aseqno).newInstance();
+        } catch (Exception exc) {
+          throw exc;
+        }
+      */
         break;  
-      case 1:
+      case 1: // finite
         mSeq = new FiniteSequence(ZUtils.toZ(terms));
         break;  
-      case 2:
+      case 2: // periodic
         mSeq = new PeriodicSequence(ZUtils.toZ(terms));
         break;
       default:
         throw new RuntimeException("Unexpected sequence type");
     }
-    mPreTerms = preTerms.isEmpty() ? new Z[0] : ZUtils.toZ(preTerms);
   }
   
   /**
@@ -103,8 +112,8 @@ public class EulerTransform implements Sequence {
       return mPreTerms[mIn++];
     }
     // normal, transform terms
-    mN++; // starts with 1
-    final Z aNext = mSeq.next();
+    ++mN; // starts with 1
+    final Z aNext = advance(); // underlying sequence will see mN = 1, 2, 3, ... 
     mAs.add(aNext == null ? Z.ZERO : aNext); // get next a(n)
     mCs.add(Z.ZERO); // allocate c[n]
     for (int i = mN; i <= mN; ++i) {
@@ -126,4 +135,14 @@ public class EulerTransform implements Sequence {
     return bSum;
   } 
 
+  /**
+   * Wrapper around <code>mSeq.next()</code>, may be overwritten 
+   * when <code>seqType == 1</code>.
+   * When this method is overwritten, super.mN runs through 1, 2, 3, and so on.
+   * @return next term of the underlying sequence to be Euler transformed
+   */
+  protected Z advance() {
+    return mSeq.next();
+  }
+  
 }

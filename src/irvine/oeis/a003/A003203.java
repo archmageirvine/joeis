@@ -12,7 +12,7 @@ import irvine.oeis.Sequence;
  * A003203 Cluster series for square lattice.
  * @author Sean A. Irvine
  */
-public class A003203 implements Sequence {
+public class A003203 implements Sequence {    
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);

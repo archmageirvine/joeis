@@ -111,6 +111,27 @@ public class Animal implements Comparable<Animal> {
   }
 
   /**
+   * Return this animal enlarged by its perimeter.
+   * @param lattice the underlying lattice
+   * @return perimeter size
+   */
+  public Animal perimeter(final Lattice lattice) {
+    final HashSet<Long> perim = new HashSet<>();
+    for (final long p : mAnimal) {
+      perim.add(p);
+      for (int k = 0; k < lattice.neighbourCount(p); ++k) {
+        perim.add(lattice.neighbour(p, k));
+      }
+    }
+    final long[] a = new long[perim.size()];
+    int k = 0;
+    for (final long point : perim) {
+      a[k++] = point;
+    }
+    return new Animal(a);
+  }
+
+  /**
    * Return the size of edge edge perimeter of this animal with respect to the specified lattice
    * @param lattice the underlying lattice
    * @return perimeter size

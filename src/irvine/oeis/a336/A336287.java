@@ -1,13 +1,13 @@
-package irvine.oeis.a291;
+package irvine.oeis.a336;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A291793 Period of orbit of Post's tag system applied to the word (100)^n (version 2), or -1 if the orbit increases without limit.
+ * A336287.
  * @author Sean A. Irvine
  */
-public class A291793 implements Sequence {
+public class A336287 implements Sequence {
 
   private static class Post {
 
@@ -39,7 +39,15 @@ public class A291793 implements Sequence {
         return this;
       }
       if (mSeq[mStart]) {
-        final Post post = length() == mSeq.length ? new Post(mSeq, mStart, mEnd) : this;
+        final Post post = length() >= mSeq.length - 1 ? new Post(mSeq, mStart, mEnd) : this;
+        post.mSeq[post.mEnd++] = false;
+        if (post.mEnd == post.mSeq.length) {
+          post.mEnd = 0;
+        }
+        post.mSeq[post.mEnd++] = false;
+        if (post.mEnd == post.mSeq.length) {
+          post.mEnd = 0;
+        }
         post.mSeq[post.mEnd++] = true;
         if (post.mEnd == post.mSeq.length) {
           post.mEnd = 0;
@@ -52,19 +60,11 @@ public class A291793 implements Sequence {
         if (post.mEnd == post.mSeq.length) {
           post.mEnd = 0;
         }
-        post.mSeq[post.mEnd++] = true;
-        if (post.mEnd == post.mSeq.length) {
-          post.mEnd = 0;
-        }
         post.mStart += 3;
         post.mStart %= post.mSeq.length;
         return post;
       } else {
-        mSeq[mEnd++] = false;
-        if (mEnd == mSeq.length) {
-          mEnd = 0;
-        }
-        mSeq[mEnd++] = false;
+        mSeq[mEnd++] = true;
         if (mEnd == mSeq.length) {
           mEnd = 0;
         }

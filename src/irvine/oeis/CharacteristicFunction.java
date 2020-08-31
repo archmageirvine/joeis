@@ -138,14 +138,14 @@ public class CharacteristicFunction implements Sequence {
 
   /**
    * Generate the indicator sequence of the Lucas numbers
-   * @param args commandline arguments
+   * @param args command line arguments
    */
   public static void main(final String[] args) {
     sDebug = 1;
     final Sequence indSeq = new CharacteristicFunction(1, new irvine.oeis.a000.A000032(), true, 4);
     final int termNo = 64;
     for (int iterm = 0; iterm < termNo; ++iterm) {
-      System.out.println(iterm + " " + indSeq.next().toString());
+      System.out.println(iterm + " " + indSeq.next());
     } 
   }
 }

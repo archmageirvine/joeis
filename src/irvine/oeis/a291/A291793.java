@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A291793 implements Sequence {
 
-  private static class Post {
+  private static final class Post {
 
     // Use a circular buffer and grow it if necessary
 
@@ -99,7 +99,7 @@ public class A291793 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    boolean[] s = new boolean[3 * mN];
+    final boolean[] s = new boolean[3 * mN];
     for (int k = 0; k < s.length; k += 3) {
       s[k] = true;
     }

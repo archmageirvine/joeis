@@ -69,11 +69,14 @@ public class Animal implements Comparable<Animal> {
    * @return maximum value in specified dimension
    */
   public long extent(final Lattice lattice, final int dimension) {
+    long min = Integer.MAX_VALUE;
     long max = Integer.MIN_VALUE;
     for (final long p : mAnimal) {
-      max = Math.max(max, lattice.ordinate(p, dimension));
+      final long c = lattice.ordinate(p, dimension);
+      min = Math.min(min, c);
+      max = Math.max(max, c);
     }
-    return max;
+    return max - min;
   }
 
   /**

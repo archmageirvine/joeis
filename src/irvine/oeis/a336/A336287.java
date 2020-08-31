@@ -4,12 +4,12 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336287.
+ * A336287 allocated for A.H.M. Smeets.
  * @author Sean A. Irvine
  */
 public class A336287 implements Sequence {
 
-  private static class Post {
+  private static final class Post {
 
     // Use a circular buffer and grow it if necessary
 
@@ -99,7 +99,7 @@ public class A336287 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    boolean[] s = new boolean[3 * mN];
+    final boolean[] s = new boolean[3 * mN];
     for (int k = 0; k < s.length; k += 3) {
       s[k] = true;
     }

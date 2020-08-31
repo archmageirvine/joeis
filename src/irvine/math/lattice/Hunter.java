@@ -48,8 +48,7 @@ public class Hunter {
     mCount += count;
   }
 
-  // It might make sense to define this on the lattice!
-  private boolean isPointAllowed(final long point) {
+  protected boolean isPointAllowed(final long point) {
     // Check that the point is above right of the origin (and equivalent
     // generalization for higher dimension lattices).
     for (int k = 0; k < mLattice.dimension(); ++k) {
@@ -64,7 +63,7 @@ public class Hunter {
     return false; // point was the origin
   }
 
-  private void search(final Animal animal, final int remainingSteps, final Set<Long> forbidden) {
+  protected void search(final Animal animal, final int remainingSteps, final Set<Long> forbidden) {
     if (remainingSteps == 0) {
       mKeeper.process(animal, forbidden);
     } else {

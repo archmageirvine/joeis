@@ -10,6 +10,7 @@ import java.util.Random;
 
 import irvine.factor.factor.Cheetah;
 import irvine.factor.prime.Fast;
+import irvine.factor.util.FactorSequence;
 import irvine.util.array.DynamicArray;
 import irvine.util.array.DynamicIntArray;
 
@@ -795,4 +796,54 @@ public final class ZUtils {
     return sm.mod(product);
   }
 
+  /**
+   * Test if <code>a</code> is a quadratic residue (i.e., a square) for a given modulus.
+   * @param a number to test
+   * @param mod modulus
+   * @return true iff <code>a</code> is a quadratic residue
+   */
+  public static boolean isQuadraticResidue(final Z a, final Z mod) {
+    if (mod.isProbablePrime()) {
+      // Avoid factorization for prime cases
+      return a.jacobi(mod) == 1;
+    }
+    if (a.jacobi(mod) == -1) {
+      return false;
+    }
+
+    final FactorSequence fs = Cheetah.factor(mod);
+    for (final Z p : fs.toZArray()) {
+      final int e = fs.getExponent(p);
+      Z b = a.mod(p.pow(e));
+      if (Z.ZERO.equals(b)) {
+        continue;
+      }
+      Z[] qr;
+      int k = 0;
+      while (Z.ZERO.equals((qr = b.divideAndRemainder(p))[1])) {
+        ++k;
+        b = qr[0];
+      }
+      if ((k & 1) == 1) {
+        return false;
+      }
+      if (Z.TWO.equals(p)) {
+        if (e == 1) {
+          continue;
+        }
+        final long r = b.mod(8);
+        if ((r & 3) != 1) {
+          return false;
+        }
+        if (e >= 3 && r != 1) {
+          return false;
+        }
+      } else {
+        if (!Z.ONE.equals(b.modPow(p.subtract(1).divide2(), p))) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
 }

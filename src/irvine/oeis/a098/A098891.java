@@ -2,8 +2,10 @@ package irvine.oeis.a098;
 
 import java.util.ArrayList;
 import java.util.BitSet;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 import irvine.math.lattice.Animal;
 import irvine.math.lattice.Canons;
@@ -20,7 +22,7 @@ import irvine.util.Point;
  */
 public class A098891 implements Sequence {
 
-  private final ArrayList<Animal> mAnimals = new ArrayList<>();
+  private final List<Animal> mAnimals = Collections.synchronizedList(new ArrayList<>());
   private final ParallelHunter mHunter = new ParallelHunter(6,
     () -> new Hunter(Lattices.Z2, true),
     () -> new Hunter(Lattices.Z2, true) {

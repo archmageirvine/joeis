@@ -29,6 +29,16 @@ public class A034707 implements Sequence {
       }
       return Long.compare(mLast, o.mLast);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      return obj instanceof State && mValue.equals(((State) obj).mValue) && mLast == ((State) obj).mLast;
+    }
+
+    @Override
+    public int hashCode() {
+      return mValue.hashCode();
+    }
   }
 
   private final TreeSet<State> mA = new TreeSet<>();

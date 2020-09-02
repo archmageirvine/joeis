@@ -50,20 +50,22 @@ public class A098891 implements Sequence {
     final HashMap<Animal, BitSet> b = new HashMap<>();
 
     // Consider each polyomino in turn
-    for (final Animal p : mAnimals) {
-      ++polyNumber;
-      // Delete each cell in turn
-      for (int k = 0; k < p.size(); ++k) {
-        final Animal canonical = Canons.freeCanon(p.remove(k));
-        // At this point "canonical" need not be a proper polyomino (e.g. it might be disconnected)
-        // but it will always be the same one up to the usual symmetry requirements
-        final BitSet set = b.get(canonical);
-        if (set != null) {
-          set.set(polyNumber);
-        } else {
-          final BitSet s = new BitSet();
-          s.set(polyNumber);
-          b.put(canonical, s);
+    synchronized (mAnimals) { // Not strictly needed since hunting is done by this time
+      for (final Animal p : mAnimals) {
+        ++polyNumber;
+        // Delete each cell in turn
+        for (int k = 0; k < p.size(); ++k) {
+          final Animal canonical = Canons.freeCanon(p.remove(k));
+          // At this point "canonical" need not be a proper polyomino (e.g. it might be disconnected)
+          // but it will always be the same one up to the usual symmetry requirements
+          final BitSet set = b.get(canonical);
+          if (set != null) {
+            set.set(polyNumber);
+          } else {
+            final BitSet s = new BitSet();
+            s.set(polyNumber);
+            b.put(canonical, s);
+          }
         }
       }
     }

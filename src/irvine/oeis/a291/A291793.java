@@ -13,7 +13,7 @@ public class A291793 implements Sequence {
 
     // Use a circular buffer and grow it if necessary
 
-    private boolean[] mSeq;
+    private final boolean[] mSeq;
     private int mStart;
     private int mEnd;
 

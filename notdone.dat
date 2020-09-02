@@ -742,7 +742,6 @@ A007515 Continued fraction for Wirsing's constant, hard?
 A007545 Number of chess games with n plies (non-standard -- includes king capture?)
 A007565 Number of Go games with n moves, hard for small number of terms
 A007577 Number of chess games with n plies (another version) -- this one likely useless
-A007656 Mass number of the most abundant isotope of the element with atomic number Z = n
 A007673 Number of coins needed for ApSimon's mints problem, hard
 A007720 Arises in attempts to apply Engel's `probabilistic abacus' to random walks on infinite square grid, insufficient detail
 A007760 Number of solid partitions of height n in a cube of side n, insufficient detail
@@ -801,7 +800,6 @@ A008551 Number of times n-th energy state appears in statistical sum of Ising mo
 A008562 Denominators of strong coupling expansion, SU(3) lattice gauge theory
 A008664 Theta series of direct sum of f.c.c. and b.c.c. lattices, cf. A008663, a008664, couldn't get this to work
 A008741 Putative number of uniform tight n-dimensional sphere packings, hard
-A008745 Year of birth of n-th President of U.S.A.
 A008840 Number of monotone self-dual boolean functions of n variables that are inequivalent under the symmetric group
 A008841 Number of self-dual boolean functions of n variables with transitive symmetry group
 A008842 Number of inequivalent self-dual boolean functions of n variables with transitive symmetry group
@@ -881,7 +879,7 @@ A010562 Second correlation moment for D_4 lattice
 A010563 Spin-spin correlation function for 4-d cubic lattice
 A010564 Spin-spin correlation function for 4-d b.c.c. lattice
 A010565 Spin-spin correlation function for D_4 lattice
-A010571 High-temperature coefficients for cubic lattice, have papery
+A010571 High-temperature coefficients for cubic lattice, have paper
 A010572 High-temperature coefficients for 4-d cubic lattice
 A010573 High-temperature coefficients for 5-d cubic lattice
 A010574 High-temperature coefficients for 6-d cubic lattice
@@ -1164,7 +1162,6 @@ A028946 Maximal cardinality of 2-distance set in R^n with distance ratio tau, pa
 A028950 Minimal norm of n-dimensional, strictly odd, unimodular lattice
 A029550 Highest minimal norm for an (even or odd) 2-modular lattice in dimension n
 A029551 Highest minimal norm for an (even or odd) 3-modular lattice in dimension n
-A029705 Q(sqrt(n)) has class number 5, simple dep. on A003649
 A029723 Trace of Frobenius of the reduction mod 2 of the elliptic curve C / L, L a lattice with Gram matrix [ 4 1; 1 2n ]
 A029725 Number of distinct subgroups of alternating group A_n, counting conjugates as distinct
 A029726 Number of conjugacy classes of subgroups of the alternating group A_n

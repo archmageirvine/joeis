@@ -803,6 +803,9 @@ public final class ZUtils {
    * @return true iff <code>a</code> is a quadratic residue
    */
   public static boolean isQuadraticResidue(final Z a, final Z mod) {
+    if (Z.ZERO.equals(a.mod(mod))) {
+      return true; // 0^2=0
+    }
     if (mod.isProbablePrime()) {
       // Avoid factorization for prime cases
       return a.jacobi(mod) == 1;

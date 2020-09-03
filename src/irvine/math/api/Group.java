@@ -245,4 +245,10 @@ public interface Group<E> extends Set<E> {
    * @return <code>a+a+....+a</code> (<code>n</code> times).
    */
   E groupMultiply(final E a, final long n);
+
+  /**
+   * Return the order of the automorphism group of this group.
+   * @return automorphism order
+   */
+  Z autOrder();
 }

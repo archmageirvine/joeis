@@ -26,6 +26,7 @@ import irvine.util.array.DynamicLongArray;
 public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E> {
 
   private static final Z SIXTY = Z.valueOf(60);
+  private Z mAutSize = null;
 
   @Override
   public E subtract(final E a, final E b) {
@@ -403,6 +404,18 @@ public abstract class AbstractGroup<E> extends AbstractSet<E> implements Group<E
       }
     }
     return b;
+  }
+
+  void setAutSize(final Z autSize) {
+    mAutSize = autSize;
+  }
+
+  @Override
+  public Z autOrder() {
+    if (mAutSize == null) {
+      throw new UnsupportedOperationException();
+    }
+    return mAutSize;
   }
 }
 

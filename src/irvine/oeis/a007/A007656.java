@@ -3,7 +3,7 @@ package irvine.oeis.a007;
 import irvine.oeis.NoncomputableSequence;
 
 /**
- * A007656.
+ * A007656 Mass number of the most abundant isotope of the element with atomic number Z = n.
  * @author Sean A. Irvine
  */
 public class A007656 extends NoncomputableSequence {

@@ -3,14 +3,14 @@ package irvine.oeis.a035;
 // DO NOT EDIT here!
 
 /**
- * A035172 a(n) = Sum_{d|n} Kronecker(-18, d).
+ * A035176 a(n) = Sum_{d|n} Kronecker(-14, d).
  * @author Georg Fischer
  */
-public class A035172 extends A035143 {
+public class A035176 extends A035143 {
 
   /** Construct the sequence. */
-  public A035172() {
-    super(-18);
+  public A035176() {
+    super(-14);
     mN = 1 - 1;
   }
 }

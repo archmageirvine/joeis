@@ -1,4 +1,3 @@
-A000001 Number of groups, gnu(n) [existing impl goes to 100 but is kind of messy]
 A000019 Primitive permutation groups
 A000066 Smallest number of vertices in trivalent graph with girth (shortest cycle) = n
 A000112 Posets, hard

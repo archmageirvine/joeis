@@ -135,6 +135,10 @@ public final class GroupFactory {
    * @return the group
    */
   public static Group<?> createGroup(final String name) {
+    final Integer order = NAME_TO_ORDER.get(name);
+    if (order != null) {
+      return createGroup(name, order);
+    }
     if (name.startsWith("(") && name.endsWith(")")) {
       return createGroup(name.substring(1, name.length() - 1));
     }
@@ -155,21 +159,16 @@ public final class GroupFactory {
       return new DihedralGroup(Integer.parseInt(name.substring(1)));
     } else if (name.startsWith("SL")) {
       final int gf = name.indexOf("(GF");
-      final int order = Integer.parseInt(name.substring(2, gf));
+      final int o = Integer.parseInt(name.substring(2, gf));
       final GaloisField f = new GaloisField(Integer.parseInt(name.substring(gf + 3, name.indexOf(')', gf + 3))));
-      return new SpecialLinearGroup<>(order, f);
+      return new SpecialLinearGroup<>(o, f);
     } else if (name.startsWith("GL")) {
       final int gf = name.indexOf("(GF");
-      final int order = Integer.parseInt(name.substring(2, gf));
+      final int o = Integer.parseInt(name.substring(2, gf));
       final GaloisField f = new GaloisField(Integer.parseInt(name.substring(gf + 3, name.indexOf(')', gf + 3))));
-      return new GeneralLinearGroup<>(order, f);
+      return new GeneralLinearGroup<>(o, f);
     } else if (name.startsWith("S")) {
       return SymmetricGroup.create(Integer.parseInt(name.substring(1)));
-    } else {
-      final Integer order = NAME_TO_ORDER.get(name);
-      if (order != null) {
-        return createGroup(name, order);
-      }
     }
     throw new UnsupportedOperationException("Unknown: " + name);
   }

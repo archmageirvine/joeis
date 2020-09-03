@@ -13,7 +13,7 @@ public class A034068 implements Sequence {
 
   private long mN = -1;
   private long mT = 10;
-  private Z mM = Z.valueOf(8);
+  private Z mM = Z.EIGHT;
 
   @Override
   public Z next() {

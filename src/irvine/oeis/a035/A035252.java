@@ -13,7 +13,7 @@ public class A035252 extends A035186 {
 
   /** Construct the sequence. */
   public A035252() {
-    mN = 1 - 1;
+    mN = 0;
   }
 
   @Override

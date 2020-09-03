@@ -13,6 +13,6 @@ public class A002324 extends A035143 {
   /** Construct the sequence. */
   public A002324() {
     super(-3);
-    mN = 1 - 1;
+    mN = 0;
   }
 }

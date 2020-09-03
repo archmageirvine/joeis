@@ -18,7 +18,7 @@ public class A035143 implements Sequence {
 
   /** Construct the sequence. */
   public A035143() {
-    mN = 1 - 1;
+    mN = 0;
     mM = -47;
   }
 
@@ -33,7 +33,7 @@ public class A035143 implements Sequence {
     ++mN;
     Z sum = Z.ZERO;
     for (final Z d : Cheetah.factor(mN).divisors()) {
-      sum = sum.add(LongUtils.kronecker(mM, d.intValue()));
+      sum = sum.add(LongUtils.kronecker(mM, d.longValueExact()));
     }
     return sum;
   }

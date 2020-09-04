@@ -70,7 +70,7 @@ public class PseudoSequence implements Sequence, Closeable {
             final int spacePos = line.indexOf(' ');
             try {
               mIndex = Integer.parseInt(line.substring(0, spacePos));
-            } catch (final Exception exc) {
+            } catch (final NumberFormatException exc) {
               ++mIndex;
             }
             return new Z(line.substring(spacePos + 1));
@@ -78,7 +78,7 @@ public class PseudoSequence implements Sequence, Closeable {
         } // line != null
       } // while busy
     } catch (final Throwable exc) {
-      throw new RuntimeException("cannot read b-file: " + exc.getMessage());
+      throw new RuntimeException("cannot read b-file: " + exc.getMessage(), exc);
     } // try
   } // next
   
@@ -101,7 +101,7 @@ public class PseudoSequence implements Sequence, Closeable {
       Z term;
       while ((term = ps.next()) != null) {
         final int index = ps.getIndex();
-        System.out.println(index + " " + term.toString());
+        System.out.println(index + " " + term);
       }
     }
   } // main

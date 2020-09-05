@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034103 Decimal part of square root of a(n) starts with digit 7.
+ * A034103 Fractional part of square root of a(n) starts with digit 7.
  * @author Sean A. Irvine
  */
 public class A034103 implements Sequence {

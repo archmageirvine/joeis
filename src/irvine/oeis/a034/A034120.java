@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034120 Decimal part of cube root of a(n) starts with digit 4.
+ * A034120 Fractional part of cube root of a(n) starts with digit 4.
  * @author Sean A. Irvine
  */
 public class A034120 implements Sequence {

@@ -6,7 +6,7 @@ import irvine.oeis.ComplementSequence;
 import irvine.oeis.a005.A005101;
 
 /**
- * A263837 Non-abundant numbers (or nonabundant numbers): complement of A005101.
+ * A263837 Non-abundant numbers (or nonabundant numbers): complement of A005101; numbers k for which sigma(k) &lt;= 2*k.
  * @author Georg Fischer
  */
 public class A263837 extends ComplementSequence {

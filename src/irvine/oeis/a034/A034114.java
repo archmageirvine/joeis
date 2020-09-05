@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.math.z.Z;
 
 /**
- * A034114 Decimal part of square root of a(n) starts with 8: first term of runs.
+ * A034114 Fractional part of square root of a(n) starts with 8: first term of runs.
  * @author Sean A. Irvine
  */
 public class A034114 extends A034104 {

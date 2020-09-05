@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336364 allocated for Clark Kimberling.
+ * A336364 Rectangular array by antidiagonals: row n shows the positive integers whose distance to the nearest prime is n.
  * @author Sean A. Irvine
  */
 public class A336364 implements Sequence {

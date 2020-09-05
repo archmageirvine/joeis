@@ -3,7 +3,7 @@ package irvine.oeis.a034;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A034115 Decimal part of square root of a(n) starts with 9: first term of runs.
+ * A034115 Fractional part of square root of a(n) starts with 9: first term of runs.
  * @author Sean A. Irvine
  */
 public class A034115 extends LinearRecurrence {

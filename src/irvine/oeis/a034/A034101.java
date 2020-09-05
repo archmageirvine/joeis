@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034101 Decimal part of square root of a(n) starts with digit 5.
+ * A034101 Numbers whose fractional part of square root starts with digit 5.
  * @author Sean A. Irvine
  */
 public class A034101 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034098 Decimal part of square root of a(n) starts with digit 2.
+ * A034098 Fractional part of square root of a(n) starts with digit 2.
  * @author Sean A. Irvine
  */
 public class A034098 implements Sequence {

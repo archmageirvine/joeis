@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034105 Numbers n such that decimal part of square root of n starts with digit 9.
+ * A034105 Numbers n such that fractional part of square root of n starts with digit 9.
  * @author Sean A. Irvine
  */
 public class A034105 implements Sequence {

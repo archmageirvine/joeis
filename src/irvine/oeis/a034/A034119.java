@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034119 Decimal part of cube root of a(n) starts with digit 3.
+ * A034119 Fractional part of cube root of a(n) starts with digit 3.
  * @author Sean A. Irvine
  */
 public class A034119 implements Sequence {

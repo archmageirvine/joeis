@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034096 Decimal part of square root of n starts with digit 0 (squares excluded).
+ * A034096 Fractional part of square root of n starts with digit 0 (squares excluded).
  * @author Sean A. Irvine
  */
 public class A034096 implements Sequence {

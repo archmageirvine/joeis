@@ -7,9 +7,7 @@ import java.util.HashMap;
  * @author Sean A. Irvine
  * @param <R> result type
  */
-public abstract class MemoryFunctionInt3<R> {
-
-  private final HashMap<String, R> mCache = new HashMap<>();
+public abstract class MemoryFunctionInt3<R> extends HashMap<String, R> {
 
   /**
    * Compute the function at specified parameters.
@@ -29,12 +27,12 @@ public abstract class MemoryFunctionInt3<R> {
    */
   public R get(final int a, final int b, final int c) {
     final String key = a + "," + b + "," + c;
-    final R res = mCache.get(key);
+    final R res = get(key);
     if (res != null) {
       return res;
     }
     final R r = compute(a, b, c);
-    mCache.put(key, r);
+    put(key, r);
     return r;
   }
 }

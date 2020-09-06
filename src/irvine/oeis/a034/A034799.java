@@ -13,8 +13,8 @@ import irvine.oeis.a008.A008295;
  */
 public class A034799 extends A008295 {
 
+  private static final Polynomial<Q> HALF = RING_Y.create(Collections.singletonList(Q.HALF));
   protected Polynomial<Polynomial<Q>> mT = RING_X.zero();
-  private Polynomial<Q> HALF = RING_Y.create(Collections.singletonList(Q.HALF));
 
   @Override
   public Z next() {

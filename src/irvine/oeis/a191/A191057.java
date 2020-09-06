@@ -19,7 +19,7 @@ public class A191057 extends Subsequence {
   }
   
   @Override
-  public boolean isOk(Z term) {
+  public boolean isOk(final Z term) {
     return LongUtils.kronecker(term.longValueExact(), 95) == 1;
   }
 }

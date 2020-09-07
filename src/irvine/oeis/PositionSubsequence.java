@@ -21,18 +21,6 @@ public class PositionSubsequence extends Subsequence {
     mN = offset - 1;
   }
 
-  /**
-   * Defines the condition for the inclusion of a term of the underlying sequence
-   * into this subsequence.
-   * This method is typically overwritten with some different condition.
-   * @param term term of the underlying sequence
-   * @return true if the term should be included, false otherwise.
-   * This default implementation returns the numbers starting at offset.
-   */
-  public boolean isOk(final Z term) {
-    return true;
-  }
-  
   @Override
   public Z next() {
     while (true) {

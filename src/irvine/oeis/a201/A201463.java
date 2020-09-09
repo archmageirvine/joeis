@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A201463 A list of 25 distinct numbers with property that the sum of their reciprocals is 1 and each number is of the form p^i*q^j where p and q are distinct primes.
+ * A201463 A list of 25 distinct numbers such that the sum of their reciprocals is 1 and each number is of the form p^i*q^j where p and q are distinct primes.
  * @author Georg Fischer
  */
 public class A201463 extends FiniteSequence {

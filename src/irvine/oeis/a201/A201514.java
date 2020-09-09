@@ -3,7 +3,7 @@ package irvine.oeis.a201;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A201514 A list of 52 distinct numbers with property that the sum of their reciprocals is 1 and each number is of the form p*q where p and q are distinct primes.
+ * A201514 A list of 52 distinct numbers such that the sum of their reciprocals is 1 and each number is of the form p*q where p and q are distinct primes.
  * @author Georg Fischer
  */
 public class A201514 extends FiniteSequence {

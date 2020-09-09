@@ -6,7 +6,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A034853.
+ * A034853 Triangle giving number of trees with n &gt;= 3 nodes and diameter d &gt;= 2.
  * @author Sean A. Irvine
  */
 public class A034853 extends A034781 {

@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.util.string.StringUtils;
 
 /**
- * A034845 Primes of the form iii...ijjj...j.
+ * A034845 Primes of the form iii...ijjj...j, i != j.
  * @author Sean A. Irvine
  */
 public class A034845 implements Sequence {

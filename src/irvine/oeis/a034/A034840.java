@@ -11,7 +11,7 @@ import irvine.oeis.Sequence;
  */
 public class A034840 implements Sequence {
 
-  private static class State implements Comparable<State> {
+  private static final class State implements Comparable<State> {
     private final Z mValue;
     private final long mStart;
     private final long mDifference;

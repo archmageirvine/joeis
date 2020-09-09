@@ -94,7 +94,7 @@ public class A035536 extends MemoryFunctionInt3<Z> implements Sequence {
       }
     }
     for (int index = 0; index < termNo; ++index) {
-      System.out.println(index + " " + seq.next().toString());
+      System.out.println(index + " " + seq.next());
     }
     System.out.println(seq.size() + " parameter sets remembered");
   }

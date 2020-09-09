@@ -117,7 +117,7 @@ __DATA__
       }
     }
     for (int index = 0; index < termNo; ++index) {
-      System.out.println(index + " " + seq.next().toString());
+      System.out.println(index + " " + seq.next());
     }
     System.out.println(seq.size() + " parameter sets remembered");
   }

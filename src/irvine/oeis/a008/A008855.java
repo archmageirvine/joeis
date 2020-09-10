@@ -21,7 +21,9 @@ public class A008855 implements Sequence {
       {
         setKeeper((animal, forbidden) -> {
           if (!animal.isHoly(Lattices.Z2)) {
-            ++mPerimCounts[animal.edgePerimeterSize(Lattices.Z2)];
+            synchronized (mPerimCounts) {
+              ++mPerimCounts[animal.edgePerimeterSize(Lattices.Z2)];
+            }
           }
         });
       }

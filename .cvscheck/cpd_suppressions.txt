@@ -109,3 +109,5 @@ irvine/oeis/a174/A174019.java
 irvine/oeis/a174/A174018.java
 irvine/oeis/a173/A173548.java
 irvine/oeis/a174/A174018.java
+irvine/oeis/a336/A336287.java
+irvine/oeis/a291/A291793.java

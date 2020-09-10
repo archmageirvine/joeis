@@ -132,11 +132,6 @@
        <BugCode name="NP"/>
      </Match>
 
-     <!-- False positive for file closing -->
-     <Match classregex="irvine.util.HashCollider">
-       <BugCode name="OS"/>
-     </Match>
-
      <!-- False positive for switch -->
      <Match classregex="irvine.math.LongUtils">
        <BugCode name="DB"/>
@@ -158,16 +153,14 @@
        <BugCode name="EI2"/>
      </Match>
 
-     <!-- Fairly ugly, but needs to be able to be modified from outside -->
-     <Match classregex="irvine.util.graphics.RadioButton">
-       <BugCode name="EI2"/>
-     </Match>
-
      <!-- Special return -->
      <Match classregex="irvine.math.elliptic.EllipticCurveMod">
        <BugCode name="EI"/>
      </Match>
      <Match classregex="irvine.util.Permutation">
+       <BugCode name="EI"/>
+     </Match>
+     <Match classregex="irvine.math.lattice.Animal">
        <BugCode name="EI"/>
      </Match>
 

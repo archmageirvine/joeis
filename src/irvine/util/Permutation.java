@@ -7,7 +7,6 @@ import irvine.math.IntegerUtils;
 /**
  * Provides a mechanism for generating all the permutations of the integers
  * up to some specified bound.
- *
  * @author Sean A. Irvine
  */
 public class Permutation {
@@ -18,7 +17,6 @@ public class Permutation {
   /**
    * Construct a new permutation on the specified elements.
    * Individual elements can appear multiple times.
-   *
    * @param seq elements
    */
   public Permutation(final int[] seq) {
@@ -73,9 +71,9 @@ public class Permutation {
 
   /**
    * Step to the next element in the permutation sequence and return
-   * a copy of the permutation in this position. If no further permutations
-   * are available then null is returned.
-   *
+   * the permutation in this position. If no further permutations
+   * are available then null is returned.  Note this returns the
+   * internal representation that should not be modified by callers.
    * @return the permutation
    */
   public int[] next() {
@@ -92,7 +90,6 @@ public class Permutation {
 
   /**
    * String representation of the permutation.
-   *
    * @param s actual elements to print
    * @param permutation the permutation
    * @return string representation

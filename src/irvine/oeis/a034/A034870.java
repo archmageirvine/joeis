@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034870.
+ * A034870 Even-numbered rows of Pascal's triangle.
  * @author Sean A. Irvine
  */
 public class A034870 implements Sequence {

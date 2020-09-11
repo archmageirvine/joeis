@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A034880.
+ * A034880 Minimal number of rectangles with integer sides that will form any rectangle with area n.
  * @author Sean A. Irvine
  */
 public class A034880 implements Sequence {

@@ -44,5 +44,14 @@ public class FiniteSequence implements Sequence {
   public Z next() {
     return mN < mSeq.length ? mSeq[mN++] : null;
   }
+
+  /**
+   * Directly return the specified element of this sequence.
+   * @param index index (from 0)
+   * @return specified element
+   */
+  public Z a(final int index) {
+    return mSeq[index];
+  }
 }
 

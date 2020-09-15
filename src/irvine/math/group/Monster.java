@@ -110,6 +110,10 @@ import irvine.oeis.a058.A058640;
 import irvine.oeis.a058.A058641;
 import irvine.oeis.a058.A058644;
 import irvine.oeis.a058.A058646;
+import irvine.oeis.a058.A058647;
+import irvine.oeis.a058.A058657;
+import irvine.oeis.a058.A058659;
+import irvine.oeis.a058.A058660;
 import irvine.oeis.a062.A062242;
 import irvine.oeis.a062.A062244;
 import irvine.oeis.a101.A101127;
@@ -311,6 +315,10 @@ public final class Monster {
     MemorySequence.cachedSequence(new A058644()),  // 36A, 113
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A062244(), 2)),  // 36B, 114
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058646(), 1)),  // 36C, 115
+    MemorySequence.cachedSequence(new A058647()),  // 36D, 116
+    MemorySequence.cachedSequence(new A058657()),  // 38A, 117
+    MemorySequence.cachedSequence(new A058659()),  // 39A, 118
+    MemorySequence.cachedSequence(new A058660()),  // 39B, 119
   };
 
   /**

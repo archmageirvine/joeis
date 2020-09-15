@@ -30,6 +30,7 @@ import irvine.oeis.a007.A007264;
 import irvine.oeis.a007.A007265;
 import irvine.oeis.a007.A007266;
 import irvine.oeis.a014.A014708;
+import irvine.oeis.a022.A022597;
 import irvine.oeis.a022.A022599;
 import irvine.oeis.a022.A022601;
 import irvine.oeis.a029.A029839;
@@ -70,7 +71,47 @@ import irvine.oeis.a058.A058551;
 import irvine.oeis.a058.A058553;
 import irvine.oeis.a058.A058554;
 import irvine.oeis.a058.A058555;
+import irvine.oeis.a058.A058563;
+import irvine.oeis.a058.A058564;
+import irvine.oeis.a058.A058565;
+import irvine.oeis.a058.A058566;
+import irvine.oeis.a058.A058567;
+import irvine.oeis.a058.A058568;
+import irvine.oeis.a058.A058570;
+import irvine.oeis.a058.A058571;
+import irvine.oeis.a058.A058572;
+import irvine.oeis.a058.A058573;
+import irvine.oeis.a058.A058574;
+import irvine.oeis.a058.A058576;
+import irvine.oeis.a058.A058578;
+import irvine.oeis.a058.A058579;
+import irvine.oeis.a058.A058594;
+import irvine.oeis.a058.A058596;
+import irvine.oeis.a058.A058597;
+import irvine.oeis.a058.A058599;
+import irvine.oeis.a058.A058606;
+import irvine.oeis.a058.A058608;
+import irvine.oeis.a058.A058609;
+import irvine.oeis.a058.A058611;
+import irvine.oeis.a058.A058612;
+import irvine.oeis.a058.A058613;
+import irvine.oeis.a058.A058614;
+import irvine.oeis.a058.A058615;
+import irvine.oeis.a058.A058616;
+import irvine.oeis.a058.A058617;
+import irvine.oeis.a058.A058618;
+import irvine.oeis.a058.A058628;
+import irvine.oeis.a058.A058629;
+import irvine.oeis.a058.A058630;
+import irvine.oeis.a058.A058636;
+import irvine.oeis.a058.A058637;
+import irvine.oeis.a058.A058638;
+import irvine.oeis.a058.A058640;
+import irvine.oeis.a058.A058641;
+import irvine.oeis.a058.A058644;
+import irvine.oeis.a058.A058646;
 import irvine.oeis.a062.A062242;
+import irvine.oeis.a062.A062244;
 import irvine.oeis.a101.A101127;
 import irvine.oeis.a101.A101558;
 import irvine.oeis.a107.A107080;
@@ -80,11 +121,16 @@ import irvine.oeis.a112.A112147;
 import irvine.oeis.a112.A112148;
 import irvine.oeis.a112.A112158;
 import irvine.oeis.a112.A112159;
+import irvine.oeis.a112.A112160;
+import irvine.oeis.a112.A112161;
+import irvine.oeis.a112.A112169;
 import irvine.oeis.a335.A335798;
 import irvine.util.io.IOUtils;
 
 /**
- * Functions and constants associated with the Monster group.
+ * Functions and constants associated with the Monster group.  Several methods here refer
+ * to the 194 conjugacy classes of the Monster and such methods are indexed according
+ * to their order in the "Atlas".
  * @author Sean A. Irvine
  */
 public final class Monster {
@@ -144,6 +190,9 @@ public final class Monster {
       CLASS_TO_CHARACTER_NUMBER.put(c, ++j);
     }
   }
+
+  private static final MemorySequence MT_23AB = MemorySequence.cachedSequence(new A058570());
+  private static final MemorySequence MT_31AB = MemorySequence.cachedSequence(new A058628());
 
   // ATLAS order
   private static final MemorySequence[] MCKAY_THOMPSON_SERIES = {
@@ -216,6 +265,52 @@ public final class Monster {
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058553(), 2)),  // 20D, 67
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058554(), 2)),  // 20E, 68
     MemorySequence.cachedSequence(new A058555()),  // 20F, 69
+    MemorySequence.cachedSequence(new A058563()),  // 21A, 70
+    MemorySequence.cachedSequence(new A058564()),  // 21B, 71
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058565(), 2)),  // 21C, 72
+    MemorySequence.cachedSequence(new A058566()),  // 21D, 73
+    MemorySequence.cachedSequence(new A058567()),  // 22A, 74
+    MemorySequence.cachedSequence(new A058568()),  // 22B, 75
+    MT_23AB, // 23A, 76
+    MT_23AB, // 23B, 77
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058571(), 1)),  // 24A, 78
+    MemorySequence.cachedSequence(new A058572()),  // 24B, 79
+    MemorySequence.cachedSequence(new A058573()),  // 24C, 80
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058574(), 1)),  // 24D, 81
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A112160(), 5)),  // 24E, 82
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058576(), 3)),  // 24F, 83
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A112161(), 3)),  // 24G, 84
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058578(), 1)),  // 24H, 85
+    MemorySequence.cachedSequence(new A058579()),  // 24I, 86
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A022597(), 11)),  // 24J, 87
+    MemorySequence.cachedSequence(new A058594()),  // 25A, 88
+    MemorySequence.cachedSequence(new A058596()),  // 26A, 89
+    MemorySequence.cachedSequence(new A058597()),  // 26B, 90
+    MemorySequence.cachedSequence(new A058599()),  // 27A, 91
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058606(), 1)),  // 28A, 92
+    MemorySequence.cachedSequence(new A112169()),  // 28B, 93
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058608(), 1)),  // 28C, 94
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058609(), 1)),  // 28D, 95
+    MemorySequence.cachedSequence(new A058611()),  // 29A, 96
+    MemorySequence.cachedSequence(new A058612()),  // 30A, 97
+    MemorySequence.cachedSequence(new A058613()),  // 30B, 98
+    MemorySequence.cachedSequence(new A058614()),  // 30C, 99
+    MemorySequence.cachedSequence(new A058615()),  // 30D, 100
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058616(), 2)),  // 30E, 101
+    MemorySequence.cachedSequence(new A058617()),  // 30F, 102
+    MemorySequence.cachedSequence(new A058618()),  // 30G, 103
+    MT_31AB, // 31A, 104
+    MT_31AB, // 31B, 105
+    MemorySequence.cachedSequence(new A058629()),  // 32A, 106
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058630(), 1)),  // 32B, 107
+    MemorySequence.cachedSequence(new A058636()),  // 33A, 108
+    MemorySequence.cachedSequence(new A058637()),  // 33B, 109
+    MemorySequence.cachedSequence(new A058638()),  // 34A, 110
+    MemorySequence.cachedSequence(new A058640()),  // 35A, 111
+    MemorySequence.cachedSequence(new A058641()),  // 35B, 112
+    MemorySequence.cachedSequence(new A058644()),  // 36A, 113
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A062244(), 2)),  // 36B, 114
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058646(), 1)),  // 36C, 115
   };
 
   /**

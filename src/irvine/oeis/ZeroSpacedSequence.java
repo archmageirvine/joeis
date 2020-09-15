@@ -3,7 +3,7 @@ package irvine.oeis;
 import irvine.math.z.Z;
 
 /**
- * Pad out another sequence with zeros between terms.
+ * Pad out another sequence with a specified number of zeros between terms.
  * @author Sean A. Irvine
  */
 public class ZeroSpacedSequence implements Sequence {

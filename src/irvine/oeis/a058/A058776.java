@@ -11,7 +11,7 @@ import irvine.oeis.a003.A003106;
 import irvine.oeis.a003.A003114;
 
 /**
- * A058776.
+ * A058776 McKay-Thompson series of class 119A for Monster.
  * @author Sean A. Irvine
  */
 public class A058776 implements Sequence {

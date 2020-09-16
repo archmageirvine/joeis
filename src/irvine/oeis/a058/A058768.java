@@ -6,7 +6,7 @@ import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
- * A058768.
+ * A058768 McKay-Thompson series of class 94A for the Monster group.
  * @author Sean A. Irvine
  */
 public class A058768 extends A058690 {

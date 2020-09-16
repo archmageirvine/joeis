@@ -133,6 +133,7 @@ import irvine.oeis.a058.A058704;
 import irvine.oeis.a058.A058705;
 import irvine.oeis.a058.A058706;
 import irvine.oeis.a058.A058708;
+import irvine.oeis.a058.A058713;
 import irvine.oeis.a058.A058714;
 import irvine.oeis.a058.A058724;
 import irvine.oeis.a058.A058725;
@@ -152,6 +153,9 @@ import irvine.oeis.a058.A058755;
 import irvine.oeis.a058.A058758;
 import irvine.oeis.a058.A058762;
 import irvine.oeis.a058.A058768;
+import irvine.oeis.a058.A058769;
+import irvine.oeis.a058.A058773;
+import irvine.oeis.a058.A058774;
 import irvine.oeis.a058.A058776;
 import irvine.oeis.a062.A062242;
 import irvine.oeis.a062.A062244;
@@ -416,7 +420,7 @@ public final class Monster {
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058705(), 1)),  // 52A, 144
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058706(), 1)),  // 52B, 145
     MemorySequence.cachedSequence(new A058708()),  // 54A, 146
-    null,  // 55A, 147 (A058713)
+    MemorySequence.cachedSequence(new A058713()),  // 55A, 147
     MemorySequence.cachedSequence(new A058714()),  // 56A, 148
     MT_56BC,  // 56B, 149
     MT_56BC,  // 56C, 150
@@ -456,12 +460,12 @@ public final class Monster {
     MT_93AB, // 93B, 184
     MT_94AB, // 94A, 185
     MT_94AB, // 94B, 186
-    null,  // 95A, 187 (A058769)
-    null,  // 95B, 188 (A058769)
+    MemorySequence.cachedSequence(new A058769()),  // 95A, 187
+    MemorySequence.cachedSequence(new A058769()),  // 95B, 188
     MT_104AB, // 104A, 189
     MT_104AB, // 104B, 190
-    null, // 105A, 191 (A058773)
-    null, // 110A, 192 (A058774)
+    MemorySequence.cachedSequence(new A058773()),  // 105A, 191
+    MemorySequence.cachedSequence(new A058774()),  // 110A, 192
     MT_119AB, // 119A, 193
     MT_119AB, // 119B, 194
   };

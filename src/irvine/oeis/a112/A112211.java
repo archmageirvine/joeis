@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A112211.
+ * A112211 McKay-Thompson series of class 84B for the Monster group.
  * @author Sean A. Irvine
  */
 public class A112211 implements Sequence {

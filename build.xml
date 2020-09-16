@@ -75,6 +75,7 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
 
       <zipfileset src="${lib.dir}/apfloat.jar" excludes="META-INF/**"/>
       <zipfileset src="${lib.dir}/antlr-4.5-complete.jar" excludes="META-INF/**"/>
@@ -111,6 +112,7 @@
       <fileset dir="${src.dir}" includes="irvine/factor/project/oeis/a*"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau.gz"/>
       <fileset dir="${src.dir}" includes="irvine/oeis/a000/landau*.gz"/>
+      <fileset dir="${src.dir}" includes="cheat/*.dat.gz"/>
 
       <fileset dir="${test.dir}" includes="irvine/oeis/seq/*"/>
       <fileset dir="${test.dir}" includes="irvine/oeis/**/*.dat"/>

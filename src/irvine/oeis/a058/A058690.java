@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A058690.
+ * A058690 McKay-Thompson series of class 47A for the Monster group.
  * @author Sean A. Irvine
  */
 public class A058690 implements Sequence {
@@ -19,12 +19,12 @@ public class A058690 implements Sequence {
 
   private void theta(final int a, final int b, final int c, final int n, final Z[] coeff, final int k) {
     for (int j = 0; j * j <= n; ++j) {
-      final int plus = (a * k * k + b * k * j + c * j * j) / 2;
+      final int plus = (a * k * k + b * k * j + c * j * j) >>> 1;
       if (plus < coeff.length) {
         coeff[plus] = coeff[plus].add(1);
       }
       if (j != 0) {
-        final int minus = (a * k * k - b * k * j + c * j * j) / 2;
+        final int minus = (a * k * k - b * k * j + c * j * j) >>> 1;
         if (minus < coeff.length) {
           coeff[minus] = coeff[minus].add(1);
         }

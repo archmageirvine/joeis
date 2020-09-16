@@ -5,7 +5,7 @@ import irvine.oeis.SkipSequence;
 import irvine.oeis.a094.A094362;
 
 /**
- * A058661.
+ * A058661 McKay-Thompson series of class 39C for Monster.
  * @author Sean A. Irvine
  */
 public class A058661 extends PrependSequence {

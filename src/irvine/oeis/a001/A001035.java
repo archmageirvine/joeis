@@ -10,6 +10,6 @@ public class A001035 extends CheatSequence {
 
   @Override
   protected String getName() {
-    return A001035.class.getName();
+    return A001035.class.getSimpleName();
   }
 }

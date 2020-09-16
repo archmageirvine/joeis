@@ -9,7 +9,7 @@ import irvine.math.q.Rationals;
 import irvine.math.z.Z;
 
 /**
- * A058638 McKay-Thompson series of class 34A for Monster.
+ * A058657 McKay-Thompson series of class 38A for Monster.
  * @author Sean A. Irvine
  */
 public class A058657 extends A058549 {

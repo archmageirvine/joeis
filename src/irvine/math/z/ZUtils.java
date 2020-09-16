@@ -625,6 +625,27 @@ public final class ZUtils {
     return res;
   }
 
+  /**
+   * Read numbers from a stream into an array.  Empty lines or lines starting
+   * with <code>#</code> are ignored. Behaviour on out of range numbers is
+   * undefined.
+   * @param reader source
+   * @param column column number (numbered from 0)
+   * @return array of numbers
+   * @throws IOException if an I/O error occurs.
+   */
+  public static List<Z> suckInNumbers(final BufferedReader reader, final int column) throws IOException {
+    final ArrayList<Z> res = new ArrayList<>();
+    String line;
+    while ((line = reader.readLine()) != null) {
+      if (!line.isEmpty() && line.charAt(0) != '#') {
+        final String[] parts = line.split("\\s+");
+        res.add(new Z(parts[column]));
+      }
+    }
+    return res;
+  }
+
   private static final Random RANDOM = new Random();
 
   /**

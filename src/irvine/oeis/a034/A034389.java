@@ -12,7 +12,6 @@ import java.util.zip.GZIPInputStream;
 
 import irvine.math.group.Monster;
 import irvine.math.z.Z;
-import irvine.oeis.MemorySequence;
 import irvine.oeis.Sequence;
 
 /**
@@ -51,11 +50,11 @@ public class A034389 implements Sequence {
 
   @Override
   public Z next() {
-    System.out.println("MM test");
-    final MemorySequence seq = Monster.mckayThompson(101);
-    for (int k = 0; k < 40; ++k) {
-      System.out.println(seq.a(k));
-    }
+//    System.out.println("MM test");
+//    final MemorySequence seq = Monster.mckayThompson(101);
+//    for (int k = 0; k < 40; ++k) {
+//      System.out.println(seq.a(k));
+//    }
 
     assert mClasses.length == 194;
     if (++mN == 21) {
@@ -65,7 +64,8 @@ public class A034389 implements Sequence {
     Z r = Z.ZERO;
     int j = 1;
     for (final String s : mClasses) {
-      r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(3, j)).multiply(mMoonshine.get(s).get(mN)));
+      //r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(1, j)).multiply(mMoonshine.get(s).get(mN)));
+      r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(1, j)).multiply(Monster.mckayThompson(j).a(mN)));
       ++j;
     }
     //System.out.println(mN + " " + r + " " + r.divide(M));

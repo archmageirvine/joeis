@@ -2,9 +2,7 @@ package irvine.math.group;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -240,15 +238,6 @@ public final class Monster {
     return sChi.get((characterNumber - 1) * NUMBER_CHARACTERS + index - 1);
   }
 
-  private static final String[] CLASSES = {"1A", "2A", "2B", "3A", "3B", "3C", "4A", "4B", "4C", "4D", "5A", "5B", "6A", "6B", "6C", "6D", "6E", "6F", "7A", "7B", "8A", "8B", "8C", "8D", "8E", "8F", "9A", "9B", "10A", "10B", "10C", "10D", "10E", "11A", "12A", "12B", "12C", "12D", "12E", "12F", "12G", "12H", "12I", "12J", "13A", "13B", "14A", "14B", "14C", "15A", "15B", "15C", "15D", "16A", "16B", "16C", "17A", "18A", "18B", "18C", "18D", "18E", "19A", "20A", "20B", "20C", "20D", "20E", "20F", "21A", "21B", "21C", "21D", "22A", "22B", "23AB", "23AB", "24A", "24B", "24C", "24D", "24E", "24F", "24G", "24H", "24I", "24J", "25A", "26A", "26B", "27A", "27B", "28A", "28B", "28C", "28D", "29A", "30A", "30B", "30C", "30D", "30E", "30F", "30G", "31AB", "31AB", "32A", "32B", "33A", "33B", "34A", "35A", "35B", "36A", "36B", "36C", "36D", "38A", "39A", "39B", "39CD", "39CD", "40A", "40B", "40CD", "40CD", "41A", "42A", "42B", "42C", "42D", "44AB", "44AB", "45A", "46AB", "46AB", "46CD", "46CD", "47AB", "47AB", "48A", "50A", "51A", "52A", "52B", "54A", "55A", "56A", "56BC", "56BC", "57A", "59AB", "59AB", "60A", "60B", "60C", "60D", "60E", "60F", "62AB", "62AB", "66A", "66B", "68A", "69AB", "69AB", "70A", "70B", "71AB", "71AB", "78A", "78BC", "78BC", "84A", "84B", "84C", "87AB", "87AB", "88AB", "88AB", "92AB", "92AB", "93AB", "93AB", "94AB", "94AB", "95AB", "95AB", "104AB", "104AB", "105A", "110A", "119AB", "119AB"};
-  private static final Map<String, Integer> CLASS_TO_CHARACTER_NUMBER = new HashMap<>();
-  static {
-    int j = 0;
-    for (final String c : CLASSES) {
-      CLASS_TO_CHARACTER_NUMBER.put(c, ++j);
-    }
-  }
-
   private static final MemorySequence MT_23AB = MemorySequence.cachedSequence(new A058570());
   private static final MemorySequence MT_27AB = MemorySequence.cachedSequence(new A058599());
   private static final MemorySequence MT_31AB = MemorySequence.cachedSequence(new A058628());
@@ -338,10 +327,10 @@ public final class Monster {
     MemorySequence.cachedSequence(new A058535()),  // 18E, 62
     MemorySequence.cachedSequence(new A058549()),  // 19A, 63
     MemorySequence.cachedSequence(new A112158()),  // 20A, 64
-    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058551(), 2)),  // 20B, 65
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058551(), 1)),  // 20B, 65
     MemorySequence.cachedSequence(new A112159()),  // 20C, 66
-    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058553(), 2)),  // 20D, 67
-    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058554(), 2)),  // 20E, 68
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058553(), 1)),  // 20D, 67
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058554(), 1)),  // 20E, 68
     MemorySequence.cachedSequence(new A058555()),  // 20F, 69
     MemorySequence.cachedSequence(new A058563()),  // 21A, 70
     MemorySequence.cachedSequence(new A058564()),  // 21B, 71
@@ -396,7 +385,7 @@ public final class Monster {
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058660(), 2)),  // 39B, 120
     MT_39CD, // 39C, 121
     MT_39CD, // 39D, 122
-    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058662(), 2)),  // 40A, 123
+    MemorySequence.cachedSequence(new ZeroSpacedSequence(new A058662(), 3)),  // 40A, 123
     MemorySequence.cachedSequence(new ZeroSpacedSequence(new A112179(), 1)),  // 40B, 124
     MT_40CD, // 40C, 125
     MT_40CD, // 40D, 126
@@ -478,5 +467,20 @@ public final class Monster {
    */
   public static MemorySequence mckayThompson(final int index) {
     return MCKAY_THOMPSON_SERIES[index - 1];
+  }
+
+  private static final String[] MCKAY_THOMPSON_NAMES = {"1A", "2A", "2B", "3A", "3B", "3C", "4A", "4B", "4C", "4D", "5A", "5B", "6A", "6B", "6C", "6D", "6E", "6F", "7A", "7B", "8A", "8B", "8C", "8D", "8E", "8F", "9A", "9B", "10A", "10B", "10C", "10D", "10E", "11A", "12A", "12B", "12C", "12D", "12E", "12F", "12G", "12H", "12I", "12J", "13A", "13B", "14A", "14B", "14C", "15A", "15B", "15C", "15D", "16A", "16B", "16C", "17A", "18A", "18B", "18C", "18D", "18E", "19A", "20A", "20B", "20C", "20D", "20E", "20F", "21A", "21B", "21C", "21D", "22A", "22B", "23A", "23B", "24A", "24B", "24C", "24D", "24E", "24F", "24G", "24H", "24I", "24J", "25A", "26A", "26B", "27A", "27B", "28A", "28B", "28C", "28D", "29A", "30A", "30B", "30C", "30D", "30E", "30F", "30G", "31A", "31B", "32A", "32B", "33A", "33B", "34A", "35A", "35B", "36A", "36B", "36C", "36D", "38A", "39A", "39B", "39CD", "39CD", "40A", "40B", "40C", "40D", "41A", "42A", "42B", "42C", "42D", "44A", "44B", "45A", "46A", "46B", "46C", "46D", "47A", "47B", "48A", "50A", "51A", "52A", "52B", "54A", "55A", "56A", "56B", "56C", "57A", "59A", "59B", "60A", "60B", "60C", "60D", "60E", "60F", "62A", "62B", "66A", "66B", "68A", "69A", "69B", "70A", "70B", "71A", "71B", "78A", "78B", "78C", "84A", "84B", "84C", "87A", "87B", "88A", "88B", "92A", "92B", "93A", "93B", "94A", "94B", "95A", "95B", "104A", "104B", "105A", "110A", "119A", "119B"};
+
+  /**
+   * Test.
+   * @param args ignored
+   */
+  public static void main(final String[] args) {
+    for (int k = 1; k <= NUMBER_CHARACTERS; ++k) {
+      final long start = System.currentTimeMillis();
+      final Z a = mckayThompson(k).a(51);
+      final long time = System.currentTimeMillis() - start;
+      System.out.println(k + " " + MCKAY_THOMPSON_NAMES[k - 1] + " " + a + " " + time);
+    }
   }
 }

@@ -1,4 +1,4 @@
-package irvine.oeis.a034;
+package irvine.oeis.a112;
 
 import java.util.Collections;
 
@@ -11,10 +11,10 @@ import irvine.oeis.a003.A003106;
 import irvine.oeis.a003.A003114;
 
 /**
- * A034322 McKay-Thompson series of class 71A for Monster.
+ * A112217.
  * @author Sean A. Irvine
  */
-public class A034322 implements Sequence {
+public class A112217 implements Sequence {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private final Sequence mSeqH = new A003106();
@@ -31,9 +31,9 @@ public class A034322 implements Sequence {
       return Z.ZERO;
     }
 
-    final Polynomial<Z> a = RING.multiply(mH, mG.substitutePower(71, mN), mN);
-    final Polynomial<Z> b = RING.multiply(mG, mH.substitutePower(71, mN), mN);
-    final Polynomial<Z> c = RING.subtract(a, b.shift(14));
+    final Polynomial<Z> a = RING.multiply(mH, mG.substitutePower(31, mN), mN);
+    final Polynomial<Z> b = RING.multiply(mG, mH.substitutePower(31, mN), mN);
+    final Polynomial<Z> c = RING.subtract(a, b.shift(6));
     return c.coeff(mN);
   }
 }

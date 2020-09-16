@@ -198,7 +198,8 @@ public final class Monster {
 
   /** Order of the Monster. */
   public static final Z ORDER = new Z("808017424794512875886459904961710757005754368000000000");
-  private static final int NUMBER_CHARACTERS = 194;
+  /** Number of conjugacy classes in the Monster. */
+  public static final int NUMBER_CONJUCACY_CLASSES = 194;
 
   private static final FiniteSequence CM = new A335798();
 
@@ -229,13 +230,13 @@ public final class Monster {
    * @return the character
    */
   public static Z chi(final int characterNumber, final int index) {
-    if (characterNumber < 1 || index < 1 || characterNumber > NUMBER_CHARACTERS || index > NUMBER_CHARACTERS) {
+    if (characterNumber < 1 || index < 1 || characterNumber > NUMBER_CONJUCACY_CLASSES || index > NUMBER_CONJUCACY_CLASSES) {
       throw new IllegalArgumentException();
     }
     if (sChi == null) {
       sChi = suckInNumbers("irvine/math/group/resources/monster-chi.dat");
     }
-    return sChi.get((characterNumber - 1) * NUMBER_CHARACTERS + index - 1);
+    return sChi.get((characterNumber - 1) * NUMBER_CONJUCACY_CLASSES + index - 1);
   }
 
   private static final MemorySequence MT_23AB = MemorySequence.cachedSequence(new A058570());
@@ -476,7 +477,7 @@ public final class Monster {
    * @param args ignored
    */
   public static void main(final String[] args) {
-    for (int k = 1; k <= NUMBER_CHARACTERS; ++k) {
+    for (int k = 1; k <= NUMBER_CONJUCACY_CLASSES; ++k) {
       final long start = System.currentTimeMillis();
       final Z a = mckayThompson(k).a(51);
       final long time = System.currentTimeMillis() - start;

@@ -65,7 +65,7 @@ public class A034389 implements Sequence {
     int j = 1;
     for (final String s : mClasses) {
       //r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(1, j)).multiply(mMoonshine.get(s).get(mN)));
-      r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(1, j)).multiply(Monster.mckayThompson(j).a(mN)));
+      r = r.add(Monster.ORDER.divide(Monster.centralizerOrder(j)).multiply(Monster.chi(2, j)).multiply(Monster.mckayThompson(j).a(mN)));
       ++j;
     }
     //System.out.println(mN + " " + r + " " + r.divide(M));

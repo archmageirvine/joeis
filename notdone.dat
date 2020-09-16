@@ -986,7 +986,6 @@ A014621 Triangle of numbers arising from analysis of Levine's sequence A011784, 
 A014622 Row sums of A014621
 A014623 Sequence arising from analysis of Levine's sequence A011784, insufficient detail
 A014627 Some sort of bipartite graph counting, could not find paper
-A014810 Multiplicity of trivial character in V_n, where V = Sum V_n is the graded module for the Monster simple group, looks complicated, have paper
 A014843 Sum modulo n of the sum modulo n of all the digits of n in every base from 2 to n-1, huh?, doesn't work
 A014982 Number of "coherent" reduced decompositions for the longest permutation n n-1 n-2 ... 3 2 1 in the symmetric group on n letters, looks complicated
 A015158 Theta series of 17-dimensional lattice Q_17(6)

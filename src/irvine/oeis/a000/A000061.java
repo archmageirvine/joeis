@@ -1,14 +1,14 @@
 package irvine.oeis.a000;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+
 import irvine.factor.factor.Cheetah;
 import irvine.factor.util.FactorSequence;
 import irvine.math.LongUtils;
 import irvine.math.z.Binomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
-
-import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * A000061 Generalized tangent numbers d(n,1).

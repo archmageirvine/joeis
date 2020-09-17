@@ -619,7 +619,7 @@ public final class ZUtils {
     String line;
     while ((line = reader.readLine()) != null) {
       if (!line.isEmpty() && line.charAt(0) != '#') {
-        res.add(new Z(line));
+        res.add("?".equals(line) ? null : new Z(line));
       }
     }
     return res;

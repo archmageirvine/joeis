@@ -234,7 +234,7 @@ public final class Monster {
       throw new IllegalArgumentException();
     }
     if (sChi == null) {
-      sChi = suckInNumbers("irvine/math/group/resources/monster-chi.dat");
+      sChi = suckInNumbers("irvine/math/group/resources/monster-chi.dat.gz");
     }
     return sChi.get((characterNumber - 1) * NUMBER_CONJUCACY_CLASSES + index - 1);
   }

@@ -9,7 +9,7 @@ import irvine.oeis.a000.A000045;
 
 
 /**
- * A239000 Number of partitions of n using Fibonacci numbers > 2.
+ * A239000 Number of partitions of n using Fibonacci numbers &gt; 2.
  * @author Georg Fischer
  */
 public class A239000 extends EulerTransform {

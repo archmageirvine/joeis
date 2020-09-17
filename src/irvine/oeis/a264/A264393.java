@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007412;
 
 
 /**
- * A264393 Number of partitions of n having no perfect cube parts (n>=0).
+ * A264393 Number of partitions of n having no perfect cube parts (n&gt;=0).
  * @author Georg Fischer
  */
 public class A264393 extends EulerTransform {

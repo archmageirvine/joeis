@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035536;
 
 
 /**
- * A202091 Number of partitions of 5n such that cn(1, 5) = cn(4, 5) and cn(2, 5) = cn(3, 5).
+ * A202091 Number of partitions of 5n such that cn(1,5) = cn(4,5) and cn(2,5) = cn(3,5).
  * @author Georg Fischer
  */
 public class A202091 extends A035536 {

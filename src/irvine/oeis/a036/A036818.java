@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035536;
 
 
 /**
- * A036818 Number of partitions satisfying (cn(0, 5) = 0 and cn(1, 5) = cn(4, 5)).
+ * A036818 Number of partitions satisfying (cn(0,5) = 0 and cn(1,5) = cn(4,5)).
  * @author Georg Fischer
  */
 public class A036818 extends A035536 {

@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 
 /**
- * A035553 Number of partitions of n with equal number of parts congruent to each of 0 and 2 (mod 5)
+ * A035553 Number of partitions of n with equal number of parts congruent to each of 0 and 2 (mod 5).
  * @author Georg Fischer
  */
 public class A035553 extends A035536 {

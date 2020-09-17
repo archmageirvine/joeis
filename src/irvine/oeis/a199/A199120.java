@@ -8,7 +8,7 @@ import irvine.oeis.a003.A003666;
 
 
 /**
- * A199120 Number of partitions of n into terms of (1, 4)-Ulam sequence, cf. A003666.
+ * A199120 Number of partitions of n into terms of (1,4)-Ulam sequence, cf. A003666.
  * @author Georg Fischer
  */
 public class A199120 extends EulerTransform {

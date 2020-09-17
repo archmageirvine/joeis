@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 
 
 /**
- * A035586 Number of partitions of n with equal nonzero number of parts congruent to each of 0, 2 and 4 (mod 5)
+ * A035586 Number of partitions of n with equal nonzero number of parts congruent to each of 0, 2 and 4 (mod 5).
  * @author Georg Fischer
  */
 public class A035586 extends A035536 {

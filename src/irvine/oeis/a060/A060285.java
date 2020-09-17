@@ -7,7 +7,7 @@ import irvine.oeis.a114.A114637;
 
 
 /**
- * A060285 Number of partitions of n objects of 2 colors with parts size >1.
+ * A060285 Number of partitions of n objects of 2 colors with parts size &gt;1.
  * @author Georg Fischer
  */
 public class A060285 extends EulerTransform {

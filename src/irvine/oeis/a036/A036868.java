@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035536;
 
 
 /**
- * A036868 Number of partitions of n such that cn(3, 5) <= cn(0, 5) = cn(1, 5) < cn(2, 5) = cn(4, 5).
+ * A036868 Number of partitions of n such that cn(3,5) &lt;= cn(0,5) = cn(1,5) &lt; cn(2,5) = cn(4,5).
  * @author Georg Fischer
  */
 public class A036868 extends A035536 {

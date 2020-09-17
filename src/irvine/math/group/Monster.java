@@ -223,6 +223,15 @@ public final class Monster {
     }
   }
 
+  private static final long[] CHI39 = { 0, 1932029655556L, 531831300, -441097657, -6179173, -1560013, 2288132, -476476, -9212,
+  -22204, -61369, 1631, 47047, 3003, 10311, -5765, 987, 819, 0, 0, -28, -396, -572, 404, 164, -28, -61, 47,
+  231, -185, -69, 35, -25, 0, 71, -37, 119, 35, 103, 35, -61, -5, -5, 11, 0, 0, 0, 0, 0, -7, 2, 2, -13, -4, -4,
+  -4, 0, 13, -5, 3, -9, -3, 1, 7, -1, 7, -9, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, -9, -1, -1, -1, 3, -1, -5, -1, -1,
+  -1, 1, 0, 0, -1, -1, 0, 0, 0, 0, -1, 8, -3, 1, -2, -1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, -1, -1, -1, 1, 1, 0,
+  0, 0, 0, 3, -1, -1, -1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, -1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0,
+  -1, 1, -2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, -7, 0, 0, 0, 0, 0, 0, -1, -1, 0, 0, 0, 0, 0,
+  0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0 };
+
   /**
    * Return a character element of the Monster according to "Atlas" order.
    * @param characterNumber the character <code>[1..194]</code>
@@ -235,6 +244,12 @@ public final class Monster {
     }
     if (sChi == null) {
       sChi = suckInNumbers("irvine/math/group/resources/monster-chi.dat.gz");
+    }
+    if (characterNumber == 39) {
+      if (index == 1) {
+        return new Z("172399434201593354756");
+      }
+      return Z.valueOf(CHI39[index - 1]);
     }
     return sChi.get((characterNumber - 1) * NUMBER_CONJUCACY_CLASSES + index - 1);
   }

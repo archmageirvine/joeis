@@ -1345,9 +1345,6 @@ A034372 Triangle of number of indecomposable linear [ n,k ] GF(5) codes (n >= 1,
 A034373 Triangle of number of projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034374 Triangle of number of indecomposable projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034384 Number of two-state cellular automaton rules on a (2n+1)-site neighborhood that conserve the number of 1's.
-A034389 Multiplicity of highest weight (or singular) vectors associated with character chi_1 of Monster module.
-A034390 Multiplicity of highest weight (or singular) vectors associated with character chi_2 of Monster module.
-A034391 Multiplicity of highest weight (or singular) vectors associated with character chi_3 of Monster module.
 A034392 Multiplicity of highest weight (or singular) vectors associated with character chi_4 of Monster module.
 A034393 Multiplicity of highest weight (or singular) vectors associated with character chi_5 of Monster module.
 A034394 Multiplicity of highest weight (or singular) vectors associated with character chi_6 of Monster module.

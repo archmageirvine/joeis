@@ -1345,27 +1345,6 @@ A034372 Triangle of number of indecomposable linear [ n,k ] GF(5) codes (n >= 1,
 A034373 Triangle of number of projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034374 Triangle of number of indecomposable projective linear [ n,k ] GF(5) codes (n >= 1, k >= 1) without 0 columns.
 A034384 Number of two-state cellular automaton rules on a (2n+1)-site neighborhood that conserve the number of 1's.
-A034427 Multiplicity of highest weight (or singular) vectors associated with character chi_39 of Monster module.
-A034429 Multiplicity of highest weight (or singular) vectors associated with character chi_41 of Monster module.
-A034432 Multiplicity of highest weight (or singular) vectors associated with character chi_44 of Monster module.
-A034434 Multiplicity of highest weight (or singular) vectors associated with character chi_46 of Monster module.
-A034435 Multiplicity of highest weight (or singular) vectors associated with character chi_47 of Monster module.
-A034441 Multiplicity of highest weight (or singular) vectors associated with character chi_53 of Monster module.
-A034443 Multiplicity of highest weight (or singular) vectors associated with character chi_55 of Monster module.
-A034447 Multiplicity of highest weight (or singular) vectors associated with character chi_59 of Monster module.
-A034459 Multiplicity of highest weight (or singular) vectors associated with character chi_71 of Monster module.
-A034462 Multiplicity of highest weight (or singular) vectors associated with character chi_74 of Monster module.
-A034469 Multiplicity of highest weight (or singular) vectors associated with character chi_81 of Monster module.
-A034471 Multiplicity of highest weight (or singular) vectors associated with character chi_83 of Monster module.
-A034473 Multiplicity of highest weight (or singular) vectors associated with character chi_85 of Monster module.
-A034477 Multiplicity of highest weight (or singular) vectors associated with character chi_89 of Monster module.
-A034487 Multiplicity of highest weight (or singular) vectors associated with character chi_99 of Monster module.
-A034490 Multiplicity of highest weight (or singular) vectors associated with character chi_102 of Monster module.
-A034493 Multiplicity of highest weight (or singular) vectors associated with character chi_105 of Monster module.
-A034495 Multiplicity of highest weight (or singular) vectors associated with character chi_107 of Monster module.
-A034512 Multiplicity of highest weight (or singular) vectors associated with character chi_124 of Monster module.
-A034516 Multiplicity of highest weight (or singular) vectors associated with character chi_128 of Monster module.
-A034523 Multiplicity of highest weight (or singular) vectors associated with character chi_135 of Monster module.
 A034599 Theta series of (putative) extremal 2-modular even lattice in dimension 20
 A034600 Theta series of (putative) extremal 2-modular even lattice in dimension 24
 A034601 Theta series of (putative) extremal 2-modular even lattice in dimension 28.

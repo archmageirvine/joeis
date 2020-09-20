@@ -106,15 +106,12 @@ public class AbstractSequenceTest extends TestCase {
   /**
    * Directly test the supplied sequences.
    * @param args sequences to test
+   * @throws IOException if an I/O error occurs
    */
-  public static void main(final String[] args) {
+  public static void main(final String[] args) throws IOException {
     for (final String aNumber : args) {
       System.out.println("Running " + aNumber);
-      try {
-        new AbstractSequenceTest().check(aNumber.endsWith(".java") ? aNumber.substring(0, aNumber.length() - 5) : aNumber);
-      } catch (final Throwable t) {
-        System.out.println("E " + t.getMessage());
-      }
+      new AbstractSequenceTest().check(aNumber.endsWith(".java") ? aNumber.substring(0, aNumber.length() - 5) : aNumber);
     }
   }
 }

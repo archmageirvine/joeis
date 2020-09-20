@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A336882.
+ * A336882 allocated for Peter Munn.
  * @author Sean A. Irvine
  */
 public class A336882 extends MemorySequence {

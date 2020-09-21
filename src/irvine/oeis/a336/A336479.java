@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A336479 allocated for Mohamed Sami Gattoufi.
+ * A336479 For any number n with k binary digits, a(n) is the number of tilings T of a size k staircase polyomino (as described in A335547) such that the sizes of the polyominoes at the base of T correspond to the lengths of runs of consecutive equal digits in the binary representation of n.
  * @author Sean A. Irvine
  */
 public class A336479 extends A000045 {

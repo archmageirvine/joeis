@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A336287 allocated for A.H.M. Smeets.
+ * A336287 Period of orbit of Post's tag system ({0,1},{(0,1),(1,00110)},3,100^n).
  * @author Sean A. Irvine
  */
 public class A336287 implements Sequence {

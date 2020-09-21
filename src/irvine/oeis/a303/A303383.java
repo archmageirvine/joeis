@@ -5,7 +5,7 @@ package irvine.oeis.a303;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A303383 Total volume of the family of cubes with side length q such that n = p + q and p &lt;= q.
+ * A303383 Total volume of all cubes with side length q such that n = p + q and p &lt;= q.
  * @author Georg Fischer
  */
 public class A303383 extends HolonomicRecurrence {

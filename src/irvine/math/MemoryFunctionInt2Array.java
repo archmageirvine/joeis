@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 /**
  * Definition of a five argument function that remembers previously computed results.
- * @author Georg Fische
+ * @author Georg Fischer
  * @param <R> result type
  */
 public abstract class MemoryFunctionInt2Array<R> extends HashMap<String, R> {

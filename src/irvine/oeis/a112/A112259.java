@@ -4,7 +4,7 @@ package irvine.oeis.a112;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A112259 Let p = the golden mean = (1+sqrt(5))/2. A point in 3-space is identified by three numbers t = (a,b,c). f(t) is the product a*b*c. Let t = (-1/p,1,p): using the rules of 'triternion' multiplication, e.g., (1,2,3)*(1,2,3)= 1,2,3 + 6,2,4 + 6,9,3 = (13,13,10), then -f(t^n) gives the sequence.
+ * A112259 Expansion of x*(1+8*x)/((1-8*x)*(1+11*x+64*x^2)).
  * @author Georg Fischer
  */
 public class A112259 extends GeneratingFunctionSequence {

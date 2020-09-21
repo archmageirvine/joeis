@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.FiniteSequence;
 
 /**
- * A335798.
+ * A335798 Orders of centralizers of conjugacy classes of the Monster in Atlas order.
  * @author Sean A. Irvine
  */
 public class A335798 extends FiniteSequence {

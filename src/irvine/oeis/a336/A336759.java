@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a010.A010785;
 
 /**
- * A336759 allocated for Falcon Shapiro.
+ * A336759 a(n) is the smallest positive number that is the sum of no fewer than n distinct repdigits.
  * @author Sean A. Irvine
  */
 public class A336759 extends A010785 {

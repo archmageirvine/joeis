@@ -5,7 +5,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000045;
 
 /**
- * A023183 a(n) = least k such that Fib(k) ends with n.
+ * A023183 a(n) = least k such that Fibonacci(k) ends with n, or -1 if there are none.
  * @author Sean A. Irvine
  */
 public class A023183 implements Sequence {

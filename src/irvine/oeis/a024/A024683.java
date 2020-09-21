@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A024683 a(n) = number of ways p(n) is a sum of two composite numbers r,s satisfying r &lt; s.
+ * A024683 a(n) is the number of ways prime(n) is a sum of two composite numbers r,s satisfying r &lt; s.
  * @author Sean A. Irvine
  */
 public class A024683 implements Sequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002129;
 
 
 /**
- * A327242 Expansion of Sum_{k>=1} tau(k) * x^k / (1 + x^k)^2, where tau = A000005.
+ * A327242 Expansion of Sum_{k&gt;=1} tau(k) * x^k / (1 + x^k)^2, where tau = A000005.
  * @author Georg Fischer
  */
 public class A327242 extends InverseMobiusTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a020.A020482;
 
 
 /**
- * A159482 Greatest odd prime q < 2*n such that p < q and p prime and p = 2*n - q or 0 if no such prime exists.
+ * A159482 Greatest odd prime q &lt; 2*n such that p &lt; q and p prime and p = 2*n - q or 0 if no such prime exists.
  * @author Georg Fischer
  */
 public class A159482 extends PrependSequence {

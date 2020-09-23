@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a000.A000119;
 
 /**
- * A303903 Expansion of (1 - x^2)*Product_{k>=3} (1 + x^Fibonacci(k)).
+ * A303903 Expansion of (1 - x^2)*Product_{k&gt;=3} (1 + x^Fibonacci(k)).
  * @author Georg Fischer
  */
 public class A303903 extends PrependSequence {

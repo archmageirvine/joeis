@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001222;
 
 
 /**
- * A086436 Maximum number of parts possible in a factorization of n; a(1) = 1, and for n > 1, a(n) = A001222(n) = bigomega(n).
+ * A086436 Maximum number of parts possible in a factorization of n; a(1) = 1, and for n &gt; 1, a(n) = A001222(n) = bigomega(n).
  * @author Georg Fischer
  */
 public class A086436 extends PrependSequence {

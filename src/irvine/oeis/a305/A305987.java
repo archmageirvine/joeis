@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007838;
 
 
 /**
- * A305987 Expansion of e.g.f. Product_{k>=1} (1 + (exp(x) - 1)^k/k).
+ * A305987 Expansion of e.g.f. Product_{k&gt;=1} (1 + (exp(x) - 1)^k/k).
  * @author Georg Fischer
  */
 public class A305987 extends Stirling2TransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a164.A164457;
 
 
 /**
- * A286938 Length of n-th iterate of the mapping 00->001, 1->10, as in A284932.
+ * A286938 Length of n-th iterate of the mapping 00-&gt;001, 1-&gt;10, as in A284932.
  * @author Georg Fischer
  */
 public class A286938 extends PrependSequence {

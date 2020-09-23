@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a001.A001970;
 
 /**
- * A317911 Expansion of Product_{k>=2} 1/(1 - x^k)^p(k), where p(k) = number of partitions of k (A000041).
+ * A317911 Expansion of Product_{k&gt;=2} 1/(1 - x^k)^p(k), where p(k) = number of partitions of k (A000041).
  * @author Georg Fischer
  */
 public class A317911 extends PrependSequence {

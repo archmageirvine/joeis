@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006266;
 
 
 /**
- * A145188 Continued cotangent recurrence a(n+1)=a(n)^3+3*a(n) and a(1)=14
+ * A145188 Continued cotangent recurrence a(n+1)=a(n)^3+3*a(n) and a(1)=14.
  * @author Georg Fischer
  */
 public class A145188 extends PrependSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006285;
 
 
 /**
- * A133122 Odd numbers which cannot be written as the sum of an odd prime and 2^i with i > 0.
+ * A133122 Odd numbers which cannot be written as the sum of an odd prime and 2^i with i &gt; 0.
  * @author Georg Fischer
  */
 public class A133122 extends PrependSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000079;
 
 
 /**
- * A166444 a(0) = 0, a(1) = 1 and for n > 1, a(n) = sum of all previous terms.
+ * A166444 a(0) = 0, a(1) = 1 and for n &gt; 1, a(n) = sum of all previous terms.
  * @author Georg Fischer
  */
 public class A166444 extends PrependSequence {

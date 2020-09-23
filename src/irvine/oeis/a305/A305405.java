@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006882;
 
 
 /**
- * A305405 Expansion of Sum_{k>=0} k!!*x^k/Product_{j=1..k} (1 - j*x).
+ * A305405 Expansion of Sum_{k&gt;=0} k!!*x^k/Product_{j=1..k} (1 - j*x).
  * @author Georg Fischer
  */
 public class A305405 extends Stirling2TransformSequence {

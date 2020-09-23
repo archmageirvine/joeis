@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a016.A016027;
 
 /**
- * A239681 Primality of Mersenne number 2^prime(n)-1
+ * A239681 Primality of Mersenne number 2^prime(n)-1.
  * @author Georg Fischer
  */
 public class A239681 extends CharacteristicFunction {

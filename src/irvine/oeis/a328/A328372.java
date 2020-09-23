@@ -7,7 +7,7 @@ import irvine.oeis.a143.A143259;
 
 
 /**
- * A328372 Expansion of Sum_{k>=1} x^(k^2) / (1 - x^(2*k^2)).
+ * A328372 Expansion of Sum_{k&gt;=1} x^(k^2) / (1 - x^(2*k^2)).
  * @author Georg Fischer
  */
 public class A328372 extends InverseMobiusTransformSequence {

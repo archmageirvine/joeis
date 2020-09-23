@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035019.
+ * A035019 Sizes of successive shells in hexagonal (or A_2) lattice.
  * @author Sean A. Irvine
  */
 public class A035019 implements Sequence {

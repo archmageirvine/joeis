@@ -7,7 +7,7 @@ import irvine.oeis.a011.A011764;
 
 
 /**
- * A165421 a(1) = 1, a(2) = 3, a(n) = product of the previous terms for n >= 3.
+ * A165421 a(1) = 1, a(2) = 3, a(n) = product of the previous terms for n &gt;= 3.
  * @author Georg Fischer
  */
 public class A165421 extends PrependSequence {

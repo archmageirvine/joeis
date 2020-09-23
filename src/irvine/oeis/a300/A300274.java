@@ -7,7 +7,7 @@ import irvine.oeis.a015.A015128;
 
 
 /**
- * A300274 G.f.: 1 + Sum_{n>=1} a(n)*x^n/(1 - x^n) = Product_{n>=1} (1 + x^n)/(1 - x^n).
+ * A300274 G.f.: 1 + Sum_{n&gt;=1} a(n)*x^n/(1 - x^n) = Product_{n&gt;=1} (1 + x^n)/(1 - x^n).
  * @author Georg Fischer
  */
 public class A300274 extends MobiusTransformSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001043;
 
 
 /**
- * A164653 a(1) = 1, for n>=2: a(n) = sum of two consecutive noncomposite numbers A008578.
+ * A164653 a(1) = 1, for n&gt;=2: a(n) = sum of two consecutive noncomposite numbers A008578.
  * @author Georg Fischer
  */
 public class A164653 extends PrependSequence {

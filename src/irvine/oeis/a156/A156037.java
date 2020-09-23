@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006093;
 
 
 /**
- * A156037 Largest nonprime < n-th prime.
+ * A156037 Largest nonprime &lt; n-th prime.
  * @author Georg Fischer
  */
 public class A156037 extends PrependSequence {

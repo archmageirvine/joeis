@@ -6,7 +6,7 @@ import irvine.oeis.BinomialTransformSequence;
 import irvine.oeis.a022.A022629;
 
 /**
- * A307259 Expansion of (1/(1 - x)) * Product_{k>=1} (1 + k*x^k/(1 - x)^k).
+ * A307259 Expansion of (1/(1 - x)) * Product_{k&gt;=1} (1 + k*x^k/(1 - x)^k).
  * @author Georg Fischer
  */
 public class A307259 extends BinomialTransformSequence {

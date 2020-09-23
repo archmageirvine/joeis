@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001405;
 
 
 /**
- * A305560 Expansion of Sum_{k>=0} binomial(k,floor(k/2))*x^k/Product_{j=1..k} (1 - j*x).
+ * A305560 Expansion of Sum_{k&gt;=0} binomial(k,floor(k/2))*x^k/Product_{j=1..k} (1 - j*x).
  * @author Georg Fischer
  */
 public class A305560 extends Stirling2TransformSequence {

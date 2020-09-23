@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000670;
 
 
 /**
- * A083355 Number of preferential arrangements for the set partitions of the n-set [1, 2, 3,...,n].
+ * A083355 Number of preferential arrangements for the set partitions of the n-set [1,2,3,...,n].
  * @author Georg Fischer
  */
 public class A083355 extends Stirling2TransformSequence {

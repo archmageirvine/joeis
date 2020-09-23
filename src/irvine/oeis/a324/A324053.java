@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a033.A033553;
 
 /**
- * A324053 a(n) = 1 if n > 3 and A002322(n) divides n-3, 0 otherwise; Characteristic function of 3-Knödel numbers.
+ * A324053 a(n) = 1 if n &gt; 3 and A002322(n) divides n-3, 0 otherwise; Characteristic function of 3-Kn\u00f6del numbers.
  * @author Georg Fischer
  */
 public class A324053 extends CharacteristicFunction {

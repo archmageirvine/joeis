@@ -7,7 +7,7 @@ import irvine.oeis.PrependSequence;
 import irvine.oeis.a007.A007294;
 
 /**
- * A303906 Expansion of Product_{k>=2} 1/(1 - x^(k*(k+1)/2)).
+ * A303906 Expansion of Product_{k&gt;=2} 1/(1 - x^(k*(k+1)/2)).
  * @author Georg Fischer
  */
 public class A303906 extends PrependSequence {

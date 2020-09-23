@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a050.A050376;
 
 /**
- * A302777 a(n) = 1 if n is of the form p^(2^k) where p is prime and k >= 0, otherwise 0.
+ * A302777 a(n) = 1 if n is of the form p^(2^k) where p is prime and k &gt;= 0, otherwise 0.
  * @author Georg Fischer
  */
 public class A302777 extends CharacteristicFunction {

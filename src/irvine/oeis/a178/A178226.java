@@ -6,7 +6,7 @@ import irvine.oeis.CharacteristicFunction;
 import irvine.oeis.a154.A154809;
 
 /**
- * A178226 Characteristic function of A154809 (numbers that are not binary palindromes)
+ * A178226 Characteristic function of A154809 (numbers that are not binary palindromes).
  * @author Georg Fischer
  */
 public class A178226 extends CharacteristicFunction {

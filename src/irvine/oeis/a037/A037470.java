@@ -7,7 +7,7 @@ import irvine.oeis.a020.A020657;
 
 
 /**
- * A037470 a(n)=Sum{d(i)*7^i: i=0, 1,...,m}, where Sum{d(i)*6^i: i=0, 1,...,m} is the base 6 representation of n.
+ * A037470 a(n)=Sum{d(i)*7^i: i=0,1,...,m}, where Sum{d(i)*6^i: i=0,1,...,m} is the base 6 representation of n.
  * @author Georg Fischer
  */
 public class A037470 extends PrependSequence {

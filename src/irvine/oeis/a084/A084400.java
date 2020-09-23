@@ -7,7 +7,7 @@ import irvine.oeis.a050.A050376;
 
 
 /**
- * A084400 a(1) = 1; for n>1, a(n) = smallest number that does not divide the product of all previous terms.
+ * A084400 a(1) = 1; for n&gt;1, a(n) = smallest number that does not divide the product of all previous terms.
  * @author Georg Fischer
  */
 public class A084400 extends PrependSequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000984;
 
 
 /**
- * A305406 Expansion of Sum_{k>=0} binomial(2*k,k)*x^k/Product_{j=1..k} (1 - j*x).
+ * A305406 Expansion of Sum_{k&gt;=0} binomial(2*k,k)*x^k/Product_{j=1..k} (1 - j*x).
  * @author Georg Fischer
  */
 public class A305406 extends Stirling2TransformSequence {

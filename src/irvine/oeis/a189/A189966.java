@@ -7,7 +7,7 @@ import irvine.oeis.a188.A188939;
 
 
 /**
- * A189966 Decimal expansion of (3+sqrt(33))/4, which has periodic continued fractions [2, 5, 2, 1, 2, 5, 2, 1,...] and [3/2, 1, 3/2, 1, ...].
+ * A189966 Decimal expansion of (3+sqrt(33))/4, which has periodic continued fractions [2,5,2,1,2,5,2,1,...] and [3/2, 1, 3/2, 1, ...].
  * @author Georg Fischer
  */
 public class A189966 extends PrependSequence {

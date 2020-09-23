@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006125;
 
 
 /**
- * A335390 a(n) = Sum_{k=0..n} Stirling2(n,k) * 2^binomial(k, 2).
+ * A335390 a(n) = Sum_{k=0..n} Stirling2(n,k) * 2^binomial(k,2).
  * @author Georg Fischer
  */
 public class A335390 extends Stirling2TransformSequence {

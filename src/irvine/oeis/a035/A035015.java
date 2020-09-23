@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a003.A003285;
 
 /**
- * A035015.
+ * A035015 Period of continued fraction for square root of n-th squarefree integer.
  * @author Sean A. Irvine
  */
 public class A035015 extends A003285 {

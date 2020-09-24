@@ -9,16 +9,18 @@ import irvine.math.z.Z;
 public class A000702 extends A000700 {
 
   private final A000041 mA41 = new A000041();
-
-  {
-    super.next();
-    super.next();
-    mA41.next();
-    mA41.next();
-  }
+  private boolean mFirst = true;
 
   @Override
   public Z next() {
+    if (mFirst) {
+      mFirst = false;
+      super.next();
+      mA41.next();
+      super.next();
+      mA41.next();
+      return Z.ONE;
+    }
     return mA41.next().add(super.next().multiply(3)).divide(2);
   }
 }

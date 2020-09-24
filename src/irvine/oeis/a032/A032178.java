@@ -1,8 +1,8 @@
 package irvine.oeis.a032;
 
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
+import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
+import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
@@ -16,7 +16,7 @@ public class A032178 implements Sequence {
 
   // WEIGH transform (actually weighout in Maple transforms)
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final MemorySequence mA = MemorySequence.cachedSequence(new PrependSequence(new A032177(), 0));
   private int mN = 0;
 

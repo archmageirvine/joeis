@@ -40,16 +40,3 @@ public class A032317 extends MemoryFunction2<Integer, Z> implements Sequence {
     return get(++mN, mN);
   }
 }
-/*
-b:= proc(n, i) option remember; `if`(n=0, 1, `if`(i<1, 0,
-
-      add(multinomial(n, i$j, n-i*j)*binomial(b((i-1)$2), j)
-
-       *b(n-i*j, i-1), j=0..n/i)))
-
-    end:
-
-a:= n-> b((n-1)$2):
-
-seq(a(n), n=1..30);
- */

@@ -2,12 +2,13 @@ package irvine.oeis.a035;
 
 import irvine.math.z.Z;
 import irvine.oeis.a034.A034886;
+import irvine.util.string.StringUtils;
 
 /**
- * A035065 Numbers k such that k! has a prime number of digits.
+ * A035067 n! has a palindromic prime number of digits.
  * @author Sean A. Irvine
  */
-public class A035065 extends A034886 {
+public class A035067 extends A034886 {
 
   private long mN = -1;
 
@@ -15,7 +16,8 @@ public class A035065 extends A034886 {
   public Z next() {
     while (true) {
       ++mN;
-      if (super.next().isProbablePrime()) {
+      final Z t = super.next();
+      if (t.isProbablePrime() && StringUtils.isPalindrome(t.toString())) {
         return Z.valueOf(mN);
       }
     }

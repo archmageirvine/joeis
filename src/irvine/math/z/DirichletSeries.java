@@ -1,6 +1,7 @@
 package irvine.math.z;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -15,6 +16,12 @@ import irvine.math.polynomial.Polynomial;
  */
 public class DirichletSeries extends TreeMap<Z, Z> {
 
+  /** The unit Dirichlet series. */
+  public static final DirichletSeries ONE = new DirichletSeries();
+  static {
+    ONE.put(Z.ONE, Z.ONE);
+  }
+
   /**
    * Compute a zeta function as a Dirichlet series, <code>1/(1-p^(-s))</code>.
    * @param p prime
@@ -22,12 +29,28 @@ public class DirichletSeries extends TreeMap<Z, Z> {
    * @param f scalar coefficient
    * @return Dirichlet series
    */
-  public static DirichletSeries zeta(final int p, final long max, final Z f) {
+  public static DirichletSeries zeta(final long p, final long max, final Z f) {
     final DirichletSeries ds = new DirichletSeries();
-    ds.put(Z.ONE, f);
+    ds.put(Z.ONE, Z.ONE);
     Z u = f;
     for (long q = p; q <= max; q *= p, u = u.multiply(f)) {
       ds.put(Z.valueOf(q), u);
+    }
+    return ds;
+  }
+
+  /**
+   * Convert an ordinary list into a (sparse) Dirichlet series.
+   * @param terms list
+   * @return Dirichlet series version
+   */
+  public static DirichletSeries fromList(final List<Z> terms) {
+    final DirichletSeries ds = new DirichletSeries();
+    for (int k = 0; k < terms.size(); ++k) {
+      final Z t = terms.get(k);
+      if (!Z.ZERO.equals(t)) {
+        ds.put(Z.valueOf(k), t);
+      }
     }
     return ds;
   }
@@ -72,6 +95,15 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Return a coefficient of the series
+   * @param base denominator
+   * @return coefficient
+   */
+  public Z coeff(final long base) {
+    return coeff(Z.valueOf(base));
+  }
+
+  /**
    * Compute the Dirichlet product of two Dirichlet series.
    * @param ds other series
    * @param maxDegree degree limit
@@ -102,13 +134,51 @@ public class DirichletSeries extends TreeMap<Z, Z> {
     return multiply(ds, Z.valueOf(maxDegree));
   }
 
+//  /**
+//   * Compute the Dirichlet product of two Dirichlet series.
+//   * @param ds other series
+//   * @return Dirichlet product
+//   */
+//  public DirichletSeries multiply(final DirichletSeries ds) {
+//    return multiply(ds, null);
+//  }
+
   /**
-   * Compute the Dirichlet product of two Dirichlet series.
-   * @param ds other series
-   * @return Dirichlet product
+   * Compute the power of a Dirichlet series.
+   * @param n power
+   * @return Dirichlet series to given power
+   * @exception ArithmeticException if <code>n</code> is negative.
    */
-  public DirichletSeries multiply(final DirichletSeries ds) {
-    return multiply(ds, null);
+  public DirichletSeries pow(final int n, final Z max) {
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    // x^0
+    if (n == 0) {
+      return DirichletSeries.ONE;
+    }
+    if (isEmpty()) {
+      return this; // 0^n
+    }
+    if (size() == 1 && get(Z.ONE) != null) {
+      return this; // 1^n
+    }
+    // x^1
+    if (n == 1) {
+      return this;
+    }
+    final DirichletSeries s = multiply(this, max).pow(n / 2, max);
+    return (n & 1) == 0 ? s : multiply(s, max);
+  }
+
+  /**
+   * Compute the power of a Dirichlet series.
+   * @param n power
+   * @return Dirichlet series to given power
+   * @exception ArithmeticException if <code>n</code> is negative.
+   */
+  public DirichletSeries pow(final int n, final long max) {
+    return pow(n, Z.valueOf(max));
   }
 
   /**
@@ -138,6 +208,16 @@ public class DirichletSeries extends TreeMap<Z, Z> {
       }
     }
     return ds;
+  }
+
+  /**
+   * Return a scaled version of this Dirichlet series.
+   * @param power power to apply
+   * @param max maximum term to retain
+   * @return scaled series
+   */
+  public DirichletSeries scale(final int power, final long max) {
+    return scale(power, Z.valueOf(max));
   }
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);

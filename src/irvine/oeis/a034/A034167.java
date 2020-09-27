@@ -1,9 +1,7 @@
 package irvine.oeis.a034;
 
-import java.util.List;
-
 import irvine.factor.prime.Fast;
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,22 +14,22 @@ public class A034167 implements Sequence {
   private int mN = 0;
   private int mMax = 100;
   private final Fast mPrime = new Fast();
-  private List<Z> mD = updateDirichlet();
+  private DirichletSeries mD = updateDirichlet();
 
-  private List<Z> updateDirichlet() {
-    List<Z> d = Dirichlet.dirichletProduct(Dirichlet.zetaNum(8, mMax, Z.ONE), Dirichlet.zeta(8, mMax, Z.ONE));
-    for (int p = 3; p <= mMax; p = (int) mPrime.nextPrime(p)) {
-      switch (p % 7) {
+  private DirichletSeries updateDirichlet() {
+    DirichletSeries d = DirichletSeries.zetaNum(8, mMax, Z.ONE).multiply(DirichletSeries.zeta(8, mMax, Z.ONE), mMax);
+    for (long p = 3; p <= mMax; p = mPrime.nextPrime(p)) {
+      switch ((int) (p % 7)) {
         case 1:
-          final List<Z> dp = Dirichlet.dirichletProduct(Dirichlet.zetaNum(p, mMax, Z.ONE), Dirichlet.zeta(p, mMax, Z.ONE));
-          d = Dirichlet.dirichletProduct(d, Dirichlet.dirichletProduct(dp, Dirichlet.dirichletProduct(dp, dp)));
+          final DirichletSeries dp = DirichletSeries.zetaNum(p, mMax, Z.ONE).multiply(DirichletSeries.zeta(p, mMax, Z.ONE), mMax);
+          d = d.multiply(dp.pow(3, mMax), mMax);
           break;
         case 2:
         case 4:
-          final long p3 = p * (long) p * p;
+          final long p3 = p * p * p;
           if (p3 < mMax) {
-            final List<Z> da = Dirichlet.dirichletProduct(Dirichlet.zetaNum((int) p3, mMax, Z.ONE), Dirichlet.zeta((int) p3, mMax, Z.ONE));
-            d = Dirichlet.dirichletProduct(d, da);
+            final DirichletSeries da = DirichletSeries.zetaNum(p3, mMax, Z.ONE).multiply(DirichletSeries.zeta((int) p3, mMax, Z.ONE), mMax);
+            d = d.multiply(da, mMax);
           }
           break;
         default:
@@ -48,7 +46,7 @@ public class A034167 implements Sequence {
         mMax *= 2;
         mD = updateDirichlet();
       }
-      if (!Z.ZERO.equals(mD.get(mN))) {
+      if (!Z.ZERO.equals(mD.coeff(mN))) {
         return Z.valueOf(mN);
       }
     }

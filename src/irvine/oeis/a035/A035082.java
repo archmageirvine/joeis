@@ -23,7 +23,7 @@ public class A035082 implements Sequence {
 
   @Override
   public Z next() {
-    int n = mA.size();
+    final int n = mA.size();
     if (n < 2) {
       mA.add(Z.valueOf(n));
     } else {

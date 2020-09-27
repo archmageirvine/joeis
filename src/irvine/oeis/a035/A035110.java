@@ -1,8 +1,6 @@
 package irvine.oeis.a035;
 
-import java.util.List;
-
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 
 /**
@@ -13,25 +11,22 @@ public class A035110 extends A035111 {
 
   private int mN = 0;
   private int mMax = 100;
-  private List<Z> mD = updateDirichlet();
+  private DirichletSeries mD = updateDirichlet();
 
   // zeta_(\Q(tau))(s)
-  private List<Z> zetaQuadraticTau(final int n) {
-    List<Z> d = Dirichlet.zeta(5, n, Z.ONE);
-    for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
-      switch (p % 5) {
+  private DirichletSeries zetaQuadraticTau(final int n) {
+    DirichletSeries d = DirichletSeries.zeta(5, n, Z.ONE);
+    for (long p = 2; p <= n; p = mPrime.nextPrime(p)) {
+      switch ((int) (p % 5)) {
         case 1:
         case 4:
-          final List<Z> dp = Dirichlet.zeta(p, n, Z.ONE);
-          final List<Z> dp2 = Dirichlet.dirichletProduct(dp, dp);
-          d = Dirichlet.dirichletProduct(d, dp2);
+          d = d.multiply(DirichletSeries.zeta(p, n, Z.ONE).pow(2, n), n);
           break;
         case 2:
         case 3:
-          final long p2 = p * (long) p;
+          final long p2 = p * p;
           if (p2 < n) {
-            final List<Z> db = Dirichlet.zeta((int) p2, n, Z.ONE);
-            d = Dirichlet.dirichletProduct(d, db);
+            d = d.multiply(DirichletSeries.zeta(p2, n, Z.ONE), n);
           }
           break;
         default:
@@ -41,10 +36,10 @@ public class A035110 extends A035111 {
     return d;
   }
 
-  private List<Z> updateDirichlet() {
-    final List<Z> d = Dirichlet.scale(phiIcosahedron(mMax / 3), 3, mMax);
-    final List<Z> zetaTau3 = Dirichlet.scale(zetaQuadraticTau(mMax / 3), 3, mMax);
-    return Dirichlet.dirichletProduct(d, zetaTau3);
+  private DirichletSeries updateDirichlet() {
+    final DirichletSeries d = phiIcosahedron(mMax / 3).scale(3, mMax);
+    final DirichletSeries zetaTau3 = zetaQuadraticTau(mMax / 3).scale(3, mMax);
+    return d.multiply(zetaTau3, mMax);
   }
 
   @Override
@@ -54,7 +49,7 @@ public class A035110 extends A035111 {
         mMax *= 2;
         mD = updateDirichlet();
       }
-      final Z t = mD.get(mN);
+      final Z t = mD.coeff(mN);
       if (!Z.ZERO.equals(t)) {
         return t;
       }

@@ -1,9 +1,7 @@
 package irvine.oeis.a035;
 
-import java.util.List;
-
 import irvine.factor.prime.Fast;
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,33 +14,27 @@ public class A035108 implements Sequence {
   private int mN = 0;
   private int mMax = 100;
   private final Fast mPrime = new Fast();
-  private List<Z> mD = updateDirichlet();
+  private DirichletSeries mD = updateDirichlet();
 
-  private List<Z> updateDirichlet() {
-    List<Z> d = Dirichlet.zeta(5, mMax, Z.ONE);
-    for (int p = 2; p <= mMax; p = (int) mPrime.nextPrime(p)) {
-      switch (p % 5) {
+  private DirichletSeries updateDirichlet() {
+    DirichletSeries d = DirichletSeries.zeta(5, mMax, Z.ONE);
+    for (long p = 2; p <= mMax; p = mPrime.nextPrime(p)) {
+      switch ((int) (p % 5)) {
         case 1:
-          final List<Z> dp = Dirichlet.zeta(p, mMax, Z.ONE);
-          final List<Z> dp2 = Dirichlet.dirichletProduct(dp, dp);
-          final List<Z> dp4 = Dirichlet.dirichletProduct(dp2, dp2);
-          d = Dirichlet.dirichletProduct(d, dp4);
+          d = d.multiply(DirichletSeries.zeta(p, mMax, Z.ONE).pow(4, mMax), mMax);
           break;
         case 4:
-          final long p2 = p * (long) p;
+          final long p2 = p * p;
           if (p2 < mMax) {
-            final List<Z> da = Dirichlet.zeta((int) p2, mMax, Z.ONE);
-            final List<Z> da2 = Dirichlet.dirichletProduct(da, da);
-            d = Dirichlet.dirichletProduct(d, da2);
+            d = d.multiply(DirichletSeries.zeta(p2, mMax, Z.ONE).pow(2, mMax), mMax);
           }
           break;
         case 2:
         case 3:
-          final long pb2 = p * (long) p;
+          final long pb2 = p * p;
           final long p4 = pb2 * pb2;
           if (p4 < mMax) {
-            final List<Z> db = Dirichlet.zeta((int) p4, mMax, Z.ONE);
-            d = Dirichlet.dirichletProduct(d, db);
+            d = d.multiply(DirichletSeries.zeta(p4, mMax, Z.ONE), mMax);
           }
           break;
         default:
@@ -59,7 +51,7 @@ public class A035108 implements Sequence {
         mMax *= 2;
         mD = updateDirichlet();
       }
-      if (!Z.ZERO.equals(mD.get(mN))) {
+      if (!Z.ZERO.equals(mD.coeff(mN))) {
         return Z.valueOf(mN);
       }
     }

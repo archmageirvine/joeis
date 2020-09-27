@@ -1,9 +1,7 @@
 package irvine.oeis.a035;
 
-import java.util.List;
-
 import irvine.factor.prime.Fast;
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -16,27 +14,27 @@ public class A035111 implements Sequence {
   private int mN = 0;
   private int mMax = 100;
   protected final Fast mPrime = new Fast();
-  private List<Z> mD = phiIcosahedron(mMax);
+  private DirichletSeries mD = phiIcosahedron(mMax);
 
-  protected List<Z> phiIcosahedron(final int n) {
-    List<Z> d = Dirichlet.dirichletProduct(Dirichlet.zetaNum(5, n, Z.ONE), Dirichlet.zeta(5, n, Z.FIVE));
-    for (int p = 2; p <= n; p = (int) mPrime.nextPrime(p)) {
-      switch (p % 5) {
+  protected DirichletSeries phiIcosahedron(final int n) {
+    DirichletSeries d = DirichletSeries.zetaNum(5, n, Z.ONE).multiply(DirichletSeries.zeta(5, n, Z.FIVE), n);
+    for (long p = 2; p <= n; p = mPrime.nextPrime(p)) {
+      switch ((int) (p % 5)) {
         case 1:
         case 4:
-          final List<Z> dp = Dirichlet.dirichletProduct(Dirichlet.zetaNum(p, n, Z.ONE), Dirichlet.zeta(p, n, Z.valueOf(p)));
-          d = Dirichlet.dirichletProduct(d, Dirichlet.dirichletProduct(dp, dp));
+          final DirichletSeries dp = DirichletSeries.zetaNum(p, n, Z.ONE).multiply(DirichletSeries.zeta(p, n, Z.valueOf(p)), n);
+          d = d.multiply(dp.pow(2, n), n);
           break;
         case 2:
         case 3:
-          final long p2 = p * (long) p;
+          final long p2 = p * p;
           if (p2 < n) {
-            final List<Z> da = Dirichlet.dirichletProduct(Dirichlet.zetaNum((int) p2, n, Z.ONE), Dirichlet.zeta((int) p2, n, Z.valueOf(p2)));
-            d = Dirichlet.dirichletProduct(d, da);
+            final DirichletSeries da = DirichletSeries.zetaNum(p2, n, Z.ONE).multiply(DirichletSeries.zeta(p2, n, Z.valueOf(p2)), n);
+            d = d.multiply(da, n);
           }
           break;
         default:
-          assert p == 5; // already handled
+          assert p == 5;
           break;
       }
     }
@@ -50,7 +48,7 @@ public class A035111 implements Sequence {
         mMax *= 2;
         mD = phiIcosahedron(mMax);
       }
-      final Z t = mD.get(mN);
+      final Z t = mD.coeff(mN);
       if (!Z.ZERO.equals(t)) {
         return t;
       }

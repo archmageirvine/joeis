@@ -1,10 +1,7 @@
 package irvine.oeis.a031;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import irvine.factor.prime.Fast;
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -17,14 +14,13 @@ public class A031362 implements Sequence {
   // After R. J. Mathar
 
   private final Fast mPrime = new Fast();
-  private final List<Z> mZetaP = new ArrayList<>();
-  private List<Z> mDirichlet = null;
+  private final DirichletSeries mZetaP = new DirichletSeries();
+  private DirichletSeries mDirichlet = null;
   private int mN = -9;
   private int mMaxOrd = 1;
 
   {
-    mZetaP.add(Z.ZERO);
-    mZetaP.add(Z.ONE);
+    mZetaP.put(Z.ONE, Z.ONE);
   }
 
   @Override
@@ -33,19 +29,16 @@ public class A031362 implements Sequence {
     if (mN >= mMaxOrd) {
       // Regenerate (progressively bigger chunks each time)
       mMaxOrd = 2 * mN;
-      while (mZetaP.size() < mMaxOrd) {
-        mZetaP.add(Z.ZERO);
-      }
-      List<Z> zp = mZetaP;
+      DirichletSeries zp = mZetaP;
       for (int e = 1; e <= mMaxOrd; e += 5) {
         if (mPrime.isPrime(e)) {
-          zp = Dirichlet.dirichletProduct(zp, Dirichlet.zetaNum(e, mMaxOrd, Z.ONE));
-          zp = Dirichlet.dirichletProduct(zp, Dirichlet.zeta(e, mMaxOrd, Z.ONE));
+          zp = zp.multiply(DirichletSeries.zetaNum(e, mMaxOrd, Z.ONE), mMaxOrd);
+          zp = zp.multiply(DirichletSeries.zeta(e, mMaxOrd, Z.ONE), mMaxOrd);
         }
       }
-      zp = Dirichlet.dirichletProduct(zp, zp);
+      zp = zp.pow(2, mMaxOrd);
       mDirichlet = zp;
     }
-    return mDirichlet.get(mN);
+    return mDirichlet.coeff(mN);
   }
 }

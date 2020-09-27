@@ -1,9 +1,6 @@
 package irvine.oeis.a031;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import irvine.math.z.Dirichlet;
+import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.oeis.PrependSequence;
@@ -20,22 +17,9 @@ public class A031366 implements Sequence {
 
   private final MemorySequence mL1 = MemorySequence.cachedSequence(new PrependSequence(new A035187(), Z.ZERO));
 
-  private List<Z> mDirichlet = null;
+  private DirichletSeries mDirichlet = null;
   private int mN = 0;
   private int mMaxOrd = 1;
-
-  private List<Z> l1i2(final List<Z> l1i) {
-    final List<Z> l1i2 = new ArrayList<>();
-    l1i2.add(Z.ZERO);
-    l1i2.add(Z.ONE);
-    for (int k = 1; k < l1i.size(); ++k) {
-      l1i2.add(Z.ZERO);
-    }
-    for (int k = 2; k * k < l1i2.size(); ++k) {
-      l1i2.set(k * k, l1i.get(k));
-    }
-    return l1i2;
-  }
 
   @Override
   public Z next() {
@@ -43,13 +27,14 @@ public class A031366 implements Sequence {
       // Regenerate (progressively bigger chunks each time)
       mMaxOrd =  2 * mN;
       mL1.a(mMaxOrd); // force computation of underlying series
-      final List<Z> l1Shift = Dirichlet.shift(mL1);
-      final List<Z> l1i = Dirichlet.inverse(mL1);
-      final List<Z> l1i2 = l1i2(l1i);
-      final List<Z> phi = Dirichlet.dirichletProduct(Dirichlet.dirichletProduct(mL1, l1Shift), l1i2);
-      final List<Z> phiShift = Dirichlet.shift(phi);
-      mDirichlet = Dirichlet.dirichletProduct(phi, phiShift);
+      final DirichletSeries l1 = DirichletSeries.fromList(mL1);
+      final DirichletSeries l1Shift = l1.shift();
+      final DirichletSeries l1i = l1.inverse(mMaxOrd);
+      final DirichletSeries l1i2 = l1i.scale(2, mMaxOrd);
+      final DirichletSeries phi = l1.multiply(l1Shift, mMaxOrd).multiply(l1i2, mMaxOrd);
+      final DirichletSeries phiShift = phi.shift();
+      mDirichlet = phi.multiply(phiShift, mMaxOrd);
     }
-    return mDirichlet.get(mN);
+    return mDirichlet.coeff(mN);
   }
 }

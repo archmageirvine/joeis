@@ -15,12 +15,12 @@ public class A034167 implements Sequence {
 
   private int mN = 0;
   private int mMax = 100;
+  private final Fast mPrime = new Fast();
   private List<Z> mD = updateDirichlet();
 
   private List<Z> updateDirichlet() {
-    final Fast prime = new Fast();
     List<Z> d = Dirichlet.dirichletProduct(Dirichlet.zetaNum(8, mMax, Z.ONE), Dirichlet.zeta(8, mMax, Z.ONE));
-    for (int p = 3; p <= mMax; p = (int) prime.nextPrime(p)) {
+    for (int p = 3; p <= mMax; p = (int) mPrime.nextPrime(p)) {
       switch (p % 7) {
         case 1:
           final List<Z> dp = Dirichlet.dirichletProduct(Dirichlet.zetaNum(p, mMax, Z.ONE), Dirichlet.zeta(p, mMax, Z.ONE));

@@ -8,7 +8,9 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 import irvine.oeis.BikTransformSequence;
 import irvine.oeis.EulerTransformSequence;
+import irvine.oeis.FiniteSequence;
 import irvine.oeis.Sequence;
+import irvine.oeis.SkipSequence;
 
 /**
  * A035082 Number of rooted polygonal cacti (Husimi graphs) with n nodes.
@@ -16,23 +18,18 @@ import irvine.oeis.Sequence;
  */
 public class A035082 implements Sequence {
 
-  // todo broken
-
-  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
-  private final Polynomial<Z> mA = RING.create(Collections.emptyList());
+  protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  protected final Polynomial<Z> mA = RING.create(Collections.emptyList());
 
   @Override
   public Z next() {
-    final int n = mA.size();
+    int n = mA.size();
     if (n < 2) {
       mA.add(Z.valueOf(n));
-    } else if (n == 2) {
-      mA.add(Z.ZERO);
     } else {
       final Polynomial<Z> t = RING.subtract(RING.subtract(BikTransformSequence.bik(mA), RING.one()), mA);
-      System.out.println(t);
-      final Z e = EulerTransformSequence.eulerTransform(t, n);
-      mA.add(e);
+      final Sequence et = new SkipSequence(new EulerTransformSequence(new FiniteSequence(t), 1, Z.ZERO), n);
+      mA.add(et.next());
     }
     return mA.coeff(n);
   }

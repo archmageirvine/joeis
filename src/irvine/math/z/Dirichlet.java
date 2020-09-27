@@ -84,6 +84,34 @@ public final class Dirichlet {
     return res;
   }
 
+  /**
+   * Return a scaled version of a Dirichlet series.
+   * @param series Dirichlet series
+   * @param power power to apply
+   * @param max maximum term to retain
+   * @return scaled series
+   */
+  public static List<Z> scale(final List<Z> series, final int power, final int max) {
+    final List<Z> res = new ArrayList<>();
+    final Z zmax = Z.valueOf(max);
+    for (int k = 1; res.size() <= max; ++k) {
+      final Z t = Z.valueOf(k).pow(power);
+      if (t.compareTo(zmax) > 0) {
+        // Ensure we fill out series to requested max
+        while (res.size() <= max) {
+          res.add(Z.ZERO);
+        }
+        return res;
+      }
+      final int ti = t.intValueExact();
+      while (res.size() < ti) {
+        res.add(Z.ZERO);
+      }
+      res.add(series.get(k));
+    }
+    return res;
+  }
+
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
 
   /**
@@ -93,5 +121,24 @@ public final class Dirichlet {
    */
   public static List<Z> inverse(final List<Z> series) {
     return RING.series(RING.one(), RING.create(series).shift(-1), series.size() - 1).shift(1);
+  }
+
+  /**
+   * Return a string representation of this Dirichlet series.
+   * @param series Dirichlet series
+   * @return string representation
+   */
+  public static String toString(final List<Z> series) {
+    final StringBuilder sb = new StringBuilder();
+    for (int k = 0; k < series.size(); ++k) {
+      if (!Z.ZERO.equals(series.get(k))) {
+        if (k == 1) {
+          sb.append(series.get(k));
+        } else {
+          sb.append('+').append(series.get(k)).append('/').append(k).append("^s");
+        }
+      }
+    }
+    return sb.toString();
   }
 }

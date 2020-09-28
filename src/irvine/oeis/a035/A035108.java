@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035108.
+ * A035108 Denominators in expansion of a certain Dirichlet series.
  * @author Sean A. Irvine
  */
 public class A035108 implements Sequence {

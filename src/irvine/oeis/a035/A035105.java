@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000045;
 
 /**
- * A035105.
+ * A035105 a(n) = LCM of Fibonacci sequence {F_1,...,F_n}.
  * @author Sean A. Irvine
  */
 public class A035105 extends A000045 {

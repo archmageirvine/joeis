@@ -3,7 +3,7 @@ package irvine.oeis.a035;
 import irvine.math.z.Z;
 
 /**
- * A035088.
+ * A035088 Number of labeled polygonal cacti (Husimi graphs) with n nodes.
  * @author Sean A. Irvine
  */
 public class A035088 extends A035087 {

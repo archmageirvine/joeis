@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035086.
+ * A035086 Number of increasing rooted polygonal cacti (Husimi graphs) with n nodes.
  * @author Sean A. Irvine
  */
 public class A035086 implements Sequence {

@@ -4,7 +4,7 @@ import irvine.math.z.DirichletSeries;
 import irvine.math.z.Z;
 
 /**
- * A035110.
+ * A035110 Numerators in expansion of a certain Dirichlet series.
  * @author Sean A. Irvine
  */
 public class A035110 extends A035111 {

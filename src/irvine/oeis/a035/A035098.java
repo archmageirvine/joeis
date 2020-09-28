@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035098.
+ * A035098 Near-Bell numbers: partitions of an n-multiset with multiplicities 1, 1, 1, ..., 1, 2.
  * @author Sean A. Irvine
  */
 public class A035098 implements Sequence {

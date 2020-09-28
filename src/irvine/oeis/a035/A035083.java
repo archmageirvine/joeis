@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A035083.
+ * A035083 DIK(b)-DIK[ 2 ](b)-b where b is A035082.
  * @author Sean A. Irvine
  */
 public class A035083 extends A035082 {

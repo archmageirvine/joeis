@@ -8,7 +8,7 @@ import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
- * A035085.
+ * A035085 Number of polygonal cacti (Husimi graphs) with n nodes.
  * @author Sean A. Irvine
  */
 public class A035085 extends A035083 {

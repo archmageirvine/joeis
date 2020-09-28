@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035089.
+ * A035089 Smallest prime of form 2^n*k+1.
  * @author Sean A. Irvine
  */
 public class A035089 implements Sequence {

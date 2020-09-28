@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035092.
+ * A035092 Smallest k such that (n^2)*k + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A035092 implements Sequence {

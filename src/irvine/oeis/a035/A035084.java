@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 import irvine.oeis.SkipSequence;
 
 /**
- * A035084.
+ * A035084 BIK(b)-b where b is A035082.
  * @author Sean A. Irvine
  */
 public class A035084 extends A035082 {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000040;
 
 /**
- * A035096.
+ * A035096 a(n) is the smallest k such that prime(n)*k+1 is prime.
  * @author Sean A. Irvine
  */
 public class A035096 extends A000040 {

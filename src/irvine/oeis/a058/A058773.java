@@ -11,6 +11,8 @@ import irvine.math.z.Z;
  */
 public class A058773 extends A058640 {
 
+  // After Michael Somos
+
   private static final Polynomial<Z> C13 = RING.monomial(Z.valueOf(13), 6);
   private static final Polynomial<Z> C15 = RING.monomial(Z.valueOf(15), 7);
   private final Polynomial<Z> mT35Ax1 = RING.create(Collections.emptyList());
@@ -32,8 +34,3 @@ public class A058773 extends A058640 {
     return RING.coeff(num, den, mN);
   }
 }
-
-/*
-t1=T35A+P3(T35A); t2=T35A*P3(T35A);
-T105A=(t1*t2+3*t2-5*t1-15)/(t1^2-t2+6*t1+13);
- */

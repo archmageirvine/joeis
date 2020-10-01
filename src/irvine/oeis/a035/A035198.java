@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035198.
+ * A035198 From a Dirichlet series.
  * @author Sean A. Irvine
  */
 public class A035198 implements Sequence {

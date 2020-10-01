@@ -7,7 +7,7 @@ import irvine.oeis.ComplementaryEquationSequence;
 
 
 /**
- * A299493 Solution b( ) of the complementary equation a(n) = b(n-1) + b(n-2) + b(n-3), where a(0) = 2, a(1) = 4, a(2) = 5; see Comments.
+ * A299493 Solution b( ) of the complementary equation a(n) = b(n-1) + b(n-2) + b(n-3), where a(0) = 1, a(1) = 4, a(2) = 5; see Comments.
  * @author Georg Fischer
  */
 public class A299493 extends ComplementaryEquationSequence {

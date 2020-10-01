@@ -127,7 +127,7 @@ public class HolonomicRecurrence implements Sequence {
         mPolyList.add(ZUtils.toZ(polys[k]));
       } // for k
     }
-    mInitTerms = (initTerms.length() == 0 || initTerms.equals("[]")) ? new Z[0] : ZUtils.toZ(initTerms);
+    mInitTerms = initTerms.isEmpty() || "[]".equals(initTerms) ? new Z[0] : ZUtils.toZ(initTerms);
     initialize();
   } // Constructor
 
@@ -409,7 +409,7 @@ public class HolonomicRecurrence implements Sequence {
       result.append(i == 0 ? '[' : ',');
       for (int j = 0; j < poly.length; ++j) {
         result.append(j == 0 ? '[' : ',');
-        result.append(poly[j].toString());
+        result.append(poly[j]);
       } // for j
       result.append(']');
     } // for i
@@ -428,7 +428,7 @@ public class HolonomicRecurrence implements Sequence {
     int j = 0;
     while (j < initTerms.length) {
       result.append(j == 0 ? '[' : ',');
-      result.append(initTerms[j].toString());
+      result.append(initTerms[j]);
       ++j;
     } // while j
     result.append(']');

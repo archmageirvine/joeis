@@ -23,7 +23,7 @@ import irvine.math.z.Z;
  * @author Georg Fischer
  */
 public class ComplementaryEquationSequence extends HolonomicRecurrence {
-  protected static int sDebug = 0; // 0 = no debugging, 1 = some, 2 = more
+  static int sDebug = 0; // 0 = no debugging, 1 = some, 2 = more
   /** Some value lower than all possible sequence terms. */
   public static final long MEX = Long.MIN_VALUE;
   private static final Z MEX_LIMIT = Z.valueOf(1 << 20); // ensure <code>mex()</code> up to 16*65536 only

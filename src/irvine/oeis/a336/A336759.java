@@ -24,7 +24,7 @@ public class A336759 extends A010785 {
     ++mN;
     while (true) {
       for (final Map.Entry<Z, Integer> e : mMap.entrySet()) {
-        if (e.getKey().compareTo(mNextRepDigit) > 0) {
+        if (e.getKey().compareTo(mNextRepDigit) >= 0) {
           break; // We need to process another repdigit
         } else if (e.getValue() >= mN) {
           return e.getKey();

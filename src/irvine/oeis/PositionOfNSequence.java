@@ -15,7 +15,18 @@ public class PositionOfNSequence implements Sequence {
   private final Sequence mS;
   private final TreeMap<Long, Long> mMap = new TreeMap<>();
   private long mN;
-  private long mM = 0;
+  private long mM;
+
+  /**
+   * Construct a new sequence of positions.
+   * @param seq underlying sequence
+   * @param initial starting value to search for
+   */
+  public PositionOfNSequence(final Sequence seq, final long initial, final long offset) {
+    mS = seq;
+    mN = initial - 1;
+    mM = offset - 1;
+  }
 
   /**
    * Construct a new sequence of positions.
@@ -23,8 +34,7 @@ public class PositionOfNSequence implements Sequence {
    * @param initial starting value to search for
    */
   public PositionOfNSequence(final Sequence seq, final long initial) {
-    mS = seq;
-    mN = initial - 1;
+    this(seq, initial, 0);
   }
 
   /**

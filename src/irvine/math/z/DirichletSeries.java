@@ -125,6 +125,32 @@ public class DirichletSeries extends TreeMap<Z, Z> {
   }
 
   /**
+   * Multiply the Dirichlet series by a scalar.
+   * @param n value to multiply by
+   * @return Dirichlet series
+   */
+  public DirichletSeries multiply(final Z n) {
+    final DirichletSeries c = new DirichletSeries();
+    for (final Map.Entry<Z, Z> e : entrySet()) {
+      c.put(e.getKey(), e.getValue().multiply(n));
+    }
+    return c;
+  }
+
+  /**
+   * Divide the Dirichlet series by a scalar.
+   * @param n value to divide by
+   * @return Dirichlet series
+   */
+  public DirichletSeries divide(final Z n) {
+    final DirichletSeries c = new DirichletSeries();
+    for (final Map.Entry<Z, Z> e : entrySet()) {
+      c.put(e.getKey(), e.getValue().divide(n));
+    }
+    return c;
+  }
+
+  /**
    * Compute the Dirichlet product of two Dirichlet series.
    * @param ds other series
    * @param maxDegree degree limit

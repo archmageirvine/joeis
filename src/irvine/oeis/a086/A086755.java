@@ -3,7 +3,7 @@ package irvine.oeis.a086;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A086755 Sum_{k=1..n} k(k+1)^2/2.
+ * A086755 Sum_{k=1..n} (k(k+1))^2/2.
  * @author Sean A. Irvine
  */
 public class A086755 extends LinearRecurrence {

@@ -7,7 +7,7 @@ import irvine.oeis.ComplementaryEquationSequence;
 
 
 /**
- * A294556 Solution of the complementary equation a(n) = a(n-1) + a(n-2) + b(n-1) - b(n-2) + n + 1, where a(0) = 1, a(1) = 2, b(0) = 3, and (a(n)) and (b(n)) are increasing complementary sequences.
+ * A294556 Solution of the complementary equation a(n) = a(n-1) + a(n-2) + b(n-1) + b(n-2) + n + 1, where a(0) = 1, a(1) = 2, b(0) = 3, and (a(n)) and (b(n)) are increasing complementary sequences.
  * @author Georg Fischer
  */
 public class A294556 extends ComplementaryEquationSequence {

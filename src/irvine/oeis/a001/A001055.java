@@ -1,6 +1,6 @@
 package irvine.oeis.a001;
 
-import irvine.factor.factor.Cheetah;
+import irvine.factor.factor.PrimeDivision;
 import irvine.factor.prime.Fast;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -11,17 +11,18 @@ import irvine.oeis.Sequence;
  */
 public class A001055 implements Sequence {
 
-  private final Fast mPrime = new Fast();
+  private final PrimeDivision mFactor = new PrimeDivision();
+  protected final Fast mPrime = new Fast();
   protected long mN = 0;
 
-  private long t(final long n, final long m) {
+  protected long t(final long n, final long m) {
     if (mPrime.isPrime(n)) {
       return n <= m ? 1 : 0;
     }
 
     long sum = 0;
     final long excl = Math.min(m + 1, n);
-    for (final Z dd : Cheetah.factor(n).divisors()) {
+    for (final Z dd : mFactor.factorize(Z.valueOf(n)).divisors()) {
       final long d = dd.longValue();
       if (d != 1 && d < excl) {
         sum += t(n / d, d);

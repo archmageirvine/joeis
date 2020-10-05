@@ -5,7 +5,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.MemorySequence;
 
 /**
- * A034901 a(n) is square mod a(i), i &lt; n; a(n) nonsquare.
+ * A034901 a(n) is square mod a(i), i &lt; n; a(n) nonsquare; a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A034901 extends MemorySequence {

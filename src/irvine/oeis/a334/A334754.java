@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000796;
 
 /**
- * A334754 allocated for Ryan Brooks.
+ * A334754 The size of partitions of the decimal digits of Pi, starting directly after the decimal point, such that each partition contains the maximum number of digits possible while also avoiding any repeated digits. A digit must be in a partition if the current partition does not contain the current digit.
  * @author Sean A. Irvine
  */
 public class A334754 extends A000796 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A034900 a(n) is square mod a(i), i &lt; n; a(n) prime.
+ * A034900 a(n) is square mod a(i), i &lt; n; a(n) prime; a(1) = 2.
  * @author Sean A. Irvine
  */
 public class A034900 extends MemorySequence {

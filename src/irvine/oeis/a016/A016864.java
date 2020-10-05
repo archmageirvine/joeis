@@ -3,7 +3,7 @@ package irvine.oeis.a016;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A016864 (5n+1)^4.
+ * A016864 a(n) = (5*n + 1)^4.
  * @author Sean A. Irvine
  */
 public class A016864 extends LinearRecurrence {

@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035093 Smallest k - dependent on n - such that (n!)*k+1 is prime where k is the subscript of the progressions.
+ * A035093 Smallest k such that k*n! + 1 is prime.
  * @author Sean A. Irvine
  */
 public class A035093 implements Sequence {

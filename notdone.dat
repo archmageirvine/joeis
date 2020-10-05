@@ -1411,3 +1411,6 @@ A034889 Number of embeddings on the sphere of two-connected planar graphs with n
 A034997 Number of generalized retarded functions in quantum field theory.
 A035027 Greatest integer that is <= the sum of the n-th powers of its digits.
 A035115 Relative class number h- of cyclotomic field Q(zeta_m) where m is n-th term of A035113.
+A035280 Smallest of largest of n distinct numbers around circle so that every 2 neighbors x,y have x|y or y|x.
+A035299 Minimum square grid needed to fit English words for 1...n crossword style
+A035307 a(n) is the least integer such that every even unimodular lattice in dimension 8n contains some vectors of all even (squared) norm >= 2*a(n)

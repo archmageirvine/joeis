@@ -20,6 +20,7 @@ public class A035209 implements Sequence {
   private DirichletSeries mD = updateSeries(mMax);
 
   // Test for solution to 6x^2+xy+y^2 = p
+
   private boolean isSolvable(final long p) {
     // This is crappy
     for (long x = 0; x * x <= p; ++x) {
@@ -75,9 +76,7 @@ public class A035209 implements Sequence {
     d = d.multiply(Z.TWO);
     d.put(Z.ONE, Z.THREE); // effectively does the +1
     //d = d.multiply(DirichletSeries.zeta(23, n, Z.ONE), n);
-    d = d.divide(Z.THREE);
-    //System.out.println("P2 part=" + d);
-    return d;
+    return d.divide(Z.THREE);
   }
 
   @Override

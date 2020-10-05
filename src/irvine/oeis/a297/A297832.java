@@ -21,7 +21,7 @@ public class A297832 extends ComplementaryEquationSequence {
 
   @Override
   public Z adjunct(final int n) {
-    return Z.valueOf(2L * b(n - 1) - b(n - 2) + 2 * n - 2);
+    return Z.valueOf(2L * b(n - 1) - b(n - 2) + 2L * n - 2);
   }
 
 }

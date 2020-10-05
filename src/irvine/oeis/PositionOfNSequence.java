@@ -34,7 +34,7 @@ public class PositionOfNSequence implements Sequence {
    * @param initial starting value to search for
    */
   public PositionOfNSequence(final Sequence seq, final long initial) {
-    this(seq, initial, 0);
+    this(seq, initial, 1);
   }
 
   /**

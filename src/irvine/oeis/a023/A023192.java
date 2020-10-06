@@ -19,7 +19,7 @@ public class A023192 implements Sequence {
   // situation where one of the "p"'s is guaranteed to be divisible by some number.
 
   protected List<String> mAdmissable = Collections.singletonList("");
-  private final Fast mPrime = new Fast();
+  protected final Fast mPrime = new Fast();
 
   @Override
   public Z next() {

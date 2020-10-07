@@ -384,7 +384,7 @@ public class HolonomicRecurrence implements Sequence {
    * Gets the vector for the initial terms.
    * @return a vector for the initial values of the sequence.
    */
-  public Z[] getInitTerms() {
+  protected Z[] getInitTerms() {
     return mInitTerms;
   }
 

@@ -283,13 +283,13 @@ public class McKayThompsonSequence implements Sequence {
       // done
     } else {
       while ((mN + 1) % mStep0 != 0) {
-        System.out.println("# in while next: mN=" + mN + ", mStep0=" + mStep0 + ", result=" + result.toString());
+        //System.out.println("# in while next: mN=" + mN + ", mStep0=" + mStep0 + ", result=" + result.toString());
         if (!result.equals(Z.ZERO)) {
           throw new IllegalArgumentException("attempt to skip a non-zero term at position " + mN);
         }
         result = advance();
       }
-      System.out.println("# after while: mN=" + mN + ", mStep0=" + mStep0 + ", result=" + result.toString());
+      //System.out.println("# after while: mN=" + mN + ", mStep0=" + mStep0 + ", result=" + result.toString());
     }
     return result;
   }

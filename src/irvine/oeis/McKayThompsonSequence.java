@@ -12,7 +12,7 @@ import irvine.math.z.Z;
  * McKay-Thompson series for the monster group.
  * Derived from <code>moonshine.py</code> of
  * David A. Madore <david.madore@ens.fr> - 2007-07-31 - Public Domain
- * Cf. https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&threadID=1602206&messageID=5836094
+ * Cf. <a href="https://web.archive.org/web/20130925003421/http://mathforum.org/kb/thread.jspa?forumID=253&threadID=1602206&messageID=5836094">math forum</a>
  * @author Georg Fischer
  * <br>
  * The Python program computes the coefficients of the Moonshine
@@ -60,7 +60,7 @@ import irvine.math.z.Z;
 public class McKayThompsonSequence implements Sequence {
 
   /**
-   * Debugging mode: 0 = none, 1 = some (=earlyprint), 2 = more.
+   * Debugging mode: 0 = none, 1 = some (=early print), 2 = more.
    */
   static int sDebug = 0;
 
@@ -70,7 +70,7 @@ public class McKayThompsonSequence implements Sequence {
   protected String[] mSelectedClasses;
 
   /**
-   * List of intial terms (a(-1) and a(0))
+   * List of initial terms (a(-1) and a(0))
    */
   protected long[] mPrefix;
 
@@ -108,7 +108,7 @@ public class McKayThompsonSequence implements Sequence {
    * @param prefix values for a(-1) and a(0)
    * @param step0 number of interleaved zeroes to be skipped + 1
    */
-  public McKayThompsonSequence(final String[] selectedClasses, final long[] prefix, final int step0) {
+  protected McKayThompsonSequence(final String[] selectedClasses, final long[] prefix, final int step0) {
     mSelectedClasses = selectedClasses;
     mPrefix = new long[prefix.length];
     System.arraycopy(prefix, 0, mPrefix, 0, prefix.length);
@@ -122,7 +122,7 @@ public class McKayThompsonSequence implements Sequence {
 
   /**
    * Constructor with a single class code and prefix,
-   * for generator callcode "mckay"
+   * for generator call code <code>"mckay"</code>
    * @param classCode class code from the ATLAS,
    * for example "1A", "119B", or combined like "39CD"
    * @param prefix values for a(-1) and a(0)
@@ -133,7 +133,7 @@ public class McKayThompsonSequence implements Sequence {
 
   /**
    * Constructor with a single class code and prefix,
-   * for generator callcode "mckay0".
+   * for generator call code <code>"mckay"</code>
    * @param classCode class code from the ATLAS,
    * for example "1A", "119B", or combined like "39CD"
    * @param prefix values for a(-1) and a(0)
@@ -272,7 +272,7 @@ public class McKayThompsonSequence implements Sequence {
    * Compute the next term of the sequence.
    * When {@link #mStep0} is 1, all results are delivered sequentially,
    * otherwise a(-1) is delivered and then some number of zeroes is always skipped, beginning at a(0).
-   * So only the coeffients a(mN) with <code>(mN + 1) = 0 mod mStep0</code> are delivered.
+   * So only the coefficients a(mN) with <code>(mN + 1) = 0 mod mStep0</code> are delivered.
    * For <code>mStep0 = 2</code> that are a(-1), a(1), a(3) and so on.
    * @return OEIS a(n)
    */
@@ -367,7 +367,7 @@ public class McKayThompsonSequence implements Sequence {
             running = false;
           } else {
             final String cl = mSelectedClasses[0];
-            System.out.println(k + " " + getElem(cl, k).toString());
+            System.out.println(k + " " + getElem(cl, k));
           }
         }
         mLenPrinted = lastcomplete;
@@ -395,9 +395,9 @@ public class McKayThompsonSequence implements Sequence {
       int ijf = 0;
       jFaber[ijf++] = new PowerSeries();
       jFaber[ijf++] = j;
-//**  if (sDebug >= 2) {
-//**    System.out.println("# cl=" + cl + ", j=" + j.toString());
-//**  }
+//  if (sDebug >= 2) {
+//    System.out.println("# cl=" + cl + ", j=" + j.toString());
+//  }
       final int minComplete = Math.min(getComplete(cl), MAX_FABER);
       for (int n = 2; n < minComplete; ++n) {
         // Here MAX_FABER=7 is a heuristic, meaning we compute the first 6 Faber
@@ -406,16 +406,16 @@ public class McKayThompsonSequence implements Sequence {
         // high coefficients.
         // Besides, if you make this higher than 10 you need to extend the class power maps.
         final PowerSeries jn = jFaber[n - 1].multiply(j);
-//**    if (sDebug >= 2) {
-//**      System.out.println("#1 n=" + n + ", jn=" + jn.toString() + ", precis=" + jn.precis());
-//**    }
+//    if (sDebug >= 2) {
+//      System.out.println("#1 n=" + n + ", jn=" + jn.toString() + ", precis=" + jn.precis());
+//    }
         for (int k = n - 2; k > 0; --k) {
           jn.addMonomialTimes(jn.getCoeff(-k).negate(), 0, jFaber[k]);
         }
         jn.addMonomial(jn.getCoeff(0).negate(), 0);
-//**    if (sDebug >= 2) {
-//**      System.out.println("#2 n=" + n + ", jn=" + jn.toString() + ", precis=" + jn.precis());
-//**    }
+//    if (sDebug >= 2) {
+//      System.out.println("#2 n=" + n + ", jn=" + jn.toString() + ", precis=" + jn.precis());
+//    }
         jFaber[ijf++] = jn;
         // At this point, jn is the n-th Faber polynomial of j.
         for (int k = 1; k < jn.precis(); ++k) {
@@ -430,9 +430,9 @@ public class McKayThompsonSequence implements Sequence {
               if ((n % d) == 0) { // d divides n
                 final int a = n / d;
                 final String cla = getPower(cl)[a];
-//**            if (sDebug >= 2) {
-//**              System.out.println("# d=" + d + ", k=" + k + ", n=" + n + ", a=" + a + ", cla=" + cla);
-//**            }
+//            if (sDebug >= 2) {
+//              System.out.println("# d=" + d + ", k=" + k + ", n=" + n + ", a=" + a + ", cla=" + cla);
+//            }
                 if ((k % a) == 0) {
                   final int kk = (k / a) * d;
                   if (containsElem(cla, kk)) {
@@ -451,9 +451,9 @@ public class McKayThompsonSequence implements Sequence {
               }
               w = w.divide(Z.valueOf(n));
               putElem(cl, k * n, w);
-//**          if (sDebug >= 1) {
-//**            System.out.println("# early.2 cl=" + cl + ", k=" + k + ", n=" + n + ", w=" + w.toString());
-//**          }
+//          if (sDebug >= 1) {
+//            System.out.println("# early.2 cl=" + cl + ", k=" + k + ", n=" + n + ", w=" + w.toString());
+//          }
             }
           } // if
         } // foreach k
@@ -500,9 +500,9 @@ public class McKayThompsonSequence implements Sequence {
             }
             v = v.divide2();
             putElem(cl, k + 1, v);
-//**        if (sDebug >= 1) {
-//**          System.out.println("# early.3 cl=" + cl + ", v=" + v.toString());
-//**        }
+//        if (sDebug >= 1) {
+//          System.out.println("# early.3 cl=" + cl + ", v=" + v.toString());
+//        }
           }
         }
       } // while busy
@@ -542,7 +542,7 @@ public class McKayThompsonSequence implements Sequence {
       final Z[] boots = seq.getBoots(classCode);
       sep = "";
       for (final Z boot : boots) {
-        System.out.print(sep + boot.toString());
+        System.out.print(sep + boot);
         sep = ",";
       }
       System.out.println();
@@ -561,6 +561,7 @@ public class McKayThompsonSequence implements Sequence {
               break;
             case "-a":
               action = 1;
+              break;
             case "-c":
               selectedClasses = args[iarg++].split(", *");
               break;
@@ -597,7 +598,7 @@ public class McKayThompsonSequence implements Sequence {
         switch (action) {
           case 1: // -a
             for (int n = -1; n <= seq.mMaxTerm; ++n) {
-              System.out.println(n + " " + seq.next().toString());
+              System.out.println(n + " " + seq.next());
             }
             break;
           case 2:

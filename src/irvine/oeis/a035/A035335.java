@@ -43,11 +43,11 @@ public class A035335 extends A007732 {
 
   private static DecimalExpansionSequence getSequence(final long k) {
     return new DecimalExpansionSequence() {
-      private final CR N = CR.valueOf(new Q(1, k));
+      private final CR mK = CR.valueOf(new Q(1, k));
 
       @Override
       protected CR getCR() {
-        return N;
+        return mK;
       }
     };
   }

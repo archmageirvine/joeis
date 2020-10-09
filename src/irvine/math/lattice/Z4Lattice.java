@@ -15,8 +15,8 @@ class Z4Lattice extends AbstractLattice {
   // counting of paths, etc.)
   // Neighbours change one coordinate by +/- 1.
   protected static final int BITS_PER_COORDINATE = Long.SIZE / 4;
-  private static final int Z_SHIFT = 3 * BITS_PER_COORDINATE;
-  private static final int Y_SHIFT = 2 * BITS_PER_COORDINATE;
+  protected static final int Y_SHIFT = 2 * BITS_PER_COORDINATE;
+  protected static final int Z_SHIFT = 3 * BITS_PER_COORDINATE;
   protected static final long MASK = (1L << BITS_PER_COORDINATE) - 1;
   protected static final long BIAS = 1L << (BITS_PER_COORDINATE - 1);
   protected static final long ORIGIN = pack(0, 0, 0, 0);

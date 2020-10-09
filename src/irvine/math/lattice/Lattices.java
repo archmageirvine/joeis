@@ -47,6 +47,8 @@ public final class Lattices {
   public static final Lattice FCC = new FccLattice();
   /** The body-centered cubic (b.c.c.) lattice. */
   public static final Lattice BCC = new BccLattice();
+  /** Lonsdaleite. */
+  public static final Lattice LONSDALEITE = new Lonsdaleite();
 
   // Others
 

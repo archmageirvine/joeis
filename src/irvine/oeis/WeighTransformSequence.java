@@ -14,7 +14,11 @@ public class WeighTransformSequence extends MemoryFunction2<Integer, Z> implemen
   private final MemorySequence mH;
   private int mN = -1;
 
-  protected WeighTransformSequence(final Sequence seq) {
+  /**
+   * Construct the weigh transform of the given sequence.
+   * @param seq sequence
+   */
+  public WeighTransformSequence(final Sequence seq) {
     mH = MemorySequence.cachedSequence(seq);
   }
 

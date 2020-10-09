@@ -10,10 +10,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035351 Number of labeled rooted polygonal cacti with bridges (mixed Husimi trees) with n nodes.
+ * A035352 Number of increasing rooted polygonal cacti with bridges (mixed Husimi trees) with n nodes.
  * @author Sean A. Irvine
  */
-public class A035351 implements Sequence {
+public class A035352 implements Sequence {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private static final Polynomial<Q> C2 = RING.create(Collections.singletonList(Q.TWO));
@@ -26,8 +26,8 @@ public class A035351 implements Sequence {
     if (++mN > 1) {
       mF = mF.multiply(mN);
       final Polynomial<Q> a2 = RING.multiply(mA, Q.TWO);
-      mA = RING.exp(RING.series(RING.subtract(a2, RING.pow(mA, 2, mN)),
-        RING.subtract(C2, a2), mN), mN).shift(1);
+      mA = RING.integrate(RING.exp(RING.series(RING.subtract(a2, RING.pow(mA, 2, mN)),
+        RING.subtract(C2, a2), mN), mN));
     }
     return mA.coeff(mN).multiply(mF).toZ();
   }

@@ -15,12 +15,18 @@ public class A034836 implements Sequence {
   private final MemorySequence mA038548 = MemorySequence.cachedSequence(new A038548());
   private int mN = 0;
 
+  /*
+  (PARI) A038548(n)=sumdiv(n, d, d*d<=n)
+     a(n)=sumdiv(n, d, if(d^3<=n, A038548(n/d) - sumdiv(n/d, d0, d0<d)))
+   */
+
   @Override
   public Z next() {
     Z sum = Z.ZERO;
-    for (final Z dd : Cheetah.factor(++mN).divisorsSorted()) {
+    final Z n = Z.valueOf(++mN);
+    for (final Z dd : Cheetah.factor(n).divisorsSorted()) {
       final int d = dd.intValue();
-      if (d * d * d > mN) {
+      if (dd.pow(3).compareTo(n) > 0) {
         break;
       }
       sum = sum.add(mA038548.a(mN / d - 1));

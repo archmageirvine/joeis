@@ -157,7 +157,7 @@ public class PowerSeries extends ArrayList<Z> {
       if (ic > 0) {
         result.append(',');
       }
-      result.append(get(ic).toString());
+      result.append(get(ic));
     }
     result.append("];");
     result.append(mIndex);

@@ -10,7 +10,7 @@ public class A035237 extends PositionOfNSequence {
 
   /** Construct the sequence. */
   public A035237() {
-    super(new A035222(), 0);
+    super(new A035222(), 0, 0);
   }
 }
 

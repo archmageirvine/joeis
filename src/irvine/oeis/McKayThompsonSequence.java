@@ -337,7 +337,7 @@ public class McKayThompsonSequence implements Sequence {
   }
 
   /**
-   * Recursively add a classCode and all of its powers to the transitive closure
+   * Recursively add a <code>classCode</code> and all of its powers to the transitive closure
    * @param classCode starting element
    */
   private static void enclose(final String classCode) {
@@ -511,7 +511,7 @@ public class McKayThompsonSequence implements Sequence {
 
   /**
    * Test method
-   * @param args commandline arguments, a list of options:
+   * @param args command line arguments, a list of options:
    * <ul>
    * <li>-d  debugging mode (0 = none (default), 1 = some, 2 = more)</li>
    * <li>-c  list of class codes, with all divisors</li>

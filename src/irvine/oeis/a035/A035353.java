@@ -16,7 +16,7 @@ import irvine.oeis.WeighTransformSequence;
  */
 public class A035353 implements Sequence {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
+  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   protected Polynomial<Z> mA = RING.create(Collections.emptyList());
   protected int mN = -1;
 

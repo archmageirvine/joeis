@@ -18,7 +18,7 @@ public class A035081 implements Sequence {
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
   private final Polynomial<Q> mA = RING.create(Collections.singletonList(Q.ONE));
 
-  private Polynomial<Q> egj(final Polynomial<Q> p) {
+  static Polynomial<Q> egj(final Polynomial<Q> p) {
     Q f = Q.ONE;
     Polynomial<Q> egj = RING.one();
     final int n = p.degree();

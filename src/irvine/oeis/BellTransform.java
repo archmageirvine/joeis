@@ -1,6 +1,6 @@
 package irvine.oeis;
 
-import java.util.ArrayList;
+import java.util.List;
 
 import irvine.math.MemoryFunction2;
 import irvine.math.q.Q;
@@ -12,13 +12,13 @@ import irvine.math.z.Binomial;
  */
 public class BellTransform extends MemoryFunction2<Integer, Q> {
 
-  private final ArrayList<Q> mA;
+  private final List<Q> mA;
 
   /**
    * Bell transform.
    * @param a first sequence
    */
-  public BellTransform(final ArrayList<Q> a) {
+  public BellTransform(final List<Q> a) {
     mA = a;
   }
 

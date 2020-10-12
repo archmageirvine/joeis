@@ -1414,3 +1414,34 @@ A035115 Relative class number h- of cyclotomic field Q(zeta_m) where m is n-th t
 A035280 Smallest of largest of n distinct numbers around circle so that every 2 neighbors x,y have x|y or y|x.
 A035299 Minimum square grid needed to fit English words for 1...n crossword style
 A035307 a(n) is the least integer such that every even unimodular lattice in dimension 8n contains some vectors of all even (squared) norm >= 2*a(n)
+A035401 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035402 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035403 Related to Rogers-Ramanujan Identities, insufficient detail.
+A035404 Related to Rogers-Ramanujan Identities.
+A035405 Related to Rogers-Ramanujan Identities.
+A035406 Related to Rogers-Ramanujan Identities.
+A035407 Related to Rogers-Ramanujan Identities.
+A035408 Related to Rogers-Ramanujan Identities.
+A035409 Related to Rogers-Ramanujan Identities.
+A035410 Related to Rogers-Ramanujan Identities.
+A035411 Related to Rogers-Ramanujan Identities.
+A035412 Related to Rogers-Ramanujan Identities.
+A035413 Related to Rogers-Ramanujan Identities.
+A035414 Related to Rogers-Ramanujan Identities.
+A035415 Related to Rogers-Ramanujan Identities.
+A035416 Related to Rogers-Ramanujan Identities.
+A035417 Related to Rogers-Ramanujan Identities.
+A035418 Related to Rogers-Ramanujan Identities.
+A035419 Related to Rogers-Ramanujan Identities.
+A035420 Related to Rogers-Ramanujan Identities.
+A035421 Related to Rogers-Ramanujan Identities.
+A035422 Related to Rogers-Ramanujan Identities.
+A035423 Related to Rogers-Ramanujan Identities.
+A035424 Related to Rogers-Ramanujan Identities.
+A035425 Related to Rogers-Ramanujan Identities.
+A035426 Related to Rogers-Ramanujan Identities.
+A035427 Related to Rogers-Ramanujan Identities.
+A035428 Related to Rogers-Ramanujan Identities.
+A035481 Number of n X n symmetric matrices whose first row is 1..n and whose rows and columns are all permutations of 1..n
+A035482 Number of n X n symmetric matrices each of whose rows is a permutation of 1..n.
+A035483 2n X 2n symmetric matrices whose first row is 1..2n and whose rows and columns are all permutations of 1..2n.

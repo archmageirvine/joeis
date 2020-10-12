@@ -21,15 +21,20 @@ public class A032318 extends MemorySequence {
     add(Z.ZERO);
   }
 
-  protected static Polynomial<Q> egj(final List<Z> seq) {
+  /**
+   * The <code>EGJ</code> transform of a sequence.
+   * @param seq sequence
+   * @return transform
+   */
+  public static Polynomial<Q> egj(final List<Z> seq) {
     final int n = seq.size();
     Q f = Q.ONE;
-    Polynomial<Q> efk = RING.one();
+    Polynomial<Q> egj = RING.one();
     for (int k = 1; k < n; ++k) {
       f = f.divide(k);
-      efk = RING.multiply(efk, RING.powz(RING.onePlusXToTheN(f, k), seq.get(k), n), n);
+      egj = RING.multiply(egj, RING.powz(RING.onePlusXToTheN(f, k), seq.get(k), n), n);
     }
-    return efk;
+    return egj;
   }
 
   @Override

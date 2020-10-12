@@ -28,13 +28,13 @@ class Lonsdaleite4 extends Z4Lattice {
         final long x2 = ordinate(point, 1);
         //final long y2 = ordinate(point, 2);
         //final long z2 = ordinate(point, 3);
-        return point + ((2 * ((1 + t2 + x2) & 1) - 1) << BITS_PER_COORDINATE);
+        return point + ((2 * ((t2 + x2) & 1) - 1) << BITS_PER_COORDINATE);
       case 3:
         final long t3 = ordinate(point, 0);
         final long x3 = ordinate(point, 1);
         final long y3 = ordinate(point, 2);
         //final long z3 = ordinate(point, 3);
-        return point + ((2 * ((1 + t3 + x3 + y3) & 1) - 1) << Y_SHIFT);
+        return point + ((2 * ((t3 + x3 + y3) & 1) - 1) << Y_SHIFT);
       default:
         final long t4 = ordinate(point, 0);
         final long x4 = ordinate(point, 1);
@@ -59,8 +59,10 @@ class Lonsdaleite4 extends Z4Lattice {
     HashSet<Long> next = new HashSet<>();
     next.add(ORIGIN);
     seen.add(ORIGIN);
+    int n = -1;
     while (true) {
       final HashSet<Long> prev = next;
+      ++n;
       next = new HashSet<>();
       for (final long pt : prev) {
         //System.out.println("Expanding: " + lons.toString(pt));
@@ -71,10 +73,11 @@ class Lonsdaleite4 extends Z4Lattice {
           }
         }
       }
-      for (final long p : next) {
-        System.out.println(lons.toString(p));
-      }
-      System.out.println(next.size());
+//      for (final long p : next) {
+//        System.out.println(lons.toString(p));
+//      }
+      final int s = next.size();
+      System.out.println(s + " " + (n < 2 ? s : s - (n - 1) * (n - 1)));
     }
   }
 }

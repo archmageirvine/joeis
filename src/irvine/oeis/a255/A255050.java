@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 
 
 /**
- * A255050 G.f.: Product_{j>=1} 1/(1-x^j)^binomial(j+3, 3).
+ * A255050 G.f.: Product_{j&gt;=1} 1/(1-x^j)^binomial(j+3,3).
  * @author Georg Fischer
  */
 public class A255050 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a006.A006002;
 
 
 /**
- * A302447 Expansion of Product_{k>=1} 1/(1 - x^k)^(k*(k+1)^2/2).
+ * A302447 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(k+1)^2/2).
  * @author Georg Fischer
  */
 public class A302447 extends EulerTransform {

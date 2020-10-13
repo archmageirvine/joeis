@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000142;
 
 
 /**
- * A179327 G.f.: Product_{n>=1} 1/(1-x^n)^((n-1)!).
+ * A179327 G.f.: Product_{n&gt;=1} 1/(1-x^n)^((n-1)!).
  * @author Georg Fischer
  */
 public class A179327 extends EulerTransform {

@@ -1,4 +1,4 @@
-package irvine.oeis.a007;
+package irvine.oeis.a035;
 
 import java.util.HashSet;
 
@@ -6,16 +6,16 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A007770 Happy numbers: numbers whose trajectory under iteration of sum of squares of digits map (see A003132) includes 1.
+ * A035504 Numbers that eventually reach 1 under "x -&gt; sum of cubes of digits of x".
  * @author Sean A. Irvine
  */
-public class A007770 implements Sequence {
+public class A035504 implements Sequence {
 
   private long mN = 0;
   private final long[] mCache = new long[1000000]; // Remembers the result for small values
   private final HashSet<Long> mSeen = new HashSet<>();
 
-  private long squareDigitSum(final long n) {
+  private long cubeDigitSum(final long n) {
     if (n < mCache.length) {
       final long r = mCache[(int) n];
       if (r != 0) {
@@ -26,7 +26,7 @@ public class A007770 implements Sequence {
     long m = n;
     while (m != 0) {
       final long r = m % 10;
-      s += r * r;
+      s += r * r * r;
       m /= 10;
     }
     if (n < mCache.length) {
@@ -35,7 +35,7 @@ public class A007770 implements Sequence {
     return s;
   }
 
-  protected boolean isHappy(long n) {
+  protected boolean isCubicHappy(long n) {
     mSeen.clear();
     while (true) {
       if (n == 1) {
@@ -44,14 +44,14 @@ public class A007770 implements Sequence {
       if (!mSeen.add(n)) {
         return false; // cycles
       }
-      n = squareDigitSum(n);
+      n = cubeDigitSum(n);
     }
   }
 
   @Override
   public Z next() {
     while (true) {
-      if (isHappy(++mN)) {
+      if (isCubicHappy(++mN)) {
         return Z.valueOf(mN);
       }
     }

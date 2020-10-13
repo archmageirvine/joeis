@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034444;
 
 
 /**
- * A319130 Expansion of Product_{k>=1} 1/(1 - x^k)^(2^omega(k)), where omega(k) = number of distinct primes dividing k (A001221).
+ * A319130 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(2^omega(k)), where omega(k) = number of distinct primes dividing k (A001221).
  * @author Georg Fischer
  */
 public class A319130 extends EulerTransform {

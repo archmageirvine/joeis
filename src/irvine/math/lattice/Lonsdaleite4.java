@@ -40,7 +40,7 @@ class Lonsdaleite4 extends Z4Lattice {
         final long x4 = ordinate(point, 1);
         final long y4 = ordinate(point, 2);
         final long z4 = ordinate(point, 3);
-        return point + ((2 * ((1 + t4 + x4 + y4 + z4) & 1) - 1) << Z_SHIFT);
+        return point + ((2 * ((t4 + x4 + y4 + z4) & 1) - 1) << Z_SHIFT);
     }
   }
 

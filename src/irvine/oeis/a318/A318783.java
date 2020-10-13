@@ -7,7 +7,7 @@ import irvine.oeis.a032.A032741;
 
 
 /**
- * A318783 Expansion of Product_{k>=1} 1/(1 - x^k)^(d(k)-1), where d(k) = number of divisors of k (A000005).
+ * A318783 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(d(k)-1), where d(k) = number of divisors of k (A000005).
  * @author Georg Fischer
  */
 public class A318783 extends EulerTransform {

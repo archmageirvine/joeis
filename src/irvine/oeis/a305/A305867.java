@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001147;
 
 
 /**
- * A305867 Expansion of Product_{k>=1} 1/(1 - x^k)^(2*k-1)!!.
+ * A305867 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(2*k-1)!!.
  * @author Georg Fischer
  */
 public class A305867 extends EulerTransform {

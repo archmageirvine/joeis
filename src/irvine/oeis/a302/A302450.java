@@ -7,7 +7,7 @@ import irvine.oeis.a002.A002593;
 
 
 /**
- * A302450 Expansion of Product_{k>=1} 1/(1 - x^k)^(k^2*(2*k^2-1)).
+ * A302450 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k^2*(2*k^2-1)).
  * @author Georg Fischer
  */
 public class A302450 extends EulerTransform {

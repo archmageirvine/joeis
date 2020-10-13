@@ -7,7 +7,7 @@ import irvine.oeis.a025.A025426;
 
 
 /**
- * A321437 Expansion of Product_{1 <= i <= j} 1/(1 - x^(i^2 + j^2)).
+ * A321437 Expansion of Product_{1 &lt;= i &lt;= j} 1/(1 - x^(i^2 + j^2)).
  * @author Georg Fischer
  */
 public class A321437 extends EulerTransform {

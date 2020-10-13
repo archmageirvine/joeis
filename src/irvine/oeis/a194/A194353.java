@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 
 
 /**
- * A194353 G.f.: exp( Sum_{n>=1} (x^n/n)/sqrt(1 - 4*x^n) ).
+ * A194353 G.f.: exp( Sum_{n&gt;=1} (x^n/n)/sqrt(1 - 4*x^n) ).
  * @author Georg Fischer
  */
 public class A194353 extends EulerTransform {

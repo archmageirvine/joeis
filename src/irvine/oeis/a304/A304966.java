@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000065;
 
 
 /**
- * A304966 Expansion of Product_{k>=1} 1/(1 - x^k)^(p(k)-1), where p(k) = number of partitions of k (A000041).
+ * A304966 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(p(k)-1), where p(k) = number of partitions of k (A000041).
  * @author Georg Fischer
  */
 public class A304966 extends EulerTransform {

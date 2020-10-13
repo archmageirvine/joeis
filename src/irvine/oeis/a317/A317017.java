@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001296;
 
 
 /**
- * A317017 Expansion of Product_{k>=1} 1/(1 - x^k)^((3*k+1)*binomial(k+2, 3)/4).
+ * A317017 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^((3*k+1)*binomial(k+2,3)/4).
  * @author Georg Fischer
  */
 public class A317017 extends EulerTransform {

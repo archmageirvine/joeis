@@ -7,7 +7,7 @@ import irvine.oeis.a008.A008590;
 
 
 /**
- * A193427 G.f.: Product_{k>=1} 1/(1-x^k)^(8*k).
+ * A193427 G.f.: Product_{k&gt;=1} 1/(1-x^k)^(8*k).
  * @author Georg Fischer
  */
 public class A193427 extends EulerTransform {

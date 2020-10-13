@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000027;
 
 
 /**
- * A255965 Expansion of Product_{k>=1} 1/(1-x^k)^binomial(k+6, 7).
+ * A255965 Expansion of Product_{k&gt;=1} 1/(1-x^k)^binomial(k+6,7).
  * @author Georg Fischer
  */
 public class A255965 extends EulerTransform {

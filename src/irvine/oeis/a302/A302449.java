@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000447;
 
 
 /**
- * A302449 Expansion of Product_{k>=1} 1/(1 - x^k)^(k*(4*k^2-1)/3).
+ * A302449 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(4*k^2-1)/3).
  * @author Georg Fischer
  */
 public class A302449 extends EulerTransform {

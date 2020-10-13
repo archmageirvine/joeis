@@ -7,7 +7,7 @@ import irvine.oeis.a085.A085787;
 
 
 /**
- * A294654 Expansion of Product_{k>=1} 1/((1 - x^(2*k-1))^(k*(5*k-3)/2)*(1 - x^(2*k))^(k*(5*k+3)/2)).
+ * A294654 Expansion of Product_{k&gt;=1} 1/((1 - x^(2*k-1))^(k*(5*k-3)/2)*(1 - x^(2*k))^(k*(5*k+3)/2)).
  * @author Georg Fischer
  */
 public class A294654 extends EulerTransform {

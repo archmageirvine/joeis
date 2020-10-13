@@ -7,7 +7,7 @@ import irvine.oeis.a016.A016777;
 
 
 /**
- * A255271 G.f.: Product_{k>=1} 1/(1-x^k)^(3*k+1).
+ * A255271 G.f.: Product_{k&gt;=1} 1/(1-x^k)^(3*k+1).
  * @author Georg Fischer
  */
 public class A255271 extends EulerTransform {

@@ -1,5 +1,7 @@
 package irvine.oeis.a003;
 
+import java.util.Arrays;
+
 import irvine.math.group.PolynomialRing;
 import irvine.math.lattice.Hunter;
 import irvine.math.lattice.Lattices;
@@ -16,6 +18,7 @@ public class A003203 implements Sequence {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private static final Polynomial<Z> C = RING.oneMinusXToTheN(1);
+  private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN = 0;
   private Polynomial<Z> mS = RING.one();
   private long[] mPerimeterCounts = null;
@@ -31,6 +34,9 @@ public class A003203 implements Sequence {
       };
       h.count(mN);
       mS = RING.add(mS, RING.multiply(RING.substitute(Polynomial.create(mPerimeterCounts), C, Integer.MAX_VALUE), Z.valueOf(mN).square()).shift(mN));
+      if (mVerbose) {
+        System.out.println(mN + " perimeter polynomial " + Arrays.toString(mPerimeterCounts));
+      }
     }
     return mS.coeff(mN);
   }

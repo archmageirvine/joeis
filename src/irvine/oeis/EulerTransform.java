@@ -45,8 +45,17 @@ public class EulerTransform implements Sequence {
   }
 
   /**
+   * Create a new sequence with additional terms at the front.
+   * @param preTerms additional terms to be prepended;
+   */
+  public EulerTransform(final long... preTerms) {
+    this();
+    mPreTerms = ZUtils.toZ(preTerms);
+  }
+
+  /**
    * Create the Euler transform of the given sequence,
-   * with additional Z terms prepended. 
+   * with additional Z terms prepended.
    * @param seq underlying sequence
    * @param preTerms additional terms to be prepended;
    * usually there is a leading one.

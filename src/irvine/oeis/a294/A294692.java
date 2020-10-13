@@ -7,21 +7,21 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A294958 Product_{k>=1} 1/(1 - x^k)^(k*((k-2)^2+k)/2)
+ * A294692 Product_{k>=1} 1 / (1 - x^k)^(k*(3*k + 2))
  * @author Georg Fischer
  */
-public class A294958 extends EulerTransform {
+public class A294692 extends EulerTransform {
 
   /**
    * Construct the sequence.
    */
-  public A294958() {
+  public A294692() {
     super(1);
   }
 
   @Override
   protected Z advance() {
-    return Z.valueOf(mN).multiply(Z.valueOf(mN - 2).pow(2).add(Z.valueOf(mN))).divide2();
+    return Z.valueOf(mN).multiply(Z.valueOf(3 * mN + 2));
   }
 
 }

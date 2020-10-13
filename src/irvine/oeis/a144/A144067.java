@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A144067 Product_{j>0} 1/(1-x^j)^(3^j)
+ * A144067 Euler transform of powers of 3.
  * @author Georg Fischer
  */
 public class A144067 extends EulerTransform {

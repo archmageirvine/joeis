@@ -7,7 +7,7 @@ import irvine.oeis.a027.A027306;
 
 
 /**
- * A292549 Product_{j>=1} 1/(1-x^j)^A027306(j+1)
+ * A292549 Number of multisets of exactly n nonempty binary words with a total of 2n letters such that no word has a majority of 0's.
  * @author Georg Fischer
  */
 public class A292549 extends EulerTransform {

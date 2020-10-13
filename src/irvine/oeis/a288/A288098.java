@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 
 
 /**
- * A288098 Product_{k>=1} (1 - x^k)^sigma_0(k)
+ * A288098 Convolution inverse of A006171.
  * @author Georg Fischer
  */
 public class A288098 extends EulerTransform {

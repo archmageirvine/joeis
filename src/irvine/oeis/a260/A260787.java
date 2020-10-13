@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 
 
 /**
- * A260787 Product_{k>=1} 1/(1-x^k)^Fibonacci(k+2)
+ * A260787 G.f.: Product_{k&gt;=1} 1/(1-x^k)^Fibonacci(k+2).
  * @author Georg Fischer
  */
 public class A260787 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000009;
 
 
 /**
- * A218153 Product_{n>=1} 1 / (1 - x^n)^A000009(n-1), where A000009(n) equals the number of distinct partitions of n
+ * A218153 G.f.: A(x) = exp( Sum_{n&gt;=1} x^n/n * Product_{k&gt;=1} (1 + x^(n*k)) ).
  * @author Georg Fischer
  */
 public class A218153 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a022.A022553;
 
 
 /**
- * A292287 Product_{j>=1} 1/(1-x^j)^A022553(j+1)
+ * A292287 Number of multisets of exactly n nonempty balanced binary Lyndon words with a total of 4n letters (2n zeros and 2n ones).
  * @author Georg Fischer
  */
 public class A292287 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A270241 Product_{j>=1} 1/(1-x^j)^C(j+7, 7)
+ * A270241 Number of partitions of n unlabeled objects of 8 colors.
  * @author Georg Fischer
  */
 public class A270241 extends EulerTransform {

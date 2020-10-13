@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A283580 Product_{k>=1} 1/(1 - x^k)^(k^(3*k))
+ * A283580 Expansion of exp( Sum_{n&gt;=1} A283535(n)/n*x^n ) in powers of x.
  * @author Georg Fischer
  */
 public class A283580 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a035.A035187;
 
 
 /**
- * A327716 Product_{k>=1} (1-x^k)^(-A035187(k))
+ * A327716 Expansion of Product_{k&gt;=1} B(x^k), where B(x) is the g.f. of A003823.
  * @author Georg Fischer
  */
 public class A327716 extends EulerTransform {

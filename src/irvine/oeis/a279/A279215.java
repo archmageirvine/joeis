@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A279215 Product_{k>=1} 1/(1 - x^k)^(k*(k+1)*(2*k+1)/6)
+ * A279215 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(k+1)*(2*k+1)/6).
  * @author Georg Fischer
  */
 public class A279215 extends EulerTransform {

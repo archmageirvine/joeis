@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000045;
 
 
 /**
- * A166861 Product_{k>0} 1/(1 - x^k)^Fibonacci(k)
+ * A166861 Euler transform of Fibonacci numbers.
  * @author Georg Fischer
  */
 public class A166861 extends EulerTransform {

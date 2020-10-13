@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A327758 Product_{k>=1} 1/(1 - x^k)^(3/k), where (m/n) is the Kronecker symbol
+ * A327758 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(3/k), where (m/n) is the Kronecker symbol.
  * @author Georg Fischer
  */
 public class A327758 extends EulerTransform {

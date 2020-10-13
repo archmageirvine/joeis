@@ -8,7 +8,7 @@ import irvine.oeis.a000.A000005;
 
 
 /**
- * A280540 Product_{k>=1} 1/(1 - x^k)^(k*d(k)), where d(k)
+ * A280540 G.f.: Product_{i&gt;=1, j&gt;=1} 1/(1 - x^(i*j))^(i*j).
  * @author Georg Fischer
  */
 public class A280540 extends EulerTransform {

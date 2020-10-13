@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A308446 Product_{k>=1} 1/(1 - x^k)^Fibonacci(2*k)
+ * A308446 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^Fibonacci(2*k).
  * @author Georg Fischer
  */
 public class A308446 extends EulerTransform {

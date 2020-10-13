@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A217194 Product_{i>=1} 1/(1-x^i)^(2^(i-1)+2^(floor((i+1)/2)-1))
+ * A217194 Number of unlabeled simple graphs with n nodes of 2 colors whose components are path graphs.
  * @author Georg Fischer
  */
 public class A217194 extends EulerTransform {

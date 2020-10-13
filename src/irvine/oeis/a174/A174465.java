@@ -7,7 +7,7 @@ import irvine.oeis.a007.A007425;
 
 
 /**
- * A174465 Product_{k>=1} 1/(1 - x^k)^tau_3(k), where tau_3()
+ * A174465 G.f.: exp( Sum_{n&gt;=1} A174466(n)*x^n/n ) where A174466(n) = Sum_{d|n} d*sigma(n/d)*tau(d).
  * @author Georg Fischer
  */
 public class A174465 extends EulerTransform {

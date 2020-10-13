@@ -8,7 +8,7 @@ import irvine.oeis.a007.A007425;
 
 
 /**
- * A318413 Product_{k>=1} 1/(1 - x^k)^(k*tau_3(k)), where tau_3()
+ * A318413 Expansion of Product_{i&gt;=1, j&gt;=1, k&gt;=1} 1/(1 - x^(i*j*k))^(i*j*k).
  * @author Georg Fischer
  */
 public class A318413 extends EulerTransform {

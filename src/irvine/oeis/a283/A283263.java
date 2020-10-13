@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A283263 Product_{n>=1} (1 - x^n)^(n^2)
+ * A283263 Expansion of exp( Sum_{n&gt;=1} -sigma_3(n)*x^n/n ) in powers of x.
  * @author Georg Fischer
  */
 public class A283263 extends EulerTransform {

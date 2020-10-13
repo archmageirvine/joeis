@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000108;
 
 
 /**
- * A292668 Product_{j>=1} 1/(1-x^j)^A000108(j+1)
+ * A292668 Number of forests of exactly n (unlabeled) ordered rooted trees with a total of 2n non-root nodes.
  * @author Georg Fischer
  */
 public class A292668 extends EulerTransform {

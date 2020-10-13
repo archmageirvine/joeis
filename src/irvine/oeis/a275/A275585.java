@@ -7,7 +7,7 @@ import irvine.oeis.a001.A001157;
 
 
 /**
- * A275585 Product_{k>=1} 1/(1 - x^k)^(sigma_2(k))
+ * A275585 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(sigma_2(k)).
  * @author Georg Fischer
  */
 public class A275585 extends EulerTransform {

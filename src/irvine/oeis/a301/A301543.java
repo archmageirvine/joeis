@@ -8,7 +8,7 @@ import irvine.oeis.a001.A001160;
 
 
 /**
- * A301543 Product_{k>=1} 1/(1 - x^k)^(sigma_5(k))
+ * A301543 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(sigma_5(k)).
  * @author Georg Fischer
  */
 public class A301543 extends EulerTransform {

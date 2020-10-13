@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A144068 Product_{j>0} 1/(1-x^j)^(4^j)
+ * A144068 Euler transform of powers of 4.
  * @author Georg Fischer
  */
 public class A144068 extends EulerTransform {

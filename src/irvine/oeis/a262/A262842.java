@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A262842 Product_{k>=1} (1 - x^k)^(-k^(k-2))
+ * A262842 G.f.: Product_{k&gt;=1} (1 - x^k)^(-k^(k-2)).
  * @author Georg Fischer
  */
 public class A262842 extends EulerTransform {

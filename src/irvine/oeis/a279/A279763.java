@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A279763 Product_{k>=1} 1/(1 - x^k)^(k*(3*k-1)*(3*k-2)/2)
+ * A279763 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k*(3*k-1)*(3*k-2)/2).
  * @author Georg Fischer
  */
 public class A279763 extends EulerTransform {

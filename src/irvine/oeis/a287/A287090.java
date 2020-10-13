@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A287090 Product_{k>=1} 1/(1 - x^k)^(k^2*(k+1)^2/4)
+ * A287090 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^(k^2*(k+1)^2/4).
  * @author Georg Fischer
  */
 public class A287090 extends EulerTransform {

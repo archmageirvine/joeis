@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A316463 Product_{k>0} (1 - x^k)^(4*k)
+ * A316463 Expansion of Product_{k&gt;0} (1 - x^k)^(4*k).
  * @author Georg Fischer
  */
 public class A316463 extends EulerTransform {

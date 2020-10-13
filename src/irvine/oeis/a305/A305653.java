@@ -8,7 +8,7 @@ import irvine.oeis.a002.A002415;
 
 
 /**
- * A305653 Product_{k>=1} 1/(1 - x^k)^A002415(k+1)
+ * A305653 Expansion of Product_{k&gt;=1} 1/(1 - x^k)^((k+1)*binomial(k+2,3)/2).
  * @author Georg Fischer
  */
 public class A305653 extends EulerTransform {

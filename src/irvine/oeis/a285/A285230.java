@@ -7,7 +7,7 @@ import irvine.oeis.a000.A000009;
 
 
 /**
- * A285230 Product_{j>=1} 1/(1-x^j)^A000009(j+1)
+ * A285230 Number of multisets of exactly n partitions of positive integers into distinct parts with total sum of parts equal to 2n.
  * @author Georg Fischer
  */
 public class A285230 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A144069 Product_{j>0} 1/(1-x^j)^(5^j)
+ * A144069 Euler transform of powers of 5.
  * @author Georg Fischer
  */
 public class A144069 extends EulerTransform {

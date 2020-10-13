@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A144070 Product_{j>0} 1/(1-x^j)^(6^j)
+ * A144070 Euler transform of powers of 6.
  * @author Georg Fischer
  */
 public class A144070 extends EulerTransform {

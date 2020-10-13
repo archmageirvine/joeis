@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A283271 Product_{n>=1} (1 - x^n)^(n^4)
+ * A283271 Expansion of exp( Sum_{n&gt;=1} -sigma_5(n)*x^n/n ) in powers of x.
  * @author Georg Fischer
  */
 public class A283271 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A307648 Product_{k>=1} 1/(1 - x^k)^(mu(k)*k)
+ * A307648 G.f. A(x) satisfies: 1/(1 - x) = A(x)*A(x^2)^2*A(x^3)^3*A(x^4)^4* ... *A(x^k)^k* ...
  * @author Georg Fischer
  */
 public class A307648 extends EulerTransform {

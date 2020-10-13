@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A217093 Product_{i>=1} 1/(1-x^i)^binomial(i+2, 2)
+ * A217093 Number of partitions of n objects of 3 colors.
  * @author Georg Fischer
  */
 public class A217093 extends EulerTransform {

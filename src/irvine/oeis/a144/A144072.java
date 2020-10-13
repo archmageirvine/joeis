@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A144072 Product_{j>0} 1/(1-x^j)^(8^j)
+ * A144072 Euler transform of powers of 8.
  * @author Georg Fischer
  */
 public class A144072 extends EulerTransform {

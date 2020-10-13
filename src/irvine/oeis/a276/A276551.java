@@ -7,7 +7,7 @@ import irvine.oeis.EulerTransform;
 
 
 /**
- * A276551 Product_{k>0} (1-x^k)^(k*2)
+ * A276551 Convolution square of A073592.
  * @author Georg Fischer
  */
 public class A276551 extends EulerTransform {

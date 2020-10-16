@@ -113,6 +113,6 @@ public class A035536 extends MemoryFunctionInt2Array<Z> implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    return mMult == 1 ? get(mN, mN, mZeroes) : get(mN * mMult, mN * mMult, mZeroes);
+    return get(mN * mMult, mN * mMult, mZeroes);
   }
 }

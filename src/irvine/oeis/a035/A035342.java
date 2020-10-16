@@ -15,7 +15,7 @@ public class A035342 implements Sequence {
   private int mN = 0;
   private int mM = 0;
 
-  private Z t(final int n, final int k) {
+  protected Z t(final int n, final int k) {
     Z sum = Z.ZERO;
     for (int j = 0; j <= n - k; ++j) {
       sum = sum.add(Binomial.binomial(j + k - 1, k - 1).multiply(Binomial.binomial(2L * n - j - k - 1, n - 1)).multiply(j + k).shiftLeft(j));

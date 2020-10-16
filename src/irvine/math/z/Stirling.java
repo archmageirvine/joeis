@@ -95,9 +95,6 @@ public final class Stirling {
     if (n == 0 || m == 0 || n < m) {
       return Z.ZERO;
     }
-    if (n == 1) {
-      return Z.ONE;
-    }
     final String key = n + "_" + m;
     final Z s = SECOND_KIND.get(key);
     if (s != null) {
@@ -117,7 +114,7 @@ public final class Stirling {
    * @return associated Stirling number of the first kind
    */
   public static Z associatedFirstKind(final long n, final long m) {
-    if (n < 0 || m < 0 || m > n) {
+    if (m < 0 || m > n) {
       return Z.ZERO;
     }
     if (m == 0) {

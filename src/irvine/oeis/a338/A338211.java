@@ -22,7 +22,7 @@ public class A338211 implements Sequence {
   @Override
   public Z next() {
     if (++mM >= mPerimeterCounts.length) {
-      if(++mN == 0) {
+      if (++mN == 0) {
         return Z.ONE; // exactly 1 polyomino with no perimeter
       }
       mM = 0;

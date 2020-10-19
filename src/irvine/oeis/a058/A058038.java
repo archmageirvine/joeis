@@ -3,7 +3,7 @@ package irvine.oeis.a058;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A058038 Fibonacci(2n)*Fibonacci(2n+2).
+ * A058038 a(n) = Fibonacci(2*n)*Fibonacci(2*n+2).
  * @author Sean A. Irvine
  */
 public class A058038 extends LinearRecurrence {

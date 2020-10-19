@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A010051 Characteristic function of primes: 1 if n is prime else 0.
+ * A010051 Characteristic function of primes: 1 if n is prime, else 0.
  * @author Sean A. Irvine
  */
 public class A010051 implements Sequence {

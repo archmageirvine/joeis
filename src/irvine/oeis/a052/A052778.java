@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052778 A simple grammar.
+ * A052778 E.g.f.: x^4*log(-1/(-1+x)).
  * @author Georg Fischer
  */
 public class A052778 extends HolonomicRecurrence {

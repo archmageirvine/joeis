@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A338213 Perimeter poly free poly.
+ * A338213 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A338213 implements Sequence {

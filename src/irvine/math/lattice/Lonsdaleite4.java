@@ -10,6 +10,8 @@ import irvine.math.LongUtils;
  */
 class Lonsdaleite4 extends Z4Lattice {
 
+  // todo This is wrong, it nearly reproduces A008524
+
   @Override
   public int neighbourCount(final long point) {
     return 5;
@@ -17,7 +19,6 @@ class Lonsdaleite4 extends Z4Lattice {
 
   @Override
   public long neighbour(final long point, final int neighbourNumber) {
-    // todo close but no cigar
     switch (neighbourNumber) {
       case 0:
         return point + 1;

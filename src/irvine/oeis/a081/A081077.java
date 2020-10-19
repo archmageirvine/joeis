@@ -3,7 +3,7 @@ package irvine.oeis.a081;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A081077 Lucas(4n+2)+3, or Lucas(2n)*Lucas(2n+2).
+ * A081077 a(n) = Lucas(4*n+2) + 3, or Lucas(2*n)*Lucas(2*n+2).
  * @author Sean A. Irvine
  */
 public class A081077 extends LinearRecurrence {

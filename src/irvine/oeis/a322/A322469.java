@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A322469 Irregular table: row i = 1, 2, 3, ... starts with <code>4*i - 1</code>; then, as long as the number is divisible by 3, the next two terms are the result of dividing it by 3, then multiplying it by 2.
+ * A322469 Irregular table: row i = 1, 2, 3, ... starts with 4*i - 1; then, as long as the number is divisible by 3, the next two terms are the result of dividing it by 3, then multiplying it by 2.
  *
  * @author Georg Fischer
  */

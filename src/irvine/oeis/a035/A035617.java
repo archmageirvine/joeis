@@ -30,7 +30,7 @@ public class A035617 implements Sequence {
         if (u.isEmpty()) {
           return true;
         }
-        final long v = Long.valueOf(u, 3);
+        final long v = Long.parseLong(u, 3);
         if (mWinning.get(mWinning.size() - i + j - 1).isSet(v)) {
           return true;
         }

@@ -17,7 +17,7 @@ public class A036044 implements Sequence {
     if (++mN > mMask) {
       mMask = mMask * 2 + 1;
     }
-    return Z.valueOf(~Long.valueOf(new StringBuilder(Long.toString(mN, 2)).reverse().toString(), 2) & mMask);
+    return Z.valueOf(~Long.parseLong(new StringBuilder(Long.toString(mN, 2)).reverse().toString(), 2) & mMask);
   }
 }
 

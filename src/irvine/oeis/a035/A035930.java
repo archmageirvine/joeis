@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A035930 implements Sequence {
 
-  private static Z Z100 = Z.valueOf(100);
+  private static final Z Z100 = Z.valueOf(100);
   private long mN = -1;
 
   static Z f(final Z n) {

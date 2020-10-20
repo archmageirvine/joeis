@@ -14,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A036035 implements Sequence {
 
-  private static final Fast mPrime = new Fast();
+  private final Fast mPrime = new Fast();
   private int mN = -1;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.COLEXICOGRAPHIC);
 

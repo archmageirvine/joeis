@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A035933 implements Sequence {
 
-  private static Z Z100 = Z.valueOf(100);
+  private static final Z Z100 = Z.valueOf(100);
 
   static Z f(final Z n) {
     if (n.compareTo(Z100) < 0) {

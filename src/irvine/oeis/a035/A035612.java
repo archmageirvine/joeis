@@ -15,7 +15,7 @@ public class A035612 extends A003714 {
 
   @Override
   public Z next() {
-    final Z t= super.next();
+    final Z t = super.next();
     t.makeOdd();
     return Z.valueOf(t.auxiliary() + 1);
   }

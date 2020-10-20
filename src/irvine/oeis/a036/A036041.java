@@ -1,6 +1,5 @@
 package irvine.oeis.a036;
 
-import irvine.factor.factor.Cheetah;
 import irvine.factor.factor.PrimeDivision;
 import irvine.math.z.Z;
 import irvine.oeis.a025.A025487;

@@ -3,6 +3,7 @@ package irvine.oeis.a036;
 import java.util.TreeSet;
 
 import irvine.factor.prime.Fast;
+import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -15,19 +16,7 @@ public class A036035 implements Sequence {
 
   private static final Fast mPrime = new Fast();
   private int mN = -1;
-  private final TreeSet<int[]> mA = new TreeSet<>((a, b) -> {
-    final int c = Integer.compare(a.length, b.length);
-    if (c != 0) {
-      return c;
-    }
-    for (int k = a.length - 1; k >= 0; --k) {
-      final int ck = Integer.compare(a[k], b[k]);
-      if (ck != 0) {
-        return ck;
-      }
-    }
-    return 0;
-  });
+  private final TreeSet<int[]> mA = new TreeSet<>(Comparators.COLEXICOGRAPHIC);
 
   @Override
   public Z next() {

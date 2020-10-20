@@ -8,10 +8,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036036 Triangle read by rows in which row n lists all the parts of all reversed partitions of n, sorted first by length and then lexicographically.
+ * A036037 Triangle read by rows in which row n lists all the parts of all the partitions of n, sorted first by length and then colexicographically.
  * @author Sean A. Irvine
  */
-public class A036036 implements Sequence {
+public class A036037 implements Sequence {
 
   private int mN = 0;
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.COLEXICOGRAPHIC);
@@ -20,7 +20,7 @@ public class A036036 implements Sequence {
 
   @Override
   public Z next() {
-    if (--mM < 0) {
+    if (++mM >= mCurrent.length) {
       if (mA.isEmpty()) {
         int[] part;
         final IntegerPartition integerPartition = new IntegerPartition(++mN);
@@ -29,7 +29,7 @@ public class A036036 implements Sequence {
         }
       }
       mCurrent = mA.pollFirst();
-      mM = mCurrent.length - 1;
+      mM = 0;
     }
     return Z.valueOf(mCurrent[mM]);
   }

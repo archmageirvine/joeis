@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A338212 allocated for Sean A. Irvine.
+ * A338212 a(n) is the number of fixed polyominoes with sprawl n.
  * @author Sean A. Irvine
  */
 public class A338212 implements Sequence {

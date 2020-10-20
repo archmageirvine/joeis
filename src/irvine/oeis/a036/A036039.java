@@ -10,14 +10,14 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036040 Irregular triangle of multinomial coefficients, read by rows (version 1).
+ * A036039 Triangle of multinomial coefficients of integer partitions read by rows (in Abramowitz and Stegun ordering).
  * @author Sean A. Irvine
  */
-public class A036040 implements Sequence {
+public class A036039 implements Sequence {
 
-  private final MemoryFactorial mF = new MemoryFactorial();
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
   private int mN = 0;
+  private final MemoryFactorial mF = new MemoryFactorial();
   private int[] mC;
 
   @Override
@@ -30,12 +30,12 @@ public class A036040 implements Sequence {
       }
       mC = new int[mN + 1];
     }
+    // A036039(n, m) := n!/ (mul((t)^q(t)*q(t)!, t=1..n));
     IntegerPartition.toCountForm(mA.pollFirst(), mC);
     Z prod = Z.ONE;
     for (int k = 1; k < mC.length; ++k) {
-      prod = prod.multiply(mF.factorial(k).pow(mC[k]).multiply(mF.factorial(mC[k])));
+      prod = prod.multiply(Z.valueOf(k).pow(mC[k]).multiply(mF.factorial(mC[k])));
     }
     return mF.factorial(mN).divide(prod);
   }
 }
-

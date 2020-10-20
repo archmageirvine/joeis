@@ -69,8 +69,7 @@ public class A035536 extends MemoryFunctionInt2Array<Z> implements Sequence {
    * Recursively evaluate all partitions and accumulate information for the condition
    * @param n number to be partitioned
    * @param i nesting level
-   * @param t first accumulator
-   * @param s second accumulator
+   * @param cn accumulators
    * @return number of partitions of n with this condition
    */
   @Override

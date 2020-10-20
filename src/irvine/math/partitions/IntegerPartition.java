@@ -189,6 +189,22 @@ public final class IntegerPartition {
   }
 
   /**
+   * Compute the dual of a partition.
+   * @param p partition
+   * @return dual of the partition
+   */
+  public static int[] dual(final int[] p) {
+    final int[] dual = new int[p[0]];
+    for (int k = 0, j = p.length - 1; k < dual.length; ++k) {
+      while (p[j] <= k) {
+        --j;
+      }
+      dual[k] = j + 1;
+    }
+    return dual;
+  }
+
+  /**
    * Print all integer partitions of given argument.
    * @param args arguments
    */

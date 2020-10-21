@@ -1,15 +1,14 @@
 package irvine.oeis.a036;
 
 import java.util.List;
-import java.util.TreeSet;
 
 import irvine.math.z.Z;
 
 /**
- * A036048 Number of different cycle lengths of the permutation created by duality and reversal on the partitions of n.
+ * A036055 Number of cycles of the permutation created by length sorting on the partitions of n.
  * @author Sean A. Irvine
  */
-public class A036048 extends A036046 {
+public class A036055 extends A036052 {
 
   {
     super.next();
@@ -17,7 +16,7 @@ public class A036048 extends A036046 {
 
   @Override
   protected Z count(final List<Integer> v) {
-    final TreeSet<Integer> set = new TreeSet<>();
+    int cycles = 0;
     final boolean[] t = new boolean[v.size()];
     for (int k = 0; k < v.size(); ++k) {
       int c = 0;
@@ -28,9 +27,9 @@ public class A036048 extends A036046 {
         ++c;
       }
       if (c > 0) {
-        set.add(c);
+        ++cycles;
       }
     }
-    return Z.valueOf(set.size());
+    return Z.valueOf(cycles);
   }
 }

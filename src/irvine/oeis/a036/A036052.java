@@ -5,18 +5,18 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.TreeSet;
 
+import irvine.math.Comparators;
 import irvine.math.partitions.IntegerPartition;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036046 Product of the lengths of the cycle types of the permutation created by duality and reversal on the partitions of n.
+ * A036052 Product of the lengths of the cycle types of the permutation created by length sorting on the partitions of n.
  * @author Sean A. Irvine
  */
-public class A036046 implements Sequence {
+public class A036052 implements Sequence {
 
   private int mN = -1;
 
@@ -71,19 +71,19 @@ public class A036046 implements Sequence {
       return Z.ONE;
     }
     final LinkedHashMap<Wrapper, Integer> map = new LinkedHashMap<>();
+    final TreeSet<int[]> lex = new TreeSet<>(Comparators.INCREASING_LENGTH_DECREASING_VALUE);
     final IntegerPartition integerPartition = new IntegerPartition(mN);
     int[] p;
     int k = 0;
     while ((p = integerPartition.next()) != null) {
       map.put(new Wrapper(p), ++k);
+      lex.add(p);
     }
     final ArrayList<Integer> v = new ArrayList<>();
-    for (final Map.Entry<Wrapper, Integer> e : map.entrySet()) {
-      final int[] dual = IntegerPartition.dual(e.getKey().mPartition);
-      v.add(map.get(new Wrapper(dual)));
+    for (final int[] part : lex) {
+      v.add(lex.size() + 1 - map.get(new Wrapper(part)));
     }
     Collections.reverse(v);
-    //System.out.println(mN + " " + v + " " + map);
     return count(v);
   }
 }

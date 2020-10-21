@@ -6,7 +6,7 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A036050.
+ * A036050 Sum of the lengths of the cycle types of the permutation created by duality and reversal on the partitions of n.
  * @author Sean A. Irvine
  */
 public class A036050 extends A036046 {
@@ -16,7 +16,7 @@ public class A036050 extends A036046 {
   }
 
   @Override
-  protected Z order(final List<Integer> v) {
+  protected Z count(final List<Integer> v) {
     final TreeSet<Integer> set = new TreeSet<>();
     final boolean[] t = new boolean[v.size()];
     for (int k = 0; k < v.size(); ++k) {

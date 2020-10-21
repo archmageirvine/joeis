@@ -6,10 +6,10 @@ import java.util.TreeSet;
 import irvine.math.z.Z;
 
 /**
- * A036048 Number of different cycle lengths of the permutation created by duality and reversal on the partitions of n.
+ * A036056 Sum of the lengths of the cycle types of the permutation created by length sorting on the partitions of n.
  * @author Sean A. Irvine
  */
-public class A036048 extends A036046 {
+public class A036056 extends A036052 {
 
   {
     super.next();
@@ -31,6 +31,10 @@ public class A036048 extends A036046 {
         set.add(c);
       }
     }
-    return Z.valueOf(set.size());
+    Z sum = Z.ZERO;
+    for (final int s : set) {
+      sum = sum.add(s);
+    }
+    return sum;
   }
 }

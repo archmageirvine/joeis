@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036046.
+ * A036051 Sum of distances between greatest-part-order and length-order of partitions of n.
  * @author Sean A. Irvine
  */
 public class A036051 implements Sequence {

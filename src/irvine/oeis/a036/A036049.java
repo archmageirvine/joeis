@@ -5,7 +5,7 @@ import java.util.List;
 import irvine.math.z.Z;
 
 /**
- * A036049.
+ * A036049 Number of cycles of the permutation created by duality and reversal on the partitions of n.
  * @author Sean A. Irvine
  */
 public class A036049 extends A036046 {
@@ -15,7 +15,7 @@ public class A036049 extends A036046 {
   }
 
   @Override
-  protected Z order(final List<Integer> v) {
+  protected Z count(final List<Integer> v) {
     int cycles = 0;
     final boolean[] t = new boolean[v.size()];
     for (int k = 0; k < v.size(); ++k) {

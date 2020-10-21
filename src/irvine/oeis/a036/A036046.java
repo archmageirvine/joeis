@@ -20,10 +20,10 @@ public class A036046 implements Sequence {
 
   private int mN = -1;
 
-  private static final class Wrapper {
+  static final class Wrapper {
     private final int[] mPartition;
 
-    private Wrapper(final int[] partition) {
+    Wrapper(final int[] partition) {
       mPartition = partition;
     }
 

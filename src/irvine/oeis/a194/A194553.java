@@ -6,13 +6,13 @@ import irvine.oeis.a005.A005898;
 
 
 /**
- * A194566 Centered cube numbers: (n+1)^100+n^100.
+ * A194553 Centered cube numbers: (n+1)^25 + n^25.
  * @author Georg Fischer
  */
-public class A194566 extends A005898 {
+public class A194553 extends A005898 {
 
   /** Construct the sequence. */
-  public A194566() {
-    super(100);
+  public A194553() {
+    super(25);
   }
 }

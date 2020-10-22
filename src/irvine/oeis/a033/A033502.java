@@ -24,7 +24,7 @@ public class A033502 extends A002322 {
           final Z c = Z.valueOf(18 * mN + 1);
           if (mPrime.isPrime(c)) {
             final Z n = a.multiply(b).multiply(c);
-            if (!mPrime.isPrime(n) && n.mod(lambda(n.longValueExact())).equals(Z.ONE)) {
+            if (!mPrime.isPrime(n) && n.mod(lambda(n)).equals(Z.ONE)) {
               return n;
             }
           }

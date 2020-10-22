@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036057.
+ * A036057 Friedman numbers: can be written in a nontrivial way using their digits and the operations + - * / ^ and concatenation of digits (but not of results).
  * @author Sean A. Irvine
  */
 public class A036057 implements Sequence {
@@ -139,11 +139,7 @@ public class A036057 implements Sequence {
       }
       return;
     }
-    // Reject queue addition if we have the node already.
-    if (mResults.contains(n)) {
-      return;
-    }
-    if (mPriority.contains(n)) {
+    if (!mResults.add(n)) {
       return;
     }
     // Otherwise add it to the hash map and queue.
@@ -152,7 +148,6 @@ public class A036057 implements Sequence {
     } else {
       mPriority.addLast(n);
     }
-    mResults.add(n);
   }
 
   /**

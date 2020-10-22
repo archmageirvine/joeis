@@ -16,8 +16,8 @@ public class A002322 implements Sequence {
   private final PrimeDivision mFactor = new PrimeDivision();
   protected long mN = 0;
 
-  protected Z lambda(final long n) {
-    final FactorSequence fs = mFactor.factorize(Z.valueOf(n));
+  protected Z lambda(final Z n) {
+    final FactorSequence fs = mFactor.factorize(n);
     Z lambda = Z.ONE;
     for (final Z p : fs.toZArray()) {
       final int e = fs.getExponent(p);
@@ -32,6 +32,10 @@ public class A002322 implements Sequence {
       }
     }
     return lambda;
+  }
+
+  protected Z lambda(final long n) {
+    return lambda(Z.valueOf(n));
   }
 
   @Override

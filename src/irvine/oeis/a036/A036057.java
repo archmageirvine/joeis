@@ -1,10 +1,9 @@
 package irvine.oeis.a036;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Map;
+import java.util.Set;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -44,16 +43,16 @@ public class A036057 implements Sequence {
 
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
 
-  private final Map<Node, String> mResults = new HashMap<>();
+  private final Set<Node> mResults = new HashSet<>();
 
   /** Queue of candidate numbers awaiting operations. */
   private final LinkedList<Node> mPriority = new LinkedList<>();
 
-  /** Large used number (essentially 2^digits). */
+  /** Large used number (essentially 2^digits-1). */
   private int mMaxUsed;
 
   private Node mAnswer = null;
-  private int mN = 24;
+  private int mN = 24; //16386; //24;
   private String mTrivial = null;
 
   /**
@@ -124,46 +123,40 @@ public class A036057 implements Sequence {
    * @param desc description for value
    */
   private void insert(final double v, final int used, final String desc) {
-    if (used == 0 || v < 0 || v > mN * (double) mN || Double.isNaN(v)) {
+    if (used == 0 /*|| v < 0*/ || v > mN * (double) mN || Double.isNaN(v)) {
       return;
     } else if (v != 0.0 && v < 1.0e-6) {
       return;
     }
-    final boolean integer = v - Math.floor(v) < TOLERANCE;
+    final boolean integer = Math.abs(v - Math.floor(v)) < TOLERANCE;
     final int vv = (int) v;
-    // Don't add non-integers when we have already used all numbers.
-    if (!integer && used == mMaxUsed) {
+    final Node n = new Node(v, used, desc);
+    if (used == mMaxUsed) {
+      if (integer && vv == mN && isNontrivial(n)) {
+        mAnswer = n;
+      }
       return;
     }
-    final Node n = new Node(v, used, desc);
-    // Replace current answer if new answer is superior.
-    if (integer && v <= mN && (used & mMaxUsed) == mMaxUsed && vv == mN && isNontrivial(n)) {
-      mAnswer = n;
-    }
-    // check if various simplifications already exist, if so then we don't want to add this version
-    if ((used & mMaxUsed) == mMaxUsed) {
-      // reject this node if we already have this value
-      if (mResults.get(n) != null) {
-        return;
-      }
-      if (Integer.bitCount(used) > 1) {
-        final Node x = new Node(0.0, 0, null);
-        x.mValue = v;
-        for (int i = 1; i < mMaxUsed; i <<= 1) {
-          if ((used | i) == used) {
-            x.mUsed = used & ~i;
-            if (mResults.get(x) != null) {
-              return;
-            }
-          }
-        }
-      }
-    }
+//      if (Integer.bitCount(used) > 1) {
+//        final Node x = new Node(0.0, 0, null);
+//        x.mValue = v;
+//        for (int i = 1; i < mMaxUsed; i <<= 1) {
+//          if ((used | i) == used) {
+//            x.mUsed = used & ~i;
+//            if (mResults.get(x) != null) {
+//              return;
+//            }
+//          }
+//        }
+//      }
     // Reject queue addition if we have the node already.
+    if (mResults.contains(n)) {
+      return;
+    }
     if (mPriority.contains(n)) {
       return;
-    } else if (!integer && Integer.bitCount(used) > 3) {
-      return; // make 2 for more speed 3 for thorough
+//    } else if (!integer && Integer.bitCount(used) > 3) {
+//      return; // make 2 for more speed 3 for thorough
     }
     // Otherwise add it to the hash map and queue.
     if (integer) {
@@ -171,11 +164,7 @@ public class A036057 implements Sequence {
     } else {
       mPriority.addLast(n);
     }
-    // Comment out the following line for a more thorough search
-    if (used == mMaxUsed || (Integer.bitCount(used) > 1 && !integer)) {
-      return;
-    }
-    mResults.put(n, desc);
+    mResults.add(n);
   }
 
   /**
@@ -185,10 +174,7 @@ public class A036057 implements Sequence {
    * simply involve adding some more elements to process.
    *
    * The procedure returns only once the queue of candidates is empty or
-   * until all the required numbers have been generated.
-   *
-   * In the inner loop we make our own private temporary Hashtable to overcome
-   * concurrency problems during the iteration.
+   * until the required number has been generated.
    */
   private void guzzle() {
     while (!mPriority.isEmpty()) {
@@ -198,7 +184,10 @@ public class A036057 implements Sequence {
       final Node n = mPriority.removeFirst();
       final double nv = n.mValue;
       if (n.mUsed != mMaxUsed) {
-        for (final Node b : new HashSet<>(mResults.keySet())) {
+        if (nv != 0 && !n.mDesc.endsWith("u")) {
+          insert(-nv, n.mUsed, n.mDesc + 'u'); // unary minus
+        }
+        for (final Node b : new HashSet<>(mResults)) {
           final double bv = b.mValue;
           final int mask = isPermitted(n.mUsed, b.mUsed);
           if (mask == 0) {

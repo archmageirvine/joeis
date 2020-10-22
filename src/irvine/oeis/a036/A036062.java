@@ -4,10 +4,10 @@ import irvine.math.z.Z;
 import irvine.oeis.a001.A001359;
 
 /**
- * A036061 Increasing gaps among twin primes: the largest prime of the starting twin pair.
+ * A036062 Increasing gaps among twin primes: the smallest prime of the second twin pair.
  * @author Sean A. Irvine
  */
-public class A036061 extends A001359 {
+public class A036062 extends A001359 {
 
   private Z mA = super.next();
   private Z mGap = Z.ZERO;
@@ -20,7 +20,7 @@ public class A036061 extends A001359 {
       final Z d = mA.subtract(t);
       if (d.compareTo(mGap) > 0) {
         mGap = d;
-        return t.add(2);
+        return mA;
       }
     }
   }

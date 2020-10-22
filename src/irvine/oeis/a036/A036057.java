@@ -52,7 +52,7 @@ public class A036057 implements Sequence {
   private int mMaxUsed;
 
   private Node mAnswer = null;
-  private int mN = 24; //16386; //24;
+  private int mN = 24;
   private String mTrivial = null;
 
   /**
@@ -86,7 +86,8 @@ public class A036057 implements Sequence {
       for (int i = 0; i < nums.length; ++i) {
         final ArrayList<Node> copy = new ArrayList<>(mPriority);
         for (final Node t : copy) {
-          insert(t.mValue * 10.0 + nums[i].charAt(0) - '0', isPermitted(t.mUsed, 1 << i), t.mDesc + nums[i] + 'C');
+          final double v = t.mValue * 10.0 + nums[i].charAt(0) - '0';
+          insert(v, isPermitted(t.mUsed, 1 << i), t.mDesc + nums[i] + 'C');
         }
       }
     }
@@ -123,12 +124,13 @@ public class A036057 implements Sequence {
    * @param desc description for value
    */
   private void insert(final double v, final int used, final String desc) {
-    if (used == 0 /*|| v < 0*/ || v > mN * (double) mN || Double.isNaN(v)) {
+    //System.out.println(desc);
+    if (used == 0 || v < 0 || v > mN * (double) mN || Double.isNaN(v)) {
       return;
     } else if (v != 0.0 && v < 1.0e-6) {
       return;
     }
-    final boolean integer = Math.abs(v - Math.floor(v)) < TOLERANCE;
+    final boolean integer = v - Math.floor(v) < TOLERANCE;
     final int vv = (int) v;
     final Node n = new Node(v, used, desc);
     if (used == mMaxUsed) {
@@ -137,26 +139,12 @@ public class A036057 implements Sequence {
       }
       return;
     }
-//      if (Integer.bitCount(used) > 1) {
-//        final Node x = new Node(0.0, 0, null);
-//        x.mValue = v;
-//        for (int i = 1; i < mMaxUsed; i <<= 1) {
-//          if ((used | i) == used) {
-//            x.mUsed = used & ~i;
-//            if (mResults.get(x) != null) {
-//              return;
-//            }
-//          }
-//        }
-//      }
     // Reject queue addition if we have the node already.
     if (mResults.contains(n)) {
       return;
     }
     if (mPriority.contains(n)) {
       return;
-//    } else if (!integer && Integer.bitCount(used) > 3) {
-//      return; // make 2 for more speed 3 for thorough
     }
     // Otherwise add it to the hash map and queue.
     if (integer) {
@@ -184,9 +172,6 @@ public class A036057 implements Sequence {
       final Node n = mPriority.removeFirst();
       final double nv = n.mValue;
       if (n.mUsed != mMaxUsed) {
-        if (nv != 0 && !n.mDesc.endsWith("u")) {
-          insert(-nv, n.mUsed, n.mDesc + 'u'); // unary minus
-        }
         for (final Node b : new HashSet<>(mResults)) {
           final double bv = b.mValue;
           final int mask = isPermitted(n.mUsed, b.mUsed);
@@ -201,6 +186,8 @@ public class A036057 implements Sequence {
           insert(bv * nv, mask, b.mDesc + n.mDesc + '*');
           insert(Math.pow(bv, nv), mask, b.mDesc + n.mDesc + '^');
           insert(Math.pow(nv, bv), mask, n.mDesc + b.mDesc + '^');
+          insert(Math.pow(bv, -nv), mask, b.mDesc + n.mDesc + "u^");
+          insert(Math.pow(nv, -bv), mask, n.mDesc + b.mDesc + "u^");
         }
       }
     }

@@ -69,13 +69,13 @@ public class A337867 implements Sequence {
 			mCells[mNCells].mX = x;
 			mCells[mNCells].mY = y;
 			mCells[mNCells].mSector = sector;
-			mNCells++;
+			++mNCells;
 		}
 		canonize();      /* Writes into bcells[] */
 		show();        /* Retain the contents */
 
 		if (sector != 0) {
-			mNCells--;    /* Restore the cell count. */
+			--mNCells;    /* Restore the cell count. */
 		}
 	}
 
@@ -283,7 +283,7 @@ public class A337867 implements Sequence {
 			mRetained.put(toString(mCells, 1), new Cell[] {t});
 			return Z.ONE;
 		} else {
-			Collection<Cell[]> values = mRetained.values();
+			final Collection<Cell[]> values = mRetained.values();
 			mRetained = new HashMap<>();
 			for (final Cell[] r : values) {
 				for (int k = 0; k < r.length; ++k) {
@@ -297,9 +297,9 @@ public class A337867 implements Sequence {
 
 				// Adjoin a monabolo.
 				for (int c = 0; c < mNCells; c++) {
-					int x = mCells[c].mX;
-					int y = mCells[c].mY;
-					int v = mCells[c].mSector;
+					final int x = mCells[c].mX;
+					final int y = mCells[c].mY;
+					final int v = mCells[c].mSector;
 					if (v != 0x0 && v != 0xf) {  /* fill out the cell */
 						mCells[c].mSector = 0xf;
 						add(0, 0, 0);    /* 0 means change nothing */

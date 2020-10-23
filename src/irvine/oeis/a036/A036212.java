@@ -1,6 +1,6 @@
 package irvine.oeis.a036;
 
-import java.util.TreeSet;
+import java.util.TreeMap;
 
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
@@ -17,10 +17,11 @@ public class A036212 implements Sequence {
   @Override
   public Z next() {
     mN = mN.add(1);
-    final TreeSet<Z> mSeen = new TreeSet<>();
+    final TreeMap<Z, Long> mSeen = new TreeMap<>();
     Z m = mN;
     long cnt = 0;
-    while (mSeen.add(m)) {
+    while (!mSeen.containsKey(m)) {
+      mSeen.put(m, ++cnt);
       final StringBuilder sb = new StringBuilder();
       final int[] c = ZUtils.digitCounts(m);
       for (int d = 9; d >= 0; --d) {
@@ -29,8 +30,7 @@ public class A036212 implements Sequence {
         }
       }
       m = new Z(sb);
-      ++cnt;
     }
-    return Z.valueOf(cnt);
+    return Z.valueOf(mSeen.get(m));
   }
 }

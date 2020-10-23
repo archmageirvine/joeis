@@ -51,7 +51,6 @@ public class A337867 implements Sequence {
 	}
 
 	private int mNCells;
-	boolean xflag;
 	private int mNWorkingCells;
 	private int mNBestCells;
 	private final Cell[] mCells = new Cell[MAX];
@@ -66,15 +65,15 @@ public class A337867 implements Sequence {
 		}
 	}
 
-	protected void add(final int xnew, final int ynew, final int sector) {
+	protected void add(final int x, final int y, final int sector) {
 		if (sector != 0) {
-			mCells[mNCells].mX = xnew;
-			mCells[mNCells].mY = ynew;
+			mCells[mNCells].mX = x;
+			mCells[mNCells].mY = y;
 			mCells[mNCells].mSector = sector;
 			mNCells++;
 		}
 		canonize();      /* Writes into bcells[] */
-		show();        /* Prints the contents */
+		show();        /* Retain the contents */
 
 		if (sector != 0) {
 			mNCells--;    /* Restore the cell count. */
@@ -84,18 +83,18 @@ public class A337867 implements Sequence {
 	/* Turn a polyabolo all different ways and choose the lexically first. */
 	private void canonize() {
 		mNWorkingCells = mNCells;
-		for (int c = 0; c < mNCells; c++) {
+		for (int c = 0; c < mNCells; ++c) {
 			mWorkingCells[c].mX = mCells[c].mX;
 			mWorkingCells[c].mY = mCells[c].mY;
 			mWorkingCells[c].mSector = mCells[c].mSector;
 		}
 
 		mNBestCells = 0;
-		for (int refl = 0; refl < 2; refl++) {
-			for (int rot = 0; rot < 4; rot++) {
+		for (int refl = 0; refl < 2; ++refl) {
+			for (int rot = 0; rot < 4; ++rot) {
 				int ymin = Integer.MAX_VALUE;
 				int xmin = Integer.MAX_VALUE;
-				for (int c = 0; c < mNWorkingCells; c++) {
+				for (int c = 0; c < mNWorkingCells; ++c) {
 					if (mWorkingCells[c].mX < xmin) {
 						xmin = mWorkingCells[c].mX;
 					}
@@ -103,7 +102,7 @@ public class A337867 implements Sequence {
 						ymin = mWorkingCells[c].mY;
 					}
 				}
-				for (int c = 0; c < mNWorkingCells; c++) {
+				for (int c = 0; c < mNWorkingCells; ++c) {
 					mWorkingCells[c].mX -= xmin;
 					mWorkingCells[c].mY -= ymin;
 				}
@@ -111,14 +110,14 @@ public class A337867 implements Sequence {
 
 				if (mNBestCells == 0 || lexBefore()) {
 					mNBestCells = mNWorkingCells;
-					for (int c = 0; c < mNWorkingCells; c++) {
+					for (int c = 0; c < mNWorkingCells; ++c) {
 						mBestCell[c].mX = mWorkingCells[c].mX;
 						mBestCell[c].mY = mWorkingCells[c].mY;
 						mBestCell[c].mSector = mWorkingCells[c].mSector;
 					}
 				}
 				// Rotate
-				for (int c = 0; c < mNWorkingCells; c++) {
+				for (int c = 0; c < mNWorkingCells; ++c) {
 					final int t = mWorkingCells[c].mY;
 					mWorkingCells[c].mY = -mWorkingCells[c].mX;
 					mWorkingCells[c].mX = t;
@@ -126,16 +125,16 @@ public class A337867 implements Sequence {
 				}
 			}
 			// Reflect
-			for (int c = 0; c < mNWorkingCells; c++) {
+			for (int c = 0; c < mNWorkingCells; ++c) {
 				mWorkingCells[c].mX = -mWorkingCells[c].mX;
 				mWorkingCells[c].mSector = REFL_BITS[mWorkingCells[c].mSector];
 			}
 		}
 	}
 
-	// Compare the current working polyabolo lexically to the "best" one. */
+	// Compare the current working polyabolo lexically to the "best" one.
 	private boolean lexBefore() {
-		for (int c = 0; c < mNWorkingCells; c++) {
+		for (int c = 0; c < mNWorkingCells; ++c) {
 			final int d = mWorkingCells[c].compareTo(mBestCell[c]);
 			if (d > 0) {
 				return false;
@@ -147,9 +146,8 @@ public class A337867 implements Sequence {
 		return false;  // identical
 	}
 
-
-	protected boolean vacant(int x, int y) {
-		for (int c = 0; c < mNCells; c++) {
+	protected boolean vacant(final int x, final int y) {
+		for (int c = 0; c < mNCells; ++c) {
 			if (mCells[c].mX == x && mCells[c].mY == y) {
 				return false;
 			}
@@ -308,7 +306,7 @@ public class A337867 implements Sequence {
 						add(0, 0, 0);    /* 0 means change nothing */
 						mCells[c].mSector = v;  /* restore the value */
 					}
-					// Neighbor cell adjacencies.  Use a whole separate clause for -x.
+					// Neighbor cell adjacencies.
 					update(x, y, v);
 				}
 			}

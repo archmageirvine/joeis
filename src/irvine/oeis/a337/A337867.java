@@ -9,11 +9,10 @@ import irvine.oeis.Sequence;
 
 /**
  * A337867 allocated for George Sicherman.
- * @author Sean A. Irvine
+ * @author George Sicherman
+ * @author Sean A. Irvine (Java port)
  */
 public class A337867 implements Sequence {
-
-	// After George Sicherman C program
 
 	private static final int MAX = 100;
 	private static final int[] REFL_BITS = {

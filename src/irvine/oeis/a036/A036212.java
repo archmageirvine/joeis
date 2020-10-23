@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036212.
+ * A036212 When the 'Summarize preceding term' sequence gets into a cycle.
  * @author Sean A. Irvine
  */
 public class A036212 implements Sequence {

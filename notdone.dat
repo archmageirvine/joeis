@@ -491,7 +491,6 @@ A006064 Smallest junction number with n generators
 A006065 Maximal number of 4-tree rows in n-tree orchard problem, cf. A003035
 A006066 Kobon triangles: maximal number of nonoverlapping triangles that can be formed from n lines drawn in the plane
 A006067 Number of ways to quarter an n X n chessboard, cf. A003213
-A006074 Number of polyaboloes (or polytans): number of different shapes that can be formed with n congruent isosceles right triangles
 A006075 Minimal number of knights needed to cover an n X n board, doable but not competitive?
 A006076 Similar A006075
 A006089 Coefficients of elliptic function cn

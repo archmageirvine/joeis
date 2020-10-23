@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A338210 Triangle of coefficients of perimeter polynomials for fixed polyominoes.
+ * A338210 allocated for Sean A. Irvine.
  * @author Sean A. Irvine
  */
 public class A338210 implements Sequence {

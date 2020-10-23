@@ -7,7 +7,7 @@ import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 
 /**
- * A036225.
+ * A036225 Length of cycle the 'summarize the previous term' sequence gets into.
  * @author Sean A. Irvine
  */
 public class A036225 implements Sequence {

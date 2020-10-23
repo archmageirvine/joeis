@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A035094 Smallest prime of form (n!)*k + 1.
+ * A035094 Smallest prime of form (n!)*k+1.
  * @author Sean A. Irvine
  */
 public class A035094 implements Sequence {

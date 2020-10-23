@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000244;
 
 /**
- * A036215.
+ * A036215 Binary reversal of 3^n.
  * @author Sean A. Irvine
  */
 public class A036215 extends A000244 {

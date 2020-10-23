@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A075511.
+ * A075511 Sixth column of triangle A075497.
  * @author Sean A. Irvine
  */
 public class A075511 implements Sequence {

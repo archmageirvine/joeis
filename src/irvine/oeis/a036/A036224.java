@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036224.
+ * A036224 Expansion of (-1+1/(1-6*x)^6)/(36*x); related to A036084.
  * @author Sean A. Irvine
  */
 public class A036224 implements Sequence {

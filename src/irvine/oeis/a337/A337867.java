@@ -49,17 +49,17 @@ public class A337867 implements Sequence {
 		}
 	}
 
-	int ncells;
+	int mNCells;
 	boolean xflag;
 	int nwcells;
 	int nbcells;
-	final Cell[] cells = new Cell[100];
+	final Cell[] mCells = new Cell[100];
 	final Cell[] wcells = new Cell[100];
 	final Cell[] bcells = new Cell[100];
 
 	{
 		for (int k = 0; k < 100; ++k) {
-			cells[k] = new Cell();
+			mCells[k] = new Cell();
 			wcells[k] = new Cell();
 			bcells[k] = new Cell();
 		}
@@ -67,26 +67,26 @@ public class A337867 implements Sequence {
 
 	private void add(final int xnew, final int ynew, final int sector) {
 		if (sector != 0) {
-			cells[ncells].mX = xnew;
-			cells[ncells].mY = ynew;
-			cells[ncells].mSector = sector;
-			ncells++;
+			mCells[mNCells].mX = xnew;
+			mCells[mNCells].mY = ynew;
+			mCells[mNCells].mSector = sector;
+			mNCells++;
 		}
 		canonize();      /* Writes into bcells[] */
 		show();        /* Prints the contents */
 
 		if (sector != 0) {
-			ncells--;    /* Restore the cell count. */
+			mNCells--;    /* Restore the cell count. */
 		}
 	}
 
 	/* Turn a polyabolo all different ways and choose the lexically first. */
 	private void canonize() {
-		nwcells = ncells;
-		for (int c = 0; c < ncells; c++) {
-			wcells[c].mX = cells[c].mX;
-			wcells[c].mY = cells[c].mY;
-			wcells[c].mSector = cells[c].mSector;
+		nwcells = mNCells;
+		for (int c = 0; c < mNCells; c++) {
+			wcells[c].mX = mCells[c].mX;
+			wcells[c].mY = mCells[c].mY;
+			wcells[c].mSector = mCells[c].mSector;
 		}
 
 		nbcells = 0;
@@ -148,8 +148,8 @@ public class A337867 implements Sequence {
 
 
 	private boolean vacant(int x, int y) {
-		for (int c = 0; c < ncells; c++) {
-			if (cells[c].mX == x && cells[c].mY == y) {
+		for (int c = 0; c < mNCells; c++) {
+			if (mCells[c].mX == x && mCells[c].mY == y) {
 				return false;
 			}
 		}
@@ -191,88 +191,85 @@ public class A337867 implements Sequence {
 			t.mX = 0;
 			t.mY = 0;
 			t.mSector = 3;
-			mRetained.put(toString(cells, 1), new Cell[] {t});
+			mRetained.put(toString(mCells, 1), new Cell[] {t});
 			return Z.ONE;
 		} else {
 			Collection<Cell[]> values = mRetained.values();
 			mRetained = new HashMap<>();
 			for (final Cell[] r : values) {
 				for (int k = 0; k < r.length; ++k) {
-					cells[k].mX = r[k].mX;
-					cells[k].mY = r[k].mY;
-					cells[k].mSector = r[k].mSector;
+					mCells[k].mX = r[k].mX;
+					mCells[k].mY = r[k].mY;
+					mCells[k].mSector = r[k].mSector;
 				}
-				ncells = r.length;
+				mNCells = r.length;
 
 				//System.out.println("Starting: " + toString(r, r.length));
 
 				// Adjoin a monabolo.
-				for (int c = 0; c < ncells; c++) {
-					int x = cells[c].mX;
-					int y = cells[c].mY;
-					int v = cells[c].mSector;
+				for (int c = 0; c < mNCells; c++) {
+					int x = mCells[c].mX;
+					int y = mCells[c].mY;
+					int v = mCells[c].mSector;
 					if (v != 0x0 && v != 0xf) {  /* fill out the cell */
-						cells[c].mSector = 0xf;
+						mCells[c].mSector = 0xf;
 						add(0, 0, 0);    /* 0 means change nothing */
-						cells[c].mSector = v;  /* restore the value */
+						mCells[c].mSector = v;  /* restore the value */
 					}
 
 					// Neighbor cell adjacencies.  Use a whole separate clause for -x.
 					if (xflag) {
+						// todo subclass -x case
 						// Orthogonal moves
 						if ((v & 0x7) != 0) {  /* go down */
-							final int xnew = x;
 							final int ynew = y + 1;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xc);
-								add(xnew, ynew, 0xa);
+							if (vacant(x, ynew)) {
+								add(x, ynew, 0xc);
+								add(x, ynew, 0xa);
 								if ((v & 0x2) != 0) {
-									add(xnew, ynew, 0x3);
+									add(x, ynew, 0x3);
 								}
 								if ((v & 0x4) != 0) {
-									add(xnew, ynew, 0x5);
+									add(x, ynew, 0x5);
 								}
 							}
 						}
 						if ((v & 0xb) != 0) {  /* go right */
 							final int xnew = x + 1;
-							final int ynew = y;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xc);
-								add(xnew, ynew, 0x5);
+							if (vacant(xnew, y)) {
+								add(xnew, y, 0xc);
+								add(xnew, y, 0x5);
 								if ((v & 1) != 0) {
-									add(xnew, ynew, 0x3);
+									add(xnew, y, 0x3);
 								}
 								if ((v & 8) != 0) {
-									add(xnew, ynew, 0xa);
+									add(xnew, y, 0xa);
 								}
 							}
 						}
 						if ((v & 0xd) != 0) {  /* go left */
 							final int xnew = x - 1;
-							final int ynew = y;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xa);
-								add(xnew, ynew, 0x3);
+							if (vacant(xnew, y)) {
+								add(xnew, y, 0xa);
+								add(xnew, y, 0x3);
 								if ((v & 1) != 0) {
-									add(xnew, ynew, 0x5);
+									add(xnew, y, 0x5);
 								}
 								if ((v & 8) != 0) {
-									add(xnew, ynew, 0xc);
+									add(xnew, y, 0xc);
 								}
 							}
 						}
 						if ((v & 0xe) != 0) {  /* go up */
-							final int xnew = x;
 							final int ynew = y - 1;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0x5);
-								add(xnew, ynew, 0x3);
+							if (vacant(x, ynew)) {
+								add(x, ynew, 0x5);
+								add(x, ynew, 0x3);
 								if ((v & 2) != 0) {
-									add(xnew, ynew, 0xa);
+									add(x, ynew, 0xa);
 								}
 								if ((v & 4) != 0) {
-									add(xnew, ynew, 0xc);
+									add(x, ynew, 0xc);
 								}
 							}
 						}
@@ -315,35 +312,31 @@ public class A337867 implements Sequence {
 						}
 					} else {
 						if ((v & 0x1) != 0) {  /* go down */
-							final int xnew = x;
 							final int ynew = y + 1;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xc);
-								add(xnew, ynew, 0xa);
+							if (vacant(x, ynew)) {
+								add(x, ynew, 0xc);
+								add(x, ynew, 0xa);
 							}
 						}
 						if ((v & 0x2) != 0) {  /* go right */
 							final int xnew = x + 1;
-							final int ynew = y;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xc);
-								add(xnew, ynew, 0x5);
+							if (vacant(xnew, y)) {
+								add(xnew, y, 0xc);
+								add(xnew, y, 0x5);
 							}
 						}
 						if ((v & 0x4) != 0) {  /* go left */
 							final int xnew = x - 1;
-							final int ynew = y;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0xa);
-								add(xnew, ynew, 0x3);
+							if (vacant(xnew, y)) {
+								add(xnew, y, 0xa);
+								add(xnew, y, 0x3);
 							}
 						}
 						if ((v & 0x8) != 0) {  /* go up */
-							final int xnew = x;
 							final int ynew = y - 1;
-							if (vacant(xnew, ynew)) {
-								add(xnew, ynew, 0x5);
-								add(xnew, ynew, 0x3);
+							if (vacant(x, ynew)) {
+								add(x, ynew, 0x5);
+								add(x, ynew, 0x3);
 							}
 						}
 					}

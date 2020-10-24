@@ -3,7 +3,7 @@ package irvine.oeis.a006;
 import irvine.oeis.a337.A337867;
 
 /**
- * A006074.
+ * A006074 Number of polyaboloes (or polytans): number of different shapes that can be formed with n congruent isosceles right triangles, identifying mirror images.
  * @author Sean A. Irvine
  */
 public class A006074 extends A337867 {

@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A337867 allocated for George Sicherman.
+ * A337867 Number of polyfetts (or polifetti) with n cells, identifying mirror images.
  * @author George Sicherman
  * @author Sean A. Irvine (Java port)
  */

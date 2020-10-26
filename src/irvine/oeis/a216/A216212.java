@@ -4,7 +4,7 @@ package irvine.oeis.a216;
 import irvine.oeis.GeneratingFunctionSequence;
 
 /**
- * A216212 Number of n step walks (each step +/-1 starting from 0) which are never more than 4 or less than -4.
+ * A216212 Number of n step walks (each step +-1 starting from 0) which are never more than 4 or less than -4.
  * @author Georg Fischer
  */
 public class A216212 extends GeneratingFunctionSequence {

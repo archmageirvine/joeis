@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036213 Duplicating binary multipliers, i.e., n+1 1-bits placed 2n bits from each other.
+ * A036213 Duplicating binary multipliers; i.e., n+1 1-bits placed 2n bits from each other.
  * @author Sean A. Irvine
  */
 public class A036213 implements Sequence {

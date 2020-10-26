@@ -1,0 +1,54 @@
+package irvine.oeis.a036;
+
+import java.util.TreeSet;
+
+import irvine.math.z.Z;
+import irvine.oeis.Sequence;
+
+/**
+ * A036342 Prime concatenated analog clock numbers read clockwise.
+ * @author Sean A. Irvine
+ */
+public class A036342 implements Sequence {
+
+  private static final class State implements Comparable<State> {
+    private final Z mA;
+    private final int mClock;
+
+    private State(final Z a, final int clock) {
+      mA = a;
+      mClock = clock;
+    }
+
+    @Override
+    public int compareTo(final State o) {
+      final int c = mA.compareTo(o.mA);
+      if (c != 0) {
+        return c;
+      }
+      return Integer.compare(mClock, o.mClock);
+    }
+  }
+
+  private final TreeSet<State> mState = new TreeSet<>();
+  {
+    for (int k = 1; k <= 12; ++k) {
+      mState.add(new State(Z.valueOf(k), k));
+    }
+  }
+
+  @Override
+  public Z next() {
+    while (true) {
+      final State s = mState.pollFirst();
+      int next = s.mClock + 1;
+      if (next == 13) {
+        next = 1;
+      }
+      mState.add(new State(new Z(s.mA.toString() + next), next));
+      if (s.mA.isProbablePrime()) {
+        return s.mA;
+      }
+    }
+  }
+}

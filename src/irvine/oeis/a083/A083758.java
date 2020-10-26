@@ -7,7 +7,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A083758 Beginning with 2, rearrangement of primes (other than 5) such that every concatenation beginning with the first term is a prime.
+ * A083758 Lexicographically earliest infinite sequence of distinct primes such that the concatenation of the initial n terms is a prime for all n &gt;= 1.
  * @author Sean A. Irvine
  */
 public class A083758 implements Sequence {

@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A338213 allocated for Sean A. Irvine.
+ * A338213 a(n) is the number of free polyominoes with sprawl n.
  * @author Sean A. Irvine
  */
 public class A338213 implements Sequence {

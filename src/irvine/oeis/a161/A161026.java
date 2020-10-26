@@ -19,7 +19,7 @@ public class A161026 implements Sequence {
   protected int mOccur; // number of occurrences of the parts
 
   /**
-   * Empty constructor
+   * Construct the sequence.
    */
   public A161026() {
     this(0, 2);
@@ -39,13 +39,16 @@ public class A161026 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    int f0 = 0;
-    int f1 = 1;
+    long f0 = 0;
+    long f1 = 1;
     Polynomial<Z> prod = RING.one();
     for (int k = 2; k <= mN; ++k) {
-      final int expon = f0 + f1; // Fibonacci
-      prod = RING.multiply(prod, RING.add(RING.one(),
-         RING.series(RING.monomial(Z.ONE, mOccur * expon), RING.oneMinusXToTheN(expon), mN)), mN);
+      final long expon = f0 + f1; // Fibonacci
+      if (expon <= mN) {
+        final int e = (int) expon;
+        prod = RING.multiply(prod, RING.add(RING.one(),
+          RING.series(RING.monomial(Z.ONE, mOccur * e), RING.oneMinusXToTheN(e), mN)), mN);
+      }
       f0 = f1; 
       f1 = expon; // recurrence
     }

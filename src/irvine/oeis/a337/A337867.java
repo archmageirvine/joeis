@@ -44,6 +44,20 @@ public class A337867 implements Sequence {
     }
 
     @Override
+    public int hashCode() {
+      return mX * 65537 + mY * 17 + mSector;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof Cell)) {
+        return false;
+      }
+      final Cell o = (Cell) obj;
+      return mX == o.mX && mY == o.mY && mSector == o.mSector;
+    }
+
+    @Override
     public String toString() {
       return "(" + mX + "," + mY + "," + mSector + ")";
     }

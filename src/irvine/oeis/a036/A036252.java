@@ -14,7 +14,7 @@ import irvine.oeis.a029.A029857;
  */
 public class A036252 extends A029857 {
 
-  private final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mB = RING.create(Collections.emptyList());
   private final Polynomial<Z> mB2 = RING.create(Collections.emptyList());
   private int mN = -1;

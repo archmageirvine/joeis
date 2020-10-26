@@ -13,7 +13,7 @@ import irvine.math.z.Z;
  */
 public class A036250 extends A036249 {
 
-  private final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
+  private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private final Polynomial<Z> mB = RING.create(Collections.emptyList());
   private int mN = -1;
 

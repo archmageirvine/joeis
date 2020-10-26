@@ -1445,3 +1445,6 @@ A035481 Number of n X n symmetric matrices whose first row is 1..n and whose row
 A035482 Number of n X n symmetric matrices each of whose rows is a permutation of 1..n.
 A035483 2n X 2n symmetric matrices whose first row is 1..2n and whose rows and columns are all permutations of 1..2n.
 A035512 Number of unlabeled strongly connected digraphs with n nodes, insufficient detail
+A036235 Found on a quiz long ago.
+A036297 Number of Hadamard matrices of order n
+A036300 Number of binary abstract 2-D configurations.

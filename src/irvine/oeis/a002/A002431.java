@@ -15,6 +15,11 @@ public class A002431 implements Sequence {
   private int mN = -1;
   private Z mF = Z.ONE;
 
+  protected Z select(final Q v) {
+    final Z t = v.num();
+    return t.signum() < 0 ? t : t.negate();
+  }
+
   @Override
   public Z next() {
     if (++mN == 0) {
@@ -24,7 +29,7 @@ public class A002431 implements Sequence {
     mB.nextQ();
     final Q b = mB.nextQ();
     final Z s = Z.ONE.shiftLeft(2 * mN);
-    final Z t = b.multiply(s).divide(mF).num();
-    return t.signum() < 0 ? t : t.negate();
+    final Q t = b.multiply(s).divide(mF);
+    return select(t);
   }
 }

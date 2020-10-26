@@ -83,11 +83,7 @@ public class PrimeDivision extends AbstractFactorizer {
     }
 
     // test what the exit condition was
-    if (p == 0 || p > limit) {
-      fs.add(n, n.isProbablePrime() ? FactorSequence.PROB_PRIME : status, exponent);
-    } else {
-      fs.add(n, FactorSequence.PRIME, exponent);
-    }
+    fs.add(n, n.isProbablePrime() ? FactorSequence.PROB_PRIME : status, exponent);
   }
 
 

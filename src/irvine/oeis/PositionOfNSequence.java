@@ -14,7 +14,7 @@ public class PositionOfNSequence implements Sequence {
 
   private final Sequence mS;
   private final TreeMap<Long, Long> mMap = new TreeMap<>();
-  private long mN;
+  protected long mN;
   private long mM;
 
   /**

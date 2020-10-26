@@ -7,10 +7,10 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036337 Largest integer with n digits and exactly n prime factors (counted with multiplicity).
+ * A036336 Smallest positive integer with n digits and exactly n prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
-public class A036337 implements Sequence {
+public class A036336 implements Sequence {
 
   private final PrimeDivision mPrimeDivision = new PrimeDivision(1000000);
   private long mN = 0;
@@ -29,13 +29,14 @@ public class A036337 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    mLimit = mLimit.multiply(10);
     Z s = mLimit;
-    while (true) {
-      s = s.subtract(1);
+    mLimit = mLimit.multiply(10);
+    while (!s.equals(mLimit)) {
       if (bigOmega(s) == mN) {
         return s;
       }
+      s = s.add(1);
     }
+    throw new RuntimeException();
   }
 }

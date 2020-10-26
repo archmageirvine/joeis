@@ -9,7 +9,7 @@ import irvine.oeis.Sequence;
  */
 public class A051626 implements Sequence {
 
-  private Z mN = Z.ZERO;
+  protected Z mN = Z.ZERO;
 
   /**
    * Test if a number has a terminating decimal representation.
@@ -42,7 +42,6 @@ public class A051626 implements Sequence {
           return Z.valueOf(pow - m);
         }
       }
-
     }
   }
 }

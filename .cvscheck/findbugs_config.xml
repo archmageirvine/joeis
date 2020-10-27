@@ -237,6 +237,12 @@
      <Match classregex="irvine.oeis.a034.A034011">
        <BugCode name="SEO"/>
      </Match>
+     <Match classregex="irvine.oeis.a036.A036345">
+       <BugCode name="SEO"/>
+     </Match>
+     <Match classregex="irvine.oeis.a036.A036346">
+       <BugCode name="SEO"/>
+     </Match>
 
      <!-- I am allowed to ignore return values and have absolute paths in a test -->
      <Match classregex=".*Test">

@@ -11,11 +11,11 @@ import irvine.oeis.Sequence;
  */
 public class A036342 implements Sequence {
 
-  private static final class State implements Comparable<State> {
-    private final Z mA;
-    private final int mClock;
+  static final class State implements Comparable<State> {
+    final Z mA;
+    final int mClock;
 
-    private State(final Z a, final int clock) {
+    State(final Z a, final int clock) {
       mA = a;
       mClock = clock;
     }

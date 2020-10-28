@@ -20,7 +20,7 @@ public class A035053 implements Sequence {
   private int mN = -1;
   private final Sequence mCSeq = new SkipSequence(new A035052(), 1);
   private final Sequence mBSeq = new SkipSequence(new A007563(), 1);
-  private final Polynomial<Z> mC = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mC = RING.empty();
   private final Polynomial<Z> mB = RING.create(Collections.singletonList(Z.ONE));
   {
     mC.add(Z.ZERO);

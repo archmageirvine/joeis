@@ -1,7 +1,6 @@
 package irvine.oeis.a003;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
@@ -30,7 +29,7 @@ public class A003611 implements Sequence {
   protected int mN = 0;
 
   protected Polynomial<Polynomial<Q>> innerSubstitute(final Polynomial<Polynomial<Q>> t, final int power, final int n) {
-    final Polynomial<Polynomial<Q>> subs = RING.create(Collections.emptyList());
+    final Polynomial<Polynomial<Q>> subs = RING.empty();
     for (final Polynomial<Q> v : t) {
       subs.add(v.substitutePower(power, n));
     }

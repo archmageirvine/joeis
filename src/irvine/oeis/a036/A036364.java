@@ -1,7 +1,5 @@
 package irvine.oeis.a036;
 
-import java.util.Collections;
-
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
@@ -12,7 +10,7 @@ import irvine.oeis.a000.A000081;
  */
 public class A036364 extends A000081 {
 
-  private final Polynomial<Z> mB = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mB = RING.empty();
   {
     for (int k = 0; k < 3; ++k) {
       mB.add(super.next());

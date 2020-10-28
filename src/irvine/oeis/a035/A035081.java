@@ -26,7 +26,7 @@ public class A035081 implements Sequence {
       f = f.divide(k);
       egj = RING.multiply(egj, RING.pow(RING.onePlusXToTheN(f, k), p.coeff(k), n), n);
     }
-    final Polynomial<Q> res = RING.create(Collections.emptyList());
+    final Polynomial<Q> res = RING.empty();
     Z fac = Z.ONE;
     for (int k = 0; k <= egj.degree(); ++k) {
       if (k > 1) {

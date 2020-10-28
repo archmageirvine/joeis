@@ -1,7 +1,5 @@
 package irvine.oeis.a028;
 
-import java.util.Collections;
-
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -15,7 +13,7 @@ public class A028995 extends A028609 {
 
   private static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   private int mN = -1;
-  private Polynomial<Z> mA028609 = RING.create(Collections.emptyList());
+  private Polynomial<Z> mA028609 = RING.empty();
 
   @Override
   public Z next() {

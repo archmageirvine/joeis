@@ -1,7 +1,5 @@
 package irvine.oeis.a023;
 
-import java.util.Collections;
-
 import irvine.math.IntegerUtils;
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
@@ -34,7 +32,7 @@ public class A023902 implements Sequence {
   }
 
   private Polynomial<Z> modEval(final Polynomial<Polynomial<Z>> s, final Polynomial<Z> m) {
-    final Polynomial<Z> res = RING.create(Collections.emptyList());
+    final Polynomial<Z> res = RING.empty();
     for (final Polynomial<Z> c : s) {
       res.add(RING.eval(RING.mod(c, m), Z.ONE));
     }

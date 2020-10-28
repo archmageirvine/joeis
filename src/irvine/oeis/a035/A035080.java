@@ -1,7 +1,5 @@
 package irvine.oeis.a035;
 
-import java.util.Collections;
-
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Integers;
@@ -19,8 +17,8 @@ public class A035080 implements Sequence {
   private int mN = -1;
   private final Sequence mCSeq = new A035079();
   private final Sequence mBSeq = new A007561();
-  private final Polynomial<Z> mC = RING.create(Collections.emptyList());
-  private final Polynomial<Z> mB = RING.create(Collections.emptyList());
+  private final Polynomial<Z> mC = RING.empty();
+  private final Polynomial<Z> mB = RING.empty();
 
   @Override
   public Z next() {

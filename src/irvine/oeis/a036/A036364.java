@@ -5,10 +5,18 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A036364.
+ * A036364 Number of free n-ominoes with cell centers determining n-2 space (proper dimension n-2).
  * @author Sean A. Irvine
  */
 public class A036364 extends A000081 {
+
+  /*
+                                                                                  5                 2      2 2
+          3             2          4         2    2         2 2        4    8 B(x)     8 (B(x) + B(x )) B(x )
+    4 B(x)  + 4 B(x) B(x ) + 5 B(x)  + 2 B(x)  B(x ) + 7 B(x )  + 2 B(x ) + -------- + -----------------------
+                                                                            1 - B(x)                 2
+                                                                                              1 - B(x )
+   */
 
   private final Polynomial<Z> mB = RING.empty();
   {
@@ -42,11 +50,3 @@ public class A036364 extends A000081 {
       .divide(8);
   }
 }
-
-/*
-                                                                                5                 2      2 2
-        3             2          4         2    2         2 2        4    8 B(x)     8 (B(x) + B(x )) B(x )
-  4 B(x)  + 4 B(x) B(x ) + 5 B(x)  + 2 B(x)  B(x ) + 7 B(x )  + 2 B(x ) + -------- + -----------------------
-                                                                          1 - B(x)                 2
-                                                                                            1 - B(x )
- */

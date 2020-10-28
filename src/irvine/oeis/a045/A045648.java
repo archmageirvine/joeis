@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 
 /**
- * A045648.
+ * A045648 Number of chiral n-ominoes in (n-1)-space, one cell labeled.
  * @author Sean A. Irvine
  */
 public class A045648 extends MemorySequence {

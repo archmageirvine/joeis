@@ -1,7 +1,5 @@
 package irvine.oeis.a318;
 
-import java.util.Collections;
-
 import irvine.math.IntegerUtils;
 import irvine.math.factorial.MemoryFactorial;
 import irvine.math.group.IntegerField;
@@ -52,7 +50,7 @@ public class A318951 implements Sequence {
     final IntegerPartition parts = new IntegerPartition(m);
     int[] q;
     while ((q = parts.next()) != null) {
-      final Polynomial<Q> ks = RING.create(Collections.emptyList());
+      final Polynomial<Q> ks = RING.empty();
       ks.add(Q.ZERO);
       for (int t = 1; t <= n; ++t) {
         ks.add(new Q(k(q, t, k), Z.valueOf(t)));

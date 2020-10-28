@@ -1,7 +1,5 @@
 package irvine.oeis.a035;
 
-import java.util.Collections;
-
 import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
@@ -17,7 +15,7 @@ import irvine.oeis.WeighTransformSequence;
 public class A035353 implements Sequence {
 
   protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  protected Polynomial<Z> mA = RING.create(Collections.emptyList());
+  protected Polynomial<Z> mA = RING.empty();
   protected int mN = -1;
 
   static Polynomial<Z> bhk(final Polynomial<Z> p, final int n) {

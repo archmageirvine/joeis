@@ -1,7 +1,5 @@
 package irvine.oeis.a033;
 
-import java.util.Collections;
-
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.q.Q;
@@ -16,7 +14,7 @@ import irvine.oeis.a000.A000290;
 public class A033454 extends A000290 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private final Polynomial<Q> mA = RING.create(Collections.emptyList());
+  private final Polynomial<Q> mA = RING.empty();
   private Z mF = Z.ONE;
   {
     mA.add(new Q(super.next()));

@@ -28,6 +28,20 @@ public class A036342 implements Sequence {
       }
       return Integer.compare(mClock, o.mClock);
     }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (!(obj instanceof State)) {
+        return false;
+      }
+      final State o = (State) obj;
+      return mClock == o.mClock && mA.equals(o.mA);
+    }
+
+    @Override
+    public int hashCode() {
+      return mA.hashCode() * mClock;
+    }
   }
 
   private final TreeSet<State> mState = new TreeSet<>();

@@ -67,6 +67,15 @@ public class PolynomialRing<E> extends AbstractRing<Polynomial<E>> {
   }
 
   /**
+   * Return an empty polynomial.  Callers can then add values themselves
+   * to set a particular polynomial.
+   * @return empty polynomial.
+   */
+  public Polynomial<E> empty() {
+    return create(Collections.emptyList());
+  }
+
+  /**
    * Create a polynomial in this field with the given coefficients.
    * @param coefficients the coefficients in the underlying field
    * @return the polynomial

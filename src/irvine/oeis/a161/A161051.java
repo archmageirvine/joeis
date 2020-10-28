@@ -39,7 +39,7 @@ public class A161051 implements Sequence {
     ++mN;
     Polynomial<Z> prod = RING.one();
     int expon = 1;
-    for (int k = 1; k <= mN; ++k) {
+    for (int k = 1; k <= mN && mOccur * expon <= mN; ++k) {
       prod = RING.multiply(prod, RING.add(RING.one(),
          RING.series(RING.monomial(Z.ONE, mOccur * expon), RING.oneMinusXToTheN(expon), mN)), mN);
       expon <<= 1; // powers of 2

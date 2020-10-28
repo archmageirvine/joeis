@@ -44,12 +44,12 @@ public class A161026 implements Sequence {
     Polynomial<Z> prod = RING.one();
     for (int k = 2; k <= mN; ++k) {
       final long expon = f0 + f1; // Fibonacci
-      if (expon <= mN) {
-        final int e = (int) expon;
-        prod = RING.multiply(prod, RING.add(RING.one(),
-          RING.series(RING.monomial(Z.ONE, mOccur * e), RING.oneMinusXToTheN(e), mN)), mN);
+      if (mOccur * expon > mN) {
+        break;
       }
-      f0 = f1; 
+      prod = RING.multiply(prod, RING.add(RING.one(),
+        RING.series(RING.monomial(Z.ONE, (int) (mOccur * expon)), RING.oneMinusXToTheN((int) expon), mN)), mN);
+      f0 = f1;
       f1 = expon; // recurrence
     }
     return prod.coeff(mN);

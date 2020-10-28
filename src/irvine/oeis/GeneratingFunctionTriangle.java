@@ -1,5 +1,6 @@
 /* Generating functions with 2 variables yielding a (lower left) triangle
  * @(#) $Id$
+ * 2020-10-27: Constructors with Strings
  * 2019-08-25: Constructor for Riordan arrays
  * 2019-07-04, Georg Fischer: copied from GeneratingFunctionSequence
  */
@@ -114,6 +115,27 @@ public class GeneratingFunctionTriangle implements Sequence {
   }
 
   /**
+   * Construct the specified generating function.
+   * @param num coefficients of numerator   polynomial in triangular order
+   * @param den coefficients of denominator polynomial in triangular order
+   * The offset is assumed to be 0.
+   */
+  public GeneratingFunctionTriangle(final String num, final String den) {
+    this(0, ZUtils.toZ(num), ZUtils.toZ(den));
+  }
+
+  /**
+   * Construct the specified generating function.
+   * @param offset first valid term has this index
+   * @param num coefficients of numerator   polynomial in triangular order
+   * @param den coefficients of denominator polynomial in triangular order
+   */
+  public GeneratingFunctionTriangle(final int offset, final String num, final String den) {
+    this(offset, ZUtils.toZ(num), ZUtils.toZ(den));
+  }
+
+
+  /**
    * Gets a triangle element.
    * @param triangle linearized array of polynomial coefficients
    * @param ix index/exponent for x
@@ -181,45 +203,34 @@ public class GeneratingFunctionTriangle implements Sequence {
     return result;
   } // next
 
-//  /**
-//   * Test method, shows some fixed triangle with no arguments, or the
-//   * sequence resulting from the input parameters.
-//   * @param args command line arguments: none for A007318, or
-//   * number of terms num_coeffs den_coeff
-//   */
-//  public static void main(String[] args) {
-//    GeneratingFunctionTriangle triangle = new GeneratingFunctionTriangle
-//      (0, new long[]{1}, new long[]{1, -1, -1}); // Pascal's triangle A007318: G.f.: 1 / (1-x-x*y).
-//    int noTerms = 48;
-//    int iarg = 0;
-//    if (iarg < args.length) { // with arguments
-//      try {
-//        noTerms = Integer.parseInt(args[iarg++]);
-//      } catch (Exception exc) {
-//      }
-//      String[] nums = args[iarg++].split("\\,");
-//      String[] dens = args[iarg++].split("\\,");
-//      long[] num = new long[nums.length];
-//      long[] den = new long[dens.length];
-//      int itri;
-//      for (itri = 0; itri < num.length; itri++) {
-//        num[itri] = 0;
-//        try {
-//          num[itri] = Integer.parseInt(nums[itri]);
-//        } catch (Exception exc) {
-//        }
-//      } // for
-//      for (itri = 0; itri < den.length; itri++) {
-//        den[itri] = 0;
-//        try {
-//          den[itri] = Integer.parseInt(dens[itri]);
-//        } catch (Exception exc) {
-//        }
-//      } // for
-//      triangle = new GeneratingFunctionTriangle(0, num, den);
-//    } // with arguments
-//    for (int iterm = 0; iterm < noTerms; iterm++) {
-//      System.out.println(iterm + " " + triangle.next().toString());
-//    } // for iterm
-//  } // main
+  /**
+   * Test method, shows some fixed triangle with no arguments, or the
+   * sequence resulting from the input parameters.
+   * @param args command line arguments: none for A007318, or
+   * <code>noTerms "[num_coeffs]" "[den_coeff]"</code>
+   */
+  public static void main(final String[] args) {
+    String num = "[1]";
+    String den = "[1,-1,-1]"; // default: Pascal's triangle A007318: G.f.: 1 / (1-x-x*y).
+    int noTerms = 64;
+    int iarg = 0;
+    if (iarg < args.length) { // with arguments
+      try {
+        noTerms = Integer.parseInt(args[iarg++]);
+      } catch (final RuntimeException exc) {
+        // ignored
+      }
+      num = args[iarg++];
+      den = args[iarg++];
+    } // with arguments
+    GeneratingFunctionTriangle triangle = new GeneratingFunctionTriangle(0, num, den);
+    for (int iterm = 0; iterm < noTerms; iterm++) { // b-file format
+      System.out.println(iterm + " " + triangle.next().toString());
+    } // for iterm
+    triangle = new GeneratingFunctionTriangle(0, num, den);
+    for (int iterm = 0; iterm < noTerms; iterm++) { // data section format
+      System.out.print(triangle.next().toString() + ", ");
+    } // for iterm
+    System.out.println();
+  } // main
 } // GeneratingFunctionTriangle

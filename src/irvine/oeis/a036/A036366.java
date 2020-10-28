@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a004.A004111;
 
 /**
- * A036366.
+ * A036366 Number of asymmetric n-ominoes in n-2 space.
  * @author Sean A. Irvine
  */
 public class A036366 extends A004111 {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000081;
 
 /**
- * A036367.
+ * A036367 Number of free orthoplex n-ominoes with cell centers determining n-2 space.
  * @author Sean A. Irvine
  */
 public class A036367 extends A000081 {

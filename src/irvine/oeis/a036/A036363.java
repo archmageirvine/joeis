@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036363.
+ * A036363 Line-labeled 2-trees with n nodes.
  * @author Sean A. Irvine
  */
 public class A036363 implements Sequence {

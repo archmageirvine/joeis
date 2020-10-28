@@ -1,6 +1,7 @@
 package irvine.oeis.a049;
 
 import irvine.math.z.Z;
+import irvine.oeis.PrependSequence;
 import irvine.oeis.Sequence;
 import irvine.oeis.a035.A035206;
 import irvine.oeis.a036.A036038;
@@ -11,7 +12,7 @@ import irvine.oeis.a036.A036038;
  */
 public class A049009 extends A035206 {
 
-  private final Sequence mA036038 = new A036038();
+  private final Sequence mA036038 = new PrependSequence(new A036038(), 1);
 
   @Override
   public Z next() {

@@ -17,13 +17,16 @@ public class A048996 implements Sequence {
 
   private final MemoryFactorial mF = new MemoryFactorial();
   private final TreeSet<int[]> mA = new TreeSet<>(Comparators.LEXICOGRAPHIC);
-  protected int mN = 0;
+  protected int mN = -1;
   private int[] mC;
 
   @Override
   public Z next() {
     if (mA.isEmpty()) {
-      final IntegerPartition part = new IntegerPartition(++mN);
+      if (++mN == 0) {
+        return Z.ONE;
+      }
+      final IntegerPartition part = new IntegerPartition(mN);
       int[] p;
       while ((p = part.next()) != null) {
         mA.add(Arrays.copyOf(p, p.length));

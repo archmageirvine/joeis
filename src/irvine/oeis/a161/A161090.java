@@ -38,7 +38,7 @@ public class A161090 implements Sequence {
   public Z next() {
     ++mN;
     Polynomial<Z> prod = RING.one();
-    for (int k = 1; k <= mN; ++k) {
+    for (int k = 1; k * k <= mN; ++k) {
       final int expon = k * k; // squares
       prod = RING.multiply(prod, RING.add(RING.one(),
          RING.series(RING.monomial(Z.ONE, mOccur * expon), RING.oneMinusXToTheN(expon), mN)), mN);

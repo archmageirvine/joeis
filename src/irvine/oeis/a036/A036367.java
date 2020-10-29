@@ -1,51 +1,74 @@
 package irvine.oeis.a036;
 
-import irvine.math.polynomial.Polynomial;
+import irvine.math.MemoryFunction2;
 import irvine.math.z.Z;
-import irvine.oeis.a000.A000081;
+import irvine.oeis.Sequence;
 
 /**
  * A036367 Number of free orthoplex n-ominoes with cell centers determining n-2 space.
  * @author Sean A. Irvine
  */
-public class A036367 extends A000081 {
+public class A036367 extends MemoryFunction2<Long, Z> implements Sequence {
 
-  // todo is this formula actually correct? it doesn't seem to work
+  private long mN = 3;
 
-  /*
-                                                5              2 2
-       2      2  2        2 2        4    4 B(x)     4 B(x) B(x )
-  (B(x)  + B(x ))  + 2 B(x )  + 2 B(x ) + -------- + -------------
-                                          1 - B(x)            2
-                                                       1 - B(x )
-   */
-
-  private final Polynomial<Z> mB = RING.empty();
-  {
-    for (int k = 0; k < 4; ++k) {
-      mB.add(super.next());
-    }
+  private Z s(final long n, final long k) {
+    return get(n + 1 - k, 1L).add(n < 2 * k ? Z.ZERO : s(n - k, k));
   }
-  private int mN = 3;
+
+  private Z inner(final long j) {
+    Z sum = Z.ZERO;
+    for (long k = 5; k <= mN; k += 2) {
+      sum = sum.add(get(j, (k - 1) / 2).multiply(get(mN - 2 * j, 1L)));
+    }
+    return sum.multiply(4);
+  }
+
+  @Override
+  protected Z compute(final Long n, final Long k) {
+    if (k == 1) {
+      if (n == 1) {
+        return Z.ONE;
+      }
+      Z sum = Z.ZERO;
+      for (long j = 1; j < n; ++j) {
+        sum = sum.add(get(j, 1L).multiply(s(n - 1, j)).multiply(j));
+      }
+      return sum.divide(n - 1);
+    }
+    Z sum = Z.ZERO;
+    for (long j = 1; j < n; ++j) {
+      sum = sum.add(get(j, 1L).multiply(get(n - j, k - 1)));
+    }
+    return sum;
+  }
 
   @Override
   public Z next() {
-    mB.add(super.next());
-    ++mN;
-    final Polynomial<Z> b2 = mB.substitutePower(2, mN);
-    final Polynomial<Z> b4 = mB.substitutePower(4, mN);
-    final Polynomial<Z> b2p2 = RING.multiply(b2, b2, mN);
-    final Polynomial<Z> bp2 = RING.multiply(mB, mB, mN);
-    final Polynomial<Z> bp3 = RING.multiply(bp2, mB, mN);
-    final Polynomial<Z> bp4 = RING.multiply(bp3, mB, mN);
-    final Polynomial<Z> bp5 = RING.multiply(bp4, mB, mN);
-    final Polynomial<Z> a = RING.series(RING.multiply(RING.multiply(mB, b2p2, mN), Z.FOUR), RING.subtract(RING.one(), b2), mN);
-    final Polynomial<Z> b = RING.series(RING.multiply(bp5, Z.FOUR), RING.subtract(RING.one(), mB), mN);
-    return RING.pow(RING.add(bp2, b2), 2, mN).coeff(mN)
-      .add(b2p2.coeff(mN).multiply2())
-      .add(b4.coeff(mN).multiply2())
-      .add(b.coeff(mN))
-      .add(a.coeff(mN))
-      .divide(8);
+    final Z a = get(++mN, 4L);
+    Z b = Z.ZERO;
+    for (long j = 5; j <= mN; ++j) {
+      b = b.add(get(mN, j));
+    }
+    b = b.multiply(4);
+    if ((mN & 1) == 0) {
+      b = b.add(get(mN / 2, 2L).multiply(3));
+      if ((mN & 3) == 0) {
+        b = b.add(get(mN / 4, 1L).multiply2());
+      }
+      Z c = Z.ZERO;
+      for (long j = 3; j <= mN / 2; ++j) {
+        c = c.add(get(mN / 2, j));
+      }
+      c = c.multiply(4);
+      b = b.add(c);
+    }
+    Z d = Z.ZERO;
+    for (long j = 1; j <= (mN - 1) / 2; ++j) {
+      d = d.add(get(j, 1L).multiply(get(mN - 2 * j, 2L)).multiply2());
+      d = d.add(inner(j));
+    }
+    b = b.add(d);
+    return a.add(b).divide(8);
   }
 }

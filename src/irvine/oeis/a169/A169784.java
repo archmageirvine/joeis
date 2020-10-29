@@ -6,15 +6,15 @@ import irvine.oeis.GramMatrixThetaSeries;
 
 
 /**
- * A169783 Number of solutions to a^2 + b^2 + 4*c^2 = n.
+ * A169784 Number of solutions to a^2 + b^2 + 5*c^2 = n.
  * @author Georg Fischer
  */
-public class A169783 extends GramMatrixThetaSeries {
+public class A169784 extends GramMatrixThetaSeries {
 
   /**
    * Construct the sequence.
    */
-  public A169783() {
-    super(new long[][]{{1, 0, 0}, {0, 1, 0}, {0, 0, 4}});
+  public A169784() {
+    super(new long[][]{{1, 0, 0}, {0, 1, 0}, {0, 0, 5}});
   }
 }

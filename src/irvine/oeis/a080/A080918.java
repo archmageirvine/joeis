@@ -6,15 +6,15 @@ import irvine.oeis.GramMatrixThetaSeries;
 
 
 /**
- * A080917 Number of integer solutions to the equation 2*x^2 + y^2 + 8*z^2 = n.
+ * A080918 Number of integer solutions to the equation 2x^2+y^2+32z^2=n.
  * @author Georg Fischer
  */
-public class A080917 extends GramMatrixThetaSeries {
+public class A080918 extends GramMatrixThetaSeries {
 
   /**
    * Construct the sequence.
    */
-  public A080917() {
-    super(new long[][]{{2, 0, 0}, {0, 1, 0}, {0, 0, 8}});
+  public A080918() {
+    super(new long[][]{{2, 0, 0}, {0, 1, 0}, {0, 0, 32}});
   }
 }

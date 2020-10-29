@@ -5,15 +5,15 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036367 Number of free orthoplex n-ominoes with cell centers determining n-2 space.
+ * A036368 Number of chiral orthoplex n-ominoes in n-2 space.
  * @author Sean A. Irvine
  */
-public class A036367 extends MemoryFunction2<Long, Z> implements Sequence {
+public class A036368 extends MemoryFunction2<Long, Z> implements Sequence {
 
   private long mN = 3;
 
   private Z s(final long n, final long k) {
-    return get(n + 1 - k, 1L).add(n < 2 * k ? Z.ZERO : s(n - k, k));
+    return get(n + 1 - k, 1L).signedAdd((k & 1) == 0, n < 2 * k ? Z.ZERO : s(n - k, k));
   }
 
   @Override
@@ -40,7 +40,7 @@ public class A036367 extends MemoryFunction2<Long, Z> implements Sequence {
     for (long k = 5; k <= mN; k += 2) {
       sum = sum.add(get(j, (k - 1) / 2).multiply(get(mN - 2 * j, 1L)));
     }
-    return sum.multiply(4);
+    return sum.multiply((j & 1) == 0 ? 4 : -4);
   }
 
   @Override
@@ -52,23 +52,23 @@ public class A036367 extends MemoryFunction2<Long, Z> implements Sequence {
     }
     b = b.multiply(4);
     if ((mN & 1) == 0) {
-      b = b.add(get(mN / 2, 2L).multiply(3));
-      if ((mN & 3) == 0) {
-        b = b.add(get(mN / 4, 1L).multiply2());
-      }
+      final long i2 = mN / 2;
       Z c = Z.ZERO;
-      for (long j = 3; j <= mN / 2; ++j) {
-        c = c.add(get(mN / 2, j));
+      for (long j = 3; j <= i2; ++j) {
+        c = c.add(get(i2, j));
       }
-      c = c.multiply(4);
-      b = b.add(c);
+      c = c.multiply((i2 & 1) == 0 ? 4 : -4);
+      c = c.signedAdd((i2 & 1) == 0, get(i2, 2L));
+      if ((mN & 3) == 0) {
+        c = c.signedAdd((mN & 4) == 0, get(mN / 4, 1L).multiply2());
+      }
+      b = b.subtract(c);
     }
     Z d = Z.ZERO;
     for (long j = 1; j <= (mN - 1) / 2; ++j) {
-      d = d.add(get(j, 1L).multiply(get(mN - 2 * j, 2L)).multiply2());
-      d = d.add(inner(j));
+      d = d.signedAdd((j & 1) == 0, get(j, 1L).multiply(get(mN - 2 * j, 2L)).multiply2());
+      d = d.subtract(inner(j));
     }
-    b = b.add(d);
-    return a.add(b).divide(8);
+    return a.add(b).add(d).divide(8);
   }
 }

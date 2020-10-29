@@ -225,7 +225,7 @@ public class GeneratingFunctionTriangle implements Sequence {
     } // with arguments
     GeneratingFunctionTriangle triangle = new GeneratingFunctionTriangle(0, num, den);
     for (int iterm = 0; iterm < noTerms; iterm++) { // b-file format
-      System.out.println(iterm + " " + triangle.next().toString());
+      System.out.println(iterm + " " + triangle.next());
     } // for iterm
     triangle = new GeneratingFunctionTriangle(0, num, den);
     for (int iterm = 0; iterm < noTerms; iterm++) { // data section format

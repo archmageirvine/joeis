@@ -13,7 +13,7 @@ public class A038567 implements Sequence {
 
   protected long mNum = 0;
   protected long mDen = 1;
-  protected int mState;
+  //protected int mState;
 
   /**
    * Construct the sequence
@@ -21,7 +21,7 @@ public class A038567 implements Sequence {
   public A038567() {
     mNum = 0;
     mDen = 1;
-    mState = 1;
+    //mState = 1;
   }
 
   @Override

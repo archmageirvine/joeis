@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A033942 At least 3 prime factors (counted with multiplicity).
+ * A033942 Positive integers with at least 3 prime factors (counted with multiplicity).
  * @author Sean A. Irvine
  */
 public class A033942 implements Sequence {

@@ -18,7 +18,7 @@ public class A014839 implements Sequence {
     ++mN;
     long sum = 0;
     final A246655 pp = new A246655();
-    for (long base = pp.nextLong(); base < mN; base = pp.nextLong()) {
+    for (long base = pp.next().longValueExact(); base < mN; base = pp.next().longValueExact()) {
       sum += ZUtils.digitSum(mN, base);
     }
     return Z.valueOf(sum);

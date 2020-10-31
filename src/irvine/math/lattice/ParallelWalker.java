@@ -73,6 +73,7 @@ public class ParallelWalker {
   /**
    * Return the number of walks of specified length.
    * @param steps length of walk
+   * @param axesMask axes already considered
    * @param initialPoints any initial points shared by all walks
    * @return number of walks
    */

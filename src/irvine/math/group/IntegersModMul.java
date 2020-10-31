@@ -1,11 +1,11 @@
 package irvine.math.group;
 
-import irvine.math.api.Group;
-import irvine.math.z.Z;
-import irvine.math.z.Euler;
-import irvine.util.AbstractIterator;
-
 import java.util.Iterator;
+
+import irvine.math.api.Group;
+import irvine.math.z.Euler;
+import irvine.math.z.Z;
+import irvine.util.AbstractIterator;
 
 /**
  * Group of integers under multiplication modulo <code>n</code>.
@@ -20,7 +20,7 @@ public class IntegersModMul extends AbstractGroup<Z> {
    * @param modulus the modulus
    */
   public IntegersModMul(final Z modulus) {
-    if (modulus.compareTo(Z.ONE) <= 0) {
+    if (modulus.compareTo(Z.ONE) < 0) {
       throw new IllegalArgumentException();
     }
     mMod = modulus;

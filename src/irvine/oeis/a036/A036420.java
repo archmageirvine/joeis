@@ -1,23 +1,21 @@
 package irvine.oeis.a036;
 
 import irvine.math.z.Z;
-import irvine.oeis.Sequence;
 
 /**
  * A036420 Number of ternary rooted trees with n nodes and height exactly 5.
  * @author Sean A. Irvine
  */
-public class A036420 extends A036373 {
+public class A036420 extends A036370 {
 
-  private final Sequence mA = new A036372();
+  private final int mLimit = max(5);
+  private int mN = -1;
 
   @Override
   public Z next() {
-    final Z t = super.next();
-    if (t == null) {
-      return null; // end reached
+    if (++mN > mLimit) {
+      return null;
     }
-    final Z a = mA.next();
-    return t.subtract(a == null ? Z.ZERO : a);
+    return get(5, mN).subtract(get(4, mN));
   }
 }

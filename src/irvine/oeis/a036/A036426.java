@@ -1,6 +1,5 @@
 package irvine.oeis.a036;
 
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
@@ -9,27 +8,14 @@ import irvine.math.z.Z;
  */
 public class A036426 extends A036370 {
 
-  // This is very slow, because it essentially precomputes the entire sequence.
-  // Once it starts generating is is fast ...
-
-  private final Polynomial<Z> mTen;
-  {
-    for (int k = 1; k <= 10; ++k) {
-      step();
-    }
-    mTen = mT;
-    step();
-  }
-
+  private final int mLimit = max(11);
   private int mN = -1;
 
   @Override
   public Z next() {
-    if (++mN > mT.degree()) {
+    if (++mN > mLimit) {
       return null;
     }
-    final Z t = mT.coeff(mN);
-    final Z a = mTen.coeff(mN);
-    return t.subtract(a);
+    return get(11, mN).subtract(get(10, mN));
   }
 }

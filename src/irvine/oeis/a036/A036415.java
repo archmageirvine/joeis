@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.PositionSubsequence;
 
 /**
- * A036415.
+ * A036415 Values of n for which there are no empty intervals when fractional part(m*phi) for m = 1, ..., n is plotted along [ 0, 1 ] subdivided into n equal regions.
  * @author Sean A. Irvine
  */
 public class A036415 extends PositionSubsequence {

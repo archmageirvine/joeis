@@ -8,7 +8,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036403.
+ * A036403 Number of equilateral triangles whose vertices (whether connected by lines or not) lie at intersection points resulting from drawing lines connecting every pair of vertices of a regular 3n-gon (and extending beyond the polygon).
  * @author Sean A. Irvine
  */
 public class A036403 implements Sequence {
@@ -19,7 +19,7 @@ public class A036403 implements Sequence {
   private static final double TOLERANCE = 1e-6;
   private int mN = 0;
 
-  private static class RealPoint {
+  private static final class RealPoint {
 
     private final double mRealX;
     private final double mRealY;

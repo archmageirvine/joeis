@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036391.
+ * A036391 a(n) = sum of order of a mod n, 0 &lt; a &lt; n, gcd(a, n) = 1.
  * @author Sean A. Irvine
  */
 public class A036391 implements Sequence {

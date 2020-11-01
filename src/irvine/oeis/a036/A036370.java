@@ -1,9 +1,6 @@
 package irvine.oeis.a036;
 
 import irvine.math.MemoryFunction2;
-import irvine.math.group.IntegerField;
-import irvine.math.group.PolynomialRingField;
-import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -13,8 +10,6 @@ import irvine.oeis.Sequence;
  */
 public class A036370 extends MemoryFunction2<Integer, Z> implements Sequence {
 
-  protected static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  protected Polynomial<Z> mT = RING.one();
   private int mM = -1;
   private int mN = 0;
 

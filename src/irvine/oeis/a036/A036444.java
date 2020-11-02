@@ -1,5 +1,7 @@
 package irvine.oeis.a036;
 
+import java.util.Arrays;
+
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
 import irvine.util.string.StringUtils;
@@ -17,7 +19,7 @@ public class A036444 extends MemorySequence {
   private final boolean mVerbose = "true".equals(System.getProperty("oeis.verbose"));
   private int mN;
 
-  private boolean play(final boolean[][] used, final int sx, final int sy, final int part) {
+  static boolean play(final boolean[][] used, final int sx, final int sy, final int part) {
     // Check corners first for efficiency
     if (used[sy][sx] || used[sy + part - 1][sx + part - 1] || used[sy][sx + part - 1] || used[sy + part - 1][sx]) {
       return false;
@@ -28,14 +30,10 @@ public class A036444 extends MemorySequence {
           // Ugh! We cannot play here
           // Unwind up to row y
           for (int v = 0; v < y; ++v) {
-            for (int u = 0; u < part; ++u) {
-              used[sy + v][sx + u] = false;
-            }
+            Arrays.fill(used[sy + v], sx, sx + part, false);
           }
           // Unwind where we reached on row y
-          for (int u = 0; u < x; ++u) {
-            used[sy + y][sx + u] = false;
-          }
+          Arrays.fill(used[sy + y], sx, sx + x, false);
           return false;
         }
         used[sy + y][sx + x] = true;
@@ -44,27 +42,48 @@ public class A036444 extends MemorySequence {
     return true;
   }
 
-  private void unplay(final boolean[][] used, final int sx, final int sy, final int part) {
+  static void unplay(final boolean[][] used, final int sx, final int sy, final int part) {
     for (int y = 0; y < part; ++y) {
-      for (int x = 0; x < part; ++x) {
-        used[y + sy][x + sx] = false;
-      }
+      Arrays.fill(used[sy + y], sx, sx + part, false);
     }
   }
 
-  private boolean twoDimensionalCheck(final boolean[][] used, final int[] parts, final int maxPart, final int partIndex) {
+  static boolean oneDimensionalCheck(final int[] parts, final int maxPart, final int remaining, final int partIndex) {
+    if (remaining == 0) {
+      return true;
+    }
+    for (int k = partIndex; k < maxPart; ++k) {
+      if (k == partIndex || parts[k] != parts[k - 1]) {
+        if (oneDimensionalCheck(parts, maxPart, remaining - parts[k], k + 1)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  private boolean twoDimensionalCheck(final boolean[][] used, final int[] parts, final int maxPart, final int partIndex, final int lastX, final int lastY) {
     if (partIndex >= maxPart) {
       return true; // We found the solution
     }
     // Try and play parts[partIndex] at each possible place
     final int p = parts[partIndex];
-    for (int y = 0; y <= mN - p; ++y) {
-      for (int x = 0; x <= mN - p; ++x) {
-        if (play(used, x, y, p)) {
-          if (twoDimensionalCheck(used, parts, maxPart, partIndex + 1)) {
+    final boolean sameAsPrevPart = partIndex > 0 && p == parts[partIndex - 1];
+    // If we are playing subsequent parts of the same size, then do not retry positions
+    // that we would have tried when playing the previous part.
+    for (int y = sameAsPrevPart ? lastY : 0; y <= mN - p; ++y) {
+      for (int x = sameAsPrevPart && y == lastY ? lastX : 0; x < mN; ++x) {
+        if (x <= mN - p && A036444.play(used, x, y, p)) {
+          if (twoDimensionalCheck(used, parts, maxPart, partIndex + 1, x + p, y)) {
             return true; // Don't need to unplay as we solved the problem
           }
-          unplay(used, x, y, p);
+          A036444.unplay(used, x, y, p);
+        }
+        if (!used[y][x] && p == parts[maxPart]) {
+          // The current part is equal to the smallest part, but we were unable
+          // to complete a solution playing in the first empty square, therefore
+          // there is no possible solution.
+          return false;
         }
       }
     }
@@ -76,7 +95,7 @@ public class A036444 extends MemorySequence {
     // parts already sorted from biggest to smallest
     final boolean[][] used = new boolean[mN][mN];
     // Attempt to play parts into the square
-    return twoDimensionalCheck(used, parts, maxPart, 0);
+    return twoDimensionalCheck(used, parts, maxPart, 0, 0, 0);
   }
 
   private boolean isSolvable(final int remaining, final int[] parts, final int partIndex, final int m, final int countOfM, final int max, final boolean sawMax) {
@@ -85,7 +104,7 @@ public class A036444 extends MemorySequence {
       // But we have yet to verify that these parts can be packed into a square shape
       // We also require at least one part size of have achieved the maximum allowed
       // (to avoiding rechecking solutions already tested in earlier stages).
-      return sawMax && twoDimensionalCheck(parts, partIndex);
+      return sawMax && oneDimensionalCheck(parts, partIndex, mN, 0) && twoDimensionalCheck(parts, partIndex);
     }
     if (countOfM < max && remaining >= m * m) {
       // Try placing another m^2

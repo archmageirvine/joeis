@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 /**
  * A037337 n-th number k such that no base 9 digit of k is a base 10 digit of k.
  * The set of base1 digits must be disjoint from the set of the base 2 digits.
- * Assertion: base1 < base2.
+ * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
 public class A037337 implements Sequence {
@@ -28,6 +28,7 @@ public class A037337 implements Sequence {
    * @param incr additive term
    */
   protected A037337(final int base1, final int base2) {
+    assert base1 < base2;
     mN = Z.ZERO;
     mBase1 = base1;
     mBase2 = base2;

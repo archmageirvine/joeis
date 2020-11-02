@@ -7,7 +7,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A037408 Numbers n such that the set of base-2 digits of n equals the set of base-3 digits of n.
- * Assertion: base1 < base2.
+ * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
 public class A037408 implements Sequence {
@@ -27,6 +27,7 @@ public class A037408 implements Sequence {
    * @param incr additive term
    */
   protected A037408(final int base1, final int base2) {
+    assert base1 < base2;
     mN = Z.ZERO;
     mBase1 = base1;
     mBase2 = base2;

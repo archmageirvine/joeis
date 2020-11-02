@@ -8,7 +8,7 @@ import irvine.oeis.Sequence;
 /**
  * A037372 Numbers n such that every base 2 digit of n is a base 3 digit of n.
  * The set of base1 digits must be a subset of the base 2 digits.
- * Assertion: base1 < base2.
+ * Assertion: <code>base1 &lt; base2</code>.
  * @author Georg Fischer
  */
 public class A037372 implements Sequence {
@@ -28,6 +28,7 @@ public class A037372 implements Sequence {
    * @param incr additive term
    */
   protected A037372(final int base1, final int base2) {
+    assert base1 < base2;
     mN = Z.ZERO;
     mBase1 = base1;
     mBase2 = base2;

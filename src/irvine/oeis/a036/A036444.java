@@ -79,7 +79,7 @@ public class A036444 extends MemorySequence {
           }
           A036444.unplay(used, x, y, p);
         }
-        if (!used[y][x] && p == parts[maxPart]) {
+        if (!used[y][x] && p == parts[maxPart - 1]) {
           // The current part is equal to the smallest part, but we were unable
           // to complete a solution playing in the first empty square, therefore
           // there is no possible solution.

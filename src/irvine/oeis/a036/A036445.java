@@ -34,7 +34,7 @@ public class A036445 implements Sequence {
           }
           A036444.unplay(used, x, y, p);
         }
-        if (!used[y][x] && p == parts[maxPart]) {
+        if (!used[y][x] && p == parts[maxPart - 1]) {
           // The current part is equal to the smallest part, but we were unable
           // to complete a solution playing in the first empty square, therefore
           // there is no possible solution.
@@ -57,8 +57,8 @@ public class A036445 implements Sequence {
     if (remaining == 0) {
       // We have constructed a sum mN^2 = sum(parts^2), with each part > mLowerBound.
       // But we have yet to verify that these parts can be packed into a square shape
-      if (mN == 13) {
-        StringUtils.message("Check: " + Arrays.toString(Arrays.copyOf(parts, partIndex)));
+      if (mVerbose) {
+        StringUtils.message("Checking partition: " + Arrays.toString(Arrays.copyOf(parts, partIndex)));
       }
       if (A036444.oneDimensionalCheck(parts, partIndex, mN, 0) && twoDimensionalCheck(parts, partIndex)) {
         mLowerBound = m;

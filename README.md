@@ -46,6 +46,7 @@ However, included here are implementations that have been used to
 compute new previously unknown terms, including some for sequences
 considered ```hard```.
 
+There are some developer notes [here](doc/developer.md)
 
 Related Software
 ----------------

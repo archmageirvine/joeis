@@ -69,12 +69,7 @@ public class A036445 implements Sequence {
       return;
     }
     if (m > mLowerBound) {
-      if (remaining >= m * m) {
-        // Try placing another m^2
-        parts[partIndex] = m;
-        search(remaining - m * m, parts, partIndex + 1, m);
-      }
-      for (int k = m - 1; k > mLowerBound; --k) {
+      for (int k = m; k > mLowerBound; --k) {
         final int r = remaining - k * k;
         if (r >= 0) {
           parts[partIndex] = k;

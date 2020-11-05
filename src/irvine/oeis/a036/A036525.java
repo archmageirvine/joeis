@@ -7,14 +7,14 @@ import irvine.oeis.a036.A036507;
 
 
 /**
- * A036517 Smallest triangular number containing exactly n 0's.
+ * A036525 Smallest triangular number containing exactly n 8's.
  * @author Georg Fischer
  */
-public class A036517 extends A036507 {
+public class A036525 extends A036507 {
 
   /** Construct the sequence. */
-  public A036517() {
-    super(1, new A000217(), 0);
+  public A036525() {
+    super(1, new A000217(), 8);
   }
   
 }

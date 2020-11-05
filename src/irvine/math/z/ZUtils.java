@@ -479,9 +479,10 @@ public final class ZUtils {
    */
   public static int ord(final Z a, Z b) {
     int d = 0;
-    while (Z.ZERO.equals(b.mod(a))) {
+    Z[] qr;
+    while (Z.ZERO.equals((qr = b.divideAndRemainder(a))[1])) {
       ++d;
-      b = b.divide(a);
+      b = qr[0];
     }
     return d;
   }

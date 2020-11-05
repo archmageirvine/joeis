@@ -1460,4 +1460,4 @@ A036401 Coefficients of cluster series.
 A036402 Coefficients of cluster series.
 A036403 Number of equilateral triangles whose vertices (whether connected by lines or not) lie at intersection points resulting from drawing lines connecting every pair of vertices of a regular 3n-gon (and extending beyond the polygon).
 A036429 Primes related to Carmichael numbers of the form pqr, p<q<r and p-1 a divisor of both q-1 and r-1, insufficient detail
-A036471 Four numbers (a,b,c,d) with a<b<c<d that satisfy sigma(a) = sigma(b) = sigma(c) = sigma(d) = a+b+c+d ...
+A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1)

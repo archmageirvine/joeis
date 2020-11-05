@@ -3,7 +3,6 @@ package irvine.oeis.a036;
 // DO NOT EDIT here!
 
 import irvine.oeis.a000.A000578;
-import irvine.oeis.a036.A036507;
 
 
 /**

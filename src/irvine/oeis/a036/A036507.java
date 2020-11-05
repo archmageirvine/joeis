@@ -1,11 +1,12 @@
 package irvine.oeis.a036;
 // manually, 2020-11-04
 
+import java.util.TreeMap;
+
 import irvine.math.z.Z;
 import irvine.math.z.ZUtils;
 import irvine.oeis.Sequence;
 import irvine.oeis.a000.A000290;
-import java.util.TreeMap;
 
 /**
  * A036507 Smallest square containing exactly n 0's.
@@ -13,7 +14,7 @@ import java.util.TreeMap;
  */
 public class A036507 implements Sequence {
 
-  protected Sequence mSeq; // underlaying sequence
+  protected Sequence mSeq; // underlying sequence
   protected int mDigit; // the specific digit to be counted
   protected int mN; // current number
   protected TreeMap<Integer, Z> mElemNDig; // numbers which contain so many of the specified digit as the index tells
@@ -25,34 +26,31 @@ public class A036507 implements Sequence {
   
   /**
    * Constructor with parameters
-   * @param offset offset1 of th resulting sequence
-   * @param seq underlaying sequence
+   * @param offset offset of the resulting sequence
+   * @param seq underlying sequence
    * @param digit the specific digit to be counted
    */
   protected A036507(final int offset, final Sequence seq, final int digit) {
     mSeq = seq;
     mDigit = digit;
     mN = offset - 1;
-    mElemNDig = new TreeMap<Integer, Z>(); // preset with null
+    mElemNDig = new TreeMap<>(); // preset with null
   }
 
   @Override
   public Z next() {
-    ++mN;
-    Z result = mElemNDig.get(new Integer(mN));
-    boolean busy = result == null;
-    while (busy) {
-      Z square = mSeq.next();
+    final Z res = mElemNDig.get(++mN);
+    if (res != null) {
+      return res;
+    }
+    while (true) {
+      final Z square = mSeq.next();
       final int count = ZUtils.digitCounts(square)[mDigit];
-      if (mElemNDig.get(new Integer(count)) == null) {
-        mElemNDig.put(new Integer(count), square);
-        if (count == mN) {
-          result = square;
-          busy = false;
-        }
+      if (count == mN) {
+        return square;
       }
-    } // while busy   
-    return result;
+      mElemNDig.putIfAbsent(count, square);
+    } // while
   }
   
 }

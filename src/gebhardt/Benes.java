@@ -4,6 +4,11 @@ import java.util.Arrays;
 
 import irvine.math.IntegerUtils;
 
+/**
+ * Permutations.
+ * @author Volker Gebhardt
+ * @author Sean A. Irvine (Java port)
+ */
 public class Benes {
 
   /*
@@ -34,8 +39,8 @@ public class Benes {
   private static final int BENES_SMALL = 10;
   private static final int BITSPERLONG = Long.SIZE;
 
-  private static long BIT(final long i) {
-    return 1L << i;
+  static long BIT(final long i) {
+    return Constants.BIT(i); // todo inline
   }
 
 // struct benes_p1 {

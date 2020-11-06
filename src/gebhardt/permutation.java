@@ -2,6 +2,11 @@ package gebhardt;
 
 import irvine.math.IntegerUtils;
 
+/**
+ * Permutations.
+ * @author Volker Gebhardt
+ * @author Sean A. Irvine (Java port)
+ */
 public class permutation {
 
   /*
@@ -120,11 +125,10 @@ public class permutation {
 //  * Return value: 1 if success; 0 if no further permutation exists.
 //  */
 
-// static inline void perm_cpy(elt n, permutation p, permutation r)
-// /*
-//  * Copy p to r.
-//  */
-// {
+  /*
+   * Copy p to r.
+   */
+ static void perm_cpy(int n, int[] p, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	((unsigned long long*)r)[0] = ((unsigned long long*)p)[0];
 // 	((unsigned long long*)r)[1] = ((unsigned long long*)p)[1];
@@ -136,7 +140,8 @@ public class permutation {
 // #endif
 // 	memcpy(r, p, n*sizeof(elt));
 // #endif
-// }
+   System.arraycopy(p, 0, r, 0, n);
+ }
 
   static int[] perm_inv(final int n, final int[] perm) {
     final int[] inv = new int[n];
@@ -527,7 +532,6 @@ public class permutation {
         }
       }
       for (i = thislev + 1; i < lev[lpos] && !(tt = (p[i - 1] < p[i])); i++) {
-        ;
       }
       if (!tt) {
         /* set current level to id & advance to next level */
@@ -541,7 +545,6 @@ public class permutation {
         continue;
       }
       for (j = thislev; !(p[j] < p[i]); j++) {
-        ;
       }
       /* swap entries i and j */
       int t = p[i];

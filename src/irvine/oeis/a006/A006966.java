@@ -2,6 +2,8 @@ package irvine.oeis.a006;
 
 import gebhardt.Benes;
 import gebhardt.Constants;
+import gebhardt.Globals;
+import gebhardt.lattice;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -82,10 +84,8 @@ public class A006966 implements Sequence {
     ++mN;
     bitmap_init(mN);
     Benes.benes_init_small();
-//    lattice L;
-//    globals GD;
-//    globals_init(GD);
-//    lattice_init_2(L);
+    final Globals GD = Globals.globals_init();
+    final lattice L = lattice.lattice_init_2();
 //    lattEnum E = lattEnum_Count_create(L, mN, 3, GD);
 //    lattEnum_doEnumeration(E);
 //    return Z.valueOf(lattEnum_getLatticeCount(E));

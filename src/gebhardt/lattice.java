@@ -59,8 +59,8 @@ public class lattice {
 	int[] lo = new int[	Constants.MAXN-2];
 	permgrp S;
 	int SI;
-	int[] lev = new int[	Constants.MAXN-1];
-	int n;
+	byte[] lev = new byte[	Constants.MAXN-1];
+	byte n;
 	int nLev;
 // #if 0
 // 	char      dummy[15];  /* to pad to 3 cache lines */
@@ -385,7 +385,7 @@ public class lattice {
 		n -= 2;  /* We don't store the upper and lower bounds. */
 		//memset(L, 0, sizeof(lattice));
 		//memset(co, 0, n * sizeof( int));
-		L.n = n;
+		L.n = (byte) n;
 		/* first extract covering relation... */
 		pos = 0;
 		for (i = 0; i < n; i++) {
@@ -419,7 +419,7 @@ public class lattice {
 			while (i < n && dep[i] == d) {
 				i++;
 			}
-			L.lev[d + 1] = i;
+			L.lev[d + 1] = (byte) i;
 		}
 		L.nLev = d + 1;  /* count the level containing B */
 		/* ...finally set the stabiliser */
@@ -625,8 +625,8 @@ public class lattice {
 		lattice_setStabiliser(L, S, SI);
 		permgrp.permgrp_delete(S);
 		L.lev[0] = 0;
-		L.lev[1] = k;
-		L.n = k;
+		L.lev[1] = (byte) k;
+		L.n = (byte) k;
 		L.nLev = 2;
 	}
 

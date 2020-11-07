@@ -235,10 +235,10 @@ class canonical {
 	 * permitted swaps of adjacent antichains indicated by bl.  The permutation sorting L is also applied to
 	 * p[offset]..p[offset+k-1].  The array mask should contain ((1<<m)-1)<<((k-1)*m),..,((1<<m)-1).
 	 */
-	static void antichainList_sort_p1(int k, int m, long mask[], int bl, long[] L, int[] p, int offset) {
+	static void antichainList_sort_p1(int k, int m, long mask[], int bl, long[] L, byte[] p, int offset) {
 		long t1, t2;
 		//int[]     pp;
-		int tp;
+		byte tp;
 		int newn, n, i, lo;
 
 		if (bl == 0) {
@@ -270,10 +270,10 @@ class canonical {
 	 * indicated by bl.  The permutation sorting L is also applied to p[offset]..p[offset+k-1].  The arrays M0 and M1
 	 * should contain ((1<<m)-1)<<((k0-1)*m),..,((1<<m)-1) and ((1<<m)-1)<<((k-k0-1)*m),..,((1<<m)-1) respectively.
 	 */
-	static void antichainList_sort_p2(int k, int m, int k0, long[] M0, long[] M1, int bl, long[] L, int[] p, int offset) {
+	static void antichainList_sort_p2(int k, int m, int k0, long[] M0, long[] M1, int bl, long[] L, byte[] p, int offset) {
 		long t1, t2;
 		//int[]     pp;
-		int tp;
+		byte tp;
 		int newn, n, n0, i, lo;
 
 		if (bl == 0) {
@@ -333,7 +333,7 @@ class canonical {
 	 * left-multiplied to p, the rationale being to keep track of the permutation mapping L to some original
 	 * element.  If SI_ != 0, the implicit stabiliser of the minimised antichain *L is returned in *SI_.
 	 */
-	static void antichainList_applySI_1(int a0, int m, long[] L, int SI, int[] SI_, int[] p) {
+	static void antichainList_applySI_1(int a0, int m, long[] L, int SI, int[] SI_, byte[] p) {
 		long mask, A_;
 //	int      t, hi, lo;
 //	int[]     pp;
@@ -358,7 +358,7 @@ class canonical {
 			while (Constants.get_MSB32(SB, hi) && Constants.get_LSB32(UB, lo) && hi[0] > lo[0]) {
 				SB ^= BIT(hi[0]) | BIT(lo[0]);
 				UB ^= BIT(hi[0]) | BIT(lo[0]);
-				final int t = p[a0 + hi[0]];  /* left-multiplication of p by the transposition (lo hi) */
+				final byte t = p[a0 + hi[0]];  /* left-multiplication of p by the transposition (lo hi) */
 				p[a0 + hi[0]] = p[a0 + lo[0]];
 				p[a0 + lo[0]] = t;
 			}
@@ -380,7 +380,7 @@ class canonical {
 	 * left-multiplied to p, the rationale being to keep track of the permutation mapping L to some original
 	 * element.
 	 */
-	static void antichainList_applySI_p1(int n, int k, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, int[] p) {
+	static void antichainList_applySI_p1(int n, int k, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, byte[] p) {
 		SIdata[] SIt;
 		int SI0size, SI1size, i;
 		int r, dr, j, dj, t;
@@ -411,7 +411,7 @@ class canonical {
 					int[] hi = new int[1];
 					int[] lo = new int[1];
 					long P;
-					int[] q = new int[n];  // todo init ??
+					byte[] q = new byte[n];  // todo init ??
 					//int[]         pq = q+a0;
 					if (SI1size == GD.SIspace) {
 						Globals.globals_enlargen_SIspace(GD);
@@ -435,7 +435,7 @@ class canonical {
 							P ^= (T << hi[0]) | (T << lo[0]);
 							t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
 							q[a0 + hi[0]] = q[a0 + lo[0]];
-							q[a0 + lo[0]] = t;
+							q[a0 + lo[0]] = (byte)t;
 						}
 						A_ |= SB;
 						if (SB != 0 && UB != 0) {
@@ -463,7 +463,7 @@ class canonical {
 					permutation.perm_cpy(n + k, q, GD.SI1[SI1size].p);
 					if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
 						long mask1, mask2;
-						int[] pqq;
+						byte[] pqq;
 						mask1 = (BIT((r - j) * m) - 1) << ((j + 1) * m);
 						mask2 = (BIT(dr * m) - 1) << ((j - dr + 1) * m);
 						P = (P & ~(mask1 | mask2)) | ((P & mask1) >> (dr * m)) | ((P & mask2) << ((r - j) * m));
@@ -555,7 +555,7 @@ class canonical {
 	 * automorphisms given by SI.  The inverse of the permutation minimising L is left-multiplied to p, the
 	 * rationale being to keep track of the permutation mapping L to some original element.
 	 */
-	static void antichainList_applySI_p2(int n, int k, int k1, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, int[] p) {
+	static void antichainList_applySI_p2(int n, int k, int k1, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, byte[] p) {
 		SIdata[] SIt;
 		int SI0size, SI1size;
 		int i;
@@ -592,7 +592,7 @@ class canonical {
 					int[] hi = new int[1];
 					int[] lo = new int[1];
 					long[] P = new long[2];
-					int[] q = new int[n]; // todo is this size right?
+					byte[] q = new byte[n]; // todo is this size right?
 					//int[]         pq = q+a0;
 					if (SI1size == GD.SIspace) {
 						Globals.globals_enlargen_SIspace(GD);
@@ -619,7 +619,7 @@ class canonical {
 							P[1] ^= (T << hi[0]) | (T << lo[0]);
 							t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
 							q[a0 + hi[0]] = q[a0 + lo[0]];
-							q[a0 + lo[0]] = t;
+							q[a0 + lo[0]] = (byte)t;
 						}
 						A_ |= SB;
 						if (SB != 0 && UB != 0) {
@@ -649,7 +649,7 @@ class canonical {
 					 *  - move j..(j-dr+1) by r-j positions to the left
 					 *  - move r..(j+1) by dr positions to the right
 					 */
-						int[] pqq;
+						byte[] pqq;
 						if (j < k1) {
 							if (r < k1) {
 								long MR11, ML11;
@@ -800,7 +800,7 @@ class canonical {
 	 */
 	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long L) {
 		int i;
-		int[] p = new int[n];
+		byte[] p = new byte[n];
 // #ifdef DOTEST
 // 	long        L_;
 // #endif
@@ -837,7 +837,7 @@ class canonical {
 	 */
 	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long[] L) {
 		int i;
-		int[] p = new int[n];
+		byte[] p = new byte[n];
 // #ifdef DOTEST
 // 	long        L_[2];
 // #endif
@@ -994,7 +994,7 @@ class canonical {
 	static void processElement_1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen) {
 		long A;
 		int Apos;
-		int[] h = new int[G.n]; // todo is this right?
+		byte[] h = new byte[G.n]; // todo is this right?
 
 		A = AD.GD.orb[AD.GD.orbsize].data[0];
 		Apos = AD.GD.orbsize;
@@ -1062,10 +1062,10 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_p1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen, int[] p) {
+	static void processElement_p1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen, byte[] p) {
 		long A;
 		int Apos;
-		int[] h = new int[G.n]; // todo is this right?
+		byte[] h = new byte[G.n]; // todo is this right?
 
 		A = AD.GD.orb[AD.GD.orbsize].data[0];
 		Apos = AD.GD.orbsize;
@@ -1077,8 +1077,7 @@ class canonical {
 			/* ...if no, note the new stabiliser element */
 			if (pos != 0) {
 				if (Apos != 0) {
-					permutation.perm_mult3_ldiv(S.G.n, p, G.invperm[gen], AD.GD.orb[pos].toRoot,
-						AD.GD.orb[Apos].toRoot, h);
+					permutation.perm_mult3_ldiv(S.G.n, p, G.invperm[gen], AD.GD.orb[pos].toRoot,AD.GD.orb[Apos].toRoot, h);
 				} else {
 					permutation.perm_mult3_inv(S.G.n, p, G.invperm[gen], AD.GD.orb[pos].toRoot, h);
 				}
@@ -1254,7 +1253,7 @@ class canonical {
 			if ((AD.GD.orb[0].data[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
 				if (AD.SD[AD_CSL + 1].SI != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					int[] p = new int[G.n];
+					byte[] p = new byte[G.n];
 					final long[] L = new long[] {AD.GD.orb[0].data[0]};
 					permutation.perm_init(AD.L.n + AD.k, p);
 					int[] ugly = new int[] {AD.SD[AD_CSL].SI};
@@ -1313,7 +1312,7 @@ class canonical {
 					permgrpc_compactGenerators(S);
 				} else {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					int[] p = new int[G.n];
+					byte[] p = new byte[G.n];
 					long L;
 					L = AD.GD.orb[0].data[0];
 					permutation.perm_init(AD.L.n + AD.k, p);
@@ -1377,7 +1376,7 @@ class canonical {
 		} else if (AD.SD[AD_CSL + 1].SI != 0) {
 			if ((AD.GD.orb[0].data[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				int[] p = new int[AD.L.n + AD.k]; // todo right?
+				byte[] p = new byte[AD.L.n + AD.k]; // todo right?
 				long[] L = new long[] { AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				final int[] ugly = new int[] {AD.SD[AD_CSL].SI};
@@ -1471,7 +1470,7 @@ class canonical {
 			if (AD.GD.orb[0].data[0] != 0) {
 				if (AD.SD[AD_CSL + 1].SI != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					int[] p = new int[AD.L.n];
+					byte[] p = new byte[AD.L.n];
 					long[] L = new long[] {AD.GD.orb[0].data[0]};
 					permutation.perm_init(AD.L.n + AD.k, p);
 					for (pmask = 1, i = AD.k; i-- != 0; ) {
@@ -1576,7 +1575,7 @@ class canonical {
 					permgrpc_compactGenerators(S);
 				} else {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					int[] p = new int[AD.L.n];
+					byte[] p = new byte[AD.L.n];
 					long L;
 					L = AD.GD.orb[0].data[0];
 					permutation.perm_init(AD.L.n + AD.k, p);
@@ -1666,7 +1665,7 @@ class canonical {
 			}
 			if (AD.GD.orb[0].data[0] != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				int[] p = new int[AD.L.n + AD.k];
+				byte[] p = new byte[AD.L.n + AD.k];
 				long[] L = new long[] {AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				for (pmask = 1, i = AD.k; i-- != 0; ) {

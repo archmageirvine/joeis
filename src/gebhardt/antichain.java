@@ -334,7 +334,7 @@ class antichain {
 
 		AD.L = L;
 		AD.GD = GD;
-		AD.L.lev[AD.L.nLev] = AD.L.n + k;  /* levels for the new lattice; for Beneš network creation */
+		AD.L.lev[AD.L.nLev] = (byte)(AD.L.n + k);  /* levels for the new lattice; for Beneš network creation */
 		AD.k = k;
 		AD.cp = 0;
 		AD.cl = L.nLev - 2;
@@ -372,7 +372,7 @@ class antichain {
 	 * AD should be initialised.
 	 */
 	static void antichaindata_reinit(antichaindata AD, int k) {
-		AD.L.lev[AD.L.nLev] = AD.L.n + k;  /* levels for the new lattice; for Beneš network creation */
+		AD.L.lev[AD.L.nLev] = (byte)(AD.L.n + k);  /* levels for the new lattice; for Beneš network creation */
 		AD.k = k;
 		AD.cp = 0;
 		AD.cl = AD.L.nLev - 2;
@@ -883,7 +883,7 @@ class antichain {
 	static void antichaindata_prepareLattice(antichaindata AD, lattice L, lattice LA) {
 		int j;
 
-		LA.n = L.n + AD.k;                          /* number of elements  */
+		LA.n = (byte)(L.n + AD.k);                          /* number of elements  */
 		LA.nLev = L.nLev + 1;                          /* number of levels    */
 		//memcpy(LA.lev, L.lev, L.nLev * sizeof( int));  /* old levels          */
 		System.arraycopy(L.lev, 0, LA.lev, 0, L.nLev);

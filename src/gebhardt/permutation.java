@@ -1,6 +1,6 @@
 package gebhardt;
 
-import irvine.math.IntegerUtils;
+import irvine.math.ByteUtils;
 
 /**
  * Permutations.
@@ -70,7 +70,7 @@ public class permutation {
   /*
    * Initialise p to the identity permutation.
    */
-  static void perm_init(int n, int[] p) {
+  static void perm_init(int n, byte[] p) {
 // #ifdef HARDCODE_MAXN_22
 // 	((unsigned long long*)p)[0] = 0x0706050403020100;
 // 	((unsigned long long*)p)[1] = 0x0f0e0d0c0b0a0908;
@@ -82,10 +82,10 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		p[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		p[i] = i;
+// 	for (int i=0; i<n; i++)
+// 		p[i] = (byte) i;
 // #endif
-    IntegerUtils.identity(p, n);
+    ByteUtils.identity(p, n);
   }
 
 
@@ -99,7 +99,7 @@ public class permutation {
   /*
    * Resize p from n to m by adding trivial action on the points n..m-1.
    */
-  static void perm_resize(int n, int m, int[] p) {
+  static void perm_resize(int n, int m, byte[] p) {
     int i;
 
 // #ifdef DOTEST
@@ -111,7 +111,7 @@ public class permutation {
 // 		}
 // #endif
     for (i = n; i < m; i++)
-      p[i] = i;
+      p[i] = (byte) i;
   }
 // #endif
 
@@ -127,7 +127,7 @@ public class permutation {
   /*
    * Copy p to r.
    */
-  static void perm_cpy(int n, int[] p, int[] r) {
+  static void perm_cpy(int n, byte[] p, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	((unsigned long long*)r)[0] = ((unsigned long long*)p)[0];
 // 	((unsigned long long*)r)[1] = ((unsigned long long*)p)[1];
@@ -142,10 +142,10 @@ public class permutation {
     System.arraycopy(p, 0, r, 0, n);
   }
 
-  static int[] perm_inv(final int n, final int[] perm) {
-    final int[] inv = new int[n];
+  static byte[] perm_inv(final int n, final byte[] perm) {
+    final byte[] inv = new byte[n];
     for (int k = 0; k < n; ++k) {
-      inv[perm[k]] = k;
+      inv[perm[k]] = (byte) k;
     }
     return inv;
   }
@@ -155,7 +155,7 @@ public class permutation {
    *
    * r must not be p.
    */
-  static void perm_inv(int n, int[] p, int[] r) {
+  static void perm_inv(int n, byte[] p, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[ , ]] = , );  /* r[p[i]] = i; */
 // #else
@@ -166,7 +166,7 @@ public class permutation {
 // 		r[i] = -1;
 // #endif
     for (int i = 0; i < n; i++)
-      r[p[i]] = i;
+      r[p[i]] = (byte) i;
 // #endif
   }
 
@@ -176,7 +176,7 @@ public class permutation {
    *
    * r can be p, but r must not be q.
    */
-  static void perm_mult(int n, int[] p, int[] q, int[] r) {
+  static void perm_mult(int n, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[ , ] = q[p[ , ]] );  /* r[i] = q[p[i]]; */
 // #else
@@ -195,7 +195,7 @@ public class permutation {
   /*
    * Store the product l*p*q in r.  (l is applied first.)
    */
-  static void perm_mult3(int n, int[] l, int[] p, int[] q, int[] r) {
+  static void perm_mult3(int n, byte[] l, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[ , ] = q[p[l[ , ]]] );  /* r[i] = q[p[l[i]]]; */
 // #else
@@ -216,7 +216,7 @@ public class permutation {
    *
    * r must not be either p or q.
    */
-  static void perm_ldiv(int n, int[] p, int[] q, int[] r) {
+  static void perm_ldiv(int n, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[ , ]] = q[ , ] );  /* r[p[i]] = q[i]; */
 // #else
@@ -235,7 +235,7 @@ public class permutation {
    *
    * r must not be either l or p or q.
    */
-  static void perm_ldiv_mult(int n, int[] l, int[] p, int[] q, int[] r) {
+  static void perm_ldiv_mult(int n, byte[] l, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[l[ , ]] = q[p[ , ]] );  /* r[l[i]] = q[p[i]]; */
 // #else
@@ -254,7 +254,7 @@ public class permutation {
   /*
    * Store the product (l*p)^-1 in r.  (l is applied first.)
    */
-  static void perm_mult_inv(int n, int[] l, int[] p, int[] r) {
+  static void perm_mult_inv(int n, byte[] l, byte[] p, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[l[ , ]]] = , );  /* r[p[l[i]]] = i; */
 // #else
@@ -265,7 +265,7 @@ public class permutation {
 // 		r[i] = -1;
 // #endif
     for (int i = 0; i < n; i++)
-      r[p[l[i]]] = i;
+      r[p[l[i]]] = (byte) i;
 // #endif
   }
 
@@ -273,7 +273,7 @@ public class permutation {
   /*
    * Store the product (l*p*q)^-1 in r.  (l is applied first.)
    */
-  static void perm_mult3_inv(int n, int[] l, int[] p, int[] q, int[] r) {
+  static void perm_mult3_inv(int n, byte[] l, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[q[p[l[ , ]]]] = , );  /* r[q[p[l[i]]]] = i; */
 // #else
@@ -284,7 +284,7 @@ public class permutation {
 // 		r[i] = -1;
 // #endif
     for (int i = 0; i < n; i++)
-      r[q[p[l[i]]]] = i;
+      r[q[p[l[i]]]] = (byte) i;
 // #endif
   }
 
@@ -292,7 +292,7 @@ public class permutation {
   /*
    * Store the product (l*p)^-1*q in r.  (l is applied first.)
    */
-  static void perm_mult_ldiv(int n, int[] l, int[] p, int[] q, int[] r) {
+  static void perm_mult_ldiv(int n, byte[] l, byte[] p, byte[] q, byte[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[l[ , ]]] = q[ , ] );  /* r[p[l[i]]] = q[i]; */
 // #else
@@ -311,7 +311,7 @@ public class permutation {
   /*
    * Store the product (l*p*q)^-1*r in s.  (l is applied first.)
    */
-  static void perm_mult3_ldiv(int n, int[] l, int[] p, int[] q, int[] r, int[] s) {
+  static void perm_mult3_ldiv(int n, byte[] l, byte[] p, byte[] q, byte[] r, byte[] s) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL(s[q[p[l[,]]]] = r[,]);  /* s[q[p[l[i]]]] = r[i]; */
 // #else
@@ -330,7 +330,7 @@ public class permutation {
   /*
    * The smallest point in the support of p, or n if p is the identity.
    */
-  static int perm_minSupport(int n, int[] p) {
+  static int perm_minSupport(int n, byte[] p) {
 // #ifdef HARDCODE_MAXN_22
 // 	unsigned long long  l;
 // 	elt                 s;
@@ -396,7 +396,7 @@ public class permutation {
   }
 
 
-  static boolean perm_isId(int n, int[] p)
+  static boolean perm_isId(int n, byte[] p)
     /*
      * Return TRUE is p acts trivially on 0..(n-1), and return FALSE otherwise
      */ {
@@ -421,7 +421,7 @@ public class permutation {
   }
 
 
-  static int perm_cmp(int n, int[] p, int[] q)
+  static int perm_cmp(int n, byte[] p, byte[] q)
     /*
      * Lexicographically compare the permutations p and q (viewed as arrays).
      *
@@ -463,14 +463,14 @@ public class permutation {
   /*
    * Return an integer in {0..n!-1} that uniquely identifies the permutation p.
    */
-  static long perm_toInteger(int n, int[] p) {
+  static long perm_toInteger(int n, byte[] p) {
     long k, m;
     int i;
 
     k = 0;
     m = 1;
-    int[] pos = IntegerUtils.identity(new int[n]);
-    int[] elems = IntegerUtils.identity(new int[n]);
+    byte[] pos = ByteUtils.identity(new byte[n]);
+    byte[] elems = ByteUtils.identity(new byte[n]);
     for (i = 0; i < n - 1; i++) {
       k += m * pos[p[i]];
       m *= n - i;
@@ -503,7 +503,7 @@ public class permutation {
    *
    * Return value: 1 if success; 0 if no further permutation exists.
    */
-  static boolean perm_next(int nLev, int[] lev, int[] p) {
+  static boolean perm_next(int nLev, int[] lev, byte[] p) {
     int lpos, thislev, i, j;
 
     boolean tt = false;  /* initialisation value unused; just to prevent warning */
@@ -522,7 +522,7 @@ public class permutation {
       if (!tt) {
         /* set current level to id & advance to next level */
         for (i = thislev; i < lev[lpos]; i++) {
-          p[i] = i;
+          p[i] = (byte) i;
         }
         thislev = lev[lpos];
         if (++lpos == nLev) {
@@ -533,7 +533,7 @@ public class permutation {
       for (j = thislev; !(p[j] < p[i]); j++) {
       }
       /* swap entries i and j */
-      int t = p[i];
+      byte t = p[i];
       p[i] = p[j];
       p[j] = t;
       /* reverse level up to position i-1 */

@@ -34,8 +34,8 @@ class permgrp {
 
 
 	long refcount;               /* reference count */
-	int[][] perm = new int[Constants.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
-	int[][] invperm = new int[Constants.MAXN - 2][];        /* permutations for inverses of generators */
+	byte[][] perm = new byte[Constants.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
+	byte[][] invperm = new byte[Constants.MAXN - 2][];        /* permutations for inverses of generators */
 	int invol;                  /* invol & BIT[i] indicates whether generator i is an involution */
 	int BenesValid;             /* which levels of array Benes contain valid pointers */
 	// #ifndef FILTER_GRADED
@@ -203,7 +203,7 @@ class permgrp {
 	 * If so, the product of the generators along the cycle is returned in k, and (*m)--(*nm) is the
 	 * first edge of the cycle.
 	 */
-	static boolean JerrumCreatesCycle(permgrpc G, int i, int j, int[] p, int[] h, int[] m, int[] nm) {
+	static boolean JerrumCreatesCycle(permgrpc G, int i, int j, byte[] p, byte[] h, int[] m, int[] nm) {
 		int[] anc = new int[ Constants.MAXN - 2];
 		int[] todo = new int[ Constants.MAXN - 2];
 		int ntodo, pos, min, u;
@@ -255,7 +255,7 @@ class permgrp {
 	/*
 	 * Insert the generator p, where i is the smallest point in the support of p and j=p[i].
 	 */
-	static void JerrumInsertGenerator(permgrpc G, int[] p, int i, int j) {
+	static void JerrumInsertGenerator(permgrpc G, byte[] p, int i, int j) {
 		int[] g = new int[1];
 
 		final int[] ugly = {G.freeperm}; // todo
@@ -284,14 +284,14 @@ class permgrp {
 	/*
 	 * Add the permutation p as a generator of G.  The permutation p *must* be nontrivial!
 	 */
-	static void permgrpc_addGenerator(permgrpc G, int[] p) {
+	static void permgrpc_addGenerator(permgrpc G, byte[] p) {
 		int i, j;
 
 		i = permutation.perm_minSupport(G.G.n, p);
 		j = p[i];
 		if ((G.Jerrum[i].neighbours & BIT(j)) != 0) {
 			int k;
-			int[] h = new int[G.G.n]; // todo is this right?
+			byte[] h = new byte[G.G.n]; // todo is this right?
 			/* j is already a neighbour of i; unless we have a duplicate generator... */
 			if (permutation.perm_cmp(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]]) != 0
 				&& permutation.perm_cmp(G.G.n, p, G.G.invperm[k]) != 0) {
@@ -300,7 +300,7 @@ class permgrp {
 				permgrpc_addGenerator(G, h);
 			}
 		} else {
-			int[] h = new int[G.G.n]; // todo is this right?
+			byte[] h = new byte[G.G.n]; // todo is this right?
 			int[] m = new int[1], nm = new int[1];
 			if (JerrumCreatesCycle(G, i, j, p, h, m, nm)){
 				if (m[0] != i) {

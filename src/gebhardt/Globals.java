@@ -38,7 +38,7 @@ public class Globals {
 	//typedef struct orbitelt orbitelt;
 	static class orbitelt {
 		long[] data = new long[2]; /* the antichains */
-		int[] toRoot;  /* permutation to root */
+		byte[] toRoot;  /* permutation to root */
 		int gen;     /* index of generator whose application yielded the antichains */
 	}
 
@@ -46,7 +46,7 @@ public class Globals {
 	static class SIdata {
 		long[] rep = new long[2];  /* the partially resorted antichains */
 		int S;       /* S & BIT[j] indicates that the elements j-1 and j are in the same subset of the partition */
-		int[] p;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
+		byte[] p;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
 	}
 
 	//typedef struct globals globals;

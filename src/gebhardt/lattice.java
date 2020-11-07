@@ -43,7 +43,7 @@ public class lattice {
 	 *   elt       lev[0..nLev-1] -- first element in each level, with L represented by n; lev[0]=0, ..., lev[nLev-1]=n
 	 *   permgrp*  S              -- subgroup of the stabiliser of the lattice that generates the stabiliser together with...
 	 *   flags32   SI             -- ...the transpositions (i-1 i) of elements on level nLev-2 for the bits i set in SI
-	 *   flags32   up[0..n-1]     -- upper set: up[i] & (1<<j) iff j \in \uparrow i
+	 *   flags32   up[0..n-1]     -- upper set: up[i] & (1<<j) iff j \in uparrow i
 	 *   flags32   lo[0..n-1]     -- lower set: lo[i] & (1<<j) iff j \in \downarrow i
 	 *
 	 * no longer stored explicitly:
@@ -147,7 +147,7 @@ public class lattice {
 	 * Set co[i] to a flag indicating the covers of element i of the lattice L.
 	 * The array co must be allocated.
 	 */
-	void lattice_getCoveringRelation(int[] co, lattice L) {
+	static void lattice_getCoveringRelation(int[] co, lattice L) {
 		int Ui;
 
 		final int[] j = new int[1];
@@ -341,7 +341,7 @@ public class lattice {
 	 * is as follows:  T,0,1,..,n-1,B.
 	 * The string buf must be allocated and have at least size (L.n+2)*(L.n+1)/2+1.
 	 */
-	String lattice_toString(lattice L) {
+	static String lattice_toString(lattice L) {
 		final StringBuilder sb = new StringBuilder();
 		int i, j;
 		int pos;
@@ -608,27 +608,27 @@ public class lattice {
 	}
 
 
-//	/*
-//	 * Initialise L to the k-fan (the lattice with k elements covered by T and covering B).
-//	 */
-//	static void lattice_init_kFan(lattice L, int k) {
-//		int i;
-//		permgrp S;
-//		int SI;
-//
-//		for (i = 0; i < k; i++) {
-//			L.up[i] = L.lo[i] = (int) BIT(i);
-//		}
-//		S = permgrp_alloc();
-//		permgrp_init(S, 0);
-//		SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
-//		lattice_setStabiliser(L, S, SI);
-//		permgrp_delete(S);
-//		L.lev[0] = 0;
-//		L.lev[1] = k;
-//		L.n = k;
-//		L.nLev = 2;
-//	}
+	/*
+	 * Initialise L to the k-fan (the lattice with k elements covered by T and covering B).
+	 */
+	static void lattice_init_kFan(lattice L, int k) {
+		int i;
+		permgrp S;
+		int SI;
+
+		for (i = 0; i < k; i++) {
+			L.up[i] = L.lo[i] = (int) BIT(i);
+		}
+		S = permgrp.permgrp_alloc();
+		permgrp.permgrp_init(S, 0);
+		SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
+		lattice_setStabiliser(L, S, SI);
+		permgrp.permgrp_delete(S);
+		L.lev[0] = 0;
+		L.lev[1] = k;
+		L.n = k;
+		L.nLev = 2;
+	}
 
 
 //	/*

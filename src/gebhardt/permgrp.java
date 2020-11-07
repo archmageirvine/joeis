@@ -80,6 +80,9 @@ class permgrp {
 		return G;
 	}
 
+	private static long BIT(final long i) {
+		return Benes.BIT(i);
+	}
 
 	/*
 	 * Delete all Beneš networks stored in G.
@@ -107,19 +110,19 @@ class permgrp {
 	}
 
 
-//	/*
-//	 * Set G to the trivial permutation group on n points.
-//	 */
-//	static void permgrpc_init(permgrpc G, int n) {
-//		int i;
-//
-//		permgrp_init(G.G, n);
-//		G.freeperm = allBits32(MAXN - 2);
-//		for (i = 0; i < n; i++)
-//			G.Jerrum[i].neighbours = 0;
-//	}
-//
-//
+	/*
+	 * Set G to the trivial permutation group on n points.
+	 */
+	static void permgrpc_init(permgrpc G, int n) {
+		int i;
+
+		permgrp_init(G.G, n);
+		G.freeperm = Constants.allBits32(Constants.MAXN - 2);
+		for (i = 0; i < n; i++)
+			G.Jerrum[i].neighbours = 0;
+	}
+
+
 	/*
 	 * Increment the reference count for *G and return *G.
 	 */
@@ -176,15 +179,15 @@ class permgrp {
 	}
 
 
-//	/*
-//	 * Delete the group *G.
-//	 */
-//	static void permgrpc_delete(permgrpc G) {
-//		permgrp_delete(G.G);
-//		free(G);
-//	}
-//
-//
+	/*
+	 * Delete the group *G.
+	 */
+	static void permgrpc_delete(permgrpc G) {
+		permgrp_delete(G.G);
+		//free(G);
+	}
+
+
 //	/*
 //	 * TEST FUNCTION:  Print current generators (in array notation).  NOTE:  The function only works if the
 //	 * generators are stored consecutively, i.e., after permgrpc_compactGenerators has been called.
@@ -194,125 +197,125 @@ class permgrp {
 //	}
 //
 //
-//	/*
-//	 * Return whether adding an edge i--j, for the permutation p, creates a cycle in the Jerrum graph.
-//	 * If so, the product of the generators along the cycle is returned in k, and (*m)--(*nm) is the
-//	 * first edge of the cycle.
-//	 */
-//	static bool JerrumCreatesCycle(permgrpc G, int i, int j, int[] p, int[] h, int[] m, int[] nm) {
-//		int anc[ MAXN - 2];
-//		int todo[ MAXN - 2];
-//		int ntodo, pos, min, u, v;
-//		int unseen;
-//
-//		todo[0] = i;
-//		ntodo = 1;
-//		unseen = NBIT(i);
-//		for (pos = 0; pos < ntodo; pos++) {
-//			int nu;
-//			u = todo[pos];
-//			nu = G.Jerrum[u].neighbours;
-//			while (get_LSB32(nu & unseen, & v)){
-//				anc[v] = u;
-//				if (v == j)
-//				goto cycle_found;
-//				todo[ntodo++] = v;
-//				unseen ^= BIT(v);  /* bit v is set, so this clears it */
-//			}
-//		}
-//		return FALSE;
-//		cycle_found:
-//		for (min = i, u = j; u != i; u = anc[u])
-//			min = u < min ? u : min;
-//	*m = min;
-//	*nm = anc[min];
-//		if (min == i) {
-//			perm_cpy(G.G.n, p, h);
-//			for (u = j; u != i; u = v) {
-//				v = anc[u];
-//				perm_mult(G.G.n, h, (u < v ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v]], h);
-//			}
-//		} else {
-//			perm_cpy(G.G.n, G.G.perm[G.Jerrum[min].perm[anc[min]]], h);
-//			for (u = anc[min]; u != i; u = v) {
-//				v = anc[u];
-//				perm_mult(G.G.n, h, (u < v ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v]], h);
-//			}
-//			perm_mult(G.G.n, h, p, h);
-//			for (u = j; u != min; u = v) {
-//				v = anc[u];
-//				perm_mult(G.G.n, h, (u < v ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v]], h);
-//			}
-//		}
-//		return TRUE;
-//	}
-//
-//
-//	/*
-//	 * Insert the generator p, where i is the smallest point in the support of p and j=p[i].
-//	 */
-//	static void JerrumInsertGenerator(permgrpc G, int[] p, int i, int j) {
-//		int g;
-//
-//		extract_LSB32( & (G.freeperm), &g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
-//		perm_cpy(G.G.n, p, G.G.perm[g]);
-//		perm_inv(G.G.n, p, G.G.invperm[g]);
-//		G.Jerrum[i].neighbours |= BIT(j);
-//		G.Jerrum[i].perm[j] = g;
-//		G.Jerrum[j].neighbours |= BIT(i);
-//		G.Jerrum[j].perm[i] = g;
-//	}
-//
-//
-//	/*
-//	 * Remove the generator associated to the edge from i to j.
-//	 */
-//	static void JerrumRemoveGenerator(permgrpc G, int i, int j) {
-//		int g;
-//
-//		g = G.Jerrum[i].perm[j];
-//		G.freeperm |= BIT(g);
-//		G.Jerrum[i].neighbours ^= BIT(j);  /* bit j is set, so this clears it */
-//		G.Jerrum[j].neighbours ^= BIT(i);  /* bit i is set, so this clears it */
-//	}
-//
-//
-//	/*
-//	 * Add the permutation p as a generator of G.  The permutation p *must* be nontrivial!
-//	 */
-//	void permgrpc_addGenerator(permgrpc G, int[] p) {
-//		int i, j;
-//
-//		i = perm_minSupport(G.G.n, p);
-//		j = p[i];
-//		if (G.Jerrum[i].neighbours & BIT(j)) {
-//			int k;
-//			int[] h;
-//			/* j is already a neighbour of i; unless we have a duplicate generator... */
-//			if (perm_cmp(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]])
-//				&& perm_cmp(G.G.n, p, G.G.invperm[k])) {
-//				/* ...there is a generator k so that h=g*k^-1 fixes i; add h instead of g */
-//				perm_mult(G.G.n, p, G.G.invperm[k], h);
-//				permgrpc_addGenerator(G, h);
-//			}
-//		} else {
-//			int[] h;
-//			int m, nm;
-//			if (JerrumCreatesCycle(G, i, j, p, h, & m, &nm)){
-//				if (m != i) {
-//					JerrumRemoveGenerator(G, m, nm);
-//					JerrumInsertGenerator(G, p, i, j);
-//				}
-//				if (!perm_isId(G.G.n, h))
-//					permgrpc_addGenerator(G, h);
-//			} else{
-//				JerrumInsertGenerator(G, p, i, j);
-//			}
-//		}
-//
-//	}
-//
-//
+	/*
+	 * Return whether adding an edge i--j, for the permutation p, creates a cycle in the Jerrum graph.
+	 * If so, the product of the generators along the cycle is returned in k, and (*m)--(*nm) is the
+	 * first edge of the cycle.
+	 */
+	static boolean JerrumCreatesCycle(permgrpc G, int i, int j, int[] p, int[] h, int[] m, int[] nm) {
+		int[] anc = new int[ Constants.MAXN - 2];
+		int[] todo = new int[ Constants.MAXN - 2];
+		int ntodo, pos, min, u;
+		int unseen;
+		final int[] v = new int[1];
+
+		todo[0] = i;
+		ntodo = 1;
+		unseen = (int)~BIT(i);
+		for (pos = 0; pos < ntodo; pos++) {
+			int nu;
+			u = todo[pos];
+			nu = G.Jerrum[u].neighbours;
+			while (Constants.get_LSB32(nu & unseen, v)){
+				anc[v[0]] = u;
+				if (v[0] == j) {
+					for (min = i, u = j; u != i; u = anc[u])
+						min = u < min ? u : min;
+					m[0] = min;
+					nm[0] = anc[min];
+					if (min == i) {
+						permutation.perm_cpy(G.G.n, p, h);
+						for (u = j; u != i; u = v[0]) {
+							v[0] = anc[u];
+							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+						}
+					} else {
+						permutation.perm_cpy(G.G.n, G.G.perm[G.Jerrum[min].perm[anc[min]]], h);
+						for (u = anc[min]; u != i; u = v[0]) {
+							v[0] = anc[u];
+							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+						}
+						permutation.perm_mult(G.G.n, h, p, h);
+						for (u = j; u != min; u = v[0]) {
+							v[0] = anc[u];
+							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+						}
+					}
+					return true;
+				}
+				todo[ntodo++] = v[0];
+				unseen ^= BIT(v[0]);  /* bit v is set, so this clears it */
+			}
+		}
+		return false;
+	}
+
+
+	/*
+	 * Insert the generator p, where i is the smallest point in the support of p and j=p[i].
+	 */
+	static void JerrumInsertGenerator(permgrpc G, int[] p, int i, int j) {
+		int[] g = new int[1];
+
+		final int[] ugly = {G.freeperm}; // todo
+		Constants.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
+		G.freeperm = ugly[0];
+		permutation.perm_cpy(G.G.n, p, G.G.perm[g[0]]);
+		permutation.perm_inv(G.G.n, p, G.G.invperm[g[0]]);
+		G.Jerrum[i].neighbours |= BIT(j);
+		G.Jerrum[i].perm[j] = g[0];
+		G.Jerrum[j].neighbours |= BIT(i);
+		G.Jerrum[j].perm[i] = g[0];
+	}
+
+	/*
+	 * Remove the generator associated to the edge from i to j.
+	 */
+	static void JerrumRemoveGenerator(permgrpc G, int i, int j) {
+		int g;
+
+		g = G.Jerrum[i].perm[j];
+		G.freeperm |= BIT(g);
+		G.Jerrum[i].neighbours ^= BIT(j);  /* bit j is set, so this clears it */
+		G.Jerrum[j].neighbours ^= BIT(i);  /* bit i is set, so this clears it */
+	}
+
+	/*
+	 * Add the permutation p as a generator of G.  The permutation p *must* be nontrivial!
+	 */
+	static void permgrpc_addGenerator(permgrpc G, int[] p) {
+		int i, j;
+
+		i = permutation.perm_minSupport(G.G.n, p);
+		j = p[i];
+		if ((G.Jerrum[i].neighbours & BIT(j)) != 0) {
+			int k;
+			int[] h = new int[G.G.n]; // todo is this right?
+			/* j is already a neighbour of i; unless we have a duplicate generator... */
+			if (permutation.perm_cmp(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]]) != 0
+				&& permutation.perm_cmp(G.G.n, p, G.G.invperm[k]) != 0) {
+				/* ...there is a generator k so that h=g*k^-1 fixes i; add h instead of g */
+				permutation.perm_mult(G.G.n, p, G.G.invperm[k], h);
+				permgrpc_addGenerator(G, h);
+			}
+		} else {
+			int[] h = new int[G.G.n]; // todo is this right?
+			int[] m = new int[1], nm = new int[1];
+			if (JerrumCreatesCycle(G, i, j, p, h, m, nm)){
+				if (m[0] != i) {
+					JerrumRemoveGenerator(G, m[0], nm[0]);
+					JerrumInsertGenerator(G, p, i, j);
+				}
+				if (!permutation.perm_isId(G.G.n, h))
+					permgrpc_addGenerator(G, h);
+			} else{
+				JerrumInsertGenerator(G, p, i, j);
+			}
+		}
+
+	}
+
+
 //	/*
 //	 * TEST FUNCTION:  Print current generators (in array notation).
 //	 */

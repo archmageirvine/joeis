@@ -113,10 +113,11 @@ public class Benes {
    * as a permutation of blocks of width m, where pi is the inverse of p.  The masks for blocked Beneš
    * networks indicate the higher bit of each pair.
    */
-  static void benes_get_blocked(int[] p, int[] pi, int lo, int hi, int m, Benes[] B) {
+  static Benes benes_get_blocked(int[] p, int[] pi, int lo, int hi, int m) {
     int i, j, n, apf;
     Benes T;
     long mask;
+    final Benes B = new Benes();
 
     n = hi - lo;
     int[] src = new int[n], inv_src = new int[n];
@@ -139,23 +140,22 @@ public class Benes {
     apf = BITSPERLONG / m;
     mask = BIT(m) - 1;
     if (n > apf) {
-      B[0] = new Benes();
-      B[0].refcount = 1;
-      B[0].depth = T.depth;
+      B.refcount = 1;
+      B.depth = T.depth;
       for (i = 0; i < T.depth; i++) {
-        B[0].shift[i] = m * T.shift[i];
-        B[0].mask[i] = B[0].mask1[i] = 0;
+        B.shift[i] = m * T.shift[i];
+        B.mask[i] = B.mask1[i] = 0;
         mask = BIT(m) - 1;
         for (j = n - 1; j >= n - apf; j--) {  /* this order: the lower member of a pair becomes the higher block */
           if ((T.mask[i] & BIT(j)) != 0) {
-            B[0].mask1[i] |= mask;
+            B.mask1[i] |= mask;
           }
           mask <<= m;
         }
         mask = BIT(m) - 1;
         for (; j >= 0; j--) {  /* this order: the lower member of a pair becomes the higher block */
           if ((T.mask[i] & BIT(j)) != 0) {
-            B[0].mask[i] |= mask;
+            B.mask[i] |= mask;
           }
           mask <<= m;
         }
@@ -165,16 +165,15 @@ public class Benes {
 //         __builtin_prefetch((void*)*B+64);
 // #endif
     } else {
-      B[0] = new Benes();
-      B[0].refcount = 1;
-      B[0].depth = T.depth;
+      B.refcount = 1;
+      B.depth = T.depth;
       for (i = 0; i < T.depth; i++) {
-        B[0].shift[i] = m * T.shift[i];
-        B[0].mask[i] = 0;
+        B.shift[i] = m * T.shift[i];
+        B.mask[i] = 0;
         mask = BIT(m) - 1;
         for (j = n; j-- != 0; ) {  /* this order: the lower member of a pair becomes the higher block */
           if ((T.mask[i] & BIT(j)) != 0) {
-            B[0].mask[i] |= mask;
+            B.mask[i] |= mask;
           }
           mask <<= m;
         }
@@ -186,6 +185,7 @@ public class Benes {
 // #endif
     }
     benes_delete(T);
+    return B;
   }
 
 
@@ -522,17 +522,15 @@ public class Benes {
    * Precompute Beneš networks for all permutations on at most BENES_SMALL points.
    */
   public static void benes_init_small() {
-    Benes B;
-
     benes_small = new Benes[BENES_SMALL + 1][]; //calloc(BENES_SMALL + 1, sizeof(Benes[]));
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
       benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
       final int[] p = IntegerUtils.identity(new int[n[0]]); //perm_init(n, p);
       do {
-        int[] p_ = Arrays.copyOf(p, n[0]);
-        int[] pi_ = permutation.perm_inv(n[0], p);
-        B = benes_create(n[0], p_, pi_);
+        final int[] p_ = Arrays.copyOf(p, n[0]);
+        final int[] pi_ = permutation.perm_inv(n[0], p);
+        final Benes B = benes_create(n[0], p_, pi_);
         B.refcount = -1;
         benes_small[n[0]][(int) permutation.perm_toInteger(n[0], p)] = B;
       } while (permutation.perm_next(1, n, p));  /* a single level: 0..n-1 */

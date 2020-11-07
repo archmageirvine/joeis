@@ -1,7 +1,7 @@
 package gebhardt;
 
 import java.util.Arrays;
-import java.util.TreeSet;
+import java.util.TreeMap;
 
 /**
  * Permutations.
@@ -52,13 +52,13 @@ public class Globals {
 	//typedef struct globals globals;
 	//struct globals {
 	int orbspace;
-	long orbsize;
+	int orbsize;
 	orbitelt[] orb;
 	int SIspace;
 	long SI0size;
 	SIdata[] SI0;
 	SIdata[] SI1;
-	TreeSet<Long> orbpos; //hashtable[] orbpos;
+	TreeMap<Long, Long> orbpos; //hashtable[] orbpos;
 	//};
 
 
@@ -89,7 +89,7 @@ public class Globals {
 		GD.orbspace = Constants.ORBITS_INITIAL_ORBSPACE;
 		GD.orbsize = 0;
 		GD.orb = new orbitelt[Constants.ORBITS_INITIAL_ORBSPACE];
-		GD.orbpos = new TreeSet<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
+		GD.orbpos = new TreeMap<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
 		GD.SIspace = Constants.ORBITS_INITIAL_SISPACE;
 		GD.SI0 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];
 		GD.SI1 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];

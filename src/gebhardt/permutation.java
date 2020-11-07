@@ -67,18 +67,17 @@ public class permutation {
 // #endif
 
 
-// static inline void perm_init(elt n, permutation p)
-// /*
-//  * Initialise p to the identity permutation.
-//  */
-// {
+  /*
+   * Initialise p to the identity permutation.
+   */
+  static void perm_init(int n, int[] p) {
 // #ifdef HARDCODE_MAXN_22
 // 	((unsigned long long*)p)[0] = 0x0706050403020100;
 // 	((unsigned long long*)p)[1] = 0x0f0e0d0c0b0a0908;
 // 	((unsigned int*)p)[4] = 0x13121110;
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		p[i] = -1;
@@ -86,7 +85,8 @@ public class permutation {
 // 	for (i=0; i<n; i++)
 // 		p[i] = i;
 // #endif
-// }
+    IntegerUtils.identity(p, n);
+  }
 
 
 // void perm_print(elt n, permutation p, elt offset);
@@ -95,13 +95,12 @@ public class permutation {
 //  */
 
 
-// #ifndef HARDCODE_MAXN_22
-// static inline void perm_resize(elt n, elt m, permutation p)
-// /*
-//  * Resize p from n to m by adding trivial action on the points n..m-1.
-//  */
-// {
-// 	elt  i;
+  // #ifndef HARDCODE_MAXN_22
+  /*
+   * Resize p from n to m by adding trivial action on the points n..m-1.
+   */
+  static void perm_resize(int n, int m, int[] p) {
+    int i;
 
 // #ifdef DOTEST
 // 	for (i=n; i<m; i++)
@@ -111,9 +110,9 @@ public class permutation {
 // 			erri(-4);
 // 		}
 // #endif
-// 	for (i=n; i<m; i++)
-// 		p[i] = i;
-// }
+    for (i = n; i < m; i++)
+      p[i] = i;
+  }
 // #endif
 
 
@@ -128,7 +127,7 @@ public class permutation {
   /*
    * Copy p to r.
    */
- static void perm_cpy(int n, int[] p, int[] r) {
+  static void perm_cpy(int n, int[] p, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	((unsigned long long*)r)[0] = ((unsigned long long*)p)[0];
 // 	((unsigned long long*)r)[1] = ((unsigned long long*)p)[1];
@@ -140,8 +139,8 @@ public class permutation {
 // #endif
 // 	memcpy(r, p, n*sizeof(elt));
 // #endif
-   System.arraycopy(p, 0, r, 0, n);
- }
+    System.arraycopy(p, 0, r, 0, n);
+  }
 
   static int[] perm_inv(final int n, final int[] perm) {
     final int[] inv = new int[n];
@@ -151,203 +150,191 @@ public class permutation {
     return inv;
   }
 
-// static inline void perm_inv(elt n, permutation p, permutation r)
-// /*
-//  * Store the inverse of p in r.
-//  *
-//  * r must not be p.
-//  */
-// {
+  /*
+   * Store the inverse of p in r.
+   *
+   * r must not be p.
+   */
+  static void perm_inv(int n, int[] p, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[ , ]] = , );  /* r[p[i]] = i; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[p[i]] = i;
+    for (int i = 0; i < n; i++)
+      r[p[i]] = i;
 // #endif
-// }
+  }
 
 
-// static inline void perm_mult(elt n, permutation p, permutation q, permutation r)
-// /*
-//  * Store the product p*q in r.  (p is applied first.)
-//  *
-//  * r can be p, but r must not be q.
-//  */
-// {
+  /*
+   * Store the product p*q in r.  (p is applied first.)
+   *
+   * r can be p, but r must not be q.
+   */
+  static void perm_mult(int n, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[ , ] = q[p[ , ]] );  /* r[i] = q[p[i]]; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[i] = q[p[i]];
+    for (int i = 0; i < n; i++)
+      r[i] = q[p[i]];
 // #endif
-// }
+  }
 
 
-// static inline void perm_mult3(elt n, permutation l, permutation p, permutation q, permutation r)
-// /*
-//  * Store the product l*p*q in r.  (l is applied first.)
-//  */
-// {
+  /*
+   * Store the product l*p*q in r.  (l is applied first.)
+   */
+  static void perm_mult3(int n, int[] l, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[ , ] = q[p[l[ , ]]] );  /* r[i] = q[p[l[i]]]; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[i] = q[p[l[i]]];
+    for (int i = 0; i < n; i++)
+      r[i] = q[p[l[i]]];
 // #endif
-// }
+  }
 
 
-// static inline void perm_ldiv(elt n, permutation p, permutation q, permutation r)
-// /*
-//  * Store the product p^-1*q in r.  (p^-1 is applied first.)
-//  *
-//  * r must not be either p or q.
-//  */
-// {
+  /*
+   * Store the product p^-1*q in r.  (p^-1 is applied first.)
+   *
+   * r must not be either p or q.
+   */
+  static void perm_ldiv(int n, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[ , ]] = q[ , ] );  /* r[p[i]] = q[i]; */
 // #else
-// 	elt  i;
-
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[p[i]] = q[i];
+    for (int i = 0; i < n; i++)
+      r[p[i]] = q[i];
 // #endif
-// }
+  }
 
 
-// static inline void perm_ldiv_mult(elt n, permutation l, permutation p, permutation q, permutation r)
-// /*
-//  * Store l^-1*p*q in r.  (l^-1 is applied first.)
-//  *
-//  * r must not be either l or p or q.
-//  */
-// {
+  /*
+   * Store l^-1*p*q in r.  (l^-1 is applied first.)
+   *
+   * r must not be either l or p or q.
+   */
+  static void perm_ldiv_mult(int n, int[] l, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[l[ , ]] = q[p[ , ]] );  /* r[l[i]] = q[p[i]]; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[l[i]] = q[p[i]];
+    for (int i = 0; i < n; i++)
+      r[l[i]] = q[p[i]];
 // #endif
-// }
+  }
 
 
-// static inline void perm_mult_inv(elt n, permutation l, permutation p, permutation r)
-// /*
-//  * Store the product (l*p)^-1 in r.  (l is applied first.)
-//  */
-// {
+  /*
+   * Store the product (l*p)^-1 in r.  (l is applied first.)
+   */
+  static void perm_mult_inv(int n, int[] l, int[] p, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[l[ , ]]] = , );  /* r[p[l[i]]] = i; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[p[l[i]]] = i;
+    for (int i = 0; i < n; i++)
+      r[p[l[i]]] = i;
 // #endif
-// }
+  }
 
 
-// static inline void perm_mult3_inv(elt n, permutation l, permutation p, permutation q, permutation r)
-// /*
-//  * Store the product (l*p*q)^-1 in r.  (l is applied first.)
-//  */
-// {
+  /*
+   * Store the product (l*p*q)^-1 in r.  (l is applied first.)
+   */
+  static void perm_mult3_inv(int n, int[] l, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[q[p[l[ , ]]]] = , );  /* r[q[p[l[i]]]] = i; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[q[p[l[i]]]] = i;
+    for (int i = 0; i < n; i++)
+      r[q[p[l[i]]]] = i;
 // #endif
-// }
+  }
 
 
-// static inline void perm_mult_ldiv(elt n, permutation l, permutation p, permutation q, permutation r)
-// /*
-//  * Store the product (l*p)^-1*q in r.  (l is applied first.)
-//  */
-// {
+  /*
+   * Store the product (l*p)^-1*q in r.  (l is applied first.)
+   */
+  static void perm_mult_ldiv(int n, int[] l, int[] p, int[] q, int[] r) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL( r[p[l[ , ]]] = q[ , ] );  /* r[p[l[i]]] = q[i]; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		r[p[l[i]]] = q[i];
-// #endif
-// }
+    for (int i = 0; i < n; i++)
+      r[p[l[i]]] = q[i];
+    //#endif
+  }
 
 
-// static inline void perm_mult3_ldiv(elt n, permutation l, permutation p, permutation q, permutation r, permutation s)
-// /*
-//  * Store the product (l*p*q)^-1*r in s.  (l is applied first.)
-//  */
-// {
+  /*
+   * Store the product (l*p*q)^-1*r in s.  (l is applied first.)
+   */
+  static void perm_mult3_ldiv(int n, int[] l, int[] p, int[] q, int[] r, int[] s) {
 // #ifdef HARDCODE_MAXN_22
 // 	UNROLL(s[q[p[l[,]]]] = r[,]);  /* s[q[p[l[i]]]] = r[i]; */
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		s[i] = -1;
 // #endif
-// 	for (i=0; i<n; i++)
-// 		s[q[p[l[i]]]] = r[i];
+    for (int i = 0; i < n; i++)
+      s[q[p[l[i]]]] = r[i];
 // #endif
-// }
+  }
 
 
-// static inline elt perm_minSupport(elt n, permutation p)
-// /*
-//  * The smallest point in the support of p, or n if p is the identity.
-//  */
-// {
+  /*
+   * The smallest point in the support of p, or n if p is the identity.
+   */
+  static int perm_minSupport(int n, int[] p) {
 // #ifdef HARDCODE_MAXN_22
 // 	unsigned long long  l;
 // 	elt                 s;
-
+//
 // 	if ((l = ((unsigned long long*)p)[0] ^ 0x0706050403020100)) {
 // 		s = 0x07;  /* s = 7; */
 // 		if (l & 0x00000000ffffffff) {
@@ -392,7 +379,7 @@ public class permutation {
 // 	return 20;
 // #else
 // 	elt  i;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		if (p[i] != -1) {
@@ -401,25 +388,23 @@ public class permutation {
 // 			erri(-4);
 // 		}
 // #endif
-// 	for (i=0; i<n && (p[i]==i); i++)
-// 		;
-// 	return i;
+    int i;
+    for (i = 0; i < n && (p[i] == i); i++)
+      ;
+    return i;
 // #endif
-// }
+  }
 
 
-// static inline bool perm_isId(elt n, permutation p)
-// /*
-//  * Return TRUE is p acts trivially on 0..(n-1), and return FALSE otherwise
-//  */
-// {
+  static boolean perm_isId(int n, int[] p)
+    /*
+     * Return TRUE is p acts trivially on 0..(n-1), and return FALSE otherwise
+     */ {
 // #ifdef HARDCODE_MAXN_22
 // 	return (((unsigned long long*)p)[0] == 0x0706050403020100)
 // 			&& (((unsigned long long*)p)[1] == 0x0f0e0d0c0b0a0908)
 // 			&& (((unsigned int*)p)[4] == 0x13121110);
 // #else
-// 	elt  i;
-
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++)
 // 		if (p[i] != -1) {
@@ -428,30 +413,29 @@ public class permutation {
 // 			erri(-4);
 // 		}
 // #endif
-// 	for (i=0; i<n; i++)
-// 		if (p[i] != i)
-// 			return FALSE;
-// 	return TRUE;
+    for (int i = 0; i < n; i++)
+      if (p[i] != i)
+        return false;
+    return true;
 // #endif
-// }
+  }
 
 
-// static inline elt perm_cmp(elt n, permutation p, permutation q)
-// /*
-//  * Lexicographically compare the permutations p and q (viewed as arrays).
-//  *
-//  * Return value: <0 if p[i] < q[i] and p[j] = p[j] for j<i
-//  *               0  if A = B
-//  *               >0 if p[i] > q[i] and p[j] = q[j] for j<i
-//  */
-// {
+  static int perm_cmp(int n, int[] p, int[] q)
+    /*
+     * Lexicographically compare the permutations p and q (viewed as arrays).
+     *
+     * Return value: <0 if p[i] < q[i] and p[j] = p[j] for j<i
+     *               0  if A = B
+     *               >0 if p[i] > q[i] and p[j] = q[j] for j<i
+     */ {
 // #ifdef HARDCODE_MAXN_22
 // 	return (((unsigned long long*)p)[0] != ((unsigned long long*)q)[0])
 // 			|| (((unsigned long long*)p)[1] != ((unsigned long long*)q)[1])
 // 			|| (((unsigned int*)p)[4] != ((unsigned int*)q)[4]);
 // #else
 // 	elt  i, d;
-
+//
 // #ifdef DOTEST
 // 	for (i=n; i<MAXN-2; i++) {
 // 		if (p[i] != -1) {
@@ -466,12 +450,14 @@ public class permutation {
 // 		}
 // 	}
 // #endif
-// 	for (i=0; i<n; i++)
-// 		if ((d=p[i]-q[i]))
-// 			return d;
-// 	return 0;
+    for (int i = 0; i < n; i++) {
+      int d;
+      if ((d = p[i] - q[i]) != 0)
+        return d;
+    }
+    return 0;
 // #endif
-// }
+  }
 
 
   /*

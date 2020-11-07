@@ -1377,7 +1377,7 @@ class canonical {
 		} else if (AD.SD[AD_CSL + 1].SI != 0) {
 			if ((AD.GD.orb[0].data[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				int[] p = new int[G.n]; // todo right?
+				int[] p = new int[AD.L.n + AD.k]; // todo right?
 				long[] L = new long[] { AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				final int[] ugly = new int[] {AD.SD[AD_CSL].SI};
@@ -1666,7 +1666,7 @@ class canonical {
 			}
 			if (AD.GD.orb[0].data[0] != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				int[] p = new int[AD.L.n];
+				int[] p = new int[AD.L.n + AD.k];
 				long[] L = new long[] {AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				for (pmask = 1, i = AD.k; i-- != 0; ) {

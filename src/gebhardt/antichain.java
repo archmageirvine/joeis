@@ -94,7 +94,7 @@ class antichain {
 		// #ifndef FILTER_GRADED
 // 	stabiliser  SD[MAXN-2];
 // #else
-		stabiliser[] SD = new stabiliser[2];
+		stabiliser[] SD = new stabiliser[] {new stabiliser(), new stabiliser()};
 		//#endif
 		int cp;
 		int Fpos;

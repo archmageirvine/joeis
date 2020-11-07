@@ -56,8 +56,8 @@ public class Globals {
 	orbitelt[] orb;
 	int SIspace;
 	long SI0size;
-	SIdata[] SI0;
-	SIdata[] SI1;
+	SIdata[] SI0 = new SIdata[0];
+	SIdata[] SI1 = new SIdata[0];
 	TreeMap<Long, Long> orbpos; //hashtable[] orbpos;
 	//};
 
@@ -89,6 +89,9 @@ public class Globals {
 		GD.orbspace = Constants.ORBITS_INITIAL_ORBSPACE;
 		GD.orbsize = 0;
 		GD.orb = new orbitelt[Constants.ORBITS_INITIAL_ORBSPACE];
+		for (int k = 0; k < GD.orb.length; ++k) {
+			GD.orb[k] = new orbitelt();
+		}
 		GD.orbpos = new TreeMap<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
 		GD.SIspace = Constants.ORBITS_INITIAL_SISPACE;
 		GD.SI0 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];

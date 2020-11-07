@@ -53,8 +53,8 @@ public class Benes {
   //struct benes_p2 {
   long refcount;              /* reference count; -1 = persistent */
   long[] mask = new long[2 * Constants.LD_MAXN_2 - 1];   /* masks for stages */
-  long[] shift = new long[2 * Constants.LD_MAXN_2 - 1];  /* shift amounts for stages */
-  long depth;                 /* number of stages */
+  byte[] shift = new byte[2 * Constants.LD_MAXN_2 - 1];  /* shift amounts for stages */
+  byte depth;                 /* number of stages */
   long[] mask1 = new long[2 * Constants.LD_MAXN_2 - 1];  /* masks for stages; second long */
   //};
 
@@ -143,7 +143,7 @@ public class Benes {
       B.refcount = 1;
       B.depth = T.depth;
       for (i = 0; i < T.depth; i++) {
-        B.shift[i] = m * T.shift[i];
+        B.shift[i] = (byte) (m * T.shift[i]);
         B.mask[i] = B.mask1[i] = 0;
         mask = BIT(m) - 1;
         for (j = n - 1; j >= n - apf; j--) {  /* this order: the lower member of a pair becomes the higher block */
@@ -168,7 +168,7 @@ public class Benes {
       B.refcount = 1;
       B.depth = T.depth;
       for (i = 0; i < T.depth; i++) {
-        B.shift[i] = m * T.shift[i];
+        B.shift[i] = (byte) (m * T.shift[i]);
         B.mask[i] = 0;
         mask = BIT(m) - 1;
         for (j = n; j-- != 0; ) {  /* this order: the lower member of a pair becomes the higher block */
@@ -456,7 +456,7 @@ public class Benes {
       /* record the configurations for the current stage */
       if (cfg_src != 0) {
         long smask;
-        B.shift[Fpos] = BIT(stage);
+        B.shift[Fpos] = (byte) BIT(stage);
         smask = 0;
         t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
@@ -470,7 +470,7 @@ public class Benes {
       if (cfg_tgt != 0) {
         long smask;
         Bpos--;
-        B.shift[Bpos] = BIT(stage);
+        B.shift[Bpos] = (byte) BIT(stage);
         smask = 0;
         t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
@@ -487,9 +487,9 @@ public class Benes {
         B.shift[Fpos] = B.shift[Bpos];
         B.mask[Fpos] = B.mask[Bpos];
       }
-      B.depth = Fpos;
+      B.depth = (byte) Fpos;
     } else {
-      B.depth = 2 * ld_n - 1;
+      B.depth = (byte) (2 * ld_n - 1);
     }
 // #ifdef DOTEST
 // 	if (n)
@@ -525,6 +525,7 @@ public class Benes {
     benes_small = new Benes[BENES_SMALL + 1][]; //calloc(BENES_SMALL + 1, sizeof(Benes[]));
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
+      System.out.println("SAI: init_benes " + n[0]);
       benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
       final int[] p = IntegerUtils.identity(new int[n[0]]); //perm_init(n, p);
       do {

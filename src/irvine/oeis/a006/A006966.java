@@ -78,15 +78,17 @@ public class A006966 implements Sequence {
     }
   }
 
-  private int mN = 0;
+  private int mN = 4; // todo wind this down
+  {
+    Benes.benes_init_small();
+  }
+  final Globals GD = Globals.globals_init();
+  final lattice L = lattice.lattice_init_2();
 
   @Override
   public Z next() {
     ++mN;
     bitmap_init(mN);
-    Benes.benes_init_small();
-    final Globals GD = Globals.globals_init();
-    final lattice L = lattice.lattice_init_2();
     final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, GD);
     lattEnum.lattEnum_doEnumeration(E);
     return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));

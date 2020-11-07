@@ -52,18 +52,21 @@ class permgrp {
 	}
 
 	static class permgrpc {
-		permgrp G;
+		permgrp G = new permgrp();
 		JVertexT[] Jerrum = new JVertexT[Constants.MAXN - 2];  /* graph used for Jerrum's filter */
 		int freeperm;        /* indicating unused indices in perm/inverm */
+    {
+      for (int k = 0; k < Jerrum.length; ++k) {
+        Jerrum[k] = new JVertexT();
+      }
+    }
 	}
 
 	/*
 	 * Allocate space for a permutation group (permgrp); the group is NOT initialised.
 	 */
 	static permgrp permgrp_alloc() {
-		permgrp G;
-
-		G = new permgrp();
+		permgrp G = new permgrp();
 		G.refcount = 1;
 		G.BenesValid = 0;
 		return G;
@@ -73,9 +76,7 @@ class permgrp {
 	 * Allocate space for a permutation group (permgrpc); the group is NOT initialised.
 	 */
 	static permgrpc permgrpc_alloc() {
-		permgrpc G;
-
-		G = new permgrpc();
+		permgrpc G = new permgrpc();
 		G.G = permgrp_alloc();
 		return G;
 	}

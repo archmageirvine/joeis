@@ -261,6 +261,8 @@ class permgrp {
 		final int[] ugly = {G.freeperm}; // todo
 		Constants.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
 		G.freeperm = ugly[0];
+    G.G.perm[g[0]] = new byte[p.length]; // sai added
+    G.G.invperm[g[0]] = new byte[p.length]; // sai added
 		permutation.perm_cpy(G.G.n, p, G.G.perm[g[0]]);
 		permutation.perm_inv(G.G.n, p, G.G.invperm[g[0]]);
 		G.Jerrum[i].neighbours |= BIT(j);
@@ -317,13 +319,12 @@ class permgrp {
 	}
 
 
-//	/*
-//	 * TEST FUNCTION:  Print current generators (in array notation).
-//	 */
-//	void permgrp_printGenerators(permgrp G, int offset) {
-//		int i;
-//
-//		for (i = 0; i < G.ngens; i++)
-//			perm_print(G.n, G.perm[i], offset);
-//	}
+	/*
+	 * TEST FUNCTION:  Print current generators (in array notation).
+	 */
+	static void permgrp_printGenerators(permgrp G, int offset) {
+		for (int i = 0; i < G.ngens; i++) {
+      permutation.perm_print(G.n, G.perm[i], offset);
+    }
+	}
 }

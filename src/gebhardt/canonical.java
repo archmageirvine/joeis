@@ -30,9 +30,7 @@ class canonical {
 	 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-
-//#include "canonical.h"
-
+	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
 // #if 0
 // #define PRINTLARGEORBITS
@@ -398,9 +396,11 @@ class canonical {
 
 		mask = (int) (BIT(m) - 1);
 		assert GD.SI0 != null;
+		assert GD.SI0[0] != null;
 		assert L != null;
 		GD.SI0[0].rep[0] = L[0];
 		GD.SI0[0].S = (SI >> a0) & mask;
+		GD.SI0[0].p = new byte[p.length]; // sai added
 		permutation.perm_cpy(n + k, p, GD.SI0[0].p);
 		SI0size = 1;
 		for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
@@ -413,7 +413,7 @@ class canonical {
 					int[] hi = new int[1];
 					int[] lo = new int[1];
 					long P;
-					byte[] q = new byte[n];  // todo init ??
+					byte[] q = new byte[n + k];  // todo init ??
 					//int[]         pq = q+a0;
 					if (SI1size == GD.SIspace) {
 						Globals.globals_enlargen_SIspace(GD);
@@ -462,6 +462,7 @@ class canonical {
 						dr = dj;
 						SI1size = 0;
 					}
+					GD.SI1[SI1size].p = new byte[q.length]; // sai added
 					permutation.perm_cpy(n + k, q, GD.SI1[SI1size].p);
 					if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
 						long mask1, mask2;
@@ -802,7 +803,7 @@ class canonical {
 	 */
 	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long L) {
 		int i;
-		byte[] p = new byte[n];
+		byte[] p = new byte[n + k];
 // #ifdef DOTEST
 // 	long        L_;
 // #endif
@@ -1241,9 +1242,11 @@ class canonical {
 		permgrp G;
 		permgrpc S;
 
-// #ifdef VERBOSE
-// 	printf("[entering antichaindata_isCanonical_1]:\n"); lattice_print(AD.L); antichaindata_printCounters(AD);
-// #endif
+		if (VERBOSE) {
+			System.out.println("[entering antichaindata_isCanonical_1]:");
+			lattice.lattice_print(AD.L);
+			antichain.antichaindata_printCounters(AD);
+		}
 		G = AD.SD[AD_CSL + 1].ST;
 // #ifdef DOTEST
 // 	if (G.ngens && !(G.BenesValid & BIT(AD_CSL))) {
@@ -1297,9 +1300,9 @@ class canonical {
 							antichainList_applySI_1(AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl], A, AD.SD[AD_CSL + 1].SI, null, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (long_cmp(L[0], A[0]) > 0) {
-// #ifdef VERBOSE
-// 							printf("                                       NOT canonical\n");
-// #endif
+								if (VERBOSE) {
+									System.out.println("                                       NOT canonical");
+								}
 // #ifdef PRINTLARGEORBITS
 // 							if (AD.GD.orbsize > LARGEORBITTHRESHOLD)
 // 								printf("antichaindata_isCanonical_1: %lu [false]\n", AD.GD.orbsize);
@@ -1351,9 +1354,9 @@ class canonical {
 							permutation.perm_init(AD.L.n + AD.k, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (long_cmp(L, A[0]) > 0) {
-// #ifdef VERBOSE
-// 							printf("                                       NOT canonical\n");
-// #endif
+								if (VERBOSE) {
+									System.out.println("                                       NOT canonical");
+								}
 // #ifdef PRINTLARGEORBITS
 // 							if (AD.GD.orbsize > LARGEORBITTHRESHOLD)
 // 								printf("antichaindata_isCanonical_1: %lu [false]\n", AD.GD.orbsize);
@@ -1409,11 +1412,11 @@ class canonical {
 			AD.SD[AD_CSL].SI = AD.SD[AD_CSL + 1].SI;
 		}
 		permgrp_preprocessGenerators(AD);
-// #ifdef VERBOSE
-// 	printf("***** level %d:\n", AD.cl);
-// 	permgrp_printGenerators(AD.SD[AD_CSL].ST, 0);
-// 	printf("                                       canonical\n");
-// #endif
+		if (VERBOSE) {
+			System.out.printf("***** level %d:\n", AD.cl);
+			permgrp.permgrp_printGenerators(AD.SD[AD_CSL].ST, 0);
+			System.out.println("                                       canonical");
+		}
 // #ifdef PRINTLARGEORBITS
 // 	if (AD.GD.orbsize > LARGEORBITTHRESHOLD)
 // 		printf("antichaindata_isCanonical_1: %lu [true]\n", AD.GD.orbsize);
@@ -1450,9 +1453,11 @@ class canonical {
 		permgrp G;
 		permgrpc S;
 
-// #ifdef VERBOSE
-// 	printf("[entering antichaindata_isCanonical_p1]:\n"); lattice_print(AD.L); antichaindata_printCounters(AD);
-// #endif
+		if (VERBOSE) {
+			System.out.println("[entering antichaindata_isCanonical_p1]:");
+			lattice.lattice_print(AD.L);
+			antichain.antichaindata_printCounters(AD);
+		}
 		for (mask = BIT(bits) - 1, i = AD.k; i-- != 0; mask <<= bits) {
 			M[i] = mask;
 		}
@@ -1493,10 +1498,10 @@ class canonical {
 						} while ((D & M[i++]) == 0);
 						AD.Fpos += m - AD.cp;
 						AD.cp = m;
-// #ifdef VERBOSE
-// 					perm_print(AD.L.n+AD.k, p, 0);
-// 					printf("                                       NOT canonical -. %d\n", AD.cp);
-// #endif
+						if (VERBOSE) {
+							permutation.perm_print(AD.L.n+AD.k, p, 0);
+							System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+						}
 						return false;
 					}
 					S = antichain.antichaindata_ensureStabiliser(AD, AD_CSL);
@@ -1556,10 +1561,10 @@ class canonical {
 								} while ((D & M[i++]) == 0);
 								AD.Fpos += m - AD.cp;
 								AD.cp = m;
-								// #ifdef VERBOSE
-								// 						perm_print(S.G.n, p, 0);
-								// 						printf("                                       NOT canonical -. %d\n", AD.cp);
-								// #endif
+								if (VERBOSE) {
+									permutation.perm_print(S.G.n, p, 0);
+									System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
 								// 							printf("antichaindata_isCanonical_p1: %lu [false]\n", AD.GD.orbsize);
@@ -1635,10 +1640,10 @@ class canonical {
 								} while ((D & M[i++]) == 0);
 								AD.Fpos += m - AD.cp;
 								AD.cp = m;
-								// #ifdef VERBOSE
-								// 						perm_print(S.G.n, p, 0);
-								// 						printf("                                       NOT canonical -. %d\n", AD.cp);
-								// #endif
+								if (VERBOSE) {
+									permutation.perm_print(S.G.n, p, 0);
+									System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
 								// 							printf("antichaindata_isCanonical_p1: %lu [false]\n", AD.GD.orbsize);
@@ -1688,10 +1693,10 @@ class canonical {
 					} while ((D & M[i++]) == 0);
 					AD.Fpos += m - AD.cp;
 					AD.cp = m;
-// #ifdef VERBOSE
-// 				perm_print(AD.L.n+AD.k, p, 0);
-// 				printf("                                       NOT canonical -. %d\n", AD.cp);
-// #endif
+					if (VERBOSE) {
+						permutation.perm_print(AD.L.n+AD.k, p, 0);
+						System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+					}
 					return false;
 				}
 				S = antichain.antichaindata_ensureStabiliser(AD, AD_CSL);
@@ -1731,11 +1736,11 @@ class canonical {
 		}
 //#endif
 		permgrp_preprocessGenerators_blocked(AD);
-// #ifdef VERBOSE
-// 	printf("***** level %d:\n", AD.cl);
-// 	permgrp_printGenerators(AD.SD[AD_CSL].ST, 0);
-// 	printf("                                       canonical\n");
-// #endif
+		if (VERBOSE) {
+			System.out.printf("***** level %d:\n", AD.cl);
+			permgrp.permgrp_printGenerators(AD.SD[AD_CSL].ST, 0);
+			System.out.println("                                       canonical");
+		}
 // #ifdef PRINTLARGEORBITS
 // 	if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
 // 		printf("antichaindata_isCanonical_p1: %lu [true]\n", AD.GD.orbsize);

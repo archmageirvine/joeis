@@ -30,11 +30,6 @@ class antichain {
 	 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-
-// #include "antichain.h"
-// #include "canonical.h"
-
-
 // #ifdef THREADED
 // extern int  action;
 // #endif
@@ -68,6 +63,8 @@ class antichain {
 	 *    int    bl   -- bl[i] & BIT[j] indicates whether the restrictions to levels >= i of the up-closed sets
 	 *                          at positions j-1 and j are identical
 	 */
+
+  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
 	private static long BIT(final long i) {
 		return Benes.BIT(i);
@@ -563,10 +560,10 @@ class antichain {
 		}
 
 		/* meet-close new elements with everything; record constraints */
-// #ifdef VERBOSE
-// 	printf("...... in antichaindata_validateCurrentPosition_1: meet close  ");
-// 	antichaindata_printCounters(AD);
-// #endif
+    if (VERBOSE) {
+      System.out.print("...... in antichaindata_validateCurrentPosition_1: meet close  ");
+      antichaindata_printCounters(AD);
+    }
 		final int[] todo = new int[] {F & ~done};
 		while (Constants.extract_MSB32(todo, i)) {
 			int loi;
@@ -602,9 +599,9 @@ class antichain {
 				todo[0] &= ~AD.L.up[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
 			}
 		}
-// #ifdef VERBOSE
-// 	printf("...... in antichaindata_validateCurrentPosition_1: OK\n");
-// #endif
+		if (VERBOSE) {
+      System.out.println("...... in antichaindata_validateCurrentPosition_1: OK");
+    }
 
 		AD.F[AD.Fpos] = F;
 		return true;
@@ -694,7 +691,7 @@ class antichain {
 // 					}
 // 				} else {
 // #ifdef VERBOSE
-// 					printf("                           valid -. "); antichaindata_printCountersF(AD);
+// 					printf("                           valid --> "); antichaindata_printCountersF(AD);
 // #endif
 // 					return true;
 // 				}
@@ -754,7 +751,7 @@ class antichain {
 // 				}
 // 			} else {
 // #ifdef VERBOSE
-// 				printf("                           valid -. "); antichaindata_printCountersF(AD);
+// 				printf("                           valid --> "); antichaindata_printCountersF(AD);
 // #endif
 // 				return true;
 // 			}
@@ -764,27 +761,24 @@ class antichain {
 // }
 // #else
 	/*
-	 * Advance *AD to the next canonical configuration of lattice-antichains.
+	 * Advance AD to the next canonical configuration of lattice-antichains.
 	 *
 	 * Return value: true if successful; false if no further canonical configuration exists.
 	 */
 	static boolean antichaindata_next(antichaindata AD) {
-// #ifdef THREADED
-// 	while (action) {
-// #else
 		while (true) {
-// #endif
-// #ifdef VERBOSE
-// 		printf("... in antichaindata_next: "); antichaindata_printCounters(AD);
-// #endif
+		  if (VERBOSE) {
+        System.out.print("... in antichaindata_next: ");
+        antichaindata_printCounters(AD);
+      }
 			while (!antichaindata_validateCurrentPosition(AD)) {
-// #ifdef VERBOSE
-// 			printf("                           invalid\n");
-// #endif
+			  if (VERBOSE) {
+          System.out.println("                           invalid");
+        }
 				if (!antichaindata_step(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                   and done!\n");
-// #endif
+				  if (VERBOSE) {
+            System.out.println("                                   and done!");
+          }
 					return false;
 				}
 			}
@@ -794,14 +788,14 @@ class antichain {
 				antichaindata_initialiseCurrentPosition(AD);
 			} else {
 				if (!canonical.antichaindata_isCanonical(AD)) {
-// #ifdef VERBOSE
-// 				printf("                           not canonical\n");
-// #endif
+				  if (VERBOSE) {
+            System.out.println("                           not canonical");
+          }
 					/* antichaindata_isCanonical has set AD.cp and AD.Fpos to the correct backtracking position  */
 					if (!antichaindata_step(AD)) {
-// #ifdef VERBOSE
-// 					printf("                                         and done!\n");
-// #endif
+            if (VERBOSE) {
+              System.out.println("                                   and done!");
+            }
 						return false;
 					}
 				} else {
@@ -809,51 +803,47 @@ class antichain {
 						antichaindata_decrementLevel(AD);
 						antichaindata_initialiseCurrentPosition(AD);
 					} else {
-// #ifdef VERBOSE
-// 					printf("                           valid -. "); antichaindata_printCountersF(AD);
-// #endif
+					  if (VERBOSE) {
+              System.out.print("                           valid --> ");
+              antichaindata_printCountersF(AD);
+            }
 						return true;
 					}
 				}
 			}
 		}
-		//return false;
 	}
 
-
 	/*
-	 * Advance *AD to the next canonical configuration of lattice-antichains.  Special case of a single antichain.
+	 * Advance AD to the next canonical configuration of lattice-antichains.  Special case of a single antichain.
 	 *
 	 * Return value: true if successful; false if no further canonical configuration exists.
 	 */
 	static boolean antichaindata_next_1(antichaindata AD) {
-// #ifdef THREADED
-// 	while (action) {
-// #else
 		while (true) {
-// #endif
-// #ifdef VERBOSE
-// 		printf("... in antichaindata_next_1: "); antichaindata_printCounters(AD);
-// #endif
+      if (VERBOSE) {
+        System.out.print("... in antichaindata_next_1: ");
+        antichaindata_printCounters(AD);
+      }
 			while (!antichaindata_validateCurrentPosition_1(AD)) {
-// #ifdef VERBOSE
-// 			printf("                           invalid\n");
-// #endif
+			  if (VERBOSE) {
+          System.out.println("                           invalid");
+        }
 				if (!antichaindata_step_1(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                   and done!\n");
-// #endif
+				  if (VERBOSE) {
+            System.out.println("                                   and done!");
+          }
 					return false;
 				}
 			}
 			if (!canonical.antichaindata_isCanonical_1(AD)) {
-// #ifdef VERBOSE
-// 			printf("                           not canonical\n");
-// #endif
+			  if (VERBOSE) {
+          System.out.println("                           not canonical");
+        }
 				if (!antichaindata_step_1(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                         and done!\n");
-// #endif
+				  if (VERBOSE) {
+            System.out.println("                                         and done!");
+          }
 					return false;
 				}
 			} else {
@@ -861,17 +851,15 @@ class antichain {
 					antichaindata_decrementLevel_1(AD);
 					antichaindata_initialiseCurrentPosition_1(AD);
 				} else {
-// #ifdef VERBOSE
-// 				printf("                           valid -. "); antichaindata_printCountersF(AD);
-// #endif
+				  if (VERBOSE) {
+            System.out.print("                           valid --> ");
+            antichaindata_printCountersF(AD);
+          }
 					return true;
 				}
 			}
 		}
-		//return false;
 	}
-//#endif
-
 
 	/*
 	 * Set generic data in *LA that applies to every lattice obtained from *L by adding AD.k atoms
@@ -959,72 +947,75 @@ class antichain {
 	}
 
 
-///*
-// * TEST FUNCTION: Print all set bits in each antichain in *AD.
-// */
-//void antichaindata_printAntichains(antichaindata AD)
-//{
-//	int      i, j;
-//	int  A;
-//
-//	for (j=AD.k; j--; ) {
-//		/* extract the j-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
-//		A = 0;
-//		for (i=0; i<AD.L.n; i++)
-//			if ((AD.F[AD.Fpos-j] & BIT(i)) && ((AD.F[AD.Fpos-j] & AD.L.lo[i]) == BIT(i)))
-//				A |= BIT(i);
-//		while (extract_LSB32(&A, &i))
-//			printf("%d ", i);
-//		printf(" | ");
-//	}
-//	printf("\n");
-//}
-//
-//
-///*
-// * TEST FUNCTION: Print all counters for each position and each level in *AD.
-// */
-//void antichaindata_printCounters(antichaindata AD)
-//{
-//	int      i, j, m;
-//	int  A;
-//
-//	printf("cl:%d, cp:%d   ", AD.cl, AD.cp);
-//	for (j=0; j<AD.k; j++) {
-//		for (m=AD.L.nLev-2; m>=AD.cl; m--) {
-//			A = (j>AD.cp ? 0 : AD.F[(AD.L.nLev-2-m)*AD.k+j]) | (AD.O[j] & (BIT(AD.L.lev[m+1]) - BIT(AD.L.lev[m])));
-//			while (extract_LSB32(&A, &i))
-//				printf("%d ", i);
-//			printf("; ");
-//		}
-//		printf(" | ");
-//	}
-//	printf("\n");
-//}
-//
-//
-///*
-// * TEST FUNCTION: Print the counters F for each position and each level in *AD.
-// */
-//void antichaindata_printCountersF(antichaindata AD)
-//{
-//	int      i, j, m;
-//	int  A;
-//
-//	printf("cl:%d, cp:%d   ", AD.cl, AD.cp);
-//	for (j=0; j<AD.k; j++) {
-//		for (m=AD.L.nLev-2; m>=AD.cl; m--) {
-//			A = j>AD.cp ? 0 : AD.F[(AD.L.nLev-2-m)*AD.k+j];
-//			while (extract_LSB32(&A, &i))
-//				printf("%d ", i);
-//			printf("; ");
-//		}
-//		printf(" | ");
-//	}
-//	printf("\n");
-//}
-//
-//
+/*
+ * TEST FUNCTION: Print all set bits in each antichain in *AD.
+ */
+static void antichaindata_printAntichains(antichaindata AD) {
+  int j;
+  int[] A = new int[1];
+  int[] i = new int[1];
+
+  for (j = AD.k; j-- != 0; ) {
+    /* extract the j-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
+    A[0] = 0;
+    for (i[0] = 0; i[0] < AD.L.n; i[0]++) {
+      if ((AD.F[AD.Fpos - j] & BIT(i[0])) != 0 && ((AD.F[AD.Fpos - j] & AD.L.lo[i[0]]) == BIT(i[0]))) {
+        A[0] |= BIT(i[0]);
+      }
+    }
+    while (Constants.extract_LSB32(A, i)) {
+      System.out.printf("%d ", i[0]);
+    }
+    System.out.print(" | ");
+  }
+  System.out.println();
+}
+
+
+/*
+ * TEST FUNCTION: Print all counters for each position and each level in *AD.
+ */
+static void antichaindata_printCounters(antichaindata AD)
+{
+	int       j, m;
+
+	System.out.printf("cl:%d, cp:%d   ", AD.cl, AD.cp);
+	for (j=0; j<AD.k; j++) {
+		for (m=AD.L.nLev-2; m>=AD.cl; m--) {
+			final int[] A = {(int) ((j>AD.cp ? 0 : AD.F[(AD.L.nLev-2-m)*AD.k+j]) | (AD.O[j] & (BIT(AD.L.lev[m+1]) - BIT(AD.L.lev[m]))))};
+			final int[] i = new int[1];
+			while (Constants.extract_LSB32(A, i)) {
+        System.out.printf("%d ", i[0]);
+      }
+			System.out.print("; ");
+		}
+		System.out.print(" | ");
+	}
+	System.out.println();
+}
+
+
+/*
+ * TEST FUNCTION: Print the counters F for each position and each level in *AD.
+ */
+static void antichaindata_printCountersF(antichaindata AD) {
+  int j, m;
+  final int[] i = new int[1];
+  System.out.printf("cl:%d, cp:%d   ", AD.cl, AD.cp);
+  for (j = 0; j < AD.k; j++) {
+    for (m = AD.L.nLev - 2; m >= AD.cl; m--) {
+      final int[] A = {j > AD.cp ? 0 : AD.F[(AD.L.nLev - 2 - m) * AD.k + j]};
+      while (Constants.extract_LSB32(A, i)) {
+        System.out.printf("%d ", i[0]);
+      }
+      System.out.print("; ");
+    }
+    System.out.print(" | ");
+  }
+  System.out.println();
+}
+
+
 ///*
 // * TEST FUNCTION: Return true if every antichain in *AD is a lattice-antichain; return false otherwise.
 // */

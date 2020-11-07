@@ -56,8 +56,8 @@ public class Globals {
 	orbitelt[] orb;
 	int SIspace;
 	long SI0size;
-	SIdata[] SI0 = new SIdata[0];
-	SIdata[] SI1 = new SIdata[0];
+	SIdata[] SI0;
+	SIdata[] SI1;
 	TreeMap<Long, Long> orbpos; //hashtable[] orbpos;
 	//};
 
@@ -67,17 +67,27 @@ public class Globals {
 	 */
 	static void globals_enlargen_orbitspace(Globals GD) {
 		GD.orbspace *= 2;
+		int k = GD.orb.length;
 		GD.orb = Arrays.copyOf(GD.orb, GD.orbspace);
+		while (k < GD.orb.length) {
+			GD.orb[k++] = new orbitelt();
+		}
 	}
 
 
 	/*
-	 * Double the number of SI data recordss that can be stored.
+	 * Double the number of SI data records that can be stored.
 	 */
 	static void globals_enlargen_SIspace(Globals GD) {
 		GD.SIspace *= 2;
+		int k = GD.SI0.length;
 		GD.SI0 = Arrays.copyOf(GD.SI0, GD.SIspace);
 		GD.SI1 = Arrays.copyOf(GD.SI1, GD.SIspace);
+		while (k < GD.SI0.length) {
+			GD.SI0[k] = new SIdata();
+			GD.SI1[k] = new SIdata();
+			++k;
+		}
 	}
 
 
@@ -96,6 +106,10 @@ public class Globals {
 		GD.SIspace = Constants.ORBITS_INITIAL_SISPACE;
 		GD.SI0 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];
 		GD.SI1 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];
+		for (int k = 0; k < Constants.ORBITS_INITIAL_SISPACE; ++k) {
+			GD.SI0[k] = new SIdata();
+			GD.SI1[k] = new SIdata();
+		}
 		return GD;
 	}
 

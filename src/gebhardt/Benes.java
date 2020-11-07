@@ -528,7 +528,6 @@ public class Benes {
     benes_small = new Benes[BENES_SMALL + 1][]; //calloc(BENES_SMALL + 1, sizeof(Benes[]));
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
-      System.out.println("SAI: init_benes " + n[0]);
       benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
       final byte[] p = ByteUtils.identity(new byte[n[0]]); //perm_init(n, p);
       do {

@@ -535,62 +535,63 @@ public class lattice {
 //	}
 
 
-//	/*
-//	 * Print the levellised lattice L to stdout.
-//	 */
-//	void lattice_print(lattice L) {
-//		int d, i, j, first;
-//		int co[ MAXN - 2];
-//		int SI;
-//
-//		lattice_getCoveringRelation(co, L);
-//
-//		printf("depth -1: T\n");
-//		for (d = 0; d < L.nLev - 1; d++) {
-//			printf("depth %2d: ", d);
-//			for (i = L.lev[d]; i < L.lev[d + 1]; i++) {
-//				printf("%d[", i);
-//				if (!co[i]) {
-//					printf("T");
-//				} else {
-//					for (j = 0, first = 1; j < i; j++) {
-//						if (co[i] & BIT(j)) {
-//							if (first) {
-//								printf("%d", j);
-//								first = 0;
-//							} else {
-//								printf(",%d", j);
-//							}
-//						}
-//					}
-//				}
-//				printf("] ");
-//			}
-//			printf("\n");
-//		}
-//		printf("depth %2d: B[", L.nLev - 1);
-//		if (L.nLev == 1) {
-//			printf("T");
-//		} else {
-//			for (j = 0, first = 1; j < L.n; j++) {
-//				if (L.lo[j] == BIT(j)) {
-//					if (first) {
-//						printf("%d", j);
-//						first = 0;
-//					} else {
-//						printf(",%d", j);
-//					}
-//				}
-//			}
-//		}
-//		printf("] \n");
-//		printf("stabiliser [%d]:\n", L.S.n);
-//		permgrp_printGenerators(L.S, 0);
-//		SI = L.SI;
-//		while (extract_LSB32( & SI,&i)){
-//			printf("(%d,%d) implicit\n", i - 1, i);
-//		}
-//	}
+	/*
+	 * Print the levellised lattice L to stdout.
+	 */
+	static void lattice_print(lattice L) {
+		int d, i=0, j;
+		int[] co = new int[Constants.MAXN - 2];
+		boolean first;
+
+		lattice_getCoveringRelation(co, L);
+
+		System.out.println("depth -1: T");
+		for (d = 0; d < L.nLev - 1; d++) {
+			System.out.printf("depth %2d: ", d);
+			for (i = L.lev[d]; i < L.lev[d + 1]; i++) {
+				System.out.printf("%d[", i);
+				if (co[i] == 0) {
+					System.out.print("T");
+				} else {
+					for (j = 0, first = true; j < i; j++) {
+						if ((co[i] & BIT(j)) != 0) {
+							if (first) {
+								System.out.printf("%d", j);
+								first = false;
+							} else {
+								System.out.printf(",%d", j);
+							}
+						}
+					}
+				}
+				System.out.print("] ");
+			}
+			System.out.println();
+		}
+		System.out.printf("depth %2d: B[", L.nLev - 1);
+		if (L.nLev == 1) {
+			System.out.print("T");
+		} else {
+			for (j = 0, first = true; j < L.n; j++) {
+				if (L.lo[j] == BIT(j)) {
+					if (first) {
+						System.out.printf("%d", j);
+						first = false;
+					} else {
+						System.out.printf(",%d", j);
+					}
+				}
+			}
+		}
+		System.out.println("]");
+		System.out.printf("stabiliser [%d]:\n", L.S.n);
+		permgrp.permgrp_printGenerators(L.S, 0);
+		final int[] SI = {L.SI};
+		final int[] ii = {i};
+		while (Constants.extract_LSB32(SI, ii)) {
+			System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
+		}
+	}
 
 
 	/**

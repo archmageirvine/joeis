@@ -480,21 +480,17 @@ public class permutation {
     return k;
   }
 
+  /*
+   * TEST FUNCTION:  Print p (in array notation).
+   */
+ static void perm_print(int n, byte[] p, int offset) {
+   int i;
 
-// #endif /* PERMUTATION_H_ */
-
-// void perm_print(elt n, permutation p, elt offset)
-// /*
-//  * TEST FUNCTION:  Print p (in array notation).
-//  */
-// {
-// 	elt  i;
-
-// 	printf("%d", p[0]+offset);
-// 	for (i=1; i<n; i++)
-// 		printf(", %d", p[i]+offset);
-// 	printf("\n");
-// }
+   System.out.printf("%d", p[0] + offset);
+   for (i = 1; i < n; i++)
+     System.out.printf(", %d", p[i] + offset);
+   System.out.println();
+ }
 
 
   /*

@@ -397,6 +397,8 @@ class canonical {
 // #endif
 
 		mask = (int) (BIT(m) - 1);
+		assert GD.SI0 != null;
+		assert L != null;
 		GD.SI0[0].rep[0] = L[0];
 		GD.SI0[0].S = (SI >> a0) & mask;
 		permutation.perm_cpy(n + k, p, GD.SI0[0].p);

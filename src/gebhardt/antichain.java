@@ -89,9 +89,9 @@ class antichain {
 		int cmc;
 		int cm;
 		// #ifndef FILTER_GRADED
-// 	stabiliser  SD[MAXN-2];
+   	stabiliser[]  SD = new stabiliser[Constants.MAXN-2];
 // #else
-		stabiliser[] SD = new stabiliser[] {new stabiliser(), new stabiliser()};
+//		stabiliser[] SD = new stabiliser[] {new stabiliser(), new stabiliser()};
 		//#endif
 		int cp;
 		int Fpos;
@@ -102,16 +102,21 @@ class antichain {
 		int[] O = new int[Constants.MAXN - 3];
 		int[] F = new int[Constants.MAXN - 3];
 		//#endif
+    {
+      for (int k = 0; k < SD.length; ++k) {
+        SD[k] = new stabiliser();
+      }
+    }
 	} //__attribute__((aligned(64)));
 
 
 	/* macro to access stabiliser level corresponding to AD.cl */
 // #ifndef FILTER_GRADED
-// #define AD_CSL (AD.cl)
+// #define AD.cl (AD.cl)
 // #else
-//#define AD_CSL 0
+//#define AD.cl 0
 //#endif
-	static final int AD_CSL = 0;
+	//static final int AD.cl = 0;
 
 
 	/*
@@ -145,7 +150,7 @@ class antichain {
 		int i;
 
 		for (i = 0; i < AD.L.nLev - 1; i++) {
-			if (AD.SD[i].ST_ != null) {
+			if (i < AD.SD.length && AD.SD[i].ST_ != null) {  // todo SAI added first condition BUG?
 				permgrp.permgrpc_delete(AD.SD[i].ST_);
 			}
 		}
@@ -323,8 +328,6 @@ class antichain {
 	 * AD should be allocated.
 	 */
 	static void antichaindata_init(lattice L, int k, antichaindata AD, Globals GD) {
-		int i;
-		int biti;
 
 		//PREFETCH(AD.L.lo);
 		//PREFETCH(AD.cop);
@@ -338,7 +341,7 @@ class antichain {
 		AD.Fpos = 0;
 		//memset(AD.cop, 0, AD.L.n*sizeof(int));
 		Arrays.fill(AD.cop, 0, AD.L.n, 0);
-		for (i = 0, biti = 1; i < AD.L.n - 1; i++, biti <<= 1) {
+		for (int i = 0, biti = 1; i < AD.L.n - 1; i++, biti <<= 1) {
 			int j;
 			for (j = i + 1; j < AD.L.n; j++) {
 				if ((AD.L.lo[i] & AD.L.lo[j]) == 0) {
@@ -347,13 +350,16 @@ class antichain {
 				}
 			}
 		}
-		for (i = 0; i <= AD_CSL; i++) {
+		for (int i = 0; i <= AD.cl; i++) {
 			AD.SD[i].ST_ = null;
 			AD.SD[i].ST = null;
 		}
-		AD.SD[AD_CSL + 1].ST = AD.L.S;
-		AD.SD[AD_CSL + 1].SI = AD.L.SI;
-		AD.SD[AD_CSL + 1].bl = (1 << k) - 2;
+		if (VERBOSE) {
+      System.out.println("SAI: Setting SD[1].ST as " + AD.L.S.n);
+    }
+		AD.SD[AD.cl + 1].ST = AD.L.S;
+		AD.SD[AD.cl + 1].SI = AD.L.SI;
+		AD.SD[AD.cl + 1].bl = (1 << k) - 2;
 		//memset(AD.O, 0, k*sizeof(int));
 		Arrays.fill(AD.O, 0, k, 0);
 		AD.O[0] = AD.cmc = (int) (BIT(L.n) - BIT(L.lev[AD.cl]));
@@ -374,7 +380,7 @@ class antichain {
 		AD.cp = 0;
 		AD.cl = AD.L.nLev - 2;
 		AD.Fpos = 0;
-		AD.SD[AD_CSL + 1].bl = (1 << k) - 2;
+		AD.SD[AD.cl + 1].bl = (1 << k) - 2;
 		//memset(AD.O, 0, k*sizeof(int));
 		Arrays.fill(AD.O, 0, k, 0);
 		AD.O[0] = AD.cmc = (int) (BIT(AD.L.n) - BIT(AD.L.lev[AD.cl]));
@@ -387,9 +393,10 @@ class antichain {
 	 * Decrement the current level of *AD.
 	 */
 	static void antichaindata_decrementLevel(antichaindata AD) {
-		final int[] t = new int[] {AD.SD[AD_CSL].bl}; // todo ugly
-		antichaindata_updateBlocks(AD, AD.SD[AD_CSL + 1].bl, t);
-		AD.SD[AD_CSL].bl = t[0];
+		final int[] ugly = new int[] {AD.SD[AD.cl].bl}; // todo ugly
+    final int xcl = AD.cl;
+		antichaindata_updateBlocks(AD, AD.SD[AD.cl + 1].bl, ugly);
+		AD.SD[xcl].bl = ugly[0];
 		(AD.cl)--;
 		AD.Fpos++;
 		AD.cmc = (int) (BIT(AD.L.lev[AD.cl + 1]) - BIT(AD.L.lev[AD.cl]));
@@ -453,12 +460,7 @@ class antichain {
 		int F1pos;
 		int done, F;
 
-// #ifdef DOTEST
-// 	if (AD.Fpos != (AD.L.nLev-2-AD.cl)*AD.k+AD.cp) {
-// 		printf ("antichaindata: inconsistent value of Fpos\n");
-// 		erri(-4);
-// 	}
-// #endif
+		assert AD.Fpos == (AD.L.nLev-2-AD.cl)*AD.k+AD.cp : "antichaindata: inconsistent value of Fpos";
 
 		/* start with inherited constraints from lower levels */
 		F1pos = AD.Fpos - AD.k;
@@ -473,10 +475,10 @@ class antichain {
 		}
 
 		/* meet-close new elements with everything; record constraints & test compatibility with earlier lattice-antichains */
-// #ifdef VERBOSE
-// 	printf("...... in antichaindata_validateCurrentPosition: meet close  ");
-// 	antichaindata_printCounters(AD);
-// #endif
+    if (VERBOSE) {
+      System.out.print("...... in antichaindata_validateCurrentPosition: meet close  ");
+      antichaindata_printCounters(AD);
+    }
 		final int[] todo = new int[] {F & ~done};
 		while (Constants.extract_MSB32(todo, i)) {
 			long biti;
@@ -522,9 +524,9 @@ class antichain {
 				todo[0] &= ~AD.L.up[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
 			}
 		}
-// #ifdef VERBOSE
-// 	printf("...... in antichaindata_validateCurrentPosition: OK\n");
-// #endif
+		if (VERBOSE) {
+      System.out.println("...... in antichaindata_validateCurrentPosition: OK");
+    }
 		AD.F[AD.Fpos] = F;
 		return true;
 	}
@@ -541,12 +543,7 @@ class antichain {
 		int done, F;
 		final int[] j = new int[1];
 
-// #ifdef DOTEST
-// 	if (AD.Fpos != (AD.L.nLev-2-AD.cl)*AD.k+AD.cp) {
-// 		printf ("antichaindata: inconsistent value of Fpos\n");
-// 		erri(-4);
-// 	}
-// #endif
+    assert AD.Fpos == (AD.L.nLev-2-AD.cl)*AD.k+AD.cp : "antichaindata: inconsistent value of Fpos";
 
 		/* start with inherited constraints from lower levels */
 		F = done = (AD.Fpos != 0 ? AD.F[AD.Fpos - 1] : 0);
@@ -862,21 +859,22 @@ class antichain {
 	}
 
 	/*
-	 * Set generic data in *LA that applies to every lattice obtained from *L by adding AD.k atoms
+	 * Set generic data in LA that applies to every lattice obtained from L by adding AD.k atoms
 	 * covered by lattice antichains:  number of elements, levels, as well as
 	 *    up[i]  .....
 	 *   (lo[i]) lo[j]
 	 * for 1 < i < L.n <= j < LA.n.  lo[i] may be modified in antichaindata_generateLattice.
 	 */
 	static void antichaindata_prepareLattice(antichaindata AD, lattice L, lattice LA) {
-		int j;
-
 		LA.n = (byte)(L.n + AD.k);                          /* number of elements  */
+    if (VERBOSE) {
+      System.out.println("SAI: Set LA.n to " + LA.n + " from " + L.n + " + " + AD.k);
+    }
 		LA.nLev = L.nLev + 1;                          /* number of levels    */
 		//memcpy(LA.lev, L.lev, L.nLev * sizeof( int));  /* old levels          */
 		System.arraycopy(L.lev, 0, LA.lev, 0, L.nLev);
 		LA.lev[LA.nLev - 1] = LA.n;                   /* new level           */
-		for (j = L.n; j < LA.n; j++) {
+		for (int j = L.n; j < LA.n; j++) {
 			LA.lo[j] = (int) BIT(j);                        /* lo[j]               */
 		}
 		//memcpy(LA.up, L.up, L.n * sizeof( int));   /* up[i]               */
@@ -887,8 +885,8 @@ class antichain {
 
 
 	/*
-	 * Set *LA to the lattice obtained from *L by adding AD.k new atoms covered by the elements in the
-	 * lattice antichains described by *AD:  stabiliser, as well as
+	 * Set LA to the lattice obtained from L by adding AD.k new atoms covered by the elements in the
+	 * lattice antichains described by AD:  stabiliser, as well as
 	 *   .....  up[j]
 	 *   lo[i]  .....
 	 * for 1 < i < L.n <= j < LA.n.  ..... denotes data set in antichaindata_prepareLattice.
@@ -927,15 +925,16 @@ class antichain {
 	 * Note: The stabiliser of *LA carries a reference count.
 	 */
 	static void antichaindata_generateLattice_1(antichaindata AD, lattice L, lattice LA) {
-		int i;
-
 		//PREFETCH(AD.F);
 		//PREFETCH(LA.up);
 		//PREFETCH(LA.lo);
+    if (VERBOSE) {
+      System.out.println("SAI: lattice stab " + L.S.n + " " + AD.SD[0].ST.n);
+    }
 
 		/* set up[j] and lo[i] for 1 < i < L.n <= j < LA.n */
 		LA.up[L.n] = (int) (BIT(L.n) | AD.F[AD.Fpos]);   /* up[j] */
-		for (i = 0; i < L.n; i++) {    /* lo[i] */
+		for (int i = 0; i < L.n; i++) {    /* lo[i] */
 			if ((AD.F[AD.Fpos] & BIT(i)) != 0) {
 				LA.lo[i] |= BIT(L.n);
 			} else                                      /* lo[i] */ {
@@ -945,7 +944,6 @@ class antichain {
 		/* set stabiliser */
 		lattice.lattice_setStabiliser(LA, AD.SD[0].ST, AD.SD[0].SI);  /* stabiliser          */
 	}
-
 
 /*
  * TEST FUNCTION: Print all set bits in each antichain in *AD.

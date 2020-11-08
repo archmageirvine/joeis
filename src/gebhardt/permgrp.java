@@ -66,7 +66,7 @@ class permgrp {
 	 * Allocate space for a permutation group (permgrp); the group is NOT initialised.
 	 */
 	static permgrp permgrp_alloc() {
-		permgrp G = new permgrp();
+		final permgrp G = new permgrp();
 		G.refcount = 1;
 		G.BenesValid = 0;
 		return G;
@@ -106,21 +106,27 @@ class permgrp {
 	 */
 	static void permgrp_init(permgrp G, int n) {
 		permgrp_clearBenes(G);
+//    if (n==2) {
+//      new Throwable().printStackTrace();
+//    }
 		G.n = n;
 		G.ngens = 0;
 	}
 
+  private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
 	/*
 	 * Set G to the trivial permutation group on n points.
 	 */
 	static void permgrpc_init(permgrpc G, int n) {
-		int i;
-
+	  if (VERBOSE) {
+      System.out.println("SAI: permgrpc_init " + n);
+    }
 		permgrp_init(G.G, n);
 		G.freeperm = Constants.allBits32(Constants.MAXN - 2);
-		for (i = 0; i < n; i++)
-			G.Jerrum[i].neighbours = 0;
+		for (int i = 0; i < n; i++) {
+      G.Jerrum[i].neighbours = 0;
+    }
 	}
 
 
@@ -137,13 +143,14 @@ class permgrp {
 	 * Copy G to H.
 	 */
 	static void permgrp_cpy(permgrp G, permgrp H) {
-		int i, n;
-
 		permgrp_clearBenes(H);
 		H.refcount = 1;
-		n = H.n = G.n;
+		final int n = H.n = G.n;
+//    if (n==2) {
+//      new Throwable().printStackTrace();
+//    }
 		H.ngens = G.ngens;
-		for (i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
+		for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
 			permutation.perm_cpy(n, G.perm[i], H.perm[i]);
 			permutation.perm_cpy(n, G.invperm[i], H.invperm[i]);
 		}
@@ -220,8 +227,9 @@ class permgrp {
 			while (Constants.get_LSB32(nu & unseen, v)){
 				anc[v[0]] = u;
 				if (v[0] == j) {
-					for (min = i, u = j; u != i; u = anc[u])
-						min = u < min ? u : min;
+					for (min = i, u = j; u != i; u = anc[u]) {
+            min = Math.min(u, min);
+          }
 					m[0] = min;
 					nm[0] = anc[min];
 					if (min == i) {
@@ -309,8 +317,9 @@ class permgrp {
 					JerrumRemoveGenerator(G, m[0], nm[0]);
 					JerrumInsertGenerator(G, p, i, j);
 				}
-				if (!permutation.perm_isId(G.G.n, h))
-					permgrpc_addGenerator(G, h);
+				if (!permutation.perm_isId(G.G.n, h)) {
+          permgrpc_addGenerator(G, h);
+        }
 			} else{
 				JerrumInsertGenerator(G, p, i, j);
 			}

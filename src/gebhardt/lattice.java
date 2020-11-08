@@ -1,7 +1,5 @@
 package gebhardt;
 
-import java.util.Arrays;
-
 /**
  * Permutations.
  * @author Volker Gebhardt
@@ -71,26 +69,31 @@ public class lattice {
 
 	}
 
-	// Copy constructor
-	public lattice(final lattice l) {
-		up = Arrays.copyOf(l.up, l.up.length);
-		lo = Arrays.copyOf(l.lo, l.lo.length);
-		S = l.S;
-		SI = l.SI;
-		lev = Arrays.copyOf(l.lev, l.lev.length);
-		n = l.n;
-		nLev = l.nLev;
-	}
+//	// Copy constructor
+//	public lattice(final lattice l) {
+//		up = Arrays.copyOf(l.up, l.up.length);
+//		lo = Arrays.copyOf(l.lo, l.lo.length);
+//		S = l.S;
+//		SI = l.SI;
+//		lev = Arrays.copyOf(l.lev, l.lev.length);
+//		n = l.n;
+//		nLev = l.nLev;
+//	}
 
 	private static long BIT(final long i) {
 		return Benes.BIT(i);
 	}
 
+	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
 	/*
-	 * Set the stabiliser data of the lattice *L to *S / SI; the reference count of *S is incremented.
+	 * Set the stabiliser data of the lattice L to S / SI; the reference count of S is incremented.
 	 */
 	static void lattice_setStabiliser(lattice L, permgrp S, int SI) {
+		if (VERBOSE) {
+			System.out.println("SAI: lattice_setStabiliser " + S.n);
+			//new Throwable().printStackTrace();
+		}
 		L.S = permgrp.permgrp_incref(S);
 		L.SI = SI;
 	}
@@ -121,26 +124,23 @@ public class lattice {
 	}
 
 
-	/*
-	 * Copy L to M.
-	 */
-	static lattice lattice_cpy(lattice L) {
-		int B;
-		int i;
-
-		final lattice M = new lattice(L);
-		M.S = permgrp.permgrp_alloc();
-		permgrp.permgrp_cpy(L.S, M.S); /* This does not copy the Beneš networks, so we do this manually. */
-		B = M.S.BenesValid = L.S.BenesValid;
-		final int[] n = new int[1];
-		while (Constants.get_LSB32(B, n)){
-			for (i = 0; i < L.S.ngens; i++) {
-				M.S.benes[n[0]][i] = Benes.benes_incref(L.S.benes[n[0]][i]);
-			}
-			B ^= BIT(n[0]);  /* bit n is set, so this clears it */
-		}
-		return M;
-	}
+//	/*
+//	 * Copy L to M.
+//	 */
+//	static lattice lattice_cpy(lattice L) {
+//		final lattice M = new lattice(L);
+//		M.S = permgrp.permgrp_alloc();
+//		permgrp.permgrp_cpy(L.S, M.S); /* This does not copy the Beneš networks, so we do this manually. */
+//		int B = M.S.BenesValid = L.S.BenesValid;
+//		final int[] n = new int[1];
+//		while (Constants.get_LSB32(B, n)){
+//			for (int i = 0; i < L.S.ngens; i++) {
+//				M.S.benes[n[0]][i] = Benes.benes_incref(L.S.benes[n[0]][i]);
+//			}
+//			B ^= BIT(n[0]);  /* bit n is set, so this clears it */
+//		}
+//		return M;
+//	}
 
 
 	/*
@@ -383,7 +383,7 @@ public class lattice {
 			return false;
 		}
 		n -= 2;  /* We don't store the upper and lower bounds. */
-		//memset(L, 0, sizeof(lattice));
+		//memset(L, 0, sizeof(lattice)); // todo this clear is not being done!
 		//memset(co, 0, n * sizeof( int));
 		L.n = (byte) n;
 		/* first extract covering relation... */
@@ -613,16 +613,12 @@ public class lattice {
 	 * Initialise L to the k-fan (the lattice with k elements covered by T and covering B).
 	 */
 	static void lattice_init_kFan(lattice L, int k) {
-		int i;
-		permgrp S;
-		int SI;
-
-		for (i = 0; i < k; i++) {
+		for (int i = 0; i < k; i++) {
 			L.up[i] = L.lo[i] = (int) BIT(i);
 		}
-		S = permgrp.permgrp_alloc();
+		final permgrp S = permgrp.permgrp_alloc();
 		permgrp.permgrp_init(S, 0);
-		SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
+		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
 		permgrp.permgrp_delete(S);
 		L.lev[0] = 0;

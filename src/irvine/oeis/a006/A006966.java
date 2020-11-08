@@ -78,7 +78,8 @@ public class A006966 implements Sequence {
     }
   }
 
-  private int mN = 4; // todo wind this down
+  //private int mN = -1;
+  private int mN = 5;
   {
     Benes.benes_init_small();
   }
@@ -87,14 +88,16 @@ public class A006966 implements Sequence {
 
   @Override
   public Z next() {
-    ++mN;
+    if (++mN <= 1) { // can make this 3
+      return Z.ONE;
+    }
     bitmap_init(mN);
     final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, GD);
     lattEnum.lattEnum_doEnumeration(E);
-    System.out.println(lattEnum.lattEnum_getLatticeCount(E));
+    //System.out.println(lattEnum.lattEnum_getLatticeCount(E));
 
-    //return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
-    return null; // temp
+    return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
+    //return null; // temp
 // Legacy:
 //	printf("%llu\n", );
 //	lattEnum_Count_free(E);

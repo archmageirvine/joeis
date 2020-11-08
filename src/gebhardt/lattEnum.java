@@ -281,7 +281,7 @@ void reg(lattEnum E, lattice L) {
 // #endif
 
 		if (VERBOSE) {
-			System.out.println("\n[>>> entering lattEnum_growLattice]:");
+			System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
 			lattice.lattice_print(L);
 		}
 		antichain.antichaindata_init(L, nmin, AD, E.GD);
@@ -295,6 +295,9 @@ void reg(lattEnum E, lattice L) {
 // 		printf("BAD CALL [lattEnum_growLattice]: asked for a graded indecomposable lattice with a level of size 1!\n");
 // #endif
 			while (antichain.antichaindata_next_1(AD)) {
+				if (VERBOSE) {
+					System.out.println("SAI: while-an1 " + AD.SD[0].ST.n);
+				}
 				antichain.antichaindata_generateLattice_1(AD, L, LA);
 // #ifdef DOTEST
 // 			if (!antichaindata_test(&AD)) {
@@ -362,7 +365,9 @@ void reg(lattEnum E, lattice L) {
 		} else {
 			k = nmin;
 		}
-		System.out.println("SAI: k=" + k);
+		if (VERBOSE) {
+			System.out.println("SAI: k=" + k);
+		}
 
 		for (; k <= N - L.n; k++) {
 			if (VERBOSE) {

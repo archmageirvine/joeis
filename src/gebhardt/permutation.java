@@ -66,6 +66,9 @@ public class permutation {
 // }
 // #endif
 
+  static byte[] create() {
+    return new byte[Constants.MAXN - 2];
+  }
 
   /*
    * Initialise p to the identity permutation.
@@ -100,8 +103,6 @@ public class permutation {
    * Resize p from n to m by adding trivial action on the points n..m-1.
    */
   static void perm_resize(int n, int m, byte[] p) {
-    int i;
-
 // #ifdef DOTEST
 // 	for (i=n; i<m; i++)
 // 		if (p[i] != -1 && p[i] != i) {
@@ -110,8 +111,9 @@ public class permutation {
 // 			erri(-4);
 // 		}
 // #endif
-    for (i = n; i < m; i++)
+    for (int i = n; i < m; i++) {
       p[i] = (byte) i;
+    }
   }
 // #endif
 
@@ -143,7 +145,7 @@ public class permutation {
   }
 
   static byte[] perm_inv(final int n, final byte[] perm) {
-    final byte[] inv = new byte[n];
+    final byte[] inv = permutation.create();
     for (int k = 0; k < n; ++k) {
       inv[perm[k]] = (byte) k;
     }
@@ -165,8 +167,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[p[i]] = (byte) i;
+    }
 // #endif
   }
 
@@ -186,8 +189,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[i] = q[p[i]];
+    }
 // #endif
   }
 
@@ -205,8 +209,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[i] = q[p[l[i]]];
+    }
 // #endif
   }
 
@@ -224,8 +229,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[p[i]] = q[i];
+    }
 // #endif
   }
 
@@ -245,8 +251,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[l[i]] = q[p[i]];
+    }
 // #endif
   }
 
@@ -264,8 +271,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[p[l[i]]] = (byte) i;
+    }
 // #endif
   }
 
@@ -283,8 +291,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[q[p[l[i]]]] = (byte) i;
+    }
 // #endif
   }
 
@@ -302,8 +311,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		r[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       r[p[l[i]]] = q[i];
+    }
     //#endif
   }
 
@@ -321,8 +331,9 @@ public class permutation {
 // 	for (i=n; i<MAXN-2; i++)
 // 		s[i] = -1;
 // #endif
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
       s[q[p[l[i]]]] = r[i];
+    }
 // #endif
   }
 
@@ -389,8 +400,8 @@ public class permutation {
 // 		}
 // #endif
     int i;
-    for (i = 0; i < n && (p[i] == i); i++)
-      ;
+    for (i = 0; i < n && (p[i] == i); i++) {
+    }
     return i;
 // #endif
   }
@@ -413,9 +424,11 @@ public class permutation {
 // 			erri(-4);
 // 		}
 // #endif
-    for (int i = 0; i < n; i++)
-      if (p[i] != i)
+    for (int i = 0; i < n; i++) {
+      if (p[i] != i) {
         return false;
+      }
+    }
     return true;
 // #endif
   }
@@ -452,8 +465,9 @@ public class permutation {
 // #endif
     for (int i = 0; i < n; i++) {
       int d;
-      if ((d = p[i] - q[i]) != 0)
+      if ((d = p[i] - q[i]) != 0) {
         return d;
+      }
     }
     return 0;
 // #endif
@@ -464,19 +478,17 @@ public class permutation {
    * Return an integer in {0..n!-1} that uniquely identifies the permutation p.
    */
   static long perm_toInteger(int n, byte[] p) {
-    long k, m;
-    int i;
-
-    k = 0;
-    m = 1;
-    byte[] pos = ByteUtils.identity(new byte[n]);
-    byte[] elems = ByteUtils.identity(new byte[n]);
-    for (i = 0; i < n - 1; i++) {
+    long k = 0;
+    long m = 1;
+    byte[] pos = ByteUtils.identity(permutation.create());
+    byte[] elems = ByteUtils.identity(permutation.create());
+    for (int i = 0; i < n - 1; i++) {
       k += m * pos[p[i]];
       m *= n - i;
       pos[elems[n - i - 1]] = pos[p[i]];
       elems[pos[p[i]]] = elems[n - i - 1];
     }
+    assert k <= Integer.MAX_VALUE;
     return k;
   }
 
@@ -487,8 +499,9 @@ public class permutation {
    int i;
 
    System.out.printf("%d", p[0] + offset);
-   for (i = 1; i < n; i++)
+   for (i = 1; i < n; i++) {
      System.out.printf(", %d", p[i] + offset);
+   }
    System.out.println();
  }
 

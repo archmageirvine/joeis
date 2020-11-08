@@ -399,7 +399,7 @@ class canonical {
 		assert L != null;
 		GD.SI0[0].rep[0] = L[0];
 		GD.SI0[0].S = (SI >> a0) & mask;
-		GD.SI0[0].p = new byte[p.length]; // sai added
+		GD.SI0[0].p = permutation.create();
 		permutation.perm_cpy(n + k, p, GD.SI0[0].p);
 		SI0size = 1;
 		for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
@@ -412,7 +412,7 @@ class canonical {
 					int[] hi = new int[1];
 					int[] lo = new int[1];
 					long P;
-					byte[] q = new byte[n + k];  // todo init ??
+					byte[] q = permutation.create();
 					//int[]         pq = q+a0;
 					if (SI1size == GD.SIspace) {
 						Globals.globals_enlargen_SIspace(GD);
@@ -461,7 +461,7 @@ class canonical {
 						dr = dj;
 						SI1size = 0;
 					}
-					GD.SI1[SI1size].p = new byte[q.length]; // sai added
+					GD.SI1[SI1size].p = permutation.create();
 					permutation.perm_cpy(n + k, q, GD.SI1[SI1size].p);
 					if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
 						long mask1, mask2;
@@ -594,8 +594,7 @@ class canonical {
 					int[] hi = new int[1];
 					int[] lo = new int[1];
 					long[] P = new long[2];
-					//byte[] q = new byte[n]; // todo is this size right?
-					byte[] q = new byte[n+k]; // todo is this size right?
+					byte[] q = permutation.create();
 					//int[]         pq = q+a0;
 					if (SI1size == GD.SIspace) {
 						Globals.globals_enlargen_SIspace(GD);
@@ -803,7 +802,7 @@ class canonical {
 	 */
 	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long L) {
 		int i;
-		byte[] p = new byte[n + k];
+		byte[] p = permutation.create();
 // #ifdef DOTEST
 // 	long        L_;
 // #endif
@@ -841,7 +840,7 @@ class canonical {
 	 */
 	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long[] L) {
 		int i;
-		byte[] p = new byte[n+k];
+		byte[] p = permutation.create();
 // #ifdef DOTEST
 // 	long        L_[2];
 // #endif
@@ -901,21 +900,17 @@ class canonical {
 	 * Generate Beneš networks for the action of the generators on the next level (AD.cl-1)
 	 * of the current lattice or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
-	static void permgrp_preprocessGenerators(antichaindata AD) {
-		int i;
-		lattice L;
-		permgrp G;
-
-		L = AD.L;
-		G = AD.SD[AD.cl].ST;
+	static void permgrp_preprocessGenerators(final antichaindata AD) {
+		final lattice L = AD.L;
+		final permgrp G = AD.SD[AD.cl].ST;
 		//#ifndef FILTER_GRADED
 		if (AD.cl != 0) {
-			for (i = 0; i < G.ngens; i++) {
+			for (int i = 0; i < G.ngens; i++) {
 				G.benes[AD.cl - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
 			}
 			G.BenesValid |= BIT(AD.cl - 1);
 		} else {
-			for (i = 0; i < G.ngens; i++) {
+			for (int i = 0; i < G.ngens; i++) {
 				G.benes[L.nLev - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
 			}
 			G.BenesValid |= BIT(L.nLev - 1);
@@ -998,7 +993,7 @@ class canonical {
 	static void processElement_1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen) {
 		long A;
 		int Apos;
-		byte[] h = new byte[G.n]; // todo is this right?
+		byte[] h = permutation.create();
 
 		A = AD.GD.orb[AD.GD.orbsize].data[0];
 		Apos = AD.GD.orbsize;
@@ -1016,6 +1011,9 @@ class canonical {
 				}
 			} else {
 				if (Apos != 0)  /* equivalent to if (AD.GD.orbsort[lpos]) */ {
+					assert h != null;
+					assert G.perm[gen] != null;
+					assert AD.GD.orb[Apos].toRoot != null;
 					permutation.perm_mult(S.G.n, G.perm[gen], AD.GD.orb[Apos].toRoot, h);
 				} else {
 					permutation.perm_cpy(S.G.n, G.perm[gen], h);
@@ -1069,7 +1067,7 @@ class canonical {
 	static void processElement_p1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen, byte[] p) {
 		long A;
 		int Apos;
-		byte[] h = new byte[S.G.n]; // todo is this right?
+		byte[] h = permutation.create();
 
 		A = AD.GD.orb[AD.GD.orbsize].data[0];
 		Apos = AD.GD.orbsize;
@@ -1255,7 +1253,7 @@ class canonical {
 			if ((AD.GD.orb[0].data[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
 				if (AD.SD[AD.cl + 1].SI != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					final byte[] p = new byte[AD.L.n + AD.k];
+					final byte[] p = permutation.create();
 					final long[] L = new long[] {AD.GD.orb[0].data[0]};
 					permutation.perm_init(AD.L.n + AD.k, p);
 					final int[] ugly = new int[] {AD.SD[AD.cl].SI};
@@ -1315,7 +1313,7 @@ class canonical {
 					permgrpc_compactGenerators(S);
 				} else {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					byte[] p = new byte[AD.L.n + AD.k];
+					byte[] p = permutation.create();
 					long L;
 					L = AD.GD.orb[0].data[0];
 					permutation.perm_init(AD.L.n + AD.k, p);
@@ -1379,7 +1377,7 @@ class canonical {
 		} else if (AD.SD[AD.cl + 1].SI != 0) {
 			if ((AD.GD.orb[0].data[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				byte[] p = new byte[AD.L.n + AD.k]; // todo right?
+				byte[] p = permutation.create();
 				long[] L = new long[] { AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				final int[] ugly = new int[] {AD.SD[AD.cl].SI};
@@ -1476,7 +1474,7 @@ class canonical {
 			if (AD.GD.orb[0].data[0] != 0) {
 				if (AD.SD[AD.cl + 1].SI != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					byte[] p = new byte[AD.L.n + AD.k];
+					byte[] p = permutation.create();
 					long[] L = new long[] {AD.GD.orb[0].data[0]};
 					permutation.perm_init(AD.L.n + AD.k, p);
 					for (pmask = 1, i = AD.k; i-- != 0; ) {
@@ -1582,7 +1580,7 @@ class canonical {
 					permgrpc_compactGenerators(S);
 				} else {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-					byte[] p = new byte[AD.L.n + AD.k];
+					byte[] p = permutation.create();
 					long L;
 					L = AD.GD.orb[0].data[0];
 					permutation.perm_init(AD.L.n + AD.k, p);
@@ -1672,7 +1670,7 @@ class canonical {
 			}
 			if (AD.GD.orb[0].data[0] != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
-				byte[] p = new byte[AD.L.n + AD.k];
+				byte[] p = permutation.create();
 				long[] L = new long[] {AD.GD.orb[0].data[0]};
 				permutation.perm_init(AD.L.n + AD.k, p);
 				for (pmask = 1, i = AD.k; i-- != 0; ) {

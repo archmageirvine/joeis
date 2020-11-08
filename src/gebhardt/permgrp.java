@@ -269,8 +269,8 @@ class permgrp {
 		final int[] ugly = {G.freeperm}; // todo
 		Constants.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
 		G.freeperm = ugly[0];
-    G.G.perm[g[0]] = new byte[p.length]; // sai added
-    G.G.invperm[g[0]] = new byte[p.length]; // sai added
+    G.G.perm[g[0]] = permutation.create();
+    G.G.invperm[g[0]] = permutation.create();
 		permutation.perm_cpy(G.G.n, p, G.G.perm[g[0]]);
 		permutation.perm_inv(G.G.n, p, G.G.invperm[g[0]]);
 		G.Jerrum[i].neighbours |= BIT(j);
@@ -301,7 +301,7 @@ class permgrp {
 		j = p[i];
 		if ((G.Jerrum[i].neighbours & BIT(j)) != 0) {
 			int k;
-			byte[] h = new byte[G.G.n]; // todo is this right?
+			byte[] h = permutation.create();
 			/* j is already a neighbour of i; unless we have a duplicate generator... */
 			if (permutation.perm_cmp(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]]) != 0
 				&& permutation.perm_cmp(G.G.n, p, G.G.invperm[k]) != 0) {
@@ -310,7 +310,7 @@ class permgrp {
 				permgrpc_addGenerator(G, h);
 			}
 		} else {
-			byte[] h = new byte[G.G.n]; // todo is this right?
+			byte[] h = permutation.create();
 			int[] m = new int[1], nm = new int[1];
 			if (JerrumCreatesCycle(G, i, j, p, h, m, nm)){
 				if (m[0] != i) {

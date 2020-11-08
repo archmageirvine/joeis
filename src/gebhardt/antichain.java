@@ -562,18 +562,16 @@ class antichain {
       antichaindata_printCounters(AD);
     }
     final int[] todo = new int[] {F & ~done};
+    final int[] m = new int[1];
     while (Constants.extract_MSB32(todo, i)) {
-      int loi;
-      boolean allnonzero;
       /* meet-close & test lattice antichain condition */
       final int[] tocheck = new int[] {done & ~(AD.L.up[i[0]] | AD.L.lo[i[0]])};
       done |= BIT(i[0]);
-      allnonzero = true;
-      loi = AD.L.lo[i[0]];
+      boolean allnonzero = true;
+      int loi = AD.L.lo[i[0]];
       while (Constants.extract_MSB32(tocheck, j)) {
-        final int[] m = new int[1];
         if (Constants.get_LSB32(loi & (AD.L.lo[j[0]]), m)) {
-          if ((BIT(m[0]) & (done | todo[0])) != 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
+          if ((BIT(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
             //#ifndef FILTER_GRADED
             if (m[0] >= AD.L.lev[AD.cl]) {  /* equivalent to AD.L.dep[m] >= AD.cl */
               return false;

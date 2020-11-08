@@ -3,7 +3,6 @@ package gebhardt;
 import java.util.Arrays;
 
 import irvine.math.ByteUtils;
-import irvine.math.IntegerUtils;
 
 /**
  * Permutations.
@@ -83,18 +82,21 @@ public class Benes {
 
 
   /*
-   * Set *B to a pointer to a Beneš network realising the action of the permutation p on the points lo..hi-1,
+   * Set B to a pointer to a Beneš network realising the action of the permutation p on the points lo..hi-1,
    * where pi is the inverse of p.  The masks indicate the lower bit of each pair.
    */
   static Benes benes_get(byte[] p, byte[] pi, int lo, int hi) {
 
     int n = hi - lo;
-    byte[] src = new byte[n];
-    byte[] inv_src = new byte[n];
+    byte[] src = permutation.create();
+    byte[] inv_src = permutation.create();
     if (n <= BENES_SMALL) {
       for (int j = 0; j < n; j++) {
         src[j] = (byte) (p[lo + j] - lo);
       }
+//      System.out.println("SAI: " + n + " " + benes_small[n].length + " " + permutation.perm_toInteger(n, src));
+//      permutation.perm_print(n, src, 0);
+//      permutation.perm_print(hi, p, 0);
       return benes_small[n][(int) permutation.perm_toInteger(n, src)];  /* no incref: Beneš network is persistent */
     } else {
       for (int j = 0; j < n; j++) {
@@ -122,8 +124,8 @@ public class Benes {
     final Benes B = new Benes();
 
     n = hi - lo;
-    byte[] src = new byte[n];
-    byte[] inv_src = new byte[n];
+    byte[] src = permutation.create();
+    byte[] inv_src = permutation.create();
     if (n <= BENES_SMALL) {
       for (j = 0; j < n; j++) {
         src[j] = (byte)(p[lo + j] - lo);
@@ -309,7 +311,7 @@ public class Benes {
   static Benes benes_create(int n, byte[] src, byte[] inv_src) {
     Benes B;
     int i, stage;
-    int main_idx, src_idx, tgt_idx, idx2, t, Fpos, Bpos;
+    int main_idx, src_idx, tgt_idx, Fpos, Bpos;
     int mask, nmask, src_set, cfg_src, cfg_tgt;
 
 // #ifdef DOTEST
@@ -322,8 +324,8 @@ public class Benes {
     int ld_n = ceil_ld(n);
     Fpos = 0;
     Bpos = 2 * ld_n - 1;
-    int[] tgt = IntegerUtils.identity(new int[n]);
-    int[] inv_tgt = IntegerUtils.identity(new int[n]);
+    byte[] tgt = ByteUtils.identity(permutation.create());
+    byte[] inv_tgt = ByteUtils.identity(permutation.create());
 // #ifdef BENESVERBOSE
 // 	printf("=== entering benes_create for ");
 // 	perm_print(n, src, 0);
@@ -353,12 +355,12 @@ public class Benes {
 // 						printf(" CROSS\n");
 // #endif
               cfg_tgt |= BIT(tgt_idx & nmask); /* set the appropriate bit in the Beneš network */
-              idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
-              t = tgt[tgt_idx];                /* update the target side... */
+              int idx2 = (byte)(tgt_idx ^ mask); /* the other part of the pair; to be swapped */
+              byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
-              inv_tgt[tgt[idx2]] = idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgt_idx]] = tgt_idx; /* ...on the target side is tgt_idx! */
+              inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
             } else {
               /* straight */
 // #ifdef BENESVERBOSE
@@ -379,11 +381,11 @@ public class Benes {
 // 						printf(" CROSS\n");
 // #endif
               cfg_src |= BIT(src_idx & nmask); /* set the appropriate bit in the Beneš network */
-              idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
+              int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
               src_set |= BIT(idx2);            /* mark that source index as seen... */
-              t = src[src_idx];                /* ...and update the source side */
+              byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
-              src[idx2] = (byte)t;                   /* ...next stage sees; */
+              src[idx2] = t;                   /* ...next stage sees; */
               inv_src[src[idx2]] = (byte)idx2;       /* the other part of the reordered pair... */
               inv_src[src[src_idx]] = (byte)src_idx; /* ...on the source side is src_idx! */
             } else {
@@ -412,12 +414,12 @@ public class Benes {
 // 						printf(" CROSS\n");
 // #endif
               cfg_tgt |= BIT(tgt_idx & nmask); /* set the appropriate bit in the Beneš network */
-              idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
-              t = tgt[tgt_idx];                /* update the target side... */
+              int idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
+              byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
-              inv_tgt[tgt[idx2]] = idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgt_idx]] = tgt_idx; /* ...on the target side is tgt_idx! */
+              inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
             } else {
               /* straight */
 // #ifdef BENESVERBOSE
@@ -438,11 +440,11 @@ public class Benes {
 // 						printf(" CROSS\n");
 // #endif
               cfg_src |= BIT(src_idx & nmask); /* set the appropriate bit in the Beneš network */
-              idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
+              int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
               src_set |= BIT(idx2);            /* mark that source index as seen... */
-              t = src[src_idx];                /* ...and update the source side */
+              byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
-              src[idx2] = (byte)t;                   /* ...next stage sees; */
+              src[idx2] = t;                   /* ...next stage sees; */
               inv_src[src[idx2]] = (byte)idx2;       /* the other part of the reordered pair... */
               inv_src[src[src_idx]] = (byte) src_idx; /* ...on the source side is src_idx! */
             } else {
@@ -461,7 +463,7 @@ public class Benes {
         long smask;
         B.shift[Fpos] = (byte) BIT(stage);
         smask = 0;
-        t = n;
+        int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
           smask |= cfg_src;
           cfg_src = (cfg_src | (cfg_src << t)) << t;
@@ -475,7 +477,7 @@ public class Benes {
         Bpos--;
         B.shift[Bpos] = (byte) BIT(stage);
         smask = 0;
-        t = n;
+        int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
           smask |= cfg_tgt;
           cfg_tgt = (cfg_tgt | (cfg_tgt << t)) << t;
@@ -529,9 +531,9 @@ public class Benes {
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
       benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
-      final byte[] p = ByteUtils.identity(new byte[n[0]]); //perm_init(n, p);
+      final byte[] p = ByteUtils.identity(permutation.create()); //perm_init(n, p);
       do {
-        final byte[] p_ = Arrays.copyOf(p, n[0]);
+        final byte[] p_ = Arrays.copyOf(p, p.length);
         final byte[] pi_ = permutation.perm_inv(n[0], p);
         final Benes B = benes_create(n[0], p_, pi_);
         B.refcount = -1;

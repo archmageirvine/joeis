@@ -38,7 +38,7 @@ public class Globals {
 	//typedef struct orbitelt orbitelt;
 	static class orbitelt {
 		long[] data = new long[2]; /* the antichains */
-		byte[] toRoot;  /* permutation to root */
+		byte[] toRoot = permutation.create();  /* permutation to root */
 		int gen;     /* index of generator whose application yielded the antichains */
 	}
 

@@ -79,7 +79,7 @@ public class A006966 implements Sequence {
   }
 
   //private int mN = -1;
-  private int mN = 6;
+  private int mN = 7;
   {
     Benes.benes_init_small();
   }

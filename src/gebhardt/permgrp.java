@@ -39,9 +39,9 @@ class permgrp {
 	int invol;                  /* invol & BIT[i] indicates whether generator i is an involution */
 	int BenesValid;             /* which levels of array Benes contain valid pointers */
 	// #ifndef FILTER_GRADED
-// 	benes*         Benes[MAXN-2][MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
+ 	Benes[][]  benes = new Benes[Constants.MAXN-2][Constants.MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
 // #else
-	Benes[][] benes = new Benes[1][Constants.MAXN - 2];
+//	Benes[][] benes = new Benes[1][Constants.MAXN - 2];
 	//#endif
 	int n;                      /* number of points on which the group acts */
 	int ngens;                  /* number of generators */

@@ -813,9 +813,10 @@ class canonical {
 		for (i = 1; i < GD.SI0size; i++) {
 			permutation.perm_ldiv(n + k, GD.SI0[0].p, GD.SI0[i].p, p);
 			if (!permutation.perm_isId(n + k, p)) {
-// #ifdef VERBOSE
-// 			printf("[antichainList_extractStabiliser_p1]: adding stabiliser generator "); perm_print(S.G.n, p, 0);
-// #endif
+				if (VERBOSE) {
+					System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
+					permutation.perm_print(S.G.n, p, 0);
+				}
 				permgrp.permgrpc_addGenerator(S, p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p1(n, lo, hi, p, k, L, &L_);
@@ -1498,7 +1499,7 @@ class canonical {
 						AD.cp = m;
 						if (VERBOSE) {
 							permutation.perm_print(AD.L.n+AD.k, p, 0);
-							System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+							System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
 						}
 						return false;
 					}
@@ -1562,7 +1563,7 @@ class canonical {
 								AD.cp = m;
 								if (VERBOSE) {
 									permutation.perm_print(S.G.n, p, 0);
-									System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+									System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
 								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
@@ -1641,7 +1642,7 @@ class canonical {
 								AD.cp = m;
 								if (VERBOSE) {
 									permutation.perm_print(S.G.n, p, 0);
-									System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+									System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
 								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
@@ -1694,7 +1695,7 @@ class canonical {
 					AD.cp = m;
 					if (VERBOSE) {
 						permutation.perm_print(AD.L.n+AD.k, p, 0);
-						System.out.printf("                                       NOT canonical -. %d\n", AD.cp);
+						System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
 					}
 					return false;
 				}
@@ -1846,7 +1847,7 @@ class canonical {
 //						AD.cp = m;
 //// #ifdef VERBOSE
 //// 					perm_print(AD.L.n+AD.k, p, 0);
-//// 					printf("                                       NOT canonical -. %d\n", AD.cp);
+//// 					printf("                                       NOT canonical --> %d\n", AD.cp);
 //// #endif
 //						return false;
 //					}
@@ -2068,7 +2069,7 @@ class canonical {
 //					AD.cp = m;
 //// #ifdef VERBOSE
 //// 				perm_print(AD.L.n+AD.k, p, 0);
-//// 				printf("                                       NOT canonical -. %d\n", AD.cp);
+//// 				printf("                                       NOT canonical --> %d\n", AD.cp);
 //// #endif
 //					return false;
 //				}

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036465 If n^2 = sum a_i^2, i&gt;1, then a(n) is the maximum value of min(a_i).
+ * A036465 If n^2 = Sum_{i} b(i)^2 for positive integers b(i) &lt; n, then a(n) is the maximum value of min(b(i)).
  * @author Sean A. Irvine
  */
 public class A036465 implements Sequence {

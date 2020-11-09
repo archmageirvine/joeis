@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036466 If n=sum a_i^2, then a(n) is the smallest possible value of the largest multiplicity of the a_i.
+ * A036466 If n = Sum_{i} b(i)^2 (i.e., a partition of n into squares), then a(n) is the smallest possible value of the largest multiplicity of the b(i).
  * @author Sean A. Irvine
  */
 public class A036466 implements Sequence {

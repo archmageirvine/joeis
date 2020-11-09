@@ -6,7 +6,7 @@ package irvine.oeis.a074;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A074193 Sum of determinants of 2nd order principal minors of powers of Tetramatrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).
+ * A074193 Sum of determinants of 2nd order principal minors of powers of the matrix ((1,1,0,0),(1,0,1,0),(1,0,0,1),(1,0,0,0)).
  * @author Georg Fischer
  */
 public class A074193 extends HolonomicRecurrence {

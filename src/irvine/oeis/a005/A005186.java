@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A005186 a(n) = number of m which take n steps to reach 1 in '3x+1' problem.
+ * A005186 a(n) is the number of integers m which take n steps to reach 1 in '3x+1' problem.
  * @author Sean A. Irvine
  */
 public class A005186 implements Sequence {

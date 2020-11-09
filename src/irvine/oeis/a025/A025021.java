@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A025021 Least non-residue mod n is 3.
+ * A025021 Numbers whose least quadratic nonresidue (A020649) is 3.
  * @author Sean A. Irvine
  */
 public class A025021 implements Sequence {

@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A027437 a(n) = [ e*2^n ].
+ * A027437 a(n) = floor( e * 2^n ).
  * @author Sean A. Irvine
  */
 public class A027437 implements Sequence {

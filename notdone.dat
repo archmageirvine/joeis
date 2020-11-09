@@ -436,8 +436,6 @@ A005645 Number of 3-connected planar maps with n edges, might be possible but co
 A005646 Classifications of n elements, might be possible, an algorithm is described
 A005670 Mrs. Perkins's quilt: smallest coprime dissection of n X n square, probably possible but slow
 A005677 Maximal size of equidistant permutation array R(n,1), hard
-A005678 A squarefree ternary sequence, like Thue-Morse, detail?, pos like A005679
-A005680 A squarefree ternary sequence, insufficient detail
 A005702 Number of sesquirotational Kotzig factorizations, paper available, looks complicated
 A005757 Simple dependency A003296, A003297
 A005759 Simple dependency A005757
@@ -1461,3 +1459,4 @@ A036402 Coefficients of cluster series.
 A036403 Number of equilateral triangles whose vertices (whether connected by lines or not) lie at intersection points resulting from drawing lines connecting every pair of vertices of a regular 3n-gon (and extending beyond the polygon).
 A036429 Primes related to Carmichael numbers of the form pqr, p<q<r and p-1 a divisor of both q-1 and r-1, insufficient detail
 A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1)
+A036604 Sorting numbers: minimal number of comparisons needed to sort n elements, hard

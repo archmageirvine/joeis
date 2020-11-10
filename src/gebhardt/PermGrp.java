@@ -50,8 +50,6 @@ class PermGrp {
     }
   }
 
-
-  long mRefCount = 1;               /* reference count */
 	byte[][] mPerm = new byte[Utils.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
 	byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
 	int mInvol;                  /* invol & BIT[i] indicates whether generator i is an involution */
@@ -59,15 +57,6 @@ class PermGrp {
  	Benes[][] mBenes = new Benes[Utils.MAXN-2][Utils.MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
 	int mN;                      /* number of points on which the group acts */
 	int mNgens;                  /* number of generators */
-
-	/*
-	 * Allocate space for a permutation group (permgrpc); the group is NOT initialised.
-	 */
-	static PermGrpC permgrpc_alloc() {
-		PermGrpC G = new PermGrpC();
-		G.mG = new PermGrp();
-		return G;
-	}
 
   /*
 	 * Delete all Beneš networks stored in g.
@@ -97,7 +86,7 @@ class PermGrp {
 	/*
 	 * Set g to the trivial permutation group on n points.
 	 */
-	static void permgrpc_init(final PermGrpC g, final int n) {
+	static void init(final PermGrpC g, final int n) {
 		init(g.mG, n);
 		g.mFreePerm = Utils.allBits32(Utils.MAXN - 2);
 		for (int i = 0; i < n; i++) {
@@ -105,22 +94,11 @@ class PermGrp {
     }
 	}
 
-
-	/*
-	 * Increment the reference count for *G and return *G.
-	 */
-	static PermGrp incRef(final PermGrp G) {
-		G.mRefCount++;
-		return G;
-	}
-
-
 	/*
 	 * Copy g to h.
 	 */
 	static void copy(final PermGrp g, final PermGrp h) {
 		clearBenes(h);
-		h.mRefCount = 1;
 		final int n = h.mN = g.mN;
 		h.mNgens = g.mNgens;
 		for (int i = 0; i < n; ++i) { /* We need g.n instead of g.ngens for permgrpc_cpy to work in the general case! */
@@ -149,24 +127,6 @@ class PermGrp {
 //	}
 //
 //
-	/*
-	 * Decrement the reference count for g, and free the allocated memory if the reference count reaches 0.
-	 */
-	static void delete(final PermGrp g) {
-		if ((--(g.mRefCount)) == 0) {
-			clearBenes(g);
-			//free(g);
-		}
-	}
-
-
-	/*
-	 * Delete the group g.
-	 */
-	static void permgrpc_delete(final PermGrpC g) {
-		delete(g.mG);
-		//free(g);
-	}
 
 	/*
 	 * Return whether adding an edge i--j, for the permutation p, creates a cycle in the Jerrum graph.

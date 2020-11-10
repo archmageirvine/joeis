@@ -152,7 +152,7 @@ class antichain {
 
     for (i = 0; i < AD.L.nLev - 1; i++) {
       if (i < AD.SD.length && AD.SD[i].ST_ != null) {  // todo SAI added first condition BUG?
-        PermGrp.permgrpc_delete(AD.SD[i].ST_);
+        //PermGrp.permgrpc_delete(AD.SD[i].ST_);
       }
     }
 // #else

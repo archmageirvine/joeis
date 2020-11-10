@@ -94,7 +94,6 @@ public class lattice {
 			System.out.println("SAI: lattice_setStabiliser " + S.mN);
 			//new Throwable().printStackTrace();
 		}
-		L.S = PermGrp.incRef(S);
 		L.SI = SI;
 	}
 
@@ -103,7 +102,7 @@ public class lattice {
 	 * Decrement the reference count for the stabiliser of *L.
 	 */
 	static void lattice_clearStabiliser(lattice L) {
-		PermGrp.delete(L.S);
+    //PermGrp.delete(L.S);
 	}
 
 
@@ -604,7 +603,7 @@ public class lattice {
 		S = new PermGrp();
 		PermGrp.init(S, 0);
 		lattice_fromString(L, 2, "1", S, 0);
-		PermGrp.delete(S);
+    //PermGrp.delete(S);
 		return L;
 	}
 
@@ -620,7 +619,7 @@ public class lattice {
 		PermGrp.init(S, 0);
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
-		PermGrp.delete(S);
+    //PermGrp.delete(S);
 		L.lev[0] = 0;
 		L.lev[1] = (byte) k;
 		L.n = (byte) k;

@@ -1,8 +1,8 @@
 package gebhardt;
 
+import gebhardt.Globals.SIdata;
 import gebhardt.antichain.antichaindata;
 import gebhardt.permgrp.permgrpc;
-import gebhardt.Globals.SIdata;
 
 class canonical {
 	/*
@@ -906,6 +906,10 @@ class canonical {
 		//#ifndef FILTER_GRADED
 		if (AD.cl != 0) {
 			for (int i = 0; i < G.ngens; i++) {
+				if (VERBOSE) {
+					System.out.println("SAI: ppgen " + i + "/" + G.ngens + " " + L.lev[AD.cl - 1] + " " + L.lev[AD.cl]);
+					permutation.perm_print(G.n, G.perm[i], 0);
+				}
 				G.benes[AD.cl - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
 			}
 			G.BenesValid |= BIT(AD.cl - 1);
@@ -991,17 +995,17 @@ class canonical {
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
 	static void processElement_1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen) {
-		long A;
-		int Apos;
-		byte[] h = permutation.create();
-
-		A = AD.GD.orb[AD.GD.orbsize].data[0];
-		Apos = AD.GD.orbsize;
+		final byte[] h = permutation.create();
+		final long A = AD.GD.orb[AD.GD.orbsize].data[0];
+		int Apos = AD.GD.orbsize;
 		/* check whether the element is new... */
 		//if (hashtable_query_insert_1(AD.GD.orbpos, A, HASH_1(A), & Apos)){
 		final boolean contains = AD.GD.orbpos.containsKey(A);
-		AD.GD.orbpos.put(A, (long) Apos);
 		if (contains) {
+			Apos = AD.GD.orbpos.get(A).intValue();
+			if (VERBOSE) {
+				System.out.println("--- hashtable query/insert " + A + " => " + Apos);
+			}
 			/* ...if not, note the new stabiliser element */
 			if (pos != 0) {
 				if (Apos != 0) {
@@ -1011,7 +1015,6 @@ class canonical {
 				}
 			} else {
 				if (Apos != 0)  /* equivalent to if (AD.GD.orbsort[lpos]) */ {
-					assert h != null;
 					assert G.perm[gen] != null;
 					assert AD.GD.orb[Apos].toRoot != null;
 					permutation.perm_mult(S.G.n, G.perm[gen], AD.GD.orb[Apos].toRoot, h);
@@ -1033,13 +1036,18 @@ class canonical {
 // 			erri(-4);
 // 		}
 // #endif
-// #ifdef VERBOSE
-// 		printf("[processElement_1]: adding stabiliser generator "); perm_print(S.G.n, h, 0);
-// #endif
+			if (VERBOSE) {
+				System.out.print("[processElement_1]: adding stabiliser generator ");
+				permutation.perm_print(S.G.n, h, 0);
+			}
 			if (!permutation.perm_isId(S.G.n, h)) {
 				permgrp.permgrpc_addGenerator(S, h);
 			}
 		} else {
+			AD.GD.orbpos.put(A, (long) Apos);
+			if (VERBOSE) {
+				System.out.println("+++ hashtable query/insert " + A + " => " + Apos);
+			}
 			/* ...if yes, note the permutation to the root and the applied generator */
 			AD.GD.orb[AD.GD.orbsize].gen = gen;
 			if (pos != 0) {
@@ -1073,9 +1081,9 @@ class canonical {
 		Apos = AD.GD.orbsize;
 		/* check whether the element is new... */
 		final boolean contains = AD.GD.orbpos.containsKey(A);
-		AD.GD.orbpos.put(A, (long) Apos);
+		//if (hashtable_query_insert_1(AD.GD.orbpos, A, HASH_1(A), & Apos)){
 		if (contains) {
-			//if (hashtable_query_insert_1(AD.GD.orbpos, A, HASH_1(A), & Apos)){
+			Apos = AD.GD.orbpos.get(A).intValue();
 			/* ...if no, note the new stabiliser element */
 			if (pos != 0) {
 				if (Apos != 0) {
@@ -1111,6 +1119,7 @@ class canonical {
 				permgrp.permgrpc_addGenerator(S, h);
 			}
 		} else {
+			AD.GD.orbpos.put(A, (long) Apos);
 			/* ...if yes, note the permutation to the root and the applied generator */
 			AD.GD.orb[AD.GD.orbsize].gen = gen;
 			if (pos != 0) {
@@ -1273,6 +1282,10 @@ class canonical {
 					//hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
 					AD.GD.orbpos.clear();
 					AD.GD.orbpos.put(L[0], 0L);
+					if (VERBOSE) {
+						System.out.println("### hashtable cleared");
+						System.out.println("+++ hashtable insert (" + L[0] + "," + 0L + ")");
+					}
 					//#ifndef HARDCODE_MAXN_22
 					if (S.G.n > G.n) {
 						for (gen = 0; gen < G.ngens; gen++) {
@@ -1328,6 +1341,10 @@ class canonical {
 //					hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
 					AD.GD.orbpos.clear();
 					AD.GD.orbpos.put(L,0L);
+					if (VERBOSE) {
+						System.out.println("### hashtable cleared");
+						System.out.println("+++ hashtable insert (" + L + "," + 0L + ")");
+					}
 //#ifndef HARDCODE_MAXN_22
 					if (S.G.n > G.n) {
 						for (gen = 0; gen < G.ngens; gen++) {

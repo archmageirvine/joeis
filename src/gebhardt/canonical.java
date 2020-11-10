@@ -1428,7 +1428,7 @@ class canonical {
 		permgrp_preprocessGenerators(AD);
 		if (VERBOSE) {
 			System.out.printf("***** level %d:\n", AD.cl);
-			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			PermGrp.printGenerators(AD.SD[AD.cl].ST, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS
@@ -1754,7 +1754,7 @@ class canonical {
 		permgrp_preprocessGenerators_blocked(AD);
 		if (VERBOSE) {
 			System.out.printf("***** level %d:\n", AD.cl);
-			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			PermGrp.printGenerators(AD.SD[AD.cl].ST, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS

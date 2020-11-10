@@ -579,7 +579,7 @@ public class lattice {
 		}
 		System.out.println("]");
 		System.out.printf("stabiliser [%d]:\n", L.S.mN);
-		PermGrp.permgrp_printGenerators(L.S, 0);
+		PermGrp.printGenerators(L.S, 0);
 		final int[] SI = {L.SI};
 		final int[] ii = {i};
 		while (Utils.extractLSB32(SI, ii)) {

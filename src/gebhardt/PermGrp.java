@@ -179,35 +179,9 @@ class PermGrp {
 	}
 
 	/*
-	 * Allocate space for a permutation group (permgrpc); the group is NOT initialised.
-	 */
-	static PermGrpC permgrpc_alloc() {
-		PermGrpC G = new PermGrpC();
-		G.mG = permgrp_alloc();
-		return G;
-	}
-
-  /*
-	 * Delete all Beneš networks stored in G.
-	 */
-	static void clearBenes(final PermGrp G) {
-		final int[] i = new int[1];
-
-		final int[] ugly = new int[] {G.mBenesValid};  // todo avoid this
-		while (Utils.extractLSB32(ugly,i)){
-//			for (int j = 0; j < G.ngens; j++) {
-//				Benes.delete(G.benes[i[0]][j]);
-//			}
-		}
-		G.mBenesValid = ugly[0];
-	}
-
-
-	/*
 	 * Set G to the trivial permutation group on n points.
 	 */
 	static void init(PermGrp G, int n) {
-		clearBenes(G);
 		G.mN = n;
 		G.mNgens = 0;
 	}
@@ -224,19 +198,18 @@ class PermGrp {
 	}
 
 
-	/*
-	 * Copy G to H.
-	 */
-	static void permgrp_cpy(PermGrp G, PermGrp H) {
-		clearBenes(H);
-		final int n = H.mN = G.mN;
-		H.mNgens = G.mNgens;
-		for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
-			Permutation.copy(n, G.mPerm[i], H.mPerm[i]);
-			Permutation.copy(n, G.mInvPerm[i], H.mInvPerm[i]);
-		}
-		H.mInvol = G.mInvol;
-	}
+//	/*
+//	 * Copy G to H.
+//	 */
+//	static void permgrp_cpy(PermGrp G, PermGrp H) {
+//		final int n = H.mN = G.mN;
+//		H.mNgens = G.mNgens;
+//		for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
+//			Permutation.copy(n, G.mPerm[i], H.mPerm[i]);
+//			Permutation.copy(n, G.mInvPerm[i], H.mInvPerm[i]);
+//		}
+//		H.mInvol = G.mInvol;
+//	}
 
 
 //	/*
@@ -250,7 +223,7 @@ class PermGrp {
 //
 //
 //	/*
-//	 * Return the underlying permgrp of *G WITHOUT REFERENCE COUNT.
+//	 * Return the underlying permgrp of G WITHOUT REFERENCE COUNT.
 //	 */
 //	static permgrp permgrpc_get_permgrp(permgrpc G) {
 //		return G.G;
@@ -274,9 +247,9 @@ class PermGrp {
 	/*
 	 * TEST FUNCTION:  Print current generators (in array notation).
 	 */
-	static void permgrp_printGenerators(PermGrp G, int offset) {
-		for (int i = 0; i < G.mNgens; i++) {
-      Permutation.print(G.mN, G.mPerm[i], offset);
+	static void printGenerators(final PermGrp g, final int offset) {
+		for (int i = 0; i < g.mNgens; i++) {
+      Permutation.print(g.mN, g.mPerm[i], offset);
     }
 	}
 }

@@ -146,24 +146,6 @@ class PermGrp {
 //	}
 //
 //
-	/*
-	 * Decrement the reference count for *G, and free the allocated memory if the reference count reaches 0.
-	 */
-	static void permgrp_delete(PermGrp G) {
-//		if ((--(G.mRefCount)) == 0) {
-//			clearBenes(G);
-//			//free(G);
-//		}
-	}
-
-
-	/*
-	 * Delete the group *G.
-	 */
-	static void permgrpc_delete(PermGrpC G) {
-		permgrp_delete(G.mG);
-		//free(G);
-	}
 
 
 //	/*

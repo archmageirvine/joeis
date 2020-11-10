@@ -42,11 +42,6 @@ public class A006966 implements Sequence {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-  //#include "build.h"
-//#include "globals.h"
-//#include "lattice.h"
-//#include "lattEnum.h"
-
   /*
    * Initialise global bitmaps to size n.
    */

@@ -97,7 +97,7 @@ public class lattice {
 	 * Decrement the reference count for the stabiliser of *L.
 	 */
 	static void lattice_clearStabiliser(lattice L) {
-		PermGrp.permgrp_delete(L.S);
+    //PermGrp.permgrp_delete(L.S);
 	}
 
 
@@ -598,7 +598,7 @@ public class lattice {
 		S = PermGrp.permgrp_alloc();
 		PermGrp.init(S, 0);
 		lattice_fromString(L, 2, "1", S, 0);
-		PermGrp.permgrp_delete(S);
+		//PermGrp.permgrp_delete(S);
 		return L;
 	}
 
@@ -614,7 +614,7 @@ public class lattice {
 		PermGrp.init(S, 0);
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
-		PermGrp.permgrp_delete(S);
+    //PermGrp.permgrp_delete(S);
 		L.lev[0] = 0;
 		L.lev[1] = (byte) k;
 		L.n = (byte) k;

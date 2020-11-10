@@ -42,15 +42,10 @@ public class A006966 implements Sequence {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-  //#include "build.h"
-//#include "globals.h"
-//#include "lattice.h"
-//#include "lattEnum.h"
-
   /*
    * Initialise global bitmaps to size N.
    */
-  private static void bitmap_init(long N) {
+  private static void bitmapInit(long N) {
     long bits, a1, b1, a2, b2;
 
     bits = Utils.BITSPERFLAGS64;
@@ -83,23 +78,16 @@ public class A006966 implements Sequence {
     Benes.initSmall();
   }
   final Globals mGlobals = new Globals();
-  final lattice L = lattice.lattice_init_2();
+  final lattice mL = lattice.lattice_init_2();
 
   @Override
   public Z next() {
     if (++mN <= 1) { // can make this 3
       return Z.ONE;
     }
-    bitmap_init(mN);
-    final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, mGlobals);
-    lattEnum.lattEnum_doEnumeration(E);
-    return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
-    //return null; // temp
-// Legacy:
-//	printf("%llu\n", );
-//	lattEnum_Count_free(E);
-//	lattice_clearStabiliser(L);
-//	globals_free(GD);
-//	benes_free_small();
+    bitmapInit(mN);
+    final lattEnum e = lattEnum.lattEnum_Count_create(mL, mN, 3, mGlobals);
+    lattEnum.lattEnum_doEnumeration(e);
+    return Z.valueOf(lattEnum.lattEnum_getLatticeCount(e));
   }
 }

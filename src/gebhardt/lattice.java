@@ -91,7 +91,7 @@ public class lattice {
 	 */
 	static void lattice_setStabiliser(lattice L, permgrp S, int SI) {
 		if (VERBOSE) {
-			System.out.println("SAI: lattice_setStabiliser " + S.n);
+			System.out.println("SAI: lattice_setStabiliser " + S.mN);
 			//new Throwable().printStackTrace();
 		}
 		L.S = permgrp.permgrp_incref(S);
@@ -154,7 +154,7 @@ public class lattice {
 		for (int i = L.n; i-- != 0; ) {
 			co[i] = 0;
 			Ui = L.up[i] ^ (int) BIT(i);
-			while (Utils.get_MSB32(Ui, j)){
+			while (Utils.getMSB32(Ui, j)){
 				co[i] |= BIT(j[0]);
 				Ui &= ~(L.up[j[0]]);
 			}
@@ -584,11 +584,11 @@ public class lattice {
 			}
 		}
 		System.out.println("]");
-		System.out.printf("stabiliser [%d]:\n", L.S.n);
+		System.out.printf("stabiliser [%d]:\n", L.S.mN);
 		permgrp.permgrp_printGenerators(L.S, 0);
 		final int[] SI = {L.SI};
 		final int[] ii = {i};
-		while (Utils.extract_LSB32(SI, ii)) {
+		while (Utils.extractLSB32(SI, ii)) {
 			System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
 		}
 	}
@@ -602,7 +602,7 @@ public class lattice {
 		permgrp S;
 
 		S = permgrp.permgrp_alloc();
-		permgrp.permgrp_init(S, 0);
+		permgrp.init(S, 0);
 		lattice_fromString(L, 2, "1", S, 0);
 		permgrp.permgrp_delete(S);
 		return L;
@@ -617,7 +617,7 @@ public class lattice {
 			L.up[i] = L.lo[i] = (int) BIT(i);
 		}
 		final permgrp S = permgrp.permgrp_alloc();
-		permgrp.permgrp_init(S, 0);
+		permgrp.init(S, 0);
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
 		permgrp.permgrp_delete(S);

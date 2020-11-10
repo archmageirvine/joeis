@@ -22,7 +22,7 @@ public class Utils {
   /*
    * If f is zero, return 0.  Otherwise, set i[0] to the rank of the least significant bit set in f, clear the bit and return 1.
    */
-  static boolean extract_LSB32(int[] f, int[] i) {
+  static boolean extractLSB32(final int[] f, final int[] i) {
     if (f[0] == 0) {
       return false;
     }
@@ -35,7 +35,7 @@ public class Utils {
    * If f is zero, return 0.  Otherwise, set *i to the rank of the most significant bit set in f, clear the bit and return 1.
    * NOTE:
    */
-  static boolean extract_MSB32(int[] f, int[] i)
+  static boolean extractMSB32(final int[] f, final int[] i)
   {
     if (f[0] == 0) {
       return false;
@@ -48,7 +48,7 @@ public class Utils {
   /*
    * If f is zero, return 0.  Otherwise, set *i to the rank of the least significant bit set in f and return 1.
    */
-  static boolean get_LSB32(int f, int[] i)  {
+  static boolean getLSB32(final int f, final int[] i)  {
     if (f==0) {
       return false;
     }
@@ -61,7 +61,7 @@ public class Utils {
    * If f is zero, return 0.  Otherwise, set *i to the rank of the most significant bit set in f and return 1.
    * NOTE:
    */
-  static boolean get_MSB32(int f, int[] i) {
+  static boolean getMSB32(final int f, final int[] i) {
     if (f == 0) {
       return false;
     }
@@ -72,8 +72,8 @@ public class Utils {
   /*
    * Return a mask with bits 0..n-1 set.
    */
-  static int allBits32(int n)
+  static int allBits32(final int n)
   {
-    return (int) ((1L << n) - 1L);
+    return (1 << n) - 1;
   }
 }

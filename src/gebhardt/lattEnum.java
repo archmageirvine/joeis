@@ -296,7 +296,7 @@ void reg(lattEnum E, lattice L) {
 // #endif
 			while (antichain.antichaindata_next_1(AD)) {
 				if (VERBOSE) {
-					System.out.println("SAI: while-an1 " + AD.SD[0].ST.n);
+					System.out.println("SAI: while-an1 " + AD.SD[0].ST.mN);
 				}
 				antichain.antichaindata_generateLattice_1(AD, L, LA);
 // #ifdef DOTEST

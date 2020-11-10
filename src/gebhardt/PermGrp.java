@@ -34,8 +34,6 @@ class PermGrp {
 	 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-
-	long mRefCount;               /* reference count */
 	byte[][] mPerm = new byte[Utils.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
 	byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
 	int mInvol;                  /* invol & BIT[i] indicates whether generator i is an involution */
@@ -65,7 +63,6 @@ class PermGrp {
 	 */
 	static PermGrp permgrp_alloc() {
 		final PermGrp G = new PermGrp();
-		G.mRefCount = 1;
 		G.mBenesValid = 0;
 		return G;
 	}
@@ -79,14 +76,10 @@ class PermGrp {
 		return G;
 	}
 
-	private static long BIT(final long i) {
-    return Utils.BIT(i); // todo inline
-  }
-
-	/*
+  /*
 	 * Delete all Beneš networks stored in G.
 	 */
-	static void permgrp_clearBenes(final PermGrp G) {
+	static void clearBenes(final PermGrp G) {
 		final int[] i = new int[1];
 
 		final int[] ugly = new int[] {G.mBenesValid};  // todo avoid this
@@ -103,7 +96,7 @@ class PermGrp {
 	 * Set G to the trivial permutation group on n points.
 	 */
 	static void init(PermGrp G, int n) {
-		permgrp_clearBenes(G);
+		clearBenes(G);
 		G.mN = n;
 		G.mNgens = 0;
 	}
@@ -121,20 +114,10 @@ class PermGrp {
 
 
 	/*
-	 * Increment the reference count for *G and return *G.
-	 */
-	static PermGrp permgrp_incref(PermGrp G) {
-		G.mRefCount++;
-		return G;
-	}
-
-
-	/*
 	 * Copy G to H.
 	 */
 	static void permgrp_cpy(PermGrp G, PermGrp H) {
-		permgrp_clearBenes(H);
-		H.mRefCount = 1;
+		clearBenes(H);
 		final int n = H.mN = G.mN;
 		H.mNgens = G.mNgens;
 		for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
@@ -167,10 +150,10 @@ class PermGrp {
 	 * Decrement the reference count for *G, and free the allocated memory if the reference count reaches 0.
 	 */
 	static void permgrp_delete(PermGrp G) {
-		if ((--(G.mRefCount)) == 0) {
-			permgrp_clearBenes(G);
-			//free(G);
-		}
+//		if ((--(G.mRefCount)) == 0) {
+//			clearBenes(G);
+//			//free(G);
+//		}
 	}
 
 
@@ -206,7 +189,7 @@ class PermGrp {
 
 		todo[0] = i;
 		ntodo = 1;
-		unseen = (int)~BIT(i);
+    unseen = (int)~Utils.BIT(i);
 		for (pos = 0; pos < ntodo; pos++) {
 			int nu;
 			u = todo[pos];
@@ -240,7 +223,7 @@ class PermGrp {
 					return true;
 				}
 				todo[ntodo++] = v[0];
-				unseen ^= BIT(v[0]);  /* bit v is set, so this clears it */
+        unseen ^= Utils.BIT(v[0]);  /* bit v is set, so this clears it */
 			}
 		}
 		return false;
@@ -260,9 +243,9 @@ class PermGrp {
     G.mG.mInvPerm[g[0]] = Permutation.create();
 		Permutation.copy(G.mG.mN, p, G.mG.mPerm[g[0]]);
 		Permutation.inverse(G.mG.mN, p, G.mG.mInvPerm[g[0]]);
-		G.mJerrum[i].mNeighbours |= BIT(j);
+    G.mJerrum[i].mNeighbours |= Utils.BIT(j);
 		G.mJerrum[i].mPerm[j] = g[0];
-		G.mJerrum[j].mNeighbours |= BIT(i);
+    G.mJerrum[j].mNeighbours |= Utils.BIT(i);
 		G.mJerrum[j].mPerm[i] = g[0];
 	}
 
@@ -273,9 +256,9 @@ class PermGrp {
 		int g;
 
 		g = G.mJerrum[i].mPerm[j];
-		G.mFreePerm |= BIT(g);
-		G.mJerrum[i].mNeighbours ^= BIT(j);  /* bit j is set, so this clears it */
-		G.mJerrum[j].mNeighbours ^= BIT(i);  /* bit i is set, so this clears it */
+    G.mFreePerm |= Utils.BIT(g);
+    G.mJerrum[i].mNeighbours ^= Utils.BIT(j);  /* bit j is set, so this clears it */
+    G.mJerrum[j].mNeighbours ^= Utils.BIT(i);  /* bit i is set, so this clears it */
 	}
 
 	/*
@@ -286,7 +269,7 @@ class PermGrp {
 
 		i = Permutation.minSupport(G.mG.mN, p);
 		j = p[i];
-		if ((G.mJerrum[i].mNeighbours & BIT(j)) != 0) {
+    if ((G.mJerrum[i].mNeighbours & Utils.BIT(j)) != 0) {
 			int k;
 			byte[] h = Permutation.create();
 			/* j is already a neighbour of i; unless we have a duplicate generator... */

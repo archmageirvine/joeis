@@ -84,17 +84,11 @@ public class lattice {
     return Utils.BIT(i); // todo inline
   }
 
-	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
-
 	/*
 	 * Set the stabiliser data of the lattice L to S / SI; the reference count of S is incremented.
 	 */
 	static void lattice_setStabiliser(lattice L, PermGrp S, int SI) {
-		if (VERBOSE) {
-			System.out.println("SAI: lattice_setStabiliser " + S.mN);
-			//new Throwable().printStackTrace();
-		}
-		L.S = PermGrp.permgrp_incref(S);
+		L.S = S;
 		L.SI = SI;
 	}
 

@@ -55,7 +55,7 @@ public class lattice {
 	//struct lattice {
 	int[] up = new int[	Utils.MAXN-2];
 	int[] lo = new int[	Utils.MAXN-2];
-	permgrp S;
+	PermGrp S;
 	int SI;
 	byte[] lev = new byte[	Utils.MAXN-1];
 	byte n;
@@ -89,12 +89,12 @@ public class lattice {
 	/*
 	 * Set the stabiliser data of the lattice L to S / SI; the reference count of S is incremented.
 	 */
-	static void lattice_setStabiliser(lattice L, permgrp S, int SI) {
+	static void lattice_setStabiliser(lattice L, PermGrp S, int SI) {
 		if (VERBOSE) {
 			System.out.println("SAI: lattice_setStabiliser " + S.mN);
 			//new Throwable().printStackTrace();
 		}
-		L.S = permgrp.permgrp_incref(S);
+		L.S = PermGrp.permgrp_incref(S);
 		L.SI = SI;
 	}
 
@@ -103,7 +103,7 @@ public class lattice {
 	 * Decrement the reference count for the stabiliser of *L.
 	 */
 	static void lattice_clearStabiliser(lattice L) {
-		permgrp.permgrp_delete(L.S);
+		PermGrp.permgrp_delete(L.S);
 	}
 
 
@@ -369,7 +369,7 @@ public class lattice {
 	 * write the data to L.  L must point to an allocated block of memory.  Return whether successful.
 	 * The reference count of *S is incremented.
 	 */
-	static boolean lattice_fromString(lattice L, int n, String s, permgrp S, int SI) {
+	static boolean lattice_fromString(lattice L, int n, String s, PermGrp S, int SI) {
 		int d, i, j;
 		int pos;
 		int[] co = new int[ Utils.MAXN - 2];
@@ -585,7 +585,7 @@ public class lattice {
 		}
 		System.out.println("]");
 		System.out.printf("stabiliser [%d]:\n", L.S.mN);
-		permgrp.permgrp_printGenerators(L.S, 0);
+		PermGrp.permgrp_printGenerators(L.S, 0);
 		final int[] SI = {L.SI};
 		final int[] ii = {i};
 		while (Utils.extractLSB32(SI, ii)) {
@@ -599,12 +599,12 @@ public class lattice {
 	 */
 	public static lattice lattice_init_2() {
 		final lattice L = new lattice();
-		permgrp S;
+		PermGrp S;
 
-		S = permgrp.permgrp_alloc();
-		permgrp.init(S, 0);
+		S = PermGrp.permgrp_alloc();
+		PermGrp.init(S, 0);
 		lattice_fromString(L, 2, "1", S, 0);
-		permgrp.permgrp_delete(S);
+		PermGrp.permgrp_delete(S);
 		return L;
 	}
 
@@ -616,11 +616,11 @@ public class lattice {
 		for (int i = 0; i < k; i++) {
 			L.up[i] = L.lo[i] = (int) BIT(i);
 		}
-		final permgrp S = permgrp.permgrp_alloc();
-		permgrp.init(S, 0);
+		final PermGrp S = PermGrp.permgrp_alloc();
+		PermGrp.init(S, 0);
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
-		permgrp.permgrp_delete(S);
+		PermGrp.permgrp_delete(S);
 		L.lev[0] = 0;
 		L.lev[1] = (byte) k;
 		L.n = (byte) k;

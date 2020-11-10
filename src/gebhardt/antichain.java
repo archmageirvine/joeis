@@ -2,7 +2,7 @@ package gebhardt;
 
 import java.util.Arrays;
 
-import gebhardt.permgrp.permgrpc;
+import gebhardt.PermGrp.PermGrpC;
 
 class antichain {
   /*
@@ -72,8 +72,8 @@ class antichain {
 
   //typedef struct stabiliser stabiliser;
   static class stabiliser {
-    permgrpc ST_;
-    permgrp ST;
+    PermGrpC ST_;
+    PermGrp ST;
     int SI;
     int bl;
   }
@@ -135,9 +135,9 @@ class antichain {
   /*
    * Ensure that the stabiliser AD.SD[lev].ST_ exists, and return AD.SD[lev].ST_.
    */
-  static permgrpc antichaindata_ensureStabiliser(antichaindata AD, int lev) {
+  static PermGrpC antichaindata_ensureStabiliser(antichaindata AD, int lev) {
     if (AD.SD[lev].ST_ == null) {
-      AD.SD[lev].ST_ = new permgrpc();
+      AD.SD[lev].ST_ = new PermGrpC();
     }
     return AD.SD[lev].ST_;
   }
@@ -152,7 +152,7 @@ class antichain {
 
     for (i = 0; i < AD.L.nLev - 1; i++) {
       if (i < AD.SD.length && AD.SD[i].ST_ != null) {  // todo SAI added first condition BUG?
-        permgrp.permgrpc_delete(AD.SD[i].ST_);
+        PermGrp.permgrpc_delete(AD.SD[i].ST_);
       }
     }
 // #else

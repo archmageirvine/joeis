@@ -2,7 +2,7 @@ package gebhardt;
 
 import gebhardt.Globals.SiData;
 import gebhardt.antichain.antichaindata;
-import gebhardt.permgrp.permgrpc;
+import gebhardt.PermGrp.PermGrpC;
 
 class canonical {
 	/*
@@ -800,7 +800,7 @@ class canonical {
 	 * stabiliser:  Add to S any generator of the stabiliser of L that arises from different ways of reaching the minimal
 	 * element, and set *SI to the implicit stabiliser of L.  (L is only used in testing mode.)
 	 */
-	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long L) {
+	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, PermGrpC S, int[] SI, long L) {
 		int i;
 		byte[] p = Permutation.create();
 // #ifdef DOTEST
@@ -816,7 +816,7 @@ class canonical {
 					System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
 					Permutation.print(S.mG.mN, p, 0);
 				}
-				permgrp.permgrpc_addGenerator(S, p);
+				PermGrp.addGenerator(S, p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p1(n, lo, hi, p, k, L, &L_);
 // 			if (antichainList_cmp_p1(L, L_)) {
@@ -838,7 +838,7 @@ class canonical {
 	 * stabiliser:  Add to S any generator of the stabiliser of L that arises from different ways of reaching the minimal
 	 * element, and set *SI to the implicit stabiliser of L.  (L is only used in testing mode.)
 	 */
-	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals GD, permgrpc S, int[] SI, long[] L) {
+	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals GD, PermGrpC S, int[] SI, long[] L) {
 		int i;
 		byte[] p = Permutation.create();
 // #ifdef DOTEST
@@ -853,7 +853,7 @@ class canonical {
 // #ifdef VERBOSE
 // 			printf("[antichainList_extractStabiliser_p2]: adding stabiliser generator "); perm_print(S.G.n, p, 0);
 // #endif
-				permgrp.permgrpc_addGenerator(S, p);
+				PermGrp.addGenerator(S, p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p2(n, lo, hi, p, k, L, L_);
 // 			if (antichainList_cmp_p2(L, L_)) {
@@ -874,7 +874,7 @@ class canonical {
 	/*
 	 * Make sure that the generators are stored consecutively in perm, and record which generators are involutions.
 	 */
-	static void permgrpc_compactGenerators(permgrpc G) {
+	static void permgrpc_compactGenerators(PermGrpC G) {
 		final int[] i = new int[1];
 		final int[] j = new int[1];
 
@@ -902,7 +902,7 @@ class canonical {
 	 */
 	static void permgrp_preprocessGenerators(final antichaindata AD) {
 		final lattice L = AD.L;
-		final permgrp G = AD.SD[AD.cl].ST;
+		final PermGrp G = AD.SD[AD.cl].ST;
 		//#ifndef FILTER_GRADED
 		if (AD.cl != 0) {
 			for (int i = 0; i < G.mNgens; i++) {
@@ -935,7 +935,7 @@ class canonical {
 	static void permgrp_preprocessGenerators_blocked(antichaindata AD) {
 		int i;
 		lattice L;
-		permgrp G;
+		PermGrp G;
 
 		L = AD.L;
 		G = AD.SD[AD.cl].ST;
@@ -994,7 +994,7 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen) {
+	static void processElement_1(antichaindata AD, PermGrp G, PermGrpC S, int pos, int gen) {
 		final byte[] h = Permutation.create();
 		final long A = AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0];
 		int Apos = AD.GD.mOrbitSize;
@@ -1041,7 +1041,7 @@ class canonical {
 				Permutation.print(S.mG.mN, h, 0);
 			}
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				permgrp.permgrpc_addGenerator(S, h);
+				PermGrp.addGenerator(S, h);
 			}
 		} else {
 			AD.GD.mOrbitPos.put(A, (long) Apos);
@@ -1072,7 +1072,7 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_p1(antichaindata AD, permgrp G, permgrpc S, int pos, int gen, byte[] p) {
+	static void processElement_p1(antichaindata AD, PermGrp G, PermGrpC S, int pos, int gen, byte[] p) {
 		long A;
 		int Apos;
 		byte[] h = Permutation.create();
@@ -1116,7 +1116,7 @@ class canonical {
 // 		printf("[processElement_p1]: adding stabiliser generator "); perm_print(S.G.n, h, 0);
 // #endif
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				permgrp.permgrpc_addGenerator(S, h);
+				PermGrp.addGenerator(S, h);
 			}
 		} else {
 			AD.GD.mOrbitPos.put(A, (long) Apos);
@@ -1247,8 +1247,8 @@ class canonical {
 	static boolean antichaindata_isCanonical_1(antichaindata AD) {
 		int pos;
 		int gen;
-		permgrp G;
-		permgrpc S;
+		PermGrp G;
+		PermGrpC S;
 
 		if (VERBOSE) {
 			System.out.println("[entering antichaindata_isCanonical_1]: " + AD.cl + " " + AD.SD[AD.cl + 1].ST.mN);
@@ -1274,7 +1274,7 @@ class canonical {
 					}
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					permgrp.permgrpc_init(S, AD.L.n + AD.k);
+					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
 					AD.GD.mOrbitElements[0].mGen = -1;
@@ -1333,7 +1333,7 @@ class canonical {
 					AD.SD[AD.cl].SI = 0;
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					permgrp.permgrpc_init(S, AD.L.n + AD.k);
+					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
 					AD.GD.mOrbitElements[0].mGen = -1;
@@ -1406,7 +1406,7 @@ class canonical {
 				}
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				permgrp.permgrpc_init(S, AD.L.n + AD.k);
+				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2, so G.n == S.n */
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
 				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
@@ -1417,7 +1417,7 @@ class canonical {
 				//#endif
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				permgrp.permgrpc_init(S, AD.L.n + AD.k);
+				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 				//#ifndef FILTER_GRADED
 			} else {
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
@@ -1428,7 +1428,7 @@ class canonical {
 		permgrp_preprocessGenerators(AD);
 		if (VERBOSE) {
 			System.out.printf("***** level %d:\n", AD.cl);
-			permgrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS
@@ -1464,8 +1464,8 @@ class canonical {
 		int pos;
 		long[] M = new long[Utils.MAXN - 2];
 		long mask, pmask;
-		permgrp G;
-		permgrpc S;
+		PermGrp G;
+		PermGrpC S;
 
 		if (VERBOSE) {
 			System.out.println("[entering antichaindata_isCanonical_p1]:");
@@ -1520,7 +1520,7 @@ class canonical {
 					}
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					permgrp.permgrpc_init(S, AD.L.n + AD.k);
+					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 					AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
 					final int[] ugly = {AD.SD[AD.cl].SI};
 					final int xcl = AD.cl;
@@ -1603,7 +1603,7 @@ class canonical {
 					Permutation.init(AD.L.n + AD.k, p);
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					permgrp.permgrpc_init(S, AD.L.n + AD.k);
+					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 					AD.SD[AD.cl].SI = 0;
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
@@ -1716,7 +1716,7 @@ class canonical {
 				}
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				permgrp.permgrpc_init(S, AD.L.n + AD.k);
+				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
 				final int[] ugly = new int[] {AD.SD[AD.cl].SI};
 				final int xcl = AD.cl;
@@ -1733,7 +1733,7 @@ class canonical {
 				//#endif
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				permgrp.permgrpc_init(S, AD.L.n + AD.k);
+				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
 				//#ifndef FILTER_GRADED
 			} else {
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
@@ -1754,7 +1754,7 @@ class canonical {
 		permgrp_preprocessGenerators_blocked(AD);
 		if (VERBOSE) {
 			System.out.printf("***** level %d:\n", AD.cl);
-			permgrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS

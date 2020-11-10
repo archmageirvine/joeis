@@ -5,7 +5,9 @@ package gebhardt;
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
-class permgrp {
+class PermGrp {
+
+  // Original header:
 
 	/*
 	 * permgrp.c
@@ -47,8 +49,8 @@ class permgrp {
 		int[] mPerm = new int[Utils.MAXN - 2];  /* if i is a neighbour, perm[i] is the index in perm/invperm for the edge to i */
 	}
 
-	static class permgrpc {
-		permgrp mG = new permgrp();
+	static class PermGrpC {
+		PermGrp mG = new PermGrp();
 		JVertexT[] mJerrum = new JVertexT[Utils.MAXN - 2];  /* graph used for Jerrum's filter */
 		int mFreePerm;        /* indicating unused indices in perm/inverm */
     {
@@ -61,8 +63,8 @@ class permgrp {
 	/*
 	 * Allocate space for a permutation group (permgrp); the group is NOT initialised.
 	 */
-	static permgrp permgrp_alloc() {
-		final permgrp G = new permgrp();
+	static PermGrp permgrp_alloc() {
+		final PermGrp G = new PermGrp();
 		G.mRefCount = 1;
 		G.mBenesValid = 0;
 		return G;
@@ -71,8 +73,8 @@ class permgrp {
 	/*
 	 * Allocate space for a permutation group (permgrpc); the group is NOT initialised.
 	 */
-	static permgrpc permgrpc_alloc() {
-		permgrpc G = new permgrpc();
+	static PermGrpC permgrpc_alloc() {
+		PermGrpC G = new PermGrpC();
 		G.mG = permgrp_alloc();
 		return G;
 	}
@@ -84,7 +86,7 @@ class permgrp {
 	/*
 	 * Delete all Beneš networks stored in G.
 	 */
-	static void permgrp_clearBenes(final permgrp G) {
+	static void permgrp_clearBenes(final PermGrp G) {
 		final int[] i = new int[1];
 
 		final int[] ugly = new int[] {G.mBenesValid};  // todo avoid this
@@ -100,7 +102,7 @@ class permgrp {
 	/*
 	 * Set G to the trivial permutation group on n points.
 	 */
-	static void init(permgrp G, int n) {
+	static void init(PermGrp G, int n) {
 		permgrp_clearBenes(G);
 		G.mN = n;
 		G.mNgens = 0;
@@ -109,7 +111,7 @@ class permgrp {
 	/*
 	 * Set G to the trivial permutation group on n points.
 	 */
-	static void permgrpc_init(permgrpc G, int n) {
+	static void permgrpc_init(PermGrpC G, int n) {
 		init(G.mG, n);
 		G.mFreePerm = Utils.allBits32(Utils.MAXN - 2);
 		for (int i = 0; i < n; i++) {
@@ -121,7 +123,7 @@ class permgrp {
 	/*
 	 * Increment the reference count for *G and return *G.
 	 */
-	static permgrp permgrp_incref(permgrp G) {
+	static PermGrp permgrp_incref(PermGrp G) {
 		G.mRefCount++;
 		return G;
 	}
@@ -130,7 +132,7 @@ class permgrp {
 	/*
 	 * Copy G to H.
 	 */
-	static void permgrp_cpy(permgrp G, permgrp H) {
+	static void permgrp_cpy(PermGrp G, PermGrp H) {
 		permgrp_clearBenes(H);
 		H.mRefCount = 1;
 		final int n = H.mN = G.mN;
@@ -164,7 +166,7 @@ class permgrp {
 	/*
 	 * Decrement the reference count for *G, and free the allocated memory if the reference count reaches 0.
 	 */
-	static void permgrp_delete(permgrp G) {
+	static void permgrp_delete(PermGrp G) {
 		if ((--(G.mRefCount)) == 0) {
 			permgrp_clearBenes(G);
 			//free(G);
@@ -175,7 +177,7 @@ class permgrp {
 	/*
 	 * Delete the group *G.
 	 */
-	static void permgrpc_delete(permgrpc G) {
+	static void permgrpc_delete(PermGrpC G) {
 		permgrp_delete(G.mG);
 		//free(G);
 	}
@@ -195,7 +197,7 @@ class permgrp {
 	 * If so, the product of the generators along the cycle is returned in k, and (*m)--(*nm) is the
 	 * first edge of the cycle.
 	 */
-	static boolean jerrumCreatesCycle(permgrpc G, int i, int j, byte[] p, byte[] h, int[] m, int[] nm) {
+	static boolean jerrumCreatesCycle(PermGrpC G, int i, int j, byte[] p, byte[] h, int[] m, int[] nm) {
 		int[] anc = new int[ Utils.MAXN - 2];
 		int[] todo = new int[ Utils.MAXN - 2];
 		int ntodo, pos, min, u;
@@ -248,7 +250,7 @@ class permgrp {
 	/*
 	 * Insert the generator p, where i is the smallest point in the support of p and j=p[i].
 	 */
-	static void JerrumInsertGenerator(permgrpc G, byte[] p, int i, int j) {
+	private static void jerrumInsertGenerator(PermGrpC G, byte[] p, int i, int j) {
 		int[] g = new int[1];
 
 		final int[] ugly = {G.mFreePerm}; // todo
@@ -267,7 +269,7 @@ class permgrp {
 	/*
 	 * Remove the generator associated to the edge from i to j.
 	 */
-	static void JerrumRemoveGenerator(permgrpc G, int i, int j) {
+	private static void jerrumRemoveGenerator(PermGrpC G, int i, int j) {
 		int g;
 
 		g = G.mJerrum[i].mPerm[j];
@@ -279,7 +281,7 @@ class permgrp {
 	/*
 	 * Add the permutation p as a generator of G.  The permutation p *must* be nontrivial!
 	 */
-	static void permgrpc_addGenerator(permgrpc G, byte[] p) {
+	static void addGenerator(PermGrpC G, byte[] p) {
 		int i, j;
 
 		i = Permutation.minSupport(G.mG.mN, p);
@@ -292,21 +294,21 @@ class permgrp {
 				&& Permutation.compare(G.mG.mN, p, G.mG.mInvPerm[k]) != 0) {
 				/* ...there is a generator k so that h=g*k^-1 fixes i; add h instead of g */
 				Permutation.multiply(G.mG.mN, p, G.mG.mInvPerm[k], h);
-				permgrpc_addGenerator(G, h);
+				addGenerator(G, h);
 			}
 		} else {
 			byte[] h = Permutation.create();
 			int[] m = new int[1], nm = new int[1];
 			if (jerrumCreatesCycle(G, i, j, p, h, m, nm)){
 				if (m[0] != i) {
-					JerrumRemoveGenerator(G, m[0], nm[0]);
-					JerrumInsertGenerator(G, p, i, j);
+					jerrumRemoveGenerator(G, m[0], nm[0]);
+					jerrumInsertGenerator(G, p, i, j);
 				}
 				if (!Permutation.isIdentity(G.mG.mN, h)) {
-          permgrpc_addGenerator(G, h);
+          addGenerator(G, h);
         }
 			} else{
-				JerrumInsertGenerator(G, p, i, j);
+				jerrumInsertGenerator(G, p, i, j);
 			}
 		}
 
@@ -316,7 +318,7 @@ class permgrp {
 	/*
 	 * TEST FUNCTION:  Print current generators (in array notation).
 	 */
-	static void permgrp_printGenerators(permgrp G, int offset) {
+	static void permgrp_printGenerators(PermGrp G, int offset) {
 		for (int i = 0; i < G.mNgens; i++) {
       Permutation.print(G.mN, G.mPerm[i], offset);
     }

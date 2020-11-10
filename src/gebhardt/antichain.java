@@ -2,8 +2,6 @@ package gebhardt;
 
 import java.util.Arrays;
 
-import gebhardt.PermGrp.PermGrpC;
-
 class antichain {
   /*
    * antichain.c

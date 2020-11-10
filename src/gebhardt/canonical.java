@@ -2,7 +2,6 @@ package gebhardt;
 
 import gebhardt.Globals.SiData;
 import gebhardt.antichain.antichaindata;
-import gebhardt.PermGrp.PermGrpC;
 
 class canonical {
 	/*
@@ -1274,7 +1273,7 @@ class canonical {
 					}
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					S.init(AD.L.n + AD.k);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
 					AD.GD.mOrbitElements[0].mGen = -1;
@@ -1333,7 +1332,7 @@ class canonical {
 					AD.SD[AD.cl].SI = 0;
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					S.init(AD.L.n + AD.k);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
 					AD.GD.mOrbitElements[0].mGen = -1;
@@ -1406,7 +1405,7 @@ class canonical {
 				}
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S.init(AD.L.n + AD.k);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2, so G.n == S.n */
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
 				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
@@ -1417,7 +1416,7 @@ class canonical {
 				//#endif
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S.init(AD.L.n + AD.k);
 				//#ifndef FILTER_GRADED
 			} else {
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
@@ -1520,7 +1519,7 @@ class canonical {
 					}
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					S.init(AD.L.n + AD.k);
 					AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
 					final int[] ugly = {AD.SD[AD.cl].SI};
 					final int xcl = AD.cl;
@@ -1603,7 +1602,7 @@ class canonical {
 					Permutation.init(AD.L.n + AD.k, p);
 					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					S.init(AD.L.n + AD.k);
 					AD.SD[AD.cl].SI = 0;
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.GD.mOrbitSize = 1;
@@ -1716,7 +1715,7 @@ class canonical {
 				}
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S.init(AD.L.n + AD.k);
 				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
 				final int[] ugly = new int[] {AD.SD[AD.cl].SI};
 				final int xcl = AD.cl;
@@ -1733,7 +1732,7 @@ class canonical {
 				//#endif
 				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
 				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S.init(AD.L.n + AD.k);
 				//#ifndef FILTER_GRADED
 			} else {
 				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;

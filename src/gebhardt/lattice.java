@@ -595,8 +595,7 @@ public class lattice {
 		final lattice L = new lattice();
 		PermGrp S;
 
-		S = PermGrp.permgrp_alloc();
-		PermGrp.init(S, 0);
+		S = new PermGrp();
 		lattice_fromString(L, 2, "1", S, 0);
 		//PermGrp.permgrp_delete(S);
 		return L;
@@ -610,8 +609,7 @@ public class lattice {
 		for (int i = 0; i < k; i++) {
 			L.up[i] = L.lo[i] = (int) BIT(i);
 		}
-		final PermGrp S = PermGrp.permgrp_alloc();
-		PermGrp.init(S, 0);
+		final PermGrp S = new PermGrp();
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
     //PermGrp.permgrp_delete(S);

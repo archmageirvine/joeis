@@ -151,8 +151,8 @@ class permgrp {
 //    }
 		H.ngens = G.ngens;
 		for (int i = 0; i < n; i++) { /* We need G.n instead of G.ngens for permgrpc_cpy to work in the general case! */
-			permutation.perm_cpy(n, G.perm[i], H.perm[i]);
-			permutation.perm_cpy(n, G.invperm[i], H.invperm[i]);
+			Permutation.copy(n, G.perm[i], H.perm[i]);
+			Permutation.copy(n, G.invperm[i], H.invperm[i]);
 		}
 		H.invol = G.invol;
 	}
@@ -233,21 +233,21 @@ class permgrp {
 					m[0] = min;
 					nm[0] = anc[min];
 					if (min == i) {
-						permutation.perm_cpy(G.G.n, p, h);
+						Permutation.copy(G.G.n, p, h);
 						for (u = j; u != i; u = v[0]) {
 							v[0] = anc[u];
-							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+							Permutation.multiply(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
 						}
 					} else {
-						permutation.perm_cpy(G.G.n, G.G.perm[G.Jerrum[min].perm[anc[min]]], h);
+						Permutation.copy(G.G.n, G.G.perm[G.Jerrum[min].perm[anc[min]]], h);
 						for (u = anc[min]; u != i; u = v[0]) {
 							v[0] = anc[u];
-							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+							Permutation.multiply(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
 						}
-						permutation.perm_mult(G.G.n, h, p, h);
+						Permutation.multiply(G.G.n, h, p, h);
 						for (u = j; u != min; u = v[0]) {
 							v[0] = anc[u];
-							permutation.perm_mult(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
+							Permutation.multiply(G.G.n, h, (u < v[0] ? G.G.perm : G.G.invperm)[G.Jerrum[u].perm[v[0]]], h);
 						}
 					}
 					return true;
@@ -269,10 +269,10 @@ class permgrp {
 		final int[] ugly = {G.freeperm}; // todo
 		Constants.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
 		G.freeperm = ugly[0];
-    G.G.perm[g[0]] = permutation.create();
-    G.G.invperm[g[0]] = permutation.create();
-		permutation.perm_cpy(G.G.n, p, G.G.perm[g[0]]);
-		permutation.perm_inv(G.G.n, p, G.G.invperm[g[0]]);
+    G.G.perm[g[0]] = Permutation.create();
+    G.G.invperm[g[0]] = Permutation.create();
+		Permutation.copy(G.G.n, p, G.G.perm[g[0]]);
+		Permutation.inverse(G.G.n, p, G.G.invperm[g[0]]);
 		G.Jerrum[i].neighbours |= BIT(j);
 		G.Jerrum[i].perm[j] = g[0];
 		G.Jerrum[j].neighbours |= BIT(i);
@@ -297,27 +297,27 @@ class permgrp {
 	static void permgrpc_addGenerator(permgrpc G, byte[] p) {
 		int i, j;
 
-		i = permutation.perm_minSupport(G.G.n, p);
+		i = Permutation.minSupport(G.G.n, p);
 		j = p[i];
 		if ((G.Jerrum[i].neighbours & BIT(j)) != 0) {
 			int k;
-			byte[] h = permutation.create();
+			byte[] h = Permutation.create();
 			/* j is already a neighbour of i; unless we have a duplicate generator... */
-			if (permutation.perm_cmp(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]]) != 0
-				&& permutation.perm_cmp(G.G.n, p, G.G.invperm[k]) != 0) {
+			if (Permutation.compare(G.G.n, p, G.G.perm[k = G.Jerrum[i].perm[j]]) != 0
+				&& Permutation.compare(G.G.n, p, G.G.invperm[k]) != 0) {
 				/* ...there is a generator k so that h=g*k^-1 fixes i; add h instead of g */
-				permutation.perm_mult(G.G.n, p, G.G.invperm[k], h);
+				Permutation.multiply(G.G.n, p, G.G.invperm[k], h);
 				permgrpc_addGenerator(G, h);
 			}
 		} else {
-			byte[] h = permutation.create();
+			byte[] h = Permutation.create();
 			int[] m = new int[1], nm = new int[1];
 			if (JerrumCreatesCycle(G, i, j, p, h, m, nm)){
 				if (m[0] != i) {
 					JerrumRemoveGenerator(G, m[0], nm[0]);
 					JerrumInsertGenerator(G, p, i, j);
 				}
-				if (!permutation.perm_isId(G.G.n, h)) {
+				if (!Permutation.isIdentity(G.G.n, h)) {
           permgrpc_addGenerator(G, h);
         }
 			} else{
@@ -333,7 +333,7 @@ class permgrp {
 	 */
 	static void permgrp_printGenerators(permgrp G, int offset) {
 		for (int i = 0; i < G.ngens; i++) {
-      permutation.perm_print(G.n, G.perm[i], offset);
+      Permutation.print(G.n, G.perm[i], offset);
     }
 	}
 }

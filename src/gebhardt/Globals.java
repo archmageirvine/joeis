@@ -4,11 +4,13 @@ import java.util.Arrays;
 import java.util.TreeMap;
 
 /**
- * Permutations.
+ * Global information.
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
 public class Globals {
+
+	// Original header:
 
 	/*
 	 * globals.c
@@ -35,42 +37,37 @@ public class Globals {
 	 *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 	 */
 
-	//typedef struct orbitelt orbitelt;
-	static class orbitelt {
-		long[] data = new long[2]; /* the antichains */
-		byte[] toRoot = permutation.create();  /* permutation to root */
-		int gen;     /* index of generator whose application yielded the antichains */
+	static class OrbitElement {
+		long[] mData = new long[2]; /* the antichains */
+		byte[] mToRoot = Permutation.create();  /* permutation to root */
+		int mGen;     /* index of generator whose application yielded the antichains */
 	}
 
-	//typedef struct SIdata SIdata;
-	static class SIdata {
-		long[] rep = new long[2];  /* the partially resorted antichains */
-		int S;       /* S & BIT[j] indicates that the elements j-1 and j are in the same subset of the partition */
-		byte[] p;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
+	static class SiData {
+		long[] mRep = new long[2];  /* the partially resorted antichains */
+		int mS;       /* S & BIT[j] indicates that the elements j-1 and j are in the same subset of the partition */
+		byte[] mP;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
 	}
 
-	//typedef struct globals globals;
-	//struct globals {
-	int orbspace;
-	int orbsize;
-	orbitelt[] orb;
-	int SIspace;
-	long SI0size;
-	SIdata[] SI0;
-	SIdata[] SI1;
-	TreeMap<Long, Long> orbpos; //hashtable[] orbpos;
-	//};
+	int mOrbitSpace;
+	int mOrbitSize;
+	OrbitElement[] mOrbitElements;
+	int mSiSpace;
+	long mSi0Size;
+	SiData[] mSi0;
+	SiData[] mSi1;
+	TreeMap<Long, Long> mOrbitPos;
 
 
 	/*
 	 * Double the number of orbit elements that can be stored.
 	 */
-	static void globals_enlargen_orbitspace(Globals GD) {
-		GD.orbspace *= 2;
-		int k = GD.orb.length;
-		GD.orb = Arrays.copyOf(GD.orb, GD.orbspace);
-		while (k < GD.orb.length) {
-			GD.orb[k++] = new orbitelt();
+	static void enlargenOrbitSpace(Globals globals) {
+		globals.mOrbitSpace *= 2;
+		int k = globals.mOrbitElements.length;
+		globals.mOrbitElements = Arrays.copyOf(globals.mOrbitElements, globals.mOrbitSpace);
+		while (k < globals.mOrbitElements.length) {
+			globals.mOrbitElements[k++] = new OrbitElement();
 		}
 	}
 
@@ -79,13 +76,13 @@ public class Globals {
 	 * Double the number of SI data records that can be stored.
 	 */
 	static void globals_enlargen_SIspace(Globals GD) {
-		GD.SIspace *= 2;
-		int k = GD.SI0.length;
-		GD.SI0 = Arrays.copyOf(GD.SI0, GD.SIspace);
-		GD.SI1 = Arrays.copyOf(GD.SI1, GD.SIspace);
-		while (k < GD.SI0.length) {
-			GD.SI0[k] = new SIdata();
-			GD.SI1[k] = new SIdata();
+		GD.mSiSpace *= 2;
+		int k = GD.mSi0.length;
+		GD.mSi0 = Arrays.copyOf(GD.mSi0, GD.mSiSpace);
+		GD.mSi1 = Arrays.copyOf(GD.mSi1, GD.mSiSpace);
+		while (k < GD.mSi0.length) {
+			GD.mSi0[k] = new SiData();
+			GD.mSi1[k] = new SiData();
 			++k;
 		}
 	}
@@ -96,19 +93,19 @@ public class Globals {
 	 */
 	public static Globals globals_init() {
 		final Globals GD = new Globals();
-		GD.orbspace = Constants.ORBITS_INITIAL_ORBSPACE;
-		GD.orbsize = 0;
-		GD.orb = new orbitelt[Constants.ORBITS_INITIAL_ORBSPACE];
-		for (int k = 0; k < GD.orb.length; ++k) {
-			GD.orb[k] = new orbitelt();
+		GD.mOrbitSpace = Constants.ORBITS_INITIAL_ORBSPACE;
+		GD.mOrbitSize = 0;
+		GD.mOrbitElements = new OrbitElement[Constants.ORBITS_INITIAL_ORBSPACE];
+		for (int k = 0; k < GD.mOrbitElements.length; ++k) {
+			GD.mOrbitElements[k] = new OrbitElement();
 		}
-		GD.orbpos = new TreeMap<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
-		GD.SIspace = Constants.ORBITS_INITIAL_SISPACE;
-		GD.SI0 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];
-		GD.SI1 = new SIdata[Constants.ORBITS_INITIAL_SISPACE];
+		GD.mOrbitPos = new TreeMap<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
+		GD.mSiSpace = Constants.ORBITS_INITIAL_SISPACE;
+		GD.mSi0 = new SiData[Constants.ORBITS_INITIAL_SISPACE];
+		GD.mSi1 = new SiData[Constants.ORBITS_INITIAL_SISPACE];
 		for (int k = 0; k < Constants.ORBITS_INITIAL_SISPACE; ++k) {
-			GD.SI0[k] = new SIdata();
-			GD.SI1[k] = new SIdata();
+			GD.mSi0[k] = new SiData();
+			GD.mSi1[k] = new SiData();
 		}
 		return GD;
 	}

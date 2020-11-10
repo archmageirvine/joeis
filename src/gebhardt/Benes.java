@@ -88,8 +88,8 @@ public class Benes {
   static Benes benes_get(byte[] p, byte[] pi, int lo, int hi) {
 
     int n = hi - lo;
-    byte[] src = permutation.create();
-    byte[] inv_src = permutation.create();
+    byte[] src = Permutation.create();
+    byte[] inv_src = Permutation.create();
     if (n <= BENES_SMALL) {
       for (int j = 0; j < n; j++) {
         src[j] = (byte) (p[lo + j] - lo);
@@ -97,7 +97,7 @@ public class Benes {
 //      System.out.println("SAI: " + n + " " + benes_small[n].length + " " + permutation.perm_toInteger(n, src));
 //      permutation.perm_print(n, src, 0);
 //      permutation.perm_print(hi, p, 0);
-      return benes_small[n][(int) permutation.perm_toInteger(n, src)];  /* no incref: Beneš network is persistent */
+      return benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Beneš network is persistent */
     } else {
       for (int j = 0; j < n; j++) {
         src[j] = (byte) (p[lo + j] - lo);
@@ -124,13 +124,13 @@ public class Benes {
     final Benes B = new Benes();
 
     n = hi - lo;
-    byte[] src = permutation.create();
-    byte[] inv_src = permutation.create();
+    byte[] src = Permutation.create();
+    byte[] inv_src = Permutation.create();
     if (n <= BENES_SMALL) {
       for (j = 0; j < n; j++) {
         src[j] = (byte)(p[lo + j] - lo);
       }
-      T = benes_small[n][(int) permutation.perm_toInteger(n, src)];  /* no incref: Beneš network is persistent */
+      T = benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Beneš network is persistent */
 // #if BENES_DOPREFETCH
 // 	    __builtin_prefetch((void*)(T));
 // 	    __builtin_prefetch((void*)(T+64));
@@ -324,8 +324,8 @@ public class Benes {
     int ld_n = ceil_ld(n);
     Fpos = 0;
     Bpos = 2 * ld_n - 1;
-    byte[] tgt = ByteUtils.identity(permutation.create());
-    byte[] inv_tgt = ByteUtils.identity(permutation.create());
+    byte[] tgt = ByteUtils.identity(Permutation.create());
+    byte[] inv_tgt = ByteUtils.identity(Permutation.create());
 // #ifdef BENESVERBOSE
 // 	printf("=== entering benes_create for ");
 // 	perm_print(n, src, 0);
@@ -531,14 +531,14 @@ public class Benes {
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
       benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
-      final byte[] p = ByteUtils.identity(permutation.create()); //perm_init(n, p);
+      final byte[] p = ByteUtils.identity(Permutation.create()); //perm_init(n, p);
       do {
         final byte[] p_ = Arrays.copyOf(p, p.length);
-        final byte[] pi_ = permutation.perm_inv(n[0], p);
+        final byte[] pi_ = Permutation.inverse(n[0], p);
         final Benes B = benes_create(n[0], p_, pi_);
         B.refcount = -1;
-        benes_small[n[0]][(int) permutation.perm_toInteger(n[0], p)] = B;
-      } while (permutation.perm_next(1, n, p));  /* a single level: 0..n-1 */
+        benes_small[n[0]][(int) Permutation.toInteger(n[0], p)] = B;
+      } while (Permutation.next(1, n, p));  /* a single level: 0..n-1 */
     }
   }
 

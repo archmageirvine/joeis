@@ -1,11 +1,11 @@
 package gebhardt;
 
 /**
- * Constants for posets.
+ * Utilities for posets.
  * @author Volker Gebhardt
  * @author Sean A. Irvine
  */
-public class Constants {
+public class Utils {
 
   public static final int MAXN = 22;
   public static final int MAXN_EVEN = 1;

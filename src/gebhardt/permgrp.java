@@ -34,12 +34,12 @@ class permgrp {
 
 
 	long refcount;               /* reference count */
-	byte[][] perm = new byte[Constants.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
-	byte[][] invperm = new byte[Constants.MAXN - 2][];        /* permutations for inverses of generators */
+	byte[][] perm = new byte[Utils.MAXN - 2][];           /* permutations for generators; DATA IS NOT CONSECUTIVE DURING CONSTRUCTION */
+	byte[][] invperm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
 	int invol;                  /* invol & BIT[i] indicates whether generator i is an involution */
 	int BenesValid;             /* which levels of array Benes contain valid pointers */
 	// #ifndef FILTER_GRADED
- 	Benes[][]  benes = new Benes[Constants.MAXN-2][Constants.MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
+ 	Benes[][]  benes = new Benes[Utils.MAXN-2][Utils.MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
 // #else
 //	Benes[][] benes = new Benes[1][Constants.MAXN - 2];
 	//#endif
@@ -48,12 +48,12 @@ class permgrp {
 
 	static class JVertexT {
 		int neighbours;    /* indicating which vertices are neighbours */
-		int[] perm = new int[Constants.MAXN - 2];  /* if i is a neighbour, perm[i] is the index in perm/invperm for the edge to i */
+		int[] perm = new int[Utils.MAXN - 2];  /* if i is a neighbour, perm[i] is the index in perm/invperm for the edge to i */
 	}
 
 	static class permgrpc {
 		permgrp G = new permgrp();
-		JVertexT[] Jerrum = new JVertexT[Constants.MAXN - 2];  /* graph used for Jerrum's filter */
+		JVertexT[] Jerrum = new JVertexT[Utils.MAXN - 2];  /* graph used for Jerrum's filter */
 		int freeperm;        /* indicating unused indices in perm/inverm */
     {
       for (int k = 0; k < Jerrum.length; ++k) {
@@ -82,8 +82,8 @@ class permgrp {
 	}
 
 	private static long BIT(final long i) {
-		return Benes.BIT(i);
-	}
+    return Utils.BIT(i); // todo inline
+  }
 
 	/*
 	 * Delete all Beneš networks stored in G.
@@ -92,10 +92,10 @@ class permgrp {
 		final int[] i = new int[1];
 
 		final int[] ugly = new int[] {G.BenesValid};  // todo avoid this
-		while (Constants.extract_LSB32(ugly,i)){
-			for (int j = 0; j < G.ngens; j++) {
-				Benes.benes_delete(G.benes[i[0]][j]);
-			}
+		while (Utils.extract_LSB32(ugly,i)){
+//			for (int j = 0; j < G.ngens; j++) {
+//				Benes.delete(G.benes[i[0]][j]);
+//			}
 		}
 		G.BenesValid = ugly[0];
 	}
@@ -123,7 +123,7 @@ class permgrp {
       System.out.println("SAI: permgrpc_init " + n);
     }
 		permgrp_init(G.G, n);
-		G.freeperm = Constants.allBits32(Constants.MAXN - 2);
+		G.freeperm = Utils.allBits32(Utils.MAXN - 2);
 		for (int i = 0; i < n; i++) {
       G.Jerrum[i].neighbours = 0;
     }
@@ -211,8 +211,8 @@ class permgrp {
 	 * first edge of the cycle.
 	 */
 	static boolean JerrumCreatesCycle(permgrpc G, int i, int j, byte[] p, byte[] h, int[] m, int[] nm) {
-		int[] anc = new int[ Constants.MAXN - 2];
-		int[] todo = new int[ Constants.MAXN - 2];
+		int[] anc = new int[ Utils.MAXN - 2];
+		int[] todo = new int[ Utils.MAXN - 2];
 		int ntodo, pos, min, u;
 		int unseen;
 		final int[] v = new int[1];
@@ -224,7 +224,7 @@ class permgrp {
 			int nu;
 			u = todo[pos];
 			nu = G.Jerrum[u].neighbours;
-			while (Constants.get_LSB32(nu & unseen, v)){
+			while (Utils.get_LSB32(nu & unseen, v)){
 				anc[v[0]] = u;
 				if (v[0] == j) {
 					for (min = i, u = j; u != i; u = anc[u]) {
@@ -267,7 +267,7 @@ class permgrp {
 		int[] g = new int[1];
 
 		final int[] ugly = {G.freeperm}; // todo
-		Constants.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
+		Utils.extract_LSB32(ugly, g);  /* sorry GCC: there must be a free slot, so g *is* initialised here */
 		G.freeperm = ugly[0];
     G.G.perm[g[0]] = Permutation.create();
     G.G.invperm[g[0]] = Permutation.create();

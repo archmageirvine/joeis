@@ -49,15 +49,30 @@ public class Globals {
 		byte[] mP;       /* initial permutation right-multiplied by the performed reordering of elements and antichains */
 	}
 
-	int mOrbitSpace;
-	int mOrbitSize;
+	int mOrbitSpace = Utils.ORBITS_INITIAL_ORBSPACE;
+	int mOrbitSize = 0;
 	OrbitElement[] mOrbitElements;
-	int mSiSpace;
+	int mSiSpace = Utils.ORBITS_INITIAL_SISPACE;;
 	long mSi0Size;
 	SiData[] mSi0;
 	SiData[] mSi1;
-	TreeMap<Long, Long> mOrbitPos;
+	TreeMap<Long, Long> mOrbitPos = new TreeMap<>();
 
+  /**
+   * Initialise storage space for orbit/stabiliser computation.
+   */
+  public Globals() {
+    mOrbitElements = new OrbitElement[Utils.ORBITS_INITIAL_ORBSPACE];
+    for (int k = 0; k < mOrbitElements.length; ++k) {
+      mOrbitElements[k] = new OrbitElement();
+    }
+    mSi0 = new SiData[Utils.ORBITS_INITIAL_SISPACE];
+    mSi1 = new SiData[Utils.ORBITS_INITIAL_SISPACE];
+    for (int k = 0; k < Utils.ORBITS_INITIAL_SISPACE; ++k) {
+      mSi0[k] = new SiData();
+      mSi1[k] = new SiData();
+    }
+  }
 
 	/*
 	 * Double the number of orbit elements that can be stored.
@@ -86,37 +101,4 @@ public class Globals {
 		}
 	}
 
-
-	/**
-	 * Initialise storage space for orbit/stabiliser computation.
-	 */
-	public static Globals globals_init() {
-		final Globals GD = new Globals();
-		GD.mOrbitSpace = Constants.ORBITS_INITIAL_ORBSPACE;
-		GD.mOrbitSize = 0;
-		GD.mOrbitElements = new OrbitElement[Constants.ORBITS_INITIAL_ORBSPACE];
-		for (int k = 0; k < GD.mOrbitElements.length; ++k) {
-			GD.mOrbitElements[k] = new OrbitElement();
-		}
-		GD.mOrbitPos = new TreeMap<>(); //hashtable_init(ORBITS_HASHTABLE_LD_SIZE);
-		GD.mSiSpace = Constants.ORBITS_INITIAL_SISPACE;
-		GD.mSi0 = new SiData[Constants.ORBITS_INITIAL_SISPACE];
-		GD.mSi1 = new SiData[Constants.ORBITS_INITIAL_SISPACE];
-		for (int k = 0; k < Constants.ORBITS_INITIAL_SISPACE; ++k) {
-			GD.mSi0[k] = new SiData();
-			GD.mSi1[k] = new SiData();
-		}
-		return GD;
-	}
-
-
-	/*
-	 * Free allocated storage space for orbit/stabiliser computation.
-	 */
-	void globals_free(Globals GD) {
-		// free(GD.orb);
-		//     hashtable_free(GD.orbpos);
-		//     free(GD.SI0);
-		//     free(GD.SI1);
-	}
 }

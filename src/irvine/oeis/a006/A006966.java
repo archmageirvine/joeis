@@ -1,7 +1,7 @@
 package irvine.oeis.a006;
 
 import gebhardt.Benes;
-import gebhardt.Constants;
+import gebhardt.Utils;
 import gebhardt.Globals;
 import gebhardt.lattEnum;
 import gebhardt.lattice;
@@ -53,37 +53,36 @@ public class A006966 implements Sequence {
   private static void bitmap_init(long N) {
     long bits, a1, b1, a2, b2;
 
-    bits = Constants.BITSPERFLAGS64;
-    if (Constants.MAXN > bits) {
+    bits = Utils.BITSPERFLAGS64;
+    if (Utils.MAXN > bits) {
       throw new UnsupportedOperationException("Build problem: flags64 cannot hold MAXN bits!");
     }
     b1 = (long) Math.floor(Math.sqrt(bits));
     a1 = bits / b1;
     b2 = (long) Math.ceil(Math.sqrt(bits));
     a2 = bits / b2;
-    if (Constants.MAXN > 2 * a1 + b1 + 2 || Constants.MAXN > 2 * a2 + b2 + 2) {
+    if (Utils.MAXN > 2 * a1 + b1 + 2 || Utils.MAXN > 2 * a2 + b2 + 2) {
       throw new UnsupportedOperationException("Build problem: packed antichain lists don't fit into two flags64!");
     }
-    if (N > Constants.MAXN) {
-      throw new UnsupportedOperationException("The maximal number of elements with this executable is " + Constants.MAXN);
+    if (N > Utils.MAXN) {
+      throw new UnsupportedOperationException("The maximal number of elements with this executable is " + Utils.MAXN);
     }
-    if ((Constants.MAXN_EVEN & Constants.MAXN) != 0) {
+    if ((Utils.MAXN_EVEN & Utils.MAXN) != 0) {
       throw new UnsupportedOperationException("Build problem: Specified parity of MAXN is wrong!");
     }
-    if ((long) Math.ceil(Math.log(Constants.MAXN - 2) / Math.log(2)) != Constants.LD_MAXN_2) {
+    if ((long) Math.ceil(Math.log(Utils.MAXN - 2) / Math.log(2)) != Utils.LD_MAXN_2) {
       throw new UnsupportedOperationException("Build problem: Specified value of LD_MAXN_2 is wrong!");
     }
-    if (Long.compareUnsigned(Constants.FSIZE, 1L << (Long.SIZE - 1)) >= 0) {
+    if (Long.compareUnsigned(Utils.FSIZE, 1L << (Long.SIZE - 1)) >= 0) {
       throw new UnsupportedOperationException("Build problem: elt cannot hold offsets in antichain.F!");
     }
   }
 
   private int mN = -1;
-  //private int mN = 7;
   {
-    Benes.benes_init_small();
+    Benes.initSmall();
   }
-  final Globals GD = Globals.globals_init();
+  final Globals mGlobals = new Globals();
   final lattice L = lattice.lattice_init_2();
 
   @Override
@@ -92,7 +91,7 @@ public class A006966 implements Sequence {
       return Z.ONE;
     }
     bitmap_init(mN);
-    final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, GD);
+    final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, mGlobals);
     lattEnum.lattEnum_doEnumeration(E);
     return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
     //return null; // temp

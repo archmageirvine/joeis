@@ -39,7 +39,7 @@ public class Permutation {
 
   /** Create an empty pemutation. */
   static byte[] create() {
-    return new byte[Constants.MAXN - 2];
+    return new byte[Utils.MAXN - 2];
   }
 
   /*

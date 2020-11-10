@@ -53,11 +53,11 @@ public class lattice {
 
 	//typedef struct lattice lattice;
 	//struct lattice {
-	int[] up = new int[	Constants.MAXN-2];
-	int[] lo = new int[	Constants.MAXN-2];
+	int[] up = new int[	Utils.MAXN-2];
+	int[] lo = new int[	Utils.MAXN-2];
 	permgrp S;
 	int SI;
-	byte[] lev = new byte[	Constants.MAXN-1];
+	byte[] lev = new byte[	Utils.MAXN-1];
 	byte n;
 	int nLev;
 // #if 0
@@ -81,8 +81,8 @@ public class lattice {
 //	}
 
 	private static long BIT(final long i) {
-		return Benes.BIT(i);
-	}
+    return Utils.BIT(i); // todo inline
+  }
 
 	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
@@ -154,7 +154,7 @@ public class lattice {
 		for (int i = L.n; i-- != 0; ) {
 			co[i] = 0;
 			Ui = L.up[i] ^ (int) BIT(i);
-			while (Constants.get_MSB32(Ui, j)){
+			while (Utils.get_MSB32(Ui, j)){
 				co[i] |= BIT(j[0]);
 				Ui &= ~(L.up[j[0]]);
 			}
@@ -345,7 +345,7 @@ public class lattice {
 		final StringBuilder sb = new StringBuilder();
 		int i, j;
 		int pos;
-		int[] co = new int[ Constants.MAXN - 2];
+		int[] co = new int[ Utils.MAXN - 2];
 
 		lattice_getCoveringRelation(co, L);
 		pos = 0;
@@ -372,8 +372,8 @@ public class lattice {
 	static boolean lattice_fromString(lattice L, int n, String s, permgrp S, int SI) {
 		int d, i, j;
 		int pos;
-		int[] co = new int[ Constants.MAXN - 2];
-		int[] dep = new int[ Constants.MAXN - 2];
+		int[] co = new int[ Utils.MAXN - 2];
+		int[] dep = new int[ Utils.MAXN - 2];
 
 		if (s.length() != (n * (n - 1)) / 2) {
 // #ifdef DOTEST
@@ -540,7 +540,7 @@ public class lattice {
 	 */
 	static void lattice_print(lattice L) {
 		int d, i=0, j;
-		int[] co = new int[Constants.MAXN - 2];
+		int[] co = new int[Utils.MAXN - 2];
 		boolean first;
 
 		lattice_getCoveringRelation(co, L);
@@ -588,7 +588,7 @@ public class lattice {
 		permgrp.permgrp_printGenerators(L.S, 0);
 		final int[] SI = {L.SI};
 		final int[] ii = {i};
-		while (Constants.extract_LSB32(SI, ii)) {
+		while (Utils.extract_LSB32(SI, ii)) {
 			System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
 		}
 	}

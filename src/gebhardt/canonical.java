@@ -40,7 +40,7 @@ class canonical {
 
 	// #endif
 	static long BIT(final long i) {
-		return Constants.BIT(i); // todo inline
+		return Utils.BIT(i); // todo inline
 	}
 
 	/*
@@ -347,12 +347,12 @@ class canonical {
 		SI = (int) ((SI >> a0) & mask);
 		final int[] B = new int[] {SI ^ (SI >> 1)};
 		A_ = L[0] & ~(SI | B[0]);  /* the elements in blocks of size 1 */
-		while (Constants.extract_MSB32(B, hi)) {
-			Constants.extract_MSB32(B, lo);
+		while (Utils.extract_MSB32(B, hi)) {
+			Utils.extract_MSB32(B, lo);
 			final int pmask = (int) (BIT(hi[0] + 1) - BIT(lo[0]));
 			int SB = (int) (L[0] & pmask);
 			int UB = (int) (~L[0] & pmask);
-			while (Constants.get_MSB32(SB, hi) && Constants.get_LSB32(UB, lo) && hi[0] > lo[0]) {
+			while (Utils.get_MSB32(SB, hi) && Utils.get_LSB32(UB, lo) && hi[0] > lo[0]) {
 				SB ^= BIT(hi[0]) | BIT(lo[0]);
 				UB ^= BIT(hi[0]) | BIT(lo[0]);
 				final byte t = p[a0 + hi[0]];  /* left-multiplication of p by the transposition (lo hi) */
@@ -423,13 +423,13 @@ class canonical {
 					A = (int) ((P >> j * m) & mask);  /* j: antichain under consideration */
 					final int[] B = new int[] {(S >> 1) ^ S};
 					A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
-					while (A != A_ && Constants.extract_MSB32(B, hi)) {  /* get an orbit lo..hi ... */
+					while (A != A_ && Utils.extract_MSB32(B, hi)) {  /* get an orbit lo..hi ... */
 						int pmask, SB, UB;
-						Constants.extract_MSB32(B, lo);
+						Utils.extract_MSB32(B, lo);
 						pmask = (int) (BIT(hi[0] + 1) - BIT(lo[0]));
 						SB = A & pmask;
 						UB = ~A & pmask;
-						while (Constants.get_MSB32(SB, hi) && Constants.get_LSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
+						while (Utils.get_MSB32(SB, hi) && Utils.get_LSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
 							SB ^= BIT(hi[0]) | BIT(lo[0]);
 							UB ^= BIT(hi[0]) | BIT(lo[0]);
 							T = ((P >> hi[0]) ^ (P >> lo[0])) & M;
@@ -606,13 +606,13 @@ class canonical {
 					A = ANTICHAIN(P, j, m, k1, mask);   /* j: antichain under consideration */
 					final int[] B = new int[] {(S >> 1) ^ S};
 					A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
-					while (A != A_ && Constants.extract_MSB32(B, hi)) {  /* get an orbit lo..hi ... */
+					while (A != A_ && Utils.extract_MSB32(B, hi)) {  /* get an orbit lo..hi ... */
 						int pmask, SB, UB;
-						Constants.extract_MSB32(B, lo);
+						Utils.extract_MSB32(B, lo);
 						pmask = (int) (BIT(hi[0] + 1) - BIT(lo[0]));
 						SB = A & pmask;
 						UB = ~A & pmask;
-						while (Constants.get_MSB32(SB, hi) && Constants.get_LSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
+						while (Utils.get_MSB32(SB, hi) && Utils.get_LSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
 							SB ^= BIT(hi[0]) | BIT(lo[0]);
 							UB ^= BIT(hi[0]) | BIT(lo[0]);
 							T = ((P[0] >> hi[0]) ^ (P[0] >> lo[0])) & M;
@@ -869,7 +869,7 @@ class canonical {
 		}
 	}
 
-	static int allbits = (1 << (Constants.MAXN - 2)) - 1;
+	static int allbits = (1 << (Utils.MAXN - 2)) - 1;
 
 	/*
 	 * Make sure that the generators are stored consecutively in perm, and record which generators are involutions.
@@ -878,14 +878,14 @@ class canonical {
 		final int[] i = new int[1];
 		final int[] j = new int[1];
 
-		while (Constants.get_LSB32(G.freeperm, i) && Constants.get_MSB32(allbits ^ G.freeperm, j) && i[0] < j[0]) {
+		while (Utils.get_LSB32(G.freeperm, i) && Utils.get_MSB32(allbits ^ G.freeperm, j) && i[0] < j[0]) {
 			Permutation.copy(G.G.n, G.G.perm[j[0]], G.G.perm[i[0]]);
 			Permutation.copy(G.G.n, G.G.invperm[j[0]], G.G.invperm[i[0]]);
 			G.freeperm ^= BIT(i[0]);  /* bit i is set, so this clears it */
 			G.freeperm |= BIT(j[0]);
 		}
 		final int[] ugly = new int[] {G.G.ngens};
-		Constants.get_LSB32(G.freeperm, ugly);
+		Utils.get_LSB32(G.freeperm, ugly);
 		G.G.ngens = ugly[0];
 		G.G.invol = 0;
 		for (int k = 0, biti = 1; k < G.G.ngens; k++, biti <<= 1) {
@@ -910,12 +910,12 @@ class canonical {
 					System.out.println("SAI: ppgen " + i + "/" + G.ngens + " " + L.lev[AD.cl - 1] + " " + L.lev[AD.cl]);
 					Permutation.print(G.n, G.perm[i], 0);
 				}
-				G.benes[AD.cl - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
+				G.benes[AD.cl - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
 			}
 			G.BenesValid |= BIT(AD.cl - 1);
 		} else {
 			for (int i = 0; i < G.ngens; i++) {
-				G.benes[L.nLev - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
+				G.benes[L.nLev - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
 			}
 			G.BenesValid |= BIT(L.nLev - 1);
 		}
@@ -943,27 +943,27 @@ class canonical {
 		if (AD.cl != 0) {
 			if ((G.BenesValid & BIT(L.nLev - 1)) != 0) {
 				for (i = 0; i < G.ngens; i++) {
-					G.benes[AD.cl - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
-					Benes.benes_delete(G.benes[L.nLev - 1][i]);
-					G.benes[L.nLev - 1][i] = Benes.benes_get_blocked(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
+					G.benes[AD.cl - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
+					//Benes.delete(G.benes[L.nLev - 1][i]);
+					G.benes[L.nLev - 1][i] = new Benes(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
 				}
 				G.BenesValid |= BIT(AD.cl - 1);
 			} else {
 				for (i = 0; i < G.ngens; i++) {
-					G.benes[AD.cl - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
-					G.benes[L.nLev - 1][i] = Benes.benes_get_blocked(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
+					G.benes[AD.cl - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
+					G.benes[L.nLev - 1][i] = new Benes(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
 				}
 				G.BenesValid |= BIT(AD.cl - 1) | BIT(L.nLev - 1);
 			}
 		} else {
 			if ((G.BenesValid & BIT(L.nLev - 1)) != 0) {
 				for (i = 0; i < G.ngens; i++) {
-					Benes.benes_delete(G.benes[L.nLev - 1][i]);
-					G.benes[L.nLev - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
+					//Benes.delete(G.benes[L.nLev - 1][i]);
+					G.benes[L.nLev - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
 				}
 			} else {
 				for (i = 0; i < G.ngens; i++) {
-					G.benes[L.nLev - 1][i] = Benes.benes_get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
+					G.benes[L.nLev - 1][i] = Benes.get(G.perm[i], G.invperm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
 				}
 				G.BenesValid |= BIT(L.nLev - 1);
 			}
@@ -1304,7 +1304,7 @@ class canonical {
 								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
+              G.benes[AD.cl][gen].applyP1(A);
 							Permutation.init(AD.L.n + AD.k, p);
 							antichainList_applySI_1(AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl], A, AD.SD[AD.cl + 1].SI, null, p);
 							/* ...we're done if the result is smaller than the original element */
@@ -1363,7 +1363,7 @@ class canonical {
 								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
+              G.benes[AD.cl][gen].applyP1(A);
 							Permutation.init(AD.L.n + AD.k, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (long_cmp(L, A[0]) > 0) {
@@ -1462,7 +1462,7 @@ class canonical {
 	static boolean antichaindata_isCanonical_p1(antichaindata AD, int bits) {
 		int i, gen;
 		int pos;
-		long[] M = new long[Constants.MAXN - 2];
+		long[] M = new long[Utils.MAXN - 2];
 		long mask, pmask;
 		permgrp G;
 		permgrpc S;
@@ -1553,10 +1553,10 @@ class canonical {
 								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
+              G.benes[AD.cl][gen].applyP1(A);
 							//#ifndef FILTER_GRADED
 							if (AD.cl < AD.L.nLev - 2) {
-								Benes.benes_apply_blocked_p1(G.benes[AD.L.nLev - 1][gen], A);
+                G.benes[AD.L.nLev - 1][gen].applyBlockedP1(A);
 							}
 							//#endif
 							Permutation.init(S.G.n, p);
@@ -1632,10 +1632,10 @@ class canonical {
 								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
+              G.benes[AD.cl][gen].applyP1(A);
 							//#ifndef FILTER_GRADED
 							if (AD.cl < AD.L.nLev - 2) {
-								Benes.benes_apply_blocked_p1(G.benes[AD.L.nLev - 1][gen], A);
+                G.benes[AD.L.nLev - 1][gen].applyBlockedP1(A);
 							}
 							//#endif
 							Permutation.init(S.G.n, p);

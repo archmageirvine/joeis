@@ -67,7 +67,7 @@ class antichain {
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
   private static long BIT(final long i) {
-    return Benes.BIT(i);
+    return Utils.BIT(i); // todo inline
   }
 
   //typedef struct stabiliser stabiliser;
@@ -83,21 +83,21 @@ class antichain {
   static class antichaindata {
     lattice L;
     Globals GD;
-    int[] cop = new int[Constants.MAXN - 3];
+    int[] cop = new int[Utils.MAXN - 3];
     int k;
     int cl;
     int cmc;
     int cm;
     // #ifndef FILTER_GRADED
-    stabiliser[] SD = new stabiliser[Constants.MAXN - 2];
+    stabiliser[] SD = new stabiliser[Utils.MAXN - 2];
     // #else
 //		stabiliser[] SD = new stabiliser[] {new stabiliser(), new stabiliser()};
     //#endif
     int cp;
     int Fpos;
     // #ifndef FILTER_GRADED
-    int[] O = new int[Constants.MAXN - 3];
-    int[] F = new int[Constants.FSIZE];
+    int[] O = new int[Utils.MAXN - 3];
+    int[] F = new int[Utils.FSIZE];
 // #else
 //    int[] O = new int[Constants.MAXN - 3];
 //    int[] F = new int[Constants.MAXN - 3];
@@ -171,7 +171,7 @@ class antichain {
     int[] i = new int[1];
 
     B = Q[0] = P;
-    while (Constants.get_LSB32(B, i)) {
+    while (Utils.get_LSB32(B, i)) {
       B ^= BIT(i[0]);  /* bit i is set, so this clears it */
       if (((AD.O[i[0] - 1] ^ AD.O[i[0]]) & AD.cmc) != 0) {
         Q[0] ^= BIT(i[0]);  /* bit i is set, so this clears it */
@@ -480,7 +480,7 @@ class antichain {
       antichaindata_printCounters(AD);
     }
     final int[] todo = new int[] {F & ~done};
-    while (Constants.extract_MSB32(todo, i)) {
+    while (Utils.extract_MSB32(todo, i)) {
       long biti;
       int loi, C;
       boolean allnonzero;
@@ -499,8 +499,8 @@ class antichain {
       loi = AD.L.lo[i[0]];
       done |= biti;
       final int[] m = new int[1];
-      while (Constants.extract_MSB32(tocheck, j)) {
-        if (Constants.get_LSB32(loi & (AD.L.lo[j[0]]), m)) {
+      while (Utils.extract_MSB32(tocheck, j)) {
+        if (Utils.get_LSB32(loi & (AD.L.lo[j[0]]), m)) {
           if ((BIT(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
             //#ifndef FILTER_GRADED
             if (m[0] >= AD.L.lev[AD.cl]) {  /* equivalent to AD.L.dep[m] >= AD.cl */
@@ -563,14 +563,14 @@ class antichain {
     }
     final int[] todo = new int[] {F & ~done};
     final int[] m = new int[1];
-    while (Constants.extract_MSB32(todo, i)) {
+    while (Utils.extract_MSB32(todo, i)) {
       /* meet-close & test lattice antichain condition */
       final int[] tocheck = new int[] {done & ~(AD.L.up[i[0]] | AD.L.lo[i[0]])};
       done |= BIT(i[0]);
       boolean allnonzero = true;
       int loi = AD.L.lo[i[0]];
-      while (Constants.extract_MSB32(tocheck, j)) {
-        if (Constants.get_LSB32(loi & (AD.L.lo[j[0]]), m)) {
+      while (Utils.extract_MSB32(tocheck, j)) {
+        if (Utils.get_LSB32(loi & (AD.L.lo[j[0]]), m)) {
           if ((BIT(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
             //#ifndef FILTER_GRADED
             if (m[0] >= AD.L.lev[AD.cl]) {  /* equivalent to AD.L.dep[m] >= AD.cl */
@@ -959,7 +959,7 @@ class antichain {
           A[0] |= BIT(i[0]);
         }
       }
-      while (Constants.extract_LSB32(A, i)) {
+      while (Utils.extract_LSB32(A, i)) {
         System.out.printf("%d ", i[0]);
       }
       System.out.print(" | ");
@@ -977,7 +977,7 @@ class antichain {
       for (int m = AD.L.nLev - 2; m >= AD.cl; m--) {
         final int[] A = {(int) ((j > AD.cp ? 0 : AD.F[(AD.L.nLev - 2 - m) * AD.k + j]) | (AD.O[j] & (BIT(AD.L.lev[m + 1]) - BIT(AD.L.lev[m]))))};
         final int[] i = new int[1];
-        while (Constants.extract_LSB32(A, i)) {
+        while (Utils.extract_LSB32(A, i)) {
           System.out.printf("%d ", i[0]);
         }
         System.out.print("; ");
@@ -998,7 +998,7 @@ class antichain {
     for (j = 0; j < AD.k; j++) {
       for (m = AD.L.nLev - 2; m >= AD.cl; m--) {
         final int[] A = {j > AD.cp ? 0 : AD.F[(AD.L.nLev - 2 - m) * AD.k + j]};
-        while (Constants.extract_LSB32(A, i)) {
+        while (Utils.extract_LSB32(A, i)) {
           System.out.printf("%d ", i[0]);
         }
         System.out.print("; ");

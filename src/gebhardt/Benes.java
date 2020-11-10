@@ -5,7 +5,7 @@ import java.util.Arrays;
 import irvine.math.ByteUtils;
 
 /**
- * Permutations.
+ * Benes.
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
@@ -39,207 +39,171 @@ public class Benes {
   private static final int BENES_SMALL = 10;
   private static final int BITSPERLONG = Long.SIZE;
 
-  static long BIT(final long i) {
-    return Constants.BIT(i); // todo inline
-  }
-
-// struct benes_p1 {
+  // struct benes_p1 {
 // 	long     refcount;              /* reference count; -1 = persistent */
 // 	long  mask[2*LD_MAXN_2-1];   /* masks for stages */
 // 	long      shift[2*LD_MAXN_2-1];  /* shift amounts for stages */
 // 	long      depth;                 /* number of stages */
 // };
 
-  //struct benes_p2 {
-  long refcount;              /* reference count; -1 = persistent */
-  long[] mask = new long[2 * Constants.LD_MAXN_2 - 1];   /* masks for stages */
-  byte[] shift = new byte[2 * Constants.LD_MAXN_2 - 1];  /* shift amounts for stages */
-  byte depth;                 /* number of stages */
-  long[] mask1 = new long[2 * Constants.LD_MAXN_2 - 1];  /* masks for stages; second long */
-  //};
+  //long mRefCount;              /* reference count; -1 = persistent */
+  long[] mMask = new long[2 * Utils.LD_MAXN_2 - 1];   /* masks for stages */
+  byte[] mShift = new byte[2 * Utils.LD_MAXN_2 - 1];  /* shift amounts for stages */
+  byte mDepth;                 /* number of stages */
+  long[] mMask1 = new long[2 * Utils.LD_MAXN_2 - 1];  /* masks for stages; second long */
 
   //typedef struct benes_p2 benes;  /* We actually use struct benes_p1 where the second long is not needed... */
 
-  /*
-   * Increment the reference count for *B and return *B.
-   */
-  static Benes benes_incref(Benes B) {
-    if (B.refcount > 0) {
-      B.refcount++;
-    }
-    return B;
-  }
-
-
-  /*
-   * Decrement the reference count for *B, and free the allocated memory if the reference count reaches 0.
-   */
-  static void benes_delete(Benes B) {
-    if (B.refcount > 0 && (--(B.refcount)) == 0) {
-      //free(B);
-    }
-  }
-
-
-  /*
-   * Set B to a pointer to a Beneš network realising the action of the permutation p on the points lo..hi-1,
-   * where pi is the inverse of p.  The masks indicate the lower bit of each pair.
-   */
-  static Benes benes_get(byte[] p, byte[] pi, int lo, int hi) {
-
-    int n = hi - lo;
-    byte[] src = Permutation.create();
-    byte[] inv_src = Permutation.create();
-    if (n <= BENES_SMALL) {
-      for (int j = 0; j < n; j++) {
-        src[j] = (byte) (p[lo + j] - lo);
-      }
-//      System.out.println("SAI: " + n + " " + benes_small[n].length + " " + permutation.perm_toInteger(n, src));
-//      permutation.perm_print(n, src, 0);
-//      permutation.perm_print(hi, p, 0);
-      return benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Beneš network is persistent */
-    } else {
-      for (int j = 0; j < n; j++) {
-        src[j] = (byte) (p[lo + j] - lo);
-        inv_src[j] = (byte)(pi[lo + j] - lo);
-      }
-      return benes_create(n, src, inv_src);
-    }
-// #if BENES_DOPREFETCH
-// 	__builtin_prefetch((void*)*B);
-// 	__builtin_prefetch((void*)*B+64);
-// #endif
-  }
-
+//  /*
+//   * Increment the reference count for b and return b.
+//   */
+//  static Benes incRef(Benes b) {
+//    if (b.mRefCount > 0) {
+//      b.mRefCount++;
+//    }
+//    return b;
+//  }
+//
+//
+//  /*
+//   * Decrement the reference count for b, and free the allocated memory if the reference count reaches 0.
+//   */
+//  static void delete(Benes b) {
+//    if (b.mRefCount > 0 && (--(b.mRefCount)) == 0) {
+//      //free(B);
+//    }
+//  }
 
   /*
-   * Set *B to a pointer to a Beneš network realising the action of the permutation p on the points lo..hi-1
-   * as a permutation of blocks of width m, where pi is the inverse of p.  The masks for blocked Beneš
+   * Set B to a pointer to a Bene&scaron; network realising the action of the permutation p on the points lo..hi-1
+   * as a permutation of blocks of width m, where pi is the inverse of p.  The masks for blocked Bene&scaron;
    * networks indicate the higher bit of each pair.
    */
-  static Benes benes_get_blocked(byte[] p, byte[] pi, int lo, int hi, int m) {
-    int i, j, n, apf;
-    Benes T;
-    long mask;
-    final Benes B = new Benes();
-
-    n = hi - lo;
-    byte[] src = Permutation.create();
-    byte[] inv_src = Permutation.create();
+  Benes(final byte[] p, final byte[] pi, final int lo, final int hi, final int m) {
+    Benes t;
+    final int n = hi - lo;
+    final byte[] src = Permutation.create();
+    final byte[] invSrc = Permutation.create();
     if (n <= BENES_SMALL) {
-      for (j = 0; j < n; j++) {
+      for (int j = 0; j < n; j++) {
         src[j] = (byte)(p[lo + j] - lo);
       }
-      T = benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Beneš network is persistent */
-// #if BENES_DOPREFETCH
-// 	    __builtin_prefetch((void*)(T));
-// 	    __builtin_prefetch((void*)(T+64));
-// #endif
+      t = benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron; network is persistent */
     } else {
-      for (j = 0; j < n; j++) {
+      for (int j = 0; j < n; j++) {
         src[j] = (byte)(p[lo + j] - lo);
-        inv_src[j] = (byte)(pi[lo + j] - lo);
+        invSrc[j] = (byte)(pi[lo + j] - lo);
       }
-      T = benes_create(n, src, inv_src);
+      t = new Benes(n, src, invSrc);
     }
-    apf = BITSPERLONG / m;
-    mask = BIT(m) - 1;
+    final int apf = BITSPERLONG / m;
+    long mask;
+    mDepth = t.mDepth;
     if (n > apf) {
-      B.refcount = 1;
-      B.depth = T.depth;
-      for (i = 0; i < T.depth; i++) {
-        B.shift[i] = (byte) (m * T.shift[i]);
-        B.mask[i] = B.mask1[i] = 0;
-        mask = BIT(m) - 1;
+      //b.mRefCount = 1;
+      for (int i = 0; i < t.mDepth; i++) {
+        mShift[i] = (byte) (m * t.mShift[i]);
+        mMask[i] = mMask1[i] = 0;
+        mask = Utils.BIT(m) - 1;
+        int j;
         for (j = n - 1; j >= n - apf; j--) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((T.mask[i] & BIT(j)) != 0) {
-            B.mask1[i] |= mask;
+          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+            mMask1[i] |= mask;
           }
           mask <<= m;
         }
-        mask = BIT(m) - 1;
+        mask = Utils.BIT(m) - 1;
         for (; j >= 0; j--) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((T.mask[i] & BIT(j)) != 0) {
-            B.mask[i] |= mask;
+          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+            mMask[i] |= mask;
           }
           mask <<= m;
         }
       }
-// #if BENES_DOPREFETCH
-//         __builtin_prefetch((void*)*B);
-//         __builtin_prefetch((void*)*B+64);
-// #endif
     } else {
-      B.refcount = 1;
-      B.depth = T.depth;
-      for (i = 0; i < T.depth; i++) {
-        B.shift[i] = (byte) (m * T.shift[i]);
-        B.mask[i] = 0;
-        mask = BIT(m) - 1;
-        for (j = n; j-- != 0; ) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((T.mask[i] & BIT(j)) != 0) {
-            B.mask[i] |= mask;
+      //b.mRefCount = 1;
+      for (int i = 0; i < t.mDepth; i++) {
+        mShift[i] = (byte) (m * t.mShift[i]);
+        mMask[i] = 0;
+        mask = Utils.BIT(m) - 1;
+        for (int j = n; j-- != 0; ) {  /* this order: the lower member of a pair becomes the higher block */
+          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+            mMask[i] |= mask;
           }
           mask <<= m;
         }
       }
-// #if BENES_DOPREFETCH
-//         __builtin_prefetch((void*)*B);
-//         __builtin_prefetch((void*)*B+64);
-//         __builtin_prefetch((void*)*B+128);
-// #endif
     }
-    benes_delete(T);
-    return B;
+    //delete(t);
   }
 
-
   /*
-   * Apply the Beneš network *B to *R.  The masks indicate the lower bit of each pair.
+   * Set B to a pointer to a Bene&scaron; network realising the action of the permutation p on the points lo..hi-1,
+   * where pi is the inverse of p.  The masks indicate the lower bit of each pair.
    */
-  static void benes_apply_p1(Benes B, long[] R) {
-    long A = R[0];
-    for (int i = 0; i < B.depth; ++i) {
-      long t = ((A >> B.shift[i]) ^ A) & B.mask[i];
-      A ^= t;
-      t <<= B.shift[i];
-      A ^= t;
+  static Benes get(final byte[] p, final byte[] pi, final int lo, final int hi) {
+    final int n = hi - lo;
+    final byte[] src = Permutation.create();
+    if (n <= BENES_SMALL) {
+      for (int j = 0; j < n; j++) {
+        src[j] = (byte) (p[lo + j] - lo);
+      }
+      return benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron; network is persistent */
+    } else {
+      final byte[] invSrc = Permutation.create();
+      for (int j = 0; j < n; j++) {
+        src[j] = (byte) (p[lo + j] - lo);
+        invSrc[j] = (byte)(pi[lo + j] - lo);
+      }
+      return new Benes(n, src, invSrc);
     }
-    R[0] = A;
   }
 
-
   /*
-   * Apply the Beneš network *B acting on the positions of the packed antichain list *R.
-   * The masks for blocked Beneš networks indicate the higher bit of each pair.
+   * Apply the Bene&scaron; network b to r.  The masks indicate the lower bit of each pair.
    */
-  static void benes_apply_blocked_p1(Benes B, long[] R) {
-    long A = R[0];
-    for (int i = 0; i < B.depth; ++i) {
-      long t = ((A << B.shift[i]) ^ A) & B.mask[i];
-      A ^= t;
-      t >>= B.shift[i];
-      A ^= t;
+  void applyP1(final long[] r) {
+    long a = r[0];
+    for (int i = 0; i < mDepth; ++i) {
+      long t = ((a >> mShift[i]) ^ a) & mMask[i];
+      a ^= t;
+      t <<= mShift[i];
+      a ^= t;
     }
-    R[0] = A;
+    r[0] = a;
+  }
+
+  /*
+   * Apply the Bene&scaron; network B acting on the positions of the packed antichain list r.
+   * The masks for blocked Bene&scaron; networks indicate the higher bit of each pair.
+   */
+  void applyBlockedP1(long[] r) {
+    long a = r[0];
+    for (int i = 0; i < mDepth; ++i) {
+      long t = ((a << mShift[i]) ^ a) & mMask[i];
+      a ^= t;
+      t >>= mShift[i];
+      a ^= t;
+    }
+    r[0] = a;
   }
 
 
   /*
-   * Apply the Beneš network *B to A[0],A[1].  The masks indicate the lower bit of each pair.
+   * Apply the Bene&scaron; network *B to A[0],A[1].  The masks indicate the lower bit of each pair.
    *
    */
   static void benes_apply_p2(Benes B, long[] A) {
     long sft;
     long t;
 
-    for (int i = 0; i < B.depth; ++i) {
-      sft = B.shift[i];
-      t = ((A[0] >> sft) ^ A[0]) & B.mask[i];
+    for (int i = 0; i < B.mDepth; ++i) {
+      sft = B.mShift[i];
+      t = ((A[0] >> sft) ^ A[0]) & B.mMask[i];
       A[0] ^= t;
       t <<= sft;
       A[0] ^= t;
-      t = ((A[1] >> sft) ^ A[1]) & B.mask[i];
+      t = ((A[1] >> sft) ^ A[1]) & B.mMask[i];
       A[1] ^= t;
       t <<= sft;
       A[1] ^= t;
@@ -248,18 +212,18 @@ public class Benes {
 
 
   /*
-   * Apply the Beneš network *B acting on the positions of the packed antichain list A[0],A[1], with width bits of
-   * A[1] used.  The masks for blocked Beneš networks indicate the higher bit of each pair.
+   * Apply the Bene&scaron; network *B acting on the positions of the packed antichain list A[0],A[1], with width bits of
+   * A[1] used.  The masks for blocked Bene&scaron; networks indicate the higher bit of each pair.
    */
   static void benes_apply_blocked_p2(Benes B, long[] A, long width) {
     long sft, xsft;
     long t0, t0_, t1;
 
-    for (int i = 0; i < B.depth; ++i) {
-      sft = B.shift[i];
+    for (int i = 0; i < B.mDepth; ++i) {
+      sft = B.mShift[i];
       xsft = width - sft;
-      t0 = (((A[0] << sft) | (A[1] >> xsft)) ^ A[0]) & B.mask[i];
-      t1 = ((A[1] << sft) ^ A[1]) & B.mask1[i];
+      t0 = (((A[0] << sft) | (A[1] >> xsft)) ^ A[0]) & B.mMask[i];
+      t1 = ((A[1] << sft) ^ A[1]) & B.mMask1[i];
       A[0] ^= t0;
       A[1] ^= t1;
       t0_ = t0;
@@ -271,7 +235,7 @@ public class Benes {
   }
 
 
-  static Benes[][] benes_small = null;  /* global storage for precomputed Beneš networks */
+  static Benes[][] benes_small = null;  /* global storage for precomputed Bene&scaron; networks */
 
 
   /*
@@ -304,57 +268,33 @@ public class Benes {
 
 
   /*
-   * Return a newly created Beneš network (carrying a reference count) realising as many copies of the
+   * Return a newly created Bene&scaron; network (carrying a reference count) realising as many copies of the
    * action of the permutation p on n points as fit into one long.
    * NOTE: src AND inv_src ARE MODIFIED.
    */
-  static Benes benes_create(int n, byte[] src, byte[] inv_src) {
-    Benes B;
+  Benes(final int n, final byte[] src, final byte[] inv_src) {
     int i, stage;
     int main_idx, src_idx, tgt_idx, Fpos, Bpos;
     int mask, nmask, src_set, cfg_src, cfg_tgt;
-
-// #ifdef DOTEST
-// 	int[]  p;
-// 	perm_cpy(n, src, p);
-// #endif
-
-    B = new Benes(); //(Benes)calloc(1, sizeof(struct benes_p1));
-    B.refcount = 1;
+    //b.mRefCount = 1;
     int ld_n = ceil_ld(n);
     Fpos = 0;
     Bpos = 2 * ld_n - 1;
     byte[] tgt = ByteUtils.identity(Permutation.create());
     byte[] inv_tgt = ByteUtils.identity(Permutation.create());
-// #ifdef BENESVERBOSE
-// 	printf("=== entering benes_create for ");
-// 	perm_print(n, src, 0);
-// #endif
     for (stage = 0, mask = 1; stage < ld_n; stage++, mask <<= 1) {
       nmask = ~mask;
-// #ifdef BENESVERBOSE
-// 		printf("+++ stage %d, mask=%llx\n", stage, mask);
-// #endif
       src_set = cfg_src = cfg_tgt = 0;
-      for (main_idx = (int) BIT(ld_n); main_idx-- != 0; ) { /* this ensures that no crossings contain padded bits */
+      for (main_idx = (int) Utils.BIT(ld_n); main_idx-- != 0; ) { /* this ensures that no crossings contain padded bits */
         if ((main_idx & mask) != 0) { /* loop over pairs... */
           /* ... upper representative */
           src_idx = main_idx;
-          while ((BIT(src_idx) & src_set) == 0) {
-            src_set |= BIT(src_idx); /* ...mark that source index as seen... */
-// #ifdef BENESVERBOSE
-// 					printf(">>> [u] src_idx: %d", src_idx);
-// #endif
+          while ((Utils.BIT(src_idx) & src_set) == 0) {
+            src_set |= Utils.BIT(src_idx); /* ...mark that source index as seen... */
             tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
-// #ifdef BENESVERBOSE
-// 					printf(" -. tgt_idx: %d", tgt_idx);
-// #endif
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-// #ifdef BENESVERBOSE
-// 						printf(" CROSS\n");
-// #endif
-              cfg_tgt |= BIT(tgt_idx & nmask); /* set the appropriate bit in the Beneš network */
+              cfg_tgt |= Utils.BIT(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron; network */
               int idx2 = (byte)(tgt_idx ^ mask); /* the other part of the pair; to be swapped */
               byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
@@ -363,26 +303,14 @@ public class Benes {
               inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
             } else {
               /* straight */
-// #ifdef BENESVERBOSE
-// 						printf(" straight\n");
-// #endif
               tgt_idx ^= mask; /* the other part of the pair on the target side */
             }
-// #ifdef BENESVERBOSE
-// 					printf(">>> tgt_idx: %d", tgt_idx);
-// #endif
             src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
-// #ifdef BENESVERBOSE
-// 					printf(" -. src_idx: %d", src_idx);
-// #endif
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-// #ifdef BENESVERBOSE
-// 						printf(" CROSS\n");
-// #endif
-              cfg_src |= BIT(src_idx & nmask); /* set the appropriate bit in the Beneš network */
+              cfg_src |= Utils.BIT(src_idx & nmask); /* set the appropriate bit in the Bene&scaron; network */
               int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= BIT(idx2);            /* mark that source index as seen... */
+              src_set |= Utils.BIT(idx2);            /* mark that source index as seen... */
               byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
@@ -390,30 +318,18 @@ public class Benes {
               inv_src[src[src_idx]] = (byte)src_idx; /* ...on the source side is src_idx! */
             } else {
               /* straight */
-// #ifdef BENESVERBOSE
-// 						printf(" straight\n");
-// #endif
-              src_set |= BIT(src_idx); /* mark that source index as seen */
+              src_set |= Utils.BIT(src_idx); /* mark that source index as seen */
               src_idx ^= mask; /* the other part of the pair on the source side */
             }
           }
           /* ... lower representative */
           src_idx = main_idx ^ mask;
-          while ((BIT(src_idx) & src_set) == 0) {
-            src_set |= BIT(src_idx); /* ...mark that source index as seen... */
-// #ifdef BENESVERBOSE
-// 					printf(">>> [l] src_idx: %d", src_idx);
-// #endif
+          while ((Utils.BIT(src_idx) & src_set) == 0) {
+            src_set |= Utils.BIT(src_idx); /* ...mark that source index as seen... */
             tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
-// #ifdef BENESVERBOSE
-// 					printf(" -. tgt_idx: %d", tgt_idx);
-// #endif
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-// #ifdef BENESVERBOSE
-// 						printf(" CROSS\n");
-// #endif
-              cfg_tgt |= BIT(tgt_idx & nmask); /* set the appropriate bit in the Beneš network */
+              cfg_tgt |= Utils.BIT(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron; network */
               int idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
               byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
@@ -422,26 +338,14 @@ public class Benes {
               inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
             } else {
               /* straight */
-// #ifdef BENESVERBOSE
-// 						printf(" straight\n");
-// #endif
               tgt_idx ^= mask; /* the other part of the pair on the target side */
             }
-// #ifdef BENESVERBOSE
-// 					printf(">>> tgt_idx: %d", tgt_idx);
-// #endif
             src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
-// #ifdef VBENESERBOSE
-// 					printf(" -. src_idx: %d", src_idx);
-// #endif
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-// #ifdef BENESVERBOSE
-// 						printf(" CROSS\n");
-// #endif
-              cfg_src |= BIT(src_idx & nmask); /* set the appropriate bit in the Beneš network */
+              cfg_src |= Utils.BIT(src_idx & nmask); /* set the appropriate bit in the Bene&scaron; network */
               int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= BIT(idx2);            /* mark that source index as seen... */
+              src_set |= Utils.BIT(idx2);            /* mark that source index as seen... */
               byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
@@ -449,10 +353,7 @@ public class Benes {
               inv_src[src[src_idx]] = (byte) src_idx; /* ...on the source side is src_idx! */
             } else {
               /* straight */
-// #ifdef BENESVERBOSE
-// 						printf(" straight\n");
-// #endif
-              src_set |= BIT(src_idx); /* mark that source index as seen */
+              src_set |= Utils.BIT(src_idx); /* mark that source index as seen */
               src_idx ^= mask; /* the other part of the pair on the source side */
             }
           }
@@ -461,7 +362,7 @@ public class Benes {
       /* record the configurations for the current stage */
       if (cfg_src != 0) {
         long smask;
-        B.shift[Fpos] = (byte) BIT(stage);
+        mShift[Fpos] = (byte) Utils.BIT(stage);
         smask = 0;
         int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
@@ -469,13 +370,13 @@ public class Benes {
           cfg_src = (cfg_src | (cfg_src << t)) << t;
           t <<= 1;
         }
-        B.mask[Fpos] = smask;
+        mMask[Fpos] = smask;
         Fpos++;
       }
       if (cfg_tgt != 0) {
         long smask;
         Bpos--;
-        B.shift[Bpos] = (byte) BIT(stage);
+        mShift[Bpos] = (byte) Utils.BIT(stage);
         smask = 0;
         int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
@@ -483,35 +384,19 @@ public class Benes {
           cfg_tgt = (cfg_tgt | (cfg_tgt << t)) << t;
           t <<= 1;
         }
-        B.mask[Bpos] = smask;
+        mMask[Bpos] = smask;
       }
     }
     /* make sure non-trivial stages are consecutive */
     if (Bpos > Fpos) {
       for (; Bpos < 2 * ld_n - 1; Fpos++, Bpos++) {
-        B.shift[Fpos] = B.shift[Bpos];
-        B.mask[Fpos] = B.mask[Bpos];
+        mShift[Fpos] = mShift[Bpos];
+        mMask[Fpos] = mMask[Bpos];
       }
-      B.depth = (byte) Fpos;
+      mDepth = (byte) Fpos;
     } else {
-      B.depth = (byte) (2 * ld_n - 1);
+      mDepth = (byte) (2 * ld_n - 1);
     }
-// #ifdef DOTEST
-// 	if (n)
-// 		for (i=0,mask=1UL; i<BITSPERLONG/n; i++,mask<<=1) {
-// 			nmask = mask;
-// 			benes_apply_p1(B, &nmask);
-// 			if (nmask != (1UL << (p[i%n] + n*(i/n)))) {
-// 				printf("BAD BENES NETWORK on level %d: ", i);
-// 				perm_print(n, p, 0);
-// 				for (i=0; i<B.depth; i++)
-// 					printf("(%d,%lx) ", B.shift[i], (unsigned long)B.mask[i]);
-// 				printf("\n");
-// 				erri(-4);
-// 			}
-// 		}
-// #endif
-    return B;
   }
 
 
@@ -524,38 +409,21 @@ public class Benes {
 
 
   /**
-   * Precompute Beneš networks for all permutations on at most BENES_SMALL points.
+   * Precompute Bene&scaron; networks for all permutations on at most BENES_SMALL points.
    */
-  public static void benes_init_small() {
-    benes_small = new Benes[BENES_SMALL + 1][]; //calloc(BENES_SMALL + 1, sizeof(Benes[]));
+  public static void initSmall() {
+    benes_small = new Benes[BENES_SMALL + 1][];
     final int[] n = new int[1];
     for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
-      benes_small[n[0]] = new Benes[factorial(n[0])]; //(Benes[]) calloc(factorial(n), sizeof(Benes));
-      final byte[] p = ByteUtils.identity(Permutation.create()); //perm_init(n, p);
+      benes_small[n[0]] = new Benes[factorial(n[0])];
+      final byte[] p = ByteUtils.identity(Permutation.create());
       do {
         final byte[] p_ = Arrays.copyOf(p, p.length);
         final byte[] pi_ = Permutation.inverse(n[0], p);
-        final Benes B = benes_create(n[0], p_, pi_);
-        B.refcount = -1;
-        benes_small[n[0]][(int) Permutation.toInteger(n[0], p)] = B;
+        final Benes b = new Benes(n[0], p_, pi_);
+        // b.mRefCount = -1;
+        benes_small[n[0]][(int) Permutation.toInteger(n[0], p)] = b;
       } while (Permutation.next(1, n, p));  /* a single level: 0..n-1 */
-    }
-  }
-
-
-  /*
-   * Free the memory allocated for the precomputed Beneš networks for all permutations
-   * on at most BENES_SMALL points.
-   */
-  void benes_free_small() {
-    if (benes_small != null) {
-//      for (int n = 0; n <= BENES_SMALL; n++) {
-//        for (int i = 0; i < factorial(n); i++)
-//          free(benes_small[n][i]);
-//        free(benes_small[n]);
-//      }
-//      free(benes_small);
-      benes_small = null;
     }
   }
 }

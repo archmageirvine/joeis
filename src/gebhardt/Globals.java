@@ -62,27 +62,26 @@ public class Globals {
 	/*
 	 * Double the number of orbit elements that can be stored.
 	 */
-	static void enlargenOrbitSpace(Globals globals) {
-		globals.mOrbitSpace *= 2;
-		int k = globals.mOrbitElements.length;
-		globals.mOrbitElements = Arrays.copyOf(globals.mOrbitElements, globals.mOrbitSpace);
-		while (k < globals.mOrbitElements.length) {
-			globals.mOrbitElements[k++] = new OrbitElement();
+	void enlargenOrbitSpace() {
+		mOrbitSpace *= 2;
+		int k = mOrbitElements.length;
+		mOrbitElements = Arrays.copyOf(mOrbitElements, mOrbitSpace);
+		while (k < mOrbitElements.length) {
+			mOrbitElements[k++] = new OrbitElement();
 		}
 	}
-
 
 	/*
 	 * Double the number of SI data records that can be stored.
 	 */
-	static void globals_enlargen_SIspace(Globals GD) {
-		GD.mSiSpace *= 2;
-		int k = GD.mSi0.length;
-		GD.mSi0 = Arrays.copyOf(GD.mSi0, GD.mSiSpace);
-		GD.mSi1 = Arrays.copyOf(GD.mSi1, GD.mSiSpace);
-		while (k < GD.mSi0.length) {
-			GD.mSi0[k] = new SiData();
-			GD.mSi1[k] = new SiData();
+	void enlargenSiSpace() {
+		mSiSpace *= 2;
+		int k = mSi0.length;
+		mSi0 = Arrays.copyOf(mSi0, mSiSpace);
+		mSi1 = Arrays.copyOf(mSi1, mSiSpace);
+		while (k < mSi0.length) {
+			mSi0[k] = new SiData();
+			mSi1[k] = new SiData();
 			++k;
 		}
 	}

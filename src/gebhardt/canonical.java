@@ -415,7 +415,7 @@ class canonical {
 					byte[] q = Permutation.create();
 					//int[]         pq = q+a0;
 					if (SI1size == GD.mSiSpace) {
-						Globals.globals_enlargen_SIspace(GD);
+						GD.enlargenSiSpace();
 					}
 					Permutation.copy(n + k, GD.mSi0[i].mP, q);
 					S = GD.mSi0[i].mS;
@@ -597,7 +597,7 @@ class canonical {
 					byte[] q = Permutation.create();
 					//int[]         pq = q+a0;
 					if (SI1size == GD.mSiSpace) {
-						Globals.globals_enlargen_SIspace(GD);
+						GD.enlargenSiSpace();
 					}
 					Permutation.copy(n + k, GD.mSi0[i].mP, q);
 					S = GD.mSi0[i].mS;
@@ -1301,7 +1301,7 @@ class canonical {
 							}
 							/* apply generator gen to orbit element pos... */
 							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								Globals.enlargenOrbitSpace(AD.GD);
+								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
 							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
@@ -1360,7 +1360,7 @@ class canonical {
 							}
 							/* apply generator gen to orbit element pos... */
 							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								Globals.enlargenOrbitSpace(AD.GD);
+								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
 							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
@@ -1550,7 +1550,7 @@ class canonical {
 							}
 							/* apply generator gen to orbit element pos... */
 							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								Globals.enlargenOrbitSpace(AD.GD);
+								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
 							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);
@@ -1629,7 +1629,7 @@ class canonical {
 							}
 							/* apply generator gen to orbit element pos... */
 							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								Globals.enlargenOrbitSpace(AD.GD);
+								AD.GD.enlargenOrbitSpace();
 							}
 							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
 							Benes.benes_apply_p1(G.benes[AD.cl][gen], A);

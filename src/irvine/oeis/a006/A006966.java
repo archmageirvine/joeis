@@ -94,8 +94,6 @@ public class A006966 implements Sequence {
     bitmap_init(mN);
     final lattEnum E = lattEnum.lattEnum_Count_create(L, mN, 3, GD);
     lattEnum.lattEnum_doEnumeration(E);
-    //System.out.println(lattEnum.lattEnum_getLatticeCount(E));
-
     return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
     //return null; // temp
 // Legacy:

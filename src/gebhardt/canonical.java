@@ -816,7 +816,7 @@ class canonical {
 					System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
 					Permutation.print(S.mG.mN, p, 0);
 				}
-				PermGrp.addGenerator(S, p);
+				S.addGenerator(p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p1(n, lo, hi, p, k, L, &L_);
 // 			if (antichainList_cmp_p1(L, L_)) {
@@ -853,7 +853,7 @@ class canonical {
 // #ifdef VERBOSE
 // 			printf("[antichainList_extractStabiliser_p2]: adding stabiliser generator "); perm_print(S.G.n, p, 0);
 // #endif
-				PermGrp.addGenerator(S, p);
+				S.addGenerator(p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p2(n, lo, hi, p, k, L, L_);
 // 			if (antichainList_cmp_p2(L, L_)) {
@@ -1041,7 +1041,7 @@ class canonical {
 				Permutation.print(S.mG.mN, h, 0);
 			}
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				PermGrp.addGenerator(S, h);
+				S.addGenerator(h);
 			}
 		} else {
 			AD.GD.mOrbitPos.put(A, (long) Apos);
@@ -1116,7 +1116,7 @@ class canonical {
 // 		printf("[processElement_p1]: adding stabiliser generator "); perm_print(S.G.n, h, 0);
 // #endif
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				PermGrp.addGenerator(S, h);
+				S.addGenerator(h);
 			}
 		} else {
 			AD.GD.mOrbitPos.put(A, (long) Apos);

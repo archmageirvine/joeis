@@ -193,10 +193,12 @@ class Antichain {
       }
     }
 
-    /* We only want antichains that have a weight no less than the weight of the preceding
+    /*
+     * We only want antichains that have a weight no less than the weight of the preceding
      * element, and that intersect the lowest level of the old lattice.
      * catches antichains not intersecting the lowest level; i.e.,
-     * cl == L.nLev-2 && !(O[cp] & cm)       */
+     * cl == L.nLev-2 && !(O[cp] & cm)
+     */
     return w >= nW && w != 0;
   }
 
@@ -665,9 +667,9 @@ class Antichain {
     System.out.printf("cl:%d, cp:%d   ", mCl, mCp);
     for (int j = 0; j < mK; ++j) {
       for (int m = mLattice.mNLev - 2; m >= mCl; --m) {
-        final int[] A = {(int) ((j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]) | mO[j] & Utils.bit(mLattice.mLev[m + 1]) - Utils.bit(mLattice.mLev[m]))};
+        final int[] a = {(int) ((j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]) | mO[j] & Utils.bit(mLattice.mLev[m + 1]) - Utils.bit(mLattice.mLev[m]))};
         final int[] i = new int[1];
-        while (Utils.extractLSB32(A, i)) {
+        while (Utils.extractLSB32(a, i)) {
           System.out.printf("%d ", i[0]);
         }
         System.out.print("; ");

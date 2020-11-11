@@ -80,17 +80,17 @@ public class Benes {
    * networks indicate the higher bit of each pair.
    */
   Benes(final byte[] p, final byte[] pi, final int lo, final int hi, final int m) {
-    Benes t;
+    final Benes t;
     final int n = hi - lo;
     final byte[] src = Permutation.create();
     final byte[] invSrc = Permutation.create();
     if (n <= BENES_SMALL) {
-      for (int j = 0; j < n; j++) {
+      for (int j = 0; j < n; ++j) {
         src[j] = (byte) (p[lo + j] - lo);
       }
       t = sBenesSmall[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
     } else {
-      for (int j = 0; j < n; j++) {
+      for (int j = 0; j < n; ++j) {
         src[j] = (byte) (p[lo + j] - lo);
         invSrc[j] = (byte) (pi[lo + j] - lo);
       }
@@ -100,13 +100,12 @@ public class Benes {
     long mask;
     mDepth = t.mDepth;
     if (n > apf) {
-      //b.mRefCount = 1;
-      for (int i = 0; i < t.mDepth; i++) {
+      for (int i = 0; i < t.mDepth; ++i) {
         mShift[i] = (byte) (m * t.mShift[i]);
         mMask[i] = mMask1[i] = 0;
         mask = Utils.bit(m) - 1;
         int j;
-        for (j = n - 1; j >= n - apf; j--) {  /* this order: the lower member of a pair becomes the higher block */
+        for (j = n - 1; j >= n - apf; --j) {  /* this order: the lower member of a pair becomes the higher block */
           if ((t.mMask[i] & Utils.bit(j)) != 0) {
             mMask1[i] |= mask;
           }
@@ -121,8 +120,7 @@ public class Benes {
         }
       }
     } else {
-      //b.mRefCount = 1;
-      for (int i = 0; i < t.mDepth; i++) {
+      for (int i = 0; i < t.mDepth; ++i) {
         mShift[i] = (byte) (m * t.mShift[i]);
         mMask[i] = 0;
         mask = Utils.bit(m) - 1;
@@ -134,7 +132,6 @@ public class Benes {
         }
       }
     }
-    //delete(t);
   }
 
   /*
@@ -145,13 +142,13 @@ public class Benes {
     final int n = hi - lo;
     final byte[] src = Permutation.create();
     if (n <= BENES_SMALL) {
-      for (int j = 0; j < n; j++) {
+      for (int j = 0; j < n; ++j) {
         src[j] = (byte) (p[lo + j] - lo);
       }
       return sBenesSmall[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
     } else {
       final byte[] invSrc = Permutation.create();
-      for (int j = 0; j < n; j++) {
+      for (int j = 0; j < n; ++j) {
         src[j] = (byte) (p[lo + j] - lo);
         invSrc[j] = (byte) (pi[lo + j] - lo);
       }

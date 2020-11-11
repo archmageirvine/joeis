@@ -1,6 +1,6 @@
 package gebhardt;
 
-import gebhardt.antichain.antichaindata;
+import gebhardt.Antichain.AntichainData;
 
 public abstract class lattEnum {
 	/*
@@ -270,7 +270,7 @@ void reg(lattEnum E, lattice L) {
 	 */
 	static void lattEnum_growLattice(lattEnum E, int N, lattice L, int nmin) {
 		lattice LA = new lattice();
-		antichaindata AD = new antichaindata();
+		AntichainData AD = new AntichainData();
 		int k;
 
 // #ifdef DOTEST
@@ -284,9 +284,9 @@ void reg(lattEnum E, lattice L) {
 			System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
 			lattice.lattice_print(L);
 		}
-		antichain.antichaindata_init(L, nmin, AD, E.GD);
+		Antichain.antichaindata_init(L, nmin, AD, E.GD);
 
-		antichain.antichaindata_prepareLattice(AD, L, LA);
+		Antichain.antichaindata_prepareLattice(AD, L, LA);
 		if (nmin == 1) {
 			if (VERBOSE) {
 				System.out.printf("\n=== adding a level with %d elements\n", 1);
@@ -294,11 +294,11 @@ void reg(lattEnum E, lattice L) {
 // #if defined(DOTEST) && defined(FILTER_INDECOMPOSABLE) && defined(FILTER_GRADED)
 // 		printf("BAD CALL [lattEnum_growLattice]: asked for a graded indecomposable lattice with a level of size 1!\n");
 // #endif
-			while (antichain.antichaindata_next_1(AD)) {
+			while (Antichain.antichaindata_next_1(AD)) {
 				if (VERBOSE) {
-					System.out.println("SAI: while-an1 " + AD.SD[0].ST.mN);
+					System.out.println("SAI: while-an1 " + AD.mStabilisers[0].mSt.mN);
 				}
-				antichain.antichaindata_generateLattice_1(AD, L, LA);
+				Antichain.antichaindata_generateLattice_1(AD, L, LA);
 // #ifdef DOTEST
 // 			if (!antichaindata_test(&AD)) {
 // 				printf("BAD LATTICE-ANTICHAIN DATA\n");
@@ -326,7 +326,7 @@ void reg(lattEnum E, lattice L) {
 					System.out.println("\n### lattice:");
 					lattice.lattice_print(L);
 					System.out.print("+++ antichain data: ");
-					antichain.antichaindata_printAntichains(AD);
+					Antichain.antichaindata_printAntichains(AD);
 					System.out.println(">>> lattice:");
 					lattice.lattice_print(LA);
 				}
@@ -356,7 +356,7 @@ void reg(lattEnum E, lattice L) {
 // 			if (!antichaindata_step_1_FUNC(&AD))
 // 				break;
 // #else
-				if (!antichain.antichaindata_step_1(AD)) {
+				if (!Antichain.antichaindata_step_1(AD)) {
 					break;
 				}
 // #endif
@@ -373,10 +373,10 @@ void reg(lattEnum E, lattice L) {
 			if (VERBOSE) {
 				System.out.printf("\n=== adding a level with %d elements\n", k);
 			}
-			antichain.antichaindata_reinit(AD, k);
-			antichain.antichaindata_prepareLattice(AD, L, LA);
-			while (antichain.antichaindata_next(AD)){
-				antichain.antichaindata_generateLattice(AD, L, LA);
+			Antichain.antichaindata_reinit(AD, k);
+			Antichain.antichaindata_prepareLattice(AD, L, LA);
+			while (Antichain.antichaindata_next(AD)){
+				Antichain.antichaindata_generateLattice(AD, L, LA);
 // #ifdef DOTEST
 // 			if (!antichaindata_test(&AD)) {
 // 				printf("BAD LATTICE-ANTICHAIN DATA\n");
@@ -404,7 +404,7 @@ void reg(lattEnum E, lattice L) {
 					System.out.print("\n### lattice:\n");
 					lattice.lattice_print(L);
 					System.out.print("+++ antichain data: ");
-					antichain.antichaindata_printAntichains(AD);
+					Antichain.antichaindata_printAntichains(AD);
 					System.out.println(">>> lattice:");
 					lattice.lattice_print(LA);
 				}
@@ -423,14 +423,14 @@ void reg(lattEnum E, lattice L) {
 // 			if (!antichaindata_step_FUNC(&AD))
 // 				break;
 // #else
-				if (!antichain.antichaindata_step(AD)) {
+				if (!Antichain.antichaindata_step(AD)) {
 					break;
 				}
 				//#endif
 			}
 		}
 
-		antichain.antichaindata_clear(AD);
+		Antichain.antichaindata_clear(AD);
 		if (VERBOSE) {
 			System.out.println("\n[<<< leaving lattEnum_growLattice]:");
 			lattice.lattice_print(L);

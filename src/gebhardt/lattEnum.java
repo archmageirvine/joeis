@@ -283,7 +283,7 @@ void reg(lattEnum E, lattice L) {
 		}
     Antichain AD = new Antichain(L, nmin, E.GD);
 
-		Antichain.antichaindata_prepareLattice(AD, L, LA);
+		AD.prepareLattice(L, LA);
 		if (nmin == 1) {
 			if (VERBOSE) {
 				System.out.printf("\n=== adding a level with %d elements\n", 1);
@@ -291,7 +291,7 @@ void reg(lattEnum E, lattice L) {
 // #if defined(DOTEST) && defined(FILTER_INDECOMPOSABLE) && defined(FILTER_GRADED)
 // 		printf("BAD CALL [lattEnum_growLattice]: asked for a graded indecomposable lattice with a level of size 1!\n");
 // #endif
-			while (Antichain.antichaindata_next_1(AD)) {
+			while (AD.next1()) {
 				if (VERBOSE) {
 					System.out.println("SAI: while-an1 " + AD.mStabilisers[0].mSt.mN);
 				}
@@ -371,9 +371,9 @@ void reg(lattEnum E, lattice L) {
 				System.out.printf("\n=== adding a level with %d elements\n", k);
 			}
 			AD.reset(k);
-			Antichain.antichaindata_prepareLattice(AD, L, LA);
-			while (Antichain.antichaindata_next(AD)){
-				Antichain.antichaindata_generateLattice(AD, L, LA);
+			AD.prepareLattice(L, LA);
+			while (AD.next()){
+				AD.generateLattice(L, LA);
 // #ifdef DOTEST
 // 			if (!antichaindata_test(&AD)) {
 // 				printf("BAD LATTICE-ANTICHAIN DATA\n");

@@ -478,47 +478,47 @@ class Antichain {
    *
    * Return value: true if successful; false if no further canonical configuration exists.
    */
-  static boolean antichaindata_next(Antichain AD) {
+  boolean next() {
     while (true) {
       if (VERBOSE) {
         System.out.print("... in antichaindata_next: ");
-        antichaindata_printCounters(AD);
+        antichaindata_printCounters(this);
       }
-      while (!AD.validateCurrentPosition()) {
+      while (!validateCurrentPosition()) {
         if (VERBOSE) {
           System.out.println("                           invalid");
         }
-        if (!AD.step()) {
+        if (!step()) {
           if (VERBOSE) {
             System.out.println("                                   and done!");
           }
           return false;
         }
       }
-      if (AD.mCp != AD.mK - 1) {
-        AD.mCp++;
-        AD.mFpos++;
-        AD.initialiseCurrentPosition();
+      if (mCp != mK - 1) {
+        ++mCp;
+        ++mFpos;
+        initialiseCurrentPosition();
       } else {
-        if (!canonical.antichaindata_isCanonical(AD)) {
+        if (!canonical.antichaindata_isCanonical(this)) {
           if (VERBOSE) {
             System.out.println("                           not canonical");
           }
-          /* antichaindata_isCanonical has set AD.cp and AD.Fpos to the correct backtracking position  */
-          if (!AD.step()) {
+          /* antichaindata_isCanonical has set cp and Fpos to the correct backtracking position  */
+          if (!step()) {
             if (VERBOSE) {
               System.out.println("                                   and done!");
             }
             return false;
           }
         } else {
-          if (AD.mCl != 0) {
-            AD.decrementLevel();
-            AD.initialiseCurrentPosition();
+          if (mCl != 0) {
+            decrementLevel();
+            initialiseCurrentPosition();
           } else {
             if (VERBOSE) {
               System.out.print("                           valid --> ");
-              antichaindata_printCountersF(AD);
+              antichaindata_printCountersF(this);
             }
             return true;
           }
@@ -532,41 +532,41 @@ class Antichain {
    *
    * Return value: true if successful; false if no further canonical configuration exists.
    */
-  static boolean antichaindata_next_1(Antichain AD) {
+  boolean next1() {
     while (true) {
       if (VERBOSE) {
         System.out.print("... in antichaindata_next_1: ");
-        antichaindata_printCounters(AD);
+        antichaindata_printCounters(this);
       }
-      while (!AD.validateCurrentPosition1()) {
+      while (!validateCurrentPosition1()) {
         if (VERBOSE) {
           System.out.println("                           invalid");
         }
-        if (!AD.step1()) {
+        if (!step1()) {
           if (VERBOSE) {
             System.out.println("                                   and done!");
           }
           return false;
         }
       }
-      if (!canonical.antichaindata_isCanonical_1(AD)) {
+      if (!canonical.antichaindata_isCanonical_1(this)) {
         if (VERBOSE) {
           System.out.println("                           not canonical");
         }
-        if (!AD.step1()) {
+        if (!step1()) {
           if (VERBOSE) {
             System.out.println("                                         and done!");
           }
           return false;
         }
       } else {
-        if (AD.mCl != 0) {
-          AD.decrementLevel1();
-          AD.initialiseCurrentPosition1();
+        if (mCl != 0) {
+          decrementLevel1();
+          initialiseCurrentPosition1();
         } else {
           if (VERBOSE) {
             System.out.print("                           valid --> ");
-            antichaindata_printCountersF(AD);
+            antichaindata_printCountersF(this);
           }
           return true;
         }
@@ -575,59 +575,47 @@ class Antichain {
   }
 
   /*
-   * Set generic data in LA that applies to every lattice obtained from L by adding AD.k atoms
+   * Set generic data in LA that applies to every lattice obtained from l by adding AD.k atoms
    * covered by lattice antichains:  number of elements, levels, as well as
    *    up[i]  .....
    *   (lo[i]) lo[j]
-   * for 1 < i < L.n <= j < LA.n.  lo[i] may be modified in antichaindata_generateLattice.
+   * for 1 < i < l.n <= j < la.n.  lo[i] may be modified in antichaindata_generateLattice.
    */
-  static void antichaindata_prepareLattice(Antichain AD, lattice L, lattice LA) {
-    LA.n = (byte) (L.n + AD.mK);                          /* number of elements  */
-    if (VERBOSE) {
-      System.out.println("SAI: Set LA.n to " + LA.n + " from " + L.n + " + " + AD.mK);
+  void prepareLattice(lattice l, lattice la) {
+    la.n = (byte) (l.n + mK);                          /* number of elements  */
+    la.nLev = l.nLev + 1;                          /* number of levels    */
+    System.arraycopy(l.lev, 0, la.lev, 0, l.nLev);
+    la.lev[la.nLev - 1] = la.n;                   /* new level           */
+    for (int j = l.n; j < la.n; j++) {
+      la.lo[j] = (int) Utils.BIT(j);                        /* lo[j]               */
     }
-    LA.nLev = L.nLev + 1;                          /* number of levels    */
-    //memcpy(LA.lev, L.lev, L.nLev * sizeof( int));  /* old levels          */
-    System.arraycopy(L.lev, 0, LA.lev, 0, L.nLev);
-    LA.lev[LA.nLev - 1] = LA.n;                   /* new level           */
-    for (int j = L.n; j < LA.n; j++) {
-      LA.lo[j] = (int) Utils.BIT(j);                        /* lo[j]               */
-    }
-    //memcpy(LA.up, L.up, L.n * sizeof( int));   /* up[i]               */
-    //memcpy(LA.lo, L.lo, L.n * sizeof( int));   /* lo[i] (preliminary) */
-    System.arraycopy(L.up, 0, LA.up, 0, L.n);
-    System.arraycopy(L.lo, 0, LA.lo, 0, L.n);
+    System.arraycopy(l.up, 0, la.up, 0, l.n);
+    System.arraycopy(l.lo, 0, la.lo, 0, l.n);
   }
 
 
   /*
-   * Set LA to the lattice obtained from L by adding AD.k new atoms covered by the elements in the
+   * Set la to the lattice obtained from l by adding AD.k new atoms covered by the elements in the
    * lattice antichains described by AD:  stabiliser, as well as
    *   .....  up[j]
    *   lo[i]  .....
-   * for 1 < i < L.n <= j < LA.n.  ..... denotes data set in antichaindata_prepareLattice.
-   * Note: The stabiliser of *LA carries a reference count.
+   * for 1 < i < l.n <= j < la.n.  ..... denotes data set in antichaindata_prepareLattice.
+   * Note: The stabiliser of *la carries a reference count.
    */
-  static void antichaindata_generateLattice(Antichain AD, lattice L, lattice LA) {
-    int i, j, k;
-
-    //PREFETCH(AD.F);
-    //PREFETCH(LA.up);
-    //PREFETCH(LA.lo);
-
-    for (k = AD.mK, j = L.n; k-- != 0; j++) {
-      /* set up[j] and lo[i] for 1 < i < L.n <= j < LA.n */
-      LA.up[j] = (int) (Utils.BIT(j) | AD.mF[AD.mFpos - k]);       /* up[j] */
-      for (i = 0; i < L.n; i++) {
-        if ((AD.mF[AD.mFpos - k] & Utils.BIT(i)) != 0) {
-          LA.lo[i] |= Utils.BIT(j);
-        } else                                      /* lo[i] */ {
-          LA.lo[i] &= ~Utils.BIT(j);
+  void generateLattice(lattice l, lattice la) {
+    for (int k = mK, j = l.n; k-- != 0; ++j) {
+      /* set up[j] and lo[i] for 1 < i < l.n <= j < la.n */
+      la.up[j] = (int) (Utils.BIT(j) | mF[mFpos - k]);       /* up[j] */
+      for (int i = 0; i < l.n; ++i) {
+        if ((mF[mFpos - k] & Utils.BIT(i)) != 0) {
+          la.lo[i] |= Utils.BIT(j);
+        } else { /* lo[i] */
+          la.lo[i] &= ~Utils.BIT(j);
         }
       }
     }
     /* set stabiliser */
-    lattice.lattice_setStabiliser(LA, AD.mStabilisers[0].mSt, AD.mStabilisers[0].mSi);  /* stabiliser          */
+    lattice.lattice_setStabiliser(la, mStabilisers[0].mSt, mStabilisers[0].mSi);
   }
 
 

@@ -35,13 +35,12 @@ public class Utils {
    * If f is zero, return 0.  Otherwise, set *i to the rank of the most significant bit set in f, clear the bit and return 1.
    * NOTE:
    */
-  static boolean extractMSB32(final int[] f, final int[] i)
-  {
+  static boolean extractMSB32(final int[] f, final int[] i) {
     if (f[0] == 0) {
       return false;
     }
-	i[0] = 31 - Integer.numberOfLeadingZeros(f[0]); //__builtin_clz(*f);
-	f[0] ^= BIT(i[0]);
+    i[0] = 31 - Integer.numberOfLeadingZeros(f[0]); //__builtin_clz(*f);
+    f[0] ^= BIT(i[0]);
     return true;
   }
 

@@ -142,21 +142,21 @@ class PermGrpC {
    * Add the permutation p as a generator of g.  The permutation p *must* be nontrivial!
    */
   void addGenerator(final byte[] p) {
-    int i = Permutation.minSupport(mG.mN, p);
-    int j = p[i];
+    final int i = Permutation.minSupport(mG.mN, p);
+    final int j = p[i];
+    final byte[] h = Permutation.create();
     if ((mJerrum[i].mNeighbours & Utils.bit(j)) != 0) {
-      int k;
-      byte[] h = Permutation.create();
       /* j is already a neighbour of i; unless we have a duplicate generator... */
-      if (Permutation.compare(mG.mN, p, mG.mPerm[k = mJerrum[i].mPerm[j]]) != 0
+      final int k = mJerrum[i].mPerm[j];
+      if (Permutation.compare(mG.mN, p, mG.mPerm[k]) != 0
         && Permutation.compare(mG.mN, p, mG.mInvPerm[k]) != 0) {
         /* ...there is a generator k so that h=g*k^-1 fixes i; add h instead of g */
         Permutation.multiply(mG.mN, p, mG.mInvPerm[k], h);
         addGenerator(h);
       }
     } else {
-      byte[] h = Permutation.create();
-      int[] m = new int[1], nm = new int[1];
+      final int[] m = new int[1];
+      final int[] nm = new int[1];
       if (jerrumCreatesCycle(i, j, p, h, m, nm)) {
         if (m[0] != i) {
           jerrumRemoveGenerator(m[0], nm[0]);
@@ -212,7 +212,7 @@ class PermGrpC {
       mFreePerm ^= Utils.bit(i[0]);  /* bit i is set, so this clears it */
       mFreePerm |= Utils.bit(j[0]);
     }
-    final int[] ugly = new int[] {mG.mNgens};
+    final int[] ugly = {mG.mNgens};
     Utils.getLSB32(mFreePerm, ugly);
     mG.mNgens = ugly[0];
     mG.mInvol = 0;

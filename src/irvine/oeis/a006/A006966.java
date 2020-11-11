@@ -15,6 +15,12 @@ import irvine.oeis.Sequence;
  */
 public class A006966 implements Sequence {
 
+  // This sequence is based on a C implementation by Volker Gebhardt.
+  // If you are serious about calculating new terms for this sequence, then please
+  // refer to the original implementation as it supports parallel computation and
+  // other features not present here.
+  // Cf. https://arxiv.org/abs/1609.08255
+
   // Original notice:
 
   /*
@@ -46,7 +52,7 @@ public class A006966 implements Sequence {
    * Initialise global bitmaps to size n.
    */
   private static void bitmapInit(long n) {
-    final long bits = Utils.BITSPERFLAGS64;
+    final long bits = Long.SIZE;
     if (Utils.MAXN > bits) {
       throw new UnsupportedOperationException("Build problem: flags64 cannot hold MAXN bits!");
     }
@@ -84,7 +90,7 @@ public class A006966 implements Sequence {
       return Z.ONE;
     }
     bitmapInit(mN);
-    final LattEnum e = LattEnum.lattEnum_Count_create(mLattice, mN, 3, mGlobals);
+    final LattEnum e = LattEnum.countCreate(mLattice, mN, 3, mGlobals);
     e.doEnumeration();
     return Z.valueOf(e.getCount());
   }

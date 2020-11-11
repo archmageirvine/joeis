@@ -91,81 +91,39 @@ public abstract class LattEnum {
   }
 
   /*
-   * Return a structure for counting the descendants of *L of size equal to N, for which all intermediate lattices
-   * have size at most Nmin.
+   * Return a structure for counting the descendants of *l of size equal to n, for which all intermediate lattices
+   * have size at most nMin.
    */
-  public static LattEnum lattEnum_Count_create(Lattice L, int N, int Nmin, Globals GD) {
-    LattEnumCount E;
-
-    if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
-      throw new RuntimeException("BAD PARAMETERS in lattEnum_Count_create: given lattice larger than target/intermediate size!");
+  public static LattEnum countCreate(final Lattice l, final int n, final int nMin, final Globals globals) {
+    if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
+      throw new IllegalArgumentException("Bad parameters: given lattice larger than target/intermediate size!");
     }
-    E = new LattEnumCount();
-    E.mL = L;
-    E.mN = N - 2;
-    E.mNmin = Nmin - 2;
-    E.mCount = 0;
-    E.mGlobals = GD;
-    //E.reg = lattEnum_Count_register; // sai done in subclass
-// #ifdef COUNT_MAXIMAL_CHAINS
-//     E.max_mc = 0;
-// #endif
-    return E;
+    final LattEnumCount e = new LattEnumCount();
+    e.mL = l;
+    e.mN = n - 2;
+    e.mNmin = nMin - 2;
+    e.mCount = 0;
+    e.mGlobals = globals;
+    return e;
   }
 
 
   /*
-   * Return a structure for writing string representations of the descendants of *L of size N to stdout, for
-   * which all intermediate lattices have size at most Nmin..
+   * Return a structure for writing string representations of the descendants of *l of size n to stdout, for
+   * which all intermediate lattices have size at most nMin..
    */
-  LattEnum lattEnum_stdout_create(Lattice L, int N, int Nmin, Globals GD) {
-    LattEnumStdout E;
-
-    if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
-      throw new RuntimeException("BAD PARAMETERS in lattEnum_stdout_create: given lattice larger than target/intermediate size!");
+  LattEnum stdoutCreate(final Lattice l, final int n, final int nMin, final Globals globals) {
+    if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
+      throw new IllegalArgumentException("Bad parameters: given lattice larger than target/intermediate size!");
     }
-    E = new LattEnumStdout();
-    E.mL = L;
-    E.mN = N - 2;
-    E.mNmin = Nmin - 2;
-    E.mCount = 0;
-    E.mGlobals = GD;
-    //E.reg = lattEnum_stdout_register; // sai note done in subclass now
-// #ifdef THREADED
-//   E.output = (char*)malloc(THREADED_OUTPUT_BUFFER_SIZE);
-//   *(E.output) = 0;
-//   E.outpos = 0;
-//   E.outsize = THREADED_OUTPUT_BUFFER_SIZE;
-// #endif
-    return E;
+    final LattEnumStdout e = new LattEnumStdout();
+    e.mL = l;
+    e.mN = n - 2;
+    e.mNmin = nMin - 2;
+    e.mCount = 0;
+    e.mGlobals = globals;
+    return e;
   }
-
-
-  /*
-   * Flush the output buffer.
-   */
-  void lattEnum_stdout_flush(LattEnumStdout E) {
-// #ifdef THREADED
-//   *(E.output+E.outpos) = 0;
-//   pthread_mutex_lock(&mutex_out);
-//   printf("%s", E.output);
-//   pthread_mutex_unlock(&mutex_out);
-//   E.outpos = 0;
-// #endif
-  }
-
-
-  /*
-   * Free all memory (and print the maximal number of maximal chains if enabled).
-   */
-  void lattEnum_Count_free(LattEnum E) {
-// #ifdef COUNT_MAXIMAL_CHAINS
-//   lattEnum_Count* EE = (lattEnum_Count*)E;
-//   printf("at most %u maximal chains\n", EE.max_mc);
-// #endif
-//   free((lattEnum_Count*)E);
-  }
-
 
   /*
    * Construct canonical lattices with n elements by recursively adding new levels to the canonical lattice l,
@@ -196,7 +154,7 @@ public abstract class LattEnum {
           System.out.println(">>> lattice:");
           la.print();
         }
-        this.reg(la);
+        reg(la);
         if (la.mN < n) {
           growLattice(n, la, 1);
         }

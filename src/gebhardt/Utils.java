@@ -7,11 +7,14 @@ package gebhardt;
  */
 public class Utils {
 
+  /** Maximum value code is valid for, */
   public static final int MAXN = 22;
+  /** Even. */
   public static final int MAXN_EVEN = 1;
+  /** Maximum lattice. */
   public static final int LD_MAXN_2 = 5;
+  /** Maximum size. */
   public static final int FSIZE = MAXN_EVEN > 0 ? (MAXN - 2) * (MAXN - 2) / 4 : (MAXN - 3) * (MAXN - 1) / 4;
-  public static final long BITSPERFLAGS64 = Long.SIZE;   // 8*sizeof(flags64)
   static final int ORBITS_INITIAL_ORBSPACE = 128;
   static final int ORBITS_INITIAL_SISPACE = 32;
   static final int ALL_BITS = (1 << (Utils.MAXN - 2)) - 1;
@@ -40,7 +43,7 @@ public class Utils {
     if (f[0] == 0) {
       return false;
     }
-    i[0] = 31 - Integer.numberOfLeadingZeros(f[0]); //__builtin_clz(*f);
+    i[0] = 31 - Integer.numberOfLeadingZeros(f[0]);
     f[0] ^= bit(i[0]);
     return true;
   }
@@ -52,7 +55,7 @@ public class Utils {
     if (f==0) {
       return false;
     }
-    i[0] = Integer.numberOfTrailingZeros(f); //__builtin_ctz(f);
+    i[0] = Integer.numberOfTrailingZeros(f);
     return true;
   }
 
@@ -65,7 +68,7 @@ public class Utils {
     if (f == 0) {
       return false;
     }
-    i[0] = 31 - Integer.numberOfLeadingZeros(f); // __builtin_clz(f);
+    i[0] = 31 - Integer.numberOfLeadingZeros(f);
     return true;
   }
 

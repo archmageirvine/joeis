@@ -260,7 +260,7 @@ final class Permutation {
           return false;
         }
       }
-      for (i = thislev + 1; i < lev[lpos] && !(tt = (p[i - 1] < p[i])); ++i) {
+      for (i = thislev + 1; i < lev[lpos] && !(tt = p[i - 1] < p[i]); ++i) {
       }
       if (!tt) {
         /* set current level to id & advance to next level */

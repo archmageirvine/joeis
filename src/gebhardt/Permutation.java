@@ -7,7 +7,7 @@ import irvine.math.ByteUtils;
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
-public class Permutation {
+final class Permutation {
 
   // Original header:
 
@@ -36,6 +36,7 @@ public class Permutation {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
+  private Permutation() { }
 
   /** Create an empty pemutation. */
   static byte[] create() {

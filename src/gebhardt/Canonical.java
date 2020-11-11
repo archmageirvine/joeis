@@ -854,7 +854,7 @@ final class Canonical {
   static boolean isCanonical1(final Antichain antichain) {
     if (VERBOSE) {
       System.out.println("[entering antichaindata_isCanonical_1]: " + antichain.mCl + " " + antichain.mStabilisers[antichain.mCl + 1].mSt.mN);
-      Lattice.lattice_print(antichain.mLattice);
+      antichain.mLattice.print();
       antichain.printCounters();
     }
     final PermGrp g = antichain.mStabilisers[antichain.mCl + 1].mSt;
@@ -1036,7 +1036,7 @@ final class Canonical {
   static boolean isCanonicalP1(final Antichain antichain, final int bits) {
     if (VERBOSE) {
       System.out.println("[entering antichaindata_isCanonical_p1]:");
-      Lattice.lattice_print(antichain.mLattice);
+      antichain.mLattice.print();
       antichain.printCounters();
     }
     final long[] bigM = new long[Utils.MAXN - 2];

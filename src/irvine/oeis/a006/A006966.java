@@ -76,7 +76,7 @@ public class A006966 implements Sequence {
     Benes.initSmall();
   }
   final Globals mGlobals = new Globals();
-  final Lattice mLattice = Lattice.lattice_init_2();
+  final Lattice mLattice = Lattice.init2();
 
   @Override
   public Z next() {

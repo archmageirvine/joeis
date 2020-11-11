@@ -103,7 +103,7 @@ public class Lattice {
    * Set co[i] to a flag indicating the covers of element i of the lattice L.
    * The array co must be allocated.
    */
-  void getCoveringRelation(int[] co) {
+  void getCoveringRelation(final int[] co) {
     final int[] j = new int[1];
     for (int i = mN; i-- != 0; ) {
       co[i] = 0;
@@ -115,178 +115,27 @@ public class Lattice {
     }
   }
 
-
-  /*
-   * Set dep[i] to the depth of element i of the lattice on n elements defined by the covering relation co.
-   * The array dep must be allocated.
-   */
-  void lattice_getDepths(int[] dep, int[] co, int n) {
-    int l, i, j;
-
-    for (i = 0; i < n; i++) {
-      dep[i] = 0;
-    }
-    for (l = n; l-- != 0; ) {
-      for (i = n; i-- != 0; ) {
-        for (j = n; j-- != 0; ) {
-          if ((co[i] & Utils.bit(j)) != 0) {
-            if (dep[i] < dep[j] + 1) {
-              dep[i] = dep[j] + 1;
-            }
-          }
-        }
-      }
-    }
-
-  }
-
-
-// /*
-//  * TEST FUNCTION: Return: true if the levellised lattice L is canonical; false otherwise.
-//  */
-// boolean lattice_isCanonical(lattice L) {
-//   int          i, j, li, lj;
-//   permutation  permbuf;
-//   int      co[MAXN-2];
-//   int      dep[MAXN-2];
-
-// #define COV(i,j)  (co[i] & BIT(j))
-//   perm_init(L.n, permbuf);
-//   lattice_getCoveringRelation(co, L);
-//   lattice_getDepths(dep, co, L.n);
-//   while (perm_next(L.nLev, L.lev, permbuf))  /* skip identity */ {
-//     for (li=1; li<L.nLev; li++)
-//       for (lj=li; lj--;)
-//         for (i=L.lev[li]; i<L.n && dep[i]==li; i++)
-//           for (j=L.lev[lj+1]; j-- && dep[j]==lj;) {
-//             if (!COV(i,j)) {
-//               if (COV(permbuf[i],permbuf[j]))
-//                 goto next;
-//             } else {
-//               if (!COV(permbuf[i],permbuf[j]))
-//                 return false;
-//             }
-//           }
-//     next:;
-//   }
-
-//   return true;
-// #undef COV
-// }
-
-
-// /*
-//  * TEST FUNCTION: Return true if the data for the lattice L are consistent; false otherwise.
-//  */
-// boolean lattice_test(lattice L)
-// {
-//   int           i, j, v, gen;
-//   int           _dep[MAXN-2];
-//   int       _up[MAXN-2];
-//   int       _lo[MAXN-2];
-//   int       m;
-//   int       co[MAXN-2];
-
-// #define COV(i,j)  (co[i] & BIT(j))
-//   if (L.nLev < 1 || L.lev[L.nLev-1] != L.n) {
-//     printf(">>> basic levels\n");
-//     return false;
-//   }
-//   for (i=0; i<L.n; i++) {
-//     _up[i] = _lo[i] = BIT(i);
-//     _dep[i] = 0;
-//   }
-//   lattice_getCoveringRelation(co, L);
-//   for (v=L.nLev; v--; )
-//     for (i=L.n; i--; )
-//       for (j=L.n; j--; )
-//         if (COV(i,j)) {
-//           _up[i] |= _up[j];
-//           _lo[j] |= _lo[i];
-//           if (_dep[i] < _dep[j]+1)
-//             _dep[i] = _dep[j]+1;
-//         }
-//   for (i=0,v=-1; i<L.n; i++) {
-//     if (i == L.lev[v+1])
-//       v++;
-//     if (_dep[i] != v) {
-//       printf(">>> levels\n");
-//       return false;
-//     }
-//   }
-//   if (memcmp(_up, L.up, L.n*sizeof(int))) {
-//     printf(">>> upper sets\n");
-//     for (i=0; i<L.n; i++)
-//       printf("%i: %d [%d]\n", i, L.up[i], _up[i]);
-//     return false;
-//   }
-//   if (memcmp(_lo, L.lo, L.n*sizeof(int))) {
-//     printf(">>> lower sets\n");
-//     for (i=0; i<L.n; i++)
-//       printf("%i: %d [%d]\n", i, L.lo[i], _lo[i]);
-//     return false;
-//   }
-//   for (i=L.n; i--;)
-//     for (j=i; j--;) {
-//       m = L.lo[i] & L.lo[j];
-//       if (get_LSB32(m,&v) && m != (m & L.lo[v])) {
-//         printf(">>> meet(%d,%d) [%d]", i, j, v);
-//         return false;
-//       }
-//       m = L.up[i] & L.up[j];
-//       if (get_MSB32(m,&v) && m != (m & L.up[v])) {
-//         printf(">>> join(%d,%d) [%d]", i, j, v);
-//         return false;
-//       }
-//     }
-//   for (gen=L.S.ngens; gen--;)
-//     for (i=0; i<L.n; i++)
-//       for (j=L.lev[_dep[i]]; j--;)
-//         if (!COV(i,j)) {
-//           if (COV(L.S.perm[gen][i],L.S.perm[gen][j])) {
-//             printf(">>> bad stabiliser generator ");
-//             perm_print(L.S.n, L.S.perm[gen], 0);
-//             return false;
-//           }
-//         } else {
-//           if (!COV(L.S.perm[gen][i],L.S.perm[gen][j])) {
-//             printf(">>> bad stabiliser generator ");
-//             perm_print(L.S.n, L.S.perm[gen], 0);
-//             return false;
-//           }
-//         }
-//   m = L.SI;
-//   while (extract_MSB32(&m, &v)) {
-//     if (v > L.n || _dep[v-1] != _dep[v]) {
-//       printf(">>> bad implicit stabiliser generator (%d,%d)\n", v-1, v);
-//       return false;
-//     }
-//     for (i=0; i<L.n; i++) {
-//       if ((COV(i,v-1) && !COV(i,v)) || (!COV(i,v-1) && COV(i,v))) {
-//         printf(">>> bad implicit stabiliser generator (%d,%d)\n", v-1, v);
-//         return false;
-//       }
-//       if ((COV(v-1,i) && !COV(v,i)) || (!COV(v-1,i) && COV(v,i))) {
-//         printf(">>> bad implicit stabiliser generator (%d,%d)\n", v-1, v);
-//         return false;
-//       }
-//     }
-//   }
-// // #ifdef FILTER_GRADED
-// //   for (v=1; v<L.nLev-1; v++) {
-// //     m = 0;
-// //     for (i=L.lev[v]; i<L.lev[v+1]; i++)
-// //       m |= co[i];
-// //     if (m != BIT(L.lev[v])-BIT(L.lev[v-1])) {
-// //       printf(">>> not graded (%d)\n", v);
-// //       return false;
-// //     }
-// //   }
-// // #endif
-//   return true;
-//         //#undef COV
-// }
-
+//  /*
+//   * Set dep[i] to the depth of element i of the lattice on n elements defined by the covering relation co.
+//   * The array dep must be allocated.
+//   */
+//  void getDepths(int[] dep, int[] co, int n) {
+//    for (int i = 0; i < n; i++) {
+//      dep[i] = 0;
+//    }
+//    for (int l = n; l-- != 0; ) {
+//      for (int i = n; i-- != 0; ) {
+//        for (int j = n; j-- != 0; ) {
+//          if ((co[i] & Utils.bit(j)) != 0) {
+//            if (dep[i] < dep[j] + 1) {
+//              dep[i] = dep[j] + 1;
+//            }
+//          }
+//        }
+//      }
+//    }
+//
+//  }
 
   /*
    * Store a representation of the covering relation of the levellised lattice L in the
@@ -299,67 +148,58 @@ public class Lattice {
   public String toString() {
     final StringBuilder sb = new StringBuilder();
     int i, j;
-    int[] co = new int[ Utils.MAXN - 2];
+    int[] co = new int[Utils.MAXN - 2];
 
     getCoveringRelation(co);
-    for (i = 0; i < mN; i++) {
+    for (i = 0; i < mN; ++i) {
       sb.append((co[i] == 0) ? '1' : '.');              /* i \prec T ? */
-      for (j = 0; j < i; j++) {
+      for (j = 0; j < i; ++j) {
         sb.append((co[i] & Utils.bit(j)) != 0 ? '1' : '.');  /* i \prec j ? */
       }
     }
     sb.append((mNLev == 1) ? '1' : '.');            /* B \prec T ? */
-    for (j = 0; j < mN; j++) {
+    for (j = 0; j < mN; ++j) {
       sb.append((mLo[j] == Utils.bit(j)) ? '1' : '.');  /* B \prec j ? */
     }
     return sb.toString();
   }
 
-
   /*
    * Generate data for a levellised lattice on n elements (including upper and lower bounds) from
-   * the string representation s of its covering relation [see above] and the stabiliser S, and
-   * write the data to L.  L must point to an allocated block of memory.  Return whether successful.
-   * The reference count of *S is incremented.
+   * the string representation str of its covering relation [see above] and the stabiliser s, and
+   * write the data to l.  l must point to an allocated block of memory.  Return whether successful.
+   * The reference count of s is incremented.
    */
-  static boolean lattice_fromString(Lattice L, int n, String s, PermGrp S, int SI) {
-    int d, i, j;
-    int pos;
-    int[] co = new int[ Utils.MAXN - 2];
-    int[] dep = new int[ Utils.MAXN - 2];
-
-    if (s.length() != (n * (n - 1)) / 2) {
-// #ifdef DOTEST
-//     printf("BAD PARAMETERS in lattice_fromString: given string doesn't match lattice size!\n");
-//     erri(-1);
-// #endif
+  static boolean fromString(final Lattice l, int n, final String str, final PermGrp s, final int si) {
+    if (str.length() != (n * (n - 1)) / 2) {
       return false;
     }
+    final int[] co = new int[Utils.MAXN - 2];
+    final int[] dep = new int[Utils.MAXN - 2];
     n -= 2;  /* We don't store the upper and lower bounds. */
-    //memset(L, 0, sizeof(lattice)); // todo this clear is not being done!
-    //memset(co, 0, n * sizeof( int));
-    L.mN = (byte) n;
+    //memset(l, 0, sizeof(lattice)); // todo this clear is not being done!
+    l.mN = (byte) n;
     /* first extract covering relation... */
-    pos = 0;
-    for (i = 0; i < n; i++) {
-      pos++;                    /* i \prec T ? (ignored) */
-      for (j = 0; j < i; j++) {
-        if (s.charAt(pos++) == '1') {
+    int pos = 0;
+    for (int i = 0; i < n; ++i) {
+      ++pos;                    /* i \prec T ? (ignored) */
+      for (int j = 0; j < i; ++j) {
+        if (str.charAt(pos++) == '1') {
           co[i] |= Utils.bit(j);  /* i \prec j ? */
         }
       }
     }                             /* B \prec j ? (ignored) */
     /* ...then use it to generate the remaining data, except for the stabiliser... */
-    for (i = 0; i < n; i++) {
-      L.mUp[i] = L.mLo[i] = (int) Utils.bit(i);
+    for (int i = 0; i < n; ++i) {
+      l.mUp[i] = l.mLo[i] = (int) Utils.bit(i);
       dep[i] = 0;
     }
-    for (d = 0; d < n; d++) {
-      for (i = 1; i < n; i++) {
-        for (j = 0; j < i; j++) {
+    for (int d = 0; d < n; ++d) {
+      for (int i = 1; i < n; ++i) {
+        for (int j = 0; j < i; ++j) {
           if ((co[i] & Utils.bit(j)) != 0) {
-            L.mUp[i] |= L.mUp[j];
-            L.mLo[j] |= L.mLo[i];
+            l.mUp[i] |= l.mUp[j];
+            l.mLo[j] |= l.mLo[i];
             if (dep[i] < dep[j] + 1) {
               dep[i] = dep[j] + 1;
             }
@@ -367,23 +207,19 @@ public class Lattice {
         }
       }
     }
-    L.mLev[0] = 0;
-    for (i = 0, d = 0; i < n; d++) {
+    l.mLev[0] = 0;
+    int d = 0;
+    for (int i = 0; i < n; ++d) {
       while (i < n && dep[i] == d) {
-        i++;
+        ++i;
       }
-      L.mLev[d + 1] = (byte) i;
+      l.mLev[d + 1] = (byte) i;
     }
-    L.mNLev = d + 1;  /* count the level containing B */
+    l.mNLev = d + 1;  /* count the level containing B */
     /* ...finally set the stabiliser */
-    L.setStabiliser(S, SI);
-// #ifdef DOTEST
-//   return lattice_test(L);
-// #else
+    l.setStabiliser(s, si);
     return true;
-    //#endif
   }
-
 
 //  void lattice_toOldString(String buf, lattice L)
 //    /*
@@ -491,22 +327,21 @@ public class Lattice {
   /*
    * Print the levellised lattice L to stdout.
    */
-  static void lattice_print(Lattice L) {
-    int d, i=0, j;
-    int[] co = new int[Utils.MAXN - 2];
-    boolean first;
-
-    L.getCoveringRelation(co);
+  void print() {
+    final int[] co = new int[Utils.MAXN - 2];
+    getCoveringRelation(co);
 
     System.out.println("depth -1: T");
-    for (d = 0; d < L.mNLev - 1; d++) {
+    int i = 0;
+    for (int d = 0; d < mNLev - 1; d++) {
       System.out.printf("depth %2d: ", d);
-      for (i = L.mLev[d]; i < L.mLev[d + 1]; i++) {
+      for (i = mLev[d]; i < mLev[d + 1]; i++) {
         System.out.printf("%d[", i);
         if (co[i] == 0) {
           System.out.print("T");
         } else {
-          for (j = 0, first = true; j < i; j++) {
+          boolean first = true;
+          for (int j = 0; j < i; j++) {
             if ((co[i] & Utils.bit(j)) != 0) {
               if (first) {
                 System.out.printf("%d", j);
@@ -521,12 +356,13 @@ public class Lattice {
       }
       System.out.println();
     }
-    System.out.printf("depth %2d: B[", L.mNLev - 1);
-    if (L.mNLev == 1) {
+    System.out.printf("depth %2d: B[", mNLev - 1);
+    if (mNLev == 1) {
       System.out.print("T");
     } else {
-      for (j = 0, first = true; j < L.mN; j++) {
-        if (L.mLo[j] == Utils.bit(j)) {
+      boolean first = true;
+      for (int j = 0; j < mN; j++) {
+        if (mLo[j] == Utils.bit(j)) {
           if (first) {
             System.out.printf("%d", j);
             first = false;
@@ -537,11 +373,11 @@ public class Lattice {
       }
     }
     System.out.println("]");
-    System.out.printf("stabiliser [%d]:\n", L.mS.mN);
-    PermGrp.printGenerators(L.mS, 0);
-    final int[] SI = {L.mSi};
+    System.out.printf("stabiliser [%d]:\n", mS.mN);
+    PermGrp.printGenerators(mS, 0);
+    final int[] si = {mSi};
     final int[] ii = {i};
-    while (Utils.extractLSB32(SI, ii)) {
+    while (Utils.extractLSB32(si, ii)) {
       System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
     }
   }
@@ -550,32 +386,28 @@ public class Lattice {
   /**
    * Initialise L to the lattice with 2 elements.
    */
-  public static Lattice lattice_init_2() {
-    final Lattice L = new Lattice();
-    PermGrp S;
-
-    S = new PermGrp();
-    lattice_fromString(L, 2, "1", S, 0);
-    //PermGrp.permgrp_delete(S);
-    return L;
+  public static Lattice init2() {
+    final Lattice l = new Lattice();
+    fromString(l, 2, "1", new PermGrp(), 0);
+    return l;
   }
 
 
   /*
-   * Initialise L to the k-fan (the lattice with k elements covered by T and covering B).
+   * Initialise l to the k-fan (the lattice with k elements covered by T and covering B).
    */
-  static void lattice_init_kFan(Lattice L, int k) {
-    for (int i = 0; i < k; i++) {
-      L.mUp[i] = L.mLo[i] = (int) Utils.bit(i);
+  static Lattice initKFan(final Lattice l, final int k) {
+    for (int i = 0; i < k; ++i) {
+      l.mUp[i] = l.mLo[i] = (int) Utils.bit(i);
     }
-    final PermGrp S = new PermGrp();
-    final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
-    L.setStabiliser(S, SI);
-    //PermGrp.permgrp_delete(S);
-    L.mLev[0] = 0;
-    L.mLev[1] = (byte) k;
-    L.mN = (byte) k;
-    L.mNLev = 2;
+    final PermGrp s = new PermGrp();
+    final int si = (1 << k) - 2;  /* bits 1,..,(k-1) set */
+    l.setStabiliser(s, si);
+    l.mLev[0] = 0;
+    l.mLev[1] = (byte) k;
+    l.mN = (byte) k;
+    l.mNLev = 2;
+    return l;
   }
 
 
@@ -585,7 +417,7 @@ public class Lattice {
 //  int lattice_numberOfMaximalChains(lattice L) {
 //    int[] co = new int[ Constants.MAXN - 2];
 //    int mc = 0;
-//    int[][] p = new int[ 2][Constants.MAXN - 2];
+//    int[][] p = new int[2][Constants.MAXN - 2];
 //    int i, l;
 //
 //    lattice_getCoveringRelation(co, L);

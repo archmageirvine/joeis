@@ -176,7 +176,7 @@ public abstract class LattEnum {
     Lattice la = new Lattice();
     if (VERBOSE) {
       System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
-      Lattice.lattice_print(l);
+      l.print();
     }
     Antichain antichain = new Antichain(l, nmin, mGlobals);
 
@@ -190,11 +190,11 @@ public abstract class LattEnum {
         antichain.generateLattice1(l, la);
         if (VERBOSE) {
           System.out.println("\n### lattice:");
-          Lattice.lattice_print(l);
+          l.print();
           System.out.print("+++ antichain data: ");
           antichain.printAntichains();
           System.out.println(">>> lattice:");
-          Lattice.lattice_print(la);
+          la.print();
         }
         this.reg(la);
         if (la.mN < n) {
@@ -219,11 +219,11 @@ public abstract class LattEnum {
         antichain.generateLattice(l, la);
         if (VERBOSE) {
           System.out.print("\n### lattice:\n");
-          Lattice.lattice_print(l);
+          l.print();
           System.out.print("+++ antichain data: ");
           antichain.printAntichains();
           System.out.println(">>> lattice:");
-          Lattice.lattice_print(la);
+          la.print();
         }
         reg(la);
         if (la.mN < n) {
@@ -237,7 +237,7 @@ public abstract class LattEnum {
 
     if (VERBOSE) {
       System.out.println("\n[<<< leaving lattEnum_growLattice]:");
-      Lattice.lattice_print(l);
+      l.print();
     }
   }
 
@@ -252,7 +252,7 @@ public abstract class LattEnum {
   void growLattice2(int n, Lattice l, int nmin) {
     Lattice la = new Lattice();
     for (int k = nmin; k <= n - l.mN; ++k) {
-      Lattice.lattice_init_kFan(la, k);
+      Lattice.initKFan(la, k);
       reg(la);
       if (la.mN < n) {
         growLattice(n, la, 1);

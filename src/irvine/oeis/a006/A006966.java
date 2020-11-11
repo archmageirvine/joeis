@@ -43,9 +43,9 @@ public class A006966 implements Sequence {
    */
 
   /*
-   * Initialise global bitmaps to size N.
+   * Initialise global bitmaps to size n.
    */
-  private static void bitmapInit(long N) {
+  private static void bitmapInit(long n) {
     long bits, a1, b1, a2, b2;
 
     bits = Utils.BITSPERFLAGS64;
@@ -59,7 +59,7 @@ public class A006966 implements Sequence {
     if (Utils.MAXN > 2 * a1 + b1 + 2 || Utils.MAXN > 2 * a2 + b2 + 2) {
       throw new UnsupportedOperationException("Build problem: packed antichain lists don't fit into two flags64!");
     }
-    if (N > Utils.MAXN) {
+    if (n > Utils.MAXN) {
       throw new UnsupportedOperationException("The maximal number of elements with this executable is " + Utils.MAXN);
     }
     if ((Utils.MAXN_EVEN & Utils.MAXN) != 0) {
@@ -78,7 +78,7 @@ public class A006966 implements Sequence {
     Benes.initSmall();
   }
   final Globals mGlobals = new Globals();
-  final lattice mL = lattice.lattice_init_2();
+  final lattice mLattice = lattice.lattice_init_2();
 
   @Override
   public Z next() {
@@ -86,8 +86,8 @@ public class A006966 implements Sequence {
       return Z.ONE;
     }
     bitmapInit(mN);
-    final lattEnum e = lattEnum.lattEnum_Count_create(mL, mN, 3, mGlobals);
-    lattEnum.lattEnum_doEnumeration(e);
-    return Z.valueOf(lattEnum.lattEnum_getLatticeCount(e));
+    final lattEnum E = lattEnum.lattEnum_Count_create(mLattice, mN, 3, mGlobals);
+    lattEnum.lattEnum_doEnumeration(E);
+    return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));
   }
 }

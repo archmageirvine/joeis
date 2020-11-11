@@ -1,8 +1,6 @@
 package gebhardt;
 
 import gebhardt.Globals.SiData;
-import gebhardt.antichain.antichaindata;
-import gebhardt.PermGrp.PermGrpC;
 
 class canonical {
 	/*
@@ -62,11 +60,11 @@ class canonical {
 	 * lattice are given by all possible permutations of identical antichains, i.e., all possible permutations
 	 * of points of the lowest level of the new lattice that have identical covering sets.)
 	 */
-	static boolean antichaindata_isCanonical(antichaindata AD) {
+	static boolean antichaindata_isCanonical(Antichain AD) {
 		int bits;
 
-		bits = AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl];
-		if (AD.k * bits <= Long.SIZE) {
+		bits = AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl];
+		if (AD.mK * bits <= Long.SIZE) {
 			return antichaindata_isCanonical_p1(AD, bits);
 		} else {
 			throw new UnsupportedOperationException();
@@ -816,7 +814,7 @@ class canonical {
 					System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
 					Permutation.print(S.mG.mN, p, 0);
 				}
-				PermGrp.permgrpc_addGenerator(S, p);
+				S.addGenerator(p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p1(n, lo, hi, p, k, L, &L_);
 // 			if (antichainList_cmp_p1(L, L_)) {
@@ -853,7 +851,7 @@ class canonical {
 // #ifdef VERBOSE
 // 			printf("[antichainList_extractStabiliser_p2]: adding stabiliser generator "); perm_print(S.G.n, p, 0);
 // #endif
-				PermGrp.permgrpc_addGenerator(S, p);
+				S.addGenerator(p);
 // #ifdef DOTEST
 // 			antichainList_apply_perm_p2(n, lo, hi, p, k, L, L_);
 // 			if (antichainList_cmp_p2(L, L_)) {
@@ -900,19 +898,19 @@ class canonical {
 	 * Generate Beneš networks for the action of the generators on the next level (AD.cl-1)
 	 * of the current lattice or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
-	static void permgrp_preprocessGenerators(final antichaindata AD) {
-		final lattice L = AD.L;
-		final PermGrp G = AD.SD[AD.cl].ST;
+	static void permgrp_preprocessGenerators(final Antichain AD) {
+		final lattice L = AD.mLattice;
+		final PermGrp G = AD.mStabilisers[AD.mCl].mSt;
 		//#ifndef FILTER_GRADED
-		if (AD.cl != 0) {
+		if (AD.mCl != 0) {
 			for (int i = 0; i < G.mNgens; i++) {
 				if (VERBOSE) {
-					System.out.println("SAI: ppgen " + i + "/" + G.mNgens + " " + L.lev[AD.cl - 1] + " " + L.lev[AD.cl]);
+					System.out.println("SAI: ppgen " + i + "/" + G.mNgens + " " + L.lev[AD.mCl - 1] + " " + L.lev[AD.mCl]);
 					Permutation.print(G.mN, G.mPerm[i], 0);
 				}
-				G.mBenes[AD.cl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
+				G.mBenes[AD.mCl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.mCl - 1], L.lev[AD.mCl]);
 			}
-			G.mBenesValid |= BIT(AD.cl - 1);
+			G.mBenesValid |= BIT(AD.mCl - 1);
 		} else {
 			for (int i = 0; i < G.mNgens; i++) {
 				G.mBenes[L.nLev - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[L.nLev - 1], L.lev[L.nLev]);
@@ -932,28 +930,28 @@ class canonical {
 	 * of the current lattice as well as for the action on AD.k antichains of the appropriate
 	 * size or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
-	static void permgrp_preprocessGenerators_blocked(antichaindata AD) {
+	static void permgrp_preprocessGenerators_blocked(Antichain AD) {
 		int i;
 		lattice L;
 		PermGrp G;
 
-		L = AD.L;
-		G = AD.SD[AD.cl].ST;
+		L = AD.mLattice;
+		G = AD.mStabilisers[AD.mCl].mSt;
 		//#ifndef FILTER_GRADED
-		if (AD.cl != 0) {
+		if (AD.mCl != 0) {
 			if ((G.mBenesValid & BIT(L.nLev - 1)) != 0) {
 				for (i = 0; i < G.mNgens; i++) {
-					G.mBenes[AD.cl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
+					G.mBenes[AD.mCl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.mCl - 1], L.lev[AD.mCl]);
 					//Benes.delete(G.benes[L.nLev - 1][i]);
-					G.mBenes[L.nLev - 1][i] = new Benes(G.mPerm[i], G.mInvPerm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
+					G.mBenes[L.nLev - 1][i] = new Benes(G.mPerm[i], G.mInvPerm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.mCl] - L.lev[AD.mCl - 1]);
 				}
-				G.mBenesValid |= BIT(AD.cl - 1);
+				G.mBenesValid |= BIT(AD.mCl - 1);
 			} else {
 				for (i = 0; i < G.mNgens; i++) {
-					G.mBenes[AD.cl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.cl - 1], L.lev[AD.cl]);
-					G.mBenes[L.nLev - 1][i] = new Benes(G.mPerm[i], G.mInvPerm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.cl] - L.lev[AD.cl - 1]);
+					G.mBenes[AD.mCl - 1][i] = Benes.get(G.mPerm[i], G.mInvPerm[i], L.lev[AD.mCl - 1], L.lev[AD.mCl]);
+					G.mBenes[L.nLev - 1][i] = new Benes(G.mPerm[i], G.mInvPerm[i], L.lev[L.nLev - 1], L.lev[L.nLev], L.lev[AD.mCl] - L.lev[AD.mCl - 1]);
 				}
-				G.mBenesValid |= BIT(AD.cl - 1) | BIT(L.nLev - 1);
+				G.mBenesValid |= BIT(AD.mCl - 1) | BIT(L.nLev - 1);
 			}
 		} else {
 			if ((G.mBenesValid & BIT(L.nLev - 1)) != 0) {
@@ -994,30 +992,30 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_1(antichaindata AD, PermGrp G, PermGrpC S, int pos, int gen) {
+	static void processElement_1(Antichain AD, PermGrp G, PermGrpC S, int pos, int gen) {
 		final byte[] h = Permutation.create();
-		final long A = AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0];
-		int Apos = AD.GD.mOrbitSize;
+		final long A = AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0];
+		int Apos = AD.mGlobals.mOrbitSize;
 		/* check whether the element is new... */
 		//if (hashtable_query_insert_1(AD.GD.orbpos, A, HASH_1(A), & Apos)){
-		final boolean contains = AD.GD.mOrbitPos.containsKey(A);
+		final boolean contains = AD.mGlobals.mOrbitPos.containsKey(A);
 		if (contains) {
-			Apos = AD.GD.mOrbitPos.get(A).intValue();
+			Apos = AD.mGlobals.mOrbitPos.get(A).intValue();
 			if (VERBOSE) {
 				System.out.println("--- hashtable query/insert " + A + " => " + Apos);
 			}
 			/* ...if not, note the new stabiliser element */
 			if (pos != 0) {
 				if (Apos != 0) {
-					Permutation.leftDivideMultiply(S.mG.mN, AD.GD.mOrbitElements[pos].mToRoot, G.mPerm[gen], AD.GD.mOrbitElements[Apos].mToRoot, h);
+					Permutation.leftDivideMultiply(S.mG.mN, AD.mGlobals.mOrbitElements[pos].mToRoot, G.mPerm[gen], AD.mGlobals.mOrbitElements[Apos].mToRoot, h);
 				} else {
-					Permutation.leftDivide(S.mG.mN, AD.GD.mOrbitElements[pos].mToRoot, G.mPerm[gen], h);
+					Permutation.leftDivide(S.mG.mN, AD.mGlobals.mOrbitElements[pos].mToRoot, G.mPerm[gen], h);
 				}
 			} else {
 				if (Apos != 0)  /* equivalent to if (AD.GD.orbsort[lpos]) */ {
 					assert G.mPerm[gen] != null;
-					assert AD.GD.mOrbitElements[Apos].mToRoot != null;
-					Permutation.multiply(S.mG.mN, G.mPerm[gen], AD.GD.mOrbitElements[Apos].mToRoot, h);
+					assert AD.mGlobals.mOrbitElements[Apos].mToRoot != null;
+					Permutation.multiply(S.mG.mN, G.mPerm[gen], AD.mGlobals.mOrbitElements[Apos].mToRoot, h);
 				} else {
 					Permutation.copy(S.mG.mN, G.mPerm[gen], h);
 				}
@@ -1041,21 +1039,21 @@ class canonical {
 				Permutation.print(S.mG.mN, h, 0);
 			}
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				PermGrp.permgrpc_addGenerator(S, h);
+				S.addGenerator(h);
 			}
 		} else {
-			AD.GD.mOrbitPos.put(A, (long) Apos);
+			AD.mGlobals.mOrbitPos.put(A, (long) Apos);
 			if (VERBOSE) {
 				System.out.println("+++ hashtable query/insert " + A + " => " + Apos);
 			}
 			/* ...if yes, note the permutation to the root and the applied generator */
-			AD.GD.mOrbitElements[AD.GD.mOrbitSize].mGen = gen;
+			AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mGen = gen;
 			if (pos != 0) {
-				Permutation.multiply(S.mG.mN, G.mInvPerm[gen], AD.GD.mOrbitElements[pos].mToRoot, AD.GD.mOrbitElements[AD.GD.mOrbitSize].mToRoot);
+				Permutation.multiply(S.mG.mN, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[pos].mToRoot, AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mToRoot);
 			} else {
-				Permutation.copy(S.mG.mN, G.mInvPerm[gen], AD.GD.mOrbitElements[AD.GD.mOrbitSize].mToRoot);
+				Permutation.copy(S.mG.mN, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mToRoot);
 			}
-			AD.GD.mOrbitSize++;
+			AD.mGlobals.mOrbitSize++;
 		}
 	}
 
@@ -1072,28 +1070,28 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_p1(antichaindata AD, PermGrp G, PermGrpC S, int pos, int gen, byte[] p) {
+	static void processElement_p1(Antichain AD, PermGrp G, PermGrpC S, int pos, int gen, byte[] p) {
 		long A;
 		int Apos;
 		byte[] h = Permutation.create();
 
-		A = AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0];
-		Apos = AD.GD.mOrbitSize;
+		A = AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0];
+		Apos = AD.mGlobals.mOrbitSize;
 		/* check whether the element is new... */
-		final boolean contains = AD.GD.mOrbitPos.containsKey(A);
+		final boolean contains = AD.mGlobals.mOrbitPos.containsKey(A);
 		//if (hashtable_query_insert_1(AD.GD.orbpos, A, HASH_1(A), & Apos)){
 		if (contains) {
-			Apos = AD.GD.mOrbitPos.get(A).intValue();
+			Apos = AD.mGlobals.mOrbitPos.get(A).intValue();
 			/* ...if no, note the new stabiliser element */
 			if (pos != 0) {
 				if (Apos != 0) {
-					Permutation.multiplyLeftDivide(S.mG.mN, p, G.mInvPerm[gen], AD.GD.mOrbitElements[pos].mToRoot,AD.GD.mOrbitElements[Apos].mToRoot, h);
+					Permutation.multiplyLeftDivide(S.mG.mN, p, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[pos].mToRoot,AD.mGlobals.mOrbitElements[Apos].mToRoot, h);
 				} else {
-					Permutation.multiplyInverse(S.mG.mN, p, G.mInvPerm[gen], AD.GD.mOrbitElements[pos].mToRoot, h);
+					Permutation.multiplyInverse(S.mG.mN, p, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[pos].mToRoot, h);
 				}
 			} else {
 				if (Apos != 0) {
-					Permutation.multiplyLeftDivide(S.mG.mN, p, G.mInvPerm[gen], AD.GD.mOrbitElements[Apos].mToRoot, h);
+					Permutation.multiplyLeftDivide(S.mG.mN, p, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[Apos].mToRoot, h);
 				} else {
 					Permutation.multiplyInverse(S.mG.mN, p, G.mInvPerm[gen], h);
 				}
@@ -1116,18 +1114,18 @@ class canonical {
 // 		printf("[processElement_p1]: adding stabiliser generator "); perm_print(S.G.n, h, 0);
 // #endif
 			if (!Permutation.isIdentity(S.mG.mN, h)) {
-				PermGrp.permgrpc_addGenerator(S, h);
+				S.addGenerator(h);
 			}
 		} else {
-			AD.GD.mOrbitPos.put(A, (long) Apos);
+			AD.mGlobals.mOrbitPos.put(A, (long) Apos);
 			/* ...if yes, note the permutation to the root and the applied generator */
-			AD.GD.mOrbitElements[AD.GD.mOrbitSize].mGen = gen;
+			AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mGen = gen;
 			if (pos != 0) {
-				Permutation.multiply(S.mG.mN, p, G.mInvPerm[gen], AD.GD.mOrbitElements[pos].mToRoot, AD.GD.mOrbitElements[AD.GD.mOrbitSize].mToRoot);
+				Permutation.multiply(S.mG.mN, p, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[pos].mToRoot, AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mToRoot);
 			} else {
-				Permutation.multiply(S.mG.mN, p, G.mInvPerm[gen], AD.GD.mOrbitElements[AD.GD.mOrbitSize].mToRoot);
+				Permutation.multiply(S.mG.mN, p, G.mInvPerm[gen], AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mToRoot);
 			}
-			AD.GD.mOrbitSize++;
+			AD.mGlobals.mOrbitSize++;
 // #ifdef DOTEST
 // 		if (AD.GD.orbspace == AD.GD.orbsize)
 // 			globals_enlargen_orbitspace(AD.GD);
@@ -1244,44 +1242,44 @@ class canonical {
 	 * lattice are given by all possible permutations of identical antichains, i.e., all possible permutations
 	 * of points of the lowest level of the new lattice that have identical covering sets.)
 	 */
-	static boolean antichaindata_isCanonical_1(antichaindata AD) {
+	static boolean antichaindata_isCanonical_1(Antichain AD) {
 		int pos;
 		int gen;
 		PermGrp G;
 		PermGrpC S;
 
 		if (VERBOSE) {
-			System.out.println("[entering antichaindata_isCanonical_1]: " + AD.cl + " " + AD.SD[AD.cl + 1].ST.mN);
-			lattice.lattice_print(AD.L);
-			antichain.antichaindata_printCounters(AD);
+			System.out.println("[entering antichaindata_isCanonical_1]: " + AD.mCl + " " + AD.mStabilisers[AD.mCl + 1].mSt.mN);
+			lattice.lattice_print(AD.mLattice);
+			Antichain.antichaindata_printCounters(AD);
 		}
-		G = AD.SD[AD.cl + 1].ST;
-		assert G.mNgens == 0 || (G.mBenesValid & BIT(AD.cl)) != 0
-			: "ATTEMPTS TO USE INVALID BENEŠ NETWORKS [antichaindata_isCanonical_1]: level " + AD.cl;
+		G = AD.mStabilisers[AD.mCl + 1].mSt;
+		assert G.mNgens == 0 || (G.mBenesValid & BIT(AD.mCl)) != 0
+			: "ATTEMPTS TO USE INVALID BENEŠ NETWORKS [antichaindata_isCanonical_1]: level " + AD.mCl;
 		if (G.mNgens > 0) {
-			if ((AD.GD.mOrbitElements[0].mData[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
-				if (AD.SD[AD.cl + 1].SI != 0) {
+			if ((AD.mGlobals.mOrbitElements[0].mData[0] = (AD.mO[0] & AD.mCmc) >> AD.mLattice.lev[AD.mCl]) != 0) {
+				if (AD.mStabilisers[AD.mCl + 1].mSi != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 					final byte[] p = Permutation.create();
-					final long[] L = new long[] {AD.GD.mOrbitElements[0].mData[0]};
-					Permutation.init(AD.L.n + AD.k, p);
-					final int[] ugly = new int[] {AD.SD[AD.cl].SI};
-					final int xcl = AD.cl;
-					antichainList_applySI_1(AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl], L, AD.SD[AD.cl + 1].SI, ugly, p)	;
-					AD.SD[xcl].SI = ugly[0];
-					if (L[0] != AD.GD.mOrbitElements[0].mData[0]) {
+					final long[] L = new long[] {AD.mGlobals.mOrbitElements[0].mData[0]};
+					Permutation.init(AD.mLattice.n + AD.mK, p);
+					final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
+					final int xcl = AD.mCl;
+					antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p)	;
+					AD.mStabilisers[xcl].mSi = ugly[0];
+					if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 						return false;
 					}
-					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					S = AD.ensureStabiliser(AD.mCl);
+					AD.mStabilisers[AD.mCl].mSt = S.mG;
+					S.init(AD.mLattice.n + AD.mK);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
-					AD.GD.mOrbitSize = 1;
-					AD.GD.mOrbitElements[0].mGen = -1;
+					AD.mGlobals.mOrbitSize = 1;
+					AD.mGlobals.mOrbitElements[0].mGen = -1;
 					//hashtable_clear(AD.GD.orbpos);
 					//hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
-					AD.GD.mOrbitPos.clear();
-					AD.GD.mOrbitPos.put(L[0], 0L);
+					AD.mGlobals.mOrbitPos.clear();
+					AD.mGlobals.mOrbitPos.put(L[0], 0L);
 					if (VERBOSE) {
 						System.out.println("### hashtable cleared");
 						System.out.println("+++ hashtable insert (" + L[0] + "," + 0L + ")");
@@ -1294,19 +1292,19 @@ class canonical {
 						}
 					}
 					//#endif
-					for (pos = 0; pos < AD.GD.mOrbitSize; pos++) {
+					for (pos = 0; pos < AD.mGlobals.mOrbitSize; pos++) {
 						for (gen = 0; gen < G.mNgens; gen++) {
-							if ((G.mInvol & BIT(gen)) != 0 && AD.GD.mOrbitElements[pos].mGen == gen) {
+							if ((G.mInvol & BIT(gen)) != 0 && AD.mGlobals.mOrbitElements[pos].mGen == gen) {
 								continue;
 							}
 							/* apply generator gen to orbit element pos... */
-							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								AD.GD.enlargenOrbitSpace();
+							if (AD.mGlobals.mOrbitSpace == AD.mGlobals.mOrbitSize) {
+								AD.mGlobals.enlargenOrbitSpace();
 							}
-							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-              G.mBenes[AD.cl][gen].applyP1(A);
-							Permutation.init(AD.L.n + AD.k, p);
-							antichainList_applySI_1(AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl], A, AD.SD[AD.cl + 1].SI, null, p);
+							long[] A = new long[] {AD.mGlobals.mOrbitElements[pos].mData[0]};
+              G.mBenes[AD.mCl][gen].applyP1(A);
+							Permutation.init(AD.mLattice.n + AD.mK, p);
+							antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], A, AD.mStabilisers[AD.mCl + 1].mSi, null, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (long_cmp(L[0], A[0]) > 0) {
 								if (VERBOSE) {
@@ -1319,7 +1317,7 @@ class canonical {
 								return false;
 							}
 							/* ...otherwise, do the necessary housekeeping */
-							AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0] = A[0];
+							AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0] = A[0];
 							processElement_p1(AD, G, S, pos, gen, p);
 						}
 					}
@@ -1328,19 +1326,19 @@ class canonical {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 					byte[] p = Permutation.create();
 					long L;
-					L = AD.GD.mOrbitElements[0].mData[0];
-					Permutation.init(AD.L.n + AD.k, p);
-					AD.SD[AD.cl].SI = 0;
-					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+					L = AD.mGlobals.mOrbitElements[0].mData[0];
+					Permutation.init(AD.mLattice.n + AD.mK, p);
+					AD.mStabilisers[AD.mCl].mSi = 0;
+					S = AD.ensureStabiliser(AD.mCl);
+					AD.mStabilisers[AD.mCl].mSt = S.mG;
+					S.init(AD.mLattice.n + AD.mK);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
-					AD.GD.mOrbitSize = 1;
-					AD.GD.mOrbitElements[0].mGen = -1;
+					AD.mGlobals.mOrbitSize = 1;
+					AD.mGlobals.mOrbitElements[0].mGen = -1;
 //					hashtable_clear(AD.GD.orbpos);
 //					hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
-					AD.GD.mOrbitPos.clear();
-					AD.GD.mOrbitPos.put(L,0L);
+					AD.mGlobals.mOrbitPos.clear();
+					AD.mGlobals.mOrbitPos.put(L,0L);
 					if (VERBOSE) {
 						System.out.println("### hashtable cleared");
 						System.out.println("+++ hashtable insert (" + L + "," + 0L + ")");
@@ -1353,18 +1351,18 @@ class canonical {
 						}
 					}
 //#endif
-					for (pos = 0; pos < AD.GD.mOrbitSize; pos++) {
+					for (pos = 0; pos < AD.mGlobals.mOrbitSize; pos++) {
 						for (gen = 0; gen < G.mNgens; gen++) {
-							if ((G.mInvol & BIT(gen)) != 0 && AD.GD.mOrbitElements[pos].mGen == gen) {
+							if ((G.mInvol & BIT(gen)) != 0 && AD.mGlobals.mOrbitElements[pos].mGen == gen) {
 								continue;
 							}
 							/* apply generator gen to orbit element pos... */
-							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								AD.GD.enlargenOrbitSpace();
+							if (AD.mGlobals.mOrbitSpace == AD.mGlobals.mOrbitSize) {
+								AD.mGlobals.enlargenOrbitSpace();
 							}
-							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-              G.mBenes[AD.cl][gen].applyP1(A);
-							Permutation.init(AD.L.n + AD.k, p);
+							long[] A = new long[] {AD.mGlobals.mOrbitElements[pos].mData[0]};
+              G.mBenes[AD.mCl][gen].applyP1(A);
+							Permutation.init(AD.mLattice.n + AD.mK, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (long_cmp(L, A[0]) > 0) {
 								if (VERBOSE) {
@@ -1377,8 +1375,8 @@ class canonical {
 								return false;
 							}
 							/* ...otherwise, do the necessary housekeeping */
-							AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0] = A[0];
-							if (AD.SD[AD.cl + 1].SI != 0) {
+							AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0] = A[0];
+							if (AD.mStabilisers[AD.mCl + 1].mSi != 0) {
 								processElement_p1(AD, G, S, pos, gen, p);
 							} else {
 								processElement_1(AD, G, S, pos, gen);
@@ -1388,47 +1386,47 @@ class canonical {
 					permgrpc_compactGenerators(S);
 				}
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2, so G.n == S.n */
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
-				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
+				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 			}
-		} else if (AD.SD[AD.cl + 1].SI != 0) {
-			if ((AD.GD.mOrbitElements[0].mData[0] = (AD.O[0] & AD.cmc) >> AD.L.lev[AD.cl]) != 0) {
+		} else if (AD.mStabilisers[AD.mCl + 1].mSi != 0) {
+			if ((AD.mGlobals.mOrbitElements[0].mData[0] = (AD.mO[0] & AD.mCmc) >> AD.mLattice.lev[AD.mCl]) != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 				byte[] p = Permutation.create();
-				long[] L = new long[] { AD.GD.mOrbitElements[0].mData[0]};
-				Permutation.init(AD.L.n + AD.k, p);
-				final int[] ugly = new int[] {AD.SD[AD.cl].SI};
-				final int xcl = AD.cl;
-				antichainList_applySI_1(AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1] - AD.L.lev[AD.cl], L, AD.SD[AD.cl + 1].SI, ugly, p);
-				AD.SD[xcl].SI = ugly[0];
-				if (L[0] != AD.GD.mOrbitElements[0].mData[0]) {
+				long[] L = new long[] { AD.mGlobals.mOrbitElements[0].mData[0]};
+				Permutation.init(AD.mLattice.n + AD.mK, p);
+				final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
+				final int xcl = AD.mCl;
+				antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p);
+				AD.mStabilisers[xcl].mSi = ugly[0];
+				if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 					return false;
 				}
-				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S = AD.ensureStabiliser(AD.mCl);
+				AD.mStabilisers[AD.mCl].mSt = S.mG;
+				S.init(AD.mLattice.n + AD.mK);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2, so G.n == S.n */
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
-				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
+				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 			}
 		} else {
 			//#ifndef FILTER_GRADED
-			if (AD.cl == AD.L.nLev - 2) {
+			if (AD.mCl == AD.mLattice.nLev - 2) {
 				//#endif
-				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S = AD.ensureStabiliser(AD.mCl);
+				AD.mStabilisers[AD.mCl].mSt = S.mG;
+				S.init(AD.mLattice.n + AD.mK);
 				//#ifndef FILTER_GRADED
 			} else {
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
 			}
 			//#endif
-			AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+			AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 		}
 		permgrp_preprocessGenerators(AD);
 		if (VERBOSE) {
-			System.out.printf("***** level %d:\n", AD.cl);
-			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			System.out.printf("***** level %d:\n", AD.mCl);
+			PermGrp.printGenerators(AD.mStabilisers[AD.mCl].mSt, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS
@@ -1459,7 +1457,7 @@ class canonical {
 	 * identical antichains, i.e., all possible permutations of points of the lowest level of the new lattice
 	 * that have identical covering sets.  The latter may be handled by "implicit" stabilisers.)
 	 */
-	static boolean antichaindata_isCanonical_p1(antichaindata AD, int bits) {
+	static boolean antichaindata_isCanonical_p1(Antichain AD, int bits) {
 		int i, gen;
 		int pos;
 		long[] M = new long[Utils.MAXN - 2];
@@ -1469,13 +1467,13 @@ class canonical {
 
 		if (VERBOSE) {
 			System.out.println("[entering antichaindata_isCanonical_p1]:");
-			lattice.lattice_print(AD.L);
-			antichain.antichaindata_printCounters(AD);
+			lattice.lattice_print(AD.mLattice);
+			Antichain.antichaindata_printCounters(AD);
 		}
-		for (mask = BIT(bits) - 1, i = AD.k; i-- != 0; mask <<= bits) {
+		for (mask = BIT(bits) - 1, i = AD.mK; i-- != 0; mask <<= bits) {
 			M[i] = mask;
 		}
-		G = AD.SD[AD.cl + 1].ST;
+		G = AD.mStabilisers[AD.mCl + 1].mSt;
 // #ifdef DOTEST
 // 	if (G.ngens && !(G.BenesValid & BIT(AD.cl))) {
 // 		printf("ATTEMPTS TO USE INVALID BENEŠ NETWORKS [antichaindata_isCanonical_1]: level %d\n", AD.cl);
@@ -1483,57 +1481,57 @@ class canonical {
 // 	}
 // #endif
 		if (G.mNgens > 0) {
-			AD.GD.mOrbitElements[0].mData[0] = 0;
-			for (i = 0; i < AD.k; i++) {
-				AD.GD.mOrbitElements[0].mData[0] <<= bits;
-				AD.GD.mOrbitElements[0].mData[0] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+			AD.mGlobals.mOrbitElements[0].mData[0] = 0;
+			for (i = 0; i < AD.mK; i++) {
+				AD.mGlobals.mOrbitElements[0].mData[0] <<= bits;
+				AD.mGlobals.mOrbitElements[0].mData[0] |= (AD.mO[i] & AD.mCmc) >> AD.mLattice.lev[AD.mCl];
 			}
-			if (AD.GD.mOrbitElements[0].mData[0] != 0) {
-				if (AD.SD[AD.cl + 1].SI != 0) {
+			if (AD.mGlobals.mOrbitElements[0].mData[0] != 0) {
+				if (AD.mStabilisers[AD.mCl + 1].mSi != 0) {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 					byte[] p = Permutation.create();
-					long[] L = new long[] {AD.GD.mOrbitElements[0].mData[0]};
-					Permutation.init(AD.L.n + AD.k, p);
-					for (pmask = 1, i = AD.k; i-- != 0; ) {
+					long[] L = new long[] {AD.mGlobals.mOrbitElements[0].mData[0]};
+					Permutation.init(AD.mLattice.n + AD.mK, p);
+					for (pmask = 1, i = AD.mK; i-- != 0; ) {
 						pmask = (pmask << bits) | 1;
 					}
-					antichainList_applySI_p1(AD.L.n, AD.k, AD.L.lev[AD.cl], bits, AD.SD[AD.cl + 1].bl, AD.GD, L, AD.SD[AD.cl + 1].SI, pmask, p);
-					if (antichainList_cmp_p1(L[0], AD.GD.mOrbitElements[0].mData[0]) != 0) {
+					antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
+					if (antichainList_cmp_p1(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
 						/* determine the position up to which we can backtrack */
 						int m, pi;
 						long D;
 						m = i = 0;
-						D = L[0] ^ AD.GD.mOrbitElements[0].mData[0];
+						D = L[0] ^ AD.mGlobals.mOrbitElements[0].mData[0];
 						do {
-							pi = p[AD.L.n + i] - AD.L.n;
+							pi = p[AD.mLattice.n + i] - AD.mLattice.n;
 							if (pi > m) {
 								m = pi;
 							}
 						} while ((D & M[i++]) == 0);
-						AD.Fpos += m - AD.cp;
-						AD.cp = m;
+						AD.mFpos += m - AD.mCp;
+						AD.mCp = m;
 						if (VERBOSE) {
-							Permutation.print(AD.L.n+AD.k, p, 0);
-							System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
+							Permutation.print(AD.mLattice.n+AD.mK, p, 0);
+							System.out.printf("                                       NOT canonical --> %d\n", AD.mCp);
 						}
 						return false;
 					}
-					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
-					AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
-					final int[] ugly = {AD.SD[AD.cl].SI};
-					final int xcl = AD.cl;
-					antichainList_extractStabiliser_p1(AD.L.n, AD.k, AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1], AD.GD, S, ugly, L[0]);
-					AD.SD[xcl].SI=ugly[0];
+					S = AD.ensureStabiliser(AD.mCl);
+					AD.mStabilisers[AD.mCl].mSt = S.mG;
+					S.init(AD.mLattice.n + AD.mK);
+					AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
+					final int[] ugly = {AD.mStabilisers[AD.mCl].mSi};
+					final int xcl = AD.mCl;
+					antichainList_extractStabiliser_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly, L[0]);
+					AD.mStabilisers[xcl].mSi =ugly[0];
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
-					AD.GD.mOrbitSize = 1;
-					AD.GD.mOrbitElements[0].mGen = -1;
-					Permutation.init(S.mG.mN, AD.GD.mOrbitElements[0].mToRoot);
+					AD.mGlobals.mOrbitSize = 1;
+					AD.mGlobals.mOrbitElements[0].mGen = -1;
+					Permutation.init(S.mG.mN, AD.mGlobals.mOrbitElements[0].mToRoot);
 //					hashtable_clear(AD.GD.orbpos);
 //					hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
-					AD.GD.mOrbitPos.clear();
-					AD.GD.mOrbitPos.put(L[0], 0L);
+					AD.mGlobals.mOrbitPos.clear();
+					AD.mGlobals.mOrbitPos.put(L[0], 0L);
 					//	#ifndef HARDCODE_MAXN_22
 					if (S.mG.mN > G.mN) {
 						for (gen = 0; gen < G.mNgens; gen++) {
@@ -1542,25 +1540,25 @@ class canonical {
 						}
 					}
 					//	#endif
-					for (pos = 0; pos < AD.GD.mOrbitSize; pos++) {
+					for (pos = 0; pos < AD.mGlobals.mOrbitSize; pos++) {
 						for (gen = 0; gen < G.mNgens; gen++) {
 							//int[]  p;
-							if ((G.mInvol & BIT(gen)) != 0 && AD.GD.mOrbitElements[pos].mGen == gen) {
+							if ((G.mInvol & BIT(gen)) != 0 && AD.mGlobals.mOrbitElements[pos].mGen == gen) {
 								continue;
 							}
 							/* apply generator gen to orbit element pos... */
-							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								AD.GD.enlargenOrbitSpace();
+							if (AD.mGlobals.mOrbitSpace == AD.mGlobals.mOrbitSize) {
+								AD.mGlobals.enlargenOrbitSpace();
 							}
-							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-              G.mBenes[AD.cl][gen].applyP1(A);
+							long[] A = new long[] {AD.mGlobals.mOrbitElements[pos].mData[0]};
+              G.mBenes[AD.mCl][gen].applyP1(A);
 							//#ifndef FILTER_GRADED
-							if (AD.cl < AD.L.nLev - 2) {
-                G.mBenes[AD.L.nLev - 1][gen].applyBlockedP1(A);
+							if (AD.mCl < AD.mLattice.nLev - 2) {
+                G.mBenes[AD.mLattice.nLev - 1][gen].applyBlockedP1(A);
 							}
 							//#endif
 							Permutation.init(S.mG.mN, p);
-							antichainList_applySI_p1(AD.L.n, AD.k, AD.L.lev[AD.cl], bits, AD.SD[AD.cl + 1].bl, AD.GD, A, AD.SD[AD.cl + 1].SI, pmask, p);
+							antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, A, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
 							/* ...we're done if the result is smaller than the original element */
 							if (antichainList_cmp_p1(L[0], A[0]) > 0) {
 								/* determine the position up to which we can backtrack */
@@ -1569,16 +1567,16 @@ class canonical {
 								m = i = 0;
 								D = L[0] ^ A[0];
 								do {
-									pi = AD.GD.mOrbitElements[pos].mToRoot[G.mInvPerm[gen][p[AD.L.n + i]]] - AD.L.n;
+									pi = AD.mGlobals.mOrbitElements[pos].mToRoot[G.mInvPerm[gen][p[AD.mLattice.n + i]]] - AD.mLattice.n;
 									if (pi > m) {
 										m = pi;
 									}
 								} while ((D & M[i++]) == 0);
-								AD.Fpos += m - AD.cp;
-								AD.cp = m;
+								AD.mFpos += m - AD.mCp;
+								AD.mCp = m;
 								if (VERBOSE) {
 									Permutation.print(S.mG.mN, p, 0);
-									System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
+									System.out.printf("                                       NOT canonical --> %d\n", AD.mCp);
 								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
@@ -1590,7 +1588,7 @@ class canonical {
 								return false;
 							}
 							/* ...otherwise, do the necessary housekeeping */
-							AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0] = A[0];
+							AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0] = A[0];
 							processElement_p1(AD, G, S, pos, gen, p);
 						}
 					}
@@ -1599,20 +1597,20 @@ class canonical {
 					/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 					byte[] p = Permutation.create();
 					long L;
-					L = AD.GD.mOrbitElements[0].mData[0];
-					Permutation.init(AD.L.n + AD.k, p);
-					S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-					AD.SD[AD.cl].ST = S.mG;
-					PermGrp.permgrpc_init(S, AD.L.n + AD.k);
-					AD.SD[AD.cl].SI = 0;
+					L = AD.mGlobals.mOrbitElements[0].mData[0];
+					Permutation.init(AD.mLattice.n + AD.mK, p);
+					S = AD.ensureStabiliser(AD.mCl);
+					AD.mStabilisers[AD.mCl].mSt = S.mG;
+					S.init(AD.mLattice.n + AD.mK);
+					AD.mStabilisers[AD.mCl].mSi = 0;
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
-					AD.GD.mOrbitSize = 1;
-					AD.GD.mOrbitElements[0].mGen = -1;
-					Permutation.init(S.mG.mN, AD.GD.mOrbitElements[0].mToRoot);
+					AD.mGlobals.mOrbitSize = 1;
+					AD.mGlobals.mOrbitElements[0].mGen = -1;
+					Permutation.init(S.mG.mN, AD.mGlobals.mOrbitElements[0].mToRoot);
 //					hashtable_clear(AD.GD.orbpos);
 //					hashtable_insert_1(AD.GD.orbpos, L, HASH_1(L), 0);
-					AD.GD.mOrbitPos.clear();
-					AD.GD.mOrbitPos.put(L, 0L);
+					AD.mGlobals.mOrbitPos.clear();
+					AD.mGlobals.mOrbitPos.put(L, 0L);
 					//	#ifndef HARDCODE_MAXN_22
 					if (S.mG.mN > G.mN) {
 						for (gen = 0; gen < G.mNgens; gen++) {
@@ -1621,25 +1619,25 @@ class canonical {
 						}
 					}
 					//	#endif
-					for (pos = 0; pos < AD.GD.mOrbitSize; pos++) {
+					for (pos = 0; pos < AD.mGlobals.mOrbitSize; pos++) {
 						for (gen = 0; gen < G.mNgens; gen++) {
 							//int[]  p;
-							if ((G.mInvol & BIT(gen)) != 0 && AD.GD.mOrbitElements[pos].mGen == gen) {
+							if ((G.mInvol & BIT(gen)) != 0 && AD.mGlobals.mOrbitElements[pos].mGen == gen) {
 								continue;
 							}
 							/* apply generator gen to orbit element pos... */
-							if (AD.GD.mOrbitSpace == AD.GD.mOrbitSize) {
-								AD.GD.enlargenOrbitSpace();
+							if (AD.mGlobals.mOrbitSpace == AD.mGlobals.mOrbitSize) {
+								AD.mGlobals.enlargenOrbitSpace();
 							}
-							long[] A = new long[] {AD.GD.mOrbitElements[pos].mData[0]};
-              G.mBenes[AD.cl][gen].applyP1(A);
+							long[] A = new long[] {AD.mGlobals.mOrbitElements[pos].mData[0]};
+              G.mBenes[AD.mCl][gen].applyP1(A);
 							//#ifndef FILTER_GRADED
-							if (AD.cl < AD.L.nLev - 2) {
-                G.mBenes[AD.L.nLev - 1][gen].applyBlockedP1(A);
+							if (AD.mCl < AD.mLattice.nLev - 2) {
+                G.mBenes[AD.mLattice.nLev - 1][gen].applyBlockedP1(A);
 							}
 							//#endif
 							Permutation.init(S.mG.mN, p);
-							antichainList_sort_p1(AD.k, bits, M, AD.SD[AD.cl + 1].bl, A, p, AD.L.n);
+							antichainList_sort_p1(AD.mK, bits, M, AD.mStabilisers[AD.mCl + 1].mBl, A, p, AD.mLattice.n);
 							/* ...we're done if the result is smaller than the original element */
 							if (antichainList_cmp_p1(L, A[0]) > 0) {
 								/* determine the position up to which we can backtrack */
@@ -1648,16 +1646,16 @@ class canonical {
 								m = i = 0;
 								D = L ^ A[0];
 								do {
-									pi = AD.GD.mOrbitElements[pos].mToRoot[G.mInvPerm[gen][p[AD.L.n + i]]] - AD.L.n;
+									pi = AD.mGlobals.mOrbitElements[pos].mToRoot[G.mInvPerm[gen][p[AD.mLattice.n + i]]] - AD.mLattice.n;
 									if (pi > m) {
 										m = pi;
 									}
 								} while ((D & M[i++]) == 0);
-								AD.Fpos += m - AD.cp;
-								AD.cp = m;
+								AD.mFpos += m - AD.mCp;
+								AD.mCp = m;
 								if (VERBOSE) {
 									Permutation.print(S.mG.mN, p, 0);
-									System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
+									System.out.printf("                                       NOT canonical --> %d\n", AD.mCp);
 								}
 								// #ifdef PRINTLARGEORBITS
 								// 						if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
@@ -1669,92 +1667,92 @@ class canonical {
 								return false;
 							}
 							/* ...otherwise, do the necessary housekeeping */
-							AD.GD.mOrbitElements[AD.GD.mOrbitSize].mData[0] = A[0];
+							AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0] = A[0];
 							processElement_p1(AD, G, S, pos, gen, p);
 						}
 					}
 					permgrpc_compactGenerators(S);
 				}
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2 */
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
-				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
+				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 			}
-		} else if (AD.SD[AD.cl + 1].SI != 0) {
-			AD.GD.mOrbitElements[0].mData[0] = 0;
-			for (i = 0; i < AD.k; i++) {
-				AD.GD.mOrbitElements[0].mData[0] <<= bits;
-				AD.GD.mOrbitElements[0].mData[0] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+		} else if (AD.mStabilisers[AD.mCl + 1].mSi != 0) {
+			AD.mGlobals.mOrbitElements[0].mData[0] = 0;
+			for (i = 0; i < AD.mK; i++) {
+				AD.mGlobals.mOrbitElements[0].mData[0] <<= bits;
+				AD.mGlobals.mOrbitElements[0].mData[0] |= (AD.mO[i] & AD.mCmc) >> AD.mLattice.lev[AD.mCl];
 			}
-			if (AD.GD.mOrbitElements[0].mData[0] != 0) {
+			if (AD.mGlobals.mOrbitElements[0].mData[0] != 0) {
 				/* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
 				byte[] p = Permutation.create();
-				long[] L = new long[] {AD.GD.mOrbitElements[0].mData[0]};
-				Permutation.init(AD.L.n + AD.k, p);
-				for (pmask = 1, i = AD.k; i-- != 0; ) {
+				long[] L = new long[] {AD.mGlobals.mOrbitElements[0].mData[0]};
+				Permutation.init(AD.mLattice.n + AD.mK, p);
+				for (pmask = 1, i = AD.mK; i-- != 0; ) {
 					pmask = (pmask << bits) | 1;
 				}
-				antichainList_applySI_p1(AD.L.n, AD.k, AD.L.lev[AD.cl], bits, AD.SD[AD.cl + 1].bl, AD.GD, L, AD.SD[AD.cl + 1].SI, pmask, p);
-				if (antichainList_cmp_p1(L[0], AD.GD.mOrbitElements[0].mData[0]) != 0) {
+				antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
+				if (antichainList_cmp_p1(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
 					/* determine the position up to which we can backtrack */
 					int m, pi;
 					long D;
 					m = i = 0;
-					D = L[0] ^ AD.GD.mOrbitElements[0].mData[0];
+					D = L[0] ^ AD.mGlobals.mOrbitElements[0].mData[0];
 					do {
-						pi = p[AD.L.n + i] - AD.L.n;
+						pi = p[AD.mLattice.n + i] - AD.mLattice.n;
 						if (pi > m) {
 							m = pi;
 						}
 					} while ((D & M[i++]) == 0);
-					AD.Fpos += m - AD.cp;
-					AD.cp = m;
+					AD.mFpos += m - AD.mCp;
+					AD.mCp = m;
 					if (VERBOSE) {
-						Permutation.print(AD.L.n+AD.k, p, 0);
-						System.out.printf("                                       NOT canonical --> %d\n", AD.cp);
+						Permutation.print(AD.mLattice.n+AD.mK, p, 0);
+						System.out.printf("                                       NOT canonical --> %d\n", AD.mCp);
 					}
 					return false;
 				}
-				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
-				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
-				final int[] ugly = new int[] {AD.SD[AD.cl].SI};
-				final int xcl = AD.cl;
-				antichainList_extractStabiliser_p1(AD.L.n, AD.k, AD.L.lev[AD.cl], AD.L.lev[AD.cl + 1], AD.GD, S, ugly, L[0]);
-				AD.SD[xcl].SI = ugly[0];
+				S = AD.ensureStabiliser(AD.mCl);
+				AD.mStabilisers[AD.mCl].mSt = S.mG;
+				S.init(AD.mLattice.n + AD.mK);
+				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
+				final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
+				final int xcl = AD.mCl;
+				antichainList_extractStabiliser_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly, L[0]);
+				AD.mStabilisers[xcl].mSi = ugly[0];
 				permgrpc_compactGenerators(S);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2 */
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
-				AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
+				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 			}
 		} else {
 			//#ifndef FILTER_GRADED
-			if (AD.cl == AD.L.nLev - 2) {
+			if (AD.mCl == AD.mLattice.nLev - 2) {
 				//#endif
-				S = antichain.antichaindata_ensureStabiliser(AD, AD.cl);
-				AD.SD[AD.cl].ST = S.mG;
-				PermGrp.permgrpc_init(S, AD.L.n + AD.k);
+				S = AD.ensureStabiliser(AD.mCl);
+				AD.mStabilisers[AD.mCl].mSt = S.mG;
+				S.init(AD.mLattice.n + AD.mK);
 				//#ifndef FILTER_GRADED
 			} else {
-				AD.SD[AD.cl].ST = AD.SD[AD.cl + 1].ST;
+				AD.mStabilisers[AD.mCl].mSt = AD.mStabilisers[AD.mCl + 1].mSt;
 			}
 			//#endif
-			AD.SD[AD.cl].SI = AD.SD[AD.cl + 1].SI;
+			AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 		}
 //#ifndef FILTER_GRADED
-		if (AD.cl == 0) {
+		if (AD.mCl == 0) {
 //#endif
-			final int[] ugly = new int[] {AD.SD[0].bl}; // todo yuck
-			antichain.antichaindata_updateBlocks(AD, AD.SD[1].bl, ugly);
-			AD.SD[0].bl = ugly[0];
-			AD.SD[0].SI |= AD.SD[0].bl << AD.L.n;
+			final int[] ugly = new int[] {AD.mStabilisers[0].mBl}; // todo yuck
+			AD.updateBlocks(AD.mStabilisers[1].mBl, ugly);
+			AD.mStabilisers[0].mBl = ugly[0];
+			AD.mStabilisers[0].mSi |= AD.mStabilisers[0].mBl << AD.mLattice.n;
 //#ifndef FILTER_GRADED
 		}
 //#endif
 		permgrp_preprocessGenerators_blocked(AD);
 		if (VERBOSE) {
-			System.out.printf("***** level %d:\n", AD.cl);
-			PermGrp.permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
+			System.out.printf("***** level %d:\n", AD.mCl);
+			PermGrp.printGenerators(AD.mStabilisers[AD.mCl].mSt, 0);
 			System.out.println("                                       canonical");
 		}
 // #ifdef PRINTLARGEORBITS

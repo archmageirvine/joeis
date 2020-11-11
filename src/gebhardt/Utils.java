@@ -26,7 +26,7 @@ public class Utils {
     if (f[0] == 0) {
       return false;
     }
-    i[0] = Integer.numberOfTrailingZeros(f[0]); //lowestOneBit(f[0]); //__builtin_ctz( * f);
+    i[0] = Integer.numberOfTrailingZeros(f[0]);
     f[0] ^= BIT(i[0]);
     return true;
   }

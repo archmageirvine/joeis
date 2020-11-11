@@ -84,17 +84,11 @@ public class lattice {
     return Utils.BIT(i); // todo inline
   }
 
-	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
-
 	/*
 	 * Set the stabiliser data of the lattice L to S / SI; the reference count of S is incremented.
 	 */
 	static void lattice_setStabiliser(lattice L, PermGrp S, int SI) {
-		if (VERBOSE) {
-			System.out.println("SAI: lattice_setStabiliser " + S.mN);
-			//new Throwable().printStackTrace();
-		}
-		L.S = PermGrp.incRef(S);
+		L.S = S;
 		L.SI = SI;
 	}
 
@@ -103,7 +97,7 @@ public class lattice {
 	 * Decrement the reference count for the stabiliser of *L.
 	 */
 	static void lattice_clearStabiliser(lattice L) {
-		PermGrp.delete(L.S);
+    //PermGrp.permgrp_delete(L.S);
 	}
 
 
@@ -585,7 +579,7 @@ public class lattice {
 		}
 		System.out.println("]");
 		System.out.printf("stabiliser [%d]:\n", L.S.mN);
-		PermGrp.permgrp_printGenerators(L.S, 0);
+		PermGrp.printGenerators(L.S, 0);
 		final int[] SI = {L.SI};
 		final int[] ii = {i};
 		while (Utils.extractLSB32(SI, ii)) {
@@ -602,9 +596,8 @@ public class lattice {
 		PermGrp S;
 
 		S = new PermGrp();
-		PermGrp.init(S, 0);
 		lattice_fromString(L, 2, "1", S, 0);
-		PermGrp.delete(S);
+		//PermGrp.permgrp_delete(S);
 		return L;
 	}
 
@@ -617,10 +610,9 @@ public class lattice {
 			L.up[i] = L.lo[i] = (int) BIT(i);
 		}
 		final PermGrp S = new PermGrp();
-		PermGrp.init(S, 0);
 		final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
 		lattice_setStabiliser(L, S, SI);
-		PermGrp.delete(S);
+    //PermGrp.permgrp_delete(S);
 		L.lev[0] = 0;
 		L.lev[1] = (byte) k;
 		L.n = (byte) k;

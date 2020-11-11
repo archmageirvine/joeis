@@ -95,14 +95,14 @@ class Antichain {
   Antichain(final lattice lattice, final int k, final Globals globals) {
     mLattice = lattice;
     mGlobals = globals;
-    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Bene&scaron; network creation */
+    mLattice.lev[mLattice.nLev] = (byte) (mLattice.mN + k);  /* levels for the new lattice; for Bene&scaron; network creation */
     mK = k;
     mCl = lattice.nLev - 2;
     for (int i = 0; i < mStabilisers.length; ++i) {
       mStabilisers[i] = new Stabiliser();
     }
-    for (int i = 0, biti = 1; i < mLattice.n - 1; ++i, biti <<= 1) {
-      for (int j = i + 1; j < mLattice.n; ++j) {
+    for (int i = 0, biti = 1; i < mLattice.mN - 1; ++i, biti <<= 1) {
+      for (int j = i + 1; j < mLattice.mN; ++j) {
         if ((mLattice.lo[i] & mLattice.lo[j]) == 0) {
           mCop[i] |= Utils.BIT(j);
           mCop[j] |= biti;
@@ -112,7 +112,7 @@ class Antichain {
     mStabilisers[mCl + 1].mSt = mLattice.S;
     mStabilisers[mCl + 1].mSi = mLattice.SI;
     mStabilisers[mCl + 1].mBl = (1 << k) - 2;
-    mCmc = (int) (Utils.BIT(lattice.n) - Utils.BIT(lattice.lev[mCl]));
+    mCmc = (int) (Utils.BIT(lattice.mN) - Utils.BIT(lattice.lev[mCl]));
     mO[0] = mCmc;
     mCm = mCmc;
   }
@@ -149,7 +149,7 @@ class Antichain {
     ++mCl;
     --mFpos;
     mCmc = (int) (Utils.BIT(mLattice.lev[mCl + 1]) - Utils.BIT(mLattice.lev[mCl]));
-    mCm = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mCm = (int) (Utils.BIT(mLattice.mN) - Utils.BIT(mLattice.lev[mCl]));
     mCp = mK - 1;
   }
 
@@ -160,7 +160,7 @@ class Antichain {
     ++mCl;
     --mFpos;
     mCmc = (int) (Utils.BIT(mLattice.lev[mCl + 1]) - Utils.BIT(mLattice.lev[mCl]));
-    mCm = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mCm = (int) (Utils.BIT(mLattice.mN) - Utils.BIT(mLattice.lev[mCl]));
   }
 
   /*
@@ -182,14 +182,14 @@ class Antichain {
       if (mCp != 0) {
         nW = (mF[f1Pos - 1] | mO[mCp - 1]) & mCm;
       } else {
-        nW = (int) ((mLattice.up[mLattice.n - 1] & mCm) ^ Utils.BIT(mLattice.n - 1));
+        nW = (int) ((mLattice.up[mLattice.mN - 1] & mCm) ^ Utils.BIT(mLattice.mN - 1));
       }
     } else {
       w = mO[mCp];
       if (mCp != 0) {
         nW = mO[mCp - 1];
       } else {
-        nW = (int) ((mLattice.up[mLattice.n - 1] & mCm) ^ Utils.BIT(mLattice.n - 1));
+        nW = (int) ((mLattice.up[mLattice.mN - 1] & mCm) ^ Utils.BIT(mLattice.mN - 1));
       }
     }
 
@@ -221,7 +221,7 @@ class Antichain {
     }
 
     /* We only want antichains that have a weight no less than the weight of the preceding element. */
-    final int nW = (int) ((mLattice.up[mLattice.n - 1] & mCm) ^ Utils.BIT(mLattice.n - 1));
+    final int nW = (int) ((mLattice.up[mLattice.mN - 1] & mCm) ^ Utils.BIT(mLattice.mN - 1));
     /* catches antichains not intersecting the lowest level, i.e. */
     /* cl == L.nLev-2 && !(O[0] & cm)            */
     return w >= nW && w != 0;
@@ -270,14 +270,14 @@ class Antichain {
    * AD should be initialised.
    */
   void reset(int k) {
-    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Bene&scaron; network creation */
+    mLattice.lev[mLattice.nLev] = (byte) (mLattice.mN + k);  /* levels for the new lattice; for Bene&scaron; network creation */
     mK = k;
     mCp = 0;
     mCl = mLattice.nLev - 2;
     mFpos = 0;
     mStabilisers[mCl + 1].mBl = (1 << k) - 2;
     Arrays.fill(mO, 0, k, 0);
-    mCmc = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mCmc = (int) (Utils.BIT(mLattice.mN) - Utils.BIT(mLattice.lev[mCl]));
     mO[0] = mCmc;
     mCm = mCmc;
   }
@@ -292,7 +292,7 @@ class Antichain {
     --mCl;
     ++mFpos;
     mCmc = (int) (Utils.BIT(mLattice.lev[mCl + 1]) - Utils.BIT(mLattice.lev[mCl]));
-    mCm = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mCm = (int) (Utils.BIT(mLattice.mN) - Utils.BIT(mLattice.lev[mCl]));
     mCp = 0;
   }
 
@@ -304,7 +304,7 @@ class Antichain {
     --mCl;
     ++mFpos;
     mCmc = (int) (Utils.BIT(mLattice.lev[mCl + 1]) - Utils.BIT(mLattice.lev[mCl]));
-    mCm = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mCm = (int) (Utils.BIT(mLattice.mN) - Utils.BIT(mLattice.lev[mCl]));
   }
 
 
@@ -549,7 +549,7 @@ class Antichain {
           return false;
         }
       }
-      if (!Canonical.antichaindata_isCanonical_1(this)) {
+      if (!Canonical.isCanonical1(this)) {
         if (VERBOSE) {
           System.out.println("                           not canonical");
         }
@@ -582,15 +582,15 @@ class Antichain {
    * for 1 < i < l.n <= j < la.n.  lo[i] may be modified in antichaindata_generateLattice.
    */
   void prepareLattice(lattice l, lattice la) {
-    la.n = (byte) (l.n + mK);                          /* number of elements  */
+    la.mN = (byte) (l.mN + mK);                          /* number of elements  */
     la.nLev = l.nLev + 1;                          /* number of levels    */
     System.arraycopy(l.lev, 0, la.lev, 0, l.nLev);
-    la.lev[la.nLev - 1] = la.n;                   /* new level           */
-    for (int j = l.n; j < la.n; j++) {
+    la.lev[la.nLev - 1] = la.mN;                   /* new level           */
+    for (int j = l.mN; j < la.mN; j++) {
       la.lo[j] = (int) Utils.BIT(j);                        /* lo[j]               */
     }
-    System.arraycopy(l.up, 0, la.up, 0, l.n);
-    System.arraycopy(l.lo, 0, la.lo, 0, l.n);
+    System.arraycopy(l.up, 0, la.up, 0, l.mN);
+    System.arraycopy(l.lo, 0, la.lo, 0, l.mN);
   }
 
   /*
@@ -602,10 +602,10 @@ class Antichain {
    * Note: The stabiliser of *la carries a reference count.
    */
   void generateLattice(lattice l, lattice la) {
-    for (int k = mK, j = l.n; k-- != 0; ++j) {
+    for (int k = mK, j = l.mN; k-- != 0; ++j) {
       /* set up[j] and lo[i] for 1 < i < l.n <= j < la.n */
       la.up[j] = (int) (Utils.BIT(j) | mF[mFpos - k]);       /* up[j] */
-      for (int i = 0; i < l.n; ++i) {
+      for (int i = 0; i < l.mN; ++i) {
         if ((mF[mFpos - k] & Utils.BIT(i)) != 0) {
           la.lo[i] |= Utils.BIT(j);
         } else { /* lo[i] */
@@ -628,12 +628,12 @@ class Antichain {
    */
   void generateLattice1(lattice l, lattice la) {
     /* set up[j] and lo[i] for 1 < i < l.n <= j < la.n */
-    la.up[l.n] = (int) (Utils.BIT(l.n) | mF[mFpos]);   /* up[j] */
-    for (int i = 0; i < l.n; ++i) {    /* lo[i] */
+    la.up[l.mN] = (int) (Utils.BIT(l.mN) | mF[mFpos]);   /* up[j] */
+    for (int i = 0; i < l.mN; ++i) {    /* lo[i] */
       if ((mF[mFpos] & Utils.BIT(i)) != 0) {
-        la.lo[i] |= Utils.BIT(l.n);
+        la.lo[i] |= Utils.BIT(l.mN);
       } else {   /* lo[i] */
-        la.lo[i] &= ~Utils.BIT(l.n);
+        la.lo[i] &= ~Utils.BIT(l.mN);
       }
     }
     /* set stabiliser */
@@ -649,7 +649,7 @@ class Antichain {
     for (int j = mK; j-- != 0; ) {
       /* extract the j-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
       a[0] = 0;
-      for (i[0] = 0; i[0] < mLattice.n; i[0]++) {
+      for (i[0] = 0; i[0] < mLattice.mN; i[0]++) {
         if ((mF[mFpos - j] & Utils.BIT(i[0])) != 0 && ((mF[mFpos - j] & mLattice.lo[i[0]]) == Utils.BIT(i[0]))) {
           a[0] |= Utils.BIT(i[0]);
         }

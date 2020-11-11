@@ -58,7 +58,7 @@ public class lattice {
 	PermGrp S;
 	int SI;
 	byte[] lev = new byte[	Utils.MAXN-1];
-	byte n;
+	byte mN;
 	int nLev;
 // #if 0
 // 	char      dummy[15];  /* to pad to 3 cache lines */
@@ -145,7 +145,7 @@ public class lattice {
 		int Ui;
 
 		final int[] j = new int[1];
-		for (int i = L.n; i-- != 0; ) {
+		for (int i = L.mN; i-- != 0; ) {
 			co[i] = 0;
 			Ui = L.up[i] ^ (int) BIT(i);
 			while (Utils.getMSB32(Ui, j)){
@@ -343,14 +343,14 @@ public class lattice {
 
 		lattice_getCoveringRelation(co, L);
 		pos = 0;
-		for (i = 0; i < L.n; i++) {
+		for (i = 0; i < L.mN; i++) {
 			sb.append((co[i] == 0) ? '1' : '.');              /* i \prec T ? */
 			for (j = 0; j < i; j++) {
 				sb.append((co[i] & BIT(j)) != 0 ? '1' : '.');  /* i \prec j ? */
 			}
 		}
 		sb.append((L.nLev == 1) ? '1' : '.');            /* B \prec T ? */
-		for (j = 0; j < L.n; j++) {
+		for (j = 0; j < L.mN; j++) {
 			sb.append((L.lo[j] == BIT(j)) ? '1' : '.');  /* B \prec j ? */
 		}
 		return sb.toString();
@@ -379,7 +379,7 @@ public class lattice {
 		n -= 2;  /* We don't store the upper and lower bounds. */
 		//memset(L, 0, sizeof(lattice)); // todo this clear is not being done!
 		//memset(co, 0, n * sizeof( int));
-		L.n = (byte) n;
+		L.mN = (byte) n;
 		/* first extract covering relation... */
 		pos = 0;
 		for (i = 0; i < n; i++) {
@@ -566,7 +566,7 @@ public class lattice {
 		if (L.nLev == 1) {
 			System.out.print("T");
 		} else {
-			for (j = 0, first = true; j < L.n; j++) {
+			for (j = 0, first = true; j < L.mN; j++) {
 				if (L.lo[j] == BIT(j)) {
 					if (first) {
 						System.out.printf("%d", j);
@@ -615,7 +615,7 @@ public class lattice {
     //PermGrp.permgrp_delete(S);
 		L.lev[0] = 0;
 		L.lev[1] = (byte) k;
-		L.n = (byte) k;
+		L.mN = (byte) k;
 		L.nLev = 2;
 	}
 

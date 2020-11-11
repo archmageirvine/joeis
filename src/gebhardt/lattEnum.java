@@ -59,7 +59,7 @@ public abstract class lattEnum {
 		 * Register the lattice L.
 		 */
 		void reg(lattEnum E, lattice L) {
-			if (L.n == E.N) {
+			if (L.mN == E.N) {
 // #ifdef FILTER_GARSIDE
 // 		if (!possiblyGarside(L))
 // 			return;
@@ -98,7 +98,7 @@ void reg(lattEnum E, lattice L) {
 // #ifdef FILTER_GARSIDE
 // 	valid = L.n == E.N && possiblyGarside(L);
 // #else
-	valid = L.n == E.N;
+	valid = L.mN == E.N;
 	//#endif
 	if (valid) {
 		E.count++;
@@ -148,11 +148,11 @@ void reg(lattEnum E, lattice L) {
 // 			lattEnum_growLattice_2(E, E.N, E.L, (E.Nmin)-(E.L.n)>1 ? (E.Nmin)-(E.L.n) : 2);
 // 	}
 // #else
-		if (E.L.n < E.N) {
-			if (E.L.n != 0) {
-				lattEnum_growLattice(E, E.N, E.L, (E.Nmin) - (E.L.n));
+		if (E.L.mN < E.N) {
+			if (E.L.mN != 0) {
+				lattEnum_growLattice(E, E.N, E.L, (E.Nmin) - (E.L.mN));
 			} else {
-				lattEnum_growLattice_2(E, E.N, E.L, (E.Nmin) - (E.L.n));
+				lattEnum_growLattice_2(E, E.N, E.L, (E.Nmin) - (E.L.mN));
 			}
 		}
 		//#endif
@@ -175,7 +175,7 @@ void reg(lattEnum E, lattice L) {
 	public static lattEnum lattEnum_Count_create(lattice L, int N, int Nmin, Globals GD) {
 		lattEnum_Count E;
 
-		if (L != null && (N - 2 < L.n || Nmin - 2 < L.n)) {
+		if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
 			throw new RuntimeException("BAD PARAMETERS in lattEnum_Count_create: given lattice larger than target/intermediate size!");
 		}
 		E = new lattEnum_Count();
@@ -199,7 +199,7 @@ void reg(lattEnum E, lattice L) {
 	lattEnum lattEnum_stdout_create(lattice L, int N, int Nmin, Globals GD) {
 		lattEnum_stdout E;
 
-		if (L != null && (N - 2 < L.n || Nmin - 2 < L.n)) {
+		if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
 			throw new RuntimeException("BAD PARAMETERS in lattEnum_stdout_create: given lattice larger than target/intermediate size!");
 		}
 		E = new lattEnum_stdout();
@@ -344,7 +344,7 @@ void reg(lattEnum E, lattice L) {
 // 			}
 // #else
  			E.reg(E, LA);
- 			if (LA.n < N) {
+ 			if (LA.mN < N) {
 				lattEnum_growLattice(E, N, LA, 1);
 			}
 // #endif
@@ -363,7 +363,7 @@ void reg(lattEnum E, lattice L) {
 			k = nmin;
 		}
 
-		for (; k <= N - L.n; k++) {
+		for (; k <= N - L.mN; k++) {
 			if (VERBOSE) {
 				System.out.printf("\n=== adding a level with %d elements\n", k);
 			}
@@ -408,7 +408,7 @@ void reg(lattEnum E, lattice L) {
 // 				lattEnum_growLattice(E, N, &LA, 2);
 // #else
 				//System.out.println("SAI: " + LA.n + " cf. " + N);
-				if (LA.n < N) {
+				if (LA.mN < N) {
 					lattEnum_growLattice(E, N, LA, 1);
 				}
 //#endif
@@ -452,7 +452,7 @@ void reg(lattEnum E, lattice L) {
 // #ifdef FILTER_INDECOMPOSABLE
 // 	for (k=nmin>1?nmin:2; k<=N-L.n; k++) {
 // #else
-		for (k = nmin; k <= N - L.n; k++) {
+		for (k = nmin; k <= N - L.mN; k++) {
 			//#endif
 			lattice.lattice_init_kFan(LA, k);
 			E.reg(E, LA);
@@ -460,7 +460,7 @@ void reg(lattEnum E, lattice L) {
 // 			if (LA.n < N-1)
 // 				lattEnum_growLattice(E, N, &LA, 2);
 // #else
-			if (LA.n < N) {
+			if (LA.mN < N) {
 				lattEnum_growLattice(E, N, LA, 1);
 			}
 			//#endif

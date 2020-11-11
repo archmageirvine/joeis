@@ -572,10 +572,10 @@ final class Canonical {
 	 * stabiliser:  Add to s any generator of the stabiliser of L that arises from different ways of reaching the minimal
 	 * element, and set *si to the implicit stabiliser of L.
 	 */
-	static void extractStabiliserP1(final int n, final int k, final int lo, final int hi, final Globals globals, final PermGrpC s, final int[] si) {
+	static int extractStabiliserP1(final int n, final int k, final int lo, final int hi, final Globals globals, final PermGrpC s, int si) {
     final byte[] p = Permutation.create();
-    si[0] &= ~(Utils.BIT(hi) - Utils.BIT(lo));
-		si[0] |= globals.mSi0[0].mS << lo;
+    si &= ~(Utils.BIT(hi) - Utils.BIT(lo));
+		si |= globals.mSi0[0].mS << lo;
 		for (int i = 1; i < globals.mSi0Size; i++) {
 			Permutation.leftDivide(n + k, globals.mSi0[0].mP, globals.mSi0[i].mP, p);
 			if (!Permutation.isIdentity(n + k, p)) {
@@ -586,6 +586,7 @@ final class Canonical {
 				s.addGenerator(p);
 			}
 		}
+		return si;
 	}
 
 //	/*
@@ -1084,10 +1085,7 @@ final class Canonical {
 					antichain.mStabilisers[antichain.mCl].mSt = s.mG;
 					s.init(antichain.mLattice.mN + antichain.mK);
 					antichain.mStabilisers[antichain.mCl].mSi = antichain.mStabilisers[antichain.mCl + 1].mSi;
-					final int[] ugly = {antichain.mStabilisers[antichain.mCl].mSi};
-					final int xcl = antichain.mCl;
-					extractStabiliserP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.lev[antichain.mCl], antichain.mLattice.lev[antichain.mCl + 1], antichain.mGlobals, s, ugly);
-					antichain.mStabilisers[xcl].mSi = ugly[0];
+					antichain.mStabilisers[antichain.mCl].mSi = extractStabiliserP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.lev[antichain.mCl], antichain.mLattice.lev[antichain.mCl + 1], antichain.mGlobals, s, antichain.mStabilisers[antichain.mCl].mSi);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					antichain.mGlobals.mOrbitSize = 1;
 					antichain.mGlobals.mOrbitElements[0].mGen = -1;
@@ -1121,7 +1119,7 @@ final class Canonical {
 								/* determine the position up to which we can backtrack */
 								int m = 0;
 								int i = 0;
-								long d = l[0] ^ a[0];
+								final long d = l[0] ^ a[0];
 								do {
 									final int pi = antichain.mGlobals.mOrbitElements[pos].mToRoot[g.mInvPerm[gen][p[antichain.mLattice.mN + i]]] - antichain.mLattice.mN;
 									if (pi > m) {
@@ -1249,9 +1247,7 @@ final class Canonical {
 				antichain.mStabilisers[antichain.mCl].mSt = s.mG;
 				s.init(antichain.mLattice.mN + antichain.mK);
 				antichain.mStabilisers[antichain.mCl].mSi = antichain.mStabilisers[antichain.mCl + 1].mSi;
-				final int[] ugly = new int[] {antichain.mStabilisers[antichain.mCl].mSi};
-				extractStabiliserP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.lev[antichain.mCl], antichain.mLattice.lev[antichain.mCl + 1], antichain.mGlobals, s, ugly);
-				antichain.mStabilisers[antichain.mCl].mSi = ugly[0];
+				antichain.mStabilisers[antichain.mCl].mSi = extractStabiliserP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.lev[antichain.mCl], antichain.mLattice.lev[antichain.mCl + 1], antichain.mGlobals, s, antichain.mStabilisers[antichain.mCl].mSi);
 				s.compactGenerators();
 			} else { /* as the antichains must intersect the lowest level, antichain.cl < antichain.L.nLev-2 */
 				antichain.mStabilisers[antichain.mCl].mSt = antichain.mStabilisers[antichain.mCl + 1].mSt;

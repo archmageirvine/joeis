@@ -198,4 +198,28 @@ class PermGrpC {
 //	}
 //
 //
+
+  /*
+   * Make sure that the generators are stored consecutively in perm, and record which generators are involutions.
+   */
+  void compactGenerators() {
+    final int[] i = new int[1];
+    final int[] j = new int[1];
+
+    while (Utils.getLSB32(mFreePerm, i) && Utils.getMSB32(Utils.ALL_BITS ^ mFreePerm, j) && i[0] < j[0]) {
+      Permutation.copy(mG.mN, mG.mPerm[j[0]], mG.mPerm[i[0]]);
+      Permutation.copy(mG.mN, mG.mInvPerm[j[0]], mG.mInvPerm[i[0]]);
+      mFreePerm ^= Utils.BIT(i[0]);  /* bit i is set, so this clears it */
+      mFreePerm |= Utils.BIT(j[0]);
+    }
+    final int[] ugly = new int[] {mG.mNgens};
+    Utils.getLSB32(mFreePerm, ugly);
+    mG.mNgens = ugly[0];
+    mG.mInvol = 0;
+    for (int k = 0, biti = 1; k < mG.mNgens; ++k, biti <<= 1) {
+      if (Permutation.compare(mG.mN, mG.mPerm[k], mG.mInvPerm[k]) == 0) {
+        mG.mInvol |= biti;
+      }
+    }
+  }
 }

@@ -12,8 +12,9 @@ public class Utils {
   public static final int LD_MAXN_2 = 5;
   public static final int FSIZE = MAXN_EVEN > 0 ? (MAXN - 2) * (MAXN - 2) / 4 : (MAXN - 3) * (MAXN - 1) / 4;
   public static final long BITSPERFLAGS64 = Long.SIZE;   // 8*sizeof(flags64)
-  public static final int ORBITS_INITIAL_ORBSPACE = 128;
-  public static final int ORBITS_INITIAL_SISPACE = 32;
+  static final int ORBITS_INITIAL_ORBSPACE = 128;
+  static final int ORBITS_INITIAL_SISPACE = 32;
+  static final int ALL_BITS = (1 << (Utils.MAXN - 2)) - 1;
 
   static long BIT(final long i) {
     return 1L << i;

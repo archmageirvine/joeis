@@ -56,7 +56,7 @@ public class Globals {
 	long mSi0Size;
 	SiData[] mSi0;
 	SiData[] mSi1;
-	TreeMap<Long, Long> mOrbitPos = new TreeMap<>();
+	TreeMap<Long, Integer> mOrbitPos = new TreeMap<>();
 
   /**
    * Initialise storage space for orbit/stabiliser computation.

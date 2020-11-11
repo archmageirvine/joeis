@@ -567,119 +567,75 @@ final class Canonical {
 //		GD.mSi0Size = SI0size;
 //	}
 
-
-// #ifdef TARGET_UTEST_SI
-// void antichainList_applySI_p2_f(int n, int k, int k0, int a0, int m, int bl, Globals GD, long L[2],
-// 		int SI, long M, permutation p)
-// /*
-//  * Non-static wrapper for antichainList_applySI_p2.
-//  */
-// {
-// 	antichainList_applySI_p2(n, k, k0, a0, m, bl, GD, L, SI, M, p);
-// }
-// #endif
-
-
 	/*
 	 * After a call to antichainList_applySI_p1 that showed that its argument L is minimal under the action of the implicit
-	 * stabiliser:  Add to S any generator of the stabiliser of L that arises from different ways of reaching the minimal
-	 * element, and set *SI to the implicit stabiliser of L.  (L is only used in testing mode.)
+	 * stabiliser:  Add to s any generator of the stabiliser of L that arises from different ways of reaching the minimal
+	 * element, and set *si to the implicit stabiliser of L.
 	 */
-	static void antichainList_extractStabiliser_p1(int n, int k, int lo, int hi, Globals GD, PermGrpC S, int[] SI, long L) {
-		int i;
-		byte[] p = Permutation.create();
-// #ifdef DOTEST
-// 	long        L_;
-// #endif
-
-    SI[0] &= ~(Utils.BIT(hi) - Utils.BIT(lo));
-		SI[0] |= GD.mSi0[0].mS << lo;
-		for (i = 1; i < GD.mSi0Size; i++) {
-			Permutation.leftDivide(n + k, GD.mSi0[0].mP, GD.mSi0[i].mP, p);
+	static void extractStabiliserP1(final int n, final int k, final int lo, final int hi, final Globals globals, final PermGrpC s, final int[] si) {
+    final byte[] p = Permutation.create();
+    si[0] &= ~(Utils.BIT(hi) - Utils.BIT(lo));
+		si[0] |= globals.mSi0[0].mS << lo;
+		for (int i = 1; i < globals.mSi0Size; i++) {
+			Permutation.leftDivide(n + k, globals.mSi0[0].mP, globals.mSi0[i].mP, p);
 			if (!Permutation.isIdentity(n + k, p)) {
 				if (VERBOSE) {
 					System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
-					Permutation.print(S.mG.mN, p, 0);
+					Permutation.print(s.mG.mN, p, 0);
 				}
-				S.addGenerator(p);
-// #ifdef DOTEST
-// 			antichainList_apply_perm_p1(n, lo, hi, p, k, L, &L_);
-// 			if (antichainList_cmp_p1(L, L_)) {
-// 				/* We don't test here whether the action on the lowest level is correct; this is done
-// 				 * in lattice_test after the new lattice is created.
-// 				 */
-// 				printf("BAD STABILISER ELEMENT [antichainList_extractStabiliser_p1]: ");
-// 				perm_print(n+k, p, 0);
-// 				erri(-4);
-// 			}
-// #endif
+				s.addGenerator(p);
 			}
 		}
 	}
 
+//	/*
+//	 * After a call to antichainList_applySI_p2 that showed that its argument L is minimal under the action of the implicit
+//	 * stabiliser:  Add to s any generator of the stabiliser of L that arises from different ways of reaching the minimal
+//	 * element, and set *si to the implicit stabiliser of L.  (L is only used in testing mode.)
+//	 */
+//	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals globals, PermGrpC s, int[] si, long[] L) {
+//		int i;
+//		byte[] p = Permutation.create();
+//
+//    si[0] &= ~(Utils.BIT(hi) - Utils.BIT(lo));
+//		si[0] |= globals.mSi0[0].mS << lo;
+//		for (i = 1; i < globals.mSi0Size; i++) {
+//			Permutation.leftDivide(n + k, globals.mSi0[0].mP, globals.mSi0[i].mP, p);
+//			if (!Permutation.isIdentity(n + k, p)) {
+//        if (VERBOSE) {
+//          System.out.print("[antichainList_extractStabiliser_p1]: adding stabiliser generator ");
+//          Permutation.print(s.mG.mN, p, 0);
+//        }
+//				s.addGenerator(p);
+//			}
+//		}
+//	}
 
-	/*
-	 * After a call to antichainList_applySI_p2 that showed that its argument L is minimal under the action of the implicit
-	 * stabiliser:  Add to S any generator of the stabiliser of L that arises from different ways of reaching the minimal
-	 * element, and set *SI to the implicit stabiliser of L.  (L is only used in testing mode.)
-	 */
-	static void antichainList_extractStabiliser_p2(int n, int k, int lo, int hi, Globals GD, PermGrpC S, int[] SI, long[] L) {
-		int i;
-		byte[] p = Permutation.create();
-// #ifdef DOTEST
-// 	long        L_[2];
-// #endif
-
-    SI[0] &= ~(Utils.BIT(hi) - Utils.BIT(lo));
-		SI[0] |= GD.mSi0[0].mS << lo;
-		for (i = 1; i < GD.mSi0Size; i++) {
-			Permutation.leftDivide(n + k, GD.mSi0[0].mP, GD.mSi0[i].mP, p);
-			if (!Permutation.isIdentity(n + k, p)) {
-// #ifdef VERBOSE
-// 			printf("[antichainList_extractStabiliser_p2]: adding stabiliser generator "); perm_print(S.G.n, p, 0);
-// #endif
-				S.addGenerator(p);
-// #ifdef DOTEST
-// 			antichainList_apply_perm_p2(n, lo, hi, p, k, L, L_);
-// 			if (antichainList_cmp_p2(L, L_)) {
-// 				/* We don't test here whether the action on the lowest level is correct; this is done
-// 				 * in lattice_test after the new lattice is created.
-// 				 */
-// 				printf("BAD STABILISER ELEMENT [antichainList_extractStabiliser_p2]: ");
-// 				perm_print(n+k, p, 0);
-// 				erri(-4);
-// 			}
-// #endif
-			}
-		}
-	}
-
-	static int allbits = (1 << (Utils.MAXN - 2)) - 1;
+	private static final int ALL_BITS = (1 << (Utils.MAXN - 2)) - 1;
 
 	/*
 	 * Make sure that the generators are stored consecutively in perm, and record which generators are involutions.
 	 */
-	static void permgrpc_compactGenerators(PermGrpC G) {
+	static void permgrpc_compactGenerators(final PermGrpC g) {
 		final int[] i = new int[1];
 		final int[] j = new int[1];
 
-		while (Utils.getLSB32(G.mFreePerm, i) && Utils.getMSB32(allbits ^ G.mFreePerm, j) && i[0] < j[0]) {
-			Permutation.copy(G.mG.mN, G.mG.mPerm[j[0]], G.mG.mPerm[i[0]]);
-			Permutation.copy(G.mG.mN, G.mG.mInvPerm[j[0]], G.mG.mInvPerm[i[0]]);
-      G.mFreePerm ^= Utils.BIT(i[0]);  /* bit i is set, so this clears it */
-      G.mFreePerm |= Utils.BIT(j[0]);
+		while (Utils.getLSB32(g.mFreePerm, i) && Utils.getMSB32(ALL_BITS ^ g.mFreePerm, j) && i[0] < j[0]) {
+			Permutation.copy(g.mG.mN, g.mG.mPerm[j[0]], g.mG.mPerm[i[0]]);
+			Permutation.copy(g.mG.mN, g.mG.mInvPerm[j[0]], g.mG.mInvPerm[i[0]]);
+      g.mFreePerm ^= Utils.BIT(i[0]);  /* bit i is set, so this clears it */
+      g.mFreePerm |= Utils.BIT(j[0]);
 		}
-		final int[] ugly = new int[] {G.mG.mNgens};
-		Utils.getLSB32(G.mFreePerm, ugly);
-		G.mG.mNgens = ugly[0];
-		G.mG.mInvol = 0;
-		for (int k = 0, biti = 1; k < G.mG.mNgens; k++, biti <<= 1) {
-			if (Permutation.compare(G.mG.mN, G.mG.mPerm[k], G.mG.mInvPerm[k]) == 0) {
-				G.mG.mInvol |= biti;
+		final int[] ugly = new int[] {g.mG.mNgens};
+		Utils.getLSB32(g.mFreePerm, ugly);
+		g.mG.mNgens = ugly[0];
+		g.mG.mInvol = 0;
+		for (int k = 0, biti = 1; k < g.mG.mNgens; ++k, biti <<= 1) {
+			if (Permutation.compare(g.mG.mN, g.mG.mPerm[k], g.mG.mInvPerm[k]) == 0) {
+				g.mG.mInvol |= biti;
 			}
 		}
 	}
-
 
 	/*
 	 * Generate Bene&scaron; networks for the action of the generators on the next level (AD.cl-1)
@@ -1327,7 +1283,7 @@ final class Canonical {
 					AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 					final int[] ugly = {AD.mStabilisers[AD.mCl].mSi};
 					final int xcl = AD.mCl;
-					antichainList_extractStabiliser_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly, L[0]);
+					extractStabiliserP1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly);
 					AD.mStabilisers[xcl].mSi =ugly[0];
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
 					AD.mGlobals.mOrbitSize = 1;
@@ -1541,7 +1497,7 @@ final class Canonical {
 				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
 				final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
 				final int xcl = AD.mCl;
-				antichainList_extractStabiliser_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly, L[0]);
+				extractStabiliserP1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1], AD.mGlobals, S, ugly);
 				AD.mStabilisers[xcl].mSi = ugly[0];
 				permgrpc_compactGenerators(S);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2 */

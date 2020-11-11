@@ -124,7 +124,7 @@ public class lattice {
 //	static lattice lattice_cpy(lattice L) {
 //		final lattice M = new lattice(L);
 //		M.S = permgrp.permgrp_alloc();
-//		permgrp.permgrp_cpy(L.S, M.S); /* This does not copy the Beneš networks, so we do this manually. */
+//		permgrp.permgrp_cpy(L.S, M.S); /* This does not copy the Bene&scaron; networks, so we do this manually. */
 //		int B = M.S.BenesValid = L.S.BenesValid;
 //		final int[] n = new int[1];
 //		while (Constants.get_LSB32(B, n)){

@@ -95,7 +95,7 @@ class Antichain {
   Antichain(final lattice lattice, final int k, final Globals globals) {
     mLattice = lattice;
     mGlobals = globals;
-    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Beneš network creation */
+    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Bene&scaron; network creation */
     mK = k;
     mCl = lattice.nLev - 2;
     for (int i = 0; i < mStabilisers.length; ++i) {
@@ -270,7 +270,7 @@ class Antichain {
    * AD should be initialised.
    */
   void reset(int k) {
-    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Beneš network creation */
+    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Bene&scaron; network creation */
     mK = k;
     mCp = 0;
     mCl = mLattice.nLev - 2;

@@ -895,7 +895,7 @@ class canonical {
 
 
 	/*
-	 * Generate Beneš networks for the action of the generators on the next level (AD.cl-1)
+	 * Generate Bene&scaron; networks for the action of the generators on the next level (AD.cl-1)
 	 * of the current lattice or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
 	static void permgrp_preprocessGenerators(final Antichain AD) {
@@ -926,7 +926,7 @@ class canonical {
 
 
 	/*
-	 * Generate Beneš networks for the action of the generators on the next level (AD.cl-1)
+	 * Generate Bene&scaron; networks for the action of the generators on the next level (AD.cl-1)
 	 * of the current lattice as well as for the action on AD.k antichains of the appropriate
 	 * size or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */

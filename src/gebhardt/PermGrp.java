@@ -38,7 +38,7 @@ class PermGrp {
 	byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
 	int mInvol;                  /* invol & BIT[i] indicates whether generator i is an involution */
 	int mBenesValid = 0;             /* which levels of array Benes contain valid pointers */
- 	Benes[][] mBenes = new Benes[Utils.MAXN-2][Utils.MAXN-2];  /* *(Benes[i][j]): Beneš network for the action of generator j on level i */
+ 	Benes[][] mBenes = new Benes[Utils.MAXN-2][Utils.MAXN-2];  /* *(Benes[i][j]): Bene&scaron; network for the action of generator j on level i */
 	int mN = 0;                      /* number of points on which the group acts */
 	int mNgens = 0;                  /* number of generators */
 

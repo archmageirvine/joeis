@@ -428,7 +428,6 @@ void reg(lattEnum E, lattice L) {
 			}
 		}
 
-		Antichain.antichaindata_clear(AD);
 		if (VERBOSE) {
 			System.out.println("\n[<<< leaving lattEnum_growLattice]:");
 			lattice.lattice_print(L);

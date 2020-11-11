@@ -91,34 +91,14 @@ class Antichain {
   }
 
   /*
-   * Ensure that the stabiliser AD.SD[lev].ST_ exists, and return AD.SD[lev].ST_.
+   * Ensure that the stabiliser AD.SD[lev].STC exists, and return AD.SD[lev].STC.
    */
-  static PermGrpC antichaindata_ensureStabiliser(Antichain AD, int lev) {
-    if (AD.mStabilisers[lev].mStC == null) {
-      AD.mStabilisers[lev].mStC = new PermGrpC();
+  PermGrpC ensureStabiliser(final int lev) {
+    if (mStabilisers[lev].mStC == null) {
+      mStabilisers[lev].mStC = new PermGrpC();
     }
-    return AD.mStabilisers[lev].mStC;
+    return mStabilisers[lev].mStC;
   }
-
-
-  /*
-   * Free dynamically allocated memory; calls to antichaindata_init and antichaindata_clear should match.
-   */
-  static void antichaindata_clear(Antichain AD) {
-    //#ifndef FILTER_GRADED
-    int i;
-
-    for (i = 0; i < AD.mLattice.nLev - 1; i++) {
-      if (i < AD.mStabilisers.length && AD.mStabilisers[i].mStC != null) {  // todo SAI added first condition BUG?
-//        PermGrp.permgrpc_delete(AD.SD[i].ST_);
-      }
-    }
-// #else
-// 	if (AD.SD[0].ST_)
-// 				permgrpc_delete(AD.SD[0].ST_);
-// #endif
-  }
-
 
   /*
    *  Given a partition P of elements, return in *Q a refinement of P such that the optional

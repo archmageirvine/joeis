@@ -1270,7 +1270,7 @@ class canonical {
 					if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 						return false;
 					}
-					S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+					S = AD.ensureStabiliser(AD.mCl);
 					AD.mStabilisers[AD.mCl].mSt = S.mG;
 					S.init(AD.mLattice.n + AD.mK);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
@@ -1329,7 +1329,7 @@ class canonical {
 					L = AD.mGlobals.mOrbitElements[0].mData[0];
 					Permutation.init(AD.mLattice.n + AD.mK, p);
 					AD.mStabilisers[AD.mCl].mSi = 0;
-					S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+					S = AD.ensureStabiliser(AD.mCl);
 					AD.mStabilisers[AD.mCl].mSt = S.mG;
 					S.init(AD.mLattice.n + AD.mK);
 					/* now spin up the orbit of representatives under the action of the (old) implicit stabiliser */
@@ -1402,7 +1402,7 @@ class canonical {
 				if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 					return false;
 				}
-				S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+				S = AD.ensureStabiliser(AD.mCl);
 				AD.mStabilisers[AD.mCl].mSt = S.mG;
 				S.init(AD.mLattice.n + AD.mK);
 			} else { /* as the antichains must intersect the lowest level, AD.cl < AD.L.nLev-2, so G.n == S.n */
@@ -1413,7 +1413,7 @@ class canonical {
 			//#ifndef FILTER_GRADED
 			if (AD.mCl == AD.mLattice.nLev - 2) {
 				//#endif
-				S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+				S = AD.ensureStabiliser(AD.mCl);
 				AD.mStabilisers[AD.mCl].mSt = S.mG;
 				S.init(AD.mLattice.n + AD.mK);
 				//#ifndef FILTER_GRADED
@@ -1516,7 +1516,7 @@ class canonical {
 						}
 						return false;
 					}
-					S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+					S = AD.ensureStabiliser(AD.mCl);
 					AD.mStabilisers[AD.mCl].mSt = S.mG;
 					S.init(AD.mLattice.n + AD.mK);
 					AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
@@ -1599,7 +1599,7 @@ class canonical {
 					long L;
 					L = AD.mGlobals.mOrbitElements[0].mData[0];
 					Permutation.init(AD.mLattice.n + AD.mK, p);
-					S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+					S = AD.ensureStabiliser(AD.mCl);
 					AD.mStabilisers[AD.mCl].mSt = S.mG;
 					S.init(AD.mLattice.n + AD.mK);
 					AD.mStabilisers[AD.mCl].mSi = 0;
@@ -1712,7 +1712,7 @@ class canonical {
 					}
 					return false;
 				}
-				S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+				S = AD.ensureStabiliser(AD.mCl);
 				AD.mStabilisers[AD.mCl].mSt = S.mG;
 				S.init(AD.mLattice.n + AD.mK);
 				AD.mStabilisers[AD.mCl].mSi = AD.mStabilisers[AD.mCl + 1].mSi;
@@ -1729,7 +1729,7 @@ class canonical {
 			//#ifndef FILTER_GRADED
 			if (AD.mCl == AD.mLattice.nLev - 2) {
 				//#endif
-				S = Antichain.antichaindata_ensureStabiliser(AD, AD.mCl);
+				S = AD.ensureStabiliser(AD.mCl);
 				AD.mStabilisers[AD.mCl].mSt = S.mG;
 				S.init(AD.mLattice.n + AD.mK);
 				//#ifndef FILTER_GRADED

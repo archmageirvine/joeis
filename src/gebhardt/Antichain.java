@@ -500,7 +500,7 @@ class Antichain {
         ++mFpos;
         initialiseCurrentPosition();
       } else {
-        if (!canonical.antichaindata_isCanonical(this)) {
+        if (!Canonical.antichaindata_isCanonical(this)) {
           if (VERBOSE) {
             System.out.println("                           not canonical");
           }
@@ -549,7 +549,7 @@ class Antichain {
           return false;
         }
       }
-      if (!canonical.antichaindata_isCanonical_1(this)) {
+      if (!Canonical.antichaindata_isCanonical_1(this)) {
         if (VERBOSE) {
           System.out.println("                           not canonical");
         }

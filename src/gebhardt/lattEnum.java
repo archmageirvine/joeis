@@ -268,7 +268,6 @@ void reg(lattEnum E, lattice L) {
 	 */
 	static void lattEnum_growLattice(lattEnum E, int N, lattice L, int nmin) {
 		lattice LA = new lattice();
-		Antichain AD = new Antichain();
 		int k;
 
 // #ifdef DOTEST
@@ -282,7 +281,7 @@ void reg(lattEnum E, lattice L) {
 			System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
 			lattice.lattice_print(L);
 		}
-		Antichain.antichaindata_init(L, nmin, AD, E.GD);
+    Antichain AD = new Antichain(L, nmin, E.GD);
 
 		Antichain.antichaindata_prepareLattice(AD, L, LA);
 		if (nmin == 1) {
@@ -354,7 +353,7 @@ void reg(lattEnum E, lattice L) {
 // 			if (!antichaindata_step_1_FUNC(&AD))
 // 				break;
 // #else
-				if (!Antichain.antichaindata_step_1(AD)) {
+				if (!AD.step1()) {
 					break;
 				}
 // #endif
@@ -421,7 +420,7 @@ void reg(lattEnum E, lattice L) {
 // 			if (!antichaindata_step_FUNC(&AD))
 // 				break;
 // #else
-				if (!Antichain.antichaindata_step(AD)) {
+				if (!AD.step()) {
 					break;
 				}
 				//#endif

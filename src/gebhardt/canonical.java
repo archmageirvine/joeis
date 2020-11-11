@@ -1743,7 +1743,7 @@ class canonical {
 		if (AD.mCl == 0) {
 //#endif
 			final int[] ugly = new int[] {AD.mStabilisers[0].mBl}; // todo yuck
-			Antichain.antichaindata_updateBlocks(AD, AD.mStabilisers[1].mBl, ugly);
+			AD.updateBlocks(AD.mStabilisers[1].mBl, ugly);
 			AD.mStabilisers[0].mBl = ugly[0];
 			AD.mStabilisers[0].mSi |= AD.mStabilisers[0].mBl << AD.mLattice.n;
 //#ifndef FILTER_GRADED

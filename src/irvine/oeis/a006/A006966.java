@@ -45,7 +45,7 @@ public class A006966 implements Sequence {
   /*
    * Initialise global bitmaps to size n.
    */
-  private static void bitmap_init(long n) {
+  private static void bitmapInit(long n) {
     long bits, a1, b1, a2, b2;
 
     bits = Utils.BITSPERFLAGS64;
@@ -85,7 +85,7 @@ public class A006966 implements Sequence {
     if (++mN <= 1) { // can make this 3
       return Z.ONE;
     }
-    bitmap_init(mN);
+    bitmapInit(mN);
     final lattEnum E = lattEnum.lattEnum_Count_create(mLattice, mN, 3, mGlobals);
     lattEnum.lattEnum_doEnumeration(E);
     return Z.valueOf(lattEnum.lattEnum_getLatticeCount(E));

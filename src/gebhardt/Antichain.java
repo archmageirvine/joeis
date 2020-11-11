@@ -102,7 +102,7 @@ class Antichain {
       mStabilisers[i] = new Stabiliser();
     }
     for (int i = 0, biti = 1; i < mLattice.n - 1; ++i, biti <<= 1) {
-      for (int j = i + 1; j < mLattice.n; j++) {
+      for (int j = i + 1; j < mLattice.n; ++j) {
         if ((mLattice.lo[i] & mLattice.lo[j]) == 0) {
           mCop[i] |= Utils.BIT(j);
           mCop[j] |= biti;
@@ -265,22 +265,21 @@ class Antichain {
     return true;
   }
 
-
   /*
-   * Modify antichain data *AD for k elements to be added on the new level.
+   * Modify antichain data AD for k elements to be added on the new level.
    * AD should be initialised.
    */
-  static void antichaindata_reinit(Antichain AD, int k) {
-    AD.mLattice.lev[AD.mLattice.nLev] = (byte) (AD.mLattice.n + k);  /* levels for the new lattice; for Beneš network creation */
-    AD.mK = k;
-    AD.mCp = 0;
-    AD.mCl = AD.mLattice.nLev - 2;
-    AD.mFpos = 0;
-    AD.mStabilisers[AD.mCl + 1].mBl = (1 << k) - 2;
-    //memset(AD.O, 0, k*sizeof(int));
-    Arrays.fill(AD.mO, 0, k, 0);
-    AD.mO[0] = AD.mCmc = (int) (Utils.BIT(AD.mLattice.n) - Utils.BIT(AD.mLattice.lev[AD.mCl]));
-    AD.mCm = AD.mCmc;
+  void reset(int k) {
+    mLattice.lev[mLattice.nLev] = (byte) (mLattice.n + k);  /* levels for the new lattice; for Beneš network creation */
+    mK = k;
+    mCp = 0;
+    mCl = mLattice.nLev - 2;
+    mFpos = 0;
+    mStabilisers[mCl + 1].mBl = (1 << k) - 2;
+    Arrays.fill(mO, 0, k, 0);
+    mCmc = (int) (Utils.BIT(mLattice.n) - Utils.BIT(mLattice.lev[mCl]));
+    mO[0] = mCmc;
+    mCm = mCmc;
   }
 
 

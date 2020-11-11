@@ -370,7 +370,7 @@ void reg(lattEnum E, lattice L) {
 			if (VERBOSE) {
 				System.out.printf("\n=== adding a level with %d elements\n", k);
 			}
-			Antichain.antichaindata_reinit(AD, k);
+			AD.reset(k);
 			Antichain.antichaindata_prepareLattice(AD, L, LA);
 			while (Antichain.antichaindata_next(AD)){
 				Antichain.antichaindata_generateLattice(AD, L, LA);

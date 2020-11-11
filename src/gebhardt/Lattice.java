@@ -50,14 +50,15 @@ public class Lattice {
    */
 
 
-  final int[] mUp = new int[Utils.MAXN-2];
-  final int[] mLo = new int[Utils.MAXN-2];
+  final int[] mUp = new int[Utils.MAXN - 2];
+  final int[] mLo = new int[Utils.MAXN - 2];
   PermGrp mS;
   int mSi;
-  final byte[] mLev = new byte[Utils.MAXN-1];
+  final byte[] mLev = new byte[Utils.MAXN - 1];
   byte mN;
   int mNLev;
 
+  /** Construct a lattice. */
   public Lattice() {
   }
 
@@ -108,7 +109,7 @@ public class Lattice {
     for (int i = mN; i-- != 0; ) {
       co[i] = 0;
       int ui = mUp[i] ^ (int) Utils.bit(i);
-      while (Utils.getMSB32(ui, j)){
+      while (Utils.getMSB32(ui, j)) {
         co[i] |= Utils.bit(j[0]);
         ui &= ~mUp[j[0]];
       }
@@ -147,18 +148,16 @@ public class Lattice {
   @Override
   public String toString() {
     final StringBuilder sb = new StringBuilder();
-    int i, j;
-    int[] co = new int[Utils.MAXN - 2];
-
+    final int[] co = new int[Utils.MAXN - 2];
     getCoveringRelation(co);
-    for (i = 0; i < mN; ++i) {
+    for (int i = 0; i < mN; ++i) {
       sb.append((co[i] == 0) ? '1' : '.');              /* i \prec T ? */
-      for (j = 0; j < i; ++j) {
+      for (int j = 0; j < i; ++j) {
         sb.append((co[i] & Utils.bit(j)) != 0 ? '1' : '.');  /* i \prec j ? */
       }
     }
     sb.append((mNLev == 1) ? '1' : '.');            /* B \prec T ? */
-    for (j = 0; j < mN; ++j) {
+    for (int j = 0; j < mN; ++j) {
       sb.append((mLo[j] == Utils.bit(j)) ? '1' : '.');  /* B \prec j ? */
     }
     return sb.toString();

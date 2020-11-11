@@ -177,7 +177,7 @@ public class Benes {
    * Apply the Bene&scaron;scaron; network B acting on the positions of the packed antichain list r.
    * The masks for blocked Bene&scaron;scaron; networks indicate the higher bit of each pair.
    */
-  void applyBlockedP1(long[] r) {
+  void applyBlockedP1(final long[] r) {
     long a = r[0];
     for (int i = 0; i < mDepth; ++i) {
       long t = ((a << mShift[i]) ^ a) & mMask[i];
@@ -262,14 +262,14 @@ public class Benes {
   /*
    * Return a newly created Bene&scaron;scaron; network (carrying a reference count) realising as many copies of the
    * action of the permutation p on n points as fit into one long.
-   * NOTE: src AND inv_src ARE MODIFIED.
+   * NOTE: src AND invSrc ARE MODIFIED.
    */
-  Benes(final int n, final byte[] src, final byte[] inv_src) {
+  Benes(final int n, final byte[] src, final byte[] invSrc) {
     final int ldN = ceilLd(n);
     int fPos = 0;
     int bPos = 2 * ldN - 1;
-    byte[] tgt = ByteUtils.identity(Permutation.create());
-    byte[] inv_tgt = ByteUtils.identity(Permutation.create());
+    final byte[] tgt = ByteUtils.identity(Permutation.create());
+    final byte[] invTgt = ByteUtils.identity(Permutation.create());
     for (int stage = 0, mask = 1; stage < ldN; ++stage, mask <<= 1) {
       final int nmask = ~mask;
       int srcSet = 0;
@@ -281,31 +281,31 @@ public class Benes {
           int srcIdx = mainIdx;
           while ((Utils.bit(srcIdx) & srcSet) == 0) {
             srcSet |= Utils.bit(srcIdx); /* ...mark that source index as seen... */
-            int tgtIdx = srcIdx < n ? inv_tgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
+            int tgtIdx = srcIdx < n ? invTgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgTgt |= Utils.bit(tgtIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = (byte) (tgtIdx ^ mask); /* the other part of the pair; to be swapped */
-              byte t = tgt[tgtIdx];                /* update the target side... */
+              final int idx2 = (byte) (tgtIdx ^ mask); /* the other part of the pair; to be swapped */
+              final byte t = tgt[tgtIdx];                /* update the target side... */
               tgt[tgtIdx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
-              inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
+              invTgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              invTgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
             } else {
               /* straight */
               tgtIdx ^= mask; /* the other part of the pair on the target side */
             }
-            srcIdx = tgtIdx < n ? inv_src[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
+            srcIdx = tgtIdx < n ? invSrc[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              final int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
               srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
-              byte t = src[srcIdx];                /* ...and update the source side */
+              final byte t = src[srcIdx];                /* ...and update the source side */
               src[srcIdx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
-              inv_src[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_src[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
+              invSrc[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              invSrc[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
             } else {
               /* straight */
               srcSet |= Utils.bit(srcIdx); /* mark that source index as seen */
@@ -316,7 +316,7 @@ public class Benes {
           srcIdx = mainIdx ^ mask;
           while ((Utils.bit(srcIdx) & srcSet) == 0) {
             srcSet |= Utils.bit(srcIdx); /* ...mark that source index as seen... */
-            int tgtIdx = srcIdx < n ? inv_tgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
+            int tgtIdx = srcIdx < n ? invTgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgTgt |= Utils.bit(tgtIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
@@ -324,23 +324,23 @@ public class Benes {
               final byte t = tgt[tgtIdx];                /* update the target side... */
               tgt[tgtIdx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
-              inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
+              invTgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              invTgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
             } else {
               /* straight */
               tgtIdx ^= mask; /* the other part of the pair on the target side */
             }
-            srcIdx = tgtIdx < n ? inv_src[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
+            srcIdx = tgtIdx < n ? invSrc[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
             if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
               cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              final int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
               srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
-              byte t = src[srcIdx];                /* ...and update the source side */
+              final byte t = src[srcIdx];                /* ...and update the source side */
               src[srcIdx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
-              inv_src[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_src[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
+              invSrc[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              invSrc[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
             } else {
               /* straight */
               srcSet |= Utils.bit(srcIdx); /* mark that source index as seen */

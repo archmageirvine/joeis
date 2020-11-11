@@ -90,9 +90,13 @@ public abstract class LattEnum {
     }
   }
 
-  /*
+  /**
    * Return a structure for counting the descendants of *l of size equal to n, for which all intermediate lattices
    * have size at most nMin.
+   * @param l lattice
+   * @param n siz
+   * @param nMin minimum size of intermediate lattices
+   * @param globals global state
    */
   public static LattEnum countCreate(final Lattice l, final int n, final int nMin, final Globals globals) {
     if (l != null && (n - 2 < l.mN || nMin - 2 < l.mN)) {
@@ -131,13 +135,12 @@ public abstract class LattEnum {
    * this process (also for those with fewer than n elements), the function *reg is called.
    */
   private void growLattice(final int n, final Lattice l, final int nmin) {
-    Lattice la = new Lattice();
+    final Lattice la = new Lattice();
     if (VERBOSE) {
       System.out.printf("%n[>>> entering lattEnum_growLattice]: %d%n", nmin);
       l.print();
     }
-    Antichain antichain = new Antichain(l, nmin, mGlobals);
-
+    final Antichain antichain = new Antichain(l, nmin, mGlobals);
     antichain.prepareLattice(l, la);
     int k;
     if (nmin == 1) {
@@ -207,8 +210,8 @@ public abstract class LattEnum {
    *
    * The function assumes that *l is the lattice with 2 elements.
    */
-  void growLattice2(int n, Lattice l, int nmin) {
-    Lattice la = new Lattice();
+  void growLattice2(final int n, final Lattice l, final int nmin) {
+    final Lattice la = new Lattice();
     for (int k = nmin; k <= n - l.mN; ++k) {
       Lattice.initKFan(la, k);
       reg(la);

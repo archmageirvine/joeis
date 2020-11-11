@@ -38,18 +38,17 @@ class PermGrp {
   byte[][] mInvPerm = new byte[Utils.MAXN - 2][];        /* permutations for inverses of generators */
   int mInvol;                  /* invol & BIT[i] indicates whether generator i is an involution */
   int mBenesValid = 0;             /* which levels of array Benes contain valid pointers */
-   Benes[][] mBenes = new Benes[Utils.MAXN-2][Utils.MAXN-2];  /* *(Benes[i][j]): Bene&scaron; network for the action of generator j on level i */
+  Benes[][] mBenes = new Benes[Utils.MAXN - 2][Utils.MAXN - 2];  /* *(Benes[i][j]): Bene&scaron; network for the action of generator j on level i */
   int mN = 0;                      /* number of points on which the group acts */
   int mNgens = 0;                  /* number of generators */
 
   /*
    * Set G to the trivial permutation group on n points.
    */
-  void init(int n) {
+  void init(final int n) {
     mN = n;
     mNgens = 0;
   }
-
 
 
 //  /*
@@ -66,13 +65,11 @@ class PermGrp {
 //  }
 
 
-
-
   /*
    * TEST FUNCTION:  Print current generators (in array notation).
    */
   static void printGenerators(final PermGrp g, final int offset) {
-    for (int i = 0; i < g.mNgens; i++) {
+    for (int i = 0; i < g.mNgens; ++i) {
       Permutation.print(g.mN, g.mPerm[i], offset);
     }
   }

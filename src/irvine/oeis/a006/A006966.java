@@ -51,7 +51,7 @@ public class A006966 implements Sequence {
   /*
    * Initialise global bitmaps to size n.
    */
-  private static void bitmapInit(long n) {
+  private static void bitmapInit(final long n) {
     final long bits = Long.SIZE;
     if (Utils.MAXN > bits) {
       throw new UnsupportedOperationException("Build problem: flags64 cannot hold MAXN bits!");

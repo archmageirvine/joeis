@@ -175,28 +175,28 @@ class Antichain {
     }
     mO[mCp] -= Utils.bit(mLattice.mLev[mCl]);
     final int w, nW;
-    int f1Pos;
-    if ((f1Pos = mFpos - mK) >= 0) {
+    final int f1Pos = mFpos - mK;
+    if (f1Pos >= 0) {
       mO[mCp] &= ~(mF[f1Pos] & mCmc);
       w = (mF[f1Pos] | mO[mCp]) & mCm;
       if (mCp != 0) {
         nW = (mF[f1Pos - 1] | mO[mCp - 1]) & mCm;
       } else {
-        nW = (int) ((mLattice.mUp[mLattice.mN - 1] & mCm) ^ Utils.bit(mLattice.mN - 1));
+        nW = (int) (mLattice.mUp[mLattice.mN - 1] & mCm ^ Utils.bit(mLattice.mN - 1));
       }
     } else {
       w = mO[mCp];
       if (mCp != 0) {
         nW = mO[mCp - 1];
       } else {
-        nW = (int) ((mLattice.mUp[mLattice.mN - 1] & mCm) ^ Utils.bit(mLattice.mN - 1));
+        nW = (int) (mLattice.mUp[mLattice.mN - 1] & mCm ^ Utils.bit(mLattice.mN - 1));
       }
     }
 
     /* We only want antichains that have a weight no less than the weight of the preceding
-     * element, and that intersect the lowest level of the old lattice.                    */
-    /* catches antichains not intersecting the lowest level, i.e. */
-    /* cl == L.nLev-2 && !(O[cp] & cm)       */
+     * element, and that intersect the lowest level of the old lattice.
+     * catches antichains not intersecting the lowest level; i.e.,
+     * cl == L.nLev-2 && !(O[cp] & cm)       */
     return w >= nW && w != 0;
   }
 
@@ -210,7 +210,6 @@ class Antichain {
     if ((mO[0] & mCmc) == 0) {
       return false;
     }
-
     final int w;
     mO[0] -= Utils.bit(mLattice.mLev[mCl]);
     if (mFpos != 0) {
@@ -221,7 +220,7 @@ class Antichain {
     }
 
     /* We only want antichains that have a weight no less than the weight of the preceding element. */
-    final int nW = (int) ((mLattice.mUp[mLattice.mN - 1] & mCm) ^ Utils.bit(mLattice.mN - 1));
+    final int nW = (int) (mLattice.mUp[mLattice.mN - 1] & mCm ^ Utils.bit(mLattice.mN - 1));
     /* catches antichains not intersecting the lowest level, i.e. */
     /* cl == L.nLev-2 && !(O[0] & cm)            */
     return w >= nW && w != 0;
@@ -269,7 +268,7 @@ class Antichain {
    * Modify antichain data AD for k elements to be added on the new level.
    * AD should be initialised.
    */
-  void reset(int k) {
+  void reset(final int k) {
     mLattice.mLev[mLattice.mNLev] = (byte) (mLattice.mN + k);  /* levels for the new lattice; for Bene&scaron; network creation */
     mK = k;
     mCp = 0;
@@ -296,7 +295,6 @@ class Antichain {
     mCp = 0;
   }
 
-
   /*
    * Decrement the current level of  Special case of a single antichain.
    */
@@ -307,9 +305,8 @@ class Antichain {
     mCm = (int) (Utils.bit(mLattice.mN) - Utils.bit(mLattice.mLev[mCl]));
   }
 
-
   /*
-   * Initialise antichaindata counter for the current position.  The lattice-antichain condition
+   * Initialise antichain counter for the current position.  The lattice-antichain condition
    * is NOT verified.
    */
   void initialiseCurrentPosition() {
@@ -323,7 +320,7 @@ class Antichain {
   }
 
   /*
-   * Initialise antichaindata counter for the current position.  The lattice-antichain condition
+   * Initialise antichain counter for the current position.  The lattice-antichain condition
    * is NOT verified.  Special case of a single antichain.
    */
   void initialiseCurrentPosition1() {
@@ -344,11 +341,11 @@ class Antichain {
    * Return value: 1 if lattice-antichain condition holds; 0 if contradiction to choice on lower levels
    */
   boolean validateCurrentPosition() {
-    assert mFpos == (mLattice.mNLev - 2 - mCl) * mK + mCp : "antichaindata: inconsistent value of Fpos";
+    assert mFpos == (mLattice.mNLev - 2 - mCl) * mK + mCp : "antichaindata: inconsistent value of fPos";
 
     /* start with inherited constraints from lower levels */
     final int f1Pos = mFpos - mK;
-    int done = (f1Pos >= 0 ? mF[f1Pos] : 0);
+    int done = f1Pos >= 0 ? mF[f1Pos] : 0;
     int f = done;
 
     /* up-close optional elements added on current level */
@@ -365,13 +362,13 @@ class Antichain {
     }
     final int[] i = new int[1];
     final int[] j = new int[1];
-    final int[] todo = new int[]{f & ~done};
+    final int[] todo = {f & ~done};
     while (Utils.extractMSB32(todo, i)) {
       final long biti = Utils.bit(i[0]);
       /* first test compatibility with other lattice antichains... */
-      int C = mCop[i[0]] & f;
+      final int c = mCop[i[0]] & f;
       for (int k = Math.max(f1Pos, 0); k < mFpos; ++k) {
-        if ((biti & mF[k]) != 0 && (C & mF[k]) != 0) {
+        if ((biti & mF[k]) != 0 && (c & mF[k]) != 0) {
           return false;
         }
       }
@@ -382,12 +379,12 @@ class Antichain {
       done |= biti;
       final int[] m = new int[1];
       while (Utils.extractMSB32(tocheck, j)) {
-        if (Utils.getLSB32(loi & (mLattice.mLo[j[0]]), m)) {
+        if (Utils.getLSB32(loi & mLattice.mLo[j[0]], m)) {
           if ((Utils.bit(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
             if (m[0] >= mLattice.mLev[mCl]) {  /* equivalent to L.dep[m] >= cl */
               return false;
             } else {
-              todo[0] |= (mLattice.mUp[m[0]] & ~done);
+              todo[0] |= mLattice.mUp[m[0]] & ~done;
               f |= mLattice.mUp[m[0]];
             }
           }
@@ -397,7 +394,7 @@ class Antichain {
         }
       }
       if (allnonzero) {
-        done |= (todo[0] & mLattice.mUp[i[0]]);  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
+        done |= todo[0] & mLattice.mUp[i[0]];  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
         todo[0] &= ~mLattice.mUp[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
       }
     }
@@ -416,11 +413,10 @@ class Antichain {
    * Return value: 1 if lattice-antichain condition holds; 0 if contradiction to choice on lower levels
    */
   boolean validateCurrentPosition1() {
-
     assert mFpos == (mLattice.mNLev - 2 - mCl) * mK + mCp : "antichaindata: inconsistent value of Fpos";
 
     /* start with inherited constraints from lower levels */
-    int done = (mFpos != 0 ? mF[mFpos - 1] : 0);
+    int done = mFpos != 0 ? mF[mFpos - 1] : 0;
     int f = done;
 
     /* up-close optional elements added on current level */
@@ -446,12 +442,12 @@ class Antichain {
       boolean allnonzero = true;
       final int loi = mLattice.mLo[i[0]];
       while (Utils.extractMSB32(tocheck, j)) {
-        if (Utils.getLSB32(loi & (mLattice.mLo[j[0]]), m)) {
+        if (Utils.getLSB32(loi & mLattice.mLo[j[0]], m)) {
           if ((Utils.bit(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
             if (m[0] >= mLattice.mLev[mCl]) {  /* equivalent to L.dep[m] >= cl */
               return false;
             } else {
-              todo[0] |= (mLattice.mUp[m[0]] & ~done);
+              todo[0] |= mLattice.mUp[m[0]] & ~done;
               f |= mLattice.mUp[m[0]];
             }
           }
@@ -461,7 +457,7 @@ class Antichain {
         }
       }
       if (allnonzero) {
-        done |= (todo[0] & mLattice.mUp[i[0]]);  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
+        done |= todo[0] & mLattice.mUp[i[0]];  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
         todo[0] &= ~mLattice.mUp[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
       }
     }
@@ -581,12 +577,12 @@ class Antichain {
    *   (lo[i]) lo[j]
    * for 1 < i < l.n <= j < la.n.  lo[i] may be modified in antichaindata_generateLattice.
    */
-  void prepareLattice(Lattice l, Lattice la) {
+  void prepareLattice(final Lattice l, final Lattice la) {
     la.mN = (byte) (l.mN + mK);                          /* number of elements  */
     la.mNLev = l.mNLev + 1;                          /* number of levels    */
     System.arraycopy(l.mLev, 0, la.mLev, 0, l.mNLev);
     la.mLev[la.mNLev - 1] = la.mN;                   /* new level           */
-    for (int j = l.mN; j < la.mN; j++) {
+    for (int j = l.mN; j < la.mN; ++j) {
       la.mLo[j] = (int) Utils.bit(j);                        /* lo[j]               */
     }
     System.arraycopy(l.mUp, 0, la.mUp, 0, l.mN);
@@ -601,7 +597,7 @@ class Antichain {
    * for 1 < i < l.n <= j < la.n.  ..... denotes data set in antichaindata_prepareLattice.
    * Note: The stabiliser of *la carries a reference count.
    */
-  void generateLattice(Lattice l, Lattice la) {
+  void generateLattice(final Lattice l, final Lattice la) {
     for (int k = mK, j = l.mN; k-- != 0; ++j) {
       /* set up[j] and lo[i] for 1 < i < l.n <= j < la.n */
       la.mUp[j] = (int) (Utils.bit(j) | mF[mFpos - k]);       /* up[j] */
@@ -626,7 +622,7 @@ class Antichain {
    * Special case of a single antichain.
    * Note: The stabiliser of *la carries a reference count.
    */
-  void generateLattice1(Lattice l, Lattice la) {
+  void generateLattice1(final Lattice l, final Lattice la) {
     /* set up[j] and lo[i] for 1 < i < l.n <= j < la.n */
     la.mUp[l.mN] = (int) (Utils.bit(l.mN) | mF[mFpos]);   /* up[j] */
     for (int i = 0; i < l.mN; ++i) {    /* lo[i] */
@@ -644,13 +640,13 @@ class Antichain {
    * TEST FUNCTION: Print all set bits in each antichain in *
    */
   void printAntichains() {
-    int[] a = new int[1];
-    int[] i = new int[1];
+    final int[] a = new int[1];
+    final int[] i = new int[1];
     for (int j = mK; j-- != 0; ) {
       /* extract the j-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
       a[0] = 0;
-      for (i[0] = 0; i[0] < mLattice.mN; i[0]++) {
-        if ((mF[mFpos - j] & Utils.bit(i[0])) != 0 && ((mF[mFpos - j] & mLattice.mLo[i[0]]) == Utils.bit(i[0]))) {
+      for (i[0] = 0; i[0] < mLattice.mN; ++i[0]) {
+        if ((mF[mFpos - j] & Utils.bit(i[0])) != 0 && (mF[mFpos - j] & mLattice.mLo[i[0]]) == Utils.bit(i[0])) {
           a[0] |= Utils.bit(i[0]);
         }
       }
@@ -662,7 +658,6 @@ class Antichain {
     System.out.println();
   }
 
-
   /*
    * TEST FUNCTION: Print all counters for each position and each level in
    */
@@ -670,7 +665,7 @@ class Antichain {
     System.out.printf("cl:%d, cp:%d   ", mCl, mCp);
     for (int j = 0; j < mK; ++j) {
       for (int m = mLattice.mNLev - 2; m >= mCl; --m) {
-        final int[] A = {(int) ((j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]) | (mO[j] & (Utils.bit(mLattice.mLev[m + 1]) - Utils.bit(mLattice.mLev[m]))))};
+        final int[] A = {(int) ((j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]) | mO[j] & Utils.bit(mLattice.mLev[m + 1]) - Utils.bit(mLattice.mLev[m]))};
         final int[] i = new int[1];
         while (Utils.extractLSB32(A, i)) {
           System.out.printf("%d ", i[0]);
@@ -682,7 +677,6 @@ class Antichain {
     System.out.println();
   }
 
-
   /*
    * TEST FUNCTION: Print the counters F for each position and each level in *
    */
@@ -691,8 +685,8 @@ class Antichain {
     System.out.printf("cl:%d, cp:%d   ", mCl, mCp);
     for (int j = 0; j < mK; ++j) {
       for (int m = mLattice.mNLev - 2; m >= mCl; --m) {
-        final int[] A = {j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]};
-        while (Utils.extractLSB32(A, i)) {
+        final int[] a = {j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]};
+        while (Utils.extractLSB32(a, i)) {
           System.out.printf("%d ", i[0]);
         }
         System.out.print("; ");
@@ -701,7 +695,6 @@ class Antichain {
     }
     System.out.println();
   }
-
 
 ///*
 // * TEST FUNCTION: Return true if every antichain in *AD is a lattice-antichain; return false otherwise.

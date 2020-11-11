@@ -708,48 +708,48 @@ class Antichain {
 // */
 //boolean antichaindata_test(antichaindata AD)
 //{
-//	int      i, j, k, d;
-//	int  A, upA, m;
+//  int      i, j, k, d;
+//  int  A, upA, m;
 //
-//	for (k=0; k<k; k++) {
-//		/* extract the k-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
-//		A = 0;
-//		for (i=0; i<L.n; i++)
-//			if ((F[Fpos-k] & BIT(i)) && ((F[Fpos-k] & L.lo[i]) == BIT(i)))
-//				A |= BIT(i);
-//		/* test that A is an antichain */
-//		for (i=0; i<L.n; i++)
-//			if (A & BIT(i))
-//				for (j=i+1; j<L.n; j++)
-//					if (A & BIT(j))
-//						if ((BIT(i)&L.up[j]) || (BIT(j)&L.up[i]) || (BIT(i)&L.lo[j]) || (BIT(j)&L.lo[i])) {
-//							printf(">>> not an antichain %d:(%d,%d)\n", k, i, j);
-//							return false;
-//						}
-//		/* up-close */
-//		upA = 0;
-//		for (i=0; i<L.n; i++)
-//			if (A & BIT(i))
-//				upA |= L.up[i];
-//		if (upA != F[Fpos-k]) {
-//			printf(">>> not up-closed %d:(%d)\n", k, i);
-//			return false;
-//		}
-//		/* test gcd condition */
-//		for (i=0; i<L.n; i++)
-//			if (upA & BIT(i))
-//				for (j=i+1; j<L.n; j++)
-//					if (upA & BIT(j)) {
-//						m = L.lo[i] & L.lo[j];
-//						for (d=0; d<L.n && !(m&BIT(d)); d++)
-//							;
-//						if (d < L.n && !(upA&BIT(d))) {
-//							printf(">>> not a lattice-antichain %d:(%d,%d) [%d]\n", k, i, j, d);
-//							return false;
-//						}
+//  for (k=0; k<k; k++) {
+//    /* extract the k-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
+//    A = 0;
+//    for (i=0; i<L.n; i++)
+//      if ((F[Fpos-k] & BIT(i)) && ((F[Fpos-k] & L.lo[i]) == BIT(i)))
+//        A |= BIT(i);
+//    /* test that A is an antichain */
+//    for (i=0; i<L.n; i++)
+//      if (A & BIT(i))
+//        for (j=i+1; j<L.n; j++)
+//          if (A & BIT(j))
+//            if ((BIT(i)&L.up[j]) || (BIT(j)&L.up[i]) || (BIT(i)&L.lo[j]) || (BIT(j)&L.lo[i])) {
+//              printf(">>> not an antichain %d:(%d,%d)\n", k, i, j);
+//              return false;
+//            }
+//    /* up-close */
+//    upA = 0;
+//    for (i=0; i<L.n; i++)
+//      if (A & BIT(i))
+//        upA |= L.up[i];
+//    if (upA != F[Fpos-k]) {
+//      printf(">>> not up-closed %d:(%d)\n", k, i);
+//      return false;
+//    }
+//    /* test gcd condition */
+//    for (i=0; i<L.n; i++)
+//      if (upA & BIT(i))
+//        for (j=i+1; j<L.n; j++)
+//          if (upA & BIT(j)) {
+//            m = L.lo[i] & L.lo[j];
+//            for (d=0; d<L.n && !(m&BIT(d)); d++)
+//              ;
+//            if (d < L.n && !(upA&BIT(d))) {
+//              printf(">>> not a lattice-antichain %d:(%d,%d) [%d]\n", k, i, j, d);
+//              return false;
+//            }
 //
-//					}
-//	}
-//	return true;
+//          }
+//  }
+//  return true;
 //}
 }

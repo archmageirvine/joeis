@@ -40,10 +40,10 @@ public class Benes {
   private static final int BITSPERLONG = Long.SIZE;
 
   // struct benes_p1 {
-// 	long     refcount;              /* reference count; -1 = persistent */
-// 	long  mask[2*LD_MAXN_2-1];   /* masks for stages */
-// 	long      shift[2*LD_MAXN_2-1];  /* shift amounts for stages */
-// 	long      depth;                 /* number of stages */
+//   long     refcount;              /* reference count; -1 = persistent */
+//   long  mask[2*LD_MAXN_2-1];   /* masks for stages */
+//   long      shift[2*LD_MAXN_2-1];  /* shift amounts for stages */
+//   long      depth;                 /* number of stages */
 // };
 
   //long mRefCount;              /* reference count; -1 = persistent */

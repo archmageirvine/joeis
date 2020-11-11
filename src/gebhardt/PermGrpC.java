@@ -171,31 +171,31 @@ class PermGrpC {
     }
   }
 
-//	/*
-//	 * Copy G to H.
-//	 */
-//	static void permgrpc_cpy(permgrpc G, permgrpc H) {
-//		permgrp_cpy(G.G, H.G);
-//		H.freeperm = G.freeperm;
-//		memcpy(H.Jerrum, G.Jerrum, G.G.n * sizeof(JVertexT));
-//	}
+//  /*
+//   * Copy G to H.
+//   */
+//  static void permgrpc_cpy(permgrpc G, permgrpc H) {
+//    permgrp_cpy(G.G, H.G);
+//    H.freeperm = G.freeperm;
+//    memcpy(H.Jerrum, G.Jerrum, G.G.n * sizeof(JVertexT));
+//  }
 //
 //
-//	/*
-//	 * Return the underlying permgrp of G WITHOUT REFERENCE COUNT.
-//	 */
-//	static permgrp permgrpc_get_permgrp(permgrpc G) {
-//		return G.G;
-//	}
+//  /*
+//   * Return the underlying permgrp of G WITHOUT REFERENCE COUNT.
+//   */
+//  static permgrp permgrpc_get_permgrp(permgrpc G) {
+//    return G.G;
+//  }
 //
 //
-//	/*
-//	 * TEST FUNCTION:  Print current generators (in array notation).  NOTE:  The function only works if the
-//	 * generators are stored consecutively, i.e., after permgrpc_compactGenerators has been called.
-//	 */
-//	static void permgrpc_printGenerators(permgrpc g, int offset) {
-//		permgrp_printGenerators(g.g, offset);
-//	}
+//  /*
+//   * TEST FUNCTION:  Print current generators (in array notation).  NOTE:  The function only works if the
+//   * generators are stored consecutively, i.e., after permgrpc_compactGenerators has been called.
+//   */
+//  static void permgrpc_printGenerators(permgrpc g, int offset) {
+//    permgrp_printGenerators(g.g, offset);
+//  }
 //
 //
 

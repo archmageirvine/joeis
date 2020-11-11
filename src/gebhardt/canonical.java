@@ -1,7 +1,6 @@
 package gebhardt;
 
 import gebhardt.Globals.SiData;
-import gebhardt.Antichain.AntichainData;
 
 class canonical {
 	/*
@@ -61,7 +60,7 @@ class canonical {
 	 * lattice are given by all possible permutations of identical antichains, i.e., all possible permutations
 	 * of points of the lowest level of the new lattice that have identical covering sets.)
 	 */
-	static boolean antichaindata_isCanonical(AntichainData AD) {
+	static boolean antichaindata_isCanonical(Antichain AD) {
 		int bits;
 
 		bits = AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl];
@@ -899,7 +898,7 @@ class canonical {
 	 * Generate Beneš networks for the action of the generators on the next level (AD.cl-1)
 	 * of the current lattice or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
-	static void permgrp_preprocessGenerators(final AntichainData AD) {
+	static void permgrp_preprocessGenerators(final Antichain AD) {
 		final lattice L = AD.mLattice;
 		final PermGrp G = AD.mStabilisers[AD.mCl].mSt;
 		//#ifndef FILTER_GRADED
@@ -931,7 +930,7 @@ class canonical {
 	 * of the current lattice as well as for the action on AD.k antichains of the appropriate
 	 * size or, if AD.cl==0, the lowest non-trivial level of the new lattice.
 	 */
-	static void permgrp_preprocessGenerators_blocked(AntichainData AD) {
+	static void permgrp_preprocessGenerators_blocked(Antichain AD) {
 		int i;
 		lattice L;
 		PermGrp G;
@@ -993,7 +992,7 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_1(AntichainData AD, PermGrp G, PermGrpC S, int pos, int gen) {
+	static void processElement_1(Antichain AD, PermGrp G, PermGrpC S, int pos, int gen) {
 		final byte[] h = Permutation.create();
 		final long A = AD.mGlobals.mOrbitElements[AD.mGlobals.mOrbitSize].mData[0];
 		int Apos = AD.mGlobals.mOrbitSize;
@@ -1071,7 +1070,7 @@ class canonical {
 	 * permutation fixes the multiset but permutes its elements, the points of the lowest level of the new
 	 * lattice need to be permuted accordingly to obtain an element of the stabiliser of the new lattice.
 	 */
-	static void processElement_p1(AntichainData AD, PermGrp G, PermGrpC S, int pos, int gen, byte[] p) {
+	static void processElement_p1(Antichain AD, PermGrp G, PermGrpC S, int pos, int gen, byte[] p) {
 		long A;
 		int Apos;
 		byte[] h = Permutation.create();
@@ -1243,7 +1242,7 @@ class canonical {
 	 * lattice are given by all possible permutations of identical antichains, i.e., all possible permutations
 	 * of points of the lowest level of the new lattice that have identical covering sets.)
 	 */
-	static boolean antichaindata_isCanonical_1(AntichainData AD) {
+	static boolean antichaindata_isCanonical_1(Antichain AD) {
 		int pos;
 		int gen;
 		PermGrp G;
@@ -1458,7 +1457,7 @@ class canonical {
 	 * identical antichains, i.e., all possible permutations of points of the lowest level of the new lattice
 	 * that have identical covering sets.  The latter may be handled by "implicit" stabilisers.)
 	 */
-	static boolean antichaindata_isCanonical_p1(AntichainData AD, int bits) {
+	static boolean antichaindata_isCanonical_p1(Antichain AD, int bits) {
 		int i, gen;
 		int pos;
 		long[] M = new long[Utils.MAXN - 2];

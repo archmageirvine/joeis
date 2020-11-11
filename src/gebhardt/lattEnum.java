@@ -1,7 +1,5 @@
 package gebhardt;
 
-import gebhardt.Antichain.AntichainData;
-
 public abstract class lattEnum {
 	/*
 	 * lattEnum.c
@@ -270,7 +268,7 @@ void reg(lattEnum E, lattice L) {
 	 */
 	static void lattEnum_growLattice(lattEnum E, int N, lattice L, int nmin) {
 		lattice LA = new lattice();
-		AntichainData AD = new AntichainData();
+		Antichain AD = new Antichain();
 		int k;
 
 // #ifdef DOTEST

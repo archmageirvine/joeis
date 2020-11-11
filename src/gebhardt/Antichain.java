@@ -72,31 +72,28 @@ class Antichain {
     int mBl;
   }
 
-  static class AntichainData {
-    lattice mLattice;
-    Globals mGlobals;
-    final int[] mCop = new int[Utils.MAXN - 3];
-    int mK;
-    int mCl;
-    int mCmc;
-    int mCm;
-    final Stabiliser[] mStabilisers = new Stabiliser[Utils.MAXN - 2];
-    int mCp;
-    int mFpos;
-    final int[] mO = new int[Utils.MAXN - 3];
-    final int[] mF = new int[Utils.FSIZE];
-    {
-      for (int k = 0; k < mStabilisers.length; ++k) {
-        mStabilisers[k] = new Stabiliser();
-      }
+  lattice mLattice;
+  Globals mGlobals;
+  final int[] mCop = new int[Utils.MAXN - 3];
+  int mK;
+  int mCl;
+  int mCmc;
+  int mCm;
+  final Stabiliser[] mStabilisers = new Stabiliser[Utils.MAXN - 2];
+  int mCp;
+  int mFpos;
+  final int[] mO = new int[Utils.MAXN - 3];
+  final int[] mF = new int[Utils.FSIZE];
+  {
+    for (int k = 0; k < mStabilisers.length; ++k) {
+      mStabilisers[k] = new Stabiliser();
     }
   }
-
 
   /*
    * Ensure that the stabiliser AD.SD[lev].ST_ exists, and return AD.SD[lev].ST_.
    */
-  static PermGrpC antichaindata_ensureStabiliser(AntichainData AD, int lev) {
+  static PermGrpC antichaindata_ensureStabiliser(Antichain AD, int lev) {
     if (AD.mStabilisers[lev].mStC == null) {
       AD.mStabilisers[lev].mStC = new PermGrpC();
     }
@@ -107,7 +104,7 @@ class Antichain {
   /*
    * Free dynamically allocated memory; calls to antichaindata_init and antichaindata_clear should match.
    */
-  static void antichaindata_clear(AntichainData AD) {
+  static void antichaindata_clear(Antichain AD) {
     //#ifndef FILTER_GRADED
     int i;
 
@@ -127,7 +124,7 @@ class Antichain {
    *  Given a partition P of elements, return in *Q a refinement of P such that the optional
    *  choices on the current level of AD are constant on every element of *Q.
    */
-  static void antichaindata_updateBlocks(AntichainData AD, int P, int[] Q) {
+  static void antichaindata_updateBlocks(Antichain AD, int P, int[] Q) {
     int B;
     int[] i = new int[1];
 
@@ -144,7 +141,7 @@ class Antichain {
   /*
    * Increment the current level of *AD.
    */
-  static void antichaindata_incrementLevel(AntichainData AD) {
+  static void antichaindata_incrementLevel(Antichain AD) {
     (AD.mCl)++;
     AD.mFpos--;
     AD.mCmc = (int) (Utils.BIT(AD.mLattice.lev[AD.mCl + 1]) - Utils.BIT(AD.mLattice.lev[AD.mCl]));
@@ -156,7 +153,7 @@ class Antichain {
   /*
    * Increment the current level of *AD.
    */
-  static void antichaindata_incrementLevel_1(AntichainData AD) {
+  static void antichaindata_incrementLevel_1(Antichain AD) {
     (AD.mCl)++;
     AD.mFpos--;
     AD.mCmc = (int) (Utils.BIT(AD.mLattice.lev[AD.mCl + 1]) - Utils.BIT(AD.mLattice.lev[AD.mCl]));
@@ -170,7 +167,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  static boolean antichaindata_stepCurrentPosition(AntichainData AD) {
+  static boolean antichaindata_stepCurrentPosition(Antichain AD) {
     int W, nW;
     int F1pos;
 
@@ -212,7 +209,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  static boolean antichaindata_stepCurrentPosition_1(AntichainData AD) {
+  static boolean antichaindata_stepCurrentPosition_1(Antichain AD) {
     int W, nW;
 
     if ((AD.mO[0] & AD.mCmc) == 0) {
@@ -243,7 +240,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  static boolean antichaindata_step(AntichainData AD) {
+  static boolean antichaindata_step(Antichain AD) {
     while (!antichaindata_stepCurrentPosition(AD)) {
       if (AD.mCp != 0) {
         AD.mCp--;
@@ -270,7 +267,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  static boolean antichaindata_step_1(AntichainData AD) {
+  static boolean antichaindata_step_1(Antichain AD) {
     while (!antichaindata_stepCurrentPosition_1(AD)) {
       //#ifndef FILTER_GRADED
       if (AD.mCl < AD.mLattice.nLev - 2) {
@@ -289,7 +286,7 @@ class Antichain {
    * Initialise antichain data *AD for the lattice L with k elements to be added on the new level.
    * AD should be allocated.
    */
-  static void antichaindata_init(lattice L, int k, AntichainData AD, Globals GD) {
+  static void antichaindata_init(lattice L, int k, Antichain AD, Globals GD) {
 
     //PREFETCH(AD.L.lo);
     //PREFETCH(AD.cop);
@@ -336,7 +333,7 @@ class Antichain {
    * Modify antichain data *AD for k elements to be added on the new level.
    * AD should be initialised.
    */
-  static void antichaindata_reinit(AntichainData AD, int k) {
+  static void antichaindata_reinit(Antichain AD, int k) {
     AD.mLattice.lev[AD.mLattice.nLev] = (byte) (AD.mLattice.n + k);  /* levels for the new lattice; for Beneš network creation */
     AD.mK = k;
     AD.mCp = 0;
@@ -354,7 +351,7 @@ class Antichain {
   /*
    * Decrement the current level of *AD.
    */
-  static void antichaindata_decrementLevel(AntichainData AD) {
+  static void antichaindata_decrementLevel(Antichain AD) {
     final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mBl}; // todo ugly
     final int xcl = AD.mCl;
     antichaindata_updateBlocks(AD, AD.mStabilisers[AD.mCl + 1].mBl, ugly);
@@ -370,7 +367,7 @@ class Antichain {
   /*
    * Decrement the current level of *AD.  Special case of a single antichain.
    */
-  static void antichaindata_decrementLevel_1(AntichainData AD) {
+  static void antichaindata_decrementLevel_1(Antichain AD) {
     (AD.mCl)--;
     AD.mFpos++;
     AD.mCmc = (int) (Utils.BIT(AD.mLattice.lev[AD.mCl + 1]) - Utils.BIT(AD.mLattice.lev[AD.mCl]));
@@ -383,7 +380,7 @@ class Antichain {
    * Initialise antichaindata counter for the current position.  The lattice-antichain condition
    * is NOT verified.
    */
-  static void antichaindata_initialiseCurrentPosition(AntichainData AD) {
+  static void antichaindata_initialiseCurrentPosition(Antichain AD) {
     AD.mO[AD.mCp] |= AD.mCmc;
     if (AD.mFpos - AD.mK >= 0) {
       AD.mO[AD.mCp] &= ~(AD.mF[AD.mFpos - AD.mK] & AD.mCmc);
@@ -398,7 +395,7 @@ class Antichain {
    * Initialise antichaindata counter for the current position.  The lattice-antichain condition
    * is NOT verified.  Special case of a single antichain.
    */
-  static void antichaindata_initialiseCurrentPosition_1(AntichainData AD) {
+  static void antichaindata_initialiseCurrentPosition_1(Antichain AD) {
     AD.mO[0] |= AD.mCmc;
     if (AD.mFpos != 0) {
       AD.mO[0] &= ~(AD.mF[AD.mFpos - 1] & AD.mCmc);
@@ -417,7 +414,7 @@ class Antichain {
    *
    * Return value: 1 if lattice-antichain condition holds; 0 if contradiction to choice on lower levels
    */
-  static boolean antichaindata_validateCurrentPosition(AntichainData AD) {
+  static boolean antichaindata_validateCurrentPosition(Antichain AD) {
     int F1pos;
     int done, F;
 
@@ -500,7 +497,7 @@ class Antichain {
    *
    * Return value: 1 if lattice-antichain condition holds; 0 if contradiction to choice on lower levels
    */
-  static boolean antichaindata_validateCurrentPosition_1(AntichainData AD) {
+  static boolean antichaindata_validateCurrentPosition_1(Antichain AD) {
     int done, F;
     final int[] j = new int[1];
 
@@ -570,7 +567,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  boolean antichaindata_step_FUNC(AntichainData AD) {
+  boolean antichaindata_step_FUNC(Antichain AD) {
     return antichaindata_step(AD);
   }
 
@@ -581,7 +578,7 @@ class Antichain {
    *
    * Return value: true if success; false if there are no further useful configurations.
    */
-  boolean antichaindata_step_1_FUNC(AntichainData AD) {
+  boolean antichaindata_step_1_FUNC(Antichain AD) {
     return antichaindata_step_1(AD);
   }
 
@@ -721,7 +718,7 @@ class Antichain {
    *
    * Return value: true if successful; false if no further canonical configuration exists.
    */
-  static boolean antichaindata_next(AntichainData AD) {
+  static boolean antichaindata_next(Antichain AD) {
     while (true) {
       if (VERBOSE) {
         System.out.print("... in antichaindata_next: ");
@@ -775,7 +772,7 @@ class Antichain {
    *
    * Return value: true if successful; false if no further canonical configuration exists.
    */
-  static boolean antichaindata_next_1(AntichainData AD) {
+  static boolean antichaindata_next_1(Antichain AD) {
     while (true) {
       if (VERBOSE) {
         System.out.print("... in antichaindata_next_1: ");
@@ -824,7 +821,7 @@ class Antichain {
    *   (lo[i]) lo[j]
    * for 1 < i < L.n <= j < LA.n.  lo[i] may be modified in antichaindata_generateLattice.
    */
-  static void antichaindata_prepareLattice(AntichainData AD, lattice L, lattice LA) {
+  static void antichaindata_prepareLattice(Antichain AD, lattice L, lattice LA) {
     LA.n = (byte) (L.n + AD.mK);                          /* number of elements  */
     if (VERBOSE) {
       System.out.println("SAI: Set LA.n to " + LA.n + " from " + L.n + " + " + AD.mK);
@@ -851,7 +848,7 @@ class Antichain {
    * for 1 < i < L.n <= j < LA.n.  ..... denotes data set in antichaindata_prepareLattice.
    * Note: The stabiliser of *LA carries a reference count.
    */
-  static void antichaindata_generateLattice(AntichainData AD, lattice L, lattice LA) {
+  static void antichaindata_generateLattice(Antichain AD, lattice L, lattice LA) {
     int i, j, k;
 
     //PREFETCH(AD.F);
@@ -883,7 +880,7 @@ class Antichain {
    * Special case of a single antichain.
    * Note: The stabiliser of *LA carries a reference count.
    */
-  static void antichaindata_generateLattice_1(AntichainData AD, lattice L, lattice LA) {
+  static void antichaindata_generateLattice_1(Antichain AD, lattice L, lattice LA) {
     //PREFETCH(AD.F);
     //PREFETCH(LA.up);
     //PREFETCH(LA.lo);
@@ -907,7 +904,7 @@ class Antichain {
   /*
    * TEST FUNCTION: Print all set bits in each antichain in *AD.
    */
-  static void antichaindata_printAntichains(AntichainData AD) {
+  static void antichaindata_printAntichains(Antichain AD) {
     int j;
     int[] A = new int[1];
     int[] i = new int[1];
@@ -932,7 +929,7 @@ class Antichain {
   /*
    * TEST FUNCTION: Print all counters for each position and each level in *AD.
    */
-  static void antichaindata_printCounters(AntichainData AD) {
+  static void antichaindata_printCounters(Antichain AD) {
     System.out.printf("cl:%d, cp:%d   ", AD.mCl, AD.mCp);
     for (int j = 0; j < AD.mK; j++) {
       for (int m = AD.mLattice.nLev - 2; m >= AD.mCl; m--) {
@@ -952,7 +949,7 @@ class Antichain {
   /*
    * TEST FUNCTION: Print the counters F for each position and each level in *AD.
    */
-  static void antichaindata_printCountersF(AntichainData AD) {
+  static void antichaindata_printCountersF(Antichain AD) {
     int j, m;
     final int[] i = new int[1];
     System.out.printf("cl:%d, cp:%d   ", AD.mCl, AD.mCp);

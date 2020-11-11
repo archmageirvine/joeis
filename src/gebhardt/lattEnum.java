@@ -295,7 +295,7 @@ void reg(lattEnum E, lattice L) {
 				if (VERBOSE) {
 					System.out.println("SAI: while-an1 " + AD.mStabilisers[0].mSt.mN);
 				}
-				Antichain.antichaindata_generateLattice_1(AD, L, LA);
+				AD.generateLattice1(L, LA);
 // #ifdef DOTEST
 // 			if (!antichaindata_test(&AD)) {
 // 				printf("BAD LATTICE-ANTICHAIN DATA\n");
@@ -323,7 +323,7 @@ void reg(lattEnum E, lattice L) {
 					System.out.println("\n### lattice:");
 					lattice.lattice_print(L);
 					System.out.print("+++ antichain data: ");
-					Antichain.antichaindata_printAntichains(AD);
+					AD.printAntichains();
 					System.out.println(">>> lattice:");
 					lattice.lattice_print(LA);
 				}
@@ -362,9 +362,6 @@ void reg(lattEnum E, lattice L) {
 		} else {
 			k = nmin;
 		}
-		if (VERBOSE) {
-			System.out.println("SAI: k=" + k);
-		}
 
 		for (; k <= N - L.n; k++) {
 			if (VERBOSE) {
@@ -401,7 +398,7 @@ void reg(lattEnum E, lattice L) {
 					System.out.print("\n### lattice:\n");
 					lattice.lattice_print(L);
 					System.out.print("+++ antichain data: ");
-					Antichain.antichaindata_printAntichains(AD);
+					AD.printAntichains();
 					System.out.println(">>> lattice:");
 					lattice.lattice_print(LA);
 				}

@@ -46,16 +46,14 @@ public class A006966 implements Sequence {
    * Initialise global bitmaps to size n.
    */
   private static void bitmapInit(long n) {
-    long bits, a1, b1, a2, b2;
-
-    bits = Utils.BITSPERFLAGS64;
+    final long bits = Utils.BITSPERFLAGS64;
     if (Utils.MAXN > bits) {
       throw new UnsupportedOperationException("Build problem: flags64 cannot hold MAXN bits!");
     }
-    b1 = (long) Math.floor(Math.sqrt(bits));
-    a1 = bits / b1;
-    b2 = (long) Math.ceil(Math.sqrt(bits));
-    a2 = bits / b2;
+    final long b1 = (long) Math.floor(Math.sqrt(bits));
+    final long a1 = bits / b1;
+    final long b2 = (long) Math.ceil(Math.sqrt(bits));
+    final long a2 = bits / b2;
     if (Utils.MAXN > 2 * a1 + b1 + 2 || Utils.MAXN > 2 * a2 + b2 + 2) {
       throw new UnsupportedOperationException("Build problem: packed antichain lists don't fit into two flags64!");
     }

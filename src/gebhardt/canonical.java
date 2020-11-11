@@ -1251,7 +1251,7 @@ class canonical {
 		if (VERBOSE) {
 			System.out.println("[entering antichaindata_isCanonical_1]: " + AD.mCl + " " + AD.mStabilisers[AD.mCl + 1].mSt.mN);
 			lattice.lattice_print(AD.mLattice);
-			Antichain.antichaindata_printCounters(AD);
+			AD.printCounters();
 		}
 		G = AD.mStabilisers[AD.mCl + 1].mSt;
 		assert G.mNgens == 0 || (G.mBenesValid & BIT(AD.mCl)) != 0
@@ -1468,7 +1468,7 @@ class canonical {
 		if (VERBOSE) {
 			System.out.println("[entering antichaindata_isCanonical_p1]:");
 			lattice.lattice_print(AD.mLattice);
-			Antichain.antichaindata_printCounters(AD);
+			AD.printCounters();
 		}
 		for (mask = BIT(bits) - 1, i = AD.mK; i-- != 0; mask <<= bits) {
 			M[i] = mask;

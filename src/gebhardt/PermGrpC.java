@@ -65,14 +65,14 @@ class PermGrpC {
    */
   private void jerrumInsertGenerator(final byte[] p, final int i, final int j) {
     final int g = mFreePerm == 0 ? 0 : Integer.numberOfTrailingZeros(mFreePerm);
-    mFreePerm ^= Utils.BIT(g);
+    mFreePerm ^= Utils.bit(g);
     mG.mPerm[g] = Permutation.create();
     mG.mInvPerm[g] = Permutation.create();
     Permutation.copy(mG.mN, p, mG.mPerm[g]);
     Permutation.inverse(mG.mN, p, mG.mInvPerm[g]);
-    mJerrum[i].mNeighbours |= Utils.BIT(j);
+    mJerrum[i].mNeighbours |= Utils.bit(j);
     mJerrum[i].mPerm[j] = g;
-    mJerrum[j].mNeighbours |= Utils.BIT(i);
+    mJerrum[j].mNeighbours |= Utils.bit(i);
     mJerrum[j].mPerm[i] = g;
   }
 
@@ -81,9 +81,9 @@ class PermGrpC {
    */
   private void jerrumRemoveGenerator(final int i, final int j) {
     final int g = mJerrum[i].mPerm[j];
-    mFreePerm |= Utils.BIT(g);
-    mJerrum[i].mNeighbours ^= Utils.BIT(j);  /* bit j is set, so this clears it */
-    mJerrum[j].mNeighbours ^= Utils.BIT(i);  /* bit i is set, so this clears it */
+    mFreePerm |= Utils.bit(g);
+    mJerrum[i].mNeighbours ^= Utils.bit(j);  /* bit j is set, so this clears it */
+    mJerrum[j].mNeighbours ^= Utils.bit(i);  /* bit i is set, so this clears it */
   }
 
   /*
@@ -98,7 +98,7 @@ class PermGrpC {
 
     todo[0] = i;
     int ntodo = 1;
-    int unseen = (int) ~Utils.BIT(i);
+    int unseen = (int) ~Utils.bit(i);
     for (int pos = 0; pos < ntodo; pos++) {
       int u = todo[pos];
       final int nu = mJerrum[u].mNeighbours;
@@ -132,7 +132,7 @@ class PermGrpC {
           return true;
         }
         todo[ntodo++] = v[0];
-        unseen ^= Utils.BIT(v[0]);  /* bit v is set, so this clears it */
+        unseen ^= Utils.bit(v[0]);  /* bit v is set, so this clears it */
       }
     }
     return false;
@@ -144,7 +144,7 @@ class PermGrpC {
   void addGenerator(final byte[] p) {
     int i = Permutation.minSupport(mG.mN, p);
     int j = p[i];
-    if ((mJerrum[i].mNeighbours & Utils.BIT(j)) != 0) {
+    if ((mJerrum[i].mNeighbours & Utils.bit(j)) != 0) {
       int k;
       byte[] h = Permutation.create();
       /* j is already a neighbour of i; unless we have a duplicate generator... */
@@ -209,8 +209,8 @@ class PermGrpC {
     while (Utils.getLSB32(mFreePerm, i) && Utils.getMSB32(Utils.ALL_BITS ^ mFreePerm, j) && i[0] < j[0]) {
       Permutation.copy(mG.mN, mG.mPerm[j[0]], mG.mPerm[i[0]]);
       Permutation.copy(mG.mN, mG.mInvPerm[j[0]], mG.mInvPerm[i[0]]);
-      mFreePerm ^= Utils.BIT(i[0]);  /* bit i is set, so this clears it */
-      mFreePerm |= Utils.BIT(j[0]);
+      mFreePerm ^= Utils.bit(i[0]);  /* bit i is set, so this clears it */
+      mFreePerm |= Utils.bit(j[0]);
     }
     final int[] ugly = new int[] {mG.mNgens};
     Utils.getLSB32(mFreePerm, ugly);

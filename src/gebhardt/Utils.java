@@ -16,7 +16,7 @@ public class Utils {
   static final int ORBITS_INITIAL_SISPACE = 32;
   static final int ALL_BITS = (1 << (Utils.MAXN - 2)) - 1;
 
-  static long BIT(final long i) {
+  static long bit(final long i) {
     return 1L << i;
   }
 
@@ -28,7 +28,7 @@ public class Utils {
       return false;
     }
     i[0] = Integer.numberOfTrailingZeros(f[0]);
-    f[0] ^= BIT(i[0]);
+    f[0] ^= bit(i[0]);
     return true;
   }
 
@@ -41,7 +41,7 @@ public class Utils {
       return false;
     }
     i[0] = 31 - Integer.numberOfLeadingZeros(f[0]); //__builtin_clz(*f);
-    f[0] ^= BIT(i[0]);
+    f[0] ^= bit(i[0]);
     return true;
   }
 

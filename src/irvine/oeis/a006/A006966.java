@@ -4,7 +4,7 @@ import gebhardt.Benes;
 import gebhardt.Utils;
 import gebhardt.Globals;
 import gebhardt.LattEnum;
-import gebhardt.lattice;
+import gebhardt.Lattice;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
@@ -76,7 +76,7 @@ public class A006966 implements Sequence {
     Benes.initSmall();
   }
   final Globals mGlobals = new Globals();
-  final lattice mLattice = lattice.lattice_init_2();
+  final Lattice mLattice = Lattice.lattice_init_2();
 
   @Override
   public Z next() {

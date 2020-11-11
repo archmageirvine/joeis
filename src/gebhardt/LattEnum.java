@@ -36,10 +36,10 @@ public abstract class LattEnum {
 
   private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
-  abstract void reg(final lattice l);  /* function called for registering lattices */
+  abstract void reg(final Lattice l);  /* function called for registering lattices */
 
   Globals mGlobals;                /* "global" data for process/thread         */
-  lattice mL;                 /* lattice whose descendants we enumerate   */
+  Lattice mL;                 /* lattice whose descendants we enumerate   */
   long mCount;             /* number of lattices found                 */
   int mN;                 /* target size                              */
   int mNmin;              /* minimum size for recursion               */
@@ -48,7 +48,7 @@ public abstract class LattEnum {
     /*
      * Register the lattice l.
      */
-    void reg(final lattice l) {
+    void reg(final Lattice l) {
       if (l.mN == mN) {
         ++mCount;
       }
@@ -60,7 +60,7 @@ public abstract class LattEnum {
     /*
      * Register the lattice L.
      */
-    void reg(final lattice l) {
+    void reg(final Lattice l) {
       if (l.mN == mN) {
         ++mCount;
         System.out.println(l.toString());
@@ -94,7 +94,7 @@ public abstract class LattEnum {
    * Return a structure for counting the descendants of *L of size equal to N, for which all intermediate lattices
    * have size at most Nmin.
    */
-  public static LattEnum lattEnum_Count_create(lattice L, int N, int Nmin, Globals GD) {
+  public static LattEnum lattEnum_Count_create(Lattice L, int N, int Nmin, Globals GD) {
     LattEnumCount E;
 
     if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
@@ -118,7 +118,7 @@ public abstract class LattEnum {
    * Return a structure for writing string representations of the descendants of *L of size N to stdout, for
    * which all intermediate lattices have size at most Nmin..
    */
-  LattEnum lattEnum_stdout_create(lattice L, int N, int Nmin, Globals GD) {
+  LattEnum lattEnum_stdout_create(Lattice L, int N, int Nmin, Globals GD) {
     LattEnumStdout E;
 
     if (L != null && (N - 2 < L.mN || Nmin - 2 < L.mN)) {
@@ -172,11 +172,11 @@ public abstract class LattEnum {
    * where the first added level contains at least nmin elements.  For every canonical lattice found during
    * this process (also for those with fewer than n elements), the function *reg is called.
    */
-  private void growLattice(final int n, final lattice l, final int nmin) {
-    lattice la = new lattice();
+  private void growLattice(final int n, final Lattice l, final int nmin) {
+    Lattice la = new Lattice();
     if (VERBOSE) {
       System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
-      lattice.lattice_print(l);
+      Lattice.lattice_print(l);
     }
     Antichain antichain = new Antichain(l, nmin, mGlobals);
 
@@ -190,17 +190,16 @@ public abstract class LattEnum {
         antichain.generateLattice1(l, la);
         if (VERBOSE) {
           System.out.println("\n### lattice:");
-          lattice.lattice_print(l);
+          Lattice.lattice_print(l);
           System.out.print("+++ antichain data: ");
           antichain.printAntichains();
           System.out.println(">>> lattice:");
-          lattice.lattice_print(la);
+          Lattice.lattice_print(la);
         }
         this.reg(la);
         if (la.mN < n) {
           growLattice(n, la, 1);
         }
-        lattice.lattice_clearStabiliser(la);
         if (!antichain.step1()) {
           break;
         }
@@ -220,17 +219,16 @@ public abstract class LattEnum {
         antichain.generateLattice(l, la);
         if (VERBOSE) {
           System.out.print("\n### lattice:\n");
-          lattice.lattice_print(l);
+          Lattice.lattice_print(l);
           System.out.print("+++ antichain data: ");
           antichain.printAntichains();
           System.out.println(">>> lattice:");
-          lattice.lattice_print(la);
+          Lattice.lattice_print(la);
         }
         reg(la);
         if (la.mN < n) {
           growLattice(n, la, 1);
         }
-        lattice.lattice_clearStabiliser(la);
         if (!antichain.step()) {
           break;
         }
@@ -239,7 +237,7 @@ public abstract class LattEnum {
 
     if (VERBOSE) {
       System.out.println("\n[<<< leaving lattEnum_growLattice]:");
-      lattice.lattice_print(l);
+      Lattice.lattice_print(l);
     }
   }
 
@@ -251,15 +249,14 @@ public abstract class LattEnum {
    *
    * The function assumes that *l is the lattice with 2 elements.
    */
-  void growLattice2(int n, lattice l, int nmin) {
-    lattice la = new lattice();
+  void growLattice2(int n, Lattice l, int nmin) {
+    Lattice la = new Lattice();
     for (int k = nmin; k <= n - l.mN; ++k) {
-      lattice.lattice_init_kFan(la, k);
+      Lattice.lattice_init_kFan(la, k);
       reg(la);
       if (la.mN < n) {
         growLattice(n, la, 1);
       }
-      lattice.lattice_clearStabiliser(la);
     }
   }
 }

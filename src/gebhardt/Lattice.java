@@ -5,7 +5,9 @@ package gebhardt;
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
-public class lattice {
+public class Lattice {
+
+  // Original header:
 
   /*
    * lattice.c
@@ -32,9 +34,6 @@ public class lattice {
    *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
    */
 
-
-//#include "permutation.h"
-
   /* We describe a lattice with the elements T,0,..,n-1,L (where T and B are the upper and lower bounds) by the following data:
    *   elt       n              -- number of non-extremal elements (the upper and lower bounds T and B are not stored)
    *   elt       nLev           -- number of levels, excluding T but including B
@@ -51,22 +50,15 @@ public class lattice {
    */
 
 
-  //typedef struct lattice lattice;
-  //struct lattice {
-  int[] up = new int[  Utils.MAXN-2];
-  int[] lo = new int[  Utils.MAXN-2];
-  PermGrp S;
-  int SI;
-  byte[] lev = new byte[  Utils.MAXN-1];
+  final int[] mUp = new int[Utils.MAXN-2];
+  final int[] mLo = new int[Utils.MAXN-2];
+  PermGrp mS;
+  int mSi;
+  final byte[] mLev = new byte[Utils.MAXN-1];
   byte mN;
-  int nLev;
-// #if 0
-//   char      dummy[15];  /* to pad to 3 cache lines */
-// #endif
-// };
+  int mNLev;
 
-  public lattice() {
-
+  public Lattice() {
   }
 
 //  // Copy constructor
@@ -80,43 +72,13 @@ public class lattice {
 //    nLev = l.nLev;
 //  }
 
-  private static long BIT(final long i) {
-    return Utils.BIT(i); // todo inline
-  }
-
   /*
-   * Set the stabiliser data of the lattice L to S / SI; the reference count of S is incremented.
+   * Set the stabiliser data of the lattice L to s / si; the reference count of s is incremented.
    */
-  static void lattice_setStabiliser(lattice L, PermGrp S, int SI) {
-    L.S = S;
-    L.SI = SI;
+  void setStabiliser(final PermGrp s, final int si) {
+    mS = s;
+    mSi = si;
   }
-
-
-  /*
-   * Decrement the reference count for the stabiliser of *L.
-   */
-  static void lattice_clearStabiliser(lattice L) {
-    //PermGrp.permgrp_delete(L.S);
-  }
-
-
-  /*
-   * Return a dynamically allocated lattice data structure.
-   */
-  static lattice lattice_alloc() {
-    return new lattice();
-  }
-
-
-  /*
-   * Free the memory used by a dynamically allocated lattice data structure.
-   */
-  static void lattice_free(lattice L) {
-    lattice_clearStabiliser(L);
-    //  free(L);
-  }
-
 
 //  /*
 //   * Copy L to M.
@@ -141,16 +103,14 @@ public class lattice {
    * Set co[i] to a flag indicating the covers of element i of the lattice L.
    * The array co must be allocated.
    */
-  static void lattice_getCoveringRelation(int[] co, lattice L) {
-    int Ui;
-
+  void getCoveringRelation(int[] co) {
     final int[] j = new int[1];
-    for (int i = L.mN; i-- != 0; ) {
+    for (int i = mN; i-- != 0; ) {
       co[i] = 0;
-      Ui = L.up[i] ^ (int) BIT(i);
-      while (Utils.getMSB32(Ui, j)){
-        co[i] |= BIT(j[0]);
-        Ui &= ~(L.up[j[0]]);
+      int ui = mUp[i] ^ (int) Utils.bit(i);
+      while (Utils.getMSB32(ui, j)){
+        co[i] |= Utils.bit(j[0]);
+        ui &= ~mUp[j[0]];
       }
     }
   }
@@ -169,7 +129,7 @@ public class lattice {
     for (l = n; l-- != 0; ) {
       for (i = n; i-- != 0; ) {
         for (j = n; j-- != 0; ) {
-          if ((co[i] & BIT(j)) != 0) {
+          if ((co[i] & Utils.bit(j)) != 0) {
             if (dep[i] < dep[j] + 1) {
               dep[i] = dep[j] + 1;
             }
@@ -341,16 +301,16 @@ public class lattice {
     int i, j;
     int[] co = new int[ Utils.MAXN - 2];
 
-    lattice_getCoveringRelation(co, this);
+    getCoveringRelation(co);
     for (i = 0; i < mN; i++) {
       sb.append((co[i] == 0) ? '1' : '.');              /* i \prec T ? */
       for (j = 0; j < i; j++) {
-        sb.append((co[i] & BIT(j)) != 0 ? '1' : '.');  /* i \prec j ? */
+        sb.append((co[i] & Utils.bit(j)) != 0 ? '1' : '.');  /* i \prec j ? */
       }
     }
-    sb.append((nLev == 1) ? '1' : '.');            /* B \prec T ? */
+    sb.append((mNLev == 1) ? '1' : '.');            /* B \prec T ? */
     for (j = 0; j < mN; j++) {
-      sb.append((lo[j] == BIT(j)) ? '1' : '.');  /* B \prec j ? */
+      sb.append((mLo[j] == Utils.bit(j)) ? '1' : '.');  /* B \prec j ? */
     }
     return sb.toString();
   }
@@ -362,7 +322,7 @@ public class lattice {
    * write the data to L.  L must point to an allocated block of memory.  Return whether successful.
    * The reference count of *S is incremented.
    */
-  static boolean lattice_fromString(lattice L, int n, String s, PermGrp S, int SI) {
+  static boolean lattice_fromString(Lattice L, int n, String s, PermGrp S, int SI) {
     int d, i, j;
     int pos;
     int[] co = new int[ Utils.MAXN - 2];
@@ -385,21 +345,21 @@ public class lattice {
       pos++;                    /* i \prec T ? (ignored) */
       for (j = 0; j < i; j++) {
         if (s.charAt(pos++) == '1') {
-          co[i] |= BIT(j);  /* i \prec j ? */
+          co[i] |= Utils.bit(j);  /* i \prec j ? */
         }
       }
     }                             /* B \prec j ? (ignored) */
     /* ...then use it to generate the remaining data, except for the stabiliser... */
     for (i = 0; i < n; i++) {
-      L.up[i] = L.lo[i] = (int) BIT(i);
+      L.mUp[i] = L.mLo[i] = (int) Utils.bit(i);
       dep[i] = 0;
     }
     for (d = 0; d < n; d++) {
       for (i = 1; i < n; i++) {
         for (j = 0; j < i; j++) {
-          if ((co[i] & BIT(j)) != 0) {
-            L.up[i] |= L.up[j];
-            L.lo[j] |= L.lo[i];
+          if ((co[i] & Utils.bit(j)) != 0) {
+            L.mUp[i] |= L.mUp[j];
+            L.mLo[j] |= L.mLo[i];
             if (dep[i] < dep[j] + 1) {
               dep[i] = dep[j] + 1;
             }
@@ -407,16 +367,16 @@ public class lattice {
         }
       }
     }
-    L.lev[0] = 0;
+    L.mLev[0] = 0;
     for (i = 0, d = 0; i < n; d++) {
       while (i < n && dep[i] == d) {
         i++;
       }
-      L.lev[d + 1] = (byte) i;
+      L.mLev[d + 1] = (byte) i;
     }
-    L.nLev = d + 1;  /* count the level containing B */
+    L.mNLev = d + 1;  /* count the level containing B */
     /* ...finally set the stabiliser */
-    lattice_setStabiliser(L, S, SI);
+    L.setStabiliser(S, SI);
 // #ifdef DOTEST
 //   return lattice_test(L);
 // #else
@@ -531,23 +491,23 @@ public class lattice {
   /*
    * Print the levellised lattice L to stdout.
    */
-  static void lattice_print(lattice L) {
+  static void lattice_print(Lattice L) {
     int d, i=0, j;
     int[] co = new int[Utils.MAXN - 2];
     boolean first;
 
-    lattice_getCoveringRelation(co, L);
+    L.getCoveringRelation(co);
 
     System.out.println("depth -1: T");
-    for (d = 0; d < L.nLev - 1; d++) {
+    for (d = 0; d < L.mNLev - 1; d++) {
       System.out.printf("depth %2d: ", d);
-      for (i = L.lev[d]; i < L.lev[d + 1]; i++) {
+      for (i = L.mLev[d]; i < L.mLev[d + 1]; i++) {
         System.out.printf("%d[", i);
         if (co[i] == 0) {
           System.out.print("T");
         } else {
           for (j = 0, first = true; j < i; j++) {
-            if ((co[i] & BIT(j)) != 0) {
+            if ((co[i] & Utils.bit(j)) != 0) {
               if (first) {
                 System.out.printf("%d", j);
                 first = false;
@@ -561,12 +521,12 @@ public class lattice {
       }
       System.out.println();
     }
-    System.out.printf("depth %2d: B[", L.nLev - 1);
-    if (L.nLev == 1) {
+    System.out.printf("depth %2d: B[", L.mNLev - 1);
+    if (L.mNLev == 1) {
       System.out.print("T");
     } else {
       for (j = 0, first = true; j < L.mN; j++) {
-        if (L.lo[j] == BIT(j)) {
+        if (L.mLo[j] == Utils.bit(j)) {
           if (first) {
             System.out.printf("%d", j);
             first = false;
@@ -577,9 +537,9 @@ public class lattice {
       }
     }
     System.out.println("]");
-    System.out.printf("stabiliser [%d]:\n", L.S.mN);
-    PermGrp.printGenerators(L.S, 0);
-    final int[] SI = {L.SI};
+    System.out.printf("stabiliser [%d]:\n", L.mS.mN);
+    PermGrp.printGenerators(L.mS, 0);
+    final int[] SI = {L.mSi};
     final int[] ii = {i};
     while (Utils.extractLSB32(SI, ii)) {
       System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
@@ -590,8 +550,8 @@ public class lattice {
   /**
    * Initialise L to the lattice with 2 elements.
    */
-  public static lattice lattice_init_2() {
-    final lattice L = new lattice();
+  public static Lattice lattice_init_2() {
+    final Lattice L = new Lattice();
     PermGrp S;
 
     S = new PermGrp();
@@ -604,18 +564,18 @@ public class lattice {
   /*
    * Initialise L to the k-fan (the lattice with k elements covered by T and covering B).
    */
-  static void lattice_init_kFan(lattice L, int k) {
+  static void lattice_init_kFan(Lattice L, int k) {
     for (int i = 0; i < k; i++) {
-      L.up[i] = L.lo[i] = (int) BIT(i);
+      L.mUp[i] = L.mLo[i] = (int) Utils.bit(i);
     }
     final PermGrp S = new PermGrp();
     final int SI = (1 << k) - 2;  /* bits 1,..,(k-1) set */
-    lattice_setStabiliser(L, S, SI);
+    L.setStabiliser(S, SI);
     //PermGrp.permgrp_delete(S);
-    L.lev[0] = 0;
-    L.lev[1] = (byte) k;
+    L.mLev[0] = 0;
+    L.mLev[1] = (byte) k;
     L.mN = (byte) k;
-    L.nLev = 2;
+    L.mNLev = 2;
   }
 
 

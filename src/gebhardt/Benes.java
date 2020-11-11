@@ -104,17 +104,17 @@ public class Benes {
       for (int i = 0; i < t.mDepth; i++) {
         mShift[i] = (byte) (m * t.mShift[i]);
         mMask[i] = mMask1[i] = 0;
-        mask = Utils.BIT(m) - 1;
+        mask = Utils.bit(m) - 1;
         int j;
         for (j = n - 1; j >= n - apf; j--) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+          if ((t.mMask[i] & Utils.bit(j)) != 0) {
             mMask1[i] |= mask;
           }
           mask <<= m;
         }
-        mask = Utils.BIT(m) - 1;
+        mask = Utils.bit(m) - 1;
         for (; j >= 0; j--) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+          if ((t.mMask[i] & Utils.bit(j)) != 0) {
             mMask[i] |= mask;
           }
           mask <<= m;
@@ -125,9 +125,9 @@ public class Benes {
       for (int i = 0; i < t.mDepth; i++) {
         mShift[i] = (byte) (m * t.mShift[i]);
         mMask[i] = 0;
-        mask = Utils.BIT(m) - 1;
+        mask = Utils.bit(m) - 1;
         for (int j = n; j-- != 0; ) {  /* this order: the lower member of a pair becomes the higher block */
-          if ((t.mMask[i] & Utils.BIT(j)) != 0) {
+          if ((t.mMask[i] & Utils.bit(j)) != 0) {
             mMask[i] |= mask;
           }
           mask <<= m;
@@ -285,16 +285,16 @@ public class Benes {
     for (stage = 0, mask = 1; stage < ld_n; stage++, mask <<= 1) {
       nmask = ~mask;
       src_set = cfg_src = cfg_tgt = 0;
-      for (main_idx = (int) Utils.BIT(ld_n); main_idx-- != 0; ) { /* this ensures that no crossings contain padded bits */
+      for (main_idx = (int) Utils.bit(ld_n); main_idx-- != 0; ) { /* this ensures that no crossings contain padded bits */
         if ((main_idx & mask) != 0) { /* loop over pairs... */
           /* ... upper representative */
           src_idx = main_idx;
-          while ((Utils.BIT(src_idx) & src_set) == 0) {
-            src_set |= Utils.BIT(src_idx); /* ...mark that source index as seen... */
+          while ((Utils.bit(src_idx) & src_set) == 0) {
+            src_set |= Utils.bit(src_idx); /* ...mark that source index as seen... */
             tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_tgt |= Utils.BIT(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              cfg_tgt |= Utils.bit(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
               int idx2 = (byte)(tgt_idx ^ mask); /* the other part of the pair; to be swapped */
               byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
@@ -308,9 +308,9 @@ public class Benes {
             src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_src |= Utils.BIT(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              cfg_src |= Utils.bit(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
               int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= Utils.BIT(idx2);            /* mark that source index as seen... */
+              src_set |= Utils.bit(idx2);            /* mark that source index as seen... */
               byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
@@ -318,18 +318,18 @@ public class Benes {
               inv_src[src[src_idx]] = (byte)src_idx; /* ...on the source side is src_idx! */
             } else {
               /* straight */
-              src_set |= Utils.BIT(src_idx); /* mark that source index as seen */
+              src_set |= Utils.bit(src_idx); /* mark that source index as seen */
               src_idx ^= mask; /* the other part of the pair on the source side */
             }
           }
           /* ... lower representative */
           src_idx = main_idx ^ mask;
-          while ((Utils.BIT(src_idx) & src_set) == 0) {
-            src_set |= Utils.BIT(src_idx); /* ...mark that source index as seen... */
+          while ((Utils.bit(src_idx) & src_set) == 0) {
+            src_set |= Utils.bit(src_idx); /* ...mark that source index as seen... */
             tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_tgt |= Utils.BIT(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              cfg_tgt |= Utils.bit(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
               int idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
               byte t = tgt[tgt_idx];                /* update the target side... */
               tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
@@ -343,9 +343,9 @@ public class Benes {
             src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
             if (((src_idx ^ tgt_idx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_src |= Utils.BIT(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              cfg_src |= Utils.bit(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
               int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= Utils.BIT(idx2);            /* mark that source index as seen... */
+              src_set |= Utils.bit(idx2);            /* mark that source index as seen... */
               byte t = src[src_idx];                /* ...and update the source side */
               src[src_idx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
@@ -353,7 +353,7 @@ public class Benes {
               inv_src[src[src_idx]] = (byte) src_idx; /* ...on the source side is src_idx! */
             } else {
               /* straight */
-              src_set |= Utils.BIT(src_idx); /* mark that source index as seen */
+              src_set |= Utils.bit(src_idx); /* mark that source index as seen */
               src_idx ^= mask; /* the other part of the pair on the source side */
             }
           }
@@ -362,7 +362,7 @@ public class Benes {
       /* record the configurations for the current stage */
       if (cfg_src != 0) {
         long smask;
-        mShift[Fpos] = (byte) Utils.BIT(stage);
+        mShift[Fpos] = (byte) Utils.bit(stage);
         smask = 0;
         int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {
@@ -376,7 +376,7 @@ public class Benes {
       if (cfg_tgt != 0) {
         long smask;
         Bpos--;
-        mShift[Bpos] = (byte) Utils.BIT(stage);
+        mShift[Bpos] = (byte) Utils.bit(stage);
         smask = 0;
         int t = n;
         for (i = BITSPERLONG / n; i-- != 0; ) {

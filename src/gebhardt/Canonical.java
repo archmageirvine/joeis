@@ -1442,13 +1442,6 @@ final class Canonical {
 //// #ifdef VERBOSE
 //// 							printf("                                       NOT canonical\n");
 //// #endif
-//// #ifdef PRINTLARGEORBITS
-//// 							if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
-//// 								printf("antichaindata_isCanonical_p2: %lu [false]\n", AD.GD.orbsize);
-//// 								lattice_print(AD.L);
-//// 								antichaindata_printCounters(AD);
-//// 							}
-//// #endif
 //								return false;
 //							}
 //							/* ...otherwise, do the necessary housekeeping */
@@ -1527,13 +1520,6 @@ final class Canonical {
 //								AD.cp = m;
 //// #ifdef VERBOSE
 //// 							printf("                                       NOT canonical\n");
-//// #endif
-//// #ifdef PRINTLARGEORBITS
-//// 							if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
-//// 								printf("antichaindata_isCanonical_p2: %lu [false]\n", AD.GD.orbsize);
-//// 								lattice_print(AD.L);
-//// 								antichaindata_printCounters(AD);
-//// 							}
 //// #endif
 //								return false;
 //							}
@@ -1639,13 +1625,6 @@ final class Canonical {
 //// 	printf("***** level %d:\n", AD.cl);
 //// 	permgrp_printGenerators(AD.SD[AD.cl].ST, 0);
 //// 	printf("                                       canonical\n");
-//// #endif
-//// #ifdef PRINTLARGEORBITS
-//// 	if (AD.GD.orbsize > LARGEORBITTHRESHOLD) {
-//// 		printf("antichaindata_isCanonical_p2: %lu [false]\n", AD.GD.orbsize);
-//// 		lattice_print(AD.L);
-//// 		antichaindata_printCounters(AD);
-//// 	}
 //// #endif
 //		return true;
 //	}

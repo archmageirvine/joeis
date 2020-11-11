@@ -1,7 +1,7 @@
 package gebhardt;
 
 /**
- * Permutations.
+ * Lattices.
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */
@@ -335,23 +335,22 @@ public class lattice {
 	 * is as follows:  T,0,1,..,n-1,B.
 	 * The string buf must be allocated and have at least size (L.n+2)*(L.n+1)/2+1.
 	 */
-	static String lattice_toString(lattice L) {
+	@Override
+  public String toString() {
 		final StringBuilder sb = new StringBuilder();
 		int i, j;
-		int pos;
 		int[] co = new int[ Utils.MAXN - 2];
 
-		lattice_getCoveringRelation(co, L);
-		pos = 0;
-		for (i = 0; i < L.mN; i++) {
+		lattice_getCoveringRelation(co, this);
+		for (i = 0; i < mN; i++) {
 			sb.append((co[i] == 0) ? '1' : '.');              /* i \prec T ? */
 			for (j = 0; j < i; j++) {
 				sb.append((co[i] & BIT(j)) != 0 ? '1' : '.');  /* i \prec j ? */
 			}
 		}
-		sb.append((L.nLev == 1) ? '1' : '.');            /* B \prec T ? */
-		for (j = 0; j < L.mN; j++) {
-			sb.append((L.lo[j] == BIT(j)) ? '1' : '.');  /* B \prec j ? */
+		sb.append((nLev == 1) ? '1' : '.');            /* B \prec T ? */
+		for (j = 0; j < mN; j++) {
+			sb.append((lo[j] == BIT(j)) ? '1' : '.');  /* B \prec j ? */
 		}
 		return sb.toString();
 	}

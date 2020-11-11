@@ -352,9 +352,9 @@ class Antichain {
     int f = done;
 
     /* up-close optional elements added on current level */
-    for (int i = mLattice.lev[mCl]; i < mLattice.lev[mCl + 1]; ++i) {
-      if ((mO[mCp] & Utils.BIT(i)) != 0) {
-        f |= mLattice.up[i];
+    for (int k = mLattice.lev[mCl]; k < mLattice.lev[mCl + 1]; ++k) {
+      if ((mO[mCp] & Utils.BIT(k)) != 0) {
+        f |= mLattice.up[k];
       }
     }
 
@@ -364,43 +364,38 @@ class Antichain {
       antichaindata_printCounters(this);
     }
     final int[] i = new int[1];
+    final int[] j = new int[1];
     final int[] todo = new int[] {f & ~done};
     while (Utils.extractMSB32(todo, i)) {
       final long biti = Utils.BIT(i[0]);
       /* first test compatibility with other lattice antichains... */
       int C = mCop[i[0]] & f;
-      int[] j = new int[1];
-      for (j[0] = Math.max(f1Pos, 0); j[0] < mFpos; j[0]++) {
-        if ((biti & mF[j[0]]) != 0 && (C & mF[j[0]]) != 0) {
+      for (int k = Math.max(f1Pos, 0); k < mFpos; ++k) {
+        if ((biti & mF[k]) != 0 && (C & mF[k]) != 0) {
           return false;
         }
       }
       /* ...now meet-close & test lattice antichain condition */
-      int[] tocheck = new int[] {done & ~(mLattice.up[i[0]] | mLattice.lo[i[0]])};
+      final int[] tocheck = new int[] {done & ~(mLattice.up[i[0]] | mLattice.lo[i[0]])};
       boolean allnonzero = true;
-      int loi = mLattice.lo[i[0]];
+      final int loi = mLattice.lo[i[0]];
       done |= biti;
       final int[] m = new int[1];
       while (Utils.extractMSB32(tocheck, j)) {
         if (Utils.getLSB32(loi & (mLattice.lo[j[0]]), m)) {
           if ((Utils.BIT(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
-            //#ifndef FILTER_GRADED
             if (m[0] >= mLattice.lev[mCl]) {  /* equivalent to L.dep[m] >= cl */
               return false;
             } else {
               todo[0] |= (mLattice.up[m[0]] & ~done);
               f |= mLattice.up[m[0]];
             }
-// #else
-// 					return false;  /* either contradicts choice, or adds a cover on a higher level */
-// #endif
           }
           tocheck[0] &= ~mLattice.up[j[0]];
         } else {
           allnonzero = false;
         }
       }
-      //if (unlikely(allnonzero)) {
       if (allnonzero) {
         done |= (todo[0] & mLattice.up[i[0]]);  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
         todo[0] &= ~mLattice.up[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
@@ -413,7 +408,6 @@ class Antichain {
     return true;
   }
 
-
   /*
    * Test whether the lattice-antichain condition holds for the currently considered antichain (AD.cp)
    * up to the current level (AD.cl); if successful, and if AD.cl > 0, initialise optional elements
@@ -421,222 +415,64 @@ class Antichain {
    *
    * Return value: 1 if lattice-antichain condition holds; 0 if contradiction to choice on lower levels
    */
-  static boolean antichaindata_validateCurrentPosition_1(Antichain AD) {
-    int done, F;
-    final int[] j = new int[1];
+  boolean validateCurrentPosition1() {
 
-    assert AD.mFpos == (AD.mLattice.nLev - 2 - AD.mCl) * AD.mK + AD.mCp : "antichaindata: inconsistent value of Fpos";
+    assert mFpos == (mLattice.nLev - 2 - mCl) * mK + mCp : "antichaindata: inconsistent value of Fpos";
 
     /* start with inherited constraints from lower levels */
-    F = done = (AD.mFpos != 0 ? AD.mF[AD.mFpos - 1] : 0);
+    int done = (mFpos != 0 ? mF[mFpos - 1] : 0);
+    int f = done;
 
     /* up-close optional elements added on current level */
-    final int[] i = new int[1];
-    for (i[0] = AD.mLattice.lev[AD.mCl]; i[0] < AD.mLattice.lev[AD.mCl + 1]; i[0]++) {
-      if ((AD.mO[0] & Utils.BIT(i[0])) != 0) {
-        F |= AD.mLattice.up[i[0]];
+    for (int k = mLattice.lev[mCl]; k < mLattice.lev[mCl + 1]; ++k) {
+      if ((mO[0] & Utils.BIT(k)) != 0) {
+        f |= mLattice.up[k];
       }
     }
 
     /* meet-close new elements with everything; record constraints */
     if (VERBOSE) {
       System.out.print("...... in antichaindata_validateCurrentPosition_1: meet close  ");
-      antichaindata_printCounters(AD);
+      antichaindata_printCounters(this);
     }
-    final int[] todo = new int[] {F & ~done};
+    final int[] i = new int[1];
+    final int[] j = new int[1];
+    final int[] todo = new int[] {f & ~done};
     final int[] m = new int[1];
     while (Utils.extractMSB32(todo, i)) {
       /* meet-close & test lattice antichain condition */
-      final int[] tocheck = new int[] {done & ~(AD.mLattice.up[i[0]] | AD.mLattice.lo[i[0]])};
+      final int[] tocheck = new int[] {done & ~(mLattice.up[i[0]] | mLattice.lo[i[0]])};
       done |= Utils.BIT(i[0]);
       boolean allnonzero = true;
-      int loi = AD.mLattice.lo[i[0]];
+      final int loi = mLattice.lo[i[0]];
       while (Utils.extractMSB32(tocheck, j)) {
-        if (Utils.getLSB32(loi & (AD.mLattice.lo[j[0]]), m)) {
+        if (Utils.getLSB32(loi & (mLattice.lo[j[0]]), m)) {
           if ((Utils.BIT(m[0]) & (done | todo[0])) == 0) {  /* m cannot equal i by choice of j, so removing i early is fine */
-            //#ifndef FILTER_GRADED
-            if (m[0] >= AD.mLattice.lev[AD.mCl]) {  /* equivalent to AD.L.dep[m] >= AD.cl */
+            if (m[0] >= mLattice.lev[mCl]) {  /* equivalent to L.dep[m] >= cl */
               return false;
             } else {
-              todo[0] |= (AD.mLattice.up[m[0]] & ~done);
-              F |= AD.mLattice.up[m[0]];
+              todo[0] |= (mLattice.up[m[0]] & ~done);
+              f |= mLattice.up[m[0]];
             }
-// #else
-// 					return false;  /* either contradicts choice, or adds a cover on a higher level */
-// #endif
           }
-          tocheck[0] &= ~AD.mLattice.up[j[0]];  /* gcd of i with any element in up[j] is in up[m] */
+          tocheck[0] &= ~mLattice.up[j[0]];  /* gcd of i with any element in up[j] is in up[m] */
         } else {
           allnonzero = false;
         }
       }
-      //if (unlikely(allnonzero)) {
       if (allnonzero) {
-        done |= (todo[0] & AD.mLattice.up[i[0]]);  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
-        todo[0] &= ~AD.mLattice.up[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
+        done |= (todo[0] & mLattice.up[i[0]]);  /* For any j we have i\meet j \ne 0 for any j, so the gcd */
+        todo[0] &= ~mLattice.up[i[0]];          /* of j with any element in up[i] is in up[i\meet j].     */
       }
     }
     if (VERBOSE) {
       System.out.println("...... in antichaindata_validateCurrentPosition_1: OK");
     }
 
-    AD.mF[AD.mFpos] = F;
+    mF[mFpos] = f;
     return true;
   }
 
-
-  /*
-   * If possible, step antichaindata counters starting from the current on the current level.
-   * The lattice-antichain conditions are NOT verified.
-   *
-   * Return value: true if success; false if there are no further useful configurations.
-   */
-  boolean antichaindata_step_FUNC(Antichain AD) {
-    return AD.step();
-  }
-
-
-  /*
-   * If possible, step antichaindata counters starting from the current on the current level.
-   * The lattice-antichain conditions are NOT verified.
-   *
-   * Return value: true if success; false if there are no further useful configurations.
-   */
-  boolean antichaindata_step_1_FUNC(Antichain AD) {
-    return AD.step1();
-  }
-
-
-// #ifdef FILTER_GRADED
-// /*
-//  * Advance *AD to the next canonical configuration of lattice-antichains.
-//  *
-//  * Return value: true if successful; false if no further canonical configuration exists.
-//  */
-// boolean antichaindata_next(antichaindata AD)
-// {
-// #ifdef THREADED
-// 	while (action) {
-// #else
-// 	while (true) {
-// #endif
-// #ifdef VERBOSE
-// 		printf("... in antichaindata_next: "); antichaindata_printCounters(AD);
-// #endif
-// 		while (!antichaindata_validateCurrentPosition(AD)) {
-// #ifdef VERBOSE
-// 			printf("                           invalid\n");
-// #endif
-// 			if (!antichaindata_step(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                   and done!\n");
-// #endif
-// 				return false;
-// 			}
-// 		}
-// 		if (AD.cp != AD.k-1) {
-// 			AD.cp++;
-// 			AD.Fpos++;
-// 			antichaindata_initialiseCurrentPosition(AD);
-// 		} else {
-// 			int  m;
-// 			int      i;
-
-// 			for (m=0, i=0; i<AD.k; i++)
-// 				m |= AD.O[i];
-// 			if (m != BIT(AD.L.lev[AD.cl+1])-BIT(AD.L.lev[AD.cl])) {
-// #ifdef VERBOSE
-// 				printf("                           not graded\n");
-// #endif
-// 				if (!antichaindata_step(AD)) {
-// #ifdef VERBOSE
-// 					printf("                                         and done!\n");
-// #endif
-// 					return false;
-// 				}
-// 			} else {
-// 				if (!antichaindata_isCanonical(AD)) {
-// #ifdef VERBOSE
-// 					printf("                           not canonical\n");
-// #endif
-// 					/* antichaindata_isCanonical has set AD.cp and AD.Fpos to the correct backtracking position  */
-// 					if (!antichaindata_step(AD)) {
-// #ifdef VERBOSE
-// 						printf("                                         and done!\n");
-// #endif
-// 						return false;
-// 					}
-// 				} else {
-// #ifdef VERBOSE
-// 					printf("                           valid --> "); antichaindata_printCountersF(AD);
-// #endif
-// 					return true;
-// 				}
-// 			}
-// 		}
-// 	}
-// 	return false;
-// }
-
-
-  // /*
-//  * Advance *AD to the next canonical configuration of lattice-antichains.  Special case of a single antichain.
-//  *
-//  * Return value: true if successful; false if no further canonical configuration exists.
-//  */
-// boolean antichaindata_next_1(antichaindata AD)
-// {
-// #ifdef THREADED
-// 	while (action) {
-// #else
-// 	while (true) {
-// #endif
-// #ifdef VERBOSE
-// 		printf("... in antichaindata_next_1: "); antichaindata_printCounters(AD);
-// #endif
-// 		while (!antichaindata_validateCurrentPosition_1(AD)) {
-// #ifdef VERBOSE
-// 			printf("                           invalid\n");
-// #endif
-// 			if (!antichaindata_step_1(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                   and done!\n");
-// #endif
-// 				return false;
-// 			}
-// 		}
-// 		if (AD.O[0] != BIT(AD.L.lev[AD.cl+1])-BIT(AD.L.lev[AD.cl])) {
-// #ifdef VERBOSE
-// 			printf("                           not graded\n");
-// #endif
-// 			if (!antichaindata_step_1(AD)) {
-// #ifdef VERBOSE
-// 				printf("                                         and done!\n");
-// #endif
-// 				return false;
-// 			}
-// 		} else {
-// 			if (!antichaindata_isCanonical_1(AD)) {
-// #ifdef VERBOSE
-// 				printf("                           not canonical\n");
-// #endif
-// 				if (!antichaindata_step_1(AD)) {
-// #ifdef VERBOSE
-// 					printf("                                         and done!\n");
-// #endif
-// 					return false;
-// 				}
-// 			} else {
-// #ifdef VERBOSE
-// 				printf("                           valid --> "); antichaindata_printCountersF(AD);
-// #endif
-// 				return true;
-// 			}
-// 		}
-// 	}
-// 	return false;
-// }
-// #else
   /*
    * Advance AD to the next canonical configuration of lattice-antichains.
    *
@@ -702,7 +538,7 @@ class Antichain {
         System.out.print("... in antichaindata_next_1: ");
         antichaindata_printCounters(AD);
       }
-      while (!antichaindata_validateCurrentPosition_1(AD)) {
+      while (!AD.validateCurrentPosition1()) {
         if (VERBOSE) {
           System.out.println("                           invalid");
         }

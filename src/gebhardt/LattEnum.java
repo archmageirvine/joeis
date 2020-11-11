@@ -133,7 +133,7 @@ public abstract class LattEnum {
   private void growLattice(final int n, final Lattice l, final int nmin) {
     Lattice la = new Lattice();
     if (VERBOSE) {
-      System.out.printf("\n[>>> entering lattEnum_growLattice]: %d\n", nmin);
+      System.out.printf("%n[>>> entering lattEnum_growLattice]: %d%n", nmin);
       l.print();
     }
     Antichain antichain = new Antichain(l, nmin, mGlobals);
@@ -142,7 +142,7 @@ public abstract class LattEnum {
     int k;
     if (nmin == 1) {
       if (VERBOSE) {
-        System.out.printf("\n=== adding a level with %d elements\n", 1);
+        System.out.printf("%n=== adding a level with %d elements%n", 1);
       }
       while (antichain.next1()) {
         antichain.generateLattice1(l, la);
@@ -169,7 +169,7 @@ public abstract class LattEnum {
 
     for (; k <= n - l.mN; ++k) {
       if (VERBOSE) {
-        System.out.printf("\n=== adding a level with %d elements\n", k);
+        System.out.printf("%n=== adding a level with %d elements%n", k);
       }
       antichain.reset(k);
       antichain.prepareLattice(l, la);

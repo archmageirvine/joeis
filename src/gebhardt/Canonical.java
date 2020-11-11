@@ -1006,7 +1006,7 @@ final class Canonical {
     }
     preprocessGenerators(antichain);
     if (VERBOSE) {
-      System.out.printf("***** level %d:\n", antichain.mCl);
+      System.out.printf("***** level %d:%n", antichain.mCl);
       PermGrp.printGenerators(antichain.mStabilisers[antichain.mCl].mSt, 0);
       System.out.println("                                       canonical");
     }
@@ -1077,7 +1077,7 @@ final class Canonical {
             antichain.mCp = m;
             if (VERBOSE) {
               Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
-              System.out.printf("                                       NOT canonical --> %d\n", antichain.mCp);
+              System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
             }
             return false;
           }
@@ -1130,7 +1130,7 @@ final class Canonical {
                 antichain.mCp = m;
                 if (VERBOSE) {
                   Permutation.print(s.mG.mN, p, 0);
-                  System.out.printf("                                       NOT canonical --> %d\n", antichain.mCp);
+                  System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
                 }
                 return false;
               }
@@ -1193,7 +1193,7 @@ final class Canonical {
                 antichain.mCp = m;
                 if (VERBOSE) {
                   Permutation.print(s.mG.mN, p, 0);
-                  System.out.printf("                                       NOT canonical --> %d\n", antichain.mCp);
+                  System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
                 }
                 return false;
               }
@@ -1239,7 +1239,7 @@ final class Canonical {
           antichain.mCp = m;
           if (VERBOSE) {
             Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
-            System.out.printf("                                       NOT canonical --> %d\n", antichain.mCp);
+            System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
           }
           return false;
         }
@@ -1271,7 +1271,7 @@ final class Canonical {
     }
     preprocessGeneratorsBlocked(antichain);
     if (VERBOSE) {
-      System.out.printf("***** level %d:\n", antichain.mCl);
+      System.out.printf("***** level %d:%n", antichain.mCl);
       PermGrp.printGenerators(antichain.mStabilisers[antichain.mCl].mSt, 0);
       System.out.println("                                       canonical");
     }

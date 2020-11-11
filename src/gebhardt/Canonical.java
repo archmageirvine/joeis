@@ -36,17 +36,17 @@ final class Canonical {
 	private static final boolean VERBOSE = "true".equals(System.getProperty("oeis.verbose"));
 
   /*
-	 * Whether the antichain data given by AD may yield a canonical antichain list.  Wrapper which dispatches
+	 * Whether the antichain data given by antichain may yield a canonical antichain list.  Wrapper which dispatches
 	 * the work to antichaindata_isCanonical_p1 or antichaindata_isCanonical_p2.
 	 *
 	 * An antichain list is canonical if and only if, as a multiset, it is minimal in its orbit under the
 	 * stabiliser of the (full) old lattice.  As this stabiliser acts on each level, a violation of minimality
 	 * on any level precludes any completion of the antichain data on higher levels being canonical.
 	 *
-	 * The function checks whether the multiset of sets chosen on the current level (AD.O[...] & AD.cmc) is
-	 * minimal under the action of the current stabiliser (AD.ST[AD.cl+1]).  If yes, and if the antichain
-	 * data is not complete (that is, AD.cl > 0]), then the new stabiliser is stored in AD.ST[AD.cl].  If
-	 * the antichain data is complete and canonical, AD.ST[0] will instead be set to the stabiliser of the
+	 * The function checks whether the multiset of sets chosen on the current level (antichain.O[...] & antichain.cmc) is
+	 * minimal under the action of the current stabiliser (antichain.ST[antichain.cl+1]).  If yes, and if the antichain
+	 * data is not complete (that is, antichain.cl > 0]), then the new stabiliser is stored in antichain.ST[antichain.cl].  If
+	 * the antichain data is complete and canonical, antichain.ST[0] will instead be set to the stabiliser of the
 	 * new lattice obtained from the antichain data.  (The points on the lowest (new) level of the new lattice
 	 * correspond to the antichains in that sequence; if a permutation fixes the multiset but permutes its
 	 * elements, the points of the lowest level of the new lattice need to be permuted accordingly to obtain
@@ -54,113 +54,41 @@ final class Canonical {
 	 * lattice are given by all possible permutations of identical antichains, i.e., all possible permutations
 	 * of points of the lowest level of the new lattice that have identical covering sets.)
 	 */
-	static boolean antichaindata_isCanonical(Antichain AD) {
-		int bits;
-
-		bits = AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl];
-		if (AD.mK * bits <= Long.SIZE) {
-			return antichaindata_isCanonical_p1(AD, bits);
+	static boolean isCanonical(final Antichain antichain) {
+		final int bits = antichain.mLattice.lev[antichain.mCl + 1] - antichain.mLattice.lev[antichain.mCl];
+		if (antichain.mK * bits <= Long.SIZE) {
+			return isCanonicalP1(antichain, bits);
 		} else {
 			throw new UnsupportedOperationException();
-			//return antichaindata_isCanonical_p2(AD, bits);
+			//return antichaindata_isCanonical_p2(antichain, bits);
 		}
 	}
 
-
-///*
-// * Return the hash value of A.
-// */
-//static long hash_1(long A)
-//{
-//	int hash;
-//
-//	hash = 0;
-//	while (A != 0) {
-//		hash ^= A & ((1L<<ORBITS_HASHTABLE_LD_SIZE)-1);
-//		A >>= ORBITS_HASHTABLE_LD_SIZE;
+//	/*
+//	 * Compare in lexicographical order the packed antichain lists A and B.
+//	 *
+//	 * Note that the function knows nothing about the levellised ordering!  The idea is to use this
+//	 * function on a list of antichains that only live on one level, and/or iteratively, starting at
+//	 * the maximal level, with appropriate masking.
+//	 *
+//	 * Return value: <0 if A < B
+//	 *               0  if A = B
+//	 *               >0 if A > B
+//	 */
+//	static int antichainList_cmp_p2(long[] A, long[] B) {
+//		if (A[0] < B[0]) {
+//			return -1;
+//		} else if (A[0] > B[0]) {
+//			return 1;
+//		} else if (A[1] < B[1]) {
+//			return -1;
+//		} else if (A[1] > B[1]) {
+//			return 1;
+//		} else {
+//			return 0;
+//		}
 //	}
-//	return hash;
-//}
-//
-//
-///*
-// * Return the hash value of A:B.
-// */
-//static long hash_2(long A[2])
-//{
-//	return hash_1(A[0]^A[1]);
-//}
-//#define HASH_1(A) hash_1(A)
-//#define HASH_2(A) hash_2(A)
 
-
-	/*
-	 * Compare the weight of the antichains A and B.
-	 *
-	 * Return value: <0 if wt(A) < wt(B)
-	 *               0  if A = B
-	 *               >0 if wt(A) > wt(B)
-	 */
-	static int long_cmp(long A, long B) {
-		return Long.compare(A, B);
-//	if (A < B)
-//		return -1;
-//	else if (A > B)
-//		return 1;
-//	else
-//		return 0;
-	}
-
-
-	/*
-	 * Compare in lexicographical order the packed antichain lists A and B.
-	 *
-	 * Note that the function knows nothing about the levellised ordering!  The idea is to use this
-	 * function on a list of antichains that only live on one level, and/or iteratively, starting at
-	 * the maximal level, with appropriate masking.
-	 *
-	 * Return value: <0 if A < B
-	 *               0  if A = B
-	 *               >0 if A > B
-	 */
-	static int antichainList_cmp_p1(long A, long B) {
-		return Long.compare(A, B);
-//	if (A < B)
-//		return -1;
-//	else if (A > B)
-//		return 1;
-//	else
-//		return 0;
-	}
-
-
-	/*
-	 * Compare in lexicographical order the packed antichain lists A and B.
-	 *
-	 * Note that the function knows nothing about the levellised ordering!  The idea is to use this
-	 * function on a list of antichains that only live on one level, and/or iteratively, starting at
-	 * the maximal level, with appropriate masking.
-	 *
-	 * Return value: <0 if A < B
-	 *               0  if A = B
-	 *               >0 if A > B
-	 */
-	static int antichainList_cmp_p2(long[] A, long[] B) {
-		if (A[0] < B[0]) {
-			return -1;
-		} else if (A[0] > B[0]) {
-			return 1;
-		} else if (A[1] < B[1]) {
-			return -1;
-		} else if (A[1] > B[1]) {
-			return 1;
-		} else {
-			return 0;
-		}
-	}
-
-
-// #ifdef DOTEST
 // static void antichain_apply_perm(int lo, int hi, permutation p, long A, long[] R)
 // /*
 //  * TEST FUNCTION: Store the result of applying the permutation p to the antichain A, containing the elements
@@ -217,33 +145,26 @@ final class Canonical {
 // 				R[fpi] |= BIT(p[lo+j]-lo) << (bits*opi);
 // 	}
 // }
-// #endif
-
 
 	/*
-	 * Sort the packed antichain list *L containing k antichains of size m in ascending order, subject to the
-	 * permitted swaps of adjacent antichains indicated by bl.  The permutation sorting L is also applied to
+	 * Sort the packed antichain list *l containing k antichains of size m in ascending order, subject to the
+	 * permitted swaps of adjacent antichains indicated by bl.  The permutation sorting l is also applied to
 	 * p[offset]..p[offset+k-1].  The array mask should contain ((1<<m)-1)<<((k-1)*m),..,((1<<m)-1).
 	 */
-	static void antichainList_sort_p1(int k, int m, long mask[], int bl, long[] L, byte[] p, int offset) {
-		long t1, t2;
-		//int[]     pp;
-		byte tp;
-		int newn, n, i, lo;
-
+	static void sortP1(final int m, final long[] mask, final int bl, final long[] l, final byte[] p, final int offset) {
 		if (bl == 0) {
 			return;
 		}
-		lo = Integer.numberOfTrailingZeros(bl); //__builtin_ctz(bl);
-		n = 32 - Integer.numberOfLeadingZeros(bl); //__builtin_clz(bl);
-		//pp = p+offset;
+		final int lo = Integer.numberOfTrailingZeros(bl);
+		int n = 32 - Integer.numberOfLeadingZeros(bl);
 		do {
-			newn = 0;
-			for (i = lo; i < n; i++) {
-        if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[0] & mask[i - 1]) >> m)) > (t2 = (L[0] & mask[i]))) {
+      long t1, t2;
+      int newn = 0;
+			for (int i = lo; i < n; ++i) {
+        if ((bl & Utils.BIT(i)) != 0 && (t1 = ((l[0] & mask[i - 1]) >> m)) > (t2 = (l[0] & mask[i]))) {
 					t1 ^= t2;
-					L[0] ^= ((t1 << m) | t1);
-					tp = p[offset + i - 1];
+					l[0] ^= ((t1 << m) | t1);
+					final byte tp = p[offset + i - 1];
 					p[offset + i - 1] = p[offset + i];
 					p[offset + i] = tp;
 					newn = i;
@@ -253,188 +174,162 @@ final class Canonical {
 		} while (n != 0);
 	}
 
-
-	/*
-	 * Sort the packed antichain list L containing k antichains of size m in ascending order, with L[0] containing
-	 * k0 antichains and L[1] containing k-k0 antichains, subject to the permitted swaps of adjacent antichains
-	 * indicated by bl.  The permutation sorting L is also applied to p[offset]..p[offset+k-1].  The arrays M0 and M1
-	 * should contain ((1<<m)-1)<<((k0-1)*m),..,((1<<m)-1) and ((1<<m)-1)<<((k-k0-1)*m),..,((1<<m)-1) respectively.
-	 */
-	static void antichainList_sort_p2(int k, int m, int k0, long[] M0, long[] M1, int bl, long[] L, byte[] p, int offset) {
-		long t1, t2;
-		//int[]     pp;
-		byte tp;
-		int newn, n, n0, i, lo;
-
-		if (bl == 0) {
-			return;
-		}
-		lo = Integer.numberOfTrailingZeros(bl); //__builtin_ctz(bl);
-		n = 32 - Integer.numberOfLeadingZeros(bl); //__builtin_clz(bl);
-		//pp = p+offset;
-		do {
-			newn = 0;
-			if (lo < k0) {
-				n0 = k0 < n ? k0 : n;
-				for (i = lo; i < n0; i++) {
-          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[0] & M0[i - 1]) >> m)) > (t2 = (L[0] & M0[i]))) {
-						t1 ^= t2;
-						L[0] ^= ((t1 << m) | t1);
-						tp = p[offset + i - 1];
-						p[offset + i - 1] = p[offset + i];
-						p[offset + i] = tp;
-						newn = i;
-					}
-				}
-			}
-			if (lo <= k0 && k0 < n) {
-				int shift;
-				shift = (k - k0 - 1) * m;
-        if ((bl & Utils.BIT(k0)) != 0 && (t1 = ((L[0] & M0[k0 - 1]) << shift)) > (t2 = (L[1] & M1[0]))) {
-					t1 ^= t2;
-					L[0] ^= t1 >> shift;
-					L[1] ^= t1;
-					tp = p[offset + k0 - 1];
-					p[offset + k0 - 1] = p[offset + k0];
-					p[offset + k0] = tp;
-					newn = k0;
-				}
-			}
-			if (k0 + 1 < n) {
-				for (i = lo > k0 ? lo : k0 + 1; i < n; i++) {
-          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[1] & M1[i - k0 - 1]) >> m)) > (t2 = (L[1] & M1[i - k0]))) {
-						t1 ^= t2;
-						L[1] ^= ((t1 << m) | t1);
-						tp = p[offset + i - 1];
-						p[offset + i - 1] = p[offset + i];
-						p[offset + i] = tp;
-						newn = i;
-					}
-				}
-			}
-			n = newn;
-		} while (n != 0);
-	}
+//	/*
+//	 * Sort the packed antichain list L containing k antichains of size m in ascending order, with L[0] containing
+//	 * k0 antichains and L[1] containing k-k0 antichains, subject to the permitted swaps of adjacent antichains
+//	 * indicated by bl.  The permutation sorting L is also applied to p[offset]..p[offset+k-1].  The arrays M0 and M1
+//	 * should contain ((1<<m)-1)<<((k0-1)*m),..,((1<<m)-1) and ((1<<m)-1)<<((k-k0-1)*m),..,((1<<m)-1) respectively.
+//	 */
+//	static void antichainList_sort_p2(int k, int m, int k0, long[] M0, long[] M1, int bl, long[] L, byte[] p, int offset) {
+//		long t1, t2;
+//		byte tp;
+//		int newn, n, n0, i, lo;
+//
+//		if (bl == 0) {
+//			return;
+//		}
+//		lo = Integer.numberOfTrailingZeros(bl);
+//		n = 32 - Integer.numberOfLeadingZeros(bl);
+//		do {
+//			newn = 0;
+//			if (lo < k0) {
+//				n0 = k0 < n ? k0 : n;
+//				for (i = lo; i < n0; i++) {
+//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[0] & M0[i - 1]) >> m)) > (t2 = (L[0] & M0[i]))) {
+//						t1 ^= t2;
+//						L[0] ^= ((t1 << m) | t1);
+//						tp = p[offset + i - 1];
+//						p[offset + i - 1] = p[offset + i];
+//						p[offset + i] = tp;
+//						newn = i;
+//					}
+//				}
+//			}
+//			if (lo <= k0 && k0 < n) {
+//				int shift;
+//				shift = (k - k0 - 1) * m;
+//        if ((bl & Utils.BIT(k0)) != 0 && (t1 = ((L[0] & M0[k0 - 1]) << shift)) > (t2 = (L[1] & M1[0]))) {
+//					t1 ^= t2;
+//					L[0] ^= t1 >> shift;
+//					L[1] ^= t1;
+//					tp = p[offset + k0 - 1];
+//					p[offset + k0 - 1] = p[offset + k0];
+//					p[offset + k0] = tp;
+//					newn = k0;
+//				}
+//			}
+//			if (k0 + 1 < n) {
+//				for (i = lo > k0 ? lo : k0 + 1; i < n; i++) {
+//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[1] & M1[i - k0 - 1]) >> m)) > (t2 = (L[1] & M1[i - k0]))) {
+//						t1 ^= t2;
+//						L[1] ^= ((t1 << m) | t1);
+//						tp = p[offset + i - 1];
+//						p[offset + i - 1] = p[offset + i];
+//						p[offset + i] = tp;
+//						newn = i;
+//					}
+//				}
+//			}
+//			n = newn;
+//		} while (n != 0);
+//	}
 
 
 	/*
-	 * Minimise the packed antichain list L containing one antichain on the elements a0..(a0+m-1) under the
-	 * action of the implicit automorphisms given by SI.  The inverse of the permutation minimising L is
-	 * left-multiplied to p, the rationale being to keep track of the permutation mapping L to some original
-	 * element.  If SI_ != 0, the implicit stabiliser of the minimised antichain L is returned in SI_.
+	 * Minimise the packed antichain list l containing one antichain on the elements a0..(a0+m-1) under the
+	 * action of the implicit automorphisms given by si.  The inverse of the permutation minimising l is
+	 * left-multiplied to p, the rationale being to keep track of the permutation mapping l to some original
+	 * element.  If sic != 0, the implicit stabiliser of the minimised antichain l is returned in sic.
 	 */
-	static void antichainList_applySI_1(int a0, int m, long[] L, int SI, int[] SI_, byte[] p) {
-		long mask, A_;
-//	int      t, hi, lo;
-//	int[]     pp;
-
+	static void applySI1(final int a0, final int m, final long[] l, int si, final int[] sic, final byte[] p) {
 		final int[] hi = new int[1];
 		final int[] lo = new int[1];
 
-    mask = Utils.BIT(m) - 1;
-//	pp = p+a0;
-		if (SI_ != null) {
-			SI_[0] = (int) (SI & ~(mask << a0));
+    final long mask = Utils.BIT(m) - 1;
+		if (sic != null) {
+			sic[0] = (int) (si & ~(mask << a0));
 		}
-		SI = (int) ((SI >> a0) & mask);
-		final int[] B = new int[] {SI ^ (SI >> 1)};
-		A_ = L[0] & ~(SI | B[0]);  /* the elements in blocks of size 1 */
-		while (Utils.extractMSB32(B, hi)) {
-			Utils.extractMSB32(B, lo);
+		si = (int) ((si >> a0) & mask);
+		final int[] b = new int[] {si ^ (si >> 1)};
+		long a = l[0] & ~(si | b[0]);  /* the elements in blocks of size 1 */
+		while (Utils.extractMSB32(b, hi)) {
+			Utils.extractMSB32(b, lo);
       final int pmask = (int) (Utils.BIT(hi[0] + 1) - Utils.BIT(lo[0]));
-			int SB = (int) (L[0] & pmask);
-			int UB = (int) (~L[0] & pmask);
-			while (Utils.getMSB32(SB, hi) && Utils.getLSB32(UB, lo) && hi[0] > lo[0]) {
-        SB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-        UB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+			int sb = (int) (l[0] & pmask);
+			int ub = (int) (~l[0] & pmask);
+			while (Utils.getMSB32(sb, hi) && Utils.getLSB32(ub, lo) && hi[0] > lo[0]) {
+        sb ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+        ub ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
 				final byte t = p[a0 + hi[0]];  /* left-multiplication of p by the transposition (lo hi) */
 				p[a0 + hi[0]] = p[a0 + lo[0]];
 				p[a0 + lo[0]] = t;
 			}
-			A_ |= SB;
-			if (SB != 0 && UB != 0) {
-        SI ^= Utils.BIT(lo[0]);
+			a |= sb;
+			if (sb != 0 && ub != 0) {
+        si ^= Utils.BIT(lo[0]);
 			}
 		}
-		L[0] = A_;
-		if (SI_ != null) {
-			SI_[0] |= SI << a0;
+		l[0] = a;
+		if (sic != null) {
+			sic[0] |= si << a0;
 		}
 	}
 
-
 	/*
-	 * Minimise the packed antichain list *L containing k antichains on the elements a0..(a0+m-1) under the
-	 * action of the implicit automorphisms given by SI.  The inverse of the permutation minimising L is
-	 * left-multiplied to p, the rationale being to keep track of the permutation mapping L to some original
+	 * Minimise the packed antichain list *l containing k antichains on the elements a0..(a0+m-1) under the
+	 * action of the implicit automorphisms given by si.  The inverse of the permutation minimising l is
+	 * left-multiplied to p, the rationale being to keep track of the permutation mapping l to some original
 	 * element.
 	 */
-	static void antichainList_applySI_p1(int n, int k, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, byte[] p) {
-		SiData[] SIt;
-		int SI0size, SI1size, i;
-		int r, dr, j, dj, t;
-		long T;
-		int A, A_, A_min, S, mask;
-		boolean next;
-// #ifdef DOTEST
-// 	permutation    argpi, pt;
-// 	int            nLev;
-// 	int            lev[MAXN];
-// 	long        MM[MAXN-2];
-// 	long        tmask;
-// 	perm_inv(n+k, p, argpi);
-// #endif
-
-    mask = (int) (Utils.BIT(m) - 1);
-		assert GD.mSi0 != null;
-		assert GD.mSi0[0] != null;
-		assert L != null;
-		GD.mSi0[0].mRep[0] = L[0];
-		GD.mSi0[0].mS = (SI >> a0) & mask;
-		GD.mSi0[0].mP = Permutation.create();
-		Permutation.copy(n + k, p, GD.mSi0[0].mP);
-		SI0size = 1;
-		for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
-			SI1size = 0;
-			A_min = mask;
+	static void listApplySIP1(int n, int k, int a0, int m, int bl, Globals globals, long[] l, int si, long bigM, byte[] p) {
+    int mask = (int) (Utils.BIT(m) - 1);
+		assert globals.mSi0 != null;
+		assert globals.mSi0[0] != null;
+		assert l != null;
+		globals.mSi0[0].mRep[0] = l[0];
+		globals.mSi0[0].mS = (si >> a0) & mask;
+		globals.mSi0[0].mP = Permutation.create();
+		Permutation.copy(n + k, p, globals.mSi0[0].mP);
+		int si0Size = 1;
+		int dr, dj;
+		for (int r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
+			int si1Size = 0;
+			int aMin = mask;
 			dr = 1;
-			for (i = 0; i < SI0size; i++) { /* loop over candidates */
-				next = false;
-				for (j = r; !next; j -= dj) { /* j: position of the antichain under consideration */
+			for (int i = 0; i < si0Size; ++i) { /* loop over candidates */
+				boolean next = false;
+				for (int j = r; !next; j -= dj) { /* j: position of the antichain under consideration */
 					int[] hi = new int[1];
 					int[] lo = new int[1];
-					long P;
 					byte[] q = Permutation.create();
-					//int[]         pq = q+a0;
-					if (SI1size == GD.mSiSpace) {
-						GD.enlargenSiSpace();
+					if (si1Size == globals.mSiSpace) {
+						globals.enlargenSiSpace();
 					}
-					Permutation.copy(n + k, GD.mSi0[i].mP, q);
-					S = GD.mSi0[i].mS;
-					P = GD.mSi0[i].mRep[0];
-					A = (int) ((P >> j * m) & mask);  /* j: antichain under consideration */
-					final int[] B = new int[] {(S >> 1) ^ S};
-					A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
-					while (A != A_ && Utils.extractMSB32(B, hi)) {  /* get an orbit lo..hi ... */
-						int pmask, SB, UB;
+					Permutation.copy(n + k, globals.mSi0[i].mP, q);
+          int s = globals.mSi0[i].mS;
+					long bigP = globals.mSi0[i].mRep[0];
+					final int a = (int) ((bigP >> j * m) & mask);  /* j: antichain under consideration */
+					final int[] B = new int[] {(s >> 1) ^ s};
+					int ac = a & ~(s | B[0]);  /* the elements in blocks of size 1 */
+					while (a != ac && Utils.extractMSB32(B, hi)) {  /* get an orbit lo..hi ... */
 						Utils.extractMSB32(B, lo);
-            pmask = (int) (Utils.BIT(hi[0] + 1) - Utils.BIT(lo[0]));
-						SB = A & pmask;
-						UB = ~A & pmask;
-						while (Utils.getMSB32(SB, hi) && Utils.getLSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
-              SB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-              UB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-							T = ((P >> hi[0]) ^ (P >> lo[0])) & M;
-							P ^= (T << hi[0]) | (T << lo[0]);
-							t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
+            final int pmask = (int) (Utils.BIT(hi[0] + 1) - Utils.BIT(lo[0]));
+						int sb = a & pmask;
+						int ub = ~a & pmask;
+						while (Utils.getMSB32(sb, hi) && Utils.getLSB32(ub, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
+              sb ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+              ub ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+							final long bigT = ((bigP >> hi[0]) ^ (bigP >> lo[0])) & bigM;
+							bigP ^= (bigT << hi[0]) | (bigT << lo[0]);
+							final byte t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
 							q[a0 + hi[0]] = q[a0 + lo[0]];
-							q[a0 + lo[0]] = (byte)t;
+							q[a0 + lo[0]] = t;
 						}
-						A_ |= SB;
-						if (SB != 0 && UB != 0) {
-              S ^= Utils.BIT(lo[0]);
+						ac |= sb;
+						if (sb != 0 && ub != 0) {
+              s ^= Utils.BIT(lo[0]);
 						}
-						if (A_ > A_min) {
+						if (ac > aMin) {
 							break;
 						}
 					}
@@ -443,336 +338,234 @@ final class Canonical {
             if (dj >= j || (bl & Utils.BIT(k - j + dj)) == 0) {
 							next = true;
 						}
-						dj++;
-					} while (!next && ((P >> (j - dj) * m) & mask) == A_);
-					if (A_ > A_min || (A_ == A_min && dj < dr)) {
+						++dj;
+					} while (!next && ((bigP >> (j - dj) * m) & mask) == ac);
+					if (ac > aMin || (ac == aMin && dj < dr)) {
 						continue;  /* not minimal */
 					}
-					if (A_ < A_min || (A_ == A_min && dj > dr)) {  /* new minimum! */
-						A_min = A_;
+					if (ac < aMin || (ac == aMin && dj > dr)) {  /* new minimum! */
+						aMin = ac;
 						dr = dj;
-						SI1size = 0;
+						si1Size = 0;
 					}
-					GD.mSi1[SI1size].mP = Permutation.create();
-					Permutation.copy(n + k, q, GD.mSi1[SI1size].mP);
+					globals.mSi1[si1Size].mP = Permutation.create();
+					Permutation.copy(n + k, q, globals.mSi1[si1Size].mP);
 					if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
 						long mask1, mask2;
 						byte[] pqq;
             mask1 = (Utils.BIT((r - j) * m) - 1) << ((j + 1) * m);
             mask2 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1) * m);
-						P = (P & ~(mask1 | mask2)) | ((P & mask1) >> (dr * m)) | ((P & mask2) << ((r - j) * m));
-						/* left-multiply q=GD.SI1[SI1size].p by the inverse of the applied permutation */
+						bigP = (bigP & ~(mask1 | mask2)) | ((bigP & mask1) >> (dr * m)) | ((bigP & mask2) << ((r - j) * m));
+						/* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
 						int offset = n + k - 1 - j;
-						//pq = q + n+k-1-j;
-						pqq = GD.mSi1[SI1size].mP;
+						pqq = globals.mSi1[si1Size].mP;
 						int opqq = n + k - 1 - r;
-						for (t = dr; t-- != 0; ) {
+						for (int t = dr; t-- != 0; ) {
 							pqq[opqq + t] = q[offset + t];
 						}
 						offset -= (r - j);  /* pq = q + n+k-1-r; */
-						opqq += dr;   /* pqq = GD.SI1[SI1size].p + n+k-1-r+dr; */
-						for (t = r - j; t-- != 0; ) {
+						opqq += dr;   /* pqq = globals.SI1[si1Size].p + n+k-1-r+dr; */
+						for (int t = r - j; t-- != 0; ) {
 							pqq[opqq + t] = q[offset + t];
 						}
 					}
-					GD.mSi1[SI1size].mS = S;
-					GD.mSi1[SI1size].mRep[0] = P;
-// #ifdef DOTEST
-// 				if (((P >> r*m) & mask) != A_min) {
-// 					printf("BAD MINIMISATION [antichainList_applySI_p1]: minimising %lx\n", (long)(*L));
-// 					printf("   have %lx\n", (long)P);
-// 					printf("   expected %x (m=%d, r=%d, j=%d, S=%x)\n", A_min, m, r, j, S);
-// 					erri(-4);
-// 				}
-// 				perm_mult(n+k, GD.SI1[SI1size].p, argpi, pt);
-// 				antichainList_apply_perm_p1(n, a0, a0+m, pt, k, GD.SI1[SI1size].rep[0], &T);
-// 				if (antichainList_cmp_p1(T, *L)) {
-// 					printf("BAD ACTION [antichainList_applySI_p1]: "); perm_print(n+k, pt, 0);
-// 					printf("   on %lx\n", (long)GD.SI1[SI1size].rep[0]);
-// 					printf("   have %lx\n", (long)T);
-// 					printf("   expected %lx\n", (long)(*L));
-// 					erri(-4);
-// 				}
-// #endif
-					SI1size++;
+					globals.mSi1[si1Size].mS = s;
+					globals.mSi1[si1Size].mRep[0] = bigP;
+					si1Size++;
 				}
 			}
-			SI0size = SI1size;
-			SIt = GD.mSi0;
-			GD.mSi0 = GD.mSi1;
-			GD.mSi1 = SIt;
+			si0Size = si1Size;
+			final SiData[] sit = globals.mSi0;
+			globals.mSi0 = globals.mSi1;
+			globals.mSi1 = sit;
 		}
-// #ifdef DOTEST
-// 	nLev = 0;
-// 	for (tmask=BIT(m)-1,j=k; j--; tmask<<=m)
-// 		MM[j] = tmask;
-// 	for (j=1; j<=n; j++)
-// 		if (!(SI & BIT(j)))
-// 			lev[nLev++] = j;
-// 	perm_init(n+k, pt);
-// 	while (perm_next(nLev, lev, pt)) {
-// 		antichainList_apply_perm_p1(n, a0, a0+m, pt, k, GD.SI0[0].rep[0], &T);
-// 		antichainList_sort_p1(k, m, MM, bl, &T, p, a0);
-// 		if (antichainList_cmp_p1(T, GD.SI0[0].rep[0]) < 0) {
-// 			printf("BAD MINIMUM [antichainList_applySI_p1]: minimising %lx\n", (long)(*L));
-// 			printf("   have %lx\n", (long)GD.SI1[0].rep[0]);
-// 			printf("   but %lx is smaller (a0=%d, m=%d, k=%d, SI=%x, bl=%x)\n", (long)T, a0, m, k, SI, bl);
-// 			erri(-4);
-// 		}
-// 	}
-// #endif
-		L[0] = GD.mSi0[0].mRep[0];
-		Permutation.copy(n + k, GD.mSi0[0].mP, p);
-		GD.mSi0Size = SI0size;
+		l[0] = globals.mSi0[0].mRep[0];
+		Permutation.copy(n + k, globals.mSi0[0].mP, p);
+		globals.mSi0Size = si0Size;
 	}
 
-
-// #ifdef TARGET_UTEST_SI
-// void antichainList_applySI_p1_f(int n, int k, int a0, int m, int bl, Globals GD, long[] L, int SI,
-// 		long M, permutation p)
-// /*
-//  * Non-static wrapper for antichainList_applySI_p1.
-//  */
-// {
-// 	antichainList_applySI_p1(n, k, a0, m, bl, GD, L, SI, M, p);
-// }
-// #endif
-
-
-	static int ANTICHAIN(long[] L, int i, int m, int k1, int mask) {/* access macro for the antichain in *position* i */
-		return (int) ((((i) >= (k1)) ? ((L)[0] >> (((i) - (k1)) * (m))) : ((L)[1] >> ((i) * (m)))) & mask);
+  /* access macro for the antichain in *position* i */
+	private static int antichain(final long[] l, final int i, final int m, final int k1, final int mask) {
+		return (int) ((((i) >= (k1)) ? ((l)[0] >> (((i) - (k1)) * (m))) : ((l)[1] >> ((i) * (m)))) & mask);
 	}
 
-	/*
-	 * Minimise the packed antichain list L containing k antichains on the elements a0..(a0+m-1), with L[0]
-	 * containing k-k1 antichains and L[1] containing k1 antichains,  under the action of the implicit
-	 * automorphisms given by SI.  The inverse of the permutation minimising L is left-multiplied to p, the
-	 * rationale being to keep track of the permutation mapping L to some original element.
-	 */
-	static void antichainList_applySI_p2(int n, int k, int k1, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, byte[] p) {
-		SiData[] SIt;
-		int SI0size, SI1size;
-		int i;
-		int r, dr, j, dj, t;
-		long T;
-		int A, A_, A_min, S, mask;
-		boolean next;
-// #ifdef DOTEST
-// 	permutation    argpi, pt;
-// 	int            nLev, apf;
-// 	int            lev[MAXN];
-// 	long[]       M0;
-// 	long        M1[MAXN-2];
-// 	long        TT[2];
-// 	perm_inv(n+k, p, argpi);
-// #endif
-
-//#define MIN(a,b)  ((a)<(b) ? (a) : (b))
-//#define MAX(a,b)  ((a)>(b) ? (a) : (b))
-
-    mask = (int) (Utils.BIT(m) - 1);
-		GD.mSi0[0].mRep[0] = L[0];
-		GD.mSi0[0].mRep[1] = L[1];
-		GD.mSi0[0].mS = (SI >> a0) & mask;
-		Permutation.copy(n + k, p, GD.mSi0[0].mP);
-		SI0size = 1;
-		for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
-			SI1size = 0;
-			A_min = mask;
-			dr = 1;
-			for (i = 0; i < SI0size; i++) { /* loop over candidates */
-				next = false;
-				for (j = r; !next; j -= dj) { /* j: position of the antichain under consideration */
-					int[] hi = new int[1];
-					int[] lo = new int[1];
-					long[] P = new long[2];
-					byte[] q = Permutation.create();
-					//int[]         pq = q+a0;
-					if (SI1size == GD.mSiSpace) {
-						GD.enlargenSiSpace();
-					}
-					Permutation.copy(n + k, GD.mSi0[i].mP, q);
-					S = GD.mSi0[i].mS;
-					P[0] = GD.mSi0[i].mRep[0];
-					P[1] = GD.mSi0[i].mRep[1];
-					A = ANTICHAIN(P, j, m, k1, mask);   /* j: antichain under consideration */
-					final int[] B = new int[] {(S >> 1) ^ S};
-					A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
-					while (A != A_ && Utils.extractMSB32(B, hi)) {  /* get an orbit lo..hi ... */
-						int pmask, SB, UB;
-						Utils.extractMSB32(B, lo);
-            pmask = (int) (Utils.BIT(hi[0] + 1) - Utils.BIT(lo[0]));
-						SB = A & pmask;
-						UB = ~A & pmask;
-						while (Utils.getMSB32(SB, hi) && Utils.getLSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
-              SB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-              UB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-							T = ((P[0] >> hi[0]) ^ (P[0] >> lo[0])) & M;
-							P[0] ^= (T << hi[0]) | (T << lo[0]);
-							T = ((P[1] >> hi[0]) ^ (P[1] >> lo[0])) & M;
-							P[1] ^= (T << hi[0]) | (T << lo[0]);
-							t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
-							q[a0 + hi[0]] = q[a0 + lo[0]];
-							q[a0 + lo[0]] = (byte)t;
-						}
-						A_ |= SB;
-						if (SB != 0 && UB != 0) {
-              S ^= Utils.BIT(lo[0]);
-						}
-						if (A_ > A_min) {
-							break;
-						}
-					}
-					dj = 0;
-					do {
-            if (dj >= j || (bl & Utils.BIT(k - j + dj)) == 0) {
-							next = true;
-						}
-						dj++;
-					} while (!next && ANTICHAIN(P, j - dj, m, k1, mask) == A_);
-					if (A_ > A_min || (A_ == A_min && dj < dr)) {
-						continue;  /* not minimal */
-					}
-					if (A_ < A_min || (A_ == A_min && dj > dr)) {  /* new minimum! */
-						A_min = A_;
-						dr = dj;
-						SI1size = 0;
-					}
-					Permutation.copy(n + k, q, GD.mSi1[SI1size].mP);
-					if (j < r) {  /* move antichains j..(j-dr+1) to positions r..(r-dr+1), shifting r..j+1 to the right
-					 *  - move j..(j-dr+1) by r-j positions to the left
-					 *  - move r..(j+1) by dr positions to the right
-					 */
-						byte[] pqq;
-						if (j < k1) {
-							if (r < k1) {
-								long MR11, ML11;
-                ML11 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1) * m);
-                MR11 = (Utils.BIT((r - j) * m) - 1) << ((j + 1) * m);
-								P[1] = (P[1] & ~(ML11 | MR11)) | ((P[1] & ML11) << ((r - j) * m)) | ((P[1] & MR11) >> (dr * m));
-							} else {
-								long MR00, MR01, MR11, ML10, ML11;
-								if (r - dr >= k1) {
-                  MR00 = (Utils.BIT((r - k1 - dr + 1) * m) - 1) << (dr * m);
-                  MR01 = Utils.BIT(dr * m) - 1;
-								} else {
-									MR00 = 0L;
-                  MR01 = Utils.BIT((r - k1 + 1) * m) - 1;
-								}
-                MR11 = (Utils.BIT((k1 - j - 1) * m) - 1) << (j + 1) * m;
-								if (r - k1 + 1 >= dr) {
-                  ML10 = (Utils.BIT(dr * m) - 1) << (j - dr + 1) * m;
-									ML11 = 0L;
-								} else {
-                  ML10 = (Utils.BIT((r - k1 + 1) * m) - 1) << (j - r + k1) * m;
-                  ML11 = (Utils.BIT((dr - (r - k1 + 1)) * m) - 1) << (j - dr + 1) * m;
-								}
-								T = (P[0] & ~(MR00 | MR01))
-									| ((P[0] & MR00) >> (dr * m))
-									| (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
-								P[1] = (P[1] & ~(MR11 | ML10 | ML11))
-									| ((P[1] & MR11) >> (dr * m))
-									| ((P[1] & ML11) << ((r - j) * m))
-									| (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
-								P[0] = T;
-							}
-						} else {
-							if (j - dr + 1 < k1) {
-								long MR00, MR01, ML00, ML10, ML11;
-                MR00 = (Utils.BIT((r + 1 - k1 - dr) * m) - 1) << (dr * m);
-                MR01 = (Utils.BIT((k1 + dr - j - 1) * m) - 1) << ((j + 1 - k1) * m);
-                ML00 = Utils.BIT((j - k1 + 1) * m) - 1;
-								if (r - dr + 1 - k1 >= 0) {
-                  ML10 = ((Utils.BIT((k1 - 1 - j + dr) * m) - 1) << ((j - dr + 1) * m));
-									ML11 = 0L;
-								} else {
-                  ML10 = ((Utils.BIT((r - j) * m) - 1) << (k1 - r + j) * m);
-                  ML11 = ((Utils.BIT(k1 - r + dr - 1) * m) - 1) << ((j - dr + 1) * m);
-								}
-								T = (P[0] & ~(MR00 | MR01 | ML00))
-									| ((P[0] & MR00) >> (dr * m))
-									| ((P[0] & ML00) << ((r - j) * m))
-									| (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
-								P[1] = (P[1] & ~(ML10 | ML11))
-									| ((P[1] & ML11) << ((r - j) * m))
-									| (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
-								P[0] = T;
-							} else {
-								long MR00, ML00;
-                ML00 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1 - k1) * m);
-                MR00 = (Utils.BIT((r - j) * m) - 1) << ((j + 1 - k1) * m);
-								P[0] = (P[0] & ~(ML00 | MR00)) | ((P[0] & ML00) << ((r - j) * m)) | ((P[0] & MR00) >> (dr * m));
-							}
-						}
-						/* left-multiply q=GD.SI1[SI1size].p by the inverse of the applied permutation */
-						int pqo = n + k - 1 - j;
-						pqq = GD.mSi1[SI1size].mP;
-						int pqqo = n + k - 1 - r;
-						for (t = dr; t-- != 0; ) {
-							pqq[pqqo + t] = q[pqo + t];
-						}
-						pqo -= (r - j);  /* pq = q + n+k-1-r; */
-						pqqo += dr;   /* pqq = GD.SI1[SI1size].p + n+k-1-r+dr; */
-						for (t = r - j; t-- != 0; ) {
-							pqq[pqqo + t] = q[pqo + t];
-						}
-					}
-					GD.mSi1[SI1size].mS = S;
-					GD.mSi1[SI1size].mRep[0] = P[0];
-					GD.mSi1[SI1size].mRep[1] = P[1];
-//#ifdef DOTEST
-//				if (ANTICHAIN(P,r,m,k1,mask) != A_min) {
-//					printf("BAD MINIMISATION [antichainList_applySI_p2]: minimising %lx|%lx\n",
-//							(long)L[0], (long)L[1]);
-//					printf("   have %lx|%lx\n", (long)P[0], (long)P[1]);
-//					printf("   expected %x (m=%d, r=%d, j=%d, S=%x)\n", A_min, m, r, j, S);
-//					erri(-4);
+//	/*
+//	 * Minimise the packed antichain list L containing k antichains on the elements a0..(a0+m-1), with L[0]
+//	 * containing k-k1 antichains and L[1] containing k1 antichains,  under the action of the implicit
+//	 * automorphisms given by SI.  The inverse of the permutation minimising L is left-multiplied to p, the
+//	 * rationale being to keep track of the permutation mapping L to some original element.
+//	 */
+//	static void antichainList_applySI_p2(int n, int k, int k1, int a0, int m, int bl, Globals GD, long[] L, int SI, long M, byte[] p) {
+//		SiData[] SIt;
+//		int SI0size, SI1size;
+//		int i;
+//		int r, dr, j, dj, t;
+//		long T;
+//		int A, A_, A_min, S, mask;
+//		boolean next;
+//
+//    mask = (int) (Utils.BIT(m) - 1);
+//		GD.mSi0[0].mRep[0] = L[0];
+//		GD.mSi0[0].mRep[1] = L[1];
+//		GD.mSi0[0].mS = (SI >> a0) & mask;
+//		Permutation.copy(n + k, p, GD.mSi0[0].mP);
+//		SI0size = 1;
+//		for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
+//			SI1size = 0;
+//			A_min = mask;
+//			dr = 1;
+//			for (i = 0; i < SI0size; i++) { /* loop over candidates */
+//				next = false;
+//				for (j = r; !next; j -= dj) { /* j: position of the antichain under consideration */
+//					int[] hi = new int[1];
+//					int[] lo = new int[1];
+//					long[] P = new long[2];
+//					byte[] q = Permutation.create();
+//					if (SI1size == GD.mSiSpace) {
+//						GD.enlargenSiSpace();
+//					}
+//					Permutation.copy(n + k, GD.mSi0[i].mP, q);
+//					S = GD.mSi0[i].mS;
+//					P[0] = GD.mSi0[i].mRep[0];
+//					P[1] = GD.mSi0[i].mRep[1];
+//					A = antichain(P, j, m, k1, mask);   /* j: antichain under consideration */
+//					final int[] B = new int[] {(S >> 1) ^ S};
+//					A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
+//					while (A != A_ && Utils.extractMSB32(B, hi)) {  /* get an orbit lo..hi ... */
+//						int pmask, SB, UB;
+//						Utils.extractMSB32(B, lo);
+//            pmask = (int) (Utils.BIT(hi[0] + 1) - Utils.BIT(lo[0]));
+//						SB = A & pmask;
+//						UB = ~A & pmask;
+//						while (Utils.getMSB32(SB, hi) && Utils.getLSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
+//              SB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+//              UB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
+//							T = ((P[0] >> hi[0]) ^ (P[0] >> lo[0])) & M;
+//							P[0] ^= (T << hi[0]) | (T << lo[0]);
+//							T = ((P[1] >> hi[0]) ^ (P[1] >> lo[0])) & M;
+//							P[1] ^= (T << hi[0]) | (T << lo[0]);
+//							t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
+//							q[a0 + hi[0]] = q[a0 + lo[0]];
+//							q[a0 + lo[0]] = (byte)t;
+//						}
+//						A_ |= SB;
+//						if (SB != 0 && UB != 0) {
+//              S ^= Utils.BIT(lo[0]);
+//						}
+//						if (A_ > A_min) {
+//							break;
+//						}
+//					}
+//					dj = 0;
+//					do {
+//            if (dj >= j || (bl & Utils.BIT(k - j + dj)) == 0) {
+//							next = true;
+//						}
+//						dj++;
+//					} while (!next && antichain(P, j - dj, m, k1, mask) == A_);
+//					if (A_ > A_min || (A_ == A_min && dj < dr)) {
+//						continue;  /* not minimal */
+//					}
+//					if (A_ < A_min || (A_ == A_min && dj > dr)) {  /* new minimum! */
+//						A_min = A_;
+//						dr = dj;
+//						SI1size = 0;
+//					}
+//					Permutation.copy(n + k, q, GD.mSi1[SI1size].mP);
+//					if (j < r) {  /* move antichains j..(j-dr+1) to positions r..(r-dr+1), shifting r..j+1 to the right
+//					 *  - move j..(j-dr+1) by r-j positions to the left
+//					 *  - move r..(j+1) by dr positions to the right
+//					 */
+//						byte[] pqq;
+//						if (j < k1) {
+//							if (r < k1) {
+//								long MR11, ML11;
+//                ML11 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1) * m);
+//                MR11 = (Utils.BIT((r - j) * m) - 1) << ((j + 1) * m);
+//								P[1] = (P[1] & ~(ML11 | MR11)) | ((P[1] & ML11) << ((r - j) * m)) | ((P[1] & MR11) >> (dr * m));
+//							} else {
+//								long MR00, MR01, MR11, ML10, ML11;
+//								if (r - dr >= k1) {
+//                  MR00 = (Utils.BIT((r - k1 - dr + 1) * m) - 1) << (dr * m);
+//                  MR01 = Utils.BIT(dr * m) - 1;
+//								} else {
+//									MR00 = 0L;
+//                  MR01 = Utils.BIT((r - k1 + 1) * m) - 1;
+//								}
+//                MR11 = (Utils.BIT((k1 - j - 1) * m) - 1) << (j + 1) * m;
+//								if (r - k1 + 1 >= dr) {
+//                  ML10 = (Utils.BIT(dr * m) - 1) << (j - dr + 1) * m;
+//									ML11 = 0L;
+//								} else {
+//                  ML10 = (Utils.BIT((r - k1 + 1) * m) - 1) << (j - r + k1) * m;
+//                  ML11 = (Utils.BIT((dr - (r - k1 + 1)) * m) - 1) << (j - dr + 1) * m;
+//								}
+//								T = (P[0] & ~(MR00 | MR01))
+//									| ((P[0] & MR00) >> (dr * m))
+//									| (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
+//								P[1] = (P[1] & ~(MR11 | ML10 | ML11))
+//									| ((P[1] & MR11) >> (dr * m))
+//									| ((P[1] & ML11) << ((r - j) * m))
+//									| (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
+//								P[0] = T;
+//							}
+//						} else {
+//							if (j - dr + 1 < k1) {
+//								long MR00, MR01, ML00, ML10, ML11;
+//                MR00 = (Utils.BIT((r + 1 - k1 - dr) * m) - 1) << (dr * m);
+//                MR01 = (Utils.BIT((k1 + dr - j - 1) * m) - 1) << ((j + 1 - k1) * m);
+//                ML00 = Utils.BIT((j - k1 + 1) * m) - 1;
+//								if (r - dr + 1 - k1 >= 0) {
+//                  ML10 = ((Utils.BIT((k1 - 1 - j + dr) * m) - 1) << ((j - dr + 1) * m));
+//									ML11 = 0L;
+//								} else {
+//                  ML10 = ((Utils.BIT((r - j) * m) - 1) << (k1 - r + j) * m);
+//                  ML11 = ((Utils.BIT(k1 - r + dr - 1) * m) - 1) << ((j - dr + 1) * m);
+//								}
+//								T = (P[0] & ~(MR00 | MR01 | ML00))
+//									| ((P[0] & MR00) >> (dr * m))
+//									| ((P[0] & ML00) << ((r - j) * m))
+//									| (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
+//								P[1] = (P[1] & ~(ML10 | ML11))
+//									| ((P[1] & ML11) << ((r - j) * m))
+//									| (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
+//								P[0] = T;
+//							} else {
+//								long MR00, ML00;
+//                ML00 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1 - k1) * m);
+//                MR00 = (Utils.BIT((r - j) * m) - 1) << ((j + 1 - k1) * m);
+//								P[0] = (P[0] & ~(ML00 | MR00)) | ((P[0] & ML00) << ((r - j) * m)) | ((P[0] & MR00) >> (dr * m));
+//							}
+//						}
+//						/* left-multiply q=GD.SI1[SI1size].p by the inverse of the applied permutation */
+//						int pqo = n + k - 1 - j;
+//						pqq = GD.mSi1[SI1size].mP;
+//						int pqqo = n + k - 1 - r;
+//						for (t = dr; t-- != 0; ) {
+//							pqq[pqqo + t] = q[pqo + t];
+//						}
+//						pqo -= (r - j);  /* pq = q + n+k-1-r; */
+//						pqqo += dr;   /* pqq = GD.SI1[SI1size].p + n+k-1-r+dr; */
+//						for (t = r - j; t-- != 0; ) {
+//							pqq[pqqo + t] = q[pqo + t];
+//						}
+//					}
+//					GD.mSi1[SI1size].mS = S;
+//					GD.mSi1[SI1size].mRep[0] = P[0];
+//					GD.mSi1[SI1size].mRep[1] = P[1];
+//					SI1size++;
 //				}
-//				perm_mult(n+k, GD.SI1[SI1size].p, argpi, pt);
-//				antichainList_apply_perm_p2(n, a0, a0+m, pt, k, GD.SI1[SI1size].rep, TT);
-//				if (antichainList_cmp_p2(TT, L)) {
-//					printf("BAD ACTION [antichainList_applySI_p2]: "); perm_print(n+k, pt, 0);
-//					printf("   on %lx|%lx\n", (long)GD.SI1[SI1size].rep[0], (long)GD.SI1[SI1size].rep[1]);
-//					printf("   have %lx|%lx\n", (long)TT[0], (long)TT[1]);
-//					printf("   expected %lx|%lx\n", (long)L[0], (long)L[1]);
-//					erri(-4);
-//				}
-//#endif
-					SI1size++;
-				}
-			}
-			SI0size = SI1size;
-			SIt = GD.mSi0;
-			GD.mSi0 = GD.mSi1;
-			GD.mSi1 = SIt;
-		}
-// #ifdef DOTEST
-// 	apf = BITSPERLONG/m;
-// 	for (mask=BIT(m)-1,i=apf; i--; mask<<=m)
-// 		M1[i] = mask;
-// 	M0 = M1 + 2*apf-k;
-// 	nLev = 0;
-// 	for (j=1; j<=n; j++)
-// 		if (!(SI & BIT(j)))
-// 			lev[nLev++] = j;
-// 	perm_init(n+k, pt);
-// 	while (perm_next(nLev, lev, pt)) {
-// 		antichainList_apply_perm_p2(n, a0, a0+m, pt, k, GD.SI0[0].rep, TT);
-// 		antichainList_sort_p2(k, m, k-k1, M0, M1, bl, TT, p, a0);
-// 		if (antichainList_cmp_p2(TT, GD.SI0[0].rep) < 0) {
-// 			printf("BAD MINIMUM [antichainList_applySI_p2]: minimising %lx|%lx\n", (long)L[0], (long)L[1]);
-// 			printf("   have %lx|%lx\n", (long)GD.SI1[0].rep[0], (long)GD.SI1[0].rep[1]);
-// 			printf("   but %lx|%lx is smaller (a0=%d, m=%d, k=%d, SI=%x, bl=%x)\n",
-// 					(long)TT[0], (long)TT[1], a0, m, k, SI, bl);
-// 			erri(-4);
-// 		}
-// 	}
-// #endif
-		L[0] = GD.mSi0[0].mRep[0];
-		L[1] = GD.mSi0[0].mRep[1];
-		Permutation.copy(n + k, GD.mSi0[0].mP, p);
-		GD.mSi0Size = SI0size;
-	}
+//			}
+//			SI0size = SI1size;
+//			SIt = GD.mSi0;
+//			GD.mSi0 = GD.mSi1;
+//			GD.mSi1 = SIt;
+//		}
+//		L[0] = GD.mSi0[0].mRep[0];
+//		L[1] = GD.mSi0[0].mRep[1];
+//		Permutation.copy(n + k, GD.mSi0[0].mP, p);
+//		GD.mSi0Size = SI0size;
+//	}
 
 
 // #ifdef TARGET_UTEST_SI
@@ -1259,7 +1052,7 @@ final class Canonical {
 					Permutation.init(AD.mLattice.n + AD.mK, p);
 					final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
 					final int xcl = AD.mCl;
-					antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p)	;
+					applySI1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p)	;
 					AD.mStabilisers[xcl].mSi = ugly[0];
 					if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 						return false;
@@ -1298,9 +1091,15 @@ final class Canonical {
 							long[] A = new long[] {AD.mGlobals.mOrbitElements[pos].mData[0]};
               G.mBenes[AD.mCl][gen].applyP1(A);
 							Permutation.init(AD.mLattice.n + AD.mK, p);
-							antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], A, AD.mStabilisers[AD.mCl + 1].mSi, null, p);
+							applySI1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], A, AD.mStabilisers[AD.mCl + 1].mSi, null, p);
 							/* ...we're done if the result is smaller than the original element */
-							if (long_cmp(L[0], A[0]) > 0) {
+              //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+              if (Long.compare(L[0], A[0]) > 0) {
 								if (VERBOSE) {
 									System.out.println("                                       NOT canonical");
 								}
@@ -1358,7 +1157,13 @@ final class Canonical {
               G.mBenes[AD.mCl][gen].applyP1(A);
 							Permutation.init(AD.mLattice.n + AD.mK, p);
 							/* ...we're done if the result is smaller than the original element */
-							if (long_cmp(L, A[0]) > 0) {
+              //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+              if (Long.compare(L, A[0]) > 0) {
 								if (VERBOSE) {
 									System.out.println("                                       NOT canonical");
 								}
@@ -1391,7 +1196,7 @@ final class Canonical {
 				Permutation.init(AD.mLattice.n + AD.mK, p);
 				final int[] ugly = new int[] {AD.mStabilisers[AD.mCl].mSi};
 				final int xcl = AD.mCl;
-				antichainList_applySI_1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p);
+				applySI1(AD.mLattice.lev[AD.mCl], AD.mLattice.lev[AD.mCl + 1] - AD.mLattice.lev[AD.mCl], L, AD.mStabilisers[AD.mCl + 1].mSi, ugly, p);
 				AD.mStabilisers[xcl].mSi = ugly[0];
 				if (L[0] != AD.mGlobals.mOrbitElements[0].mData[0]) {
 					return false;
@@ -1451,7 +1256,7 @@ final class Canonical {
 	 * identical antichains, i.e., all possible permutations of points of the lowest level of the new lattice
 	 * that have identical covering sets.  The latter may be handled by "implicit" stabilisers.)
 	 */
-	static boolean antichaindata_isCanonical_p1(Antichain AD, int bits) {
+	static boolean isCanonicalP1(Antichain AD, int bits) {
 		int i, gen;
 		int pos;
 		long[] M = new long[Utils.MAXN - 2];
@@ -1489,8 +1294,14 @@ final class Canonical {
 					for (pmask = 1, i = AD.mK; i-- != 0; ) {
 						pmask = (pmask << bits) | 1;
 					}
-					antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
-					if (antichainList_cmp_p1(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
+					listApplySIP1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
+          //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+          if (Long.compare(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
 						/* determine the position up to which we can backtrack */
 						int m, pi;
 						long D;
@@ -1552,9 +1363,15 @@ final class Canonical {
 							}
 							//#endif
 							Permutation.init(S.mG.mN, p);
-							antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, A, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
+							listApplySIP1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, A, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
 							/* ...we're done if the result is smaller than the original element */
-							if (antichainList_cmp_p1(L[0], A[0]) > 0) {
+              //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+              if (Long.compare(L[0], A[0]) > 0) {
 								/* determine the position up to which we can backtrack */
 								int m, pi;
 								long D;
@@ -1631,9 +1448,15 @@ final class Canonical {
 							}
 							//#endif
 							Permutation.init(S.mG.mN, p);
-							antichainList_sort_p1(AD.mK, bits, M, AD.mStabilisers[AD.mCl + 1].mBl, A, p, AD.mLattice.n);
+							sortP1(bits, M, AD.mStabilisers[AD.mCl + 1].mBl, A, p, AD.mLattice.n);
 							/* ...we're done if the result is smaller than the original element */
-							if (antichainList_cmp_p1(L, A[0]) > 0) {
+              //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+              if (Long.compare(L, A[0]) > 0) {
 								/* determine the position up to which we can backtrack */
 								int m, pi;
 								long D;
@@ -1685,8 +1508,14 @@ final class Canonical {
 				for (pmask = 1, i = AD.mK; i-- != 0; ) {
 					pmask = (pmask << bits) | 1;
 				}
-				antichainList_applySI_p1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
-				if (antichainList_cmp_p1(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
+				listApplySIP1(AD.mLattice.n, AD.mK, AD.mLattice.lev[AD.mCl], bits, AD.mStabilisers[AD.mCl + 1].mBl, AD.mGlobals, L, AD.mStabilisers[AD.mCl + 1].mSi, pmask, p);
+        //	if (A < B)
+//		return -1;
+//	else if (A > B)
+//		return 1;
+//	else
+//		return 0;
+        if (Long.compare(L[0], AD.mGlobals.mOrbitElements[0].mData[0]) != 0) {
 					/* determine the position up to which we can backtrack */
 					int m, pi;
 					long D;

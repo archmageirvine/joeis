@@ -86,13 +86,13 @@ public class Benes {
     final byte[] invSrc = Permutation.create();
     if (n <= BENES_SMALL) {
       for (int j = 0; j < n; j++) {
-        src[j] = (byte)(p[lo + j] - lo);
+        src[j] = (byte) (p[lo + j] - lo);
       }
-      t = benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
+      t = sBenesSmall[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
     } else {
       for (int j = 0; j < n; j++) {
-        src[j] = (byte)(p[lo + j] - lo);
-        invSrc[j] = (byte)(pi[lo + j] - lo);
+        src[j] = (byte) (p[lo + j] - lo);
+        invSrc[j] = (byte) (pi[lo + j] - lo);
       }
       t = new Benes(n, src, invSrc);
     }
@@ -148,12 +148,12 @@ public class Benes {
       for (int j = 0; j < n; j++) {
         src[j] = (byte) (p[lo + j] - lo);
       }
-      return benes_small[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
+      return sBenesSmall[n][(int) Permutation.toInteger(n, src)];  /* no incref: Bene&scaron;scaron; network is persistent */
     } else {
       final byte[] invSrc = Permutation.create();
       for (int j = 0; j < n; j++) {
         src[j] = (byte) (p[lo + j] - lo);
-        invSrc[j] = (byte)(pi[lo + j] - lo);
+        invSrc[j] = (byte) (pi[lo + j] - lo);
       }
       return new Benes(n, src, invSrc);
     }
@@ -190,59 +190,51 @@ public class Benes {
 
 
   /*
-   * Apply the Bene&scaron;scaron; network *B to A[0],A[1].  The masks indicate the lower bit of each pair.
+   * Apply the Bene&scaron;scaron; network *B to a[0],a[1].  The masks indicate the lower bit of each pair.
    *
    */
-  static void benes_apply_p2(Benes B, long[] A) {
-    long sft;
-    long t;
-
-    for (int i = 0; i < B.mDepth; ++i) {
-      sft = B.mShift[i];
-      t = ((A[0] >> sft) ^ A[0]) & B.mMask[i];
-      A[0] ^= t;
+  void applyP2(final long[] a) {
+    for (int i = 0; i < mDepth; ++i) {
+      final int sft = mShift[i];
+      long t = ((a[0] >> sft) ^ a[0]) & mMask[i];
+      a[0] ^= t;
       t <<= sft;
-      A[0] ^= t;
-      t = ((A[1] >> sft) ^ A[1]) & B.mMask[i];
-      A[1] ^= t;
+      a[0] ^= t;
+      t = ((a[1] >> sft) ^ a[1]) & mMask[i];
+      a[1] ^= t;
       t <<= sft;
-      A[1] ^= t;
+      a[1] ^= t;
     }
   }
 
 
   /*
-   * Apply the Bene&scaron;scaron; network *B acting on the positions of the packed antichain list A[0],A[1], with width bits of
-   * A[1] used.  The masks for blocked Bene&scaron;scaron; networks indicate the higher bit of each pair.
+   * Apply the Bene&scaron;scaron; network *B acting on the positions of the packed antichain list a[0],a[1], with width bits of
+   * a[1] used.  The masks for blocked Bene&scaron;scaron; networks indicate the higher bit of each pair.
    */
-  static void benes_apply_blocked_p2(Benes B, long[] A, long width) {
-    long sft, xsft;
-    long t0, t0_, t1;
-
-    for (int i = 0; i < B.mDepth; ++i) {
-      sft = B.mShift[i];
-      xsft = width - sft;
-      t0 = (((A[0] << sft) | (A[1] >> xsft)) ^ A[0]) & B.mMask[i];
-      t1 = ((A[1] << sft) ^ A[1]) & B.mMask1[i];
-      A[0] ^= t0;
-      A[1] ^= t1;
-      t0_ = t0;
+  void applyBlockedP2(final long[] a, final long width) {
+    for (int i = 0; i < mDepth; ++i) {
+      final long sft = mShift[i];
+      final long xsft = width - sft;
+      long t0 = (((a[0] << sft) | (a[1] >> xsft)) ^ a[0]) & mMask[i];
+      long t1 = ((a[1] << sft) ^ a[1]) & mMask1[i];
+      a[0] ^= t0;
+      a[1] ^= t1;
+      final long t0a = t0;
       t0 >>= sft;
-      t1 = (t1 >> sft) | (t0_ << xsft);
-      A[0] ^= t0;
-      A[1] ^= t1;
+      t1 = (t1 >> sft) | (t0a << xsft);
+      a[0] ^= t0;
+      a[1] ^= t1;
     }
   }
 
-
-  static Benes[][] benes_small = null;  /* global storage for precomputed Bene&scaron;scaron; networks */
-
+  static Benes[][] sBenesSmall = null;  /* global storage for precomputed Bene&scaron;scaron; networks */
 
   /*
    * Return \lceil \log_2(x) \rceil, where 0 < x < 32, and return 0 for x \eq 0; this is the correct
    * semantics for benes_create.
    */
-  static int ceil_ld(long x) {
+  static int ceilLd(final long x) {
     if (x < 9) {
       if (x < 3) {
         if (x < 2) {
@@ -273,129 +265,127 @@ public class Benes {
    * NOTE: src AND inv_src ARE MODIFIED.
    */
   Benes(final int n, final byte[] src, final byte[] inv_src) {
-    int i, stage;
-    int main_idx, src_idx, tgt_idx, Fpos, Bpos;
-    int mask, nmask, src_set, cfg_src, cfg_tgt;
-    //b.mRefCount = 1;
-    int ld_n = ceil_ld(n);
-    Fpos = 0;
-    Bpos = 2 * ld_n - 1;
+    final int ldN = ceilLd(n);
+    int fPos = 0;
+    int bPos = 2 * ldN - 1;
     byte[] tgt = ByteUtils.identity(Permutation.create());
     byte[] inv_tgt = ByteUtils.identity(Permutation.create());
-    for (stage = 0, mask = 1; stage < ld_n; stage++, mask <<= 1) {
-      nmask = ~mask;
-      src_set = cfg_src = cfg_tgt = 0;
-      for (main_idx = (int) Utils.bit(ld_n); main_idx-- != 0; ) { /* this ensures that no crossings contain padded bits */
-        if ((main_idx & mask) != 0) { /* loop over pairs... */
+    for (int stage = 0, mask = 1; stage < ldN; ++stage, mask <<= 1) {
+      final int nmask = ~mask;
+      int srcSet = 0;
+      int cfgSrc = 0;
+      int cfgTgt = 0;
+      for (int mainIdx = (int) Utils.bit(ldN); mainIdx-- != 0; ) { /* this ensures that no crossings contain padded bits */
+        if ((mainIdx & mask) != 0) { /* loop over pairs... */
           /* ... upper representative */
-          src_idx = main_idx;
-          while ((Utils.bit(src_idx) & src_set) == 0) {
-            src_set |= Utils.bit(src_idx); /* ...mark that source index as seen... */
-            tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
-            if (((src_idx ^ tgt_idx) & mask) != 0) {
+          int srcIdx = mainIdx;
+          while ((Utils.bit(srcIdx) & srcSet) == 0) {
+            srcSet |= Utils.bit(srcIdx); /* ...mark that source index as seen... */
+            int tgtIdx = srcIdx < n ? inv_tgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
+            if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_tgt |= Utils.bit(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = (byte)(tgt_idx ^ mask); /* the other part of the pair; to be swapped */
-              byte t = tgt[tgt_idx];                /* update the target side... */
-              tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
+              cfgTgt |= Utils.bit(tgtIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              int idx2 = (byte) (tgtIdx ^ mask); /* the other part of the pair; to be swapped */
+              byte t = tgt[tgtIdx];                /* update the target side... */
+              tgt[tgtIdx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
               inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
+              inv_tgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
             } else {
               /* straight */
-              tgt_idx ^= mask; /* the other part of the pair on the target side */
+              tgtIdx ^= mask; /* the other part of the pair on the target side */
             }
-            src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
-            if (((src_idx ^ tgt_idx) & mask) != 0) {
+            srcIdx = tgtIdx < n ? inv_src[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
+            if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_src |= Utils.bit(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= Utils.bit(idx2);            /* mark that source index as seen... */
-              byte t = src[src_idx];                /* ...and update the source side */
-              src[src_idx] = src[idx2];        /* ...configuration that the */
+              cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
+              byte t = src[srcIdx];                /* ...and update the source side */
+              src[srcIdx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
-              inv_src[src[idx2]] = (byte)idx2;       /* the other part of the reordered pair... */
-              inv_src[src[src_idx]] = (byte)src_idx; /* ...on the source side is src_idx! */
+              inv_src[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              inv_src[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
             } else {
               /* straight */
-              src_set |= Utils.bit(src_idx); /* mark that source index as seen */
-              src_idx ^= mask; /* the other part of the pair on the source side */
+              srcSet |= Utils.bit(srcIdx); /* mark that source index as seen */
+              srcIdx ^= mask; /* the other part of the pair on the source side */
             }
           }
           /* ... lower representative */
-          src_idx = main_idx ^ mask;
-          while ((Utils.bit(src_idx) & src_set) == 0) {
-            src_set |= Utils.bit(src_idx); /* ...mark that source index as seen... */
-            tgt_idx = src_idx < n ? inv_tgt[src[src_idx]] : src_idx; /* tgt_idx maps to src_idx */
-            if (((src_idx ^ tgt_idx) & mask) != 0) {
+          srcIdx = mainIdx ^ mask;
+          while ((Utils.bit(srcIdx) & srcSet) == 0) {
+            srcSet |= Utils.bit(srcIdx); /* ...mark that source index as seen... */
+            int tgtIdx = srcIdx < n ? inv_tgt[src[srcIdx]] : srcIdx; /* tgtIdx maps to srcIdx */
+            if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_tgt |= Utils.bit(tgt_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = tgt_idx ^ mask; /* the other part of the pair; to be swapped */
-              byte t = tgt[tgt_idx];                /* update the target side... */
-              tgt[tgt_idx] = tgt[idx2];        /* ...configuration that the... */
+              cfgTgt |= Utils.bit(tgtIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              final int idx2 = tgtIdx ^ mask; /* the other part of the pair; to be swapped */
+              final byte t = tgt[tgtIdx];                /* update the target side... */
+              tgt[tgtIdx] = tgt[idx2];        /* ...configuration that the... */
               tgt[idx2] = t;                   /* ...next stage sees; */
               inv_tgt[tgt[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
-              inv_tgt[tgt[tgt_idx]] = (byte) tgt_idx; /* ...on the target side is tgt_idx! */
+              inv_tgt[tgt[tgtIdx]] = (byte) tgtIdx; /* ...on the target side is tgtIdx! */
             } else {
               /* straight */
-              tgt_idx ^= mask; /* the other part of the pair on the target side */
+              tgtIdx ^= mask; /* the other part of the pair on the target side */
             }
-            src_idx = tgt_idx < n ? inv_src[tgt[tgt_idx]] : tgt_idx; /* src_idx maps to tgt_idx */
-            if (((src_idx ^ tgt_idx) & mask) != 0) {
+            srcIdx = tgtIdx < n ? inv_src[tgt[tgtIdx]] : tgtIdx; /* srcIdx maps to tgtIdx */
+            if (((srcIdx ^ tgtIdx) & mask) != 0) {
               /* cross (at the endpoint, to preserve path constructed so far) */
-              cfg_src |= Utils.bit(src_idx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
-              int idx2 = src_idx ^ mask; /* the other part of the pair; to be swapped */
-              src_set |= Utils.bit(idx2);            /* mark that source index as seen... */
-              byte t = src[src_idx];                /* ...and update the source side */
-              src[src_idx] = src[idx2];        /* ...configuration that the */
+              cfgSrc |= Utils.bit(srcIdx & nmask); /* set the appropriate bit in the Bene&scaron;scaron; network */
+              int idx2 = srcIdx ^ mask; /* the other part of the pair; to be swapped */
+              srcSet |= Utils.bit(idx2);            /* mark that source index as seen... */
+              byte t = src[srcIdx];                /* ...and update the source side */
+              src[srcIdx] = src[idx2];        /* ...configuration that the */
               src[idx2] = t;                   /* ...next stage sees; */
-              inv_src[src[idx2]] = (byte)idx2;       /* the other part of the reordered pair... */
-              inv_src[src[src_idx]] = (byte) src_idx; /* ...on the source side is src_idx! */
+              inv_src[src[idx2]] = (byte) idx2;       /* the other part of the reordered pair... */
+              inv_src[src[srcIdx]] = (byte) srcIdx; /* ...on the source side is srcIdx! */
             } else {
               /* straight */
-              src_set |= Utils.bit(src_idx); /* mark that source index as seen */
-              src_idx ^= mask; /* the other part of the pair on the source side */
+              srcSet |= Utils.bit(srcIdx); /* mark that source index as seen */
+              srcIdx ^= mask; /* the other part of the pair on the source side */
             }
           }
         }
       }
       /* record the configurations for the current stage */
-      if (cfg_src != 0) {
+      if (cfgSrc != 0) {
         long smask;
-        mShift[Fpos] = (byte) Utils.bit(stage);
+        mShift[fPos] = (byte) Utils.bit(stage);
         smask = 0;
         int t = n;
-        for (i = BITSPERLONG / n; i-- != 0; ) {
-          smask |= cfg_src;
-          cfg_src = (cfg_src | (cfg_src << t)) << t;
+        for (int i = BITSPERLONG / n; i-- != 0; ) {
+          smask |= cfgSrc;
+          cfgSrc = (cfgSrc | (cfgSrc << t)) << t;
           t <<= 1;
         }
-        mMask[Fpos] = smask;
-        Fpos++;
+        mMask[fPos] = smask;
+        fPos++;
       }
-      if (cfg_tgt != 0) {
+      if (cfgTgt != 0) {
         long smask;
-        Bpos--;
-        mShift[Bpos] = (byte) Utils.bit(stage);
+        --bPos;
+        mShift[bPos] = (byte) Utils.bit(stage);
         smask = 0;
         int t = n;
-        for (i = BITSPERLONG / n; i-- != 0; ) {
-          smask |= cfg_tgt;
-          cfg_tgt = (cfg_tgt | (cfg_tgt << t)) << t;
+        for (int i = BITSPERLONG / n; i-- != 0; ) {
+          smask |= cfgTgt;
+          cfgTgt = (cfgTgt | (cfgTgt << t)) << t;
           t <<= 1;
         }
-        mMask[Bpos] = smask;
+        mMask[bPos] = smask;
       }
     }
     /* make sure non-trivial stages are consecutive */
-    if (Bpos > Fpos) {
-      for (; Bpos < 2 * ld_n - 1; Fpos++, Bpos++) {
-        mShift[Fpos] = mShift[Bpos];
-        mMask[Fpos] = mMask[Bpos];
+    if (bPos > fPos) {
+      for (; bPos < 2 * ldN - 1; ++fPos, ++bPos) {
+        mShift[fPos] = mShift[bPos];
+        mMask[fPos] = mMask[bPos];
       }
-      mDepth = (byte) Fpos;
+      mDepth = (byte) fPos;
     } else {
-      mDepth = (byte) (2 * ld_n - 1);
+      mDepth = (byte) (2 * ldN - 1);
     }
   }
 
@@ -403,7 +393,7 @@ public class Benes {
   /*
    * Return n!.
    */
-  private static int factorial(int n) {
+  private static int factorial(final int n) {
     return n <= 1 ? 1 : n * factorial(n - 1);
   }
 
@@ -412,17 +402,16 @@ public class Benes {
    * Precompute Bene&scaron;scaron; networks for all permutations on at most BENES_SMALL points.
    */
   public static void initSmall() {
-    benes_small = new Benes[BENES_SMALL + 1][];
+    sBenesSmall = new Benes[BENES_SMALL + 1][];
     final int[] n = new int[1];
-    for (n[0] = 0; n[0] <= BENES_SMALL; n[0]++) {
-      benes_small[n[0]] = new Benes[factorial(n[0])];
+    for (n[0] = 0; n[0] <= BENES_SMALL; ++n[0]) {
+      sBenesSmall[n[0]] = new Benes[factorial(n[0])];
       final byte[] p = ByteUtils.identity(Permutation.create());
       do {
-        final byte[] p_ = Arrays.copyOf(p, p.length);
-        final byte[] pi_ = Permutation.inverse(n[0], p);
-        final Benes b = new Benes(n[0], p_, pi_);
-        // b.mRefCount = -1;
-        benes_small[n[0]][(int) Permutation.toInteger(n[0], p)] = b;
+        final byte[] pa = Arrays.copyOf(p, p.length);
+        final byte[] pia = Permutation.inverse(n[0], p);
+        final Benes b = new Benes(n[0], pa, pia);
+        sBenesSmall[n[0]][(int) Permutation.toInteger(n[0], p)] = b;
       } while (Permutation.next(1, n, p));  /* a single level: 0..n-1 */
     }
   }

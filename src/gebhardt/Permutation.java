@@ -38,7 +38,7 @@ final class Permutation {
 
   private Permutation() { }
 
-  /** Create an empty pemutation. */
+  /** Create an empty permutation. */
   static byte[] create() {
     return new byte[Utils.MAXN - 2];
   }

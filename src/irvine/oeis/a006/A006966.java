@@ -94,4 +94,15 @@ public class A006966 implements Sequence {
     e.doEnumeration();
     return Z.valueOf(e.getCount());
   }
+
+  /**
+   * Run this sequence for the specified value of <code>n</code>.
+   * @param args value to run
+   */
+  public static void main(final String... args) {
+    final int n = Integer.parseInt(args[0]);
+    final A006966 seq = new A006966();
+    seq.mN = n - 1;
+    System.out.println(seq.next());
+  }
 }

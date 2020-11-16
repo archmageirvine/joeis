@@ -372,18 +372,18 @@ public class Lattice {
       }
     }
     System.out.println("]");
-    System.out.printf("stabiliser [%d]:\n", mS.mN);
+    System.out.printf("stabiliser [%d]:%n", mS.mN);
     PermGrp.printGenerators(mS, 0);
     final int[] si = {mSi};
     final int[] ii = {i};
     while (Utils.extractLSB32(si, ii)) {
-      System.out.printf("(%d,%d) implicit\n", ii[0] - 1, ii[0]);
+      System.out.printf("(%d,%d) implicit%n", ii[0] - 1, ii[0]);
     }
   }
 
 
   /**
-   * Initialise L to the lattice with 2 elements.
+   * Initialise to the lattice with 2 elements.
    */
   public static Lattice init2() {
     final Lattice l = new Lattice();

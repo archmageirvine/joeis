@@ -687,7 +687,7 @@ final class Canonical {
     if (aa != null) {
       aPos = aa;
       if (VERBOSE) {
-        System.out.println("--- hashtable query/insert " + a + " => " + aPos);
+        System.out.printf("--- hashtable query/insert %x => %d%n", a, aPos);
       }
       /* ...if not, note the new stabiliser element */
       if (pos != 0) {
@@ -712,7 +712,7 @@ final class Canonical {
       }
     } else {
       if (VERBOSE) {
-        System.out.println("+++ hashtable query/insert " + a + " => " + aPos);
+        System.out.printf("+++ hashtable query/insert %x => %d%n", a, aPos);
       }
       /* ...if yes, note the permutation to the root and the applied generator */
       antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mGen = gen;
@@ -745,6 +745,9 @@ final class Canonical {
     /* check whether the element is new... */
     final Integer aa = antichain.mGlobals.mOrbitPos.putIfAbsent(a, aPos);
     if (aa != null) {
+      if (VERBOSE) {
+        System.out.printf("--- hashtable query/insert %x => %d%n", a, aa);
+      }
       aPos = aa;
       /* ...if no, note the new stabiliser element */
       if (pos != 0) {
@@ -761,14 +764,16 @@ final class Canonical {
         }
       }
       if (VERBOSE) {
-        System.out.println("[processElement_p1]: adding stabiliser generator ");
+        System.out.print("[processElement_p1]: adding stabiliser generator ");
         Permutation.print(s.mG.mN, h, 0);
       }
       if (!Permutation.isIdentity(s.mG.mN, h)) {
         s.addGenerator(h);
       }
     } else {
-      antichain.mGlobals.mOrbitPos.put(a, aPos);
+      if (VERBOSE) {
+        System.out.printf("+++ hashtable query/insert %x => %d%n", a, aPos);
+      }
       /* ...if yes, note the permutation to the root and the applied generator */
       antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mGen = gen;
       if (pos != 0) {
@@ -882,7 +887,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l[0], 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.println("+++ hashtable insert (" + l[0] + "," + 0L + ")");
+            System.out.printf("+++ hashtable insert (%x,0)%n", l[0]);
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -931,7 +936,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l, 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.println("+++ hashtable insert (" + l + "," + 0L + ")");
+            System.out.printf("+++ hashtable insert (%x,0)%n", l);
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -1090,6 +1095,10 @@ final class Canonical {
           Permutation.init(s.mG.mN, antichain.mGlobals.mOrbitElements[0].mToRoot);
           antichain.mGlobals.mOrbitPos.clear();
           antichain.mGlobals.mOrbitPos.put(l[0], 0);
+          if (VERBOSE) {
+            System.out.println("### hashtable cleared");
+            System.out.printf("+++ hashtable insert (%x,0)%n", l[0]);
+          }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
               Permutation.resize(g.mN, s.mG.mN, g.mPerm[gen]);
@@ -1152,6 +1161,10 @@ final class Canonical {
           Permutation.init(s.mG.mN, antichain.mGlobals.mOrbitElements[0].mToRoot);
           antichain.mGlobals.mOrbitPos.clear();
           antichain.mGlobals.mOrbitPos.put(l, 0);
+          if (VERBOSE) {
+            System.out.println("### hashtable cleared");
+            System.out.printf("+++ hashtable insert (%x,0)%n", l);
+          }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
               Permutation.resize(g.mN, s.mG.mN, g.mPerm[gen]);

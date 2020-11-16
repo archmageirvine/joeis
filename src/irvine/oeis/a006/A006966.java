@@ -9,7 +9,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A006966.
+ * A006966 Number of lattices on n unlabeled nodes.
  * @author Volker Gebhardt
  * @author Sean A. Irvine (Java port)
  */

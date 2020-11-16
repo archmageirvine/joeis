@@ -10,13 +10,13 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000598;
 
 /**
- * A036669 G.f.: A(x) = x*cycle_index(S4, B(x)-1), where B(x) is g.f. for A000598.
+ * A036670 G.f.: A(x) = x*cycle_index(S5, B(x)-1), where B(x) is g.f. for A000598.
  * @author Sean A. Irvine
  */
-public class A036669 extends A000598 {
+public class A036670 extends A000598 {
 
   private static final PolynomialRingField<Q> RING = new PolynomialRingField<>(Rationals.SINGLETON);
-  private static final CycleIndex S4 = SymmetricGroup.create(4).cycleIndex();
+  private static final CycleIndex S5 = SymmetricGroup.create(5).cycleIndex();
   private final Polynomial<Q> mG = RING.empty();
   private int mN = -1;
   {
@@ -26,6 +26,6 @@ public class A036669 extends A000598 {
   @Override
   public Z next() {
     mG.add(new Q(super.next()));
-    return S4.apply(mG, ++mN - 5).shift(5).coeff(mN).toZ();
+    return S5.apply(mG, ++mN - 6).shift(6).coeff(mN).toZ();
   }
 }

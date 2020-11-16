@@ -92,9 +92,9 @@ public abstract class LattEnum {
 
   /**
    * Return a structure for counting the descendants of *l of size equal to n, for which all intermediate lattices
-   * have size at most nMin.
+   * have size at most <code>nMin</code>.
    * @param l lattice
-   * @param n siz
+   * @param n size
    * @param nMin minimum size of intermediate lattices
    * @param globals global state
    */

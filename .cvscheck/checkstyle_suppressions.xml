@@ -21,6 +21,7 @@
     <suppress checks="FileLength" files=".*ZUtils.java"/>
     <suppress checks="FileLength" files=".*A018190.java"/>
     <suppress checks="FileLength" files=".*A028451.java"/>
+    <suppress checks="FileLength" files=".*Canonical.java"/>
     <suppress checks="JavadocMethod" files=".*Tests?.java"/>
     <suppress checks="MethodLength" files=".*AllTests.java"/>
     <suppress checks="MethodLength" files=".*BipScanner.java"/>

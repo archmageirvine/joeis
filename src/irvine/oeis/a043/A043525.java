@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.RunsBaseSequence;
 
 /**
- * A043525 Numbers n such that number of 9's in base 10 is 1.
+ * A043525 Numbers k such that the number of 9's in the base-10 representation of k is 1.
  * @author Georg Fischer
  */
 public class A043525 extends RunsBaseSequence {

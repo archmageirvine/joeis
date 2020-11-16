@@ -3,7 +3,7 @@ package irvine.oeis.a093;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A093196 Number of 4 X 4 pandiagonal magic squares with line sum 2n.
+ * A093196 Number of 4 X 4 pandiagonal magic squares with line sum 2*n.
  * @author Sean A. Irvine
  */
 public class A093196 extends LinearRecurrence {

@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036039 Triangle of multinomial coefficients of integer partitions read by rows (in Abramowitz and Stegun ordering).
+ * A036039 Irregular triangle of multinomial coefficients of integer partitions read by rows (in Abramowitz and Stegun ordering) giving the coefficients of the cycle index polynomials for the symmetric groups S_n.
  * @author Sean A. Irvine
  */
 public class A036039 implements Sequence {

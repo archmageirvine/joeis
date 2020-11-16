@@ -7,7 +7,7 @@ import irvine.oeis.PeriodicSequence;
 
 
 /**
- * A022601 Expansion of Product_{m>=1} (1+q^m)^(-6).
+ * A022601 Expansion of Product_{m&gt;=1} (1+q^m)^(-6).
  * Somos formula: e8F=ecalc([1, 1;2,-1}],[4, 6]);
  * @author Georg Fischer
  */

@@ -4,7 +4,7 @@ package irvine.oeis.a226;
 import irvine.oeis.RecordPositionSubsequence;
 
 /**
- * A226899 Numbers n for which Delta(m) < Delta(n) for all m < n, where Delta is Hooley's Delta function A226898.
+ * A226899 Numbers n for which Delta(m) &lt; Delta(n) for all m &lt; n, where Delta is Hooley's Delta function A226898.
  * @author Georg Fischer
  */
 public class A226899 extends RecordPositionSubsequence {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112154 McKay-Thompson series of class 16g for the Monster group.
- * Somos formula: T16g=symm(e32b, 2);; e32b=ecalc([2, 1;4, 1;1,-1;8,-1}],[4, 2]);
+ * Somos formula: <code>T16g=symm(e32b, 2);; e32b=ecalc([2, 1;4, 1;1,-1;8,-1}],[4, 2]);</code>
  * @author Georg Fischer
  */
 public class A112154 extends A034318 {

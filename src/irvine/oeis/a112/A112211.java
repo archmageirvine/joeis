@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A112211 McKay-Thompson series of class 84B for the Monster group.
- * Somos formula: e84B=ecalc([1, 1;6, 1;14, 1;21, 1;2,-1;3,-1;7,-1;42,-1}],[2, 1]);
+ * Somos formula: <code>e84B=ecalc([1, 1;6, 1;14, 1;21, 1;2,-1;3,-1;7,-1;42,-1}],[2, 1]);</code>
  * @author Georg Fischer
  */
 public class A112211 extends EulerTransform {

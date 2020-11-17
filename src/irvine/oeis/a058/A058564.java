@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052240;
 
 /**
  * A058564 McKay-Thompson series of class 21B for Monster.
- * Somos formula: -1,-1,-2,-1,-1,-2, 0,-1,-2,-1,-1,-2,-1, 0,-2,-1,-1,-2,-1,-1, 0
+ * Somos formula: <code>-1,-1,-2,-1,-1,-2, 0,-1,-2,-1,-1,-2,-1, 0,-2,-1,-1,-2,-1,-1, 0</code>
  * @author Georg Fischer
  */
 public class A058564 extends A052240 {

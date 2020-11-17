@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112169 McKay-Thompson series of class 28B for the Monster group.
- * Somos formula: T28B=1+symm(e28C1, 4);; e28C1=ecalc([1, 1;7, 1;4,-1;28,-1}],, 2);
+ * Somos formula: <code>T28B=1+symm(e28C1, 4);; e28C1=ecalc([1, 1;7, 1;4,-1;28,-1}],, 2);</code>
  * @author Georg Fischer
  */
 public class A112169 extends A034318 {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058097 McKay-Thompson series of class 10A for Monster.
- * Somos formula: T10A=-6+symm(e10D, 1);; e10D=ecalc([2, 1;5, 1;1,-1;10,-1}],[1, 6]);
+ * Somos formula: <code>T10A=-6+symm(e10D, 1);; e10D=ecalc([2, 1;5, 1;1,-1;10,-1}],[1, 6]);</code>
  * @author Georg Fischer
  */
 public class A058097 extends A034318 {

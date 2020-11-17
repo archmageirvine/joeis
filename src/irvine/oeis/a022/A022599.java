@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A022599 Expansion of Product_{m&gt;=1} (1+q^m)^(-4).
- * Somos formula: e12J=ecalc([1, 1;2,-1}],[6, 4]);
+ * Somos formula: <code>e12J=ecalc([1, 1;2,-1}],[6, 4]);</code>
  * @author Georg Fischer
  */
 public class A022599 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058567 McKay-Thompson series of class 22A for Monster.
- * Somos formula: T22A=2+symm(e22B, 4);; e22B=ecalc([1, 1;11, 1;2,-1;22,-1}],[1, 2]);
+ * Somos formula: <code>T22A=2+symm(e22B, 4);; e22B=ecalc([1, 1;11, 1;2,-1;22,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A058567 extends A034318 {

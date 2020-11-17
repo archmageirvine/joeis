@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A058095 McKay-Thompson series of class 9c for the Monster group.
- * Somos formula: e9c=ecalc([1, 1;3,-1}],[3, 4]);
+ * Somos formula: <code>e9c=ecalc([1, 1;3,-1}],[3, 4]);</code>
  * @author Georg Fischer
  */
 public class A058095 extends EulerTransform {

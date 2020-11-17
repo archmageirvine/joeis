@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A134131 Expansion of chi(-x) * chi(-x^9) / chi(-x^3)^2 in power of x where chi() is a Ramanujan theta function.
- * Somos formula: e108z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[6, 1]);
+ * Somos formula: <code>e108z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[6, 1]);</code>
  * @author Georg Fischer
  */
 public class A134131 extends EulerTransform {

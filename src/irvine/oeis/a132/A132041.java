@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A132041 Expansion of (eta(q) * eta(q^2) / (eta(q^5) * eta(q^10)))^2 in powers of q.
- * Somos formula: e10C=ecalc([1, 1;2, 1;5,-1;10,-1}],[1, 2]);
+ * Somos formula: <code>e10C=ecalc([1, 1;2, 1;5,-1;10,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A132041 extends EulerTransform {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A128518 Expansion of q^(-1) * (chi(-q^13) / chi(-q))^2 in powers of q where chi() is a Ramanujan theta function.
- * Somos formula: e26B=ecalc([2, 1;13, 1;1,-1;26,-1}],[1, 2]);
+ * Somos formula: <code>e26B=ecalc([2, 1;13, 1;1,-1;26,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A128518 extends EulerTransform {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A058664 McKay-Thompson series of class 40C for Monster.
- * Somos formula: e40C=ecalc([4, 1;5, 1;1,-1;20,-1}],[2, 1]);
+ * Somos formula: <code>e40C=ecalc([4, 1;5, 1;1,-1;20,-1}],[2, 1]);</code>
  * @author Georg Fischer
  */
 public class A058664 extends EulerTransform {

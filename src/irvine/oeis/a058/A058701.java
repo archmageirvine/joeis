@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058701 McKay-Thompson series of class 50A for Monster.
- * Somos formula: T50A=-1+symm(e50a, 1);; e50a=ecalc([2, 1;25, 1;1,-1;50,-1}]);
+ * Somos formula: <code>T50A=-1+symm(e50a, 1);; e50a=ecalc([2, 1;25, 1;1,-1;50,-1}]);</code>
  * @author Georg Fischer
  */
 public class A058701 extends A034318 {

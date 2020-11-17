@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A112192 Coefficients of replicable function number "48h".
- * Somos formula: e48h=ecalc([3, 1;4, 1;1,-1;12,-1}],[4, 1]);
+ * Somos formula: <code>e48h=ecalc([3, 1;4, 1;1,-1;12,-1}],[4, 1]);</code>
  * @author Georg Fischer
  */
 public class A112192 extends EulerTransform {

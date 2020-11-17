@@ -7,7 +7,7 @@ import irvine.oeis.a052.A052240;
 
 /**
  * A112158 McKay-Thompson series of class 20A for the Monster group.
- * Somos formula: 4,-4, 4, 0, 8,-4, 4, 0, 4,-8, 4, 0, 4,-4, 8, 0, 4,-4, 4, 0
+ * Somos formula: <code>4,-4, 4, 0, 8,-4, 4, 0, 4,-8, 4, 0, 4,-4, 8, 0, 4,-4, 4, 0</code>
  * @author Georg Fischer
  */
 public class A112158 extends A052240 {

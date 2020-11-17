@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A212253 McKay-Thompson series of class 35B for the Monster group with a(0) = 1.
- * Somos formula: e35B=ecalc([5, 1;7, 1;1,-1;35,-1}]);
+ * Somos formula: <code>e35B=ecalc([5, 1;7, 1;1,-1;35,-1}]);</code>
  * @author Georg Fischer
  */
 public class A212253 extends EulerTransform {

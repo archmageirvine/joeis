@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112163 Coefficients of replicable function number 24e.
- * Somos formula: T24e=symm(e24F, 1);; e24F=ecalc([2, 1;3, 1;1,-1;6,-1}],[4, 3]);
+ * Somos formula: <code>T24e=symm(e24F, 1);; e24F=ecalc([2, 1;3, 1;1,-1;6,-1}],[4, 3]);</code>
  * @author Georg Fischer
  */
 public class A112163 extends A034318 {

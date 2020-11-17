@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058689 McKay-Thompson series of class 46C for the Monster group.
- * Somos formula: T46C=1+symm(e46A, 2);; e46A=ecalc([1, 1;23, 1;2,-1;46,-1}]);
+ * Somos formula: <code>T46C=1+symm(e46A, 2);; e46A=ecalc([1, 1;23, 1;2,-1;46,-1}]);</code>
  * @author Georg Fischer
  */
 public class A058689 extends A034318 {

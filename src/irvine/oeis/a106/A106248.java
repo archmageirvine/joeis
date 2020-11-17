@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A106248 McKay-Thompson series of class 5B for the Monster group with a(0) = -6.
- * Somos formula: e5B=ecalc([1, 1;5,-1}],[1, 6]);
+ * Somos formula: <code>e5B=ecalc([1, 1;5,-1}],[1, 6]);</code>
  * @author Georg Fischer
  */
 public class A106248 extends EulerTransform {

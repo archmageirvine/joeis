@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A058678 McKay-Thompson series of class 42d for Monster.
- * Somos formula: e42d=ecalc([3, 1;7, 1;1,-1;21,-1}],[2, 1]);
+ * Somos formula: <code>e42d=ecalc([3, 1;7, 1;1,-1;21,-1}],[2, 1]);</code>
  * @author Georg Fischer
  */
 public class A058678 extends EulerTransform {

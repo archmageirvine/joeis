@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058623 McKay-Thompson series of class 30b for Monster.
- * Somos formula: T30b=symm(e30E, 1);; e30E=ecalc([2, 1;5, 1;1,-1;10,-1}],[3, 2]);
+ * Somos formula: <code>T30b=symm(e30E, 1);; e30E=ecalc([2, 1;5, 1;1,-1;10,-1}],[3, 2]);</code>
  * @author Georg Fischer
  */
 public class A058623 extends A034318 {

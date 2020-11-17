@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112203 McKay-Thompson series of class 60e for the Monster group.
- * Somos formula: T60e=symm(e60F, 1);; e60F=ecalc([2, 1;5, 1;1,-1;10,-1}],[6, 1]);
+ * Somos formula: <code>T60e=symm(e60F, 1);; e60F=ecalc([2, 1;5, 1;1,-1;10,-1}],[6, 1]);</code>
  * @author Georg Fischer
  */
 public class A112203 extends A034318 {

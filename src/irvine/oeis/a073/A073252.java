@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A073252 Coefficients of replicable function number "48g".
- * Somos formula: e48g=ecalc([2, 2;1,-1;4,-1}],[12, 2]);
+ * Somos formula: <code>e48g=ecalc([2, 2;1,-1;4,-1}],[12, 2]);</code>
  * @author Georg Fischer
  */
 public class A073252 extends EulerTransform {

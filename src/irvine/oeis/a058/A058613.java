@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058613 McKay-Thompson series of class 30B for the Monster group with a(0) = 0.
- * Somos formula: T30B=3+symm(e30A, 1);; e30A=ecalc([1, 1;6, 1;10, 1;15, 1;2,-1;3,-1;5,-1;30,-1}],[1, 3]);
+ * Somos formula: <code>T30B=3+symm(e30A, 1);; e30A=ecalc([1, 1;6, 1;10, 1;15, 1;2,-1;3,-1;5,-1;30,-1}],[1, 3]);</code>
  * @author Georg Fischer
  */
 public class A058613 extends A034318 {

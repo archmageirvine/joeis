@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058744 McKay-Thompson series of class 70A for Monster.
- * Somos formula: T70A=1+symm(e70B, 1);; e70B=ecalc([1, 1;10, 1;14, 1;35, 1;2,-1;5,-1;7,-1;70,-1}]);
+ * Somos formula: <code>T70A=1+symm(e70B, 1);; e70B=ecalc([1, 1;10, 1;14, 1;35, 1;2,-1;5,-1;7,-1;70,-1}]);</code>
  * @author Georg Fischer
  */
 public class A058744 extends A034318 {

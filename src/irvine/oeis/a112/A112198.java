@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112198 McKay-Thompson series of class 56c for the Monster group.
- * Somos formula: T56c=symm(e56B,-1);; e56B=ecalc([2, 1;7, 1;1,-1;14,-1}],[4, 1]);
+ * Somos formula: <code>T56c=symm(e56B,-1);; e56B=ecalc([2, 1;7, 1;1,-1;14,-1}],[4, 1]);</code>
  * @author Georg Fischer
  */
 public class A112198 extends A034318 {

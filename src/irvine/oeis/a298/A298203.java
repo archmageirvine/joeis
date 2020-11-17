@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A298203 Expansion of (1/q) * phi(-q) * phi(q^5) / (f(-q^4) * f(-q^20)) in powers of q where phi(), f() are Ramanujan theta functions.
- * Somos formula: e20d1=ecalc([1, 2;10, 5;2,-1;4,-1;5,-2;20,-3}],, 2);
+ * Somos formula: <code>e20d1=ecalc([1, 2;10, 5;2,-1;4,-1;5,-2;20,-3}],, 2);</code>
  * @author Georg Fischer
  */
 public class A298203 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A007263 Coefficients of completely replicable function "6d".
- * Somos formula: T6d=symm(e6F, 16);; e6F=ecalc([1, 1;2,-1}],[3, 8]);
+ * Somos formula: <code>T6d=symm(e6F, 16);; e6F=ecalc([1, 1;2,-1}],[3, 8]);</code>
  * @author Georg Fischer
  */
 public class A007263 extends A034318 {

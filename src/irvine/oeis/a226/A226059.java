@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A226059 Expansion of eta(q) * eta(q^9) * eta(q^21)^2 / (eta(q^3)^2 * eta(q^7) * eta(q^63)) in powers of q.
- * Somos formula: e63z=ecalc([1, 1;3,-2;7,-1;9, 1;21, 2;63,-1}]);
+ * Somos formula: <code>e63z=ecalc([1, 1;3,-2;7,-1;9, 1;21, 2;63,-1}]);</code>
  * @author Georg Fischer
  */
 public class A226059 extends EulerTransform {

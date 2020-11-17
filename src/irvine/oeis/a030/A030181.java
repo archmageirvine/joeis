@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A030181 Expansion of (eta(q) / eta(q^7))^4 in powers of q.
- * Somos formula: e7B=ecalc([1, 1;7,-1}],[1, 4]);
+ * Somos formula: <code>e7B=ecalc([1, 1;7,-1}],[1, 4]);</code>
  * @author Georg Fischer
  */
 public class A030181 extends EulerTransform {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A187148 McKay-Thompson series of class 12B for the Monster group with a(0) = -3.
- * Somos formula: e12B3=ecalc([1, 1;4, 1;6, 6;2,-2;3,-3;12,-3}],[1, 3]);
+ * Somos formula: <code>e12B3=ecalc([1, 1;4, 1;6, 6;2,-2;3,-3;12,-3}],[1, 3]);</code>
  * @author Georg Fischer
  */
 public class A187148 extends EulerTransform {

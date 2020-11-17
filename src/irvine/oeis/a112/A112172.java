@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112172 McKay-Thompson series of class 32d for the Monster group.
- * Somos formula: T32d=symm(e32e,-2);; e32e=ecalc([1, 1;4,-1}],[8, 1]);
+ * Somos formula: <code>T32d=symm(e32e,-2);; e32e=ecalc([1, 1;4,-1}],[8, 1]);</code>
  * @author Georg Fischer
  */
 public class A112172 extends A034318 {

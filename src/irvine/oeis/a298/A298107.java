@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A298107 Expansion of (eta(q^4) * eta(q^5) / (eta(q) * eta(q^20)))^2 in powers of q.
- * Somos formula: e20F1=ecalc([4, 1;5, 1;1,-1;20,-1}],[1, 2]);
+ * Somos formula: <code>e20F1=ecalc([4, 1;5, 1;1,-1;20,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A298107 extends EulerTransform {

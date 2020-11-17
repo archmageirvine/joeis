@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A022601 Expansion of Product_{m&gt;=1} (1+q^m)^(-6).
- * Somos formula: e8F=ecalc([1, 1;2,-1}],[4, 6]);
+ * Somos formula: <code>e8F=ecalc([1, 1;2,-1}],[4, 6]);</code>
  * @author Georg Fischer
  */
 public class A022601 extends EulerTransform {

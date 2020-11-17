@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A132320 McKay-Thompson series of class 22B for the Monster group with a(0) = -2.
- * Somos formula: e22B=ecalc([1, 1;11, 1;2,-1;22,-1}],[1, 2]);
+ * Somos formula: <code>e22B=ecalc([1, 1;11, 1;2,-1;22,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A132320 extends EulerTransform {

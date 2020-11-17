@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A244745 McKay-Thompson series of class 5A for the Monster group with a(0) = -6.
- * Somos formula: f5A=symm(e5B, 125);; e5B=ecalc([1, 1;5,-1}],[1, 6]);
+ * Somos formula: <code>f5A=symm(e5B, 125);; e5B=ecalc([1, 1;5,-1}],[1, 6]);</code>
  * @author Georg Fischer
  */
 public class A244745 extends A034318 {

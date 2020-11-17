@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058096 McKay-Thompson series of class 9d for Monster.
- * Somos formula: T9d=symm(e27b,-3);; e27b=ecalc([3, 2;1,-1;9,-1}],[3, 2]);
+ * Somos formula: <code>T9d=symm(e27b,-3);; e27b=ecalc([3, 2;1,-1;9,-1}],[3, 2]);</code>
  * @author Georg Fischer
  */
 public class A058096 extends A034318 {

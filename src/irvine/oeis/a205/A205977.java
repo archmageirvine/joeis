@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A205977 McKay-Thompson series of class 30F for the Monster group with a(0) = 1.
- * Somos formula: e30F=ecalc([3, 1;5, 1;6, 1;10, 1;1,-1;2,-1;15,-1;30,-1}]);
+ * Somos formula: <code>e30F=ecalc([3, 1;5, 1;6, 1;10, 1;1,-1;2,-1;15,-1;30,-1}]);</code>
  * @author Georg Fischer
  */
 public class A205977 extends EulerTransform {

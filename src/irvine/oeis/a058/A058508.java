@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058508 McKay-Thompson series of class 15A for Monster.
- * Somos formula: T15A=2+symm(e15B, 9);; e15B=ecalc([1, 1;5, 1;3,-1;15,-1}],[1, 2]);
+ * Somos formula: <code>T15A=2+symm(e15B, 9);; e15B=ecalc([1, 1;5, 1;3,-1;15,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A058508 extends A034318 {

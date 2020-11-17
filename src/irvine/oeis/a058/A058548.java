@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058548 McKay-Thompson series of class 18j for the Monster group.
- * Somos formula: T18j=symm(e54z, 1);; e54z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[3, 2]);
+ * Somos formula: <code>T18j=symm(e54z, 1);; e54z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[3, 2]);</code>
  * @author Georg Fischer
  */
 public class A058548 extends A034318 {

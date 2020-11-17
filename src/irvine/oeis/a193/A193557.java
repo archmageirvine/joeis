@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A193557 Expansion of (1/q) * chi(-q) * chi(-q^3) * chi(-q^6)^4 / chi(q)^4 in powers of q where chi() is a Ramanujan theta function.
- * Somos formula: e12z1=ecalc([1, 5;2,-9;3, 1;4, 4;6, 3;12,-4}]);
+ * Somos formula: <code>e12z1=ecalc([1, 5;2,-9;3, 1;4, 4;6, 3;12,-4}]);</code>
  * @author Georg Fischer
  */
 public class A193557 extends EulerTransform {

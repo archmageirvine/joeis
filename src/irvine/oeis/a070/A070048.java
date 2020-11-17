@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A070048 Number of partitions of n into odd parts in which no part appears more than thrice.
- * Somos formula: e64a=ecalc([2, 1;4, 1;1,-1;8,-1}],[8, 1]);
+ * Somos formula: <code>e64a=ecalc([2, 1;4, 1;1,-1;8,-1}],[8, 1]);</code>
  * @author Georg Fischer
  */
 public class A070048 extends EulerTransform {

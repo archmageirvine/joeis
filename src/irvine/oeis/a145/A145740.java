@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A145740 McKay-Thompson series of class 20C for the Monster group with a(0) = -2.
- * Somos formula: e20C1=ecalc([1, 1;4, 1;10, 1;2,-1;5,-1;20,-1}],[1, 2]);
+ * Somos formula: <code>e20C1=ecalc([1, 1;4, 1;10, 1;2,-1;5,-1;20,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A145740 extends EulerTransform {

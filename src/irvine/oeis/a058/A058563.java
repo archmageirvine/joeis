@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058563 McKay-Thompson series of class 21A for Monster.
- * Somos formula: T21A=1+symm(e21B, 7);; e21B=ecalc([1, 1;3, 1;7,-1;21,-1}]);
+ * Somos formula: <code>T21A=1+symm(e21B, 7);; e21B=ecalc([1, 1;3, 1;7,-1;21,-1}]);</code>
  * @author Georg Fischer
  */
 public class A058563 extends A034318 {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A112206 Coefficients of replicable function number "72b".
- * Somos formula: e72b=ecalc([2, 2;6, 2;1,-1;3,-1;4,-1;12,-1}],[6, 1]);
+ * Somos formula: <code>e72b=ecalc([2, 2;6, 2;1,-1;3,-1;4,-1;12,-1}],[6, 1]);</code>
  * @author Georg Fischer
  */
 public class A112206 extends EulerTransform {

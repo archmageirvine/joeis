@@ -4,7 +4,7 @@ package irvine.oeis.a034;
 
 /**
  * A034319 McKay-Thompson series of class 13A for the Monster group with a(0) = 0.
- * Somos formula: T13A=2+symm(e13B, 13);; e13B=ecalc([1, 1;13,-1}],[1, 2]);
+ * Somos formula: <code>T13A=2+symm(e13B, 13);; e13B=ecalc([1, 1;13,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A034319 extends A034318 {

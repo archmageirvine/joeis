@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058557 McKay-Thompson series of class 20b for Monster.
- * Somos formula: T20b=symm(e20E, 1);; e20E=ecalc([2, 1;5, 1;1,-1;10,-1}],[2, 3]);
+ * Somos formula: <code>T20b=symm(e20E, 1);; e20E=ecalc([2, 1;5, 1;1,-1;10,-1}],[2, 3]);</code>
  * @author Georg Fischer
  */
 public class A058557 extends A034318 {

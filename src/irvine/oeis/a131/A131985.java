@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A131985 Expansion of (eta(q^3)^2 / (eta(q) * eta(q^9)))^6 in powers of q.
- * Somos formula: e9A=ecalc([3, 2;1,-1;9,-1}],[1, 6]);
+ * Somos formula: <code>e9A=ecalc([3, 2;1,-1;9,-1}],[1, 6]);</code>
  * @author Georg Fischer
  */
 public class A131985 extends EulerTransform {

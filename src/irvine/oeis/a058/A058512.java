@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058512 Coefficients of replicable function number 15a.
- * Somos formula: T15a=symm(e15D, 5);; e15D=ecalc([1, 1;5,-1}],[3, 2]);
+ * Somos formula: <code>T15a=symm(e15D, 5);; e15D=ecalc([1, 1;5,-1}],[3, 2]);</code>
  * @author Georg Fischer
  */
 public class A058512 extends A034318 {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A186964 McKay-Thompson series of class 36D for the Monster group with a(0) = 2.
- * Somos formula: e36D3=ecalc([2, 3;3, 1;12, 1;18, 3;1,-2;4,-1;6,-2;9,-1;36,-2}]);
+ * Somos formula: <code>e36D3=ecalc([2, 3;3, 1;12, 1;18, 3;1,-2;4,-1;6,-2;9,-1;36,-2}]);</code>
  * @author Georg Fischer
  */
 public class A186964 extends EulerTransform {

@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A096562 Coefficients of replicable function number "25a" with a(0) = -1.
- * Somos formula: e25a=ecalc([1, 1;25,-1}]);
+ * Somos formula: <code>e25a=ecalc([1, 1;25,-1}]);</code>
  * @author Georg Fischer
  */
 public class A096562 extends EulerTransform {

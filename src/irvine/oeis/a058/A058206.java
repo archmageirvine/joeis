@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058206 McKay-Thompson series of class 12C for the Monster group.
- * Somos formula: T12C=symm(e12F, 1);; e12F=ecalc([2, 1;3, 1;1,-1;6,-1}],[2, 6]);
+ * Somos formula: <code>T12C=symm(e12F, 1);; e12F=ecalc([2, 1;3, 1;1,-1;6,-1}],[2, 6]);</code>
  * @author Georg Fischer
  */
 public class A058206 extends A034318 {

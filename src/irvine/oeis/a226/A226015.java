@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A226015 McKay-Thompson series of class 21D for the Monster group with a(0) = 2.
- * Somos formula: e21D=ecalc([3, 1;7, 1;1,-1;21,-1}],[1, 2]);
+ * Somos formula: <code>e21D=ecalc([3, 1;7, 1;1,-1;21,-1}],[1, 2]);</code>
  * @author Georg Fischer
  */
 public class A226015 extends EulerTransform {

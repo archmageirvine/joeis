@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A124972 Expansion of Fricke's 32*tau_4(z) in powers of q = exp(2*Pi*i*z).
- * Somos formula: e4C1=ecalc([1, 1;4,-1}],[1, 8], 2);
+ * Somos formula: <code>e4C1=ecalc([1, 1;4,-1}],[1, 8], 2);</code>
  * @author Georg Fischer
  */
 public class A124972 extends EulerTransform {

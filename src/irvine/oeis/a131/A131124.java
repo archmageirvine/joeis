@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A131124 Expansion of q^(-1) * (phi(-q) / psi(q^4))^2 in powers of q where phi(), psi() are Ramanujan theta functions.
- * Somos formula: e8E1=ecalc([1, 2;4, 1;2,-1;8,-2}],[1, 2], 2);
+ * Somos formula: <code>e8E1=ecalc([1, 2;4, 1;2,-1;8,-2}],[1, 2], 2);</code>
  * @author Georg Fischer
  */
 public class A131124 extends EulerTransform {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058589 McKay-Thompson series of class 24f for Monster.
- * Somos formula: T24f=symm(e24G,-3);; e24G=ecalc([1, 1;2, 1;3,-1;6,-1}],[4, 1]);
+ * Somos formula: <code>T24f=symm(e24G,-3);; e24G=ecalc([1, 1;2, 1;3,-1;6,-1}],[4, 1]);</code>
  * @author Georg Fischer
  */
 public class A058589 extends A034318 {

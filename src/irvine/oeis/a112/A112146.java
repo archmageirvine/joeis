@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112146 McKay-Thompson series of class 9b for the Monster group.
- * Somos formula: T9b=symm(e9c, 9);; e9c=ecalc([1, 1;3,-1}],[3, 4]);
+ * Somos formula: <code>T9b=symm(e9c, 9);; e9c=ecalc([1, 1;3,-1}],[3, 4]);</code>
  * @author Georg Fischer
  */
 public class A112146 extends A034318 {

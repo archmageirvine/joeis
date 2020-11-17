@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A029845 Expansion of 16/lambda(z) in powers of nome q = exp(Pi*i*z).
- * Somos formula: e4C2=ecalc([2, 3;1,-1;4,-2}],[1, 8], 2);
+ * Somos formula: <code>e4C2=ecalc([2, 3;1,-1;4,-2}],[1, 8], 2);</code>
  * @author Georg Fischer
  */
 public class A029845 extends EulerTransform {

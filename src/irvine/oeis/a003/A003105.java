@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A003105 Schur's 1926 partition theorem: number of partitions of n into parts 6n+1 or 6n-1.
- * Somos formula: e72e=ecalc([2, 1;3, 1;1,-1;6,-1}],[12, 1]);
+ * Somos formula: <code>e72e=ecalc([2, 1;3, 1;1,-1;6,-1}],[12, 1]);</code>
  * @author Georg Fischer
  */
 public class A003105 extends EulerTransform {

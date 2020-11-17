@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A007248 McKay-Thompson series of class 4C for the Monster group.
- * Somos formula: T4C=symm(e8E2, 16);; e8E2=ecalc([2, 3;1,-1;4,-2}],[2, 4]);
+ * Somos formula: <code>T4C=symm(e8E2, 16);; e8E2=ecalc([2, 3;1,-1;4,-2}],[2, 4]);</code>
  * @author Georg Fischer
  */
 public class A007248 extends A034318 {

@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058491 Coefficients of replicable function number 12c.
- * Somos formula: T12c=symm(e12I1, 3);; e12I1=ecalc([2, 2;3, 1;1,-1;6,-2}],[2, 2]);
+ * Somos formula: <code>T12c=symm(e12I1, 3);; e12I1=ecalc([2, 2;3, 1;1,-1;6,-2}],[2, 2]);</code>
  * @author Georg Fischer
  */
 public class A058491 extends A034318 {

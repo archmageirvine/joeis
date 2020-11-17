@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A298116 Expansion of 1/q * chi(q) * chi(q^5) * chi(-q^20)^2 / chi(-q)^2 in powers of q where chi() is a Ramanujan theta function.
- * Somos formula: e20F2=ecalc([2, 4;10, 4;1,-3;4,-1;5,-1;20,-3}]);
+ * Somos formula: <code>e20F2=ecalc([2, 4;10, 4;1,-3;4,-1;5,-1;20,-3}]);</code>
  * @author Georg Fischer
  */
 public class A298116 extends EulerTransform {

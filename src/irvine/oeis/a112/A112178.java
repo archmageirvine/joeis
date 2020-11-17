@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112178 McKay-Thompson series of class 36i for the Monster group.
- * Somos formula: T36i=symm(e108z,-1);; e108z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[6, 1]);
+ * Somos formula: <code>T36i=symm(e108z,-1);; e108z=ecalc([1, 1;6, 2;9, 1;2,-1;3,-2;18,-1}],[6, 1]);</code>
  * @author Georg Fischer
  */
 public class A112178 extends A034318 {

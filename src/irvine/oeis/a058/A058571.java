@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A058571 McKay-Thompson series of class 24A for Monster.
- * Somos formula: e24A=ecalc([2, 2;6, 2;1,-1;3,-1;4,-1;12,-1}],[2, 3]);
+ * Somos formula: <code>e24A=ecalc([2, 2;6, 2;1,-1;3,-1;4,-1;12,-1}],[2, 3]);</code>
  * @author Georg Fischer
  */
 public class A058571 extends EulerTransform {

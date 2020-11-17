@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A058544 McKay-Thompson series of class 18f for the Monster group.
- * Somos formula: T18f=symm(e18i,-3);; e18i=ecalc([1, 1;3,-1}],[6, 2]);
+ * Somos formula: <code>T18f=symm(e18i,-3);; e18i=ecalc([1, 1;3,-1}],[6, 2]);</code>
  * @author Georg Fischer
  */
 public class A058544 extends A034318 {

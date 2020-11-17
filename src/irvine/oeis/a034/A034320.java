@@ -8,7 +8,7 @@ import irvine.oeis.PeriodicSequence;
 
 /**
  * A034320 Coefficients of completely replicable function 50a with a(0) = 1.
- * Somos formula: e50a=ecalc([2, 1;25, 1;1,-1;50,-1}]);
+ * Somos formula: <code>e50a=ecalc([2, 1;25, 1;1,-1;50,-1}]);</code>
  * @author Georg Fischer
  */
 public class A034320 extends EulerTransform {

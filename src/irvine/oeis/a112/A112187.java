@@ -7,7 +7,7 @@ import irvine.oeis.a034.A034318;
 
 /**
  * A112187 McKay-Thompson series of class 48b for the Monster group.
- * Somos formula: T48b=symm(e48h,-1);; e48h=ecalc([3, 1;4, 1;1,-1;12,-1}],[4, 1]);
+ * Somos formula: <code>T48b=symm(e48h,-1);; e48h=ecalc([3, 1;4, 1;1,-1;12,-1}],[4, 1]);</code>
  * @author Georg Fischer
  */
 public class A112187 extends A034318 {

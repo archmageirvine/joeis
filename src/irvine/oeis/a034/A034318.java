@@ -86,7 +86,7 @@ public class A034318 implements Sequence {
 
   private Z advance() {
     ++mN; // starts with offset (= -1)
-    Z result = null;
+    final Z result;
     if (mN == mOffset) {
       result = mET1.next();
     } else if (mN == 0) {

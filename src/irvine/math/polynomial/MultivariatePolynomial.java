@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import irvine.math.api.Field;
-import irvine.math.group.IntegerField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
@@ -69,12 +68,12 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
 
   /**
    * Construct the multivariate polynomial 1 in specified number of variables.
-   *
+   * @param coefficientField underlying coefficient field.
    * @param variables number of variables
    * @return 1
    */
-  public static MultivariatePolynomial<Z> one(final int variables) {
-    return new MultivariatePolynomial<>(IntegerField.SINGLETON, variables, new int[][] {new int[variables]}, Z.ONE);
+  public static <E> MultivariatePolynomial<E> one(final Field<E> coefficientField, final int variables) {
+    return new MultivariatePolynomial<>(coefficientField, variables, new int[][] {new int[variables]}, coefficientField.one());
   }
 
   /**

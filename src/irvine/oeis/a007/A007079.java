@@ -18,7 +18,7 @@ public class A007079 implements Sequence {
   @Override
   public Z next() {
     mN += 2;
-    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(mN);
+    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, mN);
     final int[] degreeLimits = new int[mN];
     Arrays.fill(degreeLimits, (mN - 1) / 2);
     final Z[] coeff = new Z[2];

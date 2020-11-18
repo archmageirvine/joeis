@@ -19,7 +19,7 @@ public class A007081 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(mN);
+    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, mN);
     final int[] degreeLimits = new int[mN];
     Arrays.fill(degreeLimits, mN - 1);
     for (int k = 0; k < mN; ++k) {

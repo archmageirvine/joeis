@@ -67,7 +67,7 @@ public class A006947 implements Sequence {
      * Counting Magog)
      */
 
-    MultivariatePolynomial<Z> gu = MultivariatePolynomial.one(k);
+    MultivariatePolynomial<Z> gu = MultivariatePolynomial.one(IntegerField.SINGLETON, k);
     for (int i = 1; i < k; ++i) {
       final Polynomial<Z> normal = RING.divide(RING.oneMinusXToTheN(Math.min(a[i - 1], n - i) - a[i] + 1), RING.oneMinusXToTheN(1));
       final Polynomial<Z> m = normal.shift(a[i]);

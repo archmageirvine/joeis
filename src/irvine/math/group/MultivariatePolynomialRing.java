@@ -3,41 +3,43 @@ package irvine.math.group;
 import java.util.Iterator;
 import java.util.Map;
 
+import irvine.math.api.Field;
 import irvine.math.polynomial.MultivariatePolynomial;
-import irvine.math.z.Integers;
 import irvine.math.z.Z;
 
 /**
  * A multivariate polynomial ring over integers.
+ * @param <E> underlying coefficient type
  * @author Sean A. Irvine
  */
-public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynomial<Z>> {
+public class MultivariatePolynomialRing<E> extends AbstractRing<MultivariatePolynomial<E>> {
 
   // At present only supplies minimal implementations to get things done. This could be improved.
 
-  private final Integers mElementRing = Integers.SINGLETON;
-  private final MultivariatePolynomial<Z> mZeroPolynomial;
-  private final MultivariatePolynomial<Z> mOnePolynomial;
+  private final Field<E> mCoefficientField;
+  private final MultivariatePolynomial<E> mZeroPolynomial;
+  private final MultivariatePolynomial<E> mOnePolynomial;
   private final int mNumVariables;
 
   /**
    * Construct a new polynomial ring for matrices of a specified size.
+   * @param coefficientField underlying coefficient field
    * @param numVariables number of variables
    */
-  public MultivariatePolynomialRing(final int numVariables) {
+  public MultivariatePolynomialRing(final Field<E> coefficientField, final int numVariables) {
+    mCoefficientField = coefficientField;
     mNumVariables = numVariables;
-    mZeroPolynomial = new MultivariatePolynomial<>(IntegerField.SINGLETON, numVariables);
-    mOnePolynomial = MultivariatePolynomial.one(numVariables);
+    mZeroPolynomial = new MultivariatePolynomial<>(coefficientField, numVariables);
+    mOnePolynomial = MultivariatePolynomial.one(coefficientField, numVariables);
   }
 
   @Override
-  @SuppressWarnings("unchecked")
-  public MultivariatePolynomial<Z> one() {
+  public MultivariatePolynomial<E> one() {
     return mOnePolynomial;
   }
 
   @Override
-  public MultivariatePolynomial<Z> zero() {
+  public MultivariatePolynomial<E> zero() {
     return mZeroPolynomial;
   }
 
@@ -46,11 +48,11 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param m index
    * @return single variable
    */
-  public MultivariatePolynomial<Z> var(final int m) {
-    final MultivariatePolynomial<Z> res = new MultivariatePolynomial<>(IntegerField.SINGLETON, mNumVariables);
+  public MultivariatePolynomial<E> var(final int m) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mNumVariables);
     final int[] powers = new int[mNumVariables];
     powers[m] = 1;
-    res.put(new MultivariatePolynomial.Term(powers), Z.ONE);
+    res.put(new MultivariatePolynomial.Term(powers), mCoefficientField.one());
     return res;
   }
 
@@ -61,40 +63,40 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
 
   @Override
   public boolean isCommutative() {
-    return mElementRing.isCommutative();
+    return mCoefficientField.isCommutative();
   }
 
   @Override
   public boolean isIntegralDomain() {
-    return mElementRing.isIntegralDomain();
+    return mCoefficientField.isIntegralDomain();
   }
 
   @Override
-  public boolean contains(final MultivariatePolynomial<Z> a) {
+  public boolean contains(final MultivariatePolynomial<E> a) {
     return a != null;
   }
 
   @Override
-  public MultivariatePolynomial<Z> add(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b) {
+  public MultivariatePolynomial<E> add(final MultivariatePolynomial<E> a, final MultivariatePolynomial<E> b) {
     return a.add(b);
   }
 
   @Override
-  public MultivariatePolynomial<Z> negate(final MultivariatePolynomial<Z> a) {
-    final MultivariatePolynomial<Z> t = new MultivariatePolynomial<>(IntegerField.SINGLETON, a.numberVariables());
-    for (Map.Entry<MultivariatePolynomial.Term, Z> e : a.entrySet()) {
-      t.put(e.getKey(), e.getValue().negate());
+  public MultivariatePolynomial<E> negate(final MultivariatePolynomial<E> a) {
+    final MultivariatePolynomial<E> t = new MultivariatePolynomial<>(mCoefficientField, a.numberVariables());
+    for (Map.Entry<MultivariatePolynomial.Term, E> e : a.entrySet()) {
+      t.put(e.getKey(), mCoefficientField.negate(e.getValue()));
     }
     return t;
   }
 
   @Override
-  public Iterator<MultivariatePolynomial<Z>> iterator() {
+  public Iterator<MultivariatePolynomial<E>> iterator() {
     throw new UnsupportedOperationException();
   }
 
   @Override
-  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b) {
+  public MultivariatePolynomial<E> multiply(final MultivariatePolynomial<E> a, final MultivariatePolynomial<E> b) {
     return a.multiply(b);
   }
 
@@ -106,7 +108,7 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param degreeLimits maximum degrees to retain
    * @return product
    */
-  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b, final int[] degreeLimits) {
+  public MultivariatePolynomial<E> multiply(final MultivariatePolynomial<E> a, final MultivariatePolynomial<E> b, final int[] degreeLimits) {
     return a.multiply(b, degreeLimits);
   }
 
@@ -116,22 +118,22 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param n multiplicand
    * @return polynomial
    */
-  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> p, final Z n) {
+  public MultivariatePolynomial<E> multiply(final MultivariatePolynomial<E> p, final E n) {
     return p.scalarMultiply(n);
   }
 
   @Override
   public String toString() {
-    return mElementRing + "[xyz...]";
+    return mCoefficientField + "[xyz...]";
   }
 
   @Override
-  public MultivariatePolynomial<Z> coerce(final long n) {
-    return mOnePolynomial.scalarMultiply(Z.valueOf(n));
+  public MultivariatePolynomial<E> coerce(final long n) {
+    return mOnePolynomial.scalarMultiply(mCoefficientField.coerce(n));
   }
 
   @Override
   public Z characteristic() {
-    return mElementRing.characteristic();
+    return mCoefficientField.characteristic();
   }
 }

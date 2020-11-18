@@ -12,7 +12,7 @@ import junit.framework.TestCase;
 public class MultivariatePolynomialRingTest extends TestCase {
 
   public void test() {
-    final MultivariatePolynomialRing ring = new MultivariatePolynomialRing(2);
+    final MultivariatePolynomialRing ring = new MultivariatePolynomialRing(IntegerField.SINGLETON, 2);
     assertNull(ring.size());
     assertTrue(ring.isAbelian());
     assertTrue(ring.isCommutative());

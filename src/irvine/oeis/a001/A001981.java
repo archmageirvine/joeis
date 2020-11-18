@@ -12,11 +12,11 @@ import irvine.oeis.Sequence;
  */
 public class A001981 implements Sequence {
 
-  private static final MultivariatePolynomial<Z> NUM = MultivariatePolynomial.one(2);
+  private static final MultivariatePolynomial<Z> NUM = MultivariatePolynomial.one(IntegerField.SINGLETON, 2);
   private static final MultivariatePolynomial<Z> DEN;
 
   static {
-    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(2);
+    MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2);
     for (int k = 0; k <= 8; ++k) {
       p = p.multiply(new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}, {1, k}}, Z.ONE, Z.NEG_ONE));
     }

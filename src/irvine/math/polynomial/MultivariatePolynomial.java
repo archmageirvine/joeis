@@ -1,13 +1,11 @@
 package irvine.math.polynomial;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 import irvine.math.api.Field;
 import irvine.math.group.PolynomialRing;
-import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
 
 /**
@@ -93,34 +91,6 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
       mp.add(new Term(powers), poly.coeff(k));
     }
     return mp;
-  }
-
-  /**
-   * Expand the bivariate polynomial ratio <code>num/den</code> extracting the univariate
-   * coefficient <code>[y^ycoeff]</code> and return the result as a univariate polynomial
-   * series to the specified order.
-   * @param num numerator
-   * @param den denominator
-   * @param ycoeff <i>y</i>-coefficient
-   * @param xorder order of series to return
-   * @return univariate polynomial series in first variable
-   */
-  public static <E> Polynomial<E> series(final MultivariatePolynomial<E> num, final MultivariatePolynomial<E> den, final int ycoeff, final int xorder) {
-    if (num.numberVariables() != 2 || den.numberVariables() != 2) {
-      throw new IllegalArgumentException();
-    }
-    //System.out.println("series = ( " + num + ")/(" + den + ")");
-    final PolynomialRingField<E> field = new PolynomialRingField<>(num.mCoefficientField);
-    final ArrayList<Polynomial<E>> a = new ArrayList<>();
-    final Polynomial<E> d = den.extract(1, 0).toPolynomial(); // y^0
-    for (int k = 0; k <= ycoeff; ++k) {
-      Polynomial<E> s = num.extract(1, k).toPolynomial(); // y^k
-      for (int j = 0; j < k; ++j) {
-        s = field.subtract(s, field.multiply(a.get(j), den.extract(1, k - j).toPolynomial()));
-      }
-      a.add(field.series(s, d, xorder));
-    }
-    return a.get(ycoeff);
   }
 
   private final Field<E> mCoefficientField;

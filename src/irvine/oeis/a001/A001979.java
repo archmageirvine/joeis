@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.group.IntegerField;
+import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
@@ -12,7 +13,8 @@ import irvine.oeis.Sequence;
  */
 public class A001979 implements Sequence {
 
-  private static final MultivariatePolynomial<Z> NUM = MultivariatePolynomial.one(IntegerField.SINGLETON, 2);
+  private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
+  private static final MultivariatePolynomial<Z> NUM = RING.one();
   private static final MultivariatePolynomial<Z> DEN;
 
   static {
@@ -28,7 +30,7 @@ public class A001979 implements Sequence {
   @Override
   public Z next() {
     ++mN;
-    final Polynomial<Z> s = MultivariatePolynomial.series(NUM, DEN, 7 * mN / 2, mN);
+    final Polynomial<Z> s = RING.series(NUM, DEN, 7 * mN / 2, mN);
     return s.coeff(mN);
   }
 }

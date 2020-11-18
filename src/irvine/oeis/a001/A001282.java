@@ -1,6 +1,7 @@
 package irvine.oeis.a001;
 
 import irvine.math.group.IntegerField;
+import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.polynomial.Polynomial;
@@ -13,6 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A001282 implements Sequence {
 
+  private static final MultivariatePolynomialField<Z> RING1 = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final MultivariatePolynomial<Z> NUM = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {3, 0}, {2, 1}, {3, 1}, {1, 0}}, Z.TWO, Z.NEG_ONE, Z.TWO.negate(), Z.ONE, Z.NEG_ONE);
   private static final MultivariatePolynomial<Z> DEN = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {0, 0}}, Z.ONE, Z.NEG_ONE, Z.NEG_ONE);
@@ -35,7 +37,7 @@ public class A001282 implements Sequence {
       f = f.multiply(k);
       num = num.multiply(NUM, lim);
       den = den.multiply(DEN, lim);
-      final Polynomial<Z> s = MultivariatePolynomial.series(num, den, order(), mN);
+      final Polynomial<Z> s = RING1.series(num, den, order(), mN);
       p = RING.add(p, RING.multiply(s, f));
     }
     return p.coeff(mN).divide2();

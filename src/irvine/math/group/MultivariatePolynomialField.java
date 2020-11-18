@@ -1,10 +1,12 @@
 package irvine.math.group;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Map;
 
 import irvine.math.api.Field;
 import irvine.math.polynomial.MultivariatePolynomial;
+import irvine.math.polynomial.Polynomial;
 import irvine.math.z.Z;
 
 /**
@@ -13,7 +15,6 @@ import irvine.math.z.Z;
  * @author Sean A. Irvine
  */
 public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePolynomial<E>> {
-
   // At present only supplies minimal implementations to get things done. This could be improved.
 
   private final Field<E> mCoefficientField;
@@ -140,6 +141,34 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
   @Override
   public MultivariatePolynomial<E> inverse(final MultivariatePolynomial<E> element) {
     throw new UnsupportedOperationException();
+  }
+
+  /**
+   * Expand the bivariate polynomial ratio <code>num/den</code> extracting the univariate
+   * coefficient <code>[y^ycoeff]</code> and return the result as a univariate polynomial
+   * series to the specified order.
+   * @param num numerator
+   * @param den denominator
+   * @param ycoeff <i>y</i>-coefficient
+   * @param xorder order of series to return
+   * @return univariate polynomial series in first variable
+   */
+  public Polynomial<E> series(final MultivariatePolynomial<E> num, final MultivariatePolynomial<E> den, final int ycoeff, final int xorder) {
+    if (num.numberVariables() != 2 || den.numberVariables() != 2) {
+      throw new IllegalArgumentException();
+    }
+    //System.out.println("series = ( " + num + ")/(" + den + ")");
+    final PolynomialRingField<E> field = new PolynomialRingField<>(mCoefficientField);
+    final ArrayList<Polynomial<E>> a = new ArrayList<>();
+    final Polynomial<E> d = den.extract(1, 0).toPolynomial(); // y^0
+    for (int k = 0; k <= ycoeff; ++k) {
+      Polynomial<E> s = num.extract(1, k).toPolynomial(); // y^k
+      for (int j = 0; j < k; ++j) {
+        s = field.subtract(s, field.multiply(a.get(j), den.extract(1, k - j).toPolynomial()));
+      }
+      a.add(field.series(s, d, xorder));
+    }
+    return a.get(ycoeff);
   }
 
 }

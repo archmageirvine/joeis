@@ -15,11 +15,11 @@ import irvine.oeis.Sequence;
  */
 public class A052240 implements Sequence {
 
-  protected EulerTransform mET1; // the first sequenc
+  protected EulerTransform mET1; // the first sequence
   protected int mSqueeze0; // number of zeroes to be removed from the resulting sequence
   protected Z mAdd0; // add this constant to the first resulting term
   protected int mN; // current index/offset
-  protected int mOffset; // index of first term of the sequence
+  //protected int mOffset; // index of first term of the sequence
   protected int mState; // for zero squeezing
   protected int mCount; // for zero squeezing
 
@@ -42,7 +42,7 @@ public class A052240 implements Sequence {
     mET1 = new EulerTransform(new PeriodicSequence(per1), 1);
     mSqueeze0 = squeeze0 - 1;
     mAdd0 = Z.valueOf(add0);
-    mOffset = offset;
+    //mOffset = offset;
     mN = offset - 1;
     mCount = mSqueeze0; // start with output
     mState = 1;

@@ -3,7 +3,7 @@ package irvine.oeis.a019;
 import irvine.math.api.Matrix;
 import irvine.math.group.IntegerField;
 import irvine.math.group.MatrixRing;
-import irvine.math.group.MultivariatePolynomialRing;
+import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.matrix.DefaultMatrix;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
@@ -19,7 +19,7 @@ public class A019447 implements Sequence {
 
   @Override
   public Z next() {
-    final MultivariatePolynomialRing poly = new MultivariatePolynomialRing(IntegerField.SINGLETON, ++mN);
+    final MultivariatePolynomialField poly = new MultivariatePolynomialField(IntegerField.SINGLETON, ++mN);
     final MatrixRing<MultivariatePolynomial<Z>> ring = new MatrixRing<>(mN, poly);
     final Matrix<MultivariatePolynomial<Z>> toeplitz = new DefaultMatrix<>(mN, mN, poly.zero());
     for (int i = 0; i < mN; ++i) {

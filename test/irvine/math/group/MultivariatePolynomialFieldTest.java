@@ -9,10 +9,10 @@ import junit.framework.TestCase;
  * Test the corresponding class.
  * @author Sean A. Irvine
  */
-public class MultivariatePolynomialRingTest extends TestCase {
+public class MultivariatePolynomialFieldTest extends TestCase {
 
   public void test() {
-    final MultivariatePolynomialRing ring = new MultivariatePolynomialRing(IntegerField.SINGLETON, 2);
+    final MultivariatePolynomialField<Z> ring = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
     assertNull(ring.size());
     assertTrue(ring.isAbelian());
     assertTrue(ring.isCommutative());

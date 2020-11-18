@@ -1,7 +1,7 @@
 package irvine.oeis.a029;
 
 import irvine.math.group.IntegerField;
-import irvine.math.group.MultivariatePolynomialRing;
+import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRing;
 import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Integers;
@@ -15,7 +15,7 @@ import irvine.oeis.Sequence;
 public class A029701 implements Sequence {
 
   private static final PolynomialRing<Z> RINGX = new PolynomialRing<>(Integers.SINGLETON);
-  private static final MultivariatePolynomialRing<Z> RING = new MultivariatePolynomialRing<>(IntegerField.SINGLETON, 2);
+  private static final MultivariatePolynomialField<Z> RING = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final MultivariatePolynomial<Z> XMY = RING.subtract(MultivariatePolynomial.create(IntegerField.SINGLETON, RINGX.x(), 0, 2), MultivariatePolynomial.create(IntegerField.SINGLETON, RINGX.x(), 1, 2));
   private int mN = 0;
 

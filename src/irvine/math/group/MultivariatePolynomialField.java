@@ -8,11 +8,11 @@ import irvine.math.polynomial.MultivariatePolynomial;
 import irvine.math.z.Z;
 
 /**
- * A multivariate polynomial ring over integers.
+ * A multivariate polynomial field over a field.
  * @param <E> underlying coefficient type
  * @author Sean A. Irvine
  */
-public class MultivariatePolynomialRing<E> extends AbstractRing<MultivariatePolynomial<E>> {
+public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePolynomial<E>> {
 
   // At present only supplies minimal implementations to get things done. This could be improved.
 
@@ -26,7 +26,7 @@ public class MultivariatePolynomialRing<E> extends AbstractRing<MultivariatePoly
    * @param coefficientField underlying coefficient field
    * @param numVariables number of variables
    */
-  public MultivariatePolynomialRing(final Field<E> coefficientField, final int numVariables) {
+  public MultivariatePolynomialField(final Field<E> coefficientField, final int numVariables) {
     mCoefficientField = coefficientField;
     mNumVariables = numVariables;
     mZeroPolynomial = new MultivariatePolynomial<>(coefficientField, numVariables);
@@ -136,4 +136,10 @@ public class MultivariatePolynomialRing<E> extends AbstractRing<MultivariatePoly
   public Z characteristic() {
     return mCoefficientField.characteristic();
   }
+
+  @Override
+  public MultivariatePolynomial<E> inverse(final MultivariatePolynomial<E> element) {
+    throw new UnsupportedOperationException();
+  }
+
 }

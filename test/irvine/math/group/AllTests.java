@@ -59,7 +59,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(MatrixFieldTest.class);
     suite.addTestSuite(MatrixRingTest.class);
     suite.addTestSuite(MultiplicativeGroupTest.class);
-    suite.addTestSuite(MultivariatePolynomialRingTest.class);
+    suite.addTestSuite(MultivariatePolynomialFieldTest.class);
     suite.addTestSuite(PolynomialRingFieldTest.class);
     suite.addTestSuite(PolynomialRingTest.class);
     suite.addTestSuite(QPolynomialRingTest.class);

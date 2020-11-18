@@ -19,8 +19,8 @@ public class A019448 implements Sequence {
   @Override
   public Z next() {
     final MultivariatePolynomialRing poly = new MultivariatePolynomialRing(2 * ++mN);
-    final MatrixRing<MultivariatePolynomial> ring = new MatrixRing<>(mN, poly);
-    final Matrix<MultivariatePolynomial> hankel = new DefaultMatrix<>(mN, mN, poly.zero());
+    final MatrixRing<MultivariatePolynomial<Z>> ring = new MatrixRing<>(mN, poly);
+    final Matrix<MultivariatePolynomial<Z>> hankel = new DefaultMatrix<>(mN, mN, poly.zero());
     for (int i = 0; i < mN; ++i) {
       for (int j = 0; j < mN; ++j) {
         hankel.set(i, j, poly.var(i + j));

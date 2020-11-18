@@ -5,7 +5,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import irvine.math.api.Field;
 import irvine.math.group.IntegerField;
+import irvine.math.group.PolynomialRing;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.z.Z;
 
@@ -13,11 +15,10 @@ import irvine.math.z.Z;
  * Represent an immutable integer multivariate polynomial.
  * @author Sean A. Irvine
  */
-public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial.Term, Z> {
+public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynomial.Term, E> {
 
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final int[][] EMPTY_TERMS = new int[0][];
-  private static final Z[] EMPTY_COEFFS = new Z[0];
 
   /**
    * Represent a single term in a multivariate polynomial.
@@ -72,19 +73,21 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @param variables number of variables
    * @return 1
    */
-  public static MultivariatePolynomial one(final int variables) {
-    return new MultivariatePolynomial(variables, new int[][] {new int[variables]}, Z.ONE);
+  public static MultivariatePolynomial<Z> one(final int variables) {
+    return new MultivariatePolynomial<>(IntegerField.SINGLETON, variables, new int[][] {new int[variables]}, Z.ONE);
   }
 
   /**
    * Create a multivariate polynomial from an ordinary polynomial.
+   *
+   * @param coefficientField field for coefficients
    * @param poly polynomial
    * @param index index of variable to use for this polynomial
    * @param variables number of variables
    * @return number of variables in multivariate polynomial
    */
-  public static MultivariatePolynomial create(final Polynomial<Z> poly, final int index, final int variables) {
-    final MultivariatePolynomial mp = new MultivariatePolynomial(variables);
+  public static <E> MultivariatePolynomial<E> create(final Field<E> coefficientField, final Polynomial<E> poly, final int index, final int variables) {
+    final MultivariatePolynomial<E> mp = new MultivariatePolynomial<>(coefficientField, variables);
     final int[] powers = new int[variables];
     for (int k = 0; k <= poly.degree(); ++k) {
       powers[index] = k;
@@ -120,17 +123,20 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
     return a.get(ycoeff);
   }
 
+  private final Field<E> mCoefficientField;
   private final int mVariables;
 
   /**
    * Construct a new multivariate polynomial with specified coefficients. The supplied
    * terms and coefficient arrays must have the same length.
+   * @param coefficientField field for coefficients
    * @param variables number of variables
    * @param terms powers for variables
    * @param coeffs coefficients for variables
    */
-  public MultivariatePolynomial(final int variables, final int[][] terms, final Z... coeffs) {
-    if (coeffs == null || terms == null) {
+  @SafeVarargs
+  public MultivariatePolynomial(final Field<E> coefficientField, final int variables, final int[][] terms, final E... coeffs) {
+    if (coefficientField == null || coeffs == null || terms == null) {
       throw new NullPointerException();
     }
     if (variables < 0) {
@@ -139,6 +145,7 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
     if (terms.length != coeffs.length) {
       throw new IllegalArgumentException();
     }
+    mCoefficientField = coefficientField;
     mVariables = variables;
     for (int k = 0; k < terms.length; ++k) {
       if (put(new Term(terms[k]), coeffs[k]) != null) {
@@ -149,10 +156,12 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
 
   /**
    * Construct a new multivariate polynomial with specified coefficients.
+   * @param coefficientField field of coefficients
    * @param variables number of variables
    */
-  public MultivariatePolynomial(final int variables) {
-    this(variables, EMPTY_TERMS, EMPTY_COEFFS);
+  @SuppressWarnings("unchecked")
+  public MultivariatePolynomial(final Field<E> coefficientField, final int variables) {
+    this(coefficientField, variables, EMPTY_TERMS, (E[]) new Object[0]);
   }
 
   private void checkVariables(final MultivariatePolynomial p) {
@@ -161,10 +170,10 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
     }
   }
 
-  private void add(final Term t, final Z c) {
-    final Z ex = remove(t);
-    final Z v = ex == null ? c : ex.add(c);
-    if (!Z.ZERO.equals(v)) {
+  private void add(final Term t, final E c) {
+    final E ex = remove(t);
+    final E v = ex == null ? c : mCoefficientField.add(ex, c);
+    if (!mCoefficientField.zero().equals(v)) {
       put(t, v);
     }
   }
@@ -174,15 +183,15 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @param p the other polynomial
    * @return the sum
    */
-  public MultivariatePolynomial add(final MultivariatePolynomial p) {
+  public MultivariatePolynomial<E> add(final MultivariatePolynomial<E> p) {
     checkVariables(p);
-    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables);
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
     res.putAll(this);
-    for (final Map.Entry<Term, Z> e : p.entrySet()) {
+    for (final Map.Entry<Term, E> e : p.entrySet()) {
       final Term term = e.getKey();
       if (res.containsKey(term)) {
-        final Z v = e.getValue().add(res.get(term));
-        if (Z.ZERO.equals(v)) {
+        final E v = mCoefficientField.add(e.getValue(), res.get(term));
+        if (mCoefficientField.zero().equals(v)) {
           res.remove(term);
         } else {
           res.put(term, v);
@@ -201,14 +210,14 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @return the product
    * @throws IllegalArgumentException if the number of variables don't match
    */
-  public MultivariatePolynomial multiply(final MultivariatePolynomial p, final int[] degreeLimits) {
+  public MultivariatePolynomial<E> multiply(final MultivariatePolynomial<E> p, final int[] degreeLimits) {
     checkVariables(p);
     if (degreeLimits.length != mVariables) {
       throw new IllegalArgumentException();
     }
-    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables);
-    for (final Map.Entry<Term, Z> e : p.entrySet()) {
-      for (final Map.Entry<Term, Z> f : entrySet()) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> e : p.entrySet()) {
+      for (final Map.Entry<Term, E> f : entrySet()) {
         final int[] u = new int[mVariables];
         boolean overDegree = false;
         for (int k = 0; k < mVariables; ++k) {
@@ -216,7 +225,7 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
           overDegree |= u[k] > degreeLimits[k];
         }
         if (!overDegree) {
-          res.add(new Term(u), e.getValue().multiply(f.getValue()));
+          res.add(new Term(u), mCoefficientField.multiply(e.getValue(), f.getValue()));
         }
       }
     }
@@ -228,17 +237,17 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @param p the other polynomial
    * @return the product
    */
-  public MultivariatePolynomial multiply(final MultivariatePolynomial p) {
+  public MultivariatePolynomial<E> multiply(final MultivariatePolynomial<E> p) {
     //System.out.println("Doing: (" + this + ") * (" + p + ")");
     checkVariables(p);
-    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables);
-    for (final Map.Entry<Term, Z> e : p.entrySet()) {
-      for (final Map.Entry<Term, Z> f : entrySet()) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> e : p.entrySet()) {
+      for (final Map.Entry<Term, E> f : entrySet()) {
         final int[] u = new int[mVariables];
         for (int k = 0; k < mVariables; ++k) {
           u[k] = e.getKey().mPowers[k] + f.getKey().mPowers[k];
         }
-        res.add(new Term(u), e.getValue().multiply(f.getValue()));
+        res.add(new Term(u), mCoefficientField.multiply(e.getValue(), f.getValue()));
       }
     }
     return res;
@@ -249,10 +258,10 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @param n number to multiply by
    * @return product
    */
-  public MultivariatePolynomial scalarMultiply(final Z n) {
-    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables);
-    for (final Map.Entry<Term, Z> f : entrySet()) {
-      res.add(f.getKey(), f.getValue().multiply(n));
+  public MultivariatePolynomial<E> scalarMultiply(final E n) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> f : entrySet()) {
+      res.add(f.getKey(), mCoefficientField.multiply(f.getValue(), n));
     }
     return res;
   }
@@ -277,7 +286,7 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * If this is a single variable polynomial convert it to polynomial type.
    * @return polynomial
    */
-  public Polynomial<Z> toPolynomial() {
+  public Polynomial<E> toPolynomial() {
     if (mVariables != 1) {
       throw new IllegalArgumentException();
     }
@@ -288,12 +297,13 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
         max = t.mPowers[0];
       }
     }
-    final Z[] c = new Z[max + 1];
+    @SuppressWarnings("unchecked")
+    final E[] c = (E[]) new Object[max + 1];
     Arrays.fill(c, Z.ZERO);
-    for (final Map.Entry<Term, Z> e : entrySet()) {
+    for (final Map.Entry<Term, E> e : entrySet()) {
       c[e.getKey().mPowers[0]] = e.getValue();
     }
-    return RING.create(Arrays.asList(c));
+    return new PolynomialRing<>(mCoefficientField).create(Arrays.asList(c));
   }
 
   /**
@@ -303,12 +313,12 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
    * @param power power of that variable
    * @return polynomial with one less variable
    */
-  public MultivariatePolynomial extract(final int varNumber, final int power) {
+  public MultivariatePolynomial<E> extract(final int varNumber, final int power) {
     if (varNumber < 0 || varNumber >= mVariables) {
       throw new IllegalArgumentException();
     }
-    final MultivariatePolynomial res = new MultivariatePolynomial(mVariables - 1);
-    for (final Map.Entry<Term, Z> e : entrySet()) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables - 1);
+    for (final Map.Entry<Term, E> e : entrySet()) {
       final Term t = e.getKey();
       final int[] powers = t.mPowers;
       if (powers[varNumber] == power) {
@@ -363,9 +373,9 @@ public final class MultivariatePolynomial extends HashMap<MultivariatePolynomial
     final Term[] terms = keySet().toArray(new Term[size()]);
     Arrays.sort(terms);
     for (final Term t : terms) {
-      final Z v = get(t);
-      assert !Z.ZERO.equals(v);
-      if (v.signum() >= 0 && sb.length() != 0) {
+      final E v = get(t);
+      assert !mCoefficientField.zero().equals(v);
+      if (v.toString().charAt(0) != '-' && sb.length() != 0) {
         sb.append('+');
       }
       final int[] p = t.mPowers;

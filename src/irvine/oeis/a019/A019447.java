@@ -19,8 +19,8 @@ public class A019447 implements Sequence {
   @Override
   public Z next() {
     final MultivariatePolynomialRing poly = new MultivariatePolynomialRing(++mN);
-    final MatrixRing<MultivariatePolynomial> ring = new MatrixRing<>(mN, poly);
-    final Matrix<MultivariatePolynomial> toeplitz = new DefaultMatrix<>(mN, mN, poly.zero());
+    final MatrixRing<MultivariatePolynomial<Z>> ring = new MatrixRing<>(mN, poly);
+    final Matrix<MultivariatePolynomial<Z>> toeplitz = new DefaultMatrix<>(mN, mN, poly.zero());
     for (int i = 0; i < mN; ++i) {
       for (int j = 0; j < mN; ++j) {
         toeplitz.set(i, j, poly.var(Math.abs(i - j)));

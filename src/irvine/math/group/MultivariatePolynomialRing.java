@@ -11,14 +11,14 @@ import irvine.math.z.Z;
  * A multivariate polynomial ring over integers.
  * @author Sean A. Irvine
  */
-public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynomial> {
+public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynomial<Z>> {
 
   // At present only supplies minimal implementations to get things done. This could be improved.
   // todo it would be nice to have generics for the underlying ring/field here
   
   private final Integers mElementRing = Integers.SINGLETON;
-  private final MultivariatePolynomial mZeroPolynomial;
-  private final MultivariatePolynomial mOnePolynomial;
+  private final MultivariatePolynomial<Z> mZeroPolynomial;
+  private final MultivariatePolynomial<Z> mOnePolynomial;
   private final int mNumVariables;
 
   /**
@@ -27,18 +27,18 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    */
   public MultivariatePolynomialRing(final int numVariables) {
     mNumVariables = numVariables;
-    mZeroPolynomial = new MultivariatePolynomial(numVariables);
+    mZeroPolynomial = new MultivariatePolynomial<>(IntegerField.SINGLETON, numVariables);
     mOnePolynomial = MultivariatePolynomial.one(numVariables);
   }
 
   @Override
   @SuppressWarnings("unchecked")
-  public MultivariatePolynomial one() {
+  public MultivariatePolynomial<Z> one() {
     return mOnePolynomial;
   }
 
   @Override
-  public MultivariatePolynomial zero() {
+  public MultivariatePolynomial<Z> zero() {
     return mZeroPolynomial;
   }
 
@@ -47,8 +47,8 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param m index
    * @return single variable
    */
-  public MultivariatePolynomial var(final int m) {
-    final MultivariatePolynomial res = new MultivariatePolynomial(mNumVariables);
+  public MultivariatePolynomial<Z> var(final int m) {
+    final MultivariatePolynomial<Z> res = new MultivariatePolynomial<>(IntegerField.SINGLETON, mNumVariables);
     final int[] powers = new int[mNumVariables];
     powers[m] = 1;
     res.put(new MultivariatePolynomial.Term(powers), Z.ONE);
@@ -71,18 +71,18 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
   }
 
   @Override
-  public boolean contains(final MultivariatePolynomial a) {
+  public boolean contains(final MultivariatePolynomial<Z> a) {
     return a != null;
   }
 
   @Override
-  public MultivariatePolynomial add(final MultivariatePolynomial a, final MultivariatePolynomial b) {
+  public MultivariatePolynomial<Z> add(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b) {
     return a.add(b);
   }
 
   @Override
-  public MultivariatePolynomial negate(final MultivariatePolynomial a) {
-    final MultivariatePolynomial t = new MultivariatePolynomial(a.numberVariables());
+  public MultivariatePolynomial<Z> negate(final MultivariatePolynomial<Z> a) {
+    final MultivariatePolynomial<Z> t = new MultivariatePolynomial<>(IntegerField.SINGLETON, a.numberVariables());
     for (Map.Entry<MultivariatePolynomial.Term, Z> e : a.entrySet()) {
       t.put(e.getKey(), e.getValue().negate());
     }
@@ -90,12 +90,12 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
   }
 
   @Override
-  public Iterator<MultivariatePolynomial> iterator() {
+  public Iterator<MultivariatePolynomial<Z>> iterator() {
     throw new UnsupportedOperationException();
   }
 
   @Override
-  public MultivariatePolynomial multiply(final MultivariatePolynomial a, final MultivariatePolynomial b) {
+  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b) {
     return a.multiply(b);
   }
 
@@ -107,7 +107,7 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param degreeLimits maximum degrees to retain
    * @return product
    */
-  public MultivariatePolynomial multiply(final MultivariatePolynomial a, final MultivariatePolynomial b, final int[] degreeLimits) {
+  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> a, final MultivariatePolynomial<Z> b, final int[] degreeLimits) {
     return a.multiply(b, degreeLimits);
   }
 
@@ -117,7 +117,7 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
    * @param n multiplicand
    * @return polynomial
    */
-  public MultivariatePolynomial multiply(final MultivariatePolynomial p, final Z n) {
+  public MultivariatePolynomial<Z> multiply(final MultivariatePolynomial<Z> p, final Z n) {
     return p.scalarMultiply(n);
   }
 
@@ -127,7 +127,7 @@ public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynom
   }
 
   @Override
-  public MultivariatePolynomial coerce(final long n) {
+  public MultivariatePolynomial<Z> coerce(final long n) {
     return mOnePolynomial.scalarMultiply(Z.valueOf(n));
   }
 

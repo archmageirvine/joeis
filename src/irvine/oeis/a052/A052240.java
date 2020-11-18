@@ -33,7 +33,7 @@ public class A052240 implements Sequence {
   /**
    * Constructor with parameters.
    * @param offset index of first term of the sequence
-   * @param squeeze0 number of zeroes + 1 to be removed from the resulting sequence; parameter in1(,sk,)
+   * @param squeeze0 number of zeroes + 1 to be removed from the resulting sequence; parameter <code>in1(,sk,)</code>
    * @param factor multiply the sequence by this factor (not used)
    * @param add0 constant to be added to a(0)
    * @param per1 the terms of the PeriodicSequence to be transformed

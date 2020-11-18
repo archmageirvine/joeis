@@ -51,7 +51,7 @@ public class A008300 implements Sequence {
     if (++mM > mN) {
       ++mN;
       mM = 0;
-      MultivariatePolynomial p = MultivariatePolynomial.one(2 * mN);
+      MultivariatePolynomial<Z> p = MultivariatePolynomial.one(2 * mN);
       for (int i = 0; i < mN; ++i) {
         for (int j = 0; j < mN; ++j) {
           p = p.multiply(make(mN, i, j));

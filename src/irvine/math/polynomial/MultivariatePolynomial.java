@@ -13,11 +13,11 @@ import irvine.math.z.Z;
 
 /**
  * Represent an immutable integer multivariate polynomial.
+ * @param <E> underlying coefficient type
  * @author Sean A. Irvine
  */
 public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynomial.Term, E> {
 
-  private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
   private static final int[][] EMPTY_TERMS = new int[0][];
 
   /**
@@ -106,19 +106,20 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @param xorder order of series to return
    * @return univariate polynomial series in first variable
    */
-  public static Polynomial<Z> series(final MultivariatePolynomial num, final MultivariatePolynomial den, final int ycoeff, final int xorder) {
+  public static <E> Polynomial<E> series(final MultivariatePolynomial<E> num, final MultivariatePolynomial<E> den, final int ycoeff, final int xorder) {
     if (num.numberVariables() != 2 || den.numberVariables() != 2) {
       throw new IllegalArgumentException();
     }
     //System.out.println("series = ( " + num + ")/(" + den + ")");
-    final ArrayList<Polynomial<Z>> a = new ArrayList<>();
-    final Polynomial<Z> d = den.extract(1, 0).toPolynomial(); // y^0
+    final PolynomialRingField<E> field = new PolynomialRingField<>(num.mCoefficientField);
+    final ArrayList<Polynomial<E>> a = new ArrayList<>();
+    final Polynomial<E> d = den.extract(1, 0).toPolynomial(); // y^0
     for (int k = 0; k <= ycoeff; ++k) {
-      Polynomial<Z> s = num.extract(1, k).toPolynomial(); // y^k
+      Polynomial<E> s = num.extract(1, k).toPolynomial(); // y^k
       for (int j = 0; j < k; ++j) {
-        s = RING.subtract(s, RING.multiply(a.get(j), den.extract(1, k - j).toPolynomial()));
+        s = field.subtract(s, field.multiply(a.get(j), den.extract(1, k - j).toPolynomial()));
       }
-      a.add(RING.series(s, d, xorder));
+      a.add(field.series(s, d, xorder));
     }
     return a.get(ycoeff);
   }
@@ -164,7 +165,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
     this(coefficientField, variables, EMPTY_TERMS, (E[]) new Object[0]);
   }
 
-  private void checkVariables(final MultivariatePolynomial p) {
+  private void checkVariables(final MultivariatePolynomial<?> p) {
     if (p.mVariables != mVariables) {
       throw new IllegalArgumentException();
     }

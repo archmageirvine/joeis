@@ -39,6 +39,7 @@
       <classpath>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 
@@ -48,6 +49,7 @@
         <pathelement path="${src.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 
@@ -58,6 +60,7 @@
         <pathelement path="${internal.dir}"/>
         <fileset dir="${lib.dir}" includes="**/*.jar" />
       </classpath>
+      <compilerarg value="-Xlint:unchecked" />
     </javac>
   </target>
 

@@ -337,7 +337,7 @@ public class Lattice {
       for (i = mLev[d]; i < mLev[d + 1]; i++) {
         System.out.printf("%d[", i);
         if (co[i] == 0) {
-          System.out.print("T");
+          System.out.print('T');
         } else {
           boolean first = true;
           for (int j = 0; j < i; j++) {
@@ -357,7 +357,7 @@ public class Lattice {
     }
     System.out.printf("depth %2d: B[", mNLev - 1);
     if (mNLev == 1) {
-      System.out.print("T");
+      System.out.print('T');
     } else {
       boolean first = true;
       for (int j = 0; j < mN; j++) {
@@ -371,7 +371,7 @@ public class Lattice {
         }
       }
     }
-    System.out.println("]");
+    System.out.println(']');
     System.out.printf("stabiliser [%d]:%n", mS.mN);
     PermGrp.printGenerators(mS, 0);
     final int[] si = {mSi};

@@ -14,8 +14,7 @@ import irvine.math.z.Z;
 public class MultivariatePolynomialRing extends AbstractRing<MultivariatePolynomial<Z>> {
 
   // At present only supplies minimal implementations to get things done. This could be improved.
-  // todo it would be nice to have generics for the underlying ring/field here
-  
+
   private final Integers mElementRing = Integers.SINGLETON;
   private final MultivariatePolynomial<Z> mZeroPolynomial;
   private final MultivariatePolynomial<Z> mOnePolynomial;

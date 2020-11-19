@@ -10,7 +10,7 @@ import irvine.math.z.Z;
 import irvine.oeis.Sequence;
 
 /**
- * A036672.
+ * A036672 Number of stereoisomers of acyclic hydrocarbons with n carbon atoms.
  * @author Sean A. Irvine
  */
 public class A036672 implements Sequence {

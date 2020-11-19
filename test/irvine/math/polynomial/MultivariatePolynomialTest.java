@@ -34,9 +34,9 @@ public class MultivariatePolynomialTest extends TestCase {
     final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{2, 0, 1}, {1, 2, 3}}, Z.NEG_ONE, Z.FOUR);
     assertFalse(p.isZero());
     assertEquals("4xy^2z^3-x^2z", p.toString());
-    final MultivariatePolynomial p3 = p.scalarMultiply(Z.THREE);
+    final MultivariatePolynomial<Z> p3 = p.scalarMultiply(Z.THREE);
     assertEquals("12xy^2z^3-3x^2z", p3.toString());
-    final MultivariatePolynomial p0 = p.scalarMultiply(Z.ZERO);
+    final MultivariatePolynomial<Z> p0 = p.scalarMultiply(Z.ZERO);
     assertTrue(p0.isZero());
     assertEquals("0", p0.toString());
   }

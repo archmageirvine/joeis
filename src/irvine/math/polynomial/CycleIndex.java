@@ -1,12 +1,14 @@
 package irvine.math.polynomial;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
+import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRingField;
 import irvine.math.q.Q;
 import irvine.math.q.Rationals;
@@ -293,13 +295,10 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
   }
 
   /**
-   * Apply this cycle index to the given polynomial, limiting the degree
-   * of the result.
-   *
+   * Apply this cycle index to the given polynomial, limiting the degree of the result.
    * @param poly the polynomial
    * @param maxDegree maximum degree term guaranteed to retain in the result
    * @return polynomial result
-   * @exception ArithmeticException if the application does not yield an integer polynomial.
    */
   public Polynomial<Q> apply(final Polynomial<Q> poly, final int maxDegree) {
     final ArrayList<Polynomial<Q>> substitutes = new ArrayList<>();
@@ -313,6 +312,38 @@ public final class CycleIndex extends TreeMap<String, MultivariateMonomial> {
       }
       term = RING.multiply(term, m.getCoefficient());
       result = RING.add(result, term);
+    }
+    return result;
+  }
+
+  private MultivariatePolynomial<Q> getSubs(final ArrayList<MultivariatePolynomial<Q>> substitutes, final int power, final int[] degreeLimits) {
+    while (power >= substitutes.size()) {
+      final int[] sp = new int[degreeLimits.length];
+      Arrays.fill(sp, substitutes.size());
+      substitutes.add(substitutes.get(1).substitutePowers(sp, degreeLimits));
+    }
+    return substitutes.get(power);
+  }
+
+  /**
+   * Apply this cycle index to the given multivariate polynomial, limiting the degree of the result.
+   * @param poly the multivariate polynomial
+   * @param degreeLimits maximum degree term guaranteed to retain in the result in each variate
+   * @return multivariate polynomial result
+   */
+  public MultivariatePolynomial<Q> apply(final MultivariatePolynomial<Q> poly, final int[] degreeLimits) {
+    final MultivariatePolynomialField<Q> field = new MultivariatePolynomialField<>(Rationals.SINGLETON, poly.numberVariables());
+    final ArrayList<MultivariatePolynomial<Q>> substitutes = new ArrayList<>();
+    substitutes.add(field.one());
+    substitutes.add(poly);
+    MultivariatePolynomial<Q> result = field.zero();
+    for (final MultivariateMonomial m : values()) {
+      MultivariatePolynomial<Q> term = field.one();
+      for (final Map.Entry<Pair<String, Integer>, Z> e : m.entrySet()) {
+        term = field.multiply(term, field.pow(getSubs(substitutes, e.getKey().right(), degreeLimits), e.getValue().intValueExact(), degreeLimits), degreeLimits);
+      }
+      term = field.multiply(term, m.getCoefficient());
+      result = field.add(result, term);
     }
     return result;
   }

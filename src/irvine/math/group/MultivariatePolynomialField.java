@@ -171,4 +171,44 @@ public class MultivariatePolynomialField<E> extends AbstractField<MultivariatePo
     return a.get(ycoeff);
   }
 
+  /**
+   * Powering. Computes <code>b^n</code> with variable specific degree limits.
+   * @param b base
+   * @param n power
+   * @param degreeLimits degree limits
+   * @return <code>b^n</code>
+   * @exception ArithmeticException if <code>n</code> is negative
+   * and power would entail a non-integral result.
+   */
+  public MultivariatePolynomial<E> pow(final MultivariatePolynomial<E> b, final long n, final int[] degreeLimits) {
+    if (n < 0) {
+      throw new IllegalArgumentException();
+    }
+    // x^0
+    if (n == 0) {
+      return one();
+    }
+    // 0^x, 1^x, cannot use .equals() because of CR type
+    if (b == zero() || b == one()) {
+      return b;
+    }
+    // x^1
+    if (n == 1) {
+      return b;
+    }
+    final MultivariatePolynomial<E> s = pow(multiply(b, b, degreeLimits), n / 2);
+    return (n & 1) == 0 ? s : multiply(s, b, degreeLimits);
+  }
+
+  /**
+   * Construct a monomial multivariate polynomial
+   * @param value coefficient
+   * @param powers powers of variables
+   * @return monomial
+   */
+  public MultivariatePolynomial<E> monomial(final E value, final int[] powers) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, powers.length);
+    res.put(new MultivariatePolynomial.Term(powers), value);
+    return res;
+  }
 }

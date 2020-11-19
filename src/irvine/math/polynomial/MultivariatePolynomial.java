@@ -174,6 +174,67 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
   }
 
   /**
+   * Substitute powers of variables.
+   * @param powers powers for each variable
+   * @param degreeLimits degree limits for each variable
+   * @return substituted polynomial
+   */
+  public MultivariatePolynomial<E> substitutePowers(final int[] powers, final int[] degreeLimits) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> e : entrySet()) {
+      final Term term = e.getKey();
+      final int[] sterm = new int[term.mPowers.length];
+      boolean ok = true;
+      for (int k = 0; k < sterm.length; ++k) {
+        sterm[k] = term.mPowers[k] * powers[k];
+        if (sterm[k] > degreeLimits[k]) {
+          ok = false;
+        }
+      }
+      if (ok) {
+        res.put(new Term(sterm), e.getValue());
+      }
+    }
+    return res;
+  }
+
+  /**
+   * Substitute powers of variables.
+   * @param powers powers for each variable
+   * @return substituted polynomial
+   */
+  public MultivariatePolynomial<E> substitutePowers(final int[] powers) {
+    final MultivariatePolynomial<E> res = new MultivariatePolynomial<>(mCoefficientField, mVariables);
+    for (final Map.Entry<Term, E> e : entrySet()) {
+      final Term term = e.getKey();
+      final int[] sterm = new int[term.mPowers.length];
+      for (int k = 0; k < sterm.length; ++k) {
+        sterm[k] = term.mPowers[k] * powers[k];
+      }
+      res.put(new Term(sterm), e.getValue());
+    }
+    return res;
+  }
+
+  /**
+   * Evaluate with the specified values for variables.
+   * @param args values
+   * @return evaluation
+   */
+  public E eval(final E... args) {
+    E sum = mCoefficientField.zero();
+    for (final Map.Entry<Term, E> e : entrySet()) {
+      E v = e.getValue();
+      final int[] p = e.getKey().mPowers;
+      for (int k = 0; k < p.length; ++k) {
+        v = mCoefficientField.multiply(v, mCoefficientField.pow(args[k], p[k]));
+      }
+      sum = mCoefficientField.add(sum, v);
+    }
+    return sum;
+  }
+
+  /**
    * Multiply this polynomial by another.
    * @param p the other polynomial
    * @param degreeLimits maximum retained degree for each variable

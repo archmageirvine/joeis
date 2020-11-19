@@ -69,8 +69,7 @@ public class A036672 implements Sequence {
     final int[] degreeLimits = {++mN, Integer.MAX_VALUE, Integer.MAX_VALUE};
     stepExpansions();
     stepG(degreeLimits);
-    //System.out.println("mXY=" + mXY);
-    //System.out.println("mG=" + mG);
+    System.out.println("mG=" + mG);
     final MultivariatePolynomial<Q> l = l(mG, degreeLimits);
     System.out.println("l=" + l);
     final MultivariatePolynomial<Q> ln = l.extract(0, mN); // [x^n] l(x,y,z)

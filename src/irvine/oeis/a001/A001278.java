@@ -1,5 +1,8 @@
 package irvine.oeis.a001;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.group.PolynomialRingField;
@@ -16,8 +19,8 @@ public class A001278 implements Sequence {
 
   private static final MultivariatePolynomialField<Z> RING1 = new MultivariatePolynomialField<>(IntegerField.SINGLETON, 2);
   private static final PolynomialRingField<Z> RING = new PolynomialRingField<>(IntegerField.SINGLETON);
-  private static final MultivariatePolynomial<Z> NUM = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {1, 0}}, Z.ONE, Z.NEG_ONE, Z.NEG_ONE);
-  private static final MultivariatePolynomial<Z> DEN = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {0, 0}}, Z.ONE, Z.NEG_ONE, Z.NEG_ONE);
+  private static final MultivariatePolynomial<Z> NUM = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {1, 0}}, Arrays.asList(Z.ONE, Z.NEG_ONE, Z.NEG_ONE));
+  private static final MultivariatePolynomial<Z> DEN = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {0, 0}}, Arrays.asList(Z.ONE, Z.NEG_ONE, Z.NEG_ONE));
   private int mN = 2 * order() - 1;
 
   protected int order() {
@@ -26,7 +29,7 @@ public class A001278 implements Sequence {
 
   @Override
   public Z next() {
-    MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Z.ONE);
+    MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Collections.singletonList(Z.ONE));
     MultivariatePolynomial<Z> den = num;
     ++mN;
     // This is a bit of a guess on these constraints

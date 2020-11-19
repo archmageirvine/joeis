@@ -1,5 +1,7 @@
 package irvine.oeis.a001;
 
+import java.util.Arrays;
+
 import irvine.math.group.IntegerField;
 import irvine.math.group.MultivariatePolynomialField;
 import irvine.math.polynomial.MultivariatePolynomial;
@@ -20,7 +22,7 @@ public class A001979 implements Sequence {
   static {
     MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, 2);
     for (int k = 0; k <= 7; ++k) {
-      p = p.multiply(new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}, {1, k}}, Z.ONE, Z.NEG_ONE));
+      p = p.multiply(new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}, {1, k}}, Arrays.asList(Z.ONE, Z.NEG_ONE)));
     }
     DEN = p;
   }

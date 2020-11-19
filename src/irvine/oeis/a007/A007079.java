@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import java.util.Arrays;
+import java.util.List;
 
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
@@ -21,8 +22,7 @@ public class A007079 implements Sequence {
     MultivariatePolynomial<Z> p = MultivariatePolynomial.one(IntegerField.SINGLETON, mN);
     final int[] degreeLimits = new int[mN];
     Arrays.fill(degreeLimits, (mN - 1) / 2);
-    final Z[] coeff = new Z[2];
-    Arrays.fill(coeff, Z.ONE);
+    final List<Z> coeff = Arrays.asList(Z.ONE, Z.ONE);
     for (int k = 0; k < mN; ++k) {
       for (int j = k + 1; j < mN; ++j) {
         final int[][] t = new int[2][mN];

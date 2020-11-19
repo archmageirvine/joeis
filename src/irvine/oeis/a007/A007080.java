@@ -1,6 +1,8 @@
 package irvine.oeis.a007;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
@@ -13,8 +15,8 @@ import irvine.oeis.Sequence;
  */
 public class A007080 implements Sequence {
 
-  private static final Z[] C1 = {Z.TWO};
-  private static final Z[] C2 = {Z.ONE, Z.ONE};
+  private static final List<Z> C1 = Collections.singletonList(Z.TWO);
+  private static final List<Z> C2 = Arrays.asList(Z.ONE, Z.ONE);
   private int mN = 0;
 
   @Override
@@ -25,7 +27,7 @@ public class A007080 implements Sequence {
     Arrays.fill(degreeLimits, mN);
     for (int k = 0; k < mN; ++k) {
       for (int j = 0; j < mN; ++j) {
-        final Z[] coeff;
+        final List<Z> coeff;
         final int[][] t;
         if (k == j) {
           t = new int[1][mN];

@@ -1,6 +1,7 @@
 package irvine.oeis.a007;
 
 import java.util.Arrays;
+import java.util.List;
 
 import irvine.math.group.IntegerField;
 import irvine.math.polynomial.MultivariatePolynomial;
@@ -13,7 +14,7 @@ import irvine.oeis.Sequence;
  */
 public class A007081 implements Sequence {
 
-  private static final Z[] C = {Z.ONE, Z.ONE, Z.ONE};
+  private static final List<Z> C = Arrays.asList(Z.ONE, Z.ONE, Z.ONE);
   private int mN = 0;
 
   @Override

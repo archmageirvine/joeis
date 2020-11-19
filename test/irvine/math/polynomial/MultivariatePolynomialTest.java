@@ -1,5 +1,8 @@
 package irvine.math.polynomial;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 import irvine.math.group.IntegerField;
 import irvine.math.z.Z;
 import junit.framework.TestCase;
@@ -19,19 +22,19 @@ public class MultivariatePolynomialTest extends TestCase {
   }
 
   public void testConstruction1() {
-    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{1, 2, 3}}, Z.FOUR);
+    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{1, 2, 3}}, Collections.singletonList(Z.FOUR));
     assertFalse(p.isZero());
     assertEquals("4xy^2z^3", p.toString());
   }
 
   public void testConstruction2() {
-    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{1, 2, 3}, {2, 0, 1}}, Z.FOUR, Z.NEG_ONE);
+    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{1, 2, 3}, {2, 0, 1}}, Arrays.asList(Z.FOUR, Z.NEG_ONE));
     assertFalse(p.isZero());
     assertEquals("4xy^2z^3-x^2z", p.toString());
   }
 
   public void testScalarMultiply() {
-    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{2, 0, 1}, {1, 2, 3}}, Z.NEG_ONE, Z.FOUR);
+    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 3, new int[][] {{2, 0, 1}, {1, 2, 3}}, Arrays.asList(Z.NEG_ONE, Z.FOUR));
     assertFalse(p.isZero());
     assertEquals("4xy^2z^3-x^2z", p.toString());
     final MultivariatePolynomial<Z> p3 = p.scalarMultiply(Z.THREE);
@@ -42,30 +45,30 @@ public class MultivariatePolynomialTest extends TestCase {
   }
 
   public void testConstant() {
-    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Z.ONE);
+    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Collections.singletonList(Z.ONE));
     assertEquals("1", num.toString());
   }
 
   public void testConstantN1() {
-    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Z.NEG_ONE);
+    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Collections.singletonList(Z.NEG_ONE));
     assertEquals("-1", num.toString());
     assertEquals(0, num.degree(0));
     assertEquals(0, num.degree(1));
   }
 
   public void testConstant2() {
-    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Z.TWO);
+    final MultivariatePolynomial<Z> num = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{0, 0}}, Collections.singletonList(Z.TWO));
     assertEquals("2", num.toString());
   }
 
   public void testConstruction1Var() {
-    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 1, new int[][] {{1}, {2}}, Z.FOUR, Z.NEG_ONE);
+    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 1, new int[][] {{1}, {2}}, Arrays.asList(Z.FOUR, Z.NEG_ONE));
     assertEquals("4x-x^2", p.toString());
     assertEquals("4x-x^2", p.toPolynomial().toString());
   }
 
   public void testA010029() {
-    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {1, 0}}, Z.ONE, Z.NEG_ONE, Z.NEG_ONE);
+    final MultivariatePolynomial<Z> p = new MultivariatePolynomial<>(IntegerField.SINGLETON, 2, new int[][] {{2, 0}, {2, 1}, {1, 0}}, Arrays.asList(Z.ONE, Z.NEG_ONE, Z.NEG_ONE));
     assertEquals("-x+x^2-x^2y", p.toString());
     final MultivariatePolynomial<Z> p2 = p.multiply(p);
     assertEquals("x^2-2x^3+2x^3y+x^4-2x^4y+x^4y^2", p2.toString());

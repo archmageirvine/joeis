@@ -1,5 +1,6 @@
 package irvine.oeis.a008;
 
+import java.util.Arrays;
 import java.util.Map;
 
 import irvine.math.group.IntegerField;
@@ -43,7 +44,7 @@ public class A008300 implements Sequence {
     final int[][] terms = new int[2][2 * n];
     terms[1][i] = 1;
     terms[1][n + j] = 1;
-    return new MultivariatePolynomial<>(IntegerField.SINGLETON, 2 * n, terms, Z.ONE, Z.ONE);
+    return new MultivariatePolynomial<>(IntegerField.SINGLETON, 2 * n, terms, Arrays.asList(Z.ONE, Z.ONE));
   }
 
   @Override

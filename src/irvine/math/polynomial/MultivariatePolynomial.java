@@ -1,7 +1,9 @@
 package irvine.math.polynomial;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import irvine.math.api.Field;
@@ -71,7 +73,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @return 1
    */
   public static <E> MultivariatePolynomial<E> one(final Field<E> coefficientField, final int variables) {
-    return new MultivariatePolynomial<>(coefficientField, variables, new int[][] {new int[variables]}, coefficientField.one());
+    return new MultivariatePolynomial<>(coefficientField, variables, new int[][] {new int[variables]}, Collections.singletonList(coefficientField.one()));
   }
 
   /**
@@ -104,21 +106,20 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @param terms powers for variables
    * @param coeffs coefficients for variables
    */
-  @SafeVarargs
-  public MultivariatePolynomial(final Field<E> coefficientField, final int variables, final int[][] terms, final E... coeffs) {
+  public MultivariatePolynomial(final Field<E> coefficientField, final int variables, final int[][] terms, final List<E> coeffs) {
     if (coefficientField == null || coeffs == null || terms == null) {
       throw new NullPointerException();
     }
     if (variables < 0) {
       throw new IllegalArgumentException();
     }
-    if (terms.length != coeffs.length) {
+    if (terms.length != coeffs.size()) {
       throw new IllegalArgumentException();
     }
     mCoefficientField = coefficientField;
     mVariables = variables;
     for (int k = 0; k < terms.length; ++k) {
-      if (put(new Term(terms[k]), coeffs[k]) != null) {
+      if (put(new Term(terms[k]), coeffs.get(k)) != null) {
         throw new IllegalArgumentException();
       }
     }
@@ -129,9 +130,8 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @param coefficientField field of coefficients
    * @param variables number of variables
    */
-  @SuppressWarnings("unchecked")
   public MultivariatePolynomial(final Field<E> coefficientField, final int variables) {
-    this(coefficientField, variables, EMPTY_TERMS, (E[]) new Object[0]);
+    this(coefficientField, variables, EMPTY_TERMS, Collections.emptyList());
   }
 
   private void checkVariables(final MultivariatePolynomial<?> p) {

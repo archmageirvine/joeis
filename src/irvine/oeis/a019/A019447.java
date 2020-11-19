@@ -19,7 +19,7 @@ public class A019447 implements Sequence {
 
   @Override
   public Z next() {
-    final MultivariatePolynomialField poly = new MultivariatePolynomialField(IntegerField.SINGLETON, ++mN);
+    final MultivariatePolynomialField<Z> poly = new MultivariatePolynomialField<>(IntegerField.SINGLETON, ++mN);
     final MatrixRing<MultivariatePolynomial<Z>> ring = new MatrixRing<>(mN, poly);
     final Matrix<MultivariatePolynomial<Z>> toeplitz = new DefaultMatrix<>(mN, mN, poly.zero());
     for (int i = 0; i < mN; ++i) {

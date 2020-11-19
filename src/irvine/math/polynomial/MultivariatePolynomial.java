@@ -189,6 +189,7 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
         sterm[k] = term.mPowers[k] * powers[k];
         if (sterm[k] > degreeLimits[k]) {
           ok = false;
+          break;
         }
       }
       if (ok) {
@@ -221,7 +222,8 @@ public final class MultivariatePolynomial<E> extends HashMap<MultivariatePolynom
    * @param args values
    * @return evaluation
    */
-  public E eval(final E... args) {
+  @SafeVarargs
+  public final E eval(final E... args) {
     E sum = mCoefficientField.zero();
     for (final Map.Entry<Term, E> e : entrySet()) {
       E v = e.getValue();

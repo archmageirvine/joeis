@@ -57,7 +57,8 @@ public class A036672 implements Sequence {
     final MultivariatePolynomial<Q> gm1 = RING.subtract(g, RING.one());
     return RING.subtract(RING.subtract(RING.add(RING.add(
       RING.multiply(A4.apply(g, degreeLimits), X, degreeLimits),
-      RING.multiply(RING.subtract(RING.pow(g, 2, degreeLimits), g2s), X2ZD2, degreeLimits)),
+      //RING.multiply(RING.subtract(RING.pow(g, 2, degreeLimits), g2s), X2ZD2, degreeLimits)),
+      RING.multiply(RING.add(RING.pow(g, 2, degreeLimits), g2s), X2ZD2, degreeLimits)),
       RING.multiply(RING.add(g4, RING.multiply(g2s2, Q.THREE)), mX2YH, degreeLimits)),
       RING.multiply(RING.add(g4, RING.multiply(g2s2, Q.THREE)), mX2YQ, degreeLimits)),
       RING.multiply(RING.subtract(RING.pow(gm1, 2, degreeLimits), gm1.substitutePowers(SUBS_SQUARE, degreeLimits)), Q.HALF)

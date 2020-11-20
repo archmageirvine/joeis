@@ -234,11 +234,12 @@ final class Permutation {
    * TEST FUNCTION:  Print p (in array notation).
    */
  static void print(final int n, final byte[] p, final int offset) {
-   System.out.printf("%d", p[0] + offset);
+   final StringBuilder sb = new StringBuilder();
+   sb.append(p[0] + offset);
    for (int i = 1; i < n; ++i) {
-     System.out.printf(", %d", p[i] + offset);
+     sb.append(", ").append(p[i] + offset);
    }
-   System.out.println();
+   System.out.println(sb);
  }
 
   /*

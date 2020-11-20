@@ -332,46 +332,48 @@ public class Lattice {
 
     System.out.println("depth -1: T");
     int i = 0;
+    final StringBuilder sb = new StringBuilder();
     for (int d = 0; d < mNLev - 1; d++) {
-      System.out.printf("depth %2d: ", d);
+      sb.append(String.format("depth %2d: ", d));
       for (i = mLev[d]; i < mLev[d + 1]; i++) {
-        System.out.printf("%d[", i);
+        sb.append(i).append('[');
         if (co[i] == 0) {
-          System.out.print('T');
+          sb.append('T');
         } else {
           boolean first = true;
           for (int j = 0; j < i; j++) {
             if ((co[i] & Utils.bit(j)) != 0) {
               if (first) {
-                System.out.printf("%d", j);
+                sb.append(j);
                 first = false;
               } else {
-                System.out.printf(",%d", j);
+                sb.append(',').append(j);
               }
             }
           }
         }
-        System.out.print("] ");
+        sb.append("] ");
       }
-      System.out.println();
+      sb.append('\n');
     }
-    System.out.printf("depth %2d: B[", mNLev - 1);
+    sb.append(String.format("depth %2d: B[", mNLev - 1));
     if (mNLev == 1) {
-      System.out.print('T');
+      sb.append('T');
     } else {
       boolean first = true;
       for (int j = 0; j < mN; j++) {
         if (mLo[j] == Utils.bit(j)) {
           if (first) {
-            System.out.printf("%d", j);
+            sb.append(j);
             first = false;
           } else {
-            System.out.printf(",%d", j);
+            sb.append(',').append(j);
           }
         }
       }
     }
-    System.out.println(']');
+    sb.append(']');
+    System.out.println(sb.toString());
     System.out.printf("stabiliser [%d]:%n", mS.mN);
     PermGrp.printGenerators(mS, 0);
     final int[] si = {mSi};

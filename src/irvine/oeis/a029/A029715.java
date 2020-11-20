@@ -4,7 +4,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a002.A002034;
 
 /**
- * A029715 a(n) = Sum S(k), k divides 2^n, where S is the Kempner function A002034.
+ * A029715 a(n) = Sum_{k divides 2^n} S(k), where S is the Kempner function A002034.
  * @author Sean A. Irvine
  */
 public class A029715 extends A002034 {

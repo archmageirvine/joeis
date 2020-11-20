@@ -5,7 +5,7 @@ package irvine.oeis.a052;
 import irvine.oeis.HolonomicRecurrence;
 
 /**
- * A052866 A simple grammar.
+ * A052866 Expansion of e.g.f. x/(1 - x) + exp(x/(1 - x)).
  * @author Georg Fischer
  */
 public class A052866 extends HolonomicRecurrence {

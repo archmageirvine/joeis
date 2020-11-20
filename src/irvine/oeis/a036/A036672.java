@@ -15,6 +15,10 @@ import irvine.oeis.Sequence;
  */
 public class A036672 implements Sequence {
 
+  // See Ronald C. Read, "The Enumeration of Acyclic Chemical Compounds"
+  // in Chemical Applications of Graph Theory (A. T. Balaban editor),
+  // particular Section 7.
+
   private static final MultivariatePolynomialField<Q> RING = new MultivariatePolynomialField<>(Rationals.SINGLETON, 3);
   private static final MultivariatePolynomial<Q> X = RING.monomial(Q.ONE, new int[] {1, 0, 0});
   private static final MultivariatePolynomial<Q> XZ = RING.monomial(Q.ONE, new int[] {1, 0, 1});
@@ -49,7 +53,7 @@ public class A036672 implements Sequence {
   }
 
   private void stepG(final int[] degreeLimits) {
-    // (7.5) in Balaban
+    // (7.5) in Read article
     final MultivariatePolynomial<Q> g3 = RING.pow(mG, 3, degreeLimits);
     final MultivariatePolynomial<Q> gs3 = mG.substitutePowers(SUBS_CUBE, degreeLimits);
     mG = RING.add(RING.one(),
@@ -81,12 +85,10 @@ public class A036672 implements Sequence {
     final MultivariatePolynomial<Q> l14 = RING.multiply(g4p1g2s2, mX4Y3H2, degreeLimits);
     final MultivariatePolynomial<Q> l15 = RING.multiply(g4p3g2s2, mX2YQ, degreeLimits);
     final MultivariatePolynomial<Q> l16 = RING.multiply(g2s2, mX2Y, degreeLimits);
-    //System.out.println("l16=" + l16);
     return RING.add(RING.subtract(RING.subtract(RING.subtract(RING.subtract(RING.add(RING.add(RING.add(l6a, l6b), l8), l10), l11), l12), l14), l15), l16);
   }
 
-  @Override
-  public Z next() {
+  protected MultivariatePolynomial<Q> step() {
     final int[] degreeLimits = {++mN, Integer.MAX_VALUE, Integer.MAX_VALUE};
     stepExpansions();
     stepG(degreeLimits);
@@ -94,9 +96,12 @@ public class A036672 implements Sequence {
     //System.out.println("g=" + mG);
     final MultivariatePolynomial<Q> l = l(mG, degreeLimits);
     //System.out.println("l=" + l);
-    final MultivariatePolynomial<Q> ln = l.extract(0, mN); // [x^n] l(x,y,z)
-    //System.out.println("prev=" + l.extract(0, mN - 1));
-    //System.out.println(ln);
+    return l.extract(0, mN);
+  }
+
+  @Override
+  public Z next() {
+    final MultivariatePolynomial<Q> ln = step();
     return ln.eval(Q.ONE, Q.ONE).toZ();
   }
 }

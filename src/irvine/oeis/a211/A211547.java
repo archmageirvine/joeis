@@ -3,7 +3,7 @@ package irvine.oeis.a211;
 import irvine.oeis.LinearRecurrence;
 
 /**
- * A211547 Number of ordered triples (w,x,y) with all terms in {1,...,n} and 2w=3x+3y.
+ * A211547 The squares n^2, n &gt;= 0, each one written three times.
  * @author Sean A. Irvine
  */
 public class A211547 extends LinearRecurrence {

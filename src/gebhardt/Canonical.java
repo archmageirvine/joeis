@@ -687,7 +687,7 @@ final class Canonical {
     if (aa != null) {
       aPos = aa;
       if (VERBOSE) {
-        System.out.printf("--- hashtable query/insert %x => %d%n", a, aPos);
+        System.out.println("--- hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
       /* ...if not, note the new stabiliser element */
       if (pos != 0) {
@@ -712,7 +712,7 @@ final class Canonical {
       }
     } else {
       if (VERBOSE) {
-        System.out.printf("+++ hashtable query/insert %x => %d%n", a, aPos);
+        System.out.println("+++ hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
       /* ...if yes, note the permutation to the root and the applied generator */
       antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mGen = gen;
@@ -746,7 +746,7 @@ final class Canonical {
     final Integer aa = antichain.mGlobals.mOrbitPos.putIfAbsent(a, aPos);
     if (aa != null) {
       if (VERBOSE) {
-        System.out.printf("--- hashtable query/insert %x => %d%n", a, aa);
+        System.out.println("--- hashtable query/insert " + Long.toHexString(a) + " => " + aa);
       }
       aPos = aa;
       /* ...if no, note the new stabiliser element */
@@ -772,7 +772,7 @@ final class Canonical {
       }
     } else {
       if (VERBOSE) {
-        System.out.printf("+++ hashtable query/insert %x => %d%n", a, aPos);
+        System.out.println("+++ hashtable query/insert " + Long.toHexString(a) + " => " + aPos);
       }
       /* ...if yes, note the permutation to the root and the applied generator */
       antichain.mGlobals.mOrbitElements[antichain.mGlobals.mOrbitSize].mGen = gen;
@@ -887,7 +887,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l[0], 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.printf("+++ hashtable insert (%x,0)%n", l[0]);
+            System.out.println("+++ hashtable insert (" + Long.toHexString(l[0]) + ",0)");
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -936,7 +936,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l, 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.printf("+++ hashtable insert (%x,0)%n", l);
+            System.out.println("+++ hashtable insert (" + Long.toHexString(l) + ",0)");
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -1009,7 +1009,7 @@ final class Canonical {
     }
     preprocessGenerators(antichain);
     if (VERBOSE) {
-      System.out.printf("***** level %d:%n", antichain.mCl);
+      System.out.println("***** level " + antichain.mCl + ":");
       PermGrp.printGenerators(antichain.mStabilisers[antichain.mCl].mSt, 0);
       System.out.println("                                       canonical");
     }
@@ -1080,7 +1080,7 @@ final class Canonical {
             antichain.mCp = m;
             if (VERBOSE) {
               Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
-              System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
+              System.out.println("                                       NOT canonical --> " + antichain.mCp);
             }
             return false;
           }
@@ -1097,7 +1097,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l[0], 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.printf("+++ hashtable insert (%x,0)%n", l[0]);
+            System.out.println("+++ hashtable insert (" + Long.toHexString(l[0]) + ",0)");
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -1137,7 +1137,7 @@ final class Canonical {
                 antichain.mCp = m;
                 if (VERBOSE) {
                   Permutation.print(s.mG.mN, p, 0);
-                  System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
+                  System.out.println("                                       NOT canonical --> " + antichain.mCp);
                 }
                 return false;
               }
@@ -1163,7 +1163,7 @@ final class Canonical {
           antichain.mGlobals.mOrbitPos.put(l, 0);
           if (VERBOSE) {
             System.out.println("### hashtable cleared");
-            System.out.printf("+++ hashtable insert (%x,0)%n", l);
+            System.out.println("+++ hashtable insert (" + Long.toHexString(l) + ",0)");
           }
           if (s.mG.mN > g.mN) {
             for (int gen = 0; gen < g.mNgens; ++gen) {
@@ -1203,7 +1203,7 @@ final class Canonical {
                 antichain.mCp = m;
                 if (VERBOSE) {
                   Permutation.print(s.mG.mN, p, 0);
-                  System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
+                  System.out.println("                                       NOT canonical --> " + antichain.mCp);
                 }
                 return false;
               }
@@ -1249,7 +1249,7 @@ final class Canonical {
           antichain.mCp = m;
           if (VERBOSE) {
             Permutation.print(antichain.mLattice.mN + antichain.mK, p, 0);
-            System.out.printf("                                       NOT canonical --> %d%n", antichain.mCp);
+            System.out.println("                                       NOT canonical --> " + antichain.mCp);
           }
           return false;
         }
@@ -1281,7 +1281,7 @@ final class Canonical {
     }
     preprocessGeneratorsBlocked(antichain);
     if (VERBOSE) {
-      System.out.printf("***** level %d:%n", antichain.mCl);
+      System.out.println("***** level " + antichain.mCl + ":");
       PermGrp.printGenerators(antichain.mStabilisers[antichain.mCl].mSt, 0);
       System.out.println("                                       canonical");
     }

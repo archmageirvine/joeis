@@ -3,13 +3,13 @@ package irvine.oeis.a157;
 // DO NOT EDIT here!
 
 /**
- * A157534 Half the number of length n integer sequences with sum zero and sum of squares 8.
+ * A157538 Half the number of length n integer sequences with sum zero and sum of squares 72.
  * @author Georg Fischer
  */
-public class A157534 extends A157536 {
+public class A157538 extends A157536 {
 
   /** Construct the sequence. */
-  public A157534() {
-    super(2, 0, 8);
+  public A157538() {
+    super(2, 0, 72);
   }
 }

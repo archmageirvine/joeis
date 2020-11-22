@@ -6,7 +6,7 @@ import irvine.math.z.Z;
  * Compute Euler gamma constant.
  * @author Sean A. Irvine
  */
-public final class EulerGamma extends SlowCR {
+final class EulerGamma extends SlowCR {
 
   private static final int SAFETY_BITS = 5;
 

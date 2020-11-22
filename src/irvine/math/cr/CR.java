@@ -1088,4 +1088,53 @@ public abstract class CR extends Number implements Comparable<CR> {
   public CR lnGamma() {
     return new PrescaledLnGamma(this);
   }
+
+  /**
+   * Returns the hyperbolic sine.
+   * @return hyperbolic sine
+   */
+  public CR sinh() {
+    return ComputableReals.SINGLETON.sinh(this);
+  }
+
+  /**
+   * Returns the hyperbolic cosine.
+   * @return hyperbolic cosine
+   */
+  public CR cosh() {
+    return ComputableReals.SINGLETON.cosh(this);
+  }
+
+  /**
+   * Returns the hyperbolic tangent.
+   * @return hyperbolic tangent
+   */
+  public CR tanh() {
+    return ComputableReals.SINGLETON.tanh(this);
+  }
+
+  /**
+   * Returns the hyperbolic cotangent.
+   * @return hyperbolic cotangent
+   */
+  public CR coth() {
+    return ComputableReals.SINGLETON.coth(this);
+  }
+
+  /**
+   * Returns the hyperbolic secant.
+   * @return hyperbolic secant
+   */
+  public CR sech() {
+    return ComputableReals.SINGLETON.sech(this);
+  }
+
+  /**
+   * Returns the hyperbolic cosecant.
+   * @return hyperbolic cosecant
+   */
+  public CR csch() {
+    return ComputableReals.SINGLETON.csch(this);
+  }
+
 }

@@ -15,12 +15,12 @@ public abstract class EngelExpansionSequence implements Sequence {
   protected abstract CR getN();
 
   protected int precision() {
-    return 10000;
+    return 32;
   }
 
   @Override
   public Z next() {
-    final Z a = mA.inverse().ceil();
+    final Z a = mA.inverse().ceil(precision());
     mA = mA.multiply(a).subtract(CR.ONE);
     return a;
   }

@@ -181,6 +181,8 @@ public abstract class CR extends Number implements Comparable<CR> {
   public static final CR SQRT2 = CR.TWO.sqrt();
   /** Golden ratio. */
   public static final CR PHI = CR.ONE.add(CR.FIVE.sqrt()).divide(CR.TWO);
+  /** Euler-Mascheroni constant gamma A001620 = 0.57721566... */
+  public static final CR GAMMA = new EulerGamma();
 
   static int boundLog2(final int n) {
     final int absN = Math.abs(n);
@@ -1048,7 +1050,7 @@ public abstract class CR extends Number implements Comparable<CR> {
    * @return exponential integral
    */
   public CR ei() {
-    return new PrescaledEi(this).add(EulerGamma.SINGLETON).add(abs().log());
+    return new PrescaledEi(this).add(CR.GAMMA).add(abs().log());
   }
 
 

@@ -1,7 +1,6 @@
 package irvine.oeis.a009;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.EulerGamma;
 import irvine.math.q.Q;
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
@@ -14,7 +13,7 @@ public class A009929 implements Sequence {
 
   private int mN = 0;
   private Z mF2 = Z.ONE;
-  private CR mX = EulerGamma.SINGLETON;
+  private CR mX = CR.GAMMA;
 
   @Override
   public Z next() {

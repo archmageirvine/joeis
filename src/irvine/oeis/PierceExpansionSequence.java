@@ -5,6 +5,7 @@ import irvine.math.z.Z;
 
 /**
  * The Pierce expansion of a real number.
+ * See A006284: <code>(PARI) r=Pi; for(n=1, 100, s=(r/(r-floor(r))); print1(floor(r), ", "); r=s;)</code>.
  * @author Sean A. Irvine
  */
 public abstract class PierceExpansionSequence implements Sequence {
@@ -19,7 +20,7 @@ public abstract class PierceExpansionSequence implements Sequence {
 
   @Override
   public Z next() {
-    mU = mU == null ? getN() : mU.divide(mU.subtract(CR.valueOf(mU.floor(precision()))));
+    mU = mU == null ? getN().inverse() : mU.divide(mU.subtract(CR.valueOf(mU.floor(precision()))));
     return mU.floor(precision());
   }
 }

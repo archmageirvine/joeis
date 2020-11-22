@@ -1,7 +1,6 @@
 package irvine.oeis.a004;
 
 import irvine.math.cr.CR;
-import irvine.math.cr.EulerGamma;
 import irvine.math.z.Z;
 import irvine.oeis.DecimalExpansionSequence;
 
@@ -11,7 +10,7 @@ import irvine.oeis.DecimalExpansionSequence;
  */
 public class A004710 extends DecimalExpansionSequence {
 
-  private static final CR N = EulerGamma.SINGLETON;
+  private static final CR N = CR.GAMMA;
 
   /** Construct the sequence */
   public A004710() {

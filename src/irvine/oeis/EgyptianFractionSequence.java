@@ -22,7 +22,7 @@ import irvine.math.z.Z;
 public class EgyptianFractionSequence implements Sequence {
 
   protected CR mEgyptian; // for the iterative calculation of the Egyptian fraction
-  protected int mFeatures; // bitmask for variants
+  protected int mFeatures; // bit mask for variants
 
   /**
    * Construct the Egyptian fraction of the given number
@@ -36,7 +36,7 @@ public class EgyptianFractionSequence implements Sequence {
   /**
    * Construct the Egyptian fraction of the given number.
    * @param realNumber number to be expanded
-   * @param features bitmask for variant(s)
+   * @param features bit mask for variant(s)
    */
   public EgyptianFractionSequence(final CR realNumber, final int features) {
     mEgyptian = realNumber;

@@ -644,6 +644,7 @@ class Antichain {
   void printAntichains() {
     final int[] a = new int[1];
     final int[] i = new int[1];
+    final StringBuilder sb = new StringBuilder();
     for (int j = mK; j-- != 0; ) {
       /* extract the j-th lattice-antichain described by *AD, i.e. the minimal elements of the up-closed set */
       a[0] = 0;
@@ -653,30 +654,30 @@ class Antichain {
         }
       }
       while (Utils.extractLSB32(a, i)) {
-        System.out.printf("%d ", i[0]);
+        sb.append(i[0]).append(' ');
       }
-      System.out.print(" | ");
+      sb.append(" | ");
     }
-    System.out.println();
+    System.out.println(sb);
   }
 
   /*
    * TEST FUNCTION: Print all counters for each position and each level in
    */
   void printCounters() {
-    System.out.printf("cl:%d, cp:%d   ", mCl, mCp);
+    final StringBuilder sb = new StringBuilder("cl:").append(mCl).append(", cp:").append(mCp).append("   ");
     for (int j = 0; j < mK; ++j) {
       for (int m = mLattice.mNLev - 2; m >= mCl; --m) {
         final int[] a = {(int) ((j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]) | mO[j] & Utils.bit(mLattice.mLev[m + 1]) - Utils.bit(mLattice.mLev[m]))};
         final int[] i = new int[1];
         while (Utils.extractLSB32(a, i)) {
-          System.out.printf("%d ", i[0]);
+          sb.append(i[0]).append(' ');
         }
-        System.out.print("; ");
+        sb.append("; ");
       }
-      System.out.print(" | ");
+      sb.append(" | ");
     }
-    System.out.println();
+    System.out.println(sb);
   }
 
   /*
@@ -684,18 +685,18 @@ class Antichain {
    */
   void printCountersF() {
     final int[] i = new int[1];
-    System.out.printf("cl:%d, cp:%d   ", mCl, mCp);
+    final StringBuilder sb = new StringBuilder("cl:").append(mCl).append(", cp:").append(mCp).append("   ");
     for (int j = 0; j < mK; ++j) {
       for (int m = mLattice.mNLev - 2; m >= mCl; --m) {
         final int[] a = {j > mCp ? 0 : mF[(mLattice.mNLev - 2 - m) * mK + j]};
         while (Utils.extractLSB32(a, i)) {
-          System.out.printf("%d ", i[0]);
+          sb.append(i[0]).append(' ');
         }
-        System.out.print("; ");
+        sb.append("; ");
       }
-      System.out.print(" | ");
+      sb.append(" | ");
     }
-    System.out.println();
+    System.out.println(sb);
   }
 
 ///*

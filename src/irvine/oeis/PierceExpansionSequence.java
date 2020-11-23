@@ -6,21 +6,36 @@ import irvine.math.z.Z;
 /**
  * The Pierce expansion of a real number.
  * See A006284: <code>(PARI) r=Pi; for(n=1, 100, s=(r/(r-floor(r))); print1(floor(r), ", "); r=s;)</code>.
+ * The {@link EngelExpansionSequence} differs from this expansion only by the
+ * positive signs of all unit fractions.
  * @author Sean A. Irvine
  */
 public abstract class PierceExpansionSequence implements Sequence {
 
-  private CR mU = null;
+  protected CR mA;
+  protected int mPrec; // the precision for CR.floor()
+
+  /**
+   * Constructor with default precision
+   */
+  public PierceExpansionSequence() {
+    this(32);
+  }
+
+  /**
+   * Constructor with precision
+   * @param prec precision for CR.floor()
+   */
+  public PierceExpansionSequence(final int prec) {
+    mPrec = prec;
+    mA = null;
+  }
 
   protected abstract CR getN();
 
-  protected int precision() {
-    return 32;
-  }
-
   @Override
   public Z next() {
-    mU = mU == null ? getN().inverse() : mU.divide(mU.subtract(CR.valueOf(mU.floor(precision()))));
-    return mU.floor(precision());
+    mA = mA == null ? getN().inverse() : mA.divide(mA.subtract(CR.valueOf(mA.floor(mPrec))));
+    return mA.floor(mPrec);
   }
 }

@@ -6,7 +6,7 @@ import irvine.oeis.Sequence;
 
 /**
  * A157536 Half the number of length n integer sequences with sum zero and sum of squares 32.
- * Pattern for similiar sequences, rewritten from Maple.
+ * Pattern for similar sequences, rewritten from Maple.
  * @author Georg Fischer
  */
 public class A157536 extends MemoryFunctionInt3<Z> implements Sequence {

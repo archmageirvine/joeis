@@ -14,9 +14,9 @@ public class A036678 extends A036677 {
   @Override
   public Z next() {
     mM.add(super.next());
-    final Polynomial<Z> pp2 = RING.multiply(RING.multiply(mP, mP.substitutePower(2, mN), mN), Z.TWO);
-    final Polynomial<Z> mqq = RING.multiply(RING.subtract(RING.pow(mQ, 2, mN), mQ.substitutePower(2, mN)), mM, mN);
-    final Polynomial<Z> qpp = RING.multiply(RING.subtract(RING.pow(mP, 2, mN), mP.substitutePower(2, mN)), mQ, mN);
-    return RING.multiply(RING.add(RING.add(pp2, mqq), qpp), mQ.shift(1), mN).coeff(mN).divide2();
+    final Polynomial<Z> pp2 = RING.multiply(RING.multiply(mP, mP.substitutePower(2, mBonds), mBonds), Z.TWO);
+    final Polynomial<Z> mqq = RING.multiply(RING.subtract(RING.pow(mQ, 2, mBonds), mQ.substitutePower(2, mBonds)), mM, mBonds);
+    final Polynomial<Z> qpp = RING.multiply(RING.subtract(RING.pow(mP, 2, mBonds), mP.substitutePower(2, mBonds)), mQ, mBonds);
+    return RING.multiply(RING.add(RING.add(pp2, mqq), qpp), mQ.shift(1), mBonds).coeff(mBonds).divide2();
   }
 }

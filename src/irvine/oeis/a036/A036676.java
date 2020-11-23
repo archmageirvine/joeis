@@ -14,15 +14,15 @@ public class A036676 extends A000621 {
 
   protected static final PolynomialRing<Z> RING = new PolynomialRing<>(Integers.SINGLETON);
   protected final Polynomial<Z> mQ = RING.empty();
-  protected int mN = -1;
+  protected int mBonds = -1;
 
   @Override
   public Z next() {
-    ++mN;
+    ++mBonds;
     mQ.add(super.next());
-    final Polynomial<Z> q3 = RING.pow(mQ, 3, mN);
-    final Polynomial<Z> qqs2 = RING.multiply(RING.multiply(mQ, mQ.substitutePower(2, mN), mN), Z.THREE);
-    final Polynomial<Z> qs3 = RING.multiply(mQ.substitutePower(3, mN), Z.TWO);
-    return RING.multiply(RING.add(RING.subtract(q3, qqs2), qs3), mQ.shift(1), mN).coeff(mN).divide(6);
+    final Polynomial<Z> q3 = RING.pow(mQ, 3, mBonds);
+    final Polynomial<Z> qqs2 = RING.multiply(RING.multiply(mQ, mQ.substitutePower(2, mBonds), mBonds), Z.THREE);
+    final Polynomial<Z> qs3 = RING.multiply(mQ.substitutePower(3, mBonds), Z.TWO);
+    return RING.multiply(RING.add(RING.subtract(q3, qqs2), qs3), mQ.shift(1), mBonds).coeff(mBonds).divide(6);
   }
 }

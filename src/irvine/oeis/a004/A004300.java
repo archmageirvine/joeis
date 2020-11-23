@@ -2,6 +2,8 @@ package irvine.oeis.a004;
 
 import irvine.math.z.Z;
 import irvine.oeis.MemorySequence;
+import irvine.oeis.Sequence;
+import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000699;
 
 /**
@@ -24,7 +26,7 @@ public class A004300 extends MemorySequence {
     for (int k = 1; k <= n - 2; ++k) {
       t = t.add(get(k).multiply(get(n - k)));
     }
-    final A000699 s = new A000699();
+    final Sequence s = new SkipSequence(new A000699(), 1);
     for (int k = 1; k <= n / 2; ++k) {
       t = t.add(get(n - 2 * k).multiply(s.next()).multiply(2L * n - 4L * k - 1));
     }

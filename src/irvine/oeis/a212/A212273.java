@@ -4,6 +4,7 @@ package irvine.oeis.a212;
 
 import irvine.math.z.Z;
 import irvine.oeis.Sequence;
+import irvine.oeis.SkipSequence;
 import irvine.oeis.a000.A000699;
 
 /**
@@ -12,7 +13,7 @@ import irvine.oeis.a000.A000699;
  */
 public class A212273 implements Sequence {
 
-  final Sequence mA000699 = new A000699();
+  final Sequence mA000699 = new SkipSequence(new A000699(), 1);
   protected long mN;
   /** Construct the sequence. */
   public A212273() {

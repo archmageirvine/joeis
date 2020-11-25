@@ -25,7 +25,7 @@ public class A000598 implements Sequence {
   }
 
   protected int limit() {
-    return mN + 2;
+    return mN;
   }
 
   /**

@@ -162,7 +162,7 @@ final class Canonical {
       long t1, t2;
       int newn = 0;
       for (int i = lo; i < n; ++i) {
-        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >> m) > (t2 = l[0] & mask[i])) {
+        if ((bl & Utils.bit(i)) != 0 && (t1 = (l[0] & mask[i - 1]) >>> m) > (t2 = l[0] & mask[i])) {
           t1 ^= t2;
           l[0] ^= t1 << m | t1;
           final byte tp = p[offset + i - 1];
@@ -196,7 +196,7 @@ final class Canonical {
 //      if (lo < k0) {
 //        n0 = k0 < n ? k0 : n;
 //        for (i = lo; i < n0; i++) {
-//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[0] & M0[i - 1]) >> m)) > (t2 = (L[0] & M0[i]))) {
+//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[0] & M0[i - 1]) >>> m)) > (t2 = (L[0] & M0[i]))) {
 //            t1 ^= t2;
 //            L[0] ^= ((t1 << m) | t1);
 //            tp = p[offset + i - 1];
@@ -211,7 +211,7 @@ final class Canonical {
 //        shift = (k - k0 - 1) * m;
 //        if ((bl & Utils.BIT(k0)) != 0 && (t1 = ((L[0] & M0[k0 - 1]) << shift)) > (t2 = (L[1] & M1[0]))) {
 //          t1 ^= t2;
-//          L[0] ^= t1 >> shift;
+//          L[0] ^= t1 >>> shift;
 //          L[1] ^= t1;
 //          tp = p[offset + k0 - 1];
 //          p[offset + k0 - 1] = p[offset + k0];
@@ -221,7 +221,7 @@ final class Canonical {
 //      }
 //      if (k0 + 1 < n) {
 //        for (i = lo > k0 ? lo : k0 + 1; i < n; i++) {
-//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[1] & M1[i - k0 - 1]) >> m)) > (t2 = (L[1] & M1[i - k0]))) {
+//          if ((bl & Utils.BIT(i)) != 0 && (t1 = ((L[1] & M1[i - k0 - 1]) >>> m)) > (t2 = (L[1] & M1[i - k0]))) {
 //            t1 ^= t2;
 //            L[1] ^= ((t1 << m) | t1);
 //            tp = p[offset + i - 1];
@@ -250,8 +250,8 @@ final class Canonical {
     if (sic != null) {
       sic[0] = (int) (si & ~(mask << a0));
     }
-    si = (int) (si >> a0 & mask);
-    final int[] b = {si ^ si >> 1};
+    si = (int) (si >>> a0 & mask);
+    final int[] b = {si ^ si >>> 1};
     long a = l[0] & ~(si | b[0]);  /* the elements in blocks of size 1 */
     while (Utils.extractMSB32(b, hi)) {
       Utils.extractMSB32(b, lo);
@@ -288,7 +288,7 @@ final class Canonical {
     assert l != null;
     final int mask = (int) (Utils.bit(m) - 1);
     globals.mSi0[0].mRep[0] = l[0];
-    globals.mSi0[0].mS = si >> a0 & mask;
+    globals.mSi0[0].mS = si >>> a0 & mask;
     globals.mSi0[0].mP = Permutation.create();
     Permutation.copy(n + k, p, globals.mSi0[0].mP);
     int si0Size = 1;
@@ -309,8 +309,8 @@ final class Canonical {
           Permutation.copy(n + k, globals.mSi0[i].mP, q);
           int s = globals.mSi0[i].mS;
           long bigP = globals.mSi0[i].mRep[0];
-          final int a = (int) (bigP >> j * m & mask);  /* j: antichain under consideration */
-          final int[] b = {s >> 1 ^ s};
+          final int a = (int) (bigP >>> j * m & mask);  /* j: antichain under consideration */
+          final int[] b = {s >>> 1 ^ s};
           int ac = a & ~(s | b[0]);  /* the elements in blocks of size 1 */
           while (a != ac && Utils.extractMSB32(b, hi)) {  /* get an orbit lo..hi ... */
             Utils.extractMSB32(b, lo);
@@ -320,7 +320,7 @@ final class Canonical {
             while (Utils.getMSB32(sb, hi) && Utils.getLSB32(ub, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
               sb ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
               ub ^= Utils.bit(hi[0]) | Utils.bit(lo[0]);
-              final long bigT = (bigP >> hi[0] ^ bigP >> lo[0]) & bigM;
+              final long bigT = (bigP >>> hi[0] ^ bigP >>> lo[0]) & bigM;
               bigP ^= bigT << hi[0] | bigT << lo[0];
               final byte t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
               q[a0 + hi[0]] = q[a0 + lo[0]];
@@ -340,7 +340,7 @@ final class Canonical {
               next = true;
             }
             ++dj;
-          } while (!next && (bigP >> (j - dj) * m & mask) == ac);
+          } while (!next && (bigP >>> (j - dj) * m & mask) == ac);
           if (ac > aMin || ac == aMin && dj < dr) {
             continue;  /* not minimal */
           }
@@ -354,7 +354,7 @@ final class Canonical {
           if (j < r) {  /* insert antichains (j-dr+1)..j at positions (r-dr+1)..r */
             final long mask1 = Utils.bit((r - j) * m) - 1 << (j + 1) * m;
             final long mask2 = Utils.bit(dr * m) - 1 << (j - dr + 1) * m;
-            bigP = bigP & ~(mask1 | mask2) | (bigP & mask1) >> dr * m | (bigP & mask2) << (r - j) * m;
+            bigP = bigP & ~(mask1 | mask2) | (bigP & mask1) >>> dr * m | (bigP & mask2) << (r - j) * m;
             /* left-multiply q=globals.SI1[si1Size].p by the inverse of the applied permutation */
             int offset = n + k - 1 - j;
             final byte[] pqq = globals.mSi1[si1Size].mP;
@@ -385,7 +385,7 @@ final class Canonical {
 
 //  /* access macro for the antichain in *position* i */
 //  private static int antichain(final long[] l, final int i, final int m, final int k1, final int mask) {
-//    return (int) ((((i) >= (k1)) ? ((l)[0] >> (((i) - (k1)) * (m))) : ((l)[1] >> ((i) * (m)))) & mask);
+//    return (int) ((((i) >= (k1)) ? ((l)[0] >>> (((i) - (k1)) * (m))) : ((l)[1] >>> ((i) * (m)))) & mask);
 //  }
 
 //  /*
@@ -406,7 +406,7 @@ final class Canonical {
 //    mask = (int) (Utils.BIT(m) - 1);
 //    GD.mSi0[0].mRep[0] = L[0];
 //    GD.mSi0[0].mRep[1] = L[1];
-//    GD.mSi0[0].mS = (SI >> a0) & mask;
+//    GD.mSi0[0].mS = (SI >>> a0) & mask;
 //    Permutation.copy(n + k, p, GD.mSi0[0].mP);
 //    SI0size = 1;
 //    for (r = k - 1; r >= 0; r -= dr) { /* r: position to be filled */
@@ -428,7 +428,7 @@ final class Canonical {
 //          P[0] = GD.mSi0[i].mRep[0];
 //          P[1] = GD.mSi0[i].mRep[1];
 //          A = antichain(P, j, m, k1, mask);   /* j: antichain under consideration */
-//          final int[] B = {(S >> 1) ^ S};
+//          final int[] B = {(S >>> 1) ^ S};
 //          A_ = A & ~(S | B[0]);  /* the elements in blocks of size 1 */
 //          while (A != A_ && Utils.extractMSB32(B, hi)) {  /* get an orbit lo..hi ... */
 //            int pmask, SB, UB;
@@ -439,9 +439,9 @@ final class Canonical {
 //            while (Utils.getMSB32(SB, hi) && Utils.getLSB32(UB, lo) && hi[0] > lo[0]) { /* ... if highest set > lowest unset: swap them */
 //              SB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
 //              UB ^= Utils.BIT(hi[0]) | Utils.BIT(lo[0]);
-//              T = ((P[0] >> hi[0]) ^ (P[0] >> lo[0])) & M;
+//              T = ((P[0] >>> hi[0]) ^ (P[0] >>> lo[0])) & M;
 //              P[0] ^= (T << hi[0]) | (T << lo[0]);
-//              T = ((P[1] >> hi[0]) ^ (P[1] >> lo[0])) & M;
+//              T = ((P[1] >>> hi[0]) ^ (P[1] >>> lo[0])) & M;
 //              P[1] ^= (T << hi[0]) | (T << lo[0]);
 //              t = q[a0 + hi[0]];  /* left-multiplication by (lo hi) */
 //              q[a0 + hi[0]] = q[a0 + lo[0]];
@@ -481,7 +481,7 @@ final class Canonical {
 //                long MR11, ML11;
 //                ML11 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1) * m);
 //                MR11 = (Utils.BIT((r - j) * m) - 1) << ((j + 1) * m);
-//                P[1] = (P[1] & ~(ML11 | MR11)) | ((P[1] & ML11) << ((r - j) * m)) | ((P[1] & MR11) >> (dr * m));
+//                P[1] = (P[1] & ~(ML11 | MR11)) | ((P[1] & ML11) << ((r - j) * m)) | ((P[1] & MR11) >>> (dr * m));
 //              } else {
 //                long MR00, MR01, MR11, ML10, ML11;
 //                if (r - dr >= k1) {
@@ -500,12 +500,12 @@ final class Canonical {
 //                  ML11 = (Utils.BIT((dr - (r - k1 + 1)) * m) - 1) << (j - dr + 1) * m;
 //                }
 //                T = (P[0] & ~(MR00 | MR01))
-//                  | ((P[0] & MR00) >> (dr * m))
-//                  | (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
+//                  | ((P[0] & MR00) >>> (dr * m))
+//                  | (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >>> (-(r - j - k1) * m)));
 //                P[1] = (P[1] & ~(MR11 | ML10 | ML11))
-//                  | ((P[1] & MR11) >> (dr * m))
+//                  | ((P[1] & MR11) >>> (dr * m))
 //                  | ((P[1] & ML11) << ((r - j) * m))
-//                  | (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
+//                  | (dr - k1 > 0 ? ((P[0] & MR01) >>> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
 //                P[0] = T;
 //              }
 //            } else {
@@ -522,18 +522,18 @@ final class Canonical {
 //                  ML11 = ((Utils.BIT(k1 - r + dr - 1) * m) - 1) << ((j - dr + 1) * m);
 //                }
 //                T = (P[0] & ~(MR00 | MR01 | ML00))
-//                  | ((P[0] & MR00) >> (dr * m))
+//                  | ((P[0] & MR00) >>> (dr * m))
 //                  | ((P[0] & ML00) << ((r - j) * m))
-//                  | (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >> (-(r - j - k1) * m)));
+//                  | (r - j - k1 > 0 ? ((P[1] & ML10) << ((r - j - k1) * m)) : ((P[1] & ML10) >>> (-(r - j - k1) * m)));
 //                P[1] = (P[1] & ~(ML10 | ML11))
 //                  | ((P[1] & ML11) << ((r - j) * m))
-//                  | (dr - k1 > 0 ? ((P[0] & MR01) >> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
+//                  | (dr - k1 > 0 ? ((P[0] & MR01) >>> ((dr - k1) * m)) : ((P[0] & MR01) << (-(dr - k1) * m)));
 //                P[0] = T;
 //              } else {
 //                long MR00, ML00;
 //                ML00 = (Utils.BIT(dr * m) - 1) << ((j - dr + 1 - k1) * m);
 //                MR00 = (Utils.BIT((r - j) * m) - 1) << ((j + 1 - k1) * m);
-//                P[0] = (P[0] & ~(ML00 | MR00)) | ((P[0] & ML00) << ((r - j) * m)) | ((P[0] & MR00) >> (dr * m));
+//                P[0] = (P[0] & ~(ML00 | MR00)) | ((P[0] & ML00) << ((r - j) * m)) | ((P[0] & MR00) >>> (dr * m));
 //              }
 //            }
 //            /* left-multiply q=GD.SI1[SI1size].p by the inverse of the applied permutation */
@@ -865,7 +865,7 @@ final class Canonical {
     assert g.mNgens == 0 || (g.mBenesValid & Utils.bit(antichain.mCl)) != 0
       : "Attempts to use invalid Benes networks [antichaindata_isCanonical_1]: level " + antichain.mCl;
     if (g.mNgens > 0) {
-      if ((antichain.mGlobals.mOrbitElements[0].mData[0] = (antichain.mO[0] & antichain.mCmc) >> antichain.mLattice.mLev[antichain.mCl]) != 0) {
+      if ((antichain.mGlobals.mOrbitElements[0].mData[0] = (antichain.mO[0] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl]) != 0) {
         final byte[] p = Permutation.create();
         if (antichain.mStabilisers[antichain.mCl + 1].mSi != 0) {
           /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
@@ -979,7 +979,7 @@ final class Canonical {
         antichain.mStabilisers[antichain.mCl].mSi = antichain.mStabilisers[antichain.mCl + 1].mSi;
       }
     } else if (antichain.mStabilisers[antichain.mCl + 1].mSi != 0) {
-      if ((antichain.mGlobals.mOrbitElements[0].mData[0] = (antichain.mO[0] & antichain.mCmc) >> antichain.mLattice.mLev[antichain.mCl]) != 0) {
+      if ((antichain.mGlobals.mOrbitElements[0].mData[0] = (antichain.mO[0] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl]) != 0) {
         /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
         final byte[] p = Permutation.create();
         final long[] l = {antichain.mGlobals.mOrbitElements[0].mData[0]};
@@ -1052,7 +1052,7 @@ final class Canonical {
       antichain.mGlobals.mOrbitElements[0].mData[0] = 0;
       for (int i = 0; i < antichain.mK; i++) {
         antichain.mGlobals.mOrbitElements[0].mData[0] <<= bits;
-        antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >> antichain.mLattice.mLev[antichain.mCl];
+        antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl];
       }
       if (antichain.mGlobals.mOrbitElements[0].mData[0] != 0) {
         final byte[] p = Permutation.create();
@@ -1062,7 +1062,7 @@ final class Canonical {
           Permutation.init(antichain.mLattice.mN + antichain.mK, p);
           long pmask = 1;
           for (int i = antichain.mK; i-- != 0; ) {
-            pmask = pmask << bits | 1;
+            pmask = (pmask << bits) | 1;
           }
           listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
           if (l[0] != antichain.mGlobals.mOrbitElements[0].mData[0]) {
@@ -1222,7 +1222,7 @@ final class Canonical {
       antichain.mGlobals.mOrbitElements[0].mData[0] = 0;
       for (int i = 0; i < antichain.mK; ++i) {
         antichain.mGlobals.mOrbitElements[0].mData[0] <<= bits;
-        antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >> antichain.mLattice.mLev[antichain.mCl];
+        antichain.mGlobals.mOrbitElements[0].mData[0] |= (antichain.mO[i] & antichain.mCmc) >>> antichain.mLattice.mLev[antichain.mCl];
       }
       if (antichain.mGlobals.mOrbitElements[0].mData[0] != 0) {
         /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */
@@ -1231,7 +1231,7 @@ final class Canonical {
         Permutation.init(antichain.mLattice.mN + antichain.mK, p);
         long pmask = 1;
         for (int i = antichain.mK; i-- != 0; ) {
-          pmask = pmask << bits | 1;
+          pmask = (pmask << bits) | 1;
         }
         listApplySIP1(antichain.mLattice.mN, antichain.mK, antichain.mLattice.mLev[antichain.mCl], bits, antichain.mStabilisers[antichain.mCl + 1].mBl, antichain.mGlobals, l, antichain.mStabilisers[antichain.mCl + 1].mSi, pmask, p);
         if (l[0] != antichain.mGlobals.mOrbitElements[0].mData[0]) {
@@ -1341,11 +1341,11 @@ final class Canonical {
 //      AD.GD.orb[0].data[0] = AD.GD.orb[0].data[1] = 0;
 //      for (i = 0; i < AD.k - apf; i++) {
 //        AD.GD.orb[0].data[0] <<= bits;
-//        AD.GD.orb[0].data[0] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+//        AD.GD.orb[0].data[0] |= (AD.O[i] & AD.cmc) >>> AD.L.lev[AD.cl];
 //      }
 //      for (; i < AD.k; i++) {
 //        AD.GD.orb[0].data[1] <<= bits;
-//        AD.GD.orb[0].data[1] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+//        AD.GD.orb[0].data[1] |= (AD.O[i] & AD.cmc) >>> AD.L.lev[AD.cl];
 //      }
 //      if (AD.GD.orb[0].data[0] != 0 || AD.GD.orb[0].data[1] != 0) {
 //        if (AD.SD[AD.cl + 1].SI != 0) {
@@ -1550,11 +1550,11 @@ final class Canonical {
 //      apf = Long.SIZE / bits;
 //      for (i = 0; i < AD.k - apf; i++) {
 //        AD.GD.orb[0].data[0] <<= bits;
-//        AD.GD.orb[0].data[0] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+//        AD.GD.orb[0].data[0] |= (AD.O[i] & AD.cmc) >>> AD.L.lev[AD.cl];
 //      }
 //      for (; i < AD.k; i++) {
 //        AD.GD.orb[0].data[1] <<= bits;
-//        AD.GD.orb[0].data[1] |= (AD.O[i] & AD.cmc) >> AD.L.lev[AD.cl];
+//        AD.GD.orb[0].data[1] |= (AD.O[i] & AD.cmc) >>> AD.L.lev[AD.cl];
 //      }
 //      if (AD.GD.orb[0].data[0] != 0 || AD.GD.orb[0].data[1] != 0) {
 //        /* test minimality under implied stabiliser and extract implied stabiliser generators if minimal */

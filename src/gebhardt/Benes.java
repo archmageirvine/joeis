@@ -162,7 +162,7 @@ public class Benes {
   void applyP1(final long[] r) {
     long a = r[0];
     for (int i = 0; i < mDepth; ++i) {
-      long t = ((a >> mShift[i]) ^ a) & mMask[i];
+      long t = ((a >>> mShift[i]) ^ a) & mMask[i];
       a ^= t;
       t <<= mShift[i];
       a ^= t;
@@ -193,11 +193,11 @@ public class Benes {
   void applyP2(final long[] a) {
     for (int i = 0; i < mDepth; ++i) {
       final int sft = mShift[i];
-      long t = ((a[0] >> sft) ^ a[0]) & mMask[i];
+      long t = ((a[0] >>> sft) ^ a[0]) & mMask[i];
       a[0] ^= t;
       t <<= sft;
       a[0] ^= t;
-      t = ((a[1] >> sft) ^ a[1]) & mMask[i];
+      t = ((a[1] >>> sft) ^ a[1]) & mMask[i];
       a[1] ^= t;
       t <<= sft;
       a[1] ^= t;
@@ -213,13 +213,13 @@ public class Benes {
     for (int i = 0; i < mDepth; ++i) {
       final long sft = mShift[i];
       final long xsft = width - sft;
-      long t0 = (((a[0] << sft) | (a[1] >> xsft)) ^ a[0]) & mMask[i];
+      long t0 = (((a[0] << sft) | (a[1] >>> xsft)) ^ a[0]) & mMask[i];
       long t1 = ((a[1] << sft) ^ a[1]) & mMask1[i];
       a[0] ^= t0;
       a[1] ^= t1;
       final long t0a = t0;
       t0 >>= sft;
-      t1 = (t1 >> sft) | (t0a << xsft);
+      t1 = (t1 >>> sft) | (t0a << xsft);
       a[0] ^= t0;
       a[1] ^= t1;
     }

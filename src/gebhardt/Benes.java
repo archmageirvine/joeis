@@ -179,7 +179,7 @@ public class Benes {
     for (int i = 0; i < mDepth; ++i) {
       long t = ((a << mShift[i]) ^ a) & mMask[i];
       a ^= t;
-      t >>= mShift[i];
+      t >>>= mShift[i];
       a ^= t;
     }
     r[0] = a;
@@ -218,7 +218,7 @@ public class Benes {
       a[0] ^= t0;
       a[1] ^= t1;
       final long t0a = t0;
-      t0 >>= sft;
+      t0 >>>= sft;
       t1 = (t1 >>> sft) | (t0a << xsft);
       a[0] ^= t0;
       a[1] ^= t1;

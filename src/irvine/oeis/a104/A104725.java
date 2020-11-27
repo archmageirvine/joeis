@@ -14,7 +14,6 @@ import irvine.oeis.Sequence;
  * DATA 0, 1, 1, 1, 2, 1, 3, 1, 5, 2, 3, 1, 11, 1, 3, 3, 15, 1, 11, 1, 11, 3, 3, 1, 45 ...
  * @author Georg Fischer
  */
-
 /*
 The Maple program:
   with(combinat): 

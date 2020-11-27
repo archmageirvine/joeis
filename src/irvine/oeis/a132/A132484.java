@@ -14,6 +14,6 @@ public class A132484 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A132484() {
-    super(CR.valueOf(7).log().divide(CR.THREE).exp(), 1);
+    super(CR.SEVEN.log().divide(CR.THREE).exp(), 1);
   }
 }

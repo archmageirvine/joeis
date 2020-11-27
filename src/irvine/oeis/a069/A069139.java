@@ -14,6 +14,6 @@ public class A069139 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A069139() {
-    super(CR.valueOf(2).inverse().sqrt());
+    super(CR.TWO.inverse().sqrt());
   }
 }

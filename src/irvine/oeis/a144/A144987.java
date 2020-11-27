@@ -14,6 +14,6 @@ public class A144987 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A144987() {
-    super(CR.valueOf(8).inverse().sqrt());
+    super(CR.EIGHT.inverse().sqrt());
   }
 }

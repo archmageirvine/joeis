@@ -17,6 +17,6 @@ public class A210709 extends BriefSequence {
    * Construct the sequence.
    */
   public A210709() {
-    super(new Z("1"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("0"), new Z("18"));
+    super(Z.ONE, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, Z.ZERO, new Z("18"));
   }
 }

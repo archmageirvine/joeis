@@ -14,6 +14,6 @@ public class A248237 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A248237() {
-    super(CR.valueOf(7).sqrt());
+    super(CR.SEVEN.sqrt());
   }
 }

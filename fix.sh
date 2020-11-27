@@ -16,6 +16,18 @@ find src/irvine/oeis -name "A[0-9][0-9][0-9][0-9][0-9][0-9].java" | while read s
         -e 's/Z\.valueOf(9L\?)/Z.NINE/g' \
         -e 's/Z\.valueOf(10L\?)/Z.TEN/g' \
         -e 's/Z\.valueOf(-1L\?)/Z.NEG_ONE/g' \
+        -e 's/new Z("0")/Z.ZERO/g' \
+        -e 's/new Z("1")/Z.ONE/g' \
+        -e 's/new Z("2")/Z.TWO/g' \
+        -e 's/new Z("3")/Z.THREE/g' \
+        -e 's/new Z("4")/Z.FOUR/g' \
+        -e 's/new Z("5")/Z.FIVE/g' \
+        -e 's/new Z("6")/Z.SIX/g' \
+        -e 's/new Z("7")/Z.SEVEN/g' \
+        -e 's/new Z("8")/Z.EIGHT/g' \
+        -e 's/new Z("9")/Z.NINE/g' \
+        -e 's/new Z("10")/Z.TEN/g' \
+        -e 's/new Z("-1")/Z.NEG_ONE/g' \
         -e 's/= 2 - 1;/= 1;/g' \
         -e 's/= 1 - 1;/= 0;/g' \
         -e 's/= 0 - 1;/= -1;/g' \

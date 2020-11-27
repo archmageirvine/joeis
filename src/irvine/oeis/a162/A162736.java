@@ -10,7 +10,6 @@ import irvine.oeis.FiniteSequence;
  * A162736 G.f. is the polynomial (Product_{k=1..30} (1 - x^(3*k)))/(1-x)^30.
  * @author Georg Fischer
  */public class A162736 extends EulerTransform {
-
   /** Construct the sequence. */
   public A162736() {
     super(new FiniteSequence(30, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0), 1);

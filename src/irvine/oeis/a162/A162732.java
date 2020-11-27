@@ -10,7 +10,6 @@ import irvine.oeis.FiniteSequence;
  * A162732 G.f. is the polynomial (Product_{k=1..29} (1 - x^(3*k)))/(1-x)^29.
  * @author Georg Fischer
  */public class A162732 extends EulerTransform {
-
   /** Construct the sequence. */
   public A162732() {
     super(new FiniteSequence(29, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0), 1);

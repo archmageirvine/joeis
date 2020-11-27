@@ -14,6 +14,6 @@ public class A248235 extends EgyptianFractionSequence {
 
   /** Construct the sequence. */
   public A248235() {
-    super(CR.valueOf(5).sqrt());
+    super(CR.FIVE.sqrt());
   }
 }

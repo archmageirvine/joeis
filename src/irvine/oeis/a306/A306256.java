@@ -17,6 +17,6 @@ public class A306256 extends BriefSequence {
    * Construct the sequence.
    */
   public A306256() {
-    super(new Z("7"), new Z("160541"), new Z("94727075783"));
+    super(Z.SEVEN, new Z("160541"), new Z("94727075783"));
   }
 }

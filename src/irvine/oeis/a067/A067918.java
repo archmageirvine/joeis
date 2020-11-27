@@ -7,7 +7,7 @@ import irvine.oeis.EngelExpansionSequence;
 
 
 /**
- * A067918 Engel expansion of zeta(10)=sum(i&gt;0,1/i^10).
+ * A067918 Engel expansion of zeta(10) = Sum_{i&gt;0} 1/i^10.
  * @author Georg Fischer
  */
 public class A067918 extends EngelExpansionSequence {

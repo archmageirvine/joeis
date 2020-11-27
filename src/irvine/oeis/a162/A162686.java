@@ -9,11 +9,10 @@ import irvine.oeis.FiniteSequence;
 /**
  * A162686 G.f. is the polynomial (Product_{k=1..24} (1 - x^(3*k)))/(1-x)^24.
  * @author Georg Fischer
- */
-public class A162686 extends EulerTransform {
+ */public class A162686 extends EulerTransform {
 
   /** Construct the sequence. */
   public A162686() {
-    super(new FiniteSequence(new long[] {24, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0}), 1);
+    super(new FiniteSequence(24, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0), 1);
   }
 }

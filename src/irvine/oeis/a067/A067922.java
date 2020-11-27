@@ -7,7 +7,7 @@ import irvine.oeis.EngelExpansionSequence;
 
 
 /**
- * A067922 Engel expansion of Log(5).
+ * A067922 Engel expansion of log(5).
  * @author Georg Fischer
  */
 public class A067922 extends EngelExpansionSequence {

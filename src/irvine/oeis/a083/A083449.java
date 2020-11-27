@@ -6,7 +6,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a019.A019566;
 
 /**
- * A083449 a(n) = A019566(n) /9.
+ * A083449 a(n) = A019566(n)/9, where A019566(n) = concat(n,...,1) - concat(1,...,n).
  * @author Georg Fischer
  */
 public class A083449 extends A019566 {

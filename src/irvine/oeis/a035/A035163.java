@@ -5,7 +5,7 @@ import irvine.math.z.Z;
 import irvine.oeis.a000.A000364;
 
 /**
- * A035163 Composite n, not a power of 2, such that the n-th Euler number == 1 (mod n).
+ * A035163 Composite numbers k, not a power of 2, such that the E(k) == 1 (mod k), where E(k) is the k-th Euler number (A000364).
  * @author Sean A. Irvine
  */
 public class A035163 extends A000364 {

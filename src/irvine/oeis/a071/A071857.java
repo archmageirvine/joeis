@@ -7,7 +7,7 @@ import irvine.oeis.EngelExpansionSequence;
 
 
 /**
- * A071857 Engel expansion of sqrt(2ln(2)).
+ * A071857 Engel expansion of sqrt(2*log(2)).
  * @author Georg Fischer
  */
 public class A071857 extends EngelExpansionSequence {

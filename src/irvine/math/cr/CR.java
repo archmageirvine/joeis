@@ -1053,6 +1053,14 @@ public abstract class CR extends Number implements Comparable<CR> {
     return new PrescaledEi(this).add(CR.GAMMA).add(abs().log());
   }
 
+  /**
+   * The sine integral of this real number.
+   * @return exponential integral
+   */
+  public CR si() {
+    return new PrescaledSi(this);
+  }
+
 
   private static final CR ERF_C1 = TWO.divide(SQRT_PI);
 

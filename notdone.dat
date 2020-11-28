@@ -1460,3 +1460,4 @@ A036429 Primes related to Carmichael numbers of the form pqr, p<q<r and p-1 a di
 A036500 Number of inequivalent cyclic Hadamard difference sets with parameters (2^n-1, 2^(n-1)-1, 2^(n-2)-1)
 A036604 Sorting numbers: minimal number of comparisons needed to sort n elements, hard
 A036686 Single-heap P-positions in misere version of Grundy's game.
+A036794 Number of sequences of length n with a_{i-1} < a_i <= a_1+...+a_{i-1} + 1
